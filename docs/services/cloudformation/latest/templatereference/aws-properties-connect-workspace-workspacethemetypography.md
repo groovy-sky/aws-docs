@@ -2,53 +2,42 @@
 title: "AWS::Connect::Workspace WorkspaceThemeTypography"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Workspace WorkspaceThemeTypography
+<a name="aws-properties-connect-workspace-workspacethemetypography"></a>
 
 Contains typography configuration for a workspace theme.
 
 ## Syntax
+<a name="aws-properties-connect-workspace-workspacethemetypography-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-workspace-workspacethemetypography-syntax.json"></a>
 
-```json
-
+```
 {
-  "FontFamily" : FontFamily
+  "[FontFamily](#cfn-connect-workspace-workspacethemetypography-fontfamily)" : {{FontFamily}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-workspace-workspacethemetypography-syntax.yaml"></a>
 
-```yaml
-
-  FontFamily:
-    FontFamily
-
+```
+  [FontFamily](#cfn-connect-workspace-workspacethemetypography-fontfamily): {{
+    FontFamily}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-workspace-workspacethemetypography-properties"></a>
 
-`FontFamily`
-
+`FontFamily`  <a name="cfn-connect-workspace-workspacethemetypography-fontfamily"></a>
 The font family configuration for text in the workspace.
-
-_Required_: No
-
-_Type_: [FontFamily](aws-properties-connect-workspace-fontfamily.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkspaceThemePalette
-
-Next
+*Required*: No
+*Type*: [FontFamily](aws-properties-connect-workspace-fontfamily.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

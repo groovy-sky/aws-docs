@@ -2,53 +2,42 @@
 title: "AWS::Lex::Bot GrammarSlotTypeSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot GrammarSlotTypeSetting
+<a name="aws-properties-lex-bot-grammarslottypesetting"></a>
 
 Settings requried for a slot type based on a grammar that you provide.
 
 ## Syntax
+<a name="aws-properties-lex-bot-grammarslottypesetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-grammarslottypesetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "Source" : GrammarSlotTypeSource
+  "[Source](#cfn-lex-bot-grammarslottypesetting-source)" : {{GrammarSlotTypeSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-grammarslottypesetting-syntax.yaml"></a>
 
-```yaml
-
-  Source:
-    GrammarSlotTypeSource
-
+```
+  [Source](#cfn-lex-bot-grammarslottypesetting-source): {{
+    GrammarSlotTypeSource}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-grammarslottypesetting-properties"></a>
 
-`Source`
-
+`Source`  <a name="cfn-lex-bot-grammarslottypesetting-source"></a>
 The source of the grammar used to create the slot type.
-
-_Required_: No
-
-_Type_: [GrammarSlotTypeSource](aws-properties-lex-bot-grammarslottypesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GenerativeAISettings
-
-GrammarSlotTypeSource
+*Required*: No
+*Type*: [GrammarSlotTypeSource](aws-properties-lex-bot-grammarslottypesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

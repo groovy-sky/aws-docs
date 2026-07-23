@@ -2,141 +2,118 @@
 title: "AWS::EventSchemas::Discoverer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventSchemas::Discoverer
+<a name="aws-resource-eventschemas-discoverer"></a>
 
-Use the `AWS::EventSchemas::Discoverer` resource to specify a
-_discoverer_ that is associated with an event bus. A discoverer
-allows the Amazon EventBridge Schema Registry to automatically generate schemas based on
-events on an event bus.
+Use the `AWS::EventSchemas::Discoverer` resource to specify a *discoverer* that is associated with an event bus. A discoverer allows the Amazon EventBridge Schema Registry to automatically generate schemas based on events on an event bus.
 
 ## Syntax
+<a name="aws-resource-eventschemas-discoverer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-eventschemas-discoverer-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EventSchemas::Discoverer",
   "Properties" : {
-      "CrossAccount" : Boolean,
-      "Description" : String,
-      "SourceArn" : String,
-      "Tags" : [ TagsEntry, ... ]
+      "[CrossAccount](#cfn-eventschemas-discoverer-crossaccount)" : {{Boolean}},
+      "[Description](#cfn-eventschemas-discoverer-description)" : {{String}},
+      "[SourceArn](#cfn-eventschemas-discoverer-sourcearn)" : {{String}},
+      "[Tags](#cfn-eventschemas-discoverer-tags)" : {{[ TagsEntry, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-eventschemas-discoverer-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EventSchemas::Discoverer
 Properties:
-  CrossAccount: Boolean
-  Description: String
-  SourceArn: String
-  Tags:
-    - TagsEntry
-
+  [CrossAccount](#cfn-eventschemas-discoverer-crossaccount): {{Boolean}}
+  [Description](#cfn-eventschemas-discoverer-description): {{String}}
+  [SourceArn](#cfn-eventschemas-discoverer-sourcearn): {{String}}
+  [Tags](#cfn-eventschemas-discoverer-tags): {{
+    - TagsEntry}}
 ```
 
 ## Properties
+<a name="aws-resource-eventschemas-discoverer-properties"></a>
 
-`CrossAccount`
-
+`CrossAccount`  <a name="cfn-eventschemas-discoverer-crossaccount"></a>
 Allows for the discovery of the event schemas that are sent to the event bus from another account.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-eventschemas-discoverer-description"></a>
 A description for the discoverer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceArn`
-
+`SourceArn`  <a name="cfn-eventschemas-discoverer-sourcearn"></a>
 The ARN of the event bus.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-eventschemas-discoverer-tags"></a>
 Tags associated with the resource.
-
-_Required_: No
-
-_Type_: Array of [TagsEntry](aws-properties-eventschemas-discoverer-tagsentry.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [TagsEntry](aws-properties-eventschemas-discoverer-tagsentry.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-eventschemas-discoverer-return-values"></a>
 
 ### Ref
+<a name="aws-resource-eventschemas-discoverer-return-values-ref"></a>
 
-When you provide the logical ID of this resource to the `Ref` intrinsic
-function, `Ref` returns the ARN of the discoverer.
+When you provide the logical ID of this resource to the `Ref` intrinsic function, `Ref` returns the ARN of the discoverer.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-eventschemas-discoverer-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DiscovererArn`
+####
+<a name="aws-resource-eventschemas-discoverer-return-values-fn--getatt-fn--getatt"></a>
 
+`DiscovererArn`  <a name="DiscovererArn-fn::getatt"></a>
 The ARN of the discoverer.
 
-`DiscovererId`
-
+`DiscovererId`  <a name="DiscovererId-fn::getatt"></a>
 The ID of the discoverer.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the discoverer.
 
 ## Examples
+<a name="aws-resource-eventschemas-discoverer--examples"></a>
 
 ### Generate Schemas for Events on the Default Event Bus
+<a name="aws-resource-eventschemas-discoverer--examples--Generate_Schemas_for_Events_on_the_Default_Event_Bus"></a>
 
 #### YAML
+<a name="aws-resource-eventschemas-discoverer--examples--Generate_Schemas_for_Events_on_the_Default_Event_Bus--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyDiscoverer:
     Type: AWS::EventSchemas::Discoverer
     Properties:
       SourceArn: 'arn:aws:events:us-west-2:012345678910:event-bus/default'
       Description: 'discover all custom schemas'
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon EventBridge Schemas
-
-TagsEntry
 
 All content copied from https://docs.aws.amazon.com/.

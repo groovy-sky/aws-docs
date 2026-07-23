@@ -2,65 +2,50 @@
 title: "AWS::BedrockAgentCore::BrowserCustom RecordingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::BrowserCustom RecordingConfig
+<a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig"></a>
 
 The recording configuration for a browser. This structure defines how browser sessions are recorded.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "S3Location" : S3Location
+  "[Enabled](#cfn-bedrockagentcore-browsercustom-recordingconfig-enabled)" : {{Boolean}},
+  "[S3Location](#cfn-bedrockagentcore-browsercustom-recordingconfig-s3location)" : {{S3Location}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  S3Location:
-    S3Location
-
+```
+  [Enabled](#cfn-bedrockagentcore-browsercustom-recordingconfig-enabled): {{Boolean}}
+  [S3Location](#cfn-bedrockagentcore-browsercustom-recordingconfig-s3location): {{
+    S3Location}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-bedrockagentcore-browsercustom-recordingconfig-enabled"></a>
 Indicates whether recording is enabled for the browser. When set to true, browser sessions are recorded.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3Location`
-
+`S3Location`  <a name="cfn-bedrockagentcore-browsercustom-recordingconfig-s3location"></a>
 The Amazon S3 location where browser recordings are stored. This location contains the recorded browser sessions.
-
-_Required_: No
-
-_Type_: [S3Location](aws-properties-bedrockagentcore-browsercustom-s3location.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BrowserSigning
-
-S3Location
+*Required*: No
+*Type*: [S3Location](aws-properties-bedrockagentcore-browsercustom-s3location.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

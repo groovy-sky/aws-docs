@@ -2,72 +2,53 @@
 title: "AWS::FMS::Policy IcmpTypeCode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::Policy IcmpTypeCode
+<a name="aws-properties-fms-policy-icmptypecode"></a>
 
 ICMP protocol: The ICMP type and code.
 
 ## Syntax
+<a name="aws-properties-fms-policy-icmptypecode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fms-policy-icmptypecode-syntax.json"></a>
 
-```json
-
+```
 {
-  "Code" : Integer,
-  "Type" : Integer
+  "[Code](#cfn-fms-policy-icmptypecode-code)" : {{Integer}},
+  "[Type](#cfn-fms-policy-icmptypecode-type)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fms-policy-icmptypecode-syntax.yaml"></a>
 
-```yaml
-
-  Code: Integer
-  Type: Integer
-
+```
+  [Code](#cfn-fms-policy-icmptypecode-code): {{Integer}}
+  [Type](#cfn-fms-policy-icmptypecode-type): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-fms-policy-icmptypecode-properties"></a>
 
-`Code`
-
+`Code`  <a name="cfn-fms-policy-icmptypecode-code"></a>
 ICMP code.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-fms-policy-icmptypecode-type"></a>
 ICMP type.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::FMS::Policy
-
-IEMap
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

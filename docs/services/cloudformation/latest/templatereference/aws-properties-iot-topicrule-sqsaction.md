@@ -2,76 +2,57 @@
 title: "AWS::IoT::TopicRule SqsAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule SqsAction
+<a name="aws-properties-iot-topicrule-sqsaction"></a>
 
 Describes an action to publish data to an Amazon SQS queue.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-sqsaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-sqsaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "QueueUrl" : String,
-  "RoleArn" : String,
-  "UseBase64" : Boolean
+  "[QueueUrl](#cfn-iot-topicrule-sqsaction-queueurl)" : {{String}},
+  "[RoleArn](#cfn-iot-topicrule-sqsaction-rolearn)" : {{String}},
+  "[UseBase64](#cfn-iot-topicrule-sqsaction-usebase64)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-sqsaction-syntax.yaml"></a>
 
-```yaml
-
-  QueueUrl: String
-  RoleArn: String
-  UseBase64: Boolean
-
+```
+  [QueueUrl](#cfn-iot-topicrule-sqsaction-queueurl): {{String}}
+  [RoleArn](#cfn-iot-topicrule-sqsaction-rolearn): {{String}}
+  [UseBase64](#cfn-iot-topicrule-sqsaction-usebase64): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-sqsaction-properties"></a>
 
-`QueueUrl`
-
+`QueueUrl`  <a name="cfn-iot-topicrule-sqsaction-queueurl"></a>
 The URL of the Amazon SQS queue.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-sqsaction-rolearn"></a>
 The ARN of the IAM role that grants access.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseBase64`
-
+`UseBase64`  <a name="cfn-iot-topicrule-sqsaction-usebase64"></a>
 Specifies whether to use Base64 encoding.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnsAction
-
-StepFunctionsAction
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

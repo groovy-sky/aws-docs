@@ -2,275 +2,192 @@
 title: "AWS::QuickSight::Template BarChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BarChartConfiguration
+<a name="aws-properties-quicksight-template-barchartconfiguration"></a>
 
 The configuration of a `BarChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-barchartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-barchartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BarsArrangement" : String,
-  "CategoryAxis" : AxisDisplayOptions,
-  "CategoryLabelOptions" : ChartAxisLabelOptions,
-  "ColorLabelOptions" : ChartAxisLabelOptions,
-  "ContributionAnalysisDefaults" : [ ContributionAnalysisDefault, ... ],
-  "DataLabels" : DataLabelOptions,
-  "FieldWells" : BarChartFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "Orientation" : String,
-  "ReferenceLines" : [ ReferenceLine, ... ],
-  "SmallMultiplesOptions" : SmallMultiplesOptions,
-  "SortConfiguration" : BarChartSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "ValueAxis" : AxisDisplayOptions,
-  "ValueLabelOptions" : ChartAxisLabelOptions,
-  "VisualPalette" : VisualPalette
+  "[BarsArrangement](#cfn-quicksight-template-barchartconfiguration-barsarrangement)" : {{String}},
+  "[CategoryAxis](#cfn-quicksight-template-barchartconfiguration-categoryaxis)" : {{AxisDisplayOptions}},
+  "[CategoryLabelOptions](#cfn-quicksight-template-barchartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ColorLabelOptions](#cfn-quicksight-template-barchartconfiguration-colorlabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ContributionAnalysisDefaults](#cfn-quicksight-template-barchartconfiguration-contributionanalysisdefaults)" : {{[ ContributionAnalysisDefault, ... ]}},
+  "[DataLabels](#cfn-quicksight-template-barchartconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[FieldWells](#cfn-quicksight-template-barchartconfiguration-fieldwells)" : {{BarChartFieldWells}},
+  "[Interactions](#cfn-quicksight-template-barchartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-template-barchartconfiguration-legend)" : {{LegendOptions}},
+  "[Orientation](#cfn-quicksight-template-barchartconfiguration-orientation)" : {{String}},
+  "[ReferenceLines](#cfn-quicksight-template-barchartconfiguration-referencelines)" : {{[ ReferenceLine, ... ]}},
+  "[SmallMultiplesOptions](#cfn-quicksight-template-barchartconfiguration-smallmultiplesoptions)" : {{SmallMultiplesOptions}},
+  "[SortConfiguration](#cfn-quicksight-template-barchartconfiguration-sortconfiguration)" : {{BarChartSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-template-barchartconfiguration-tooltip)" : {{TooltipOptions}},
+  "[ValueAxis](#cfn-quicksight-template-barchartconfiguration-valueaxis)" : {{AxisDisplayOptions}},
+  "[ValueLabelOptions](#cfn-quicksight-template-barchartconfiguration-valuelabeloptions)" : {{ChartAxisLabelOptions}},
+  "[VisualPalette](#cfn-quicksight-template-barchartconfiguration-visualpalette)" : {{VisualPalette}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-barchartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BarsArrangement: String
-  CategoryAxis:
-    AxisDisplayOptions
-  CategoryLabelOptions:
-    ChartAxisLabelOptions
-  ColorLabelOptions:
-    ChartAxisLabelOptions
-  ContributionAnalysisDefaults:
-    - ContributionAnalysisDefault
-  DataLabels:
-    DataLabelOptions
-  FieldWells:
-    BarChartFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  Orientation: String
-  ReferenceLines:
-    - ReferenceLine
-  SmallMultiplesOptions:
-    SmallMultiplesOptions
-  SortConfiguration:
-    BarChartSortConfiguration
-  Tooltip:
-    TooltipOptions
-  ValueAxis:
-    AxisDisplayOptions
-  ValueLabelOptions:
-    ChartAxisLabelOptions
-  VisualPalette:
-    VisualPalette
-
+```
+  [BarsArrangement](#cfn-quicksight-template-barchartconfiguration-barsarrangement): {{String}}
+  [CategoryAxis](#cfn-quicksight-template-barchartconfiguration-categoryaxis): {{
+    AxisDisplayOptions}}
+  [CategoryLabelOptions](#cfn-quicksight-template-barchartconfiguration-categorylabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ColorLabelOptions](#cfn-quicksight-template-barchartconfiguration-colorlabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ContributionAnalysisDefaults](#cfn-quicksight-template-barchartconfiguration-contributionanalysisdefaults): {{
+    - ContributionAnalysisDefault}}
+  [DataLabels](#cfn-quicksight-template-barchartconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [FieldWells](#cfn-quicksight-template-barchartconfiguration-fieldwells): {{
+    BarChartFieldWells}}
+  [Interactions](#cfn-quicksight-template-barchartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-template-barchartconfiguration-legend): {{
+    LegendOptions}}
+  [Orientation](#cfn-quicksight-template-barchartconfiguration-orientation): {{String}}
+  [ReferenceLines](#cfn-quicksight-template-barchartconfiguration-referencelines): {{
+    - ReferenceLine}}
+  [SmallMultiplesOptions](#cfn-quicksight-template-barchartconfiguration-smallmultiplesoptions): {{
+    SmallMultiplesOptions}}
+  [SortConfiguration](#cfn-quicksight-template-barchartconfiguration-sortconfiguration): {{
+    BarChartSortConfiguration}}
+  [Tooltip](#cfn-quicksight-template-barchartconfiguration-tooltip): {{
+    TooltipOptions}}
+  [ValueAxis](#cfn-quicksight-template-barchartconfiguration-valueaxis): {{
+    AxisDisplayOptions}}
+  [ValueLabelOptions](#cfn-quicksight-template-barchartconfiguration-valuelabeloptions): {{
+    ChartAxisLabelOptions}}
+  [VisualPalette](#cfn-quicksight-template-barchartconfiguration-visualpalette): {{
+    VisualPalette}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-barchartconfiguration-properties"></a>
 
-`BarsArrangement`
-
+`BarsArrangement`  <a name="cfn-quicksight-template-barchartconfiguration-barsarrangement"></a>
 Determines the arrangement of the bars. The orientation and arrangement of bars determine the type of bar that is used in the visual.
+*Required*: No
+*Type*: String
+*Allowed values*: `CLUSTERED | STACKED | STACKED_PERCENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CLUSTERED | STACKED | STACKED_PERCENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryAxis`
-
+`CategoryAxis`  <a name="cfn-quicksight-template-barchartconfiguration-categoryaxis"></a>
 The label display options (grid line, range, scale, axis step) for bar chart category.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryLabelOptions`
-
+`CategoryLabelOptions`  <a name="cfn-quicksight-template-barchartconfiguration-categorylabeloptions"></a>
 The label options (label text, label visibility and sort icon visibility) for a bar chart.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColorLabelOptions`
-
+`ColorLabelOptions`  <a name="cfn-quicksight-template-barchartconfiguration-colorlabeloptions"></a>
 The label options (label text, label visibility and sort icon visibility) for a color that is used in a bar chart.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContributionAnalysisDefaults`
-
+`ContributionAnalysisDefaults`  <a name="cfn-quicksight-template-barchartconfiguration-contributionanalysisdefaults"></a>
 The contribution analysis (anomaly configuration) setup of the visual.
+*Required*: No
+*Type*: Array of [ContributionAnalysisDefault](aws-properties-quicksight-template-contributionanalysisdefault.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ContributionAnalysisDefault](aws-properties-quicksight-template-contributionanalysisdefault.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-template-barchartconfiguration-datalabels"></a>
 The options that determine if visual data labels are displayed.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-barchartconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [BarChartFieldWells](aws-properties-quicksight-template-barchartfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BarChartFieldWells](aws-properties-quicksight-template-barchartfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-barchartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-template-barchartconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Orientation`
-
+`Orientation`  <a name="cfn-quicksight-template-barchartconfiguration-orientation"></a>
 The orientation of the bars in a bar chart visual. There are two valid values in this structure:
++ `HORIZONTAL`: Used for charts that have horizontal bars. Visuals that use this value are horizontal bar charts, horizontal stacked bar charts, and horizontal stacked 100% bar charts.
++ `VERTICAL`: Used for charts that have vertical bars. Visuals that use this value are vertical bar charts, vertical stacked bar charts, and vertical stacked 100% bar charts.
+*Required*: No
+*Type*: String
+*Allowed values*: `HORIZONTAL | VERTICAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `HORIZONTAL`: Used for charts that have horizontal bars. Visuals that use this value are horizontal bar charts, horizontal stacked bar charts, and horizontal stacked 100% bar charts.
-
-- `VERTICAL`: Used for charts that have vertical bars. Visuals that use this value are vertical bar charts, vertical stacked bar charts, and vertical stacked 100% bar charts.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HORIZONTAL | VERTICAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReferenceLines`
-
+`ReferenceLines`  <a name="cfn-quicksight-template-barchartconfiguration-referencelines"></a>
 The reference line setup of the visual.
+*Required*: No
+*Type*: Array of [ReferenceLine](aws-properties-quicksight-template-referenceline.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ReferenceLine](aws-properties-quicksight-template-referenceline.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmallMultiplesOptions`
-
+`SmallMultiplesOptions`  <a name="cfn-quicksight-template-barchartconfiguration-smallmultiplesoptions"></a>
 The small multiples setup for the visual.
+*Required*: No
+*Type*: [SmallMultiplesOptions](aws-properties-quicksight-template-smallmultiplesoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SmallMultiplesOptions](aws-properties-quicksight-template-smallmultiplesoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-barchartconfiguration-sortconfiguration"></a>
 The sort configuration of a `BarChartVisual`.
+*Required*: No
+*Type*: [BarChartSortConfiguration](aws-properties-quicksight-template-barchartsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BarChartSortConfiguration](aws-properties-quicksight-template-barchartsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-template-barchartconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueAxis`
-
+`ValueAxis`  <a name="cfn-quicksight-template-barchartconfiguration-valueaxis"></a>
 The label display options (grid line, range, scale, axis step) for a bar chart value.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueLabelOptions`
-
+`ValueLabelOptions`  <a name="cfn-quicksight-template-barchartconfiguration-valuelabeloptions"></a>
 The label options (label text, label visibility and sort icon visibility) for a bar chart value.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-template-barchartconfiguration-visualpalette"></a>
 The palette (chart color) display setup of the visual.
-
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BarChartAggregatedFieldWells
-
-BarChartFieldWells
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

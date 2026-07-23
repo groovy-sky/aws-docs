@@ -2,68 +2,51 @@
 title: "AWS::CustomerProfiles::Recommender EventParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Recommender EventParameters
+<a name="aws-properties-customerprofiles-recommender-eventparameters"></a>
 
-The `EventParameters` property type specifies Property description not available. for an [AWS::CustomerProfiles::Recommender](aws-resource-customerprofiles-recommender.md).
+<a name="aws-properties-customerprofiles-recommender-eventparameters-description"></a>The `EventParameters` property type specifies Property description not available. for an [AWS::CustomerProfiles::Recommender](aws-resource-customerprofiles-recommender.md).
 
 ## Syntax
+<a name="aws-properties-customerprofiles-recommender-eventparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-recommender-eventparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventType" : String,
-  "EventValueThreshold" : Number
+  "[EventType](#cfn-customerprofiles-recommender-eventparameters-eventtype)" : {{String}},
+  "[EventValueThreshold](#cfn-customerprofiles-recommender-eventparameters-eventvaluethreshold)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-recommender-eventparameters-syntax.yaml"></a>
 
-```yaml
-
-  EventType: String
-  EventValueThreshold: Number
-
+```
+  [EventType](#cfn-customerprofiles-recommender-eventparameters-eventtype): {{String}}
+  [EventValueThreshold](#cfn-customerprofiles-recommender-eventparameters-eventvaluethreshold): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-recommender-eventparameters-properties"></a>
 
-`EventType`
-
+`EventType`  <a name="cfn-customerprofiles-recommender-eventparameters-eventtype"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventValueThreshold`
-
+`EventValueThreshold`  <a name="cfn-customerprofiles-recommender-eventparameters-eventvaluethreshold"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CustomerProfiles::Recommender
-
-EventsConfig
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

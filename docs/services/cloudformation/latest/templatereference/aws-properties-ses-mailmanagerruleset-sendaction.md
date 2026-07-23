@@ -2,75 +2,53 @@
 title: "AWS::SES::MailManagerRuleSet SendAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet SendAction
+<a name="aws-properties-ses-mailmanagerruleset-sendaction"></a>
 
 Sends the email to the internet using the ses:SendRawEmail API.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagerruleset-sendaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagerruleset-sendaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActionFailurePolicy" : String,
-  "RoleArn" : String
+  "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-sendaction-actionfailurepolicy)" : {{String}},
+  "[RoleArn](#cfn-ses-mailmanagerruleset-sendaction-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagerruleset-sendaction-syntax.yaml"></a>
 
-```yaml
-
-  ActionFailurePolicy: String
-  RoleArn: String
-
+```
+  [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-sendaction-actionfailurepolicy): {{String}}
+  [RoleArn](#cfn-ses-mailmanagerruleset-sendaction-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagerruleset-sendaction-properties"></a>
 
-`ActionFailurePolicy`
+`ActionFailurePolicy`  <a name="cfn-ses-mailmanagerruleset-sendaction-actionfailurepolicy"></a>
+A policy that states what to do in the case of failure. The action will fail if there are configuration errors. For example, the caller does not have the permissions to call the sendRawEmail API.
+*Required*: No
+*Type*: String
+*Allowed values*: `CONTINUE | DROP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A policy that states what to do in the case of failure. The action will fail if there
-are configuration errors. For example, the caller does not have the permissions to call
-the sendRawEmail API.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CONTINUE | DROP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the role to use for this action. This role must have access to the
-ses:SendRawEmail API.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9:_/+=,@.#-]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Action
-
-SnsAction
+`RoleArn`  <a name="cfn-ses-mailmanagerruleset-sendaction-rolearn"></a>
+The Amazon Resource Name (ARN) of the role to use for this action. This role must have access to the ses:SendRawEmail API.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9:_/+=,@.#-]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

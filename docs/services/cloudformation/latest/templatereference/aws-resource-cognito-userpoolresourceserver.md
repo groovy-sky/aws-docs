@@ -2,148 +2,113 @@
 title: "AWS::Cognito::UserPoolResourceServer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolResourceServer
+<a name="aws-resource-cognito-userpoolresourceserver"></a>
 
-The `AWS::Cognito::UserPoolResourceServer` resource creates a new OAuth2.0
-resource server and defines custom scopes in it.
+The `AWS::Cognito::UserPoolResourceServer` resource creates a new OAuth2.0 resource server and defines custom scopes in it.
 
-###### Note
-
-If you don't specify a value for a parameter, Amazon Cognito sets it to a default
-value.
+**Note**
+If you don't specify a value for a parameter, Amazon Cognito sets it to a default value.
 
 ## Syntax
+<a name="aws-resource-cognito-userpoolresourceserver-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cognito-userpoolresourceserver-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Cognito::UserPoolResourceServer",
   "Properties" : {
-      "Identifier" : String,
-      "Name" : String,
-      "Scopes" : [ ResourceServerScopeType, ... ],
-      "UserPoolId" : String
+      "[Identifier](#cfn-cognito-userpoolresourceserver-identifier)" : {{String}},
+      "[Name](#cfn-cognito-userpoolresourceserver-name)" : {{String}},
+      "[Scopes](#cfn-cognito-userpoolresourceserver-scopes)" : {{[ ResourceServerScopeType, ... ]}},
+      "[UserPoolId](#cfn-cognito-userpoolresourceserver-userpoolid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cognito-userpoolresourceserver-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Cognito::UserPoolResourceServer
 Properties:
-  Identifier: String
-  Name: String
-  Scopes:
-    - ResourceServerScopeType
-  UserPoolId: String
-
+  [Identifier](#cfn-cognito-userpoolresourceserver-identifier): {{String}}
+  [Name](#cfn-cognito-userpoolresourceserver-name): {{String}}
+  [Scopes](#cfn-cognito-userpoolresourceserver-scopes): {{
+    - ResourceServerScopeType}}
+  [UserPoolId](#cfn-cognito-userpoolresourceserver-userpoolid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-cognito-userpoolresourceserver-properties"></a>
 
-`Identifier`
+`Identifier`  <a name="cfn-cognito-userpoolresourceserver-identifier"></a>
+A unique resource server identifier for the resource server. The identifier can be an API friendly name like `solar-system-data`. You can also set an API URL like `https://solar-system-data-api.example.com` as your identifier.
+Amazon Cognito represents scopes in the access token in the format `$resource-server-identifier/$scope`. Longer scope-identifier strings increase the size of your access tokens.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\x21\x23-\x5B\x5D-\x7E]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A unique resource server identifier for the resource server. The identifier can be an
-API friendly name like `solar-system-data`. You can also set an API URL like
-`https://solar-system-data-api.example.com` as your identifier.
-
-Amazon Cognito represents scopes in the access token in the format
-`$resource-server-identifier/$scope`. Longer scope-identifier strings
-increase the size of your access tokens.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\x21\x23-\x5B\x5D-\x7E]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-cognito-userpoolresourceserver-name"></a>
 A friendly name for the resource server.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w\s+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Scopes`  <a name="cfn-cognito-userpoolresourceserver-scopes"></a>
+A list of scopes. Each scope is a map with keys `ScopeName` and `ScopeDescription`.
+*Required*: No
+*Type*: Array of [ResourceServerScopeType](aws-properties-cognito-userpoolresourceserver-resourceserverscopetype.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[\w\s+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scopes`
-
-A list of scopes. Each scope is a map with keys `ScopeName` and
-`ScopeDescription`.
-
-_Required_: No
-
-_Type_: Array of [ResourceServerScopeType](aws-properties-cognito-userpoolresourceserver-resourceserverscopetype.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolId`
-
+`UserPoolId`  <a name="cfn-cognito-userpoolresourceserver-userpoolid"></a>
 The ID of the user pool where you want to create a resource server.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\w-]+_[0-9a-zA-Z]+`
-
-_Minimum_: `1`
-
-_Maximum_: `55`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w-]+_[0-9a-zA-Z]+`
+*Minimum*: `1`
+*Maximum*: `55`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-cognito-userpoolresourceserver-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cognito-userpoolresourceserver-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns physicalResourceId, which is the resource server
-identifier “Identifier". For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns physicalResourceId, which is the resource server identifier “Identifier". For example:
 
-`{ "Ref": "yourResourceServerIdentifier" }`
+ `{ "Ref": "yourResourceServerIdentifier" }`
 
-For the Amazon Cognito resource server `yourResourceServerIdentifier`, Ref
-returns the name of the resource server.
+For the Amazon Cognito resource server `yourResourceServerIdentifier`, Ref returns the name of the resource server.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-cognito-userpoolresourceserver--examples"></a>
 
 ### Creating a new resource server for a user pool
+<a name="aws-resource-cognito-userpoolresourceserver--examples--Creating_a_new_resource_server_for_a_user_pool"></a>
 
-The following example creates a resource server "Name" with the identifier
-"Identifier" in the referenced user pool.
+The following example creates a resource server "Name" with the identifier "Identifier" in the referenced user pool.
 
 #### JSON
+<a name="aws-resource-cognito-userpoolresourceserver--examples--Creating_a_new_resource_server_for_a_user_pool--json"></a>
 
-```json
-
+```
 {
   "UserPoolResourceServer": {
     "Type": "AWS::Cognito::UserPoolResourceServer",
@@ -166,9 +131,9 @@ The following example creates a resource server "Name" with the identifier
 ```
 
 #### YAML
+<a name="aws-resource-cognito-userpoolresourceserver--examples--Creating_a_new_resource_server_for_a_user_pool--yaml"></a>
 
-```yaml
-
+```
 UserPoolResourceServer:
   Type: AWS::Cognito::UserPoolResourceServer
   Properties:
@@ -181,11 +146,5 @@ UserPoolResourceServer:
      - ScopeName: "ScopeName2"
        ScopeDescription: "description"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Cognito::UserPoolIdentityProvider
-
-ResourceServerScopeType
 
 All content copied from https://docs.aws.amazon.com/.

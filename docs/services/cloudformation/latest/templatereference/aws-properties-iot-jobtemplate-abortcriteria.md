@@ -2,101 +2,70 @@
 title: "AWS::IoT::JobTemplate AbortCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::JobTemplate AbortCriteria
+<a name="aws-properties-iot-jobtemplate-abortcriteria"></a>
 
 The criteria that determine when and how a job abort takes place.
 
 ## Syntax
+<a name="aws-properties-iot-jobtemplate-abortcriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-jobtemplate-abortcriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "FailureType" : String,
-  "MinNumberOfExecutedThings" : Integer,
-  "ThresholdPercentage" : Number
+  "[Action](#cfn-iot-jobtemplate-abortcriteria-action)" : {{String}},
+  "[FailureType](#cfn-iot-jobtemplate-abortcriteria-failuretype)" : {{String}},
+  "[MinNumberOfExecutedThings](#cfn-iot-jobtemplate-abortcriteria-minnumberofexecutedthings)" : {{Integer}},
+  "[ThresholdPercentage](#cfn-iot-jobtemplate-abortcriteria-thresholdpercentage)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-jobtemplate-abortcriteria-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  FailureType: String
-  MinNumberOfExecutedThings: Integer
-  ThresholdPercentage: Number
-
+```
+  [Action](#cfn-iot-jobtemplate-abortcriteria-action): {{String}}
+  [FailureType](#cfn-iot-jobtemplate-abortcriteria-failuretype): {{String}}
+  [MinNumberOfExecutedThings](#cfn-iot-jobtemplate-abortcriteria-minnumberofexecutedthings): {{Integer}}
+  [ThresholdPercentage](#cfn-iot-jobtemplate-abortcriteria-thresholdpercentage): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-jobtemplate-abortcriteria-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-iot-jobtemplate-abortcriteria-action"></a>
 The type of job action to take to initiate the job abort.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CANCEL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CANCEL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FailureType`
-
+`FailureType`  <a name="cfn-iot-jobtemplate-abortcriteria-failuretype"></a>
 The type of job execution failures that can initiate a job abort.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `FAILED | REJECTED | TIMED_OUT | ALL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`MinNumberOfExecutedThings`  <a name="cfn-iot-jobtemplate-abortcriteria-minnumberofexecutedthings"></a>
+The minimum number of things which must receive job execution notifications before the job can be aborted.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `FAILED | REJECTED | TIMED_OUT | ALL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MinNumberOfExecutedThings`
-
-The minimum number of things which must receive job execution notifications before
-the job can be aborted.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ThresholdPercentage`
-
-The minimum percentage of job execution failures that must occur to initiate the
-job abort.
-
-AWS IoT Core supports up to two digits after the decimal (for example, 10.9 and 10.99,
-but not 10.999).
-
-_Required_: Yes
-
-_Type_: Number
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AbortConfig
-
-ExponentialRolloutRate
+`ThresholdPercentage`  <a name="cfn-iot-jobtemplate-abortcriteria-thresholdpercentage"></a>
+The minimum percentage of job execution failures that must occur to initiate the job abort.
+AWS IoT Core supports up to two digits after the decimal (for example, 10.9 and 10.99, but not 10.999).
+*Required*: Yes
+*Type*: Number
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

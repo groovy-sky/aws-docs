@@ -3,23 +3,20 @@ title: "Perform map operations in DynamoDB with an AWS SDK"
 ---
 
 # Perform map operations in DynamoDB with an AWS SDK
+<a name="example_dynamodb_Scenario_MapOperations_section"></a>
 
 The following code examples show how to perform map operations in DynamoDB.
++ Add and update nested attributes in map structures.
++ Remove specific fields from maps.
++ Work with deeply nested map attributes.
 
-- Add and update nested attributes in map structures.
-
-- Remove specific fields from maps.
-
-- Work with deeply nested map attributes.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
 Demonstrate map operations using AWS SDK for Java 2.x.
 
-```java
-
+```
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -55,23 +52,30 @@ import java.util.Map;
         String mapKey,
         AttributeValue value) {
 
-        // Create an empty map to use if the map doesn't exist
-        Map<String, AttributeValue> emptyMap = new HashMap<>();
-        AttributeValue emptyMapValue = AttributeValue.builder().m(emptyMap).build();
+        // A single UpdateExpression can't reference both a map and a path inside
+        // that same map (for example "#mapName" and "#mapName.#mapKey"): DynamoDB
+        // rejects overlapping document paths with a ValidationException. Instead,
+        // perform the update in two steps.
 
-        // Define the update parameters
+        // Step 1: create the map with an empty value if it doesn't already exist.
+        dynamoDbClient.updateItem(UpdateItemRequest.builder()
+            .tableName(tableName)
+            .key(key)
+            .updateExpression("SET #mapName = if_not_exists(#mapName, :emptyMap)")
+            .expressionAttributeNames(Map.of("#mapName", mapName))
+            .expressionAttributeValues(Map.of(
+                ":emptyMap", AttributeValue.builder().m(new HashMap<>()).build()))
+            .build());
+
+        // Step 2: set the key within the now-guaranteed-to-exist map.
         UpdateItemRequest request = UpdateItemRequest.builder()
             .tableName(tableName)
             .key(key)
-            .updateExpression("SET #mapName = if_not_exists(#mapName, :emptyMap), #mapName.#mapKey = :value")
+            .updateExpression("SET #mapName.#mapKey = :value")
             .expressionAttributeNames(Map.of(
                 "#mapName", mapName,
                 "#mapKey", mapKey))
-            .expressionAttributeValues(Map.of(
-                ":value",
-                value,
-                ":emptyMap",
-                AttributeValue.builder().m(new HashMap<>()).build()))
+            .expressionAttributeValues(Map.of(":value", value))
             .returnValues("UPDATED_NEW")
             .build();
 
@@ -241,13 +245,10 @@ import java.util.Map;
                 .build();
         }
     }
-
 ```
-
 Example usage of map operations with AWS SDK for Java 2.x.
 
-```java
-
+```
     public static void exampleUsage(DynamoDbClient dynamoDbClient, String tableName) {
         // Example key
         Map<String, AttributeValue> key = new HashMap<>();
@@ -327,21 +328,16 @@ Example usage of map operations with AWS SDK for Java 2.x.
             e.printStackTrace();
         }
     }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
-
 Demonstrate map operations using AWS SDK for JavaScript.
 
-```javascript
-
+```
 /**
  * Example of updating map attributes in DynamoDB.
  *
@@ -447,13 +443,27 @@ async function updateMapAttributeWithIfNotExists(
   const client = new DynamoDBClient(config);
   const docClient = DynamoDBDocumentClient.from(client);
 
-  // Define the update parameters using SET with if_not_exists
+  // A single UpdateExpression can't reference both a map and a path inside that
+  // same map (for example `${mapName}` and `${mapName}.${mapKey}`): DynamoDB
+  // rejects overlapping document paths with a ValidationException. Instead,
+  // perform the update in two steps.
+
+  // Step 1: create the map with an empty value if it doesn't already exist.
+  await docClient.send(new UpdateCommand({
+    TableName: tableName,
+    Key: key,
+    UpdateExpression: `SET ${mapName} = if_not_exists(${mapName}, :emptyMap)`,
+    ExpressionAttributeValues: {
+      ":emptyMap": {}
+    }
+  }));
+
+  // Step 2: set the key within the now-guaranteed-to-exist map.
   const params = {
     TableName: tableName,
     Key: key,
-    UpdateExpression: `SET ${mapName} = if_not_exists(${mapName}, :emptyMap), ${mapName}.${mapKey} = :value`,
+    UpdateExpression: `SET ${mapName}.${mapKey} = :value`,
     ExpressionAttributeValues: {
-      ":emptyMap": {},
       ":value": value
     },
     ReturnValues: "UPDATED_NEW"
@@ -705,21 +715,16 @@ module.exports = {
 if (require.main === module) {
   exampleUsage();
 }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
 Demonstrate map operations using AWS SDK for Python (Boto3).
 
-```python
-
+```
 """
 Example of updating map attributes in DynamoDB.
 
@@ -984,21 +989,11 @@ def example_usage():
 
 if __name__ == "__main__":
     example_usage()
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Python (Boto3) API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Perform list operations
-
-Perform set operations
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

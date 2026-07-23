@@ -2,137 +2,92 @@
 title: "AWS::S3::Bucket RedirectRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket RedirectRule
+<a name="aws-properties-s3-bucket-redirectrule"></a>
 
-Specifies how requests are redirected. In the event of an error, you can specify a different error
-code to return.
+Specifies how requests are redirected. In the event of an error, you can specify a different error code to return.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-redirectrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-redirectrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "HostName" : String,
-  "HttpRedirectCode" : String,
-  "Protocol" : String,
-  "ReplaceKeyPrefixWith" : String,
-  "ReplaceKeyWith" : String
+  "[HostName](#cfn-s3-bucket-redirectrule-hostname)" : {{String}},
+  "[HttpRedirectCode](#cfn-s3-bucket-redirectrule-httpredirectcode)" : {{String}},
+  "[Protocol](#cfn-s3-bucket-redirectrule-protocol)" : {{String}},
+  "[ReplaceKeyPrefixWith](#cfn-s3-bucket-redirectrule-replacekeyprefixwith)" : {{String}},
+  "[ReplaceKeyWith](#cfn-s3-bucket-redirectrule-replacekeywith)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-redirectrule-syntax.yaml"></a>
 
-```yaml
-
-  HostName: String
-  HttpRedirectCode: String
-  Protocol: String
-  ReplaceKeyPrefixWith: String
-  ReplaceKeyWith: String
-
+```
+  [HostName](#cfn-s3-bucket-redirectrule-hostname): {{String}}
+  [HttpRedirectCode](#cfn-s3-bucket-redirectrule-httpredirectcode): {{String}}
+  [Protocol](#cfn-s3-bucket-redirectrule-protocol): {{String}}
+  [ReplaceKeyPrefixWith](#cfn-s3-bucket-redirectrule-replacekeyprefixwith): {{String}}
+  [ReplaceKeyWith](#cfn-s3-bucket-redirectrule-replacekeywith): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-redirectrule-properties"></a>
 
-`HostName`
-
+`HostName`  <a name="cfn-s3-bucket-redirectrule-hostname"></a>
 The host name to use in the redirect request.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`HttpRedirectCode`  <a name="cfn-s3-bucket-redirectrule-httpredirectcode"></a>
+The HTTP redirect code to use on the response. Not required if one of the siblings is present.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Protocol`  <a name="cfn-s3-bucket-redirectrule-protocol"></a>
+Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
+*Required*: No
+*Type*: String
+*Allowed values*: `http | https`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ReplaceKeyPrefixWith`  <a name="cfn-s3-bucket-redirectrule-replacekeyprefixwith"></a>
+The object key prefix to use in the redirect request. For example, to redirect requests for all pages with prefix `docs/` (objects in the `docs/` folder) to `documents/`, you can set a condition block with `KeyPrefixEquals` set to `docs/` and in the Redirect set `ReplaceKeyPrefixWith` to `/documents`. Not required if one of the siblings is present. Can be present only if `ReplaceKeyWith` is not provided.
+Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see [ XML related object key constraints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html#object-key-xml-related-constraints).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`HttpRedirectCode`
-
-The HTTP redirect code to use on the response. Not required if one of the siblings is
-present.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-Protocol to use when redirecting requests. The default is the protocol that is used in the original
-request.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `http | https`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReplaceKeyPrefixWith`
-
-The object key prefix to use in the redirect request. For example, to redirect requests for all
-pages with prefix `docs/` (objects in the `docs/` folder) to
-`documents/`, you can set a condition block with `KeyPrefixEquals` set to
-`docs/` and in the Redirect set `ReplaceKeyPrefixWith` to
-`/documents`. Not required if one of the siblings is present. Can be present only if
-`ReplaceKeyWith` is not provided.
-
-###### Important
-
-Replacement must be made for object keys containing special characters (such as carriage returns) when using
-XML requests. For more information, see [XML related object key constraints](../../../s3/latest/userguide/object-keys.md#object-key-xml-related-constraints).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReplaceKeyWith`
-
-The specific object key to use in the redirect request. For example, redirect request to
-`error.html`. Not required if one of the siblings is present. Can be present only if
-`ReplaceKeyPrefixWith` is not provided.
-
-###### Important
-
-Replacement must be made for object keys containing special characters (such as carriage returns) when using
-XML requests. For more information, see [XML related object key constraints](../../../s3/latest/userguide/object-keys.md#object-key-xml-related-constraints).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ReplaceKeyWith`  <a name="cfn-s3-bucket-redirectrule-replacekeywith"></a>
+The specific object key to use in the redirect request. For example, redirect request to `error.html`. Not required if one of the siblings is present. Can be present only if `ReplaceKeyPrefixWith` is not provided.
+Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see [ XML related object key constraints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html#object-key-xml-related-constraints).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-redirectrule--examples"></a>
 
 ### Configure a static website with a routing rule
+<a name="aws-properties-s3-bucket-redirectrule--examples--Configure_a_static_website_with_a_routing_rule"></a>
 
-In this example, `AWS::S3::Bucket's Fn::GetAtt` values are used to provide
-outputs. If an HTTP 404 error occurs, the routing rule redirects requests to an EC2
-instance and inserts the object key prefix `report-404/` in the redirect. For
-example, if you request a page called `out1/ExamplePage.html` and it results in an
-HTTP 404 error, the request is routed to a page called
-`report-404/ExamplePage.html` on the specified instance. For all other HTTP
-error codes, `error.html` is returned.
+In this example, `AWS::S3::Bucket's Fn::GetAtt` values are used to provide outputs. If an HTTP 404 error occurs, the routing rule redirects requests to an EC2 instance and inserts the object key prefix `report-404/` in the redirect. For example, if you request a page called `out1/ExamplePage.html` and it results in an HTTP 404 error, the request is routed to a page called `report-404/ExamplePage.html` on the specified instance. For all other HTTP error codes, `error.html` is returned.
 
-This example also specifies a metrics configuration called `EntireBucket`
-that enables CloudWatch request metrics at the bucket level.
+This example also specifies a metrics configuration called `EntireBucket` that enables CloudWatch request metrics at the bucket level.
 
 #### JSON
+<a name="aws-properties-s3-bucket-redirectrule--examples--Configure_a_static_website_with_a_routing_rule--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "S3Bucket": {
@@ -197,9 +152,9 @@ that enables CloudWatch request metrics at the bucket level.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-redirectrule--examples--Configure_a_static_website_with_a_routing_rule--yaml"></a>
 
-```yaml
-
+```
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
@@ -234,11 +189,5 @@ Outputs:
           - DomainName
     Description: Name of S3 bucket to hold website content
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedirectAllRequestsTo
-
-ReplicaModifications
 
 All content copied from https://docs.aws.amazon.com/.

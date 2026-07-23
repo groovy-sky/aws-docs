@@ -2,54 +2,42 @@
 title: "AWS::Bedrock::Prompt PromptInputVariable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Prompt PromptInputVariable
+<a name="aws-properties-bedrock-prompt-promptinputvariable"></a>
 
 Contains information about a variable in the prompt.
 
 ## Syntax
+<a name="aws-properties-bedrock-prompt-promptinputvariable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-prompt-promptinputvariable-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-bedrock-prompt-promptinputvariable-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-prompt-promptinputvariable-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-bedrock-prompt-promptinputvariable-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-prompt-promptinputvariable-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-bedrock-prompt-promptinputvariable-name"></a>
 The name of the variable.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?){1,100}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PromptInferenceConfiguration
-
-PromptMetadataEntry
+*Required*: No
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?){1,100}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

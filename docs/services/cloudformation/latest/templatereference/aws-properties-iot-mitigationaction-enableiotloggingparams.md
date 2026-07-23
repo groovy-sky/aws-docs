@@ -2,70 +2,52 @@
 title: "AWS::IoT::MitigationAction EnableIoTLoggingParams"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::MitigationAction EnableIoTLoggingParams
+<a name="aws-properties-iot-mitigationaction-enableiotloggingparams"></a>
 
 Parameters used when defining a mitigation action that enable AWS IoT Core logging.
 
 ## Syntax
+<a name="aws-properties-iot-mitigationaction-enableiotloggingparams-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-mitigationaction-enableiotloggingparams-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogLevel" : String,
-  "RoleArnForLogging" : String
+  "[LogLevel](#cfn-iot-mitigationaction-enableiotloggingparams-loglevel)" : {{String}},
+  "[RoleArnForLogging](#cfn-iot-mitigationaction-enableiotloggingparams-rolearnforlogging)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-mitigationaction-enableiotloggingparams-syntax.yaml"></a>
 
-```yaml
-
-  LogLevel: String
-  RoleArnForLogging: String
-
+```
+  [LogLevel](#cfn-iot-mitigationaction-enableiotloggingparams-loglevel): {{String}}
+  [RoleArnForLogging](#cfn-iot-mitigationaction-enableiotloggingparams-rolearnforlogging): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-mitigationaction-enableiotloggingparams-properties"></a>
 
-`LogLevel`
-
+`LogLevel`  <a name="cfn-iot-mitigationaction-enableiotloggingparams-loglevel"></a>
 Specifies the type of information to be logged.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DEBUG | INFO | ERROR | WARN | UNSET_VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DEBUG | INFO | ERROR | WARN | UNSET_VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArnForLogging`
-
+`RoleArnForLogging`  <a name="cfn-iot-mitigationaction-enableiotloggingparams-rolearnforlogging"></a>
 The Amazon Resource Name (ARN) of the IAM role used for logging.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `11`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AddThingsToThingGroupParams
-
-PublishFindingToSnsParams
+*Required*: Yes
+*Type*: String
+*Minimum*: `11`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

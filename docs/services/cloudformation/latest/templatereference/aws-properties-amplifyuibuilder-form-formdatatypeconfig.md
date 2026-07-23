@@ -2,66 +2,50 @@
 title: "AWS::AmplifyUIBuilder::Form FormDataTypeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FormDataTypeConfig
+<a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig"></a>
 
 The `FormDataTypeConfig` property specifies the data type configuration for the data source associated with a form.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataSourceType" : String,
-  "DataTypeName" : String
+  "[DataSourceType](#cfn-amplifyuibuilder-form-formdatatypeconfig-datasourcetype)" : {{String}},
+  "[DataTypeName](#cfn-amplifyuibuilder-form-formdatatypeconfig-datatypename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig-syntax.yaml"></a>
 
-```yaml
-
-  DataSourceType: String
-  DataTypeName: String
-
+```
+  [DataSourceType](#cfn-amplifyuibuilder-form-formdatatypeconfig-datasourcetype): {{String}}
+  [DataTypeName](#cfn-amplifyuibuilder-form-formdatatypeconfig-datatypename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig-properties"></a>
 
-`DataSourceType`
-
+`DataSourceType`  <a name="cfn-amplifyuibuilder-form-formdatatypeconfig-datasourcetype"></a>
 The data source type, either an Amplify DataStore model or a custom data type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DataStore | Custom`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DataStore | Custom`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataTypeName`
-
+`DataTypeName`  <a name="cfn-amplifyuibuilder-form-formdatatypeconfig-datatypename"></a>
 The unique name of the data type you are using as the data source for the form.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FormCTA
-
-FormInputBindingPropertiesValue
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

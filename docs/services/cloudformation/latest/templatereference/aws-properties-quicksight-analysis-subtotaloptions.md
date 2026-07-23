@@ -2,153 +2,108 @@
 title: "AWS::QuickSight::Analysis SubtotalOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SubtotalOptions
+<a name="aws-properties-quicksight-analysis-subtotaloptions"></a>
 
 The subtotal options.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-subtotaloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-subtotaloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomLabel" : String,
-  "FieldLevel" : String,
-  "FieldLevelOptions" : [ PivotTableFieldSubtotalOptions, ... ],
-  "MetricHeaderCellStyle" : TableCellStyle,
-  "StyleTargets" : [ TableStyleTarget, ... ],
-  "TotalCellStyle" : TableCellStyle,
-  "TotalsVisibility" : String,
-  "ValueCellStyle" : TableCellStyle
+  "[CustomLabel](#cfn-quicksight-analysis-subtotaloptions-customlabel)" : {{String}},
+  "[FieldLevel](#cfn-quicksight-analysis-subtotaloptions-fieldlevel)" : {{String}},
+  "[FieldLevelOptions](#cfn-quicksight-analysis-subtotaloptions-fieldleveloptions)" : {{[ PivotTableFieldSubtotalOptions, ... ]}},
+  "[MetricHeaderCellStyle](#cfn-quicksight-analysis-subtotaloptions-metricheadercellstyle)" : {{TableCellStyle}},
+  "[StyleTargets](#cfn-quicksight-analysis-subtotaloptions-styletargets)" : {{[ TableStyleTarget, ... ]}},
+  "[TotalCellStyle](#cfn-quicksight-analysis-subtotaloptions-totalcellstyle)" : {{TableCellStyle}},
+  "[TotalsVisibility](#cfn-quicksight-analysis-subtotaloptions-totalsvisibility)" : {{String}},
+  "[ValueCellStyle](#cfn-quicksight-analysis-subtotaloptions-valuecellstyle)" : {{TableCellStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-subtotaloptions-syntax.yaml"></a>
 
-```yaml
-
-  CustomLabel: String
-  FieldLevel: String
-  FieldLevelOptions:
-    - PivotTableFieldSubtotalOptions
-  MetricHeaderCellStyle:
-    TableCellStyle
-  StyleTargets:
-    - TableStyleTarget
-  TotalCellStyle:
-    TableCellStyle
-  TotalsVisibility: String
-  ValueCellStyle:
-    TableCellStyle
-
+```
+  [CustomLabel](#cfn-quicksight-analysis-subtotaloptions-customlabel): {{String}}
+  [FieldLevel](#cfn-quicksight-analysis-subtotaloptions-fieldlevel): {{String}}
+  [FieldLevelOptions](#cfn-quicksight-analysis-subtotaloptions-fieldleveloptions): {{
+    - PivotTableFieldSubtotalOptions}}
+  [MetricHeaderCellStyle](#cfn-quicksight-analysis-subtotaloptions-metricheadercellstyle): {{
+    TableCellStyle}}
+  [StyleTargets](#cfn-quicksight-analysis-subtotaloptions-styletargets): {{
+    - TableStyleTarget}}
+  [TotalCellStyle](#cfn-quicksight-analysis-subtotaloptions-totalcellstyle): {{
+    TableCellStyle}}
+  [TotalsVisibility](#cfn-quicksight-analysis-subtotaloptions-totalsvisibility): {{String}}
+  [ValueCellStyle](#cfn-quicksight-analysis-subtotaloptions-valuecellstyle): {{
+    TableCellStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-subtotaloptions-properties"></a>
 
-`CustomLabel`
-
+`CustomLabel`  <a name="cfn-quicksight-analysis-subtotaloptions-customlabel"></a>
 The custom label string for the subtotal cells.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldLevel`
-
+`FieldLevel`  <a name="cfn-quicksight-analysis-subtotaloptions-fieldlevel"></a>
 The field level (all, custom, last) for the subtotal cells.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL | CUSTOM | LAST`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL | CUSTOM | LAST`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldLevelOptions`
-
+`FieldLevelOptions`  <a name="cfn-quicksight-analysis-subtotaloptions-fieldleveloptions"></a>
 The optional configuration of subtotal cells.
+*Required*: No
+*Type*: Array of [PivotTableFieldSubtotalOptions](aws-properties-quicksight-analysis-pivottablefieldsubtotaloptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PivotTableFieldSubtotalOptions](aws-properties-quicksight-analysis-pivottablefieldsubtotaloptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricHeaderCellStyle`
-
+`MetricHeaderCellStyle`  <a name="cfn-quicksight-analysis-subtotaloptions-metricheadercellstyle"></a>
 The cell styling options for the subtotals of header cells.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StyleTargets`
-
+`StyleTargets`  <a name="cfn-quicksight-analysis-subtotaloptions-styletargets"></a>
 The style targets options for subtotals.
+*Required*: No
+*Type*: Array of [TableStyleTarget](aws-properties-quicksight-analysis-tablestyletarget.md)
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TableStyleTarget](aws-properties-quicksight-analysis-tablestyletarget.md)
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalCellStyle`
-
+`TotalCellStyle`  <a name="cfn-quicksight-analysis-subtotaloptions-totalcellstyle"></a>
 The cell styling options for the subtotal cells.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalsVisibility`
-
+`TotalsVisibility`  <a name="cfn-quicksight-analysis-subtotaloptions-totalsvisibility"></a>
 The visibility configuration for the subtotal cells.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueCellStyle`
-
+`ValueCellStyle`  <a name="cfn-quicksight-analysis-subtotaloptions-valuecellstyle"></a>
 The cell styling options for the subtotals of value cells.
-
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StringValueWhenUnsetConfiguration
-
-TableAggregatedFieldWells
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

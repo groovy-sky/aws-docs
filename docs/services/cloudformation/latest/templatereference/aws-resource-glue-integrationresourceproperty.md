@@ -2,118 +2,98 @@
 title: "AWS::Glue::IntegrationResourceProperty"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::IntegrationResourceProperty
+<a name="aws-resource-glue-integrationresourceproperty"></a>
 
 The `AWS::Glue::IntegrationResourceProperty` resource type can be used to setup `ResourceProperty` of the AWS Glue connection (for the SaaS source), DynamoDB Database (for DynamoDB source), or AWS Glue database ARN (for the target). ResourceProperty is used to define the properties requires to setup the integration, including the role to access the connection or database, KMS keys, event bus for event notifications and VPC connection. To set both source and target properties the same API needs to be invoked twice, once with the AWS Glue connection ARN as ResourceArn with SourceProcessingProperties and next, with the AWS Glue database ARN as ResourceArn with TargetProcessingProperties respectively.
 
 ## Syntax
+<a name="aws-resource-glue-integrationresourceproperty-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-glue-integrationresourceproperty-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Glue::IntegrationResourceProperty",
   "Properties" : {
-      "ResourceArn" : String,
-      "SourceProcessingProperties" : SourceProcessingProperties,
-      "Tags" : [ Tag, ... ],
-      "TargetProcessingProperties" : TargetProcessingProperties
+      "[ResourceArn](#cfn-glue-integrationresourceproperty-resourcearn)" : {{String}},
+      "[SourceProcessingProperties](#cfn-glue-integrationresourceproperty-sourceprocessingproperties)" : {{SourceProcessingProperties}},
+      "[Tags](#cfn-glue-integrationresourceproperty-tags)" : {{[ Tag, ... ]}},
+      "[TargetProcessingProperties](#cfn-glue-integrationresourceproperty-targetprocessingproperties)" : {{TargetProcessingProperties}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-glue-integrationresourceproperty-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Glue::IntegrationResourceProperty
 Properties:
-  ResourceArn: String
-  SourceProcessingProperties:
-    SourceProcessingProperties
-  Tags:
-    - Tag
-  TargetProcessingProperties:
-    TargetProcessingProperties
-
+  [ResourceArn](#cfn-glue-integrationresourceproperty-resourcearn): {{String}}
+  [SourceProcessingProperties](#cfn-glue-integrationresourceproperty-sourceprocessingproperties): {{
+    SourceProcessingProperties}}
+  [Tags](#cfn-glue-integrationresourceproperty-tags): {{
+    - Tag}}
+  [TargetProcessingProperties](#cfn-glue-integrationresourceproperty-targetprocessingproperties): {{
+    TargetProcessingProperties}}
 ```
 
 ## Properties
+<a name="aws-resource-glue-integrationresourceproperty-properties"></a>
 
-`ResourceArn`
-
+`ResourceArn`  <a name="cfn-glue-integrationresourceproperty-resourcearn"></a>
 The connection ARN of the source, or the database ARN of the target.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws:.*:.*:[0-9]+:.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws:.*:.*:[0-9]+:.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceProcessingProperties`
-
+`SourceProcessingProperties`  <a name="cfn-glue-integrationresourceproperty-sourceprocessingproperties"></a>
 The resource properties associated with the integration source.
+*Required*: No
+*Type*: [SourceProcessingProperties](aws-properties-glue-integrationresourceproperty-sourceprocessingproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SourceProcessingProperties](aws-properties-glue-integrationresourceproperty-sourceprocessingproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-glue-integrationresourceproperty-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-glue-integrationresourceproperty-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-glue-integrationresourceproperty-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetProcessingProperties`
-
+`TargetProcessingProperties`  <a name="cfn-glue-integrationresourceproperty-targetprocessingproperties"></a>
 The structure used to define the resource properties associated with the integration target.
-
-_Required_: No
-
-_Type_: [TargetProcessingProperties](aws-properties-glue-integrationresourceproperty-targetprocessingproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [TargetProcessingProperties](aws-properties-glue-integrationresourceproperty-targetprocessingproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-glue-integrationresourceproperty-return-values"></a>
 
 ### Ref
+<a name="aws-resource-glue-integrationresourceproperty-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns The resource property arn.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-glue-integrationresourceproperty-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ResourcePropertyArn`
+####
+<a name="aws-resource-glue-integrationresourceproperty-return-values-fn--getatt-fn--getatt"></a>
 
+`ResourcePropertyArn`  <a name="ResourcePropertyArn-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-SourceProcessingProperties
 
 All content copied from https://docs.aws.amazon.com/.

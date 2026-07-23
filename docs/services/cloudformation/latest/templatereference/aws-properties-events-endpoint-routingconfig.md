@@ -2,54 +2,42 @@
 title: "AWS::Events::Endpoint RoutingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Endpoint RoutingConfig
+<a name="aws-properties-events-endpoint-routingconfig"></a>
 
 The routing configuration of the endpoint.
 
 ## Syntax
+<a name="aws-properties-events-endpoint-routingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-endpoint-routingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FailoverConfig" : FailoverConfig
+  "[FailoverConfig](#cfn-events-endpoint-routingconfig-failoverconfig)" : {{FailoverConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-endpoint-routingconfig-syntax.yaml"></a>
 
-```yaml
-
-  FailoverConfig:
-    FailoverConfig
-
+```
+  [FailoverConfig](#cfn-events-endpoint-routingconfig-failoverconfig): {{
+    FailoverConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-events-endpoint-routingconfig-properties"></a>
 
-`FailoverConfig`
-
-The failover configuration for an endpoint. This includes what triggers failover and what
-happens when it's triggered.
-
-_Required_: Yes
-
-_Type_: [FailoverConfig](aws-properties-events-endpoint-failoverconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationConfig
-
-Secondary
+`FailoverConfig`  <a name="cfn-events-endpoint-routingconfig-failoverconfig"></a>
+The failover configuration for an endpoint. This includes what triggers failover and what happens when it's triggered.
+*Required*: Yes
+*Type*: [FailoverConfig](aws-properties-events-endpoint-failoverconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

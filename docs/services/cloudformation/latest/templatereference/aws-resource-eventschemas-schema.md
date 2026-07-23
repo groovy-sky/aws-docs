@@ -2,164 +2,141 @@
 title: "AWS::EventSchemas::Schema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventSchemas::Schema
+<a name="aws-resource-eventschemas-schema"></a>
 
-Use the `AWS::EventSchemas::Schema` resource to specify an event
-schema.
+Use the `AWS::EventSchemas::Schema` resource to specify an event schema.
 
 ## Syntax
+<a name="aws-resource-eventschemas-schema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-eventschemas-schema-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EventSchemas::Schema",
   "Properties" : {
-      "Content" : String,
-      "Description" : String,
-      "RegistryName" : String,
-      "SchemaName" : String,
-      "Tags" : [ TagsEntry, ... ],
-      "Type" : String
+      "[Content](#cfn-eventschemas-schema-content)" : {{String}},
+      "[Description](#cfn-eventschemas-schema-description)" : {{String}},
+      "[RegistryName](#cfn-eventschemas-schema-registryname)" : {{String}},
+      "[SchemaName](#cfn-eventschemas-schema-schemaname)" : {{String}},
+      "[Tags](#cfn-eventschemas-schema-tags)" : {{[ TagsEntry, ... ]}},
+      "[Type](#cfn-eventschemas-schema-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-eventschemas-schema-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EventSchemas::Schema
 Properties:
-  Content: String
-  Description: String
-  RegistryName: String
-  SchemaName: String
-  Tags:
-    - TagsEntry
-  Type: String
-
+  [Content](#cfn-eventschemas-schema-content): {{String}}
+  [Description](#cfn-eventschemas-schema-description): {{String}}
+  [RegistryName](#cfn-eventschemas-schema-registryname): {{String}}
+  [SchemaName](#cfn-eventschemas-schema-schemaname): {{String}}
+  [Tags](#cfn-eventschemas-schema-tags): {{
+    - TagsEntry}}
+  [Type](#cfn-eventschemas-schema-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-eventschemas-schema-properties"></a>
 
-`Content`
-
+`Content`  <a name="cfn-eventschemas-schema-content"></a>
 The source of the schema definition.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-eventschemas-schema-description"></a>
 A description of the schema.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegistryName`
-
+`RegistryName`  <a name="cfn-eventschemas-schema-registryname"></a>
 The name of the schema registry.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SchemaName`
-
+`SchemaName`  <a name="cfn-eventschemas-schema-schemaname"></a>
 The name of the schema.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-eventschemas-schema-tags"></a>
 Tags associated with the schema.
+*Required*: No
+*Type*: Array of [TagsEntry](aws-properties-eventschemas-schema-tagsentry.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TagsEntry](aws-properties-eventschemas-schema-tagsentry.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-eventschemas-schema-type"></a>
 The type of schema.
-
 Valid types include `OpenApi3` and `JSONSchemaDraft4`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-eventschemas-schema-return-values"></a>
 
 ### Ref
+<a name="aws-resource-eventschemas-schema-return-values-ref"></a>
 
-When you provide the logical ID of this resource to the `Ref` intrinsic
-function, `Ref` returns the ARN of the schema. For example:
+When you provide the logical ID of this resource to the `Ref` intrinsic function, `Ref` returns the ARN of the schema. For example:
 
-`{ "Ref": "MySchema" }`
+ `{ "Ref": "MySchema" }`
 
 Returns a value similar to the following:
 
-`arn:aws:schemas:us-east-1:012345678901:schema/MyRegistry/MySchema`
+ `arn:aws:schemas:us-east-1:012345678901:schema/MyRegistry/MySchema`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-eventschemas-schema-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`LastModified`
+####
+<a name="aws-resource-eventschemas-schema-return-values-fn--getatt-fn--getatt"></a>
 
+`LastModified`  <a name="LastModified-fn::getatt"></a>
 The date and time that schema was modified.
 
-`SchemaArn`
-
+`SchemaArn`  <a name="SchemaArn-fn::getatt"></a>
 The ARN of the schema.
 
-`SchemaName`
-
+`SchemaName`  <a name="SchemaName-fn::getatt"></a>
 The name of the schema.
 
-`SchemaVersion`
-
+`SchemaVersion`  <a name="SchemaVersion-fn::getatt"></a>
 The version number of the schema.
 
-`VersionCreatedDate`
-
+`VersionCreatedDate`  <a name="VersionCreatedDate-fn::getatt"></a>
 The date the schema version was created.
 
 ## Examples
+<a name="aws-resource-eventschemas-schema--examples"></a>
+
+###
+<a name="aws-resource-eventschemas-schema--examples--"></a>
 
 #### YAML
+<a name="aws-resource-eventschemas-schema--examples----yaml"></a>
 
-```yaml
-
+```
 Resources:
   ExecutionStatusChangeSchema:
     Type: AWS::EventSchemas::Schema
@@ -195,13 +172,6 @@ Resources:
             }
           }
         }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EventSchemas::RegistryPolicy
-
-TagsEntry
 
 All content copied from https://docs.aws.amazon.com/.

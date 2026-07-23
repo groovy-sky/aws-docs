@@ -2,57 +2,44 @@
 title: "AWS::Comprehend::Flywheel EntityRecognitionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::Flywheel EntityRecognitionConfig
+<a name="aws-properties-comprehend-flywheel-entityrecognitionconfig"></a>
 
 Configuration required for an entity recognition model.
 
 ## Syntax
+<a name="aws-properties-comprehend-flywheel-entityrecognitionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-comprehend-flywheel-entityrecognitionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "EntityTypes" : [ EntityTypesListItem, ... ]
+  "[EntityTypes](#cfn-comprehend-flywheel-entityrecognitionconfig-entitytypes)" : {{[ EntityTypesListItem, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-comprehend-flywheel-entityrecognitionconfig-syntax.yaml"></a>
 
-```yaml
-
-  EntityTypes:
-    - EntityTypesListItem
-
+```
+  [EntityTypes](#cfn-comprehend-flywheel-entityrecognitionconfig-entitytypes): {{
+    - EntityTypesListItem}}
 ```
 
 ## Properties
+<a name="aws-properties-comprehend-flywheel-entityrecognitionconfig-properties"></a>
 
-`EntityTypes`
-
+`EntityTypes`  <a name="cfn-comprehend-flywheel-entityrecognitionconfig-entitytypes"></a>
 Up to 25 entity types that the model is trained to recognize.
-
-_Required_: No
-
-_Type_: Array of [EntityTypesListItem](aws-properties-comprehend-flywheel-entitytypeslistitem.md)
-
-_Minimum_: `1`
-
-_Maximum_: `25`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentClassificationConfig
-
-EntityTypesListItem
+*Required*: No
+*Type*: Array of [EntityTypesListItem](aws-properties-comprehend-flywheel-entitytypeslistitem.md)
+*Minimum*: `1`
+*Maximum*: `25`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

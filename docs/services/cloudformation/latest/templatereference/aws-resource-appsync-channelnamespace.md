@@ -2,181 +2,134 @@
 title: "AWS::AppSync::ChannelNamespace"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::ChannelNamespace
+<a name="aws-resource-appsync-channelnamespace"></a>
 
-The `AWS::AppSync::ChannelNamespace` resource creates a channel namespace
-associated with an `Api`. The `ChannelNamespace` contains the
-definitions for code handlers for the `Api`.
+The `AWS::AppSync::ChannelNamespace` resource creates a channel namespace associated with an `Api`. The `ChannelNamespace` contains the definitions for code handlers for the `Api`.
 
 ## Syntax
+<a name="aws-resource-appsync-channelnamespace-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appsync-channelnamespace-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppSync::ChannelNamespace",
   "Properties" : {
-      "ApiId" : String,
-      "CodeHandlers" : String,
-      "CodeS3Location" : String,
-      "HandlerConfigs" : HandlerConfigs,
-      "Name" : String,
-      "PublishAuthModes" : [ AuthMode, ... ],
-      "SubscribeAuthModes" : [ AuthMode, ... ],
-      "Tags" : [ Tag, ... ]
+      "[ApiId](#cfn-appsync-channelnamespace-apiid)" : {{String}},
+      "[CodeHandlers](#cfn-appsync-channelnamespace-codehandlers)" : {{String}},
+      "[CodeS3Location](#cfn-appsync-channelnamespace-codes3location)" : {{String}},
+      "[HandlerConfigs](#cfn-appsync-channelnamespace-handlerconfigs)" : {{HandlerConfigs}},
+      "[Name](#cfn-appsync-channelnamespace-name)" : {{String}},
+      "[PublishAuthModes](#cfn-appsync-channelnamespace-publishauthmodes)" : {{[ AuthMode, ... ]}},
+      "[SubscribeAuthModes](#cfn-appsync-channelnamespace-subscribeauthmodes)" : {{[ AuthMode, ... ]}},
+      "[Tags](#cfn-appsync-channelnamespace-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appsync-channelnamespace-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppSync::ChannelNamespace
 Properties:
-  ApiId: String
-  CodeHandlers: String
-  CodeS3Location: String
-  HandlerConfigs:
-    HandlerConfigs
-  Name: String
-  PublishAuthModes:
-    - AuthMode
-  SubscribeAuthModes:
-    - AuthMode
-  Tags:
-    - Tag
-
+  [ApiId](#cfn-appsync-channelnamespace-apiid): {{String}}
+  [CodeHandlers](#cfn-appsync-channelnamespace-codehandlers): {{String}}
+  [CodeS3Location](#cfn-appsync-channelnamespace-codes3location): {{String}}
+  [HandlerConfigs](#cfn-appsync-channelnamespace-handlerconfigs): {{
+    HandlerConfigs}}
+  [Name](#cfn-appsync-channelnamespace-name): {{String}}
+  [PublishAuthModes](#cfn-appsync-channelnamespace-publishauthmodes): {{
+    - AuthMode}}
+  [SubscribeAuthModes](#cfn-appsync-channelnamespace-subscribeauthmodes): {{
+    - AuthMode}}
+  [Tags](#cfn-appsync-channelnamespace-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-appsync-channelnamespace-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-appsync-channelnamespace-apiid"></a>
 The `Api` ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`CodeHandlers`  <a name="cfn-appsync-channelnamespace-codehandlers"></a>
+The event handler functions that run custom business logic to process published events and subscribe requests.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32768`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CodeHandlers`
-
-The event handler functions that run custom business logic to process published events
-and subscribe requests.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32768`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeS3Location`
-
+`CodeS3Location`  <a name="cfn-appsync-channelnamespace-codes3location"></a>
 The Amazon S3 endpoint where the code is located.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`HandlerConfigs`  <a name="cfn-appsync-channelnamespace-handlerconfigs"></a>
+The configuration for the `OnPublish` and `OnSubscribe` handlers.
+*Required*: No
+*Type*: [HandlerConfigs](aws-properties-appsync-channelnamespace-handlerconfigs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Name`  <a name="cfn-appsync-channelnamespace-name"></a>
+The name of the channel namespace. This name must be unique within the `Api`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `([A-Za-z0-9](?:[A-Za-z0-9\-]{0,48}[A-Za-z0-9])?)`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`PublishAuthModes`  <a name="cfn-appsync-channelnamespace-publishauthmodes"></a>
+The authorization mode to use for publishing messages on the channel namespace. This configuration overrides the default `Api`authorization configuration.
+*Required*: No
+*Type*: Array of [AuthMode](aws-properties-appsync-channelnamespace-authmode.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`HandlerConfigs`
+`SubscribeAuthModes`  <a name="cfn-appsync-channelnamespace-subscribeauthmodes"></a>
+The authorization mode to use for subscribing to messages on the channel namespace. This configuration overrides the default `Api`authorization configuration.
+*Required*: No
+*Type*: Array of [AuthMode](aws-properties-appsync-channelnamespace-authmode.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The configuration for the `OnPublish` and `OnSubscribe`
-handlers.
-
-_Required_: No
-
-_Type_: [HandlerConfigs](aws-properties-appsync-channelnamespace-handlerconfigs.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the channel namespace. This name must be unique within the
-`Api`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([A-Za-z0-9](?:[A-Za-z0-9\-]{0,48}[A-Za-z0-9])?)`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PublishAuthModes`
-
-The authorization mode to use for publishing messages on the channel namespace. This
-configuration overrides the default `Api` authorization configuration.
-
-_Required_: No
-
-_Type_: Array of [AuthMode](aws-properties-appsync-channelnamespace-authmode.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubscribeAuthModes`
-
-The authorization mode to use for subscribing to messages on the channel namespace.
-This configuration overrides the default `Api` authorization
-configuration.
-
-_Required_: No
-
-_Type_: Array of [AuthMode](aws-properties-appsync-channelnamespace-authmode.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-appsync-channelnamespace-tags"></a>
 A set of tags (key-value pairs) for this channel namespace.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appsync-channelnamespace-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appsync-channelnamespace-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appsync-channelnamespace-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appsync-channelnamespace-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns The Amazon Resource Name (ARN) of the channel namespace.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-appsync-channelnamespace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ChannelNamespaceArn`
+####
+<a name="aws-resource-appsync-channelnamespace-return-values-fn--getatt-fn--getatt"></a>
 
+`ChannelNamespaceArn`  <a name="ChannelNamespaceArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the channel namespace.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppSync::ApiKey
-
-AuthMode
 
 All content copied from https://docs.aws.amazon.com/.

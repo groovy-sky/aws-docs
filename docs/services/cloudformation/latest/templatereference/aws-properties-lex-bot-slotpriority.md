@@ -2,75 +2,54 @@
 title: "AWS::Lex::Bot SlotPriority"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotPriority
+<a name="aws-properties-lex-bot-slotpriority"></a>
 
-Sets the priority that Amazon Lex should use when eliciting slot values
-from a user.
+Sets the priority that Amazon Lex should use when eliciting slot values from a user.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slotpriority-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slotpriority-syntax.json"></a>
 
-```json
-
+```
 {
-  "Priority" : Integer,
-  "SlotName" : String
+  "[Priority](#cfn-lex-bot-slotpriority-priority)" : {{Integer}},
+  "[SlotName](#cfn-lex-bot-slotpriority-slotname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slotpriority-syntax.yaml"></a>
 
-```yaml
-
-  Priority: Integer
-  SlotName: String
-
+```
+  [Priority](#cfn-lex-bot-slotpriority-priority): {{Integer}}
+  [SlotName](#cfn-lex-bot-slotpriority-slotname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slotpriority-properties"></a>
 
-`Priority`
-
+`Priority`  <a name="cfn-lex-bot-slotpriority-priority"></a>
 The priority that Amazon Lex should apply to the slot.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotName`
-
+`SlotName`  <a name="cfn-lex-bot-slotpriority-slotname"></a>
 The name of the slot.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlotDefaultValueSpecification
-
-SlotResolutionImprovementSpecification
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

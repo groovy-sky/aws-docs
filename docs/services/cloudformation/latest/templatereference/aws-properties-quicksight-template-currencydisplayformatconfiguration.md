@@ -2,152 +2,107 @@
 title: "AWS::QuickSight::Template CurrencyDisplayFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CurrencyDisplayFormatConfiguration
+<a name="aws-properties-quicksight-template-currencydisplayformatconfiguration"></a>
 
 The options that determine the currency display format configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-currencydisplayformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-currencydisplayformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DecimalPlacesConfiguration" : DecimalPlacesConfiguration,
-  "NegativeValueConfiguration" : NegativeValueConfiguration,
-  "NullValueFormatConfiguration" : NullValueFormatConfiguration,
-  "NumberScale" : String,
-  "Prefix" : String,
-  "SeparatorConfiguration" : NumericSeparatorConfiguration,
-  "Suffix" : String,
-  "Symbol" : String
+  "[DecimalPlacesConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-decimalplacesconfiguration)" : {{DecimalPlacesConfiguration}},
+  "[NegativeValueConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-negativevalueconfiguration)" : {{NegativeValueConfiguration}},
+  "[NullValueFormatConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
+  "[NumberScale](#cfn-quicksight-template-currencydisplayformatconfiguration-numberscale)" : {{String}},
+  "[Prefix](#cfn-quicksight-template-currencydisplayformatconfiguration-prefix)" : {{String}},
+  "[SeparatorConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-separatorconfiguration)" : {{NumericSeparatorConfiguration}},
+  "[Suffix](#cfn-quicksight-template-currencydisplayformatconfiguration-suffix)" : {{String}},
+  "[Symbol](#cfn-quicksight-template-currencydisplayformatconfiguration-symbol)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-currencydisplayformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DecimalPlacesConfiguration:
-    DecimalPlacesConfiguration
-  NegativeValueConfiguration:
-    NegativeValueConfiguration
-  NullValueFormatConfiguration:
-    NullValueFormatConfiguration
-  NumberScale: String
-  Prefix: String
-  SeparatorConfiguration:
-    NumericSeparatorConfiguration
-  Suffix: String
-  Symbol: String
-
+```
+  [DecimalPlacesConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-decimalplacesconfiguration): {{
+    DecimalPlacesConfiguration}}
+  [NegativeValueConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-negativevalueconfiguration): {{
+    NegativeValueConfiguration}}
+  [NullValueFormatConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-nullvalueformatconfiguration): {{
+    NullValueFormatConfiguration}}
+  [NumberScale](#cfn-quicksight-template-currencydisplayformatconfiguration-numberscale): {{String}}
+  [Prefix](#cfn-quicksight-template-currencydisplayformatconfiguration-prefix): {{String}}
+  [SeparatorConfiguration](#cfn-quicksight-template-currencydisplayformatconfiguration-separatorconfiguration): {{
+    NumericSeparatorConfiguration}}
+  [Suffix](#cfn-quicksight-template-currencydisplayformatconfiguration-suffix): {{String}}
+  [Symbol](#cfn-quicksight-template-currencydisplayformatconfiguration-symbol): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-currencydisplayformatconfiguration-properties"></a>
 
-`DecimalPlacesConfiguration`
-
+`DecimalPlacesConfiguration`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-decimalplacesconfiguration"></a>
 The option that determines the decimal places configuration.
+*Required*: No
+*Type*: [DecimalPlacesConfiguration](aws-properties-quicksight-template-decimalplacesconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DecimalPlacesConfiguration](aws-properties-quicksight-template-decimalplacesconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NegativeValueConfiguration`
-
+`NegativeValueConfiguration`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-negativevalueconfiguration"></a>
 The options that determine the negative value configuration.
+*Required*: No
+*Type*: [NegativeValueConfiguration](aws-properties-quicksight-template-negativevalueconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NegativeValueConfiguration](aws-properties-quicksight-template-negativevalueconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullValueFormatConfiguration`
-
+`NullValueFormatConfiguration`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-nullvalueformatconfiguration"></a>
 The options that determine the null value format configuration.
+*Required*: No
+*Type*: [NullValueFormatConfiguration](aws-properties-quicksight-template-nullvalueformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NullValueFormatConfiguration](aws-properties-quicksight-template-nullvalueformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberScale`
-
+`NumberScale`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-numberscale"></a>
 Determines the number scale value for the currency format.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | AUTO | THOUSANDS | MILLIONS | BILLIONS | TRILLIONS | LAKHS | CRORES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | AUTO | THOUSANDS | MILLIONS | BILLIONS | TRILLIONS | LAKHS | CRORES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-prefix"></a>
 Determines the prefix value of the currency format.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SeparatorConfiguration`
-
+`SeparatorConfiguration`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-separatorconfiguration"></a>
 The options that determine the numeric separator configuration.
+*Required*: No
+*Type*: [NumericSeparatorConfiguration](aws-properties-quicksight-template-numericseparatorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumericSeparatorConfiguration](aws-properties-quicksight-template-numericseparatorconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Suffix`
-
+`Suffix`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-suffix"></a>
 Determines the suffix value of the currency format.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Symbol`
-
+`Symbol`  <a name="cfn-quicksight-template-currencydisplayformatconfiguration-symbol"></a>
 Determines the symbol for the currency format.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Z]{3}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContributionAnalysisDefault
-
-CustomActionFilterOperation
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Z]{3}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

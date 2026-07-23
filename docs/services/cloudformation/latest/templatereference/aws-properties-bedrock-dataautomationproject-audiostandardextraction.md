@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::DataAutomationProject AudioStandardExtraction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject AudioStandardExtraction
+<a name="aws-properties-bedrock-dataautomationproject-audiostandardextraction"></a>
 
 Settings for generating data from audio.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-audiostandardextraction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-audiostandardextraction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : AudioExtractionCategory
+  "[Category](#cfn-bedrock-dataautomationproject-audiostandardextraction-category)" : {{AudioExtractionCategory}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-audiostandardextraction-syntax.yaml"></a>
 
-```yaml
-
-  Category:
-    AudioExtractionCategory
-
+```
+  [Category](#cfn-bedrock-dataautomationproject-audiostandardextraction-category): {{
+    AudioExtractionCategory}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-audiostandardextraction-properties"></a>
 
-`Category`
-
+`Category`  <a name="cfn-bedrock-dataautomationproject-audiostandardextraction-category"></a>
 Settings for generating data from audio.
-
-_Required_: Yes
-
-_Type_: [AudioExtractionCategory](aws-properties-bedrock-dataautomationproject-audioextractioncategory.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AudioOverrideConfiguration
-
-AudioStandardGenerativeField
+*Required*: Yes
+*Type*: [AudioExtractionCategory](aws-properties-bedrock-dataautomationproject-audioextractioncategory.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

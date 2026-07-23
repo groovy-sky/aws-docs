@@ -2,148 +2,119 @@
 title: "AWS::GameLift::Alias"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::Alias
+<a name="aws-resource-gamelift-alias"></a>
 
-The `AWS::GameLift::Alias` resource creates an alias for an Amazon GameLift
-(GameLift) fleet destination. There are two types of routing strategies for aliases: simple
-and terminal. A simple alias points to an active fleet. A terminal alias displays a message
-instead of routing players to an active fleet. For example, a terminal alias might display a
-URL link that directs players to an upgrade site. You can use aliases to define destinations
-in a game session queue or when requesting new game sessions.
+The `AWS::GameLift::Alias` resource creates an alias for an Amazon GameLift (GameLift) fleet destination. There are two types of routing strategies for aliases: simple and terminal. A simple alias points to an active fleet. A terminal alias displays a message instead of routing players to an active fleet. For example, a terminal alias might display a URL link that directs players to an upgrade site. You can use aliases to define destinations in a game session queue or when requesting new game sessions.
 
 ## Syntax
+<a name="aws-resource-gamelift-alias-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-gamelift-alias-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::GameLift::Alias",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "RoutingStrategy" : RoutingStrategy,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-gamelift-alias-description)" : {{String}},
+      "[Name](#cfn-gamelift-alias-name)" : {{String}},
+      "[RoutingStrategy](#cfn-gamelift-alias-routingstrategy)" : {{RoutingStrategy}},
+      "[Tags](#cfn-gamelift-alias-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-gamelift-alias-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::GameLift::Alias
 Properties:
-  Description: String
-  Name: String
-  RoutingStrategy:
-    RoutingStrategy
-  Tags:
-    - Tag
-
+  [Description](#cfn-gamelift-alias-description): {{String}}
+  [Name](#cfn-gamelift-alias-name): {{String}}
+  [RoutingStrategy](#cfn-gamelift-alias-routingstrategy): {{
+    RoutingStrategy}}
+  [Tags](#cfn-gamelift-alias-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-gamelift-alias-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-gamelift-alias-description"></a>
 A human-readable description of the alias.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-gamelift-alias-name"></a>
 A descriptive label that is associated with an alias. Alias names do not need to be unique.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingStrategy`
-
+`RoutingStrategy`  <a name="cfn-gamelift-alias-routingstrategy"></a>
 The routing configuration, including routing type and fleet target, for the alias.
+*Required*: Yes
+*Type*: [RoutingStrategy](aws-properties-gamelift-alias-routingstrategy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [RoutingStrategy](aws-properties-gamelift-alias-routingstrategy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A list of labels to assign to the new alias resource. Tags are developer-defined
-key-value pairs. Tagging AWS resources are useful for resource management, access
-management and cost allocation. For more information, see [Tagging AWS Resources](../../../../general/latest/gr/aws-tagging.md) in the
-_AWS General Reference_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-gamelift-alias-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-gamelift-alias-tags"></a>
+A list of labels to assign to the new alias resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-gamelift-alias-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-gamelift-alias-return-values"></a>
 
 ### Ref
+<a name="aws-resource-gamelift-alias-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the alias ID, such as
-`alias-1111aaaa-22bb-33cc-44dd-5555eeee66ff`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the alias ID, such as `alias-1111aaaa-22bb-33cc-44dd-5555eeee66ff`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-gamelift-alias-return-values-fn--getatt"></a>
 
-`AliasArn`
+####
+<a name="aws-resource-gamelift-alias-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name ( [ARN](../../../s3/latest/dev/s3-arn-format.md)) that is assigned to a Amazon GameLift Servers alias resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::alias/alias-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`. In a GameLift alias ARN, the resource ID matches the alias ID value.
+`AliasArn`  <a name="AliasArn-fn::getatt"></a>
+The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers alias resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::alias/alias-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`. In a GameLift alias ARN, the resource ID matches the alias ID value.
 
-`AliasId`
-
+`AliasId`  <a name="AliasId-fn::getatt"></a>
 A unique identifier for the alias. For example, `arn:aws:gamelift:us-west-1::alias/alias-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`
-
 Alias IDs are unique within a Region.
 
 ## Examples
+<a name="aws-resource-gamelift-alias--examples"></a>
 
-- [Create a Simple Alias](#aws-resource-gamelift-alias--examples--Create_a_Simple_Alias)
-
-- [Create terminal alias](#aws-resource-gamelift-alias--examples--Create_terminal_alias)
+**Topics**
++ [Create a Simple Alias](#aws-resource-gamelift-alias--examples--Create_a_Simple_Alias)
++ [Create terminal alias](#aws-resource-gamelift-alias--examples--Create_terminal_alias)
 
 ### Create a Simple Alias
+<a name="aws-resource-gamelift-alias--examples--Create_a_Simple_Alias"></a>
 
-The following example creates a simple alias for a fleet. The template uses `!Ref`
-to reference a fleet resource, which can be declared elsewhere in the same
-template.
+The following example creates a simple alias for a fleet. The template uses `!Ref` to reference a fleet resource, which can be declared elsewhere in the same template.
 
 #### JSON
+<a name="aws-resource-gamelift-alias--examples--Create_a_Simple_Alias--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "AliasResource": {
@@ -164,9 +135,9 @@ template.
 ```
 
 #### YAML
+<a name="aws-resource-gamelift-alias--examples--Create_a_Simple_Alias--yaml"></a>
 
-```yaml
-
+```
 Resources:
   AliasResource:
     Properties:
@@ -179,14 +150,14 @@ Resources:
 ```
 
 ### Create terminal alias
+<a name="aws-resource-gamelift-alias--examples--Create_terminal_alias"></a>
 
-The following example creates a terminal alias with a
-generic terminal message.
+The following example creates a terminal alias with a generic terminal message.
 
 #### JSON
+<a name="aws-resource-gamelift-alias--examples--Create_terminal_alias--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "AliasResource": {
@@ -205,9 +176,9 @@ generic terminal message.
 ```
 
 #### YAML
+<a name="aws-resource-gamelift-alias--examples--Create_terminal_alias--yaml"></a>
 
-```yaml
-
+```
 Resources:
   AliasResource:
     Type: AWS::GameLift::Alias
@@ -220,19 +191,9 @@ Resources:
 ```
 
 ## See also
-
-- [Create GameLift resources using Amazon CloudFront](../../../gamelift/latest/developerguide/resources-cloudformation.md) in the _Amazon_
-_GameLift Developer Guide_
-
-- [Add an alias to a GameLift fleet](../../../gamelift/latest/developerguide/aliases-creating.md) in the _Amazon GameLift Developer_
-_Guide_
-
-- [CreateAlias](../../../../reference/gamelift/latest/apireference/api-createalias.md) in the _Amazon GameLift API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon GameLift Servers
-
-RoutingStrategy
+<a name="aws-resource-gamelift-alias--seealso"></a>
++ [ Create GameLift resources using Amazon CloudFront](https://docs.aws.amazon.com/gamelift/latest/developerguide/resources-cloudformation.html) in the *Amazon GameLift Developer Guide*
++ [Add an alias to a GameLift fleet](https://docs.aws.amazon.com/gamelift/latest/developerguide/aliases-creating.html) in the *Amazon GameLift Developer Guide*
++ [CreateAlias](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateAlias.html) in the *Amazon GameLift API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

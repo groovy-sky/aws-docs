@@ -2,54 +2,42 @@
 title: "AWS::S3::StorageLens PrefixLevel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens PrefixLevel
+<a name="aws-properties-s3-storagelens-prefixlevel"></a>
 
-This resource contains the details of the prefix-level of the Amazon S3 Storage
-Lens.
+This resource contains the details of the prefix-level of the Amazon S3 Storage Lens.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-prefixlevel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-prefixlevel-syntax.json"></a>
 
-```json
-
+```
 {
-  "StorageMetrics" : PrefixLevelStorageMetrics
+  "[StorageMetrics](#cfn-s3-storagelens-prefixlevel-storagemetrics)" : {{PrefixLevelStorageMetrics}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-prefixlevel-syntax.yaml"></a>
 
-```yaml
-
-  StorageMetrics:
-    PrefixLevelStorageMetrics
-
+```
+  [StorageMetrics](#cfn-s3-storagelens-prefixlevel-storagemetrics): {{
+    PrefixLevelStorageMetrics}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-prefixlevel-properties"></a>
 
-`StorageMetrics`
-
+`StorageMetrics`  <a name="cfn-s3-storagelens-prefixlevel-storagemetrics"></a>
 A property for the prefix-level storage metrics for Amazon S3 Storage Lens.
-
-_Required_: Yes
-
-_Type_: [PrefixLevelStorageMetrics](aws-properties-s3-storagelens-prefixlevelstoragemetrics.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Encryption
-
-PrefixLevelStorageMetrics
+*Required*: Yes
+*Type*: [PrefixLevelStorageMetrics](aws-properties-s3-storagelens-prefixlevelstoragemetrics.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

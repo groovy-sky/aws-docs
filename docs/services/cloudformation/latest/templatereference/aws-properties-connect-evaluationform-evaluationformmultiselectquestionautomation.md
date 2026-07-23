@@ -2,83 +2,62 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormMultiSelectQuestionAutomation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormMultiSelectQuestionAutomation
+<a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation"></a>
 
 Automation configuration for multi-select questions.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnswerSource" : EvaluationFormQuestionAutomationAnswerSource,
-  "DefaultOptionRefIds" : [ String, ... ],
-  "Options" : [ EvaluationFormMultiSelectQuestionAutomationOption, ... ]
+  "[AnswerSource](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-answersource)" : {{EvaluationFormQuestionAutomationAnswerSource}},
+  "[DefaultOptionRefIds](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-defaultoptionrefids)" : {{[ String, ... ]}},
+  "[Options](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-options)" : {{[ EvaluationFormMultiSelectQuestionAutomationOption, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-syntax.yaml"></a>
 
-```yaml
-
-  AnswerSource:
-    EvaluationFormQuestionAutomationAnswerSource
-  DefaultOptionRefIds:
-    - String
-  Options:
-    - EvaluationFormMultiSelectQuestionAutomationOption
-
+```
+  [AnswerSource](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-answersource): {{
+    EvaluationFormQuestionAutomationAnswerSource}}
+  [DefaultOptionRefIds](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-defaultoptionrefids): {{
+    - String}}
+  [Options](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-options): {{
+    - EvaluationFormMultiSelectQuestionAutomationOption}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-properties"></a>
 
-`AnswerSource`
-
+`AnswerSource`  <a name="cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-answersource"></a>
 Property description not available.
+*Required*: No
+*Type*: [EvaluationFormQuestionAutomationAnswerSource](aws-properties-connect-evaluationform-evaluationformquestionautomationanswersource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EvaluationFormQuestionAutomationAnswerSource](aws-properties-connect-evaluationform-evaluationformquestionautomationanswersource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultOptionRefIds`
-
+`DefaultOptionRefIds`  <a name="cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-defaultoptionrefids"></a>
 Reference IDs of default options.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-options"></a>
 Automation options for the multi-select question.
-
-_Required_: Yes
-
-_Type_: Array of [EvaluationFormMultiSelectQuestionAutomationOption](aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomationoption.md)
-
-_Minimum_: `1`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormLanguageConfiguration
-
-EvaluationFormMultiSelectQuestionAutomationOption
+*Required*: No
+*Type*: Array of [EvaluationFormMultiSelectQuestionAutomationOption](aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomationoption.md)
+*Minimum*: `1`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,52 @@
 title: "AWS::Glue::Catalog CatalogProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Catalog CatalogProperties
+<a name="aws-properties-glue-catalog-catalogproperties"></a>
 
 A structure that specifies data lake access properties and other custom properties.
 
 ## Syntax
+<a name="aws-properties-glue-catalog-catalogproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-catalog-catalogproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomProperties" : {Key: Value, ...},
-  "DataLakeAccessProperties" : DataLakeAccessProperties
+  "[CustomProperties](#cfn-glue-catalog-catalogproperties-customproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[DataLakeAccessProperties](#cfn-glue-catalog-catalogproperties-datalakeaccessproperties)" : {{DataLakeAccessProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-catalog-catalogproperties-syntax.yaml"></a>
 
-```yaml
-
-  CustomProperties:
-    Key: Value
-  DataLakeAccessProperties:
-    DataLakeAccessProperties
-
+```
+  [CustomProperties](#cfn-glue-catalog-catalogproperties-customproperties): {{
+    {{Key}}: {{Value}}}}
+  [DataLakeAccessProperties](#cfn-glue-catalog-catalogproperties-datalakeaccessproperties): {{
+    DataLakeAccessProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-catalog-catalogproperties-properties"></a>
 
-`CustomProperties`
-
+`CustomProperties`  <a name="cfn-glue-catalog-catalogproperties-customproperties"></a>
 Additional key-value properties for the catalog, such as column statistics optimizations.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLakeAccessProperties`
-
+`DataLakeAccessProperties`  <a name="cfn-glue-catalog-catalogproperties-datalakeaccessproperties"></a>
 A `DataLakeAccessProperties` object that specifies properties to configure data lake access for your catalog resource in the AWS Glue Data Catalog.
-
-_Required_: No
-
-_Type_: [DataLakeAccessProperties](aws-properties-glue-catalog-datalakeaccessproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Glue::Catalog
-
-DataLakeAccessProperties
+*Required*: No
+*Type*: [DataLakeAccessProperties](aws-properties-glue-catalog-datalakeaccessproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,112 +2,79 @@
 title: "AWS::ECS::CapacityProvider ManagedInstancesProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::CapacityProvider ManagedInstancesProvider
+<a name="aws-properties-ecs-capacityprovider-managedinstancesprovider"></a>
 
-The configuration for a Amazon ECS Managed Instances provider. Amazon ECS uses this
-configuration to automatically launch, manage, and terminate Amazon EC2 instances on
-your behalf. Managed instances provide access to the full range of Amazon EC2 instance
-types and features while offloading infrastructure management to AWS.
+The configuration for a Amazon ECS Managed Instances provider. Amazon ECS uses this configuration to automatically launch, manage, and terminate Amazon EC2 instances on your behalf. Managed instances provide access to the full range of Amazon EC2 instance types and features while offloading infrastructure management to AWS.
 
 ## Syntax
+<a name="aws-properties-ecs-capacityprovider-managedinstancesprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-capacityprovider-managedinstancesprovider-syntax.json"></a>
 
-```json
-
+```
 {
-  "InfrastructureOptimization" : InfrastructureOptimization,
-  "InfrastructureRoleArn" : String,
-  "InstanceLaunchTemplate" : InstanceLaunchTemplate,
-  "PropagateTags" : String
+  "[AutoRepairConfiguration](#cfn-ecs-capacityprovider-managedinstancesprovider-autorepairconfiguration)" : {{AutoRepairConfiguration}},
+  "[InfrastructureOptimization](#cfn-ecs-capacityprovider-managedinstancesprovider-infrastructureoptimization)" : {{InfrastructureOptimization}},
+  "[InfrastructureRoleArn](#cfn-ecs-capacityprovider-managedinstancesprovider-infrastructurerolearn)" : {{String}},
+  "[InstanceLaunchTemplate](#cfn-ecs-capacityprovider-managedinstancesprovider-instancelaunchtemplate)" : {{InstanceLaunchTemplate}},
+  "[PropagateTags](#cfn-ecs-capacityprovider-managedinstancesprovider-propagatetags)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-capacityprovider-managedinstancesprovider-syntax.yaml"></a>
 
-```yaml
-
-  InfrastructureOptimization:
-    InfrastructureOptimization
-  InfrastructureRoleArn: String
-  InstanceLaunchTemplate:
-    InstanceLaunchTemplate
-  PropagateTags: String
-
+```
+  [AutoRepairConfiguration](#cfn-ecs-capacityprovider-managedinstancesprovider-autorepairconfiguration): {{
+    AutoRepairConfiguration}}
+  [InfrastructureOptimization](#cfn-ecs-capacityprovider-managedinstancesprovider-infrastructureoptimization): {{
+    InfrastructureOptimization}}
+  [InfrastructureRoleArn](#cfn-ecs-capacityprovider-managedinstancesprovider-infrastructurerolearn): {{String}}
+  [InstanceLaunchTemplate](#cfn-ecs-capacityprovider-managedinstancesprovider-instancelaunchtemplate): {{
+    InstanceLaunchTemplate}}
+  [PropagateTags](#cfn-ecs-capacityprovider-managedinstancesprovider-propagatetags): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-capacityprovider-managedinstancesprovider-properties"></a>
 
-`InfrastructureOptimization`
+`AutoRepairConfiguration`  <a name="cfn-ecs-capacityprovider-managedinstancesprovider-autorepairconfiguration"></a>
+The auto repair configuration for the Amazon ECS Managed Instances capacity provider. Indicates whether Amazon ECS automatically replaces container instances that are detected as unhealthy.
+*Required*: No
+*Type*: [AutoRepairConfiguration](aws-properties-ecs-capacityprovider-autorepairconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Defines how Amazon ECS Managed Instances optimizes the infrastastructure in your capacity provider.
-Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle or underutilized EC2 instances optimization delay.
+`InfrastructureOptimization`  <a name="cfn-ecs-capacityprovider-managedinstancesprovider-infrastructureoptimization"></a>
+Defines how Amazon ECS Managed Instances optimizes the infrastastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle or underutilized EC2 instances optimization delay.
+*Required*: No
+*Type*: [InfrastructureOptimization](aws-properties-ecs-capacityprovider-infrastructureoptimization.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InfrastructureRoleArn`  <a name="cfn-ecs-capacityprovider-managedinstancesprovider-infrastructurerolearn"></a>
+The Amazon Resource Name (ARN) of the infrastructure role that Amazon ECS assumes to manage instances. This role must include permissions for Amazon EC2 instance lifecycle management, networking, and any additional AWS services required for your workloads.
+For more information, see [Amazon ECS infrastructure IAM role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/infrastructure_IAM_role.html) in the *Amazon ECS Developer Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [InfrastructureOptimization](aws-properties-ecs-capacityprovider-infrastructureoptimization.md)
+`InstanceLaunchTemplate`  <a name="cfn-ecs-capacityprovider-managedinstancesprovider-instancelaunchtemplate"></a>
+The launch template that defines how Amazon ECS launches Amazon ECS Managed Instances. This includes the instance profile for your tasks, network and storage configuration, and instance requirements that determine which Amazon EC2 instance types can be used.
+For more information, see [Store instance launch parameters in Amazon EC2 launch templates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html) in the *Amazon EC2 User Guide*.
+*Required*: Yes
+*Type*: [InstanceLaunchTemplate](aws-properties-ecs-capacityprovider-instancelaunchtemplate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InfrastructureRoleArn`
-
-The Amazon Resource Name (ARN) of the infrastructure role that Amazon ECS assumes to
-manage instances. This role must include permissions for Amazon EC2 instance lifecycle
-management, networking, and any additional AWS services required for your
-workloads.
-
-For more information, see [Amazon ECS\
-infrastructure IAM role](../../../amazonecs/latest/developerguide/infrastructure-iam-role.md) in the _Amazon ECS Developer_
-_Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceLaunchTemplate`
-
-The launch template that defines how Amazon ECS launches Amazon ECS Managed Instances.
-This includes the instance profile for your tasks, network and storage configuration,
-and instance requirements that determine which Amazon EC2 instance types can be
-used.
-
-For more information, see [Store instance launch\
-parameters in Amazon EC2 launch templates](../../../ec2/latest/userguide/ec2-launch-templates.md) in the _Amazon EC2 User_
-_Guide_.
-
-_Required_: Yes
-
-_Type_: [InstanceLaunchTemplate](aws-properties-ecs-capacityprovider-instancelaunchtemplate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropagateTags`
-
-Determines whether tags from the capacity provider are automatically applied to Amazon
-ECS Managed Instances. This helps with cost allocation and resource management by
-ensuring consistent tagging across your infrastructure.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CAPACITY_PROVIDER | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManagedInstancesNetworkConfiguration
-
-ManagedInstancesStorageConfiguration
+`PropagateTags`  <a name="cfn-ecs-capacityprovider-managedinstancesprovider-propagatetags"></a>
+Determines whether tags from the capacity provider are automatically applied to Amazon ECS Managed Instances. This helps with cost allocation and resource management by ensuring consistent tagging across your infrastructure.
+*Required*: No
+*Type*: String
+*Allowed values*: `CAPACITY_PROVIDER | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,89 +2,62 @@
 title: "AWS::ECS::Service EBSTagSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Service EBSTagSpecification
+<a name="aws-properties-ecs-service-ebstagspecification"></a>
 
 The tag specifications of an Amazon EBS volume.
 
 ## Syntax
+<a name="aws-properties-ecs-service-ebstagspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-service-ebstagspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "PropagateTags" : String,
-  "ResourceType" : String,
-  "Tags" : [ Tag, ... ]
+  "[PropagateTags](#cfn-ecs-service-ebstagspecification-propagatetags)" : {{String}},
+  "[ResourceType](#cfn-ecs-service-ebstagspecification-resourcetype)" : {{String}},
+  "[Tags](#cfn-ecs-service-ebstagspecification-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-service-ebstagspecification-syntax.yaml"></a>
 
-```yaml
-
-  PropagateTags: String
-  ResourceType: String
-  Tags:
-    - Tag
-
+```
+  [PropagateTags](#cfn-ecs-service-ebstagspecification-propagatetags): {{String}}
+  [ResourceType](#cfn-ecs-service-ebstagspecification-resourcetype): {{String}}
+  [Tags](#cfn-ecs-service-ebstagspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-service-ebstagspecification-properties"></a>
 
-`PropagateTags`
+`PropagateTags`  <a name="cfn-ecs-service-ebstagspecification-propagatetags"></a>
+Determines whether to propagate the tags from the task definition to the Amazon EBS volume. Tags can only propagate to a `SERVICE` specified in `ServiceVolumeConfiguration`. If no value is specified, the tags aren't propagated.
+*Required*: No
+*Type*: String
+*Allowed values*: `SERVICE | TASK_DEFINITION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines whether to propagate the tags from the task definition to the
-Amazon EBS volume. Tags can only propagate to a `SERVICE` specified in
-`ServiceVolumeConfiguration`. If no value is specified, the tags
-aren't propagated.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SERVICE | TASK_DEFINITION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceType`
-
+`ResourceType`  <a name="cfn-ecs-service-ebstagspecification-resourcetype"></a>
 The type of volume resource.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `volume`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `volume`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags applied to this Amazon EBS volume. `AmazonECSCreated` and
-`AmazonECSManaged` are reserved tags that can't be used.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ecs-service-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeploymentLifecycleHook
-
-ForceNewDeployment
+`Tags`  <a name="cfn-ecs-service-ebstagspecification-tags"></a>
+The tags applied to this Amazon EBS volume. `AmazonECSCreated` and `AmazonECSManaged` are reserved tags that can't be used.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ecs-service-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

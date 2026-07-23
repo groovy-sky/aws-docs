@@ -2,58 +2,44 @@
 title: "AWS::QuickSight::DataSet DestinationTableSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DestinationTableSource
+<a name="aws-properties-quicksight-dataset-destinationtablesource"></a>
 
 Specifies the source of data for a destination table, including the transform operation and column mappings.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-destinationtablesource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-destinationtablesource-syntax.json"></a>
 
-```json
-
+```
 {
-  "TransformOperationId" : String
+  "[TransformOperationId](#cfn-quicksight-dataset-destinationtablesource-transformoperationid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-destinationtablesource-syntax.yaml"></a>
 
-```yaml
-
-  TransformOperationId: String
-
+```
+  [TransformOperationId](#cfn-quicksight-dataset-destinationtablesource-transformoperationid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-destinationtablesource-properties"></a>
 
-`TransformOperationId`
-
+`TransformOperationId`  <a name="cfn-quicksight-dataset-destinationtablesource-transformoperationid"></a>
 The identifier of the transform operation that provides data to the destination table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DestinationTable
-
-FieldFolder
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z-]*$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

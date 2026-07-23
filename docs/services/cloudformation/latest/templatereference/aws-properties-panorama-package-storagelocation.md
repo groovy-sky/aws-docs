@@ -2,100 +2,73 @@
 title: "AWS::Panorama::Package StorageLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Panorama::Package StorageLocation
+<a name="aws-properties-panorama-package-storagelocation"></a>
 
 A storage location.
 
 ## Syntax
+<a name="aws-properties-panorama-package-storagelocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-panorama-package-storagelocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "BinaryPrefixLocation" : String,
-  "Bucket" : String,
-  "GeneratedPrefixLocation" : String,
-  "ManifestPrefixLocation" : String,
-  "RepoPrefixLocation" : String
+  "[BinaryPrefixLocation](#cfn-panorama-package-storagelocation-binaryprefixlocation)" : {{String}},
+  "[Bucket](#cfn-panorama-package-storagelocation-bucket)" : {{String}},
+  "[GeneratedPrefixLocation](#cfn-panorama-package-storagelocation-generatedprefixlocation)" : {{String}},
+  "[ManifestPrefixLocation](#cfn-panorama-package-storagelocation-manifestprefixlocation)" : {{String}},
+  "[RepoPrefixLocation](#cfn-panorama-package-storagelocation-repoprefixlocation)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-panorama-package-storagelocation-syntax.yaml"></a>
 
-```yaml
-
-  BinaryPrefixLocation: String
-  Bucket: String
-  GeneratedPrefixLocation: String
-  ManifestPrefixLocation: String
-  RepoPrefixLocation: String
-
+```
+  [BinaryPrefixLocation](#cfn-panorama-package-storagelocation-binaryprefixlocation): {{String}}
+  [Bucket](#cfn-panorama-package-storagelocation-bucket): {{String}}
+  [GeneratedPrefixLocation](#cfn-panorama-package-storagelocation-generatedprefixlocation): {{String}}
+  [ManifestPrefixLocation](#cfn-panorama-package-storagelocation-manifestprefixlocation): {{String}}
+  [RepoPrefixLocation](#cfn-panorama-package-storagelocation-repoprefixlocation): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-panorama-package-storagelocation-properties"></a>
 
-`BinaryPrefixLocation`
-
+`BinaryPrefixLocation`  <a name="cfn-panorama-package-storagelocation-binaryprefixlocation"></a>
 The location's binary prefix.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Bucket`
-
+`Bucket`  <a name="cfn-panorama-package-storagelocation-bucket"></a>
 The location's bucket.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GeneratedPrefixLocation`
-
+`GeneratedPrefixLocation`  <a name="cfn-panorama-package-storagelocation-generatedprefixlocation"></a>
 The location's generated prefix.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestPrefixLocation`
-
+`ManifestPrefixLocation`  <a name="cfn-panorama-package-storagelocation-manifestprefixlocation"></a>
 The location's manifest prefix.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RepoPrefixLocation`
-
+`RepoPrefixLocation`  <a name="cfn-panorama-package-storagelocation-repoprefixlocation"></a>
 The location's repo prefix.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Panorama::Package
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

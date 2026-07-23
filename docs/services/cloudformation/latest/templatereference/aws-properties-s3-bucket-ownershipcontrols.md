@@ -2,70 +2,62 @@
 title: "AWS::S3::Bucket OwnershipControls"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket OwnershipControls
+<a name="aws-properties-s3-bucket-ownershipcontrols"></a>
 
 Specifies the container element for Object Ownership rules.
 
-S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to disable
-access control lists (ACLs) and take ownership of every object in your bucket, simplifying
-access management for data stored in Amazon S3. For more information, see [Controlling\
-ownership of objects and disabling ACLs](../../../s3/latest/userguide/about-object-ownership.md) in the _Amazon S3 User_
-_Guide_.
+S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to disable access control lists (ACLs) and take ownership of every object in your bucket, simplifying access management for data stored in Amazon S3. For more information, see [Controlling ownership of objects and disabling ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-ownershipcontrols-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-ownershipcontrols-syntax.json"></a>
 
-```json
-
+```
 {
-  "Rules" : [ OwnershipControlsRule, ... ]
+  "[Rules](#cfn-s3-bucket-ownershipcontrols-rules)" : {{[ OwnershipControlsRule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-ownershipcontrols-syntax.yaml"></a>
 
-```yaml
-
-  Rules:
-    - OwnershipControlsRule
-
+```
+  [Rules](#cfn-s3-bucket-ownershipcontrols-rules): {{
+    - OwnershipControlsRule}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-ownershipcontrols-properties"></a>
 
-`Rules`
-
+`Rules`  <a name="cfn-s3-bucket-ownershipcontrols-rules"></a>
 Specifies the container element for Object Ownership rules.
-
-_Required_: Yes
-
-_Type_: Array of [OwnershipControlsRule](aws-properties-s3-bucket-ownershipcontrolsrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Array of [OwnershipControlsRule](aws-properties-s3-bucket-ownershipcontrolsrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples"></a>
 
-- [Object ownership - BucketOwnerEnforced](#aws-properties-s3-bucket-ownershipcontrols--examples--Object_ownership_-_BucketOwnerEnforced)
-
-- [Object Ownership - BucketOwnerPreferred](#aws-properties-s3-bucket-ownershipcontrols--examples--Object_Ownership_-_BucketOwnerPreferred)
+**Topics**
++ [Object ownership - BucketOwnerEnforced](#aws-properties-s3-bucket-ownershipcontrols--examples--Object_ownership_-_BucketOwnerEnforced)
++ [Object Ownership - BucketOwnerPreferred](#aws-properties-s3-bucket-ownershipcontrols--examples--Object_Ownership_-_BucketOwnerPreferred)
 
 ### Object ownership - BucketOwnerEnforced
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples--Object_ownership_-_BucketOwnerEnforced"></a>
 
-The following examples show Object Ownership set to
-`BucketOwnerEnforced`.
+The following examples show Object Ownership set to `BucketOwnerEnforced`.
 
 #### JSON
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples--Object_ownership_-_BucketOwnerEnforced--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -86,9 +78,9 @@ The following examples show Object Ownership set to
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples--Object_ownership_-_BucketOwnerEnforced--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -100,14 +92,14 @@ Resources:
 ```
 
 ### Object Ownership - BucketOwnerPreferred
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples--Object_Ownership_-_BucketOwnerPreferred"></a>
 
-The following examples show Object Ownership set to
-`BucketOwnerPreferred`.
+The following examples show Object Ownership set to `BucketOwnerPreferred`.
 
 #### JSON
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples--Object_Ownership_-_BucketOwnerPreferred--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -128,9 +120,9 @@ The following examples show Object Ownership set to
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-ownershipcontrols--examples--Object_Ownership_-_BucketOwnerPreferred--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -140,11 +132,5 @@ Resources:
         Rules:
           - ObjectOwnership: BucketOwnerPreferred
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ObjectLockRule
-
-OwnershipControlsRule
 
 All content copied from https://docs.aws.amazon.com/.

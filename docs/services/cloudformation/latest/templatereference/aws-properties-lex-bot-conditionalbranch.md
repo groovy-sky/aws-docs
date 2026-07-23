@@ -2,100 +2,71 @@
 title: "AWS::Lex::Bot ConditionalBranch"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot ConditionalBranch
+<a name="aws-properties-lex-bot-conditionalbranch"></a>
 
-A set of actions that Amazon Lex should run if the condition
-is matched.
+A set of actions that Amazon Lex should run if the condition is matched.
 
 ## Syntax
+<a name="aws-properties-lex-bot-conditionalbranch-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-conditionalbranch-syntax.json"></a>
 
-```json
-
+```
 {
-  "Condition" : Condition,
-  "Name" : String,
-  "NextStep" : DialogState,
-  "Response" : ResponseSpecification
+  "[Condition](#cfn-lex-bot-conditionalbranch-condition)" : {{Condition}},
+  "[Name](#cfn-lex-bot-conditionalbranch-name)" : {{String}},
+  "[NextStep](#cfn-lex-bot-conditionalbranch-nextstep)" : {{DialogState}},
+  "[Response](#cfn-lex-bot-conditionalbranch-response)" : {{ResponseSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-conditionalbranch-syntax.yaml"></a>
 
-```yaml
-
-  Condition:
-    Condition
-  Name: String
-  NextStep:
-    DialogState
-  Response:
-    ResponseSpecification
-
+```
+  [Condition](#cfn-lex-bot-conditionalbranch-condition): {{
+    Condition}}
+  [Name](#cfn-lex-bot-conditionalbranch-name): {{String}}
+  [NextStep](#cfn-lex-bot-conditionalbranch-nextstep): {{
+    DialogState}}
+  [Response](#cfn-lex-bot-conditionalbranch-response): {{
+    ResponseSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-conditionalbranch-properties"></a>
 
-`Condition`
+`Condition`  <a name="cfn-lex-bot-conditionalbranch-condition"></a>
+Contains the expression to evaluate. If the condition is true, the branch's actions are taken.
+*Required*: Yes
+*Type*: [Condition](aws-properties-lex-bot-condition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Contains the expression to evaluate. If the condition is true, the
-branch's actions are taken.
-
-_Required_: Yes
-
-_Type_: [Condition](aws-properties-lex-bot-condition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-lex-bot-conditionalbranch-name"></a>
 The name of the branch.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NextStep`
-
+`NextStep`  <a name="cfn-lex-bot-conditionalbranch-nextstep"></a>
 The next step in the conversation.
+*Required*: Yes
+*Type*: [DialogState](aws-properties-lex-bot-dialogstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DialogState](aws-properties-lex-bot-dialogstate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Response`
-
-Specifies a list of message groups that Amazon Lex uses to respond the
-user input.
-
-_Required_: No
-
-_Type_: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Condition
-
-ConditionalSpecification
+`Response`  <a name="cfn-lex-bot-conditionalbranch-response"></a>
+Specifies a list of message groups that Amazon Lex uses to respond the user input.
+*Required*: No
+*Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

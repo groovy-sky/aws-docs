@@ -2,267 +2,190 @@
 title: "AWS::AppFlow::Flow SourceConnectorProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow SourceConnectorProperties
+<a name="aws-properties-appflow-flow-sourceconnectorproperties"></a>
 
-Specifies the information that is required to query a particular connector.
+ Specifies the information that is required to query a particular connector.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-sourceconnectorproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-sourceconnectorproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Amplitude" : AmplitudeSourceProperties,
-  "CustomConnector" : CustomConnectorSourceProperties,
-  "Datadog" : DatadogSourceProperties,
-  "Dynatrace" : DynatraceSourceProperties,
-  "GoogleAnalytics" : GoogleAnalyticsSourceProperties,
-  "InforNexus" : InforNexusSourceProperties,
-  "Marketo" : MarketoSourceProperties,
-  "Pardot" : PardotSourceProperties,
-  "S3" : S3SourceProperties,
-  "Salesforce" : SalesforceSourceProperties,
-  "SAPOData" : SAPODataSourceProperties,
-  "ServiceNow" : ServiceNowSourceProperties,
-  "Singular" : SingularSourceProperties,
-  "Slack" : SlackSourceProperties,
-  "Trendmicro" : TrendmicroSourceProperties,
-  "Veeva" : VeevaSourceProperties,
-  "Zendesk" : ZendeskSourceProperties
+  "[Amplitude](#cfn-appflow-flow-sourceconnectorproperties-amplitude)" : {{AmplitudeSourceProperties}},
+  "[CustomConnector](#cfn-appflow-flow-sourceconnectorproperties-customconnector)" : {{CustomConnectorSourceProperties}},
+  "[Datadog](#cfn-appflow-flow-sourceconnectorproperties-datadog)" : {{DatadogSourceProperties}},
+  "[Dynatrace](#cfn-appflow-flow-sourceconnectorproperties-dynatrace)" : {{DynatraceSourceProperties}},
+  "[GoogleAnalytics](#cfn-appflow-flow-sourceconnectorproperties-googleanalytics)" : {{GoogleAnalyticsSourceProperties}},
+  "[InforNexus](#cfn-appflow-flow-sourceconnectorproperties-infornexus)" : {{InforNexusSourceProperties}},
+  "[Marketo](#cfn-appflow-flow-sourceconnectorproperties-marketo)" : {{MarketoSourceProperties}},
+  "[Pardot](#cfn-appflow-flow-sourceconnectorproperties-pardot)" : {{PardotSourceProperties}},
+  "[S3](#cfn-appflow-flow-sourceconnectorproperties-s3)" : {{S3SourceProperties}},
+  "[Salesforce](#cfn-appflow-flow-sourceconnectorproperties-salesforce)" : {{SalesforceSourceProperties}},
+  "[SAPOData](#cfn-appflow-flow-sourceconnectorproperties-sapodata)" : {{SAPODataSourceProperties}},
+  "[ServiceNow](#cfn-appflow-flow-sourceconnectorproperties-servicenow)" : {{ServiceNowSourceProperties}},
+  "[Singular](#cfn-appflow-flow-sourceconnectorproperties-singular)" : {{SingularSourceProperties}},
+  "[Slack](#cfn-appflow-flow-sourceconnectorproperties-slack)" : {{SlackSourceProperties}},
+  "[Trendmicro](#cfn-appflow-flow-sourceconnectorproperties-trendmicro)" : {{TrendmicroSourceProperties}},
+  "[Veeva](#cfn-appflow-flow-sourceconnectorproperties-veeva)" : {{VeevaSourceProperties}},
+  "[Zendesk](#cfn-appflow-flow-sourceconnectorproperties-zendesk)" : {{ZendeskSourceProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-sourceconnectorproperties-syntax.yaml"></a>
 
-```yaml
-
-  Amplitude:
-    AmplitudeSourceProperties
-  CustomConnector:
-    CustomConnectorSourceProperties
-  Datadog:
-    DatadogSourceProperties
-  Dynatrace:
-    DynatraceSourceProperties
-  GoogleAnalytics:
-    GoogleAnalyticsSourceProperties
-  InforNexus:
-    InforNexusSourceProperties
-  Marketo:
-    MarketoSourceProperties
-  Pardot:
-    PardotSourceProperties
-  S3:
-    S3SourceProperties
-  Salesforce:
-    SalesforceSourceProperties
-  SAPOData:
-    SAPODataSourceProperties
-  ServiceNow:
-    ServiceNowSourceProperties
-  Singular:
-    SingularSourceProperties
-  Slack:
-    SlackSourceProperties
-  Trendmicro:
-    TrendmicroSourceProperties
-  Veeva:
-    VeevaSourceProperties
-  Zendesk:
-    ZendeskSourceProperties
-
+```
+  [Amplitude](#cfn-appflow-flow-sourceconnectorproperties-amplitude): {{
+    AmplitudeSourceProperties}}
+  [CustomConnector](#cfn-appflow-flow-sourceconnectorproperties-customconnector): {{
+    CustomConnectorSourceProperties}}
+  [Datadog](#cfn-appflow-flow-sourceconnectorproperties-datadog): {{
+    DatadogSourceProperties}}
+  [Dynatrace](#cfn-appflow-flow-sourceconnectorproperties-dynatrace): {{
+    DynatraceSourceProperties}}
+  [GoogleAnalytics](#cfn-appflow-flow-sourceconnectorproperties-googleanalytics): {{
+    GoogleAnalyticsSourceProperties}}
+  [InforNexus](#cfn-appflow-flow-sourceconnectorproperties-infornexus): {{
+    InforNexusSourceProperties}}
+  [Marketo](#cfn-appflow-flow-sourceconnectorproperties-marketo): {{
+    MarketoSourceProperties}}
+  [Pardot](#cfn-appflow-flow-sourceconnectorproperties-pardot): {{
+    PardotSourceProperties}}
+  [S3](#cfn-appflow-flow-sourceconnectorproperties-s3): {{
+    S3SourceProperties}}
+  [Salesforce](#cfn-appflow-flow-sourceconnectorproperties-salesforce): {{
+    SalesforceSourceProperties}}
+  [SAPOData](#cfn-appflow-flow-sourceconnectorproperties-sapodata): {{
+    SAPODataSourceProperties}}
+  [ServiceNow](#cfn-appflow-flow-sourceconnectorproperties-servicenow): {{
+    ServiceNowSourceProperties}}
+  [Singular](#cfn-appflow-flow-sourceconnectorproperties-singular): {{
+    SingularSourceProperties}}
+  [Slack](#cfn-appflow-flow-sourceconnectorproperties-slack): {{
+    SlackSourceProperties}}
+  [Trendmicro](#cfn-appflow-flow-sourceconnectorproperties-trendmicro): {{
+    TrendmicroSourceProperties}}
+  [Veeva](#cfn-appflow-flow-sourceconnectorproperties-veeva): {{
+    VeevaSourceProperties}}
+  [Zendesk](#cfn-appflow-flow-sourceconnectorproperties-zendesk): {{
+    ZendeskSourceProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-sourceconnectorproperties-properties"></a>
 
-`Amplitude`
+`Amplitude`  <a name="cfn-appflow-flow-sourceconnectorproperties-amplitude"></a>
+ Specifies the information that is required for querying Amplitude.
+*Required*: No
+*Type*: [AmplitudeSourceProperties](aws-properties-appflow-flow-amplitudesourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the information that is required for querying Amplitude.
+`CustomConnector`  <a name="cfn-appflow-flow-sourceconnectorproperties-customconnector"></a>
+The properties that are applied when the custom connector is being used as a source.
+*Required*: No
+*Type*: [CustomConnectorSourceProperties](aws-properties-appflow-flow-customconnectorsourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Datadog`  <a name="cfn-appflow-flow-sourceconnectorproperties-datadog"></a>
+ Specifies the information that is required for querying Datadog.
+*Required*: No
+*Type*: [DatadogSourceProperties](aws-properties-appflow-flow-datadogsourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AmplitudeSourceProperties](aws-properties-appflow-flow-amplitudesourceproperties.md)
+`Dynatrace`  <a name="cfn-appflow-flow-sourceconnectorproperties-dynatrace"></a>
+ Specifies the information that is required for querying Dynatrace.
+*Required*: No
+*Type*: [DynatraceSourceProperties](aws-properties-appflow-flow-dynatracesourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`GoogleAnalytics`  <a name="cfn-appflow-flow-sourceconnectorproperties-googleanalytics"></a>
+ Specifies the information that is required for querying Google Analytics.
+*Required*: No
+*Type*: [GoogleAnalyticsSourceProperties](aws-properties-appflow-flow-googleanalyticssourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`CustomConnector`
+`InforNexus`  <a name="cfn-appflow-flow-sourceconnectorproperties-infornexus"></a>
+ Specifies the information that is required for querying Infor Nexus.
+*Required*: No
+*Type*: [InforNexusSourceProperties](aws-properties-appflow-flow-infornexussourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The properties that are applied when the custom connector is being used as a
-source.
+`Marketo`  <a name="cfn-appflow-flow-sourceconnectorproperties-marketo"></a>
+ Specifies the information that is required for querying Marketo.
+*Required*: No
+*Type*: [MarketoSourceProperties](aws-properties-appflow-flow-marketosourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomConnectorSourceProperties](aws-properties-appflow-flow-customconnectorsourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Datadog`
-
-Specifies the information that is required for querying Datadog.
-
-_Required_: No
-
-_Type_: [DatadogSourceProperties](aws-properties-appflow-flow-datadogsourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dynatrace`
-
-Specifies the information that is required for querying Dynatrace.
-
-_Required_: No
-
-_Type_: [DynatraceSourceProperties](aws-properties-appflow-flow-dynatracesourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GoogleAnalytics`
-
-Specifies the information that is required for querying Google Analytics.
-
-_Required_: No
-
-_Type_: [GoogleAnalyticsSourceProperties](aws-properties-appflow-flow-googleanalyticssourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InforNexus`
-
-Specifies the information that is required for querying Infor Nexus.
-
-_Required_: No
-
-_Type_: [InforNexusSourceProperties](aws-properties-appflow-flow-infornexussourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Marketo`
-
-Specifies the information that is required for querying Marketo.
-
-_Required_: No
-
-_Type_: [MarketoSourceProperties](aws-properties-appflow-flow-marketosourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pardot`
-
+`Pardot`  <a name="cfn-appflow-flow-sourceconnectorproperties-pardot"></a>
 Specifies the information that is required for querying Salesforce Pardot.
+*Required*: No
+*Type*: [PardotSourceProperties](aws-properties-appflow-flow-pardotsourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`S3`  <a name="cfn-appflow-flow-sourceconnectorproperties-s3"></a>
+ Specifies the information that is required for querying Amazon S3.
+*Required*: No
+*Type*: [S3SourceProperties](aws-properties-appflow-flow-s3sourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PardotSourceProperties](aws-properties-appflow-flow-pardotsourceproperties.md)
+`Salesforce`  <a name="cfn-appflow-flow-sourceconnectorproperties-salesforce"></a>
+ Specifies the information that is required for querying Salesforce.
+*Required*: No
+*Type*: [SalesforceSourceProperties](aws-properties-appflow-flow-salesforcesourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SAPOData`  <a name="cfn-appflow-flow-sourceconnectorproperties-sapodata"></a>
+ The properties that are applied when using SAPOData as a flow source.
+*Required*: No
+*Type*: [SAPODataSourceProperties](aws-properties-appflow-flow-sapodatasourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`S3`
+`ServiceNow`  <a name="cfn-appflow-flow-sourceconnectorproperties-servicenow"></a>
+ Specifies the information that is required for querying ServiceNow.
+*Required*: No
+*Type*: [ServiceNowSourceProperties](aws-properties-appflow-flow-servicenowsourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the information that is required for querying Amazon S3.
+`Singular`  <a name="cfn-appflow-flow-sourceconnectorproperties-singular"></a>
+ Specifies the information that is required for querying Singular.
+*Required*: No
+*Type*: [SingularSourceProperties](aws-properties-appflow-flow-singularsourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Slack`  <a name="cfn-appflow-flow-sourceconnectorproperties-slack"></a>
+ Specifies the information that is required for querying Slack.
+*Required*: No
+*Type*: [SlackSourceProperties](aws-properties-appflow-flow-slacksourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [S3SourceProperties](aws-properties-appflow-flow-s3sourceproperties.md)
+`Trendmicro`  <a name="cfn-appflow-flow-sourceconnectorproperties-trendmicro"></a>
+ Specifies the information that is required for querying Trend Micro.
+*Required*: No
+*Type*: [TrendmicroSourceProperties](aws-properties-appflow-flow-trendmicrosourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Veeva`  <a name="cfn-appflow-flow-sourceconnectorproperties-veeva"></a>
+ Specifies the information that is required for querying Veeva.
+*Required*: No
+*Type*: [VeevaSourceProperties](aws-properties-appflow-flow-veevasourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Salesforce`
-
-Specifies the information that is required for querying Salesforce.
-
-_Required_: No
-
-_Type_: [SalesforceSourceProperties](aws-properties-appflow-flow-salesforcesourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SAPOData`
-
-The properties that are applied when using SAPOData as a flow source.
-
-_Required_: No
-
-_Type_: [SAPODataSourceProperties](aws-properties-appflow-flow-sapodatasourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceNow`
-
-Specifies the information that is required for querying ServiceNow.
-
-_Required_: No
-
-_Type_: [ServiceNowSourceProperties](aws-properties-appflow-flow-servicenowsourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Singular`
-
-Specifies the information that is required for querying Singular.
-
-_Required_: No
-
-_Type_: [SingularSourceProperties](aws-properties-appflow-flow-singularsourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slack`
-
-Specifies the information that is required for querying Slack.
-
-_Required_: No
-
-_Type_: [SlackSourceProperties](aws-properties-appflow-flow-slacksourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Trendmicro`
-
-Specifies the information that is required for querying Trend Micro.
-
-_Required_: No
-
-_Type_: [TrendmicroSourceProperties](aws-properties-appflow-flow-trendmicrosourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Veeva`
-
-Specifies the information that is required for querying Veeva.
-
-_Required_: No
-
-_Type_: [VeevaSourceProperties](aws-properties-appflow-flow-veevasourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Zendesk`
-
-Specifies the information that is required for querying Zendesk.
-
-_Required_: No
-
-_Type_: [ZendeskSourceProperties](aws-properties-appflow-flow-zendesksourceproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Zendesk`  <a name="cfn-appflow-flow-sourceconnectorproperties-zendesk"></a>
+ Specifies the information that is required for querying Zendesk.
+*Required*: No
+*Type*: [ZendeskSourceProperties](aws-properties-appflow-flow-zendesksourceproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [SourceConnectorProperties](../../../../reference/appflow/1-0/apireference/api-sourceconnectorproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnowflakeDestinationProperties
-
-SourceFlowConfig
+<a name="aws-properties-appflow-flow-sourceconnectorproperties--seealso"></a>
++ [SourceConnectorProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SourceConnectorProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,97 +2,70 @@
 title: "AWS::MediaPackageV2::OriginEndpoint MssManifestConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint MssManifestConfiguration
+<a name="aws-properties-mediapackagev2-originendpoint-mssmanifestconfiguration"></a>
 
-The `MssManifestConfiguration` property type specifies Property description not available. for an [AWS::MediaPackageV2::OriginEndpoint](aws-resource-mediapackagev2-originendpoint.md).
+<a name="aws-properties-mediapackagev2-originendpoint-mssmanifestconfiguration-description"></a>The `MssManifestConfiguration` property type specifies Property description not available. for an [AWS::MediaPackageV2::OriginEndpoint](aws-resource-mediapackagev2-originendpoint.md).
 
 ## Syntax
+<a name="aws-properties-mediapackagev2-originendpoint-mssmanifestconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackagev2-originendpoint-mssmanifestconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FilterConfiguration" : FilterConfiguration,
-  "ManifestLayout" : String,
-  "ManifestName" : String,
-  "ManifestWindowSeconds" : Integer
+  "[FilterConfiguration](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration)" : {{FilterConfiguration}},
+  "[ManifestLayout](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestlayout)" : {{String}},
+  "[ManifestName](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestname)" : {{String}},
+  "[ManifestWindowSeconds](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestwindowseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackagev2-originendpoint-mssmanifestconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FilterConfiguration:
-    FilterConfiguration
-  ManifestLayout: String
-  ManifestName: String
-  ManifestWindowSeconds: Integer
-
+```
+  [FilterConfiguration](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration): {{
+    FilterConfiguration}}
+  [ManifestLayout](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestlayout): {{String}}
+  [ManifestName](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestname): {{String}}
+  [ManifestWindowSeconds](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestwindowseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackagev2-originendpoint-mssmanifestconfiguration-properties"></a>
 
-`FilterConfiguration`
-
+`FilterConfiguration`  <a name="cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [FilterConfiguration](aws-properties-mediapackagev2-originendpoint-filterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterConfiguration](aws-properties-mediapackagev2-originendpoint-filterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestLayout`
-
+`ManifestLayout`  <a name="cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestlayout"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `FULL | COMPACT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FULL | COMPACT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestName`
-
+`ManifestName`  <a name="cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestname"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestWindowSeconds`
-
+`ManifestWindowSeconds`  <a name="cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestwindowseconds"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LowLatencyHlsManifestConfiguration
-
-Scte
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

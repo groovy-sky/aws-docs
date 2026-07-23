@@ -2,99 +2,70 @@
 title: "AWS::AuditManager::Assessment AWSAccount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AuditManager::Assessment AWSAccount
+<a name="aws-properties-auditmanager-assessment-awsaccount"></a>
 
 The `AWSAccount` property type specifies the wrapper of the AWS account details, such as account ID, email address, and so on.
 
 ## Syntax
+<a name="aws-properties-auditmanager-assessment-awsaccount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-auditmanager-assessment-awsaccount-syntax.json"></a>
 
-```json
-
+```
 {
-  "EmailAddress" : String,
-  "Id" : String,
-  "Name" : String
+  "[EmailAddress](#cfn-auditmanager-assessment-awsaccount-emailaddress)" : {{String}},
+  "[Id](#cfn-auditmanager-assessment-awsaccount-id)" : {{String}},
+  "[Name](#cfn-auditmanager-assessment-awsaccount-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-auditmanager-assessment-awsaccount-syntax.yaml"></a>
 
-```yaml
-
-  EmailAddress: String
-  Id: String
-  Name: String
-
+```
+  [EmailAddress](#cfn-auditmanager-assessment-awsaccount-emailaddress): {{String}}
+  [Id](#cfn-auditmanager-assessment-awsaccount-id): {{String}}
+  [Name](#cfn-auditmanager-assessment-awsaccount-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-auditmanager-assessment-awsaccount-properties"></a>
 
-`EmailAddress`
+`EmailAddress`  <a name="cfn-auditmanager-assessment-awsaccount-emailaddress"></a>
+ The email address that's associated with the AWS account.
+*Required*: No
+*Type*: String
+*Pattern*: `^.*@.*$`
+*Minimum*: `1`
+*Maximum*: `320`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The email address that's associated with the AWS account.
+`Id`  <a name="cfn-auditmanager-assessment-awsaccount-id"></a>
+ The identifier for the AWS account.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.*@.*$`
-
-_Minimum_: `1`
-
-_Maximum_: `320`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
-The identifier for the AWS account.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the AWS account.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\u0020-\u007E]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Name`  <a name="cfn-auditmanager-assessment-awsaccount-name"></a>
+ The name of the AWS account.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\u0020-\u007E]+$`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [AWSAccount](../../../../reference/audit-manager/latest/apireference/api-awsaccount.md)
-in the _AWS Audit Manager API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssessmentReportsDestination
-
-AWSService
+<a name="aws-properties-auditmanager-assessment-awsaccount--seealso"></a>
++ [AWSAccount](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AWSAccount.html) in the *AWS Audit Manager API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,107 +2,87 @@
 title: "AWS::SSMContacts::Plan"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMContacts::Plan
+<a name="aws-resource-ssmcontacts-plan"></a>
 
-Information about the stages and on-call rotation teams associated with an escalation
-plan or engagement plan.
+Information about the stages and on-call rotation teams associated with an escalation plan or engagement plan.
 
-###### Note
-
-**Template example**: We recommend creating all Incident Manager `Contacts` resources using a single AWS CloudFormation template. For a
-demonstration, see the examples for [AWS::SSMContacts::Contacts](../userguide/aws-resource-ssmcontacts-contact.md).
+**Note**
+**Template example**: We recommend creating all Incident Manager`Contacts` resources using a single AWS CloudFormation template. For a demonstration, see the examples for [AWS::SSMContacts::Contacts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmcontacts-contact.html).
 
 ## Syntax
+<a name="aws-resource-ssmcontacts-plan-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssmcontacts-plan-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSMContacts::Plan",
   "Properties" : {
-      "ContactId" : String,
-      "RotationIds" : [ String, ... ],
-      "Stages" : [ Stage, ... ]
+      "[ContactId](#cfn-ssmcontacts-plan-contactid)" : {{String}},
+      "[RotationIds](#cfn-ssmcontacts-plan-rotationids)" : {{[ String, ... ]}},
+      "[Stages](#cfn-ssmcontacts-plan-stages)" : {{[ Stage, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssmcontacts-plan-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSMContacts::Plan
 Properties:
-  ContactId: String
-  RotationIds:
-    - String
-  Stages:
-    - Stage
-
+  [ContactId](#cfn-ssmcontacts-plan-contactid): {{String}}
+  [RotationIds](#cfn-ssmcontacts-plan-rotationids): {{
+    - String}}
+  [Stages](#cfn-ssmcontacts-plan-stages): {{
+    - Stage}}
 ```
 
 ## Properties
+<a name="aws-resource-ssmcontacts-plan-properties"></a>
 
-`ContactId`
-
+`ContactId`  <a name="cfn-ssmcontacts-plan-contactid"></a>
 The Amazon Resource Name (ARN) of the contact.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:[-\w+=\/,.@]+:[-\w+=\/,.@]+:[-\w+=\/,.@]*:[0-9]+:([\w+=\/,.@:-]+)*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RotationIds`  <a name="cfn-ssmcontacts-plan-rotationids"></a>
+The Amazon Resource Names (ARNs) of the on-call rotations associated with the plan.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `arn:[-\w+=\/,.@]+:[-\w+=\/,.@]+:[-\w+=\/,.@]*:[0-9]+:([\w+=\/,.@:-]+)*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RotationIds`
-
-The Amazon Resource Names (ARNs) of the on-call rotations associated with the
-plan.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Stages`
-
-A list of stages that the escalation plan or engagement plan uses to engage contacts and
-contact methods.
-
-_Required_: No
-
-_Type_: Array of [Stage](aws-properties-ssmcontacts-plan-stage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Stages`  <a name="cfn-ssmcontacts-plan-stages"></a>
+A list of stages that the escalation plan or engagement plan uses to engage contacts and contact methods.
+*Required*: No
+*Type*: Array of [Stage](aws-properties-ssmcontacts-plan-stage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ssmcontacts-plan-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ssmcontacts-plan-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ssmcontacts-plan-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ssmcontacts-plan-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the `Plan` resource.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SSMContacts::ContactChannel
-
-ChannelTargetInfo
 
 All content copied from https://docs.aws.amazon.com/.

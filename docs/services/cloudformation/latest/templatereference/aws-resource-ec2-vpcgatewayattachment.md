@@ -2,103 +2,88 @@
 title: "AWS::EC2::VPCGatewayAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPCGatewayAttachment
+<a name="aws-resource-ec2-vpcgatewayattachment"></a>
 
-Attaches an internet gateway, or a virtual private gateway to a VPC, enabling
-connectivity between the internet and the VPC.
+Attaches an internet gateway, or a virtual private gateway to a VPC, enabling connectivity between the internet and the VPC.
 
 ## Syntax
+<a name="aws-resource-ec2-vpcgatewayattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpcgatewayattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPCGatewayAttachment",
   "Properties" : {
-      "InternetGatewayId" : String,
-      "VpcId" : String,
-      "VpnGatewayId" : String
+      "[InternetGatewayId](#cfn-ec2-vpcgatewayattachment-internetgatewayid)" : {{String}},
+      "[VpcId](#cfn-ec2-vpcgatewayattachment-vpcid)" : {{String}},
+      "[VpnGatewayId](#cfn-ec2-vpcgatewayattachment-vpngatewayid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpcgatewayattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPCGatewayAttachment
 Properties:
-  InternetGatewayId: String
-  VpcId: String
-  VpnGatewayId: String
-
+  [InternetGatewayId](#cfn-ec2-vpcgatewayattachment-internetgatewayid): {{String}}
+  [VpcId](#cfn-ec2-vpcgatewayattachment-vpcid): {{String}}
+  [VpnGatewayId](#cfn-ec2-vpcgatewayattachment-vpngatewayid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpcgatewayattachment-properties"></a>
 
-`InternetGatewayId`
-
+`InternetGatewayId`  <a name="cfn-ec2-vpcgatewayattachment-internetgatewayid"></a>
 The ID of the internet gateway.
+You must specify either `InternetGatewayId` or `VpnGatewayId`, but not both.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You must specify either `InternetGatewayId` or `VpnGatewayId`, but
-not both.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-ec2-vpcgatewayattachment-vpcid"></a>
 The ID of the VPC.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpnGatewayId`
-
+`VpnGatewayId`  <a name="cfn-ec2-vpcgatewayattachment-vpngatewayid"></a>
 The ID of the virtual private gateway.
-
-You must specify either `InternetGatewayId` or `VpnGatewayId`, but
-not both.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+You must specify either `InternetGatewayId` or `VpnGatewayId`, but not both.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-vpcgatewayattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpcgatewayattachment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the VPC gateway attachment.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ec2-vpcgatewayattachment--examples"></a>
 
 ### VPN gateway attachment
+<a name="aws-resource-ec2-vpcgatewayattachment--examples--VPN_gateway_attachment"></a>
 
-To attach both an Internet gateway and a VPN gateway to a VPC, you must specify
-two separate AWS::EC2::VPCGatewayAttachment resources:
+To attach both an Internet gateway and a VPN gateway to a VPC, you must specify two separate AWS::EC2::VPCGatewayAttachment resources:
 
 #### JSON
+<a name="aws-resource-ec2-vpcgatewayattachment--examples--VPN_gateway_attachment--json"></a>
 
-```json
-
+```
 "AttachGateway" : {
    "Type" : "AWS::EC2::VPCGatewayAttachment",
    "Properties" : {
@@ -117,9 +102,9 @@ two separate AWS::EC2::VPCGatewayAttachment resources:
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpcgatewayattachment--examples--VPN_gateway_attachment--yaml"></a>
 
-```yaml
-
+```
 AttachGateway:
   Type: AWS::EC2::VPCGatewayAttachment
   Properties:
@@ -137,17 +122,8 @@ AttachVpnGateway:
 ```
 
 ## See also
-
-- [AttachVpnGateway](../../../../reference/awsec2/latest/apireference/api-attachvpngateway.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Internet gateways](../../../vpc/latest/userguide/vpc-internet-gateway.md)
-in the _Amazon VPC User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VPCEndpointServicePermissions
-
-AWS::EC2::VPCPeeringConnection
+<a name="aws-resource-ec2-vpcgatewayattachment--seealso"></a>
++ [AttachVpnGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVpnGateway.html) in the *Amazon EC2 API Reference*
++ [Internet gateways](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

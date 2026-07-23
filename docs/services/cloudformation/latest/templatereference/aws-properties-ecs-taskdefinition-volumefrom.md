@@ -2,67 +2,49 @@
 title: "AWS::ECS::TaskDefinition VolumeFrom"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition VolumeFrom
+<a name="aws-properties-ecs-taskdefinition-volumefrom"></a>
 
 Details on a data volume from another container in the same task definition.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-volumefrom-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-volumefrom-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReadOnly" : Boolean,
-  "SourceContainer" : String
+  "[ReadOnly](#cfn-ecs-taskdefinition-volumefrom-readonly)" : {{Boolean}},
+  "[SourceContainer](#cfn-ecs-taskdefinition-volumefrom-sourcecontainer)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-volumefrom-syntax.yaml"></a>
 
-```yaml
-
-  ReadOnly: Boolean
-  SourceContainer: String
-
+```
+  [ReadOnly](#cfn-ecs-taskdefinition-volumefrom-readonly): {{Boolean}}
+  [SourceContainer](#cfn-ecs-taskdefinition-volumefrom-sourcecontainer): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-volumefrom-properties"></a>
 
-`ReadOnly`
+`ReadOnly`  <a name="cfn-ecs-taskdefinition-volumefrom-readonly"></a>
+If this value is `true`, the container has read-only access to the volume. If this value is `false`, then the container can write to the volume. The default value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-If this value is `true`, the container has read-only access to the volume.
-If this value is `false`, then the container can write to the volume. The
-default value is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceContainer`
-
-The name of another container within the same task definition to mount volumes
-from.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Volume
-
-AWS::ECS::TaskSet
+`SourceContainer`  <a name="cfn-ecs-taskdefinition-volumefrom-sourcecontainer"></a>
+The name of another container within the same task definition to mount volumes from.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

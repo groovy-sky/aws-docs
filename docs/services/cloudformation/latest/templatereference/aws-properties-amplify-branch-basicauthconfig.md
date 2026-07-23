@@ -2,85 +2,61 @@
 title: "AWS::Amplify::Branch BasicAuthConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Amplify::Branch BasicAuthConfig
+<a name="aws-properties-amplify-branch-basicauthconfig"></a>
 
-Use the BasicAuthConfig property type to set password protection for a specific
-branch.
+Use the BasicAuthConfig property type to set password protection for a specific branch.
 
 ## Syntax
+<a name="aws-properties-amplify-branch-basicauthconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplify-branch-basicauthconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableBasicAuth" : Boolean,
-  "Password" : String,
-  "Username" : String
+  "[EnableBasicAuth](#cfn-amplify-branch-basicauthconfig-enablebasicauth)" : {{Boolean}},
+  "[Password](#cfn-amplify-branch-basicauthconfig-password)" : {{String}},
+  "[Username](#cfn-amplify-branch-basicauthconfig-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplify-branch-basicauthconfig-syntax.yaml"></a>
 
-```yaml
-
-  EnableBasicAuth: Boolean
-  Password: String
-  Username: String
-
+```
+  [EnableBasicAuth](#cfn-amplify-branch-basicauthconfig-enablebasicauth): {{Boolean}}
+  [Password](#cfn-amplify-branch-basicauthconfig-password): {{String}}
+  [Username](#cfn-amplify-branch-basicauthconfig-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplify-branch-basicauthconfig-properties"></a>
 
-`EnableBasicAuth`
+`EnableBasicAuth`  <a name="cfn-amplify-branch-basicauthconfig-enablebasicauth"></a>
+ Enables basic authorization for the branch.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Enables basic authorization for the branch.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Password`
-
+`Password`  <a name="cfn-amplify-branch-basicauthconfig-password"></a>
 The password for basic authorization.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
+`Username`  <a name="cfn-amplify-branch-basicauthconfig-username"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Backend
-
-EnvironmentVariable
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

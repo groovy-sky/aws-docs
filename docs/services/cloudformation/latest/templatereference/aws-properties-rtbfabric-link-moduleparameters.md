@@ -2,66 +2,51 @@
 title: "AWS::RTBFabric::Link ModuleParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link ModuleParameters
+<a name="aws-properties-rtbfabric-link-moduleparameters"></a>
 
 Describes the parameters of a module.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-link-moduleparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-link-moduleparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "NoBid" : NoBidModuleParameters,
-  "OpenRtbAttribute" : OpenRtbAttributeModuleParameters
+  "[NoBid](#cfn-rtbfabric-link-moduleparameters-nobid)" : {{NoBidModuleParameters}},
+  "[OpenRtbAttribute](#cfn-rtbfabric-link-moduleparameters-openrtbattribute)" : {{OpenRtbAttributeModuleParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-link-moduleparameters-syntax.yaml"></a>
 
-```yaml
-
-  NoBid:
-    NoBidModuleParameters
-  OpenRtbAttribute:
-    OpenRtbAttributeModuleParameters
-
+```
+  [NoBid](#cfn-rtbfabric-link-moduleparameters-nobid): {{
+    NoBidModuleParameters}}
+  [OpenRtbAttribute](#cfn-rtbfabric-link-moduleparameters-openrtbattribute): {{
+    OpenRtbAttributeModuleParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-link-moduleparameters-properties"></a>
 
-`NoBid`
-
+`NoBid`  <a name="cfn-rtbfabric-link-moduleparameters-nobid"></a>
 Describes the parameters of a no bid module.
+*Required*: No
+*Type*: [NoBidModuleParameters](aws-properties-rtbfabric-link-nobidmoduleparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NoBidModuleParameters](aws-properties-rtbfabric-link-nobidmoduleparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OpenRtbAttribute`
-
+`OpenRtbAttribute`  <a name="cfn-rtbfabric-link-moduleparameters-openrtbattribute"></a>
 Describes the parameters of an open RTB attribute module.
-
-_Required_: No
-
-_Type_: [OpenRtbAttributeModuleParameters](aws-properties-rtbfabric-link-openrtbattributemoduleparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModuleConfiguration
-
-NoBidAction
+*Required*: No
+*Type*: [OpenRtbAttributeModuleParameters](aws-properties-rtbfabric-link-openrtbattributemoduleparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

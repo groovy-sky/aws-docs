@@ -2,67 +2,49 @@
 title: "AWS::APS::AnomalyDetector IgnoreNearExpected"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::AnomalyDetector IgnoreNearExpected
+<a name="aws-properties-aps-anomalydetector-ignorenearexpected"></a>
 
-Configuration for threshold settings that determine when values near expected values
-should be ignored during anomaly detection.
+Configuration for threshold settings that determine when values near expected values should be ignored during anomaly detection.
 
 ## Syntax
+<a name="aws-properties-aps-anomalydetector-ignorenearexpected-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-anomalydetector-ignorenearexpected-syntax.json"></a>
 
-```json
-
+```
 {
-  "Amount" : Number,
-  "Ratio" : Number
+  "[Amount](#cfn-aps-anomalydetector-ignorenearexpected-amount)" : {{Number}},
+  "[Ratio](#cfn-aps-anomalydetector-ignorenearexpected-ratio)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-anomalydetector-ignorenearexpected-syntax.yaml"></a>
 
-```yaml
-
-  Amount: Number
-  Ratio: Number
-
+```
+  [Amount](#cfn-aps-anomalydetector-ignorenearexpected-amount): {{Number}}
+  [Ratio](#cfn-aps-anomalydetector-ignorenearexpected-ratio): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-anomalydetector-ignorenearexpected-properties"></a>
 
-`Amount`
+`Amount`  <a name="cfn-aps-anomalydetector-ignorenearexpected-amount"></a>
+The absolute amount by which values can differ from expected values before being considered anomalous.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The absolute amount by which values can differ from expected values before being
-considered anomalous.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ratio`
-
-The ratio by which values can differ from expected values before being considered
-anomalous.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnomalyDetectorConfiguration
-
-Label
+`Ratio`  <a name="cfn-aps-anomalydetector-ignorenearexpected-ratio"></a>
+The ratio by which values can differ from expected values before being considered anomalous.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

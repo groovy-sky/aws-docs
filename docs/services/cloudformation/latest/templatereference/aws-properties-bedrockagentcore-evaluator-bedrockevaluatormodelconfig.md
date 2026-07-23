@@ -2,77 +2,58 @@
 title: "AWS::BedrockAgentCore::Evaluator BedrockEvaluatorModelConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator BedrockEvaluatorModelConfig
+<a name="aws-properties-bedrockagentcore-evaluator-bedrockevaluatormodelconfig"></a>
 
-The Amazon Bedrock model configuration for evaluation.
+ The Amazon Bedrock model configuration for evaluation.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalModelRequestFields" : Json,
-  "InferenceConfig" : InferenceConfiguration,
-  "ModelId" : String
+  "[AdditionalModelRequestFields](#cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-additionalmodelrequestfields)" : {{Json}},
+  "[InferenceConfig](#cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-inferenceconfig)" : {{InferenceConfiguration}},
+  "[ModelId](#cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-modelid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalModelRequestFields: Json
-  InferenceConfig:
-    InferenceConfiguration
-  ModelId: String
-
+```
+  [AdditionalModelRequestFields](#cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-additionalmodelrequestfields): {{Json}}
+  [InferenceConfig](#cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-inferenceconfig): {{
+    InferenceConfiguration}}
+  [ModelId](#cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-modelid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-properties"></a>
 
-`AdditionalModelRequestFields`
+`AdditionalModelRequestFields`  <a name="cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-additionalmodelrequestfields"></a>
+ Additional model-specific request fields to customize model behavior beyond the standard inference configuration.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Additional model-specific request fields to customize model behavior beyond the standard inference configuration.
+`InferenceConfig`  <a name="cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-inferenceconfig"></a>
+ The inference configuration parameters that control model behavior during evaluation, including temperature, token limits, and sampling settings.
+*Required*: No
+*Type*: [InferenceConfiguration](aws-properties-bedrockagentcore-evaluator-inferenceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InferenceConfig`
-
-The inference configuration parameters that control model behavior during evaluation, including temperature, token limits, and sampling settings.
-
-_Required_: No
-
-_Type_: [InferenceConfiguration](aws-properties-bedrockagentcore-evaluator-inferenceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelId`
-
-The identifier of the Amazon Bedrock model to use for evaluation. Must be a supported foundation model available in your region.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BedrockAgentCore::Evaluator
-
-CategoricalScaleDefinition
+`ModelId`  <a name="cfn-bedrockagentcore-evaluator-bedrockevaluatormodelconfig-modelid"></a>
+ The identifier of the Amazon Bedrock model to use for evaluation. Must be a supported foundation model available in your region.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

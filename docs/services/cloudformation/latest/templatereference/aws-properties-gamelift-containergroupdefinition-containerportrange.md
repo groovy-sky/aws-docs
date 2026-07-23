@@ -2,91 +2,64 @@
 title: "AWS::GameLift::ContainerGroupDefinition ContainerPortRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerGroupDefinition ContainerPortRange
+<a name="aws-properties-gamelift-containergroupdefinition-containerportrange"></a>
 
-A set of one or more port numbers that can be opened on the container, and the supported
-network protocol.
+A set of one or more port numbers that can be opened on the container, and the supported network protocol.
 
-**Part of:** [ContainerPortConfiguration](../../../../reference/gamelift/latest/apireference/api-containerportconfiguration.md)
+ **Part of:** [ContainerPortConfiguration](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerPortConfiguration.html)
 
 ## Syntax
+<a name="aws-properties-gamelift-containergroupdefinition-containerportrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-containergroupdefinition-containerportrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "FromPort" : Integer,
-  "Protocol" : String,
-  "ToPort" : Integer
+  "[FromPort](#cfn-gamelift-containergroupdefinition-containerportrange-fromport)" : {{Integer}},
+  "[Protocol](#cfn-gamelift-containergroupdefinition-containerportrange-protocol)" : {{String}},
+  "[ToPort](#cfn-gamelift-containergroupdefinition-containerportrange-toport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-containergroupdefinition-containerportrange-syntax.yaml"></a>
 
-```yaml
-
-  FromPort: Integer
-  Protocol: String
-  ToPort: Integer
-
+```
+  [FromPort](#cfn-gamelift-containergroupdefinition-containerportrange-fromport): {{Integer}}
+  [Protocol](#cfn-gamelift-containergroupdefinition-containerportrange-protocol): {{String}}
+  [ToPort](#cfn-gamelift-containergroupdefinition-containerportrange-toport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-containergroupdefinition-containerportrange-properties"></a>
 
-`FromPort`
-
+`FromPort`  <a name="cfn-gamelift-containergroupdefinition-containerportrange-fromport"></a>
 A starting value for the range of allowed port numbers.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `60000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `60000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-gamelift-containergroupdefinition-containerportrange-protocol"></a>
 The network protocol that these ports support.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TCP | UDP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TCP | UDP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToPort`
-
-An ending value for the range of allowed port numbers.
-Port numbers are end-inclusive.
-This value must be equal to or greater than `FromPort`.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `60000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerMountPoint
-
-GameServerContainerDefinition
+`ToPort`  <a name="cfn-gamelift-containergroupdefinition-containerportrange-toport"></a>
+An ending value for the range of allowed port numbers. Port numbers are end-inclusive. This value must be equal to or greater than `FromPort`.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `60000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

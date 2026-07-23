@@ -2,54 +2,42 @@
 title: "AWS::Wisdom::AIGuardrail GuardrailManagedWordsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail GuardrailManagedWordsConfig
+<a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig"></a>
 
 A managed words config.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String
+  "[Type](#cfn-wisdom-aiguardrail-guardrailmanagedwordsconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-
+```
+  [Type](#cfn-wisdom-aiguardrail-guardrailmanagedwordsconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-wisdom-aiguardrail-guardrailmanagedwordsconfig-type"></a>
 The type of guardrail managed words.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PROFANITY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GuardrailContextualGroundingFilterConfig
-
-GuardrailPiiEntityConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PROFANITY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

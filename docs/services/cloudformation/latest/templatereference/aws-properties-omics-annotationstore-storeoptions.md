@@ -2,53 +2,42 @@
 title: "AWS::Omics::AnnotationStore StoreOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::AnnotationStore StoreOptions
+<a name="aws-properties-omics-annotationstore-storeoptions"></a>
 
 The store's file parsing options.
 
 ## Syntax
+<a name="aws-properties-omics-annotationstore-storeoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-annotationstore-storeoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "TsvStoreOptions" : TsvStoreOptions
+  "[TsvStoreOptions](#cfn-omics-annotationstore-storeoptions-tsvstoreoptions)" : {{TsvStoreOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-annotationstore-storeoptions-syntax.yaml"></a>
 
-```yaml
-
-  TsvStoreOptions:
-    TsvStoreOptions
-
+```
+  [TsvStoreOptions](#cfn-omics-annotationstore-storeoptions-tsvstoreoptions): {{
+    TsvStoreOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-annotationstore-storeoptions-properties"></a>
 
-`TsvStoreOptions`
-
+`TsvStoreOptions`  <a name="cfn-omics-annotationstore-storeoptions-tsvstoreoptions"></a>
 Formatting options for a TSV file.
-
-_Required_: Yes
-
-_Type_: [TsvStoreOptions](aws-properties-omics-annotationstore-tsvstoreoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SseConfig
-
-TsvStoreOptions
+*Required*: Yes
+*Type*: [TsvStoreOptions](aws-properties-omics-annotationstore-tsvstoreoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

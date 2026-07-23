@@ -2,62 +2,44 @@
 title: "AWS::GreengrassV2::Deployment DeploymentConfigurationValidationPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment DeploymentConfigurationValidationPolicy
+<a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy"></a>
 
-Contains information about how long a component on a core device can validate its
-configuration updates before it times out. Components can use the [SubscribeToValidateConfigurationUpdates](../../../greengrass/v2/developerguide/interprocess-communication.md#ipc-operation-subscribetovalidateconfigurationupdates) IPC operation to receive notifications when
-a deployment specifies a configuration update. Then, components can respond with the [SendConfigurationValidityReport](../../../greengrass/v2/developerguide/interprocess-communication.md#ipc-operation-sendconfigurationvalidityreport) IPC operation. For more information, see the [Create\
-deployments](../../../greengrass/v2/developerguide/create-deployments.md) in the _AWS IoT Greengrass V2 Developer Guide_.
+Contains information about how long a component on a core device can validate its configuration updates before it times out. Components can use the [SubscribeToValidateConfigurationUpdates](https://docs.aws.amazon.com/greengrass/v2/developerguide/interprocess-communication.html#ipc-operation-subscribetovalidateconfigurationupdates) IPC operation to receive notifications when a deployment specifies a configuration update. Then, components can respond with the [SendConfigurationValidityReport](https://docs.aws.amazon.com/greengrass/v2/developerguide/interprocess-communication.html#ipc-operation-sendconfigurationvalidityreport) IPC operation. For more information, see the [Create deployments](https://docs.aws.amazon.com/greengrass/v2/developerguide/create-deployments.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "TimeoutInSeconds" : Integer
+  "[TimeoutInSeconds](#cfn-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-timeoutinseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-syntax.yaml"></a>
 
-```yaml
-
-  TimeoutInSeconds: Integer
-
+```
+  [TimeoutInSeconds](#cfn-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-timeoutinseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-properties"></a>
 
-`TimeoutInSeconds`
-
-The amount of time in seconds that a component can validate its configuration updates. If
-the validation time exceeds this timeout, then the deployment proceeds for the device.
-
+`TimeoutInSeconds`  <a name="cfn-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-timeoutinseconds"></a>
+The amount of time in seconds that a component can validate its configuration updates. If the validation time exceeds this timeout, then the deployment proceeds for the device.
 Default: `30`
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeploymentComponentUpdatePolicy
-
-DeploymentIoTJobConfiguration
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

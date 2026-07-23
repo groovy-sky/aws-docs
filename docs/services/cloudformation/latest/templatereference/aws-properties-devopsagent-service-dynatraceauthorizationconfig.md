@@ -2,53 +2,42 @@
 title: "AWS::DevOpsAgent::Service DynatraceAuthorizationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Service DynatraceAuthorizationConfig
+<a name="aws-properties-devopsagent-service-dynatraceauthorizationconfig"></a>
 
 The OAuth authorization configuration for a Dynatrace service.
 
 ## Syntax
+<a name="aws-properties-devopsagent-service-dynatraceauthorizationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-service-dynatraceauthorizationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "OAuthClientCredentials" : OAuthClientDetails
+  "[OAuthClientCredentials](#cfn-devopsagent-service-dynatraceauthorizationconfig-oauthclientcredentials)" : {{OAuthClientDetails}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-service-dynatraceauthorizationconfig-syntax.yaml"></a>
 
-```yaml
-
-  OAuthClientCredentials:
-    OAuthClientDetails
-
+```
+  [OAuthClientCredentials](#cfn-devopsagent-service-dynatraceauthorizationconfig-oauthclientcredentials): {{
+    OAuthClientDetails}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-service-dynatraceauthorizationconfig-properties"></a>
 
-`OAuthClientCredentials`
-
+`OAuthClientCredentials`  <a name="cfn-devopsagent-service-dynatraceauthorizationconfig-oauthclientcredentials"></a>
 The OAuth client credentials for authenticating with Dynatrace.
-
-_Required_: No
-
-_Type_: [OAuthClientDetails](aws-properties-devopsagent-service-oauthclientdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BearerTokenDetails
-
-DynatraceServiceDetails
+*Required*: No
+*Type*: [OAuthClientDetails](aws-properties-devopsagent-service-oauthclientdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

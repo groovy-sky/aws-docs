@@ -2,53 +2,42 @@
 title: "AWS::Lambda::EventSourceMapping SelfManagedEventSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping SelfManagedEventSource
+<a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource"></a>
 
 The self-managed Apache Kafka cluster for your event source.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "Endpoints" : Endpoints
+  "[Endpoints](#cfn-lambda-eventsourcemapping-selfmanagedeventsource-endpoints)" : {{Endpoints}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource-syntax.yaml"></a>
 
-```yaml
-
-  Endpoints:
-    Endpoints
-
+```
+  [Endpoints](#cfn-lambda-eventsourcemapping-selfmanagedeventsource-endpoints): {{
+    Endpoints}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource-properties"></a>
 
-`Endpoints`
-
+`Endpoints`  <a name="cfn-lambda-eventsourcemapping-selfmanagedeventsource-endpoints"></a>
 The list of bootstrap servers for your Kafka brokers in the following format: `"KafkaBootstrapServers": ["abc.xyz.com:xxxx","abc2.xyz.com:xxxx"]`.
-
-_Required_: No
-
-_Type_: [Endpoints](aws-properties-lambda-eventsourcemapping-endpoints.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SchemaValidationConfig
-
-SelfManagedKafkaEventSourceConfig
+*Required*: No
+*Type*: [Endpoints](aws-properties-lambda-eventsourcemapping-endpoints.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

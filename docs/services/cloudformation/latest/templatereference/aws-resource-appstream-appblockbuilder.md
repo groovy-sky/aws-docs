@@ -2,223 +2,165 @@
 title: "AWS::AppStream::AppBlockBuilder"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::AppBlockBuilder
+<a name="aws-resource-appstream-appblockbuilder"></a>
 
 Creates an app block builder.
 
 ## Syntax
+<a name="aws-resource-appstream-appblockbuilder-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appstream-appblockbuilder-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppStream::AppBlockBuilder",
   "Properties" : {
-      "AccessEndpoints" : [ AccessEndpoint, ... ],
-      "AppBlockArns" : [ String, ... ],
-      "Description" : String,
-      "DisplayName" : String,
-      "EnableDefaultInternetAccess" : Boolean,
-      "IamRoleArn" : String,
-      "InstanceType" : String,
-      "Name" : String,
-      "Platform" : String,
-      "Tags" : [ Tag, ... ],
-      "VpcConfig" : VpcConfig
+      "[AccessEndpoints](#cfn-appstream-appblockbuilder-accessendpoints)" : {{[ AccessEndpoint, ... ]}},
+      "[AppBlockArns](#cfn-appstream-appblockbuilder-appblockarns)" : {{[ String, ... ]}},
+      "[Description](#cfn-appstream-appblockbuilder-description)" : {{String}},
+      "[DisplayName](#cfn-appstream-appblockbuilder-displayname)" : {{String}},
+      "[EnableDefaultInternetAccess](#cfn-appstream-appblockbuilder-enabledefaultinternetaccess)" : {{Boolean}},
+      "[IamRoleArn](#cfn-appstream-appblockbuilder-iamrolearn)" : {{String}},
+      "[InstanceType](#cfn-appstream-appblockbuilder-instancetype)" : {{String}},
+      "[Name](#cfn-appstream-appblockbuilder-name)" : {{String}},
+      "[Platform](#cfn-appstream-appblockbuilder-platform)" : {{String}},
+      "[Tags](#cfn-appstream-appblockbuilder-tags)" : {{[ Tag, ... ]}},
+      "[VpcConfig](#cfn-appstream-appblockbuilder-vpcconfig)" : {{VpcConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appstream-appblockbuilder-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppStream::AppBlockBuilder
 Properties:
-  AccessEndpoints:
-    - AccessEndpoint
-  AppBlockArns:
-    - String
-  Description: String
-  DisplayName: String
-  EnableDefaultInternetAccess: Boolean
-  IamRoleArn: String
-  InstanceType: String
-  Name: String
-  Platform: String
-  Tags:
-    - Tag
-  VpcConfig:
-    VpcConfig
-
+  [AccessEndpoints](#cfn-appstream-appblockbuilder-accessendpoints): {{
+    - AccessEndpoint}}
+  [AppBlockArns](#cfn-appstream-appblockbuilder-appblockarns): {{
+    - String}}
+  [Description](#cfn-appstream-appblockbuilder-description): {{String}}
+  [DisplayName](#cfn-appstream-appblockbuilder-displayname): {{String}}
+  [EnableDefaultInternetAccess](#cfn-appstream-appblockbuilder-enabledefaultinternetaccess): {{Boolean}}
+  [IamRoleArn](#cfn-appstream-appblockbuilder-iamrolearn): {{String}}
+  [InstanceType](#cfn-appstream-appblockbuilder-instancetype): {{String}}
+  [Name](#cfn-appstream-appblockbuilder-name): {{String}}
+  [Platform](#cfn-appstream-appblockbuilder-platform): {{String}}
+  [Tags](#cfn-appstream-appblockbuilder-tags): {{
+    - Tag}}
+  [VpcConfig](#cfn-appstream-appblockbuilder-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-appstream-appblockbuilder-properties"></a>
 
-`AccessEndpoints`
-
+`AccessEndpoints`  <a name="cfn-appstream-appblockbuilder-accessendpoints"></a>
 The access endpoints of the app block builder.
+*Required*: No
+*Type*: Array of [AccessEndpoint](aws-properties-appstream-appblockbuilder-accessendpoint.md)
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AccessEndpoint](aws-properties-appstream-appblockbuilder-accessendpoint.md)
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AppBlockArns`
-
+`AppBlockArns`  <a name="cfn-appstream-appblockbuilder-appblockarns"></a>
 The ARN of the app block.
+*Maximum*: `1`
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1`
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-appstream-appblockbuilder-description"></a>
 The description of the app block builder.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-appstream-appblockbuilder-displayname"></a>
 The display name of the app block builder.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableDefaultInternetAccess`
-
+`EnableDefaultInternetAccess`  <a name="cfn-appstream-appblockbuilder-enabledefaultinternetaccess"></a>
 Indicates whether default internet access is enabled for the app block builder.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IamRoleArn`
-
+`IamRoleArn`  <a name="cfn-appstream-appblockbuilder-iamrolearn"></a>
 The ARN of the IAM role that is applied to the app block builder.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceType`
-
+`InstanceType`  <a name="cfn-appstream-appblockbuilder-instancetype"></a>
 The instance type of the app block builder.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-appstream-appblockbuilder-name"></a>
 The name of the app block builder.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Platform`
-
+`Platform`  <a name="cfn-appstream-appblockbuilder-platform"></a>
 The platform of the app block builder.
+*Allowed values*: `WINDOWS_SERVER_2019`
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `WINDOWS_SERVER_2019`
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-appstream-appblockbuilder-tags"></a>
 The tags of the app block builder.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appstream-appblockbuilder-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appstream-appblockbuilder-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfig`
-
+`VpcConfig`  <a name="cfn-appstream-appblockbuilder-vpcconfig"></a>
 The VPC configuration for the app block builder.
-
-_Required_: Yes
-
-_Type_: [VpcConfig](aws-properties-appstream-appblockbuilder-vpcconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: [VpcConfig](aws-properties-appstream-appblockbuilder-vpcconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appstream-appblockbuilder-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appstream-appblockbuilder-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the `Name` of the app block builder, such as
-`abcdefAppBlockBuilder`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `Name` of the app block builder, such as `abcdefAppBlockBuilder`.
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-appstream-appblockbuilder-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-appstream-appblockbuilder-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the app block builder.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The time when the app block builder was created.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagItems
-
-AccessEndpoint
 
 All content copied from https://docs.aws.amazon.com/.

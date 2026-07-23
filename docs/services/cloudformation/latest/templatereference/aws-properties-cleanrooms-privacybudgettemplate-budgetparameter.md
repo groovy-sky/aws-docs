@@ -2,82 +2,60 @@
 title: "AWS::CleanRooms::PrivacyBudgetTemplate BudgetParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::PrivacyBudgetTemplate BudgetParameter
+<a name="aws-properties-cleanrooms-privacybudgettemplate-budgetparameter"></a>
 
 Individual budget parameter configuration that defines specific budget allocation settings for access budgets.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-privacybudgettemplate-budgetparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-privacybudgettemplate-budgetparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoRefresh" : String,
-  "Budget" : Integer,
-  "Type" : String
+  "[AutoRefresh](#cfn-cleanrooms-privacybudgettemplate-budgetparameter-autorefresh)" : {{String}},
+  "[Budget](#cfn-cleanrooms-privacybudgettemplate-budgetparameter-budget)" : {{Integer}},
+  "[Type](#cfn-cleanrooms-privacybudgettemplate-budgetparameter-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-privacybudgettemplate-budgetparameter-syntax.yaml"></a>
 
-```yaml
-
-  AutoRefresh: String
-  Budget: Integer
-  Type: String
-
+```
+  [AutoRefresh](#cfn-cleanrooms-privacybudgettemplate-budgetparameter-autorefresh): {{String}}
+  [Budget](#cfn-cleanrooms-privacybudgettemplate-budgetparameter-budget): {{Integer}}
+  [Type](#cfn-cleanrooms-privacybudgettemplate-budgetparameter-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-privacybudgettemplate-budgetparameter-properties"></a>
 
-`AutoRefresh`
-
+`AutoRefresh`  <a name="cfn-cleanrooms-privacybudgettemplate-budgetparameter-autorefresh"></a>
 Whether this individual budget parameter automatically refreshes when the budget period resets.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Budget`
-
+`Budget`  <a name="cfn-cleanrooms-privacybudgettemplate-budgetparameter-budget"></a>
 The budget allocation amount for this specific parameter.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-cleanrooms-privacybudgettemplate-budgetparameter-type"></a>
 The type of budget parameter being configured.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CALENDAR_DAY | CALENDAR_MONTH | CALENDAR_WEEK | LIFETIME`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CleanRooms::PrivacyBudgetTemplate
-
-Parameters
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CALENDAR_DAY | CALENDAR_MONTH | CALENDAR_WEEK | LIFETIME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

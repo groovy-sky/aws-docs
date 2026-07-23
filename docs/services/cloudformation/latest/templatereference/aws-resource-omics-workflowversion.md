@@ -2,398 +2,270 @@
 title: "AWS::Omics::WorkflowVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::WorkflowVersion
+<a name="aws-resource-omics-workflowversion"></a>
 
 Creates a new workflow version for the workflow that you specify with the `workflowId` parameter.
 
-When you create a new version of a workflow, you need to specify the configuration
-for the new version. It doesn't inherit any configuration values from the workflow.
+When you create a new version of a workflow, you need to specify the configuration for the new version. It doesn't inherit any configuration values from the workflow.
 
-Provide a version name that is unique for
-this workflow. You cannot change the name after HealthOmics creates the version.
+Provide a version name that is unique for this workflow. You cannot change the name after HealthOmics creates the version.
 
-###### Note
+**Note**
+Don't include any personally identifiable information (PII) in the version name. Version names appear in the workflow version ARN.
 
-Don't include any personally identifiable information (PII) in the version name. Version names appear in
-the workflow version ARN.
-
-For more information, see [Workflow versioning in AWS HealthOmics](../../../omics/latest/dev/workflow-versions.md) in the _AWS HealthOmics User Guide_.
+For more information, see [Workflow versioning in AWS HealthOmics](https://docs.aws.amazon.com/omics/latest/dev/workflow-versions.html) in the *AWS HealthOmics User Guide*.
 
 ## Syntax
+<a name="aws-resource-omics-workflowversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-omics-workflowversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Omics::WorkflowVersion",
   "Properties" : {
-      "Accelerators" : String,
-      "ContainerRegistryMap" : ContainerRegistryMap,
-      "ContainerRegistryMapUri" : String,
-      "DefinitionRepository" : DefinitionRepository,
-      "DefinitionUri" : String,
-      "Description" : String,
-      "Engine" : String,
-      "Main" : String,
-      "ParameterTemplate" : {Key: Value, ...},
-      "ParameterTemplatePath" : String,
-      "readmeMarkdown" : String,
-      "readmePath" : String,
-      "readmeUri" : String,
-      "StorageCapacity" : Number,
-      "StorageType" : String,
-      "Tags" : {Key: Value, ...},
-      "VersionName" : String,
-      "WorkflowBucketOwnerId" : String,
-      "WorkflowId" : String
+      "[Accelerators](#cfn-omics-workflowversion-accelerators)" : {{String}},
+      "[ContainerRegistryMap](#cfn-omics-workflowversion-containerregistrymap)" : {{ContainerRegistryMap}},
+      "[ContainerRegistryMapUri](#cfn-omics-workflowversion-containerregistrymapuri)" : {{String}},
+      "[DefinitionRepository](#cfn-omics-workflowversion-definitionrepository)" : {{DefinitionRepository}},
+      "[DefinitionUri](#cfn-omics-workflowversion-definitionuri)" : {{String}},
+      "[Description](#cfn-omics-workflowversion-description)" : {{String}},
+      "[Engine](#cfn-omics-workflowversion-engine)" : {{String}},
+      "[Main](#cfn-omics-workflowversion-main)" : {{String}},
+      "[ParameterTemplate](#cfn-omics-workflowversion-parametertemplate)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[ParameterTemplatePath](#cfn-omics-workflowversion-parametertemplatepath)" : {{String}},
+      "[readmeMarkdown](#cfn-omics-workflowversion-readmemarkdown)" : {{String}},
+      "[readmePath](#cfn-omics-workflowversion-readmepath)" : {{String}},
+      "[readmeUri](#cfn-omics-workflowversion-readmeuri)" : {{String}},
+      "[StorageCapacity](#cfn-omics-workflowversion-storagecapacity)" : {{Number}},
+      "[StorageType](#cfn-omics-workflowversion-storagetype)" : {{String}},
+      "[Tags](#cfn-omics-workflowversion-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[VersionName](#cfn-omics-workflowversion-versionname)" : {{String}},
+      "[WorkflowBucketOwnerId](#cfn-omics-workflowversion-workflowbucketownerid)" : {{String}},
+      "[WorkflowId](#cfn-omics-workflowversion-workflowid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-omics-workflowversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Omics::WorkflowVersion
 Properties:
-  Accelerators: String
-  ContainerRegistryMap:
-    ContainerRegistryMap
-  ContainerRegistryMapUri: String
-  DefinitionRepository:
-    DefinitionRepository
-  DefinitionUri: String
-  Description: String
-  Engine: String
-  Main: String
-  ParameterTemplate:
-    Key: Value
-  ParameterTemplatePath: String
-  readmeMarkdown: String
-  readmePath: String
-  readmeUri: String
-  StorageCapacity: Number
-  StorageType: String
-  Tags:
-    Key: Value
-  VersionName: String
-  WorkflowBucketOwnerId: String
-  WorkflowId: String
-
+  [Accelerators](#cfn-omics-workflowversion-accelerators): {{String}}
+  [ContainerRegistryMap](#cfn-omics-workflowversion-containerregistrymap): {{
+    ContainerRegistryMap}}
+  [ContainerRegistryMapUri](#cfn-omics-workflowversion-containerregistrymapuri): {{String}}
+  [DefinitionRepository](#cfn-omics-workflowversion-definitionrepository): {{
+    DefinitionRepository}}
+  [DefinitionUri](#cfn-omics-workflowversion-definitionuri): {{String}}
+  [Description](#cfn-omics-workflowversion-description): {{String}}
+  [Engine](#cfn-omics-workflowversion-engine): {{String}}
+  [Main](#cfn-omics-workflowversion-main): {{String}}
+  [ParameterTemplate](#cfn-omics-workflowversion-parametertemplate): {{
+    {{Key}}: {{Value}}}}
+  [ParameterTemplatePath](#cfn-omics-workflowversion-parametertemplatepath): {{String}}
+  [readmeMarkdown](#cfn-omics-workflowversion-readmemarkdown): {{String}}
+  [readmePath](#cfn-omics-workflowversion-readmepath): {{String}}
+  [readmeUri](#cfn-omics-workflowversion-readmeuri): {{String}}
+  [StorageCapacity](#cfn-omics-workflowversion-storagecapacity): {{Number}}
+  [StorageType](#cfn-omics-workflowversion-storagetype): {{String}}
+  [Tags](#cfn-omics-workflowversion-tags): {{
+    {{Key}}: {{Value}}}}
+  [VersionName](#cfn-omics-workflowversion-versionname): {{String}}
+  [WorkflowBucketOwnerId](#cfn-omics-workflowversion-workflowbucketownerid): {{String}}
+  [WorkflowId](#cfn-omics-workflowversion-workflowid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-omics-workflowversion-properties"></a>
 
-`Accelerators`
-
+`Accelerators`  <a name="cfn-omics-workflowversion-accelerators"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `GPU`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ContainerRegistryMap`  <a name="cfn-omics-workflowversion-containerregistrymap"></a>
+Use a container registry map to specify mappings between the ECR private repository and one or more upstream registries. For more information, see [Container images](https://docs.aws.amazon.com/omics/latest/dev/workflows-ecr.html) in the *AWS HealthOmics User Guide*.
+*Required*: No
+*Type*: [ContainerRegistryMap](aws-properties-omics-workflowversion-containerregistrymap.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `GPU`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContainerRegistryMap`
-
-Use a container registry map to specify mappings between the ECR
-private repository and one or more upstream registries.
-For more information, see [Container images](../../../omics/latest/dev/workflows-ecr.md) in the _AWS HealthOmics User Guide_.
-
-_Required_: No
-
-_Type_: [ContainerRegistryMap](aws-properties-omics-workflowversion-containerregistrymap.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContainerRegistryMapUri`
-
+`ContainerRegistryMapUri`  <a name="cfn-omics-workflowversion-containerregistrymapuri"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `750`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `750`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DefinitionRepository`
-
+`DefinitionRepository`  <a name="cfn-omics-workflowversion-definitionrepository"></a>
 Contains information about a source code repository that hosts the workflow definition files.
+*Required*: No
+*Type*: [DefinitionRepository](aws-properties-omics-workflowversion-definitionrepository.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DefinitionRepository](aws-properties-omics-workflowversion-definitionrepository.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DefinitionUri`
-
+`DefinitionUri`  <a name="cfn-omics-workflowversion-definitionuri"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-omics-workflowversion-description"></a>
 The description of the workflow version.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Engine`
-
+`Engine`  <a name="cfn-omics-workflowversion-engine"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `WDL | NEXTFLOW | CWL`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `WDL | NEXTFLOW | CWL`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Main`
-
+`Main`  <a name="cfn-omics-workflowversion-main"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterTemplate`
-
+`ParameterTemplate`  <a name="cfn-omics-workflowversion-parametertemplate"></a>
 Property description not available.
+*Required*: No
+*Type*: Object of [WorkflowParameter](aws-properties-omics-workflowversion-workflowparameter.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Object of [WorkflowParameter](aws-properties-omics-workflowversion-workflowparameter.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterTemplatePath`
-
+`ParameterTemplatePath`  <a name="cfn-omics-workflowversion-parametertemplatepath"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S]+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S]+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`readmeMarkdown`
-
+`readmeMarkdown`  <a name="cfn-omics-workflowversion-readmemarkdown"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`readmePath`
-
+`readmePath`  <a name="cfn-omics-workflowversion-readmepath"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`readmeUri`
-
+`readmeUri`  <a name="cfn-omics-workflowversion-readmeuri"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^s3://([a-z0-9][a-z0-9-.]{1,61}[a-z0-9])/((.{1,1024}))$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^s3://([a-z0-9][a-z0-9-.]{1,61}[a-z0-9])/((.{1,1024}))$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StorageCapacity`
-
+`StorageCapacity`  <a name="cfn-omics-workflowversion-storagecapacity"></a>
 Property description not available.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageType`
-
+`StorageType`  <a name="cfn-omics-workflowversion-storagetype"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `STATIC | DYNAMIC`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STATIC | DYNAMIC`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-omics-workflowversion-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionName`
-
+`VersionName`  <a name="cfn-omics-workflowversion-versionname"></a>
 The name of the workflow version.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9\-\._]*$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9\-\._]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WorkflowBucketOwnerId`
-
+`WorkflowBucketOwnerId`  <a name="cfn-omics-workflowversion-workflowbucketownerid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `1`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `1`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WorkflowId`
-
+`WorkflowId`  <a name="cfn-omics-workflowversion-workflowid"></a>
 The workflow's ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `18`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9]+$`
+*Minimum*: `1`
+*Maximum*: `18`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-omics-workflowversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-omics-workflowversion-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-omics-workflowversion-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-omics-workflowversion-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 ARN of the workflow version.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The creation time of the workflow version.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the workflow version.
 
-`Type`
-
+`Type`  <a name="Type-fn::getatt"></a>
 The type of the workflow version.
 
-`Uuid`
-
+`Uuid`  <a name="Uuid-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkflowParameter
-
-ContainerRegistryMap
 
 All content copied from https://docs.aws.amazon.com/.

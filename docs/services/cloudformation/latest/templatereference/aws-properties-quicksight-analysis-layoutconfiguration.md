@@ -2,81 +2,62 @@
 title: "AWS::QuickSight::Analysis LayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LayoutConfiguration
+<a name="aws-properties-quicksight-analysis-layoutconfiguration"></a>
 
 The configuration that determines what the type of layout will be used on a sheet.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-layoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-layoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FreeFormLayout" : FreeFormLayoutConfiguration,
-  "GridLayout" : GridLayoutConfiguration,
-  "SectionBasedLayout" : SectionBasedLayoutConfiguration
+  "[FreeFormLayout](#cfn-quicksight-analysis-layoutconfiguration-freeformlayout)" : {{FreeFormLayoutConfiguration}},
+  "[GridLayout](#cfn-quicksight-analysis-layoutconfiguration-gridlayout)" : {{GridLayoutConfiguration}},
+  "[SectionBasedLayout](#cfn-quicksight-analysis-layoutconfiguration-sectionbasedlayout)" : {{SectionBasedLayoutConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-layoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FreeFormLayout:
-    FreeFormLayoutConfiguration
-  GridLayout:
-    GridLayoutConfiguration
-  SectionBasedLayout:
-    SectionBasedLayoutConfiguration
-
+```
+  [FreeFormLayout](#cfn-quicksight-analysis-layoutconfiguration-freeformlayout): {{
+    FreeFormLayoutConfiguration}}
+  [GridLayout](#cfn-quicksight-analysis-layoutconfiguration-gridlayout): {{
+    GridLayoutConfiguration}}
+  [SectionBasedLayout](#cfn-quicksight-analysis-layoutconfiguration-sectionbasedlayout): {{
+    SectionBasedLayoutConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-layoutconfiguration-properties"></a>
 
-`FreeFormLayout`
-
+`FreeFormLayout`  <a name="cfn-quicksight-analysis-layoutconfiguration-freeformlayout"></a>
 A free-form is optimized for a fixed width and has more control over the exact placement of layout elements.
+*Required*: No
+*Type*: [FreeFormLayoutConfiguration](aws-properties-quicksight-analysis-freeformlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FreeFormLayoutConfiguration](aws-properties-quicksight-analysis-freeformlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GridLayout`
-
+`GridLayout`  <a name="cfn-quicksight-analysis-layoutconfiguration-gridlayout"></a>
 A type of layout that can be used on a sheet. In a grid layout, visuals snap to a grid with standard spacing and alignment. Dashboards are displayed as designed, with options to fit to screen or view at actual size. A grid layout can be configured to behave in one of two ways when the viewport is resized: `FIXED` or `RESPONSIVE`.
+*Required*: No
+*Type*: [GridLayoutConfiguration](aws-properties-quicksight-analysis-gridlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GridLayoutConfiguration](aws-properties-quicksight-analysis-gridlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SectionBasedLayout`
-
+`SectionBasedLayout`  <a name="cfn-quicksight-analysis-layoutconfiguration-sectionbasedlayout"></a>
 A section based layout organizes visuals into multiple sections and has customized header, footer and page break.
-
-_Required_: No
-
-_Type_: [SectionBasedLayoutConfiguration](aws-properties-quicksight-analysis-sectionbasedlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Layout
-
-LegendOptions
+*Required*: No
+*Type*: [SectionBasedLayoutConfiguration](aws-properties-quicksight-analysis-sectionbasedlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

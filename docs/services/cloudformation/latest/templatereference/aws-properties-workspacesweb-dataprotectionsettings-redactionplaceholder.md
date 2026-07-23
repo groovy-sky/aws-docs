@@ -2,72 +2,53 @@
 title: "AWS::WorkSpacesWeb::DataProtectionSettings RedactionPlaceHolder"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::DataProtectionSettings RedactionPlaceHolder
+<a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder"></a>
 
 The redaction placeholder that will replace the redacted text in session.
 
 ## Syntax
+<a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder-syntax.json"></a>
 
-```json
-
+```
 {
-  "RedactionPlaceHolderText" : String,
-  "RedactionPlaceHolderType" : String
+  "[RedactionPlaceHolderText](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertext)" : {{String}},
+  "[RedactionPlaceHolderType](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder-syntax.yaml"></a>
 
-```yaml
-
-  RedactionPlaceHolderText: String
-  RedactionPlaceHolderType: String
-
+```
+  [RedactionPlaceHolderText](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertext): {{String}}
+  [RedactionPlaceHolderType](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder-properties"></a>
 
-`RedactionPlaceHolderText`
-
+`RedactionPlaceHolderText`  <a name="cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertext"></a>
 The redaction placeholder text that will replace the redacted text in session for the custom text redaction placeholder type.
+*Required*: No
+*Type*: String
+*Pattern*: `^[*_\-\d\w]+$`
+*Minimum*: `1`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[*_\-\d\w]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedactionPlaceHolderType`
-
+`RedactionPlaceHolderType`  <a name="cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertype"></a>
 The redaction placeholder type that will replace the redacted text in session.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CustomText`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InlineRedactionPattern
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CustomText`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

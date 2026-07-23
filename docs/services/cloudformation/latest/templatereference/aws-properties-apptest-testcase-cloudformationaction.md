@@ -2,68 +2,51 @@
 title: "AWS::AppTest::TestCase CloudFormationAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase CloudFormationAction
+<a name="aws-properties-apptest-testcase-cloudformationaction"></a>
 
 Specifies the CloudFormation action.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-cloudformationaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-cloudformationaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActionType" : String,
-  "Resource" : String
+  "[ActionType](#cfn-apptest-testcase-cloudformationaction-actiontype)" : {{String}},
+  "[Resource](#cfn-apptest-testcase-cloudformationaction-resource)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-cloudformationaction-syntax.yaml"></a>
 
-```yaml
-
-  ActionType: String
-  Resource: String
-
+```
+  [ActionType](#cfn-apptest-testcase-cloudformationaction-actiontype): {{String}}
+  [Resource](#cfn-apptest-testcase-cloudformationaction-resource): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-cloudformationaction-properties"></a>
 
-`ActionType`
-
+`ActionType`  <a name="cfn-apptest-testcase-cloudformationaction-actiontype"></a>
 The action type of the CloudFormation action.
+*Required*: No
+*Type*: String
+*Allowed values*: `Create | Delete`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Create | Delete`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Resource`
-
+`Resource`  <a name="cfn-apptest-testcase-cloudformationaction-resource"></a>
 The resource of the CloudFormation action.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\S{1,1000}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Batch
-
-CompareAction
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\S{1,1000}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

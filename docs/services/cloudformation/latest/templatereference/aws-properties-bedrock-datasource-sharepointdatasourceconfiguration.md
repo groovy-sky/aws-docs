@@ -2,67 +2,51 @@
 title: "AWS::Bedrock::DataSource SharePointDataSourceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource SharePointDataSourceConfiguration
+<a name="aws-properties-bedrock-datasource-sharepointdatasourceconfiguration"></a>
 
-The configuration information to connect to SharePoint as your data source.
+The configuration information to connect to SharePoint as your data source for self-managed knowledge bases.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-sharepointdatasourceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-sharepointdatasourceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CrawlerConfiguration" : SharePointCrawlerConfiguration,
-  "SourceConfiguration" : SharePointSourceConfiguration
+  "[CrawlerConfiguration](#cfn-bedrock-datasource-sharepointdatasourceconfiguration-crawlerconfiguration)" : {{SharePointCrawlerConfiguration}},
+  "[SourceConfiguration](#cfn-bedrock-datasource-sharepointdatasourceconfiguration-sourceconfiguration)" : {{SharePointSourceConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-sharepointdatasourceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CrawlerConfiguration:
-    SharePointCrawlerConfiguration
-  SourceConfiguration:
-    SharePointSourceConfiguration
-
+```
+  [CrawlerConfiguration](#cfn-bedrock-datasource-sharepointdatasourceconfiguration-crawlerconfiguration): {{
+    SharePointCrawlerConfiguration}}
+  [SourceConfiguration](#cfn-bedrock-datasource-sharepointdatasourceconfiguration-sourceconfiguration): {{
+    SharePointSourceConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-sharepointdatasourceconfiguration-properties"></a>
 
-`CrawlerConfiguration`
+`CrawlerConfiguration`  <a name="cfn-bedrock-datasource-sharepointdatasourceconfiguration-crawlerconfiguration"></a>
+The configuration of the SharePoint content. For example, configuring specific types of SharePoint content.
+*Required*: No
+*Type*: [SharePointCrawlerConfiguration](aws-properties-bedrock-datasource-sharepointcrawlerconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The configuration of the SharePoint content. For example, configuring
-specific types of SharePoint content.
-
-_Required_: No
-
-_Type_: [SharePointCrawlerConfiguration](aws-properties-bedrock-datasource-sharepointcrawlerconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceConfiguration`
-
+`SourceConfiguration`  <a name="cfn-bedrock-datasource-sharepointdatasourceconfiguration-sourceconfiguration"></a>
 The endpoint information to connect to your SharePoint data source.
-
-_Required_: Yes
-
-_Type_: [SharePointSourceConfiguration](aws-properties-bedrock-datasource-sharepointsourceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SharePointCrawlerConfiguration
-
-SharePointSourceConfiguration
+*Required*: Yes
+*Type*: [SharePointSourceConfiguration](aws-properties-bedrock-datasource-sharepointsourceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

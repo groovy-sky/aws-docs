@@ -2,66 +2,50 @@
 title: "AWS::EMRContainers::SecurityConfiguration S3EncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration S3EncryptionConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-s3encryptionconfiguration"></a>
 
-The `S3EncryptionConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
+<a name="aws-properties-emrcontainers-securityconfiguration-s3encryptionconfiguration-description"></a>The `S3EncryptionConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-s3encryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-s3encryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionOption" : String,
-  "KMSKeyId" : String
+  "[EncryptionOption](#cfn-emrcontainers-securityconfiguration-s3encryptionconfiguration-encryptionoption)" : {{String}},
+  "[KMSKeyId](#cfn-emrcontainers-securityconfiguration-s3encryptionconfiguration-kmskeyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-s3encryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionOption: String
-  KMSKeyId: String
-
+```
+  [EncryptionOption](#cfn-emrcontainers-securityconfiguration-s3encryptionconfiguration-encryptionoption): {{String}}
+  [KMSKeyId](#cfn-emrcontainers-securityconfiguration-s3encryptionconfiguration-kmskeyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-s3encryptionconfiguration-properties"></a>
 
-`EncryptionOption`
-
+`EncryptionOption`  <a name="cfn-emrcontainers-securityconfiguration-s3encryptionconfiguration-encryptionoption"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `SSE-S3 | SSE-KMS | CSE-KMS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SSE-S3 | SSE-KMS | CSE-KMS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KMSKeyId`
-
+`KMSKeyId`  <a name="cfn-emrcontainers-securityconfiguration-s3encryptionconfiguration-kmskeyid"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LocalDiskEncryptionConfiguration
-
-SecureNamespaceInfo
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

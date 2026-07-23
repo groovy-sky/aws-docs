@@ -2,84 +2,60 @@
 title: "AWS::ECS::TaskDefinition FSxWindowsFileServerVolumeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition FSxWindowsFileServerVolumeConfiguration
+<a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration"></a>
 
-This parameter is specified when you're using [Amazon FSx for Windows File\
-Server](../../../fsx/latest/windowsguide/what-is.md) file system for task storage.
+This parameter is specified when you're using [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html) file system for task storage.
 
-For more information and the input format, see [Amazon FSx for Windows File\
-Server volumes](../../../amazonecs/latest/developerguide/wfsx-volumes.md) in the _Amazon Elastic Container Service Developer_
-_Guide_.
+For more information and the input format, see [Amazon FSx for Windows File Server volumes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-volumes.html) in the *Amazon Elastic Container Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationConfig" : FSxAuthorizationConfig,
-  "FileSystemId" : String,
-  "RootDirectory" : String
+  "[AuthorizationConfig](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-authorizationconfig)" : {{FSxAuthorizationConfig}},
+  "[FileSystemId](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-filesystemid)" : {{String}},
+  "[RootDirectory](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-rootdirectory)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationConfig:
-    FSxAuthorizationConfig
-  FileSystemId: String
-  RootDirectory: String
-
+```
+  [AuthorizationConfig](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-authorizationconfig): {{
+    FSxAuthorizationConfig}}
+  [FileSystemId](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-filesystemid): {{String}}
+  [RootDirectory](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-rootdirectory): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-properties"></a>
 
-`AuthorizationConfig`
+`AuthorizationConfig`  <a name="cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-authorizationconfig"></a>
+The authorization configuration details for the Amazon FSx for Windows File Server file system.
+*Required*: No
+*Type*: [FSxAuthorizationConfig](aws-properties-ecs-taskdefinition-fsxauthorizationconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The authorization configuration details for the Amazon FSx for Windows File Server
-file system.
-
-_Required_: No
-
-_Type_: [FSxAuthorizationConfig](aws-properties-ecs-taskdefinition-fsxauthorizationconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-filesystemid"></a>
 The Amazon FSx for Windows File Server file system ID to use.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RootDirectory`
-
-The directory within the Amazon FSx for Windows File Server file system to mount as
-the root directory inside the host.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FSxAuthorizationConfig
-
-HealthCheck
+`RootDirectory`  <a name="cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-rootdirectory"></a>
+The directory within the Amazon FSx for Windows File Server file system to mount as the root directory inside the host.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

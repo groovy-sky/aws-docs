@@ -2,66 +2,51 @@
 title: "AWS::ConnectCampaignsV2::Campaign TimeWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign TimeWindow
+<a name="aws-properties-connectcampaignsv2-campaign-timewindow"></a>
 
 Contains information about a time window.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-timewindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-timewindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "OpenHours" : OpenHours,
-  "RestrictedPeriods" : RestrictedPeriods
+  "[OpenHours](#cfn-connectcampaignsv2-campaign-timewindow-openhours)" : {{OpenHours}},
+  "[RestrictedPeriods](#cfn-connectcampaignsv2-campaign-timewindow-restrictedperiods)" : {{RestrictedPeriods}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-timewindow-syntax.yaml"></a>
 
-```yaml
-
-  OpenHours:
-    OpenHours
-  RestrictedPeriods:
-    RestrictedPeriods
-
+```
+  [OpenHours](#cfn-connectcampaignsv2-campaign-timewindow-openhours): {{
+    OpenHours}}
+  [RestrictedPeriods](#cfn-connectcampaignsv2-campaign-timewindow-restrictedperiods): {{
+    RestrictedPeriods}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-timewindow-properties"></a>
 
-`OpenHours`
-
+`OpenHours`  <a name="cfn-connectcampaignsv2-campaign-timewindow-openhours"></a>
 The open hours configuration.
+*Required*: Yes
+*Type*: [OpenHours](aws-properties-connectcampaignsv2-campaign-openhours.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [OpenHours](aws-properties-connectcampaignsv2-campaign-openhours.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RestrictedPeriods`
-
+`RestrictedPeriods`  <a name="cfn-connectcampaignsv2-campaign-timewindow-restrictedperiods"></a>
 The restricted periods configuration.
-
-_Required_: No
-
-_Type_: [RestrictedPeriods](aws-properties-connectcampaignsv2-campaign-restrictedperiods.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeRange
-
-WhatsAppChannelSubtypeConfig
+*Required*: No
+*Type*: [RestrictedPeriods](aws-properties-connectcampaignsv2-campaign-restrictedperiods.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

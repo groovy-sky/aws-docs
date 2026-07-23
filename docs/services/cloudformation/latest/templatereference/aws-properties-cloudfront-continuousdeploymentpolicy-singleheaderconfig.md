@@ -2,73 +2,53 @@
 title: "AWS::CloudFront::ContinuousDeploymentPolicy SingleHeaderConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ContinuousDeploymentPolicy SingleHeaderConfig
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderconfig"></a>
 
 Determines which HTTP requests are sent to the staging distribution.
 
 ## Syntax
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Header" : String,
-  "Value" : String
+  "[Header](#cfn-cloudfront-continuousdeploymentpolicy-singleheaderconfig-header)" : {{String}},
+  "[Value](#cfn-cloudfront-continuousdeploymentpolicy-singleheaderconfig-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderconfig-syntax.yaml"></a>
 
-```yaml
-
-  Header: String
-  Value: String
-
+```
+  [Header](#cfn-cloudfront-continuousdeploymentpolicy-singleheaderconfig-header): {{String}}
+  [Value](#cfn-cloudfront-continuousdeploymentpolicy-singleheaderconfig-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderconfig-properties"></a>
 
-`Header`
+`Header`  <a name="cfn-cloudfront-continuousdeploymentpolicy-singleheaderconfig-header"></a>
+The request header name that you want CloudFront to send to your staging distribution. The header must contain the prefix `aws-cf-cd-`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The request header name that you want CloudFront to send to your staging
-distribution. The header must contain the prefix `aws-cf-cd-`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-cloudfront-continuousdeploymentpolicy-singleheaderconfig-value"></a>
 The request header value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1783`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SessionStickinessConfig
-
-SingleHeaderPolicyConfig
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1783`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

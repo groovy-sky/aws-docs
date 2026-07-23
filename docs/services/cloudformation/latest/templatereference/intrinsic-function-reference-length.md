@@ -1,74 +1,68 @@
 ---
-title: "Fn::Length"
+title: "`Fn::Length`"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `Fn::Length`
+<a name="intrinsic-function-reference-length"></a>
 
-The intrinsic function `Fn::Length` returns the number of elements within an
-array or an intrinsic function that returns an array.
+The intrinsic function `Fn::Length` returns the number of elements within an array or an intrinsic function that returns an array.
 
-###### Important
-
-You must use the [AWS::LanguageExtensions transform](transform-aws-languageextensions.md) to use the
-`Fn::Length` intrinsic function.
+**Important**
+You must use the [`AWS::LanguageExtensions` transform](transform-aws-languageextensions.md) to use the `Fn::Length` intrinsic function.
 
 ## Declaration
+<a name="length-declaration"></a>
 
 ### JSON
+<a name="intrinsic-function-reference-length-syntax.json"></a>
 
-```json
-
-{ "Fn::Length" : IntrinsicFunction }
+```
+{ "Fn::Length" : {{IntrinsicFunction}} }
 ```
 
-```json
-
-{ "Fn::Length" : Array }
+```
+{ "Fn::Length" : {{Array}} }
 ```
 
 ### YAML
+<a name="intrinsic-function-reference-length-syntax.yaml"></a>
 
-```yaml
-
-Fn::Length : IntrinsicFunction
+```
+Fn::Length : {{IntrinsicFunction}}
 ```
 
-```yaml
-
-Fn::Length : Array
+```
+Fn::Length : {{Array}}
 ```
 
 ## Parameters
+<a name="length-parameters"></a>
 
 `IntrinsicFunction`
-
-The intrinsic function that returns an array that you want to return a
-number of elements from.
+The intrinsic function that returns an array that you want to return a number of elements from.
 
 `Array`
-
 The array you want to return the number of elements from.
 
 ## Return value
+<a name="intrinsic-function-reference-length-return"></a>
 
-The number of elements in the intrinsic function that returns an array or in the array
-passed to the intrinsic function.
+The number of elements in the intrinsic function that returns an array or in the array passed to the intrinsic function.
 
 ## Examples
+<a name="intrinsic-function-reference-length-examples"></a>
 
 ### Return the number of elements in an intrinsic function that returns an array
+<a name="intrinsic-function-reference-length-example-subsection"></a>
 
-This example snippet returns the number of elements in an intrinsic function that
-returns an array. The function returns 3.
+This example snippet returns the number of elements in an intrinsic function that returns an array. The function returns 3.
 
 #### JSON
+<a name="intrinsic-function-reference-length-example.json"></a>
 
-```json
-
+```
 {
 //...
     "Transform": "AWS::LanguageExtensions"
@@ -81,9 +75,9 @@ returns an array. The function returns 3.
 ```
 
 #### YAML
+<a name="intrinsic-function-reference-legnth-example.yaml"></a>
 
-```yaml
-
+```
 Transform: 'AWS::LanguageExtensions'
 #...
   Fn::Length:
@@ -92,16 +86,14 @@ Transform: 'AWS::LanguageExtensions'
 ```
 
 ### Return the number of elements in a Ref intrinsic function that refers to a list parameter type
+<a name="intrinsic-function-reference-length-example2"></a>
 
-This example snippet returns the number of elements in a `Ref`
-intrinsic function that refers to a list parameter type. If the parameter with the
-name `ListParameter` is a list with 3 elements, the function returns
-3.
+This example snippet returns the number of elements in a `Ref` intrinsic function that refers to a list parameter type. If the parameter with the name `ListParameter` is a list with 3 elements, the function returns 3.
 
 #### JSON
+<a name="intrinsic-function-reference-length-example2.json"></a>
 
-```json
-
+```
 {
 //...
     "Transform": "AWS::LanguageExtensions"
@@ -114,9 +106,9 @@ name `ListParameter` is a list with 3 elements, the function returns
 ```
 
 #### YAML
+<a name="intrinsic-function-reference-legnth-example2.yaml"></a>
 
-```yaml
-
+```
 Transform: 'AWS::LanguageExtensions'
 #...
   Fn::Length:
@@ -125,31 +117,31 @@ Transform: 'AWS::LanguageExtensions'
 ```
 
 ### Return the number of elements in an array
+<a name="intrinsic-function-reference-length-example3"></a>
 
-This example snippet returns the number of elements in the array passed to the
-intrinsic function. The function returns 3.
+This example snippet returns the number of elements in the array passed to the intrinsic function. The function returns 3.
 
 #### JSON
+<a name="intrinsic-function-reference-length-example3.json"></a>
 
-```json
-
-{
-//...
-    "Transform": "AWS::LanguageExtensions"
-    //...
-        "Fn::Length": [
-            1,
-            {"Ref": "ParameterName"},
-            3
-        ]
-//...
-}
+```
+ 1. {
+ 2. //...
+ 3.     "Transform": "AWS::LanguageExtensions"
+ 4.     //...
+ 5.         "Fn::Length": [
+ 6.             1,
+ 7.             {"Ref": "ParameterName"},
+ 8.             3
+ 9.         ]
+10. //...
+11. }
 ```
 
 #### YAML
+<a name="intrinsic-function-reference-legnth-example3.yaml"></a>
 
-```yaml
-
+```
 Transform: 'AWS::LanguageExtensions'
 #...
   Fn::Length:
@@ -160,34 +152,18 @@ Transform: 'AWS::LanguageExtensions'
 ```
 
 ## Supported functions
+<a name="length-supported-functions"></a>
 
-You can use the following functions in the `Fn::Length` intrinsic function
-or array:
-
-- `Condition Functions`
-
-- `Fn::Base64`
-
-- `Fn::FindInMap`
-
-- `Fn::Join`
-
-- `Fn::Length`
-
-- `Fn::Select`
-
-- `Fn::Split`
-
-- `Fn::Sub`
-
-- `Fn::ToJsonString`
-
-- `Ref`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Fn::Join
-
-Fn::Select
+You can use the following functions in the `Fn::Length` intrinsic function or array:
++ `Condition Functions`
++ `Fn::Base64`
++ `Fn::FindInMap`
++ `Fn::Join`
++ `Fn::Length`
++ `Fn::Select`
++ `Fn::Split`
++ `Fn::Sub`
++ `Fn::ToJsonString`
++ `Ref`
 
 All content copied from https://docs.aws.amazon.com/.

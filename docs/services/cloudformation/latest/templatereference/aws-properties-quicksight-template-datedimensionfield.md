@@ -2,130 +2,89 @@
 title: "AWS::QuickSight::Template DateDimensionField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DateDimensionField
+<a name="aws-properties-quicksight-template-datedimensionfield"></a>
 
 The dimension type field with date type columns.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-datedimensionfield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-datedimensionfield-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnIdentifier,
-  "DateGranularity" : String,
-  "FieldId" : String,
-  "FormatConfiguration" : DateTimeFormatConfiguration,
-  "HierarchyId" : String
+  "[Column](#cfn-quicksight-template-datedimensionfield-column)" : {{ColumnIdentifier}},
+  "[DateGranularity](#cfn-quicksight-template-datedimensionfield-dategranularity)" : {{String}},
+  "[FieldId](#cfn-quicksight-template-datedimensionfield-fieldid)" : {{String}},
+  "[FormatConfiguration](#cfn-quicksight-template-datedimensionfield-formatconfiguration)" : {{DateTimeFormatConfiguration}},
+  "[HierarchyId](#cfn-quicksight-template-datedimensionfield-hierarchyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-datedimensionfield-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnIdentifier
-  DateGranularity: String
-  FieldId: String
-  FormatConfiguration:
-    DateTimeFormatConfiguration
-  HierarchyId: String
-
+```
+  [Column](#cfn-quicksight-template-datedimensionfield-column): {{
+    ColumnIdentifier}}
+  [DateGranularity](#cfn-quicksight-template-datedimensionfield-dategranularity): {{String}}
+  [FieldId](#cfn-quicksight-template-datedimensionfield-fieldid): {{String}}
+  [FormatConfiguration](#cfn-quicksight-template-datedimensionfield-formatconfiguration): {{
+    DateTimeFormatConfiguration}}
+  [HierarchyId](#cfn-quicksight-template-datedimensionfield-hierarchyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-datedimensionfield-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-datedimensionfield-column"></a>
 The column that is used in the `DateDimensionField`.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateGranularity`
-
+`DateGranularity`  <a name="cfn-quicksight-template-datedimensionfield-dategranularity"></a>
 The date granularity of the `DateDimensionField`. Choose one of the following options:
++  `YEAR`
++  `QUARTER`
++  `MONTH`
++  `WEEK`
++  `DAY`
++  `HOUR`
++  `MINUTE`
++  `SECOND`
++  `MILLISECOND`
+*Required*: No
+*Type*: String
+*Allowed values*: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `YEAR`
-
-- `QUARTER`
-
-- `MONTH`
-
-- `WEEK`
-
-- `DAY`
-
-- `HOUR`
-
-- `MINUTE`
-
-- `SECOND`
-
-- `MILLISECOND`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-datedimensionfield-fieldid"></a>
 The custom field ID.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FormatConfiguration`
-
+`FormatConfiguration`  <a name="cfn-quicksight-template-datedimensionfield-formatconfiguration"></a>
 The format configuration of the field.
+*Required*: No
+*Type*: [DateTimeFormatConfiguration](aws-properties-quicksight-template-datetimeformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimeFormatConfiguration](aws-properties-quicksight-template-datetimeformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HierarchyId`
-
+`HierarchyId`  <a name="cfn-quicksight-template-datedimensionfield-hierarchyid"></a>
 The custom hierarchy ID.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateAxisOptions
-
-DateMeasureField
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

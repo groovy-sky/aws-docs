@@ -2,175 +2,137 @@
 title: "AWS::OpenSearchServerless::SecurityConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::SecurityConfig
+<a name="aws-resource-opensearchserverless-securityconfig"></a>
 
-Specifies a security configuration for OpenSearch Serverless. For more information, see [SAML\
-authentication for Amazon OpenSearch Serverless](../../../opensearch-service/latest/developerguide/serverless-saml.md).
+Specifies a security configuration for OpenSearch Serverless. For more information, see [SAML authentication for Amazon OpenSearch Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-saml.html).
 
 ## Syntax
+<a name="aws-resource-opensearchserverless-securityconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-opensearchserverless-securityconfig-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::OpenSearchServerless::SecurityConfig",
   "Properties" : {
-      "Description" : String,
-      "IamFederationOptions" : IamFederationConfigOptions,
-      "IamIdentityCenterOptions" : IamIdentityCenterConfigOptions,
-      "Name" : String,
-      "SamlOptions" : SamlConfigOptions,
-      "Type" : String
+      "[Description](#cfn-opensearchserverless-securityconfig-description)" : {{String}},
+      "[IamFederationOptions](#cfn-opensearchserverless-securityconfig-iamfederationoptions)" : {{IamFederationConfigOptions}},
+      "[IamIdentityCenterOptions](#cfn-opensearchserverless-securityconfig-iamidentitycenteroptions)" : {{IamIdentityCenterConfigOptions}},
+      "[Name](#cfn-opensearchserverless-securityconfig-name)" : {{String}},
+      "[SamlOptions](#cfn-opensearchserverless-securityconfig-samloptions)" : {{SamlConfigOptions}},
+      "[Type](#cfn-opensearchserverless-securityconfig-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-opensearchserverless-securityconfig-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::OpenSearchServerless::SecurityConfig
 Properties:
-  Description: String
-  IamFederationOptions:
-    IamFederationConfigOptions
-  IamIdentityCenterOptions:
-    IamIdentityCenterConfigOptions
-  Name: String
-  SamlOptions:
-    SamlConfigOptions
-  Type: String
-
+  [Description](#cfn-opensearchserverless-securityconfig-description): {{String}}
+  [IamFederationOptions](#cfn-opensearchserverless-securityconfig-iamfederationoptions): {{
+    IamFederationConfigOptions}}
+  [IamIdentityCenterOptions](#cfn-opensearchserverless-securityconfig-iamidentitycenteroptions): {{
+    IamIdentityCenterConfigOptions}}
+  [Name](#cfn-opensearchserverless-securityconfig-name): {{String}}
+  [SamlOptions](#cfn-opensearchserverless-securityconfig-samloptions): {{
+    SamlConfigOptions}}
+  [Type](#cfn-opensearchserverless-securityconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-opensearchserverless-securityconfig-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-opensearchserverless-securityconfig-description"></a>
 The description of the security configuration.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IamFederationOptions`  <a name="cfn-opensearchserverless-securityconfig-iamfederationoptions"></a>
+Describes IAM federation options in the form of a key-value map. Contains configuration details about how OpenSearch Serverless integrates with external identity providers through federation.
+*Required*: No
+*Type*: [IamFederationConfigOptions](aws-properties-opensearchserverless-securityconfig-iamfederationconfigoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IamFederationOptions`
-
-Describes IAM federation options in the form of a key-value map. Contains
-configuration details about how OpenSearch Serverless integrates with external identity
-providers through federation.
-
-_Required_: No
-
-_Type_: [IamFederationConfigOptions](aws-properties-opensearchserverless-securityconfig-iamfederationconfigoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IamIdentityCenterOptions`
-
+`IamIdentityCenterOptions`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenteroptions"></a>
 Describes IAM Identity Center options in the form of a key-value map.
+*Required*: No
+*Type*: [IamIdentityCenterConfigOptions](aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IamIdentityCenterConfigOptions](aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-opensearchserverless-securityconfig-name"></a>
 The name of the security configuration.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z][a-z0-9-]{2,31}$`
+*Minimum*: `3`
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z][a-z0-9-]{2,31}$`
-
-_Minimum_: `3`
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SamlOptions`
-
+`SamlOptions`  <a name="cfn-opensearchserverless-securityconfig-samloptions"></a>
 SAML options for the security configuration in the form of a key-value map.
+*Required*: No
+*Type*: [SamlConfigOptions](aws-properties-opensearchserverless-securityconfig-samlconfigoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SamlConfigOptions](aws-properties-opensearchserverless-securityconfig-samlconfigoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of security configuration. Currently the only option is
-`saml`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `saml | iamidentitycenter | iamfederation`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Type`  <a name="cfn-opensearchserverless-securityconfig-type"></a>
+The type of security configuration. Currently the only option is `saml`.
+*Required*: No
+*Type*: String
+*Allowed values*: `saml | iamidentitycenter | iamfederation`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-opensearchserverless-securityconfig-return-values"></a>
 
 ### Ref
+<a name="aws-resource-opensearchserverless-securityconfig-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the name of the ID of the security configuration. For
-more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the ID of the security configuration. For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-opensearchserverless-securityconfig-return-values-fn--getatt"></a>
 
-`GetAtt` returns a value for a specified attribute of this type. For more
-information, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md). The following are the available attributes and sample return
-values.
+`GetAtt` returns a value for a specified attribute of this type. For more information, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html). The following are the available attributes and sample return values.
 
-`IamIdentityCenterOptions.ApplicationArn`
+####
+<a name="aws-resource-opensearchserverless-securityconfig-return-values-fn--getatt-fn--getatt"></a>
 
+`IamIdentityCenterOptions.ApplicationArn`  <a name="IamIdentityCenterOptions.ApplicationArn-fn::getatt"></a>
 Property description not available.
 
-`IamIdentityCenterOptions.ApplicationDescription`
-
+`IamIdentityCenterOptions.ApplicationDescription`  <a name="IamIdentityCenterOptions.ApplicationDescription-fn::getatt"></a>
 Property description not available.
 
-`IamIdentityCenterOptions.ApplicationName`
-
+`IamIdentityCenterOptions.ApplicationName`  <a name="IamIdentityCenterOptions.ApplicationName-fn::getatt"></a>
 Property description not available.
 
-`Id`
-
-The unique identifier of the security configuration. For example,
-`saml/123456789012/myprovider`.
+`Id`  <a name="Id-fn::getatt"></a>
+The unique identifier of the security configuration. For example, `saml/123456789012/myprovider`.
 
 ## Examples
+<a name="aws-resource-opensearchserverless-securityconfig--examples"></a>
 
 ### Create a security configuration that specifies a YAML provider
+<a name="aws-resource-opensearchserverless-securityconfig--examples--Create_a_security_configuration_that_specifies_a_YAML_provider"></a>
 
-The following example specifies an OpenSearch Serverless SAML provider named
-`my-provider` with a custom group attribute
-`ALLGroups`.
+The following example specifies an OpenSearch Serverless SAML provider named `my-provider` with a custom group attribute `ALLGroups`.
 
 #### JSON
+<a name="aws-resource-opensearchserverless-securityconfig--examples--Create_a_security_configuration_that_specifies_a_YAML_provider--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Description":"OpenSearch Serverless security policy template",
@@ -205,9 +167,9 @@ The following example specifies an OpenSearch Serverless SAML provider named
 ```
 
 #### YAML
+<a name="aws-resource-opensearchserverless-securityconfig--examples--Create_a_security_configuration_that_specifies_a_YAML_provider--yaml"></a>
 
-```yaml
-
+```
 Description: OpenSearch Serverless security policy template
 Resources:
   TestSecurityConfig:
@@ -233,11 +195,5 @@ Resources:
              UserAttribute: 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'
              GroupAttribute: ALLGroups SessionTimeout: 120
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::OpenSearchServerless::LifecyclePolicy
-
-IamFederationConfigOptions
 
 All content copied from https://docs.aws.amazon.com/.

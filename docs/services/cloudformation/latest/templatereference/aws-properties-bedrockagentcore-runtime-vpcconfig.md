@@ -2,74 +2,55 @@
 title: "AWS::BedrockAgentCore::Runtime VpcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime VpcConfig
+<a name="aws-properties-bedrockagentcore-runtime-vpcconfig"></a>
 
 VpcConfig for the Agent.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-runtime-vpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-runtime-vpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroups" : [ String, ... ],
-  "Subnets" : [ String, ... ]
+  "[SecurityGroups](#cfn-bedrockagentcore-runtime-vpcconfig-securitygroups)" : {{[ String, ... ]}},
+  "[Subnets](#cfn-bedrockagentcore-runtime-vpcconfig-subnets)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-runtime-vpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroups:
-    - String
-  Subnets:
-    - String
-
+```
+  [SecurityGroups](#cfn-bedrockagentcore-runtime-vpcconfig-securitygroups): {{
+    - String}}
+  [Subnets](#cfn-bedrockagentcore-runtime-vpcconfig-subnets): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-runtime-vpcconfig-properties"></a>
 
-`SecurityGroups`
-
+`SecurityGroups`  <a name="cfn-bedrockagentcore-runtime-vpcconfig-securitygroups"></a>
 The security groups associated with the VPC configuration.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subnets`
-
+`Subnets`  <a name="cfn-bedrockagentcore-runtime-vpcconfig-subnets"></a>
 The subnets associated with the VPC configuration.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SessionStorageConfiguration
-
-WorkloadIdentityDetails
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

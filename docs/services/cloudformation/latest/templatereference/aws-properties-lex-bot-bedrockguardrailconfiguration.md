@@ -2,72 +2,53 @@
 title: "AWS::Lex::Bot BedrockGuardrailConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BedrockGuardrailConfiguration
+<a name="aws-properties-lex-bot-bedrockguardrailconfiguration"></a>
 
 The details on the Bedrock guardrail configuration.
 
 ## Syntax
+<a name="aws-properties-lex-bot-bedrockguardrailconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-bedrockguardrailconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockGuardrailIdentifier" : String,
-  "BedrockGuardrailVersion" : String
+  "[BedrockGuardrailIdentifier](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailidentifier)" : {{String}},
+  "[BedrockGuardrailVersion](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-bedrockguardrailconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BedrockGuardrailIdentifier: String
-  BedrockGuardrailVersion: String
-
+```
+  [BedrockGuardrailIdentifier](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailidentifier): {{String}}
+  [BedrockGuardrailVersion](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-bedrockguardrailconfiguration-properties"></a>
 
-`BedrockGuardrailIdentifier`
-
+`BedrockGuardrailIdentifier`  <a name="cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailidentifier"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BedrockGuardrailVersion`
-
+`BedrockGuardrailVersion`  <a name="cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailversion"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BedrockAgentIntentKnowledgeBaseConfiguration
-
-BedrockKnowledgeStoreConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

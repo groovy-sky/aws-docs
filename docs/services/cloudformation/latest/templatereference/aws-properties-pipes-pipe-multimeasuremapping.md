@@ -2,77 +2,56 @@
 title: "AWS::Pipes::Pipe MultiMeasureMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe MultiMeasureMapping
+<a name="aws-properties-pipes-pipe-multimeasuremapping"></a>
 
-Maps multiple measures from the source event to the same Timestream for
-LiveAnalytics record.
+Maps multiple measures from the source event to the same Timestream for LiveAnalytics record.
 
-For more information, see [Amazon Timestream for LiveAnalytics concepts](../../../timestream/latest/developerguide/concepts.md)
+For more information, see [Amazon Timestream for LiveAnalytics concepts](https://docs.aws.amazon.com/timestream/latest/developerguide/concepts.html)
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-multimeasuremapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-multimeasuremapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "MultiMeasureAttributeMappings" : [ MultiMeasureAttributeMapping, ... ],
-  "MultiMeasureName" : String
+  "[MultiMeasureAttributeMappings](#cfn-pipes-pipe-multimeasuremapping-multimeasureattributemappings)" : {{[ MultiMeasureAttributeMapping, ... ]}},
+  "[MultiMeasureName](#cfn-pipes-pipe-multimeasuremapping-multimeasurename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-multimeasuremapping-syntax.yaml"></a>
 
-```yaml
-
-  MultiMeasureAttributeMappings:
-    - MultiMeasureAttributeMapping
-  MultiMeasureName: String
-
+```
+  [MultiMeasureAttributeMappings](#cfn-pipes-pipe-multimeasuremapping-multimeasureattributemappings): {{
+    - MultiMeasureAttributeMapping}}
+  [MultiMeasureName](#cfn-pipes-pipe-multimeasuremapping-multimeasurename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-multimeasuremapping-properties"></a>
 
-`MultiMeasureAttributeMappings`
+`MultiMeasureAttributeMappings`  <a name="cfn-pipes-pipe-multimeasuremapping-multimeasureattributemappings"></a>
+Mappings that represent multiple source event fields mapped to measures in the same Timestream for LiveAnalytics record.
+*Required*: Yes
+*Type*: Array of [MultiMeasureAttributeMapping](aws-properties-pipes-pipe-multimeasureattributemapping.md)
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Mappings that represent multiple source event fields mapped to measures in the same
-Timestream for LiveAnalytics record.
-
-_Required_: Yes
-
-_Type_: Array of [MultiMeasureAttributeMapping](aws-properties-pipes-pipe-multimeasureattributemapping.md)
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MultiMeasureName`
-
+`MultiMeasureName`  <a name="cfn-pipes-pipe-multimeasuremapping-multimeasurename"></a>
 The name of the multiple measurements per record (multi-measure).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiMeasureAttributeMapping
-
-NetworkConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

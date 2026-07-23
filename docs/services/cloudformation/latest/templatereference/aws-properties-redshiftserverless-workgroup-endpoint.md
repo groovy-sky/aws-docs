@@ -2,77 +2,58 @@
 title: "AWS::RedshiftServerless::Workgroup Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RedshiftServerless::Workgroup Endpoint
+<a name="aws-properties-redshiftserverless-workgroup-endpoint"></a>
 
 The VPC endpoint object.
 
 ## Syntax
+<a name="aws-properties-redshiftserverless-workgroup-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshiftserverless-workgroup-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Address" : String,
-  "Port" : Integer,
-  "VpcEndpoints" : [ VpcEndpoint, ... ]
+  "[Address](#cfn-redshiftserverless-workgroup-endpoint-address)" : {{String}},
+  "[Port](#cfn-redshiftserverless-workgroup-endpoint-port)" : {{Integer}},
+  "[VpcEndpoints](#cfn-redshiftserverless-workgroup-endpoint-vpcendpoints)" : {{[ VpcEndpoint, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshiftserverless-workgroup-endpoint-syntax.yaml"></a>
 
-```yaml
-
-  Address: String
-  Port: Integer
-  VpcEndpoints:
-    - VpcEndpoint
-
+```
+  [Address](#cfn-redshiftserverless-workgroup-endpoint-address): {{String}}
+  [Port](#cfn-redshiftserverless-workgroup-endpoint-port): {{Integer}}
+  [VpcEndpoints](#cfn-redshiftserverless-workgroup-endpoint-vpcendpoints): {{
+    - VpcEndpoint}}
 ```
 
 ## Properties
+<a name="aws-properties-redshiftserverless-workgroup-endpoint-properties"></a>
 
-`Address`
-
+`Address`  <a name="cfn-redshiftserverless-workgroup-endpoint-address"></a>
 The DNS address of the VPC endpoint.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-redshiftserverless-workgroup-endpoint-port"></a>
 The port that Amazon Redshift Serverless listens on.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcEndpoints`
-
+`VpcEndpoints`  <a name="cfn-redshiftserverless-workgroup-endpoint-vpcendpoints"></a>
 An array of `VpcEndpoint` objects.
-
-_Required_: No
-
-_Type_: Array of [VpcEndpoint](aws-properties-redshiftserverless-workgroup-vpcendpoint.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigParameter
-
-NetworkInterface
+*Required*: No
+*Type*: Array of [VpcEndpoint](aws-properties-redshiftserverless-workgroup-vpcendpoint.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

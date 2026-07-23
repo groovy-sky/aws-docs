@@ -2,127 +2,87 @@
 title: "AWS::Wisdom::AIAgent AnswerRecommendationAIAgentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent AnswerRecommendationAIAgentConfiguration
+<a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration"></a>
 
 The configuration for AI Agents of type `ANSWER_RECOMMENDATION`.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnswerGenerationAIGuardrailId" : String,
-  "AnswerGenerationAIPromptId" : String,
-  "AssociationConfigurations" : [ AssociationConfiguration, ... ],
-  "IntentLabelingGenerationAIPromptId" : String,
-  "Locale" : String,
-  "QueryReformulationAIPromptId" : String
+  "[AnswerGenerationAIGuardrailId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaiguardrailid)" : {{String}},
+  "[AnswerGenerationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaipromptid)" : {{String}},
+  "[AssociationConfigurations](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-associationconfigurations)" : {{[ AssociationConfiguration, ... ]}},
+  "[IntentLabelingGenerationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-intentlabelinggenerationaipromptid)" : {{String}},
+  "[Locale](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-locale)" : {{String}},
+  "[QueryReformulationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-queryreformulationaipromptid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AnswerGenerationAIGuardrailId: String
-  AnswerGenerationAIPromptId: String
-  AssociationConfigurations:
-    - AssociationConfiguration
-  IntentLabelingGenerationAIPromptId: String
-  Locale: String
-  QueryReformulationAIPromptId: String
-
+```
+  [AnswerGenerationAIGuardrailId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaiguardrailid): {{String}}
+  [AnswerGenerationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaipromptid): {{String}}
+  [AssociationConfigurations](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-associationconfigurations): {{
+    - AssociationConfiguration}}
+  [IntentLabelingGenerationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-intentlabelinggenerationaipromptid): {{String}}
+  [Locale](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-locale): {{String}}
+  [QueryReformulationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-queryreformulationaipromptid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration-properties"></a>
 
-`AnswerGenerationAIGuardrailId`
-
+`AnswerGenerationAIGuardrailId`  <a name="cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaiguardrailid"></a>
 The ID of the answer generation AI guardrail.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AnswerGenerationAIPromptId`  <a name="cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaipromptid"></a>
+The AI Prompt identifier for the Answer Generation prompt used by the `ANSWER_RECOMMENDATION` AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AnswerGenerationAIPromptId`
-
-The AI Prompt identifier for the Answer Generation prompt used by the
-`ANSWER_RECOMMENDATION` AI Agent.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AssociationConfigurations`
-
+`AssociationConfigurations`  <a name="cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-associationconfigurations"></a>
 The association configurations for overriding behavior on this AI Agent.
+*Required*: No
+*Type*: Array of [AssociationConfiguration](aws-properties-wisdom-aiagent-associationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IntentLabelingGenerationAIPromptId`  <a name="cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-intentlabelinggenerationaipromptid"></a>
+The AI Prompt identifier for the Intent Labeling prompt used by the `ANSWER_RECOMMENDATION` AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [AssociationConfiguration](aws-properties-wisdom-aiagent-associationconfiguration.md)
+`Locale`  <a name="cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-locale"></a>
+The locale to which specifies the language and region settings that determine the response language for [QueryAssistant](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_QueryAssistant.html).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntentLabelingGenerationAIPromptId`
-
-The AI Prompt identifier for the Intent Labeling prompt used by the
-`ANSWER_RECOMMENDATION` AI Agent.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Locale`
-
-The locale to which specifies the language and region settings that determine the
-response language for [QueryAssistant](../../../../reference/connect/latest/apireference/api-amazon-q-connect-queryassistant.md).
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryReformulationAIPromptId`
-
-The AI Prompt identifier for the Query Reformulation prompt used by the
-`ANSWER_RECOMMENDATION` AI Agent.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AIAgentConfiguration
-
-AssociationConfiguration
+`QueryReformulationAIPromptId`  <a name="cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-queryreformulationaipromptid"></a>
+The AI Prompt identifier for the Query Reformulation prompt used by the `ANSWER_RECOMMENDATION` AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,154 +2,115 @@
 title: "AWS::WorkSpacesWeb::BrowserSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::BrowserSettings
+<a name="aws-resource-workspacesweb-browsersettings"></a>
 
-This resource specifies browser settings that can be associated with a web portal. Once
-associated with a web portal, browser settings control how the browser will behave once a
-user starts a streaming session for the web portal.
+This resource specifies browser settings that can be associated with a web portal. Once associated with a web portal, browser settings control how the browser will behave once a user starts a streaming session for the web portal.
 
 ## Syntax
+<a name="aws-resource-workspacesweb-browsersettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-workspacesweb-browsersettings-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::WorkSpacesWeb::BrowserSettings",
   "Properties" : {
-      "AdditionalEncryptionContext" : {Key: Value, ...},
-      "BrowserPolicy" : String,
-      "CustomerManagedKey" : String,
-      "Tags" : [ Tag, ... ],
-      "WebContentFilteringPolicy" : WebContentFilteringPolicy
+      "[AdditionalEncryptionContext](#cfn-workspacesweb-browsersettings-additionalencryptioncontext)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[BrowserPolicy](#cfn-workspacesweb-browsersettings-browserpolicy)" : {{String}},
+      "[CustomerManagedKey](#cfn-workspacesweb-browsersettings-customermanagedkey)" : {{String}},
+      "[Tags](#cfn-workspacesweb-browsersettings-tags)" : {{[ Tag, ... ]}},
+      "[WebContentFilteringPolicy](#cfn-workspacesweb-browsersettings-webcontentfilteringpolicy)" : {{WebContentFilteringPolicy}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-workspacesweb-browsersettings-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::WorkSpacesWeb::BrowserSettings
 Properties:
-  AdditionalEncryptionContext:
-    Key: Value
-  BrowserPolicy: String
-  CustomerManagedKey: String
-  Tags:
-    - Tag
-  WebContentFilteringPolicy:
-    WebContentFilteringPolicy
-
+  [AdditionalEncryptionContext](#cfn-workspacesweb-browsersettings-additionalencryptioncontext): {{
+    {{Key}}: {{Value}}}}
+  [BrowserPolicy](#cfn-workspacesweb-browsersettings-browserpolicy): {{String}}
+  [CustomerManagedKey](#cfn-workspacesweb-browsersettings-customermanagedkey): {{String}}
+  [Tags](#cfn-workspacesweb-browsersettings-tags): {{
+    - Tag}}
+  [WebContentFilteringPolicy](#cfn-workspacesweb-browsersettings-webcontentfilteringpolicy): {{
+    WebContentFilteringPolicy}}
 ```
 
 ## Properties
+<a name="aws-resource-workspacesweb-browsersettings-properties"></a>
 
-`AdditionalEncryptionContext`
-
+`AdditionalEncryptionContext`  <a name="cfn-workspacesweb-browsersettings-additionalencryptioncontext"></a>
 Additional encryption context of the browser settings.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\s\S]*$`
+*Minimum*: `0`
+*Maximum*: `131072`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`BrowserPolicy`  <a name="cfn-workspacesweb-browsersettings-browserpolicy"></a>
+A JSON string containing Chrome Enterprise policies that will be applied to all streaming sessions.
+*Required*: No
+*Type*: String
+*Pattern*: `^\{[\S\s]*\}\s*$`
+*Minimum*: `2`
+*Maximum*: `131072`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Object of String
-
-_Pattern_: `^[\s\S]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `131072`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BrowserPolicy`
-
-A JSON string containing Chrome Enterprise policies that will be applied to all
-streaming sessions.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\{[\S\s]*\}\s*$`
-
-_Minimum_: `2`
-
-_Maximum_: `131072`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomerManagedKey`
-
+`CustomerManagedKey`  <a name="cfn-workspacesweb-browsersettings-customermanagedkey"></a>
 The custom managed key of the browser settings.
+*Pattern*: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Pattern_: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-workspacesweb-browsersettings-tags"></a>
 The tags to add to the browser settings resource. A tag is a key-value pair.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-workspacesweb-browsersettings-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-workspacesweb-browsersettings-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WebContentFilteringPolicy`
-
+`WebContentFilteringPolicy`  <a name="cfn-workspacesweb-browsersettings-webcontentfilteringpolicy"></a>
 The policy that specifies which URLs end users are allowed to access or which URLs or domain categories they are restricted from accessing for enhanced security.
-
-_Required_: No
-
-_Type_: [WebContentFilteringPolicy](aws-properties-workspacesweb-browsersettings-webcontentfilteringpolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [WebContentFilteringPolicy](aws-properties-workspacesweb-browsersettings-webcontentfilteringpolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-workspacesweb-browsersettings-return-values"></a>
 
 ### Ref
+<a name="aws-resource-workspacesweb-browsersettings-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the resource's Amazon Resource Name (ARN).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource's Amazon Resource Name (ARN).
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-workspacesweb-browsersettings-return-values-fn--getatt"></a>
 
-`AssociatedPortalArns`
+####
+<a name="aws-resource-workspacesweb-browsersettings-return-values-fn--getatt-fn--getatt"></a>
 
+`AssociatedPortalArns`  <a name="AssociatedPortalArns-fn::getatt"></a>
 A list of web portal ARNs that the browser settings resource is associated with.
 
-`BrowserSettingsArn`
-
+`BrowserSettingsArn`  <a name="BrowserSettingsArn-fn::getatt"></a>
 The ARN of the browser settings.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon WorkSpaces Secure Browser
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

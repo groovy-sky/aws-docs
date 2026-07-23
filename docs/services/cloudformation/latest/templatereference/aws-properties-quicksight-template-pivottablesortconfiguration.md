@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Template PivotTableSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PivotTableSortConfiguration
+<a name="aws-properties-quicksight-template-pivottablesortconfiguration"></a>
 
 The sort configuration for a `PivotTableVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pivottablesortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pivottablesortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldSortOptions" : [ PivotFieldSortOptions, ... ]
+  "[FieldSortOptions](#cfn-quicksight-template-pivottablesortconfiguration-fieldsortoptions)" : {{[ PivotFieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pivottablesortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FieldSortOptions:
-    - PivotFieldSortOptions
-
+```
+  [FieldSortOptions](#cfn-quicksight-template-pivottablesortconfiguration-fieldsortoptions): {{
+    - PivotFieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pivottablesortconfiguration-properties"></a>
 
-`FieldSortOptions`
-
+`FieldSortOptions`  <a name="cfn-quicksight-template-pivottablesortconfiguration-fieldsortoptions"></a>
 The field sort options for a pivot table sort configuration.
-
-_Required_: No
-
-_Type_: [Array](aws-properties-quicksight-template-fieldsortoptions.md) of [PivotFieldSortOptions](aws-properties-quicksight-template-pivotfieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableSortBy
-
-PivotTableTotalOptions
+*Required*: No
+*Type*: [Array](aws-properties-quicksight-template-fieldsortoptions.md) of [PivotFieldSortOptions](aws-properties-quicksight-template-pivotfieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

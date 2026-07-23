@@ -2,80 +2,60 @@
 title: "AWS::DataBrew::Dataset FormatOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset FormatOptions
+<a name="aws-properties-databrew-dataset-formatoptions"></a>
 
-Represents a set of options that define the structure of either comma-separated value (CSV),
-Excel, or JSON input.
+Represents a set of options that define the structure of either comma-separated value (CSV), Excel, or JSON input.
 
 ## Syntax
+<a name="aws-properties-databrew-dataset-formatoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-dataset-formatoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Csv" : CsvOptions,
-  "Excel" : ExcelOptions,
-  "Json" : JsonOptions
+  "[Csv](#cfn-databrew-dataset-formatoptions-csv)" : {{CsvOptions}},
+  "[Excel](#cfn-databrew-dataset-formatoptions-excel)" : {{ExcelOptions}},
+  "[Json](#cfn-databrew-dataset-formatoptions-json)" : {{JsonOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-dataset-formatoptions-syntax.yaml"></a>
 
-```yaml
-
-  Csv:
-    CsvOptions
-  Excel:
-    ExcelOptions
-  Json:
-    JsonOptions
-
+```
+  [Csv](#cfn-databrew-dataset-formatoptions-csv): {{
+    CsvOptions}}
+  [Excel](#cfn-databrew-dataset-formatoptions-excel): {{
+    ExcelOptions}}
+  [Json](#cfn-databrew-dataset-formatoptions-json): {{
+    JsonOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-dataset-formatoptions-properties"></a>
 
-`Csv`
-
+`Csv`  <a name="cfn-databrew-dataset-formatoptions-csv"></a>
 Options that define how CSV input is to be interpreted by DataBrew.
+*Required*: No
+*Type*: [CsvOptions](aws-properties-databrew-dataset-csvoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CsvOptions](aws-properties-databrew-dataset-csvoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Excel`
-
+`Excel`  <a name="cfn-databrew-dataset-formatoptions-excel"></a>
 Options that define how Excel input is to be interpreted by DataBrew.
+*Required*: No
+*Type*: [ExcelOptions](aws-properties-databrew-dataset-exceloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExcelOptions](aws-properties-databrew-dataset-exceloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Json`
-
+`Json`  <a name="cfn-databrew-dataset-formatoptions-json"></a>
 Options that define how JSON input is to be interpreted by DataBrew.
-
-_Required_: No
-
-_Type_: [JsonOptions](aws-properties-databrew-dataset-jsonoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterValue
-
-Input
+*Required*: No
+*Type*: [JsonOptions](aws-properties-databrew-dataset-jsonoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

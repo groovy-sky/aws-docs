@@ -2,84 +2,61 @@
 title: "AWS::QBusiness::Plugin CustomPluginConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Plugin CustomPluginConfiguration
+<a name="aws-properties-qbusiness-plugin-custompluginconfiguration"></a>
 
-Configuration information required to create a custom plugin.
+ Configuration information required to create a custom plugin.
 
 ## Syntax
+<a name="aws-properties-qbusiness-plugin-custompluginconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-plugin-custompluginconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiSchema" : APISchema,
-  "ApiSchemaType" : String,
-  "Description" : String
+  "[ApiSchema](#cfn-qbusiness-plugin-custompluginconfiguration-apischema)" : {{APISchema}},
+  "[ApiSchemaType](#cfn-qbusiness-plugin-custompluginconfiguration-apischematype)" : {{String}},
+  "[Description](#cfn-qbusiness-plugin-custompluginconfiguration-description)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-plugin-custompluginconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ApiSchema:
-    APISchema
-  ApiSchemaType: String
-  Description: String
-
+```
+  [ApiSchema](#cfn-qbusiness-plugin-custompluginconfiguration-apischema): {{
+    APISchema}}
+  [ApiSchemaType](#cfn-qbusiness-plugin-custompluginconfiguration-apischematype): {{String}}
+  [Description](#cfn-qbusiness-plugin-custompluginconfiguration-description): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-plugin-custompluginconfiguration-properties"></a>
 
-`ApiSchema`
+`ApiSchema`  <a name="cfn-qbusiness-plugin-custompluginconfiguration-apischema"></a>
+Contains either details about the S3 object containing the OpenAPI schema for the action group or the JSON or YAML-formatted payload defining the schema.
+*Required*: Yes
+*Type*: [APISchema](aws-properties-qbusiness-plugin-apischema.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Contains either details about the S3 object containing the OpenAPI schema for the
-action group or the JSON or YAML-formatted payload defining the schema.
-
-_Required_: Yes
-
-_Type_: [APISchema](aws-properties-qbusiness-plugin-apischema.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApiSchemaType`
-
+`ApiSchemaType`  <a name="cfn-qbusiness-plugin-custompluginconfiguration-apischematype"></a>
 The type of OpenAPI schema to use.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `OPEN_API_V3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `OPEN_API_V3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-qbusiness-plugin-custompluginconfiguration-description"></a>
 A description for your custom plugin configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BasicAuthConfiguration
-
-OAuth2ClientCredentialConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

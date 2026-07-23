@@ -2,76 +2,57 @@
 title: "AWS::RedshiftServerless::Namespace SnapshotCopyConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RedshiftServerless::Namespace SnapshotCopyConfiguration
+<a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration"></a>
 
 The object that you configure to copy snapshots from one namespace to a namespace in another AWS Region.
 
 ## Syntax
+<a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationKmsKeyId" : String,
-  "DestinationRegion" : String,
-  "SnapshotRetentionPeriod" : Integer
+  "[DestinationKmsKeyId](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationkmskeyid)" : {{String}},
+  "[DestinationRegion](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationregion)" : {{String}},
+  "[SnapshotRetentionPeriod](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-snapshotretentionperiod)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DestinationKmsKeyId: String
-  DestinationRegion: String
-  SnapshotRetentionPeriod: Integer
-
+```
+  [DestinationKmsKeyId](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationkmskeyid): {{String}}
+  [DestinationRegion](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationregion): {{String}}
+  [SnapshotRetentionPeriod](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-snapshotretentionperiod): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration-properties"></a>
 
-`DestinationKmsKeyId`
-
+`DestinationKmsKeyId`  <a name="cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationkmskeyid"></a>
 The ID of the KMS key to use to encrypt your snapshots in the destination AWS Region.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationRegion`
-
+`DestinationRegion`  <a name="cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationregion"></a>
 The destination AWS Region to copy snapshots to.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnapshotRetentionPeriod`
-
+`SnapshotRetentionPeriod`  <a name="cfn-redshiftserverless-namespace-snapshotcopyconfiguration-snapshotretentionperiod"></a>
 The retention period of snapshots that are copied to the destination AWS Region.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Namespace
-
-Tag
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

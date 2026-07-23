@@ -2,214 +2,145 @@
 title: "AWS::KinesisFirehose::DeliveryStream IcebergDestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream IcebergDestinationConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration"></a>
 
-Specifies the destination configure settings for Apache Iceberg Table.
+ Specifies the destination configure settings for Apache Iceberg Table.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppendOnly" : Boolean,
-  "BufferingHints" : BufferingHints,
-  "CatalogConfiguration" : CatalogConfiguration,
-  "CloudWatchLoggingOptions" : CloudWatchLoggingOptions,
-  "DestinationTableConfigurationList" : [ DestinationTableConfiguration, ... ],
-  "ProcessingConfiguration" : ProcessingConfiguration,
-  "RetryOptions" : RetryOptions,
-  "RoleARN" : String,
-  "s3BackupMode" : String,
-  "S3Configuration" : S3DestinationConfiguration,
-  "SchemaEvolutionConfiguration" : SchemaEvolutionConfiguration,
-  "TableCreationConfiguration" : TableCreationConfiguration
+  "[AppendOnly](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-appendonly)" : {{Boolean}},
+  "[BufferingHints](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-bufferinghints)" : {{BufferingHints}},
+  "[CatalogConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-catalogconfiguration)" : {{CatalogConfiguration}},
+  "[CloudWatchLoggingOptions](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-cloudwatchloggingoptions)" : {{CloudWatchLoggingOptions}},
+  "[DestinationTableConfigurationList](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-destinationtableconfigurationlist)" : {{[ DestinationTableConfiguration, ... ]}},
+  "[ProcessingConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-processingconfiguration)" : {{ProcessingConfiguration}},
+  "[RetryOptions](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-retryoptions)" : {{RetryOptions}},
+  "[RoleARN](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-rolearn)" : {{String}},
+  "[s3BackupMode](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-s3backupmode)" : {{String}},
+  "[S3Configuration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-s3configuration)" : {{S3DestinationConfiguration}},
+  "[SchemaEvolutionConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-schemaevolutionconfiguration)" : {{SchemaEvolutionConfiguration}},
+  "[TableCreationConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-tablecreationconfiguration)" : {{TableCreationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AppendOnly: Boolean
-  BufferingHints:
-    BufferingHints
-  CatalogConfiguration:
-    CatalogConfiguration
-  CloudWatchLoggingOptions:
-    CloudWatchLoggingOptions
-  DestinationTableConfigurationList:
-    - DestinationTableConfiguration
-  ProcessingConfiguration:
-    ProcessingConfiguration
-  RetryOptions:
-    RetryOptions
-  RoleARN: String
-  s3BackupMode: String
-  S3Configuration:
-    S3DestinationConfiguration
-  SchemaEvolutionConfiguration:
-    SchemaEvolutionConfiguration
-  TableCreationConfiguration:
-    TableCreationConfiguration
-
+```
+  [AppendOnly](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-appendonly): {{Boolean}}
+  [BufferingHints](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-bufferinghints): {{
+    BufferingHints}}
+  [CatalogConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-catalogconfiguration): {{
+    CatalogConfiguration}}
+  [CloudWatchLoggingOptions](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-cloudwatchloggingoptions): {{
+    CloudWatchLoggingOptions}}
+  [DestinationTableConfigurationList](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-destinationtableconfigurationlist): {{
+    - DestinationTableConfiguration}}
+  [ProcessingConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-processingconfiguration): {{
+    ProcessingConfiguration}}
+  [RetryOptions](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-retryoptions): {{
+    RetryOptions}}
+  [RoleARN](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-rolearn): {{String}}
+  [s3BackupMode](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-s3backupmode): {{String}}
+  [S3Configuration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-s3configuration): {{
+    S3DestinationConfiguration}}
+  [SchemaEvolutionConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-schemaevolutionconfiguration): {{
+    SchemaEvolutionConfiguration}}
+  [TableCreationConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-tablecreationconfiguration): {{
+    TableCreationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration-properties"></a>
 
-`AppendOnly`
+`AppendOnly`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-appendonly"></a>
+ Describes whether all incoming data for this delivery stream will be append only (inserts only and not for updates and deletes) for Iceberg delivery. This feature is only applicable for Apache Iceberg Tables.
+The default value is false. If you set this value to true, Firehose automatically increases the throughput limit of a stream based on the throttling levels of the stream. If you set this parameter to true for a stream with updates and deletes, you will see out of order delivery.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Describes whether all incoming data for this delivery stream will be append only
-(inserts only and not for updates and deletes) for Iceberg delivery. This feature is only
-applicable for Apache Iceberg Tables.
-
-The default value is false. If you set this value to true, Firehose automatically
-increases the throughput limit of a stream based on the throttling levels of the stream. If
-you set this parameter to true for a stream with updates and deletes, you will see out of
-order delivery.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BufferingHints`
-
+`BufferingHints`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-bufferinghints"></a>
 Property description not available.
+*Required*: No
+*Type*: [BufferingHints](aws-properties-kinesisfirehose-deliverystream-bufferinghints.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`CatalogConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-catalogconfiguration"></a>
+ Configuration describing where the destination Apache Iceberg Tables are persisted.
+*Required*: Yes
+*Type*: [CatalogConfiguration](aws-properties-kinesisfirehose-deliverystream-catalogconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [BufferingHints](aws-properties-kinesisfirehose-deliverystream-bufferinghints.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CatalogConfiguration`
-
-Configuration describing where the destination Apache Iceberg Tables are persisted.
-
-_Required_: Yes
-
-_Type_: [CatalogConfiguration](aws-properties-kinesisfirehose-deliverystream-catalogconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CloudWatchLoggingOptions`
-
+`CloudWatchLoggingOptions`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-cloudwatchloggingoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [CloudWatchLoggingOptions](aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DestinationTableConfigurationList`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-destinationtableconfigurationlist"></a>
+ Provides a list of `DestinationTableConfigurations` which Firehose uses to deliver data to Apache Iceberg Tables. Firehose will write data with insert if table specific configuration is not provided here.
+*Required*: No
+*Type*: Array of [DestinationTableConfiguration](aws-properties-kinesisfirehose-deliverystream-destinationtableconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CloudWatchLoggingOptions](aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationTableConfigurationList`
-
-Provides a list of `DestinationTableConfigurations` which Firehose uses
-to deliver data to Apache Iceberg Tables. Firehose will write data with insert if table specific configuration is not provided here.
-
-_Required_: No
-
-_Type_: Array of [DestinationTableConfiguration](aws-properties-kinesisfirehose-deliverystream-destinationtableconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProcessingConfiguration`
-
+`ProcessingConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-processingconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [ProcessingConfiguration](aws-properties-kinesisfirehose-deliverystream-processingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProcessingConfiguration](aws-properties-kinesisfirehose-deliverystream-processingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryOptions`
-
+`RetryOptions`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-retryoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [RetryOptions](aws-properties-kinesisfirehose-deliverystream-retryoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RoleARN`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-rolearn"></a>
+ The Amazon Resource Name (ARN) of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [RetryOptions](aws-properties-kinesisfirehose-deliverystream-retryoptions.md)
+`s3BackupMode`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-s3backupmode"></a>
+ Describes how Firehose will backup records. Currently,S3 backup only supports `FailedDataOnly`.
+*Required*: No
+*Type*: String
+*Allowed values*: `AllData | FailedDataOnly`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleARN`
-
-The Amazon Resource Name (ARN) of the IAM role to be assumed by Firehose for calling Apache Iceberg Tables.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`s3BackupMode`
-
-Describes how Firehose will backup records. Currently,S3 backup only supports
-`FailedDataOnly`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AllData | FailedDataOnly`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Configuration`
-
+`S3Configuration`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-s3configuration"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [S3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [S3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SchemaEvolutionConfiguration`
-
+`SchemaEvolutionConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-schemaevolutionconfiguration"></a>
 The configuration to enable automatic schema evolution.
-
 Amazon Data Firehose is in preview release and is subject to change.
+*Required*: No
+*Type*: [SchemaEvolutionConfiguration](aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SchemaEvolutionConfiguration](aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableCreationConfiguration`
-
+`TableCreationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-tablecreationconfiguration"></a>
 The configuration to enable automatic table creation.
-
 Amazon Data Firehose is in preview release and is subject to change.
-
-_Required_: No
-
-_Type_: [TableCreationConfiguration](aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HttpEndpointRequestConfiguration
-
-InputFormatConfiguration
+*Required*: No
+*Type*: [TableCreationConfiguration](aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

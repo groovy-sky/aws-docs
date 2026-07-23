@@ -2,131 +2,84 @@
 title: "AWS::ApplicationAutoScaling::ScalingPolicy StepScalingPolicyConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalingPolicy StepScalingPolicyConfiguration
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration"></a>
 
-`StepScalingPolicyConfiguration` is a property of the [AWS::ApplicationAutoScaling::ScalingPolicy](../userguide/aws-resource-applicationautoscaling-scalingpolicy.md) resource that specifies a step scaling
-policy configuration for Application Auto Scaling.
+`StepScalingPolicyConfiguration` is a property of the [AWS::ApplicationAutoScaling::ScalingPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html) resource that specifies a step scaling policy configuration for Application Auto Scaling.
 
-For more information, see [Step scaling policies](../../../autoscaling/application/userguide/application-auto-scaling-step-scaling-policies.md) in the _Application Auto Scaling User_
-_Guide_.
+For more information, see [Step scaling policies](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-step-scaling-policies.html) in the *Application Auto Scaling User Guide*.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdjustmentType" : String,
-  "Cooldown" : Integer,
-  "MetricAggregationType" : String,
-  "MinAdjustmentMagnitude" : Integer,
-  "StepAdjustments" : [ StepAdjustment, ... ]
+  "[AdjustmentType](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype)" : {{String}},
+  "[Cooldown](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown)" : {{Integer}},
+  "[MetricAggregationType](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype)" : {{String}},
+  "[MinAdjustmentMagnitude](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude)" : {{Integer}},
+  "[StepAdjustments](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments)" : {{[ StepAdjustment, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AdjustmentType: String
-  Cooldown: Integer
-  MetricAggregationType: String
-  MinAdjustmentMagnitude: Integer
-  StepAdjustments:
-    - StepAdjustment
-
+```
+  [AdjustmentType](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype): {{String}}
+  [Cooldown](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown): {{Integer}}
+  [MetricAggregationType](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype): {{String}}
+  [MinAdjustmentMagnitude](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude): {{Integer}}
+  [StepAdjustments](#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments): {{
+    - StepAdjustment}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-properties"></a>
 
-`AdjustmentType`
+`AdjustmentType`  <a name="cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype"></a>
+Specifies whether the `ScalingAdjustment` value in the `StepAdjustment` property is an absolute number or a percentage of the current capacity.
+*Required*: No
+*Type*: String
+*Allowed values*: `ChangeInCapacity | PercentChangeInCapacity | ExactCapacity`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies whether the `ScalingAdjustment` value in the
-`StepAdjustment` property is an absolute number or a percentage of the current
-capacity.
+`Cooldown`  <a name="cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown"></a>
+The amount of time, in seconds, to wait for a previous scaling activity to take effect. If not specified, the default value is 300. For more information, see [Cooldown period](https://docs.aws.amazon.com/autoscaling/application/userguide/step-scaling-policy-overview.html#step-scaling-cooldown) in the *Application Auto Scaling User Guide*.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MetricAggregationType`  <a name="cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype"></a>
+The aggregation type for the CloudWatch metrics. Valid values are `Minimum`, `Maximum`, and `Average`. If the aggregation type is null, the value is treated as `Average`.
+*Required*: No
+*Type*: String
+*Allowed values*: `Average | Minimum | Maximum`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`MinAdjustmentMagnitude`  <a name="cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude"></a>
+The minimum value to scale by when the adjustment type is `PercentChangeInCapacity`. For example, suppose that you create a step scaling policy to scale out an Amazon ECS service by 25 percent and you specify a `MinAdjustmentMagnitude` of 2. If the service has 4 tasks and the scaling policy is performed, 25 percent of 4 is 1. However, because you specified a `MinAdjustmentMagnitude` of 2, Application Auto Scaling scales out the service by 2 tasks.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `ChangeInCapacity | PercentChangeInCapacity | ExactCapacity`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Cooldown`
-
-The amount of time, in seconds, to wait for a previous scaling activity to take effect. If
-not specified, the default value is 300. For more information, see [Cooldown period](../../../autoscaling/application/userguide/step-scaling-policy-overview.md#step-scaling-cooldown) in the _Application Auto Scaling User Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricAggregationType`
-
-The aggregation type for the CloudWatch metrics. Valid values are `Minimum`,
-`Maximum`, and `Average`. If the aggregation type is null, the
-value is treated as `Average`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Average | Minimum | Maximum`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinAdjustmentMagnitude`
-
-The minimum value to scale by when the adjustment type is
-`PercentChangeInCapacity`. For example, suppose that you create a step
-scaling policy to scale out an Amazon ECS service by 25 percent and you specify a
-`MinAdjustmentMagnitude` of 2. If the service has 4 tasks and the scaling
-policy is performed, 25 percent of 4 is 1. However, because you specified a
-`MinAdjustmentMagnitude` of 2, Application Auto Scaling scales out the service by 2
-tasks.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepAdjustments`
-
-A set of adjustments that enable you to scale based on the size of the alarm
-breach.
-
-At least one step adjustment is required if you are adding a new step scaling policy
-configuration.
-
-_Required_: No
-
-_Type_: Array of [StepAdjustment](aws-properties-applicationautoscaling-scalingpolicy-stepadjustment.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`StepAdjustments`  <a name="cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments"></a>
+A set of adjustments that enable you to scale based on the size of the alarm breach.
+At least one step adjustment is required if you are adding a new step scaling policy configuration.
+*Required*: No
+*Type*: Array of [StepAdjustment](aws-properties-applicationautoscaling-scalingpolicy-stepadjustment.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Configure Application Auto Scaling resources](../userguide/quickref-application-auto-scaling.md)
-
-- [Getting started](../../../autoscaling/application/userguide/getting-started.md)
-in the _Application Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StepAdjustment
-
-TargetTrackingMetric
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration--seealso"></a>
++  [Configure Application Auto Scaling resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-application-auto-scaling.html)
++ [Getting started](https://docs.aws.amazon.com/autoscaling/application/userguide/getting-started.html) in the *Application Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

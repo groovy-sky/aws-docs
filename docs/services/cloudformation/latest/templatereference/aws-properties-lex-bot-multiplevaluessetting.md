@@ -2,62 +2,43 @@
 title: "AWS::Lex::Bot MultipleValuesSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot MultipleValuesSetting
+<a name="aws-properties-lex-bot-multiplevaluessetting"></a>
 
 Indicates whether a slot can return multiple values.
 
 ## Syntax
+<a name="aws-properties-lex-bot-multiplevaluessetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-multiplevaluessetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowMultipleValues" : Boolean
+  "[AllowMultipleValues](#cfn-lex-bot-multiplevaluessetting-allowmultiplevalues)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-multiplevaluessetting-syntax.yaml"></a>
 
-```yaml
-
-  AllowMultipleValues: Boolean
-
+```
+  [AllowMultipleValues](#cfn-lex-bot-multiplevaluessetting-allowmultiplevalues): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-multiplevaluessetting-properties"></a>
 
-`AllowMultipleValues`
-
-Indicates whether a slot can return multiple values. When
-`true`, the slot may return more than one value in a
-response. When `false`, the slot returns only a single
-value.
-
-Multi-value slots are only available in the en-US locale. If you set
-this value to `true` in any other locale, Amazon Lex throws a
-`ValidationException`.
-
-If the `allowMutlipleValues` is not set, the default
-value is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MessageGroup
-
-NluImprovementSpecification
+`AllowMultipleValues`  <a name="cfn-lex-bot-multiplevaluessetting-allowmultiplevalues"></a>
+Indicates whether a slot can return multiple values. When `true`, the slot may return more than one value in a response. When `false`, the slot returns only a single value.
+Multi-value slots are only available in the en-US locale. If you set this value to `true` in any other locale, Amazon Lex throws a `ValidationException`.
+If the `allowMutlipleValues` is not set, the default value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

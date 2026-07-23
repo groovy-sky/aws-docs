@@ -2,64 +2,49 @@
 title: "AWS::InspectorV2::Filter DateFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Filter DateFilter
+<a name="aws-properties-inspectorv2-filter-datefilter"></a>
 
 Contains details on the time range used to filter findings.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-filter-datefilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-filter-datefilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "EndInclusive" : Integer,
-  "StartInclusive" : Integer
+  "[EndInclusive](#cfn-inspectorv2-filter-datefilter-endinclusive)" : {{Integer}},
+  "[StartInclusive](#cfn-inspectorv2-filter-datefilter-startinclusive)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-filter-datefilter-syntax.yaml"></a>
 
-```yaml
-
-  EndInclusive: Integer
-  StartInclusive: Integer
-
+```
+  [EndInclusive](#cfn-inspectorv2-filter-datefilter-endinclusive): {{Integer}}
+  [StartInclusive](#cfn-inspectorv2-filter-datefilter-startinclusive): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-filter-datefilter-properties"></a>
 
-`EndInclusive`
-
+`EndInclusive`  <a name="cfn-inspectorv2-filter-datefilter-endinclusive"></a>
 A timestamp representing the end of the time period filtered on.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartInclusive`
-
+`StartInclusive`  <a name="cfn-inspectorv2-filter-datefilter-startinclusive"></a>
 A timestamp representing the start of the time period filtered on.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::InspectorV2::Filter
-
-FilterCriteria
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

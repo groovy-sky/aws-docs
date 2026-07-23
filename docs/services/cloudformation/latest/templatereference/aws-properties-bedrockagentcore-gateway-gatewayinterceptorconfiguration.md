@@ -2,83 +2,62 @@
 title: "AWS::BedrockAgentCore::Gateway GatewayInterceptorConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway GatewayInterceptorConfiguration
+<a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration"></a>
 
 The configuration for an interceptor on a gateway. This structure defines settings for an interceptor that will be invoked during the invocation of the gateway.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InputConfiguration" : InterceptorInputConfiguration,
-  "InterceptionPoints" : [ String, ... ],
-  "Interceptor" : InterceptorConfiguration
+  "[InputConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-inputconfiguration)" : {{InterceptorInputConfiguration}},
+  "[InterceptionPoints](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptionpoints)" : {{[ String, ... ]}},
+  "[Interceptor](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptor)" : {{InterceptorConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InputConfiguration:
-    InterceptorInputConfiguration
-  InterceptionPoints:
-    - String
-  Interceptor:
-    InterceptorConfiguration
-
+```
+  [InputConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-inputconfiguration): {{
+    InterceptorInputConfiguration}}
+  [InterceptionPoints](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptionpoints): {{
+    - String}}
+  [Interceptor](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptor): {{
+    InterceptorConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration-properties"></a>
 
-`InputConfiguration`
-
+`InputConfiguration`  <a name="cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-inputconfiguration"></a>
 The configuration for the input of the interceptor. This field specifies how the input to the interceptor is constructed
+*Required*: No
+*Type*: [InterceptorInputConfiguration](aws-properties-bedrockagentcore-gateway-interceptorinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [InterceptorInputConfiguration](aws-properties-bedrockagentcore-gateway-interceptorinputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InterceptionPoints`
-
+`InterceptionPoints`  <a name="cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptionpoints"></a>
 The supported points of interception. This field specifies which points during the gateway invocation to invoke the interceptor
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interceptor`
-
+`Interceptor`  <a name="cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptor"></a>
 The infrastructure settings of an interceptor configuration. This structure defines how the interceptor can be invoked.
-
-_Required_: Yes
-
-_Type_: [InterceptorConfiguration](aws-properties-bedrockagentcore-gateway-interceptorconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomJWTAuthorizerConfiguration
-
-GatewayPolicyEngineConfiguration
+*Required*: Yes
+*Type*: [InterceptorConfiguration](aws-properties-bedrockagentcore-gateway-interceptorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

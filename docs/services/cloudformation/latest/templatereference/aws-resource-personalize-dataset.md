@@ -2,198 +2,150 @@
 title: "AWS::Personalize::Dataset"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Dataset
+<a name="aws-resource-personalize-dataset"></a>
 
-Creates an empty dataset and adds it to the specified dataset group.
-Use [CreateDatasetImportJob](../../../personalize/latest/dg/api-createdatasetimportjob.md) to import your training data to a
-dataset.
+Creates an empty dataset and adds it to the specified dataset group. Use [CreateDatasetImportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetImportJob.html) to import your training data to a dataset.
 
 There are 5 types of datasets:
++ Item interactions
++ Items
++ Users
++ Action interactions (you can't use CloudFormation to create an Action interactions dataset)
++ Actions (you can't use CloudFormation to create an Actions dataset)
 
-- Item interactions
-
-- Items
-
-- Users
-
-- Action interactions (you can't use CloudFormation to create an Action interactions dataset)
-
-- Actions (you can't use CloudFormation to create an Actions dataset)
-
-Each dataset type has an associated schema with required field types.
-Only the `Item interactions` dataset is required in order to train a
-model (also referred to as creating a solution).
+Each dataset type has an associated schema with required field types. Only the `Item interactions` dataset is required in order to train a model (also referred to as creating a solution).
 
 A dataset can be in one of the following states:
++ CREATE PENDING > CREATE IN\_PROGRESS > ACTIVE -or- CREATE FAILED
++ DELETE PENDING > DELETE IN\_PROGRESS
 
-- CREATE PENDING > CREATE IN\_PROGRESS > ACTIVE -or- CREATE
-FAILED
+To get the status of the dataset, call [DescribeDataset](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDataset.html).
 
-- DELETE PENDING > DELETE IN\_PROGRESS
-
-To get the status of the dataset, call [DescribeDataset](../../../personalize/latest/dg/api-describedataset.md).
-
-###### Related APIs
-
-- [CreateDatasetGroup](../../../personalize/latest/dg/api-createdatasetgroup.md)
-
-- [ListDatasets](../../../personalize/latest/dg/api-listdatasets.md)
-
-- [DescribeDataset](../../../personalize/latest/dg/api-describedataset.md)
-
-- [DeleteDataset](../../../personalize/latest/dg/api-deletedataset.md)
+**Related APIs**
++  [CreateDatasetGroup](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetGroup.html)
++  [ListDatasets](https://docs.aws.amazon.com/personalize/latest/dg/API_ListDatasets.html)
++  [DescribeDataset](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDataset.html)
++  [DeleteDataset](https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteDataset.html)
 
 ## Syntax
+<a name="aws-resource-personalize-dataset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-personalize-dataset-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Personalize::Dataset",
   "Properties" : {
-      "DatasetGroupArn" : String,
-      "DatasetImportJob" : DatasetImportJob,
-      "DatasetType" : String,
-      "Name" : String,
-      "SchemaArn" : String
+      "[DatasetGroupArn](#cfn-personalize-dataset-datasetgrouparn)" : {{String}},
+      "[DatasetImportJob](#cfn-personalize-dataset-datasetimportjob)" : {{DatasetImportJob}},
+      "[DatasetType](#cfn-personalize-dataset-datasettype)" : {{String}},
+      "[Name](#cfn-personalize-dataset-name)" : {{String}},
+      "[SchemaArn](#cfn-personalize-dataset-schemaarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-personalize-dataset-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Personalize::Dataset
 Properties:
-  DatasetGroupArn: String
-  DatasetImportJob:
-    DatasetImportJob
-  DatasetType: String
-  Name: String
-  SchemaArn: String
-
+  [DatasetGroupArn](#cfn-personalize-dataset-datasetgrouparn): {{String}}
+  [DatasetImportJob](#cfn-personalize-dataset-datasetimportjob): {{
+    DatasetImportJob}}
+  [DatasetType](#cfn-personalize-dataset-datasettype): {{String}}
+  [Name](#cfn-personalize-dataset-name): {{String}}
+  [SchemaArn](#cfn-personalize-dataset-schemaarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-personalize-dataset-properties"></a>
 
-`DatasetGroupArn`
-
+`DatasetGroupArn`  <a name="cfn-personalize-dataset-datasetgrouparn"></a>
 The Amazon Resource Name (ARN) of the dataset group.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:([a-z\d-]+):personalize:.*:.*:.+`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`DatasetImportJob`  <a name="cfn-personalize-dataset-datasetimportjob"></a>
+Describes a job that imports training data from a data source (Amazon S3 bucket) to an Amazon Personalize dataset. If you specify a dataset import job as part of a dataset, all dataset import job fields are required.
+*Required*: No
+*Type*: [DatasetImportJob](aws-properties-personalize-dataset-datasetimportjob.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `arn:([a-z\d-]+):personalize:.*:.*:.+`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DatasetImportJob`
-
-Describes a job that imports training data from a data source (Amazon S3 bucket) to an
-Amazon Personalize dataset. If you specify a dataset import job as part of a dataset, all
-dataset import job fields are required.
-
-_Required_: No
-
-_Type_: [DatasetImportJob](aws-properties-personalize-dataset-datasetimportjob.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatasetType`
-
+`DatasetType`  <a name="cfn-personalize-dataset-datasettype"></a>
 One of the following values:
-
-- Interactions
-
-- Items
-
-- Users
-
-###### Note
-
++ Interactions
++ Items
++ Users
 You can't use CloudFormation to create an Action Interactions or Actions dataset.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Interactions | Items | Users`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Interactions | Items | Users`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-personalize-dataset-name"></a>
 The name of the dataset.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SchemaArn`
-
+`SchemaArn`  <a name="cfn-personalize-dataset-schemaarn"></a>
 The ARN of the associated schema.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:([a-z\d-]+):personalize:.*:.*:.+`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:([a-z\d-]+):personalize:.*:.*:.+`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-personalize-dataset-return-values"></a>
 
 ### Ref
+<a name="aws-resource-personalize-dataset-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the resource.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-personalize-dataset-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DatasetArn`
+####
+<a name="aws-resource-personalize-dataset-return-values-fn--getatt-fn--getatt"></a>
 
+`DatasetArn`  <a name="DatasetArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the dataset.
 
 ## Examples
+<a name="aws-resource-personalize-dataset--examples"></a>
 
 ### Creating a dataset
+<a name="aws-resource-personalize-dataset--examples--Creating_a_dataset"></a>
 
-The following example creates an Amazon Personalize dataset and a dataset import job. The dataset
-import job imports data from an Amazon S3 bucket into the dataset.
+The following example creates an Amazon Personalize dataset and a dataset import job. The dataset import job imports data from an Amazon S3 bucket into the dataset.
 
 #### JSON
+<a name="aws-resource-personalize-dataset--examples--Creating_a_dataset--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -218,9 +170,9 @@ import job imports data from an Amazon S3 bucket into the dataset.
 ```
 
 #### YAML
+<a name="aws-resource-personalize-dataset--examples--Creating_a_dataset--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyDataset:
@@ -236,11 +188,5 @@ Resources:
           DataLocation: 's3://bucket-name/file-name.csv'
         RoleArn: 'arn:aws:iam::123456789012:role/personalize-role'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Personalize
-
-DatasetImportJob
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,69 +2,52 @@
 title: "AWS::QuickSight::DataSet ImportTableOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet ImportTableOperation
+<a name="aws-properties-quicksight-dataset-importtableoperation"></a>
 
 A transform operation that imports data from a source table.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-importtableoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-importtableoperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alias" : String,
-  "Source" : ImportTableOperationSource
+  "[Alias](#cfn-quicksight-dataset-importtableoperation-alias)" : {{String}},
+  "[Source](#cfn-quicksight-dataset-importtableoperation-source)" : {{ImportTableOperationSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-importtableoperation-syntax.yaml"></a>
 
-```yaml
-
-  Alias: String
-  Source:
-    ImportTableOperationSource
-
+```
+  [Alias](#cfn-quicksight-dataset-importtableoperation-alias): {{String}}
+  [Source](#cfn-quicksight-dataset-importtableoperation-source): {{
+    ImportTableOperationSource}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-importtableoperation-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-quicksight-dataset-importtableoperation-alias"></a>
 Alias for this operation.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-quicksight-dataset-importtableoperation-source"></a>
 The source configuration that specifies which source table to import and any column mappings.
-
-_Required_: Yes
-
-_Type_: [ImportTableOperationSource](aws-properties-quicksight-dataset-importtableoperationsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeoSpatialColumnGroup
-
-ImportTableOperationSource
+*Required*: Yes
+*Type*: [ImportTableOperationSource](aws-properties-quicksight-dataset-importtableoperationsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

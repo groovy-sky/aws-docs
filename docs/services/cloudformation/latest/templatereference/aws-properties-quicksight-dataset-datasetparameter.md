@@ -2,92 +2,69 @@
 title: "AWS::QuickSight::DataSet DatasetParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DatasetParameter
+<a name="aws-properties-quicksight-dataset-datasetparameter"></a>
 
 The parameter declarations of the dataset.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datasetparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datasetparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateTimeDatasetParameter" : DateTimeDatasetParameter,
-  "DecimalDatasetParameter" : DecimalDatasetParameter,
-  "IntegerDatasetParameter" : IntegerDatasetParameter,
-  "StringDatasetParameter" : StringDatasetParameter
+  "[DateTimeDatasetParameter](#cfn-quicksight-dataset-datasetparameter-datetimedatasetparameter)" : {{DateTimeDatasetParameter}},
+  "[DecimalDatasetParameter](#cfn-quicksight-dataset-datasetparameter-decimaldatasetparameter)" : {{DecimalDatasetParameter}},
+  "[IntegerDatasetParameter](#cfn-quicksight-dataset-datasetparameter-integerdatasetparameter)" : {{IntegerDatasetParameter}},
+  "[StringDatasetParameter](#cfn-quicksight-dataset-datasetparameter-stringdatasetparameter)" : {{StringDatasetParameter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datasetparameter-syntax.yaml"></a>
 
-```yaml
-
-  DateTimeDatasetParameter:
-    DateTimeDatasetParameter
-  DecimalDatasetParameter:
-    DecimalDatasetParameter
-  IntegerDatasetParameter:
-    IntegerDatasetParameter
-  StringDatasetParameter:
-    StringDatasetParameter
-
+```
+  [DateTimeDatasetParameter](#cfn-quicksight-dataset-datasetparameter-datetimedatasetparameter): {{
+    DateTimeDatasetParameter}}
+  [DecimalDatasetParameter](#cfn-quicksight-dataset-datasetparameter-decimaldatasetparameter): {{
+    DecimalDatasetParameter}}
+  [IntegerDatasetParameter](#cfn-quicksight-dataset-datasetparameter-integerdatasetparameter): {{
+    IntegerDatasetParameter}}
+  [StringDatasetParameter](#cfn-quicksight-dataset-datasetparameter-stringdatasetparameter): {{
+    StringDatasetParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datasetparameter-properties"></a>
 
-`DateTimeDatasetParameter`
-
+`DateTimeDatasetParameter`  <a name="cfn-quicksight-dataset-datasetparameter-datetimedatasetparameter"></a>
 A date time parameter that is created in the dataset.
+*Required*: No
+*Type*: [DateTimeDatasetParameter](aws-properties-quicksight-dataset-datetimedatasetparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimeDatasetParameter](aws-properties-quicksight-dataset-datetimedatasetparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DecimalDatasetParameter`
-
+`DecimalDatasetParameter`  <a name="cfn-quicksight-dataset-datasetparameter-decimaldatasetparameter"></a>
 A decimal parameter that is created in the dataset.
+*Required*: No
+*Type*: [DecimalDatasetParameter](aws-properties-quicksight-dataset-decimaldatasetparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DecimalDatasetParameter](aws-properties-quicksight-dataset-decimaldatasetparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegerDatasetParameter`
-
+`IntegerDatasetParameter`  <a name="cfn-quicksight-dataset-datasetparameter-integerdatasetparameter"></a>
 An integer parameter that is created in the dataset.
+*Required*: No
+*Type*: [IntegerDatasetParameter](aws-properties-quicksight-dataset-integerdatasetparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IntegerDatasetParameter](aws-properties-quicksight-dataset-integerdatasetparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringDatasetParameter`
-
+`StringDatasetParameter`  <a name="cfn-quicksight-dataset-datasetparameter-stringdatasetparameter"></a>
 A string parameter that is created in the dataset.
-
-_Required_: No
-
-_Type_: [StringDatasetParameter](aws-properties-quicksight-dataset-stringdatasetparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetNumericRangeFilterCondition
-
-DataSetRefreshProperties
+*Required*: No
+*Type*: [StringDatasetParameter](aws-properties-quicksight-dataset-stringdatasetparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,53 @@
 title: "AWS::IoTFleetWise::Vehicle StateTemplateUpdateStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Vehicle StateTemplateUpdateStrategy
+<a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy"></a>
 
 The update strategy for the state template. Vehicles associated with the state template can stream telemetry data with either an `onChange` or `periodic` update strategy.
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "OnChange" : Json,
-  "Periodic" : PeriodicStateTemplateUpdateStrategy
+  "[OnChange](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-onchange)" : {{Json}},
+  "[Periodic](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-periodic)" : {{PeriodicStateTemplateUpdateStrategy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy-syntax.yaml"></a>
 
-```yaml
-
-  OnChange: Json
-  Periodic:
-    PeriodicStateTemplateUpdateStrategy
-
+```
+  [OnChange](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-onchange): {{Json}}
+  [Periodic](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-periodic): {{
+    PeriodicStateTemplateUpdateStrategy}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy-properties"></a>
 
-`OnChange`
-
+`OnChange`  <a name="cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-onchange"></a>
 Property description not available.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Periodic`
-
+`Periodic`  <a name="cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-periodic"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [PeriodicStateTemplateUpdateStrategy](aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StateTemplateAssociation
-
-Tag
+*Required*: No
+*Type*: [PeriodicStateTemplateUpdateStrategy](aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

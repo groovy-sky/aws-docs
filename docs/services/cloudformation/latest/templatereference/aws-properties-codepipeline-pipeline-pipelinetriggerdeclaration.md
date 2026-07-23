@@ -2,80 +2,57 @@
 title: "AWS::CodePipeline::Pipeline PipelineTriggerDeclaration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline PipelineTriggerDeclaration
+<a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration"></a>
 
-Represents information about the specified trigger configuration, such as the
-filter criteria and the source stage for the action that contains the trigger.
+Represents information about the specified trigger configuration, such as the filter criteria and the source stage for the action that contains the trigger.
 
-###### Note
+**Note**
+This is only supported for the `CodeStarSourceConnection` action type.
 
-This is only supported for the `CodeStarSourceConnection` action
-type.
-
-###### Note
-
-When a trigger configuration is specified, default change detection for
-repository and branch commits is disabled.
+**Note**
+When a trigger configuration is specified, default change detection for repository and branch commits is disabled.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration-syntax.json"></a>
 
-```json
-
+```
 {
-  "GitConfiguration" : GitConfiguration,
-  "ProviderType" : String
+  "[GitConfiguration](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-gitconfiguration)" : {{GitConfiguration}},
+  "[ProviderType](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-providertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration-syntax.yaml"></a>
 
-```yaml
-
-  GitConfiguration:
-    GitConfiguration
-  ProviderType: String
-
+```
+  [GitConfiguration](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-gitconfiguration): {{
+    GitConfiguration}}
+  [ProviderType](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-providertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration-properties"></a>
 
-`GitConfiguration`
+`GitConfiguration`  <a name="cfn-codepipeline-pipeline-pipelinetriggerdeclaration-gitconfiguration"></a>
+Provides the filter criteria and the source stage for the repository event that starts the pipeline, such as Git tags.
+*Required*: No
+*Type*: [GitConfiguration](aws-properties-codepipeline-pipeline-gitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Provides the filter criteria and the source stage for the repository event that
-starts the pipeline, such as Git tags.
-
-_Required_: No
-
-_Type_: [GitConfiguration](aws-properties-codepipeline-pipeline-gitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProviderType`
-
-The source provider for the event, such as connections configured for a repository
-with Git tags, for the specified trigger configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CodeStarSourceConnection`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputArtifact
-
-RetryConfiguration
+`ProviderType`  <a name="cfn-codepipeline-pipeline-pipelinetriggerdeclaration-providertype"></a>
+The source provider for the event, such as connections configured for a repository with Git tags, for the specified trigger configuration.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CodeStarSourceConnection`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

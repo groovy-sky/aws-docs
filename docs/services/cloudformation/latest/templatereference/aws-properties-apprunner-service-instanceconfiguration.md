@@ -2,99 +2,68 @@
 title: "AWS::AppRunner::Service InstanceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service InstanceConfiguration
+<a name="aws-properties-apprunner-service-instanceconfiguration"></a>
 
 Describes the runtime configuration of an AWS App Runner service instance (scaling unit).
 
 ## Syntax
+<a name="aws-properties-apprunner-service-instanceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apprunner-service-instanceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cpu" : String,
-  "InstanceRoleArn" : String,
-  "Memory" : String
+  "[Cpu](#cfn-apprunner-service-instanceconfiguration-cpu)" : {{String}},
+  "[InstanceRoleArn](#cfn-apprunner-service-instanceconfiguration-instancerolearn)" : {{String}},
+  "[Memory](#cfn-apprunner-service-instanceconfiguration-memory)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apprunner-service-instanceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Cpu: String
-  InstanceRoleArn: String
-  Memory: String
-
+```
+  [Cpu](#cfn-apprunner-service-instanceconfiguration-cpu): {{String}}
+  [InstanceRoleArn](#cfn-apprunner-service-instanceconfiguration-instancerolearn): {{String}}
+  [Memory](#cfn-apprunner-service-instanceconfiguration-memory): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apprunner-service-instanceconfiguration-properties"></a>
 
-`Cpu`
-
+`Cpu`  <a name="cfn-apprunner-service-instanceconfiguration-cpu"></a>
 The number of CPU units reserved for each instance of your App Runner service.
-
 Default: `1 vCPU`
+*Required*: No
+*Type*: String
+*Pattern*: `256|512|1024|2048|4096|(0.25|0.5|1|2|4) vCPU`
+*Minimum*: `3`
+*Maximum*: `9`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InstanceRoleArn`  <a name="cfn-apprunner-service-instanceconfiguration-instancerolearn"></a>
+The Amazon Resource Name (ARN) of an IAM role that provides permissions to your App Runner service. These are permissions that your code needs when it calls any AWS APIs.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::[0-9]{12}:role/[\w+=,.@-]{1,64}`
+*Minimum*: `29`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `256|512|1024|2048|4096|(0.25|0.5|1|2|4) vCPU`
-
-_Minimum_: `3`
-
-_Maximum_: `9`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceRoleArn`
-
-The Amazon Resource Name (ARN) of an IAM role that provides permissions to your App Runner service. These are permissions that your code needs when it calls
-any AWS APIs.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::[0-9]{12}:role/[\w+=,.@-]{1,64}`
-
-_Minimum_: `29`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Memory`
-
+`Memory`  <a name="cfn-apprunner-service-instanceconfiguration-memory"></a>
 The amount of memory, in MB or GB, reserved for each instance of your App Runner service.
-
 Default: `2 GB`
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `512|1024|2048|3072|4096|6144|8192|10240|12288|(0.5|1|2|3|4|6|8|10|12) GB`
-
-_Minimum_: `3`
-
-_Maximum_: `6`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngressConfiguration
-
-KeyValuePair
+*Required*: No
+*Type*: String
+*Pattern*: `512|1024|2048|3072|4096|6144|8192|10240|12288|(0.5|1|2|3|4|6|8|10|12) GB`
+*Minimum*: `3`
+*Maximum*: `6`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

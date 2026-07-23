@@ -2,159 +2,129 @@
 title: "AWS::Logs::DeliverySource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::DeliverySource
+<a name="aws-resource-logs-deliverysource"></a>
 
-Creates or updates one _delivery source_ in your account. A
-delivery source is an AWS resource that sends logs to an AWS destination. The destination can be CloudWatch Logs, Amazon S3, or Firehose.
+Creates or updates one *delivery source* in your account. A delivery source is an AWS resource that sends logs to an AWS destination. The destination can be CloudWatch Logs, Amazon S3, or Firehose.
 
-Only some AWS services support being configured as a delivery source.
-These services are listed as **Supported \[V2 Permissions\]**
-in the table at [Enabling\
-logging from AWS services.](../../../amazoncloudwatch/latest/logs/aws-logs-and-resource-policy.md)
+Only some AWS services support being configured as a delivery source. These services are listed as **Supported [V2 Permissions]** in the table at [Enabling logging from AWS services.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html)
 
-To configure logs delivery between a supported AWS service and a
-destination, you must do the following:
+To configure logs delivery between a supported AWS service and a destination, you must do the following:
++ Create a delivery source, which is a logical object that represents the resource that is actually sending the logs.
++ Create a *delivery destination*, which is a logical object that represents the actual delivery destination. For more information, see [AWS::Logs::DeliveryDestination](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-deliverydestination.html) or [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html).
++ Create a *delivery* by pairing exactly one delivery source and one delivery destination. For more information, see [AWS::Logs::Delivery](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-delivery.html) or [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html).
 
-- Create a delivery source, which is a logical object that represents the
-resource that is actually sending the logs.
-
-- Create a _delivery destination_, which is a logical object
-that represents the actual delivery destination. For more information, see
-[AWS::Logs::DeliveryDestination](../userguide/aws-resource-logs-deliverydestination.md) or [PutDeliveryDestination](../../../../reference/amazoncloudwatchlogs/latest/apireference/api-putdeliverydestination.md).
-
-- Create a _delivery_ by pairing exactly one delivery source
-and one delivery destination. For more information, see [AWS::Logs::Delivery](../userguide/aws-resource-logs-delivery.md) or [CreateDelivery](../../../../reference/amazoncloudwatchlogs/latest/apireference/api-createdelivery.md).
-
-You can configure a single delivery source to send logs to multiple destinations by
-creating multiple deliveries. You can also create multiple deliveries to configure
-multiple delivery sources to send logs to the same delivery destination.
+You can configure a single delivery source to send logs to multiple destinations by creating multiple deliveries. You can also create multiple deliveries to configure multiple delivery sources to send logs to the same delivery destination.
 
 ## Syntax
+<a name="aws-resource-logs-deliverysource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-logs-deliverysource-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Logs::DeliverySource",
   "Properties" : {
-      "LogType" : String,
-      "Name" : String,
-      "ResourceArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[DeliverySourceConfiguration](#cfn-logs-deliverysource-deliverysourceconfiguration)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[LogType](#cfn-logs-deliverysource-logtype)" : {{String}},
+      "[Name](#cfn-logs-deliverysource-name)" : {{String}},
+      "[ResourceArn](#cfn-logs-deliverysource-resourcearn)" : {{String}},
+      "[Tags](#cfn-logs-deliverysource-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-logs-deliverysource-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Logs::DeliverySource
 Properties:
-  LogType: String
-  Name: String
-  ResourceArn: String
-  Tags:
-    - Tag
-
+  [DeliverySourceConfiguration](#cfn-logs-deliverysource-deliverysourceconfiguration): {{
+    {{Key}}: {{Value}}}}
+  [LogType](#cfn-logs-deliverysource-logtype): {{String}}
+  [Name](#cfn-logs-deliverysource-name): {{String}}
+  [ResourceArn](#cfn-logs-deliverysource-resourcearn): {{String}}
+  [Tags](#cfn-logs-deliverysource-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-logs-deliverysource-properties"></a>
 
-`LogType`
+`DeliverySourceConfiguration`  <a name="cfn-logs-deliverysource-deliverysourceconfiguration"></a>
+The map of key-value pairs that configure the delivery source.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.{1,255}$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of log that the source is sending. For valid values for this parameter, see the
-documentation for the source service.
+`LogType`  <a name="cfn-logs-deliverysource-logtype"></a>
+The type of log that the source is sending. For valid values for this parameter, see the documentation for the source service.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w-]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-logs-deliverysource-name"></a>
 The unique name of the delivery source.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w-]*$`
+*Minimum*: `1`
+*Maximum*: `60`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`ResourceArn`  <a name="cfn-logs-deliverysource-resourcearn"></a>
+The ARN of the AWS resource that is generating and sending logs. For example, `arn:aws:workmail:us-east-1:123456789012:organization/m-1234EXAMPLEabcd1234abcd1234abcd1234`
+*Required*: No
+*Type*: String
+*Pattern*: `[\w#+=/:,.@-]*\*?`
+*Minimum*: `16`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[\w-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `60`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceArn`
-
-The ARN of the AWS resource that is generating and sending logs. For
-example,
-`arn:aws:workmail:us-east-1:123456789012:organization/m-1234EXAMPLEabcd1234abcd1234abcd1234`
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w#+=/:,.@-]*\*?`
-
-_Minimum_: `16`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-logs-deliverysource-tags"></a>
 An array of key-value pairs to apply to the delivery source.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-logs-deliverysource-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-logs-deliverysource-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-logs-deliverysource-return-values"></a>
 
 ### Ref
+<a name="aws-resource-logs-deliverysource-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-logs-deliverysource-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-logs-deliverysource-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) that uniquely identifies this delivery source.
 
-`ResourceArns`
+`ResourceArns`  <a name="ResourceArns-fn::getatt"></a>
+This array contains the ARN of the AWS resource that sends logs and is represented by this delivery source. Currently, only one ARN can be in the array.
 
-This array contains the ARN of the AWS resource that sends logs and is
-represented by this delivery source. Currently, only one ARN can be in the array.
-
-`Service`
-
+`Service`  <a name="Service-fn::getatt"></a>
 The AWS service that is sending logs.
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+`Status`  <a name="Status-fn::getatt"></a>
+The status of the delivery source. A delivery source can have the status `ACTIVE` or `INACTIVE`. Note: This value is defined for selective log types.
 
-Tag
-
-Tag
+`StatusReason`  <a name="StatusReason-fn::getatt"></a>
+The reason for the status of the delivery source. A status reason of `RESOURCE_DELETED` indicates that the resource associated with the delivery source has been deleted. Note: This value is defined for selective log types.
 
 All content copied from https://docs.aws.amazon.com/.

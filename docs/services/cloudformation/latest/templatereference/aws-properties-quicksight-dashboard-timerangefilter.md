@@ -2,181 +2,126 @@
 title: "AWS::QuickSight::Dashboard TimeRangeFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TimeRangeFilter
+<a name="aws-properties-quicksight-dashboard-timerangefilter"></a>
 
 A `TimeRangeFilter` filters values that are between two specified values.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-timerangefilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-timerangefilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnIdentifier,
-  "DefaultFilterControlConfiguration" : DefaultFilterControlConfiguration,
-  "ExcludePeriodConfiguration" : ExcludePeriodConfiguration,
-  "FilterId" : String,
-  "IncludeMaximum" : Boolean,
-  "IncludeMinimum" : Boolean,
-  "NullOption" : String,
-  "RangeMaximumValue" : TimeRangeFilterValue,
-  "RangeMinimumValue" : TimeRangeFilterValue,
-  "TimeGranularity" : String
+  "[Column](#cfn-quicksight-dashboard-timerangefilter-column)" : {{ColumnIdentifier}},
+  "[DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-timerangefilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
+  "[ExcludePeriodConfiguration](#cfn-quicksight-dashboard-timerangefilter-excludeperiodconfiguration)" : {{ExcludePeriodConfiguration}},
+  "[FilterId](#cfn-quicksight-dashboard-timerangefilter-filterid)" : {{String}},
+  "[IncludeMaximum](#cfn-quicksight-dashboard-timerangefilter-includemaximum)" : {{Boolean}},
+  "[IncludeMinimum](#cfn-quicksight-dashboard-timerangefilter-includeminimum)" : {{Boolean}},
+  "[NullOption](#cfn-quicksight-dashboard-timerangefilter-nulloption)" : {{String}},
+  "[RangeMaximumValue](#cfn-quicksight-dashboard-timerangefilter-rangemaximumvalue)" : {{TimeRangeFilterValue}},
+  "[RangeMinimumValue](#cfn-quicksight-dashboard-timerangefilter-rangeminimumvalue)" : {{TimeRangeFilterValue}},
+  "[TimeGranularity](#cfn-quicksight-dashboard-timerangefilter-timegranularity)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-timerangefilter-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnIdentifier
-  DefaultFilterControlConfiguration:
-    DefaultFilterControlConfiguration
-  ExcludePeriodConfiguration:
-    ExcludePeriodConfiguration
-  FilterId: String
-  IncludeMaximum: Boolean
-  IncludeMinimum: Boolean
-  NullOption: String
-  RangeMaximumValue:
-    TimeRangeFilterValue
-  RangeMinimumValue:
-    TimeRangeFilterValue
-  TimeGranularity: String
-
+```
+  [Column](#cfn-quicksight-dashboard-timerangefilter-column): {{
+    ColumnIdentifier}}
+  [DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-timerangefilter-defaultfiltercontrolconfiguration): {{
+    DefaultFilterControlConfiguration}}
+  [ExcludePeriodConfiguration](#cfn-quicksight-dashboard-timerangefilter-excludeperiodconfiguration): {{
+    ExcludePeriodConfiguration}}
+  [FilterId](#cfn-quicksight-dashboard-timerangefilter-filterid): {{String}}
+  [IncludeMaximum](#cfn-quicksight-dashboard-timerangefilter-includemaximum): {{Boolean}}
+  [IncludeMinimum](#cfn-quicksight-dashboard-timerangefilter-includeminimum): {{Boolean}}
+  [NullOption](#cfn-quicksight-dashboard-timerangefilter-nulloption): {{String}}
+  [RangeMaximumValue](#cfn-quicksight-dashboard-timerangefilter-rangemaximumvalue): {{
+    TimeRangeFilterValue}}
+  [RangeMinimumValue](#cfn-quicksight-dashboard-timerangefilter-rangeminimumvalue): {{
+    TimeRangeFilterValue}}
+  [TimeGranularity](#cfn-quicksight-dashboard-timerangefilter-timegranularity): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-timerangefilter-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-dashboard-timerangefilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultFilterControlConfiguration`
-
+`DefaultFilterControlConfiguration`  <a name="cfn-quicksight-dashboard-timerangefilter-defaultfiltercontrolconfiguration"></a>
 The default configurations for the associated controls. This applies only for filters that are scoped to multiple sheets.
+*Required*: No
+*Type*: [DefaultFilterControlConfiguration](aws-properties-quicksight-dashboard-defaultfiltercontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterControlConfiguration](aws-properties-quicksight-dashboard-defaultfiltercontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludePeriodConfiguration`
-
+`ExcludePeriodConfiguration`  <a name="cfn-quicksight-dashboard-timerangefilter-excludeperiodconfiguration"></a>
 The exclude period of the time range filter.
+*Required*: No
+*Type*: [ExcludePeriodConfiguration](aws-properties-quicksight-dashboard-excludeperiodconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExcludePeriodConfiguration](aws-properties-quicksight-dashboard-excludeperiodconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterId`
-
+`FilterId`  <a name="cfn-quicksight-dashboard-timerangefilter-filterid"></a>
 An identifier that uniquely identifies a filter within a dashboard, analysis, or template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeMaximum`
-
+`IncludeMaximum`  <a name="cfn-quicksight-dashboard-timerangefilter-includemaximum"></a>
 Determines whether the maximum value in the filter value range should be included in the filtered results.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeMinimum`
-
+`IncludeMinimum`  <a name="cfn-quicksight-dashboard-timerangefilter-includeminimum"></a>
 Determines whether the minimum value in the filter value range should be included in the filtered results.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullOption`
-
+`NullOption`  <a name="cfn-quicksight-dashboard-timerangefilter-nulloption"></a>
 This option determines how null values should be treated when filtering data.
++ `ALL_VALUES`: Include null values in filtered results.
++ `NULLS_ONLY`: Only include null values in filtered results.
++ `NON_NULLS_ONLY`: Exclude null values from filtered results.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_VALUES`: Include null values in filtered results.
-
-- `NULLS_ONLY`: Only include null values in filtered results.
-
-- `NON_NULLS_ONLY`: Exclude null values from filtered results.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RangeMaximumValue`
-
+`RangeMaximumValue`  <a name="cfn-quicksight-dashboard-timerangefilter-rangemaximumvalue"></a>
 The maximum value for the filter value range.
+*Required*: No
+*Type*: [TimeRangeFilterValue](aws-properties-quicksight-dashboard-timerangefiltervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TimeRangeFilterValue](aws-properties-quicksight-dashboard-timerangefiltervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RangeMinimumValue`
-
+`RangeMinimumValue`  <a name="cfn-quicksight-dashboard-timerangefilter-rangeminimumvalue"></a>
 The minimum value for the filter value range.
+*Required*: No
+*Type*: [TimeRangeFilterValue](aws-properties-quicksight-dashboard-timerangefiltervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TimeRangeFilterValue](aws-properties-quicksight-dashboard-timerangefiltervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeGranularity`
-
+`TimeGranularity`  <a name="cfn-quicksight-dashboard-timerangefilter-timegranularity"></a>
 The level of time precision that is used to aggregate `DateTime` values.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeRangeDrillDownFilter
-
-TimeRangeFilterValue
+*Required*: No
+*Type*: String
+*Allowed values*: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

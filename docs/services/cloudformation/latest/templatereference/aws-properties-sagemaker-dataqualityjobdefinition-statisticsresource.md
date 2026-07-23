@@ -2,56 +2,43 @@
 title: "AWS::SageMaker::DataQualityJobDefinition StatisticsResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::DataQualityJobDefinition StatisticsResource
+<a name="aws-properties-sagemaker-dataqualityjobdefinition-statisticsresource"></a>
 
 The statistics resource for a monitoring job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-dataqualityjobdefinition-statisticsresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-dataqualityjobdefinition-statisticsresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Uri" : String
+  "[S3Uri](#cfn-sagemaker-dataqualityjobdefinition-statisticsresource-s3uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-dataqualityjobdefinition-statisticsresource-syntax.yaml"></a>
 
-```yaml
-
-  S3Uri: String
-
+```
+  [S3Uri](#cfn-sagemaker-dataqualityjobdefinition-statisticsresource-s3uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-dataqualityjobdefinition-statisticsresource-properties"></a>
 
-`S3Uri`
-
+`S3Uri`  <a name="cfn-sagemaker-dataqualityjobdefinition-statisticsresource-s3uri"></a>
 The Amazon S3 URI for the statistics resource.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(https|s3)://([^/]+)/?(.*)$`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Output
-
-StoppingCondition
+*Required*: No
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

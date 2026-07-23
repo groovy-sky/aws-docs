@@ -2,129 +2,91 @@
 title: "AWS::QuickSight::Analysis LayerMapVisual"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LayerMapVisual
+<a name="aws-properties-quicksight-analysis-layermapvisual"></a>
 
 A layer map visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-layermapvisual-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-layermapvisual-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChartConfiguration" : GeospatialLayerMapConfiguration,
-  "DataSetIdentifier" : String,
-  "Subtitle" : VisualSubtitleLabelOptions,
-  "Title" : VisualTitleLabelOptions,
-  "VisualContentAltText" : String,
-  "VisualId" : String
+  "[ChartConfiguration](#cfn-quicksight-analysis-layermapvisual-chartconfiguration)" : {{GeospatialLayerMapConfiguration}},
+  "[DataSetIdentifier](#cfn-quicksight-analysis-layermapvisual-datasetidentifier)" : {{String}},
+  "[Subtitle](#cfn-quicksight-analysis-layermapvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
+  "[Title](#cfn-quicksight-analysis-layermapvisual-title)" : {{VisualTitleLabelOptions}},
+  "[VisualContentAltText](#cfn-quicksight-analysis-layermapvisual-visualcontentalttext)" : {{String}},
+  "[VisualId](#cfn-quicksight-analysis-layermapvisual-visualid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-layermapvisual-syntax.yaml"></a>
 
-```yaml
-
-  ChartConfiguration:
-    GeospatialLayerMapConfiguration
-  DataSetIdentifier: String
-  Subtitle:
-    VisualSubtitleLabelOptions
-  Title:
-    VisualTitleLabelOptions
-  VisualContentAltText: String
-  VisualId: String
-
+```
+  [ChartConfiguration](#cfn-quicksight-analysis-layermapvisual-chartconfiguration): {{
+    GeospatialLayerMapConfiguration}}
+  [DataSetIdentifier](#cfn-quicksight-analysis-layermapvisual-datasetidentifier): {{String}}
+  [Subtitle](#cfn-quicksight-analysis-layermapvisual-subtitle): {{
+    VisualSubtitleLabelOptions}}
+  [Title](#cfn-quicksight-analysis-layermapvisual-title): {{
+    VisualTitleLabelOptions}}
+  [VisualContentAltText](#cfn-quicksight-analysis-layermapvisual-visualcontentalttext): {{String}}
+  [VisualId](#cfn-quicksight-analysis-layermapvisual-visualid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-layermapvisual-properties"></a>
 
-`ChartConfiguration`
-
+`ChartConfiguration`  <a name="cfn-quicksight-analysis-layermapvisual-chartconfiguration"></a>
 The configuration settings of the visual.
+*Required*: No
+*Type*: [GeospatialLayerMapConfiguration](aws-properties-quicksight-analysis-geospatiallayermapconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialLayerMapConfiguration](aws-properties-quicksight-analysis-geospatiallayermapconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetIdentifier`
-
+`DataSetIdentifier`  <a name="cfn-quicksight-analysis-layermapvisual-datasetidentifier"></a>
 The dataset that is used to create the layer map visual. You can't create a visual without a dataset.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subtitle`
-
+`Subtitle`  <a name="cfn-quicksight-analysis-layermapvisual-subtitle"></a>
 Property description not available.
+*Required*: No
+*Type*: [VisualSubtitleLabelOptions](aws-properties-quicksight-analysis-visualsubtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualSubtitleLabelOptions](aws-properties-quicksight-analysis-visualsubtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-analysis-layermapvisual-title"></a>
 Property description not available.
+*Required*: No
+*Type*: [VisualTitleLabelOptions](aws-properties-quicksight-analysis-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualTitleLabelOptions](aws-properties-quicksight-analysis-visualtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualContentAltText`
-
+`VisualContentAltText`  <a name="cfn-quicksight-analysis-layermapvisual-visualcontentalttext"></a>
 The alt text for the visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualId`
-
+`VisualId`  <a name="cfn-quicksight-analysis-layermapvisual-visualid"></a>
 The ID of the visual.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LayerCustomActionOperation
-
-Layout
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

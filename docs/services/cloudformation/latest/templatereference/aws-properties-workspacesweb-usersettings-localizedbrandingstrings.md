@@ -2,152 +2,105 @@
 title: "AWS::WorkSpacesWeb::UserSettings LocalizedBrandingStrings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::UserSettings LocalizedBrandingStrings
+<a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings"></a>
 
 Localized text strings for a specific language that customize the web portal.
 
 ## Syntax
+<a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings-syntax.json"></a>
 
-```json
-
+```
 {
-  "BrowserTabTitle" : String,
-  "ContactButtonText" : String,
-  "ContactLink" : String,
-  "LoadingText" : String,
-  "LoginButtonText" : String,
-  "LoginDescription" : String,
-  "LoginTitle" : String,
-  "WelcomeText" : String
+  "[BrowserTabTitle](#cfn-workspacesweb-usersettings-localizedbrandingstrings-browsertabtitle)" : {{String}},
+  "[ContactButtonText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactbuttontext)" : {{String}},
+  "[ContactLink](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactlink)" : {{String}},
+  "[LoadingText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-loadingtext)" : {{String}},
+  "[LoginButtonText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-loginbuttontext)" : {{String}},
+  "[LoginDescription](#cfn-workspacesweb-usersettings-localizedbrandingstrings-logindescription)" : {{String}},
+  "[LoginTitle](#cfn-workspacesweb-usersettings-localizedbrandingstrings-logintitle)" : {{String}},
+  "[WelcomeText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-welcometext)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings-syntax.yaml"></a>
 
-```yaml
-
-  BrowserTabTitle: String
-  ContactButtonText: String
-  ContactLink: String
-  LoadingText: String
-  LoginButtonText: String
-  LoginDescription: String
-  LoginTitle: String
-  WelcomeText: String
-
+```
+  [BrowserTabTitle](#cfn-workspacesweb-usersettings-localizedbrandingstrings-browsertabtitle): {{String}}
+  [ContactButtonText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactbuttontext): {{String}}
+  [ContactLink](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactlink): {{String}}
+  [LoadingText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-loadingtext): {{String}}
+  [LoginButtonText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-loginbuttontext): {{String}}
+  [LoginDescription](#cfn-workspacesweb-usersettings-localizedbrandingstrings-logindescription): {{String}}
+  [LoginTitle](#cfn-workspacesweb-usersettings-localizedbrandingstrings-logintitle): {{String}}
+  [WelcomeText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-welcometext): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings-properties"></a>
 
-`BrowserTabTitle`
-
+`BrowserTabTitle`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-browsertabtitle"></a>
 The text displayed in the browser tab title.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContactButtonText`
-
+`ContactButtonText`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-contactbuttontext"></a>
 The text displayed on the contact button. This field is optional and defaults to "Contact us".
+*Required*: No
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContactLink`
-
+`ContactLink`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-contactlink"></a>
 A contact link URL. The URL must start with `https://` or `mailto:`. If not provided, the contact button will be hidden from the web portal screen.
+*Required*: No
+*Type*: String
+*Pattern*: `^(https?://|mailto:).*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(https?://|mailto:).*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoadingText`
-
+`LoadingText`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-loadingtext"></a>
 The text displayed during session loading. This field is optional and defaults to "Loading your session".
+*Required*: No
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoginButtonText`
-
+`LoginButtonText`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-loginbuttontext"></a>
 The text displayed on the login button. This field is optional and defaults to "Sign In".
+*Required*: No
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoginDescription`
-
+`LoginDescription`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-logindescription"></a>
 The description text for the login section. This field is optional and defaults to "Sign in to your session".
+*Required*: No
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoginTitle`
-
+`LoginTitle`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-logintitle"></a>
 The title text for the login section. This field is optional and defaults to "Sign In".
+*Required*: No
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WelcomeText`
-
+`WelcomeText`  <a name="cfn-workspacesweb-usersettings-localizedbrandingstrings-welcometext"></a>
 The welcome text displayed on the sign-in page.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: ``^[^<>&'`~\\]*$``
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageMetadata
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^<>&'`~\\]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

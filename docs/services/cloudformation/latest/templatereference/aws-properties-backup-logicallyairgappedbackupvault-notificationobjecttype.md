@@ -2,67 +2,50 @@
 title: "AWS::Backup::LogicallyAirGappedBackupVault NotificationObjectType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::LogicallyAirGappedBackupVault NotificationObjectType
+<a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype"></a>
 
-The `NotificationObjectType` property type specifies Property description not available. for an [AWS::Backup::LogicallyAirGappedBackupVault](aws-resource-backup-logicallyairgappedbackupvault.md).
+<a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-description"></a>The `NotificationObjectType` property type specifies Property description not available. for an [AWS::Backup::LogicallyAirGappedBackupVault](aws-resource-backup-logicallyairgappedbackupvault.md).
 
 ## Syntax
+<a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackupVaultEvents" : [ String, ... ],
-  "SNSTopicArn" : String
+  "[BackupVaultEvents](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-backupvaultevents)" : {{[ String, ... ]}},
+  "[SNSTopicArn](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-snstopicarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-syntax.yaml"></a>
 
-```yaml
-
-  BackupVaultEvents:
-    - String
-  SNSTopicArn: String
-
+```
+  [BackupVaultEvents](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-backupvaultevents): {{
+    - String}}
+  [SNSTopicArn](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-snstopicarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-properties"></a>
 
-`BackupVaultEvents`
+`BackupVaultEvents`  <a name="cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-backupvaultevents"></a>
+An array of events that indicate the status of jobs to back up resources to the backup vault.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An array of events that indicate the status of jobs to back up resources to the backup
-vault.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SNSTopicArn`
-
-The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events; for
-example, `arn:aws:sns:us-west-2:111122223333:MyVaultTopic`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Backup::LogicallyAirGappedBackupVault
-
-AWS::Backup::ReportPlan
+`SNSTopicArn`  <a name="cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-snstopicarn"></a>
+The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events; for example, `arn:aws:sns:us-west-2:111122223333:MyVaultTopic`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

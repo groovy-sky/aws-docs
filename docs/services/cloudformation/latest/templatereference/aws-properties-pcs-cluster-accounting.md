@@ -2,81 +2,55 @@
 title: "AWS::PCS::Cluster Accounting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::Cluster Accounting
+<a name="aws-properties-pcs-cluster-accounting"></a>
 
 The accounting configuration includes configurable settings for Slurm accounting.
 
 ## Syntax
+<a name="aws-properties-pcs-cluster-accounting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcs-cluster-accounting-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultPurgeTimeInDays" : Integer,
-  "Mode" : String
+  "[DefaultPurgeTimeInDays](#cfn-pcs-cluster-accounting-defaultpurgetimeindays)" : {{Integer}},
+  "[Mode](#cfn-pcs-cluster-accounting-mode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcs-cluster-accounting-syntax.yaml"></a>
 
-```yaml
-
-  DefaultPurgeTimeInDays: Integer
-  Mode: String
-
+```
+  [DefaultPurgeTimeInDays](#cfn-pcs-cluster-accounting-defaultpurgetimeindays): {{Integer}}
+  [Mode](#cfn-pcs-cluster-accounting-mode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcs-cluster-accounting-properties"></a>
 
-`DefaultPurgeTimeInDays`
-
-The default value for all purge settings for `slurmdbd.conf`. For more
-information, see the [slurmdbd.conf documentation at SchedMD](https://slurm.schedmd.com/slurmdbd.conf.html).
-
+`DefaultPurgeTimeInDays`  <a name="cfn-pcs-cluster-accounting-defaultpurgetimeindays"></a>
+The default value for all purge settings for `slurmdbd.conf`. For more information, see the [slurmdbd.conf documentation at SchedMD](https://slurm.schedmd.com/slurmdbd.conf.html).
 The default value for `defaultPurgeTimeInDays` is `-1`.
-
-A value of `-1` means there is no purge time and records persist as long as
-the cluster exists.
-
-###### Important
-
+A value of `-1` means there is no purge time and records persist as long as the cluster exists.
 `0` isn't a valid value.
+*Required*: No
+*Type*: Integer
+*Minimum*: `-1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `-1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Mode`
-
-The default value for `mode` is `NONE`. A value of
-`STANDARD` means Slurm accounting is enabled.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `STANDARD | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::PCS::Cluster
-
-AuthKey
+`Mode`  <a name="cfn-pcs-cluster-accounting-mode"></a>
+The default value for `mode` is `NONE`. A value of `STANDARD` means Slurm accounting is enabled.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `STANDARD | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

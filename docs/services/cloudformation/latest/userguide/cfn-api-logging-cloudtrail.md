@@ -3,85 +3,47 @@ title: "Logging CloudFormation API calls with AWS CloudTrail"
 ---
 
 # Logging CloudFormation API calls with AWS CloudTrail
+<a name="cfn-api-logging-cloudtrail"></a>
 
-CloudFormation is integrated with AWS CloudTrail, a service that provides a record of actions taken by a
-user, role, or an AWS service in CloudFormation. CloudTrail captures all API calls for CloudFormation as
-events, including calls from the CloudFormation console and from code calls to the CloudFormation APIs.
-If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket,
-including events for CloudFormation. If you don't configure a trail, you can still view the most
-recent events in the CloudTrail console in **Event history**. Using the information
-collected by CloudTrail, you can determine the request that was made to CloudFormation, the IP address
-from which the request was made, who made the request, when it was made, and additional
-details.
+CloudFormation is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in CloudFormation. CloudTrail captures all API calls for CloudFormation as events, including calls from the CloudFormation console and from code calls to the CloudFormation APIs. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for CloudFormation. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to CloudFormation, the IP address from which the request was made, who made the request, when it was made, and additional details.
 
-To learn more about CloudTrail, see the [AWS CloudTrail User Guide](../../../awscloudtrail/latest/userguide.md).
+To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 
-###### Topics
-
-- [CloudFormation information in CloudTrail](#cloudformation_info_in_cloudtrail)
-
-- [Understanding CloudFormation log file entries](#understanding_cloudformation_entries)
+**Topics**
++ [CloudFormation information in CloudTrail](#cloudformation_info_in_cloudtrail)
++ [Understanding CloudFormation log file entries](#understanding_cloudformation_entries)
 
 ## CloudFormation information in CloudTrail
+<a name="cloudformation_info_in_cloudtrail"></a>
 
-CloudTrail is enabled on your AWS account when you create the account. When activity occurs in
-CloudFormation, that activity is recorded in a CloudTrail event along with other AWS service events in
-**Event history**. You can view, search, and download recent events in your
-AWS account. For more information, see [Viewing events with CloudTrail event history](../../../awscloudtrail/latest/userguide/view-cloudtrail-events.md).
+CloudTrail is enabled on your AWS account when you create the account. When activity occurs in CloudFormation, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing events with CloudTrail event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html).
 
-For an ongoing record of events in your AWS account, including events for CloudFormation,
-create a trail. A trail enables CloudTrail to deliver log files to an Amazon S3 bucket. By default, when
-you create a trail in the console, the trail applies to all Regions. The trail logs events
-from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you
-specify. Additionally, you can configure other AWS services to further analyze and act upon
-the event data collected in CloudTrail logs. For more information, see:
+For an ongoing record of events in your AWS account, including events for CloudFormation, create a trail. A trail enables CloudTrail to deliver log files to an Amazon S3 bucket. By default, when you create a trail in the console, the trail applies to all Regions. The trail logs events from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you specify. Additionally, you can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs. For more information, see:
++ [Overview for creating a trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
++ [CloudTrail supported services and integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html#cloudtrail-aws-service-specific-topics-integrations)
++ [Configuring Amazon SNS notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/configure-sns-notifications-for-cloudtrail.html)
++ [Receiving CloudTrail log files from multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-- [Overview for\
-creating a trail](../../../awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.md)
+All CloudFormation actions are logged by CloudTrail and are documented in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Operations.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Operations.html). For example, calls to the `CreateStack`, `DeleteStack`, and `ListStacks` sections generate entries in the CloudTrail log files.
 
-- [CloudTrail supported services and integrations](../../../awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md#cloudtrail-aws-service-specific-topics-integrations)
+Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
++ Whether the request was made with root or IAM user credentials.
++ Whether the request was made with temporary security credentials for a role or federated user.
++ Whether the request was made by another AWS service.
 
-- [Configuring Amazon SNS\
-notifications for CloudTrail](../../../awscloudtrail/latest/userguide/configure-sns-notifications-for-cloudtrail.md)
-
-- [Receiving CloudTrail log files from multiple Regions](../../../awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.md) and [Receiving CloudTrail\
-log files from multiple accounts](../../../awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.md)
-
-All CloudFormation actions are logged by CloudTrail and are documented in the [_AWS CloudFormation API Reference_](../../../../reference/awscloudformation/latest/apireference/api-operations.md). For
-example, calls to the `CreateStack`, `DeleteStack`, and
-`ListStacks` sections generate entries in the CloudTrail log files.
-
-Every event or log entry contains information about who generated the request. The
-identity information helps you determine the following:
-
-- Whether the request was made with root or IAM user credentials.
-
-- Whether the request was made with temporary security credentials for a role or
-federated user.
-
-- Whether the request was made by another AWS service.
-
-For more information, see the [CloudTrail userIdentity\
-element](../../../awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.md).
+For more information, see the [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
 
 ## Understanding CloudFormation log file entries
+<a name="understanding_cloudformation_entries"></a>
 
-A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket
-that you specify. CloudTrail log files contain one or more log entries. An event represents a single
-request from any source and includes information about the requested operation, the date and
-time of the operation, request parameters, and so on. CloudTrail log files aren't an ordered stack
-trace of the public API calls, so they don't appear in any specific order.
+A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested operation, the date and time of the operation, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
-The following example shows a CloudTrail log entry that demonstrates the
-`CreateStack` operation. The operation was made by an IAM user named
-Alice.
+The following example shows a CloudTrail log entry that demonstrates the `CreateStack` operation. The operation was made by an IAM user named Alice.
 
-###### Note
-
+**Note**
 Only the input parameter key names are logged. Parameter values aren't logged.
 
-```json
-
+```
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -99,7 +61,7 @@ Only the input parameter key names are logged. Parameter values aren't logged.
   "sourceIPAddress": "127.0.0.1",
   "userAgent": "aws-cli/1.2.11 Python/2.7.4 Linux/2.6.18-164.el5",
   "requestParameters": {
-    "templateURL": "templateURL",
+    "templateURL": "{{templateURL}}",
     "tags": [
       {
         "key": "test",
@@ -125,11 +87,9 @@ Only the input parameter key names are logged. Parameter values aren't logged.
 }
 ```
 
-The following example shows that Alice called the `UpdateStack` operation on
-the `my-test-stack` stack:
+The following example shows that Alice called the `UpdateStack` operation on the `my-test-stack` stack:
 
-```json
-
+```
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -147,7 +107,7 @@ the `my-test-stack` stack:
   "sourceIPAddress": "127.0.0.1",
   "userAgent": "aws-cli/1.2.11 Python/2.7.4 Linux/2.6.18-164.el5",
   "requestParameters": {
-    "templateURL": "templateURL",
+    "templateURL": "{{templateURL}}",
     "parameters": [
       {
         "parameterKey": "password"
@@ -166,11 +126,9 @@ the `my-test-stack` stack:
 }
 ```
 
-The following example shows that Alice called the `ListStacks`
-operation.
+The following example shows that Alice called the `ListStacks` operation.
 
-```json
-
+```
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -194,11 +152,9 @@ operation.
 }
 ```
 
-The following example shows that Alice called the `DescribeStacks` operation on
-the `my-test-stack` stack.
+The following example shows that Alice called the `DescribeStacks` operation on the `my-test-stack` stack.
 
-```json
-
+```
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -224,11 +180,9 @@ the `my-test-stack` stack.
 }
 ```
 
-The following example shows that Alice called the `DeleteStack` operation on
-the `my-test-stack` stack.
+The following example shows that Alice called the `DeleteStack` operation on the `my-test-stack` stack.
 
-```json
-
+```
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -253,11 +207,5 @@ the `my-test-stack` stack.
   "eventID": "4965eb38-5705-4942-bb7f-20ebe79aa9aa"
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FAS requests and permission evaluation
-
-Infrastructure security
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,210 +2,145 @@
 title: "AWS::QuickSight::Theme"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme
+<a name="aws-resource-quicksight-theme"></a>
 
 Creates a theme.
 
-A _theme_ is set of configuration options for color and layout. Themes apply to analyses and
-dashboards. For more information, see [Using Themes in Amazon Quick](../../../quicksight/latest/user/themes-in-quicksight.md) in the
-_Amazon Quick User Guide_.
+A *theme* is set of configuration options for color and layout. Themes apply to analyses and dashboards. For more information, see [Using Themes in Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *Amazon Quick User Guide*.
 
 ## Syntax
+<a name="aws-resource-quicksight-theme-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-quicksight-theme-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::QuickSight::Theme",
   "Properties" : {
-      "AwsAccountId" : String,
-      "BaseThemeId" : String,
-      "Configuration" : ThemeConfiguration,
-      "Name" : String,
-      "Permissions" : [ ResourcePermission, ... ],
-      "Tags" : [ Tag, ... ],
-      "ThemeId" : String,
-      "VersionDescription" : String
+      "[AwsAccountId](#cfn-quicksight-theme-awsaccountid)" : {{String}},
+      "[BaseThemeId](#cfn-quicksight-theme-basethemeid)" : {{String}},
+      "[Configuration](#cfn-quicksight-theme-configuration)" : {{ThemeConfiguration}},
+      "[Name](#cfn-quicksight-theme-name)" : {{String}},
+      "[Permissions](#cfn-quicksight-theme-permissions)" : {{[ ResourcePermission, ... ]}},
+      "[Tags](#cfn-quicksight-theme-tags)" : {{[ Tag, ... ]}},
+      "[ThemeId](#cfn-quicksight-theme-themeid)" : {{String}},
+      "[VersionDescription](#cfn-quicksight-theme-versiondescription)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-quicksight-theme-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::QuickSight::Theme
 Properties:
-  AwsAccountId: String
-  BaseThemeId: String
-  Configuration:
-    ThemeConfiguration
-  Name: String
-  Permissions:
-    - ResourcePermission
-  Tags:
-    - Tag
-  ThemeId: String
-  VersionDescription: String
-
+  [AwsAccountId](#cfn-quicksight-theme-awsaccountid): {{String}}
+  [BaseThemeId](#cfn-quicksight-theme-basethemeid): {{String}}
+  [Configuration](#cfn-quicksight-theme-configuration): {{
+    ThemeConfiguration}}
+  [Name](#cfn-quicksight-theme-name): {{String}}
+  [Permissions](#cfn-quicksight-theme-permissions): {{
+    - ResourcePermission}}
+  [Tags](#cfn-quicksight-theme-tags): {{
+    - Tag}}
+  [ThemeId](#cfn-quicksight-theme-themeid): {{String}}
+  [VersionDescription](#cfn-quicksight-theme-versiondescription): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-quicksight-theme-properties"></a>
 
-`AwsAccountId`
-
+`AwsAccountId`  <a name="cfn-quicksight-theme-awsaccountid"></a>
 The ID of the AWS account where you want to store the new theme.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`BaseThemeId`  <a name="cfn-quicksight-theme-basethemeid"></a>
+The ID of the theme that a custom theme will inherit from. All themes inherit from one of the starting themes defined by Amazon Quick Sight. For a list of the starting themes, use `ListThemes` or choose **Themes** from within an analysis.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BaseThemeId`
-
-The ID of the theme that a custom theme will inherit from. All themes inherit from one of
-the starting themes defined by Amazon Quick Sight. For a list of the starting themes, use
-`ListThemes` or choose **Themes** from
-within an analysis.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Configuration`
-
+`Configuration`  <a name="cfn-quicksight-theme-configuration"></a>
 The theme configuration, which contains the theme display properties.
+*Required*: Yes
+*Type*: [ThemeConfiguration](aws-properties-quicksight-theme-themeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ThemeConfiguration](aws-properties-quicksight-theme-themeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-theme-name"></a>
 A display name for the theme.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Permissions`
-
+`Permissions`  <a name="cfn-quicksight-theme-permissions"></a>
 A valid grouping of resource permissions to apply to the new theme.
+*Required*: No
+*Type*: Array of [ResourcePermission](aws-properties-quicksight-theme-resourcepermission.md)
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Tags`  <a name="cfn-quicksight-theme-tags"></a>
+A map of the key-value pairs for the resource tag or tags that you want to add to the resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-quicksight-theme-tag.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [ResourcePermission](aws-properties-quicksight-theme-resourcepermission.md)
+`ThemeId`  <a name="cfn-quicksight-theme-themeid"></a>
+An ID for the theme that you want to create. The theme ID is unique per AWS Region in each AWS account.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A map of the key-value pairs for the resource tag or tags that you want to add to the
-resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-quicksight-theme-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThemeId`
-
-An ID for the theme that you want to create. The theme ID is unique per AWS Region in
-each AWS account.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VersionDescription`
-
-A description of the first version of the theme that you're creating. Every time
-`UpdateTheme` is called, a new version is created. Each version of the
-theme has a description of the version in the `VersionDescription`
-field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VersionDescription`  <a name="cfn-quicksight-theme-versiondescription"></a>
+A description of the first version of the theme that you're creating. Every time `UpdateTheme` is called, a new version is created. Each version of the theme has a description of the version in the `VersionDescription` field.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-quicksight-theme-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-quicksight-theme-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-quicksight-theme-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the theme.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The time the theme was created.
 
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 The time the theme was last updated.
 
-`Type`
-
+`Type`  <a name="Type-fn::getatt"></a>
 Theme type.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-YAxisOptions
-
-BorderStyle
 
 All content copied from https://docs.aws.amazon.com/.

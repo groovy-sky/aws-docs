@@ -2,68 +2,51 @@
 title: "AWS::Cases::CaseRule HiddenCaseRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::CaseRule HiddenCaseRule
+<a name="aws-properties-cases-caserule-hiddencaserule"></a>
 
-A rule that controls field visibility based on conditions. Fields can be shown or hidden
-dynamically based on values in other fields.
+A rule that controls field visibility based on conditions. Fields can be shown or hidden dynamically based on values in other fields.
 
 ## Syntax
+<a name="aws-properties-cases-caserule-hiddencaserule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-caserule-hiddencaserule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Conditions" : [ BooleanCondition, ... ],
-  "DefaultValue" : Boolean
+  "[Conditions](#cfn-cases-caserule-hiddencaserule-conditions)" : {{[ BooleanCondition, ... ]}},
+  "[DefaultValue](#cfn-cases-caserule-hiddencaserule-defaultvalue)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-caserule-hiddencaserule-syntax.yaml"></a>
 
-```yaml
-
-  Conditions:
-    - BooleanCondition
-  DefaultValue: Boolean
-
+```
+  [Conditions](#cfn-cases-caserule-hiddencaserule-conditions): {{
+    - BooleanCondition}}
+  [DefaultValue](#cfn-cases-caserule-hiddencaserule-defaultvalue): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-caserule-hiddencaserule-properties"></a>
 
-`Conditions`
-
+`Conditions`  <a name="cfn-cases-caserule-hiddencaserule-conditions"></a>
 A list of conditions that determine field visibility.
+*Required*: Yes
+*Type*: Array of [BooleanCondition](aws-properties-cases-caserule-booleancondition.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [BooleanCondition](aws-properties-cases-caserule-booleancondition.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-cases-caserule-hiddencaserule-defaultvalue"></a>
 Whether the field is hidden when no conditions match.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CaseRuleDetails
-
-OperandOne
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Template AxisLinearScale"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template AxisLinearScale
+<a name="aws-properties-quicksight-template-axislinearscale"></a>
 
 The liner axis scale setup.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-axislinearscale-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-axislinearscale-syntax.json"></a>
 
-```json
-
+```
 {
-  "StepCount" : Number,
-  "StepSize" : Number
+  "[StepCount](#cfn-quicksight-template-axislinearscale-stepcount)" : {{Number}},
+  "[StepSize](#cfn-quicksight-template-axislinearscale-stepsize)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-axislinearscale-syntax.yaml"></a>
 
-```yaml
-
-  StepCount: Number
-  StepSize: Number
-
+```
+  [StepCount](#cfn-quicksight-template-axislinearscale-stepcount): {{Number}}
+  [StepSize](#cfn-quicksight-template-axislinearscale-stepsize): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-axislinearscale-properties"></a>
 
-`StepCount`
-
+`StepCount`  <a name="cfn-quicksight-template-axislinearscale-stepcount"></a>
 The step count setup of a linear axis.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepSize`
-
+`StepSize`  <a name="cfn-quicksight-template-axislinearscale-stepsize"></a>
 The step size setup of a linear axis.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AxisLabelReferenceOptions
-
-AxisLogarithmicScale
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

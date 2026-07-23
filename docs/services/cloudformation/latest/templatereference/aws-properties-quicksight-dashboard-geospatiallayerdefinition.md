@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Dashboard GeospatialLayerDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialLayerDefinition
+<a name="aws-properties-quicksight-dashboard-geospatiallayerdefinition"></a>
 
 The definition properties for a geospatial layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatiallayerdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatiallayerdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "LineLayer" : GeospatialLineLayer,
-  "PointLayer" : GeospatialPointLayer,
-  "PolygonLayer" : GeospatialPolygonLayer
+  "[LineLayer](#cfn-quicksight-dashboard-geospatiallayerdefinition-linelayer)" : {{GeospatialLineLayer}},
+  "[PointLayer](#cfn-quicksight-dashboard-geospatiallayerdefinition-pointlayer)" : {{GeospatialPointLayer}},
+  "[PolygonLayer](#cfn-quicksight-dashboard-geospatiallayerdefinition-polygonlayer)" : {{GeospatialPolygonLayer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatiallayerdefinition-syntax.yaml"></a>
 
-```yaml
-
-  LineLayer:
-    GeospatialLineLayer
-  PointLayer:
-    GeospatialPointLayer
-  PolygonLayer:
-    GeospatialPolygonLayer
-
+```
+  [LineLayer](#cfn-quicksight-dashboard-geospatiallayerdefinition-linelayer): {{
+    GeospatialLineLayer}}
+  [PointLayer](#cfn-quicksight-dashboard-geospatiallayerdefinition-pointlayer): {{
+    GeospatialPointLayer}}
+  [PolygonLayer](#cfn-quicksight-dashboard-geospatiallayerdefinition-polygonlayer): {{
+    GeospatialPolygonLayer}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatiallayerdefinition-properties"></a>
 
-`LineLayer`
-
+`LineLayer`  <a name="cfn-quicksight-dashboard-geospatiallayerdefinition-linelayer"></a>
 The definition for a line layer.
+*Required*: No
+*Type*: [GeospatialLineLayer](aws-properties-quicksight-dashboard-geospatiallinelayer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialLineLayer](aws-properties-quicksight-dashboard-geospatiallinelayer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PointLayer`
-
+`PointLayer`  <a name="cfn-quicksight-dashboard-geospatiallayerdefinition-pointlayer"></a>
 The definition for a point layer.
+*Required*: No
+*Type*: [GeospatialPointLayer](aws-properties-quicksight-dashboard-geospatialpointlayer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialPointLayer](aws-properties-quicksight-dashboard-geospatialpointlayer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolygonLayer`
-
+`PolygonLayer`  <a name="cfn-quicksight-dashboard-geospatiallayerdefinition-polygonlayer"></a>
 The definition for a polygon layer.
-
-_Required_: No
-
-_Type_: [GeospatialPolygonLayer](aws-properties-quicksight-dashboard-geospatialpolygonlayer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLayerColorField
-
-GeospatialLayerItem
+*Required*: No
+*Type*: [GeospatialPolygonLayer](aws-properties-quicksight-dashboard-geospatialpolygonlayer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

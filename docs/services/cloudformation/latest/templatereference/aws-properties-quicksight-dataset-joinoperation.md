@@ -2,138 +2,98 @@
 title: "AWS::QuickSight::DataSet JoinOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet JoinOperation
+<a name="aws-properties-quicksight-dataset-joinoperation"></a>
 
 A transform operation that combines data from two sources based on specified join conditions.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-joinoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-joinoperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alias" : String,
-  "LeftOperand" : TransformOperationSource,
-  "LeftOperandProperties" : JoinOperandProperties,
-  "OnClause" : String,
-  "RightOperand" : TransformOperationSource,
-  "RightOperandProperties" : JoinOperandProperties,
-  "Type" : String
+  "[Alias](#cfn-quicksight-dataset-joinoperation-alias)" : {{String}},
+  "[LeftOperand](#cfn-quicksight-dataset-joinoperation-leftoperand)" : {{TransformOperationSource}},
+  "[LeftOperandProperties](#cfn-quicksight-dataset-joinoperation-leftoperandproperties)" : {{JoinOperandProperties}},
+  "[OnClause](#cfn-quicksight-dataset-joinoperation-onclause)" : {{String}},
+  "[RightOperand](#cfn-quicksight-dataset-joinoperation-rightoperand)" : {{TransformOperationSource}},
+  "[RightOperandProperties](#cfn-quicksight-dataset-joinoperation-rightoperandproperties)" : {{JoinOperandProperties}},
+  "[Type](#cfn-quicksight-dataset-joinoperation-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-joinoperation-syntax.yaml"></a>
 
-```yaml
-
-  Alias: String
-  LeftOperand:
-    TransformOperationSource
-  LeftOperandProperties:
-    JoinOperandProperties
-  OnClause: String
-  RightOperand:
-    TransformOperationSource
-  RightOperandProperties:
-    JoinOperandProperties
-  Type: String
-
+```
+  [Alias](#cfn-quicksight-dataset-joinoperation-alias): {{String}}
+  [LeftOperand](#cfn-quicksight-dataset-joinoperation-leftoperand): {{
+    TransformOperationSource}}
+  [LeftOperandProperties](#cfn-quicksight-dataset-joinoperation-leftoperandproperties): {{
+    JoinOperandProperties}}
+  [OnClause](#cfn-quicksight-dataset-joinoperation-onclause): {{String}}
+  [RightOperand](#cfn-quicksight-dataset-joinoperation-rightoperand): {{
+    TransformOperationSource}}
+  [RightOperandProperties](#cfn-quicksight-dataset-joinoperation-rightoperandproperties): {{
+    JoinOperandProperties}}
+  [Type](#cfn-quicksight-dataset-joinoperation-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-joinoperation-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-quicksight-dataset-joinoperation-alias"></a>
 Alias for this operation.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LeftOperand`
-
+`LeftOperand`  <a name="cfn-quicksight-dataset-joinoperation-leftoperand"></a>
 The left operand for the join operation.
+*Required*: Yes
+*Type*: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LeftOperandProperties`
-
+`LeftOperandProperties`  <a name="cfn-quicksight-dataset-joinoperation-leftoperandproperties"></a>
 Properties that control how the left operand's columns are handled in the join result.
+*Required*: No
+*Type*: [JoinOperandProperties](aws-properties-quicksight-dataset-joinoperandproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JoinOperandProperties](aws-properties-quicksight-dataset-joinoperandproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnClause`
-
+`OnClause`  <a name="cfn-quicksight-dataset-joinoperation-onclause"></a>
 The join condition that specifies how to match rows between the left and right operands.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RightOperand`
-
+`RightOperand`  <a name="cfn-quicksight-dataset-joinoperation-rightoperand"></a>
 The right operand for the join operation.
+*Required*: Yes
+*Type*: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RightOperandProperties`
-
+`RightOperandProperties`  <a name="cfn-quicksight-dataset-joinoperation-rightoperandproperties"></a>
 Properties that control how the right operand's columns are handled in the join result.
+*Required*: No
+*Type*: [JoinOperandProperties](aws-properties-quicksight-dataset-joinoperandproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JoinOperandProperties](aws-properties-quicksight-dataset-joinoperandproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dataset-joinoperation-type"></a>
 The type of join to perform, such as `INNER`, `LEFT`, `RIGHT`, or `OUTER`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INNER | OUTER | LEFT | RIGHT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JoinOperandProperties
-
-LogicalTableSource
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INNER | OUTER | LEFT | RIGHT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

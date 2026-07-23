@@ -2,86 +2,62 @@
 title: "AWS::ODB::CloudVmCluster IamRole"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudVmCluster IamRole
+<a name="aws-properties-odb-cloudvmcluster-iamrole"></a>
 
 Information about an AWS Identity and Access Management (IAM) service role associated with a resource.
 
 ## Syntax
+<a name="aws-properties-odb-cloudvmcluster-iamrole-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-odb-cloudvmcluster-iamrole-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsIntegration" : String,
-  "IamRoleArn" : String,
-  "Status" : String
+  "[AwsIntegration](#cfn-odb-cloudvmcluster-iamrole-awsintegration)" : {{String}},
+  "[IamRoleArn](#cfn-odb-cloudvmcluster-iamrole-iamrolearn)" : {{String}},
+  "[Status](#cfn-odb-cloudvmcluster-iamrole-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-odb-cloudvmcluster-iamrole-syntax.yaml"></a>
 
-```yaml
-
-  AwsIntegration: String
-  IamRoleArn: String
-  Status: String
-
+```
+  [AwsIntegration](#cfn-odb-cloudvmcluster-iamrole-awsintegration): {{String}}
+  [IamRoleArn](#cfn-odb-cloudvmcluster-iamrole-iamrolearn): {{String}}
+  [Status](#cfn-odb-cloudvmcluster-iamrole-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-odb-cloudvmcluster-iamrole-properties"></a>
 
-`AwsIntegration`
-
+`AwsIntegration`  <a name="cfn-odb-cloudvmcluster-iamrole-awsintegration"></a>
 The AWS integration configuration settings for the AWS Identity and Access Management (IAM) service role.
+*Required*: No
+*Type*: String
+*Allowed values*: `KmsTde`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `KmsTde`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IamRoleArn`
-
+`IamRoleArn`  <a name="cfn-odb-cloudvmcluster-iamrole-iamrolearn"></a>
 The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) service role.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):iam::[0-9]{12}:role/.+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):iam::[0-9]{12}:role/.+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-odb-cloudvmcluster-iamrole-status"></a>
 The current status of the AWS Identity and Access Management (IAM) service role.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ASSOCIATING | DISASSOCIATING | FAILED | CONNECTED | DISCONNECTED | PARTIALLY_CONNECTED | UNKNOWN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DbNode
-
-Tag
+*Required*: No
+*Type*: String
+*Allowed values*: `ASSOCIATING | DISASSOCIATING | FAILED | CONNECTED | DISCONNECTED | PARTIALLY_CONNECTED | UNKNOWN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

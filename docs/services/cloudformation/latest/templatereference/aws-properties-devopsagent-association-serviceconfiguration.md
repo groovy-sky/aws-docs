@@ -2,210 +2,177 @@
 title: "AWS::DevOpsAgent::Association ServiceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association ServiceConfiguration
+<a name="aws-properties-devopsagent-association-serviceconfiguration"></a>
 
-The configuration that directs how Agent Space interacts with the given service. You can specify only one
-configuration type per association.
+The configuration that directs how Agent Space interacts with the given service. You can specify only one configuration type per association.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-serviceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-serviceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Aws" : AWSConfiguration,
-  "Dynatrace" : DynatraceConfiguration,
-  "EventChannel" : EventChannelConfiguration,
-  "GitHub" : GitHubConfiguration,
-  "GitLab" : GitLabConfiguration,
-  "MCPServer" : MCPServerConfiguration,
-  "MCPServerDatadog" : MCPServerDatadogConfiguration,
-  "MCPServerNewRelic" : MCPServerNewRelicConfiguration,
-  "MCPServerSplunk" : MCPServerSplunkConfiguration,
-  "ServiceNow" : ServiceNowConfiguration,
-  "Slack" : SlackConfiguration,
-  "SourceAws" : SourceAwsConfiguration
+  "[Aws](#cfn-devopsagent-association-serviceconfiguration-aws)" : {{AWSConfiguration}},
+  "[Azure](#cfn-devopsagent-association-serviceconfiguration-azure)" : {{AzureConfiguration}},
+  "[Dynatrace](#cfn-devopsagent-association-serviceconfiguration-dynatrace)" : {{DynatraceConfiguration}},
+  "[EventChannel](#cfn-devopsagent-association-serviceconfiguration-eventchannel)" : {{EventChannelConfiguration}},
+  "[GitHub](#cfn-devopsagent-association-serviceconfiguration-github)" : {{GitHubConfiguration}},
+  "[GitLab](#cfn-devopsagent-association-serviceconfiguration-gitlab)" : {{GitLabConfiguration}},
+  "[MCPServer](#cfn-devopsagent-association-serviceconfiguration-mcpserver)" : {{MCPServerConfiguration}},
+  "[MCPServerDatadog](#cfn-devopsagent-association-serviceconfiguration-mcpserverdatadog)" : {{MCPServerDatadogConfiguration}},
+  "[MCPServerGrafana](#cfn-devopsagent-association-serviceconfiguration-mcpservergrafana)" : {{MCPServerGrafanaConfiguration}},
+  "[MCPServerNewRelic](#cfn-devopsagent-association-serviceconfiguration-mcpservernewrelic)" : {{MCPServerNewRelicConfiguration}},
+  "[MCPServerSigV4](#cfn-devopsagent-association-serviceconfiguration-mcpserversigv4)" : {{MCPServerSigV4Configuration}},
+  "[MCPServerSplunk](#cfn-devopsagent-association-serviceconfiguration-mcpserversplunk)" : {{MCPServerSplunkConfiguration}},
+  "[PagerDuty](#cfn-devopsagent-association-serviceconfiguration-pagerduty)" : {{PagerDutyConfiguration}},
+  "[ServiceNow](#cfn-devopsagent-association-serviceconfiguration-servicenow)" : {{ServiceNowConfiguration}},
+  "[Slack](#cfn-devopsagent-association-serviceconfiguration-slack)" : {{SlackConfiguration}},
+  "[SourceAws](#cfn-devopsagent-association-serviceconfiguration-sourceaws)" : {{SourceAwsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-serviceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Aws:
-    AWSConfiguration
-  Dynatrace:
-    DynatraceConfiguration
-  EventChannel:
-    EventChannelConfiguration
-  GitHub:
-    GitHubConfiguration
-  GitLab:
-    GitLabConfiguration
-  MCPServer:
-    MCPServerConfiguration
-  MCPServerDatadog:
-    MCPServerDatadogConfiguration
-  MCPServerNewRelic:
-    MCPServerNewRelicConfiguration
-  MCPServerSplunk:
-    MCPServerSplunkConfiguration
-  ServiceNow:
-    ServiceNowConfiguration
-  Slack:
-    SlackConfiguration
-  SourceAws:
-    SourceAwsConfiguration
-
+```
+  [Aws](#cfn-devopsagent-association-serviceconfiguration-aws): {{
+    AWSConfiguration}}
+  [Azure](#cfn-devopsagent-association-serviceconfiguration-azure): {{
+    AzureConfiguration}}
+  [Dynatrace](#cfn-devopsagent-association-serviceconfiguration-dynatrace): {{
+    DynatraceConfiguration}}
+  [EventChannel](#cfn-devopsagent-association-serviceconfiguration-eventchannel): {{
+    EventChannelConfiguration}}
+  [GitHub](#cfn-devopsagent-association-serviceconfiguration-github): {{
+    GitHubConfiguration}}
+  [GitLab](#cfn-devopsagent-association-serviceconfiguration-gitlab): {{
+    GitLabConfiguration}}
+  [MCPServer](#cfn-devopsagent-association-serviceconfiguration-mcpserver): {{
+    MCPServerConfiguration}}
+  [MCPServerDatadog](#cfn-devopsagent-association-serviceconfiguration-mcpserverdatadog): {{
+    MCPServerDatadogConfiguration}}
+  [MCPServerGrafana](#cfn-devopsagent-association-serviceconfiguration-mcpservergrafana): {{
+    MCPServerGrafanaConfiguration}}
+  [MCPServerNewRelic](#cfn-devopsagent-association-serviceconfiguration-mcpservernewrelic): {{
+    MCPServerNewRelicConfiguration}}
+  [MCPServerSigV4](#cfn-devopsagent-association-serviceconfiguration-mcpserversigv4): {{
+    MCPServerSigV4Configuration}}
+  [MCPServerSplunk](#cfn-devopsagent-association-serviceconfiguration-mcpserversplunk): {{
+    MCPServerSplunkConfiguration}}
+  [PagerDuty](#cfn-devopsagent-association-serviceconfiguration-pagerduty): {{
+    PagerDutyConfiguration}}
+  [ServiceNow](#cfn-devopsagent-association-serviceconfiguration-servicenow): {{
+    ServiceNowConfiguration}}
+  [Slack](#cfn-devopsagent-association-serviceconfiguration-slack): {{
+    SlackConfiguration}}
+  [SourceAws](#cfn-devopsagent-association-serviceconfiguration-sourceaws): {{
+    SourceAwsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-serviceconfiguration-properties"></a>
 
-`Aws`
+`Aws`  <a name="cfn-devopsagent-association-serviceconfiguration-aws"></a>
+Configuration for AWS monitor account integration. Specifies the account ID, assumable role ARN, and resources to be monitored in the primary monitoring account.
+*Required*: No
+*Type*: [AWSConfiguration](aws-properties-devopsagent-association-awsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration for AWS monitor account integration. Specifies the account ID, assumable role ARN,
-and resources to be monitored in the primary monitoring account.
+`Azure`  <a name="cfn-devopsagent-association-serviceconfiguration-azure"></a>
+Property description not available.
+*Required*: No
+*Type*: [AzureConfiguration](aws-properties-devopsagent-association-azureconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Dynatrace`  <a name="cfn-devopsagent-association-serviceconfiguration-dynatrace"></a>
+Configuration for Dynatrace monitoring integration. Specifies the environment ID, resources to monitor, and webhook settings to enable the Agent Space to access Dynatrace metrics, traces, and logs.
+*Required*: No
+*Type*: [DynatraceConfiguration](aws-properties-devopsagent-association-dynatraceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AWSConfiguration](aws-properties-devopsagent-association-awsconfiguration.md)
+`EventChannel`  <a name="cfn-devopsagent-association-serviceconfiguration-eventchannel"></a>
+Configuration for Event Channel integration. Specifies webhook settings to enable the Agent Space to receive and process real-time events from external systems.
+*Required*: No
+*Type*: [EventChannelConfiguration](aws-properties-devopsagent-association-eventchannelconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`GitHub`  <a name="cfn-devopsagent-association-serviceconfiguration-github"></a>
+Configuration for GitHub repository integration. Specifies the repository name, repository ID, owner, and owner type to enable the Agent Space to access code, pull requests, and issues.
+*Required*: No
+*Type*: [GitHubConfiguration](aws-properties-devopsagent-association-githubconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Dynatrace`
+`GitLab`  <a name="cfn-devopsagent-association-serviceconfiguration-gitlab"></a>
+Configuration for GitLab project integration. Specifies the project ID, project path, instance identifier, and webhook settings to enable the Agent Space to access code, merge requests, and issues.
+*Required*: No
+*Type*: [GitLabConfiguration](aws-properties-devopsagent-association-gitlabconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration for Dynatrace monitoring integration. Specifies the environment ID, resources to monitor, and
-webhook settings to enable the Agent Space to access Dynatrace metrics, traces, and logs.
+`MCPServer`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpserver"></a>
+Configuration for custom MCP (Model Context Protocol) server integration. Specifies the server name, endpoint URL, available tools, description, and webhook settings to enable the Agent Space to interact with custom MCP servers.
+*Required*: No
+*Type*: [MCPServerConfiguration](aws-properties-devopsagent-association-mcpserverconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MCPServerDatadog`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpserverdatadog"></a>
+Configuration for Datadog MCP server integration. Specifies the server name, endpoint URL, optional description, and webhook settings to enable the Agent Space to query metrics, traces, and logs from Datadog.
+*Required*: No
+*Type*: [MCPServerDatadogConfiguration](aws-properties-devopsagent-association-mcpserverdatadogconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DynatraceConfiguration](aws-properties-devopsagent-association-dynatraceconfiguration.md)
+`MCPServerGrafana`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpservergrafana"></a>
+Property description not available.
+*Required*: No
+*Type*: [MCPServerGrafanaConfiguration](aws-properties-devopsagent-association-mcpservergrafanaconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`MCPServerNewRelic`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpservernewrelic"></a>
+Configuration for New Relic MCP server integration. Specifies the New Relic account ID and MCP endpoint URL to enable the Agent Space to query metrics, traces, and logs from New Relic.
+*Required*: No
+*Type*: [MCPServerNewRelicConfiguration](aws-properties-devopsagent-association-mcpservernewrelicconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`EventChannel`
+`MCPServerSigV4`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpserversigv4"></a>
+Property description not available.
+*Required*: No
+*Type*: [MCPServerSigV4Configuration](aws-properties-devopsagent-association-mcpserversigv4configuration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration for Event Channel integration. Specifies webhook settings to enable the Agent Space to receive and
-process real-time events from external systems.
+`MCPServerSplunk`  <a name="cfn-devopsagent-association-serviceconfiguration-mcpserversplunk"></a>
+Configuration for Splunk MCP server integration. Specifies the server name, endpoint URL, optional description, and webhook settings to enable the Agent Space to query logs, metrics, and events from Splunk.
+*Required*: No
+*Type*: [MCPServerSplunkConfiguration](aws-properties-devopsagent-association-mcpserversplunkconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PagerDuty`  <a name="cfn-devopsagent-association-serviceconfiguration-pagerduty"></a>
+Property description not available.
+*Required*: No
+*Type*: [PagerDutyConfiguration](aws-properties-devopsagent-association-pagerdutyconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [EventChannelConfiguration](aws-properties-devopsagent-association-eventchannelconfiguration.md)
+`ServiceNow`  <a name="cfn-devopsagent-association-serviceconfiguration-servicenow"></a>
+Configuration for ServiceNow instance integration. Specifies the instance URL, instance ID, and webhook settings to enable the Agent Space to create, update, and manage ServiceNow incidents and change requests.
+*Required*: No
+*Type*: [ServiceNowConfiguration](aws-properties-devopsagent-association-servicenowconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Slack`  <a name="cfn-devopsagent-association-serviceconfiguration-slack"></a>
+Configuration for Slack workspace integration. Specifies the workspace ID, workspace name, and transmission targets to enable the Agent Space to send notifications to designated Slack channels.
+*Required*: No
+*Type*: [SlackConfiguration](aws-properties-devopsagent-association-slackconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`GitHub`
-
-Configuration for GitHub repository integration. Specifies the repository name, repository ID, owner, and owner
-type to enable the Agent Space to access code, pull requests, and issues.
-
-_Required_: No
-
-_Type_: [GitHubConfiguration](aws-properties-devopsagent-association-githubconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GitLab`
-
-Configuration for GitLab project integration. Specifies the project ID, project path, instance identifier, and
-webhook settings to enable the Agent Space to access code, merge requests, and issues.
-
-_Required_: No
-
-_Type_: [GitLabConfiguration](aws-properties-devopsagent-association-gitlabconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MCPServer`
-
-Configuration for custom MCP (Model Context Protocol) server integration. Specifies the server name, endpoint
-URL, available tools, description, and webhook settings to enable the Agent Space to interact with custom MCP
-servers.
-
-_Required_: No
-
-_Type_: [MCPServerConfiguration](aws-properties-devopsagent-association-mcpserverconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MCPServerDatadog`
-
-Configuration for Datadog MCP server integration. Specifies the server name, endpoint URL, optional description,
-and webhook settings to enable the Agent Space to query metrics, traces, and logs from Datadog.
-
-_Required_: No
-
-_Type_: [MCPServerDatadogConfiguration](aws-properties-devopsagent-association-mcpserverdatadogconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MCPServerNewRelic`
-
-Configuration for New Relic MCP server integration. Specifies the New Relic account ID and MCP endpoint URL to
-enable the Agent Space to query metrics, traces, and logs from New Relic.
-
-_Required_: No
-
-_Type_: [MCPServerNewRelicConfiguration](aws-properties-devopsagent-association-mcpservernewrelicconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MCPServerSplunk`
-
-Configuration for Splunk MCP server integration. Specifies the server name, endpoint URL, optional description,
-and webhook settings to enable the Agent Space to query logs, metrics, and events from Splunk.
-
-_Required_: No
-
-_Type_: [MCPServerSplunkConfiguration](aws-properties-devopsagent-association-mcpserversplunkconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceNow`
-
-Configuration for ServiceNow instance integration. Specifies the instance URL, instance ID, and webhook settings
-to enable the Agent Space to create, update, and manage ServiceNow incidents and change requests.
-
-_Required_: No
-
-_Type_: [ServiceNowConfiguration](aws-properties-devopsagent-association-servicenowconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slack`
-
-Configuration for Slack workspace integration. Specifies the workspace ID, workspace name, and transmission
-targets to enable the Agent Space to send notifications to designated Slack channels.
-
-_Required_: No
-
-_Type_: [SlackConfiguration](aws-properties-devopsagent-association-slackconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceAws`
-
-Configuration for AWS source account integration. Specifies the account ID, assumable role ARN,
-and resources to be monitored in the source account.
-
-_Required_: No
-
-_Type_: [SourceAwsConfiguration](aws-properties-devopsagent-association-sourceawsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MCPServerSplunkConfiguration
-
-ServiceNowConfiguration
+`SourceAws`  <a name="cfn-devopsagent-association-serviceconfiguration-sourceaws"></a>
+Configuration for AWS source account integration. Specifies the account ID, assumable role ARN, and resources to be monitored in the source account.
+*Required*: No
+*Type*: [SourceAwsConfiguration](aws-properties-devopsagent-association-sourceawsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

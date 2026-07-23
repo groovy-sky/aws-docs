@@ -2,64 +2,49 @@
 title: "AWS::MSK::Cluster ProvisionedThroughput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster ProvisionedThroughput
+<a name="aws-properties-msk-cluster-provisionedthroughput"></a>
 
 Contains information about provisioned throughput for EBS storage volumes attached to kafka broker nodes.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-provisionedthroughput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-provisionedthroughput-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "VolumeThroughput" : Integer
+  "[Enabled](#cfn-msk-cluster-provisionedthroughput-enabled)" : {{Boolean}},
+  "[VolumeThroughput](#cfn-msk-cluster-provisionedthroughput-volumethroughput)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-provisionedthroughput-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  VolumeThroughput: Integer
-
+```
+  [Enabled](#cfn-msk-cluster-provisionedthroughput-enabled): {{Boolean}}
+  [VolumeThroughput](#cfn-msk-cluster-provisionedthroughput-volumethroughput): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-provisionedthroughput-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-msk-cluster-provisionedthroughput-enabled"></a>
 Provisioned throughput is on or off.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VolumeThroughput`
-
+`VolumeThroughput`  <a name="cfn-msk-cluster-provisionedthroughput-volumethroughput"></a>
 Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Prometheus
-
-PublicAccess
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

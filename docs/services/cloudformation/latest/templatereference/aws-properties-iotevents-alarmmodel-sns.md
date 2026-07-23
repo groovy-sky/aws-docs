@@ -2,70 +2,52 @@
 title: "AWS::IoTEvents::AlarmModel Sns"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel Sns
+<a name="aws-properties-iotevents-alarmmodel-sns"></a>
 
 Information required to publish the Amazon SNS message.
 
 ## Syntax
+<a name="aws-properties-iotevents-alarmmodel-sns-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-alarmmodel-sns-syntax.json"></a>
 
-```json
-
+```
 {
-  "Payload" : Payload,
-  "TargetArn" : String
+  "[Payload](#cfn-iotevents-alarmmodel-sns-payload)" : {{Payload}},
+  "[TargetArn](#cfn-iotevents-alarmmodel-sns-targetarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-alarmmodel-sns-syntax.yaml"></a>
 
-```yaml
-
-  Payload:
-    Payload
-  TargetArn: String
-
+```
+  [Payload](#cfn-iotevents-alarmmodel-sns-payload): {{
+    Payload}}
+  [TargetArn](#cfn-iotevents-alarmmodel-sns-targetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-alarmmodel-sns-properties"></a>
 
-`Payload`
+`Payload`  <a name="cfn-iotevents-alarmmodel-sns-payload"></a>
+You can configure the action payload when you send a message as an Amazon SNS push notification.
+*Required*: No
+*Type*: [Payload](aws-properties-iotevents-alarmmodel-payload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You can configure the action payload when you send a message as an Amazon SNS push
-notification.
-
-_Required_: No
-
-_Type_: [Payload](aws-properties-iotevents-alarmmodel-payload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
+`TargetArn`  <a name="cfn-iotevents-alarmmodel-sns-targetarn"></a>
 The ARN of the Amazon SNS target where the message is sent.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SimpleRule
-
-Sqs
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,133 +2,102 @@
 title: "AWS::CustomerProfiles::EventStream"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventStream
+<a name="aws-resource-customerprofiles-eventstream"></a>
 
 An Event Stream resource of Amazon Connect Customer Profiles.
 
 ## Syntax
+<a name="aws-resource-customerprofiles-eventstream-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-customerprofiles-eventstream-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CustomerProfiles::EventStream",
   "Properties" : {
-      "DomainName" : String,
-      "EventStreamName" : String,
-      "Tags" : [ Tag, ... ],
-      "Uri" : String
+      "[DomainName](#cfn-customerprofiles-eventstream-domainname)" : {{String}},
+      "[EventStreamName](#cfn-customerprofiles-eventstream-eventstreamname)" : {{String}},
+      "[Tags](#cfn-customerprofiles-eventstream-tags)" : {{[ Tag, ... ]}},
+      "[Uri](#cfn-customerprofiles-eventstream-uri)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-customerprofiles-eventstream-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CustomerProfiles::EventStream
 Properties:
-  DomainName: String
-  EventStreamName: String
-  Tags:
-    - Tag
-  Uri: String
-
+  [DomainName](#cfn-customerprofiles-eventstream-domainname): {{String}}
+  [EventStreamName](#cfn-customerprofiles-eventstream-eventstreamname): {{String}}
+  [Tags](#cfn-customerprofiles-eventstream-tags): {{
+    - Tag}}
+  [Uri](#cfn-customerprofiles-eventstream-uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-customerprofiles-eventstream-properties"></a>
 
-`DomainName`
-
+`DomainName`  <a name="cfn-customerprofiles-eventstream-domainname"></a>
 The unique name of the domain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EventStreamName`
-
+`EventStreamName`  <a name="cfn-customerprofiles-eventstream-eventstreamname"></a>
 The name of the event stream.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-customerprofiles-eventstream-tags"></a>
 The tags used to organize, track, or control access for this resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-customerprofiles-eventstream-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-customerprofiles-eventstream-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Uri`
-
-The StreamARN of the destination to deliver profile events to. For example,
-arn:aws:kinesis:region:account-id:stream/stream-name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Uri`  <a name="cfn-customerprofiles-eventstream-uri"></a>
+The StreamARN of the destination to deliver profile events to. For example, arn:aws:kinesis:region:account-id:stream/stream-name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-customerprofiles-eventstream-return-values"></a>
 
 ### Ref
+<a name="aws-resource-customerprofiles-eventstream-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-customerprofiles-eventstream-return-values-fn--getatt"></a>
 
-`CreatedAt`
+####
+<a name="aws-resource-customerprofiles-eventstream-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp of when the export was created.
 
-`EventStreamArn`
-
+`EventStreamArn`  <a name="EventStreamArn-fn::getatt"></a>
 A unique identifier for the event stream.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The operational state of destination stream for export.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-DestinationDetails
 
 All content copied from https://docs.aws.amazon.com/.

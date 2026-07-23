@@ -2,90 +2,64 @@
 title: "AWS::Kendra::DataSource SalesforceKnowledgeArticleConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource SalesforceKnowledgeArticleConfiguration
+<a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration"></a>
 
-Provides the configuration information for the knowledge article types that Amazon Kendra indexes. Amazon Kendra indexes standard knowledge articles and the
-standard fields of knowledge articles, or the custom fields of custom knowledge
-articles, but not both
+Provides the configuration information for the knowledge article types that Amazon Kendra indexes. Amazon Kendra indexes standard knowledge articles and the standard fields of knowledge articles, or the custom fields of custom knowledge articles, but not both
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomKnowledgeArticleTypeConfigurations" : [ SalesforceCustomKnowledgeArticleTypeConfiguration, ... ],
-  "IncludedStates" : [ String, ... ],
-  "StandardKnowledgeArticleTypeConfiguration" : SalesforceStandardKnowledgeArticleTypeConfiguration
+  "[CustomKnowledgeArticleTypeConfigurations](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-customknowledgearticletypeconfigurations)" : {{[ SalesforceCustomKnowledgeArticleTypeConfiguration, ... ]}},
+  "[IncludedStates](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-includedstates)" : {{[ String, ... ]}},
+  "[StandardKnowledgeArticleTypeConfiguration](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-standardknowledgearticletypeconfiguration)" : {{SalesforceStandardKnowledgeArticleTypeConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomKnowledgeArticleTypeConfigurations:
-    - SalesforceCustomKnowledgeArticleTypeConfiguration
-  IncludedStates:
-    - String
-  StandardKnowledgeArticleTypeConfiguration:
-    SalesforceStandardKnowledgeArticleTypeConfiguration
-
+```
+  [CustomKnowledgeArticleTypeConfigurations](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-customknowledgearticletypeconfigurations): {{
+    - SalesforceCustomKnowledgeArticleTypeConfiguration}}
+  [IncludedStates](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-includedstates): {{
+    - String}}
+  [StandardKnowledgeArticleTypeConfiguration](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-standardknowledgearticletypeconfiguration): {{
+    SalesforceStandardKnowledgeArticleTypeConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration-properties"></a>
 
-`CustomKnowledgeArticleTypeConfigurations`
-
+`CustomKnowledgeArticleTypeConfigurations`  <a name="cfn-kendra-datasource-salesforceknowledgearticleconfiguration-customknowledgearticletypeconfigurations"></a>
 Configuration information for custom Salesforce knowledge articles.
+*Required*: No
+*Type*: Array of [SalesforceCustomKnowledgeArticleTypeConfiguration](aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IncludedStates`  <a name="cfn-kendra-datasource-salesforceknowledgearticleconfiguration-includedstates"></a>
+Specifies the document states that should be included when Amazon Kendra indexes knowledge articles. You must specify at least one state.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [SalesforceCustomKnowledgeArticleTypeConfiguration](aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludedStates`
-
-Specifies the document states that should be included when Amazon Kendra indexes
-knowledge articles. You must specify at least one state.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StandardKnowledgeArticleTypeConfiguration`
-
+`StandardKnowledgeArticleTypeConfiguration`  <a name="cfn-kendra-datasource-salesforceknowledgearticleconfiguration-standardknowledgearticletypeconfiguration"></a>
 Configuration information for standard Salesforce knowledge articles.
-
-_Required_: No
-
-_Type_: [SalesforceStandardKnowledgeArticleTypeConfiguration](aws-properties-kendra-datasource-salesforcestandardknowledgearticletypeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SalesforceCustomKnowledgeArticleTypeConfiguration
-
-SalesforceStandardKnowledgeArticleTypeConfiguration
+*Required*: No
+*Type*: [SalesforceStandardKnowledgeArticleTypeConfiguration](aws-properties-kendra-datasource-salesforcestandardknowledgearticletypeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

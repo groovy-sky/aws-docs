@@ -2,72 +2,53 @@
 title: "AWS::Wisdom::MessageTemplate AgentAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::MessageTemplate AgentAttributes
+<a name="aws-properties-wisdom-messagetemplate-agentattributes"></a>
 
 Information about an agent.
 
 ## Syntax
+<a name="aws-properties-wisdom-messagetemplate-agentattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-messagetemplate-agentattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "FirstName" : String,
-  "LastName" : String
+  "[FirstName](#cfn-wisdom-messagetemplate-agentattributes-firstname)" : {{String}},
+  "[LastName](#cfn-wisdom-messagetemplate-agentattributes-lastname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-messagetemplate-agentattributes-syntax.yaml"></a>
 
-```yaml
-
-  FirstName: String
-  LastName: String
-
+```
+  [FirstName](#cfn-wisdom-messagetemplate-agentattributes-firstname): {{String}}
+  [LastName](#cfn-wisdom-messagetemplate-agentattributes-lastname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-messagetemplate-agentattributes-properties"></a>
 
-`FirstName`
-
+`FirstName`  <a name="cfn-wisdom-messagetemplate-agentattributes-firstname"></a>
 The agent’s first name as entered in their Amazon Connect user account.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LastName`
-
+`LastName`  <a name="cfn-wisdom-messagetemplate-agentattributes-lastname"></a>
 The agent’s last name as entered in their Amazon Connect user account.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Wisdom::MessageTemplate
-
-Content
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

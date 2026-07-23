@@ -2,70 +2,52 @@
 title: "AWS::DataZone::Connection AuthorizationCodeProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection AuthorizationCodeProperties
+<a name="aws-properties-datazone-connection-authorizationcodeproperties"></a>
 
 The authorization code properties of a connection.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-authorizationcodeproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-authorizationcodeproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationCode" : String,
-  "RedirectUri" : String
+  "[AuthorizationCode](#cfn-datazone-connection-authorizationcodeproperties-authorizationcode)" : {{String}},
+  "[RedirectUri](#cfn-datazone-connection-authorizationcodeproperties-redirecturi)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-authorizationcodeproperties-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationCode: String
-  RedirectUri: String
-
+```
+  [AuthorizationCode](#cfn-datazone-connection-authorizationcodeproperties-authorizationcode): {{String}}
+  [RedirectUri](#cfn-datazone-connection-authorizationcodeproperties-redirecturi): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-authorizationcodeproperties-properties"></a>
 
-`AuthorizationCode`
-
+`AuthorizationCode`  <a name="cfn-datazone-connection-authorizationcodeproperties-authorizationcode"></a>
 The authorization code of a connection.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedirectUri`
-
+`RedirectUri`  <a name="cfn-datazone-connection-authorizationcodeproperties-redirecturi"></a>
 The redirect URI of a connection.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthenticationConfigurationInput
-
-AwsLocation
+*Required*: No
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

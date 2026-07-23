@@ -2,104 +2,71 @@
 title: "AWS::AppFlow::Flow PrefixConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow PrefixConfig
+<a name="aws-properties-appflow-flow-prefixconfig"></a>
 
-Specifies elements that Amazon AppFlow includes in the file and folder names in the flow
-destination.
+Specifies elements that Amazon AppFlow includes in the file and folder names in the flow destination.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-prefixconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-prefixconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "PathPrefixHierarchy" : [ String, ... ],
-  "PrefixFormat" : String,
-  "PrefixType" : String
+  "[PathPrefixHierarchy](#cfn-appflow-flow-prefixconfig-pathprefixhierarchy)" : {{[ String, ... ]}},
+  "[PrefixFormat](#cfn-appflow-flow-prefixconfig-prefixformat)" : {{String}},
+  "[PrefixType](#cfn-appflow-flow-prefixconfig-prefixtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-prefixconfig-syntax.yaml"></a>
 
-```yaml
-
-  PathPrefixHierarchy:
-    - String
-  PrefixFormat: String
-  PrefixType: String
-
+```
+  [PathPrefixHierarchy](#cfn-appflow-flow-prefixconfig-pathprefixhierarchy): {{
+    - String}}
+  [PrefixFormat](#cfn-appflow-flow-prefixconfig-prefixformat): {{String}}
+  [PrefixType](#cfn-appflow-flow-prefixconfig-prefixtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-prefixconfig-properties"></a>
 
-`PathPrefixHierarchy`
-
-Specifies whether the destination file path includes either or both of the following
-elements:
-
+`PathPrefixHierarchy`  <a name="cfn-appflow-flow-prefixconfig-pathprefixhierarchy"></a>
+Specifies whether the destination file path includes either or both of the following elements:
 EXECUTION\_ID
-
 The ID that Amazon AppFlow assigns to the flow run.
-
 SCHEMA\_VERSION
+The version number of your data schema. Amazon AppFlow assigns this version number. The version number increases by one when you change any of the following settings in your flow configuration:
++ Source-to-destination field mappings
++ Field data types
++ Partition keys
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The version number of your data schema. Amazon AppFlow assigns this version
-number. The version number increases by one when you change any of the following
-settings in your flow configuration:
-
-- Source-to-destination field mappings
-
-- Field data types
-
-- Partition keys
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrefixFormat`
-
+`PrefixFormat`  <a name="cfn-appflow-flow-prefixconfig-prefixformat"></a>
 Determines the level of granularity for the date and time that's included in the prefix.
+*Required*: No
+*Type*: String
+*Allowed values*: `YEAR | MONTH | DAY | HOUR | MINUTE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `YEAR | MONTH | DAY | HOUR | MINUTE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrefixType`
-
-Determines the format of the prefix, and whether it applies to the file name, file path,
-or both.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FILENAME | PATH | PATH_AND_FILENAME`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`PrefixType`  <a name="cfn-appflow-flow-prefixconfig-prefixtype"></a>
+Determines the format of the prefix, and whether it applies to the file name, file path, or both.
+*Required*: No
+*Type*: String
+*Allowed values*: `FILENAME | PATH | PATH_AND_FILENAME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [PrefixConfig](../../../../reference/appflow/1-0/apireference/api-prefixconfig.md) in the _Amazon AppFlow API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PardotSourceProperties
-
-RedshiftDestinationProperties
+<a name="aws-properties-appflow-flow-prefixconfig--seealso"></a>
++ [PrefixConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PrefixConfig.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

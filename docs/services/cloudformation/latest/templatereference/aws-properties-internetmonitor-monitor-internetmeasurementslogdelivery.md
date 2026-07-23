@@ -2,53 +2,42 @@
 title: "AWS::InternetMonitor::Monitor InternetMeasurementsLogDelivery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InternetMonitor::Monitor InternetMeasurementsLogDelivery
+<a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery"></a>
 
 Publish internet measurements to an Amazon S3 bucket in addition to CloudWatch Logs.
 
 ## Syntax
+<a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Config" : S3Config
+  "[S3Config](#cfn-internetmonitor-monitor-internetmeasurementslogdelivery-s3config)" : {{S3Config}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery-syntax.yaml"></a>
 
-```yaml
-
-  S3Config:
-    S3Config
-
+```
+  [S3Config](#cfn-internetmonitor-monitor-internetmeasurementslogdelivery-s3config): {{
+    S3Config}}
 ```
 
 ## Properties
+<a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery-properties"></a>
 
-`S3Config`
-
+`S3Config`  <a name="cfn-internetmonitor-monitor-internetmeasurementslogdelivery-s3config"></a>
 The configuration for publishing Amazon CloudWatch Internet Monitor internet measurements to Amazon S3.
-
-_Required_: No
-
-_Type_: [S3Config](aws-properties-internetmonitor-monitor-s3config.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HealthEventsConfig
-
-LocalHealthEventsConfig
+*Required*: No
+*Type*: [S3Config](aws-properties-internetmonitor-monitor-s3config.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

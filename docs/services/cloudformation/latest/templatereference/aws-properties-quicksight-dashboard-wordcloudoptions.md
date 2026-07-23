@@ -2,126 +2,88 @@
 title: "AWS::QuickSight::Dashboard WordCloudOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard WordCloudOptions
+<a name="aws-properties-quicksight-dashboard-wordcloudoptions"></a>
 
 The word cloud options for a word cloud visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-wordcloudoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-wordcloudoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudLayout" : String,
-  "MaximumStringLength" : Number,
-  "WordCasing" : String,
-  "WordOrientation" : String,
-  "WordPadding" : String,
-  "WordScaling" : String
+  "[CloudLayout](#cfn-quicksight-dashboard-wordcloudoptions-cloudlayout)" : {{String}},
+  "[MaximumStringLength](#cfn-quicksight-dashboard-wordcloudoptions-maximumstringlength)" : {{Number}},
+  "[WordCasing](#cfn-quicksight-dashboard-wordcloudoptions-wordcasing)" : {{String}},
+  "[WordOrientation](#cfn-quicksight-dashboard-wordcloudoptions-wordorientation)" : {{String}},
+  "[WordPadding](#cfn-quicksight-dashboard-wordcloudoptions-wordpadding)" : {{String}},
+  "[WordScaling](#cfn-quicksight-dashboard-wordcloudoptions-wordscaling)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-wordcloudoptions-syntax.yaml"></a>
 
-```yaml
-
-  CloudLayout: String
-  MaximumStringLength: Number
-  WordCasing: String
-  WordOrientation: String
-  WordPadding: String
-  WordScaling: String
-
+```
+  [CloudLayout](#cfn-quicksight-dashboard-wordcloudoptions-cloudlayout): {{String}}
+  [MaximumStringLength](#cfn-quicksight-dashboard-wordcloudoptions-maximumstringlength): {{Number}}
+  [WordCasing](#cfn-quicksight-dashboard-wordcloudoptions-wordcasing): {{String}}
+  [WordOrientation](#cfn-quicksight-dashboard-wordcloudoptions-wordorientation): {{String}}
+  [WordPadding](#cfn-quicksight-dashboard-wordcloudoptions-wordpadding): {{String}}
+  [WordScaling](#cfn-quicksight-dashboard-wordcloudoptions-wordscaling): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-wordcloudoptions-properties"></a>
 
-`CloudLayout`
-
+`CloudLayout`  <a name="cfn-quicksight-dashboard-wordcloudoptions-cloudlayout"></a>
 The cloud layout options (fluid, normal) of a word cloud.
+*Required*: No
+*Type*: String
+*Allowed values*: `FLUID | NORMAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FLUID | NORMAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumStringLength`
-
+`MaximumStringLength`  <a name="cfn-quicksight-dashboard-wordcloudoptions-maximumstringlength"></a>
 The length limit of each word from 1-100.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordCasing`
-
+`WordCasing`  <a name="cfn-quicksight-dashboard-wordcloudoptions-wordcasing"></a>
 The word casing options (lower\_case, existing\_case) for the words in a word cloud.
+*Required*: No
+*Type*: String
+*Allowed values*: `LOWER_CASE | EXISTING_CASE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LOWER_CASE | EXISTING_CASE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordOrientation`
-
+`WordOrientation`  <a name="cfn-quicksight-dashboard-wordcloudoptions-wordorientation"></a>
 The word orientation options (horizontal, horizontal\_and\_vertical) for the words in a word cloud.
+*Required*: No
+*Type*: String
+*Allowed values*: `HORIZONTAL | HORIZONTAL_AND_VERTICAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HORIZONTAL | HORIZONTAL_AND_VERTICAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordPadding`
-
+`WordPadding`  <a name="cfn-quicksight-dashboard-wordcloudoptions-wordpadding"></a>
 The word padding options (none, small, medium, large) for the words in a word cloud.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | SMALL | MEDIUM | LARGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | SMALL | MEDIUM | LARGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordScaling`
-
+`WordScaling`  <a name="cfn-quicksight-dashboard-wordcloudoptions-wordscaling"></a>
 The word scaling options (emphasize, normal) for the words in a word cloud.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `EMPHASIZE | NORMAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordCloudFieldWells
-
-WordCloudSortConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `EMPHASIZE | NORMAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

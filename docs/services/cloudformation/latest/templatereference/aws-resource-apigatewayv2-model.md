@@ -2,133 +2,115 @@
 title: "AWS::ApiGatewayV2::Model"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Model
+<a name="aws-resource-apigatewayv2-model"></a>
 
-The `AWS::ApiGatewayV2::Model` resource updates data model for a
-WebSocket API. For more information, see [Model Selection Expressions](../../../apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.md#apigateway-websocket-api-model-selection-expressions) in the _API Gateway Developer_
-_Guide_.
+The `AWS::ApiGatewayV2::Model` resource updates data model for a WebSocket API. For more information, see [Model Selection Expressions](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions) in the *API Gateway Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-apigatewayv2-model-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigatewayv2-model-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGatewayV2::Model",
   "Properties" : {
-      "ApiId" : String,
-      "ContentType" : String,
-      "Description" : String,
-      "Name" : String,
-      "Schema" : Json
+      "[ApiId](#cfn-apigatewayv2-model-apiid)" : {{String}},
+      "[ContentType](#cfn-apigatewayv2-model-contenttype)" : {{String}},
+      "[Description](#cfn-apigatewayv2-model-description)" : {{String}},
+      "[Name](#cfn-apigatewayv2-model-name)" : {{String}},
+      "[Schema](#cfn-apigatewayv2-model-schema)" : {{Json}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigatewayv2-model-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGatewayV2::Model
 Properties:
-  ApiId: String
-  ContentType: String
-  Description: String
-  Name: String
-  Schema: Json
-
+  [ApiId](#cfn-apigatewayv2-model-apiid): {{String}}
+  [ContentType](#cfn-apigatewayv2-model-contenttype): {{String}}
+  [Description](#cfn-apigatewayv2-model-description): {{String}}
+  [Name](#cfn-apigatewayv2-model-name): {{String}}
+  [Schema](#cfn-apigatewayv2-model-schema): {{Json}}
 ```
 
 ## Properties
+<a name="aws-resource-apigatewayv2-model-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-apigatewayv2-model-apiid"></a>
 The API identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContentType`
-
+`ContentType`  <a name="cfn-apigatewayv2-model-contenttype"></a>
 The content-type for the model, for example, "application/json".
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-apigatewayv2-model-description"></a>
 The description of the model.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-apigatewayv2-model-name"></a>
 The name of the model.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Schema`
-
+`Schema`  <a name="cfn-apigatewayv2-model-schema"></a>
 The schema for the model. For application/json models, this should be JSON schema draft 4 model.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigatewayv2-model-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigatewayv2-model-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the model ID, such as `abc123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigatewayv2-model-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ModelId`
+####
+<a name="aws-resource-apigatewayv2-model-return-values-fn--getatt-fn--getatt"></a>
 
+`ModelId`  <a name="ModelId-fn::getatt"></a>
 The model ID.
 
 ## Examples
+<a name="aws-resource-apigatewayv2-model--examples"></a>
 
 ### Model creation example
+<a name="aws-resource-apigatewayv2-model--examples--Model_creation_example"></a>
 
-The following example creates a `model` resource called
-`MyModel` for an API called
-`MyApi`.
+The following example creates a `model` resource called `MyModel` for an API called `MyApi`.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-model--examples--Model_creation_example--json"></a>
 
-```json
-
+```
 {
     "MyModel": {
         "Type": "AWS::ApiGatewayV2::Model",
@@ -154,9 +136,9 @@ The following example creates a `model` resource called
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-model--examples--Model_creation_example--yaml"></a>
 
-```yaml
-
+```
 MyModel:
   Type: 'AWS::ApiGatewayV2::Model'
   Properties:
@@ -170,18 +152,10 @@ MyModel:
       properties:
         id:
           type: string
-
 ```
 
 ## See also
-
-- [CreateModel](../../../apigatewayv2/latest/api-reference/apis-apiid-models.md#CreateModel) in the _Amazon API Gateway_
-_Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGatewayV2::IntegrationResponse
-
-AWS::ApiGatewayV2::Route
+<a name="aws-resource-apigatewayv2-model--seealso"></a>
++ [CreateModel](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-models.html#CreateModel) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

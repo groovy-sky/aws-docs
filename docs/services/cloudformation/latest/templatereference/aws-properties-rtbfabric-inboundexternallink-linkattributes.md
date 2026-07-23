@@ -2,69 +2,52 @@
 title: "AWS::RTBFabric::InboundExternalLink LinkAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::InboundExternalLink LinkAttributes
+<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes"></a>
 
-The `LinkAttributes` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
+<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-description"></a>The `LinkAttributes` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
 
 ## Syntax
+<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomerProvidedId" : String,
-  "ResponderErrorMasking" : [ ResponderErrorMaskingForHttpCode, ... ]
+  "[CustomerProvidedId](#cfn-rtbfabric-inboundexternallink-linkattributes-customerprovidedid)" : {{String}},
+  "[ResponderErrorMasking](#cfn-rtbfabric-inboundexternallink-linkattributes-respondererrormasking)" : {{[ ResponderErrorMaskingForHttpCode, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-syntax.yaml"></a>
 
-```yaml
-
-  CustomerProvidedId: String
-  ResponderErrorMasking:
-    - ResponderErrorMaskingForHttpCode
-
+```
+  [CustomerProvidedId](#cfn-rtbfabric-inboundexternallink-linkattributes-customerprovidedid): {{String}}
+  [ResponderErrorMasking](#cfn-rtbfabric-inboundexternallink-linkattributes-respondererrormasking): {{
+    - ResponderErrorMaskingForHttpCode}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-properties"></a>
 
-`CustomerProvidedId`
-
+`CustomerProvidedId`  <a name="cfn-rtbfabric-inboundexternallink-linkattributes-customerprovidedid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ResponderErrorMasking`
-
+`ResponderErrorMasking`  <a name="cfn-rtbfabric-inboundexternallink-linkattributes-respondererrormasking"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [ResponderErrorMaskingForHttpCode](aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LinkApplicationLogSampling
-
-LinkLogSettings
+*Required*: No
+*Type*: Array of [ResponderErrorMaskingForHttpCode](aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

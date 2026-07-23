@@ -2,61 +2,44 @@
 title: "AWS::GameLift::GameSessionQueue GameSessionQueueDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::GameSessionQueue GameSessionQueueDestination
+<a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination"></a>
 
-A fleet or alias designated in a game session queue. Queues fulfill requests for new
-game sessions by placing a new game session on any of the queue's destinations.
+A fleet or alias designated in a game session queue. Queues fulfill requests for new game sessions by placing a new game session on any of the queue's destinations.
 
 ## Syntax
+<a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationArn" : String
+  "[DestinationArn](#cfn-gamelift-gamesessionqueue-gamesessionqueuedestination-destinationarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination-syntax.yaml"></a>
 
-```yaml
-
-  DestinationArn: String
-
+```
+  [DestinationArn](#cfn-gamelift-gamesessionqueue-gamesessionqueuedestination-destinationarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination-properties"></a>
 
-`DestinationArn`
-
-The Amazon Resource Name (ARN) that is assigned to fleet or fleet alias. ARNs, which
-include a fleet ID or alias ID and a Region name, provide a unique identifier across all
-Regions.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9:/-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterConfiguration
-
-PlayerLatencyPolicy
+`DestinationArn`  <a name="cfn-gamelift-gamesessionqueue-gamesessionqueuedestination-destinationarn"></a>
+The Amazon Resource Name (ARN) that is assigned to fleet or fleet alias. ARNs, which include a fleet ID or alias ID and a Region name, provide a unique identifier across all Regions.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9:/-]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

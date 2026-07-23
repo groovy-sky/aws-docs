@@ -2,71 +2,53 @@
 title: "AWS::MemoryDB::User AuthenticationMode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::User AuthenticationMode
+<a name="aws-properties-memorydb-user-authenticationmode"></a>
 
 Denotes the user's authentication properties, such as whether it requires a password to authenticate. Used in output responses.
 
 ## Syntax
+<a name="aws-properties-memorydb-user-authenticationmode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-memorydb-user-authenticationmode-syntax.json"></a>
 
-```json
-
+```
 {
-  "Passwords" : [ String, ... ],
-  "Type" : String
+  "[Passwords](#cfn-memorydb-user-authenticationmode-passwords)" : {{[ String, ... ]}},
+  "[Type](#cfn-memorydb-user-authenticationmode-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-memorydb-user-authenticationmode-syntax.yaml"></a>
 
-```yaml
-
-  Passwords:
-    - String
-  Type: String
-
+```
+  [Passwords](#cfn-memorydb-user-authenticationmode-passwords): {{
+    - String}}
+  [Type](#cfn-memorydb-user-authenticationmode-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-memorydb-user-authenticationmode-properties"></a>
 
-`Passwords`
-
+`Passwords`  <a name="cfn-memorydb-user-authenticationmode-passwords"></a>
 The password(s) used for authentication
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-memorydb-user-authenticationmode-type"></a>
 Indicates whether the user requires a password to authenticate. All newly-created users require a password.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `password | iam`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MemoryDB::User
-
-Tag
+*Required*: No
+*Type*: String
+*Allowed values*: `password | iam`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

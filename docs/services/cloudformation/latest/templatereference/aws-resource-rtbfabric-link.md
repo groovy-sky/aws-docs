@@ -2,178 +2,138 @@
 title: "AWS::RTBFabric::Link"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link
+<a name="aws-resource-rtbfabric-link"></a>
 
 Creates a new link between gateways.
 
-Establishes a connection that allows gateways to communicate and exchange bid requests
-and responses.
+Establishes a connection that allows gateways to communicate and exchange bid requests and responses.
 
 ## Syntax
+<a name="aws-resource-rtbfabric-link-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rtbfabric-link-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::RTBFabric::Link",
   "Properties" : {
-      "GatewayId" : String,
-      "HttpResponderAllowed" : Boolean,
-      "LinkAttributes" : LinkAttributes,
-      "LinkLogSettings" : LinkLogSettings,
-      "ModuleConfigurationList" : [ ModuleConfiguration, ... ],
-      "PeerGatewayId" : String,
-      "Tags" : [ Tag, ... ]
+      "[GatewayId](#cfn-rtbfabric-link-gatewayid)" : {{String}},
+      "[HttpResponderAllowed](#cfn-rtbfabric-link-httpresponderallowed)" : {{Boolean}},
+      "[LinkAttributes](#cfn-rtbfabric-link-linkattributes)" : {{LinkAttributes}},
+      "[LinkLogSettings](#cfn-rtbfabric-link-linklogsettings)" : {{LinkLogSettings}},
+      "[ModuleConfigurationList](#cfn-rtbfabric-link-moduleconfigurationlist)" : {{[ ModuleConfiguration, ... ]}},
+      "[PeerGatewayId](#cfn-rtbfabric-link-peergatewayid)" : {{String}},
+      "[Tags](#cfn-rtbfabric-link-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rtbfabric-link-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::RTBFabric::Link
 Properties:
-  GatewayId: String
-  HttpResponderAllowed: Boolean
-  LinkAttributes:
-    LinkAttributes
-  LinkLogSettings:
-    LinkLogSettings
-  ModuleConfigurationList:
-    - ModuleConfiguration
-  PeerGatewayId: String
-  Tags:
-    - Tag
-
+  [GatewayId](#cfn-rtbfabric-link-gatewayid): {{String}}
+  [HttpResponderAllowed](#cfn-rtbfabric-link-httpresponderallowed): {{Boolean}}
+  [LinkAttributes](#cfn-rtbfabric-link-linkattributes): {{
+    LinkAttributes}}
+  [LinkLogSettings](#cfn-rtbfabric-link-linklogsettings): {{
+    LinkLogSettings}}
+  [ModuleConfigurationList](#cfn-rtbfabric-link-moduleconfigurationlist): {{
+    - ModuleConfiguration}}
+  [PeerGatewayId](#cfn-rtbfabric-link-peergatewayid): {{String}}
+  [Tags](#cfn-rtbfabric-link-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-rtbfabric-link-properties"></a>
 
-`GatewayId`
-
+`GatewayId`  <a name="cfn-rtbfabric-link-gatewayid"></a>
 The unique identifier of the gateway.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^rtb-gw-[a-z0-9-]{1,25}$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^rtb-gw-[a-z0-9-]{1,25}$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`HttpResponderAllowed`
-
+`HttpResponderAllowed`  <a name="cfn-rtbfabric-link-httpresponderallowed"></a>
 Boolean to specify if an HTTP responder is allowed.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LinkAttributes`
-
+`LinkAttributes`  <a name="cfn-rtbfabric-link-linkattributes"></a>
 Attributes of the link.
+*Required*: No
+*Type*: [LinkAttributes](aws-properties-rtbfabric-link-linkattributes.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
+`LinkLogSettings`  <a name="cfn-rtbfabric-link-linklogsettings"></a>
+Application log settings for the link. This value is required. Under `applicationLogs.sampling`, the `errorLog` and `filterLog` fields set the percentage of eligible events to log. Valid values range from `0` through `100`. To turn off application logs, set both fields to `0`, as in `{"applicationLogs":{"sampling":{"errorLog":0,"filterLog":0}}}`.
+*Required*: Yes
+*Type*: [LinkLogSettings](aws-properties-rtbfabric-link-linklogsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [LinkAttributes](aws-properties-rtbfabric-link-linkattributes.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LinkLogSettings`
-
-Settings for the application logs.
-
-_Required_: Yes
-
-_Type_: [LinkLogSettings](aws-properties-rtbfabric-link-linklogsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModuleConfigurationList`
-
+`ModuleConfigurationList`  <a name="cfn-rtbfabric-link-moduleconfigurationlist"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [ModuleConfiguration](aws-properties-rtbfabric-link-moduleconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ModuleConfiguration](aws-properties-rtbfabric-link-moduleconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeerGatewayId`
-
+`PeerGatewayId`  <a name="cfn-rtbfabric-link-peergatewayid"></a>
 The unique identifier of the peer gateway.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^rtb-gw-[a-z0-9-]{1,25}$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^rtb-gw-[a-z0-9-]{1,25}$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-rtbfabric-link-tags"></a>
 A map of the key-value pairs of the tag or tags to assign to the resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rtbfabric-link-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rtbfabric-link-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rtbfabric-link-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rtbfabric-link-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-rtbfabric-link-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-rtbfabric-link-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Property description not available.
 
-`CreatedTimestamp`
-
+`CreatedTimestamp`  <a name="CreatedTimestamp-fn::getatt"></a>
 Property description not available.
 
-`LinkDirection`
-
+`LinkDirection`  <a name="LinkDirection-fn::getatt"></a>
 Property description not available.
 
-`LinkId`
-
+`LinkId`  <a name="LinkId-fn::getatt"></a>
 The unique identifier of the link.
 
-`LinkStatus`
-
+`LinkStatus`  <a name="LinkStatus-fn::getatt"></a>
 Property description not available.
 
-`UpdatedTimestamp`
-
+`UpdatedTimestamp`  <a name="UpdatedTimestamp-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Action
 
 All content copied from https://docs.aws.amazon.com/.

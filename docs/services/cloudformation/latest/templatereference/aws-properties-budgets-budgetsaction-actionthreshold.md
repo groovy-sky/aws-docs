@@ -2,66 +2,50 @@
 title: "AWS::Budgets::BudgetsAction ActionThreshold"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Budgets::BudgetsAction ActionThreshold
+<a name="aws-properties-budgets-budgetsaction-actionthreshold"></a>
 
 The trigger threshold of the action.
 
 ## Syntax
+<a name="aws-properties-budgets-budgetsaction-actionthreshold-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-budgets-budgetsaction-actionthreshold-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "Value" : Number
+  "[Type](#cfn-budgets-budgetsaction-actionthreshold-type)" : {{String}},
+  "[Value](#cfn-budgets-budgetsaction-actionthreshold-value)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-budgets-budgetsaction-actionthreshold-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  Value: Number
-
+```
+  [Type](#cfn-budgets-budgetsaction-actionthreshold-type): {{String}}
+  [Value](#cfn-budgets-budgetsaction-actionthreshold-value): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-budgets-budgetsaction-actionthreshold-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-budgets-budgetsaction-actionthreshold-type"></a>
 The type of threshold for a notification.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PERCENTAGE | ABSOLUTE_VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PERCENTAGE | ABSOLUTE_VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-budgets-budgetsaction-actionthreshold-value"></a>
 The threshold of a notification.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Budgets::BudgetsAction
-
-Definition
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

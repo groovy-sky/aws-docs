@@ -2,136 +2,116 @@
 title: "AWS::Config::ConfigurationAggregator"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConfigurationAggregator
+<a name="aws-resource-config-configurationaggregator"></a>
 
-The details about the configuration aggregator, including
-information about source accounts, regions, and metadata of the
-aggregator.
+The details about the configuration aggregator, including information about source accounts, regions, and metadata of the aggregator.
 
 ## Syntax
+<a name="aws-resource-config-configurationaggregator-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-config-configurationaggregator-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Config::ConfigurationAggregator",
   "Properties" : {
-      "AccountAggregationSources" : [ AccountAggregationSource, ... ],
-      "ConfigurationAggregatorName" : String,
-      "OrganizationAggregationSource" : OrganizationAggregationSource,
-      "Tags" : [ Tag, ... ]
+      "[AccountAggregationSources](#cfn-config-configurationaggregator-accountaggregationsources)" : {{[ AccountAggregationSource, ... ]}},
+      "[ConfigurationAggregatorName](#cfn-config-configurationaggregator-configurationaggregatorname)" : {{String}},
+      "[OrganizationAggregationSource](#cfn-config-configurationaggregator-organizationaggregationsource)" : {{OrganizationAggregationSource}},
+      "[Tags](#cfn-config-configurationaggregator-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-config-configurationaggregator-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Config::ConfigurationAggregator
 Properties:
-  AccountAggregationSources:
-    - AccountAggregationSource
-  ConfigurationAggregatorName: String
-  OrganizationAggregationSource:
-    OrganizationAggregationSource
-  Tags:
-    - Tag
-
+  [AccountAggregationSources](#cfn-config-configurationaggregator-accountaggregationsources): {{
+    - AccountAggregationSource}}
+  [ConfigurationAggregatorName](#cfn-config-configurationaggregator-configurationaggregatorname): {{String}}
+  [OrganizationAggregationSource](#cfn-config-configurationaggregator-organizationaggregationsource): {{
+    OrganizationAggregationSource}}
+  [Tags](#cfn-config-configurationaggregator-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-config-configurationaggregator-properties"></a>
 
-`AccountAggregationSources`
+`AccountAggregationSources`  <a name="cfn-config-configurationaggregator-accountaggregationsources"></a>
+Provides a list of source accounts and regions to be aggregated.
+*Required*: No
+*Type*: Array of [AccountAggregationSource](aws-properties-config-configurationaggregator-accountaggregationsource.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Provides a list of source accounts and regions to be
-aggregated.
-
-_Required_: No
-
-_Type_: Array of [AccountAggregationSource](aws-properties-config-configurationaggregator-accountaggregationsource.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConfigurationAggregatorName`
-
+`ConfigurationAggregatorName`  <a name="cfn-config-configurationaggregator-configurationaggregatorname"></a>
 The name of the aggregator.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w\-]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`OrganizationAggregationSource`  <a name="cfn-config-configurationaggregator-organizationaggregationsource"></a>
+Provides an organization and list of regions to be aggregated.
+*Required*: No
+*Type*: [OrganizationAggregationSource](aws-properties-config-configurationaggregator-organizationaggregationsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[\w\-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OrganizationAggregationSource`
-
-Provides an organization and list of regions to be
-aggregated.
-
-_Required_: No
-
-_Type_: [OrganizationAggregationSource](aws-properties-config-configurationaggregator-organizationaggregationsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-config-configurationaggregator-tags"></a>
 An array of tag object.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-config-configurationaggregator-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-config-configurationaggregator-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-config-configurationaggregator-return-values"></a>
 
 ### Ref
+<a name="aws-resource-config-configurationaggregator-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ConfigurationAggregatorName, such as `myConfigurationAggregator`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-config-configurationaggregator-return-values-fn--getatt"></a>
 
-`ConfigurationAggregatorArn`
+####
+<a name="aws-resource-config-configurationaggregator-return-values-fn--getatt-fn--getatt"></a>
 
+`ConfigurationAggregatorArn`  <a name="ConfigurationAggregatorArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the aggregator.
 
 ## Examples
+<a name="aws-resource-config-configurationaggregator--examples"></a>
 
-- [Configuration Aggregator With Multiple Accounts Multiple Regions](#aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions)
-
-- [Configuration Aggregator for an Organization](#aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization)
+**Topics**
++ [Configuration Aggregator With Multiple Accounts Multiple Regions](#aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions)
++ [Configuration Aggregator for an Organization](#aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization)
 
 ### Configuration Aggregator With Multiple Accounts Multiple Regions
+<a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions"></a>
 
 The following example creates a `ConfigurationAggregator`.
 
 #### JSON
+<a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions--json"></a>
 
-```json
-
+```
 "ConfigurationAggregator": {
     "Type": "AWS::Config::ConfigurationAggregator",
     "Properties": {
@@ -154,9 +134,9 @@ The following example creates a `ConfigurationAggregator`.
 ```
 
 #### YAML
+<a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions--yaml"></a>
 
-```yaml
-
+```
 ConfigurationAggregator:
   Type: 'AWS::Config::ConfigurationAggregator'
   Properties:
@@ -172,21 +152,19 @@ ConfigurationAggregator:
 ```
 
 ### Configuration Aggregator for an Organization
+<a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization"></a>
 
 The following example creates a `ConfigurationAggregator` for an organization.
 
-**Considerations**
-
-- The aggregator account must be the management account or a delegated administrator account in the organization
-
-- AWS Config must be enabled with proper service access in the organization
-
-- The role must have proper permissions to call AWS Organizations APIs
+ **Considerations**
++ The aggregator account must be the management account or a delegated administrator account in the organization
++ AWS Config must be enabled with proper service access in the organization
++ The role must have proper permissions to call AWS Organizations APIs
 
 #### JSON
+<a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization--json"></a>
 
-```json
-
+```
 "ConfigurationAggregator": {
     "Type": "AWS::Config::ConfigurationAggregator",
     "Properties": {
@@ -245,9 +223,9 @@ The following example creates a `ConfigurationAggregator` for an organization.
 ```
 
 #### YAML
+<a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization--yaml"></a>
 
-```yaml
-
+```
 ConfigurationAggregator:
     Type: 'AWS::Config::ConfigurationAggregator'
     Properties:
@@ -286,11 +264,5 @@ MyRole:
                         - organizations:ListAccounts
                       Resource: "*"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SourceDetail
-
-AccountAggregationSource
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,52 @@
 title: "AWS::DataBrew::Recipe RecipeStep"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Recipe RecipeStep
+<a name="aws-properties-databrew-recipe-recipestep"></a>
 
 Represents a single step from a DataBrew recipe to be performed.
 
 ## Syntax
+<a name="aws-properties-databrew-recipe-recipestep-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-recipe-recipestep-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : Action,
-  "ConditionExpressions" : [ ConditionExpression, ... ]
+  "[Action](#cfn-databrew-recipe-recipestep-action)" : {{Action}},
+  "[ConditionExpressions](#cfn-databrew-recipe-recipestep-conditionexpressions)" : {{[ ConditionExpression, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-recipe-recipestep-syntax.yaml"></a>
 
-```yaml
-
-  Action:
-    Action
-  ConditionExpressions:
-    - ConditionExpression
-
+```
+  [Action](#cfn-databrew-recipe-recipestep-action): {{
+    Action}}
+  [ConditionExpressions](#cfn-databrew-recipe-recipestep-conditionexpressions): {{
+    - ConditionExpression}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-recipe-recipestep-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-databrew-recipe-recipestep-action"></a>
 The particular action to be performed in the recipe step.
+*Required*: Yes
+*Type*: [Action](aws-properties-databrew-recipe-action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Action](aws-properties-databrew-recipe-action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConditionExpressions`
-
+`ConditionExpressions`  <a name="cfn-databrew-recipe-recipestep-conditionexpressions"></a>
 One or more conditions that must be met for the recipe step to succeed.
-
-###### Note
-
-All of the conditions in the array must be met. In other words, all of the
-conditions must be combined using a logical AND operation.
-
-_Required_: No
-
-_Type_: Array of [ConditionExpression](aws-properties-databrew-recipe-conditionexpression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RecipeParameters
-
-S3Location
+All of the conditions in the array must be met. In other words, all of the conditions must be combined using a logical AND operation.
+*Required*: No
+*Type*: Array of [ConditionExpression](aws-properties-databrew-recipe-conditionexpression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,83 +2,62 @@
 title: "AWS::FIS::ExperimentTemplate ExperimentTemplateLogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FIS::ExperimentTemplate ExperimentTemplateLogConfiguration
+<a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration"></a>
 
 Specifies the configuration for experiment logging.
 
-For more information, see [Experiment logging](../../../fis/latest/userguide/monitoring-logging.md)
-in the _AWS Fault Injection Service User Guide_.
+For more information, see [Experiment logging](https://docs.aws.amazon.com/fis/latest/userguide/monitoring-logging.html) in the *AWS Fault Injection Service User Guide*.
 
 ## Syntax
+<a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogsConfiguration" : CloudWatchLogsConfiguration,
-  "LogSchemaVersion" : Integer,
-  "S3Configuration" : S3Configuration
+  "[CloudWatchLogsConfiguration](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-cloudwatchlogsconfiguration)" : {{CloudWatchLogsConfiguration}},
+  "[LogSchemaVersion](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-logschemaversion)" : {{Integer}},
+  "[S3Configuration](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-s3configuration)" : {{S3Configuration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogsConfiguration:
-    CloudWatchLogsConfiguration
-  LogSchemaVersion: Integer
-  S3Configuration:
-    S3Configuration
-
+```
+  [CloudWatchLogsConfiguration](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-cloudwatchlogsconfiguration): {{
+    CloudWatchLogsConfiguration}}
+  [LogSchemaVersion](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-logschemaversion): {{Integer}}
+  [S3Configuration](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-s3configuration): {{
+    S3Configuration}}
 ```
 
 ## Properties
+<a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration-properties"></a>
 
-`CloudWatchLogsConfiguration`
-
+`CloudWatchLogsConfiguration`  <a name="cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-cloudwatchlogsconfiguration"></a>
 The configuration for experiment logging to CloudWatch Logs.
+*Required*: No
+*Type*: [CloudWatchLogsConfiguration](aws-properties-fis-experimenttemplate-cloudwatchlogsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudWatchLogsConfiguration](aws-properties-fis-experimenttemplate-cloudwatchlogsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogSchemaVersion`
-
+`LogSchemaVersion`  <a name="cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-logschemaversion"></a>
 The schema version.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Configuration`
-
+`S3Configuration`  <a name="cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-s3configuration"></a>
 The configuration for experiment logging to Amazon S3.
-
-_Required_: No
-
-_Type_: [S3Configuration](aws-properties-fis-experimenttemplate-s3configuration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExperimentTemplateExperimentReportConfiguration
-
-ExperimentTemplateStopCondition
+*Required*: No
+*Type*: [S3Configuration](aws-properties-fis-experimenttemplate-s3configuration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

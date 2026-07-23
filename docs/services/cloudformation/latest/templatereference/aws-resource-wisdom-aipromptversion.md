@@ -2,108 +2,88 @@
 title: "AWS::Wisdom::AIPromptVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIPromptVersion
+<a name="aws-resource-wisdom-aipromptversion"></a>
 
 Creates an Amazon Q in Connect AI Prompt version.
 
 ## Syntax
+<a name="aws-resource-wisdom-aipromptversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-wisdom-aipromptversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Wisdom::AIPromptVersion",
   "Properties" : {
-      "AIPromptId" : String,
-      "AssistantId" : String,
-      "ModifiedTimeSeconds" : Number
+      "[AIPromptId](#cfn-wisdom-aipromptversion-aipromptid)" : {{String}},
+      "[AssistantId](#cfn-wisdom-aipromptversion-assistantid)" : {{String}},
+      "[ModifiedTimeSeconds](#cfn-wisdom-aipromptversion-modifiedtimeseconds)" : {{Number}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-wisdom-aipromptversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Wisdom::AIPromptVersion
 Properties:
-  AIPromptId: String
-  AssistantId: String
-  ModifiedTimeSeconds: Number
-
+  [AIPromptId](#cfn-wisdom-aipromptversion-aipromptid): {{String}}
+  [AssistantId](#cfn-wisdom-aipromptversion-assistantid): {{String}}
+  [ModifiedTimeSeconds](#cfn-wisdom-aipromptversion-modifiedtimeseconds): {{Number}}
 ```
 
 ## Properties
+<a name="aws-resource-wisdom-aipromptversion-properties"></a>
 
-`AIPromptId`
-
+`AIPromptId`  <a name="cfn-wisdom-aipromptversion-aipromptid"></a>
 The identifier of the Amazon Q in Connect AI prompt.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`AssistantId`  <a name="cfn-wisdom-aipromptversion-assistantid"></a>
+The identifier of the Amazon Q in Connect assistant. Can be either the ID or the ARN. URLs cannot contain the ARN.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AssistantId`
-
-The identifier of the Amazon Q in Connect assistant. Can be either the ID or the ARN.
-URLs cannot contain the ARN.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModifiedTimeSeconds`
-
+`ModifiedTimeSeconds`  <a name="cfn-wisdom-aipromptversion-modifiedtimeseconds"></a>
 The time the AI Prompt version was last modified in seconds.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Number
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-wisdom-aipromptversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-wisdom-aipromptversion-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-wisdom-aipromptversion-return-values-fn--getatt"></a>
 
-`AIPromptArn`
+####
+<a name="aws-resource-wisdom-aipromptversion-return-values-fn--getatt-fn--getatt"></a>
 
+`AIPromptArn`  <a name="AIPromptArn-fn::getatt"></a>
 The ARN of the AI prompt.
 
-`AIPromptVersionId`
-
+`AIPromptVersionId`  <a name="AIPromptVersionId-fn::getatt"></a>
 Property description not available.
 
-`AssistantArn`
-
+`AssistantArn`  <a name="AssistantArn-fn::getatt"></a>
 Property description not available.
 
-`VersionNumber`
-
+`VersionNumber`  <a name="VersionNumber-fn::getatt"></a>
 The version number for this AI Prompt version.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TextFullAIPromptEditTemplateConfiguration
-
-AWS::Wisdom::Assistant
 
 All content copied from https://docs.aws.amazon.com/.

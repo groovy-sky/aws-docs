@@ -2,108 +2,82 @@
 title: "AWS::EC2::NetworkPerformanceMetricSubscription"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkPerformanceMetricSubscription
+<a name="aws-resource-ec2-networkperformancemetricsubscription"></a>
 
 Describes Infrastructure Performance subscriptions.
 
 ## Syntax
+<a name="aws-resource-ec2-networkperformancemetricsubscription-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-networkperformancemetricsubscription-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::NetworkPerformanceMetricSubscription",
   "Properties" : {
-      "Destination" : String,
-      "Metric" : String,
-      "Source" : String,
-      "Statistic" : String
+      "[Destination](#cfn-ec2-networkperformancemetricsubscription-destination)" : {{String}},
+      "[Metric](#cfn-ec2-networkperformancemetricsubscription-metric)" : {{String}},
+      "[Source](#cfn-ec2-networkperformancemetricsubscription-source)" : {{String}},
+      "[Statistic](#cfn-ec2-networkperformancemetricsubscription-statistic)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-networkperformancemetricsubscription-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::NetworkPerformanceMetricSubscription
 Properties:
-  Destination: String
-  Metric: String
-  Source: String
-  Statistic: String
-
+  [Destination](#cfn-ec2-networkperformancemetricsubscription-destination): {{String}}
+  [Metric](#cfn-ec2-networkperformancemetricsubscription-metric): {{String}}
+  [Source](#cfn-ec2-networkperformancemetricsubscription-source): {{String}}
+  [Statistic](#cfn-ec2-networkperformancemetricsubscription-statistic): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-networkperformancemetricsubscription-properties"></a>
 
-`Destination`
-
+`Destination`  <a name="cfn-ec2-networkperformancemetricsubscription-destination"></a>
 The Region or Availability Zone that's the target for the subscription. For example, `eu-west-1`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Metric`
-
+`Metric`  <a name="cfn-ec2-networkperformancemetricsubscription-metric"></a>
 The metric used for the subscription.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `aggregate-latency`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `aggregate-latency`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Source`
-
+`Source`  <a name="cfn-ec2-networkperformancemetricsubscription-source"></a>
 The Region or Availability Zone that's the source for the subscription. For example, `us-east-1`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Statistic`
-
+`Statistic`  <a name="cfn-ec2-networkperformancemetricsubscription-statistic"></a>
 The statistic used for the subscription.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `p50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `p50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-networkperformancemetricsubscription-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-networkperformancemetricsubscription-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `primaryIdentifier` property, which consists of
-the following properties: `source`, `destination`, `metric`,
-and `statistic`, with each value separated by a pipe (\|). For example,
-`{ "Ref": "us-east-1|us-east-2|aggregate-latency|p50" }`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `primaryIdentifier` property, which consists of the following properties: `source`, `destination`, `metric`, and `statistic`, with each value separated by a pipe (\|). For example, `{ "Ref": "us-east-1|us-east-2|aggregate-latency|p50" }`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::NetworkInterfacePermission
-
-AWS::EC2::PlacementGroup
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

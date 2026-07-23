@@ -2,108 +2,88 @@
 title: "AWS::WorkSpacesWeb::UserAccessLoggingSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::UserAccessLoggingSettings
+<a name="aws-resource-workspacesweb-useraccessloggingsettings"></a>
 
 This resource specifies user access logging settings that can be associated with a web portal.
 
-In order to receive logs from WorkSpaces Secure Browser, you must have an Amazon Kinesis Data Stream that
-starts with "amazon-workspaces-web-\*". Your Amazon Kinesis data stream must either have server-side
-encryption turned off, or must use AWS managed keys for server-side encryption.
+In order to receive logs from WorkSpaces Secure Browser, you must have an Amazon Kinesis Data Stream that starts with "amazon-workspaces-web-\*". Your Amazon Kinesis data stream must either have server-side encryption turned off, or must use AWS managed keys for server-side encryption.
 
-For more information about setting server-side encryption in Amazon Kinesis, see [How Do I Get\
-Started with Server-Side Encryption?](../../../streams/latest/dev/getting-started-with-sse.md).
+For more information about setting server-side encryption in Amazon Kinesis, see [How Do I Get Started with Server-Side Encryption?](https://docs.aws.amazon.com/streams/latest/dev/getting-started-with-sse.html).
 
-For more information about setting up user access logging, see [Set up user access logging](../../../workspaces-web/latest/adminguide/user-logging.md).
+For more information about setting up user access logging, see [Set up user access logging](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/user-logging.html).
 
 ## Syntax
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::WorkSpacesWeb::UserAccessLoggingSettings",
   "Properties" : {
-      "KinesisStreamArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[KinesisStreamArn](#cfn-workspacesweb-useraccessloggingsettings-kinesisstreamarn)" : {{String}},
+      "[Tags](#cfn-workspacesweb-useraccessloggingsettings-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::WorkSpacesWeb::UserAccessLoggingSettings
 Properties:
-  KinesisStreamArn: String
-  Tags:
-    - Tag
-
+  [KinesisStreamArn](#cfn-workspacesweb-useraccessloggingsettings-kinesisstreamarn): {{String}}
+  [Tags](#cfn-workspacesweb-useraccessloggingsettings-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-properties"></a>
 
-`KinesisStreamArn`
-
+`KinesisStreamArn`  <a name="cfn-workspacesweb-useraccessloggingsettings-kinesisstreamarn"></a>
 The ARN of the Kinesis stream.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:[\w+=/,.@-]+:kinesis:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:stream/.+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:[\w+=/,.@-]+:kinesis:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:stream/.+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-workspacesweb-useraccessloggingsettings-tags"></a>
 The tags to add to the user access logging settings resource. A tag is a key-value pair.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-workspacesweb-useraccessloggingsettings-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-workspacesweb-useraccessloggingsettings-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-return-values"></a>
 
 ### Ref
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the resource's Amazon Resource Name (ARN).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource's Amazon Resource Name (ARN).
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-return-values-fn--getatt"></a>
 
-`AssociatedPortalArns`
+####
+<a name="aws-resource-workspacesweb-useraccessloggingsettings-return-values-fn--getatt-fn--getatt"></a>
 
+`AssociatedPortalArns`  <a name="AssociatedPortalArns-fn::getatt"></a>
 A list of web portal ARNs that this user access logging settings is associated with.
 
-`UserAccessLoggingSettingsArn`
-
+`UserAccessLoggingSettingsArn`  <a name="UserAccessLoggingSettingsArn-fn::getatt"></a>
 The ARN of the user access logging settings.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

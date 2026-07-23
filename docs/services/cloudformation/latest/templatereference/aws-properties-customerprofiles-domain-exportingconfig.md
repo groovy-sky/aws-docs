@@ -2,54 +2,42 @@
 title: "AWS::CustomerProfiles::Domain ExportingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Domain ExportingConfig
+<a name="aws-properties-customerprofiles-domain-exportingconfig"></a>
 
-Configuration information for exporting Identity Resolution results, for example, to
-an S3 bucket.
+Configuration information for exporting Identity Resolution results, for example, to an S3 bucket.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-domain-exportingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-domain-exportingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Exporting" : S3ExportingConfig
+  "[S3Exporting](#cfn-customerprofiles-domain-exportingconfig-s3exporting)" : {{S3ExportingConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-domain-exportingconfig-syntax.yaml"></a>
 
-```yaml
-
-  S3Exporting:
-    S3ExportingConfig
-
+```
+  [S3Exporting](#cfn-customerprofiles-domain-exportingconfig-s3exporting): {{
+    S3ExportingConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-domain-exportingconfig-properties"></a>
 
-`S3Exporting`
-
+`S3Exporting`  <a name="cfn-customerprofiles-domain-exportingconfig-s3exporting"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [S3ExportingConfig](aws-properties-customerprofiles-domain-s3exportingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DomainStats
-
-JobSchedule
+*Required*: No
+*Type*: [S3ExportingConfig](aws-properties-customerprofiles-domain-s3exportingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,136 +2,97 @@
 title: "AWS::MSK::Replicator TopicReplication"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator TopicReplication
+<a name="aws-properties-msk-replicator-topicreplication"></a>
 
 Details about topic replication.
 
 ## Syntax
+<a name="aws-properties-msk-replicator-topicreplication-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-replicator-topicreplication-syntax.json"></a>
 
-```json
-
+```
 {
-  "CopyAccessControlListsForTopics" : Boolean,
-  "CopyTopicConfigurations" : Boolean,
-  "DetectAndCopyNewTopics" : Boolean,
-  "StartingPosition" : ReplicationStartingPosition,
-  "TopicNameConfiguration" : ReplicationTopicNameConfiguration,
-  "TopicsToExclude" : [ String, ... ],
-  "TopicsToReplicate" : [ String, ... ]
+  "[CopyAccessControlListsForTopics](#cfn-msk-replicator-topicreplication-copyaccesscontrollistsfortopics)" : {{Boolean}},
+  "[CopyTopicConfigurations](#cfn-msk-replicator-topicreplication-copytopicconfigurations)" : {{Boolean}},
+  "[DetectAndCopyNewTopics](#cfn-msk-replicator-topicreplication-detectandcopynewtopics)" : {{Boolean}},
+  "[StartingPosition](#cfn-msk-replicator-topicreplication-startingposition)" : {{ReplicationStartingPosition}},
+  "[TopicNameConfiguration](#cfn-msk-replicator-topicreplication-topicnameconfiguration)" : {{ReplicationTopicNameConfiguration}},
+  "[TopicsToExclude](#cfn-msk-replicator-topicreplication-topicstoexclude)" : {{[ String, ... ]}},
+  "[TopicsToReplicate](#cfn-msk-replicator-topicreplication-topicstoreplicate)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-replicator-topicreplication-syntax.yaml"></a>
 
-```yaml
-
-  CopyAccessControlListsForTopics: Boolean
-  CopyTopicConfigurations: Boolean
-  DetectAndCopyNewTopics: Boolean
-  StartingPosition:
-    ReplicationStartingPosition
-  TopicNameConfiguration:
-    ReplicationTopicNameConfiguration
-  TopicsToExclude:
-    - String
-  TopicsToReplicate:
-    - String
-
+```
+  [CopyAccessControlListsForTopics](#cfn-msk-replicator-topicreplication-copyaccesscontrollistsfortopics): {{Boolean}}
+  [CopyTopicConfigurations](#cfn-msk-replicator-topicreplication-copytopicconfigurations): {{Boolean}}
+  [DetectAndCopyNewTopics](#cfn-msk-replicator-topicreplication-detectandcopynewtopics): {{Boolean}}
+  [StartingPosition](#cfn-msk-replicator-topicreplication-startingposition): {{
+    ReplicationStartingPosition}}
+  [TopicNameConfiguration](#cfn-msk-replicator-topicreplication-topicnameconfiguration): {{
+    ReplicationTopicNameConfiguration}}
+  [TopicsToExclude](#cfn-msk-replicator-topicreplication-topicstoexclude): {{
+    - String}}
+  [TopicsToReplicate](#cfn-msk-replicator-topicreplication-topicstoreplicate): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-replicator-topicreplication-properties"></a>
 
-`CopyAccessControlListsForTopics`
-
+`CopyAccessControlListsForTopics`  <a name="cfn-msk-replicator-topicreplication-copyaccesscontrollistsfortopics"></a>
 Whether to periodically configure remote topic ACLs to match their corresponding upstream topics.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CopyTopicConfigurations`
-
+`CopyTopicConfigurations`  <a name="cfn-msk-replicator-topicreplication-copytopicconfigurations"></a>
 Whether to periodically configure remote topics to match their corresponding upstream topics.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DetectAndCopyNewTopics`
-
+`DetectAndCopyNewTopics`  <a name="cfn-msk-replicator-topicreplication-detectandcopynewtopics"></a>
 Whether to periodically check for new topics and partitions.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartingPosition`
-
+`StartingPosition`  <a name="cfn-msk-replicator-topicreplication-startingposition"></a>
 Specifies the position in the topics to start replicating from.
+*Required*: No
+*Type*: [ReplicationStartingPosition](aws-properties-msk-replicator-replicationstartingposition.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ReplicationStartingPosition](aws-properties-msk-replicator-replicationstartingposition.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TopicNameConfiguration`
-
+`TopicNameConfiguration`  <a name="cfn-msk-replicator-topicreplication-topicnameconfiguration"></a>
 Configuration for specifying replicated topic names will be the same as their corresponding upstream topics or prefixed with source cluster alias.
+*Required*: No
+*Type*: [ReplicationTopicNameConfiguration](aws-properties-msk-replicator-replicationtopicnameconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ReplicationTopicNameConfiguration](aws-properties-msk-replicator-replicationtopicnameconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TopicsToExclude`
-
+`TopicsToExclude`  <a name="cfn-msk-replicator-topicreplication-topicstoexclude"></a>
 List of regular expression patterns indicating the topics that should not be replicated.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `249 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `249 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopicsToReplicate`
-
+`TopicsToReplicate`  <a name="cfn-msk-replicator-topicreplication-topicstoreplicate"></a>
 List of regular expression patterns indicating the topics to copy.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `249 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::MSK::ServerlessCluster
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `249 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

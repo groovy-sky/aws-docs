@@ -2,64 +2,49 @@
 title: "AWS::EC2::TrafficMirrorFilterRule TrafficMirrorPortRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TrafficMirrorFilterRule TrafficMirrorPortRange
+<a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange"></a>
 
 Describes the Traffic Mirror port range.
 
 ## Syntax
+<a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "FromPort" : Integer,
-  "ToPort" : Integer
+  "[FromPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-fromport)" : {{Integer}},
+  "[ToPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-toport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange-syntax.yaml"></a>
 
-```yaml
-
-  FromPort: Integer
-  ToPort: Integer
-
+```
+  [FromPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-fromport): {{Integer}}
+  [ToPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-toport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange-properties"></a>
 
-`FromPort`
-
+`FromPort`  <a name="cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-fromport"></a>
 The start of the Traffic Mirror port range. This applies to the TCP and UDP protocols.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToPort`
-
+`ToPort`  <a name="cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-toport"></a>
 The end of the Traffic Mirror port range. This applies to the TCP and UDP protocols.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::TrafficMirrorSession
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

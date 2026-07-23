@@ -2,115 +2,93 @@
 title: "AWS::WorkSpaces::ConnectionAlias"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpaces::ConnectionAlias
+<a name="aws-resource-workspaces-connectionalias"></a>
 
-The `AWS::WorkSpaces::ConnectionAlias` resource specifies a connection alias.
-Connection aliases are used for cross-Region redirection. For more information, see [Cross-Region Redirection for Amazon WorkSpaces](../../../workspaces/latest/adminguide/cross-region-redirection.md).
+The `AWS::WorkSpaces::ConnectionAlias` resource specifies a connection alias. Connection aliases are used for cross-Region redirection. For more information, see [ Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html).
 
 ## Syntax
+<a name="aws-resource-workspaces-connectionalias-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-workspaces-connectionalias-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::WorkSpaces::ConnectionAlias",
   "Properties" : {
-      "ConnectionString" : String,
-      "Tags" : [ Tag, ... ]
+      "[ConnectionString](#cfn-workspaces-connectionalias-connectionstring)" : {{String}},
+      "[Tags](#cfn-workspaces-connectionalias-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-workspaces-connectionalias-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::WorkSpaces::ConnectionAlias
 Properties:
-  ConnectionString:
-    String
-  Tags:
-    - Tag
-
+  [ConnectionString](#cfn-workspaces-connectionalias-connectionstring): {{
+    String}}
+  [Tags](#cfn-workspaces-connectionalias-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-workspaces-connectionalias-properties"></a>
 
-`ConnectionString`
+`ConnectionString`  <a name="cfn-workspaces-connectionalias-connectionstring"></a>
+The connection string specified for the connection alias. The connection string must be in the form of a fully qualified domain name (FQDN), such as `www.example.com`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[.0-9a-zA-Z\-]{1,255}$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The connection string specified for the connection alias. The connection string must be
-in the form of a fully qualified domain name (FQDN), such as
-`www.example.com`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[.0-9a-zA-Z\-]{1,255}$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-workspaces-connectionalias-tags"></a>
 The tags to associate with the connection alias.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-workspaces-connectionalias-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-workspaces-connectionalias-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-workspaces-connectionalias-return-values"></a>
 
 ### Ref
+<a name="aws-resource-workspaces-connectionalias-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-workspaces-connectionalias-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AliasId`
+####
+<a name="aws-resource-workspaces-connectionalias-return-values-fn--getatt-fn--getatt"></a>
 
+`AliasId`  <a name="AliasId-fn::getatt"></a>
 The identifier of the connection alias, returned as a string.
 
-`Associations`
-
+`Associations`  <a name="Associations-fn::getatt"></a>
 The association status of the connection alias.
 
-`ConnectionAliasState`
-
+`ConnectionAliasState`  <a name="ConnectionAliasState-fn::getatt"></a>
 The current state of the connection alias, returned as a string.
 
 ## See also
-
-- [ConnectionAlias](../../../workspaces/latest/api/api-connectionalias.md) in the _Amazon WorkSpaces API_
-_Reference_
-
-- [Cross-Region\
-Redirection for Amazon WorkSpaces](../../../workspaces/latest/adminguide/cross-region-redirection.md) in the _Amazon WorkSpaces_
-_Administration Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon WorkSpaces
-
-ConnectionAliasAssociation
+<a name="aws-resource-workspaces-connectionalias--seealso"></a>
++ [ConnectionAlias](https://docs.aws.amazon.com/workspaces/latest/api/API_ConnectionAlias.html) in the *Amazon WorkSpaces API Reference*
++ [Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html) in the *Amazon WorkSpaces Administration Guide*
 
 All content copied from https://docs.aws.amazon.com/.

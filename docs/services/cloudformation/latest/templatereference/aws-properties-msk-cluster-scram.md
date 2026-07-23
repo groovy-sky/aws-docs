@@ -2,52 +2,41 @@
 title: "AWS::MSK::Cluster Scram"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster Scram
+<a name="aws-properties-msk-cluster-scram"></a>
 
 Details for SASL/SCRAM client authentication.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-scram-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-scram-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-msk-cluster-scram-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-scram-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-msk-cluster-scram-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-scram-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-msk-cluster-scram-enabled"></a>
 SASL/SCRAM authentication is enabled or not.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Sasl
-
-StorageInfo
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

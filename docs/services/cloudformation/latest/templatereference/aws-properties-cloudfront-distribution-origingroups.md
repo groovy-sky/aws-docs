@@ -2,65 +2,50 @@
 title: "AWS::CloudFront::Distribution OriginGroups"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution OriginGroups
+<a name="aws-properties-cloudfront-distribution-origingroups"></a>
 
 A complex data type for the origin groups specified for a distribution.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-origingroups-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-origingroups-syntax.json"></a>
 
-```json
-
+```
 {
-  "Items" : [ OriginGroup, ... ],
-  "Quantity" : Integer
+  "[Items](#cfn-cloudfront-distribution-origingroups-items)" : {{[ OriginGroup, ... ]}},
+  "[Quantity](#cfn-cloudfront-distribution-origingroups-quantity)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-origingroups-syntax.yaml"></a>
 
-```yaml
-
-  Items:
-    - OriginGroup
-  Quantity: Integer
-
+```
+  [Items](#cfn-cloudfront-distribution-origingroups-items): {{
+    - OriginGroup}}
+  [Quantity](#cfn-cloudfront-distribution-origingroups-quantity): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-origingroups-properties"></a>
 
-`Items`
-
+`Items`  <a name="cfn-cloudfront-distribution-origingroups-items"></a>
 The items (origin groups) in a distribution.
+*Required*: No
+*Type*: Array of [OriginGroup](aws-properties-cloudfront-distribution-origingroup.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [OriginGroup](aws-properties-cloudfront-distribution-origingroup.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Quantity`
-
+`Quantity`  <a name="cfn-cloudfront-distribution-origingroups-quantity"></a>
 The number of origin groups.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OriginGroupMembers
-
-OriginMtlsConfig
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

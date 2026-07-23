@@ -2,76 +2,57 @@
 title: "AWS::QuickSight::Dashboard StaticFileS3SourceOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard StaticFileS3SourceOptions
+<a name="aws-properties-quicksight-dashboard-staticfiles3sourceoptions"></a>
 
 The structure that contains the Amazon S3 location to download the static file from.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-staticfiles3sourceoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-staticfiles3sourceoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "ObjectKey" : String,
-  "Region" : String
+  "[BucketName](#cfn-quicksight-dashboard-staticfiles3sourceoptions-bucketname)" : {{String}},
+  "[ObjectKey](#cfn-quicksight-dashboard-staticfiles3sourceoptions-objectkey)" : {{String}},
+  "[Region](#cfn-quicksight-dashboard-staticfiles3sourceoptions-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-staticfiles3sourceoptions-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  ObjectKey: String
-  Region: String
-
+```
+  [BucketName](#cfn-quicksight-dashboard-staticfiles3sourceoptions-bucketname): {{String}}
+  [ObjectKey](#cfn-quicksight-dashboard-staticfiles3sourceoptions-objectkey): {{String}}
+  [Region](#cfn-quicksight-dashboard-staticfiles3sourceoptions-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-staticfiles3sourceoptions-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-quicksight-dashboard-staticfiles3sourceoptions-bucketname"></a>
 The name of the Amazon S3 bucket.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObjectKey`
-
+`ObjectKey`  <a name="cfn-quicksight-dashboard-staticfiles3sourceoptions-objectkey"></a>
 The identifier of the static file in the Amazon S3 bucket.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-quicksight-dashboard-staticfiles3sourceoptions-region"></a>
 The Region of the Amazon S3 account that contains the bucket.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StaticFile
-
-StaticFileSource
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,94 +2,81 @@
 title: "AWS::Connect::ApprovedOrigin"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::ApprovedOrigin
+<a name="aws-resource-connect-approvedorigin"></a>
 
 The approved origin for the instance.
 
 ## Syntax
+<a name="aws-resource-connect-approvedorigin-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-approvedorigin-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::ApprovedOrigin",
   "Properties" : {
-      "InstanceId" : String,
-      "Origin" : String
+      "[InstanceId](#cfn-connect-approvedorigin-instanceid)" : {{String}},
+      "[Origin](#cfn-connect-approvedorigin-origin)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-approvedorigin-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::ApprovedOrigin
 Properties:
-  InstanceId: String
-  Origin: String
-
+  [InstanceId](#cfn-connect-approvedorigin-instanceid): {{String}}
+  [Origin](#cfn-connect-approvedorigin-origin): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-approvedorigin-properties"></a>
 
-`InstanceId`
-
+`InstanceId`  <a name="cfn-connect-approvedorigin-instanceid"></a>
 The Amazon Resource Name (ARN) of the instance.
+*Minimum*: `1`
+*Maximum*: `100`
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Origin`
-
+`Origin`  <a name="cfn-connect-approvedorigin-origin"></a>
 Domain name to be added to the allow-list of the instance.
-
-_Maximum_: `267`
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `267`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Maximum*: `267`
+*Required*: Yes
+*Type*: String
+*Maximum*: `267`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-connect-approvedorigin-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-approvedorigin-return-values-ref"></a>
 
 ## Examples
+<a name="aws-resource-connect-approvedorigin--examples"></a>
 
 ### Specify an Approved Origin for an Amazon Connect instance
+<a name="aws-resource-connect-approvedorigin--examples--Specify_an_Approved_Origin_for_an_Amazon_Connect_instance"></a>
 
-The following example specifies an Approved Origin for an Amazon Connect
-instance.
+The following example specifies an Approved Origin for an Connect Customer instance.
 
 #### YAML
+<a name="aws-resource-connect-approvedorigin--examples--Specify_an_Approved_Origin_for_an_Amazon_Connect_instance--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an Approved Origin for an Amazon Connect instance
 Resources:
@@ -99,11 +86,5 @@ Resources:
       InstanceId: arn:aws:connect:region-name:aws-account-id:instance/instance-arn
       Origin: "https://aws.amazon.com"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Connect::ContactFlow
 
 All content copied from https://docs.aws.amazon.com/.

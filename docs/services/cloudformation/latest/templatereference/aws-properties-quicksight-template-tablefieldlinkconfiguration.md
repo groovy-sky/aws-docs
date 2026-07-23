@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Template TableFieldLinkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TableFieldLinkConfiguration
+<a name="aws-properties-quicksight-template-tablefieldlinkconfiguration"></a>
 
 The link configuration of a table field URL.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-tablefieldlinkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-tablefieldlinkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : TableFieldLinkContentConfiguration,
-  "Target" : String
+  "[Content](#cfn-quicksight-template-tablefieldlinkconfiguration-content)" : {{TableFieldLinkContentConfiguration}},
+  "[Target](#cfn-quicksight-template-tablefieldlinkconfiguration-target)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-tablefieldlinkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Content:
-    TableFieldLinkContentConfiguration
-  Target: String
-
+```
+  [Content](#cfn-quicksight-template-tablefieldlinkconfiguration-content): {{
+    TableFieldLinkContentConfiguration}}
+  [Target](#cfn-quicksight-template-tablefieldlinkconfiguration-target): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-tablefieldlinkconfiguration-properties"></a>
 
-`Content`
-
+`Content`  <a name="cfn-quicksight-template-tablefieldlinkconfiguration-content"></a>
 The URL content (text, icon) for the table link configuration.
+*Required*: Yes
+*Type*: [TableFieldLinkContentConfiguration](aws-properties-quicksight-template-tablefieldlinkcontentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [TableFieldLinkContentConfiguration](aws-properties-quicksight-template-tablefieldlinkcontentconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
+`Target`  <a name="cfn-quicksight-template-tablefieldlinkconfiguration-target"></a>
 The URL target (new tab, new window, same tab) for the table link configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `NEW_TAB | NEW_WINDOW | SAME_TAB`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableFieldImageConfiguration
-
-TableFieldLinkContentConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NEW_TAB | NEW_WINDOW | SAME_TAB`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,123 +2,105 @@
 title: "AWS::SSO::Instance"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSO::Instance
+<a name="aws-resource-sso-instance"></a>
 
-Creates an instance of IAM Identity Center for a standalone AWS account that is not
-managed by AWS Organizations or a member AWS account in an organization. You can create only
-one instance per account and across all AWS Regions.
+Creates an instance of IAM Identity Center for a standalone AWS account that is not managed by AWS Organizations or a member AWS account in an organization. You can create only one instance per account and across all AWS Regions.
 
 The CreateInstance request is rejected if the following apply:
-
-- The instance is created within the organization management account.
-
-- An instance already exists in the same account.
++ The instance is created within the organization management account.
++ An instance already exists in the same account.
 
 ## Syntax
+<a name="aws-resource-sso-instance-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sso-instance-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSO::Instance",
   "Properties" : {
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Name](#cfn-sso-instance-name)" : {{String}},
+      "[Tags](#cfn-sso-instance-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sso-instance-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSO::Instance
 Properties:
-  Name: String
-  Tags:
-    - Tag
-
+  [Name](#cfn-sso-instance-name): {{String}}
+  [Tags](#cfn-sso-instance-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sso-instance-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-sso-instance-name"></a>
 The name of the Identity Center instance.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\w+=,.@-]+$`
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\w+=,.@-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-sso-instance-tags"></a>
 Specifies tags to be attached to the instance of IAM Identity Center.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sso-instance-tag.md)
-
-_Maximum_: `75`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sso-instance-tag.md)
+*Maximum*: `75`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sso-instance-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sso-instance-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, combined by all fields with the delimiter
-`|`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, combined by all fields with the delimiter `|`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sso-instance-return-values-fn--getatt"></a>
 
-`IdentityStoreId`
+####
+<a name="aws-resource-sso-instance-return-values-fn--getatt-fn--getatt"></a>
 
-The identifier of the identity store that is connected to the Identity Center
-instance.
+`IdentityStoreId`  <a name="IdentityStoreId-fn::getatt"></a>
+The identifier of the identity store that is connected to the Identity Center instance.
 
-`InstanceArn`
+`InstanceArn`  <a name="InstanceArn-fn::getatt"></a>
+The ARN of the Identity Center instance under which the operation will be executed. For more information about ARNs, see [Amazon Resource Names (ARNs) and AWS Service Namespaces](/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
 
-The ARN of the Identity Center instance under which the operation will be executed.
-For more information about ARNs, see [Amazon Resource\
-Names (ARNs) and AWS Service Namespaces](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the _AWS General Reference_.
-
-`OwnerAccountId`
-
+`OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
 The AWS account ID number of the owner of the Identity Center instance.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of this Identity Center instance.
 
 ## Examples
+<a name="aws-resource-sso-instance--examples"></a>
 
 ### Creating a new instance of IAM Identity Center
+<a name="aws-resource-sso-instance--examples--Creating_a_new_instance_of"></a>
 
-The following example creates an instance of IAM Identity Center for a specific
-AWS account.
+The following example creates an instance of IAM Identity Center for a specific AWS account.
 
 #### JSON
+<a name="aws-resource-sso-instance--examples--Creating_a_new_instance_of--json"></a>
 
-```json
-
+```
 "Instance": {
     "Type": "AWS::SSO::Instance",
     "Properties": {
@@ -131,22 +113,15 @@ AWS account.
 ```
 
 #### YAML
+<a name="aws-resource-sso-instance--examples--Creating_a_new_instance_of--yaml"></a>
 
-```yaml
-
+```
  Instance:
     Type: AWS::SSO::Instance
     Properties:
         Name: InstanceExample
         Tags:
             InstanceTagKey1: 'InstanceTagValue1'
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SSO::Assignment
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

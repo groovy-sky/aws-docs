@@ -2,102 +2,74 @@
 title: "AWS::DMS::DataProvider DocDbSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::DataProvider DocDbSettings
+<a name="aws-properties-dms-dataprovider-docdbsettings"></a>
 
 Provides information that defines a DocumentDB endpoint.
 
 ## Syntax
+<a name="aws-properties-dms-dataprovider-docdbsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-dataprovider-docdbsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateArn" : String,
-  "DatabaseName" : String,
-  "Port" : Integer,
-  "ServerName" : String,
-  "SslMode" : String
+  "[CertificateArn](#cfn-dms-dataprovider-docdbsettings-certificatearn)" : {{String}},
+  "[DatabaseName](#cfn-dms-dataprovider-docdbsettings-databasename)" : {{String}},
+  "[Port](#cfn-dms-dataprovider-docdbsettings-port)" : {{Integer}},
+  "[ServerName](#cfn-dms-dataprovider-docdbsettings-servername)" : {{String}},
+  "[SslMode](#cfn-dms-dataprovider-docdbsettings-sslmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-dataprovider-docdbsettings-syntax.yaml"></a>
 
-```yaml
-
-  CertificateArn: String
-  DatabaseName: String
-  Port: Integer
-  ServerName: String
-  SslMode: String
-
+```
+  [CertificateArn](#cfn-dms-dataprovider-docdbsettings-certificatearn): {{String}}
+  [DatabaseName](#cfn-dms-dataprovider-docdbsettings-databasename): {{String}}
+  [Port](#cfn-dms-dataprovider-docdbsettings-port): {{Integer}}
+  [ServerName](#cfn-dms-dataprovider-docdbsettings-servername): {{String}}
+  [SslMode](#cfn-dms-dataprovider-docdbsettings-sslmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-dataprovider-docdbsettings-properties"></a>
 
-`CertificateArn`
-
+`CertificateArn`  <a name="cfn-dms-dataprovider-docdbsettings-certificatearn"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DatabaseName`  <a name="cfn-dms-dataprovider-docdbsettings-databasename"></a>
+ The database name on the DocumentDB source endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Port`  <a name="cfn-dms-dataprovider-docdbsettings-port"></a>
+ The port value for the DocumentDB source endpoint.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ServerName`  <a name="cfn-dms-dataprovider-docdbsettings-servername"></a>
+ The name of the server on the DocumentDB source endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DatabaseName`
-
-The database name on the DocumentDB source endpoint.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
-The port value for the DocumentDB source endpoint.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerName`
-
-The name of the server on the DocumentDB source endpoint.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SslMode`
-
+`SslMode`  <a name="cfn-dms-dataprovider-docdbsettings-sslmode"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `none | require | verify-full`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DMS::DataProvider
-
-IbmDb2LuwSettings
+*Required*: No
+*Type*: String
+*Allowed values*: `none | require | verify-full`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

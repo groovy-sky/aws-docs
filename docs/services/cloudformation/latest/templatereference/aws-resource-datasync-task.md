@@ -2,297 +2,211 @@
 title: "AWS::DataSync::Task"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::Task
+<a name="aws-resource-datasync-task"></a>
 
-The `AWS::DataSync::Task` resource specifies a task. A task is a set of two
-locations (source and destination) and a set of `Options` that you use to
-control the behavior of a task. If you don't specify `Options` when you
-create a task, AWS DataSync populates them with service defaults.
+The `AWS::DataSync::Task` resource specifies a task. A task is a set of two locations (source and destination) and a set of `Options` that you use to control the behavior of a task. If you don't specify `Options` when you create a task, AWS DataSync populates them with service defaults.
 
 ## Syntax
+<a name="aws-resource-datasync-task-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datasync-task-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataSync::Task",
   "Properties" : {
-      "CloudWatchLogGroupArn" : String,
-      "DestinationLocationArn" : String,
-      "Excludes" : [ FilterRule, ... ],
-      "Includes" : [ FilterRule, ... ],
-      "ManifestConfig" : ManifestConfig,
-      "Name" : String,
-      "Options" : Options,
-      "Schedule" : TaskSchedule,
-      "SourceLocationArn" : String,
-      "Tags" : [ Tag, ... ],
-      "TaskMode" : String,
-      "TaskReportConfig" : TaskReportConfig
+      "[CloudWatchLogGroupArn](#cfn-datasync-task-cloudwatchloggrouparn)" : {{String}},
+      "[DestinationLocationArn](#cfn-datasync-task-destinationlocationarn)" : {{String}},
+      "[Excludes](#cfn-datasync-task-excludes)" : {{[ FilterRule, ... ]}},
+      "[Includes](#cfn-datasync-task-includes)" : {{[ FilterRule, ... ]}},
+      "[ManifestConfig](#cfn-datasync-task-manifestconfig)" : {{ManifestConfig}},
+      "[Name](#cfn-datasync-task-name)" : {{String}},
+      "[Options](#cfn-datasync-task-options)" : {{Options}},
+      "[Schedule](#cfn-datasync-task-schedule)" : {{TaskSchedule}},
+      "[SourceLocationArn](#cfn-datasync-task-sourcelocationarn)" : {{String}},
+      "[Tags](#cfn-datasync-task-tags)" : {{[ Tag, ... ]}},
+      "[TaskMode](#cfn-datasync-task-taskmode)" : {{String}},
+      "[TaskReportConfig](#cfn-datasync-task-taskreportconfig)" : {{TaskReportConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datasync-task-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataSync::Task
 Properties:
-  CloudWatchLogGroupArn: String
-  DestinationLocationArn: String
-  Excludes:
-    - FilterRule
-  Includes:
-    - FilterRule
-  ManifestConfig:
-    ManifestConfig
-  Name: String
-  Options:
-    Options
-  Schedule:
-    TaskSchedule
-  SourceLocationArn: String
-  Tags:
-    - Tag
-  TaskMode: String
-  TaskReportConfig:
-    TaskReportConfig
-
+  [CloudWatchLogGroupArn](#cfn-datasync-task-cloudwatchloggrouparn): {{String}}
+  [DestinationLocationArn](#cfn-datasync-task-destinationlocationarn): {{String}}
+  [Excludes](#cfn-datasync-task-excludes): {{
+    - FilterRule}}
+  [Includes](#cfn-datasync-task-includes): {{
+    - FilterRule}}
+  [ManifestConfig](#cfn-datasync-task-manifestconfig): {{
+    ManifestConfig}}
+  [Name](#cfn-datasync-task-name): {{String}}
+  [Options](#cfn-datasync-task-options): {{
+    Options}}
+  [Schedule](#cfn-datasync-task-schedule): {{
+    TaskSchedule}}
+  [SourceLocationArn](#cfn-datasync-task-sourcelocationarn): {{String}}
+  [Tags](#cfn-datasync-task-tags): {{
+    - Tag}}
+  [TaskMode](#cfn-datasync-task-taskmode): {{String}}
+  [TaskReportConfig](#cfn-datasync-task-taskreportconfig): {{
+    TaskReportConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-datasync-task-properties"></a>
 
-`CloudWatchLogGroupArn`
+`CloudWatchLogGroupArn`  <a name="cfn-datasync-task-cloudwatchloggrouparn"></a>
+Specifies the Amazon Resource Name (ARN) of an Amazon CloudWatch log group for monitoring your task.
+For Enhanced mode tasks, you don't need to specify anything. DataSync automatically sends logs to a CloudWatch log group named `/aws/datasync`.
+For more information, see [Monitoring data transfers with CloudWatch Logs](https://docs.aws.amazon.com/datasync/latest/userguide/configure-logging.html).
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):logs:[a-z\-0-9]*:[0-9]{12}:log-group:([^:\*]*)(:\*)?$`
+*Maximum*: `562`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the Amazon Resource Name (ARN) of an Amazon CloudWatch log group for
-monitoring your task.
+`DestinationLocationArn`  <a name="cfn-datasync-task-destinationlocationarn"></a>
+The Amazon Resource Name (ARN) of an AWS storage resource's location.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:location/loc-[0-9a-z]{17}$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-For Enhanced mode tasks, you don't need to specify anything. DataSync
-automatically sends logs to a CloudWatch log group named
-`/aws/datasync`.
+`Excludes`  <a name="cfn-datasync-task-excludes"></a>
+Specifies exclude filters that define the files, objects, and folders in your source location that you don't want DataSync to transfer. For more information and examples, see [Specifying what DataSync transfers by using filters](https://docs.aws.amazon.com/datasync/latest/userguide/filtering.html).
+*Required*: No
+*Type*: Array of [FilterRule](aws-properties-datasync-task-filterrule.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Monitoring data transfers with\
-CloudWatch Logs](../../../datasync/latest/userguide/configure-logging.md).
+`Includes`  <a name="cfn-datasync-task-includes"></a>
+Specifies include filters that define the files, objects, and folders in your source location that you want DataSync to transfer. For more information and examples, see [Specifying what DataSync transfers by using filters](https://docs.aws.amazon.com/datasync/latest/userguide/filtering.html).
+*Required*: No
+*Type*: Array of [FilterRule](aws-properties-datasync-task-filterrule.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ManifestConfig`  <a name="cfn-datasync-task-manifestconfig"></a>
+The configuration of the manifest that lists the files or objects that you want DataSync to transfer. For more information, see [Specifying what DataSync transfers by using a manifest](https://docs.aws.amazon.com/datasync/latest/userguide/transferring-with-manifest.html).
+*Required*: No
+*Type*: [ManifestConfig](aws-properties-datasync-task-manifestconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):logs:[a-z\-0-9]*:[0-9]{12}:log-group:([^:\*]*)(:\*)?$`
-
-_Maximum_: `562`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationLocationArn`
-
-The Amazon Resource Name (ARN) of an AWS storage resource's
-location.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:location/loc-[0-9a-z]{17}$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Excludes`
-
-Specifies exclude filters that define the files, objects, and folders in your source
-location that you don't want DataSync to transfer. For more information and
-examples, see [Specifying what DataSync transfers by using filters](../../../datasync/latest/userguide/filtering.md).
-
-_Required_: No
-
-_Type_: Array of [FilterRule](aws-properties-datasync-task-filterrule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Includes`
-
-Specifies include filters that define the files, objects, and folders in your source
-location that you want DataSync to transfer. For more information and examples, see
-[Specifying what\
-DataSync transfers by using filters](../../../datasync/latest/userguide/filtering.md).
-
-_Required_: No
-
-_Type_: Array of [FilterRule](aws-properties-datasync-task-filterrule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestConfig`
-
-The configuration of the manifest that lists the files or objects that you want DataSync to transfer. For more information, see [Specifying what DataSync transfers by using a manifest](../../../datasync/latest/userguide/transferring-with-manifest.md).
-
-_Required_: No
-
-_Type_: [ManifestConfig](aws-properties-datasync-task-manifestconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-datasync-task-name"></a>
 Specifies the name of your task.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\s+=._:@/-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Options`  <a name="cfn-datasync-task-options"></a>
+Specifies your task's settings, such as preserving file metadata, verifying data integrity, among other options.
+*Required*: No
+*Type*: [Options](aws-properties-datasync-task-options.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Schedule`  <a name="cfn-datasync-task-schedule"></a>
+Specifies a schedule for when you want your task to run. For more information, see [Scheduling your task](https://docs.aws.amazon.com/datasync/latest/userguide/task-scheduling.html).
+*Required*: No
+*Type*: [TaskSchedule](aws-properties-datasync-task-taskschedule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[a-zA-Z0-9\s+=._:@/-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
-Specifies your task's settings, such as preserving file metadata, verifying data
-integrity, among other options.
-
-_Required_: No
-
-_Type_: [Options](aws-properties-datasync-task-options.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Schedule`
-
-Specifies a schedule for when you want your task to run. For more information, see [Scheduling your\
-task](../../../datasync/latest/userguide/task-scheduling.md).
-
-_Required_: No
-
-_Type_: [TaskSchedule](aws-properties-datasync-task-taskschedule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceLocationArn`
-
+`SourceLocationArn`  <a name="cfn-datasync-task-sourcelocationarn"></a>
 Specifies the ARN of your transfer's source location.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:location/loc-[0-9a-z]{17}$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:location/loc-[0-9a-z]{17}$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-datasync-task-tags"></a>
 Specifies the tags that you want to apply to your task.
+*Tags* are key-value pairs that help you manage, filter, and search for your DataSync resources.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-datasync-task-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Tags_ are key-value pairs that help you manage, filter, and search
-for your DataSync resources.
+`TaskMode`  <a name="cfn-datasync-task-taskmode"></a>
+The task mode that you're using. For more information, see [Choosing a task mode for your data transfer](https://docs.aws.amazon.com/datasync/latest/userguide/choosing-task-mode.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `BASIC | ENHANCED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-datasync-task-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TaskMode`
-
-The task mode that you're using. For more information, see [Choosing a task mode for your data\
-transfer](../../../datasync/latest/userguide/choosing-task-mode.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BASIC | ENHANCED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TaskReportConfig`
-
-The configuration of your task report, which provides detailed information about your
-DataSync transfer. For more information, see [Monitoring your DataSync\
-transfers with task reports](../../../datasync/latest/userguide/task-reports.md).
-
-_Required_: No
-
-_Type_: [TaskReportConfig](aws-properties-datasync-task-taskreportconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TaskReportConfig`  <a name="cfn-datasync-task-taskreportconfig"></a>
+The configuration of your task report, which provides detailed information about your DataSync transfer. For more information, see [Monitoring your DataSync transfers with task reports](https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html).
+*Required*: No
+*Type*: [TaskReportConfig](aws-properties-datasync-task-taskreportconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-datasync-task-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datasync-task-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the location resource ARN. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the location resource ARN. For example:
 
-`arn:aws:datasync:us-east-2:111222333444:task/task-07db7abfc326c50s3`
+ `arn:aws:datasync:us-east-2:111222333444:task/task-07db7abfc326c50s3`
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datasync-task-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DestinationNetworkInterfaceArns`
+####
+<a name="aws-resource-datasync-task-return-values-fn--getatt-fn--getatt"></a>
 
-The ARNs of the destination elastic network interfaces (ENIs) that were created for
-your subnet.
+`DestinationNetworkInterfaceArns`  <a name="DestinationNetworkInterfaceArns-fn::getatt"></a>
+The ARNs of the destination elastic network interfaces (ENIs) that were created for your subnet.
 
-`SourceNetworkInterfaceArns`
-
+`SourceNetworkInterfaceArns`  <a name="SourceNetworkInterfaceArns-fn::getatt"></a>
 The ARNs of the source ENIs that were created for your subnet.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the task that was described.
 
-`TaskArn`
-
+`TaskArn`  <a name="TaskArn-fn::getatt"></a>
 The ARN of the task.
 
 ## Examples
+<a name="aws-resource-datasync-task--examples"></a>
 
-- [Creating an Enhanced mode task](#aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task)
-
-- [Creating a Basic mode task](#aws-resource-datasync-task--examples--Creating_a_Basic_mode_task)
+**Topics**
++ [Creating an Enhanced mode task](#aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task)
++ [Creating a Basic mode task](#aws-resource-datasync-task--examples--Creating_a_Basic_mode_task)
 
 ### Creating an Enhanced mode task
+<a name="aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task"></a>
 
-The following examples create an Enhanced mode task. For more information, see
-[Choosing a task mode\
-for your data transfer](../../../datasync/latest/userguide/choosing-task-mode.md).
+The following examples create an Enhanced mode task. For more information, see [Choosing a task mode for your data transfer](https://docs.aws.amazon.com/datasync/latest/userguide/choosing-task-mode.html).
 
 #### JSON
+<a name="aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Creates a DataSync task that uses Enhanced mode",
@@ -317,9 +231,9 @@ for your data transfer](../../../datasync/latest/userguide/choosing-task-mode.md
 ```
 
 #### YAML
+<a name="aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates a DataSync task that uses Enhanced mode
 Resources:
@@ -338,15 +252,14 @@ Resources:
 ```
 
 ### Creating a Basic mode task
+<a name="aws-resource-datasync-task--examples--Creating_a_Basic_mode_task"></a>
 
-The following examples create a Basic mode task. For more information, see
-[Choosing a task mode\
-for your data transfer](../../../datasync/latest/userguide/choosing-task-mode.md).
+The following examples create a Basic mode task. For more information, see [Choosing a task mode for your data transfer](https://docs.aws.amazon.com/datasync/latest/userguide/choosing-task-mode.html).
 
 #### JSON
+<a name="aws-resource-datasync-task--examples--Creating_a_Basic_mode_task--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Creates a DataSync task that uses Basic mode",
@@ -371,9 +284,9 @@ for your data transfer](../../../datasync/latest/userguide/choosing-task-mode.md
 ```
 
 #### YAML
+<a name="aws-resource-datasync-task--examples--Creating_a_Basic_mode_task--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates a DataSync task that uses Basic mode
 Resources:
@@ -389,13 +302,6 @@ Resources:
         VerifyMode: POINT_IN_TIME_CONSISTENT
         LogLevel: TRANSFER
       CloudWatchLogGroupArn: arn:aws:logs:us-east-2:111222333444:log-group:/my-log-group-name:*
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Deleted
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,192 +2,144 @@
 title: "AWS::EC2::TrafficMirrorSession"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TrafficMirrorSession
+<a name="aws-resource-ec2-trafficmirrorsession"></a>
 
 Creates a Traffic Mirror session.
 
-A Traffic Mirror session actively copies packets from a Traffic Mirror source to a
-Traffic Mirror target. Create a filter, and then assign it to the session to define a
-subset of the traffic to mirror, for example all TCP traffic.
+A Traffic Mirror session actively copies packets from a Traffic Mirror source to a Traffic Mirror target. Create a filter, and then assign it to the session to define a subset of the traffic to mirror, for example all TCP traffic.
 
-The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be
-in the same VPC, or in a different VPC connected via VPC peering or a transit gateway.
+The Traffic Mirror source and the Traffic Mirror target (monitoring appliances) can be in the same VPC, or in a different VPC connected via VPC peering or a transit gateway.
 
-By default, no traffic is mirrored. Use [AWS::EC2::TrafficMirrorFilterRule](../userguide/aws-resource-ec2-trafficmirrorfilterrule.md) to specify filter rules that specify the
-traffic to mirror.
+By default, no traffic is mirrored. Use [AWS::EC2::TrafficMirrorFilterRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html) to specify filter rules that specify the traffic to mirror.
 
 ## Syntax
+<a name="aws-resource-ec2-trafficmirrorsession-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-trafficmirrorsession-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TrafficMirrorSession",
   "Properties" : {
-      "Description" : String,
-      "NetworkInterfaceId" : String,
-      "OwnerId" : String,
-      "PacketLength" : Integer,
-      "SessionNumber" : Integer,
-      "Tags" : [ Tag, ... ],
-      "TrafficMirrorFilterId" : String,
-      "TrafficMirrorTargetId" : String,
-      "VirtualNetworkId" : Integer
+      "[Description](#cfn-ec2-trafficmirrorsession-description)" : {{String}},
+      "[NetworkInterfaceId](#cfn-ec2-trafficmirrorsession-networkinterfaceid)" : {{String}},
+      "[OwnerId](#cfn-ec2-trafficmirrorsession-ownerid)" : {{String}},
+      "[PacketLength](#cfn-ec2-trafficmirrorsession-packetlength)" : {{Integer}},
+      "[SessionNumber](#cfn-ec2-trafficmirrorsession-sessionnumber)" : {{Integer}},
+      "[Tags](#cfn-ec2-trafficmirrorsession-tags)" : {{[ Tag, ... ]}},
+      "[TrafficMirrorFilterId](#cfn-ec2-trafficmirrorsession-trafficmirrorfilterid)" : {{String}},
+      "[TrafficMirrorTargetId](#cfn-ec2-trafficmirrorsession-trafficmirrortargetid)" : {{String}},
+      "[VirtualNetworkId](#cfn-ec2-trafficmirrorsession-virtualnetworkid)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-trafficmirrorsession-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TrafficMirrorSession
 Properties:
-  Description: String
-  NetworkInterfaceId: String
-  OwnerId: String
-  PacketLength: Integer
-  SessionNumber: Integer
-  Tags:
-    - Tag
-  TrafficMirrorFilterId: String
-  TrafficMirrorTargetId: String
-  VirtualNetworkId: Integer
-
+  [Description](#cfn-ec2-trafficmirrorsession-description): {{String}}
+  [NetworkInterfaceId](#cfn-ec2-trafficmirrorsession-networkinterfaceid): {{String}}
+  [OwnerId](#cfn-ec2-trafficmirrorsession-ownerid): {{String}}
+  [PacketLength](#cfn-ec2-trafficmirrorsession-packetlength): {{Integer}}
+  [SessionNumber](#cfn-ec2-trafficmirrorsession-sessionnumber): {{Integer}}
+  [Tags](#cfn-ec2-trafficmirrorsession-tags): {{
+    - Tag}}
+  [TrafficMirrorFilterId](#cfn-ec2-trafficmirrorsession-trafficmirrorfilterid): {{String}}
+  [TrafficMirrorTargetId](#cfn-ec2-trafficmirrorsession-trafficmirrortargetid): {{String}}
+  [VirtualNetworkId](#cfn-ec2-trafficmirrorsession-virtualnetworkid): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-trafficmirrorsession-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-ec2-trafficmirrorsession-description"></a>
 The description of the Traffic Mirror session.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="cfn-ec2-trafficmirrorsession-networkinterfaceid"></a>
 The ID of the source network interface.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OwnerId`
-
+`OwnerId`  <a name="cfn-ec2-trafficmirrorsession-ownerid"></a>
 The ID of the account that owns the Traffic Mirror session.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PacketLength`
-
-The number of bytes in each packet to mirror. These are bytes after the VXLAN header. Do
-not specify this parameter when you want to mirror the entire packet. To mirror a subset of
-the packet, set this to the length (in bytes) that you want to mirror. For example, if you
-set this value to 100, then the first 100 bytes that meet the filter criteria are copied to
-the target.
-
+`PacketLength`  <a name="cfn-ec2-trafficmirrorsession-packetlength"></a>
+The number of bytes in each packet to mirror. These are bytes after the VXLAN header. Do not specify this parameter when you want to mirror the entire packet. To mirror a subset of the packet, set this to the length (in bytes) that you want to mirror. For example, if you set this value to 100, then the first 100 bytes that meet the filter criteria are copied to the target.
 If you do not want to mirror the entire packet, use the `PacketLength` parameter to specify the number of bytes in each packet to mirror.
-
 For sessions with Network Load Balancer (NLB) Traffic Mirror targets the default `PacketLength` will be set to 8500. Valid values are 1-8500. Setting a `PacketLength` greater than 8500 will result in an error response.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionNumber`
-
+`SessionNumber`  <a name="cfn-ec2-trafficmirrorsession-sessionnumber"></a>
 The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets.
-
 Valid values are 1-32766.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-trafficmirrorsession-tags"></a>
 The tags to assign to a Traffic Mirror session.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-trafficmirrorsession-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-trafficmirrorsession-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficMirrorFilterId`
-
+`TrafficMirrorFilterId`  <a name="cfn-ec2-trafficmirrorsession-trafficmirrorfilterid"></a>
 The ID of the Traffic Mirror filter.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficMirrorTargetId`
-
+`TrafficMirrorTargetId`  <a name="cfn-ec2-trafficmirrorsession-trafficmirrortargetid"></a>
 The ID of the Traffic Mirror target.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VirtualNetworkId`
-
-The VXLAN ID for the Traffic Mirror session. For more information about the VXLAN
-protocol, see [RFC 7348](https://datatracker.ietf.org/doc/html/rfc7348). If you do
-not specify a `VirtualNetworkId`, an account-wide unique ID is chosen at
-random.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VirtualNetworkId`  <a name="cfn-ec2-trafficmirrorsession-virtualnetworkid"></a>
+The VXLAN ID for the Traffic Mirror session. For more information about the VXLAN protocol, see [RFC 7348](https://datatracker.ietf.org/doc/html/rfc7348). If you do not specify a `VirtualNetworkId`, an account-wide unique ID is chosen at random.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-trafficmirrorsession-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-trafficmirrorsession-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the Traffic Mirror Session.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ec2-trafficmirrorsession--examples"></a>
 
 ### Create a traffic mirror session
+<a name="aws-resource-ec2-trafficmirrorsession--examples--Create_a_traffic_mirror_session"></a>
 
-This is a traffic mirror session that mirrors the first 100 bytes in each
-packet.
+This is a traffic mirror session that mirrors the first 100 bytes in each packet.
 
 #### JSON
+<a name="aws-resource-ec2-trafficmirrorsession--examples--Create_a_traffic_mirror_session--json"></a>
 
-```json
-
+```
 {
   "SampleTrafficMirrorSession": {
     "Type": "AWS::EC2::TrafficMirrorSession",
@@ -208,13 +160,12 @@ packet.
     }
   }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-ec2-trafficmirrorsession--examples--Create_a_traffic_mirror_session--yaml"></a>
 
-```yaml
-
+```
 SampleTrafficMirrorSession:
   Type: "AWS::EC2::TrafficMirrorSession"
   Properties:
@@ -228,21 +179,11 @@ SampleTrafficMirrorSession:
     Tags:
     - Key: "Name"
       Value: "SampleSession"
-
 ```
 
 ## See also
-
-- [Traffic mirror\
-sessions](../../../vpc/latest/mirroring/traffic-mirroring-sessions.md) in _Traffic Mirroring_
-
-- [CreateTrafficMirrorSession](../../../../reference/awsec2/latest/apireference/api-createtrafficmirrorsession.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrafficMirrorPortRange
-
-Tag
+<a name="aws-resource-ec2-trafficmirrorsession--seealso"></a>
++ [Traffic mirror sessions](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-sessions.html) in *Traffic Mirroring*
++ [CreateTrafficMirrorSession](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTrafficMirrorSession.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

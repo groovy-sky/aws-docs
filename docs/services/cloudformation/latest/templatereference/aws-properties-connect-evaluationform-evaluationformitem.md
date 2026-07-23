@@ -2,67 +2,51 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormItem
+<a name="aws-properties-connect-evaluationform-evaluationformitem"></a>
 
-Items that are part of the evaluation form. The total number of sections and questions
-must not exceed 100 each. Questions must be contained in a section.
+Items that are part of the evaluation form. The total number of sections and questions must not exceed 100 each. Questions must be contained in a section.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Question" : EvaluationFormQuestion,
-  "Section" : EvaluationFormSection
+  "[Question](#cfn-connect-evaluationform-evaluationformitem-question)" : {{EvaluationFormQuestion}},
+  "[Section](#cfn-connect-evaluationform-evaluationformitem-section)" : {{EvaluationFormSection}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformitem-syntax.yaml"></a>
 
-```yaml
-
-  Question:
-    EvaluationFormQuestion
-  Section:
-    EvaluationFormSection
-
+```
+  [Question](#cfn-connect-evaluationform-evaluationformitem-question): {{
+    EvaluationFormQuestion}}
+  [Section](#cfn-connect-evaluationform-evaluationformitem-section): {{
+    EvaluationFormSection}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformitem-properties"></a>
 
-`Question`
-
+`Question`  <a name="cfn-connect-evaluationform-evaluationformitem-question"></a>
 The information of the question.
+*Required*: No
+*Type*: [EvaluationFormQuestion](aws-properties-connect-evaluationform-evaluationformquestion.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EvaluationFormQuestion](aws-properties-connect-evaluationform-evaluationformquestion.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Section`
-
+`Section`  <a name="cfn-connect-evaluationform-evaluationformitem-section"></a>
 The information of the section.
-
-_Required_: No
-
-_Type_: [EvaluationFormSection](aws-properties-connect-evaluationform-evaluationformsection.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormBaseItem
-
-EvaluationFormItemEnablementCondition
+*Required*: No
+*Type*: [EvaluationFormSection](aws-properties-connect-evaluationform-evaluationformsection.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

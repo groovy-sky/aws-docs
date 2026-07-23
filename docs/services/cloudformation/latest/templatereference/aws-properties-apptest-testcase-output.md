@@ -2,53 +2,42 @@
 title: "AWS::AppTest::TestCase Output"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase Output
+<a name="aws-properties-apptest-testcase-output"></a>
 
 Specifies an output.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-output-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-output-syntax.json"></a>
 
-```json
-
+```
 {
-  "File" : OutputFile
+  "[File](#cfn-apptest-testcase-output-file)" : {{OutputFile}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-output-syntax.yaml"></a>
 
-```yaml
-
-  File:
-    OutputFile
-
+```
+  [File](#cfn-apptest-testcase-output-file): {{
+    OutputFile}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-output-properties"></a>
 
-`File`
-
+`File`  <a name="cfn-apptest-testcase-output-file"></a>
 The file of the output.
-
-_Required_: Yes
-
-_Type_: [OutputFile](aws-properties-apptest-testcase-outputfile.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MainframeActionType
-
-OutputFile
+*Required*: Yes
+*Type*: [OutputFile](aws-properties-apptest-testcase-outputfile.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

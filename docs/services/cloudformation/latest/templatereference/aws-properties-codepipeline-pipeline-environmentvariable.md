@@ -2,92 +2,64 @@
 title: "AWS::CodePipeline::Pipeline EnvironmentVariable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline EnvironmentVariable
+<a name="aws-properties-codepipeline-pipeline-environmentvariable"></a>
 
 The environment variables for the action.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-environmentvariable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-environmentvariable-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Type" : String,
-  "Value" : String
+  "[Name](#cfn-codepipeline-pipeline-environmentvariable-name)" : {{String}},
+  "[Type](#cfn-codepipeline-pipeline-environmentvariable-type)" : {{String}},
+  "[Value](#cfn-codepipeline-pipeline-environmentvariable-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-environmentvariable-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Type: String
-  Value: String
-
+```
+  [Name](#cfn-codepipeline-pipeline-environmentvariable-name): {{String}}
+  [Type](#cfn-codepipeline-pipeline-environmentvariable-type): {{String}}
+  [Value](#cfn-codepipeline-pipeline-environmentvariable-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-environmentvariable-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-codepipeline-pipeline-environmentvariable-name"></a>
 The environment variable name in the key-value pair.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Za-z0-9_]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Type`  <a name="cfn-codepipeline-pipeline-environmentvariable-type"></a>
+Specifies the type of use for the environment variable value. The value can be either `PLAINTEXT` or `SECRETS_MANAGER`. If the value is `SECRETS_MANAGER`, provide the Secrets reference in the EnvironmentVariable value.
+*Required*: No
+*Type*: String
+*Allowed values*: `PLAINTEXT | SECRETS_MANAGER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Specifies the type of use for the environment variable value. The value can be either
-`PLAINTEXT` or `SECRETS_MANAGER`. If the value is `SECRETS_MANAGER`, provide the Secrets
-reference in the EnvironmentVariable value.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PLAINTEXT | SECRETS_MANAGER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-codepipeline-pipeline-environmentvariable-value"></a>
 The environment variable value in the key-value pair.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `1`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionKey
-
-FailureConditions
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `1`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

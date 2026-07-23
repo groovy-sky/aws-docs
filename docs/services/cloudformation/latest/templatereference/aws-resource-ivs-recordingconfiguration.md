@@ -2,182 +2,142 @@
 title: "AWS::IVS::RecordingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::RecordingConfiguration
+<a name="aws-resource-ivs-recordingconfiguration"></a>
 
-The `AWS::IVS::RecordingConfiguration` resource specifies an Amazon IVS recording configuration. A recording configuration
-enables the recording of a channel’s live streams to a data store. Multiple channels can
-reference the same recording configuration. For more information, see [RecordingConfiguration](../../../../reference/ivs/latest/lowlatencyapireference/api-recordingconfiguration.md) in the _Amazon IVS Low-Latency Streaming API Reference_.
+The `AWS::IVS::RecordingConfiguration` resource specifies an Amazon IVS recording configuration. A recording configuration enables the recording of a channel’s live streams to a data store. Multiple channels can reference the same recording configuration. For more information, see [RecordingConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_RecordingConfiguration.html) in the *Amazon IVS Low-Latency Streaming API Reference*.
 
 ## Syntax
+<a name="aws-resource-ivs-recordingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivs-recordingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVS::RecordingConfiguration",
   "Properties" : {
-      "DestinationConfiguration" : DestinationConfiguration,
-      "Name" : String,
-      "RecordingReconnectWindowSeconds" : Integer,
-      "RenditionConfiguration" : RenditionConfiguration,
-      "Tags" : [ Tag, ... ],
-      "ThumbnailConfiguration" : ThumbnailConfiguration
+      "[DestinationConfiguration](#cfn-ivs-recordingconfiguration-destinationconfiguration)" : {{DestinationConfiguration}},
+      "[Name](#cfn-ivs-recordingconfiguration-name)" : {{String}},
+      "[RecordingReconnectWindowSeconds](#cfn-ivs-recordingconfiguration-recordingreconnectwindowseconds)" : {{Integer}},
+      "[RenditionConfiguration](#cfn-ivs-recordingconfiguration-renditionconfiguration)" : {{RenditionConfiguration}},
+      "[Tags](#cfn-ivs-recordingconfiguration-tags)" : {{[ Tag, ... ]}},
+      "[ThumbnailConfiguration](#cfn-ivs-recordingconfiguration-thumbnailconfiguration)" : {{ThumbnailConfiguration}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivs-recordingconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVS::RecordingConfiguration
 Properties:
-  DestinationConfiguration:
-    DestinationConfiguration
-  Name: String
-  RecordingReconnectWindowSeconds: Integer
-  RenditionConfiguration:
-    RenditionConfiguration
-  Tags:
-    - Tag
-  ThumbnailConfiguration:
-    ThumbnailConfiguration
-
+  [DestinationConfiguration](#cfn-ivs-recordingconfiguration-destinationconfiguration): {{
+    DestinationConfiguration}}
+  [Name](#cfn-ivs-recordingconfiguration-name): {{String}}
+  [RecordingReconnectWindowSeconds](#cfn-ivs-recordingconfiguration-recordingreconnectwindowseconds): {{Integer}}
+  [RenditionConfiguration](#cfn-ivs-recordingconfiguration-renditionconfiguration): {{
+    RenditionConfiguration}}
+  [Tags](#cfn-ivs-recordingconfiguration-tags): {{
+    - Tag}}
+  [ThumbnailConfiguration](#cfn-ivs-recordingconfiguration-thumbnailconfiguration): {{
+    ThumbnailConfiguration}}
 ```
 
 ## Properties
+<a name="aws-resource-ivs-recordingconfiguration-properties"></a>
 
-`DestinationConfiguration`
+`DestinationConfiguration`  <a name="cfn-ivs-recordingconfiguration-destinationconfiguration"></a>
+A destination configuration describes an S3 bucket where recorded video will be stored. See the [ DestinationConfiguration](aws-properties-ivs-recordingconfiguration-destinationconfiguration.md) property type for more information.
+*Required*: Yes
+*Type*: [DestinationConfiguration](aws-properties-ivs-recordingconfiguration-destinationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A destination configuration describes an S3 bucket where recorded video will be
-stored. See the [DestinationConfiguration](aws-properties-ivs-recordingconfiguration-destinationconfiguration.md) property type for more information.
-
-_Required_: Yes
-
-_Type_: [DestinationConfiguration](aws-properties-ivs-recordingconfiguration-destinationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-ivs-recordingconfiguration-name"></a>
 Recording-configuration name. The value does not need to be unique.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]*$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RecordingReconnectWindowSeconds`  <a name="cfn-ivs-recordingconfiguration-recordingreconnectwindowseconds"></a>
+If a broadcast disconnects and then reconnects within the specified interval, the multiple streams will be considered a single broadcast and merged together.
+*Default*: `0`
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `300`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`RenditionConfiguration`  <a name="cfn-ivs-recordingconfiguration-renditionconfiguration"></a>
+A rendition configuration describes which renditions should be recorded for a stream. See the [RenditionConfiguration](aws-properties-ivs-recordingconfiguration-renditionconfiguration.md) property type for more information.
+*Required*: No
+*Type*: [RenditionConfiguration](aws-properties-ivs-recordingconfiguration-renditionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Pattern_: `^[a-zA-Z0-9-_]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RecordingReconnectWindowSeconds`
-
-If a broadcast disconnects and then reconnects within the specified interval, the multiple
-streams will be considered a single broadcast and merged together.
-
-_Default_: `0`
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `300`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RenditionConfiguration`
-
-A rendition configuration describes which renditions should be recorded for a stream.
-See the [RenditionConfiguration](aws-properties-ivs-recordingconfiguration-renditionconfiguration.md)
-property type for more information.
-
-_Required_: No
-
-_Type_: [RenditionConfiguration](aws-properties-ivs-recordingconfiguration-renditionconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivs-recordingconfiguration-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-recordingconfiguration-tag.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivs-recordingconfiguration-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-ivs-recordingconfiguration-tag.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivs-recordingconfiguration-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThumbnailConfiguration`
-
-A thumbnail configuration enables/disables the recording of thumbnails for a live session and controls the interval at which thumbnails are generated for the live session.
-See the [ThumbnailConfiguration](aws-properties-ivs-recordingconfiguration-thumbnailconfiguration.md) property type for more information.
-
-_Required_: No
-
-_Type_: [ThumbnailConfiguration](aws-properties-ivs-recordingconfiguration-thumbnailconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`ThumbnailConfiguration`  <a name="cfn-ivs-recordingconfiguration-thumbnailconfiguration"></a>
+A thumbnail configuration enables/disables the recording of thumbnails for a live session and controls the interval at which thumbnails are generated for the live session. See the [ThumbnailConfiguration](aws-properties-ivs-recordingconfiguration-thumbnailconfiguration.md) property type for more information.
+*Required*: No
+*Type*: [ThumbnailConfiguration](aws-properties-ivs-recordingconfiguration-thumbnailconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ivs-recordingconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivs-recordingconfiguration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the recording-configuration ARN. For example:
 
-`{ "Ref": "myRecordingConfiguration" }`
+ `{ "Ref": "myRecordingConfiguration" }`
 
-For the Amazon IVS recording configuration
-`myRecordingConfiguration`, `Ref` returns the
-recording-configuration ARN.
+For the Amazon IVS recording configuration `myRecordingConfiguration`, `Ref` returns the recording-configuration ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivs-recordingconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivs-recordingconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
-The recording configuration ARN. For example:
-`arn:aws:ivs:us-west-2:123456789012:recording-configuration/abcdABCDefgh`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The recording configuration ARN. For example: `arn:aws:ivs:us-west-2:123456789012:recording-configuration/abcdABCDefgh`
 
-`State`
-
-Indicates the current state of the recording configuration. When the state is
-`ACTIVE`, the configuration is ready to record a channel stream. Valid
-values: `CREATING` \| `CREATE_FAILED` \| `ACTIVE`.
+`State`  <a name="State-fn::getatt"></a>
+Indicates the current state of the recording configuration. When the state is `ACTIVE`, the configuration is ready to record a channel stream. Valid values: `CREATING` \| `CREATE_FAILED` \| `ACTIVE`.
 
 ## Examples
+<a name="aws-resource-ivs-recordingconfiguration--examples"></a>
 
 ### Recording Configuration Template Examples
+<a name="aws-resource-ivs-recordingconfiguration--examples--Recording_Configuration_Template_Examples"></a>
 
-The following examples specify an Amazon IVS Channel
-that records live-channel streams to an S3 bucket.
+The following examples specify an Amazon IVS Channel that records live-channel streams to an S3 bucket.
 
 #### JSON
+<a name="aws-resource-ivs-recordingconfiguration--examples--Recording_Configuration_Template_Examples--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "S3Bucket": {
@@ -219,13 +179,12 @@ that records live-channel streams to an S3 bucket.
     }
   }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-ivs-recordingconfiguration--examples--Recording_Configuration_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 Resources:
  S3Bucket:
    Type: AWS::S3::Bucket
@@ -257,28 +216,15 @@ Resources:
    Properties:
      Name: MyRecordedChannel
      RecordingConfigurationArn: !Ref RecordingConfiguration
-
 ```
 
 ## See also
-
-- [Getting\
-Started with IVS Low-Latency Streaming](../../../ivs/latest/lowlatencyuserguide/gsivs.md)
-
-- [Auto-Record to Amazon S3](../../../ivs/latest/lowlatencyuserguide/record-to-s3.md)
-
-- [RecordingConfiguration](../../../../reference/ivs/latest/lowlatencyapireference/api-recordingconfiguration.md) API data type
-
-- [DestinationConfiguration](../../../../reference/ivs/latest/lowlatencyapireference/api-destinationconfiguration.md) API data type
-
-- [S3DestinationConfiguration](../../../../reference/ivs/latest/lowlatencyapireference/api-s3destinationconfiguration.md) API data type
-
-- [CreateRecordingConfiguration](../../../../reference/ivs/latest/lowlatencyapireference/api-createrecordingconfiguration.md) API endpoint
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-DestinationConfiguration
+<a name="aws-resource-ivs-recordingconfiguration--seealso"></a>
++  [Getting Started with IVS Low-Latency Streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/GSIVS.html)
++  [Auto-Record to Amazon S3](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/record-to-s3.html)
++ [RecordingConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_RecordingConfiguration.html) API data type
++ [DestinationConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_DestinationConfiguration.html) API data type
++ [S3DestinationConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_S3DestinationConfiguration.html) API data type
++ [CreateRecordingConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_CreateRecordingConfiguration.html) API endpoint
 
 All content copied from https://docs.aws.amazon.com/.

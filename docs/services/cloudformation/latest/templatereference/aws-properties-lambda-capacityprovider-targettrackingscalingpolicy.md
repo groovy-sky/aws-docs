@@ -2,68 +2,51 @@
 title: "AWS::Lambda::CapacityProvider TargetTrackingScalingPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::CapacityProvider TargetTrackingScalingPolicy
+<a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy"></a>
 
 A scaling policy for the capacity provider that automatically adjusts capacity to maintain a target value for a specific metric.
 
 ## Syntax
+<a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "PredefinedMetricType" : String,
-  "TargetValue" : Number
+  "[PredefinedMetricType](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-predefinedmetrictype)" : {{String}},
+  "[TargetValue](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-targetvalue)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-syntax.yaml"></a>
 
-```yaml
-
-  PredefinedMetricType: String
-  TargetValue: Number
-
+```
+  [PredefinedMetricType](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-predefinedmetrictype): {{String}}
+  [TargetValue](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-targetvalue): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-properties"></a>
 
-`PredefinedMetricType`
-
+`PredefinedMetricType`  <a name="cfn-lambda-capacityprovider-targettrackingscalingpolicy-predefinedmetrictype"></a>
 The predefined metric type to track for scaling decisions.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `LambdaCapacityProviderAverageCPUUtilization | LambdaCapacityProviderAverageGPUUtilization`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `LambdaCapacityProviderAverageCPUUtilization`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetValue`
-
+`TargetValue`  <a name="cfn-lambda-capacityprovider-targettrackingscalingpolicy-targetvalue"></a>
 The target value for the metric that the scaling policy attempts to maintain through scaling actions.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Lambda::CodeSigningConfig
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

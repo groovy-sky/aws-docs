@@ -2,107 +2,75 @@
 title: "AWS::MediaConnect::BridgeOutput BridgeNetworkOutput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::BridgeOutput BridgeNetworkOutput
+<a name="aws-properties-mediaconnect-bridgeoutput-bridgenetworkoutput"></a>
 
-The output of the bridge. A network output is delivered to your premises.
+ The output of the bridge. A network output is delivered to your premises.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-bridgeoutput-bridgenetworkoutput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-bridgeoutput-bridgenetworkoutput-syntax.json"></a>
 
-```json
-
+```
 {
-  "IpAddress" : String,
-  "NetworkName" : String,
-  "Port" : Integer,
-  "Protocol" : String,
-  "Ttl" : Integer
+  "[IpAddress](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-ipaddress)" : {{String}},
+  "[NetworkName](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-networkname)" : {{String}},
+  "[Port](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-port)" : {{Integer}},
+  "[Protocol](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-protocol)" : {{String}},
+  "[Ttl](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-ttl)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-bridgeoutput-bridgenetworkoutput-syntax.yaml"></a>
 
-```yaml
-
-  IpAddress: String
-  NetworkName: String
-  Port: Integer
-  Protocol: String
-  Ttl: Integer
-
+```
+  [IpAddress](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-ipaddress): {{String}}
+  [NetworkName](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-networkname): {{String}}
+  [Port](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-port): {{Integer}}
+  [Protocol](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-protocol): {{String}}
+  [Ttl](#cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-ttl): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-bridgeoutput-bridgenetworkoutput-properties"></a>
 
-`IpAddress`
+`IpAddress`  <a name="cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-ipaddress"></a>
+ The network output IP address.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The network output IP address.
+`NetworkName`  <a name="cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-networkname"></a>
+ The network output's gateway network name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Port`  <a name="cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-port"></a>
+ The network output's port.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Protocol`  <a name="cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-protocol"></a>
+ The network output protocol.
+AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `rtp-fec | rtp | udp`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkName`
-
-The network output's gateway network name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
-The network output's port.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The network output protocol.
-
-###### Note
-
-AWS Elemental MediaConnect no longer supports the Fujitsu QoS
-protocol. This reference is maintained for legacy purposes only.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `rtp-fec | rtp | udp`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ttl`
-
-The network output TTL.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaConnect::BridgeOutput
-
-AWS::MediaConnect::BridgeSource
+`Ttl`  <a name="cfn-mediaconnect-bridgeoutput-bridgenetworkoutput-ttl"></a>
+ The network output TTL.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

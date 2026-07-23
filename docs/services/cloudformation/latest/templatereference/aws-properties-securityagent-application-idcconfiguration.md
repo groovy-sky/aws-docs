@@ -2,64 +2,49 @@
 title: "AWS::SecurityAgent::Application IdCConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::Application IdCConfiguration
+<a name="aws-properties-securityagent-application-idcconfiguration"></a>
 
 The IAM Identity Center configuration for an application.
 
 ## Syntax
+<a name="aws-properties-securityagent-application-idcconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityagent-application-idcconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdCApplicationArn" : String,
-  "IdCInstanceArn" : String
+  "[IdCApplicationArn](#cfn-securityagent-application-idcconfiguration-idcapplicationarn)" : {{String}},
+  "[IdCInstanceArn](#cfn-securityagent-application-idcconfiguration-idcinstancearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityagent-application-idcconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IdCApplicationArn: String
-  IdCInstanceArn: String
-
+```
+  [IdCApplicationArn](#cfn-securityagent-application-idcconfiguration-idcapplicationarn): {{String}}
+  [IdCInstanceArn](#cfn-securityagent-application-idcconfiguration-idcinstancearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securityagent-application-idcconfiguration-properties"></a>
 
-`IdCApplicationArn`
-
+`IdCApplicationArn`  <a name="cfn-securityagent-application-idcconfiguration-idcapplicationarn"></a>
 The Amazon Resource Name (ARN) of the IAM Identity Center application.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IdCInstanceArn`
-
+`IdCInstanceArn`  <a name="cfn-securityagent-application-idcconfiguration-idcinstancearn"></a>
 The Amazon Resource Name (ARN) of the IAM Identity Center instance.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityAgent::Application
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

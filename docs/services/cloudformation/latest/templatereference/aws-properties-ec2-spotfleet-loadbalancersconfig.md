@@ -2,67 +2,51 @@
 title: "AWS::EC2::SpotFleet LoadBalancersConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet LoadBalancersConfig
+<a name="aws-properties-ec2-spotfleet-loadbalancersconfig"></a>
 
-Specifies the Classic Load Balancers and target groups to attach to a Spot Fleet
-request.
+Specifies the Classic Load Balancers and target groups to attach to a Spot Fleet request.
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-loadbalancersconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-loadbalancersconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClassicLoadBalancersConfig" : ClassicLoadBalancersConfig,
-  "TargetGroupsConfig" : TargetGroupsConfig
+  "[ClassicLoadBalancersConfig](#cfn-ec2-spotfleet-loadbalancersconfig-classicloadbalancersconfig)" : {{ClassicLoadBalancersConfig}},
+  "[TargetGroupsConfig](#cfn-ec2-spotfleet-loadbalancersconfig-targetgroupsconfig)" : {{TargetGroupsConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-loadbalancersconfig-syntax.yaml"></a>
 
-```yaml
-
-  ClassicLoadBalancersConfig:
-    ClassicLoadBalancersConfig
-  TargetGroupsConfig:
-    TargetGroupsConfig
-
+```
+  [ClassicLoadBalancersConfig](#cfn-ec2-spotfleet-loadbalancersconfig-classicloadbalancersconfig): {{
+    ClassicLoadBalancersConfig}}
+  [TargetGroupsConfig](#cfn-ec2-spotfleet-loadbalancersconfig-targetgroupsconfig): {{
+    TargetGroupsConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-loadbalancersconfig-properties"></a>
 
-`ClassicLoadBalancersConfig`
-
+`ClassicLoadBalancersConfig`  <a name="cfn-ec2-spotfleet-loadbalancersconfig-classicloadbalancersconfig"></a>
 The Classic Load Balancers.
+*Required*: No
+*Type*: [ClassicLoadBalancersConfig](aws-properties-ec2-spotfleet-classicloadbalancersconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ClassicLoadBalancersConfig](aws-properties-ec2-spotfleet-classicloadbalancersconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TargetGroupsConfig`
-
+`TargetGroupsConfig`  <a name="cfn-ec2-spotfleet-loadbalancersconfig-targetgroupsconfig"></a>
 The target groups.
-
-_Required_: No
-
-_Type_: [TargetGroupsConfig](aws-properties-ec2-spotfleet-targetgroupsconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplateOverrides
-
-MemoryGiBPerVCpuRequest
+*Required*: No
+*Type*: [TargetGroupsConfig](aws-properties-ec2-spotfleet-targetgroupsconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

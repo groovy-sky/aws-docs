@@ -2,84 +2,62 @@
 title: "AWS::BedrockAgentCore::Runtime CodeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime CodeConfiguration
+<a name="aws-properties-bedrockagentcore-runtime-codeconfiguration"></a>
 
 The configuration for the source code that defines how the agent runtime code should be executed, including the code location, runtime environment, and entry point.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-runtime-codeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-runtime-codeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Code" : Code,
-  "EntryPoint" : [ String, ... ],
-  "Runtime" : String
+  "[Code](#cfn-bedrockagentcore-runtime-codeconfiguration-code)" : {{Code}},
+  "[EntryPoint](#cfn-bedrockagentcore-runtime-codeconfiguration-entrypoint)" : {{[ String, ... ]}},
+  "[Runtime](#cfn-bedrockagentcore-runtime-codeconfiguration-runtime)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-runtime-codeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Code:
-    Code
-  EntryPoint:
-    - String
-  Runtime: String
-
+```
+  [Code](#cfn-bedrockagentcore-runtime-codeconfiguration-code): {{
+    Code}}
+  [EntryPoint](#cfn-bedrockagentcore-runtime-codeconfiguration-entrypoint): {{
+    - String}}
+  [Runtime](#cfn-bedrockagentcore-runtime-codeconfiguration-runtime): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-runtime-codeconfiguration-properties"></a>
 
-`Code`
-
+`Code`  <a name="cfn-bedrockagentcore-runtime-codeconfiguration-code"></a>
 The source code location and configuration details.
+*Required*: Yes
+*Type*: [Code](aws-properties-bedrockagentcore-runtime-code.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Code](aws-properties-bedrockagentcore-runtime-code.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntryPoint`
-
+`EntryPoint`  <a name="cfn-bedrockagentcore-runtime-codeconfiguration-entrypoint"></a>
 The entry point for the code execution, specifying the function or method that should be invoked when the code runs.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Runtime`
-
-The runtime environment for executing the code (for example, Python 3.9 or Node.js 18).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PYTHON_3_10 | PYTHON_3_11 | PYTHON_3_12 | PYTHON_3_13 | PYTHON_3_14`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Code
-
-ContainerConfiguration
+`Runtime`  <a name="cfn-bedrockagentcore-runtime-codeconfiguration-runtime"></a>
+The runtime environment for executing the agent code. Specify the programming language and version to use for the agent runtime. For valid values, see the list of supported runtimes.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PYTHON_3_10 | PYTHON_3_11 | PYTHON_3_12 | PYTHON_3_13 | PYTHON_3_14 | NODE_22`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

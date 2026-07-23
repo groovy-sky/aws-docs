@@ -2,92 +2,62 @@
 title: "AWS::CodePipeline::Pipeline FailureConditions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline FailureConditions
+<a name="aws-properties-codepipeline-pipeline-failureconditions"></a>
 
-The configuration that specifies the result, such as rollback, to occur upon stage
-failure. For more information about conditions, see [Stage conditions](../../../codepipeline/latest/userguide/stage-conditions.md)
-and [How do\
-stage conditions work?](../../../codepipeline/latest/userguide/concepts-how-it-works-conditions.md).
+The configuration that specifies the result, such as rollback, to occur upon stage failure. For more information about conditions, see [Stage conditions](https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-conditions.html) and [How do stage conditions work?](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-how-it-works-conditions.html).
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-failureconditions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-failureconditions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Conditions" : [ Condition, ... ],
-  "Result" : String,
-  "RetryConfiguration" : RetryConfiguration
+  "[Conditions](#cfn-codepipeline-pipeline-failureconditions-conditions)" : {{[ Condition, ... ]}},
+  "[Result](#cfn-codepipeline-pipeline-failureconditions-result)" : {{String}},
+  "[RetryConfiguration](#cfn-codepipeline-pipeline-failureconditions-retryconfiguration)" : {{RetryConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-failureconditions-syntax.yaml"></a>
 
-```yaml
-
-  Conditions:
-    - Condition
-  Result: String
-  RetryConfiguration:
-    RetryConfiguration
-
+```
+  [Conditions](#cfn-codepipeline-pipeline-failureconditions-conditions): {{
+    - Condition}}
+  [Result](#cfn-codepipeline-pipeline-failureconditions-result): {{String}}
+  [RetryConfiguration](#cfn-codepipeline-pipeline-failureconditions-retryconfiguration): {{
+    RetryConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-failureconditions-properties"></a>
 
-`Conditions`
+`Conditions`  <a name="cfn-codepipeline-pipeline-failureconditions-conditions"></a>
+The conditions that are configured as failure conditions. For more information about conditions, see [Stage conditions](https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-conditions.html) and [How do stage conditions work?](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-how-it-works-conditions.html).
+*Required*: No
+*Type*: Array of [Condition](aws-properties-codepipeline-pipeline-condition.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The conditions that are configured as failure conditions. For more information about
-conditions, see [Stage conditions](../../../codepipeline/latest/userguide/stage-conditions.md)
-and [How do\
-stage conditions work?](../../../codepipeline/latest/userguide/concepts-how-it-works-conditions.md).
+`Result`  <a name="cfn-codepipeline-pipeline-failureconditions-result"></a>
+The specified result for when the failure conditions are met, such as rolling back the stage.
+*Required*: No
+*Type*: String
+*Allowed values*: `ROLLBACK | RETRY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Condition](aws-properties-codepipeline-pipeline-condition.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Result`
-
-The specified result for when the failure conditions are met, such as rolling back the
-stage.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ROLLBACK | RETRY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryConfiguration`
-
-The retry configuration specifies automatic retry for a failed stage, along with the
-configured retry mode.
-
-_Required_: No
-
-_Type_: [RetryConfiguration](aws-properties-codepipeline-pipeline-retryconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnvironmentVariable
-
-GitBranchFilterCriteria
+`RetryConfiguration`  <a name="cfn-codepipeline-pipeline-failureconditions-retryconfiguration"></a>
+The retry configuration specifies automatic retry for a failed stage, along with the configured retry mode.
+*Required*: No
+*Type*: [RetryConfiguration](aws-properties-codepipeline-pipeline-retryconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

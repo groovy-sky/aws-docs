@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject ImageStandardOutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject ImageStandardOutputConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardoutputconfiguration"></a>
 
 Output settings for processing images.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardoutputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardoutputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Extraction" : ImageStandardExtraction,
-  "GenerativeField" : ImageStandardGenerativeField
+  "[Extraction](#cfn-bedrock-dataautomationproject-imagestandardoutputconfiguration-extraction)" : {{ImageStandardExtraction}},
+  "[GenerativeField](#cfn-bedrock-dataautomationproject-imagestandardoutputconfiguration-generativefield)" : {{ImageStandardGenerativeField}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardoutputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Extraction:
-    ImageStandardExtraction
-  GenerativeField:
-    ImageStandardGenerativeField
-
+```
+  [Extraction](#cfn-bedrock-dataautomationproject-imagestandardoutputconfiguration-extraction): {{
+    ImageStandardExtraction}}
+  [GenerativeField](#cfn-bedrock-dataautomationproject-imagestandardoutputconfiguration-generativefield): {{
+    ImageStandardGenerativeField}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardoutputconfiguration-properties"></a>
 
-`Extraction`
-
+`Extraction`  <a name="cfn-bedrock-dataautomationproject-imagestandardoutputconfiguration-extraction"></a>
 Settings for populating data fields that describe the image.
+*Required*: No
+*Type*: [ImageStandardExtraction](aws-properties-bedrock-dataautomationproject-imagestandardextraction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ImageStandardExtraction](aws-properties-bedrock-dataautomationproject-imagestandardextraction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GenerativeField`
-
+`GenerativeField`  <a name="cfn-bedrock-dataautomationproject-imagestandardoutputconfiguration-generativefield"></a>
 Whether to generate descriptions of the data.
-
-_Required_: No
-
-_Type_: [ImageStandardGenerativeField](aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageStandardGenerativeField
-
-ModalityProcessingConfiguration
+*Required*: No
+*Type*: [ImageStandardGenerativeField](aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

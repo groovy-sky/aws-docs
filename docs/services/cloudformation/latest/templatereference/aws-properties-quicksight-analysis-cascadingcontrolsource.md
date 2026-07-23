@@ -2,65 +2,50 @@
 title: "AWS::QuickSight::Analysis CascadingControlSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis CascadingControlSource
+<a name="aws-properties-quicksight-analysis-cascadingcontrolsource"></a>
 
 The source controls that are used in a `CascadingControlConfiguration`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-cascadingcontrolsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-cascadingcontrolsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnToMatch" : ColumnIdentifier,
-  "SourceSheetControlId" : String
+  "[ColumnToMatch](#cfn-quicksight-analysis-cascadingcontrolsource-columntomatch)" : {{ColumnIdentifier}},
+  "[SourceSheetControlId](#cfn-quicksight-analysis-cascadingcontrolsource-sourcesheetcontrolid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-cascadingcontrolsource-syntax.yaml"></a>
 
-```yaml
-
-  ColumnToMatch:
-    ColumnIdentifier
-  SourceSheetControlId: String
-
+```
+  [ColumnToMatch](#cfn-quicksight-analysis-cascadingcontrolsource-columntomatch): {{
+    ColumnIdentifier}}
+  [SourceSheetControlId](#cfn-quicksight-analysis-cascadingcontrolsource-sourcesheetcontrolid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-cascadingcontrolsource-properties"></a>
 
-`ColumnToMatch`
-
+`ColumnToMatch`  <a name="cfn-quicksight-analysis-cascadingcontrolsource-columntomatch"></a>
 The column identifier that determines which column to look up for the source sheet control.
+*Required*: No
+*Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceSheetControlId`
-
+`SourceSheetControlId`  <a name="cfn-quicksight-analysis-cascadingcontrolsource-sourcesheetcontrolid"></a>
 The source sheet control ID of a `CascadingControlSource`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CascadingControlConfiguration
-
-CategoricalDimensionField
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

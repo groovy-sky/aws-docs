@@ -2,58 +2,44 @@
 title: "AWS::QuickSight::ActionConnector NoneConnectionMetadata"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::ActionConnector NoneConnectionMetadata
+<a name="aws-properties-quicksight-actionconnector-noneconnectionmetadata"></a>
 
 Authentication metadata for connections that do not require authentication credentials.
 
 ## Syntax
+<a name="aws-properties-quicksight-actionconnector-noneconnectionmetadata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-actionconnector-noneconnectionmetadata-syntax.json"></a>
 
-```json
-
+```
 {
-  "BaseEndpoint" : String
+  "[BaseEndpoint](#cfn-quicksight-actionconnector-noneconnectionmetadata-baseendpoint)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-actionconnector-noneconnectionmetadata-syntax.yaml"></a>
 
-```yaml
-
-  BaseEndpoint: String
-
+```
+  [BaseEndpoint](#cfn-quicksight-actionconnector-noneconnectionmetadata-baseendpoint): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-actionconnector-noneconnectionmetadata-properties"></a>
 
-`BaseEndpoint`
-
+`BaseEndpoint`  <a name="cfn-quicksight-actionconnector-noneconnectionmetadata-baseendpoint"></a>
 The base endpoint URL for connections that do not require authentication.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^https://.*`
-
-_Minimum_: `1`
-
-_Maximum_: `8192`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IAMConnectionMetadata
-
-ResourcePermission
+*Required*: Yes
+*Type*: String
+*Pattern*: `^https://.*`
+*Minimum*: `1`
+*Maximum*: `8192`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

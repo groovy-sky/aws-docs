@@ -2,105 +2,77 @@
 title: "AWS::EC2::VerifiedAccessInstance VerifiedAccessLogs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessInstance VerifiedAccessLogs
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs"></a>
 
 Describes the options for Verified Access logs.
 
 ## Syntax
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogs" : CloudWatchLogs,
-  "IncludeTrustContext" : Boolean,
-  "KinesisDataFirehose" : KinesisDataFirehose,
-  "LogVersion" : String,
-  "S3" : S3
+  "[CloudWatchLogs](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-cloudwatchlogs)" : {{CloudWatchLogs}},
+  "[IncludeTrustContext](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-includetrustcontext)" : {{Boolean}},
+  "[KinesisDataFirehose](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-kinesisdatafirehose)" : {{KinesisDataFirehose}},
+  "[LogVersion](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-logversion)" : {{String}},
+  "[S3](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-s3)" : {{S3}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogs:
-    CloudWatchLogs
-  IncludeTrustContext: Boolean
-  KinesisDataFirehose:
-    KinesisDataFirehose
-  LogVersion: String
-  S3:
-    S3
-
+```
+  [CloudWatchLogs](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-cloudwatchlogs): {{
+    CloudWatchLogs}}
+  [IncludeTrustContext](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-includetrustcontext): {{Boolean}}
+  [KinesisDataFirehose](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-kinesisdatafirehose): {{
+    KinesisDataFirehose}}
+  [LogVersion](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-logversion): {{String}}
+  [S3](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-s3): {{
+    S3}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs-properties"></a>
 
-`CloudWatchLogs`
-
+`CloudWatchLogs`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-cloudwatchlogs"></a>
 CloudWatch Logs logging destination.
+*Required*: No
+*Type*: [CloudWatchLogs](aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudWatchLogs](aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeTrustContext`
-
+`IncludeTrustContext`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-includetrustcontext"></a>
 Indicates whether to include trust data sent by trust providers in the logs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KinesisDataFirehose`
-
+`KinesisDataFirehose`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-kinesisdatafirehose"></a>
 Kinesis logging destination.
+*Required*: No
+*Type*: [KinesisDataFirehose](aws-properties-ec2-verifiedaccessinstance-kinesisdatafirehose.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KinesisDataFirehose](aws-properties-ec2-verifiedaccessinstance-kinesisdatafirehose.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogVersion`
-
+`LogVersion`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-logversion"></a>
 The logging version.
-
 Valid values: `ocsf-0.1` \| `ocsf-1.0.0-rc.2`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3`
-
+`S3`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-s3"></a>
 Amazon S3 logging options.
-
-_Required_: No
-
-_Type_: [S3](aws-properties-ec2-verifiedaccessinstance-s3.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-VerifiedAccessTrustProvider
+*Required*: No
+*Type*: [S3](aws-properties-ec2-verifiedaccessinstance-s3.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,110 +2,87 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormNumericQuestionOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormNumericQuestionOption
+<a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption"></a>
 
 Information about the option range used for scoring in numeric questions.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutomaticFail" : Boolean,
-  "AutomaticFailConfiguration" : AutomaticFailConfiguration,
-  "MaxValue" : Integer,
-  "MinValue" : Integer,
-  "Score" : Integer
+  "[AutomaticFail](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfail)" : {{Boolean}},
+  "[AutomaticFailConfiguration](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfailconfiguration)" : {{AutomaticFailConfiguration}},
+  "[MaxValue](#cfn-connect-evaluationform-evaluationformnumericquestionoption-maxvalue)" : {{Integer}},
+  "[MinValue](#cfn-connect-evaluationform-evaluationformnumericquestionoption-minvalue)" : {{Integer}},
+  "[PointsConfiguration](#cfn-connect-evaluationform-evaluationformnumericquestionoption-pointsconfiguration)" : {{QuestionOptionPointsConfiguration}},
+  "[Score](#cfn-connect-evaluationform-evaluationformnumericquestionoption-score)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption-syntax.yaml"></a>
 
-```yaml
-
-  AutomaticFail: Boolean
-  AutomaticFailConfiguration:
-    AutomaticFailConfiguration
-  MaxValue: Integer
-  MinValue: Integer
-  Score: Integer
-
+```
+  [AutomaticFail](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfail): {{Boolean}}
+  [AutomaticFailConfiguration](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfailconfiguration): {{
+    AutomaticFailConfiguration}}
+  [MaxValue](#cfn-connect-evaluationform-evaluationformnumericquestionoption-maxvalue): {{Integer}}
+  [MinValue](#cfn-connect-evaluationform-evaluationformnumericquestionoption-minvalue): {{Integer}}
+  [PointsConfiguration](#cfn-connect-evaluationform-evaluationformnumericquestionoption-pointsconfiguration): {{
+    QuestionOptionPointsConfiguration}}
+  [Score](#cfn-connect-evaluationform-evaluationformnumericquestionoption-score): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption-properties"></a>
 
-`AutomaticFail`
+`AutomaticFail`  <a name="cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfail"></a>
+The flag to mark the option as automatic fail. If an automatic fail answer is provided, the overall evaluation gets a score of 0.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The flag to mark the option as automatic fail. If an automatic fail answer is
-provided, the overall evaluation gets a score of 0.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutomaticFailConfiguration`
-
+`AutomaticFailConfiguration`  <a name="cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfailconfiguration"></a>
 A configuration for automatic fail.
+*Required*: No
+*Type*: [AutomaticFailConfiguration](aws-properties-connect-evaluationform-automaticfailconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AutomaticFailConfiguration](aws-properties-connect-evaluationform-automaticfailconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxValue`
-
+`MaxValue`  <a name="cfn-connect-evaluationform-evaluationformnumericquestionoption-maxvalue"></a>
 The maximum answer value of the range option.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinValue`
-
+`MinValue`  <a name="cfn-connect-evaluationform-evaluationformnumericquestionoption-minvalue"></a>
 The minimum answer value of the range option.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`PointsConfiguration`  <a name="cfn-connect-evaluationform-evaluationformnumericquestionoption-pointsconfiguration"></a>
+The points configuration for point-based scoring.
+*Required*: No
+*Type*: [QuestionOptionPointsConfiguration](aws-properties-connect-evaluationform-questionoptionpointsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Score`
-
+`Score`  <a name="cfn-connect-evaluationform-evaluationformnumericquestionoption-score"></a>
 The score assigned to answer values within the range option.
-
-_Minimum_: 0
-
-_Maximum_: 10
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormNumericQuestionAutomation
-
-EvaluationFormNumericQuestionProperties
+*Minimum*: 0
+*Maximum*: 10
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

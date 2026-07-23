@@ -2,70 +2,52 @@
 title: "AWS::CodePipeline::Pipeline BlockerDeclaration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline BlockerDeclaration
+<a name="aws-properties-codepipeline-pipeline-blockerdeclaration"></a>
 
 Reserved for future use.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-blockerdeclaration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-blockerdeclaration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Type" : String
+  "[Name](#cfn-codepipeline-pipeline-blockerdeclaration-name)" : {{String}},
+  "[Type](#cfn-codepipeline-pipeline-blockerdeclaration-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-blockerdeclaration-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Type: String
-
+```
+  [Name](#cfn-codepipeline-pipeline-blockerdeclaration-name): {{String}}
+  [Type](#cfn-codepipeline-pipeline-blockerdeclaration-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-blockerdeclaration-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-codepipeline-pipeline-blockerdeclaration-name"></a>
 Reserved for future use.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-codepipeline-pipeline-blockerdeclaration-type"></a>
 Reserved for future use.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Schedule`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BeforeEntryConditions
-
-Condition
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Schedule`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

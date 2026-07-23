@@ -2,109 +2,91 @@
 title: "AWS::XRay::ResourcePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::ResourcePolicy
+<a name="aws-resource-xray-resourcepolicy"></a>
 
-Use `AWS::XRay::ResourcePolicy` to specify an X-Ray resource-based policy,
-which grants one or more AWS services and accounts permissions
-to access X-Ray. Each resource-based policy is associated with a
-specific AWS account.
+Use `AWS::XRay::ResourcePolicy` to specify an X-Ray resource-based policy, which grants one or more AWS services and accounts permissions to access X-Ray. Each resource-based policy is associated with a specific AWS account.
 
 ## Syntax
+<a name="aws-resource-xray-resourcepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-xray-resourcepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::XRay::ResourcePolicy",
   "Properties" : {
-      "BypassPolicyLockoutCheck" : Boolean,
-      "PolicyDocument" : String,
-      "PolicyName" : String
+      "[BypassPolicyLockoutCheck](#cfn-xray-resourcepolicy-bypasspolicylockoutcheck)" : {{Boolean}},
+      "[PolicyDocument](#cfn-xray-resourcepolicy-policydocument)" : {{String}},
+      "[PolicyName](#cfn-xray-resourcepolicy-policyname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-xray-resourcepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::XRay::ResourcePolicy
 Properties:
-  BypassPolicyLockoutCheck: Boolean
-  PolicyDocument: String
-  PolicyName: String
-
+  [BypassPolicyLockoutCheck](#cfn-xray-resourcepolicy-bypasspolicylockoutcheck): {{Boolean}}
+  [PolicyDocument](#cfn-xray-resourcepolicy-policydocument): {{String}}
+  [PolicyName](#cfn-xray-resourcepolicy-policyname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-xray-resourcepolicy-properties"></a>
 
-`BypassPolicyLockoutCheck`
-
+`BypassPolicyLockoutCheck`  <a name="cfn-xray-resourcepolicy-bypasspolicylockoutcheck"></a>
 A flag to indicate whether to bypass the resource-based policy lockout safety check.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyDocument`
-
+`PolicyDocument`  <a name="cfn-xray-resourcepolicy-policydocument"></a>
 The resource-based policy document, which can be up to 5kb in size.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5120`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5120`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyName`
-
+`PolicyName`  <a name="cfn-xray-resourcepolicy-policyname"></a>
 The name of the resource-based policy. Must be unique within a specific AWS account.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-xray-resourcepolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-xray-resourcepolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the policy name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-xray-resourcepolicy--examples"></a>
 
 ### Create resource-based policy
+<a name="aws-resource-xray-resourcepolicy--examples--Create_resource-based_policy"></a>
 
-This example creates a resource-based policy called MySnsActiveTracingPolicy,
-which configures Amazon SNS active tracing.
+This example creates a resource-based policy called MySnsActiveTracingPolicy, which configures Amazon SNS active tracing.
 
 #### JSON
+<a name="aws-resource-xray-resourcepolicy--examples--Create_resource-based_policy--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -144,13 +126,12 @@ which configures Amazon SNS active tracing.
       }
    }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-xray-resourcepolicy--examples--Create_resource-based_policy--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyResourcePolicy:
@@ -184,21 +165,12 @@ Resources:
           ]
         }"
       PolicyName: "MySNSActiveTracingPolicy"
-
 ```
 
 ## See also
-
-- [X-Ray resource-based policies](../../../xray/latest/devguide/security-iam-service-with-iam.md#security_iam_service-with-iam-resource-based-policies)
-
-- [Identity-based policies and resource-based policies](../../../iam/latest/userguide/access-policies-identity-vs-resource.md)
-
-- [PutResourcePolicy](../../../xray/latest/api/api-putresourcepolicy.md) action in the X-Ray API Reference
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::XRay::SamplingRule
+<a name="aws-resource-xray-resourcepolicy--seealso"></a>
++  [X-Ray resource-based policies](https://docs.aws.amazon.com//xray/latest/devguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)
++  [Identity-based policies and resource-based policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
++ [PutResourcePolicy](https://docs.aws.amazon.com//xray/latest/api/API_PutResourcePolicy.html) action in the X-Ray API Reference
 
 All content copied from https://docs.aws.amazon.com/.

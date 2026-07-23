@@ -2,92 +2,68 @@
 title: "AWS::EC2::VerifiedAccessEndpoint CidrOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessEndpoint CidrOptions
+<a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions"></a>
 
 Describes the CIDR options for a Verified Access endpoint.
 
 ## Syntax
+<a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cidr" : String,
-  "PortRanges" : [ PortRange, ... ],
-  "Protocol" : String,
-  "SubnetIds" : [ String, ... ]
+  "[Cidr](#cfn-ec2-verifiedaccessendpoint-cidroptions-cidr)" : {{String}},
+  "[PortRanges](#cfn-ec2-verifiedaccessendpoint-cidroptions-portranges)" : {{[ PortRange, ... ]}},
+  "[Protocol](#cfn-ec2-verifiedaccessendpoint-cidroptions-protocol)" : {{String}},
+  "[SubnetIds](#cfn-ec2-verifiedaccessendpoint-cidroptions-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions-syntax.yaml"></a>
 
-```yaml
-
-  Cidr: String
-  PortRanges:
-    - PortRange
-  Protocol: String
-  SubnetIds:
-    - String
-
+```
+  [Cidr](#cfn-ec2-verifiedaccessendpoint-cidroptions-cidr): {{String}}
+  [PortRanges](#cfn-ec2-verifiedaccessendpoint-cidroptions-portranges): {{
+    - PortRange}}
+  [Protocol](#cfn-ec2-verifiedaccessendpoint-cidroptions-protocol): {{String}}
+  [SubnetIds](#cfn-ec2-verifiedaccessendpoint-cidroptions-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions-properties"></a>
 
-`Cidr`
-
+`Cidr`  <a name="cfn-ec2-verifiedaccessendpoint-cidroptions-cidr"></a>
 The CIDR.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PortRanges`
-
+`PortRanges`  <a name="cfn-ec2-verifiedaccessendpoint-cidroptions-portranges"></a>
 The port ranges.
+*Required*: No
+*Type*: Array of [PortRange](aws-properties-ec2-verifiedaccessendpoint-portrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PortRange](aws-properties-ec2-verifiedaccessendpoint-portrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-ec2-verifiedaccessendpoint-cidroptions-protocol"></a>
 The protocol.
+*Required*: No
+*Type*: String
+*Allowed values*: `http | https | tcp`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `http | https | tcp`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-ec2-verifiedaccessendpoint-cidroptions-subnetids"></a>
 The IDs of the subnets.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VerifiedAccessEndpoint
-
-LoadBalancerOptions
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

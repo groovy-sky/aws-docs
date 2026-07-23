@@ -2,66 +2,51 @@
 title: "AWS::SSMContacts::Plan Targets"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMContacts::Plan Targets
+<a name="aws-properties-ssmcontacts-plan-targets"></a>
 
 The contact or contact channel that's being engaged.
 
 ## Syntax
+<a name="aws-properties-ssmcontacts-plan-targets-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmcontacts-plan-targets-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChannelTargetInfo" : ChannelTargetInfo,
-  "ContactTargetInfo" : ContactTargetInfo
+  "[ChannelTargetInfo](#cfn-ssmcontacts-plan-targets-channeltargetinfo)" : {{ChannelTargetInfo}},
+  "[ContactTargetInfo](#cfn-ssmcontacts-plan-targets-contacttargetinfo)" : {{ContactTargetInfo}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmcontacts-plan-targets-syntax.yaml"></a>
 
-```yaml
-
-  ChannelTargetInfo:
-    ChannelTargetInfo
-  ContactTargetInfo:
-    ContactTargetInfo
-
+```
+  [ChannelTargetInfo](#cfn-ssmcontacts-plan-targets-channeltargetinfo): {{
+    ChannelTargetInfo}}
+  [ContactTargetInfo](#cfn-ssmcontacts-plan-targets-contacttargetinfo): {{
+    ContactTargetInfo}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmcontacts-plan-targets-properties"></a>
 
-`ChannelTargetInfo`
-
+`ChannelTargetInfo`  <a name="cfn-ssmcontacts-plan-targets-channeltargetinfo"></a>
 Information about the contact channel that Incident Manager engages.
+*Required*: No
+*Type*: [ChannelTargetInfo](aws-properties-ssmcontacts-plan-channeltargetinfo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChannelTargetInfo](aws-properties-ssmcontacts-plan-channeltargetinfo.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContactTargetInfo`
-
+`ContactTargetInfo`  <a name="cfn-ssmcontacts-plan-targets-contacttargetinfo"></a>
 Information about the contact that Incident Manager engages.
-
-_Required_: No
-
-_Type_: [ContactTargetInfo](aws-properties-ssmcontacts-plan-contacttargetinfo.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Stage
-
-AWS::SSMContacts::Rotation
+*Required*: No
+*Type*: [ContactTargetInfo](aws-properties-ssmcontacts-plan-contacttargetinfo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

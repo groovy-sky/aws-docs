@@ -2,127 +2,100 @@
 title: "AWS::SecurityHub::SecurityControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::SecurityControl
+<a name="aws-resource-securityhub-securitycontrol"></a>
 
-The `AWS::SecurityHub::SecurityControl` resource specifies custom parameter values for
-an AWS Security Hub CSPM control. For a list of controls that support custom
-parameters, see [Security Hub CSPM controls reference](../../../securityhub/latest/userguide/securityhub-controls-reference.md). You can also use this resource to specify the use of default parameter values for
-a control. For more information about custom parameters,
-see [Custom control\
-parameters](../../../securityhub/latest/userguide/custom-control-parameters.md) in the _AWS Security Hub CSPM User Guide_.
+The `AWS::SecurityHub::SecurityControl` resource specifies custom parameter values for an AWS Security Hub CSPM control. For a list of controls that support custom parameters, see [Security Hub CSPM controls reference](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html). You can also use this resource to specify the use of default parameter values for a control. For more information about custom parameters, see [Custom control parameters](https://docs.aws.amazon.com/securityhub/latest/userguide/custom-control-parameters.html) in the *AWS Security Hub CSPM User Guide*.
 
 Tags aren't supported for this resource.
 
 ## Syntax
+<a name="aws-resource-securityhub-securitycontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securityhub-securitycontrol-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityHub::SecurityControl",
   "Properties" : {
-      "LastUpdateReason" : String,
-      "Parameters" : {Key: Value, ...},
-      "SecurityControlArn" : String,
-      "SecurityControlId" : String
+      "[LastUpdateReason](#cfn-securityhub-securitycontrol-lastupdatereason)" : {{String}},
+      "[Parameters](#cfn-securityhub-securitycontrol-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[SecurityControlArn](#cfn-securityhub-securitycontrol-securitycontrolarn)" : {{String}},
+      "[SecurityControlId](#cfn-securityhub-securitycontrol-securitycontrolid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securityhub-securitycontrol-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityHub::SecurityControl
 Properties:
-  LastUpdateReason: String
-  Parameters:
-    Key: Value
-  SecurityControlArn: String
-  SecurityControlId: String
-
+  [LastUpdateReason](#cfn-securityhub-securitycontrol-lastupdatereason): {{String}}
+  [Parameters](#cfn-securityhub-securitycontrol-parameters): {{
+    {{Key}}: {{Value}}}}
+  [SecurityControlArn](#cfn-securityhub-securitycontrol-securitycontrolarn): {{String}}
+  [SecurityControlId](#cfn-securityhub-securitycontrol-securitycontrolid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-securityhub-securitycontrol-properties"></a>
 
-`LastUpdateReason`
+`LastUpdateReason`  <a name="cfn-securityhub-securitycontrol-lastupdatereason"></a>
+ The most recent reason for updating the customizable properties of a security control. This differs from the `UpdateReason` field of the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateStandardsControlAssociations.html) API, which tracks the reason for updating the enablement status of a control. This field accepts alphanumeric characters in addition to white spaces, dashes, and underscores.
+*Required*: No
+*Type*: String
+*Pattern*: `^([^-]|[-_ a-zA-Z0-9])+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The most recent reason for updating the customizable properties of a security control. This differs from the
-`UpdateReason` field of the [`BatchUpdateStandardsControlAssociations`](../../../../reference/securityhub/1-0/apireference/api-batchupdatestandardscontrolassociations.md) API, which tracks the
-reason for updating the enablement status of a control. This field accepts alphanumeric
-characters in addition to white spaces, dashes, and underscores.
+`Parameters`  <a name="cfn-securityhub-securitycontrol-parameters"></a>
+ An object that identifies the name of a control parameter, its current value, and whether it has been customized.
+*Required*: Yes
+*Type*: Object of [ParameterConfiguration](aws-properties-securityhub-securitycontrol-parameterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecurityControlArn`  <a name="cfn-securityhub-securitycontrol-securitycontrolarn"></a>
+ The Amazon Resource Name (ARN) for a security control across standards, such as `arn:aws:securityhub:eu-central-1:123456789012:security-control/S3.1`. This parameter doesn't mention a specific standard.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^([^-]|[-_ a-zA-Z0-9])+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Parameters`
-
-An object that identifies the name of a control parameter, its current value, and whether it has been customized.
-
-_Required_: Yes
-
-_Type_: Object of [ParameterConfiguration](aws-properties-securityhub-securitycontrol-parameterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityControlArn`
-
-The Amazon Resource Name (ARN) for a security control across standards, such as
-`arn:aws:securityhub:eu-central-1:123456789012:security-control/S3.1`. This
-parameter doesn't mention a specific standard.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityControlId`
-
-The unique identifier of a security control across standards. Values for this field typically consist of an AWS service name and a
-number, such as APIGateway.3.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`SecurityControlId`  <a name="cfn-securityhub-securitycontrol-securitycontrolid"></a>
+ The unique identifier of a security control across standards. Values for this field typically consist of an AWS service name and a number, such as APIGateway.3.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-securityhub-securitycontrol-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securityhub-securitycontrol-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the identifier of the security control. For example, `Config.1`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-securityhub-securitycontrol--examples"></a>
 
 ### Configuring control parameters
+<a name="aws-resource-securityhub-securitycontrol--examples--Configuring_control_parameters"></a>
 
 This example configures a parameter for the control ACM.1.
 
 #### JSON
+<a name="aws-resource-securityhub-securitycontrol--examples--Configuring_control_parameters--json"></a>
 
-```json
-
+```
 {
   "Description": "Example template to configure control parameters",
   "Resources": {
@@ -146,9 +119,9 @@ This example configures a parameter for the control ACM.1.
 ```
 
 #### YAML
+<a name="aws-resource-securityhub-securitycontrol--examples--Configuring_control_parameters--yaml"></a>
 
-```yaml
-
+```
 Description: Example template to configure control parameters
 Resources:
   ExampleSecurityControl:
@@ -162,11 +135,5 @@ Resources:
             Integer: 15
       LastUpdateReason: 'Internal compliance requirement'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityHub::ProductSubscription
-
-ParameterConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

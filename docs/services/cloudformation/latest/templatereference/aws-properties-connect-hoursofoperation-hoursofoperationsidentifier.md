@@ -2,68 +2,51 @@
 title: "AWS::Connect::HoursOfOperation HoursOfOperationsIdentifier"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::HoursOfOperation HoursOfOperationsIdentifier
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationsidentifier"></a>
 
 Identifier for a hours of operations resource: ARN, ID, Name
 
 ## Syntax
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationsidentifier-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationsidentifier-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : String,
-  "Name" : String
+  "[Id](#cfn-connect-hoursofoperation-hoursofoperationsidentifier-id)" : {{String}},
+  "[Name](#cfn-connect-hoursofoperation-hoursofoperationsidentifier-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationsidentifier-syntax.yaml"></a>
 
-```yaml
-
-  Id: String
-  Name: String
-
+```
+  [Id](#cfn-connect-hoursofoperation-hoursofoperationsidentifier-id): {{String}}
+  [Name](#cfn-connect-hoursofoperation-hoursofoperationsidentifier-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationsidentifier-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-connect-hoursofoperation-hoursofoperationsidentifier-id"></a>
 Unique identifier of the hours of operation.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-hoursofoperation-hoursofoperationsidentifier-name"></a>
 Name of the hours of operation
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HoursOfOperationOverrideConfig
-
-HoursOfOperationTimeSlice
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

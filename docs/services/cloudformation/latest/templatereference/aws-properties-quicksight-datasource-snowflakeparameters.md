@@ -2,131 +2,91 @@
 title: "AWS::QuickSight::DataSource SnowflakeParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource SnowflakeParameters
+<a name="aws-properties-quicksight-datasource-snowflakeparameters"></a>
 
 The parameters for Snowflake.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-snowflakeparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-snowflakeparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthenticationType" : String,
-  "Database" : String,
-  "DatabaseAccessControlRole" : String,
-  "Host" : String,
-  "OAuthParameters" : OAuthParameters,
-  "Warehouse" : String
+  "[AuthenticationType](#cfn-quicksight-datasource-snowflakeparameters-authenticationtype)" : {{String}},
+  "[Database](#cfn-quicksight-datasource-snowflakeparameters-database)" : {{String}},
+  "[DatabaseAccessControlRole](#cfn-quicksight-datasource-snowflakeparameters-databaseaccesscontrolrole)" : {{String}},
+  "[Host](#cfn-quicksight-datasource-snowflakeparameters-host)" : {{String}},
+  "[OAuthParameters](#cfn-quicksight-datasource-snowflakeparameters-oauthparameters)" : {{OAuthParameters}},
+  "[Warehouse](#cfn-quicksight-datasource-snowflakeparameters-warehouse)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-snowflakeparameters-syntax.yaml"></a>
 
-```yaml
-
-  AuthenticationType: String
-  Database: String
-  DatabaseAccessControlRole: String
-  Host: String
-  OAuthParameters:
-    OAuthParameters
-  Warehouse: String
-
+```
+  [AuthenticationType](#cfn-quicksight-datasource-snowflakeparameters-authenticationtype): {{String}}
+  [Database](#cfn-quicksight-datasource-snowflakeparameters-database): {{String}}
+  [DatabaseAccessControlRole](#cfn-quicksight-datasource-snowflakeparameters-databaseaccesscontrolrole): {{String}}
+  [Host](#cfn-quicksight-datasource-snowflakeparameters-host): {{String}}
+  [OAuthParameters](#cfn-quicksight-datasource-snowflakeparameters-oauthparameters): {{
+    OAuthParameters}}
+  [Warehouse](#cfn-quicksight-datasource-snowflakeparameters-warehouse): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-snowflakeparameters-properties"></a>
 
-`AuthenticationType`
-
+`AuthenticationType`  <a name="cfn-quicksight-datasource-snowflakeparameters-authenticationtype"></a>
 The authentication type that you want to use for your connection. This parameter accepts OAuth and non-OAuth authentication types.
+*Required*: No
+*Type*: String
+*Allowed values*: `PASSWORD | TOKEN | X509 | KEYPAIR`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PASSWORD | TOKEN | X509 | KEYPAIR`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Database`
-
+`Database`  <a name="cfn-quicksight-datasource-snowflakeparameters-database"></a>
 Database.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseAccessControlRole`
-
+`DatabaseAccessControlRole`  <a name="cfn-quicksight-datasource-snowflakeparameters-databaseaccesscontrolrole"></a>
 The database access control role.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Host`
-
+`Host`  <a name="cfn-quicksight-datasource-snowflakeparameters-host"></a>
 Host.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OAuthParameters`
-
+`OAuthParameters`  <a name="cfn-quicksight-datasource-snowflakeparameters-oauthparameters"></a>
 An object that contains information needed to create a data source connection between an Quick Sight account and Snowflake.
+*Required*: No
+*Type*: [OAuthParameters](aws-properties-quicksight-datasource-oauthparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [OAuthParameters](aws-properties-quicksight-datasource-oauthparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Warehouse`
-
+`Warehouse`  <a name="cfn-quicksight-datasource-snowflakeparameters-warehouse"></a>
 Warehouse.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3TablesParameters
-
-SparkParameters
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

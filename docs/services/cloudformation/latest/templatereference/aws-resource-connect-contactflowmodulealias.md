@@ -2,125 +2,97 @@
 title: "AWS::Connect::ContactFlowModuleAlias"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::ContactFlowModuleAlias
+<a name="aws-resource-connect-contactflowmodulealias"></a>
 
 Creates a named alias that points to a specific version of a contact flow module.
 
 ## Syntax
+<a name="aws-resource-connect-contactflowmodulealias-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-contactflowmodulealias-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::ContactFlowModuleAlias",
   "Properties" : {
-      "ContactFlowModuleId" : String,
-      "ContactFlowModuleVersion" : Integer,
-      "Description" : String,
-      "Name" : String
+      "[ContactFlowModuleId](#cfn-connect-contactflowmodulealias-contactflowmoduleid)" : {{String}},
+      "[ContactFlowModuleVersion](#cfn-connect-contactflowmodulealias-contactflowmoduleversion)" : {{Integer}},
+      "[Description](#cfn-connect-contactflowmodulealias-description)" : {{String}},
+      "[Name](#cfn-connect-contactflowmodulealias-name)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-contactflowmodulealias-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::ContactFlowModuleAlias
 Properties:
-  ContactFlowModuleId: String
-  ContactFlowModuleVersion: Integer
-  Description: String
-  Name: String
-
+  [ContactFlowModuleId](#cfn-connect-contactflowmodulealias-contactflowmoduleid): {{String}}
+  [ContactFlowModuleVersion](#cfn-connect-contactflowmodulealias-contactflowmoduleversion): {{Integer}}
+  [Description](#cfn-connect-contactflowmodulealias-description): {{String}}
+  [Name](#cfn-connect-contactflowmodulealias-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-contactflowmodulealias-properties"></a>
 
-`ContactFlowModuleId`
-
+`ContactFlowModuleId`  <a name="cfn-connect-contactflowmodulealias-contactflowmoduleid"></a>
 The identifier of the flow module.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]+:[0-9]{12}:instance/[-a-zA-Z0-9]+/flow-module/[-a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]+:[0-9]{12}:instance/[-a-zA-Z0-9]+/flow-module/[-a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContactFlowModuleVersion`
-
+`ContactFlowModuleVersion`  <a name="cfn-connect-contactflowmodulealias-contactflowmoduleversion"></a>
 The version of the flow module.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-connect-contactflowmodulealias-description"></a>
 The description of the alias.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-contactflowmodulealias-name"></a>
 The name of the alias.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([$0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([$0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-connect-contactflowmodulealias-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-contactflowmodulealias-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-contactflowmodulealias-return-values-fn--getatt"></a>
 
-`AliasId`
+####
+<a name="aws-resource-connect-contactflowmodulealias-return-values-fn--getatt-fn--getatt"></a>
 
+`AliasId`  <a name="AliasId-fn::getatt"></a>
 The identifier of the alias.
 
-`ContactFlowModuleAliasARN`
-
+`ContactFlowModuleAliasARN`  <a name="ContactFlowModuleAliasARN-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Connect::ContactFlowModuleVersion
 
 All content copied from https://docs.aws.amazon.com/.

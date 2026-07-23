@@ -2,76 +2,55 @@
 title: "AWS::IoTSiteWise::ComputationModel AssetModelPropertyBindingValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::ComputationModel AssetModelPropertyBindingValue
+<a name="aws-properties-iotsitewise-computationmodel-assetmodelpropertybindingvalue"></a>
 
 Contains information about an `assetModelProperty` binding value.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-computationmodel-assetmodelpropertybindingvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-computationmodel-assetmodelpropertybindingvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "AssetModelId" : String,
-  "PropertyId" : String
+  "[AssetModelId](#cfn-iotsitewise-computationmodel-assetmodelpropertybindingvalue-assetmodelid)" : {{String}},
+  "[PropertyId](#cfn-iotsitewise-computationmodel-assetmodelpropertybindingvalue-propertyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-computationmodel-assetmodelpropertybindingvalue-syntax.yaml"></a>
 
-```yaml
-
-  AssetModelId: String
-  PropertyId: String
-
+```
+  [AssetModelId](#cfn-iotsitewise-computationmodel-assetmodelpropertybindingvalue-assetmodelid): {{String}}
+  [PropertyId](#cfn-iotsitewise-computationmodel-assetmodelpropertybindingvalue-propertyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-computationmodel-assetmodelpropertybindingvalue-properties"></a>
 
-`AssetModelId`
-
+`AssetModelId`  <a name="cfn-iotsitewise-computationmodel-assetmodelpropertybindingvalue-assetmodelid"></a>
 The ID of the asset model, in UUID format.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+*Minimum*: `36`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
-
-_Minimum_: `36`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyId`
-
+`PropertyId`  <a name="cfn-iotsitewise-computationmodel-assetmodelpropertybindingvalue-propertyid"></a>
 The ID of the asset model property used in data binding value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
-
-_Minimum_: `36`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnomalyDetectionComputationModelConfiguration
-
-AssetPropertyBindingValue
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+*Minimum*: `36`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::KinesisFirehose::DeliveryStream Databases"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream Databases
+<a name="aws-properties-kinesisfirehose-deliverystream-databases"></a>
 
-The `Databases` property type specifies Property description not available. for an [AWS::KinesisFirehose::DeliveryStream](aws-resource-kinesisfirehose-deliverystream.md).
+<a name="aws-properties-kinesisfirehose-deliverystream-databases-description"></a>The `Databases` property type specifies Property description not available. for an [AWS::KinesisFirehose::DeliveryStream](aws-resource-kinesisfirehose-deliverystream.md).
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-databases-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-databases-syntax.json"></a>
 
-```json
-
+```
 {
-  "Exclude" : [ String, ... ],
-  "Include" : [ String, ... ]
+  "[Exclude](#cfn-kinesisfirehose-deliverystream-databases-exclude)" : {{[ String, ... ]}},
+  "[Include](#cfn-kinesisfirehose-deliverystream-databases-include)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-databases-syntax.yaml"></a>
 
-```yaml
-
-  Exclude:
-    - String
-  Include:
-    - String
-
+```
+  [Exclude](#cfn-kinesisfirehose-deliverystream-databases-exclude): {{
+    - String}}
+  [Include](#cfn-kinesisfirehose-deliverystream-databases-include): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-databases-properties"></a>
 
-`Exclude`
-
+`Exclude`  <a name="cfn-kinesisfirehose-deliverystream-databases-exclude"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Include`
-
+`Include`  <a name="cfn-kinesisfirehose-deliverystream-databases-include"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatabaseColumns
-
-DatabaseSourceAuthenticationConfiguration
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,755 +2,495 @@
 title: "AWS::InspectorV2::Filter FilterCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Filter FilterCriteria
+<a name="aws-properties-inspectorv2-filter-filtercriteria"></a>
 
 Details on the criteria used to define the filter.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-filter-filtercriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-filter-filtercriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsAccountId" : [ StringFilter, ... ],
-  "CodeVulnerabilityDetectorName" : [ StringFilter, ... ],
-  "CodeVulnerabilityDetectorTags" : [ StringFilter, ... ],
-  "CodeVulnerabilityFilePath" : [ StringFilter, ... ],
-  "ComponentId" : [ StringFilter, ... ],
-  "ComponentType" : [ StringFilter, ... ],
-  "Ec2InstanceImageId" : [ StringFilter, ... ],
-  "Ec2InstanceSubnetId" : [ StringFilter, ... ],
-  "Ec2InstanceVpcId" : [ StringFilter, ... ],
-  "EcrImageArchitecture" : [ StringFilter, ... ],
-  "EcrImageHash" : [ StringFilter, ... ],
-  "EcrImagePushedAt" : [ DateFilter, ... ],
-  "EcrImageRegistry" : [ StringFilter, ... ],
-  "EcrImageRepositoryName" : [ StringFilter, ... ],
-  "EcrImageTags" : [ StringFilter, ... ],
-  "EpssScore" : [ NumberFilter, ... ],
-  "ExploitAvailable" : [ StringFilter, ... ],
-  "FindingArn" : [ StringFilter, ... ],
-  "FindingStatus" : [ StringFilter, ... ],
-  "FindingType" : [ StringFilter, ... ],
-  "FirstObservedAt" : [ DateFilter, ... ],
-  "FixAvailable" : [ StringFilter, ... ],
-  "InspectorScore" : [ NumberFilter, ... ],
-  "LambdaFunctionExecutionRoleArn" : [ StringFilter, ... ],
-  "LambdaFunctionLastModifiedAt" : [ DateFilter, ... ],
-  "LambdaFunctionLayers" : [ StringFilter, ... ],
-  "LambdaFunctionName" : [ StringFilter, ... ],
-  "LambdaFunctionRuntime" : [ StringFilter, ... ],
-  "LastObservedAt" : [ DateFilter, ... ],
-  "NetworkProtocol" : [ StringFilter, ... ],
-  "PortRange" : [ PortRangeFilter, ... ],
-  "RelatedVulnerabilities" : [ StringFilter, ... ],
-  "ResourceId" : [ StringFilter, ... ],
-  "ResourceTags" : [ MapFilter, ... ],
-  "ResourceType" : [ StringFilter, ... ],
-  "Severity" : [ StringFilter, ... ],
-  "Title" : [ StringFilter, ... ],
-  "UpdatedAt" : [ DateFilter, ... ],
-  "VendorSeverity" : [ StringFilter, ... ],
-  "VulnerabilityId" : [ StringFilter, ... ],
-  "VulnerabilitySource" : [ StringFilter, ... ],
-  "VulnerablePackages" : [ PackageFilter, ... ]
+  "[AwsAccountId](#cfn-inspectorv2-filter-filtercriteria-awsaccountid)" : {{[ StringFilter, ... ]}},
+  "[CodeVulnerabilityDetectorName](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectorname)" : {{[ StringFilter, ... ]}},
+  "[CodeVulnerabilityDetectorTags](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectortags)" : {{[ StringFilter, ... ]}},
+  "[CodeVulnerabilityFilePath](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilityfilepath)" : {{[ StringFilter, ... ]}},
+  "[ComponentId](#cfn-inspectorv2-filter-filtercriteria-componentid)" : {{[ StringFilter, ... ]}},
+  "[ComponentType](#cfn-inspectorv2-filter-filtercriteria-componenttype)" : {{[ StringFilter, ... ]}},
+  "[Ec2InstanceImageId](#cfn-inspectorv2-filter-filtercriteria-ec2instanceimageid)" : {{[ StringFilter, ... ]}},
+  "[Ec2InstanceSubnetId](#cfn-inspectorv2-filter-filtercriteria-ec2instancesubnetid)" : {{[ StringFilter, ... ]}},
+  "[Ec2InstanceVpcId](#cfn-inspectorv2-filter-filtercriteria-ec2instancevpcid)" : {{[ StringFilter, ... ]}},
+  "[EcrImageArchitecture](#cfn-inspectorv2-filter-filtercriteria-ecrimagearchitecture)" : {{[ StringFilter, ... ]}},
+  "[EcrImageHash](#cfn-inspectorv2-filter-filtercriteria-ecrimagehash)" : {{[ StringFilter, ... ]}},
+  "[EcrImagePushedAt](#cfn-inspectorv2-filter-filtercriteria-ecrimagepushedat)" : {{[ DateFilter, ... ]}},
+  "[EcrImageRegistry](#cfn-inspectorv2-filter-filtercriteria-ecrimageregistry)" : {{[ StringFilter, ... ]}},
+  "[EcrImageRepositoryName](#cfn-inspectorv2-filter-filtercriteria-ecrimagerepositoryname)" : {{[ StringFilter, ... ]}},
+  "[EcrImageTags](#cfn-inspectorv2-filter-filtercriteria-ecrimagetags)" : {{[ StringFilter, ... ]}},
+  "[EpssScore](#cfn-inspectorv2-filter-filtercriteria-epssscore)" : {{[ NumberFilter, ... ]}},
+  "[ExploitAvailable](#cfn-inspectorv2-filter-filtercriteria-exploitavailable)" : {{[ StringFilter, ... ]}},
+  "[FindingArn](#cfn-inspectorv2-filter-filtercriteria-findingarn)" : {{[ StringFilter, ... ]}},
+  "[FindingStatus](#cfn-inspectorv2-filter-filtercriteria-findingstatus)" : {{[ StringFilter, ... ]}},
+  "[FindingType](#cfn-inspectorv2-filter-filtercriteria-findingtype)" : {{[ StringFilter, ... ]}},
+  "[FirstObservedAt](#cfn-inspectorv2-filter-filtercriteria-firstobservedat)" : {{[ DateFilter, ... ]}},
+  "[FixAvailable](#cfn-inspectorv2-filter-filtercriteria-fixavailable)" : {{[ StringFilter, ... ]}},
+  "[InspectorScore](#cfn-inspectorv2-filter-filtercriteria-inspectorscore)" : {{[ NumberFilter, ... ]}},
+  "[LambdaFunctionExecutionRoleArn](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionexecutionrolearn)" : {{[ StringFilter, ... ]}},
+  "[LambdaFunctionLastModifiedAt](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionlastmodifiedat)" : {{[ DateFilter, ... ]}},
+  "[LambdaFunctionLayers](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionlayers)" : {{[ StringFilter, ... ]}},
+  "[LambdaFunctionName](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionname)" : {{[ StringFilter, ... ]}},
+  "[LambdaFunctionRuntime](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionruntime)" : {{[ StringFilter, ... ]}},
+  "[LastObservedAt](#cfn-inspectorv2-filter-filtercriteria-lastobservedat)" : {{[ DateFilter, ... ]}},
+  "[NetworkProtocol](#cfn-inspectorv2-filter-filtercriteria-networkprotocol)" : {{[ StringFilter, ... ]}},
+  "[PortRange](#cfn-inspectorv2-filter-filtercriteria-portrange)" : {{[ PortRangeFilter, ... ]}},
+  "[RelatedVulnerabilities](#cfn-inspectorv2-filter-filtercriteria-relatedvulnerabilities)" : {{[ StringFilter, ... ]}},
+  "[ResourceId](#cfn-inspectorv2-filter-filtercriteria-resourceid)" : {{[ StringFilter, ... ]}},
+  "[ResourceTags](#cfn-inspectorv2-filter-filtercriteria-resourcetags)" : {{[ MapFilter, ... ]}},
+  "[ResourceType](#cfn-inspectorv2-filter-filtercriteria-resourcetype)" : {{[ StringFilter, ... ]}},
+  "[Severity](#cfn-inspectorv2-filter-filtercriteria-severity)" : {{[ StringFilter, ... ]}},
+  "[Title](#cfn-inspectorv2-filter-filtercriteria-title)" : {{[ StringFilter, ... ]}},
+  "[UpdatedAt](#cfn-inspectorv2-filter-filtercriteria-updatedat)" : {{[ DateFilter, ... ]}},
+  "[VendorSeverity](#cfn-inspectorv2-filter-filtercriteria-vendorseverity)" : {{[ StringFilter, ... ]}},
+  "[VulnerabilityId](#cfn-inspectorv2-filter-filtercriteria-vulnerabilityid)" : {{[ StringFilter, ... ]}},
+  "[VulnerabilitySource](#cfn-inspectorv2-filter-filtercriteria-vulnerabilitysource)" : {{[ StringFilter, ... ]}},
+  "[VulnerablePackages](#cfn-inspectorv2-filter-filtercriteria-vulnerablepackages)" : {{[ PackageFilter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-filter-filtercriteria-syntax.yaml"></a>
 
-```yaml
-
-  AwsAccountId:
-    - StringFilter
-  CodeVulnerabilityDetectorName:
-    - StringFilter
-  CodeVulnerabilityDetectorTags:
-    - StringFilter
-  CodeVulnerabilityFilePath:
-    - StringFilter
-  ComponentId:
-    - StringFilter
-  ComponentType:
-    - StringFilter
-  Ec2InstanceImageId:
-    - StringFilter
-  Ec2InstanceSubnetId:
-    - StringFilter
-  Ec2InstanceVpcId:
-    - StringFilter
-  EcrImageArchitecture:
-    - StringFilter
-  EcrImageHash:
-    - StringFilter
-  EcrImagePushedAt:
-    - DateFilter
-  EcrImageRegistry:
-    - StringFilter
-  EcrImageRepositoryName:
-    - StringFilter
-  EcrImageTags:
-    - StringFilter
-  EpssScore:
-    - NumberFilter
-  ExploitAvailable:
-    - StringFilter
-  FindingArn:
-    - StringFilter
-  FindingStatus:
-    - StringFilter
-  FindingType:
-    - StringFilter
-  FirstObservedAt:
-    - DateFilter
-  FixAvailable:
-    - StringFilter
-  InspectorScore:
-    - NumberFilter
-  LambdaFunctionExecutionRoleArn:
-    - StringFilter
-  LambdaFunctionLastModifiedAt:
-    - DateFilter
-  LambdaFunctionLayers:
-    - StringFilter
-  LambdaFunctionName:
-    - StringFilter
-  LambdaFunctionRuntime:
-    - StringFilter
-  LastObservedAt:
-    - DateFilter
-  NetworkProtocol:
-    - StringFilter
-  PortRange:
-    - PortRangeFilter
-  RelatedVulnerabilities:
-    - StringFilter
-  ResourceId:
-    - StringFilter
-  ResourceTags:
-    - MapFilter
-  ResourceType:
-    - StringFilter
-  Severity:
-    - StringFilter
-  Title:
-    - StringFilter
-  UpdatedAt:
-    - DateFilter
-  VendorSeverity:
-    - StringFilter
-  VulnerabilityId:
-    - StringFilter
-  VulnerabilitySource:
-    - StringFilter
-  VulnerablePackages:
-    - PackageFilter
-
+```
+  [AwsAccountId](#cfn-inspectorv2-filter-filtercriteria-awsaccountid): {{
+    - StringFilter}}
+  [CodeVulnerabilityDetectorName](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectorname): {{
+    - StringFilter}}
+  [CodeVulnerabilityDetectorTags](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectortags): {{
+    - StringFilter}}
+  [CodeVulnerabilityFilePath](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilityfilepath): {{
+    - StringFilter}}
+  [ComponentId](#cfn-inspectorv2-filter-filtercriteria-componentid): {{
+    - StringFilter}}
+  [ComponentType](#cfn-inspectorv2-filter-filtercriteria-componenttype): {{
+    - StringFilter}}
+  [Ec2InstanceImageId](#cfn-inspectorv2-filter-filtercriteria-ec2instanceimageid): {{
+    - StringFilter}}
+  [Ec2InstanceSubnetId](#cfn-inspectorv2-filter-filtercriteria-ec2instancesubnetid): {{
+    - StringFilter}}
+  [Ec2InstanceVpcId](#cfn-inspectorv2-filter-filtercriteria-ec2instancevpcid): {{
+    - StringFilter}}
+  [EcrImageArchitecture](#cfn-inspectorv2-filter-filtercriteria-ecrimagearchitecture): {{
+    - StringFilter}}
+  [EcrImageHash](#cfn-inspectorv2-filter-filtercriteria-ecrimagehash): {{
+    - StringFilter}}
+  [EcrImagePushedAt](#cfn-inspectorv2-filter-filtercriteria-ecrimagepushedat): {{
+    - DateFilter}}
+  [EcrImageRegistry](#cfn-inspectorv2-filter-filtercriteria-ecrimageregistry): {{
+    - StringFilter}}
+  [EcrImageRepositoryName](#cfn-inspectorv2-filter-filtercriteria-ecrimagerepositoryname): {{
+    - StringFilter}}
+  [EcrImageTags](#cfn-inspectorv2-filter-filtercriteria-ecrimagetags): {{
+    - StringFilter}}
+  [EpssScore](#cfn-inspectorv2-filter-filtercriteria-epssscore): {{
+    - NumberFilter}}
+  [ExploitAvailable](#cfn-inspectorv2-filter-filtercriteria-exploitavailable): {{
+    - StringFilter}}
+  [FindingArn](#cfn-inspectorv2-filter-filtercriteria-findingarn): {{
+    - StringFilter}}
+  [FindingStatus](#cfn-inspectorv2-filter-filtercriteria-findingstatus): {{
+    - StringFilter}}
+  [FindingType](#cfn-inspectorv2-filter-filtercriteria-findingtype): {{
+    - StringFilter}}
+  [FirstObservedAt](#cfn-inspectorv2-filter-filtercriteria-firstobservedat): {{
+    - DateFilter}}
+  [FixAvailable](#cfn-inspectorv2-filter-filtercriteria-fixavailable): {{
+    - StringFilter}}
+  [InspectorScore](#cfn-inspectorv2-filter-filtercriteria-inspectorscore): {{
+    - NumberFilter}}
+  [LambdaFunctionExecutionRoleArn](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionexecutionrolearn): {{
+    - StringFilter}}
+  [LambdaFunctionLastModifiedAt](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionlastmodifiedat): {{
+    - DateFilter}}
+  [LambdaFunctionLayers](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionlayers): {{
+    - StringFilter}}
+  [LambdaFunctionName](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionname): {{
+    - StringFilter}}
+  [LambdaFunctionRuntime](#cfn-inspectorv2-filter-filtercriteria-lambdafunctionruntime): {{
+    - StringFilter}}
+  [LastObservedAt](#cfn-inspectorv2-filter-filtercriteria-lastobservedat): {{
+    - DateFilter}}
+  [NetworkProtocol](#cfn-inspectorv2-filter-filtercriteria-networkprotocol): {{
+    - StringFilter}}
+  [PortRange](#cfn-inspectorv2-filter-filtercriteria-portrange): {{
+    - PortRangeFilter}}
+  [RelatedVulnerabilities](#cfn-inspectorv2-filter-filtercriteria-relatedvulnerabilities): {{
+    - StringFilter}}
+  [ResourceId](#cfn-inspectorv2-filter-filtercriteria-resourceid): {{
+    - StringFilter}}
+  [ResourceTags](#cfn-inspectorv2-filter-filtercriteria-resourcetags): {{
+    - MapFilter}}
+  [ResourceType](#cfn-inspectorv2-filter-filtercriteria-resourcetype): {{
+    - StringFilter}}
+  [Severity](#cfn-inspectorv2-filter-filtercriteria-severity): {{
+    - StringFilter}}
+  [Title](#cfn-inspectorv2-filter-filtercriteria-title): {{
+    - StringFilter}}
+  [UpdatedAt](#cfn-inspectorv2-filter-filtercriteria-updatedat): {{
+    - DateFilter}}
+  [VendorSeverity](#cfn-inspectorv2-filter-filtercriteria-vendorseverity): {{
+    - StringFilter}}
+  [VulnerabilityId](#cfn-inspectorv2-filter-filtercriteria-vulnerabilityid): {{
+    - StringFilter}}
+  [VulnerabilitySource](#cfn-inspectorv2-filter-filtercriteria-vulnerabilitysource): {{
+    - StringFilter}}
+  [VulnerablePackages](#cfn-inspectorv2-filter-filtercriteria-vulnerablepackages): {{
+    - PackageFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-filter-filtercriteria-properties"></a>
 
-`AwsAccountId`
-
+`AwsAccountId`  <a name="cfn-inspectorv2-filter-filtercriteria-awsaccountid"></a>
 Details of the AWS account IDs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeVulnerabilityDetectorName`
-
+`CodeVulnerabilityDetectorName`  <a name="cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectorname"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeVulnerabilityDetectorTags`
-
+`CodeVulnerabilityDetectorTags`  <a name="cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectortags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeVulnerabilityFilePath`
-
+`CodeVulnerabilityFilePath`  <a name="cfn-inspectorv2-filter-filtercriteria-codevulnerabilityfilepath"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComponentId`
-
+`ComponentId`  <a name="cfn-inspectorv2-filter-filtercriteria-componentid"></a>
 Details of the component IDs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComponentType`
-
+`ComponentType`  <a name="cfn-inspectorv2-filter-filtercriteria-componenttype"></a>
 Details of the component types used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ec2InstanceImageId`
-
+`Ec2InstanceImageId`  <a name="cfn-inspectorv2-filter-filtercriteria-ec2instanceimageid"></a>
 Details of the Amazon EC2 instance image IDs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ec2InstanceSubnetId`
-
+`Ec2InstanceSubnetId`  <a name="cfn-inspectorv2-filter-filtercriteria-ec2instancesubnetid"></a>
 Details of the Amazon EC2 instance subnet IDs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ec2InstanceVpcId`
-
+`Ec2InstanceVpcId`  <a name="cfn-inspectorv2-filter-filtercriteria-ec2instancevpcid"></a>
 Details of the Amazon EC2 instance VPC IDs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcrImageArchitecture`
-
+`EcrImageArchitecture`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimagearchitecture"></a>
 Details of the Amazon ECR image architecture types used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcrImageHash`
-
+`EcrImageHash`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimagehash"></a>
 Details of the Amazon ECR image hashes used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcrImagePushedAt`
-
+`EcrImagePushedAt`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimagepushedat"></a>
 Details on the Amazon ECR image push date and time used to filter findings.
+*Required*: No
+*Type*: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcrImageRegistry`
-
+`EcrImageRegistry`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimageregistry"></a>
 Details on the Amazon ECR registry used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcrImageRepositoryName`
-
+`EcrImageRepositoryName`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimagerepositoryname"></a>
 Details on the name of the Amazon ECR repository used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcrImageTags`
-
+`EcrImageTags`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimagetags"></a>
 The tags attached to the Amazon ECR container image.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EpssScore`
-
+`EpssScore`  <a name="cfn-inspectorv2-filter-filtercriteria-epssscore"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [NumberFilter](aws-properties-inspectorv2-filter-numberfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [NumberFilter](aws-properties-inspectorv2-filter-numberfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExploitAvailable`
-
+`ExploitAvailable`  <a name="cfn-inspectorv2-filter-filtercriteria-exploitavailable"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FindingArn`
-
+`FindingArn`  <a name="cfn-inspectorv2-filter-filtercriteria-findingarn"></a>
 Details on the finding ARNs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FindingStatus`
-
+`FindingStatus`  <a name="cfn-inspectorv2-filter-filtercriteria-findingstatus"></a>
 Details on the finding status types used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FindingType`
-
+`FindingType`  <a name="cfn-inspectorv2-filter-filtercriteria-findingtype"></a>
 Details on the finding types used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirstObservedAt`
-
+`FirstObservedAt`  <a name="cfn-inspectorv2-filter-filtercriteria-firstobservedat"></a>
 Details on the date and time a finding was first seen used to filter findings.
+*Required*: No
+*Type*: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FixAvailable`
-
+`FixAvailable`  <a name="cfn-inspectorv2-filter-filtercriteria-fixavailable"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InspectorScore`
-
+`InspectorScore`  <a name="cfn-inspectorv2-filter-filtercriteria-inspectorscore"></a>
 The Amazon Inspector score to filter on.
+*Required*: No
+*Type*: Array of [NumberFilter](aws-properties-inspectorv2-filter-numberfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [NumberFilter](aws-properties-inspectorv2-filter-numberfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionExecutionRoleArn`
-
+`LambdaFunctionExecutionRoleArn`  <a name="cfn-inspectorv2-filter-filtercriteria-lambdafunctionexecutionrolearn"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionLastModifiedAt`
-
+`LambdaFunctionLastModifiedAt`  <a name="cfn-inspectorv2-filter-filtercriteria-lambdafunctionlastmodifiedat"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionLayers`
-
+`LambdaFunctionLayers`  <a name="cfn-inspectorv2-filter-filtercriteria-lambdafunctionlayers"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionName`
-
+`LambdaFunctionName`  <a name="cfn-inspectorv2-filter-filtercriteria-lambdafunctionname"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionRuntime`
-
+`LambdaFunctionRuntime`  <a name="cfn-inspectorv2-filter-filtercriteria-lambdafunctionruntime"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LastObservedAt`
-
+`LastObservedAt`  <a name="cfn-inspectorv2-filter-filtercriteria-lastobservedat"></a>
 Details on the date and time a finding was last seen used to filter findings.
+*Required*: No
+*Type*: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkProtocol`
-
+`NetworkProtocol`  <a name="cfn-inspectorv2-filter-filtercriteria-networkprotocol"></a>
 Details on network protocol used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PortRange`
-
+`PortRange`  <a name="cfn-inspectorv2-filter-filtercriteria-portrange"></a>
 Details on the port ranges used to filter findings.
+*Required*: No
+*Type*: Array of [PortRangeFilter](aws-properties-inspectorv2-filter-portrangefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PortRangeFilter](aws-properties-inspectorv2-filter-portrangefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelatedVulnerabilities`
-
+`RelatedVulnerabilities`  <a name="cfn-inspectorv2-filter-filtercriteria-relatedvulnerabilities"></a>
 Details on the related vulnerabilities used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceId`
-
+`ResourceId`  <a name="cfn-inspectorv2-filter-filtercriteria-resourceid"></a>
 Details on the resource IDs used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceTags`
-
+`ResourceTags`  <a name="cfn-inspectorv2-filter-filtercriteria-resourcetags"></a>
 Details on the resource tags used to filter findings.
+*Required*: No
+*Type*: Array of [MapFilter](aws-properties-inspectorv2-filter-mapfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MapFilter](aws-properties-inspectorv2-filter-mapfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceType`
-
+`ResourceType`  <a name="cfn-inspectorv2-filter-filtercriteria-resourcetype"></a>
 Details on the resource types used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Severity`
-
+`Severity`  <a name="cfn-inspectorv2-filter-filtercriteria-severity"></a>
 Details on the severity used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-inspectorv2-filter-filtercriteria-title"></a>
 Details on the finding title used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`UpdatedAt`  <a name="cfn-inspectorv2-filter-filtercriteria-updatedat"></a>
+Details on the date and time a finding was last updated at used to filter findings.
+*Required*: No
+*Type*: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdatedAt`
-
-Details on the date and time a finding was last updated at used to filter
-findings.
-
-_Required_: No
-
-_Type_: Array of [DateFilter](aws-properties-inspectorv2-filter-datefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VendorSeverity`
-
+`VendorSeverity`  <a name="cfn-inspectorv2-filter-filtercriteria-vendorseverity"></a>
 Details on the vendor severity used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VulnerabilityId`
-
+`VulnerabilityId`  <a name="cfn-inspectorv2-filter-filtercriteria-vulnerabilityid"></a>
 Details on the vulnerability ID used to filter findings.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VulnerabilitySource`
-
+`VulnerabilitySource`  <a name="cfn-inspectorv2-filter-filtercriteria-vulnerabilitysource"></a>
 Details on the vulnerability score to filter findings by.
+*Required*: No
+*Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VulnerablePackages`
-
+`VulnerablePackages`  <a name="cfn-inspectorv2-filter-filtercriteria-vulnerablepackages"></a>
 Details on the vulnerable packages used to filter findings.
-
-_Required_: No
-
-_Type_: Array of [PackageFilter](aws-properties-inspectorv2-filter-packagefilter.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateFilter
-
-MapFilter
+*Required*: No
+*Type*: Array of [PackageFilter](aws-properties-inspectorv2-filter-packagefilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

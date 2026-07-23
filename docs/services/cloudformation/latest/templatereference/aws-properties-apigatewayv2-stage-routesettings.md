@@ -2,105 +2,77 @@
 title: "AWS::ApiGatewayV2::Stage RouteSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Stage RouteSettings
+<a name="aws-properties-apigatewayv2-stage-routesettings"></a>
 
 Represents a collection of route settings.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-stage-routesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-stage-routesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataTraceEnabled" : Boolean,
-  "DetailedMetricsEnabled" : Boolean,
-  "LoggingLevel" : String,
-  "ThrottlingBurstLimit" : Integer,
-  "ThrottlingRateLimit" : Number
+  "[DataTraceEnabled](#cfn-apigatewayv2-stage-routesettings-datatraceenabled)" : {{Boolean}},
+  "[DetailedMetricsEnabled](#cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled)" : {{Boolean}},
+  "[LoggingLevel](#cfn-apigatewayv2-stage-routesettings-logginglevel)" : {{String}},
+  "[ThrottlingBurstLimit](#cfn-apigatewayv2-stage-routesettings-throttlingburstlimit)" : {{Integer}},
+  "[ThrottlingRateLimit](#cfn-apigatewayv2-stage-routesettings-throttlingratelimit)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-stage-routesettings-syntax.yaml"></a>
 
-```yaml
-
-  DataTraceEnabled: Boolean
-  DetailedMetricsEnabled: Boolean
-  LoggingLevel: String
-  ThrottlingBurstLimit: Integer
-  ThrottlingRateLimit: Number
-
+```
+  [DataTraceEnabled](#cfn-apigatewayv2-stage-routesettings-datatraceenabled): {{Boolean}}
+  [DetailedMetricsEnabled](#cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled): {{Boolean}}
+  [LoggingLevel](#cfn-apigatewayv2-stage-routesettings-logginglevel): {{String}}
+  [ThrottlingBurstLimit](#cfn-apigatewayv2-stage-routesettings-throttlingburstlimit): {{Integer}}
+  [ThrottlingRateLimit](#cfn-apigatewayv2-stage-routesettings-throttlingratelimit): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-stage-routesettings-properties"></a>
 
-`DataTraceEnabled`
+`DataTraceEnabled`  <a name="cfn-apigatewayv2-stage-routesettings-datatraceenabled"></a>
+Specifies whether (`true`) or not (`false`) data trace logging is enabled for this route. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies whether ( `true`) or not ( `false`) data trace logging is enabled for this route. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DetailedMetricsEnabled`
-
+`DetailedMetricsEnabled`  <a name="cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled"></a>
 Specifies whether detailed metrics are enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoggingLevel`
-
+`LoggingLevel`  <a name="cfn-apigatewayv2-stage-routesettings-logginglevel"></a>
 Specifies the logging level for this route: `INFO`, `ERROR`, or `OFF`. This property affects the log entries pushed to Amazon CloudWatch Logs. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThrottlingBurstLimit`
-
+`ThrottlingBurstLimit`  <a name="cfn-apigatewayv2-stage-routesettings-throttlingburstlimit"></a>
 Specifies the throttling burst limit.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThrottlingRateLimit`
-
+`ThrottlingRateLimit`  <a name="cfn-apigatewayv2-stage-routesettings-throttlingratelimit"></a>
 Specifies the throttling rate limit.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Stages](../../../apigatewayv2/latest/api-reference/apis-apiid-stages.md) in the _Amazon API Gateway_
-_Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessLogSettings
-
-AWS::ApiGatewayV2::VpcLink
+<a name="aws-properties-apigatewayv2-stage-routesettings--seealso"></a>
++ [Stages](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-stages.html) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

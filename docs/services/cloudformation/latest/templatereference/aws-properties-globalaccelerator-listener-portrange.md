@@ -2,72 +2,53 @@
 title: "AWS::GlobalAccelerator::Listener PortRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GlobalAccelerator::Listener PortRange
+<a name="aws-properties-globalaccelerator-listener-portrange"></a>
 
 A complex type for a range of ports for a listener.
 
 ## Syntax
+<a name="aws-properties-globalaccelerator-listener-portrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-globalaccelerator-listener-portrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "FromPort" : Integer,
-  "ToPort" : Integer
+  "[FromPort](#cfn-globalaccelerator-listener-portrange-fromport)" : {{Integer}},
+  "[ToPort](#cfn-globalaccelerator-listener-portrange-toport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-globalaccelerator-listener-portrange-syntax.yaml"></a>
 
-```yaml
-
-  FromPort: Integer
-  ToPort: Integer
-
+```
+  [FromPort](#cfn-globalaccelerator-listener-portrange-fromport): {{Integer}}
+  [ToPort](#cfn-globalaccelerator-listener-portrange-toport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-globalaccelerator-listener-portrange-properties"></a>
 
-`FromPort`
-
+`FromPort`  <a name="cfn-globalaccelerator-listener-portrange-fromport"></a>
 The first port in the range of ports, inclusive.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToPort`
-
+`ToPort`  <a name="cfn-globalaccelerator-listener-portrange-toport"></a>
 The last port in the range of ports, inclusive.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GlobalAccelerator::Listener
-
-Next
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,52 +2,41 @@
 title: "AWS::CleanRooms::Collaboration SyntheticDataGenerationPaymentConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Collaboration SyntheticDataGenerationPaymentConfig
+<a name="aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig"></a>
 
 Payment configuration for synthetic data generation.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsResponsible" : Boolean
+  "[IsResponsible](#cfn-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-isresponsible)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-syntax.yaml"></a>
 
-```yaml
-
-  IsResponsible: Boolean
-
+```
+  [IsResponsible](#cfn-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-isresponsible): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-properties"></a>
 
-`IsResponsible`
-
+`IsResponsible`  <a name="cfn-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig-isresponsible"></a>
 Indicates who is responsible for paying for synthetic data generation.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QueryComputePaymentConfig
-
-Tag
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

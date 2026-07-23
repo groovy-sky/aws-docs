@@ -2,82 +2,60 @@
 title: "AWS::S3Tables::Table SnapshotManagement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table SnapshotManagement
+<a name="aws-properties-s3tables-table-snapshotmanagement"></a>
 
 Contains details about the snapshot management settings for an Iceberg table. The oldest snapshot expires when its age exceeds the `maxSnapshotAgeHours` and the total number of snapshots exceeds the value for the minimum number of snapshots to keep `minSnapshotsToKeep`.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-snapshotmanagement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-snapshotmanagement-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxSnapshotAgeHours" : Integer,
-  "MinSnapshotsToKeep" : Integer,
-  "Status" : String
+  "[MaxSnapshotAgeHours](#cfn-s3tables-table-snapshotmanagement-maxsnapshotagehours)" : {{Integer}},
+  "[MinSnapshotsToKeep](#cfn-s3tables-table-snapshotmanagement-minsnapshotstokeep)" : {{Integer}},
+  "[Status](#cfn-s3tables-table-snapshotmanagement-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-snapshotmanagement-syntax.yaml"></a>
 
-```yaml
-
-  MaxSnapshotAgeHours: Integer
-  MinSnapshotsToKeep: Integer
-  Status: String
-
+```
+  [MaxSnapshotAgeHours](#cfn-s3tables-table-snapshotmanagement-maxsnapshotagehours): {{Integer}}
+  [MinSnapshotsToKeep](#cfn-s3tables-table-snapshotmanagement-minsnapshotstokeep): {{Integer}}
+  [Status](#cfn-s3tables-table-snapshotmanagement-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-snapshotmanagement-properties"></a>
 
-`MaxSnapshotAgeHours`
-
+`MaxSnapshotAgeHours`  <a name="cfn-s3tables-table-snapshotmanagement-maxsnapshotagehours"></a>
 The maximum age of a snapshot before it can be expired.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinSnapshotsToKeep`
-
+`MinSnapshotsToKeep`  <a name="cfn-s3tables-table-snapshotmanagement-minsnapshotstokeep"></a>
 The minimum number of snapshots to keep.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-s3tables-table-snapshotmanagement-status"></a>
 The status of the maintenance configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enabled | disabled`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SchemaV2Field
-
-StorageClassConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `enabled | disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

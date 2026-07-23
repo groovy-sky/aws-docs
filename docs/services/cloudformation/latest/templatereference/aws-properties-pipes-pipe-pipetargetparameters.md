@@ -2,221 +2,154 @@
 title: "AWS::Pipes::Pipe PipeTargetParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeTargetParameters
+<a name="aws-properties-pipes-pipe-pipetargetparameters"></a>
 
 The parameters required to set up a target for your pipe.
 
-For more information about pipe target parameters, including how to use dynamic path parameters, see [Target parameters](../../../eventbridge/latest/userguide/eb-pipes-event-target.md) in the _Amazon EventBridge User Guide_.
+For more information about pipe target parameters, including how to use dynamic path parameters, see [Target parameters](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-event-target.html) in the *Amazon EventBridge User Guide*.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipetargetparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipetargetparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchJobParameters" : PipeTargetBatchJobParameters,
-  "CloudWatchLogsParameters" : PipeTargetCloudWatchLogsParameters,
-  "EcsTaskParameters" : PipeTargetEcsTaskParameters,
-  "EventBridgeEventBusParameters" : PipeTargetEventBridgeEventBusParameters,
-  "HttpParameters" : PipeTargetHttpParameters,
-  "InputTemplate" : String,
-  "KinesisStreamParameters" : PipeTargetKinesisStreamParameters,
-  "LambdaFunctionParameters" : PipeTargetLambdaFunctionParameters,
-  "RedshiftDataParameters" : PipeTargetRedshiftDataParameters,
-  "SageMakerPipelineParameters" : PipeTargetSageMakerPipelineParameters,
-  "SqsQueueParameters" : PipeTargetSqsQueueParameters,
-  "StepFunctionStateMachineParameters" : PipeTargetStateMachineParameters,
-  "TimestreamParameters" : PipeTargetTimestreamParameters
+  "[BatchJobParameters](#cfn-pipes-pipe-pipetargetparameters-batchjobparameters)" : {{PipeTargetBatchJobParameters}},
+  "[CloudWatchLogsParameters](#cfn-pipes-pipe-pipetargetparameters-cloudwatchlogsparameters)" : {{PipeTargetCloudWatchLogsParameters}},
+  "[EcsTaskParameters](#cfn-pipes-pipe-pipetargetparameters-ecstaskparameters)" : {{PipeTargetEcsTaskParameters}},
+  "[EventBridgeEventBusParameters](#cfn-pipes-pipe-pipetargetparameters-eventbridgeeventbusparameters)" : {{PipeTargetEventBridgeEventBusParameters}},
+  "[HttpParameters](#cfn-pipes-pipe-pipetargetparameters-httpparameters)" : {{PipeTargetHttpParameters}},
+  "[InputTemplate](#cfn-pipes-pipe-pipetargetparameters-inputtemplate)" : {{String}},
+  "[KinesisStreamParameters](#cfn-pipes-pipe-pipetargetparameters-kinesisstreamparameters)" : {{PipeTargetKinesisStreamParameters}},
+  "[LambdaFunctionParameters](#cfn-pipes-pipe-pipetargetparameters-lambdafunctionparameters)" : {{PipeTargetLambdaFunctionParameters}},
+  "[RedshiftDataParameters](#cfn-pipes-pipe-pipetargetparameters-redshiftdataparameters)" : {{PipeTargetRedshiftDataParameters}},
+  "[SageMakerPipelineParameters](#cfn-pipes-pipe-pipetargetparameters-sagemakerpipelineparameters)" : {{PipeTargetSageMakerPipelineParameters}},
+  "[SqsQueueParameters](#cfn-pipes-pipe-pipetargetparameters-sqsqueueparameters)" : {{PipeTargetSqsQueueParameters}},
+  "[StepFunctionStateMachineParameters](#cfn-pipes-pipe-pipetargetparameters-stepfunctionstatemachineparameters)" : {{PipeTargetStateMachineParameters}},
+  "[TimestreamParameters](#cfn-pipes-pipe-pipetargetparameters-timestreamparameters)" : {{PipeTargetTimestreamParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipetargetparameters-syntax.yaml"></a>
 
-```yaml
-
-  BatchJobParameters:
-    PipeTargetBatchJobParameters
-  CloudWatchLogsParameters:
-    PipeTargetCloudWatchLogsParameters
-  EcsTaskParameters:
-    PipeTargetEcsTaskParameters
-  EventBridgeEventBusParameters:
-    PipeTargetEventBridgeEventBusParameters
-  HttpParameters:
-    PipeTargetHttpParameters
-  InputTemplate: String
-  KinesisStreamParameters:
-    PipeTargetKinesisStreamParameters
-  LambdaFunctionParameters:
-    PipeTargetLambdaFunctionParameters
-  RedshiftDataParameters:
-    PipeTargetRedshiftDataParameters
-  SageMakerPipelineParameters:
-    PipeTargetSageMakerPipelineParameters
-  SqsQueueParameters:
-    PipeTargetSqsQueueParameters
-  StepFunctionStateMachineParameters:
-    PipeTargetStateMachineParameters
-  TimestreamParameters:
-    PipeTargetTimestreamParameters
-
+```
+  [BatchJobParameters](#cfn-pipes-pipe-pipetargetparameters-batchjobparameters): {{
+    PipeTargetBatchJobParameters}}
+  [CloudWatchLogsParameters](#cfn-pipes-pipe-pipetargetparameters-cloudwatchlogsparameters): {{
+    PipeTargetCloudWatchLogsParameters}}
+  [EcsTaskParameters](#cfn-pipes-pipe-pipetargetparameters-ecstaskparameters): {{
+    PipeTargetEcsTaskParameters}}
+  [EventBridgeEventBusParameters](#cfn-pipes-pipe-pipetargetparameters-eventbridgeeventbusparameters): {{
+    PipeTargetEventBridgeEventBusParameters}}
+  [HttpParameters](#cfn-pipes-pipe-pipetargetparameters-httpparameters): {{
+    PipeTargetHttpParameters}}
+  [InputTemplate](#cfn-pipes-pipe-pipetargetparameters-inputtemplate): {{String}}
+  [KinesisStreamParameters](#cfn-pipes-pipe-pipetargetparameters-kinesisstreamparameters): {{
+    PipeTargetKinesisStreamParameters}}
+  [LambdaFunctionParameters](#cfn-pipes-pipe-pipetargetparameters-lambdafunctionparameters): {{
+    PipeTargetLambdaFunctionParameters}}
+  [RedshiftDataParameters](#cfn-pipes-pipe-pipetargetparameters-redshiftdataparameters): {{
+    PipeTargetRedshiftDataParameters}}
+  [SageMakerPipelineParameters](#cfn-pipes-pipe-pipetargetparameters-sagemakerpipelineparameters): {{
+    PipeTargetSageMakerPipelineParameters}}
+  [SqsQueueParameters](#cfn-pipes-pipe-pipetargetparameters-sqsqueueparameters): {{
+    PipeTargetSqsQueueParameters}}
+  [StepFunctionStateMachineParameters](#cfn-pipes-pipe-pipetargetparameters-stepfunctionstatemachineparameters): {{
+    PipeTargetStateMachineParameters}}
+  [TimestreamParameters](#cfn-pipes-pipe-pipetargetparameters-timestreamparameters): {{
+    PipeTargetTimestreamParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipetargetparameters-properties"></a>
 
-`BatchJobParameters`
-
+`BatchJobParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-batchjobparameters"></a>
 The parameters for using an AWS Batch job as a target.
+*Required*: No
+*Type*: [PipeTargetBatchJobParameters](aws-properties-pipes-pipe-pipetargetbatchjobparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetBatchJobParameters](aws-properties-pipes-pipe-pipetargetbatchjobparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CloudWatchLogsParameters`
-
+`CloudWatchLogsParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-cloudwatchlogsparameters"></a>
 The parameters for using an CloudWatch Logs log stream as a target.
+*Required*: No
+*Type*: [PipeTargetCloudWatchLogsParameters](aws-properties-pipes-pipe-pipetargetcloudwatchlogsparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetCloudWatchLogsParameters](aws-properties-pipes-pipe-pipetargetcloudwatchlogsparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EcsTaskParameters`
-
+`EcsTaskParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-ecstaskparameters"></a>
 The parameters for using an Amazon ECS task as a target.
+*Required*: No
+*Type*: [PipeTargetEcsTaskParameters](aws-properties-pipes-pipe-pipetargetecstaskparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetEcsTaskParameters](aws-properties-pipes-pipe-pipetargetecstaskparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBridgeEventBusParameters`
-
+`EventBridgeEventBusParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-eventbridgeeventbusparameters"></a>
 The parameters for using an EventBridge event bus as a target.
+*Required*: No
+*Type*: [PipeTargetEventBridgeEventBusParameters](aws-properties-pipes-pipe-pipetargeteventbridgeeventbusparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`HttpParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-httpparameters"></a>
+These are custom parameter to be used when the target is an API Gateway REST APIs or EventBridge ApiDestinations.
+*Required*: No
+*Type*: [PipeTargetHttpParameters](aws-properties-pipes-pipe-pipetargethttpparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PipeTargetEventBridgeEventBusParameters](aws-properties-pipes-pipe-pipetargeteventbridgeeventbusparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpParameters`
-
-These are custom parameter to be used when the target is an API Gateway REST APIs or
-EventBridge ApiDestinations.
-
-_Required_: No
-
-_Type_: [PipeTargetHttpParameters](aws-properties-pipes-pipe-pipetargethttpparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputTemplate`
-
-Valid JSON text passed to the target. In this case, nothing from the event itself is
-passed to the target. For more information, see [The JavaScript Object Notation (JSON)\
-Data Interchange Format](http://www.rfc-editor.org/rfc/rfc7159.txt).
-
+`InputTemplate`  <a name="cfn-pipes-pipe-pipetargetparameters-inputtemplate"></a>
+Valid JSON text passed to the target. In this case, nothing from the event itself is passed to the target. For more information, see [The JavaScript Object Notation (JSON) Data Interchange Format](http://www.rfc-editor.org/rfc/rfc7159.txt).
 To remove an input template, specify an empty string.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `8192`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `8192`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KinesisStreamParameters`
-
+`KinesisStreamParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-kinesisstreamparameters"></a>
 The parameters for using a Kinesis stream as a target.
+*Required*: No
+*Type*: [PipeTargetKinesisStreamParameters](aws-properties-pipes-pipe-pipetargetkinesisstreamparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetKinesisStreamParameters](aws-properties-pipes-pipe-pipetargetkinesisstreamparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionParameters`
-
+`LambdaFunctionParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-lambdafunctionparameters"></a>
 The parameters for using a Lambda function as a target.
+*Required*: No
+*Type*: [PipeTargetLambdaFunctionParameters](aws-properties-pipes-pipe-pipetargetlambdafunctionparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RedshiftDataParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-redshiftdataparameters"></a>
+These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the Amazon Redshift Data API BatchExecuteStatement.
+*Required*: No
+*Type*: [PipeTargetRedshiftDataParameters](aws-properties-pipes-pipe-pipetargetredshiftdataparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PipeTargetLambdaFunctionParameters](aws-properties-pipes-pipe-pipetargetlambdafunctionparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedshiftDataParameters`
-
-These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the
-Amazon Redshift Data API BatchExecuteStatement.
-
-_Required_: No
-
-_Type_: [PipeTargetRedshiftDataParameters](aws-properties-pipes-pipe-pipetargetredshiftdataparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SageMakerPipelineParameters`
-
+`SageMakerPipelineParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-sagemakerpipelineparameters"></a>
 The parameters for using a SageMaker AI pipeline as a target.
+*Required*: No
+*Type*: [PipeTargetSageMakerPipelineParameters](aws-properties-pipes-pipe-pipetargetsagemakerpipelineparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetSageMakerPipelineParameters](aws-properties-pipes-pipe-pipetargetsagemakerpipelineparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SqsQueueParameters`
-
+`SqsQueueParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-sqsqueueparameters"></a>
 The parameters for using a Amazon SQS stream as a target.
+*Required*: No
+*Type*: [PipeTargetSqsQueueParameters](aws-properties-pipes-pipe-pipetargetsqsqueueparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetSqsQueueParameters](aws-properties-pipes-pipe-pipetargetsqsqueueparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepFunctionStateMachineParameters`
-
+`StepFunctionStateMachineParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-stepfunctionstatemachineparameters"></a>
 The parameters for using a Step Functions state machine as a target.
+*Required*: No
+*Type*: [PipeTargetStateMachineParameters](aws-properties-pipes-pipe-pipetargetstatemachineparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PipeTargetStateMachineParameters](aws-properties-pipes-pipe-pipetargetstatemachineparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimestreamParameters`
-
-The parameters for using a Timestream for LiveAnalytics table as a
-target.
-
-_Required_: No
-
-_Type_: [PipeTargetTimestreamParameters](aws-properties-pipes-pipe-pipetargettimestreamparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeTargetLambdaFunctionParameters
-
-PipeTargetRedshiftDataParameters
+`TimestreamParameters`  <a name="cfn-pipes-pipe-pipetargetparameters-timestreamparameters"></a>
+The parameters for using a Timestream for LiveAnalytics table as a target.
+*Required*: No
+*Type*: [PipeTargetTimestreamParameters](aws-properties-pipes-pipe-pipetargettimestreamparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

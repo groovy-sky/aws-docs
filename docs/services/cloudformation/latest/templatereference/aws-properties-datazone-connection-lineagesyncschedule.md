@@ -2,54 +2,42 @@
 title: "AWS::DataZone::Connection LineageSyncSchedule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection LineageSyncSchedule
+<a name="aws-properties-datazone-connection-lineagesyncschedule"></a>
 
 The lineage sync schedule.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-lineagesyncschedule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-lineagesyncschedule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Schedule" : String
+  "[Schedule](#cfn-datazone-connection-lineagesyncschedule-schedule)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-lineagesyncschedule-syntax.yaml"></a>
 
-```yaml
-
-  Schedule: String
-
+```
+  [Schedule](#cfn-datazone-connection-lineagesyncschedule-schedule): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-lineagesyncschedule-properties"></a>
 
-`Schedule`
-
+`Schedule`  <a name="cfn-datazone-connection-lineagesyncschedule-schedule"></a>
 The lineage sync schedule.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^cron\((\b[0-5]?[0-9]\b) (\b2[0-3]\b|\b[0-1]?[0-9]\b) ([-?*,/\dLW]){1,83} ([-*,/\d]|[a-zA-Z]{3}){1,23} ([-?#*,/\dL]|[a-zA-Z]{3}){1,13} ([^\)]+)\)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IamPropertiesInput
-
-MlflowPropertiesInput
+*Required*: No
+*Type*: String
+*Pattern*: `^cron\((\b[0-5]?[0-9]\b) (\b2[0-3]\b|\b[0-1]?[0-9]\b) ([-?*,/\dLW]){1,83} ([-*,/\d]|[a-zA-Z]{3}){1,23} ([-?#*,/\dL]|[a-zA-Z]{3}){1,13} ([^\)]+)\)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

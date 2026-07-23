@@ -2,114 +2,76 @@
 title: "AWS::IoT::TopicRule PutAssetPropertyValueEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule PutAssetPropertyValueEntry
+<a name="aws-properties-iot-topicrule-putassetpropertyvalueentry"></a>
 
 An asset property value entry containing the following information.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-putassetpropertyvalueentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-putassetpropertyvalueentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "AssetId" : String,
-  "EntryId" : String,
-  "PropertyAlias" : String,
-  "PropertyId" : String,
-  "PropertyValues" : [ AssetPropertyValue, ... ]
+  "[AssetId](#cfn-iot-topicrule-putassetpropertyvalueentry-assetid)" : {{String}},
+  "[EntryId](#cfn-iot-topicrule-putassetpropertyvalueentry-entryid)" : {{String}},
+  "[PropertyAlias](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyalias)" : {{String}},
+  "[PropertyId](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyid)" : {{String}},
+  "[PropertyValues](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyvalues)" : {{[ AssetPropertyValue, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-putassetpropertyvalueentry-syntax.yaml"></a>
 
-```yaml
-
-  AssetId: String
-  EntryId: String
-  PropertyAlias: String
-  PropertyId: String
-  PropertyValues:
-    - AssetPropertyValue
-
+```
+  [AssetId](#cfn-iot-topicrule-putassetpropertyvalueentry-assetid): {{String}}
+  [EntryId](#cfn-iot-topicrule-putassetpropertyvalueentry-entryid): {{String}}
+  [PropertyAlias](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyalias): {{String}}
+  [PropertyId](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyid): {{String}}
+  [PropertyValues](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyvalues): {{
+    - AssetPropertyValue}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-putassetpropertyvalueentry-properties"></a>
 
-`AssetId`
+`AssetId`  <a name="cfn-iot-topicrule-putassetpropertyvalueentry-assetid"></a>
+The ID of the AWS IoT SiteWise asset. You must specify either a `propertyAlias` or both an `aliasId` and a `propertyId`. Accepts substitution templates.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ID of the AWS IoT SiteWise asset. You must specify either a `propertyAlias`
-or both an `aliasId` and a `propertyId`. Accepts substitution
-templates.
+`EntryId`  <a name="cfn-iot-topicrule-putassetpropertyvalueentry-entryid"></a>
+Optional. A unique identifier for this entry that you can define to better track which message caused an error in case of failure. Accepts substitution templates. Defaults to a new UUID.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PropertyAlias`  <a name="cfn-iot-topicrule-putassetpropertyvalueentry-propertyalias"></a>
+The name of the property alias associated with your asset property. You must specify either a `propertyAlias` or both an `aliasId` and a `propertyId`. Accepts substitution templates.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`PropertyId`  <a name="cfn-iot-topicrule-putassetpropertyvalueentry-propertyid"></a>
+The ID of the asset's property. You must specify either a `propertyAlias` or both an `aliasId` and a `propertyId`. Accepts substitution templates.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntryId`
-
-Optional. A unique identifier for this entry that you can define to better track which
-message caused an error in case of failure. Accepts substitution templates. Defaults to a new
-UUID.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyAlias`
-
-The name of the property alias associated with your asset property. You must specify
-either a `propertyAlias` or both an `aliasId` and a
-`propertyId`. Accepts substitution templates.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyId`
-
-The ID of the asset's property. You must specify either a `propertyAlias` or
-both an `aliasId` and a `propertyId`. Accepts substitution
-templates.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyValues`
-
-A list of property values to insert that each contain timestamp, quality, and value (TQV)
-information.
-
-_Required_: Yes
-
-_Type_: Array of [AssetPropertyValue](aws-properties-iot-topicrule-assetpropertyvalue.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OpenSearchAction
-
-PutItemInput
+`PropertyValues`  <a name="cfn-iot-topicrule-putassetpropertyvalueentry-propertyvalues"></a>
+A list of property values to insert that each contain timestamp, quality, and value (TQV) information.
+*Required*: Yes
+*Type*: Array of [AssetPropertyValue](aws-properties-iot-topicrule-assetpropertyvalue.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,47 +3,38 @@ title: "Check your DynamoDB table's current warm throughput"
 ---
 
 # Check your DynamoDB table's current warm throughput
+<a name="check-warm-throughput"></a>
 
-Use the following AWS CLI and AWS Console instructions to check your table or
-index's current warm throughput value.
+Use the following AWS CLI and AWS Console instructions to check your table or index's current warm throughput value.
 
-To check your DynamoDB table's warm throughput using the DynamoDB
-console:
+## AWS Management Console
+<a name="warm-throughput-check-console"></a>
 
-1. Sign in to the AWS Management Console and open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+To check your DynamoDB table's warm throughput using the DynamoDB console:
 
-2. In the left navigation pane, choose Tables.
+1. Sign in to the AWS Management Console and open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-3. On the **Tables** page, choose your
-    desired table.
+1. In the left navigation pane, choose Tables.
 
-4. Select **Additional settings** to
-    view your current warm throughput value. This value is shown as read
-    units per second and write units per second.
+1. On the **Tables** page, choose your desired table.
 
-The following AWS CLI example shows you how to check your DynamoDB table's warm
-throughput.
+1. On your table's details page, view your current warm throughput value in the **Warm throughput** field. This value is shown as read units per second and write units per second.
 
-1. Run the `describe-table` operation on your DynamoDB
-    table.
+## AWS CLI
+<a name="warm-throughput-check-CLI"></a>
 
-```
+The following AWS CLI example shows you how to check your DynamoDB table's warm throughput.
 
-aws dynamodb describe-table --table-name GameScores
-```
+1. Run the `describe-table` operation on your DynamoDB table.
 
-2. You’ll receive a response similar to the one below. Your
-    `WarmThroughput` settings will be displayed as
-    `ReadUnitsPerSecond` and
-    `WriteUnitsPerSecond`. The `Status` will
-    be `UPDATING` when the warm throughput value is being
-    updated, and `ACTIVE` when the new warm throughput value
-    is set.
+   ```
+   aws dynamodb describe-table --table-name GameScores
+   ```
 
-```
+1. You’ll receive a response similar to the one below. Your `WarmThroughput` settings will be displayed as `ReadUnitsPerSecond` and `WriteUnitsPerSecond`. The `Status` will be `UPDATING` when the warm throughput value is being updated, and `ACTIVE` when the new warm throughput value is set.
 
-{
+   ```
+   {
        "Table": {
            "AttributeDefinitions": [
                {
@@ -127,13 +118,7 @@ aws dynamodb describe-table --table-name GameScores
                "Status": "ACTIVE"
            }
        }
-}
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Warm throughput
-
-Increase your table's warm throughput
+   }
+   ```
 
 All content copied from https://docs.aws.amazon.com/.

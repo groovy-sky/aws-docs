@@ -2,57 +2,44 @@
 title: "AWS::Scheduler::Schedule SageMakerPipelineParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Scheduler::Schedule SageMakerPipelineParameters
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters"></a>
 
-The templated target type for the Amazon SageMaker [`StartPipelineExecution`](../../../../reference/sagemaker/latest/apireference/api-startpipelineexecution.md) API operation.
+The templated target type for the Amazon SageMaker [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html) API operation.
 
 ## Syntax
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "PipelineParameterList" : [ SageMakerPipelineParameter, ... ]
+  "[PipelineParameterList](#cfn-scheduler-schedule-sagemakerpipelineparameters-pipelineparameterlist)" : {{[ SageMakerPipelineParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters-syntax.yaml"></a>
 
-```yaml
-
-  PipelineParameterList:
-    - SageMakerPipelineParameter
-
+```
+  [PipelineParameterList](#cfn-scheduler-schedule-sagemakerpipelineparameters-pipelineparameterlist): {{
+    - SageMakerPipelineParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameters-properties"></a>
 
-`PipelineParameterList`
-
+`PipelineParameterList`  <a name="cfn-scheduler-schedule-sagemakerpipelineparameters-pipelineparameterlist"></a>
 List of parameter names and values to use when executing the SageMaker Model Building Pipeline.
-
-_Required_: No
-
-_Type_: Array of [SageMakerPipelineParameter](aws-properties-scheduler-schedule-sagemakerpipelineparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SageMakerPipelineParameter
-
-SqsParameters
+*Required*: No
+*Type*: Array of [SageMakerPipelineParameter](aws-properties-scheduler-schedule-sagemakerpipelineparameter.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

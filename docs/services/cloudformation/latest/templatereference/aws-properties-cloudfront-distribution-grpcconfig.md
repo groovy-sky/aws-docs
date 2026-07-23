@@ -2,60 +2,45 @@
 title: "AWS::CloudFront::Distribution GrpcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution GrpcConfig
+<a name="aws-properties-cloudfront-distribution-grpcconfig"></a>
 
-Amazon CloudFront supports gRPC, an open-source remote procedure call (RPC) framework built on
-HTTP/2. gRPC offers bi-directional streaming and binary protocol that buffers payloads,
-making it suitable for applications that require low latency communications.
+Amazon CloudFront supports gRPC, an open-source remote procedure call (RPC) framework built on HTTP/2. gRPC offers bi-directional streaming and binary protocol that buffers payloads, making it suitable for applications that require low latency communications.
 
 To enable your distribution to handle gRPC requests, you must include HTTP/2 as one of the supported `HTTP` versions and allow `HTTP` methods, including `POST`.
 
-For more information, see [Using gRPC with CloudFront distributions](../../../amazoncloudfront/latest/developerguide/distribution-using-grpc.md) in the
-_Amazon CloudFront Developer Guide_.
+For more information, see [Using gRPC with CloudFront distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-using-grpc.html) in the *Amazon CloudFront Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-grpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-grpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-cloudfront-distribution-grpcconfig-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-grpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-cloudfront-distribution-grpcconfig-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-grpcconfig-properties"></a>
 
-`Enabled`
-
-Enables your CloudFront distribution to receive gRPC requests and to proxy them directly to your
-origins.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeoRestriction
-
-LambdaFunctionAssociation
+`Enabled`  <a name="cfn-cloudfront-distribution-grpcconfig-enabled"></a>
+Enables your CloudFront distribution to receive gRPC requests and to proxy them directly to your origins.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

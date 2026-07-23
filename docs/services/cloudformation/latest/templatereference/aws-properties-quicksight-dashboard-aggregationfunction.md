@@ -2,108 +2,77 @@
 title: "AWS::QuickSight::Dashboard AggregationFunction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard AggregationFunction
+<a name="aws-properties-quicksight-dashboard-aggregationfunction"></a>
 
 An aggregation function aggregates values from a dimension or measure.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-aggregationfunction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-aggregationfunction-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttributeAggregationFunction" : AttributeAggregationFunction,
-  "CategoricalAggregationFunction" : String,
-  "DateAggregationFunction" : String,
-  "NumericalAggregationFunction" : NumericalAggregationFunction
+  "[AttributeAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-attributeaggregationfunction)" : {{AttributeAggregationFunction}},
+  "[CategoricalAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-categoricalaggregationfunction)" : {{String}},
+  "[DateAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-dateaggregationfunction)" : {{String}},
+  "[NumericalAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-numericalaggregationfunction)" : {{NumericalAggregationFunction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-aggregationfunction-syntax.yaml"></a>
 
-```yaml
-
-  AttributeAggregationFunction:
-    AttributeAggregationFunction
-  CategoricalAggregationFunction: String
-  DateAggregationFunction: String
-  NumericalAggregationFunction:
-    NumericalAggregationFunction
-
+```
+  [AttributeAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-attributeaggregationfunction): {{
+    AttributeAggregationFunction}}
+  [CategoricalAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-categoricalaggregationfunction): {{String}}
+  [DateAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-dateaggregationfunction): {{String}}
+  [NumericalAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-numericalaggregationfunction): {{
+    NumericalAggregationFunction}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-aggregationfunction-properties"></a>
 
-`AttributeAggregationFunction`
-
+`AttributeAggregationFunction`  <a name="cfn-quicksight-dashboard-aggregationfunction-attributeaggregationfunction"></a>
 Aggregation for attributes.
+*Required*: No
+*Type*: [AttributeAggregationFunction](aws-properties-quicksight-dashboard-attributeaggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AttributeAggregationFunction](aws-properties-quicksight-dashboard-attributeaggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoricalAggregationFunction`
-
+`CategoricalAggregationFunction`  <a name="cfn-quicksight-dashboard-aggregationfunction-categoricalaggregationfunction"></a>
 Aggregation for categorical values.
++ `COUNT`: Aggregate by the total number of values, including duplicates.
++ `DISTINCT_COUNT`: Aggregate by the total number of distinct values.
+*Required*: No
+*Type*: String
+*Allowed values*: `COUNT | DISTINCT_COUNT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `COUNT`: Aggregate by the total number of values, including duplicates.
-
-- `DISTINCT_COUNT`: Aggregate by the total number of distinct values.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `COUNT | DISTINCT_COUNT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateAggregationFunction`
-
+`DateAggregationFunction`  <a name="cfn-quicksight-dashboard-aggregationfunction-dateaggregationfunction"></a>
 Aggregation for date values.
++ `COUNT`: Aggregate by the total number of values, including duplicates.
++ `DISTINCT_COUNT`: Aggregate by the total number of distinct values.
++ `MIN`: Select the smallest date value.
++ `MAX`: Select the largest date value.
+*Required*: No
+*Type*: String
+*Allowed values*: `COUNT | DISTINCT_COUNT | MIN | MAX`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `COUNT`: Aggregate by the total number of values, including duplicates.
-
-- `DISTINCT_COUNT`: Aggregate by the total number of distinct values.
-
-- `MIN`: Select the smallest date value.
-
-- `MAX`: Select the largest date value.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `COUNT | DISTINCT_COUNT | MIN | MAX`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericalAggregationFunction`
-
+`NumericalAggregationFunction`  <a name="cfn-quicksight-dashboard-aggregationfunction-numericalaggregationfunction"></a>
 Aggregation for numerical values.
-
-_Required_: No
-
-_Type_: [NumericalAggregationFunction](aws-properties-quicksight-dashboard-numericalaggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdHocFilteringOption
-
-AggregationSortConfiguration
+*Required*: No
+*Type*: [NumericalAggregationFunction](aws-properties-quicksight-dashboard-numericalaggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,124 +2,89 @@
 title: "AWS::QuickSight::Template PercentageDisplayFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PercentageDisplayFormatConfiguration
+<a name="aws-properties-quicksight-template-percentagedisplayformatconfiguration"></a>
 
 The options that determine the percentage display format configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-percentagedisplayformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-percentagedisplayformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DecimalPlacesConfiguration" : DecimalPlacesConfiguration,
-  "NegativeValueConfiguration" : NegativeValueConfiguration,
-  "NullValueFormatConfiguration" : NullValueFormatConfiguration,
-  "Prefix" : String,
-  "SeparatorConfiguration" : NumericSeparatorConfiguration,
-  "Suffix" : String
+  "[DecimalPlacesConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-decimalplacesconfiguration)" : {{DecimalPlacesConfiguration}},
+  "[NegativeValueConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-negativevalueconfiguration)" : {{NegativeValueConfiguration}},
+  "[NullValueFormatConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
+  "[Prefix](#cfn-quicksight-template-percentagedisplayformatconfiguration-prefix)" : {{String}},
+  "[SeparatorConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-separatorconfiguration)" : {{NumericSeparatorConfiguration}},
+  "[Suffix](#cfn-quicksight-template-percentagedisplayformatconfiguration-suffix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-percentagedisplayformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DecimalPlacesConfiguration:
-    DecimalPlacesConfiguration
-  NegativeValueConfiguration:
-    NegativeValueConfiguration
-  NullValueFormatConfiguration:
-    NullValueFormatConfiguration
-  Prefix: String
-  SeparatorConfiguration:
-    NumericSeparatorConfiguration
-  Suffix: String
-
+```
+  [DecimalPlacesConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-decimalplacesconfiguration): {{
+    DecimalPlacesConfiguration}}
+  [NegativeValueConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-negativevalueconfiguration): {{
+    NegativeValueConfiguration}}
+  [NullValueFormatConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-nullvalueformatconfiguration): {{
+    NullValueFormatConfiguration}}
+  [Prefix](#cfn-quicksight-template-percentagedisplayformatconfiguration-prefix): {{String}}
+  [SeparatorConfiguration](#cfn-quicksight-template-percentagedisplayformatconfiguration-separatorconfiguration): {{
+    NumericSeparatorConfiguration}}
+  [Suffix](#cfn-quicksight-template-percentagedisplayformatconfiguration-suffix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-percentagedisplayformatconfiguration-properties"></a>
 
-`DecimalPlacesConfiguration`
-
+`DecimalPlacesConfiguration`  <a name="cfn-quicksight-template-percentagedisplayformatconfiguration-decimalplacesconfiguration"></a>
 The option that determines the decimal places configuration.
+*Required*: No
+*Type*: [DecimalPlacesConfiguration](aws-properties-quicksight-template-decimalplacesconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DecimalPlacesConfiguration](aws-properties-quicksight-template-decimalplacesconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NegativeValueConfiguration`
-
+`NegativeValueConfiguration`  <a name="cfn-quicksight-template-percentagedisplayformatconfiguration-negativevalueconfiguration"></a>
 The options that determine the negative value configuration.
+*Required*: No
+*Type*: [NegativeValueConfiguration](aws-properties-quicksight-template-negativevalueconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NegativeValueConfiguration](aws-properties-quicksight-template-negativevalueconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullValueFormatConfiguration`
-
+`NullValueFormatConfiguration`  <a name="cfn-quicksight-template-percentagedisplayformatconfiguration-nullvalueformatconfiguration"></a>
 The options that determine the null value format configuration.
+*Required*: No
+*Type*: [NullValueFormatConfiguration](aws-properties-quicksight-template-nullvalueformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NullValueFormatConfiguration](aws-properties-quicksight-template-nullvalueformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-quicksight-template-percentagedisplayformatconfiguration-prefix"></a>
 Determines the prefix value of the percentage format.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SeparatorConfiguration`
-
+`SeparatorConfiguration`  <a name="cfn-quicksight-template-percentagedisplayformatconfiguration-separatorconfiguration"></a>
 The options that determine the numeric separator configuration.
+*Required*: No
+*Type*: [NumericSeparatorConfiguration](aws-properties-quicksight-template-numericseparatorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumericSeparatorConfiguration](aws-properties-quicksight-template-numericseparatorconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Suffix`
-
+`Suffix`  <a name="cfn-quicksight-template-percentagedisplayformatconfiguration-suffix"></a>
 Determines the suffix value of the percentage format.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterTextFieldControl
-
-PercentileAggregation
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

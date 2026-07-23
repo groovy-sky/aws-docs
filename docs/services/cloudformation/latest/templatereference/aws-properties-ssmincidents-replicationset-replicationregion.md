@@ -2,68 +2,51 @@
 title: "AWS::SSMIncidents::ReplicationSet ReplicationRegion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ReplicationSet ReplicationRegion
+<a name="aws-properties-ssmincidents-replicationset-replicationregion"></a>
 
-The `ReplicationRegion` property type specifies the Region and AWS Key Management Service key to
-add to the replication set.
+The `ReplicationRegion` property type specifies the Region and AWS Key Management Service key to add to the replication set.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-replicationset-replicationregion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-replicationset-replicationregion-syntax.json"></a>
 
-```json
-
+```
 {
-  "RegionConfiguration" : RegionConfiguration,
-  "RegionName" : String
+  "[RegionConfiguration](#cfn-ssmincidents-replicationset-replicationregion-regionconfiguration)" : {{RegionConfiguration}},
+  "[RegionName](#cfn-ssmincidents-replicationset-replicationregion-regionname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-replicationset-replicationregion-syntax.yaml"></a>
 
-```yaml
-
-  RegionConfiguration:
-    RegionConfiguration
-  RegionName: String
-
+```
+  [RegionConfiguration](#cfn-ssmincidents-replicationset-replicationregion-regionconfiguration): {{
+    RegionConfiguration}}
+  [RegionName](#cfn-ssmincidents-replicationset-replicationregion-regionname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-replicationset-replicationregion-properties"></a>
 
-`RegionConfiguration`
-
+`RegionConfiguration`  <a name="cfn-ssmincidents-replicationset-replicationregion-regionconfiguration"></a>
 Specifies the Region configuration.
+*Required*: No
+*Type*: [RegionConfiguration](aws-properties-ssmincidents-replicationset-regionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RegionConfiguration](aws-properties-ssmincidents-replicationset-regionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegionName`
-
+`RegionName`  <a name="cfn-ssmincidents-replicationset-replicationregion-regionname"></a>
 Specifies the region name to add to the replication set.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RegionConfiguration
-
-Tag
+*Required*: No
+*Type*: String
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

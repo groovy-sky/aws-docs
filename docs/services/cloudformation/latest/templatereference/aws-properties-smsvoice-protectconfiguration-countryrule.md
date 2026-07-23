@@ -2,18 +2,16 @@
 title: "AWS::SMSVOICE::ProtectConfiguration CountryRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::ProtectConfiguration CountryRule
+<a name="aws-properties-smsvoice-protectconfiguration-countryrule"></a>
 
 Specifies the type of protection to use for a country.
 
 For example, to set Canada as allowed, the `CountryRule` would be formatted as follows:
 
 ```
-
 {
     "CountryCode": "CA",
     "ProtectStatus": "ALLOW"
@@ -21,59 +19,43 @@ For example, to set Canada as allowed, the `CountryRule` would be formatted as f
 ```
 
 ## Syntax
+<a name="aws-properties-smsvoice-protectconfiguration-countryrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-smsvoice-protectconfiguration-countryrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "CountryCode" : String,
-  "ProtectStatus" : String
+  "[CountryCode](#cfn-smsvoice-protectconfiguration-countryrule-countrycode)" : {{String}},
+  "[ProtectStatus](#cfn-smsvoice-protectconfiguration-countryrule-protectstatus)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-smsvoice-protectconfiguration-countryrule-syntax.yaml"></a>
 
-```yaml
-
-  CountryCode: String
-  ProtectStatus: String
-
+```
+  [CountryCode](#cfn-smsvoice-protectconfiguration-countryrule-countrycode): {{String}}
+  [ProtectStatus](#cfn-smsvoice-protectconfiguration-countryrule-protectstatus): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-smsvoice-protectconfiguration-countryrule-properties"></a>
 
-`CountryCode`
-
+`CountryCode`  <a name="cfn-smsvoice-protectconfiguration-countryrule-countrycode"></a>
 The two-character code, in ISO 3166-1 alpha-2 format, for the country or region.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Z]{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Z]{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProtectStatus`
-
+`ProtectStatus`  <a name="cfn-smsvoice-protectconfiguration-countryrule-protectstatus"></a>
 The types of protection that can be used.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALLOW | BLOCK | MONITOR | FILTER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SMSVOICE::ProtectConfiguration
-
-CountryRuleSet
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALLOW | BLOCK | MONITOR | FILTER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,82 +2,60 @@
 title: "AWS::DevOpsAgent::Service ApiKeyDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Service ApiKeyDetails
+<a name="aws-properties-devopsagent-service-apikeydetails"></a>
 
 API key authentication details for an MCP server.
 
 ## Syntax
+<a name="aws-properties-devopsagent-service-apikeydetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-service-apikeydetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiKeyHeader" : String,
-  "ApiKeyName" : String,
-  "ApiKeyValue" : String
+  "[ApiKeyHeader](#cfn-devopsagent-service-apikeydetails-apikeyheader)" : {{String}},
+  "[ApiKeyName](#cfn-devopsagent-service-apikeydetails-apikeyname)" : {{String}},
+  "[ApiKeyValue](#cfn-devopsagent-service-apikeydetails-apikeyvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-service-apikeydetails-syntax.yaml"></a>
 
-```yaml
-
-  ApiKeyHeader: String
-  ApiKeyName: String
-  ApiKeyValue: String
-
+```
+  [ApiKeyHeader](#cfn-devopsagent-service-apikeydetails-apikeyheader): {{String}}
+  [ApiKeyName](#cfn-devopsagent-service-apikeydetails-apikeyname): {{String}}
+  [ApiKeyValue](#cfn-devopsagent-service-apikeydetails-apikeyvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-service-apikeydetails-properties"></a>
 
-`ApiKeyHeader`
-
+`ApiKeyHeader`  <a name="cfn-devopsagent-service-apikeydetails-apikeyheader"></a>
 The HTTP header name used to send the API key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-]+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ApiKeyName`
-
+`ApiKeyName`  <a name="cfn-devopsagent-service-apikeydetails-apikeyname"></a>
 A friendly name for the API key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\s-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\s-]+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ApiKeyValue`
-
+`ApiKeyValue`  <a name="cfn-devopsagent-service-apikeydetails-apikeyvalue"></a>
 The API key value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[!-~]([ \t]*[!-~])*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdditionalServiceDetails
-
-BearerTokenDetails
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[!-~]([ \t]*[!-~])*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

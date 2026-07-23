@@ -2,94 +2,66 @@
 title: "AWS::IoT::CACertificate RegistrationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::CACertificate RegistrationConfig
+<a name="aws-properties-iot-cacertificate-registrationconfig"></a>
 
 The registration configuration.
 
 ## Syntax
+<a name="aws-properties-iot-cacertificate-registrationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-cacertificate-registrationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "RoleArn" : String,
-  "TemplateBody" : String,
-  "TemplateName" : String
+  "[RoleArn](#cfn-iot-cacertificate-registrationconfig-rolearn)" : {{String}},
+  "[TemplateBody](#cfn-iot-cacertificate-registrationconfig-templatebody)" : {{String}},
+  "[TemplateName](#cfn-iot-cacertificate-registrationconfig-templatename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-cacertificate-registrationconfig-syntax.yaml"></a>
 
-```yaml
-
-  RoleArn: String
-  TemplateBody: String
-  TemplateName: String
-
+```
+  [RoleArn](#cfn-iot-cacertificate-registrationconfig-rolearn): {{String}}
+  [TemplateBody](#cfn-iot-cacertificate-registrationconfig-templatebody): {{String}}
+  [TemplateName](#cfn-iot-cacertificate-registrationconfig-templatename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-cacertificate-registrationconfig-properties"></a>
 
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-cacertificate-registrationconfig-rolearn"></a>
 The ARN of the role.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws[a-zA-Z-]*)?:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws[a-zA-Z-]*)?:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateBody`
-
+`TemplateBody`  <a name="cfn-iot-cacertificate-registrationconfig-templatebody"></a>
 The template body.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `10240`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `10240`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateName`
-
+`TemplateName`  <a name="cfn-iot-cacertificate-registrationconfig-templatename"></a>
 The name of the provisioning template.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::CACertificate
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9A-Za-z_-]+$`
+*Minimum*: `1`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

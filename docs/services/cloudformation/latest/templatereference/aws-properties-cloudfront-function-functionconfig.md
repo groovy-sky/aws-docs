@@ -2,79 +2,59 @@
 title: "AWS::CloudFront::Function FunctionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Function FunctionConfig
+<a name="aws-properties-cloudfront-function-functionconfig"></a>
 
 Contains configuration information about a CloudFront function.
 
 ## Syntax
+<a name="aws-properties-cloudfront-function-functionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-function-functionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comment" : String,
-  "KeyValueStoreAssociations" : [ KeyValueStoreAssociation, ... ],
-  "Runtime" : String
+  "[Comment](#cfn-cloudfront-function-functionconfig-comment)" : {{String}},
+  "[KeyValueStoreAssociations](#cfn-cloudfront-function-functionconfig-keyvaluestoreassociations)" : {{[ KeyValueStoreAssociation, ... ]}},
+  "[Runtime](#cfn-cloudfront-function-functionconfig-runtime)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-function-functionconfig-syntax.yaml"></a>
 
-```yaml
-
-  Comment: String
-  KeyValueStoreAssociations:
-    - KeyValueStoreAssociation
-  Runtime: String
-
+```
+  [Comment](#cfn-cloudfront-function-functionconfig-comment): {{String}}
+  [KeyValueStoreAssociations](#cfn-cloudfront-function-functionconfig-keyvaluestoreassociations): {{
+    - KeyValueStoreAssociation}}
+  [Runtime](#cfn-cloudfront-function-functionconfig-runtime): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-function-functionconfig-properties"></a>
 
-`Comment`
+`Comment`  <a name="cfn-cloudfront-function-functionconfig-comment"></a>
+A comment to describe the function. The comment cannot be longer than 128 characters.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A comment to describe the function.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyValueStoreAssociations`
-
+`KeyValueStoreAssociations`  <a name="cfn-cloudfront-function-functionconfig-keyvaluestoreassociations"></a>
 The configuration for the key value store associations.
+*Required*: No
+*Type*: Array of [KeyValueStoreAssociation](aws-properties-cloudfront-function-keyvaluestoreassociation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [KeyValueStoreAssociation](aws-properties-cloudfront-function-keyvaluestoreassociation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Runtime`
-
+`Runtime`  <a name="cfn-cloudfront-function-functionconfig-runtime"></a>
 The function's runtime environment version.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `cloudfront-js-1.0 | cloudfront-js-2.0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::Function
-
-FunctionMetadata
+*Required*: Yes
+*Type*: String
+*Allowed values*: `cloudfront-js-1.0 | cloudfront-js-2.0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

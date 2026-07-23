@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template SheetControlLayout"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SheetControlLayout
+<a name="aws-properties-quicksight-template-sheetcontrollayout"></a>
 
 A grid layout to define the placement of sheet control.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sheetcontrollayout-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sheetcontrollayout-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configuration" : SheetControlLayoutConfiguration
+  "[Configuration](#cfn-quicksight-template-sheetcontrollayout-configuration)" : {{SheetControlLayoutConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sheetcontrollayout-syntax.yaml"></a>
 
-```yaml
-
-  Configuration:
-    SheetControlLayoutConfiguration
-
+```
+  [Configuration](#cfn-quicksight-template-sheetcontrollayout-configuration): {{
+    SheetControlLayoutConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sheetcontrollayout-properties"></a>
 
-`Configuration`
-
+`Configuration`  <a name="cfn-quicksight-template-sheetcontrollayout-configuration"></a>
 The configuration that determines the elements and canvas size options of sheet control.
-
-_Required_: Yes
-
-_Type_: [SheetControlLayoutConfiguration](aws-properties-quicksight-template-sheetcontrollayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetControlInfoIconLabelOptions
-
-SheetControlLayoutConfiguration
+*Required*: Yes
+*Type*: [SheetControlLayoutConfiguration](aws-properties-quicksight-template-sheetcontrollayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

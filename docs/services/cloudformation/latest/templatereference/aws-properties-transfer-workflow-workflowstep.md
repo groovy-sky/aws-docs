@@ -2,158 +2,104 @@
 title: "AWS::Transfer::Workflow WorkflowStep"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Workflow WorkflowStep
+<a name="aws-properties-transfer-workflow-workflowstep"></a>
 
 The basic building block of a workflow.
 
 ## Syntax
+<a name="aws-properties-transfer-workflow-workflowstep-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-workflow-workflowstep-syntax.json"></a>
 
-```json
-
+```
 {
-  "CopyStepDetails" : CopyStepDetails,
-  "CustomStepDetails" : CustomStepDetails,
-  "DecryptStepDetails" : DecryptStepDetails,
-  "DeleteStepDetails" : DeleteStepDetails,
-  "TagStepDetails" : TagStepDetails,
-  "Type" : String
+  "[CopyStepDetails](#cfn-transfer-workflow-workflowstep-copystepdetails)" : {{CopyStepDetails}},
+  "[CustomStepDetails](#cfn-transfer-workflow-workflowstep-customstepdetails)" : {{CustomStepDetails}},
+  "[DecryptStepDetails](#cfn-transfer-workflow-workflowstep-decryptstepdetails)" : {{DecryptStepDetails}},
+  "[DeleteStepDetails](#cfn-transfer-workflow-workflowstep-deletestepdetails)" : {{DeleteStepDetails}},
+  "[TagStepDetails](#cfn-transfer-workflow-workflowstep-tagstepdetails)" : {{TagStepDetails}},
+  "[Type](#cfn-transfer-workflow-workflowstep-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-workflow-workflowstep-syntax.yaml"></a>
 
-```yaml
-
-  CopyStepDetails:
-    CopyStepDetails
-  CustomStepDetails:
-    CustomStepDetails
-  DecryptStepDetails:
-    DecryptStepDetails
-  DeleteStepDetails:
-    DeleteStepDetails
-  TagStepDetails:
-    TagStepDetails
-  Type: String
-
+```
+  [CopyStepDetails](#cfn-transfer-workflow-workflowstep-copystepdetails): {{
+    CopyStepDetails}}
+  [CustomStepDetails](#cfn-transfer-workflow-workflowstep-customstepdetails): {{
+    CustomStepDetails}}
+  [DecryptStepDetails](#cfn-transfer-workflow-workflowstep-decryptstepdetails): {{
+    DecryptStepDetails}}
+  [DeleteStepDetails](#cfn-transfer-workflow-workflowstep-deletestepdetails): {{
+    DeleteStepDetails}}
+  [TagStepDetails](#cfn-transfer-workflow-workflowstep-tagstepdetails): {{
+    TagStepDetails}}
+  [Type](#cfn-transfer-workflow-workflowstep-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-workflow-workflowstep-properties"></a>
 
-`CopyStepDetails`
-
+`CopyStepDetails`  <a name="cfn-transfer-workflow-workflowstep-copystepdetails"></a>
 Details for a step that performs a file copy.
+ Consists of the following values:
++ A description
++ An Amazon S3 location for the destination of the file copy.
++ A flag that indicates whether to overwrite an existing file of the same name. The default is `FALSE`.
+*Required*: No
+*Type*: [CopyStepDetails](aws-properties-transfer-workflow-copystepdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Consists of the following values:
-
-- A description
-
-- An Amazon S3 location for the destination of the file copy.
-
-- A flag that indicates whether to overwrite an existing file of the same name.
-The default is `FALSE`.
-
-_Required_: No
-
-_Type_: [CopyStepDetails](aws-properties-transfer-workflow-copystepdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CustomStepDetails`
-
+`CustomStepDetails`  <a name="cfn-transfer-workflow-workflowstep-customstepdetails"></a>
 Details for a step that invokes an AWS Lambda function.
-
 Consists of the Lambda function's name, target, and timeout (in seconds).
+*Required*: No
+*Type*: [CustomStepDetails](aws-properties-transfer-workflow-customstepdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [CustomStepDetails](aws-properties-transfer-workflow-customstepdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DecryptStepDetails`
-
+`DecryptStepDetails`  <a name="cfn-transfer-workflow-workflowstep-decryptstepdetails"></a>
 Details for a step that decrypts an encrypted file.
-
 Consists of the following values:
++ A descriptive name
++ An Amazon S3 or Amazon Elastic File System (Amazon EFS) location for the source file to decrypt.
++ An S3 or Amazon EFS location for the destination of the file decryption.
++ A flag that indicates whether to overwrite an existing file of the same name. The default is `FALSE`.
++ The type of encryption that's used. Currently, only PGP encryption is supported.
+*Required*: No
+*Type*: [DecryptStepDetails](aws-properties-transfer-workflow-decryptstepdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- A descriptive name
-
-- An Amazon S3 or Amazon Elastic File System (Amazon EFS) location for the
-source file to decrypt.
-
-- An S3 or Amazon EFS location for the destination of the file
-decryption.
-
-- A flag that indicates whether to overwrite an existing file of the same name.
-The default is `FALSE`.
-
-- The type of encryption that's used. Currently, only PGP encryption is
-supported.
-
-_Required_: No
-
-_Type_: [DecryptStepDetails](aws-properties-transfer-workflow-decryptstepdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DeleteStepDetails`
-
+`DeleteStepDetails`  <a name="cfn-transfer-workflow-workflowstep-deletestepdetails"></a>
 Details for a step that deletes the file.
+*Required*: No
+*Type*: [DeleteStepDetails](aws-properties-transfer-workflow-deletestepdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DeleteStepDetails](aws-properties-transfer-workflow-deletestepdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagStepDetails`
-
+`TagStepDetails`  <a name="cfn-transfer-workflow-workflowstep-tagstepdetails"></a>
 Details for a step that creates one or more tags.
-
 You specify one or more tags. Each tag contains a key-value pair.
+*Required*: No
+*Type*: [TagStepDetails](aws-properties-transfer-workflow-tagstepdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [TagStepDetails](aws-properties-transfer-workflow-tagstepdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
-Currently, the following step types are supported.
-
-- **`COPY`** \- Copy the file to another location.
-
-- **`CUSTOM`** \- Perform a custom step with an AWS Lambda function target.
-
-- **`DECRYPT`** \- Decrypt a file that was encrypted before it was uploaded.
-
-- **`DELETE`** \- Delete the file.
-
-- **`TAG`** \- Add a tag to the file.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `COPY | CUSTOM | DECRYPT | DELETE | TAG`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagStepDetails
-
-Next
+`Type`  <a name="cfn-transfer-workflow-workflowstep-type"></a>
+ Currently, the following step types are supported.
++ ** `COPY` ** - Copy the file to another location.
++ ** `CUSTOM` ** - Perform a custom step with an AWS Lambda function target.
++ ** `DECRYPT` ** - Decrypt a file that was encrypted before it was uploaded.
++ ** `DELETE` ** - Delete the file.
++ ** `TAG` ** - Add a tag to the file.
+*Required*: No
+*Type*: String
+*Allowed values*: `COPY | CUSTOM | DECRYPT | DELETE | TAG`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

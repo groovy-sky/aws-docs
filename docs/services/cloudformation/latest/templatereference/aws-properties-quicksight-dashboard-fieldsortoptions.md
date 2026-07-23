@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard FieldSortOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FieldSortOptions
+<a name="aws-properties-quicksight-dashboard-fieldsortoptions"></a>
 
 The field sort options in a chart configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-fieldsortoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-fieldsortoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnSort" : ColumnSort,
-  "FieldSort" : FieldSort
+  "[ColumnSort](#cfn-quicksight-dashboard-fieldsortoptions-columnsort)" : {{ColumnSort}},
+  "[FieldSort](#cfn-quicksight-dashboard-fieldsortoptions-fieldsort)" : {{FieldSort}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-fieldsortoptions-syntax.yaml"></a>
 
-```yaml
-
-  ColumnSort:
-    ColumnSort
-  FieldSort:
-    FieldSort
-
+```
+  [ColumnSort](#cfn-quicksight-dashboard-fieldsortoptions-columnsort): {{
+    ColumnSort}}
+  [FieldSort](#cfn-quicksight-dashboard-fieldsortoptions-fieldsort): {{
+    FieldSort}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-fieldsortoptions-properties"></a>
 
-`ColumnSort`
-
+`ColumnSort`  <a name="cfn-quicksight-dashboard-fieldsortoptions-columnsort"></a>
 The sort configuration for a column that is not used in a field well.
+*Required*: No
+*Type*: [ColumnSort](aws-properties-quicksight-dashboard-columnsort.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColumnSort](aws-properties-quicksight-dashboard-columnsort.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldSort`
-
+`FieldSort`  <a name="cfn-quicksight-dashboard-fieldsortoptions-fieldsort"></a>
 The sort configuration for a field in a field well.
-
-_Required_: No
-
-_Type_: [FieldSort](aws-properties-quicksight-dashboard-fieldsort.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldSort
-
-FieldTooltipItem
+*Required*: No
+*Type*: [FieldSort](aws-properties-quicksight-dashboard-fieldsort.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

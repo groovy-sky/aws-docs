@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Analysis GeospatialWindowOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialWindowOptions
+<a name="aws-properties-quicksight-analysis-geospatialwindowoptions"></a>
 
 The window options of the geospatial map visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialwindowoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialwindowoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bounds" : GeospatialCoordinateBounds,
-  "MapZoomMode" : String
+  "[Bounds](#cfn-quicksight-analysis-geospatialwindowoptions-bounds)" : {{GeospatialCoordinateBounds}},
+  "[MapZoomMode](#cfn-quicksight-analysis-geospatialwindowoptions-mapzoommode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialwindowoptions-syntax.yaml"></a>
 
-```yaml
-
-  Bounds:
-    GeospatialCoordinateBounds
-  MapZoomMode: String
-
+```
+  [Bounds](#cfn-quicksight-analysis-geospatialwindowoptions-bounds): {{
+    GeospatialCoordinateBounds}}
+  [MapZoomMode](#cfn-quicksight-analysis-geospatialwindowoptions-mapzoommode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialwindowoptions-properties"></a>
 
-`Bounds`
-
+`Bounds`  <a name="cfn-quicksight-analysis-geospatialwindowoptions-bounds"></a>
 The bounds options (north, south, west, east) of the geospatial window options.
+*Required*: No
+*Type*: [GeospatialCoordinateBounds](aws-properties-quicksight-analysis-geospatialcoordinatebounds.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialCoordinateBounds](aws-properties-quicksight-analysis-geospatialcoordinatebounds.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapZoomMode`
-
+`MapZoomMode`  <a name="cfn-quicksight-analysis-geospatialwindowoptions-mapzoommode"></a>
 The map zoom modes (manual, auto) of the geospatial window options.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTO | MANUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialStaticFileSource
-
-GlobalTableBorderOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO | MANUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

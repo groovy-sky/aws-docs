@@ -2,192 +2,130 @@
 title: "AWS::QuickSight::Dashboard DashboardVersionDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DashboardVersionDefinition
+<a name="aws-properties-quicksight-dashboard-dashboardversiondefinition"></a>
 
 The contents of a dashboard.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-dashboardversiondefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-dashboardversiondefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnalysisDefaults" : AnalysisDefaults,
-  "CalculatedFields" : [ CalculatedField, ... ],
-  "ColumnConfigurations" : [ ColumnConfiguration, ... ],
-  "DataSetIdentifierDeclarations" : [ DataSetIdentifierDeclaration, ... ],
-  "FilterGroups" : [ FilterGroup, ... ],
-  "Options" : AssetOptions,
-  "ParameterDeclarations" : [ ParameterDeclaration, ... ],
-  "Sheets" : [ SheetDefinition, ... ],
-  "StaticFiles" : [ StaticFile, ... ]
+  "[AnalysisDefaults](#cfn-quicksight-dashboard-dashboardversiondefinition-analysisdefaults)" : {{AnalysisDefaults}},
+  "[CalculatedFields](#cfn-quicksight-dashboard-dashboardversiondefinition-calculatedfields)" : {{[ CalculatedField, ... ]}},
+  "[ColumnConfigurations](#cfn-quicksight-dashboard-dashboardversiondefinition-columnconfigurations)" : {{[ ColumnConfiguration, ... ]}},
+  "[DataSetIdentifierDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-datasetidentifierdeclarations)" : {{[ DataSetIdentifierDeclaration, ... ]}},
+  "[FilterGroups](#cfn-quicksight-dashboard-dashboardversiondefinition-filtergroups)" : {{[ FilterGroup, ... ]}},
+  "[Options](#cfn-quicksight-dashboard-dashboardversiondefinition-options)" : {{AssetOptions}},
+  "[ParameterDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-parameterdeclarations)" : {{[ ParameterDeclaration, ... ]}},
+  "[Sheets](#cfn-quicksight-dashboard-dashboardversiondefinition-sheets)" : {{[ SheetDefinition, ... ]}},
+  "[StaticFiles](#cfn-quicksight-dashboard-dashboardversiondefinition-staticfiles)" : {{[ StaticFile, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-dashboardversiondefinition-syntax.yaml"></a>
 
-```yaml
-
-  AnalysisDefaults:
-    AnalysisDefaults
-  CalculatedFields:
-    - CalculatedField
-  ColumnConfigurations:
-    - ColumnConfiguration
-  DataSetIdentifierDeclarations:
-    - DataSetIdentifierDeclaration
-  FilterGroups:
-    - FilterGroup
-  Options:
-    AssetOptions
-  ParameterDeclarations:
-    - ParameterDeclaration
-  Sheets:
-    - SheetDefinition
-  StaticFiles:
-    - StaticFile
-
+```
+  [AnalysisDefaults](#cfn-quicksight-dashboard-dashboardversiondefinition-analysisdefaults): {{
+    AnalysisDefaults}}
+  [CalculatedFields](#cfn-quicksight-dashboard-dashboardversiondefinition-calculatedfields): {{
+    - CalculatedField}}
+  [ColumnConfigurations](#cfn-quicksight-dashboard-dashboardversiondefinition-columnconfigurations): {{
+    - ColumnConfiguration}}
+  [DataSetIdentifierDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-datasetidentifierdeclarations): {{
+    - DataSetIdentifierDeclaration}}
+  [FilterGroups](#cfn-quicksight-dashboard-dashboardversiondefinition-filtergroups): {{
+    - FilterGroup}}
+  [Options](#cfn-quicksight-dashboard-dashboardversiondefinition-options): {{
+    AssetOptions}}
+  [ParameterDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-parameterdeclarations): {{
+    - ParameterDeclaration}}
+  [Sheets](#cfn-quicksight-dashboard-dashboardversiondefinition-sheets): {{
+    - SheetDefinition}}
+  [StaticFiles](#cfn-quicksight-dashboard-dashboardversiondefinition-staticfiles): {{
+    - StaticFile}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-dashboardversiondefinition-properties"></a>
 
-`AnalysisDefaults`
-
+`AnalysisDefaults`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-analysisdefaults"></a>
 Property description not available.
+*Required*: No
+*Type*: [AnalysisDefaults](aws-properties-quicksight-dashboard-analysisdefaults.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AnalysisDefaults](aws-properties-quicksight-dashboard-analysisdefaults.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CalculatedFields`
-
+`CalculatedFields`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-calculatedfields"></a>
 An array of calculated field definitions for the dashboard.
+*Required*: No
+*Type*: Array of [CalculatedField](aws-properties-quicksight-dashboard-calculatedfield.md)
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ColumnConfigurations`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-columnconfigurations"></a>
+An array of dashboard-level column configurations. Column configurations are used to set the default formatting for a column that is used throughout a dashboard.
+*Required*: No
+*Type*: Array of [ColumnConfiguration](aws-properties-quicksight-dashboard-columnconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CalculatedField](aws-properties-quicksight-dashboard-calculatedfield.md)
+`DataSetIdentifierDeclarations`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-datasetidentifierdeclarations"></a>
+An array of dataset identifier declarations. With this mapping,you can use dataset identifiers instead of dataset Amazon Resource Names (ARNs) throughout the dashboard's sub-structures.
+*Required*: Yes
+*Type*: Array of [DataSetIdentifierDeclaration](aws-properties-quicksight-dashboard-datasetidentifierdeclaration.md)
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnConfigurations`
-
-An array of dashboard-level column configurations. Column configurations
-are used to set the default formatting for a column that
-is used throughout a dashboard.
-
-_Required_: No
-
-_Type_: Array of [ColumnConfiguration](aws-properties-quicksight-dashboard-columnconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetIdentifierDeclarations`
-
-An array of dataset identifier declarations. With
-this mapping,you can use dataset identifiers instead of dataset Amazon Resource Names (ARNs) throughout the dashboard's sub-structures.
-
-_Required_: Yes
-
-_Type_: Array of [DataSetIdentifierDeclaration](aws-properties-quicksight-dashboard-datasetidentifierdeclaration.md)
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterGroups`
-
+`FilterGroups`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-filtergroups"></a>
 The filter definitions for a dashboard.
+For more information, see [Filtering Data in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/adding-a-filter.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [FilterGroup](aws-properties-quicksight-dashboard-filtergroup.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Filtering Data in Amazon Quick Sight](../../../quicksight/latest/user/adding-a-filter.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [FilterGroup](aws-properties-quicksight-dashboard-filtergroup.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-options"></a>
 An array of option definitions for a dashboard.
+*Required*: No
+*Type*: [AssetOptions](aws-properties-quicksight-dashboard-assetoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AssetOptions](aws-properties-quicksight-dashboard-assetoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterDeclarations`
-
+`ParameterDeclarations`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-parameterdeclarations"></a>
 The parameter declarations for a dashboard. Parameters are named variables that can transfer a value for use by an action or an object.
+For more information, see [Parameters in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/parameters-in-quicksight.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [ParameterDeclaration](aws-properties-quicksight-dashboard-parameterdeclaration.md)
+*Minimum*: `0`
+*Maximum*: `400`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Parameters in Amazon Quick Sight](../../../quicksight/latest/user/parameters-in-quicksight.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [ParameterDeclaration](aws-properties-quicksight-dashboard-parameterdeclaration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `400`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sheets`
-
+`Sheets`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-sheets"></a>
 An array of sheet definitions for a dashboard.
+*Required*: No
+*Type*: Array of [SheetDefinition](aws-properties-quicksight-dashboard-sheetdefinition.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SheetDefinition](aws-properties-quicksight-dashboard-sheetdefinition.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticFiles`
-
+`StaticFiles`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-staticfiles"></a>
 The static files for the definition.
-
-_Required_: No
-
-_Type_: Array of [StaticFile](aws-properties-quicksight-dashboard-staticfile.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashboardVersion
-
-DashboardVisualPublishOptions
+*Required*: No
+*Type*: Array of [StaticFile](aws-properties-quicksight-dashboard-staticfile.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

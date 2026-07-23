@@ -2,79 +2,64 @@
 title: "AWS::SNS::TopicInlinePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SNS::TopicInlinePolicy
+<a name="aws-resource-sns-topicinlinepolicy"></a>
 
-The `AWS::SNS::TopicInlinePolicy` resource associates one Amazon SNS
-topic with one policy.
+The `AWS::SNS::TopicInlinePolicy` resource associates one Amazon SNS topic with one policy.
 
 ## Syntax
+<a name="aws-resource-sns-topicinlinepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sns-topicinlinepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SNS::TopicInlinePolicy",
   "Properties" : {
-      "PolicyDocument" : Json,
-      "TopicArn" : String
+      "[PolicyDocument](#cfn-sns-topicinlinepolicy-policydocument)" : {{Json}},
+      "[TopicArn](#cfn-sns-topicinlinepolicy-topicarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sns-topicinlinepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SNS::TopicInlinePolicy
 Properties:
-  PolicyDocument: Json
-  TopicArn: String
-
+  [PolicyDocument](#cfn-sns-topicinlinepolicy-policydocument): {{Json}}
+  [TopicArn](#cfn-sns-topicinlinepolicy-topicarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-sns-topicinlinepolicy-properties"></a>
 
-`PolicyDocument`
+`PolicyDocument`  <a name="cfn-sns-topicinlinepolicy-policydocument"></a>
+A policy document that contains permissions to add to the specified Amazon SNS topic.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A policy document that contains permissions to add to the specified Amazon SNS
-topic.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopicArn`
-
+`TopicArn`  <a name="cfn-sns-topicinlinepolicy-topicarn"></a>
 The Amazon Resource Name (ARN) of the topic to which you want to add the policy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sns-topicinlinepolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sns-topicinlinepolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the topic for which the policy was added.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SNS::TopicPolicy
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

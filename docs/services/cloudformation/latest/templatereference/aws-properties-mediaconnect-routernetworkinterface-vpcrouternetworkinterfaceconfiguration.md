@@ -2,69 +2,52 @@
 title: "AWS::MediaConnect::RouterNetworkInterface VpcRouterNetworkInterfaceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterNetworkInterface VpcRouterNetworkInterfaceConfiguration
+<a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration"></a>
 
 The configuration settings for a router network interface within a VPC, including the security group IDs and subnet ID.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetId" : String
+  "[SecurityGroupIds](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetId](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-subnetid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetId: String
-
+```
+  [SecurityGroupIds](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-securitygroupids): {{
+    - String}}
+  [SubnetId](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-securitygroupids"></a>
 The IDs of the security groups to associate with the router network interface within the VPC.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-subnetid"></a>
 The ID of the subnet within the VPC to associate the router network interface with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::MediaConnect::RouterOutput
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

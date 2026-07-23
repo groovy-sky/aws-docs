@@ -2,74 +2,62 @@
 title: "AWS::Connect::EvaluationForm ScoringStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm ScoringStrategy
+<a name="aws-properties-connect-evaluationform-scoringstrategy"></a>
 
 A scoring strategy of the evaluation form.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-scoringstrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-scoringstrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mode" : String,
-  "Status" : String
+  "[Mode](#cfn-connect-evaluationform-scoringstrategy-mode)" : {{String}},
+  "[ScoreThresholds](#cfn-connect-evaluationform-scoringstrategy-scorethresholds)" : {{[ EvaluationFormScoreThreshold, ... ]}},
+  "[Status](#cfn-connect-evaluationform-scoringstrategy-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-scoringstrategy-syntax.yaml"></a>
 
-```yaml
-
-  Mode: String
-  Status: String
-
+```
+  [Mode](#cfn-connect-evaluationform-scoringstrategy-mode): {{String}}
+  [ScoreThresholds](#cfn-connect-evaluationform-scoringstrategy-scorethresholds): {{
+    - EvaluationFormScoreThreshold}}
+  [Status](#cfn-connect-evaluationform-scoringstrategy-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-scoringstrategy-properties"></a>
 
-`Mode`
-
+`Mode`  <a name="cfn-connect-evaluationform-scoringstrategy-mode"></a>
 The scoring mode of the evaluation form.
+*Allowed values*: `QUESTION_ONLY` \| `SECTION_ONLY`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `QUESTION_ONLY | SECTION_ONLY | POINTS_BASED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `QUESTION_ONLY` \|
-`SECTION_ONLY`
+`ScoreThresholds`  <a name="cfn-connect-evaluationform-scoringstrategy-scorethresholds"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [EvaluationFormScoreThreshold](aws-properties-connect-evaluationform-evaluationformscorethreshold.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `QUESTION_ONLY | SECTION_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-connect-evaluationform-scoringstrategy-status"></a>
 The scoring status of the evaluation form.
-
-_Allowed values_: `ENABLED` \|
-`DISABLED`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NumericQuestionPropertyValueAutomation
-
-SingleSelectQuestionRuleCategoryAutomation
+*Allowed values*: `ENABLED` \| `DISABLED`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

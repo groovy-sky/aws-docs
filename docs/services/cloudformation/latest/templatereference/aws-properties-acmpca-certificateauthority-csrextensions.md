@@ -2,70 +2,51 @@
 title: "AWS::ACMPCA::CertificateAuthority CsrExtensions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority CsrExtensions
+<a name="aws-properties-acmpca-certificateauthority-csrextensions"></a>
 
-Describes the certificate extensions to be added to the certificate signing request
-(CSR).
+Describes the certificate extensions to be added to the certificate signing request (CSR).
 
 ## Syntax
+<a name="aws-properties-acmpca-certificateauthority-csrextensions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificateauthority-csrextensions-syntax.json"></a>
 
-```json
-
+```
 {
-  "KeyUsage" : KeyUsage,
-  "SubjectInformationAccess" : [ AccessDescription, ... ]
+  "[KeyUsage](#cfn-acmpca-certificateauthority-csrextensions-keyusage)" : {{KeyUsage}},
+  "[SubjectInformationAccess](#cfn-acmpca-certificateauthority-csrextensions-subjectinformationaccess)" : {{[ AccessDescription, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificateauthority-csrextensions-syntax.yaml"></a>
 
-```yaml
-
-  KeyUsage:
-    KeyUsage
-  SubjectInformationAccess:
-    - AccessDescription
-
+```
+  [KeyUsage](#cfn-acmpca-certificateauthority-csrextensions-keyusage): {{
+    KeyUsage}}
+  [SubjectInformationAccess](#cfn-acmpca-certificateauthority-csrextensions-subjectinformationaccess): {{
+    - AccessDescription}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificateauthority-csrextensions-properties"></a>
 
-`KeyUsage`
+`KeyUsage`  <a name="cfn-acmpca-certificateauthority-csrextensions-keyusage"></a>
+Indicates the purpose of the certificate and of the key contained in the certificate.
+*Required*: No
+*Type*: [KeyUsage](aws-properties-acmpca-certificateauthority-keyusage.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Indicates the purpose of the certificate and of the key contained in the
-certificate.
-
-_Required_: No
-
-_Type_: [KeyUsage](aws-properties-acmpca-certificateauthority-keyusage.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubjectInformationAccess`
-
-For CA certificates, provides a path to additional information pertaining to the CA,
-such as revocation and policy. For more information, see [Subject\
-Information Access](https://datatracker.ietf.org/doc/html/rfc5280) in RFC 5280.
-
-_Required_: No
-
-_Type_: Array of [AccessDescription](aws-properties-acmpca-certificateauthority-accessdescription.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CrlDistributionPointExtensionConfiguration
-
-CustomAttribute
+`SubjectInformationAccess`  <a name="cfn-acmpca-certificateauthority-csrextensions-subjectinformationaccess"></a>
+For CA certificates, provides a path to additional information pertaining to the CA, such as revocation and policy. For more information, see [Subject Information Access](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.2.2) in RFC 5280.
+*Required*: No
+*Type*: Array of [AccessDescription](aws-properties-acmpca-certificateauthority-accessdescription.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

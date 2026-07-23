@@ -2,56 +2,43 @@
 title: "AWS::AIOps::InvestigationGroup CrossAccountConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AIOps::InvestigationGroup CrossAccountConfiguration
+<a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration"></a>
 
 This structure contains information about the cross-account configuration in the account.
 
 ## Syntax
+<a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SourceRoleArn" : String
+  "[SourceRoleArn](#cfn-aiops-investigationgroup-crossaccountconfiguration-sourcerolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SourceRoleArn: String
-
+```
+  [SourceRoleArn](#cfn-aiops-investigationgroup-crossaccountconfiguration-sourcerolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration-properties"></a>
 
-`SourceRoleArn`
-
+`SourceRoleArn`  <a name="cfn-aiops-investigationgroup-crossaccountconfiguration-sourcerolearn"></a>
 The ARN of an existing role which will be used to do investigations on your behalf.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChatbotNotificationChannel
-
-EncryptionConfigMap
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

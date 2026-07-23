@@ -2,86 +2,62 @@
 title: "AWS::PCAConnectorAD::Template PrivateKeyAttributesV2"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template PrivateKeyAttributesV2
+<a name="aws-properties-pcaconnectorad-template-privatekeyattributesv2"></a>
 
 Defines the attributes of the private key.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-privatekeyattributesv2-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-privatekeyattributesv2-syntax.json"></a>
 
-```json
-
+```
 {
-  "CryptoProviders" : [ String, ... ],
-  "KeySpec" : String,
-  "MinimalKeyLength" : Number
+  "[CryptoProviders](#cfn-pcaconnectorad-template-privatekeyattributesv2-cryptoproviders)" : {{[ String, ... ]}},
+  "[KeySpec](#cfn-pcaconnectorad-template-privatekeyattributesv2-keyspec)" : {{String}},
+  "[MinimalKeyLength](#cfn-pcaconnectorad-template-privatekeyattributesv2-minimalkeylength)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-privatekeyattributesv2-syntax.yaml"></a>
 
-```yaml
-
-  CryptoProviders:
-    - String
-  KeySpec: String
-  MinimalKeyLength: Number
-
+```
+  [CryptoProviders](#cfn-pcaconnectorad-template-privatekeyattributesv2-cryptoproviders): {{
+    - String}}
+  [KeySpec](#cfn-pcaconnectorad-template-privatekeyattributesv2-keyspec): {{String}}
+  [MinimalKeyLength](#cfn-pcaconnectorad-template-privatekeyattributesv2-minimalkeylength): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-privatekeyattributesv2-properties"></a>
 
-`CryptoProviders`
-
+`CryptoProviders`  <a name="cfn-pcaconnectorad-template-privatekeyattributesv2-cryptoproviders"></a>
 Defines the cryptographic providers used to generate the private key.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`KeySpec`  <a name="cfn-pcaconnectorad-template-privatekeyattributesv2-keyspec"></a>
+Defines the purpose of the private key. Set it to "KEY\_EXCHANGE" or "SIGNATURE" value.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `KEY_EXCHANGE | SIGNATURE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `100 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeySpec`
-
-Defines the purpose of the private key. Set it to "KEY\_EXCHANGE" or "SIGNATURE"
-value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `KEY_EXCHANGE | SIGNATURE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimalKeyLength`
-
+`MinimalKeyLength`  <a name="cfn-pcaconnectorad-template-privatekeyattributesv2-minimalkeylength"></a>
 Set the minimum key length of the private key.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KeyUsagePropertyFlags
-
-PrivateKeyAttributesV3
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

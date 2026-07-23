@@ -2,80 +2,55 @@
 title: "AWS::CodePipeline::Pipeline StageTransition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline StageTransition
+<a name="aws-properties-codepipeline-pipeline-stagetransition"></a>
 
-The name of the pipeline in which you want to disable the flow of artifacts from
-one stage to another.
+The name of the pipeline in which you want to disable the flow of artifacts from one stage to another.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-stagetransition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-stagetransition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Reason" : String,
-  "StageName" : String
+  "[Reason](#cfn-codepipeline-pipeline-stagetransition-reason)" : {{String}},
+  "[StageName](#cfn-codepipeline-pipeline-stagetransition-stagename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-stagetransition-syntax.yaml"></a>
 
-```yaml
-
-  Reason: String
-  StageName: String
-
+```
+  [Reason](#cfn-codepipeline-pipeline-stagetransition-reason): {{String}}
+  [StageName](#cfn-codepipeline-pipeline-stagetransition-stagename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-stagetransition-properties"></a>
 
-`Reason`
+`Reason`  <a name="cfn-codepipeline-pipeline-stagetransition-reason"></a>
+The reason given to the user that a stage is disabled, such as waiting for manual approval or manual tests. This message is displayed in the pipeline console UI.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9!@ \(\)\.\*\?\-]+`
+*Minimum*: `1`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The reason given to the user that a stage is disabled, such as waiting for manual
-approval or manual tests. This message is displayed in the pipeline console
-UI.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9!@ \(\)\.\*\?\-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StageName`
-
-The name of the stage where you want to disable the inbound or outbound transition
-of artifacts.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9.@\-_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StageDeclaration
-
-SuccessConditions
+`StageName`  <a name="cfn-codepipeline-pipeline-stagetransition-stagename"></a>
+The name of the stage where you want to disable the inbound or outbound transition of artifacts.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Za-z0-9.@\-_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

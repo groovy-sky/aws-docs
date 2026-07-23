@@ -2,76 +2,65 @@
 title: "AWS::ECR::SigningConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::SigningConfiguration
+<a name="aws-resource-ecr-signingconfiguration"></a>
 
-The signing configuration for a registry, which specifies rules
-for automatically signing images when pushed.
+The signing configuration for a registry, which specifies rules for automatically signing images when pushed.
 
 ## Syntax
+<a name="aws-resource-ecr-signingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ecr-signingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ECR::SigningConfiguration",
   "Properties" : {
-      "Rules" : [ Rule, ... ]
+      "[Rules](#cfn-ecr-signingconfiguration-rules)" : {{[ Rule, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ecr-signingconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ECR::SigningConfiguration
 Properties:
-  Rules:
-    - Rule
-
+  [Rules](#cfn-ecr-signingconfiguration-rules): {{
+    - Rule}}
 ```
 
 ## Properties
+<a name="aws-resource-ecr-signingconfiguration-properties"></a>
 
-`Rules`
-
-A list of signing rules. Each rule defines a signing profile and optional repository
-filters that determine which images are automatically signed.
-
-_Required_: Yes
-
-_Type_: Array of [Rule](aws-properties-ecr-signingconfiguration-rule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Rules`  <a name="cfn-ecr-signingconfiguration-rules"></a>
+A list of signing rules. Each rule defines a signing profile and optional repository filters that determine which images are automatically signed.
+*Required*: Yes
+*Type*: Array of [Rule](aws-properties-ecr-signingconfiguration-rule.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ecr-signingconfiguration-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ecr-signingconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RegistryId`
+####
+<a name="aws-resource-ecr-signingconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`RegistryId`  <a name="RegistryId-fn::getatt"></a>
 The account ID of the destination registry.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-RepositoryFilter
 
 All content copied from https://docs.aws.amazon.com/.

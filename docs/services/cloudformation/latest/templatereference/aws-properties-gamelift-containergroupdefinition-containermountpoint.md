@@ -2,93 +2,66 @@
 title: "AWS::GameLift::ContainerGroupDefinition ContainerMountPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerGroupDefinition ContainerMountPoint
+<a name="aws-properties-gamelift-containergroupdefinition-containermountpoint"></a>
 
 A mount point that binds a container to a file or directory on the host system.
 
-**Part of:** [GameServerContainerDefinition](../../../../reference/gamelift/latest/apireference/api-gameservercontainerdefinition.md), [https://docs.aws.amazon.com/gamelift/latest/apireference/API\_GameServerContainerDefinitionInput.html](../../../../reference/gamelift/latest/apireference/api-gameservercontainerdefinitioninput.md), [SupportContainerDefinition](../../../../reference/gamelift/latest/apireference/api-supportcontainerdefinition.md), [https://docs.aws.amazon.com/gamelift/latest/apireference/API\_SupportContainerDefinitionInput.html](../../../../reference/gamelift/latest/apireference/api-supportcontainerdefinitioninput.md)
+**Part of:**[GameServerContainerDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameServerContainerDefinition.html), [https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameServerContainerDefinitionInput.html](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameServerContainerDefinitionInput.html), [SupportContainerDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_SupportContainerDefinition.html), [https://docs.aws.amazon.com/gamelift/latest/apireference/API_SupportContainerDefinitionInput.html](https://docs.aws.amazon.com/gamelift/latest/apireference/API_SupportContainerDefinitionInput.html)
 
 ## Syntax
+<a name="aws-properties-gamelift-containergroupdefinition-containermountpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-containergroupdefinition-containermountpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessLevel" : String,
-  "ContainerPath" : String,
-  "InstancePath" : String
+  "[AccessLevel](#cfn-gamelift-containergroupdefinition-containermountpoint-accesslevel)" : {{String}},
+  "[ContainerPath](#cfn-gamelift-containergroupdefinition-containermountpoint-containerpath)" : {{String}},
+  "[InstancePath](#cfn-gamelift-containergroupdefinition-containermountpoint-instancepath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-containergroupdefinition-containermountpoint-syntax.yaml"></a>
 
-```yaml
-
-  AccessLevel: String
-  ContainerPath: String
-  InstancePath: String
-
+```
+  [AccessLevel](#cfn-gamelift-containergroupdefinition-containermountpoint-accesslevel): {{String}}
+  [ContainerPath](#cfn-gamelift-containergroupdefinition-containermountpoint-containerpath): {{String}}
+  [InstancePath](#cfn-gamelift-containergroupdefinition-containermountpoint-instancepath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-containergroupdefinition-containermountpoint-properties"></a>
 
-`AccessLevel`
-
+`AccessLevel`  <a name="cfn-gamelift-containergroupdefinition-containermountpoint-accesslevel"></a>
 The type of access for the container.
+*Required*: No
+*Type*: String
+*Allowed values*: `READ_ONLY | READ_AND_WRITE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ContainerPath`  <a name="cfn-gamelift-containergroupdefinition-containermountpoint-containerpath"></a>
+The mount path on the container. If this property isn't set, the instance path is used.
+*Required*: No
+*Type*: String
+*Pattern*: `^(\/+[^\/]+\/*)+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `READ_ONLY | READ_AND_WRITE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContainerPath`
-
-The mount path on the container. If this property isn't set, the instance path is
-used.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(\/+[^\/]+\/*)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstancePath`
-
+`InstancePath`  <a name="cfn-gamelift-containergroupdefinition-containermountpoint-instancepath"></a>
 The path to the source file or directory.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\/[\s\S]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerHealthCheck
-
-ContainerPortRange
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\/[\s\S]*$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,190 +2,143 @@
 title: "AWS::MemoryDB::MultiRegionCluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::MultiRegionCluster
+<a name="aws-resource-memorydb-multiregioncluster"></a>
 
 Represents a multi-Region cluster.
 
 ## Syntax
+<a name="aws-resource-memorydb-multiregioncluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-memorydb-multiregioncluster-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MemoryDB::MultiRegionCluster",
   "Properties" : {
-      "Description" : String,
-      "Engine" : String,
-      "EngineVersion" : String,
-      "MultiRegionClusterNameSuffix" : String,
-      "MultiRegionParameterGroupName" : String,
-      "NodeType" : String,
-      "NumShards" : Integer,
-      "Tags" : [ Tag, ... ],
-      "TLSEnabled" : Boolean,
-      "UpdateStrategy" : String
+      "[Description](#cfn-memorydb-multiregioncluster-description)" : {{String}},
+      "[Engine](#cfn-memorydb-multiregioncluster-engine)" : {{String}},
+      "[EngineVersion](#cfn-memorydb-multiregioncluster-engineversion)" : {{String}},
+      "[MultiRegionClusterNameSuffix](#cfn-memorydb-multiregioncluster-multiregionclusternamesuffix)" : {{String}},
+      "[MultiRegionParameterGroupName](#cfn-memorydb-multiregioncluster-multiregionparametergroupname)" : {{String}},
+      "[NodeType](#cfn-memorydb-multiregioncluster-nodetype)" : {{String}},
+      "[NumShards](#cfn-memorydb-multiregioncluster-numshards)" : {{Integer}},
+      "[Tags](#cfn-memorydb-multiregioncluster-tags)" : {{[ Tag, ... ]}},
+      "[TLSEnabled](#cfn-memorydb-multiregioncluster-tlsenabled)" : {{Boolean}},
+      "[UpdateStrategy](#cfn-memorydb-multiregioncluster-updatestrategy)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-memorydb-multiregioncluster-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MemoryDB::MultiRegionCluster
 Properties:
-  Description: String
-  Engine: String
-  EngineVersion: String
-  MultiRegionClusterNameSuffix: String
-  MultiRegionParameterGroupName: String
-  NodeType: String
-  NumShards: Integer
-  Tags:
-    - Tag
-  TLSEnabled: Boolean
-  UpdateStrategy: String
-
+  [Description](#cfn-memorydb-multiregioncluster-description): {{String}}
+  [Engine](#cfn-memorydb-multiregioncluster-engine): {{String}}
+  [EngineVersion](#cfn-memorydb-multiregioncluster-engineversion): {{String}}
+  [MultiRegionClusterNameSuffix](#cfn-memorydb-multiregioncluster-multiregionclusternamesuffix): {{String}}
+  [MultiRegionParameterGroupName](#cfn-memorydb-multiregioncluster-multiregionparametergroupname): {{String}}
+  [NodeType](#cfn-memorydb-multiregioncluster-nodetype): {{String}}
+  [NumShards](#cfn-memorydb-multiregioncluster-numshards): {{Integer}}
+  [Tags](#cfn-memorydb-multiregioncluster-tags): {{
+    - Tag}}
+  [TLSEnabled](#cfn-memorydb-multiregioncluster-tlsenabled): {{Boolean}}
+  [UpdateStrategy](#cfn-memorydb-multiregioncluster-updatestrategy): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-memorydb-multiregioncluster-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-memorydb-multiregioncluster-description"></a>
 The description of the multi-Region cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Engine`
-
+`Engine`  <a name="cfn-memorydb-multiregioncluster-engine"></a>
 The name of the engine used by the multi-Region cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EngineVersion`
-
+`EngineVersion`  <a name="cfn-memorydb-multiregioncluster-engineversion"></a>
 The version of the engine used by the multi-Region cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MultiRegionClusterNameSuffix`
-
+`MultiRegionClusterNameSuffix`  <a name="cfn-memorydb-multiregioncluster-multiregionclusternamesuffix"></a>
 A suffix to be added to the Multi-Region cluster name. Amazon MemoryDB automatically applies a prefix to the Multi-Region cluster Name when it is created. Each Amazon Region has its own prefix. For instance, a Multi-Region cluster Name created in the US-West-1 region will begin with "virxk", along with the suffix name you provide. The suffix guarantees uniqueness of the Multi-Region cluster name across multiple regions.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-z][a-z0-9\-]*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-z][a-z0-9\-]*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MultiRegionParameterGroupName`
-
+`MultiRegionParameterGroupName`  <a name="cfn-memorydb-multiregioncluster-multiregionparametergroupname"></a>
 The name of the multi-Region parameter group associated with the cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NodeType`
-
+`NodeType`  <a name="cfn-memorydb-multiregioncluster-nodetype"></a>
 The node type used by the multi-Region cluster.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumShards`
-
+`NumShards`  <a name="cfn-memorydb-multiregioncluster-numshards"></a>
 The number of shards in the multi-Region cluster.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-memorydb-multiregioncluster-tags"></a>
 A list of tags to be applied to the multi-Region cluster.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-memorydb-multiregioncluster-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-memorydb-multiregioncluster-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TLSEnabled`
-
+`TLSEnabled`  <a name="cfn-memorydb-multiregioncluster-tlsenabled"></a>
 Indiciates if the multi-Region cluster is TLS enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UpdateStrategy`
-
+`UpdateStrategy`  <a name="cfn-memorydb-multiregioncluster-updatestrategy"></a>
 The strategy to use for the update operation. Supported values are "coordinated" or "uncoordinated".
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `COORDINATED | UNCOORDINATED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Allowed values*: `COORDINATED | UNCOORDINATED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-memorydb-multiregioncluster-return-values"></a>
 
 ### Ref
+<a name="aws-resource-memorydb-multiregioncluster-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-memorydb-multiregioncluster-return-values-fn--getatt"></a>
 
-`ARN`
+####
+<a name="aws-resource-memorydb-multiregioncluster-return-values-fn--getatt-fn--getatt"></a>
 
+`ARN`  <a name="ARN-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the multi-Region cluster.
 
-`MultiRegionClusterName`
-
+`MultiRegionClusterName`  <a name="MultiRegionClusterName-fn::getatt"></a>
 The name of the multi-Region cluster.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the multi-Region cluster.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

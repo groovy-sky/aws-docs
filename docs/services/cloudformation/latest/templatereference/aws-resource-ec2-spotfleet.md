@@ -2,125 +2,109 @@
 title: "AWS::EC2::SpotFleet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet
+<a name="aws-resource-ec2-spotfleet"></a>
 
 Specifies a Spot Fleet request.
 
-The Spot Fleet request specifies the total target capacity and the On-Demand target
-capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand
-capacity, and launches the difference as Spot capacity.
+The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity.
 
-You can submit a single request that includes multiple launch specifications that vary
-by instance type, AMI, Availability Zone, or subnet.
+You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet.
 
-By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the
-price per unit is the lowest. Each launch specification can include its own instance
-weighting that reflects the value of the instance type to your application
-workload.
+By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload.
 
-Alternatively, you can specify that the Spot Fleet distribute the target capacity
-across the Spot pools included in its launch specifications. By ensuring that the Spot
-Instances in your Spot Fleet are in different Spot pools, you can improve the
-availability of your fleet.
+Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet.
 
-You can specify tags for the Spot Fleet request and instances launched by the fleet.
-You cannot tag other resource types in a Spot Fleet request because only the
-`spot-fleet-request` and `instance` resource types are
-supported.
+You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the `spot-fleet-request` and `instance` resource types are supported.
 
-For more information, see [Spot Fleet](../../../ec2/latest/userguide/spot-fleet.md)
-in the _Amazon EC2 User Guide_.
+For more information, see [Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet.html) in the *Amazon EC2 User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-spotfleet-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-spotfleet-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::SpotFleet",
   "Properties" : {
-      "SpotFleetRequestConfigData" : SpotFleetRequestConfigData,
-      "Tags" : [ Tag, ... ]
+      "[SpotFleetRequestConfigData](#cfn-ec2-spotfleet-spotfleetrequestconfigdata)" : {{SpotFleetRequestConfigData}},
+      "[Tags](#cfn-ec2-spotfleet-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-spotfleet-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::SpotFleet
 Properties:
-  SpotFleetRequestConfigData:
-    SpotFleetRequestConfigData
-  Tags:
-    - Tag
-
+  [SpotFleetRequestConfigData](#cfn-ec2-spotfleet-spotfleetrequestconfigdata): {{
+    SpotFleetRequestConfigData}}
+  [Tags](#cfn-ec2-spotfleet-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-spotfleet-properties"></a>
 
-`SpotFleetRequestConfigData`
-
+`SpotFleetRequestConfigData`  <a name="cfn-ec2-spotfleet-spotfleetrequestconfigdata"></a>
 Describes the configuration of a Spot Fleet request.
+*Required*: Yes
+*Type*: [SpotFleetRequestConfigData](aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SpotFleetRequestConfigData](aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-spotfleet-tags"></a>
 The tags for a Spot Fleet resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-spotfleet-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-spotfleet-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-spotfleet-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-spotfleet-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the Spot Fleet.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-spotfleet-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-spotfleet-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the Spot Fleet.
 
 ## Examples
+<a name="aws-resource-ec2-spotfleet--examples"></a>
 
-- [Create a Spot Fleet using a launch template](#aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template)
-
-- [Create a Spot Fleet using a launch specification](#aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification)
+**Topics**
++ [Create a Spot Fleet using a launch template](#aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template)
++ [Create a Spot Fleet using a launch specification](#aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification)
 
 ### Create a Spot Fleet using a launch template
+<a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template"></a>
 
-The following example specifies a Spot Fleet with a target capacity of 2 instances
-and a launch template that provides the instance configuration.
+The following example specifies a Spot Fleet with a target capacity of 2 instances and a launch template that provides the instance configuration.
 
 #### JSON
+<a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "mySpotFleet": {
@@ -175,9 +159,9 @@ and a launch template that provides the instance configuration.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template--yaml"></a>
 
-```yaml
-
+```
 Resources:
    mySpotFleet:
      Type: 'AWS::EC2::SpotFleet'
@@ -205,16 +189,14 @@ Resources:
 ```
 
 ### Create a Spot Fleet using a launch specification
+<a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification"></a>
 
-The following example specifies a Spot Fleet with two launch specifications. The
-weighted capacities are the same, so Amazon EC2 launches the same number of instances
-for each specification. For more information, see [How Spot Fleet Works](../../../ec2/latest/userguide/spot-fleet.md) in the
-_Amazon EC2 User Guide_.
+The following example specifies a Spot Fleet with two launch specifications. The weighted capacities are the same, so Amazon EC2 launches the same number of instances for each specification. For more information, see [How Spot Fleet Works](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet.html) in the *Amazon EC2 User Guide*.
 
 #### JSON
+<a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification--json"></a>
 
-```json
-
+```
 "SpotFleet": {
   "Type": "AWS::EC2::SpotFleet",
   "Properties": {
@@ -251,9 +233,9 @@ _Amazon EC2 User Guide_.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification--yaml"></a>
 
-```yaml
-
+```
 SpotFleet:
   Type: AWS::EC2::SpotFleet
   Properties:
@@ -306,15 +288,8 @@ SpotFleet:
 ```
 
 ## See also
-
-- [AWS::ApplicationAutoScaling::ScalableTarget](../userguide/aws-resource-applicationautoscaling-scalabletarget.md)
-
-- [AWS::ApplicationAutoScaling::ScalingPolicy](../userguide/aws-resource-applicationautoscaling-scalingpolicy.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::SnapshotBlockPublicAccess
-
-AcceleratorCountRequest
+<a name="aws-resource-ec2-spotfleet--seealso"></a>
++  [AWS::ApplicationAutoScaling::ScalableTarget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html)
++  [AWS::ApplicationAutoScaling::ScalingPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html)
 
 All content copied from https://docs.aws.amazon.com/.

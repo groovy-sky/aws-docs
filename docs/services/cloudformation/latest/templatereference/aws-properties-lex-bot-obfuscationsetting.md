@@ -2,55 +2,42 @@
 title: "AWS::Lex::Bot ObfuscationSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot ObfuscationSetting
+<a name="aws-properties-lex-bot-obfuscationsetting"></a>
 
 Determines whether Amazon Lex obscures slot values in conversation logs.
 
 ## Syntax
+<a name="aws-properties-lex-bot-obfuscationsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-obfuscationsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ObfuscationSettingType" : String
+  "[ObfuscationSettingType](#cfn-lex-bot-obfuscationsetting-obfuscationsettingtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-obfuscationsetting-syntax.yaml"></a>
 
-```yaml
-
-  ObfuscationSettingType: String
-
+```
+  [ObfuscationSettingType](#cfn-lex-bot-obfuscationsetting-obfuscationsettingtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-obfuscationsetting-properties"></a>
 
-`ObfuscationSettingType`
-
-Value that determines whether Amazon Lex obscures slot values in
-conversation logs. The default is to obscure the values.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `None | DefaultObfuscation`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NluImprovementSpecification
-
-OpensearchConfiguration
+`ObfuscationSettingType`  <a name="cfn-lex-bot-obfuscationsetting-obfuscationsettingtype"></a>
+Value that determines whether Amazon Lex obscures slot values in conversation logs. The default is to obscure the values.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `None | DefaultObfuscation`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

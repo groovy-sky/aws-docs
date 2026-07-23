@@ -2,83 +2,60 @@
 title: "AWS::GreengrassV2::ComponentVersion LambdaDeviceMount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::ComponentVersion LambdaDeviceMount
+<a name="aws-properties-greengrassv2-componentversion-lambdadevicemount"></a>
 
 Contains information about a device that Linux processes in a container can access.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-componentversion-lambdadevicemount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-componentversion-lambdadevicemount-syntax.json"></a>
 
-```json
-
+```
 {
-  "AddGroupOwner" : Boolean,
-  "Path" : String,
-  "Permission" : String
+  "[AddGroupOwner](#cfn-greengrassv2-componentversion-lambdadevicemount-addgroupowner)" : {{Boolean}},
+  "[Path](#cfn-greengrassv2-componentversion-lambdadevicemount-path)" : {{String}},
+  "[Permission](#cfn-greengrassv2-componentversion-lambdadevicemount-permission)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-componentversion-lambdadevicemount-syntax.yaml"></a>
 
-```yaml
-
-  AddGroupOwner: Boolean
-  Path: String
-  Permission: String
-
+```
+  [AddGroupOwner](#cfn-greengrassv2-componentversion-lambdadevicemount-addgroupowner): {{Boolean}}
+  [Path](#cfn-greengrassv2-componentversion-lambdadevicemount-path): {{String}}
+  [Permission](#cfn-greengrassv2-componentversion-lambdadevicemount-permission): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-componentversion-lambdadevicemount-properties"></a>
 
-`AddGroupOwner`
-
+`AddGroupOwner`  <a name="cfn-greengrassv2-componentversion-lambdadevicemount-addgroupowner"></a>
 Whether or not to add the component's system user as an owner of the device.
-
 Default: `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Path`
-
+`Path`  <a name="cfn-greengrassv2-componentversion-lambdadevicemount-path"></a>
 The mount path for the device in the file system.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Permission`
-
-The permission to access the device: read/only ( `ro`) or read/write
-( `rw`).
-
+`Permission`  <a name="cfn-greengrassv2-componentversion-lambdadevicemount-permission"></a>
+The permission to access the device: read/only (`ro`) or read/write (`rw`).
 Default: `ro`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ro | rw`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaContainerParams
-
-LambdaEventSource
+*Required*: No
+*Type*: String
+*Allowed values*: `ro | rw`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

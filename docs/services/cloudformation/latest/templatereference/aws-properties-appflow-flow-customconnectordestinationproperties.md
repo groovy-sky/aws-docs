@@ -2,122 +2,83 @@
 title: "AWS::AppFlow::Flow CustomConnectorDestinationProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow CustomConnectorDestinationProperties
+<a name="aws-properties-appflow-flow-customconnectordestinationproperties"></a>
 
-The properties that are applied when the custom connector is being used as a
-destination.
+The properties that are applied when the custom connector is being used as a destination.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-customconnectordestinationproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-customconnectordestinationproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomProperties" : {Key: Value, ...},
-  "EntityName" : String,
-  "ErrorHandlingConfig" : ErrorHandlingConfig,
-  "IdFieldNames" : [ String, ... ],
-  "WriteOperationType" : String
+  "[CustomProperties](#cfn-appflow-flow-customconnectordestinationproperties-customproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[EntityName](#cfn-appflow-flow-customconnectordestinationproperties-entityname)" : {{String}},
+  "[ErrorHandlingConfig](#cfn-appflow-flow-customconnectordestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
+  "[IdFieldNames](#cfn-appflow-flow-customconnectordestinationproperties-idfieldnames)" : {{[ String, ... ]}},
+  "[WriteOperationType](#cfn-appflow-flow-customconnectordestinationproperties-writeoperationtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-customconnectordestinationproperties-syntax.yaml"></a>
 
-```yaml
-
-  CustomProperties:
-    Key: Value
-  EntityName: String
-  ErrorHandlingConfig:
-    ErrorHandlingConfig
-  IdFieldNames:
-    - String
-  WriteOperationType: String
-
+```
+  [CustomProperties](#cfn-appflow-flow-customconnectordestinationproperties-customproperties): {{
+    {{Key}}: {{Value}}}}
+  [EntityName](#cfn-appflow-flow-customconnectordestinationproperties-entityname): {{String}}
+  [ErrorHandlingConfig](#cfn-appflow-flow-customconnectordestinationproperties-errorhandlingconfig): {{
+    ErrorHandlingConfig}}
+  [IdFieldNames](#cfn-appflow-flow-customconnectordestinationproperties-idfieldnames): {{
+    - String}}
+  [WriteOperationType](#cfn-appflow-flow-customconnectordestinationproperties-writeoperationtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-customconnectordestinationproperties-properties"></a>
 
-`CustomProperties`
+`CustomProperties`  <a name="cfn-appflow-flow-customconnectordestinationproperties-customproperties"></a>
+The custom properties that are specific to the connector when it's used as a destination in the flow.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\w]{1,2048}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The custom properties that are specific to the connector when it's used as a destination
-in the flow.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\w]{1,2048}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntityName`
-
+`EntityName`  <a name="cfn-appflow-flow-customconnectordestinationproperties-entityname"></a>
 The entity specified in the custom connector as a destination in the flow.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ErrorHandlingConfig`  <a name="cfn-appflow-flow-customconnectordestinationproperties-errorhandlingconfig"></a>
+The settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination.
+*Required*: No
+*Type*: [ErrorHandlingConfig](aws-properties-appflow-flow-errorhandlingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`IdFieldNames`  <a name="cfn-appflow-flow-customconnectordestinationproperties-idfieldnames"></a>
+The name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `\S+`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ErrorHandlingConfig`
-
-The settings that determine how Amazon AppFlow handles an error when placing data in
-the custom connector as destination.
-
-_Required_: No
-
-_Type_: [ErrorHandlingConfig](aws-properties-appflow-flow-errorhandlingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdFieldNames`
-
-The name of the field that Amazon AppFlow uses as an ID when performing a write
-operation such as update, delete, or upsert.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WriteOperationType`
-
-Specifies the type of write operation to be performed in the custom connector when it's
-used as destination.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INSERT | UPSERT | UPDATE | DELETE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectorOperator
-
-CustomConnectorSourceProperties
+`WriteOperationType`  <a name="cfn-appflow-flow-customconnectordestinationproperties-writeoperationtype"></a>
+Specifies the type of write operation to be performed in the custom connector when it's used as destination.
+*Required*: No
+*Type*: String
+*Allowed values*: `INSERT | UPSERT | UPDATE | DELETE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

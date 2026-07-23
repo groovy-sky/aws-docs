@@ -2,203 +2,141 @@
 title: "AWS::QuickSight::Template FreeFormLayoutElement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FreeFormLayoutElement
+<a name="aws-properties-quicksight-template-freeformlayoutelement"></a>
 
 An element within a free-form layout.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-freeformlayoutelement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-freeformlayoutelement-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackgroundStyle" : FreeFormLayoutElementBackgroundStyle,
-  "BorderStyle" : FreeFormLayoutElementBorderStyle,
-  "ElementId" : String,
-  "ElementType" : String,
-  "Height" : String,
-  "LoadingAnimation" : LoadingAnimation,
-  "RenderingRules" : [ SheetElementRenderingRule, ... ],
-  "SelectedBorderStyle" : FreeFormLayoutElementBorderStyle,
-  "Visibility" : String,
-  "Width" : String,
-  "XAxisLocation" : String,
-  "YAxisLocation" : String
+  "[BackgroundStyle](#cfn-quicksight-template-freeformlayoutelement-backgroundstyle)" : {{FreeFormLayoutElementBackgroundStyle}},
+  "[BorderStyle](#cfn-quicksight-template-freeformlayoutelement-borderstyle)" : {{FreeFormLayoutElementBorderStyle}},
+  "[ElementId](#cfn-quicksight-template-freeformlayoutelement-elementid)" : {{String}},
+  "[ElementType](#cfn-quicksight-template-freeformlayoutelement-elementtype)" : {{String}},
+  "[Height](#cfn-quicksight-template-freeformlayoutelement-height)" : {{String}},
+  "[LoadingAnimation](#cfn-quicksight-template-freeformlayoutelement-loadinganimation)" : {{LoadingAnimation}},
+  "[RenderingRules](#cfn-quicksight-template-freeformlayoutelement-renderingrules)" : {{[ SheetElementRenderingRule, ... ]}},
+  "[SelectedBorderStyle](#cfn-quicksight-template-freeformlayoutelement-selectedborderstyle)" : {{FreeFormLayoutElementBorderStyle}},
+  "[Visibility](#cfn-quicksight-template-freeformlayoutelement-visibility)" : {{String}},
+  "[Width](#cfn-quicksight-template-freeformlayoutelement-width)" : {{String}},
+  "[XAxisLocation](#cfn-quicksight-template-freeformlayoutelement-xaxislocation)" : {{String}},
+  "[YAxisLocation](#cfn-quicksight-template-freeformlayoutelement-yaxislocation)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-freeformlayoutelement-syntax.yaml"></a>
 
-```yaml
-
-  BackgroundStyle:
-    FreeFormLayoutElementBackgroundStyle
-  BorderStyle:
-    FreeFormLayoutElementBorderStyle
-  ElementId: String
-  ElementType: String
-  Height: String
-  LoadingAnimation:
-    LoadingAnimation
-  RenderingRules:
-    - SheetElementRenderingRule
-  SelectedBorderStyle:
-    FreeFormLayoutElementBorderStyle
-  Visibility: String
-  Width: String
-  XAxisLocation: String
-  YAxisLocation: String
-
+```
+  [BackgroundStyle](#cfn-quicksight-template-freeformlayoutelement-backgroundstyle): {{
+    FreeFormLayoutElementBackgroundStyle}}
+  [BorderStyle](#cfn-quicksight-template-freeformlayoutelement-borderstyle): {{
+    FreeFormLayoutElementBorderStyle}}
+  [ElementId](#cfn-quicksight-template-freeformlayoutelement-elementid): {{String}}
+  [ElementType](#cfn-quicksight-template-freeformlayoutelement-elementtype): {{String}}
+  [Height](#cfn-quicksight-template-freeformlayoutelement-height): {{String}}
+  [LoadingAnimation](#cfn-quicksight-template-freeformlayoutelement-loadinganimation): {{
+    LoadingAnimation}}
+  [RenderingRules](#cfn-quicksight-template-freeformlayoutelement-renderingrules): {{
+    - SheetElementRenderingRule}}
+  [SelectedBorderStyle](#cfn-quicksight-template-freeformlayoutelement-selectedborderstyle): {{
+    FreeFormLayoutElementBorderStyle}}
+  [Visibility](#cfn-quicksight-template-freeformlayoutelement-visibility): {{String}}
+  [Width](#cfn-quicksight-template-freeformlayoutelement-width): {{String}}
+  [XAxisLocation](#cfn-quicksight-template-freeformlayoutelement-xaxislocation): {{String}}
+  [YAxisLocation](#cfn-quicksight-template-freeformlayoutelement-yaxislocation): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-freeformlayoutelement-properties"></a>
 
-`BackgroundStyle`
-
+`BackgroundStyle`  <a name="cfn-quicksight-template-freeformlayoutelement-backgroundstyle"></a>
 The background style configuration of a free-form layout element.
+*Required*: No
+*Type*: [FreeFormLayoutElementBackgroundStyle](aws-properties-quicksight-template-freeformlayoutelementbackgroundstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FreeFormLayoutElementBackgroundStyle](aws-properties-quicksight-template-freeformlayoutelementbackgroundstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BorderStyle`
-
+`BorderStyle`  <a name="cfn-quicksight-template-freeformlayoutelement-borderstyle"></a>
 The border style configuration of a free-form layout element.
+*Required*: No
+*Type*: [FreeFormLayoutElementBorderStyle](aws-properties-quicksight-template-freeformlayoutelementborderstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FreeFormLayoutElementBorderStyle](aws-properties-quicksight-template-freeformlayoutelementborderstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElementId`
-
+`ElementId`  <a name="cfn-quicksight-template-freeformlayoutelement-elementid"></a>
 A unique identifier for an element within a free-form layout.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElementType`
-
+`ElementType`  <a name="cfn-quicksight-template-freeformlayoutelement-elementtype"></a>
 The type of element.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VISUAL | FILTER_CONTROL | PARAMETER_CONTROL | TEXT_BOX | IMAGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VISUAL | FILTER_CONTROL | PARAMETER_CONTROL | TEXT_BOX | IMAGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Height`
-
+`Height`  <a name="cfn-quicksight-template-freeformlayoutelement-height"></a>
 The height of an element within a free-form layout.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoadingAnimation`
-
+`LoadingAnimation`  <a name="cfn-quicksight-template-freeformlayoutelement-loadinganimation"></a>
 The loading animation configuration of a free-form layout element.
+*Required*: No
+*Type*: [LoadingAnimation](aws-properties-quicksight-template-loadinganimation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LoadingAnimation](aws-properties-quicksight-template-loadinganimation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RenderingRules`
-
+`RenderingRules`  <a name="cfn-quicksight-template-freeformlayoutelement-renderingrules"></a>
 The rendering rules that determine when an element should be displayed within a free-form layout.
+*Required*: No
+*Type*: Array of [SheetElementRenderingRule](aws-properties-quicksight-template-sheetelementrenderingrule.md)
+*Minimum*: `0`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SheetElementRenderingRule](aws-properties-quicksight-template-sheetelementrenderingrule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedBorderStyle`
-
+`SelectedBorderStyle`  <a name="cfn-quicksight-template-freeformlayoutelement-selectedborderstyle"></a>
 The border style configuration of a free-form layout element. This border style is used when the element is selected.
+*Required*: No
+*Type*: [FreeFormLayoutElementBorderStyle](aws-properties-quicksight-template-freeformlayoutelementborderstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FreeFormLayoutElementBorderStyle](aws-properties-quicksight-template-freeformlayoutelementborderstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-template-freeformlayoutelement-visibility"></a>
 The visibility of an element within a free-form layout.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Width`
-
+`Width`  <a name="cfn-quicksight-template-freeformlayoutelement-width"></a>
 The width of an element within a free-form layout.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxisLocation`
-
+`XAxisLocation`  <a name="cfn-quicksight-template-freeformlayoutelement-xaxislocation"></a>
 The x-axis coordinate of the element.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`YAxisLocation`
-
+`YAxisLocation`  <a name="cfn-quicksight-template-freeformlayoutelement-yaxislocation"></a>
 The y-axis coordinate of the element.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FreeFormLayoutConfiguration
-
-FreeFormLayoutElementBackgroundStyle
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

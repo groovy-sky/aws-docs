@@ -2,94 +2,69 @@
 title: "AWS::RTBFabric::Link ModuleConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link ModuleConfiguration
+<a name="aws-properties-rtbfabric-link-moduleconfiguration"></a>
 
 Describes the configuration of a module.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-link-moduleconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-link-moduleconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DependsOn" : [ String, ... ],
-  "ModuleParameters" : ModuleParameters,
-  "Name" : String,
-  "Version" : String
+  "[DependsOn](#cfn-rtbfabric-link-moduleconfiguration-dependson)" : {{[ String, ... ]}},
+  "[ModuleParameters](#cfn-rtbfabric-link-moduleconfiguration-moduleparameters)" : {{ModuleParameters}},
+  "[Name](#cfn-rtbfabric-link-moduleconfiguration-name)" : {{String}},
+  "[Version](#cfn-rtbfabric-link-moduleconfiguration-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-link-moduleconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DependsOn:
-    - String
-  ModuleParameters:
-    ModuleParameters
-  Name: String
-  Version: String
-
+```
+  [DependsOn](#cfn-rtbfabric-link-moduleconfiguration-dependson): {{
+    - String}}
+  [ModuleParameters](#cfn-rtbfabric-link-moduleconfiguration-moduleparameters): {{
+    ModuleParameters}}
+  [Name](#cfn-rtbfabric-link-moduleconfiguration-name): {{String}}
+  [Version](#cfn-rtbfabric-link-moduleconfiguration-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-link-moduleconfiguration-properties"></a>
 
-`DependsOn`
-
+`DependsOn`  <a name="cfn-rtbfabric-link-moduleconfiguration-dependson"></a>
 The dependencies of the module.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModuleParameters`
-
+`ModuleParameters`  <a name="cfn-rtbfabric-link-moduleconfiguration-moduleparameters"></a>
 Describes the parameters of a module.
+*Required*: No
+*Type*: [ModuleParameters](aws-properties-rtbfabric-link-moduleparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ModuleParameters](aws-properties-rtbfabric-link-moduleparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-rtbfabric-link-moduleconfiguration-name"></a>
 The name of the module.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9 -]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9 -]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-rtbfabric-link-moduleconfiguration-version"></a>
 The version of the module.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9]{1,25}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LinkLogSettings
-
-ModuleParameters
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9]{1,25}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

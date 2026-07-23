@@ -2,95 +2,71 @@
 title: "AWS::SSM::MaintenanceWindowTask TaskInvocationParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::MaintenanceWindowTask TaskInvocationParameters
+<a name="aws-properties-ssm-maintenancewindowtask-taskinvocationparameters"></a>
 
-The `TaskInvocationParameters` property type specifies the task execution
-parameters for a maintenance window task in AWS Systems Manager.
+The `TaskInvocationParameters` property type specifies the task execution parameters for a maintenance window task in AWS Systems Manager.
 
-`TaskInvocationParameters` is a property of the [AWS::SSM::MaintenanceWindowTask](../userguide/aws-resource-ssm-maintenancewindowtask.md) property type.
+`TaskInvocationParameters` is a property of the [AWS::SSM::MaintenanceWindowTask](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html) property type.
 
 ## Syntax
+<a name="aws-properties-ssm-maintenancewindowtask-taskinvocationparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-maintenancewindowtask-taskinvocationparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaintenanceWindowAutomationParameters" : MaintenanceWindowAutomationParameters,
-  "MaintenanceWindowLambdaParameters" : MaintenanceWindowLambdaParameters,
-  "MaintenanceWindowRunCommandParameters" : MaintenanceWindowRunCommandParameters,
-  "MaintenanceWindowStepFunctionsParameters" : MaintenanceWindowStepFunctionsParameters
+  "[MaintenanceWindowAutomationParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowautomationparameters)" : {{MaintenanceWindowAutomationParameters}},
+  "[MaintenanceWindowLambdaParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowlambdaparameters)" : {{MaintenanceWindowLambdaParameters}},
+  "[MaintenanceWindowRunCommandParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowruncommandparameters)" : {{MaintenanceWindowRunCommandParameters}},
+  "[MaintenanceWindowStepFunctionsParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowstepfunctionsparameters)" : {{MaintenanceWindowStepFunctionsParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-maintenancewindowtask-taskinvocationparameters-syntax.yaml"></a>
 
-```yaml
-
-  MaintenanceWindowAutomationParameters:
-    MaintenanceWindowAutomationParameters
-  MaintenanceWindowLambdaParameters:
-    MaintenanceWindowLambdaParameters
-  MaintenanceWindowRunCommandParameters:
-    MaintenanceWindowRunCommandParameters
-  MaintenanceWindowStepFunctionsParameters:
-    MaintenanceWindowStepFunctionsParameters
-
+```
+  [MaintenanceWindowAutomationParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowautomationparameters): {{
+    MaintenanceWindowAutomationParameters}}
+  [MaintenanceWindowLambdaParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowlambdaparameters): {{
+    MaintenanceWindowLambdaParameters}}
+  [MaintenanceWindowRunCommandParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowruncommandparameters): {{
+    MaintenanceWindowRunCommandParameters}}
+  [MaintenanceWindowStepFunctionsParameters](#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowstepfunctionsparameters): {{
+    MaintenanceWindowStepFunctionsParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-maintenancewindowtask-taskinvocationparameters-properties"></a>
 
-`MaintenanceWindowAutomationParameters`
-
+`MaintenanceWindowAutomationParameters`  <a name="cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowautomationparameters"></a>
 The parameters for an `AUTOMATION` task type.
+*Required*: No
+*Type*: [MaintenanceWindowAutomationParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MaintenanceWindowAutomationParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaintenanceWindowLambdaParameters`
-
+`MaintenanceWindowLambdaParameters`  <a name="cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowlambdaparameters"></a>
 The parameters for a `LAMBDA` task type.
+*Required*: No
+*Type*: [MaintenanceWindowLambdaParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MaintenanceWindowLambdaParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaintenanceWindowRunCommandParameters`
-
+`MaintenanceWindowRunCommandParameters`  <a name="cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowruncommandparameters"></a>
 The parameters for a `RUN_COMMAND` task type.
+*Required*: No
+*Type*: [MaintenanceWindowRunCommandParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MaintenanceWindowRunCommandParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaintenanceWindowStepFunctionsParameters`
-
+`MaintenanceWindowStepFunctionsParameters`  <a name="cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowstepfunctionsparameters"></a>
 The parameters for a `STEP_FUNCTIONS` task type.
-
-_Required_: No
-
-_Type_: [MaintenanceWindowStepFunctionsParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Target
-
-AWS::SSM::Parameter
+*Required*: No
+*Type*: [MaintenanceWindowStepFunctionsParameters](aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

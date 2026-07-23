@@ -2,106 +2,84 @@
 title: "AWS::EC2::TransitGatewayRoute"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayRoute
+<a name="aws-resource-ec2-transitgatewayroute"></a>
 
 Specifies a static route for a transit gateway route table.
 
 ## Syntax
+<a name="aws-resource-ec2-transitgatewayroute-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-transitgatewayroute-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TransitGatewayRoute",
   "Properties" : {
-      "Blackhole" : Boolean,
-      "DestinationCidrBlock" : String,
-      "TransitGatewayAttachmentId" : String,
-      "TransitGatewayRouteTableId" : String
+      "[Blackhole](#cfn-ec2-transitgatewayroute-blackhole)" : {{Boolean}},
+      "[DestinationCidrBlock](#cfn-ec2-transitgatewayroute-destinationcidrblock)" : {{String}},
+      "[TransitGatewayAttachmentId](#cfn-ec2-transitgatewayroute-transitgatewayattachmentid)" : {{String}},
+      "[TransitGatewayRouteTableId](#cfn-ec2-transitgatewayroute-transitgatewayroutetableid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-transitgatewayroute-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TransitGatewayRoute
 Properties:
-  Blackhole: Boolean
-  DestinationCidrBlock: String
-  TransitGatewayAttachmentId: String
-  TransitGatewayRouteTableId: String
-
+  [Blackhole](#cfn-ec2-transitgatewayroute-blackhole): {{Boolean}}
+  [DestinationCidrBlock](#cfn-ec2-transitgatewayroute-destinationcidrblock): {{String}}
+  [TransitGatewayAttachmentId](#cfn-ec2-transitgatewayroute-transitgatewayattachmentid): {{String}}
+  [TransitGatewayRouteTableId](#cfn-ec2-transitgatewayroute-transitgatewayroutetableid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-transitgatewayroute-properties"></a>
 
-`Blackhole`
-
+`Blackhole`  <a name="cfn-ec2-transitgatewayroute-blackhole"></a>
 Indicates whether to drop traffic that matches this route.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationCidrBlock`
-
+`DestinationCidrBlock`  <a name="cfn-ec2-transitgatewayroute-destinationcidrblock"></a>
 The CIDR block used for destination matches.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayAttachmentId`
-
+`TransitGatewayAttachmentId`  <a name="cfn-ec2-transitgatewayroute-transitgatewayattachmentid"></a>
 The ID of the attachment.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayRouteTableId`
-
+`TransitGatewayRouteTableId`  <a name="cfn-ec2-transitgatewayroute-transitgatewayroutetableid"></a>
 The ID of the transit gateway route table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-transitgatewayroute-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-transitgatewayroute-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the transit gateway route.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## See also
-
-- [CreateTransitGatewayRoute](../../../../reference/awsec2/latest/apireference/api-createtransitgatewayroute.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::TransitGatewayRouteTable
+<a name="aws-resource-ec2-transitgatewayroute--seealso"></a>
++ [CreateTransitGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayRoute.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

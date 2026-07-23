@@ -2,93 +2,69 @@
 title: "AWS::EMRContainers::Endpoint MonitoringConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::Endpoint MonitoringConfiguration
+<a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration"></a>
 
 Configuration setting for monitoring.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchMonitoringConfiguration" : CloudWatchMonitoringConfiguration,
-  "ContainerLogRotationConfiguration" : ContainerLogRotationConfiguration,
-  "PersistentAppUI" : String,
-  "S3MonitoringConfiguration" : S3MonitoringConfiguration
+  "[CloudWatchMonitoringConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-cloudwatchmonitoringconfiguration)" : {{CloudWatchMonitoringConfiguration}},
+  "[ContainerLogRotationConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-containerlogrotationconfiguration)" : {{ContainerLogRotationConfiguration}},
+  "[PersistentAppUI](#cfn-emrcontainers-endpoint-monitoringconfiguration-persistentappui)" : {{String}},
+  "[S3MonitoringConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-s3monitoringconfiguration)" : {{S3MonitoringConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchMonitoringConfiguration:
-    CloudWatchMonitoringConfiguration
-  ContainerLogRotationConfiguration:
-    ContainerLogRotationConfiguration
-  PersistentAppUI: String
-  S3MonitoringConfiguration:
-    S3MonitoringConfiguration
-
+```
+  [CloudWatchMonitoringConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-cloudwatchmonitoringconfiguration): {{
+    CloudWatchMonitoringConfiguration}}
+  [ContainerLogRotationConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-containerlogrotationconfiguration): {{
+    ContainerLogRotationConfiguration}}
+  [PersistentAppUI](#cfn-emrcontainers-endpoint-monitoringconfiguration-persistentappui): {{String}}
+  [S3MonitoringConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-s3monitoringconfiguration): {{
+    S3MonitoringConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration-properties"></a>
 
-`CloudWatchMonitoringConfiguration`
-
+`CloudWatchMonitoringConfiguration`  <a name="cfn-emrcontainers-endpoint-monitoringconfiguration-cloudwatchmonitoringconfiguration"></a>
 Monitoring configurations for CloudWatch.
+*Required*: No
+*Type*: [CloudWatchMonitoringConfiguration](aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [CloudWatchMonitoringConfiguration](aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContainerLogRotationConfiguration`
-
+`ContainerLogRotationConfiguration`  <a name="cfn-emrcontainers-endpoint-monitoringconfiguration-containerlogrotationconfiguration"></a>
 Enable or disable container log rotation.
+*Required*: No
+*Type*: [ContainerLogRotationConfiguration](aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ContainerLogRotationConfiguration](aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PersistentAppUI`
-
+`PersistentAppUI`  <a name="cfn-emrcontainers-endpoint-monitoringconfiguration-persistentappui"></a>
 Monitoring configurations for the persistent application UI.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3MonitoringConfiguration`
-
+`S3MonitoringConfiguration`  <a name="cfn-emrcontainers-endpoint-monitoringconfiguration-s3monitoringconfiguration"></a>
 Amazon S3 configuration for monitoring log publishing.
-
-_Required_: No
-
-_Type_: [S3MonitoringConfiguration](aws-properties-emrcontainers-endpoint-s3monitoringconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EMREKSConfiguration
-
-S3MonitoringConfiguration
+*Required*: No
+*Type*: [S3MonitoringConfiguration](aws-properties-emrcontainers-endpoint-s3monitoringconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

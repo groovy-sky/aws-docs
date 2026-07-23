@@ -2,289 +2,205 @@
 title: "AWS::Lex::Bot"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot
+<a name="aws-resource-lex-bot"></a>
 
-###### Note
-
+**Note**
 Amazon Lex V2 is the only supported version in CloudFormation.
 
 Specifies an Amazon Lex conversational bot.
 
-You must configure an intent based on the `AMAZON.FallbackIntent`
-built-in intent. If you don't add one, creating the bot will
-fail.
+You must configure an intent based on the `AMAZON.FallbackIntent` built-in intent. If you don't add one, creating the bot will fail.
 
 ## Syntax
+<a name="aws-resource-lex-bot-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lex-bot-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Lex::Bot",
   "Properties" : {
-      "AutoBuildBotLocales" : Boolean,
-      "BotFileS3Location" : S3Location,
-      "BotLocales" : [ BotLocale, ... ],
-      "BotTags" : [ Tag, ... ],
-      "DataPrivacy" : DataPrivacy,
-      "Description" : String,
-      "ErrorLogSettings" : ErrorLogSettings,
-      "IdleSessionTTLInSeconds" : Integer,
-      "Name" : String,
-      "Replication" : Replication,
-      "RoleArn" : String,
-      "TestBotAliasSettings" : TestBotAliasSettings,
-      "TestBotAliasTags" : [ Tag, ... ]
+      "[AutoBuildBotLocales](#cfn-lex-bot-autobuildbotlocales)" : {{Boolean}},
+      "[BotFileS3Location](#cfn-lex-bot-botfiles3location)" : {{S3Location}},
+      "[BotLocales](#cfn-lex-bot-botlocales)" : {{[ BotLocale, ... ]}},
+      "[BotTags](#cfn-lex-bot-bottags)" : {{[ Tag, ... ]}},
+      "[DataPrivacy](#cfn-lex-bot-dataprivacy)" : {{DataPrivacy}},
+      "[Description](#cfn-lex-bot-description)" : {{String}},
+      "[ErrorLogSettings](#cfn-lex-bot-errorlogsettings)" : {{ErrorLogSettings}},
+      "[IdleSessionTTLInSeconds](#cfn-lex-bot-idlesessionttlinseconds)" : {{Integer}},
+      "[Name](#cfn-lex-bot-name)" : {{String}},
+      "[Replication](#cfn-lex-bot-replication)" : {{Replication}},
+      "[RoleArn](#cfn-lex-bot-rolearn)" : {{String}},
+      "[TestBotAliasSettings](#cfn-lex-bot-testbotaliassettings)" : {{TestBotAliasSettings}},
+      "[TestBotAliasTags](#cfn-lex-bot-testbotaliastags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lex-bot-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Lex::Bot
 Properties:
-  AutoBuildBotLocales: Boolean
-  BotFileS3Location:
-    S3Location
-  BotLocales:
-    - BotLocale
-  BotTags:
-    - Tag
-  DataPrivacy:
-    DataPrivacy
-  Description: String
-  ErrorLogSettings:
-    ErrorLogSettings
-  IdleSessionTTLInSeconds: Integer
-  Name: String
-  Replication:
-    Replication
-  RoleArn: String
-  TestBotAliasSettings:
-    TestBotAliasSettings
-  TestBotAliasTags:
-    - Tag
-
+  [AutoBuildBotLocales](#cfn-lex-bot-autobuildbotlocales): {{Boolean}}
+  [BotFileS3Location](#cfn-lex-bot-botfiles3location): {{
+    S3Location}}
+  [BotLocales](#cfn-lex-bot-botlocales): {{
+    - BotLocale}}
+  [BotTags](#cfn-lex-bot-bottags): {{
+    - Tag}}
+  [DataPrivacy](#cfn-lex-bot-dataprivacy): {{
+    DataPrivacy}}
+  [Description](#cfn-lex-bot-description): {{String}}
+  [ErrorLogSettings](#cfn-lex-bot-errorlogsettings): {{
+    ErrorLogSettings}}
+  [IdleSessionTTLInSeconds](#cfn-lex-bot-idlesessionttlinseconds): {{Integer}}
+  [Name](#cfn-lex-bot-name): {{String}}
+  [Replication](#cfn-lex-bot-replication): {{
+    Replication}}
+  [RoleArn](#cfn-lex-bot-rolearn): {{String}}
+  [TestBotAliasSettings](#cfn-lex-bot-testbotaliassettings): {{
+    TestBotAliasSettings}}
+  [TestBotAliasTags](#cfn-lex-bot-testbotaliastags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-lex-bot-properties"></a>
 
-`AutoBuildBotLocales`
+`AutoBuildBotLocales`  <a name="cfn-lex-bot-autobuildbotlocales"></a>
+Indicates whether Amazon Lex V2 should automatically build the locales for the bot after a change.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Indicates whether Amazon Lex V2 should automatically build
-the locales for the bot after a change.
+`BotFileS3Location`  <a name="cfn-lex-bot-botfiles3location"></a>
+The Amazon S3 location of files used to import a bot. The files must be in the import format specified in [JSON format for importing and exporting](https://docs.aws.amazon.com/lexv2/latest/dg/import-export-format.html) in the *Amazon Lex developer guide.*
+*Required*: No
+*Type*: [S3Location](aws-properties-lex-bot-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BotFileS3Location`
-
-The Amazon S3 location of files used to import a bot. The
-files must be in the import format specified in
-[JSON format for importing and exporting](../../../lexv2/latest/dg/import-export-format.md)
-in the _Amazon Lex developer guide._
-
-_Required_: No
-
-_Type_: [S3Location](aws-properties-lex-bot-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BotLocales`
-
+`BotLocales`  <a name="cfn-lex-bot-botlocales"></a>
 A list of locales for the bot.
+*Required*: No
+*Type*: Array of [BotLocale](aws-properties-lex-bot-botlocale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`BotTags`  <a name="cfn-lex-bot-bottags"></a>
+A list of tags to add to the bot. You can only add tags when you import a bot. You can't use the `UpdateBot` operation to update tags. To update tags, use the `TagResource` operation.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-lex-bot-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [BotLocale](aws-properties-lex-bot-botlocale.md)
+`DataPrivacy`  <a name="cfn-lex-bot-dataprivacy"></a>
+By default, data stored by Amazon Lex is encrypted. The `DataPrivacy` structure provides settings that determine how Amazon Lex handles special cases of securing the data for your bot.
+*Required*: Yes
+*Type*: [DataPrivacy](aws-properties-lex-bot-dataprivacy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BotTags`
-
-A list of tags to add to the bot. You can only add tags when you
-import a bot. You can't use the `UpdateBot` operation to
-update tags. To update tags, use the `TagResource`
-operation.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-lex-bot-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataPrivacy`
-
-By default, data stored by Amazon Lex is encrypted. The
-`DataPrivacy` structure provides settings that determine
-how Amazon Lex handles special cases of securing the data for your bot.
-
-_Required_: Yes
-
-_Type_: [DataPrivacy](aws-properties-lex-bot-dataprivacy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-lex-bot-description"></a>
 The description of the version.
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ErrorLogSettings`
-
+`ErrorLogSettings`  <a name="cfn-lex-bot-errorlogsettings"></a>
 Property description not available.
+*Required*: No
+*Type*: [ErrorLogSettings](aws-properties-lex-bot-errorlogsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IdleSessionTTLInSeconds`  <a name="cfn-lex-bot-idlesessionttlinseconds"></a>
+The time, in seconds, that Amazon Lex should keep information about a user's conversation with the bot.
+A user interaction remains active for the amount of time specified. If no conversation occurs during this time, the session expires and Amazon Lex deletes any data provided before the timeout.
+You can specify between 60 (1 minute) and 86,400 (24 hours) seconds.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `60`
+*Maximum*: `86400`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ErrorLogSettings](aws-properties-lex-bot-errorlogsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdleSessionTTLInSeconds`
-
-The time, in seconds, that Amazon Lex should keep information about a
-user's conversation with the bot.
-
-A user interaction remains active for the amount of time specified.
-If no conversation occurs during this time, the session expires and
-Amazon Lex deletes any data provided before the timeout.
-
-You can specify between 60 (1 minute) and 86,400 (24 hours)
-seconds.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `60`
-
-_Maximum_: `86400`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-lex-bot-name"></a>
 The name of the bot locale.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Replication`
-
+`Replication`  <a name="cfn-lex-bot-replication"></a>
 Property description not available.
+*Required*: No
+*Type*: [Replication](aws-properties-lex-bot-replication.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RoleArn`  <a name="cfn-lex-bot-rolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role used to build and run the bot.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-zA-Z-]*:iam::[0-9]{12}:role/.*$`
+*Minimum*: `32`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [Replication](aws-properties-lex-bot-replication.md)
+`TestBotAliasSettings`  <a name="cfn-lex-bot-testbotaliassettings"></a>
+Specifies configuration settings for the alias used to test the bot. If the `TestBotAliasSettings` property is not specified, the settings are configured with default values.
+*Required*: No
+*Type*: [TestBotAliasSettings](aws-properties-lex-bot-testbotaliassettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role used to build and run
-the bot.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-zA-Z-]*:iam::[0-9]{12}:role/.*$`
-
-_Minimum_: `32`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TestBotAliasSettings`
-
-Specifies configuration settings for the alias used to test the bot.
-If the `TestBotAliasSettings` property is not specified, the
-settings are configured with default values.
-
-_Required_: No
-
-_Type_: [TestBotAliasSettings](aws-properties-lex-bot-testbotaliassettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TestBotAliasTags`
-
-A list of tags to add to the test alias for a bot. You can only add
-tags when you import a bot. You can't use the `UpdateAlias`
-operation to update tags. To update tags on the test alias, use the
-`TagResource` operation.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-lex-bot-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TestBotAliasTags`  <a name="cfn-lex-bot-testbotaliastags"></a>
+A list of tags to add to the test alias for a bot. You can only add tags when you import a bot. You can't use the `UpdateAlias` operation to update tags. To update tags on the test alias, use the `TagResource` operation.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-lex-bot-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-lex-bot-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-lex-bot-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-lex-bot-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the bot.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The unique identifier of the bot.
 
 ## Examples
+<a name="aws-resource-lex-bot--examples"></a>
 
-- [Order flowers example bot](#aws-resource-lex-bot--examples--Order_flowers_example_bot)
-
-- [Book trip example bot](#aws-resource-lex-bot--examples--Book_trip_example_bot)
+**Topics**
++ [Order flowers example bot](#aws-resource-lex-bot--examples--Order_flowers_example_bot)
++ [Book trip example bot](#aws-resource-lex-bot--examples--Book_trip_example_bot)
 
 ### Order flowers example bot
+<a name="aws-resource-lex-bot--examples--Order_flowers_example_bot"></a>
 
-The example creates a bot to order flowers. It is the same as
-the example bot that you can create using the console.
+The example creates a bot to order flowers. It is the same as the example bot that you can create using the console.
 
 #### YAML
+<a name="aws-resource-lex-bot--examples--Order_flowers_example_bot--yaml"></a>
 
-```yaml
-
+```
 # The OrderFlower bot consists of the following:
 # 1. IAM role that is used by the bot at runtime
 # 2. Inline Bot
@@ -445,15 +361,14 @@ Resources:
 ```
 
 ### Book trip example bot
+<a name="aws-resource-lex-bot--examples--Book_trip_example_bot"></a>
 
-The example creates a bot to book hotel rooms and rental cars.
-It is the same as the example bot that you can create using the
-console.
+The example creates a bot to book hotel rooms and rental cars. It is the same as the example bot that you can create using the console.
 
 #### YAML
+<a name="aws-resource-lex-bot--examples--Book_trip_example_bot--yaml"></a>
 
-```yaml
-
+```
 # The BookTrip bot consists of the following:
 # 1. IAM role that is used by the bot at runtime
 # 2. Inline Bot
@@ -747,11 +662,5 @@ Resources:
       SentimentAnalysisSettings:
         DetectSentiment: true
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Lex
-
-AdvancedRecognitionSetting
 
 All content copied from https://docs.aws.amazon.com/.

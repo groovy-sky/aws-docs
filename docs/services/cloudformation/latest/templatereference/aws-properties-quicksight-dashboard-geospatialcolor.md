@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Dashboard GeospatialColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialColor
+<a name="aws-properties-quicksight-dashboard-geospatialcolor"></a>
 
 The visualization properties for solid, gradient, and categorical colors.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatialcolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatialcolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "Categorical" : GeospatialCategoricalColor,
-  "Gradient" : GeospatialGradientColor,
-  "Solid" : GeospatialSolidColor
+  "[Categorical](#cfn-quicksight-dashboard-geospatialcolor-categorical)" : {{GeospatialCategoricalColor}},
+  "[Gradient](#cfn-quicksight-dashboard-geospatialcolor-gradient)" : {{GeospatialGradientColor}},
+  "[Solid](#cfn-quicksight-dashboard-geospatialcolor-solid)" : {{GeospatialSolidColor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatialcolor-syntax.yaml"></a>
 
-```yaml
-
-  Categorical:
-    GeospatialCategoricalColor
-  Gradient:
-    GeospatialGradientColor
-  Solid:
-    GeospatialSolidColor
-
+```
+  [Categorical](#cfn-quicksight-dashboard-geospatialcolor-categorical): {{
+    GeospatialCategoricalColor}}
+  [Gradient](#cfn-quicksight-dashboard-geospatialcolor-gradient): {{
+    GeospatialGradientColor}}
+  [Solid](#cfn-quicksight-dashboard-geospatialcolor-solid): {{
+    GeospatialSolidColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatialcolor-properties"></a>
 
-`Categorical`
-
+`Categorical`  <a name="cfn-quicksight-dashboard-geospatialcolor-categorical"></a>
 The visualization properties for the categorical color.
+*Required*: No
+*Type*: [GeospatialCategoricalColor](aws-properties-quicksight-dashboard-geospatialcategoricalcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialCategoricalColor](aws-properties-quicksight-dashboard-geospatialcategoricalcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Gradient`
-
+`Gradient`  <a name="cfn-quicksight-dashboard-geospatialcolor-gradient"></a>
 The visualization properties for the gradient color.
+*Required*: No
+*Type*: [GeospatialGradientColor](aws-properties-quicksight-dashboard-geospatialgradientcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialGradientColor](aws-properties-quicksight-dashboard-geospatialgradientcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Solid`
-
+`Solid`  <a name="cfn-quicksight-dashboard-geospatialcolor-solid"></a>
 The visualization properties for the solid color.
-
-_Required_: No
-
-_Type_: [GeospatialSolidColor](aws-properties-quicksight-dashboard-geospatialsolidcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialCircleSymbolStyle
-
-GeospatialCoordinateBounds
+*Required*: No
+*Type*: [GeospatialSolidColor](aws-properties-quicksight-dashboard-geospatialsolidcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

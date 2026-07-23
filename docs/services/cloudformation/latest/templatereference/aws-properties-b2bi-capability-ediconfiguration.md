@@ -2,113 +2,80 @@
 title: "AWS::B2BI::Capability EdiConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Capability EdiConfiguration
+<a name="aws-properties-b2bi-capability-ediconfiguration"></a>
 
 Specifies the details for the EDI (electronic data interchange) transformation.
 
 ## Syntax
+<a name="aws-properties-b2bi-capability-ediconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-capability-ediconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CapabilityDirection" : String,
-  "InputLocation" : S3Location,
-  "OutputLocation" : S3Location,
-  "TransformerId" : String,
-  "Type" : EdiType
+  "[CapabilityDirection](#cfn-b2bi-capability-ediconfiguration-capabilitydirection)" : {{String}},
+  "[InputLocation](#cfn-b2bi-capability-ediconfiguration-inputlocation)" : {{S3Location}},
+  "[OutputLocation](#cfn-b2bi-capability-ediconfiguration-outputlocation)" : {{S3Location}},
+  "[TransformerId](#cfn-b2bi-capability-ediconfiguration-transformerid)" : {{String}},
+  "[Type](#cfn-b2bi-capability-ediconfiguration-type)" : {{EdiType}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-capability-ediconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CapabilityDirection: String
-  InputLocation:
-    S3Location
-  OutputLocation:
-    S3Location
-  TransformerId: String
-  Type:
-    EdiType
-
+```
+  [CapabilityDirection](#cfn-b2bi-capability-ediconfiguration-capabilitydirection): {{String}}
+  [InputLocation](#cfn-b2bi-capability-ediconfiguration-inputlocation): {{
+    S3Location}}
+  [OutputLocation](#cfn-b2bi-capability-ediconfiguration-outputlocation): {{
+    S3Location}}
+  [TransformerId](#cfn-b2bi-capability-ediconfiguration-transformerid): {{String}}
+  [Type](#cfn-b2bi-capability-ediconfiguration-type): {{
+    EdiType}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-capability-ediconfiguration-properties"></a>
 
-`CapabilityDirection`
-
+`CapabilityDirection`  <a name="cfn-b2bi-capability-ediconfiguration-capabilitydirection"></a>
 Specifies whether this is capability is for inbound or outbound transformations.
+*Required*: No
+*Type*: String
+*Allowed values*: `INBOUND | OUTBOUND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InputLocation`  <a name="cfn-b2bi-capability-ediconfiguration-inputlocation"></a>
+Contains the Amazon S3 bucket and prefix for the location of the input file, which is contained in an `S3Location` object.
+*Required*: Yes
+*Type*: [S3Location](aws-properties-b2bi-capability-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`OutputLocation`  <a name="cfn-b2bi-capability-ediconfiguration-outputlocation"></a>
+Contains the Amazon S3 bucket and prefix for the location of the output file, which is contained in an `S3Location` object.
+*Required*: Yes
+*Type*: [S3Location](aws-properties-b2bi-capability-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `INBOUND | OUTBOUND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputLocation`
-
-Contains the Amazon S3 bucket and prefix for the location of the input file, which is
-contained in an `S3Location` object.
-
-_Required_: Yes
-
-_Type_: [S3Location](aws-properties-b2bi-capability-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputLocation`
-
-Contains the Amazon S3 bucket and prefix for the location of the output file, which is
-contained in an `S3Location` object.
-
-_Required_: Yes
-
-_Type_: [S3Location](aws-properties-b2bi-capability-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransformerId`
-
+`TransformerId`  <a name="cfn-b2bi-capability-ediconfiguration-transformerid"></a>
 Returns the system-assigned unique identifier for the transformer.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-b2bi-capability-ediconfiguration-type"></a>
 Returns the type of the capability. Currently, only `edi` is supported.
-
-_Required_: Yes
-
-_Type_: [EdiType](aws-properties-b2bi-capability-editype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapabilityConfiguration
-
-EdiType
+*Required*: Yes
+*Type*: [EdiType](aws-properties-b2bi-capability-editype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

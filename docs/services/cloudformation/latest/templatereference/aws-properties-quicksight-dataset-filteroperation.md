@@ -2,96 +2,70 @@
 title: "AWS::QuickSight::DataSet FilterOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet FilterOperation
+<a name="aws-properties-quicksight-dataset-filteroperation"></a>
 
 A transform operation that filters rows based on a condition.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-filteroperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-filteroperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionExpression" : String,
-  "DateFilterCondition" : DataSetDateFilterCondition,
-  "NumericFilterCondition" : DataSetNumericFilterCondition,
-  "StringFilterCondition" : DataSetStringFilterCondition
+  "[ConditionExpression](#cfn-quicksight-dataset-filteroperation-conditionexpression)" : {{String}},
+  "[DateFilterCondition](#cfn-quicksight-dataset-filteroperation-datefiltercondition)" : {{DataSetDateFilterCondition}},
+  "[NumericFilterCondition](#cfn-quicksight-dataset-filteroperation-numericfiltercondition)" : {{DataSetNumericFilterCondition}},
+  "[StringFilterCondition](#cfn-quicksight-dataset-filteroperation-stringfiltercondition)" : {{DataSetStringFilterCondition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-filteroperation-syntax.yaml"></a>
 
-```yaml
-
-  ConditionExpression: String
-  DateFilterCondition:
-    DataSetDateFilterCondition
-  NumericFilterCondition:
-    DataSetNumericFilterCondition
-  StringFilterCondition:
-    DataSetStringFilterCondition
-
+```
+  [ConditionExpression](#cfn-quicksight-dataset-filteroperation-conditionexpression): {{String}}
+  [DateFilterCondition](#cfn-quicksight-dataset-filteroperation-datefiltercondition): {{
+    DataSetDateFilterCondition}}
+  [NumericFilterCondition](#cfn-quicksight-dataset-filteroperation-numericfiltercondition): {{
+    DataSetNumericFilterCondition}}
+  [StringFilterCondition](#cfn-quicksight-dataset-filteroperation-stringfiltercondition): {{
+    DataSetStringFilterCondition}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-filteroperation-properties"></a>
 
-`ConditionExpression`
+`ConditionExpression`  <a name="cfn-quicksight-dataset-filteroperation-conditionexpression"></a>
+An expression that must evaluate to a Boolean value. Rows for which the expression evaluates to true are kept in the dataset.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An expression that must evaluate to a Boolean value. Rows for which the expression
-evaluates to true are kept in the dataset.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateFilterCondition`
-
+`DateFilterCondition`  <a name="cfn-quicksight-dataset-filteroperation-datefiltercondition"></a>
 A date-based filter condition within a filter operation.
+*Required*: No
+*Type*: [DataSetDateFilterCondition](aws-properties-quicksight-dataset-datasetdatefiltercondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataSetDateFilterCondition](aws-properties-quicksight-dataset-datasetdatefiltercondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericFilterCondition`
-
+`NumericFilterCondition`  <a name="cfn-quicksight-dataset-filteroperation-numericfiltercondition"></a>
 A numeric-based filter condition within a filter operation.
+*Required*: No
+*Type*: [DataSetNumericFilterCondition](aws-properties-quicksight-dataset-datasetnumericfiltercondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataSetNumericFilterCondition](aws-properties-quicksight-dataset-datasetnumericfiltercondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringFilterCondition`
-
+`StringFilterCondition`  <a name="cfn-quicksight-dataset-filteroperation-stringfiltercondition"></a>
 A string-based filter condition within a filter operation.
-
-_Required_: No
-
-_Type_: [DataSetStringFilterCondition](aws-properties-quicksight-dataset-datasetstringfiltercondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldFolder
-
-FiltersOperation
+*Required*: No
+*Type*: [DataSetStringFilterCondition](aws-properties-quicksight-dataset-datasetstringfiltercondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,95 +2,69 @@
 title: "AWS::ARCRegionSwitch::Plan ArcRoutingControlConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan ArcRoutingControlConfiguration
+<a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration"></a>
 
 Configuration for ARC routing controls used in a Region switch plan. Routing controls are simple on/off switches that you can use to shift traffic away from an impaired Region.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CrossAccountRole" : String,
-  "ExternalId" : String,
-  "RegionAndRoutingControls" : {Key: Value, ...},
-  "TimeoutMinutes" : Number
+  "[CrossAccountRole](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-crossaccountrole)" : {{String}},
+  "[ExternalId](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-externalid)" : {{String}},
+  "[RegionAndRoutingControls](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-regionandroutingcontrols)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[TimeoutMinutes](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-timeoutminutes)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CrossAccountRole: String
-  ExternalId: String
-  RegionAndRoutingControls:
-    Key: Value
-  TimeoutMinutes: Number
-
+```
+  [CrossAccountRole](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-crossaccountrole): {{String}}
+  [ExternalId](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-externalid): {{String}}
+  [RegionAndRoutingControls](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-regionandroutingcontrols): {{
+    {{Key}}: {{Value}}}}
+  [TimeoutMinutes](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-timeoutminutes): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration-properties"></a>
 
-`CrossAccountRole`
-
+`CrossAccountRole`  <a name="cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-crossaccountrole"></a>
 The cross account role for the configuration.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-zA-Z0-9-]*:iam::[0-9]{12}:role/.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-zA-Z0-9-]*:iam::[0-9]{12}:role/.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExternalId`
-
+`ExternalId`  <a name="cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-externalid"></a>
 The external ID (secret key) for the configuration.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegionAndRoutingControls`
-
+`RegionAndRoutingControls`  <a name="cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-regionandroutingcontrols"></a>
 The Region and ARC routing controls for the configuration.
+*Required*: Yes
+*Type*: Object of Array
+*Pattern*: `.+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Object of Array
-
-_Pattern_: `.+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeoutMinutes`
-
+`TimeoutMinutes`  <a name="cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-timeoutminutes"></a>
 The timeout value specified for the configuration.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ARCRegionSwitch::Plan
-
-Asg
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

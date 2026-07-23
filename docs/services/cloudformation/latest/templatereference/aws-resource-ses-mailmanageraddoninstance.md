@@ -2,99 +2,81 @@
 title: "AWS::SES::MailManagerAddonInstance"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerAddonInstance
+<a name="aws-resource-ses-mailmanageraddoninstance"></a>
 
-Creates an Add On instance for the subscription indicated in the request. The
-resulting Amazon Resource Name (ARN) can be used in a conditional statement for a rule set or traffic policy.
+Creates an Add On instance for the subscription indicated in the request. The resulting Amazon Resource Name (ARN) can be used in a conditional statement for a rule set or traffic policy.
 
 ## Syntax
+<a name="aws-resource-ses-mailmanageraddoninstance-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-mailmanageraddoninstance-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::MailManagerAddonInstance",
   "Properties" : {
-      "AddonSubscriptionId" : String,
-      "Tags" : [ Tag, ... ]
+      "[AddonSubscriptionId](#cfn-ses-mailmanageraddoninstance-addonsubscriptionid)" : {{String}},
+      "[Tags](#cfn-ses-mailmanageraddoninstance-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-mailmanageraddoninstance-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::MailManagerAddonInstance
 Properties:
-  AddonSubscriptionId: String
-  Tags:
-    - Tag
-
+  [AddonSubscriptionId](#cfn-ses-mailmanageraddoninstance-addonsubscriptionid): {{String}}
+  [Tags](#cfn-ses-mailmanageraddoninstance-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-mailmanageraddoninstance-properties"></a>
 
-`AddonSubscriptionId`
-
+`AddonSubscriptionId`  <a name="cfn-ses-mailmanageraddoninstance-addonsubscriptionid"></a>
 The subscription ID for the instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^as-[a-zA-Z0-9]{1,64}$`
+*Minimum*: `4`
+*Maximum*: `67`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^as-[a-zA-Z0-9]{1,64}$`
-
-_Minimum_: `4`
-
-_Maximum_: `67`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ses-mailmanageraddoninstance-tags"></a>
 The tags used to organize, track, or control access for the resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-mailmanageraddoninstance-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-mailmanageraddoninstance-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-mailmanageraddoninstance-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-mailmanageraddoninstance-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-mailmanageraddoninstance-return-values-fn--getatt"></a>
 
-`AddonInstanceArn`
+####
+<a name="aws-resource-ses-mailmanageraddoninstance-return-values-fn--getatt-fn--getatt"></a>
 
+`AddonInstanceArn`  <a name="AddonInstanceArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Add On instance.
 
-`AddonInstanceId`
-
+`AddonInstanceId`  <a name="AddonInstanceId-fn::getatt"></a>
 The unique ID of the Add On instance.
 
-`AddonName`
-
+`AddonName`  <a name="AddonName-fn::getatt"></a>
 The name of the Add On for the instance.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

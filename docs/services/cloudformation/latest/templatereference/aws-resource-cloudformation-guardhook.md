@@ -2,181 +2,127 @@
 title: "AWS::CloudFormation::GuardHook"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::GuardHook
+<a name="aws-resource-cloudformation-guardhook"></a>
 
-The `AWS::CloudFormation::GuardHook` resource creates and activates a
-Guard Hook. Using the Guard domain
-specific language (DSL), you can author Guard Hooks to evaluate
-your resources before allowing stack operations.
+The `AWS::CloudFormation::GuardHook` resource creates and activates a Guard Hook. Using the Guard domain specific language (DSL), you can author Guard Hooks to evaluate your resources before allowing stack operations.
 
-For more information, see [Guard Hooks](../../../cloudformation-cli/latest/hooks-userguide/guard-hooks.md) in the _CloudFormation Hooks_
-_User Guide_.
+For more information, see [Guard Hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/guard-hooks.html) in the *CloudFormation Hooks User Guide*.
 
 ## Syntax
+<a name="aws-resource-cloudformation-guardhook-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudformation-guardhook-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFormation::GuardHook",
   "Properties" : {
-      "Alias" : String,
-      "ExecutionRole" : String,
-      "FailureMode" : String,
-      "HookStatus" : String,
-      "LogBucket" : String,
-      "Options" : Options,
-      "RuleLocation" : S3Location,
-      "StackFilters" : StackFilters,
-      "TargetFilters" : TargetFilters,
-      "TargetOperations" : [ String, ... ]
+      "[Alias](#cfn-cloudformation-guardhook-alias)" : {{String}},
+      "[ExecutionRole](#cfn-cloudformation-guardhook-executionrole)" : {{String}},
+      "[FailureMode](#cfn-cloudformation-guardhook-failuremode)" : {{String}},
+      "[HookStatus](#cfn-cloudformation-guardhook-hookstatus)" : {{String}},
+      "[LogBucket](#cfn-cloudformation-guardhook-logbucket)" : {{String}},
+      "[Options](#cfn-cloudformation-guardhook-options)" : {{Options}},
+      "[RuleLocation](#cfn-cloudformation-guardhook-rulelocation)" : {{S3Location}},
+      "[StackFilters](#cfn-cloudformation-guardhook-stackfilters)" : {{StackFilters}},
+      "[TargetFilters](#cfn-cloudformation-guardhook-targetfilters)" : {{TargetFilters}},
+      "[TargetOperations](#cfn-cloudformation-guardhook-targetoperations)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudformation-guardhook-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFormation::GuardHook
 Properties:
-  Alias: String
-  ExecutionRole: String
-  FailureMode: String
-  HookStatus: String
-  LogBucket: String
-  Options:
-    Options
-  RuleLocation:
-    S3Location
-  StackFilters:
-    StackFilters
-  TargetFilters:
-    TargetFilters
-  TargetOperations:
-    - String
-
+  [Alias](#cfn-cloudformation-guardhook-alias): {{String}}
+  [ExecutionRole](#cfn-cloudformation-guardhook-executionrole): {{String}}
+  [FailureMode](#cfn-cloudformation-guardhook-failuremode): {{String}}
+  [HookStatus](#cfn-cloudformation-guardhook-hookstatus): {{String}}
+  [LogBucket](#cfn-cloudformation-guardhook-logbucket): {{String}}
+  [Options](#cfn-cloudformation-guardhook-options): {{
+    Options}}
+  [RuleLocation](#cfn-cloudformation-guardhook-rulelocation): {{
+    S3Location}}
+  [StackFilters](#cfn-cloudformation-guardhook-stackfilters): {{
+    StackFilters}}
+  [TargetFilters](#cfn-cloudformation-guardhook-targetfilters): {{
+    TargetFilters}}
+  [TargetOperations](#cfn-cloudformation-guardhook-targetoperations): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudformation-guardhook-properties"></a>
 
-`Alias`
+`Alias`  <a name="cfn-cloudformation-guardhook-alias"></a>
+The type name alias for the Hook. This alias must be unique per account and Region.
+The alias must be in the form `Name1::Name2::Name3` and must not begin with `AWS`. For example, `Private::Guard::MyTestHook`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!(?i)aws)[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The type name alias for the Hook. This alias must be unique per account and
-Region.
+`ExecutionRole`  <a name="cfn-cloudformation-guardhook-executionrole"></a>
+The IAM role that the Hook assumes to retrieve your Guard rules from S3 and optionally write a detailed Guard output report back.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:.+:iam::[0-9]{12}:role/.+`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The alias must be in the form `Name1::Name2::Name3` and must not begin with
-`AWS`. For example, `Private::Guard::MyTestHook`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!(?i)aws)[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ExecutionRole`
-
-The IAM role that the Hook assumes to retrieve your Guard rules
-from S3 and optionally write a detailed Guard output report
-back.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:.+:iam::[0-9]{12}:role/.+`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FailureMode`
-
+`FailureMode`  <a name="cfn-cloudformation-guardhook-failuremode"></a>
 Specifies how the Hook responds when rules fail their evaluation.
++ `FAIL`: Prevents the action from proceeding. This is helpful for enforcing strict compliance or security policies.
++ `WARN`: Issues warnings to users but allows actions to continue. This is useful for non-critical validations or informational checks.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `FAIL | WARN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `FAIL`: Prevents the action from proceeding. This is helpful for
-enforcing strict compliance or security policies.
-
-- `WARN`: Issues warnings to users but allows actions to continue.
-This is useful for non-critical validations or informational checks.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `FAIL | WARN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HookStatus`
-
+`HookStatus`  <a name="cfn-cloudformation-guardhook-hookstatus"></a>
 Specifies if the Hook is `ENABLED` or `DISABLED`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`LogBucket`  <a name="cfn-cloudformation-guardhook-logbucket"></a>
+Specifies the name of an S3 bucket to store the Guard output report. This report contains the results of your Guard rule validations.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogBucket`
-
-Specifies the name of an S3 bucket to store the Guard output
-report. This report contains the results of your Guard rule
-validations.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-cloudformation-guardhook-options"></a>
 Specifies the S3 location of your input parameters.
+*Required*: No
+*Type*: [Options](aws-properties-cloudformation-guardhook-options.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Options](aws-properties-cloudformation-guardhook-options.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleLocation`
-
+`RuleLocation`  <a name="cfn-cloudformation-guardhook-rulelocation"></a>
 Specifies the S3 location of your Guard rules.
+*Required*: Yes
+*Type*: [S3Location](aws-properties-cloudformation-guardhook-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [S3Location](aws-properties-cloudformation-guardhook-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StackFilters`
-
+`StackFilters`  <a name="cfn-cloudformation-guardhook-stackfilters"></a>
 Specifies the stack level filters for the Hook.
-
 Example stack level filter in JSON:
 
-```json
-
+```
 "StackFilters": {"FilteringCriteria": "ALL", "StackNames": {"Exclude": [ "stack-1", "stack-2"]}}
 ```
-
 Example stack level filter in YAML:
 
-```yaml
-
+```
 StackFilters:
   FilteringCriteria: ALL
   StackNames:
@@ -184,85 +130,72 @@ StackFilters:
       - stack-1
       - stack-2
 ```
+*Required*: No
+*Type*: [StackFilters](aws-properties-cloudformation-guardhook-stackfilters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StackFilters](aws-properties-cloudformation-guardhook-stackfilters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetFilters`
-
+`TargetFilters`  <a name="cfn-cloudformation-guardhook-targetfilters"></a>
 Specifies the target filters for the Hook.
-
 Example target filter in JSON:
 
-```json
-
+```
 "TargetFilters": {"Actions": [ "CREATE", "UPDATE", "DELETE" ]}
 ```
-
 Example target filter in YAML:
 
-```yaml
-
+```
 TargetFilters:
   Actions:
     - CREATE
     - UPDATE
     - DELETE
 ```
+*Required*: No
+*Type*: [TargetFilters](aws-properties-cloudformation-guardhook-targetfilters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TargetFilters](aws-properties-cloudformation-guardhook-targetfilters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetOperations`
-
-Specifies the list of operations the Hook is run against. For more information, see
-[Hook targets](../../../cloudformation-cli/latest/hooks-userguide/hooks-concepts.md#hook-terms-hook-target) in the _CloudFormation Hooks User_
-_Guide_.
-
-Valid values: `STACK` \| `RESOURCE` \| `CHANGE_SET` \|
-`CLOUD_CONTROL`
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TargetOperations`  <a name="cfn-cloudformation-guardhook-targetoperations"></a>
+Specifies the list of operations the Hook is run against. For more information, see [Hook targets](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/hooks-concepts.html#hook-terms-hook-target) in the *CloudFormation Hooks User Guide*.
+Valid values: `STACK` \| `RESOURCE` \| `CHANGE_SET` \| `CLOUD_CONTROL`
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudformation-guardhook-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudformation-guardhook-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Hook Amazon Resource Name (ARN). For example:
-`arn:aws:cloudformation:us-west-2:123456789012:type/hook/MyGuardHook`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Hook Amazon Resource Name (ARN). For example: `arn:aws:cloudformation:us-west-2:123456789012:type/hook/MyGuardHook`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudformation-guardhook-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`HookArn`
+####
+<a name="aws-resource-cloudformation-guardhook-return-values-fn--getatt-fn--getatt"></a>
 
+`HookArn`  <a name="HookArn-fn::getatt"></a>
 Returns the ARN of a Guard Hook.
 
 ## Examples
+<a name="aws-resource-cloudformation-guardhook--examples"></a>
 
 ### Creating a Guard Hook in a template
+<a name="aws-resource-cloudformation-guardhook--examples--Creating_a_Hook_in_a_template"></a>
 
 The following example demonstrates how to create a Guard Hook in a template.
 
 #### JSON
+<a name="aws-resource-cloudformation-guardhook--examples--Creating_a_Hook_in_a_template--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create a Guard Hook",
@@ -372,9 +305,9 @@ The following example demonstrates how to create a Guard Hook in a template.
 ```
 
 #### YAML
+<a name="aws-resource-cloudformation-guardhook--examples--Creating_a_Hook_in_a_template--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a Guard Hook
 Parameters:
@@ -447,11 +380,5 @@ Resources:
           Exclude:
             - !Ref AWS::StackName
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFormation::CustomResource
-
-Options
 
 All content copied from https://docs.aws.amazon.com/.

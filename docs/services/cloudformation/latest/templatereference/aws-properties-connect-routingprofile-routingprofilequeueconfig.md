@@ -2,87 +2,62 @@
 title: "AWS::Connect::RoutingProfile RoutingProfileQueueConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::RoutingProfile RoutingProfileQueueConfig
+<a name="aws-properties-connect-routingprofile-routingprofilequeueconfig"></a>
 
 Contains information about the queue and channel for which priority and delay can be set.
 
 ## Syntax
+<a name="aws-properties-connect-routingprofile-routingprofilequeueconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-routingprofile-routingprofilequeueconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Delay" : Integer,
-  "Priority" : Integer,
-  "QueueReference" : RoutingProfileQueueReference
+  "[Delay](#cfn-connect-routingprofile-routingprofilequeueconfig-delay)" : {{Integer}},
+  "[Priority](#cfn-connect-routingprofile-routingprofilequeueconfig-priority)" : {{Integer}},
+  "[QueueReference](#cfn-connect-routingprofile-routingprofilequeueconfig-queuereference)" : {{RoutingProfileQueueReference}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-routingprofile-routingprofilequeueconfig-syntax.yaml"></a>
 
-```yaml
-
-  Delay: Integer
-  Priority: Integer
-  QueueReference:
-    RoutingProfileQueueReference
-
+```
+  [Delay](#cfn-connect-routingprofile-routingprofilequeueconfig-delay): {{Integer}}
+  [Priority](#cfn-connect-routingprofile-routingprofilequeueconfig-priority): {{Integer}}
+  [QueueReference](#cfn-connect-routingprofile-routingprofilequeueconfig-queuereference): {{
+    RoutingProfileQueueReference}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-routingprofile-routingprofilequeueconfig-properties"></a>
 
-`Delay`
+`Delay`  <a name="cfn-connect-routingprofile-routingprofilequeueconfig-delay"></a>
+The delay, in seconds, a contact should be in the queue before they are routed to an available agent. For more information, see [Queues: priority and delay](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routing-profiles-priority.html) in the *Connect Customer Administrator Guide*.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `9999`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The delay, in seconds, a contact should be in the queue before they are routed to an available agent. For more
-information, see [Queues: priority and delay](../../../connect/latest/adminguide/concepts-routing-profiles-priority.md) in the _Amazon Connect Administrator Guide_.
+`Priority`  <a name="cfn-connect-routingprofile-routingprofilequeueconfig-priority"></a>
+The order in which contacts are to be handled for the queue. For more information, see [Queues: priority and delay](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routing-profiles-priority.html).
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `99`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `9999`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Priority`
-
-The order in which contacts are to be handled for the queue. For more information, see [Queues: priority and\
-delay](../../../connect/latest/adminguide/concepts-routing-profiles-priority.md).
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `99`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueueReference`
-
+`QueueReference`  <a name="cfn-connect-routingprofile-routingprofilequeueconfig-queuereference"></a>
 Contains information about a queue resource.
-
-_Required_: Yes
-
-_Type_: [RoutingProfileQueueReference](aws-properties-connect-routingprofile-routingprofilequeuereference.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RoutingProfileManualAssignmentQueueConfig
-
-RoutingProfileQueueReference
+*Required*: Yes
+*Type*: [RoutingProfileQueueReference](aws-properties-connect-routingprofile-routingprofilequeuereference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

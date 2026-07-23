@@ -2,125 +2,98 @@
 title: "AWS::Connect::ViewVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::ViewVersion
+<a name="aws-resource-connect-viewversion"></a>
 
-Creates a version for the specified customer-managed view within the specified
-instance.
+Creates a version for the specified customer-managed view within the specified instance.
 
 ## Syntax
+<a name="aws-resource-connect-viewversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-viewversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::ViewVersion",
   "Properties" : {
-      "VersionDescription" : String,
-      "ViewArn" : String,
-      "ViewContentSha256" : String
+      "[VersionDescription](#cfn-connect-viewversion-versiondescription)" : {{String}},
+      "[ViewArn](#cfn-connect-viewversion-viewarn)" : {{String}},
+      "[ViewContentSha256](#cfn-connect-viewversion-viewcontentsha256)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-viewversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::ViewVersion
 Properties:
-  VersionDescription: String
-  ViewArn: String
-  ViewContentSha256: String
-
+  [VersionDescription](#cfn-connect-viewversion-versiondescription): {{String}}
+  [ViewArn](#cfn-connect-viewversion-viewarn): {{String}}
+  [ViewContentSha256](#cfn-connect-viewversion-viewcontentsha256): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-viewversion-properties"></a>
 
-`VersionDescription`
-
+`VersionDescription`  <a name="cfn-connect-viewversion-versiondescription"></a>
 The description of the view version.
+*Required*: No
+*Type*: String
+*Pattern*: `^([\p{L}\p{N}_.:\/=+\-@,()']+[\p{L}\p{Z}\p{N}_.:\/=+\-@,()']*)$`
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{N}_.:\/=+\-@,]+[\p{L}\p{Z}\p{N}_.:\/=+\-@,]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ViewArn`
-
+`ViewArn`  <a name="cfn-connect-viewversion-viewarn"></a>
 The unqualified Amazon Resource Name (ARN) of the view.
-
 For example:
 
 ```
-
 arn:<partition>:connect:<region>:<accountId>:instance/00000000-0000-0000-0000-000000000000/view/00000000-0000-0000-0000-000000000000
 ```
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/view/[-:a-zA-Z0-9]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/view/[-:a-zA-Z0-9]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ViewContentSha256`
-
+`ViewContentSha256`  <a name="cfn-connect-viewversion-viewcontentsha256"></a>
 Indicates the checksum value of the latest published view content.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]{64}$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]{64}$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-connect-viewversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-viewversion-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-viewversion-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Version`
+####
+<a name="aws-resource-connect-viewversion-return-values-fn--getatt-fn--getatt"></a>
 
+`Version`  <a name="Version-fn::getatt"></a>
 Current version of the view.
 
-`ViewVersionArn`
-
+`ViewVersionArn`  <a name="ViewVersionArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the view version.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Connect::Workspace
 
 All content copied from https://docs.aws.amazon.com/.

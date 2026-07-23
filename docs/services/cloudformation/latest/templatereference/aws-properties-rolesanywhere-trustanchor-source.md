@@ -2,67 +2,51 @@
 title: "AWS::RolesAnywhere::TrustAnchor Source"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RolesAnywhere::TrustAnchor Source
+<a name="aws-properties-rolesanywhere-trustanchor-source"></a>
 
-Object representing the TrustAnchor type and its related certificate data.
+ Object representing the TrustAnchor type and its related certificate data.
 
 ## Syntax
+<a name="aws-properties-rolesanywhere-trustanchor-source-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rolesanywhere-trustanchor-source-syntax.json"></a>
 
-```json
-
+```
 {
-  "SourceData" : SourceData,
-  "SourceType" : String
+  "[SourceData](#cfn-rolesanywhere-trustanchor-source-sourcedata)" : {{SourceData}},
+  "[SourceType](#cfn-rolesanywhere-trustanchor-source-sourcetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rolesanywhere-trustanchor-source-syntax.yaml"></a>
 
-```yaml
-
-  SourceData:
-    SourceData
-  SourceType: String
-
+```
+  [SourceData](#cfn-rolesanywhere-trustanchor-source-sourcedata): {{
+    SourceData}}
+  [SourceType](#cfn-rolesanywhere-trustanchor-source-sourcetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rolesanywhere-trustanchor-source-properties"></a>
 
-`SourceData`
+`SourceData`  <a name="cfn-rolesanywhere-trustanchor-source-sourcedata"></a>
+ A union object representing the data field of the TrustAnchor depending on its type
+*Required*: Yes
+*Type*: [SourceData](aws-properties-rolesanywhere-trustanchor-sourcedata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A union object representing the data field of the TrustAnchor depending on its type
-
-_Required_: Yes
-
-_Type_: [SourceData](aws-properties-rolesanywhere-trustanchor-sourcedata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceType`
-
-The type of the TrustAnchor.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AWS_ACM_PCA | CERTIFICATE_BUNDLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotificationSetting
-
-SourceData
+`SourceType`  <a name="cfn-rolesanywhere-trustanchor-source-sourcetype"></a>
+ The type of the TrustAnchor.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AWS_ACM_PCA | CERTIFICATE_BUNDLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::FIS::ExperimentTemplate DataSources"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FIS::ExperimentTemplate DataSources
+<a name="aws-properties-fis-experimenttemplate-datasources"></a>
 
 Describes the data sources for the experiment report.
 
 ## Syntax
+<a name="aws-properties-fis-experimenttemplate-datasources-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fis-experimenttemplate-datasources-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchDashboards" : [ CloudWatchDashboard, ... ]
+  "[CloudWatchDashboards](#cfn-fis-experimenttemplate-datasources-cloudwatchdashboards)" : {{[ CloudWatchDashboard, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fis-experimenttemplate-datasources-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchDashboards:
-    - CloudWatchDashboard
-
+```
+  [CloudWatchDashboards](#cfn-fis-experimenttemplate-datasources-cloudwatchdashboards): {{
+    - CloudWatchDashboard}}
 ```
 
 ## Properties
+<a name="aws-properties-fis-experimenttemplate-datasources-properties"></a>
 
-`CloudWatchDashboards`
-
+`CloudWatchDashboards`  <a name="cfn-fis-experimenttemplate-datasources-cloudwatchdashboards"></a>
 The CloudWatch dashboards to include as data sources in the experiment report.
-
-_Required_: No
-
-_Type_: Array of [CloudWatchDashboard](aws-properties-fis-experimenttemplate-cloudwatchdashboard.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogsConfiguration
-
-ExperimentReportS3Configuration
+*Required*: No
+*Type*: Array of [CloudWatchDashboard](aws-properties-fis-experimenttemplate-cloudwatchdashboard.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

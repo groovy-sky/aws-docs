@@ -2,107 +2,84 @@
 title: "AWS::MediaConnect::BridgeSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::BridgeSource
+<a name="aws-resource-mediaconnect-bridgesource"></a>
 
-Adds sources to an existing bridge.
+ Adds sources to an existing bridge.
 
 ## Syntax
+<a name="aws-resource-mediaconnect-bridgesource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-mediaconnect-bridgesource-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaConnect::BridgeSource",
   "Properties" : {
-      "BridgeArn" : String,
-      "FlowSource" : BridgeFlowSource,
-      "Name" : String,
-      "NetworkSource" : BridgeNetworkSource
+      "[BridgeArn](#cfn-mediaconnect-bridgesource-bridgearn)" : {{String}},
+      "[FlowSource](#cfn-mediaconnect-bridgesource-flowsource)" : {{BridgeFlowSource}},
+      "[Name](#cfn-mediaconnect-bridgesource-name)" : {{String}},
+      "[NetworkSource](#cfn-mediaconnect-bridgesource-networksource)" : {{BridgeNetworkSource}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-mediaconnect-bridgesource-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaConnect::BridgeSource
 Properties:
-  BridgeArn: String
-  FlowSource:
-    BridgeFlowSource
-  Name: String
-  NetworkSource:
-    BridgeNetworkSource
-
+  [BridgeArn](#cfn-mediaconnect-bridgesource-bridgearn): {{String}}
+  [FlowSource](#cfn-mediaconnect-bridgesource-flowsource): {{
+    BridgeFlowSource}}
+  [Name](#cfn-mediaconnect-bridgesource-name): {{String}}
+  [NetworkSource](#cfn-mediaconnect-bridgesource-networksource): {{
+    BridgeNetworkSource}}
 ```
 
 ## Properties
+<a name="aws-resource-mediaconnect-bridgesource-properties"></a>
 
-`BridgeArn`
+`BridgeArn`  <a name="cfn-mediaconnect-bridgesource-bridgearn"></a>
+ The ARN of the bridge feeding this flow.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ARN of the bridge feeding this flow.
+`FlowSource`  <a name="cfn-mediaconnect-bridgesource-flowsource"></a>
+ The source of the flow.
+*Required*: No
+*Type*: [BridgeFlowSource](aws-properties-mediaconnect-bridgesource-bridgeflowsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FlowSource`
-
-The source of the flow.
-
-_Required_: No
-
-_Type_: [BridgeFlowSource](aws-properties-mediaconnect-bridgesource-bridgeflowsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-mediaconnect-bridgesource-name"></a>
 The name of the flow source. This name is used to reference the source and must be unique among sources in this bridge.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkSource`
-
-The source of the network.
-
-_Required_: No
-
-_Type_: [BridgeNetworkSource](aws-properties-mediaconnect-bridgesource-bridgenetworksource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`NetworkSource`  <a name="cfn-mediaconnect-bridgesource-networksource"></a>
+ The source of the network.
+*Required*: No
+*Type*: [BridgeNetworkSource](aws-properties-mediaconnect-bridgesource-bridgenetworksource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-mediaconnect-bridgesource-return-values"></a>
 
 ### Ref
+<a name="aws-resource-mediaconnect-bridgesource-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the bridge ARN and bridge name. For example:
 
-`{ "Ref":
-            "arn:aws:mediaconnect:us-east-1:111122223333:bridge:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballArenaIngress|Source:PrimarySource1"
-            }`
+ `{ "Ref": "arn:aws:mediaconnect:us-east-1:111122223333:bridge:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballArenaIngress|Source:PrimarySource1" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BridgeNetworkOutput
-
-BridgeFlowSource
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

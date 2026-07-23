@@ -2,79 +2,58 @@
 title: "AWS::EMRContainers::SecurityConfiguration TLSCertificateConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration TLSCertificateConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration"></a>
 
 Configurations related to the TLS certificate for the security configuration.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateProviderType" : String,
-  "PrivateKeySecretArn" : String,
-  "PublicKeySecretArn" : String
+  "[CertificateProviderType](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-certificateprovidertype)" : {{String}},
+  "[PrivateKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-privatekeysecretarn)" : {{String}},
+  "[PublicKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-publickeysecretarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CertificateProviderType: String
-  PrivateKeySecretArn: String
-  PublicKeySecretArn: String
-
+```
+  [CertificateProviderType](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-certificateprovidertype): {{String}}
+  [PrivateKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-privatekeysecretarn): {{String}}
+  [PublicKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-publickeysecretarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration-properties"></a>
 
-`CertificateProviderType`
+`CertificateProviderType`  <a name="cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-certificateprovidertype"></a>
+The TLS certificate type. Acceptable values: `PEM` or `Custom`.
+*Required*: No
+*Type*: String
+*Allowed values*: `PEM`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The TLS certificate type. Acceptable values: `PEM` or
-`Custom`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PEM`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrivateKeySecretArn`
-
+`PrivateKeySecretArn`  <a name="cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-privatekeysecretarn"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PublicKeySecretArn`
-
+`PublicKeySecretArn`  <a name="cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-publickeysecretarn"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EMRContainers::VirtualCluster
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

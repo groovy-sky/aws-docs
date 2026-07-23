@@ -2,88 +2,58 @@
 title: "AWS::NetworkFirewall::RuleGroup TCPFlagField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::RuleGroup TCPFlagField
+<a name="aws-properties-networkfirewall-rulegroup-tcpflagfield"></a>
 
-TCP flags and masks to inspect packets for. This is used in the match attributes
-specification.
+TCP flags and masks to inspect packets for. This is used in the match attributes specification.
 
 For example:
 
-`"TCPFlags": [
-        {
-            "Flags": [
-                "ECE",
-                "SYN"
-            ],
-            "Masks": [
-                "SYN",
-                "ECE"
-            ]
-        }
-             ]`
+ `"TCPFlags": [ { "Flags": [ "ECE", "SYN" ], "Masks": [ "SYN", "ECE" ] } ]`
 
 ## Syntax
+<a name="aws-properties-networkfirewall-rulegroup-tcpflagfield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkfirewall-rulegroup-tcpflagfield-syntax.json"></a>
 
-```json
-
+```
 {
-  "Flags" : [ String, ... ],
-  "Masks" : [ String, ... ]
+  "[Flags](#cfn-networkfirewall-rulegroup-tcpflagfield-flags)" : {{[ String, ... ]}},
+  "[Masks](#cfn-networkfirewall-rulegroup-tcpflagfield-masks)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkfirewall-rulegroup-tcpflagfield-syntax.yaml"></a>
 
-```yaml
-
-  Flags:
-    - String
-  Masks:
-    - String
-
+```
+  [Flags](#cfn-networkfirewall-rulegroup-tcpflagfield-flags): {{
+    - String}}
+  [Masks](#cfn-networkfirewall-rulegroup-tcpflagfield-masks): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-networkfirewall-rulegroup-tcpflagfield-properties"></a>
 
-`Flags`
-
+`Flags`  <a name="cfn-networkfirewall-rulegroup-tcpflagfield-flags"></a>
 Used in conjunction with the `Masks` setting to define the flags that must be set and flags that must not be set in order for the packet to match. This setting can only specify values that are also specified in the `Masks` setting.
-
 For the flags that are specified in the masks setting, the following must be true for the packet to match:
++ The ones that are set in this flags setting must be set in the packet.
++ The ones that are not set in this flags setting must also not be set in the packet.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- The ones that are set in this flags setting must be set in the packet.
-
-- The ones that are not set in this flags setting must also not be set in the packet.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Masks`
-
+`Masks`  <a name="cfn-networkfirewall-rulegroup-tcpflagfield-masks"></a>
 The set of flags to consider in the inspection. To inspect all flags in the valid values list, leave this with no setting.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::NetworkFirewall::TLSInspectionConfiguration
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::IVS::Stage HlsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::Stage HlsConfiguration
+<a name="aws-properties-ivs-stage-hlsconfiguration"></a>
 
 Object specifying an HLS configuration for individual participant recording.
 
 ## Syntax
+<a name="aws-properties-ivs-stage-hlsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ivs-stage-hlsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParticipantRecordingHlsConfiguration" : ParticipantRecordingHlsConfiguration
+  "[ParticipantRecordingHlsConfiguration](#cfn-ivs-stage-hlsconfiguration-participantrecordinghlsconfiguration)" : {{ParticipantRecordingHlsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ivs-stage-hlsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ParticipantRecordingHlsConfiguration:
-    ParticipantRecordingHlsConfiguration
-
+```
+  [ParticipantRecordingHlsConfiguration](#cfn-ivs-stage-hlsconfiguration-participantrecordinghlsconfiguration): {{
+    ParticipantRecordingHlsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ivs-stage-hlsconfiguration-properties"></a>
 
-`ParticipantRecordingHlsConfiguration`
-
+`ParticipantRecordingHlsConfiguration`  <a name="cfn-ivs-stage-hlsconfiguration-participantrecordinghlsconfiguration"></a>
 Object specifying a configuration of participant HLS recordings for individual participant recording.
-
-_Required_: No
-
-_Type_: [ParticipantRecordingHlsConfiguration](aws-properties-ivs-stage-participantrecordinghlsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoParticipantRecordingConfiguration
-
-ParticipantRecordingHlsConfiguration
+*Required*: No
+*Type*: [ParticipantRecordingHlsConfiguration](aws-properties-ivs-stage-participantrecordinghlsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

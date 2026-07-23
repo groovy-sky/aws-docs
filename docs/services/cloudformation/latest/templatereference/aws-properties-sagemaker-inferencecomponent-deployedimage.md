@@ -2,92 +2,63 @@
 title: "AWS::SageMaker::InferenceComponent DeployedImage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent DeployedImage
+<a name="aws-properties-sagemaker-inferencecomponent-deployedimage"></a>
 
-Gets the Amazon EC2 Container Registry path of the docker image of the model that is hosted in this [ProductionVariant](../../../../reference/sagemaker/latest/apireference/api-productionvariant.md).
+Gets the Amazon EC2 Container Registry path of the docker image of the model that is hosted in this [ProductionVariant](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ProductionVariant.html).
 
-If you used the `registry/repository[:tag]` form to specify the image path
-of the primary container when you created the model hosted in this
-`ProductionVariant`, the path resolves to a path of the form
-`registry/repository[@digest]`. A digest is a hash value that identifies
-a specific version of an image. For information about Amazon ECR paths, see [Pulling an Image](../../../amazonecr/latest/userguide/docker-pull-ecr-image.md) in the _Amazon ECR User Guide_.
+If you used the `registry/repository[:tag]` form to specify the image path of the primary container when you created the model hosted in this `ProductionVariant`, the path resolves to a path of the form `registry/repository[@digest]`. A digest is a hash value that identifies a specific version of an image. For information about Amazon ECR paths, see [Pulling an Image](https://docs.aws.amazon.com//AmazonECR/latest/userguide/docker-pull-ecr-image.html) in the *Amazon ECR User Guide*.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferencecomponent-deployedimage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferencecomponent-deployedimage-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResolutionTime" : String,
-  "ResolvedImage" : String,
-  "SpecifiedImage" : String
+  "[ResolutionTime](#cfn-sagemaker-inferencecomponent-deployedimage-resolutiontime)" : {{String}},
+  "[ResolvedImage](#cfn-sagemaker-inferencecomponent-deployedimage-resolvedimage)" : {{String}},
+  "[SpecifiedImage](#cfn-sagemaker-inferencecomponent-deployedimage-specifiedimage)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferencecomponent-deployedimage-syntax.yaml"></a>
 
-```yaml
-
-  ResolutionTime: String
-  ResolvedImage: String
-  SpecifiedImage: String
-
+```
+  [ResolutionTime](#cfn-sagemaker-inferencecomponent-deployedimage-resolutiontime): {{String}}
+  [ResolvedImage](#cfn-sagemaker-inferencecomponent-deployedimage-resolvedimage): {{String}}
+  [SpecifiedImage](#cfn-sagemaker-inferencecomponent-deployedimage-specifiedimage): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferencecomponent-deployedimage-properties"></a>
 
-`ResolutionTime`
+`ResolutionTime`  <a name="cfn-sagemaker-inferencecomponent-deployedimage-resolutiontime"></a>
+The date and time when the image path for the model resolved to the `ResolvedImage`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The date and time when the image path for the model resolved to the
-`ResolvedImage`
+`ResolvedImage`  <a name="cfn-sagemaker-inferencecomponent-deployedimage-resolvedimage"></a>
+The specific digest path of the image hosted in this `ProductionVariant`.
+*Required*: No
+*Type*: String
+*Pattern*: `[\S]+`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResolvedImage`
-
-The specific digest path of the image hosted in this
-`ProductionVariant`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\S]+`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpecifiedImage`
-
+`SpecifiedImage`  <a name="cfn-sagemaker-inferencecomponent-deployedimage-specifiedimage"></a>
 The image path you specified when you created the model.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\S]+`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoRollbackConfiguration
-
-InferenceComponentCapacitySize
+*Required*: No
+*Type*: String
+*Pattern*: `[\S]+`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

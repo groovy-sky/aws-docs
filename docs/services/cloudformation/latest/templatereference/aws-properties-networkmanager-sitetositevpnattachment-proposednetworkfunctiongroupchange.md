@@ -2,83 +2,61 @@
 title: "AWS::NetworkManager::SiteToSiteVpnAttachment ProposedNetworkFunctionGroupChange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::SiteToSiteVpnAttachment ProposedNetworkFunctionGroupChange
+<a name="aws-properties-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange"></a>
 
 Describes proposed changes to a network function group.
 
 ## Syntax
+<a name="aws-properties-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttachmentPolicyRuleNumber" : Integer,
-  "NetworkFunctionGroupName" : String,
-  "Tags" : [ Tag, ... ]
+  "[AttachmentPolicyRuleNumber](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-attachmentpolicyrulenumber)" : {{Integer}},
+  "[NetworkFunctionGroupName](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-networkfunctiongroupname)" : {{String}},
+  "[Tags](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-syntax.yaml"></a>
 
-```yaml
-
-  AttachmentPolicyRuleNumber: Integer
-  NetworkFunctionGroupName: String
-  Tags:
-    - Tag
-
+```
+  [AttachmentPolicyRuleNumber](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-attachmentpolicyrulenumber): {{Integer}}
+  [NetworkFunctionGroupName](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-networkfunctiongroupname): {{String}}
+  [Tags](#cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-properties"></a>
 
-`AttachmentPolicyRuleNumber`
-
+`AttachmentPolicyRuleNumber`  <a name="cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-attachmentpolicyrulenumber"></a>
 The proposed new attachment policy rule number for the network function group.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkFunctionGroupName`
-
+`NetworkFunctionGroupName`  <a name="cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-networkfunctiongroupname"></a>
 The proposed name change for the network function group name.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkmanager-sitetositevpnattachment-proposednetworkfunctiongroupchange-tags"></a>
 The list of proposed changes to the key-value tags associated with the network function group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkmanager-sitetositevpnattachment-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::NetworkManager::SiteToSiteVpnAttachment
-
-ProposedSegmentChange
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkmanager-sitetositevpnattachment-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

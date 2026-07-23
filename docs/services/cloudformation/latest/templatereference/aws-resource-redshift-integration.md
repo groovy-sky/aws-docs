@@ -2,146 +2,112 @@
 title: "AWS::Redshift::Integration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::Integration
+<a name="aws-resource-redshift-integration"></a>
 
 Describes a zero-ETL or S3 integration.
 
 ## Syntax
+<a name="aws-resource-redshift-integration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-redshift-integration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Redshift::Integration",
   "Properties" : {
-      "AdditionalEncryptionContext" : {Key: Value, ...},
-      "IntegrationName" : String,
-      "KMSKeyId" : String,
-      "SourceArn" : String,
-      "Tags" : [ Tag, ... ],
-      "TargetArn" : String
+      "[AdditionalEncryptionContext](#cfn-redshift-integration-additionalencryptioncontext)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[IntegrationName](#cfn-redshift-integration-integrationname)" : {{String}},
+      "[KMSKeyId](#cfn-redshift-integration-kmskeyid)" : {{String}},
+      "[SourceArn](#cfn-redshift-integration-sourcearn)" : {{String}},
+      "[Tags](#cfn-redshift-integration-tags)" : {{[ Tag, ... ]}},
+      "[TargetArn](#cfn-redshift-integration-targetarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-redshift-integration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Redshift::Integration
 Properties:
-  AdditionalEncryptionContext:
-    Key: Value
-  IntegrationName: String
-  KMSKeyId: String
-  SourceArn: String
-  Tags:
-    - Tag
-  TargetArn: String
-
+  [AdditionalEncryptionContext](#cfn-redshift-integration-additionalencryptioncontext): {{
+    {{Key}}: {{Value}}}}
+  [IntegrationName](#cfn-redshift-integration-integrationname): {{String}}
+  [KMSKeyId](#cfn-redshift-integration-kmskeyid): {{String}}
+  [SourceArn](#cfn-redshift-integration-sourcearn): {{String}}
+  [Tags](#cfn-redshift-integration-tags): {{
+    - Tag}}
+  [TargetArn](#cfn-redshift-integration-targetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-redshift-integration-properties"></a>
 
-`AdditionalEncryptionContext`
+`AdditionalEncryptionContext`  <a name="cfn-redshift-integration-additionalencryptioncontext"></a>
+The encryption context for the integration. For more information, see [Encryption context](https://docs.aws.amazon.com/) in the *AWS Key Management Service Developer Guide*.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\s\S]*$`
+*Minimum*: `0`
+*Maximum*: `131072`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The encryption context for the integration. For more information, see
-[Encryption context](../../../../general/index.md) in the _AWS Key Management Service Developer Guide_.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\s\S]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `131072`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IntegrationName`
-
+`IntegrationName`  <a name="cfn-redshift-integration-integrationname"></a>
 The name of the integration.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KMSKeyId`
-
+`KMSKeyId`  <a name="cfn-redshift-integration-kmskeyid"></a>
 The AWS Key Management Service (AWS KMS) key identifier for the key used to encrypt the integration.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceArn`
-
+`SourceArn`  <a name="cfn-redshift-integration-sourcearn"></a>
 The Amazon Resource Name (ARN) of the database used as the source for replication.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-redshift-integration-tags"></a>
 The list of tags associated with the integration.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-redshift-integration-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-redshift-integration-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
+`TargetArn`  <a name="cfn-redshift-integration-targetarn"></a>
 The Amazon Resource Name (ARN) of the Amazon Redshift data warehouse to use as the target for replication.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-redshift-integration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-redshift-integration-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-redshift-integration-return-values-fn--getatt"></a>
 
-`CreateTime`
+####
+<a name="aws-resource-redshift-integration-return-values-fn--getatt-fn--getatt"></a>
 
+`CreateTime`  <a name="CreateTime-fn::getatt"></a>
 The time (UTC) when the integration was created.
 
-`IntegrationArn`
-
+`IntegrationArn`  <a name="IntegrationArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the integration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

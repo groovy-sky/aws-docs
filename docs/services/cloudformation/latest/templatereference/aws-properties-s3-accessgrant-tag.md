@@ -2,66 +2,50 @@
 title: "AWS::S3::AccessGrant Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::AccessGrant Tag
+<a name="aws-properties-s3-accessgrant-tag"></a>
 
 A container of a key value name pair.
 
 ## Syntax
+<a name="aws-properties-s3-accessgrant-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-accessgrant-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-s3-accessgrant-tag-key)" : {{String}},
+  "[Value](#cfn-s3-accessgrant-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-accessgrant-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-s3-accessgrant-tag-key): {{String}}
+  [Value](#cfn-s3-accessgrant-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-accessgrant-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-s3-accessgrant-tag-key"></a>
 Name of the object key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-s3-accessgrant-tag-value"></a>
 Value of the tag.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Grantee
-
-AWS::S3::AccessGrantsInstance
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,62 @@
 title: "AWS::BedrockAgentCore::OnlineEvaluationConfig Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OnlineEvaluationConfig Filter
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filter"></a>
 
-A filter that applies conditions to agent traces during online evaluation to determine which traces should be evaluated.
+ A filter that applies conditions to agent traces during online evaluation to determine which traces should be evaluated.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Operator" : String,
-  "Value" : FilterValue
+  "[Key](#cfn-bedrockagentcore-onlineevaluationconfig-filter-key)" : {{String}},
+  "[Operator](#cfn-bedrockagentcore-onlineevaluationconfig-filter-operator)" : {{String}},
+  "[Value](#cfn-bedrockagentcore-onlineevaluationconfig-filter-value)" : {{FilterValue}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Operator: String
-  Value:
-    FilterValue
-
+```
+  [Key](#cfn-bedrockagentcore-onlineevaluationconfig-filter-key): {{String}}
+  [Operator](#cfn-bedrockagentcore-onlineevaluationconfig-filter-operator): {{String}}
+  [Value](#cfn-bedrockagentcore-onlineevaluationconfig-filter-value): {{
+    FilterValue}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filter-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-filter-key"></a>
+ The key or field name to filter on within the agent trace data.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9._-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The key or field name to filter on within the agent trace data.
+`Operator`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-filter-operator"></a>
+ The comparison operator to use for filtering. Valid values include `Equals`, `NotEquals`, `GreaterThan`, `LessThan`, `GreaterThanOrEqual`, `LessThanOrEqual`, `Contains`, and `NotContains`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Equals | NotEquals | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual | Contains | NotContains`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9._-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operator`
-
-The comparison operator to use for filtering. Valid values include `Equals`, `NotEquals`, `GreaterThan`, `LessThan`, `GreaterThanOrEqual`, `LessThanOrEqual`, `Contains`, and `NotContains`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Equals | NotEquals | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual | Contains | NotContains`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The value to compare against using the specified operator.
-
-_Required_: Yes
-
-_Type_: [FilterValue](aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluatorReference
-
-FilterValue
+`Value`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-filter-value"></a>
+ The value to compare against using the specified operator.
+*Required*: Yes
+*Type*: [FilterValue](aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

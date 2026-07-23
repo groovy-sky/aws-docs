@@ -2,69 +2,51 @@
 title: "AWS::EC2::SpotFleet LaunchTemplateConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet LaunchTemplateConfig
+<a name="aws-properties-ec2-spotfleet-launchtemplateconfig"></a>
 
 Specifies a launch template and overrides.
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-launchtemplateconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-launchtemplateconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "LaunchTemplateSpecification" : FleetLaunchTemplateSpecification,
-  "Overrides" : [ LaunchTemplateOverrides, ... ]
+  "[LaunchTemplateSpecification](#cfn-ec2-spotfleet-launchtemplateconfig-launchtemplatespecification)" : {{FleetLaunchTemplateSpecification}},
+  "[Overrides](#cfn-ec2-spotfleet-launchtemplateconfig-overrides)" : {{[ LaunchTemplateOverrides, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-launchtemplateconfig-syntax.yaml"></a>
 
-```yaml
-
-  LaunchTemplateSpecification:
-    FleetLaunchTemplateSpecification
-  Overrides:
-    - LaunchTemplateOverrides
-
+```
+  [LaunchTemplateSpecification](#cfn-ec2-spotfleet-launchtemplateconfig-launchtemplatespecification): {{
+    FleetLaunchTemplateSpecification}}
+  [Overrides](#cfn-ec2-spotfleet-launchtemplateconfig-overrides): {{
+    - LaunchTemplateOverrides}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-launchtemplateconfig-properties"></a>
 
-`LaunchTemplateSpecification`
+`LaunchTemplateSpecification`  <a name="cfn-ec2-spotfleet-launchtemplateconfig-launchtemplatespecification"></a>
+The launch template to use. Make sure that the launch template does not contain the `NetworkInterfaceId` parameter because you can't specify a network interface ID in a Spot Fleet.
+*Required*: No
+*Type*: [FleetLaunchTemplateSpecification](aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The launch template to use. Make sure that the launch template does not contain the
-`NetworkInterfaceId` parameter because you can't specify a network interface
-ID in a Spot Fleet.
-
-_Required_: No
-
-_Type_: [FleetLaunchTemplateSpecification](aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Overrides`
-
-Any parameters that you specify override the same parameters in the launch
-template.
-
-_Required_: No
-
-_Type_: Array of [LaunchTemplateOverrides](aws-properties-ec2-spotfleet-launchtemplateoverrides.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceRequirementsRequest
-
-LaunchTemplateOverrides
+`Overrides`  <a name="cfn-ec2-spotfleet-launchtemplateconfig-overrides"></a>
+Any parameters that you specify override the same parameters in the launch template.
+*Required*: No
+*Type*: Array of [LaunchTemplateOverrides](aws-properties-ec2-spotfleet-launchtemplateoverrides.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

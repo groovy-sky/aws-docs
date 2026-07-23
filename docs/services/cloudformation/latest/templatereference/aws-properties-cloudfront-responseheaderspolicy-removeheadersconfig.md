@@ -2,54 +2,42 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy RemoveHeadersConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy RemoveHeadersConfig
+<a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig"></a>
 
-A list of HTTP header names that CloudFront removes from HTTP responses to requests that match the
-cache behavior that this response headers policy is attached to.
+A list of HTTP header names that CloudFront removes from HTTP responses to requests that match the cache behavior that this response headers policy is attached to.
 
 ## Syntax
+<a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Items" : [ RemoveHeader, ... ]
+  "[Items](#cfn-cloudfront-responseheaderspolicy-removeheadersconfig-items)" : {{[ RemoveHeader, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig-syntax.yaml"></a>
 
-```yaml
-
-  Items:
-    - RemoveHeader
-
+```
+  [Items](#cfn-cloudfront-responseheaderspolicy-removeheadersconfig-items): {{
+    - RemoveHeader}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig-properties"></a>
 
-`Items`
-
+`Items`  <a name="cfn-cloudfront-responseheaderspolicy-removeheadersconfig-items"></a>
 The list of HTTP header names.
-
-_Required_: Yes
-
-_Type_: Array of [RemoveHeader](aws-properties-cloudfront-responseheaderspolicy-removeheader.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RemoveHeader
-
-ResponseHeadersPolicyConfig
+*Required*: Yes
+*Type*: Array of [RemoveHeader](aws-properties-cloudfront-responseheaderspolicy-removeheader.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

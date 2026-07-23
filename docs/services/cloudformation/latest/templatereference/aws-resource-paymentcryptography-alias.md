@@ -2,114 +2,79 @@
 title: "AWS::PaymentCryptography::Alias"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PaymentCryptography::Alias
+<a name="aws-resource-paymentcryptography-alias"></a>
 
-Creates an _alias_, or a friendly name, for an AWS Payment Cryptography key. You can
-use an alias to identify a key in the console and when you call cryptographic operations
-such as [EncryptData](../../../../reference/payment-cryptography/latest/dataapireference/api-encryptdata.md) or [DecryptData](../../../../reference/payment-cryptography/latest/dataapireference/api-decryptdata.md).
+Creates an *alias*, or a friendly name, for an AWS Payment Cryptography key. You can use an alias to identify a key in the console and when you call cryptographic operations such as [EncryptData](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_EncryptData.html) or [DecryptData](https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/API_DecryptData.html).
 
-You can associate the alias with any key in the same AWS Region. Each
-alias is associated with only one key at a time, but a key can have multiple aliases. You
-can't create an alias without a key. The alias must be unique in the account and AWS Region, but you can create another alias with the same name in a different
-AWS Region.
+You can associate the alias with any key in the same AWS Region. Each alias is associated with only one key at a time, but a key can have multiple aliases. You can't create an alias without a key. The alias must be unique in the account and AWS Region, but you can create another alias with the same name in a different AWS Region.
 
-To change the key that's associated with the alias, call [UpdateAlias](../../../../reference/payment-cryptography/latest/apireference/api-updatealias.md).
-To delete the alias, call [DeleteAlias](../../../../reference/payment-cryptography/latest/apireference/api-deletealias.md).
-These operations don't affect the underlying key. To get the alias that you created, call
-[ListAliases](../../../../reference/payment-cryptography/latest/apireference/api-listaliases.md).
+To change the key that's associated with the alias, call [UpdateAlias](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_UpdateAlias.html). To delete the alias, call [DeleteAlias](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteAlias.html). These operations don't affect the underlying key. To get the alias that you created, call [ListAliases](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ListAliases.html).
 
 **Cross-account use**: This operation can't be used across different AWS accounts.
 
-**Related operations:**
-
-- [DeleteAlias](../../../../reference/payment-cryptography/latest/apireference/api-deletealias.md)
-
-- [GetAlias](../../../../reference/payment-cryptography/latest/apireference/api-getalias.md)
-
-- [ListAliases](../../../../reference/payment-cryptography/latest/apireference/api-listaliases.md)
-
-- [UpdateAlias](../../../../reference/payment-cryptography/latest/apireference/api-updatealias.md)
+ **Related operations:**
++  [DeleteAlias](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_DeleteAlias.html)
++  [GetAlias](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetAlias.html)
++  [ListAliases](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ListAliases.html)
++  [UpdateAlias](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_UpdateAlias.html)
 
 ## Syntax
+<a name="aws-resource-paymentcryptography-alias-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-paymentcryptography-alias-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::PaymentCryptography::Alias",
   "Properties" : {
-      "AliasName" : String,
-      "KeyArn" : String
+      "[AliasName](#cfn-paymentcryptography-alias-aliasname)" : {{String}},
+      "[KeyArn](#cfn-paymentcryptography-alias-keyarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-paymentcryptography-alias-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::PaymentCryptography::Alias
 Properties:
-  AliasName: String
-  KeyArn: String
-
+  [AliasName](#cfn-paymentcryptography-alias-aliasname): {{String}}
+  [KeyArn](#cfn-paymentcryptography-alias-keyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-paymentcryptography-alias-properties"></a>
 
-`AliasName`
-
-A friendly name that you can use to refer to a key. The value must begin with
-`alias/`.
-
-###### Important
-
+`AliasName`  <a name="cfn-paymentcryptography-alias-aliasname"></a>
+A friendly name that you can use to refer to a key. The value must begin with `alias/`.
 Do not include confidential or sensitive information in this field. This field may be displayed in plaintext in AWS CloudTrail logs and other output.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^alias/[a-zA-Z0-9/_-]+$`
+*Minimum*: `7`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^alias/[a-zA-Z0-9/_-]+$`
-
-_Minimum_: `7`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KeyArn`
-
+`KeyArn`  <a name="cfn-paymentcryptography-alias-keyarn"></a>
 The `KeyARN` of the key associated with the alias.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws:payment-cryptography:[a-z]{2}-[a-z]{1,16}-[0-9]+:[0-9]{12}:key/[0-9a-zA-Z]{16,64}$`
-
-_Minimum_: `70`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws:payment-cryptography:[a-z]{2}-[a-z]{1,16}-[0-9]+:[0-9]{12}:key/[0-9a-zA-Z]{16,64}$`
+*Minimum*: `70`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-paymentcryptography-alias-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Payment Cryptography
-
-AWS::PaymentCryptography::Key
+<a name="aws-resource-paymentcryptography-alias-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,53 @@
 title: "AWS::Lex::Bot SubSlotSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SubSlotSetting
+<a name="aws-properties-lex-bot-subslotsetting"></a>
 
-Specifications for the constituent sub slots and the
-expression for the composite slot.
+Specifications for the constituent sub slots and the expression for the composite slot.
 
 ## Syntax
+<a name="aws-properties-lex-bot-subslotsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-subslotsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "Expression" : String,
-  "SlotSpecifications" : {Key: Value, ...}
+  "[Expression](#cfn-lex-bot-subslotsetting-expression)" : {{String}},
+  "[SlotSpecifications](#cfn-lex-bot-subslotsetting-slotspecifications)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-subslotsetting-syntax.yaml"></a>
 
-```yaml
-
-  Expression: String
-  SlotSpecifications:
-    Key: Value
-
+```
+  [Expression](#cfn-lex-bot-subslotsetting-expression): {{String}}
+  [SlotSpecifications](#cfn-lex-bot-subslotsetting-slotspecifications): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-subslotsetting-properties"></a>
 
-`Expression`
-
+`Expression`  <a name="cfn-lex-bot-subslotsetting-expression"></a>
 The expression text for defining the constituent sub slots in the composite slot using logical AND and OR operators.
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9A-Za-z_\-\s\(\)]+`
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9A-Za-z_\-\s\(\)]+`
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotSpecifications`
-
+`SlotSpecifications`  <a name="cfn-lex-bot-subslotsetting-slotspecifications"></a>
 Specifications for the constituent sub slots of a composite slot.
-
-_Required_: No
-
-_Type_: Object of [Specifications](aws-properties-lex-bot-specifications.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StillWaitingResponseSpecification
-
-SubSlotTypeComposition
+*Required*: No
+*Type*: Object of [Specifications](aws-properties-lex-bot-specifications.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

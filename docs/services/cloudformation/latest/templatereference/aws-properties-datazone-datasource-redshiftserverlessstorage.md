@@ -2,58 +2,44 @@
 title: "AWS::DataZone::DataSource RedshiftServerlessStorage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource RedshiftServerlessStorage
+<a name="aws-properties-datazone-datasource-redshiftserverlessstorage"></a>
 
 The details of the Amazon Redshift Serverless workgroup storage.
 
 ## Syntax
+<a name="aws-properties-datazone-datasource-redshiftserverlessstorage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-datasource-redshiftserverlessstorage-syntax.json"></a>
 
-```json
-
+```
 {
-  "WorkgroupName" : String
+  "[WorkgroupName](#cfn-datazone-datasource-redshiftserverlessstorage-workgroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-datasource-redshiftserverlessstorage-syntax.yaml"></a>
 
-```yaml
-
-  WorkgroupName: String
-
+```
+  [WorkgroupName](#cfn-datazone-datasource-redshiftserverlessstorage-workgroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-datasource-redshiftserverlessstorage-properties"></a>
 
-`WorkgroupName`
-
+`WorkgroupName`  <a name="cfn-datazone-datasource-redshiftserverlessstorage-workgroupname"></a>
 The name of the Amazon Redshift Serverless workgroup.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9-]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedshiftRunConfigurationInput
-
-RedshiftStorage
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9-]+$`
+*Minimum*: `3`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

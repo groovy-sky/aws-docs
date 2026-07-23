@@ -2,233 +2,183 @@
 title: "AWS::SageMaker::ModelBiasJobDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelBiasJobDefinition
+<a name="aws-resource-sagemaker-modelbiasjobdefinition"></a>
 
 Creates the definition for a model bias job.
 
 ## Syntax
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::ModelBiasJobDefinition",
   "Properties" : {
-      "EndpointName" : String,
-      "JobDefinitionName" : String,
-      "JobResources" : MonitoringResources,
-      "ModelBiasAppSpecification" : ModelBiasAppSpecification,
-      "ModelBiasBaselineConfig" : ModelBiasBaselineConfig,
-      "ModelBiasJobInput" : ModelBiasJobInput,
-      "ModelBiasJobOutputConfig" : MonitoringOutputConfig,
-      "NetworkConfig" : NetworkConfig,
-      "RoleArn" : String,
-      "StoppingCondition" : StoppingCondition,
-      "Tags" : [ Tag, ... ]
+      "[EndpointName](#cfn-sagemaker-modelbiasjobdefinition-endpointname)" : {{String}},
+      "[JobDefinitionName](#cfn-sagemaker-modelbiasjobdefinition-jobdefinitionname)" : {{String}},
+      "[JobResources](#cfn-sagemaker-modelbiasjobdefinition-jobresources)" : {{MonitoringResources}},
+      "[ModelBiasAppSpecification](#cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification)" : {{ModelBiasAppSpecification}},
+      "[ModelBiasBaselineConfig](#cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig)" : {{ModelBiasBaselineConfig}},
+      "[ModelBiasJobInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput)" : {{ModelBiasJobInput}},
+      "[ModelBiasJobOutputConfig](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjoboutputconfig)" : {{MonitoringOutputConfig}},
+      "[NetworkConfig](#cfn-sagemaker-modelbiasjobdefinition-networkconfig)" : {{NetworkConfig}},
+      "[RoleArn](#cfn-sagemaker-modelbiasjobdefinition-rolearn)" : {{String}},
+      "[StoppingCondition](#cfn-sagemaker-modelbiasjobdefinition-stoppingcondition)" : {{StoppingCondition}},
+      "[Tags](#cfn-sagemaker-modelbiasjobdefinition-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::ModelBiasJobDefinition
 Properties:
-  EndpointName: String
-  JobDefinitionName: String
-  JobResources:
-    MonitoringResources
-  ModelBiasAppSpecification:
-    ModelBiasAppSpecification
-  ModelBiasBaselineConfig:
-    ModelBiasBaselineConfig
-  ModelBiasJobInput:
-    ModelBiasJobInput
-  ModelBiasJobOutputConfig:
-    MonitoringOutputConfig
-  NetworkConfig:
-    NetworkConfig
-  RoleArn: String
-  StoppingCondition:
-    StoppingCondition
-  Tags:
-    - Tag
-
+  [EndpointName](#cfn-sagemaker-modelbiasjobdefinition-endpointname): {{String}}
+  [JobDefinitionName](#cfn-sagemaker-modelbiasjobdefinition-jobdefinitionname): {{String}}
+  [JobResources](#cfn-sagemaker-modelbiasjobdefinition-jobresources): {{
+    MonitoringResources}}
+  [ModelBiasAppSpecification](#cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification): {{
+    ModelBiasAppSpecification}}
+  [ModelBiasBaselineConfig](#cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig): {{
+    ModelBiasBaselineConfig}}
+  [ModelBiasJobInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput): {{
+    ModelBiasJobInput}}
+  [ModelBiasJobOutputConfig](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjoboutputconfig): {{
+    MonitoringOutputConfig}}
+  [NetworkConfig](#cfn-sagemaker-modelbiasjobdefinition-networkconfig): {{
+    NetworkConfig}}
+  [RoleArn](#cfn-sagemaker-modelbiasjobdefinition-rolearn): {{String}}
+  [StoppingCondition](#cfn-sagemaker-modelbiasjobdefinition-stoppingcondition): {{
+    StoppingCondition}}
+  [Tags](#cfn-sagemaker-modelbiasjobdefinition-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-properties"></a>
 
-`EndpointName`
-
+`EndpointName`  <a name="cfn-sagemaker-modelbiasjobdefinition-endpointname"></a>
 The name of the endpoint used to run the model bias monitoring job.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`JobDefinitionName`  <a name="cfn-sagemaker-modelbiasjobdefinition-jobdefinitionname"></a>
+The name of the bias job definition. The name must be unique within an AWS Region in the AWS account.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`JobDefinitionName`
-
-The name of the bias job definition. The name must be unique within an AWS Region in the
-AWS account.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`JobResources`
-
+`JobResources`  <a name="cfn-sagemaker-modelbiasjobdefinition-jobresources"></a>
 Identifies the resources to deploy for a monitoring job.
+*Required*: Yes
+*Type*: [MonitoringResources](aws-properties-sagemaker-modelbiasjobdefinition-monitoringresources.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [MonitoringResources](aws-properties-sagemaker-modelbiasjobdefinition-monitoringresources.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelBiasAppSpecification`
-
+`ModelBiasAppSpecification`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification"></a>
 Configures the model bias job to run a specified Docker container image.
+*Required*: Yes
+*Type*: [ModelBiasAppSpecification](aws-properties-sagemaker-modelbiasjobdefinition-modelbiasappspecification.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [ModelBiasAppSpecification](aws-properties-sagemaker-modelbiasjobdefinition-modelbiasappspecification.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelBiasBaselineConfig`
-
+`ModelBiasBaselineConfig`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig"></a>
 The baseline configuration for a model bias job.
+*Required*: No
+*Type*: [ModelBiasBaselineConfig](aws-properties-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ModelBiasBaselineConfig](aws-properties-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelBiasJobInput`
-
+`ModelBiasJobInput`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput"></a>
 Inputs for the model bias job.
+*Required*: Yes
+*Type*: [ModelBiasJobInput](aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [ModelBiasJobInput](aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelBiasJobOutputConfig`
-
+`ModelBiasJobOutputConfig`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasjoboutputconfig"></a>
 The output configuration for monitoring jobs.
+*Required*: Yes
+*Type*: [MonitoringOutputConfig](aws-properties-sagemaker-modelbiasjobdefinition-monitoringoutputconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [MonitoringOutputConfig](aws-properties-sagemaker-modelbiasjobdefinition-monitoringoutputconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkConfig`
-
+`NetworkConfig`  <a name="cfn-sagemaker-modelbiasjobdefinition-networkconfig"></a>
 Networking options for a model bias job.
+*Required*: No
+*Type*: [NetworkConfig](aws-properties-sagemaker-modelbiasjobdefinition-networkconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RoleArn`  <a name="cfn-sagemaker-modelbiasjobdefinition-rolearn"></a>
+The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [NetworkConfig](aws-properties-sagemaker-modelbiasjobdefinition-networkconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your
-behalf.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StoppingCondition`
-
+`StoppingCondition`  <a name="cfn-sagemaker-modelbiasjobdefinition-stoppingcondition"></a>
 A time limit for how long the monitoring job is allowed to run before stopping.
+*Required*: No
+*Type*: [StoppingCondition](aws-properties-sagemaker-modelbiasjobdefinition-stoppingcondition.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [StoppingCondition](aws-properties-sagemaker-modelbiasjobdefinition-stoppingcondition.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-modelbiasjobdefinition-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-modelbiasjobdefinition-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-modelbiasjobdefinition-tag.md)
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the job definition.
+ When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the job definition.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-sagemaker-modelbiasjobdefinition-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time when the job definition was created.
 
-`JobDefinitionArn`
-
+`JobDefinitionArn`  <a name="JobDefinitionArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the job definition.
 
 ## Examples
+<a name="aws-resource-sagemaker-modelbiasjobdefinition--examples"></a>
 
 ### SageMaker ModelBiasJobDefinition Example
+<a name="aws-resource-sagemaker-modelbiasjobdefinition--examples--SageMaker_ModelBiasJobDefinition_Example"></a>
 
 The following example creates a Model Bias monitoring job definition.
 
 #### JSON
+<a name="aws-resource-sagemaker-modelbiasjobdefinition--examples--SageMaker_ModelBiasJobDefinition_Example--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a model bias job definition",
@@ -313,7 +263,7 @@ The following example creates a Model Bias monitoring job definition.
          "Type": "AWS::IAM::Role",
          "Properties": {
             "AssumeRolePolicyDocument": {
-               "Version": "2012-10-17",
+               "Version": "2012-10-17"		 	 	 ,
                "Statement": [
                   {
                      "Effect": "Allow",
@@ -333,7 +283,7 @@ The following example creates a Model Bias monitoring job definition.
                {
                   "PolicyName": "root",
                   "PolicyDocument": {
-                     "Version": "2012-10-17",
+                     "Version": "2012-10-17"		 	 	 ,
                      "Statement": [
                         {
                            "Effect": "Allow",
@@ -350,7 +300,7 @@ The following example creates a Model Bias monitoring job definition.
          "Type": "AWS::IAM::Role",
          "Properties": {
             "AssumeRolePolicyDocument": {
-               "Version": "2012-10-17",
+               "Version": "2012-10-17"		 	 	 ,
                "Statement": [
                   {
                      "Effect": "Allow",
@@ -434,9 +384,9 @@ The following example creates a Model Bias monitoring job definition.
 ```
 
 #### YAML
+<a name="aws-resource-sagemaker-modelbiasjobdefinition--examples--SageMaker_ModelBiasJobDefinition_Example--yaml"></a>
 
-```yaml
-
+```
 ---
 
 AWSTemplateFormatVersion: '2010-09-09'
@@ -574,11 +524,5 @@ Resources:
       StoppingCondition:
         MaxRuntimeInSeconds: 2000
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfig
-
-BatchTransformInput
 
 All content copied from https://docs.aws.amazon.com/.

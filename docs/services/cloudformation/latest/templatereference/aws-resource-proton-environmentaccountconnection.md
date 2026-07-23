@@ -2,200 +2,143 @@
 title: "AWS::Proton::EnvironmentAccountConnection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Proton::EnvironmentAccountConnection
+<a name="aws-resource-proton-environmentaccountconnection"></a>
 
 Detailed data of an AWS Proton environment account connection resource.
 
 ## Syntax
+<a name="aws-resource-proton-environmentaccountconnection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-proton-environmentaccountconnection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Proton::EnvironmentAccountConnection",
   "Properties" : {
-      "CodebuildRoleArn" : String,
-      "ComponentRoleArn" : String,
-      "EnvironmentAccountId" : String,
-      "EnvironmentName" : String,
-      "ManagementAccountId" : String,
-      "RoleArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[CodebuildRoleArn](#cfn-proton-environmentaccountconnection-codebuildrolearn)" : {{String}},
+      "[ComponentRoleArn](#cfn-proton-environmentaccountconnection-componentrolearn)" : {{String}},
+      "[EnvironmentAccountId](#cfn-proton-environmentaccountconnection-environmentaccountid)" : {{String}},
+      "[EnvironmentName](#cfn-proton-environmentaccountconnection-environmentname)" : {{String}},
+      "[ManagementAccountId](#cfn-proton-environmentaccountconnection-managementaccountid)" : {{String}},
+      "[RoleArn](#cfn-proton-environmentaccountconnection-rolearn)" : {{String}},
+      "[Tags](#cfn-proton-environmentaccountconnection-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-proton-environmentaccountconnection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Proton::EnvironmentAccountConnection
 Properties:
-  CodebuildRoleArn: String
-  ComponentRoleArn: String
-  EnvironmentAccountId: String
-  EnvironmentName: String
-  ManagementAccountId: String
-  RoleArn: String
-  Tags:
-    - Tag
-
+  [CodebuildRoleArn](#cfn-proton-environmentaccountconnection-codebuildrolearn): {{String}}
+  [ComponentRoleArn](#cfn-proton-environmentaccountconnection-componentrolearn): {{String}}
+  [EnvironmentAccountId](#cfn-proton-environmentaccountconnection-environmentaccountid): {{String}}
+  [EnvironmentName](#cfn-proton-environmentaccountconnection-environmentname): {{String}}
+  [ManagementAccountId](#cfn-proton-environmentaccountconnection-managementaccountid): {{String}}
+  [RoleArn](#cfn-proton-environmentaccountconnection-rolearn): {{String}}
+  [Tags](#cfn-proton-environmentaccountconnection-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-proton-environmentaccountconnection-properties"></a>
 
-`CodebuildRoleArn`
+`CodebuildRoleArn`  <a name="cfn-proton-environmentaccountconnection-codebuildrolearn"></a>
+The Amazon Resource Name (ARN) of an IAM service role in the environment account. AWS Proton uses this role to provision infrastructure resources using CodeBuild-based provisioning in the associated environment account.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/([\w+=,.@-]{1,512}[/:])*([\w+=,.@-]{1,64})$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of an IAM service role in the environment account. AWS Proton uses this role to provision infrastructure resources
-using CodeBuild-based provisioning in the associated environment account.
+`ComponentRoleArn`  <a name="cfn-proton-environmentaccountconnection-componentrolearn"></a>
+The Amazon Resource Name (ARN) of the IAM service role that AWS Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account.
+The environment account connection must have a `componentRoleArn` to allow directly defined components to be associated with any environments running in the account.
+For more information about components, see [AWS Proton components](https://docs.aws.amazon.com/proton/latest/userguide/ag-components.html) in the *AWS Proton User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/([\w+=,.@-]{1,512}[/:])*([\w+=,.@-]{1,64})$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/([\w+=,.@-]{1,512}[/:])*([\w+=,.@-]{1,64})$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComponentRoleArn`
-
-The Amazon Resource Name (ARN) of the IAM service role that AWS Proton uses when provisioning directly defined components in the associated
-environment account. It determines the scope of infrastructure that a component can provision in the account.
-
-The environment account connection must have a `componentRoleArn` to allow directly defined components to be associated with any
-environments running in the account.
-
-For more information about components, see
-[AWS Proton components](../../../proton/latest/userguide/ag-components.md) in the
-_AWS Proton User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/([\w+=,.@-]{1,512}[/:])*([\w+=,.@-]{1,64})$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentAccountId`
-
+`EnvironmentAccountId`  <a name="cfn-proton-environmentaccountconnection-environmentaccountid"></a>
 The environment account that's connected to the environment account connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^\d{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\d{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentName`
-
+`EnvironmentName`  <a name="cfn-proton-environmentaccountconnection-environmentname"></a>
 The name of the environment that's associated with the environment account connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9A-Za-z]+[0-9A-Za-z_\-]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z]+[0-9A-Za-z_\-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManagementAccountId`
-
+`ManagementAccountId`  <a name="cfn-proton-environmentaccountconnection-managementaccountid"></a>
 The ID of the management account that's connected to the environment account connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^\d{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\d{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-proton-environmentaccountconnection-rolearn"></a>
 The IAM service role that's associated with the environment account connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/([\w+=,.@-]{1,512}[/:])*([\w+=,.@-]{1,64})$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/([\w+=,.@-]{1,512}[/:])*([\w+=,.@-]{1,64})$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-proton-environmentaccountconnection-tags"></a>
 An optional list of metadata items that you can associate with the AWS Proton environment account connection. A tag is a key-value pair.
-
-For more information, see [AWS Proton resources and tagging](../../../proton/latest/userguide/resources.md) in the
-_AWS Proton User Guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-proton-environmentaccountconnection-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [AWS Proton resources and tagging](https://docs.aws.amazon.com/proton/latest/userguide/resources.html) in the *AWS Proton User Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-proton-environmentaccountconnection-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-proton-environmentaccountconnection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-proton-environmentaccountconnection-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the environment account connection.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-proton-environmentaccountconnection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-proton-environmentaccountconnection-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Returns the environment account connection ARN.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 Returns the environment account connection ID.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 Returns the environment account connection status.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Proton
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

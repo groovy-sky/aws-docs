@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template BodySectionRepeatPageBreakConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BodySectionRepeatPageBreakConfiguration
+<a name="aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration"></a>
 
 The page break configuration to apply for each repeating instance.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "After" : SectionAfterPageBreak
+  "[After](#cfn-quicksight-template-bodysectionrepeatpagebreakconfiguration-after)" : {{SectionAfterPageBreak}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  After:
-    SectionAfterPageBreak
-
+```
+  [After](#cfn-quicksight-template-bodysectionrepeatpagebreakconfiguration-after): {{
+    SectionAfterPageBreak}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration-properties"></a>
 
-`After`
-
+`After`  <a name="cfn-quicksight-template-bodysectionrepeatpagebreakconfiguration-after"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [SectionAfterPageBreak](aws-properties-quicksight-template-sectionafterpagebreak.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BodySectionRepeatDimensionConfiguration
-
-BoxPlotAggregatedFieldWells
+*Required*: No
+*Type*: [SectionAfterPageBreak](aws-properties-quicksight-template-sectionafterpagebreak.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

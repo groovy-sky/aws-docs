@@ -2,65 +2,50 @@
 title: "AWS::IoTTwinMaker::ComponentType DataConnector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::ComponentType DataConnector
+<a name="aws-properties-iottwinmaker-componenttype-dataconnector"></a>
 
 The data connector.
 
 ## Syntax
+<a name="aws-properties-iottwinmaker-componenttype-dataconnector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iottwinmaker-componenttype-dataconnector-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsNative" : Boolean,
-  "Lambda" : LambdaFunction
+  "[IsNative](#cfn-iottwinmaker-componenttype-dataconnector-isnative)" : {{Boolean}},
+  "[Lambda](#cfn-iottwinmaker-componenttype-dataconnector-lambda)" : {{LambdaFunction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iottwinmaker-componenttype-dataconnector-syntax.yaml"></a>
 
-```yaml
-
-  IsNative: Boolean
-  Lambda:
-    LambdaFunction
-
+```
+  [IsNative](#cfn-iottwinmaker-componenttype-dataconnector-isnative): {{Boolean}}
+  [Lambda](#cfn-iottwinmaker-componenttype-dataconnector-lambda): {{
+    LambdaFunction}}
 ```
 
 ## Properties
+<a name="aws-properties-iottwinmaker-componenttype-dataconnector-properties"></a>
 
-`IsNative`
-
+`IsNative`  <a name="cfn-iottwinmaker-componenttype-dataconnector-isnative"></a>
 A boolean value that specifies whether the data connector is native to IoT TwinMaker.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Lambda`
-
+`Lambda`  <a name="cfn-iottwinmaker-componenttype-dataconnector-lambda"></a>
 The Lambda function associated with the data connector.
-
-_Required_: No
-
-_Type_: [LambdaFunction](aws-properties-iottwinmaker-componenttype-lambdafunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CompositeComponentType
-
-DataType
+*Required*: No
+*Type*: [LambdaFunction](aws-properties-iottwinmaker-componenttype-lambdafunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

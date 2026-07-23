@@ -2,85 +2,61 @@
 title: "AWS::Wisdom::AIAgent KnowledgeBaseAssociationConfigurationData"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent KnowledgeBaseAssociationConfigurationData
+<a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata"></a>
 
-The data of the configuration for a `KNOWLEDGE_BASE` type Amazon Q in
-Connect Assistant Association.
+The data of the configuration for a `KNOWLEDGE_BASE` type Amazon Q in Connect Assistant Association.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContentTagFilter" : TagFilter,
-  "MaxResults" : Number,
-  "OverrideKnowledgeBaseSearchType" : String
+  "[ContentTagFilter](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-contenttagfilter)" : {{TagFilter}},
+  "[MaxResults](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-maxresults)" : {{Number}},
+  "[OverrideKnowledgeBaseSearchType](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-overrideknowledgebasesearchtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata-syntax.yaml"></a>
 
-```yaml
-
-  ContentTagFilter:
-    TagFilter
-  MaxResults: Number
-  OverrideKnowledgeBaseSearchType: String
-
+```
+  [ContentTagFilter](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-contenttagfilter): {{
+    TagFilter}}
+  [MaxResults](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-maxresults): {{Number}}
+  [OverrideKnowledgeBaseSearchType](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-overrideknowledgebasesearchtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata-properties"></a>
 
-`ContentTagFilter`
-
+`ContentTagFilter`  <a name="cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-contenttagfilter"></a>
 An object that can be used to specify Tag conditions.
+*Required*: No
+*Type*: [TagFilter](aws-properties-wisdom-aiagent-tagfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TagFilter](aws-properties-wisdom-aiagent-tagfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxResults`
-
+`MaxResults`  <a name="cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-maxresults"></a>
 The maximum number of results to return per page.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OverrideKnowledgeBaseSearchType`
-
-The search type to be used against the Knowledge Base for this request. The values can be `SEMANTIC`
-which uses vector embeddings or `HYBRID` which use vector embeddings and raw text
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HYBRID | SEMANTIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EmailResponseAIAgentConfiguration
-
-ManualSearchAIAgentConfiguration
+`OverrideKnowledgeBaseSearchType`  <a name="cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-overrideknowledgebasesearchtype"></a>
+The search type to be used against the Knowledge Base for this request. The values can be `SEMANTIC` which uses vector embeddings or `HYBRID` which use vector embeddings and raw text
+*Required*: No
+*Type*: String
+*Allowed values*: `HYBRID | SEMANTIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

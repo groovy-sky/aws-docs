@@ -2,64 +2,49 @@
 title: "AWS::MediaLive::SdiSource Tags"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::SdiSource Tags
+<a name="aws-properties-medialive-sdisource-tags"></a>
 
-The `Tags` property type specifies Property description not available. for an [AWS::MediaLive::SdiSource](aws-resource-medialive-sdisource.md).
+<a name="aws-properties-medialive-sdisource-tags-description"></a>The `Tags` property type specifies Property description not available. for an [AWS::MediaLive::SdiSource](aws-resource-medialive-sdisource.md).
 
 ## Syntax
+<a name="aws-properties-medialive-sdisource-tags-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-medialive-sdisource-tags-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-medialive-sdisource-tags-key)" : {{String}},
+  "[Value](#cfn-medialive-sdisource-tags-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-medialive-sdisource-tags-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-medialive-sdisource-tags-key): {{String}}
+  [Value](#cfn-medialive-sdisource-tags-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-medialive-sdisource-tags-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-medialive-sdisource-tags-key"></a>
+The key name of the tag.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaLive::SdiSource
-
-AWS::MediaLive::SignalMap
+`Value`  <a name="cfn-medialive-sdisource-tags-value"></a>
+The value for the tag.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

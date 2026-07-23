@@ -2,289 +2,202 @@
 title: "AWS::QuickSight::Analysis ComboChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ComboChartConfiguration
+<a name="aws-properties-quicksight-analysis-combochartconfiguration"></a>
 
 The configuration of a `ComboChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-combochartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-combochartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BarDataLabels" : DataLabelOptions,
-  "BarsArrangement" : String,
-  "CategoryAxis" : AxisDisplayOptions,
-  "CategoryLabelOptions" : ChartAxisLabelOptions,
-  "ColorLabelOptions" : ChartAxisLabelOptions,
-  "FieldWells" : ComboChartFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "LineDataLabels" : DataLabelOptions,
-  "PrimaryYAxisDisplayOptions" : AxisDisplayOptions,
-  "PrimaryYAxisLabelOptions" : ChartAxisLabelOptions,
-  "ReferenceLines" : [ ReferenceLine, ... ],
-  "SecondaryYAxisDisplayOptions" : AxisDisplayOptions,
-  "SecondaryYAxisLabelOptions" : ChartAxisLabelOptions,
-  "SingleAxisOptions" : SingleAxisOptions,
-  "SortConfiguration" : ComboChartSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "VisualPalette" : VisualPalette
+  "[BarDataLabels](#cfn-quicksight-analysis-combochartconfiguration-bardatalabels)" : {{DataLabelOptions}},
+  "[BarsArrangement](#cfn-quicksight-analysis-combochartconfiguration-barsarrangement)" : {{String}},
+  "[CategoryAxis](#cfn-quicksight-analysis-combochartconfiguration-categoryaxis)" : {{AxisDisplayOptions}},
+  "[CategoryLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ColorLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-colorlabeloptions)" : {{ChartAxisLabelOptions}},
+  "[FieldWells](#cfn-quicksight-analysis-combochartconfiguration-fieldwells)" : {{ComboChartFieldWells}},
+  "[Interactions](#cfn-quicksight-analysis-combochartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-analysis-combochartconfiguration-legend)" : {{LegendOptions}},
+  "[LineDataLabels](#cfn-quicksight-analysis-combochartconfiguration-linedatalabels)" : {{DataLabelOptions}},
+  "[PrimaryYAxisDisplayOptions](#cfn-quicksight-analysis-combochartconfiguration-primaryyaxisdisplayoptions)" : {{AxisDisplayOptions}},
+  "[PrimaryYAxisLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-primaryyaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ReferenceLines](#cfn-quicksight-analysis-combochartconfiguration-referencelines)" : {{[ ReferenceLine, ... ]}},
+  "[SecondaryYAxisDisplayOptions](#cfn-quicksight-analysis-combochartconfiguration-secondaryyaxisdisplayoptions)" : {{AxisDisplayOptions}},
+  "[SecondaryYAxisLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-secondaryyaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[SingleAxisOptions](#cfn-quicksight-analysis-combochartconfiguration-singleaxisoptions)" : {{SingleAxisOptions}},
+  "[SortConfiguration](#cfn-quicksight-analysis-combochartconfiguration-sortconfiguration)" : {{ComboChartSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-analysis-combochartconfiguration-tooltip)" : {{TooltipOptions}},
+  "[VisualPalette](#cfn-quicksight-analysis-combochartconfiguration-visualpalette)" : {{VisualPalette}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-combochartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BarDataLabels:
-    DataLabelOptions
-  BarsArrangement: String
-  CategoryAxis:
-    AxisDisplayOptions
-  CategoryLabelOptions:
-    ChartAxisLabelOptions
-  ColorLabelOptions:
-    ChartAxisLabelOptions
-  FieldWells:
-    ComboChartFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  LineDataLabels:
-    DataLabelOptions
-  PrimaryYAxisDisplayOptions:
-    AxisDisplayOptions
-  PrimaryYAxisLabelOptions:
-    ChartAxisLabelOptions
-  ReferenceLines:
-    - ReferenceLine
-  SecondaryYAxisDisplayOptions:
-    AxisDisplayOptions
-  SecondaryYAxisLabelOptions:
-    ChartAxisLabelOptions
-  SingleAxisOptions:
-    SingleAxisOptions
-  SortConfiguration:
-    ComboChartSortConfiguration
-  Tooltip:
-    TooltipOptions
-  VisualPalette:
-    VisualPalette
-
+```
+  [BarDataLabels](#cfn-quicksight-analysis-combochartconfiguration-bardatalabels): {{
+    DataLabelOptions}}
+  [BarsArrangement](#cfn-quicksight-analysis-combochartconfiguration-barsarrangement): {{String}}
+  [CategoryAxis](#cfn-quicksight-analysis-combochartconfiguration-categoryaxis): {{
+    AxisDisplayOptions}}
+  [CategoryLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-categorylabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ColorLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-colorlabeloptions): {{
+    ChartAxisLabelOptions}}
+  [FieldWells](#cfn-quicksight-analysis-combochartconfiguration-fieldwells): {{
+    ComboChartFieldWells}}
+  [Interactions](#cfn-quicksight-analysis-combochartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-analysis-combochartconfiguration-legend): {{
+    LegendOptions}}
+  [LineDataLabels](#cfn-quicksight-analysis-combochartconfiguration-linedatalabels): {{
+    DataLabelOptions}}
+  [PrimaryYAxisDisplayOptions](#cfn-quicksight-analysis-combochartconfiguration-primaryyaxisdisplayoptions): {{
+    AxisDisplayOptions}}
+  [PrimaryYAxisLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-primaryyaxislabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ReferenceLines](#cfn-quicksight-analysis-combochartconfiguration-referencelines): {{
+    - ReferenceLine}}
+  [SecondaryYAxisDisplayOptions](#cfn-quicksight-analysis-combochartconfiguration-secondaryyaxisdisplayoptions): {{
+    AxisDisplayOptions}}
+  [SecondaryYAxisLabelOptions](#cfn-quicksight-analysis-combochartconfiguration-secondaryyaxislabeloptions): {{
+    ChartAxisLabelOptions}}
+  [SingleAxisOptions](#cfn-quicksight-analysis-combochartconfiguration-singleaxisoptions): {{
+    SingleAxisOptions}}
+  [SortConfiguration](#cfn-quicksight-analysis-combochartconfiguration-sortconfiguration): {{
+    ComboChartSortConfiguration}}
+  [Tooltip](#cfn-quicksight-analysis-combochartconfiguration-tooltip): {{
+    TooltipOptions}}
+  [VisualPalette](#cfn-quicksight-analysis-combochartconfiguration-visualpalette): {{
+    VisualPalette}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-combochartconfiguration-properties"></a>
 
-`BarDataLabels`
-
+`BarDataLabels`  <a name="cfn-quicksight-analysis-combochartconfiguration-bardatalabels"></a>
 The options that determine if visual data labels are displayed.
-
 The data label options for a bar in a combo chart.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BarsArrangement`
-
+`BarsArrangement`  <a name="cfn-quicksight-analysis-combochartconfiguration-barsarrangement"></a>
 Determines the bar arrangement in a combo chart. The following are valid values in this structure:
++ `CLUSTERED`: For clustered bar combo charts.
++ `STACKED`: For stacked bar combo charts.
++ `STACKED_PERCENT`: Do not use. If you use this value, the operation returns a validation error.
+*Required*: No
+*Type*: String
+*Allowed values*: `CLUSTERED | STACKED | STACKED_PERCENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `CLUSTERED`: For clustered bar combo charts.
-
-- `STACKED`: For stacked bar combo charts.
-
-- `STACKED_PERCENT`: Do not use. If you use this value, the operation returns a validation error.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CLUSTERED | STACKED | STACKED_PERCENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryAxis`
-
+`CategoryAxis`  <a name="cfn-quicksight-analysis-combochartconfiguration-categoryaxis"></a>
 The category axis of a combo chart.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryLabelOptions`
-
+`CategoryLabelOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-categorylabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) of a combo chart category (group/color) field well.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColorLabelOptions`
-
+`ColorLabelOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-colorlabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) of a combo chart's color field well.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-analysis-combochartconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [ComboChartFieldWells](aws-properties-quicksight-analysis-combochartfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ComboChartFieldWells](aws-properties-quicksight-analysis-combochartfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-analysis-combochartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-analysis-combochartconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LineDataLabels`
-
+`LineDataLabels`  <a name="cfn-quicksight-analysis-combochartconfiguration-linedatalabels"></a>
 The options that determine if visual data labels are displayed.
-
 The data label options for a line in a combo chart.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryYAxisDisplayOptions`
-
+`PrimaryYAxisDisplayOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-primaryyaxisdisplayoptions"></a>
 The label display options (grid line, range, scale, and axis step) of a combo chart's primary y-axis (bar) field well.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryYAxisLabelOptions`
-
+`PrimaryYAxisLabelOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-primaryyaxislabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) of a combo chart's primary y-axis (bar) field well.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReferenceLines`
-
+`ReferenceLines`  <a name="cfn-quicksight-analysis-combochartconfiguration-referencelines"></a>
 The reference line setup of the visual.
+*Required*: No
+*Type*: Array of [ReferenceLine](aws-properties-quicksight-analysis-referenceline.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ReferenceLine](aws-properties-quicksight-analysis-referenceline.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryYAxisDisplayOptions`
-
+`SecondaryYAxisDisplayOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-secondaryyaxisdisplayoptions"></a>
 The label display options (grid line, range, scale, axis step) of a combo chart's secondary y-axis (line) field well.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryYAxisLabelOptions`
-
+`SecondaryYAxisLabelOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-secondaryyaxislabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) of a combo chart's secondary y-axis(line) field well.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingleAxisOptions`
-
+`SingleAxisOptions`  <a name="cfn-quicksight-analysis-combochartconfiguration-singleaxisoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [SingleAxisOptions](aws-properties-quicksight-analysis-singleaxisoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SingleAxisOptions](aws-properties-quicksight-analysis-singleaxisoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-analysis-combochartconfiguration-sortconfiguration"></a>
 The sort configuration of a `ComboChartVisual`.
+*Required*: No
+*Type*: [ComboChartSortConfiguration](aws-properties-quicksight-analysis-combochartsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ComboChartSortConfiguration](aws-properties-quicksight-analysis-combochartsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-analysis-combochartconfiguration-tooltip"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-analysis-combochartconfiguration-visualpalette"></a>
 The palette (chart color) display setup of the visual.
-
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComboChartAggregatedFieldWells
-
-ComboChartFieldWells
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

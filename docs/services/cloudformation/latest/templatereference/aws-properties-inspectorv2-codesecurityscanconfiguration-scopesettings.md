@@ -2,57 +2,42 @@
 title: "AWS::InspectorV2::CodeSecurityScanConfiguration ScopeSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CodeSecurityScanConfiguration ScopeSettings
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings"></a>
 
-The scope settings that define which repositories will be scanned. If the
-`ScopeSetting` parameter is `ALL` the scan configuration applies
-to all existing and future projects imported into Amazon Inspector.
+The scope settings that define which repositories will be scanned. If the `ScopeSetting` parameter is `ALL` the scan configuration applies to all existing and future projects imported into Amazon Inspector.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "projectSelectionScope" : String
+  "[projectSelectionScope](#cfn-inspectorv2-codesecurityscanconfiguration-scopesettings-projectselectionscope)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings-syntax.yaml"></a>
 
-```yaml
-
-  projectSelectionScope: String
-
+```
+  [projectSelectionScope](#cfn-inspectorv2-codesecurityscanconfiguration-scopesettings-projectselectionscope): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings-properties"></a>
 
-`projectSelectionScope`
-
-The scope of projects to be selected for scanning within the integrated
-repositories.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PeriodicScanConfiguration
-
-AWS::InspectorV2::Filter
+`projectSelectionScope`  <a name="cfn-inspectorv2-codesecurityscanconfiguration-scopesettings-projectselectionscope"></a>
+The scope of projects to be selected for scanning within the integrated repositories.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

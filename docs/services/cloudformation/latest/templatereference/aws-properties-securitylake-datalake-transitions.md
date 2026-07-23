@@ -2,73 +2,50 @@
 title: "AWS::SecurityLake::DataLake Transitions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::DataLake Transitions
+<a name="aws-properties-securitylake-datalake-transitions"></a>
 
-Provides transition lifecycle details of the Amazon Security Lake object. For more information about Amazon S3 Lifecycle
-configurations, see [Managing your storage\
-lifecycle](../../../s3/latest/userguide/object-lifecycle-mgmt.md) in the _Amazon Simple Storage Service User Guide_.
+Provides transition lifecycle details of the Amazon Security Lake object. For more information about Amazon S3 Lifecycle configurations, see [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon Simple Storage Service User Guide*.
 
 ## Syntax
+<a name="aws-properties-securitylake-datalake-transitions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securitylake-datalake-transitions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Days" : Integer,
-  "StorageClass" : String
+  "[Days](#cfn-securitylake-datalake-transitions-days)" : {{Integer}},
+  "[StorageClass](#cfn-securitylake-datalake-transitions-storageclass)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securitylake-datalake-transitions-syntax.yaml"></a>
 
-```yaml
-
-  Days: Integer
-  StorageClass: String
-
+```
+  [Days](#cfn-securitylake-datalake-transitions-days): {{Integer}}
+  [StorageClass](#cfn-securitylake-datalake-transitions-storageclass): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securitylake-datalake-transitions-properties"></a>
 
-`Days`
-
+`Days`  <a name="cfn-securitylake-datalake-transitions-days"></a>
 The number of days before data transitions to a different S3 Storage Class in the Amazon Security Lake object.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageClass`
-
-The list of storage classes that you can choose from based on the data access,
-resiliency, and cost requirements of your workloads.
-The default storage class is **S3 Standard**.
-For information about other storage classes, see
-[Setting the storage class of an object](../../../s3/latest/userguide/sc-howtoset.md)
-in the _Amazon S3 User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SecurityLake::Subscriber
+`StorageClass`  <a name="cfn-securitylake-datalake-transitions-storageclass"></a>
+The list of storage classes that you can choose from based on the data access, resiliency, and cost requirements of your workloads. The default storage class is **S3 Standard**. For information about other storage classes, see [Setting the storage class of an object](https://docs.aws.amazon.com/AmazonS3/latest/userguide/sc-howtoset.html) in the *Amazon S3 User Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Dashboard WordCloudSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard WordCloudSortConfiguration
+<a name="aws-properties-quicksight-dashboard-wordcloudsortconfiguration"></a>
 
 The sort configuration of a word cloud visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-wordcloudsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-wordcloudsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryItemsLimit" : ItemsLimitConfiguration,
-  "CategorySort" : [ FieldSortOptions, ... ]
+  "[CategoryItemsLimit](#cfn-quicksight-dashboard-wordcloudsortconfiguration-categoryitemslimit)" : {{ItemsLimitConfiguration}},
+  "[CategorySort](#cfn-quicksight-dashboard-wordcloudsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-wordcloudsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CategoryItemsLimit:
-    ItemsLimitConfiguration
-  CategorySort:
-    - FieldSortOptions
-
+```
+  [CategoryItemsLimit](#cfn-quicksight-dashboard-wordcloudsortconfiguration-categoryitemslimit): {{
+    ItemsLimitConfiguration}}
+  [CategorySort](#cfn-quicksight-dashboard-wordcloudsortconfiguration-categorysort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-wordcloudsortconfiguration-properties"></a>
 
-`CategoryItemsLimit`
-
+`CategoryItemsLimit`  <a name="cfn-quicksight-dashboard-wordcloudsortconfiguration-categoryitemslimit"></a>
 The limit on the number of groups that are displayed in a word cloud.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategorySort`
-
+`CategorySort`  <a name="cfn-quicksight-dashboard-wordcloudsortconfiguration-categorysort"></a>
 The sort configuration of group by fields.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordCloudOptions
-
-WordCloudVisual
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

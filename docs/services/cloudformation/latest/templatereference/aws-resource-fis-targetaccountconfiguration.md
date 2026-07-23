@@ -2,110 +2,81 @@
 title: "AWS::FIS::TargetAccountConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FIS::TargetAccountConfiguration
+<a name="aws-resource-fis-targetaccountconfiguration"></a>
 
-Creates a target account configuration for the experiment template. A target account configuration
-is required when `accountTargeting` of `experimentOptions` is set to `multi-account`.
-For more information, see [experiment options](../../../fis/latest/userguide/experiment-options.md)
-in the _AWS Fault Injection Service User Guide_.
+Creates a target account configuration for the experiment template. A target account configuration is required when `accountTargeting` of `experimentOptions` is set to `multi-account`. For more information, see [experiment options](https://docs.aws.amazon.com/fis/latest/userguide/experiment-options.html) in the *AWS Fault Injection Service User Guide*.
 
 ## Syntax
+<a name="aws-resource-fis-targetaccountconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-fis-targetaccountconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::FIS::TargetAccountConfiguration",
   "Properties" : {
-      "AccountId" : String,
-      "Description" : String,
-      "ExperimentTemplateId" : String,
-      "RoleArn" : String
+      "[AccountId](#cfn-fis-targetaccountconfiguration-accountid)" : {{String}},
+      "[Description](#cfn-fis-targetaccountconfiguration-description)" : {{String}},
+      "[ExperimentTemplateId](#cfn-fis-targetaccountconfiguration-experimenttemplateid)" : {{String}},
+      "[RoleArn](#cfn-fis-targetaccountconfiguration-rolearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-fis-targetaccountconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::FIS::TargetAccountConfiguration
 Properties:
-  AccountId: String
-  Description: String
-  ExperimentTemplateId: String
-  RoleArn: String
-
+  [AccountId](#cfn-fis-targetaccountconfiguration-accountid): {{String}}
+  [Description](#cfn-fis-targetaccountconfiguration-description): {{String}}
+  [ExperimentTemplateId](#cfn-fis-targetaccountconfiguration-experimenttemplateid): {{String}}
+  [RoleArn](#cfn-fis-targetaccountconfiguration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-fis-targetaccountconfiguration-properties"></a>
 
-`AccountId`
-
+`AccountId`  <a name="cfn-fis-targetaccountconfiguration-accountid"></a>
 The AWS account ID of the target account.
+*Required*: Yes
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-fis-targetaccountconfiguration-description"></a>
 The description of the target account.
+*Required*: No
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExperimentTemplateId`
-
+`ExperimentTemplateId`  <a name="cfn-fis-targetaccountconfiguration-experimenttemplateid"></a>
 The ID of the experiment template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\S]+`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\S]+`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-fis-targetaccountconfiguration-rolearn"></a>
 The Amazon Resource Name (ARN) of an IAM role for the target account.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `1224`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Maximum*: `1224`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-fis-targetaccountconfiguration-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Configuration
-
-Next
+<a name="aws-resource-fis-targetaccountconfiguration-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

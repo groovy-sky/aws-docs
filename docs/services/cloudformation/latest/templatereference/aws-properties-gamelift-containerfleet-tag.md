@@ -2,83 +2,63 @@
 title: "AWS::GameLift::ContainerFleet Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerFleet Tag
+<a name="aws-properties-gamelift-containerfleet-tag"></a>
 
 A label that you can assign to a Amazon GameLift Servers resource.
 
-**Learn more**
+ **Learn more**
 
-[Tagging AWS\
-Resources](../../../../general/latest/gr/aws-tagging.md) in the _AWS General Reference_
+[Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*
 
-[AWS Tagging Strategies](https://aws.amazon.com/answers/account-management/aws-tagging-strategies)
+ [AWS Tagging Strategies](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/)
 
-**Related actions**
+ **Related actions**
 
-[All APIs by task](../../../../reference/gamelift/latest/developerguide/reference-awssdk.md#reference-awssdk-resources-fleets)
+ [All APIs by task](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html#reference-awssdk-resources-fleets)
 
 ## Syntax
+<a name="aws-properties-gamelift-containerfleet-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-containerfleet-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-gamelift-containerfleet-tag-key)" : {{String}},
+  "[Value](#cfn-gamelift-containerfleet-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-containerfleet-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-gamelift-containerfleet-tag-key): {{String}}
+  [Value](#cfn-gamelift-containerfleet-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-containerfleet-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-gamelift-containerfleet-tag-key"></a>
 The key for a developer-defined key value pair for tagging an AWS resource.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-gamelift-containerfleet-tag-value"></a>
 The value for a developer-defined key value pair for tagging an AWS resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScalingPolicy
-
-TargetConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

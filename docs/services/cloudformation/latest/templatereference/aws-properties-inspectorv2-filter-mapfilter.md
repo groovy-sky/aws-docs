@@ -2,86 +2,62 @@
 title: "AWS::InspectorV2::Filter MapFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Filter MapFilter
+<a name="aws-properties-inspectorv2-filter-mapfilter"></a>
 
 An object that describes details of a map filter.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-filter-mapfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-filter-mapfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comparison" : String,
-  "Key" : String,
-  "Value" : String
+  "[Comparison](#cfn-inspectorv2-filter-mapfilter-comparison)" : {{String}},
+  "[Key](#cfn-inspectorv2-filter-mapfilter-key)" : {{String}},
+  "[Value](#cfn-inspectorv2-filter-mapfilter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-filter-mapfilter-syntax.yaml"></a>
 
-```yaml
-
-  Comparison: String
-  Key: String
-  Value: String
-
+```
+  [Comparison](#cfn-inspectorv2-filter-mapfilter-comparison): {{String}}
+  [Key](#cfn-inspectorv2-filter-mapfilter-key): {{String}}
+  [Value](#cfn-inspectorv2-filter-mapfilter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-filter-mapfilter-properties"></a>
 
-`Comparison`
-
+`Comparison`  <a name="cfn-inspectorv2-filter-mapfilter-comparison"></a>
 The operator to use when comparing values in the filter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-inspectorv2-filter-mapfilter-key"></a>
 The tag key used in the filter.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-inspectorv2-filter-mapfilter-value"></a>
 The tag value used in the filter.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterCriteria
-
-NumberFilter
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

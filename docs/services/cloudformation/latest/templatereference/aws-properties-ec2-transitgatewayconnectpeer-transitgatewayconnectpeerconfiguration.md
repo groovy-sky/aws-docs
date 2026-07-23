@@ -2,104 +2,76 @@
 title: "AWS::EC2::TransitGatewayConnectPeer TransitGatewayConnectPeerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayConnectPeer TransitGatewayConnectPeerConfiguration
+<a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration"></a>
 
 Describes the Connect peer details.
 
 ## Syntax
+<a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BgpConfigurations" : [ TransitGatewayAttachmentBgpConfiguration, ... ],
-  "InsideCidrBlocks" : [ String, ... ],
-  "PeerAddress" : String,
-  "Protocol" : String,
-  "TransitGatewayAddress" : String
+  "[BgpConfigurations](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-bgpconfigurations)" : {{[ TransitGatewayAttachmentBgpConfiguration, ... ]}},
+  "[InsideCidrBlocks](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-insidecidrblocks)" : {{[ String, ... ]}},
+  "[PeerAddress](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-peeraddress)" : {{String}},
+  "[Protocol](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-protocol)" : {{String}},
+  "[TransitGatewayAddress](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-transitgatewayaddress)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BgpConfigurations:
-    - TransitGatewayAttachmentBgpConfiguration
-  InsideCidrBlocks:
-    - String
-  PeerAddress: String
-  Protocol: String
-  TransitGatewayAddress: String
-
+```
+  [BgpConfigurations](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-bgpconfigurations): {{
+    - TransitGatewayAttachmentBgpConfiguration}}
+  [InsideCidrBlocks](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-insidecidrblocks): {{
+    - String}}
+  [PeerAddress](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-peeraddress): {{String}}
+  [Protocol](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-protocol): {{String}}
+  [TransitGatewayAddress](#cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-transitgatewayaddress): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-properties"></a>
 
-`BgpConfigurations`
-
+`BgpConfigurations`  <a name="cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-bgpconfigurations"></a>
 The BGP configuration details.
+*Required*: No
+*Type*: Array of [TransitGatewayAttachmentBgpConfiguration](aws-properties-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [TransitGatewayAttachmentBgpConfiguration](aws-properties-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InsideCidrBlocks`
-
+`InsideCidrBlocks`  <a name="cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-insidecidrblocks"></a>
 The range of interior BGP peer IP addresses.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerAddress`
-
+`PeerAddress`  <a name="cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-peeraddress"></a>
 The Connect peer IP address on the appliance side of the tunnel.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-protocol"></a>
 The tunnel protocol.
+*Required*: No
+*Type*: String
+*Allowed values*: `gre`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `gre`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayAddress`
-
+`TransitGatewayAddress`  <a name="cfn-ec2-transitgatewayconnectpeer-transitgatewayconnectpeerconfiguration-transitgatewayaddress"></a>
 The Connect peer IP address on the transit gateway side of the tunnel.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayAttachmentBgpConfiguration
-
-AWS::EC2::TransitGatewayMeteringPolicy
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Template BoxPlotStyleOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BoxPlotStyleOptions
+<a name="aws-properties-quicksight-template-boxplotstyleoptions"></a>
 
 The style options of the box plot.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-boxplotstyleoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-boxplotstyleoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FillStyle" : String
+  "[FillStyle](#cfn-quicksight-template-boxplotstyleoptions-fillstyle)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-boxplotstyleoptions-syntax.yaml"></a>
 
-```yaml
-
-  FillStyle: String
-
+```
+  [FillStyle](#cfn-quicksight-template-boxplotstyleoptions-fillstyle): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-boxplotstyleoptions-properties"></a>
 
-`FillStyle`
-
+`FillStyle`  <a name="cfn-quicksight-template-boxplotstyleoptions-fillstyle"></a>
 The fill styles (solid, transparent) of the box plot.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SOLID | TRANSPARENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BoxPlotSortConfiguration
-
-BoxPlotVisual
+*Required*: No
+*Type*: String
+*Allowed values*: `SOLID | TRANSPARENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,67 +2,48 @@
 title: "AWS::S3::Bucket EncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket EncryptionConfiguration
+<a name="aws-properties-s3-bucket-encryptionconfiguration"></a>
 
-Specifies encryption-related information for an Amazon S3 bucket that is a destination for replicated
-objects.
+Specifies encryption-related information for an Amazon S3 bucket that is a destination for replicated objects.
 
-###### Note
-
-If you're specifying a customer managed KMS key, we recommend using a fully qualified KMS key
-ARN. If you use a KMS key alias instead, then AWS KMS resolves the key within the requester’s account.
-This behavior can result in data that's encrypted with a KMS key that belongs to the requester, and
-not the bucket owner.
+**Note**
+If you're specifying a customer managed KMS key, we recommend using a fully qualified KMS key ARN. If you use a KMS key alias instead, then AWS KMS resolves the key within the requester’s account. This behavior can result in data that's encrypted with a KMS key that belongs to the requester, and not the bucket owner.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-encryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-encryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReplicaKmsKeyID" : String
+  "[ReplicaKmsKeyID](#cfn-s3-bucket-encryptionconfiguration-replicakmskeyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-encryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ReplicaKmsKeyID: String
-
+```
+  [ReplicaKmsKeyID](#cfn-s3-bucket-encryptionconfiguration-replicakmskeyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-encryptionconfiguration-properties"></a>
 
-`ReplicaKmsKeyID`
-
-Specifies the ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in AWS Key
-Management Service (KMS) for the destination bucket. Amazon S3 uses this key to encrypt replica objects. Amazon S3
-only supports symmetric encryption KMS keys. For more information, see [Asymmetric keys in AWS KMS](../../../kms/latest/developerguide/symmetric-asymmetric.md) in the
-_AWS Key Management Service Developer Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ReplicaKmsKeyID`  <a name="cfn-s3-bucket-encryptionconfiguration-replicakmskeyid"></a>
+Specifies the ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in AWS Key Management Service (KMS) for the destination bucket. Amazon S3 uses this key to encrypt replica objects. Amazon S3 only supports symmetric encryption KMS keys. For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- AWS::S3::Bucket [Examples](../userguide/aws-properties-s3-bucket.md#aws-properties-s3-bucket--examples)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Destination
-
-EventBridgeConfiguration
+<a name="aws-properties-s3-bucket-encryptionconfiguration--seealso"></a>
++ AWS::S3::Bucket [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket--examples)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,63 +2,56 @@
 title: "AWS::GroundStation::Config TrackingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config TrackingConfig
+<a name="aws-properties-groundstation-config-trackingconfig"></a>
 
-Provides information about how AWS Ground Station should track the satellite through the sky during a contact.
+ Provides information about how AWS Ground Station should track the satellite through the sky during a contact.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-trackingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-trackingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Autotrack" : String
+  "[Autotrack](#cfn-groundstation-config-trackingconfig-autotrack)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-trackingconfig-syntax.yaml"></a>
 
-```yaml
-
-  Autotrack: String
-
+```
+  [Autotrack](#cfn-groundstation-config-trackingconfig-autotrack): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-trackingconfig-properties"></a>
 
-`Autotrack`
-
-Specifies whether or not to use autotrack.
-`REMOVED` specifies that program track should only be used during the contact.
-`PREFERRED` specifies that autotracking is preferred during the contact but fallback to program track if the signal is lost.
-`REQUIRED` specifies that autotracking is required during the contact and not to use program track if the signal is lost.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `REQUIRED | PREFERRED | REMOVED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Autotrack`  <a name="cfn-groundstation-config-trackingconfig-autotrack"></a>
+ Specifies whether or not to use autotrack. `REMOVED` specifies that program track should only be used during the contact. `PREFERRED` specifies that autotracking is preferred during the contact but fallback to program track if the signal is lost. `REQUIRED` specifies that autotracking is required during the contact and not to use program track if the signal is lost.
+*Required*: No
+*Type*: String
+*Allowed values*: `REQUIRED | PREFERRED | REMOVED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-trackingconfig--examples"></a>
 
 ### Create a TrackingConfig
+<a name="aws-properties-groundstation-config-trackingconfig--examples--Create_a_TrackingConfig"></a>
 
 The following example creates a Ground Station `TrackingConfig`
 
 #### JSON
+<a name="aws-properties-groundstation-config-trackingconfig--examples--Create_a_TrackingConfig--json"></a>
 
-```json
-
+```
 {
   "TrackingConfig": {
     "Autotrack": "PREFERRED"
@@ -67,17 +60,11 @@ The following example creates a Ground Station `TrackingConfig`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-trackingconfig--examples--Create_a_TrackingConfig--yaml"></a>
 
-```yaml
-
+```
 TrackingConfig:
   Autotrack: "PREFERRED"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TelemetrySinkData
-
-UplinkEchoConfig
 
 All content copied from https://docs.aws.amazon.com/.

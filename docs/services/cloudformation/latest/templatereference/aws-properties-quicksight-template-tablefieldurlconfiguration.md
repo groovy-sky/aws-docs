@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Template TableFieldURLConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TableFieldURLConfiguration
+<a name="aws-properties-quicksight-template-tablefieldurlconfiguration"></a>
 
 The URL configuration for a table field.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-tablefieldurlconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-tablefieldurlconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageConfiguration" : TableFieldImageConfiguration,
-  "LinkConfiguration" : TableFieldLinkConfiguration
+  "[ImageConfiguration](#cfn-quicksight-template-tablefieldurlconfiguration-imageconfiguration)" : {{TableFieldImageConfiguration}},
+  "[LinkConfiguration](#cfn-quicksight-template-tablefieldurlconfiguration-linkconfiguration)" : {{TableFieldLinkConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-tablefieldurlconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ImageConfiguration:
-    TableFieldImageConfiguration
-  LinkConfiguration:
-    TableFieldLinkConfiguration
-
+```
+  [ImageConfiguration](#cfn-quicksight-template-tablefieldurlconfiguration-imageconfiguration): {{
+    TableFieldImageConfiguration}}
+  [LinkConfiguration](#cfn-quicksight-template-tablefieldurlconfiguration-linkconfiguration): {{
+    TableFieldLinkConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-tablefieldurlconfiguration-properties"></a>
 
-`ImageConfiguration`
-
+`ImageConfiguration`  <a name="cfn-quicksight-template-tablefieldurlconfiguration-imageconfiguration"></a>
 The image configuration of a table field URL.
+*Required*: No
+*Type*: [TableFieldImageConfiguration](aws-properties-quicksight-template-tablefieldimageconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableFieldImageConfiguration](aws-properties-quicksight-template-tablefieldimageconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LinkConfiguration`
-
+`LinkConfiguration`  <a name="cfn-quicksight-template-tablefieldurlconfiguration-linkconfiguration"></a>
 The link configuration of a table field URL.
-
-_Required_: No
-
-_Type_: [TableFieldLinkConfiguration](aws-properties-quicksight-template-tablefieldlinkconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableFieldOptions
-
-TableFieldWells
+*Required*: No
+*Type*: [TableFieldLinkConfiguration](aws-properties-quicksight-template-tablefieldlinkconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

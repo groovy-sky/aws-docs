@@ -2,112 +2,81 @@
 title: "AWS::IoT::Command CommandParameterValueComparisonOperand"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Command CommandParameterValueComparisonOperand
+<a name="aws-properties-iot-command-commandparametervaluecomparisonoperand"></a>
 
-The `CommandParameterValueComparisonOperand` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
+<a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-description"></a>The `CommandParameterValueComparisonOperand` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
 
 ## Syntax
+<a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-syntax.json"></a>
 
-```json
-
+```
 {
-  "Number" : String,
-  "NumberRange" : CommandParameterValueNumberRange,
-  "Numbers" : [ String, ... ],
-  "String" : String,
-  "Strings" : [ String, ... ]
+  "[Number](#cfn-iot-command-commandparametervaluecomparisonoperand-number)" : {{String}},
+  "[NumberRange](#cfn-iot-command-commandparametervaluecomparisonoperand-numberrange)" : {{CommandParameterValueNumberRange}},
+  "[Numbers](#cfn-iot-command-commandparametervaluecomparisonoperand-numbers)" : {{[ String, ... ]}},
+  "[String](#cfn-iot-command-commandparametervaluecomparisonoperand-string)" : {{String}},
+  "[Strings](#cfn-iot-command-commandparametervaluecomparisonoperand-strings)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-syntax.yaml"></a>
 
-```yaml
-
-  Number: String
-  NumberRange:
-    CommandParameterValueNumberRange
-  Numbers:
-    - String
-  String:
-    String
-  Strings:
-    - String
-
+```
+  [Number](#cfn-iot-command-commandparametervaluecomparisonoperand-number): {{String}}
+  [NumberRange](#cfn-iot-command-commandparametervaluecomparisonoperand-numberrange): {{
+    CommandParameterValueNumberRange}}
+  [Numbers](#cfn-iot-command-commandparametervaluecomparisonoperand-numbers): {{
+    - String}}
+  [String](#cfn-iot-command-commandparametervaluecomparisonoperand-string): {{
+    String}}
+  [Strings](#cfn-iot-command-commandparametervaluecomparisonoperand-strings): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-properties"></a>
 
-`Number`
-
+`Number`  <a name="cfn-iot-command-commandparametervaluecomparisonoperand-number"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberRange`
-
+`NumberRange`  <a name="cfn-iot-command-commandparametervaluecomparisonoperand-numberrange"></a>
 Property description not available.
+*Required*: No
+*Type*: [CommandParameterValueNumberRange](aws-properties-iot-command-commandparametervaluenumberrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CommandParameterValueNumberRange](aws-properties-iot-command-commandparametervaluenumberrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Numbers`
-
+`Numbers`  <a name="cfn-iot-command-commandparametervaluecomparisonoperand-numbers"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`String`
-
+`String`  <a name="cfn-iot-command-commandparametervaluecomparisonoperand-string"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Strings`
-
+`Strings`  <a name="cfn-iot-command-commandparametervaluecomparisonoperand-strings"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CommandParameterValue
-
-CommandParameterValueCondition
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

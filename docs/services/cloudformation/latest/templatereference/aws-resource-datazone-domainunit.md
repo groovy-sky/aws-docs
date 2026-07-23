@@ -2,152 +2,117 @@
 title: "AWS::DataZone::DomainUnit"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DomainUnit
+<a name="aws-resource-datazone-domainunit"></a>
 
 The summary of the domain unit.
 
 ## Syntax
+<a name="aws-resource-datazone-domainunit-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datazone-domainunit-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataZone::DomainUnit",
   "Properties" : {
-      "Description" : String,
-      "DomainIdentifier" : String,
-      "Name" : String,
-      "ParentDomainUnitIdentifier" : String
+      "[Description](#cfn-datazone-domainunit-description)" : {{String}},
+      "[DomainIdentifier](#cfn-datazone-domainunit-domainidentifier)" : {{String}},
+      "[Name](#cfn-datazone-domainunit-name)" : {{String}},
+      "[ParentDomainUnitIdentifier](#cfn-datazone-domainunit-parentdomainunitidentifier)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datazone-domainunit-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataZone::DomainUnit
 Properties:
-  Description: String
-  DomainIdentifier: String
-  Name: String
-  ParentDomainUnitIdentifier: String
-
+  [Description](#cfn-datazone-domainunit-description): {{String}}
+  [DomainIdentifier](#cfn-datazone-domainunit-domainidentifier): {{String}}
+  [Name](#cfn-datazone-domainunit-name): {{String}}
+  [ParentDomainUnitIdentifier](#cfn-datazone-domainunit-parentdomainunitidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-datazone-domainunit-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-datazone-domainunit-description"></a>
 The description of the domain unit.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainIdentifier`
-
+`DomainIdentifier`  <a name="cfn-datazone-domainunit-domainidentifier"></a>
 The ID of the domain where you want to crate a domain unit.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^dzd[-_][a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^dzd[-_][a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-datazone-domainunit-name"></a>
 The name of the domain unit.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w -]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w -]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParentDomainUnitIdentifier`
-
+`ParentDomainUnitIdentifier`  <a name="cfn-datazone-domainunit-parentdomainunitidentifier"></a>
 The ID of the parent domain unit.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-datazone-domainunit-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datazone-domainunit-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and
-`DomainUnitId`, which uniquely identifies a domain unit. For example: { `"Ref":
-    "MyDomainUnit"` } for the resource with the logical ID MyDomainUnit, Ref returns
-`DomainId|DomainUnitId`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and `DomainUnitId`, which uniquely identifies a domain unit. For example: { `"Ref": "MyDomainUnit"` } for the resource with the logical ID MyDomainUnit, Ref returns `DomainId|DomainUnitId`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datazone-domainunit-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-datazone-domainunit-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time stamp at which the domain unit was created.
 
-`DomainId`
-
+`DomainId`  <a name="DomainId-fn::getatt"></a>
 The ID of the domain in which the domain unit lives.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the domain unit.
 
-`Identifier`
-
+`Identifier`  <a name="Identifier-fn::getatt"></a>
 The identifier of the domain unit that you want to get.
 
-`LastUpdatedAt`
-
+`LastUpdatedAt`  <a name="LastUpdatedAt-fn::getatt"></a>
 The timestamp at which the domain unit was last updated.
 
-`ParentDomainUnitId`
-
+`ParentDomainUnitId`  <a name="ParentDomainUnitId-fn::getatt"></a>
 The ID of the parent domain unit.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::DataZone::Environment
 
 All content copied from https://docs.aws.amazon.com/.

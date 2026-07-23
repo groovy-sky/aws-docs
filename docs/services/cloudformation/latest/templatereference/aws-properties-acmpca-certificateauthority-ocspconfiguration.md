@@ -2,80 +2,53 @@
 title: "AWS::ACMPCA::CertificateAuthority OcspConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority OcspConfiguration
+<a name="aws-properties-acmpca-certificateauthority-ocspconfiguration"></a>
 
-Contains information to enable and configure Online Certificate Status Protocol (OCSP)
-for validating certificate revocation status.
+Contains information to enable and configure Online Certificate Status Protocol (OCSP) for validating certificate revocation status.
 
 ## Syntax
+<a name="aws-properties-acmpca-certificateauthority-ocspconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificateauthority-ocspconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "OcspCustomCname" : String
+  "[Enabled](#cfn-acmpca-certificateauthority-ocspconfiguration-enabled)" : {{Boolean}},
+  "[OcspCustomCname](#cfn-acmpca-certificateauthority-ocspconfiguration-ocspcustomcname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificateauthority-ocspconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  OcspCustomCname: String
-
+```
+  [Enabled](#cfn-acmpca-certificateauthority-ocspconfiguration-enabled): {{Boolean}}
+  [OcspCustomCname](#cfn-acmpca-certificateauthority-ocspconfiguration-ocspcustomcname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificateauthority-ocspconfiguration-properties"></a>
 
-`Enabled`
+`Enabled`  <a name="cfn-acmpca-certificateauthority-ocspconfiguration-enabled"></a>
+Flag enabling use of the Online Certificate Status Protocol (OCSP) for validating certificate revocation status.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Flag enabling use of the Online Certificate Status Protocol (OCSP) for validating
-certificate revocation status.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OcspCustomCname`
-
-By default, AWS Private CA injects an Amazon domain into certificates being
-validated by the Online Certificate Status Protocol (OCSP). A customer can alternatively
-use this object to define a CNAME specifying a customized OCSP domain.
-
-###### Note
-
-The content of a Canonical Name (CNAME) record must conform to [RFC2396](https://www.ietf.org/rfc/rfc2396.txt) restrictions on the
-use of special characters in URIs. Additionally, the value of the CNAME must not
-include a protocol prefix such as "http://" or "https://".
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[-a-zA-Z0-9;/?:@&=+$,%_.!~*()']*`
-
-_Minimum_: `0`
-
-_Maximum_: `253`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KeyUsage
-
-OtherName
+`OcspCustomCname`  <a name="cfn-acmpca-certificateauthority-ocspconfiguration-ocspcustomcname"></a>
+By default, AWS Private CA injects an Amazon domain into certificates being validated by the Online Certificate Status Protocol (OCSP). A customer can alternatively use this object to define a CNAME specifying a customized OCSP domain.
+The content of a Canonical Name (CNAME) record must conform to [RFC2396](https://www.ietf.org/rfc/rfc2396.txt) restrictions on the use of special characters in URIs. Additionally, the value of the CNAME must not include a protocol prefix such as "http://" or "https://".
+*Required*: No
+*Type*: String
+*Pattern*: `[-a-zA-Z0-9;/?:@&=+$,%_.!~*()']*`
+*Minimum*: `0`
+*Maximum*: `253`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

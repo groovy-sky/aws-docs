@@ -2,121 +2,102 @@
 title: "AWS::DataBrew::Recipe"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Recipe
+<a name="aws-resource-databrew-recipe"></a>
 
 Specifies a new AWS Glue DataBrew transformation recipe.
 
 ## Syntax
+<a name="aws-resource-databrew-recipe-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-databrew-recipe-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataBrew::Recipe",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "Steps" : [ RecipeStep, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-databrew-recipe-description)" : {{String}},
+      "[Name](#cfn-databrew-recipe-name)" : {{String}},
+      "[Steps](#cfn-databrew-recipe-steps)" : {{[ RecipeStep, ... ]}},
+      "[Tags](#cfn-databrew-recipe-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-databrew-recipe-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataBrew::Recipe
 Properties:
-  Description: String
-  Name: String
-  Steps:
-    - RecipeStep
-  Tags:
-    - Tag
-
+  [Description](#cfn-databrew-recipe-description): {{String}}
+  [Name](#cfn-databrew-recipe-name): {{String}}
+  [Steps](#cfn-databrew-recipe-steps): {{
+    - RecipeStep}}
+  [Tags](#cfn-databrew-recipe-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-databrew-recipe-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-databrew-recipe-description"></a>
 The description of the recipe.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-databrew-recipe-name"></a>
 The unique name for the recipe.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Steps`
-
+`Steps`  <a name="cfn-databrew-recipe-steps"></a>
 A list of steps that are defined by the recipe.
+*Required*: Yes
+*Type*: Array of [RecipeStep](aws-properties-databrew-recipe-recipestep.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [RecipeStep](aws-properties-databrew-recipe-recipestep.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-databrew-recipe-tags"></a>
 Metadata tags that have been applied to the recipe.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-databrew-recipe-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-databrew-recipe-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-databrew-recipe-return-values"></a>
 
 ### Ref
+<a name="aws-resource-databrew-recipe-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the resource name. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "myRecipe" }`
+ `{ "Ref": "myRecipe" }`
 
-For an AWS Glue DataBrew recipe named `myRecipe`, `Ref`
-returns the name of the recipe.
+For an AWS Glue DataBrew recipe named `myRecipe`, `Ref` returns the name of the recipe.
 
 ## Examples
+<a name="aws-resource-databrew-recipe--examples"></a>
 
 ### Creating recipes
+<a name="aws-resource-databrew-recipe--examples--Creating_recipes"></a>
 
 The following examples create new DataBrew recipes.
 
 #### YAML
+<a name="aws-resource-databrew-recipe--examples--Creating_recipes--yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestDataBrewRecipe:
     Type: AWS::DataBrew::Recipe
@@ -135,13 +116,12 @@ Resources:
           Value: 5
           TargetColumn: Target
       Tags: [{Key: key00AtCreate, Value: value001AtCreate}]
-
 ```
 
 #### JSON
+<a name="aws-resource-databrew-recipe--examples--Creating_recipes--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Recipe",
@@ -185,13 +165,6 @@ Resources:
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Action
 
 All content copied from https://docs.aws.amazon.com/.

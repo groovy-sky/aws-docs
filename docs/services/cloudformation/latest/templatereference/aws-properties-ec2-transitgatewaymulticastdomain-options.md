@@ -2,82 +2,60 @@
 title: "AWS::EC2::TransitGatewayMulticastDomain Options"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayMulticastDomain Options
+<a name="aws-properties-ec2-transitgatewaymulticastdomain-options"></a>
 
 The options for the transit gateway multicast domain.
 
 ## Syntax
+<a name="aws-properties-ec2-transitgatewaymulticastdomain-options-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-transitgatewaymulticastdomain-options-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoAcceptSharedAssociations" : String,
-  "Igmpv2Support" : String,
-  "StaticSourcesSupport" : String
+  "[AutoAcceptSharedAssociations](#cfn-ec2-transitgatewaymulticastdomain-options-autoacceptsharedassociations)" : {{String}},
+  "[Igmpv2Support](#cfn-ec2-transitgatewaymulticastdomain-options-igmpv2support)" : {{String}},
+  "[StaticSourcesSupport](#cfn-ec2-transitgatewaymulticastdomain-options-staticsourcessupport)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-transitgatewaymulticastdomain-options-syntax.yaml"></a>
 
-```yaml
-
-  AutoAcceptSharedAssociations: String
-  Igmpv2Support: String
-  StaticSourcesSupport: String
-
+```
+  [AutoAcceptSharedAssociations](#cfn-ec2-transitgatewaymulticastdomain-options-autoacceptsharedassociations): {{String}}
+  [Igmpv2Support](#cfn-ec2-transitgatewaymulticastdomain-options-igmpv2support): {{String}}
+  [StaticSourcesSupport](#cfn-ec2-transitgatewaymulticastdomain-options-staticsourcessupport): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-transitgatewaymulticastdomain-options-properties"></a>
 
-`AutoAcceptSharedAssociations`
-
+`AutoAcceptSharedAssociations`  <a name="cfn-ec2-transitgatewaymulticastdomain-options-autoacceptsharedassociations"></a>
 Indicates whether to automatically accept cross-account subnet associations that are associated with the transit gateway multicast domain.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Igmpv2Support`
-
+`Igmpv2Support`  <a name="cfn-ec2-transitgatewaymulticastdomain-options-igmpv2support"></a>
 Specify whether to enable Internet Group Management Protocol (IGMP) version 2 for the transit gateway multicast domain.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticSourcesSupport`
-
+`StaticSourcesSupport`  <a name="cfn-ec2-transitgatewaymulticastdomain-options-staticsourcessupport"></a>
 Specify whether to enable support for statically configuring multicast group sources for a domain.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::TransitGatewayMulticastDomain
-
-Tag
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

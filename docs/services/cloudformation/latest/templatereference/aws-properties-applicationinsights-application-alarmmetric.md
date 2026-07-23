@@ -2,52 +2,41 @@
 title: "AWS::ApplicationInsights::Application AlarmMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application AlarmMetric
+<a name="aws-properties-applicationinsights-application-alarmmetric"></a>
 
 The `AWS::ApplicationInsights::Application AlarmMetric` property type defines a metric to monitor for the component.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-alarmmetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-alarmmetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlarmMetricName" : String
+  "[AlarmMetricName](#cfn-applicationinsights-application-alarmmetric-alarmmetricname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-alarmmetric-syntax.yaml"></a>
 
-```yaml
-
-  AlarmMetricName: String
-
+```
+  [AlarmMetricName](#cfn-applicationinsights-application-alarmmetric-alarmmetricname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-alarmmetric-properties"></a>
 
-`AlarmMetricName`
-
-The name of the metric to be monitored for the component. For metrics supported by Application Insights, see [Logs and metrics supported by Amazon CloudWatch Application Insights](../../../amazoncloudwatch/latest/monitoring/appinsights-logs-and-metrics.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Alarm
-
-ComponentConfiguration
+`AlarmMetricName`  <a name="cfn-applicationinsights-application-alarmmetric-alarmmetricname"></a>
+The name of the metric to be monitored for the component. For metrics supported by Application Insights, see [Logs and metrics supported by Amazon CloudWatch Application Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-logs-and-metrics.html).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

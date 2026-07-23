@@ -2,78 +2,58 @@
 title: "AWS::ElastiCache::GlobalReplicationGroup RegionalConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElastiCache::GlobalReplicationGroup RegionalConfiguration
+<a name="aws-properties-elasticache-globalreplicationgroup-regionalconfiguration"></a>
 
 A list of the replication groups
 
 ## Syntax
+<a name="aws-properties-elasticache-globalreplicationgroup-regionalconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticache-globalreplicationgroup-regionalconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReplicationGroupId" : String,
-  "ReplicationGroupRegion" : String,
-  "ReshardingConfigurations" : [ ReshardingConfiguration, ... ]
+  "[ReplicationGroupId](#cfn-elasticache-globalreplicationgroup-regionalconfiguration-replicationgroupid)" : {{String}},
+  "[ReplicationGroupRegion](#cfn-elasticache-globalreplicationgroup-regionalconfiguration-replicationgroupregion)" : {{String}},
+  "[ReshardingConfigurations](#cfn-elasticache-globalreplicationgroup-regionalconfiguration-reshardingconfigurations)" : {{[ ReshardingConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticache-globalreplicationgroup-regionalconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ReplicationGroupId: String
-  ReplicationGroupRegion: String
-  ReshardingConfigurations:
-    - ReshardingConfiguration
-
+```
+  [ReplicationGroupId](#cfn-elasticache-globalreplicationgroup-regionalconfiguration-replicationgroupid): {{String}}
+  [ReplicationGroupRegion](#cfn-elasticache-globalreplicationgroup-regionalconfiguration-replicationgroupregion): {{String}}
+  [ReshardingConfigurations](#cfn-elasticache-globalreplicationgroup-regionalconfiguration-reshardingconfigurations): {{
+    - ReshardingConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticache-globalreplicationgroup-regionalconfiguration-properties"></a>
 
-`ReplicationGroupId`
-
+`ReplicationGroupId`  <a name="cfn-elasticache-globalreplicationgroup-regionalconfiguration-replicationgroupid"></a>
 The name of the secondary cluster
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReplicationGroupRegion`
-
+`ReplicationGroupRegion`  <a name="cfn-elasticache-globalreplicationgroup-regionalconfiguration-replicationgroupregion"></a>
 The Amazon region where the cluster is stored
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReshardingConfigurations`
-
-A list of PreferredAvailabilityZones objects that specifies the configuration of a node group in the resharded
-cluster.
-
-_Required_: No
-
-_Type_: Array of [ReshardingConfiguration](aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GlobalReplicationGroupMember
-
-ReshardingConfiguration
+`ReshardingConfigurations`  <a name="cfn-elasticache-globalreplicationgroup-regionalconfiguration-reshardingconfigurations"></a>
+A list of PreferredAvailabilityZones objects that specifies the configuration of a node group in the resharded cluster.
+*Required*: No
+*Type*: Array of [ReshardingConfiguration](aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

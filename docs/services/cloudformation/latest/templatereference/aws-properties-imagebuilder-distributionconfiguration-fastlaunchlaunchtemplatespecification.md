@@ -2,93 +2,65 @@
 title: "AWS::ImageBuilder::DistributionConfiguration FastLaunchLaunchTemplateSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration FastLaunchLaunchTemplateSpecification
+<a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification"></a>
 
-Identifies the launch template that the associated Windows AMI uses for launching an
-instance when faster launching is enabled.
+Identifies the launch template that the associated Windows AMI uses for launching an instance when faster launching is enabled.
 
-###### Note
-
-You can specify either the `launchTemplateName` or the
-`launchTemplateId`, but not both.
+**Note**
+You can specify either the `launchTemplateName` or the `launchTemplateId`, but not both.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "LaunchTemplateId" : String,
-  "LaunchTemplateName" : String,
-  "LaunchTemplateVersion" : String
+  "[LaunchTemplateId](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateid)" : {{String}},
+  "[LaunchTemplateName](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplatename)" : {{String}},
+  "[LaunchTemplateVersion](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-syntax.yaml"></a>
 
-```yaml
-
-  LaunchTemplateId: String
-  LaunchTemplateName: String
-  LaunchTemplateVersion: String
-
+```
+  [LaunchTemplateId](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateid): {{String}}
+  [LaunchTemplateName](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplatename): {{String}}
+  [LaunchTemplateVersion](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-properties"></a>
 
-`LaunchTemplateId`
-
+`LaunchTemplateId`  <a name="cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateid"></a>
 The ID of the launch template to use for faster launching for a Windows AMI.
+*Required*: No
+*Type*: String
+*Pattern*: `^lt-[a-z0-9-_]{17}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^lt-[a-z0-9-_]{17}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LaunchTemplateName`
-
+`LaunchTemplateName`  <a name="cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplatename"></a>
 The name of the launch template to use for faster launching for a Windows AMI.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LaunchTemplateVersion`
-
-The version of the launch template to use for faster launching for a Windows
-AMI.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FastLaunchConfiguration
-
-FastLaunchSnapshotConfiguration
+`LaunchTemplateVersion`  <a name="cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateversion"></a>
+The version of the launch template to use for faster launching for a Windows AMI.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

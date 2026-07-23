@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis PivotTableConditionalFormattingOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PivotTableConditionalFormattingOption
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingoption"></a>
 
 Conditional formatting options for a `PivotTableVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cell" : PivotTableCellConditionalFormatting
+  "[Cell](#cfn-quicksight-analysis-pivottableconditionalformattingoption-cell)" : {{PivotTableCellConditionalFormatting}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingoption-syntax.yaml"></a>
 
-```yaml
-
-  Cell:
-    PivotTableCellConditionalFormatting
-
+```
+  [Cell](#cfn-quicksight-analysis-pivottableconditionalformattingoption-cell): {{
+    PivotTableCellConditionalFormatting}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingoption-properties"></a>
 
-`Cell`
-
+`Cell`  <a name="cfn-quicksight-analysis-pivottableconditionalformattingoption-cell"></a>
 The cell conditional formatting option for a pivot table.
-
-_Required_: No
-
-_Type_: [PivotTableCellConditionalFormatting](aws-properties-quicksight-analysis-pivottablecellconditionalformatting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableConditionalFormatting
-
-PivotTableConditionalFormattingScope
+*Required*: No
+*Type*: [PivotTableCellConditionalFormatting](aws-properties-quicksight-analysis-pivottablecellconditionalformatting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

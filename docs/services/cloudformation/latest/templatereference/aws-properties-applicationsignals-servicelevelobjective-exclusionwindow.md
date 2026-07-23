@@ -2,94 +2,69 @@
 title: "AWS::ApplicationSignals::ServiceLevelObjective ExclusionWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationSignals::ServiceLevelObjective ExclusionWindow
+<a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow"></a>
 
 The time window to be excluded from the SLO performance metrics.
 
 ## Syntax
+<a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "Reason" : String,
-  "RecurrenceRule" : RecurrenceRule,
-  "StartTime" : String,
-  "Window" : Window
+  "[Reason](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-reason)" : {{String}},
+  "[RecurrenceRule](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-recurrencerule)" : {{RecurrenceRule}},
+  "[StartTime](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-starttime)" : {{String}},
+  "[Window](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-window)" : {{Window}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow-syntax.yaml"></a>
 
-```yaml
-
-  Reason: String
-  RecurrenceRule:
-    RecurrenceRule
-  StartTime: String
-  Window:
-    Window
-
+```
+  [Reason](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-reason): {{String}}
+  [RecurrenceRule](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-recurrencerule): {{
+    RecurrenceRule}}
+  [StartTime](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-starttime): {{String}}
+  [Window](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-window): {{
+    Window}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow-properties"></a>
 
-`Reason`
-
+`Reason`  <a name="cfn-applicationsignals-servicelevelobjective-exclusionwindow-reason"></a>
 The reason for the time exclusion windows. For example, maintenance.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecurrenceRule`
-
+`RecurrenceRule`  <a name="cfn-applicationsignals-servicelevelobjective-exclusionwindow-recurrencerule"></a>
 The recurrence rule for the time exclusion window.
+*Required*: No
+*Type*: [RecurrenceRule](aws-properties-applicationsignals-servicelevelobjective-recurrencerule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RecurrenceRule](aws-properties-applicationsignals-servicelevelobjective-recurrencerule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
+`StartTime`  <a name="cfn-applicationsignals-servicelevelobjective-exclusionwindow-starttime"></a>
 The start time of the time exclusion window.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Window`
-
+`Window`  <a name="cfn-applicationsignals-servicelevelobjective-exclusionwindow-window"></a>
 The time exclusion window.
-
-_Required_: Yes
-
-_Type_: [Window](aws-properties-applicationsignals-servicelevelobjective-window.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Dimension
-
-Goal
+*Required*: Yes
+*Type*: [Window](aws-properties-applicationsignals-servicelevelobjective-window.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

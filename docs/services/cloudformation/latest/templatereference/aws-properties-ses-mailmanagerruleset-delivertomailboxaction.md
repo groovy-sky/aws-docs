@@ -2,92 +2,64 @@
 title: "AWS::SES::MailManagerRuleSet DeliverToMailboxAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet DeliverToMailboxAction
+<a name="aws-properties-ses-mailmanagerruleset-delivertomailboxaction"></a>
 
 This action to delivers an email to a mailbox.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagerruleset-delivertomailboxaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagerruleset-delivertomailboxaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActionFailurePolicy" : String,
-  "MailboxArn" : String,
-  "RoleArn" : String
+  "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-delivertomailboxaction-actionfailurepolicy)" : {{String}},
+  "[MailboxArn](#cfn-ses-mailmanagerruleset-delivertomailboxaction-mailboxarn)" : {{String}},
+  "[RoleArn](#cfn-ses-mailmanagerruleset-delivertomailboxaction-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagerruleset-delivertomailboxaction-syntax.yaml"></a>
 
-```yaml
-
-  ActionFailurePolicy: String
-  MailboxArn: String
-  RoleArn: String
-
+```
+  [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-delivertomailboxaction-actionfailurepolicy): {{String}}
+  [MailboxArn](#cfn-ses-mailmanagerruleset-delivertomailboxaction-mailboxarn): {{String}}
+  [RoleArn](#cfn-ses-mailmanagerruleset-delivertomailboxaction-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagerruleset-delivertomailboxaction-properties"></a>
 
-`ActionFailurePolicy`
+`ActionFailurePolicy`  <a name="cfn-ses-mailmanagerruleset-delivertomailboxaction-actionfailurepolicy"></a>
+A policy that states what to do in the case of failure. The action will fail if there are configuration errors. For example, the mailbox ARN is no longer valid.
+*Required*: No
+*Type*: String
+*Allowed values*: `CONTINUE | DROP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A policy that states what to do in the case of failure. The action will fail if there
-are configuration errors. For example, the mailbox ARN is no longer valid.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CONTINUE | DROP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailboxArn`
-
+`MailboxArn`  <a name="cfn-ses-mailmanagerruleset-delivertomailboxaction-mailboxarn"></a>
 The Amazon Resource Name (ARN) of a WorkMail organization to deliver the email to.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9:_/+=,@.#-]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9:_/+=,@.#-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of an IAM role to use to execute this action. The role must have access to
-the workmail:DeliverToMailbox API.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9:_/+=,@.#-]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArchiveAction
-
-DeliverToQBusinessAction
+`RoleArn`  <a name="cfn-ses-mailmanagerruleset-delivertomailboxaction-rolearn"></a>
+The Amazon Resource Name (ARN) of an IAM role to use to execute this action. The role must have access to the workmail:DeliverToMailbox API.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9:_/+=,@.#-]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,41 @@
 title: "AWS::Batch::JobDefinition EksHostPath"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition EksHostPath
+<a name="aws-properties-batch-jobdefinition-ekshostpath"></a>
 
-Specifies the configuration of a Kubernetes `hostPath` volume. A `hostPath`
-volume mounts an existing file or directory from the host node's filesystem into your pod. For
-more information, see [hostPath](https://kubernetes.io/docs/concepts/storage/volumes) in the _Kubernetes documentation_.
+Specifies the configuration of a Kubernetes `hostPath` volume. A `hostPath` volume mounts an existing file or directory from the host node's filesystem into your pod. For more information, see [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath) in the *Kubernetes documentation*.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-ekshostpath-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-ekshostpath-syntax.json"></a>
 
-```json
-
+```
 {
-  "Path" : String
+  "[Path](#cfn-batch-jobdefinition-ekshostpath-path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-ekshostpath-syntax.yaml"></a>
 
-```yaml
-
-  Path: String
-
+```
+  [Path](#cfn-batch-jobdefinition-ekshostpath-path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-ekshostpath-properties"></a>
 
-`Path`
-
+`Path`  <a name="cfn-batch-jobdefinition-ekshostpath-path"></a>
 The path of the file or directory on the host to mount into containers on the pod.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EksEmptyDir
-
-EksMetadata
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

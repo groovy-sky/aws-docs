@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard GeospatialPolygonLayer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialPolygonLayer
+<a name="aws-properties-quicksight-dashboard-geospatialpolygonlayer"></a>
 
 The geospatial polygon layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatialpolygonlayer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatialpolygonlayer-syntax.json"></a>
 
-```json
-
+```
 {
-  "Style" : GeospatialPolygonStyle
+  "[Style](#cfn-quicksight-dashboard-geospatialpolygonlayer-style)" : {{GeospatialPolygonStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatialpolygonlayer-syntax.yaml"></a>
 
-```yaml
-
-  Style:
-    GeospatialPolygonStyle
-
+```
+  [Style](#cfn-quicksight-dashboard-geospatialpolygonlayer-style): {{
+    GeospatialPolygonStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatialpolygonlayer-properties"></a>
 
-`Style`
-
+`Style`  <a name="cfn-quicksight-dashboard-geospatialpolygonlayer-style"></a>
 The visualization style for a polygon layer.
-
-_Required_: Yes
-
-_Type_: [GeospatialPolygonStyle](aws-properties-quicksight-dashboard-geospatialpolygonstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialPointStyleOptions
-
-GeospatialPolygonStyle
+*Required*: Yes
+*Type*: [GeospatialPolygonStyle](aws-properties-quicksight-dashboard-geospatialpolygonstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::KafkaConnect::Connector KafkaCluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector KafkaCluster
+<a name="aws-properties-kafkaconnect-connector-kafkacluster"></a>
 
 The details of the Apache Kafka cluster to which the connector is connected.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-kafkacluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-kafkacluster-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApacheKafkaCluster" : ApacheKafkaCluster
+  "[ApacheKafkaCluster](#cfn-kafkaconnect-connector-kafkacluster-apachekafkacluster)" : {{ApacheKafkaCluster}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-kafkacluster-syntax.yaml"></a>
 
-```yaml
-
-  ApacheKafkaCluster:
-    ApacheKafkaCluster
-
+```
+  [ApacheKafkaCluster](#cfn-kafkaconnect-connector-kafkacluster-apachekafkacluster): {{
+    ApacheKafkaCluster}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-kafkacluster-properties"></a>
 
-`ApacheKafkaCluster`
-
+`ApacheKafkaCluster`  <a name="cfn-kafkaconnect-connector-kafkacluster-apachekafkacluster"></a>
 The Apache Kafka cluster to which the connector is connected.
-
-_Required_: Yes
-
-_Type_: [ApacheKafkaCluster](aws-properties-kafkaconnect-connector-apachekafkacluster.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FirehoseLogDelivery
-
-KafkaClusterClientAuthentication
+*Required*: Yes
+*Type*: [ApacheKafkaCluster](aws-properties-kafkaconnect-connector-apachekafkacluster.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

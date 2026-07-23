@@ -2,214 +2,156 @@
 title: "AWS::Connect::Workspace"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Workspace
+<a name="aws-resource-connect-workspace"></a>
 
 Contains information about a workspace, which defines the user experience by mapping views to pages.
 
 ## Syntax
+<a name="aws-resource-connect-workspace-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-workspace-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::Workspace",
   "Properties" : {
-      "Associations" : [ String, ... ],
-      "Description" : String,
-      "InstanceArn" : String,
-      "Media" : [ MediaItem, ... ],
-      "Name" : String,
-      "Pages" : [ WorkspacePage, ... ],
-      "Tags" : [ Tag, ... ],
-      "Theme" : WorkspaceTheme,
-      "Title" : String,
-      "Visibility" : String
+      "[Associations](#cfn-connect-workspace-associations)" : {{[ String, ... ]}},
+      "[Description](#cfn-connect-workspace-description)" : {{String}},
+      "[InstanceArn](#cfn-connect-workspace-instancearn)" : {{String}},
+      "[Media](#cfn-connect-workspace-media)" : {{[ MediaItem, ... ]}},
+      "[Name](#cfn-connect-workspace-name)" : {{String}},
+      "[Pages](#cfn-connect-workspace-pages)" : {{[ WorkspacePage, ... ]}},
+      "[Tags](#cfn-connect-workspace-tags)" : {{[ Tag, ... ]}},
+      "[Theme](#cfn-connect-workspace-theme)" : {{WorkspaceTheme}},
+      "[Title](#cfn-connect-workspace-title)" : {{String}},
+      "[Visibility](#cfn-connect-workspace-visibility)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-workspace-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::Workspace
 Properties:
-  Associations:
-    - String
-  Description: String
-  InstanceArn: String
-  Media:
-    - MediaItem
-  Name: String
-  Pages:
-    - WorkspacePage
-  Tags:
-    - Tag
-  Theme:
-    WorkspaceTheme
-  Title: String
-  Visibility: String
-
+  [Associations](#cfn-connect-workspace-associations): {{
+    - String}}
+  [Description](#cfn-connect-workspace-description): {{String}}
+  [InstanceArn](#cfn-connect-workspace-instancearn): {{String}}
+  [Media](#cfn-connect-workspace-media): {{
+    - MediaItem}}
+  [Name](#cfn-connect-workspace-name): {{String}}
+  [Pages](#cfn-connect-workspace-pages): {{
+    - WorkspacePage}}
+  [Tags](#cfn-connect-workspace-tags): {{
+    - Tag}}
+  [Theme](#cfn-connect-workspace-theme): {{
+    WorkspaceTheme}}
+  [Title](#cfn-connect-workspace-title): {{String}}
+  [Visibility](#cfn-connect-workspace-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-workspace-properties"></a>
 
-`Associations`
-
+`Associations`  <a name="cfn-connect-workspace-associations"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-connect-workspace-description"></a>
 The description of the workspace.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\P{C} ]*$`
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\P{C}
-	]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-workspace-instancearn"></a>
 The Amazon Resource Name (ARN) of the instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Media`
-
+`Media`  <a name="cfn-connect-workspace-media"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [MediaItem](aws-properties-connect-workspace-mediaitem.md)
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MediaItem](aws-properties-connect-workspace-mediaitem.md)
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-workspace-name"></a>
 The name of the workspace.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pages`
-
+`Pages`  <a name="cfn-connect-workspace-pages"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [WorkspacePage](aws-properties-connect-workspace-workspacepage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [WorkspacePage](aws-properties-connect-workspace-workspacepage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-connect-workspace-tags"></a>
 The tags used to organize, track, or control access for the workspace.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-workspace-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-connect-workspace-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Theme`
-
+`Theme`  <a name="cfn-connect-workspace-theme"></a>
 The theme configuration for the workspace, including colors and styling.
+*Required*: No
+*Type*: [WorkspaceTheme](aws-properties-connect-workspace-workspacetheme.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [WorkspaceTheme](aws-properties-connect-workspace-workspacetheme.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-connect-workspace-title"></a>
 The title displayed for the workspace.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\P{C}]*$`
+*Minimum*: `0`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\P{C}]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
-Controls who can access the workspace. Valid values are: `ALL` (all users), `ASSIGNED`
-(only assigned users and routing profiles), and `NONE` (not visible).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL | ASSIGNED | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Visibility`  <a name="cfn-connect-workspace-visibility"></a>
+Controls who can access the workspace. Valid values are: `ALL` (all users), `ASSIGNED` (only assigned users and routing profiles), and `NONE` (not visible).
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL | ASSIGNED | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-connect-workspace-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-workspace-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-workspace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-connect-workspace-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::ViewVersion
-
-FontFamily
 
 All content copied from https://docs.aws.amazon.com/.

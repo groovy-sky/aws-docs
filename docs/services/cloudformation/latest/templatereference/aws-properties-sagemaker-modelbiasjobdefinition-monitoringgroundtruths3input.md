@@ -2,56 +2,43 @@
 title: "AWS::SageMaker::ModelBiasJobDefinition MonitoringGroundTruthS3Input"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelBiasJobDefinition MonitoringGroundTruthS3Input
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input"></a>
 
 The ground truth labels for the dataset used for the monitoring job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Uri" : String
+  "[S3Uri](#cfn-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-s3uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-syntax.yaml"></a>
 
-```yaml
-
-  S3Uri: String
-
+```
+  [S3Uri](#cfn-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-s3uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-properties"></a>
 
-`S3Uri`
-
+`S3Uri`  <a name="cfn-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-s3uri"></a>
 The address of the Amazon S3 location of the ground truth labels.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(https|s3)://([^/]+)/?(.*)$`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelBiasJobInput
-
-MonitoringOutput
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,59 +2,42 @@
 title: "AWS::VerifiedPermissions::PolicyStore SchemaDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VerifiedPermissions::PolicyStore SchemaDefinition
+<a name="aws-properties-verifiedpermissions-policystore-schemadefinition"></a>
 
-Contains a list of principal types, resource types, and actions that can be specified
-in policies stored in the same policy store. If the validation mode for the policy store is set to
-`STRICT`, then policies that can't be validated by this schema are
-rejected by Verified Permissions and can't be stored in the policy store.
+Contains a list of principal types, resource types, and actions that can be specified in policies stored in the same policy store. If the validation mode for the policy store is set to `STRICT`, then policies that can't be validated by this schema are rejected by Verified Permissions and can't be stored in the policy store.
 
 ## Syntax
+<a name="aws-properties-verifiedpermissions-policystore-schemadefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-verifiedpermissions-policystore-schemadefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "CedarJson" : String
+  "[CedarJson](#cfn-verifiedpermissions-policystore-schemadefinition-cedarjson)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-verifiedpermissions-policystore-schemadefinition-syntax.yaml"></a>
 
-```yaml
-
-  CedarJson: String
-
+```
+  [CedarJson](#cfn-verifiedpermissions-policystore-schemadefinition-cedarjson): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-verifiedpermissions-policystore-schemadefinition-properties"></a>
 
-`CedarJson`
-
-A JSON string representation of the schema supported by applications that use this
-policy store. For more information, see [Policy store schema](../../../verifiedpermissions/latest/userguide/schema.md)
-in the AVP User Guide.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KmsEncryptionState
-
-Tag
+`CedarJson`  <a name="cfn-verifiedpermissions-policystore-schemadefinition-cedarjson"></a>
+A JSON string representation of the schema supported by applications that use this policy store. For more information, see [Policy store schema](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/schema.html) in the AVP User Guide.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

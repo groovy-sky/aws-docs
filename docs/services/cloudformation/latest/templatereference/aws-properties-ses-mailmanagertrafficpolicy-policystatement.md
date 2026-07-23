@@ -2,71 +2,52 @@
 title: "AWS::SES::MailManagerTrafficPolicy PolicyStatement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy PolicyStatement
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement"></a>
 
 The structure containing traffic policy conditions and actions.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "Conditions" : [ PolicyCondition, ... ]
+  "[Action](#cfn-ses-mailmanagertrafficpolicy-policystatement-action)" : {{String}},
+  "[Conditions](#cfn-ses-mailmanagertrafficpolicy-policystatement-conditions)" : {{[ PolicyCondition, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  Conditions:
-    - PolicyCondition
-
+```
+  [Action](#cfn-ses-mailmanagertrafficpolicy-policystatement-action): {{String}}
+  [Conditions](#cfn-ses-mailmanagertrafficpolicy-policystatement-conditions): {{
+    - PolicyCondition}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement-properties"></a>
 
-`Action`
+`Action`  <a name="cfn-ses-mailmanagertrafficpolicy-policystatement-action"></a>
+The action that informs a traffic policy resource to either allow or block the email if it matches a condition in the policy statement.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALLOW | DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The action that informs a traffic policy resource to either allow or block the email
-if it matches a condition in the policy statement.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALLOW | DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Conditions`
-
-The list of conditions to apply to incoming messages for filtering email
-traffic.
-
-_Required_: Yes
-
-_Type_: Array of [PolicyCondition](aws-properties-ses-mailmanagertrafficpolicy-policycondition.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyCondition
-
-Tag
+`Conditions`  <a name="cfn-ses-mailmanagertrafficpolicy-policystatement-conditions"></a>
+The list of conditions to apply to incoming messages for filtering email traffic.
+*Required*: Yes
+*Type*: Array of [PolicyCondition](aws-properties-ses-mailmanagertrafficpolicy-policycondition.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

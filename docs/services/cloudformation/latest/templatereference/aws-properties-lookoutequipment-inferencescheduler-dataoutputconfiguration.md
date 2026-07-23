@@ -2,71 +2,53 @@
 title: "AWS::LookoutEquipment::InferenceScheduler DataOutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LookoutEquipment::InferenceScheduler DataOutputConfiguration
+<a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration"></a>
 
-The `DataOutputConfiguration` property type specifies Property description not available. for an [AWS::LookoutEquipment::InferenceScheduler](aws-resource-lookoutequipment-inferencescheduler.md).
+<a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-description"></a>The `DataOutputConfiguration` property type specifies Property description not available. for an [AWS::LookoutEquipment::InferenceScheduler](aws-resource-lookoutequipment-inferencescheduler.md).
 
 ## Syntax
+<a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String,
-  "S3OutputConfiguration" : S3OutputConfiguration
+  "[KmsKeyId](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-kmskeyid)" : {{String}},
+  "[S3OutputConfiguration](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-s3outputconfiguration)" : {{S3OutputConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-  S3OutputConfiguration:
-    S3OutputConfiguration
-
+```
+  [KmsKeyId](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-kmskeyid): {{String}}
+  [S3OutputConfiguration](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-s3outputconfiguration): {{
+    S3OutputConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-properties"></a>
 
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-kmskeyid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,2048}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,2048}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3OutputConfiguration`
-
+`S3OutputConfiguration`  <a name="cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-s3outputconfiguration"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [S3OutputConfiguration](aws-properties-lookoutequipment-inferencescheduler-s3outputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataInputConfiguration
-
-InputNameConfiguration
+*Required*: Yes
+*Type*: [S3OutputConfiguration](aws-properties-lookoutequipment-inferencescheduler-s3outputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

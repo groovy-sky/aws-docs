@@ -2,124 +2,115 @@
 title: "AWS::LakeFormation::TagAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::TagAssociation
+<a name="aws-resource-lakeformation-tagassociation"></a>
 
-The `AWS::LakeFormation::TagAssociation` resource represents an assignment of an LF-tag to a Data Catalog resource (database, table, or column).
-During a stack operation, CloudFormation calls AWS Lake Formation `AddLFTagsToResource` API to create a `TagAssociation` resource and calls the `RemoveLFTagsToResource` API to delete it.
+ The `AWS::LakeFormation::TagAssociation` resource represents an assignment of an LF-tag to a Data Catalog resource (database, table, or column). During a stack operation, CloudFormation calls AWS Lake Formation`AddLFTagsToResource` API to create a `TagAssociation` resource and calls the `RemoveLFTagsToResource` API to delete it.
 
 ## Syntax
+<a name="aws-resource-lakeformation-tagassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lakeformation-tagassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::LakeFormation::TagAssociation",
   "Properties" : {
-      "LFTags" : [ LFTagPair, ... ],
-      "Resource" : Resource
+      "[LFTags](#cfn-lakeformation-tagassociation-lftags)" : {{[ LFTagPair, ... ]}},
+      "[Resource](#cfn-lakeformation-tagassociation-resource)" : {{Resource}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lakeformation-tagassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::LakeFormation::TagAssociation
 Properties:
-  LFTags:
-    - LFTagPair
-  Resource:
-    Resource
-
+  [LFTags](#cfn-lakeformation-tagassociation-lftags): {{
+    - LFTagPair}}
+  [Resource](#cfn-lakeformation-tagassociation-resource): {{
+    Resource}}
 ```
 
 ## Properties
+<a name="aws-resource-lakeformation-tagassociation-properties"></a>
 
-`LFTags`
+`LFTags`  <a name="cfn-lakeformation-tagassociation-lftags"></a>
+ A structure containing an LF-tag key-value pair.
+*Required*: Yes
+*Type*: Array of [LFTagPair](aws-properties-lakeformation-tagassociation-lftagpair.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A structure containing an LF-tag key-value pair.
-
-_Required_: Yes
-
-_Type_: Array of [LFTagPair](aws-properties-lakeformation-tagassociation-lftagpair.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Resource`
-
+`Resource`  <a name="cfn-lakeformation-tagassociation-resource"></a>
 UTF-8 string (valid values: `DATABASE | TABLE`).
-
 The resource for which the LF-tag policy applies.
-
-_Required_: Yes
-
-_Type_: [Resource](aws-properties-lakeformation-tagassociation-resource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: [Resource](aws-properties-lakeformation-tagassociation-resource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-lakeformation-tagassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-lakeformation-tagassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a combination of the `ResourceIdentifier` and `TagsIdentifier` seperated with a pipe.
 
 For example: `{"Catalog":null,"Database":{"CatalogId":null,"Name":"ExampleDbName"},"Table":null,"TableWithColumns":null}|[{"CatalogId":null,"TagKey":"tagKey1","TagValues":null}]`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-lakeformation-tagassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ResourceIdentifier`
+####
+<a name="aws-resource-lakeformation-tagassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`ResourceIdentifier`  <a name="ResourceIdentifier-fn::getatt"></a>
 Json encoding of the input resource.
 
-###### Examples
+**Examples**
++ Database:`{"Catalog":null,"Database":{"CatalogId":"123456789012","Name":"ExampleDbName"},"Table":null,"TableWithColumns":null}`
++ Table: `{"Catalog":null,"Database":null,"Table":{"CatalogId":"123456789012","DatabaseName":"ExampleDbName","Name":"ExampleTableName","TableWildcard":null},"TableWithColumns":null}`
++ Columns: `{"Catalog":null,"Database":null,"Table":null,"TableWithColumns":{"CatalogId":"123456789012","DatabaseName":"ExampleDbName","Name":"ExampleTableName","ColumnNames":["ExampleColName1","ExampleColName2"]}}`
 
-- Database: `{"Catalog":null,"Database":{"CatalogId":"123456789012","Name":"ExampleDbName"},"Table":null,"TableWithColumns":null}`
-
-- Table: `{"Catalog":null,"Database":null,"Table":{"CatalogId":"123456789012","DatabaseName":"ExampleDbName","Name":"ExampleTableName","TableWildcard":null},"TableWithColumns":null}`
-
-- Columns: `{"Catalog":null,"Database":null,"Table":null,"TableWithColumns":{"CatalogId":"123456789012","DatabaseName":"ExampleDbName","Name":"ExampleTableName","ColumnNames":["ExampleColName1","ExampleColName2"]}}`
-
-`TagsIdentifier`
-
+`TagsIdentifier`  <a name="TagsIdentifier-fn::getatt"></a>
 Json encoding of the input LFTags list.
-
 For example: `[{"CatalogId":null,"TagKey":"tagKey1","TagValues":null},{"CatalogId":null,"TagKey":"tagKey2","TagValues":null}]`
 
 ## Remarks
+<a name="aws-resource-lakeformation-tagassociation--remarks"></a>
 
 Note that for a valid `TagAssociation` to be created, a database or table or column(s) must be specified.
 
 ## Examples
+<a name="aws-resource-lakeformation-tagassociation--examples"></a>
 
-- [Examples for creating an LF-tag for a database](#aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database)
-
-- [Examples for creating and LF-tag for a table](#aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table)
-
-- [Examples for creating an LF-tag for columns](#aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns)
+**Topics**
++ [Examples for creating an LF-tag for a database](#aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database)
++ [Examples for creating and LF-tag for a table](#aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table)
++ [Examples for creating an LF-tag for columns](#aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns)
 
 ### Examples for creating an LF-tag for a database
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database"></a>
 
 The following example demonstrates how to create an LF-tag on a database.
 
 #### JSON
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database--json"></a>
 
-```json
-
+```
 {
     "SampleTagOnDatabase": {
         "Type": "AWS::LakeFormation::TagAssociation",
@@ -143,9 +134,9 @@ The following example demonstrates how to create an LF-tag on a database.
 ```
 
 #### YAML
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database--yaml"></a>
 
-```yaml
-
+```
 SampleTagOnDatabase:
     Type: AWS::LakeFormation::TagAssociation
     Properties:
@@ -158,17 +149,17 @@ SampleTagOnDatabase:
           TagKey: "sample_tag_key"
           TagValues:
             - "sample_tag_value1"
-
 ```
 
 ### Examples for creating and LF-tag for a table
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table"></a>
 
 The following example demonstrates how to create an LF-tag on a table.
 
 #### JSON
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table--json"></a>
 
-```json
-
+```
 {
     "SampleTagOnTable": {
         "Type": "AWS::LakeFormation::TagAssociation",
@@ -193,9 +184,9 @@ The following example demonstrates how to create an LF-tag on a table.
 ```
 
 #### YAML
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table--yaml"></a>
 
-```yaml
-
+```
 SampleTagOnTable:
     Type: AWS::LakeFormation::TagAssociation
     Properties:
@@ -209,17 +200,17 @@ SampleTagOnTable:
           TagKey: "sample_tag_key"
           TagValues:
             - "sample_tag_value1"
-
 ```
 
 ### Examples for creating an LF-tag for columns
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns"></a>
 
 The following example demonstrates how to create LF-tags on columns.
 
 #### JSON
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns--json"></a>
 
-```json
-
+```
 {
     "SampleTagOnColumn": {
         "Type": "AWS::LakeFormation::TagAssociation",
@@ -245,9 +236,9 @@ The following example demonstrates how to create LF-tags on columns.
 ```
 
 #### YAML
+<a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns--yaml"></a>
 
-```yaml
-
+```
 TestTagAssociation:
     Type: AWS::LakeFormation::TagAssociation
     Properties:
@@ -267,13 +258,8 @@ TestTagAssociation:
 ```
 
 ## See also
+<a name="aws-resource-lakeformation-tagassociation--seealso"></a>
 
-[Permission requirements for tag assignments.](../../../lake-formation/latest/dg/tbac-assigning-tags.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::LakeFormation::Tag
-
-DatabaseResource
+ [Permission requirements for tag assignments.](https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-assigning-tags.html)
 
 All content copied from https://docs.aws.amazon.com/.

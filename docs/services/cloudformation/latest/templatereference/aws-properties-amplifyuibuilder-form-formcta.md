@@ -2,93 +2,69 @@
 title: "AWS::AmplifyUIBuilder::Form FormCTA"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FormCTA
+<a name="aws-properties-amplifyuibuilder-form-formcta"></a>
 
 The `FormCTA` property specifies the call to action button configuration for the form.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-formcta-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-formcta-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cancel" : FormButton,
-  "Clear" : FormButton,
-  "Position" : String,
-  "Submit" : FormButton
+  "[Cancel](#cfn-amplifyuibuilder-form-formcta-cancel)" : {{FormButton}},
+  "[Clear](#cfn-amplifyuibuilder-form-formcta-clear)" : {{FormButton}},
+  "[Position](#cfn-amplifyuibuilder-form-formcta-position)" : {{String}},
+  "[Submit](#cfn-amplifyuibuilder-form-formcta-submit)" : {{FormButton}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-formcta-syntax.yaml"></a>
 
-```yaml
-
-  Cancel:
-    FormButton
-  Clear:
-    FormButton
-  Position: String
-  Submit:
-    FormButton
-
+```
+  [Cancel](#cfn-amplifyuibuilder-form-formcta-cancel): {{
+    FormButton}}
+  [Clear](#cfn-amplifyuibuilder-form-formcta-clear): {{
+    FormButton}}
+  [Position](#cfn-amplifyuibuilder-form-formcta-position): {{String}}
+  [Submit](#cfn-amplifyuibuilder-form-formcta-submit): {{
+    FormButton}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-formcta-properties"></a>
 
-`Cancel`
-
+`Cancel`  <a name="cfn-amplifyuibuilder-form-formcta-cancel"></a>
 Displays a cancel button.
+*Required*: No
+*Type*: [FormButton](aws-properties-amplifyuibuilder-form-formbutton.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FormButton](aws-properties-amplifyuibuilder-form-formbutton.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Clear`
-
+`Clear`  <a name="cfn-amplifyuibuilder-form-formcta-clear"></a>
 Displays a clear button.
+*Required*: No
+*Type*: [FormButton](aws-properties-amplifyuibuilder-form-formbutton.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FormButton](aws-properties-amplifyuibuilder-form-formbutton.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
+`Position`  <a name="cfn-amplifyuibuilder-form-formcta-position"></a>
 The position of the button.
+*Required*: No
+*Type*: String
+*Allowed values*: `top | bottom | top_and_bottom`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `top | bottom | top_and_bottom`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Submit`
-
+`Submit`  <a name="cfn-amplifyuibuilder-form-formcta-submit"></a>
 Displays a submit button.
-
-_Required_: No
-
-_Type_: [FormButton](aws-properties-amplifyuibuilder-form-formbutton.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FormButton
-
-FormDataTypeConfig
+*Required*: No
+*Type*: [FormButton](aws-properties-amplifyuibuilder-form-formbutton.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

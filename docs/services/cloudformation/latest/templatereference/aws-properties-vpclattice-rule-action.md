@@ -2,67 +2,51 @@
 title: "AWS::VpcLattice::Rule Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Rule Action
+<a name="aws-properties-vpclattice-rule-action"></a>
 
 Describes the action for a rule.
 
 ## Syntax
+<a name="aws-properties-vpclattice-rule-action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-rule-action-syntax.json"></a>
 
-```json
-
+```
 {
-  "FixedResponse" : FixedResponse,
-  "Forward" : Forward
+  "[FixedResponse](#cfn-vpclattice-rule-action-fixedresponse)" : {{FixedResponse}},
+  "[Forward](#cfn-vpclattice-rule-action-forward)" : {{Forward}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-rule-action-syntax.yaml"></a>
 
-```yaml
-
-  FixedResponse:
-    FixedResponse
-  Forward:
-    Forward
-
+```
+  [FixedResponse](#cfn-vpclattice-rule-action-fixedresponse): {{
+    FixedResponse}}
+  [Forward](#cfn-vpclattice-rule-action-forward): {{
+    Forward}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-rule-action-properties"></a>
 
-`FixedResponse`
-
+`FixedResponse`  <a name="cfn-vpclattice-rule-action-fixedresponse"></a>
 The fixed response action. The rule returns a custom HTTP response.
+*Required*: No
+*Type*: [FixedResponse](aws-properties-vpclattice-rule-fixedresponse.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FixedResponse](aws-properties-vpclattice-rule-fixedresponse.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Forward`
-
-The forward action. Traffic that matches the rule is forwarded to the specified target
-groups.
-
-_Required_: No
-
-_Type_: [Forward](aws-properties-vpclattice-rule-forward.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::Rule
-
-FixedResponse
+`Forward`  <a name="cfn-vpclattice-rule-action-forward"></a>
+The forward action. Traffic that matches the rule is forwarded to the specified target groups.
+*Required*: No
+*Type*: [Forward](aws-properties-vpclattice-rule-forward.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

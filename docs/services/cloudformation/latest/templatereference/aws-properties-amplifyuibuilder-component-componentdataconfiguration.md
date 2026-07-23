@@ -2,94 +2,68 @@
 title: "AWS::AmplifyUIBuilder::Component ComponentDataConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component ComponentDataConfiguration
+<a name="aws-properties-amplifyuibuilder-component-componentdataconfiguration"></a>
 
-The `ComponentDataConfiguration` property specifies the configuration for
-binding a component's properties to data.
+The `ComponentDataConfiguration` property specifies the configuration for binding a component's properties to data.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-component-componentdataconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-component-componentdataconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Identifiers" : [ String, ... ],
-  "Model" : String,
-  "Predicate" : Predicate,
-  "Sort" : [ SortProperty, ... ]
+  "[Identifiers](#cfn-amplifyuibuilder-component-componentdataconfiguration-identifiers)" : {{[ String, ... ]}},
+  "[Model](#cfn-amplifyuibuilder-component-componentdataconfiguration-model)" : {{String}},
+  "[Predicate](#cfn-amplifyuibuilder-component-componentdataconfiguration-predicate)" : {{Predicate}},
+  "[Sort](#cfn-amplifyuibuilder-component-componentdataconfiguration-sort)" : {{[ SortProperty, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-component-componentdataconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Identifiers:
-    - String
-  Model: String
-  Predicate:
-    Predicate
-  Sort:
-    - SortProperty
-
+```
+  [Identifiers](#cfn-amplifyuibuilder-component-componentdataconfiguration-identifiers): {{
+    - String}}
+  [Model](#cfn-amplifyuibuilder-component-componentdataconfiguration-model): {{String}}
+  [Predicate](#cfn-amplifyuibuilder-component-componentdataconfiguration-predicate): {{
+    Predicate}}
+  [Sort](#cfn-amplifyuibuilder-component-componentdataconfiguration-sort): {{
+    - SortProperty}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-component-componentdataconfiguration-properties"></a>
 
-`Identifiers`
+`Identifiers`  <a name="cfn-amplifyuibuilder-component-componentdataconfiguration-identifiers"></a>
+A list of IDs to use to bind data to a component. Use this property to bind specifically chosen data, rather than data retrieved from a query.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of IDs to use to bind data to a component. Use this property to bind specifically
-chosen data, rather than data retrieved from a query.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Model`
-
+`Model`  <a name="cfn-amplifyuibuilder-component-componentdataconfiguration-model"></a>
 The name of the data model to use to bind data to a component.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Predicate`  <a name="cfn-amplifyuibuilder-component-componentdataconfiguration-predicate"></a>
+Represents the conditional logic to use when binding data to a component. Use this property to retrieve only a subset of the data in a collection.
+*Required*: No
+*Type*: [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Predicate`
-
-Represents the conditional logic to use when binding data to a component. Use this
-property to retrieve only a subset of the data in a collection.
-
-_Required_: No
-
-_Type_: [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sort`
-
+`Sort`  <a name="cfn-amplifyuibuilder-component-componentdataconfiguration-sort"></a>
 Describes how to sort the component's properties.
-
-_Required_: No
-
-_Type_: Array of [SortProperty](aws-properties-amplifyuibuilder-component-sortproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentConditionProperty
-
-ComponentEvent
+*Required*: No
+*Type*: Array of [SortProperty](aws-properties-amplifyuibuilder-component-sortproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

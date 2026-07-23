@@ -2,61 +2,44 @@
 title: "AWS::GreengrassV2::Deployment IoTJobTimeoutConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment IoTJobTimeoutConfig
+<a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig"></a>
 
 Contains information about the timeout configuration for a job.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InProgressTimeoutInMinutes" : Integer
+  "[InProgressTimeoutInMinutes](#cfn-greengrassv2-deployment-iotjobtimeoutconfig-inprogresstimeoutinminutes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig-syntax.yaml"></a>
 
-```yaml
-
-  InProgressTimeoutInMinutes: Integer
-
+```
+  [InProgressTimeoutInMinutes](#cfn-greengrassv2-deployment-iotjobtimeoutconfig-inprogresstimeoutinminutes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig-properties"></a>
 
-`InProgressTimeoutInMinutes`
-
-The amount of time, in minutes, that devices have to complete the job. The timer starts
-when the job status is set to `IN_PROGRESS`. If the job status doesn't change to a
-terminal state before the time expires, then the job status is set to
-`TIMED_OUT`.
-
+`InProgressTimeoutInMinutes`  <a name="cfn-greengrassv2-deployment-iotjobtimeoutconfig-inprogresstimeoutinminutes"></a>
+The amount of time, in minutes, that devices have to complete the job. The timer starts when the job status is set to `IN_PROGRESS`. If the job status doesn't change to a terminal state before the time expires, then the job status is set to `TIMED_OUT`.
 The timeout interval must be between 1 minute and 7 days (10080 minutes).
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IoTJobRateIncreaseCriteria
-
-SystemResourceLimits
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

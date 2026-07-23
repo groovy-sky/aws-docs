@@ -2,99 +2,71 @@
 title: "AWS::ElasticLoadBalancing::LoadBalancer AccessLoggingPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancing::LoadBalancer AccessLoggingPolicy
+<a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy"></a>
 
 Specifies where and how access logs are stored for your Classic Load Balancer.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "EmitInterval" : Integer,
-  "Enabled" : Boolean,
-  "S3BucketName" : String,
-  "S3BucketPrefix" : String
+  "[EmitInterval](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-emitinterval)" : {{Integer}},
+  "[Enabled](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-enabled)" : {{Boolean}},
+  "[S3BucketName](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketname)" : {{String}},
+  "[S3BucketPrefix](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy-syntax.yaml"></a>
 
-```yaml
-
-  EmitInterval: Integer
-  Enabled: Boolean
-  S3BucketName: String
-  S3BucketPrefix: String
-
+```
+  [EmitInterval](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-emitinterval): {{Integer}}
+  [Enabled](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-enabled): {{Boolean}}
+  [S3BucketName](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketname): {{String}}
+  [S3BucketPrefix](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy-properties"></a>
 
-`EmitInterval`
-
+`EmitInterval`  <a name="cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-emitinterval"></a>
 The interval for publishing the access logs. You can specify an interval of either 5 minutes or 60 minutes.
-
 Default: 60 minutes
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-enabled"></a>
 Specifies whether access logs are enabled for the load balancer.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3BucketName`
-
+`S3BucketName`  <a name="cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketname"></a>
 The name of the Amazon S3 bucket where the access logs are stored.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3BucketPrefix`
-
-The logical hierarchy you created for your Amazon S3 bucket, for example `my-bucket-prefix/prod`.
-If the prefix is not provided, the log is placed at the root level of the bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`S3BucketPrefix`  <a name="cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketprefix"></a>
+The logical hierarchy you created for your Amazon S3 bucket, for example `my-bucket-prefix/prod`. If the prefix is not provided, the log is placed at the root level of the bucket.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ModifyLoadBalancerAttributes](../../../../reference/elasticloadbalancing/2012-06-01/apireference/api-modifyloadbalancerattributes.md)
-in the _Elastic Load Balancing API Reference (version 2012-06-01)_
-
-- [Access Logs](../../../elasticloadbalancing/latest/classic/access-log-collection.md)
-in the _User Guide for Classic Load Balancers_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ElasticLoadBalancing::LoadBalancer
-
-AppCookieStickinessPolicy
+<a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy--seealso"></a>
++ [ModifyLoadBalancerAttributes](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_ModifyLoadBalancerAttributes.html) in the *Elastic Load Balancing API Reference (version 2012-06-01)*
++ [Access Logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html) in the *User Guide for Classic Load Balancers*
 
 All content copied from https://docs.aws.amazon.com/.

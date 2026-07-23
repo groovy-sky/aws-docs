@@ -2,88 +2,63 @@
 title: "AWS::QuickSight::DataSet PivotedLabel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet PivotedLabel
+<a name="aws-properties-quicksight-dataset-pivotedlabel"></a>
 
 Specifies a label value to be pivoted into a separate column, including the new column name and identifier.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-pivotedlabel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-pivotedlabel-syntax.json"></a>
 
-```json
-
+```
 {
-  "LabelName" : String,
-  "NewColumnId" : String,
-  "NewColumnName" : String
+  "[LabelName](#cfn-quicksight-dataset-pivotedlabel-labelname)" : {{String}},
+  "[NewColumnId](#cfn-quicksight-dataset-pivotedlabel-newcolumnid)" : {{String}},
+  "[NewColumnName](#cfn-quicksight-dataset-pivotedlabel-newcolumnname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-pivotedlabel-syntax.yaml"></a>
 
-```yaml
-
-  LabelName: String
-  NewColumnId: String
-  NewColumnName: String
-
+```
+  [LabelName](#cfn-quicksight-dataset-pivotedlabel-labelname): {{String}}
+  [NewColumnId](#cfn-quicksight-dataset-pivotedlabel-newcolumnid): {{String}}
+  [NewColumnName](#cfn-quicksight-dataset-pivotedlabel-newcolumnname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-pivotedlabel-properties"></a>
 
-`LabelName`
-
+`LabelName`  <a name="cfn-quicksight-dataset-pivotedlabel-labelname"></a>
 The label value from the source data to be pivoted.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2047`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2047`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NewColumnId`
-
+`NewColumnId`  <a name="cfn-quicksight-dataset-pivotedlabel-newcolumnid"></a>
 A unique identifier for the new column created from this pivoted label.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NewColumnName`
-
+`NewColumnName`  <a name="cfn-quicksight-dataset-pivotedlabel-newcolumnname"></a>
 The name for the new column created from this pivoted label.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotConfiguration
-
-PivotOperation
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

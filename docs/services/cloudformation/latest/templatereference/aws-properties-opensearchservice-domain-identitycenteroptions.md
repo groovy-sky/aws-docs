@@ -2,140 +2,92 @@
 title: "AWS::OpenSearchService::Domain IdentityCenterOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchService::Domain IdentityCenterOptions
+<a name="aws-properties-opensearchservice-domain-identitycenteroptions"></a>
 
-Settings container for integrating IAM Identity Center with OpenSearch UI applications,
-which enables enabling secure user authentication and access control across multiple data
-sources. This setup supports single sign-on (SSO) through IAM Identity Center, allowing
-centralized user management.
+Settings container for integrating IAM Identity Center with OpenSearch UI applications, which enables enabling secure user authentication and access control across multiple data sources. This setup supports single sign-on (SSO) through IAM Identity Center, allowing centralized user management.
 
 ## Syntax
+<a name="aws-properties-opensearchservice-domain-identitycenteroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchservice-domain-identitycenteroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnabledAPIAccess" : Boolean,
-  "IdentityCenterApplicationARN" : String,
-  "IdentityCenterInstanceARN" : String,
-  "IdentityStoreId" : String,
-  "RolesKey" : String,
-  "SubjectKey" : String
+  "[EnabledAPIAccess](#cfn-opensearchservice-domain-identitycenteroptions-enabledapiaccess)" : {{Boolean}},
+  "[IdentityCenterApplicationARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterapplicationarn)" : {{String}},
+  "[IdentityCenterInstanceARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterinstancearn)" : {{String}},
+  "[IdentityStoreId](#cfn-opensearchservice-domain-identitycenteroptions-identitystoreid)" : {{String}},
+  "[RolesKey](#cfn-opensearchservice-domain-identitycenteroptions-roleskey)" : {{String}},
+  "[SubjectKey](#cfn-opensearchservice-domain-identitycenteroptions-subjectkey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchservice-domain-identitycenteroptions-syntax.yaml"></a>
 
-```yaml
-
-  EnabledAPIAccess: Boolean
-  IdentityCenterApplicationARN: String
-  IdentityCenterInstanceARN: String
-  IdentityStoreId: String
-  RolesKey: String
-  SubjectKey: String
-
+```
+  [EnabledAPIAccess](#cfn-opensearchservice-domain-identitycenteroptions-enabledapiaccess): {{Boolean}}
+  [IdentityCenterApplicationARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterapplicationarn): {{String}}
+  [IdentityCenterInstanceARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterinstancearn): {{String}}
+  [IdentityStoreId](#cfn-opensearchservice-domain-identitycenteroptions-identitystoreid): {{String}}
+  [RolesKey](#cfn-opensearchservice-domain-identitycenteroptions-roleskey): {{String}}
+  [SubjectKey](#cfn-opensearchservice-domain-identitycenteroptions-subjectkey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchservice-domain-identitycenteroptions-properties"></a>
 
-`EnabledAPIAccess`
-
+`EnabledAPIAccess`  <a name="cfn-opensearchservice-domain-identitycenteroptions-enabledapiaccess"></a>
 Indicates whether IAM Identity Center is enabled for the application.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IdentityCenterApplicationARN`  <a name="cfn-opensearchservice-domain-identitycenteroptions-identitycenterapplicationarn"></a>
+The ARN of the IAM Identity Center application that integrates with Amazon OpenSearch Service.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-z\\-]*:[a-z]+:[a-z0-9\\-]*:[0-9]*:[a-z0-9\\-]+\/[a-z0-9\\-]+\/[a-z0-9\\-]+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityCenterApplicationARN`
-
-The ARN of the IAM Identity Center application that integrates with Amazon OpenSearch
-Service.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\\-]*:[a-z]+:[a-z0-9\\-]*:[0-9]*:[a-z0-9\\-]+\/[a-z0-9\\-]+\/[a-z0-9\\-]+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityCenterInstanceARN`
-
+`IdentityCenterInstanceARN`  <a name="cfn-opensearchservice-domain-identitycenteroptions-identitycenterinstancearn"></a>
 The Amazon Resource Name (ARN) of the IAM Identity Center instance.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-z\\-]*:[a-z]+:[a-z0-9\\-]*:[0-9]*:[a-z0-9\\-]+\/[a-z0-9\\-]+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\\-]*:[a-z]+:[a-z0-9\\-]*:[0-9]*:[a-z0-9\\-]+\/[a-z0-9\\-]+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityStoreId`
-
+`IdentityStoreId`  <a name="cfn-opensearchservice-domain-identitycenteroptions-identitystoreid"></a>
 The identifier of the IAM Identity Store.
+*Required*: No
+*Type*: String
+*Pattern*: `^d-[0-9a-f]{10}$|^[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RolesKey`  <a name="cfn-opensearchservice-domain-identitycenteroptions-roleskey"></a>
+Specifies the attribute that contains the backend role identifier (such as group name or group ID) in IAM Identity Center.
+*Required*: No
+*Type*: String
+*Allowed values*: `GroupName | GroupId`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^d-[0-9a-f]{10}$|^[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RolesKey`
-
-Specifies the attribute that contains the backend role identifier (such as group name or
-group ID) in IAM Identity Center.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GroupName | GroupId`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubjectKey`
-
-Specifies the attribute that contains the subject identifier (such as username, user ID, or
-email) in IAM Identity Center.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `UserName | UserId | Email`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IAMFederationOptions
-
-Idp
+`SubjectKey`  <a name="cfn-opensearchservice-domain-identitycenteroptions-subjectkey"></a>
+Specifies the attribute that contains the subject identifier (such as username, user ID, or email) in IAM Identity Center.
+*Required*: No
+*Type*: String
+*Allowed values*: `UserName | UserId | Email`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,79 +2,60 @@
 title: "AWS::DataZone::DataSource DataSourceConfigurationInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource DataSourceConfigurationInput
+<a name="aws-properties-datazone-datasource-datasourceconfigurationinput"></a>
 
 The configuration of the data source.
 
 ## Syntax
+<a name="aws-properties-datazone-datasource-datasourceconfigurationinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-datasource-datasourceconfigurationinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "GlueRunConfiguration" : GlueRunConfigurationInput,
-  "RedshiftRunConfiguration" : RedshiftRunConfigurationInput,
-  "SageMakerRunConfiguration" : SageMakerRunConfigurationInput
+  "[GlueRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-gluerunconfiguration)" : {{GlueRunConfigurationInput}},
+  "[RedshiftRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-redshiftrunconfiguration)" : {{RedshiftRunConfigurationInput}},
+  "[SageMakerRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-sagemakerrunconfiguration)" : {{SageMakerRunConfigurationInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-datasource-datasourceconfigurationinput-syntax.yaml"></a>
 
-```yaml
-
-  GlueRunConfiguration:
-    GlueRunConfigurationInput
-  RedshiftRunConfiguration:
-    RedshiftRunConfigurationInput
-  SageMakerRunConfiguration:
-    SageMakerRunConfigurationInput
-
+```
+  [GlueRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-gluerunconfiguration): {{
+    GlueRunConfigurationInput}}
+  [RedshiftRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-redshiftrunconfiguration): {{
+    RedshiftRunConfigurationInput}}
+  [SageMakerRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-sagemakerrunconfiguration): {{
+    SageMakerRunConfigurationInput}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-datasource-datasourceconfigurationinput-properties"></a>
 
-`GlueRunConfiguration`
-
+`GlueRunConfiguration`  <a name="cfn-datazone-datasource-datasourceconfigurationinput-gluerunconfiguration"></a>
 The configuration of the AWS Glue data source.
+*Required*: No
+*Type*: [GlueRunConfigurationInput](aws-properties-datazone-datasource-gluerunconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GlueRunConfigurationInput](aws-properties-datazone-datasource-gluerunconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedshiftRunConfiguration`
-
+`RedshiftRunConfiguration`  <a name="cfn-datazone-datasource-datasourceconfigurationinput-redshiftrunconfiguration"></a>
 The configuration of the Amazon Redshift data source.
+*Required*: No
+*Type*: [RedshiftRunConfigurationInput](aws-properties-datazone-datasource-redshiftrunconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RedshiftRunConfigurationInput](aws-properties-datazone-datasource-redshiftrunconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SageMakerRunConfiguration`
-
+`SageMakerRunConfiguration`  <a name="cfn-datazone-datasource-datasourceconfigurationinput-sagemakerrunconfiguration"></a>
 The Amazon SageMaker run configuration.
-
-_Required_: No
-
-_Type_: [SageMakerRunConfigurationInput](aws-properties-datazone-datasource-sagemakerrunconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::DataSource
-
-FilterExpression
+*Required*: No
+*Type*: [SageMakerRunConfigurationInput](aws-properties-datazone-datasource-sagemakerrunconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

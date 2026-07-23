@@ -2,92 +2,68 @@
 title: "AWS::QuickSight::Template HistogramBinOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template HistogramBinOptions
+<a name="aws-properties-quicksight-template-histogrambinoptions"></a>
 
 The options that determine the presentation of histogram bins.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-histogrambinoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-histogrambinoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "BinCount" : BinCountOptions,
-  "BinWidth" : BinWidthOptions,
-  "SelectedBinType" : String,
-  "StartValue" : Number
+  "[BinCount](#cfn-quicksight-template-histogrambinoptions-bincount)" : {{BinCountOptions}},
+  "[BinWidth](#cfn-quicksight-template-histogrambinoptions-binwidth)" : {{BinWidthOptions}},
+  "[SelectedBinType](#cfn-quicksight-template-histogrambinoptions-selectedbintype)" : {{String}},
+  "[StartValue](#cfn-quicksight-template-histogrambinoptions-startvalue)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-histogrambinoptions-syntax.yaml"></a>
 
-```yaml
-
-  BinCount:
-    BinCountOptions
-  BinWidth:
-    BinWidthOptions
-  SelectedBinType: String
-  StartValue: Number
-
+```
+  [BinCount](#cfn-quicksight-template-histogrambinoptions-bincount): {{
+    BinCountOptions}}
+  [BinWidth](#cfn-quicksight-template-histogrambinoptions-binwidth): {{
+    BinWidthOptions}}
+  [SelectedBinType](#cfn-quicksight-template-histogrambinoptions-selectedbintype): {{String}}
+  [StartValue](#cfn-quicksight-template-histogrambinoptions-startvalue): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-histogrambinoptions-properties"></a>
 
-`BinCount`
-
+`BinCount`  <a name="cfn-quicksight-template-histogrambinoptions-bincount"></a>
 The options that determine the bin count of a histogram.
+*Required*: No
+*Type*: [BinCountOptions](aws-properties-quicksight-template-bincountoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BinCountOptions](aws-properties-quicksight-template-bincountoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BinWidth`
-
+`BinWidth`  <a name="cfn-quicksight-template-histogrambinoptions-binwidth"></a>
 The options that determine the bin width of a histogram.
+*Required*: No
+*Type*: [BinWidthOptions](aws-properties-quicksight-template-binwidthoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BinWidthOptions](aws-properties-quicksight-template-binwidthoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedBinType`
-
+`SelectedBinType`  <a name="cfn-quicksight-template-histogrambinoptions-selectedbintype"></a>
 The options that determine the selected bin type.
+*Required*: No
+*Type*: String
+*Allowed values*: `BIN_COUNT | BIN_WIDTH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BIN_COUNT | BIN_WIDTH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartValue`
-
+`StartValue`  <a name="cfn-quicksight-template-histogrambinoptions-startvalue"></a>
 The options that determine the bin start value.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HistogramAggregatedFieldWells
-
-HistogramConfiguration
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

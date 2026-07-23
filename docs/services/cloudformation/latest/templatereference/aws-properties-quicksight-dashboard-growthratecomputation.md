@@ -2,112 +2,80 @@
 title: "AWS::QuickSight::Dashboard GrowthRateComputation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GrowthRateComputation
+<a name="aws-properties-quicksight-dashboard-growthratecomputation"></a>
 
 The growth rate computation configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-growthratecomputation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-growthratecomputation-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComputationId" : String,
-  "Name" : String,
-  "PeriodSize" : Number,
-  "Time" : DimensionField,
-  "Value" : MeasureField
+  "[ComputationId](#cfn-quicksight-dashboard-growthratecomputation-computationid)" : {{String}},
+  "[Name](#cfn-quicksight-dashboard-growthratecomputation-name)" : {{String}},
+  "[PeriodSize](#cfn-quicksight-dashboard-growthratecomputation-periodsize)" : {{Number}},
+  "[Time](#cfn-quicksight-dashboard-growthratecomputation-time)" : {{DimensionField}},
+  "[Value](#cfn-quicksight-dashboard-growthratecomputation-value)" : {{MeasureField}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-growthratecomputation-syntax.yaml"></a>
 
-```yaml
-
-  ComputationId: String
-  Name: String
-  PeriodSize: Number
-  Time:
-    DimensionField
-  Value:
-    MeasureField
-
+```
+  [ComputationId](#cfn-quicksight-dashboard-growthratecomputation-computationid): {{String}}
+  [Name](#cfn-quicksight-dashboard-growthratecomputation-name): {{String}}
+  [PeriodSize](#cfn-quicksight-dashboard-growthratecomputation-periodsize): {{Number}}
+  [Time](#cfn-quicksight-dashboard-growthratecomputation-time): {{
+    DimensionField}}
+  [Value](#cfn-quicksight-dashboard-growthratecomputation-value): {{
+    MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-growthratecomputation-properties"></a>
 
-`ComputationId`
-
+`ComputationId`  <a name="cfn-quicksight-dashboard-growthratecomputation-computationid"></a>
 The ID for a computation.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-dashboard-growthratecomputation-name"></a>
 The name of a computation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeriodSize`
-
+`PeriodSize`  <a name="cfn-quicksight-dashboard-growthratecomputation-periodsize"></a>
 The period size setup of a growth rate computation.
+*Required*: No
+*Type*: Number
+*Minimum*: `2`
+*Maximum*: `52`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `2`
-
-_Maximum_: `52`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Time`
-
+`Time`  <a name="cfn-quicksight-dashboard-growthratecomputation-time"></a>
 The time field that is used in a computation.
+*Required*: No
+*Type*: [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-quicksight-dashboard-growthratecomputation-value"></a>
 The value field that is used in a computation.
-
-_Required_: No
-
-_Type_: [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GridLayoutScreenCanvasSizeOptions
-
-HeaderFooterSectionConfiguration
+*Required*: No
+*Type*: [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

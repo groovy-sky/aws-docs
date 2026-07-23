@@ -2,485 +2,297 @@
 title: "AWS::DynamoDB::Table"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table
+<a name="aws-resource-dynamodb-table"></a>
 
-The `AWS::DynamoDB::Table` resource creates a DynamoDB table. For
-more information, see [CreateTable](../../../../reference/amazondynamodb/latest/apireference/api-createtable.md) in the _Amazon DynamoDB API Reference_.
+The `AWS::DynamoDB::Table` resource creates a DynamoDB table. For more information, see [CreateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html) in the *Amazon DynamoDB API Reference*.
 
-You should be aware of the following behaviors when working with DynamoDB
-tables:
+You should be aware of the following behaviors when working with DynamoDB tables:
++ AWS CloudFormation typically creates DynamoDB tables in parallel. However, if your template includes multiple DynamoDB tables with indexes, you must declare dependencies so that the tables are created sequentially. Amazon DynamoDB limits the number of tables with secondary indexes that are in the creating state. If you create multiple tables with indexes at the same time, DynamoDB returns an error and the stack operation fails. For an example, see [DynamoDB Table with a DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute).
 
-- AWS CloudFormation typically creates DynamoDB tables in parallel.
-However, if your template includes multiple DynamoDB tables with indexes,
-you must declare dependencies so that the tables are created sequentially. Amazon DynamoDB limits the number of tables with secondary indexes that are in
-the creating state. If you create multiple tables with indexes at the same time,
-DynamoDB returns an error and the stack operation fails. For an
-example, see [DynamoDB Table with a DependsOn Attribute](../userguide/aws-resource-dynamodb-table.md#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute).
-
-###### Important
-
-Our guidance is to use the latest schema documented for your AWS CloudFormation templates. This schema supports the provisioning of all table settings below. When
-using this schema in your AWS CloudFormation templates, please ensure that your
-Identity and Access Management (IAM) policies are updated with
-appropriate permissions to allow for the authorization of these setting changes.
+**Important**
+ Our guidance is to use the latest schema documented for your AWS CloudFormation templates. This schema supports the provisioning of all table settings below. When using this schema in your AWS CloudFormation templates, please ensure that your Identity and Access Management (IAM) policies are updated with appropriate permissions to allow for the authorization of these setting changes.
 
 ## Syntax
+<a name="aws-resource-dynamodb-table-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-dynamodb-table-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DynamoDB::Table",
   "Properties" : {
-      "AttributeDefinitions" : [ AttributeDefinition, ... ],
-      "BillingMode" : String,
-      "ContributorInsightsSpecification" : ContributorInsightsSpecification,
-      "DeletionProtectionEnabled" : Boolean,
-      "GlobalSecondaryIndexes" : [ GlobalSecondaryIndex, ... ],
-      "ImportSourceSpecification" : ImportSourceSpecification,
-      "KeySchema" : [ KeySchema, ... ],
-      "KinesisStreamSpecification" : KinesisStreamSpecification,
-      "LocalSecondaryIndexes" : [ LocalSecondaryIndex, ... ],
-      "OnDemandThroughput" : OnDemandThroughput,
-      "PointInTimeRecoverySpecification" : PointInTimeRecoverySpecification,
-      "ProvisionedThroughput" : ProvisionedThroughput,
-      "ResourcePolicy" : ResourcePolicy,
-      "SSESpecification" : SSESpecification,
-      "StreamSpecification" : StreamSpecification,
-      "TableClass" : String,
-      "TableName" : String,
-      "Tags" : [ Tag, ... ],
-      "TimeToLiveSpecification" : TimeToLiveSpecification,
-      "WarmThroughput" : WarmThroughput
+      "[AttributeDefinitions](#cfn-dynamodb-table-attributedefinitions)" : {{[ AttributeDefinition, ... ]}},
+      "[BillingMode](#cfn-dynamodb-table-billingmode)" : {{String}},
+      "[ContributorInsightsSpecification](#cfn-dynamodb-table-contributorinsightsspecification)" : {{ContributorInsightsSpecification}},
+      "[DeletionProtectionEnabled](#cfn-dynamodb-table-deletionprotectionenabled)" : {{Boolean}},
+      "[GlobalSecondaryIndexes](#cfn-dynamodb-table-globalsecondaryindexes)" : {{[ GlobalSecondaryIndex, ... ]}},
+      "[ImportSourceSpecification](#cfn-dynamodb-table-importsourcespecification)" : {{ImportSourceSpecification}},
+      "[KeySchema](#cfn-dynamodb-table-keyschema)" : {{[ KeySchema, ... ]}},
+      "[KinesisStreamSpecification](#cfn-dynamodb-table-kinesisstreamspecification)" : {{KinesisStreamSpecification}},
+      "[LocalSecondaryIndexes](#cfn-dynamodb-table-localsecondaryindexes)" : {{[ LocalSecondaryIndex, ... ]}},
+      "[OnDemandThroughput](#cfn-dynamodb-table-ondemandthroughput)" : {{OnDemandThroughput}},
+      "[PointInTimeRecoverySpecification](#cfn-dynamodb-table-pointintimerecoveryspecification)" : {{PointInTimeRecoverySpecification}},
+      "[ProvisionedThroughput](#cfn-dynamodb-table-provisionedthroughput)" : {{ProvisionedThroughput}},
+      "[ResourcePolicy](#cfn-dynamodb-table-resourcepolicy)" : {{ResourcePolicy}},
+      "[SSESpecification](#cfn-dynamodb-table-ssespecification)" : {{SSESpecification}},
+      "[StreamSpecification](#cfn-dynamodb-table-streamspecification)" : {{StreamSpecification}},
+      "[TableClass](#cfn-dynamodb-table-tableclass)" : {{String}},
+      "[TableName](#cfn-dynamodb-table-tablename)" : {{String}},
+      "[Tags](#cfn-dynamodb-table-tags)" : {{[ Tag, ... ]}},
+      "[TimeToLiveSpecification](#cfn-dynamodb-table-timetolivespecification)" : {{TimeToLiveSpecification}},
+      "[WarmThroughput](#cfn-dynamodb-table-warmthroughput)" : {{WarmThroughput}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-dynamodb-table-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DynamoDB::Table
 Properties:
-  AttributeDefinitions:
-    - AttributeDefinition
-  BillingMode: String
-  ContributorInsightsSpecification:
-    ContributorInsightsSpecification
-  DeletionProtectionEnabled: Boolean
-  GlobalSecondaryIndexes:
-    - GlobalSecondaryIndex
-  ImportSourceSpecification:
-    ImportSourceSpecification
-  KeySchema:
-    - KeySchema
-  KinesisStreamSpecification:
-    KinesisStreamSpecification
-  LocalSecondaryIndexes:
-    - LocalSecondaryIndex
-  OnDemandThroughput:
-    OnDemandThroughput
-  PointInTimeRecoverySpecification:
-    PointInTimeRecoverySpecification
-  ProvisionedThroughput:
-    ProvisionedThroughput
-  ResourcePolicy:
-    ResourcePolicy
-  SSESpecification:
-    SSESpecification
-  StreamSpecification:
-    StreamSpecification
-  TableClass: String
-  TableName: String
-  Tags:
-    - Tag
-  TimeToLiveSpecification:
-    TimeToLiveSpecification
-  WarmThroughput:
-    WarmThroughput
-
+  [AttributeDefinitions](#cfn-dynamodb-table-attributedefinitions): {{
+    - AttributeDefinition}}
+  [BillingMode](#cfn-dynamodb-table-billingmode): {{String}}
+  [ContributorInsightsSpecification](#cfn-dynamodb-table-contributorinsightsspecification): {{
+    ContributorInsightsSpecification}}
+  [DeletionProtectionEnabled](#cfn-dynamodb-table-deletionprotectionenabled): {{Boolean}}
+  [GlobalSecondaryIndexes](#cfn-dynamodb-table-globalsecondaryindexes): {{
+    - GlobalSecondaryIndex}}
+  [ImportSourceSpecification](#cfn-dynamodb-table-importsourcespecification): {{
+    ImportSourceSpecification}}
+  [KeySchema](#cfn-dynamodb-table-keyschema): {{
+    - KeySchema}}
+  [KinesisStreamSpecification](#cfn-dynamodb-table-kinesisstreamspecification): {{
+    KinesisStreamSpecification}}
+  [LocalSecondaryIndexes](#cfn-dynamodb-table-localsecondaryindexes): {{
+    - LocalSecondaryIndex}}
+  [OnDemandThroughput](#cfn-dynamodb-table-ondemandthroughput): {{
+    OnDemandThroughput}}
+  [PointInTimeRecoverySpecification](#cfn-dynamodb-table-pointintimerecoveryspecification): {{
+    PointInTimeRecoverySpecification}}
+  [ProvisionedThroughput](#cfn-dynamodb-table-provisionedthroughput): {{
+    ProvisionedThroughput}}
+  [ResourcePolicy](#cfn-dynamodb-table-resourcepolicy): {{
+    ResourcePolicy}}
+  [SSESpecification](#cfn-dynamodb-table-ssespecification): {{
+    SSESpecification}}
+  [StreamSpecification](#cfn-dynamodb-table-streamspecification): {{
+    StreamSpecification}}
+  [TableClass](#cfn-dynamodb-table-tableclass): {{String}}
+  [TableName](#cfn-dynamodb-table-tablename): {{String}}
+  [Tags](#cfn-dynamodb-table-tags): {{
+    - Tag}}
+  [TimeToLiveSpecification](#cfn-dynamodb-table-timetolivespecification): {{
+    TimeToLiveSpecification}}
+  [WarmThroughput](#cfn-dynamodb-table-warmthroughput): {{
+    WarmThroughput}}
 ```
 
 ## Properties
+<a name="aws-resource-dynamodb-table-properties"></a>
 
-`AttributeDefinitions`
-
+`AttributeDefinitions`  <a name="cfn-dynamodb-table-attributedefinitions"></a>
 A list of attributes that describe the key schema for the table and indexes.
-
 This property is required to create a DynamoDB table.
+Update requires: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt). Replacement if you edit an existing AttributeDefinition.
+*Required*: Conditional
+*Type*: Array of [AttributeDefinition](aws-properties-dynamodb-table-attributedefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Update requires: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt). Replacement if you edit an existing
-AttributeDefinition.
-
-_Required_: Conditional
-
-_Type_: Array of [AttributeDefinition](aws-properties-dynamodb-table-attributedefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingMode`
-
-Specify how you are charged for read and write throughput and how you manage
-capacity.
-
+`BillingMode`  <a name="cfn-dynamodb-table-billingmode"></a>
+Specify how you are charged for read and write throughput and how you manage capacity.
 Valid values include:
-
-- `PAY_PER_REQUEST` \- We recommend using `PAY_PER_REQUEST` for
-most DynamoDB workloads. `PAY_PER_REQUEST` sets the billing mode to [On-demand\
-capacity mode](../../../dynamodb/latest/developerguide/on-demand-capacity-mode.md).
-
-- `PROVISIONED` \- We recommend using `PROVISIONED` for steady
-workloads with predictable growth where capacity requirements can be reliably
-forecasted. `PROVISIONED` sets the billing mode to [Provisioned capacity mode](../../../dynamodb/latest/developerguide/provisioned-capacity-mode.md).
-
++ `PAY_PER_REQUEST` - We recommend using `PAY_PER_REQUEST` for most DynamoDB workloads. `PAY_PER_REQUEST` sets the billing mode to [On-demand capacity mode](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/on-demand-capacity-mode.html).
++ `PROVISIONED` - We recommend using `PROVISIONED` for steady workloads with predictable growth where capacity requirements can be reliably forecasted. `PROVISIONED` sets the billing mode to [Provisioned capacity mode](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html).
 If not specified, the default is `PROVISIONED`.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROVISIONED | PAY_PER_REQUEST`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ContributorInsightsSpecification`  <a name="cfn-dynamodb-table-contributorinsightsspecification"></a>
+The settings used to specify whether to enable CloudWatch Contributor Insights for the table and define which events to monitor.
+*Required*: No
+*Type*: [ContributorInsightsSpecification](aws-properties-dynamodb-table-contributorinsightsspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`DeletionProtectionEnabled`  <a name="cfn-dynamodb-table-deletionprotectionenabled"></a>
+Determines if a table is protected from deletion. When enabled, the table cannot be deleted by any user or process. This setting is disabled by default. For more information, see [Using deletion protection](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.DeletionProtection) in the *Amazon DynamoDBDeveloper Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `PROVISIONED | PAY_PER_REQUEST`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContributorInsightsSpecification`
-
-The settings used to specify whether to enable CloudWatch Contributor Insights for the
-table and define which events to monitor.
-
-_Required_: No
-
-_Type_: [ContributorInsightsSpecification](aws-properties-dynamodb-table-contributorinsightsspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeletionProtectionEnabled`
-
-Determines if a table is protected from deletion. When enabled, the table cannot be
-deleted by any user or process. This setting is disabled by default. For more information,
-see [Using deletion protection](../../../dynamodb/latest/developerguide/workingwithtables-basics.md#WorkingWithTables.Basics.DeletionProtection) in the _Amazon DynamoDBDeveloper Guide_.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GlobalSecondaryIndexes`
-
-Global secondary indexes to be created on the table. You can create up to 20 global
-secondary indexes.
-
-###### Important
-
-If you update a table to include a new global secondary index, AWS CloudFormation initiates the index creation and then proceeds with the stack update. AWS CloudFormation doesn't wait for the index to complete creation because the
-backfilling phase can take a long time, depending on the size of the table. You can't
-use the index or update the table until the index's status is `ACTIVE`. You
-can track its status by using the DynamoDB [DescribeTable](../../../cli/latest/reference/dynamodb/describe-table.md)
-command.
-
-If you add or delete an index during an update, we recommend that you don't update
-any other resources. If your stack fails to update and is rolled back while adding a new
-index, you must manually delete the index.
-
+`GlobalSecondaryIndexes`  <a name="cfn-dynamodb-table-globalsecondaryindexes"></a>
+Global secondary indexes to be created on the table. You can create up to 20 global secondary indexes.
+If you update a table to include a new global secondary index, AWS CloudFormation initiates the index creation and then proceeds with the stack update. AWS CloudFormation doesn't wait for the index to complete creation because the backfilling phase can take a long time, depending on the size of the table. You can't use the index or update the table until the index's status is `ACTIVE`. You can track its status by using the DynamoDB [DescribeTable](https://docs.aws.amazon.com/cli/latest/reference/dynamodb/describe-table.html) command.
+If you add or delete an index during an update, we recommend that you don't update any other resources. If your stack fails to update and is rolled back while adding a new index, you must manually delete the index.
 Updates are not supported. The following are exceptions:
++ If you update either the contributor insights specification or the provisioned throughput values of global secondary indexes, you can update the table without interruption.
++ You can delete or add one global secondary index without interruption. If you do both in the same update (for example, by changing the index's logical ID), the update fails.
+*Required*: No
+*Type*: Array of [GlobalSecondaryIndex](aws-properties-dynamodb-table-globalsecondaryindex.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- If you update either the contributor insights specification or the provisioned
-throughput values of global secondary indexes, you can update the table without
-interruption.
+`ImportSourceSpecification`  <a name="cfn-dynamodb-table-importsourcespecification"></a>
+Specifies the properties of data being imported from the S3 bucket source to the" table.
+If you specify the `ImportSourceSpecification` property, and also specify either the `StreamSpecification`, the `TableClass` property, the `DeletionProtectionEnabled` property, or the `WarmThroughput` property, the IAM entity creating/updating stack must have `UpdateTable` permission.
+*Required*: No
+*Type*: [ImportSourceSpecification](aws-properties-dynamodb-table-importsourcespecification.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- You can delete or add one global secondary index without interruption. If you
-do both in the same update (for example, by changing the index's logical ID), the
-update fails.
+`KeySchema`  <a name="cfn-dynamodb-table-keyschema"></a>
+Specifies the attributes that make up the primary key for the table. The attributes in the `KeySchema` property must also be defined in the `AttributeDefinitions` property.
+*Required*: Yes
+*Type*: [Array](aws-properties-dynamodb-table-keyschema.md) of [KeySchema](aws-properties-dynamodb-table-keyschema.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of [GlobalSecondaryIndex](aws-properties-dynamodb-table-globalsecondaryindex.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImportSourceSpecification`
-
-Specifies the properties of data being imported from the S3 bucket source to the"
-table.
-
-###### Important
-
-If you specify the `ImportSourceSpecification` property, and also specify
-either the `StreamSpecification`, the `TableClass` property, the
-`DeletionProtectionEnabled` property, or the `WarmThroughput`
-property, the IAM entity creating/updating stack must have `UpdateTable`
-permission.
-
-_Required_: No
-
-_Type_: [ImportSourceSpecification](aws-properties-dynamodb-table-importsourcespecification.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KeySchema`
-
-Specifies the attributes that make up the primary key for the table. The attributes in
-the `KeySchema` property must also be defined in the
-`AttributeDefinitions` property.
-
-_Required_: Yes
-
-_Type_: [Array](aws-properties-dynamodb-table-keyschema.md) of [KeySchema](aws-properties-dynamodb-table-keyschema.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`KinesisStreamSpecification`
-
+`KinesisStreamSpecification`  <a name="cfn-dynamodb-table-kinesisstreamspecification"></a>
 The Kinesis Data Streams configuration for the specified table.
+*Required*: No
+*Type*: [KinesisStreamSpecification](aws-properties-dynamodb-table-kinesisstreamspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LocalSecondaryIndexes`  <a name="cfn-dynamodb-table-localsecondaryindexes"></a>
+Local secondary indexes to be created on the table. You can create up to 5 local secondary indexes. Each index is scoped to a given hash key value. The size of each hash key can be up to 10 gigabytes.
+*Required*: No
+*Type*: Array of [LocalSecondaryIndex](aws-properties-dynamodb-table-localsecondaryindex.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [KinesisStreamSpecification](aws-properties-dynamodb-table-kinesisstreamspecification.md)
+`OnDemandThroughput`  <a name="cfn-dynamodb-table-ondemandthroughput"></a>
+Sets the maximum number of read and write units for the specified on-demand table. If you use this property, you must specify `MaxReadRequestUnits`, `MaxWriteRequestUnits`, or both.
+*Required*: No
+*Type*: [OnDemandThroughput](aws-properties-dynamodb-table-ondemandthroughput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocalSecondaryIndexes`
-
-Local secondary indexes to be created on the table. You can create up to 5 local
-secondary indexes. Each index is scoped to a given hash key value. The size of each hash
-key can be up to 10 gigabytes.
-
-_Required_: No
-
-_Type_: Array of [LocalSecondaryIndex](aws-properties-dynamodb-table-localsecondaryindex.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnDemandThroughput`
-
-Sets the maximum number of read and write units for the specified on-demand table. If
-you use this property, you must specify `MaxReadRequestUnits`,
-`MaxWriteRequestUnits`, or both.
-
-_Required_: No
-
-_Type_: [OnDemandThroughput](aws-properties-dynamodb-table-ondemandthroughput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PointInTimeRecoverySpecification`
-
+`PointInTimeRecoverySpecification`  <a name="cfn-dynamodb-table-pointintimerecoveryspecification"></a>
 The settings used to enable point in time recovery.
+*Required*: No
+*Type*: [PointInTimeRecoverySpecification](aws-properties-dynamodb-table-pointintimerecoveryspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ProvisionedThroughput`  <a name="cfn-dynamodb-table-provisionedthroughput"></a>
+Throughput for the specified table, which consists of values for `ReadCapacityUnits` and `WriteCapacityUnits`. For more information about the contents of a provisioned throughput structure, see [Amazon DynamoDB Table ProvisionedThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ProvisionedThroughput.html).
+If you set `BillingMode` as `PROVISIONED`, you must specify this property. If you set `BillingMode` as `PAY_PER_REQUEST`, you cannot specify this property.
+*Required*: Conditional
+*Type*: [ProvisionedThroughput](aws-properties-dynamodb-table-provisionedthroughput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PointInTimeRecoverySpecification](aws-properties-dynamodb-table-pointintimerecoveryspecification.md)
+`ResourcePolicy`  <a name="cfn-dynamodb-table-resourcepolicy"></a>
+An AWS resource-based policy document in JSON format that will be attached to the table.
+When you attach a resource-based policy while creating a table, the policy application is *strongly consistent*.
+The maximum size supported for a resource-based policy document is 20 KB. DynamoDB counts whitespaces when calculating the size of a policy against this limit. For a full list of all considerations that apply for resource-based policies, see [Resource-based policy considerations](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-considerations.html).
+You need to specify the `CreateTable` and `PutResourcePolicy` IAM actions for authorizing a user to create a table with a resource-based policy.
+*Required*: No
+*Type*: [ResourcePolicy](aws-properties-dynamodb-table-resourcepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProvisionedThroughput`
-
-Throughput for the specified table, which consists of values for
-`ReadCapacityUnits` and `WriteCapacityUnits`. For more information
-about the contents of a provisioned throughput structure, see [Amazon DynamoDB\
-Table ProvisionedThroughput](../../../../reference/amazondynamodb/latest/apireference/api-provisionedthroughput.md).
-
-If you set `BillingMode` as `PROVISIONED`, you must specify this
-property. If you set `BillingMode` as `PAY_PER_REQUEST`, you cannot
-specify this property.
-
-_Required_: Conditional
-
-_Type_: [ProvisionedThroughput](aws-properties-dynamodb-table-provisionedthroughput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourcePolicy`
-
-An AWS resource-based policy document in JSON format that will be
-attached to the table.
-
-When you attach a resource-based policy while creating a table, the policy application
-is _strongly consistent_.
-
-The maximum size supported for a resource-based policy document is 20 KB. DynamoDB counts whitespaces when calculating the size of a policy against this
-limit. For a full list of all considerations that apply for resource-based policies, see
-[Resource-based\
-policy considerations](../../../dynamodb/latest/developerguide/rbac-considerations.md).
-
-###### Note
-
-You need to specify the `CreateTable` and
-`PutResourcePolicy`
-IAM actions for authorizing a user to create a table with a
-resource-based policy.
-
-_Required_: No
-
-_Type_: [ResourcePolicy](aws-properties-dynamodb-table-resourcepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SSESpecification`
-
+`SSESpecification`  <a name="cfn-dynamodb-table-ssespecification"></a>
 Specifies the settings to enable server-side encryption.
+*Required*: No
+*Type*: [SSESpecification](aws-properties-dynamodb-table-ssespecification.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
+`StreamSpecification`  <a name="cfn-dynamodb-table-streamspecification"></a>
+The settings for the DynamoDB table stream, which captures changes to items stored in the table. Including this property in your AWS CloudFormation template automatically enables streaming.
+*Required*: No
+*Type*: [StreamSpecification](aws-properties-dynamodb-table-streamspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [SSESpecification](aws-properties-dynamodb-table-ssespecification.md)
+`TableClass`  <a name="cfn-dynamodb-table-tableclass"></a>
+The table class of the new table. Valid values are `STANDARD` and `STANDARD_INFREQUENT_ACCESS`.
+*Required*: No
+*Type*: String
+*Allowed values*: `STANDARD | STANDARD_INFREQUENT_ACCESS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
+`TableName`  <a name="cfn-dynamodb-table-tablename"></a>
+A name for the table. If you don't specify a name, AWS CloudFormation generates a unique physical ID and uses that ID for the table name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
+If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`StreamSpecification`
-
-The settings for the DynamoDB table stream, which captures changes to items stored
-in the table. Including this property in your AWS CloudFormation template automatically enables streaming.
-
-_Required_: No
-
-_Type_: [StreamSpecification](aws-properties-dynamodb-table-streamspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableClass`
-
-The table class of the new table. Valid values are `STANDARD` and
-`STANDARD_INFREQUENT_ACCESS`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STANDARD | STANDARD_INFREQUENT_ACCESS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
-A name for the table. If you don't specify a name, AWS CloudFormation generates a
-unique physical ID and uses that ID for the table name. For more information, see [Name Type](../userguide/aws-properties-name.md).
-
-###### Important
-
-If you specify a name, you cannot perform updates that require replacement of this
-resource. You can perform updates that require no or some interruption. If you must
-replace the resource, specify a new name.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-dynamodb-table-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-dynamodb-table-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-dynamodb-table-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeToLiveSpecification`
-
+`TimeToLiveSpecification`  <a name="cfn-dynamodb-table-timetolivespecification"></a>
 Specifies the Time to Live (TTL) settings for the table.
+For detailed information about the limits in DynamoDB, see [Limits in Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html) in the Amazon DynamoDB Developer Guide.
+*Required*: No
+*Type*: [TimeToLiveSpecification](aws-properties-dynamodb-table-timetolivespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-For detailed information about the limits in DynamoDB, see [Limits in\
-Amazon DynamoDB](../../../dynamodb/latest/developerguide/limits.md) in the Amazon DynamoDB Developer Guide.
-
-_Required_: No
-
-_Type_: [TimeToLiveSpecification](aws-properties-dynamodb-table-timetolivespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WarmThroughput`
-
-Represents the warm throughput (in read units per second and write units per second)
-for creating a table.
-
-_Required_: No
-
-_Type_: [WarmThroughput](aws-properties-dynamodb-table-warmthroughput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`WarmThroughput`  <a name="cfn-dynamodb-table-warmthroughput"></a>
+Represents the warm throughput (in read units per second and write units per second) for creating a table.
+*Required*: No
+*Type*: [WarmThroughput](aws-properties-dynamodb-table-warmthroughput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-dynamodb-table-return-values"></a>
 
 ### Ref
+<a name="aws-resource-dynamodb-table-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "myDynamoDBTable" }`
+ `{ "Ref": "myDynamoDBTable" }`
 
-For the resource with the logical ID `myDynamoDBTable`, `Ref` will
-return the DynamoDB table name.
+For the resource with the logical ID `myDynamoDBTable`, `Ref` will return the DynamoDB table name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-dynamodb-table-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-dynamodb-table-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the DynamoDB table, such as
-`arn:aws:dynamodb:us-east-2:123456789012:table/myDynamoDBTable`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the DynamoDB table, such as `arn:aws:dynamodb:us-east-2:123456789012:table/myDynamoDBTable`.
 
-`StreamArn`
-
-The ARN of the DynamoDB stream, such as
-`arn:aws:dynamodb:us-east-1:123456789012:table/testddbstack-myDynamoDBTable-012A1SL7SMP5Q/stream/2015-11-30T20:10:00.000`.
-
-###### Note
-
-You must specify the `StreamSpecification` property to use this
-attribute.
+`StreamArn`  <a name="StreamArn-fn::getatt"></a>
+The ARN of the DynamoDB stream, such as `arn:aws:dynamodb:us-east-1:123456789012:table/testddbstack-myDynamoDBTable-012A1SL7SMP5Q/stream/2015-11-30T20:10:00.000`.
+You must specify the `StreamSpecification` property to use this attribute.
 
 ## Examples
+<a name="aws-resource-dynamodb-table--examples"></a>
 
-- [DynamoDB Table with Local and Secondary Indexes](#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes)
-
-- [DynamoDB Table with a DependsOn Attribute](#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute)
-
-- [DynamoDB Table with Application Auto Scaling](#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling)
+**Topics**
++ [DynamoDB Table with Local and Secondary Indexes](#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes)
++ [DynamoDB Table with a DependsOn Attribute](#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute)
++ [DynamoDB Table with Application Auto Scaling](#aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling)
 
 ### DynamoDB Table with Local and Secondary Indexes
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes"></a>
 
-The following sample creates a DynamoDB table with `Album`,
-`Artist`, `Sales`, `NumberOfSongs` as attributes.
-The primary key includes the `Album` attribute as the hash key and
-`Artist` attribute as the range key. The table also includes two global
-and one secondary index. For querying the number of sales for a given artist, the
-global secondary index uses the `Sales` attribute as the hash key and the
-`Artist` attribute as the range key.
+The following sample creates a DynamoDB table with `Album`, `Artist`, `Sales`, `NumberOfSongs` as attributes. The primary key includes the `Album` attribute as the hash key and `Artist` attribute as the range key. The table also includes two global and one secondary index. For querying the number of sales for a given artist, the global secondary index uses the `Sales` attribute as the hash key and the `Artist` attribute as the range key.
 
-For querying the sales based on the number of songs, the global secondary index
-uses the `NumberOfSongs` attribute as the hash key and the
-`Sales` attribute as the range key.
+For querying the sales based on the number of songs, the global secondary index uses the `NumberOfSongs` attribute as the hash key and the `Sales` attribute as the range key.
 
-For querying the sales of an album, the local secondary index uses the same hash
-key as the table but uses the `Sales` attribute as the range key.
+For querying the sales of an album, the local secondary index uses the same hash key as the table but uses the `Sales` attribute as the range key.
 
 #### JSON
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -599,9 +411,9 @@ key as the table but uses the `Sales` attribute as the range key.
 ```
 
 #### YAML
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myDynamoDBTable:
@@ -669,23 +481,16 @@ Resources:
 ```
 
 ### DynamoDB Table with a DependsOn Attribute
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute"></a>
 
-If you include multiple DynamoDB tables with indexes in a single template, you
-must include dependencies so that the tables are created sequentially. DynamoDB
-limits the number of tables with secondary indexes that are in the creating state. If
-you create multiple tables with indexes at the same time, DynamoDB returns an error
-and the stack operation fails.
+If you include multiple DynamoDB tables with indexes in a single template, you must include dependencies so that the tables are created sequentially. DynamoDB limits the number of tables with secondary indexes that are in the creating state. If you create multiple tables with indexes at the same time, DynamoDB returns an error and the stack operation fails.
 
-The following sample assumes that the `myFirstDDBTable` table is
-declared in the same template as the `mySecondDDBTable` table, and both
-tables include a secondary index. The `mySecondDDBTable` table includes a
-dependency on the `myFirstDDBTable` table so that AWS CloudFormation
-creates the tables one at a time.
+The following sample assumes that the `myFirstDDBTable` table is declared in the same template as the `mySecondDDBTable` table, and both tables include a secondary index. The `mySecondDDBTable` table includes a dependency on the `myFirstDDBTable` table so that AWS CloudFormation creates the tables one at a time.
 
 #### JSON
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute--json"></a>
 
-```json
-
+```
 {
     "mySecondDDBTable": {
         "Type": "AWS::DynamoDB::Table",
@@ -757,9 +562,9 @@ creates the tables one at a time.
 ```
 
 #### YAML
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute--yaml"></a>
 
-```yaml
-
+```
 mySecondDDBTable:
   Type: AWS::DynamoDB::Table
   DependsOn: myFirstDDBTable
@@ -795,16 +600,14 @@ mySecondDDBTable:
 ```
 
 ### DynamoDB Table with Application Auto Scaling
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling"></a>
 
-This example sets up Application Auto Scaling for a
-`AWS::DynamoDB::Table` resource. The template defines a
-`TargetTrackingScaling` scaling policy that scales up the
-`WriteCapacityUnits` throughput for the table.
+This example sets up Application Auto Scaling for a `AWS::DynamoDB::Table` resource. The template defines a `TargetTrackingScaling` scaling policy that scales up the `WriteCapacityUnits` throughput for the table.
 
 #### JSON
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "DDBTable": {
@@ -881,7 +684,7 @@ This example sets up Application Auto Scaling for a
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
+          "Version": "2012-10-17"		 	 	 ,
           "Statement": [
             {
               "Effect": "Allow",
@@ -901,7 +704,7 @@ This example sets up Application Auto Scaling for a
           {
             "PolicyName": "root",
             "PolicyDocument": {
-              "Version": "2012-10-17",
+              "Version": "2012-10-17"		 	 	 ,
               "Statement": [
                 {
                   "Effect": "Allow",
@@ -945,9 +748,9 @@ This example sets up Application Auto Scaling for a
 ```
 
 #### YAML
+<a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling--yaml"></a>
 
-```yaml
-
+```
 Resources:
   DDBTable:
     Type: AWS::DynamoDB::Table
@@ -1040,11 +843,5 @@ Resources:
         PredefinedMetricSpecification:
           PredefinedMetricType: DynamoDBWriteCapacityUtilization
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WriteProvisionedThroughputSettings
-
-AttributeDefinition
 
 All content copied from https://docs.aws.amazon.com/.

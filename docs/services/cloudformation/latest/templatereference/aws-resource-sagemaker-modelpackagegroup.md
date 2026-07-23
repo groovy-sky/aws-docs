@@ -2,134 +2,106 @@
 title: "AWS::SageMaker::ModelPackageGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackageGroup
+<a name="aws-resource-sagemaker-modelpackagegroup"></a>
 
 A group of versioned models in the Model Registry.
 
 ## Syntax
+<a name="aws-resource-sagemaker-modelpackagegroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-modelpackagegroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::ModelPackageGroup",
   "Properties" : {
-      "ModelPackageGroupDescription" : String,
-      "ModelPackageGroupName" : String,
-      "ModelPackageGroupPolicy" : Json,
-      "Tags" : [ Tag, ... ]
+      "[ModelPackageGroupDescription](#cfn-sagemaker-modelpackagegroup-modelpackagegroupdescription)" : {{String}},
+      "[ModelPackageGroupName](#cfn-sagemaker-modelpackagegroup-modelpackagegroupname)" : {{String}},
+      "[ModelPackageGroupPolicy](#cfn-sagemaker-modelpackagegroup-modelpackagegrouppolicy)" : {{Json}},
+      "[Tags](#cfn-sagemaker-modelpackagegroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-modelpackagegroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::ModelPackageGroup
 Properties:
-  ModelPackageGroupDescription: String
-  ModelPackageGroupName: String
-  ModelPackageGroupPolicy: Json
-  Tags:
-    - Tag
-
+  [ModelPackageGroupDescription](#cfn-sagemaker-modelpackagegroup-modelpackagegroupdescription): {{String}}
+  [ModelPackageGroupName](#cfn-sagemaker-modelpackagegroup-modelpackagegroupname): {{String}}
+  [ModelPackageGroupPolicy](#cfn-sagemaker-modelpackagegroup-modelpackagegrouppolicy): {{Json}}
+  [Tags](#cfn-sagemaker-modelpackagegroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-modelpackagegroup-properties"></a>
 
-`ModelPackageGroupDescription`
-
+`ModelPackageGroupDescription`  <a name="cfn-sagemaker-modelpackagegroup-modelpackagegroupdescription"></a>
 The description for the model group.
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}]*`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}]*`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelPackageGroupName`
-
+`ModelPackageGroupName`  <a name="cfn-sagemaker-modelpackagegroup-modelpackagegroupname"></a>
 The name of the model group.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`ModelPackageGroupPolicy`  <a name="cfn-sagemaker-modelpackagegroup-modelpackagegrouppolicy"></a>
+A resouce policy to control access to a model group. For information about resoure policies, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the *AWS Identity and Access Management User Guide.*.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelPackageGroupPolicy`
-
-A resouce policy to control access to a model group. For information about resoure policies, see [Identity-based policies\
-and resource-based policies](../../../iam/latest/userguide/access-policies-identity-vs-resource.md) in the _AWS Identity and Access Management User_
-_Guide._.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-modelpackagegroup-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-modelpackagegroup-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-modelpackagegroup-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sagemaker-modelpackagegroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-modelpackagegroup-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the model package group.
+ When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the model package group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-modelpackagegroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-sagemaker-modelpackagegroup-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time when the model group was created.
 
-`ModelPackageGroupArn`
-
+`ModelPackageGroupArn`  <a name="ModelPackageGroupArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the model group.
 
-`ModelPackageGroupStatus`
-
+`ModelPackageGroupStatus`  <a name="ModelPackageGroupStatus-fn::getatt"></a>
 The status of the model group.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ValidationSpecification
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,150 +2,102 @@
 title: "AWS::SageMaker::ModelPackage AdditionalInferenceSpecificationDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage AdditionalInferenceSpecificationDefinition
+<a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition"></a>
 
-A structure of additional Inference Specification. Additional Inference Specification
-specifies details about inference jobs that can be run with models based on
-this model package
+A structure of additional Inference Specification. Additional Inference Specification specifies details about inference jobs that can be run with models based on this model package
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Containers" : [ ModelPackageContainerDefinition, ... ],
-  "Description" : String,
-  "Name" : String,
-  "SupportedContentTypes" : [ String, ... ],
-  "SupportedRealtimeInferenceInstanceTypes" : [ String, ... ],
-  "SupportedResponseMIMETypes" : [ String, ... ],
-  "SupportedTransformInstanceTypes" : [ String, ... ]
+  "[Containers](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-containers)" : {{[ ModelPackageContainerDefinition, ... ]}},
+  "[Description](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-description)" : {{String}},
+  "[Name](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-name)" : {{String}},
+  "[SupportedContentTypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedcontenttypes)" : {{[ String, ... ]}},
+  "[SupportedRealtimeInferenceInstanceTypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedrealtimeinferenceinstancetypes)" : {{[ String, ... ]}},
+  "[SupportedResponseMIMETypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedresponsemimetypes)" : {{[ String, ... ]}},
+  "[SupportedTransformInstanceTypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedtransforminstancetypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition-syntax.yaml"></a>
 
-```yaml
-
-  Containers:
-    - ModelPackageContainerDefinition
-  Description: String
-  Name: String
-  SupportedContentTypes:
-    - String
-  SupportedRealtimeInferenceInstanceTypes:
-    - String
-  SupportedResponseMIMETypes:
-    - String
-  SupportedTransformInstanceTypes:
-    - String
-
+```
+  [Containers](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-containers): {{
+    - ModelPackageContainerDefinition}}
+  [Description](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-description): {{String}}
+  [Name](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-name): {{String}}
+  [SupportedContentTypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedcontenttypes): {{
+    - String}}
+  [SupportedRealtimeInferenceInstanceTypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedrealtimeinferenceinstancetypes): {{
+    - String}}
+  [SupportedResponseMIMETypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedresponsemimetypes): {{
+    - String}}
+  [SupportedTransformInstanceTypes](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedtransforminstancetypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition-properties"></a>
 
-`Containers`
-
+`Containers`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-containers"></a>
 The Amazon ECR registry path of the Docker image that contains the inference code.
+*Required*: Yes
+*Type*: Array of [ModelPackageContainerDefinition](aws-properties-sagemaker-modelpackage-modelpackagecontainerdefinition.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ModelPackageContainerDefinition](aws-properties-sagemaker-modelpackage-modelpackagecontainerdefinition.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-description"></a>
 A description of the additional Inference specification
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-name"></a>
+A unique name to identify the additional inference specification. The name must be unique within the list of your additional inference specifications for a particular model package.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-A unique name to identify the additional inference specification. The name must
-be unique within the list of your additional inference specifications for a
-particular model package.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupportedContentTypes`
-
+`SupportedContentTypes`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedcontenttypes"></a>
 The supported MIME types for the input data.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupportedRealtimeInferenceInstanceTypes`
-
+`SupportedRealtimeInferenceInstanceTypes`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedrealtimeinferenceinstancetypes"></a>
 A list of the instance types that are used to generate inferences in real-time.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupportedResponseMIMETypes`
-
+`SupportedResponseMIMETypes`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedresponsemimetypes"></a>
 The supported MIME types for the output data.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupportedTransformInstanceTypes`
-
-A list of the instance types on which a transformation job can be run
-or on which an endpoint can be deployed.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::ModelPackage
-
-Bias
+`SupportedTransformInstanceTypes`  <a name="cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-supportedtransforminstancetypes"></a>
+A list of the instance types on which a transformation job can be run or on which an endpoint can be deployed.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,126 +2,103 @@
 title: "AWS::DataBrew::Schedule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Schedule
+<a name="aws-resource-databrew-schedule"></a>
 
-Specifies a new schedule for one or more AWS Glue DataBrew jobs. Jobs can be
-run at a specific date and time, or at regular intervals.
+Specifies a new schedule for one or more AWS Glue DataBrew jobs. Jobs can be run at a specific date and time, or at regular intervals.
 
 ## Syntax
+<a name="aws-resource-databrew-schedule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-databrew-schedule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataBrew::Schedule",
   "Properties" : {
-      "CronExpression" : String,
-      "JobNames" : [ String, ... ],
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[CronExpression](#cfn-databrew-schedule-cronexpression)" : {{String}},
+      "[JobNames](#cfn-databrew-schedule-jobnames)" : {{[ String, ... ]}},
+      "[Name](#cfn-databrew-schedule-name)" : {{String}},
+      "[Tags](#cfn-databrew-schedule-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-databrew-schedule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataBrew::Schedule
 Properties:
-  CronExpression: String
-  JobNames:
-    - String
-  Name: String
-  Tags:
-    - Tag
-
+  [CronExpression](#cfn-databrew-schedule-cronexpression): {{String}}
+  [JobNames](#cfn-databrew-schedule-jobnames): {{
+    - String}}
+  [Name](#cfn-databrew-schedule-name): {{String}}
+  [Tags](#cfn-databrew-schedule-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-databrew-schedule-properties"></a>
 
-`CronExpression`
+`CronExpression`  <a name="cfn-databrew-schedule-cronexpression"></a>
+The dates and times when the job is to run. For more information, see [Working with cron expressions for recipe jobs](https://docs.aws.amazon.com/databrew/latest/dg/jobs.recipe.html#jobs.cron) in the *AWS Glue DataBrew Developer Guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The dates and times when the job is to run. For more information, see [Working with cron\
-expressions for recipe jobs](../../../databrew/latest/dg/jobs-recipe.md#jobs.cron) in the _AWS Glue DataBrew Developer_
-_Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobNames`
-
+`JobNames`  <a name="cfn-databrew-schedule-jobnames"></a>
 A list of jobs to be run, according to the schedule.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-databrew-schedule-name"></a>
 The name of the schedule.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-databrew-schedule-tags"></a>
 Metadata tags that have been applied to the schedule.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-databrew-schedule-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-databrew-schedule-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-databrew-schedule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-databrew-schedule-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the resource name. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "mySchedule" }`
+ `{ "Ref": "mySchedule" }`
 
-For an AWS Glue DataBrew schedule named `mySchedule`,
-`Ref` returns the name of the schedule.
+For an AWS Glue DataBrew schedule named `mySchedule`, `Ref` returns the name of the schedule.
 
 ## Examples
+<a name="aws-resource-databrew-schedule--examples"></a>
 
 ### Creating schedules
+<a name="aws-resource-databrew-schedule--examples--Creating_schedules"></a>
 
 The following examples create new DataBrew schedules.
 
 #### YAML
+<a name="aws-resource-databrew-schedule--examples--Creating_schedules--yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestDataBrewSchedule:
     Type: AWS::DataBrew::Schedule
@@ -130,13 +107,12 @@ Resources:
       Name: schedule-name
       CronExpression: "cron(0 0/1 ? * * *)"
       Tags: [{Key: key00AtCreate, Value: value001AtCreate}]
-
 ```
 
 #### JSON
+<a name="aws-resource-databrew-schedule--examples--Creating_schedules--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Schedule",
@@ -158,11 +134,5 @@ Resources:
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Threshold
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

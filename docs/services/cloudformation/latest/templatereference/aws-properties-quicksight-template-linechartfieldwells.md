@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template LineChartFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template LineChartFieldWells
+<a name="aws-properties-quicksight-template-linechartfieldwells"></a>
 
 The field well configuration of a line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-linechartfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-linechartfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "LineChartAggregatedFieldWells" : LineChartAggregatedFieldWells
+  "[LineChartAggregatedFieldWells](#cfn-quicksight-template-linechartfieldwells-linechartaggregatedfieldwells)" : {{LineChartAggregatedFieldWells}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-linechartfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  LineChartAggregatedFieldWells:
-    LineChartAggregatedFieldWells
-
+```
+  [LineChartAggregatedFieldWells](#cfn-quicksight-template-linechartfieldwells-linechartaggregatedfieldwells): {{
+    LineChartAggregatedFieldWells}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-linechartfieldwells-properties"></a>
 
-`LineChartAggregatedFieldWells`
-
+`LineChartAggregatedFieldWells`  <a name="cfn-quicksight-template-linechartfieldwells-linechartaggregatedfieldwells"></a>
 The field well configuration of a line chart.
-
-_Required_: No
-
-_Type_: [LineChartAggregatedFieldWells](aws-properties-quicksight-template-linechartaggregatedfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LineChartDefaultSeriesSettings
-
-LineChartLineStyleSettings
+*Required*: No
+*Type*: [LineChartAggregatedFieldWells](aws-properties-quicksight-template-linechartaggregatedfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

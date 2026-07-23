@@ -2,121 +2,83 @@
 title: "AWS::Bedrock::KnowledgeBase RdsFieldMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase RdsFieldMapping
+<a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping"></a>
 
 Contains the names of the fields to which to map information about the vector store.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomMetadataField" : String,
-  "MetadataField" : String,
-  "PrimaryKeyField" : String,
-  "TextField" : String,
-  "VectorField" : String
+  "[CustomMetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-custommetadatafield)" : {{String}},
+  "[MetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-metadatafield)" : {{String}},
+  "[PrimaryKeyField](#cfn-bedrock-knowledgebase-rdsfieldmapping-primarykeyfield)" : {{String}},
+  "[TextField](#cfn-bedrock-knowledgebase-rdsfieldmapping-textfield)" : {{String}},
+  "[VectorField](#cfn-bedrock-knowledgebase-rdsfieldmapping-vectorfield)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping-syntax.yaml"></a>
 
-```yaml
-
-  CustomMetadataField: String
-  MetadataField: String
-  PrimaryKeyField: String
-  TextField: String
-  VectorField: String
-
+```
+  [CustomMetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-custommetadatafield): {{String}}
+  [MetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-metadatafield): {{String}}
+  [PrimaryKeyField](#cfn-bedrock-knowledgebase-rdsfieldmapping-primarykeyfield): {{String}}
+  [TextField](#cfn-bedrock-knowledgebase-rdsfieldmapping-textfield): {{String}}
+  [VectorField](#cfn-bedrock-knowledgebase-rdsfieldmapping-vectorfield): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping-properties"></a>
 
-`CustomMetadataField`
+`CustomMetadataField`  <a name="cfn-bedrock-knowledgebase-rdsfieldmapping-custommetadatafield"></a>
+Provide a name for the universal metadata field where Amazon Bedrock will store any custom metadata from your data source.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Provide a name for the universal metadata field where Amazon Bedrock will store any custom metadata from
-your data source.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MetadataField`
-
+`MetadataField`  <a name="cfn-bedrock-knowledgebase-rdsfieldmapping-metadatafield"></a>
 The name of the field in which Amazon Bedrock stores metadata about the vector store.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrimaryKeyField`
-
+`PrimaryKeyField`  <a name="cfn-bedrock-knowledgebase-rdsfieldmapping-primarykeyfield"></a>
 The name of the field in which Amazon Bedrock stores the ID for each entry.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TextField`
-
+`TextField`  <a name="cfn-bedrock-knowledgebase-rdsfieldmapping-textfield"></a>
 The name of the field in which Amazon Bedrock stores the raw text from your data. The text is split according to the chunking strategy you choose.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VectorField`
-
+`VectorField`  <a name="cfn-bedrock-knowledgebase-rdsfieldmapping-vectorfield"></a>
 The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RdsConfiguration
-
-RedshiftConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,86 +2,63 @@
 title: "AWS::QuickSight::Template BodySectionDynamicNumericDimensionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BodySectionDynamicNumericDimensionConfiguration
+<a name="aws-properties-quicksight-template-bodysectiondynamicnumericdimensionconfiguration"></a>
 
 Describes the **Numeric** dataset column and constraints for the dynamic values used to repeat the contents of a section.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnIdentifier,
-  "Limit" : Number,
-  "SortByMetrics" : [ ColumnSort, ... ]
+  "[Column](#cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-column)" : {{ColumnIdentifier}},
+  "[Limit](#cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-limit)" : {{Number}},
+  "[SortByMetrics](#cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-sortbymetrics)" : {{[ ColumnSort, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnIdentifier
-  Limit: Number
-  SortByMetrics:
-    - ColumnSort
-
+```
+  [Column](#cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-column): {{
+    ColumnIdentifier}}
+  [Limit](#cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-limit): {{Number}}
+  [SortByMetrics](#cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-sortbymetrics): {{
+    - ColumnSort}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-column"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Limit`
-
+`Limit`  <a name="cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-limit"></a>
 Number of values to use from the column for repetition.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortByMetrics`
-
+`SortByMetrics`  <a name="cfn-quicksight-template-bodysectiondynamicnumericdimensionconfiguration-sortbymetrics"></a>
 Sort criteria on the column values that you use for repetition.
-
-_Required_: No
-
-_Type_: Array of [ColumnSort](aws-properties-quicksight-template-columnsort.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BodySectionDynamicCategoryDimensionConfiguration
-
-BodySectionRepeatConfiguration
+*Required*: No
+*Type*: Array of [ColumnSort](aws-properties-quicksight-template-columnsort.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

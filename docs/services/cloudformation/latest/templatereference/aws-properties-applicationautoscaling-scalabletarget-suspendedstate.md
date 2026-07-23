@@ -2,86 +2,59 @@
 title: "AWS::ApplicationAutoScaling::ScalableTarget SuspendedState"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalableTarget SuspendedState
+<a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate"></a>
 
-`SuspendedState` is a property of the [AWS::ApplicationAutoScaling::ScalableTarget](../userguide/aws-resource-applicationautoscaling-scalabletarget.md) resource that specifies whether the
-scaling activities for a scalable target are in a suspended state.
+`SuspendedState` is a property of the [AWS::ApplicationAutoScaling::ScalableTarget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html) resource that specifies whether the scaling activities for a scalable target are in a suspended state.
 
-For more information, see [Suspending and resuming scaling](../../../autoscaling/application/userguide/application-auto-scaling-suspend-resume-scaling.md) in the _Application Auto Scaling User_
-_Guide_.
+For more information, see [Suspending and resuming scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-suspend-resume-scaling.html) in the *Application Auto Scaling User Guide*.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate-syntax.json"></a>
 
-```json
-
+```
 {
-  "DynamicScalingInSuspended" : Boolean,
-  "DynamicScalingOutSuspended" : Boolean,
-  "ScheduledScalingSuspended" : Boolean
+  "[DynamicScalingInSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalinginsuspended)" : {{Boolean}},
+  "[DynamicScalingOutSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalingoutsuspended)" : {{Boolean}},
+  "[ScheduledScalingSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-scheduledscalingsuspended)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate-syntax.yaml"></a>
 
-```yaml
-
-  DynamicScalingInSuspended: Boolean
-  DynamicScalingOutSuspended: Boolean
-  ScheduledScalingSuspended: Boolean
-
+```
+  [DynamicScalingInSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalinginsuspended): {{Boolean}}
+  [DynamicScalingOutSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalingoutsuspended): {{Boolean}}
+  [ScheduledScalingSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-scheduledscalingsuspended): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate-properties"></a>
 
-`DynamicScalingInSuspended`
+`DynamicScalingInSuspended`  <a name="cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalinginsuspended"></a>
+Whether scale in by a target tracking scaling policy or a step scaling policy is suspended. Set the value to `true` if you don't want Application Auto Scaling to remove capacity when a scaling policy is triggered. The default is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Whether scale in by a target tracking scaling policy or a step scaling policy is
-suspended. Set the value to `true` if you don't want Application Auto Scaling to
-remove capacity when a scaling policy is triggered. The default is `false`.
+`DynamicScalingOutSuspended`  <a name="cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalingoutsuspended"></a>
+Whether scale out by a target tracking scaling policy or a step scaling policy is suspended. Set the value to `true` if you don't want Application Auto Scaling to add capacity when a scaling policy is triggered. The default is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DynamicScalingOutSuspended`
-
-Whether scale out by a target tracking scaling policy or a step scaling policy is
-suspended. Set the value to `true` if you don't want Application Auto Scaling to
-add capacity when a scaling policy is triggered. The default is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScheduledScalingSuspended`
-
-Whether scheduled scaling is suspended. Set the value to `true` if you don't
-want Application Auto Scaling to add or remove capacity by initiating scheduled actions. The
-default is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScheduledAction
-
-AWS::ApplicationAutoScaling::ScalingPolicy
+`ScheduledScalingSuspended`  <a name="cfn-applicationautoscaling-scalabletarget-suspendedstate-scheduledscalingsuspended"></a>
+Whether scheduled scaling is suspended. Set the value to `true` if you don't want Application Auto Scaling to add or remove capacity by initiating scheduled actions. The default is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

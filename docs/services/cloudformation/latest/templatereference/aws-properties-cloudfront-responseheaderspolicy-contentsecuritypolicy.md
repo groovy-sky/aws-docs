@@ -2,71 +2,51 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy ContentSecurityPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy ContentSecurityPolicy
+<a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy"></a>
 
-The policy directives and their values that CloudFront includes as values for the
-`Content-Security-Policy` HTTP response header.
+The policy directives and their values that CloudFront includes as values for the `Content-Security-Policy` HTTP response header.
 
-For more information about the `Content-Security-Policy` HTTP response
-header, see [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) in the MDN Web Docs.
+For more information about the `Content-Security-Policy` HTTP response header, see [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) in the MDN Web Docs.
 
 ## Syntax
+<a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContentSecurityPolicy" : String,
-  "Override" : Boolean
+  "[ContentSecurityPolicy](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-contentsecuritypolicy)" : {{String}},
+  "[Override](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-override)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy-syntax.yaml"></a>
 
-```yaml
-
-  ContentSecurityPolicy: String
-  Override: Boolean
-
+```
+  [ContentSecurityPolicy](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-contentsecuritypolicy): {{String}}
+  [Override](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-override): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy-properties"></a>
 
-`ContentSecurityPolicy`
+`ContentSecurityPolicy`  <a name="cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-contentsecuritypolicy"></a>
+The policy directives and their values that CloudFront includes as values for the `Content-Security-Policy` HTTP response header.
+*Required*: Yes
+*Type*: [String](#aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The policy directives and their values that CloudFront includes as values for the
-`Content-Security-Policy` HTTP response header.
-
-_Required_: Yes
-
-_Type_: [String](aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Override`
-
-A Boolean that determines whether CloudFront overrides the
-`Content-Security-Policy` HTTP response header received from the origin
-with the one specified in this response headers policy.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessControlExposeHeaders
-
-ContentTypeOptions
+`Override`  <a name="cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-override"></a>
+A Boolean that determines whether CloudFront overrides the `Content-Security-Policy` HTTP response header received from the origin with the one specified in this response headers policy.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

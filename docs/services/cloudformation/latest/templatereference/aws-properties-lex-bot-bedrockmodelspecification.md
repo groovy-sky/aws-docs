@@ -2,99 +2,71 @@
 title: "AWS::Lex::Bot BedrockModelSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BedrockModelSpecification
+<a name="aws-properties-lex-bot-bedrockmodelspecification"></a>
 
 Contains information about the Amazon Bedrock model used to interpret the prompt used in descriptive bot building.
 
 ## Syntax
+<a name="aws-properties-lex-bot-bedrockmodelspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-bedrockmodelspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockGuardrailConfiguration" : BedrockGuardrailConfiguration,
-  "BedrockModelCustomPrompt" : String,
-  "BedrockTraceStatus" : String,
-  "ModelArn" : String
+  "[BedrockGuardrailConfiguration](#cfn-lex-bot-bedrockmodelspecification-bedrockguardrailconfiguration)" : {{BedrockGuardrailConfiguration}},
+  "[BedrockModelCustomPrompt](#cfn-lex-bot-bedrockmodelspecification-bedrockmodelcustomprompt)" : {{String}},
+  "[BedrockTraceStatus](#cfn-lex-bot-bedrockmodelspecification-bedrocktracestatus)" : {{String}},
+  "[ModelArn](#cfn-lex-bot-bedrockmodelspecification-modelarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-bedrockmodelspecification-syntax.yaml"></a>
 
-```yaml
-
-  BedrockGuardrailConfiguration:
-    BedrockGuardrailConfiguration
-  BedrockModelCustomPrompt: String
-  BedrockTraceStatus: String
-  ModelArn: String
-
+```
+  [BedrockGuardrailConfiguration](#cfn-lex-bot-bedrockmodelspecification-bedrockguardrailconfiguration): {{
+    BedrockGuardrailConfiguration}}
+  [BedrockModelCustomPrompt](#cfn-lex-bot-bedrockmodelspecification-bedrockmodelcustomprompt): {{String}}
+  [BedrockTraceStatus](#cfn-lex-bot-bedrockmodelspecification-bedrocktracestatus): {{String}}
+  [ModelArn](#cfn-lex-bot-bedrockmodelspecification-modelarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-bedrockmodelspecification-properties"></a>
 
-`BedrockGuardrailConfiguration`
-
+`BedrockGuardrailConfiguration`  <a name="cfn-lex-bot-bedrockmodelspecification-bedrockguardrailconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [BedrockGuardrailConfiguration](aws-properties-lex-bot-bedrockguardrailconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BedrockGuardrailConfiguration](aws-properties-lex-bot-bedrockguardrailconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BedrockModelCustomPrompt`
-
+`BedrockModelCustomPrompt`  <a name="cfn-lex-bot-bedrockmodelspecification-bedrockmodelcustomprompt"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BedrockTraceStatus`
-
+`BedrockTraceStatus`  <a name="cfn-lex-bot-bedrockmodelspecification-bedrocktracestatus"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelArn`
-
+`ModelArn`  <a name="cfn-lex-bot-bedrockmodelspecification-modelarn"></a>
 The ARN of the foundation model used in descriptive bot building.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BedrockKnowledgeStoreConfiguration
-
-BKBExactResponseFields
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

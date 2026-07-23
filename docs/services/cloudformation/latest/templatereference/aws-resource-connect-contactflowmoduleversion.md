@@ -2,96 +2,79 @@
 title: "AWS::Connect::ContactFlowModuleVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::ContactFlowModuleVersion
+<a name="aws-resource-connect-contactflowmoduleversion"></a>
 
-Creates an immutable snapshot of a contact flow module, preserving its content and settings at a specific point
-in time for version control and rollback capabilities.
+Creates an immutable snapshot of a contact flow module, preserving its content and settings at a specific point in time for version control and rollback capabilities.
 
 ## Syntax
+<a name="aws-resource-connect-contactflowmoduleversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-contactflowmoduleversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::ContactFlowModuleVersion",
   "Properties" : {
-      "ContactFlowModuleId" : String,
-      "Description" : String
+      "[ContactFlowModuleId](#cfn-connect-contactflowmoduleversion-contactflowmoduleid)" : {{String}},
+      "[Description](#cfn-connect-contactflowmoduleversion-description)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-contactflowmoduleversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::ContactFlowModuleVersion
 Properties:
-  ContactFlowModuleId: String
-  Description: String
-
+  [ContactFlowModuleId](#cfn-connect-contactflowmoduleversion-contactflowmoduleid): {{String}}
+  [Description](#cfn-connect-contactflowmoduleversion-description): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-contactflowmoduleversion-properties"></a>
 
-`ContactFlowModuleId`
-
+`ContactFlowModuleId`  <a name="cfn-connect-contactflowmoduleversion-contactflowmoduleid"></a>
 The identifier of the flow module.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]+:[0-9]{12}:instance/[-a-zA-Z0-9]+/flow-module/[-a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]+:[0-9]{12}:instance/[-a-zA-Z0-9]+/flow-module/[-a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-connect-contactflowmoduleversion-description"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-connect-contactflowmoduleversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-contactflowmoduleversion-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-contactflowmoduleversion-return-values-fn--getatt"></a>
 
-`ContactFlowModuleVersionARN`
+####
+<a name="aws-resource-connect-contactflowmoduleversion-return-values-fn--getatt-fn--getatt"></a>
 
+`ContactFlowModuleVersionARN`  <a name="ContactFlowModuleVersionARN-fn::getatt"></a>
 Property description not available.
 
-`FlowModuleContentSha256`
-
+`FlowModuleContentSha256`  <a name="FlowModuleContentSha256-fn::getatt"></a>
 Property description not available.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The version of the flow module.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::ContactFlowModuleAlias
-
-AWS::Connect::ContactFlowVersion
 
 All content copied from https://docs.aws.amazon.com/.

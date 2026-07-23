@@ -2,92 +2,69 @@
 title: "AWS::MediaConnect::RouterOutput RouterOutputProtocolConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterOutput RouterOutputProtocolConfiguration
+<a name="aws-properties-mediaconnect-routeroutput-routeroutputprotocolconfiguration"></a>
 
 The protocol configuration settings for a router output.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routeroutput-routeroutputprotocolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routeroutput-routeroutputprotocolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Rist" : RistRouterOutputConfiguration,
-  "Rtp" : RtpRouterOutputConfiguration,
-  "SrtCaller" : SrtCallerRouterOutputConfiguration,
-  "SrtListener" : SrtListenerRouterOutputConfiguration
+  "[Rist](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rist)" : {{RistRouterOutputConfiguration}},
+  "[Rtp](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtp)" : {{RtpRouterOutputConfiguration}},
+  "[SrtCaller](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtcaller)" : {{SrtCallerRouterOutputConfiguration}},
+  "[SrtListener](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtlistener)" : {{SrtListenerRouterOutputConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routeroutput-routeroutputprotocolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Rist:
-    RistRouterOutputConfiguration
-  Rtp:
-    RtpRouterOutputConfiguration
-  SrtCaller:
-    SrtCallerRouterOutputConfiguration
-  SrtListener:
-    SrtListenerRouterOutputConfiguration
-
+```
+  [Rist](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rist): {{
+    RistRouterOutputConfiguration}}
+  [Rtp](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtp): {{
+    RtpRouterOutputConfiguration}}
+  [SrtCaller](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtcaller): {{
+    SrtCallerRouterOutputConfiguration}}
+  [SrtListener](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtlistener): {{
+    SrtListenerRouterOutputConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routeroutput-routeroutputprotocolconfiguration-properties"></a>
 
-`Rist`
-
+`Rist`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rist"></a>
 The configuration settings for a router output using the RIST (Reliable Internet Stream Transport) protocol, including the destination address and port.
+*Required*: No
+*Type*: [RistRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RistRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rtp`
-
+`Rtp`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtp"></a>
 The configuration settings for a router output using the RTP (Real-Time Transport Protocol) protocol, including the destination address and port, and forward error correction state.
+*Required*: No
+*Type*: [RtpRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-rtprouteroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RtpRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-rtprouteroutputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SrtCaller`
-
+`SrtCaller`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtcaller"></a>
 The configuration settings for a router output using the SRT (Secure Reliable Transport) protocol in caller mode, including the destination address and port, minimum latency, stream ID, and encryption key configuration.
+*Required*: No
+*Type*: [SrtCallerRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SrtCallerRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SrtListener`
-
+`SrtListener`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtlistener"></a>
 The configuration settings for a router output using the SRT (Secure Reliable Transport) protocol in listener mode, including the port, minimum latency, and encryption key configuration.
-
-_Required_: No
-
-_Type_: [SrtListenerRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-srtlistenerrouteroutputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RouterOutputConfiguration
-
-RtpRouterOutputConfiguration
+*Required*: No
+*Type*: [SrtListenerRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-srtlistenerrouteroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

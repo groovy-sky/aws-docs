@@ -2,70 +2,51 @@
 title: "AWS::MediaConnect::Flow EncodingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow EncodingConfig
+<a name="aws-properties-mediaconnect-flow-encodingconfig"></a>
 
-The encoding configuration to apply to the NDI® source when transcoding it to a transport stream for downstream distribution.
-You can choose between several predefined encoding profiles based on common use cases.
+ The encoding configuration to apply to the NDI® source when transcoding it to a transport stream for downstream distribution. You can choose between several predefined encoding profiles based on common use cases.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-encodingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-encodingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncodingProfile" : String,
-  "VideoMaxBitrate" : Integer
+  "[EncodingProfile](#cfn-mediaconnect-flow-encodingconfig-encodingprofile)" : {{String}},
+  "[VideoMaxBitrate](#cfn-mediaconnect-flow-encodingconfig-videomaxbitrate)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-encodingconfig-syntax.yaml"></a>
 
-```yaml
-
-  EncodingProfile: String
-  VideoMaxBitrate: Integer
-
+```
+  [EncodingProfile](#cfn-mediaconnect-flow-encodingconfig-encodingprofile): {{String}}
+  [VideoMaxBitrate](#cfn-mediaconnect-flow-encodingconfig-videomaxbitrate): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-encodingconfig-properties"></a>
 
-`EncodingProfile`
+`EncodingProfile`  <a name="cfn-mediaconnect-flow-encodingconfig-encodingprofile"></a>
+ The encoding profile to use when transcoding the NDI source content to a transport stream. You can change this value while the flow is running.
+*Required*: No
+*Type*: String
+*Allowed values*: `DISTRIBUTION_H264_DEFAULT | CONTRIBUTION_H264_DEFAULT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The encoding profile to use when transcoding the NDI source content to a transport stream. You can change this value while the flow is running.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DISTRIBUTION_H264_DEFAULT | CONTRIBUTION_H264_DEFAULT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VideoMaxBitrate`
-
-The maximum video bitrate to use when transcoding the NDI source to a transport stream.
-This parameter enables you to override the default video bitrate within the encoding profile's supported range.
-
-The supported range is 10,000,000 - 50,000,000 bits per second (bps). If you don't specify a value, MediaConnect uses the default value of 20,000,000 bps.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BlackFrames
-
-Encryption
+`VideoMaxBitrate`  <a name="cfn-mediaconnect-flow-encodingconfig-videomaxbitrate"></a>
+ The maximum video bitrate to use when transcoding the NDI source to a transport stream. This parameter enables you to override the default video bitrate within the encoding profile's supported range.
+ The supported range is 10,000,000 - 50,000,000 bits per second (bps). If you don't specify a value, MediaConnect uses the default value of 20,000,000 bps.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

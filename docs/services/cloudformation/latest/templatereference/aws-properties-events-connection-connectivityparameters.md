@@ -2,55 +2,44 @@
 title: "AWS::Events::Connection ConnectivityParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Connection ConnectivityParameters
+<a name="aws-properties-events-connection-connectivityparameters"></a>
 
 If you specify a private OAuth endpoint, the parameters for EventBridge to use when authenticating against the endpoint.
 
-For more information, see [Authorization methods for connections](../../../eventbridge/latest/userguide/eb-target-connection-auth.md) in the _Amazon EventBridge User Guide_.
+For more information, see [Authorization methods for connections](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-connection-auth.html) in the * *Amazon EventBridge User Guide* *.
 
 ## Syntax
+<a name="aws-properties-events-connection-connectivityparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-connection-connectivityparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceParameters" : ResourceParameters
+  "[ResourceParameters](#cfn-events-connection-connectivityparameters-resourceparameters)" : {{ResourceParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-connection-connectivityparameters-syntax.yaml"></a>
 
-```yaml
-
-  ResourceParameters:
-    ResourceParameters
-
+```
+  [ResourceParameters](#cfn-events-connection-connectivityparameters-resourceparameters): {{
+    ResourceParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-events-connection-connectivityparameters-properties"></a>
 
-`ResourceParameters`
-
+`ResourceParameters`  <a name="cfn-events-connection-connectivityparameters-resourceparameters"></a>
 The parameters for EventBridge to use when invoking the resource endpoint.
-
-_Required_: Yes
-
-_Type_: [ResourceParameters](aws-properties-events-connection-resourceparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectionHttpParameters
-
-InvocationConnectivityParameters
+*Required*: Yes
+*Type*: [ResourceParameters](aws-properties-events-connection-resourceparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

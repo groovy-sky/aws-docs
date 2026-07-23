@@ -2,77 +2,53 @@
 title: "AWS::SES::ConfigurationSet SuppressionOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSet SuppressionOptions
+<a name="aws-properties-ses-configurationset-suppressionoptions"></a>
 
-An object that contains information about the suppression list preferences for your
-account.
+An object that contains information about the suppression list preferences for your account.
 
 ## Syntax
+<a name="aws-properties-ses-configurationset-suppressionoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-configurationset-suppressionoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "SuppressedReasons" : [ String, ... ],
-  "ValidationOptions" : ValidationOptions
+  "[SuppressedReasons](#cfn-ses-configurationset-suppressionoptions-suppressedreasons)" : {{[ String, ... ]}},
+  "[ValidationOptions](#cfn-ses-configurationset-suppressionoptions-validationoptions)" : {{ValidationOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-configurationset-suppressionoptions-syntax.yaml"></a>
 
-```yaml
-
-  SuppressedReasons:
-    - String
-  ValidationOptions:
-    ValidationOptions
-
+```
+  [SuppressedReasons](#cfn-ses-configurationset-suppressionoptions-suppressedreasons): {{
+    - String}}
+  [ValidationOptions](#cfn-ses-configurationset-suppressionoptions-validationoptions): {{
+    ValidationOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-configurationset-suppressionoptions-properties"></a>
 
-`SuppressedReasons`
+`SuppressedReasons`  <a name="cfn-ses-configurationset-suppressionoptions-suppressedreasons"></a>
+A list that contains the reasons that email addresses are automatically added to the suppression list for your account. This list can contain any or all of the following:
++ `COMPLAINT` – Amazon SES adds an email address to the suppression list for your account when a message sent to that address results in a complaint.
++ `BOUNCE` – Amazon SES adds an email address to the suppression list for your account when a message sent to that address results in a hard bounce.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list that contains the reasons that email addresses are automatically added to the
-suppression list for your account. This list can contain any or all of the
-following:
-
-- `COMPLAINT` – Amazon SES adds an email address to the suppression
-list for your account when a message sent to that address results in a
-complaint.
-
-- `BOUNCE` – Amazon SES adds an email address to the suppression list
-for your account when a message sent to that address results in a hard
-bounce.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValidationOptions`
-
+`ValidationOptions`  <a name="cfn-ses-configurationset-suppressionoptions-validationoptions"></a>
 The configuration settings for email automatic validation.
-
-_Required_: No
-
-_Type_: [ValidationOptions](aws-properties-ses-configurationset-validationoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SendingOptions
-
-Tag
+*Required*: No
+*Type*: [ValidationOptions](aws-properties-ses-configurationset-validationoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

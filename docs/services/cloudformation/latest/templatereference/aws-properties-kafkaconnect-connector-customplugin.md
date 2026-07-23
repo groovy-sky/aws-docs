@@ -2,68 +2,51 @@
 title: "AWS::KafkaConnect::Connector CustomPlugin"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector CustomPlugin
+<a name="aws-properties-kafkaconnect-connector-customplugin"></a>
 
 A plugin is an AWS resource that contains the code that defines a connector's logic.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-customplugin-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-customplugin-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomPluginArn" : String,
-  "Revision" : Integer
+  "[CustomPluginArn](#cfn-kafkaconnect-connector-customplugin-custompluginarn)" : {{String}},
+  "[Revision](#cfn-kafkaconnect-connector-customplugin-revision)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-customplugin-syntax.yaml"></a>
 
-```yaml
-
-  CustomPluginArn: String
-  Revision: Integer
-
+```
+  [CustomPluginArn](#cfn-kafkaconnect-connector-customplugin-custompluginarn): {{String}}
+  [Revision](#cfn-kafkaconnect-connector-customplugin-revision): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-customplugin-properties"></a>
 
-`CustomPluginArn`
-
+`CustomPluginArn`  <a name="cfn-kafkaconnect-connector-customplugin-custompluginarn"></a>
 The Amazon Resource Name (ARN) of the custom plugin.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafkaconnect:.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn):kafkaconnect:.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Revision`
-
+`Revision`  <a name="cfn-kafkaconnect-connector-customplugin-revision"></a>
 The revision of the custom plugin.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogsLogDelivery
-
-FirehoseLogDelivery
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

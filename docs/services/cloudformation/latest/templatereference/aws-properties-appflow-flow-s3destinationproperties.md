@@ -2,92 +2,66 @@
 title: "AWS::AppFlow::Flow S3DestinationProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow S3DestinationProperties
+<a name="aws-properties-appflow-flow-s3destinationproperties"></a>
 
-The properties that are applied when Amazon S3 is used as a destination.
+ The properties that are applied when Amazon S3 is used as a destination.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-s3destinationproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-s3destinationproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "BucketPrefix" : String,
-  "S3OutputFormatConfig" : S3OutputFormatConfig
+  "[BucketName](#cfn-appflow-flow-s3destinationproperties-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-appflow-flow-s3destinationproperties-bucketprefix)" : {{String}},
+  "[S3OutputFormatConfig](#cfn-appflow-flow-s3destinationproperties-s3outputformatconfig)" : {{S3OutputFormatConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-s3destinationproperties-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  BucketPrefix: String
-  S3OutputFormatConfig:
-    S3OutputFormatConfig
-
+```
+  [BucketName](#cfn-appflow-flow-s3destinationproperties-bucketname): {{String}}
+  [BucketPrefix](#cfn-appflow-flow-s3destinationproperties-bucketprefix): {{String}}
+  [S3OutputFormatConfig](#cfn-appflow-flow-s3destinationproperties-s3outputformatconfig): {{
+    S3OutputFormatConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-s3destinationproperties-properties"></a>
 
-`BucketName`
+`BucketName`  <a name="cfn-appflow-flow-s3destinationproperties-bucketname"></a>
+ The Amazon S3 bucket name in which Amazon AppFlow places the transferred data.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon S3 bucket name in which Amazon AppFlow places the transferred
-data.
+`BucketPrefix`  <a name="cfn-appflow-flow-s3destinationproperties-bucketprefix"></a>
+ The object key for the destination bucket in which Amazon AppFlow places the files.
+*Required*: No
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketPrefix`
-
-The object key for the destination bucket in which Amazon AppFlow places the files.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3OutputFormatConfig`
-
-The configuration that determines how Amazon AppFlow should format the flow output
-data when Amazon S3 is used as the destination.
-
-_Required_: No
-
-_Type_: [S3OutputFormatConfig](aws-properties-appflow-flow-s3outputformatconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`S3OutputFormatConfig`  <a name="cfn-appflow-flow-s3destinationproperties-s3outputformatconfig"></a>
+ The configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination.
+*Required*: No
+*Type*: [S3OutputFormatConfig](aws-properties-appflow-flow-s3outputformatconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [S3DestinationProperties](../../../../reference/appflow/1-0/apireference/api-s3destinationproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedshiftDestinationProperties
-
-S3InputFormatConfig
+<a name="aws-properties-appflow-flow-s3destinationproperties--seealso"></a>
++ [S3DestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3DestinationProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

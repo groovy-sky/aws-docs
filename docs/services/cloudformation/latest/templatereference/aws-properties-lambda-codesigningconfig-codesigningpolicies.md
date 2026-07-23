@@ -2,61 +2,43 @@
 title: "AWS::Lambda::CodeSigningConfig CodeSigningPolicies"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::CodeSigningConfig CodeSigningPolicies
+<a name="aws-properties-lambda-codesigningconfig-codesigningpolicies"></a>
 
-Code signing configuration [policies](../../../lambda/latest/dg/configuration-codesigning.md#config-codesigning-policies) specify the validation failure action for signature mismatch or
-expiry.
+Code signing configuration [policies](https://docs.aws.amazon.com/lambda/latest/dg/configuration-codesigning.html#config-codesigning-policies) specify the validation failure action for signature mismatch or expiry.
 
 ## Syntax
+<a name="aws-properties-lambda-codesigningconfig-codesigningpolicies-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-codesigningconfig-codesigningpolicies-syntax.json"></a>
 
-```json
-
+```
 {
-  "UntrustedArtifactOnDeployment" : String
+  "[UntrustedArtifactOnDeployment](#cfn-lambda-codesigningconfig-codesigningpolicies-untrustedartifactondeployment)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-codesigningconfig-codesigningpolicies-syntax.yaml"></a>
 
-```yaml
-
-  UntrustedArtifactOnDeployment: String
-
+```
+  [UntrustedArtifactOnDeployment](#cfn-lambda-codesigningconfig-codesigningpolicies-untrustedartifactondeployment): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-codesigningconfig-codesigningpolicies-properties"></a>
 
-`UntrustedArtifactOnDeployment`
-
-Code signing configuration policy for deployment validation failure. If you set the policy to
-`Enforce`, Lambda blocks the deployment request if signature validation checks
-fail. If you set the policy to `Warn`, Lambda allows the deployment and issues a
-new Amazon CloudWatch metric ( `SignatureValidationErrors`) and also stores the
-warning in the CloudTrail log.
-
+`UntrustedArtifactOnDeployment`  <a name="cfn-lambda-codesigningconfig-codesigningpolicies-untrustedartifactondeployment"></a>
+Code signing configuration policy for deployment validation failure. If you set the policy to `Enforce`, Lambda blocks the deployment request if signature validation checks fail. If you set the policy to `Warn`, Lambda allows the deployment and issues a new Amazon CloudWatch metric (`SignatureValidationErrors`) and also stores the warning in the CloudTrail log.
 Default value: `Warn`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Warn | Enforce`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AllowedPublishers
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Warn | Enforce`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

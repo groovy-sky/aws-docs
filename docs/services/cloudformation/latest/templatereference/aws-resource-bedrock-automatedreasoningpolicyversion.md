@@ -2,132 +2,106 @@
 title: "AWS::Bedrock::AutomatedReasoningPolicyVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::AutomatedReasoningPolicyVersion
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion"></a>
 
 Creates a new version of an existing Automated Reasoning policy. This allows you to iterate on your policy rules while maintaining previous versions for rollback or comparison purposes.
 
 ## Syntax
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::AutomatedReasoningPolicyVersion",
   "Properties" : {
-      "LastUpdatedDefinitionHash" : String,
-      "PolicyArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[LastUpdatedDefinitionHash](#cfn-bedrock-automatedreasoningpolicyversion-lastupdateddefinitionhash)" : {{String}},
+      "[PolicyArn](#cfn-bedrock-automatedreasoningpolicyversion-policyarn)" : {{String}},
+      "[Tags](#cfn-bedrock-automatedreasoningpolicyversion-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::AutomatedReasoningPolicyVersion
 Properties:
-  LastUpdatedDefinitionHash: String
-  PolicyArn: String
-  Tags:
-    - Tag
-
+  [LastUpdatedDefinitionHash](#cfn-bedrock-automatedreasoningpolicyversion-lastupdateddefinitionhash): {{String}}
+  [PolicyArn](#cfn-bedrock-automatedreasoningpolicyversion-policyarn): {{String}}
+  [Tags](#cfn-bedrock-automatedreasoningpolicyversion-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-properties"></a>
 
-`LastUpdatedDefinitionHash`
-
+`LastUpdatedDefinitionHash`  <a name="cfn-bedrock-automatedreasoningpolicyversion-lastupdateddefinitionhash"></a>
 The hash of the policy definition that was last updated.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-z]{128}$`
+*Minimum*: `128`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z]{128}$`
-
-_Minimum_: `128`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PolicyArn`
-
+`PolicyArn`  <a name="cfn-bedrock-automatedreasoningpolicyversion-policyarn"></a>
 The Amazon Resource Name (ARN) of the policy.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:automated-reasoning-policy\/[a-z0-9]{12}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:automated-reasoning-policy\/[a-z0-9]{12}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrock-automatedreasoningpolicyversion-tags"></a>
 The tags associated with the Automated Reasoning policy version.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrock-automatedreasoningpolicyversion-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrock-automatedreasoningpolicyversion-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-return-values-ref"></a>
 
 Returns the policy version ID.
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-return-values-fn--getatt"></a>
 
 Returns the value of an attribute from a resource in the template.
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrock-automatedreasoningpolicyversion-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the policy version was created.
 
-`DefinitionHash`
-
+`DefinitionHash`  <a name="DefinitionHash-fn::getatt"></a>
 A hash of the policy definition used to identify the version.
 
-`Description`
-
+`Description`  <a name="Description-fn::getatt"></a>
 The description of the policy version.
 
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 The name of the policy version.
 
-`PolicyId`
-
+`PolicyId`  <a name="PolicyId-fn::getatt"></a>
 The unique identifier of the policy.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the policy version was last updated.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The version number of the policy version.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

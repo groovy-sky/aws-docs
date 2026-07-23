@@ -2,136 +2,84 @@
 title: "AWS::CloudFront::OriginAccessControl OriginAccessControlConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::OriginAccessControl OriginAccessControlConfig
+<a name="aws-properties-cloudfront-originaccesscontrol-originaccesscontrolconfig"></a>
 
-Creates a new origin access control in CloudFront. After you create an origin access
-control, you can add it to an origin in a CloudFront distribution so that CloudFront sends
-authenticated (signed) requests to the origin.
+Creates a new origin access control in CloudFront. After you create an origin access control, you can add it to an origin in a CloudFront distribution so that CloudFront sends authenticated (signed) requests to the origin.
 
-This makes it possible to block public access to the origin, allowing viewers (users) to
-access the origin's content only through CloudFront.
+This makes it possible to block public access to the origin, allowing viewers (users) to access the origin's content only through CloudFront.
 
-For more information about using a CloudFront origin access control, see [Restricting access to an AWS origin](../../../amazoncloudfront/latest/developerguide/private-content-restricting-access-to-origin.md) in the
-_Amazon CloudFront Developer Guide_.
+For more information about using a CloudFront origin access control, see [Restricting access to an AWS origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-origin.html) in the *Amazon CloudFront Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-cloudfront-originaccesscontrol-originaccesscontrolconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-originaccesscontrol-originaccesscontrolconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "Name" : String,
-  "OriginAccessControlOriginType" : String,
-  "SigningBehavior" : String,
-  "SigningProtocol" : String
+  "[Description](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-description)" : {{String}},
+  "[Name](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-name)" : {{String}},
+  "[OriginAccessControlOriginType](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-originaccesscontrolorigintype)" : {{String}},
+  "[SigningBehavior](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingbehavior)" : {{String}},
+  "[SigningProtocol](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingprotocol)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-originaccesscontrol-originaccesscontrolconfig-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  Name: String
-  OriginAccessControlOriginType: String
-  SigningBehavior: String
-  SigningProtocol: String
-
+```
+  [Description](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-description): {{String}}
+  [Name](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-name): {{String}}
+  [OriginAccessControlOriginType](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-originaccesscontrolorigintype): {{String}}
+  [SigningBehavior](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingbehavior): {{String}}
+  [SigningProtocol](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingprotocol): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-originaccesscontrol-originaccesscontrolconfig-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-description"></a>
 A description of the origin access control.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-name"></a>
 A name to identify the origin access control. You can specify up to 64 characters.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OriginAccessControlOriginType`
-
+`OriginAccessControlOriginType`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-originaccesscontrolorigintype"></a>
 The type of origin that this origin access control is for.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(s3|mediastore|lambda|mediapackagev2)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(s3|mediastore|lambda|mediapackagev2)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SigningBehavior`
-
-Specifies which requests CloudFront signs (adds authentication information to). Specify
-`always` for the most common use case. For more information, see [origin access control advanced settings](../../../amazoncloudfront/latest/developerguide/private-content-restricting-access-to-s3.md#oac-advanced-settings) in the
-_Amazon CloudFront Developer Guide_.
-
+`SigningBehavior`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingbehavior"></a>
+Specifies which requests CloudFront signs (adds authentication information to). Specify `always` for the most common use case. For more information, see [origin access control advanced settings](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#oac-advanced-settings) in the *Amazon CloudFront Developer Guide*.
 This field can have one of the following values:
++ `always` – CloudFront signs all origin requests, overwriting the `Authorization` header from the viewer request if one exists.
++ `never` – CloudFront doesn't sign any origin requests. This value turns off origin access control for all origins in all distributions that use this origin access control.
++ `no-override` – If the viewer request doesn't contain the `Authorization` header, then CloudFront signs the origin request. If the viewer request contains the `Authorization` header, then CloudFront doesn't sign the origin request and instead passes along the `Authorization` header from the viewer request. **WARNING: To pass along the `Authorization` header from the viewer request, you *must* add the `Authorization` header to a [cache policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/controlling-the-cache-key.html) for all cache behaviors that use origins associated with this origin access control.**
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(never|no-override|always)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `always` – CloudFront signs all origin requests, overwriting the
-`Authorization` header from the viewer request if one
-exists.
-
-- `never` – CloudFront doesn't sign any origin requests. This value turns
-off origin access control for all origins in all distributions that use this
-origin access control.
-
-- `no-override` – If the viewer request doesn't contain the
-`Authorization` header, then CloudFront signs the origin request. If
-the viewer request contains the `Authorization` header, then CloudFront
-doesn't sign the origin request and instead passes along the
-`Authorization` header from the viewer request. **WARNING: To pass along the `Authorization` header**
-**from the viewer request, you _must_ add the**
-**`Authorization` header to a [cache policy](../../../amazoncloudfront/latest/developerguide/controlling-the-cache-key.md) for all cache behaviors that**
-**use origins associated with this origin access control.**
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(never|no-override|always)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SigningProtocol`
-
-The signing protocol of the origin access control, which determines how CloudFront signs
-(authenticates) requests. The only valid value is `sigv4`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(sigv4)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::OriginAccessControl
-
-AWS::CloudFront::OriginRequestPolicy
+`SigningProtocol`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingprotocol"></a>
+The signing protocol of the origin access control, which determines how CloudFront signs (authenticates) requests. The only valid value is `sigv4`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(sigv4)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

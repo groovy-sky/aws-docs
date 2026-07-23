@@ -2,53 +2,42 @@
 title: "AWS::GroundStation::DataflowEndpointGroupV2 DownlinkDataflowDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroupV2 DownlinkDataflowDetails
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails"></a>
 
 Dataflow details for a downlink endpoint
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentConnectionDetails" : DownlinkConnectionDetails
+  "[AgentConnectionDetails](#cfn-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-agentconnectiondetails)" : {{DownlinkConnectionDetails}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-syntax.yaml"></a>
 
-```yaml
-
-  AgentConnectionDetails:
-    DownlinkConnectionDetails
-
+```
+  [AgentConnectionDetails](#cfn-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-agentconnectiondetails): {{
+    DownlinkConnectionDetails}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-properties"></a>
 
-`AgentConnectionDetails`
-
+`AgentConnectionDetails`  <a name="cfn-groundstation-dataflowendpointgroupv2-downlinkdataflowdetails-agentconnectiondetails"></a>
 Downlink connection details for customer to Agent and Agent to Ground Station
-
-_Required_: No
-
-_Type_: [DownlinkConnectionDetails](aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DownlinkConnectionDetails
-
-EndpointDetails
+*Required*: No
+*Type*: [DownlinkConnectionDetails](aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

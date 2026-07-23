@@ -2,80 +2,54 @@
 title: "AWS::SSM::Association Target"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::Association Target
+<a name="aws-properties-ssm-association-target"></a>
 
-`Target` is a property of the [AWS::SSM::Association](../userguide/aws-resource-ssm-association.md) resource that specifies the targets for an SSM
-document in Systems Manager. You can target all instances in an AWS account by specifying the `InstanceIds` key with a value of
-`*`. To view a JSON and a YAML example that targets all instances, see
-the example "Create an association for all managed instances in an AWS account" later in this page.
+`Target` is a property of the [AWS::SSM::Association](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html) resource that specifies the targets for an SSM document in Systems Manager. You can target all instances in an AWS account by specifying the `InstanceIds` key with a value of `*`. To view a JSON and a YAML example that targets all instances, see the example "Create an association for all managed instances in an AWS account" later in this page.
 
 ## Syntax
+<a name="aws-properties-ssm-association-target-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-association-target-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Values" : [ String, ... ]
+  "[Key](#cfn-ssm-association-target-key)" : {{String}},
+  "[Values](#cfn-ssm-association-target-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-association-target-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Values:
-    - String
-
+```
+  [Key](#cfn-ssm-association-target-key): {{String}}
+  [Values](#cfn-ssm-association-target-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-association-target-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-ssm-association-target-key"></a>
+User-defined criteria for sending commands that target managed nodes that meet the criteria.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\p{L}\p{Z}\p{N}_.:/=+\-@]{1,128}$|resource-groups:Name`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-User-defined criteria for sending commands that target managed nodes that meet the
-criteria.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\p{L}\p{Z}\p{N}_.:/=+\-@]{1,128}$|resource-groups:Name`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
-User-defined criteria that maps to `Key`. For example, if you specified
-`tag:ServerRole`, you could specify `value:WebServer` to run a command on
-instances that include EC2 tags of `ServerRole,WebServer`.
-
-Depending on the type of target, the maximum number of values for a key might be lower than
-the global maximum of 50.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3OutputLocation
-
-AWS::SSM::Document
+`Values`  <a name="cfn-ssm-association-target-values"></a>
+User-defined criteria that maps to `Key`. For example, if you specified `tag:ServerRole`, you could specify `value:WebServer` to run a command on instances that include EC2 tags of `ServerRole,WebServer`.
+Depending on the type of target, the maximum number of values for a key might be lower than the global maximum of 50.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

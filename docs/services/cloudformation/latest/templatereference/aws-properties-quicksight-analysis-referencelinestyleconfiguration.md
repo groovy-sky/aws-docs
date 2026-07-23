@@ -2,75 +2,54 @@
 title: "AWS::QuickSight::Analysis ReferenceLineStyleConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ReferenceLineStyleConfiguration
+<a name="aws-properties-quicksight-analysis-referencelinestyleconfiguration"></a>
 
-The style configuration of the reference
-line.
+The style configuration of the reference line.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-referencelinestyleconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-referencelinestyleconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "Pattern" : String
+  "[Color](#cfn-quicksight-analysis-referencelinestyleconfiguration-color)" : {{String}},
+  "[Pattern](#cfn-quicksight-analysis-referencelinestyleconfiguration-pattern)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-referencelinestyleconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  Pattern: String
-
+```
+  [Color](#cfn-quicksight-analysis-referencelinestyleconfiguration-color): {{String}}
+  [Pattern](#cfn-quicksight-analysis-referencelinestyleconfiguration-pattern): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-referencelinestyleconfiguration-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-analysis-referencelinestyleconfiguration-color"></a>
 The hex color of the reference line.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pattern`
-
+`Pattern`  <a name="cfn-quicksight-analysis-referencelinestyleconfiguration-pattern"></a>
 The pattern type of the line style. Choose one of the following options:
-
-- `SOLID`
-
-- `DASHED`
-
-- `DOTTED`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SOLID | DASHED | DOTTED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReferenceLineStaticDataConfiguration
-
-ReferenceLineValueLabelConfiguration
++  `SOLID`
++  `DASHED`
++  `DOTTED`
+*Required*: No
+*Type*: String
+*Allowed values*: `SOLID | DASHED | DOTTED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

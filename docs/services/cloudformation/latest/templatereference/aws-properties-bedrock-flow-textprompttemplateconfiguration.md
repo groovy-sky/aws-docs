@@ -2,73 +2,54 @@
 title: "AWS::Bedrock::Flow TextPromptTemplateConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow TextPromptTemplateConfiguration
+<a name="aws-properties-bedrock-flow-textprompttemplateconfiguration"></a>
 
 Contains configurations for a text prompt template. To include a variable, enclose a word in double curly braces as in `{{variable}}`.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-textprompttemplateconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-textprompttemplateconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InputVariables" : [ PromptInputVariable, ... ],
-  "Text" : String
+  "[InputVariables](#cfn-bedrock-flow-textprompttemplateconfiguration-inputvariables)" : {{[ PromptInputVariable, ... ]}},
+  "[Text](#cfn-bedrock-flow-textprompttemplateconfiguration-text)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-textprompttemplateconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InputVariables:
-    - PromptInputVariable
-  Text: String
-
+```
+  [InputVariables](#cfn-bedrock-flow-textprompttemplateconfiguration-inputvariables): {{
+    - PromptInputVariable}}
+  [Text](#cfn-bedrock-flow-textprompttemplateconfiguration-text): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-textprompttemplateconfiguration-properties"></a>
 
-`InputVariables`
-
+`InputVariables`  <a name="cfn-bedrock-flow-textprompttemplateconfiguration-inputvariables"></a>
 An array of the variables in the prompt template.
+*Required*: No
+*Type*: Array of [PromptInputVariable](aws-properties-bedrock-flow-promptinputvariable.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PromptInputVariable](aws-properties-bedrock-flow-promptinputvariable.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Text`
-
+`Text`  <a name="cfn-bedrock-flow-textprompttemplateconfiguration-text"></a>
 The message for the prompt.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StorageFlowNodeServiceConfiguration
-
-VectorSearchBedrockRerankingConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

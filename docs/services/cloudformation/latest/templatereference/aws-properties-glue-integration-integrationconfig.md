@@ -2,85 +2,60 @@
 title: "AWS::Glue::Integration IntegrationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Integration IntegrationConfig
+<a name="aws-properties-glue-integration-integrationconfig"></a>
 
 Properties associated with the integration.
 
 ## Syntax
+<a name="aws-properties-glue-integration-integrationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-integration-integrationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContinuousSync" : Boolean,
-  "RefreshInterval" : String,
-  "SourceProperties" : {Key: Value, ...}
+  "[ContinuousSync](#cfn-glue-integration-integrationconfig-continuoussync)" : {{Boolean}},
+  "[RefreshInterval](#cfn-glue-integration-integrationconfig-refreshinterval)" : {{String}},
+  "[SourceProperties](#cfn-glue-integration-integrationconfig-sourceproperties)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-integration-integrationconfig-syntax.yaml"></a>
 
-```yaml
-
-  ContinuousSync: Boolean
-  RefreshInterval: String
-  SourceProperties:
-    Key: Value
-
+```
+  [ContinuousSync](#cfn-glue-integration-integrationconfig-continuoussync): {{Boolean}}
+  [RefreshInterval](#cfn-glue-integration-integrationconfig-refreshinterval): {{String}}
+  [SourceProperties](#cfn-glue-integration-integrationconfig-sourceproperties): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-integration-integrationconfig-properties"></a>
 
-`ContinuousSync`
+`ContinuousSync`  <a name="cfn-glue-integration-integrationconfig-continuoussync"></a>
+Enables continuous synchronization for on-demand data extractions from SaaS applications to AWS data services like Amazon Redshift and Amazon S3.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Enables continuous synchronization for on-demand data extractions from SaaS applications to AWS data services like Amazon Redshift
-and Amazon S3.
+`RefreshInterval`  <a name="cfn-glue-integration-integrationconfig-refreshinterval"></a>
+Specifies the frequency at which CDC (Change Data Capture) pulls or incremental loads should occur. This parameter provides flexibility to align the refresh rate with your specific data update patterns, system load considerations, and performance optimization goals. Time increment can be set from 15 minutes to 8640 minutes (six days).
+*Required*: No
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RefreshInterval`
-
-Specifies the frequency at which CDC (Change Data Capture) pulls or incremental loads should occur. This parameter provides flexibility to align
-the refresh rate with your specific data update patterns, system load considerations, and performance optimization goals. Time increment can be set from
-15 minutes to 8640 minutes (six days).
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceProperties`
-
-A collection of key-value pairs that specify additional properties for the integration source. These properties provide configuration options that
-can be used to customize the behavior of the ODB source during data integration operations.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\s\S]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Glue::Integration
-
-Tag
+`SourceProperties`  <a name="cfn-glue-integration-integrationconfig-sourceproperties"></a>
+ A collection of key-value pairs that specify additional properties for the integration source. These properties provide configuration options that can be used to customize the behavior of the ODB source during data integration operations.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\s\S]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

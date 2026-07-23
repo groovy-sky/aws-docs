@@ -2,68 +2,51 @@
 title: "AWS::S3Tables::Table Compaction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table Compaction
+<a name="aws-properties-s3tables-table-compaction"></a>
 
 Contains details about the compaction settings for an Iceberg table.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-compaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-compaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Status" : String,
-  "TargetFileSizeMB" : Integer
+  "[Status](#cfn-s3tables-table-compaction-status)" : {{String}},
+  "[TargetFileSizeMB](#cfn-s3tables-table-compaction-targetfilesizemb)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-compaction-syntax.yaml"></a>
 
-```yaml
-
-  Status: String
-  TargetFileSizeMB: Integer
-
+```
+  [Status](#cfn-s3tables-table-compaction-status): {{String}}
+  [TargetFileSizeMB](#cfn-s3tables-table-compaction-targetfilesizemb): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-compaction-properties"></a>
 
-`Status`
-
+`Status`  <a name="cfn-s3tables-table-compaction-status"></a>
 The status of the maintenance configuration.
+*Required*: No
+*Type*: String
+*Allowed values*: `enabled | disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enabled | disabled`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetFileSizeMB`
-
+`TargetFileSizeMB`  <a name="cfn-s3tables-table-compaction-targetfilesizemb"></a>
 The target file size for the table in MB.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::S3Tables::Table
-
-IcebergMetadata
+*Required*: No
+*Type*: Integer
+*Minimum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

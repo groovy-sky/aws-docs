@@ -2,116 +2,82 @@
 title: "AWS::QuickSight::Topic TopicNamedEntity"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicNamedEntity
+<a name="aws-properties-quicksight-topic-topicnamedentity"></a>
 
 A structure that represents a named entity.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-topicnamedentity-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-topicnamedentity-syntax.json"></a>
 
-```json
-
+```
 {
-  "Definition" : [ NamedEntityDefinition, ... ],
-  "EntityDescription" : String,
-  "EntityName" : String,
-  "EntitySynonyms" : [ String, ... ],
-  "SemanticEntityType" : SemanticEntityType
+  "[Definition](#cfn-quicksight-topic-topicnamedentity-definition)" : {{[ NamedEntityDefinition, ... ]}},
+  "[EntityDescription](#cfn-quicksight-topic-topicnamedentity-entitydescription)" : {{String}},
+  "[EntityName](#cfn-quicksight-topic-topicnamedentity-entityname)" : {{String}},
+  "[EntitySynonyms](#cfn-quicksight-topic-topicnamedentity-entitysynonyms)" : {{[ String, ... ]}},
+  "[SemanticEntityType](#cfn-quicksight-topic-topicnamedentity-semanticentitytype)" : {{SemanticEntityType}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-topicnamedentity-syntax.yaml"></a>
 
-```yaml
-
-  Definition:
-    - NamedEntityDefinition
-  EntityDescription: String
-  EntityName: String
-  EntitySynonyms:
-    - String
-  SemanticEntityType:
-    SemanticEntityType
-
+```
+  [Definition](#cfn-quicksight-topic-topicnamedentity-definition): {{
+    - NamedEntityDefinition}}
+  [EntityDescription](#cfn-quicksight-topic-topicnamedentity-entitydescription): {{String}}
+  [EntityName](#cfn-quicksight-topic-topicnamedentity-entityname): {{String}}
+  [EntitySynonyms](#cfn-quicksight-topic-topicnamedentity-entitysynonyms): {{
+    - String}}
+  [SemanticEntityType](#cfn-quicksight-topic-topicnamedentity-semanticentitytype): {{
+    SemanticEntityType}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-topicnamedentity-properties"></a>
 
-`Definition`
-
+`Definition`  <a name="cfn-quicksight-topic-topicnamedentity-definition"></a>
 The definition of a named entity.
+*Required*: No
+*Type*: Array of [NamedEntityDefinition](aws-properties-quicksight-topic-namedentitydefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [NamedEntityDefinition](aws-properties-quicksight-topic-namedentitydefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntityDescription`
-
+`EntityDescription`  <a name="cfn-quicksight-topic-topicnamedentity-entitydescription"></a>
 The description of the named entity.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntityName`
-
+`EntityName`  <a name="cfn-quicksight-topic-topicnamedentity-entityname"></a>
 The name of the named entity.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`EntitySynonyms`  <a name="cfn-quicksight-topic-topicnamedentity-entitysynonyms"></a>
+The other names or aliases for the named entity.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntitySynonyms`
-
-The other
-names or aliases for the named entity.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SemanticEntityType`
-
+`SemanticEntityType`  <a name="cfn-quicksight-topic-topicnamedentity-semanticentitytype"></a>
 The type of named entity that a topic represents.
-
-_Required_: No
-
-_Type_: [SemanticEntityType](aws-properties-quicksight-topic-semanticentitytype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TopicFilter
-
-TopicNumericEqualityFilter
+*Required*: No
+*Type*: [SemanticEntityType](aws-properties-quicksight-topic-semanticentitytype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

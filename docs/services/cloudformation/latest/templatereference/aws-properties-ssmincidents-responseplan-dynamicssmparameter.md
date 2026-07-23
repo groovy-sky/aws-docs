@@ -2,97 +2,66 @@
 title: "AWS::SSMIncidents::ResponsePlan DynamicSsmParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan DynamicSsmParameter
+<a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter"></a>
 
-When you add a runbook to a response plan, you can specify the parameters for the runbook
-to use at runtime. Response plans support parameters with both static and dynamic
-values. For static values, you enter the value when you define the parameter in the
-response plan. For dynamic values, the system determines the correct parameter value by
-collecting information from the incident. Incident Manager supports the
-following dynamic parameters:
+When you add a runbook to a response plan, you can specify the parameters for the runbook to use at runtime. Response plans support parameters with both static and dynamic values. For static values, you enter the value when you define the parameter in the response plan. For dynamic values, the system determines the correct parameter value by collecting information from the incident. Incident Manager supports the following dynamic parameters:
 
-**Incident ARN**
+ **Incident ARN**
 
-When Incident Manager creates an incident, the system captures the Amazon
-Resource Name (ARN) of the corresponding incident record and enters it for this
-parameter in the runbook.
+When Incident Manager creates an incident, the system captures the Amazon Resource Name (ARN) of the corresponding incident record and enters it for this parameter in the runbook.
 
-###### Note
+**Note**
+This value can only be assigned to parameters of type `String`. If assigned to a parameter of any other type, the runbook fails to run.
 
-This value can only be assigned to parameters of type `String`. If
-assigned to a parameter of any other type, the runbook fails to run.
+ **Involved resources**
 
-**Involved resources**
+When Incident Manager creates an incident, the system captures the ARNs of the resources involved in the incident. These resource ARNs are then assigned to this parameter in the runbook.
 
-When Incident Manager creates an incident, the system captures the ARNs of
-the resources involved in the incident. These resource ARNs are then assigned to this
-parameter in the runbook.
-
-###### Note
-
-This value can only be assigned to parameters of type `StringList`. If
-assigned to a parameter of any other type, the runbook fails to run.
+**Note**
+This value can only be assigned to parameters of type `StringList`. If assigned to a parameter of any other type, the runbook fails to run.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : DynamicSsmParameterValue
+  "[Key](#cfn-ssmincidents-responseplan-dynamicssmparameter-key)" : {{String}},
+  "[Value](#cfn-ssmincidents-responseplan-dynamicssmparameter-value)" : {{DynamicSsmParameterValue}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value:
-    DynamicSsmParameterValue
-
+```
+  [Key](#cfn-ssmincidents-responseplan-dynamicssmparameter-key): {{String}}
+  [Value](#cfn-ssmincidents-responseplan-dynamicssmparameter-value): {{
+    DynamicSsmParameterValue}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-ssmincidents-responseplan-dynamicssmparameter-key"></a>
+The key parameter to use when running the Systems Manager Automation runbook.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The key parameter to use when running the Systems Manager Automation
-runbook.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ssmincidents-responseplan-dynamicssmparameter-value"></a>
 The dynamic parameter value.
-
-_Required_: Yes
-
-_Type_: [DynamicSsmParameterValue](aws-properties-ssmincidents-responseplan-dynamicssmparametervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChatChannel
-
-DynamicSsmParameterValue
+*Required*: Yes
+*Type*: [DynamicSsmParameterValue](aws-properties-ssmincidents-responseplan-dynamicssmparametervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

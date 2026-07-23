@@ -2,72 +2,53 @@
 title: "AWS::Bedrock::Flow LexFlowNodeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow LexFlowNodeConfiguration
+<a name="aws-properties-bedrock-flow-lexflownodeconfiguration"></a>
 
-Contains configurations for a Lex node in the flow. You specify a Amazon Lex bot to invoke. This node takes an utterance as the input and returns as the output the intent identified by the Amazon Lex bot. For more information, see [Node types in a flow](../../../bedrock/latest/userguide/flows-nodes.md) in the Amazon Bedrock User Guide.
+Contains configurations for a Lex node in the flow. You specify a Amazon Lex bot to invoke. This node takes an utterance as the input and returns as the output the intent identified by the Amazon Lex bot. For more information, see [Node types in a flow](https://docs.aws.amazon.com/bedrock/latest/userguide/flows-nodes.html) in the Amazon Bedrock User Guide.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-lexflownodeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-lexflownodeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BotAliasArn" : String,
-  "LocaleId" : String
+  "[BotAliasArn](#cfn-bedrock-flow-lexflownodeconfiguration-botaliasarn)" : {{String}},
+  "[LocaleId](#cfn-bedrock-flow-lexflownodeconfiguration-localeid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-lexflownodeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BotAliasArn: String
-  LocaleId: String
-
+```
+  [BotAliasArn](#cfn-bedrock-flow-lexflownodeconfiguration-botaliasarn): {{String}}
+  [LocaleId](#cfn-bedrock-flow-lexflownodeconfiguration-localeid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-lexflownodeconfiguration-properties"></a>
 
-`BotAliasArn`
-
+`BotAliasArn`  <a name="cfn-bedrock-flow-lexflownodeconfiguration-botaliasarn"></a>
 The Amazon Resource Name (ARN) of the Amazon Lex bot alias to invoke.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(|-us-gov):lex:[a-z]{2}(-gov)?-[a-z]+-\d{1}:\d{12}:bot-alias/[0-9a-zA-Z]+/[0-9a-zA-Z]+$`
+*Maximum*: `78`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-us-gov):lex:[a-z]{2}(-gov)?-[a-z]+-\d{1}:\d{12}:bot-alias/[0-9a-zA-Z]+/[0-9a-zA-Z]+$`
-
-_Maximum_: `78`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocaleId`
-
+`LocaleId`  <a name="cfn-bedrock-flow-lexflownodeconfiguration-localeid"></a>
 The Region to invoke the Amazon Lex bot in.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaFunctionFlowNodeConfiguration
-
-LoopControllerFlowNodeConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

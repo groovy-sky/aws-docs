@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis Entity"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis Entity
+<a name="aws-properties-quicksight-analysis-entity"></a>
 
 An object, structure, or sub-structure of an analysis, template, or dashboard.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-entity-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-entity-syntax.json"></a>
 
-```json
-
+```
 {
-  "Path" : String
+  "[Path](#cfn-quicksight-analysis-entity-path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-entity-syntax.yaml"></a>
 
-```yaml
-
-  Path: String
-
+```
+  [Path](#cfn-quicksight-analysis-entity-path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-entity-properties"></a>
 
-`Path`
-
+`Path`  <a name="cfn-quicksight-analysis-entity-path"></a>
 The hierarchical path of the entity within the analysis, template, or dashboard definition tree.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EmptyVisual
-
-ExcludePeriodConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `\S`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

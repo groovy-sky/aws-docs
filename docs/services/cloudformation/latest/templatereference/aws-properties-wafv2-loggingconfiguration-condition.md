@@ -2,67 +2,51 @@
 title: "AWS::WAFv2::LoggingConfiguration Condition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::LoggingConfiguration Condition
+<a name="aws-properties-wafv2-loggingconfiguration-condition"></a>
 
 A single match condition for a log filter.
 
 ## Syntax
+<a name="aws-properties-wafv2-loggingconfiguration-condition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-loggingconfiguration-condition-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActionCondition" : ActionCondition,
-  "LabelNameCondition" : LabelNameCondition
+  "[ActionCondition](#cfn-wafv2-loggingconfiguration-condition-actioncondition)" : {{ActionCondition}},
+  "[LabelNameCondition](#cfn-wafv2-loggingconfiguration-condition-labelnamecondition)" : {{LabelNameCondition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-loggingconfiguration-condition-syntax.yaml"></a>
 
-```yaml
-
-  ActionCondition:
-    ActionCondition
-  LabelNameCondition:
-    LabelNameCondition
-
+```
+  [ActionCondition](#cfn-wafv2-loggingconfiguration-condition-actioncondition): {{
+    ActionCondition}}
+  [LabelNameCondition](#cfn-wafv2-loggingconfiguration-condition-labelnamecondition): {{
+    LabelNameCondition}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-loggingconfiguration-condition-properties"></a>
 
-`ActionCondition`
-
+`ActionCondition`  <a name="cfn-wafv2-loggingconfiguration-condition-actioncondition"></a>
 A single action condition. This is the action setting that a log record must contain in order to meet the condition.
+*Required*: No
+*Type*: [ActionCondition](aws-properties-wafv2-loggingconfiguration-actioncondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ActionCondition](aws-properties-wafv2-loggingconfiguration-actioncondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LabelNameCondition`
-
-A single label name condition. This is the fully qualified label name that a log record must contain in order to meet the condition.
-Fully qualified labels have a prefix, optional namespaces, and label name. The prefix identifies the rule group or web ACL context of the rule that added the label.
-
-_Required_: No
-
-_Type_: [LabelNameCondition](aws-properties-wafv2-loggingconfiguration-labelnamecondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ActionCondition
-
-FieldToMatch
+`LabelNameCondition`  <a name="cfn-wafv2-loggingconfiguration-condition-labelnamecondition"></a>
+A single label name condition. This is the fully qualified label name that a log record must contain in order to meet the condition. Fully qualified labels have a prefix, optional namespaces, and label name. The prefix identifies the rule group or web ACL context of the rule that added the label.
+*Required*: No
+*Type*: [LabelNameCondition](aws-properties-wafv2-loggingconfiguration-labelnamecondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

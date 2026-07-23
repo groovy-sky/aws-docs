@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Template PluginVisualTableQuerySort"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PluginVisualTableQuerySort
+<a name="aws-properties-quicksight-template-pluginvisualtablequerysort"></a>
 
 The table query sorting options for the plugin visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pluginvisualtablequerysort-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pluginvisualtablequerysort-syntax.json"></a>
 
-```json
-
+```
 {
-  "ItemsLimitConfiguration" : PluginVisualItemsLimitConfiguration,
-  "RowSort" : [ FieldSortOptions, ... ]
+  "[ItemsLimitConfiguration](#cfn-quicksight-template-pluginvisualtablequerysort-itemslimitconfiguration)" : {{PluginVisualItemsLimitConfiguration}},
+  "[RowSort](#cfn-quicksight-template-pluginvisualtablequerysort-rowsort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pluginvisualtablequerysort-syntax.yaml"></a>
 
-```yaml
-
-  ItemsLimitConfiguration:
-    PluginVisualItemsLimitConfiguration
-  RowSort:
-    - FieldSortOptions
-
+```
+  [ItemsLimitConfiguration](#cfn-quicksight-template-pluginvisualtablequerysort-itemslimitconfiguration): {{
+    PluginVisualItemsLimitConfiguration}}
+  [RowSort](#cfn-quicksight-template-pluginvisualtablequerysort-rowsort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pluginvisualtablequerysort-properties"></a>
 
-`ItemsLimitConfiguration`
-
+`ItemsLimitConfiguration`  <a name="cfn-quicksight-template-pluginvisualtablequerysort-itemslimitconfiguration"></a>
 The maximum amount of data to be returned by a query.
+*Required*: No
+*Type*: [PluginVisualItemsLimitConfiguration](aws-properties-quicksight-template-pluginvisualitemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PluginVisualItemsLimitConfiguration](aws-properties-quicksight-template-pluginvisualitemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowSort`
-
+`RowSort`  <a name="cfn-quicksight-template-pluginvisualtablequerysort-rowsort"></a>
 Determines how data is sorted in the response.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginVisualSortConfiguration
-
-PredefinedHierarchy
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

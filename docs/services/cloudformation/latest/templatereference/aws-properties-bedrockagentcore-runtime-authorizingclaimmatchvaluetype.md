@@ -2,67 +2,51 @@
 title: "AWS::BedrockAgentCore::Runtime AuthorizingClaimMatchValueType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime AuthorizingClaimMatchValueType
+<a name="aws-properties-bedrockagentcore-runtime-authorizingclaimmatchvaluetype"></a>
 
 Defines the value or values to match for and the relationship of the match.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClaimMatchOperator" : String,
-  "ClaimMatchValue" : ClaimMatchValueType
+  "[ClaimMatchOperator](#cfn-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-claimmatchoperator)" : {{String}},
+  "[ClaimMatchValue](#cfn-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-claimmatchvalue)" : {{ClaimMatchValueType}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-syntax.yaml"></a>
 
-```yaml
-
-  ClaimMatchOperator: String
-  ClaimMatchValue:
-    ClaimMatchValueType
-
+```
+  [ClaimMatchOperator](#cfn-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-claimmatchoperator): {{String}}
+  [ClaimMatchValue](#cfn-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-claimmatchvalue): {{
+    ClaimMatchValueType}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-properties"></a>
 
-`ClaimMatchOperator`
-
+`ClaimMatchOperator`  <a name="cfn-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-claimmatchoperator"></a>
 Defines the relationship between the claim field value and the value or values you're matching for.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS | CONTAINS | CONTAINS_ANY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS | CONTAINS | CONTAINS_ANY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClaimMatchValue`
-
+`ClaimMatchValue`  <a name="cfn-bedrockagentcore-runtime-authorizingclaimmatchvaluetype-claimmatchvalue"></a>
 The value or values to match for.
-
-_Required_: Yes
-
-_Type_: [ClaimMatchValueType](aws-properties-bedrockagentcore-runtime-claimmatchvaluetype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthorizerConfiguration
-
-ClaimMatchValueType
+*Required*: Yes
+*Type*: [ClaimMatchValueType](aws-properties-bedrockagentcore-runtime-claimmatchvaluetype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

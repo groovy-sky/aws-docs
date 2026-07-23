@@ -2,105 +2,78 @@
 title: "AWS::ConnectCampaignsV2::Campaign CommunicationTimeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign CommunicationTimeConfig
+<a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig"></a>
 
 Communication time configuration for an outbound campaign.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Email" : TimeWindow,
-  "LocalTimeZoneConfig" : LocalTimeZoneConfig,
-  "Sms" : TimeWindow,
-  "Telephony" : TimeWindow,
-  "WhatsApp" : TimeWindow
+  "[Email](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-email)" : {{TimeWindow}},
+  "[LocalTimeZoneConfig](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-localtimezoneconfig)" : {{LocalTimeZoneConfig}},
+  "[Sms](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-sms)" : {{TimeWindow}},
+  "[Telephony](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-telephony)" : {{TimeWindow}},
+  "[WhatsApp](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-whatsapp)" : {{TimeWindow}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig-syntax.yaml"></a>
 
-```yaml
-
-  Email:
-    TimeWindow
-  LocalTimeZoneConfig:
-    LocalTimeZoneConfig
-  Sms:
-    TimeWindow
-  Telephony:
-    TimeWindow
-  WhatsApp:
-    TimeWindow
-
+```
+  [Email](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-email): {{
+    TimeWindow}}
+  [LocalTimeZoneConfig](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-localtimezoneconfig): {{
+    LocalTimeZoneConfig}}
+  [Sms](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-sms): {{
+    TimeWindow}}
+  [Telephony](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-telephony): {{
+    TimeWindow}}
+  [WhatsApp](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-whatsapp): {{
+    TimeWindow}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig-properties"></a>
 
-`Email`
-
+`Email`  <a name="cfn-connectcampaignsv2-campaign-communicationtimeconfig-email"></a>
 The communication time configuration for the email channel subtype.
+*Required*: No
+*Type*: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocalTimeZoneConfig`
-
+`LocalTimeZoneConfig`  <a name="cfn-connectcampaignsv2-campaign-communicationtimeconfig-localtimezoneconfig"></a>
 The local timezone configuration.
+*Required*: Yes
+*Type*: [LocalTimeZoneConfig](aws-properties-connectcampaignsv2-campaign-localtimezoneconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [LocalTimeZoneConfig](aws-properties-connectcampaignsv2-campaign-localtimezoneconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sms`
-
+`Sms`  <a name="cfn-connectcampaignsv2-campaign-communicationtimeconfig-sms"></a>
 The communication time configuration for the SMS channel subtype.
+*Required*: No
+*Type*: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Telephony`
-
+`Telephony`  <a name="cfn-connectcampaignsv2-campaign-communicationtimeconfig-telephony"></a>
 The communication time configuration for the telephony channel subtype.
+*Required*: No
+*Type*: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WhatsApp`
-
+`WhatsApp`  <a name="cfn-connectcampaignsv2-campaign-communicationtimeconfig-whatsapp"></a>
 The communication time configuration for the WhatsApp channel subtype.
-
-_Required_: No
-
-_Type_: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CommunicationLimitsConfig
-
-DailyHour
+*Required*: No
+*Type*: [TimeWindow](aws-properties-connectcampaignsv2-campaign-timewindow.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

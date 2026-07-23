@@ -2,66 +2,50 @@
 title: "AWS::CodeBuild::Fleet TargetTrackingScalingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeBuild::Fleet TargetTrackingScalingConfiguration
+<a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration"></a>
 
 Defines when a new instance is auto-scaled into the compute fleet.
 
 ## Syntax
+<a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MetricType" : String,
-  "TargetValue" : Number
+  "[MetricType](#cfn-codebuild-fleet-targettrackingscalingconfiguration-metrictype)" : {{String}},
+  "[TargetValue](#cfn-codebuild-fleet-targettrackingscalingconfiguration-targetvalue)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MetricType: String
-  TargetValue: Number
-
+```
+  [MetricType](#cfn-codebuild-fleet-targettrackingscalingconfiguration-metrictype): {{String}}
+  [TargetValue](#cfn-codebuild-fleet-targettrackingscalingconfiguration-targetvalue): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration-properties"></a>
 
-`MetricType`
-
+`MetricType`  <a name="cfn-codebuild-fleet-targettrackingscalingconfiguration-metrictype"></a>
 The metric type to determine auto-scaling.
+*Required*: No
+*Type*: String
+*Allowed values*: `FLEET_UTILIZATION_RATE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FLEET_UTILIZATION_RATE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetValue`
-
+`TargetValue`  <a name="cfn-codebuild-fleet-targettrackingscalingconfiguration-targetvalue"></a>
 The value of `metricType` when to start scaling.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-VpcConfig
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

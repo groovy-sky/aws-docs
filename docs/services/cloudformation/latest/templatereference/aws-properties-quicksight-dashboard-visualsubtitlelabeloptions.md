@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Dashboard VisualSubtitleLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard VisualSubtitleLabelOptions
+<a name="aws-properties-quicksight-dashboard-visualsubtitlelabeloptions"></a>
 
 The subtitle label options for a visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-visualsubtitlelabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-visualsubtitlelabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FormatText" : LongFormatText,
-  "Visibility" : String
+  "[FormatText](#cfn-quicksight-dashboard-visualsubtitlelabeloptions-formattext)" : {{LongFormatText}},
+  "[Visibility](#cfn-quicksight-dashboard-visualsubtitlelabeloptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-visualsubtitlelabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  FormatText:
-    LongFormatText
-  Visibility: String
-
+```
+  [FormatText](#cfn-quicksight-dashboard-visualsubtitlelabeloptions-formattext): {{
+    LongFormatText}}
+  [Visibility](#cfn-quicksight-dashboard-visualsubtitlelabeloptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-visualsubtitlelabeloptions-properties"></a>
 
-`FormatText`
-
+`FormatText`  <a name="cfn-quicksight-dashboard-visualsubtitlelabeloptions-formattext"></a>
 The long text format of the subtitle label, such as plain text or rich text.
+*Required*: No
+*Type*: [LongFormatText](aws-properties-quicksight-dashboard-longformattext.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LongFormatText](aws-properties-quicksight-dashboard-longformattext.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-dashboard-visualsubtitlelabeloptions-visibility"></a>
 The visibility of the subtitle label.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VisualPalette
-
-VisualTitleLabelOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

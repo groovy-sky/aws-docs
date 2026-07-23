@@ -2,191 +2,138 @@
 title: "AWS::ServiceCatalog::StackSetConstraint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::StackSetConstraint
+<a name="aws-resource-servicecatalog-stacksetconstraint"></a>
 
 Specifies a StackSet constraint.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-stacksetconstraint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-stacksetconstraint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::StackSetConstraint",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "AccountList" : [ String, ... ],
-      "AdminRole" : String,
-      "Description" : String,
-      "ExecutionRole" : String,
-      "PortfolioId" : String,
-      "ProductId" : String,
-      "RegionList" : [ String, ... ],
-      "StackInstanceControl" : String
+      "[AcceptLanguage](#cfn-servicecatalog-stacksetconstraint-acceptlanguage)" : {{String}},
+      "[AccountList](#cfn-servicecatalog-stacksetconstraint-accountlist)" : {{[ String, ... ]}},
+      "[AdminRole](#cfn-servicecatalog-stacksetconstraint-adminrole)" : {{String}},
+      "[Description](#cfn-servicecatalog-stacksetconstraint-description)" : {{String}},
+      "[ExecutionRole](#cfn-servicecatalog-stacksetconstraint-executionrole)" : {{String}},
+      "[PortfolioId](#cfn-servicecatalog-stacksetconstraint-portfolioid)" : {{String}},
+      "[ProductId](#cfn-servicecatalog-stacksetconstraint-productid)" : {{String}},
+      "[RegionList](#cfn-servicecatalog-stacksetconstraint-regionlist)" : {{[ String, ... ]}},
+      "[StackInstanceControl](#cfn-servicecatalog-stacksetconstraint-stackinstancecontrol)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-stacksetconstraint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::StackSetConstraint
 Properties:
-  AcceptLanguage: String
-  AccountList:
-    - String
-  AdminRole: String
-  Description: String
-  ExecutionRole: String
-  PortfolioId: String
-  ProductId: String
-  RegionList:
-    - String
-  StackInstanceControl: String
-
+  [AcceptLanguage](#cfn-servicecatalog-stacksetconstraint-acceptlanguage): {{String}}
+  [AccountList](#cfn-servicecatalog-stacksetconstraint-accountlist): {{
+    - String}}
+  [AdminRole](#cfn-servicecatalog-stacksetconstraint-adminrole): {{String}}
+  [Description](#cfn-servicecatalog-stacksetconstraint-description): {{String}}
+  [ExecutionRole](#cfn-servicecatalog-stacksetconstraint-executionrole): {{String}}
+  [PortfolioId](#cfn-servicecatalog-stacksetconstraint-portfolioid): {{String}}
+  [ProductId](#cfn-servicecatalog-stacksetconstraint-productid): {{String}}
+  [RegionList](#cfn-servicecatalog-stacksetconstraint-regionlist): {{
+    - String}}
+  [StackInstanceControl](#cfn-servicecatalog-stacksetconstraint-stackinstancecontrol): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-stacksetconstraint-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-stacksetconstraint-acceptlanguage"></a>
 The language code.
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `jp` \- Japanese
-
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AccountList`
-
+`AccountList`  <a name="cfn-servicecatalog-stacksetconstraint-accountlist"></a>
 One or more AWS accounts that will have access to the provisioned product.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdminRole`
-
+`AdminRole`  <a name="cfn-servicecatalog-stacksetconstraint-adminrole"></a>
 AdminRole ARN
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-servicecatalog-stacksetconstraint-description"></a>
 The description of the constraint.
+*Required*: Yes
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExecutionRole`
-
+`ExecutionRole`  <a name="cfn-servicecatalog-stacksetconstraint-executionrole"></a>
 ExecutionRole name
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PortfolioId`
-
+`PortfolioId`  <a name="cfn-servicecatalog-stacksetconstraint-portfolioid"></a>
 The portfolio identifier.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-servicecatalog-stacksetconstraint-productid"></a>
 The product identifier.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RegionList`
-
+`RegionList`  <a name="cfn-servicecatalog-stacksetconstraint-regionlist"></a>
 One or more AWS Regions where the provisioned product will be available.
-
 Applicable only to a `CFN_STACKSET` provisioned product type.
-
 The specified Regions should be within the list of Regions from the `STACKSET` constraint. To get the list of Regions in the `STACKSET` constraint, use the `DescribeProvisioningParameters` operation.
-
 If no values are specified, the default value is all Regions from the `STACKSET` constraint.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StackInstanceControl`
-
+`StackInstanceControl`  <a name="cfn-servicecatalog-stacksetconstraint-stackinstancecontrol"></a>
 Permission to create, update, and delete stack instances. Choose from ALLOWED and NOT\_ALLOWED.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-servicecatalog-stacksetconstraint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-stacksetconstraint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the identifier of the constraint.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::ServiceActionAssociation
-
-AWS::ServiceCatalog::TagOption
+<a name="aws-resource-servicecatalog-stacksetconstraint-return-values-fn--getatt"></a>
 
 All content copied from https://docs.aws.amazon.com/.

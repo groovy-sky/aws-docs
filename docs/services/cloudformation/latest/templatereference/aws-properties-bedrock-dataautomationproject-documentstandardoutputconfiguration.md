@@ -2,79 +2,60 @@
 title: "AWS::Bedrock::DataAutomationProject DocumentStandardOutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject DocumentStandardOutputConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration"></a>
 
 Output settings for processing documents.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Extraction" : DocumentStandardExtraction,
-  "GenerativeField" : DocumentStandardGenerativeField,
-  "OutputFormat" : DocumentOutputFormat
+  "[Extraction](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-extraction)" : {{DocumentStandardExtraction}},
+  "[GenerativeField](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-generativefield)" : {{DocumentStandardGenerativeField}},
+  "[OutputFormat](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-outputformat)" : {{DocumentOutputFormat}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Extraction:
-    DocumentStandardExtraction
-  GenerativeField:
-    DocumentStandardGenerativeField
-  OutputFormat:
-    DocumentOutputFormat
-
+```
+  [Extraction](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-extraction): {{
+    DocumentStandardExtraction}}
+  [GenerativeField](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-generativefield): {{
+    DocumentStandardGenerativeField}}
+  [OutputFormat](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-outputformat): {{
+    DocumentOutputFormat}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration-properties"></a>
 
-`Extraction`
-
+`Extraction`  <a name="cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-extraction"></a>
 Settings for populating data fields that describe the document.
+*Required*: No
+*Type*: [DocumentStandardExtraction](aws-properties-bedrock-dataautomationproject-documentstandardextraction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DocumentStandardExtraction](aws-properties-bedrock-dataautomationproject-documentstandardextraction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GenerativeField`
-
+`GenerativeField`  <a name="cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-generativefield"></a>
 Whether to generate descriptions.
+*Required*: No
+*Type*: [DocumentStandardGenerativeField](aws-properties-bedrock-dataautomationproject-documentstandardgenerativefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DocumentStandardGenerativeField](aws-properties-bedrock-dataautomationproject-documentstandardgenerativefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputFormat`
-
+`OutputFormat`  <a name="cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-outputformat"></a>
 The output format to generate.
-
-_Required_: No
-
-_Type_: [DocumentOutputFormat](aws-properties-bedrock-dataautomationproject-documentoutputformat.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentStandardGenerativeField
-
-ImageBoundingBox
+*Required*: No
+*Type*: [DocumentOutputFormat](aws-properties-bedrock-dataautomationproject-documentoutputformat.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

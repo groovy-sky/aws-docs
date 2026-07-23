@@ -2,94 +2,67 @@
 title: "AWS::MediaPackage::PackagingConfiguration SpekeKeyProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration SpekeKeyProvider
+<a name="aws-properties-mediapackage-packagingconfiguration-spekekeyprovider"></a>
 
-A configuration for accessing an external Secure Packager and Encoder Key Exchange
-(SPEKE) service that provides encryption keys.
+A configuration for accessing an external Secure Packager and Encoder Key Exchange (SPEKE) service that provides encryption keys.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packagingconfiguration-spekekeyprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packagingconfiguration-spekekeyprovider-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionContractConfiguration" : EncryptionContractConfiguration,
-  "RoleArn" : String,
-  "SystemIds" : [ String, ... ],
-  "Url" : String
+  "[EncryptionContractConfiguration](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-encryptioncontractconfiguration)" : {{EncryptionContractConfiguration}},
+  "[RoleArn](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-rolearn)" : {{String}},
+  "[SystemIds](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-systemids)" : {{[ String, ... ]}},
+  "[Url](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-url)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packagingconfiguration-spekekeyprovider-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionContractConfiguration:
-    EncryptionContractConfiguration
-  RoleArn: String
-  SystemIds:
-    - String
-  Url: String
-
+```
+  [EncryptionContractConfiguration](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-encryptioncontractconfiguration): {{
+    EncryptionContractConfiguration}}
+  [RoleArn](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-rolearn): {{String}}
+  [SystemIds](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-systemids): {{
+    - String}}
+  [Url](#cfn-mediapackage-packagingconfiguration-spekekeyprovider-url): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packagingconfiguration-spekekeyprovider-properties"></a>
 
-`EncryptionContractConfiguration`
+`EncryptionContractConfiguration`  <a name="cfn-mediapackage-packagingconfiguration-spekekeyprovider-encryptioncontractconfiguration"></a>
+Use `encryptionContractConfiguration` to configure one or more content encryption keys for your endpoints that use SPEKE Version 2.0. The encryption contract defines which content keys are used to encrypt the audio and video tracks in your stream. To configure the encryption contract, specify which audio and video encryption presets to use.
+*Required*: No
+*Type*: [EncryptionContractConfiguration](aws-properties-mediapackage-packagingconfiguration-encryptioncontractconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Use `encryptionContractConfiguration` to configure one or more content encryption keys for your
-endpoints that use SPEKE Version 2.0. The encryption contract defines which content keys are used to encrypt the
-audio and video tracks in your stream. To configure the encryption contract, specify which audio and video encryption presets to use.
+`RoleArn`  <a name="cfn-mediapackage-packagingconfiguration-spekekeyprovider-rolearn"></a>
+The ARN for the IAM role that's granted by the key provider to provide access to the key provider API. Valid format: arn:aws:iam::{accountID}:role/{name}
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EncryptionContractConfiguration](aws-properties-mediapackage-packagingconfiguration-encryptioncontractconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The ARN for the IAM role that's granted by the key provider to provide access
-to the key provider API. Valid format: arn:aws:iam::{accountID}:role/{name}
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SystemIds`
-
+`SystemIds`  <a name="cfn-mediapackage-packagingconfiguration-spekekeyprovider-systemids"></a>
 List of unique identifiers for the DRM systems to use, as defined in the CPIX specification.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Url`
-
+`Url`  <a name="cfn-mediapackage-packagingconfiguration-spekekeyprovider-url"></a>
 URL for the key provider's key retrieval API endpoint. Must start with https://.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MssPackage
-
-StreamSelection
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

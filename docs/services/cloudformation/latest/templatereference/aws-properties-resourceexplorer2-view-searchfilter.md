@@ -2,70 +2,46 @@
 title: "AWS::ResourceExplorer2::View SearchFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResourceExplorer2::View SearchFilter
+<a name="aws-properties-resourceexplorer2-view-searchfilter"></a>
 
-A search filter defines which resources can be part of a search query result
-set.
+A search filter defines which resources can be part of a search query result set.
 
 ## Syntax
+<a name="aws-properties-resourceexplorer2-view-searchfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-resourceexplorer2-view-searchfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "FilterString" : String
+  "[FilterString](#cfn-resourceexplorer2-view-searchfilter-filterstring)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-resourceexplorer2-view-searchfilter-syntax.yaml"></a>
 
-```yaml
-
-  FilterString:
-    String
-
+```
+  [FilterString](#cfn-resourceexplorer2-view-searchfilter-filterstring): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-resourceexplorer2-view-searchfilter-properties"></a>
 
-`FilterString`
-
-The string that contains the search keywords, prefixes, and operators to control the
-results that can be returned by a Search operation.
-
-For information about the supported syntax, see [Search query\
-reference](../../../resource-explorer/latest/userguide/using-search-query-syntax.md) in the _AWS Resource Explorer User_
-_Guide_.
-
-###### Important
-
-This query string in the context of this operation supports only [filter prefixes](../../../resource-explorer/latest/userguide/using-search-query-syntax.md#query-syntax-filters) with optional [operators](../../../resource-explorer/latest/userguide/using-search-query-syntax.md#query-syntax-operators). It doesn't support free-form text. For example, the string
-`region:us* service:ec2 -tag:stage=prod` includes all Amazon EC2 resources in any AWS Region that begin with the
-letters `us` and are _not_ tagged with a key
-`Stage` that has the value `prod`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IncludedProperty
-
-Next
+`FilterString`  <a name="cfn-resourceexplorer2-view-searchfilter-filterstring"></a>
+The string that contains the search keywords, prefixes, and operators to control the results that can be returned by a Search operation.
+For information about the supported syntax, see [Search query reference](https://docs.aws.amazon.com/resource-explorer/latest/userguide/using-search-query-syntax.html) in the *AWS Resource Explorer User Guide*.
+This query string in the context of this operation supports only [filter prefixes](https://docs.aws.amazon.com/resource-explorer/latest/userguide/using-search-query-syntax.html#query-syntax-filters) with optional [operators](https://docs.aws.amazon.com/resource-explorer/latest/userguide/using-search-query-syntax.html#query-syntax-operators). It doesn't support free-form text. For example, the string `region:us* service:ec2 -tag:stage=prod` includes all Amazon EC2 resources in any AWS Region that begin with the letters `us` and are *not* tagged with a key `Stage` that has the value `prod`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

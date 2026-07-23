@@ -2,69 +2,52 @@
 title: "AWS::QuickSight::Dashboard TableCellConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TableCellConditionalFormatting
+<a name="aws-properties-quicksight-dashboard-tablecellconditionalformatting"></a>
 
 The cell conditional formatting option for a table.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-tablecellconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-tablecellconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String,
-  "TextFormat" : TextConditionalFormat
+  "[FieldId](#cfn-quicksight-dashboard-tablecellconditionalformatting-fieldid)" : {{String}},
+  "[TextFormat](#cfn-quicksight-dashboard-tablecellconditionalformatting-textformat)" : {{TextConditionalFormat}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-tablecellconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-  TextFormat:
-    TextConditionalFormat
-
+```
+  [FieldId](#cfn-quicksight-dashboard-tablecellconditionalformatting-fieldid): {{String}}
+  [TextFormat](#cfn-quicksight-dashboard-tablecellconditionalformatting-textformat): {{
+    TextConditionalFormat}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-tablecellconditionalformatting-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-dashboard-tablecellconditionalformatting-fieldid"></a>
 The field ID of the cell for conditional formatting.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextFormat`
-
+`TextFormat`  <a name="cfn-quicksight-dashboard-tablecellconditionalformatting-textformat"></a>
 The text format of the cell for conditional formatting.
-
-_Required_: No
-
-_Type_: [TextConditionalFormat](aws-properties-quicksight-dashboard-textconditionalformat.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableBorderOptions
-
-TableCellImageSizingConfiguration
+*Required*: No
+*Type*: [TextConditionalFormat](aws-properties-quicksight-dashboard-textconditionalformat.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

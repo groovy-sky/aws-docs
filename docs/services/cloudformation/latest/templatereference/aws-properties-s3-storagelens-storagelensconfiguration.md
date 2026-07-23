@@ -2,180 +2,122 @@
 title: "AWS::S3::StorageLens StorageLensConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens StorageLensConfiguration
+<a name="aws-properties-s3-storagelens-storagelensconfiguration"></a>
 
 This is the property of the Amazon S3 Storage Lens configuration.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-storagelensconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-storagelensconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountLevel" : AccountLevel,
-  "AwsOrg" : AwsOrg,
-  "DataExport" : DataExport,
-  "Exclude" : BucketsAndRegions,
-  "ExpandedPrefixesDataExport" : StorageLensExpandedPrefixesDataExport,
-  "Id" : String,
-  "Include" : BucketsAndRegions,
-  "IsEnabled" : Boolean,
-  "PrefixDelimiter" : String,
-  "StorageLensArn" : String
+  "[AccountLevel](#cfn-s3-storagelens-storagelensconfiguration-accountlevel)" : {{AccountLevel}},
+  "[AwsOrg](#cfn-s3-storagelens-storagelensconfiguration-awsorg)" : {{AwsOrg}},
+  "[DataExport](#cfn-s3-storagelens-storagelensconfiguration-dataexport)" : {{DataExport}},
+  "[Exclude](#cfn-s3-storagelens-storagelensconfiguration-exclude)" : {{BucketsAndRegions}},
+  "[ExpandedPrefixesDataExport](#cfn-s3-storagelens-storagelensconfiguration-expandedprefixesdataexport)" : {{StorageLensExpandedPrefixesDataExport}},
+  "[Id](#cfn-s3-storagelens-storagelensconfiguration-id)" : {{String}},
+  "[Include](#cfn-s3-storagelens-storagelensconfiguration-include)" : {{BucketsAndRegions}},
+  "[IsEnabled](#cfn-s3-storagelens-storagelensconfiguration-isenabled)" : {{Boolean}},
+  "[PrefixDelimiter](#cfn-s3-storagelens-storagelensconfiguration-prefixdelimiter)" : {{String}},
+  "[StorageLensArn](#cfn-s3-storagelens-storagelensconfiguration-storagelensarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-storagelensconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AccountLevel:
-    AccountLevel
-  AwsOrg:
-    AwsOrg
-  DataExport:
-    DataExport
-  Exclude:
-    BucketsAndRegions
-  ExpandedPrefixesDataExport:
-    StorageLensExpandedPrefixesDataExport
-  Id: String
-  Include:
-    BucketsAndRegions
-  IsEnabled: Boolean
-  PrefixDelimiter: String
-  StorageLensArn: String
-
+```
+  [AccountLevel](#cfn-s3-storagelens-storagelensconfiguration-accountlevel): {{
+    AccountLevel}}
+  [AwsOrg](#cfn-s3-storagelens-storagelensconfiguration-awsorg): {{
+    AwsOrg}}
+  [DataExport](#cfn-s3-storagelens-storagelensconfiguration-dataexport): {{
+    DataExport}}
+  [Exclude](#cfn-s3-storagelens-storagelensconfiguration-exclude): {{
+    BucketsAndRegions}}
+  [ExpandedPrefixesDataExport](#cfn-s3-storagelens-storagelensconfiguration-expandedprefixesdataexport): {{
+    StorageLensExpandedPrefixesDataExport}}
+  [Id](#cfn-s3-storagelens-storagelensconfiguration-id): {{String}}
+  [Include](#cfn-s3-storagelens-storagelensconfiguration-include): {{
+    BucketsAndRegions}}
+  [IsEnabled](#cfn-s3-storagelens-storagelensconfiguration-isenabled): {{Boolean}}
+  [PrefixDelimiter](#cfn-s3-storagelens-storagelensconfiguration-prefixdelimiter): {{String}}
+  [StorageLensArn](#cfn-s3-storagelens-storagelensconfiguration-storagelensarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-storagelensconfiguration-properties"></a>
 
-`AccountLevel`
+`AccountLevel`  <a name="cfn-s3-storagelens-storagelensconfiguration-accountlevel"></a>
+This property contains the details of the account-level metrics for Amazon S3 Storage Lens configuration.
+*Required*: Yes
+*Type*: [AccountLevel](aws-properties-s3-storagelens-accountlevel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This property contains the details of the account-level metrics for Amazon S3 Storage Lens
-configuration.
+`AwsOrg`  <a name="cfn-s3-storagelens-storagelensconfiguration-awsorg"></a>
+This property contains the details of the AWS Organization for the S3 Storage Lens configuration.
+*Required*: No
+*Type*: [AwsOrg](aws-properties-s3-storagelens-awsorg.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`DataExport`  <a name="cfn-s3-storagelens-storagelensconfiguration-dataexport"></a>
+This property contains the details of this S3 Storage Lens configuration's metrics export.
+*Required*: No
+*Type*: [DataExport](aws-properties-s3-storagelens-dataexport.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AccountLevel](aws-properties-s3-storagelens-accountlevel.md)
+`Exclude`  <a name="cfn-s3-storagelens-storagelensconfiguration-exclude"></a>
+This property contains the details of the bucket and or Regions excluded for Amazon S3 Storage Lens configuration.
+*Required*: No
+*Type*: [BucketsAndRegions](aws-properties-s3-storagelens-bucketsandregions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ExpandedPrefixesDataExport`  <a name="cfn-s3-storagelens-storagelensconfiguration-expandedprefixesdataexport"></a>
+This property configures your S3 Storage Lens expanded prefixes metrics report.
+*Required*: No
+*Type*: [StorageLensExpandedPrefixesDataExport](aws-properties-s3-storagelens-storagelensexpandedprefixesdataexport.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`AwsOrg`
-
-This property contains the details of the AWS Organization for the S3
-Storage Lens configuration.
-
-_Required_: No
-
-_Type_: [AwsOrg](aws-properties-s3-storagelens-awsorg.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataExport`
-
-This property contains the details of this S3 Storage Lens configuration's metrics
-export.
-
-_Required_: No
-
-_Type_: [DataExport](aws-properties-s3-storagelens-dataexport.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Exclude`
-
-This property contains the details of the bucket and or Regions excluded for Amazon S3
-Storage Lens configuration.
-
-_Required_: No
-
-_Type_: [BucketsAndRegions](aws-properties-s3-storagelens-bucketsandregions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExpandedPrefixesDataExport`
-
-This property configures your S3 Storage Lens expanded prefixes metrics
-report.
-
-_Required_: No
-
-_Type_: [StorageLensExpandedPrefixesDataExport](aws-properties-s3-storagelens-storagelensexpandedprefixesdataexport.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-s3-storagelens-storagelensconfiguration-id"></a>
 This property contains the details of the ID of the S3 Storage Lens configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-_.]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Include`  <a name="cfn-s3-storagelens-storagelensconfiguration-include"></a>
+This property contains the details of the bucket and or Regions included for Amazon S3 Storage Lens configuration.
+*Required*: No
+*Type*: [BucketsAndRegions](aws-properties-s3-storagelens-bucketsandregions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`IsEnabled`  <a name="cfn-s3-storagelens-storagelensconfiguration-isenabled"></a>
+This property contains the details of whether the Amazon S3 Storage Lens configuration is enabled.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[a-zA-Z0-9\-_.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Include`
-
-This property contains the details of the bucket and or Regions included for Amazon S3
-Storage Lens configuration.
-
-_Required_: No
-
-_Type_: [BucketsAndRegions](aws-properties-s3-storagelens-bucketsandregions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsEnabled`
-
-This property contains the details of whether the Amazon S3 Storage Lens configuration is
-enabled.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrefixDelimiter`
-
+`PrefixDelimiter`  <a name="cfn-s3-storagelens-storagelensconfiguration-prefixdelimiter"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageLensArn`
-
-This property contains the details of the ARN of the S3 Storage Lens configuration. This
-property is read-only.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SSEKMS
-
-StorageLensExpandedPrefixesDataExport
+`StorageLensArn`  <a name="cfn-s3-storagelens-storagelensconfiguration-storagelensarn"></a>
+This property contains the details of the ARN of the S3 Storage Lens configuration. This property is read-only.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

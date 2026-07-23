@@ -2,110 +2,102 @@
 title: "AWS::XRay::SamplingRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::SamplingRule
+<a name="aws-resource-xray-samplingrule"></a>
 
-Use the `AWS::XRay::SamplingRule` resource to specify a sampling rule, which controls sampling behavior for instrumented applications.
-Include a `SamplingRule` entity to create or update a sampling rule.
+Use the `AWS::XRay::SamplingRule` resource to specify a sampling rule, which controls sampling behavior for instrumented applications. Include a `SamplingRule` entity to create or update a sampling rule.
 
-###### Note
+**Note**
+`SamplingRule.Version` can only be set when creating a sampling rule. Updating the version will cause the update to fail.
 
-`SamplingRule.Version` can only be set when creating a sampling rule. Updating the version
-will cause the update to fail.
-
-Services retrieve rules with [GetSamplingRules](../../../xray/latest/api/api-getsamplingrules.md), and evaluate each rule in ascending
-order of _priority_ for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service
-reports back to X-Ray with [GetSamplingTargets](../../../xray/latest/api/api-getsamplingtargets.md) to get updated versions of
-each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
+Services retrieve rules with [GetSamplingRules](https://docs.aws.amazon.com//xray/latest/api/API_GetSamplingRules.html), and evaluate each rule in ascending order of *priority* for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with [GetSamplingTargets](https://docs.aws.amazon.com//xray/latest/api/API_GetSamplingTargets.html) to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
 
 ## Syntax
+<a name="aws-resource-xray-samplingrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-xray-samplingrule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::XRay::SamplingRule",
   "Properties" : {
-      "SamplingRule" : SamplingRule,
-      "Tags" : [ Tag, ... ]
+      "[SamplingRule](#cfn-xray-samplingrule-samplingrule)" : {{SamplingRule}},
+      "[Tags](#cfn-xray-samplingrule-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-xray-samplingrule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::XRay::SamplingRule
 Properties:
-  SamplingRule:
-    SamplingRule
-  Tags:
-    - Tag
-
+  [SamplingRule](#cfn-xray-samplingrule-samplingrule): {{
+    SamplingRule}}
+  [Tags](#cfn-xray-samplingrule-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-xray-samplingrule-properties"></a>
 
-`SamplingRule`
-
+`SamplingRule`  <a name="cfn-xray-samplingrule-samplingrule"></a>
 The sampling rule to be created or updated.
+*Required*: No
+*Type*: [SamplingRule](aws-properties-xray-samplingrule-samplingrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SamplingRule](aws-properties-xray-samplingrule-samplingrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-xray-samplingrule-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-xray-samplingrule-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-xray-samplingrule-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-xray-samplingrule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-xray-samplingrule-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the sampling rule.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-xray-samplingrule-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RuleARN`
+####
+<a name="aws-resource-xray-samplingrule-return-values-fn--getatt-fn--getatt"></a>
 
+`RuleARN`  <a name="RuleARN-fn::getatt"></a>
 The sampling rule ARN that was created or updated.
 
 ## Examples
+<a name="aws-resource-xray-samplingrule--examples"></a>
 
-- [Create sampling rule](#aws-resource-xray-samplingrule--examples--Create_sampling_rule)
-
-- [Update sampling rule](#aws-resource-xray-samplingrule--examples--Update_sampling_rule)
+**Topics**
++ [Create sampling rule](#aws-resource-xray-samplingrule--examples--Create_sampling_rule)
++ [Update sampling rule](#aws-resource-xray-samplingrule--examples--Update_sampling_rule)
 
 ### Create sampling rule
+<a name="aws-resource-xray-samplingrule--examples--Create_sampling_rule"></a>
 
 This example creates a new sampling rule called MySamplingRule.
 
 #### JSON
+<a name="aws-resource-xray-samplingrule--examples--Create_sampling_rule--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09T00:00:00.000Z",
    "Resources": {
@@ -129,13 +121,12 @@ This example creates a new sampling rule called MySamplingRule.
       }
    }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-xray-samplingrule--examples--Create_sampling_rule--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
    MySamplingRuleResource:
@@ -153,17 +144,17 @@ Resources:
             HTTPMethod: "GET"
             URLPath: "*"
             Version: 1
-
 ```
 
 ### Update sampling rule
+<a name="aws-resource-xray-samplingrule--examples--Update_sampling_rule"></a>
 
 This example updates an existing sampling rule called MySamplingRule.
 
 #### JSON
+<a name="aws-resource-xray-samplingrule--examples--Update_sampling_rule--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09T00:00:00.000Z",
    "Resources": {
@@ -186,13 +177,12 @@ This example updates an existing sampling rule called MySamplingRule.
       }
    }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-xray-samplingrule--examples--Update_sampling_rule--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
    MySamplingRuleResource:
@@ -209,21 +199,12 @@ Resources:
             Host: "MyHost"
             HTTPMethod: "GET"
             URLPath: "*"
-
 ```
 
 ## See also
-
-- [Configuring sampling rules in the X-Ray console](../../../xray/latest/devguide/xray-console-sampling.md)
-
-- [Using sampling rules with the X-Ray API](../../../xray/latest/devguide/xray-api-sampling.md)
-
-- [CreateSamplingRule](../../../xray/latest/api/api-createsamplingrule.md) action in the X-Ray API Reference
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::XRay::ResourcePolicy
-
-SamplingRateBoost
+<a name="aws-resource-xray-samplingrule--seealso"></a>
++  [Configuring sampling rules in the X-Ray console](https://docs.aws.amazon.com//xray/latest/devguide/xray-console-sampling.html)
++  [Using sampling rules with the X-Ray API](https://docs.aws.amazon.com//xray/latest/devguide/xray-api-sampling.html)
++ [CreateSamplingRule](https://docs.aws.amazon.com//xray/latest/api/API_CreateSamplingRule.html) action in the X-Ray API Reference
 
 All content copied from https://docs.aws.amazon.com/.

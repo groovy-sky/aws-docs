@@ -2,68 +2,51 @@
 title: "AWS::QuickSight::Dashboard GaugeChartColorConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GaugeChartColorConfiguration
+<a name="aws-properties-quicksight-dashboard-gaugechartcolorconfiguration"></a>
 
 The color configuration of a `GaugeChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-gaugechartcolorconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-gaugechartcolorconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackgroundColor" : String,
-  "ForegroundColor" : String
+  "[BackgroundColor](#cfn-quicksight-dashboard-gaugechartcolorconfiguration-backgroundcolor)" : {{String}},
+  "[ForegroundColor](#cfn-quicksight-dashboard-gaugechartcolorconfiguration-foregroundcolor)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-gaugechartcolorconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BackgroundColor: String
-  ForegroundColor: String
-
+```
+  [BackgroundColor](#cfn-quicksight-dashboard-gaugechartcolorconfiguration-backgroundcolor): {{String}}
+  [ForegroundColor](#cfn-quicksight-dashboard-gaugechartcolorconfiguration-foregroundcolor): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-gaugechartcolorconfiguration-properties"></a>
 
-`BackgroundColor`
-
+`BackgroundColor`  <a name="cfn-quicksight-dashboard-gaugechartcolorconfiguration-backgroundcolor"></a>
 The background color configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForegroundColor`
-
+`ForegroundColor`  <a name="cfn-quicksight-dashboard-gaugechartcolorconfiguration-foregroundcolor"></a>
 The foreground color configuration of a `GaugeChartVisual`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GaugeChartArcConditionalFormatting
-
-GaugeChartConditionalFormatting
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

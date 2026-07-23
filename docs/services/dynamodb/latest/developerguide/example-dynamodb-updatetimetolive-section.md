@@ -1,36 +1,30 @@
 ---
-title: "Use UpdateTimeToLive with an AWS SDK or CLI"
+title: "Use `UpdateTimeToLive` with an AWS SDK or CLI"
 ---
 
 # Use `UpdateTimeToLive` with an AWS SDK or CLI
+<a name="example_dynamodb_UpdateTimeToLive_section"></a>
 
 The following code examples show how to use `UpdateTimeToLive`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in
-context in the following code example:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Work with Streams and Time-to-Live](example_dynamodb_Scenario_StreamsAndTTL_section.md)
 
-- [Work with Streams and Time-to-Live](example-dynamodb-scenario-streamsandttl-section.md)
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **To update Time to Live settings on a table**
-
 The following `update-time-to-live` example enables Time to Live on the specified table.
 
-```nohighlight
-
-aws dynamodb update-time-to-live \
-    --table-name MusicCollection \
-    --time-to-live-specification Enabled=true,AttributeName=ttl
-
 ```
-
+aws dynamodb update-time-to-live \
+    --table-name {{MusicCollection}} \
+    --time-to-live-specification {{Enabled=true,AttributeName=ttl}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TimeToLiveSpecification": {
         "Enabled": true,
@@ -38,21 +32,16 @@ Output:
     }
 }
 ```
+For more information, see [Time to Live](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [UpdateTimeToLive](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/update-time-to-live.html) in *AWS CLI Command Reference*.
 
-For more information, see [Time to Live](ttl.md) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[UpdateTimeToLive](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/update-time-to-live.html)
-in _AWS CLI Command Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
 Enable TTL on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -87,13 +76,10 @@ import java.util.logging.Logger;
             throw e;
         }
     }
-
 ```
-
 Disable TTL on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -129,21 +115,16 @@ import java.util.logging.Logger;
             throw e;
         }
     }
-
 ```
++  For API details, see [UpdateTimeToLive](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTimeToLive) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[UpdateTimeToLive](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTimeToLive)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
-
 Enable TTL on an existing DynamoDB table.
 
-```javascript
-
+```
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const enableTTL = async (tableName, ttlAttribute, region = 'us-east-1') => {
@@ -177,13 +158,10 @@ export const enableTTL = async (tableName, ttlAttribute, region = 'us-east-1') =
 
 // Example usage (commented out for testing)
 // enableTTL('ExampleTable', 'exampleTtlAttribute');
-
 ```
-
 Disable TTL on an existing DynamoDB table.
 
-```javascript
-
+```
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const disableTTL = async (tableName, ttlAttribute, region = 'us-east-1') => {
@@ -217,21 +195,16 @@ export const disableTTL = async (tableName, ttlAttribute, region = 'us-east-1') 
 
 // Example usage (commented out for testing)
 // disableTTL('ExampleTable', 'exampleTtlAttribute');
-
 ```
++  For API details, see [UpdateTimeToLive](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateTimeToLiveCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[UpdateTimeToLive](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateTimeToLiveCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
 Enable TTL on an existing DynamoDB table.
 
-```python
-
+```
 import boto3
 
 def enable_ttl(table_name, ttl_attribute_name):
@@ -266,13 +239,10 @@ def enable_ttl(table_name, ttl_attribute_name):
 
 # your values
 enable_ttl("your-table-name", "expireAt")
-
 ```
-
 Disable TTL on an existing DynamoDB table.
 
-```python
-
+```
 import boto3
 
 def disable_ttl(table_name, ttl_attribute_name):
@@ -306,21 +276,11 @@ def disable_ttl(table_name, ttl_attribute_name):
 
 # your values
 disable_ttl("your-table-name", "expireAt")
-
 ```
++  For API details, see [UpdateTimeToLive](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateTimeToLive) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[UpdateTimeToLive](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateTimeToLive)
-in _AWS SDK for Python (Boto3) API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateTable
-
-Scenarios
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

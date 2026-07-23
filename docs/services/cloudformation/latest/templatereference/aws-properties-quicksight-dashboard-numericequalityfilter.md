@@ -2,177 +2,121 @@
 title: "AWS::QuickSight::Dashboard NumericEqualityFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard NumericEqualityFilter
+<a name="aws-properties-quicksight-dashboard-numericequalityfilter"></a>
 
 A `NumericEqualityFilter` filters values that are equal to the specified value.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-numericequalityfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-numericequalityfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationFunction" : AggregationFunction,
-  "Column" : ColumnIdentifier,
-  "DefaultFilterControlConfiguration" : DefaultFilterControlConfiguration,
-  "FilterId" : String,
-  "MatchOperator" : String,
-  "NullOption" : String,
-  "ParameterName" : String,
-  "SelectAllOptions" : String,
-  "Value" : Number
+  "[AggregationFunction](#cfn-quicksight-dashboard-numericequalityfilter-aggregationfunction)" : {{AggregationFunction}},
+  "[Column](#cfn-quicksight-dashboard-numericequalityfilter-column)" : {{ColumnIdentifier}},
+  "[DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-numericequalityfilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
+  "[FilterId](#cfn-quicksight-dashboard-numericequalityfilter-filterid)" : {{String}},
+  "[MatchOperator](#cfn-quicksight-dashboard-numericequalityfilter-matchoperator)" : {{String}},
+  "[NullOption](#cfn-quicksight-dashboard-numericequalityfilter-nulloption)" : {{String}},
+  "[ParameterName](#cfn-quicksight-dashboard-numericequalityfilter-parametername)" : {{String}},
+  "[SelectAllOptions](#cfn-quicksight-dashboard-numericequalityfilter-selectalloptions)" : {{String}},
+  "[Value](#cfn-quicksight-dashboard-numericequalityfilter-value)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-numericequalityfilter-syntax.yaml"></a>
 
-```yaml
-
-  AggregationFunction:
-    AggregationFunction
-  Column:
-    ColumnIdentifier
-  DefaultFilterControlConfiguration:
-    DefaultFilterControlConfiguration
-  FilterId: String
-  MatchOperator: String
-  NullOption: String
-  ParameterName: String
-  SelectAllOptions: String
-  Value: Number
-
+```
+  [AggregationFunction](#cfn-quicksight-dashboard-numericequalityfilter-aggregationfunction): {{
+    AggregationFunction}}
+  [Column](#cfn-quicksight-dashboard-numericequalityfilter-column): {{
+    ColumnIdentifier}}
+  [DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-numericequalityfilter-defaultfiltercontrolconfiguration): {{
+    DefaultFilterControlConfiguration}}
+  [FilterId](#cfn-quicksight-dashboard-numericequalityfilter-filterid): {{String}}
+  [MatchOperator](#cfn-quicksight-dashboard-numericequalityfilter-matchoperator): {{String}}
+  [NullOption](#cfn-quicksight-dashboard-numericequalityfilter-nulloption): {{String}}
+  [ParameterName](#cfn-quicksight-dashboard-numericequalityfilter-parametername): {{String}}
+  [SelectAllOptions](#cfn-quicksight-dashboard-numericequalityfilter-selectalloptions): {{String}}
+  [Value](#cfn-quicksight-dashboard-numericequalityfilter-value): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-numericequalityfilter-properties"></a>
 
-`AggregationFunction`
-
+`AggregationFunction`  <a name="cfn-quicksight-dashboard-numericequalityfilter-aggregationfunction"></a>
 The aggregation function of the filter.
+*Required*: No
+*Type*: [AggregationFunction](aws-properties-quicksight-dashboard-aggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AggregationFunction](aws-properties-quicksight-dashboard-aggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-dashboard-numericequalityfilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultFilterControlConfiguration`
-
+`DefaultFilterControlConfiguration`  <a name="cfn-quicksight-dashboard-numericequalityfilter-defaultfiltercontrolconfiguration"></a>
 The default configurations for the associated controls. This applies only for filters that are scoped to multiple sheets.
+*Required*: No
+*Type*: [DefaultFilterControlConfiguration](aws-properties-quicksight-dashboard-defaultfiltercontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterControlConfiguration](aws-properties-quicksight-dashboard-defaultfiltercontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterId`
-
+`FilterId`  <a name="cfn-quicksight-dashboard-numericequalityfilter-filterid"></a>
 An identifier that uniquely identifies a filter within a dashboard, analysis, or template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchOperator`
-
+`MatchOperator`  <a name="cfn-quicksight-dashboard-numericequalityfilter-matchoperator"></a>
 The match operator that is used to determine if a filter should be applied.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS | DOES_NOT_EQUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS | DOES_NOT_EQUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullOption`
-
+`NullOption`  <a name="cfn-quicksight-dashboard-numericequalityfilter-nulloption"></a>
 This option determines how null values should be treated when filtering data.
++ `ALL_VALUES`: Include null values in filtered results.
++ `NULLS_ONLY`: Only include null values in filtered results.
++ `NON_NULLS_ONLY`: Exclude null values from filtered results.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_VALUES`: Include null values in filtered results.
-
-- `NULLS_ONLY`: Only include null values in filtered results.
-
-- `NON_NULLS_ONLY`: Exclude null values from filtered results.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterName`
-
+`ParameterName`  <a name="cfn-quicksight-dashboard-numericequalityfilter-parametername"></a>
 The parameter whose value should be used for the filter value.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectAllOptions`
-
+`SelectAllOptions`  <a name="cfn-quicksight-dashboard-numericequalityfilter-selectalloptions"></a>
 Select all of the values. Null is not the assigned value of select all.
++  `FILTER_ALL_VALUES`
+*Required*: No
+*Type*: String
+*Allowed values*: `FILTER_ALL_VALUES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `FILTER_ALL_VALUES`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FILTER_ALL_VALUES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-quicksight-dashboard-numericequalityfilter-value"></a>
 The input value.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NumericEqualityDrillDownFilter
-
-NumericFormatConfiguration
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,70 +2,50 @@
 title: "AWS::IoTSiteWise::Gateway GreengrassV2"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::Gateway GreengrassV2
+<a name="aws-properties-iotsitewise-gateway-greengrassv2"></a>
 
-Contains details for a gateway that runs on AWS IoT Greengrass V2. To create a gateway that runs on AWS IoT Greengrass V2,
-you must deploy the IoT SiteWise Edge component to your gateway device. Your [Greengrass\
-device role](../../../greengrass/v2/developerguide/device-service-role.md) must use the `AWSIoTSiteWiseEdgeAccess` policy. For more
-information, see [Using AWS IoT SiteWise at the edge](../../../iot-sitewise/latest/userguide/sw-gateways.md) in the
-_AWS IoT SiteWise User Guide_.
+Contains details for a gateway that runs on AWS IoT Greengrass V2. To create a gateway that runs on AWS IoT Greengrass V2, you must deploy the IoT SiteWise Edge component to your gateway device. Your [Greengrass device role](https://docs.aws.amazon.com/greengrass/v2/developerguide/device-service-role.html) must use the `AWSIoTSiteWiseEdgeAccess` policy. For more information, see [Using AWS IoT SiteWise at the edge](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sw-gateways.html) in the *AWS IoT SiteWise User Guide*.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-gateway-greengrassv2-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-gateway-greengrassv2-syntax.json"></a>
 
-```json
-
+```
 {
-  "CoreDeviceOperatingSystem" : String,
-  "CoreDeviceThingName" : String
+  "[CoreDeviceOperatingSystem](#cfn-iotsitewise-gateway-greengrassv2-coredeviceoperatingsystem)" : {{String}},
+  "[CoreDeviceThingName](#cfn-iotsitewise-gateway-greengrassv2-coredevicethingname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-gateway-greengrassv2-syntax.yaml"></a>
 
-```yaml
-
-  CoreDeviceOperatingSystem: String
-  CoreDeviceThingName: String
-
+```
+  [CoreDeviceOperatingSystem](#cfn-iotsitewise-gateway-greengrassv2-coredeviceoperatingsystem): {{String}}
+  [CoreDeviceThingName](#cfn-iotsitewise-gateway-greengrassv2-coredevicethingname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-gateway-greengrassv2-properties"></a>
 
-`CoreDeviceOperatingSystem`
-
+`CoreDeviceOperatingSystem`  <a name="cfn-iotsitewise-gateway-greengrassv2-coredeviceoperatingsystem"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `LINUX_AARCH64 | LINUX_AMD64 | WINDOWS_AMD64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LINUX_AARCH64 | LINUX_AMD64 | WINDOWS_AMD64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CoreDeviceThingName`
-
+`CoreDeviceThingName`  <a name="cfn-iotsitewise-gateway-greengrassv2-coredevicethingname"></a>
 The name of the AWS IoT thing for your AWS IoT Greengrass V2 core device.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GatewayPlatform
-
-SiemensIE
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,61 +2,46 @@
 title: "AWS::Logs::Transformer SplitString"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer SplitString
+<a name="aws-properties-logs-transformer-splitstring"></a>
 
-Use this processor to split a field into an array of strings using a delimiting
-character.
+Use this processor to split a field into an array of strings using a delimiting character.
 
-For more information about this processor including examples, see [splitString](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-processors.md#CloudWatch-Logs-Transformation-splitString) in the _CloudWatch Logs User Guide_.
+For more information about this processor including examples, see [ splitString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-splitString) in the *CloudWatch Logs User Guide*.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-splitstring-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-splitstring-syntax.json"></a>
 
-```json
-
+```
 {
-  "Entries" : [ SplitStringEntry, ... ]
+  "[Entries](#cfn-logs-transformer-splitstring-entries)" : {{[ SplitStringEntry, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-splitstring-syntax.yaml"></a>
 
-```yaml
-
-  Entries:
-    - SplitStringEntry
-
+```
+  [Entries](#cfn-logs-transformer-splitstring-entries): {{
+    - SplitStringEntry}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-splitstring-properties"></a>
 
-`Entries`
-
-An array of `SplitStringEntry` objects, where each object contains the
-information about one field to split.
-
-_Required_: Yes
-
-_Type_: Array of [SplitStringEntry](aws-properties-logs-transformer-splitstringentry.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RenameKeys
-
-SplitStringEntry
+`Entries`  <a name="cfn-logs-transformer-splitstring-entries"></a>
+An array of `SplitStringEntry` objects, where each object contains the information about one field to split.
+*Required*: Yes
+*Type*: Array of [SplitStringEntry](aws-properties-logs-transformer-splitstringentry.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

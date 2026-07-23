@@ -2,70 +2,53 @@
 title: "AWS::AutoScaling::AutoScalingGroup LaunchTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::AutoScalingGroup LaunchTemplate
+<a name="aws-properties-autoscaling-autoscalinggroup-launchtemplate"></a>
 
-Use this structure to specify the launch templates and instance types (overrides) for a
-mixed instances policy.
+Use this structure to specify the launch templates and instance types (overrides) for a mixed instances policy.
 
-`LaunchTemplate` is a property of the [AWS::AutoScaling::AutoScalingGroup MixedInstancesPolicy](../userguide/aws-properties-autoscaling-autoscalinggroup-mixedinstancespolicy.md) property type.
+`LaunchTemplate` is a property of the [AWS::AutoScaling::AutoScalingGroup MixedInstancesPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-mixedinstancespolicy.html) property type.
 
 ## Syntax
+<a name="aws-properties-autoscaling-autoscalinggroup-launchtemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-autoscalinggroup-launchtemplate-syntax.json"></a>
 
-```json
-
+```
 {
-  "LaunchTemplateSpecification" : LaunchTemplateSpecification,
-  "Overrides" : [ LaunchTemplateOverrides, ... ]
+  "[LaunchTemplateSpecification](#cfn-autoscaling-autoscalinggroup-launchtemplate-launchtemplatespecification)" : {{LaunchTemplateSpecification}},
+  "[Overrides](#cfn-autoscaling-autoscalinggroup-launchtemplate-overrides)" : {{[ LaunchTemplateOverrides, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-autoscalinggroup-launchtemplate-syntax.yaml"></a>
 
-```yaml
-
-  LaunchTemplateSpecification:
-    LaunchTemplateSpecification
-  Overrides:
-    - LaunchTemplateOverrides
-
+```
+  [LaunchTemplateSpecification](#cfn-autoscaling-autoscalinggroup-launchtemplate-launchtemplatespecification): {{
+    LaunchTemplateSpecification}}
+  [Overrides](#cfn-autoscaling-autoscalinggroup-launchtemplate-overrides): {{
+    - LaunchTemplateOverrides}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-autoscalinggroup-launchtemplate-properties"></a>
 
-`LaunchTemplateSpecification`
-
+`LaunchTemplateSpecification`  <a name="cfn-autoscaling-autoscalinggroup-launchtemplate-launchtemplatespecification"></a>
 The launch template.
+*Required*: Yes
+*Type*: [LaunchTemplateSpecification](aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: [LaunchTemplateSpecification](aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Overrides`
-
-Any properties that you specify override the same properties in the launch
-template.
-
-_Required_: No
-
-_Type_: Array of [LaunchTemplateOverrides](aws-properties-autoscaling-autoscalinggroup-launchtemplateoverrides.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstancesDistribution
-
-LaunchTemplateOverrides
+`Overrides`  <a name="cfn-autoscaling-autoscalinggroup-launchtemplate-overrides"></a>
+Any properties that you specify override the same properties in the launch template.
+*Required*: No
+*Type*: Array of [LaunchTemplateOverrides](aws-properties-autoscaling-autoscalinggroup-launchtemplateoverrides.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

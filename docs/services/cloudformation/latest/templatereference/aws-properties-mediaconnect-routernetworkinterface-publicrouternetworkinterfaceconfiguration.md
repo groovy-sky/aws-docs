@@ -2,57 +2,44 @@
 title: "AWS::MediaConnect::RouterNetworkInterface PublicRouterNetworkInterfaceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterNetworkInterface PublicRouterNetworkInterfaceConfiguration
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration"></a>
 
 The configuration settings for a public router network interface, including the list of allowed CIDR blocks.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowRules" : [ PublicRouterNetworkInterfaceRule, ... ]
+  "[AllowRules](#cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-allowrules)" : {{[ PublicRouterNetworkInterfaceRule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AllowRules:
-    - PublicRouterNetworkInterfaceRule
-
+```
+  [AllowRules](#cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-allowrules): {{
+    - PublicRouterNetworkInterfaceRule}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-properties"></a>
 
-`AllowRules`
-
+`AllowRules`  <a name="cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-allowrules"></a>
 The list of allowed CIDR blocks for the public router network interface.
-
-_Required_: Yes
-
-_Type_: Array of [PublicRouterNetworkInterfaceRule](aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaConnect::RouterNetworkInterface
-
-PublicRouterNetworkInterfaceRule
+*Required*: Yes
+*Type*: Array of [PublicRouterNetworkInterfaceRule](aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,55 @@
 title: "AWS::MSK::Replicator KafkaClusterClientVpcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator KafkaClusterClientVpcConfig
+<a name="aws-properties-msk-replicator-kafkaclusterclientvpcconfig"></a>
 
 Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.
 
 ## Syntax
+<a name="aws-properties-msk-replicator-kafkaclusterclientvpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-replicator-kafkaclusterclientvpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-msk-replicator-kafkaclusterclientvpcconfig-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-msk-replicator-kafkaclusterclientvpcconfig-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-replicator-kafkaclusterclientvpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-msk-replicator-kafkaclusterclientvpcconfig-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-msk-replicator-kafkaclusterclientvpcconfig-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-replicator-kafkaclusterclientvpcconfig-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-msk-replicator-kafkaclusterclientvpcconfig-securitygroupids"></a>
 The security groups to attach to the ENIs for the broker nodes.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `16`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `16`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-msk-replicator-kafkaclusterclientvpcconfig-subnetids"></a>
 The list of subnets in the client VPC to connect to.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `2`
-
-_Maximum_: `3`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KafkaCluster
-
-ReplicationInfo
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `2`
+*Maximum*: `3`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

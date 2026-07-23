@@ -2,93 +2,68 @@
 title: "AWS::Glue::Crawler HudiTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Crawler HudiTarget
+<a name="aws-properties-glue-crawler-huditarget"></a>
 
 Specifies an Apache Hudi data source.
 
 ## Syntax
+<a name="aws-properties-glue-crawler-huditarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-crawler-huditarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectionName" : String,
-  "Exclusions" : [ String, ... ],
-  "MaximumTraversalDepth" : Integer,
-  "Paths" : [ String, ... ]
+  "[ConnectionName](#cfn-glue-crawler-huditarget-connectionname)" : {{String}},
+  "[Exclusions](#cfn-glue-crawler-huditarget-exclusions)" : {{[ String, ... ]}},
+  "[MaximumTraversalDepth](#cfn-glue-crawler-huditarget-maximumtraversaldepth)" : {{Integer}},
+  "[Paths](#cfn-glue-crawler-huditarget-paths)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-crawler-huditarget-syntax.yaml"></a>
 
-```yaml
-
-  ConnectionName: String
-  Exclusions:
-    - String
-  MaximumTraversalDepth: Integer
-  Paths:
-    - String
-
+```
+  [ConnectionName](#cfn-glue-crawler-huditarget-connectionname): {{String}}
+  [Exclusions](#cfn-glue-crawler-huditarget-exclusions): {{
+    - String}}
+  [MaximumTraversalDepth](#cfn-glue-crawler-huditarget-maximumtraversaldepth): {{Integer}}
+  [Paths](#cfn-glue-crawler-huditarget-paths): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-crawler-huditarget-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-glue-crawler-huditarget-connectionname"></a>
 The name of the connection to use to connect to the Hudi target. If your Hudi files are stored in buckets that require VPC authorization, you can set their connection properties here.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Exclusions`  <a name="cfn-glue-crawler-huditarget-exclusions"></a>
+A list of glob patterns used to exclude from the crawl. For more information, see [Catalog Tables with a Crawler](https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html).
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Exclusions`
-
-A list of glob patterns used to exclude from the crawl.
-For more information, see [Catalog Tables with a Crawler](../../../glue/latest/dg/add-crawler.md).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumTraversalDepth`
-
+`MaximumTraversalDepth`  <a name="cfn-glue-crawler-huditarget-maximumtraversaldepth"></a>
 The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Paths`
-
+`Paths`  <a name="cfn-glue-crawler-huditarget-paths"></a>
 An array of Amazon S3 location strings for Hudi, each indicating the root folder with which the metadata files for a Hudi table resides. The Hudi folder may be located in a child folder of the root folder.
-
 The crawler will scan all folders underneath a path for a Hudi folder.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamoDBTarget
-
-IcebergTarget
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

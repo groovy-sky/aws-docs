@@ -2,148 +2,104 @@
 title: "AWS::QuickSight::Analysis InsightVisual"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis InsightVisual
+<a name="aws-properties-quicksight-analysis-insightvisual"></a>
 
 An insight visual.
 
-For more information, see [Working with insights](../../../quicksight/latest/user/computational-insights.md) in the _Amazon Quick Suite User Guide_.
+For more information, see [Working with insights](https://docs.aws.amazon.com/quicksight/latest/user/computational-insights.html) in the *Amazon Quick Suite User Guide*.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-insightvisual-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-insightvisual-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ VisualCustomAction, ... ],
-  "DataSetIdentifier" : String,
-  "InsightConfiguration" : InsightConfiguration,
-  "Subtitle" : VisualSubtitleLabelOptions,
-  "Title" : VisualTitleLabelOptions,
-  "VisualContentAltText" : String,
-  "VisualId" : String
+  "[Actions](#cfn-quicksight-analysis-insightvisual-actions)" : {{[ VisualCustomAction, ... ]}},
+  "[DataSetIdentifier](#cfn-quicksight-analysis-insightvisual-datasetidentifier)" : {{String}},
+  "[InsightConfiguration](#cfn-quicksight-analysis-insightvisual-insightconfiguration)" : {{InsightConfiguration}},
+  "[Subtitle](#cfn-quicksight-analysis-insightvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
+  "[Title](#cfn-quicksight-analysis-insightvisual-title)" : {{VisualTitleLabelOptions}},
+  "[VisualContentAltText](#cfn-quicksight-analysis-insightvisual-visualcontentalttext)" : {{String}},
+  "[VisualId](#cfn-quicksight-analysis-insightvisual-visualid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-insightvisual-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - VisualCustomAction
-  DataSetIdentifier: String
-  InsightConfiguration:
-    InsightConfiguration
-  Subtitle:
-    VisualSubtitleLabelOptions
-  Title:
-    VisualTitleLabelOptions
-  VisualContentAltText: String
-  VisualId: String
-
+```
+  [Actions](#cfn-quicksight-analysis-insightvisual-actions): {{
+    - VisualCustomAction}}
+  [DataSetIdentifier](#cfn-quicksight-analysis-insightvisual-datasetidentifier): {{String}}
+  [InsightConfiguration](#cfn-quicksight-analysis-insightvisual-insightconfiguration): {{
+    InsightConfiguration}}
+  [Subtitle](#cfn-quicksight-analysis-insightvisual-subtitle): {{
+    VisualSubtitleLabelOptions}}
+  [Title](#cfn-quicksight-analysis-insightvisual-title): {{
+    VisualTitleLabelOptions}}
+  [VisualContentAltText](#cfn-quicksight-analysis-insightvisual-visualcontentalttext): {{String}}
+  [VisualId](#cfn-quicksight-analysis-insightvisual-visualid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-insightvisual-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-quicksight-analysis-insightvisual-actions"></a>
 The list of custom actions that are configured for a visual.
+*Required*: No
+*Type*: Array of [VisualCustomAction](aws-properties-quicksight-analysis-visualcustomaction.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [VisualCustomAction](aws-properties-quicksight-analysis-visualcustomaction.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetIdentifier`
-
+`DataSetIdentifier`  <a name="cfn-quicksight-analysis-insightvisual-datasetidentifier"></a>
 The dataset that is used in the insight visual.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InsightConfiguration`
-
+`InsightConfiguration`  <a name="cfn-quicksight-analysis-insightvisual-insightconfiguration"></a>
 The configuration of an insight visual.
+*Required*: No
+*Type*: [InsightConfiguration](aws-properties-quicksight-analysis-insightconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [InsightConfiguration](aws-properties-quicksight-analysis-insightconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subtitle`
-
+`Subtitle`  <a name="cfn-quicksight-analysis-insightvisual-subtitle"></a>
 The subtitle that is displayed on the visual.
+*Required*: No
+*Type*: [VisualSubtitleLabelOptions](aws-properties-quicksight-analysis-visualsubtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualSubtitleLabelOptions](aws-properties-quicksight-analysis-visualsubtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-analysis-insightvisual-title"></a>
 The title that is displayed on the visual.
+*Required*: No
+*Type*: [VisualTitleLabelOptions](aws-properties-quicksight-analysis-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualTitleLabelOptions](aws-properties-quicksight-analysis-visualtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualContentAltText`
-
+`VisualContentAltText`  <a name="cfn-quicksight-analysis-insightvisual-visualcontentalttext"></a>
 The alt text for the visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualId`
-
+`VisualId`  <a name="cfn-quicksight-analysis-insightvisual-visualid"></a>
 The unique identifier of a visual. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have visuals with the same identifiers.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InsightConfiguration
-
-IntegerDefaultValues
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

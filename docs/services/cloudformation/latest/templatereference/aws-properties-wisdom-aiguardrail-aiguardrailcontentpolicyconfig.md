@@ -2,57 +2,44 @@
 title: "AWS::Wisdom::AIGuardrail AIGuardrailContentPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail AIGuardrailContentPolicyConfig
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontentpolicyconfig"></a>
 
 Content policy config for a guardrail.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FiltersConfig" : [ GuardrailContentFilterConfig, ... ]
+  "[FiltersConfig](#cfn-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-filtersconfig)" : {{[ GuardrailContentFilterConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  FiltersConfig:
-    - GuardrailContentFilterConfig
-
+```
+  [FiltersConfig](#cfn-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-filtersconfig): {{
+    - GuardrailContentFilterConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-properties"></a>
 
-`FiltersConfig`
-
+`FiltersConfig`  <a name="cfn-wisdom-aiguardrail-aiguardrailcontentpolicyconfig-filtersconfig"></a>
 List of content filter configurations in a content policy.
-
-_Required_: Yes
-
-_Type_: Array of [GuardrailContentFilterConfig](aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig.md)
-
-_Minimum_: `1`
-
-_Maximum_: `6`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Wisdom::AIGuardrail
-
-AIGuardrailContextualGroundingPolicyConfig
+*Required*: Yes
+*Type*: Array of [GuardrailContentFilterConfig](aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig.md)
+*Minimum*: `1`
+*Maximum*: `6`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

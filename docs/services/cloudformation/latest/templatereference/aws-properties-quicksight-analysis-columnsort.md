@@ -2,80 +2,60 @@
 title: "AWS::QuickSight::Analysis ColumnSort"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ColumnSort
+<a name="aws-properties-quicksight-analysis-columnsort"></a>
 
 The sort configuration for a column that is not used in a field well.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-columnsort-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-columnsort-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationFunction" : AggregationFunction,
-  "Direction" : String,
-  "SortBy" : ColumnIdentifier
+  "[AggregationFunction](#cfn-quicksight-analysis-columnsort-aggregationfunction)" : {{AggregationFunction}},
+  "[Direction](#cfn-quicksight-analysis-columnsort-direction)" : {{String}},
+  "[SortBy](#cfn-quicksight-analysis-columnsort-sortby)" : {{ColumnIdentifier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-columnsort-syntax.yaml"></a>
 
-```yaml
-
-  AggregationFunction:
-    AggregationFunction
-  Direction: String
-  SortBy:
-    ColumnIdentifier
-
+```
+  [AggregationFunction](#cfn-quicksight-analysis-columnsort-aggregationfunction): {{
+    AggregationFunction}}
+  [Direction](#cfn-quicksight-analysis-columnsort-direction): {{String}}
+  [SortBy](#cfn-quicksight-analysis-columnsort-sortby): {{
+    ColumnIdentifier}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-columnsort-properties"></a>
 
-`AggregationFunction`
-
+`AggregationFunction`  <a name="cfn-quicksight-analysis-columnsort-aggregationfunction"></a>
 The aggregation function that is defined in the column sort.
+*Required*: No
+*Type*: [AggregationFunction](aws-properties-quicksight-analysis-aggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AggregationFunction](aws-properties-quicksight-analysis-aggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Direction`
-
+`Direction`  <a name="cfn-quicksight-analysis-columnsort-direction"></a>
 The sort direction.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ASC | DESC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ASC | DESC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortBy`
-
+`SortBy`  <a name="cfn-quicksight-analysis-columnsort-sortby"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnIdentifier
-
-ColumnTooltipItem
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

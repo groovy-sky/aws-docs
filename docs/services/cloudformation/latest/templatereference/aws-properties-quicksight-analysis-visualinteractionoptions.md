@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Analysis VisualInteractionOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis VisualInteractionOptions
+<a name="aws-properties-quicksight-analysis-visualinteractionoptions"></a>
 
 The general visual interactions setup for visual publish options
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-visualinteractionoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-visualinteractionoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContextMenuOption" : ContextMenuOption,
-  "VisualMenuOption" : VisualMenuOption
+  "[ContextMenuOption](#cfn-quicksight-analysis-visualinteractionoptions-contextmenuoption)" : {{ContextMenuOption}},
+  "[VisualMenuOption](#cfn-quicksight-analysis-visualinteractionoptions-visualmenuoption)" : {{VisualMenuOption}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-visualinteractionoptions-syntax.yaml"></a>
 
-```yaml
-
-  ContextMenuOption:
-    ContextMenuOption
-  VisualMenuOption:
-    VisualMenuOption
-
+```
+  [ContextMenuOption](#cfn-quicksight-analysis-visualinteractionoptions-contextmenuoption): {{
+    ContextMenuOption}}
+  [VisualMenuOption](#cfn-quicksight-analysis-visualinteractionoptions-visualmenuoption): {{
+    VisualMenuOption}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-visualinteractionoptions-properties"></a>
 
-`ContextMenuOption`
-
+`ContextMenuOption`  <a name="cfn-quicksight-analysis-visualinteractionoptions-contextmenuoption"></a>
 The context menu options for a visual.
+*Required*: No
+*Type*: [ContextMenuOption](aws-properties-quicksight-analysis-contextmenuoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ContextMenuOption](aws-properties-quicksight-analysis-contextmenuoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualMenuOption`
-
+`VisualMenuOption`  <a name="cfn-quicksight-analysis-visualinteractionoptions-visualmenuoption"></a>
 The on-visual menu options for a visual.
-
-_Required_: No
-
-_Type_: [VisualMenuOption](aws-properties-quicksight-analysis-visualmenuoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VisualCustomActionOperation
-
-VisualMenuOption
+*Required*: No
+*Type*: [VisualMenuOption](aws-properties-quicksight-analysis-visualmenuoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,80 +2,60 @@
 title: "AWS::Bedrock::DataAutomationProject AudioExtractionCategory"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject AudioExtractionCategory
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory"></a>
 
 Settings for generating data from audio.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory-syntax.json"></a>
 
-```json
-
+```
 {
-  "State" : String,
-  "TypeConfiguration" : AudioExtractionCategoryTypeConfiguration,
-  "Types" : [ String, ... ]
+  "[State](#cfn-bedrock-dataautomationproject-audioextractioncategory-state)" : {{String}},
+  "[TypeConfiguration](#cfn-bedrock-dataautomationproject-audioextractioncategory-typeconfiguration)" : {{AudioExtractionCategoryTypeConfiguration}},
+  "[Types](#cfn-bedrock-dataautomationproject-audioextractioncategory-types)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory-syntax.yaml"></a>
 
-```yaml
-
-  State: String
-  TypeConfiguration:
-    AudioExtractionCategoryTypeConfiguration
-  Types:
-    - String
-
+```
+  [State](#cfn-bedrock-dataautomationproject-audioextractioncategory-state): {{String}}
+  [TypeConfiguration](#cfn-bedrock-dataautomationproject-audioextractioncategory-typeconfiguration): {{
+    AudioExtractionCategoryTypeConfiguration}}
+  [Types](#cfn-bedrock-dataautomationproject-audioextractioncategory-types): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory-properties"></a>
 
-`State`
-
+`State`  <a name="cfn-bedrock-dataautomationproject-audioextractioncategory-state"></a>
 Whether generating categorical data from audio is enabled.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeConfiguration`
-
+`TypeConfiguration`  <a name="cfn-bedrock-dataautomationproject-audioextractioncategory-typeconfiguration"></a>
 This element contains information about extractions from different types. Used to enable speaker and channel labeling for transcripts.
+*Required*: No
+*Type*: [AudioExtractionCategoryTypeConfiguration](aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AudioExtractionCategoryTypeConfiguration](aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Types`
-
+`Types`  <a name="cfn-bedrock-dataautomationproject-audioextractioncategory-types"></a>
 The types of data to generate.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::DataAutomationProject
-
-AudioExtractionCategoryTypeConfiguration
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,184 +2,147 @@
 title: "AWS::Connect::PhoneNumber"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::PhoneNumber
+<a name="aws-resource-connect-phonenumber"></a>
 
-Claims a phone number to the specified Amazon Connect instance or traffic
-distribution group.
+Claims a phone number to the specified Connect Customer instance or traffic distribution group.
 
 ## Syntax
+<a name="aws-resource-connect-phonenumber-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-phonenumber-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::PhoneNumber",
   "Properties" : {
-      "CountryCode" : String,
-      "Description" : String,
-      "Prefix" : String,
-      "SourcePhoneNumberArn" : String,
-      "Tags" : [ Tag, ... ],
-      "TargetArn" : String,
-      "Type" : String
+      "[CountryCode](#cfn-connect-phonenumber-countrycode)" : {{String}},
+      "[Description](#cfn-connect-phonenumber-description)" : {{String}},
+      "[Prefix](#cfn-connect-phonenumber-prefix)" : {{String}},
+      "[SourcePhoneNumberArn](#cfn-connect-phonenumber-sourcephonenumberarn)" : {{String}},
+      "[Tags](#cfn-connect-phonenumber-tags)" : {{[ Tag, ... ]}},
+      "[TargetArn](#cfn-connect-phonenumber-targetarn)" : {{String}},
+      "[Type](#cfn-connect-phonenumber-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-phonenumber-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::PhoneNumber
 Properties:
-  CountryCode: String
-  Description: String
-  Prefix: String
-  SourcePhoneNumberArn: String
-  Tags:
-    - Tag
-  TargetArn: String
-  Type: String
-
+  [CountryCode](#cfn-connect-phonenumber-countrycode): {{String}}
+  [Description](#cfn-connect-phonenumber-description): {{String}}
+  [Prefix](#cfn-connect-phonenumber-prefix): {{String}}
+  [SourcePhoneNumberArn](#cfn-connect-phonenumber-sourcephonenumberarn): {{String}}
+  [Tags](#cfn-connect-phonenumber-tags): {{
+    - Tag}}
+  [TargetArn](#cfn-connect-phonenumber-targetarn): {{String}}
+  [Type](#cfn-connect-phonenumber-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-phonenumber-properties"></a>
 
-`CountryCode`
-
+`CountryCode`  <a name="cfn-connect-phonenumber-countrycode"></a>
 The ISO country code.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Z]{2}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Z]{2}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-connect-phonenumber-description"></a>
 The description of the phone number.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Prefix`  <a name="cfn-connect-phonenumber-prefix"></a>
+The prefix of the phone number. If provided, it must contain `+` as part of the country code.
+*Pattern*: `^\\+[0-9]{1,15}`
+*Required*: No
+*Type*: String
+*Pattern*: `^\+[0-9]{1,15}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`SourcePhoneNumberArn`  <a name="cfn-connect-phonenumber-sourcephonenumberarn"></a>
+The claimed phone number ARN that was previously imported from the external service, such as AWS End User Messaging. If it is from AWS End User Messaging, it looks like the ARN of the phone number that was imported from AWS End User Messaging.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `1`
+`Tags`  <a name="cfn-connect-phonenumber-tags"></a>
+The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-phonenumber-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `500`
+`TargetArn`  <a name="cfn-connect-phonenumber-targetarn"></a>
+The Amazon Resource Name (ARN) for Connect Customer instances or traffic distribution group that phone numbers are claimed to.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:(instance|traffic-distribution-group)/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
-The prefix of the phone number. If provided, it must contain `+` as part of
-the country code.
-
-_Pattern_: `^\\+[0-9]{1,15}`
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\+[0-9]{1,15}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourcePhoneNumberArn`
-
-The claimed phone number ARN that was previously imported from the external service, such as AWS
-End User Messaging. If it is from AWS End User Messaging, it looks like the ARN of the phone number
-that was imported from AWS End User Messaging.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tags used to organize, track, or control access for this resource. For example, {
-"tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-connect-phonenumber-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
-The Amazon Resource Name (ARN) for Amazon Connect instances or traffic
-distribution group that phone numbers are claimed to.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:(instance|traffic-distribution-group)/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-connect-phonenumber-type"></a>
 The type of phone number.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `TOLL_FREE|DID|UIFN|SHARED|THIRD_PARTY_DID|THIRD_PARTY_TF|SHORT_CODE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `TOLL_FREE|DID|UIFN|SHARED|THIRD_PARTY_DID|THIRD_PARTY_TF|SHORT_CODE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-connect-phonenumber-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-phonenumber-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the phone number. For example:
 
-`{ "Ref": "myPhoneNumber" }`
+ `{ "Ref": "myPhoneNumber" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-phonenumber-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Address`
+####
+<a name="aws-resource-connect-phonenumber-return-values-fn--getatt-fn--getatt"></a>
 
+`Address`  <a name="Address-fn::getatt"></a>
 The phone number, in E.164 format.
 
-`PhoneNumberArn`
-
+`PhoneNumberArn`  <a name="PhoneNumberArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the phone number.
 
 ## Examples
+<a name="aws-resource-connect-phonenumber--examples"></a>
 
 ### Specify a phone number resource
+<a name="aws-resource-connect-phonenumber--examples--Specify_a_phone_number_resource"></a>
 
-The following example specifies a phone number resource for an Amazon Connect instance.
+The following example specifies a phone number resource for an Connect Customer instance.
 
 #### YAML
+<a name="aws-resource-connect-phonenumber--examples--Specify_a_phone_number_resource--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
- Description: Specifies a phone number for Amazon Connect instance
+ Description: Specifies a phone number for Connect Customer instance
  Resources:
    PhoneNumber:
      Type: 'AWS::Connect::PhoneNumber'
@@ -192,11 +155,5 @@ AWSTemplateFormatVersion: 2010-09-09
          - Key: testkey
            Value: testValue
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

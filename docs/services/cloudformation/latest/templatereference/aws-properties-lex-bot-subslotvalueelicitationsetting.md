@@ -2,101 +2,73 @@
 title: "AWS::Lex::Bot SubSlotValueElicitationSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SubSlotValueElicitationSetting
+<a name="aws-properties-lex-bot-subslotvalueelicitationsetting"></a>
 
 Subslot elicitation settings.
 
-`DefaultValueSpecification` is a list of default values for a constituent sub slot in a composite slot. Default values are used when
-Amazon Lex hasn't determined a value for a slot. You can specify default values from context variables,
-session attributes, and defined values. This is similar to `DefaultValueSpecification` for slots.
+`DefaultValueSpecification` is a list of default values for a constituent sub slot in a composite slot. Default values are used when Amazon Lex hasn't determined a value for a slot. You can specify default values from context variables, session attributes, and defined values. This is similar to `DefaultValueSpecification` for slots.
 
-`PromptSpecification` is the prompt that Amazon Lex uses to elicit the sub slot value from the user.
-This is similar to `PromptSpecification` for slots.
+`PromptSpecification` is the prompt that Amazon Lex uses to elicit the sub slot value from the user. This is similar to `PromptSpecification` for slots.
 
 ## Syntax
+<a name="aws-properties-lex-bot-subslotvalueelicitationsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-subslotvalueelicitationsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValueSpecification" : SlotDefaultValueSpecification,
-  "PromptSpecification" : PromptSpecification,
-  "SampleUtterances" : [ SampleUtterance, ... ],
-  "WaitAndContinueSpecification" : WaitAndContinueSpecification
+  "[DefaultValueSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-defaultvaluespecification)" : {{SlotDefaultValueSpecification}},
+  "[PromptSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-promptspecification)" : {{PromptSpecification}},
+  "[SampleUtterances](#cfn-lex-bot-subslotvalueelicitationsetting-sampleutterances)" : {{[ SampleUtterance, ... ]}},
+  "[WaitAndContinueSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-waitandcontinuespecification)" : {{WaitAndContinueSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-subslotvalueelicitationsetting-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValueSpecification:
-    SlotDefaultValueSpecification
-  PromptSpecification:
-    PromptSpecification
-  SampleUtterances:
-    - SampleUtterance
-  WaitAndContinueSpecification:
-    WaitAndContinueSpecification
-
+```
+  [DefaultValueSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-defaultvaluespecification): {{
+    SlotDefaultValueSpecification}}
+  [PromptSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-promptspecification): {{
+    PromptSpecification}}
+  [SampleUtterances](#cfn-lex-bot-subslotvalueelicitationsetting-sampleutterances): {{
+    - SampleUtterance}}
+  [WaitAndContinueSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-waitandcontinuespecification): {{
+    WaitAndContinueSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-subslotvalueelicitationsetting-properties"></a>
 
-`DefaultValueSpecification`
-
+`DefaultValueSpecification`  <a name="cfn-lex-bot-subslotvalueelicitationsetting-defaultvaluespecification"></a>
 Property description not available.
+*Required*: No
+*Type*: [SlotDefaultValueSpecification](aws-properties-lex-bot-slotdefaultvaluespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SlotDefaultValueSpecification](aws-properties-lex-bot-slotdefaultvaluespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PromptSpecification`
-
+`PromptSpecification`  <a name="cfn-lex-bot-subslotvalueelicitationsetting-promptspecification"></a>
 Property description not available.
+*Required*: No
+*Type*: [PromptSpecification](aws-properties-lex-bot-promptspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SampleUtterances`  <a name="cfn-lex-bot-subslotvalueelicitationsetting-sampleutterances"></a>
+If you know a specific pattern that users might respond to an Amazon Lex request for a sub slot value, you can provide those utterances to improve accuracy. This is optional. In most cases Amazon Lex is capable of understanding user utterances. This is similar to `SampleUtterances` for slots.
+*Required*: No
+*Type*: Array of [SampleUtterance](aws-properties-lex-bot-sampleutterance.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PromptSpecification](aws-properties-lex-bot-promptspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SampleUtterances`
-
-If you know a specific pattern that users might respond to an Amazon Lex request for a sub slot value,
-you can provide those utterances to improve accuracy. This is optional. In most cases Amazon Lex is capable
-of understanding user utterances. This is similar to `SampleUtterances` for slots.
-
-_Required_: No
-
-_Type_: Array of [SampleUtterance](aws-properties-lex-bot-sampleutterance.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WaitAndContinueSpecification`
-
+`WaitAndContinueSpecification`  <a name="cfn-lex-bot-subslotvalueelicitationsetting-waitandcontinuespecification"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [WaitAndContinueSpecification](aws-properties-lex-bot-waitandcontinuespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SubSlotTypeComposition
-
-Tag
+*Required*: No
+*Type*: [WaitAndContinueSpecification](aws-properties-lex-bot-waitandcontinuespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

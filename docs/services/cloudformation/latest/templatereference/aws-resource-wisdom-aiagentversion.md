@@ -2,107 +2,88 @@
 title: "AWS::Wisdom::AIAgentVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgentVersion
+<a name="aws-resource-wisdom-aiagentversion"></a>
 
 Creates and Amazon Q in Connect AI Agent version.
 
 ## Syntax
+<a name="aws-resource-wisdom-aiagentversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-wisdom-aiagentversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Wisdom::AIAgentVersion",
   "Properties" : {
-      "AIAgentId" : String,
-      "AssistantId" : String,
-      "ModifiedTimeSeconds" : Number
+      "[AIAgentId](#cfn-wisdom-aiagentversion-aiagentid)" : {{String}},
+      "[AssistantId](#cfn-wisdom-aiagentversion-assistantid)" : {{String}},
+      "[ModifiedTimeSeconds](#cfn-wisdom-aiagentversion-modifiedtimeseconds)" : {{Number}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-wisdom-aiagentversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Wisdom::AIAgentVersion
 Properties:
-  AIAgentId: String
-  AssistantId: String
-  ModifiedTimeSeconds: Number
-
+  [AIAgentId](#cfn-wisdom-aiagentversion-aiagentid): {{String}}
+  [AssistantId](#cfn-wisdom-aiagentversion-assistantid): {{String}}
+  [ModifiedTimeSeconds](#cfn-wisdom-aiagentversion-modifiedtimeseconds): {{Number}}
 ```
 
 ## Properties
+<a name="aws-resource-wisdom-aiagentversion-properties"></a>
 
-`AIAgentId`
-
+`AIAgentId`  <a name="cfn-wisdom-aiagentversion-aiagentid"></a>
 The identifier of the AI Agent.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AssistantId`
-
+`AssistantId`  <a name="cfn-wisdom-aiagentversion-assistantid"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModifiedTimeSeconds`
-
+`ModifiedTimeSeconds`  <a name="cfn-wisdom-aiagentversion-modifiedtimeseconds"></a>
 The time the AI Agent version was last modified in seconds.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Number
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-wisdom-aiagentversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-wisdom-aiagentversion-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-wisdom-aiagentversion-return-values-fn--getatt"></a>
 
-`AIAgentArn`
+####
+<a name="aws-resource-wisdom-aiagentversion-return-values-fn--getatt-fn--getatt"></a>
 
+`AIAgentArn`  <a name="AIAgentArn-fn::getatt"></a>
 Property description not available.
 
-`AIAgentVersionId`
-
+`AIAgentVersionId`  <a name="AIAgentVersionId-fn::getatt"></a>
 Property description not available.
 
-`AssistantArn`
-
+`AssistantArn`  <a name="AssistantArn-fn::getatt"></a>
 Property description not available.
 
-`VersionNumber`
-
+`VersionNumber`  <a name="VersionNumber-fn::getatt"></a>
 The version number for this AI Agent version.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UserInteractionConfiguration
-
-AWS::Wisdom::AIGuardrail
 
 All content copied from https://docs.aws.amazon.com/.

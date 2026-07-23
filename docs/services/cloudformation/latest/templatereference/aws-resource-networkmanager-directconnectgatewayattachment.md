@@ -2,193 +2,149 @@
 title: "AWS::NetworkManager::DirectConnectGatewayAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::DirectConnectGatewayAttachment
+<a name="aws-resource-networkmanager-directconnectgatewayattachment"></a>
 
 Creates an AWS Direct Connect gateway attachment
 
 ## Syntax
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::DirectConnectGatewayAttachment",
   "Properties" : {
-      "CoreNetworkId" : String,
-      "DirectConnectGatewayArn" : String,
-      "EdgeLocations" : [ String, ... ],
-      "ProposedNetworkFunctionGroupChange" : ProposedNetworkFunctionGroupChange,
-      "ProposedSegmentChange" : ProposedSegmentChange,
-      "RoutingPolicyLabel" : String,
-      "Tags" : [ Tag, ... ]
+      "[CoreNetworkId](#cfn-networkmanager-directconnectgatewayattachment-corenetworkid)" : {{String}},
+      "[DirectConnectGatewayArn](#cfn-networkmanager-directconnectgatewayattachment-directconnectgatewayarn)" : {{String}},
+      "[EdgeLocations](#cfn-networkmanager-directconnectgatewayattachment-edgelocations)" : {{[ String, ... ]}},
+      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-directconnectgatewayattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
+      "[ProposedSegmentChange](#cfn-networkmanager-directconnectgatewayattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
+      "[RoutingPolicyLabel](#cfn-networkmanager-directconnectgatewayattachment-routingpolicylabel)" : {{String}},
+      "[Tags](#cfn-networkmanager-directconnectgatewayattachment-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::DirectConnectGatewayAttachment
 Properties:
-  CoreNetworkId: String
-  DirectConnectGatewayArn: String
-  EdgeLocations:
-    - String
-  ProposedNetworkFunctionGroupChange:
-    ProposedNetworkFunctionGroupChange
-  ProposedSegmentChange:
-    ProposedSegmentChange
-  RoutingPolicyLabel: String
-  Tags:
-    - Tag
-
+  [CoreNetworkId](#cfn-networkmanager-directconnectgatewayattachment-corenetworkid): {{String}}
+  [DirectConnectGatewayArn](#cfn-networkmanager-directconnectgatewayattachment-directconnectgatewayarn): {{String}}
+  [EdgeLocations](#cfn-networkmanager-directconnectgatewayattachment-edgelocations): {{
+    - String}}
+  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-directconnectgatewayattachment-proposednetworkfunctiongroupchange): {{
+    ProposedNetworkFunctionGroupChange}}
+  [ProposedSegmentChange](#cfn-networkmanager-directconnectgatewayattachment-proposedsegmentchange): {{
+    ProposedSegmentChange}}
+  [RoutingPolicyLabel](#cfn-networkmanager-directconnectgatewayattachment-routingpolicylabel): {{String}}
+  [Tags](#cfn-networkmanager-directconnectgatewayattachment-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-properties"></a>
 
-`CoreNetworkId`
-
+`CoreNetworkId`  <a name="cfn-networkmanager-directconnectgatewayattachment-corenetworkid"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DirectConnectGatewayArn`
-
+`DirectConnectGatewayArn`  <a name="cfn-networkmanager-directconnectgatewayattachment-directconnectgatewayarn"></a>
 The Direct Connect gateway attachment ARN.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[^:]{1,63}:directconnect::[^:]{0,63}:dx-gateway\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$`
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[^:]{1,63}:directconnect::[^:]{0,63}:dx-gateway\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$`
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EdgeLocations`
-
+`EdgeLocations`  <a name="cfn-networkmanager-directconnectgatewayattachment-edgelocations"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProposedNetworkFunctionGroupChange`
-
+`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-directconnectgatewayattachment-proposednetworkfunctiongroupchange"></a>
 Describes proposed changes to a network function group.
+*Required*: No
+*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-directconnectgatewayattachment-proposednetworkfunctiongroupchange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-directconnectgatewayattachment-proposednetworkfunctiongroupchange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProposedSegmentChange`
-
+`ProposedSegmentChange`  <a name="cfn-networkmanager-directconnectgatewayattachment-proposedsegmentchange"></a>
 Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.
+*Required*: No
+*Type*: [ProposedSegmentChange](aws-properties-networkmanager-directconnectgatewayattachment-proposedsegmentchange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProposedSegmentChange](aws-properties-networkmanager-directconnectgatewayattachment-proposedsegmentchange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingPolicyLabel`
-
+`RoutingPolicyLabel`  <a name="cfn-networkmanager-directconnectgatewayattachment-routingpolicylabel"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkmanager-directconnectgatewayattachment-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkmanager-directconnectgatewayattachment-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkmanager-directconnectgatewayattachment-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-return-values-fn--getatt"></a>
 
-`AttachmentId`
+####
+<a name="aws-resource-networkmanager-directconnectgatewayattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`AttachmentId`  <a name="AttachmentId-fn::getatt"></a>
 Property description not available.
 
-`AttachmentPolicyRuleNumber`
-
+`AttachmentPolicyRuleNumber`  <a name="AttachmentPolicyRuleNumber-fn::getatt"></a>
 Property description not available.
 
-`AttachmentType`
-
+`AttachmentType`  <a name="AttachmentType-fn::getatt"></a>
 Property description not available.
 
-`CoreNetworkArn`
-
+`CoreNetworkArn`  <a name="CoreNetworkArn-fn::getatt"></a>
 Property description not available.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 Property description not available.
 
-`LastModificationErrors`
-
+`LastModificationErrors`  <a name="LastModificationErrors-fn::getatt"></a>
 Property description not available.
 
-`NetworkFunctionGroupName`
-
+`NetworkFunctionGroupName`  <a name="NetworkFunctionGroupName-fn::getatt"></a>
 The name of the network function group.
 
-`OwnerAccountId`
-
+`OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
 Property description not available.
 
-`ResourceArn`
-
+`ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
 Property description not available.
 
-`SegmentName`
-
+`SegmentName`  <a name="SegmentName-fn::getatt"></a>
 Property description not available.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 Property description not available.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ProposedNetworkFunctionGroupChange
 
 All content copied from https://docs.aws.amazon.com/.

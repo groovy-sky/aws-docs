@@ -1,215 +1,143 @@
 ---
-title: "AWS::CloudFormation::Authentication"
+title: "`AWS::CloudFormation::Authentication`"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `AWS::CloudFormation::Authentication`
+<a name="aws-resource-authentication"></a>
 
-Use the `AWS::CloudFormation::Authentication` metadata type to specify
-authentication credentials for files or sources that you specify with the [AWS::CloudFormation::Init](aws-resource-init.md) metadata type.
+Use the `AWS::CloudFormation::Authentication` metadata type to specify authentication credentials for files or sources that you specify with the [`AWS::CloudFormation::Init`](aws-resource-init.md) metadata type.
 
-To include authentication information for a file or source that you specify with
-`AWS::CloudFormation::Init`, use the `uris` property if the source is
-a URI or the `buckets` property if the source is an Amazon S3 bucket. For more
-information about files, see [Files](aws-resource-init.md#aws-resource-init-files). For more information about sources, see [Sources](aws-resource-init.md#aws-resource-init-sources).
+To include authentication information for a file or source that you specify with `AWS::CloudFormation::Init`, use the `uris` property if the source is a URI or the `buckets` property if the source is an Amazon S3 bucket. For more information about files, see [Files](aws-resource-init.md#aws-resource-init-files). For more information about sources, see [Sources](aws-resource-init.md#aws-resource-init-sources).
 
-You can also specify authentication information for files directly in the
-`AWS::CloudFormation::Init` metadata type. The files key of the resource
-contains a property named `authentication`. You can use the
-`authentication` property to associate authentication information defined in the
-`AWS::CloudFormation::Authentication` metadata type directly with a file.
+You can also specify authentication information for files directly in the `AWS::CloudFormation::Init` metadata type. The files key of the resource contains a property named `authentication`. You can use the `authentication` property to associate authentication information defined in the `AWS::CloudFormation::Authentication` metadata type directly with a file.
 
 For files, CloudFormation looks for authentication information in the following order:
 
-1. The `authentication` property of the
-    `AWS::CloudFormation::Init` `files` key.
+1. The `authentication` property of the `AWS::CloudFormation::Init` `files` key.
 
-2. The `uris` or `buckets` property of the
-    `AWS::CloudFormation::Authentication` metadata.
+1. The `uris` or `buckets` property of the `AWS::CloudFormation::Authentication` metadata.
 
-For sources, CloudFormation looks for authentication information in the `uris` or
-`buckets` property of the `AWS::CloudFormation::Authentication`
-metadata.
+For sources, CloudFormation looks for authentication information in the `uris` or `buckets` property of the `AWS::CloudFormation::Authentication` metadata.
 
-###### Topics
-
-- [Syntax](#aws-resource-cloudformation-authentication-syntax)
-
-- [Properties](#w2aac19c23c15c19)
-
-- [Examples](#aws-resource-authentication-examples)
+**Topics**
++ [Syntax](#aws-resource-cloudformation-authentication-syntax)
++ [Properties](#w2aac19c23c15c19)
++ [Examples](#aws-resource-authentication-examples)
 
 ## Syntax
+<a name="aws-resource-cloudformation-authentication-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
-Be aware of the following considerations when using the
-`AWS::CloudFormation::Authentication` metadata type:
+Be aware of the following considerations when using the `AWS::CloudFormation::Authentication` metadata type:
++ Unlike most CloudFormation resources, the `AWS::CloudFormation::Authentication` metadata type doesn't contain a block called *Properties*, but instead contains a list of user-named blocks, each containing its own authentication properties.
 
-- Unlike most CloudFormation resources, the
-`AWS::CloudFormation::Authentication` metadata type doesn't contain a
-block called _Properties_, but instead contains a list of
-user-named blocks, each containing its own authentication properties.
-
-Not all properties pertain to each authentication type. For more information, see
-the [type](#cfn-cloudformation-authentication-type)
-property.
-
-- Unlike most CloudFormation resources, `AWS::CloudFormation::Authentication`
-property names use lower camel case.
+  Not all properties pertain to each authentication type. For more information, see the [type](#cfn-cloudformation-authentication-type) property.
++ Unlike most CloudFormation resources, `AWS::CloudFormation::Authentication` property names use lower camel case.
 
 ### JSON
+<a name="aws-resource-cloudformation-authentication-syntax.json"></a>
 
-```json
-
+```
 {
   "AWS::CloudFormation::Authentication" {
-    "String" : {
-      "accessKeyId" : String,
-      "buckets" : [ String, ... ],
-      "password" : String,
-      "secretKey" : String,
-      "type" : String,
-      "uris" : [ String, ... ],
-      "username" : String,
-      "roleName" : String
+    "{{String}}" : {
+      "accessKeyId" : {{String}},
+      "buckets" : [ {{String, ...}} ],
+      "password" : {{String}},
+      "secretKey" : {{String}},
+      "type" : {{String}},
+      "uris" : [ {{String, ...}} ],
+      "username" : {{String}},
+      "roleName" : {{String}}
     }
   }
 }
 ```
 
 ### YAML
+<a name="aws-resource-cloudformation-authentication-syntax.yaml"></a>
 
-```yaml
-
+```
 AWS::CloudFormation::Authentication
-String:
-  accessKeyId: String
+{{String}}:
+  accessKeyId: {{String}}
   buckets:
-    - String
-  password: String
-  secretKey: String
-  type: String
+    - {{String}}
+  password: {{String}}
+  secretKey: {{String}}
+  type: {{String}}
   uris:
-    - String
-  username: String
-  roleName: String
+    - {{String}}
+  username: {{String}}
+  roleName: {{String}}
 ```
 
 ## Properties
+<a name="w2aac19c23c15c19"></a>
 
-`accessKeyId`
-
+`accessKeyId`  <a name="cfn-cloudformation-authentication-accesskeyid"></a>
 Specifies the access key ID for S3 authentication.
+*Required*: Conditional. Can be specified only if the `type` property is set to `S3`.
+*Type*: String
 
-_Required_: Conditional. Can be specified only if the `type` property
-is set to `S3`.
+`buckets`  <a name="cfn-cloudformation-authentication-buckets"></a>
+A comma-delimited list of Amazon S3 buckets to be associated with the S3 authentication credentials.
+*Required*: Conditional. Can be specified only if the `type` property is set to `S3`.
+*Type*: List of String values
 
-_Type_: String
-
-`buckets`
-
-A comma-delimited list of Amazon S3 buckets to be associated with the S3
-authentication credentials.
-
-_Required_: Conditional. Can be specified only if the `type` property
-is set to `S3`.
-
-_Type_: List of String values
-
-`password`
-
+`password`  <a name="cfn-cloudformation-authentication-password"></a>
 Specifies the password for basic authentication.
+*Required*: Conditional. Can be specified only if the type property is set to `basic`.
+*Type*: String
 
-_Required_: Conditional. Can be specified only if the type property is set to
-`basic`.
-
-_Type_: String
-
-`secretKey`
-
+`secretKey`  <a name="cfn-cloudformation-authentication-secretkey"></a>
 Specifies the secret key for S3 authentication.
+*Required*: Conditional. Can be specified only if the `type` property is set to `S3`.
+*Type*: String
 
-_Required_: Conditional. Can be specified only if the `type` property
-is set to `S3`.
+`type`  <a name="cfn-cloudformation-authentication-type"></a>
+Specifies whether the authentication scheme uses a user name and password (basic) or an access key ID and secret key (S3).
+If you specify `basic`, specify the `username`, `password`, and `uris` properties.
+If you specify `S3`, specify the `accessKeyId`, `secretKey`, and `buckets` (optional) properties.
+*Required*: Yes
+*Valid values*: `basic` \| `S3`
 
-_Type_: String
+`uris`  <a name="cfn-cloudformation-authentication-uris"></a>
+A comma-delimited list of URIs to be associated with the basic authentication credentials. The authorization applies to the specified URIs and any more specific URI. For example, if you specify `http://www.example.com`, the authorization will also apply to `http://www.example.com/test`.
+*Required*: Conditional. Can be specified only if the `type` property is set to `basic`.
+*Type*: List of String values
 
-`type`
-
-Specifies whether the authentication scheme uses a user name and password
-(basic) or an access key ID and secret key (S3).
-
-If you specify `basic`, specify the `username`,
-`password`, and `uris` properties.
-
-If you specify `S3`, specify the `accessKeyId`,
-`secretKey`, and `buckets` (optional) properties.
-
-_Required_: Yes
-
-_Valid values_: `basic` \| `S3`
-
-`uris`
-
-A comma-delimited list of URIs to be associated with the basic authentication
-credentials. The authorization applies to the specified URIs and any more specific
-URI. For example, if you specify `http://www.example.com`, the
-authorization will also apply to `http://www.example.com/test`.
-
-_Required_: Conditional. Can be specified only if the `type` property
-is set to `basic`.
-
-_Type_: List of String values
-
-`username`
-
+`username`  <a name="cfn-cloudformation-authentication-username"></a>
 Specifies the user name for basic authentication.
+*Required*: Conditional. Can be specified only if the type property is set to `basic`.
+*Type*: String
 
-_Required_: Conditional. Can be specified only if the type property is set to
-`basic`.
-
-_Type_: String
-
-`roleName`
-
+`roleName`  <a name="cfn-cloudformation-authentication-rolename"></a>
 Describes the role for role-based authentication.
-
-###### Important
-
-This role must be contained within the instance profile that's attached to
-the EC2 instance. An instance profile can only contain one IAM role.
-
-_Required_: Conditional. Can be specified only if the `type` property
-is set to `S3`.
-
-_Type_: String.
+This role must be contained within the instance profile that's attached to the EC2 instance. An instance profile can only contain one IAM role.
+*Required*: Conditional. Can be specified only if the `type` property is set to `S3`.
+*Type*: String.
 
 ## Examples
+<a name="aws-resource-authentication-examples"></a>
 
-###### Topics
-
-- [EC2 web server authentication](#aws-resource-cloudformation-authentication-example1)
-
-- [Specifying both basic and S3 authentication](#aws-resource-cloudformation-authentication-example2)
-
-- [IAM roles](#aws-resource-cloudformation-authentication-example3)
+**Topics**
++ [EC2 web server authentication](#aws-resource-cloudformation-authentication-example1)
++ [Specifying both basic and S3 authentication](#aws-resource-cloudformation-authentication-example2)
++ [IAM roles](#aws-resource-cloudformation-authentication-example3)
 
 ### EC2 web server authentication
+<a name="aws-resource-cloudformation-authentication-example1"></a>
 
-This template snippet shows how to get a file from a private S3 bucket within an EC2
-instance. The credentials used for authentication are defined in the
-`AWS::CloudFormation::Authentication` metadata, and referenced by the
-`AWS::CloudFormation::Init` metadata in the _files_
-section.
+This template snippet shows how to get a file from a private S3 bucket within an EC2 instance. The credentials used for authentication are defined in the `AWS::CloudFormation::Authentication` metadata, and referenced by the `AWS::CloudFormation::Init` metadata in the *files* section.
 
 #### JSON
+<a name="aws-resource-cloudformation-authentication-example1.json"></a>
 
-```json
-
+```
 "WebServer": {
    "Type": "AWS::EC2::Instance",
    "DependsOn" : "BucketPolicy",
@@ -246,15 +174,15 @@ section.
       }
    },
    "Properties": {
-   EC2 Resource Properties ...
+   {{EC2 Resource Properties ...}}
    }
 }
 ```
 
 #### YAML
+<a name="aws-resource-cloudformation-authentication-example1.yaml"></a>
 
-```yaml
-
+```
 WebServer:
   Type: AWS::EC2::Instance
   DependsOn: BucketPolicy
@@ -286,18 +214,18 @@ WebServer:
         accessKeyId: !Ref AccessKeyID
         secretKey: !Ref SecretAccessKey
   Properties:
-  EC2 Resource Properties ...
+  {{EC2 Resource Properties ...}}
 ```
 
 ### Specifying both basic and S3 authentication
+<a name="aws-resource-cloudformation-authentication-example2"></a>
 
-The following example template snippet includes both _basic_ and
-_S3_ authentication types.
+The following example template snippet includes both *basic* and *S3* authentication types.
 
 #### JSON
+<a name="aws-resource-cloudformation-authentication-example2.json"></a>
 
-```json
-
+```
 "AWS::CloudFormation::Authentication" : {
    "testBasic" : {
       "type" : "basic",
@@ -315,9 +243,9 @@ _S3_ authentication types.
 ```
 
 #### YAML
+<a name="aws-resource-cloudformation-authentication-example2.yaml"></a>
 
-```yaml
-
+```
 AWS::CloudFormation::Authentication:
   testBasic:
     type: basic
@@ -334,22 +262,17 @@ AWS::CloudFormation::Authentication:
 ```
 
 ### IAM roles
+<a name="aws-resource-cloudformation-authentication-example3"></a>
 
 The following example shows how to use IAM roles:
-
-- `myRole` is an [AWS::IAM::Role](aws-resource-iam-role.md) resource.
-
-- The Amazon EC2 instance that runs `cfn-init` is associated with
-`myRole` through an instance profile.
-
-- The example specifies the authentication by using the `buckets`
-property, like in Amazon S3 authentication. You can also specify authentication by
-name.
++ `myRole` is an [AWS::IAM::Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html) resource.
++ The Amazon EC2 instance that runs `cfn-init` is associated with `myRole` through an instance profile.
++ The example specifies the authentication by using the `buckets` property, like in Amazon S3 authentication. You can also specify authentication by name.
 
 #### JSON
+<a name="aws-resource-cloudformation-authentication-example3.json"></a>
 
-```json
-
+```
 "AWS::CloudFormation::Authentication": {
     "rolebased" : {
         "type": "S3",
@@ -360,9 +283,9 @@ name.
 ```
 
 #### YAML
+<a name="aws-resource-cloudformation-authentication-example3.yaml"></a>
 
-```yaml
-
+```
 AWS::CloudFormation::Authentication:
   rolebased:
     type: S3
@@ -370,11 +293,5 @@ AWS::CloudFormation::Authentication:
       - !Sub ${BucketName}
     roleName: !Ref myRole
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Metadata
-
-AWS::CloudFormation::Init
 
 All content copied from https://docs.aws.amazon.com/.

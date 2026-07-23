@@ -2,67 +2,50 @@
 title: "AWS::ObservabilityAdmin::OrganizationTelemetryRule AdvancedEventSelector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule AdvancedEventSelector
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedeventselector"></a>
 
-Advanced event selectors let you create fine-grained selectors for management, data, and
-network activity events.
+Advanced event selectors let you create fine-grained selectors for management, data, and network activity events.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedeventselector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedeventselector-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldSelectors" : [ AdvancedFieldSelector, ... ],
-  "Name" : String
+  "[FieldSelectors](#cfn-observabilityadmin-organizationtelemetryrule-advancedeventselector-fieldselectors)" : {{[ AdvancedFieldSelector, ... ]}},
+  "[Name](#cfn-observabilityadmin-organizationtelemetryrule-advancedeventselector-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedeventselector-syntax.yaml"></a>
 
-```yaml
-
-  FieldSelectors:
-    - AdvancedFieldSelector
-  Name: String
-
+```
+  [FieldSelectors](#cfn-observabilityadmin-organizationtelemetryrule-advancedeventselector-fieldselectors): {{
+    - AdvancedFieldSelector}}
+  [Name](#cfn-observabilityadmin-organizationtelemetryrule-advancedeventselector-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedeventselector-properties"></a>
 
-`FieldSelectors`
-
+`FieldSelectors`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedeventselector-fieldselectors"></a>
 Contains all selector statements in an advanced event selector.
+*Required*: Yes
+*Type*: Array of [AdvancedFieldSelector](aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [AdvancedFieldSelector](aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-An optional, descriptive name for an advanced event selector, such as "Log data events for
-only two S3 buckets".
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ActionCondition
-
-AdvancedFieldSelector
+`Name`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedeventselector-name"></a>
+An optional, descriptive name for an advanced event selector, such as "Log data events for only two S3 buckets".
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

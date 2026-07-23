@@ -2,183 +2,137 @@
 title: "AWS::EC2::LaunchTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate
+<a name="aws-resource-ec2-launchtemplate"></a>
 
 Specifies the properties for creating a launch template.
 
 The minimum required properties for specifying a launch template are as follows:
++ You must specify at least one property for the launch template data.
++ You can optionally specify a name for the launch template. If you do not specify a name, CloudFormation creates a name for you.
 
-- You must specify at least one property for the launch template data.
+A launch template can contain some or all of the configuration information to launch an instance. When you launch an instance using a launch template, instance properties that are not specified in the launch template use default values, except the `ImageId` property, which has no default value. If you do not specify an AMI ID for the launch template `ImageId` property, you must specify an AMI ID for the instance `ImageId` property.
 
-- You can optionally specify a name for the launch template. If you do not specify a
-name, CloudFormation creates a name for you.
-
-A launch template can contain some or all of the configuration information to launch an
-instance. When you launch an instance using a launch template, instance properties that are
-not specified in the launch template use default values, except the `ImageId`
-property, which has no default value. If you do not specify an AMI ID for the launch
-template `ImageId` property, you must specify an AMI ID for the instance
-`ImageId` property.
-
-For more information, see [Launch an instance from a\
-launch template](../../../ec2/latest/userguide/ec2-launch-templates.md) in the _Amazon EC2 User Guide_.
+For more information, see [Launch an instance from a launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html) in the *Amazon EC2 User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-launchtemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-launchtemplate-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::LaunchTemplate",
   "Properties" : {
-      "LaunchTemplateData" : LaunchTemplateData,
-      "LaunchTemplateName" : String,
-      "TagSpecifications" : [ LaunchTemplateTagSpecification, ... ],
-      "VersionDescription" : String
+      "[LaunchTemplateData](#cfn-ec2-launchtemplate-launchtemplatedata)" : {{LaunchTemplateData}},
+      "[LaunchTemplateName](#cfn-ec2-launchtemplate-launchtemplatename)" : {{String}},
+      "[TagSpecifications](#cfn-ec2-launchtemplate-tagspecifications)" : {{[ LaunchTemplateTagSpecification, ... ]}},
+      "[VersionDescription](#cfn-ec2-launchtemplate-versiondescription)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-launchtemplate-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::LaunchTemplate
 Properties:
-  LaunchTemplateData:
-    LaunchTemplateData
-  LaunchTemplateName: String
-  TagSpecifications:
-    - LaunchTemplateTagSpecification
-  VersionDescription: String
-
+  [LaunchTemplateData](#cfn-ec2-launchtemplate-launchtemplatedata): {{
+    LaunchTemplateData}}
+  [LaunchTemplateName](#cfn-ec2-launchtemplate-launchtemplatename): {{String}}
+  [TagSpecifications](#cfn-ec2-launchtemplate-tagspecifications): {{
+    - LaunchTemplateTagSpecification}}
+  [VersionDescription](#cfn-ec2-launchtemplate-versiondescription): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-launchtemplate-properties"></a>
 
-`LaunchTemplateData`
-
+`LaunchTemplateData`  <a name="cfn-ec2-launchtemplate-launchtemplatedata"></a>
 The information for the launch template.
+*Required*: Yes
+*Type*: [LaunchTemplateData](aws-properties-ec2-launchtemplate-launchtemplatedata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [LaunchTemplateData](aws-properties-ec2-launchtemplate-launchtemplatedata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LaunchTemplateName`
-
+`LaunchTemplateName`  <a name="cfn-ec2-launchtemplate-launchtemplatename"></a>
 A name for the launch template.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`TagSpecifications`  <a name="cfn-ec2-launchtemplate-tagspecifications"></a>
+The tags to apply to the launch template on creation. To tag the launch template, the resource type must be `launch-template`.
+To specify the tags for resources that are created during instance launch, use [TagSpecifications](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications).
+*Required*: No
+*Type*: Array of [LaunchTemplateTagSpecification](aws-properties-ec2-launchtemplate-launchtemplatetagspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9\(\)\.\-/_]+`
-
-_Minimum_: `3`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagSpecifications`
-
-The tags to apply to the launch template on creation. To tag the launch template, the
-resource type must be `launch-template`.
-
-To specify the tags for resources that are created during instance launch, use
-[TagSpecifications](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications).
-
-_Required_: No
-
-_Type_: Array of [LaunchTemplateTagSpecification](aws-properties-ec2-launchtemplate-launchtemplatetagspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionDescription`
-
+`VersionDescription`  <a name="cfn-ec2-launchtemplate-versiondescription"></a>
 A description for the first version of the launch template.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-launchtemplate-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-launchtemplate-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the launch template, for example,
-`lt-01238c059e3466abc`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the launch template, for example, `lt-01238c059e3466abc`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-launchtemplate-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DefaultVersionNumber`
+####
+<a name="aws-resource-ec2-launchtemplate-return-values-fn--getatt-fn--getatt"></a>
 
+`DefaultVersionNumber`  <a name="DefaultVersionNumber-fn::getatt"></a>
 The default version of the launch template, such as 2.
+The default version of a launch template cannot be specified in AWS CloudFormation. The default version can be set in the Amazon EC2 console or by using the `modify-launch-template`AWS CLI command.
 
-The default version of a launch template cannot be specified in AWS CloudFormation. The default version can be set in the Amazon EC2 console or by using the
-`modify-launch-template` AWS CLI command.
-
-`LatestVersionNumber`
-
+`LatestVersionNumber`  <a name="LatestVersionNumber-fn::getatt"></a>
 The latest version of the launch template, such as `5`.
 
-`LaunchTemplateId`
-
+`LaunchTemplateId`  <a name="LaunchTemplateId-fn::getatt"></a>
 The ID of the launch template.
 
 ## Examples
+<a name="aws-resource-ec2-launchtemplate--examples"></a>
 
-- [Launch template with an IAM instance profile](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile)
-
-- [Launch template with a block device mapping](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping)
-
-- [Launch template with instance metadata options](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options)
-
-- [Launch template with public IP addresses for Amazon EC2 Auto Scaling](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for)
+**Topics**
++ [Launch template with an IAM instance profile](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile)
++ [Launch template with a block device mapping](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping)
++ [Launch template with instance metadata options](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options)
++ [Launch template with public IP addresses for Amazon EC2 Auto Scaling](#aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for)
 
 ### Launch template with an IAM instance profile
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile"></a>
 
-The following example creates a launch template and an instance profile. The
-instance profile contains the IAM role named `MyAdminRole` and can provide
-the role's temporary credentials to an application that runs on the instances created
-by this launch template.
+The following example creates a launch template and an instance profile. The instance profile contains the IAM role named `MyAdminRole` and can provide the role's temporary credentials to an application that runs on the instances created by this launch template.
 
-The launch template also prevents accidental instance termination when using the
-Amazon EC2 console, CLI, or API, by specifying `true` for the
-`DisableApiTermination` property. If the instances created by this
-launch template are launched in a default VPC, they receive a public IP address by
-default. If the instances are launched in a nondefault VPC, they do not receive a
-public IP address by default.
+The launch template also prevents accidental instance termination when using the Amazon EC2 console, CLI, or API, by specifying `true` for the `DisableApiTermination` property. If the instances created by this launch template are launched in a default VPC, they receive a public IP address by default. If the instances are launched in a nondefault VPC, they do not receive a public IP address by default.
 
-To see another example that uses an IAM role, user data, and tags for the instances
-and volumes launched by that launch template, see [Create launch templates with AWS CloudFormation](../userguide/quickref-ec2-launch-templates.md).
+To see another example that uses an IAM role, user data, and tags for the instances and volumes launched by that launch template, see [Create launch templates with AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ec2-launch-templates.html).
 
 #### JSON
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -213,9 +167,9 @@ and volumes launched by that launch template, see [Create launch templates with 
 ```
 
 #### YAML
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyIamInstanceProfile:
@@ -243,22 +197,16 @@ Resources:
 ```
 
 ### Launch template with a block device mapping
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping"></a>
 
-The following example creates a launch template with a block device mapping: an
-encrypted 22 gigabyte EBS volume mapped to /dev/xvdcz. The /dev/xvdcz volume uses the
-General Purpose SSD (gp2) volume type and is deleted when terminating the instance it
-is attached to. This example uses the Fn::Sub function to customize the name of the
-launch template to include the stack name.
+The following example creates a launch template with a block device mapping: an encrypted 22 gigabyte EBS volume mapped to /dev/xvdcz. The /dev/xvdcz volume uses the General Purpose SSD (gp2) volume type and is deleted when terminating the instance it is attached to. This example uses the Fn::Sub function to customize the name of the launch template to include the stack name.
 
-The launch template also provisions T2 instances in unlimited mode by specifying a
-value of `unlimited` for the `CPUCredits` property. Because
-`Monitoring` is enabled, EC2 metric data will be available at 1-minute
-intervals (known as detailed monitoring) through CloudWatch.
+The launch template also provisions T2 instances in unlimited mode by specifying a value of `unlimited` for the `CPUCredits` property. Because `Monitoring` is enabled, EC2 metric data will be available at 1-minute intervals (known as detailed monitoring) through CloudWatch.
 
 #### JSON
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources":{
@@ -292,9 +240,9 @@ intervals (known as detailed monitoring) through CloudWatch.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myLaunchTemplate:
@@ -322,14 +270,14 @@ Resources:
 ```
 
 ### Launch template with instance metadata options
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options"></a>
 
-The following example creates a launch template with instance metadata options. The option to
-allow access to the instance tags through instance metadata is enabled.
+The following example creates a launch template with instance metadata options. The option to allow access to the instance tags through instance metadata is enabled.
 
 #### JSON
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "myLaunchTemplate": {
@@ -363,9 +311,9 @@ allow access to the instance tags through instance metadata is enabled.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options--yaml"></a>
 
-```yaml
-
+```
 Resources:
    myLaunchTemplate:
      Type: 'AWS::EC2::LaunchTemplate'
@@ -385,24 +333,18 @@ Resources:
 ```
 
 ### Launch template with public IP addresses for Amazon EC2 Auto Scaling
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for"></a>
 
-The following example creates and configures a launch template to assign public IP
-addresses to instances launched in a nondefault VPC. Note that when you specify a
-network interface for Amazon EC2 Auto Scaling, specify the VPC subnets as properties
-of the Auto Scaling group, and not in the launch template (because they will be
-ignored).
+The following example creates and configures a launch template to assign public IP addresses to instances launched in a nondefault VPC. Note that when you specify a network interface for Amazon EC2 Auto Scaling, specify the VPC subnets as properties of the Auto Scaling group, and not in the launch template (because they will be ignored).
 
-This example launch template also sets the instance placement tenancy to
-`dedicated`.
+This example launch template also sets the instance placement tenancy to `dedicated`.
 
-For more information about creating launch templates for Amazon EC2 Auto Scaling,
-see [Creating a launch\
-template for an Auto Scaling group](../../../autoscaling/ec2/userguide/create-launch-template.md) in the _Amazon EC2 Auto Scaling User Guide_.
+For more information about creating launch templates for Amazon EC2 Auto Scaling, see [Creating a launch template for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 #### JSON
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -438,9 +380,9 @@ template for an Auto Scaling group](../../../autoscaling/ec2/userguide/create-la
 ```
 
 #### YAML
+<a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myLaunchTemplate:
@@ -463,14 +405,7 @@ Resources:
 ```
 
 ## See also
-
-- [CreateLaunchTemplate](../../../../reference/awsec2/latest/apireference/api-createlaunchtemplate.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AcceleratorCount
+<a name="aws-resource-ec2-launchtemplate--seealso"></a>
++ [ CreateLaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplate.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

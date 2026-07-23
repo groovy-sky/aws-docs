@@ -2,103 +2,77 @@
 title: "AWS::ServiceCatalog::ServiceActionAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::ServiceActionAssociation
+<a name="aws-resource-servicecatalog-serviceactionassociation"></a>
 
 A self-service action association consisting of the Action ID, the Product ID, and the Provisioning Artifact ID.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-serviceactionassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-serviceactionassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::ServiceActionAssociation",
   "Properties" : {
-      "ProductId" : String,
-      "ProvisioningArtifactId" : String,
-      "ServiceActionId" : String
+      "[ProductId](#cfn-servicecatalog-serviceactionassociation-productid)" : {{String}},
+      "[ProvisioningArtifactId](#cfn-servicecatalog-serviceactionassociation-provisioningartifactid)" : {{String}},
+      "[ServiceActionId](#cfn-servicecatalog-serviceactionassociation-serviceactionid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-serviceactionassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::ServiceActionAssociation
 Properties:
-  ProductId: String
-  ProvisioningArtifactId: String
-  ServiceActionId: String
-
+  [ProductId](#cfn-servicecatalog-serviceactionassociation-productid): {{String}}
+  [ProvisioningArtifactId](#cfn-servicecatalog-serviceactionassociation-provisioningartifactid): {{String}}
+  [ServiceActionId](#cfn-servicecatalog-serviceactionassociation-serviceactionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-serviceactionassociation-properties"></a>
 
-`ProductId`
-
+`ProductId`  <a name="cfn-servicecatalog-serviceactionassociation-productid"></a>
 The product identifier. For example, `prod-abcdzk7xy33qa`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_-]{1,99}\Z`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9_-]{1,99}\Z`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProvisioningArtifactId`
-
+`ProvisioningArtifactId`  <a name="cfn-servicecatalog-serviceactionassociation-provisioningartifactid"></a>
 The identifier of the provisioning artifact. For example, `pa-4abcdjnxjj6ne`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_-]{1,99}\Z`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9_-]{1,99}\Z`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ServiceActionId`
-
+`ServiceActionId`  <a name="cfn-servicecatalog-serviceactionassociation-serviceactionid"></a>
 The self-service action identifier. For example, `act-fs7abcd89wxyz`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9_-]{1,99}\Z`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_-]{1,99}\Z`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-servicecatalog-serviceactionassociation-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefinitionParameter
-
-AWS::ServiceCatalog::StackSetConstraint
+<a name="aws-resource-servicecatalog-serviceactionassociation-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

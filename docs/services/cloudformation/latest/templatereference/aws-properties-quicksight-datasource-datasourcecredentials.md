@@ -2,105 +2,71 @@
 title: "AWS::QuickSight::DataSource DataSourceCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource DataSourceCredentials
+<a name="aws-properties-quicksight-datasource-datasourcecredentials"></a>
 
-Data source credentials. This is a variant type structure. For this structure to be
-valid, only one of the attributes can be non-null.
+Data source credentials. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-datasourcecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-datasourcecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "CopySourceArn" : String,
-  "CredentialPair" : CredentialPair,
-  "KeyPairCredentials" : KeyPairCredentials,
-  "SecretArn" : String
+  "[CopySourceArn](#cfn-quicksight-datasource-datasourcecredentials-copysourcearn)" : {{String}},
+  "[CredentialPair](#cfn-quicksight-datasource-datasourcecredentials-credentialpair)" : {{CredentialPair}},
+  "[KeyPairCredentials](#cfn-quicksight-datasource-datasourcecredentials-keypaircredentials)" : {{KeyPairCredentials}},
+  "[SecretArn](#cfn-quicksight-datasource-datasourcecredentials-secretarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-datasourcecredentials-syntax.yaml"></a>
 
-```yaml
-
-  CopySourceArn: String
-  CredentialPair:
-    CredentialPair
-  KeyPairCredentials:
-    KeyPairCredentials
-  SecretArn: String
-
+```
+  [CopySourceArn](#cfn-quicksight-datasource-datasourcecredentials-copysourcearn): {{String}}
+  [CredentialPair](#cfn-quicksight-datasource-datasourcecredentials-credentialpair): {{
+    CredentialPair}}
+  [KeyPairCredentials](#cfn-quicksight-datasource-datasourcecredentials-keypaircredentials): {{
+    KeyPairCredentials}}
+  [SecretArn](#cfn-quicksight-datasource-datasourcecredentials-secretarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-datasourcecredentials-properties"></a>
 
-`CopySourceArn`
+`CopySourceArn`  <a name="cfn-quicksight-datasource-datasourcecredentials-copysourcearn"></a>
+The Amazon Resource Name (ARN) of a data source that has the credential pair that you want to use. When `CopySourceArn` is not null, the credential pair from the data source in the ARN is used as the credentials for the `DataSourceCredentials` structure.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[-a-z0-9]*:quicksight:[-a-z0-9]*:[0-9]{12}:datasource/.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of a data source that has the credential pair that you
-want to use. When `CopySourceArn` is not null, the credential pair from the
-data source in the ARN is used as the credentials for the
-`DataSourceCredentials` structure.
+`CredentialPair`  <a name="cfn-quicksight-datasource-datasourcecredentials-credentialpair"></a>
+Credential pair. For more information, see ` [CredentialPair](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CredentialPair.html) `.
+*Required*: No
+*Type*: [CredentialPair](aws-properties-quicksight-datasource-credentialpair.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[-a-z0-9]*:quicksight:[-a-z0-9]*:[0-9]{12}:datasource/.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CredentialPair`
-
-Credential pair. For more information, see
-`
-                            CredentialPair
-                        `.
-
-_Required_: No
-
-_Type_: [CredentialPair](aws-properties-quicksight-datasource-credentialpair.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyPairCredentials`
-
+`KeyPairCredentials`  <a name="cfn-quicksight-datasource-datasourcecredentials-keypaircredentials"></a>
 The credentials for connecting using key-pair.
+*Required*: No
+*Type*: [KeyPairCredentials](aws-properties-quicksight-datasource-keypaircredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KeyPairCredentials](aws-properties-quicksight-datasource-keypaircredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretArn`
-
+`SecretArn`  <a name="cfn-quicksight-datasource-datasourcecredentials-secretarn"></a>
 The Amazon Resource Name (ARN) of the secret associated with the data source in AWS Secrets Manager.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[-a-z0-9]*:secretsmanager:[-a-z0-9]*:[0-9]{12}:secret:.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatabricksParameters
-
-DataSourceErrorInfo
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[-a-z0-9]*:secretsmanager:[-a-z0-9]*:[0-9]{12}:secret:.+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,57 +2,43 @@
 title: "AWS::Pipes::Pipe BatchArrayProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe BatchArrayProperties
+<a name="aws-properties-pipes-pipe-batcharrayproperties"></a>
 
-The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000.
-If you specify array properties for a job, it becomes an array job. This parameter is used only if the target is an AWS Batch job.
+The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000. If you specify array properties for a job, it becomes an array job. This parameter is used only if the target is an AWS Batch job.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-batcharrayproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-batcharrayproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Size" : Integer
+  "[Size](#cfn-pipes-pipe-batcharrayproperties-size)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-batcharrayproperties-syntax.yaml"></a>
 
-```yaml
-
-  Size: Integer
-
+```
+  [Size](#cfn-pipes-pipe-batcharrayproperties-size): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-batcharrayproperties-properties"></a>
 
-`Size`
-
+`Size`  <a name="cfn-pipes-pipe-batcharrayproperties-size"></a>
 The size of the array, if this is an array batch job.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `2`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AwsVpcConfiguration
-
-BatchContainerOverrides
+*Required*: No
+*Type*: Integer
+*Minimum*: `2`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,69 +2,52 @@
 title: "AWS::IoT::ThingGroup ThingGroupProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::ThingGroup ThingGroupProperties
+<a name="aws-properties-iot-thinggroup-thinggroupproperties"></a>
 
 Thing group properties.
 
 ## Syntax
+<a name="aws-properties-iot-thinggroup-thinggroupproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-thinggroup-thinggroupproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttributePayload" : AttributePayload,
-  "ThingGroupDescription" : String
+  "[AttributePayload](#cfn-iot-thinggroup-thinggroupproperties-attributepayload)" : {{AttributePayload}},
+  "[ThingGroupDescription](#cfn-iot-thinggroup-thinggroupproperties-thinggroupdescription)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-thinggroup-thinggroupproperties-syntax.yaml"></a>
 
-```yaml
-
-  AttributePayload:
-    AttributePayload
-  ThingGroupDescription: String
-
+```
+  [AttributePayload](#cfn-iot-thinggroup-thinggroupproperties-attributepayload): {{
+    AttributePayload}}
+  [ThingGroupDescription](#cfn-iot-thinggroup-thinggroupproperties-thinggroupdescription): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-thinggroup-thinggroupproperties-properties"></a>
 
-`AttributePayload`
-
+`AttributePayload`  <a name="cfn-iot-thinggroup-thinggroupproperties-attributepayload"></a>
 The thing group attributes in JSON format.
+*Required*: No
+*Type*: [AttributePayload](aws-properties-iot-thinggroup-attributepayload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AttributePayload](aws-properties-iot-thinggroup-attributepayload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThingGroupDescription`
-
+`ThingGroupDescription`  <a name="cfn-iot-thinggroup-thinggroupproperties-thinggroupdescription"></a>
 The thing group description.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{Graph}\x20]*`
-
-_Maximum_: `2028`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::IoT::ThingPrincipalAttachment
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{Graph}\x20]*`
+*Maximum*: `2028`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,120 +3,75 @@ title: "Parameter"
 ---
 
 # Parameter
+<a name="API_dax_Parameter"></a>
 
-Describes an individual setting that controls some aspect of DAX
-behavior.
+Describes an individual setting that controls some aspect of DAX behavior.
 
 ## Contents
+<a name="API_dax_Parameter_Contents"></a>
 
-###### Note
-
+**Note**
 In the following list, the required parameters are described first.
 
-**AllowedValues**
-
+ ** AllowedValues **   <a name="DDB-Type-dax_Parameter-AllowedValues"></a>
 A range of values within which the parameter can be set.
-
 Type: String
-
 Required: No
 
-**ChangeType**
-
-The conditions under which changes to this parameter can be applied. For example,
-`requires-reboot` indicates that a new value for this parameter will only
-take effect if a node is rebooted.
-
+ ** ChangeType **   <a name="DDB-Type-dax_Parameter-ChangeType"></a>
+The conditions under which changes to this parameter can be applied. For example, `requires-reboot` indicates that a new value for this parameter will only take effect if a node is rebooted.
 Type: String
-
 Valid Values: `IMMEDIATE | REQUIRES_REBOOT`
-
 Required: No
 
-**DataType**
-
+ ** DataType **   <a name="DDB-Type-dax_Parameter-DataType"></a>
 The data type of the parameter. For example, `integer`:
-
 Type: String
-
 Required: No
 
-**Description**
-
+ ** Description **   <a name="DDB-Type-dax_Parameter-Description"></a>
 A description of the parameter
-
 Type: String
-
 Required: No
 
-**IsModifiable**
-
+ ** IsModifiable **   <a name="DDB-Type-dax_Parameter-IsModifiable"></a>
 Whether the customer is allowed to modify the parameter.
-
 Type: String
-
 Valid Values: `TRUE | FALSE | CONDITIONAL`
-
 Required: No
 
-**NodeTypeSpecificValues**
-
+ ** NodeTypeSpecificValues **   <a name="DDB-Type-dax_Parameter-NodeTypeSpecificValues"></a>
 A list of node types, and specific parameter values for each node.
-
-Type: Array of [NodeTypeSpecificValue](api-dax-nodetypespecificvalue.md) objects
-
+Type: Array of [NodeTypeSpecificValue](API_dax_NodeTypeSpecificValue.md) objects
 Required: No
 
-**ParameterName**
-
+ ** ParameterName **   <a name="DDB-Type-dax_Parameter-ParameterName"></a>
 The name of the parameter.
-
 Type: String
-
 Required: No
 
-**ParameterType**
-
-Determines whether the parameter can be applied to any nodes, or only nodes of a
-particular type.
-
+ ** ParameterType **   <a name="DDB-Type-dax_Parameter-ParameterType"></a>
+Determines whether the parameter can be applied to any nodes, or only nodes of a particular type.
 Type: String
-
 Valid Values: `DEFAULT | NODE_TYPE_SPECIFIC`
-
 Required: No
 
-**ParameterValue**
-
+ ** ParameterValue **   <a name="DDB-Type-dax_Parameter-ParameterValue"></a>
 The value for the parameter.
-
 Type: String
-
 Required: No
 
-**Source**
-
-How the parameter is defined. For example, `system` denotes a
-system-defined parameter.
-
+ ** Source **   <a name="DDB-Type-dax_Parameter-Source"></a>
+How the parameter is defined. For example, `system` denotes a system-defined parameter.
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_dax_Parameter_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dax-2017-04-19/Parameter)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dax-2017-04-19/Parameter)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dax-2017-04-19/Parameter)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotificationConfiguration
-
-ParameterGroup
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dax-2017-04-19/Parameter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dax-2017-04-19/Parameter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dax-2017-04-19/Parameter)
 
 All content copied from https://docs.aws.amazon.com/.

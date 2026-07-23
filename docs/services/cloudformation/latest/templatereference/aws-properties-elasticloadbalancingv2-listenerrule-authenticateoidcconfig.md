@@ -2,211 +2,136 @@
 title: "AWS::ElasticLoadBalancingV2::ListenerRule AuthenticateOidcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::ListenerRule AuthenticateOidcConfig
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig"></a>
 
-Specifies information required using an identity provide (IdP) that is compliant with
-OpenID Connect (OIDC) to authenticate users.
+Specifies information required using an identity provide (IdP) that is compliant with OpenID Connect (OIDC) to authenticate users.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthenticationRequestExtraParams" : {Key: Value, ...},
-  "AuthorizationEndpoint" : String,
-  "ClientId" : String,
-  "ClientSecret" : String,
-  "Issuer" : String,
-  "OnUnauthenticatedRequest" : String,
-  "Scope" : String,
-  "SessionCookieName" : String,
-  "SessionTimeout" : Integer,
-  "TokenEndpoint" : String,
-  "UseExistingClientSecret" : Boolean,
-  "UserInfoEndpoint" : String
+  "[AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authenticationrequestextraparams)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[AuthorizationEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authorizationendpoint)" : {{String}},
+  "[ClientId](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-clientid)" : {{String}},
+  "[ClientSecret](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-clientsecret)" : {{String}},
+  "[Issuer](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-issuer)" : {{String}},
+  "[OnUnauthenticatedRequest](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-onunauthenticatedrequest)" : {{String}},
+  "[Scope](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-scope)" : {{String}},
+  "[SessionCookieName](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-sessioncookiename)" : {{String}},
+  "[SessionTimeout](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-sessiontimeout)" : {{Integer}},
+  "[TokenEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-tokenendpoint)" : {{String}},
+  "[UseExistingClientSecret](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-useexistingclientsecret)" : {{Boolean}},
+  "[UserInfoEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-userinfoendpoint)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-syntax.yaml"></a>
 
-```yaml
-
-  AuthenticationRequestExtraParams:
-    Key: Value
-  AuthorizationEndpoint: String
-  ClientId: String
-  ClientSecret: String
-  Issuer: String
-  OnUnauthenticatedRequest: String
-  Scope: String
-  SessionCookieName: String
-  SessionTimeout: Integer
-  TokenEndpoint: String
-  UseExistingClientSecret: Boolean
-  UserInfoEndpoint: String
-
+```
+  [AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authenticationrequestextraparams): {{
+    {{Key}}: {{Value}}}}
+  [AuthorizationEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authorizationendpoint): {{String}}
+  [ClientId](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-clientid): {{String}}
+  [ClientSecret](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-clientsecret): {{String}}
+  [Issuer](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-issuer): {{String}}
+  [OnUnauthenticatedRequest](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-onunauthenticatedrequest): {{String}}
+  [Scope](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-scope): {{String}}
+  [SessionCookieName](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-sessioncookiename): {{String}}
+  [SessionTimeout](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-sessiontimeout): {{Integer}}
+  [TokenEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-tokenendpoint): {{String}}
+  [UseExistingClientSecret](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-useexistingclientsecret): {{Boolean}}
+  [UserInfoEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-userinfoendpoint): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-properties"></a>
 
-`AuthenticationRequestExtraParams`
+`AuthenticationRequestExtraParams`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authenticationrequestextraparams"></a>
+The query parameters (up to 10) to include in the redirect request to the authorization endpoint.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The query parameters (up to 10) to include in the redirect request to the authorization
-endpoint.
+`AuthorizationEndpoint`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authorizationendpoint"></a>
+The authorization endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizationEndpoint`
-
-The authorization endpoint of the IdP. This must be a full URL, including the HTTPS
-protocol, the domain, and the path.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientId`
-
+`ClientId`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-clientid"></a>
 The OAuth 2.0 client identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ClientSecret`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-clientsecret"></a>
+The OAuth 2.0 client secret. This parameter is required if you are creating a rule. If you are modifying a rule, you can omit this parameter if you set `UseExistingClientSecret` to true.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Issuer`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-issuer"></a>
+The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientSecret`
-
-The OAuth 2.0 client secret. This parameter is required if you are creating a rule. If you
-are modifying a rule, you can omit this parameter if you set
-`UseExistingClientSecret` to true.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Issuer`
-
-The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS
-protocol, the domain, and the path.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnUnauthenticatedRequest`
-
+`OnUnauthenticatedRequest`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-onunauthenticatedrequest"></a>
 The behavior if the user is not authenticated. The following are possible values:
++ deny`` - Return an HTTP 401 Unauthorized error.
++ allow`` - Allow the request to be forwarded to the target.
++ authenticate`` - Redirect the request to the IdP authorization endpoint. This is the default value.
+*Required*: No
+*Type*: String
+*Allowed values*: `deny | allow | authenticate`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- deny `` \- Return an HTTP 401 Unauthorized error.
+`Scope`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-scope"></a>
+The set of user claims to be requested from the IdP. The default is `openid`.
+To verify which scope values your IdP supports and how to separate multiple values, see the documentation for your IdP.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- allow `` \- Allow the request to be forwarded to the target.
+`SessionCookieName`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-sessioncookiename"></a>
+The name of the cookie used to maintain session information. The default is AWSELBAuthSessionCookie.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- authenticate `` \- Redirect the request to the IdP authorization endpoint. This is
-the default value.
+`SessionTimeout`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-sessiontimeout"></a>
+The maximum duration of the authentication session, in seconds. The default is 604800 seconds (7 days).
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TokenEndpoint`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-tokenendpoint"></a>
+The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`UseExistingClientSecret`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-useexistingclientsecret"></a>
+Indicates whether to use the existing client secret when modifying a rule. If you are creating a rule, you can omit this parameter or set it to false.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `deny | allow | authenticate`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scope`
-
-The set of user claims to be requested from the IdP. The default is
-`openid`.
-
-To verify which scope values your IdP supports and how to separate multiple values, see
-the documentation for your IdP.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionCookieName`
-
-The name of the cookie used to maintain session information. The default is
-AWSELBAuthSessionCookie.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionTimeout`
-
-The maximum duration of the authentication session, in seconds. The default is 604800
-seconds (7 days).
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TokenEndpoint`
-
-The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the
-domain, and the path.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseExistingClientSecret`
-
-Indicates whether to use the existing client secret when modifying a rule. If you are
-creating a rule, you can omit this parameter or set it to false.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserInfoEndpoint`
-
-The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol,
-the domain, and the path.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthenticateCognitoConfig
-
-FixedResponseConfig
+`UserInfoEndpoint`  <a name="cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-userinfoendpoint"></a>
+The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

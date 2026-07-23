@@ -2,67 +2,50 @@
 title: "AWS::WAFv2::LoggingConfiguration SingleHeader"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::LoggingConfiguration SingleHeader
+<a name="aws-properties-wafv2-loggingconfiguration-singleheader"></a>
 
-Inspect one of the headers in the web request, identified by name, for example,
-`User-Agent` or `Referer`. The name isn't case sensitive.
+Inspect one of the headers in the web request, identified by name, for example, `User-Agent` or `Referer`. The name isn't case sensitive.
 
-You can filter and inspect all headers with the `FieldToMatch` setting
-`Headers`.
+You can filter and inspect all headers with the `FieldToMatch` setting `Headers`.
 
-This is used to indicate the web request component to inspect, in the
-`FieldToMatch` specification.
+This is used to indicate the web request component to inspect, in the `FieldToMatch` specification.
 
 Example JSON: `"SingleHeader": { "Name": "haystack" }`
 
 ## Syntax
+<a name="aws-properties-wafv2-loggingconfiguration-singleheader-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-loggingconfiguration-singleheader-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-wafv2-loggingconfiguration-singleheader-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-loggingconfiguration-singleheader-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-wafv2-loggingconfiguration-singleheader-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-loggingconfiguration-singleheader-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-wafv2-loggingconfiguration-singleheader-name"></a>
 The name of the query header to inspect.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingFilter
-
-AWS::WAFv2::RegexPatternSet
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

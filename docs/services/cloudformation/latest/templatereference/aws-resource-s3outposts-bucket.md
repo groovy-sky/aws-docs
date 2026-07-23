@@ -2,181 +2,131 @@
 title: "AWS::S3Outposts::Bucket"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::Bucket
+<a name="aws-resource-s3outposts-bucket"></a>
 
-The AWS::S3Outposts::Bucket resource specifies a new Amazon S3 on Outposts bucket.
-To create an S3 on Outposts bucket, you must have S3 on Outposts capacity provisioned on your Outpost.
-For more information, see [Using Amazon S3 on Outposts](../../../s3/latest/userguide/s3onoutposts.md).
+The AWS::S3Outposts::Bucket resource specifies a new Amazon S3 on Outposts bucket. To create an S3 on Outposts bucket, you must have S3 on Outposts capacity provisioned on your Outpost. For more information, see [ Using Amazon S3 on Outposts](https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html).
 
 S3 on Outposts buckets support the following:
++ Tags
++ Lifecycle configuration rules for deleting expired objects
 
-- Tags
-
-- Lifecycle configuration rules for deleting expired objects
-
-For a complete list of restrictions and Amazon S3 feature limitations on S3 on Outposts,
-see [Amazon S3 on Outposts Restrictions and Limitations](../../../s3/latest/userguide/s3onoutpostsrestrictionslimitations.md).
+For a complete list of restrictions and Amazon S3 feature limitations on S3 on Outposts, see [ Amazon S3 on Outposts Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3OnOutpostsRestrictionsLimitations.html).
 
 ## Syntax
+<a name="aws-resource-s3outposts-bucket-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3outposts-bucket-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3Outposts::Bucket",
   "Properties" : {
-      "BucketName" : String,
-      "LifecycleConfiguration" : LifecycleConfiguration,
-      "OutpostId" : String,
-      "Tags" : [ Tag, ... ]
+      "[BucketName](#cfn-s3outposts-bucket-bucketname)" : {{String}},
+      "[LifecycleConfiguration](#cfn-s3outposts-bucket-lifecycleconfiguration)" : {{LifecycleConfiguration}},
+      "[OutpostId](#cfn-s3outposts-bucket-outpostid)" : {{String}},
+      "[Tags](#cfn-s3outposts-bucket-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3outposts-bucket-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3Outposts::Bucket
 Properties:
-  BucketName: String
-  LifecycleConfiguration:
-    LifecycleConfiguration
-  OutpostId: String
-  Tags:
-    - Tag
-
+  [BucketName](#cfn-s3outposts-bucket-bucketname): {{String}}
+  [LifecycleConfiguration](#cfn-s3outposts-bucket-lifecycleconfiguration): {{
+    LifecycleConfiguration}}
+  [OutpostId](#cfn-s3outposts-bucket-outpostid): {{String}}
+  [Tags](#cfn-s3outposts-bucket-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-s3outposts-bucket-properties"></a>
 
-`BucketName`
+`BucketName`  <a name="cfn-s3outposts-bucket-bucketname"></a>
+A name for the S3 on Outposts bucket. If you don't specify a name, AWS CloudFormation generates a unique ID and uses that ID for the bucket name. The bucket name must contain only lowercase letters, numbers, periods (.), and dashes (-) and must follow [ Amazon S3 bucket restrictions and limitations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html). For more information, see [Bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html#bucketnamingrules).
+If you specify a name, you can't perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you need to replace the resource, specify a new name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?=^.{3,63}$)(?!^(\d+\.)+\d+$)(^(([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])\.)*([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])$)`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A name for the S3 on Outposts bucket. If you don't specify a name, AWS CloudFormation generates a
-unique ID and uses that ID for the bucket name.
-The bucket name must contain only lowercase letters, numbers, periods (.), and dashes (-)
-and must follow [Amazon S3 bucket restrictions and limitations](../../../s3/latest/userguide/bucketrestrictions.md).
-For more information, see [Bucket \
-naming rules](../../../s3/latest/userguide/bucketrestrictions.md#bucketnamingrules).
+`LifecycleConfiguration`  <a name="cfn-s3outposts-bucket-lifecycleconfiguration"></a>
+Creates a new lifecycle configuration for the S3 on Outposts bucket or replaces an existing lifecycle configuration. Outposts buckets only support lifecycle configurations that delete/expire objects after a certain period of time and abort incomplete multipart uploads.
+*Required*: No
+*Type*: [LifecycleConfiguration](aws-properties-s3outposts-bucket-lifecycleconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Important
-
-If you specify a name, you can't perform updates that require replacement of this
-resource. You can perform updates that require no or some interruption. If you need to
-replace the resource, specify a new name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?=^.{3,63}$)(?!^(\d+\.)+\d+$)(^(([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])\.)*([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])$)`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LifecycleConfiguration`
-
-Creates a new lifecycle configuration for the S3 on Outposts bucket or replaces an existing
-lifecycle configuration. Outposts buckets only support lifecycle configurations that delete/expire objects
-after a certain period of time and abort incomplete multipart uploads.
-
-_Required_: No
-
-_Type_: [LifecycleConfiguration](aws-properties-s3outposts-bucket-lifecycleconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutpostId`
-
+`OutpostId`  <a name="cfn-s3outposts-bucket-outpostid"></a>
 The ID of the Outpost of the specified bucket.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(op-[a-f0-9]{17}|\d{12}|ec2)$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(op-[a-f0-9]{17}|\d{12}|ec2)$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-Sets the tags for an S3 on Outposts bucket. For more information, see [Using Amazon S3 on Outposts](../../../s3/latest/userguide/s3onoutposts.md).
-
-Use tags to organize your AWS bill to reflect your own cost structure. To do this, sign up to get your
-AWS account bill with tag key values included. Then, to see the cost of combined resources, organize your
-billing information according to resources with the same tag key values. For example, you can tag several
-resources with a specific application name, and then organize your billing information to see the total cost
-of that application across several services. For more information, see
-[Cost allocation and \
-tags](../../../awsaccountbilling/latest/aboutv2/cost-alloc-tags.md).
-
-###### Note
-
-Within a bucket, if you add a tag that has the same key as an existing tag, the new value overwrites
-the old value. For more information, see [Using cost allocation and bucket tags](../../../s3/latest/userguide/costalloctagging.md).
-
-To use this resource, you must have permissions to perform the
-`s3-outposts:PutBucketTagging`. The S3 on Outposts bucket owner has this
-permission by default and can grant this permission to others. For more information about
-permissions, see [Permissions \
-Related to Bucket Subresource Operations](../../../s3/latest/userguide/using-with-s3-actions.md#using-with-s3-actions-related-to-bucket-subresources) and [Managing access permissions to your Amazon S3 resources](../../../s3/latest/userguide/s3-access-control.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-s3outposts-bucket-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-s3outposts-bucket-tags"></a>
+Sets the tags for an S3 on Outposts bucket. For more information, see [Using Amazon S3 on Outposts](https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html).
+Use tags to organize your AWS bill to reflect your own cost structure. To do this, sign up to get your AWS account bill with tag key values included. Then, to see the cost of combined resources, organize your billing information according to resources with the same tag key values. For example, you can tag several resources with a specific application name, and then organize your billing information to see the total cost of that application across several services. For more information, see [Cost allocation and tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
+Within a bucket, if you add a tag that has the same key as an existing tag, the new value overwrites the old value. For more information, see [ Using cost allocation and bucket tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html).
+To use this resource, you must have permissions to perform the `s3-outposts:PutBucketTagging`. The S3 on Outposts bucket owner has this permission by default and can grant this permission to others. For more information about permissions, see [Permissions Related to Bucket Subresource Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-with-s3-actions.html#using-with-s3-actions-related-to-bucket-subresources) and [Managing access permissions to your Amazon S3 resources](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-access-control.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-s3outposts-bucket-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-s3outposts-bucket-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3outposts-bucket-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the S3 on Outposts bucket Amazon Resource Name (ARN).
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3outposts-bucket-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-s3outposts-bucket-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Returns the ARN of the specified bucket.
-
 Example: `arn:aws:s3Outposts:::DOC-EXAMPLE-BUCKET`
 
 ## Examples
+<a name="aws-resource-s3outposts-bucket--examples"></a>
 
-The following examples create an Amazon S3 on Outposts bucket using AWS
-CloudFormation.
+The following examples create an Amazon S3 on Outposts bucket using AWS CloudFormation.
 
-- [Create an S3 on Outposts bucket](#aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket)
-
-- [Creates an S3 on Outposts bucket with tags](#aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags)
-
-- [Creates an S3 on Outposts bucket with tags and lifecycle configuration](#aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration)
+**Topics**
++ [Create an S3 on Outposts bucket](#aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket)
++ [Creates an S3 on Outposts bucket with tags](#aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags)
++ [Creates an S3 on Outposts bucket with tags and lifecycle configuration](#aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration)
 
 ### Create an S3 on Outposts bucket
+<a name="aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket"></a>
 
 The following example creates an S3 on Outposts bucket without tags or lifecycle configuration.
 
 #### JSON
+<a name="aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, no tags, no lifecycle configuration",
@@ -212,9 +162,9 @@ The following example creates an S3 on Outposts bucket without tags or lifecycle
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, no tags, no lifecycle configuration
 Resources:
@@ -235,17 +185,17 @@ Outputs:
     Export:
       Name:
         Fn::Sub: "${AWS::StackName}-StackID"
-
 ```
 
 ### Creates an S3 on Outposts bucket with tags
+<a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags"></a>
 
 The following example creates an S3 on Outposts bucket with tags and no lifecycle configuration.
 
 #### JSON
+<a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, tags, no lifecycle configuration",
@@ -291,9 +241,9 @@ The following example creates an S3 on Outposts bucket with tags and no lifecycl
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, tags, no lifecycle configuration
 Resources:
@@ -322,20 +272,17 @@ Outputs:
 ```
 
 ### Creates an S3 on Outposts bucket with tags and lifecycle configuration
+<a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration"></a>
 
-The following example creates an S3 on Outposts bucket with tags and four lifecycle configuration rules.
-Three of the four lifecycle rules are disabled.
+The following example creates an S3 on Outposts bucket with tags and four lifecycle configuration rules. Three of the four lifecycle rules are disabled.
 
-###### Note
-
-All lifecycle rules must have values for either `ExpirationInDays`,
-`ExpirationDate`, or `DaysAfterInitiation` for `AbortIncompleteMultipartUpload`
-to be valid.
+**Note**
+All lifecycle rules must have values for either `ExpirationInDays`, `ExpirationDate`, or `DaysAfterInitiation` for `AbortIncompleteMultipartUpload` to be valid.
 
 #### JSON
+<a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, tags, lifecycle configuration",
@@ -427,9 +374,9 @@ to be valid.
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration--yaml"></a>
 
-```yaml
-
+```
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, tags, lifecycle configuration
@@ -483,13 +430,6 @@ Outputs:
     Export:
       Name:
         Fn::Sub: "${AWS::StackName}-StackID"
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfiguration
-
-AbortIncompleteMultipartUpload
 
 All content copied from https://docs.aws.amazon.com/.

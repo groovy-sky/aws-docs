@@ -2,57 +2,44 @@
 title: "AWS::SageMaker::ModelCard InferenceSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard InferenceSpecification
+<a name="aws-properties-sagemaker-modelcard-inferencespecification"></a>
 
 Defines how to perform inference generation after a training job is run.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelcard-inferencespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelcard-inferencespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Containers" : [ Container, ... ]
+  "[Containers](#cfn-sagemaker-modelcard-inferencespecification-containers)" : {{[ Container, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelcard-inferencespecification-syntax.yaml"></a>
 
-```yaml
-
-  Containers:
-    - Container
-
+```
+  [Containers](#cfn-sagemaker-modelcard-inferencespecification-containers): {{
+    - Container}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelcard-inferencespecification-properties"></a>
 
-`Containers`
-
+`Containers`  <a name="cfn-sagemaker-modelcard-inferencespecification-containers"></a>
 The Amazon ECR registry path of the Docker image that contains the inference code.
-
-_Required_: Yes
-
-_Type_: Array of [Container](aws-properties-sagemaker-modelcard-container.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceEnvironment
-
-IntendedUses
+*Required*: Yes
+*Type*: Array of [Container](aws-properties-sagemaker-modelcard-container.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,49 +3,41 @@ title: "Step 3: Read data from a DynamoDB table"
 ---
 
 # Step 3: Read data from a DynamoDB table
+<a name="getting-started-step-3"></a>
 
-In this step, you'll read back one of the items that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can
-use the DynamoDB console or the AWS CLI to read an item from the `Music` table by
-specifying `Artist` and `SongTitle`.
+In this step, you'll read back one of the items that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can use the DynamoDB console or the AWS CLI to read an item from the `Music` table by specifying `Artist` and `SongTitle`.
 
-For more information about read operations in DynamoDB, see [Reading an item](workingwithitems.md#WorkingWithItems.ReadingData).
+For more information about read operations in DynamoDB, see [Reading an item](WorkingWithItems.md#WorkingWithItems.ReadingData).
 
-Follow these steps to read data from the `Music` table using the
-DynamoDB console.
+## AWS Management Console
+<a name="getting-started-step-3-Console"></a>
 
-1. Open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+Follow these steps to read data from the `Music` table using the DynamoDB console.
 
-2. In the left navigation pane, choose
-    **Tables**.
+1. Open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-3. On the **Tables** page, choose the
-    **Music** table.
+1. In the left navigation pane, choose **Tables**.
 
-4. Choose **Explore table items**.
+1. On the **Tables** page, choose the **Music** table.
 
-5. On the **Items returned** section, view the list of
-    items stored in the table, sorted by `Artist` and
-    `SongTitle`. The first item in the list is the one with
-    the **Artist** named **Acme Band** and
-    the **SongTitle** **PartiQL Rocks**.
+1. Choose **Explore table items**.
 
-The following AWS CLI example reads an item from the `Music`. You can
-do this either through the DynamoDB API or [PartiQL](ql-reference.md), a SQL-compatible query
-language for DynamoDB.
+1. On the **Items returned** section, view the list of items stored in the table, sorted by `Artist` and `SongTitle`. The first item in the list is the one with the **Artist** named **Acme Band** and the **SongTitle** **PartiQL Rocks**.
 
-DynamoDB API
+## AWS CLI
+<a name="getting-started-step-3-CLI"></a>
 
-###### Note
+The following AWS CLI example reads an item from the `Music`. You can do this either through the DynamoDB API or [PartiQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html), a SQL-compatible query language for DynamoDB.
 
-The default behavior for DynamoDB is eventually consistent reads.
-The `consistent-read` parameter is used below to
-demonstrate strongly consistent reads.
+------
+#### [ DynamoDB API ]
+
+**Note**
+The default behavior for DynamoDB is eventually consistent reads. The `consistent-read` parameter is used below to demonstrate strongly consistent reads.
 
 **Linux**
 
-```nohighlight
-
+```
 aws dynamodb get-item --consistent-read \
     --table-name Music \
     --key '{ "Artist": {"S": "Acme Band"}, "SongTitle": {"S": "Happy Day"}}'
@@ -53,18 +45,15 @@ aws dynamodb get-item --consistent-read \
 
 **Windows CMD**
 
-```nohighlight
-
+```
 aws dynamodb get-item --consistent-read ^
     --table-name Music ^
     --key "{\"Artist\": {\"S\": \"Acme Band\"}, \"SongTitle\": {\"S\": \"Happy Day\"}}"
 ```
 
-Using `get-item` returns the following sample
-result.
+Using `get-item` returns the following sample result.
 
-```json
-
+```
 {
     "Item": {
         "AlbumTitle": {
@@ -83,28 +72,25 @@ result.
 }
 ```
 
-PartiQL for DynamoDB
+------
+#### [ PartiQL for DynamoDB ]
 
 **Linux**
 
-```nohighlight
-
+```
 aws dynamodb execute-statement --statement "SELECT * FROM Music   \
 WHERE Artist='Acme Band' AND SongTitle='Happy Day'"
 ```
 
 **Windows CMD**
 
-```nohighlight
-
+```
 aws dynamodb execute-statement --statement "SELECT * FROM Music WHERE Artist='Acme Band' AND SongTitle='Happy Day'"
 ```
 
-Using the PartiQL `Select` statement returns the
-following sample result.
+Using the PartiQL `Select` statement returns the following sample result.
 
-```json
-
+```
 {
     "Items": [
         {
@@ -125,24 +111,22 @@ following sample result.
 }
 ```
 
-For more information about reading data with PartiQL, see [PartiQL select\
-statements](ql-reference-select.md).
+For more information about reading data with PartiQL, see [PartiQL select statements](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.SELECT.html).
 
-The following code examples show how to read an item from a DynamoDB table using
-an AWS SDK.
+------
 
-.NET
+## AWS SDK
+<a name="getting-started-step-3-SDK"></a>
+
+The following code examples show how to read an item from a DynamoDB table using an AWS SDK.
+
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
     /// <summary>
     /// Gets information about an existing movie from the table.
     /// </summary>
@@ -186,25 +170,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
             throw;
         }
     }
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/GetItem) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for .NET API Reference_.
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
-```bash
-
+```
 #############################################################################
 # function dynamodb_get_item
 #
@@ -298,13 +273,10 @@ function dynamodb_get_item() {
 
   return 0
 }
-
 ```
-
 The utility functions used in this example.
 
-```bash
-
+```
 ###############################################################################
 # function errecho
 #
@@ -349,25 +321,16 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem) in *AWS CLI Command Reference*.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
-in _AWS CLI Command Reference_.
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
 //! Get an item from an Amazon DynamoDB table.
 /*!
   \sa getItem()
@@ -411,44 +374,33 @@ bool AwsDoc::DynamoDB::getItem(const Aws::String &tableName,
 
     return outcome.IsSuccess();
 }
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GetItem) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for C++ API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **Example 1: To read an item in a table**
-
-The following `get-item` example retrieves an item from the `MusicCollection` table. The table has a hash-and-range primary key ( `Artist` and `SongTitle`), so you must specify both of these attributes. The command also requests information about the read capacity consumed by the operation.
-
-```nohighlight
-
-aws dynamodb get-item \
-    --table-name MusicCollection \
-    --key file://key.json \
-    --return-consumed-capacity TOTAL
+The following `get-item` example retrieves an item from the `MusicCollection` table. The table has a hash-and-range primary key (`Artist` and `SongTitle`), so you must specify both of these attributes. The command also requests information about the read capacity consumed by the operation.
 
 ```
-
+aws dynamodb get-item \
+    --table-name {{MusicCollection}} \
+    --key {{file://key.json}} \
+    --return-consumed-capacity {{TOTAL}}
+```
 Contents of `key.json`:
 
-```nohighlight
-
+```
 {
     "Artist": {"S": "Acme Band"},
     "SongTitle": {"S": "Happy Day"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Item": {
         "AlbumTitle": {
@@ -467,37 +419,28 @@ Output:
     }
 }
 ```
-
-For more information, see [Reading an Item](workingwithitems.md#WorkingWithItems.ReadingData) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Reading an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ReadingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To read an item using a consistent read**
-
 The following example retrieves an item from the `MusicCollection` table using strongly consistent reads.
 
-```nohighlight
-
-aws dynamodb get-item \
-    --table-name MusicCollection \
-    --key file://key.json \
-    --consistent-read \
-    --return-consumed-capacity TOTAL
-
 ```
-
+aws dynamodb get-item \
+    --table-name {{MusicCollection}} \
+    --key {{file://key.json}} \
+    --consistent-read \
+    --return-consumed-capacity {{TOTAL}}
+```
 Contents of `key.json`:
 
-```nohighlight
-
+```
 {
     "Artist": {"S": "Acme Band"},
     "SongTitle": {"S": "Happy Day"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Item": {
         "AlbumTitle": {
@@ -516,38 +459,29 @@ Output:
     }
 }
 ```
-
-For more information, see [Reading an Item](workingwithitems.md#WorkingWithItems.ReadingData) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Reading an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ReadingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To retrieve specific attributes of an item**
-
 The following example uses a projection expression to retrieve only three attributes of the desired item.
 
-```nohighlight
-
-aws dynamodb get-item \
-    --table-name ProductCatalog \
-    --key '{"Id": {"N": "102"}}' \
-    --projection-expression "#T, #C, #P" \
-    --expression-attribute-names file://names.json
-
 ```
-
+aws dynamodb get-item \
+    --table-name {{ProductCatalog}} \
+    --key '{{{"Id": {"N": "102"}}}}' \
+    --projection-expression {{"#T, #C, #P"}} \
+    --expression-attribute-names {{file://names.json}}
+```
 Contents of `names.json`:
 
-```nohighlight
-
+```
 {
     "#T": "Title",
     "#C": "ProductCategory",
     "#P": "Price"
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Item": {
         "Price": {
@@ -562,25 +496,16 @@ Output:
     }
 }
 ```
+For more information, see [Reading an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ReadingData) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [GetItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/get-item.html) in *AWS CLI Command Reference*.
 
-For more information, see [Reading an Item](workingwithitems.md#WorkingWithItems.ReadingData) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[GetItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/get-item.html)
-in _AWS CLI Command Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
-```go
-
+```
 import (
 	"context"
 	"errors"
@@ -618,13 +543,10 @@ func (basics TableBasics) GetMovie(ctx context.Context, title string, year int) 
 	}
 	return movie, err
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -666,27 +588,17 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
++  For API details, see [GetItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.GetItem) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[GetItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Gets an item from a table by using the DynamoDbClient.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -769,27 +681,17 @@ public class GetItem {
         }
     }
 }
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GetItem) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
+This example uses the document client to simplify working with items in DynamoDB. For API details see [GetCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/GetCommand/).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-This example uses the document client to simplify working with items in DynamoDB. For API details see [GetCommand](../../../../reference/awsjavascriptsdk/v3/latest/package/aws-sdk-lib-dynamodb/class/getcommand.md).
-
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, GetCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -808,25 +710,14 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/GetItemCommand)
-in _AWS SDK for JavaScript API Reference_.
++  For API details, see [GetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/GetItemCommand) in *AWS SDK for JavaScript API Reference*.
 
 **SDK for JavaScript (v2)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 Get an item from a table.
 
-```javascript
-
+```
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -851,13 +742,10 @@ ddb.getItem(params, function (err, data) {
     console.log("Success", data.Item);
   }
 });
-
 ```
-
 Get an item from a table using the DynamoDB document client.
 
-```javascript
-
+```
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -878,27 +766,17 @@ docClient.get(params, function (err, data) {
     console.log("Success", data.Item);
   }
 });
-
 ```
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-example-dynamodb-utilities.html#dynamodb-example-document-client-get).
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/GetItem) in *AWS SDK for JavaScript API Reference*.
 
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-dynamodb-utilities.md#dynamodb-example-document-client-get).
-
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for JavaScript API Reference_.
-
-Kotlin
+------
+#### [ Kotlin ]
 
 **SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb).
-
-```kotlin
-
+```
 suspend fun getSpecificItem(
     tableNameVal: String,
     keyName: String,
@@ -922,25 +800,16 @@ suspend fun getSpecificItem(
         }
     }
 }
-
 ```
++  For API details, see [GetItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
-- For API details, see
-[GetItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-in _AWS SDK for Kotlin API reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-```php
-
+```
         $movie = $service->getItemByKey($tableName, $key);
         echo "\nThe movie {$movie['Item']['title']['S']} was released in {$movie['Item']['year']['N']}.\n";
 
@@ -951,34 +820,26 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
             'TableName' => $tableName,
         ]);
     }
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/GetItem) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for PHP API Reference_.
-
-PowerShell
+------
+#### [ PowerShell ]
 
 **Tools for PowerShell V4**
-
 **Example 1: Returns the DynamoDB item with the partition key SongTitle and the sort key Artist.**
 
-```powershell
-
+```
 $key = @{
   SongTitle = 'Somewhere Down The Road'
   Artist = 'No One You Know'
 } | ConvertTo-DDBItem
 
 Get-DDBItem -TableName 'Music' -Key $key | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -988,30 +849,22 @@ Artist                         No One You Know
 CriticRating                   9
 AlbumTitle                     Somewhat Famous
 ```
-
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/powershell/v4/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
++  For API details, see [GetItem](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
 
 **Tools for PowerShell V5**
-
 **Example 1: Returns the DynamoDB item with the partition key SongTitle and the sort key Artist.**
 
-```powershell
-
+```
 $key = @{
   SongTitle = 'Somewhere Down The Road'
   Artist = 'No One You Know'
 } | ConvertTo-DDBItem
 
 Get-DDBItem -TableName 'Music' -Key $key | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -1021,23 +874,15 @@ Artist                         No One You Know
 CriticRating                   9
 AlbumTitle                     Somewhat Famous
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/powershell/v5/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
-```python
-
+```
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1091,25 +936,16 @@ class Movies:
             raise
         else:
             return response["Item"]
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/GetItem) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
-```ruby
-
+```
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -1131,25 +967,16 @@ class DynamoDBBasics
     puts("\t#{e.code}: #{e.message}")
     raise
   end
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GetItem) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[GetItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GetItem)
-in _AWS SDK for Ruby API Reference_.
-
-SAP ABAP
+------
+#### [ SAP ABAP ]
 
 **SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn).
-
-```sap-abap
-
+```
     TRY.
         oo_item = lo_dyn->getitem(
           iv_tablename                = iv_table_name
@@ -1164,25 +991,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/s
       CATCH /aws1/cx_dynresourcenotfoundex.
         MESSAGE 'The table or index does not exist' TYPE 'E'.
     ENDTRY.
-
 ```
++  For API details, see [GetItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
 
-- For API details, see
-[GetItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-in _AWS SDK for SAP ABAP API reference_.
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
-```swift
-
+```
 import AWSDynamoDB
 
     /// Return a `Movie` record describing the specified movie from the Amazon
@@ -1220,21 +1038,13 @@ import AWSDynamoDB
             throw error
         }
     }
-
 ```
++  For API details, see [GetItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/getitem(input:)) in *AWS SDK for Swift API reference*.
 
-- For API details, see
-[GetItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/getitem(input:))
-in _AWS SDK for Swift API reference_.
+------
 
-For more DynamoDB examples, see [Code examples for DynamoDB using AWS SDKs](service-code-examples.md).
+For more DynamoDB examples, see [Code examples for DynamoDB using AWS SDKs](service_code_examples.md).
 
 To update the data in your table, proceed to [Step 4: Update data in a DynamoDB table](getting-started-step-4.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 2: Write data
-
-Step 4: Update data
 
 All content copied from https://docs.aws.amazon.com/.

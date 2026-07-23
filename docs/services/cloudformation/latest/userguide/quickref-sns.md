@@ -3,40 +3,35 @@ title: "Amazon SNS template snippets"
 ---
 
 # Amazon SNS template snippets
+<a name="quickref-sns"></a>
 
 This example shows an Amazon SNS topic resource. It requires a valid email address.
 
 ## JSON
+<a name="quickref-sns-example-1.json"></a>
 
-```json
-
-"MySNSTopic" : {
-    "Type" : "AWS::SNS::Topic",
-    "Properties" : {
-        "Subscription" : [ {
-            "Endpoint" : "add valid email address",
-            "Protocol" : "email"
-        } ]
-    }
-}
+```
+1. "MySNSTopic" : {
+2.     "Type" : "AWS::SNS::Topic",
+3.     "Properties" : {
+4.         "Subscription" : [ {
+5.             "Endpoint" : "{{add valid email address}}",
+6.             "Protocol" : "email"
+7.         } ]
+8.     }
+9. }
 ```
 
 ## YAML
+<a name="quickref-sns-example-1.yaml"></a>
 
-```yaml
-
-MySNSTopic:
-  Type: AWS::SNS::Topic
-  Properties:
-    Subscription:
-    - Endpoint: "add valid email address"
-      Protocol: email
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon S3
-
-Amazon SQS
+1. MySNSTopic:
+2.   Type: AWS::SNS::Topic
+3.   Properties:
+4.     Subscription:
+5.     - Endpoint: "{{add valid email address}}"
+6.       Protocol: email
+```
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,115 +2,96 @@
 title: "AWS::IoT::BillingGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::BillingGroup
+<a name="aws-resource-iot-billinggroup"></a>
 
 Creates a new billing group.
 
-Requires permission to access the [CreateBillingGroup](../../../service-authorization/latest/reference/list-awsiot.md#awsiot-actions-as-permissions) action.
+Requires permission to access the [CreateBillingGroup](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
 
 ## Syntax
+<a name="aws-resource-iot-billinggroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iot-billinggroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoT::BillingGroup",
   "Properties" : {
-      "BillingGroupName" : String,
-      "BillingGroupProperties" : BillingGroupProperties,
-      "Tags" : [ Tag, ... ]
+      "[BillingGroupName](#cfn-iot-billinggroup-billinggroupname)" : {{String}},
+      "[BillingGroupProperties](#cfn-iot-billinggroup-billinggroupproperties)" : {{BillingGroupProperties}},
+      "[Tags](#cfn-iot-billinggroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iot-billinggroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoT::BillingGroup
 Properties:
-  BillingGroupName: String
-  BillingGroupProperties:
-    BillingGroupProperties
-  Tags:
-    - Tag
-
+  [BillingGroupName](#cfn-iot-billinggroup-billinggroupname): {{String}}
+  [BillingGroupProperties](#cfn-iot-billinggroup-billinggroupproperties): {{
+    BillingGroupProperties}}
+  [Tags](#cfn-iot-billinggroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iot-billinggroup-properties"></a>
 
-`BillingGroupName`
-
+`BillingGroupName`  <a name="cfn-iot-billinggroup-billinggroupname"></a>
 The name of the billing group.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9:_-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9:_-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BillingGroupProperties`
-
+`BillingGroupProperties`  <a name="cfn-iot-billinggroup-billinggroupproperties"></a>
 The properties of the billing group.
+*Required*: No
+*Type*: [BillingGroupProperties](aws-properties-iot-billinggroup-billinggroupproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BillingGroupProperties](aws-properties-iot-billinggroup-billinggroupproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-iot-billinggroup-tags"></a>
 Metadata which can be used to manage the billing group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iot-billinggroup-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iot-billinggroup-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iot-billinggroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iot-billinggroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the billing group id.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iot-billinggroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iot-billinggroup-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the billing group.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the billing group.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-BillingGroupProperties
 
 All content copied from https://docs.aws.amazon.com/.

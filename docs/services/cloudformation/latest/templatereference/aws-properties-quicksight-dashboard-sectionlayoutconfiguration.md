@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard SectionLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SectionLayoutConfiguration
+<a name="aws-properties-quicksight-dashboard-sectionlayoutconfiguration"></a>
 
 The layout configuration of a section.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-sectionlayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-sectionlayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FreeFormLayout" : FreeFormSectionLayoutConfiguration
+  "[FreeFormLayout](#cfn-quicksight-dashboard-sectionlayoutconfiguration-freeformlayout)" : {{FreeFormSectionLayoutConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-sectionlayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FreeFormLayout:
-    FreeFormSectionLayoutConfiguration
-
+```
+  [FreeFormLayout](#cfn-quicksight-dashboard-sectionlayoutconfiguration-freeformlayout): {{
+    FreeFormSectionLayoutConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-sectionlayoutconfiguration-properties"></a>
 
-`FreeFormLayout`
-
+`FreeFormLayout`  <a name="cfn-quicksight-dashboard-sectionlayoutconfiguration-freeformlayout"></a>
 The free-form layout configuration of a section.
-
-_Required_: Yes
-
-_Type_: [FreeFormSectionLayoutConfiguration](aws-properties-quicksight-dashboard-freeformsectionlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SectionBasedLayoutPaperCanvasSizeOptions
-
-SectionPageBreakConfiguration
+*Required*: Yes
+*Type*: [FreeFormSectionLayoutConfiguration](aws-properties-quicksight-dashboard-freeformsectionlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

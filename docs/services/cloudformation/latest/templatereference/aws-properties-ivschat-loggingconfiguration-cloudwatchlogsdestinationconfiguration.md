@@ -2,58 +2,44 @@
 title: "AWS::IVSChat::LoggingConfiguration CloudWatchLogsDestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVSChat::LoggingConfiguration CloudWatchLogsDestinationConfiguration
+<a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration"></a>
 
 The CloudWatchLogsDestinationConfiguration property type specifies a CloudWatch Logs location where chat logs will be stored.
 
 ## Syntax
+<a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogGroupName" : String
+  "[LogGroupName](#cfn-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-loggroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LogGroupName: String
-
+```
+  [LogGroupName](#cfn-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-loggroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-properties"></a>
 
-`LogGroupName`
-
+`LogGroupName`  <a name="cfn-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-loggroupname"></a>
 Name of the Amazon Cloudwatch Logs destination where chat activity will be logged.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\.\-_/#A-Za-z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IVSChat::LoggingConfiguration
-
-DestinationConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\.\-_/#A-Za-z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

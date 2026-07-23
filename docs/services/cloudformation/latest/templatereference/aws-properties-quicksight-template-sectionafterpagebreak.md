@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Template SectionAfterPageBreak"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SectionAfterPageBreak
+<a name="aws-properties-quicksight-template-sectionafterpagebreak"></a>
 
 The configuration of a page break after a section.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sectionafterpagebreak-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sectionafterpagebreak-syntax.json"></a>
 
-```json
-
+```
 {
-  "Status" : String
+  "[Status](#cfn-quicksight-template-sectionafterpagebreak-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sectionafterpagebreak-syntax.yaml"></a>
 
-```yaml
-
-  Status: String
-
+```
+  [Status](#cfn-quicksight-template-sectionafterpagebreak-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sectionafterpagebreak-properties"></a>
 
-`Status`
-
+`Status`  <a name="cfn-quicksight-template-sectionafterpagebreak-status"></a>
 The option that enables or disables a page break at the end of a section.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecondaryValueOptions
-
-SectionBasedLayoutCanvasSizeOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

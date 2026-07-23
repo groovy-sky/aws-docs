@@ -2,67 +2,51 @@
 title: "AWS::EKS::Cluster EncryptionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Cluster EncryptionConfig
+<a name="aws-properties-eks-cluster-encryptionconfig"></a>
 
 The encryption configuration for the cluster.
 
 ## Syntax
+<a name="aws-properties-eks-cluster-encryptionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-eks-cluster-encryptionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Provider" : Provider,
-  "Resources" : [ String, ... ]
+  "[Provider](#cfn-eks-cluster-encryptionconfig-provider)" : {{Provider}},
+  "[Resources](#cfn-eks-cluster-encryptionconfig-resources)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-eks-cluster-encryptionconfig-syntax.yaml"></a>
 
-```yaml
-
-  Provider:
-    Provider
-  Resources:
-    - String
-
+```
+  [Provider](#cfn-eks-cluster-encryptionconfig-provider): {{
+    Provider}}
+  [Resources](#cfn-eks-cluster-encryptionconfig-resources): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-eks-cluster-encryptionconfig-properties"></a>
 
-`Provider`
-
+`Provider`  <a name="cfn-eks-cluster-encryptionconfig-provider"></a>
 The encryption provider for the cluster.
+*Required*: No
+*Type*: [Provider](aws-properties-eks-cluster-provider.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [Provider](aws-properties-eks-cluster-provider.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Resources`
-
-Specifies the resources to be encrypted. The only supported value is
-`secrets`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ElasticLoadBalancing
-
-KubernetesNetworkConfig
+`Resources`  <a name="cfn-eks-cluster-encryptionconfig-resources"></a>
+Specifies the resources to be encrypted. The only supported value is `secrets`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

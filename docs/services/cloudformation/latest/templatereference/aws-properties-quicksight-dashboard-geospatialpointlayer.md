@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard GeospatialPointLayer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialPointLayer
+<a name="aws-properties-quicksight-dashboard-geospatialpointlayer"></a>
 
 The geospatial Point layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatialpointlayer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatialpointlayer-syntax.json"></a>
 
-```json
-
+```
 {
-  "Style" : GeospatialPointStyle
+  "[Style](#cfn-quicksight-dashboard-geospatialpointlayer-style)" : {{GeospatialPointStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatialpointlayer-syntax.yaml"></a>
 
-```yaml
-
-  Style:
-    GeospatialPointStyle
-
+```
+  [Style](#cfn-quicksight-dashboard-geospatialpointlayer-style): {{
+    GeospatialPointStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatialpointlayer-properties"></a>
 
-`Style`
-
+`Style`  <a name="cfn-quicksight-dashboard-geospatialpointlayer-style"></a>
 The visualization style for a point layer.
-
-_Required_: Yes
-
-_Type_: [GeospatialPointStyle](aws-properties-quicksight-dashboard-geospatialpointstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialNullSymbolStyle
-
-GeospatialPointStyle
+*Required*: Yes
+*Type*: [GeospatialPointStyle](aws-properties-quicksight-dashboard-geospatialpointstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

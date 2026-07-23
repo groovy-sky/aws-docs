@@ -2,118 +2,82 @@
 title: "AWS::AppFlow::ConnectorProfile OAuth2Credentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile OAuth2Credentials
+<a name="aws-properties-appflow-connectorprofile-oauth2credentials"></a>
 
 The OAuth 2.0 credentials required for OAuth 2.0 authentication.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-oauth2credentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-oauth2credentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessToken" : String,
-  "ClientId" : String,
-  "ClientSecret" : String,
-  "OAuthRequest" : ConnectorOAuthRequest,
-  "RefreshToken" : String
+  "[AccessToken](#cfn-appflow-connectorprofile-oauth2credentials-accesstoken)" : {{String}},
+  "[ClientId](#cfn-appflow-connectorprofile-oauth2credentials-clientid)" : {{String}},
+  "[ClientSecret](#cfn-appflow-connectorprofile-oauth2credentials-clientsecret)" : {{String}},
+  "[OAuthRequest](#cfn-appflow-connectorprofile-oauth2credentials-oauthrequest)" : {{ConnectorOAuthRequest}},
+  "[RefreshToken](#cfn-appflow-connectorprofile-oauth2credentials-refreshtoken)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-oauth2credentials-syntax.yaml"></a>
 
-```yaml
-
-  AccessToken: String
-  ClientId: String
-  ClientSecret: String
-  OAuthRequest:
-    ConnectorOAuthRequest
-  RefreshToken: String
-
+```
+  [AccessToken](#cfn-appflow-connectorprofile-oauth2credentials-accesstoken): {{String}}
+  [ClientId](#cfn-appflow-connectorprofile-oauth2credentials-clientid): {{String}}
+  [ClientSecret](#cfn-appflow-connectorprofile-oauth2credentials-clientsecret): {{String}}
+  [OAuthRequest](#cfn-appflow-connectorprofile-oauth2credentials-oauthrequest): {{
+    ConnectorOAuthRequest}}
+  [RefreshToken](#cfn-appflow-connectorprofile-oauth2credentials-refreshtoken): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-oauth2credentials-properties"></a>
 
-`AccessToken`
-
+`AccessToken`  <a name="cfn-appflow-connectorprofile-oauth2credentials-accesstoken"></a>
 The access token used to access the connector on your behalf.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientId`
-
+`ClientId`  <a name="cfn-appflow-connectorprofile-oauth2credentials-clientid"></a>
 The identifier for the desired client.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ClientSecret`  <a name="cfn-appflow-connectorprofile-oauth2credentials-clientsecret"></a>
+The client secret used by the OAuth client to authenticate to the authorization server.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientSecret`
-
-The client secret used by the OAuth client to authenticate to the authorization
-server.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OAuthRequest`
-
+`OAuthRequest`  <a name="cfn-appflow-connectorprofile-oauth2credentials-oauthrequest"></a>
 Property description not available.
+*Required*: No
+*Type*: [ConnectorOAuthRequest](aws-properties-appflow-connectorprofile-connectoroauthrequest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConnectorOAuthRequest](aws-properties-appflow-connectorprofile-connectoroauthrequest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefreshToken`
-
+`RefreshToken`  <a name="cfn-appflow-connectorprofile-oauth2credentials-refreshtoken"></a>
 The refresh token used to refresh an expired access token.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MarketoConnectorProfileProperties
-
-OAuth2Properties
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

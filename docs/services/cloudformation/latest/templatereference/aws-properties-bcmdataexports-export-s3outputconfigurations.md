@@ -2,99 +2,69 @@
 title: "AWS::BCMDataExports::Export S3OutputConfigurations"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export S3OutputConfigurations
+<a name="aws-properties-bcmdataexports-export-s3outputconfigurations"></a>
 
 The compression type, file format, and overwrite preference for the data export.
 
 ## Syntax
+<a name="aws-properties-bcmdataexports-export-s3outputconfigurations-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bcmdataexports-export-s3outputconfigurations-syntax.json"></a>
 
-```json
-
+```
 {
-  "Compression" : String,
-  "Format" : String,
-  "OutputType" : String,
-  "Overwrite" : String
+  "[Compression](#cfn-bcmdataexports-export-s3outputconfigurations-compression)" : {{String}},
+  "[Format](#cfn-bcmdataexports-export-s3outputconfigurations-format)" : {{String}},
+  "[OutputType](#cfn-bcmdataexports-export-s3outputconfigurations-outputtype)" : {{String}},
+  "[Overwrite](#cfn-bcmdataexports-export-s3outputconfigurations-overwrite)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bcmdataexports-export-s3outputconfigurations-syntax.yaml"></a>
 
-```yaml
-
-  Compression: String
-  Format: String
-  OutputType: String
-  Overwrite: String
-
+```
+  [Compression](#cfn-bcmdataexports-export-s3outputconfigurations-compression): {{String}}
+  [Format](#cfn-bcmdataexports-export-s3outputconfigurations-format): {{String}}
+  [OutputType](#cfn-bcmdataexports-export-s3outputconfigurations-outputtype): {{String}}
+  [Overwrite](#cfn-bcmdataexports-export-s3outputconfigurations-overwrite): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bcmdataexports-export-s3outputconfigurations-properties"></a>
 
-`Compression`
-
+`Compression`  <a name="cfn-bcmdataexports-export-s3outputconfigurations-compression"></a>
 The compression type for the data export.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GZIP | PARQUET`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GZIP | PARQUET`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Format`
-
+`Format`  <a name="cfn-bcmdataexports-export-s3outputconfigurations-format"></a>
 The file format for the data export.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TEXT_OR_CSV | PARQUET`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TEXT_OR_CSV | PARQUET`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputType`
-
+`OutputType`  <a name="cfn-bcmdataexports-export-s3outputconfigurations-outputtype"></a>
 The output type for the data export.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CUSTOM | ATHENA | REDSHIFT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CUSTOM`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Overwrite`
-
-The rule to follow when generating a version of the data export file. You have the choice
-to overwrite the previous version or to be delivered in addition to the previous versions.
-Overwriting exports can save on Amazon S3 storage costs. Creating new export versions allows
-you to track the changes in cost and usage data over time.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CREATE_NEW_REPORT | OVERWRITE_REPORT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Destination
-
-Next
+`Overwrite`  <a name="cfn-bcmdataexports-export-s3outputconfigurations-overwrite"></a>
+The rule to follow when generating a version of the data export file. You have the choice to overwrite the previous version or to be delivered in addition to the previous versions. Overwriting exports can save on Amazon S3 storage costs. Creating new export versions allows you to track the changes in cost and usage data over time.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CREATE_NEW_REPORT | OVERWRITE_REPORT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

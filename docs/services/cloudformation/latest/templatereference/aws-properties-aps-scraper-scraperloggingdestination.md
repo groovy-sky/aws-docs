@@ -2,53 +2,42 @@
 title: "AWS::APS::Scraper ScraperLoggingDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper ScraperLoggingDestination
+<a name="aws-properties-aps-scraper-scraperloggingdestination"></a>
 
 The destination where scraper logs are sent.
 
 ## Syntax
+<a name="aws-properties-aps-scraper-scraperloggingdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-scraper-scraperloggingdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogs" : CloudWatchLogDestination
+  "[CloudWatchLogs](#cfn-aps-scraper-scraperloggingdestination-cloudwatchlogs)" : {{CloudWatchLogDestination}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-scraper-scraperloggingdestination-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogs:
-    CloudWatchLogDestination
-
+```
+  [CloudWatchLogs](#cfn-aps-scraper-scraperloggingdestination-cloudwatchlogs): {{
+    CloudWatchLogDestination}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-scraper-scraperloggingdestination-properties"></a>
 
-`CloudWatchLogs`
-
+`CloudWatchLogs`  <a name="cfn-aps-scraper-scraperloggingdestination-cloudwatchlogs"></a>
 The CloudWatch Logs configuration for the scraper logging destination.
-
-_Required_: No
-
-_Type_: [CloudWatchLogDestination](aws-properties-aps-scraper-cloudwatchlogdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScraperLoggingConfiguration
-
-Source
+*Required*: No
+*Type*: [CloudWatchLogDestination](aws-properties-aps-scraper-cloudwatchlogdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

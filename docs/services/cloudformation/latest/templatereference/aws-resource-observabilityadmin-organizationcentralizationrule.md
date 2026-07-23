@@ -2,101 +2,82 @@
 title: "AWS::ObservabilityAdmin::OrganizationCentralizationRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationCentralizationRule
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule"></a>
 
-Defines how telemetry data should be centralized across an AWS Organization, including
-source and destination configurations.
+Defines how telemetry data should be centralized across an AWS Organization, including source and destination configurations.
 
 ## Syntax
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ObservabilityAdmin::OrganizationCentralizationRule",
   "Properties" : {
-      "Rule" : CentralizationRule,
-      "RuleName" : String,
-      "Tags" : [ Tag, ... ]
+      "[Rule](#cfn-observabilityadmin-organizationcentralizationrule-rule)" : {{CentralizationRule}},
+      "[RuleName](#cfn-observabilityadmin-organizationcentralizationrule-rulename)" : {{String}},
+      "[Tags](#cfn-observabilityadmin-organizationcentralizationrule-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ObservabilityAdmin::OrganizationCentralizationRule
 Properties:
-  Rule:
-    CentralizationRule
-  RuleName: String
-  Tags:
-    - Tag
-
+  [Rule](#cfn-observabilityadmin-organizationcentralizationrule-rule): {{
+    CentralizationRule}}
+  [RuleName](#cfn-observabilityadmin-organizationcentralizationrule-rulename): {{String}}
+  [Tags](#cfn-observabilityadmin-organizationcentralizationrule-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-properties"></a>
 
-`Rule`
-
+`Rule`  <a name="cfn-observabilityadmin-organizationcentralizationrule-rule"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [CentralizationRule](aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [CentralizationRule](aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleName`
-
+`RuleName`  <a name="cfn-observabilityadmin-organizationcentralizationrule-rulename"></a>
 The name of the organization centralization rule.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9A-Za-z-]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A key-value pair to filter resources based on tags associated with the resource. For
-more information about tags, see [What are tags?](../../../whitepapers/latest/tagging-best-practices/what-are-tags.md)
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-observabilityadmin-organizationcentralizationrule-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-observabilityadmin-organizationcentralizationrule-tags"></a>
+ A key-value pair to filter resources based on tags associated with the resource. For more information about tags, see [What are tags?](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-observabilityadmin-organizationcentralizationrule-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-return-values-fn--getatt"></a>
 
-`RuleArn`
+####
+<a name="aws-resource-observabilityadmin-organizationcentralizationrule-return-values-fn--getatt-fn--getatt"></a>
 
+`RuleArn`  <a name="RuleArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the organization centralization rule.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatch Observability Admin
-
-CentralizationRule
 
 All content copied from https://docs.aws.amazon.com/.

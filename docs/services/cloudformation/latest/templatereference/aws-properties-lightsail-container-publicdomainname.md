@@ -2,68 +2,50 @@
 title: "AWS::Lightsail::Container PublicDomainName"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Container PublicDomainName
+<a name="aws-properties-lightsail-container-publicdomainname"></a>
 
-`PublicDomainName` is a property of the [AWS::Lightsail::Container](../userguide/aws-resource-lightsail-container.md) resource. It describes the public domain names to use
-with a container service, such as `example.com` and
-`www.example.com`. It also describes the certificates to use with a container
-service.
+`PublicDomainName` is a property of the [AWS::Lightsail::Container](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-container.html) resource. It describes the public domain names to use with a container service, such as `example.com` and `www.example.com`. It also describes the certificates to use with a container service.
 
 ## Syntax
+<a name="aws-properties-lightsail-container-publicdomainname-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-container-publicdomainname-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateName" : String,
-  "DomainNames" : [ String, ... ]
+  "[CertificateName](#cfn-lightsail-container-publicdomainname-certificatename)" : {{String}},
+  "[DomainNames](#cfn-lightsail-container-publicdomainname-domainnames)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-container-publicdomainname-syntax.yaml"></a>
 
-```yaml
-
-  CertificateName: String
-  DomainNames:
-    - String
-
+```
+  [CertificateName](#cfn-lightsail-container-publicdomainname-certificatename): {{String}}
+  [DomainNames](#cfn-lightsail-container-publicdomainname-domainnames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-container-publicdomainname-properties"></a>
 
-`CertificateName`
-
+`CertificateName`  <a name="cfn-lightsail-container-publicdomainname-certificatename"></a>
 The name of the certificate for the public domains.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainNames`
-
+`DomainNames`  <a name="cfn-lightsail-container-publicdomainname-domainnames"></a>
 The public domain names to use with the container service.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrivateRegistryAccess
-
-PublicEndpoint
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

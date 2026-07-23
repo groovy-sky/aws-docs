@@ -2,157 +2,114 @@
 title: "AWS::QuickSight::Dashboard HeatMapConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard HeatMapConfiguration
+<a name="aws-properties-quicksight-dashboard-heatmapconfiguration"></a>
 
 The configuration of a heat map.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-heatmapconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-heatmapconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColorScale" : ColorScale,
-  "ColumnLabelOptions" : ChartAxisLabelOptions,
-  "DataLabels" : DataLabelOptions,
-  "FieldWells" : HeatMapFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "RowLabelOptions" : ChartAxisLabelOptions,
-  "SortConfiguration" : HeatMapSortConfiguration,
-  "Tooltip" : TooltipOptions
+  "[ColorScale](#cfn-quicksight-dashboard-heatmapconfiguration-colorscale)" : {{ColorScale}},
+  "[ColumnLabelOptions](#cfn-quicksight-dashboard-heatmapconfiguration-columnlabeloptions)" : {{ChartAxisLabelOptions}},
+  "[DataLabels](#cfn-quicksight-dashboard-heatmapconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[FieldWells](#cfn-quicksight-dashboard-heatmapconfiguration-fieldwells)" : {{HeatMapFieldWells}},
+  "[Interactions](#cfn-quicksight-dashboard-heatmapconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-dashboard-heatmapconfiguration-legend)" : {{LegendOptions}},
+  "[RowLabelOptions](#cfn-quicksight-dashboard-heatmapconfiguration-rowlabeloptions)" : {{ChartAxisLabelOptions}},
+  "[SortConfiguration](#cfn-quicksight-dashboard-heatmapconfiguration-sortconfiguration)" : {{HeatMapSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-dashboard-heatmapconfiguration-tooltip)" : {{TooltipOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-heatmapconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ColorScale:
-    ColorScale
-  ColumnLabelOptions:
-    ChartAxisLabelOptions
-  DataLabels:
-    DataLabelOptions
-  FieldWells:
-    HeatMapFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  RowLabelOptions:
-    ChartAxisLabelOptions
-  SortConfiguration:
-    HeatMapSortConfiguration
-  Tooltip:
-    TooltipOptions
-
+```
+  [ColorScale](#cfn-quicksight-dashboard-heatmapconfiguration-colorscale): {{
+    ColorScale}}
+  [ColumnLabelOptions](#cfn-quicksight-dashboard-heatmapconfiguration-columnlabeloptions): {{
+    ChartAxisLabelOptions}}
+  [DataLabels](#cfn-quicksight-dashboard-heatmapconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [FieldWells](#cfn-quicksight-dashboard-heatmapconfiguration-fieldwells): {{
+    HeatMapFieldWells}}
+  [Interactions](#cfn-quicksight-dashboard-heatmapconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-dashboard-heatmapconfiguration-legend): {{
+    LegendOptions}}
+  [RowLabelOptions](#cfn-quicksight-dashboard-heatmapconfiguration-rowlabeloptions): {{
+    ChartAxisLabelOptions}}
+  [SortConfiguration](#cfn-quicksight-dashboard-heatmapconfiguration-sortconfiguration): {{
+    HeatMapSortConfiguration}}
+  [Tooltip](#cfn-quicksight-dashboard-heatmapconfiguration-tooltip): {{
+    TooltipOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-heatmapconfiguration-properties"></a>
 
-`ColorScale`
-
+`ColorScale`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-colorscale"></a>
 The color options (gradient color, point of divergence) in a heat map.
+*Required*: No
+*Type*: [ColorScale](aws-properties-quicksight-dashboard-colorscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColorScale](aws-properties-quicksight-dashboard-colorscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnLabelOptions`
-
+`ColumnLabelOptions`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-columnlabeloptions"></a>
 The label options of the column that is displayed in a heat map.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-dashboard-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-dashboard-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-datalabels"></a>
 The options that determine if visual data labels are displayed.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-dashboard-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-dashboard-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [HeatMapFieldWells](aws-properties-quicksight-dashboard-heatmapfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HeatMapFieldWells](aws-properties-quicksight-dashboard-heatmapfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-dashboard-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-dashboard-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-dashboard-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-dashboard-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowLabelOptions`
-
+`RowLabelOptions`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-rowlabeloptions"></a>
 The label options of the row that is displayed in a `heat map`.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-dashboard-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-dashboard-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-sortconfiguration"></a>
 The sort configuration of a heat map.
+*Required*: No
+*Type*: [HeatMapSortConfiguration](aws-properties-quicksight-dashboard-heatmapsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HeatMapSortConfiguration](aws-properties-quicksight-dashboard-heatmapsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-dashboard-heatmapconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
-
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-dashboard-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HeatMapAggregatedFieldWells
-
-HeatMapFieldWells
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-dashboard-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

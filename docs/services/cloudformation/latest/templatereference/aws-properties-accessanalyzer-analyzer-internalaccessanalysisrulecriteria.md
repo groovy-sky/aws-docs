@@ -2,96 +2,66 @@
 title: "AWS::AccessAnalyzer::Analyzer InternalAccessAnalysisRuleCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccessAnalyzer::Analyzer InternalAccessAnalysisRuleCriteria
+<a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria"></a>
 
 The criteria for an analysis rule for an internal access analyzer.
 
 ## Syntax
+<a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountIds" : [ String, ... ],
-  "ResourceArns" : [ String, ... ],
-  "ResourceTypes" : [ String, ... ]
+  "[AccountIds](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-accountids)" : {{[ String, ... ]}},
+  "[ResourceArns](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcearns)" : {{[ String, ... ]}},
+  "[ResourceTypes](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcetypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-syntax.yaml"></a>
 
-```yaml
-
-  AccountIds:
-    - String
-  ResourceArns:
-    - String
-  ResourceTypes:
-    - String
-
+```
+  [AccountIds](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-accountids): {{
+    - String}}
+  [ResourceArns](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcearns): {{
+    - String}}
+  [ResourceTypes](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcetypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-properties"></a>
 
-`AccountIds`
+`AccountIds`  <a name="cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-accountids"></a>
+A list of AWS account IDs to apply to the internal access analysis rule criteria. Account IDs can only be applied to the analysis rule criteria for organization-level analyzers.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-A list of AWS account IDs to apply to the internal access analysis rule
-criteria. Account IDs can only be applied to the analysis rule criteria for
-organization-level analyzers.
+`ResourceArns`  <a name="cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcearns"></a>
+A list of resource ARNs to apply to the internal access analysis rule criteria. The analyzer will only generate findings for resources that match these ARNs.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ResourceArns`
-
-A list of resource ARNs to apply to the internal access analysis rule criteria. The
-analyzer will only generate findings for resources that match these ARNs.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ResourceTypes`
-
-A list of resource types to apply to the internal access analysis rule criteria. The
-analyzer will only generate findings for resources of these types. These resource types
-are currently supported for internal access analyzers:
-
-- `AWS::S3::Bucket`
-
-- `AWS::RDS::DBSnapshot`
-
-- `AWS::RDS::DBClusterSnapshot`
-
-- `AWS::S3Express::DirectoryBucket`
-
-- `AWS::DynamoDB::Table`
-
-- `AWS::DynamoDB::Stream`
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InternalAccessAnalysisRule
-
-InternalAccessConfiguration
+`ResourceTypes`  <a name="cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcetypes"></a>
+A list of resource types to apply to the internal access analysis rule criteria. The analyzer will only generate findings for resources of these types. These resource types are currently supported for internal access analyzers:
++  `AWS::S3::Bucket`
++  `AWS::RDS::DBSnapshot`
++  `AWS::RDS::DBClusterSnapshot`
++  `AWS::S3Express::DirectoryBucket`
++  `AWS::DynamoDB::Table`
++  `AWS::DynamoDB::Stream`
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

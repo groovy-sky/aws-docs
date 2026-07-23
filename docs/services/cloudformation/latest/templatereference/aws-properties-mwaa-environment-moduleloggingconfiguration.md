@@ -2,88 +2,61 @@
 title: "AWS::MWAA::Environment ModuleLoggingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAA::Environment ModuleLoggingConfiguration
+<a name="aws-properties-mwaa-environment-moduleloggingconfiguration"></a>
 
 Defines the type of logs to send for the Apache Airflow log type (e.g. `DagProcessingLogs`).
 
 ## Syntax
+<a name="aws-properties-mwaa-environment-moduleloggingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mwaa-environment-moduleloggingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogGroupArn" : String,
-  "Enabled" : Boolean,
-  "LogLevel" : String
+  "[CloudWatchLogGroupArn](#cfn-mwaa-environment-moduleloggingconfiguration-cloudwatchloggrouparn)" : {{String}},
+  "[Enabled](#cfn-mwaa-environment-moduleloggingconfiguration-enabled)" : {{Boolean}},
+  "[LogLevel](#cfn-mwaa-environment-moduleloggingconfiguration-loglevel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mwaa-environment-moduleloggingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogGroupArn: String
-  Enabled: Boolean
-  LogLevel: String
-
+```
+  [CloudWatchLogGroupArn](#cfn-mwaa-environment-moduleloggingconfiguration-cloudwatchloggrouparn): {{String}}
+  [Enabled](#cfn-mwaa-environment-moduleloggingconfiguration-enabled): {{Boolean}}
+  [LogLevel](#cfn-mwaa-environment-moduleloggingconfiguration-loglevel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mwaa-environment-moduleloggingconfiguration-properties"></a>
 
-`CloudWatchLogGroupArn`
-
+`CloudWatchLogGroupArn`  <a name="cfn-mwaa-environment-moduleloggingconfiguration-cloudwatchloggrouparn"></a>
 The ARN of the CloudWatch Logs log group for each type of Apache Airflow log type that you have enabled.
+`CloudWatchLogGroupArn` is available only as a return value, accessible when specified as an attribute in the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mwaa-environment.html#aws-resource-mwaa-environment-return-values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mwaa-environment.html#aws-resource-mwaa-environment-return-values) intrinsic function. Any value you provide for `CloudWatchLogGroupArn` is discarded by Amazon MWAA.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:logs:[a-z0-9\-]+:\d{12}:log-group:\w+`
+*Maximum*: `1224`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-`CloudWatchLogGroupArn` is available only as a return value, accessible when specified as an attribute in the
-[`Fn:GetAtt`](../userguide/aws-resource-mwaa-environment.md#aws-resource-mwaa-environment-return-values)
-intrinsic function. Any value you provide for `CloudWatchLogGroupArn` is discarded by Amazon MWAA.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:logs:[a-z0-9\-]+:\d{12}:log-group:\w+`
-
-_Maximum_: `1224`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-mwaa-environment-moduleloggingconfiguration-enabled"></a>
 Indicates whether to enable the Apache Airflow log type (e.g. `DagProcessingLogs`) in CloudWatch Logs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogLevel`
-
+`LogLevel`  <a name="cfn-mwaa-environment-moduleloggingconfiguration-loglevel"></a>
 Defines the Apache Airflow logs to send for the log type (e.g. `DagProcessingLogs`) to CloudWatch Logs.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CRITICAL | ERROR | WARNING | INFO | DEBUG`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingConfiguration
-
-NetworkConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `CRITICAL | ERROR | WARNING | INFO | DEBUG`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

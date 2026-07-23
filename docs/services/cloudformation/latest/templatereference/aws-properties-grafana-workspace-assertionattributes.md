@@ -2,142 +2,93 @@
 title: "AWS::Grafana::Workspace AssertionAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Grafana::Workspace AssertionAttributes
+<a name="aws-properties-grafana-workspace-assertionattributes"></a>
 
-A structure that defines which attributes in the IdP assertion are to be used to
-define information about the users authenticated by the IdP to use the workspace.
+A structure that defines which attributes in the IdP assertion are to be used to define information about the users authenticated by the IdP to use the workspace.
 
 ## Syntax
+<a name="aws-properties-grafana-workspace-assertionattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-grafana-workspace-assertionattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "Email" : String,
-  "Groups" : String,
-  "Login" : String,
-  "Name" : String,
-  "Org" : String,
-  "Role" : String
+  "[Email](#cfn-grafana-workspace-assertionattributes-email)" : {{String}},
+  "[Groups](#cfn-grafana-workspace-assertionattributes-groups)" : {{String}},
+  "[Login](#cfn-grafana-workspace-assertionattributes-login)" : {{String}},
+  "[Name](#cfn-grafana-workspace-assertionattributes-name)" : {{String}},
+  "[Org](#cfn-grafana-workspace-assertionattributes-org)" : {{String}},
+  "[Role](#cfn-grafana-workspace-assertionattributes-role)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-grafana-workspace-assertionattributes-syntax.yaml"></a>
 
-```yaml
-
-  Email: String
-  Groups: String
-  Login: String
-  Name: String
-  Org: String
-  Role: String
-
+```
+  [Email](#cfn-grafana-workspace-assertionattributes-email): {{String}}
+  [Groups](#cfn-grafana-workspace-assertionattributes-groups): {{String}}
+  [Login](#cfn-grafana-workspace-assertionattributes-login): {{String}}
+  [Name](#cfn-grafana-workspace-assertionattributes-name): {{String}}
+  [Org](#cfn-grafana-workspace-assertionattributes-org): {{String}}
+  [Role](#cfn-grafana-workspace-assertionattributes-role): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-grafana-workspace-assertionattributes-properties"></a>
 
-`Email`
+`Email`  <a name="cfn-grafana-workspace-assertionattributes-email"></a>
+The name of the attribute within the SAML assertion to use as the email names for SAML users.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the attribute within the SAML assertion to use as the email names for SAML
-users.
+`Groups`  <a name="cfn-grafana-workspace-assertionattributes-groups"></a>
+The name of the attribute within the SAML assertion to use as the user full "friendly" names for user groups.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Login`  <a name="cfn-grafana-workspace-assertionattributes-login"></a>
+The name of the attribute within the SAML assertion to use as the login names for SAML users.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Name`  <a name="cfn-grafana-workspace-assertionattributes-name"></a>
+The name of the attribute within the SAML assertion to use as the user full "friendly" names for SAML users.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`Org`  <a name="cfn-grafana-workspace-assertionattributes-org"></a>
+The name of the attribute within the SAML assertion to use as the user full "friendly" names for the users' organizations.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Groups`
-
-The name of the attribute within the SAML assertion to use as the user full "friendly"
-names for user groups.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Login`
-
-The name of the attribute within the SAML assertion to use as the login names for SAML
-users.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the attribute within the SAML assertion to use as the user full "friendly"
-names for SAML users.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Org`
-
-The name of the attribute within the SAML assertion to use as the user full "friendly"
-names for the users' organizations.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Role`
-
+`Role`  <a name="cfn-grafana-workspace-assertionattributes-role"></a>
 The name of the attribute within the SAML assertion to use as the user roles.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Grafana::Workspace
-
-IdpMetadata
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

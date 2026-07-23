@@ -2,64 +2,49 @@
 title: "AWS::CloudFront::AnycastIpList IpamCidrConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::AnycastIpList IpamCidrConfig
+<a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfig"></a>
 
 Configuration for an IPAM CIDR that defines a specific IP address range, IPAM pool, and associated Anycast IP address.
 
 ## Syntax
+<a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cidr" : String,
-  "IpamPoolArn" : String
+  "[Cidr](#cfn-cloudfront-anycastiplist-ipamcidrconfig-cidr)" : {{String}},
+  "[IpamPoolArn](#cfn-cloudfront-anycastiplist-ipamcidrconfig-ipampoolarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfig-syntax.yaml"></a>
 
-```yaml
-
-  Cidr: String
-  IpamPoolArn: String
-
+```
+  [Cidr](#cfn-cloudfront-anycastiplist-ipamcidrconfig-cidr): {{String}}
+  [IpamPoolArn](#cfn-cloudfront-anycastiplist-ipamcidrconfig-ipampoolarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfig-properties"></a>
 
-`Cidr`
-
+`Cidr`  <a name="cfn-cloudfront-anycastiplist-ipamcidrconfig-cidr"></a>
 The CIDR that specifies the IP address range for this IPAM configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpamPoolArn`
-
+`IpamPoolArn`  <a name="cfn-cloudfront-anycastiplist-ipamcidrconfig-ipampoolarn"></a>
 The Amazon Resource Name (ARN) of the IPAM pool that the CIDR block is assigned to.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnycastIpList
-
-IpamCidrConfigResult
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

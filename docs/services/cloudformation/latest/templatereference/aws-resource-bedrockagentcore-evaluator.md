@@ -2,158 +2,137 @@
 title: "AWS::BedrockAgentCore::Evaluator"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator
+<a name="aws-resource-bedrockagentcore-evaluator"></a>
 
 Specifies an evaluator for Amazon Bedrock AgentCore. An evaluator assesses agent quality using LLM-as-a-Judge configurations to measure and improve agent performance.
 
-For more information, see [Evaluate agent quality with Amazon Bedrock AgentCore](../../../bedrock-agentcore/latest/devguide/evaluators.md).
+For more information, see [Evaluate agent quality with Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluators.html).
 
 See the **Properties** section below for descriptions of both the required and optional properties.
 
 ## Syntax
+<a name="aws-resource-bedrockagentcore-evaluator-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrockagentcore-evaluator-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BedrockAgentCore::Evaluator",
   "Properties" : {
-      "Description" : String,
-      "EvaluatorConfig" : EvaluatorConfig,
-      "EvaluatorName" : String,
-      "Level" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-bedrockagentcore-evaluator-description)" : {{String}},
+      "[EvaluatorConfig](#cfn-bedrockagentcore-evaluator-evaluatorconfig)" : {{EvaluatorConfig}},
+      "[EvaluatorName](#cfn-bedrockagentcore-evaluator-evaluatorname)" : {{String}},
+      "[KmsKeyArn](#cfn-bedrockagentcore-evaluator-kmskeyarn)" : {{String}},
+      "[Level](#cfn-bedrockagentcore-evaluator-level)" : {{String}},
+      "[Tags](#cfn-bedrockagentcore-evaluator-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrockagentcore-evaluator-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BedrockAgentCore::Evaluator
 Properties:
-  Description: String
-  EvaluatorConfig:
-    EvaluatorConfig
-  EvaluatorName: String
-  Level: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-bedrockagentcore-evaluator-description): {{String}}
+  [EvaluatorConfig](#cfn-bedrockagentcore-evaluator-evaluatorconfig): {{
+    EvaluatorConfig}}
+  [EvaluatorName](#cfn-bedrockagentcore-evaluator-evaluatorname): {{String}}
+  [KmsKeyArn](#cfn-bedrockagentcore-evaluator-kmskeyarn): {{String}}
+  [Level](#cfn-bedrockagentcore-evaluator-level): {{String}}
+  [Tags](#cfn-bedrockagentcore-evaluator-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrockagentcore-evaluator-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-bedrockagentcore-evaluator-description"></a>
+ The description of the evaluator.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The description of the evaluator.
+`EvaluatorConfig`  <a name="cfn-bedrockagentcore-evaluator-evaluatorconfig"></a>
+ The configuration of the evaluator, including LLM-as-a-Judge settings for custom evaluators.
+*Required*: Yes
+*Type*: [EvaluatorConfig](aws-properties-bedrockagentcore-evaluator-evaluatorconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EvaluatorName`  <a name="cfn-bedrockagentcore-evaluator-evaluatorname"></a>
+ The name of the evaluator.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`KmsKeyArn`  <a name="cfn-bedrockagentcore-evaluator-kmskeyarn"></a>
+ The Amazon Resource Name (ARN) of the customer managed AWS KMS key used to encrypt the evaluator's sensitive data. This field is only present for evaluators encrypted with a customer managed key.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]+:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`Level`  <a name="cfn-bedrockagentcore-evaluator-level"></a>
+ The evaluation level (`TOOL_CALL`, `TRACE`, or `SESSION`) that determines the scope of evaluation.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TOOL_CALL | TRACE | SESSION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EvaluatorConfig`
-
-The configuration of the evaluator, including LLM-as-a-Judge settings for custom evaluators.
-
-_Required_: Yes
-
-_Type_: [EvaluatorConfig](aws-properties-bedrockagentcore-evaluator-evaluatorconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EvaluatorName`
-
-The name of the evaluator.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Level`
-
-The evaluation level ( `TOOL_CALL`, `TRACE`, or
-`SESSION`) that determines the scope of evaluation.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TOOL_CALL | TRACE | SESSION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrockagentcore-evaluator-tags"></a>
 The tags for the evaluator.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrockagentcore-evaluator-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrockagentcore-evaluator-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrockagentcore-evaluator-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrockagentcore-evaluator-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the evaluator. For example:
 
-`arn:aws:bedrock-agentcore:us-east-1:123456789012:evaluator/EXAMPLE12345`
+ `arn:aws:bedrock-agentcore:us-east-1:123456789012:evaluator/EXAMPLE12345`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrockagentcore-evaluator-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrockagentcore-evaluator-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the evaluator was created.
 
-`EvaluatorArn`
-
+`EvaluatorArn`  <a name="EvaluatorArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the evaluator.
 
-`EvaluatorId`
-
+`EvaluatorId`  <a name="EvaluatorId-fn::getatt"></a>
 The unique identifier of the evaluator.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the evaluator.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the evaluator was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfig
-
-BedrockEvaluatorModelConfig
 
 All content copied from https://docs.aws.amazon.com/.

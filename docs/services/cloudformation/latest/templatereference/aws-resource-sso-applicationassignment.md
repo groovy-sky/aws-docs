@@ -2,111 +2,93 @@
 title: "AWS::SSO::ApplicationAssignment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSO::ApplicationAssignment
+<a name="aws-resource-sso-applicationassignment"></a>
 
 A structure that describes an assignment of a principal to an application.
 
 ## Syntax
+<a name="aws-resource-sso-applicationassignment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sso-applicationassignment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSO::ApplicationAssignment",
   "Properties" : {
-      "ApplicationArn" : String,
-      "PrincipalId" : String,
-      "PrincipalType" : String
+      "[ApplicationArn](#cfn-sso-applicationassignment-applicationarn)" : {{String}},
+      "[PrincipalId](#cfn-sso-applicationassignment-principalid)" : {{String}},
+      "[PrincipalType](#cfn-sso-applicationassignment-principaltype)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sso-applicationassignment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSO::ApplicationAssignment
 Properties:
-  ApplicationArn: String
-  PrincipalId: String
-  PrincipalType: String
-
+  [ApplicationArn](#cfn-sso-applicationassignment-applicationarn): {{String}}
+  [PrincipalId](#cfn-sso-applicationassignment-principalid): {{String}}
+  [PrincipalType](#cfn-sso-applicationassignment-principaltype): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-sso-applicationassignment-properties"></a>
 
-`ApplicationArn`
-
+`ApplicationArn`  <a name="cfn-sso-applicationassignment-applicationarn"></a>
 The ARN of the application that has principals assigned.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws(-[a-z]{1,5}){0,3}:sso::\d{12}:application/(sso)?ins-[a-zA-Z0-9-.]{16}/apl-[a-zA-Z0-9]{16}`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws(-[a-z]{1,5}){0,3}:sso::\d{12}:application/(sso)?ins-[a-zA-Z0-9-.]{16}/apl-[a-zA-Z0-9]{16}`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrincipalId`
-
+`PrincipalId`  <a name="cfn-sso-applicationassignment-principalid"></a>
 The unique identifier of the principal assigned to the application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$`
+*Minimum*: `1`
+*Maximum*: `47`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$`
-
-_Minimum_: `1`
-
-_Maximum_: `47`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrincipalType`
-
+`PrincipalType`  <a name="cfn-sso-applicationassignment-principaltype"></a>
 The type of the principal assigned to the application.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `USER | GROUP`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `USER | GROUP`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sso-applicationassignment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sso-applicationassignment-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, combined by all fields with the delimiter
-`|`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, combined by all fields with the delimiter `|`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-sso-applicationassignment--examples"></a>
 
 ### Creating a new application assignment for IAM Identity Center
+<a name="aws-resource-sso-applicationassignment--examples--Creating_a_new_application_assignment_for"></a>
 
-The following example grants the user permission to access the example
-application.
+The following example grants the user permission to access the example application.
 
 #### JSON
+<a name="aws-resource-sso-applicationassignment--examples--Creating_a_new_application_assignment_for--json"></a>
 
-```json
-
+```
 "ApplicationAssignment": {
     "Type": "AWS::SSO::ApplicationAssignment",
     "Properties": {
@@ -118,22 +100,15 @@ application.
 ```
 
 #### YAML
+<a name="aws-resource-sso-applicationassignment--examples--Creating_a_new_application_assignment_for--yaml"></a>
 
-```yaml
-
+```
 ApplicationAssignment:
     Type: AWS::SSO::ApplicationAssignment
     Properties:
         ApplicationArn: 'arn:aws:sso:::application/ssoins-exampleapplicationid'
         PrincipalID: 'user_id'
         PrincipalType: 'USER'
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SSO::Assignment
 
 All content copied from https://docs.aws.amazon.com/.

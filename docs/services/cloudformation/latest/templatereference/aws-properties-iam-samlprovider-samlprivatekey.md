@@ -2,73 +2,54 @@
 title: "AWS::IAM::SAMLProvider SAMLPrivateKey"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::SAMLProvider SAMLPrivateKey
+<a name="aws-properties-iam-samlprovider-samlprivatekey"></a>
 
 Contains the private keys for the SAML provider.
 
-This data type is used as a response element in the [GetSAMLProvider](../../../../reference/iam/latest/apireference/api-getsamlprovider.md)
-operation.
+This data type is used as a response element in the [GetSAMLProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html) operation.
 
 ## Syntax
+<a name="aws-properties-iam-samlprovider-samlprivatekey-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iam-samlprovider-samlprivatekey-syntax.json"></a>
 
-```json
-
+```
 {
-  "KeyId" : String,
-  "Timestamp" : String
+  "[KeyId](#cfn-iam-samlprovider-samlprivatekey-keyid)" : {{String}},
+  "[Timestamp](#cfn-iam-samlprovider-samlprivatekey-timestamp)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iam-samlprovider-samlprivatekey-syntax.yaml"></a>
 
-```yaml
-
-  KeyId: String
-  Timestamp: String
-
+```
+  [KeyId](#cfn-iam-samlprovider-samlprivatekey-keyid): {{String}}
+  [Timestamp](#cfn-iam-samlprovider-samlprivatekey-timestamp): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iam-samlprovider-samlprivatekey-properties"></a>
 
-`KeyId`
-
+`KeyId`  <a name="cfn-iam-samlprovider-samlprivatekey-keyid"></a>
 The unique identifier for the SAML private key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Z0-9]+`
+*Minimum*: `22`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-Z0-9]+`
-
-_Minimum_: `22`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timestamp`
-
-The date and time, in [ISO 8601 date-time](http://www.iso.org/iso/iso8601) format, when the private key was uploaded.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IAM::SAMLProvider
-
-Tag
+`Timestamp`  <a name="cfn-iam-samlprovider-samlprivatekey-timestamp"></a>
+The date and time, in [ISO 8601 date-time ](http://www.iso.org/iso/iso8601) format, when the private key was uploaded.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,183 +2,137 @@
 title: "AWS::Bedrock::AutomatedReasoningPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::AutomatedReasoningPolicy
+<a name="aws-resource-bedrock-automatedreasoningpolicy"></a>
 
-Creates an Automated Reasoning policy for Amazon Bedrock Guardrails. Automated
-Reasoning policies use mathematical techniques to detect hallucinations, suggest
-corrections, and highlight unstated assumptions in the responses of your GenAI
-application.
+Creates an Automated Reasoning policy for Amazon Bedrock Guardrails. Automated Reasoning policies use mathematical techniques to detect hallucinations, suggest corrections, and highlight unstated assumptions in the responses of your GenAI application.
 
-To create a policy, you upload a source document that describes the rules that you're
-encoding. Automated Reasoning extracts important concepts from the source document that
-will become variables in the policy and infers policy rules.
+To create a policy, you upload a source document that describes the rules that you're encoding. Automated Reasoning extracts important concepts from the source document that will become variables in the policy and infers policy rules.
 
-To learn more about creating Automated Reasoning policies, see [Minimize AI hallucinations and deliver up to 99% verification accuracy with\
-Automated Reasoning checks: Now available](https://aws.amazon.com/blogs/aws/minimize-ai-hallucinations-and-deliver-up-to-99-verification-accuracy-with-automated-reasoning-checks-now-available) in the _AWS News Blog_.
+To learn more about creating Automated Reasoning policies, see [Minimize AI hallucinations and deliver up to 99% verification accuracy with Automated Reasoning checks: Now available](https://aws.amazon.com/blogs/aws/minimize-ai-hallucinations-and-deliver-up-to-99-verification-accuracy-with-automated-reasoning-checks-now-available/) in the *AWS News Blog*.
 
 ## Syntax
+<a name="aws-resource-bedrock-automatedreasoningpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-automatedreasoningpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::AutomatedReasoningPolicy",
   "Properties" : {
-      "Description" : String,
-      "ForceDelete" : Boolean,
-      "KmsKeyId" : String,
-      "Name" : String,
-      "PolicyDefinition" : PolicyDefinition,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-bedrock-automatedreasoningpolicy-description)" : {{String}},
+      "[ForceDelete](#cfn-bedrock-automatedreasoningpolicy-forcedelete)" : {{Boolean}},
+      "[KmsKeyId](#cfn-bedrock-automatedreasoningpolicy-kmskeyid)" : {{String}},
+      "[Name](#cfn-bedrock-automatedreasoningpolicy-name)" : {{String}},
+      "[PolicyDefinition](#cfn-bedrock-automatedreasoningpolicy-policydefinition)" : {{PolicyDefinition}},
+      "[Tags](#cfn-bedrock-automatedreasoningpolicy-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-automatedreasoningpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::AutomatedReasoningPolicy
 Properties:
-  Description: String
-  ForceDelete: Boolean
-  KmsKeyId: String
-  Name: String
-  PolicyDefinition:
-    PolicyDefinition
-  Tags:
-    - Tag
-
+  [Description](#cfn-bedrock-automatedreasoningpolicy-description): {{String}}
+  [ForceDelete](#cfn-bedrock-automatedreasoningpolicy-forcedelete): {{Boolean}}
+  [KmsKeyId](#cfn-bedrock-automatedreasoningpolicy-kmskeyid): {{String}}
+  [Name](#cfn-bedrock-automatedreasoningpolicy-name): {{String}}
+  [PolicyDefinition](#cfn-bedrock-automatedreasoningpolicy-policydefinition): {{
+    PolicyDefinition}}
+  [Tags](#cfn-bedrock-automatedreasoningpolicy-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-automatedreasoningpolicy-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrock-automatedreasoningpolicy-description"></a>
 The description of the policy.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\s\S]+$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\s\S]+$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForceDelete`
-
+`ForceDelete`  <a name="cfn-bedrock-automatedreasoningpolicy-forcedelete"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-bedrock-automatedreasoningpolicy-kmskeyid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:aws(-[^:]+)?:kms:[a-zA-Z0-9-]*:[0-9]{12}:((key/[a-zA-Z0-9-]{36})|(alias/[a-zA-Z0-9-_/]+)))|([a-zA-Z0-9-]{36})|(alias/[a-zA-Z0-9-_/]+)$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(arn:aws(-[^:]+)?:kms:[a-zA-Z0-9-]*:[0-9]{12}:((key/[a-zA-Z0-9-]{36})|(alias/[a-zA-Z0-9-_/]+)))|([a-zA-Z0-9-]{36})|(alias/[a-zA-Z0-9-_/]+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-bedrock-automatedreasoningpolicy-name"></a>
 The name of the policy.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z-_ ]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z-_ ]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyDefinition`
-
+`PolicyDefinition`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinition"></a>
 The complete policy definition generated by the build workflow, containing all rules, variables, and custom types extracted from the source documents.
+*Required*: No
+*Type*: [PolicyDefinition](aws-properties-bedrock-automatedreasoningpolicy-policydefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PolicyDefinition](aws-properties-bedrock-automatedreasoningpolicy-policydefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrock-automatedreasoningpolicy-tags"></a>
 The tags associated with the Automated Reasoning policy.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrock-automatedreasoningpolicy-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrock-automatedreasoningpolicy-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrock-automatedreasoningpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-automatedreasoningpolicy-return-values-ref"></a>
 
 Returns the policy ID.
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-automatedreasoningpolicy-return-values-fn--getatt"></a>
 
 Returns the value of an attribute from a resource in the template.
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrock-automatedreasoningpolicy-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the policy was created.
 
-`DefinitionHash`
-
+`DefinitionHash`  <a name="DefinitionHash-fn::getatt"></a>
 A hash of the policy definition used to identify the version.
 
-`KmsKeyArn`
-
+`KmsKeyArn`  <a name="KmsKeyArn-fn::getatt"></a>
 Property description not available.
 
-`PolicyArn`
-
+`PolicyArn`  <a name="PolicyArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the policy.
 
-`PolicyId`
-
+`PolicyId`  <a name="PolicyId-fn::getatt"></a>
 The unique identifier of the policy.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the policy was last updated.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The version of the policy.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-PolicyDefinition
 
 All content copied from https://docs.aws.amazon.com/.

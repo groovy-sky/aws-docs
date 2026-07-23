@@ -2,91 +2,62 @@
 title: "AWS::ApplicationInsights::Application LogPattern"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application LogPattern
+<a name="aws-properties-applicationinsights-application-logpattern"></a>
 
-The `AWS::ApplicationInsights::Application LogPattern` property type
-specifies an object that defines the log patterns that belong to a
-`LogPatternSet`.
+The `AWS::ApplicationInsights::Application LogPattern` property type specifies an object that defines the log patterns that belong to a `LogPatternSet`.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-logpattern-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-logpattern-syntax.json"></a>
 
-```json
-
+```
 {
-  "Pattern" : String,
-  "PatternName" : String,
-  "Rank" : Integer
+  "[Pattern](#cfn-applicationinsights-application-logpattern-pattern)" : {{String}},
+  "[PatternName](#cfn-applicationinsights-application-logpattern-patternname)" : {{String}},
+  "[Rank](#cfn-applicationinsights-application-logpattern-rank)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-logpattern-syntax.yaml"></a>
 
-```yaml
-
-  Pattern: String
-  PatternName: String
-  Rank: Integer
-
+```
+  [Pattern](#cfn-applicationinsights-application-logpattern-pattern): {{String}}
+  [PatternName](#cfn-applicationinsights-application-logpattern-patternname): {{String}}
+  [Rank](#cfn-applicationinsights-application-logpattern-rank): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-logpattern-properties"></a>
 
-`Pattern`
+`Pattern`  <a name="cfn-applicationinsights-application-logpattern-pattern"></a>
+A regular expression that defines the log pattern. A log pattern can contain up to 50 characters, and it cannot be empty.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A regular expression that defines the log pattern. A log pattern can contain up to 50
-characters, and it cannot be empty.
+`PatternName`  <a name="cfn-applicationinsights-application-logpattern-patternname"></a>
+The name of the log pattern. A log pattern name can contain up to 50 characters, and it cannot be empty. The characters can be Unicode letters, digits, or one of the following symbols: period, dash, underscore.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9.-_]*`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PatternName`
-
-The name of the log pattern. A log pattern name can contain up to 50 characters, and
-it cannot be empty. The characters can be Unicode letters, digits, or one of the
-following symbols: period, dash, underscore.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9.-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rank`
-
+`Rank`  <a name="cfn-applicationinsights-application-logpattern-rank"></a>
 The rank of the log pattern.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Log
-
-LogPatternSet
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

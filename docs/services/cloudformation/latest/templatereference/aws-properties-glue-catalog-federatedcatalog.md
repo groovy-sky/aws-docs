@@ -2,76 +2,55 @@
 title: "AWS::Glue::Catalog FederatedCatalog"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Catalog FederatedCatalog
+<a name="aws-properties-glue-catalog-federatedcatalog"></a>
 
 A catalog that points to an entity outside the AWS Glue Data Catalog.
 
 ## Syntax
+<a name="aws-properties-glue-catalog-federatedcatalog-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-catalog-federatedcatalog-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectionName" : String,
-  "Identifier" : String
+  "[ConnectionName](#cfn-glue-catalog-federatedcatalog-connectionname)" : {{String}},
+  "[Identifier](#cfn-glue-catalog-federatedcatalog-identifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-catalog-federatedcatalog-syntax.yaml"></a>
 
-```yaml
-
-  ConnectionName: String
-  Identifier: String
-
+```
+  [ConnectionName](#cfn-glue-catalog-federatedcatalog-connectionname): {{String}}
+  [Identifier](#cfn-glue-catalog-federatedcatalog-identifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-catalog-federatedcatalog-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-glue-catalog-federatedcatalog-connectionname"></a>
 The name of the connection to an external data source, for example a Redshift-federated catalog.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Identifier`
-
+`Identifier`  <a name="cfn-glue-catalog-federatedcatalog-identifier"></a>
 A unique identifier for the federated catalog.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataLakePrincipal
-
-PrincipalPermissions
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

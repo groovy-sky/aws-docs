@@ -2,57 +2,44 @@
 title: "AWS::S3Tables::TableBucket ReplicationRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::TableBucket ReplicationRule
+<a name="aws-properties-s3tables-tablebucket-replicationrule"></a>
 
-The `ReplicationRule` property type specifies Property description not available. for an [AWS::S3Tables::TableBucket](aws-resource-s3tables-tablebucket.md).
+<a name="aws-properties-s3tables-tablebucket-replicationrule-description"></a>The `ReplicationRule` property type specifies Property description not available. for an [AWS::S3Tables::TableBucket](aws-resource-s3tables-tablebucket.md).
 
 ## Syntax
+<a name="aws-properties-s3tables-tablebucket-replicationrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-tablebucket-replicationrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destinations" : [ ReplicationDestination, ... ]
+  "[Destinations](#cfn-s3tables-tablebucket-replicationrule-destinations)" : {{[ ReplicationDestination, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-tablebucket-replicationrule-syntax.yaml"></a>
 
-```yaml
-
-  Destinations:
-    - ReplicationDestination
-
+```
+  [Destinations](#cfn-s3tables-tablebucket-replicationrule-destinations): {{
+    - ReplicationDestination}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-tablebucket-replicationrule-properties"></a>
 
-`Destinations`
-
+`Destinations`  <a name="cfn-s3tables-tablebucket-replicationrule-destinations"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [ReplicationDestination](aws-properties-s3tables-tablebucket-replicationdestination.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationDestination
-
-StorageClassConfiguration
+*Required*: Yes
+*Type*: Array of [ReplicationDestination](aws-properties-s3tables-tablebucket-replicationdestination.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

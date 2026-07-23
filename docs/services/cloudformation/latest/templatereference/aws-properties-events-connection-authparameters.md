@@ -2,108 +2,79 @@
 title: "AWS::Events::Connection AuthParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Connection AuthParameters
+<a name="aws-properties-events-connection-authparameters"></a>
 
 Tthe authorization parameters to use for the connection.
 
 ## Syntax
+<a name="aws-properties-events-connection-authparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-connection-authparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiKeyAuthParameters" : ApiKeyAuthParameters,
-  "BasicAuthParameters" : BasicAuthParameters,
-  "ConnectivityParameters" : ConnectivityParameters,
-  "InvocationHttpParameters" : ConnectionHttpParameters,
-  "OAuthParameters" : OAuthParameters
+  "[ApiKeyAuthParameters](#cfn-events-connection-authparameters-apikeyauthparameters)" : {{ApiKeyAuthParameters}},
+  "[BasicAuthParameters](#cfn-events-connection-authparameters-basicauthparameters)" : {{BasicAuthParameters}},
+  "[ConnectivityParameters](#cfn-events-connection-authparameters-connectivityparameters)" : {{ConnectivityParameters}},
+  "[InvocationHttpParameters](#cfn-events-connection-authparameters-invocationhttpparameters)" : {{ConnectionHttpParameters}},
+  "[OAuthParameters](#cfn-events-connection-authparameters-oauthparameters)" : {{OAuthParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-connection-authparameters-syntax.yaml"></a>
 
-```yaml
-
-  ApiKeyAuthParameters:
-    ApiKeyAuthParameters
-  BasicAuthParameters:
-    BasicAuthParameters
-  ConnectivityParameters:
-    ConnectivityParameters
-  InvocationHttpParameters:
-    ConnectionHttpParameters
-  OAuthParameters:
-    OAuthParameters
-
+```
+  [ApiKeyAuthParameters](#cfn-events-connection-authparameters-apikeyauthparameters): {{
+    ApiKeyAuthParameters}}
+  [BasicAuthParameters](#cfn-events-connection-authparameters-basicauthparameters): {{
+    BasicAuthParameters}}
+  [ConnectivityParameters](#cfn-events-connection-authparameters-connectivityparameters): {{
+    ConnectivityParameters}}
+  [InvocationHttpParameters](#cfn-events-connection-authparameters-invocationhttpparameters): {{
+    ConnectionHttpParameters}}
+  [OAuthParameters](#cfn-events-connection-authparameters-oauthparameters): {{
+    OAuthParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-events-connection-authparameters-properties"></a>
 
-`ApiKeyAuthParameters`
-
+`ApiKeyAuthParameters`  <a name="cfn-events-connection-authparameters-apikeyauthparameters"></a>
 The API Key parameters to use for authorization.
+*Required*: No
+*Type*: [ApiKeyAuthParameters](aws-properties-events-connection-apikeyauthparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ApiKeyAuthParameters](aws-properties-events-connection-apikeyauthparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BasicAuthParameters`
-
+`BasicAuthParameters`  <a name="cfn-events-connection-authparameters-basicauthparameters"></a>
 The authorization parameters for Basic authorization.
+*Required*: No
+*Type*: [BasicAuthParameters](aws-properties-events-connection-basicauthparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BasicAuthParameters](aws-properties-events-connection-basicauthparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectivityParameters`
-
+`ConnectivityParameters`  <a name="cfn-events-connection-authparameters-connectivityparameters"></a>
 For private OAuth authentication endpoints. The parameters EventBridge uses to authenticate against the endpoint.
+For more information, see [Authorization methods for connections](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-connection-auth.html) in the * *Amazon EventBridge User Guide* *.
+*Required*: No
+*Type*: [ConnectivityParameters](aws-properties-events-connection-connectivityparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Authorization methods for connections](../../../eventbridge/latest/userguide/eb-target-connection-auth.md) in the _Amazon EventBridge User Guide_.
+`InvocationHttpParameters`  <a name="cfn-events-connection-authparameters-invocationhttpparameters"></a>
+Additional parameters for the connection that are passed through with every invocation to the HTTP endpoint.
+*Required*: No
+*Type*: [ConnectionHttpParameters](aws-properties-events-connection-connectionhttpparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConnectivityParameters](aws-properties-events-connection-connectivityparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InvocationHttpParameters`
-
-Additional parameters for the connection that are passed through with every invocation to
-the HTTP endpoint.
-
-_Required_: No
-
-_Type_: [ConnectionHttpParameters](aws-properties-events-connection-connectionhttpparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OAuthParameters`
-
+`OAuthParameters`  <a name="cfn-events-connection-authparameters-oauthparameters"></a>
 The OAuth parameters to use for authorization.
-
-_Required_: No
-
-_Type_: [OAuthParameters](aws-properties-events-connection-oauthparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiKeyAuthParameters
-
-BasicAuthParameters
+*Required*: No
+*Type*: [OAuthParameters](aws-properties-events-connection-oauthparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

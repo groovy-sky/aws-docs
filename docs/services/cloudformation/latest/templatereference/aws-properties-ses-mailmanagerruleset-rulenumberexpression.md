@@ -2,80 +2,59 @@
 title: "AWS::SES::MailManagerRuleSet RuleNumberExpression"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet RuleNumberExpression
+<a name="aws-properties-ses-mailmanagerruleset-rulenumberexpression"></a>
 
-A number expression to match numeric conditions with integers from the incoming
-email.
+A number expression to match numeric conditions with integers from the incoming email.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagerruleset-rulenumberexpression-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagerruleset-rulenumberexpression-syntax.json"></a>
 
-```json
-
+```
 {
-  "Evaluate" : RuleNumberToEvaluate,
-  "Operator" : String,
-  "Value" : Number
+  "[Evaluate](#cfn-ses-mailmanagerruleset-rulenumberexpression-evaluate)" : {{RuleNumberToEvaluate}},
+  "[Operator](#cfn-ses-mailmanagerruleset-rulenumberexpression-operator)" : {{String}},
+  "[Value](#cfn-ses-mailmanagerruleset-rulenumberexpression-value)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagerruleset-rulenumberexpression-syntax.yaml"></a>
 
-```yaml
-
-  Evaluate:
-    RuleNumberToEvaluate
-  Operator: String
-  Value: Number
-
+```
+  [Evaluate](#cfn-ses-mailmanagerruleset-rulenumberexpression-evaluate): {{
+    RuleNumberToEvaluate}}
+  [Operator](#cfn-ses-mailmanagerruleset-rulenumberexpression-operator): {{String}}
+  [Value](#cfn-ses-mailmanagerruleset-rulenumberexpression-value): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagerruleset-rulenumberexpression-properties"></a>
 
-`Evaluate`
-
+`Evaluate`  <a name="cfn-ses-mailmanagerruleset-rulenumberexpression-evaluate"></a>
 The number to evaluate in a numeric condition expression.
+*Required*: Yes
+*Type*: [RuleNumberToEvaluate](aws-properties-ses-mailmanagerruleset-rulenumbertoevaluate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [RuleNumberToEvaluate](aws-properties-ses-mailmanagerruleset-rulenumbertoevaluate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operator`
-
+`Operator`  <a name="cfn-ses-mailmanagerruleset-rulenumberexpression-operator"></a>
 The operator for a numeric condition expression.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS | NOT_EQUALS | LESS_THAN | GREATER_THAN | LESS_THAN_OR_EQUAL | GREATER_THAN_OR_EQUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS | NOT_EQUALS | LESS_THAN | GREATER_THAN | LESS_THAN_OR_EQUAL | GREATER_THAN_OR_EQUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ses-mailmanagerruleset-rulenumberexpression-value"></a>
 The value to evaluate in a numeric condition expression.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleIsInAddressList
-
-RuleNumberToEvaluate
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,120 +2,96 @@
 title: "AWS::Route53RecoveryReadiness::ReadinessCheck"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryReadiness::ReadinessCheck
+<a name="aws-resource-route53recoveryreadiness-readinesscheck"></a>
 
-Creates a readiness check in Amazon Route 53 Application Recovery Controller. A readiness check continually monitors a resource set in your application,
-such as a set of Amazon Aurora instances, that Route 53 ARC is auditing recovery readiness for. The audits run once every minute on every resource that's associated with
-a readiness check.
+Creates a readiness check in Amazon Route 53 Application Recovery Controller. A readiness check continually monitors a resource set in your application, such as a set of Amazon Aurora instances, that Route 53 ARC is auditing recovery readiness for. The audits run once every minute on every resource that's associated with a readiness check.
 
-Every resource type has a set of rules associated with it that Route 53 ARC uses to audit resources for readiness. For more information, see
-[Readiness rules descriptions](../../../r53recovery/latest/dg/recovery-readiness-rules-resources.md)
-in the Amazon Route 53 Application Recovery Controller Developer Guide.
+Every resource type has a set of rules associated with it that Route 53 ARC uses to audit resources for readiness. For more information, see [Readiness rules descriptions](https://docs.aws.amazon.com/r53recovery/latest/dg/recovery-readiness.rules-resources.html) in the Amazon Route 53 Application Recovery Controller Developer Guide.
 
 Route 53 ARC Readiness supports us-east-1 and us-west-2 AWS Regions only.
 
 ## Syntax
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53RecoveryReadiness::ReadinessCheck",
   "Properties" : {
-      "ReadinessCheckName" : String,
-      "ResourceSetName" : String,
-      "Tags" : [ Tag, ... ]
+      "[ReadinessCheckName](#cfn-route53recoveryreadiness-readinesscheck-readinesscheckname)" : {{String}},
+      "[ResourceSetName](#cfn-route53recoveryreadiness-readinesscheck-resourcesetname)" : {{String}},
+      "[Tags](#cfn-route53recoveryreadiness-readinesscheck-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53RecoveryReadiness::ReadinessCheck
 Properties:
-  ReadinessCheckName: String
-  ResourceSetName: String
-  Tags:
-    - Tag
-
+  [ReadinessCheckName](#cfn-route53recoveryreadiness-readinesscheck-readinesscheckname): {{String}}
+  [ResourceSetName](#cfn-route53recoveryreadiness-readinesscheck-resourcesetname): {{String}}
+  [Tags](#cfn-route53recoveryreadiness-readinesscheck-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-properties"></a>
 
-`ReadinessCheckName`
-
+`ReadinessCheckName`  <a name="cfn-route53recoveryreadiness-readinesscheck-readinesscheckname"></a>
 The name of the readiness check to create.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_]+`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceSetName`
-
+`ResourceSetName`  <a name="cfn-route53recoveryreadiness-readinesscheck-resourcesetname"></a>
 The name of the resource set to check.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_]+`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-route53recoveryreadiness-readinesscheck-tags"></a>
 A collection of tags associated with a resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-route53recoveryreadiness-readinesscheck-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-route53recoveryreadiness-readinesscheck-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `ReadinessCheckName`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ReadinessCheckArn`
+####
+<a name="aws-resource-route53recoveryreadiness-readinesscheck-return-values-fn--getatt-fn--getatt"></a>
 
+`ReadinessCheckArn`  <a name="ReadinessCheckArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the readiness check.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

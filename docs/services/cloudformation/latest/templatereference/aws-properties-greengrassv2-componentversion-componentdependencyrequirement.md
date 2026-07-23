@@ -2,77 +2,54 @@
 title: "AWS::GreengrassV2::ComponentVersion ComponentDependencyRequirement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::ComponentVersion ComponentDependencyRequirement
+<a name="aws-properties-greengrassv2-componentversion-componentdependencyrequirement"></a>
 
-Contains information about a component dependency for a Lambda function
-component.
+Contains information about a component dependency for a Lambda function component.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-componentversion-componentdependencyrequirement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-componentversion-componentdependencyrequirement-syntax.json"></a>
 
-```json
-
+```
 {
-  "DependencyType" : String,
-  "VersionRequirement" : String
+  "[DependencyType](#cfn-greengrassv2-componentversion-componentdependencyrequirement-dependencytype)" : {{String}},
+  "[VersionRequirement](#cfn-greengrassv2-componentversion-componentdependencyrequirement-versionrequirement)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-componentversion-componentdependencyrequirement-syntax.yaml"></a>
 
-```yaml
-
-  DependencyType: String
-  VersionRequirement: String
-
+```
+  [DependencyType](#cfn-greengrassv2-componentversion-componentdependencyrequirement-dependencytype): {{String}}
+  [VersionRequirement](#cfn-greengrassv2-componentversion-componentdependencyrequirement-versionrequirement): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-componentversion-componentdependencyrequirement-properties"></a>
 
-`DependencyType`
-
+`DependencyType`  <a name="cfn-greengrassv2-componentversion-componentdependencyrequirement-dependencytype"></a>
 The type of this dependency. Choose from the following options:
-
-- `SOFT` – The component doesn't restart if the dependency changes
-state.
-
-- `HARD` – The component restarts if the dependency changes state.
-
++ `SOFT` – The component doesn't restart if the dependency changes state.
++ `HARD` – The component restarts if the dependency changes state.
 Default: `HARD`
+*Required*: No
+*Type*: String
+*Allowed values*: `SOFT | HARD`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SOFT | HARD`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VersionRequirement`
-
+`VersionRequirement`  <a name="cfn-greengrassv2-componentversion-componentdependencyrequirement-versionrequirement"></a>
 The component version requirement for the component dependency.
-
-AWS IoT Greengrass uses semantic version constraints. For more information, see
-[Semantic Versioning](https://semver.org/).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GreengrassV2::ComponentVersion
-
-ComponentPlatform
+AWS IoT Greengrass uses semantic version constraints. For more information, see [Semantic Versioning](https://semver.org/).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

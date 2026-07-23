@@ -2,72 +2,53 @@
 title: "AWS::CustomerProfiles::SegmentDefinition ProfileDimension"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition ProfileDimension
+<a name="aws-properties-customerprofiles-segmentdefinition-profiledimension"></a>
 
-Object that segments on various Customer profile's fields that are larger than
-normal.
+Object that segments on various Customer profile's fields that are larger than normal.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-profiledimension-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-profiledimension-syntax.json"></a>
 
-```json
-
+```
 {
-  "DimensionType" : String,
-  "Values" : [ String, ... ]
+  "[DimensionType](#cfn-customerprofiles-segmentdefinition-profiledimension-dimensiontype)" : {{String}},
+  "[Values](#cfn-customerprofiles-segmentdefinition-profiledimension-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-profiledimension-syntax.yaml"></a>
 
-```yaml
-
-  DimensionType: String
-  Values:
-    - String
-
+```
+  [DimensionType](#cfn-customerprofiles-segmentdefinition-profiledimension-dimensiontype): {{String}}
+  [Values](#cfn-customerprofiles-segmentdefinition-profiledimension-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-profiledimension-properties"></a>
 
-`DimensionType`
-
+`DimensionType`  <a name="cfn-customerprofiles-segmentdefinition-profiledimension-dimensiontype"></a>
 The action to segment on.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Values`
-
+`Values`  <a name="cfn-customerprofiles-segmentdefinition-profiledimension-values"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `255 | 50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProfileAttributes
-
-ProfileTypeDimension
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `255 | 50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,101 +2,85 @@
 title: "AWS::ServiceCatalog::TagOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::TagOption
+<a name="aws-resource-servicecatalog-tagoption"></a>
 
-Specifies a TagOption. A TagOption is a key-value pair managed by AWS Service Catalog
-that serves as a template for creating an AWS tag.
+Specifies a TagOption. A TagOption is a key-value pair managed by AWS Service Catalog that serves as a template for creating an AWS tag.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-tagoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-tagoption-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::TagOption",
   "Properties" : {
-      "Active" : Boolean,
-      "Key" : String,
-      "Value" : String
+      "[Active](#cfn-servicecatalog-tagoption-active)" : {{Boolean}},
+      "[Key](#cfn-servicecatalog-tagoption-key)" : {{String}},
+      "[Value](#cfn-servicecatalog-tagoption-value)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-tagoption-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::TagOption
 Properties:
-  Active: Boolean
-  Key: String
-  Value: String
-
+  [Active](#cfn-servicecatalog-tagoption-active): {{Boolean}}
+  [Key](#cfn-servicecatalog-tagoption-key): {{String}}
+  [Value](#cfn-servicecatalog-tagoption-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-tagoption-properties"></a>
 
-`Active`
-
+`Active`  <a name="cfn-servicecatalog-tagoption-active"></a>
 The TagOption active state.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-servicecatalog-tagoption-key"></a>
 The TagOption key.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-servicecatalog-tagoption-value"></a>
 The TagOption value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-servicecatalog-tagoption-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-tagoption-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the TagOption identifier.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-servicecatalog-tagoption-return-values-fn--getatt"></a>
 
-`Id`
+####
+<a name="aws-resource-servicecatalog-tagoption-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The TagOption identifier.
 
 ## See also
-
-- [CreateTagOption](../../../servicecatalog/latest/dg/api-createtagoption.md)
-in the _AWS Service Catalog API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::StackSetConstraint
-
-AWS::ServiceCatalog::TagOptionAssociation
+<a name="aws-resource-servicecatalog-tagoption--seealso"></a>
++ [CreateTagOption](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_CreateTagOption.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

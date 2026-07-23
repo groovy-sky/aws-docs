@@ -2,59 +2,46 @@
 title: "AWS::EC2::Instance ElasticGpuSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::Instance ElasticGpuSpecification
+<a name="aws-properties-ec2-instance-elasticgpuspecification"></a>
 
-###### Note
-
+**Note**
 Amazon Elastic Graphics reached end of life on January 8, 2024.
 
-Specifies the type of Elastic GPU. An Elastic GPU is a GPU resource that you can attach
-to your Amazon EC2 instance to accelerate the graphics performance of your applications.
+Specifies the type of Elastic GPU. An Elastic GPU is a GPU resource that you can attach to your Amazon EC2 instance to accelerate the graphics performance of your applications.
 
-`ElasticGpuSpecification` is a property of the [AWS::EC2::Instance](../userguide/aws-properties-ec2-instance.md) resource.
+`ElasticGpuSpecification` is a property of the [AWS::EC2::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html) resource.
 
 ## Syntax
+<a name="aws-properties-ec2-instance-elasticgpuspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-instance-elasticgpuspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String
+  "[Type](#cfn-ec2-instance-elasticgpuspecification-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-instance-elasticgpuspecification-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-
+```
+  [Type](#cfn-ec2-instance-elasticgpuspecification-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-instance-elasticgpuspecification-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-ec2-instance-elasticgpuspecification-type"></a>
 The type of Elastic Graphics accelerator.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Ebs
-
-ElasticInferenceAccelerator
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

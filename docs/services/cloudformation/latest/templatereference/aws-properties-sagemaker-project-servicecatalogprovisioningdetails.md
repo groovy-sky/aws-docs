@@ -2,103 +2,72 @@
 title: "AWS::SageMaker::Project ServiceCatalogProvisioningDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Project ServiceCatalogProvisioningDetails
+<a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails"></a>
 
-Details that you specify to provision a service catalog product. For information about
-service catalog, see [What is AWS Service\
-Catalog](../../../servicecatalog/latest/adminguide/introduction.md).
+Details that you specify to provision a service catalog product. For information about service catalog, see [What is AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html).
 
 ## Syntax
+<a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "PathId" : String,
-  "ProductId" : String,
-  "ProvisioningArtifactId" : String,
-  "ProvisioningParameters" : [ ProvisioningParameter, ... ]
+  "[PathId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid)" : {{String}},
+  "[ProductId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-productid)" : {{String}},
+  "[ProvisioningArtifactId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningartifactid)" : {{String}},
+  "[ProvisioningParameters](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningparameters)" : {{[ ProvisioningParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails-syntax.yaml"></a>
 
-```yaml
-
-  PathId: String
-  ProductId: String
-  ProvisioningArtifactId: String
-  ProvisioningParameters:
-    - ProvisioningParameter
-
+```
+  [PathId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid): {{String}}
+  [ProductId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-productid): {{String}}
+  [ProvisioningArtifactId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningartifactid): {{String}}
+  [ProvisioningParameters](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningparameters): {{
+    - ProvisioningParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails-properties"></a>
 
-`PathId`
-
+`PathId`  <a name="cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid"></a>
 The path identifier of the product. This value is optional if the product has a default path, and required if the product has more than one path.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-sagemaker-project-servicecatalogprovisioningdetails-productid"></a>
 The ID of the product to provision.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProvisioningArtifactId`
-
+`ProvisioningArtifactId`  <a name="cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningartifactid"></a>
 The ID of the provisioning artifact.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProvisioningParameters`
-
+`ProvisioningParameters`  <a name="cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningparameters"></a>
 A list of key value pairs that you specify when you provision a product.
-
-_Required_: No
-
-_Type_: Array of [ProvisioningParameter](aws-properties-sagemaker-project-provisioningparameter.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceCatalogProvisionedProductDetails
-
-Tag
+*Required*: No
+*Type*: Array of [ProvisioningParameter](aws-properties-sagemaker-project-provisioningparameter.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

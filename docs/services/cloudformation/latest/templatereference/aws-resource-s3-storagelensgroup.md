@@ -2,114 +2,86 @@
 title: "AWS::S3::StorageLensGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLensGroup
+<a name="aws-resource-s3-storagelensgroup"></a>
 
-The `AWS::S3::StorageLensGroup` resource creates an S3 Storage Lens group. A
-Storage Lens group is a custom grouping of objects that include filters for prefixes,
-suffixes, object tags, object size, or object age. You can create an S3 Storage Lens group
-that includes a single filter or multiple filter conditions. To specify multiple filter
-conditions, you use `AND` or `OR` logical operators. For more
-information about S3 Storage Lens groups, see [Working with S3 Storage Lens groups](../../../s3/latest/userguide/storage-lens-groups-overview.md).
+The `AWS::S3::StorageLensGroup` resource creates an S3 Storage Lens group. A Storage Lens group is a custom grouping of objects that include filters for prefixes, suffixes, object tags, object size, or object age. You can create an S3 Storage Lens group that includes a single filter or multiple filter conditions. To specify multiple filter conditions, you use `AND` or `OR` logical operators. For more information about S3 Storage Lens groups, see [Working with S3 Storage Lens groups](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-groups-overview.html).
 
 ## Syntax
+<a name="aws-resource-s3-storagelensgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3-storagelensgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3::StorageLensGroup",
   "Properties" : {
-      "Filter" : Filter,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Filter](#cfn-s3-storagelensgroup-filter)" : {{Filter}},
+      "[Name](#cfn-s3-storagelensgroup-name)" : {{String}},
+      "[Tags](#cfn-s3-storagelensgroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3-storagelensgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3::StorageLensGroup
 Properties:
-  Filter:
-    Filter
-  Name: String
-  Tags:
-    - Tag
-
+  [Filter](#cfn-s3-storagelensgroup-filter): {{
+    Filter}}
+  [Name](#cfn-s3-storagelensgroup-name): {{String}}
+  [Tags](#cfn-s3-storagelensgroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-s3-storagelensgroup-properties"></a>
 
-`Filter`
+`Filter`  <a name="cfn-s3-storagelensgroup-filter"></a>
+This property contains the criteria for the Storage Lens group data that is displayed
+*Required*: Yes
+*Type*: [Filter](aws-properties-s3-storagelensgroup-filter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This property contains the criteria for the Storage Lens group data that is
-displayed
-
-_Required_: Yes
-
-_Type_: [Filter](aws-properties-s3-storagelensgroup-filter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-s3-storagelensgroup-name"></a>
 This property contains the Storage Lens group name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-_]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-This property contains the AWS resource tags that you're adding to your Storage Lens
-group. This parameter is optional.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-s3-storagelensgroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-s3-storagelensgroup-tags"></a>
+This property contains the AWS resource tags that you're adding to your Storage Lens group. This parameter is optional.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-s3-storagelensgroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-s3-storagelensgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3-storagelensgroup-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the Ref intrinsic function, Ref
-returns the S3 Storage Lens group name. For more information about using the Ref function, see
-[Ref](../userguide/intrinsic-function-reference-ref.md).
+When the logical ID of this resource is provided to the Ref intrinsic function, Ref returns the S3 Storage Lens group name. For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3-storagelensgroup-return-values-fn--getatt"></a>
 
-`Fn::GetAtt` returns a value for a specified attribute of this type. For more
-information, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md). The following are the available attributes and sample return
-values.
+`Fn::GetAtt` returns a value for a specified attribute of this type. For more information, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html). The following are the available attributes and sample return values.
 
-`StorageLensGroupArn`
+####
+<a name="aws-resource-s3-storagelensgroup-return-values-fn--getatt-fn--getatt"></a>
 
+`StorageLensGroupArn`  <a name="StorageLensGroupArn-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-And
 
 All content copied from https://docs.aws.amazon.com/.

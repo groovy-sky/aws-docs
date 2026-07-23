@@ -2,69 +2,51 @@
 title: "AWS::ElasticBeanstalk::ApplicationVersion SourceBundle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticBeanstalk::ApplicationVersion SourceBundle
+<a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle"></a>
 
-The `SourceBundle` property is an embedded property of the [AWS::ElasticBeanstalk::ApplicationVersion](../userguide/aws-properties-beanstalk-sourcebundle.md) resource. It specifies the Amazon S3
-location of the source bundle for an AWS Elastic Beanstalk application version.
+The `SourceBundle` property is an embedded property of the [AWS::ElasticBeanstalk::ApplicationVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html) resource. It specifies the Amazon S3 location of the source bundle for an AWS Elastic Beanstalk application version.
 
 ## Syntax
+<a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Bucket" : String,
-  "S3Key" : String
+  "[S3Bucket](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3bucket)" : {{String}},
+  "[S3Key](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle-syntax.yaml"></a>
 
-```yaml
-
-  S3Bucket: String
-  S3Key: String
-
+```
+  [S3Bucket](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3bucket): {{String}}
+  [S3Key](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle-properties"></a>
 
-`S3Bucket`
-
+`S3Bucket`  <a name="cfn-elasticbeanstalk-applicationversion-sourcebundle-s3bucket"></a>
 The Amazon S3 bucket where the data is located.
+*Required*: Yes
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3Key`
-
+`S3Key`  <a name="cfn-elasticbeanstalk-applicationversion-sourcebundle-s3key"></a>
 The Amazon S3 key where the data is located.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ElasticBeanstalk::ApplicationVersion
-
-AWS::ElasticBeanstalk::ConfigurationTemplate
+*Required*: Yes
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

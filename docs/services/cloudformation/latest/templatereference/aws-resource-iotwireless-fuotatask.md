@@ -2,215 +2,157 @@
 title: "AWS::IoTWireless::FuotaTask"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::FuotaTask
+<a name="aws-resource-iotwireless-fuotatask"></a>
 
 A FUOTA task.
 
 ## Syntax
+<a name="aws-resource-iotwireless-fuotatask-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotwireless-fuotatask-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTWireless::FuotaTask",
   "Properties" : {
-      "AssociateMulticastGroup" : String,
-      "AssociateWirelessDevice" : String,
-      "Description" : String,
-      "DisassociateMulticastGroup" : String,
-      "DisassociateWirelessDevice" : String,
-      "FirmwareUpdateImage" : String,
-      "FirmwareUpdateRole" : String,
-      "LoRaWAN" : LoRaWAN,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[AssociateMulticastGroup](#cfn-iotwireless-fuotatask-associatemulticastgroup)" : {{String}},
+      "[AssociateWirelessDevice](#cfn-iotwireless-fuotatask-associatewirelessdevice)" : {{String}},
+      "[Description](#cfn-iotwireless-fuotatask-description)" : {{String}},
+      "[DisassociateMulticastGroup](#cfn-iotwireless-fuotatask-disassociatemulticastgroup)" : {{String}},
+      "[DisassociateWirelessDevice](#cfn-iotwireless-fuotatask-disassociatewirelessdevice)" : {{String}},
+      "[FirmwareUpdateImage](#cfn-iotwireless-fuotatask-firmwareupdateimage)" : {{String}},
+      "[FirmwareUpdateRole](#cfn-iotwireless-fuotatask-firmwareupdaterole)" : {{String}},
+      "[LoRaWAN](#cfn-iotwireless-fuotatask-lorawan)" : {{LoRaWAN}},
+      "[Name](#cfn-iotwireless-fuotatask-name)" : {{String}},
+      "[Tags](#cfn-iotwireless-fuotatask-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotwireless-fuotatask-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTWireless::FuotaTask
 Properties:
-  AssociateMulticastGroup: String
-  AssociateWirelessDevice: String
-  Description: String
-  DisassociateMulticastGroup: String
-  DisassociateWirelessDevice: String
-  FirmwareUpdateImage: String
-  FirmwareUpdateRole: String
-  LoRaWAN:
-    LoRaWAN
-  Name: String
-  Tags:
-    - Tag
-
+  [AssociateMulticastGroup](#cfn-iotwireless-fuotatask-associatemulticastgroup): {{String}}
+  [AssociateWirelessDevice](#cfn-iotwireless-fuotatask-associatewirelessdevice): {{String}}
+  [Description](#cfn-iotwireless-fuotatask-description): {{String}}
+  [DisassociateMulticastGroup](#cfn-iotwireless-fuotatask-disassociatemulticastgroup): {{String}}
+  [DisassociateWirelessDevice](#cfn-iotwireless-fuotatask-disassociatewirelessdevice): {{String}}
+  [FirmwareUpdateImage](#cfn-iotwireless-fuotatask-firmwareupdateimage): {{String}}
+  [FirmwareUpdateRole](#cfn-iotwireless-fuotatask-firmwareupdaterole): {{String}}
+  [LoRaWAN](#cfn-iotwireless-fuotatask-lorawan): {{
+    LoRaWAN}}
+  [Name](#cfn-iotwireless-fuotatask-name): {{String}}
+  [Tags](#cfn-iotwireless-fuotatask-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotwireless-fuotatask-properties"></a>
 
-`AssociateMulticastGroup`
-
+`AssociateMulticastGroup`  <a name="cfn-iotwireless-fuotatask-associatemulticastgroup"></a>
 The ID of the multicast group to associate with a FUOTA task.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AssociateWirelessDevice`
-
+`AssociateWirelessDevice`  <a name="cfn-iotwireless-fuotatask-associatewirelessdevice"></a>
 The ID of the wireless device to associate with a multicast group.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-iotwireless-fuotatask-description"></a>
 The description of the new resource.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisassociateMulticastGroup`
-
+`DisassociateMulticastGroup`  <a name="cfn-iotwireless-fuotatask-disassociatemulticastgroup"></a>
 The ID of the multicast group to disassociate from a FUOTA task.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisassociateWirelessDevice`
-
+`DisassociateWirelessDevice`  <a name="cfn-iotwireless-fuotatask-disassociatewirelessdevice"></a>
 The ID of the wireless device to disassociate from a FUOTA task.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FirmwareUpdateImage`  <a name="cfn-iotwireless-fuotatask-firmwareupdateimage"></a>
+The S3 URI points to a firmware update image that is to be used with a FUOTA task.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirmwareUpdateImage`
-
-The S3 URI points to a firmware update image that is to be used with a FUOTA
-task.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirmwareUpdateRole`
-
+`FirmwareUpdateRole`  <a name="cfn-iotwireless-fuotatask-firmwareupdaterole"></a>
 The firmware update role that is to be used with a FUOTA task.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoRaWAN`
-
+`LoRaWAN`  <a name="cfn-iotwireless-fuotatask-lorawan"></a>
 The LoRaWAN information used with a FUOTA task.
+*Required*: Yes
+*Type*: [LoRaWAN](aws-properties-iotwireless-fuotatask-lorawan.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [LoRaWAN](aws-properties-iotwireless-fuotatask-lorawan.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-iotwireless-fuotatask-name"></a>
 The name of a FUOTA task.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags are an array of key-value pairs to attach to the specified resource. Tags can
-have a minimum of 0 and a maximum of 50 items.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotwireless-fuotatask-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iotwireless-fuotatask-tags"></a>
+The tags are an array of key-value pairs to attach to the specified resource. Tags can have a minimum of 0 and a maximum of 50 items.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotwireless-fuotatask-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotwireless-fuotatask-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotwireless-fuotatask-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the FUOTA task.
 
 ### Fn::GetAtt
+<a name="aws-resource-iotwireless-fuotatask-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-iotwireless-fuotatask-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of a FUOTA task
 
-`FuotaTaskStatus`
-
+`FuotaTaskStatus`  <a name="FuotaTaskStatus-fn::getatt"></a>
 The status of a FUOTA task.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of a FUOTA task.
 
-`LoRaWAN.StartTime`
-
+`LoRaWAN.StartTime`  <a name="LoRaWAN.StartTime-fn::getatt"></a>
 Start time of a FUOTA task.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-LoRaWAN
 
 All content copied from https://docs.aws.amazon.com/.

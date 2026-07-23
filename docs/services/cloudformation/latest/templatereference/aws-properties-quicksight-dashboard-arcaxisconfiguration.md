@@ -2,65 +2,50 @@
 title: "AWS::QuickSight::Dashboard ArcAxisConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ArcAxisConfiguration
+<a name="aws-properties-quicksight-dashboard-arcaxisconfiguration"></a>
 
 The arc axis configuration of a `GaugeChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-arcaxisconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-arcaxisconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Range" : ArcAxisDisplayRange,
-  "ReserveRange" : Number
+  "[Range](#cfn-quicksight-dashboard-arcaxisconfiguration-range)" : {{ArcAxisDisplayRange}},
+  "[ReserveRange](#cfn-quicksight-dashboard-arcaxisconfiguration-reserverange)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-arcaxisconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Range:
-    ArcAxisDisplayRange
-  ReserveRange: Number
-
+```
+  [Range](#cfn-quicksight-dashboard-arcaxisconfiguration-range): {{
+    ArcAxisDisplayRange}}
+  [ReserveRange](#cfn-quicksight-dashboard-arcaxisconfiguration-reserverange): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-arcaxisconfiguration-properties"></a>
 
-`Range`
-
+`Range`  <a name="cfn-quicksight-dashboard-arcaxisconfiguration-range"></a>
 The arc axis range of a `GaugeChartVisual`.
+*Required*: No
+*Type*: [ArcAxisDisplayRange](aws-properties-quicksight-dashboard-arcaxisdisplayrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ArcAxisDisplayRange](aws-properties-quicksight-dashboard-arcaxisdisplayrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReserveRange`
-
+`ReserveRange`  <a name="cfn-quicksight-dashboard-arcaxisconfiguration-reserverange"></a>
 The reserved range of the arc axis.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnchorDateConfiguration
-
-ArcAxisDisplayRange
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

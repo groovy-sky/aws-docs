@@ -2,56 +2,43 @@
 title: "AWS::Wisdom::KnowledgeBase HierarchicalChunkingLevelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::KnowledgeBase HierarchicalChunkingLevelConfiguration
+<a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration"></a>
 
 Token settings for each layer.
 
 ## Syntax
+<a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxTokens" : Number
+  "[MaxTokens](#cfn-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-maxtokens)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxTokens: Number
-
+```
+  [MaxTokens](#cfn-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-maxtokens): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-properties"></a>
 
-`MaxTokens`
-
+`MaxTokens`  <a name="cfn-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-maxtokens"></a>
 The maximum number of tokens that a chunk can contain in this layer.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `8192`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HierarchicalChunkingConfiguration
-
-ManagedSourceConfiguration
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `8192`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

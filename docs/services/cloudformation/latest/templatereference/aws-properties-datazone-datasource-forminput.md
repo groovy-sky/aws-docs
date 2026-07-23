@@ -2,106 +2,74 @@
 title: "AWS::DataZone::DataSource FormInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource FormInput
+<a name="aws-properties-datazone-datasource-forminput"></a>
 
 The details of a metadata form.
 
 ## Syntax
+<a name="aws-properties-datazone-datasource-forminput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-datasource-forminput-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "FormName" : String,
-  "TypeIdentifier" : String,
-  "TypeRevision" : String
+  "[Content](#cfn-datazone-datasource-forminput-content)" : {{String}},
+  "[FormName](#cfn-datazone-datasource-forminput-formname)" : {{String}},
+  "[TypeIdentifier](#cfn-datazone-datasource-forminput-typeidentifier)" : {{String}},
+  "[TypeRevision](#cfn-datazone-datasource-forminput-typerevision)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-datasource-forminput-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  FormName: String
-  TypeIdentifier: String
-  TypeRevision: String
-
+```
+  [Content](#cfn-datazone-datasource-forminput-content): {{String}}
+  [FormName](#cfn-datazone-datasource-forminput-formname): {{String}}
+  [TypeIdentifier](#cfn-datazone-datasource-forminput-typeidentifier): {{String}}
+  [TypeRevision](#cfn-datazone-datasource-forminput-typerevision): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-datasource-forminput-properties"></a>
 
-`Content`
-
+`Content`  <a name="cfn-datazone-datasource-forminput-content"></a>
 The content of the metadata form.
+*Required*: No
+*Type*: String
+*Maximum*: `75000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `75000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FormName`
-
+`FormName`  <a name="cfn-datazone-datasource-forminput-formname"></a>
 The name of the metadata form.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?![0-9_])\w+$|^_\w*[a-zA-Z0-9]\w*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?![0-9_])\w+$|^_\w*[a-zA-Z0-9]\w*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeIdentifier`
-
+`TypeIdentifier`  <a name="cfn-datazone-datasource-forminput-typeidentifier"></a>
 The ID of the metadata form type.
+*Required*: No
+*Type*: String
+*Pattern*: `^(?!\.)[\w\.]*\w$`
+*Minimum*: `1`
+*Maximum*: `385`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(?!\.)[\w\.]*\w$`
-
-_Minimum_: `1`
-
-_Maximum_: `385`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeRevision`
-
+`TypeRevision`  <a name="cfn-datazone-datasource-forminput-typerevision"></a>
 The revision of the metadata form type.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterExpression
-
-GlueRunConfigurationInput
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

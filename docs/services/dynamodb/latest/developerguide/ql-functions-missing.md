@@ -3,37 +3,33 @@ title: "Using the MISSING function with PartiQL for DynamoDB"
 ---
 
 # Using the MISSING function with PartiQL for DynamoDB
+<a name="ql-functions.missing"></a>
 
 Returns `TRUE` if the item does not contain the attribute specified. Only equality and inequality operators can be used with this function.
 
 ## Syntax
+<a name="ql-functions.missing.syntax"></a>
 
-```nohighlight
-
- attributename IS | IS NOT  MISSING
+```
+ {{attributename}} IS | IS NOT  MISSING
 ```
 
 ## Arguments
+<a name="ql-functions.missing.arguments"></a>
 
-`attributename`
-
+{{attributename}}
 (Required) The attribute name to look for.
 
 ## Return type
+<a name="ql-functions.missing.return-type"></a>
 
 `bool`
 
 ## Examples
+<a name="ql-functions.missing.examples"></a>
 
-```sql
-
+```
 SELECT * FROM Music WHERE "Awards" is MISSING
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Begins\_with
-
-Attribute\_type
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::AppTest::TestCase Input"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase Input
+<a name="aws-properties-apptest-testcase-input"></a>
 
 Specifies the input.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-input-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-input-syntax.json"></a>
 
-```json
-
+```
 {
-  "File" : InputFile
+  "[File](#cfn-apptest-testcase-input-file)" : {{InputFile}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-input-syntax.yaml"></a>
 
-```yaml
-
-  File:
-    InputFile
-
+```
+  [File](#cfn-apptest-testcase-input-file): {{
+    InputFile}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-input-properties"></a>
 
-`File`
-
+`File`  <a name="cfn-apptest-testcase-input-file"></a>
 The file in the input.
-
-_Required_: Yes
-
-_Type_: [InputFile](aws-properties-apptest-testcase-inputfile.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FileMetadata
-
-InputFile
+*Required*: Yes
+*Type*: [InputFile](aws-properties-apptest-testcase-inputfile.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,56 +2,43 @@
 title: "AWS::QuickSight::Template YAxisOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template YAxisOptions
+<a name="aws-properties-quicksight-template-yaxisoptions"></a>
 
 The options that are available for a single Y axis in a chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-yaxisoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-yaxisoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "YAxis" : String
+  "[YAxis](#cfn-quicksight-template-yaxisoptions-yaxis)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-yaxisoptions-syntax.yaml"></a>
 
-```yaml
-
-  YAxis: String
-
+```
+  [YAxis](#cfn-quicksight-template-yaxisoptions-yaxis): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-yaxisoptions-properties"></a>
 
-`YAxis`
-
+`YAxis`  <a name="cfn-quicksight-template-yaxisoptions-yaxis"></a>
 The Y axis type to be used in the chart.
-
 If you choose `PRIMARY_Y_AXIS`, the primary Y Axis is located on the leftmost vertical axis of the chart.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PRIMARY_Y_AXIS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordCloudVisual
-
-AWS::QuickSight::Theme
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PRIMARY_Y_AXIS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

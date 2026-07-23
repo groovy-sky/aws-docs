@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Analysis FormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis FormatConfiguration
+<a name="aws-properties-quicksight-analysis-formatconfiguration"></a>
 
 The formatting configuration for all types of field.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-formatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-formatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateTimeFormatConfiguration" : DateTimeFormatConfiguration,
-  "NumberFormatConfiguration" : NumberFormatConfiguration,
-  "StringFormatConfiguration" : StringFormatConfiguration
+  "[DateTimeFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-datetimeformatconfiguration)" : {{DateTimeFormatConfiguration}},
+  "[NumberFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-numberformatconfiguration)" : {{NumberFormatConfiguration}},
+  "[StringFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-stringformatconfiguration)" : {{StringFormatConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-formatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DateTimeFormatConfiguration:
-    DateTimeFormatConfiguration
-  NumberFormatConfiguration:
-    NumberFormatConfiguration
-  StringFormatConfiguration:
-    StringFormatConfiguration
-
+```
+  [DateTimeFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-datetimeformatconfiguration): {{
+    DateTimeFormatConfiguration}}
+  [NumberFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-numberformatconfiguration): {{
+    NumberFormatConfiguration}}
+  [StringFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-stringformatconfiguration): {{
+    StringFormatConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-formatconfiguration-properties"></a>
 
-`DateTimeFormatConfiguration`
-
+`DateTimeFormatConfiguration`  <a name="cfn-quicksight-analysis-formatconfiguration-datetimeformatconfiguration"></a>
 Formatting configuration for `DateTime` fields.
+*Required*: No
+*Type*: [DateTimeFormatConfiguration](aws-properties-quicksight-analysis-datetimeformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimeFormatConfiguration](aws-properties-quicksight-analysis-datetimeformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberFormatConfiguration`
-
+`NumberFormatConfiguration`  <a name="cfn-quicksight-analysis-formatconfiguration-numberformatconfiguration"></a>
 Formatting configuration for number fields.
+*Required*: No
+*Type*: [NumberFormatConfiguration](aws-properties-quicksight-analysis-numberformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumberFormatConfiguration](aws-properties-quicksight-analysis-numberformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringFormatConfiguration`
-
+`StringFormatConfiguration`  <a name="cfn-quicksight-analysis-formatconfiguration-stringformatconfiguration"></a>
 Formatting configuration for string fields.
-
-_Required_: No
-
-_Type_: [StringFormatConfiguration](aws-properties-quicksight-analysis-stringformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ForecastScenario
-
-FreeFormLayoutCanvasSizeOptions
+*Required*: No
+*Type*: [StringFormatConfiguration](aws-properties-quicksight-analysis-stringformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

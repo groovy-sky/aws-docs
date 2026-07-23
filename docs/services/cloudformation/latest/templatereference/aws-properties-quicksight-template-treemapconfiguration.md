@@ -2,170 +2,123 @@
 title: "AWS::QuickSight::Template TreeMapConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TreeMapConfiguration
+<a name="aws-properties-quicksight-template-treemapconfiguration"></a>
 
 The configuration of a tree map.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-treemapconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-treemapconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColorLabelOptions" : ChartAxisLabelOptions,
-  "ColorScale" : ColorScale,
-  "DataLabels" : DataLabelOptions,
-  "FieldWells" : TreeMapFieldWells,
-  "GroupLabelOptions" : ChartAxisLabelOptions,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "SizeLabelOptions" : ChartAxisLabelOptions,
-  "SortConfiguration" : TreeMapSortConfiguration,
-  "Tooltip" : TooltipOptions
+  "[ColorLabelOptions](#cfn-quicksight-template-treemapconfiguration-colorlabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ColorScale](#cfn-quicksight-template-treemapconfiguration-colorscale)" : {{ColorScale}},
+  "[DataLabels](#cfn-quicksight-template-treemapconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[FieldWells](#cfn-quicksight-template-treemapconfiguration-fieldwells)" : {{TreeMapFieldWells}},
+  "[GroupLabelOptions](#cfn-quicksight-template-treemapconfiguration-grouplabeloptions)" : {{ChartAxisLabelOptions}},
+  "[Interactions](#cfn-quicksight-template-treemapconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-template-treemapconfiguration-legend)" : {{LegendOptions}},
+  "[SizeLabelOptions](#cfn-quicksight-template-treemapconfiguration-sizelabeloptions)" : {{ChartAxisLabelOptions}},
+  "[SortConfiguration](#cfn-quicksight-template-treemapconfiguration-sortconfiguration)" : {{TreeMapSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-template-treemapconfiguration-tooltip)" : {{TooltipOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-treemapconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ColorLabelOptions:
-    ChartAxisLabelOptions
-  ColorScale:
-    ColorScale
-  DataLabels:
-    DataLabelOptions
-  FieldWells:
-    TreeMapFieldWells
-  GroupLabelOptions:
-    ChartAxisLabelOptions
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  SizeLabelOptions:
-    ChartAxisLabelOptions
-  SortConfiguration:
-    TreeMapSortConfiguration
-  Tooltip:
-    TooltipOptions
-
+```
+  [ColorLabelOptions](#cfn-quicksight-template-treemapconfiguration-colorlabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ColorScale](#cfn-quicksight-template-treemapconfiguration-colorscale): {{
+    ColorScale}}
+  [DataLabels](#cfn-quicksight-template-treemapconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [FieldWells](#cfn-quicksight-template-treemapconfiguration-fieldwells): {{
+    TreeMapFieldWells}}
+  [GroupLabelOptions](#cfn-quicksight-template-treemapconfiguration-grouplabeloptions): {{
+    ChartAxisLabelOptions}}
+  [Interactions](#cfn-quicksight-template-treemapconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-template-treemapconfiguration-legend): {{
+    LegendOptions}}
+  [SizeLabelOptions](#cfn-quicksight-template-treemapconfiguration-sizelabeloptions): {{
+    ChartAxisLabelOptions}}
+  [SortConfiguration](#cfn-quicksight-template-treemapconfiguration-sortconfiguration): {{
+    TreeMapSortConfiguration}}
+  [Tooltip](#cfn-quicksight-template-treemapconfiguration-tooltip): {{
+    TooltipOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-treemapconfiguration-properties"></a>
 
-`ColorLabelOptions`
-
+`ColorLabelOptions`  <a name="cfn-quicksight-template-treemapconfiguration-colorlabeloptions"></a>
 The label options (label text, label visibility) for the colors displayed in a tree map.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColorScale`
-
+`ColorScale`  <a name="cfn-quicksight-template-treemapconfiguration-colorscale"></a>
 The color options (gradient color, point of divergence) of a tree map.
+*Required*: No
+*Type*: [ColorScale](aws-properties-quicksight-template-colorscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColorScale](aws-properties-quicksight-template-colorscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-template-treemapconfiguration-datalabels"></a>
 The options that determine if visual data labels are displayed.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-treemapconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [TreeMapFieldWells](aws-properties-quicksight-template-treemapfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TreeMapFieldWells](aws-properties-quicksight-template-treemapfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupLabelOptions`
-
+`GroupLabelOptions`  <a name="cfn-quicksight-template-treemapconfiguration-grouplabeloptions"></a>
 The label options (label text, label visibility) of the groups that are displayed in a tree map.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-treemapconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-template-treemapconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SizeLabelOptions`
-
+`SizeLabelOptions`  <a name="cfn-quicksight-template-treemapconfiguration-sizelabeloptions"></a>
 The label options (label text, label visibility) of the sizes that are displayed in a tree map.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-treemapconfiguration-sortconfiguration"></a>
 The sort configuration of a tree map.
+*Required*: No
+*Type*: [TreeMapSortConfiguration](aws-properties-quicksight-template-treemapsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TreeMapSortConfiguration](aws-properties-quicksight-template-treemapsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-template-treemapconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
-
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TreeMapAggregatedFieldWells
-
-TreeMapFieldWells
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

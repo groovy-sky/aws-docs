@@ -2,130 +2,88 @@
 title: "AWS::Personalize::Dataset DatasetImportJob"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Dataset DatasetImportJob
+<a name="aws-properties-personalize-dataset-datasetimportjob"></a>
 
-Describes a job that imports training data from a data source (Amazon S3
-bucket) to an Amazon Personalize dataset.
+Describes a job that imports training data from a data source (Amazon S3 bucket) to an Amazon Personalize dataset.
 
 A dataset import job can be in one of the following states:
++ CREATE PENDING > CREATE IN\_PROGRESS > ACTIVE -or- CREATE FAILED
 
-- CREATE PENDING > CREATE IN\_PROGRESS > ACTIVE -or- CREATE
-FAILED
-
-If you specify a dataset import job as part of a dataset, all
-dataset import job fields are required.
+If you specify a dataset import job as part of a dataset, all dataset import job fields are required.
 
 ## Syntax
+<a name="aws-properties-personalize-dataset-datasetimportjob-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-personalize-dataset-datasetimportjob-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatasetArn" : String,
-  "DatasetImportJobArn" : String,
-  "DataSource" : DataSource,
-  "JobName" : String,
-  "RoleArn" : String
+  "[DatasetArn](#cfn-personalize-dataset-datasetimportjob-datasetarn)" : {{String}},
+  "[DatasetImportJobArn](#cfn-personalize-dataset-datasetimportjob-datasetimportjobarn)" : {{String}},
+  "[DataSource](#cfn-personalize-dataset-datasetimportjob-datasource)" : {{DataSource}},
+  "[JobName](#cfn-personalize-dataset-datasetimportjob-jobname)" : {{String}},
+  "[RoleArn](#cfn-personalize-dataset-datasetimportjob-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-personalize-dataset-datasetimportjob-syntax.yaml"></a>
 
-```yaml
-
-  DatasetArn: String
-  DatasetImportJobArn: String
-  DataSource:
-    DataSource
-  JobName: String
-  RoleArn: String
-
+```
+  [DatasetArn](#cfn-personalize-dataset-datasetimportjob-datasetarn): {{String}}
+  [DatasetImportJobArn](#cfn-personalize-dataset-datasetimportjob-datasetimportjobarn): {{String}}
+  [DataSource](#cfn-personalize-dataset-datasetimportjob-datasource): {{
+    DataSource}}
+  [JobName](#cfn-personalize-dataset-datasetimportjob-jobname): {{String}}
+  [RoleArn](#cfn-personalize-dataset-datasetimportjob-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-personalize-dataset-datasetimportjob-properties"></a>
 
-`DatasetArn`
+`DatasetArn`  <a name="cfn-personalize-dataset-datasetimportjob-datasetarn"></a>
+The Amazon Resource Name (ARN) of the dataset that receives the imported data.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:([a-z\d-]+):personalize:.*:.*:.+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of the dataset that receives the
-imported data.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:([a-z\d-]+):personalize:.*:.*:.+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatasetImportJobArn`
-
+`DatasetImportJobArn`  <a name="cfn-personalize-dataset-datasetimportjob-datasetimportjobarn"></a>
 The ARN of the dataset import job.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:([a-z\d-]+):personalize:.*:.*:.+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:([a-z\d-]+):personalize:.*:.*:.+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSource`
-
+`DataSource`  <a name="cfn-personalize-dataset-datasetimportjob-datasource"></a>
 The Amazon S3 bucket that contains the training data to import.
+*Required*: No
+*Type*: [DataSource](aws-properties-personalize-dataset-datasource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataSource](aws-properties-personalize-dataset-datasource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobName`
-
+`JobName`  <a name="cfn-personalize-dataset-datasetimportjob-jobname"></a>
 The name of the import job.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The ARN of the IAM role that has permissions to read from the Amazon S3
-data source.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:([a-z\d-]+):iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Personalize::Dataset
-
-DataSource
+`RoleArn`  <a name="cfn-personalize-dataset-datasetimportjob-rolearn"></a>
+The ARN of the IAM role that has permissions to read from the Amazon S3 data source.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:([a-z\d-]+):iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

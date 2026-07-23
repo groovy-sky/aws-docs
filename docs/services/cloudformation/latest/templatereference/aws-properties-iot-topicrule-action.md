@@ -2,337 +2,232 @@
 title: "AWS::IoT::TopicRule Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule Action
+<a name="aws-properties-iot-topicrule-action"></a>
 
 Describes the actions associated with a rule.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-action-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudwatchAlarm" : CloudwatchAlarmAction,
-  "CloudwatchLogs" : CloudwatchLogsAction,
-  "CloudwatchMetric" : CloudwatchMetricAction,
-  "DynamoDB" : DynamoDBAction,
-  "DynamoDBv2" : DynamoDBv2Action,
-  "Elasticsearch" : ElasticsearchAction,
-  "Firehose" : FirehoseAction,
-  "Http" : HttpAction,
-  "IotAnalytics" : IotAnalyticsAction,
-  "IotEvents" : IotEventsAction,
-  "IotSiteWise" : IotSiteWiseAction,
-  "Kafka" : KafkaAction,
-  "Kinesis" : KinesisAction,
-  "Lambda" : LambdaAction,
-  "Location" : LocationAction,
-  "OpenSearch" : OpenSearchAction,
-  "Republish" : RepublishAction,
-  "S3" : S3Action,
-  "Sns" : SnsAction,
-  "Sqs" : SqsAction,
-  "StepFunctions" : StepFunctionsAction,
-  "Timestream" : TimestreamAction
+  "[CloudwatchAlarm](#cfn-iot-topicrule-action-cloudwatchalarm)" : {{CloudwatchAlarmAction}},
+  "[CloudwatchLogs](#cfn-iot-topicrule-action-cloudwatchlogs)" : {{CloudwatchLogsAction}},
+  "[CloudwatchMetric](#cfn-iot-topicrule-action-cloudwatchmetric)" : {{CloudwatchMetricAction}},
+  "[DynamoDB](#cfn-iot-topicrule-action-dynamodb)" : {{DynamoDBAction}},
+  "[DynamoDBv2](#cfn-iot-topicrule-action-dynamodbv2)" : {{DynamoDBv2Action}},
+  "[Elasticsearch](#cfn-iot-topicrule-action-elasticsearch)" : {{ElasticsearchAction}},
+  "[Firehose](#cfn-iot-topicrule-action-firehose)" : {{FirehoseAction}},
+  "[Http](#cfn-iot-topicrule-action-http)" : {{HttpAction}},
+  "[IotAnalytics](#cfn-iot-topicrule-action-iotanalytics)" : {{IotAnalyticsAction}},
+  "[IotEvents](#cfn-iot-topicrule-action-iotevents)" : {{IotEventsAction}},
+  "[IotSiteWise](#cfn-iot-topicrule-action-iotsitewise)" : {{IotSiteWiseAction}},
+  "[Kafka](#cfn-iot-topicrule-action-kafka)" : {{KafkaAction}},
+  "[Kinesis](#cfn-iot-topicrule-action-kinesis)" : {{KinesisAction}},
+  "[Lambda](#cfn-iot-topicrule-action-lambda)" : {{LambdaAction}},
+  "[Location](#cfn-iot-topicrule-action-location)" : {{LocationAction}},
+  "[OpenSearch](#cfn-iot-topicrule-action-opensearch)" : {{OpenSearchAction}},
+  "[Republish](#cfn-iot-topicrule-action-republish)" : {{RepublishAction}},
+  "[S3](#cfn-iot-topicrule-action-s3)" : {{S3Action}},
+  "[Sns](#cfn-iot-topicrule-action-sns)" : {{SnsAction}},
+  "[Sqs](#cfn-iot-topicrule-action-sqs)" : {{SqsAction}},
+  "[StepFunctions](#cfn-iot-topicrule-action-stepfunctions)" : {{StepFunctionsAction}},
+  "[Timestream](#cfn-iot-topicrule-action-timestream)" : {{TimestreamAction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-action-syntax.yaml"></a>
 
-```yaml
-
-  CloudwatchAlarm:
-    CloudwatchAlarmAction
-  CloudwatchLogs:
-    CloudwatchLogsAction
-  CloudwatchMetric:
-    CloudwatchMetricAction
-  DynamoDB:
-    DynamoDBAction
-  DynamoDBv2:
-    DynamoDBv2Action
-  Elasticsearch:
-    ElasticsearchAction
-  Firehose:
-    FirehoseAction
-  Http:
-    HttpAction
-  IotAnalytics:
-    IotAnalyticsAction
-  IotEvents:
-    IotEventsAction
-  IotSiteWise:
-    IotSiteWiseAction
-  Kafka:
-    KafkaAction
-  Kinesis:
-    KinesisAction
-  Lambda:
-    LambdaAction
-  Location:
-    LocationAction
-  OpenSearch:
-    OpenSearchAction
-  Republish:
-    RepublishAction
-  S3:
-    S3Action
-  Sns:
-    SnsAction
-  Sqs:
-    SqsAction
-  StepFunctions:
-    StepFunctionsAction
-  Timestream:
-    TimestreamAction
-
+```
+  [CloudwatchAlarm](#cfn-iot-topicrule-action-cloudwatchalarm): {{
+    CloudwatchAlarmAction}}
+  [CloudwatchLogs](#cfn-iot-topicrule-action-cloudwatchlogs): {{
+    CloudwatchLogsAction}}
+  [CloudwatchMetric](#cfn-iot-topicrule-action-cloudwatchmetric): {{
+    CloudwatchMetricAction}}
+  [DynamoDB](#cfn-iot-topicrule-action-dynamodb): {{
+    DynamoDBAction}}
+  [DynamoDBv2](#cfn-iot-topicrule-action-dynamodbv2): {{
+    DynamoDBv2Action}}
+  [Elasticsearch](#cfn-iot-topicrule-action-elasticsearch): {{
+    ElasticsearchAction}}
+  [Firehose](#cfn-iot-topicrule-action-firehose): {{
+    FirehoseAction}}
+  [Http](#cfn-iot-topicrule-action-http): {{
+    HttpAction}}
+  [IotAnalytics](#cfn-iot-topicrule-action-iotanalytics): {{
+    IotAnalyticsAction}}
+  [IotEvents](#cfn-iot-topicrule-action-iotevents): {{
+    IotEventsAction}}
+  [IotSiteWise](#cfn-iot-topicrule-action-iotsitewise): {{
+    IotSiteWiseAction}}
+  [Kafka](#cfn-iot-topicrule-action-kafka): {{
+    KafkaAction}}
+  [Kinesis](#cfn-iot-topicrule-action-kinesis): {{
+    KinesisAction}}
+  [Lambda](#cfn-iot-topicrule-action-lambda): {{
+    LambdaAction}}
+  [Location](#cfn-iot-topicrule-action-location): {{
+    LocationAction}}
+  [OpenSearch](#cfn-iot-topicrule-action-opensearch): {{
+    OpenSearchAction}}
+  [Republish](#cfn-iot-topicrule-action-republish): {{
+    RepublishAction}}
+  [S3](#cfn-iot-topicrule-action-s3): {{
+    S3Action}}
+  [Sns](#cfn-iot-topicrule-action-sns): {{
+    SnsAction}}
+  [Sqs](#cfn-iot-topicrule-action-sqs): {{
+    SqsAction}}
+  [StepFunctions](#cfn-iot-topicrule-action-stepfunctions): {{
+    StepFunctionsAction}}
+  [Timestream](#cfn-iot-topicrule-action-timestream): {{
+    TimestreamAction}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-action-properties"></a>
 
-`CloudwatchAlarm`
-
+`CloudwatchAlarm`  <a name="cfn-iot-topicrule-action-cloudwatchalarm"></a>
 Change the state of a CloudWatch alarm.
+*Required*: No
+*Type*: [CloudwatchAlarmAction](aws-properties-iot-topicrule-cloudwatchalarmaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudwatchAlarmAction](aws-properties-iot-topicrule-cloudwatchalarmaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CloudwatchLogs`
-
+`CloudwatchLogs`  <a name="cfn-iot-topicrule-action-cloudwatchlogs"></a>
 Sends data to CloudWatch.
+*Required*: No
+*Type*: [CloudwatchLogsAction](aws-properties-iot-topicrule-cloudwatchlogsaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudwatchLogsAction](aws-properties-iot-topicrule-cloudwatchlogsaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CloudwatchMetric`
-
+`CloudwatchMetric`  <a name="cfn-iot-topicrule-action-cloudwatchmetric"></a>
 Capture a CloudWatch metric.
+*Required*: No
+*Type*: [CloudwatchMetricAction](aws-properties-iot-topicrule-cloudwatchmetricaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudwatchMetricAction](aws-properties-iot-topicrule-cloudwatchmetricaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DynamoDB`
-
+`DynamoDB`  <a name="cfn-iot-topicrule-action-dynamodb"></a>
 Write to a DynamoDB table.
+*Required*: No
+*Type*: [DynamoDBAction](aws-properties-iot-topicrule-dynamodbaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DynamoDBv2`  <a name="cfn-iot-topicrule-action-dynamodbv2"></a>
+Write to a DynamoDB table. This is a new version of the DynamoDB action. It allows you to write each attribute in an MQTT message payload into a separate DynamoDB column.
+*Required*: No
+*Type*: [DynamoDBv2Action](aws-properties-iot-topicrule-dynamodbv2action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DynamoDBAction](aws-properties-iot-topicrule-dynamodbaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DynamoDBv2`
-
-Write to a DynamoDB table. This is a new version of the DynamoDB action. It allows
-you to write each attribute in an MQTT message payload into a separate DynamoDB
-column.
-
-_Required_: No
-
-_Type_: [DynamoDBv2Action](aws-properties-iot-topicrule-dynamodbv2action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Elasticsearch`
-
+`Elasticsearch`  <a name="cfn-iot-topicrule-action-elasticsearch"></a>
 Write data to an Amazon OpenSearch Service domain.
+The `Elasticsearch` action can only be used by existing rule actions. To create a new rule action or to update an existing rule action, use the `OpenSearch` rule action instead. For more information, see [OpenSearchAction](https://docs.aws.amazon.com//iot/latest/apireference/API_OpenSearchAction.html).
+*Required*: No
+*Type*: [ElasticsearchAction](aws-properties-iot-topicrule-elasticsearchaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-The `Elasticsearch` action can only be used by existing rule actions.
-To create a new rule action or to update an existing rule action, use the
-`OpenSearch` rule action instead. For more information, see
-[OpenSearchAction](../../../../reference/iot/latest/apireference/api-opensearchaction.md).
-
-_Required_: No
-
-_Type_: [ElasticsearchAction](aws-properties-iot-topicrule-elasticsearchaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Firehose`
-
+`Firehose`  <a name="cfn-iot-topicrule-action-firehose"></a>
 Write to an Amazon Kinesis Firehose stream.
+*Required*: No
+*Type*: [FirehoseAction](aws-properties-iot-topicrule-firehoseaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FirehoseAction](aws-properties-iot-topicrule-firehoseaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Http`
-
+`Http`  <a name="cfn-iot-topicrule-action-http"></a>
 Send data to an HTTPS endpoint.
+*Required*: No
+*Type*: [HttpAction](aws-properties-iot-topicrule-httpaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HttpAction](aws-properties-iot-topicrule-httpaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IotAnalytics`
-
+`IotAnalytics`  <a name="cfn-iot-topicrule-action-iotanalytics"></a>
 Sends message data to an AWS IoT Analytics channel.
+*Required*: No
+*Type*: [IotAnalyticsAction](aws-properties-iot-topicrule-iotanalyticsaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IotAnalyticsAction](aws-properties-iot-topicrule-iotanalyticsaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IotEvents`
-
+`IotEvents`  <a name="cfn-iot-topicrule-action-iotevents"></a>
 Sends an input to an AWS IoT Events detector.
+*Required*: No
+*Type*: [IotEventsAction](aws-properties-iot-topicrule-ioteventsaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IotSiteWise`  <a name="cfn-iot-topicrule-action-iotsitewise"></a>
+Sends data from the MQTT message that triggered the rule to AWS IoT SiteWise asset properties.
+*Required*: No
+*Type*: [IotSiteWiseAction](aws-properties-iot-topicrule-iotsitewiseaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [IotEventsAction](aws-properties-iot-topicrule-ioteventsaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IotSiteWise`
-
-Sends data from the MQTT message that triggered the rule to AWS IoT SiteWise asset
-properties.
-
-_Required_: No
-
-_Type_: [IotSiteWiseAction](aws-properties-iot-topicrule-iotsitewiseaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Kafka`
-
+`Kafka`  <a name="cfn-iot-topicrule-action-kafka"></a>
 Send messages to an Amazon Managed Streaming for Apache Kafka (Amazon MSK) or self-managed Apache Kafka cluster.
+*Required*: No
+*Type*: [KafkaAction](aws-properties-iot-topicrule-kafkaaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KafkaAction](aws-properties-iot-topicrule-kafkaaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Kinesis`
-
+`Kinesis`  <a name="cfn-iot-topicrule-action-kinesis"></a>
 Write data to an Amazon Kinesis stream.
+*Required*: No
+*Type*: [KinesisAction](aws-properties-iot-topicrule-kinesisaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KinesisAction](aws-properties-iot-topicrule-kinesisaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Lambda`
-
+`Lambda`  <a name="cfn-iot-topicrule-action-lambda"></a>
 Invoke a Lambda function.
+*Required*: No
+*Type*: [LambdaAction](aws-properties-iot-topicrule-lambdaaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Location`  <a name="cfn-iot-topicrule-action-location"></a>
+Sends device location data to [Amazon Location Service](https://docs.aws.amazon.com//location/latest/developerguide/welcome.html).
+*Required*: No
+*Type*: [LocationAction](aws-properties-iot-topicrule-locationaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [LambdaAction](aws-properties-iot-topicrule-lambdaaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Location`
-
-Sends device location data to [Amazon Location\
-Service](../../../location/latest/developerguide/welcome.md).
-
-_Required_: No
-
-_Type_: [LocationAction](aws-properties-iot-topicrule-locationaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OpenSearch`
-
+`OpenSearch`  <a name="cfn-iot-topicrule-action-opensearch"></a>
 Write data to an Amazon OpenSearch Service domain.
+*Required*: No
+*Type*: [OpenSearchAction](aws-properties-iot-topicrule-opensearchaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [OpenSearchAction](aws-properties-iot-topicrule-opensearchaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Republish`
-
+`Republish`  <a name="cfn-iot-topicrule-action-republish"></a>
 Publish to another MQTT topic.
+*Required*: No
+*Type*: [RepublishAction](aws-properties-iot-topicrule-republishaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RepublishAction](aws-properties-iot-topicrule-republishaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3`
-
+`S3`  <a name="cfn-iot-topicrule-action-s3"></a>
 Write to an Amazon S3 bucket.
+*Required*: No
+*Type*: [S3Action](aws-properties-iot-topicrule-s3action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [S3Action](aws-properties-iot-topicrule-s3action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sns`
-
+`Sns`  <a name="cfn-iot-topicrule-action-sns"></a>
 Publish to an Amazon SNS topic.
+*Required*: No
+*Type*: [SnsAction](aws-properties-iot-topicrule-snsaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SnsAction](aws-properties-iot-topicrule-snsaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sqs`
-
+`Sqs`  <a name="cfn-iot-topicrule-action-sqs"></a>
 Publish to an Amazon SQS queue.
+*Required*: No
+*Type*: [SqsAction](aws-properties-iot-topicrule-sqsaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SqsAction](aws-properties-iot-topicrule-sqsaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepFunctions`
-
+`StepFunctions`  <a name="cfn-iot-topicrule-action-stepfunctions"></a>
 Starts execution of a Step Functions state machine.
+*Required*: No
+*Type*: [StepFunctionsAction](aws-properties-iot-topicrule-stepfunctionsaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StepFunctionsAction](aws-properties-iot-topicrule-stepfunctionsaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timestream`
-
+`Timestream`  <a name="cfn-iot-topicrule-action-timestream"></a>
 Writes attributes from an MQTT message.
-
-_Required_: No
-
-_Type_: [TimestreamAction](aws-properties-iot-topicrule-timestreamaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::TopicRule
-
-AssetPropertyTimestamp
+*Required*: No
+*Type*: [TimestreamAction](aws-properties-iot-topicrule-timestreamaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

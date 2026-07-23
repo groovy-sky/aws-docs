@@ -2,69 +2,52 @@
 title: "AWS::CleanRooms::AnalysisTemplate AnalysisSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate AnalysisSource
+<a name="aws-properties-cleanrooms-analysistemplate-analysissource"></a>
 
 The structure that defines the body of the analysis template.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-analysissource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-analysissource-syntax.json"></a>
 
-```json
-
+```
 {
-  "Artifacts" : AnalysisTemplateArtifacts,
-  "Text" : String
+  "[Artifacts](#cfn-cleanrooms-analysistemplate-analysissource-artifacts)" : {{AnalysisTemplateArtifacts}},
+  "[Text](#cfn-cleanrooms-analysistemplate-analysissource-text)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-analysissource-syntax.yaml"></a>
 
-```yaml
-
-  Artifacts:
-    AnalysisTemplateArtifacts
-  Text: String
-
+```
+  [Artifacts](#cfn-cleanrooms-analysistemplate-analysissource-artifacts): {{
+    AnalysisTemplateArtifacts}}
+  [Text](#cfn-cleanrooms-analysistemplate-analysissource-text): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-analysissource-properties"></a>
 
-`Artifacts`
+`Artifacts`  <a name="cfn-cleanrooms-analysistemplate-analysissource-artifacts"></a>
+ The artifacts of the analysis source.
+*Required*: No
+*Type*: [AnalysisTemplateArtifacts](aws-properties-cleanrooms-analysistemplate-analysistemplateartifacts.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The artifacts of the analysis source.
-
-_Required_: No
-
-_Type_: [AnalysisTemplateArtifacts](aws-properties-cleanrooms-analysistemplate-analysistemplateartifacts.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Text`
-
+`Text`  <a name="cfn-cleanrooms-analysistemplate-analysissource-text"></a>
 The query text.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `90000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisSchema
-
-AnalysisSourceMetadata
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `90000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

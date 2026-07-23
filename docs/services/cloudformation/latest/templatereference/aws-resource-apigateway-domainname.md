@@ -2,231 +2,184 @@
 title: "AWS::ApiGateway::DomainName"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::DomainName
+<a name="aws-resource-apigateway-domainname"></a>
 
 The `AWS::ApiGateway::DomainName` resource specifies a public custom domain name for your API in API Gateway.
 
-To create a custom domain name for private APIs, use
-[AWS::ApiGateway::DomainNameV2](../userguide/aws-resource-apigateway-domainnamev2.md).
+To create a custom domain name for private APIs, use [AWS::ApiGateway::DomainNameV2](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainnamev2.html).
 
-You can use a custom domain name to provide a URL that's more intuitive and easier to recall. For more information about using custom domain names, see [Set up Custom Domain Name for an API in API Gateway](../../../apigateway/latest/developerguide/how-to-custom-domains.md) in the _API Gateway Developer Guide_.
+You can use a custom domain name to provide a URL that's more intuitive and easier to recall. For more information about using custom domain names, see [Set up Custom Domain Name for an API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) in the *API Gateway Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-apigateway-domainname-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-domainname-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::DomainName",
   "Properties" : {
-      "CertificateArn" : String,
-      "DomainName" : String,
-      "EndpointAccessMode" : String,
-      "EndpointConfiguration" : EndpointConfiguration,
-      "MutualTlsAuthentication" : MutualTlsAuthentication,
-      "OwnershipVerificationCertificateArn" : String,
-      "RegionalCertificateArn" : String,
-      "RoutingMode" : String,
-      "SecurityPolicy" : String,
-      "Tags" : [ Tag, ... ]
+      "[CertificateArn](#cfn-apigateway-domainname-certificatearn)" : {{String}},
+      "[DomainName](#cfn-apigateway-domainname-domainname)" : {{String}},
+      "[EndpointAccessMode](#cfn-apigateway-domainname-endpointaccessmode)" : {{String}},
+      "[EndpointConfiguration](#cfn-apigateway-domainname-endpointconfiguration)" : {{EndpointConfiguration}},
+      "[MutualTlsAuthentication](#cfn-apigateway-domainname-mutualtlsauthentication)" : {{MutualTlsAuthentication}},
+      "[OwnershipVerificationCertificateArn](#cfn-apigateway-domainname-ownershipverificationcertificatearn)" : {{String}},
+      "[RegionalCertificateArn](#cfn-apigateway-domainname-regionalcertificatearn)" : {{String}},
+      "[RoutingMode](#cfn-apigateway-domainname-routingmode)" : {{String}},
+      "[SecurityPolicy](#cfn-apigateway-domainname-securitypolicy)" : {{String}},
+      "[Tags](#cfn-apigateway-domainname-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-domainname-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::DomainName
 Properties:
-  CertificateArn: String
-  DomainName: String
-  EndpointAccessMode: String
-  EndpointConfiguration:
-    EndpointConfiguration
-  MutualTlsAuthentication:
-    MutualTlsAuthentication
-  OwnershipVerificationCertificateArn: String
-  RegionalCertificateArn: String
-  RoutingMode: String
-  SecurityPolicy: String
-  Tags:
-    - Tag
-
+  [CertificateArn](#cfn-apigateway-domainname-certificatearn): {{String}}
+  [DomainName](#cfn-apigateway-domainname-domainname): {{String}}
+  [EndpointAccessMode](#cfn-apigateway-domainname-endpointaccessmode): {{String}}
+  [EndpointConfiguration](#cfn-apigateway-domainname-endpointconfiguration): {{
+    EndpointConfiguration}}
+  [MutualTlsAuthentication](#cfn-apigateway-domainname-mutualtlsauthentication): {{
+    MutualTlsAuthentication}}
+  [OwnershipVerificationCertificateArn](#cfn-apigateway-domainname-ownershipverificationcertificatearn): {{String}}
+  [RegionalCertificateArn](#cfn-apigateway-domainname-regionalcertificatearn): {{String}}
+  [RoutingMode](#cfn-apigateway-domainname-routingmode): {{String}}
+  [SecurityPolicy](#cfn-apigateway-domainname-securitypolicy): {{String}}
+  [Tags](#cfn-apigateway-domainname-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-domainname-properties"></a>
 
-`CertificateArn`
-
+`CertificateArn`  <a name="cfn-apigateway-domainname-certificatearn"></a>
 The reference to an AWS-managed certificate that will be used by edge-optimized endpoint or private endpoint for this domain name. AWS Certificate Manager is the only supported source.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-apigateway-domainname-domainname"></a>
 The custom domain name as an API host name, for example, `my-api.example.com`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EndpointAccessMode`
-
+`EndpointAccessMode`  <a name="cfn-apigateway-domainname-endpointaccessmode"></a>
 The endpoint access mode for your DomainName.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndpointConfiguration`
-
+`EndpointConfiguration`  <a name="cfn-apigateway-domainname-endpointconfiguration"></a>
 The endpoint configuration of this DomainName showing the endpoint types and IP address types of the domain name.
+*Required*: No
+*Type*: [EndpointConfiguration](aws-properties-apigateway-domainname-endpointconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MutualTlsAuthentication`  <a name="cfn-apigateway-domainname-mutualtlsauthentication"></a>
+The mutual TLS authentication configuration for a custom domain name. If specified, API Gateway performs two-way authentication between the client and the server. Clients must present a trusted certificate to access your API.
+*Required*: No
+*Type*: [MutualTlsAuthentication](aws-properties-apigateway-domainname-mutualtlsauthentication.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [EndpointConfiguration](aws-properties-apigateway-domainname-endpointconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MutualTlsAuthentication`
-
-The mutual TLS authentication configuration for a custom domain name. If specified, API Gateway
-performs two-way authentication between the client and the server. Clients must present a
-trusted certificate to access your API.
-
-_Required_: No
-
-_Type_: [MutualTlsAuthentication](aws-properties-apigateway-domainname-mutualtlsauthentication.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OwnershipVerificationCertificateArn`
-
+`OwnershipVerificationCertificateArn`  <a name="cfn-apigateway-domainname-ownershipverificationcertificatearn"></a>
 The ARN of the public certificate issued by ACM to validate ownership of your custom domain. Only required when configuring mutual TLS and using an ACM imported or private CA certificate ARN as the RegionalCertificateArn.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegionalCertificateArn`
-
+`RegionalCertificateArn`  <a name="cfn-apigateway-domainname-regionalcertificatearn"></a>
 The reference to an AWS-managed certificate that will be used for validating the regional domain name. AWS Certificate Manager is the only supported source.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingMode`
-
+`RoutingMode`  <a name="cfn-apigateway-domainname-routingmode"></a>
 The routing mode for this domain name. The routing mode determines how API Gateway sends traffic from your custom domain name to your public APIs.
+*Required*: No
+*Type*: String
+*Allowed values*: `BASE_PATH_MAPPING_ONLY | ROUTING_RULE_THEN_BASE_PATH_MAPPING | ROUTING_RULE_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecurityPolicy`  <a name="cfn-apigateway-domainname-securitypolicy"></a>
+The Transport Layer Security (TLS) version \+ cipher suite for this DomainName.
+*Required*: No
+*Type*: String
+*Allowed values*: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `BASE_PATH_MAPPING_ONLY | ROUTING_RULE_THEN_BASE_PATH_MAPPING | ROUTING_RULE_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityPolicy`
-
-The Transport Layer Security (TLS) version + cipher suite for this DomainName.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TLS_1_0 | TLS_1_2 | SecurityPolicy_TLS13_1_3_2025_09 | SecurityPolicy_TLS13_1_3_FIPS_2025_09 | SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09 | SecurityPolicy_TLS13_1_2_PQ_2025_09 | SecurityPolicy_TLS13_1_2_2021_06 | SecurityPolicy_TLS13_2025_EDGE | SecurityPolicy_TLS12_PFS_2025_EDGE | SecurityPolicy_TLS12_2018_EDGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-apigateway-domainname-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-apigateway-domainname-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-apigateway-domainname-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigateway-domainname-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigateway-domainname-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the domain name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigateway-domainname-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DistributionDomainName`
+####
+<a name="aws-resource-apigateway-domainname-return-values-fn--getatt-fn--getatt"></a>
 
+`DistributionDomainName`  <a name="DistributionDomainName-fn::getatt"></a>
 The Amazon CloudFront distribution domain name that's mapped to the custom domain name. This is only applicable for endpoints whose type is `EDGE`.
-
 Example: `d111111abcdef8.cloudfront.net`
 
-`DistributionHostedZoneId`
-
+`DistributionHostedZoneId`  <a name="DistributionHostedZoneId-fn::getatt"></a>
 The region-agnostic Amazon Route 53 Hosted Zone ID of the edge-optimized endpoint. The only valid value is `Z2FDTNDATAQYW2` for all regions.
 
-`DomainNameArn`
-
+`DomainNameArn`  <a name="DomainNameArn-fn::getatt"></a>
 The ARN of the domain name.
 
-`RegionalDomainName`
-
+`RegionalDomainName`  <a name="RegionalDomainName-fn::getatt"></a>
 The domain name associated with the regional endpoint for this custom domain name. You set up this association by adding a DNS record that points the custom domain name to this regional domain name.
 
-`RegionalHostedZoneId`
-
+`RegionalHostedZoneId`  <a name="RegionalHostedZoneId-fn::getatt"></a>
 The region-specific Amazon Route 53 Hosted Zone ID of the regional endpoint.
 
 ## Examples
+<a name="aws-resource-apigateway-domainname--examples"></a>
 
-- [Create Custom Domain](#aws-resource-apigateway-domainname--examples--Create_Custom_Domain)
-
-- [Create Custom Domain from Parameters](#aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters)
-
-- [Create domain name with EndpointConfiguration](#aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration)
-
-- [Create Domain Names and Zone IDs as Outputs](#aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs)
-
-- [Create Domain Name with routing mode ROUTING\_RULE\_ONLY](#aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY)
+**Topics**
++ [Create Custom Domain](#aws-resource-apigateway-domainname--examples--Create_Custom_Domain)
++ [Create Custom Domain from Parameters](#aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters)
++ [Create domain name with EndpointConfiguration](#aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration)
++ [Create Domain Names and Zone IDs as Outputs](#aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs)
++ [Create Domain Name with routing mode ROUTING\_RULE\_ONLY](#aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY)
 
 ### Create Custom Domain
+<a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain"></a>
 
 The following example creates a custom domain name of `api.mydomain.com`.
 
 #### JSON
+<a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain--json"></a>
 
-```json
-
+```
 {
     "MyDomainName": {
         "Type": "AWS::ApiGateway::DomainName",
@@ -239,26 +192,26 @@ The following example creates a custom domain name of `api.mydomain.com`.
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain--yaml"></a>
 
-```yaml
-
+```
 MyDomainName:
   Type: 'AWS::ApiGateway::DomainName'
   Properties:
     DomainName: api.mydomain.com
     CertificateArn: >-
       arn:aws:acm:us-east-1:111122223333:certificate/fb1b9770-a305-495d-aefb-27e5e101ff3
-
 ```
 
 ### Create Custom Domain from Parameters
+<a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters"></a>
 
 The following example creates a custom domain name of `example.mydomain.com`.
 
 #### JSON
+<a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters--json"></a>
 
-```json
-
+```
 {
     "Parameters": {
         "basePath": {
@@ -331,9 +284,9 @@ The following example creates a custom domain name of `example.mydomain.com`.
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   basePath:
     Type: String
@@ -369,17 +322,17 @@ Outputs:
     Value: !GetAtt
       - myDomainName
       - DistributionDomainName
-
 ```
 
 ### Create domain name with EndpointConfiguration
+<a name="aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration"></a>
 
 The following example creates a custom domain name that specifies a regional certificate ARN and an endpoint type.
 
 #### JSON
+<a name="aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration--json"></a>
 
-```json
-
+```
 {
   "Parameters": {
     "cfnDomainName": {
@@ -426,9 +379,9 @@ The following example creates a custom domain name that specifies a regional cer
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   cfnDomainName:
     Type: String
@@ -452,13 +405,14 @@ Outputs:
 ```
 
 ### Create Domain Names and Zone IDs as Outputs
+<a name="aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs"></a>
 
 The following example defines the distribution and regional domain names, as well as the distribution and regional hosted zone IDs, as outputs from the stack.
 
 #### JSON
+<a name="aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "myDomainName": {
@@ -521,9 +475,9 @@ The following example defines the distribution and regional domain names, as wel
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myDomainName:
     Type: 'AWS::ApiGateway::DomainName'
@@ -551,17 +505,17 @@ Outputs:
     Value: !GetAtt
       - myDomainName
       - RegionalHostedZoneId
-
 ```
 
 ### Create Domain Name with routing mode ROUTING\_RULE\_ONLY
+<a name="aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY"></a>
 
 The following example creates a domain name with a routing mode of `ROUTING_RULE_ONLY`.
 
 #### JSON
+<a name="aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY--json"></a>
 
-```json
-
+```
 {
   "MyDomainName": {
     "Type": "AWS::ApiGateway::DomainName",
@@ -581,9 +535,9 @@ The following example creates a domain name with a routing mode of `ROUTING_RULE
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY--yaml"></a>
 
-```yaml
-
+```
 MyDomainName:
     Type: AWS::ApiGateway::DomainName
     Properties:
@@ -597,13 +551,7 @@ MyDomainName:
 ```
 
 ## See also
-
-- [domainname:create](../../../apigateway/latest/api/api-createdomainname.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGateway::DocumentationVersion
-
-EndpointConfiguration
+<a name="aws-resource-apigateway-domainname--seealso"></a>
++ [domainname:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDomainName.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

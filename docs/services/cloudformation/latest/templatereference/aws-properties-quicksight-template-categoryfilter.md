@@ -2,99 +2,73 @@
 title: "AWS::QuickSight::Template CategoryFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CategoryFilter
+<a name="aws-properties-quicksight-template-categoryfilter"></a>
 
 A `CategoryFilter` filters text values.
 
-For more information, see [Adding text filters](../../../quicksight/latest/user/add-a-text-filter-data-prep.md) in the _Amazon Quick Suite User Guide_.
+For more information, see [Adding text filters](https://docs.aws.amazon.com/quicksight/latest/user/add-a-text-filter-data-prep.html) in the *Amazon Quick Suite User Guide*.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-categoryfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-categoryfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnIdentifier,
-  "Configuration" : CategoryFilterConfiguration,
-  "DefaultFilterControlConfiguration" : DefaultFilterControlConfiguration,
-  "FilterId" : String
+  "[Column](#cfn-quicksight-template-categoryfilter-column)" : {{ColumnIdentifier}},
+  "[Configuration](#cfn-quicksight-template-categoryfilter-configuration)" : {{CategoryFilterConfiguration}},
+  "[DefaultFilterControlConfiguration](#cfn-quicksight-template-categoryfilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
+  "[FilterId](#cfn-quicksight-template-categoryfilter-filterid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-categoryfilter-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnIdentifier
-  Configuration:
-    CategoryFilterConfiguration
-  DefaultFilterControlConfiguration:
-    DefaultFilterControlConfiguration
-  FilterId: String
-
+```
+  [Column](#cfn-quicksight-template-categoryfilter-column): {{
+    ColumnIdentifier}}
+  [Configuration](#cfn-quicksight-template-categoryfilter-configuration): {{
+    CategoryFilterConfiguration}}
+  [DefaultFilterControlConfiguration](#cfn-quicksight-template-categoryfilter-defaultfiltercontrolconfiguration): {{
+    DefaultFilterControlConfiguration}}
+  [FilterId](#cfn-quicksight-template-categoryfilter-filterid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-categoryfilter-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-categoryfilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Configuration`
-
+`Configuration`  <a name="cfn-quicksight-template-categoryfilter-configuration"></a>
 The configuration for a `CategoryFilter`.
+*Required*: Yes
+*Type*: [CategoryFilterConfiguration](aws-properties-quicksight-template-categoryfilterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [CategoryFilterConfiguration](aws-properties-quicksight-template-categoryfilterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultFilterControlConfiguration`
-
+`DefaultFilterControlConfiguration`  <a name="cfn-quicksight-template-categoryfilter-defaultfiltercontrolconfiguration"></a>
 The default configurations for the associated controls. This applies only for filters that are scoped to multiple sheets.
+*Required*: No
+*Type*: [DefaultFilterControlConfiguration](aws-properties-quicksight-template-defaultfiltercontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterControlConfiguration](aws-properties-quicksight-template-defaultfiltercontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterId`
-
+`FilterId`  <a name="cfn-quicksight-template-categoryfilter-filterid"></a>
 An identifier that uniquely identifies a filter within a dashboard, analysis, or template.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CategoryDrillDownFilter
-
-CategoryFilterConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,59 +2,43 @@
 title: "AWS::CertificateManager::Account ExpiryEventsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CertificateManager::Account ExpiryEventsConfiguration
+<a name="aws-properties-certificatemanager-account-expiryeventsconfiguration"></a>
 
-Object containing expiration events options associated with an AWS account. For more information, see [ExpiryEventsConfiguration](../../../../reference/acm/latest/apireference/api-expiryeventsconfiguration.md) in the API reference.
+Object containing expiration events options associated with an AWS account. For more information, see [ExpiryEventsConfiguration](https://docs.aws.amazon.com/acm/latest/APIReference/API_ExpiryEventsConfiguration.html) in the API reference.
 
 ## Syntax
+<a name="aws-properties-certificatemanager-account-expiryeventsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-certificatemanager-account-expiryeventsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DaysBeforeExpiry" : Integer
+  "[DaysBeforeExpiry](#cfn-certificatemanager-account-expiryeventsconfiguration-daysbeforeexpiry)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-certificatemanager-account-expiryeventsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DaysBeforeExpiry: Integer
-
+```
+  [DaysBeforeExpiry](#cfn-certificatemanager-account-expiryeventsconfiguration-daysbeforeexpiry): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-certificatemanager-account-expiryeventsconfiguration-properties"></a>
 
-`DaysBeforeExpiry`
-
-This option specifies the number of days prior to certificate expiration when ACM
-starts generating `EventBridge` events. ACM sends one event per day per
-certificate until the certificate expires. By default, accounts receive events starting
-45 days before certificate expiration.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `45`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CertificateManager::Account
-
-AWS::CertificateManager::Certificate
+`DaysBeforeExpiry`  <a name="cfn-certificatemanager-account-expiryeventsconfiguration-daysbeforeexpiry"></a>
+This option specifies the number of days prior to certificate expiration when ACM starts generating `EventBridge` events. ACM sends one event per day per certificate until the certificate expires. By default, accounts receive events starting 45 days before certificate expiration.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `45`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

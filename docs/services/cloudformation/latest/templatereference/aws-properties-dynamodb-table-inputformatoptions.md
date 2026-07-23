@@ -2,55 +2,42 @@
 title: "AWS::DynamoDB::Table InputFormatOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table InputFormatOptions
+<a name="aws-properties-dynamodb-table-inputformatoptions"></a>
 
-The format options for the data that was imported into the target table. There is one
-value, CsvOption.
+ The format options for the data that was imported into the target table. There is one value, CsvOption.
 
 ## Syntax
+<a name="aws-properties-dynamodb-table-inputformatoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-table-inputformatoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Csv" : Csv
+  "[Csv](#cfn-dynamodb-table-inputformatoptions-csv)" : {{Csv}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-table-inputformatoptions-syntax.yaml"></a>
 
-```yaml
-
-  Csv:
-    Csv
-
+```
+  [Csv](#cfn-dynamodb-table-inputformatoptions-csv): {{
+    Csv}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-table-inputformatoptions-properties"></a>
 
-`Csv`
-
-The options for imported source files in CSV format. The values are Delimiter and
-HeaderList.
-
-_Required_: No
-
-_Type_: [Csv](aws-properties-dynamodb-table-csv.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImportSourceSpecification
-
-KeySchema
+`Csv`  <a name="cfn-dynamodb-table-inputformatoptions-csv"></a>
+ The options for imported source files in CSV format. The values are Delimiter and HeaderList.
+*Required*: No
+*Type*: [Csv](aws-properties-dynamodb-table-csv.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

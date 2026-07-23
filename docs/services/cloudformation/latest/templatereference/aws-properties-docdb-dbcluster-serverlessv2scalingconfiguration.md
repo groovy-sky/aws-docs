@@ -2,66 +2,49 @@
 title: "AWS::DocDB::DBCluster ServerlessV2ScalingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DocDB::DBCluster ServerlessV2ScalingConfiguration
+<a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration"></a>
 
 Sets the scaling configuration of an Amazon DocumentDB Serverless cluster.
 
 ## Syntax
+<a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxCapacity" : Number,
-  "MinCapacity" : Number
+  "[MaxCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-maxcapacity)" : {{Number}},
+  "[MinCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-mincapacity)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxCapacity: Number
-  MinCapacity: Number
-
+```
+  [MaxCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-maxcapacity): {{Number}}
+  [MinCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-mincapacity): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration-properties"></a>
 
-`MaxCapacity`
+`MaxCapacity`  <a name="cfn-docdb-dbcluster-serverlessv2scalingconfiguration-maxcapacity"></a>
+The maximum number of Amazon DocumentDB capacity units (DCUs) for an instance in an Amazon DocumentDB Serverless cluster. You can specify DCU values in half-step increments, such as 32, 32.5, 33, and so on.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The maximum number of Amazon DocumentDB capacity units (DCUs) for an instance in an Amazon DocumentDB Serverless cluster.
-You can specify DCU values in half-step increments, such as 32, 32.5, 33, and so on.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinCapacity`
-
-The minimum number of Amazon DocumentDB capacity units (DCUs) for an instance in an Amazon DocumentDB Serverless cluster.
-You can specify DCU values in half-step increments, such as 8, 8.5, 9, and so on.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DocDB::DBCluster
-
-Tag
+`MinCapacity`  <a name="cfn-docdb-dbcluster-serverlessv2scalingconfiguration-mincapacity"></a>
+The minimum number of Amazon DocumentDB capacity units (DCUs) for an instance in an Amazon DocumentDB Serverless cluster. You can specify DCU values in half-step increments, such as 8, 8.5, 9, and so on.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

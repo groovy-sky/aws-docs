@@ -2,88 +2,63 @@
 title: "AWS::VpcLattice::Rule HeaderMatchType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Rule HeaderMatchType
+<a name="aws-properties-vpclattice-rule-headermatchtype"></a>
 
 Describes a header match type.
 
 ## Syntax
+<a name="aws-properties-vpclattice-rule-headermatchtype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-rule-headermatchtype-syntax.json"></a>
 
-```json
-
+```
 {
-  "Contains" : String,
-  "Exact" : String,
-  "Prefix" : String
+  "[Contains](#cfn-vpclattice-rule-headermatchtype-contains)" : {{String}},
+  "[Exact](#cfn-vpclattice-rule-headermatchtype-exact)" : {{String}},
+  "[Prefix](#cfn-vpclattice-rule-headermatchtype-prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-rule-headermatchtype-syntax.yaml"></a>
 
-```yaml
-
-  Contains: String
-  Exact: String
-  Prefix: String
-
+```
+  [Contains](#cfn-vpclattice-rule-headermatchtype-contains): {{String}}
+  [Exact](#cfn-vpclattice-rule-headermatchtype-exact): {{String}}
+  [Prefix](#cfn-vpclattice-rule-headermatchtype-prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-rule-headermatchtype-properties"></a>
 
-`Contains`
-
+`Contains`  <a name="cfn-vpclattice-rule-headermatchtype-contains"></a>
 A contains type match.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Exact`
-
+`Exact`  <a name="cfn-vpclattice-rule-headermatchtype-exact"></a>
 An exact type match.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-vpclattice-rule-headermatchtype-prefix"></a>
 A prefix type match. Matches the value with the prefix.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HeaderMatch
-
-HttpMatch
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

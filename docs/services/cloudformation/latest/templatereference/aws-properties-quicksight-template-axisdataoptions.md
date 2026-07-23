@@ -2,68 +2,53 @@
 title: "AWS::QuickSight::Template AxisDataOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template AxisDataOptions
+<a name="aws-properties-quicksight-template-axisdataoptions"></a>
 
 The data options for an axis.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-axisdataoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-axisdataoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateAxisOptions" : DateAxisOptions,
-  "NumericAxisOptions" : NumericAxisOptions
+  "[DateAxisOptions](#cfn-quicksight-template-axisdataoptions-dateaxisoptions)" : {{DateAxisOptions}},
+  "[NumericAxisOptions](#cfn-quicksight-template-axisdataoptions-numericaxisoptions)" : {{NumericAxisOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-axisdataoptions-syntax.yaml"></a>
 
-```yaml
-
-  DateAxisOptions:
-    DateAxisOptions
-  NumericAxisOptions:
-    NumericAxisOptions
-
+```
+  [DateAxisOptions](#cfn-quicksight-template-axisdataoptions-dateaxisoptions): {{
+    DateAxisOptions}}
+  [NumericAxisOptions](#cfn-quicksight-template-axisdataoptions-numericaxisoptions): {{
+    NumericAxisOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-axisdataoptions-properties"></a>
 
-`DateAxisOptions`
-
+`DateAxisOptions`  <a name="cfn-quicksight-template-axisdataoptions-dateaxisoptions"></a>
 The options for an axis with a date field.
+*Required*: No
+*Type*: [DateAxisOptions](aws-properties-quicksight-template-dateaxisoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateAxisOptions](aws-properties-quicksight-template-dateaxisoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericAxisOptions`
-
+`NumericAxisOptions`  <a name="cfn-quicksight-template-axisdataoptions-numericaxisoptions"></a>
 The options for an axis with a numeric field.
-
-_Required_: No
-
-_Type_: [NumericAxisOptions](aws-properties-quicksight-template-numericaxisoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttributeAggregationFunction
-
-AxisDisplayMinMaxRange
+*Required*: No
+*Type*: [NumericAxisOptions](aws-properties-quicksight-template-numericaxisoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

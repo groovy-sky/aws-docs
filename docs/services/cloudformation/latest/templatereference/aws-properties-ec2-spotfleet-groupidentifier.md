@@ -2,52 +2,41 @@
 title: "AWS::EC2::SpotFleet GroupIdentifier"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet GroupIdentifier
+<a name="aws-properties-ec2-spotfleet-groupidentifier"></a>
 
 Describes a security group.
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-groupidentifier-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-groupidentifier-syntax.json"></a>
 
-```json
-
+```
 {
-  "GroupId" : String
+  "[GroupId](#cfn-ec2-spotfleet-groupidentifier-groupid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-groupidentifier-syntax.yaml"></a>
 
-```yaml
-
-  GroupId: String
-
+```
+  [GroupId](#cfn-ec2-spotfleet-groupidentifier-groupid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-groupidentifier-properties"></a>
 
-`GroupId`
-
+`GroupId`  <a name="cfn-ec2-spotfleet-groupidentifier-groupid"></a>
 The ID of the security group.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FleetLaunchTemplateSpecification
-
-IamInstanceProfileSpecification
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

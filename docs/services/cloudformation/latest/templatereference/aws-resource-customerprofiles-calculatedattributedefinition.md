@@ -2,207 +2,148 @@
 title: "AWS::CustomerProfiles::CalculatedAttributeDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::CalculatedAttributeDefinition
+<a name="aws-resource-customerprofiles-calculatedattributedefinition"></a>
 
 A calculated attribute definition for Customer Profiles.
 
 ## Syntax
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CustomerProfiles::CalculatedAttributeDefinition",
   "Properties" : {
-      "AttributeDetails" : AttributeDetails,
-      "CalculatedAttributeName" : String,
-      "Conditions" : Conditions,
-      "Description" : String,
-      "DisplayName" : String,
-      "DomainName" : String,
-      "Statistic" : String,
-      "Tags" : [ Tag, ... ],
-      "UseHistoricalData" : Boolean
+      "[AttributeDetails](#cfn-customerprofiles-calculatedattributedefinition-attributedetails)" : {{AttributeDetails}},
+      "[CalculatedAttributeName](#cfn-customerprofiles-calculatedattributedefinition-calculatedattributename)" : {{String}},
+      "[Conditions](#cfn-customerprofiles-calculatedattributedefinition-conditions)" : {{Conditions}},
+      "[Description](#cfn-customerprofiles-calculatedattributedefinition-description)" : {{String}},
+      "[DisplayName](#cfn-customerprofiles-calculatedattributedefinition-displayname)" : {{String}},
+      "[DomainName](#cfn-customerprofiles-calculatedattributedefinition-domainname)" : {{String}},
+      "[Statistic](#cfn-customerprofiles-calculatedattributedefinition-statistic)" : {{String}},
+      "[Tags](#cfn-customerprofiles-calculatedattributedefinition-tags)" : {{[ Tag, ... ]}},
+      "[UseHistoricalData](#cfn-customerprofiles-calculatedattributedefinition-usehistoricaldata)" : {{Boolean}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CustomerProfiles::CalculatedAttributeDefinition
 Properties:
-  AttributeDetails:
-    AttributeDetails
-  CalculatedAttributeName: String
-  Conditions:
-    Conditions
-  Description: String
-  DisplayName: String
-  DomainName: String
-  Statistic: String
-  Tags:
-    - Tag
-  UseHistoricalData: Boolean
-
+  [AttributeDetails](#cfn-customerprofiles-calculatedattributedefinition-attributedetails): {{
+    AttributeDetails}}
+  [CalculatedAttributeName](#cfn-customerprofiles-calculatedattributedefinition-calculatedattributename): {{String}}
+  [Conditions](#cfn-customerprofiles-calculatedattributedefinition-conditions): {{
+    Conditions}}
+  [Description](#cfn-customerprofiles-calculatedattributedefinition-description): {{String}}
+  [DisplayName](#cfn-customerprofiles-calculatedattributedefinition-displayname): {{String}}
+  [DomainName](#cfn-customerprofiles-calculatedattributedefinition-domainname): {{String}}
+  [Statistic](#cfn-customerprofiles-calculatedattributedefinition-statistic): {{String}}
+  [Tags](#cfn-customerprofiles-calculatedattributedefinition-tags): {{
+    - Tag}}
+  [UseHistoricalData](#cfn-customerprofiles-calculatedattributedefinition-usehistoricaldata): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-properties"></a>
 
-`AttributeDetails`
+`AttributeDetails`  <a name="cfn-customerprofiles-calculatedattributedefinition-attributedetails"></a>
+Mathematical expression and a list of attribute items specified in that expression.
+*Required*: Yes
+*Type*: [AttributeDetails](aws-properties-customerprofiles-calculatedattributedefinition-attributedetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Mathematical expression and a list of attribute items specified in that
-expression.
-
-_Required_: Yes
-
-_Type_: [AttributeDetails](aws-properties-customerprofiles-calculatedattributedefinition-attributedetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CalculatedAttributeName`
-
+`CalculatedAttributeName`  <a name="cfn-customerprofiles-calculatedattributedefinition-calculatedattributename"></a>
 The name of an attribute defined in a profile object type.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z_][a-zA-Z_0-9-]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Conditions`  <a name="cfn-customerprofiles-calculatedattributedefinition-conditions"></a>
+The conditions including range, object count, and threshold for the calculated attribute.
+*Required*: No
+*Type*: [Conditions](aws-properties-customerprofiles-calculatedattributedefinition-conditions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z_][a-zA-Z_0-9-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Conditions`
-
-The conditions including range, object count, and threshold for the calculated
-attribute.
-
-_Required_: No
-
-_Type_: [Conditions](aws-properties-customerprofiles-calculatedattributedefinition-conditions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-customerprofiles-calculatedattributedefinition-description"></a>
 The description of the calculated attribute.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-customerprofiles-calculatedattributedefinition-displayname"></a>
 The display name of the calculated attribute.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z_][a-zA-Z_0-9-\s]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z_][a-zA-Z_0-9-\s]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-customerprofiles-calculatedattributedefinition-domainname"></a>
 The unique name of the domain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Statistic`
-
+`Statistic`  <a name="cfn-customerprofiles-calculatedattributedefinition-statistic"></a>
 The aggregation operation to perform for the calculated attribute.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `FIRST_OCCURRENCE | LAST_OCCURRENCE | COUNT | SUM | MINIMUM | MAXIMUM | AVERAGE | MAX_OCCURRENCE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `FIRST_OCCURRENCE | LAST_OCCURRENCE | COUNT | SUM | MINIMUM | MAXIMUM | AVERAGE | MAX_OCCURRENCE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-customerprofiles-calculatedattributedefinition-tags"></a>
 An array of key-value pairs to apply to this resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-customerprofiles-calculatedattributedefinition-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-customerprofiles-calculatedattributedefinition-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseHistoricalData`
-
-Whether historical data ingested before the Calculated Attribute was created should be
-included in calculations.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`UseHistoricalData`  <a name="cfn-customerprofiles-calculatedattributedefinition-usehistoricaldata"></a>
+Whether historical data ingested before the Calculated Attribute was created should be included in calculations.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-return-values"></a>
 
 ### Ref
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-return-values-fn--getatt"></a>
 
-`CreatedAt`
+####
+<a name="aws-resource-customerprofiles-calculatedattributedefinition-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp of when the calculated attribute definition was created.
 
-`LastUpdatedAt`
+`LastUpdatedAt`  <a name="LastUpdatedAt-fn::getatt"></a>
+The timestamp of when the calculated attribute definition was most recently edited.
 
-The timestamp of when the calculated attribute definition was most recently
-edited.
-
-`Status`
-
-Status of the Calculated Attribute creation (whether all historical data has been
-indexed.)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Connect Customer Profiles
-
-AttributeDetails
+`Status`  <a name="Status-fn::getatt"></a>
+Status of the Calculated Attribute creation (whether all historical data has been indexed.)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::Lex::Bot RuntimeSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot RuntimeSettings
+<a name="aws-properties-lex-bot-runtimesettings"></a>
 
 Contains specifications about the Amazon Lex runtime generative AI capabilities from Amazon Bedrock that you can turn on for your bot.
 
 ## Syntax
+<a name="aws-properties-lex-bot-runtimesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-runtimesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "NluImprovementSpecification" : NluImprovementSpecification,
-  "SlotResolutionImprovementSpecification" : SlotResolutionImprovementSpecification
+  "[NluImprovementSpecification](#cfn-lex-bot-runtimesettings-nluimprovementspecification)" : {{NluImprovementSpecification}},
+  "[SlotResolutionImprovementSpecification](#cfn-lex-bot-runtimesettings-slotresolutionimprovementspecification)" : {{SlotResolutionImprovementSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-runtimesettings-syntax.yaml"></a>
 
-```yaml
-
-  NluImprovementSpecification:
-    NluImprovementSpecification
-  SlotResolutionImprovementSpecification:
-    SlotResolutionImprovementSpecification
-
+```
+  [NluImprovementSpecification](#cfn-lex-bot-runtimesettings-nluimprovementspecification): {{
+    NluImprovementSpecification}}
+  [SlotResolutionImprovementSpecification](#cfn-lex-bot-runtimesettings-slotresolutionimprovementspecification): {{
+    SlotResolutionImprovementSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-runtimesettings-properties"></a>
 
-`NluImprovementSpecification`
-
+`NluImprovementSpecification`  <a name="cfn-lex-bot-runtimesettings-nluimprovementspecification"></a>
 Property description not available.
+*Required*: No
+*Type*: [NluImprovementSpecification](aws-properties-lex-bot-nluimprovementspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NluImprovementSpecification](aws-properties-lex-bot-nluimprovementspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotResolutionImprovementSpecification`
-
+`SlotResolutionImprovementSpecification`  <a name="cfn-lex-bot-runtimesettings-slotresolutionimprovementspecification"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [SlotResolutionImprovementSpecification](aws-properties-lex-bot-slotresolutionimprovementspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResponseSpecification
-
-S3BucketLogDestination
+*Required*: No
+*Type*: [SlotResolutionImprovementSpecification](aws-properties-lex-bot-slotresolutionimprovementspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,128 +2,88 @@
 title: "AWS::MediaPackageV2::OriginEndpoint Encryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint Encryption
+<a name="aws-properties-mediapackagev2-originendpoint-encryption"></a>
 
 The parameters for encrypting content.
 
 ## Syntax
+<a name="aws-properties-mediapackagev2-originendpoint-encryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackagev2-originendpoint-encryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "CmafExcludeSegmentDrmMetadata" : Boolean,
-  "ConstantInitializationVector" : String,
-  "EncryptionMethod" : EncryptionMethod,
-  "KeyRotationIntervalSeconds" : Integer,
-  "SpekeKeyProvider" : SpekeKeyProvider
+  "[CmafExcludeSegmentDrmMetadata](#cfn-mediapackagev2-originendpoint-encryption-cmafexcludesegmentdrmmetadata)" : {{Boolean}},
+  "[ConstantInitializationVector](#cfn-mediapackagev2-originendpoint-encryption-constantinitializationvector)" : {{String}},
+  "[EncryptionMethod](#cfn-mediapackagev2-originendpoint-encryption-encryptionmethod)" : {{EncryptionMethod}},
+  "[KeyRotationIntervalSeconds](#cfn-mediapackagev2-originendpoint-encryption-keyrotationintervalseconds)" : {{Integer}},
+  "[SpekeKeyProvider](#cfn-mediapackagev2-originendpoint-encryption-spekekeyprovider)" : {{SpekeKeyProvider}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackagev2-originendpoint-encryption-syntax.yaml"></a>
 
-```yaml
-
-  CmafExcludeSegmentDrmMetadata: Boolean
-  ConstantInitializationVector: String
-  EncryptionMethod:
-    EncryptionMethod
-  KeyRotationIntervalSeconds: Integer
-  SpekeKeyProvider:
-    SpekeKeyProvider
-
+```
+  [CmafExcludeSegmentDrmMetadata](#cfn-mediapackagev2-originendpoint-encryption-cmafexcludesegmentdrmmetadata): {{Boolean}}
+  [ConstantInitializationVector](#cfn-mediapackagev2-originendpoint-encryption-constantinitializationvector): {{String}}
+  [EncryptionMethod](#cfn-mediapackagev2-originendpoint-encryption-encryptionmethod): {{
+    EncryptionMethod}}
+  [KeyRotationIntervalSeconds](#cfn-mediapackagev2-originendpoint-encryption-keyrotationintervalseconds): {{Integer}}
+  [SpekeKeyProvider](#cfn-mediapackagev2-originendpoint-encryption-spekekeyprovider): {{
+    SpekeKeyProvider}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackagev2-originendpoint-encryption-properties"></a>
 
-`CmafExcludeSegmentDrmMetadata`
-
+`CmafExcludeSegmentDrmMetadata`  <a name="cfn-mediapackagev2-originendpoint-encryption-cmafexcludesegmentdrmmetadata"></a>
 Excludes SEIG and SGPD boxes from segment metadata in CMAF containers.
-
 When set to `true`, MediaPackage omits these DRM metadata boxes from CMAF segments, which can improve compatibility with certain devices and players that don't support these boxes.
-
 Important considerations:
-
-- This setting only affects CMAF container formats
-
-- Key rotation can still be handled through media playlist signaling
-
-- PSSH and TENC boxes remain unaffected
-
-- Default behavior is preserved when this setting is disabled
-
++ This setting only affects CMAF container formats
++ Key rotation can still be handled through media playlist signaling
++ PSSH and TENC boxes remain unaffected
++ Default behavior is preserved when this setting is disabled
 Valid values: `true` \| `false`
-
 Default: `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConstantInitializationVector`
-
+`ConstantInitializationVector`  <a name="cfn-mediapackagev2-originendpoint-encryption-constantinitializationvector"></a>
 A 128-bit, 16-byte hex value represented by a 32-character string, used in conjunction with the key for encrypting content. If you don't specify a value, then MediaPackage creates the constant initialization vector (IV).
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-fA-F]+$`
+*Minimum*: `32`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-fA-F]+$`
-
-_Minimum_: `32`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionMethod`
-
+`EncryptionMethod`  <a name="cfn-mediapackagev2-originendpoint-encryption-encryptionmethod"></a>
 The encryption method to use.
+*Required*: Yes
+*Type*: [EncryptionMethod](aws-properties-mediapackagev2-originendpoint-encryptionmethod.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [EncryptionMethod](aws-properties-mediapackagev2-originendpoint-encryptionmethod.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyRotationIntervalSeconds`
-
+`KeyRotationIntervalSeconds`  <a name="cfn-mediapackagev2-originendpoint-encryption-keyrotationintervalseconds"></a>
 The interval, in seconds, to rotate encryption keys for the origin endpoint.
+*Required*: No
+*Type*: Integer
+*Minimum*: `300`
+*Maximum*: `31536000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `300`
-
-_Maximum_: `31536000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpekeKeyProvider`
-
+`SpekeKeyProvider`  <a name="cfn-mediapackagev2-originendpoint-encryption-spekekeyprovider"></a>
 The SPEKE key provider to use for encryption.
-
-_Required_: Yes
-
-_Type_: [SpekeKeyProvider](aws-properties-mediapackagev2-originendpoint-spekekeyprovider.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashUtcTiming
-
-EncryptionContractConfiguration
+*Required*: Yes
+*Type*: [SpekeKeyProvider](aws-properties-mediapackagev2-originendpoint-spekekeyprovider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

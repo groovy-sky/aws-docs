@@ -2,65 +2,50 @@
 title: "AWS::QuickSight::Template CustomValuesConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CustomValuesConfiguration
+<a name="aws-properties-quicksight-template-customvaluesconfiguration"></a>
 
 The configuration of custom values for the destination parameter in `DestinationParameterValueConfiguration`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-customvaluesconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-customvaluesconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomValues" : CustomParameterValues,
-  "IncludeNullValue" : Boolean
+  "[CustomValues](#cfn-quicksight-template-customvaluesconfiguration-customvalues)" : {{CustomParameterValues}},
+  "[IncludeNullValue](#cfn-quicksight-template-customvaluesconfiguration-includenullvalue)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-customvaluesconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomValues:
-    CustomParameterValues
-  IncludeNullValue: Boolean
-
+```
+  [CustomValues](#cfn-quicksight-template-customvaluesconfiguration-customvalues): {{
+    CustomParameterValues}}
+  [IncludeNullValue](#cfn-quicksight-template-customvaluesconfiguration-includenullvalue): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-customvaluesconfiguration-properties"></a>
 
-`CustomValues`
-
+`CustomValues`  <a name="cfn-quicksight-template-customvaluesconfiguration-customvalues"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [CustomParameterValues](aws-properties-quicksight-template-customparametervalues.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [CustomParameterValues](aws-properties-quicksight-template-customparametervalues.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeNullValue`
-
+`IncludeNullValue`  <a name="cfn-quicksight-template-customvaluesconfiguration-includenullvalue"></a>
 Includes the null value in custom action parameter values.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomParameterValues
-
-DataBarsOptions
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

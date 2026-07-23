@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::KnowledgeBase AudioConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase AudioConfiguration
+<a name="aws-properties-bedrock-knowledgebase-audioconfiguration"></a>
 
 Configuration settings for processing audio content in multimodal knowledge bases.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-audioconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-audioconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SegmentationConfiguration" : AudioSegmentationConfiguration
+  "[SegmentationConfiguration](#cfn-bedrock-knowledgebase-audioconfiguration-segmentationconfiguration)" : {{AudioSegmentationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-audioconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SegmentationConfiguration:
-    AudioSegmentationConfiguration
-
+```
+  [SegmentationConfiguration](#cfn-bedrock-knowledgebase-audioconfiguration-segmentationconfiguration): {{
+    AudioSegmentationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-audioconfiguration-properties"></a>
 
-`SegmentationConfiguration`
-
+`SegmentationConfiguration`  <a name="cfn-bedrock-knowledgebase-audioconfiguration-segmentationconfiguration"></a>
 Configuration for segmenting audio content during processing.
-
-_Required_: Yes
-
-_Type_: [AudioSegmentationConfiguration](aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::KnowledgeBase
-
-AudioSegmentationConfiguration
+*Required*: Yes
+*Type*: [AudioSegmentationConfiguration](aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

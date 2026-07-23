@@ -2,73 +2,53 @@
 title: "AWS::B2BI::Transformer SampleDocumentKeys"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer SampleDocumentKeys
+<a name="aws-properties-b2bi-transformer-sampledocumentkeys"></a>
 
-An array of the Amazon S3 keys used to identify the location for your sample
-documents.
+An array of the Amazon S3 keys used to identify the location for your sample documents.
 
 ## Syntax
+<a name="aws-properties-b2bi-transformer-sampledocumentkeys-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-transformer-sampledocumentkeys-syntax.json"></a>
 
-```json
-
+```
 {
-  "Input" : String,
-  "Output" : String
+  "[Input](#cfn-b2bi-transformer-sampledocumentkeys-input)" : {{String}},
+  "[Output](#cfn-b2bi-transformer-sampledocumentkeys-output)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-transformer-sampledocumentkeys-syntax.yaml"></a>
 
-```yaml
-
-  Input: String
-  Output: String
-
+```
+  [Input](#cfn-b2bi-transformer-sampledocumentkeys-input): {{String}}
+  [Output](#cfn-b2bi-transformer-sampledocumentkeys-output): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-transformer-sampledocumentkeys-properties"></a>
 
-`Input`
-
+`Input`  <a name="cfn-b2bi-transformer-sampledocumentkeys-input"></a>
 An array of keys for your input sample documents.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Output`
-
+`Output`  <a name="cfn-b2bi-transformer-sampledocumentkeys-output"></a>
 An array of keys for your output sample documents.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputConversion
-
-SampleDocuments
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

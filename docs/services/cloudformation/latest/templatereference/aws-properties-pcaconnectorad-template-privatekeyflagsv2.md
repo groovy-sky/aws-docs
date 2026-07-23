@@ -2,79 +2,58 @@
 title: "AWS::PCAConnectorAD::Template PrivateKeyFlagsV2"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template PrivateKeyFlagsV2
+<a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2"></a>
 
-Private key flags for v2 templates specify the client compatibility, if the private key
-can be exported, and if user input is required when using a private key.
+Private key flags for v2 templates specify the client compatibility, if the private key can be exported, and if user input is required when using a private key.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientVersion" : String,
-  "ExportableKey" : Boolean,
-  "StrongKeyProtectionRequired" : Boolean
+  "[ClientVersion](#cfn-pcaconnectorad-template-privatekeyflagsv2-clientversion)" : {{String}},
+  "[ExportableKey](#cfn-pcaconnectorad-template-privatekeyflagsv2-exportablekey)" : {{Boolean}},
+  "[StrongKeyProtectionRequired](#cfn-pcaconnectorad-template-privatekeyflagsv2-strongkeyprotectionrequired)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2-syntax.yaml"></a>
 
-```yaml
-
-  ClientVersion: String
-  ExportableKey: Boolean
-  StrongKeyProtectionRequired: Boolean
-
+```
+  [ClientVersion](#cfn-pcaconnectorad-template-privatekeyflagsv2-clientversion): {{String}}
+  [ExportableKey](#cfn-pcaconnectorad-template-privatekeyflagsv2-exportablekey): {{Boolean}}
+  [StrongKeyProtectionRequired](#cfn-pcaconnectorad-template-privatekeyflagsv2-strongkeyprotectionrequired): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2-properties"></a>
 
-`ClientVersion`
-
+`ClientVersion`  <a name="cfn-pcaconnectorad-template-privatekeyflagsv2-clientversion"></a>
 Defines the minimum client compatibility.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `WINDOWS_SERVER_2003 | WINDOWS_SERVER_2008 | WINDOWS_SERVER_2008_R2 | WINDOWS_SERVER_2012 | WINDOWS_SERVER_2012_R2 | WINDOWS_SERVER_2016`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `WINDOWS_SERVER_2003 | WINDOWS_SERVER_2008 | WINDOWS_SERVER_2008_R2 | WINDOWS_SERVER_2012 | WINDOWS_SERVER_2012_R2 | WINDOWS_SERVER_2016`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExportableKey`
-
+`ExportableKey`  <a name="cfn-pcaconnectorad-template-privatekeyflagsv2-exportablekey"></a>
 Allows the private key to be exported.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StrongKeyProtectionRequired`
-
+`StrongKeyProtectionRequired`  <a name="cfn-pcaconnectorad-template-privatekeyflagsv2-strongkeyprotectionrequired"></a>
 Require user input when using the private key for enrollment.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrivateKeyAttributesV4
-
-PrivateKeyFlagsV3
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

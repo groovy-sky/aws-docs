@@ -2,91 +2,66 @@
 title: "AWS::Omics::AnnotationStore TsvStoreOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::AnnotationStore TsvStoreOptions
+<a name="aws-properties-omics-annotationstore-tsvstoreoptions"></a>
 
 The store's parsing options.
 
 ## Syntax
+<a name="aws-properties-omics-annotationstore-tsvstoreoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-annotationstore-tsvstoreoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnnotationType" : String,
-  "FormatToHeader" : {Key: Value, ...},
-  "Schema" : [ {Key: Value, ...}, ... ]
+  "[AnnotationType](#cfn-omics-annotationstore-tsvstoreoptions-annotationtype)" : {{String}},
+  "[FormatToHeader](#cfn-omics-annotationstore-tsvstoreoptions-formattoheader)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Schema](#cfn-omics-annotationstore-tsvstoreoptions-schema)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-annotationstore-tsvstoreoptions-syntax.yaml"></a>
 
-```yaml
-
-  AnnotationType: String
-  FormatToHeader:
-    Key: Value
-  Schema:
+```
+  [AnnotationType](#cfn-omics-annotationstore-tsvstoreoptions-annotationtype): {{String}}
+  [FormatToHeader](#cfn-omics-annotationstore-tsvstoreoptions-formattoheader): {{
+    {{Key}}: {{Value}}}}
+  [Schema](#cfn-omics-annotationstore-tsvstoreoptions-schema): {{
     -
-    Key: Value
-
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-annotationstore-tsvstoreoptions-properties"></a>
 
-`AnnotationType`
-
+`AnnotationType`  <a name="cfn-omics-annotationstore-tsvstoreoptions-annotationtype"></a>
 The store's annotation type.
+*Required*: No
+*Type*: String
+*Allowed values*: `GENERIC | CHR_POS | CHR_POS_REF_ALT | CHR_START_END_ONE_BASE | CHR_START_END_REF_ALT_ONE_BASE | CHR_START_END_ZERO_BASE | CHR_START_END_REF_ALT_ZERO_BASE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GENERIC | CHR_POS | CHR_POS_REF_ALT | CHR_START_END_ONE_BASE | CHR_START_END_REF_ALT_ONE_BASE | CHR_START_END_ZERO_BASE | CHR_START_END_REF_ALT_ZERO_BASE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FormatToHeader`
-
+`FormatToHeader`  <a name="cfn-omics-annotationstore-tsvstoreoptions-formattoheader"></a>
 The store's header key to column name mapping.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Schema`
-
+`Schema`  <a name="cfn-omics-annotationstore-tsvstoreoptions-schema"></a>
 The schema of an annotation store.
-
-_Required_: No
-
-_Type_: Array of Object
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StoreOptions
-
-AWS::Omics::Configuration
+*Required*: No
+*Type*: Array of Object
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

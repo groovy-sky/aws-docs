@@ -2,207 +2,168 @@
 title: "AWS::BedrockAgentCore::Memory"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory
+<a name="aws-resource-bedrockagentcore-memory"></a>
 
-Memory allows AI agents to maintain both immediate and long-term knowledge, enabling
-context-aware and personalized interactions.
+Memory allows AI agents to maintain both immediate and long-term knowledge, enabling context-aware and personalized interactions.
 
-For more information about using Memory in Amazon Bedrock AgentCore, see [Host agent or\
-tools with Amazon Bedrock AgentCore Memory](../../../bedrock-agentcore/latest/devguide/memory-getting-started.md).
+For more information about using Memory in Amazon Bedrock AgentCore, see [Host agent or tools with Amazon Bedrock AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-getting-started.html).
 
-See the **Properties** section below for descriptions of
-both the required and optional properties.
+See the **Properties** section below for descriptions of both the required and optional properties.
 
 ## Syntax
+<a name="aws-resource-bedrockagentcore-memory-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrockagentcore-memory-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BedrockAgentCore::Memory",
   "Properties" : {
-      "Description" : String,
-      "EncryptionKeyArn" : String,
-      "EventExpiryDuration" : Integer,
-      "MemoryExecutionRoleArn" : String,
-      "MemoryStrategies" : [ MemoryStrategy, ... ],
-      "Name" : String,
-      "StreamDeliveryResources" : StreamDeliveryResources,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-bedrockagentcore-memory-description)" : {{String}},
+      "[EncryptionKeyArn](#cfn-bedrockagentcore-memory-encryptionkeyarn)" : {{String}},
+      "[EventExpiryDuration](#cfn-bedrockagentcore-memory-eventexpiryduration)" : {{Integer}},
+      "[IndexedKeys](#cfn-bedrockagentcore-memory-indexedkeys)" : {{[ IndexedKey, ... ]}},
+      "[MemoryExecutionRoleArn](#cfn-bedrockagentcore-memory-memoryexecutionrolearn)" : {{String}},
+      "[MemoryStrategies](#cfn-bedrockagentcore-memory-memorystrategies)" : {{[ MemoryStrategy, ... ]}},
+      "[Name](#cfn-bedrockagentcore-memory-name)" : {{String}},
+      "[StreamDeliveryResources](#cfn-bedrockagentcore-memory-streamdeliveryresources)" : {{StreamDeliveryResources}},
+      "[Tags](#cfn-bedrockagentcore-memory-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrockagentcore-memory-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BedrockAgentCore::Memory
 Properties:
-  Description: String
-  EncryptionKeyArn: String
-  EventExpiryDuration: Integer
-  MemoryExecutionRoleArn: String
-  MemoryStrategies:
-    - MemoryStrategy
-  Name: String
-  StreamDeliveryResources:
-    StreamDeliveryResources
-  Tags:
-    Key: Value
-
+  [Description](#cfn-bedrockagentcore-memory-description): {{String}}
+  [EncryptionKeyArn](#cfn-bedrockagentcore-memory-encryptionkeyarn): {{String}}
+  [EventExpiryDuration](#cfn-bedrockagentcore-memory-eventexpiryduration): {{Integer}}
+  [IndexedKeys](#cfn-bedrockagentcore-memory-indexedkeys): {{
+    - IndexedKey}}
+  [MemoryExecutionRoleArn](#cfn-bedrockagentcore-memory-memoryexecutionrolearn): {{String}}
+  [MemoryStrategies](#cfn-bedrockagentcore-memory-memorystrategies): {{
+    - MemoryStrategy}}
+  [Name](#cfn-bedrockagentcore-memory-name): {{String}}
+  [StreamDeliveryResources](#cfn-bedrockagentcore-memory-streamdeliveryresources): {{
+    StreamDeliveryResources}}
+  [Tags](#cfn-bedrockagentcore-memory-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrockagentcore-memory-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrockagentcore-memory-description"></a>
 The description of the memory.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionKeyArn`
-
+`EncryptionKeyArn`  <a name="cfn-bedrockagentcore-memory-encryptionkeyarn"></a>
 The ARN of the KMS key used to encrypt the memory.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws(?:-cn|-us-gov|-iso(?:-[bef])?)?):[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws(?:-cn|-us-gov|-iso(?:-[bef])?)?):[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EventExpiryDuration`
-
+`EventExpiryDuration`  <a name="cfn-bedrockagentcore-memory-eventexpiryduration"></a>
 The number of days after which memory events will expire.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `3`
+*Maximum*: `365`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IndexedKeys`  <a name="cfn-bedrockagentcore-memory-indexedkeys"></a>
+The indexed metadata keys for this memory. Only indexed keys can be used in metadata filters.
+*Required*: No
+*Type*: Array of [IndexedKey](aws-properties-bedrockagentcore-memory-indexedkey.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Minimum_: `3`
-
-_Maximum_: `365`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MemoryExecutionRoleArn`
-
+`MemoryExecutionRoleArn`  <a name="cfn-bedrockagentcore-memory-memoryexecutionrolearn"></a>
 The ARN of the IAM role that provides permissions for the memory.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws(?:-cn|-us-gov|-iso(?:-[bef])?)?):[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws(?:-cn|-us-gov|-iso(?:-[bef])?)?):[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MemoryStrategies`
-
+`MemoryStrategies`  <a name="cfn-bedrockagentcore-memory-memorystrategies"></a>
 The list of memory strategies associated with this memory.
+*Required*: No
+*Type*: Array of [MemoryStrategy](aws-properties-bedrockagentcore-memory-memorystrategy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MemoryStrategy](aws-properties-bedrockagentcore-memory-memorystrategy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrockagentcore-memory-name"></a>
 The name of the memory.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StreamDeliveryResources`
-
+`StreamDeliveryResources`  <a name="cfn-bedrockagentcore-memory-streamdeliveryresources"></a>
 Configuration for streaming memory record data to external resources.
+*Required*: No
+*Type*: [StreamDeliveryResources](aws-properties-bedrockagentcore-memory-streamdeliveryresources.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StreamDeliveryResources](aws-properties-bedrockagentcore-memory-streamdeliveryresources.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrockagentcore-memory-tags"></a>
 A map of tag keys and values to assign to an AgentCore Memory. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]{1,128}$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]{1,128}$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrockagentcore-memory-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrockagentcore-memory-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the memory. For example:
 
-`arn:aws:bedrock-agentcore:us-east-1:123456789012:memory/MyMemory-a1b2c3d4e5`
+ `arn:aws:bedrock-agentcore:us-east-1:123456789012:memory/MyMemory-a1b2c3d4e5`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrockagentcore-memory-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrockagentcore-memory-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the memory was created.
 
-`FailureReason`
-
+`FailureReason`  <a name="FailureReason-fn::getatt"></a>
 The reason for failure if the memory is in a failed state.
 
-`MemoryArn`
-
+`MemoryArn`  <a name="MemoryArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the memory.
 
-`MemoryId`
-
+`MemoryId`  <a name="MemoryId-fn::getatt"></a>
 The unique identifier of the memory.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the memory.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the memory was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ToolSchema
-
-ContentConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

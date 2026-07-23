@@ -2,79 +2,60 @@
 title: "AWS::MSK::Cluster ClientAuthentication"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster ClientAuthentication
+<a name="aws-properties-msk-cluster-clientauthentication"></a>
 
-The `ClientAuthentication` property type specifies Property description not available. for an [AWS::MSK::Cluster](aws-resource-msk-cluster.md).
+<a name="aws-properties-msk-cluster-clientauthentication-description"></a>The `ClientAuthentication` property type specifies Property description not available. for an [AWS::MSK::Cluster](aws-resource-msk-cluster.md).
 
 ## Syntax
+<a name="aws-properties-msk-cluster-clientauthentication-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-clientauthentication-syntax.json"></a>
 
-```json
-
+```
 {
-  "Sasl" : Sasl,
-  "Tls" : Tls,
-  "Unauthenticated" : Unauthenticated
+  "[Sasl](#cfn-msk-cluster-clientauthentication-sasl)" : {{Sasl}},
+  "[Tls](#cfn-msk-cluster-clientauthentication-tls)" : {{Tls}},
+  "[Unauthenticated](#cfn-msk-cluster-clientauthentication-unauthenticated)" : {{Unauthenticated}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-clientauthentication-syntax.yaml"></a>
 
-```yaml
-
-  Sasl:
-    Sasl
-  Tls:
-    Tls
-  Unauthenticated:
-    Unauthenticated
-
+```
+  [Sasl](#cfn-msk-cluster-clientauthentication-sasl): {{
+    Sasl}}
+  [Tls](#cfn-msk-cluster-clientauthentication-tls): {{
+    Tls}}
+  [Unauthenticated](#cfn-msk-cluster-clientauthentication-unauthenticated): {{
+    Unauthenticated}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-clientauthentication-properties"></a>
 
-`Sasl`
-
+`Sasl`  <a name="cfn-msk-cluster-clientauthentication-sasl"></a>
 Details for client authentication using SASL. To turn on SASL, you must also turn on `EncryptionInTransit` by setting `inCluster` to true. You must set `clientBroker` to either `TLS` or `TLS_PLAINTEXT`. If you choose `TLS_PLAINTEXT`, then you must also set `unauthenticated` to true.
+*Required*: No
+*Type*: [Sasl](aws-properties-msk-cluster-sasl.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Sasl](aws-properties-msk-cluster-sasl.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tls`
-
+`Tls`  <a name="cfn-msk-cluster-clientauthentication-tls"></a>
 Details for ClientAuthentication using TLS. To turn on TLS access control, you must also turn on `EncryptionInTransit` by setting `inCluster` to true and `clientBroker` to `TLS`.
+*Required*: No
+*Type*: [Tls](aws-properties-msk-cluster-tls.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Tls](aws-properties-msk-cluster-tls.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Unauthenticated`
-
+`Unauthenticated`  <a name="cfn-msk-cluster-clientauthentication-unauthenticated"></a>
 Details for ClientAuthentication using no authentication.
-
-_Required_: No
-
-_Type_: [Unauthenticated](aws-properties-msk-cluster-unauthenticated.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BrokerNodeGroupInfo
-
-CloudWatchLogs
+*Required*: No
+*Type*: [Unauthenticated](aws-properties-msk-cluster-unauthenticated.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

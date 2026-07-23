@@ -2,68 +2,51 @@
 title: "AWS::QuickSight::Dashboard SmallMultiplesAxisProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SmallMultiplesAxisProperties
+<a name="aws-properties-quicksight-dashboard-smallmultiplesaxisproperties"></a>
 
 Configures the properties of a chart's axes that are used by small multiples panels.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-smallmultiplesaxisproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-smallmultiplesaxisproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Placement" : String,
-  "Scale" : String
+  "[Placement](#cfn-quicksight-dashboard-smallmultiplesaxisproperties-placement)" : {{String}},
+  "[Scale](#cfn-quicksight-dashboard-smallmultiplesaxisproperties-scale)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-smallmultiplesaxisproperties-syntax.yaml"></a>
 
-```yaml
-
-  Placement: String
-  Scale: String
-
+```
+  [Placement](#cfn-quicksight-dashboard-smallmultiplesaxisproperties-placement): {{String}}
+  [Scale](#cfn-quicksight-dashboard-smallmultiplesaxisproperties-scale): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-smallmultiplesaxisproperties-properties"></a>
 
-`Placement`
-
+`Placement`  <a name="cfn-quicksight-dashboard-smallmultiplesaxisproperties-placement"></a>
 Defines the placement of the axis. By default, axes are rendered `OUTSIDE` of the panels. Axes with `INDEPENDENT` scale are rendered `INSIDE` the panels.
+*Required*: No
+*Type*: String
+*Allowed values*: `OUTSIDE | INSIDE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `OUTSIDE | INSIDE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scale`
-
+`Scale`  <a name="cfn-quicksight-dashboard-smallmultiplesaxisproperties-scale"></a>
 Determines whether scale of the axes are shared or independent. The default value is `SHARED`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SHARED | INDEPENDENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SliderControlDisplayOptions
-
-SmallMultiplesOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `SHARED | INDEPENDENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

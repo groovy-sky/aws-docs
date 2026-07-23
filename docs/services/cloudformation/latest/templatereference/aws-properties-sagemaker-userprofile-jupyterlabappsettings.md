@@ -2,135 +2,94 @@
 title: "AWS::SageMaker::UserProfile JupyterLabAppSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::UserProfile JupyterLabAppSettings
+<a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings"></a>
 
 The settings for the JupyterLab application.
 
 ## Syntax
+<a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppLifecycleManagement" : AppLifecycleManagement,
-  "BuiltInLifecycleConfigArn" : String,
-  "CodeRepositories" : [ CodeRepository, ... ],
-  "CustomImages" : [ CustomImage, ... ],
-  "DefaultResourceSpec" : ResourceSpec,
-  "LifecycleConfigArns" : [ String, ... ]
+  "[AppLifecycleManagement](#cfn-sagemaker-userprofile-jupyterlabappsettings-applifecyclemanagement)" : {{AppLifecycleManagement}},
+  "[BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-jupyterlabappsettings-builtinlifecycleconfigarn)" : {{String}},
+  "[CodeRepositories](#cfn-sagemaker-userprofile-jupyterlabappsettings-coderepositories)" : {{[ CodeRepository, ... ]}},
+  "[CustomImages](#cfn-sagemaker-userprofile-jupyterlabappsettings-customimages)" : {{[ CustomImage, ... ]}},
+  "[DefaultResourceSpec](#cfn-sagemaker-userprofile-jupyterlabappsettings-defaultresourcespec)" : {{ResourceSpec}},
+  "[LifecycleConfigArns](#cfn-sagemaker-userprofile-jupyterlabappsettings-lifecycleconfigarns)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings-syntax.yaml"></a>
 
-```yaml
-
-  AppLifecycleManagement:
-    AppLifecycleManagement
-  BuiltInLifecycleConfigArn: String
-  CodeRepositories:
-    - CodeRepository
-  CustomImages:
-    - CustomImage
-  DefaultResourceSpec:
-    ResourceSpec
-  LifecycleConfigArns:
-    - String
-
+```
+  [AppLifecycleManagement](#cfn-sagemaker-userprofile-jupyterlabappsettings-applifecyclemanagement): {{
+    AppLifecycleManagement}}
+  [BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-jupyterlabappsettings-builtinlifecycleconfigarn): {{String}}
+  [CodeRepositories](#cfn-sagemaker-userprofile-jupyterlabappsettings-coderepositories): {{
+    - CodeRepository}}
+  [CustomImages](#cfn-sagemaker-userprofile-jupyterlabappsettings-customimages): {{
+    - CustomImage}}
+  [DefaultResourceSpec](#cfn-sagemaker-userprofile-jupyterlabappsettings-defaultresourcespec): {{
+    ResourceSpec}}
+  [LifecycleConfigArns](#cfn-sagemaker-userprofile-jupyterlabappsettings-lifecycleconfigarns): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings-properties"></a>
 
-`AppLifecycleManagement`
-
+`AppLifecycleManagement`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-applifecyclemanagement"></a>
 Indicates whether idle shutdown is activated for JupyterLab applications.
+*Required*: No
+*Type*: [AppLifecycleManagement](aws-properties-sagemaker-userprofile-applifecyclemanagement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`BuiltInLifecycleConfigArn`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-builtinlifecycleconfigarn"></a>
+The lifecycle configuration that runs before the default lifecycle configuration. It can override changes made in the default lifecycle configuration.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:studio-lifecycle-config/.*|None)$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AppLifecycleManagement](aws-properties-sagemaker-userprofile-applifecyclemanagement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BuiltInLifecycleConfigArn`
-
-The lifecycle configuration that runs before the default lifecycle configuration. It can
-override changes made in the default lifecycle configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:studio-lifecycle-config/.*|None)$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeRepositories`
-
+`CodeRepositories`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-coderepositories"></a>
 A list of Git repositories that SageMaker automatically displays to users for cloning in the JupyterLab application.
+*Required*: No
+*Type*: Array of [CodeRepository](aws-properties-sagemaker-userprofile-coderepository.md)
+*Minimum*: `0`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [CodeRepository](aws-properties-sagemaker-userprofile-coderepository.md)
-
-_Minimum_: `0`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomImages`
-
+`CustomImages`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-customimages"></a>
 A list of custom SageMaker images that are configured to run as a JupyterLab app.
+*Required*: No
+*Type*: Array of [CustomImage](aws-properties-sagemaker-userprofile-customimage.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DefaultResourceSpec`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-defaultresourcespec"></a>
+The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the JupyterLab app.
+*Required*: No
+*Type*: [ResourceSpec](aws-properties-sagemaker-userprofile-resourcespec.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CustomImage](aws-properties-sagemaker-userprofile-customimage.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultResourceSpec`
-
-The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the
-JupyterLab app.
-
-_Required_: No
-
-_Type_: [ResourceSpec](aws-properties-sagemaker-userprofile-resourcespec.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LifecycleConfigArns`
-
+`LifecycleConfigArns`  <a name="cfn-sagemaker-userprofile-jupyterlabappsettings-lifecycleconfigarns"></a>
 The Amazon Resource Name (ARN) of the lifecycle configurations attached to the user profile or domain. To remove a lifecycle config, you must set `LifecycleConfigArns` to an empty list.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IdleSettings
-
-JupyterServerAppSettings
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

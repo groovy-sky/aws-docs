@@ -2,148 +2,112 @@
 title: "AWS::CloudFormation::Macro"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::Macro
+<a name="aws-resource-cloudformation-macro"></a>
 
-The `AWS::CloudFormation::Macro` resource is a CloudFormation
-resource type that creates a CloudFormation macro to perform custom processing
-on CloudFormation templates.
+The `AWS::CloudFormation::Macro` resource is a CloudFormation resource type that creates a CloudFormation macro to perform custom processing on CloudFormation templates.
 
-For more information, see [Perform custom\
-processing on CloudFormation templates with template macros](../userguide/template-macros.md) in the
-_CloudFormation User Guide_.
+For more information, see [Perform custom processing on CloudFormation templates with template macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html) in the *CloudFormation User Guide*.
 
 ## Syntax
+<a name="aws-resource-cloudformation-macro-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudformation-macro-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFormation::Macro",
   "Properties" : {
-      "Description" : String,
-      "FunctionName" : String,
-      "LogGroupName" : String,
-      "LogRoleARN" : String,
-      "Name" : String
+      "[Description](#cfn-cloudformation-macro-description)" : {{String}},
+      "[FunctionName](#cfn-cloudformation-macro-functionname)" : {{String}},
+      "[LogGroupName](#cfn-cloudformation-macro-loggroupname)" : {{String}},
+      "[LogRoleARN](#cfn-cloudformation-macro-logrolearn)" : {{String}},
+      "[Name](#cfn-cloudformation-macro-name)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudformation-macro-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFormation::Macro
 Properties:
-  Description: String
-  FunctionName: String
-  LogGroupName: String
-  LogRoleARN: String
-  Name: String
-
+  [Description](#cfn-cloudformation-macro-description): {{String}}
+  [FunctionName](#cfn-cloudformation-macro-functionname): {{String}}
+  [LogGroupName](#cfn-cloudformation-macro-loggroupname): {{String}}
+  [LogRoleARN](#cfn-cloudformation-macro-logrolearn): {{String}}
+  [Name](#cfn-cloudformation-macro-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudformation-macro-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-cloudformation-macro-description"></a>
 A description of the macro.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FunctionName`  <a name="cfn-cloudformation-macro-functionname"></a>
+The Amazon Resource Name (ARN) of the underlying Lambda function that you want CloudFormation to invoke when the macro is run.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`LogGroupName`  <a name="cfn-cloudformation-macro-loggroupname"></a>
+The CloudWatch Logs group to which CloudFormation sends error logging information when invoking the macro's underlying Lambda function.
+This will be an existing CloudWatch Logs LogGroup. Neither CloudFormation or Lambda will create the group.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`LogRoleARN`  <a name="cfn-cloudformation-macro-logrolearn"></a>
+The ARN of the role CloudFormation should assume when sending log entries to CloudWatch Logs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`FunctionName`
-
-The Amazon Resource Name (ARN) of the underlying Lambda function that you
-want CloudFormation to invoke when the macro is run.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogGroupName`
-
-The CloudWatch Logs group to which CloudFormation sends error logging
-information when invoking the macro's underlying Lambda function.
-
-This will be an existing CloudWatch Logs LogGroup. Neither CloudFormation
-or Lambda will create the group.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogRoleARN`
-
-The ARN of the role CloudFormation should assume when sending log entries to
-CloudWatch Logs.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the macro. The name of the macro must be unique across all macros in the
-account.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Name`  <a name="cfn-cloudformation-macro-name"></a>
+The name of the macro. The name of the macro must be unique across all macros in the account.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-cloudformation-macro-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudformation-macro-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "myMacro" }`
+ `{ "Ref": "myMacro" }`
 
-For the macro `myMacro`, `Ref` returns the name of the
-macro.
+For the macro `myMacro`, `Ref` returns the name of the macro.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudformation-macro-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-cloudformation-macro-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 Returns a unique identifier for the resource.
 
 ## See also
-
-- [Perform\
-custom processing on CloudFormation templates with template\
-macros](../userguide/template-macros.md) in the _CloudFormation User_
-_Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetFiltersItems
-
-AWS::CloudFormation::ModuleDefaultVersion
+<a name="aws-resource-cloudformation-macro--seealso"></a>
++ [Perform custom processing on CloudFormation templates with template macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html) in the *CloudFormation User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

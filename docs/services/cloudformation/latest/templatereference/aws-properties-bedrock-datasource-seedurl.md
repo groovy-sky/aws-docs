@@ -2,55 +2,42 @@
 title: "AWS::Bedrock::DataSource SeedUrl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource SeedUrl
+<a name="aws-properties-bedrock-datasource-seedurl"></a>
 
-The seed or starting point URL.
-You should be authorized to crawl the URL.
+The seed or starting point URL. You should be authorized to crawl the URL.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-seedurl-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-seedurl-syntax.json"></a>
 
-```json
-
+```
 {
-  "Url" : String
+  "[Url](#cfn-bedrock-datasource-seedurl-url)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-seedurl-syntax.yaml"></a>
 
-```yaml
-
-  Url: String
-
+```
+  [Url](#cfn-bedrock-datasource-seedurl-url): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-seedurl-properties"></a>
 
-`Url`
-
+`Url`  <a name="cfn-bedrock-datasource-seedurl-url"></a>
 A seed or starting point URL.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^https?://[A-Za-z0-9][^\s]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SalesforceSourceConfiguration
-
-SemanticChunkingConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^https?://[A-Za-z0-9][^\s]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

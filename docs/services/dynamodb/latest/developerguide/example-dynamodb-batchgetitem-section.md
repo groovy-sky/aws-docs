@@ -1,23 +1,19 @@
 ---
-title: "Use BatchGetItem with an AWS SDK or CLI"
+title: "Use `BatchGetItem` with an AWS SDK or CLI"
 ---
 
 # Use `BatchGetItem` with an AWS SDK or CLI
+<a name="example_dynamodb_BatchGetItem_section"></a>
 
 The following code examples show how to use `BatchGetItem`.
 
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb).
-
-```csharp
-
+```
 using System;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2;
@@ -156,25 +152,16 @@ namespace LowLevelBatchGet
         }
     }
 }
-
 ```
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchGetItem) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchGetItem)
-in _AWS SDK for .NET API Reference_.
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
-```bash
-
+```
 #############################################################################
 # function dynamodb_batch_get_item
 #
@@ -239,13 +226,10 @@ function dynamodb_batch_get_item() {
 
   return 0
 }
-
 ```
-
 The utility functions used in this example.
 
-```bash
-
+```
 ###############################################################################
 # function errecho
 #
@@ -290,25 +274,16 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchGetItem) in *AWS CLI Command Reference*.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchGetItem)
-in _AWS CLI Command Reference_.
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
 //! Batch get items from different Amazon DynamoDB tables.
 /*!
   \sa batchGetItem()
@@ -420,33 +395,24 @@ bool AwsDoc::DynamoDB::batchGetItem(
 
     return result;
 }
-
 ```
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchGetItem) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchGetItem)
-in _AWS SDK for C++ API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **To retrieve multiple items from a table**
-
 The following `batch-get-items` example reads multiple items from the `MusicCollection` table using a batch of three `GetItem` requests, and requests the number of read capacity units consumed by the operation. The command returns only the `AlbumTitle` attribute.
 
-```nohighlight
-
-aws dynamodb batch-get-item \
-    --request-items file://request-items.json \
-    --return-consumed-capacity TOTAL
-
 ```
-
+aws dynamodb batch-get-item \
+    --request-items {{file://request-items.json}} \
+    --return-consumed-capacity {{TOTAL}}
+```
 Contents of `request-items.json`:
 
-```nohighlight
-
+```
 {
     "MusicCollection": {
         "Keys": [
@@ -467,11 +433,9 @@ Contents of `request-items.json`:
     }
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Responses": {
         "MusicCollection": [
@@ -501,27 +465,17 @@ Output:
     ]
 }
 ```
+For more information, see [Batch Operations](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.BatchOperations) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [BatchGetItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/batch-get-item.html) in *AWS CLI Command Reference*.
 
-For more information, see [Batch Operations](workingwithitems.md#WorkingWithItems.BatchOperations) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[BatchGetItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/batch-get-item.html)
-in _AWS CLI Command Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Shows how to get batch items using the service client.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -594,13 +548,10 @@ public class BatchReadItems {
         }
     }
 }
-
 ```
-
 Shows how to get batch items using the service client and a paginator.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -660,27 +611,17 @@ public class BatchGetItemsPaginator {
             });
     }
 }
-
 ```
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchGetItem) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchGetItem)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
+This example uses the document client to simplify working with items in DynamoDB. For API details see [BatchGet](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/BatchGetCommand/).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-This example uses the document client to simplify working with items in DynamoDB. For API details see [BatchGet](../../../../reference/awsjavascriptsdk/v3/latest/package/aws-sdk-lib-dynamodb/class/batchgetcommand.md).
-
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { BatchGetCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
@@ -712,25 +653,14 @@ export const main = async () => {
   console.log(response.Responses.Books);
   return response;
 };
-
 ```
-
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/dynamodb-example-table-read-write-batch.md#dynamodb-example-table-read-write-batch-reading).
-
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchGetItemCommand)
-in _AWS SDK for JavaScript API Reference_.
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-example-table-read-write-batch.html#dynamodb-example-table-read-write-batch-reading).
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchGetItemCommand) in *AWS SDK for JavaScript API Reference*.
 
 **SDK for JavaScript (v2)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb).
-
-```javascript
-
+```
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -761,23 +691,17 @@ ddb.batchGetItem(params, function (err, data) {
     });
   }
 });
-
 ```
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-example-table-read-write-batch.html#dynamodb-example-table-read-write-batch-reading).
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/BatchGetItem) in *AWS SDK for JavaScript API Reference*.
 
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-table-read-write-batch.md#dynamodb-example-table-read-write-batch-reading).
-
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/BatchGetItem)
-in _AWS SDK for JavaScript API Reference_.
-
-PowerShell
+------
+#### [ PowerShell ]
 
 **Tools for PowerShell V4**
-
 **Example 1: Gets the item with the SongTitle "Somewhere Down The Road" from the DynamoDB tables 'Music' and 'Songs'.**
 
-```powershell
-
+```
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -795,13 +719,10 @@ $requestItem = @{
 
 $batchItems = Get-DDBBatchItem -RequestItem $requestItem
 $batchItems.GetEnumerator() | ForEach-Object {$PSItem.Value} | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Artist                         No One You Know
@@ -817,17 +738,12 @@ CriticRating                   10
 Genre                          Country
 Price                          1.94
 ```
-
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/powershell/v4/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
 
 **Tools for PowerShell V5**
-
 **Example 1: Gets the item with the SongTitle "Somewhere Down The Road" from the DynamoDB tables 'Music' and 'Songs'.**
 
-```powershell
-
+```
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -845,13 +761,10 @@ $requestItem = @{
 
 $batchItems = Get-DDBBatchItem -RequestItem $requestItem
 $batchItems.GetEnumerator() | ForEach-Object {$PSItem.Value} | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Artist                         No One You Know
@@ -867,23 +780,15 @@ CriticRating                   10
 Genre                          Country
 Price                          1.94
 ```
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/powershell/v5/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
-```python
-
+```
 import decimal
 import json
 import logging
@@ -940,25 +845,16 @@ def do_batch_get(batch_keys):
             break
 
     return retrieved
-
 ```
++  For API details, see [BatchGetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchGetItem) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[BatchGetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchGetItem)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
-```swift
-
+```
 import AWSDynamoDB
 
     /// Gets an array of `Movie` objects describing all the movies in the
@@ -1045,21 +941,11 @@ import AWSDynamoDB
             throw error
         }
     }
-
 ```
++  For API details, see [BatchGetItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/batchgetitem(input:)) in *AWS SDK for Swift API reference*.
 
-- For API details, see
-[BatchGetItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/batchgetitem(input:))
-in _AWS SDK for Swift API reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BatchExecuteStatement
-
-BatchWriteItem
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

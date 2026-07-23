@@ -2,93 +2,65 @@
 title: "AWS::Kendra::Index Search"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::Index Search
+<a name="aws-properties-kendra-index-search"></a>
 
 Provides information about how a custom index field is used during a search.
 
 ## Syntax
+<a name="aws-properties-kendra-index-search-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-index-search-syntax.json"></a>
 
-```json
-
+```
 {
-  "Displayable" : Boolean,
-  "Facetable" : Boolean,
-  "Searchable" : Boolean,
-  "Sortable" : Boolean
+  "[Displayable](#cfn-kendra-index-search-displayable)" : {{Boolean}},
+  "[Facetable](#cfn-kendra-index-search-facetable)" : {{Boolean}},
+  "[Searchable](#cfn-kendra-index-search-searchable)" : {{Boolean}},
+  "[Sortable](#cfn-kendra-index-search-sortable)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-index-search-syntax.yaml"></a>
 
-```yaml
-
-  Displayable: Boolean
-  Facetable: Boolean
-  Searchable: Boolean
-  Sortable: Boolean
-
+```
+  [Displayable](#cfn-kendra-index-search-displayable): {{Boolean}}
+  [Facetable](#cfn-kendra-index-search-facetable): {{Boolean}}
+  [Searchable](#cfn-kendra-index-search-searchable): {{Boolean}}
+  [Sortable](#cfn-kendra-index-search-sortable): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-index-search-properties"></a>
 
-`Displayable`
+`Displayable`  <a name="cfn-kendra-index-search-displayable"></a>
+Determines whether the field is returned in the query response. The default is `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines whether the field is returned in the query response. The default is
-`true`.
+`Facetable`  <a name="cfn-kendra-index-search-facetable"></a>
+Indicates that the field can be used to create search facets, a count of results for each value in the field. The default is `false` .
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Searchable`  <a name="cfn-kendra-index-search-searchable"></a>
+Determines whether the field is used in the search. If the `Searchable` field is `true`, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is `true` for string fields and `false` for number and date fields.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Facetable`
-
-Indicates that the field can be used to create search facets, a count of results for
-each value in the field. The default is `false` .
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Searchable`
-
-Determines whether the field is used in the search. If the `Searchable`
-field is `true`, you can use relevance tuning to manually tune how Amazon Kendra weights the field in the search. The default is `true` for
-string fields and `false` for number and date fields.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sortable`
-
-Determines whether the field can be used to sort the results of a query. The default
-is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Relevance
-
-ServerSideEncryptionConfiguration
+`Sortable`  <a name="cfn-kendra-index-search-sortable"></a>
+Determines whether the field can be used to sort the results of a query. The default is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

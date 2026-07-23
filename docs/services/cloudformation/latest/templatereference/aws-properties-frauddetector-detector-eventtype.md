@@ -2,204 +2,135 @@
 title: "AWS::FraudDetector::Detector EventType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FraudDetector::Detector EventType
+<a name="aws-properties-frauddetector-detector-eventtype"></a>
 
 The event type details.
 
 ## Syntax
+<a name="aws-properties-frauddetector-detector-eventtype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-frauddetector-detector-eventtype-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arn" : String,
-  "CreatedTime" : String,
-  "Description" : String,
-  "EntityTypes" : [ EntityType, ... ],
-  "EventVariables" : [ EventVariable, ... ],
-  "Inline" : Boolean,
-  "Labels" : [ Label, ... ],
-  "LastUpdatedTime" : String,
-  "Name" : String,
-  "Tags" : [ Tag, ... ]
+  "[Arn](#cfn-frauddetector-detector-eventtype-arn)" : {{String}},
+  "[CreatedTime](#cfn-frauddetector-detector-eventtype-createdtime)" : {{String}},
+  "[Description](#cfn-frauddetector-detector-eventtype-description)" : {{String}},
+  "[EntityTypes](#cfn-frauddetector-detector-eventtype-entitytypes)" : {{[ EntityType, ... ]}},
+  "[EventVariables](#cfn-frauddetector-detector-eventtype-eventvariables)" : {{[ EventVariable, ... ]}},
+  "[Inline](#cfn-frauddetector-detector-eventtype-inline)" : {{Boolean}},
+  "[Labels](#cfn-frauddetector-detector-eventtype-labels)" : {{[ Label, ... ]}},
+  "[LastUpdatedTime](#cfn-frauddetector-detector-eventtype-lastupdatedtime)" : {{String}},
+  "[Name](#cfn-frauddetector-detector-eventtype-name)" : {{String}},
+  "[Tags](#cfn-frauddetector-detector-eventtype-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-frauddetector-detector-eventtype-syntax.yaml"></a>
 
-```yaml
-
-  Arn: String
-  CreatedTime: String
-  Description: String
-  EntityTypes:
-    - EntityType
-  EventVariables:
-    - EventVariable
-  Inline: Boolean
-  Labels:
-    - Label
-  LastUpdatedTime: String
-  Name: String
-  Tags:
-    - Tag
-
+```
+  [Arn](#cfn-frauddetector-detector-eventtype-arn): {{String}}
+  [CreatedTime](#cfn-frauddetector-detector-eventtype-createdtime): {{String}}
+  [Description](#cfn-frauddetector-detector-eventtype-description): {{String}}
+  [EntityTypes](#cfn-frauddetector-detector-eventtype-entitytypes): {{
+    - EntityType}}
+  [EventVariables](#cfn-frauddetector-detector-eventtype-eventvariables): {{
+    - EventVariable}}
+  [Inline](#cfn-frauddetector-detector-eventtype-inline): {{Boolean}}
+  [Labels](#cfn-frauddetector-detector-eventtype-labels): {{
+    - Label}}
+  [LastUpdatedTime](#cfn-frauddetector-detector-eventtype-lastupdatedtime): {{String}}
+  [Name](#cfn-frauddetector-detector-eventtype-name): {{String}}
+  [Tags](#cfn-frauddetector-detector-eventtype-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-frauddetector-detector-eventtype-properties"></a>
 
-`Arn`
-
+`Arn`  <a name="cfn-frauddetector-detector-eventtype-arn"></a>
 The entity type ARN.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn\:aws[a-z-]{0,15}\:frauddetector\:[a-z0-9-]{3,20}\:[0-9]{12}\:[^\s]{2,128}$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn\:aws[a-z-]{0,15}\:frauddetector\:[a-z0-9-]{3,20}\:[0-9]{12}\:[^\s]{2,128}$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CreatedTime`
-
+`CreatedTime`  <a name="cfn-frauddetector-detector-eventtype-createdtime"></a>
 Timestamp of when the event type was created.
+*Required*: No
+*Type*: String
+*Minimum*: `11`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `11`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-frauddetector-detector-eventtype-description"></a>
 The event type description.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntityTypes`
-
+`EntityTypes`  <a name="cfn-frauddetector-detector-eventtype-entitytypes"></a>
 The event type entity types.
+*Required*: No
+*Type*: Array of [EntityType](aws-properties-frauddetector-detector-entitytype.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EntityType](aws-properties-frauddetector-detector-entitytype.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventVariables`
-
+`EventVariables`  <a name="cfn-frauddetector-detector-eventtype-eventvariables"></a>
 The event type event variables.
+*Required*: No
+*Type*: Array of [EventVariable](aws-properties-frauddetector-detector-eventvariable.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Inline`  <a name="cfn-frauddetector-detector-eventtype-inline"></a>
+Indicates whether the resource is defined within this CloudFormation template and impacts the create, update, and delete behavior of the stack. If the value is `true`, CloudFormation will create/update/delete the resource when creating/updating/deleting the stack. If the value is `false`, CloudFormation will validate that the object exists and then use it within the resource without making changes to the object.
+For example, when creating `AWS::FraudDetector::Detector` you must define at least two variables. You can set `Inline=true` for these variables and CloudFormation will create/update/delete the Variables as part of stack operations. However, if you set `Inline=false`, CloudFormation will associate the variables to your detector but not execute any changes to the variables.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [EventVariable](aws-properties-frauddetector-detector-eventvariable.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Inline`
-
-Indicates whether the resource is defined within this CloudFormation template and impacts the create, update, and delete behavior of the stack. If the value is `true`,
-CloudFormation will create/update/delete the resource when creating/updating/deleting the stack. If the value is `false`, CloudFormation will validate that the object exists and
-then use it within the resource without making changes to the object.
-
-For example, when creating `AWS::FraudDetector::Detector` you must define at least two variables. You can set `Inline=true` for these variables and CloudFormation will
-create/update/delete the Variables as part of stack operations. However, if you set `Inline=false`, CloudFormation will associate the variables to your detector but not execute any
-changes to the variables.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Labels`
-
+`Labels`  <a name="cfn-frauddetector-detector-eventtype-labels"></a>
 The event type labels.
+*Required*: No
+*Type*: Array of [Label](aws-properties-frauddetector-detector-label.md)
+*Minimum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Label](aws-properties-frauddetector-detector-label.md)
-
-_Minimum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="cfn-frauddetector-detector-eventtype-lastupdatedtime"></a>
 Timestamp of when the event type was last updated.
+*Required*: No
+*Type*: String
+*Minimum*: `11`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `11`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-frauddetector-detector-eventtype-name"></a>
 The event type name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-z_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-frauddetector-detector-eventtype-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-frauddetector-detector-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EntityType
-
-EventVariable
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-frauddetector-detector-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

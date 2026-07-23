@@ -2,66 +2,50 @@
 title: "AWS::DataZone::PolicyGrant UserPolicyGrantPrincipal"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::PolicyGrant UserPolicyGrantPrincipal
+<a name="aws-properties-datazone-policygrant-userpolicygrantprincipal"></a>
 
 The user policy grant principal.
 
 ## Syntax
+<a name="aws-properties-datazone-policygrant-userpolicygrantprincipal-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-policygrant-userpolicygrantprincipal-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllUsersGrantFilter" : Json,
-  "UserIdentifier" : String
+  "[AllUsersGrantFilter](#cfn-datazone-policygrant-userpolicygrantprincipal-allusersgrantfilter)" : {{Json}},
+  "[UserIdentifier](#cfn-datazone-policygrant-userpolicygrantprincipal-useridentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-policygrant-userpolicygrantprincipal-syntax.yaml"></a>
 
-```yaml
-
-  AllUsersGrantFilter: Json
-  UserIdentifier: String
-
+```
+  [AllUsersGrantFilter](#cfn-datazone-policygrant-userpolicygrantprincipal-allusersgrantfilter): {{Json}}
+  [UserIdentifier](#cfn-datazone-policygrant-userpolicygrantprincipal-useridentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-policygrant-userpolicygrantprincipal-properties"></a>
 
-`AllUsersGrantFilter`
-
+`AllUsersGrantFilter`  <a name="cfn-datazone-policygrant-userpolicygrantprincipal-allusersgrantfilter"></a>
 The all users grant filter of the user policy grant principal.
+*Required*: No
+*Type*: Json
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UserIdentifier`
-
+`UserIdentifier`  <a name="cfn-datazone-policygrant-userpolicygrantprincipal-useridentifier"></a>
 The user ID of the user policy grant principal.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(^([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$|^[a-zA-Z_0-9+=,.@-]+$|^arn:aws[^:]*:iam::\d{12}:.+$)`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProjectPolicyGrantPrincipal
-
-AWS::DataZone::Project
+*Required*: No
+*Type*: String
+*Pattern*: `(^([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$|^[a-zA-Z_0-9+=,.@-]+$|^arn:aws[^:]*:iam::\d{12}:.+$)`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

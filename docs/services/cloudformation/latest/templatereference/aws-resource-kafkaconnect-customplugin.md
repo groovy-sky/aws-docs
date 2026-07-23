@@ -2,129 +2,102 @@
 title: "AWS::KafkaConnect::CustomPlugin"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::CustomPlugin
+<a name="aws-resource-kafkaconnect-customplugin"></a>
 
 Creates a custom plugin using the specified properties.
 
 ## Syntax
+<a name="aws-resource-kafkaconnect-customplugin-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kafkaconnect-customplugin-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::KafkaConnect::CustomPlugin",
   "Properties" : {
-      "ContentType" : String,
-      "Description" : String,
-      "Location" : CustomPluginLocation,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[ContentType](#cfn-kafkaconnect-customplugin-contenttype)" : {{String}},
+      "[Description](#cfn-kafkaconnect-customplugin-description)" : {{String}},
+      "[Location](#cfn-kafkaconnect-customplugin-location)" : {{CustomPluginLocation}},
+      "[Name](#cfn-kafkaconnect-customplugin-name)" : {{String}},
+      "[Tags](#cfn-kafkaconnect-customplugin-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kafkaconnect-customplugin-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::KafkaConnect::CustomPlugin
 Properties:
-  ContentType: String
-  Description: String
-  Location:
-    CustomPluginLocation
-  Name: String
-  Tags:
-    - Tag
-
+  [ContentType](#cfn-kafkaconnect-customplugin-contenttype): {{String}}
+  [Description](#cfn-kafkaconnect-customplugin-description): {{String}}
+  [Location](#cfn-kafkaconnect-customplugin-location): {{
+    CustomPluginLocation}}
+  [Name](#cfn-kafkaconnect-customplugin-name): {{String}}
+  [Tags](#cfn-kafkaconnect-customplugin-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-kafkaconnect-customplugin-properties"></a>
 
-`ContentType`
-
+`ContentType`  <a name="cfn-kafkaconnect-customplugin-contenttype"></a>
 The format of the plugin file.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `JAR | ZIP`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `JAR | ZIP`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-kafkaconnect-customplugin-description"></a>
 The description of the custom plugin.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Location`
-
+`Location`  <a name="cfn-kafkaconnect-customplugin-location"></a>
 Information about the location of the custom plugin.
+*Required*: Yes
+*Type*: [CustomPluginLocation](aws-properties-kafkaconnect-customplugin-custompluginlocation.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [CustomPluginLocation](aws-properties-kafkaconnect-customplugin-custompluginlocation.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-kafkaconnect-customplugin-name"></a>
 The name of the custom plugin.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-kafkaconnect-customplugin-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kafkaconnect-customplugin-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kafkaconnect-customplugin-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-kafkaconnect-customplugin-return-values"></a>
 
 ### Ref
+<a name="aws-resource-kafkaconnect-customplugin-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-kafkaconnect-customplugin-return-values-fn--getatt"></a>
 
-`CustomPluginArn`
+####
+<a name="aws-resource-kafkaconnect-customplugin-return-values-fn--getatt-fn--getatt"></a>
 
+`CustomPluginArn`  <a name="CustomPluginArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the custom plugin.
 
-`Revision`
-
+`Revision`  <a name="Revision-fn::getatt"></a>
 The revision of the custom plugin.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkerLogDelivery
-
-CustomPluginFileDescription
 
 All content copied from https://docs.aws.amazon.com/.

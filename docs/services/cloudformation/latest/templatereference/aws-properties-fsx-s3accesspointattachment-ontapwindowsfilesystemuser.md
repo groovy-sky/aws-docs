@@ -2,58 +2,44 @@
 title: "AWS::FSx::S3AccessPointAttachment OntapWindowsFileSystemUser"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::S3AccessPointAttachment OntapWindowsFileSystemUser
+<a name="aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser"></a>
 
 The FSx for ONTAP Windows file system user that is used for authorizing all file access requests that are made using the S3 access point.
 
 ## Syntax
+<a name="aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-fsx-s3accesspointattachment-ontapwindowsfilesystemuser-name"></a>
 The name of the Windows user. The name can be up to 256 characters long and supports Active Directory users.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^\u0000\u0085\u2028\u2029\r\n]{1,256}$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OntapUnixFileSystemUser
-
-OpenZFSFileSystemIdentity
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^\u0000\u0085\u2028\u2029\r\n]{1,256}$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

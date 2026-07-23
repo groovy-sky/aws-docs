@@ -2,122 +2,95 @@
 title: "AWS::CodeDeploy::Application"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::Application
+<a name="aws-resource-codedeploy-application"></a>
 
-The `AWS::CodeDeploy::Application` resource creates an AWS CodeDeploy
-application. In CodeDeploy, an application is a name that functions as a container
-to ensure that the correct combination of revision, deployment configuration, and deployment
-group are referenced during a deployment. You can use the
-`AWS::CodeDeploy::DeploymentGroup` resource to associate the application with a
-CodeDeploy deployment group. For more information, see [CodeDeploy\
-Deployments](../../../codedeploy/latest/userguide/deployment-steps.md) in the _AWS CodeDeploy User Guide_.
+The `AWS::CodeDeploy::Application` resource creates an AWS CodeDeploy application. In CodeDeploy, an application is a name that functions as a container to ensure that the correct combination of revision, deployment configuration, and deployment group are referenced during a deployment. You can use the `AWS::CodeDeploy::DeploymentGroup` resource to associate the application with a CodeDeploy deployment group. For more information, see [CodeDeploy Deployments](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html) in the *AWS CodeDeploy User Guide*.
 
 ## Syntax
+<a name="aws-resource-codedeploy-application-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codedeploy-application-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeDeploy::Application",
   "Properties" : {
-      "ApplicationName" : String,
-      "ComputePlatform" : String,
-      "Tags" : [ Tag, ... ]
+      "[ApplicationName](#cfn-codedeploy-application-applicationname)" : {{String}},
+      "[ComputePlatform](#cfn-codedeploy-application-computeplatform)" : {{String}},
+      "[Tags](#cfn-codedeploy-application-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codedeploy-application-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeDeploy::Application
 Properties:
-  ApplicationName: String
-  ComputePlatform: String
-  Tags:
-    - Tag
-
+  [ApplicationName](#cfn-codedeploy-application-applicationname): {{String}}
+  [ComputePlatform](#cfn-codedeploy-application-computeplatform): {{String}}
+  [Tags](#cfn-codedeploy-application-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-codedeploy-application-properties"></a>
 
-`ApplicationName`
+`ApplicationName`  <a name="cfn-codedeploy-application-applicationname"></a>
+ A name for the application. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the application name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
+ Updates to `ApplicationName` are not supported.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A name for the application. If you don't specify a name, CloudFormation generates a
-unique physical ID and uses that ID for the application name. For more information, see [Name\
-Type](../userguide/aws-properties-name.md).
-
-###### Note
-
-Updates to `ApplicationName` are not supported.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ComputePlatform`
-
+`ComputePlatform`  <a name="cfn-codedeploy-application-computeplatform"></a>
 The compute platform that CodeDeploy deploys the application to.
+*Required*: No
+*Type*: String
+*Allowed values*: `Server | Lambda | ECS | Kubernetes`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Server | Lambda | ECS | Kubernetes`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The metadata that you apply to CodeDeploy applications to help you organize and
-categorize them. Each tag consists of a key and an optional value, both of which you
-define.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codedeploy-application-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-codedeploy-application-tags"></a>
+ The metadata that you apply to CodeDeploy applications to help you organize and categorize them. Each tag consists of a key and an optional value, both of which you define.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codedeploy-application-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codedeploy-application-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codedeploy-application-return-values-ref"></a>
 
-When you pass the logical ID of an `AWS::CodeDeploy::Application` resource to
-the intrinsic `Ref` function, the function returns the application name, such as
-`myapplication-a123d0d1`.
+When you pass the logical ID of an `AWS::CodeDeploy::Application` resource to the intrinsic `Ref` function, the function returns the application name, such as `myapplication-a123d0d1`.
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-codedeploy-application--examples"></a>
 
-- [Specify an application with a Lambda compute platform](#aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform)
-
-- [Specify an application with a Server compute platform](#aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform)
+**Topics**
++ [Specify an application with a Lambda compute platform](#aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform)
++ [Specify an application with a Server compute platform](#aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform)
 
 ### Specify an application with a Lambda compute platform
+<a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform"></a>
 
 The following example specifies a CodeDeploy application with a Lambda compute platform.
 
 #### JSON
+<a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform--json"></a>
 
-```json
-
+```
 "CodeDeployApplication": {
     "Type": "AWS::CodeDeploy::Application",
     "Properties": {
@@ -127,9 +100,9 @@ The following example specifies a CodeDeploy application with a Lambda compute p
 ```
 
 #### YAML
+<a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform--yaml"></a>
 
-```yaml
-
+```
 CodeDeployApplication:
   Type: AWS::CodeDeploy::Application
   Properties:
@@ -137,14 +110,14 @@ CodeDeployApplication:
 ```
 
 ### Specify an application with a Server compute platform
+<a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform"></a>
 
-The following example creates a CodeDeploy application with a
-`Server` compute platform.
+The following example creates a CodeDeploy application with a `Server` compute platform.
 
 #### JSON
+<a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform--json"></a>
 
-```json
-
+```
 "CodeDeployApplication": {
     "Type": "AWS::CodeDeploy::Application",
     "Properties": {
@@ -154,9 +127,9 @@ The following example creates a CodeDeploy application with a
 ```
 
 #### YAML
+<a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform--yaml"></a>
 
-```yaml
-
+```
 CodeDeployApplication:
   Type: AWS::CodeDeploy::Application
   Properties:
@@ -164,14 +137,7 @@ CodeDeployApplication:
 ```
 
 ## See also
-
-- For configuring your deployment and specifying your application revisions, see
-[AWS::CodeDeploy::DeploymentConfig](../userguide/aws-resource-codedeploy-deploymentconfig.md) and [AWS::CodeDeploy::DeploymentGroup](../userguide/aws-resource-codedeploy-deploymentgroup.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS CodeDeploy
-
-Tag
+<a name="aws-resource-codedeploy-application--seealso"></a>
++ For configuring your deployment and specifying your application revisions, see [ AWS::CodeDeploy::DeploymentConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html) and [ AWS::CodeDeploy::DeploymentGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html).
 
 All content copied from https://docs.aws.amazon.com/.

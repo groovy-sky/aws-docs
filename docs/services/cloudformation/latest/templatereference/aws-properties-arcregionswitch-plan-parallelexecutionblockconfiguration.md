@@ -2,53 +2,42 @@
 title: "AWS::ARCRegionSwitch::Plan ParallelExecutionBlockConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan ParallelExecutionBlockConfiguration
+<a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration"></a>
 
 Configuration for steps that should be executed in parallel during a Region switch.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Steps" : [ Step, ... ]
+  "[Steps](#cfn-arcregionswitch-plan-parallelexecutionblockconfiguration-steps)" : {{[ Step, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Steps:
-    - Step
-
+```
+  [Steps](#cfn-arcregionswitch-plan-parallelexecutionblockconfiguration-steps): {{
+    - Step}}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration-properties"></a>
 
-`Steps`
-
+`Steps`  <a name="cfn-arcregionswitch-plan-parallelexecutionblockconfiguration-steps"></a>
 The steps for a parallel execution block.
-
-_Required_: Yes
-
-_Type_: Array of [Step](aws-properties-arcregionswitch-plan-step.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaUngraceful
-
-RdsCreateCrossRegionReplicaConfiguration
+*Required*: Yes
+*Type*: Array of [Step](aws-properties-arcregionswitch-plan-step.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,223 +2,155 @@
 title: "AWS::IAM::Policy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::Policy
+<a name="aws-resource-iam-policy"></a>
 
 Adds or updates an inline policy document that is embedded in the specified IAM group, user or role.
 
-An IAM user can also have a managed policy attached to it. For
-information about policies, see [Managed Policies and Inline\
-Policies](../../../iam/latest/userguide/policies-managed-vs-inline.md) in the _IAM User Guide_.
+An IAM user can also have a managed policy attached to it. For information about policies, see [Managed Policies and Inline Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html) in the *IAM User Guide*.
 
-The Groups, Roles, and Users properties are optional. However, you must specify at least
-one of these properties.
+The Groups, Roles, and Users properties are optional. However, you must specify at least one of these properties.
 
-For information about policy documents, see [Creating IAM\
-policies](../../../iam/latest/userguide/access-policies-create.md) in the _IAM User Guide_.
+For information about policy documents, see [Creating IAM policies ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*.
 
-For information about limits on the number of inline policies that you can embed in an
-identity, see [Limitations on IAM\
-Entities](../../../iam/latest/userguide/limitationsonentities.md) in the _IAM User Guide_.
+For information about limits on the number of inline policies that you can embed in an identity, see [Limitations on IAM Entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html) in the *IAM User Guide*.
 
-###### Important
-
-This resource does not support [drift detection](../userguide/using-cfn-stack-drift.md). The following inline policy resource types support drift detection:
-
-- [`AWS::IAM::GroupPolicy`](../userguide/aws-resource-iam-grouppolicy.md)
-
-- [`AWS::IAM::RolePolicy`](../userguide/aws-resource-iam-rolepolicy.md)
-
-- [`AWS::IAM::UserPolicy`](../userguide/aws-resource-iam-userpolicy.md)
+**Important**
+This resource does not support [ drift detection ](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html). The following inline policy resource types support drift detection:
+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-grouppolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-grouppolicy.html)
+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-rolepolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-rolepolicy.html)
+ [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-userpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-userpolicy.html)
 
 ## Syntax
+<a name="aws-resource-iam-policy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iam-policy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IAM::Policy",
   "Properties" : {
-      "Groups" : [ String, ... ],
-      "PolicyDocument" : Json,
-      "PolicyName" : String,
-      "Roles" : [ String, ... ],
-      "Users" : [ String, ... ]
+      "[Groups](#cfn-iam-policy-groups)" : {{[ String, ... ]}},
+      "[PolicyDocument](#cfn-iam-policy-policydocument)" : {{Json}},
+      "[PolicyName](#cfn-iam-policy-policyname)" : {{String}},
+      "[Roles](#cfn-iam-policy-roles)" : {{[ String, ... ]}},
+      "[Users](#cfn-iam-policy-users)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iam-policy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IAM::Policy
 Properties:
-  Groups:
-    - String
-  PolicyDocument: Json
-  PolicyName: String
-  Roles:
-    - String
-  Users:
-    - String
-
+  [Groups](#cfn-iam-policy-groups): {{
+    - String}}
+  [PolicyDocument](#cfn-iam-policy-policydocument): {{Json}}
+  [PolicyName](#cfn-iam-policy-policyname): {{String}}
+  [Roles](#cfn-iam-policy-roles): {{
+    - String}}
+  [Users](#cfn-iam-policy-users): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-iam-policy-properties"></a>
 
-`Groups`
-
+`Groups`  <a name="cfn-iam-policy-groups"></a>
 The name of the group to associate the policy with.
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-.
+*Required*: No
+*Type*: Array of String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyDocument`
-
+`PolicyDocument`  <a name="cfn-iam-policy-policydocument"></a>
 The policy document.
+You must provide policies in JSON format in IAM. However, for CloudFormation templates formatted in YAML, you can provide the policy in JSON or YAML format. CloudFormation always converts a YAML policy to JSON format before submitting it to IAM.
+The [regex pattern](http://wikipedia.org/wiki/regex) used to validate this parameter is a string of characters consisting of the following:
++ Any printable ASCII character ranging from the space character (`\u0020`) through the end of the ASCII character range
++ The printable characters in the Basic Latin and Latin-1 Supplement character set (through `\u00FF`)
++ The special characters tab (`\u0009`), line feed (`\u000A`), and carriage return (`\u000D`)
+*Required*: Yes
+*Type*: Json
+*Minimum*: `1`
+*Maximum*: `131072`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You must provide policies in JSON format in IAM. However, for CloudFormation
-templates formatted in YAML, you can provide the policy in JSON or YAML format. CloudFormation always converts a YAML policy to JSON format before submitting it to
-IAM.
-
-The [regex pattern](http://wikipedia.org/wiki/regex)
-used to validate this parameter is a string of characters consisting of the following:
-
-- Any printable ASCII
-character ranging from the space character ( `\u0020`) through the end of the ASCII character range
-
-- The printable characters in the Basic Latin and Latin-1 Supplement character set
-(through `\u00FF`)
-
-- The special characters tab ( `\u0009`), line feed ( `\u000A`), and
-carriage return ( `\u000D`)
-
-_Required_: Yes
-
-_Type_: Json
-
-_Minimum_: `1`
-
-_Maximum_: `131072`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyName`
-
+`PolicyName`  <a name="cfn-iam-policy-policyname"></a>
 The name of the policy document.
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Roles`
-
+`Roles`  <a name="cfn-iam-policy-roles"></a>
 The name of the role to associate the policy with.
+This parameter allows (per its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-
+If an external policy (such as `AWS::IAM::Policy` or `AWS::IAM::ManagedPolicy`) has a `Ref` to a role and if a resource (such as `AWS::ECS::Service`) also has a `Ref` to the same role, add a `DependsOn` attribute to the resource to make the resource depend on the external policy. This dependency ensures that the role's policy is available throughout the resource's lifecycle. For example, when you delete a stack with an `AWS::ECS::Service` resource, the `DependsOn` attribute ensures that CloudFormation deletes the `AWS::ECS::Service` resource before deleting its role's policy.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This parameter allows (per its [regex\
-pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters:
-\_+=,.@-
-
-###### Note
-
-If an external policy (such as `AWS::IAM::Policy` or
-`AWS::IAM::ManagedPolicy`) has a `Ref` to a role and if a
-resource (such as `AWS::ECS::Service`) also has a `Ref` to the
-same role, add a `DependsOn` attribute to the resource to make the resource
-depend on the external policy. This dependency ensures that the role's policy is
-available throughout the resource's lifecycle. For example, when you delete a stack with
-an `AWS::ECS::Service` resource, the `DependsOn` attribute ensures
-that CloudFormation deletes the `AWS::ECS::Service` resource before
-deleting its role's policy.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Users`
-
+`Users`  <a name="cfn-iam-policy-users"></a>
 The name of the user to associate the policy with.
-
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-
-
-_Required_: No
-
-_Type_: Array of String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-
+*Required*: No
+*Type*: Array of String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iam-policy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iam-policy-return-values-ref"></a>
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iam-policy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-iam-policy-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The stable and unique string identifying the policy.
-
-For more information about IDs, see [IAM identifiers](../../../iam/latest/userguide/using-identifiers.md) in the
-_IAM User Guide_.
+For more information about IDs, see [IAM identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) in the *IAM User Guide*.
 
 ## Examples
+<a name="aws-resource-iam-policy--examples"></a>
 
-- [Policy with policy group](#aws-resource-iam-policy--examples--Policy_with_policy_group)
-
-- [Policy with specified role](#aws-resource-iam-policy--examples--Policy_with_specified_role)
+**Topics**
++ [Policy with policy group](#aws-resource-iam-policy--examples--Policy_with_policy_group)
++ [Policy with specified role](#aws-resource-iam-policy--examples--Policy_with_specified_role)
 
 ### Policy with policy group
+<a name="aws-resource-iam-policy--examples--Policy_with_policy_group"></a>
 
 #### JSON
+<a name="aws-resource-iam-policy--examples--Policy_with_policy_group--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::IAM::Policy",
     "Properties": {
@@ -247,9 +179,9 @@ _IAM User Guide_.
 ```
 
 #### YAML
+<a name="aws-resource-iam-policy--examples--Policy_with_policy_group--yaml"></a>
 
-```yaml
-
+```
 Type: 'AWS::IAM::Policy'
 Properties:
   PolicyName: CFNUsers
@@ -267,11 +199,12 @@ Properties:
 ```
 
 ### Policy with specified role
+<a name="aws-resource-iam-policy--examples--Policy_with_specified_role"></a>
 
 #### JSON
+<a name="aws-resource-iam-policy--examples--Policy_with_specified_role--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::IAM::Policy",
     "Properties": {
@@ -296,9 +229,9 @@ Properties:
 ```
 
 #### YAML
+<a name="aws-resource-iam-policy--examples--Policy_with_specified_role--yaml"></a>
 
-```yaml
-
+```
 Type: 'AWS::IAM::Policy'
 Properties:
   PolicyName: root
@@ -313,26 +246,13 @@ Properties:
 ```
 
 ## See also
-
-- [AWS::IAM::GroupPolicy](../userguide/aws-resource-iam-grouppolicy.md)
-
-- [AWS::IAM::RolePolicy](../userguide/aws-resource-iam-rolepolicy.md)
-
-- [AWS::IAM::UserPolicy](../userguide/aws-resource-iam-userpolicy.md)
-
-- [PutGroupPolicy](../../../../reference/iam/latest/apireference/api-putgrouppolicy.md) in the _AWS Identity and Access Management API Reference_
-
-- [PutRolePolicy](../../../../reference/iam/latest/apireference/api-putrolepolicy.md) in the _AWS Identity and Access Management API Reference_
-
-- [PutUserPolicy](../../../../reference/iam/latest/apireference/api-putuserpolicy.md) in the _AWS Identity and Access Management API Reference_
-
-- [IAM\
-JSON policy reference](../../../iam/latest/userguide/reference-policies.md) in the _AWS Identity and Access Management User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::IAM::Role
+<a name="aws-resource-iam-policy--seealso"></a>
++  [AWS::IAM::GroupPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-grouppolicy.html)
++  [AWS::IAM::RolePolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-rolepolicy.html)
++  [AWS::IAM::UserPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-userpolicy.html)
++ [PutGroupPolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutGroupPolicy.html) in the *AWS Identity and Access Management API Reference*
++ [PutRolePolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePolicy.html) in the *AWS Identity and Access Management API Reference*
++ [PutUserPolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html) in the *AWS Identity and Access Management API Reference*
++ [IAM JSON policy reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) in the *AWS Identity and Access Management User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

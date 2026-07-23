@@ -2,128 +2,106 @@
 title: "AWS::IoTEvents::Input"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::Input
+<a name="aws-resource-iotevents-input"></a>
 
-The AWS::IoTEvents::Input resource creates an input. To monitor your devices and processes,
-they must have a way to get telemetry data into AWS IoT Events. This is done by sending messages
-as _inputs_ to AWS IoT Events. For more information, see
-[How to Use AWS IoT Events](../../../iotevents/latest/developerguide/how-to-use-iotevents.md) in the _AWS IoT Events Developer Guide_.
+The AWS::IoTEvents::Input resource creates an input. To monitor your devices and processes, they must have a way to get telemetry data into AWS IoT Events. This is done by sending messages as *inputs* to AWS IoT Events. For more information, see [ How to Use AWS IoT Events](https://docs.aws.amazon.com/iotevents/latest/developerguide/how-to-use-iotevents.html) in the *AWS IoT Events Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-iotevents-input-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotevents-input-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTEvents::Input",
   "Properties" : {
-      "InputDefinition" : InputDefinition,
-      "InputDescription" : String,
-      "InputName" : String,
-      "Tags" : [ Tag, ... ]
+      "[InputDefinition](#cfn-iotevents-input-inputdefinition)" : {{InputDefinition}},
+      "[InputDescription](#cfn-iotevents-input-inputdescription)" : {{String}},
+      "[InputName](#cfn-iotevents-input-inputname)" : {{String}},
+      "[Tags](#cfn-iotevents-input-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotevents-input-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTEvents::Input
 Properties:
-  InputDefinition:
-    InputDefinition
-  InputDescription: String
-  InputName: String
-  Tags:
-    - Tag
-
+  [InputDefinition](#cfn-iotevents-input-inputdefinition): {{
+    InputDefinition}}
+  [InputDescription](#cfn-iotevents-input-inputdescription): {{String}}
+  [InputName](#cfn-iotevents-input-inputname): {{String}}
+  [Tags](#cfn-iotevents-input-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotevents-input-properties"></a>
 
-`InputDefinition`
-
+`InputDefinition`  <a name="cfn-iotevents-input-inputdefinition"></a>
 The definition of the input.
+*Required*: Yes
+*Type*: [InputDefinition](aws-properties-iotevents-input-inputdefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [InputDefinition](aws-properties-iotevents-input-inputdefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputDescription`
-
+`InputDescription`  <a name="cfn-iotevents-input-inputdescription"></a>
 A brief description of the input.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputName`
-
+`InputName`  <a name="cfn-iotevents-input-inputname"></a>
 The name of the input.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9_]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9_]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-iotevents-input-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotevents-input-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotevents-input-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotevents-input-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotevents-input-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the input. For example:
 
-`{"Ref": "myInput"}`
+ `{"Ref": "myInput"}`
 
 For the AWS IoT Events input `myInput`, `Ref` returns the name of the input.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-iotevents-input--examples"></a>
 
 ### Input
+<a name="aws-resource-iotevents-input--examples--Input"></a>
 
 The following example creates an input.
 
 #### JSON
+<a name="aws-resource-iotevents-input--examples--Input--json"></a>
 
-```json
-
+```
 {
   "Description": "Input Template for CloudFormation",
   "Resources": {
@@ -149,9 +127,9 @@ The following example creates an input.
 ```
 
 #### YAML
+<a name="aws-resource-iotevents-input--examples--Input--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: "Input Template for CloudFormation"
 Resources:
@@ -166,20 +144,11 @@ Resources:
             JsonPath: "foo"
           -
             JsonPath: "bar"
-
 ```
 
 ## See also
-
-- [How to Use AWS IoT Events](../../../iotevents/latest/developerguide/how-to-use-iotevents.md) in the _AWS IoT Events Developer Guide_
-
-- [CreateInput](../../../../reference/iotevents/latest/apireference/api-createinput.md)
-in the _AWS IoT Events API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitionEvent
-
-Attribute
+<a name="aws-resource-iotevents-input--seealso"></a>
++ [ How to Use AWS IoT Events](https://docs.aws.amazon.com/iotevents/latest/developerguide/how-to-use-iotevents.html) in the *AWS IoT Events Developer Guide*
++ [CreateInput](https://docs.aws.amazon.com/iotevents/latest/apireference/API_CreateInput.html) in the *AWS IoT Events API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

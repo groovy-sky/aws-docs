@@ -2,65 +2,49 @@
 title: "AWS::KafkaConnect::Connector FirehoseLogDelivery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector FirehoseLogDelivery
+<a name="aws-properties-kafkaconnect-connector-firehoselogdelivery"></a>
 
 The settings for delivering logs to Amazon Kinesis Data Firehose.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-firehoselogdelivery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-firehoselogdelivery-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeliveryStream" : String,
-  "Enabled" : Boolean
+  "[DeliveryStream](#cfn-kafkaconnect-connector-firehoselogdelivery-deliverystream)" : {{String}},
+  "[Enabled](#cfn-kafkaconnect-connector-firehoselogdelivery-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-firehoselogdelivery-syntax.yaml"></a>
 
-```yaml
-
-  DeliveryStream: String
-  Enabled: Boolean
-
+```
+  [DeliveryStream](#cfn-kafkaconnect-connector-firehoselogdelivery-deliverystream): {{String}}
+  [Enabled](#cfn-kafkaconnect-connector-firehoselogdelivery-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-firehoselogdelivery-properties"></a>
 
-`DeliveryStream`
+`DeliveryStream`  <a name="cfn-kafkaconnect-connector-firehoselogdelivery-deliverystream"></a>
+The name of the Kinesis Data Firehose delivery stream that is the destination for log delivery.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The name of the Kinesis Data Firehose delivery stream that is the destination for log
-delivery.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-kafkaconnect-connector-firehoselogdelivery-enabled"></a>
 Specifies whether connector logs get delivered to Amazon Kinesis Data Firehose.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomPlugin
-
-KafkaCluster
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

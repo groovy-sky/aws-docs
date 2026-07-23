@@ -2,70 +2,52 @@
 title: "AWS::IoTWireless::FuotaTask LoRaWAN"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::FuotaTask LoRaWAN
+<a name="aws-properties-iotwireless-fuotatask-lorawan"></a>
 
 The LoRaWAN information used with a FUOTA task.
 
 ## Syntax
+<a name="aws-properties-iotwireless-fuotatask-lorawan-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-fuotatask-lorawan-syntax.json"></a>
 
-```json
-
+```
 {
-  "RfRegion" : String,
-  "StartTime" : String
+  "[RfRegion](#cfn-iotwireless-fuotatask-lorawan-rfregion)" : {{String}},
+  "[StartTime](#cfn-iotwireless-fuotatask-lorawan-starttime)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-fuotatask-lorawan-syntax.yaml"></a>
 
-```yaml
-
-  RfRegion: String
-  StartTime: String
-
+```
+  [RfRegion](#cfn-iotwireless-fuotatask-lorawan-rfregion): {{String}}
+  [StartTime](#cfn-iotwireless-fuotatask-lorawan-starttime): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-fuotatask-lorawan-properties"></a>
 
-`RfRegion`
-
+`RfRegion`  <a name="cfn-iotwireless-fuotatask-lorawan-rfregion"></a>
 The frequency band (RFRegion) value.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
+`StartTime`  <a name="cfn-iotwireless-fuotatask-lorawan-starttime"></a>
 Start time of a FUOTA task.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTWireless::FuotaTask
-
-Tag
+*Required*: No
+*Type*: String
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

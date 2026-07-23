@@ -2,59 +2,46 @@
 title: "AWS::S3::Bucket AccelerateConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket AccelerateConfiguration
+<a name="aws-properties-s3-bucket-accelerateconfiguration"></a>
 
-Configures the transfer acceleration state for an Amazon S3 bucket. For more information, see [Amazon S3 Transfer\
-Acceleration](../../../s3/latest/dev/transfer-acceleration.md) in the _Amazon S3 User Guide_.
+Configures the transfer acceleration state for an Amazon S3 bucket. For more information, see [Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-accelerateconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-accelerateconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccelerationStatus" : String
+  "[AccelerationStatus](#cfn-s3-bucket-accelerateconfiguration-accelerationstatus)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-accelerateconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AccelerationStatus: String
-
+```
+  [AccelerationStatus](#cfn-s3-bucket-accelerateconfiguration-accelerationstatus): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-accelerateconfiguration-properties"></a>
 
-`AccelerationStatus`
-
+`AccelerationStatus`  <a name="cfn-s3-bucket-accelerateconfiguration-accelerationstatus"></a>
 Specifies the transfer acceleration status of the bucket.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Enabled | Suspended`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Enabled | Suspended`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- AWS::S3::Bucket [Examples](../userguide/aws-properties-s3-bucket.md#aws-properties-s3-bucket--examples)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AbortIncompleteMultipartUpload
-
-AccessControlTranslation
+<a name="aws-properties-s3-bucket-accelerateconfiguration--seealso"></a>
++ AWS::S3::Bucket [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket--examples)
 
 All content copied from https://docs.aws.amazon.com/.

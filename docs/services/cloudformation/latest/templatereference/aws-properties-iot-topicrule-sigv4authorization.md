@@ -2,76 +2,57 @@
 title: "AWS::IoT::TopicRule SigV4Authorization"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule SigV4Authorization
+<a name="aws-properties-iot-topicrule-sigv4authorization"></a>
 
-For more information, see [Signature Version 4 signing process](../../../../general/latest/gr/signature-version-4.md).
+For more information, see [Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-sigv4authorization-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-sigv4authorization-syntax.json"></a>
 
-```json
-
+```
 {
-  "RoleArn" : String,
-  "ServiceName" : String,
-  "SigningRegion" : String
+  "[RoleArn](#cfn-iot-topicrule-sigv4authorization-rolearn)" : {{String}},
+  "[ServiceName](#cfn-iot-topicrule-sigv4authorization-servicename)" : {{String}},
+  "[SigningRegion](#cfn-iot-topicrule-sigv4authorization-signingregion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-sigv4authorization-syntax.yaml"></a>
 
-```yaml
-
-  RoleArn: String
-  ServiceName: String
-  SigningRegion: String
-
+```
+  [RoleArn](#cfn-iot-topicrule-sigv4authorization-rolearn): {{String}}
+  [ServiceName](#cfn-iot-topicrule-sigv4authorization-servicename): {{String}}
+  [SigningRegion](#cfn-iot-topicrule-sigv4authorization-signingregion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-sigv4authorization-properties"></a>
 
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-sigv4authorization-rolearn"></a>
 The ARN of the signing role.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceName`
-
+`ServiceName`  <a name="cfn-iot-topicrule-sigv4authorization-servicename"></a>
 The service name to use while signing with Sig V4.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SigningRegion`
-
+`SigningRegion`  <a name="cfn-iot-topicrule-sigv4authorization-signingregion"></a>
 The signing region.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Action
-
-SnsAction
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

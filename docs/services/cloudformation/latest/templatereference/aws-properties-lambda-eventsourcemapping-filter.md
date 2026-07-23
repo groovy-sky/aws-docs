@@ -2,59 +2,44 @@
 title: "AWS::Lambda::EventSourceMapping Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping Filter
+<a name="aws-properties-lambda-eventsourcemapping-filter"></a>
 
-A structure within a `FilterCriteria` object that defines an event filtering pattern.
+ A structure within a `FilterCriteria` object that defines an event filtering pattern.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Pattern" : String
+  "[Pattern](#cfn-lambda-eventsourcemapping-filter-pattern)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-filter-syntax.yaml"></a>
 
-```yaml
-
-  Pattern: String
-
+```
+  [Pattern](#cfn-lambda-eventsourcemapping-filter-pattern): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-filter-properties"></a>
 
-`Pattern`
-
-A filter pattern. For more information on the syntax of a filter pattern, see
-[Filter rule syntax](../../../lambda/latest/dg/invocation-eventfiltering.md#filtering-syntax).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `0`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Endpoints
-
-FilterCriteria
+`Pattern`  <a name="cfn-lambda-eventsourcemapping-filter-pattern"></a>
+ A filter pattern. For more information on the syntax of a filter pattern, see [ Filter rule syntax](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html#filtering-syntax).
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `0`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

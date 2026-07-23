@@ -2,87 +2,63 @@
 title: "AWS::AppRunner::Service ImageRepository"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service ImageRepository
+<a name="aws-properties-apprunner-service-imagerepository"></a>
 
 Describes a source image repository.
 
 ## Syntax
+<a name="aws-properties-apprunner-service-imagerepository-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apprunner-service-imagerepository-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageConfiguration" : ImageConfiguration,
-  "ImageIdentifier" : String,
-  "ImageRepositoryType" : String
+  "[ImageConfiguration](#cfn-apprunner-service-imagerepository-imageconfiguration)" : {{ImageConfiguration}},
+  "[ImageIdentifier](#cfn-apprunner-service-imagerepository-imageidentifier)" : {{String}},
+  "[ImageRepositoryType](#cfn-apprunner-service-imagerepository-imagerepositorytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apprunner-service-imagerepository-syntax.yaml"></a>
 
-```yaml
-
-  ImageConfiguration:
-    ImageConfiguration
-  ImageIdentifier: String
-  ImageRepositoryType: String
-
+```
+  [ImageConfiguration](#cfn-apprunner-service-imagerepository-imageconfiguration): {{
+    ImageConfiguration}}
+  [ImageIdentifier](#cfn-apprunner-service-imagerepository-imageidentifier): {{String}}
+  [ImageRepositoryType](#cfn-apprunner-service-imagerepository-imagerepositorytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apprunner-service-imagerepository-properties"></a>
 
-`ImageConfiguration`
-
+`ImageConfiguration`  <a name="cfn-apprunner-service-imagerepository-imageconfiguration"></a>
 Configuration for running the identified image.
+*Required*: No
+*Type*: [ImageConfiguration](aws-properties-apprunner-service-imageconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ImageConfiguration](aws-properties-apprunner-service-imageconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageIdentifier`
-
+`ImageIdentifier`  <a name="cfn-apprunner-service-imagerepository-imageidentifier"></a>
 The identifier of an image.
+For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see [Pulling an image](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-ecr-image.html) in the *Amazon ECR User Guide*.
+*Required*: Yes
+*Type*: String
+*Pattern*: `([0-9]{12}.dkr.ecr.[a-z\-]+-[0-9]{1}.amazonaws.com\/.*)|(^public\.ecr\.aws\/.+\/.+)`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see [Pulling an image](../../../amazonecr/latest/userguide/docker-pull-ecr-image.md) in the _Amazon ECR User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([0-9]{12}.dkr.ecr.[a-z\-]+-[0-9]{1}.amazonaws.com\/.*)|(^public\.ecr\.aws\/.+\/.+)`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageRepositoryType`
-
+`ImageRepositoryType`  <a name="cfn-apprunner-service-imagerepository-imagerepositorytype"></a>
 The type of the image repository. This reflects the repository provider and whether the repository is private or public.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ECR | ECR_PUBLIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageConfiguration
-
-IngressConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ECR | ECR_PUBLIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

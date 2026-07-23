@@ -2,57 +2,44 @@
 title: "AWS::Bedrock::KnowledgeBase RedshiftQueryEngineAwsDataCatalogStorageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase RedshiftQueryEngineAwsDataCatalogStorageConfiguration
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration"></a>
 
 Contains configurations for storage in AWS Glue Data Catalog.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TableNames" : [ String, ... ]
+  "[TableNames](#cfn-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-tablenames)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TableNames:
-    - String
-
+```
+  [TableNames](#cfn-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-tablenames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-properties"></a>
 
-`TableNames`
-
+`TableNames`  <a name="cfn-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-tablenames"></a>
 A list of names of the tables to use.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedshiftProvisionedConfiguration
-
-RedshiftQueryEngineConfiguration
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

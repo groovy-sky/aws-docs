@@ -2,61 +2,47 @@
 title: "AWS::AppFlow::Flow DatadogSourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow DatadogSourceProperties
+<a name="aws-properties-appflow-flow-datadogsourceproperties"></a>
 
-The properties that are applied when Datadog is being used as a source.
+ The properties that are applied when Datadog is being used as a source.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-datadogsourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-datadogsourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Object" : String
+  "[Object](#cfn-appflow-flow-datadogsourceproperties-object)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-datadogsourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  Object: String
-
+```
+  [Object](#cfn-appflow-flow-datadogsourceproperties-object): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-datadogsourceproperties-properties"></a>
 
-`Object`
-
-The object specified in the Datadog flow source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Object`  <a name="cfn-appflow-flow-datadogsourceproperties-object"></a>
+ The object specified in the Datadog flow source.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [DatadogSourceProperties](../../../../reference/appflow/1-0/apireference/api-datadogsourceproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomConnectorSourceProperties
-
-DataTransferApi
+<a name="aws-properties-appflow-flow-datadogsourceproperties--seealso"></a>
++ [DatadogSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogSourceProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

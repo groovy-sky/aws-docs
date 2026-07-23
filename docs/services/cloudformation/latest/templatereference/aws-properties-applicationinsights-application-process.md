@@ -2,71 +2,53 @@
 title: "AWS::ApplicationInsights::Application Process"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application Process
+<a name="aws-properties-applicationinsights-application-process"></a>
 
-The `Process` property type specifies Property description not available. for an [AWS::ApplicationInsights::Application](aws-resource-applicationinsights-application.md).
+<a name="aws-properties-applicationinsights-application-process-description"></a>The `Process` property type specifies Property description not available. for an [AWS::ApplicationInsights::Application](aws-resource-applicationinsights-application.md).
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-process-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-process-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlarmMetrics" : [ AlarmMetric, ... ],
-  "ProcessName" : String
+  "[AlarmMetrics](#cfn-applicationinsights-application-process-alarmmetrics)" : {{[ AlarmMetric, ... ]}},
+  "[ProcessName](#cfn-applicationinsights-application-process-processname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-process-syntax.yaml"></a>
 
-```yaml
-
-  AlarmMetrics:
-    - AlarmMetric
-  ProcessName: String
-
+```
+  [AlarmMetrics](#cfn-applicationinsights-application-process-alarmmetrics): {{
+    - AlarmMetric}}
+  [ProcessName](#cfn-applicationinsights-application-process-processname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-process-properties"></a>
 
-`AlarmMetrics`
-
+`AlarmMetrics`  <a name="cfn-applicationinsights-application-process-alarmmetrics"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Array of [AlarmMetric](aws-properties-applicationinsights-application-alarmmetric.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [AlarmMetric](aws-properties-applicationinsights-application-alarmmetric.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProcessName`
-
+`ProcessName`  <a name="cfn-applicationinsights-application-process-processname"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_,-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NetWeaverPrometheusExporter
-
-SQLServerPrometheusExporter
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_,-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

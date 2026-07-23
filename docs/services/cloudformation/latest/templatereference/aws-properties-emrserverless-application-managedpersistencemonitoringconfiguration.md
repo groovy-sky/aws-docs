@@ -2,71 +2,52 @@
 title: "AWS::EMRServerless::Application ManagedPersistenceMonitoringConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application ManagedPersistenceMonitoringConfiguration
+<a name="aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration"></a>
 
 The managed log persistence configuration for a job run.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "EncryptionKeyArn" : String
+  "[Enabled](#cfn-emrserverless-application-managedpersistencemonitoringconfiguration-enabled)" : {{Boolean}},
+  "[EncryptionKeyArn](#cfn-emrserverless-application-managedpersistencemonitoringconfiguration-encryptionkeyarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  EncryptionKeyArn: String
-
+```
+  [Enabled](#cfn-emrserverless-application-managedpersistencemonitoringconfiguration-enabled): {{Boolean}}
+  [EncryptionKeyArn](#cfn-emrserverless-application-managedpersistencemonitoringconfiguration-encryptionkeyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration-properties"></a>
 
-`Enabled`
+`Enabled`  <a name="cfn-emrserverless-application-managedpersistencemonitoringconfiguration-enabled"></a>
+Enables managed logging and defaults to true. If set to false, managed logging will be turned off.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-Enables managed logging and defaults to true. If set to false, managed logging will be
-turned off.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`EncryptionKeyArn`
-
+`EncryptionKeyArn`  <a name="cfn-emrserverless-application-managedpersistencemonitoringconfiguration-encryptionkeyarn"></a>
 The KMS key ARN to encrypt the logs stored in managed log persistence.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z0-9-]*):kms:[a-zA-Z0-9\-]*:(\d{12})?:key\/[a-zA-Z0-9-]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogTypeMapKeyValuePair
-
-MaximumAllowedResources
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z0-9-]*):kms:[a-zA-Z0-9\-]*:(\d{12})?:key\/[a-zA-Z0-9-]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

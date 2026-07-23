@@ -2,179 +2,141 @@
 title: "AWS::EC2::VPCPeeringConnection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPCPeeringConnection
+<a name="aws-resource-ec2-vpcpeeringconnection"></a>
 
-Requests a VPC peering connection between two VPCs: a requester VPC that you own and an
-accepter VPC with which to create the connection. The accepter VPC can belong to a different
-AWS account and can be in a different Region than the requester VPC.
+Requests a VPC peering connection between two VPCs: a requester VPC that you own and an accepter VPC with which to create the connection. The accepter VPC can belong to a different AWS account and can be in a different Region than the requester VPC.
 
-The requester VPC and accepter VPC cannot have overlapping CIDR blocks. If you create a
-VPC peering connection request between VPCs with overlapping CIDR blocks, the VPC peering
-connection has a status of `failed`.
+The requester VPC and accepter VPC cannot have overlapping CIDR blocks. If you create a VPC peering connection request between VPCs with overlapping CIDR blocks, the VPC peering connection has a status of `failed`.
 
-If the VPCs belong to different accounts, the acceptor account must have a role that
-allows the requester account to accept the VPC peering connection. For an example,
-see [Walkthrough: Peer with a VPC in another AWS account](../userguide/peer-with-vpc-in-another-account.md).
+If the VPCs belong to different accounts, the acceptor account must have a role that allows the requester account to accept the VPC peering connection. For an example, see [Walkthrough: Peer with a VPC in another AWS account](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/peer-with-vpc-in-another-account.html).
 
-If the requester and acceptor VPCs are in the same account, the peering request is
-accepted without a peering role.
+If the requester and acceptor VPCs are in the same account, the peering request is accepted without a peering role.
 
 ## Syntax
+<a name="aws-resource-ec2-vpcpeeringconnection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpcpeeringconnection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPCPeeringConnection",
   "Properties" : {
-      "AssumeRoleRegion" : String,
-      "PeerOwnerId" : String,
-      "PeerRegion" : String,
-      "PeerRoleArn" : String,
-      "PeerVpcId" : String,
-      "Tags" : [ Tag, ... ],
-      "VpcId" : String
+      "[AssumeRoleRegion](#cfn-ec2-vpcpeeringconnection-assumeroleregion)" : {{String}},
+      "[PeerOwnerId](#cfn-ec2-vpcpeeringconnection-peerownerid)" : {{String}},
+      "[PeerRegion](#cfn-ec2-vpcpeeringconnection-peerregion)" : {{String}},
+      "[PeerRoleArn](#cfn-ec2-vpcpeeringconnection-peerrolearn)" : {{String}},
+      "[PeerVpcId](#cfn-ec2-vpcpeeringconnection-peervpcid)" : {{String}},
+      "[Tags](#cfn-ec2-vpcpeeringconnection-tags)" : {{[ Tag, ... ]}},
+      "[VpcId](#cfn-ec2-vpcpeeringconnection-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpcpeeringconnection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPCPeeringConnection
 Properties:
-  AssumeRoleRegion: String
-  PeerOwnerId: String
-  PeerRegion: String
-  PeerRoleArn: String
-  PeerVpcId: String
-  Tags:
-    - Tag
-  VpcId: String
-
+  [AssumeRoleRegion](#cfn-ec2-vpcpeeringconnection-assumeroleregion): {{String}}
+  [PeerOwnerId](#cfn-ec2-vpcpeeringconnection-peerownerid): {{String}}
+  [PeerRegion](#cfn-ec2-vpcpeeringconnection-peerregion): {{String}}
+  [PeerRoleArn](#cfn-ec2-vpcpeeringconnection-peerrolearn): {{String}}
+  [PeerVpcId](#cfn-ec2-vpcpeeringconnection-peervpcid): {{String}}
+  [Tags](#cfn-ec2-vpcpeeringconnection-tags): {{
+    - Tag}}
+  [VpcId](#cfn-ec2-vpcpeeringconnection-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpcpeeringconnection-properties"></a>
 
-`AssumeRoleRegion`
+`AssumeRoleRegion`  <a name="cfn-ec2-vpcpeeringconnection-assumeroleregion"></a>
+The Region code to use when calling Security Token Service (STS) to assume the PeerRoleArn, if provided.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Region code to use when calling Security Token Service (STS) to assume the
-PeerRoleArn, if provided.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerOwnerId`
-
+`PeerOwnerId`  <a name="cfn-ec2-vpcpeeringconnection-peerownerid"></a>
 The AWS account ID of the owner of the accepter VPC.
-
 Default: Your AWS account ID
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerRegion`
-
-The Region code for the accepter VPC, if the accepter VPC is located in a Region
-other than the Region in which you make the request.
-
+`PeerRegion`  <a name="cfn-ec2-vpcpeeringconnection-peerregion"></a>
+The Region code for the accepter VPC, if the accepter VPC is located in a Region other than the Region in which you make the request.
 Default: The Region in which you make the request.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`PeerRoleArn`  <a name="cfn-ec2-vpcpeeringconnection-peerrolearn"></a>
+The Amazon Resource Name (ARN) of the VPC peer role for the peering connection in another AWS account.
+This is required when you are peering a VPC in a different AWS account.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`PeerVpcId`  <a name="cfn-ec2-vpcpeeringconnection-peervpcid"></a>
+The ID of the VPC with which you are creating the VPC peering connection. You must specify this parameter in the request.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerRoleArn`
-
-The Amazon Resource Name (ARN) of the VPC peer role for the peering connection in
-another AWS account.
-
-This is required when you are peering a VPC in a different AWS
-account.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerVpcId`
-
-The ID of the VPC with which you are creating the VPC peering connection. You must
-specify this parameter in the request.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-vpcpeeringconnection-tags"></a>
 Any tags assigned to the resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-vpcpeeringconnection-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-vpcpeeringconnection-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-ec2-vpcpeeringconnection-vpcid"></a>
 The ID of the VPC.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-vpcpeeringconnection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpcpeeringconnection-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the VPC peering connection.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-vpcpeeringconnection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-vpcpeeringconnection-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the peering connection.
 
 ## Examples
+<a name="aws-resource-ec2-vpcpeeringconnection--examples"></a>
 
 ### Peer VPCs in the same account
+<a name="aws-resource-ec2-vpcpeeringconnection--examples--Peer_VPCs_in_the_same_account"></a>
 
-This example shows how to peer two VPCs in the same account. It uses an existing
-VPC as the requester VPC and creates the accepter VPC.
+This example shows how to peer two VPCs in the same account. It uses an existing VPC as the requester VPC and creates the accepter VPC.
 
 #### JSON
+<a name="aws-resource-ec2-vpcpeeringconnection--examples--Peer_VPCs_in_the_same_account--json"></a>
 
-```json
-
+```
 "Resources": {
     "myVpc": {
         "Type": "AWS::EC2::VPC",
@@ -209,9 +171,9 @@ VPC as the requester VPC and creates the accepter VPC.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpcpeeringconnection--examples--Peer_VPCs_in_the_same_account--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myVpc:
     Type: AWS::EC2::VPC
@@ -233,18 +195,9 @@ Resources:
 ```
 
 ## See also
-
-- [Walkthrough: Peer with a VPC in another AWS account](../userguide/peer-with-vpc-in-another-account.md)
-
-- [What is VPC peering](../../../vpc/latest/peering/what-is-vpc-peering.md) in the _VPC Peering Guide_
-
-- [CreateVpcPeeringConnection](../../../../reference/awsec2/latest/apireference/api-createvpcpeeringconnection.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VPCGatewayAttachment
-
-Tag
+<a name="aws-resource-ec2-vpcpeeringconnection--seealso"></a>
++  [Walkthrough: Peer with a VPC in another AWS account](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/peer-with-vpc-in-another-account.html)
++ [What is VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) in the *VPC Peering Guide*
++ [CreateVpcPeeringConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcPeeringConnection.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

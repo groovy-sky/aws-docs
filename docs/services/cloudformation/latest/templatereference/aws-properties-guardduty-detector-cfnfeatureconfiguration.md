@@ -2,81 +2,60 @@
 title: "AWS::GuardDuty::Detector CFNFeatureConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::Detector CFNFeatureConfiguration
+<a name="aws-properties-guardduty-detector-cfnfeatureconfiguration"></a>
 
 Information about the configuration of a feature in your account.
 
 ## Syntax
+<a name="aws-properties-guardduty-detector-cfnfeatureconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-guardduty-detector-cfnfeatureconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalConfiguration" : [ CFNFeatureAdditionalConfiguration, ... ],
-  "Name" : String,
-  "Status" : String
+  "[AdditionalConfiguration](#cfn-guardduty-detector-cfnfeatureconfiguration-additionalconfiguration)" : {{[ CFNFeatureAdditionalConfiguration, ... ]}},
+  "[Name](#cfn-guardduty-detector-cfnfeatureconfiguration-name)" : {{String}},
+  "[Status](#cfn-guardduty-detector-cfnfeatureconfiguration-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-guardduty-detector-cfnfeatureconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalConfiguration:
-    - CFNFeatureAdditionalConfiguration
-  Name: String
-  Status: String
-
+```
+  [AdditionalConfiguration](#cfn-guardduty-detector-cfnfeatureconfiguration-additionalconfiguration): {{
+    - CFNFeatureAdditionalConfiguration}}
+  [Name](#cfn-guardduty-detector-cfnfeatureconfiguration-name): {{String}}
+  [Status](#cfn-guardduty-detector-cfnfeatureconfiguration-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-guardduty-detector-cfnfeatureconfiguration-properties"></a>
 
-`AdditionalConfiguration`
-
+`AdditionalConfiguration`  <a name="cfn-guardduty-detector-cfnfeatureconfiguration-additionalconfiguration"></a>
 Information about the additional configuration of a feature in your account.
+*Required*: No
+*Type*: Array of [CFNFeatureAdditionalConfiguration](aws-properties-guardduty-detector-cfnfeatureadditionalconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-guardduty-detector-cfnfeatureconfiguration-name"></a>
+Name of the feature. For a list of allowed values, see [DetectorFeatureConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DetectorFeatureConfiguration.html#guardduty-Type-DetectorFeatureConfiguration-name) in the *GuardDuty API Reference*.
+*Required*: Yes
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CFNFeatureAdditionalConfiguration](aws-properties-guardduty-detector-cfnfeatureadditionalconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-Name of the feature. For a list of allowed values, see [DetectorFeatureConfiguration](../../../../reference/guardduty/latest/apireference/api-detectorfeatureconfiguration.md#guardduty-Type-DetectorFeatureConfiguration-name) in the _GuardDuty API Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-guardduty-detector-cfnfeatureconfiguration-status"></a>
 Status of the feature configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CFNFeatureAdditionalConfiguration
-
-CFNKubernetesAuditLogsConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

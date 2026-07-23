@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Dashboard BoxPlotSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard BoxPlotSortConfiguration
+<a name="aws-properties-quicksight-dashboard-boxplotsortconfiguration"></a>
 
 The sort configuration of a `BoxPlotVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-boxplotsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-boxplotsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategorySort" : [ FieldSortOptions, ... ],
-  "PaginationConfiguration" : PaginationConfiguration
+  "[CategorySort](#cfn-quicksight-dashboard-boxplotsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}},
+  "[PaginationConfiguration](#cfn-quicksight-dashboard-boxplotsortconfiguration-paginationconfiguration)" : {{PaginationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-boxplotsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CategorySort:
-    - FieldSortOptions
-  PaginationConfiguration:
-    PaginationConfiguration
-
+```
+  [CategorySort](#cfn-quicksight-dashboard-boxplotsortconfiguration-categorysort): {{
+    - FieldSortOptions}}
+  [PaginationConfiguration](#cfn-quicksight-dashboard-boxplotsortconfiguration-paginationconfiguration): {{
+    PaginationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-boxplotsortconfiguration-properties"></a>
 
-`CategorySort`
-
+`CategorySort`  <a name="cfn-quicksight-dashboard-boxplotsortconfiguration-categorysort"></a>
 The sort configuration of a group by fields.
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PaginationConfiguration`
-
+`PaginationConfiguration`  <a name="cfn-quicksight-dashboard-boxplotsortconfiguration-paginationconfiguration"></a>
 The pagination configuration of a table visual or box plot.
-
-_Required_: No
-
-_Type_: [PaginationConfiguration](aws-properties-quicksight-dashboard-paginationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BoxPlotOptions
-
-BoxPlotStyleOptions
+*Required*: No
+*Type*: [PaginationConfiguration](aws-properties-quicksight-dashboard-paginationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

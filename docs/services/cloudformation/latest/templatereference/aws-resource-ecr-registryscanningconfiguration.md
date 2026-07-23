@@ -2,86 +2,73 @@
 title: "AWS::ECR::RegistryScanningConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::RegistryScanningConfiguration
+<a name="aws-resource-ecr-registryscanningconfiguration"></a>
 
 The scanning configuration for a private registry.
 
 ## Syntax
+<a name="aws-resource-ecr-registryscanningconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ecr-registryscanningconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ECR::RegistryScanningConfiguration",
   "Properties" : {
-      "Rules" : [ ScanningRule, ... ],
-      "ScanType" : String
+      "[Rules](#cfn-ecr-registryscanningconfiguration-rules)" : {{[ ScanningRule, ... ]}},
+      "[ScanType](#cfn-ecr-registryscanningconfiguration-scantype)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ecr-registryscanningconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ECR::RegistryScanningConfiguration
 Properties:
-  Rules:
-    - ScanningRule
-  ScanType: String
-
+  [Rules](#cfn-ecr-registryscanningconfiguration-rules): {{
+    - ScanningRule}}
+  [ScanType](#cfn-ecr-registryscanningconfiguration-scantype): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ecr-registryscanningconfiguration-properties"></a>
 
-`Rules`
-
+`Rules`  <a name="cfn-ecr-registryscanningconfiguration-rules"></a>
 The scanning rules associated with the registry.
+*Required*: Yes
+*Type*: Array of [ScanningRule](aws-properties-ecr-registryscanningconfiguration-scanningrule.md)
+*Minimum*: `0`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ScanningRule](aws-properties-ecr-registryscanningconfiguration-scanningrule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScanType`
-
+`ScanType`  <a name="cfn-ecr-registryscanningconfiguration-scantype"></a>
 The type of scanning configured for the registry.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `BASIC | ENHANCED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `BASIC | ENHANCED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ecr-registryscanningconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ecr-registryscanningconfiguration-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ecr-registryscanningconfiguration-return-values-fn--getatt"></a>
 
-`RegistryId`
+####
+<a name="aws-resource-ecr-registryscanningconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`RegistryId`  <a name="RegistryId-fn::getatt"></a>
 The account ID of the destination registry.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECR::RegistryPolicy
-
-RepositoryFilter
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,152 +2,122 @@
 title: "AWS::EC2::TransitGatewayVpcAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayVpcAttachment
+<a name="aws-resource-ec2-transitgatewayvpcattachment"></a>
 
 Specifies a VPC attachment.
 
 ## Syntax
+<a name="aws-resource-ec2-transitgatewayvpcattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-transitgatewayvpcattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TransitGatewayVpcAttachment",
   "Properties" : {
-      "AddSubnetIds" : [ String, ... ],
-      "Options" : Options,
-      "RemoveSubnetIds" : [ String, ... ],
-      "SubnetIds" : [ String, ... ],
-      "Tags" : [ Tag, ... ],
-      "TransitGatewayId" : String,
-      "VpcId" : String
+      "[AddSubnetIds](#cfn-ec2-transitgatewayvpcattachment-addsubnetids)" : {{[ String, ... ]}},
+      "[Options](#cfn-ec2-transitgatewayvpcattachment-options)" : {{Options}},
+      "[RemoveSubnetIds](#cfn-ec2-transitgatewayvpcattachment-removesubnetids)" : {{[ String, ... ]}},
+      "[SubnetIds](#cfn-ec2-transitgatewayvpcattachment-subnetids)" : {{[ String, ... ]}},
+      "[Tags](#cfn-ec2-transitgatewayvpcattachment-tags)" : {{[ Tag, ... ]}},
+      "[TransitGatewayId](#cfn-ec2-transitgatewayvpcattachment-transitgatewayid)" : {{String}},
+      "[VpcId](#cfn-ec2-transitgatewayvpcattachment-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-transitgatewayvpcattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TransitGatewayVpcAttachment
 Properties:
-  AddSubnetIds:
-    - String
-  Options:
-    Options
-  RemoveSubnetIds:
-    - String
-  SubnetIds:
-    - String
-  Tags:
-    - Tag
-  TransitGatewayId: String
-  VpcId: String
-
+  [AddSubnetIds](#cfn-ec2-transitgatewayvpcattachment-addsubnetids): {{
+    - String}}
+  [Options](#cfn-ec2-transitgatewayvpcattachment-options): {{
+    Options}}
+  [RemoveSubnetIds](#cfn-ec2-transitgatewayvpcattachment-removesubnetids): {{
+    - String}}
+  [SubnetIds](#cfn-ec2-transitgatewayvpcattachment-subnetids): {{
+    - String}}
+  [Tags](#cfn-ec2-transitgatewayvpcattachment-tags): {{
+    - Tag}}
+  [TransitGatewayId](#cfn-ec2-transitgatewayvpcattachment-transitgatewayid): {{String}}
+  [VpcId](#cfn-ec2-transitgatewayvpcattachment-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-transitgatewayvpcattachment-properties"></a>
 
-`AddSubnetIds`
-
+`AddSubnetIds`  <a name="cfn-ec2-transitgatewayvpcattachment-addsubnetids"></a>
 The IDs of one or more subnets to add. You can specify at most one subnet per Availability Zone.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-ec2-transitgatewayvpcattachment-options"></a>
 The VPC attachment options.
+*Required*: No
+*Type*: [Options](aws-properties-ec2-transitgatewayvpcattachment-options.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Options](aws-properties-ec2-transitgatewayvpcattachment-options.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveSubnetIds`
-
+`RemoveSubnetIds`  <a name="cfn-ec2-transitgatewayvpcattachment-removesubnetids"></a>
 The IDs of one or more subnets to remove.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-ec2-transitgatewayvpcattachment-subnetids"></a>
 The IDs of the subnets.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-transitgatewayvpcattachment-tags"></a>
 The tags for the VPC attachment.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-transitgatewayvpcattachment-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-transitgatewayvpcattachment-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitGatewayId`
-
+`TransitGatewayId`  <a name="cfn-ec2-transitgatewayvpcattachment-transitgatewayid"></a>
 The ID of the transit gateway.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-ec2-transitgatewayvpcattachment-vpcid"></a>
 The ID of the VPC.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-transitgatewayvpcattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-transitgatewayvpcattachment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the attachment.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-transitgatewayvpcattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-transitgatewayvpcattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the attachment.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::TransitGatewayRouteTablePropagation
-
-Options
 
 All content copied from https://docs.aws.amazon.com/.

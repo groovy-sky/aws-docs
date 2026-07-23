@@ -2,152 +2,127 @@
 title: "AWS::IVS::PlaybackRestrictionPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::PlaybackRestrictionPolicy
+<a name="aws-resource-ivs-playbackrestrictionpolicy"></a>
 
-The `AWS::IVS::PlaybackRestrictionPolicy` resource specifies an Amazon IVS
-playback restriction policy. A playback restriction policy constrains playback by country and/or origin sites.
-For more information, see [Undesired Content and Viewers](../../../ivs/latest/lowlatencyuserguide/undesired-content.md)
-in the _Amazon IVS Low-Latency Streaming User Guide_.
+The `AWS::IVS::PlaybackRestrictionPolicy` resource specifies an Amazon IVS playback restriction policy. A playback restriction policy constrains playback by country and/or origin sites. For more information, see [Undesired Content and Viewers](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/undesired-content.html) in the *Amazon IVS Low-Latency Streaming User Guide*.
 
 ## Syntax
+<a name="aws-resource-ivs-playbackrestrictionpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivs-playbackrestrictionpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVS::PlaybackRestrictionPolicy",
   "Properties" : {
-      "AllowedCountries" : [ String, ... ],
-      "AllowedOrigins" : [ String, ... ],
-      "EnableStrictOriginEnforcement" : Boolean,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[AllowedCountries](#cfn-ivs-playbackrestrictionpolicy-allowedcountries)" : {{[ String, ... ]}},
+      "[AllowedOrigins](#cfn-ivs-playbackrestrictionpolicy-allowedorigins)" : {{[ String, ... ]}},
+      "[EnableStrictOriginEnforcement](#cfn-ivs-playbackrestrictionpolicy-enablestrictoriginenforcement)" : {{Boolean}},
+      "[Name](#cfn-ivs-playbackrestrictionpolicy-name)" : {{String}},
+      "[Tags](#cfn-ivs-playbackrestrictionpolicy-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivs-playbackrestrictionpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVS::PlaybackRestrictionPolicy
 Properties:
-  AllowedCountries:
-    - String
-  AllowedOrigins:
-    - String
-  EnableStrictOriginEnforcement: Boolean
-  Name: String
-  Tags:
-    - Tag
-
+  [AllowedCountries](#cfn-ivs-playbackrestrictionpolicy-allowedcountries): {{
+    - String}}
+  [AllowedOrigins](#cfn-ivs-playbackrestrictionpolicy-allowedorigins): {{
+    - String}}
+  [EnableStrictOriginEnforcement](#cfn-ivs-playbackrestrictionpolicy-enablestrictoriginenforcement): {{Boolean}}
+  [Name](#cfn-ivs-playbackrestrictionpolicy-name): {{String}}
+  [Tags](#cfn-ivs-playbackrestrictionpolicy-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ivs-playbackrestrictionpolicy-properties"></a>
 
-`AllowedCountries`
-
+`AllowedCountries`  <a name="cfn-ivs-playbackrestrictionpolicy-allowedcountries"></a>
 A list of country codes that control geoblocking restrictions. Allowed values are the officially assigned ISO 3166-1 alpha-2 codes. Default: All countries (an empty array).
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowedOrigins`
-
+`AllowedOrigins`  <a name="cfn-ivs-playbackrestrictionpolicy-allowedorigins"></a>
 A list of origin sites that control CORS restriction. Allowed values are the same as valid values of the Origin header defined at [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableStrictOriginEnforcement`
-
+`EnableStrictOriginEnforcement`  <a name="cfn-ivs-playbackrestrictionpolicy-enablestrictoriginenforcement"></a>
 Whether channel playback is constrained by the origin site.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-ivs-playbackrestrictionpolicy-name"></a>
 Playback-restriction-policy name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]*$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivs-playbackrestrictionpolicy-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-ivs-playbackrestrictionpolicy-tag.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivs-playbackrestrictionpolicy-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-playbackrestrictionpolicy-tag.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivs-playbackrestrictionpolicy-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ivs-playbackrestrictionpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivs-playbackrestrictionpolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the playback-restriction-policy ARN. For example:
 
-`{ "Ref": "myPlaybackRestrictionPolicy" }`
+ `{ "Ref": "myPlaybackRestrictionPolicy" }`
 
-For the Amazon IVS playback restriction policy
-`"myPlaybackRestrictionPolicy"`, `Ref` returns the
-playback-restriction-policy ARN.
+For the Amazon IVS playback restriction policy `"myPlaybackRestrictionPolicy"`, `Ref` returns the playback-restriction-policy ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivs-playbackrestrictionpolicy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivs-playbackrestrictionpolicy-return-values-fn--getatt-fn--getatt"></a>
 
-The playback-restriction-policy ARN. For example:
-`arn:aws:ivs:us-west-2:123456789012:playback-restriction-policy/abcdABCDefgh`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The playback-restriction-policy ARN. For example: `arn:aws:ivs:us-west-2:123456789012:playback-restriction-policy/abcdABCDefgh`
 
 ## Examples
+<a name="aws-resource-ivs-playbackrestrictionpolicy--examples"></a>
 
 ### PlaybackRestrictionPolicy Template Examples
+<a name="aws-resource-ivs-playbackrestrictionpolicy--examples--PlaybackRestrictionPolicy_Template_Examples"></a>
 
 The following examples specify an Amazon IVS playback restriction policy.
 
 #### JSON
+<a name="aws-resource-ivs-playbackrestrictionpolicy--examples--PlaybackRestrictionPolicy_Template_Examples--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -168,13 +143,12 @@ The following examples specify an Amazon IVS playback restriction policy.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-ivs-playbackrestrictionpolicy--examples--PlaybackRestrictionPolicy_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   PlaybackRestrictionPolicy:
@@ -189,21 +163,11 @@ Resources:
       Tags:
         - Key: myKey
           Value: myValue
-
 ```
 
 ## See also
-
-- [Getting\
-Started with IVS Low-Latency Streaming](../../../ivs/latest/lowlatencyuserguide/getting-started.md)
-
-- [Undesired\
-Content and Viewers](../../../ivs/latest/lowlatencyuserguide/undesired-content.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+<a name="aws-resource-ivs-playbackrestrictionpolicy--seealso"></a>
++  [Getting Started with IVS Low-Latency Streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started.html)
++  [Undesired Content and Viewers](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/undesired-content.html)
 
 All content copied from https://docs.aws.amazon.com/.

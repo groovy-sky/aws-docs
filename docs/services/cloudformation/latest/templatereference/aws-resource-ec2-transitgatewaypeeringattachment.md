@@ -2,143 +2,114 @@
 title: "AWS::EC2::TransitGatewayPeeringAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayPeeringAttachment
+<a name="aws-resource-ec2-transitgatewaypeeringattachment"></a>
 
-Requests a transit gateway peering attachment between the specified transit gateway
-(requester) and a peer transit gateway (accepter). The peer transit gateway can be in your
-account or a different AWS account.
+Requests a transit gateway peering attachment between the specified transit gateway (requester) and a peer transit gateway (accepter). The peer transit gateway can be in your account or a different AWS account.
 
-After you create the peering attachment, the owner of the accepter transit gateway must
-accept the attachment request.
+After you create the peering attachment, the owner of the accepter transit gateway must accept the attachment request.
 
 ## Syntax
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TransitGatewayPeeringAttachment",
   "Properties" : {
-      "PeerAccountId" : String,
-      "PeerRegion" : String,
-      "PeerTransitGatewayId" : String,
-      "Tags" : [ Tag, ... ],
-      "TransitGatewayId" : String
+      "[PeerAccountId](#cfn-ec2-transitgatewaypeeringattachment-peeraccountid)" : {{String}},
+      "[PeerRegion](#cfn-ec2-transitgatewaypeeringattachment-peerregion)" : {{String}},
+      "[PeerTransitGatewayId](#cfn-ec2-transitgatewaypeeringattachment-peertransitgatewayid)" : {{String}},
+      "[Tags](#cfn-ec2-transitgatewaypeeringattachment-tags)" : {{[ Tag, ... ]}},
+      "[TransitGatewayId](#cfn-ec2-transitgatewaypeeringattachment-transitgatewayid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TransitGatewayPeeringAttachment
 Properties:
-  PeerAccountId: String
-  PeerRegion: String
-  PeerTransitGatewayId: String
-  Tags:
-    - Tag
-  TransitGatewayId: String
-
+  [PeerAccountId](#cfn-ec2-transitgatewaypeeringattachment-peeraccountid): {{String}}
+  [PeerRegion](#cfn-ec2-transitgatewaypeeringattachment-peerregion): {{String}}
+  [PeerTransitGatewayId](#cfn-ec2-transitgatewaypeeringattachment-peertransitgatewayid): {{String}}
+  [Tags](#cfn-ec2-transitgatewaypeeringattachment-tags): {{
+    - Tag}}
+  [TransitGatewayId](#cfn-ec2-transitgatewaypeeringattachment-transitgatewayid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-properties"></a>
 
-`PeerAccountId`
-
+`PeerAccountId`  <a name="cfn-ec2-transitgatewaypeeringattachment-peeraccountid"></a>
 The ID of the AWS account that owns the transit gateway.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerRegion`
-
+`PeerRegion`  <a name="cfn-ec2-transitgatewaypeeringattachment-peerregion"></a>
 The Region where the transit gateway that you want to create the peer for is located.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerTransitGatewayId`
-
+`PeerTransitGatewayId`  <a name="cfn-ec2-transitgatewaypeeringattachment-peertransitgatewayid"></a>
 The ID of the transit gateway in the PeerRegion.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-transitgatewaypeeringattachment-tags"></a>
 The tags for the transit gateway peering attachment.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-transitgatewaypeeringattachment-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-transitgatewaypeeringattachment-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitGatewayId`
-
+`TransitGatewayId`  <a name="cfn-ec2-transitgatewaypeeringattachment-transitgatewayid"></a>
 The ID of the transit gateway peering attachment.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the transit gateway peering attachment.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-ec2-transitgatewaypeeringattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the transit gateway peering attachment was created.
 
-`State`
+`State`  <a name="State-fn::getatt"></a>
+The state of the transit gateway peering attachment. Note that the `initiating` state has been deprecated.
 
-The state of the transit gateway peering attachment. Note that the
-`initiating` state has been deprecated.
-
-`TransitGatewayAttachmentId`
-
+`TransitGatewayAttachmentId`  <a name="TransitGatewayAttachmentId-fn::getatt"></a>
 The ID of the transit gateway peering attachment.
 
 ## See also
-
-- [CreateTransitGatewayPeeringAttachment](../../../../reference/awsec2/latest/apireference/api-createtransitgatewaypeeringattachment.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::TransitGatewayMulticastGroupSource
-
-PeeringAttachmentStatus
+<a name="aws-resource-ec2-transitgatewaypeeringattachment--seealso"></a>
++ [CreateTransitGatewayPeeringAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayPeeringAttachment.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

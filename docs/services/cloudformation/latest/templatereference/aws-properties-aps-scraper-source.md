@@ -2,66 +2,51 @@
 title: "AWS::APS::Scraper Source"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper Source
+<a name="aws-properties-aps-scraper-source"></a>
 
 The source of collected metrics for a scraper.
 
 ## Syntax
+<a name="aws-properties-aps-scraper-source-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-scraper-source-syntax.json"></a>
 
-```json
-
+```
 {
-  "EksConfiguration" : EksConfiguration,
-  "VpcConfiguration" : VpcConfiguration
+  "[EksConfiguration](#cfn-aps-scraper-source-eksconfiguration)" : {{EksConfiguration}},
+  "[VpcConfiguration](#cfn-aps-scraper-source-vpcconfiguration)" : {{VpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-scraper-source-syntax.yaml"></a>
 
-```yaml
-
-  EksConfiguration:
-    EksConfiguration
-  VpcConfiguration:
-    VpcConfiguration
-
+```
+  [EksConfiguration](#cfn-aps-scraper-source-eksconfiguration): {{
+    EksConfiguration}}
+  [VpcConfiguration](#cfn-aps-scraper-source-vpcconfiguration): {{
+    VpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-scraper-source-properties"></a>
 
-`EksConfiguration`
-
+`EksConfiguration`  <a name="cfn-aps-scraper-source-eksconfiguration"></a>
 The Amazon EKS cluster from which a scraper collects metrics.
+*Required*: No
+*Type*: [EksConfiguration](aws-properties-aps-scraper-eksconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [EksConfiguration](aws-properties-aps-scraper-eksconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-aps-scraper-source-vpcconfiguration"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [VpcConfiguration](aws-properties-aps-scraper-vpcconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScraperLoggingDestination
-
-Tag
+*Required*: No
+*Type*: [VpcConfiguration](aws-properties-aps-scraper-vpcconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

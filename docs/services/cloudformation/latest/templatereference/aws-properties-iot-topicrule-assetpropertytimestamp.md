@@ -2,66 +2,49 @@
 title: "AWS::IoT::TopicRule AssetPropertyTimestamp"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule AssetPropertyTimestamp
+<a name="aws-properties-iot-topicrule-assetpropertytimestamp"></a>
 
 An asset property timestamp entry containing the following information.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-assetpropertytimestamp-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-assetpropertytimestamp-syntax.json"></a>
 
-```json
-
+```
 {
-  "OffsetInNanos" : String,
-  "TimeInSeconds" : String
+  "[OffsetInNanos](#cfn-iot-topicrule-assetpropertytimestamp-offsetinnanos)" : {{String}},
+  "[TimeInSeconds](#cfn-iot-topicrule-assetpropertytimestamp-timeinseconds)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-assetpropertytimestamp-syntax.yaml"></a>
 
-```yaml
-
-  OffsetInNanos: String
-  TimeInSeconds: String
-
+```
+  [OffsetInNanos](#cfn-iot-topicrule-assetpropertytimestamp-offsetinnanos): {{String}}
+  [TimeInSeconds](#cfn-iot-topicrule-assetpropertytimestamp-timeinseconds): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-assetpropertytimestamp-properties"></a>
 
-`OffsetInNanos`
+`OffsetInNanos`  <a name="cfn-iot-topicrule-assetpropertytimestamp-offsetinnanos"></a>
+Optional. A string that contains the nanosecond time offset. Accepts substitution templates.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Optional. A string that contains the nanosecond time offset. Accepts substitution
-templates.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeInSeconds`
-
-A string that contains the time in seconds since epoch. Accepts substitution
-templates.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Action
-
-AssetPropertyValue
+`TimeInSeconds`  <a name="cfn-iot-topicrule-assetpropertytimestamp-timeinseconds"></a>
+A string that contains the time in seconds since epoch. Accepts substitution templates.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

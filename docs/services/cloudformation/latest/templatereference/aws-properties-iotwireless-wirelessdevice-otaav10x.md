@@ -2,69 +2,51 @@
 title: "AWS::IoTWireless::WirelessDevice OtaaV10x"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::WirelessDevice OtaaV10x
+<a name="aws-properties-iotwireless-wirelessdevice-otaav10x"></a>
 
 OTAA device object for v1.0.x
 
 ## Syntax
+<a name="aws-properties-iotwireless-wirelessdevice-otaav10x-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-wirelessdevice-otaav10x-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppEui" : String,
-  "AppKey" : String
+  "[AppEui](#cfn-iotwireless-wirelessdevice-otaav10x-appeui)" : {{String}},
+  "[AppKey](#cfn-iotwireless-wirelessdevice-otaav10x-appkey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-wirelessdevice-otaav10x-syntax.yaml"></a>
 
-```yaml
-
-  AppEui: String
-  AppKey: String
-
+```
+  [AppEui](#cfn-iotwireless-wirelessdevice-otaav10x-appeui): {{String}}
+  [AppKey](#cfn-iotwireless-wirelessdevice-otaav10x-appkey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-wirelessdevice-otaav10x-properties"></a>
 
-`AppEui`
+`AppEui`  <a name="cfn-iotwireless-wirelessdevice-otaav10x-appeui"></a>
+The AppEUI value. You specify this value when using LoRaWAN versions v1.0.2 or v1.0.3.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-fA-F0-9]{16}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The AppEUI value. You specify this value when using LoRaWAN versions v1.0.2 or
-v1.0.3.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-fA-F0-9]{16}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AppKey`
-
+`AppKey`  <a name="cfn-iotwireless-wirelessdevice-otaav10x-appkey"></a>
 The AppKey value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-fA-F0-9]{32}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoRaWANDevice
-
-OtaaV11
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-fA-F0-9]{32}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

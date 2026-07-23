@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Template DefaultRelativeDateTimeControlOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DefaultRelativeDateTimeControlOptions
+<a name="aws-properties-quicksight-template-defaultrelativedatetimecontroloptions"></a>
 
 The default options that correspond to the `RelativeDateTime` filter control type.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-defaultrelativedatetimecontroloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-defaultrelativedatetimecontroloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CommitMode" : String,
-  "DisplayOptions" : RelativeDateTimeControlDisplayOptions
+  "[CommitMode](#cfn-quicksight-template-defaultrelativedatetimecontroloptions-commitmode)" : {{String}},
+  "[DisplayOptions](#cfn-quicksight-template-defaultrelativedatetimecontroloptions-displayoptions)" : {{RelativeDateTimeControlDisplayOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-defaultrelativedatetimecontroloptions-syntax.yaml"></a>
 
-```yaml
-
-  CommitMode: String
-  DisplayOptions:
-    RelativeDateTimeControlDisplayOptions
-
+```
+  [CommitMode](#cfn-quicksight-template-defaultrelativedatetimecontroloptions-commitmode): {{String}}
+  [DisplayOptions](#cfn-quicksight-template-defaultrelativedatetimecontroloptions-displayoptions): {{
+    RelativeDateTimeControlDisplayOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-defaultrelativedatetimecontroloptions-properties"></a>
 
-`CommitMode`
-
+`CommitMode`  <a name="cfn-quicksight-template-defaultrelativedatetimecontroloptions-commitmode"></a>
 The visibility configuration of the Apply button on a `RelativeDateTimeControl`.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO | MANUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTO | MANUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-template-defaultrelativedatetimecontroloptions-displayoptions"></a>
 The display options of a control.
-
-_Required_: No
-
-_Type_: [RelativeDateTimeControlDisplayOptions](aws-properties-quicksight-template-relativedatetimecontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultPaginatedLayoutConfiguration
-
-DefaultSectionBasedLayoutConfiguration
+*Required*: No
+*Type*: [RelativeDateTimeControlDisplayOptions](aws-properties-quicksight-template-relativedatetimecontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

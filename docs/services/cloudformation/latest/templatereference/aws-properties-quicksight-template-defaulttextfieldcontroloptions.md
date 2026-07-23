@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template DefaultTextFieldControlOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DefaultTextFieldControlOptions
+<a name="aws-properties-quicksight-template-defaulttextfieldcontroloptions"></a>
 
 The default options that correspond to the `TextField` filter control type.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-defaulttextfieldcontroloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-defaulttextfieldcontroloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayOptions" : TextFieldControlDisplayOptions
+  "[DisplayOptions](#cfn-quicksight-template-defaulttextfieldcontroloptions-displayoptions)" : {{TextFieldControlDisplayOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-defaulttextfieldcontroloptions-syntax.yaml"></a>
 
-```yaml
-
-  DisplayOptions:
-    TextFieldControlDisplayOptions
-
+```
+  [DisplayOptions](#cfn-quicksight-template-defaulttextfieldcontroloptions-displayoptions): {{
+    TextFieldControlDisplayOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-defaulttextfieldcontroloptions-properties"></a>
 
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-template-defaulttextfieldcontroloptions-displayoptions"></a>
 The display options of a control.
-
-_Required_: No
-
-_Type_: [TextFieldControlDisplayOptions](aws-properties-quicksight-template-textfieldcontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultTextAreaControlOptions
-
-DestinationParameterValueConfiguration
+*Required*: No
+*Type*: [TextFieldControlDisplayOptions](aws-properties-quicksight-template-textfieldcontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

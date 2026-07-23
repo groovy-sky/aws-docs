@@ -2,121 +2,81 @@
 title: "AWS::SES::MailManagerTrafficPolicy PolicyCondition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy PolicyCondition
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition"></a>
 
-The email traffic filtering conditions which are contained in a traffic policy
-resource.
+The email traffic filtering conditions which are contained in a traffic policy resource.
 
-###### Important
-
-This data type is a UNION, so only one of the following members can be specified
-when used or returned.
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition-syntax.json"></a>
 
-```json
-
+```
 {
-  "BooleanExpression" : IngressBooleanExpression,
-  "IpExpression" : IngressIpv4Expression,
-  "Ipv6Expression" : IngressIpv6Expression,
-  "StringExpression" : IngressStringExpression,
-  "TlsExpression" : IngressTlsProtocolExpression
+  "[BooleanExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-booleanexpression)" : {{IngressBooleanExpression}},
+  "[IpExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-ipexpression)" : {{IngressIpv4Expression}},
+  "[Ipv6Expression](#cfn-ses-mailmanagertrafficpolicy-policycondition-ipv6expression)" : {{IngressIpv6Expression}},
+  "[StringExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-stringexpression)" : {{IngressStringExpression}},
+  "[TlsExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-tlsexpression)" : {{IngressTlsProtocolExpression}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition-syntax.yaml"></a>
 
-```yaml
-
-  BooleanExpression:
-    IngressBooleanExpression
-  IpExpression:
-    IngressIpv4Expression
-  Ipv6Expression:
-    IngressIpv6Expression
-  StringExpression:
-    IngressStringExpression
-  TlsExpression:
-    IngressTlsProtocolExpression
-
+```
+  [BooleanExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-booleanexpression): {{
+    IngressBooleanExpression}}
+  [IpExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-ipexpression): {{
+    IngressIpv4Expression}}
+  [Ipv6Expression](#cfn-ses-mailmanagertrafficpolicy-policycondition-ipv6expression): {{
+    IngressIpv6Expression}}
+  [StringExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-stringexpression): {{
+    IngressStringExpression}}
+  [TlsExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-tlsexpression): {{
+    IngressTlsProtocolExpression}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition-properties"></a>
 
-`BooleanExpression`
+`BooleanExpression`  <a name="cfn-ses-mailmanagertrafficpolicy-policycondition-booleanexpression"></a>
+This represents a boolean type condition matching on the incoming mail. It performs the boolean operation configured in 'Operator' and evaluates the 'Protocol' object against the 'Value'.
+*Required*: No
+*Type*: [IngressBooleanExpression](aws-properties-ses-mailmanagertrafficpolicy-ingressbooleanexpression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This represents a boolean type condition matching on the incoming mail. It performs
-the boolean operation configured in 'Operator' and evaluates the 'Protocol' object
-against the 'Value'.
+`IpExpression`  <a name="cfn-ses-mailmanagertrafficpolicy-policycondition-ipexpression"></a>
+This represents an IP based condition matching on the incoming mail. It performs the operation configured in 'Operator' and evaluates the 'Protocol' object against the 'Value'.
+*Required*: No
+*Type*: [IngressIpv4Expression](aws-properties-ses-mailmanagertrafficpolicy-ingressipv4expression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Ipv6Expression`  <a name="cfn-ses-mailmanagertrafficpolicy-policycondition-ipv6expression"></a>
+This represents an IPv6 based condition matching on the incoming mail. It performs the operation configured in 'Operator' and evaluates the 'Protocol' object against the 'Value'.
+*Required*: No
+*Type*: [IngressIpv6Expression](aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [IngressBooleanExpression](aws-properties-ses-mailmanagertrafficpolicy-ingressbooleanexpression.md)
+`StringExpression`  <a name="cfn-ses-mailmanagertrafficpolicy-policycondition-stringexpression"></a>
+This represents a string based condition matching on the incoming mail. It performs the string operation configured in 'Operator' and evaluates the 'Protocol' object against the 'Value'.
+*Required*: No
+*Type*: [IngressStringExpression](aws-properties-ses-mailmanagertrafficpolicy-ingressstringexpression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpExpression`
-
-This represents an IP based condition matching on the incoming mail. It performs the
-operation configured in 'Operator' and evaluates the 'Protocol' object against the
-'Value'.
-
-_Required_: No
-
-_Type_: [IngressIpv4Expression](aws-properties-ses-mailmanagertrafficpolicy-ingressipv4expression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ipv6Expression`
-
-This represents an IPv6 based condition matching on the incoming mail. It performs the
-operation configured in 'Operator' and evaluates the 'Protocol' object against the
-'Value'.
-
-_Required_: No
-
-_Type_: [IngressIpv6Expression](aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringExpression`
-
-This represents a string based condition matching on the incoming mail. It performs
-the string operation configured in 'Operator' and evaluates the 'Protocol' object
-against the 'Value'.
-
-_Required_: No
-
-_Type_: [IngressStringExpression](aws-properties-ses-mailmanagertrafficpolicy-ingressstringexpression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TlsExpression`
-
-This represents a TLS based condition matching on the incoming mail. It performs the
-operation configured in 'Operator' and evaluates the 'Protocol' object against the
-'Value'.
-
-_Required_: No
-
-_Type_: [IngressTlsProtocolExpression](aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngressTlsProtocolToEvaluate
-
-PolicyStatement
+`TlsExpression`  <a name="cfn-ses-mailmanagertrafficpolicy-policycondition-tlsexpression"></a>
+This represents a TLS based condition matching on the incoming mail. It performs the operation configured in 'Operator' and evaluates the 'Protocol' object against the 'Value'.
+*Required*: No
+*Type*: [IngressTlsProtocolExpression](aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

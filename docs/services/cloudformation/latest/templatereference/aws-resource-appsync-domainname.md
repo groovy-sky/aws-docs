@@ -2,143 +2,111 @@
 title: "AWS::AppSync::DomainName"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::DomainName
+<a name="aws-resource-appsync-domainname"></a>
 
-The `AWS::AppSync::DomainName` resource creates a
-`DomainNameConfig` object to configure a custom domain.
+The `AWS::AppSync::DomainName` resource creates a `DomainNameConfig` object to configure a custom domain.
 
 ## Syntax
+<a name="aws-resource-appsync-domainname-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appsync-domainname-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppSync::DomainName",
   "Properties" : {
-      "CertificateArn" : String,
-      "Description" : String,
-      "DomainName" : String,
-      "Tags" : [ Tag, ... ]
+      "[CertificateArn](#cfn-appsync-domainname-certificatearn)" : {{String}},
+      "[Description](#cfn-appsync-domainname-description)" : {{String}},
+      "[DomainName](#cfn-appsync-domainname-domainname)" : {{String}},
+      "[Tags](#cfn-appsync-domainname-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appsync-domainname-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppSync::DomainName
 Properties:
-  CertificateArn: String
-  Description: String
-  DomainName: String
-  Tags:
-    - Tag
-
+  [CertificateArn](#cfn-appsync-domainname-certificatearn): {{String}}
+  [Description](#cfn-appsync-domainname-description): {{String}}
+  [DomainName](#cfn-appsync-domainname-domainname): {{String}}
+  [Tags](#cfn-appsync-domainname-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-appsync-domainname-properties"></a>
 
-`CertificateArn`
-
+`CertificateArn`  <a name="cfn-appsync-domainname-certificatearn"></a>
 The Amazon Resource Name (ARN) of the certificate. This will be an AWS Certificate Manager certificate.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-z-]*:acm:[a-z0-9-]*:\d{12}:certificate/[0-9A-Za-z_/-]*$`
+*Minimum*: `3`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z-]*:acm:[a-z0-9-]*:\d{12}:certificate/[0-9A-Za-z_/-]*$`
-
-_Minimum_: `3`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-appsync-domainname-description"></a>
 The decription for your domain name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-appsync-domainname-domainname"></a>
 The domain name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(\*[a-z\d-]*\.)?([a-z\d-]+\.)+[a-z\d-]+$`
+*Minimum*: `1`
+*Maximum*: `253`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(\*[a-z\d-]*\.)?([a-z\d-]+\.)+[a-z\d-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `253`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-appsync-domainname-tags"></a>
 A set of tags (key-value pairs) for this domain name.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appsync-domainname-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appsync-domainname-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appsync-domainname-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appsync-domainname-return-values-ref"></a>
 
-When you pass the logical ID of an `AWS::AppSync::DomainName` resource to
-the intrinsic `Ref` function, the function returns the domain name.
+When you pass the logical ID of an `AWS::AppSync::DomainName` resource to the intrinsic `Ref` function, the function returns the domain name.
 
-For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref).
+ For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref).
 
 ### Fn::GetAtt
+<a name="aws-resource-appsync-domainname-return-values-fn--getatt"></a>
 
-`Fn::GetAtt` returns a value for a specified attribute of this type. The
-following are the available attributes and sample return values.
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt).
 
-`AppSyncDomainName`
+####
+<a name="aws-resource-appsync-domainname-return-values-fn--getatt-fn--getatt"></a>
 
+`AppSyncDomainName`  <a name="AppSyncDomainName-fn::getatt"></a>
 The domain name provided by AWS AppSync.
 
-`DomainName`
-
+`DomainName`  <a name="DomainName-fn::getatt"></a>
 The domain name.
 
-`DomainNameArn`
-
+`DomainNameArn`  <a name="DomainNameArn-fn::getatt"></a>
 The Amazon resource name (ARN) of the domain name.
 
-`HostedZoneId`
-
+`HostedZoneId`  <a name="HostedZoneId-fn::getatt"></a>
 The ID of your Amazon Route 53 hosted zone.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RelationalDatabaseConfig
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

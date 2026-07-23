@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Template FilledMapConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FilledMapConditionalFormatting
+<a name="aws-properties-quicksight-template-filledmapconditionalformatting"></a>
 
 The conditional formatting of a `FilledMapVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-filledmapconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-filledmapconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionalFormattingOptions" : [ FilledMapConditionalFormattingOption, ... ]
+  "[ConditionalFormattingOptions](#cfn-quicksight-template-filledmapconditionalformatting-conditionalformattingoptions)" : {{[ FilledMapConditionalFormattingOption, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-filledmapconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  ConditionalFormattingOptions:
-    - FilledMapConditionalFormattingOption
-
+```
+  [ConditionalFormattingOptions](#cfn-quicksight-template-filledmapconditionalformatting-conditionalformattingoptions): {{
+    - FilledMapConditionalFormattingOption}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-filledmapconditionalformatting-properties"></a>
 
-`ConditionalFormattingOptions`
-
+`ConditionalFormattingOptions`  <a name="cfn-quicksight-template-filledmapconditionalformatting-conditionalformattingoptions"></a>
 Conditional formatting options of a `FilledMapVisual`.
-
-_Required_: Yes
-
-_Type_: Array of [FilledMapConditionalFormattingOption](aws-properties-quicksight-template-filledmapconditionalformattingoption.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilledMapAggregatedFieldWells
-
-FilledMapConditionalFormattingOption
+*Required*: Yes
+*Type*: Array of [FilledMapConditionalFormattingOption](aws-properties-quicksight-template-filledmapconditionalformattingoption.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

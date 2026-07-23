@@ -2,84 +2,62 @@
 title: "AWS::InspectorV2::CodeSecurityScanConfiguration CodeSecurityScanConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CodeSecurityScanConfiguration CodeSecurityScanConfiguration
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration"></a>
 
 Contains the configuration settings for code security scans.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "continuousIntegrationScanConfiguration" : ContinuousIntegrationScanConfiguration,
-  "periodicScanConfiguration" : PeriodicScanConfiguration,
-  "ruleSetCategories" : [ String, ... ]
+  "[continuousIntegrationScanConfiguration](#cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-continuousintegrationscanconfiguration)" : {{ContinuousIntegrationScanConfiguration}},
+  "[periodicScanConfiguration](#cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-periodicscanconfiguration)" : {{PeriodicScanConfiguration}},
+  "[ruleSetCategories](#cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-rulesetcategories)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  continuousIntegrationScanConfiguration:
-    ContinuousIntegrationScanConfiguration
-  periodicScanConfiguration:
-    PeriodicScanConfiguration
-  ruleSetCategories:
-    - String
-
+```
+  [continuousIntegrationScanConfiguration](#cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-continuousintegrationscanconfiguration): {{
+    ContinuousIntegrationScanConfiguration}}
+  [periodicScanConfiguration](#cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-periodicscanconfiguration): {{
+    PeriodicScanConfiguration}}
+  [ruleSetCategories](#cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-rulesetcategories): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-properties"></a>
 
-`continuousIntegrationScanConfiguration`
+`continuousIntegrationScanConfiguration`  <a name="cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-continuousintegrationscanconfiguration"></a>
+Configuration settings for continuous integration scans that run automatically when code changes are made.
+*Required*: No
+*Type*: [ContinuousIntegrationScanConfiguration](aws-properties-inspectorv2-codesecurityscanconfiguration-continuousintegrationscanconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration settings for continuous integration scans that run automatically when
-code changes are made.
-
-_Required_: No
-
-_Type_: [ContinuousIntegrationScanConfiguration](aws-properties-inspectorv2-codesecurityscanconfiguration-continuousintegrationscanconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`periodicScanConfiguration`
-
+`periodicScanConfiguration`  <a name="cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-periodicscanconfiguration"></a>
 Configuration settings for periodic scans that run on a scheduled basis.
+*Required*: No
+*Type*: [PeriodicScanConfiguration](aws-properties-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PeriodicScanConfiguration](aws-properties-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ruleSetCategories`
-
+`ruleSetCategories`  <a name="cfn-inspectorv2-codesecurityscanconfiguration-codesecurityscanconfiguration-rulesetcategories"></a>
 The categories of security rules to be applied during the scan.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::InspectorV2::CodeSecurityScanConfiguration
-
-ContinuousIntegrationScanConfiguration
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

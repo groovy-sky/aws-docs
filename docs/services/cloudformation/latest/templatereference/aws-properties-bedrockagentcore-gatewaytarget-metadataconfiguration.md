@@ -2,79 +2,60 @@
 title: "AWS::BedrockAgentCore::GatewayTarget MetadataConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget MetadataConfiguration
+<a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration"></a>
 
 Configuration for HTTP header and query parameter propagation between the gateway and target servers.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowedQueryParameters" : [ String, ... ],
-  "AllowedRequestHeaders" : [ String, ... ],
-  "AllowedResponseHeaders" : [ String, ... ]
+  "[AllowedQueryParameters](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedqueryparameters)" : {{[ String, ... ]}},
+  "[AllowedRequestHeaders](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedrequestheaders)" : {{[ String, ... ]}},
+  "[AllowedResponseHeaders](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedresponseheaders)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AllowedQueryParameters:
-    - String
-  AllowedRequestHeaders:
-    - String
-  AllowedResponseHeaders:
-    - String
-
+```
+  [AllowedQueryParameters](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedqueryparameters): {{
+    - String}}
+  [AllowedRequestHeaders](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedrequestheaders): {{
+    - String}}
+  [AllowedResponseHeaders](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedresponseheaders): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration-properties"></a>
 
-`AllowedQueryParameters`
-
+`AllowedQueryParameters`  <a name="cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedqueryparameters"></a>
 A list of URL query parameters that are allowed to be propagated from incoming gateway URL to the target.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowedRequestHeaders`
-
+`AllowedRequestHeaders`  <a name="cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedrequestheaders"></a>
 A list of HTTP headers that are allowed to be propagated from incoming client requests to the target.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowedResponseHeaders`
-
+`AllowedResponseHeaders`  <a name="cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedresponseheaders"></a>
 A list of HTTP headers that are allowed to be propagated from the target response back to the client.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-McpTargetConfiguration
-
-OAuthCredentialProvider
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,59 @@
 title: "AWS::SSM::PatchBaseline PatchFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::PatchBaseline PatchFilter
+<a name="aws-properties-ssm-patchbaseline-patchfilter"></a>
 
 The `PatchFilter` property type defines a patch filter for an AWS Systems Manager patch baseline.
 
-The `PatchFilters` property of the [PatchFilterGroup](../userguide/aws-properties-ssm-patchbaseline-patchfiltergroup.md) property type contains a list of `PatchFilter`
-property types.
+The `PatchFilters` property of the [PatchFilterGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html) property type contains a list of `PatchFilter` property types.
 
-You can view lists of valid values for the patch properties by running the
-`DescribePatchProperties` command. For more information, see [DescribePatchProperties](../../../../reference/systems-manager/latest/apireference/api-describepatchproperties.md) in the _AWS Systems Manager API_
-_Reference_.
+You can view lists of valid values for the patch properties by running the `DescribePatchProperties` command. For more information, see [DescribePatchProperties](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchProperties.html) in the *AWS Systems Manager API Reference*.
 
 ## Syntax
+<a name="aws-properties-ssm-patchbaseline-patchfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-patchbaseline-patchfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Values" : [ String, ... ]
+  "[Key](#cfn-ssm-patchbaseline-patchfilter-key)" : {{String}},
+  "[Values](#cfn-ssm-patchbaseline-patchfilter-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-patchbaseline-patchfilter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Values:
-    - String
-
+```
+  [Key](#cfn-ssm-patchbaseline-patchfilter-key): {{String}}
+  [Values](#cfn-ssm-patchbaseline-patchfilter-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-patchbaseline-patchfilter-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ssm-patchbaseline-patchfilter-key"></a>
 The key for the filter.
+For information about valid keys, see [PatchFilter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PatchFilter.html) in the *AWS Systems Manager API Reference*.
+*Required*: No
+*Type*: String
+*Allowed values*: `ADVISORY_ID | ARCH | BUGZILLA_ID | CLASSIFICATION | CVE_ID | EPOCH | MSRC_SEVERITY | NAME | PATCH_ID | PATCH_SET | PRIORITY | PRODUCT | PRODUCT_FAMILY | RELEASE | REPOSITORY | SECTION | SECURITY | SEVERITY | VERSION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For information about valid keys, see [PatchFilter](../../../../reference/systems-manager/latest/apireference/api-patchfilter.md)
-in the _AWS Systems Manager API Reference_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ADVISORY_ID | ARCH | BUGZILLA_ID | CLASSIFICATION | CVE_ID | EPOCH | MSRC_SEVERITY | NAME | PATCH_ID | PATCH_SET | PRIORITY | PRODUCT | PRODUCT_FAMILY | RELEASE | REPOSITORY | SECTION | SECURITY | SEVERITY | VERSION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-ssm-patchbaseline-patchfilter-values"></a>
 The value for the filter key.
-
-For information about valid values for each key based on operating system type, see
-[PatchFilter](../../../../reference/systems-manager/latest/apireference/api-patchfilter.md)
-in the _AWS Systems Manager API Reference_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 0`
-
-_Maximum_: `64 | 20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SSM::PatchBaseline
-
-PatchFilterGroup
+For information about valid values for each key based on operating system type, see [PatchFilter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PatchFilter.html) in the *AWS Systems Manager API Reference*.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 0`
+*Maximum*: `64 | 20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

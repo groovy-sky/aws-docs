@@ -2,120 +2,99 @@
 title: "AWS::EC2::NetworkInsightsAccessScope"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInsightsAccessScope
+<a name="aws-resource-ec2-networkinsightsaccessscope"></a>
 
-Describes a Network Access Scope. A Network Access Scope defines outbound (egress) and inbound (ingress)
-traffic patterns, including sources, destinations, paths, and traffic types.
+Describes a Network Access Scope. A Network Access Scope defines outbound (egress) and inbound (ingress) traffic patterns, including sources, destinations, paths, and traffic types.
 
-Network Access Analyzer identifies unintended network access to your resources on
-AWS. When you start an analysis on a Network Access Scope, Network
-Access Analyzer produces findings. For more information, see the [Network Access Analyzer\
-User Guide](../../../vpc/latest/network-access-analyzer.md).
+Network Access Analyzer identifies unintended network access to your resources on AWS. When you start an analysis on a Network Access Scope, Network Access Analyzer produces findings. For more information, see the [Network Access Analyzer User Guide](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/).
 
 ## Syntax
+<a name="aws-resource-ec2-networkinsightsaccessscope-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-networkinsightsaccessscope-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::NetworkInsightsAccessScope",
   "Properties" : {
-      "ExcludePaths" : [ AccessScopePathRequest, ... ],
-      "MatchPaths" : [ AccessScopePathRequest, ... ],
-      "Tags" : [ Tag, ... ]
+      "[ExcludePaths](#cfn-ec2-networkinsightsaccessscope-excludepaths)" : {{[ AccessScopePathRequest, ... ]}},
+      "[MatchPaths](#cfn-ec2-networkinsightsaccessscope-matchpaths)" : {{[ AccessScopePathRequest, ... ]}},
+      "[Tags](#cfn-ec2-networkinsightsaccessscope-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-networkinsightsaccessscope-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::NetworkInsightsAccessScope
 Properties:
-  ExcludePaths:
-    - AccessScopePathRequest
-  MatchPaths:
-    - AccessScopePathRequest
-  Tags:
-    - Tag
-
+  [ExcludePaths](#cfn-ec2-networkinsightsaccessscope-excludepaths): {{
+    - AccessScopePathRequest}}
+  [MatchPaths](#cfn-ec2-networkinsightsaccessscope-matchpaths): {{
+    - AccessScopePathRequest}}
+  [Tags](#cfn-ec2-networkinsightsaccessscope-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-networkinsightsaccessscope-properties"></a>
 
-`ExcludePaths`
-
+`ExcludePaths`  <a name="cfn-ec2-networkinsightsaccessscope-excludepaths"></a>
 The paths to exclude.
+*Required*: No
+*Type*: Array of [AccessScopePathRequest](aws-properties-ec2-networkinsightsaccessscope-accessscopepathrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [AccessScopePathRequest](aws-properties-ec2-networkinsightsaccessscope-accessscopepathrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MatchPaths`
-
+`MatchPaths`  <a name="cfn-ec2-networkinsightsaccessscope-matchpaths"></a>
 The paths to match.
+*Required*: No
+*Type*: Array of [AccessScopePathRequest](aws-properties-ec2-networkinsightsaccessscope-accessscopepathrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [AccessScopePathRequest](aws-properties-ec2-networkinsightsaccessscope-accessscopepathrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-networkinsightsaccessscope-tags"></a>
 The tags.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-networkinsightsaccessscope-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-networkinsightsaccessscope-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-networkinsightsaccessscope-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-networkinsightsaccessscope-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the network insights scope.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-networkinsightsaccessscope-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedDate`
+####
+<a name="aws-resource-ec2-networkinsightsaccessscope-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedDate`  <a name="CreatedDate-fn::getatt"></a>
 The creation date.
 
-`NetworkInsightsAccessScopeArn`
-
+`NetworkInsightsAccessScopeArn`  <a name="NetworkInsightsAccessScopeArn-fn::getatt"></a>
 The ARN of the Network Access Scope.
 
-`NetworkInsightsAccessScopeId`
-
+`NetworkInsightsAccessScopeId`  <a name="NetworkInsightsAccessScopeId-fn::getatt"></a>
 The ID of the Network Access Scope.
 
-`UpdatedDate`
-
+`UpdatedDate`  <a name="UpdatedDate-fn::getatt"></a>
 The last updated date.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PortRange
-
-AccessScopePathRequest
 
 All content copied from https://docs.aws.amazon.com/.

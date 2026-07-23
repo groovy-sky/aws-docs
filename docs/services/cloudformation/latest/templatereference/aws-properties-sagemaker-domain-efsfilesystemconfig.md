@@ -2,78 +2,55 @@
 title: "AWS::SageMaker::Domain EFSFileSystemConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain EFSFileSystemConfig
+<a name="aws-properties-sagemaker-domain-efsfilesystemconfig"></a>
 
-The settings for assigning a custom Amazon EFS file system to a user profile or
-space for an Amazon SageMaker AI Domain.
+The settings for assigning a custom Amazon EFS file system to a user profile or space for an Amazon SageMaker AI Domain.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-efsfilesystemconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-efsfilesystemconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FileSystemId" : String,
-  "FileSystemPath" : String
+  "[FileSystemId](#cfn-sagemaker-domain-efsfilesystemconfig-filesystemid)" : {{String}},
+  "[FileSystemPath](#cfn-sagemaker-domain-efsfilesystemconfig-filesystempath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-efsfilesystemconfig-syntax.yaml"></a>
 
-```yaml
-
-  FileSystemId: String
-  FileSystemPath: String
-
+```
+  [FileSystemId](#cfn-sagemaker-domain-efsfilesystemconfig-filesystemid): {{String}}
+  [FileSystemPath](#cfn-sagemaker-domain-efsfilesystemconfig-filesystempath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-efsfilesystemconfig-properties"></a>
 
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-sagemaker-domain-efsfilesystemconfig-filesystemid"></a>
 The ID of your Amazon EFS file system.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(fs-[0-9a-f]{8,})$`
+*Minimum*: `11`
+*Maximum*: `21`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(fs-[0-9a-f]{8,})$`
-
-_Minimum_: `11`
-
-_Maximum_: `21`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileSystemPath`
-
-The path to the file system directory that is accessible in Amazon SageMaker AI Studio.
-Permitted users can access only this directory and below.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\/\S*$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DomainSettings
-
-FSxLustreFileSystemConfig
+`FileSystemPath`  <a name="cfn-sagemaker-domain-efsfilesystemconfig-filesystempath"></a>
+The path to the file system directory that is accessible in Amazon SageMaker AI Studio. Permitted users can access only this directory and below.
+*Required*: No
+*Type*: String
+*Pattern*: `^\/\S*$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

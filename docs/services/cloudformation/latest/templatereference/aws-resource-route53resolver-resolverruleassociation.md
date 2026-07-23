@@ -2,138 +2,105 @@
 title: "AWS::Route53Resolver::ResolverRuleAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::ResolverRuleAssociation
+<a name="aws-resource-route53resolver-resolverruleassociation"></a>
 
-In the response to an
-[AssociateResolverRule](../../../../reference/route53/latest/apireference/api-route53resolver-associateresolverrule.md),
-[DisassociateResolverRule](../../../../reference/route53/latest/apireference/api-route53resolver-disassociateresolverrule.md),
-or
-[ListResolverRuleAssociations](../../../../reference/route53/latest/apireference/api-route53resolver-listresolverruleassociations.md)
-request, provides information about an association between a resolver rule and a VPC. The association determines which
-DNS queries that originate in the VPC are forwarded to your network.
+In the response to an [AssociateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverRule.html), [DisassociateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverRule.html), or [ListResolverRuleAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRuleAssociations.html) request, provides information about an association between a resolver rule and a VPC. The association determines which DNS queries that originate in the VPC are forwarded to your network.
 
 ## Syntax
+<a name="aws-resource-route53resolver-resolverruleassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53resolver-resolverruleassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53Resolver::ResolverRuleAssociation",
   "Properties" : {
-      "Name" : String,
-      "ResolverRuleId" : String,
-      "VPCId" : String
+      "[Name](#cfn-route53resolver-resolverruleassociation-name)" : {{String}},
+      "[ResolverRuleId](#cfn-route53resolver-resolverruleassociation-resolverruleid)" : {{String}},
+      "[VPCId](#cfn-route53resolver-resolverruleassociation-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53resolver-resolverruleassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Resolver::ResolverRuleAssociation
 Properties:
-  Name: String
-  ResolverRuleId: String
-  VPCId: String
-
+  [Name](#cfn-route53resolver-resolverruleassociation-name): {{String}}
+  [ResolverRuleId](#cfn-route53resolver-resolverruleassociation-resolverruleid): {{String}}
+  [VPCId](#cfn-route53resolver-resolverruleassociation-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-route53resolver-resolverruleassociation-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-route53resolver-resolverruleassociation-name"></a>
 The name of an association between a Resolver rule and a VPC.
-
 The name can be up to 64 characters long and can contain letters (a-z, A-Z), numbers (0-9), hyphens (-), underscores (\_), and spaces. The name cannot consist of only numbers.
+*Required*: No
+*Type*: String
+*Pattern*: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResolverRuleId`
-
+`ResolverRuleId`  <a name="cfn-route53resolver-resolverruleassociation-resolverruleid"></a>
 The ID of the Resolver rule that you associated with the VPC that is specified by `VPCId`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VPCId`
-
+`VPCId`  <a name="cfn-route53resolver-resolverruleassociation-vpcid"></a>
 The ID of the VPC that you associated the Resolver rule with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-route53resolver-resolverruleassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53resolver-resolverruleassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `ResolverRuleAssociationId`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53resolver-resolverruleassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Name`
+####
+<a name="aws-resource-route53resolver-resolverruleassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`Name`  <a name="Name-fn::getatt"></a>
 The name of an association between a resolver rule and a VPC, such as `test.example.com in beta VPC`.
 
-`ResolverRuleAssociationId`
+`ResolverRuleAssociationId`  <a name="ResolverRuleAssociationId-fn::getatt"></a>
+The ID of the resolver rule association that you want to get information about, such as `rslvr-rrassoc-97242eaf88example`.
 
-The ID of the resolver rule association that you want to get information about,
-such as `rslvr-rrassoc-97242eaf88example`.
+`ResolverRuleId`  <a name="ResolverRuleId-fn::getatt"></a>
+The ID of the resolver rule that you associated with the VPC that is specified by `VPCId`, such as `rslvr-rr-5328a0899example`.
 
-`ResolverRuleId`
-
-The ID of the resolver rule that you associated with the VPC that is specified by `VPCId`,
-such as `rslvr-rr-5328a0899example`.
-
-`VPCId`
-
+`VPCId`  <a name="VPCId-fn::getatt"></a>
 The ID of the VPC that you associated the resolver rule with, such as `vpc-03cf94c75cexample`.
 
 ## See also
-
-- [ResolverRuleAssociation](../../../../reference/route53/latest/apireference/api-route53resolver-resolverruleassociation.md)
-in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetAddress
-
-Next
+<a name="aws-resource-route53resolver-resolverruleassociation--seealso"></a>
++ [ResolverRuleAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ResolverRuleAssociation.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

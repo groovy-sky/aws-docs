@@ -2,55 +2,42 @@
 title: "AWS::RefactorSpaces::Route DefaultRouteInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RefactorSpaces::Route DefaultRouteInput
+<a name="aws-properties-refactorspaces-route-defaultrouteinput"></a>
 
-The configuration for the default route type.
+ The configuration for the default route type.
 
 ## Syntax
+<a name="aws-properties-refactorspaces-route-defaultrouteinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-refactorspaces-route-defaultrouteinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActivationState" : String
+  "[ActivationState](#cfn-refactorspaces-route-defaultrouteinput-activationstate)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-refactorspaces-route-defaultrouteinput-syntax.yaml"></a>
 
-```yaml
-
-  ActivationState: String
-
+```
+  [ActivationState](#cfn-refactorspaces-route-defaultrouteinput-activationstate): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-refactorspaces-route-defaultrouteinput-properties"></a>
 
-`ActivationState`
-
-If set to `ACTIVE`, traffic is forwarded to this route’s service after the
-route is created.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INACTIVE | ACTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RefactorSpaces::Route
-
-Tag
+`ActivationState`  <a name="cfn-refactorspaces-route-defaultrouteinput-activationstate"></a>
+If set to `ACTIVE`, traffic is forwarded to this route’s service after the route is created.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INACTIVE | ACTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

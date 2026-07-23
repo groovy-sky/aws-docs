@@ -2,124 +2,98 @@
 title: "AWS::RDS::OptionGroup OptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::OptionGroup OptionConfiguration
+<a name="aws-properties-rds-optiongroup-optionconfiguration"></a>
 
-The `OptionConfiguration` property type specifies an individual option, and
-its settings, within an `AWS::RDS::OptionGroup` resource.
+The `OptionConfiguration` property type specifies an individual option, and its settings, within an `AWS::RDS::OptionGroup` resource.
 
 ## Syntax
+<a name="aws-properties-rds-optiongroup-optionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rds-optiongroup-optionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DBSecurityGroupMemberships" : [ String, ... ],
-  "OptionName" : String,
-  "OptionSettings" : [ OptionSetting, ... ],
-  "OptionVersion" : String,
-  "Port" : Integer,
-  "VpcSecurityGroupMemberships" : [ String, ... ]
+  "[DBSecurityGroupMemberships](#cfn-rds-optiongroup-optionconfiguration-dbsecuritygroupmemberships)" : {{[ String, ... ]}},
+  "[OptionName](#cfn-rds-optiongroup-optionconfiguration-optionname)" : {{String}},
+  "[OptionSettings](#cfn-rds-optiongroup-optionconfiguration-optionsettings)" : {{[ OptionSetting, ... ]}},
+  "[OptionVersion](#cfn-rds-optiongroup-optionconfiguration-optionversion)" : {{String}},
+  "[Port](#cfn-rds-optiongroup-optionconfiguration-port)" : {{Integer}},
+  "[VpcSecurityGroupMemberships](#cfn-rds-optiongroup-optionconfiguration-vpcsecuritygroupmemberships)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rds-optiongroup-optionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DBSecurityGroupMemberships:
-    - String
-  OptionName: String
-  OptionSettings:
-    - OptionSetting
-  OptionVersion: String
-  Port: Integer
-  VpcSecurityGroupMemberships:
-    - String
-
+```
+  [DBSecurityGroupMemberships](#cfn-rds-optiongroup-optionconfiguration-dbsecuritygroupmemberships): {{
+    - String}}
+  [OptionName](#cfn-rds-optiongroup-optionconfiguration-optionname): {{String}}
+  [OptionSettings](#cfn-rds-optiongroup-optionconfiguration-optionsettings): {{
+    - OptionSetting}}
+  [OptionVersion](#cfn-rds-optiongroup-optionconfiguration-optionversion): {{String}}
+  [Port](#cfn-rds-optiongroup-optionconfiguration-port): {{Integer}}
+  [VpcSecurityGroupMemberships](#cfn-rds-optiongroup-optionconfiguration-vpcsecuritygroupmemberships): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-rds-optiongroup-optionconfiguration-properties"></a>
 
-`DBSecurityGroupMemberships`
-
+`DBSecurityGroupMemberships`  <a name="cfn-rds-optiongroup-optionconfiguration-dbsecuritygroupmemberships"></a>
 A list of DB security groups used for this option.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OptionName`
-
+`OptionName`  <a name="cfn-rds-optiongroup-optionconfiguration-optionname"></a>
 The configuration of options to include in a group.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OptionSettings`
-
+`OptionSettings`  <a name="cfn-rds-optiongroup-optionconfiguration-optionsettings"></a>
 The option settings to include in an option group.
+*Required*: No
+*Type*: Array of [OptionSetting](aws-properties-rds-optiongroup-optionsetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [OptionSetting](aws-properties-rds-optiongroup-optionsetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OptionVersion`
-
+`OptionVersion`  <a name="cfn-rds-optiongroup-optionconfiguration-optionversion"></a>
 The version for the option.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-rds-optiongroup-optionconfiguration-port"></a>
 The optional port for the option.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcSecurityGroupMemberships`
-
+`VpcSecurityGroupMemberships`  <a name="cfn-rds-optiongroup-optionconfiguration-vpcsecuritygroupmemberships"></a>
 A list of VPC security group names used for this option.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-rds-optiongroup-optionconfiguration--examples"></a>
 
 ### Specify an option configuration
+<a name="aws-properties-rds-optiongroup-optionconfiguration--examples--Specify_an_option_configuration"></a>
 
-The following example template uses `OptionName` and
-`OptionVersion` parameters when creating an
-`AWS::RDS::OptionGroup` resource.
+The following example template uses `OptionName` and `OptionVersion` parameters when creating an `AWS::RDS::OptionGroup` resource.
 
 #### JSON
+<a name="aws-properties-rds-optiongroup-optionconfiguration--examples--Specify_an_option_configuration--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "APEX has a dependency on XMLDB, so, there must be at least one XMLDB when there is an APEX",
@@ -158,9 +132,9 @@ The following example template uses `OptionName` and
 ```
 
 #### YAML
+<a name="aws-properties-rds-optiongroup-optionconfiguration--examples--Specify_an_option_configuration--yaml"></a>
 
-```yaml
-
+```
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: "APEX has a dependency on XMLDB, so, there must be at least one XMLDB when there is an APEX"
@@ -183,11 +157,5 @@ Resources:
       OptionGroupDescription: "testing creating optionGroup with APEX version"
     Type: AWS::RDS::OptionGroup
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RDS::OptionGroup
-
-OptionSetting
 
 All content copied from https://docs.aws.amazon.com/.

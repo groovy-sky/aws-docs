@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Dashboard ParameterSelectableValues"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ParameterSelectableValues
+<a name="aws-properties-quicksight-dashboard-parameterselectablevalues"></a>
 
 A list of selectable values that are used in a control.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-parameterselectablevalues-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-parameterselectablevalues-syntax.json"></a>
 
-```json
-
+```
 {
-  "LinkToDataSetColumn" : ColumnIdentifier,
-  "Values" : [ String, ... ]
+  "[LinkToDataSetColumn](#cfn-quicksight-dashboard-parameterselectablevalues-linktodatasetcolumn)" : {{ColumnIdentifier}},
+  "[Values](#cfn-quicksight-dashboard-parameterselectablevalues-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-parameterselectablevalues-syntax.yaml"></a>
 
-```yaml
-
-  LinkToDataSetColumn:
-    ColumnIdentifier
-  Values:
-    - String
-
+```
+  [LinkToDataSetColumn](#cfn-quicksight-dashboard-parameterselectablevalues-linktodatasetcolumn): {{
+    ColumnIdentifier}}
+  [Values](#cfn-quicksight-dashboard-parameterselectablevalues-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-parameterselectablevalues-properties"></a>
 
-`LinkToDataSetColumn`
-
+`LinkToDataSetColumn`  <a name="cfn-quicksight-dashboard-parameterselectablevalues-linktodatasetcolumn"></a>
 The column identifier that fetches values from the data set.
+*Required*: No
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-quicksight-dashboard-parameterselectablevalues-values"></a>
 The values that are used in `ParameterSelectableValues`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Parameters
-
-ParameterSliderControl
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

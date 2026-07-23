@@ -2,54 +2,42 @@
 title: "AWS::OpenSearchService::Domain DeploymentStrategyOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchService::Domain DeploymentStrategyOptions
+<a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions"></a>
 
 Specifies the deployment strategy options for the domain.
 
 ## Syntax
+<a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeploymentStrategy" : String
+  "[DeploymentStrategy](#cfn-opensearchservice-domain-deploymentstrategyoptions-deploymentstrategy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions-syntax.yaml"></a>
 
-```yaml
-
-  DeploymentStrategy: String
-
+```
+  [DeploymentStrategy](#cfn-opensearchservice-domain-deploymentstrategyoptions-deploymentstrategy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions-properties"></a>
 
-`DeploymentStrategy`
-
+`DeploymentStrategy`  <a name="cfn-opensearchservice-domain-deploymentstrategyoptions-deploymentstrategy"></a>
 Specifies the deployment strategy for the domain. Valid values are `Default` and `CapacityOptimized`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Default | CapacityOptimized`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColdStorageOptions
-
-DomainEndpointOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `Default | CapacityOptimized`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

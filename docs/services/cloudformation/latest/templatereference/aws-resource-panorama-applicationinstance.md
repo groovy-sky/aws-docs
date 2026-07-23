@@ -2,224 +2,165 @@
 title: "AWS::Panorama::ApplicationInstance"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Panorama::ApplicationInstance
+<a name="aws-resource-panorama-applicationinstance"></a>
 
-###### Important
-
-End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. After May 31, 2026,
-you will no longer be able to access the AWS Panorama console or AWS Panorama resources. For more information, see
-[AWS Panorama end of support](../../../panorama/latest/dev/panorama-end-of-support.md).
+**Important**
+End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. After May 31, 2026, you will no longer be able to access the AWS Panorama console or AWS Panorama resources. For more information, see [AWS Panorama end of support](https://docs.aws.amazon.com/panorama/latest/dev/panorama-end-of-support.html).
 
 Creates an application instance and deploys it to a device.
 
 ## Syntax
+<a name="aws-resource-panorama-applicationinstance-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-panorama-applicationinstance-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Panorama::ApplicationInstance",
   "Properties" : {
-      "ApplicationInstanceIdToReplace" : String,
-      "DefaultRuntimeContextDevice" : String,
-      "Description" : String,
-      "ManifestOverridesPayload" : ManifestOverridesPayload,
-      "ManifestPayload" : ManifestPayload,
-      "Name" : String,
-      "RuntimeRoleArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[ApplicationInstanceIdToReplace](#cfn-panorama-applicationinstance-applicationinstanceidtoreplace)" : {{String}},
+      "[DefaultRuntimeContextDevice](#cfn-panorama-applicationinstance-defaultruntimecontextdevice)" : {{String}},
+      "[Description](#cfn-panorama-applicationinstance-description)" : {{String}},
+      "[ManifestOverridesPayload](#cfn-panorama-applicationinstance-manifestoverridespayload)" : {{ManifestOverridesPayload}},
+      "[ManifestPayload](#cfn-panorama-applicationinstance-manifestpayload)" : {{ManifestPayload}},
+      "[Name](#cfn-panorama-applicationinstance-name)" : {{String}},
+      "[RuntimeRoleArn](#cfn-panorama-applicationinstance-runtimerolearn)" : {{String}},
+      "[Tags](#cfn-panorama-applicationinstance-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-panorama-applicationinstance-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Panorama::ApplicationInstance
 Properties:
-  ApplicationInstanceIdToReplace: String
-  DefaultRuntimeContextDevice: String
-  Description: String
-  ManifestOverridesPayload:
-    ManifestOverridesPayload
-  ManifestPayload:
-    ManifestPayload
-  Name: String
-  RuntimeRoleArn: String
-  Tags:
-    - Tag
-
+  [ApplicationInstanceIdToReplace](#cfn-panorama-applicationinstance-applicationinstanceidtoreplace): {{String}}
+  [DefaultRuntimeContextDevice](#cfn-panorama-applicationinstance-defaultruntimecontextdevice): {{String}}
+  [Description](#cfn-panorama-applicationinstance-description): {{String}}
+  [ManifestOverridesPayload](#cfn-panorama-applicationinstance-manifestoverridespayload): {{
+    ManifestOverridesPayload}}
+  [ManifestPayload](#cfn-panorama-applicationinstance-manifestpayload): {{
+    ManifestPayload}}
+  [Name](#cfn-panorama-applicationinstance-name): {{String}}
+  [RuntimeRoleArn](#cfn-panorama-applicationinstance-runtimerolearn): {{String}}
+  [Tags](#cfn-panorama-applicationinstance-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-panorama-applicationinstance-properties"></a>
 
-`ApplicationInstanceIdToReplace`
-
+`ApplicationInstanceIdToReplace`  <a name="cfn-panorama-applicationinstance-applicationinstanceidtoreplace"></a>
 The ID of an application instance to replace with the new instance.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-\_]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-\_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DefaultRuntimeContextDevice`
-
+`DefaultRuntimeContextDevice`  <a name="cfn-panorama-applicationinstance-defaultruntimecontextdevice"></a>
 The device's ID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-\_]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-\_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-panorama-applicationinstance-description"></a>
 A description for the application instance.
+*Required*: No
+*Type*: String
+*Pattern*: `^.*$`
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.*$`
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ManifestOverridesPayload`
-
+`ManifestOverridesPayload`  <a name="cfn-panorama-applicationinstance-manifestoverridespayload"></a>
 Setting overrides for the application manifest.
+*Required*: No
+*Type*: [ManifestOverridesPayload](aws-properties-panorama-applicationinstance-manifestoverridespayload.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ManifestOverridesPayload](aws-properties-panorama-applicationinstance-manifestoverridespayload.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ManifestPayload`
-
+`ManifestPayload`  <a name="cfn-panorama-applicationinstance-manifestpayload"></a>
 The application's manifest document.
+*Required*: Yes
+*Type*: [ManifestPayload](aws-properties-panorama-applicationinstance-manifestpayload.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [ManifestPayload](aws-properties-panorama-applicationinstance-manifestpayload.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-panorama-applicationinstance-name"></a>
 A name for the application instance.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-\_]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-\_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RuntimeRoleArn`
-
+`RuntimeRoleArn`  <a name="cfn-panorama-applicationinstance-runtimerolearn"></a>
 The ARN of a runtime role for the application instance.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[a-z0-9][-.a-z0-9]{0,62}:iam::[0-9]{12}:role/.+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z0-9][-.a-z0-9]{0,62}:iam::[0-9]{12}:role/.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-panorama-applicationinstance-tags"></a>
 Tags for the application instance.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-panorama-applicationinstance-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-panorama-applicationinstance-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-panorama-applicationinstance-return-values"></a>
 
 ### Ref
+<a name="aws-resource-panorama-applicationinstance-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a unique identifier for this resource.
 
 ### Fn::GetAtt
+<a name="aws-resource-panorama-applicationinstance-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ApplicationInstanceId`
+####
+<a name="aws-resource-panorama-applicationinstance-return-values-fn--getatt-fn--getatt"></a>
 
+`ApplicationInstanceId`  <a name="ApplicationInstanceId-fn::getatt"></a>
 The application instance's ID.
 
-`Arn`
-
+`Arn`  <a name="Arn-fn::getatt"></a>
 The application instance's ARN.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The application instance's created time.
 
-`DefaultRuntimeContextDeviceName`
-
+`DefaultRuntimeContextDeviceName`  <a name="DefaultRuntimeContextDeviceName-fn::getatt"></a>
 The application instance's default runtime context device name.
 
-`HealthStatus`
-
+`HealthStatus`  <a name="HealthStatus-fn::getatt"></a>
 The application instance's health status.
 
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 The application instance's last updated time.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The application instance's status.
 
-`StatusDescription`
-
+`StatusDescription`  <a name="StatusDescription-fn::getatt"></a>
 The application instance's status description.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Panorama
-
-ManifestOverridesPayload
 
 All content copied from https://docs.aws.amazon.com/.

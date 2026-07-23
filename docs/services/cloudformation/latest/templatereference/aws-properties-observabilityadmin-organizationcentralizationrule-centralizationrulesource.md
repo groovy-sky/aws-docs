@@ -2,85 +2,71 @@
 title: "AWS::ObservabilityAdmin::OrganizationCentralizationRule CentralizationRuleSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationCentralizationRule CentralizationRuleSource
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource"></a>
 
 Configuration specifying the source of telemetry data to be centralized.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource-syntax.json"></a>
 
-```json
-
+```
 {
-  "Regions" : [ String, ... ],
-  "Scope" : String,
-  "SourceLogsConfiguration" : SourceLogsConfiguration
+  "[Regions](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-regions)" : {{[ String, ... ]}},
+  "[Scope](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-scope)" : {{String}},
+  "[SourceLogsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-sourcelogsconfiguration)" : {{SourceLogsConfiguration}},
+  "[SourceMetricsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-sourcemetricsconfiguration)" : {{SourceMetricsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource-syntax.yaml"></a>
 
-```yaml
-
-  Regions:
-    - String
-  Scope: String
-  SourceLogsConfiguration:
-    SourceLogsConfiguration
-
+```
+  [Regions](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-regions): {{
+    - String}}
+  [Scope](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-scope): {{String}}
+  [SourceLogsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-sourcelogsconfiguration): {{
+    SourceLogsConfiguration}}
+  [SourceMetricsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-sourcemetricsconfiguration): {{
+    SourceMetricsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource-properties"></a>
 
-`Regions`
-
+`Regions`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-regions"></a>
 The list of source regions from which telemetry data should be centralized.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Scope`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-scope"></a>
+The organizational scope from which telemetry data should be centralized, specified using organization id, accounts or organizational unit ids.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scope`
-
-The organizational scope from which telemetry data should be centralized, specified using
-organization id, accounts or organizational unit ids.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceLogsConfiguration`
-
+`SourceLogsConfiguration`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-sourcelogsconfiguration"></a>
 Log specific configuration for centralization source log groups.
+*Required*: No
+*Type*: [SourceLogsConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SourceLogsConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CentralizationRuleDestination
-
-DestinationLogsConfiguration
+`SourceMetricsConfiguration`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-sourcemetricsconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [SourceMetricsConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-sourcemetricsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

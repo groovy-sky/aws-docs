@@ -2,76 +2,57 @@
 title: "AWS::AppSync::DataSource DeltaSyncConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::DataSource DeltaSyncConfig
+<a name="aws-properties-appsync-datasource-deltasyncconfig"></a>
 
 Describes a Delta Sync configuration.
 
 ## Syntax
+<a name="aws-properties-appsync-datasource-deltasyncconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-datasource-deltasyncconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "BaseTableTTL" : String,
-  "DeltaSyncTableName" : String,
-  "DeltaSyncTableTTL" : String
+  "[BaseTableTTL](#cfn-appsync-datasource-deltasyncconfig-basetablettl)" : {{String}},
+  "[DeltaSyncTableName](#cfn-appsync-datasource-deltasyncconfig-deltasynctablename)" : {{String}},
+  "[DeltaSyncTableTTL](#cfn-appsync-datasource-deltasyncconfig-deltasynctablettl)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-datasource-deltasyncconfig-syntax.yaml"></a>
 
-```yaml
-
-  BaseTableTTL: String
-  DeltaSyncTableName: String
-  DeltaSyncTableTTL: String
-
+```
+  [BaseTableTTL](#cfn-appsync-datasource-deltasyncconfig-basetablettl): {{String}}
+  [DeltaSyncTableName](#cfn-appsync-datasource-deltasyncconfig-deltasynctablename): {{String}}
+  [DeltaSyncTableTTL](#cfn-appsync-datasource-deltasyncconfig-deltasynctablettl): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-datasource-deltasyncconfig-properties"></a>
 
-`BaseTableTTL`
-
+`BaseTableTTL`  <a name="cfn-appsync-datasource-deltasyncconfig-basetablettl"></a>
 The number of minutes that an Item is stored in the data source.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeltaSyncTableName`
-
+`DeltaSyncTableName`  <a name="cfn-appsync-datasource-deltasyncconfig-deltasynctablename"></a>
 The Delta Sync table name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeltaSyncTableTTL`
-
+`DeltaSyncTableTTL`  <a name="cfn-appsync-datasource-deltasyncconfig-deltasynctablettl"></a>
 The number of minutes that a Delta Sync log entry is stored in the Delta Sync table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AwsIamConfig
-
-DynamoDBConfig
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

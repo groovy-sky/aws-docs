@@ -2,66 +2,51 @@
 title: "AWS::AppTest::TestCase DatabaseCDC"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase DatabaseCDC
+<a name="aws-properties-apptest-testcase-databasecdc"></a>
 
 Defines the Change Data Capture (CDC) of the database.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-databasecdc-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-databasecdc-syntax.json"></a>
 
-```json
-
+```
 {
-  "SourceMetadata" : SourceDatabaseMetadata,
-  "TargetMetadata" : TargetDatabaseMetadata
+  "[SourceMetadata](#cfn-apptest-testcase-databasecdc-sourcemetadata)" : {{SourceDatabaseMetadata}},
+  "[TargetMetadata](#cfn-apptest-testcase-databasecdc-targetmetadata)" : {{TargetDatabaseMetadata}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-databasecdc-syntax.yaml"></a>
 
-```yaml
-
-  SourceMetadata:
-    SourceDatabaseMetadata
-  TargetMetadata:
-    TargetDatabaseMetadata
-
+```
+  [SourceMetadata](#cfn-apptest-testcase-databasecdc-sourcemetadata): {{
+    SourceDatabaseMetadata}}
+  [TargetMetadata](#cfn-apptest-testcase-databasecdc-targetmetadata): {{
+    TargetDatabaseMetadata}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-databasecdc-properties"></a>
 
-`SourceMetadata`
-
+`SourceMetadata`  <a name="cfn-apptest-testcase-databasecdc-sourcemetadata"></a>
 The source metadata of the database CDC.
+*Required*: Yes
+*Type*: [SourceDatabaseMetadata](aws-properties-apptest-testcase-sourcedatabasemetadata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SourceDatabaseMetadata](aws-properties-apptest-testcase-sourcedatabasemetadata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetMetadata`
-
+`TargetMetadata`  <a name="cfn-apptest-testcase-databasecdc-targetmetadata"></a>
 The target metadata of the database CDC.
-
-_Required_: Yes
-
-_Type_: [TargetDatabaseMetadata](aws-properties-apptest-testcase-targetdatabasemetadata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CompareAction
-
-DataSet
+*Required*: Yes
+*Type*: [TargetDatabaseMetadata](aws-properties-apptest-testcase-targetdatabasemetadata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

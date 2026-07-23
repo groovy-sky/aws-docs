@@ -2,53 +2,42 @@
 title: "AWS::APS::AnomalyDetector AnomalyDetectorConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::AnomalyDetector AnomalyDetectorConfiguration
+<a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration"></a>
 
 The configuration for the anomaly detection algorithm.
 
 ## Syntax
+<a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "RandomCutForest" : RandomCutForestConfiguration
+  "[RandomCutForest](#cfn-aps-anomalydetector-anomalydetectorconfiguration-randomcutforest)" : {{RandomCutForestConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  RandomCutForest:
-    RandomCutForestConfiguration
-
+```
+  [RandomCutForest](#cfn-aps-anomalydetector-anomalydetectorconfiguration-randomcutforest): {{
+    RandomCutForestConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration-properties"></a>
 
-`RandomCutForest`
-
+`RandomCutForest`  <a name="cfn-aps-anomalydetector-anomalydetectorconfiguration-randomcutforest"></a>
 The Random Cut Forest algorithm configuration for anomaly detection.
-
-_Required_: Yes
-
-_Type_: [RandomCutForestConfiguration](aws-properties-aps-anomalydetector-randomcutforestconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::APS::AnomalyDetector
-
-IgnoreNearExpected
+*Required*: Yes
+*Type*: [RandomCutForestConfiguration](aws-properties-aps-anomalydetector-randomcutforestconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

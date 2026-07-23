@@ -2,108 +2,77 @@
 title: "AWS::QuickSight::Dashboard Parameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard Parameters
+<a name="aws-properties-quicksight-dashboard-parameters"></a>
 
 A list of Quick Sight parameters and the list's override values.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-parameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-parameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateTimeParameters" : [ DateTimeParameter, ... ],
-  "DecimalParameters" : [ DecimalParameter, ... ],
-  "IntegerParameters" : [ IntegerParameter, ... ],
-  "StringParameters" : [ StringParameter, ... ]
+  "[DateTimeParameters](#cfn-quicksight-dashboard-parameters-datetimeparameters)" : {{[ DateTimeParameter, ... ]}},
+  "[DecimalParameters](#cfn-quicksight-dashboard-parameters-decimalparameters)" : {{[ DecimalParameter, ... ]}},
+  "[IntegerParameters](#cfn-quicksight-dashboard-parameters-integerparameters)" : {{[ IntegerParameter, ... ]}},
+  "[StringParameters](#cfn-quicksight-dashboard-parameters-stringparameters)" : {{[ StringParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-parameters-syntax.yaml"></a>
 
-```yaml
-
-  DateTimeParameters:
-    - DateTimeParameter
-  DecimalParameters:
-    - DecimalParameter
-  IntegerParameters:
-    - IntegerParameter
-  StringParameters:
-    - StringParameter
-
+```
+  [DateTimeParameters](#cfn-quicksight-dashboard-parameters-datetimeparameters): {{
+    - DateTimeParameter}}
+  [DecimalParameters](#cfn-quicksight-dashboard-parameters-decimalparameters): {{
+    - DecimalParameter}}
+  [IntegerParameters](#cfn-quicksight-dashboard-parameters-integerparameters): {{
+    - IntegerParameter}}
+  [StringParameters](#cfn-quicksight-dashboard-parameters-stringparameters): {{
+    - StringParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-parameters-properties"></a>
 
-`DateTimeParameters`
-
+`DateTimeParameters`  <a name="cfn-quicksight-dashboard-parameters-datetimeparameters"></a>
 The parameters that have a data type of date-time.
+*Required*: No
+*Type*: Array of [DateTimeParameter](aws-properties-quicksight-dashboard-datetimeparameter.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DateTimeParameter](aws-properties-quicksight-dashboard-datetimeparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DecimalParameters`
-
+`DecimalParameters`  <a name="cfn-quicksight-dashboard-parameters-decimalparameters"></a>
 The parameters that have a data type of decimal.
+*Required*: No
+*Type*: Array of [DecimalParameter](aws-properties-quicksight-dashboard-decimalparameter.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DecimalParameter](aws-properties-quicksight-dashboard-decimalparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegerParameters`
-
+`IntegerParameters`  <a name="cfn-quicksight-dashboard-parameters-integerparameters"></a>
 The parameters that have a data type of integer.
+*Required*: No
+*Type*: Array of [IntegerParameter](aws-properties-quicksight-dashboard-integerparameter.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [IntegerParameter](aws-properties-quicksight-dashboard-integerparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringParameters`
-
+`StringParameters`  <a name="cfn-quicksight-dashboard-parameters-stringparameters"></a>
 The parameters that have a data type of string.
-
-_Required_: No
-
-_Type_: Array of [StringParameter](aws-properties-quicksight-dashboard-stringparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterListControl
-
-ParameterSelectableValues
+*Required*: No
+*Type*: Array of [StringParameter](aws-properties-quicksight-dashboard-stringparameter.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

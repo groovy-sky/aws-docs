@@ -2,78 +2,55 @@
 title: "AWS::SageMaker::Cluster ClusterFsxOpenZfsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Cluster ClusterFsxOpenZfsConfig
+<a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig"></a>
 
-Defines the configuration for attaching an Amazon FSx for OpenZFS file system to
-instances in a SageMaker HyperPod cluster instance group.
+Defines the configuration for attaching an Amazon FSx for OpenZFS file system to instances in a SageMaker HyperPod cluster instance group.
 
 ## Syntax
+<a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DnsName" : String,
-  "MountPath" : String
+  "[DnsName](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-dnsname)" : {{String}},
+  "[MountPath](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-mountpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig-syntax.yaml"></a>
 
-```yaml
-
-  DnsName: String
-  MountPath: String
-
+```
+  [DnsName](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-dnsname): {{String}}
+  [MountPath](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-mountpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig-properties"></a>
 
-`DnsName`
-
+`DnsName`  <a name="cfn-sagemaker-cluster-clusterfsxopenzfsconfig-dnsname"></a>
 The DNS name of the Amazon FSx for OpenZFS file system.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^((fs|fc)i?-[0-9a-f]{8,}\..{4,253})$`
+*Minimum*: `16`
+*Maximum*: `275`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^((fs|fc)i?-[0-9a-f]{8,}\..{4,253})$`
-
-_Minimum_: `16`
-
-_Maximum_: `275`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MountPath`
-
-The local path where the Amazon FSx for OpenZFS file system is mounted on
-instances.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^/(?!/)(?!.*/$)[a-zA-Z0-9._-]+(/[a-zA-Z0-9._-]+)*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClusterFsxLustreConfig
-
-ClusterInstanceGroup
+`MountPath`  <a name="cfn-sagemaker-cluster-clusterfsxopenzfsconfig-mountpath"></a>
+The local path where the Amazon FSx for OpenZFS file system is mounted on instances.
+*Required*: No
+*Type*: String
+*Pattern*: `^/(?!/)(?!.*/$)[a-zA-Z0-9._-]+(/[a-zA-Z0-9._-]+)*$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

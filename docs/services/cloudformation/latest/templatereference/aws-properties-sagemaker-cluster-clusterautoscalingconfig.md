@@ -2,70 +2,51 @@
 title: "AWS::SageMaker::Cluster ClusterAutoScalingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Cluster ClusterAutoScalingConfig
+<a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig"></a>
 
 Specifies the autoscaling configuration for a HyperPod cluster.
 
 ## Syntax
+<a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoScalerType" : String,
-  "Mode" : String
+  "[AutoScalerType](#cfn-sagemaker-cluster-clusterautoscalingconfig-autoscalertype)" : {{String}},
+  "[Mode](#cfn-sagemaker-cluster-clusterautoscalingconfig-mode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig-syntax.yaml"></a>
 
-```yaml
-
-  AutoScalerType: String
-  Mode: String
-
+```
+  [AutoScalerType](#cfn-sagemaker-cluster-clusterautoscalingconfig-autoscalertype): {{String}}
+  [Mode](#cfn-sagemaker-cluster-clusterautoscalingconfig-mode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig-properties"></a>
 
-`AutoScalerType`
+`AutoScalerType`  <a name="cfn-sagemaker-cluster-clusterautoscalingconfig-autoscalertype"></a>
+The type of autoscaler to use. Currently supported value is `Karpenter`.
+*Required*: No
+*Type*: String
+*Allowed values*: `Karpenter`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of autoscaler to use. Currently supported value is
-`Karpenter`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Karpenter`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Mode`
-
-Describes whether autoscaling is enabled or disabled for the cluster. Valid values are
-`Enable` and `Disable`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Enable | Disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacitySizeConfig
-
-ClusterCapacityRequirements
+`Mode`  <a name="cfn-sagemaker-cluster-clusterautoscalingconfig-mode"></a>
+Describes whether autoscaling is enabled or disabled for the cluster. Valid values are `Enable` and `Disable`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Enable | Disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

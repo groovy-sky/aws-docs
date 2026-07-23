@@ -2,66 +2,51 @@
 title: "AWS::MWAAServerless::Workflow NetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAAServerless::Workflow NetworkConfiguration
+<a name="aws-properties-mwaaserverless-workflow-networkconfiguration"></a>
 
 Network configuration for workflow execution. Specifies VPC security groups and subnets for secure network access. When provided, Amazon Managed Workflows for Apache Airflow Serverless deploys ECS worker tasks in your specified VPC configuration, enabling secure access to VPC-only resources. The service uses a proxy API container architecture where one container handles external communication while the worker container connects to your VPC for task execution. This design provides both security isolation and connectivity flexibility.
 
 ## Syntax
+<a name="aws-properties-mwaaserverless-workflow-networkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mwaaserverless-workflow-networkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-mwaaserverless-workflow-networkconfiguration-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-mwaaserverless-workflow-networkconfiguration-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mwaaserverless-workflow-networkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-mwaaserverless-workflow-networkconfiguration-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-mwaaserverless-workflow-networkconfiguration-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-mwaaserverless-workflow-networkconfiguration-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-mwaaserverless-workflow-networkconfiguration-securitygroupids"></a>
 A list of VPC security group IDs to associate with the workflow execution environment.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-mwaaserverless-workflow-networkconfiguration-subnetids"></a>
 A list of VPC subnet IDs where the workflow execution environment is deployed.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingConfiguration
-
-S3Location
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

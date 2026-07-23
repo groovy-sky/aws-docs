@@ -2,101 +2,80 @@
 title: "AWS::EntityResolution::MatchingWorkflow ResolutionTechniques"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow ResolutionTechniques
+<a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques"></a>
 
-An object which defines the `resolutionType` and the
-`ruleBasedProperties`.
+An object which defines the `resolutionType` and the `ruleBasedProperties`.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques-syntax.json"></a>
 
-```json
-
+```
 {
-  "ProviderProperties" : ProviderProperties,
-  "ResolutionType" : String,
-  "RuleBasedProperties" : RuleBasedProperties,
-  "RuleConditionProperties" : RuleConditionProperties
+  "[EnableRealTimeMatching](#cfn-entityresolution-matchingworkflow-resolutiontechniques-enablerealtimematching)" : {{Boolean}},
+  "[ProviderProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-providerproperties)" : {{ProviderProperties}},
+  "[ResolutionType](#cfn-entityresolution-matchingworkflow-resolutiontechniques-resolutiontype)" : {{String}},
+  "[RuleBasedProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-rulebasedproperties)" : {{RuleBasedProperties}},
+  "[RuleConditionProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-ruleconditionproperties)" : {{RuleConditionProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques-syntax.yaml"></a>
 
-```yaml
-
-  ProviderProperties:
-    ProviderProperties
-  ResolutionType: String
-  RuleBasedProperties:
-    RuleBasedProperties
-  RuleConditionProperties:
-    RuleConditionProperties
-
+```
+  [EnableRealTimeMatching](#cfn-entityresolution-matchingworkflow-resolutiontechniques-enablerealtimematching): {{Boolean}}
+  [ProviderProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-providerproperties): {{
+    ProviderProperties}}
+  [ResolutionType](#cfn-entityresolution-matchingworkflow-resolutiontechniques-resolutiontype): {{String}}
+  [RuleBasedProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-rulebasedproperties): {{
+    RuleBasedProperties}}
+  [RuleConditionProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-ruleconditionproperties): {{
+    RuleConditionProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques-properties"></a>
 
-`ProviderProperties`
+`EnableRealTimeMatching`  <a name="cfn-entityresolution-matchingworkflow-resolutiontechniques-enablerealtimematching"></a>
+Specifies whether real-time matching is enabled for the rule-based matching workflow. When you enable real-time matching, you can use the `GenerateMatchId` operation with the workflow.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`ProviderProperties`  <a name="cfn-entityresolution-matchingworkflow-resolutiontechniques-providerproperties"></a>
 The properties of the provider service.
+*Required*: No
+*Type*: [ProviderProperties](aws-properties-entityresolution-matchingworkflow-providerproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProviderProperties](aws-properties-entityresolution-matchingworkflow-providerproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResolutionType`
-
+`ResolutionType`  <a name="cfn-entityresolution-matchingworkflow-resolutiontechniques-resolutiontype"></a>
 The type of matching workflow to create. Specify one of the following types:
++ `RULE_MATCHING`: Match records using configurable rule-based criteria
++ `ML_MATCHING`: Match records using machine learning models
++ `PROVIDER`: Match records using a third-party matching provider
+*Required*: No
+*Type*: String
+*Allowed values*: `RULE_MATCHING | ML_MATCHING | PROVIDER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `RULE_MATCHING`: Match records using configurable rule-based criteria
+`RuleBasedProperties`  <a name="cfn-entityresolution-matchingworkflow-resolutiontechniques-rulebasedproperties"></a>
+An object which defines the list of matching rules to run and has a field `rules`, which is a list of rule objects.
+*Required*: No
+*Type*: [RuleBasedProperties](aws-properties-entityresolution-matchingworkflow-rulebasedproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ML_MATCHING`: Match records using machine learning models
-
-- `PROVIDER`: Match records using a third-party matching provider
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `RULE_MATCHING | ML_MATCHING | PROVIDER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleBasedProperties`
-
-An object which defines the list of matching rules to run and has a field
-`rules`, which is a list of rule objects.
-
-_Required_: No
-
-_Type_: [RuleBasedProperties](aws-properties-entityresolution-matchingworkflow-rulebasedproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleConditionProperties`
-
+`RuleConditionProperties`  <a name="cfn-entityresolution-matchingworkflow-resolutiontechniques-ruleconditionproperties"></a>
 An object containing the `rules` for a matching workflow.
-
-_Required_: No
-
-_Type_: [RuleConditionProperties](aws-properties-entityresolution-matchingworkflow-ruleconditionproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProviderProperties
-
-Rule
+*Required*: No
+*Type*: [RuleConditionProperties](aws-properties-entityresolution-matchingworkflow-ruleconditionproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

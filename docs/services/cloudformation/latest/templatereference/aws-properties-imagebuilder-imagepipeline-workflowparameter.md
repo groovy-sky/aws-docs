@@ -2,71 +2,53 @@
 title: "AWS::ImageBuilder::ImagePipeline WorkflowParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImagePipeline WorkflowParameter
+<a name="aws-properties-imagebuilder-imagepipeline-workflowparameter"></a>
 
 Contains a key/value pair that sets the named workflow parameter.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-imagepipeline-workflowparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-imagepipeline-workflowparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : [ String, ... ]
+  "[Name](#cfn-imagebuilder-imagepipeline-workflowparameter-name)" : {{String}},
+  "[Value](#cfn-imagebuilder-imagepipeline-workflowparameter-value)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-imagepipeline-workflowparameter-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value:
-    - String
-
+```
+  [Name](#cfn-imagebuilder-imagepipeline-workflowparameter-name): {{String}}
+  [Value](#cfn-imagebuilder-imagepipeline-workflowparameter-value): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-imagepipeline-workflowparameter-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-imagebuilder-imagepipeline-workflowparameter-name"></a>
 The name of the workflow parameter to set.
+*Required*: No
+*Type*: String
+*Pattern*: `[^\x00]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[^\x00]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-imagebuilder-imagepipeline-workflowparameter-value"></a>
 Sets the value for the named workflow parameter.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkflowConfiguration
-
-AWS::ImageBuilder::ImageRecipe
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

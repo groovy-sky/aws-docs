@@ -2,57 +2,44 @@
 title: "AWS::IoT::ThingGroup AttributePayload"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::ThingGroup AttributePayload
+<a name="aws-properties-iot-thinggroup-attributepayload"></a>
 
 The attribute payload.
 
 ## Syntax
+<a name="aws-properties-iot-thinggroup-attributepayload-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-thinggroup-attributepayload-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : {Key: Value, ...}
+  "[Attributes](#cfn-iot-thinggroup-attributepayload-attributes)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-thinggroup-attributepayload-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
-    Key: Value
-
+```
+  [Attributes](#cfn-iot-thinggroup-attributepayload-attributes): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-thinggroup-attributepayload-properties"></a>
 
-`Attributes`
-
+`Attributes`  <a name="cfn-iot-thinggroup-attributepayload-attributes"></a>
 A JSON string containing up to three key-value pair in JSON format. For example:
-
-`{\"attributes\":{\"string1\":\"string2\"}}`
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9_.,@/:#-]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::ThingGroup
-
-Tag
+ `{\"attributes\":{\"string1\":\"string2\"}}`
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9_.,@/:#-]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

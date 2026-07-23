@@ -2,56 +2,44 @@
 title: "AWS::KinesisFirehose::DeliveryStream SchemaEvolutionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream SchemaEvolutionConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration"></a>
 
 The configuration to enable schema evolution.
 
 Amazon Data Firehose is in preview release and is subject to change.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-kinesisfirehose-deliverystream-schemaevolutionconfiguration-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-kinesisfirehose-deliverystream-schemaevolutionconfiguration-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration-properties"></a>
 
-`Enabled`
-
-Specify whether you want to enable schema evolution.
-
+`Enabled`  <a name="cfn-kinesisfirehose-deliverystream-schemaevolutionconfiguration-enabled"></a>
+ Specify whether you want to enable schema evolution.
 Amazon Data Firehose is in preview release and is subject to change.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SchemaConfiguration
-
-SecretsManagerConfiguration
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

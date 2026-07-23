@@ -2,144 +2,123 @@
 title: "AWS::NetworkFirewall::FirewallPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::FirewallPolicy
+<a name="aws-resource-networkfirewall-firewallpolicy"></a>
 
 Use the firewall policy to define the stateless and stateful network traffic filtering behavior for your firewall. You can use one firewall policy for multiple firewalls.
 
 ## Syntax
+<a name="aws-resource-networkfirewall-firewallpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkfirewall-firewallpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkFirewall::FirewallPolicy",
   "Properties" : {
-      "Description" : String,
-      "FirewallPolicy" : FirewallPolicy,
-      "FirewallPolicyName" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-networkfirewall-firewallpolicy-description)" : {{String}},
+      "[FirewallPolicy](#cfn-networkfirewall-firewallpolicy-firewallpolicy)" : {{FirewallPolicy}},
+      "[FirewallPolicyName](#cfn-networkfirewall-firewallpolicy-firewallpolicyname)" : {{String}},
+      "[Tags](#cfn-networkfirewall-firewallpolicy-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkfirewall-firewallpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkFirewall::FirewallPolicy
 Properties:
-  Description: String
-  FirewallPolicy:
-    FirewallPolicy
-  FirewallPolicyName: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-networkfirewall-firewallpolicy-description): {{String}}
+  [FirewallPolicy](#cfn-networkfirewall-firewallpolicy-firewallpolicy): {{
+    FirewallPolicy}}
+  [FirewallPolicyName](#cfn-networkfirewall-firewallpolicy-firewallpolicyname): {{String}}
+  [Tags](#cfn-networkfirewall-firewallpolicy-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-networkfirewall-firewallpolicy-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-networkfirewall-firewallpolicy-description"></a>
 A description of the firewall policy.
+*Required*: No
+*Type*: String
+*Pattern*: `^.*$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FirewallPolicy`  <a name="cfn-networkfirewall-firewallpolicy-firewallpolicy"></a>
+The traffic filtering behavior of a firewall policy, defined in a collection of stateless and stateful rule groups and other settings.
+*Required*: Yes
+*Type*: [FirewallPolicy](aws-properties-networkfirewall-firewallpolicy-firewallpolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^.*$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirewallPolicy`
-
-The traffic filtering behavior of a firewall policy, defined in a collection of stateless
-and stateful rule groups and other settings.
-
-_Required_: Yes
-
-_Type_: [FirewallPolicy](aws-properties-networkfirewall-firewallpolicy-firewallpolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirewallPolicyName`
-
+`FirewallPolicyName`  <a name="cfn-networkfirewall-firewallpolicy-firewallpolicyname"></a>
 The descriptive name of the firewall policy. You can't change the name of a firewall policy after you create it.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkfirewall-firewallpolicy-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkfirewall-firewallpolicy-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkfirewall-firewallpolicy-tag.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-networkfirewall-firewallpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkfirewall-firewallpolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the firewall policy. For example:
 
-`{ "Ref": "arn:aws:network-firewall:us-east-1:012345678901:firewall-policy/myFirewallPolicyName" }`
+ `{ "Ref": "arn:aws:network-firewall:us-east-1:012345678901:firewall-policy/myFirewallPolicyName" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-networkfirewall-firewallpolicy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`FirewallPolicyArn`
+####
+<a name="aws-resource-networkfirewall-firewallpolicy-return-values-fn--getatt-fn--getatt"></a>
 
+`FirewallPolicyArn`  <a name="FirewallPolicyArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the firewall policy.
 
-`FirewallPolicyId`
-
+`FirewallPolicyId`  <a name="FirewallPolicyId-fn::getatt"></a>
 The unique ID of the firewall policy resource.
 
 ## Examples
+<a name="aws-resource-networkfirewall-firewallpolicy--examples"></a>
 
 ### Create a firewall policy
+<a name="aws-resource-networkfirewall-firewallpolicy--examples--Create_a_firewall_policy"></a>
 
 The following shows example firewall policy specifications.
 
 #### JSON
+<a name="aws-resource-networkfirewall-firewallpolicy--examples--Create_a_firewall_policy--json"></a>
 
-```json
-
+```
 "SampleFirewallPolicy": {
     "Type": "AWS::NetworkFirewall::FirewallPolicy",
     "Properties": {
@@ -179,9 +158,9 @@ The following shows example firewall policy specifications.
 ```
 
 #### YAML
+<a name="aws-resource-networkfirewall-firewallpolicy--examples--Create_a_firewall_policy--yaml"></a>
 
-```yaml
-
+```
 SampleFirewallPolicy:
   Type: 'AWS::NetworkFirewall::FirewallPolicy'
   Properties:
@@ -200,13 +179,6 @@ SampleFirewallPolicy:
     Tags:
       - Key: Foo
         Value: Bar
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ActionDefinition
 
 All content copied from https://docs.aws.amazon.com/.

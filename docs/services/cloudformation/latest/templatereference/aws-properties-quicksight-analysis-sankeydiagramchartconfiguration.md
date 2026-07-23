@@ -2,92 +2,69 @@
 title: "AWS::QuickSight::Analysis SankeyDiagramChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SankeyDiagramChartConfiguration
+<a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration"></a>
 
 The configuration of a sankey diagram.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataLabels" : DataLabelOptions,
-  "FieldWells" : SankeyDiagramFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "SortConfiguration" : SankeyDiagramSortConfiguration
+  "[DataLabels](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[FieldWells](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-fieldwells)" : {{SankeyDiagramFieldWells}},
+  "[Interactions](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[SortConfiguration](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-sortconfiguration)" : {{SankeyDiagramSortConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DataLabels:
-    DataLabelOptions
-  FieldWells:
-    SankeyDiagramFieldWells
-  Interactions:
-    VisualInteractionOptions
-  SortConfiguration:
-    SankeyDiagramSortConfiguration
-
+```
+  [DataLabels](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [FieldWells](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-fieldwells): {{
+    SankeyDiagramFieldWells}}
+  [Interactions](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [SortConfiguration](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-sortconfiguration): {{
+    SankeyDiagramSortConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration-properties"></a>
 
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-analysis-sankeydiagramchartconfiguration-datalabels"></a>
 The data label configuration of a sankey diagram.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-analysis-sankeydiagramchartconfiguration-fieldwells"></a>
 The field well configuration of a sankey diagram.
+*Required*: No
+*Type*: [SankeyDiagramFieldWells](aws-properties-quicksight-analysis-sankeydiagramfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SankeyDiagramFieldWells](aws-properties-quicksight-analysis-sankeydiagramfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-analysis-sankeydiagramchartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-analysis-sankeydiagramchartconfiguration-sortconfiguration"></a>
 The sort configuration of a sankey diagram.
-
-_Required_: No
-
-_Type_: [SankeyDiagramSortConfiguration](aws-properties-quicksight-analysis-sankeydiagramsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SankeyDiagramAggregatedFieldWells
-
-SankeyDiagramFieldWells
+*Required*: No
+*Type*: [SankeyDiagramSortConfiguration](aws-properties-quicksight-analysis-sankeydiagramsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

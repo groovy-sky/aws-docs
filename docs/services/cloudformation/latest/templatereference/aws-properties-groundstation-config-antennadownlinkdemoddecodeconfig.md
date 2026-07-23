@@ -2,86 +2,74 @@
 title: "AWS::GroundStation::Config AntennaDownlinkDemodDecodeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config AntennaDownlinkDemodDecodeConfig
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig"></a>
 
-Provides information about how AWS Ground Station should configure an antenna for downlink during a contact.
-Use an antenna downlink demod decode config in a mission profile to receive the downlink data that has been demodulated and decoded.
+ Provides information about how AWS Ground Station should configure an antenna for downlink during a contact. Use an antenna downlink demod decode config in a mission profile to receive the downlink data that has been demodulated and decoded.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DecodeConfig" : DecodeConfig,
-  "DemodulationConfig" : DemodulationConfig,
-  "SpectrumConfig" : SpectrumConfig
+  "[DecodeConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-decodeconfig)" : {{DecodeConfig}},
+  "[DemodulationConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-demodulationconfig)" : {{DemodulationConfig}},
+  "[SpectrumConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-spectrumconfig)" : {{SpectrumConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig-syntax.yaml"></a>
 
-```yaml
-
-  DecodeConfig:
-    DecodeConfig
-  DemodulationConfig:
-    DemodulationConfig
-  SpectrumConfig:
-    SpectrumConfig
-
+```
+  [DecodeConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-decodeconfig): {{
+    DecodeConfig}}
+  [DemodulationConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-demodulationconfig): {{
+    DemodulationConfig}}
+  [SpectrumConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-spectrumconfig): {{
+    SpectrumConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig-properties"></a>
 
-`DecodeConfig`
+`DecodeConfig`  <a name="cfn-groundstation-config-antennadownlinkdemoddecodeconfig-decodeconfig"></a>
+ Defines how the RF signal will be decoded.
+*Required*: No
+*Type*: [DecodeConfig](aws-properties-groundstation-config-decodeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Defines how the RF signal will be decoded.
+`DemodulationConfig`  <a name="cfn-groundstation-config-antennadownlinkdemoddecodeconfig-demodulationconfig"></a>
+ Defines how the RF signal will be demodulated.
+*Required*: No
+*Type*: [DemodulationConfig](aws-properties-groundstation-config-demodulationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DecodeConfig](aws-properties-groundstation-config-decodeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DemodulationConfig`
-
-Defines how the RF signal will be demodulated.
-
-_Required_: No
-
-_Type_: [DemodulationConfig](aws-properties-groundstation-config-demodulationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpectrumConfig`
-
-Defines the spectrum configuration.
-
-_Required_: No
-
-_Type_: [SpectrumConfig](aws-properties-groundstation-config-spectrumconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SpectrumConfig`  <a name="cfn-groundstation-config-antennadownlinkdemoddecodeconfig-spectrumconfig"></a>
+ Defines the spectrum configuration.
+*Required*: No
+*Type*: [SpectrumConfig](aws-properties-groundstation-config-spectrumconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig--examples"></a>
 
 ### Create an AntennaDownlinkDemodDecodeConfig
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig--examples--Create_an_AntennaDownlinkDemodDecodeConfig"></a>
 
 The following example creates a Ground Station `AntennaDownlinkDemodDecodeConfig`
 
 #### JSON
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig--examples--Create_an_AntennaDownlinkDemodDecodeConfig--json"></a>
 
-```json
-
+```
 {
   "AntennaDownlinkDemodDecodeConfig": {
     "SpectrumConfig": {
@@ -103,13 +91,12 @@ The following example creates a Ground Station `AntennaDownlinkDemodDecodeConfig
     }
   }
 }
-
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig--examples--Create_an_AntennaDownlinkDemodDecodeConfig--yaml"></a>
 
-```yaml
-
+```
 AntennaDownlinkDemodDecodeConfig:
   SpectrumConfig:
     CenterFrequency:
@@ -204,11 +191,5 @@ AntennaDownlinkDemodDecodeConfig:
       }
     }'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AntennaDownlinkConfig
-
-AntennaUplinkConfig
 
 All content copied from https://docs.aws.amazon.com/.

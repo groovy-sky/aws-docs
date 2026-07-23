@@ -2,89 +2,66 @@
 title: "AWS::AppStream::AppBlock ScriptDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::AppBlock ScriptDetails
+<a name="aws-properties-appstream-appblock-scriptdetails"></a>
 
 The details of the script.
 
 ## Syntax
+<a name="aws-properties-appstream-appblock-scriptdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-appblock-scriptdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExecutableParameters" : String,
-  "ExecutablePath" : String,
-  "ScriptS3Location" : S3Location,
-  "TimeoutInSeconds" : Integer
+  "[ExecutableParameters](#cfn-appstream-appblock-scriptdetails-executableparameters)" : {{String}},
+  "[ExecutablePath](#cfn-appstream-appblock-scriptdetails-executablepath)" : {{String}},
+  "[ScriptS3Location](#cfn-appstream-appblock-scriptdetails-scripts3location)" : {{S3Location}},
+  "[TimeoutInSeconds](#cfn-appstream-appblock-scriptdetails-timeoutinseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-appblock-scriptdetails-syntax.yaml"></a>
 
-```yaml
-
-  ExecutableParameters: String
-  ExecutablePath: String
-  ScriptS3Location:
-    S3Location
-  TimeoutInSeconds: Integer
-
+```
+  [ExecutableParameters](#cfn-appstream-appblock-scriptdetails-executableparameters): {{String}}
+  [ExecutablePath](#cfn-appstream-appblock-scriptdetails-executablepath): {{String}}
+  [ScriptS3Location](#cfn-appstream-appblock-scriptdetails-scripts3location): {{
+    S3Location}}
+  [TimeoutInSeconds](#cfn-appstream-appblock-scriptdetails-timeoutinseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-appblock-scriptdetails-properties"></a>
 
-`ExecutableParameters`
-
+`ExecutableParameters`  <a name="cfn-appstream-appblock-scriptdetails-executableparameters"></a>
 The parameters used in the run path for the script.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ExecutablePath`
-
+`ExecutablePath`  <a name="cfn-appstream-appblock-scriptdetails-executablepath"></a>
 The run path for the script.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ScriptS3Location`
-
+`ScriptS3Location`  <a name="cfn-appstream-appblock-scriptdetails-scripts3location"></a>
 The S3 object location of the script.
+*Required*: Yes
+*Type*: [S3Location](aws-properties-appstream-appblock-s3location.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [S3Location](aws-properties-appstream-appblock-s3location.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TimeoutInSeconds`
-
+`TimeoutInSeconds`  <a name="cfn-appstream-appblock-scriptdetails-timeoutinseconds"></a>
 The run timeout, in seconds, for the script.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-Tag
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

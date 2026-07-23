@@ -3,52 +3,41 @@ title: "Differences between a relational (SQL) database and DynamoDB when deleti
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when deleting data from a table
+<a name="SQLtoNoSQL.DeleteData"></a>
 
-In SQL, the `DELETE` statement removes one or more rows from a table.
-Amazon DynamoDB uses the `DeleteItem` operation to delete one item at a
-time.
+In SQL, the `DELETE` statement removes one or more rows from a table. Amazon DynamoDB uses the `DeleteItem` operation to delete one item at a time.
 
-###### Topics
-
-- [Deleting data from a table with SQL](#SQLtoNoSQL.DeleteData.SQL)
-
-- [Deleting data from a table in DynamoDB](#SQLtoNoSQL.DeleteData.DynamoDB)
+**Topics**
++ [Deleting data from a table with SQL](#SQLtoNoSQL.DeleteData.SQL)
++ [Deleting data from a table in DynamoDB](#SQLtoNoSQL.DeleteData.DynamoDB)
 
 ## Deleting data from a table with SQL
+<a name="SQLtoNoSQL.DeleteData.SQL"></a>
 
-In SQL, you use the `DELETE` statement to delete one or more rows. The
-`WHERE` clause determines the rows that you want to modify. The
-following is an example.
+In SQL, you use the `DELETE` statement to delete one or more rows. The `WHERE` clause determines the rows that you want to modify. The following is an example.
 
-```sql
-
+```
 DELETE FROM Music
 WHERE Artist = 'The Acme Band' AND SongTitle = 'Look Out, World';
 ```
 
-You can modify the `WHERE` clause to delete multiple rows. For example,
-you could delete all of the songs by a particular artist, as shown in the following
-example.
+You can modify the `WHERE` clause to delete multiple rows. For example, you could delete all of the songs by a particular artist, as shown in the following example.
 
-```sql
-
+```
 DELETE FROM Music WHERE Artist = 'The Acme Band'
 ```
 
 ## Deleting data from a table in DynamoDB
+<a name="SQLtoNoSQL.DeleteData.DynamoDB"></a>
 
-In DynamoDB, you can use either the DynamoDB API or [PartiQL](ql-reference.md) (a SQL-compatible query
-language) to delete a single item. If you want to modify multiple items, you must
-use multiple operations.
+In DynamoDB, you can use either the DynamoDB API or [PartiQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html) (a SQL-compatible query language) to delete a single item. If you want to modify multiple items, you must use multiple operations.
 
-DynamoDB API
+------
+#### [ DynamoDB API ]
 
-With the DynamoDB API, you use the `DeleteItem` operation to
-delete data from a table, one item at a time. You must specify the
-item's primary key values.
+With the DynamoDB API, you use the `DeleteItem` operation to delete data from a table, one item at a time. You must specify the item's primary key values.
 
-```nohighlight
-
+```
 {
     TableName: "Music",
     Key: {
@@ -58,20 +47,12 @@ item's primary key values.
 }
 ```
 
-###### Note
+**Note**
+In addition to `DeleteItem`, Amazon DynamoDB supports a `BatchWriteItem` operation for deleting multiple items at the same time.
 
-In addition to `DeleteItem`, Amazon DynamoDB supports a
-`BatchWriteItem` operation for deleting multiple
-items at the same time.
+`DeleteItem` supports *conditional writes*, where the operation succeeds only if a specific `ConditionExpression` evaluates to true. For example, the following `DeleteItem` operation deletes the item only if it has a *RecordLabel* attribute.
 
-`DeleteItem` supports _conditional_
-_writes_, where the operation succeeds only if a specific
-`ConditionExpression` evaluates to true. For example, the
-following `DeleteItem` operation deletes the item only if it
-has a _RecordLabel_ attribute.
-
-```nohighlight
-
+```
 {
     TableName: "Music",
     Key: {
@@ -82,42 +63,28 @@ has a _RecordLabel_ attribute.
 }
 ```
 
-PartiQL for DynamoDB
+------
+#### [ PartiQL for DynamoDB ]
 
-With PartiQL, you use the `Delete` statement through the
-`ExecuteStatement` operation to delete data from a table,
-one item at a time. You must specify the item's primary key
-values.
+With PartiQL, you use the `Delete` statement through the `ExecuteStatement` operation to delete data from a table, one item at a time. You must specify the item's primary key values.
 
-The primary key for this table consists of _Artist_
-and _SongTitle_. You must specify values for these
-attributes.
+The primary key for this table consists of *Artist* and *SongTitle*. You must specify values for these attributes.
 
-```sql
-
+```
 DELETE FROM Music
 WHERE Artist = 'Acme Band' AND SongTitle = 'PartiQL Rocks'
 ```
 
-You can also specify additional conditions for the operation. The
-following `DELETE` operation only deletes the item if it has
-more than 11 _Awards_.
+You can also specify additional conditions for the operation. The following `DELETE` operation only deletes the item if it has more than 11 *Awards*.
 
-```sql
-
+```
 DELETE FROM Music
 WHERE Artist = 'Acme Band' AND SongTitle = 'PartiQL Rocks' AND Awards > 11
 ```
 
-###### Note
+**Note**
+For code examples using `DELETE` and `ExecuteStatement`, see [PartiQL delete statements for DynamoDB](ql-reference.delete.md).
 
-For code examples using `DELETE` and
-`ExecuteStatement`, see [PartiQL delete statements for DynamoDB](ql-reference-delete.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Modifying data in a table
-
-Removing a table
+------
 
 All content copied from https://docs.aws.amazon.com/.

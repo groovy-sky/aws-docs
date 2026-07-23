@@ -2,65 +2,44 @@
 title: "AWS::DynamoDB::GlobalTable ReplicaStreamSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable ReplicaStreamSpecification
+<a name="aws-properties-dynamodb-globaltable-replicastreamspecification"></a>
 
-Represents the DynamoDB Streams configuration for a global table
-replica.
+Represents the DynamoDB Streams configuration for a global table replica.
 
 ## Syntax
+<a name="aws-properties-dynamodb-globaltable-replicastreamspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-globaltable-replicastreamspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourcePolicy" : ResourcePolicy
+  "[ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy)" : {{ResourcePolicy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-globaltable-replicastreamspecification-syntax.yaml"></a>
 
-```yaml
-
-  ResourcePolicy:
-    ResourcePolicy
-
+```
+  [ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy): {{
+    ResourcePolicy}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-globaltable-replicastreamspecification-properties"></a>
 
-`ResourcePolicy`
-
-A resource-based policy document that contains the permissions for the specified stream
-of a DynamoDB global table replica. Resource-based policies let you define access
-permissions by specifying who has access to each resource, and the actions they are allowed
-to perform on each resource.
-
-In a CloudFormation template, you can provide the policy in JSON or YAML format
-because CloudFormation converts YAML to JSON before submitting it to DynamoDB. For more information about resource-based policies, see [Using\
-resource-based policies for DynamoDB](../../../dynamodb/latest/developerguide/access-control-resource-based.md) and [Resource-based policy\
-examples](../../../dynamodb/latest/developerguide/rbac-examples.md).
-
-You can update the `ResourcePolicy` property if you've specified more than
-one table using the [AWS::DynamoDB::GlobalTable](../userguide/aws-resource-dynamodb-globaltable.md) resource.
-
-_Required_: Yes
-
-_Type_: [ResourcePolicy](aws-properties-dynamodb-globaltable-resourcepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicaSSESpecification
-
-ResourcePolicy
+`ResourcePolicy`  <a name="cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy"></a>
+A resource-based policy document that contains the permissions for the specified stream of a DynamoDB global table replica. Resource-based policies let you define access permissions by specifying who has access to each resource, and the actions they are allowed to perform on each resource.
+In a CloudFormation template, you can provide the policy in JSON or YAML format because CloudFormation converts YAML to JSON before submitting it to DynamoDB. For more information about resource-based policies, see [Using resource-based policies for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/access-control-resource-based.html) and [Resource-based policy examples](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-examples.html).
+You can update the `ResourcePolicy` property if you've specified more than one table using the [AWS::DynamoDB::GlobalTable](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-globaltable.html) resource.
+*Required*: Yes
+*Type*: [ResourcePolicy](aws-properties-dynamodb-globaltable-resourcepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

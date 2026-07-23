@@ -2,56 +2,43 @@
 title: "AWS::ODB::CloudExadataInfrastructure CustomerContact"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudExadataInfrastructure CustomerContact
+<a name="aws-properties-odb-cloudexadatainfrastructure-customercontact"></a>
 
 A contact to receive notification from Oracle about maintenance updates for a specific Exadata infrastructure.
 
 ## Syntax
+<a name="aws-properties-odb-cloudexadatainfrastructure-customercontact-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-odb-cloudexadatainfrastructure-customercontact-syntax.json"></a>
 
-```json
-
+```
 {
-  "Email" : String
+  "[Email](#cfn-odb-cloudexadatainfrastructure-customercontact-email)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-odb-cloudexadatainfrastructure-customercontact-syntax.yaml"></a>
 
-```yaml
-
-  Email: String
-
+```
+  [Email](#cfn-odb-cloudexadatainfrastructure-customercontact-email): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-odb-cloudexadatainfrastructure-customercontact-properties"></a>
 
-`Email`
-
+`Email`  <a name="cfn-odb-cloudexadatainfrastructure-customercontact-email"></a>
 The email address of the contact.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `320`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ODB::CloudExadataInfrastructure
-
-MaintenanceWindow
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `320`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

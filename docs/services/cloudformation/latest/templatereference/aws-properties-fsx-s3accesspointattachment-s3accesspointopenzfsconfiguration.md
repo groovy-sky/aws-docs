@@ -2,71 +2,53 @@
 title: "AWS::FSx::S3AccessPointAttachment S3AccessPointOpenZFSConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::S3AccessPointAttachment S3AccessPointOpenZFSConfiguration
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration"></a>
 
 Describes the FSx for OpenZFS attachment configuration of an S3 access point attachment.
 
 ## Syntax
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FileSystemIdentity" : OpenZFSFileSystemIdentity,
-  "VolumeId" : String
+  "[FileSystemIdentity](#cfn-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-filesystemidentity)" : {{OpenZFSFileSystemIdentity}},
+  "[VolumeId](#cfn-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-volumeid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FileSystemIdentity:
-    OpenZFSFileSystemIdentity
-  VolumeId: String
-
+```
+  [FileSystemIdentity](#cfn-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-filesystemidentity): {{
+    OpenZFSFileSystemIdentity}}
+  [VolumeId](#cfn-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-volumeid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-properties"></a>
 
-`FileSystemIdentity`
-
+`FileSystemIdentity`  <a name="cfn-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-filesystemidentity"></a>
 The file system identity used to authorize file access requests made using the S3 access point.
+*Required*: Yes
+*Type*: [OpenZFSFileSystemIdentity](aws-properties-fsx-s3accesspointattachment-openzfsfilesystemidentity.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [OpenZFSFileSystemIdentity](aws-properties-fsx-s3accesspointattachment-openzfsfilesystemidentity.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VolumeId`
-
+`VolumeId`  <a name="cfn-fsx-s3accesspointattachment-s3accesspointopenzfsconfiguration-volumeid"></a>
 The ID of the FSx for OpenZFS volume that the S3 access point is attached to.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(fsvol-[0-9a-f]{17,})$`
-
-_Minimum_: `23`
-
-_Maximum_: `23`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3AccessPointOntapConfiguration
-
-S3AccessPointVpcConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(fsvol-[0-9a-f]{17,})$`
+*Minimum*: `23`
+*Maximum*: `23`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

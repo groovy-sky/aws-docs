@@ -2,99 +2,70 @@
 title: "AWS::CustomerProfiles::EventTrigger Period"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventTrigger Period
+<a name="aws-properties-customerprofiles-eventtrigger-period"></a>
 
 Defines a limit and the time period during which it is enforced.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-eventtrigger-period-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-eventtrigger-period-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxInvocationsPerProfile" : Integer,
-  "Unit" : String,
-  "Unlimited" : Boolean,
-  "Value" : Integer
+  "[MaxInvocationsPerProfile](#cfn-customerprofiles-eventtrigger-period-maxinvocationsperprofile)" : {{Integer}},
+  "[Unit](#cfn-customerprofiles-eventtrigger-period-unit)" : {{String}},
+  "[Unlimited](#cfn-customerprofiles-eventtrigger-period-unlimited)" : {{Boolean}},
+  "[Value](#cfn-customerprofiles-eventtrigger-period-value)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-eventtrigger-period-syntax.yaml"></a>
 
-```yaml
-
-  MaxInvocationsPerProfile: Integer
-  Unit: String
-  Unlimited: Boolean
-  Value: Integer
-
+```
+  [MaxInvocationsPerProfile](#cfn-customerprofiles-eventtrigger-period-maxinvocationsperprofile): {{Integer}}
+  [Unit](#cfn-customerprofiles-eventtrigger-period-unit): {{String}}
+  [Unlimited](#cfn-customerprofiles-eventtrigger-period-unlimited): {{Boolean}}
+  [Value](#cfn-customerprofiles-eventtrigger-period-value): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-eventtrigger-period-properties"></a>
 
-`MaxInvocationsPerProfile`
-
+`MaxInvocationsPerProfile`  <a name="cfn-customerprofiles-eventtrigger-period-maxinvocationsperprofile"></a>
 The maximum allowed number of destination invocations per profile.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Unit`
-
+`Unit`  <a name="cfn-customerprofiles-eventtrigger-period-unit"></a>
 The unit of time.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MINUTES | HOURS | DAYS | WEEKS | MONTHS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Unlimited`  <a name="cfn-customerprofiles-eventtrigger-period-unlimited"></a>
+If set to true, there is no limit on the number of destination invocations per profile. The default is false.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `HOURS | DAYS | WEEKS | MONTHS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Unlimited`
-
-If set to true, there is no limit on the number of destination invocations per
-profile. The default is false.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-customerprofiles-eventtrigger-period-value"></a>
 The amount of time of the specified unit.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `24`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ObjectAttribute
-
-Tag
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `60`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

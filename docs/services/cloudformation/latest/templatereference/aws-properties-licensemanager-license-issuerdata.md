@@ -2,65 +2,49 @@
 title: "AWS::LicenseManager::License IssuerData"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LicenseManager::License IssuerData
+<a name="aws-properties-licensemanager-license-issuerdata"></a>
 
 Details associated with the issuer of a license.
 
 ## Syntax
+<a name="aws-properties-licensemanager-license-issuerdata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-licensemanager-license-issuerdata-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "SignKey" : String
+  "[Name](#cfn-licensemanager-license-issuerdata-name)" : {{String}},
+  "[SignKey](#cfn-licensemanager-license-issuerdata-signkey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-licensemanager-license-issuerdata-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  SignKey: String
-
+```
+  [Name](#cfn-licensemanager-license-issuerdata-name): {{String}}
+  [SignKey](#cfn-licensemanager-license-issuerdata-signkey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-licensemanager-license-issuerdata-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-licensemanager-license-issuerdata-name"></a>
 Issuer name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SignKey`
-
-Asymmetric KMS key from AWS Key Management Service. The KMS key must have a key usage of sign and verify,
-and support the RSASSA-PSS SHA-256 signing algorithm.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Entitlement
-
-Metadata
+`SignKey`  <a name="cfn-licensemanager-license-issuerdata-signkey"></a>
+Asymmetric KMS key from AWS Key Management Service. The KMS key must have a key usage of sign and verify, and support the RSASSA-PSS SHA-256 signing algorithm.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

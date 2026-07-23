@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Template TableStyleTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TableStyleTarget
+<a name="aws-properties-quicksight-template-tablestyletarget"></a>
 
 The table style target.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-tablestyletarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-tablestyletarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "CellType" : String
+  "[CellType](#cfn-quicksight-template-tablestyletarget-celltype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-tablestyletarget-syntax.yaml"></a>
 
-```yaml
-
-  CellType: String
-
+```
+  [CellType](#cfn-quicksight-template-tablestyletarget-celltype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-tablestyletarget-properties"></a>
 
-`CellType`
-
+`CellType`  <a name="cfn-quicksight-template-tablestyletarget-celltype"></a>
 The cell type of the table style target.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TOTAL | METRIC_HEADER | VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableSortConfiguration
-
-TableUnaggregatedFieldWells
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TOTAL | METRIC_HEADER | VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

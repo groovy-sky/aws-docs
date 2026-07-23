@@ -2,54 +2,42 @@
 title: "AWS::DataZone::Owner OwnerUserProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Owner OwnerUserProperties
+<a name="aws-properties-datazone-owner-owneruserproperties"></a>
 
 The properties of the owner user.
 
 ## Syntax
+<a name="aws-properties-datazone-owner-owneruserproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-owner-owneruserproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "UserIdentifier" : String
+  "[UserIdentifier](#cfn-datazone-owner-owneruserproperties-useridentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-owner-owneruserproperties-syntax.yaml"></a>
 
-```yaml
-
-  UserIdentifier: String
-
+```
+  [UserIdentifier](#cfn-datazone-owner-owneruserproperties-useridentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-owner-owneruserproperties-properties"></a>
 
-`UserIdentifier`
-
+`UserIdentifier`  <a name="cfn-datazone-owner-owneruserproperties-useridentifier"></a>
 The ID of the owner user.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(^([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$|^[a-zA-Z_0-9+=,.@-]+$|^arn:aws:iam::\d{12}:.+$)`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OwnerProperties
-
-AWS::DataZone::PolicyGrant
+*Required*: No
+*Type*: String
+*Pattern*: `(^([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$|^[a-zA-Z_0-9+=,.@-]+$|^arn:aws:iam::\d{12}:.+$)`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

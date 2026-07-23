@@ -2,73 +2,63 @@
 title: "AWS::GroundStation::DataflowEndpointGroup SocketAddress"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroup SocketAddress
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress"></a>
 
-The address of the endpoint, such as
-`192.168.1.1`.
+The address of the endpoint, such as `192.168.1.1`.
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Port" : Integer
+  "[Name](#cfn-groundstation-dataflowendpointgroup-socketaddress-name)" : {{String}},
+  "[Port](#cfn-groundstation-dataflowendpointgroup-socketaddress-port)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Port: Integer
-
+```
+  [Name](#cfn-groundstation-dataflowendpointgroup-socketaddress-name): {{String}}
+  [Port](#cfn-groundstation-dataflowendpointgroup-socketaddress-port): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-groundstation-dataflowendpointgroup-socketaddress-name"></a>
+The name of the endpoint, such as `Endpoint 1`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The name of the endpoint, such as
-`Endpoint 1`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Port`
-
-The port of the endpoint, such as
-`55888`.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Port`  <a name="cfn-groundstation-dataflowendpointgroup-socketaddress-port"></a>
+The port of the endpoint, such as `55888`.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress--examples"></a>
 
 ### Create a SocketAddress
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress--examples--Create_a_SocketAddress"></a>
 
 The following example creates a Ground Station `SocketAddress`
 
 #### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress--examples--Create_a_SocketAddress--json"></a>
 
-```json
-
+```
 {
   "Address": {
     "Name": "172.10.0.2",
@@ -78,18 +68,12 @@ The following example creates a Ground Station `SocketAddress`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroup-socketaddress--examples--Create_a_SocketAddress--yaml"></a>
 
-```yaml
-
+```
 Address:
   Name: 172.10.0.2
   Port: 44720
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecurityDetails
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

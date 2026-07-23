@@ -2,52 +2,41 @@
 title: "AWS::IoT::AccountAuditConfiguration AuditCheckConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::AccountAuditConfiguration AuditCheckConfiguration
+<a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration"></a>
 
 Which audit checks are enabled and disabled for this account.
 
 ## Syntax
+<a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-iot-accountauditconfiguration-auditcheckconfiguration-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-iot-accountauditconfiguration-auditcheckconfiguration-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-iot-accountauditconfiguration-auditcheckconfiguration-enabled"></a>
 True if this audit check is enabled for this account.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::AccountAuditConfiguration
-
-AuditCheckConfigurations
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

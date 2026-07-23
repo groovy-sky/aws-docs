@@ -2,73 +2,53 @@
 title: "AWS::IoTWireless::Destination Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::Destination Tag
+<a name="aws-properties-iotwireless-destination-tag"></a>
 
-The tags to attach to the destination. Tags are metadata that you can use to manage a
-resource.
+The tags to attach to the destination. Tags are metadata that you can use to manage a resource.
 
 ## Syntax
+<a name="aws-properties-iotwireless-destination-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-destination-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-iotwireless-destination-tag-key)" : {{String}},
+  "[Value](#cfn-iotwireless-destination-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-destination-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-iotwireless-destination-tag-key): {{String}}
+  [Value](#cfn-iotwireless-destination-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-destination-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-iotwireless-destination-tag-key"></a>
 The tag's key value.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iotwireless-destination-tag-value"></a>
 The tag's value.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTWireless::Destination
-
-AWS::IoTWireless::DeviceProfile
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

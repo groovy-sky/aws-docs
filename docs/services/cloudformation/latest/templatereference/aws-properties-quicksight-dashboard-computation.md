@@ -2,172 +2,125 @@
 title: "AWS::QuickSight::Dashboard Computation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard Computation
+<a name="aws-properties-quicksight-dashboard-computation"></a>
 
 The computation union that is used in an insight visual.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-computation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-computation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Forecast" : ForecastComputation,
-  "GrowthRate" : GrowthRateComputation,
-  "MaximumMinimum" : MaximumMinimumComputation,
-  "MetricComparison" : MetricComparisonComputation,
-  "PeriodOverPeriod" : PeriodOverPeriodComputation,
-  "PeriodToDate" : PeriodToDateComputation,
-  "TopBottomMovers" : TopBottomMoversComputation,
-  "TopBottomRanked" : TopBottomRankedComputation,
-  "TotalAggregation" : TotalAggregationComputation,
-  "UniqueValues" : UniqueValuesComputation
+  "[Forecast](#cfn-quicksight-dashboard-computation-forecast)" : {{ForecastComputation}},
+  "[GrowthRate](#cfn-quicksight-dashboard-computation-growthrate)" : {{GrowthRateComputation}},
+  "[MaximumMinimum](#cfn-quicksight-dashboard-computation-maximumminimum)" : {{MaximumMinimumComputation}},
+  "[MetricComparison](#cfn-quicksight-dashboard-computation-metriccomparison)" : {{MetricComparisonComputation}},
+  "[PeriodOverPeriod](#cfn-quicksight-dashboard-computation-periodoverperiod)" : {{PeriodOverPeriodComputation}},
+  "[PeriodToDate](#cfn-quicksight-dashboard-computation-periodtodate)" : {{PeriodToDateComputation}},
+  "[TopBottomMovers](#cfn-quicksight-dashboard-computation-topbottommovers)" : {{TopBottomMoversComputation}},
+  "[TopBottomRanked](#cfn-quicksight-dashboard-computation-topbottomranked)" : {{TopBottomRankedComputation}},
+  "[TotalAggregation](#cfn-quicksight-dashboard-computation-totalaggregation)" : {{TotalAggregationComputation}},
+  "[UniqueValues](#cfn-quicksight-dashboard-computation-uniquevalues)" : {{UniqueValuesComputation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-computation-syntax.yaml"></a>
 
-```yaml
-
-  Forecast:
-    ForecastComputation
-  GrowthRate:
-    GrowthRateComputation
-  MaximumMinimum:
-    MaximumMinimumComputation
-  MetricComparison:
-    MetricComparisonComputation
-  PeriodOverPeriod:
-    PeriodOverPeriodComputation
-  PeriodToDate:
-    PeriodToDateComputation
-  TopBottomMovers:
-    TopBottomMoversComputation
-  TopBottomRanked:
-    TopBottomRankedComputation
-  TotalAggregation:
-    TotalAggregationComputation
-  UniqueValues:
-    UniqueValuesComputation
-
+```
+  [Forecast](#cfn-quicksight-dashboard-computation-forecast): {{
+    ForecastComputation}}
+  [GrowthRate](#cfn-quicksight-dashboard-computation-growthrate): {{
+    GrowthRateComputation}}
+  [MaximumMinimum](#cfn-quicksight-dashboard-computation-maximumminimum): {{
+    MaximumMinimumComputation}}
+  [MetricComparison](#cfn-quicksight-dashboard-computation-metriccomparison): {{
+    MetricComparisonComputation}}
+  [PeriodOverPeriod](#cfn-quicksight-dashboard-computation-periodoverperiod): {{
+    PeriodOverPeriodComputation}}
+  [PeriodToDate](#cfn-quicksight-dashboard-computation-periodtodate): {{
+    PeriodToDateComputation}}
+  [TopBottomMovers](#cfn-quicksight-dashboard-computation-topbottommovers): {{
+    TopBottomMoversComputation}}
+  [TopBottomRanked](#cfn-quicksight-dashboard-computation-topbottomranked): {{
+    TopBottomRankedComputation}}
+  [TotalAggregation](#cfn-quicksight-dashboard-computation-totalaggregation): {{
+    TotalAggregationComputation}}
+  [UniqueValues](#cfn-quicksight-dashboard-computation-uniquevalues): {{
+    UniqueValuesComputation}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-computation-properties"></a>
 
-`Forecast`
-
+`Forecast`  <a name="cfn-quicksight-dashboard-computation-forecast"></a>
 The forecast computation configuration.
+*Required*: No
+*Type*: [ForecastComputation](aws-properties-quicksight-dashboard-forecastcomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ForecastComputation](aws-properties-quicksight-dashboard-forecastcomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GrowthRate`
-
+`GrowthRate`  <a name="cfn-quicksight-dashboard-computation-growthrate"></a>
 The growth rate computation configuration.
+*Required*: No
+*Type*: [GrowthRateComputation](aws-properties-quicksight-dashboard-growthratecomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GrowthRateComputation](aws-properties-quicksight-dashboard-growthratecomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumMinimum`
-
+`MaximumMinimum`  <a name="cfn-quicksight-dashboard-computation-maximumminimum"></a>
 The maximum and minimum computation configuration.
+*Required*: No
+*Type*: [MaximumMinimumComputation](aws-properties-quicksight-dashboard-maximumminimumcomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MaximumMinimumComputation](aws-properties-quicksight-dashboard-maximumminimumcomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricComparison`
-
+`MetricComparison`  <a name="cfn-quicksight-dashboard-computation-metriccomparison"></a>
 The metric comparison computation configuration.
+*Required*: No
+*Type*: [MetricComparisonComputation](aws-properties-quicksight-dashboard-metriccomparisoncomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MetricComparisonComputation](aws-properties-quicksight-dashboard-metriccomparisoncomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeriodOverPeriod`
-
+`PeriodOverPeriod`  <a name="cfn-quicksight-dashboard-computation-periodoverperiod"></a>
 The period over period computation configuration.
+*Required*: No
+*Type*: [PeriodOverPeriodComputation](aws-properties-quicksight-dashboard-periodoverperiodcomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PeriodOverPeriodComputation](aws-properties-quicksight-dashboard-periodoverperiodcomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeriodToDate`
-
+`PeriodToDate`  <a name="cfn-quicksight-dashboard-computation-periodtodate"></a>
 The period to `DataSetIdentifier` computation configuration.
+*Required*: No
+*Type*: [PeriodToDateComputation](aws-properties-quicksight-dashboard-periodtodatecomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PeriodToDateComputation](aws-properties-quicksight-dashboard-periodtodatecomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopBottomMovers`
-
+`TopBottomMovers`  <a name="cfn-quicksight-dashboard-computation-topbottommovers"></a>
 The top movers and bottom movers computation configuration.
+*Required*: No
+*Type*: [TopBottomMoversComputation](aws-properties-quicksight-dashboard-topbottommoverscomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopBottomMoversComputation](aws-properties-quicksight-dashboard-topbottommoverscomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopBottomRanked`
-
+`TopBottomRanked`  <a name="cfn-quicksight-dashboard-computation-topbottomranked"></a>
 The top ranked and bottom ranked computation configuration.
+*Required*: No
+*Type*: [TopBottomRankedComputation](aws-properties-quicksight-dashboard-topbottomrankedcomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopBottomRankedComputation](aws-properties-quicksight-dashboard-topbottomrankedcomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalAggregation`
-
+`TotalAggregation`  <a name="cfn-quicksight-dashboard-computation-totalaggregation"></a>
 The total aggregation computation configuration.
+*Required*: No
+*Type*: [TotalAggregationComputation](aws-properties-quicksight-dashboard-totalaggregationcomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TotalAggregationComputation](aws-properties-quicksight-dashboard-totalaggregationcomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UniqueValues`
-
+`UniqueValues`  <a name="cfn-quicksight-dashboard-computation-uniquevalues"></a>
 The unique values computation configuration.
-
-_Required_: No
-
-_Type_: [UniqueValuesComputation](aws-properties-quicksight-dashboard-uniquevaluescomputation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComparisonFormatConfiguration
-
-ConditionalFormattingColor
+*Required*: No
+*Type*: [UniqueValuesComputation](aws-properties-quicksight-dashboard-uniquevaluescomputation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

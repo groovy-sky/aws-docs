@@ -2,96 +2,69 @@
 title: "AWS::QuickSight::Template FieldTooltipItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FieldTooltipItem
+<a name="aws-properties-quicksight-template-fieldtooltipitem"></a>
 
 The tooltip item for the fields.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-fieldtooltipitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-fieldtooltipitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String,
-  "Label" : String,
-  "TooltipTarget" : String,
-  "Visibility" : String
+  "[FieldId](#cfn-quicksight-template-fieldtooltipitem-fieldid)" : {{String}},
+  "[Label](#cfn-quicksight-template-fieldtooltipitem-label)" : {{String}},
+  "[TooltipTarget](#cfn-quicksight-template-fieldtooltipitem-tooltiptarget)" : {{String}},
+  "[Visibility](#cfn-quicksight-template-fieldtooltipitem-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-fieldtooltipitem-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-  Label: String
-  TooltipTarget: String
-  Visibility: String
-
+```
+  [FieldId](#cfn-quicksight-template-fieldtooltipitem-fieldid): {{String}}
+  [Label](#cfn-quicksight-template-fieldtooltipitem-label): {{String}}
+  [TooltipTarget](#cfn-quicksight-template-fieldtooltipitem-tooltiptarget): {{String}}
+  [Visibility](#cfn-quicksight-template-fieldtooltipitem-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-fieldtooltipitem-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-fieldtooltipitem-fieldid"></a>
 The unique ID of the field that is targeted by the tooltip.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Label`
-
+`Label`  <a name="cfn-quicksight-template-fieldtooltipitem-label"></a>
 The label of the tooltip item.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TooltipTarget`
-
+`TooltipTarget`  <a name="cfn-quicksight-template-fieldtooltipitem-tooltiptarget"></a>
 Determines the target of the field tooltip item in a combo chart visual.
+*Required*: No
+*Type*: String
+*Allowed values*: `BOTH | BAR | LINE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BOTH | BAR | LINE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-template-fieldtooltipitem-visibility"></a>
 The visibility of the tooltip item.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldSortOptions
-
-FilledMapAggregatedFieldWells
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

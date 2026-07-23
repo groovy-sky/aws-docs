@@ -2,79 +2,60 @@
 title: "AWS::ConnectCampaigns::Campaign DialerConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaigns::Campaign DialerConfig
+<a name="aws-properties-connectcampaigns-campaign-dialerconfig"></a>
 
 Contains dialer configuration for an outbound campaign.
 
 ## Syntax
+<a name="aws-properties-connectcampaigns-campaign-dialerconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaigns-campaign-dialerconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentlessDialerConfig" : AgentlessDialerConfig,
-  "PredictiveDialerConfig" : PredictiveDialerConfig,
-  "ProgressiveDialerConfig" : ProgressiveDialerConfig
+  "[AgentlessDialerConfig](#cfn-connectcampaigns-campaign-dialerconfig-agentlessdialerconfig)" : {{AgentlessDialerConfig}},
+  "[PredictiveDialerConfig](#cfn-connectcampaigns-campaign-dialerconfig-predictivedialerconfig)" : {{PredictiveDialerConfig}},
+  "[ProgressiveDialerConfig](#cfn-connectcampaigns-campaign-dialerconfig-progressivedialerconfig)" : {{ProgressiveDialerConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaigns-campaign-dialerconfig-syntax.yaml"></a>
 
-```yaml
-
-  AgentlessDialerConfig:
-    AgentlessDialerConfig
-  PredictiveDialerConfig:
-    PredictiveDialerConfig
-  ProgressiveDialerConfig:
-    ProgressiveDialerConfig
-
+```
+  [AgentlessDialerConfig](#cfn-connectcampaigns-campaign-dialerconfig-agentlessdialerconfig): {{
+    AgentlessDialerConfig}}
+  [PredictiveDialerConfig](#cfn-connectcampaigns-campaign-dialerconfig-predictivedialerconfig): {{
+    PredictiveDialerConfig}}
+  [ProgressiveDialerConfig](#cfn-connectcampaigns-campaign-dialerconfig-progressivedialerconfig): {{
+    ProgressiveDialerConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaigns-campaign-dialerconfig-properties"></a>
 
-`AgentlessDialerConfig`
-
+`AgentlessDialerConfig`  <a name="cfn-connectcampaigns-campaign-dialerconfig-agentlessdialerconfig"></a>
 The configuration of the agentless dialer.
+*Required*: No
+*Type*: [AgentlessDialerConfig](aws-properties-connectcampaigns-campaign-agentlessdialerconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AgentlessDialerConfig](aws-properties-connectcampaigns-campaign-agentlessdialerconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PredictiveDialerConfig`
-
+`PredictiveDialerConfig`  <a name="cfn-connectcampaigns-campaign-dialerconfig-predictivedialerconfig"></a>
 The configuration of the predictive dialer.
+*Required*: No
+*Type*: [PredictiveDialerConfig](aws-properties-connectcampaigns-campaign-predictivedialerconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PredictiveDialerConfig](aws-properties-connectcampaigns-campaign-predictivedialerconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProgressiveDialerConfig`
-
+`ProgressiveDialerConfig`  <a name="cfn-connectcampaigns-campaign-dialerconfig-progressivedialerconfig"></a>
 The configuration of the progressive dialer.
-
-_Required_: No
-
-_Type_: [ProgressiveDialerConfig](aws-properties-connectcampaigns-campaign-progressivedialerconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnswerMachineDetectionConfig
-
-OutboundCallConfig
+*Required*: No
+*Type*: [ProgressiveDialerConfig](aws-properties-connectcampaigns-campaign-progressivedialerconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

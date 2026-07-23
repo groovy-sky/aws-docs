@@ -2,56 +2,44 @@
 title: "AWS::CloudFormation::GuardHook TargetFilters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::GuardHook TargetFilters
+<a name="aws-properties-cloudformation-guardhook-targetfilters"></a>
 
-The `TargetFilters` property type specifies the target filters for the
-Hook.
+The `TargetFilters` property type specifies the target filters for the Hook.
 
-For more information, see [CloudFormation Hook target filters](../../../cloudformation-cli/latest/hooks-userguide/hooks-target-filtering.md).
+For more information, see [CloudFormation Hook target filters](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/hooks-target-filtering.html).
 
 ## Syntax
+<a name="aws-properties-cloudformation-guardhook-targetfilters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudformation-guardhook-targetfilters-syntax.json"></a>
 
-```json
-
+```
 {
-  "TargetFiltersItems" : TargetFiltersItems
+  "[TargetFiltersItems](#cfn-cloudformation-guardhook-targetfilters-targetfiltersitems)" : {{TargetFiltersItems}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudformation-guardhook-targetfilters-syntax.yaml"></a>
 
-```yaml
-
-  TargetFiltersItems:
-    TargetFiltersItems
-
+```
+  [TargetFiltersItems](#cfn-cloudformation-guardhook-targetfilters-targetfiltersitems): {{
+    TargetFiltersItems}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudformation-guardhook-targetfilters-properties"></a>
 
-`TargetFiltersItems`
-
+`TargetFiltersItems`  <a name="cfn-cloudformation-guardhook-targetfilters-targetfiltersitems"></a>
 The specific resource types, actions, and invocation points to target.
-
-_Required_: No
-
-_Type_: [TargetFiltersItems](aws-properties-cloudformation-guardhook-targetfiltersitems.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StackRoles
-
-TargetFiltersItems
+*Required*: No
+*Type*: [TargetFiltersItems](aws-properties-cloudformation-guardhook-targetfiltersitems.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

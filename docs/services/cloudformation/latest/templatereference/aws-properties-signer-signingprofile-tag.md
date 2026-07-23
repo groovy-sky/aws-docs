@@ -2,74 +2,54 @@
 title: "AWS::Signer::SigningProfile Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Signer::SigningProfile Tag
+<a name="aws-properties-signer-signingprofile-tag"></a>
 
-The `Tag` property type specifies Property description not available. for an [AWS::Signer::SigningProfile](aws-resource-signer-signingprofile.md).
+<a name="aws-properties-signer-signingprofile-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::Signer::SigningProfile](aws-resource-signer-signingprofile.md).
 
 ## Syntax
+<a name="aws-properties-signer-signingprofile-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-signer-signingprofile-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-signer-signingprofile-tag-key)" : {{String}},
+  "[Value](#cfn-signer-signingprofile-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-signer-signingprofile-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-signer-signingprofile-tag-key): {{String}}
+  [Value](#cfn-signer-signingprofile-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-signer-signingprofile-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-signer-signingprofile-tag-key"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^(?!aws:)[a-zA-Z+-=._:/]+$`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-signer-signingprofile-tag-value"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SignatureValidityPeriod
-
-Next
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

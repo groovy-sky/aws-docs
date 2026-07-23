@@ -2,78 +2,52 @@
 title: "AWS::ImageBuilder::Image ImageTestsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::Image ImageTestsConfiguration
+<a name="aws-properties-imagebuilder-image-imagetestsconfiguration"></a>
 
-When you create an image or container recipe with Image Builder, you can add the build or
-test components that are used to create the final image. You must have at least one build
-component to create a recipe, but test components are not required. If you have added tests,
-they run after the image is created, to ensure that the target image is functional and can
-be used reliably for launching Amazon EC2 instances.
+Configure image tests for your pipeline build. Tests run after building the image, to verify that the AMI or container image is valid before distributing it.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-image-imagetestsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-image-imagetestsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageTestsEnabled" : Boolean,
-  "TimeoutMinutes" : Integer
+  "[ImageTestsEnabled](#cfn-imagebuilder-image-imagetestsconfiguration-imagetestsenabled)" : {{Boolean}},
+  "[TimeoutMinutes](#cfn-imagebuilder-image-imagetestsconfiguration-timeoutminutes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-image-imagetestsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ImageTestsEnabled: Boolean
-  TimeoutMinutes: Integer
-
+```
+  [ImageTestsEnabled](#cfn-imagebuilder-image-imagetestsconfiguration-imagetestsenabled): {{Boolean}}
+  [TimeoutMinutes](#cfn-imagebuilder-image-imagetestsconfiguration-timeoutminutes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-image-imagetestsconfiguration-properties"></a>
 
-`ImageTestsEnabled`
+`ImageTestsEnabled`  <a name="cfn-imagebuilder-image-imagetestsconfiguration-imagetestsenabled"></a>
+Determines if tests should run after building the image. Image Builder defaults to enable tests to run following the image build, before image distribution.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Determines if tests should run after building the image. Image Builder defaults to enable tests
-to run following the image build, before image distribution.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TimeoutMinutes`
-
+`TimeoutMinutes`  <a name="cfn-imagebuilder-image-imagetestsconfiguration-timeoutminutes"></a>
 The maximum time in minutes that tests are permitted to run.
-
-###### Note
-
-The timeout property is not currently active. This value is
-ignored.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `60`
-
-_Maximum_: `1440`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageScanningConfiguration
-
-LatestVersion
+The timeout property is not currently active. This value is ignored.
+*Required*: No
+*Type*: Integer
+*Minimum*: `60`
+*Maximum*: `1440`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

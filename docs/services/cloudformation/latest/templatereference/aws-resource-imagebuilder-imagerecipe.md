@@ -2,269 +2,210 @@
 title: "AWS::ImageBuilder::ImageRecipe"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImageRecipe
+<a name="aws-resource-imagebuilder-imagerecipe"></a>
 
-Creates a new image recipe. Image recipes define how images are configured, tested,
-and assessed.
+Creates a new image recipe. Image recipes define how images are configured, tested, and assessed.
 
 ## Syntax
+<a name="aws-resource-imagebuilder-imagerecipe-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-imagebuilder-imagerecipe-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ImageBuilder::ImageRecipe",
   "Properties" : {
-      "AdditionalInstanceConfiguration" : AdditionalInstanceConfiguration,
-      "AmiTags" : {Key: Value, ...},
-      "BlockDeviceMappings" : [ InstanceBlockDeviceMapping, ... ],
-      "Components" : [ ComponentConfiguration, ... ],
-      "Description" : String,
-      "Name" : String,
-      "ParentImage" : String,
-      "Tags" : {Key: Value, ...},
-      "Version" : String,
-      "WorkingDirectory" : String
+      "[AdditionalInstanceConfiguration](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration)" : {{AdditionalInstanceConfiguration}},
+      "[AmiTags](#cfn-imagebuilder-imagerecipe-amitags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[AmiWatermarks](#cfn-imagebuilder-imagerecipe-amiwatermarks)" : {{[ String, ... ]}},
+      "[BlockDeviceMappings](#cfn-imagebuilder-imagerecipe-blockdevicemappings)" : {{[ InstanceBlockDeviceMapping, ... ]}},
+      "[Components](#cfn-imagebuilder-imagerecipe-components)" : {{[ ComponentConfiguration, ... ]}},
+      "[Description](#cfn-imagebuilder-imagerecipe-description)" : {{String}},
+      "[Name](#cfn-imagebuilder-imagerecipe-name)" : {{String}},
+      "[ParentImage](#cfn-imagebuilder-imagerecipe-parentimage)" : {{String}},
+      "[Tags](#cfn-imagebuilder-imagerecipe-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[Version](#cfn-imagebuilder-imagerecipe-version)" : {{String}},
+      "[WorkingDirectory](#cfn-imagebuilder-imagerecipe-workingdirectory)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-imagebuilder-imagerecipe-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ImageBuilder::ImageRecipe
 Properties:
-  AdditionalInstanceConfiguration:
-    AdditionalInstanceConfiguration
-  AmiTags:
-    Key: Value
-  BlockDeviceMappings:
-    - InstanceBlockDeviceMapping
-  Components:
-    - ComponentConfiguration
-  Description: String
-  Name: String
-  ParentImage: String
-  Tags:
-    Key: Value
-  Version: String
-  WorkingDirectory: String
-
+  [AdditionalInstanceConfiguration](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration): {{
+    AdditionalInstanceConfiguration}}
+  [AmiTags](#cfn-imagebuilder-imagerecipe-amitags): {{
+    {{Key}}: {{Value}}}}
+  [AmiWatermarks](#cfn-imagebuilder-imagerecipe-amiwatermarks): {{
+    - String}}
+  [BlockDeviceMappings](#cfn-imagebuilder-imagerecipe-blockdevicemappings): {{
+    - InstanceBlockDeviceMapping}}
+  [Components](#cfn-imagebuilder-imagerecipe-components): {{
+    - ComponentConfiguration}}
+  [Description](#cfn-imagebuilder-imagerecipe-description): {{String}}
+  [Name](#cfn-imagebuilder-imagerecipe-name): {{String}}
+  [ParentImage](#cfn-imagebuilder-imagerecipe-parentimage): {{String}}
+  [Tags](#cfn-imagebuilder-imagerecipe-tags): {{
+    {{Key}}: {{Value}}}}
+  [Version](#cfn-imagebuilder-imagerecipe-version): {{String}}
+  [WorkingDirectory](#cfn-imagebuilder-imagerecipe-workingdirectory): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-imagebuilder-imagerecipe-properties"></a>
 
-`AdditionalInstanceConfiguration`
+`AdditionalInstanceConfiguration`  <a name="cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration"></a>
+Specify additional settings and launch scripts for your build instances.
+*Required*: No
+*Type*: [AdditionalInstanceConfiguration](aws-properties-imagebuilder-imagerecipe-additionalinstanceconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Before you create a new AMI, Image Builder launches temporary Amazon EC2 instances to build and test
-your image configuration. Instance configuration adds a layer of control over those
-instances. You can define settings and add scripts to run when an instance is launched
-from your AMI.
+`AmiTags`  <a name="cfn-imagebuilder-imagerecipe-amitags"></a>
+Tags that are applied to the AMI that Image Builder creates during the Build phase prior to image distribution.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`AmiWatermarks`  <a name="cfn-imagebuilder-imagerecipe-amiwatermarks"></a>
+The AMI watermark names to attach to the output AMI from this recipe. AMI watermarks are lineage markers. They automatically propagate to derivative AMIs when the source AMI is copied or distributed across Regions or accounts.
+AMI watermarks are supported only for image recipes. AMIs with watermarks cannot be made public.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `3 | 1`
+*Maximum*: `128 | 5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [AdditionalInstanceConfiguration](aws-properties-imagebuilder-imagerecipe-additionalinstanceconfiguration.md)
+`BlockDeviceMappings`  <a name="cfn-imagebuilder-imagerecipe-blockdevicemappings"></a>
+The block device mappings of the image recipe.
+*Required*: No
+*Type*: Array of [InstanceBlockDeviceMapping](aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Components`  <a name="cfn-imagebuilder-imagerecipe-components"></a>
+The components included in the image recipe.
+*Required*: No
+*Type*: Array of [ComponentConfiguration](aws-properties-imagebuilder-imagerecipe-componentconfiguration.md)
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`AmiTags`
-
-Tags that are applied to the AMI that Image Builder creates during the Build phase
-prior to image distribution.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BlockDeviceMappings`
-
-The block device mappings to apply when creating images from this recipe.
-
-_Required_: No
-
-_Type_: Array of [InstanceBlockDeviceMapping](aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Components`
-
-The components that are included in the image recipe. Recipes require a minimum of one build component, and can
-have a maximum of 20 build and test components in any combination.
-
-_Required_: No
-
-_Type_: Array of [ComponentConfiguration](aws-properties-imagebuilder-imagerecipe-componentconfiguration.md)
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-imagebuilder-imagerecipe-description"></a>
 The description of the image recipe.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-imagebuilder-imagerecipe-name"></a>
 The name of the image recipe.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`ParentImage`  <a name="cfn-imagebuilder-imagerecipe-parentimage"></a>
+The base image for customizations specified in the image recipe. You can specify the parent image using one of the following options:
++ AMI ID
++ Image Builder image Amazon Resource Name (ARN)
++ AWS Systems Manager (SSM) Parameter Store Parameter, prefixed by `ssm:`, followed by the parameter name or ARN.
++ AWS Marketplace product ID
+If you enter an AMI ID or an SSM parameter that contains the AMI ID, you must have access to the AMI, and the AMI must be in the source Region.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParentImage`
-
-The base image for customizations specified in the image recipe. You can specify the
-parent image using one of the following options:
-
-- AMI ID
-
-- Image Builder image Amazon Resource Name (ARN)
-
-- AWS Systems Manager (SSM) Parameter Store Parameter, prefixed by `ssm:`,
-followed by the parameter name or ARN.
-
-- AWS Marketplace product ID
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-imagebuilder-imagerecipe-tags"></a>
 The tags of the image recipe.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Version`  <a name="cfn-imagebuilder-imagerecipe-version"></a>
+The semantic version of the image recipe. This version follows the semantic version syntax.
+The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
+**Assignment:** For the first three nodes you can assign any positive integer value, including zero, with an upper limit of 2^30-1, or 1073741823 for each node. Image Builder automatically assigns the build number to the fourth node.
+**Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
-The semantic version of the image recipe. This version follows the semantic version
-syntax.
-
-###### Note
-
-The semantic version has four nodes: <major>.<minor>.<patch>/<build>.
-You can assign values for the first three, and can filter on all of them.
-
-**Assignment:** For the first three nodes you can assign any positive integer value, including
-zero, with an upper limit of 2^30-1, or 1073741823 for each node. Image Builder automatically assigns the
-build number to the fourth node.
-
-**Patterns:** You can use any numeric pattern that adheres to the assignment requirements for
-the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or
-a date, such as 2021.01.01.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WorkingDirectory`
-
-The working directory to be used during build and test workflows.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`WorkingDirectory`  <a name="cfn-imagebuilder-imagerecipe-workingdirectory"></a>
+The working directory used during build and test workflows.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-imagebuilder-imagerecipe-return-values"></a>
 
 ### Ref
+<a name="aws-resource-imagebuilder-imagerecipe-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ARN, such as
-`arn:aws:imagebuilder:us-east-1:123456789012:image-recipe/mybasicrecipe/2019.12.03`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ARN, such as `arn:aws:imagebuilder:us-east-1:111122223333:image-recipe/mybasicrecipe/2019.12.03`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-imagebuilder-imagerecipe-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-imagebuilder-imagerecipe-return-values-fn--getatt-fn--getatt"></a>
 
-Returns the Amazon Resource Name (ARN) of the image recipe. For example,
-`arn:aws:imagebuilder:us-east-1:123456789012:image-recipe/mybasicrecipe/2019.12.03`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+Returns the Amazon Resource Name (ARN) of the image recipe. For example, `arn:aws:imagebuilder:us-east-1:111122223333:image-recipe/mybasicrecipe/2019.12.03`.
 
-`LatestVersion.Arn`
-
+`LatestVersion.Arn`  <a name="LatestVersion.Arn-fn::getatt"></a>
 The latest version Amazon Resource Name (ARN) of the Image Builder resource.
 
-`LatestVersion.Major`
-
+`LatestVersion.Major`  <a name="LatestVersion.Major-fn::getatt"></a>
 The latest version Amazon Resource Name (ARN) with the same `major` version of the Image Builder resource.
 
-`LatestVersion.Minor`
-
+`LatestVersion.Minor`  <a name="LatestVersion.Minor-fn::getatt"></a>
 The latest version Amazon Resource Name (ARN) with the same `minor` version of the Image Builder resource.
 
-`LatestVersion.Patch`
-
+`LatestVersion.Patch`  <a name="LatestVersion.Patch-fn::getatt"></a>
 The latest version Amazon Resource Name (ARN) with the same `patch` version of the Image Builder resource.
 
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 The name of the image recipe.
 
 ## Examples
+<a name="aws-resource-imagebuilder-imagerecipe--examples"></a>
+
+**Topics**
++ [Create an image recipe](#aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe)
++ [Create an image recipe with AMI tags and watermarks](#aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe_with_AMI_tags_and_watermarks)
 
 ### Create an image recipe
+<a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe"></a>
 
-The following example shows the schema for all of the parameters of the
-ImageRecipe resource document in both YAML and JSON format .
+The following example shows the template for the ImageRecipe resource in both YAML and JSON format.
 
 #### YAML
+<a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ImageRecipeAllParameters:
     Type: 'AWS::ImageBuilder::ImageRecipe'
@@ -293,9 +234,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "ImageRecipeAllParameters": {
@@ -346,15 +287,90 @@ Resources:
 }
 ```
 
+### Create an image recipe with AMI tags and watermarks
+<a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe_with_AMI_tags_and_watermarks"></a>
+
+The following example creates an image recipe that applies tags and watermarks to the output AMI, and provides a custom user data script for the build instance.
+
+#### YAML
+<a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe_with_AMI_tags_and_watermarks--yaml"></a>
+
+```
+Resources:
+  RecipeWithExtras:
+    Type: AWS::ImageBuilder::ImageRecipe
+    Properties:
+      Name: recipe-with-extras
+      Version: '1.0.0'
+      ParentImage: !Ref LatestAmazonLinux2Ami
+      Components:
+        - ComponentArn: !GetAtt HardeningComponent.Arn
+      AmiTags:
+        CostCenter: '12345'
+        PatchLevel: latest
+      AmiWatermarks:
+        - production-approved
+        - security-hardened
+      AdditionalInstanceConfiguration:
+        SystemsManagerAgent:
+          UninstallAfterBuild: true
+        UserDataOverride: !Base64 |
+          #!/bin/bash
+          yum update -y
+      WorkingDirectory: /tmp
+      Tags:
+        Team: platform
+```
+
+#### JSON
+<a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe_with_AMI_tags_and_watermarks--json"></a>
+
+```
+{
+    "Resources": {
+        "RecipeWithExtras": {
+            "Type": "AWS::ImageBuilder::ImageRecipe",
+            "Properties": {
+                "Name": "recipe-with-extras",
+                "Version": "1.0.0",
+                "ParentImage": {
+                    "Ref": "LatestAmazonLinux2Ami"
+                },
+                "Components": [
+                    {
+                        "ComponentArn": {
+                            "Fn::GetAtt": ["HardeningComponent", "Arn"]
+                        }
+                    }
+                ],
+                "AmiTags": {
+                    "CostCenter": "12345",
+                    "PatchLevel": "latest"
+                },
+                "AmiWatermarks": [
+                    "production-approved",
+                    "security-hardened"
+                ],
+                "AdditionalInstanceConfiguration": {
+                    "SystemsManagerAgent": {
+                        "UninstallAfterBuild": true
+                    },
+                    "UserDataOverride": {
+                        "Fn::Base64": "#!/bin/bash\nyum update -y\n"
+                    }
+                },
+                "WorkingDirectory": "/tmp",
+                "Tags": {
+                    "Team": "platform"
+                }
+            }
+        }
+    }
+}
+```
+
 ## See also
-
-- [Create a basic image recipe](../../../imagebuilder/latest/userguide/managing-image-builder-cli.md#image-builder-cli-create-recipe) in the
-_Image Builder User Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkflowParameter
-
-AdditionalInstanceConfiguration
+<a name="aws-resource-imagebuilder-imagerecipe--seealso"></a>
++ [Create an image recipe](https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-image-recipes.html) in the *Image Builder User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

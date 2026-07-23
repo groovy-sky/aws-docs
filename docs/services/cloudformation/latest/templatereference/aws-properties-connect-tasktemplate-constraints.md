@@ -2,85 +2,63 @@
 title: "AWS::Connect::TaskTemplate Constraints"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::TaskTemplate Constraints
+<a name="aws-properties-connect-tasktemplate-constraints"></a>
 
 Describes constraints that apply to the template fields.
 
 ## Syntax
+<a name="aws-properties-connect-tasktemplate-constraints-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-tasktemplate-constraints-syntax.json"></a>
 
-```json
-
+```
 {
-  "InvisibleFields" : [ InvisibleFieldInfo, ... ],
-  "ReadOnlyFields" : [ ReadOnlyFieldInfo, ... ],
-  "RequiredFields" : [ RequiredFieldInfo, ... ]
+  "[InvisibleFields](#cfn-connect-tasktemplate-constraints-invisiblefields)" : {{[ InvisibleFieldInfo, ... ]}},
+  "[ReadOnlyFields](#cfn-connect-tasktemplate-constraints-readonlyfields)" : {{[ ReadOnlyFieldInfo, ... ]}},
+  "[RequiredFields](#cfn-connect-tasktemplate-constraints-requiredfields)" : {{[ RequiredFieldInfo, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-tasktemplate-constraints-syntax.yaml"></a>
 
-```yaml
-
-  InvisibleFields:
-    - InvisibleFieldInfo
-  ReadOnlyFields:
-    - ReadOnlyFieldInfo
-  RequiredFields:
-    - RequiredFieldInfo
-
+```
+  [InvisibleFields](#cfn-connect-tasktemplate-constraints-invisiblefields): {{
+    - InvisibleFieldInfo}}
+  [ReadOnlyFields](#cfn-connect-tasktemplate-constraints-readonlyfields): {{
+    - ReadOnlyFieldInfo}}
+  [RequiredFields](#cfn-connect-tasktemplate-constraints-requiredfields): {{
+    - RequiredFieldInfo}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-tasktemplate-constraints-properties"></a>
 
-`InvisibleFields`
-
+`InvisibleFields`  <a name="cfn-connect-tasktemplate-constraints-invisiblefields"></a>
 Lists the fields that are invisible to agents.
+*Required*: No
+*Type*: Array of [InvisibleFieldInfo](aws-properties-connect-tasktemplate-invisiblefieldinfo.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [InvisibleFieldInfo](aws-properties-connect-tasktemplate-invisiblefieldinfo.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReadOnlyFields`
-
+`ReadOnlyFields`  <a name="cfn-connect-tasktemplate-constraints-readonlyfields"></a>
 Lists the fields that are read-only to agents, and cannot be edited.
+*Required*: No
+*Type*: Array of [ReadOnlyFieldInfo](aws-properties-connect-tasktemplate-readonlyfieldinfo.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ReadOnlyFieldInfo](aws-properties-connect-tasktemplate-readonlyfieldinfo.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequiredFields`
-
+`RequiredFields`  <a name="cfn-connect-tasktemplate-constraints-requiredfields"></a>
 Lists the fields that are required to be filled by agents.
-
-_Required_: No
-
-_Type_: Array of [RequiredFieldInfo](aws-properties-connect-tasktemplate-requiredfieldinfo.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::TaskTemplate
-
-DefaultFieldValue
+*Required*: No
+*Type*: Array of [RequiredFieldInfo](aws-properties-connect-tasktemplate-requiredfieldinfo.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

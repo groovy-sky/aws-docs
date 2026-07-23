@@ -2,169 +2,131 @@
 title: "AWS::Bedrock::IntelligentPromptRouter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::IntelligentPromptRouter
+<a name="aws-resource-bedrock-intelligentpromptrouter"></a>
 
 Specifies an intelligent prompt router resource for Amazon Bedrock.
 
 ## Syntax
+<a name="aws-resource-bedrock-intelligentpromptrouter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-intelligentpromptrouter-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::IntelligentPromptRouter",
   "Properties" : {
-      "Description" : String,
-      "FallbackModel" : PromptRouterTargetModel,
-      "Models" : [ PromptRouterTargetModel, ... ],
-      "PromptRouterName" : String,
-      "RoutingCriteria" : RoutingCriteria,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-bedrock-intelligentpromptrouter-description)" : {{String}},
+      "[FallbackModel](#cfn-bedrock-intelligentpromptrouter-fallbackmodel)" : {{PromptRouterTargetModel}},
+      "[Models](#cfn-bedrock-intelligentpromptrouter-models)" : {{[ PromptRouterTargetModel, ... ]}},
+      "[PromptRouterName](#cfn-bedrock-intelligentpromptrouter-promptroutername)" : {{String}},
+      "[RoutingCriteria](#cfn-bedrock-intelligentpromptrouter-routingcriteria)" : {{RoutingCriteria}},
+      "[Tags](#cfn-bedrock-intelligentpromptrouter-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-intelligentpromptrouter-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::IntelligentPromptRouter
 Properties:
-  Description: String
-  FallbackModel:
-    PromptRouterTargetModel
-  Models:
-    - PromptRouterTargetModel
-  PromptRouterName: String
-  RoutingCriteria:
-    RoutingCriteria
-  Tags:
-    - Tag
-
+  [Description](#cfn-bedrock-intelligentpromptrouter-description): {{String}}
+  [FallbackModel](#cfn-bedrock-intelligentpromptrouter-fallbackmodel): {{
+    PromptRouterTargetModel}}
+  [Models](#cfn-bedrock-intelligentpromptrouter-models): {{
+    - PromptRouterTargetModel}}
+  [PromptRouterName](#cfn-bedrock-intelligentpromptrouter-promptroutername): {{String}}
+  [RoutingCriteria](#cfn-bedrock-intelligentpromptrouter-routingcriteria): {{
+    RoutingCriteria}}
+  [Tags](#cfn-bedrock-intelligentpromptrouter-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-intelligentpromptrouter-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrock-intelligentpromptrouter-description"></a>
 An optional description of the prompt router to help identify its purpose.
+*Required*: No
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z:.][ _-]?)+$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z:.][ _-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FallbackModel`
-
+`FallbackModel`  <a name="cfn-bedrock-intelligentpromptrouter-fallbackmodel"></a>
 The default model to use when the routing criteria is not met.
+*Required*: Yes
+*Type*: [PromptRouterTargetModel](aws-properties-bedrock-intelligentpromptrouter-promptroutertargetmodel.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [PromptRouterTargetModel](aws-properties-bedrock-intelligentpromptrouter-promptroutertargetmodel.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Models`
-
+`Models`  <a name="cfn-bedrock-intelligentpromptrouter-models"></a>
 A list of foundation models that the prompt router can route requests to. At least one model must be specified.
+*Required*: Yes
+*Type*: Array of [PromptRouterTargetModel](aws-properties-bedrock-intelligentpromptrouter-promptroutertargetmodel.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of [PromptRouterTargetModel](aws-properties-bedrock-intelligentpromptrouter-promptroutertargetmodel.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PromptRouterName`
-
+`PromptRouterName`  <a name="cfn-bedrock-intelligentpromptrouter-promptroutername"></a>
 The name of the prompt router. The name must be unique within your AWS account in the current region.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][ _-]?)+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][ _-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoutingCriteria`
-
+`RoutingCriteria`  <a name="cfn-bedrock-intelligentpromptrouter-routingcriteria"></a>
 Routing criteria for a prompt router.
+*Required*: Yes
+*Type*: [RoutingCriteria](aws-properties-bedrock-intelligentpromptrouter-routingcriteria.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [RoutingCriteria](aws-properties-bedrock-intelligentpromptrouter-routingcriteria.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrock-intelligentpromptrouter-tags"></a>
 An array of key-value pairs to apply to this resource as tags. You can use tags to categorize and manage your AWS resources.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrock-intelligentpromptrouter-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrock-intelligentpromptrouter-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrock-intelligentpromptrouter-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-intelligentpromptrouter-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the intelligent prompt router information.
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-intelligentpromptrouter-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrock-intelligentpromptrouter-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 Indicates the time that the prompt router was created.
 
-`PromptRouterArn`
-
+`PromptRouterArn`  <a name="PromptRouterArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the prompt router.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The router's status.
 
-`Type`
-
+`Type`  <a name="Type-fn::getatt"></a>
 The router's type.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 When the router was updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::GuardrailVersion
-
-PromptRouterTargetModel
 
 All content copied from https://docs.aws.amazon.com/.

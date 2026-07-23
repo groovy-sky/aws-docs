@@ -2,76 +2,57 @@
 title: "AWS::DevOpsAgent::AgentSpace IamAuthConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::AgentSpace IamAuthConfiguration
+<a name="aws-properties-devopsagent-agentspace-iamauthconfiguration"></a>
 
 IAM-based authentication configuration for the DevOps Agent web app.
 
 ## Syntax
+<a name="aws-properties-devopsagent-agentspace-iamauthconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-agentspace-iamauthconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CreatedAt" : String,
-  "OperatorAppRoleArn" : String,
-  "UpdatedAt" : String
+  "[CreatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-createdat)" : {{String}},
+  "[OperatorAppRoleArn](#cfn-devopsagent-agentspace-iamauthconfiguration-operatorapprolearn)" : {{String}},
+  "[UpdatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-updatedat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-agentspace-iamauthconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CreatedAt: String
-  OperatorAppRoleArn: String
-  UpdatedAt: String
-
+```
+  [CreatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-createdat): {{String}}
+  [OperatorAppRoleArn](#cfn-devopsagent-agentspace-iamauthconfiguration-operatorapprolearn): {{String}}
+  [UpdatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-updatedat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-agentspace-iamauthconfiguration-properties"></a>
 
-`CreatedAt`
-
+`CreatedAt`  <a name="cfn-devopsagent-agentspace-iamauthconfiguration-createdat"></a>
 The timestamp when the IAM authentication configuration was created.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperatorAppRoleArn`
-
+`OperatorAppRoleArn`  <a name="cfn-devopsagent-agentspace-iamauthconfiguration-operatorapprolearn"></a>
 The ARN of the IAM role that grants access to the DevOps Agent web app.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdatedAt`
-
+`UpdatedAt`  <a name="cfn-devopsagent-agentspace-iamauthconfiguration-updatedat"></a>
 The timestamp when the IAM authentication configuration was last updated.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DevOpsAgent::AgentSpace
-
-IdcAuthConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

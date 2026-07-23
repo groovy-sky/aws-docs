@@ -2,67 +2,51 @@
 title: "AWS::CloudFront::Distribution ViewerMtlsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution ViewerMtlsConfig
+<a name="aws-properties-cloudfront-distribution-viewermtlsconfig"></a>
 
 A viewer mTLS configuration.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-viewermtlsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-viewermtlsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mode" : String,
-  "TrustStoreConfig" : TrustStoreConfig
+  "[Mode](#cfn-cloudfront-distribution-viewermtlsconfig-mode)" : {{String}},
+  "[TrustStoreConfig](#cfn-cloudfront-distribution-viewermtlsconfig-truststoreconfig)" : {{TrustStoreConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-viewermtlsconfig-syntax.yaml"></a>
 
-```yaml
-
-  Mode: String
-  TrustStoreConfig:
-    TrustStoreConfig
-
+```
+  [Mode](#cfn-cloudfront-distribution-viewermtlsconfig-mode): {{String}}
+  [TrustStoreConfig](#cfn-cloudfront-distribution-viewermtlsconfig-truststoreconfig): {{
+    TrustStoreConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-viewermtlsconfig-properties"></a>
 
-`Mode`
-
+`Mode`  <a name="cfn-cloudfront-distribution-viewermtlsconfig-mode"></a>
 The viewer mTLS mode.
+*Required*: No
+*Type*: String
+*Allowed values*: `required | optional | passthrough`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `required | optional`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrustStoreConfig`
-
+`TrustStoreConfig`  <a name="cfn-cloudfront-distribution-viewermtlsconfig-truststoreconfig"></a>
 The trust store configuration associated with the viewer mTLS configuration.
-
-_Required_: No
-
-_Type_: [TrustStoreConfig](aws-properties-cloudfront-distribution-truststoreconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ViewerCertificate
-
-VpcOriginConfig
+*Required*: No
+*Type*: [TrustStoreConfig](aws-properties-cloudfront-distribution-truststoreconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

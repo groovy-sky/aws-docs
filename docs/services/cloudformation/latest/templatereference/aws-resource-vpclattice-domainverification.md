@@ -2,96 +2,80 @@
 title: "AWS::VpcLattice::DomainVerification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::DomainVerification
+<a name="aws-resource-vpclattice-domainverification"></a>
 
 A domain name verification is an entity that allows you to prove your ownership of a given domain. When you create a domain verification using CloudFormation, use a waiter to make sure the domain verification is complete before you create a service network resource association, a VPC endpoint, or a service network VPC association with this domain.
 
 ## Syntax
+<a name="aws-resource-vpclattice-domainverification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-vpclattice-domainverification-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::VpcLattice::DomainVerification",
   "Properties" : {
-      "DomainName" : String,
-      "Tags" : [ Tag, ... ]
+      "[DomainName](#cfn-vpclattice-domainverification-domainname)" : {{String}},
+      "[Tags](#cfn-vpclattice-domainverification-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-vpclattice-domainverification-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::VpcLattice::DomainVerification
 Properties:
-  DomainName: String
-  Tags:
-    - Tag
-
+  [DomainName](#cfn-vpclattice-domainverification-domainname): {{String}}
+  [Tags](#cfn-vpclattice-domainverification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-vpclattice-domainverification-properties"></a>
 
-`DomainName`
+`DomainName`  <a name="cfn-vpclattice-domainverification-domainname"></a>
+ The domain name being verified.
+*Required*: Yes
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The domain name being verified.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tags associated with the domain verification.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-vpclattice-domainverification-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-vpclattice-domainverification-tags"></a>
+ The tags associated with the domain verification.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-vpclattice-domainverification-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-vpclattice-domainverification-return-values"></a>
 
 ### Ref
+<a name="aws-resource-vpclattice-domainverification-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-vpclattice-domainverification-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-vpclattice-domainverification-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the domain verification.
+`Arn`  <a name="Arn-fn::getatt"></a>
+ The Amazon Resource Name (ARN) of the domain verification.
 
-`Id`
+`Id`  <a name="Id-fn::getatt"></a>
+ The ID of the domain verification.
 
-The ID of the domain verification.
-
-`Status`
-
-The current status of the domain verification process.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::AuthPolicy
-
-Tag
+`Status`  <a name="Status-fn::getatt"></a>
+ The current status of the domain verification process.
 
 All content copied from https://docs.aws.amazon.com/.

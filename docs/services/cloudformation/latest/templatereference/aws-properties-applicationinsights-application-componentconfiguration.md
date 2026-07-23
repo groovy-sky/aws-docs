@@ -2,68 +2,52 @@
 title: "AWS::ApplicationInsights::Application ComponentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application ComponentConfiguration
+<a name="aws-properties-applicationinsights-application-componentconfiguration"></a>
 
 The `AWS::ApplicationInsights::Application ComponentConfiguration` property type defines the configuration settings of the component.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-componentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-componentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConfigurationDetails" : ConfigurationDetails,
-  "SubComponentTypeConfigurations" : [ SubComponentTypeConfiguration, ... ]
+  "[ConfigurationDetails](#cfn-applicationinsights-application-componentconfiguration-configurationdetails)" : {{ConfigurationDetails}},
+  "[SubComponentTypeConfigurations](#cfn-applicationinsights-application-componentconfiguration-subcomponenttypeconfigurations)" : {{[ SubComponentTypeConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-componentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ConfigurationDetails:
-    ConfigurationDetails
-  SubComponentTypeConfigurations:
-    - SubComponentTypeConfiguration
-
+```
+  [ConfigurationDetails](#cfn-applicationinsights-application-componentconfiguration-configurationdetails): {{
+    ConfigurationDetails}}
+  [SubComponentTypeConfigurations](#cfn-applicationinsights-application-componentconfiguration-subcomponenttypeconfigurations): {{
+    - SubComponentTypeConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-componentconfiguration-properties"></a>
 
-`ConfigurationDetails`
-
+`ConfigurationDetails`  <a name="cfn-applicationinsights-application-componentconfiguration-configurationdetails"></a>
 The configuration settings.
+*Required*: No
+*Type*: [ConfigurationDetails](aws-properties-applicationinsights-application-configurationdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConfigurationDetails](aws-properties-applicationinsights-application-configurationdetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubComponentTypeConfigurations`
-
+`SubComponentTypeConfigurations`  <a name="cfn-applicationinsights-application-componentconfiguration-subcomponenttypeconfigurations"></a>
 Sub-component configurations of the component.
-
-_Required_: No
-
-_Type_: Array of [SubComponentTypeConfiguration](aws-properties-applicationinsights-application-subcomponenttypeconfiguration.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AlarmMetric
-
-ComponentMonitoringSetting
+*Required*: No
+*Type*: Array of [SubComponentTypeConfiguration](aws-properties-applicationinsights-application-subcomponenttypeconfiguration.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

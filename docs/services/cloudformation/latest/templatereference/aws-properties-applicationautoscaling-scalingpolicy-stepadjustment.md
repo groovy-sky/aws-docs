@@ -2,114 +2,72 @@
 title: "AWS::ApplicationAutoScaling::ScalingPolicy StepAdjustment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalingPolicy StepAdjustment
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepadjustment"></a>
 
-`StepAdjustment` specifies a step adjustment for the `StepAdjustments`
-property of the [AWS::ApplicationAutoScaling::ScalingPolicy StepScalingPolicyConfiguration](../userguide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.md) property
-type.
+`StepAdjustment` specifies a step adjustment for the `StepAdjustments` property of the [AWS::ApplicationAutoScaling::ScalingPolicy StepScalingPolicyConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html) property type.
 
 For the following examples, suppose that you have an alarm with a breach threshold of 50:
++ To trigger a step adjustment when the metric is greater than or equal to 50 and less than 60, specify a lower bound of 0 and an upper bound of 10.
++ To trigger a step adjustment when the metric is greater than 40 and less than or equal to 50, specify a lower bound of -10 and an upper bound of 0.
 
-- To trigger a step adjustment when the metric is greater than or equal to 50 and less
-than 60, specify a lower bound of 0 and an upper bound of 10.
+For more information, see [Step adjustments](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-step-scaling-policies.html#as-scaling-steps) in the *Application Auto Scaling User Guide*.
 
-- To trigger a step adjustment when the metric is greater than 40 and less than or equal
-to 50, specify a lower bound of -10 and an upper bound of 0.
-
-For more information, see [Step adjustments](../../../autoscaling/application/userguide/application-auto-scaling-step-scaling-policies.md#as-scaling-steps) in the _Application Auto Scaling User_
-_Guide_.
-
-You can find a sample template snippet in the [Examples](../userguide/aws-resource-applicationautoscaling-scalingpolicy.md#aws-resource-applicationautoscaling-scalingpolicy--examples) section of the `AWS::ApplicationAutoScaling::ScalingPolicy`
-documentation.
+You can find a sample template snippet in the [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#aws-resource-applicationautoscaling-scalingpolicy--examples) section of the `AWS::ApplicationAutoScaling::ScalingPolicy` documentation.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepadjustment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepadjustment-syntax.json"></a>
 
-```json
-
+```
 {
-  "MetricIntervalLowerBound" : Number,
-  "MetricIntervalUpperBound" : Number,
-  "ScalingAdjustment" : Integer
+  "[MetricIntervalLowerBound](#cfn-applicationautoscaling-scalingpolicy-stepadjustment-metricintervallowerbound)" : {{Number}},
+  "[MetricIntervalUpperBound](#cfn-applicationautoscaling-scalingpolicy-stepadjustment-metricintervalupperbound)" : {{Number}},
+  "[ScalingAdjustment](#cfn-applicationautoscaling-scalingpolicy-stepadjustment-scalingadjustment)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepadjustment-syntax.yaml"></a>
 
-```yaml
-
-  MetricIntervalLowerBound: Number
-  MetricIntervalUpperBound: Number
-  ScalingAdjustment: Integer
-
+```
+  [MetricIntervalLowerBound](#cfn-applicationautoscaling-scalingpolicy-stepadjustment-metricintervallowerbound): {{Number}}
+  [MetricIntervalUpperBound](#cfn-applicationautoscaling-scalingpolicy-stepadjustment-metricintervalupperbound): {{Number}}
+  [ScalingAdjustment](#cfn-applicationautoscaling-scalingpolicy-stepadjustment-scalingadjustment): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepadjustment-properties"></a>
 
-`MetricIntervalLowerBound`
-
-The lower bound for the difference between the alarm threshold and the CloudWatch metric.
-If the metric value is above the breach threshold, the lower bound is inclusive (the metric
-must be greater than or equal to the threshold plus the lower bound). Otherwise, it is
-exclusive (the metric must be greater than the threshold plus the lower bound). A null value
-indicates negative infinity.
-
+`MetricIntervalLowerBound`  <a name="cfn-applicationautoscaling-scalingpolicy-stepadjustment-metricintervallowerbound"></a>
+The lower bound for the difference between the alarm threshold and the CloudWatch metric. If the metric value is above the breach threshold, the lower bound is inclusive (the metric must be greater than or equal to the threshold plus the lower bound). Otherwise, it is exclusive (the metric must be greater than the threshold plus the lower bound). A null value indicates negative infinity.
 You must specify at least one upper or lower bound.
+*Required*: Conditional
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricIntervalUpperBound`
-
-The upper bound for the difference between the alarm threshold and the CloudWatch metric.
-If the metric value is above the breach threshold, the upper bound is exclusive (the metric
-must be less than the threshold plus the upper bound). Otherwise, it is inclusive (the metric
-must be less than or equal to the threshold plus the upper bound). A null value indicates
-positive infinity.
-
+`MetricIntervalUpperBound`  <a name="cfn-applicationautoscaling-scalingpolicy-stepadjustment-metricintervalupperbound"></a>
+The upper bound for the difference between the alarm threshold and the CloudWatch metric. If the metric value is above the breach threshold, the upper bound is exclusive (the metric must be less than the threshold plus the upper bound). Otherwise, it is inclusive (the metric must be less than or equal to the threshold plus the upper bound). A null value indicates positive infinity.
 You must specify at least one upper or lower bound.
+*Required*: Conditional
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScalingAdjustment`
-
-The amount by which to scale. The adjustment is based on the value that you specified in
-the `AdjustmentType` property (either an absolute number or a percentage). A
-positive value adds to the current capacity and a negative number subtracts from the current
-capacity.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ScalingAdjustment`  <a name="cfn-applicationautoscaling-scalingpolicy-stepadjustment-scalingadjustment"></a>
+The amount by which to scale. The adjustment is based on the value that you specified in the `AdjustmentType` property (either an absolute number or a percentage). A positive value adds to the current capacity and a negative number subtracts from the current capacity.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Configure Application Auto Scaling resources](../userguide/quickref-application-auto-scaling.md)
-
-- [Getting started](../../../autoscaling/application/userguide/getting-started.md)
-in the _Application Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PredictiveScalingPredefinedScalingMetric
-
-StepScalingPolicyConfiguration
+<a name="aws-properties-applicationautoscaling-scalingpolicy-stepadjustment--seealso"></a>
++  [Configure Application Auto Scaling resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-application-auto-scaling.html)
++ [Getting started](https://docs.aws.amazon.com/autoscaling/application/userguide/getting-started.html) in the *Application Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

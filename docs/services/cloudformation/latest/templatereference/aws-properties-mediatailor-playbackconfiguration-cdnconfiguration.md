@@ -2,64 +2,49 @@
 title: "AWS::MediaTailor::PlaybackConfiguration CdnConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::PlaybackConfiguration CdnConfiguration
+<a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration"></a>
 
 The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management.
 
 ## Syntax
+<a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdSegmentUrlPrefix" : String,
-  "ContentSegmentUrlPrefix" : String
+  "[AdSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-adsegmenturlprefix)" : {{String}},
+  "[ContentSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-contentsegmenturlprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AdSegmentUrlPrefix: String
-  ContentSegmentUrlPrefix: String
-
+```
+  [AdSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-adsegmenturlprefix): {{String}}
+  [ContentSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-contentsegmenturlprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration-properties"></a>
 
-`AdSegmentUrlPrefix`
+`AdSegmentUrlPrefix`  <a name="cfn-mediatailor-playbackconfiguration-cdnconfiguration-adsegmenturlprefix"></a>
+A non-default content delivery network (CDN) to serve ad segments. By default, AWS Elemental MediaTailor uses Amazon CloudFront with default cache settings as its CDN for ad segments. To set up an alternate CDN, create a rule in your CDN for the origin ads.mediatailor.*<region>*.amazonaws.com. Then specify the rule's name in this `AdSegmentUrlPrefix`. When AWS Elemental MediaTailor serves a manifest, it reports your CDN as the source for ad segments.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A non-default content delivery network (CDN) to serve ad segments. By default, AWS Elemental MediaTailor uses Amazon CloudFront with default cache settings as its CDN for ad segments. To set up an alternate CDN, create a rule in your CDN for the origin ads.mediatailor. _<region>_.amazonaws.com. Then specify the rule's name in this `AdSegmentUrlPrefix`. When AWS Elemental MediaTailor serves a manifest, it reports your CDN as the source for ad segments.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContentSegmentUrlPrefix`
-
+`ContentSegmentUrlPrefix`  <a name="cfn-mediatailor-playbackconfiguration-cdnconfiguration-contentsegmenturlprefix"></a>
 A content delivery network (CDN) to cache content segments, so that content requests don’t always have to go to the origin server. First, create a rule in your CDN for the content segment origin server. Then specify the rule's name in this `ContentSegmentUrlPrefix`. When AWS Elemental MediaTailor serves a manifest, it reports your CDN as the source for content segments.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Bumper
-
-DashConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

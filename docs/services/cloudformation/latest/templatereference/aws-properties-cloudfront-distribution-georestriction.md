@@ -2,96 +2,70 @@
 title: "AWS::CloudFront::Distribution GeoRestriction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution GeoRestriction
+<a name="aws-properties-cloudfront-distribution-georestriction"></a>
 
-A complex type that controls the countries in which your content is distributed. CloudFront
-determines the location of your users using `MaxMind` GeoIP databases. To disable geo restriction, remove the [Restrictions](../userguide/aws-properties-cloudfront-distribution-distributionconfig.md#cfn-cloudfront-distribution-distributionconfig-restrictions) property from your stack template.
+A complex type that controls the countries in which your content is distributed. CloudFront determines the location of your users using `MaxMind` GeoIP databases. To disable geo restriction, remove the [Restrictions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-restrictions) property from your stack template.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-georestriction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-georestriction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Locations" : [ String, ... ],
-  "RestrictionType" : String
+  "[Locations](#cfn-cloudfront-distribution-georestriction-locations)" : {{[ String, ... ]}},
+  "[RestrictionType](#cfn-cloudfront-distribution-georestriction-restrictiontype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-georestriction-syntax.yaml"></a>
 
-```yaml
-
-  Locations:
-    - String
-  RestrictionType: String
-
+```
+  [Locations](#cfn-cloudfront-distribution-georestriction-locations): {{
+    - String}}
+  [RestrictionType](#cfn-cloudfront-distribution-georestriction-restrictiontype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-georestriction-properties"></a>
 
-`Locations`
+`Locations`  <a name="cfn-cloudfront-distribution-georestriction-locations"></a>
+A complex type that contains a `Location` element for each country in which you want CloudFront either to distribute your content (`whitelist`) or not distribute your content (`blacklist`).
+The `Location` element is a two-letter, uppercase country code for a country that you want to include in your `blacklist` or `whitelist`. Include one `Location` element for each country.
+CloudFront and `MaxMind` both use `ISO 3166` country codes. For the current list of countries and the corresponding codes, see `ISO 3166-1-alpha-2` code on the *International Organization for Standardization* website. You can also refer to the country list on the CloudFront console, which includes both country names and codes.
+*Required*: Conditional
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A complex type that contains a `Location` element for each country in
-which you want CloudFront either to distribute your content ( `whitelist`) or not
-distribute your content ( `blacklist`).
-
-The `Location` element is a two-letter, uppercase country code for a
-country that you want to include in your `blacklist` or
-`whitelist`. Include one `Location` element for each
-country.
-
-CloudFront and `MaxMind` both use `ISO 3166` country codes. For the
-current list of countries and the corresponding codes, see `ISO
-				3166-1-alpha-2` code on the _International Organization for_
-_Standardization_ website. You can also refer to the country list on the
-CloudFront console, which includes both country names and codes.
-
-_Required_: Conditional
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RestrictionType`
-
+`RestrictionType`  <a name="cfn-cloudfront-distribution-georestriction-restrictiontype"></a>
 The method that you want to use to restrict distribution of your content by country:
-
-- `none`: No geo restriction is enabled, meaning access to content is
-not restricted by client geo location.
-
-- `blacklist`: The `Location` elements specify the
-countries in which you don't want CloudFront to distribute your content.
-
-- `whitelist`: The `Location` elements specify the
-countries in which you want CloudFront to distribute your content.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `blacklist | whitelist | none`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
++ `none`: No geo restriction is enabled, meaning access to content is not restricted by client geo location.
++ `blacklist`: The `Location` elements specify the countries in which you don't want CloudFront to distribute your content.
++ `whitelist`: The `Location` elements specify the countries in which you want CloudFront to distribute your content.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `blacklist | whitelist | none`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-cloudfront-distribution-georestriction--examples"></a>
 
 ### Add georestrictions
+<a name="aws-properties-cloudfront-distribution-georestriction--examples--Add_georestrictions"></a>
 
 The following examples show how to add georestrictions.
 
 #### JSON
+<a name="aws-properties-cloudfront-distribution-georestriction--examples--Add_georestrictions--json"></a>
 
-```json
-
+```
 {
   "Restrictions": {
     "GeoRestriction": {
@@ -106,9 +80,9 @@ The following examples show how to add georestrictions.
 ```
 
 #### YAML
+<a name="aws-properties-cloudfront-distribution-georestriction--examples--Add_georestrictions--yaml"></a>
 
-```yaml
-
+```
         Restrictions:
           GeoRestriction:
             RestrictionType: whitelist
@@ -118,13 +92,7 @@ The following examples show how to add georestrictions.
 ```
 
 ## See also
-
-- [GeoRestriction](../../../../reference/cloudfront/latest/apireference/api-georestriction.md) in the _Amazon CloudFront API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FunctionAssociation
-
-GrpcConfig
+<a name="aws-properties-cloudfront-distribution-georestriction--seealso"></a>
++ [GeoRestriction](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GeoRestriction.html) in the *Amazon CloudFront API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,108 +2,78 @@
 title: "AWS::GroundStation::DataflowEndpointGroup AwsGroundStationAgentEndpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroup AwsGroundStationAgentEndpoint
+<a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint"></a>
 
 Information about AwsGroundStationAgentEndpoint.
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentStatus" : String,
-  "AuditResults" : String,
-  "EgressAddress" : ConnectionDetails,
-  "IngressAddress" : RangedConnectionDetails,
-  "Name" : String
+  "[AgentStatus](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-agentstatus)" : {{String}},
+  "[AuditResults](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-auditresults)" : {{String}},
+  "[EgressAddress](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-egressaddress)" : {{ConnectionDetails}},
+  "[IngressAddress](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-ingressaddress)" : {{RangedConnectionDetails}},
+  "[Name](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-syntax.yaml"></a>
 
-```yaml
-
-  AgentStatus: String
-  AuditResults: String
-  EgressAddress:
-    ConnectionDetails
-  IngressAddress:
-    RangedConnectionDetails
-  Name: String
-
+```
+  [AgentStatus](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-agentstatus): {{String}}
+  [AuditResults](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-auditresults): {{String}}
+  [EgressAddress](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-egressaddress): {{
+    ConnectionDetails}}
+  [IngressAddress](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-ingressaddress): {{
+    RangedConnectionDetails}}
+  [Name](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-properties"></a>
 
-`AgentStatus`
-
+`AgentStatus`  <a name="cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-agentstatus"></a>
 The status of AgentEndpoint.
+*Required*: No
+*Type*: String
+*Allowed values*: `SUCCESS | FAILED | ACTIVE | INACTIVE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SUCCESS | FAILED | ACTIVE | INACTIVE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AuditResults`
-
+`AuditResults`  <a name="cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-auditresults"></a>
 The results of the audit.
+*Required*: No
+*Type*: String
+*Allowed values*: `HEALTHY | UNHEALTHY`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HEALTHY | UNHEALTHY`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EgressAddress`
-
+`EgressAddress`  <a name="cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-egressaddress"></a>
 The egress address of AgentEndpoint.
+*Required*: No
+*Type*: [ConnectionDetails](aws-properties-groundstation-dataflowendpointgroup-connectiondetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ConnectionDetails](aws-properties-groundstation-dataflowendpointgroup-connectiondetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IngressAddress`
-
+`IngressAddress`  <a name="cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-ingressaddress"></a>
 The ingress address of AgentEndpoint.
+*Required*: No
+*Type*: [RangedConnectionDetails](aws-properties-groundstation-dataflowendpointgroup-rangedconnectiondetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [RangedConnectionDetails](aws-properties-groundstation-dataflowendpointgroup-rangedconnectiondetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-name"></a>
 Name string associated with AgentEndpoint. Used as a human-readable identifier for AgentEndpoint.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[ a-zA-Z0-9_:-]{1,256}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GroundStation::DataflowEndpointGroup
-
-ConnectionDetails
+*Required*: No
+*Type*: String
+*Pattern*: `^[ a-zA-Z0-9_:-]{1,256}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

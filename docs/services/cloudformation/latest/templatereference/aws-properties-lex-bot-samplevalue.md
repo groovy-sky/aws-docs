@@ -2,56 +2,43 @@
 title: "AWS::Lex::Bot SampleValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SampleValue
+<a name="aws-properties-lex-bot-samplevalue"></a>
 
 Defines one of the values for a slot type.
 
 ## Syntax
+<a name="aws-properties-lex-bot-samplevalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-samplevalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "Value" : String
+  "[Value](#cfn-lex-bot-samplevalue-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-samplevalue-syntax.yaml"></a>
 
-```yaml
-
-  Value: String
-
+```
+  [Value](#cfn-lex-bot-samplevalue-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-samplevalue-properties"></a>
 
-`Value`
-
+`Value`  <a name="cfn-lex-bot-samplevalue-value"></a>
 The value that can be used for a slot type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `140`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SampleUtteranceGenerationSpecification
-
-SentimentAnalysisSettings
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `140`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::SageMaker::MonitoringSchedule MonitoringResources"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::MonitoringSchedule MonitoringResources
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringresources"></a>
 
 Identifies the resources to deploy for a monitoring job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringresources-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringresources-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterConfig" : ClusterConfig
+  "[ClusterConfig](#cfn-sagemaker-monitoringschedule-monitoringresources-clusterconfig)" : {{ClusterConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringresources-syntax.yaml"></a>
 
-```yaml
-
-  ClusterConfig:
-    ClusterConfig
-
+```
+  [ClusterConfig](#cfn-sagemaker-monitoringschedule-monitoringresources-clusterconfig): {{
+    ClusterConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringresources-properties"></a>
 
-`ClusterConfig`
-
+`ClusterConfig`  <a name="cfn-sagemaker-monitoringschedule-monitoringresources-clusterconfig"></a>
 The configuration for the cluster resources used to run the processing job.
-
-_Required_: Yes
-
-_Type_: [ClusterConfig](aws-properties-sagemaker-monitoringschedule-clusterconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MonitoringOutputConfig
-
-MonitoringScheduleConfig
+*Required*: Yes
+*Type*: [ClusterConfig](aws-properties-sagemaker-monitoringschedule-clusterconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

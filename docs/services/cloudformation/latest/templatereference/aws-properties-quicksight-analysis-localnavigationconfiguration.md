@@ -2,58 +2,44 @@
 title: "AWS::QuickSight::Analysis LocalNavigationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LocalNavigationConfiguration
+<a name="aws-properties-quicksight-analysis-localnavigationconfiguration"></a>
 
 The navigation configuration for `CustomActionNavigationOperation`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-localnavigationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-localnavigationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TargetSheetId" : String
+  "[TargetSheetId](#cfn-quicksight-analysis-localnavigationconfiguration-targetsheetid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-localnavigationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TargetSheetId: String
-
+```
+  [TargetSheetId](#cfn-quicksight-analysis-localnavigationconfiguration-targetsheetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-localnavigationconfiguration-properties"></a>
 
-`TargetSheetId`
-
+`TargetSheetId`  <a name="cfn-quicksight-analysis-localnavigationconfiguration-targetsheetid"></a>
 The sheet that is targeted for navigation in the same analysis.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoadingAnimation
-
-LongFormatText
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

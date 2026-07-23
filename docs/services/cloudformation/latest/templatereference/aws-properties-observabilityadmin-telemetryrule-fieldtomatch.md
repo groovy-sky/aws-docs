@@ -2,91 +2,67 @@
 title: "AWS::ObservabilityAdmin::TelemetryRule FieldToMatch"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryRule FieldToMatch
+<a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch"></a>
 
-Specifies a field in the request to redact from WAF logs, such as headers, query
-parameters, or body content.
+ Specifies a field in the request to redact from WAF logs, such as headers, query parameters, or body content.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch-syntax.json"></a>
 
-```json
-
+```
 {
-  "Method" : String,
-  "QueryString" : String,
-  "SingleHeader" : SingleHeader,
-  "UriPath" : String
+  "[Method](#cfn-observabilityadmin-telemetryrule-fieldtomatch-method)" : {{String}},
+  "[QueryString](#cfn-observabilityadmin-telemetryrule-fieldtomatch-querystring)" : {{String}},
+  "[SingleHeader](#cfn-observabilityadmin-telemetryrule-fieldtomatch-singleheader)" : {{SingleHeader}},
+  "[UriPath](#cfn-observabilityadmin-telemetryrule-fieldtomatch-uripath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch-syntax.yaml"></a>
 
-```yaml
-
-  Method: String
-  QueryString:
-    String
-  SingleHeader:
-    SingleHeader
-  UriPath: String
-
+```
+  [Method](#cfn-observabilityadmin-telemetryrule-fieldtomatch-method): {{String}}
+  [QueryString](#cfn-observabilityadmin-telemetryrule-fieldtomatch-querystring): {{
+    String}}
+  [SingleHeader](#cfn-observabilityadmin-telemetryrule-fieldtomatch-singleheader): {{
+    SingleHeader}}
+  [UriPath](#cfn-observabilityadmin-telemetryrule-fieldtomatch-uripath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch-properties"></a>
 
-`Method`
+`Method`  <a name="cfn-observabilityadmin-telemetryrule-fieldtomatch-method"></a>
+ Redacts the HTTP method from WAF logs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Redacts the HTTP method from WAF logs.
+`QueryString`  <a name="cfn-observabilityadmin-telemetryrule-fieldtomatch-querystring"></a>
+ Redacts the entire query string from WAF logs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SingleHeader`  <a name="cfn-observabilityadmin-telemetryrule-fieldtomatch-singleheader"></a>
+ Redacts a specific header field by name from WAF logs.
+*Required*: No
+*Type*: [SingleHeader](aws-properties-observabilityadmin-telemetryrule-singleheader.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryString`
-
-Redacts the entire query string from WAF logs.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingleHeader`
-
-Redacts a specific header field by name from WAF logs.
-
-_Required_: No
-
-_Type_: [SingleHeader](aws-properties-observabilityadmin-telemetryrule-singleheader.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UriPath`
-
-Redacts the URI path from WAF logs.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ELBLoadBalancerLoggingParameters
-
-Filter
+`UriPath`  <a name="cfn-observabilityadmin-telemetryrule-fieldtomatch-uripath"></a>
+ Redacts the URI path from WAF logs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

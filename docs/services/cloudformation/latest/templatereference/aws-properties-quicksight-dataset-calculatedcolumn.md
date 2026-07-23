@@ -2,90 +2,63 @@
 title: "AWS::QuickSight::DataSet CalculatedColumn"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet CalculatedColumn
+<a name="aws-properties-quicksight-dataset-calculatedcolumn"></a>
 
 A calculated column for a dataset.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-calculatedcolumn-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-calculatedcolumn-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnId" : String,
-  "ColumnName" : String,
-  "Expression" : String
+  "[ColumnId](#cfn-quicksight-dataset-calculatedcolumn-columnid)" : {{String}},
+  "[ColumnName](#cfn-quicksight-dataset-calculatedcolumn-columnname)" : {{String}},
+  "[Expression](#cfn-quicksight-dataset-calculatedcolumn-expression)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-calculatedcolumn-syntax.yaml"></a>
 
-```yaml
-
-  ColumnId: String
-  ColumnName: String
-  Expression: String
-
+```
+  [ColumnId](#cfn-quicksight-dataset-calculatedcolumn-columnid): {{String}}
+  [ColumnName](#cfn-quicksight-dataset-calculatedcolumn-columnname): {{String}}
+  [Expression](#cfn-quicksight-dataset-calculatedcolumn-expression): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-calculatedcolumn-properties"></a>
 
-`ColumnId`
+`ColumnId`  <a name="cfn-quicksight-dataset-calculatedcolumn-columnid"></a>
+A unique ID to identify a calculated column. During a dataset update, if the column ID of a calculated column matches that of an existing calculated column, Quick Sight preserves the existing calculated column.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A unique ID to identify a calculated column. During a dataset update, if the column ID
-of a calculated column matches that of an existing calculated column, Quick Sight
-preserves the existing calculated column.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnName`
-
+`ColumnName`  <a name="cfn-quicksight-dataset-calculatedcolumn-columnname"></a>
 Column name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Expression`
-
+`Expression`  <a name="cfn-quicksight-dataset-calculatedcolumn-expression"></a>
 An expression that defines the calculated column.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `250000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AppendOperation
-
-CastColumnTypeOperation
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `250000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,84 +2,60 @@
 title: "AWS::CodePipeline::Pipeline GitPushFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline GitPushFilter
+<a name="aws-properties-codepipeline-pipeline-gitpushfilter"></a>
 
-The event criteria that specify when a specified repository event will start the
-pipeline for the specified trigger configuration, such as the lists of Git tags to
-include and exclude.
+The event criteria that specify when a specified repository event will start the pipeline for the specified trigger configuration, such as the lists of Git tags to include and exclude.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-gitpushfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-gitpushfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Branches" : GitBranchFilterCriteria,
-  "FilePaths" : GitFilePathFilterCriteria,
-  "Tags" : GitTagFilterCriteria
+  "[Branches](#cfn-codepipeline-pipeline-gitpushfilter-branches)" : {{GitBranchFilterCriteria}},
+  "[FilePaths](#cfn-codepipeline-pipeline-gitpushfilter-filepaths)" : {{GitFilePathFilterCriteria}},
+  "[Tags](#cfn-codepipeline-pipeline-gitpushfilter-tags)" : {{GitTagFilterCriteria}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-gitpushfilter-syntax.yaml"></a>
 
-```yaml
-
-  Branches:
-    GitBranchFilterCriteria
-  FilePaths:
-    GitFilePathFilterCriteria
-  Tags:
-    GitTagFilterCriteria
-
+```
+  [Branches](#cfn-codepipeline-pipeline-gitpushfilter-branches): {{
+    GitBranchFilterCriteria}}
+  [FilePaths](#cfn-codepipeline-pipeline-gitpushfilter-filepaths): {{
+    GitFilePathFilterCriteria}}
+  [Tags](#cfn-codepipeline-pipeline-gitpushfilter-tags): {{
+    GitTagFilterCriteria}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-gitpushfilter-properties"></a>
 
-`Branches`
+`Branches`  <a name="cfn-codepipeline-pipeline-gitpushfilter-branches"></a>
+The field that specifies to filter on branches for the push trigger configuration.
+*Required*: No
+*Type*: [GitBranchFilterCriteria](aws-properties-codepipeline-pipeline-gitbranchfiltercriteria.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The field that specifies to filter on branches for the push trigger
-configuration.
+`FilePaths`  <a name="cfn-codepipeline-pipeline-gitpushfilter-filepaths"></a>
+The field that specifies to filter on file paths for the push trigger configuration.
+*Required*: No
+*Type*: [GitFilePathFilterCriteria](aws-properties-codepipeline-pipeline-gitfilepathfiltercriteria.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GitBranchFilterCriteria](aws-properties-codepipeline-pipeline-gitbranchfiltercriteria.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilePaths`
-
-The field that specifies to filter on file paths for the push trigger
-configuration.
-
-_Required_: No
-
-_Type_: [GitFilePathFilterCriteria](aws-properties-codepipeline-pipeline-gitfilepathfiltercriteria.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The field that contains the details for the Git tags trigger
-configuration.
-
-_Required_: No
-
-_Type_: [GitTagFilterCriteria](aws-properties-codepipeline-pipeline-gittagfiltercriteria.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GitPullRequestFilter
-
-GitTagFilterCriteria
+`Tags`  <a name="cfn-codepipeline-pipeline-gitpushfilter-tags"></a>
+The field that contains the details for the Git tags trigger configuration.
+*Required*: No
+*Type*: [GitTagFilterCriteria](aws-properties-codepipeline-pipeline-gittagfiltercriteria.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

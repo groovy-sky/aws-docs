@@ -2,84 +2,60 @@
 title: "AWS::KMS::ReplicaKey Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KMS::ReplicaKey Tag
+<a name="aws-properties-kms-replicakey-tag"></a>
 
-A key-value pair. A tag consists of a tag key and a tag value. Tag keys and tag values are
-both required, but tag values can be empty (null) strings.
+A key-value pair. A tag consists of a tag key and a tag value. Tag keys and tag values are both required, but tag values can be empty (null) strings.
 
-###### Important
-
+**Important**
 Do not include confidential or sensitive information in this field. This field may be displayed in plaintext in CloudTrail logs and other output.
 
-For information about the rules that apply to tag keys and tag values, see [User-Defined Tag Restrictions](../../../awsaccountbilling/latest/aboutv2/allocation-tag-restrictions.md) in the _AWS Billing and Cost Management_
-_User Guide_.
+For information about the rules that apply to tag keys and tag values, see [User-Defined Tag Restrictions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/allocation-tag-restrictions.html) in the *AWS Billing and Cost Management User Guide*.
 
 ## Syntax
+<a name="aws-properties-kms-replicakey-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kms-replicakey-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-kms-replicakey-tag-key)" : {{String}},
+  "[Value](#cfn-kms-replicakey-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kms-replicakey-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-kms-replicakey-tag-key): {{String}}
+  [Value](#cfn-kms-replicakey-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kms-replicakey-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-kms-replicakey-tag-key"></a>
 The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with `aws:`. digits, whitespace, `_`, `.`, `:`, `/`, `=`, `+`, `@`, `-`, and `"`.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-kms-replicakey-tag-value"></a>
 The value for the tag. You can specify a value that's 1 to 256 characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, `_`, `.`, `/`, `=`, `+`, and `-`.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::KMS::ReplicaKey
-
-Next
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

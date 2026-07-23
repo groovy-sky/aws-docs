@@ -2,217 +2,232 @@
 title: "AWS::EC2::VPC"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPC
+<a name="aws-resource-ec2-vpc"></a>
 
 Specifies a virtual private cloud (VPC).
 
-A VPC must have an associated IPv4 CIDR block. You can specify an IPv4 CIDR block
-or an IPAM-allocated IPv4 CIDR block. To associate an IPv6 CIDR block with the VPC,
-see [AWS::EC2::VPCCidrBlock](../userguide/aws-resource-ec2-vpccidrblock.md).
+A VPC must have an associated IPv4 CIDR block. You can specify an IPv4 CIDR block or an IPAM-allocated IPv4 CIDR block. To associate an IPv6 CIDR block with the VPC, see [AWS::EC2::VPCCidrBlock](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html).
 
-For more information, see [Virtual private clouds (VPC)](../../../vpc/latest/userguide/configure-your-vpc.md)
-in the _Amazon VPC User Guide_.
+For more information, see [Virtual private clouds (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html) in the *Amazon VPC User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-vpc-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpc-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPC",
   "Properties" : {
-      "CidrBlock" : String,
-      "EnableDnsHostnames" : Boolean,
-      "EnableDnsSupport" : Boolean,
-      "InstanceTenancy" : String,
-      "Ipv4IpamPoolId" : String,
-      "Ipv4NetmaskLength" : Integer,
-      "Tags" : [ Tag, ... ]
+      "[CidrBlock](#cfn-ec2-vpc-cidrblock)" : {{String}},
+      "[EnableDnsHostnames](#cfn-ec2-vpc-enablednshostnames)" : {{Boolean}},
+      "[EnableDnsSupport](#cfn-ec2-vpc-enablednssupport)" : {{Boolean}},
+      "[InstanceTenancy](#cfn-ec2-vpc-instancetenancy)" : {{String}},
+      "[Ipv4IpamPoolId](#cfn-ec2-vpc-ipv4ipampoolid)" : {{String}},
+      "[Ipv4NetmaskLength](#cfn-ec2-vpc-ipv4netmasklength)" : {{Integer}},
+      "[Tags](#cfn-ec2-vpc-tags)" : {{[ Tag, ... ]}},
+      "[VpcEncryptionControl](#cfn-ec2-vpc-vpcencryptioncontrol)" : {{VpcEncryptionControl}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpc-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPC
 Properties:
-  CidrBlock: String
-  EnableDnsHostnames: Boolean
-  EnableDnsSupport: Boolean
-  InstanceTenancy: String
-  Ipv4IpamPoolId: String
-  Ipv4NetmaskLength: Integer
-  Tags:
-    - Tag
-
+  [CidrBlock](#cfn-ec2-vpc-cidrblock): {{String}}
+  [EnableDnsHostnames](#cfn-ec2-vpc-enablednshostnames): {{Boolean}}
+  [EnableDnsSupport](#cfn-ec2-vpc-enablednssupport): {{Boolean}}
+  [InstanceTenancy](#cfn-ec2-vpc-instancetenancy): {{String}}
+  [Ipv4IpamPoolId](#cfn-ec2-vpc-ipv4ipampoolid): {{String}}
+  [Ipv4NetmaskLength](#cfn-ec2-vpc-ipv4netmasklength): {{Integer}}
+  [Tags](#cfn-ec2-vpc-tags): {{
+    - Tag}}
+  [VpcEncryptionControl](#cfn-ec2-vpc-vpcencryptioncontrol): {{
+    VpcEncryptionControl}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpc-properties"></a>
 
-`CidrBlock`
+`CidrBlock`  <a name="cfn-ec2-vpc-cidrblock"></a>
+The IPv4 network range for the VPC, in CIDR notation. For example, `10.0.0.0/16`. We modify the specified CIDR block to its canonical form; for example, if you specify `100.68.0.18/18`, we modify it to `100.68.0.0/18`.
+You must specify either`CidrBlock` or `Ipv4IpamPoolId`.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The IPv4 network range for the VPC, in CIDR notation. For example,
-`10.0.0.0/16`. We modify the specified CIDR block to its canonical form; for example, if you specify `100.68.0.18/18`, we modify it to `100.68.0.0/18`.
-
-You must specify either `CidrBlock` or `Ipv4IpamPoolId`.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnableDnsHostnames`
-
-Indicates whether the instances launched in the VPC get DNS hostnames. If enabled,
-instances in the VPC get DNS hostnames; otherwise, they do not. Disabled by default for
-nondefault VPCs. For more information, see [DNS attributes in your\
-VPC](../../../vpc/latest/userguide/vpc-dns.md#vpc-dns-support).
-
+`EnableDnsHostnames`  <a name="cfn-ec2-vpc-enablednshostnames"></a>
+Indicates whether the instances launched in the VPC get DNS hostnames. If enabled, instances in the VPC get DNS hostnames; otherwise, they do not. Disabled by default for nondefault VPCs. For more information, see [DNS attributes in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support).
 You can only enable DNS hostnames if you've enabled DNS support.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EnableDnsSupport`  <a name="cfn-ec2-vpc-enablednssupport"></a>
+Indicates whether the DNS resolution is supported for the VPC. If enabled, queries to the Amazon provided DNS server at the 169.254.169.253 IP address, or the reserved IP address at the base of the VPC network range "plus two" succeed. If disabled, the Amazon provided DNS service in the VPC that resolves public DNS hostnames to IP addresses is not enabled. Enabled by default. For more information, see [DNS attributes in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableDnsSupport`
-
-Indicates whether the DNS resolution is supported for the VPC. If enabled, queries to
-the Amazon provided DNS server at the 169.254.169.253 IP address, or the reserved IP
-address at the base of the VPC network range "plus two" succeed. If disabled, the Amazon
-provided DNS service in the VPC that resolves public DNS hostnames to IP addresses is not
-enabled. Enabled by default. For more information, see [DNS attributes in your VPC](../../../vpc/latest/userguide/vpc-dns.md#vpc-dns-support).
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceTenancy`
-
+`InstanceTenancy`  <a name="cfn-ec2-vpc-instancetenancy"></a>
 The allowed tenancy of instances launched into the VPC.
++ `default`: An instance launched into the VPC runs on shared hardware by default, unless you explicitly specify a different tenancy during instance launch.
++ `dedicated`: An instance launched into the VPC runs on dedicated hardware by default, unless you explicitly specify a tenancy of `host` during instance launch. You cannot specify a tenancy of `default` during instance launch.
+Updating `InstanceTenancy` requires no replacement only if you are updating its value from `dedicated` to `default`. Updating `InstanceTenancy` from `default` to `dedicated` requires replacement.
+*Required*: No
+*Type*: String
+*Allowed values*: `default | dedicated | host`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-- `default`: An instance launched into the VPC runs on shared hardware
-by default, unless you explicitly specify a different tenancy during instance
-launch.
+`Ipv4IpamPoolId`  <a name="cfn-ec2-vpc-ipv4ipampoolid"></a>
+The ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR. For more information, see [What is IPAM?](/vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
+You must specify either`CidrBlock` or `Ipv4IpamPoolId`.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `dedicated`: An instance launched into the VPC runs on dedicated
-hardware by default, unless you explicitly specify a tenancy of `host`
-during instance launch. You cannot specify a tenancy of `default` during
-instance launch.
+`Ipv4NetmaskLength`  <a name="cfn-ec2-vpc-ipv4netmasklength"></a>
+The netmask length of the IPv4 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Updating `InstanceTenancy` requires no replacement only if you are updating
-its value from `dedicated` to `default`. Updating
-`InstanceTenancy` from `default` to `dedicated`
-requires replacement.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `default | dedicated | host`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Ipv4IpamPoolId`
-
-The ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR. For more information, see
-[What is IPAM?](../../../vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-You must specify either `CidrBlock` or `Ipv4IpamPoolId`.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv4NetmaskLength`
-
-The netmask length of the IPv4 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-vpc-tags"></a>
 The tags for the VPC.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-vpc-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-vpc-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VpcEncryptionControl`  <a name="cfn-ec2-vpc-vpcencryptioncontrol"></a>
+Describes the configuration and state of VPC encryption controls.
+For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the *Amazon VPC User Guide*.
+*Required*: No
+*Type*: [VpcEncryptionControl](aws-properties-ec2-vpc-vpcencryptioncontrol.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-vpc-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpc-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the VPC.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-vpc-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CidrBlock`
+####
+<a name="aws-resource-ec2-vpc-return-values-fn--getatt-fn--getatt"></a>
 
+`CidrBlock`  <a name="CidrBlock-fn::getatt"></a>
 The primary IPv4 CIDR block for the VPC. For example, 10.0.0.0/16.
 
-`CidrBlockAssociations`
+`CidrBlockAssociations`  <a name="CidrBlockAssociations-fn::getatt"></a>
+The association IDs of the IPv4 CIDR blocks for the VPC. For example, [ vpc-cidr-assoc-0280ab6b ].
 
-The association IDs of the IPv4 CIDR blocks for the VPC. For example,
-\[ vpc-cidr-assoc-0280ab6b \].
-
-`DefaultNetworkAcl`
-
+`DefaultNetworkAcl`  <a name="DefaultNetworkAcl-fn::getatt"></a>
 The ID of the default network ACL for the VPC. For example, acl-814dafe3.
 
-`DefaultSecurityGroup`
-
+`DefaultSecurityGroup`  <a name="DefaultSecurityGroup-fn::getatt"></a>
 The ID of the default security group for the VPC. For example, sg-b178e0d3.
 
-`Ipv6CidrBlocks`
+`Ipv6CidrBlocks`  <a name="Ipv6CidrBlocks-fn::getatt"></a>
+The IPv6 CIDR blocks for the VPC. For example, [ 2001:db8:1234:1a00::/56 ].
 
-The IPv6 CIDR blocks for the VPC. For example, \[ 2001:db8:1234:1a00::/56 \].
+`VpcEncryptionControl.ResourceExclusions.EgressOnlyInternetGateway.State`  <a name="VpcEncryptionControl.ResourceExclusions.EgressOnlyInternetGateway.State-fn::getatt"></a>
+Property description not available.
 
-`VpcId`
+`VpcEncryptionControl.ResourceExclusions.EgressOnlyInternetGateway.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.EgressOnlyInternetGateway.StateMessage-fn::getatt"></a>
+Property description not available.
 
+`VpcEncryptionControl.ResourceExclusions.ElasticFileSystem.State`  <a name="VpcEncryptionControl.ResourceExclusions.ElasticFileSystem.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.ElasticFileSystem.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.ElasticFileSystem.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.InternetGateway.State`  <a name="VpcEncryptionControl.ResourceExclusions.InternetGateway.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.InternetGateway.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.InternetGateway.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.Lambda.State`  <a name="VpcEncryptionControl.ResourceExclusions.Lambda.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.Lambda.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.Lambda.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.NatGateway.State`  <a name="VpcEncryptionControl.ResourceExclusions.NatGateway.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.NatGateway.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.NatGateway.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.VirtualPrivateGateway.State`  <a name="VpcEncryptionControl.ResourceExclusions.VirtualPrivateGateway.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.VirtualPrivateGateway.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.VirtualPrivateGateway.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.VpcLattice.State`  <a name="VpcEncryptionControl.ResourceExclusions.VpcLattice.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.VpcLattice.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.VpcLattice.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.VpcPeering.State`  <a name="VpcEncryptionControl.ResourceExclusions.VpcPeering.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.ResourceExclusions.VpcPeering.StateMessage`  <a name="VpcEncryptionControl.ResourceExclusions.VpcPeering.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.State`  <a name="VpcEncryptionControl.State-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.StateMessage`  <a name="VpcEncryptionControl.StateMessage-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.VpcEncryptionControlId`  <a name="VpcEncryptionControl.VpcEncryptionControlId-fn::getatt"></a>
+Property description not available.
+
+`VpcEncryptionControl.VpcId`  <a name="VpcEncryptionControl.VpcId-fn::getatt"></a>
+Property description not available.
+
+`VpcId`  <a name="VpcId-fn::getatt"></a>
 The ID of the VPC.
 
 ## Examples
+<a name="aws-resource-ec2-vpc--examples"></a>
 
-- [Create a VPC with an IPv4 CIDR block](#aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block)
-
-- [Create a VPC with an IPv4 CIDR block and an IPv6 CIDR block](#aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block)
+**Topics**
++ [Create a VPC with an IPv4 CIDR block](#aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block)
++ [Create a VPC with an IPv4 CIDR block and an IPv6 CIDR block](#aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block)
 
 ### Create a VPC with an IPv4 CIDR block
+<a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block"></a>
 
 The following example specifies a VPC with an IPv4 address.
 
 #### JSON
+<a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block--json"></a>
 
-```json
-
+```
 {
    "Resources": {
        "myVPC" : {
@@ -231,9 +246,9 @@ The following example specifies a VPC with an IPv4 address.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myVPC:
     Type: AWS::EC2::VPC
@@ -247,13 +262,14 @@ Resources:
 ```
 
 ### Create a VPC with an IPv4 CIDR block and an IPv6 CIDR block
+<a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block"></a>
 
 The following example specifies a VPC with an IPv4 address range and an IPv6 address range.
 
 #### JSON
+<a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block--json"></a>
 
-```json
-
+```
 {
    "Resources": {
        "myVPC" : {
@@ -281,9 +297,9 @@ The following example specifies a VPC with an IPv4 address range and an IPv6 add
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myVPC:
     Type: AWS::EC2::VPC
@@ -302,16 +318,8 @@ Resources:
 ```
 
 ## See also
-
-- [CreateVpc](../../../../reference/awsec2/latest/apireference/api-createvpc.md) in the _Amazon EC2 API Reference_
-
-- [VPC and\
-subnets](../../../vpc/latest/userguide/vpc-subnets.md) in the _Amazon VPC User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VolumeAttachment
-
-Tag
+<a name="aws-resource-ec2-vpc--seealso"></a>
++ [CreateVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html) in the *Amazon EC2 API Reference*
++ [VPC and subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html) in the *Amazon VPC User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,54 @@
 title: "AWS::StepFunctions::StateMachineAlias RoutingConfigurationVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::StepFunctions::StateMachineAlias RoutingConfigurationVersion
+<a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion"></a>
 
 The state machine version to which you want to route the execution traffic.
 
 ## Syntax
+<a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion-syntax.json"></a>
 
-```json
-
+```
 {
-  "StateMachineVersionArn" : String,
-  "Weight" : Integer
+  "[StateMachineVersionArn](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-statemachineversionarn)" : {{String}},
+  "[Weight](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-weight)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion-syntax.yaml"></a>
 
-```yaml
-
-  StateMachineVersionArn: String
-  Weight: Integer
-
+```
+  [StateMachineVersionArn](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-statemachineversionarn): {{String}}
+  [Weight](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-weight): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion-properties"></a>
 
-`StateMachineVersionArn`
-
+`StateMachineVersionArn`  <a name="cfn-stepfunctions-statemachinealias-routingconfigurationversion-statemachineversionarn"></a>
 The Amazon Resource Name (ARN) that identifies one or two state machine versions defined in the routing configuration.
-
 If you specify the ARN of a second version, it must belong to the same state machine as the first version.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
+`Weight`  <a name="cfn-stepfunctions-statemachinealias-routingconfigurationversion-weight"></a>
 The percentage of traffic you want to route to the state machine version. The sum of the weights in the routing configuration must be equal to 100.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeploymentPreference
-
-AWS::StepFunctions::StateMachineVersion
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

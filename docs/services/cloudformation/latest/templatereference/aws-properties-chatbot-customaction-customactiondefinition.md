@@ -2,62 +2,47 @@
 title: "AWS::Chatbot::CustomAction CustomActionDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Chatbot::CustomAction CustomActionDefinition
+<a name="aws-properties-chatbot-customaction-customactiondefinition"></a>
 
-###### Note
-
-AWS Chatbot is now Amazon Q Developer. [Learn more](../../../chatbot/latest/adminguide/service-rename.md)
-
+**Note**
+AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com//chatbot/latest/adminguide/service-rename.html)
 `Type` attribute values remain unchanged.
 
 The definition of the command to run when invoked as an alias or as an action button.
 
 ## Syntax
+<a name="aws-properties-chatbot-customaction-customactiondefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-chatbot-customaction-customactiondefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "CommandText" : String
+  "[CommandText](#cfn-chatbot-customaction-customactiondefinition-commandtext)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-chatbot-customaction-customactiondefinition-syntax.yaml"></a>
 
-```yaml
-
-  CommandText: String
-
+```
+  [CommandText](#cfn-chatbot-customaction-customactiondefinition-commandtext): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-chatbot-customaction-customactiondefinition-properties"></a>
 
-`CommandText`
-
+`CommandText`  <a name="cfn-chatbot-customaction-customactiondefinition-commandtext"></a>
 The command string to run which may include variables by prefixing with a dollar sign ($).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomActionAttachmentCriteria
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

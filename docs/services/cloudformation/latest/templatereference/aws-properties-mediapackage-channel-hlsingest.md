@@ -2,53 +2,42 @@
 title: "AWS::MediaPackage::Channel HlsIngest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::Channel HlsIngest
+<a name="aws-properties-mediapackage-channel-hlsingest"></a>
 
 HLS ingest configuration.
 
 ## Syntax
+<a name="aws-properties-mediapackage-channel-hlsingest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-channel-hlsingest-syntax.json"></a>
 
-```json
-
+```
 {
-  "ingestEndpoints" : [ IngestEndpoint, ... ]
+  "[ingestEndpoints](#cfn-mediapackage-channel-hlsingest-ingestendpoints)" : {{[ IngestEndpoint, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-channel-hlsingest-syntax.yaml"></a>
 
-```yaml
-
-  ingestEndpoints:
-    - IngestEndpoint
-
+```
+  [ingestEndpoints](#cfn-mediapackage-channel-hlsingest-ingestendpoints): {{
+    - IngestEndpoint}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-channel-hlsingest-properties"></a>
 
-`ingestEndpoints`
-
+`ingestEndpoints`  <a name="cfn-mediapackage-channel-hlsingest-ingestendpoints"></a>
 The input URL where the source stream should be sent.
-
-_Required_: No
-
-_Type_: Array of [IngestEndpoint](aws-properties-mediapackage-channel-ingestendpoint.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaPackage::Channel
-
-IngestEndpoint
+*Required*: No
+*Type*: Array of [IngestEndpoint](aws-properties-mediapackage-channel-ingestendpoint.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

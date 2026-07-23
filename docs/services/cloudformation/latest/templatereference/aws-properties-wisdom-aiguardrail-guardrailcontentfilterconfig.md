@@ -2,82 +2,60 @@
 title: "AWS::Wisdom::AIGuardrail GuardrailContentFilterConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail GuardrailContentFilterConfig
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig"></a>
 
 Content filter configuration in content policy.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InputStrength" : String,
-  "OutputStrength" : String,
-  "Type" : String
+  "[InputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-inputstrength)" : {{String}},
+  "[OutputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-outputstrength)" : {{String}},
+  "[Type](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig-syntax.yaml"></a>
 
-```yaml
-
-  InputStrength: String
-  OutputStrength: String
-  Type: String
-
+```
+  [InputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-inputstrength): {{String}}
+  [OutputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-outputstrength): {{String}}
+  [Type](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig-properties"></a>
 
-`InputStrength`
-
+`InputStrength`  <a name="cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-inputstrength"></a>
 The strength of the input for the guardrail content filter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NONE | LOW | MEDIUM | HIGH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `NONE | LOW | MEDIUM | HIGH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputStrength`
-
+`OutputStrength`  <a name="cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-outputstrength"></a>
 The output strength of the guardrail content filter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NONE | LOW | MEDIUM | HIGH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `NONE | LOW | MEDIUM | HIGH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-type"></a>
 The type of the guardrail content filter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SEXUAL | VIOLENCE | HATE | INSULTS | MISCONDUCT | PROMPT_ATTACK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AIGuardrailWordPolicyConfig
-
-GuardrailContextualGroundingFilterConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SEXUAL | VIOLENCE | HATE | INSULTS | MISCONDUCT | PROMPT_ATTACK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

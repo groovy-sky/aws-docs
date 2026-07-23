@@ -2,56 +2,41 @@
 title: "AWS::ApiGatewayV2::Integration TlsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Integration TlsConfig
+<a name="aws-properties-apigatewayv2-integration-tlsconfig"></a>
 
-The `TlsConfig` property specifies the TLS configuration for a private
-integration. If you specify a TLS configuration, private integration traffic uses the
-HTTPS protocol. Supported only for HTTP APIs.
+The `TlsConfig` property specifies the TLS configuration for a private integration. If you specify a TLS configuration, private integration traffic uses the HTTPS protocol. Supported only for HTTP APIs.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-integration-tlsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-integration-tlsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ServerNameToVerify" : String
+  "[ServerNameToVerify](#cfn-apigatewayv2-integration-tlsconfig-servernametoverify)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-integration-tlsconfig-syntax.yaml"></a>
 
-```yaml
-
-  ServerNameToVerify: String
-
+```
+  [ServerNameToVerify](#cfn-apigatewayv2-integration-tlsconfig-servernametoverify): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-integration-tlsconfig-properties"></a>
 
-`ServerNameToVerify`
-
-If you specify a server name, API Gateway uses it to verify the hostname on
-the integration's certificate. The server name is also included in the TLS
-handshake to support Server Name Indication (SNI) or virtual hosting.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResponseParameterMap
-
-AWS::ApiGatewayV2::IntegrationResponse
+`ServerNameToVerify`  <a name="cfn-apigatewayv2-integration-tlsconfig-servernametoverify"></a>
+If you specify a server name, API Gateway uses it to verify the hostname on the integration's certificate. The server name is also included in the TLS handshake to support Server Name Indication (SNI) or virtual hosting.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

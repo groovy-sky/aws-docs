@@ -2,109 +2,76 @@
 title: "AWS::SecurityLake::SubscriberNotification HttpsNotificationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::SubscriberNotification HttpsNotificationConfiguration
+<a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration"></a>
 
 Specify the configurations you want to use for HTTPS subscriber notification.
 
 ## Syntax
+<a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationApiKeyName" : String,
-  "AuthorizationApiKeyValue" : String,
-  "Endpoint" : String,
-  "HttpMethod" : String,
-  "TargetRoleArn" : String
+  "[AuthorizationApiKeyName](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyname)" : {{String}},
+  "[AuthorizationApiKeyValue](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyvalue)" : {{String}},
+  "[Endpoint](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-endpoint)" : {{String}},
+  "[HttpMethod](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-httpmethod)" : {{String}},
+  "[TargetRoleArn](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-targetrolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationApiKeyName: String
-  AuthorizationApiKeyValue: String
-  Endpoint: String
-  HttpMethod: String
-  TargetRoleArn: String
-
+```
+  [AuthorizationApiKeyName](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyname): {{String}}
+  [AuthorizationApiKeyValue](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyvalue): {{String}}
+  [Endpoint](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-endpoint): {{String}}
+  [HttpMethod](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-httpmethod): {{String}}
+  [TargetRoleArn](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-targetrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration-properties"></a>
 
-`AuthorizationApiKeyName`
-
+`AuthorizationApiKeyName`  <a name="cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyname"></a>
 The key name for the notification subscription.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizationApiKeyValue`
-
+`AuthorizationApiKeyValue`  <a name="cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyvalue"></a>
 The key value for the notification subscription.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Endpoint`  <a name="cfn-securitylake-subscribernotification-httpsnotificationconfiguration-endpoint"></a>
+The subscription endpoint in Security Lake. If you prefer notification with an HTTPS endpoint, populate this field.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^https?://.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Endpoint`
-
-The subscription endpoint in Security Lake. If you prefer notification with an HTTPS
-endpoint, populate this field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^https?://.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpMethod`
-
+`HttpMethod`  <a name="cfn-securitylake-subscribernotification-httpsnotificationconfiguration-httpmethod"></a>
 The HTTPS method used for the notification subscription.
+*Required*: No
+*Type*: String
+*Allowed values*: `POST | PUT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `POST | PUT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetRoleArn`
-
-The Amazon Resource Name (ARN) of the EventBridge API destinations IAM role that you
-created. For more information about ARNs and how to use them in policies, see [Managing data access](../../../security-lake/latest/userguide/subscriber-data-access.md) and [AWS\
-Managed Policies](../../../security-lake/latest/userguide/security-iam-awsmanpol.md) in the _Amazon Security Lake User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityLake::SubscriberNotification
-
-NotificationConfiguration
+`TargetRoleArn`  <a name="cfn-securitylake-subscribernotification-httpsnotificationconfiguration-targetrolearn"></a>
+The Amazon Resource Name (ARN) of the EventBridge API destinations IAM role that you created. For more information about ARNs and how to use them in policies, see [Managing data access](https://docs.aws.amazon.com///security-lake/latest/userguide/subscriber-data-access.html) and [AWS Managed Policies](https://docs.aws.amazon.com//security-lake/latest/userguide/security-iam-awsmanpol.html) in the *Amazon Security Lake User Guide*.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,95 +2,69 @@
 title: "AWS::OpenSearchServerless::Index Method"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Index Method
+<a name="aws-properties-opensearchserverless-index-method"></a>
 
 Configuration for k-NN search method.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-index-method-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-index-method-syntax.json"></a>
 
-```json
-
+```
 {
-  "Engine" : String,
-  "Name" : String,
-  "Parameters" : Parameters,
-  "SpaceType" : String
+  "[Engine](#cfn-opensearchserverless-index-method-engine)" : {{String}},
+  "[Name](#cfn-opensearchserverless-index-method-name)" : {{String}},
+  "[Parameters](#cfn-opensearchserverless-index-method-parameters)" : {{Parameters}},
+  "[SpaceType](#cfn-opensearchserverless-index-method-spacetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-index-method-syntax.yaml"></a>
 
-```yaml
-
-  Engine: String
-  Name: String
-  Parameters:
-    Parameters
-  SpaceType: String
-
+```
+  [Engine](#cfn-opensearchserverless-index-method-engine): {{String}}
+  [Name](#cfn-opensearchserverless-index-method-name): {{String}}
+  [Parameters](#cfn-opensearchserverless-index-method-parameters): {{
+    Parameters}}
+  [SpaceType](#cfn-opensearchserverless-index-method-spacetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-index-method-properties"></a>
 
-`Engine`
-
+`Engine`  <a name="cfn-opensearchserverless-index-method-engine"></a>
 The k-NN search engine to use
+*Required*: No
+*Type*: String
+*Allowed values*: `nmslib | faiss | lucene`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `nmslib | faiss | lucene`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-opensearchserverless-index-method-name"></a>
 The algorithm name for k-NN search.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `hnsw | ivf`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `hnsw | ivf`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Parameters`
-
+`Parameters`  <a name="cfn-opensearchserverless-index-method-parameters"></a>
 Additional parameters for the k-NN algorithm.
+*Required*: No
+*Type*: [Parameters](aws-properties-opensearchserverless-index-parameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Parameters](aws-properties-opensearchserverless-index-parameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpaceType`
-
+`SpaceType`  <a name="cfn-opensearchserverless-index-method-spacetype"></a>
 The distance function used for k-NN search.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `l2 | l1 | linf | cosinesimil | innerproduct | hamming`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Mappings
-
-Parameters
+*Required*: No
+*Type*: String
+*Allowed values*: `l2 | l1 | linf | cosinesimil | innerproduct | hamming`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,118 +2,84 @@
 title: "AWS::AccessAnalyzer::Analyzer Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccessAnalyzer::Analyzer Filter
+<a name="aws-properties-accessanalyzer-analyzer-filter"></a>
 
 The criteria that defines the archive rule.
 
-To learn about filter keys that you can use to create an archive rule, see [AWS Identity and Access Management Access Analyzer filter keys](../../../iam/latest/userguide/access-analyzer-reference-filter-keys.md) in the
-_AWS Identity and Access Management User Guide_.
+To learn about filter keys that you can use to create an archive rule, see [AWS Identity and Access Management Access Analyzer filter keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-filter-keys.html) in the *AWS Identity and Access Management User Guide*.
 
 ## Syntax
+<a name="aws-properties-accessanalyzer-analyzer-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-accessanalyzer-analyzer-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Contains" : [ String, ... ],
-  "Eq" : [ String, ... ],
-  "Exists" : Boolean,
-  "Neq" : [ String, ... ],
-  "Property" : String
+  "[Contains](#cfn-accessanalyzer-analyzer-filter-contains)" : {{[ String, ... ]}},
+  "[Eq](#cfn-accessanalyzer-analyzer-filter-eq)" : {{[ String, ... ]}},
+  "[Exists](#cfn-accessanalyzer-analyzer-filter-exists)" : {{Boolean}},
+  "[Neq](#cfn-accessanalyzer-analyzer-filter-neq)" : {{[ String, ... ]}},
+  "[Property](#cfn-accessanalyzer-analyzer-filter-property)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-accessanalyzer-analyzer-filter-syntax.yaml"></a>
 
-```yaml
-
-  Contains:
-    - String
-  Eq:
-    - String
-  Exists: Boolean
-  Neq:
-    - String
-  Property: String
-
+```
+  [Contains](#cfn-accessanalyzer-analyzer-filter-contains): {{
+    - String}}
+  [Eq](#cfn-accessanalyzer-analyzer-filter-eq): {{
+    - String}}
+  [Exists](#cfn-accessanalyzer-analyzer-filter-exists): {{Boolean}}
+  [Neq](#cfn-accessanalyzer-analyzer-filter-neq): {{
+    - String}}
+  [Property](#cfn-accessanalyzer-analyzer-filter-property): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-accessanalyzer-analyzer-filter-properties"></a>
 
-`Contains`
-
+`Contains`  <a name="cfn-accessanalyzer-analyzer-filter-contains"></a>
 A "contains" condition to match for the rule.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Eq`
-
+`Eq`  <a name="cfn-accessanalyzer-analyzer-filter-eq"></a>
 An "equals" condition to match for the rule.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Exists`
-
+`Exists`  <a name="cfn-accessanalyzer-analyzer-filter-exists"></a>
 An "exists" condition to match for the rule.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Neq`
-
+`Neq`  <a name="cfn-accessanalyzer-analyzer-filter-neq"></a>
 A "not equal" condition to match for the rule.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Property`
-
+`Property`  <a name="cfn-accessanalyzer-analyzer-filter-property"></a>
 The property used to define the criteria in the filter for the rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArchiveRule
-
-InternalAccessAnalysisRule
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

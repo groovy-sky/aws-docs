@@ -2,76 +2,56 @@
 title: "AWS::InspectorV2::CisScanConfiguration CisTargets"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CisScanConfiguration CisTargets
+<a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets"></a>
 
 The CIS targets.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountIds" : [ String, ... ],
-  "TargetResourceTags" : [ String, ... ]
+  "[AccountIds](#cfn-inspectorv2-cisscanconfiguration-cistargets-accountids)" : {{[ String, ... ]}},
+  "[TargetResourceTags](#cfn-inspectorv2-cisscanconfiguration-cistargets-targetresourcetags)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets-syntax.yaml"></a>
 
-```yaml
-
-  AccountIds:
-    - String
-  TargetResourceTags:
-    - String
-
+```
+  [AccountIds](#cfn-inspectorv2-cisscanconfiguration-cistargets-accountids): {{
+    - String}}
+  [TargetResourceTags](#cfn-inspectorv2-cisscanconfiguration-cistargets-targetresourcetags): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets-properties"></a>
 
-`AccountIds`
-
+`AccountIds`  <a name="cfn-inspectorv2-cisscanconfiguration-cistargets-accountids"></a>
 The CIS target account ids.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetResourceTags`
-
+`TargetResourceTags`  <a name="cfn-inspectorv2-cisscanconfiguration-cistargets-targetresourcetags"></a>
 The CIS target resource tags.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Pattern_: `^.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::InspectorV2::CisScanConfiguration
-
-DailySchedule
+*Required*: Yes
+*Type*: Array of String
+*Pattern*: `^.+$`
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

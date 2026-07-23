@@ -2,123 +2,87 @@
 title: "AWS::Kendra::DataSource DatabaseConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource DatabaseConfiguration
+<a name="aws-properties-kendra-datasource-databaseconfiguration"></a>
 
-Provides the configuration information to an [Amazon Kendra supported \
-database](../../../kendra/latest/dg/data-source-database.md).
+Provides the configuration information to an [Amazon Kendra supported database](https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.html).
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-databaseconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-databaseconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AclConfiguration" : AclConfiguration,
-  "ColumnConfiguration" : ColumnConfiguration,
-  "ConnectionConfiguration" : ConnectionConfiguration,
-  "DatabaseEngineType" : String,
-  "SqlConfiguration" : SqlConfiguration,
-  "VpcConfiguration" : DataSourceVpcConfiguration
+  "[AclConfiguration](#cfn-kendra-datasource-databaseconfiguration-aclconfiguration)" : {{AclConfiguration}},
+  "[ColumnConfiguration](#cfn-kendra-datasource-databaseconfiguration-columnconfiguration)" : {{ColumnConfiguration}},
+  "[ConnectionConfiguration](#cfn-kendra-datasource-databaseconfiguration-connectionconfiguration)" : {{ConnectionConfiguration}},
+  "[DatabaseEngineType](#cfn-kendra-datasource-databaseconfiguration-databaseenginetype)" : {{String}},
+  "[SqlConfiguration](#cfn-kendra-datasource-databaseconfiguration-sqlconfiguration)" : {{SqlConfiguration}},
+  "[VpcConfiguration](#cfn-kendra-datasource-databaseconfiguration-vpcconfiguration)" : {{DataSourceVpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-databaseconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AclConfiguration:
-    AclConfiguration
-  ColumnConfiguration:
-    ColumnConfiguration
-  ConnectionConfiguration:
-    ConnectionConfiguration
-  DatabaseEngineType: String
-  SqlConfiguration:
-    SqlConfiguration
-  VpcConfiguration:
-    DataSourceVpcConfiguration
-
+```
+  [AclConfiguration](#cfn-kendra-datasource-databaseconfiguration-aclconfiguration): {{
+    AclConfiguration}}
+  [ColumnConfiguration](#cfn-kendra-datasource-databaseconfiguration-columnconfiguration): {{
+    ColumnConfiguration}}
+  [ConnectionConfiguration](#cfn-kendra-datasource-databaseconfiguration-connectionconfiguration): {{
+    ConnectionConfiguration}}
+  [DatabaseEngineType](#cfn-kendra-datasource-databaseconfiguration-databaseenginetype): {{String}}
+  [SqlConfiguration](#cfn-kendra-datasource-databaseconfiguration-sqlconfiguration): {{
+    SqlConfiguration}}
+  [VpcConfiguration](#cfn-kendra-datasource-databaseconfiguration-vpcconfiguration): {{
+    DataSourceVpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-databaseconfiguration-properties"></a>
 
-`AclConfiguration`
+`AclConfiguration`  <a name="cfn-kendra-datasource-databaseconfiguration-aclconfiguration"></a>
+Information about the database column that provides information for user context filtering.
+*Required*: No
+*Type*: [AclConfiguration](aws-properties-kendra-datasource-aclconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about the database column that provides information for user context
-filtering.
+`ColumnConfiguration`  <a name="cfn-kendra-datasource-databaseconfiguration-columnconfiguration"></a>
+Information about where the index should get the document information from the database.
+*Required*: Yes
+*Type*: [ColumnConfiguration](aws-properties-kendra-datasource-columnconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AclConfiguration](aws-properties-kendra-datasource-aclconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnConfiguration`
-
-Information about where the index should get the document information from the
-database.
-
-_Required_: Yes
-
-_Type_: [ColumnConfiguration](aws-properties-kendra-datasource-columnconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectionConfiguration`
-
+`ConnectionConfiguration`  <a name="cfn-kendra-datasource-databaseconfiguration-connectionconfiguration"></a>
 Configuration information that's required to connect to a database.
+*Required*: Yes
+*Type*: [ConnectionConfiguration](aws-properties-kendra-datasource-connectionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ConnectionConfiguration](aws-properties-kendra-datasource-connectionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseEngineType`
-
+`DatabaseEngineType`  <a name="cfn-kendra-datasource-databaseconfiguration-databaseenginetype"></a>
 The type of database engine that runs the database.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `RDS_AURORA_MYSQL | RDS_AURORA_POSTGRESQL | RDS_MYSQL | RDS_POSTGRESQL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`SqlConfiguration`  <a name="cfn-kendra-datasource-databaseconfiguration-sqlconfiguration"></a>
+Provides information about how Amazon Kendra uses quote marks around SQL identifiers when querying a database data source.
+*Required*: No
+*Type*: [SqlConfiguration](aws-properties-kendra-datasource-sqlconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `RDS_AURORA_MYSQL | RDS_AURORA_POSTGRESQL | RDS_MYSQL | RDS_POSTGRESQL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SqlConfiguration`
-
-Provides information about how Amazon Kendra uses quote marks around SQL identifiers
-when querying a database data source.
-
-_Required_: No
-
-_Type_: [SqlConfiguration](aws-properties-kendra-datasource-sqlconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-kendra-datasource-databaseconfiguration-vpcconfiguration"></a>
 Provides information for connecting to an Amazon VPC.
-
-_Required_: No
-
-_Type_: [DataSourceVpcConfiguration](aws-properties-kendra-datasource-datasourcevpcconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomDocumentEnrichmentConfiguration
-
-DataSourceConfiguration
+*Required*: No
+*Type*: [DataSourceVpcConfiguration](aws-properties-kendra-datasource-datasourcevpcconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

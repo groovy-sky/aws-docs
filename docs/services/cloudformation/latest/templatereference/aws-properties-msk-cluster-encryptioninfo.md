@@ -2,66 +2,51 @@
 title: "AWS::MSK::Cluster EncryptionInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster EncryptionInfo
+<a name="aws-properties-msk-cluster-encryptioninfo"></a>
 
 Includes encryption-related information, such as the Amazon KMS key used for encrypting data at rest and whether you want MSK to encrypt your data in transit.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-encryptioninfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-encryptioninfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionAtRest" : EncryptionAtRest,
-  "EncryptionInTransit" : EncryptionInTransit
+  "[EncryptionAtRest](#cfn-msk-cluster-encryptioninfo-encryptionatrest)" : {{EncryptionAtRest}},
+  "[EncryptionInTransit](#cfn-msk-cluster-encryptioninfo-encryptionintransit)" : {{EncryptionInTransit}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-encryptioninfo-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionAtRest:
-    EncryptionAtRest
-  EncryptionInTransit:
-    EncryptionInTransit
-
+```
+  [EncryptionAtRest](#cfn-msk-cluster-encryptioninfo-encryptionatrest): {{
+    EncryptionAtRest}}
+  [EncryptionInTransit](#cfn-msk-cluster-encryptioninfo-encryptionintransit): {{
+    EncryptionInTransit}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-encryptioninfo-properties"></a>
 
-`EncryptionAtRest`
-
+`EncryptionAtRest`  <a name="cfn-msk-cluster-encryptioninfo-encryptionatrest"></a>
 The data-volume encryption details.
+*Required*: No
+*Type*: [EncryptionAtRest](aws-properties-msk-cluster-encryptionatrest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [EncryptionAtRest](aws-properties-msk-cluster-encryptionatrest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EncryptionInTransit`
-
+`EncryptionInTransit`  <a name="cfn-msk-cluster-encryptioninfo-encryptionintransit"></a>
 The details for encryption in transit.
-
-_Required_: No
-
-_Type_: [EncryptionInTransit](aws-properties-msk-cluster-encryptionintransit.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionAtRest
-
-EncryptionInTransit
+*Required*: No
+*Type*: [EncryptionInTransit](aws-properties-msk-cluster-encryptionintransit.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

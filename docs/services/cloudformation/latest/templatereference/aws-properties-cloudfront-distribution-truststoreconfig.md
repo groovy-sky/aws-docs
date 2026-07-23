@@ -2,76 +2,57 @@
 title: "AWS::CloudFront::Distribution TrustStoreConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution TrustStoreConfig
+<a name="aws-properties-cloudfront-distribution-truststoreconfig"></a>
 
 A trust store configuration.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-truststoreconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-truststoreconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdvertiseTrustStoreCaNames" : Boolean,
-  "IgnoreCertificateExpiry" : Boolean,
-  "TrustStoreId" : String
+  "[AdvertiseTrustStoreCaNames](#cfn-cloudfront-distribution-truststoreconfig-advertisetruststorecanames)" : {{Boolean}},
+  "[IgnoreCertificateExpiry](#cfn-cloudfront-distribution-truststoreconfig-ignorecertificateexpiry)" : {{Boolean}},
+  "[TrustStoreId](#cfn-cloudfront-distribution-truststoreconfig-truststoreid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-truststoreconfig-syntax.yaml"></a>
 
-```yaml
-
-  AdvertiseTrustStoreCaNames: Boolean
-  IgnoreCertificateExpiry: Boolean
-  TrustStoreId: String
-
+```
+  [AdvertiseTrustStoreCaNames](#cfn-cloudfront-distribution-truststoreconfig-advertisetruststorecanames): {{Boolean}}
+  [IgnoreCertificateExpiry](#cfn-cloudfront-distribution-truststoreconfig-ignorecertificateexpiry): {{Boolean}}
+  [TrustStoreId](#cfn-cloudfront-distribution-truststoreconfig-truststoreid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-truststoreconfig-properties"></a>
 
-`AdvertiseTrustStoreCaNames`
-
+`AdvertiseTrustStoreCaNames`  <a name="cfn-cloudfront-distribution-truststoreconfig-advertisetruststorecanames"></a>
 The configuration to use to advertise trust store CA names.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IgnoreCertificateExpiry`
-
+`IgnoreCertificateExpiry`  <a name="cfn-cloudfront-distribution-truststoreconfig-ignorecertificateexpiry"></a>
 The configuration to use to ignore certificate expiration.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrustStoreId`
-
+`TrustStoreId`  <a name="cfn-cloudfront-distribution-truststoreconfig-truststoreid"></a>
 The trust store ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TenantConfig
-
-ViewerCertificate
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

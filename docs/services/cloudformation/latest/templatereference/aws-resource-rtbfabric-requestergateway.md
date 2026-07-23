@@ -2,164 +2,128 @@
 title: "AWS::RTBFabric::RequesterGateway"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::RequesterGateway
+<a name="aws-resource-rtbfabric-requestergateway"></a>
 
 Creates a requester gateway.
 
 ## Syntax
+<a name="aws-resource-rtbfabric-requestergateway-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rtbfabric-requestergateway-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::RTBFabric::RequesterGateway",
   "Properties" : {
-      "Description" : String,
-      "SecurityGroupIds" : [ String, ... ],
-      "SubnetIds" : [ String, ... ],
-      "Tags" : [ Tag, ... ],
-      "VpcId" : String
+      "[Description](#cfn-rtbfabric-requestergateway-description)" : {{String}},
+      "[SecurityGroupIds](#cfn-rtbfabric-requestergateway-securitygroupids)" : {{[ String, ... ]}},
+      "[SubnetIds](#cfn-rtbfabric-requestergateway-subnetids)" : {{[ String, ... ]}},
+      "[Tags](#cfn-rtbfabric-requestergateway-tags)" : {{[ Tag, ... ]}},
+      "[VpcId](#cfn-rtbfabric-requestergateway-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rtbfabric-requestergateway-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::RTBFabric::RequesterGateway
 Properties:
-  Description: String
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-  Tags:
-    - Tag
-  VpcId: String
-
+  [Description](#cfn-rtbfabric-requestergateway-description): {{String}}
+  [SecurityGroupIds](#cfn-rtbfabric-requestergateway-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-rtbfabric-requestergateway-subnetids): {{
+    - String}}
+  [Tags](#cfn-rtbfabric-requestergateway-tags): {{
+    - Tag}}
+  [VpcId](#cfn-rtbfabric-requestergateway-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-rtbfabric-requestergateway-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-rtbfabric-requestergateway-description"></a>
 An optional description for the requester gateway.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9 ]+$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9 ]+$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-rtbfabric-requestergateway-securitygroupids"></a>
 The unique identifiers of the security groups.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-rtbfabric-requestergateway-subnetids"></a>
 The unique identifiers of the subnets.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-rtbfabric-requestergateway-tags"></a>
 A map of the key-value pairs of the tag or tags to assign to the resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rtbfabric-requestergateway-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rtbfabric-requestergateway-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-rtbfabric-requestergateway-vpcid"></a>
 The unique identifier of the Virtual Private Cloud (VPC).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `5`
-
-_Maximum_: `50`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
+*Required*: Yes
+*Type*: String
+*Minimum*: `5`
+*Maximum*: `50`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 ## Return values
+<a name="aws-resource-rtbfabric-requestergateway-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rtbfabric-requestergateway-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-rtbfabric-requestergateway-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ActiveLinksCount`
+####
+<a name="aws-resource-rtbfabric-requestergateway-return-values-fn--getatt-fn--getatt"></a>
 
+`ActiveLinksCount`  <a name="ActiveLinksCount-fn::getatt"></a>
 Property description not available.
 
-`Arn`
-
+`Arn`  <a name="Arn-fn::getatt"></a>
 Property description not available.
 
-`CreatedTimestamp`
-
+`CreatedTimestamp`  <a name="CreatedTimestamp-fn::getatt"></a>
 Property description not available.
 
-`DomainName`
-
+`DomainName`  <a name="DomainName-fn::getatt"></a>
 Property description not available.
 
-`GatewayId`
-
+`GatewayId`  <a name="GatewayId-fn::getatt"></a>
 Property description not available.
 
-`RequesterGatewayStatus`
-
+`RequesterGatewayStatus`  <a name="RequesterGatewayStatus-fn::getatt"></a>
 Property description not available.
 
-`TotalLinksCount`
-
+`TotalLinksCount`  <a name="TotalLinksCount-fn::getatt"></a>
 Property description not available.
 
-`UpdatedTimestamp`
-
+`UpdatedTimestamp`  <a name="UpdatedTimestamp-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

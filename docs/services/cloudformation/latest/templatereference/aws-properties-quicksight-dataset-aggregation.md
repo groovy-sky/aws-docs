@@ -2,87 +2,62 @@
 title: "AWS::QuickSight::DataSet Aggregation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet Aggregation
+<a name="aws-properties-quicksight-dataset-aggregation"></a>
 
-Defines an aggregation function to be applied to grouped data, creating a new column with
-the calculated result.
+Defines an aggregation function to be applied to grouped data, creating a new column with the calculated result.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-aggregation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-aggregation-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationFunction" : DataPrepAggregationFunction,
-  "NewColumnId" : String,
-  "NewColumnName" : String
+  "[AggregationFunction](#cfn-quicksight-dataset-aggregation-aggregationfunction)" : {{DataPrepAggregationFunction}},
+  "[NewColumnId](#cfn-quicksight-dataset-aggregation-newcolumnid)" : {{String}},
+  "[NewColumnName](#cfn-quicksight-dataset-aggregation-newcolumnname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-aggregation-syntax.yaml"></a>
 
-```yaml
-
-  AggregationFunction:
-    DataPrepAggregationFunction
-  NewColumnId: String
-  NewColumnName: String
-
+```
+  [AggregationFunction](#cfn-quicksight-dataset-aggregation-aggregationfunction): {{
+    DataPrepAggregationFunction}}
+  [NewColumnId](#cfn-quicksight-dataset-aggregation-newcolumnid): {{String}}
+  [NewColumnName](#cfn-quicksight-dataset-aggregation-newcolumnname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-aggregation-properties"></a>
 
-`AggregationFunction`
+`AggregationFunction`  <a name="cfn-quicksight-dataset-aggregation-aggregationfunction"></a>
+The aggregation function to apply, such as `SUM`, `COUNT`, `AVERAGE`, `MIN`, `MAX`
+*Required*: Yes
+*Type*: [DataPrepAggregationFunction](aws-properties-quicksight-dataset-dataprepaggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The aggregation function to apply, such as `SUM`, `COUNT`, `AVERAGE`,
-`MIN`, `MAX`
-
-_Required_: Yes
-
-_Type_: [DataPrepAggregationFunction](aws-properties-quicksight-dataset-dataprepaggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NewColumnId`
-
+`NewColumnId`  <a name="cfn-quicksight-dataset-aggregation-newcolumnid"></a>
 A unique identifier for the new column that will contain the aggregated values.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NewColumnName`
-
+`NewColumnName`  <a name="cfn-quicksight-dataset-aggregation-newcolumnname"></a>
 The name for the new column that will contain the aggregated values.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AggregateOperation
-
-AppendedColumn
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

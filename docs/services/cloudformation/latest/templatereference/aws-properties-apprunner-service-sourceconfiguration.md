@@ -2,101 +2,71 @@
 title: "AWS::AppRunner::Service SourceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service SourceConfiguration
+<a name="aws-properties-apprunner-service-sourceconfiguration"></a>
 
 Describes the source deployed to an AWS App Runner service. It can be a code or an image repository.
 
 ## Syntax
+<a name="aws-properties-apprunner-service-sourceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apprunner-service-sourceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthenticationConfiguration" : AuthenticationConfiguration,
-  "AutoDeploymentsEnabled" : Boolean,
-  "CodeRepository" : CodeRepository,
-  "ImageRepository" : ImageRepository
+  "[AuthenticationConfiguration](#cfn-apprunner-service-sourceconfiguration-authenticationconfiguration)" : {{AuthenticationConfiguration}},
+  "[AutoDeploymentsEnabled](#cfn-apprunner-service-sourceconfiguration-autodeploymentsenabled)" : {{Boolean}},
+  "[CodeRepository](#cfn-apprunner-service-sourceconfiguration-coderepository)" : {{CodeRepository}},
+  "[ImageRepository](#cfn-apprunner-service-sourceconfiguration-imagerepository)" : {{ImageRepository}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apprunner-service-sourceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuthenticationConfiguration:
-    AuthenticationConfiguration
-  AutoDeploymentsEnabled: Boolean
-  CodeRepository:
-    CodeRepository
-  ImageRepository:
-    ImageRepository
-
+```
+  [AuthenticationConfiguration](#cfn-apprunner-service-sourceconfiguration-authenticationconfiguration): {{
+    AuthenticationConfiguration}}
+  [AutoDeploymentsEnabled](#cfn-apprunner-service-sourceconfiguration-autodeploymentsenabled): {{Boolean}}
+  [CodeRepository](#cfn-apprunner-service-sourceconfiguration-coderepository): {{
+    CodeRepository}}
+  [ImageRepository](#cfn-apprunner-service-sourceconfiguration-imagerepository): {{
+    ImageRepository}}
 ```
 
 ## Properties
+<a name="aws-properties-apprunner-service-sourceconfiguration-properties"></a>
 
-`AuthenticationConfiguration`
-
+`AuthenticationConfiguration`  <a name="cfn-apprunner-service-sourceconfiguration-authenticationconfiguration"></a>
 Describes the resources that are needed to authenticate access to some source repositories.
+*Required*: No
+*Type*: [AuthenticationConfiguration](aws-properties-apprunner-service-authenticationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AutoDeploymentsEnabled`  <a name="cfn-apprunner-service-sourceconfiguration-autodeploymentsenabled"></a>
+If `true`, continuous integration from the source repository is enabled for the App Runner service. Each repository change (including any source code commit or new image version) starts a deployment.
+Default: App Runner sets to `false` for a source image that uses an ECR Public repository or an ECR repository that's in an AWS account other than the one that the service is in. App Runner sets to `true` in all other cases (which currently include a source code repository or a source image using a same-account ECR repository).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AuthenticationConfiguration](aws-properties-apprunner-service-authenticationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoDeploymentsEnabled`
-
-If `true`, continuous integration from the source repository is enabled for the App Runner service. Each repository change (including any source
-code commit or new image version) starts a deployment.
-
-Default: App Runner sets to `false` for a source image that uses an ECR Public repository or an ECR repository that's in an AWS account other than the one that the service is in. App Runner sets to `true` in all other cases (which currently include a source code
-repository or a source image using a same-account ECR repository).
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeRepository`
-
-The description of a source code
-repository.
-
+`CodeRepository`  <a name="cfn-apprunner-service-sourceconfiguration-coderepository"></a>
+The description of a source code repository.
 You must provide either this member or `ImageRepository` (but not both).
+*Required*: No
+*Type*: [CodeRepository](aws-properties-apprunner-service-coderepository.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CodeRepository](aws-properties-apprunner-service-coderepository.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageRepository`
-
-The description of a source image
-repository.
-
+`ImageRepository`  <a name="cfn-apprunner-service-sourceconfiguration-imagerepository"></a>
+The description of a source image repository.
 You must provide either this member or `CodeRepository` (but not both).
-
-_Required_: No
-
-_Type_: [ImageRepository](aws-properties-apprunner-service-imagerepository.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SourceCodeVersion
-
-Tag
+*Required*: No
+*Type*: [ImageRepository](aws-properties-apprunner-service-imagerepository.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

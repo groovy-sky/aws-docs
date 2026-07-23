@@ -2,53 +2,42 @@
 title: "AWS::BedrockAgentCore::Evaluator CodeBasedEvaluatorConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator CodeBasedEvaluatorConfig
+<a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig"></a>
 
-The `CodeBasedEvaluatorConfig` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md).
+<a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-description"></a>The `CodeBasedEvaluatorConfig` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md).
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "LambdaConfig" : LambdaEvaluatorConfig
+  "[LambdaConfig](#cfn-bedrockagentcore-evaluator-codebasedevaluatorconfig-lambdaconfig)" : {{LambdaEvaluatorConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-syntax.yaml"></a>
 
-```yaml
-
-  LambdaConfig:
-    LambdaEvaluatorConfig
-
+```
+  [LambdaConfig](#cfn-bedrockagentcore-evaluator-codebasedevaluatorconfig-lambdaconfig): {{
+    LambdaEvaluatorConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-properties"></a>
 
-`LambdaConfig`
-
+`LambdaConfig`  <a name="cfn-bedrockagentcore-evaluator-codebasedevaluatorconfig-lambdaconfig"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [LambdaEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CategoricalScaleDefinition
-
-EvaluatorConfig
+*Required*: Yes
+*Type*: [LambdaEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

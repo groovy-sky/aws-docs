@@ -2,173 +2,130 @@
 title: "AWS::CustomerProfiles::Recommender"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Recommender
+<a name="aws-resource-customerprofiles-recommender"></a>
 
-The `AWS::CustomerProfiles::Recommender` resource Property description not available. for CustomerProfiles.
+<a name="aws-resource-customerprofiles-recommender-description"></a>The `AWS::CustomerProfiles::Recommender` resource Property description not available. for CustomerProfiles.
 
 ## Syntax
+<a name="aws-resource-customerprofiles-recommender-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-customerprofiles-recommender-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CustomerProfiles::Recommender",
   "Properties" : {
-      "Description" : String,
-      "DomainName" : String,
-      "RecommenderConfig" : RecommenderConfig,
-      "RecommenderName" : String,
-      "RecommenderRecipeName" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-customerprofiles-recommender-description)" : {{String}},
+      "[DomainName](#cfn-customerprofiles-recommender-domainname)" : {{String}},
+      "[RecommenderConfig](#cfn-customerprofiles-recommender-recommenderconfig)" : {{RecommenderConfig}},
+      "[RecommenderName](#cfn-customerprofiles-recommender-recommendername)" : {{String}},
+      "[RecommenderRecipeName](#cfn-customerprofiles-recommender-recommenderrecipename)" : {{String}},
+      "[Tags](#cfn-customerprofiles-recommender-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-customerprofiles-recommender-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CustomerProfiles::Recommender
 Properties:
-  Description: String
-  DomainName: String
-  RecommenderConfig:
-    RecommenderConfig
-  RecommenderName: String
-  RecommenderRecipeName: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-customerprofiles-recommender-description): {{String}}
+  [DomainName](#cfn-customerprofiles-recommender-domainname): {{String}}
+  [RecommenderConfig](#cfn-customerprofiles-recommender-recommenderconfig): {{
+    RecommenderConfig}}
+  [RecommenderName](#cfn-customerprofiles-recommender-recommendername): {{String}}
+  [RecommenderRecipeName](#cfn-customerprofiles-recommender-recommenderrecipename): {{String}}
+  [Tags](#cfn-customerprofiles-recommender-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-customerprofiles-recommender-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-customerprofiles-recommender-description"></a>
 A description of the recommender's purpose and characteristics.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-customerprofiles-recommender-domainname"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RecommenderConfig`
-
+`RecommenderConfig`  <a name="cfn-customerprofiles-recommender-recommenderconfig"></a>
 The configuration settings applied to this recommender.
+*Required*: No
+*Type*: [RecommenderConfig](aws-properties-customerprofiles-recommender-recommenderconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RecommenderConfig](aws-properties-customerprofiles-recommender-recommenderconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecommenderName`
-
+`RecommenderName`  <a name="cfn-customerprofiles-recommender-recommendername"></a>
 The name of the recommender.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RecommenderRecipeName`
-
+`RecommenderRecipeName`  <a name="cfn-customerprofiles-recommender-recommenderrecipename"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-customerprofiles-recommender-tags"></a>
 The tags used to organize, track, or control access for this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-customerprofiles-recommender-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-customerprofiles-recommender-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-customerprofiles-recommender-return-values"></a>
 
 ### Ref
+<a name="aws-resource-customerprofiles-recommender-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-customerprofiles-recommender-return-values-fn--getatt"></a>
 
-`CreatedAt`
+####
+<a name="aws-resource-customerprofiles-recommender-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the recommender was created.
 
-`FailureReason`
-
+`FailureReason`  <a name="FailureReason-fn::getatt"></a>
 If the recommender is in a failed state, provides the reason for the failure.
 
-`LastUpdatedAt`
-
+`LastUpdatedAt`  <a name="LastUpdatedAt-fn::getatt"></a>
 The timestamp of when the recommender was edited.
 
-`RecommenderArn`
-
+`RecommenderArn`  <a name="RecommenderArn-fn::getatt"></a>
 Property description not available.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current operational status of the recommender.
 
-`TrainingMetrics`
-
+`TrainingMetrics`  <a name="TrainingMetrics-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-EventParameters
 
 All content copied from https://docs.aws.amazon.com/.

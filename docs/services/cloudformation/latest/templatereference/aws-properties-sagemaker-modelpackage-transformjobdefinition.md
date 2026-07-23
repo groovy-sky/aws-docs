@@ -2,147 +2,99 @@
 title: "AWS::SageMaker::ModelPackage TransformJobDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage TransformJobDefinition
+<a name="aws-properties-sagemaker-modelpackage-transformjobdefinition"></a>
 
-Defines the input needed to run a transform job using the inference specification
-specified in the algorithm.
+Defines the input needed to run a transform job using the inference specification specified in the algorithm.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-transformjobdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-transformjobdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchStrategy" : String,
-  "Environment" : {Key: Value, ...},
-  "MaxConcurrentTransforms" : Integer,
-  "MaxPayloadInMB" : Integer,
-  "TransformInput" : TransformInput,
-  "TransformOutput" : TransformOutput,
-  "TransformResources" : TransformResources
+  "[BatchStrategy](#cfn-sagemaker-modelpackage-transformjobdefinition-batchstrategy)" : {{String}},
+  "[Environment](#cfn-sagemaker-modelpackage-transformjobdefinition-environment)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[MaxConcurrentTransforms](#cfn-sagemaker-modelpackage-transformjobdefinition-maxconcurrenttransforms)" : {{Integer}},
+  "[MaxPayloadInMB](#cfn-sagemaker-modelpackage-transformjobdefinition-maxpayloadinmb)" : {{Integer}},
+  "[TransformInput](#cfn-sagemaker-modelpackage-transformjobdefinition-transforminput)" : {{TransformInput}},
+  "[TransformOutput](#cfn-sagemaker-modelpackage-transformjobdefinition-transformoutput)" : {{TransformOutput}},
+  "[TransformResources](#cfn-sagemaker-modelpackage-transformjobdefinition-transformresources)" : {{TransformResources}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-transformjobdefinition-syntax.yaml"></a>
 
-```yaml
-
-  BatchStrategy: String
-  Environment:
-    Key: Value
-  MaxConcurrentTransforms: Integer
-  MaxPayloadInMB: Integer
-  TransformInput:
-    TransformInput
-  TransformOutput:
-    TransformOutput
-  TransformResources:
-    TransformResources
-
+```
+  [BatchStrategy](#cfn-sagemaker-modelpackage-transformjobdefinition-batchstrategy): {{String}}
+  [Environment](#cfn-sagemaker-modelpackage-transformjobdefinition-environment): {{
+    {{Key}}: {{Value}}}}
+  [MaxConcurrentTransforms](#cfn-sagemaker-modelpackage-transformjobdefinition-maxconcurrenttransforms): {{Integer}}
+  [MaxPayloadInMB](#cfn-sagemaker-modelpackage-transformjobdefinition-maxpayloadinmb): {{Integer}}
+  [TransformInput](#cfn-sagemaker-modelpackage-transformjobdefinition-transforminput): {{
+    TransformInput}}
+  [TransformOutput](#cfn-sagemaker-modelpackage-transformjobdefinition-transformoutput): {{
+    TransformOutput}}
+  [TransformResources](#cfn-sagemaker-modelpackage-transformjobdefinition-transformresources): {{
+    TransformResources}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-transformjobdefinition-properties"></a>
 
-`BatchStrategy`
-
+`BatchStrategy`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-batchstrategy"></a>
 A string that determines the number of records included in a single mini-batch.
+`SingleRecord` means only one record is used per mini-batch. `MultiRecord` means a mini-batch is set to contain as many records that can fit within the `MaxPayloadInMB` limit.
+*Required*: No
+*Type*: String
+*Allowed values*: `MultiRecord | SingleRecord`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`SingleRecord` means only one record is used per mini-batch.
-`MultiRecord` means a mini-batch is set to contain as many records that
-can fit within the `MaxPayloadInMB` limit.
+`Environment`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-environment"></a>
+The environment variables to set in the Docker container. We support up to 16 key and values entries in the map.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z_][a-zA-Z0-9_]*`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`MaxConcurrentTransforms`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-maxconcurrenttransforms"></a>
+The maximum number of parallel requests that can be sent to each instance in a transform job. The default value is 1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`MaxPayloadInMB`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-maxpayloadinmb"></a>
+The maximum payload size allowed, in MB. A payload is the data portion of a record (without metadata).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Allowed values_: `MultiRecord | SingleRecord`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Environment`
-
-The environment variables to set in the Docker container. We support up to 16 key and
-values entries in the map.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z_][a-zA-Z0-9_]*`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxConcurrentTransforms`
-
-The maximum number of parallel requests that can be sent to each instance in a
-transform job. The default value is 1.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxPayloadInMB`
-
-The maximum payload size allowed, in MB. A payload is the data portion of a record
-(without metadata).
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransformInput`
-
+`TransformInput`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-transforminput"></a>
 A description of the input source and the way the transform job consumes it.
+*Required*: Yes
+*Type*: [TransformInput](aws-properties-sagemaker-modelpackage-transforminput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`TransformOutput`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-transformoutput"></a>
+Identifies the Amazon S3 location where you want Amazon SageMaker to save the results from the transform job.
+*Required*: Yes
+*Type*: [TransformOutput](aws-properties-sagemaker-modelpackage-transformoutput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [TransformInput](aws-properties-sagemaker-modelpackage-transforminput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransformOutput`
-
-Identifies the Amazon S3 location where you want Amazon SageMaker to save the results from the
-transform job.
-
-_Required_: Yes
-
-_Type_: [TransformOutput](aws-properties-sagemaker-modelpackage-transformoutput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransformResources`
-
+`TransformResources`  <a name="cfn-sagemaker-modelpackage-transformjobdefinition-transformresources"></a>
 Identifies the ML compute instances for the transform job.
-
-_Required_: Yes
-
-_Type_: [TransformResources](aws-properties-sagemaker-modelpackage-transformresources.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransformInput
-
-TransformOutput
+*Required*: Yes
+*Type*: [TransformResources](aws-properties-sagemaker-modelpackage-transformresources.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

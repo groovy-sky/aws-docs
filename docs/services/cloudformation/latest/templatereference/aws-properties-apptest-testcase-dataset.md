@@ -2,108 +2,77 @@
 title: "AWS::AppTest::TestCase DataSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase DataSet
+<a name="aws-properties-apptest-testcase-dataset"></a>
 
 Defines a data set.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-dataset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-dataset-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ccsid" : String,
-  "Format" : String,
-  "Length" : Number,
-  "Name" : String,
-  "Type" : String
+  "[Ccsid](#cfn-apptest-testcase-dataset-ccsid)" : {{String}},
+  "[Format](#cfn-apptest-testcase-dataset-format)" : {{String}},
+  "[Length](#cfn-apptest-testcase-dataset-length)" : {{Number}},
+  "[Name](#cfn-apptest-testcase-dataset-name)" : {{String}},
+  "[Type](#cfn-apptest-testcase-dataset-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-dataset-syntax.yaml"></a>
 
-```yaml
-
-  Ccsid: String
-  Format: String
-  Length: Number
-  Name: String
-  Type: String
-
+```
+  [Ccsid](#cfn-apptest-testcase-dataset-ccsid): {{String}}
+  [Format](#cfn-apptest-testcase-dataset-format): {{String}}
+  [Length](#cfn-apptest-testcase-dataset-length): {{Number}}
+  [Name](#cfn-apptest-testcase-dataset-name): {{String}}
+  [Type](#cfn-apptest-testcase-dataset-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-dataset-properties"></a>
 
-`Ccsid`
-
+`Ccsid`  <a name="cfn-apptest-testcase-dataset-ccsid"></a>
 The CCSID of the data set.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\S{1,50}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\S{1,50}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Format`
-
+`Format`  <a name="cfn-apptest-testcase-dataset-format"></a>
 The format of the data set.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `FIXED | VARIABLE | LINE_SEQUENTIAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `FIXED | VARIABLE | LINE_SEQUENTIAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Length`
-
+`Length`  <a name="cfn-apptest-testcase-dataset-length"></a>
 The length of the data set.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-apptest-testcase-dataset-name"></a>
 The name of the data set.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\S{1,100}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\S{1,100}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-apptest-testcase-dataset-type"></a>
 The type of the data set.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatabaseCDC
-
-FileMetadata
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

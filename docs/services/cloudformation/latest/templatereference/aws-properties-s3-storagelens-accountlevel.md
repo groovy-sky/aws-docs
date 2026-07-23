@@ -2,139 +2,96 @@
 title: "AWS::S3::StorageLens AccountLevel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens AccountLevel
+<a name="aws-properties-s3-storagelens-accountlevel"></a>
 
-This resource contains the details of the account-level metrics for Amazon S3 Storage
-Lens.
+This resource contains the details of the account-level metrics for Amazon S3 Storage Lens.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-accountlevel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-accountlevel-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActivityMetrics" : ActivityMetrics,
-  "AdvancedCostOptimizationMetrics" : AdvancedCostOptimizationMetrics,
-  "AdvancedDataProtectionMetrics" : AdvancedDataProtectionMetrics,
-  "AdvancedPerformanceMetrics" : AdvancedPerformanceMetrics,
-  "BucketLevel" : BucketLevel,
-  "DetailedStatusCodesMetrics" : DetailedStatusCodesMetrics,
-  "StorageLensGroupLevel" : StorageLensGroupLevel
+  "[ActivityMetrics](#cfn-s3-storagelens-accountlevel-activitymetrics)" : {{ActivityMetrics}},
+  "[AdvancedCostOptimizationMetrics](#cfn-s3-storagelens-accountlevel-advancedcostoptimizationmetrics)" : {{AdvancedCostOptimizationMetrics}},
+  "[AdvancedDataProtectionMetrics](#cfn-s3-storagelens-accountlevel-advanceddataprotectionmetrics)" : {{AdvancedDataProtectionMetrics}},
+  "[AdvancedPerformanceMetrics](#cfn-s3-storagelens-accountlevel-advancedperformancemetrics)" : {{AdvancedPerformanceMetrics}},
+  "[BucketLevel](#cfn-s3-storagelens-accountlevel-bucketlevel)" : {{BucketLevel}},
+  "[DetailedStatusCodesMetrics](#cfn-s3-storagelens-accountlevel-detailedstatuscodesmetrics)" : {{DetailedStatusCodesMetrics}},
+  "[StorageLensGroupLevel](#cfn-s3-storagelens-accountlevel-storagelensgrouplevel)" : {{StorageLensGroupLevel}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-accountlevel-syntax.yaml"></a>
 
-```yaml
-
-  ActivityMetrics:
-    ActivityMetrics
-  AdvancedCostOptimizationMetrics:
-    AdvancedCostOptimizationMetrics
-  AdvancedDataProtectionMetrics:
-    AdvancedDataProtectionMetrics
-  AdvancedPerformanceMetrics:
-    AdvancedPerformanceMetrics
-  BucketLevel:
-    BucketLevel
-  DetailedStatusCodesMetrics:
-    DetailedStatusCodesMetrics
-  StorageLensGroupLevel:
-    StorageLensGroupLevel
-
+```
+  [ActivityMetrics](#cfn-s3-storagelens-accountlevel-activitymetrics): {{
+    ActivityMetrics}}
+  [AdvancedCostOptimizationMetrics](#cfn-s3-storagelens-accountlevel-advancedcostoptimizationmetrics): {{
+    AdvancedCostOptimizationMetrics}}
+  [AdvancedDataProtectionMetrics](#cfn-s3-storagelens-accountlevel-advanceddataprotectionmetrics): {{
+    AdvancedDataProtectionMetrics}}
+  [AdvancedPerformanceMetrics](#cfn-s3-storagelens-accountlevel-advancedperformancemetrics): {{
+    AdvancedPerformanceMetrics}}
+  [BucketLevel](#cfn-s3-storagelens-accountlevel-bucketlevel): {{
+    BucketLevel}}
+  [DetailedStatusCodesMetrics](#cfn-s3-storagelens-accountlevel-detailedstatuscodesmetrics): {{
+    DetailedStatusCodesMetrics}}
+  [StorageLensGroupLevel](#cfn-s3-storagelens-accountlevel-storagelensgrouplevel): {{
+    StorageLensGroupLevel}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-accountlevel-properties"></a>
 
-`ActivityMetrics`
+`ActivityMetrics`  <a name="cfn-s3-storagelens-accountlevel-activitymetrics"></a>
+This property contains the details of account-level activity metrics for S3 Storage Lens.
+*Required*: No
+*Type*: [ActivityMetrics](aws-properties-s3-storagelens-activitymetrics.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This property contains the details of account-level activity metrics for S3 Storage
-Lens.
+`AdvancedCostOptimizationMetrics`  <a name="cfn-s3-storagelens-accountlevel-advancedcostoptimizationmetrics"></a>
+This property contains the details of account-level advanced cost optimization metrics for S3 Storage Lens.
+*Required*: No
+*Type*: [AdvancedCostOptimizationMetrics](aws-properties-s3-storagelens-advancedcostoptimizationmetrics.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AdvancedDataProtectionMetrics`  <a name="cfn-s3-storagelens-accountlevel-advanceddataprotectionmetrics"></a>
+This property contains the details of account-level advanced data protection metrics for S3 Storage Lens.
+*Required*: No
+*Type*: [AdvancedDataProtectionMetrics](aws-properties-s3-storagelens-advanceddataprotectionmetrics.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ActivityMetrics](aws-properties-s3-storagelens-activitymetrics.md)
+`AdvancedPerformanceMetrics`  <a name="cfn-s3-storagelens-accountlevel-advancedperformancemetrics"></a>
+This property contains the account-level details for S3 Storage Lens advanced performance metrics.
+*Required*: No
+*Type*: [AdvancedPerformanceMetrics](aws-properties-s3-storagelens-advancedperformancemetrics.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`BucketLevel`  <a name="cfn-s3-storagelens-accountlevel-bucketlevel"></a>
+This property contains the details of the account-level bucket-level configurations for Amazon S3 Storage Lens. To enable bucket-level configurations, make sure to also set the same metrics at the account level.
+*Required*: Yes
+*Type*: [BucketLevel](aws-properties-s3-storagelens-bucketlevel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`AdvancedCostOptimizationMetrics`
+`DetailedStatusCodesMetrics`  <a name="cfn-s3-storagelens-accountlevel-detailedstatuscodesmetrics"></a>
+This property contains the details of account-level detailed status code metrics for S3 Storage Lens.
+*Required*: No
+*Type*: [DetailedStatusCodesMetrics](aws-properties-s3-storagelens-detailedstatuscodesmetrics.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This property contains the details of account-level advanced cost optimization metrics for
-S3 Storage Lens.
-
-_Required_: No
-
-_Type_: [AdvancedCostOptimizationMetrics](aws-properties-s3-storagelens-advancedcostoptimizationmetrics.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdvancedDataProtectionMetrics`
-
-This property contains the details of account-level advanced data protection metrics for
-S3 Storage Lens.
-
-_Required_: No
-
-_Type_: [AdvancedDataProtectionMetrics](aws-properties-s3-storagelens-advanceddataprotectionmetrics.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdvancedPerformanceMetrics`
-
-This property contains the account-level details for S3 Storage Lens advanced
-performance metrics.
-
-_Required_: No
-
-_Type_: [AdvancedPerformanceMetrics](aws-properties-s3-storagelens-advancedperformancemetrics.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketLevel`
-
-This property contains the details of the account-level bucket-level configurations for
-Amazon S3 Storage Lens. To enable bucket-level configurations, make sure to also set the same metrics at the account level.
-
-_Required_: Yes
-
-_Type_: [BucketLevel](aws-properties-s3-storagelens-bucketlevel.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DetailedStatusCodesMetrics`
-
-This property contains the details of account-level detailed status code metrics for S3
-Storage Lens.
-
-_Required_: No
-
-_Type_: [DetailedStatusCodesMetrics](aws-properties-s3-storagelens-detailedstatuscodesmetrics.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageLensGroupLevel`
-
-This property determines the scope of Storage Lens group data that is displayed in the
-Storage Lens dashboard.
-
-_Required_: No
-
-_Type_: [StorageLensGroupLevel](aws-properties-s3-storagelens-storagelensgrouplevel.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::S3::StorageLens
-
-ActivityMetrics
+`StorageLensGroupLevel`  <a name="cfn-s3-storagelens-accountlevel-storagelensgrouplevel"></a>
+This property determines the scope of Storage Lens group data that is displayed in the Storage Lens dashboard.
+*Required*: No
+*Type*: [StorageLensGroupLevel](aws-properties-s3-storagelens-storagelensgrouplevel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

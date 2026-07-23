@@ -2,86 +2,62 @@
 title: "AWS::QuickSight::DataSet S3Source"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet S3Source
+<a name="aws-properties-quicksight-dataset-s3source"></a>
 
 A physical table type for an S3 data source.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-s3source-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-s3source-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataSourceArn" : String,
-  "InputColumns" : [ InputColumn, ... ],
-  "UploadSettings" : UploadSettings
+  "[DataSourceArn](#cfn-quicksight-dataset-s3source-datasourcearn)" : {{String}},
+  "[InputColumns](#cfn-quicksight-dataset-s3source-inputcolumns)" : {{[ InputColumn, ... ]}},
+  "[UploadSettings](#cfn-quicksight-dataset-s3source-uploadsettings)" : {{UploadSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-s3source-syntax.yaml"></a>
 
-```yaml
-
-  DataSourceArn: String
-  InputColumns:
-    - InputColumn
-  UploadSettings:
-    UploadSettings
-
+```
+  [DataSourceArn](#cfn-quicksight-dataset-s3source-datasourcearn): {{String}}
+  [InputColumns](#cfn-quicksight-dataset-s3source-inputcolumns): {{
+    - InputColumn}}
+  [UploadSettings](#cfn-quicksight-dataset-s3source-uploadsettings): {{
+    UploadSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-s3source-properties"></a>
 
-`DataSourceArn`
-
+`DataSourceArn`  <a name="cfn-quicksight-dataset-s3source-datasourcearn"></a>
 The Amazon Resource Name (ARN) for the data source.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputColumns`
-
+`InputColumns`  <a name="cfn-quicksight-dataset-s3source-inputcolumns"></a>
 A physical table type for an S3 data source.
-
-###### Note
-
 For files that aren't JSON, only `STRING` data types are supported in input columns.
+*Required*: Yes
+*Type*: Array of [InputColumn](aws-properties-quicksight-dataset-inputcolumn.md)
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [InputColumn](aws-properties-quicksight-dataset-inputcolumn.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UploadSettings`
-
+`UploadSettings`  <a name="cfn-quicksight-dataset-s3source-uploadsettings"></a>
 Information about the format for the S3 source file or files.
-
-_Required_: No
-
-_Type_: [UploadSettings](aws-properties-quicksight-dataset-uploadsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RowLevelPermissionTagRule
-
-SaaSTable
+*Required*: No
+*Type*: [UploadSettings](aws-properties-quicksight-dataset-uploadsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

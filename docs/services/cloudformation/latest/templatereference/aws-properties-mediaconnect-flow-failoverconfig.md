@@ -2,95 +2,68 @@
 title: "AWS::MediaConnect::Flow FailoverConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow FailoverConfig
+<a name="aws-properties-mediaconnect-flow-failoverconfig"></a>
 
-The settings for source failover.
+ The settings for source failover.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-failoverconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-failoverconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FailoverMode" : String,
-  "RecoveryWindow" : Integer,
-  "SourcePriority" : SourcePriority,
-  "State" : String
+  "[FailoverMode](#cfn-mediaconnect-flow-failoverconfig-failovermode)" : {{String}},
+  "[RecoveryWindow](#cfn-mediaconnect-flow-failoverconfig-recoverywindow)" : {{Integer}},
+  "[SourcePriority](#cfn-mediaconnect-flow-failoverconfig-sourcepriority)" : {{SourcePriority}},
+  "[State](#cfn-mediaconnect-flow-failoverconfig-state)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-failoverconfig-syntax.yaml"></a>
 
-```yaml
-
-  FailoverMode: String
-  RecoveryWindow: Integer
-  SourcePriority:
-    SourcePriority
-  State: String
-
+```
+  [FailoverMode](#cfn-mediaconnect-flow-failoverconfig-failovermode): {{String}}
+  [RecoveryWindow](#cfn-mediaconnect-flow-failoverconfig-recoverywindow): {{Integer}}
+  [SourcePriority](#cfn-mediaconnect-flow-failoverconfig-sourcepriority): {{
+    SourcePriority}}
+  [State](#cfn-mediaconnect-flow-failoverconfig-state): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-failoverconfig-properties"></a>
 
-`FailoverMode`
+`FailoverMode`  <a name="cfn-mediaconnect-flow-failoverconfig-failovermode"></a>
+The type of failover you choose for this flow. MERGE combines the source streams into a single stream, allowing graceful recovery from any single-source loss. FAILOVER allows switching between different streams. The string for this property must be entered as MERGE or FAILOVER. No other string entry is valid.
+*Required*: No
+*Type*: String
+*Allowed values*: `MERGE | FAILOVER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of failover you choose for this flow. MERGE combines the source streams
-into a single stream, allowing graceful recovery from any single-source loss.
-FAILOVER allows switching between different streams. The string for this property must be entered as MERGE or FAILOVER. No other string entry is valid.
+`RecoveryWindow`  <a name="cfn-mediaconnect-flow-failoverconfig-recoverywindow"></a>
+ Search window time to look for dash-7 packets.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SourcePriority`  <a name="cfn-mediaconnect-flow-failoverconfig-sourcepriority"></a>
+ The priority you want to assign to a source. You can have a primary stream and a backup stream or two equally prioritized streams.
+*Required*: No
+*Type*: [SourcePriority](aws-properties-mediaconnect-flow-sourcepriority.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `MERGE | FAILOVER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecoveryWindow`
-
-Search window time to look for dash-7 packets.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourcePriority`
-
-The priority you want to assign to a source. You can have a primary stream and a backup stream or two equally prioritized streams.
-
-_Required_: No
-
-_Type_: [SourcePriority](aws-properties-mediaconnect-flow-sourcepriority.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`State`
-
+`State`  <a name="cfn-mediaconnect-flow-failoverconfig-state"></a>
 The state of source failover on the flow. If the state is inactive, the flow can have only one source. If the state is active, the flow can have one or two sources.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Encryption
-
-FlowTransitEncryption
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,83 +2,61 @@
 title: "AWS::IoT::TopicRule StepFunctionsAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule StepFunctionsAction
+<a name="aws-properties-iot-topicrule-stepfunctionsaction"></a>
 
 Starts execution of a Step Functions state machine.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-stepfunctionsaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-stepfunctionsaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExecutionNamePrefix" : String,
-  "RoleArn" : String,
-  "StateMachineName" : String
+  "[ExecutionNamePrefix](#cfn-iot-topicrule-stepfunctionsaction-executionnameprefix)" : {{String}},
+  "[RoleArn](#cfn-iot-topicrule-stepfunctionsaction-rolearn)" : {{String}},
+  "[StateMachineName](#cfn-iot-topicrule-stepfunctionsaction-statemachinename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-stepfunctionsaction-syntax.yaml"></a>
 
-```yaml
-
-  ExecutionNamePrefix: String
-  RoleArn: String
-  StateMachineName: String
-
+```
+  [ExecutionNamePrefix](#cfn-iot-topicrule-stepfunctionsaction-executionnameprefix): {{String}}
+  [RoleArn](#cfn-iot-topicrule-stepfunctionsaction-rolearn): {{String}}
+  [StateMachineName](#cfn-iot-topicrule-stepfunctionsaction-statemachinename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-stepfunctionsaction-properties"></a>
 
-`ExecutionNamePrefix`
+`ExecutionNamePrefix`  <a name="cfn-iot-topicrule-stepfunctionsaction-executionnameprefix"></a>
+(Optional) A name will be given to the state machine execution consisting of this prefix followed by a UUID. Step Functions automatically creates a unique name for each state machine execution if one is not provided.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-(Optional) A name will be given to the state machine execution consisting of this
-prefix followed by a UUID. Step Functions automatically creates a unique name for each state
-machine execution if one is not provided.
+`RoleArn`  <a name="cfn-iot-topicrule-stepfunctionsaction-rolearn"></a>
+The ARN of the role that grants IoT permission to start execution of a state machine ("Action":"states:StartExecution").
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The ARN of the role that grants IoT permission to start execution of a state machine
-("Action":"states:StartExecution").
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StateMachineName`
-
+`StateMachineName`  <a name="cfn-iot-topicrule-stepfunctionsaction-statemachinename"></a>
 The name of the Step Functions state machine whose execution will be started.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [StepFunctionsAction](../../../../reference/iot/latest/apireference/api-stepfunctionsaction.md) in the _AWS IoT API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SqsAction
-
-Tag
+<a name="aws-properties-iot-topicrule-stepfunctionsaction--seealso"></a>
++ [StepFunctionsAction](https://docs.aws.amazon.com/iot/latest/apireference/API_StepFunctionsAction.html) in the *AWS IoT API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

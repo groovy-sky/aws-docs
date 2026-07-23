@@ -2,83 +2,60 @@
 title: "AWS::SageMaker::InferenceComponent InferenceComponentRuntimeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent InferenceComponentRuntimeConfig
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig"></a>
 
 Runtime settings for a model that is deployed with an inference component.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CopyCount" : Integer,
-  "CurrentCopyCount" : Integer,
-  "DesiredCopyCount" : Integer
+  "[CopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-copycount)" : {{Integer}},
+  "[CurrentCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-currentcopycount)" : {{Integer}},
+  "[DesiredCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-desiredcopycount)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-syntax.yaml"></a>
 
-```yaml
-
-  CopyCount: Integer
-  CurrentCopyCount: Integer
-  DesiredCopyCount: Integer
-
+```
+  [CopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-copycount): {{Integer}}
+  [CurrentCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-currentcopycount): {{Integer}}
+  [DesiredCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-desiredcopycount): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-properties"></a>
 
-`CopyCount`
+`CopyCount`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-copycount"></a>
+The number of runtime copies of the model container to deploy with the inference component. Each copy can serve inference requests.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The number of runtime copies of the model container to deploy with the inference
-component. Each copy can serve inference requests.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CurrentCopyCount`
-
+`CurrentCopyCount`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-currentcopycount"></a>
 The current number of copies of the model deployed for the inference component.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DesiredCopyCount`
-
+`DesiredCopyCount`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-desiredcopycount"></a>
 The desired number of copies of the model to deploy for the inference component.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceComponentRollingUpdatePolicy
-
-InferenceComponentSpecification
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

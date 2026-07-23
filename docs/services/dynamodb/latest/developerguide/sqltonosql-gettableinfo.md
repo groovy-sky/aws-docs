@@ -3,34 +3,26 @@ title: "Differences between getting table information from a relational (SQL) da
 ---
 
 # Differences between getting table information from a relational (SQL) database and DynamoDB
+<a name="SQLtoNoSQL.GetTableInfo"></a>
 
-You can verify that a table has been created according to your specifications. In a
-relational database, all of the table's schema is shown. Amazon DynamoDB tables are
-schemaless, so only the primary key attributes are shown.
+You can verify that a table has been created according to your specifications. In a relational database, all of the table's schema is shown. Amazon DynamoDB tables are schemaless, so only the primary key attributes are shown.
 
-###### Topics
-
-- [Getting information about a table with SQL](#SQLtoNoSQL.GetTableInfo.SQL)
-
-- [Getting information about a table in DynamoDB](#SQLtoNoSQL.GetTableInfo.DynamoDB)
+**Topics**
++ [Getting information about a table with SQL](#SQLtoNoSQL.GetTableInfo.SQL)
++ [Getting information about a table in DynamoDB](#SQLtoNoSQL.GetTableInfo.DynamoDB)
 
 ## Getting information about a table with SQL
+<a name="SQLtoNoSQL.GetTableInfo.SQL"></a>
 
-Most relational database management systems (RDBMS) allow you to describe a
-table's structure—columns, data types, primary key definition, and so on.
-There is no standard way to do this in SQL. However, many database systems provide a
-`DESCRIBE` command. The following is an example from MySQL.
+Most relational database management systems (RDBMS) allow you to describe a table's structure—columns, data types, primary key definition, and so on. There is no standard way to do this in SQL. However, many database systems provide a `DESCRIBE` command. The following is an example from MySQL.
 
-```sql
-
+```
 DESCRIBE Music;
 ```
 
-This returns the structure of your table, with all of the column names, data
-types, and sizes.
+This returns the structure of your table, with all of the column names, data types, and sizes.
 
-```nohighlight
-
+```
 +------------+-------------+------+-----+---------+-------+
 | Field      | Type        | Null | Key | Default | Extra |
 +------------+-------------+------+-----+---------+-------+
@@ -42,19 +34,16 @@ types, and sizes.
 | Genre      | varchar(10) | YES  |     | NULL    |       |
 | Tags       | text        | YES  |     | NULL    |       |
 +------------+-------------+------+-----+---------+-------+
-
 ```
 
-The primary key for this table consists of _Artist_ and
-_SongTitle_.
+The primary key for this table consists of *Artist* and *SongTitle*.
 
 ## Getting information about a table in DynamoDB
+<a name="SQLtoNoSQL.GetTableInfo.DynamoDB"></a>
 
-DynamoDB has a `DescribeTable` operation, which is similar. The only
-parameter is the table name.
+DynamoDB has a `DescribeTable` operation, which is similar. The only parameter is the table name.
 
-```nohighlight
-
+```
 {
     TableName : "Music"
 }
@@ -62,8 +51,7 @@ parameter is the table name.
 
 The reply from `DescribeTable` looks like the following.
 
-```nohighlight
-
+```
 {
   "Table": {
     "AttributeDefinitions": [
@@ -91,14 +79,6 @@ The reply from `DescribeTable` looks like the following.
     ...
 ```
 
-`DescribeTable` also returns information about indexes on the table,
-provisioned throughput settings, an approximate item count, and other
-metadata.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating a table
-
-Writing data to a table
+`DescribeTable` also returns information about indexes on the table, provisioned throughput settings, an approximate item count, and other metadata.
 
 All content copied from https://docs.aws.amazon.com/.

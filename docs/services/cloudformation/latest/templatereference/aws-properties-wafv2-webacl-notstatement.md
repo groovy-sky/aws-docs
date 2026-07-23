@@ -2,53 +2,42 @@
 title: "AWS::WAFv2::WebACL NotStatement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL NotStatement
+<a name="aws-properties-wafv2-webacl-notstatement"></a>
 
-A logical rule statement used to negate the results of another rule statement. You provide one [Statement](../userguide/aws-properties-wafv2-webacl-notstatement.md#cfn-wafv2-webacl-notstatement-statement) within the `NotStatement`.
+A logical rule statement used to negate the results of another rule statement. You provide one [Statement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-notstatement.html#cfn-wafv2-webacl-notstatement-statement) within the `NotStatement`.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-notstatement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-notstatement-syntax.json"></a>
 
-```json
-
+```
 {
-  "Statement" : Statement
+  "[Statement](#cfn-wafv2-webacl-notstatement-statement)" : {{Statement}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-notstatement-syntax.yaml"></a>
 
-```yaml
-
-  Statement:
-    Statement
-
+```
+  [Statement](#cfn-wafv2-webacl-notstatement-statement): {{
+    Statement}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-notstatement-properties"></a>
 
-`Statement`
-
+`Statement`  <a name="cfn-wafv2-webacl-notstatement-statement"></a>
 The statement to negate. You can use any statement that can be nested.
-
-_Required_: Yes
-
-_Type_: [Statement](aws-properties-wafv2-webacl-statement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManagedRuleGroupStatement
-
-OnSourceDDoSProtectionConfig
+*Required*: Yes
+*Type*: [Statement](aws-properties-wafv2-webacl-statement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

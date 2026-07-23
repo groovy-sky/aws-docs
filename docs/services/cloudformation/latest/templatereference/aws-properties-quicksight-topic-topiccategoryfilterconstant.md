@@ -2,83 +2,61 @@
 title: "AWS::QuickSight::Topic TopicCategoryFilterConstant"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicCategoryFilterConstant
+<a name="aws-properties-quicksight-topic-topiccategoryfilterconstant"></a>
 
 A constant used in a category filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-topiccategoryfilterconstant-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-topiccategoryfilterconstant-syntax.json"></a>
 
-```json
-
+```
 {
-  "CollectiveConstant" : CollectiveConstant,
-  "ConstantType" : String,
-  "SingularConstant" : String
+  "[CollectiveConstant](#cfn-quicksight-topic-topiccategoryfilterconstant-collectiveconstant)" : {{CollectiveConstant}},
+  "[ConstantType](#cfn-quicksight-topic-topiccategoryfilterconstant-constanttype)" : {{String}},
+  "[SingularConstant](#cfn-quicksight-topic-topiccategoryfilterconstant-singularconstant)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-topiccategoryfilterconstant-syntax.yaml"></a>
 
-```yaml
-
-  CollectiveConstant:
-    CollectiveConstant
-  ConstantType: String
-  SingularConstant: String
-
+```
+  [CollectiveConstant](#cfn-quicksight-topic-topiccategoryfilterconstant-collectiveconstant): {{
+    CollectiveConstant}}
+  [ConstantType](#cfn-quicksight-topic-topiccategoryfilterconstant-constanttype): {{String}}
+  [SingularConstant](#cfn-quicksight-topic-topiccategoryfilterconstant-singularconstant): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-topiccategoryfilterconstant-properties"></a>
 
-`CollectiveConstant`
-
+`CollectiveConstant`  <a name="cfn-quicksight-topic-topiccategoryfilterconstant-collectiveconstant"></a>
 A collective constant used in a category filter. This element is used to specify a list of values for the constant.
+*Required*: No
+*Type*: [CollectiveConstant](aws-properties-quicksight-topic-collectiveconstant.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CollectiveConstant](aws-properties-quicksight-topic-collectiveconstant.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConstantType`
-
+`ConstantType`  <a name="cfn-quicksight-topic-topiccategoryfilterconstant-constanttype"></a>
 The type of category filter constant. This element is used to specify whether a constant is a singular or collective. Valid values are `SINGULAR` and `COLLECTIVE`.
+*Required*: No
+*Type*: String
+*Allowed values*: `SINGULAR | RANGE | COLLECTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SINGULAR | RANGE | COLLECTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingularConstant`
-
+`SingularConstant`  <a name="cfn-quicksight-topic-topiccategoryfilterconstant-singularconstant"></a>
 A singular constant used in a category filter. This element is used to specify a single value for the constant.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TopicCategoryFilter
-
-TopicColumn
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

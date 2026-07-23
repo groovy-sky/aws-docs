@@ -2,151 +2,87 @@
 title: "AWS::IoTSiteWise::AssetModel AssetModelHierarchy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel AssetModelHierarchy
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy"></a>
 
-Describes an asset hierarchy that contains a hierarchy's name, ID, and child asset model
-ID that specifies the type of asset that can be in this hierarchy.
+Describes an asset hierarchy that contains a hierarchy's name, ID, and child asset model ID that specifies the type of asset that can be in this hierarchy.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChildAssetModelId" : String,
-  "ExternalId" : String,
-  "Id" : String,
-  "LogicalId" : String,
-  "Name" : String
+  "[ChildAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-childassetmodelid)" : {{String}},
+  "[ExternalId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-externalid)" : {{String}},
+  "[Id](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-id)" : {{String}},
+  "[LogicalId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-logicalid)" : {{String}},
+  "[Name](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy-syntax.yaml"></a>
 
-```yaml
-
-  ChildAssetModelId: String
-  ExternalId: String
-  Id: String
-  LogicalId: String
-  Name: String
-
+```
+  [ChildAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-childassetmodelid): {{String}}
+  [ExternalId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-externalid): {{String}}
+  [Id](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-id): {{String}}
+  [LogicalId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-logicalid): {{String}}
+  [Name](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy-properties"></a>
 
-`ChildAssetModelId`
+`ChildAssetModelId`  <a name="cfn-iotsitewise-assetmodel-assetmodelhierarchy-childassetmodelid"></a>
+The ID of the asset model, in UUID format. All assets in this hierarchy must be instances of the `childAssetModelId` asset model. AWS IoT SiteWise will always return the actual asset model ID for this value. However, when you are specifying this value as part of a call to [UpdateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetModel.html), you may provide either the asset model ID or else `externalId:` followed by the asset model's external ID. For more information, see [Using external IDs](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/object-ids.html#external-ids) in the *AWS IoT SiteWise User Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ID of the asset model, in UUID format. All assets in this hierarchy must be instances of the
-`childAssetModelId` asset model. AWS IoT SiteWise will always return the actual
-asset model ID for this value. However, when you are specifying this value as part of a call to
-[UpdateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-updateassetmodel.md), you may provide either the asset model ID or else `externalId:`
-followed by the asset model's external ID. For more information, see [Using external IDs](../../../iot-sitewise/latest/userguide/object-ids.md#external-ids) in the _AWS IoT SiteWise User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExternalId`
-
-The external ID (if any) provided in the [CreateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-createassetmodel.md) or [UpdateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-updateassetmodel.md) operation. You can assign an external ID by specifying
-this value as part of a call to [UpdateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-updateassetmodel.md). However, you can't change the external ID if one is
-already assigned. For more information, see [Using external\
-IDs](../../../iot-sitewise/latest/userguide/object-ids.md#external-ids) in the _AWS IoT SiteWise User Guide_.
-
-###### Note
-
+`ExternalId`  <a name="cfn-iotsitewise-assetmodel-assetmodelhierarchy-externalid"></a>
+The external ID (if any) provided in the [CreateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html) or [UpdateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetModel.html) operation. You can assign an external ID by specifying this value as part of a call to [UpdateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetModel.html). However, you can't change the external ID if one is already assigned. For more information, see [Using external IDs](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/object-ids.html#external-ids) in the *AWS IoT SiteWise User Guide*.
 One of `ExternalId` or `LogicalId` must be specified.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_][a-zA-Z_\-0-9.:]*[a-zA-Z0-9_]+`
+*Minimum*: `2`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_][a-zA-Z_\-0-9.:]*[a-zA-Z0-9_]+`
-
-_Minimum_: `2`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-iotsitewise-assetmodel-assetmodelhierarchy-id"></a>
 The ID of the asset model hierarchy. This ID is a `hierarchyId`.
-
-###### Note
-
 This is a return value and can't be set.
++ If you are callling [UpdateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetModel.html) to create a *new* hierarchy: You can specify its ID here, if desired. AWS IoT SiteWise automatically generates a unique ID for you, so this parameter is never required. However, if you prefer to supply your own ID instead, you can specify it here in UUID format. If you specify your own ID, it must be globally unique.
++ If you are calling UpdateAssetModel to modify an *existing* hierarchy: This can be either the actual ID in UUID format, or else `externalId:` followed by the external ID, if it has one. For more information, see [Referencing objects with external IDs](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/object-ids.html#external-id-references) in the *AWS IoT SiteWise User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+*Minimum*: `36`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- If you are callling [UpdateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-updateassetmodel.md) to create a _new_ hierarchy:
-You can specify its ID here, if desired. AWS IoT SiteWise automatically
-generates a unique ID for you, so this parameter is never required. However, if
-you prefer to supply your own ID instead, you can specify it here in UUID
-format. If you specify your own ID, it must be globally unique.
-
-- If you are calling UpdateAssetModel to modify an _existing_
-hierarchy: This can be either the actual ID in UUID format, or else
-`externalId:` followed by the external ID, if it has one. For
-more information, see [Referencing objects with external IDs](../../../iot-sitewise/latest/userguide/object-ids.md#external-id-references) in the _AWS IoT SiteWise User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
-
-_Minimum_: `36`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogicalId`
-
-The `LogicalID` of the asset model hierarchy. This ID is a
-`hierarchyLogicalId`.
-
-###### Note
-
+`LogicalId`  <a name="cfn-iotsitewise-assetmodel-assetmodelhierarchy-logicalid"></a>
+The `LogicalID` of the asset model hierarchy. This ID is a `hierarchyLogicalId`.
 One of `ExternalId` or `LogicalId` must be specified.
+*Required*: No
+*Type*: String
+*Pattern*: `[^\u0000-\u001F\u007F]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[^\u0000-\u001F\u007F]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the asset model hierarchy that you specify by using the [CreateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-createassetmodel.md) or
-[UpdateAssetModel](../../../../reference/iot-sitewise/latest/apireference/api-updateassetmodel.md) API operation.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssetModelCompositeModel
-
-AssetModelProperty
+`Name`  <a name="cfn-iotsitewise-assetmodel-assetmodelhierarchy-name"></a>
+The name of the asset model hierarchy that you specify by using the [CreateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html) or [UpdateAssetModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetModel.html) API operation.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

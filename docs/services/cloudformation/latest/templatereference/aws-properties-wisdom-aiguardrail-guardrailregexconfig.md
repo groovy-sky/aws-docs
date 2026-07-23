@@ -2,100 +2,71 @@
 title: "AWS::Wisdom::AIGuardrail GuardrailRegexConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail GuardrailRegexConfig
+<a name="aws-properties-wisdom-aiguardrail-guardrailregexconfig"></a>
 
 A regex configuration.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-guardrailregexconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-guardrailregexconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "Description" : String,
-  "Name" : String,
-  "Pattern" : String
+  "[Action](#cfn-wisdom-aiguardrail-guardrailregexconfig-action)" : {{String}},
+  "[Description](#cfn-wisdom-aiguardrail-guardrailregexconfig-description)" : {{String}},
+  "[Name](#cfn-wisdom-aiguardrail-guardrailregexconfig-name)" : {{String}},
+  "[Pattern](#cfn-wisdom-aiguardrail-guardrailregexconfig-pattern)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-guardrailregexconfig-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  Description: String
-  Name: String
-  Pattern: String
-
+```
+  [Action](#cfn-wisdom-aiguardrail-guardrailregexconfig-action): {{String}}
+  [Description](#cfn-wisdom-aiguardrail-guardrailregexconfig-description): {{String}}
+  [Name](#cfn-wisdom-aiguardrail-guardrailregexconfig-name): {{String}}
+  [Pattern](#cfn-wisdom-aiguardrail-guardrailregexconfig-pattern): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-guardrailregexconfig-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-wisdom-aiguardrail-guardrailregexconfig-action"></a>
 The action of the guardrail regex configuration.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `BLOCK | ANONYMIZE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `BLOCK | ANONYMIZE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-wisdom-aiguardrail-guardrailregexconfig-description"></a>
 The regex description.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-wisdom-aiguardrail-guardrailregexconfig-name"></a>
 A regex configuration.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pattern`
-
+`Pattern`  <a name="cfn-wisdom-aiguardrail-guardrailregexconfig-pattern"></a>
 The regex pattern.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GuardrailPiiEntityConfig
-
-GuardrailTopicConfig
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,81 +3,66 @@ title: "Step 4: Load data into HDFS"
 ---
 
 # Step 4: Load data into HDFS
+<a name="EMRforDynamoDB.Tutorial.LoadDataIntoHDFS"></a>
 
-In this step, you will copy a data file into Hadoop Distributed File System
-(HDFS), and then create an external Hive table that maps to the data file.
+In this step, you will copy a data file into Hadoop Distributed File System (HDFS), and then create an external Hive table that maps to the data file.
 
-###### Download the sample data
+**Download the sample data**
 
-1. Download the sample data archive ( `features.zip`):
+1. Download the sample data archive (`features.zip`):
 
-```nohighlight
+   ```
+   wget https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/samples/features.zip
+   ```
 
-wget https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/samples/features.zip
-```
+1. Extract the `features.txt` file from the archive:
 
-2. Extract the `features.txt` file from the archive:
+   ```
+   unzip features.zip
+   ```
 
-```nohighlight
+1. View the first few lines of the `features.txt` file:
 
-unzip features.zip
-```
+   ```
+   head features.txt
+   ```
 
-3. View the first few lines of the `features.txt` file:
+   The result should look similar to this:
 
-```nohighlight
+   ```
+   1535908|Big Run|Stream|WV|38.6370428|-80.8595469|794
+   875609|Constable Hook|Cape|NJ|40.657881|-74.0990309|7
+   1217998|Gooseberry Island|Island|RI|41.4534361|-71.3253284|10
+   26603|Boone Moore Spring|Spring|AZ|34.0895692|-111.410065|3681
+   1506738|Missouri Flat|Flat|WA|46.7634987|-117.0346113|2605
+   1181348|Minnow Run|Stream|PA|40.0820178|-79.3800349|1558
+   1288759|Hunting Creek|Stream|TN|36.343969|-83.8029682|1024
+   533060|Big Charles Bayou|Bay|LA|29.6046517|-91.9828654|0
+   829689|Greenwood Creek|Stream|NE|41.596086|-103.0499296|3671
+   541692|Button Willow Island|Island|LA|31.9579389|-93.0648847|98
+   ```
 
-head features.txt
-```
+   The `features.txt` file contains a subset of data from the United States Board on Geographic Names ([http://geonames.usgs.gov/domestic/download\_data.htm](http://geonames.usgs.gov/domestic/download_data.htm)). The fields in each line represent the following:
+   + Feature ID (unique identifier)
+   + Name
+   + Class (lake; forest; stream; and so on)
+   + State
+   + Latitude (degrees)
+   + Longitude (degrees)
+   + Height (in feet)
 
-The result should look similar to this:
+1. At the command prompt, enter the following command:
 
-```nohighlight
+   ```
+   hive
+   ```
 
-1535908|Big Run|Stream|WV|38.6370428|-80.8595469|794
-875609|Constable Hook|Cape|NJ|40.657881|-74.0990309|7
-1217998|Gooseberry Island|Island|RI|41.4534361|-71.3253284|10
-26603|Boone Moore Spring|Spring|AZ|34.0895692|-111.410065|3681
-1506738|Missouri Flat|Flat|WA|46.7634987|-117.0346113|2605
-1181348|Minnow Run|Stream|PA|40.0820178|-79.3800349|1558
-1288759|Hunting Creek|Stream|TN|36.343969|-83.8029682|1024
-533060|Big Charles Bayou|Bay|LA|29.6046517|-91.9828654|0
-829689|Greenwood Creek|Stream|NE|41.596086|-103.0499296|3671
-541692|Button Willow Island|Island|LA|31.9579389|-93.0648847|98
-```
+   The command prompt changes to this: `hive>`
 
-The `features.txt` file contains a subset of data from the
-    United States Board on Geographic Names ( [http://geonames.usgs.gov/domestic/download\_data.htm](http://geonames.usgs.gov/domestic/download_data.htm)). The
-    fields in each line represent the following:
+1. Enter the following HiveQL statement to create a native Hive table:
 
-- Feature ID (unique identifier)
-
-- Name
-
-- Class (lake; forest; stream; and so on)
-
-- State
-
-- Latitude (degrees)
-
-- Longitude (degrees)
-
-- Height (in feet)
-
-4. At the command prompt, enter the following command:
-
-```nohighlight
-
-hive
-```
-
-The command prompt changes to this: `hive>`
-
-5. Enter the following HiveQL statement to create a native Hive table:
-
-```nohighlight
-
-CREATE TABLE hive_features
+   ```
+   CREATE TABLE hive_features
        (feature_id             BIGINT,
        feature_name            STRING ,
        feature_class           STRING ,
@@ -88,41 +73,29 @@ CREATE TABLE hive_features
        ROW FORMAT DELIMITED
        FIELDS TERMINATED BY '|'
        LINES TERMINATED BY '\n';
-```
+   ```
 
-6. Enter the following HiveQL statement to load the table with data:
+1. Enter the following HiveQL statement to load the table with data:
 
-```nohighlight
+   ```
+   LOAD DATA
+   LOCAL
+   INPATH './features.txt'
+   OVERWRITE
+   INTO TABLE hive_features;
+   ```
 
-LOAD DATA
-LOCAL
-INPATH './features.txt'
-OVERWRITE
-INTO TABLE hive_features;
-```
+1. You now have a native Hive table populated with data from the `features.txt` file. To verify, enter the following HiveQL statement:
 
-7. You now have a native Hive table populated with data from the
-    `features.txt` file. To verify, enter the following HiveQL
-    statement:
+   ```
+   SELECT state_alpha, COUNT(*)
+   FROM hive_features
+   GROUP BY state_alpha;
+   ```
 
-```nohighlight
+   The output should show a list of states and the number of geographic features in each.
 
-SELECT state_alpha, COUNT(*)
-FROM hive_features
-GROUP BY state_alpha;
-```
-
-The output should show a list of states and the number of geographic
-    features in each.
-
-###### Next step
-
-[Step 5: Copy data to DynamoDB](emrfordynamodb-tutorial-copydatatoddb.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 3: Connect to the Leader node
-
-Step 5: Copy data to DynamoDB
+**Next step**
+[Step 5: Copy data to DynamoDB](EMRforDynamoDB.Tutorial.CopyDataToDDB.md)
 
 All content copied from https://docs.aws.amazon.com/.

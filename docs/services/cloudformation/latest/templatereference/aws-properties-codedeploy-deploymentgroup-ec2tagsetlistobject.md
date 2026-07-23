@@ -2,68 +2,50 @@
 title: "AWS::CodeDeploy::DeploymentGroup EC2TagSetListObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup EC2TagSetListObject
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject"></a>
 
-The `EC2TagSet` property type specifies information about groups of tags
-applied to Amazon EC2 instances. The deployment group includes only Amazon EC2 instances identified by all the tag groups. Cannot be used in the same template
-as EC2TagFilters.
+The `EC2TagSet` property type specifies information about groups of tags applied to Amazon EC2 instances. The deployment group includes only Amazon EC2 instances identified by all the tag groups. Cannot be used in the same template as EC2TagFilters.
 
-For more information about using tags and tag groups to help manage your Amazon EC2 instances and on-premises instances, see [Tagging Instances for Deployment\
-Groups in AWS CodeDeploy](../../../codedeploy/latest/userguide/instances-tagging.md) in the _AWS CodeDeploy User_
-_Guide_.
+For more information about using tags and tag groups to help manage your Amazon EC2 instances and on-premises instances, see [Tagging Instances for Deployment Groups in AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-tagging.html) in the *AWS CodeDeploy User Guide*.
 
-`EC2TagSet` is a property of the [DeploymentGroup](../userguide/aws-resource-codedeploy-deploymentgroup.md) resource type.
+`EC2TagSet` is a property of the [DeploymentGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html) resource type.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ec2TagGroup" : [ EC2TagFilter, ... ]
+  "[Ec2TagGroup](#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup)" : {{[ EC2TagFilter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject-syntax.yaml"></a>
 
-```yaml
-
-  Ec2TagGroup:
-    - EC2TagFilter
-
+```
+  [Ec2TagGroup](#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup): {{
+    - EC2TagFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject-properties"></a>
 
-`Ec2TagGroup`
-
-A list that contains other lists of Amazon EC2 instance tag groups. For an
-instance to be included in the deployment group, it must be identified by all of the tag
-groups in the list.
-
-_Required_: No
-
-_Type_: Array of [EC2TagFilter](aws-properties-codedeploy-deploymentgroup-ec2tagfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Ec2TagGroup`  <a name="cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup"></a>
+A list that contains other lists of Amazon EC2 instance tag groups. For an instance to be included in the deployment group, it must be identified by all of the tag groups in the list.
+*Required*: No
+*Type*: Array of [EC2TagFilter](aws-properties-codedeploy-deploymentgroup-ec2tagfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [EC2TagSet](../../../../reference/codedeploy/latest/apireference/api-ec2tagset.md) in the _AWS CodeDeploy API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EC2TagSet
-
-ECSService
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject--seealso"></a>
++ [EC2TagSet](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_EC2TagSet.html) in the *AWS CodeDeploy API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

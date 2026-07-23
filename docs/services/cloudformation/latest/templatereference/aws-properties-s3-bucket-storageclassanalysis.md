@@ -2,59 +2,46 @@
 title: "AWS::S3::Bucket StorageClassAnalysis"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket StorageClassAnalysis
+<a name="aws-properties-s3-bucket-storageclassanalysis"></a>
 
-Specifies data related to access patterns to be collected and made available to analyze the
-tradeoffs between different storage classes for an Amazon S3 bucket.
+Specifies data related to access patterns to be collected and made available to analyze the tradeoffs between different storage classes for an Amazon S3 bucket.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-storageclassanalysis-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-storageclassanalysis-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataExport" : DataExport
+  "[DataExport](#cfn-s3-bucket-storageclassanalysis-dataexport)" : {{DataExport}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-storageclassanalysis-syntax.yaml"></a>
 
-```yaml
-
-  DataExport:
-    DataExport
-
+```
+  [DataExport](#cfn-s3-bucket-storageclassanalysis-dataexport): {{
+    DataExport}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-storageclassanalysis-properties"></a>
 
-`DataExport`
-
-Specifies how data related to the storage class analysis for an Amazon S3 bucket should be
-exported.
-
-_Required_: No
-
-_Type_: [DataExport](aws-properties-s3-bucket-dataexport.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`DataExport`  <a name="cfn-s3-bucket-storageclassanalysis-dataexport"></a>
+Specifies how data related to the storage class analysis for an Amazon S3 bucket should be exported.
+*Required*: No
+*Type*: [DataExport](aws-properties-s3-bucket-dataexport.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- AWS::S3::Bucket [Examples](../userguide/aws-properties-s3-bucket.md#aws-properties-s3-bucket--examples)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SseKmsEncryptedObjects
-
-Tag
+<a name="aws-properties-s3-bucket-storageclassanalysis--seealso"></a>
++ AWS::S3::Bucket [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket--examples)
 
 All content copied from https://docs.aws.amazon.com/.

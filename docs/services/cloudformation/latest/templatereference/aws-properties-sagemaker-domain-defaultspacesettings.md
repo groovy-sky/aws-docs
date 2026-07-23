@@ -2,162 +2,113 @@
 title: "AWS::SageMaker::Domain DefaultSpaceSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain DefaultSpaceSettings
+<a name="aws-properties-sagemaker-domain-defaultspacesettings"></a>
 
 The default settings for shared spaces that users create in the domain.
 
-SageMaker applies these settings only to shared spaces. It doesn't apply them to private
-spaces.
+SageMaker applies these settings only to shared spaces. It doesn't apply them to private spaces.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-defaultspacesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-defaultspacesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomFileSystemConfigs" : [ CustomFileSystemConfig, ... ],
-  "CustomPosixUserConfig" : CustomPosixUserConfig,
-  "ExecutionRole" : String,
-  "JupyterLabAppSettings" : JupyterLabAppSettings,
-  "JupyterServerAppSettings" : JupyterServerAppSettings,
-  "KernelGatewayAppSettings" : KernelGatewayAppSettings,
-  "SecurityGroups" : [ String, ... ],
-  "SpaceStorageSettings" : DefaultSpaceStorageSettings
+  "[CustomFileSystemConfigs](#cfn-sagemaker-domain-defaultspacesettings-customfilesystemconfigs)" : {{[ CustomFileSystemConfig, ... ]}},
+  "[CustomPosixUserConfig](#cfn-sagemaker-domain-defaultspacesettings-customposixuserconfig)" : {{CustomPosixUserConfig}},
+  "[ExecutionRole](#cfn-sagemaker-domain-defaultspacesettings-executionrole)" : {{String}},
+  "[JupyterLabAppSettings](#cfn-sagemaker-domain-defaultspacesettings-jupyterlabappsettings)" : {{JupyterLabAppSettings}},
+  "[JupyterServerAppSettings](#cfn-sagemaker-domain-defaultspacesettings-jupyterserverappsettings)" : {{JupyterServerAppSettings}},
+  "[KernelGatewayAppSettings](#cfn-sagemaker-domain-defaultspacesettings-kernelgatewayappsettings)" : {{KernelGatewayAppSettings}},
+  "[SecurityGroups](#cfn-sagemaker-domain-defaultspacesettings-securitygroups)" : {{[ String, ... ]}},
+  "[SpaceStorageSettings](#cfn-sagemaker-domain-defaultspacesettings-spacestoragesettings)" : {{DefaultSpaceStorageSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-defaultspacesettings-syntax.yaml"></a>
 
-```yaml
-
-  CustomFileSystemConfigs:
-    - CustomFileSystemConfig
-  CustomPosixUserConfig:
-    CustomPosixUserConfig
-  ExecutionRole: String
-  JupyterLabAppSettings:
-    JupyterLabAppSettings
-  JupyterServerAppSettings:
-    JupyterServerAppSettings
-  KernelGatewayAppSettings:
-    KernelGatewayAppSettings
-  SecurityGroups:
-    - String
-  SpaceStorageSettings:
-    DefaultSpaceStorageSettings
-
+```
+  [CustomFileSystemConfigs](#cfn-sagemaker-domain-defaultspacesettings-customfilesystemconfigs): {{
+    - CustomFileSystemConfig}}
+  [CustomPosixUserConfig](#cfn-sagemaker-domain-defaultspacesettings-customposixuserconfig): {{
+    CustomPosixUserConfig}}
+  [ExecutionRole](#cfn-sagemaker-domain-defaultspacesettings-executionrole): {{String}}
+  [JupyterLabAppSettings](#cfn-sagemaker-domain-defaultspacesettings-jupyterlabappsettings): {{
+    JupyterLabAppSettings}}
+  [JupyterServerAppSettings](#cfn-sagemaker-domain-defaultspacesettings-jupyterserverappsettings): {{
+    JupyterServerAppSettings}}
+  [KernelGatewayAppSettings](#cfn-sagemaker-domain-defaultspacesettings-kernelgatewayappsettings): {{
+    KernelGatewayAppSettings}}
+  [SecurityGroups](#cfn-sagemaker-domain-defaultspacesettings-securitygroups): {{
+    - String}}
+  [SpaceStorageSettings](#cfn-sagemaker-domain-defaultspacesettings-spacestoragesettings): {{
+    DefaultSpaceStorageSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-defaultspacesettings-properties"></a>
 
-`CustomFileSystemConfigs`
+`CustomFileSystemConfigs`  <a name="cfn-sagemaker-domain-defaultspacesettings-customfilesystemconfigs"></a>
+The settings for assigning a custom file system to a domain. Permitted users can access this file system in Amazon SageMaker AI Studio.
+*Required*: No
+*Type*: Array of [CustomFileSystemConfig](aws-properties-sagemaker-domain-customfilesystemconfig.md)
+*Minimum*: `0`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The settings for assigning a custom file system to a domain. Permitted users can access
-this file system in Amazon SageMaker AI Studio.
-
-_Required_: No
-
-_Type_: Array of [CustomFileSystemConfig](aws-properties-sagemaker-domain-customfilesystemconfig.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomPosixUserConfig`
-
+`CustomPosixUserConfig`  <a name="cfn-sagemaker-domain-defaultspacesettings-customposixuserconfig"></a>
 Property description not available.
+*Required*: No
+*Type*: [CustomPosixUserConfig](aws-properties-sagemaker-domain-customposixuserconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomPosixUserConfig](aws-properties-sagemaker-domain-customposixuserconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExecutionRole`
-
+`ExecutionRole`  <a name="cfn-sagemaker-domain-defaultspacesettings-executionrole"></a>
 The ARN of the execution role for the space.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JupyterLabAppSettings`
-
+`JupyterLabAppSettings`  <a name="cfn-sagemaker-domain-defaultspacesettings-jupyterlabappsettings"></a>
 Property description not available.
+*Required*: No
+*Type*: [JupyterLabAppSettings](aws-properties-sagemaker-domain-jupyterlabappsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JupyterLabAppSettings](aws-properties-sagemaker-domain-jupyterlabappsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JupyterServerAppSettings`
-
+`JupyterServerAppSettings`  <a name="cfn-sagemaker-domain-defaultspacesettings-jupyterserverappsettings"></a>
 The JupyterServer app settings.
+*Required*: No
+*Type*: [JupyterServerAppSettings](aws-properties-sagemaker-domain-jupyterserverappsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JupyterServerAppSettings](aws-properties-sagemaker-domain-jupyterserverappsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KernelGatewayAppSettings`
-
+`KernelGatewayAppSettings`  <a name="cfn-sagemaker-domain-defaultspacesettings-kernelgatewayappsettings"></a>
 The KernelGateway app settings.
+*Required*: No
+*Type*: [KernelGatewayAppSettings](aws-properties-sagemaker-domain-kernelgatewayappsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecurityGroups`  <a name="cfn-sagemaker-domain-defaultspacesettings-securitygroups"></a>
+The security group IDs for the Amazon VPC that the space uses for communication.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `32 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [KernelGatewayAppSettings](aws-properties-sagemaker-domain-kernelgatewayappsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityGroups`
-
-The security group IDs for the Amazon VPC that the space uses for
-communication.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `32 | 5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpaceStorageSettings`
-
+`SpaceStorageSettings`  <a name="cfn-sagemaker-domain-defaultspacesettings-spacestoragesettings"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [DefaultSpaceStorageSettings](aws-properties-sagemaker-domain-defaultspacestoragesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultEbsStorageSettings
-
-DefaultSpaceStorageSettings
+*Required*: No
+*Type*: [DefaultSpaceStorageSettings](aws-properties-sagemaker-domain-defaultspacestoragesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

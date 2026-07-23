@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis ConditionalFormattingIconDisplayConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ConditionalFormattingIconDisplayConfiguration
+<a name="aws-properties-quicksight-analysis-conditionalformattingicondisplayconfiguration"></a>
 
 Determines the icon display configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-conditionalformattingicondisplayconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-conditionalformattingicondisplayconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IconDisplayOption" : String
+  "[IconDisplayOption](#cfn-quicksight-analysis-conditionalformattingicondisplayconfiguration-icondisplayoption)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-conditionalformattingicondisplayconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IconDisplayOption: String
-
+```
+  [IconDisplayOption](#cfn-quicksight-analysis-conditionalformattingicondisplayconfiguration-icondisplayoption): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-conditionalformattingicondisplayconfiguration-properties"></a>
 
-`IconDisplayOption`
-
+`IconDisplayOption`  <a name="cfn-quicksight-analysis-conditionalformattingicondisplayconfiguration-icondisplayoption"></a>
 Determines the icon display configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ICON_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionalFormattingIcon
-
-ConditionalFormattingIconSet
+*Required*: No
+*Type*: String
+*Allowed values*: `ICON_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

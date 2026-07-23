@@ -2,54 +2,42 @@
 title: "AWS::S3Tables::TableBucket StorageClassConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::TableBucket StorageClassConfiguration
+<a name="aws-properties-s3tables-tablebucket-storageclassconfiguration"></a>
 
 The configuration details for the storage class of tables or table buckets. This allows you to optimize storage costs by selecting the appropriate storage class based on your access patterns and performance requirements.
 
 ## Syntax
+<a name="aws-properties-s3tables-tablebucket-storageclassconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-tablebucket-storageclassconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "StorageClass" : String
+  "[StorageClass](#cfn-s3tables-tablebucket-storageclassconfiguration-storageclass)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-tablebucket-storageclassconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  StorageClass: String
-
+```
+  [StorageClass](#cfn-s3tables-tablebucket-storageclassconfiguration-storageclass): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-tablebucket-storageclassconfiguration-properties"></a>
 
-`StorageClass`
-
+`StorageClass`  <a name="cfn-s3tables-tablebucket-storageclassconfiguration-storageclass"></a>
 The storage class for the table or table bucket. Valid values include storage classes optimized for different access patterns and cost profiles.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STANDARD | INTELLIGENT_TIERING`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationRule
-
-Tag
+*Required*: No
+*Type*: String
+*Allowed values*: `STANDARD | INTELLIGENT_TIERING`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

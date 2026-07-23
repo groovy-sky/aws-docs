@@ -2,101 +2,70 @@
 title: "AWS::Lex::Bot DTMFSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot DTMFSpecification
+<a name="aws-properties-lex-bot-dtmfspecification"></a>
 
 Specifies the DTMF input specifications.
 
 ## Syntax
+<a name="aws-properties-lex-bot-dtmfspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-dtmfspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeletionCharacter" : String,
-  "EndCharacter" : String,
-  "EndTimeoutMs" : Integer,
-  "MaxLength" : Integer
+  "[DeletionCharacter](#cfn-lex-bot-dtmfspecification-deletioncharacter)" : {{String}},
+  "[EndCharacter](#cfn-lex-bot-dtmfspecification-endcharacter)" : {{String}},
+  "[EndTimeoutMs](#cfn-lex-bot-dtmfspecification-endtimeoutms)" : {{Integer}},
+  "[MaxLength](#cfn-lex-bot-dtmfspecification-maxlength)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-dtmfspecification-syntax.yaml"></a>
 
-```yaml
-
-  DeletionCharacter: String
-  EndCharacter: String
-  EndTimeoutMs: Integer
-  MaxLength: Integer
-
+```
+  [DeletionCharacter](#cfn-lex-bot-dtmfspecification-deletioncharacter): {{String}}
+  [EndCharacter](#cfn-lex-bot-dtmfspecification-endcharacter): {{String}}
+  [EndTimeoutMs](#cfn-lex-bot-dtmfspecification-endtimeoutms): {{Integer}}
+  [MaxLength](#cfn-lex-bot-dtmfspecification-maxlength): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-dtmfspecification-properties"></a>
 
-`DeletionCharacter`
+`DeletionCharacter`  <a name="cfn-lex-bot-dtmfspecification-deletioncharacter"></a>
+The DTMF character that clears the accumulated DTMF digits and immediately ends the input.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-D0-9#*]{1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The DTMF character that clears the accumulated DTMF digits and immediately ends
-the input.
+`EndCharacter`  <a name="cfn-lex-bot-dtmfspecification-endcharacter"></a>
+The DTMF character that immediately ends input. If the user does not press this character, the input ends after the end timeout.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-D0-9#*]{1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`EndTimeoutMs`  <a name="cfn-lex-bot-dtmfspecification-endtimeoutms"></a>
+How long the bot should wait after the last DTMF character input before assuming that the input has concluded.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[A-D0-9#*]{1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndCharacter`
-
-The DTMF character that immediately ends input. If the user does not press this
-character, the input ends after the end timeout.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-D0-9#*]{1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndTimeoutMs`
-
-How long the bot should wait after the last DTMF character input before assuming
-that the input has concluded.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxLength`
-
+`MaxLength`  <a name="cfn-lex-bot-dtmfspecification-maxlength"></a>
 The maximum number of DTMF digits allowed in an utterance.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DialogState
-
-ElicitationCodeHookInvocationSetting
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

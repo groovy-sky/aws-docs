@@ -2,227 +2,163 @@
 title: "AWS::AppFlow::ConnectorProfile ConnectorProfileProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile ConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-connectorprofileproperties"></a>
 
-The connector-specific profile properties required by each connector.
+ The connector-specific profile properties required by each connector.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-connectorprofileproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-connectorprofileproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomConnector" : CustomConnectorProfileProperties,
-  "Datadog" : DatadogConnectorProfileProperties,
-  "Dynatrace" : DynatraceConnectorProfileProperties,
-  "InforNexus" : InforNexusConnectorProfileProperties,
-  "Marketo" : MarketoConnectorProfileProperties,
-  "Pardot" : PardotConnectorProfileProperties,
-  "Redshift" : RedshiftConnectorProfileProperties,
-  "Salesforce" : SalesforceConnectorProfileProperties,
-  "SAPOData" : SAPODataConnectorProfileProperties,
-  "ServiceNow" : ServiceNowConnectorProfileProperties,
-  "Slack" : SlackConnectorProfileProperties,
-  "Snowflake" : SnowflakeConnectorProfileProperties,
-  "Veeva" : VeevaConnectorProfileProperties,
-  "Zendesk" : ZendeskConnectorProfileProperties
+  "[CustomConnector](#cfn-appflow-connectorprofile-connectorprofileproperties-customconnector)" : {{CustomConnectorProfileProperties}},
+  "[Datadog](#cfn-appflow-connectorprofile-connectorprofileproperties-datadog)" : {{DatadogConnectorProfileProperties}},
+  "[Dynatrace](#cfn-appflow-connectorprofile-connectorprofileproperties-dynatrace)" : {{DynatraceConnectorProfileProperties}},
+  "[InforNexus](#cfn-appflow-connectorprofile-connectorprofileproperties-infornexus)" : {{InforNexusConnectorProfileProperties}},
+  "[Marketo](#cfn-appflow-connectorprofile-connectorprofileproperties-marketo)" : {{MarketoConnectorProfileProperties}},
+  "[Pardot](#cfn-appflow-connectorprofile-connectorprofileproperties-pardot)" : {{PardotConnectorProfileProperties}},
+  "[Redshift](#cfn-appflow-connectorprofile-connectorprofileproperties-redshift)" : {{RedshiftConnectorProfileProperties}},
+  "[Salesforce](#cfn-appflow-connectorprofile-connectorprofileproperties-salesforce)" : {{SalesforceConnectorProfileProperties}},
+  "[SAPOData](#cfn-appflow-connectorprofile-connectorprofileproperties-sapodata)" : {{SAPODataConnectorProfileProperties}},
+  "[ServiceNow](#cfn-appflow-connectorprofile-connectorprofileproperties-servicenow)" : {{ServiceNowConnectorProfileProperties}},
+  "[Slack](#cfn-appflow-connectorprofile-connectorprofileproperties-slack)" : {{SlackConnectorProfileProperties}},
+  "[Snowflake](#cfn-appflow-connectorprofile-connectorprofileproperties-snowflake)" : {{SnowflakeConnectorProfileProperties}},
+  "[Veeva](#cfn-appflow-connectorprofile-connectorprofileproperties-veeva)" : {{VeevaConnectorProfileProperties}},
+  "[Zendesk](#cfn-appflow-connectorprofile-connectorprofileproperties-zendesk)" : {{ZendeskConnectorProfileProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-connectorprofileproperties-syntax.yaml"></a>
 
-```yaml
-
-  CustomConnector:
-    CustomConnectorProfileProperties
-  Datadog:
-    DatadogConnectorProfileProperties
-  Dynatrace:
-    DynatraceConnectorProfileProperties
-  InforNexus:
-    InforNexusConnectorProfileProperties
-  Marketo:
-    MarketoConnectorProfileProperties
-  Pardot:
-    PardotConnectorProfileProperties
-  Redshift:
-    RedshiftConnectorProfileProperties
-  Salesforce:
-    SalesforceConnectorProfileProperties
-  SAPOData:
-    SAPODataConnectorProfileProperties
-  ServiceNow:
-    ServiceNowConnectorProfileProperties
-  Slack:
-    SlackConnectorProfileProperties
-  Snowflake:
-    SnowflakeConnectorProfileProperties
-  Veeva:
-    VeevaConnectorProfileProperties
-  Zendesk:
-    ZendeskConnectorProfileProperties
-
+```
+  [CustomConnector](#cfn-appflow-connectorprofile-connectorprofileproperties-customconnector): {{
+    CustomConnectorProfileProperties}}
+  [Datadog](#cfn-appflow-connectorprofile-connectorprofileproperties-datadog): {{
+    DatadogConnectorProfileProperties}}
+  [Dynatrace](#cfn-appflow-connectorprofile-connectorprofileproperties-dynatrace): {{
+    DynatraceConnectorProfileProperties}}
+  [InforNexus](#cfn-appflow-connectorprofile-connectorprofileproperties-infornexus): {{
+    InforNexusConnectorProfileProperties}}
+  [Marketo](#cfn-appflow-connectorprofile-connectorprofileproperties-marketo): {{
+    MarketoConnectorProfileProperties}}
+  [Pardot](#cfn-appflow-connectorprofile-connectorprofileproperties-pardot): {{
+    PardotConnectorProfileProperties}}
+  [Redshift](#cfn-appflow-connectorprofile-connectorprofileproperties-redshift): {{
+    RedshiftConnectorProfileProperties}}
+  [Salesforce](#cfn-appflow-connectorprofile-connectorprofileproperties-salesforce): {{
+    SalesforceConnectorProfileProperties}}
+  [SAPOData](#cfn-appflow-connectorprofile-connectorprofileproperties-sapodata): {{
+    SAPODataConnectorProfileProperties}}
+  [ServiceNow](#cfn-appflow-connectorprofile-connectorprofileproperties-servicenow): {{
+    ServiceNowConnectorProfileProperties}}
+  [Slack](#cfn-appflow-connectorprofile-connectorprofileproperties-slack): {{
+    SlackConnectorProfileProperties}}
+  [Snowflake](#cfn-appflow-connectorprofile-connectorprofileproperties-snowflake): {{
+    SnowflakeConnectorProfileProperties}}
+  [Veeva](#cfn-appflow-connectorprofile-connectorprofileproperties-veeva): {{
+    VeevaConnectorProfileProperties}}
+  [Zendesk](#cfn-appflow-connectorprofile-connectorprofileproperties-zendesk): {{
+    ZendeskConnectorProfileProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-connectorprofileproperties-properties"></a>
 
-`CustomConnector`
-
+`CustomConnector`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-customconnector"></a>
 The properties required by the custom connector.
+*Required*: No
+*Type*: [CustomConnectorProfileProperties](aws-properties-appflow-connectorprofile-customconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Datadog`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-datadog"></a>
+ The connector-specific properties required by Datadog.
+*Required*: No
+*Type*: [DatadogConnectorProfileProperties](aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CustomConnectorProfileProperties](aws-properties-appflow-connectorprofile-customconnectorprofileproperties.md)
+`Dynatrace`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-dynatrace"></a>
+ The connector-specific properties required by Dynatrace.
+*Required*: No
+*Type*: [DynatraceConnectorProfileProperties](aws-properties-appflow-connectorprofile-dynatraceconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`InforNexus`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-infornexus"></a>
+ The connector-specific properties required by Infor Nexus.
+*Required*: No
+*Type*: [InforNexusConnectorProfileProperties](aws-properties-appflow-connectorprofile-infornexusconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Datadog`
+`Marketo`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-marketo"></a>
+ The connector-specific properties required by Marketo.
+*Required*: No
+*Type*: [MarketoConnectorProfileProperties](aws-properties-appflow-connectorprofile-marketoconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The connector-specific properties required by Datadog.
-
-_Required_: No
-
-_Type_: [DatadogConnectorProfileProperties](aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dynatrace`
-
-The connector-specific properties required by Dynatrace.
-
-_Required_: No
-
-_Type_: [DynatraceConnectorProfileProperties](aws-properties-appflow-connectorprofile-dynatraceconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InforNexus`
-
-The connector-specific properties required by Infor Nexus.
-
-_Required_: No
-
-_Type_: [InforNexusConnectorProfileProperties](aws-properties-appflow-connectorprofile-infornexusconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Marketo`
-
-The connector-specific properties required by Marketo.
-
-_Required_: No
-
-_Type_: [MarketoConnectorProfileProperties](aws-properties-appflow-connectorprofile-marketoconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pardot`
-
+`Pardot`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-pardot"></a>
 The connector-specific properties required by Salesforce Pardot.
+*Required*: No
+*Type*: [PardotConnectorProfileProperties](aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Redshift`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-redshift"></a>
+ The connector-specific properties required by Amazon Redshift.
+*Required*: No
+*Type*: [RedshiftConnectorProfileProperties](aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PardotConnectorProfileProperties](aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties.md)
+`Salesforce`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-salesforce"></a>
+ The connector-specific properties required by Salesforce.
+*Required*: No
+*Type*: [SalesforceConnectorProfileProperties](aws-properties-appflow-connectorprofile-salesforceconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SAPOData`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-sapodata"></a>
+ The connector-specific profile properties required when using SAPOData.
+*Required*: No
+*Type*: [SAPODataConnectorProfileProperties](aws-properties-appflow-connectorprofile-sapodataconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Redshift`
+`ServiceNow`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-servicenow"></a>
+ The connector-specific properties required by serviceNow.
+*Required*: No
+*Type*: [ServiceNowConnectorProfileProperties](aws-properties-appflow-connectorprofile-servicenowconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The connector-specific properties required by Amazon Redshift.
+`Slack`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-slack"></a>
+ The connector-specific properties required by Slack.
+*Required*: No
+*Type*: [SlackConnectorProfileProperties](aws-properties-appflow-connectorprofile-slackconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Snowflake`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-snowflake"></a>
+ The connector-specific properties required by Snowflake.
+*Required*: No
+*Type*: [SnowflakeConnectorProfileProperties](aws-properties-appflow-connectorprofile-snowflakeconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [RedshiftConnectorProfileProperties](aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties.md)
+`Veeva`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-veeva"></a>
+ The connector-specific properties required by Veeva.
+*Required*: No
+*Type*: [VeevaConnectorProfileProperties](aws-properties-appflow-connectorprofile-veevaconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Salesforce`
-
-The connector-specific properties required by Salesforce.
-
-_Required_: No
-
-_Type_: [SalesforceConnectorProfileProperties](aws-properties-appflow-connectorprofile-salesforceconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SAPOData`
-
-The connector-specific profile properties required when using SAPOData.
-
-_Required_: No
-
-_Type_: [SAPODataConnectorProfileProperties](aws-properties-appflow-connectorprofile-sapodataconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceNow`
-
-The connector-specific properties required by serviceNow.
-
-_Required_: No
-
-_Type_: [ServiceNowConnectorProfileProperties](aws-properties-appflow-connectorprofile-servicenowconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slack`
-
-The connector-specific properties required by Slack.
-
-_Required_: No
-
-_Type_: [SlackConnectorProfileProperties](aws-properties-appflow-connectorprofile-slackconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Snowflake`
-
-The connector-specific properties required by Snowflake.
-
-_Required_: No
-
-_Type_: [SnowflakeConnectorProfileProperties](aws-properties-appflow-connectorprofile-snowflakeconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Veeva`
-
-The connector-specific properties required by Veeva.
-
-_Required_: No
-
-_Type_: [VeevaConnectorProfileProperties](aws-properties-appflow-connectorprofile-veevaconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Zendesk`
-
-The connector-specific properties required by Zendesk.
-
-_Required_: No
-
-_Type_: [ZendeskConnectorProfileProperties](aws-properties-appflow-connectorprofile-zendeskconnectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Zendesk`  <a name="cfn-appflow-connectorprofile-connectorprofileproperties-zendesk"></a>
+ The connector-specific properties required by Zendesk.
+*Required*: No
+*Type*: [ZendeskConnectorProfileProperties](aws-properties-appflow-connectorprofile-zendeskconnectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ConnectorProfileProperties](../../../../reference/appflow/1-0/apireference/api-connectorprofileproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectorProfileCredentials
-
-CustomAuthCredentials
+<a name="aws-properties-appflow-connectorprofile-connectorprofileproperties--seealso"></a>
++ [ConnectorProfileProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorProfileProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

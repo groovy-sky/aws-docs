@@ -2,90 +2,63 @@
 title: "AWS::Lightsail::Disk AddOn"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Disk AddOn
+<a name="aws-properties-lightsail-disk-addon"></a>
 
-`AddOn` is a property of the [AWS::Lightsail::Disk](../userguide/aws-resource-lightsail-disk.md) resource. It describes the add-ons for a disk.
+`AddOn` is a property of the [AWS::Lightsail::Disk](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-disk.html) resource. It describes the add-ons for a disk.
 
 ## Syntax
+<a name="aws-properties-lightsail-disk-addon-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-disk-addon-syntax.json"></a>
 
-```json
-
+```
 {
-  "AddOnType" : String,
-  "AutoSnapshotAddOnRequest" : AutoSnapshotAddOn,
-  "Status" : String
+  "[AddOnType](#cfn-lightsail-disk-addon-addontype)" : {{String}},
+  "[AutoSnapshotAddOnRequest](#cfn-lightsail-disk-addon-autosnapshotaddonrequest)" : {{AutoSnapshotAddOn}},
+  "[Status](#cfn-lightsail-disk-addon-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-disk-addon-syntax.yaml"></a>
 
-```yaml
-
-  AddOnType: String
-  AutoSnapshotAddOnRequest:
-    AutoSnapshotAddOn
-  Status: String
-
+```
+  [AddOnType](#cfn-lightsail-disk-addon-addontype): {{String}}
+  [AutoSnapshotAddOnRequest](#cfn-lightsail-disk-addon-autosnapshotaddonrequest): {{
+    AutoSnapshotAddOn}}
+  [Status](#cfn-lightsail-disk-addon-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-disk-addon-properties"></a>
 
-`AddOnType`
-
+`AddOnType`  <a name="cfn-lightsail-disk-addon-addontype"></a>
 The add-on type (for example, `AutoSnapshot`).
-
-###### Note
-
 `AutoSnapshot` is the only add-on that can be enabled for a disk.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`AutoSnapshotAddOnRequest`  <a name="cfn-lightsail-disk-addon-autosnapshotaddonrequest"></a>
+The parameters for the automatic snapshot add-on, such as the daily time when an automatic snapshot will be created.
+*Required*: No
+*Type*: [AutoSnapshotAddOn](aws-properties-lightsail-disk-autosnapshotaddon.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoSnapshotAddOnRequest`
-
-The parameters for the automatic snapshot add-on, such as the daily time when an
-automatic snapshot will be created.
-
-_Required_: No
-
-_Type_: [AutoSnapshotAddOn](aws-properties-lightsail-disk-autosnapshotaddon.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-lightsail-disk-addon-status"></a>
 The status of the add-on.
-
 Valid Values: `Enabled` \| `Disabled`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Enabling | Disabling | Enabled | Terminating | Terminated | Disabled | Failed`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Lightsail::Disk
-
-AutoSnapshotAddOn
+*Required*: No
+*Type*: String
+*Allowed values*: `Enabling | Disabling | Enabled | Terminating | Terminated | Disabled | Failed`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

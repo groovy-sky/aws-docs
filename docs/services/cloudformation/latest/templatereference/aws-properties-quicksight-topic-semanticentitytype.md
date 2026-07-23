@@ -2,91 +2,65 @@
 title: "AWS::QuickSight::Topic SemanticEntityType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic SemanticEntityType
+<a name="aws-properties-quicksight-topic-semanticentitytype"></a>
 
 A structure that represents a semantic entity type.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-semanticentitytype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-semanticentitytype-syntax.json"></a>
 
-```json
-
+```
 {
-  "SubTypeName" : String,
-  "TypeName" : String,
-  "TypeParameters" : {Key: Value, ...}
+  "[SubTypeName](#cfn-quicksight-topic-semanticentitytype-subtypename)" : {{String}},
+  "[TypeName](#cfn-quicksight-topic-semanticentitytype-typename)" : {{String}},
+  "[TypeParameters](#cfn-quicksight-topic-semanticentitytype-typeparameters)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-semanticentitytype-syntax.yaml"></a>
 
-```yaml
-
-  SubTypeName: String
-  TypeName: String
-  TypeParameters:
-    Key: Value
-
+```
+  [SubTypeName](#cfn-quicksight-topic-semanticentitytype-subtypename): {{String}}
+  [TypeName](#cfn-quicksight-topic-semanticentitytype-typename): {{String}}
+  [TypeParameters](#cfn-quicksight-topic-semanticentitytype-typeparameters): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-semanticentitytype-properties"></a>
 
-`SubTypeName`
-
+`SubTypeName`  <a name="cfn-quicksight-topic-semanticentitytype-subtypename"></a>
 The semantic entity sub type name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeName`
-
+`TypeName`  <a name="cfn-quicksight-topic-semanticentitytype-typename"></a>
 The semantic entity type name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeParameters`
-
+`TypeParameters`  <a name="cfn-quicksight-topic-semanticentitytype-typeparameters"></a>
 The semantic entity type parameters.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RangeConstant
-
-SemanticType
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

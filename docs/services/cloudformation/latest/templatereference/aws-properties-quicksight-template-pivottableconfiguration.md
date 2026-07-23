@@ -2,131 +2,96 @@
 title: "AWS::QuickSight::Template PivotTableConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PivotTableConfiguration
+<a name="aws-properties-quicksight-template-pivottableconfiguration"></a>
 
 The configuration for a `PivotTableVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pivottableconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pivottableconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldOptions" : PivotTableFieldOptions,
-  "FieldWells" : PivotTableFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "PaginatedReportOptions" : PivotTablePaginatedReportOptions,
-  "SortConfiguration" : PivotTableSortConfiguration,
-  "TableOptions" : PivotTableOptions,
-  "TotalOptions" : PivotTableTotalOptions
+  "[FieldOptions](#cfn-quicksight-template-pivottableconfiguration-fieldoptions)" : {{PivotTableFieldOptions}},
+  "[FieldWells](#cfn-quicksight-template-pivottableconfiguration-fieldwells)" : {{PivotTableFieldWells}},
+  "[Interactions](#cfn-quicksight-template-pivottableconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[PaginatedReportOptions](#cfn-quicksight-template-pivottableconfiguration-paginatedreportoptions)" : {{PivotTablePaginatedReportOptions}},
+  "[SortConfiguration](#cfn-quicksight-template-pivottableconfiguration-sortconfiguration)" : {{PivotTableSortConfiguration}},
+  "[TableOptions](#cfn-quicksight-template-pivottableconfiguration-tableoptions)" : {{PivotTableOptions}},
+  "[TotalOptions](#cfn-quicksight-template-pivottableconfiguration-totaloptions)" : {{PivotTableTotalOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pivottableconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FieldOptions:
-    PivotTableFieldOptions
-  FieldWells:
-    PivotTableFieldWells
-  Interactions:
-    VisualInteractionOptions
-  PaginatedReportOptions:
-    PivotTablePaginatedReportOptions
-  SortConfiguration:
-    PivotTableSortConfiguration
-  TableOptions:
-    PivotTableOptions
-  TotalOptions:
-    PivotTableTotalOptions
-
+```
+  [FieldOptions](#cfn-quicksight-template-pivottableconfiguration-fieldoptions): {{
+    PivotTableFieldOptions}}
+  [FieldWells](#cfn-quicksight-template-pivottableconfiguration-fieldwells): {{
+    PivotTableFieldWells}}
+  [Interactions](#cfn-quicksight-template-pivottableconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [PaginatedReportOptions](#cfn-quicksight-template-pivottableconfiguration-paginatedreportoptions): {{
+    PivotTablePaginatedReportOptions}}
+  [SortConfiguration](#cfn-quicksight-template-pivottableconfiguration-sortconfiguration): {{
+    PivotTableSortConfiguration}}
+  [TableOptions](#cfn-quicksight-template-pivottableconfiguration-tableoptions): {{
+    PivotTableOptions}}
+  [TotalOptions](#cfn-quicksight-template-pivottableconfiguration-totaloptions): {{
+    PivotTableTotalOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pivottableconfiguration-properties"></a>
 
-`FieldOptions`
-
+`FieldOptions`  <a name="cfn-quicksight-template-pivottableconfiguration-fieldoptions"></a>
 The field options for a pivot table visual.
+*Required*: No
+*Type*: [PivotTableFieldOptions](aws-properties-quicksight-template-pivottablefieldoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTableFieldOptions](aws-properties-quicksight-template-pivottablefieldoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-pivottableconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [PivotTableFieldWells](aws-properties-quicksight-template-pivottablefieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTableFieldWells](aws-properties-quicksight-template-pivottablefieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-pivottableconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PaginatedReportOptions`
-
+`PaginatedReportOptions`  <a name="cfn-quicksight-template-pivottableconfiguration-paginatedreportoptions"></a>
 The paginated report options for a pivot table visual.
+*Required*: No
+*Type*: [PivotTablePaginatedReportOptions](aws-properties-quicksight-template-pivottablepaginatedreportoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTablePaginatedReportOptions](aws-properties-quicksight-template-pivottablepaginatedreportoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-pivottableconfiguration-sortconfiguration"></a>
 The sort configuration for a `PivotTableVisual`.
+*Required*: No
+*Type*: [PivotTableSortConfiguration](aws-properties-quicksight-template-pivottablesortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTableSortConfiguration](aws-properties-quicksight-template-pivottablesortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableOptions`
-
+`TableOptions`  <a name="cfn-quicksight-template-pivottableconfiguration-tableoptions"></a>
 The table options for a pivot table visual.
+*Required*: No
+*Type*: [PivotTableOptions](aws-properties-quicksight-template-pivottableoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTableOptions](aws-properties-quicksight-template-pivottableoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalOptions`
-
+`TotalOptions`  <a name="cfn-quicksight-template-pivottableconfiguration-totaloptions"></a>
 The total options for a pivot table visual.
-
-_Required_: No
-
-_Type_: [PivotTableTotalOptions](aws-properties-quicksight-template-pivottabletotaloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableConditionalFormattingScope
-
-PivotTableDataPathOption
+*Required*: No
+*Type*: [PivotTableTotalOptions](aws-properties-quicksight-template-pivottabletotaloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

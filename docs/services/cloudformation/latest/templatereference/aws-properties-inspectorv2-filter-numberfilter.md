@@ -2,64 +2,49 @@
 title: "AWS::InspectorV2::Filter NumberFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Filter NumberFilter
+<a name="aws-properties-inspectorv2-filter-numberfilter"></a>
 
 An object that describes the details of a number filter.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-filter-numberfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-filter-numberfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "LowerInclusive" : Number,
-  "UpperInclusive" : Number
+  "[LowerInclusive](#cfn-inspectorv2-filter-numberfilter-lowerinclusive)" : {{Number}},
+  "[UpperInclusive](#cfn-inspectorv2-filter-numberfilter-upperinclusive)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-filter-numberfilter-syntax.yaml"></a>
 
-```yaml
-
-  LowerInclusive: Number
-  UpperInclusive: Number
-
+```
+  [LowerInclusive](#cfn-inspectorv2-filter-numberfilter-lowerinclusive): {{Number}}
+  [UpperInclusive](#cfn-inspectorv2-filter-numberfilter-upperinclusive): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-filter-numberfilter-properties"></a>
 
-`LowerInclusive`
-
+`LowerInclusive`  <a name="cfn-inspectorv2-filter-numberfilter-lowerinclusive"></a>
 The lowest number to be included in the filter.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpperInclusive`
-
+`UpperInclusive`  <a name="cfn-inspectorv2-filter-numberfilter-upperinclusive"></a>
 The highest number to be included in the filter.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MapFilter
-
-PackageFilter
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

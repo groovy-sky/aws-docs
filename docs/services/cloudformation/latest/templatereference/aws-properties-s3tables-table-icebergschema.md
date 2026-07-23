@@ -2,53 +2,42 @@
 title: "AWS::S3Tables::Table IcebergSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergSchema
+<a name="aws-properties-s3tables-table-icebergschema"></a>
 
 Contains details about the schema for an Iceberg table.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-icebergschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-icebergschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "SchemaFieldList" : [ SchemaField, ... ]
+  "[SchemaFieldList](#cfn-s3tables-table-icebergschema-schemafieldlist)" : {{[ SchemaField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-icebergschema-syntax.yaml"></a>
 
-```yaml
-
-  SchemaFieldList:
-    - SchemaField
-
+```
+  [SchemaFieldList](#cfn-s3tables-table-icebergschema-schemafieldlist): {{
+    - SchemaField}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-icebergschema-properties"></a>
 
-`SchemaFieldList`
-
+`SchemaFieldList`  <a name="cfn-s3tables-table-icebergschema-schemafieldlist"></a>
 The schema fields for the table
-
-_Required_: Yes
-
-_Type_: Array of [SchemaField](aws-properties-s3tables-table-schemafield.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IcebergPartitionSpec
-
-IcebergSchemaV2
+*Required*: Yes
+*Type*: Array of [SchemaField](aws-properties-s3tables-table-schemafield.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

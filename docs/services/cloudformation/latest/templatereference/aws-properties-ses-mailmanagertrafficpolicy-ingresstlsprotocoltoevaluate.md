@@ -2,55 +2,42 @@
 title: "AWS::SES::MailManagerTrafficPolicy IngressTlsProtocolToEvaluate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy IngressTlsProtocolToEvaluate
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate"></a>
 
-The union type representing the allowed types for the left hand side of a TLS
-condition.
+The union type representing the allowed types for the left hand side of a TLS condition.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attribute" : String
+  "[Attribute](#cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-attribute)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-syntax.yaml"></a>
 
-```yaml
-
-  Attribute: String
-
+```
+  [Attribute](#cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-attribute): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-properties"></a>
 
-`Attribute`
-
+`Attribute`  <a name="cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocoltoevaluate-attribute"></a>
 The enum type representing the allowed attribute types for the TLS condition.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TLS_PROTOCOL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngressTlsProtocolExpression
-
-PolicyCondition
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TLS_PROTOCOL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

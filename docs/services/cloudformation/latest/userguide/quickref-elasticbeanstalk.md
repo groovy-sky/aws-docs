@@ -3,27 +3,21 @@ title: "Elastic Beanstalk template snippets"
 ---
 
 # Elastic Beanstalk template snippets
+<a name="quickref-elasticbeanstalk"></a>
 
-With Elastic Beanstalk, you can quickly deploy and manage applications in AWS without worrying about
-the infrastructure that runs those applications. The following sample template can help you
-describe Elastic Beanstalk resources in your CloudFormation template.
+With Elastic Beanstalk, you can quickly deploy and manage applications in AWS without worrying about the infrastructure that runs those applications. The following sample template can help you describe Elastic Beanstalk resources in your CloudFormation template.
 
 ## Elastic Beanstalk sample PHP
+<a name="quickref-elasticbeanstalk-sampleenv"></a>
 
-The following sample template deploys a sample PHP web application that's stored in an
-Amazon S3 bucket. The environment is also an auto-scaling, load-balancing environment, with a
-minimum of two Amazon EC2 instances and a maximum of six. It shows an Elastic Beanstalk environment that
-uses a legacy launch configuration. For information about using a launch template
-instead, see [Launch Templates](../../../elasticbeanstalk/latest/dg/environments-cfg-autoscaling-launch-templates.md) in the _AWS Elastic Beanstalk Developer Guide_.
+The following sample template deploys a sample PHP web application that's stored in an Amazon S3 bucket. The environment is also an auto-scaling, load-balancing environment, with a minimum of two Amazon EC2 instances and a maximum of six. It shows an Elastic Beanstalk environment that uses a legacy launch configuration. For information about using a launch template instead, see [Launch Templates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-autoscaling-launch-templates.html) in the *AWS Elastic Beanstalk Developer Guide*.
 
-Replace `solution-stack` with a solution stack
-name (platform version). For a list of available solution stacks, use the AWS CLI command
-**aws elasticbeanstalk list-available-solution-stacks**.
+Replace `{{solution-stack}}` with a solution stack name (platform version). For a list of available solution stacks, use the AWS CLI command **aws elasticbeanstalk list-available-solution-stacks**.
 
 ### JSON
+<a name="quickref-elasticbeanstalk-example-1.json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -79,7 +73,7 @@ name (platform version). For a list of available solution stacks, use the AWS CL
                         }
                     }
                 ],
-                "SolutionStackName": "solution-stack"
+                "SolutionStackName": "{{solution-stack}}"
             }
         },
         "sampleEnvironment": {
@@ -139,9 +133,9 @@ name (platform version). For a list of available solution stacks, use the AWS CL
 ```
 
 ### YAML
+<a name="quickref-elasticbeanstalk-example-1.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   sampleApplication:
@@ -176,7 +170,7 @@ Resources:
       - Namespace: aws:autoscaling:launchconfiguration
         OptionName: IamInstanceProfile
         Value: !Ref MyInstanceProfile
-      SolutionStackName: solution-stack
+      SolutionStackName: {{solution-stack}}
   sampleEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
     Properties:
@@ -210,11 +204,5 @@ Resources:
       Roles:
         - !Ref MyInstanceRole
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon EFS
-
-Elastic Load Balancing
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,50 @@
 title: "AWS::QuickSight::Dashboard DataColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DataColor
+<a name="aws-properties-quicksight-dashboard-datacolor"></a>
 
 Determines the color that is applied to a particular data value.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-datacolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-datacolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "DataValue" : Number
+  "[Color](#cfn-quicksight-dashboard-datacolor-color)" : {{String}},
+  "[DataValue](#cfn-quicksight-dashboard-datacolor-datavalue)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-datacolor-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  DataValue: Number
-
+```
+  [Color](#cfn-quicksight-dashboard-datacolor-color): {{String}}
+  [DataValue](#cfn-quicksight-dashboard-datacolor-datavalue): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-datacolor-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-dashboard-datacolor-color"></a>
 The color that is applied to the data value.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataValue`
-
+`DataValue`  <a name="cfn-quicksight-dashboard-datacolor-datavalue"></a>
 The data value that the color is applied to.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataBarsOptions
-
-DataFieldSeriesItem
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

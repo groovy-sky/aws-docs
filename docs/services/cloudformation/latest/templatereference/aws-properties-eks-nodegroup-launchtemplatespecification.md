@@ -2,97 +2,64 @@
 title: "AWS::EKS::Nodegroup LaunchTemplateSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Nodegroup LaunchTemplateSpecification
+<a name="aws-properties-eks-nodegroup-launchtemplatespecification"></a>
 
-An object representing a node group launch template specification. The launch template
-can't include [`SubnetId`](../../../../reference/awsec2/latest/apireference/api-createnetworkinterface.md), [`IamInstanceProfile`](../../../../reference/awsec2/latest/apireference/api-iaminstanceprofile.md), [`RequestSpotInstances`](../../../../reference/awsec2/latest/apireference/api-requestspotinstances.md), [`HibernationOptions`](../../../../reference/awsec2/latest/apireference/api-hibernationoptionsrequest.md), or [`TerminateInstances`](../../../../reference/awsec2/latest/apireference/api-terminateinstances.md), or the node group deployment or
-update will fail. For more information about launch templates, see [`CreateLaunchTemplate`](../../../../reference/awsec2/latest/apireference/api-createlaunchtemplate.md) in the Amazon EC2 API Reference.
-For more information about using launch templates with Amazon EKS, see [Customizing managed nodes with launch templates](../../../eks/latest/userguide/launch-templates.md) in the _Amazon EKS User Guide_.
+An object representing a node group launch template specification. The launch template can't include [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html), [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IamInstanceProfile.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IamInstanceProfile.html), [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html), [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptionsRequest.html), or [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateInstances.html), or the node group deployment or update will fail. For more information about launch templates, see [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplate.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplate.html) in the Amazon EC2 API Reference. For more information about using launch templates with Amazon EKS, see [Customizing managed nodes with launch templates](https://docs.aws.amazon.com/eks/latest/userguide/launch-templates.html) in the *Amazon EKS User Guide*.
 
-You must specify either the launch template ID or the launch template name in the
-request, but not both.
+You must specify either the launch template ID or the launch template name in the request, but not both.
 
 ## Syntax
+<a name="aws-properties-eks-nodegroup-launchtemplatespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-eks-nodegroup-launchtemplatespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : String,
-  "Name" : String,
-  "Version" : String
+  "[Id](#cfn-eks-nodegroup-launchtemplatespecification-id)" : {{String}},
+  "[Name](#cfn-eks-nodegroup-launchtemplatespecification-name)" : {{String}},
+  "[Version](#cfn-eks-nodegroup-launchtemplatespecification-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-eks-nodegroup-launchtemplatespecification-syntax.yaml"></a>
 
-```yaml
-
-  Id: String
-  Name: String
-  Version: String
-
+```
+  [Id](#cfn-eks-nodegroup-launchtemplatespecification-id): {{String}}
+  [Name](#cfn-eks-nodegroup-launchtemplatespecification-name): {{String}}
+  [Version](#cfn-eks-nodegroup-launchtemplatespecification-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-eks-nodegroup-launchtemplatespecification-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-eks-nodegroup-launchtemplatespecification-id"></a>
 The ID of the launch template.
+You must specify either the launch template ID or the launch template name in the request, but not both. After node group creation, you cannot use a different ID.
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You must specify either the launch template ID or the launch template name in the
-request, but not both. After node group creation, you cannot use a different ID.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-eks-nodegroup-launchtemplatespecification-name"></a>
 The name of the launch template.
+You must specify either the launch template name or the launch template ID in the request, but not both. After node group creation, you cannot use a different name.
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You must specify either the launch template name or the launch template ID in the
-request, but not both. After node group creation, you cannot use a different
-name.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
-The version number of the launch template to use. If no version is specified, then the
-template's default version is used. You can use a different version for node group
-updates.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EKS::Nodegroup
-
-NodeRepairConfig
+`Version`  <a name="cfn-eks-nodegroup-launchtemplatespecification-version"></a>
+The version number of the launch template to use. If no version is specified, then the template's default version is used. You can use a different version for node group updates.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

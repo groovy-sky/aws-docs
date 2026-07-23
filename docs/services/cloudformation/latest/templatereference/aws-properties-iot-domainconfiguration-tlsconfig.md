@@ -2,55 +2,42 @@
 title: "AWS::IoT::DomainConfiguration TlsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::DomainConfiguration TlsConfig
+<a name="aws-properties-iot-domainconfiguration-tlsconfig"></a>
 
 An object that specifies the TLS configuration for a domain.
 
 ## Syntax
+<a name="aws-properties-iot-domainconfiguration-tlsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-domainconfiguration-tlsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityPolicy" : String
+  "[SecurityPolicy](#cfn-iot-domainconfiguration-tlsconfig-securitypolicy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-domainconfiguration-tlsconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecurityPolicy: String
-
+```
+  [SecurityPolicy](#cfn-iot-domainconfiguration-tlsconfig-securitypolicy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-domainconfiguration-tlsconfig-properties"></a>
 
-`SecurityPolicy`
-
-The security policy for a domain configuration. For more information, see [Security\
-policies](../../../iot/latest/developerguide/transport-security.md#tls-policy-table) in the _AWS IoT Core developer guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::IoT::EncryptionConfiguration
+`SecurityPolicy`  <a name="cfn-iot-domainconfiguration-tlsconfig-securitypolicy"></a>
+The security policy for a domain configuration. For more information, see [Security policies ](https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html#tls-policy-table) in the *AWS IoT Core developer guide*.
+*Required*: No
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

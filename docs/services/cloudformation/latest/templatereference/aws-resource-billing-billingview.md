@@ -2,144 +2,113 @@
 title: "AWS::Billing::BillingView"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Billing::BillingView
+<a name="aws-resource-billing-billingview"></a>
 
-Creates a billing view with the specified billing view attributes.
+ Creates a billing view with the specified billing view attributes.
 
 ## Syntax
+<a name="aws-resource-billing-billingview-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-billing-billingview-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Billing::BillingView",
   "Properties" : {
-      "DataFilterExpression" : DataFilterExpression,
-      "Description" : String,
-      "Name" : String,
-      "SourceViews" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[DataFilterExpression](#cfn-billing-billingview-datafilterexpression)" : {{DataFilterExpression}},
+      "[Description](#cfn-billing-billingview-description)" : {{String}},
+      "[Name](#cfn-billing-billingview-name)" : {{String}},
+      "[SourceViews](#cfn-billing-billingview-sourceviews)" : {{[ String, ... ]}},
+      "[Tags](#cfn-billing-billingview-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-billing-billingview-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Billing::BillingView
 Properties:
-  DataFilterExpression:
-    DataFilterExpression
-  Description: String
-  Name: String
-  SourceViews:
-    - String
-  Tags:
-    - Tag
-
+  [DataFilterExpression](#cfn-billing-billingview-datafilterexpression): {{
+    DataFilterExpression}}
+  [Description](#cfn-billing-billingview-description): {{String}}
+  [Name](#cfn-billing-billingview-name): {{String}}
+  [SourceViews](#cfn-billing-billingview-sourceviews): {{
+    - String}}
+  [Tags](#cfn-billing-billingview-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-billing-billingview-properties"></a>
 
-`DataFilterExpression`
+`DataFilterExpression`  <a name="cfn-billing-billingview-datafilterexpression"></a>
+ See [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_Expression.html). Billing view only supports `LINKED_ACCOUNT`, `Tags`, and `CostCategories`.
+*Required*: No
+*Type*: [DataFilterExpression](aws-properties-billing-billingview-datafilterexpression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-See [Expression](../../../../reference/aws-cost-management/latest/apireference/api-billing-expression.md). Billing view only supports `LINKED_ACCOUNT`, `Tags`, and `CostCategories`.
+`Description`  <a name="cfn-billing-billingview-description"></a>
+ The description of the billing view.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DataFilterExpression](aws-properties-billing-billingview-datafilterexpression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
-The description of the billing view.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-billing-billingview-name"></a>
 The name of the billing view.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_\+=\.\-@]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_\+=\.\-@]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceViews`
-
+`SourceViews`  <a name="cfn-billing-billingview-sourceviews"></a>
 A list of billing views used as the data source for the custom billing view.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-billing-billingview-tags"></a>
 A list of key value map specifying tags associated to the billing view being created.
-
-_Required_: No
-
-_Type_: [Array](aws-properties-billing-billingview-tags.md) of [Tag](aws-properties-billing-billingview-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [Array](aws-properties-billing-billingview-tags.md) of [Tag](aws-properties-billing-billingview-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-billing-billingview-return-values"></a>
 
 ### Ref
+<a name="aws-resource-billing-billingview-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-billing-billingview-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-billing-billingview-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) that can be used to uniquely identify the billing view.
+`Arn`  <a name="Arn-fn::getatt"></a>
+ The Amazon Resource Name (ARN) that can be used to uniquely identify the billing view.
 
-`BillingViewType`
-
+`BillingViewType`  <a name="BillingViewType-fn::getatt"></a>
 The type of billing group.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time when the billing view was created.
 
-`OwnerAccountId`
-
+`OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
 The account owner of the billing view.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The time when the billing view was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Billing
-
-DataFilterExpression
 
 All content copied from https://docs.aws.amazon.com/.

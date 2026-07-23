@@ -2,91 +2,67 @@
 title: "AWS::QuickSight::Analysis TimeRangeDrillDownFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis TimeRangeDrillDownFilter
+<a name="aws-properties-quicksight-analysis-timerangedrilldownfilter"></a>
 
 The time range drill down filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-timerangedrilldownfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-timerangedrilldownfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnIdentifier,
-  "RangeMaximum" : String,
-  "RangeMinimum" : String,
-  "TimeGranularity" : String
+  "[Column](#cfn-quicksight-analysis-timerangedrilldownfilter-column)" : {{ColumnIdentifier}},
+  "[RangeMaximum](#cfn-quicksight-analysis-timerangedrilldownfilter-rangemaximum)" : {{String}},
+  "[RangeMinimum](#cfn-quicksight-analysis-timerangedrilldownfilter-rangeminimum)" : {{String}},
+  "[TimeGranularity](#cfn-quicksight-analysis-timerangedrilldownfilter-timegranularity)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-timerangedrilldownfilter-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnIdentifier
-  RangeMaximum: String
-  RangeMinimum: String
-  TimeGranularity: String
-
+```
+  [Column](#cfn-quicksight-analysis-timerangedrilldownfilter-column): {{
+    ColumnIdentifier}}
+  [RangeMaximum](#cfn-quicksight-analysis-timerangedrilldownfilter-rangemaximum): {{String}}
+  [RangeMinimum](#cfn-quicksight-analysis-timerangedrilldownfilter-rangeminimum): {{String}}
+  [TimeGranularity](#cfn-quicksight-analysis-timerangedrilldownfilter-timegranularity): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-timerangedrilldownfilter-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-analysis-timerangedrilldownfilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RangeMaximum`
-
+`RangeMaximum`  <a name="cfn-quicksight-analysis-timerangedrilldownfilter-rangemaximum"></a>
 The maximum value for the filter value range.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RangeMinimum`
-
+`RangeMinimum`  <a name="cfn-quicksight-analysis-timerangedrilldownfilter-rangeminimum"></a>
 The minimum value for the filter value range.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeGranularity`
-
+`TimeGranularity`  <a name="cfn-quicksight-analysis-timerangedrilldownfilter-timegranularity"></a>
 The level of time precision that is used to aggregate `DateTime` values.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeEqualityFilter
-
-TimeRangeFilter
+*Required*: Yes
+*Type*: String
+*Allowed values*: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

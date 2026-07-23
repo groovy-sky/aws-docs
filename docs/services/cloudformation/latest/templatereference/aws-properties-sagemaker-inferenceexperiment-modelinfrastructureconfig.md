@@ -2,69 +2,52 @@
 title: "AWS::SageMaker::InferenceExperiment ModelInfrastructureConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceExperiment ModelInfrastructureConfig
+<a name="aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig"></a>
 
 The configuration for the infrastructure that the model will be deployed to.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InfrastructureType" : String,
-  "RealTimeInferenceConfig" : RealTimeInferenceConfig
+  "[InfrastructureType](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-infrastructuretype)" : {{String}},
+  "[RealTimeInferenceConfig](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-realtimeinferenceconfig)" : {{RealTimeInferenceConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig-syntax.yaml"></a>
 
-```yaml
-
-  InfrastructureType: String
-  RealTimeInferenceConfig:
-    RealTimeInferenceConfig
-
+```
+  [InfrastructureType](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-infrastructuretype): {{String}}
+  [RealTimeInferenceConfig](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-realtimeinferenceconfig): {{
+    RealTimeInferenceConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig-properties"></a>
 
-`InfrastructureType`
-
+`InfrastructureType`  <a name="cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-infrastructuretype"></a>
 The inference option to which to deploy your model. Possible values are the following:
++ `RealTime`: Deploy to real-time inference.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `RealTimeInference`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `RealTime`: Deploy to real-time inference.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `RealTimeInference`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RealTimeInferenceConfig`
-
+`RealTimeInferenceConfig`  <a name="cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-realtimeinferenceconfig"></a>
 The infrastructure configuration for deploying the model to real-time inference.
-
-_Required_: Yes
-
-_Type_: [RealTimeInferenceConfig](aws-properties-sagemaker-inferenceexperiment-realtimeinferenceconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceExperimentSchedule
-
-ModelVariantConfig
+*Required*: Yes
+*Type*: [RealTimeInferenceConfig](aws-properties-sagemaker-inferenceexperiment-realtimeinferenceconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

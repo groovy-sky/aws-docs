@@ -2,171 +2,127 @@
 title: "AWS::DataZone::EnvironmentActions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::EnvironmentActions
+<a name="aws-resource-datazone-environmentactions"></a>
 
-The details about the specified action configured for an environment. For example, the
-details of the specified console links for an analytics tool that is available in this
-environment.
+The details about the specified action configured for an environment. For example, the details of the specified console links for an analytics tool that is available in this environment.
 
 ## Syntax
+<a name="aws-resource-datazone-environmentactions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datazone-environmentactions-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataZone::EnvironmentActions",
   "Properties" : {
-      "Description" : String,
-      "DomainIdentifier" : String,
-      "EnvironmentIdentifier" : String,
-      "Identifier" : String,
-      "Name" : String,
-      "Parameters" : AwsConsoleLinkParameters
+      "[Description](#cfn-datazone-environmentactions-description)" : {{String}},
+      "[DomainIdentifier](#cfn-datazone-environmentactions-domainidentifier)" : {{String}},
+      "[EnvironmentIdentifier](#cfn-datazone-environmentactions-environmentidentifier)" : {{String}},
+      "[Identifier](#cfn-datazone-environmentactions-identifier)" : {{String}},
+      "[Name](#cfn-datazone-environmentactions-name)" : {{String}},
+      "[Parameters](#cfn-datazone-environmentactions-parameters)" : {{AwsConsoleLinkParameters}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datazone-environmentactions-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataZone::EnvironmentActions
 Properties:
-  Description: String
-  DomainIdentifier: String
-  EnvironmentIdentifier: String
-  Identifier: String
-  Name: String
-  Parameters:
-    AwsConsoleLinkParameters
-
+  [Description](#cfn-datazone-environmentactions-description): {{String}}
+  [DomainIdentifier](#cfn-datazone-environmentactions-domainidentifier): {{String}}
+  [EnvironmentIdentifier](#cfn-datazone-environmentactions-environmentidentifier): {{String}}
+  [Identifier](#cfn-datazone-environmentactions-identifier): {{String}}
+  [Name](#cfn-datazone-environmentactions-name): {{String}}
+  [Parameters](#cfn-datazone-environmentactions-parameters): {{
+    AwsConsoleLinkParameters}}
 ```
 
 ## Properties
+<a name="aws-resource-datazone-environmentactions-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-datazone-environmentactions-description"></a>
 The environment action description.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainIdentifier`
-
+`DomainIdentifier`  <a name="cfn-datazone-environmentactions-domainidentifier"></a>
 The Amazon DataZone domain ID of the environment action.
+*Required*: No
+*Type*: String
+*Pattern*: `^dzd[-_][a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^dzd[-_][a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnvironmentIdentifier`
-
+`EnvironmentIdentifier`  <a name="cfn-datazone-environmentactions-environmentidentifier"></a>
 The environment ID of the environment action.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_-]{1,36}$`
+*Minimum*: `1`
+*Maximum*: `36`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_-]{1,36}$`
-
-_Minimum_: `1`
-
-_Maximum_: `36`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Identifier`
-
+`Identifier`  <a name="cfn-datazone-environmentactions-identifier"></a>
 The ID of the environment action.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
+*Minimum*: `1`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,36}$`
-
-_Minimum_: `1`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-datazone-environmentactions-name"></a>
 The name of the environment action.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w -]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w -]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Parameters`
-
+`Parameters`  <a name="cfn-datazone-environmentactions-parameters"></a>
 The parameters of the environment action.
-
-_Required_: No
-
-_Type_: [AwsConsoleLinkParameters](aws-properties-datazone-environmentactions-awsconsolelinkparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [AwsConsoleLinkParameters](aws-properties-datazone-environmentactions-awsconsolelinkparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-datazone-environmentactions-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datazone-environmentactions-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and
-`EnvironmentActionId`, which uniquely identifies the environment action. For example: `{ "Ref":
-    "MyEnvironmentAction" }` for the resource with the logical ID `MyEnvironmentAction`,
-`Ref` returns `DomainId|EnvironmentActionId`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and `EnvironmentActionId`, which uniquely identifies the environment action. For example: `{ "Ref": "MyEnvironmentAction" }` for the resource with the logical ID `MyEnvironmentAction`, `Ref` returns `DomainId|EnvironmentActionId`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datazone-environmentactions-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DomainId`
+####
+<a name="aws-resource-datazone-environmentactions-return-values-fn--getatt-fn--getatt"></a>
 
+`DomainId`  <a name="DomainId-fn::getatt"></a>
 The Amazon DataZone domain ID of the environment action.
 
-`EnvironmentId`
-
+`EnvironmentId`  <a name="EnvironmentId-fn::getatt"></a>
 The environment ID of the environment action.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the environment action.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnvironmentParameter
-
-AwsConsoleLinkParameters
 
 All content copied from https://docs.aws.amazon.com/.

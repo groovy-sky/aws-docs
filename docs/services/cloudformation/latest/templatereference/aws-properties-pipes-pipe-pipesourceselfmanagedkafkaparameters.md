@@ -2,188 +2,126 @@
 title: "AWS::Pipes::Pipe PipeSourceSelfManagedKafkaParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeSourceSelfManagedKafkaParameters
+<a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters"></a>
 
 The parameters for using a self-managed Apache Kafka stream as a source.
 
-A _self managed_ cluster refers to any Apache Kafka cluster not hosted by AWS.
-This includes both clusters you manage yourself, as well as those hosted by a third-party
-provider, such as [Confluent\
-Cloud](https://www.confluent.io/), [CloudKarafka](https://www.cloudkarafka.com/), or [Redpanda](https://redpanda.com/). For more information, see [Apache Kafka streams as a source](../../../eventbridge/latest/userguide/eb-pipes-kafka.md) in the _Amazon EventBridge User Guide_.
+A *self managed* cluster refers to any Apache Kafka cluster not hosted by AWS. This includes both clusters you manage yourself, as well as those hosted by a third-party provider, such as [Confluent Cloud](https://www.confluent.io/), [CloudKarafka](https://www.cloudkarafka.com/), or [Redpanda](https://redpanda.com/). For more information, see [Apache Kafka streams as a source](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-kafka.html) in the *Amazon EventBridge User Guide*.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalBootstrapServers" : [ String, ... ],
-  "BatchSize" : Integer,
-  "ConsumerGroupID" : String,
-  "Credentials" : SelfManagedKafkaAccessConfigurationCredentials,
-  "MaximumBatchingWindowInSeconds" : Integer,
-  "ServerRootCaCertificate" : String,
-  "StartingPosition" : String,
-  "TopicName" : String,
-  "Vpc" : SelfManagedKafkaAccessConfigurationVpc
+  "[AdditionalBootstrapServers](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-additionalbootstrapservers)" : {{[ String, ... ]}},
+  "[BatchSize](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-batchsize)" : {{Integer}},
+  "[ConsumerGroupID](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-consumergroupid)" : {{String}},
+  "[Credentials](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-credentials)" : {{SelfManagedKafkaAccessConfigurationCredentials}},
+  "[MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-maximumbatchingwindowinseconds)" : {{Integer}},
+  "[ServerRootCaCertificate](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-serverrootcacertificate)" : {{String}},
+  "[StartingPosition](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-startingposition)" : {{String}},
+  "[TopicName](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-topicname)" : {{String}},
+  "[Vpc](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-vpc)" : {{SelfManagedKafkaAccessConfigurationVpc}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalBootstrapServers:
-    - String
-  BatchSize: Integer
-  ConsumerGroupID: String
-  Credentials:
-    SelfManagedKafkaAccessConfigurationCredentials
-  MaximumBatchingWindowInSeconds: Integer
-  ServerRootCaCertificate: String
-  StartingPosition: String
-  TopicName: String
-  Vpc:
-    SelfManagedKafkaAccessConfigurationVpc
-
+```
+  [AdditionalBootstrapServers](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-additionalbootstrapservers): {{
+    - String}}
+  [BatchSize](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-batchsize): {{Integer}}
+  [ConsumerGroupID](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-consumergroupid): {{String}}
+  [Credentials](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-credentials): {{
+    SelfManagedKafkaAccessConfigurationCredentials}}
+  [MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-maximumbatchingwindowinseconds): {{Integer}}
+  [ServerRootCaCertificate](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-serverrootcacertificate): {{String}}
+  [StartingPosition](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-startingposition): {{String}}
+  [TopicName](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-topicname): {{String}}
+  [Vpc](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-vpc): {{
+    SelfManagedKafkaAccessConfigurationVpc}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters-properties"></a>
 
-`AdditionalBootstrapServers`
-
+`AdditionalBootstrapServers`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-additionalbootstrapservers"></a>
 An array of server URLs.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 0`
+*Maximum*: `300 | 2`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 0`
-
-_Maximum_: `300 | 2`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BatchSize`
-
+`BatchSize`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-batchsize"></a>
 The maximum number of records to include in each batch.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConsumerGroupID`
-
+`ConsumerGroupID`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-consumergroupid"></a>
 The name of the destination queue to consume.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-\/*:_+=.@-]*$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-\/*:_+=.@-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Credentials`
-
+`Credentials`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-credentials"></a>
 The credentials needed to access the resource.
+*Required*: No
+*Type*: [SelfManagedKafkaAccessConfigurationCredentials](aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SelfManagedKafkaAccessConfigurationCredentials](aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumBatchingWindowInSeconds`
-
+`MaximumBatchingWindowInSeconds`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-maximumbatchingwindowinseconds"></a>
 The maximum length of a time to wait for events.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerRootCaCertificate`
-
+`ServerRootCaCertificate`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-serverrootcacertificate"></a>
 The ARN of the Secrets Manager secret used for certification.
+*Required*: No
+*Type*: String
+*Pattern*: `^(^arn:aws([a-z]|\-)*:secretsmanager:([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}):(\d{12}):secret:.+)$`
+*Minimum*: `1`
+*Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(^arn:aws([a-z]|\-)*:secretsmanager:([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}):(\d{12}):secret:.+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `1600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartingPosition`
-
+`StartingPosition`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-startingposition"></a>
 The position in a stream from which to start reading.
+*Required*: No
+*Type*: String
+*Allowed values*: `TRIM_HORIZON | LATEST`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TRIM_HORIZON | LATEST`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TopicName`
-
+`TopicName`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-topicname"></a>
 The name of the topic that the pipe will read from.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^.]([a-zA-Z0-9\-_.]+)$`
+*Minimum*: `1`
+*Maximum*: `249`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^.]([a-zA-Z0-9\-_.]+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `249`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Vpc`
-
+`Vpc`  <a name="cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-vpc"></a>
 This structure specifies the VPC subnets and security groups for the stream, and whether a public IP address is to be used.
-
-_Required_: No
-
-_Type_: [SelfManagedKafkaAccessConfigurationVpc](aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeSourceRabbitMQBrokerParameters
-
-PipeSourceSqsQueueParameters
+*Required*: No
+*Type*: [SelfManagedKafkaAccessConfigurationVpc](aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

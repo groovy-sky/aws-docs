@@ -2,67 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject ImageStandardGenerativeField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject ImageStandardGenerativeField
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield"></a>
 
 Settings for generating descriptions of images.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield-syntax.json"></a>
 
-```json
-
+```
 {
-  "State" : String,
-  "Types" : [ String, ... ]
+  "[State](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-state)" : {{String}},
+  "[Types](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-types)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield-syntax.yaml"></a>
 
-```yaml
-
-  State: String
-  Types:
-    - String
-
+```
+  [State](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-state): {{String}}
+  [Types](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-types): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield-properties"></a>
 
-`State`
-
+`State`  <a name="cfn-bedrock-dataautomationproject-imagestandardgenerativefield-state"></a>
 Whether generating descriptions is enabled for images.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Types`
-
+`Types`  <a name="cfn-bedrock-dataautomationproject-imagestandardgenerativefield-types"></a>
 Settings for generating descriptions of images.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageStandardExtraction
-
-ImageStandardOutputConfiguration
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

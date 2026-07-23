@@ -2,189 +2,149 @@
 title: "AWS::Events::Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Endpoint
+<a name="aws-resource-events-endpoint"></a>
 
-A global endpoint used to improve your application's availability by making it
-regional-fault tolerant. For more information about global endpoints, see [Making\
-applications Regional-fault tolerant with global endpoints and event replication](../../../eventbridge/latest/userguide/eb-global-endpoints.md) in
-the _Amazon EventBridge User Guide_.
+A global endpoint used to improve your application's availability by making it regional-fault tolerant. For more information about global endpoints, see [Making applications Regional-fault tolerant with global endpoints and event replication](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html) in the * *Amazon EventBridge User Guide* *.
 
 ## Syntax
+<a name="aws-resource-events-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-events-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Events::Endpoint",
   "Properties" : {
-      "Description" : String,
-      "EventBuses" : [ EndpointEventBus, ... ],
-      "Name" : String,
-      "ReplicationConfig" : ReplicationConfig,
-      "RoleArn" : String,
-      "RoutingConfig" : RoutingConfig
+      "[Description](#cfn-events-endpoint-description)" : {{String}},
+      "[EventBuses](#cfn-events-endpoint-eventbuses)" : {{[ EndpointEventBus, ... ]}},
+      "[Name](#cfn-events-endpoint-name)" : {{String}},
+      "[ReplicationConfig](#cfn-events-endpoint-replicationconfig)" : {{ReplicationConfig}},
+      "[RoleArn](#cfn-events-endpoint-rolearn)" : {{String}},
+      "[RoutingConfig](#cfn-events-endpoint-routingconfig)" : {{RoutingConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-events-endpoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Events::Endpoint
 Properties:
-  Description: String
-  EventBuses:
-    - EndpointEventBus
-  Name: String
-  ReplicationConfig:
-    ReplicationConfig
-  RoleArn: String
-  RoutingConfig:
-    RoutingConfig
-
+  [Description](#cfn-events-endpoint-description): {{String}}
+  [EventBuses](#cfn-events-endpoint-eventbuses): {{
+    - EndpointEventBus}}
+  [Name](#cfn-events-endpoint-name): {{String}}
+  [ReplicationConfig](#cfn-events-endpoint-replicationconfig): {{
+    ReplicationConfig}}
+  [RoleArn](#cfn-events-endpoint-rolearn): {{String}}
+  [RoutingConfig](#cfn-events-endpoint-routingconfig): {{
+    RoutingConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-events-endpoint-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-events-endpoint-description"></a>
 A description for the endpoint.
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBuses`
-
+`EventBuses`  <a name="cfn-events-endpoint-eventbuses"></a>
 The event buses being used by the endpoint.
+*Exactly*: `2`
+*Required*: Yes
+*Type*: Array of [EndpointEventBus](aws-properties-events-endpoint-endpointeventbus.md)
+*Minimum*: `2`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Exactly_: `2`
-
-_Required_: Yes
-
-_Type_: Array of [EndpointEventBus](aws-properties-events-endpoint-endpointeventbus.md)
-
-_Minimum_: `2`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-events-endpoint-name"></a>
 The name of the endpoint.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\.\-_A-Za-z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ReplicationConfig`  <a name="cfn-events-endpoint-replicationconfig"></a>
+Whether event replication was enabled or disabled for this endpoint. The default state is `ENABLED` which means you must supply a `RoleArn`. If you don't have a `RoleArn` or you don't want event replication enabled, set the state to `DISABLED`.
+*Required*: No
+*Type*: [ReplicationConfig](aws-properties-events-endpoint-replicationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[\.\-_A-Za-z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ReplicationConfig`
-
-Whether event replication was enabled or disabled for this endpoint. The default state is
-`ENABLED` which means you must supply a `RoleArn`. If you don't have a
-`RoleArn` or you don't want event replication enabled, set the state to
-`DISABLED`.
-
-_Required_: No
-
-_Type_: [ReplicationConfig](aws-properties-events-endpoint-replicationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-events-endpoint-rolearn"></a>
 The ARN of the role used by event replication for the endpoint.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-z-]*:iam::\d{12}:role\/[\w+=,.@/-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z-]*:iam::\d{12}:role\/[\w+=,.@/-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingConfig`
-
+`RoutingConfig`  <a name="cfn-events-endpoint-routingconfig"></a>
 The routing configuration of the endpoint.
-
-_Required_: Yes
-
-_Type_: [RoutingConfig](aws-properties-events-endpoint-routingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: [RoutingConfig](aws-properties-events-endpoint-routingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-events-endpoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-events-endpoint-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns Endpoint ID, such as
-`mystack-Endpoint-ABCDEFGHIJK`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns Endpoint ID, such as `mystack-Endpoint-ABCDEFGHIJK`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-events-endpoint-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-events-endpoint-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the endpoint.
 
-`EndpointId`
-
+`EndpointId`  <a name="EndpointId-fn::getatt"></a>
 The ID of the endpoint.
 
-`EndpointUrl`
-
+`EndpointUrl`  <a name="EndpointUrl-fn::getatt"></a>
 The URL of the endpoint.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The main Region of the endpoint.
 
-`StateReason`
-
+`StateReason`  <a name="StateReason-fn::getatt"></a>
 The reason the endpoint is in its current state.
 
 ## Examples
+<a name="aws-resource-events-endpoint--examples"></a>
 
-- [Create a global endpoint with event replication](#aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication)
-
-- [Create a global endpoint without event replication](#aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication)
+**Topics**
++ [Create a global endpoint with event replication](#aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication)
++ [Create a global endpoint without event replication](#aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication)
 
 ### Create a global endpoint with event replication
+<a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication"></a>
 
 The following example creates a global endpoint with event replication enabled.
 
 #### JSON
+<a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "This template will create an Endpoint resource",
@@ -239,9 +199,9 @@ The following example creates a global endpoint with event replication enabled.
 ```
 
 #### YAML
+<a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication--yaml"></a>
 
-```yaml
-
+```
   AWSTemplateFormatVersion: "2010-09-09"
   Description: "This template will create an Endpoint resource"
   Resources:
@@ -268,13 +228,14 @@ The following example creates a global endpoint with event replication enabled.
 ```
 
 ### Create a global endpoint without event replication
+<a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication"></a>
 
 The following example creates a global endpoint with event replication disabled.
 
 #### JSON
+<a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "This template will create an Endpoint resource",
@@ -326,9 +287,9 @@ The following example creates a global endpoint with event replication disabled.
 ```
 
 #### YAML
+<a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication--yaml"></a>
 
-```yaml
-
+```
   AWSTemplateFormatVersion: "2010-09-09"
   Description: "This template will create an Endpoint resource"
   Resources:
@@ -352,11 +313,5 @@ The following example creates a global endpoint with event replication disabled.
     SampleEndpointName:
       Value: !Ref SampleEndpoint
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResourceParameters
-
-EndpointEventBus
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,69 +3,61 @@ title: "Step 1: Create a table in DynamoDB"
 ---
 
 # Step 1: Create a table in DynamoDB
+<a name="getting-started-step-1"></a>
 
-In this step, you create a `Music` table in Amazon DynamoDB. The table has the
-following details:
+In this step, you create a `Music` table in Amazon DynamoDB. The table has the following details:
++ Partition key — `Artist`
++ Sort key — `SongTitle`
 
-- Partition key — `Artist`
+For more information about table operations, see [Working with tables and data in DynamoDB](WorkingWithTables.md).
 
-- Sort key — `SongTitle`
+**Note**
+Before you begin, make sure that you followed the steps in [Prerequisites](GettingStartedDynamoDB.md#GettingStarted.SettingUp.DynamoWebService).
 
-For more information about table operations, see [Working with tables and data in DynamoDB](workingwithtables.md).
-
-###### Note
-
-Before you begin, make sure that you followed the steps in [Prerequisites](gettingstarteddynamodb.md#GettingStarted.SettingUp.DynamoWebService).
+## AWS Management Console
+<a name="getting-started-step-1-Console"></a>
 
 To create a new `Music` table using the DynamoDB console:
 
-1. Sign in to the AWS Management Console and open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+1. Sign in to the AWS Management Console and open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-2. In the left navigation pane, choose **Tables**.
+1. In the left navigation pane, choose **Tables**.
 
-3. Choose **Create table**.
+1. Choose **Create table**.
 
-4. Enter the **Table details** as follows:
-1. For **Table name**, enter
-       `Music`.
+1. Enter the **Table details ** as follows:
 
-2. For **Partition key**, enter
-       `Artist`.
+   1. For **Table name**, enter **Music**.
 
-3. For **Sort key**, enter
-       `SongTitle`.
-5. For **Table settings**, keep the default selection of
-    **Default settings**.
+   1. For **Partition key**, enter **Artist**.
 
-6. Choose **Create table** to create the table.
+   1. For **Sort key**, enter **SongTitle**.
 
-![The Create table page with the Table details filled in.](https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/GettingStarted/CreateTableMusic.png)
+1. For **Table settings**, keep the default selection of **Default settings**.
 
-7. Once the table is in `ACTIVE` status, we recommend that you
-    enable [Point-in-time backups for DynamoDB](point-in-time-recovery.md) on the table by performing
-    the following steps:
-1. Choose the table name to open the table.
+1. Choose **Create table** to create the table.
+![The Create table page with the Table details filled in.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/GettingStarted/CreateTableMusic.png)
 
-2. Choose **Backups**.
+1. Once the table is in `ACTIVE` status, we recommend that you enable [Point-in-time backups for DynamoDB](Point-in-time-recovery.md) on the table by performing the following steps:
 
-3. Choose **Edit** in the
-       **Point-in-time recovery (PITR)**
-       section.
+   1. Choose the table name to open the table.
 
-4. On the **Edit point-in-time recovery**
-      **settings** page, choose **Turn on**
-      **point-in-time recovery**.
+   1. Choose **Backups**.
 
-5. Choose **Save changes**.
+   1. Choose **Edit** in the **Point-in-time recovery (PITR)** section.
 
-The following AWS CLI example creates a new `Music` table using
-`create-table`.
+   1. On the **Edit point-in-time recovery settings** page, choose **Turn on point-in-time recovery**.
+
+   1. Choose **Save changes**.
+
+## AWS CLI
+<a name="getting-started-step-1-CLI"></a>
+
+The following AWS CLI example creates a new `Music` table using `create-table`.
 
 **Linux**
 
-```nohighlight
-
+```
 aws dynamodb create-table \
     --table-name Music \
     --attribute-definitions \
@@ -78,8 +70,7 @@ aws dynamodb create-table \
 
 **Windows CMD**
 
-```nohighlight
-
+```
 aws dynamodb create-table ^
     --table-name Music ^
     --attribute-definitions ^
@@ -92,8 +83,7 @@ aws dynamodb create-table ^
 
 Using `create-table` returns the following sample result.
 
-```JSON
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -136,61 +126,48 @@ Using `create-table` returns the following sample result.
 }
 ```
 
-Note that the value of the `TableStatus` field is set to
-`CREATING`.
+Note that the value of the `TableStatus` field is set to `CREATING`.
 
-To verify that DynamoDB has finished creating the `Music` table, use
-the `describe-table` command.
+To verify that DynamoDB has finished creating the `Music` table, use the `describe-table` command.
 
 **Linux**
 
-```nohighlight
-
+```
  aws dynamodb describe-table --table-name Music | grep TableStatus
 ```
 
 **Windows CMD**
 
-```nohighlight
-
+```
  aws dynamodb describe-table --table-name Music | findstr TableStatus
 ```
 
-This command returns the following result. When DynamoDB finishes creating the
-table, the value of the `TableStatus` field is set to
-`ACTIVE`.
+This command returns the following result. When DynamoDB finishes creating the table, the value of the `TableStatus` field is set to `ACTIVE`.
 
-```nohighlight
-
+```
 "TableStatus": "ACTIVE",
 ```
 
-Once the table is in `ACTIVE` status, it's considered best practice
-to enable [Point-in-time backups for DynamoDB](point-in-time-recovery.md) on the table by running the
-following command:
+Once the table is in `ACTIVE` status, it's considered best practice to enable [Point-in-time backups for DynamoDB](Point-in-time-recovery.md) on the table by running the following command:
 
 **Linux**
 
-```nohighlight
-
+```
 aws dynamodb update-continuous-backups \
     --table-name Music \
     --point-in-time-recovery-specification \
         PointInTimeRecoveryEnabled=true
-
 ```
 
 **Windows CMD**
 
-```nohighlight
-
+```
 aws dynamodb update-continuous-backups --table-name Music --point-in-time-recovery-specification PointInTimeRecoveryEnabled=true
 ```
 
 This command returns the following result.
 
 ```
-
 {
     "ContinuousBackupsDescription": {
         "ContinuousBackupsStatus": "ENABLED",
@@ -203,27 +180,21 @@ This command returns the following result.
 }
 ```
 
-###### Note
+**Note**
+There are cost implications to enabling continuous backups with point-in-time recovery. For more information about pricing, see [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing).
 
-There are cost implications to enabling continuous backups with
-point-in-time recovery. For more information about pricing, see [Amazon DynamoDB\
-pricing](https://aws.amazon.com/dynamodb/pricing).
+## AWS SDK
+<a name="getting-started-step-1-SDK"></a>
 
-The following code examples show how to create a DynamoDB table using an AWS
-SDK.
+The following code examples show how to create a DynamoDB table using an AWS SDK.
 
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
     /// <summary>
     /// Creates a new Amazon DynamoDB table and then waits for the new
     /// table to become active.
@@ -307,25 +278,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
             throw;
         }
     }
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/CreateTable) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for .NET API Reference_.
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
-```bash
-
+```
 ###############################################################################
 # function dynamodb_create_table
 #
@@ -415,13 +377,10 @@ function dynamodb_create_table() {
 
   return 0
 }
-
 ```
-
 The utility functions used in this example.
 
-```bash
-
+```
 ###############################################################################
 # function iecho
 #
@@ -478,25 +437,16 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable) in *AWS CLI Command Reference*.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
-in _AWS CLI Command Reference_.
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
 //! Create an Amazon DynamoDB table.
 /*!
   \sa createTable()
@@ -545,13 +495,10 @@ bool AwsDoc::DynamoDB::createTable(const Aws::String &tableName,
 
     return waitTableActive(tableName, dynamoClient);
 }
-
 ```
-
 Code that waits for the table to become active.
 
-```cpp
-
+```
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -590,36 +537,27 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
     }
     return false;
 }
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CreateTable) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for C++ API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **Example 1: To create a table with tags**
-
 The following `create-table` example uses the specified attributes and key schema to create a table named `MusicCollection`. This table uses provisioned throughput and is encrypted at rest using the default AWS owned CMK. The command also applies a tag to the table, with a key of `Owner` and a value of `blueTeam`.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name MusicCollection \
-    --attribute-definitions AttributeName=Artist,AttributeType=S AttributeName=SongTitle,AttributeType=S \
-    --key-schema AttributeName=Artist,KeyType=HASH AttributeName=SongTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 \
-    --tags Key=Owner,Value=blueTeam
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{MusicCollection}} \
+    --attribute-definitions {{AttributeName=Artist,AttributeType=S}} {{AttributeName=SongTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=Artist,KeyType=HASH}} {{AttributeName=SongTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=5,WriteCapacityUnits=5}} \
+    --tags {{Key=Owner,Value=blueTeam}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -657,27 +595,20 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To create a table in On-Demand Mode**
-
 The following example creates a table called `MusicCollection` using on-demand mode, rather than provisioned throughput mode. This is useful for tables with unpredictable workloads.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name MusicCollection \
-    --attribute-definitions AttributeName=Artist,AttributeType=S AttributeName=SongTitle,AttributeType=S \
-    --key-schema AttributeName=Artist,KeyType=HASH AttributeName=SongTitle,KeyType=RANGE \
-    --billing-mode PAY_PER_REQUEST
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{MusicCollection}} \
+    --attribute-definitions {{AttributeName=Artist,AttributeType=S}} {{AttributeName=SongTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=Artist,KeyType=HASH}} {{AttributeName=SongTitle,KeyType=RANGE}} \
+    --billing-mode {{PAY_PER_REQUEST}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -718,28 +649,21 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To create a table and encrypt it with a Customer Managed CMK**
-
 The following example creates a table named `MusicCollection` and encrypts it using a customer managed CMK.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name MusicCollection \
-    --attribute-definitions AttributeName=Artist,AttributeType=S AttributeName=SongTitle,AttributeType=S \
-    --key-schema AttributeName=Artist,KeyType=HASH AttributeName=SongTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 \
-    --sse-specification Enabled=true,SSEType=KMS,KMSMasterKeyId=abcd1234-abcd-1234-a123-ab1234a1b234
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{MusicCollection}} \
+    --attribute-definitions {{AttributeName=Artist,AttributeType=S}} {{AttributeName=SongTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=Artist,KeyType=HASH}} {{AttributeName=SongTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=5,WriteCapacityUnits=5}} \
+    --sse-specification {{Enabled=true,SSEType=KMS,KMSMasterKeyId=abcd1234-abcd-1234-a123-ab1234a1b234}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -782,20 +706,16 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To create a table with a Local Secondary Index**
-
 The following example uses the specified attributes and key schema to create a table named `MusicCollection` with a Local Secondary Index named `AlbumTitleIndex`.
 
-```nohighlight
-
+```
 aws dynamodb create-table \
-    --table-name MusicCollection \
-    --attribute-definitions AttributeName=Artist,AttributeType=S AttributeName=SongTitle,AttributeType=S AttributeName=AlbumTitle,AttributeType=S \
-    --key-schema AttributeName=Artist,KeyType=HASH AttributeName=SongTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
+    --table-name {{MusicCollection}} \
+    --attribute-definitions {{AttributeName=Artist,AttributeType=S}} {{AttributeName=SongTitle,AttributeType=S}} {{AttributeName=AlbumTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=Artist,KeyType=HASH}} {{AttributeName=SongTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
     --local-secondary-indexes \
         "[
             {
@@ -810,13 +730,10 @@ aws dynamodb create-table \
                 }
             }
         ]"
-
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -883,21 +800,17 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 5: To create a table with a Global Secondary Index**
-
 The following example creates a table named `GameScores` with a Global Secondary Index called `GameTitleIndex`. The base table has a partition key of `UserId` and a sort key of `GameTitle`, allowing you to find an individual user's best score for a specific game efficiently, whereas the GSI has a partition key of `GameTitle` and a sort key of `TopScore`, allowing you to quickly find the overall highest score for a particular game.
 
-```nohighlight
-
+```
 aws dynamodb create-table \
-    --table-name GameScores \
-    --attribute-definitions AttributeName=UserId,AttributeType=S AttributeName=GameTitle,AttributeType=S AttributeName=TopScore,AttributeType=N \
-    --key-schema AttributeName=UserId,KeyType=HASH \
-                AttributeName=GameTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
+    --table-name {{GameScores}} \
+    --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} {{AttributeName=TopScore,AttributeType=N}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} \
+                {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
     --global-secondary-indexes \
         "[
             {
@@ -916,13 +829,10 @@ aws dynamodb create-table \
                 }
             }
         ]"
-
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -994,28 +904,21 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 6: To create a table with multiple Global Secondary Indexes at once**
-
 The following example creates a table named `GameScores` with two Global Secondary Indexes. The GSI schemas are passed via a file, rather than on the command line.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name GameScores \
-    --attribute-definitions AttributeName=UserId,AttributeType=S AttributeName=GameTitle,AttributeType=S AttributeName=TopScore,AttributeType=N AttributeName=Date,AttributeType=S \
-    --key-schema AttributeName=UserId,KeyType=HASH AttributeName=GameTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
-    --global-secondary-indexes file://gsi.json
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{GameScores}} \
+    --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} {{AttributeName=TopScore,AttributeType=N}} {{AttributeName=Date,AttributeType=S}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
+    --global-secondary-indexes {{file://gsi.json}}
+```
 Contents of `gsi.json`:
 
-```nohighlight
-
+```
 [
     {
         "IndexName": "GameTitleIndex",
@@ -1059,11 +962,9 @@ Contents of `gsi.json`:
     }
 ]
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -1161,28 +1062,21 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 7: To create a table with Streams enabled**
-
 The following example creates a table called `GameScores` with DynamoDB Streams enabled. Both new and old images of each item will be written to the stream.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name GameScores \
-    --attribute-definitions AttributeName=UserId,AttributeType=S AttributeName=GameTitle,AttributeType=S \
-    --key-schema AttributeName=UserId,KeyType=HASH AttributeName=GameTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
-    --stream-specification StreamEnabled=TRUE,StreamViewType=NEW_AND_OLD_IMAGES
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{GameScores}} \
+    --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
+    --stream-specification {{StreamEnabled=TRUE,StreamViewType=NEW_AND_OLD_IMAGES}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -1226,28 +1120,21 @@ Output:
     }
 }
 ```
-
-For more information, see [Basic Operations for Tables](workingwithtables-basics.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 8: To create a table with Keys-Only Stream enabled**
-
 The following example creates a table called `GameScores` with DynamoDB Streams enabled. Only the key attributes of modified items are written to the stream.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name GameScores \
-    --attribute-definitions AttributeName=UserId,AttributeType=S AttributeName=GameTitle,AttributeType=S \
-    --key-schema AttributeName=UserId,KeyType=HASH AttributeName=GameTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
-    --stream-specification StreamEnabled=TRUE,StreamViewType=KEYS_ONLY
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{GameScores}} \
+    --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
+    --stream-specification {{StreamEnabled=TRUE,StreamViewType=KEYS_ONLY}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -1292,28 +1179,21 @@ Output:
     }
 }
 ```
-
-For more information, see [Change data capture for DynamoDB Streams](streams.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 9: To create a table with the Standard Infrequent Access class**
-
 The following example creates a table called `GameScores` and assigns the Standard-Infrequent Access (DynamoDB Standard-IA) table class. This table class is optimized for storage being the dominant cost.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name GameScores \
-    --attribute-definitions AttributeName=UserId,AttributeType=S AttributeName=GameTitle,AttributeType=S \
-    --key-schema AttributeName=UserId,KeyType=HASH AttributeName=GameTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
-    --table-class STANDARD_INFREQUENT_ACCESS
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{GameScores}} \
+    --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
+    --table-class {{STANDARD_INFREQUENT_ACCESS}}
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -1355,28 +1235,21 @@ Output:
     }
 }
 ```
-
-For more information, see [Table classes](howitworks-tableclasses.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Table classes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.TableClasses.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 10: To Create a table with Delete Protection enabled**
-
 The following example creates a table called `GameScores` and enables deletion protection.
 
-```nohighlight
-
-aws dynamodb create-table \
-    --table-name GameScores \
-    --attribute-definitions AttributeName=UserId,AttributeType=S AttributeName=GameTitle,AttributeType=S \
-    --key-schema AttributeName=UserId,KeyType=HASH AttributeName=GameTitle,KeyType=RANGE \
-    --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5 \
-    --deletion-protection-enabled
-
 ```
-
+aws dynamodb create-table \
+    --table-name {{GameScores}} \
+    --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
+    --deletion-protection-enabled
+```
 Output:
 
-```nohighlight
-
+```
 {
     "TableDescription": {
         "AttributeDefinitions": [
@@ -1415,25 +1288,16 @@ Output:
     }
 }
 ```
+For more information, see [Using deletion protection](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.DeletionProtection) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [CreateTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/create-table.html) in *AWS CLI Command Reference*.
 
-For more information, see [Using deletion protection](workingwithtables-basics.md#WorkingWithTables.Basics.DeletionProtection) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[CreateTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/create-table.html)
-in _AWS CLI Command Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
-```go
-
+```
 import (
 	"context"
 	"errors"
@@ -1492,25 +1356,16 @@ func (basics TableBasics) CreateMovieTable(ctx context.Context) (*types.TableDes
 	}
 	return tableDesc, err
 }
-
 ```
++  For API details, see [CreateTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.CreateTable) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[CreateTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
-```java
-
+```
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -1601,25 +1456,16 @@ public class CreateTable {
         return "";
     }
 }
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-```javascript
-
+```
 import { CreateTableCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -1649,25 +1495,14 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.md#dynamodb-examples-using-tables-creating-a-table).
-
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/CreateTableCommand)
-in _AWS SDK for JavaScript API Reference_.
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.html#dynamodb-examples-using-tables-creating-a-table).
++  For API details, see [CreateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/CreateTableCommand) in *AWS SDK for JavaScript API Reference*.
 
 **SDK for JavaScript (v2)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb).
-
-```javascript
-
+```
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -1715,27 +1550,17 @@ ddb.createTable(params, function (err, data) {
     console.log("Table Created", data);
   }
 });
-
 ```
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-examples-using-tables.html#dynamodb-examples-using-tables-creating-a-table).
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/CreateTable) in *AWS SDK for JavaScript API Reference*.
 
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-examples-using-tables.md#dynamodb-examples-using-tables-creating-a-table).
-
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for JavaScript API Reference_.
-
-Kotlin
+------
+#### [ Kotlin ]
 
 **SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb).
-
-```kotlin
-
+```
 suspend fun createNewTable(
     tableNameVal: String,
     key: String,
@@ -1772,27 +1597,17 @@ suspend fun createNewTable(
         return tableArn
     }
 }
-
 ```
++  For API details, see [CreateTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
-- For API details, see
-[CreateTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-in _AWS SDK for Kotlin API reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 Create a table.
 
-```php
-
+```
         $tableName = "ddb_demo_table_$uuid";
         $service->createTable(
             $tableName,
@@ -1821,32 +1636,24 @@ Create a table.
             'ProvisionedThroughput' => ['ReadCapacityUnits' => 10, 'WriteCapacityUnits' => 10],
         ]);
     }
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/CreateTable) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for PHP API Reference_.
-
-PowerShell
+------
+#### [ PowerShell ]
 
 **Tools for PowerShell V4**
-
 **Example 1: This example creates a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range). The schema used to construct the table can be piped into each cmdlet as shown or specified using the -Schema parameter.**
 
-```powershell
-
+```
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 $schema | Add-DDBKeySchema -KeyName "Subject" -KeyType RANGE -KeyDataType "S"
 $schema | New-DDBTable -TableName "Thread" -ReadCapacity 10 -WriteCapacity 5
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 AttributeDefinitions   : {ForumName, Subject}
 TableName              : Thread
 KeySchema              : {ForumName, Subject}
@@ -1857,23 +1664,18 @@ TableSizeBytes         : 0
 ItemCount              : 0
 LocalSecondaryIndexes  : {}
 ```
-
 **Example 2: This example creates a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range). A local secondary index is also defined. The key of the local secondary index will be set automatically from the primary hash key on the table (ForumName). The schema used to construct the table can be piped into each cmdlet as shown or specified using the -Schema parameter.**
 
-```powershell
-
+```
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 $schema | Add-DDBKeySchema -KeyName "Subject" -KeyDataType "S"
 $schema | Add-DDBIndexSchema -IndexName "LastPostIndex" -RangeKeyName "LastPostDateTime" -RangeKeyDataType "S" -ProjectionType "keys_only"
 $schema | New-DDBTable -TableName "Thread" -ReadCapacity 10 -WriteCapacity 5
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 AttributeDefinitions   : {ForumName, LastPostDateTime, Subject}
 TableName              : Thread
 KeySchema              : {ForumName, Subject}
@@ -1884,11 +1686,9 @@ TableSizeBytes         : 0
 ItemCount              : 0
 LocalSecondaryIndexes  : {LastPostIndex}
 ```
-
 **Example 3: This example shows how to use a single pipeline to create a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range) and a local secondary index. The Add-DDBKeySchema and Add-DDBIndexSchema create a new TableSchema object for you if one is not supplied from the pipeline or the -Schema parameter.**
 
-```powershell
-
+```
 New-DDBTableSchema |
   Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S" |
   Add-DDBKeySchema -KeyName "Subject" -KeyDataType "S" |
@@ -1897,13 +1697,10 @@ New-DDBTableSchema |
                      -RangeKeyDataType "S" `
                      -ProjectionType "keys_only" |
   New-DDBTable -TableName "Thread" -ReadCapacity 10 -WriteCapacity 5
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 AttributeDefinitions   : {ForumName, LastPostDateTime, Subject}
 TableName              : Thread
 KeySchema              : {ForumName, Subject}
@@ -1914,28 +1711,20 @@ TableSizeBytes         : 0
 ItemCount              : 0
 LocalSecondaryIndexes  : {LastPostIndex}
 ```
-
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/powershell/v4/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
++  For API details, see [CreateTable](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
 
 **Tools for PowerShell V5**
-
 **Example 1: This example creates a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range). The schema used to construct the table can be piped into each cmdlet as shown or specified using the -Schema parameter.**
 
-```powershell
-
+```
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 $schema | Add-DDBKeySchema -KeyName "Subject" -KeyType RANGE -KeyDataType "S"
 $schema | New-DDBTable -TableName "Thread" -ReadCapacity 10 -WriteCapacity 5
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 AttributeDefinitions   : {ForumName, Subject}
 TableName              : Thread
 KeySchema              : {ForumName, Subject}
@@ -1946,23 +1735,18 @@ TableSizeBytes         : 0
 ItemCount              : 0
 LocalSecondaryIndexes  : {}
 ```
-
 **Example 2: This example creates a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range). A local secondary index is also defined. The key of the local secondary index will be set automatically from the primary hash key on the table (ForumName). The schema used to construct the table can be piped into each cmdlet as shown or specified using the -Schema parameter.**
 
-```powershell
-
+```
 $schema = New-DDBTableSchema
 $schema | Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S"
 $schema | Add-DDBKeySchema -KeyName "Subject" -KeyDataType "S"
 $schema | Add-DDBIndexSchema -IndexName "LastPostIndex" -RangeKeyName "LastPostDateTime" -RangeKeyDataType "S" -ProjectionType "keys_only"
 $schema | New-DDBTable -TableName "Thread" -ReadCapacity 10 -WriteCapacity 5
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 AttributeDefinitions   : {ForumName, LastPostDateTime, Subject}
 TableName              : Thread
 KeySchema              : {ForumName, Subject}
@@ -1973,11 +1757,9 @@ TableSizeBytes         : 0
 ItemCount              : 0
 LocalSecondaryIndexes  : {LastPostIndex}
 ```
-
 **Example 3: This example shows how to use a single pipeline to create a table named Thread that has a primary key consisting of 'ForumName' (key type hash) and 'Subject' (key type range) and a local secondary index. The Add-DDBKeySchema and Add-DDBIndexSchema create a new TableSchema object for you if one is not supplied from the pipeline or the -Schema parameter.**
 
-```powershell
-
+```
 New-DDBTableSchema |
   Add-DDBKeySchema -KeyName "ForumName" -KeyDataType "S" |
   Add-DDBKeySchema -KeyName "Subject" -KeyDataType "S" |
@@ -1986,13 +1768,10 @@ New-DDBTableSchema |
                      -RangeKeyDataType "S" `
                      -ProjectionType "keys_only" |
   New-DDBTable -TableName "Thread" -ReadCapacity 10 -WriteCapacity 5
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 AttributeDefinitions   : {ForumName, LastPostDateTime, Subject}
 TableName              : Thread
 KeySchema              : {ForumName, Subject}
@@ -2003,25 +1782,16 @@ TableSizeBytes         : 0
 ItemCount              : 0
 LocalSecondaryIndexes  : {LastPostIndex}
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/powershell/v5/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a table for storing movie data.
 
-```python
-
+```
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -2087,25 +1857,16 @@ class Movies:
             raise
         else:
             return self.table
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
-```ruby
-
+```
 # Encapsulates an Amazon DynamoDB table of movie data.
 class Scaffold
   attr_reader :dynamo_resource, :table_name, :table
@@ -2144,25 +1905,16 @@ class Scaffold
     @logger.error("Failed create table #{table_name}:\n#{e.code}: #{e.message}")
     raise
   end
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CreateTable) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[CreateTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CreateTable)
-in _AWS SDK for Ruby API Reference_.
-
-Rust
+------
+#### [ Rust ]
 
 **SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb).
-
-```rust
-
+```
 pub async fn create_table(
     client: &Client,
     table: &str,
@@ -2204,25 +1956,16 @@ pub async fn create_table(
         }
     }
 }
-
 ```
++  For API details, see [CreateTable](https://docs.rs/aws-sdk-dynamodb/latest/aws_sdk_dynamodb/client/struct.Client.html#method.create_table) in *AWS SDK for Rust API reference*.
 
-- For API details, see
-[CreateTable](https://docs.rs/aws-sdk-dynamodb/latest/aws_sdk_dynamodb/client/struct.Client.html)
-in _AWS SDK for Rust API reference_.
-
-SAP ABAP
+------
+#### [ SAP ABAP ]
 
 **SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn).
-
-```sap-abap
-
+```
     TRY.
         DATA(lt_keyschema) = VALUE /aws1/cl_dynkeyschemaelement=>tt_keyschema(
           ( NEW /aws1/cl_dynkeyschemaelement( iv_attributename = 'year'
@@ -2254,25 +1997,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/s
         DATA(lv_error) = |"{ lo_resourceinuseex->av_err_code }" - { lo_resourceinuseex->av_err_msg }|.
         MESSAGE lv_error TYPE 'E'.
     ENDTRY.
-
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
 
-- For API details, see
-[CreateTable](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-in _AWS SDK for SAP ABAP API reference_.
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
-```swift
-
+```
 import AWSDynamoDB
 
     ///
@@ -2305,21 +2039,13 @@ import AWSDynamoDB
             throw error
         }
     }
-
 ```
++  For API details, see [CreateTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/createtable(input:)) in *AWS SDK for Swift API reference*.
 
-- For API details, see
-[CreateTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/createtable(input:))
-in _AWS SDK for Swift API reference_.
+------
 
-For more DynamoDB examples, see [Code examples for DynamoDB using AWS SDKs](service-code-examples.md).
+For more DynamoDB examples, see [Code examples for DynamoDB using AWS SDKs](service_code_examples.md).
 
 After creating the new table, proceed to [Step 2: Write data to a DynamoDB table](getting-started-step-2.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamoDB local telemetry
-
-Step 2: Write data
 
 All content copied from https://docs.aws.amazon.com/.

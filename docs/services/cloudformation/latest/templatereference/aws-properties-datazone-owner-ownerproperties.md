@@ -2,66 +2,51 @@
 title: "AWS::DataZone::Owner OwnerProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Owner OwnerProperties
+<a name="aws-properties-datazone-owner-ownerproperties"></a>
 
 The properties of a domain unit's owner.
 
 ## Syntax
+<a name="aws-properties-datazone-owner-ownerproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-owner-ownerproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Group" : OwnerGroupProperties,
-  "User" : OwnerUserProperties
+  "[Group](#cfn-datazone-owner-ownerproperties-group)" : {{OwnerGroupProperties}},
+  "[User](#cfn-datazone-owner-ownerproperties-user)" : {{OwnerUserProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-owner-ownerproperties-syntax.yaml"></a>
 
-```yaml
-
-  Group:
-    OwnerGroupProperties
-  User:
-    OwnerUserProperties
-
+```
+  [Group](#cfn-datazone-owner-ownerproperties-group): {{
+    OwnerGroupProperties}}
+  [User](#cfn-datazone-owner-ownerproperties-user): {{
+    OwnerUserProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-owner-ownerproperties-properties"></a>
 
-`Group`
-
+`Group`  <a name="cfn-datazone-owner-ownerproperties-group"></a>
 Specifies that the domain unit owner is a group.
+*Required*: No
+*Type*: [OwnerGroupProperties](aws-properties-datazone-owner-ownergroupproperties.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [OwnerGroupProperties](aws-properties-datazone-owner-ownergroupproperties.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`User`
-
+`User`  <a name="cfn-datazone-owner-ownerproperties-user"></a>
 Specifies that the domain unit owner is a user.
-
-_Required_: No
-
-_Type_: [OwnerUserProperties](aws-properties-datazone-owner-owneruserproperties.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OwnerGroupProperties
-
-OwnerUserProperties
+*Required*: No
+*Type*: [OwnerUserProperties](aws-properties-datazone-owner-owneruserproperties.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

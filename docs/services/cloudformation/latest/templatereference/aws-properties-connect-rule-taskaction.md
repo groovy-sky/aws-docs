@@ -2,108 +2,71 @@
 title: "AWS::Connect::Rule TaskAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule TaskAction
+<a name="aws-properties-connect-rule-taskaction"></a>
 
-Information about the task action. This field is required if
-`TriggerEventSource` is one of the following values:
-`OnZendeskTicketCreate` \| `OnZendeskTicketStatusUpdate` \|
-`OnSalesforceCaseCreate`
+Information about the task action. This field is required if `TriggerEventSource` is one of the following values: `OnZendeskTicketCreate` \| `OnZendeskTicketStatusUpdate` \| `OnSalesforceCaseCreate`
 
 ## Syntax
+<a name="aws-properties-connect-rule-taskaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-taskaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContactFlowArn" : String,
-  "Description" : String,
-  "Name" : String,
-  "References" : Reference
+  "[ContactFlowArn](#cfn-connect-rule-taskaction-contactflowarn)" : {{String}},
+  "[Description](#cfn-connect-rule-taskaction-description)" : {{String}},
+  "[Name](#cfn-connect-rule-taskaction-name)" : {{String}},
+  "[References](#cfn-connect-rule-taskaction-references)" : {{Reference}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-taskaction-syntax.yaml"></a>
 
-```yaml
-
-  ContactFlowArn: String
-  Description: String
-  Name: String
-  References:
-    Reference
-
+```
+  [ContactFlowArn](#cfn-connect-rule-taskaction-contactflowarn): {{String}}
+  [Description](#cfn-connect-rule-taskaction-description): {{String}}
+  [Name](#cfn-connect-rule-taskaction-name): {{String}}
+  [References](#cfn-connect-rule-taskaction-references): {{
+    Reference}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-taskaction-properties"></a>
 
-`ContactFlowArn`
-
+`ContactFlowArn`  <a name="cfn-connect-rule-taskaction-contactflowarn"></a>
 The Amazon Resource Name (ARN) of the flow.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^$|arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Description`  <a name="cfn-connect-rule-taskaction-description"></a>
+The description. Supports variable injection. For more information, see [JSONPath reference](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-variable-injection.html) in the *Connect Customer Administrators Guide*.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Name`  <a name="cfn-connect-rule-taskaction-name"></a>
+ The name. Supports variable injection. For more information, see [JSONPath reference](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-variable-injection.html) in the *Connect Customer Administrators Guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^$|arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
-The description. Supports variable injection. For more information, see [JSONPath\
-reference](../../../connect/latest/adminguide/contact-lens-variable-injection.md) in the _Amazon Connect Administrators_
-_Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name. Supports variable injection. For more information, see [JSONPath\
-reference](../../../connect/latest/adminguide/contact-lens-variable-injection.md) in the _Amazon Connect Administrators_
-_Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`References`
-
-Information about the reference when the `referenceType` is
-`URL`. Otherwise, null. `URL` is the only accepted type.
-(Supports variable injection in the `Value` field.)
-
-_Required_: No
-
-_Type_: [Reference](aws-properties-connect-rule-reference.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-UpdateCaseAction
+`References`  <a name="cfn-connect-rule-taskaction-references"></a>
+Information about the reference when the `referenceType` is `URL`. Otherwise, null. `URL` is the only accepted type. (Supports variable injection in the `Value` field.)
+*Required*: No
+*Type*: [Reference](aws-properties-connect-rule-reference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

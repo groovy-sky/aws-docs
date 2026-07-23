@@ -2,81 +2,58 @@
 title: "AWS::Pinpoint::InAppTemplate HeaderConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::InAppTemplate HeaderConfig
+<a name="aws-properties-pinpoint-inapptemplate-headerconfig"></a>
 
-Specifies the configuration and content of the header or title text of the in-app
-message.
+Specifies the configuration and content of the header or title text of the in-app message.
 
 ## Syntax
+<a name="aws-properties-pinpoint-inapptemplate-headerconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pinpoint-inapptemplate-headerconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alignment" : String,
-  "Header" : String,
-  "TextColor" : String
+  "[Alignment](#cfn-pinpoint-inapptemplate-headerconfig-alignment)" : {{String}},
+  "[Header](#cfn-pinpoint-inapptemplate-headerconfig-header)" : {{String}},
+  "[TextColor](#cfn-pinpoint-inapptemplate-headerconfig-textcolor)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pinpoint-inapptemplate-headerconfig-syntax.yaml"></a>
 
-```yaml
-
-  Alignment: String
-  Header: String
-  TextColor: String
-
+```
+  [Alignment](#cfn-pinpoint-inapptemplate-headerconfig-alignment): {{String}}
+  [Header](#cfn-pinpoint-inapptemplate-headerconfig-header): {{String}}
+  [TextColor](#cfn-pinpoint-inapptemplate-headerconfig-textcolor): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pinpoint-inapptemplate-headerconfig-properties"></a>
 
-`Alignment`
+`Alignment`  <a name="cfn-pinpoint-inapptemplate-headerconfig-alignment"></a>
+The text alignment of the title of the message. Acceptable values: `LEFT`, `CENTER`, `RIGHT`.
+*Required*: No
+*Type*: String
+*Allowed values*: `LEFT | CENTER | RIGHT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The text alignment of the title of the message. Acceptable values: `LEFT`,
-`CENTER`, `RIGHT`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LEFT | CENTER | RIGHT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Header`
-
+`Header`  <a name="cfn-pinpoint-inapptemplate-headerconfig-header"></a>
 The title text of the in-app message.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextColor`
-
-The color of the title text, expressed as a hex color code (such as #000000 for
-black).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultButtonConfiguration
-
-InAppMessageContent
+`TextColor`  <a name="cfn-pinpoint-inapptemplate-headerconfig-textcolor"></a>
+The color of the title text, expressed as a hex color code (such as \#000000 for black).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

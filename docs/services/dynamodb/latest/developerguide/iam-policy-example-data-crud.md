@@ -3,16 +3,16 @@ title: "IAM policy to read, write, update, and delete access on a DynamoDB table
 ---
 
 # IAM policy to read, write, update, and delete access on a DynamoDB table
+<a name="iam-policy-example-data-crud"></a>
 
-Use this policy if you need to allow your application to create, read, update, and
-delete data in Amazon DynamoDB tables, indexes, and streams. Substitute the AWS Region
-name, your account ID, and the table name or wildcard character (\*) where
-appropriate.
+Use this policy if you need to allow your application to create, read, update, and delete data in Amazon DynamoDB tables, indexes, and streams. Substitute the AWS Region name, your account ID, and the table name or wildcard character (\*) where appropriate.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,24 +60,17 @@ JSON
         }
     ]
 }
-
 ```
 
-To expand this policy to cover all DynamoDB tables in all AWS Regions for this
-account, use a wildcard (\*) for the Region and table name. For example:
+------
 
-```json
+To expand this policy to cover all DynamoDB tables in all AWS Regions for this account, use a wildcard (\*) for the Region and table name. For example:
 
+```
 "Resource":[
                 "arn:aws:dynamodb:*:123456789012:table/*",
                 "arn:aws:dynamodb:*:123456789012:table/*/index/*"
                 ]
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Access to a specific table and its indexes
-
-Separate environments in the same AWS account
 
 All content copied from https://docs.aws.amazon.com/.

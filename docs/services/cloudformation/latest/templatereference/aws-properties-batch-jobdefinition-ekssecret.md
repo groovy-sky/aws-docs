@@ -2,67 +2,49 @@
 title: "AWS::Batch::JobDefinition EksSecret"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition EksSecret
+<a name="aws-properties-batch-jobdefinition-ekssecret"></a>
 
-Specifies the configuration of a Kubernetes `secret` volume. For more information, see
-[secret](https://kubernetes.io/docs/concepts/storage/volumes) in the
-_Kubernetes documentation_.
+Specifies the configuration of a Kubernetes `secret` volume. For more information, see [secret](https://kubernetes.io/docs/concepts/storage/volumes/#secret) in the *Kubernetes documentation*.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-ekssecret-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-ekssecret-syntax.json"></a>
 
-```json
-
+```
 {
-  "Optional" : Boolean,
-  "SecretName" : String
+  "[Optional](#cfn-batch-jobdefinition-ekssecret-optional)" : {{Boolean}},
+  "[SecretName](#cfn-batch-jobdefinition-ekssecret-secretname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-ekssecret-syntax.yaml"></a>
 
-```yaml
-
-  Optional: Boolean
-  SecretName: String
-
+```
+  [Optional](#cfn-batch-jobdefinition-ekssecret-optional): {{Boolean}}
+  [SecretName](#cfn-batch-jobdefinition-ekssecret-secretname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-ekssecret-properties"></a>
 
-`Optional`
-
+`Optional`  <a name="cfn-batch-jobdefinition-ekssecret-optional"></a>
 Specifies whether the secret or the secret's keys must be defined.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretName`
-
-The name of the secret. The name must be allowed as a DNS subdomain name. For more
-information, see [DNS subdomain names](https://kubernetes.io/docs/concepts/overview/working-with-objects/names) in the _Kubernetes documentation_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EksProperties
-
-EksVolume
+`SecretName`  <a name="cfn-batch-jobdefinition-ekssecret-secretname"></a>
+The name of the secret. The name must be allowed as a DNS subdomain name. For more information, see [DNS subdomain names](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names) in the *Kubernetes documentation*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

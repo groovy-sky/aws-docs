@@ -2,65 +2,50 @@
 title: "AWS::MediaTailor::Channel HlsPlaylistSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Channel HlsPlaylistSettings
+<a name="aws-properties-mediatailor-channel-hlsplaylistsettings"></a>
 
 HLS playlist configuration parameters.
 
 ## Syntax
+<a name="aws-properties-mediatailor-channel-hlsplaylistsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-channel-hlsplaylistsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdMarkupType" : [ String, ... ],
-  "ManifestWindowSeconds" : Number
+  "[AdMarkupType](#cfn-mediatailor-channel-hlsplaylistsettings-admarkuptype)" : {{[ String, ... ]}},
+  "[ManifestWindowSeconds](#cfn-mediatailor-channel-hlsplaylistsettings-manifestwindowseconds)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-channel-hlsplaylistsettings-syntax.yaml"></a>
 
-```yaml
-
-  AdMarkupType:
-    - String
-  ManifestWindowSeconds: Number
-
+```
+  [AdMarkupType](#cfn-mediatailor-channel-hlsplaylistsettings-admarkuptype): {{
+    - String}}
+  [ManifestWindowSeconds](#cfn-mediatailor-channel-hlsplaylistsettings-manifestwindowseconds): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-channel-hlsplaylistsettings-properties"></a>
 
-`AdMarkupType`
-
+`AdMarkupType`  <a name="cfn-mediatailor-channel-hlsplaylistsettings-admarkuptype"></a>
 Determines the type of SCTE 35 tags to use in ad markup. Specify `DATERANGE` to use `DATERANGE` tags (for live or VOD content). Specify `SCTE35_ENHANCED` to use `EXT-X-CUE-OUT` and `EXT-X-CUE-IN` tags (for VOD content only).
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestWindowSeconds`
-
+`ManifestWindowSeconds`  <a name="cfn-mediatailor-channel-hlsplaylistsettings-manifestwindowseconds"></a>
 The total duration (in seconds) of each manifest. Minimum value: `30` seconds. Maximum value: `3600` seconds.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashPlaylistSettings
-
-LogConfigurationForChannel
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

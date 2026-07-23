@@ -2,58 +2,43 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy ContentTypeOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy ContentTypeOptions
+<a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions"></a>
 
-Determines whether CloudFront includes the `X-Content-Type-Options` HTTP response
-header with its value set to `nosniff`.
+Determines whether CloudFront includes the `X-Content-Type-Options` HTTP response header with its value set to `nosniff`.
 
-For more information about the `X-Content-Type-Options` HTTP response
-header, see [X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) in the MDN Web Docs.
+For more information about the `X-Content-Type-Options` HTTP response header, see [X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) in the MDN Web Docs.
 
 ## Syntax
+<a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Override" : Boolean
+  "[Override](#cfn-cloudfront-responseheaderspolicy-contenttypeoptions-override)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions-syntax.yaml"></a>
 
-```yaml
-
-  Override: Boolean
-
+```
+  [Override](#cfn-cloudfront-responseheaderspolicy-contenttypeoptions-override): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions-properties"></a>
 
-`Override`
-
-A Boolean that determines whether CloudFront overrides the
-`X-Content-Type-Options` HTTP response header received from the origin
-with the one specified in this response headers policy.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContentSecurityPolicy
-
-CorsConfig
+`Override`  <a name="cfn-cloudfront-responseheaderspolicy-contenttypeoptions-override"></a>
+A Boolean that determines whether CloudFront overrides the `X-Content-Type-Options` HTTP response header received from the origin with the one specified in this response headers policy.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

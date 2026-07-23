@@ -2,66 +2,45 @@
 title: "AWS::Wisdom::KnowledgeBase ServerSideEncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::KnowledgeBase ServerSideEncryptionConfiguration
+<a name="aws-properties-wisdom-knowledgebase-serversideencryptionconfiguration"></a>
 
-The configuration information for the customer managed key used for
-encryption.
+The configuration information for the customer managed key used for encryption.
 
 ## Syntax
+<a name="aws-properties-wisdom-knowledgebase-serversideencryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-knowledgebase-serversideencryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String
+  "[KmsKeyId](#cfn-wisdom-knowledgebase-serversideencryptionconfiguration-kmskeyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-knowledgebase-serversideencryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-
+```
+  [KmsKeyId](#cfn-wisdom-knowledgebase-serversideencryptionconfiguration-kmskeyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-knowledgebase-serversideencryptionconfiguration-properties"></a>
 
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-wisdom-knowledgebase-serversideencryptionconfiguration-kmskeyid"></a>
 The customer managed key used for encryption.
-
-This customer managed key must have a policy that allows
-`kms:CreateGrant` and ` kms:DescribeKey` permissions to the
-IAM identity using the key to invoke Wisdom.
-
-For more information about setting up a customer managed key for Wisdom, see [Enable\
-Amazon Connect Wisdom for your instance](../../../connect/latest/adminguide/enable-wisdom.md). For information about valid
-ID values, see [Key identifiers\
-(KeyId)](../../../kms/latest/developerguide/concepts.md#key-id).
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SemanticChunkingConfiguration
-
-SourceConfiguration
+This customer managed key must have a policy that allows `kms:CreateGrant` and ` kms:DescribeKey` permissions to the IAM identity using the key to invoke Wisdom.
+For more information about setting up a customer managed key for Wisdom, see [Enable Connect Customer Wisdom for your instance](https://docs.aws.amazon.com/connect/latest/adminguide/enable-wisdom.html). For information about valid ID values, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

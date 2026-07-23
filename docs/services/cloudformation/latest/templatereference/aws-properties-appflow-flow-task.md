@@ -2,118 +2,83 @@
 title: "AWS::AppFlow::Flow Task"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow Task
+<a name="aws-properties-appflow-flow-task"></a>
 
-A class for modeling different type of tasks. Task implementation varies based on the
-`TaskType`.
+ A class for modeling different type of tasks. Task implementation varies based on the `TaskType`.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-task-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-task-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectorOperator" : ConnectorOperator,
-  "DestinationField" : String,
-  "SourceFields" : [ String, ... ],
-  "TaskProperties" : [ TaskPropertiesObject, ... ],
-  "TaskType" : String
+  "[ConnectorOperator](#cfn-appflow-flow-task-connectoroperator)" : {{ConnectorOperator}},
+  "[DestinationField](#cfn-appflow-flow-task-destinationfield)" : {{String}},
+  "[SourceFields](#cfn-appflow-flow-task-sourcefields)" : {{[ String, ... ]}},
+  "[TaskProperties](#cfn-appflow-flow-task-taskproperties)" : {{[ TaskPropertiesObject, ... ]}},
+  "[TaskType](#cfn-appflow-flow-task-tasktype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-task-syntax.yaml"></a>
 
-```yaml
-
-  ConnectorOperator:
-    ConnectorOperator
-  DestinationField: String
-  SourceFields:
-    - String
-  TaskProperties:
-    - TaskPropertiesObject
-  TaskType: String
-
+```
+  [ConnectorOperator](#cfn-appflow-flow-task-connectoroperator): {{
+    ConnectorOperator}}
+  [DestinationField](#cfn-appflow-flow-task-destinationfield): {{String}}
+  [SourceFields](#cfn-appflow-flow-task-sourcefields): {{
+    - String}}
+  [TaskProperties](#cfn-appflow-flow-task-taskproperties): {{
+    - TaskPropertiesObject}}
+  [TaskType](#cfn-appflow-flow-task-tasktype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-task-properties"></a>
 
-`ConnectorOperator`
+`ConnectorOperator`  <a name="cfn-appflow-flow-task-connectoroperator"></a>
+ The operation to be performed on the provided source fields.
+*Required*: No
+*Type*: [ConnectorOperator](aws-properties-appflow-flow-connectoroperator.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The operation to be performed on the provided source fields.
+`DestinationField`  <a name="cfn-appflow-flow-task-destinationfield"></a>
+ A field in a destination connector, or a field value against which Amazon AppFlow validates a source field.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SourceFields`  <a name="cfn-appflow-flow-task-sourcefields"></a>
+ The source fields to which a particular task is applied.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ConnectorOperator](aws-properties-appflow-flow-connectoroperator.md)
+`TaskProperties`  <a name="cfn-appflow-flow-task-taskproperties"></a>
+ A map used to store task-related information. The execution service looks for particular information based on the `TaskType`.
+*Required*: No
+*Type*: Array of [TaskPropertiesObject](aws-properties-appflow-flow-taskpropertiesobject.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationField`
-
-A field in a destination connector, or a field value against which Amazon AppFlow
-validates a source field.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceFields`
-
-The source fields to which a particular task is applied.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TaskProperties`
-
-A map used to store task-related information. The execution service looks for particular
-information based on the `TaskType`.
-
-_Required_: No
-
-_Type_: Array of [TaskPropertiesObject](aws-properties-appflow-flow-taskpropertiesobject.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TaskType`
-
+`TaskType`  <a name="cfn-appflow-flow-task-tasktype"></a>
 Specifies the particular task implementation that Amazon AppFlow performs.
-
-_Allowed values_: `Arithmetic` \| `Filter` \|
-`Map` \| `Map_all` \| `Mask` \| `Merge` \|
-`Truncate` \| `Validate`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Arithmetic | Filter | Map | Map_all | Mask | Merge | Passthrough | Truncate | Validate | Partition`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Allowed values*: `Arithmetic` \| `Filter` \| `Map` \| `Map_all` \| `Mask` \| `Merge` \| `Truncate` \| `Validate`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Arithmetic | Filter | Map | Map_all | Mask | Merge | Passthrough | Truncate | Validate | Partition`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Task](../../../../reference/appflow/1-0/apireference/api-task.md) in the _Amazon AppFlow API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-TaskPropertiesObject
+<a name="aws-properties-appflow-flow-task--seealso"></a>
++ [Task](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Task.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

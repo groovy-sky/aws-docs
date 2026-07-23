@@ -2,81 +2,60 @@
 title: "AWS::CloudTrail::Dashboard RefreshSchedule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudTrail::Dashboard RefreshSchedule
+<a name="aws-properties-cloudtrail-dashboard-refreshschedule"></a>
 
-The schedule for a dashboard refresh.
+ The schedule for a dashboard refresh.
 
 ## Syntax
+<a name="aws-properties-cloudtrail-dashboard-refreshschedule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudtrail-dashboard-refreshschedule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Frequency" : Frequency,
-  "Status" : String,
-  "TimeOfDay" : String
+  "[Frequency](#cfn-cloudtrail-dashboard-refreshschedule-frequency)" : {{Frequency}},
+  "[Status](#cfn-cloudtrail-dashboard-refreshschedule-status)" : {{String}},
+  "[TimeOfDay](#cfn-cloudtrail-dashboard-refreshschedule-timeofday)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudtrail-dashboard-refreshschedule-syntax.yaml"></a>
 
-```yaml
-
-  Frequency:
-    Frequency
-  Status: String
-  TimeOfDay: String
-
+```
+  [Frequency](#cfn-cloudtrail-dashboard-refreshschedule-frequency): {{
+    Frequency}}
+  [Status](#cfn-cloudtrail-dashboard-refreshschedule-status): {{String}}
+  [TimeOfDay](#cfn-cloudtrail-dashboard-refreshschedule-timeofday): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudtrail-dashboard-refreshschedule-properties"></a>
 
-`Frequency`
+`Frequency`  <a name="cfn-cloudtrail-dashboard-refreshschedule-frequency"></a>
+ The frequency at which you want the dashboard refreshed.
+*Required*: No
+*Type*: [Frequency](aws-properties-cloudtrail-dashboard-frequency.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The frequency at which you want the dashboard refreshed.
+`Status`  <a name="cfn-cloudtrail-dashboard-refreshschedule-status"></a>
+ Specifies whether the refresh schedule is enabled. Set the value to `ENABLED` to enable the refresh schedule, or to `DISABLED` to turn off the refresh schedule.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Frequency](aws-properties-cloudtrail-dashboard-frequency.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
-Specifies whether the refresh schedule is enabled. Set the value to `ENABLED` to enable the refresh schedule, or to `DISABLED` to turn off the refresh schedule.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeOfDay`
-
-The time of day in UTC to run the schedule; for hourly only refer to minutes; default is 00:00.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{2}:[0-9]{2}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Frequency
-
-Tag
+`TimeOfDay`  <a name="cfn-cloudtrail-dashboard-refreshschedule-timeofday"></a>
+ The time of day in UTC to run the schedule; for hourly only refer to minutes; default is 00:00.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{2}:[0-9]{2}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

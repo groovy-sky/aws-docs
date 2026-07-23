@@ -2,398 +2,273 @@
 title: "AWS::QuickSight::Template Visual"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template Visual
+<a name="aws-properties-quicksight-template-visual"></a>
 
 A visual displayed on a sheet in an analysis, dashboard, or template.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-visual-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-visual-syntax.json"></a>
 
-```json
-
+```
 {
-  "BarChartVisual" : BarChartVisual,
-  "BoxPlotVisual" : BoxPlotVisual,
-  "ComboChartVisual" : ComboChartVisual,
-  "CustomContentVisual" : CustomContentVisual,
-  "EmptyVisual" : EmptyVisual,
-  "FilledMapVisual" : FilledMapVisual,
-  "FunnelChartVisual" : FunnelChartVisual,
-  "GaugeChartVisual" : GaugeChartVisual,
-  "GeospatialMapVisual" : GeospatialMapVisual,
-  "HeatMapVisual" : HeatMapVisual,
-  "HistogramVisual" : HistogramVisual,
-  "InsightVisual" : InsightVisual,
-  "KPIVisual" : KPIVisual,
-  "LineChartVisual" : LineChartVisual,
-  "PieChartVisual" : PieChartVisual,
-  "PivotTableVisual" : PivotTableVisual,
-  "PluginVisual" : PluginVisual,
-  "RadarChartVisual" : RadarChartVisual,
-  "SankeyDiagramVisual" : SankeyDiagramVisual,
-  "ScatterPlotVisual" : ScatterPlotVisual,
-  "TableVisual" : TableVisual,
-  "TreeMapVisual" : TreeMapVisual,
-  "WaterfallVisual" : WaterfallVisual,
-  "WordCloudVisual" : WordCloudVisual
+  "[BarChartVisual](#cfn-quicksight-template-visual-barchartvisual)" : {{BarChartVisual}},
+  "[BoxPlotVisual](#cfn-quicksight-template-visual-boxplotvisual)" : {{BoxPlotVisual}},
+  "[ComboChartVisual](#cfn-quicksight-template-visual-combochartvisual)" : {{ComboChartVisual}},
+  "[CustomContentVisual](#cfn-quicksight-template-visual-customcontentvisual)" : {{CustomContentVisual}},
+  "[EmptyVisual](#cfn-quicksight-template-visual-emptyvisual)" : {{EmptyVisual}},
+  "[FilledMapVisual](#cfn-quicksight-template-visual-filledmapvisual)" : {{FilledMapVisual}},
+  "[FunnelChartVisual](#cfn-quicksight-template-visual-funnelchartvisual)" : {{FunnelChartVisual}},
+  "[GaugeChartVisual](#cfn-quicksight-template-visual-gaugechartvisual)" : {{GaugeChartVisual}},
+  "[GeospatialMapVisual](#cfn-quicksight-template-visual-geospatialmapvisual)" : {{GeospatialMapVisual}},
+  "[HeatMapVisual](#cfn-quicksight-template-visual-heatmapvisual)" : {{HeatMapVisual}},
+  "[HistogramVisual](#cfn-quicksight-template-visual-histogramvisual)" : {{HistogramVisual}},
+  "[InsightVisual](#cfn-quicksight-template-visual-insightvisual)" : {{InsightVisual}},
+  "[KPIVisual](#cfn-quicksight-template-visual-kpivisual)" : {{KPIVisual}},
+  "[LineChartVisual](#cfn-quicksight-template-visual-linechartvisual)" : {{LineChartVisual}},
+  "[PieChartVisual](#cfn-quicksight-template-visual-piechartvisual)" : {{PieChartVisual}},
+  "[PivotTableVisual](#cfn-quicksight-template-visual-pivottablevisual)" : {{PivotTableVisual}},
+  "[PluginVisual](#cfn-quicksight-template-visual-pluginvisual)" : {{PluginVisual}},
+  "[RadarChartVisual](#cfn-quicksight-template-visual-radarchartvisual)" : {{RadarChartVisual}},
+  "[SankeyDiagramVisual](#cfn-quicksight-template-visual-sankeydiagramvisual)" : {{SankeyDiagramVisual}},
+  "[ScatterPlotVisual](#cfn-quicksight-template-visual-scatterplotvisual)" : {{ScatterPlotVisual}},
+  "[TableVisual](#cfn-quicksight-template-visual-tablevisual)" : {{TableVisual}},
+  "[TreeMapVisual](#cfn-quicksight-template-visual-treemapvisual)" : {{TreeMapVisual}},
+  "[WaterfallVisual](#cfn-quicksight-template-visual-waterfallvisual)" : {{WaterfallVisual}},
+  "[WordCloudVisual](#cfn-quicksight-template-visual-wordcloudvisual)" : {{WordCloudVisual}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-visual-syntax.yaml"></a>
 
-```yaml
-
-  BarChartVisual:
-    BarChartVisual
-  BoxPlotVisual:
-    BoxPlotVisual
-  ComboChartVisual:
-    ComboChartVisual
-  CustomContentVisual:
-    CustomContentVisual
-  EmptyVisual:
-    EmptyVisual
-  FilledMapVisual:
-    FilledMapVisual
-  FunnelChartVisual:
-    FunnelChartVisual
-  GaugeChartVisual:
-    GaugeChartVisual
-  GeospatialMapVisual:
-    GeospatialMapVisual
-  HeatMapVisual:
-    HeatMapVisual
-  HistogramVisual:
-    HistogramVisual
-  InsightVisual:
-    InsightVisual
-  KPIVisual:
-    KPIVisual
-  LineChartVisual:
-    LineChartVisual
-  PieChartVisual:
-    PieChartVisual
-  PivotTableVisual:
-    PivotTableVisual
-  PluginVisual:
-    PluginVisual
-  RadarChartVisual:
-    RadarChartVisual
-  SankeyDiagramVisual:
-    SankeyDiagramVisual
-  ScatterPlotVisual:
-    ScatterPlotVisual
-  TableVisual:
-    TableVisual
-  TreeMapVisual:
-    TreeMapVisual
-  WaterfallVisual:
-    WaterfallVisual
-  WordCloudVisual:
-    WordCloudVisual
-
+```
+  [BarChartVisual](#cfn-quicksight-template-visual-barchartvisual): {{
+    BarChartVisual}}
+  [BoxPlotVisual](#cfn-quicksight-template-visual-boxplotvisual): {{
+    BoxPlotVisual}}
+  [ComboChartVisual](#cfn-quicksight-template-visual-combochartvisual): {{
+    ComboChartVisual}}
+  [CustomContentVisual](#cfn-quicksight-template-visual-customcontentvisual): {{
+    CustomContentVisual}}
+  [EmptyVisual](#cfn-quicksight-template-visual-emptyvisual): {{
+    EmptyVisual}}
+  [FilledMapVisual](#cfn-quicksight-template-visual-filledmapvisual): {{
+    FilledMapVisual}}
+  [FunnelChartVisual](#cfn-quicksight-template-visual-funnelchartvisual): {{
+    FunnelChartVisual}}
+  [GaugeChartVisual](#cfn-quicksight-template-visual-gaugechartvisual): {{
+    GaugeChartVisual}}
+  [GeospatialMapVisual](#cfn-quicksight-template-visual-geospatialmapvisual): {{
+    GeospatialMapVisual}}
+  [HeatMapVisual](#cfn-quicksight-template-visual-heatmapvisual): {{
+    HeatMapVisual}}
+  [HistogramVisual](#cfn-quicksight-template-visual-histogramvisual): {{
+    HistogramVisual}}
+  [InsightVisual](#cfn-quicksight-template-visual-insightvisual): {{
+    InsightVisual}}
+  [KPIVisual](#cfn-quicksight-template-visual-kpivisual): {{
+    KPIVisual}}
+  [LineChartVisual](#cfn-quicksight-template-visual-linechartvisual): {{
+    LineChartVisual}}
+  [PieChartVisual](#cfn-quicksight-template-visual-piechartvisual): {{
+    PieChartVisual}}
+  [PivotTableVisual](#cfn-quicksight-template-visual-pivottablevisual): {{
+    PivotTableVisual}}
+  [PluginVisual](#cfn-quicksight-template-visual-pluginvisual): {{
+    PluginVisual}}
+  [RadarChartVisual](#cfn-quicksight-template-visual-radarchartvisual): {{
+    RadarChartVisual}}
+  [SankeyDiagramVisual](#cfn-quicksight-template-visual-sankeydiagramvisual): {{
+    SankeyDiagramVisual}}
+  [ScatterPlotVisual](#cfn-quicksight-template-visual-scatterplotvisual): {{
+    ScatterPlotVisual}}
+  [TableVisual](#cfn-quicksight-template-visual-tablevisual): {{
+    TableVisual}}
+  [TreeMapVisual](#cfn-quicksight-template-visual-treemapvisual): {{
+    TreeMapVisual}}
+  [WaterfallVisual](#cfn-quicksight-template-visual-waterfallvisual): {{
+    WaterfallVisual}}
+  [WordCloudVisual](#cfn-quicksight-template-visual-wordcloudvisual): {{
+    WordCloudVisual}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-visual-properties"></a>
 
-`BarChartVisual`
-
+`BarChartVisual`  <a name="cfn-quicksight-template-visual-barchartvisual"></a>
 A bar chart.
+For more information, see [Using bar charts](https://docs.aws.amazon.com/quicksight/latest/user/bar-charts.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [BarChartVisual](aws-properties-quicksight-template-barchartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using bar charts](../../../quicksight/latest/user/bar-charts.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [BarChartVisual](aws-properties-quicksight-template-barchartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BoxPlotVisual`
-
+`BoxPlotVisual`  <a name="cfn-quicksight-template-visual-boxplotvisual"></a>
 A box plot.
+For more information, see [Using box plots](https://docs.aws.amazon.com/quicksight/latest/user/box-plots.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [BoxPlotVisual](aws-properties-quicksight-template-boxplotvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using box plots](../../../quicksight/latest/user/box-plots.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [BoxPlotVisual](aws-properties-quicksight-template-boxplotvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComboChartVisual`
-
+`ComboChartVisual`  <a name="cfn-quicksight-template-visual-combochartvisual"></a>
 A combo chart.
+For more information, see [Using combo charts](https://docs.aws.amazon.com/quicksight/latest/user/combo-charts.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [ComboChartVisual](aws-properties-quicksight-template-combochartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using combo charts](../../../quicksight/latest/user/combo-charts.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [ComboChartVisual](aws-properties-quicksight-template-combochartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomContentVisual`
-
+`CustomContentVisual`  <a name="cfn-quicksight-template-visual-customcontentvisual"></a>
 A visual that contains custom content.
+For more information, see [Using custom visual content](https://docs.aws.amazon.com/quicksight/latest/user/custom-visual-content.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [CustomContentVisual](aws-properties-quicksight-template-customcontentvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using custom visual content](../../../quicksight/latest/user/custom-visual-content.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [CustomContentVisual](aws-properties-quicksight-template-customcontentvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EmptyVisual`
-
+`EmptyVisual`  <a name="cfn-quicksight-template-visual-emptyvisual"></a>
 An empty visual.
+*Required*: No
+*Type*: [EmptyVisual](aws-properties-quicksight-template-emptyvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EmptyVisual](aws-properties-quicksight-template-emptyvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilledMapVisual`
-
+`FilledMapVisual`  <a name="cfn-quicksight-template-visual-filledmapvisual"></a>
 A filled map.
+For more information, see [Creating filled maps](https://docs.aws.amazon.com/quicksight/latest/user/filled-maps.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [FilledMapVisual](aws-properties-quicksight-template-filledmapvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Creating filled maps](../../../quicksight/latest/user/filled-maps.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [FilledMapVisual](aws-properties-quicksight-template-filledmapvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FunnelChartVisual`
-
+`FunnelChartVisual`  <a name="cfn-quicksight-template-visual-funnelchartvisual"></a>
 A funnel chart.
+For more information, see [Using funnel charts](https://docs.aws.amazon.com/quicksight/latest/user/funnel-visual-content.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [FunnelChartVisual](aws-properties-quicksight-template-funnelchartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using funnel charts](../../../quicksight/latest/user/funnel-visual-content.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [FunnelChartVisual](aws-properties-quicksight-template-funnelchartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GaugeChartVisual`
-
+`GaugeChartVisual`  <a name="cfn-quicksight-template-visual-gaugechartvisual"></a>
 A gauge chart.
+For more information, see [Using gauge charts](https://docs.aws.amazon.com/quicksight/latest/user/gauge-chart.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [GaugeChartVisual](aws-properties-quicksight-template-gaugechartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using gauge charts](../../../quicksight/latest/user/gauge-chart.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [GaugeChartVisual](aws-properties-quicksight-template-gaugechartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GeospatialMapVisual`
-
+`GeospatialMapVisual`  <a name="cfn-quicksight-template-visual-geospatialmapvisual"></a>
 A geospatial map or a points on map visual.
+For more information, see [Creating point maps](https://docs.aws.amazon.com/quicksight/latest/user/point-maps.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [GeospatialMapVisual](aws-properties-quicksight-template-geospatialmapvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Creating point maps](../../../quicksight/latest/user/point-maps.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [GeospatialMapVisual](aws-properties-quicksight-template-geospatialmapvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HeatMapVisual`
-
+`HeatMapVisual`  <a name="cfn-quicksight-template-visual-heatmapvisual"></a>
 A heat map.
+For more information, see [Using heat maps](https://docs.aws.amazon.com/quicksight/latest/user/heat-map.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [HeatMapVisual](aws-properties-quicksight-template-heatmapvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using heat maps](../../../quicksight/latest/user/heat-map.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [HeatMapVisual](aws-properties-quicksight-template-heatmapvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HistogramVisual`
-
+`HistogramVisual`  <a name="cfn-quicksight-template-visual-histogramvisual"></a>
 A histogram.
+For more information, see [Using histograms](https://docs.aws.amazon.com/quicksight/latest/user/histogram-charts.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [HistogramVisual](aws-properties-quicksight-template-histogramvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using histograms](../../../quicksight/latest/user/histogram-charts.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [HistogramVisual](aws-properties-quicksight-template-histogramvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InsightVisual`
-
+`InsightVisual`  <a name="cfn-quicksight-template-visual-insightvisual"></a>
 An insight visual.
+For more information, see [Working with insights](https://docs.aws.amazon.com/quicksight/latest/user/computational-insights.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [InsightVisual](aws-properties-quicksight-template-insightvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Working with insights](../../../quicksight/latest/user/computational-insights.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [InsightVisual](aws-properties-quicksight-template-insightvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KPIVisual`
-
+`KPIVisual`  <a name="cfn-quicksight-template-visual-kpivisual"></a>
 A key performance indicator (KPI).
+For more information, see [Using KPIs](https://docs.aws.amazon.com/quicksight/latest/user/kpi.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [KPIVisual](aws-properties-quicksight-template-kpivisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using KPIs](../../../quicksight/latest/user/kpi.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [KPIVisual](aws-properties-quicksight-template-kpivisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LineChartVisual`
-
+`LineChartVisual`  <a name="cfn-quicksight-template-visual-linechartvisual"></a>
 A line chart.
+For more information, see [Using line charts](https://docs.aws.amazon.com/quicksight/latest/user/line-charts.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [LineChartVisual](aws-properties-quicksight-template-linechartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using line charts](../../../quicksight/latest/user/line-charts.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [LineChartVisual](aws-properties-quicksight-template-linechartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PieChartVisual`
-
+`PieChartVisual`  <a name="cfn-quicksight-template-visual-piechartvisual"></a>
 A pie or donut chart.
+For more information, see [Using pie charts](https://docs.aws.amazon.com/quicksight/latest/user/pie-chart.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [PieChartVisual](aws-properties-quicksight-template-piechartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using pie charts](../../../quicksight/latest/user/pie-chart.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [PieChartVisual](aws-properties-quicksight-template-piechartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PivotTableVisual`
-
+`PivotTableVisual`  <a name="cfn-quicksight-template-visual-pivottablevisual"></a>
 A pivot table.
+For more information, see [Using pivot tables](https://docs.aws.amazon.com/quicksight/latest/user/pivot-table.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [PivotTableVisual](aws-properties-quicksight-template-pivottablevisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using pivot tables](../../../quicksight/latest/user/pivot-table.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [PivotTableVisual](aws-properties-quicksight-template-pivottablevisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PluginVisual`
-
+`PluginVisual`  <a name="cfn-quicksight-template-visual-pluginvisual"></a>
 The custom plugin visual type.
+*Required*: No
+*Type*: [PluginVisual](aws-properties-quicksight-template-pluginvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PluginVisual](aws-properties-quicksight-template-pluginvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RadarChartVisual`
-
+`RadarChartVisual`  <a name="cfn-quicksight-template-visual-radarchartvisual"></a>
 A radar chart visual.
+For more information, see [Using radar charts](https://docs.aws.amazon.com/quicksight/latest/user/radar-chart.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [RadarChartVisual](aws-properties-quicksight-template-radarchartvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using radar charts](../../../quicksight/latest/user/radar-chart.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [RadarChartVisual](aws-properties-quicksight-template-radarchartvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SankeyDiagramVisual`
-
+`SankeyDiagramVisual`  <a name="cfn-quicksight-template-visual-sankeydiagramvisual"></a>
 A sankey diagram.
+For more information, see [Using Sankey diagrams](https://docs.aws.amazon.com/quicksight/latest/user/sankey-diagram.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [SankeyDiagramVisual](aws-properties-quicksight-template-sankeydiagramvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using Sankey diagrams](../../../quicksight/latest/user/sankey-diagram.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [SankeyDiagramVisual](aws-properties-quicksight-template-sankeydiagramvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScatterPlotVisual`
-
+`ScatterPlotVisual`  <a name="cfn-quicksight-template-visual-scatterplotvisual"></a>
 A scatter plot.
+For more information, see [Using scatter plots](https://docs.aws.amazon.com/quicksight/latest/user/scatter-plot.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [ScatterPlotVisual](aws-properties-quicksight-template-scatterplotvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using scatter plots](../../../quicksight/latest/user/scatter-plot.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [ScatterPlotVisual](aws-properties-quicksight-template-scatterplotvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableVisual`
-
+`TableVisual`  <a name="cfn-quicksight-template-visual-tablevisual"></a>
 A table visual.
+For more information, see [Using tables as visuals](https://docs.aws.amazon.com/quicksight/latest/user/tabular.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [TableVisual](aws-properties-quicksight-template-tablevisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using tables as visuals](../../../quicksight/latest/user/tabular.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [TableVisual](aws-properties-quicksight-template-tablevisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TreeMapVisual`
-
+`TreeMapVisual`  <a name="cfn-quicksight-template-visual-treemapvisual"></a>
 A tree map.
+For more information, see [Using tree maps](https://docs.aws.amazon.com/quicksight/latest/user/tree-map.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [TreeMapVisual](aws-properties-quicksight-template-treemapvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using tree maps](../../../quicksight/latest/user/tree-map.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [TreeMapVisual](aws-properties-quicksight-template-treemapvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WaterfallVisual`
-
+`WaterfallVisual`  <a name="cfn-quicksight-template-visual-waterfallvisual"></a>
 A waterfall chart.
+For more information, see [Using waterfall charts](https://docs.aws.amazon.com/quicksight/latest/user/waterfall-chart.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [WaterfallVisual](aws-properties-quicksight-template-waterfallvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using waterfall charts](../../../quicksight/latest/user/waterfall-chart.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [WaterfallVisual](aws-properties-quicksight-template-waterfallvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordCloudVisual`
-
+`WordCloudVisual`  <a name="cfn-quicksight-template-visual-wordcloudvisual"></a>
 A word cloud.
-
-For more information, see [Using word clouds](../../../quicksight/latest/user/word-cloud.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: [WordCloudVisual](aws-properties-quicksight-template-wordcloudvisual.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VisibleRangeOptions
-
-VisualCustomAction
+For more information, see [Using word clouds](https://docs.aws.amazon.com/quicksight/latest/user/word-cloud.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: [WordCloudVisual](aws-properties-quicksight-template-wordcloudvisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

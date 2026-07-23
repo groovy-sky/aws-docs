@@ -2,66 +2,50 @@
 title: "AWS::MWAAServerless::Workflow EncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAAServerless::Workflow EncryptionConfiguration
+<a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration"></a>
 
 Configuration for encrypting workflow data at rest and in transit. Amazon Managed Workflows for Apache Airflow Serverless provides comprehensive encryption capabilities to protect sensitive workflow data, parameters, and execution logs. When using customer-managed keys, the service integrates with AWSAWS KMS to provide fine-grained access control and audit capabilities. Encryption is applied consistently across the distributed execution environment including task containers, metadata storage, and log streams.
 
 ## Syntax
+<a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String,
-  "Type" : String
+  "[KmsKeyId](#cfn-mwaaserverless-workflow-encryptionconfiguration-kmskeyid)" : {{String}},
+  "[Type](#cfn-mwaaserverless-workflow-encryptionconfiguration-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-  Type: String
-
+```
+  [KmsKeyId](#cfn-mwaaserverless-workflow-encryptionconfiguration-kmskeyid): {{String}}
+  [Type](#cfn-mwaaserverless-workflow-encryptionconfiguration-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration-properties"></a>
 
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-mwaaserverless-workflow-encryptionconfiguration-kmskeyid"></a>
 The ID or ARN of the AWS KMS key to use for encryption. Required when `Type` is `CUSTOMER_MANAGED_KEY`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-mwaaserverless-workflow-encryptionconfiguration-type"></a>
 The type of encryption to use. Values are `AWS_MANAGED_KEY` (AWS manages the encryption key) or `CUSTOMER_MANAGED_KEY` (you provide a KMS key).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AWS_MANAGED_KEY | CUSTOMER_MANAGED_KEY`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MWAAServerless::Workflow
-
-LoggingConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AWS_MANAGED_KEY | CUSTOMER_MANAGED_KEY`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

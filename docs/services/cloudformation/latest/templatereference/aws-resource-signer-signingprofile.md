@@ -2,129 +2,102 @@
 title: "AWS::Signer::SigningProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Signer::SigningProfile
+<a name="aws-resource-signer-signingprofile"></a>
 
-Creates a signing profile. A signing profile is a code-signing template that can be used to
-carry out a pre-defined signing job.
+Creates a signing profile. A signing profile is a code-signing template that can be used to carry out a pre-defined signing job.
 
 ## Syntax
+<a name="aws-resource-signer-signingprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-signer-signingprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Signer::SigningProfile",
   "Properties" : {
-      "PlatformId" : String,
-      "ProfileName" : String,
-      "SignatureValidityPeriod" : SignatureValidityPeriod,
-      "Tags" : [ Tag, ... ]
+      "[PlatformId](#cfn-signer-signingprofile-platformid)" : {{String}},
+      "[ProfileName](#cfn-signer-signingprofile-profilename)" : {{String}},
+      "[SignatureValidityPeriod](#cfn-signer-signingprofile-signaturevalidityperiod)" : {{SignatureValidityPeriod}},
+      "[Tags](#cfn-signer-signingprofile-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-signer-signingprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Signer::SigningProfile
 Properties:
-  PlatformId: String
-  ProfileName: String
-  SignatureValidityPeriod:
-    SignatureValidityPeriod
-  Tags:
-    - Tag
-
+  [PlatformId](#cfn-signer-signingprofile-platformid): {{String}}
+  [ProfileName](#cfn-signer-signingprofile-profilename): {{String}}
+  [SignatureValidityPeriod](#cfn-signer-signingprofile-signaturevalidityperiod): {{
+    SignatureValidityPeriod}}
+  [Tags](#cfn-signer-signingprofile-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-signer-signingprofile-properties"></a>
 
-`PlatformId`
-
+`PlatformId`  <a name="cfn-signer-signingprofile-platformid"></a>
 The ID of a platform that is available for use by a signing profile.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AWSLambda-SHA384-ECDSA | Notation-OCI-SHA384-ECDSA`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AWSLambda-SHA384-ECDSA | Notation-OCI-SHA384-ECDSA`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfileName`
-
+`ProfileName`  <a name="cfn-signer-signingprofile-profilename"></a>
 The name of the signing profile.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z_]{2,64}$`
+*Minimum*: `2`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`SignatureValidityPeriod`  <a name="cfn-signer-signingprofile-signaturevalidityperiod"></a>
+The validity period override for any signature generated using this signing profile. If unspecified, the default is 135 months.
+*Required*: No
+*Type*: [SignatureValidityPeriod](aws-properties-signer-signingprofile-signaturevalidityperiod.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z_]{2,64}$`
-
-_Minimum_: `2`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SignatureValidityPeriod`
-
-The validity period override for any signature generated using this signing
-profile. If unspecified, the default is 135 months.
-
-_Required_: No
-
-_Type_: [SignatureValidityPeriod](aws-properties-signer-signingprofile-signaturevalidityperiod.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-signer-signingprofile-tags"></a>
 A list of tags associated with the signing profile.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-signer-signingprofile-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-signer-signingprofile-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-signer-signingprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-signer-signingprofile-return-values-ref"></a>
 
 The signing profile ARN.
 
 ### Fn::GetAtt
+<a name="aws-resource-signer-signingprofile-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-signer-signingprofile-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the signing profile created.
 
-`ProfileName`
-
+`ProfileName`  <a name="ProfileName-fn::getatt"></a>
 The name of the signing profile created.
 
-`ProfileVersion`
-
+`ProfileVersion`  <a name="ProfileVersion-fn::getatt"></a>
 The version of the signing profile created.
 
-`ProfileVersionArn`
-
+`ProfileVersionArn`  <a name="ProfileVersionArn-fn::getatt"></a>
 The signing profile ARN, including the profile version.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Signer::ProfilePermission
-
-SignatureValidityPeriod
 
 All content copied from https://docs.aws.amazon.com/.

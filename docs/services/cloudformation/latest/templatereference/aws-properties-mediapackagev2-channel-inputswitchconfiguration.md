@@ -2,68 +2,51 @@
 title: "AWS::MediaPackageV2::Channel InputSwitchConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::Channel InputSwitchConfiguration
+<a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration"></a>
 
 The configuration for input switching based on the media quality confidence score (MQCS) as provided from AWS Elemental MediaLive.
 
 ## Syntax
+<a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MQCSInputSwitching" : Boolean,
-  "PreferredInput" : Integer
+  "[MQCSInputSwitching](#cfn-mediapackagev2-channel-inputswitchconfiguration-mqcsinputswitching)" : {{Boolean}},
+  "[PreferredInput](#cfn-mediapackagev2-channel-inputswitchconfiguration-preferredinput)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MQCSInputSwitching: Boolean
-  PreferredInput: Integer
-
+```
+  [MQCSInputSwitching](#cfn-mediapackagev2-channel-inputswitchconfiguration-mqcsinputswitching): {{Boolean}}
+  [PreferredInput](#cfn-mediapackagev2-channel-inputswitchconfiguration-preferredinput): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration-properties"></a>
 
-`MQCSInputSwitching`
-
+`MQCSInputSwitching`  <a name="cfn-mediapackagev2-channel-inputswitchconfiguration-mqcsinputswitching"></a>
 When true, AWS Elemental MediaPackage performs input switching based on the MQCS. Default is false. This setting is valid only when `InputType` is `CMAF`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PreferredInput`
-
+`PreferredInput`  <a name="cfn-mediapackagev2-channel-inputswitchconfiguration-preferredinput"></a>
 For CMAF inputs, indicates which input MediaPackage should prefer when both inputs have equal MQCS scores. Select `1` to prefer the first ingest endpoint, or `2` to prefer the second ingest endpoint. If you don't specify a preferred input, MediaPackage uses its default switching behavior when MQCS scores are equal.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngestEndpoint
-
-OutputHeaderConfiguration
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

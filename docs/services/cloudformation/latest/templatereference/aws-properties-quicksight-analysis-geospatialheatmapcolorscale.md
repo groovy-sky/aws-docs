@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Analysis GeospatialHeatmapColorScale"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialHeatmapColorScale
+<a name="aws-properties-quicksight-analysis-geospatialheatmapcolorscale"></a>
 
 The color scale specification for the heatmap point style.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialheatmapcolorscale-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialheatmapcolorscale-syntax.json"></a>
 
-```json
-
+```
 {
-  "Colors" : [ GeospatialHeatmapDataColor, ... ]
+  "[Colors](#cfn-quicksight-analysis-geospatialheatmapcolorscale-colors)" : {{[ GeospatialHeatmapDataColor, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialheatmapcolorscale-syntax.yaml"></a>
 
-```yaml
-
-  Colors:
-    - GeospatialHeatmapDataColor
-
+```
+  [Colors](#cfn-quicksight-analysis-geospatialheatmapcolorscale-colors): {{
+    - GeospatialHeatmapDataColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialheatmapcolorscale-properties"></a>
 
-`Colors`
-
+`Colors`  <a name="cfn-quicksight-analysis-geospatialheatmapcolorscale-colors"></a>
 The list of colors to be used in heatmap point style.
-
-_Required_: No
-
-_Type_: Array of [GeospatialHeatmapDataColor](aws-properties-quicksight-analysis-geospatialheatmapdatacolor.md)
-
-_Minimum_: `2`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialGradientStepColor
-
-GeospatialHeatmapConfiguration
+*Required*: No
+*Type*: Array of [GeospatialHeatmapDataColor](aws-properties-quicksight-analysis-geospatialheatmapdatacolor.md)
+*Minimum*: `2`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

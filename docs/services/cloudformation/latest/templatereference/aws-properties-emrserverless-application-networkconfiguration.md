@@ -2,74 +2,55 @@
 title: "AWS::EMRServerless::Application NetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application NetworkConfiguration
+<a name="aws-properties-emrserverless-application-networkconfiguration"></a>
 
 The network configuration for customer VPC connectivity.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-networkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-networkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-emrserverless-application-networkconfiguration-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-emrserverless-application-networkconfiguration-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-networkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-emrserverless-application-networkconfiguration-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-emrserverless-application-networkconfiguration-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-networkconfiguration-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-emrserverless-application-networkconfiguration-securitygroupids"></a>
 The array of security group Ids for customer VPC connectivity.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-emrserverless-application-networkconfiguration-subnetids"></a>
 The array of subnet Ids for customer VPC connectivity.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `16`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MonitoringConfiguration
-
-PrometheusMonitoringConfiguration
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `16`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,56 +2,43 @@
 title: "AWS::NetworkFirewall::LoggingConfiguration LoggingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::LoggingConfiguration LoggingConfiguration
+<a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration"></a>
 
 Defines how AWS Network Firewall performs logging for a firewall.
 
 ## Syntax
+<a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogDestinationConfigs" : [ LogDestinationConfig, ... ]
+  "[LogDestinationConfigs](#cfn-networkfirewall-loggingconfiguration-loggingconfiguration-logdestinationconfigs)" : {{[ LogDestinationConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LogDestinationConfigs:
-    - LogDestinationConfig
-
+```
+  [LogDestinationConfigs](#cfn-networkfirewall-loggingconfiguration-loggingconfiguration-logdestinationconfigs): {{
+    - LogDestinationConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration-properties"></a>
 
-`LogDestinationConfigs`
-
-Defines the logging destinations for the logs for a firewall. Network Firewall generates
-logs for stateful rule groups.
-
-_Required_: Yes
-
-_Type_: Array of [LogDestinationConfig](aws-properties-networkfirewall-loggingconfiguration-logdestinationconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogDestinationConfig
-
-AWS::NetworkFirewall::RuleGroup
+`LogDestinationConfigs`  <a name="cfn-networkfirewall-loggingconfiguration-loggingconfiguration-logdestinationconfigs"></a>
+Defines the logging destinations for the logs for a firewall. Network Firewall generates logs for stateful rule groups.
+*Required*: Yes
+*Type*: Array of [LogDestinationConfig](aws-properties-networkfirewall-loggingconfiguration-logdestinationconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

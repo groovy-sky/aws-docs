@@ -2,53 +2,42 @@
 title: "AWS::APS::Scraper Destination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper Destination
+<a name="aws-properties-aps-scraper-destination"></a>
 
 Where to send the metrics from a scraper.
 
 ## Syntax
+<a name="aws-properties-aps-scraper-destination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-scraper-destination-syntax.json"></a>
 
-```json
-
+```
 {
-  "AmpConfiguration" : AmpConfiguration
+  "[AmpConfiguration](#cfn-aps-scraper-destination-ampconfiguration)" : {{AmpConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-scraper-destination-syntax.yaml"></a>
 
-```yaml
-
-  AmpConfiguration:
-    AmpConfiguration
-
+```
+  [AmpConfiguration](#cfn-aps-scraper-destination-ampconfiguration): {{
+    AmpConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-scraper-destination-properties"></a>
 
-`AmpConfiguration`
-
+`AmpConfiguration`  <a name="cfn-aps-scraper-destination-ampconfiguration"></a>
 The Amazon Managed Service for Prometheus workspace to send metrics to.
-
-_Required_: No
-
-_Type_: [AmpConfiguration](aws-properties-aps-scraper-ampconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentConfig
-
-EksConfiguration
+*Required*: No
+*Type*: [AmpConfiguration](aws-properties-aps-scraper-ampconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

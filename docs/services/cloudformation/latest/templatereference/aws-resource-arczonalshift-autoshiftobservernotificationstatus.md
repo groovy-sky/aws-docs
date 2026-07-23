@@ -2,73 +2,65 @@
 title: "AWS::ARCZonalShift::AutoshiftObserverNotificationStatus"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCZonalShift::AutoshiftObserverNotificationStatus
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus"></a>
 
-The `AWS::ARCZonalShift::AutoshiftObserverNotificationStatus` resource Property description not available. for ARCZonalShift.
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-description"></a>The `AWS::ARCZonalShift::AutoshiftObserverNotificationStatus` resource Property description not available. for ARCZonalShift.
 
 ## Syntax
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ARCZonalShift::AutoshiftObserverNotificationStatus",
   "Properties" : {
-      "Status" : String
+      "[Status](#cfn-arczonalshift-autoshiftobservernotificationstatus-status)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ARCZonalShift::AutoshiftObserverNotificationStatus
 Properties:
-  Status: String
-
+  [Status](#cfn-arczonalshift-autoshiftobservernotificationstatus-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-properties"></a>
 
-`Status`
-
+`Status`  <a name="cfn-arczonalshift-autoshiftobservernotificationstatus-status"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-return-values"></a>
 
 ### Ref
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-return-values-fn--getatt"></a>
 
-`AccountId`
+####
+<a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-return-values-fn--getatt-fn--getatt"></a>
 
+`AccountId`  <a name="AccountId-fn::getatt"></a>
 Property description not available.
 
-`Region`
-
+`Region`  <a name="Region-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS ARC - Zonal Shift
-
-AWS::ARCZonalShift::ZonalAutoshiftConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

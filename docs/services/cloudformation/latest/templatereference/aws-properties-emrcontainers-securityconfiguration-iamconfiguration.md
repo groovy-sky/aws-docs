@@ -2,54 +2,42 @@
 title: "AWS::EMRContainers::SecurityConfiguration IAMConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration IAMConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration"></a>
 
-The `IAMConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
+<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-description"></a>The `IAMConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SystemRole" : String
+  "[SystemRole](#cfn-emrcontainers-securityconfiguration-iamconfiguration-systemrole)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SystemRole: String
-
+```
+  [SystemRole](#cfn-emrcontainers-securityconfiguration-iamconfiguration-systemrole): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-properties"></a>
 
-`SystemRole`
-
+`SystemRole`  <a name="cfn-emrcontainers-securityconfiguration-iamconfiguration-systemrole"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionConfiguration
-
-IdentityCenterConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,67 +2,51 @@
 title: "AWS::GroundStation::DataflowEndpointGroupV2 UplinkAwsGroundStationAgentEndpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroupV2 UplinkAwsGroundStationAgentEndpoint
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint"></a>
 
 Definition for an uplink agent endpoint
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataflowDetails" : UplinkDataflowDetails,
-  "Name" : String
+  "[DataflowDetails](#cfn-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-dataflowdetails)" : {{UplinkDataflowDetails}},
+  "[Name](#cfn-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-syntax.yaml"></a>
 
-```yaml
-
-  DataflowDetails:
-    UplinkDataflowDetails
-  Name: String
-
+```
+  [DataflowDetails](#cfn-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-dataflowdetails): {{
+    UplinkDataflowDetails}}
+  [Name](#cfn-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-properties"></a>
 
-`DataflowDetails`
-
+`DataflowDetails`  <a name="cfn-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-dataflowdetails"></a>
 Dataflow details for the uplink endpoint
+*Required*: Yes
+*Type*: [UplinkDataflowDetails](aws-properties-groundstation-dataflowendpointgroupv2-uplinkdataflowdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [UplinkDataflowDetails](aws-properties-groundstation-dataflowendpointgroupv2-uplinkdataflowdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint-name"></a>
 Uplink dataflow endpoint name
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[ a-zA-Z0-9_:-]{1,256}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-UplinkAwsGroundStationAgentEndpointDetails
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[ a-zA-Z0-9_:-]{1,256}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

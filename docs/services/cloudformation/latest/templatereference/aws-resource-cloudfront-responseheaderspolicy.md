@@ -2,99 +2,93 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy
+<a name="aws-resource-cloudfront-responseheaderspolicy"></a>
 
 A response headers policy.
 
 A response headers policy contains information about a set of HTTP response headers.
 
-After you create a response headers policy, you can use its ID to attach it to one or more
-cache behaviors in a CloudFront distribution. When it's attached to a cache behavior, the
-response headers policy affects the HTTP headers that CloudFront includes in HTTP responses to
-requests that match the cache behavior. CloudFront adds or removes response headers according
-to the configuration of the response headers policy.
+After you create a response headers policy, you can use its ID to attach it to one or more cache behaviors in a CloudFront distribution. When it's attached to a cache behavior, the response headers policy affects the HTTP headers that CloudFront includes in HTTP responses to requests that match the cache behavior. CloudFront adds or removes response headers according to the configuration of the response headers policy.
 
-For more information, see [Adding or removing HTTP headers in CloudFront responses](../../../amazoncloudfront/latest/developerguide/modifying-response-headers.md) in the
-_Amazon CloudFront Developer Guide_.
+For more information, see [Adding or removing HTTP headers in CloudFront responses](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/modifying-response-headers.html) in the *Amazon CloudFront Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-cloudfront-responseheaderspolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudfront-responseheaderspolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFront::ResponseHeadersPolicy",
   "Properties" : {
-      "ResponseHeadersPolicyConfig" : ResponseHeadersPolicyConfig
+      "[ResponseHeadersPolicyConfig](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig)" : {{ResponseHeadersPolicyConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudfront-responseheaderspolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFront::ResponseHeadersPolicy
 Properties:
-  ResponseHeadersPolicyConfig:
-    ResponseHeadersPolicyConfig
-
+  [ResponseHeadersPolicyConfig](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig): {{
+    ResponseHeadersPolicyConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudfront-responseheaderspolicy-properties"></a>
 
-`ResponseHeadersPolicyConfig`
-
+`ResponseHeadersPolicyConfig`  <a name="cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig"></a>
 A response headers policy configuration.
-
-_Required_: Yes
-
-_Type_: [ResponseHeadersPolicyConfig](aws-properties-cloudfront-responseheaderspolicy-responseheaderspolicyconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: [ResponseHeadersPolicyConfig](aws-properties-cloudfront-responseheaderspolicy-responseheaderspolicyconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudfront-responseheaderspolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudfront-responseheaderspolicy-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the response headers policy ID. For example:
-`57f99797-3b20-4e1b-a728-27972a74082a`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the response headers policy ID. For example: `57f99797-3b20-4e1b-a728-27972a74082a`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudfront-responseheaderspolicy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-cloudfront-responseheaderspolicy-return-values-fn--getatt-fn--getatt"></a>
 
-The unique identifier for the response headers policy. For example:
-`57f99797-3b20-4e1b-a728-27972a74082a`.
+`Id`  <a name="Id-fn::getatt"></a>
+The unique identifier for the response headers policy. For example: `57f99797-3b20-4e1b-a728-27972a74082a`.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The date and time when the response headers policy was last modified.
 
 ## Examples
+<a name="aws-resource-cloudfront-responseheaderspolicy--examples"></a>
 
 ### Create a response headers policy
+<a name="aws-resource-cloudfront-responseheaderspolicy--examples--Create_a_response_headers_policy"></a>
 
 The following example creates a response headers policy.
 
 #### JSON
+<a name="aws-resource-cloudfront-responseheaderspolicy--examples--Create_a_response_headers_policy--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyResponseHeadersPolicy": {
@@ -215,9 +209,9 @@ The following example creates a response headers policy.
 ```
 
 #### YAML
+<a name="aws-resource-cloudfront-responseheaderspolicy--examples--Create_a_response_headers_policy--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ABCDE1FGHI:
   MyWaitConditionHandle:
@@ -301,11 +295,5 @@ Resources:
       ServiceToken: !ImportValue RHPolicyLambdaWaiter
       WaitSeconds: 300
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KinesisStreamConfig
-
-AccessControlAllowHeaders
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,58 @@
 title: "AWS::DynamoDB::Table SSESpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table SSESpecification
+<a name="aws-properties-dynamodb-table-ssespecification"></a>
 
 Represents the settings used to enable server-side encryption.
 
 ## Syntax
+<a name="aws-properties-dynamodb-table-ssespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-table-ssespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "KMSMasterKeyId" : String,
-  "SSEEnabled" : Boolean,
-  "SSEType" : String
+  "[KMSMasterKeyId](#cfn-dynamodb-table-ssespecification-kmsmasterkeyid)" : {{String}},
+  "[SSEEnabled](#cfn-dynamodb-table-ssespecification-sseenabled)" : {{Boolean}},
+  "[SSEType](#cfn-dynamodb-table-ssespecification-ssetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-table-ssespecification-syntax.yaml"></a>
 
-```yaml
-
-  KMSMasterKeyId: String
-  SSEEnabled: Boolean
-  SSEType: String
-
+```
+  [KMSMasterKeyId](#cfn-dynamodb-table-ssespecification-kmsmasterkeyid): {{String}}
+  [SSEEnabled](#cfn-dynamodb-table-ssespecification-sseenabled): {{Boolean}}
+  [SSEType](#cfn-dynamodb-table-ssespecification-ssetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-table-ssespecification-properties"></a>
 
-`KMSMasterKeyId`
+`KMSMasterKeyId`  <a name="cfn-dynamodb-table-ssespecification-kmsmasterkeyid"></a>
+The AWS KMS key that should be used for the AWS KMS encryption. To specify a key, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN. Note that you should only provide this parameter if the key is different from the default DynamoDB key `alias/aws/dynamodb`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The AWS KMS key that should be used for the AWS KMS encryption.
-To specify a key, use its key ID, Amazon Resource Name (ARN), alias name, or alias ARN.
-Note that you should only provide this parameter if the key is different from the
-default DynamoDB key `alias/aws/dynamodb`.
+`SSEEnabled`  <a name="cfn-dynamodb-table-ssespecification-sseenabled"></a>
+Indicates whether server-side encryption is done using an AWS managed key or an AWS owned key. If enabled (true), server-side encryption type is set to `KMS` and an AWS managed key is used (AWS KMS charges apply). If disabled (false) or not specified, server-side encryption is set to AWS owned key.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SSEEnabled`
-
-Indicates whether server-side encryption is done using an AWS managed
-key or an AWS owned key. If enabled (true), server-side encryption type
-is set to `KMS` and an AWS managed key is used (AWS KMS charges apply). If disabled (false) or not specified, server-side
-encryption is set to AWS owned key.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SSEType`
-
+`SSEType`  <a name="cfn-dynamodb-table-ssespecification-ssetype"></a>
 Server-side encryption type. The only supported value is:
-
-- `KMS` \- Server-side encryption that uses AWS Key Management Service. The
-key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3BucketSource
-
-StreamSpecification
++ `KMS` - Server-side encryption that uses AWS Key Management Service. The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

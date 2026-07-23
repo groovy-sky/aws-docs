@@ -2,64 +2,49 @@
 title: "AWS::DMS::MigrationProject SchemaConversionApplicationAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::MigrationProject SchemaConversionApplicationAttributes
+<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes"></a>
 
-The `SchemaConversionApplicationAttributes` property type specifies Property description not available. for an [AWS::DMS::MigrationProject](aws-resource-dms-migrationproject.md).
+<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-description"></a>The `SchemaConversionApplicationAttributes` property type specifies Property description not available. for an [AWS::DMS::MigrationProject](aws-resource-dms-migrationproject.md).
 
 ## Syntax
+<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3BucketPath" : String,
-  "S3BucketRoleArn" : String
+  "[S3BucketPath](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketpath)" : {{String}},
+  "[S3BucketRoleArn](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketrolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-syntax.yaml"></a>
 
-```yaml
-
-  S3BucketPath: String
-  S3BucketRoleArn: String
-
+```
+  [S3BucketPath](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketpath): {{String}}
+  [S3BucketRoleArn](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-properties"></a>
 
-`S3BucketPath`
-
+`S3BucketPath`  <a name="cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketpath"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3BucketRoleArn`
-
+`S3BucketRoleArn`  <a name="cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketrolearn"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataProviderDescriptor
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

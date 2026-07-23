@@ -2,52 +2,41 @@
 title: "AWS::MPA::ApprovalTeam Policy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MPA::ApprovalTeam Policy
+<a name="aws-properties-mpa-approvalteam-policy"></a>
 
 Contains details for a policy. Policies define what operations a team that define the permissions for team resources.
 
 ## Syntax
+<a name="aws-properties-mpa-approvalteam-policy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mpa-approvalteam-policy-syntax.json"></a>
 
-```json
-
+```
 {
-  "PolicyArn" : String
+  "[PolicyArn](#cfn-mpa-approvalteam-policy-policyarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mpa-approvalteam-policy-syntax.yaml"></a>
 
-```yaml
-
-  PolicyArn: String
-
+```
+  [PolicyArn](#cfn-mpa-approvalteam-policy-policyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mpa-approvalteam-policy-properties"></a>
 
-`PolicyArn`
-
+`PolicyArn`  <a name="cfn-mpa-approvalteam-policy-policyarn"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MofNApprovalStrategy
-
-Tag
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,216 +2,165 @@
 title: "AWS::NetworkManager::TransitGatewayRouteTableAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::TransitGatewayRouteTableAttachment
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment"></a>
 
 Creates a transit gateway route table attachment.
 
 ## Syntax
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::TransitGatewayRouteTableAttachment",
   "Properties" : {
-      "NetworkFunctionGroupName" : String,
-      "PeeringId" : String,
-      "ProposedNetworkFunctionGroupChange" : ProposedNetworkFunctionGroupChange,
-      "ProposedSegmentChange" : ProposedSegmentChange,
-      "RoutingPolicyLabel" : String,
-      "Tags" : [ Tag, ... ],
-      "TransitGatewayRouteTableArn" : String
+      "[NetworkFunctionGroupName](#cfn-networkmanager-transitgatewayroutetableattachment-networkfunctiongroupname)" : {{String}},
+      "[PeeringId](#cfn-networkmanager-transitgatewayroutetableattachment-peeringid)" : {{String}},
+      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
+      "[ProposedSegmentChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
+      "[RoutingPolicyLabel](#cfn-networkmanager-transitgatewayroutetableattachment-routingpolicylabel)" : {{String}},
+      "[Tags](#cfn-networkmanager-transitgatewayroutetableattachment-tags)" : {{[ Tag, ... ]}},
+      "[TransitGatewayRouteTableArn](#cfn-networkmanager-transitgatewayroutetableattachment-transitgatewayroutetablearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::TransitGatewayRouteTableAttachment
 Properties:
-  NetworkFunctionGroupName: String
-  PeeringId: String
-  ProposedNetworkFunctionGroupChange:
-    ProposedNetworkFunctionGroupChange
-  ProposedSegmentChange:
-    ProposedSegmentChange
-  RoutingPolicyLabel: String
-  Tags:
-    - Tag
-  TransitGatewayRouteTableArn: String
-
+  [NetworkFunctionGroupName](#cfn-networkmanager-transitgatewayroutetableattachment-networkfunctiongroupname): {{String}}
+  [PeeringId](#cfn-networkmanager-transitgatewayroutetableattachment-peeringid): {{String}}
+  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange): {{
+    ProposedNetworkFunctionGroupChange}}
+  [ProposedSegmentChange](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange): {{
+    ProposedSegmentChange}}
+  [RoutingPolicyLabel](#cfn-networkmanager-transitgatewayroutetableattachment-routingpolicylabel): {{String}}
+  [Tags](#cfn-networkmanager-transitgatewayroutetableattachment-tags): {{
+    - Tag}}
+  [TransitGatewayRouteTableArn](#cfn-networkmanager-transitgatewayroutetableattachment-transitgatewayroutetablearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-properties"></a>
 
-`NetworkFunctionGroupName`
-
+`NetworkFunctionGroupName`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-networkfunctiongroupname"></a>
 The name of the network function group.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeeringId`
-
+`PeeringId`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-peeringid"></a>
 The ID of the transit gateway peering.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^peering-([0-9a-f]{8,17})$`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^peering-([0-9a-f]{8,17})$`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProposedNetworkFunctionGroupChange`
-
+`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange"></a>
 Describes proposed changes to a network function group.
+*Required*: No
+*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-transitgatewayroutetableattachment-proposednetworkfunctiongroupchange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProposedSegmentChange`
-
+`ProposedSegmentChange`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange"></a>
 This property is read-only. Values can't be assigned to it.
+*Required*: No
+*Type*: [ProposedSegmentChange](aws-properties-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProposedSegmentChange](aws-properties-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingPolicyLabel`
-
+`RoutingPolicyLabel`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-routingpolicylabel"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-tags"></a>
 The list of key-value pairs associated with the transit gateway route table attachment.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkmanager-transitgatewayroutetableattachment-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkmanager-transitgatewayroutetableattachment-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitGatewayRouteTableArn`
-
+`TransitGatewayRouteTableArn`  <a name="cfn-networkmanager-transitgatewayroutetableattachment-transitgatewayroutetablearn"></a>
 The ARN of the transit gateway attachment route table. For example, `"TransitGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway-route-table/tgw-rtb-9876543210123456"`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the attachment ID of the transit gateway route table. For example: `attachment-12367e74104d31234`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AttachmentId`
+####
+<a name="aws-resource-networkmanager-transitgatewayroutetableattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`AttachmentId`  <a name="AttachmentId-fn::getatt"></a>
 The ID of the transit gateway route table attachment.
 
-`AttachmentPolicyRuleNumber`
-
+`AttachmentPolicyRuleNumber`  <a name="AttachmentPolicyRuleNumber-fn::getatt"></a>
 The policy rule number associated with the attachment.
 
-`AttachmentType`
-
+`AttachmentType`  <a name="AttachmentType-fn::getatt"></a>
 The type of attachment. This will be `TRANSIT_GATEWAY_ROUTE_TABLE`.
 
-`CoreNetworkArn`
-
+`CoreNetworkArn`  <a name="CoreNetworkArn-fn::getatt"></a>
 The ARN of the core network.
 
-`CoreNetworkId`
-
+`CoreNetworkId`  <a name="CoreNetworkId-fn::getatt"></a>
 The ID of the core network.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the transit gateway route table attachment was created.
 
-`EdgeLocation`
-
+`EdgeLocation`  <a name="EdgeLocation-fn::getatt"></a>
 The Region where the core network edge is located.
 
-`LastModificationErrors`
-
+`LastModificationErrors`  <a name="LastModificationErrors-fn::getatt"></a>
 Property description not available.
 
-`OwnerAccountId`
-
+`OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
 The ID of the transit gateway route table attachment owner.
 
-`ResourceArn`
-
+`ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
 The resource ARN for the transit gateway route table attachment.
 
-`SegmentName`
-
+`SegmentName`  <a name="SegmentName-fn::getatt"></a>
 The name of the attachment's segment.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the attachment. This can be: `REJECTED` \| `PENDING_ATTACHMENT_ACCEPTANCE` \| `CREATING` \| `FAILED` \| `AVAILABLE` \| `UPDATING` \| ` PENDING_NETWORK_UPDATE` \| `PENDING_TAG_ACCEPTANCE` \| `DELETING`.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the transit gateway route table attachment was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::NetworkManager::TransitGatewayRegistration
-
-ProposedNetworkFunctionGroupChange
 
 All content copied from https://docs.aws.amazon.com/.

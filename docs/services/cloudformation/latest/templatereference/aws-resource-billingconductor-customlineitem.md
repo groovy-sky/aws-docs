@@ -2,213 +2,171 @@
 title: "AWS::BillingConductor::CustomLineItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::CustomLineItem
+<a name="aws-resource-billingconductor-customlineitem"></a>
 
 Creates a custom line item that can be used to create a one-time or recurring, fixed or percentage-based charge that you can apply to a single billing group. You can apply custom line items to the current or previous billing period. You can create either a fee or a discount custom line item.
 
 ## Syntax
+<a name="aws-resource-billingconductor-customlineitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-billingconductor-customlineitem-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BillingConductor::CustomLineItem",
   "Properties" : {
-      "AccountId" : String,
-      "BillingGroupArn" : String,
-      "BillingPeriodRange" : BillingPeriodRange,
-      "ComputationRule" : String,
-      "CustomLineItemChargeDetails" : CustomLineItemChargeDetails,
-      "Description" : String,
-      "Name" : String,
-      "PresentationDetails" : PresentationDetails,
-      "Tags" : [ Tag, ... ]
+      "[AccountId](#cfn-billingconductor-customlineitem-accountid)" : {{String}},
+      "[BillingGroupArn](#cfn-billingconductor-customlineitem-billinggrouparn)" : {{String}},
+      "[BillingPeriodRange](#cfn-billingconductor-customlineitem-billingperiodrange)" : {{BillingPeriodRange}},
+      "[ComputationRule](#cfn-billingconductor-customlineitem-computationrule)" : {{String}},
+      "[CustomLineItemChargeDetails](#cfn-billingconductor-customlineitem-customlineitemchargedetails)" : {{CustomLineItemChargeDetails}},
+      "[Description](#cfn-billingconductor-customlineitem-description)" : {{String}},
+      "[Name](#cfn-billingconductor-customlineitem-name)" : {{String}},
+      "[PresentationDetails](#cfn-billingconductor-customlineitem-presentationdetails)" : {{PresentationDetails}},
+      "[Tags](#cfn-billingconductor-customlineitem-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-billingconductor-customlineitem-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BillingConductor::CustomLineItem
 Properties:
-  AccountId: String
-  BillingGroupArn: String
-  BillingPeriodRange:
-    BillingPeriodRange
-  ComputationRule: String
-  CustomLineItemChargeDetails:
-    CustomLineItemChargeDetails
-  Description: String
-  Name: String
-  PresentationDetails:
-    PresentationDetails
-  Tags:
-    - Tag
-
+  [AccountId](#cfn-billingconductor-customlineitem-accountid): {{String}}
+  [BillingGroupArn](#cfn-billingconductor-customlineitem-billinggrouparn): {{String}}
+  [BillingPeriodRange](#cfn-billingconductor-customlineitem-billingperiodrange): {{
+    BillingPeriodRange}}
+  [ComputationRule](#cfn-billingconductor-customlineitem-computationrule): {{String}}
+  [CustomLineItemChargeDetails](#cfn-billingconductor-customlineitem-customlineitemchargedetails): {{
+    CustomLineItemChargeDetails}}
+  [Description](#cfn-billingconductor-customlineitem-description): {{String}}
+  [Name](#cfn-billingconductor-customlineitem-name): {{String}}
+  [PresentationDetails](#cfn-billingconductor-customlineitem-presentationdetails): {{
+    PresentationDetails}}
+  [Tags](#cfn-billingconductor-customlineitem-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-billingconductor-customlineitem-properties"></a>
 
-`AccountId`
-
+`AccountId`  <a name="cfn-billingconductor-customlineitem-accountid"></a>
 The AWS account in which this custom line item will be applied to.
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9]{12}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9]{12}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BillingGroupArn`
-
+`BillingGroupArn`  <a name="cfn-billingconductor-customlineitem-billinggrouparn"></a>
 The Amazon Resource Name (ARN) that references the billing group where the custom line item applies to.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws(-cn)?:billingconductor::[0-9]{12}:billinggroup/?[a-zA-Z0-9]{10,12}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws(-cn)?:billingconductor::[0-9]{12}:billinggroup/?[a-zA-Z0-9]{10,12}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BillingPeriodRange`
-
+`BillingPeriodRange`  <a name="cfn-billingconductor-customlineitem-billingperiodrange"></a>
 A time range for which the custom line item is effective.
+*Required*: No
+*Type*: [BillingPeriodRange](aws-properties-billingconductor-customlineitem-billingperiodrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BillingPeriodRange](aws-properties-billingconductor-customlineitem-billingperiodrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComputationRule`
-
+`ComputationRule`  <a name="cfn-billingconductor-customlineitem-computationrule"></a>
 The computation rule that determines how the custom line item charges are computed and reflected in the bill.
+*Required*: No
+*Type*: String
+*Allowed values*: `CONSOLIDATED | ITEMIZED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CONSOLIDATED | ITEMIZED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CustomLineItemChargeDetails`
-
+`CustomLineItemChargeDetails`  <a name="cfn-billingconductor-customlineitem-customlineitemchargedetails"></a>
 The charge details of a custom line item. It should contain only one of `Flat` or `Percentage`.
+*Required*: No
+*Type*: [CustomLineItemChargeDetails](aws-properties-billingconductor-customlineitem-customlineitemchargedetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomLineItemChargeDetails](aws-properties-billingconductor-customlineitem-customlineitemchargedetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-billingconductor-customlineitem-description"></a>
 The custom line item's description. This is shown on the Bills page in association with the charge value.
+*Required*: No
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-billingconductor-customlineitem-name"></a>
 The custom line item's name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_\+=\.\-@]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_\+=\.\-@]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PresentationDetails`
-
+`PresentationDetails`  <a name="cfn-billingconductor-customlineitem-presentationdetails"></a>
 Configuration details specifying how the custom line item charges are presented, including which service the charges are shown under.
+*Required*: No
+*Type*: [PresentationDetails](aws-properties-billingconductor-customlineitem-presentationdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [PresentationDetails](aws-properties-billingconductor-customlineitem-presentationdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-billingconductor-customlineitem-tags"></a>
 A map that contains tag keys and tag values that are attached to a custom line item.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-billingconductor-customlineitem-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-billingconductor-customlineitem-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-billingconductor-customlineitem-return-values"></a>
 
 ### Ref
+<a name="aws-resource-billingconductor-customlineitem-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-billingconductor-customlineitem-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-billingconductor-customlineitem-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) that references the billing group where the custom line item applies to.
+`Arn`  <a name="Arn-fn::getatt"></a>
+ The Amazon Resource Name (ARN) that references the billing group where the custom line item applies to.
 
-`AssociationSize`
-
+`AssociationSize`  <a name="AssociationSize-fn::getatt"></a>
 The number of resources that are associated to the custom line item.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time created.
 
-`CurrencyCode`
-
+`CurrencyCode`  <a name="CurrencyCode-fn::getatt"></a>
 The custom line item's charge value currency. Only one of the valid values can be used.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The most recent time the custom line item was modified.
 
-`ProductCode`
-
+`ProductCode`  <a name="ProductCode-fn::getatt"></a>
 The product code associated with the custom line item.
 
 ## Examples
+<a name="aws-resource-billingconductor-customlineitem--examples"></a>
 
-- [Flat custom line item](#aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item)
-
-- [Percentage custom line item](#aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item)
+**Topics**
++ [Flat custom line item](#aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item)
++ [Percentage custom line item](#aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item)
 
 ### Flat custom line item
+<a name="aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item"></a>
 
 The following example shows a flat charge custom line item of $10 attached to a billing group.
 
 #### JSON
+<a name="aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item--json"></a>
 
-```json
-
+```
 {
   "Resources": {
       "TestFlatCustomLineItem": {
@@ -235,9 +193,9 @@ The following example shows a flat charge custom line item of $10 attached to a 
 ```
 
 #### YAML
+<a name="aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item--yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestFlatCustomLineItem:
       Type: 'AWS::BillingConductor::CustomLineItem'
@@ -251,17 +209,17 @@ Resources:
               Type: 'FEE'
           BillingPeriodRange:
             InclusiveStartBillingPeriod: 2022-11
-
 ```
 
 ### Percentage custom line item
+<a name="aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item"></a>
 
 The following example shows a percentage charge custom line item that is 10% of the billing group total cost.
 
 #### JSON
+<a name="aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item--json"></a>
 
-```json
-
+```
 {
   "Resources": {
       "TestPercentageCustomLineItem": {
@@ -288,9 +246,9 @@ The following example shows a percentage charge custom line item that is 10% of 
 ```
 
 #### YAML
+<a name="aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item--yaml"></a>
 
-```yaml
-
+```
 Resources:
         TestPercentageCustomLineItem:
         Type: 'AWS::BillingConductor::CustomLineItem'
@@ -305,11 +263,5 @@ Resources:
         - !GetAtt TestBillingGroup.Arn
         Type: 'FEE'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-BillingPeriodRange
 
 All content copied from https://docs.aws.amazon.com/.

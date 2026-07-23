@@ -2,76 +2,54 @@
 title: "AWS::EC2::CapacityReservationFleet TagSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::CapacityReservationFleet TagSpecification
+<a name="aws-properties-ec2-capacityreservationfleet-tagspecification"></a>
 
-The tags to apply to a resource when the resource is being created. When you specify a tag, you must
-specify the resource type to tag, otherwise the request will fail.
+The tags to apply to a resource when the resource is being created. When you specify a tag, you must specify the resource type to tag, otherwise the request will fail.
 
-###### Note
-
-The `Valid Values` lists all the resource types that can be tagged.
-However, the action you're using might not support tagging all of these resource types.
-If you try to tag a resource type that is unsupported for the action you're using,
-you'll get an error.
+**Note**
+The `Valid Values` lists all the resource types that can be tagged. However, the action you're using might not support tagging all of these resource types. If you try to tag a resource type that is unsupported for the action you're using, you'll get an error.
 
 ## Syntax
+<a name="aws-properties-ec2-capacityreservationfleet-tagspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-capacityreservationfleet-tagspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceType" : String,
-  "Tags" : [ Tag, ... ]
+  "[ResourceType](#cfn-ec2-capacityreservationfleet-tagspecification-resourcetype)" : {{String}},
+  "[Tags](#cfn-ec2-capacityreservationfleet-tagspecification-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-capacityreservationfleet-tagspecification-syntax.yaml"></a>
 
-```yaml
-
-  ResourceType: String
-  Tags:
-    - Tag
-
+```
+  [ResourceType](#cfn-ec2-capacityreservationfleet-tagspecification-resourcetype): {{String}}
+  [Tags](#cfn-ec2-capacityreservationfleet-tagspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-capacityreservationfleet-tagspecification-properties"></a>
 
-`ResourceType`
+`ResourceType`  <a name="cfn-ec2-capacityreservationfleet-tagspecification-resourcetype"></a>
+The type of resource to tag on creation. Specify `capacity-reservation-fleet`.
+To tag a resource after it has been created, see [CreateTags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTags.html).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The type of resource to tag on creation. Specify
-`capacity-reservation-fleet`.
-
-To tag a resource after it has been created, see [CreateTags](../../../../reference/awsec2/latest/apireference/api-createtags.md).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-capacityreservationfleet-tagspecification-tags"></a>
 The tags to apply to the resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-capacityreservationfleet-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::CarrierGateway
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-capacityreservationfleet-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,131 +2,89 @@
 title: "AWS::SageMaker::MonitoringSchedule BatchTransformInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::MonitoringSchedule BatchTransformInput
+<a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput"></a>
 
 Input object for the batch transform job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataCapturedDestinationS3Uri" : String,
-  "DatasetFormat" : DatasetFormat,
-  "ExcludeFeaturesAttribute" : String,
-  "LocalPath" : String,
-  "S3DataDistributionType" : String,
-  "S3InputMode" : String
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri)" : {{String}},
+  "[DatasetFormat](#cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat)" : {{DatasetFormat}},
+  "[ExcludeFeaturesAttribute](#cfn-sagemaker-monitoringschedule-batchtransforminput-excludefeaturesattribute)" : {{String}},
+  "[LocalPath](#cfn-sagemaker-monitoringschedule-batchtransforminput-localpath)" : {{String}},
+  "[S3DataDistributionType](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3datadistributiontype)" : {{String}},
+  "[S3InputMode](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3inputmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput-syntax.yaml"></a>
 
-```yaml
-
-  DataCapturedDestinationS3Uri: String
-  DatasetFormat:
-    DatasetFormat
-  ExcludeFeaturesAttribute: String
-  LocalPath: String
-  S3DataDistributionType: String
-  S3InputMode: String
-
+```
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri): {{String}}
+  [DatasetFormat](#cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat): {{
+    DatasetFormat}}
+  [ExcludeFeaturesAttribute](#cfn-sagemaker-monitoringschedule-batchtransforminput-excludefeaturesattribute): {{String}}
+  [LocalPath](#cfn-sagemaker-monitoringschedule-batchtransforminput-localpath): {{String}}
+  [S3DataDistributionType](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3datadistributiontype): {{String}}
+  [S3InputMode](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3inputmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput-properties"></a>
 
-`DataCapturedDestinationS3Uri`
-
+`DataCapturedDestinationS3Uri`  <a name="cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri"></a>
 The Amazon S3 location being used to capture the data.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(https|s3)://([^/]+)/?(.*)$`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatasetFormat`
-
+`DatasetFormat`  <a name="cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat"></a>
 The dataset format for your batch transform job.
+*Required*: Yes
+*Type*: [DatasetFormat](aws-properties-sagemaker-monitoringschedule-datasetformat.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DatasetFormat](aws-properties-sagemaker-monitoringschedule-datasetformat.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludeFeaturesAttribute`
-
+`ExcludeFeaturesAttribute`  <a name="cfn-sagemaker-monitoringschedule-batchtransforminput-excludefeaturesattribute"></a>
 The attributes of the input data to exclude from the analysis.
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocalPath`
-
+`LocalPath`  <a name="cfn-sagemaker-monitoringschedule-batchtransforminput-localpath"></a>
 Path to the filesystem where the batch transform data is available to the container.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`S3DataDistributionType`  <a name="cfn-sagemaker-monitoringschedule-batchtransforminput-s3datadistributiontype"></a>
+Whether input data distributed in Amazon S3 is fully replicated or sharded by an S3 key. Defaults to `FullyReplicated`
+*Required*: No
+*Type*: String
+*Allowed values*: `FullyReplicated | ShardedByS3Key`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3DataDistributionType`
-
-Whether input data distributed in Amazon S3 is fully replicated or sharded by an S3 key.
-Defaults to `FullyReplicated`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FullyReplicated | ShardedByS3Key`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3InputMode`
-
-Whether the `Pipe` or `File` is used as the input mode for
-transferring data for the monitoring job. `Pipe` mode is recommended for large
-datasets. `File` mode is useful for small files that fit in memory. Defaults to
-`File`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Pipe | File`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BaselineConfig
-
-ClusterConfig
+`S3InputMode`  <a name="cfn-sagemaker-monitoringschedule-batchtransforminput-s3inputmode"></a>
+Whether the `Pipe` or `File` is used as the input mode for transferring data for the monitoring job. `Pipe` mode is recommended for large datasets. `File` mode is useful for small files that fit in memory. Defaults to `File`.
+*Required*: No
+*Type*: String
+*Allowed values*: `Pipe | File`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

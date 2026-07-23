@@ -2,67 +2,49 @@
 title: "AWS::Backup::Framework ControlInputParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::Framework ControlInputParameter
+<a name="aws-properties-backup-framework-controlinputparameter"></a>
 
-The parameters for a control. A control can have zero, one, or more than one
-parameter. An example of a control with two parameters is: "backup plan frequency is at
-least `daily` and the retention period is at least `1 year`". The
-first parameter is `daily`. The second parameter is `1 year`.
+The parameters for a control. A control can have zero, one, or more than one parameter. An example of a control with two parameters is: "backup plan frequency is at least `daily` and the retention period is at least `1 year`". The first parameter is `daily`. The second parameter is `1 year`.
 
 ## Syntax
+<a name="aws-properties-backup-framework-controlinputparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-framework-controlinputparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParameterName" : String,
-  "ParameterValue" : String
+  "[ParameterName](#cfn-backup-framework-controlinputparameter-parametername)" : {{String}},
+  "[ParameterValue](#cfn-backup-framework-controlinputparameter-parametervalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-framework-controlinputparameter-syntax.yaml"></a>
 
-```yaml
-
-  ParameterName: String
-  ParameterValue: String
-
+```
+  [ParameterName](#cfn-backup-framework-controlinputparameter-parametername): {{String}}
+  [ParameterValue](#cfn-backup-framework-controlinputparameter-parametervalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-framework-controlinputparameter-properties"></a>
 
-`ParameterName`
-
+`ParameterName`  <a name="cfn-backup-framework-controlinputparameter-parametername"></a>
 The name of a parameter, for example, `BackupPlanFrequency`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValue`
-
+`ParameterValue`  <a name="cfn-backup-framework-controlinputparameter-parametervalue"></a>
 The value of parameter, for example, `hourly`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Backup::Framework
-
-ControlScope
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

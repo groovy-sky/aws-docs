@@ -2,211 +2,146 @@
 title: "AWS::ResourceGroups::Group"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResourceGroups::Group
+<a name="aws-resource-resourcegroups-group"></a>
 
-Creates a resource group with the specified name and description. You can optionally
-include either a resource query or a service configuration. For more information about
-constructing a resource query, see [Build queries and groups in\
-AWS Resource Groups](../../../arg/latest/userguide/getting-started-query.md) in the _AWS Resource Groups User Guide_. For more information
-about service-linked groups and service configurations, see [Service configurations for Resource Groups](../../../../reference/arg/latest/apireference/about-slg.md).
+Creates a resource group with the specified name and description. You can optionally include either a resource query or a service configuration. For more information about constructing a resource query, see [Build queries and groups in AWS Resource Groups](https://docs.aws.amazon.com//ARG/latest/userguide/getting_started-query.html) in the *AWS Resource Groups User Guide*. For more information about service-linked groups and service configurations, see [Service configurations for Resource Groups](https://docs.aws.amazon.com//ARG/latest/APIReference/about-slg.html).
 
-**Minimum permissions**
+ **Minimum permissions**
 
 To run this command, you must have the following permissions:
-
-- `resource-groups:CreateGroup`
++  `resource-groups:CreateGroup`
 
 ## Syntax
+<a name="aws-resource-resourcegroups-group-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-resourcegroups-group-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ResourceGroups::Group",
   "Properties" : {
-      "Configuration" : [ ConfigurationItem, ... ],
-      "Description" : String,
-      "Name" : String,
-      "ResourceQuery" : ResourceQuery,
-      "Resources" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Configuration](#cfn-resourcegroups-group-configuration)" : {{[ ConfigurationItem, ... ]}},
+      "[Description](#cfn-resourcegroups-group-description)" : {{String}},
+      "[Name](#cfn-resourcegroups-group-name)" : {{String}},
+      "[ResourceQuery](#cfn-resourcegroups-group-resourcequery)" : {{ResourceQuery}},
+      "[Resources](#cfn-resourcegroups-group-resources)" : {{[ String, ... ]}},
+      "[Tags](#cfn-resourcegroups-group-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-resourcegroups-group-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ResourceGroups::Group
 Properties:
-  Configuration:
-    - ConfigurationItem
-  Description: String
-  Name: String
-  ResourceQuery:
-    ResourceQuery
-  Resources:
-    - String
-  Tags:
-    - Tag
-
+  [Configuration](#cfn-resourcegroups-group-configuration): {{
+    - ConfigurationItem}}
+  [Description](#cfn-resourcegroups-group-description): {{String}}
+  [Name](#cfn-resourcegroups-group-name): {{String}}
+  [ResourceQuery](#cfn-resourcegroups-group-resourcequery): {{
+    ResourceQuery}}
+  [Resources](#cfn-resourcegroups-group-resources): {{
+    - String}}
+  [Tags](#cfn-resourcegroups-group-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-resourcegroups-group-properties"></a>
 
-`Configuration`
+`Configuration`  <a name="cfn-resourcegroups-group-configuration"></a>
+The service configuration currently associated with the resource group and in effect for the members of the resource group. A `Configuration` consists of one or more `ConfigurationItem` entries. For information about service configurations for resource groups and how to construct them, see [Service configurations for resource groups](https://docs.aws.amazon.com//ARG/latest/APIReference/about-slg.html) in the *AWS Resource Groups User Guide*.
+You can include either a `Configuration` or a `ResourceQuery`, but not both.
+*Required*: Conditional
+*Type*: Array of [ConfigurationItem](aws-properties-resourcegroups-group-configurationitem.md)
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The service configuration currently associated with the resource group and in effect
-for the members of the resource group. A `Configuration` consists of one or
-more `ConfigurationItem` entries. For information about service
-configurations for resource groups and how to construct them, see [Service\
-configurations for resource groups](../../../../reference/arg/latest/apireference/about-slg.md) in the _AWS Resource Groups_
-_User Guide_.
-
-###### Note
-
-You can include either a `Configuration` or a
-`ResourceQuery`, but not both.
-
-_Required_: Conditional
-
-_Type_: Array of [ConfigurationItem](aws-properties-resourcegroups-group-configurationitem.md)
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-resourcegroups-group-description"></a>
 The description of the resource group.
+*Required*: No
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-resourcegroups-group-name"></a>
+The name of a resource group. The name must be unique within the AWS Region in which you create the resource. To create multiple resource groups based on the same CloudFormation stack, you must generate unique names for each.
+*Required*: Yes
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`ResourceQuery`  <a name="cfn-resourcegroups-group-resourcequery"></a>
+The resource query structure that is used to dynamically determine which AWS resources are members of the associated resource group. For more information about queries and how to construct them, see [Build queries and groups in AWS Resource Groups](https://docs.aws.amazon.com//ARG/latest/userguide/gettingstarted-query.html) in the *AWS Resource Groups User Guide*
++ You can include either a `ResourceQuery` or a `Configuration`, but not both.
++ You can specify the group's membership either by using a `ResourceQuery` or by using a list of `Resources`, but not both.
+*Required*: Conditional
+*Type*: [ResourceQuery](aws-properties-resourcegroups-group-resourcequery.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `512`
+`Resources`  <a name="cfn-resourcegroups-group-resources"></a>
+A list of the Amazon Resource Names (ARNs) of AWS resources that you want to add to the specified group.
++ You can specify the group membership either by using a list of `Resources` or by using a `ResourceQuery`, but not both.
++ You can include a `Resources` property only if you also specify a `Configuration` property.
+*Required*: Conditional
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of a resource group. The name must be unique within the AWS
-Region in which you create the resource. To create multiple resource groups based on the
-same CloudFormation stack, you must generate unique names for each.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceQuery`
-
-The resource query structure that is used to dynamically determine which AWS resources are members of the associated resource group. For more
-information about queries and how to construct them, see [Build queries and groups in\
-AWS Resource Groups](../../../arg/latest/userguide/gettingstarted-query.md) in the _AWS Resource Groups User_
-_Guide_
-
-###### Note
-
-- You can include either a `ResourceQuery` or a
-`Configuration`, but not both.
-
-- You can specify the group's membership either by using a
-`ResourceQuery` or by using a list of `Resources`,
-but not both.
-
-_Required_: Conditional
-
-_Type_: [ResourceQuery](aws-properties-resourcegroups-group-resourcequery.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Resources`
-
-A list of the Amazon Resource Names (ARNs) of AWS resources that you
-want to add to the specified group.
-
-###### Note
-
-- You can specify the group membership either by using a list of
-`Resources` or by using a `ResourceQuery`, but not
-both.
-
-- You can include a `Resources` property only if you also specify
-a `Configuration` property.
-
-_Required_: Conditional
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-resourcegroups-group-tags"></a>
 The tag key and value pairs that are attached to the resource group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-resourcegroups-group-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-resourcegroups-group-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-resourcegroups-group-return-values"></a>
 
 ### Ref
+<a name="aws-resource-resourcegroups-group-return-values-ref"></a>
 
 The name of the new resource group.
 
 ### Fn::GetAtt
+<a name="aws-resource-resourcegroups-group-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-resourcegroups-group-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the new resource group.
 
 ## Examples
+<a name="aws-resource-resourcegroups-group--examples"></a>
 
-The following examples show both the JSON and YAML templates that you can use to
-create resource groups with the specified characteristics.
+The following examples show both the JSON and YAML templates that you can use to create resource groups with the specified characteristics.
 
-- [Creating a CloudFormation stack-based resource group using defaults](#aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults)
-
-- [Creating a CloudFormation stack-based resource group with specific resources](#aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources)
-
-- [Creating a CloudFormation stack-based resource group based on another stack](#aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack)
-
-- [Creating a tag-based resource group](#aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group)
-
-- [Creating a resource group for EC2 capacity reservations](#aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations)
-
-- [Creating a resource group for EC2 capacity reservations with initial members](#aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members)
-
-- [Creating an EC2 hosts resource group](#aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group)
-
-- [Creating an EC2 hosts resource group with some initial members](#aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members)
+**Topics**
++ [Creating a CloudFormation stack-based resource group using defaults](#aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults)
++ [Creating a CloudFormation stack-based resource group with specific resources](#aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources)
++ [Creating a CloudFormation stack-based resource group based on another stack](#aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack)
++ [Creating a tag-based resource group](#aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group)
++ [Creating a resource group for EC2 capacity reservations](#aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations)
++ [Creating a resource group for EC2 capacity reservations with initial members](#aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members)
++ [Creating an EC2 hosts resource group](#aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group)
++ [Creating an EC2 hosts resource group with some initial members](#aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members)
 
 ### Creating a CloudFormation stack-based resource group using defaults
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults"></a>
 
-This example creates a CloudFormation stack-based resource group using
-defaults. It includes all supported resource types and uses the same
-`StackIdentifier` as the CloudFormation stack that defines the
-group.
+This example creates a CloudFormation stack-based resource group using defaults. It includes all supported resource types and uses the same `StackIdentifier` as the CloudFormation stack that defines the group.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults--json"></a>
 
-```json
-
+```
 {
     "ResourceGroup": {
         "Type": "AWS::ResourceGroups::Group",
@@ -219,9 +154,9 @@ group.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults--yaml"></a>
 
-```yaml
-
+```
 ResourceGroup:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -230,16 +165,14 @@ ResourceGroup:
 ```
 
 ### Creating a CloudFormation stack-based resource group with specific resources
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources"></a>
 
-This example creates a CloudFormation stack-based resource group that's
-similar to the group shown in the previous example. The difference is that it
-can include only resources of the specified types: EC2 instances and DynamoDB
-tables.
+This example creates a CloudFormation stack-based resource group that's similar to the group shown in the previous example. The difference is that it can include only resources of the specified types: EC2 instances and DynamoDB tables.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources--json"></a>
 
-```json
-
+```
 {
     "CloudFormationStackGroupForSelectedResourceTypes": {
         "Type": "AWS::ResourceGroups::Group",
@@ -260,9 +193,9 @@ tables.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources--yaml"></a>
 
-```yaml
-
+```
 CloudFormationStackGroupForSelectedResourceTypes:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -276,17 +209,14 @@ CloudFormationStackGroupForSelectedResourceTypes:
 ```
 
 ### Creating a CloudFormation stack-based resource group based on another stack
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack"></a>
 
-This example creates a resource group that's built from another stack. The
-`StackIdentifier` value specifies that resources in the stack
-with the ARN `arn:aws:cloudformation:us-east-1:123456789012:stack/stack-name/9b6f8604-4a39-490c-870b-44b0ebdd38b9`
-are included in the group. The group itself (not its individual member
-resources) is tagged with `Env=Prod`.
+This example creates a resource group that's built from another stack. The `StackIdentifier` value specifies that resources in the stack with the ARN `arn:aws:cloudformation:us-east-1:123456789012:stack/stack-name/9b6f8604-4a39-490c-870b-44b0ebdd38b9` are included in the group. The group itself (not its individual member resources) is tagged with `Env=Prod`.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack--json"></a>
 
-```json
-
+```
 {
     "CloudFormationStackGroupForAnotherStack": {
         "Type": "AWS::ResourceGroups::Group",
@@ -314,9 +244,9 @@ resources) is tagged with `Env=Prod`.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack--yaml"></a>
 
-```yaml
-
+```
 CloudFormationStackGroupForAnotherStack:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -335,16 +265,14 @@ CloudFormationStackGroupForAnotherStack:
 ```
 
 ### Creating a tag-based resource group
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group"></a>
 
-This example shows how to create a resource group whose membership is based on
-a tag query. Any resources that have tags that match the query, in this case the
-key `Usage` and the value `Integration Tests`, are members
-of this group.
+This example shows how to create a resource group whose membership is based on a tag query. Any resources that have tags that match the query, in this case the key `Usage` and the value `Integration Tests`, are members of this group.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group--json"></a>
 
-```json
-
+```
 {
     "TagBasedGroup": {
         "Type": "AWS::ResourceGroups::Group",
@@ -373,9 +301,9 @@ of this group.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group--yaml"></a>
 
-```yaml
-
+```
 TagBasedGroup:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -395,15 +323,14 @@ TagBasedGroup:
 ```
 
 ### Creating a resource group for EC2 capacity reservations
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations"></a>
 
-This example creates a capacity reservations resource group by specifying a
-configuration and limiting the allowed resource types. This group initially has
-no members.
+This example creates a capacity reservations resource group by specifying a configuration and limiting the allowed resource types. This group initially has no members.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations--json"></a>
 
-```json
-
+```
 {
    "CapacityReservationsGroupWithoutResources": {
       "Type": "AWS::ResourceGroups::Group",
@@ -433,9 +360,9 @@ no members.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations--yaml"></a>
 
-```yaml
-
+```
 CapacityReservationsGroupWithoutResources:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -452,15 +379,14 @@ CapacityReservationsGroupWithoutResources:
 ```
 
 ### Creating a resource group for EC2 capacity reservations with initial members
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members"></a>
 
-This example creates a capacity reservations resource group identical to the
-previous example, except this one includes two initial capacity reservations as
-specified in the `Resources` property.
+This example creates a capacity reservations resource group identical to the previous example, except this one includes two initial capacity reservations as specified in the `Resources` property.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members--json"></a>
 
-```json
-
+```
 {
    "CapacityReservationsGroupWithResources": {
       "Type": "AWS::ResourceGroups::Group",
@@ -494,9 +420,9 @@ specified in the `Resources` property.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members--yaml"></a>
 
-```yaml
-
+```
 CapacityReservationsGroupWithResources:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -516,16 +442,14 @@ CapacityReservationsGroupWithResources:
 ```
 
 ### Creating an EC2 hosts resource group
+<a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group"></a>
 
-This example creates a host resource group. Instances in the group are
-automatically configured to accept any host based license configuration, to
-allow only the `c5` host family, to not auto-release hosts, and to be
-delete protected. The group initially has no members.
+This example creates a host resource group. Instances in the group are automatically configured to accept any host based license configuration, to allow only the `c5` host family, to not auto-release hosts, and to be delete protected. The group initially has no members.
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group--json"></a>
 
-```json
-
+```
 {
   "HostResourceGroup": {
     "Type": "AWS::ResourceGroups::Group",
@@ -580,9 +504,9 @@ delete protected. The group initially has no members.
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group--yaml"></a>
 
-```yaml
-
+```
 HostResourceGroup:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -611,15 +535,14 @@ HostResourceGroup:
 ```
 
 ### Creating an EC2 hosts resource group with some initial members
+<a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members"></a>
 
-This example creates an EC2 host resource group that is configured to work
-with a specific license configuration. The group initially contains the two
-hosts specified by the `Resources` property
+This example creates an EC2 host resource group that is configured to work with a specific license configuration. The group initially contains the two hosts specified by the `Resources` property
 
 #### JSON
+<a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members--json"></a>
 
-```json
-
+```
 {
   "HostResourceGroupWithResources": {
     "Type": "AWS::ResourceGroups::Group",
@@ -655,9 +578,9 @@ hosts specified by the `Resources` property
 ```
 
 #### YAML
+<a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members--yaml"></a>
 
-```yaml
-
+```
 HostResourceGroupWithResources:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -680,11 +603,5 @@ HostResourceGroupWithResources:
       - "arn:aws:ec2:us-east-1:123456789012:dedicated-host/h-0375ef7462b26b11f"
       - "arn:aws:ec2:us-east-1:123456789012:dedicated-host/h-0501ab6812c719123"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Resource Groups
-
-ConfigurationItem
 
 All content copied from https://docs.aws.amazon.com/.

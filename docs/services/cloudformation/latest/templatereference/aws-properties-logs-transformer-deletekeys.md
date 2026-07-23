@@ -2,59 +2,46 @@
 title: "AWS::Logs::Transformer DeleteKeys"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer DeleteKeys
+<a name="aws-properties-logs-transformer-deletekeys"></a>
 
 This processor deletes entries from a log event. These entries are key-value pairs.
 
-For more information about this processor including examples, see [deleteKeys](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-processors.md#CloudWatch-Logs-Transformation-deleteKeys) in the _CloudWatch Logs User Guide_.
+For more information about this processor including examples, see [ deleteKeys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-deleteKeys) in the *CloudWatch Logs User Guide*.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-deletekeys-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-deletekeys-syntax.json"></a>
 
-```json
-
+```
 {
-  "WithKeys" : [ String, ... ]
+  "[WithKeys](#cfn-logs-transformer-deletekeys-withkeys)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-deletekeys-syntax.yaml"></a>
 
-```yaml
-
-  WithKeys:
-    - String
-
+```
+  [WithKeys](#cfn-logs-transformer-deletekeys-withkeys): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-deletekeys-properties"></a>
 
-`WithKeys`
-
+`WithKeys`  <a name="cfn-logs-transformer-deletekeys-withkeys"></a>
 The list of keys to delete.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateTimeConverter
-
-Grok
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

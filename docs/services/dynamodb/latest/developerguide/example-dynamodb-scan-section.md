@@ -1,32 +1,24 @@
 ---
-title: "Use Scan with an AWS SDK or CLI"
+title: "Use `Scan` with an AWS SDK or CLI"
 ---
 
 # Use `Scan` with an AWS SDK or CLI
+<a name="example_dynamodb_Scan_section"></a>
 
 The following code examples show how to use `Scan`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in
-context in the following code examples:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
++  [Learn the basics](example_dynamodb_Scenario_GettingStartedMovies_section.md)
++  [Accelerate reads with DAX](example_dynamodb_Usage_DaxDemo_section.md)
++  [Compare multiple values with a single attribute](example_dynamodb_Scenario_CompareMultipleValues_section.md)
 
-- [Learn the basics](example-dynamodb-scenario-gettingstartedmovies-section.md)
-
-- [Accelerate reads with DAX](example-dynamodb-usage-daxdemo-section.md)
-
-- [Compare multiple values with a single attribute](example-dynamodb-scenario-comparemultiplevalues-section.md)
-
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
     /// <summary>
     /// Scans the table for movies released between the specified years.
     /// </summary>
@@ -88,25 +80,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
             throw;
         }
     }
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Scan) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Scan)
-in _AWS SDK for .NET API Reference_.
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
-```bash
-
+```
 #############################################################################
 # function dynamodb_scan
 #
@@ -214,13 +197,10 @@ function dynamodb_scan() {
 
   return 0
 }
-
 ```
-
 The utility functions used in this example.
 
-```bash
-
+```
 ###############################################################################
 # function errecho
 #
@@ -265,25 +245,16 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Scan) in *AWS CLI Command Reference*.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Scan)
-in _AWS CLI Command Reference_.
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
 //! Scan an Amazon DynamoDB table.
 /*!
   \sa scanTable()
@@ -345,55 +316,42 @@ bool AwsDoc::DynamoDB::scanTable(const Aws::String &tableName,
 
     return true;
 }
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Scan) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Scan)
-in _AWS SDK for C++ API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **To scan a table**
-
 The following `scan` example scans the entire `MusicCollection` table, and then narrows the results to songs by the artist "No One You Know". For each item, only the album title and song title are returned.
 
-```nohighlight
-
-aws dynamodb scan \
-    --table-name MusicCollection \
-    --filter-expression "Artist = :a" \
-    --projection-expression "#ST, #AT" \
-    --expression-attribute-names file://expression-attribute-names.json \
-    --expression-attribute-values file://expression-attribute-values.json
-
 ```
-
+aws dynamodb scan \
+    --table-name {{MusicCollection}} \
+    --filter-expression {{"Artist = :a"}} \
+    --projection-expression {{"#ST, #AT"}} \
+    --expression-attribute-names {{file://expression-attribute-names.json}} \
+    --expression-attribute-values {{file://expression-attribute-values.json}}
+```
 Contents of `expression-attribute-names.json`:
 
-```nohighlight
-
+```
 {
     "#ST": "SongTitle",
     "#AT":"AlbumTitle"
 }
 ```
-
 Contents of `expression-attribute-values.json`:
 
-```nohighlight
-
+```
 {
     ":a": {"S": "No One You Know"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Count": 2,
     "Items": [
@@ -418,25 +376,16 @@ Output:
     "ConsumedCapacity": null
 }
 ```
+For more information, see [Working with Scans in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [Scan](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/scan.html) in *AWS CLI Command Reference*.
 
-For more information, see [Working with Scans in DynamoDB](scan.md) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[Scan](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/scan.html)
-in _AWS CLI Command Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
-```go
-
+```
 import (
 	"context"
 	"errors"
@@ -499,13 +448,10 @@ func (basics TableBasics) Scan(ctx context.Context, startYear int, endYear int) 
 	}
 	return movies, err
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -547,27 +493,17 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
++  For API details, see [Scan](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.Scan) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[Scan](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
+Scans an Amazon DynamoDB table using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
-Scans an Amazon DynamoDB table using [DynamoDbClient](../../../../reference/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/dynamodbclient.md).
-
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -638,27 +574,17 @@ public class DynamoDBScanItems {
         }
     }
 }
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Scan) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Scan)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
+This example uses the document client to simplify working with items in DynamoDB. For API details see [ScanCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/ScanCommand/).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-This example uses the document client to simplify working with items in DynamoDB. For API details see [ScanCommand](../../../../reference/awsjavascriptsdk/v3/latest/package/aws-sdk-lib-dynamodb/class/scancommand.md).
-
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, ScanCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -678,23 +604,13 @@ export const main = async () => {
   }
   return response;
 };
-
 ```
-
-- For API details, see
-[Scan](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ScanCommand)
-in _AWS SDK for JavaScript API Reference_.
++  For API details, see [Scan](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ScanCommand) in *AWS SDK for JavaScript API Reference*.
 
 **SDK for JavaScript (v2)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb).
-
-```javascript
-
+```
 // Load the AWS SDK for Node.js.
 var AWS = require("aws-sdk");
 // Set the AWS Region.
@@ -730,27 +646,17 @@ ddb.scan(params, function (err, data) {
     });
   }
 });
-
 ```
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-example-query-scan.html#dynamodb-example-table-query-scan-scanning).
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/Scan) in *AWS SDK for JavaScript API Reference*.
 
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-query-scan.md#dynamodb-example-table-query-scan-scanning).
-
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/Scan)
-in _AWS SDK for JavaScript API Reference_.
-
-Kotlin
+------
+#### [ Kotlin ]
 
 **SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb).
-
-```kotlin
-
+```
 suspend fun scanItems(tableNameVal: String) {
     val request =
         ScanRequest {
@@ -767,25 +673,16 @@ suspend fun scanItems(tableNameVal: String) {
         }
     }
 }
-
 ```
++  For API details, see [Scan](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
-- For API details, see
-[Scan](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-in _AWS SDK for Kotlin API reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-```php
-
+```
         $yearsKey = [
             'Key' => [
                 'year' => [
@@ -817,29 +714,21 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
         ];
         return $this->dynamoDbClient->scan($query);
     }
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Scan) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Scan)
-in _AWS SDK for PHP API Reference_.
-
-PowerShell
+------
+#### [ PowerShell ]
 
 **Tools for PowerShell V4**
-
 **Example 1: Returns all items in the Music table.**
 
-```powershell
-
-Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
-
 ```
-
+Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
+```
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -855,11 +744,9 @@ CriticRating                   8.4
 SongTitle                      My Dog Spot
 AlbumTitle                     Hey Now
 ```
-
 **Example 2: Returns items in the Music table with a CriticRating greater than or equal to nine.**
 
-```powershell
-
+```
 $scanFilter = @{
         CriticRating = [Amazon.DynamoDBv2.Model.Condition]@{
             AttributeValueList = @(@{N = '9'})
@@ -867,13 +754,10 @@ $scanFilter = @{
         }
     }
     Invoke-DDBScan -TableName 'Music' -ScanFilter $scanFilter | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -883,25 +767,17 @@ CriticRating                   9
 SongTitle                      Somewhere Down The Road
 AlbumTitle                     Somewhat Famous
 ```
-
-- For API details, see
-[Scan](https://docs.aws.amazon.com/powershell/v4/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
++  For API details, see [Scan](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
 
 **Tools for PowerShell V5**
-
 **Example 1: Returns all items in the Music table.**
 
-```powershell
-
-Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
-
 ```
-
+Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
+```
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -917,11 +793,9 @@ CriticRating                   8.4
 SongTitle                      My Dog Spot
 AlbumTitle                     Hey Now
 ```
-
 **Example 2: Returns items in the Music table with a CriticRating greater than or equal to nine.**
 
-```powershell
-
+```
 $scanFilter = @{
         CriticRating = [Amazon.DynamoDBv2.Model.Condition]@{
             AttributeValueList = @(@{N = '9'})
@@ -929,13 +803,10 @@ $scanFilter = @{
         }
     }
     Invoke-DDBScan -TableName 'Music' -ScanFilter $scanFilter | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -945,23 +816,15 @@ CriticRating                   9
 SongTitle                      Somewhere Down The Road
 AlbumTitle                     Somewhat Famous
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/powershell/v5/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
-```python
-
+```
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1029,25 +892,16 @@ class Movies:
             raise
 
         return movies
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Scan) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Scan)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
-```ruby
-
+```
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -1088,25 +942,16 @@ class DynamoDBBasics
   else
     movies
   end
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Scan) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[Scan](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Scan)
-in _AWS SDK for Ruby API Reference_.
-
-Rust
+------
+#### [ Rust ]
 
 **SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb).
-
-```rust
-
+```
 pub async fn list_items(client: &Client, table: &str, page_size: Option<i32>) -> Result<(), Error> {
     let page_size = page_size.unwrap_or(10);
     let items: Result<Vec<_>, _> = client
@@ -1126,25 +971,16 @@ pub async fn list_items(client: &Client, table: &str, page_size: Option<i32>) ->
 
     Ok(())
 }
-
 ```
++  For API details, see [Scan](https://docs.rs/aws-sdk-dynamodb/latest/aws_sdk_dynamodb/client/struct.Client.html#method.scan) in *AWS SDK for Rust API reference*.
 
-- For API details, see
-[Scan](https://docs.rs/aws-sdk-dynamodb/latest/aws_sdk_dynamodb/client/struct.Client.html)
-in _AWS SDK for Rust API reference_.
-
-SAP ABAP
+------
+#### [ SAP ABAP ]
 
 **SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn).
-
-```sap-abap
-
+```
     TRY.
         " Scan movies for rating greater than or equal to the rating specified
         DATA(lt_attributelist) = VALUE /aws1/cl_dynattributevalue=>tt_attributevaluelist(
@@ -1169,25 +1005,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/s
       CATCH /aws1/cx_dynresourcenotfoundex.
         MESSAGE 'The table or index does not exist' TYPE 'E'.
     ENDTRY.
-
 ```
++  For API details, see [Scan](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
 
-- For API details, see
-[Scan](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-in _AWS SDK for SAP ABAP API reference_.
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
-```swift
-
+```
 import AWSDynamoDB
 
     /// Return an array of `Movie` objects released in the specified range of
@@ -1251,21 +1078,11 @@ import AWSDynamoDB
             throw error
         }
     }
-
 ```
++  For API details, see [Scan](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/scan(input:)) in *AWS SDK for Swift API reference*.
 
-- For API details, see
-[Scan](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/scan(input:))
-in _AWS SDK for Swift API reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Query
-
-UpdateItem
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

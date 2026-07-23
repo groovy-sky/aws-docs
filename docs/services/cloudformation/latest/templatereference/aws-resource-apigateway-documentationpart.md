@@ -2,102 +2,96 @@
 title: "AWS::ApiGateway::DocumentationPart"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::DocumentationPart
+<a name="aws-resource-apigateway-documentationpart"></a>
 
-The `AWS::ApiGateway::DocumentationPart` resource creates a documentation part for an API. For more information, see [Representation of API Documentation in API Gateway](../../../apigateway/latest/developerguide/api-gateway-documenting-api-content-representation.md) in the _API Gateway Developer Guide_.
+The `AWS::ApiGateway::DocumentationPart` resource creates a documentation part for an API. For more information, see [Representation of API Documentation in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-documenting-api-content-representation.html) in the *API Gateway Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-apigateway-documentationpart-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-documentationpart-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::DocumentationPart",
   "Properties" : {
-      "Location" : Location,
-      "Properties" : String,
-      "RestApiId" : String
+      "[Location](#cfn-apigateway-documentationpart-location)" : {{Location}},
+      "[Properties](#cfn-apigateway-documentationpart-properties)" : {{String}},
+      "[RestApiId](#cfn-apigateway-documentationpart-restapiid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-documentationpart-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::DocumentationPart
 Properties:
-  Location:
-    Location
-  Properties: String
-  RestApiId: String
-
+  [Location](#cfn-apigateway-documentationpart-location): {{
+    Location}}
+  [Properties](#cfn-apigateway-documentationpart-properties): {{String}}
+  [RestApiId](#cfn-apigateway-documentationpart-restapiid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-documentationpart-properties"></a>
 
-`Location`
-
+`Location`  <a name="cfn-apigateway-documentationpart-location"></a>
 The location of the targeted API entity of the to-be-created documentation part.
+*Required*: Yes
+*Type*: [Location](aws-properties-apigateway-documentationpart-location.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [Location](aws-properties-apigateway-documentationpart-location.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Properties`
-
+`Properties`  <a name="cfn-apigateway-documentationpart-properties"></a>
 The new documentation content map of the targeted API entity. Enclosed key-value pairs are API-specific, but only OpenAPI-compliant key-value pairs can be exported and, hence, published.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-apigateway-documentationpart-restapiid"></a>
 The string identifier of the associated RestApi.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-apigateway-documentationpart-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigateway-documentationpart-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the documentation part, such as `abc123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigateway-documentationpart-return-values-fn--getatt"></a>
 
-`DocumentationPartId`
+####
+<a name="aws-resource-apigateway-documentationpart-return-values-fn--getatt-fn--getatt"></a>
 
+`DocumentationPartId`  <a name="DocumentationPartId-fn::getatt"></a>
 The ID for the documentation part.
 
 ## Examples
+<a name="aws-resource-apigateway-documentationpart--examples"></a>
 
 ### Associate documentation part with documentation version
+<a name="aws-resource-apigateway-documentationpart--examples--Associate_documentation_part_with_documentation_version"></a>
 
 The following example associates a documentation part for an API entity with a documentation version.
 
 #### JSON
+<a name="aws-resource-apigateway-documentationpart--examples--Associate_documentation_part_with_documentation_version--json"></a>
 
-```json
-
+```
 {
     "Parameters": {
         "apiName": {
@@ -158,13 +152,12 @@ The following example associates a documentation part for an API entity with a d
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-documentationpart--examples--Associate_documentation_part_with_documentation_version--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   apiName:
     Type: String
@@ -195,17 +188,10 @@ Resources:
       DocumentationVersion: !Ref version
       RestApiId: !Ref RestApi
     DependsOn: DocumentationPart
-
 ```
 
 ## See also
-
-- [documentationpart:create](../../../apigateway/latest/api/api-createdocumentationpart.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Location
+<a name="aws-resource-apigateway-documentationpart--seealso"></a>
++ [documentationpart:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDocumentationPart.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

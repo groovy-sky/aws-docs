@@ -2,140 +2,106 @@
 title: "AWS::VoiceID::Domain"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VoiceID::Domain
+<a name="aws-resource-voiceid-domain"></a>
 
-###### Important
+**Important**
+End of support notice: On May 20, 2026, AWS will end support for Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [ Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
-End of support notice: On May 20, 2026, AWS will end support for
-Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect
-console, access Voice ID features on the Amazon Connect admin website or Contact Control Panel, or access
-Voice ID resources. For more information, visit
-[Amazon Connect Voice ID end of support](../../../connect/latest/adminguide/amazonconnect-voiceid-end-of-support.md).
-
-Creates a domain that contains all Amazon Connect Voice ID data, such as speakers, fraudsters,
-customer audio, and voiceprints. Every domain is created with a default watchlist that
-fraudsters can be a part of.
+Creates a domain that contains all Connect Customer Voice ID data, such as speakers, fraudsters, customer audio, and voiceprints. Every domain is created with a default watchlist that fraudsters can be a part of.
 
 ## Syntax
+<a name="aws-resource-voiceid-domain-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-voiceid-domain-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::VoiceID::Domain",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "ServerSideEncryptionConfiguration" : ServerSideEncryptionConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-voiceid-domain-description)" : {{String}},
+      "[Name](#cfn-voiceid-domain-name)" : {{String}},
+      "[ServerSideEncryptionConfiguration](#cfn-voiceid-domain-serversideencryptionconfiguration)" : {{ServerSideEncryptionConfiguration}},
+      "[Tags](#cfn-voiceid-domain-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-voiceid-domain-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::VoiceID::Domain
 Properties:
-  Description: String
-  Name: String
-  ServerSideEncryptionConfiguration:
-    ServerSideEncryptionConfiguration
-  Tags:
-    - Tag
-
+  [Description](#cfn-voiceid-domain-description): {{String}}
+  [Name](#cfn-voiceid-domain-name): {{String}}
+  [ServerSideEncryptionConfiguration](#cfn-voiceid-domain-serversideencryptionconfiguration): {{
+    ServerSideEncryptionConfiguration}}
+  [Tags](#cfn-voiceid-domain-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-voiceid-domain-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-voiceid-domain-description"></a>
 The description of the domain.
+*Required*: No
+*Type*: String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-%@]*)$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-%@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-voiceid-domain-name"></a>
 The name for the domain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_-]*$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ServerSideEncryptionConfiguration`  <a name="cfn-voiceid-domain-serversideencryptionconfiguration"></a>
+The server-side encryption configuration containing the KMS key identifier you want Voice ID to use to encrypt your data.
+*Required*: Yes
+*Type*: [ServerSideEncryptionConfiguration](aws-properties-voiceid-domain-serversideencryptionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9_-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerSideEncryptionConfiguration`
-
-The server-side encryption configuration containing the KMS key
-identifier you want Voice ID to use to encrypt your data.
-
-_Required_: Yes
-
-_Type_: [ServerSideEncryptionConfiguration](aws-properties-voiceid-domain-serversideencryptionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-voiceid-domain-tags"></a>
 The tags used to organize, track, or control access for this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-voiceid-domain-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-voiceid-domain-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-voiceid-domain-return-values"></a>
 
 ### Ref
+<a name="aws-resource-voiceid-domain-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `DomainId` of the domain.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-voiceid-domain-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DomainId`
+####
+<a name="aws-resource-voiceid-domain-return-values-fn--getatt-fn--getatt"></a>
 
+`DomainId`  <a name="DomainId-fn::getatt"></a>
 The identifier of the domain.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Connect Voice ID
-
-ServerSideEncryptionConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

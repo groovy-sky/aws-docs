@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::KnowledgeBase EmbeddingModelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase EmbeddingModelConfiguration
+<a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration"></a>
 
 The configuration details for the embeddings model.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockEmbeddingModelConfiguration" : BedrockEmbeddingModelConfiguration
+  "[BedrockEmbeddingModelConfiguration](#cfn-bedrock-knowledgebase-embeddingmodelconfiguration-bedrockembeddingmodelconfiguration)" : {{BedrockEmbeddingModelConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BedrockEmbeddingModelConfiguration:
-    BedrockEmbeddingModelConfiguration
-
+```
+  [BedrockEmbeddingModelConfiguration](#cfn-bedrock-knowledgebase-embeddingmodelconfiguration-bedrockembeddingmodelconfiguration): {{
+    BedrockEmbeddingModelConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration-properties"></a>
 
-`BedrockEmbeddingModelConfiguration`
-
+`BedrockEmbeddingModelConfiguration`  <a name="cfn-bedrock-knowledgebase-embeddingmodelconfiguration-bedrockembeddingmodelconfiguration"></a>
 The vector configuration details on the Bedrock embeddings model.
-
-_Required_: No
-
-_Type_: [BedrockEmbeddingModelConfiguration](aws-properties-bedrock-knowledgebase-bedrockembeddingmodelconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CuratedQuery
-
-KendraKnowledgeBaseConfiguration
+*Required*: No
+*Type*: [BedrockEmbeddingModelConfiguration](aws-properties-bedrock-knowledgebase-bedrockembeddingmodelconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

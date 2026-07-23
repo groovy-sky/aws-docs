@@ -2,71 +2,52 @@
 title: "AWS::PCS::Cluster SlurmdbdCustomSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::Cluster SlurmdbdCustomSetting
+<a name="aws-properties-pcs-cluster-slurmdbdcustomsetting"></a>
 
 Additional settings that directly map to SlurmDBD settings.
 
-###### Important
-
-AWS PCS supports a subset of SlurmDBD settings. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](../../../pcs/latest/userguide/slurmdbd-custom-settings.md) in the _AWS PCS User Guide_.
+**Important**
+AWS PCS supports a subset of SlurmDBD settings. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/slurmdbd-custom-settings.html) in the *AWS PCS User Guide*.
 
 ## Syntax
+<a name="aws-properties-pcs-cluster-slurmdbdcustomsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcs-cluster-slurmdbdcustomsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParameterName" : String,
-  "ParameterValue" : String
+  "[ParameterName](#cfn-pcs-cluster-slurmdbdcustomsetting-parametername)" : {{String}},
+  "[ParameterValue](#cfn-pcs-cluster-slurmdbdcustomsetting-parametervalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcs-cluster-slurmdbdcustomsetting-syntax.yaml"></a>
 
-```yaml
-
-  ParameterName: String
-  ParameterValue: String
-
+```
+  [ParameterName](#cfn-pcs-cluster-slurmdbdcustomsetting-parametername): {{String}}
+  [ParameterValue](#cfn-pcs-cluster-slurmdbdcustomsetting-parametervalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcs-cluster-slurmdbdcustomsetting-properties"></a>
 
-`ParameterName`
+`ParameterName`  <a name="cfn-pcs-cluster-slurmdbdcustomsetting-parametername"></a>
+AWS PCS supports custom SlurmDBD settings for clusters. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/slurmdbd-custom-settings.html) in the *AWS PCS User Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-AWS PCS supports custom SlurmDBD settings for clusters. For more information,
-see [Configuring\
-custom SlurmDBD settings in AWS PCS](../../../pcs/latest/userguide/slurmdbd-custom-settings.md)
-in the _AWS PCS User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValue`
-
+`ParameterValue`  <a name="cfn-pcs-cluster-slurmdbdcustomsetting-parametervalue"></a>
 The values for the configured SlurmDBD settings.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlurmCustomSetting
-
-SlurmRest
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,201 +2,148 @@
 title: "AWS::SageMaker::Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Endpoint
+<a name="aws-resource-sagemaker-endpoint"></a>
 
-Use the `AWS::SageMaker::Endpoint` resource to create an endpoint using the specified configuration
-in the request. Amazon SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint
-configuration with the [AWS::SageMaker::EndpointConfig](../userguide/aws-resource-sagemaker-endpointconfig.md) resource. For more information, see [Deploy a Model on Amazon SageMaker Hosting Services](../../../sagemaker/latest/dg/how-it-works-hosting.md) in
-the _Amazon SageMaker Developer Guide_.
+Use the `AWS::SageMaker::Endpoint` resource to create an endpoint using the specified configuration in the request. Amazon SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the [AWS::SageMaker::EndpointConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html) resource. For more information, see [Deploy a Model on Amazon SageMaker Hosting Services](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.html) in the *Amazon SageMaker Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-sagemaker-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::Endpoint",
   "Properties" : {
-      "DeploymentConfig" : DeploymentConfig,
-      "EndpointConfigName" : String,
-      "EndpointName" : String,
-      "ExcludeRetainedVariantProperties" : [ VariantProperty, ... ],
-      "RetainAllVariantProperties" : Boolean,
-      "RetainDeploymentConfig" : Boolean,
-      "Tags" : [ Tag, ... ]
+      "[DeploymentConfig](#cfn-sagemaker-endpoint-deploymentconfig)" : {{DeploymentConfig}},
+      "[EndpointConfigName](#cfn-sagemaker-endpoint-endpointconfigname)" : {{String}},
+      "[EndpointName](#cfn-sagemaker-endpoint-endpointname)" : {{String}},
+      "[ExcludeRetainedVariantProperties](#cfn-sagemaker-endpoint-excluderetainedvariantproperties)" : {{[ VariantProperty, ... ]}},
+      "[RetainAllVariantProperties](#cfn-sagemaker-endpoint-retainallvariantproperties)" : {{Boolean}},
+      "[RetainDeploymentConfig](#cfn-sagemaker-endpoint-retaindeploymentconfig)" : {{Boolean}},
+      "[Tags](#cfn-sagemaker-endpoint-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-endpoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::Endpoint
 Properties:
-  DeploymentConfig:
-    DeploymentConfig
-  EndpointConfigName: String
-  EndpointName: String
-  ExcludeRetainedVariantProperties:
-    - VariantProperty
-  RetainAllVariantProperties: Boolean
-  RetainDeploymentConfig: Boolean
-  Tags:
-    - Tag
-
+  [DeploymentConfig](#cfn-sagemaker-endpoint-deploymentconfig): {{
+    DeploymentConfig}}
+  [EndpointConfigName](#cfn-sagemaker-endpoint-endpointconfigname): {{String}}
+  [EndpointName](#cfn-sagemaker-endpoint-endpointname): {{String}}
+  [ExcludeRetainedVariantProperties](#cfn-sagemaker-endpoint-excluderetainedvariantproperties): {{
+    - VariantProperty}}
+  [RetainAllVariantProperties](#cfn-sagemaker-endpoint-retainallvariantproperties): {{Boolean}}
+  [RetainDeploymentConfig](#cfn-sagemaker-endpoint-retaindeploymentconfig): {{Boolean}}
+  [Tags](#cfn-sagemaker-endpoint-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-endpoint-properties"></a>
 
-`DeploymentConfig`
+`DeploymentConfig`  <a name="cfn-sagemaker-endpoint-deploymentconfig"></a>
+The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations.
+*Required*: No
+*Type*: [DeploymentConfig](aws-properties-sagemaker-endpoint-deploymentconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The deployment configuration for an endpoint, which contains the desired deployment
-strategy and rollback configurations.
+`EndpointConfigName`  <a name="cfn-sagemaker-endpoint-endpointconfigname"></a>
+The name of the [AWS::SageMaker::EndpointConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html) resource that specifies the configuration for the endpoint. For more information, see [CreateEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpointConfig.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
+*Minimum*: `0`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EndpointName`  <a name="cfn-sagemaker-endpoint-endpointname"></a>
+The name of the endpoint. The name must be unique within an AWS Region in your AWS account. The name is case-insensitive in `CreateEndpoint`, but the case is preserved and must be matched in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html).
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
+*Minimum*: `0`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [DeploymentConfig](aws-properties-sagemaker-endpoint-deploymentconfig.md)
+`ExcludeRetainedVariantProperties`  <a name="cfn-sagemaker-endpoint-excluderetainedvariantproperties"></a>
+When you are updating endpoint resources with [RetainAllVariantProperties](https://docs.aws.amazon.com/sagemaker/latest/dg/API_UpdateEndpoint.html#SageMaker-UpdateEndpoint-request-RetainAllVariantProperties) whose value is set to `true`, `ExcludeRetainedVariantProperties` specifies the list of type [VariantProperty](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpoint-variantproperty.html) to override with the values provided by `EndpointConfig`. If you don't specify a value for `ExcludeAllVariantProperties`, no variant properties are overridden. Don't use this property when creating new endpoint resources or when `RetainAllVariantProperties` is set to `false`.
+*Required*: No
+*Type*: Array of [VariantProperty](aws-properties-sagemaker-endpoint-variantproperty.md)
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RetainAllVariantProperties`  <a name="cfn-sagemaker-endpoint-retainallvariantproperties"></a>
+When updating endpoint resources, enables or disables the retention of variant properties, such as the instance count or the variant weight. To retain the variant properties of an endpoint when updating it, set `RetainAllVariantProperties` to `true`. To use the variant properties specified in a new `EndpointConfig` call when updating an endpoint, set `RetainAllVariantProperties` to `false`. Use this property only when updating endpoint resources, not when creating new endpoint resources.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`EndpointConfigName`
+`RetainDeploymentConfig`  <a name="cfn-sagemaker-endpoint-retaindeploymentconfig"></a>
+Specifies whether to reuse the last deployment configuration. The default value is false (the configuration is not reused).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the [AWS::SageMaker::EndpointConfig](../userguide/aws-resource-sagemaker-endpointconfig.md) resource that specifies the configuration for the endpoint. For more
-information, see [CreateEndpointConfig](../../../sagemaker/latest/dg/api-createendpointconfig.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-
-_Minimum_: `0`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndpointName`
-
-The name of the endpoint. The name must be unique within an AWS Region in your AWS account. The name is case-insensitive in `CreateEndpoint`, but the case is preserved and
-must be matched in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API\_runtime\_InvokeEndpoint.html](../../../../reference/sagemaker/latest/apireference/api-runtime-invokeendpoint.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-
-_Minimum_: `0`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ExcludeRetainedVariantProperties`
-
-When you are updating endpoint resources with [RetainAllVariantProperties](../../../sagemaker/latest/dg/api-updateendpoint.md#SageMaker-UpdateEndpoint-request-RetainAllVariantProperties) whose value is set to `true`,
-`ExcludeRetainedVariantProperties` specifies the list of type [VariantProperty](../userguide/aws-properties-sagemaker-endpoint-variantproperty.md) to override with the values provided by `EndpointConfig`. If you don't specify a
-value for `ExcludeAllVariantProperties`, no variant properties are overridden. Don't use this property
-when creating new endpoint resources or when `RetainAllVariantProperties` is set to `false`.
-
-_Required_: No
-
-_Type_: Array of [VariantProperty](aws-properties-sagemaker-endpoint-variantproperty.md)
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetainAllVariantProperties`
-
-When updating endpoint resources, enables or disables the retention of variant properties, such as the instance
-count or the variant weight. To retain the variant properties of an endpoint when updating it, set
-`RetainAllVariantProperties` to `true`. To use the variant properties specified in a new
-`EndpointConfig` call when updating an endpoint, set `RetainAllVariantProperties` to
-`false`. Use this property only when updating endpoint resources, not when creating new endpoint
-resources.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetainDeploymentConfig`
-
-Specifies whether to reuse the last deployment configuration. The default value is
-false (the configuration is not reused).
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-endpoint-tags"></a>
 A list of key-value pairs to apply to this resource.
-
-For more information, see [Resource Tag](../userguide/aws-properties-resource-tags.md) and [Using Cost\
-Allocation Tags](../../../awsaccountbilling/latest/aboutv2/cost-alloc-tags.md#allocation-what) in the _AWS Billing and Cost Management User_
-_Guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-endpoint-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Resource Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) and [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html#allocation-what) in the *AWS Billing and Cost Management User Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-endpoint-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sagemaker-endpoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-endpoint-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the endpoint, such as
-`arn:aws:sagemaker:us-west-2:012345678901:endpoint/myendpoint`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the endpoint, such as `arn:aws:sagemaker:us-west-2:012345678901:endpoint/myendpoint`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-endpoint-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`EndpointArn`
+####
+<a name="aws-resource-sagemaker-endpoint-return-values-fn--getatt-fn--getatt"></a>
 
+`EndpointArn`  <a name="EndpointArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the endpoint.
 
-`EndpointName`
-
+`EndpointName`  <a name="EndpointName-fn::getatt"></a>
 The name of the endpoint, such as `MyEndpoint`.
 
 ## Examples
+<a name="aws-resource-sagemaker-endpoint--examples"></a>
 
 ### SageMaker Endpoint Example
+<a name="aws-resource-sagemaker-endpoint--examples--SageMaker_Endpoint_Example"></a>
 
-The following example creates an endpoint configuration from a trained model, and then creates an
-endpoint.
+The following example creates an endpoint configuration from a trained model, and then creates an endpoint.
 
 #### JSON
+<a name="aws-resource-sagemaker-endpoint--examples--SageMaker_Endpoint_Example--json"></a>
 
-```json
-
+```
 {
   "Description": "Basic Hosting entities test.  We need models to create endpoint configs.",
   "Mappings": {
@@ -261,7 +208,7 @@ endpoint.
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
+          "Version": "2012-10-17"		 	 	 ,
           "Statement": [
             {
               "Effect": "Allow",
@@ -281,7 +228,7 @@ endpoint.
           {
             "PolicyName": "root",
             "PolicyDocument": {
-              "Version": "2012-10-17",
+              "Version": "2012-10-17"		 	 	 ,
               "Statement": [
                 {
                   "Effect": "Allow",
@@ -309,9 +256,9 @@ endpoint.
 ```
 
 #### YAML
+<a name="aws-resource-sagemaker-endpoint--examples--SageMaker_Endpoint_Example--yaml"></a>
 
-```yaml
-
+```
 Description: "Basic Hosting entities test.  We need models to create endpoint configs."
 Mappings:
   RegionMap:
@@ -383,11 +330,5 @@ Outputs:
   EndpointName:
     Value: !GetAtt Endpoint.EndpointName
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UserSettings
-
-Alarm
 
 All content copied from https://docs.aws.amazon.com/.

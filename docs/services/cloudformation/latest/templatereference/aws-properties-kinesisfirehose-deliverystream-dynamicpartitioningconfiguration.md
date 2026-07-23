@@ -2,69 +2,50 @@
 title: "AWS::KinesisFirehose::DeliveryStream DynamicPartitioningConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream DynamicPartitioningConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration"></a>
 
-The `DynamicPartitioningConfiguration` property type specifies the
-configuration of the dynamic partitioning mechanism that creates targeted data sets from
-the streaming data by partitioning it based on partition keys.
+The `DynamicPartitioningConfiguration` property type specifies the configuration of the dynamic partitioning mechanism that creates targeted data sets from the streaming data by partitioning it based on partition keys.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "RetryOptions" : RetryOptions
+  "[Enabled](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-enabled)" : {{Boolean}},
+  "[RetryOptions](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-retryoptions)" : {{RetryOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  RetryOptions:
-    RetryOptions
-
+```
+  [Enabled](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-enabled): {{Boolean}}
+  [RetryOptions](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-retryoptions): {{
+    RetryOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-properties"></a>
 
-`Enabled`
+`Enabled`  <a name="cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-enabled"></a>
+Specifies whether dynamic partitioning is enabled for this Kinesis Data Firehose delivery stream.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies whether dynamic partitioning is enabled for this Kinesis Data Firehose
-delivery stream.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryOptions`
-
-Specifies the retry behavior in case Kinesis Data Firehose is unable to deliver data
-to an Amazon S3 prefix.
-
-_Required_: No
-
-_Type_: [RetryOptions](aws-properties-kinesisfirehose-deliverystream-retryoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentIdOptions
-
-ElasticsearchBufferingHints
+`RetryOptions`  <a name="cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-retryoptions"></a>
+Specifies the retry behavior in case Kinesis Data Firehose is unable to deliver data to an Amazon S3 prefix.
+*Required*: No
+*Type*: [RetryOptions](aws-properties-kinesisfirehose-deliverystream-retryoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

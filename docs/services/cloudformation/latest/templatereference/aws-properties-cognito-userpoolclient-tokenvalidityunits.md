@@ -2,91 +2,60 @@
 title: "AWS::Cognito::UserPoolClient TokenValidityUnits"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolClient TokenValidityUnits
+<a name="aws-properties-cognito-userpoolclient-tokenvalidityunits"></a>
 
-The units that validity times are represented in. The default unit for refresh tokens
-is days, and the default for ID and access tokens are hours.
+The units that validity times are represented in. The default unit for refresh tokens is days, and the default for ID and access tokens are hours.
 
 ## Syntax
+<a name="aws-properties-cognito-userpoolclient-tokenvalidityunits-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpoolclient-tokenvalidityunits-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessToken" : String,
-  "IdToken" : String,
-  "RefreshToken" : String
+  "[AccessToken](#cfn-cognito-userpoolclient-tokenvalidityunits-accesstoken)" : {{String}},
+  "[IdToken](#cfn-cognito-userpoolclient-tokenvalidityunits-idtoken)" : {{String}},
+  "[RefreshToken](#cfn-cognito-userpoolclient-tokenvalidityunits-refreshtoken)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpoolclient-tokenvalidityunits-syntax.yaml"></a>
 
-```yaml
-
-  AccessToken: String
-  IdToken: String
-  RefreshToken: String
-
+```
+  [AccessToken](#cfn-cognito-userpoolclient-tokenvalidityunits-accesstoken): {{String}}
+  [IdToken](#cfn-cognito-userpoolclient-tokenvalidityunits-idtoken): {{String}}
+  [RefreshToken](#cfn-cognito-userpoolclient-tokenvalidityunits-refreshtoken): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpoolclient-tokenvalidityunits-properties"></a>
 
-`AccessToken`
+`AccessToken`  <a name="cfn-cognito-userpoolclient-tokenvalidityunits-accesstoken"></a>
+ A time unit for the value that you set in the `AccessTokenValidity` parameter. The default `AccessTokenValidity` time unit is `hours`. `AccessTokenValidity` duration can range from five minutes to one day.
+*Required*: No
+*Type*: String
+*Allowed values*: `seconds | minutes | hours | days`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A time unit for the value that you set in the `AccessTokenValidity`
-parameter. The default `AccessTokenValidity` time unit is `hours`.
-`AccessTokenValidity` duration can range from five minutes to one
-day.
+`IdToken`  <a name="cfn-cognito-userpoolclient-tokenvalidityunits-idtoken"></a>
+A time unit for the value that you set in the `IdTokenValidity` parameter. The default `IdTokenValidity` time unit is `hours`. `IdTokenValidity` duration can range from five minutes to one day.
+*Required*: No
+*Type*: String
+*Allowed values*: `seconds | minutes | hours | days`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `seconds | minutes | hours | days`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdToken`
-
-A time unit for the value that you set in the `IdTokenValidity` parameter.
-The default `IdTokenValidity` time unit is `hours`.
-`IdTokenValidity` duration can range from five minutes to one day.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `seconds | minutes | hours | days`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefreshToken`
-
-A time unit for the value that you set in the `RefreshTokenValidity`
-parameter. The default `RefreshTokenValidity` time unit is `days`.
-`RefreshTokenValidity` duration can range from 60 minutes to 10
-years.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `seconds | minutes | hours | days`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RefreshTokenRotation
-
-AWS::Cognito::UserPoolDomain
+`RefreshToken`  <a name="cfn-cognito-userpoolclient-tokenvalidityunits-refreshtoken"></a>
+A time unit for the value that you set in the `RefreshTokenValidity` parameter. The default `RefreshTokenValidity` time unit is `days`. `RefreshTokenValidity` duration can range from 60 minutes to 10 years.
+*Required*: No
+*Type*: String
+*Allowed values*: `seconds | minutes | hours | days`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

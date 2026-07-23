@@ -2,84 +2,73 @@
 title: "AWS::GroundStation::Config AntennaUplinkConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config AntennaUplinkConfig
+<a name="aws-properties-groundstation-config-antennauplinkconfig"></a>
 
-Provides information about how AWS Ground Station should configure an antenna for uplink during a contact.
+ Provides information about how AWS Ground Station should configure an antenna for uplink during a contact.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-antennauplinkconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-antennauplinkconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SpectrumConfig" : UplinkSpectrumConfig,
-  "TargetEirp" : Eirp,
-  "TransmitDisabled" : Boolean
+  "[SpectrumConfig](#cfn-groundstation-config-antennauplinkconfig-spectrumconfig)" : {{UplinkSpectrumConfig}},
+  "[TargetEirp](#cfn-groundstation-config-antennauplinkconfig-targeteirp)" : {{Eirp}},
+  "[TransmitDisabled](#cfn-groundstation-config-antennauplinkconfig-transmitdisabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-antennauplinkconfig-syntax.yaml"></a>
 
-```yaml
-
-  SpectrumConfig:
-    UplinkSpectrumConfig
-  TargetEirp:
-    Eirp
-  TransmitDisabled: Boolean
-
+```
+  [SpectrumConfig](#cfn-groundstation-config-antennauplinkconfig-spectrumconfig): {{
+    UplinkSpectrumConfig}}
+  [TargetEirp](#cfn-groundstation-config-antennauplinkconfig-targeteirp): {{
+    Eirp}}
+  [TransmitDisabled](#cfn-groundstation-config-antennauplinkconfig-transmitdisabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-antennauplinkconfig-properties"></a>
 
-`SpectrumConfig`
+`SpectrumConfig`  <a name="cfn-groundstation-config-antennauplinkconfig-spectrumconfig"></a>
+ Defines the spectrum configuration.
+*Required*: No
+*Type*: [UplinkSpectrumConfig](aws-properties-groundstation-config-uplinkspectrumconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Defines the spectrum configuration.
+`TargetEirp`  <a name="cfn-groundstation-config-antennauplinkconfig-targeteirp"></a>
+ The equivalent isotropically radiated power (EIRP) to use for uplink transmissions. Valid values are between 20.0 to 50.0 dBW.
+*Required*: No
+*Type*: [Eirp](aws-properties-groundstation-config-eirp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [UplinkSpectrumConfig](aws-properties-groundstation-config-uplinkspectrumconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetEirp`
-
-The equivalent isotropically radiated power (EIRP) to use for uplink transmissions. Valid values are between 20.0 to 50.0 dBW.
-
-_Required_: No
-
-_Type_: [Eirp](aws-properties-groundstation-config-eirp.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransmitDisabled`
-
-Whether or not uplink transmit is disabled.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TransmitDisabled`  <a name="cfn-groundstation-config-antennauplinkconfig-transmitdisabled"></a>
+ Whether or not uplink transmit is disabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-antennauplinkconfig--examples"></a>
 
 ### Create an AntennaUplinkConfig
+<a name="aws-properties-groundstation-config-antennauplinkconfig--examples--Create_an_AntennaUplinkConfig"></a>
 
 The following example creates a Ground Station `AntennaUplinkConfig`
 
 #### JSON
+<a name="aws-properties-groundstation-config-antennauplinkconfig--examples--Create_an_AntennaUplinkConfig--json"></a>
 
-```json
-
+```
 {
   "AntennaUplinkConfig": {
     "SpectrumConfig": {
@@ -98,9 +87,9 @@ The following example creates a Ground Station `AntennaUplinkConfig`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-antennauplinkconfig--examples--Create_an_AntennaUplinkConfig--yaml"></a>
 
-```yaml
-
+```
 AntennaUplinkConfig:
   SpectrumConfig:
     CenterFrequency:
@@ -111,11 +100,5 @@ AntennaUplinkConfig:
     Value: 20.0
     Units: dBW
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AntennaDownlinkDemodDecodeConfig
-
-ConfigData
 
 All content copied from https://docs.aws.amazon.com/.

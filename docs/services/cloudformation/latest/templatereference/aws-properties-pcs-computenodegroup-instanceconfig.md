@@ -2,55 +2,42 @@
 title: "AWS::PCS::ComputeNodeGroup InstanceConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::ComputeNodeGroup InstanceConfig
+<a name="aws-properties-pcs-computenodegroup-instanceconfig"></a>
 
 An EC2 instance configuration AWS PCS uses to launch compute nodes.
 
 ## Syntax
+<a name="aws-properties-pcs-computenodegroup-instanceconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcs-computenodegroup-instanceconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InstanceType" : String
+  "[InstanceType](#cfn-pcs-computenodegroup-instanceconfig-instancetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcs-computenodegroup-instanceconfig-syntax.yaml"></a>
 
-```yaml
-
-  InstanceType: String
-
+```
+  [InstanceType](#cfn-pcs-computenodegroup-instanceconfig-instancetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcs-computenodegroup-instanceconfig-properties"></a>
 
-`InstanceType`
-
-The EC2 instance type that AWS PCS can provision in the compute node
-group.
-
-Example: `t2.xlarge`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ErrorInfo
-
-ScalingConfiguration
+`InstanceType`  <a name="cfn-pcs-computenodegroup-instanceconfig-instancetype"></a>
+The EC2 instance type that AWS PCS can provision in the compute node group.
+ Example: `t2.xlarge`
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

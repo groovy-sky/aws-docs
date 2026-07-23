@@ -2,114 +2,82 @@
 title: "AWS::LicenseManager::License Entitlement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LicenseManager::License Entitlement
+<a name="aws-properties-licensemanager-license-entitlement"></a>
 
 Describes a resource entitled for use with a license.
 
 ## Syntax
+<a name="aws-properties-licensemanager-license-entitlement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-licensemanager-license-entitlement-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowCheckIn" : Boolean,
-  "MaxCount" : Integer,
-  "Name" : String,
-  "Overage" : Boolean,
-  "Unit" : String,
-  "Value" : String
+  "[AllowCheckIn](#cfn-licensemanager-license-entitlement-allowcheckin)" : {{Boolean}},
+  "[MaxCount](#cfn-licensemanager-license-entitlement-maxcount)" : {{Integer}},
+  "[Name](#cfn-licensemanager-license-entitlement-name)" : {{String}},
+  "[Overage](#cfn-licensemanager-license-entitlement-overage)" : {{Boolean}},
+  "[Unit](#cfn-licensemanager-license-entitlement-unit)" : {{String}},
+  "[Value](#cfn-licensemanager-license-entitlement-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-licensemanager-license-entitlement-syntax.yaml"></a>
 
-```yaml
-
-  AllowCheckIn: Boolean
-  MaxCount: Integer
-  Name: String
-  Overage: Boolean
-  Unit: String
-  Value: String
-
+```
+  [AllowCheckIn](#cfn-licensemanager-license-entitlement-allowcheckin): {{Boolean}}
+  [MaxCount](#cfn-licensemanager-license-entitlement-maxcount): {{Integer}}
+  [Name](#cfn-licensemanager-license-entitlement-name): {{String}}
+  [Overage](#cfn-licensemanager-license-entitlement-overage): {{Boolean}}
+  [Unit](#cfn-licensemanager-license-entitlement-unit): {{String}}
+  [Value](#cfn-licensemanager-license-entitlement-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-licensemanager-license-entitlement-properties"></a>
 
-`AllowCheckIn`
-
+`AllowCheckIn`  <a name="cfn-licensemanager-license-entitlement-allowcheckin"></a>
 Indicates whether check-ins are allowed.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxCount`
-
+`MaxCount`  <a name="cfn-licensemanager-license-entitlement-maxcount"></a>
 Maximum entitlement count. Use if the unit is not None.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-licensemanager-license-entitlement-name"></a>
 Entitlement name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Overage`
-
+`Overage`  <a name="cfn-licensemanager-license-entitlement-overage"></a>
 Indicates whether overages are allowed.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Unit`
-
+`Unit`  <a name="cfn-licensemanager-license-entitlement-unit"></a>
 Entitlement unit.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Count | None | Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Count | None | Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-licensemanager-license-entitlement-value"></a>
 Entitlement resource. Use only if the unit is None.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConsumptionConfiguration
-
-IssuerData
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

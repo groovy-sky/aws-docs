@@ -2,79 +2,55 @@
 title: "AWS::GlobalAccelerator::EndpointGroup PortOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GlobalAccelerator::EndpointGroup PortOverride
+<a name="aws-properties-globalaccelerator-endpointgroup-portoverride"></a>
 
-Override specific listener ports used to route traffic to endpoints that are part of an endpoint group.
-For example, you can create a port override in which the listener
-receives user traffic on ports 80 and 443, but your accelerator routes that traffic to ports 1080
-and 1443, respectively, on the endpoints.
+Override specific listener ports used to route traffic to endpoints that are part of an endpoint group. For example, you can create a port override in which the listener receives user traffic on ports 80 and 443, but your accelerator routes that traffic to ports 1080 and 1443, respectively, on the endpoints.
 
-For more information, see [Port overrides](../../../global-accelerator/latest/dg/about-endpoint-groups-port-override.md) in the _AWS Global Accelerator Developer Guide_.
+For more information, see [ Port overrides](https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpoint-groups-port-override.html) in the *AWS Global Accelerator Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-globalaccelerator-endpointgroup-portoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-globalaccelerator-endpointgroup-portoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "EndpointPort" : Integer,
-  "ListenerPort" : Integer
+  "[EndpointPort](#cfn-globalaccelerator-endpointgroup-portoverride-endpointport)" : {{Integer}},
+  "[ListenerPort](#cfn-globalaccelerator-endpointgroup-portoverride-listenerport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-globalaccelerator-endpointgroup-portoverride-syntax.yaml"></a>
 
-```yaml
-
-  EndpointPort: Integer
-  ListenerPort: Integer
-
+```
+  [EndpointPort](#cfn-globalaccelerator-endpointgroup-portoverride-endpointport): {{Integer}}
+  [ListenerPort](#cfn-globalaccelerator-endpointgroup-portoverride-listenerport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-globalaccelerator-endpointgroup-portoverride-properties"></a>
 
-`EndpointPort`
+`EndpointPort`  <a name="cfn-globalaccelerator-endpointgroup-portoverride-endpointport"></a>
+The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint,
-such as the Application Load Balancer or Amazon EC2 instance.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ListenerPort`
-
-The listener port that you want to map to a specific endpoint port. This is the port that user traffic
-arrives to the Global Accelerator on.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EndpointConfiguration
-
-AWS::GlobalAccelerator::Listener
+`ListenerPort`  <a name="cfn-globalaccelerator-endpointgroup-portoverride-listenerport"></a>
+The listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

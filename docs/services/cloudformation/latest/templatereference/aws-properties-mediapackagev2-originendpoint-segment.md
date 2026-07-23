@@ -2,136 +2,96 @@
 title: "AWS::MediaPackageV2::OriginEndpoint Segment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint Segment
+<a name="aws-properties-mediapackagev2-originendpoint-segment"></a>
 
 The segment configuration, including the segment name, duration, and other configuration values.
 
 ## Syntax
+<a name="aws-properties-mediapackagev2-originendpoint-segment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackagev2-originendpoint-segment-syntax.json"></a>
 
-```json
-
+```
 {
-  "Encryption" : Encryption,
-  "IncludeIframeOnlyStreams" : Boolean,
-  "Scte" : Scte,
-  "SegmentDurationSeconds" : Integer,
-  "SegmentName" : String,
-  "TsIncludeDvbSubtitles" : Boolean,
-  "TsUseAudioRenditionGroup" : Boolean
+  "[Encryption](#cfn-mediapackagev2-originendpoint-segment-encryption)" : {{Encryption}},
+  "[IncludeIframeOnlyStreams](#cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams)" : {{Boolean}},
+  "[Scte](#cfn-mediapackagev2-originendpoint-segment-scte)" : {{Scte}},
+  "[SegmentDurationSeconds](#cfn-mediapackagev2-originendpoint-segment-segmentdurationseconds)" : {{Integer}},
+  "[SegmentName](#cfn-mediapackagev2-originendpoint-segment-segmentname)" : {{String}},
+  "[TsIncludeDvbSubtitles](#cfn-mediapackagev2-originendpoint-segment-tsincludedvbsubtitles)" : {{Boolean}},
+  "[TsUseAudioRenditionGroup](#cfn-mediapackagev2-originendpoint-segment-tsuseaudiorenditiongroup)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackagev2-originendpoint-segment-syntax.yaml"></a>
 
-```yaml
-
-  Encryption:
-    Encryption
-  IncludeIframeOnlyStreams: Boolean
-  Scte:
-    Scte
-  SegmentDurationSeconds: Integer
-  SegmentName: String
-  TsIncludeDvbSubtitles: Boolean
-  TsUseAudioRenditionGroup: Boolean
-
+```
+  [Encryption](#cfn-mediapackagev2-originendpoint-segment-encryption): {{
+    Encryption}}
+  [IncludeIframeOnlyStreams](#cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams): {{Boolean}}
+  [Scte](#cfn-mediapackagev2-originendpoint-segment-scte): {{
+    Scte}}
+  [SegmentDurationSeconds](#cfn-mediapackagev2-originendpoint-segment-segmentdurationseconds): {{Integer}}
+  [SegmentName](#cfn-mediapackagev2-originendpoint-segment-segmentname): {{String}}
+  [TsIncludeDvbSubtitles](#cfn-mediapackagev2-originendpoint-segment-tsincludedvbsubtitles): {{Boolean}}
+  [TsUseAudioRenditionGroup](#cfn-mediapackagev2-originendpoint-segment-tsuseaudiorenditiongroup): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackagev2-originendpoint-segment-properties"></a>
 
-`Encryption`
-
+`Encryption`  <a name="cfn-mediapackagev2-originendpoint-segment-encryption"></a>
 Whether to use encryption for the segment.
+*Required*: No
+*Type*: [Encryption](aws-properties-mediapackagev2-originendpoint-encryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Encryption](aws-properties-mediapackagev2-originendpoint-encryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeIframeOnlyStreams`
-
+`IncludeIframeOnlyStreams`  <a name="cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams"></a>
 Whether the segment includes I-frame-only streams.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scte`
-
+`Scte`  <a name="cfn-mediapackagev2-originendpoint-segment-scte"></a>
 The SCTE-35 configuration associated with the segment.
+*Required*: No
+*Type*: [Scte](aws-properties-mediapackagev2-originendpoint-scte.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Scte](aws-properties-mediapackagev2-originendpoint-scte.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentDurationSeconds`
-
+`SegmentDurationSeconds`  <a name="cfn-mediapackagev2-originendpoint-segment-segmentdurationseconds"></a>
 The duration of the segment, in seconds.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentName`
-
+`SegmentName`  <a name="cfn-mediapackagev2-originendpoint-segment-segmentname"></a>
 The name of the segment associated with the origin endpoint.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TsIncludeDvbSubtitles`
-
+`TsIncludeDvbSubtitles`  <a name="cfn-mediapackagev2-originendpoint-segment-tsincludedvbsubtitles"></a>
 Whether the segment includes DVB subtitles.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TsUseAudioRenditionGroup`
-
+`TsUseAudioRenditionGroup`  <a name="cfn-mediapackagev2-originendpoint-segment-tsuseaudiorenditiongroup"></a>
 Whether the segment is an audio rendition group.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScteHls
-
-SpekeKeyProvider
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,55 +2,42 @@
 title: "AWS::Cassandra::Table ScalingPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Table ScalingPolicy
+<a name="aws-properties-cassandra-table-scalingpolicy"></a>
 
-Amazon Keyspaces supports the `target tracking` auto scaling policy. With this policy, Amazon Keyspaces auto scaling
-ensures that the table's ratio of consumed to provisioned capacity stays at or near the target value that you specify. You
-define the target value as a percentage between 20 and 90.
+Amazon Keyspaces supports the `target tracking` auto scaling policy. With this policy, Amazon Keyspaces auto scaling ensures that the table's ratio of consumed to provisioned capacity stays at or near the target value that you specify. You define the target value as a percentage between 20 and 90.
 
 ## Syntax
+<a name="aws-properties-cassandra-table-scalingpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cassandra-table-scalingpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "TargetTrackingScalingPolicyConfiguration" : TargetTrackingScalingPolicyConfiguration
+  "[TargetTrackingScalingPolicyConfiguration](#cfn-cassandra-table-scalingpolicy-targettrackingscalingpolicyconfiguration)" : {{TargetTrackingScalingPolicyConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cassandra-table-scalingpolicy-syntax.yaml"></a>
 
-```yaml
-
-  TargetTrackingScalingPolicyConfiguration:
-    TargetTrackingScalingPolicyConfiguration
-
+```
+  [TargetTrackingScalingPolicyConfiguration](#cfn-cassandra-table-scalingpolicy-targettrackingscalingpolicyconfiguration): {{
+    TargetTrackingScalingPolicyConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-cassandra-table-scalingpolicy-properties"></a>
 
-`TargetTrackingScalingPolicyConfiguration`
-
+`TargetTrackingScalingPolicyConfiguration`  <a name="cfn-cassandra-table-scalingpolicy-targettrackingscalingpolicyconfiguration"></a>
 The auto scaling policy that scales a table based on the ratio of consumed to provisioned capacity.
-
-_Required_: No
-
-_Type_: [TargetTrackingScalingPolicyConfiguration](aws-properties-cassandra-table-targettrackingscalingpolicyconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicaSpecification
-
-Tag
+*Required*: No
+*Type*: [TargetTrackingScalingPolicyConfiguration](aws-properties-cassandra-table-targettrackingscalingpolicyconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

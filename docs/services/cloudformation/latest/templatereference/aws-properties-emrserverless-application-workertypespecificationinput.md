@@ -2,53 +2,42 @@
 title: "AWS::EMRServerless::Application WorkerTypeSpecificationInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application WorkerTypeSpecificationInput
+<a name="aws-properties-emrserverless-application-workertypespecificationinput"></a>
 
 The specifications for a worker type.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-workertypespecificationinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-workertypespecificationinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageConfiguration" : ImageConfigurationInput
+  "[ImageConfiguration](#cfn-emrserverless-application-workertypespecificationinput-imageconfiguration)" : {{ImageConfigurationInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-workertypespecificationinput-syntax.yaml"></a>
 
-```yaml
-
-  ImageConfiguration:
-    ImageConfigurationInput
-
+```
+  [ImageConfiguration](#cfn-emrserverless-application-workertypespecificationinput-imageconfiguration): {{
+    ImageConfigurationInput}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-workertypespecificationinput-properties"></a>
 
-`ImageConfiguration`
-
+`ImageConfiguration`  <a name="cfn-emrserverless-application-workertypespecificationinput-imageconfiguration"></a>
 The image configuration for a worker type.
-
-_Required_: No
-
-_Type_: [ImageConfigurationInput](aws-properties-emrserverless-application-imageconfigurationinput.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkerConfiguration
-
-Next
+*Required*: No
+*Type*: [ImageConfigurationInput](aws-properties-emrserverless-application-imageconfigurationinput.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

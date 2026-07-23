@@ -2,97 +2,72 @@
 title: "AWS::ECS::PrimaryTaskSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::PrimaryTaskSet
+<a name="aws-resource-ecs-primarytaskset"></a>
 
-Modifies which task set in a service is the primary task set. Any parameters that are
-updated on the primary task set in a service will transition to the service. This is
-used when a service uses the `EXTERNAL` deployment controller type. For more
-information, see [Amazon ECS Deployment\
-Types](../../../amazonecs/latest/developerguide/deployment-types.md) in the _Amazon Elastic Container Service Developer_
-_Guide_.
+Modifies which task set in a service is the primary task set. Any parameters that are updated on the primary task set in a service will transition to the service. This is used when a service uses the `EXTERNAL` deployment controller type. For more information, see [Amazon ECS Deployment Types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html) in the *Amazon Elastic Container Service Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-ecs-primarytaskset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ecs-primarytaskset-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ECS::PrimaryTaskSet",
   "Properties" : {
-      "Cluster" : String,
-      "Service" : String,
-      "TaskSetId" : String
+      "[Cluster](#cfn-ecs-primarytaskset-cluster)" : {{String}},
+      "[Service](#cfn-ecs-primarytaskset-service)" : {{String}},
+      "[TaskSetId](#cfn-ecs-primarytaskset-tasksetid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ecs-primarytaskset-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ECS::PrimaryTaskSet
 Properties:
-  Cluster: String
-  Service: String
-  TaskSetId: String
-
+  [Cluster](#cfn-ecs-primarytaskset-cluster): {{String}}
+  [Service](#cfn-ecs-primarytaskset-service): {{String}}
+  [TaskSetId](#cfn-ecs-primarytaskset-tasksetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ecs-primarytaskset-properties"></a>
 
-`Cluster`
+`Cluster`  <a name="cfn-ecs-primarytaskset-cluster"></a>
+The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set exists in.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The short name or full Amazon Resource Name (ARN) of the cluster that hosts the
-service that the task set exists in.
+`Service`  <a name="cfn-ecs-primarytaskset-service"></a>
+The short name or full Amazon Resource Name (ARN) of the service that the task set exists in.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Service`
-
-The short name or full Amazon Resource Name (ARN) of the service that the task set
-exists in.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TaskSetId`
-
-The short name or full Amazon Resource Name (ARN) of the task set to set as the
-primary task set in the deployment.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TaskSetId`  <a name="cfn-ecs-primarytaskset-tasksetid"></a>
+The short name or full Amazon Resource Name (ARN) of the task set to set as the primary task set in the deployment.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ecs-primarytaskset-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ecs-primarytaskset-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::ECS::Service
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

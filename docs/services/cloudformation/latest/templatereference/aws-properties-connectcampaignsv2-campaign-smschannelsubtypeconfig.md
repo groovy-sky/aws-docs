@@ -2,82 +2,61 @@
 title: "AWS::ConnectCampaignsV2::Campaign SmsChannelSubtypeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign SmsChannelSubtypeConfig
+<a name="aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig"></a>
 
 The configuration for the SMS channel subtype.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Capacity" : Number,
-  "DefaultOutboundConfig" : SmsOutboundConfig,
-  "OutboundMode" : SmsOutboundMode
+  "[Capacity](#cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-capacity)" : {{Number}},
+  "[DefaultOutboundConfig](#cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-defaultoutboundconfig)" : {{SmsOutboundConfig}},
+  "[OutboundMode](#cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-outboundmode)" : {{SmsOutboundMode}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig-syntax.yaml"></a>
 
-```yaml
-
-  Capacity: Number
-  DefaultOutboundConfig:
-    SmsOutboundConfig
-  OutboundMode:
-    SmsOutboundMode
-
+```
+  [Capacity](#cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-capacity): {{Number}}
+  [DefaultOutboundConfig](#cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-defaultoutboundconfig): {{
+    SmsOutboundConfig}}
+  [OutboundMode](#cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-outboundmode): {{
+    SmsOutboundMode}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig-properties"></a>
 
-`Capacity`
-
+`Capacity`  <a name="cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-capacity"></a>
 The allocation of SMS capacity between multiple running outbound campaigns.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultOutboundConfig`
-
+`DefaultOutboundConfig`  <a name="cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-defaultoutboundconfig"></a>
 The default SMS outbound configuration of an outbound campaign.
+*Required*: Yes
+*Type*: [SmsOutboundConfig](aws-properties-connectcampaignsv2-campaign-smsoutboundconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SmsOutboundConfig](aws-properties-connectcampaignsv2-campaign-smsoutboundconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutboundMode`
-
+`OutboundMode`  <a name="cfn-connectcampaignsv2-campaign-smschannelsubtypeconfig-outboundmode"></a>
 The outbound mode of SMS for an outbound campaign.
-
-_Required_: Yes
-
-_Type_: [SmsOutboundMode](aws-properties-connectcampaignsv2-campaign-smsoutboundmode.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Schedule
-
-SmsOutboundConfig
+*Required*: Yes
+*Type*: [SmsOutboundMode](aws-properties-connectcampaignsv2-campaign-smsoutboundmode.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

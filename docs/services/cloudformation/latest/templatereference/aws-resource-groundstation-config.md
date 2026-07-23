@@ -2,122 +2,100 @@
 title: "AWS::GroundStation::Config"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config
+<a name="aws-resource-groundstation-config"></a>
 
-Creates a `Config` with the specified parameters.
+ Creates a `Config` with the specified parameters.
 
-Config objects provide Ground Station with the details necessary in order to schedule and execute satellite contacts.
+ Config objects provide Ground Station with the details necessary in order to schedule and execute satellite contacts.
 
 ## Syntax
+<a name="aws-resource-groundstation-config-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-groundstation-config-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::GroundStation::Config",
   "Properties" : {
-      "ConfigData" : ConfigData,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[ConfigData](#cfn-groundstation-config-configdata)" : {{ConfigData}},
+      "[Name](#cfn-groundstation-config-name)" : {{String}},
+      "[Tags](#cfn-groundstation-config-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-groundstation-config-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::GroundStation::Config
 Properties:
-  ConfigData:
-    ConfigData
-  Name: String
-  Tags:
-    - Tag
-
+  [ConfigData](#cfn-groundstation-config-configdata): {{
+    ConfigData}}
+  [Name](#cfn-groundstation-config-name): {{String}}
+  [Tags](#cfn-groundstation-config-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-groundstation-config-properties"></a>
 
-`ConfigData`
+`ConfigData`  <a name="cfn-groundstation-config-configdata"></a>
+ Object containing the parameters of a config. Only one subtype may be specified per config. See the subtype definitions for a description of each config subtype.
+*Required*: Yes
+*Type*: [ConfigData](aws-properties-groundstation-config-configdata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Object containing the parameters of a config.
-Only one subtype may be specified per config.
-See the subtype definitions for a description of each config subtype.
+`Name`  <a name="cfn-groundstation-config-name"></a>
+ The name of the config object.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[ a-zA-Z0-9_:-]{1,256}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ConfigData](aws-properties-groundstation-config-configdata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the config object.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[ a-zA-Z0-9_:-]{1,256}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Tags assigned to a resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-groundstation-config-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-groundstation-config-tags"></a>
+ Tags assigned to a resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-groundstation-config-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-groundstation-config-return-values"></a>
 
 ### Ref
+<a name="aws-resource-groundstation-config-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the config. For example:
 
-`{ "Ref": "Config" }`
+ `{ "Ref": "Config" }`
 
-For the Ground Station config, `Ref` returns the ARN of the config.
+ For the Ground Station config, `Ref` returns the ARN of the config.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-groundstation-config-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-groundstation-config-return-values-fn--getatt-fn--getatt"></a>
 
-The ARN of the config, such as
-`arn:aws:groundstation:us-east-2:012345678910:config/tracking/9940bf3b-d2ba-427e-9906-842b5e5d2296`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The ARN of the config, such as `arn:aws:groundstation:us-east-2:012345678910:config/tracking/9940bf3b-d2ba-427e-9906-842b5e5d2296`.
 
-`Id`
+`Id`  <a name="Id-fn::getatt"></a>
+The ID of the config, such as `9940bf3b-d2ba-427e-9906-842b5e5d2296`.
 
-The ID of the config, such as
-`9940bf3b-d2ba-427e-9906-842b5e5d2296`.
-
-`Type`
-
-The type of the config, such as
-`tracking`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Ground Station
-
-AntennaDownlinkConfig
+`Type`  <a name="Type-fn::getatt"></a>
+The type of the config, such as `tracking`.
 
 All content copied from https://docs.aws.amazon.com/.

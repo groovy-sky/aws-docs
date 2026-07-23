@@ -2,75 +2,51 @@
 title: "AWS::ECR::ReplicationConfiguration RepositoryFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::ReplicationConfiguration RepositoryFilter
+<a name="aws-properties-ecr-replicationconfiguration-repositoryfilter"></a>
 
-The filter settings used with image replication. Specifying a repository filter to a
-replication rule provides a method for controlling which repositories in a private
-registry are replicated. If no filters are added, the contents of all repositories are
-replicated.
+The filter settings used with image replication. Specifying a repository filter to a replication rule provides a method for controlling which repositories in a private registry are replicated. If no filters are added, the contents of all repositories are replicated.
 
 ## Syntax
+<a name="aws-properties-ecr-replicationconfiguration-repositoryfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecr-replicationconfiguration-repositoryfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Filter" : String,
-  "FilterType" : String
+  "[Filter](#cfn-ecr-replicationconfiguration-repositoryfilter-filter)" : {{String}},
+  "[FilterType](#cfn-ecr-replicationconfiguration-repositoryfilter-filtertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecr-replicationconfiguration-repositoryfilter-syntax.yaml"></a>
 
-```yaml
-
-  Filter: String
-  FilterType: String
-
+```
+  [Filter](#cfn-ecr-replicationconfiguration-repositoryfilter-filter): {{String}}
+  [FilterType](#cfn-ecr-replicationconfiguration-repositoryfilter-filtertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecr-replicationconfiguration-repositoryfilter-properties"></a>
 
-`Filter`
+`Filter`  <a name="cfn-ecr-replicationconfiguration-repositoryfilter-filter"></a>
+The repository filter details. When the `PREFIX_MATCH` filter type is specified, this value is required and should be the repository name prefix to configure replication for.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?:[a-z0-9]+(?:[._-][a-z0-9]*)*/)*[a-z0-9]*(?:[._-][a-z0-9]*)*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The repository filter details. When the `PREFIX_MATCH` filter type is
-specified, this value is required and should be the repository name prefix to configure
-replication for.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?:[a-z0-9]+(?:[._-][a-z0-9]*)*/)*[a-z0-9]*(?:[._-][a-z0-9]*)*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterType`
-
-The repository filter type. The only supported value is `PREFIX_MATCH`,
-which is a repository name prefix specified with the `filter`
-parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PREFIX_MATCH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationRule
-
-AWS::ECR::Repository
+`FilterType`  <a name="cfn-ecr-replicationconfiguration-repositoryfilter-filtertype"></a>
+The repository filter type. The only supported value is `PREFIX_MATCH`, which is a repository name prefix specified with the `filter` parameter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PREFIX_MATCH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

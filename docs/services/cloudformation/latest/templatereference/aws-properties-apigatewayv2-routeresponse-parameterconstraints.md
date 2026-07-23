@@ -2,57 +2,45 @@
 title: "AWS::ApiGatewayV2::RouteResponse ParameterConstraints"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::RouteResponse ParameterConstraints
+<a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints"></a>
 
 Specifies whether the parameter is required.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints-syntax.json"></a>
 
-```json
-
+```
 {
-  "Required" : Boolean
+  "[Required](#cfn-apigatewayv2-routeresponse-parameterconstraints-required)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints-syntax.yaml"></a>
 
-```yaml
-
-  Required: Boolean
-
+```
+  [Required](#cfn-apigatewayv2-routeresponse-parameterconstraints-required): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints-properties"></a>
 
-`Required`
-
+`Required`  <a name="cfn-apigatewayv2-routeresponse-parameterconstraints-required"></a>
 Specifies whether the parameter is required.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [RouteResponses](../../../apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.md) in the _Amazon API_
-_Gateway Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGatewayV2::RouteResponse
-
-AWS::ApiGatewayV2::RoutingRule
+<a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints--seealso"></a>
++ [RouteResponses](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.html) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

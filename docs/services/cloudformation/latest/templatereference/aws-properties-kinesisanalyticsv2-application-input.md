@@ -2,139 +2,94 @@
 title: "AWS::KinesisAnalyticsV2::Application Input"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application Input
+<a name="aws-properties-kinesisanalyticsv2-application-input"></a>
 
-When you configure the application input for a SQL-based Kinesis Data Analytics application, you specify the streaming source, the in-application stream
-name that is created,
-and the mapping between the two.
+When you configure the application input for a SQL-based Kinesis Data Analytics application, you specify the streaming source, the in-application stream name that is created, and the mapping between the two.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-input-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-input-syntax.json"></a>
 
-```json
-
+```
 {
-  "InputParallelism" : InputParallelism,
-  "InputProcessingConfiguration" : InputProcessingConfiguration,
-  "InputSchema" : InputSchema,
-  "KinesisFirehoseInput" : KinesisFirehoseInput,
-  "KinesisStreamsInput" : KinesisStreamsInput,
-  "NamePrefix" : String
+  "[InputParallelism](#cfn-kinesisanalyticsv2-application-input-inputparallelism)" : {{InputParallelism}},
+  "[InputProcessingConfiguration](#cfn-kinesisanalyticsv2-application-input-inputprocessingconfiguration)" : {{InputProcessingConfiguration}},
+  "[InputSchema](#cfn-kinesisanalyticsv2-application-input-inputschema)" : {{InputSchema}},
+  "[KinesisFirehoseInput](#cfn-kinesisanalyticsv2-application-input-kinesisfirehoseinput)" : {{KinesisFirehoseInput}},
+  "[KinesisStreamsInput](#cfn-kinesisanalyticsv2-application-input-kinesisstreamsinput)" : {{KinesisStreamsInput}},
+  "[NamePrefix](#cfn-kinesisanalyticsv2-application-input-nameprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-input-syntax.yaml"></a>
 
-```yaml
-
-  InputParallelism:
-    InputParallelism
-  InputProcessingConfiguration:
-    InputProcessingConfiguration
-  InputSchema:
-    InputSchema
-  KinesisFirehoseInput:
-    KinesisFirehoseInput
-  KinesisStreamsInput:
-    KinesisStreamsInput
-  NamePrefix: String
-
+```
+  [InputParallelism](#cfn-kinesisanalyticsv2-application-input-inputparallelism): {{
+    InputParallelism}}
+  [InputProcessingConfiguration](#cfn-kinesisanalyticsv2-application-input-inputprocessingconfiguration): {{
+    InputProcessingConfiguration}}
+  [InputSchema](#cfn-kinesisanalyticsv2-application-input-inputschema): {{
+    InputSchema}}
+  [KinesisFirehoseInput](#cfn-kinesisanalyticsv2-application-input-kinesisfirehoseinput): {{
+    KinesisFirehoseInput}}
+  [KinesisStreamsInput](#cfn-kinesisanalyticsv2-application-input-kinesisstreamsinput): {{
+    KinesisStreamsInput}}
+  [NamePrefix](#cfn-kinesisanalyticsv2-application-input-nameprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-input-properties"></a>
 
-`InputParallelism`
-
+`InputParallelism`  <a name="cfn-kinesisanalyticsv2-application-input-inputparallelism"></a>
 Describes the number of in-application streams to create.
+*Required*: No
+*Type*: [InputParallelism](aws-properties-kinesisanalyticsv2-application-inputparallelism.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InputProcessingConfiguration`  <a name="cfn-kinesisanalyticsv2-application-input-inputprocessingconfiguration"></a>
+The [InputProcessingConfiguration](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputProcessingConfiguration.html) for the input. An input processor transforms records as they are received from the stream, before the application's SQL code executes. Currently, the only input processing configuration available is [InputLambdaProcessor](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputLambdaProcessor.html).
+*Required*: No
+*Type*: [InputProcessingConfiguration](aws-properties-kinesisanalyticsv2-application-inputprocessingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [InputParallelism](aws-properties-kinesisanalyticsv2-application-inputparallelism.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputProcessingConfiguration`
-
-The [InputProcessingConfiguration](../../../managed-flink/latest/apiv2/api-inputprocessingconfiguration.md) for the input. An input processor transforms
-records as they are received from the stream, before the application's SQL code
-executes. Currently, the only input processing configuration available is [InputLambdaProcessor](../../../managed-flink/latest/apiv2/api-inputlambdaprocessor.md).
-
-_Required_: No
-
-_Type_: [InputProcessingConfiguration](aws-properties-kinesisanalyticsv2-application-inputprocessingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputSchema`
-
-Describes the format of the data in the streaming source, and how each data element maps
-to corresponding columns in the in-application stream that is being created.
-
+`InputSchema`  <a name="cfn-kinesisanalyticsv2-application-input-inputschema"></a>
+Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.
 Also used to describe the format of the reference data source.
+*Required*: Yes
+*Type*: [InputSchema](aws-properties-kinesisanalyticsv2-application-inputschema.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [InputSchema](aws-properties-kinesisanalyticsv2-application-inputschema.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KinesisFirehoseInput`
-
+`KinesisFirehoseInput`  <a name="cfn-kinesisanalyticsv2-application-input-kinesisfirehoseinput"></a>
 If the streaming source is an Amazon Kinesis Data Firehose delivery stream, identifies the delivery stream's ARN.
+*Required*: No
+*Type*: [KinesisFirehoseInput](aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KinesisFirehoseInput](aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KinesisStreamsInput`
-
+`KinesisStreamsInput`  <a name="cfn-kinesisanalyticsv2-application-input-kinesisstreamsinput"></a>
 If the streaming source is an Amazon Kinesis data stream, identifies the stream's Amazon Resource Name (ARN).
+*Required*: No
+*Type*: [KinesisStreamsInput](aws-properties-kinesisanalyticsv2-application-kinesisstreamsinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KinesisStreamsInput](aws-properties-kinesisanalyticsv2-application-kinesisstreamsinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NamePrefix`
-
-The name prefix to use when creating an in-application stream. Suppose that you specify a
-prefix " `MyInApplicationStream`." Kinesis Data Analytics then creates one or more
-(as per the `InputParallelism` count you specified) in-application streams with the
-names " `MyInApplicationStream_001`," " `MyInApplicationStream_002`," and
-so on.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^-\s<>&]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`NamePrefix`  <a name="cfn-kinesisanalyticsv2-application-input-nameprefix"></a>
+The name prefix to use when creating an in-application stream. Suppose that you specify a prefix "`MyInApplicationStream`." Kinesis Data Analytics then creates one or more (as per the `InputParallelism` count you specified) in-application streams with the names "`MyInApplicationStream_001`," "`MyInApplicationStream_002`," and so on.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^-\s<>&]*$`
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Input](../../../managed-flink/latest/apiv2/api-input.md) in the
-_Amazon Kinesis Data Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GlueDataCatalogConfiguration
-
-InputLambdaProcessor
+<a name="aws-properties-kinesisanalyticsv2-application-input--seealso"></a>
++ [Input](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Input.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

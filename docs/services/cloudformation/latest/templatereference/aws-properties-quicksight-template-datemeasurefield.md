@@ -2,96 +2,70 @@
 title: "AWS::QuickSight::Template DateMeasureField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DateMeasureField
+<a name="aws-properties-quicksight-template-datemeasurefield"></a>
 
 The measure type field with date type columns.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-datemeasurefield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-datemeasurefield-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationFunction" : String,
-  "Column" : ColumnIdentifier,
-  "FieldId" : String,
-  "FormatConfiguration" : DateTimeFormatConfiguration
+  "[AggregationFunction](#cfn-quicksight-template-datemeasurefield-aggregationfunction)" : {{String}},
+  "[Column](#cfn-quicksight-template-datemeasurefield-column)" : {{ColumnIdentifier}},
+  "[FieldId](#cfn-quicksight-template-datemeasurefield-fieldid)" : {{String}},
+  "[FormatConfiguration](#cfn-quicksight-template-datemeasurefield-formatconfiguration)" : {{DateTimeFormatConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-datemeasurefield-syntax.yaml"></a>
 
-```yaml
-
-  AggregationFunction: String
-  Column:
-    ColumnIdentifier
-  FieldId: String
-  FormatConfiguration:
-    DateTimeFormatConfiguration
-
+```
+  [AggregationFunction](#cfn-quicksight-template-datemeasurefield-aggregationfunction): {{String}}
+  [Column](#cfn-quicksight-template-datemeasurefield-column): {{
+    ColumnIdentifier}}
+  [FieldId](#cfn-quicksight-template-datemeasurefield-fieldid): {{String}}
+  [FormatConfiguration](#cfn-quicksight-template-datemeasurefield-formatconfiguration): {{
+    DateTimeFormatConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-datemeasurefield-properties"></a>
 
-`AggregationFunction`
-
+`AggregationFunction`  <a name="cfn-quicksight-template-datemeasurefield-aggregationfunction"></a>
 The aggregation function of the measure field.
+*Required*: No
+*Type*: [String](aws-properties-quicksight-template-aggregationfunction.md)
+*Allowed values*: `COUNT | DISTINCT_COUNT | MIN | MAX`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [String](aws-properties-quicksight-template-aggregationfunction.md)
-
-_Allowed values_: `COUNT | DISTINCT_COUNT | MIN | MAX`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-datemeasurefield-column"></a>
 The column that is used in the `DateMeasureField`.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-datemeasurefield-fieldid"></a>
 The custom field ID.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FormatConfiguration`
-
+`FormatConfiguration`  <a name="cfn-quicksight-template-datemeasurefield-formatconfiguration"></a>
 The format configuration of the field.
-
-_Required_: No
-
-_Type_: [DateTimeFormatConfiguration](aws-properties-quicksight-template-datetimeformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateDimensionField
-
-DateTimeDefaultValues
+*Required*: No
+*Type*: [DateTimeFormatConfiguration](aws-properties-quicksight-template-datetimeformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,157 +2,122 @@
 title: "AWS::Kinesis::StreamConsumer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kinesis::StreamConsumer
+<a name="aws-resource-kinesis-streamconsumer"></a>
 
-Use the AWS CloudFormation
-`AWS::Kinesis::StreamConsumer` resource to register a consumer with a
-Kinesis data stream. The consumer you register can then call [SubscribeToShard](../../../../reference/kinesis/latest/apireference/api-subscribetoshard.md)
-to receive data from the stream using enhanced fan-out, at a rate of up to 2 MiB per
-second for every shard you subscribe to. This rate is unaffected by the total number of
-consumers that read from the same stream.
+Use the AWS CloudFormation `AWS::Kinesis::StreamConsumer` resource to register a consumer with a Kinesis data stream. The consumer you register can then call [SubscribeToShard](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html) to receive data from the stream using enhanced fan-out, at a rate of up to 2 MiB per second for every shard you subscribe to. This rate is unaffected by the total number of consumers that read from the same stream.
 
-You can register up to 20 consumers per stream. However, you can request a limit
-increase using the [Kinesis Data Streams limits\
-form](https://console.aws.amazon.com/support/v1?). A given consumer can only be registered with one stream at a time.
+You can register up to 20 consumers per stream. However, you can request a limit increase using the [Kinesis Data Streams limits form](https://console.aws.amazon.com/support/v1?#/). A given consumer can only be registered with one stream at a time.
 
-For more information, see [Using Consumers\
-with Enhanced Fan-Out](../../../streams/latest/dev/introduction-to-enhanced-consumers.md).
+For more information, see [Using Consumers with Enhanced Fan-Out](https://docs.aws.amazon.com/streams/latest/dev/introduction-to-enhanced-consumers.html).
 
 ## Syntax
+<a name="aws-resource-kinesis-streamconsumer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kinesis-streamconsumer-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Kinesis::StreamConsumer",
   "Properties" : {
-      "ConsumerName" : String,
-      "StreamARN" : String,
-      "Tags" : [ Tag, ... ]
+      "[ConsumerName](#cfn-kinesis-streamconsumer-consumername)" : {{String}},
+      "[StreamARN](#cfn-kinesis-streamconsumer-streamarn)" : {{String}},
+      "[Tags](#cfn-kinesis-streamconsumer-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kinesis-streamconsumer-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Kinesis::StreamConsumer
 Properties:
-  ConsumerName: String
-  StreamARN: String
-  Tags:
-    - Tag
-
+  [ConsumerName](#cfn-kinesis-streamconsumer-consumername): {{String}}
+  [StreamARN](#cfn-kinesis-streamconsumer-streamarn): {{String}}
+  [Tags](#cfn-kinesis-streamconsumer-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-kinesis-streamconsumer-properties"></a>
 
-`ConsumerName`
+`ConsumerName`  <a name="cfn-kinesis-streamconsumer-consumername"></a>
+The name of the consumer is something you choose when you register the consumer.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The name of the consumer is something you choose when you register the
-consumer.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StreamARN`
-
+`StreamARN`  <a name="cfn-kinesis-streamconsumer-streamarn"></a>
 The ARN of the stream with which you registered the consumer.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws.*:kinesis:.*:\d{12}:stream/\S+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws.*:kinesis:.*:\d{12}:stream/\S+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-kinesis-streamconsumer-tags"></a>
 An array of tags to be added to a specified Kinesis resource. A tag consists of a required key and an optional value. You can specify up to 50 tag key-value pairs.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kinesis-streamconsumer-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kinesis-streamconsumer-tag.md)
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-kinesis-streamconsumer-return-values"></a>
 
 ### Ref
+<a name="aws-resource-kinesis-streamconsumer-return-values-ref"></a>
 
-When you pass the logical ID of an `AWS::Kinesis::StreamConsumer`
-resource to the intrinsic Ref function, the function returns the consumer ARN. For
-example ARN formats, see [Example\
-ARNs](../../../../general/latest/gr/aws-arns-and-namespaces.md#arns-syntax).
+When you pass the logical ID of an `AWS::Kinesis::StreamConsumer` resource to the intrinsic Ref function, the function returns the consumer ARN. For example ARN formats, see [Example ARNs](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arns-syntax).
 
-For more information about using the Ref function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-kinesis-streamconsumer-return-values-fn--getatt"></a>
 
-`Fn::GetAtt` returns a value for a specified attribute of this type. The
-following are the available attributes and sample return values.
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using Fn::GetAtt, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+For more information about using Fn::GetAtt, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`ConsumerARN`
+####
+<a name="aws-resource-kinesis-streamconsumer-return-values-fn--getatt-fn--getatt"></a>
 
-When you register a consumer, Kinesis Data Streams generates an ARN for it. You
-need this ARN to be able to call [SubscribeToShard](../../../../reference/kinesis/latest/apireference/api-subscribetoshard.md).
+`ConsumerARN`  <a name="ConsumerARN-fn::getatt"></a>
+When you register a consumer, Kinesis Data Streams generates an ARN for it. You need this ARN to be able to call [SubscribeToShard](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html).
+If you delete a consumer and then create a new one with the same name, it won't have the same ARN. That's because consumer ARNs contain the creation timestamp. This is important to keep in mind if you have IAM policies that reference consumer ARNs.
 
-If you delete a consumer and then create a new one with the same name, it won't
-have the same ARN. That's because consumer ARNs contain the creation timestamp. This is
-important to keep in mind if you have IAM policies that reference consumer ARNs.
-
-`ConsumerCreationTimestamp`
-
+`ConsumerCreationTimestamp`  <a name="ConsumerCreationTimestamp-fn::getatt"></a>
 The time at which the consumer was created.
 
-`ConsumerName`
-
+`ConsumerName`  <a name="ConsumerName-fn::getatt"></a>
 The name you gave the consumer when you registered it.
 
-`ConsumerStatus`
+`ConsumerStatus`  <a name="ConsumerStatus-fn::getatt"></a>
+A consumer can't read data while in the `CREATING` or `DELETING` states.
 
-A consumer can't read data while in the `CREATING` or
-`DELETING` states.
-
-`StreamARN`
-
+`StreamARN`  <a name="StreamARN-fn::getatt"></a>
 The ARN of the data stream with which the consumer is registered.
 
 ## Examples
+<a name="aws-resource-kinesis-streamconsumer--examples"></a>
 
 ### Register a Consumer with a Kinesis Data Stream
+<a name="aws-resource-kinesis-streamconsumer--examples--Register_a_Consumer_with_a_Kinesis_Data_Stream"></a>
 
 #### JSON
+<a name="aws-resource-kinesis-streamconsumer--examples--Register_a_Consumer_with_a_Kinesis_Data_Stream--json"></a>
 
-```json
-
+```
 {
     "Parameters": {
         "TestStreamARN": {
@@ -172,9 +137,9 @@ The ARN of the data stream with which the consumer is registered.
 ```
 
 #### YAML
+<a name="aws-resource-kinesis-streamconsumer--examples--Register_a_Consumer_with_a_Kinesis_Data_Stream--yaml"></a>
 
-```yaml
-
+```
     Parameters:
         TestStreamARN:
             Type: String
@@ -187,11 +152,5 @@ The ARN of the data stream with which the consumer is registered.
             StreamARN: !Ref TestStreamARN
             ConsumerName: !Ref TestConsumerName
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WarmThroughputObject
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

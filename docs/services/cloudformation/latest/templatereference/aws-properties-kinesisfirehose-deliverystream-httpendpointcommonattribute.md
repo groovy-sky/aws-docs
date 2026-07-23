@@ -2,74 +2,53 @@
 title: "AWS::KinesisFirehose::DeliveryStream HttpEndpointCommonAttribute"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream HttpEndpointCommonAttribute
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute"></a>
 
-Describes the metadata that's delivered to the specified HTTP endpoint destination.
-Kinesis Firehose supports any custom HTTP endpoint or HTTP endpoints owned by supported
-third-party service providers, including Datadog, MongoDB, and New Relic.
+Describes the metadata that's delivered to the specified HTTP endpoint destination. Kinesis Firehose supports any custom HTTP endpoint or HTTP endpoints owned by supported third-party service providers, including Datadog, MongoDB, and New Relic.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttributeName" : String,
-  "AttributeValue" : String
+  "[AttributeName](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributename)" : {{String}},
+  "[AttributeValue](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributevalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute-syntax.yaml"></a>
 
-```yaml
-
-  AttributeName: String
-  AttributeValue: String
-
+```
+  [AttributeName](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributename): {{String}}
+  [AttributeValue](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributevalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute-properties"></a>
 
-`AttributeName`
-
+`AttributeName`  <a name="cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributename"></a>
 The name of the HTTP endpoint common attribute.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AttributeValue`
-
+`AttributeValue`  <a name="cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributevalue"></a>
 The value of the HTTP endpoint common attribute.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HiveJsonSerDe
-
-HttpEndpointConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,54 @@
 title: "AWS::AccessAnalyzer::Analyzer ArchiveRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccessAnalyzer::Analyzer ArchiveRule
+<a name="aws-properties-accessanalyzer-analyzer-archiverule"></a>
 
-Contains information about an archive rule. Archive rules automatically archive new
-findings that meet the criteria you define when you create the rule.
+Contains information about an archive rule. Archive rules automatically archive new findings that meet the criteria you define when you create the rule.
 
 ## Syntax
+<a name="aws-properties-accessanalyzer-analyzer-archiverule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-accessanalyzer-analyzer-archiverule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Filter" : [ Filter, ... ],
-  "RuleName" : String
+  "[Filter](#cfn-accessanalyzer-analyzer-archiverule-filter)" : {{[ Filter, ... ]}},
+  "[RuleName](#cfn-accessanalyzer-analyzer-archiverule-rulename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-accessanalyzer-analyzer-archiverule-syntax.yaml"></a>
 
-```yaml
-
-  Filter:
-    - Filter
-  RuleName: String
-
+```
+  [Filter](#cfn-accessanalyzer-analyzer-archiverule-filter): {{
+    - Filter}}
+  [RuleName](#cfn-accessanalyzer-analyzer-archiverule-rulename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-accessanalyzer-analyzer-archiverule-properties"></a>
 
-`Filter`
-
+`Filter`  <a name="cfn-accessanalyzer-analyzer-archiverule-filter"></a>
 The criteria for the rule.
+*Required*: Yes
+*Type*: [Array](aws-properties-accessanalyzer-analyzer-filter.md) of [Filter](aws-properties-accessanalyzer-analyzer-filter.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Array](aws-properties-accessanalyzer-analyzer-filter.md) of [Filter](aws-properties-accessanalyzer-analyzer-filter.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleName`
-
+`RuleName`  <a name="cfn-accessanalyzer-analyzer-archiverule-rulename"></a>
 The name of the rule to create.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-Za-z][A-Za-z0-9_.-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalyzerConfiguration
-
-Filter
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Za-z][A-Za-z0-9_.-]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

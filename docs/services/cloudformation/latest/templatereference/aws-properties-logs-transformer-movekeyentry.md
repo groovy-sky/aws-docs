@@ -2,81 +2,59 @@
 title: "AWS::Logs::Transformer MoveKeyEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer MoveKeyEntry
+<a name="aws-properties-logs-transformer-movekeyentry"></a>
 
-This object defines one key that will be moved with the [moveKey](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md#CloudWatch-Logs-Transformation-moveKey) processor.
+This object defines one key that will be moved with the [ moveKey](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-moveKey) processor.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-movekeyentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-movekeyentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "OverwriteIfExists" : Boolean,
-  "Source" : String,
-  "Target" : String
+  "[OverwriteIfExists](#cfn-logs-transformer-movekeyentry-overwriteifexists)" : {{Boolean}},
+  "[Source](#cfn-logs-transformer-movekeyentry-source)" : {{String}},
+  "[Target](#cfn-logs-transformer-movekeyentry-target)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-movekeyentry-syntax.yaml"></a>
 
-```yaml
-
-  OverwriteIfExists: Boolean
-  Source: String
-  Target: String
-
+```
+  [OverwriteIfExists](#cfn-logs-transformer-movekeyentry-overwriteifexists): {{Boolean}}
+  [Source](#cfn-logs-transformer-movekeyentry-source): {{String}}
+  [Target](#cfn-logs-transformer-movekeyentry-target): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-movekeyentry-properties"></a>
 
-`OverwriteIfExists`
+`OverwriteIfExists`  <a name="cfn-logs-transformer-movekeyentry-overwriteifexists"></a>
+Specifies whether to overwrite the value if the destination key already exists. If you omit this, the default is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies whether to overwrite the value if the destination key already exists. If you
-omit this, the default is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-logs-transformer-movekeyentry-source"></a>
 The key to move.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^.*[a-zA-Z0-9]+.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^.*[a-zA-Z0-9]+.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
+`Target`  <a name="cfn-logs-transformer-movekeyentry-target"></a>
 The key to move to.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^.*[a-zA-Z0-9]+.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LowerCaseString
-
-MoveKeys
+*Required*: Yes
+*Type*: String
+*Pattern*: `^.*[a-zA-Z0-9]+.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

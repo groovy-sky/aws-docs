@@ -2,100 +2,69 @@
 title: "AWS::Cases::CaseRule OperandTwo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::CaseRule OperandTwo
+<a name="aws-properties-cases-caserule-operandtwo"></a>
 
-Represents the right hand operand in the condition. In the Amazon Connect admin website, case rules are known as _case field conditions_.
-For more
-information about case field conditions, see [Add case field conditions to a\
-case template](../../../connect/latest/adminguide/case-field-conditions.md).
+Represents the right hand operand in the condition. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
 
 ## Syntax
+<a name="aws-properties-cases-caserule-operandtwo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-caserule-operandtwo-syntax.json"></a>
 
-```json
-
+```
 {
-  "BooleanValue" : Boolean,
-  "DoubleValue" : Number,
-  "EmptyValue" : Json,
-  "StringValue" : String
+  "[BooleanValue](#cfn-cases-caserule-operandtwo-booleanvalue)" : {{Boolean}},
+  "[DoubleValue](#cfn-cases-caserule-operandtwo-doublevalue)" : {{Number}},
+  "[EmptyValue](#cfn-cases-caserule-operandtwo-emptyvalue)" : {{Json}},
+  "[StringValue](#cfn-cases-caserule-operandtwo-stringvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-caserule-operandtwo-syntax.yaml"></a>
 
-```yaml
-
-  BooleanValue:
-    Boolean
-  DoubleValue: Number
-  EmptyValue: Json
-  StringValue:
-    String
-
+```
+  [BooleanValue](#cfn-cases-caserule-operandtwo-booleanvalue): {{
+    Boolean}}
+  [DoubleValue](#cfn-cases-caserule-operandtwo-doublevalue): {{Number}}
+  [EmptyValue](#cfn-cases-caserule-operandtwo-emptyvalue): {{Json}}
+  [StringValue](#cfn-cases-caserule-operandtwo-stringvalue): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-caserule-operandtwo-properties"></a>
 
-`BooleanValue`
-
+`BooleanValue`  <a name="cfn-cases-caserule-operandtwo-booleanvalue"></a>
 Boolean value type.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DoubleValue`
-
+`DoubleValue`  <a name="cfn-cases-caserule-operandtwo-doublevalue"></a>
 Double value type.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EmptyValue`  <a name="cfn-cases-caserule-operandtwo-emptyvalue"></a>
+Represents an empty operand value. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EmptyValue`
-
-Represents an empty operand value. In the Amazon Connect admin website, case rules are known as _case field conditions_.
-For more
-information about case field conditions, see [Add case field conditions to a\
-case template](../../../connect/latest/adminguide/case-field-conditions.md).
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringValue`
-
+`StringValue`  <a name="cfn-cases-caserule-operandtwo-stringvalue"></a>
 String value type.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OperandOne
-
-RequiredCaseRule
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

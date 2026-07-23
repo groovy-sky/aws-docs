@@ -2,57 +2,43 @@
 title: "AWS::ECS::TaskSet NetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskSet NetworkConfiguration
+<a name="aws-properties-ecs-taskset-networkconfiguration"></a>
 
 The network configuration for a task or service.
 
 ## Syntax
+<a name="aws-properties-ecs-taskset-networkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskset-networkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsVpcConfiguration" : AwsVpcConfiguration
+  "[AwsVpcConfiguration](#cfn-ecs-taskset-networkconfiguration-awsvpcconfiguration)" : {{AwsVpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskset-networkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AwsVpcConfiguration:
-    AwsVpcConfiguration
-
+```
+  [AwsVpcConfiguration](#cfn-ecs-taskset-networkconfiguration-awsvpcconfiguration): {{
+    AwsVpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskset-networkconfiguration-properties"></a>
 
-`AwsVpcConfiguration`
-
+`AwsVpcConfiguration`  <a name="cfn-ecs-taskset-networkconfiguration-awsvpcconfiguration"></a>
 The VPC subnets and security groups that are associated with a task.
-
-###### Note
-
 All specified subnets and security groups must be from the same VPC.
-
-_Required_: No
-
-_Type_: [AwsVpcConfiguration](aws-properties-ecs-taskset-awsvpcconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoadBalancer
-
-Scale
+*Required*: No
+*Type*: [AwsVpcConfiguration](aws-properties-ecs-taskset-awsvpcconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

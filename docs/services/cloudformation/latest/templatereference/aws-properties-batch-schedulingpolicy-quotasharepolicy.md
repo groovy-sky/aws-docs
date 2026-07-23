@@ -2,55 +2,42 @@
 title: "AWS::Batch::SchedulingPolicy QuotaSharePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::SchedulingPolicy QuotaSharePolicy
+<a name="aws-properties-batch-schedulingpolicy-quotasharepolicy"></a>
 
 The quota share scheduling policy details for a job queue.
 
 ## Syntax
+<a name="aws-properties-batch-schedulingpolicy-quotasharepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-schedulingpolicy-quotasharepolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdleResourceAssignmentStrategy" : String
+  "[IdleResourceAssignmentStrategy](#cfn-batch-schedulingpolicy-quotasharepolicy-idleresourceassignmentstrategy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-schedulingpolicy-quotasharepolicy-syntax.yaml"></a>
 
-```yaml
-
-  IdleResourceAssignmentStrategy: String
-
+```
+  [IdleResourceAssignmentStrategy](#cfn-batch-schedulingpolicy-quotasharepolicy-idleresourceassignmentstrategy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-schedulingpolicy-quotasharepolicy-properties"></a>
 
-`IdleResourceAssignmentStrategy`
-
-The strategy that determines how idle resources are assigned to quota shares
-that are borrowing capacity. Currently, only `FIFO` is supported.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FIFO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FairsharePolicy
-
-ShareAttributes
+`IdleResourceAssignmentStrategy`  <a name="cfn-batch-schedulingpolicy-quotasharepolicy-idleresourceassignmentstrategy"></a>
+The strategy that determines how idle resources are assigned to quota shares that are borrowing capacity. Currently, only `FIFO` is supported.
+*Required*: No
+*Type*: String
+*Allowed values*: `FIFO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

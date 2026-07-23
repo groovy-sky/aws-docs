@@ -2,83 +2,57 @@
 title: "AWS::AppStream::Entitlement Attribute"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Entitlement Attribute
+<a name="aws-properties-appstream-entitlement-attribute"></a>
 
-An attribute that belongs to an entitlement. Application entitlements work by matching a
-supported SAML 2.0 attribute name to a value when a user identity federates to an AppStream
-2.0 SAML application.
+An attribute that belongs to an entitlement. Application entitlements work by matching a supported SAML 2.0 attribute name to a value when a user identity federates to an AppStream 2.0 SAML application.
 
 ## Syntax
+<a name="aws-properties-appstream-entitlement-attribute-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-entitlement-attribute-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-appstream-entitlement-attribute-name)" : {{String}},
+  "[Value](#cfn-appstream-entitlement-attribute-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-entitlement-attribute-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-appstream-entitlement-attribute-name): {{String}}
+  [Value](#cfn-appstream-entitlement-attribute-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-entitlement-attribute-properties"></a>
 
-`Name`
-
-A supported AWS IAM SAML PrincipalTag attribute that is matched to a value when a user
-identity federates to an WorkSpaces Applications SAML application.
-
+`Name`  <a name="cfn-appstream-entitlement-attribute-name"></a>
+A supported AWS IAM SAML PrincipalTag attribute that is matched to a value when a user identity federates to an WorkSpaces Applications SAML application.
 The following are supported values:
++ roles
++ department
++ organization
++ groups
++ title
++ costCenter
++ userType
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- roles
-
-- department
-
-- organization
-
-- groups
-
-- title
-
-- costCenter
-
-- userType
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-appstream-entitlement-attribute-value"></a>
 A value that is matched to a supported SAML attribute name when a user identity federates to an WorkSpaces Applications SAML application.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppStream::Entitlement
-
-AWS::AppStream::Fleet
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

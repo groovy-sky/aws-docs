@@ -2,54 +2,42 @@
 title: "AWS::Lambda::Function SnapStart"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Function SnapStart
+<a name="aws-properties-lambda-function-snapstart"></a>
 
-The function's [AWS Lambda SnapStart](../../../lambda/latest/dg/snapstart.md) setting.
+The function's [AWS Lambda SnapStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) setting.
 
 ## Syntax
+<a name="aws-properties-lambda-function-snapstart-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-function-snapstart-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplyOn" : String
+  "[ApplyOn](#cfn-lambda-function-snapstart-applyon)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-function-snapstart-syntax.yaml"></a>
 
-```yaml
-
-  ApplyOn: String
-
+```
+  [ApplyOn](#cfn-lambda-function-snapstart-applyon): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-function-snapstart-properties"></a>
 
-`ApplyOn`
-
+`ApplyOn`  <a name="cfn-lambda-function-snapstart-applyon"></a>
 Set `ApplyOn` to `PublishedVersions` to create a snapshot of the initialized execution environment when you publish a function version.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PublishedVersions | None`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuntimeManagementConfig
-
-SnapStartResponse
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PublishedVersions | None`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

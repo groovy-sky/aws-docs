@@ -2,132 +2,113 @@
 title: "AWS::Personalize::Schema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Schema
+<a name="aws-resource-personalize-schema"></a>
 
-Creates an Amazon Personalize schema from the specified schema string. The schema you create
-must be in Avro JSON format.
+Creates an Amazon Personalize schema from the specified schema string. The schema you create must be in Avro JSON format.
 
-Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset
-type and has a set of required field and keywords. If you are creating a schema for a dataset in a Domain dataset group, you
-provide the domain of the Domain dataset group.
-You specify a schema when you call [CreateDataset](../../../personalize/latest/dg/api-createdataset.md).
+Amazon Personalize recognizes three schema variants. Each schema is associated with a dataset type and has a set of required field and keywords. If you are creating a schema for a dataset in a Domain dataset group, you provide the domain of the Domain dataset group. You specify a schema when you call [CreateDataset](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDataset.html).
 
-For more information on schemas, see
-[Datasets and schemas](../../../personalize/latest/dg/how-it-works-dataset-schema.md).
+For more information on schemas, see [Datasets and schemas](https://docs.aws.amazon.com/personalize/latest/dg/how-it-works-dataset-schema.html).
 
-###### Related APIs
-
-- [ListSchemas](../../../personalize/latest/dg/api-listschemas.md)
-
-- [DescribeSchema](../../../personalize/latest/dg/api-describeschema.md)
-
-- [DeleteSchema](../../../personalize/latest/dg/api-deleteschema.md)
+**Related APIs**
++  [ListSchemas](https://docs.aws.amazon.com/personalize/latest/dg/API_ListSchemas.html)
++  [DescribeSchema](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSchema.html)
++  [DeleteSchema](https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteSchema.html)
 
 ## Syntax
+<a name="aws-resource-personalize-schema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-personalize-schema-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Personalize::Schema",
   "Properties" : {
-      "Domain" : String,
-      "Name" : String,
-      "Schema" : String
+      "[Domain](#cfn-personalize-schema-domain)" : {{String}},
+      "[Name](#cfn-personalize-schema-name)" : {{String}},
+      "[Schema](#cfn-personalize-schema-schema)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-personalize-schema-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Personalize::Schema
 Properties:
-  Domain: String
-  Name: String
-  Schema: String
-
+  [Domain](#cfn-personalize-schema-domain): {{String}}
+  [Name](#cfn-personalize-schema-name): {{String}}
+  [Schema](#cfn-personalize-schema-schema): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-personalize-schema-properties"></a>
 
-`Domain`
-
+`Domain`  <a name="cfn-personalize-schema-domain"></a>
 The domain of a schema that you created for a dataset in a Domain dataset group.
+*Required*: No
+*Type*: String
+*Allowed values*: `ECOMMERCE | VIDEO_ON_DEMAND`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ECOMMERCE | VIDEO_ON_DEMAND`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-personalize-schema-name"></a>
 The name of the schema.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Schema`
-
+`Schema`  <a name="cfn-personalize-schema-schema"></a>
 The schema.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `10000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Maximum*: `10000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-personalize-schema-return-values"></a>
 
 ### Ref
+<a name="aws-resource-personalize-schema-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the resource.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-personalize-schema-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`SchemaArn`
+####
+<a name="aws-resource-personalize-schema-return-values-fn--getatt-fn--getatt"></a>
 
+`SchemaArn`  <a name="SchemaArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the schema.
 
 ## Examples
+<a name="aws-resource-personalize-schema--examples"></a>
 
 ### Creating a schema
+<a name="aws-resource-personalize-schema--examples--Creating_a_schema"></a>
 
 The following example creates an Amazon Personalize schema for an Interactions dataset.
 
 #### JSON
+<a name="aws-resource-personalize-schema--examples--Creating_a_schema--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -143,9 +124,9 @@ The following example creates an Amazon Personalize schema for an Interactions d
 ```
 
 #### YAML
+<a name="aws-resource-personalize-schema--examples--Creating_a_schema--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MySchema:
@@ -158,11 +139,5 @@ Resources:
         "type": "string" }, { "name": "ITEM_ID", "type": "string" }, { "name":
         "TIMESTAMP", "type": "long"}], "version": "1.0"}
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Personalize::DatasetGroup
-
-AWS::Personalize::Solution
 
 All content copied from https://docs.aws.amazon.com/.

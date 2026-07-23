@@ -2,87 +2,61 @@
 title: "AWS::AutoScaling::ScalingPolicy Metric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::ScalingPolicy Metric
+<a name="aws-properties-autoscaling-scalingpolicy-metric"></a>
 
 Represents a specific metric.
 
-`Metric` is a property of the [AWS::AutoScaling::ScalingPolicy MetricStat](../userguide/aws-properties-autoscaling-scalingpolicy-metricstat.md) property type.
+`Metric` is a property of the [AWS::AutoScaling::ScalingPolicy MetricStat](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-metricstat.html) property type.
 
 ## Syntax
+<a name="aws-properties-autoscaling-scalingpolicy-metric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-scalingpolicy-metric-syntax.json"></a>
 
-```json
-
+```
 {
-  "Dimensions" : [ MetricDimension, ... ],
-  "MetricName" : String,
-  "Namespace" : String
+  "[Dimensions](#cfn-autoscaling-scalingpolicy-metric-dimensions)" : {{[ MetricDimension, ... ]}},
+  "[MetricName](#cfn-autoscaling-scalingpolicy-metric-metricname)" : {{String}},
+  "[Namespace](#cfn-autoscaling-scalingpolicy-metric-namespace)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-scalingpolicy-metric-syntax.yaml"></a>
 
-```yaml
-
-  Dimensions:
-    - MetricDimension
-  MetricName: String
-  Namespace: String
-
+```
+  [Dimensions](#cfn-autoscaling-scalingpolicy-metric-dimensions): {{
+    - MetricDimension}}
+  [MetricName](#cfn-autoscaling-scalingpolicy-metric-metricname): {{String}}
+  [Namespace](#cfn-autoscaling-scalingpolicy-metric-namespace): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-scalingpolicy-metric-properties"></a>
 
-`Dimensions`
+`Dimensions`  <a name="cfn-autoscaling-scalingpolicy-metric-dimensions"></a>
+The dimensions for the metric. For the list of available dimensions, see the AWS documentation available from the table in [AWS services that publish CloudWatch metrics ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the *Amazon CloudWatch User Guide*.
+Conditional: If you published your metric with dimensions, you must specify the same dimensions in your scaling policy.
+*Required*: No
+*Type*: Array of [MetricDimension](aws-properties-autoscaling-scalingpolicy-metricdimension.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The dimensions for the metric. For the list of available dimensions, see the AWS
-documentation available from the table in [AWS\
-services that publish CloudWatch metrics](../../../amazoncloudwatch/latest/monitoring/aws-services-cloudwatch-metrics.md) in the _Amazon CloudWatch User_
-_Guide_.
-
-Conditional: If you published your metric with dimensions, you must specify the same
-dimensions in your scaling policy.
-
-_Required_: No
-
-_Type_: Array of [MetricDimension](aws-properties-autoscaling-scalingpolicy-metricdimension.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricName`
-
+`MetricName`  <a name="cfn-autoscaling-scalingpolicy-metric-metricname"></a>
 The name of the metric.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespace`
-
-The namespace of the metric. For more information, see the table in [AWS\
-services that publish CloudWatch metrics](../../../amazoncloudwatch/latest/monitoring/aws-services-cloudwatch-metrics.md) in the _Amazon CloudWatch User_
-_Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomizedMetricSpecification
-
-MetricDataQuery
+`Namespace`  <a name="cfn-autoscaling-scalingpolicy-metric-namespace"></a>
+The namespace of the metric. For more information, see the table in [AWS services that publish CloudWatch metrics ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the *Amazon CloudWatch User Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

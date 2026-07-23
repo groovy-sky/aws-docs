@@ -2,57 +2,43 @@
 title: "AWS::ElementalInference::Feed ClippingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElementalInference::Feed ClippingConfig
+<a name="aws-properties-elementalinference-feed-clippingconfig"></a>
 
 A type of OutputConfig, used when the output in a feed is for the clip feature.
 
 ## Syntax
+<a name="aws-properties-elementalinference-feed-clippingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elementalinference-feed-clippingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CallbackMetadata" : String
+  "[CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elementalinference-feed-clippingconfig-syntax.yaml"></a>
 
-```yaml
-
-  CallbackMetadata: String
-
+```
+  [CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elementalinference-feed-clippingconfig-properties"></a>
 
-`CallbackMetadata`
-
-Metadata that you want to include in the event that Elemental Inference sends to Amazon EventBridge.
-The metadata can help you distinguish between different events.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\w \-\.',@:;]*$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ElementalInference::Feed
-
-GetOutput
+`CallbackMetadata`  <a name="cfn-elementalinference-feed-clippingconfig-callbackmetadata"></a>
+Metadata that you want to include in the event that Elemental Inference sends to Amazon EventBridge. The metadata can help you distinguish between different events.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\w \-\.',@:;]*$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,57 +2,43 @@
 title: "AWS::AutoScaling::WarmPool InstanceReusePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::WarmPool InstanceReusePolicy
+<a name="aws-properties-autoscaling-warmpool-instancereusepolicy"></a>
 
-A structure that specifies an instance reuse policy for the
-`InstanceReusePolicy` property of the [AWS::AutoScaling::WarmPool](../userguide/aws-resource-autoscaling-warmpool.md) resource.
+A structure that specifies an instance reuse policy for the `InstanceReusePolicy` property of the [AWS::AutoScaling::WarmPool](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-warmpool.html) resource.
 
-For more information, see [Warm pools for Amazon EC2\
-Auto Scaling](../../../autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.md) in the _Amazon EC2 Auto Scaling User Guide_.
+For more information, see [Warm pools for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 ## Syntax
+<a name="aws-properties-autoscaling-warmpool-instancereusepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-warmpool-instancereusepolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReuseOnScaleIn" : Boolean
+  "[ReuseOnScaleIn](#cfn-autoscaling-warmpool-instancereusepolicy-reuseonscalein)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-warmpool-instancereusepolicy-syntax.yaml"></a>
 
-```yaml
-
-  ReuseOnScaleIn: Boolean
-
+```
+  [ReuseOnScaleIn](#cfn-autoscaling-warmpool-instancereusepolicy-reuseonscalein): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-warmpool-instancereusepolicy-properties"></a>
 
-`ReuseOnScaleIn`
-
-Specifies whether instances in the Auto Scaling group can be returned to the warm pool on
-scale in.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AutoScaling::WarmPool
-
-Next
+`ReuseOnScaleIn`  <a name="cfn-autoscaling-warmpool-instancereusepolicy-reuseonscalein"></a>
+Specifies whether instances in the Auto Scaling group can be returned to the warm pool on scale in.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

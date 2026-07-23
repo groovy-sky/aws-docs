@@ -2,80 +2,60 @@
 title: "AWS::QuickSight::Analysis DefaultNewSheetConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DefaultNewSheetConfiguration
+<a name="aws-properties-quicksight-analysis-defaultnewsheetconfiguration"></a>
 
 The configuration for default new sheet settings.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-defaultnewsheetconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-defaultnewsheetconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InteractiveLayoutConfiguration" : DefaultInteractiveLayoutConfiguration,
-  "PaginatedLayoutConfiguration" : DefaultPaginatedLayoutConfiguration,
-  "SheetContentType" : String
+  "[InteractiveLayoutConfiguration](#cfn-quicksight-analysis-defaultnewsheetconfiguration-interactivelayoutconfiguration)" : {{DefaultInteractiveLayoutConfiguration}},
+  "[PaginatedLayoutConfiguration](#cfn-quicksight-analysis-defaultnewsheetconfiguration-paginatedlayoutconfiguration)" : {{DefaultPaginatedLayoutConfiguration}},
+  "[SheetContentType](#cfn-quicksight-analysis-defaultnewsheetconfiguration-sheetcontenttype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-defaultnewsheetconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InteractiveLayoutConfiguration:
-    DefaultInteractiveLayoutConfiguration
-  PaginatedLayoutConfiguration:
-    DefaultPaginatedLayoutConfiguration
-  SheetContentType: String
-
+```
+  [InteractiveLayoutConfiguration](#cfn-quicksight-analysis-defaultnewsheetconfiguration-interactivelayoutconfiguration): {{
+    DefaultInteractiveLayoutConfiguration}}
+  [PaginatedLayoutConfiguration](#cfn-quicksight-analysis-defaultnewsheetconfiguration-paginatedlayoutconfiguration): {{
+    DefaultPaginatedLayoutConfiguration}}
+  [SheetContentType](#cfn-quicksight-analysis-defaultnewsheetconfiguration-sheetcontenttype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-defaultnewsheetconfiguration-properties"></a>
 
-`InteractiveLayoutConfiguration`
-
+`InteractiveLayoutConfiguration`  <a name="cfn-quicksight-analysis-defaultnewsheetconfiguration-interactivelayoutconfiguration"></a>
 The options that determine the default settings for interactive layout configuration.
+*Required*: No
+*Type*: [DefaultInteractiveLayoutConfiguration](aws-properties-quicksight-analysis-defaultinteractivelayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultInteractiveLayoutConfiguration](aws-properties-quicksight-analysis-defaultinteractivelayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PaginatedLayoutConfiguration`
-
+`PaginatedLayoutConfiguration`  <a name="cfn-quicksight-analysis-defaultnewsheetconfiguration-paginatedlayoutconfiguration"></a>
 The options that determine the default settings for a paginated layout configuration.
+*Required*: No
+*Type*: [DefaultPaginatedLayoutConfiguration](aws-properties-quicksight-analysis-defaultpaginatedlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultPaginatedLayoutConfiguration](aws-properties-quicksight-analysis-defaultpaginatedlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetContentType`
-
+`SheetContentType`  <a name="cfn-quicksight-analysis-defaultnewsheetconfiguration-sheetcontenttype"></a>
 The option that determines the sheet content type.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PAGINATED | INTERACTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultInteractiveLayoutConfiguration
-
-DefaultPaginatedLayoutConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `PAGINATED | INTERACTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

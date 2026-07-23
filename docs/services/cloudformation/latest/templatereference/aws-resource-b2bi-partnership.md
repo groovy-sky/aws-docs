@@ -2,192 +2,139 @@
 title: "AWS::B2BI::Partnership"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Partnership
+<a name="aws-resource-b2bi-partnership"></a>
 
-Creates a partnership between a customer and a trading partner, based on the supplied
-parameters. A partnership represents the connection between you and your trading partner. It ties
-together a profile and one or more trading capabilities.
+Creates a partnership between a customer and a trading partner, based on the supplied parameters. A partnership represents the connection between you and your trading partner. It ties together a profile and one or more trading capabilities.
 
 ## Syntax
+<a name="aws-resource-b2bi-partnership-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-b2bi-partnership-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::B2BI::Partnership",
   "Properties" : {
-      "Capabilities" : [ String, ... ],
-      "CapabilityOptions" : CapabilityOptions,
-      "Email" : String,
-      "Name" : String,
-      "Phone" : String,
-      "ProfileId" : String,
-      "Tags" : [ Tag, ... ]
+      "[Capabilities](#cfn-b2bi-partnership-capabilities)" : {{[ String, ... ]}},
+      "[CapabilityOptions](#cfn-b2bi-partnership-capabilityoptions)" : {{CapabilityOptions}},
+      "[Email](#cfn-b2bi-partnership-email)" : {{String}},
+      "[Name](#cfn-b2bi-partnership-name)" : {{String}},
+      "[Phone](#cfn-b2bi-partnership-phone)" : {{String}},
+      "[ProfileId](#cfn-b2bi-partnership-profileid)" : {{String}},
+      "[Tags](#cfn-b2bi-partnership-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-b2bi-partnership-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::B2BI::Partnership
 Properties:
-  Capabilities:
-    - String
-  CapabilityOptions:
-    CapabilityOptions
-  Email: String
-  Name: String
-  Phone: String
-  ProfileId: String
-  Tags:
-    - Tag
-
+  [Capabilities](#cfn-b2bi-partnership-capabilities): {{
+    - String}}
+  [CapabilityOptions](#cfn-b2bi-partnership-capabilityoptions): {{
+    CapabilityOptions}}
+  [Email](#cfn-b2bi-partnership-email): {{String}}
+  [Name](#cfn-b2bi-partnership-name): {{String}}
+  [Phone](#cfn-b2bi-partnership-phone): {{String}}
+  [ProfileId](#cfn-b2bi-partnership-profileid): {{String}}
+  [Tags](#cfn-b2bi-partnership-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-b2bi-partnership-properties"></a>
 
-`Capabilities`
-
+`Capabilities`  <a name="cfn-b2bi-partnership-capabilities"></a>
 Returns one or more capabilities associated with this partnership.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CapabilityOptions`
-
+`CapabilityOptions`  <a name="cfn-b2bi-partnership-capabilityoptions"></a>
 Contains the details for an Outbound EDI capability.
+*Required*: No
+*Type*: [CapabilityOptions](aws-properties-b2bi-partnership-capabilityoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CapabilityOptions](aws-properties-b2bi-partnership-capabilityoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Email`
-
+`Email`  <a name="cfn-b2bi-partnership-email"></a>
 Specifies the email address associated with this trading partner.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\.\-]+@[\w\.\-]+$`
+*Minimum*: `5`
+*Maximum*: `254`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\.\-]+@[\w\.\-]+$`
-
-_Minimum_: `5`
-
-_Maximum_: `254`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-b2bi-partnership-name"></a>
 Returns the name of the partnership.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `254`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `254`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Phone`
-
+`Phone`  <a name="cfn-b2bi-partnership-phone"></a>
 Specifies the phone number associated with the partnership.
+*Required*: No
+*Type*: String
+*Pattern*: `^\+?([0-9 \t\-()\/]{7,})(?:\s*(?:#|x\.?|ext\.?|extension) \t*(\d+))?$`
+*Minimum*: `7`
+*Maximum*: `22`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\+?([0-9 \t\-()\/]{7,})(?:\s*(?:#|x\.?|ext\.?|extension) \t*(\d+))?$`
-
-_Minimum_: `7`
-
-_Maximum_: `22`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfileId`
-
+`ProfileId`  <a name="cfn-b2bi-partnership-profileid"></a>
 Returns the unique, system-generated identifier for the profile connected to this partnership.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A key-value pair for a specific partnership. Tags are metadata that you can use to
-search for and group capabilities for various purposes.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-b2bi-partnership-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-b2bi-partnership-tags"></a>
+A key-value pair for a specific partnership. Tags are metadata that you can use to search for and group capabilities for various purposes.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-b2bi-partnership-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-b2bi-partnership-return-values"></a>
 
 ### Ref
+<a name="aws-resource-b2bi-partnership-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-b2bi-partnership-return-values-fn--getatt"></a>
 
-`CreatedAt`
+####
+<a name="aws-resource-b2bi-partnership-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 Returns a timestamp for creation date and time of the partnership.
 
-`ModifiedAt`
+`ModifiedAt`  <a name="ModifiedAt-fn::getatt"></a>
+Returns a timestamp that identifies the most recent date and time that the partnership was modified.
 
-Returns a timestamp that identifies the most recent date and time that the partnership
-was modified.
-
-`PartnershipArn`
-
+`PartnershipArn`  <a name="PartnershipArn-fn::getatt"></a>
 Returns an Amazon Resource Name (ARN) for a specific AWS resource, such as a capability, partnership, profile, or transformer.
 
-`PartnershipId`
-
+`PartnershipId`  <a name="PartnershipId-fn::getatt"></a>
 Returns the unique, system-generated identifier for a partnership.
 
-`TradingPartnerId`
-
+`TradingPartnerId`  <a name="TradingPartnerId-fn::getatt"></a>
 Returns the unique, system-generated identifier for a trading partner.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-X12Details
-
-CapabilityOptions
 
 All content copied from https://docs.aws.amazon.com/.

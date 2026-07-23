@@ -2,120 +2,72 @@
 title: "AWS::FSx::FileSystem AuditLogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::FileSystem AuditLogConfiguration
+<a name="aws-properties-fsx-filesystem-auditlogconfiguration"></a>
 
-The configuration that Amazon FSx for Windows File Server uses to audit and log
-user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server
-file system.
+The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system.
 
 ## Syntax
+<a name="aws-properties-fsx-filesystem-auditlogconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fsx-filesystem-auditlogconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuditLogDestination" : String,
-  "FileAccessAuditLogLevel" : String,
-  "FileShareAccessAuditLogLevel" : String
+  "[AuditLogDestination](#cfn-fsx-filesystem-auditlogconfiguration-auditlogdestination)" : {{String}},
+  "[FileAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileaccessauditloglevel)" : {{String}},
+  "[FileShareAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileshareaccessauditloglevel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fsx-filesystem-auditlogconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuditLogDestination: String
-  FileAccessAuditLogLevel: String
-  FileShareAccessAuditLogLevel: String
-
+```
+  [AuditLogDestination](#cfn-fsx-filesystem-auditlogconfiguration-auditlogdestination): {{String}}
+  [FileAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileaccessauditloglevel): {{String}}
+  [FileShareAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileshareaccessauditloglevel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fsx-filesystem-auditlogconfiguration-properties"></a>
 
-`AuditLogDestination`
+`AuditLogDestination`  <a name="cfn-fsx-filesystem-auditlogconfiguration-auditlogdestination"></a>
+The Amazon Resource Name (ARN) for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN.
+The name of the Amazon CloudWatch Logs log group must begin with the `/aws/fsx` prefix. The name of the Amazon Kinesis Data Firehose delivery stream must begin with the `aws-fsx` prefix.
+The destination ARN (either CloudWatch Logs log group or Kinesis Data Firehose delivery stream) must be in the same AWS partition, AWS Region, and AWS account as your Amazon FSx file system.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[^:]{1,63}:[^:]{0,63}:[^:]{0,63}:(?:|\d{12}):[^/].{0,1023}$`
+*Minimum*: `8`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) for the destination of the audit logs.
-The destination can be any Amazon CloudWatch Logs log group ARN or
-Amazon Kinesis Data Firehose delivery stream ARN.
-
-The name of the Amazon CloudWatch Logs log group must begin with
-the `/aws/fsx` prefix. The name of the Amazon Kinesis Data
-Firehose delivery stream must begin with the `aws-fsx` prefix.
-
-The destination ARN (either CloudWatch Logs log group or Kinesis
-Data Firehose delivery stream) must be in the same AWS partition,
-AWS Region, and AWS account as your Amazon FSx file system.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[^:]{1,63}:[^:]{0,63}:[^:]{0,63}:(?:|\d{12}):[^/].{0,1023}$`
-
-_Minimum_: `8`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileAccessAuditLogLevel`
-
+`FileAccessAuditLogLevel`  <a name="cfn-fsx-filesystem-auditlogconfiguration-fileaccessauditloglevel"></a>
 Sets which attempt type is logged by Amazon FSx for file and folder accesses.
++ `SUCCESS_ONLY` - only successful attempts to access files or folders are logged.
++ `FAILURE_ONLY` - only failed attempts to access files or folders are logged.
++ `SUCCESS_AND_FAILURE` - both successful attempts and failed attempts to access files or folders are logged.
++ `DISABLED` - access auditing of files and folders is turned off.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DISABLED | SUCCESS_ONLY | FAILURE_ONLY | SUCCESS_AND_FAILURE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `SUCCESS_ONLY` \- only successful attempts to access files
-or folders are logged.
-
-- `FAILURE_ONLY` \- only failed attempts to access files
-or folders are logged.
-
-- `SUCCESS_AND_FAILURE` \- both successful attempts and
-failed attempts to access files or folders are logged.
-
-- `DISABLED` \- access auditing of files and folders is turned off.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DISABLED | SUCCESS_ONLY | FAILURE_ONLY | SUCCESS_AND_FAILURE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileShareAccessAuditLogLevel`
-
+`FileShareAccessAuditLogLevel`  <a name="cfn-fsx-filesystem-auditlogconfiguration-fileshareaccessauditloglevel"></a>
 Sets which attempt type is logged by Amazon FSx for file share accesses.
-
-- `SUCCESS_ONLY` \- only successful attempts to access file
-shares are logged.
-
-- `FAILURE_ONLY` \- only failed attempts to access file
-shares are logged.
-
-- `SUCCESS_AND_FAILURE` \- both successful attempts and
-failed attempts to access file shares are logged.
-
-- `DISABLED` \- access auditing of file shares is turned off.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DISABLED | SUCCESS_ONLY | FAILURE_ONLY | SUCCESS_AND_FAILURE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::FSx::FileSystem
-
-ClientConfigurations
++ `SUCCESS_ONLY` - only successful attempts to access file shares are logged.
++ `FAILURE_ONLY` - only failed attempts to access file shares are logged.
++ `SUCCESS_AND_FAILURE` - both successful attempts and failed attempts to access file shares are logged.
++ `DISABLED` - access auditing of file shares is turned off.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DISABLED | SUCCESS_ONLY | FAILURE_ONLY | SUCCESS_AND_FAILURE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

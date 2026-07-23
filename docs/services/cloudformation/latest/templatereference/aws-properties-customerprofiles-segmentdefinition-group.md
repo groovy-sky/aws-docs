@@ -2,94 +2,69 @@
 title: "AWS::CustomerProfiles::SegmentDefinition Group"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition Group
+<a name="aws-properties-customerprofiles-segmentdefinition-group"></a>
 
 Contains dimensions that determine what to segment on.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-group-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-group-syntax.json"></a>
 
-```json
-
+```
 {
-  "Dimensions" : [ Dimension, ... ],
-  "SourceSegments" : [ SourceSegment, ... ],
-  "SourceType" : String,
-  "Type" : String
+  "[Dimensions](#cfn-customerprofiles-segmentdefinition-group-dimensions)" : {{[ Dimension, ... ]}},
+  "[SourceSegments](#cfn-customerprofiles-segmentdefinition-group-sourcesegments)" : {{[ SourceSegment, ... ]}},
+  "[SourceType](#cfn-customerprofiles-segmentdefinition-group-sourcetype)" : {{String}},
+  "[Type](#cfn-customerprofiles-segmentdefinition-group-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-group-syntax.yaml"></a>
 
-```yaml
-
-  Dimensions:
-    - Dimension
-  SourceSegments:
-    - SourceSegment
-  SourceType: String
-  Type: String
-
+```
+  [Dimensions](#cfn-customerprofiles-segmentdefinition-group-dimensions): {{
+    - Dimension}}
+  [SourceSegments](#cfn-customerprofiles-segmentdefinition-group-sourcesegments): {{
+    - SourceSegment}}
+  [SourceType](#cfn-customerprofiles-segmentdefinition-group-sourcetype): {{String}}
+  [Type](#cfn-customerprofiles-segmentdefinition-group-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-group-properties"></a>
 
-`Dimensions`
-
+`Dimensions`  <a name="cfn-customerprofiles-segmentdefinition-group-dimensions"></a>
 Defines the attributes to segment on.
+*Required*: No
+*Type*: Array of [Dimension](aws-properties-customerprofiles-segmentdefinition-dimension.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [Dimension](aws-properties-customerprofiles-segmentdefinition-dimension.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceSegments`
-
+`SourceSegments`  <a name="cfn-customerprofiles-segmentdefinition-group-sourcesegments"></a>
 Defines the starting source of data.
+*Required*: No
+*Type*: Array of [SourceSegment](aws-properties-customerprofiles-segmentdefinition-sourcesegment.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [SourceSegment](aws-properties-customerprofiles-segmentdefinition-sourcesegment.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceType`
-
+`SourceType`  <a name="cfn-customerprofiles-segmentdefinition-group-sourcetype"></a>
 Defines how to interact with the source data.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL | ANY | NONE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL | ANY | NONE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-customerprofiles-segmentdefinition-group-type"></a>
 Defines how to interact with the profiles found in the current filtering.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL | ANY | NONE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExtraLengthValueProfileDimension
-
-ProfileAttributes
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL | ANY | NONE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

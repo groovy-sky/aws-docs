@@ -2,85 +2,61 @@
 title: "AWS::AppFlow::ConnectorProfile PardotConnectorProfileProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile PardotConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties"></a>
 
 The connector-specific profile properties required when using Salesforce Pardot.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "BusinessUnitId" : String,
-  "InstanceUrl" : String,
-  "IsSandboxEnvironment" : Boolean
+  "[BusinessUnitId](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-businessunitid)" : {{String}},
+  "[InstanceUrl](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-instanceurl)" : {{String}},
+  "[IsSandboxEnvironment](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-issandboxenvironment)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties-syntax.yaml"></a>
 
-```yaml
-
-  BusinessUnitId: String
-  InstanceUrl: String
-  IsSandboxEnvironment: Boolean
-
+```
+  [BusinessUnitId](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-businessunitid): {{String}}
+  [InstanceUrl](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-instanceurl): {{String}}
+  [IsSandboxEnvironment](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-issandboxenvironment): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties-properties"></a>
 
-`BusinessUnitId`
-
+`BusinessUnitId`  <a name="cfn-appflow-connectorprofile-pardotconnectorprofileproperties-businessunitid"></a>
 The business unit id of Salesforce Pardot instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `18`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `18`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceUrl`
-
+`InstanceUrl`  <a name="cfn-appflow-connectorprofile-pardotconnectorprofileproperties-instanceurl"></a>
 The location of the Salesforce Pardot resource.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsSandboxEnvironment`
-
-Indicates whether the connector profile applies to a sandbox or production
-environment.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PardotConnectorProfileCredentials
-
-RedshiftConnectorProfileCredentials
+`IsSandboxEnvironment`  <a name="cfn-appflow-connectorprofile-pardotconnectorprofileproperties-issandboxenvironment"></a>
+Indicates whether the connector profile applies to a sandbox or production environment.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,109 +2,78 @@
 title: "AWS::DevOpsAgent::Association AWSConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association AWSConfiguration
+<a name="aws-properties-devopsagent-association-awsconfiguration"></a>
 
-Configuration for AWS monitor account integration. Specifies the account ID, assumable role ARN,
-and resources to be monitored in the primary monitoring account.
+Configuration for AWS monitor account integration. Specifies the account ID, assumable role ARN, and resources to be monitored in the primary monitoring account.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-awsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-awsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountId" : String,
-  "AccountType" : String,
-  "AssumableRoleArn" : String,
-  "Resources" : [ AWSResource, ... ],
-  "Tags" : [ KeyValuePair, ... ]
+  "[AccountId](#cfn-devopsagent-association-awsconfiguration-accountid)" : {{String}},
+  "[AccountType](#cfn-devopsagent-association-awsconfiguration-accounttype)" : {{String}},
+  "[AssumableRoleArn](#cfn-devopsagent-association-awsconfiguration-assumablerolearn)" : {{String}},
+  "[Resources](#cfn-devopsagent-association-awsconfiguration-resources)" : {{[ AWSResource, ... ]}},
+  "[Tags](#cfn-devopsagent-association-awsconfiguration-tags)" : {{[ KeyValuePair, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-awsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AccountId: String
-  AccountType: String
-  AssumableRoleArn: String
-  Resources:
-    - AWSResource
-  Tags:
-    - KeyValuePair
-
+```
+  [AccountId](#cfn-devopsagent-association-awsconfiguration-accountid): {{String}}
+  [AccountType](#cfn-devopsagent-association-awsconfiguration-accounttype): {{String}}
+  [AssumableRoleArn](#cfn-devopsagent-association-awsconfiguration-assumablerolearn): {{String}}
+  [Resources](#cfn-devopsagent-association-awsconfiguration-resources): {{
+    - AWSResource}}
+  [Tags](#cfn-devopsagent-association-awsconfiguration-tags): {{
+    - KeyValuePair}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-awsconfiguration-properties"></a>
 
-`AccountId`
-
+`AccountId`  <a name="cfn-devopsagent-association-awsconfiguration-accountid"></a>
 The 12-digit AWS account ID corresponding to the provided resources.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\d{12}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\d{12}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AccountType`
-
+`AccountType`  <a name="cfn-devopsagent-association-awsconfiguration-accounttype"></a>
 The account type for AWS DevOps Agent monitoring.
+*Allowed Values*: `monitor`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `monitor`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed Values_: `monitor`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `monitor`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AssumableRoleArn`
-
+`AssumableRoleArn`  <a name="cfn-devopsagent-association-awsconfiguration-assumablerolearn"></a>
 Role ARN used by AWS DevOps Agent to access resources in the primary account.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Resources`
-
+`Resources`  <a name="cfn-devopsagent-association-awsconfiguration-resources"></a>
 List of resources to monitor.
+*Required*: No
+*Type*: Array of [AWSResource](aws-properties-devopsagent-association-awsresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AWSResource](aws-properties-devopsagent-association-awsresource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-devopsagent-association-awsconfiguration-tags"></a>
 List of tags as key-value pairs, used to identify resources for topology crawl.
-
-_Required_: No
-
-_Type_: Array of [KeyValuePair](aws-properties-devopsagent-association-keyvaluepair.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DevOpsAgent::Association
-
-AWSResource
+*Required*: No
+*Type*: Array of [KeyValuePair](aws-properties-devopsagent-association-keyvaluepair.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

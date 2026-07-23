@@ -2,55 +2,42 @@
 title: "AWS::DataSync::LocationFSxOpenZFS Protocol"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationFSxOpenZFS Protocol
+<a name="aws-properties-datasync-locationfsxopenzfs-protocol"></a>
 
-Represents the protocol that AWS DataSync uses to access your Amazon FSx for
-OpenZFS file system.
+Represents the protocol that AWS DataSync uses to access your Amazon FSx for OpenZFS file system.
 
 ## Syntax
+<a name="aws-properties-datasync-locationfsxopenzfs-protocol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datasync-locationfsxopenzfs-protocol-syntax.json"></a>
 
-```json
-
+```
 {
-  "NFS" : NFS
+  "[NFS](#cfn-datasync-locationfsxopenzfs-protocol-nfs)" : {{NFS}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datasync-locationfsxopenzfs-protocol-syntax.yaml"></a>
 
-```yaml
-
-  NFS:
-    NFS
-
+```
+  [NFS](#cfn-datasync-locationfsxopenzfs-protocol-nfs): {{
+    NFS}}
 ```
 
 ## Properties
+<a name="aws-properties-datasync-locationfsxopenzfs-protocol-properties"></a>
 
-`NFS`
-
-Represents the Network File System (NFS) protocol that DataSync uses to
-access your FSx for OpenZFS file system.
-
-_Required_: No
-
-_Type_: [NFS](aws-properties-datasync-locationfsxopenzfs-nfs.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NFS
-
-Tag
+`NFS`  <a name="cfn-datasync-locationfsxopenzfs-protocol-nfs"></a>
+Represents the Network File System (NFS) protocol that DataSync uses to access your FSx for OpenZFS file system.
+*Required*: No
+*Type*: [NFS](aws-properties-datasync-locationfsxopenzfs-nfs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

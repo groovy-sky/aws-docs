@@ -2,57 +2,44 @@
 title: "AWS::CleanRooms::ConfiguredTable SnowflakeTableSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable SnowflakeTableSchema
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschema"></a>
 
-The schema of a Snowflake table.
+ The schema of a Snowflake table.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "V1" : [ SnowflakeTableSchemaV1, ... ]
+  "[V1](#cfn-cleanrooms-configuredtable-snowflaketableschema-v1)" : {{[ SnowflakeTableSchemaV1, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschema-syntax.yaml"></a>
 
-```yaml
-
-  V1:
-    - SnowflakeTableSchemaV1
-
+```
+  [V1](#cfn-cleanrooms-configuredtable-snowflaketableschema-v1): {{
+    - SnowflakeTableSchemaV1}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschema-properties"></a>
 
-`V1`
-
-The schema of a Snowflake table.
-
-_Required_: Yes
-
-_Type_: Array of [SnowflakeTableSchemaV1](aws-properties-cleanrooms-configuredtable-snowflaketableschemav1.md)
-
-_Minimum_: `1`
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnowflakeTableReference
-
-SnowflakeTableSchemaV1
+`V1`  <a name="cfn-cleanrooms-configuredtable-snowflaketableschema-v1"></a>
+ The schema of a Snowflake table.
+*Required*: Yes
+*Type*: Array of [SnowflakeTableSchemaV1](aws-properties-cleanrooms-configuredtable-snowflaketableschemav1.md)
+*Minimum*: `1`
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

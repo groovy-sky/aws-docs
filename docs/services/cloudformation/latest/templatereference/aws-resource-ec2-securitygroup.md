@@ -2,187 +2,149 @@
 title: "AWS::EC2::SecurityGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SecurityGroup
+<a name="aws-resource-ec2-securitygroup"></a>
 
 Specifies a security group.
 
-You must specify ingress rules to allow inbound traffic. By default, no inbound
-traffic is allowed.
+You must specify ingress rules to allow inbound traffic. By default, no inbound traffic is allowed.
 
-When you create a security group, if you do not add egress rules, we add egress
-rules that allow all outbound IPv4 and IPv6 traffic. Otherwise, we do not add them.
-After the security group is created, if you remove all egress rules that you added,
-we do not add egress rules, so no outbound traffic is allowed.
+When you create a security group, if you do not add egress rules, we add egress rules that allow all outbound IPv4 and IPv6 traffic. Otherwise, we do not add them. After the security group is created, if you remove all egress rules that you added, we do not add egress rules, so no outbound traffic is allowed.
 
-If you modify a rule, CloudFormation removes the existing rule and then adds a new rule.
-There is a brief period when neither the original rule or the new rule exists, so the
-corresponding traffic is dropped.
+If you modify a rule, CloudFormation removes the existing rule and then adds a new rule. There is a brief period when neither the original rule or the new rule exists, so the corresponding traffic is dropped.
 
-This type supports updates. For more information about updating stacks, see [AWS CloudFormation Stacks Updates](../userguide/using-cfn-updating-stacks.md).
+This type supports updates. For more information about updating stacks, see [AWS CloudFormation Stacks Updates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html).
 
-###### Important
-
-To cross-reference two security groups in the ingress and egress rules of those
-security groups, use the [AWS::EC2::SecurityGroupEgress](../userguide/aws-resource-ec2-security-group-egress.md) and [AWS::EC2::SecurityGroupIngress](../userguide/aws-resource-ec2-security-group-ingress.md) resources to define your rules. Do not use
-the embedded ingress and egress rules in the `AWS::EC2::SecurityGroup`. Doing
-so creates a circular dependency, which CloudFormation doesn't allow.
+**Important**
+To cross-reference two security groups in the ingress and egress rules of those security groups, use the [AWS::EC2::SecurityGroupEgress](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html) and [AWS::EC2::SecurityGroupIngress](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-ingress.html) resources to define your rules. Do not use the embedded ingress and egress rules in the `AWS::EC2::SecurityGroup`. Doing so creates a circular dependency, which CloudFormation doesn't allow.
 
 ## Syntax
+<a name="aws-resource-ec2-securitygroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-securitygroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::SecurityGroup",
   "Properties" : {
-      "GroupDescription" : String,
-      "GroupName" : String,
-      "SecurityGroupEgress" : [ Egress, ... ],
-      "SecurityGroupIngress" : [ Ingress, ... ],
-      "Tags" : [ Tag, ... ],
-      "VpcId" : String
+      "[GroupDescription](#cfn-ec2-securitygroup-groupdescription)" : {{String}},
+      "[GroupName](#cfn-ec2-securitygroup-groupname)" : {{String}},
+      "[SecurityGroupEgress](#cfn-ec2-securitygroup-securitygroupegress)" : {{[ Egress, ... ]}},
+      "[SecurityGroupIngress](#cfn-ec2-securitygroup-securitygroupingress)" : {{[ Ingress, ... ]}},
+      "[Tags](#cfn-ec2-securitygroup-tags)" : {{[ Tag, ... ]}},
+      "[VpcId](#cfn-ec2-securitygroup-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-securitygroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::SecurityGroup
 Properties:
-  GroupDescription: String
-  GroupName: String
-  SecurityGroupEgress:
-    - Egress
-  SecurityGroupIngress:
-    - Ingress
-  Tags:
-    - Tag
-  VpcId: String
-
+  [GroupDescription](#cfn-ec2-securitygroup-groupdescription): {{String}}
+  [GroupName](#cfn-ec2-securitygroup-groupname): {{String}}
+  [SecurityGroupEgress](#cfn-ec2-securitygroup-securitygroupegress): {{
+    - Egress}}
+  [SecurityGroupIngress](#cfn-ec2-securitygroup-securitygroupingress): {{
+    - Ingress}}
+  [Tags](#cfn-ec2-securitygroup-tags): {{
+    - Tag}}
+  [VpcId](#cfn-ec2-securitygroup-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-securitygroup-properties"></a>
 
-`GroupDescription`
-
+`GroupDescription`  <a name="cfn-ec2-securitygroup-groupdescription"></a>
 A description for the security group.
-
 Constraints: Up to 255 characters in length
+Valid characters: a-z, A-Z, 0-9, spaces, and .\_-:/()\#,@[]\+=&;{}\!$\*
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Valid characters: a-z, A-Z, 0-9, spaces, and .\_-:/()#,@\[\]+=&;{}!$\*
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GroupName`
-
+`GroupName`  <a name="cfn-ec2-securitygroup-groupname"></a>
 The name of the security group. Names are case-insensitive and must be unique within the VPC.
-
 Constraints: Up to 255 characters in length. Can't start with `sg-`.
+Valid characters: a-z, A-Z, 0-9, spaces, and .\_-:/()\#,@[]\+=&;{}\!$\*
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Valid characters: a-z, A-Z, 0-9, spaces, and .\_-:/()#,@\[\]+=&;{}!$\*
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroupEgress`
-
+`SecurityGroupEgress`  <a name="cfn-ec2-securitygroup-securitygroupegress"></a>
 The outbound rules associated with the security group.
+*Required*: No
+*Type*: Array of [Egress](aws-properties-ec2-securitygroup-egress.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Egress](aws-properties-ec2-securitygroup-egress.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`SecurityGroupIngress`
-
+`SecurityGroupIngress`  <a name="cfn-ec2-securitygroup-securitygroupingress"></a>
 The inbound rules associated with the security group.
+*Required*: No
+*Type*: Array of [Ingress](aws-properties-ec2-securitygroup-ingress.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Ingress](aws-properties-ec2-securitygroup-ingress.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-securitygroup-tags"></a>
 Any tags assigned to the security group.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-securitygroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-securitygroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
-The ID of the VPC for the security group. If you do not specify a VPC, the default is
-to use the default VPC for the Region. If there's no specified VPC and no default VPC,
-security group creation fails.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`VpcId`  <a name="cfn-ec2-securitygroup-vpcid"></a>
+The ID of the VPC for the security group. If you do not specify a VPC, the default is to use the default VPC for the Region. If there's no specified VPC and no default VPC, security group creation fails.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-securitygroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-securitygroup-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the security group if you specified the `VpcId` property.
-Otherwise, it returns the name of the security group. If you omit the `VpcId` property
-and need the ID of the security group, use `Fn::GetAtt` instead.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the security group if you specified the `VpcId` property. Otherwise, it returns the name of the security group. If you omit the `VpcId` property and need the ID of the security group, use `Fn::GetAtt` instead.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-securitygroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`GroupId`
+####
+<a name="aws-resource-ec2-securitygroup-return-values-fn--getatt-fn--getatt"></a>
 
+`GroupId`  <a name="GroupId-fn::getatt"></a>
 The ID of the security group, such as `sg-94b3a1f6`.
 
-`VpcId`
-
+`VpcId`  <a name="VpcId-fn::getatt"></a>
 The ID of the VPC, such as `vpc-0669f8f9`.
 
 ## Examples
+<a name="aws-resource-ec2-securitygroup--examples"></a>
 
-- [Define basic ingress and egress rules](#aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules)
-
-- [Remove the default rule](#aws-resource-ec2-securitygroup--examples--Remove_the_default_rule)
-
-- [Allow ping requests](#aws-resource-ec2-securitygroup--examples--Allow_ping_requests)
+**Topics**
++ [Define basic ingress and egress rules](#aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules)
++ [Remove the default rule](#aws-resource-ec2-securitygroup--examples--Remove_the_default_rule)
++ [Allow ping requests](#aws-resource-ec2-securitygroup--examples--Allow_ping_requests)
 
 ### Define basic ingress and egress rules
+<a name="aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules"></a>
 
 The following example specifies a security group with an ingress and egress rule.
 
 #### JSON
+<a name="aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules--json"></a>
 
-```json
-
+```
 "InstanceSecurityGroup" : {
     "Type" : "AWS::EC2::SecurityGroup",
     "Properties" : {
@@ -205,9 +167,9 @@ The following example specifies a security group with an ingress and egress rule
 ```
 
 #### YAML
+<a name="aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules--yaml"></a>
 
-```yaml
-
+```
 InstanceSecurityGroup:
   Type: AWS::EC2::SecurityGroup
   Properties:
@@ -226,17 +188,14 @@ InstanceSecurityGroup:
 ```
 
 ### Remove the default rule
+<a name="aws-resource-ec2-securitygroup--examples--Remove_the_default_rule"></a>
 
-When you specify a VPC security group, Amazon EC2 creates a default egress rule
-that allows egress traffic on all ports and IP protocols to any location. The default
-rule is removed only when you specify one or more egress rules. If you want to remove
-the default rule and limit egress traffic to just the localhost (127.0.0.1/32), use
-the following example.
+When you specify a VPC security group, Amazon EC2 creates a default egress rule that allows egress traffic on all ports and IP protocols to any location. The default rule is removed only when you specify one or more egress rules. If you want to remove the default rule and limit egress traffic to just the localhost (127.0.0.1/32), use the following example.
 
 #### JSON
+<a name="aws-resource-ec2-securitygroup--examples--Remove_the_default_rule--json"></a>
 
-```json
-
+```
 "sgwithoutegress": {
     "Type": "AWS::EC2::SecurityGroup",
     "Properties": {
@@ -251,9 +210,9 @@ the following example.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-securitygroup--examples--Remove_the_default_rule--yaml"></a>
 
-```yaml
-
+```
 sgwithoutegress:
   Type: AWS::EC2::SecurityGroup
   Properties:
@@ -265,14 +224,14 @@ sgwithoutegress:
 ```
 
 ### Allow ping requests
+<a name="aws-resource-ec2-securitygroup--examples--Allow_ping_requests"></a>
 
-To allow ping requests, add the ICMP protocol type and specify 8 (echo request)
-for the ICMP type and either 0 or -1 (all) for the ICMP code.
+To allow ping requests, add the ICMP protocol type and specify 8 (echo request) for the ICMP type and either 0 or -1 (all) for the ICMP code.
 
 #### JSON
+<a name="aws-resource-ec2-securitygroup--examples--Allow_ping_requests--json"></a>
 
-```json
-
+```
 "SGPing" : {
     "Type" : "AWS::EC2::SecurityGroup",
     "DependsOn": "VPC",
@@ -297,9 +256,9 @@ for the ICMP type and either 0 or -1 (all) for the ICMP code.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-securitygroup--examples--Allow_ping_requests--yaml"></a>
 
-```yaml
-
+```
 SGPing:
   Type: AWS::EC2::SecurityGroup
   DependsOn: VPC
@@ -318,16 +277,8 @@ SGPing:
 ```
 
 ## See also
-
-- [Security groups for your VPC](../../../vpc/latest/userguide/vpc-securitygroups.md) in the _Amazon VPC User_
-_Guide_
-
-- [Amazon EC2 security groups](../../../ec2/latest/userguide/ec2-security-groups.md) in the _Amazon EC2 User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Egress
+<a name="aws-resource-ec2-securitygroup--seealso"></a>
++ [Security groups for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) in the *Amazon VPC User Guide*
++ [Amazon EC2 security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) in the *Amazon EC2 User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,65 @@
 title: "AWS::IoT::TopicRule BatchConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule BatchConfig
+<a name="aws-properties-iot-topicrule-batchconfig"></a>
 
-The `BatchConfig` property type specifies Property description not available. for an [AWS::IoT::TopicRule](aws-resource-iot-topicrule.md).
+<a name="aws-properties-iot-topicrule-batchconfig-description"></a>The `BatchConfig` property type specifies Property description not available. for an [AWS::IoT::TopicRule](aws-resource-iot-topicrule.md).
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-batchconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-batchconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxBatchOpenMs" : Integer,
-  "MaxBatchSize" : Integer,
-  "MaxBatchSizeBytes" : Integer
+  "[BatchAcrossTopics](#cfn-iot-topicrule-batchconfig-batchacrosstopics)" : {{Boolean}},
+  "[MaxBatchOpenMs](#cfn-iot-topicrule-batchconfig-maxbatchopenms)" : {{Integer}},
+  "[MaxBatchSize](#cfn-iot-topicrule-batchconfig-maxbatchsize)" : {{Integer}},
+  "[MaxBatchSizeBytes](#cfn-iot-topicrule-batchconfig-maxbatchsizebytes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-batchconfig-syntax.yaml"></a>
 
-```yaml
-
-  MaxBatchOpenMs: Integer
-  MaxBatchSize: Integer
-  MaxBatchSizeBytes: Integer
-
+```
+  [BatchAcrossTopics](#cfn-iot-topicrule-batchconfig-batchacrosstopics): {{Boolean}}
+  [MaxBatchOpenMs](#cfn-iot-topicrule-batchconfig-maxbatchopenms): {{Integer}}
+  [MaxBatchSize](#cfn-iot-topicrule-batchconfig-maxbatchsize): {{Integer}}
+  [MaxBatchSizeBytes](#cfn-iot-topicrule-batchconfig-maxbatchsizebytes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-batchconfig-properties"></a>
 
-`MaxBatchOpenMs`
-
+`BatchAcrossTopics`  <a name="cfn-iot-topicrule-batchconfig-batchacrosstopics"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxBatchSize`
-
+`MaxBatchOpenMs`  <a name="cfn-iot-topicrule-batchconfig-maxbatchopenms"></a>
 Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxBatchSizeBytes`
-
+`MaxBatchSize`  <a name="cfn-iot-topicrule-batchconfig-maxbatchsize"></a>
 Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssetPropertyVariant
-
-CloudwatchAlarmAction
+`MaxBatchSizeBytes`  <a name="cfn-iot-topicrule-batchconfig-maxbatchsizebytes"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

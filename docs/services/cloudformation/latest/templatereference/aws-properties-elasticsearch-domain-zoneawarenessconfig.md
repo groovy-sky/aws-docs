@@ -2,65 +2,45 @@
 title: "AWS::Elasticsearch::Domain ZoneAwarenessConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain ZoneAwarenessConfig
+<a name="aws-properties-elasticsearch-domain-zoneawarenessconfig"></a>
 
-Specifies zone awareness configuration options. Only use if
-`ZoneAwarenessEnabled` is `true`.
+Specifies zone awareness configuration options. Only use if `ZoneAwarenessEnabled` is `true`.
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-Elasticsearch. For more information about the service rename, see [New resource\
-types](../../../opensearch-service/latest/developerguide/rename.md#rename-resource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and Elasticsearch. For more information about the service rename, see [New resource types](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-resource) in the *Amazon OpenSearch Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticsearch-domain-zoneawarenessconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticsearch-domain-zoneawarenessconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AvailabilityZoneCount" : Integer
+  "[AvailabilityZoneCount](#cfn-elasticsearch-domain-zoneawarenessconfig-availabilityzonecount)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticsearch-domain-zoneawarenessconfig-syntax.yaml"></a>
 
-```yaml
-
-  AvailabilityZoneCount: Integer
-
+```
+  [AvailabilityZoneCount](#cfn-elasticsearch-domain-zoneawarenessconfig-availabilityzonecount): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticsearch-domain-zoneawarenessconfig-properties"></a>
 
-`AvailabilityZoneCount`
-
-If you enabled multiple Availability Zones (AZs), the number of AZs that you want the
-domain to use.
-
+`AvailabilityZoneCount`  <a name="cfn-elasticsearch-domain-zoneawarenessconfig-availabilityzonecount"></a>
+If you enabled multiple Availability Zones (AZs), the number of AZs that you want the domain to use.
 Valid values are `2` and `3`. Default is 2.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VPCOptions
-
-Next
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

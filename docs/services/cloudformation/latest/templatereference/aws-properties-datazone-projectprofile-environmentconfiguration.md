@@ -2,169 +2,117 @@
 title: "AWS::DataZone::ProjectProfile EnvironmentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::ProjectProfile EnvironmentConfiguration
+<a name="aws-properties-datazone-projectprofile-environmentconfiguration"></a>
 
 The configuration of an environment.
 
 ## Syntax
+<a name="aws-properties-datazone-projectprofile-environmentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-projectprofile-environmentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsAccount" : AwsAccount,
-  "AwsRegion" : Region,
-  "ConfigurationParameters" : EnvironmentConfigurationParametersDetails,
-  "DeploymentMode" : String,
-  "DeploymentOrder" : Number,
-  "Description" : String,
-  "EnvironmentBlueprintId" : String,
-  "EnvironmentConfigurationId" : String,
-  "Name" : String
+  "[AwsAccount](#cfn-datazone-projectprofile-environmentconfiguration-awsaccount)" : {{AwsAccount}},
+  "[AwsRegion](#cfn-datazone-projectprofile-environmentconfiguration-awsregion)" : {{Region}},
+  "[ConfigurationParameters](#cfn-datazone-projectprofile-environmentconfiguration-configurationparameters)" : {{EnvironmentConfigurationParametersDetails}},
+  "[DeploymentMode](#cfn-datazone-projectprofile-environmentconfiguration-deploymentmode)" : {{String}},
+  "[DeploymentOrder](#cfn-datazone-projectprofile-environmentconfiguration-deploymentorder)" : {{Number}},
+  "[Description](#cfn-datazone-projectprofile-environmentconfiguration-description)" : {{String}},
+  "[EnvironmentBlueprintId](#cfn-datazone-projectprofile-environmentconfiguration-environmentblueprintid)" : {{String}},
+  "[EnvironmentConfigurationId](#cfn-datazone-projectprofile-environmentconfiguration-environmentconfigurationid)" : {{String}},
+  "[Name](#cfn-datazone-projectprofile-environmentconfiguration-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-projectprofile-environmentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AwsAccount:
-    AwsAccount
-  AwsRegion:
-    Region
-  ConfigurationParameters:
-    EnvironmentConfigurationParametersDetails
-  DeploymentMode: String
-  DeploymentOrder: Number
-  Description: String
-  EnvironmentBlueprintId: String
-  EnvironmentConfigurationId: String
-  Name: String
-
+```
+  [AwsAccount](#cfn-datazone-projectprofile-environmentconfiguration-awsaccount): {{
+    AwsAccount}}
+  [AwsRegion](#cfn-datazone-projectprofile-environmentconfiguration-awsregion): {{
+    Region}}
+  [ConfigurationParameters](#cfn-datazone-projectprofile-environmentconfiguration-configurationparameters): {{
+    EnvironmentConfigurationParametersDetails}}
+  [DeploymentMode](#cfn-datazone-projectprofile-environmentconfiguration-deploymentmode): {{String}}
+  [DeploymentOrder](#cfn-datazone-projectprofile-environmentconfiguration-deploymentorder): {{Number}}
+  [Description](#cfn-datazone-projectprofile-environmentconfiguration-description): {{String}}
+  [EnvironmentBlueprintId](#cfn-datazone-projectprofile-environmentconfiguration-environmentblueprintid): {{String}}
+  [EnvironmentConfigurationId](#cfn-datazone-projectprofile-environmentconfiguration-environmentconfigurationid): {{String}}
+  [Name](#cfn-datazone-projectprofile-environmentconfiguration-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-projectprofile-environmentconfiguration-properties"></a>
 
-`AwsAccount`
-
+`AwsAccount`  <a name="cfn-datazone-projectprofile-environmentconfiguration-awsaccount"></a>
 The AWS account of the environment.
+*Required*: No
+*Type*: [AwsAccount](aws-properties-datazone-projectprofile-awsaccount.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AwsAccount](aws-properties-datazone-projectprofile-awsaccount.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AwsRegion`
-
+`AwsRegion`  <a name="cfn-datazone-projectprofile-environmentconfiguration-awsregion"></a>
 The AWS Region of the environment.
+*Required*: Yes
+*Type*: [Region](aws-properties-datazone-projectprofile-region.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Region](aws-properties-datazone-projectprofile-region.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConfigurationParameters`
-
+`ConfigurationParameters`  <a name="cfn-datazone-projectprofile-environmentconfiguration-configurationparameters"></a>
 The configuration parameters of the environment.
+*Required*: No
+*Type*: [EnvironmentConfigurationParametersDetails](aws-properties-datazone-projectprofile-environmentconfigurationparametersdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EnvironmentConfigurationParametersDetails](aws-properties-datazone-projectprofile-environmentconfigurationparametersdetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeploymentMode`
-
+`DeploymentMode`  <a name="cfn-datazone-projectprofile-environmentconfiguration-deploymentmode"></a>
 The deployment mode of the environment.
+*Required*: No
+*Type*: String
+*Allowed values*: `ON_CREATE | ON_DEMAND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ON_CREATE | ON_DEMAND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeploymentOrder`
-
+`DeploymentOrder`  <a name="cfn-datazone-projectprofile-environmentconfiguration-deploymentorder"></a>
 The deployment order of the environment.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-datazone-projectprofile-environmentconfiguration-description"></a>
 The environment description.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentBlueprintId`
-
+`EnvironmentBlueprintId`  <a name="cfn-datazone-projectprofile-environmentconfiguration-environmentblueprintid"></a>
 The environment blueprint ID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentConfigurationId`
-
+`EnvironmentConfigurationId`  <a name="cfn-datazone-projectprofile-environmentconfiguration-environmentconfigurationid"></a>
 The configuration ID with which the environment is created.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-datazone-projectprofile-environmentconfiguration-name"></a>
 The environment name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w -]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AwsAccount
-
-EnvironmentConfigurationParameter
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w -]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

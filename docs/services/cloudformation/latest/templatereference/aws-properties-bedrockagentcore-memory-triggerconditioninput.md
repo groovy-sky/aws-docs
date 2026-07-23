@@ -2,79 +2,60 @@
 title: "AWS::BedrockAgentCore::Memory TriggerConditionInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory TriggerConditionInput
+<a name="aws-properties-bedrockagentcore-memory-triggerconditioninput"></a>
 
 The memory trigger condition input.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-triggerconditioninput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-triggerconditioninput-syntax.json"></a>
 
-```json
-
+```
 {
-  "MessageBasedTrigger" : MessageBasedTriggerInput,
-  "TimeBasedTrigger" : TimeBasedTriggerInput,
-  "TokenBasedTrigger" : TokenBasedTriggerInput
+  "[MessageBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-messagebasedtrigger)" : {{MessageBasedTriggerInput}},
+  "[TimeBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-timebasedtrigger)" : {{TimeBasedTriggerInput}},
+  "[TokenBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-tokenbasedtrigger)" : {{TokenBasedTriggerInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-triggerconditioninput-syntax.yaml"></a>
 
-```yaml
-
-  MessageBasedTrigger:
-    MessageBasedTriggerInput
-  TimeBasedTrigger:
-    TimeBasedTriggerInput
-  TokenBasedTrigger:
-    TokenBasedTriggerInput
-
+```
+  [MessageBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-messagebasedtrigger): {{
+    MessageBasedTriggerInput}}
+  [TimeBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-timebasedtrigger): {{
+    TimeBasedTriggerInput}}
+  [TokenBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-tokenbasedtrigger): {{
+    TokenBasedTriggerInput}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-triggerconditioninput-properties"></a>
 
-`MessageBasedTrigger`
-
+`MessageBasedTrigger`  <a name="cfn-bedrockagentcore-memory-triggerconditioninput-messagebasedtrigger"></a>
 The memory trigger condition input for the message based trigger.
+*Required*: No
+*Type*: [MessageBasedTriggerInput](aws-properties-bedrockagentcore-memory-messagebasedtriggerinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MessageBasedTriggerInput](aws-properties-bedrockagentcore-memory-messagebasedtriggerinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeBasedTrigger`
-
+`TimeBasedTrigger`  <a name="cfn-bedrockagentcore-memory-triggerconditioninput-timebasedtrigger"></a>
 The memory trigger condition input.
+*Required*: No
+*Type*: [TimeBasedTriggerInput](aws-properties-bedrockagentcore-memory-timebasedtriggerinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TimeBasedTriggerInput](aws-properties-bedrockagentcore-memory-timebasedtriggerinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TokenBasedTrigger`
-
+`TokenBasedTrigger`  <a name="cfn-bedrockagentcore-memory-triggerconditioninput-tokenbasedtrigger"></a>
 The trigger condition information for a token based trigger.
-
-_Required_: No
-
-_Type_: [TokenBasedTriggerInput](aws-properties-bedrockagentcore-memory-tokenbasedtriggerinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TokenBasedTriggerInput
-
-UserPreferenceMemoryStrategy
+*Required*: No
+*Type*: [TokenBasedTriggerInput](aws-properties-bedrockagentcore-memory-tokenbasedtriggerinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

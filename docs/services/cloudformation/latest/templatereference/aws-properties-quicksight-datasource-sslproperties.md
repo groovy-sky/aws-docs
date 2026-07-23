@@ -2,53 +2,41 @@
 title: "AWS::QuickSight::DataSource SslProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource SslProperties
+<a name="aws-properties-quicksight-datasource-sslproperties"></a>
 
-Secure Socket Layer (SSL) properties that apply when Quick Sight connects to your
-underlying data source.
+Secure Socket Layer (SSL) properties that apply when Quick Sight connects to your underlying data source.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-sslproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-sslproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisableSsl" : Boolean
+  "[DisableSsl](#cfn-quicksight-datasource-sslproperties-disablessl)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-sslproperties-syntax.yaml"></a>
 
-```yaml
-
-  DisableSsl: Boolean
-
+```
+  [DisableSsl](#cfn-quicksight-datasource-sslproperties-disablessl): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-sslproperties-properties"></a>
 
-`DisableSsl`
-
+`DisableSsl`  <a name="cfn-quicksight-datasource-sslproperties-disablessl"></a>
 A Boolean option to control whether SSL should be disabled.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SqlServerParameters
-
-StarburstParameters
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

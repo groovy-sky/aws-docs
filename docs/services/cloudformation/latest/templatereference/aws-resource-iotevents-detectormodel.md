@@ -2,209 +2,146 @@
 title: "AWS::IoTEvents::DetectorModel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel
+<a name="aws-resource-iotevents-detectormodel"></a>
 
-The AWS::IoTEvents::DetectorModel resource creates a detector model. You create a _detector_
-_model_ (a model of your equipment or process) using _states_. For each
-state, you define conditional (Boolean) logic that evaluates the incoming inputs to detect significant
-events. When an event is detected, it can change the state or trigger custom-built or predefined
-actions using other AWS services. You can define additional events that trigger actions when entering
-or exiting a state and, optionally, when a condition is met. For more information, see
-[How to Use AWS IoT Events](../../../iotevents/latest/developerguide/how-to-use-iotevents.md) in the _AWS IoT Events Developer Guide_.
+The AWS::IoTEvents::DetectorModel resource creates a detector model. You create a *detector model* (a model of your equipment or process) using *states*. For each state, you define conditional (Boolean) logic that evaluates the incoming inputs to detect significant events. When an event is detected, it can change the state or trigger custom-built or predefined actions using other AWS services. You can define additional events that trigger actions when entering or exiting a state and, optionally, when a condition is met. For more information, see [ How to Use AWS IoT Events](https://docs.aws.amazon.com/iotevents/latest/developerguide/how-to-use-iotevents.html) in the *AWS IoT Events Developer Guide*.
 
-###### Note
-
-When you successfully update a detector model (using the AWS IoT Events console, AWS IoT Events API or CLI
-commands, or CloudFormation) all detector instances created by the model are reset to their initial
-states. (The detector's `state`, and the values of any variables and timers are reset.)
-
-When you successfully update a detector model (using the AWS IoT Events console, AWS IoT Events API or CLI
-commands, or CloudFormation) the version number of the detector model is incremented. (A detector model
-with version number 1 before the update has version number 2 after the update succeeds.)
-
-If you attempt to update a detector model using CloudFormation and the update does not succeed,
-the system may, in some cases, restore the original detector model. When this occurs, the detector model's
-version is incremented twice (for example, from version 1 to version 3) and the detector instances are
-reset.
-
-Also, be aware that if you attempt to update several detector models at once using CloudFormation,
-some updates may succeed and others fail. In this case, the effects on each detector model's detector
-instances and version number depend on whether the update succeeded or failed, with the results
-as stated.
+**Note**
+When you successfully update a detector model (using the AWS IoT Events console, AWS IoT Events API or CLI commands, or CloudFormation) all detector instances created by the model are reset to their initial states. (The detector's `state`, and the values of any variables and timers are reset.)
+When you successfully update a detector model (using the AWS IoT Events console, AWS IoT Events API or CLI commands, or CloudFormation) the version number of the detector model is incremented. (A detector model with version number 1 before the update has version number 2 after the update succeeds.)
+If you attempt to update a detector model using CloudFormation and the update does not succeed, the system may, in some cases, restore the original detector model. When this occurs, the detector model's version is incremented twice (for example, from version 1 to version 3) and the detector instances are reset.
+Also, be aware that if you attempt to update several detector models at once using CloudFormation, some updates may succeed and others fail. In this case, the effects on each detector model's detector instances and version number depend on whether the update succeeded or failed, with the results as stated.
 
 ## Syntax
+<a name="aws-resource-iotevents-detectormodel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotevents-detectormodel-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTEvents::DetectorModel",
   "Properties" : {
-      "DetectorModelDefinition" : DetectorModelDefinition,
-      "DetectorModelDescription" : String,
-      "DetectorModelName" : String,
-      "EvaluationMethod" : String,
-      "Key" : String,
-      "RoleArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[DetectorModelDefinition](#cfn-iotevents-detectormodel-detectormodeldefinition)" : {{DetectorModelDefinition}},
+      "[DetectorModelDescription](#cfn-iotevents-detectormodel-detectormodeldescription)" : {{String}},
+      "[DetectorModelName](#cfn-iotevents-detectormodel-detectormodelname)" : {{String}},
+      "[EvaluationMethod](#cfn-iotevents-detectormodel-evaluationmethod)" : {{String}},
+      "[Key](#cfn-iotevents-detectormodel-key)" : {{String}},
+      "[RoleArn](#cfn-iotevents-detectormodel-rolearn)" : {{String}},
+      "[Tags](#cfn-iotevents-detectormodel-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotevents-detectormodel-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTEvents::DetectorModel
 Properties:
-  DetectorModelDefinition:
-    DetectorModelDefinition
-  DetectorModelDescription: String
-  DetectorModelName: String
-  EvaluationMethod: String
-  Key: String
-  RoleArn: String
-  Tags:
-    - Tag
-
+  [DetectorModelDefinition](#cfn-iotevents-detectormodel-detectormodeldefinition): {{
+    DetectorModelDefinition}}
+  [DetectorModelDescription](#cfn-iotevents-detectormodel-detectormodeldescription): {{String}}
+  [DetectorModelName](#cfn-iotevents-detectormodel-detectormodelname): {{String}}
+  [EvaluationMethod](#cfn-iotevents-detectormodel-evaluationmethod): {{String}}
+  [Key](#cfn-iotevents-detectormodel-key): {{String}}
+  [RoleArn](#cfn-iotevents-detectormodel-rolearn): {{String}}
+  [Tags](#cfn-iotevents-detectormodel-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotevents-detectormodel-properties"></a>
 
-`DetectorModelDefinition`
-
+`DetectorModelDefinition`  <a name="cfn-iotevents-detectormodel-detectormodeldefinition"></a>
 Information that defines how a detector operates.
+*Required*: Yes
+*Type*: [DetectorModelDefinition](aws-properties-iotevents-detectormodel-detectormodeldefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DetectorModelDefinition](aws-properties-iotevents-detectormodel-detectormodeldefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DetectorModelDescription`
-
+`DetectorModelDescription`  <a name="cfn-iotevents-detectormodel-detectormodeldescription"></a>
 A brief description of the detector model.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DetectorModelName`
-
+`DetectorModelName`  <a name="cfn-iotevents-detectormodel-detectormodelname"></a>
 The name of the detector model.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EvaluationMethod`
-
+`EvaluationMethod`  <a name="cfn-iotevents-detectormodel-evaluationmethod"></a>
 Information about the order in which events are evaluated and how actions are executed.
+*Required*: No
+*Type*: String
+*Allowed values*: `BATCH | SERIAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Key`  <a name="cfn-iotevents-detectormodel-key"></a>
+The value used to identify a detector instance. When a device or system sends input, a new detector instance with a unique key value is created. AWS IoT Events can continue to route input to its corresponding detector instance based on this identifying information.
+This parameter uses a JSON-path expression to select the attribute-value pair in the message payload that is used for identification. To route the message to the correct detector instance, the device must send a message payload that contains the same attribute-value.
+*Required*: No
+*Type*: String
+*Pattern*: `^((`[\w\- ]+`)|([\w\-]+))(\.((`[\w\- ]+`)|([\w\-]+)))*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `BATCH | SERIAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
-The value used to identify a detector instance. When a device or system sends input, a new
-detector instance with a unique key value is created. AWS IoT Events can continue to route input to its
-corresponding detector instance based on this identifying information.
-
-This parameter uses a JSON-path expression to select the attribute-value pair in the
-message payload that is used for identification. To route the message to the correct detector
-instance, the device must send a message payload that contains the same
-attribute-value.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^((`[\w\- ]+`)|([\w\-]+))(\.((`[\w\- ]+`)|([\w\-]+)))*$``
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iotevents-detectormodel-rolearn"></a>
 The ARN of the role that grants permission to AWS IoT Events to perform its operations.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-iotevents-detectormodel-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotevents-detectormodel-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotevents-detectormodel-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotevents-detectormodel-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotevents-detectormodel-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the detector model. For example:
 
-`{"Ref": "myDetectorModel"}`
+ `{"Ref": "myDetectorModel"}`
 
-For the AWS IoT Events detector model `myDetectorModel`, `Ref` returns the name of the
-detector model.
+For the AWS IoT Events detector model `myDetectorModel`, `Ref` returns the name of the detector model.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-iotevents-detectormodel--examples"></a>
 
-- [Simple Detector Model](#aws-resource-iotevents-detectormodel--examples--Simple_Detector_Model)
-
-- [Full Detector Model](#aws-resource-iotevents-detectormodel--examples--Full_Detector_Model)
+**Topics**
++ [Simple Detector Model](#aws-resource-iotevents-detectormodel--examples--Simple_Detector_Model)
++ [Full Detector Model](#aws-resource-iotevents-detectormodel--examples--Full_Detector_Model)
 
 ### Simple Detector Model
+<a name="aws-resource-iotevents-detectormodel--examples--Simple_Detector_Model"></a>
 
 The following example creates a simple detector model with only one state.
 
 #### JSON
+<a name="aws-resource-iotevents-detectormodel--examples--Simple_Detector_Model--json"></a>
 
-```json
-
+```
 {
   "Description": "Simple Detector Model Template",
   "Resources": {
@@ -245,9 +182,9 @@ The following example creates a simple detector model with only one state.
 ```
 
 #### YAML
+<a name="aws-resource-iotevents-detectormodel--examples--Simple_Detector_Model--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: "Simple Detector Model Template"
 Resources:
@@ -269,17 +206,17 @@ Resources:
                  Actions:
                    - IotTopicPublish:
                        MqttTopic: "myMqttTopic"
-
 ```
 
 ### Full Detector Model
+<a name="aws-resource-iotevents-detectormodel--examples--Full_Detector_Model"></a>
 
 The following example creates a more complete example of a detector model with two states.
 
 #### JSON
+<a name="aws-resource-iotevents-detectormodel--examples--Full_Detector_Model--json"></a>
 
-```json
-
+```
 {
   "Description": "Detector Model Template for CloudFormation",
   "Resources": {
@@ -448,9 +385,9 @@ The following example creates a more complete example of a detector model with t
 ```
 
 #### YAML
+<a name="aws-resource-iotevents-detectormodel--examples--Full_Detector_Model--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: "Detector Model Template for CloudFormation"
 Resources:
@@ -532,19 +469,11 @@ Resources:
                   Actions:
                     - ClearTimer:
                         TimerName: "myTimer"
-
 ```
 
 ## See also
-
-- [How to Use AWS IoT Events](../../../iotevents/latest/developerguide/how-to-use-iotevents.md) in the _AWS IoT Events Developer Guide_
-
-- [CreateDetectorModel](../../../../reference/iotevents/latest/apireference/api-createdetectormodel.md) in the _AWS IoT Events API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Action
+<a name="aws-resource-iotevents-detectormodel--seealso"></a>
++ [ How to Use AWS IoT Events](https://docs.aws.amazon.com/iotevents/latest/developerguide/how-to-use-iotevents.html) in the *AWS IoT Events Developer Guide*
++ [ CreateDetectorModel](https://docs.aws.amazon.com/iotevents/latest/apireference/API_CreateDetectorModel.html) in the *AWS IoT Events API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

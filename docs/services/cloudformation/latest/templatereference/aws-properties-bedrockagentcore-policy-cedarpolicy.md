@@ -2,56 +2,43 @@
 title: "AWS::BedrockAgentCore::Policy CedarPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Policy CedarPolicy
+<a name="aws-properties-bedrockagentcore-policy-cedarpolicy"></a>
 
 A Cedar policy statement within the AgentCore Policy system.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-policy-cedarpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-policy-cedarpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Statement" : String
+  "[Statement](#cfn-bedrockagentcore-policy-cedarpolicy-statement)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-policy-cedarpolicy-syntax.yaml"></a>
 
-```yaml
-
-  Statement: String
-
+```
+  [Statement](#cfn-bedrockagentcore-policy-cedarpolicy-statement): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-policy-cedarpolicy-properties"></a>
 
-`Statement`
-
+`Statement`  <a name="cfn-bedrockagentcore-policy-cedarpolicy-statement"></a>
 The Cedar policy statement that defines the authorization logic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `35`
-
-_Maximum_: `153600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BedrockAgentCore::Policy
-
-PolicyDefinition
+*Required*: Yes
+*Type*: String
+*Minimum*: `35`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

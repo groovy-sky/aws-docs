@@ -2,71 +2,52 @@
 title: "AWS::ServiceCatalog::ServiceAction DefinitionParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::ServiceAction DefinitionParameter
+<a name="aws-properties-servicecatalog-serviceaction-definitionparameter"></a>
 
-The list of parameters in JSON format.
-For example: `[{\"Name\":\"InstanceId\",\"Type\":\"TARGET\"}] or [{\"Name\":\"InstanceId\",\"Type\":\"TEXT_VALUE\"}]`.
+The list of parameters in JSON format. For example: `[{\"Name\":\"InstanceId\",\"Type\":\"TARGET\"}] or [{\"Name\":\"InstanceId\",\"Type\":\"TEXT_VALUE\"}]`.
 
 ## Syntax
+<a name="aws-properties-servicecatalog-serviceaction-definitionparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-servicecatalog-serviceaction-definitionparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-servicecatalog-serviceaction-definitionparameter-key)" : {{String}},
+  "[Value](#cfn-servicecatalog-serviceaction-definitionparameter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-servicecatalog-serviceaction-definitionparameter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-servicecatalog-serviceaction-definitionparameter-key): {{String}}
+  [Value](#cfn-servicecatalog-serviceaction-definitionparameter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-servicecatalog-serviceaction-definitionparameter-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-servicecatalog-serviceaction-definitionparameter-key"></a>
 The parameter key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-servicecatalog-serviceaction-definitionparameter-value"></a>
 The value of the parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::ServiceAction
-
-AWS::ServiceCatalog::ServiceActionAssociation
+*Required*: Yes
+*Type*: String
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

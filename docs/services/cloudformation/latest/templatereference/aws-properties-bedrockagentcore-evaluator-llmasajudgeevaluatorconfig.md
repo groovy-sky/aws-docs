@@ -2,78 +2,59 @@
 title: "AWS::BedrockAgentCore::Evaluator LlmAsAJudgeEvaluatorConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator LlmAsAJudgeEvaluatorConfig
+<a name="aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig"></a>
 
-The LLM-as-a-Judge configuration that uses a language model to evaluate agent performance based on custom instructions and rating scales.
+ The LLM-as-a-Judge configuration that uses a language model to evaluate agent performance based on custom instructions and rating scales.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Instructions" : String,
-  "ModelConfig" : EvaluatorModelConfig,
-  "RatingScale" : RatingScale
+  "[Instructions](#cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-instructions)" : {{String}},
+  "[ModelConfig](#cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-modelconfig)" : {{EvaluatorModelConfig}},
+  "[RatingScale](#cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-ratingscale)" : {{RatingScale}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-syntax.yaml"></a>
 
-```yaml
-
-  Instructions: String
-  ModelConfig:
-    EvaluatorModelConfig
-  RatingScale:
-    RatingScale
-
+```
+  [Instructions](#cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-instructions): {{String}}
+  [ModelConfig](#cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-modelconfig): {{
+    EvaluatorModelConfig}}
+  [RatingScale](#cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-ratingscale): {{
+    RatingScale}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-properties"></a>
 
-`Instructions`
+`Instructions`  <a name="cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-instructions"></a>
+ The evaluation instructions that guide the language model in assessing agent performance, including criteria and evaluation guidelines.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The evaluation instructions that guide the language model in assessing agent performance, including criteria and evaluation guidelines.
+`ModelConfig`  <a name="cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-modelconfig"></a>
+ The model configuration that specifies which foundation model to use and how to configure it for evaluation.
+*Required*: Yes
+*Type*: [EvaluatorModelConfig](aws-properties-bedrockagentcore-evaluator-evaluatormodelconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelConfig`
-
-The model configuration that specifies which foundation model to use and how to configure it for evaluation.
-
-_Required_: Yes
-
-_Type_: [EvaluatorModelConfig](aws-properties-bedrockagentcore-evaluator-evaluatormodelconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RatingScale`
-
-The rating scale that defines how the evaluator should score agent performance, either numerical or categorical.
-
-_Required_: Yes
-
-_Type_: [RatingScale](aws-properties-bedrockagentcore-evaluator-ratingscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaEvaluatorConfig
-
-NumericalScaleDefinition
+`RatingScale`  <a name="cfn-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig-ratingscale"></a>
+ The rating scale that defines how the evaluator should score agent performance, either numerical or categorical.
+*Required*: Yes
+*Type*: [RatingScale](aws-properties-bedrockagentcore-evaluator-ratingscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

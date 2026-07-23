@@ -2,77 +2,50 @@
 title: "AWS::ECS::TaskDefinition AuthorizationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition AuthorizationConfig
+<a name="aws-properties-ecs-taskdefinition-authorizationconfig"></a>
 
 The authorization configuration details for the Amazon EFS file system.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-authorizationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-authorizationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessPointId" : String,
-  "IAM" : String
+  "[AccessPointId](#cfn-ecs-taskdefinition-authorizationconfig-accesspointid)" : {{String}},
+  "[IAM](#cfn-ecs-taskdefinition-authorizationconfig-iam)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-authorizationconfig-syntax.yaml"></a>
 
-```yaml
-
-  AccessPointId: String
-  IAM: String
-
+```
+  [AccessPointId](#cfn-ecs-taskdefinition-authorizationconfig-accesspointid): {{String}}
+  [IAM](#cfn-ecs-taskdefinition-authorizationconfig-iam): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-authorizationconfig-properties"></a>
 
-`AccessPointId`
+`AccessPointId`  <a name="cfn-ecs-taskdefinition-authorizationconfig-accesspointid"></a>
+The Amazon EFS access point ID to use. If an access point is specified, the root directory value specified in the `EFSVolumeConfiguration` must either be omitted or set to `/` which will enforce the path set on the EFS access point. If an access point is used, transit encryption must be on in the `EFSVolumeConfiguration`. For more information, see [Working with Amazon EFS access points](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html) in the *Amazon Elastic File System User Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Amazon EFS access point ID to use. If an access point is specified, the root
-directory value specified in the `EFSVolumeConfiguration` must either be
-omitted or set to `/` which will enforce the path set on the EFS access
-point. If an access point is used, transit encryption must be on in the
-`EFSVolumeConfiguration`. For more information, see [Working with Amazon\
-EFS access points](../../../efs/latest/ug/efs-access-points.md) in the _Amazon Elastic File System User_
-_Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IAM`
-
-Determines whether to use the Amazon ECS task role defined in a task definition when
-mounting the Amazon EFS file system. If it is turned on, transit encryption must be
-turned on in the `EFSVolumeConfiguration`. If this parameter is omitted, the
-default value of `DISABLED` is used. For more information, see [Using\
-Amazon EFS access points](../../../amazonecs/latest/developerguide/efs-volumes.md#efs-volume-accesspoints) in the _Amazon Elastic Container Service_
-_Developer Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECS::TaskDefinition
-
-ContainerDefinition
+`IAM`  <a name="cfn-ecs-taskdefinition-authorizationconfig-iam"></a>
+Determines whether to use the Amazon ECS task role defined in a task definition when mounting the Amazon EFS file system. If it is turned on, transit encryption must be turned on in the `EFSVolumeConfiguration`. If this parameter is omitted, the default value of `DISABLED` is used. For more information, see [Using Amazon EFS access points](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-volumes.html#efs-volume-accesspoints) in the *Amazon Elastic Container Service Developer Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

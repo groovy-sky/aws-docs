@@ -3,54 +3,57 @@ title: "Legacy DynamoDB conditional parameters"
 ---
 
 # Legacy DynamoDB conditional parameters
+<a name="LegacyConditionalParameters"></a>
 
-This document provides an overview of legacy conditional parameters in DynamoDB and recommends
-using the new expression parameters instead. It covers details on parameters like AttributesToGet,
-AttributeUpdates, ConditionalOperator, Expected, KeyConditions, QueryFilter, and ScanFilter, and
-provides examples of how to use the new expression parameters as replacements.
+This document provides an overview of legacy conditional parameters in DynamoDB and recommends using the new expression parameters instead. It covers details on parameters like AttributesToGet, AttributeUpdates, ConditionalOperator, Expected, KeyConditions, QueryFilter, and ScanFilter, and provides examples of how to use the new expression parameters as replacements.
 
-###### Important
+**Important**
+We recommend that you use the new expression parameters instead of these legacy parameters whenever possible. For more information, see [Using expressions in DynamoDB](Expressions.md).
+Additionally, DynamoDB does not allow mixing legacy conditional parameters and expression parameters in a single call. For example, calling the `Query` operation with `AttributesToGet` and `ConditionExpression` will result in an error.
 
-We recommend that you use the new expression parameters instead of these legacy parameters whenever possible.
-For more information, see [Using expressions in DynamoDB](expressions.md).
+The following table shows the DynamoDB API operations that still support these legacy parameters, and which expression parameter to use instead. This table can be helpful if you are considering updating your applications so that they use expression parameters instead.
 
-Additionally, DynamoDB does not allow mixing legacy conditional parameters and expression parameters in
-a single call. For example, calling the `Query` operation with
-`AttributesToGet` and `ConditionExpression` will result in an
-error.
+****
 
-The following table shows the DynamoDB API operations that still support these legacy
-parameters, and which expression parameter to use instead. This table can be helpful if you
-are considering updating your applications so that they use expression parameters
-instead.
+- **`BatchGetItem`**
+  - **With these legacy parameters...:**  AttributesToGet
+  - **Use this expression parameter instead:**  ProjectionExpression
 
-If you use this API operation...With these legacy parameters...Use this expression parameter instead`BatchGetItem``AttributesToGet``ProjectionExpression``DeleteItem``Expected``ConditionExpression``GetItem``AttributesToGet``ProjectionExpression``PutItem``Expected``ConditionExpression``Query``AttributesToGet``ProjectionExpression``KeyConditions``KeyConditionExpression``QueryFilter``FilterExpression``Scan``AttributesToGet``ProjectionExpression``ScanFilter``FilterExpression``UpdateItem``AttributeUpdates``UpdateExpression``Expected``ConditionExpression`
+- **`DeleteItem`**
+  - **With these legacy parameters...:**  Expected
+  - **Use this expression parameter instead:**  ConditionExpression
 
-The following sections provide more information about legacy conditional
-parameters.
+- **`GetItem`**
+  - **With these legacy parameters...:**  AttributesToGet
+  - **Use this expression parameter instead:**  ProjectionExpression
 
-###### Topics
+- **`PutItem`**
+  - **With these legacy parameters...:**  Expected
+  - **Use this expression parameter instead:**  ConditionExpression
 
-- [AttributesToGet (legacy)](legacyconditionalparameters-attributestoget.md)
+- **`Query`**
+  - **With these legacy parameters...:**  AttributesToGet  / **Use this expression parameter instead:**  ProjectionExpression
+  - **With these legacy parameters...:**  KeyConditions  / **Use this expression parameter instead:**  KeyConditionExpression
+  - **With these legacy parameters...:**  QueryFilter  / **Use this expression parameter instead:**  FilterExpression
 
-- [AttributeUpdates (legacy)](legacyconditionalparameters-attributeupdates.md)
+- **`Scan`**
+  - **With these legacy parameters...:**  AttributesToGet  / **Use this expression parameter instead:**  ProjectionExpression
+  - **With these legacy parameters...:**  ScanFilter  / **Use this expression parameter instead:**  FilterExpression
 
-- [ConditionalOperator (legacy)](legacyconditionalparameters-conditionaloperator.md)
+- **`UpdateItem` **
+  - **With these legacy parameters...:**  AttributeUpdates  / **Use this expression parameter instead:**  UpdateExpression
+  - **With these legacy parameters...:**  Expected / **Use this expression parameter instead:**  ConditionExpression
 
-- [Expected (legacy)](legacyconditionalparameters-expected.md)
+The following sections provide more information about legacy conditional parameters.
 
-- [KeyConditions (legacy)](legacyconditionalparameters-keyconditions.md)
-
-- [QueryFilter (legacy)](legacyconditionalparameters-queryfilter.md)
-
-- [ScanFilter (legacy)](legacyconditionalparameters-scanfilter.md)
-
-- [Writing conditions with legacy parameters](legacyconditionalparameters-conditions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateTable
-
-AttributesToGet
+**Topics**
++ [AttributesToGet (legacy)](LegacyConditionalParameters.AttributesToGet.md)
++ [AttributeUpdates (legacy)](LegacyConditionalParameters.AttributeUpdates.md)
++ [ConditionalOperator (legacy)](LegacyConditionalParameters.ConditionalOperator.md)
++ [Expected (legacy)](LegacyConditionalParameters.Expected.md)
++ [KeyConditions (legacy)](LegacyConditionalParameters.KeyConditions.md)
++ [QueryFilter (legacy)](LegacyConditionalParameters.QueryFilter.md)
++ [ScanFilter (legacy)](LegacyConditionalParameters.ScanFilter.md)
++ [Writing conditions with legacy parameters](LegacyConditionalParameters.Conditions.md)
 
 All content copied from https://docs.aws.amazon.com/.

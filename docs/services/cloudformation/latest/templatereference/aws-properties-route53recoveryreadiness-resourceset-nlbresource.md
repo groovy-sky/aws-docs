@@ -2,52 +2,41 @@
 title: "AWS::Route53RecoveryReadiness::ResourceSet NLBResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryReadiness::ResourceSet NLBResource
+<a name="aws-properties-route53recoveryreadiness-resourceset-nlbresource"></a>
 
 The Network Load Balancer resource that a DNS target resource points to.
 
 ## Syntax
+<a name="aws-properties-route53recoveryreadiness-resourceset-nlbresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53recoveryreadiness-resourceset-nlbresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arn" : String
+  "[Arn](#cfn-route53recoveryreadiness-resourceset-nlbresource-arn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53recoveryreadiness-resourceset-nlbresource-syntax.yaml"></a>
 
-```yaml
-
-  Arn: String
-
+```
+  [Arn](#cfn-route53recoveryreadiness-resourceset-nlbresource-arn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53recoveryreadiness-resourceset-nlbresource-properties"></a>
 
-`Arn`
-
+`Arn`  <a name="cfn-route53recoveryreadiness-resourceset-nlbresource-arn"></a>
 The Network Load Balancer resource Amazon Resource Name (ARN).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DNSTargetResource
-
-R53ResourceRecord
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

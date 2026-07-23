@@ -2,76 +2,57 @@
 title: "AWS::QuickSight::Template ColumnSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ColumnSchema
+<a name="aws-properties-quicksight-template-columnschema"></a>
 
 The column schema.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-columnschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-columnschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataType" : String,
-  "GeographicRole" : String,
-  "Name" : String
+  "[DataType](#cfn-quicksight-template-columnschema-datatype)" : {{String}},
+  "[GeographicRole](#cfn-quicksight-template-columnschema-geographicrole)" : {{String}},
+  "[Name](#cfn-quicksight-template-columnschema-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-columnschema-syntax.yaml"></a>
 
-```yaml
-
-  DataType: String
-  GeographicRole: String
-  Name: String
-
+```
+  [DataType](#cfn-quicksight-template-columnschema-datatype): {{String}}
+  [GeographicRole](#cfn-quicksight-template-columnschema-geographicrole): {{String}}
+  [Name](#cfn-quicksight-template-columnschema-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-columnschema-properties"></a>
 
-`DataType`
-
+`DataType`  <a name="cfn-quicksight-template-columnschema-datatype"></a>
 The data type of the column schema.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GeographicRole`
-
+`GeographicRole`  <a name="cfn-quicksight-template-columnschema-geographicrole"></a>
 The geographic role of the column schema.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-template-columnschema-name"></a>
 The name of the column schema.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnIdentifier
-
-ColumnSort
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,47 @@
 title: "AWS::Wisdom::KnowledgeBase RenderingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::KnowledgeBase RenderingConfiguration
+<a name="aws-properties-wisdom-knowledgebase-renderingconfiguration"></a>
 
 Information about how to render the content.
 
 ## Syntax
+<a name="aws-properties-wisdom-knowledgebase-renderingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-knowledgebase-renderingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TemplateUri" : String
+  "[TemplateUri](#cfn-wisdom-knowledgebase-renderingconfiguration-templateuri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-knowledgebase-renderingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TemplateUri: String
-
+```
+  [TemplateUri](#cfn-wisdom-knowledgebase-renderingconfiguration-templateuri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-knowledgebase-renderingconfiguration-properties"></a>
 
-`TemplateUri`
-
-A URI template containing exactly one variable in `${variableName} ` format. This can only be set for
-`EXTERNAL` knowledge bases. For Salesforce, ServiceNow, and Zendesk, the variable must be one of the
-following:
-
-- Salesforce: `Id`, `ArticleNumber`, `VersionNumber`, `Title`,
-`PublishStatus`, or `IsDeleted`
-
-- ServiceNow: `number`, `short_description`, `sys_mod_count`,
-`workflow_state`, or `active`
-
-- Zendesk: `id`, `title`, `updated_at`, or `draft`
-
-The variable is replaced with the actual value for a piece of content when calling [GetContent](../../../../reference/amazon-q-connect/latest/apireference/api-getcontent.md).
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParsingPrompt
-
-SeedUrl
+`TemplateUri`  <a name="cfn-wisdom-knowledgebase-renderingconfiguration-templateuri"></a>
+A URI template containing exactly one variable in `${variableName} `format. This can only be set for `EXTERNAL` knowledge bases. For Salesforce, ServiceNow, and Zendesk, the variable must be one of the following:
++ Salesforce: `Id`, `ArticleNumber`, `VersionNumber`, `Title`, `PublishStatus`, or `IsDeleted`
++ ServiceNow: `number`, `short_description`, `sys_mod_count`, `workflow_state`, or `active`
++ Zendesk: `id`, `title`, `updated_at`, or `draft`
+The variable is replaced with the actual value for a piece of content when calling [GetContent](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_GetContent.html).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

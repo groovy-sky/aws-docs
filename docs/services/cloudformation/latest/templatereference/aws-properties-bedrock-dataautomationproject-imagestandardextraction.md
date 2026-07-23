@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject ImageStandardExtraction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject ImageStandardExtraction
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction"></a>
 
 Settings for generating data from images.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction-syntax.json"></a>
 
-```json
-
+```
 {
-  "BoundingBox" : ImageBoundingBox,
-  "Category" : ImageExtractionCategory
+  "[BoundingBox](#cfn-bedrock-dataautomationproject-imagestandardextraction-boundingbox)" : {{ImageBoundingBox}},
+  "[Category](#cfn-bedrock-dataautomationproject-imagestandardextraction-category)" : {{ImageExtractionCategory}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction-syntax.yaml"></a>
 
-```yaml
-
-  BoundingBox:
-    ImageBoundingBox
-  Category:
-    ImageExtractionCategory
-
+```
+  [BoundingBox](#cfn-bedrock-dataautomationproject-imagestandardextraction-boundingbox): {{
+    ImageBoundingBox}}
+  [Category](#cfn-bedrock-dataautomationproject-imagestandardextraction-category): {{
+    ImageExtractionCategory}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction-properties"></a>
 
-`BoundingBox`
-
+`BoundingBox`  <a name="cfn-bedrock-dataautomationproject-imagestandardextraction-boundingbox"></a>
 Settings for generating bounding boxes.
+*Required*: Yes
+*Type*: [ImageBoundingBox](aws-properties-bedrock-dataautomationproject-imageboundingbox.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ImageBoundingBox](aws-properties-bedrock-dataautomationproject-imageboundingbox.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Category`
-
+`Category`  <a name="cfn-bedrock-dataautomationproject-imagestandardextraction-category"></a>
 Settings for generating categorical data.
-
-_Required_: Yes
-
-_Type_: [ImageExtractionCategory](aws-properties-bedrock-dataautomationproject-imageextractioncategory.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageOverrideConfiguration
-
-ImageStandardGenerativeField
+*Required*: Yes
+*Type*: [ImageExtractionCategory](aws-properties-bedrock-dataautomationproject-imageextractioncategory.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

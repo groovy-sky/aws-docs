@@ -2,111 +2,77 @@
 title: "AWS::SageMaker::Project CfnTemplateProviderDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Project CfnTemplateProviderDetail
+<a name="aws-properties-sagemaker-project-cfntemplateproviderdetail"></a>
 
-Details about a CloudFormation template provider configuration and associated provisioning information.
+ Details about a CloudFormation template provider configuration and associated provisioning information.
 
 ## Syntax
+<a name="aws-properties-sagemaker-project-cfntemplateproviderdetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-project-cfntemplateproviderdetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "Parameters" : [ CfnStackParameter, ... ],
-  "RoleARN" : String,
-  "TemplateName" : String,
-  "TemplateURL" : String
+  "[Parameters](#cfn-sagemaker-project-cfntemplateproviderdetail-parameters)" : {{[ CfnStackParameter, ... ]}},
+  "[RoleARN](#cfn-sagemaker-project-cfntemplateproviderdetail-rolearn)" : {{String}},
+  "[TemplateName](#cfn-sagemaker-project-cfntemplateproviderdetail-templatename)" : {{String}},
+  "[TemplateURL](#cfn-sagemaker-project-cfntemplateproviderdetail-templateurl)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-project-cfntemplateproviderdetail-syntax.yaml"></a>
 
-```yaml
-
-  Parameters:
-    - CfnStackParameter
-  RoleARN: String
-  TemplateName: String
-  TemplateURL: String
-
+```
+  [Parameters](#cfn-sagemaker-project-cfntemplateproviderdetail-parameters): {{
+    - CfnStackParameter}}
+  [RoleARN](#cfn-sagemaker-project-cfntemplateproviderdetail-rolearn): {{String}}
+  [TemplateName](#cfn-sagemaker-project-cfntemplateproviderdetail-templatename): {{String}}
+  [TemplateURL](#cfn-sagemaker-project-cfntemplateproviderdetail-templateurl): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-project-cfntemplateproviderdetail-properties"></a>
 
-`Parameters`
+`Parameters`  <a name="cfn-sagemaker-project-cfntemplateproviderdetail-parameters"></a>
+ An array of CloudFormation stack parameters.
+*Required*: No
+*Type*: Array of [CfnStackParameter](aws-properties-sagemaker-project-cfnstackparameter.md)
+*Minimum*: `0`
+*Maximum*: `180`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-An array of CloudFormation stack parameters.
+`RoleARN`  <a name="cfn-sagemaker-project-cfntemplateproviderdetail-rolearn"></a>
+ The IAM role used by CloudFormation to create the stack.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`TemplateName`  <a name="cfn-sagemaker-project-cfntemplateproviderdetail-templatename"></a>
+ The unique identifier of the template within the project.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?=.{1,32}$)[a-zA-Z0-9](-*[a-zA-Z0-9])*`
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Array of [CfnStackParameter](aws-properties-sagemaker-project-cfnstackparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `180`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleARN`
-
-The IAM role used by CloudFormation to create the stack.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TemplateName`
-
-The unique identifier of the template within the project.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?=.{1,32}$)[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TemplateURL`
-
-The Amazon S3 URL of the CloudFormation template.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?=.{1,1024}$)(https)://([^/]+)/(.+)`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CfnStackParameter
-
-ProvisioningParameter
+`TemplateURL`  <a name="cfn-sagemaker-project-cfntemplateproviderdetail-templateurl"></a>
+ The Amazon S3 URL of the CloudFormation template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?=.{1,1024}$)(https)://([^/]+)/(.+)`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

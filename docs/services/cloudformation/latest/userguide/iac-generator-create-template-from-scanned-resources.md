@@ -3,80 +3,58 @@ title: "Create a CloudFormation template from resources scanned with IaC generat
 ---
 
 # Create a CloudFormation template from resources scanned with IaC generator
+<a name="iac-generator-create-template-from-scanned-resources"></a>
 
-This topic explains how to create a template from resources that were scanned using
-the IaC generator feature.
+This topic explains how to create a template from resources that were scanned using the IaC generator feature.
 
 ## Create a template from scanned resources (console)
+<a name="create-template-from-scanned-resources-console"></a>
 
-###### To create a stack template from scanned resources
+**To create a stack template from scanned resources**
 
-1. Open the [IaC\
-    generator page](https://console.aws.amazon.com/cloudformation/home?) of the CloudFormation console.
+1. Open the [IaC generator page](https://console.aws.amazon.com/cloudformation/home?#iac-generator) of the CloudFormation console.
 
-2. On the navigation bar at the top of the screen, choose the AWS Region
-    that contains the scanned resources.
+1. On the navigation bar at the top of the screen, choose the AWS Region that contains the scanned resources.
 
-3. From the **Templates** section, choose **Create**
-**template**.
+1. From the **Templates** section, choose **Create template**.
 
-4. Choose **Start from a new template**.
-1. For **Template name**, provide a name for your
-       template.
+1. Choose **Start from a new template**.
 
-2. (Optional) Configure your **Deletion policy** and
-       **Update replace policy**.
+   1. For **Template name**, provide a name for your template.
 
-3. Choose **Next** to add scanned resources to the
-       template.
-5. For **Add scanned resources**, browse the list of scanned
-    resources and select the resources you want to add to your template. You can
-    filter the resources by resource identifier, resource type, or tags. The
-    filters are mutually inclusive.
+   1. (Optional) Configure your **Deletion policy** and **Update replace policy**.
 
-6. When you've added all needed resources to your template, choose
-    **Next** to exit the **Add scanned**
-**resources** page and proceed to the **Add related**
-**resources** page.
+   1. Choose **Next** to add scanned resources to the template.
 
-7. Review a recommended list of related resources. Related resources, such as
-    Amazon EC2 instances and security groups, are interdependent and typically belong
-    to the same workload. Select the related resources that you want to include
-    in the generated template.
+1. For **Add scanned resources**, browse the list of scanned resources and select the resources you want to add to your template. You can filter the resources by resource identifier, resource type, or tags. The filters are mutually inclusive.
 
-###### Note
+1. When you've added all needed resources to your template, choose **Next** to exit the **Add scanned resources** page and proceed to the **Add related resources** page.
 
+1. Review a recommended list of related resources. Related resources, such as Amazon EC2 instances and security groups, are interdependent and typically belong to the same workload. Select the related resources that you want to include in the generated template.
+**Note**
 We suggest that you add all related resources to this template.
 
-8. Review the template details, scanned resources, and related resources.
+1. Review the template details, scanned resources, and related resources.
 
-9. Choose **Create template** to exit the **Review**
-**and create** page and create the template.
+1. Choose **Create template** to exit the **Review and create** page and create the template.
 
 ## Create a template from scanned resources (AWS CLI)
+<a name="create-template-from-scanned-resources-cli"></a>
 
-###### To create a stack template from scanned resources
+**To create a stack template from scanned resources**
 
-1. Use the [list-resource-scan-resources](../../../cli/latest/reference/cloudformation/list-resource-scan-resources.md) command to list the resources
-    found during the scan, optionally specifying the
-    `--resource-identifier` option to limit the output. For the
-    `--resource-scan-id` option, replace the sample ARN with the
-    actual ARN.
+1. Use the [list-resource-scan-resources](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-resource-scan-resources.html) command to list the resources found during the scan, optionally specifying the `--resource-identifier` option to limit the output. For the `--resource-scan-id` option, replace the sample ARN with the actual ARN.
 
-```nohighlight
+   ```
+   aws cloudformation list-resource-scan-resources \
+     --resource-scan-id {{arn:aws:cloudformation:us-east-1:123456789012:resourceScan/0a699f15-489c-43ca-a3ef-3e6ecfa5da60}} \
+     --resource-identifier {{MyApp}}
+   ```
 
-aws cloudformation list-resource-scan-resources \
-     --resource-scan-id arn:aws:cloudformation:us-east-1:123456789012:resourceScan/0a699f15-489c-43ca-a3ef-3e6ecfa5da60 \
-     --resource-identifier MyApp
-```
+   The following is an example response, where `ManagedByStack` indicates whether CloudFormation manages the resource already. Copy the output. You need it for the next step.
 
-The following is an example response, where `ManagedByStack`
-    indicates whether CloudFormation manages the resource already. Copy the output.
-    You need it for the next step.
-
-```json
-
-{
+   ```
+   {
        "Resources": [
            {
                "ResourceType": "AWS::EKS::Cluster",
@@ -93,21 +71,16 @@ The following is an example response, where `ManagedByStack`
                "ManagedByStack": false
            }
        ]
-}
-```
+   }
+   ```
 
-For a description of the fields in the output, see [ScannedResource](../../../../reference/awscloudformation/latest/apireference/api-scannedresource.md) in the
-    _AWS CloudFormation API Reference_.
+   For a description of the fields in the output, see [ScannedResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ScannedResource.html) in the *AWS CloudFormation API Reference*.
 
-2. Use the `cat` command to store the resource types and
-    identifiers in a JSON file named `resources.json` in your home
-    directory. The following is example JSON based on the example output in the
-    previous step.
+1. Use the `cat` command to store the resource types and identifiers in a JSON file named `resources.json` in your home directory. The following is example JSON based on the example output in the previous step.
 
-```json
-
-$ cat > resources.json
-[
+   ```
+   $ cat > resources.json
+   [
        {
            "ResourceType": "AWS::EKS::Cluster",
            "ResourceIdentifier": {
@@ -120,28 +93,21 @@ $ cat > resources.json
                "AutoScalingGroupName": "MyAppASGName"
            }
        }
-]
-```
+   ]
+   ```
 
-3. Use the [list-resource-scan-related-resources](../../../cli/latest/reference/cloudformation/list-resource-scan-related-resources.md) command, along with the
-    `resources.json` file you created, to list the resources
-    related to your scanned resources.
+1. Use the [list-resource-scan-related-resources](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-resource-scan-related-resources.html) command, along with the `resources.json` file you created, to list the resources related to your scanned resources.
 
-```nohighlight
+   ```
+   aws cloudformation list-resource-scan-related-resources \
+     --resource-scan-id {{arn:aws:cloudformation:us-east-1:123456789012:resourceScan/0a699f15-489c-43ca-a3ef-3e6ecfa5da60}} \
+     --resources {{file://resources.json}}
+   ```
 
-aws cloudformation list-resource-scan-related-resources \
-     --resource-scan-id arn:aws:cloudformation:us-east-1:123456789012:resourceScan/0a699f15-489c-43ca-a3ef-3e6ecfa5da60 \
-     --resources file://resources.json
-```
+   The following is an example response, where `ManagedByStack` indicates whether CloudFormation manages the resource already. Add these resources to the JSON file you created in the previous step. You'll need it to create your template.
 
-The following is an example response, where `ManagedByStack`
-    indicates whether CloudFormation manages the resource already. Add these
-    resources to the JSON file you created in the previous step. You'll need it
-    to create your template.
-
-```json
-
-{
+   ```
+   {
        "RelatedResources": [
            {
                "ResourceType": "AWS::EKS::Nodegroup",
@@ -153,97 +119,72 @@ The following is an example response, where `ManagedByStack`
            {
                "ResourceType": "AWS::IAM::Role",
                "ResourceIdentifier": {
-                   "RoleId": "arn:aws::iam::account-id:role/MyAppIAMRole"
+                   "RoleId": "arn:aws::iam::{{account-id}}:role/MyAppIAMRole"
                },
                "ManagedByStack": false
            }
        ]
-}
-```
+   }
+   ```
 
-For a description of the fields in the output, see [ScannedResource](../../../../reference/awscloudformation/latest/apireference/api-scannedresource.md) in the
-    _AWS CloudFormation API Reference_.
+   For a description of the fields in the output, see [ScannedResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ScannedResource.html) in the *AWS CloudFormation API Reference*.
+**Note**
+The input list of resources can't exceed a length of 100. To list related resources for more than 100 resources, run the **list-resource-scan-related-resources** command in batches of 100 and consolidate the results.
+Be aware that the output may contain duplicated resources in the list.
 
-###### Note
+1. Use the [create-generated-template](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-generated-template.html) command to create a new stack template, as follows, with these modifications:
+   + Replace `{{us-east-1}}` with the AWS Region that contains the scanned resources.
+   + Replace `{{MyTemplate}}` with the name of the template to create.
 
-The input list of resources can't exceed a length of 100. To list
-related resources for more than 100 resources, run the
-**list-resource-scan-related-resources** command in
-batches of 100 and consolidate the results.
+   ```
+   aws cloudformation create-generated-template --region {{us-east-1}} \
+    --generated-template-name {{MyTemplate}} \
+     --resources {{file://resources.json}}
+   ```
 
-Be aware that the output may contain duplicated resources in the
-list.
+   The following is an example `resources.json` file.
 
-4. Use the [create-generated-template](../../../cli/latest/reference/cloudformation/create-generated-template.md) command to create a new stack
-    template, as follows, with these modifications:
+   ```
+   [
+       {
+           "ResourceType": "AWS::EKS::Cluster",
+           "LogicalResourceId":"MyCluster",
+           "ResourceIdentifier": {
+               "ClusterName": "MyAppClusterName"
+           }
+       },
+       {
+           "ResourceType": "AWS::AutoScaling::AutoScalingGroup",
+           "LogicalResourceId":"MyASG",
+           "ResourceIdentifier": {
+               "AutoScalingGroupName": "MyAppASGName"
+           }
+       },
+       {
+           "ResourceType": "AWS::EKS::Nodegroup",
+           "LogicalResourceId":"MyNodegroup",
+           "ResourceIdentifier": {
+               "NodegroupName": "MyAppNodegroupName"
+           }
+       },
+       {
+           "ResourceType": "AWS::IAM::Role",
+           "LogicalResourceId":"MyRole",
+           "ResourceIdentifier": {
+               "RoleId": "arn:aws::iam::{{account-id}}:role/MyAppIAMRole"
+           }
+       }
+   ]
+   ```
 
-- Replace
-`us-east-1`
-with the AWS Region that contains the scanned resources.
+   If successful, this command returns the following.
 
-- Replace `MyTemplate` with
-the name of the template to create.
-
-```nohighlight
-
-aws cloudformation create-generated-template --region us-east-1 \
- --generated-template-name MyTemplate \
-  --resources file://resources.json
-```
-
-The following is an example `resources.json` file.
-
-```json
-
-[
-    {
-        "ResourceType": "AWS::EKS::Cluster",
-        "LogicalResourceId":"MyCluster",
-        "ResourceIdentifier": {
-            "ClusterName": "MyAppClusterName"
-        }
-    },
-    {
-        "ResourceType": "AWS::AutoScaling::AutoScalingGroup",
-        "LogicalResourceId":"MyASG",
-        "ResourceIdentifier": {
-            "AutoScalingGroupName": "MyAppASGName"
-        }
-    },
-    {
-        "ResourceType": "AWS::EKS::Nodegroup",
-        "LogicalResourceId":"MyNodegroup",
-        "ResourceIdentifier": {
-            "NodegroupName": "MyAppNodegroupName"
-        }
-    },
-    {
-        "ResourceType": "AWS::IAM::Role",
-        "LogicalResourceId":"MyRole",
-        "ResourceIdentifier": {
-            "RoleId": "arn:aws::iam::account-id:role/MyAppIAMRole"
-        }
-    }
-]
-```
-
-If successful, this command returns the following.
-
-```json
-
-{
-  "Arn":
-    "arn:aws:cloudformation:region:account-id:generatedtemplate/7fc8512c-d8cb-4e02-b266-d39c48344e48",
-  "Name": "MyTemplate"
-}
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-View the scan
-summary
-
-Create a
-stack from scanned resources
+   ```
+   {
+     "Arn":
+       "arn:aws:cloudformation:{{region}}:{{account-id}}:generatedtemplate/{{7fc8512c-d8cb-4e02-b266-d39c48344e48}}",
+     "Name": "{{MyTemplate}}"
+   }
+   ```
 
 All content copied from https://docs.aws.amazon.com/.

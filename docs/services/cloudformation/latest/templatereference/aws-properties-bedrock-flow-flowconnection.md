@@ -2,109 +2,78 @@
 title: "AWS::Bedrock::Flow FlowConnection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow FlowConnection
+<a name="aws-properties-bedrock-flow-flowconnection"></a>
 
 Contains information about a connection between two nodes in the flow.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-flowconnection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-flowconnection-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configuration" : FlowConnectionConfiguration,
-  "Name" : String,
-  "Source" : String,
-  "Target" : String,
-  "Type" : String
+  "[Configuration](#cfn-bedrock-flow-flowconnection-configuration)" : {{FlowConnectionConfiguration}},
+  "[Name](#cfn-bedrock-flow-flowconnection-name)" : {{String}},
+  "[Source](#cfn-bedrock-flow-flowconnection-source)" : {{String}},
+  "[Target](#cfn-bedrock-flow-flowconnection-target)" : {{String}},
+  "[Type](#cfn-bedrock-flow-flowconnection-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-flowconnection-syntax.yaml"></a>
 
-```yaml
-
-  Configuration:
-    FlowConnectionConfiguration
-  Name: String
-  Source: String
-  Target: String
-  Type: String
-
+```
+  [Configuration](#cfn-bedrock-flow-flowconnection-configuration): {{
+    FlowConnectionConfiguration}}
+  [Name](#cfn-bedrock-flow-flowconnection-name): {{String}}
+  [Source](#cfn-bedrock-flow-flowconnection-source): {{String}}
+  [Target](#cfn-bedrock-flow-flowconnection-target): {{String}}
+  [Type](#cfn-bedrock-flow-flowconnection-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-flowconnection-properties"></a>
 
-`Configuration`
-
+`Configuration`  <a name="cfn-bedrock-flow-flowconnection-configuration"></a>
 The configuration of the connection.
+*Required*: No
+*Type*: [FlowConnectionConfiguration](aws-properties-bedrock-flow-flowconnectionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FlowConnectionConfiguration](aws-properties-bedrock-flow-flowconnectionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrock-flow-flowconnection-name"></a>
 A name for the connection that you can reference.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,100}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,100}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-bedrock-flow-flowconnection-source"></a>
 The node that the connection starts at.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
+`Target`  <a name="cfn-bedrock-flow-flowconnection-target"></a>
 The node that the connection ends at.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Whether the source node that the connection begins from is a condition node ( `Conditional`) or not ( `Data`).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Data | Conditional`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowConditionalConnectionConfiguration
-
-FlowConnectionConfiguration
+`Type`  <a name="cfn-bedrock-flow-flowconnection-type"></a>
+Whether the source node that the connection begins from is a condition node (`Conditional`) or not (`Data`).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Data | Conditional`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

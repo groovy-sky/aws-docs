@@ -2,207 +2,140 @@
 title: "AWS::QuickSight::Analysis AnalysisDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis AnalysisDefinition
+<a name="aws-properties-quicksight-analysis-analysisdefinition"></a>
 
 The definition of an analysis.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-analysisdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-analysisdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnalysisDefaults" : AnalysisDefaults,
-  "CalculatedFields" : [ CalculatedField, ... ],
-  "ColumnConfigurations" : [ ColumnConfiguration, ... ],
-  "DataSetIdentifierDeclarations" : [ DataSetIdentifierDeclaration, ... ],
-  "FilterGroups" : [ FilterGroup, ... ],
-  "Options" : AssetOptions,
-  "ParameterDeclarations" : [ ParameterDeclaration, ... ],
-  "QueryExecutionOptions" : QueryExecutionOptions,
-  "Sheets" : [ SheetDefinition, ... ],
-  "StaticFiles" : [ StaticFile, ... ]
+  "[AnalysisDefaults](#cfn-quicksight-analysis-analysisdefinition-analysisdefaults)" : {{AnalysisDefaults}},
+  "[CalculatedFields](#cfn-quicksight-analysis-analysisdefinition-calculatedfields)" : {{[ CalculatedField, ... ]}},
+  "[ColumnConfigurations](#cfn-quicksight-analysis-analysisdefinition-columnconfigurations)" : {{[ ColumnConfiguration, ... ]}},
+  "[DataSetIdentifierDeclarations](#cfn-quicksight-analysis-analysisdefinition-datasetidentifierdeclarations)" : {{[ DataSetIdentifierDeclaration, ... ]}},
+  "[FilterGroups](#cfn-quicksight-analysis-analysisdefinition-filtergroups)" : {{[ FilterGroup, ... ]}},
+  "[Options](#cfn-quicksight-analysis-analysisdefinition-options)" : {{AssetOptions}},
+  "[ParameterDeclarations](#cfn-quicksight-analysis-analysisdefinition-parameterdeclarations)" : {{[ ParameterDeclaration, ... ]}},
+  "[QueryExecutionOptions](#cfn-quicksight-analysis-analysisdefinition-queryexecutionoptions)" : {{QueryExecutionOptions}},
+  "[Sheets](#cfn-quicksight-analysis-analysisdefinition-sheets)" : {{[ SheetDefinition, ... ]}},
+  "[StaticFiles](#cfn-quicksight-analysis-analysisdefinition-staticfiles)" : {{[ StaticFile, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-analysisdefinition-syntax.yaml"></a>
 
-```yaml
-
-  AnalysisDefaults:
-    AnalysisDefaults
-  CalculatedFields:
-    - CalculatedField
-  ColumnConfigurations:
-    - ColumnConfiguration
-  DataSetIdentifierDeclarations:
-    - DataSetIdentifierDeclaration
-  FilterGroups:
-    - FilterGroup
-  Options:
-    AssetOptions
-  ParameterDeclarations:
-    - ParameterDeclaration
-  QueryExecutionOptions:
-    QueryExecutionOptions
-  Sheets:
-    - SheetDefinition
-  StaticFiles:
-    - StaticFile
-
+```
+  [AnalysisDefaults](#cfn-quicksight-analysis-analysisdefinition-analysisdefaults): {{
+    AnalysisDefaults}}
+  [CalculatedFields](#cfn-quicksight-analysis-analysisdefinition-calculatedfields): {{
+    - CalculatedField}}
+  [ColumnConfigurations](#cfn-quicksight-analysis-analysisdefinition-columnconfigurations): {{
+    - ColumnConfiguration}}
+  [DataSetIdentifierDeclarations](#cfn-quicksight-analysis-analysisdefinition-datasetidentifierdeclarations): {{
+    - DataSetIdentifierDeclaration}}
+  [FilterGroups](#cfn-quicksight-analysis-analysisdefinition-filtergroups): {{
+    - FilterGroup}}
+  [Options](#cfn-quicksight-analysis-analysisdefinition-options): {{
+    AssetOptions}}
+  [ParameterDeclarations](#cfn-quicksight-analysis-analysisdefinition-parameterdeclarations): {{
+    - ParameterDeclaration}}
+  [QueryExecutionOptions](#cfn-quicksight-analysis-analysisdefinition-queryexecutionoptions): {{
+    QueryExecutionOptions}}
+  [Sheets](#cfn-quicksight-analysis-analysisdefinition-sheets): {{
+    - SheetDefinition}}
+  [StaticFiles](#cfn-quicksight-analysis-analysisdefinition-staticfiles): {{
+    - StaticFile}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-analysisdefinition-properties"></a>
 
-`AnalysisDefaults`
-
+`AnalysisDefaults`  <a name="cfn-quicksight-analysis-analysisdefinition-analysisdefaults"></a>
 Property description not available.
+*Required*: No
+*Type*: [AnalysisDefaults](aws-properties-quicksight-analysis-analysisdefaults.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AnalysisDefaults](aws-properties-quicksight-analysis-analysisdefaults.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CalculatedFields`
-
+`CalculatedFields`  <a name="cfn-quicksight-analysis-analysisdefinition-calculatedfields"></a>
 An array of calculated field definitions for the analysis.
+*Required*: No
+*Type*: Array of [CalculatedField](aws-properties-quicksight-analysis-calculatedfield.md)
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ColumnConfigurations`  <a name="cfn-quicksight-analysis-analysisdefinition-columnconfigurations"></a>
+ An array of analysis-level column configurations. Column configurations can be used to set default formatting for a column to be used throughout an analysis.
+*Required*: No
+*Type*: Array of [ColumnConfiguration](aws-properties-quicksight-analysis-columnconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CalculatedField](aws-properties-quicksight-analysis-calculatedfield.md)
+`DataSetIdentifierDeclarations`  <a name="cfn-quicksight-analysis-analysisdefinition-datasetidentifierdeclarations"></a>
+An array of dataset identifier declarations. This mapping allows the usage of dataset identifiers instead of dataset ARNs throughout analysis sub-structures.
+*Required*: Yes
+*Type*: Array of [DataSetIdentifierDeclaration](aws-properties-quicksight-analysis-datasetidentifierdeclaration.md)
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnConfigurations`
-
-An array of analysis-level column configurations. Column configurations can be used to set default
-formatting for a column to be used throughout an analysis.
-
-_Required_: No
-
-_Type_: Array of [ColumnConfiguration](aws-properties-quicksight-analysis-columnconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetIdentifierDeclarations`
-
-An array of dataset identifier declarations. This mapping allows the usage of dataset identifiers instead
-of dataset ARNs throughout analysis sub-structures.
-
-_Required_: Yes
-
-_Type_: Array of [DataSetIdentifierDeclaration](aws-properties-quicksight-analysis-datasetidentifierdeclaration.md)
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterGroups`
-
+`FilterGroups`  <a name="cfn-quicksight-analysis-analysisdefinition-filtergroups"></a>
 Filter definitions for an analysis.
+For more information, see [Filtering Data in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/adding-a-filter.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [FilterGroup](aws-properties-quicksight-analysis-filtergroup.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Filtering Data in Amazon Quick Sight](../../../quicksight/latest/user/adding-a-filter.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [FilterGroup](aws-properties-quicksight-analysis-filtergroup.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-quicksight-analysis-analysisdefinition-options"></a>
 An array of option definitions for an analysis.
+*Required*: No
+*Type*: [AssetOptions](aws-properties-quicksight-analysis-assetoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AssetOptions](aws-properties-quicksight-analysis-assetoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterDeclarations`
-
+`ParameterDeclarations`  <a name="cfn-quicksight-analysis-analysisdefinition-parameterdeclarations"></a>
 An array of parameter declarations for an analysis.
-
 Parameters are named variables that can transfer a value for use by an action or an object.
+For more information, see [Parameters in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/parameters-in-quicksight.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [ParameterDeclaration](aws-properties-quicksight-analysis-parameterdeclaration.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Parameters in Amazon Quick Sight](../../../quicksight/latest/user/parameters-in-quicksight.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [ParameterDeclaration](aws-properties-quicksight-analysis-parameterdeclaration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryExecutionOptions`
-
+`QueryExecutionOptions`  <a name="cfn-quicksight-analysis-analysisdefinition-queryexecutionoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [QueryExecutionOptions](aws-properties-quicksight-analysis-queryexecutionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Sheets`  <a name="cfn-quicksight-analysis-analysisdefinition-sheets"></a>
+An array of sheet definitions for an analysis. Each `SheetDefinition` provides detailed information about a sheet within this analysis.
+*Required*: No
+*Type*: Array of [SheetDefinition](aws-properties-quicksight-analysis-sheetdefinition.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [QueryExecutionOptions](aws-properties-quicksight-analysis-queryexecutionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sheets`
-
-An array of sheet definitions for an analysis. Each `SheetDefinition` provides detailed information about
-a sheet within this analysis.
-
-_Required_: No
-
-_Type_: Array of [SheetDefinition](aws-properties-quicksight-analysis-sheetdefinition.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticFiles`
-
+`StaticFiles`  <a name="cfn-quicksight-analysis-analysisdefinition-staticfiles"></a>
 The static files for the definition.
-
-_Required_: No
-
-_Type_: Array of [StaticFile](aws-properties-quicksight-analysis-staticfile.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisDefaults
-
-AnalysisError
+*Required*: No
+*Type*: Array of [StaticFile](aws-properties-quicksight-analysis-staticfile.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

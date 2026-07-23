@@ -2,66 +2,51 @@
 title: "AWS::MSK::Cluster VpcConnectivitySasl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster VpcConnectivitySasl
+<a name="aws-properties-msk-cluster-vpcconnectivitysasl"></a>
 
 Details for client authentication using SASL for VpcConnectivity.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-vpcconnectivitysasl-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-vpcconnectivitysasl-syntax.json"></a>
 
-```json
-
+```
 {
-  "Iam" : VpcConnectivityIam,
-  "Scram" : VpcConnectivityScram
+  "[Iam](#cfn-msk-cluster-vpcconnectivitysasl-iam)" : {{VpcConnectivityIam}},
+  "[Scram](#cfn-msk-cluster-vpcconnectivitysasl-scram)" : {{VpcConnectivityScram}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-vpcconnectivitysasl-syntax.yaml"></a>
 
-```yaml
-
-  Iam:
-    VpcConnectivityIam
-  Scram:
-    VpcConnectivityScram
-
+```
+  [Iam](#cfn-msk-cluster-vpcconnectivitysasl-iam): {{
+    VpcConnectivityIam}}
+  [Scram](#cfn-msk-cluster-vpcconnectivitysasl-scram): {{
+    VpcConnectivityScram}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-vpcconnectivitysasl-properties"></a>
 
-`Iam`
-
+`Iam`  <a name="cfn-msk-cluster-vpcconnectivitysasl-iam"></a>
 Details for ClientAuthentication using IAM for VpcConnectivity.
+*Required*: No
+*Type*: [VpcConnectivityIam](aws-properties-msk-cluster-vpcconnectivityiam.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VpcConnectivityIam](aws-properties-msk-cluster-vpcconnectivityiam.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scram`
-
+`Scram`  <a name="cfn-msk-cluster-vpcconnectivitysasl-scram"></a>
 Details for SASL/SCRAM client authentication for VpcConnectivity.
-
-_Required_: No
-
-_Type_: [VpcConnectivityScram](aws-properties-msk-cluster-vpcconnectivityscram.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConnectivityIam
-
-VpcConnectivityScram
+*Required*: No
+*Type*: [VpcConnectivityScram](aws-properties-msk-cluster-vpcconnectivityscram.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

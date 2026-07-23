@@ -2,71 +2,53 @@
 title: "AWS::CloudFront::Distribution ParameterDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution ParameterDefinition
+<a name="aws-properties-cloudfront-distribution-parameterdefinition"></a>
 
 A list of parameter values to add to the resource. A parameter is specified as a key-value pair. A valid parameter value must exist for any parameter that is marked as required in the multi-tenant distribution.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-parameterdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-parameterdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Definition" : Definition,
-  "Name" : String
+  "[Definition](#cfn-cloudfront-distribution-parameterdefinition-definition)" : {{Definition}},
+  "[Name](#cfn-cloudfront-distribution-parameterdefinition-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-parameterdefinition-syntax.yaml"></a>
 
-```yaml
-
-  Definition:
-    Definition
-  Name: String
-
+```
+  [Definition](#cfn-cloudfront-distribution-parameterdefinition-definition): {{
+    Definition}}
+  [Name](#cfn-cloudfront-distribution-parameterdefinition-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-parameterdefinition-properties"></a>
 
-`Definition`
-
+`Definition`  <a name="cfn-cloudfront-distribution-parameterdefinition-definition"></a>
 The value that you assigned to the parameter.
+*Required*: Yes
+*Type*: [Definition](aws-properties-cloudfront-distribution-definition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Definition](aws-properties-cloudfront-distribution-definition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cloudfront-distribution-parameterdefinition-name"></a>
 The name of the parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9-_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OriginShield
-
-Restrictions
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9-_]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

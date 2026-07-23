@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Template VisualTitleLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template VisualTitleLabelOptions
+<a name="aws-properties-quicksight-template-visualtitlelabeloptions"></a>
 
 The title label options for a visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-visualtitlelabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-visualtitlelabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FormatText" : ShortFormatText,
-  "Visibility" : String
+  "[FormatText](#cfn-quicksight-template-visualtitlelabeloptions-formattext)" : {{ShortFormatText}},
+  "[Visibility](#cfn-quicksight-template-visualtitlelabeloptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-visualtitlelabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  FormatText:
-    ShortFormatText
-  Visibility: String
-
+```
+  [FormatText](#cfn-quicksight-template-visualtitlelabeloptions-formattext): {{
+    ShortFormatText}}
+  [Visibility](#cfn-quicksight-template-visualtitlelabeloptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-visualtitlelabeloptions-properties"></a>
 
-`FormatText`
-
+`FormatText`  <a name="cfn-quicksight-template-visualtitlelabeloptions-formattext"></a>
 The short text format of the title label, such as plain text or rich text.
+*Required*: No
+*Type*: [ShortFormatText](aws-properties-quicksight-template-shortformattext.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ShortFormatText](aws-properties-quicksight-template-shortformattext.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-template-visualtitlelabeloptions-visibility"></a>
 The visibility of the title label.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VisualSubtitleLabelOptions
-
-WaterfallChartAggregatedFieldWells
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

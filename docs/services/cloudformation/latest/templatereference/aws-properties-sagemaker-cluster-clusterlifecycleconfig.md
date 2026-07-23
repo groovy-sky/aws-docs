@@ -2,81 +2,66 @@
 title: "AWS::SageMaker::Cluster ClusterLifeCycleConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Cluster ClusterLifeCycleConfig
+<a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig"></a>
 
 The lifecycle configuration for a SageMaker HyperPod cluster.
 
 ## Syntax
+<a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "OnCreate" : String,
-  "SourceS3Uri" : String
+  "[OnCreate](#cfn-sagemaker-cluster-clusterlifecycleconfig-oncreate)" : {{String}},
+  "[OnInitComplete](#cfn-sagemaker-cluster-clusterlifecycleconfig-oninitcomplete)" : {{String}},
+  "[SourceS3Uri](#cfn-sagemaker-cluster-clusterlifecycleconfig-sources3uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig-syntax.yaml"></a>
 
-```yaml
-
-  OnCreate: String
-  SourceS3Uri: String
-
+```
+  [OnCreate](#cfn-sagemaker-cluster-clusterlifecycleconfig-oncreate): {{String}}
+  [OnInitComplete](#cfn-sagemaker-cluster-clusterlifecycleconfig-oninitcomplete): {{String}}
+  [SourceS3Uri](#cfn-sagemaker-cluster-clusterlifecycleconfig-sources3uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig-properties"></a>
 
-`OnCreate`
+`OnCreate`  <a name="cfn-sagemaker-cluster-clusterlifecycleconfig-oncreate"></a>
+The file name of the entrypoint script of lifecycle scripts under `SourceS3Uri`. This entrypoint script runs during cluster creation.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S\s]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The file name of the entrypoint script of lifecycle scripts under
-`SourceS3Uri`. This entrypoint script runs during cluster creation.
+`OnInitComplete`  <a name="cfn-sagemaker-cluster-clusterlifecycleconfig-oninitcomplete"></a>
+The file name of the entrypoint script of lifecycle scripts under `SourceS3Uri`. This script runs on the node after the AMI-based initialization is complete.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S\s]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\S\s]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceS3Uri`
-
+`SourceS3Uri`  <a name="cfn-sagemaker-cluster-clusterlifecycleconfig-sources3uri"></a>
 An Amazon S3 bucket path where your lifecycle scripts are stored.
-
-###### Important
-
-Make sure that the S3 bucket path starts with `s3://sagemaker-`. The
-[IAM role for SageMaker HyperPod](../../../sagemaker/latest/dg/sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) has the managed [`AmazonSageMakerClusterInstanceRolePolicy`](../../../sagemaker/latest/dg/security-iam-awsmanpol-cluster.md) attached, which
-allows access to S3 buckets with the specific prefix `sagemaker-`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(https|s3)://([^/]+)/?(.*)$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClusterKubernetesTaint
-
-ClusterOrchestratorEksConfig
+Make sure that the S3 bucket path starts with `s3://sagemaker-`. The [IAM role for SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-prerequisites.html#sagemaker-hyperpod-prerequisites-iam-role-for-hyperpod) has the managed [https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanpol-cluster.html) attached, which allows access to S3 buckets with the specific prefix `sagemaker-`.
+*Required*: No
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

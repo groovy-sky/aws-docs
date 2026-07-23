@@ -2,121 +2,84 @@
 title: "AWS::CleanRooms::Collaboration MemberSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Collaboration MemberSpecification
+<a name="aws-properties-cleanrooms-collaboration-memberspecification"></a>
 
 Basic metadata used to construct a new member.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-collaboration-memberspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-collaboration-memberspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountId" : String,
-  "DisplayName" : String,
-  "MemberAbilities" : [ String, ... ],
-  "MLMemberAbilities" : MLMemberAbilities,
-  "PaymentConfiguration" : PaymentConfiguration
+  "[AccountId](#cfn-cleanrooms-collaboration-memberspecification-accountid)" : {{String}},
+  "[DisplayName](#cfn-cleanrooms-collaboration-memberspecification-displayname)" : {{String}},
+  "[MemberAbilities](#cfn-cleanrooms-collaboration-memberspecification-memberabilities)" : {{[ String, ... ]}},
+  "[MLMemberAbilities](#cfn-cleanrooms-collaboration-memberspecification-mlmemberabilities)" : {{MLMemberAbilities}},
+  "[PaymentConfiguration](#cfn-cleanrooms-collaboration-memberspecification-paymentconfiguration)" : {{PaymentConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-collaboration-memberspecification-syntax.yaml"></a>
 
-```yaml
-
-  AccountId: String
-  DisplayName: String
-  MemberAbilities:
-    - String
-  MLMemberAbilities:
-    MLMemberAbilities
-  PaymentConfiguration:
-    PaymentConfiguration
-
+```
+  [AccountId](#cfn-cleanrooms-collaboration-memberspecification-accountid): {{String}}
+  [DisplayName](#cfn-cleanrooms-collaboration-memberspecification-displayname): {{String}}
+  [MemberAbilities](#cfn-cleanrooms-collaboration-memberspecification-memberabilities): {{
+    - String}}
+  [MLMemberAbilities](#cfn-cleanrooms-collaboration-memberspecification-mlmemberabilities): {{
+    MLMemberAbilities}}
+  [PaymentConfiguration](#cfn-cleanrooms-collaboration-memberspecification-paymentconfiguration): {{
+    PaymentConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-collaboration-memberspecification-properties"></a>
 
-`AccountId`
+`AccountId`  <a name="cfn-cleanrooms-collaboration-memberspecification-accountid"></a>
+The identifier used to reference members of the collaboration. Currently only supports AWS account ID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d+$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The identifier used to reference members of the collaboration. Currently only supports
-AWS account ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d+$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-cleanrooms-collaboration-memberspecification-displayname"></a>
 The member's display name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!\s*$)[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDBFF-\uDC00\uDFFF\t]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!\s*$)[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDBFF-\uDC00\uDFFF\t]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MemberAbilities`
-
+`MemberAbilities`  <a name="cfn-cleanrooms-collaboration-memberspecification-memberabilities"></a>
 The abilities granted to the collaboration member.
+*Allowed Values*: `CAN_QUERY` \| `CAN_RECEIVE_RESULTS`
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Allowed Values_: `CAN_QUERY` \| `CAN_RECEIVE_RESULTS`
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MLMemberAbilities`
-
+`MLMemberAbilities`  <a name="cfn-cleanrooms-collaboration-memberspecification-mlmemberabilities"></a>
 The ML abilities granted to the collaboration member.
+*Required*: No
+*Type*: [MLMemberAbilities](aws-properties-cleanrooms-collaboration-mlmemberabilities.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [MLMemberAbilities](aws-properties-cleanrooms-collaboration-mlmemberabilities.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PaymentConfiguration`
-
+`PaymentConfiguration`  <a name="cfn-cleanrooms-collaboration-memberspecification-paymentconfiguration"></a>
 The collaboration member's payment responsibilities set by the collaboration creator.
-
-If the collaboration creator hasn't speciﬁed anyone as the member paying for query
-compute costs, then the member who can query is the default payer.
-
-_Required_: No
-
-_Type_: [PaymentConfiguration](aws-properties-cleanrooms-collaboration-paymentconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JobComputePaymentConfig
-
-MLMemberAbilities
+If the collaboration creator hasn't speciﬁed anyone as the member paying for query compute costs, then the member who can query is the default payer.
+*Required*: No
+*Type*: [PaymentConfiguration](aws-properties-cleanrooms-collaboration-paymentconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

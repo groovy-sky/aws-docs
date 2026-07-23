@@ -2,127 +2,90 @@
 title: "AWS::IoT::Command CommandParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Command CommandParameter
+<a name="aws-properties-iot-command-commandparameter"></a>
 
-The `CommandParameter` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
+<a name="aws-properties-iot-command-commandparameter-description"></a>The `CommandParameter` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
 
 ## Syntax
+<a name="aws-properties-iot-command-commandparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-command-commandparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValue" : CommandParameterValue,
-  "Description" : String,
-  "Name" : String,
-  "Type" : String,
-  "Value" : CommandParameterValue,
-  "ValueConditions" : [ CommandParameterValueCondition, ... ]
+  "[DefaultValue](#cfn-iot-command-commandparameter-defaultvalue)" : {{CommandParameterValue}},
+  "[Description](#cfn-iot-command-commandparameter-description)" : {{String}},
+  "[Name](#cfn-iot-command-commandparameter-name)" : {{String}},
+  "[Type](#cfn-iot-command-commandparameter-type)" : {{String}},
+  "[Value](#cfn-iot-command-commandparameter-value)" : {{CommandParameterValue}},
+  "[ValueConditions](#cfn-iot-command-commandparameter-valueconditions)" : {{[ CommandParameterValueCondition, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-command-commandparameter-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValue:
-    CommandParameterValue
-  Description: String
-  Name: String
-  Type: String
-  Value:
-    CommandParameterValue
-  ValueConditions:
-    - CommandParameterValueCondition
-
+```
+  [DefaultValue](#cfn-iot-command-commandparameter-defaultvalue): {{
+    CommandParameterValue}}
+  [Description](#cfn-iot-command-commandparameter-description): {{String}}
+  [Name](#cfn-iot-command-commandparameter-name): {{String}}
+  [Type](#cfn-iot-command-commandparameter-type): {{String}}
+  [Value](#cfn-iot-command-commandparameter-value): {{
+    CommandParameterValue}}
+  [ValueConditions](#cfn-iot-command-commandparameter-valueconditions): {{
+    - CommandParameterValueCondition}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-command-commandparameter-properties"></a>
 
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-iot-command-commandparameter-defaultvalue"></a>
 Property description not available.
+*Required*: No
+*Type*: [CommandParameterValue](aws-properties-iot-command-commandparametervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CommandParameterValue](aws-properties-iot-command-commandparametervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-iot-command-commandparameter-description"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Maximum*: `2028`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2028`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-iot-command-commandparameter-name"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[.$a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `192`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[.$a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `192`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-iot-command-commandparameter-type"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `STRING | INTEGER | DOUBLE | LONG | UNSIGNEDLONG | BOOLEAN | BINARY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STRING | INTEGER | DOUBLE | LONG | UNSIGNEDLONG | BOOLEAN | BINARY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iot-command-commandparameter-value"></a>
 Property description not available.
+*Required*: No
+*Type*: [CommandParameterValue](aws-properties-iot-command-commandparametervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CommandParameterValue](aws-properties-iot-command-commandparametervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueConditions`
-
+`ValueConditions`  <a name="cfn-iot-command-commandparameter-valueconditions"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [CommandParameterValueCondition](aws-properties-iot-command-commandparametervaluecondition.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AwsJsonSubstitutionCommandPreprocessorConfig
-
-CommandParameterValue
+*Required*: No
+*Type*: Array of [CommandParameterValueCondition](aws-properties-iot-command-commandparametervaluecondition.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

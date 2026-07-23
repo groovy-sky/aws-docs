@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Template ForecastScenario"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ForecastScenario
+<a name="aws-properties-quicksight-template-forecastscenario"></a>
 
 The forecast scenario of a forecast in the line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-forecastscenario-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-forecastscenario-syntax.json"></a>
 
-```json
-
+```
 {
-  "WhatIfPointScenario" : WhatIfPointScenario,
-  "WhatIfRangeScenario" : WhatIfRangeScenario
+  "[WhatIfPointScenario](#cfn-quicksight-template-forecastscenario-whatifpointscenario)" : {{WhatIfPointScenario}},
+  "[WhatIfRangeScenario](#cfn-quicksight-template-forecastscenario-whatifrangescenario)" : {{WhatIfRangeScenario}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-forecastscenario-syntax.yaml"></a>
 
-```yaml
-
-  WhatIfPointScenario:
-    WhatIfPointScenario
-  WhatIfRangeScenario:
-    WhatIfRangeScenario
-
+```
+  [WhatIfPointScenario](#cfn-quicksight-template-forecastscenario-whatifpointscenario): {{
+    WhatIfPointScenario}}
+  [WhatIfRangeScenario](#cfn-quicksight-template-forecastscenario-whatifrangescenario): {{
+    WhatIfRangeScenario}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-forecastscenario-properties"></a>
 
-`WhatIfPointScenario`
-
+`WhatIfPointScenario`  <a name="cfn-quicksight-template-forecastscenario-whatifpointscenario"></a>
 The what-if analysis forecast setup with the target date.
+*Required*: No
+*Type*: [WhatIfPointScenario](aws-properties-quicksight-template-whatifpointscenario.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [WhatIfPointScenario](aws-properties-quicksight-template-whatifpointscenario.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WhatIfRangeScenario`
-
+`WhatIfRangeScenario`  <a name="cfn-quicksight-template-forecastscenario-whatifrangescenario"></a>
 The what-if analysis forecast setup with the date range.
-
-_Required_: No
-
-_Type_: [WhatIfRangeScenario](aws-properties-quicksight-template-whatifrangescenario.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ForecastConfiguration
-
-FormatConfiguration
+*Required*: No
+*Type*: [WhatIfRangeScenario](aws-properties-quicksight-template-whatifrangescenario.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

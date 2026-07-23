@@ -2,141 +2,114 @@
 title: "AWS::ServiceCatalog::ResourceUpdateConstraint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::ResourceUpdateConstraint
+<a name="aws-resource-servicecatalog-resourceupdateconstraint"></a>
 
 Specifies a `RESOURCE_UPDATE` constraint.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::ResourceUpdateConstraint",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "Description" : String,
-      "PortfolioId" : String,
-      "ProductId" : String,
-      "TagUpdateOnProvisionedProduct" : String
+      "[AcceptLanguage](#cfn-servicecatalog-resourceupdateconstraint-acceptlanguage)" : {{String}},
+      "[Description](#cfn-servicecatalog-resourceupdateconstraint-description)" : {{String}},
+      "[PortfolioId](#cfn-servicecatalog-resourceupdateconstraint-portfolioid)" : {{String}},
+      "[ProductId](#cfn-servicecatalog-resourceupdateconstraint-productid)" : {{String}},
+      "[TagUpdateOnProvisionedProduct](#cfn-servicecatalog-resourceupdateconstraint-tagupdateonprovisionedproduct)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::ResourceUpdateConstraint
 Properties:
-  AcceptLanguage: String
-  Description: String
-  PortfolioId: String
-  ProductId: String
-  TagUpdateOnProvisionedProduct: String
-
+  [AcceptLanguage](#cfn-servicecatalog-resourceupdateconstraint-acceptlanguage): {{String}}
+  [Description](#cfn-servicecatalog-resourceupdateconstraint-description): {{String}}
+  [PortfolioId](#cfn-servicecatalog-resourceupdateconstraint-portfolioid): {{String}}
+  [ProductId](#cfn-servicecatalog-resourceupdateconstraint-productid): {{String}}
+  [TagUpdateOnProvisionedProduct](#cfn-servicecatalog-resourceupdateconstraint-tagupdateonprovisionedproduct): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-resourceupdateconstraint-acceptlanguage"></a>
 The language code.
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `jp` \- Japanese
-
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-servicecatalog-resourceupdateconstraint-description"></a>
 The description of the constraint.
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PortfolioId`
-
+`PortfolioId`  <a name="cfn-servicecatalog-resourceupdateconstraint-portfolioid"></a>
 The portfolio identifier.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-servicecatalog-resourceupdateconstraint-productid"></a>
 The product identifier.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagUpdateOnProvisionedProduct`
-
-If set to `ALLOWED`, lets users change tags in a [CloudFormationProvisionedProduct](../userguide/aws-resource-servicecatalog-cloudformationprovisionedproduct.md) resource.
-
-If set to `NOT_ALLOWED`, prevents users from changing tags in a [CloudFormationProvisionedProduct](../userguide/aws-resource-servicecatalog-cloudformationprovisionedproduct.md) resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TagUpdateOnProvisionedProduct`  <a name="cfn-servicecatalog-resourceupdateconstraint-tagupdateonprovisionedproduct"></a>
+If set to `ALLOWED`, lets users change tags in a [CloudFormationProvisionedProduct](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html) resource.
+If set to `NOT_ALLOWED`, prevents users from changing tags in a [CloudFormationProvisionedProduct](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html) resource.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the identifier of the constraint.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-servicecatalog-resourceupdateconstraint-return-values-fn--getatt"></a>
 
 ## Examples
+<a name="aws-resource-servicecatalog-resourceupdateconstraint--examples"></a>
 
 ### Create a RESOURCE\_UPDATE constraint
+<a name="aws-resource-servicecatalog-resourceupdateconstraint--examples--Create_a_RESOURCE_UPDATE_constraint"></a>
 
 #### JSON
+<a name="aws-resource-servicecatalog-resourceupdateconstraint--examples--Create_a_RESOURCE_UPDATE_constraint--json"></a>
 
-```json
-
+```
 {
     "Type" : "AWS::ServiceCatalog::ResourceUpdateConstraint",
     "Properties" : {
@@ -146,13 +119,12 @@ For more information about using the `Ref` function, see [`Ref`](intrinsic-funct
         "ProductId" : "prod-xxx",
         "TagUpdateOnProvisionedProduct" : "ALLOWED"
   }
-
 ```
 
 #### YAML
+<a name="aws-resource-servicecatalog-resourceupdateconstraint--examples--Create_a_RESOURCE_UPDATE_constraint--yaml"></a>
 
-```yaml
-
+```
 Type: 'AWS::ServiceCatalog::ResourceUpdateConstraint'
 Properties:
   Description: Sample description
@@ -162,14 +134,7 @@ Properties:
 ```
 
 ## See also
-
-- [CreateConstraint](../../../servicecatalog/latest/dg/api-createconstraint.md)
-in the _AWS Service Catalog Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::PortfolioShare
-
-AWS::ServiceCatalog::ServiceAction
+<a name="aws-resource-servicecatalog-resourceupdateconstraint--seealso"></a>
++ [CreateConstraint](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_CreateConstraint.html) in the *AWS Service Catalog Reference*
 
 All content copied from https://docs.aws.amazon.com/.

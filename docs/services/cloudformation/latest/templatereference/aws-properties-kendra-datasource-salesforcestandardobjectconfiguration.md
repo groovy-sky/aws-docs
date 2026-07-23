@@ -2,106 +2,72 @@
 title: "AWS::Kendra::DataSource SalesforceStandardObjectConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource SalesforceStandardObjectConfiguration
+<a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration"></a>
 
 Specifies configuration information for indexing a single standard object.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DocumentDataFieldName" : String,
-  "DocumentTitleFieldName" : String,
-  "FieldMappings" : [ DataSourceToIndexFieldMapping, ... ],
-  "Name" : String
+  "[DocumentDataFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documentdatafieldname)" : {{String}},
+  "[DocumentTitleFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documenttitlefieldname)" : {{String}},
+  "[FieldMappings](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-fieldmappings)" : {{[ DataSourceToIndexFieldMapping, ... ]}},
+  "[Name](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DocumentDataFieldName: String
-  DocumentTitleFieldName: String
-  FieldMappings:
-    - DataSourceToIndexFieldMapping
-  Name: String
-
+```
+  [DocumentDataFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documentdatafieldname): {{String}}
+  [DocumentTitleFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documenttitlefieldname): {{String}}
+  [FieldMappings](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-fieldmappings): {{
+    - DataSourceToIndexFieldMapping}}
+  [Name](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration-properties"></a>
 
-`DocumentDataFieldName`
+`DocumentDataFieldName`  <a name="cfn-kendra-datasource-salesforcestandardobjectconfiguration-documentdatafieldname"></a>
+The name of the field in the standard object table that contains the document contents.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the field in the standard object table that contains the document
-contents.
+`DocumentTitleFieldName`  <a name="cfn-kendra-datasource-salesforcestandardobjectconfiguration-documenttitlefieldname"></a>
+The name of the field in the standard object table that contains the document title.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`FieldMappings`  <a name="cfn-kendra-datasource-salesforcestandardobjectconfiguration-fieldmappings"></a>
+Maps attributes or field names of the standard object to Amazon Kendra index field names. To create custom fields, use the `UpdateIndex` API before you map to Salesforce fields. For more information, see [Mapping data source fields](https://docs.aws.amazon.com/kendra/latest/dg/field-mapping.html). The Salesforce data source field names must exist in your Salesforce custom metadata.
+*Required*: No
+*Type*: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentTitleFieldName`
-
-The name of the field in the standard object table that contains the document
-title.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldMappings`
-
-Maps attributes or field names of the standard object to Amazon Kendra index
-field names. To create custom fields, use the `UpdateIndex` API before you
-map to Salesforce fields. For more information, see [Mapping data source fields](../../../kendra/latest/dg/field-mapping.md). The
-Salesforce data source field names must exist in your Salesforce custom metadata.
-
-_Required_: No
-
-_Type_: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-kendra-datasource-salesforcestandardobjectconfiguration-name"></a>
 The name of the standard object.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ACCOUNT | CAMPAIGN | CASE | CONTACT | CONTRACT | DOCUMENT | GROUP | IDEA | LEAD | OPPORTUNITY | PARTNER | PRICEBOOK | PRODUCT | PROFILE | SOLUTION | TASK | USER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SalesforceStandardObjectAttachmentConfiguration
-
-ServiceNowConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ACCOUNT | CAMPAIGN | CASE | CONTACT | CONTRACT | DOCUMENT | GROUP | IDEA | LEAD | OPPORTUNITY | PARTNER | PRICEBOOK | PRODUCT | PROFILE | SOLUTION | TASK | USER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

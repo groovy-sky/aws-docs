@@ -2,78 +2,51 @@
 title: "AWS::Personalize::Solution HpoResourceConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Solution HpoResourceConfig
+<a name="aws-properties-personalize-solution-hporesourceconfig"></a>
 
 Describes the resource configuration for hyperparameter optimization (HPO).
 
 ## Syntax
+<a name="aws-properties-personalize-solution-hporesourceconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-personalize-solution-hporesourceconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxNumberOfTrainingJobs" : String,
-  "MaxParallelTrainingJobs" : String
+  "[MaxNumberOfTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxnumberoftrainingjobs)" : {{String}},
+  "[MaxParallelTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxparalleltrainingjobs)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-personalize-solution-hporesourceconfig-syntax.yaml"></a>
 
-```yaml
-
-  MaxNumberOfTrainingJobs: String
-  MaxParallelTrainingJobs: String
-
+```
+  [MaxNumberOfTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxnumberoftrainingjobs): {{String}}
+  [MaxParallelTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxparalleltrainingjobs): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-personalize-solution-hporesourceconfig-properties"></a>
 
-`MaxNumberOfTrainingJobs`
+`MaxNumberOfTrainingJobs`  <a name="cfn-personalize-solution-hporesourceconfig-maxnumberoftrainingjobs"></a>
+The maximum number of training jobs when you create a solution version. The maximum value for `maxNumberOfTrainingJobs` is `40`.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The maximum number of training
-jobs when you create a
-solution
-version.
-The maximum value for `maxNumberOfTrainingJobs` is
-`40`.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxParallelTrainingJobs`
-
-The maximum number of parallel training
-jobs when you create a
-solution
-version.
-The maximum value for `maxParallelTrainingJobs` is
-`10`.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HpoObjective
-
-IntegerHyperParameterRange
+`MaxParallelTrainingJobs`  <a name="cfn-personalize-solution-hporesourceconfig-maxparalleltrainingjobs"></a>
+The maximum number of parallel training jobs when you create a solution version. The maximum value for `maxParallelTrainingJobs` is `10`.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

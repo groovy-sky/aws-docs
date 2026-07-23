@@ -2,122 +2,109 @@
 title: "AWS::IoT::EncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::EncryptionConfiguration
+<a name="aws-resource-iot-encryptionconfiguration"></a>
 
-Retrieves the encryption configuration for resources and data of your AWS account in
-AWS IoT Core. For more information, see [Data encryption at rest](../../../iot/latest/developerguide/encryption-at-rest.md) in
-the _AWS IoT Core Developer Guide_.
+Retrieves the encryption configuration for resources and data of your AWS account in AWS IoT Core. For more information, see [Data encryption at rest](https://docs.aws.amazon.com/iot/latest/developerguide/encryption-at-rest.html) in the *AWS IoT Core Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-iot-encryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iot-encryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoT::EncryptionConfiguration",
   "Properties" : {
-      "EncryptionType" : String,
-      "KmsAccessRoleArn" : String,
-      "KmsKeyArn" : String
+      "[EncryptionType](#cfn-iot-encryptionconfiguration-encryptiontype)" : {{String}},
+      "[KmsAccessRoleArn](#cfn-iot-encryptionconfiguration-kmsaccessrolearn)" : {{String}},
+      "[KmsKeyArn](#cfn-iot-encryptionconfiguration-kmskeyarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iot-encryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoT::EncryptionConfiguration
 Properties:
-  EncryptionType: String
-  KmsAccessRoleArn: String
-  KmsKeyArn: String
-
+  [EncryptionType](#cfn-iot-encryptionconfiguration-encryptiontype): {{String}}
+  [KmsAccessRoleArn](#cfn-iot-encryptionconfiguration-kmsaccessrolearn): {{String}}
+  [KmsKeyArn](#cfn-iot-encryptionconfiguration-kmskeyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-iot-encryptionconfiguration-properties"></a>
 
-`EncryptionType`
-
+`EncryptionType`  <a name="cfn-iot-encryptionconfiguration-encryptiontype"></a>
 The type of the KMS key.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CUSTOMER_MANAGED_KMS_KEY | AWS_OWNED_KMS_KEY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`KmsAccessRoleArn`  <a name="cfn-iot-encryptionconfiguration-kmsaccessrolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role assumed by AWS IoT Core to call AWS KMS on behalf of the customer.
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `CUSTOMER_MANAGED_KMS_KEY | AWS_OWNED_KMS_KEY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsAccessRoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role assumed by AWS IoT Core to call AWS KMS on
-behalf of the customer.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyArn`
-
+`KmsKeyArn`  <a name="cfn-iot-encryptionconfiguration-kmskeyarn"></a>
 The ARN of the customer managed KMS key.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iot-encryptionconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iot-encryptionconfiguration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the AWS account ID. For example:
 
-`{ "Ref": "MyEncryptionConfiguration" }`
+ `{ "Ref": "MyEncryptionConfiguration" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iot-encryptionconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AccountId`
+####
+<a name="aws-resource-iot-encryptionconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`AccountId`  <a name="AccountId-fn::getatt"></a>
 The unique identifier (ID) of an AWS account.
 
-`LastModifiedDate`
-
+`LastModifiedDate`  <a name="LastModifiedDate-fn::getatt"></a>
 The date when encryption configuration is last updated.
 
 ## Examples
+<a name="aws-resource-iot-encryptionconfiguration--examples"></a>
 
 The following example creates an encryption configuration using a customer managed AWS KMS key.
 
+###
+<a name="aws-resource-iot-encryptionconfiguration--examples--"></a>
+
 #### JSON
+<a name="aws-resource-iot-encryptionconfiguration--examples----json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -134,9 +121,9 @@ The following example creates an encryption configuration using a customer manag
 ```
 
 #### YAML
+<a name="aws-resource-iot-encryptionconfiguration--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyEncryptionConfiguration:
@@ -146,11 +133,5 @@ Resources:
       KmsKeyArn: arn:aws:kms:us-east-1:123456789012:key/abcd1234-ab12-cd34-ef56-abcdef123456
       KmsAccessRoleArn: arn:aws:iam::123456789012:role/IoTKmsAccessRole
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TlsConfig
-
-ConfigurationDetails
 
 All content copied from https://docs.aws.amazon.com/.

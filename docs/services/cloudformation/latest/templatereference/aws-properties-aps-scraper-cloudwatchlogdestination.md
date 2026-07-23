@@ -2,56 +2,43 @@
 title: "AWS::APS::Scraper CloudWatchLogDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper CloudWatchLogDestination
+<a name="aws-properties-aps-scraper-cloudwatchlogdestination"></a>
 
-The `CloudWatchLogDestination` property type specifies Property description not available. for an [AWS::APS::Scraper](aws-resource-aps-scraper.md).
+<a name="aws-properties-aps-scraper-cloudwatchlogdestination-description"></a>The `CloudWatchLogDestination` property type specifies Property description not available. for an [AWS::APS::Scraper](aws-resource-aps-scraper.md).
 
 ## Syntax
+<a name="aws-properties-aps-scraper-cloudwatchlogdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-scraper-cloudwatchlogdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogGroupArn" : String
+  "[LogGroupArn](#cfn-aps-scraper-cloudwatchlogdestination-loggrouparn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-scraper-cloudwatchlogdestination-syntax.yaml"></a>
 
-```yaml
-
-  LogGroupArn: String
-
+```
+  [LogGroupArn](#cfn-aps-scraper-cloudwatchlogdestination-loggrouparn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-scraper-cloudwatchlogdestination-properties"></a>
 
-`LogGroupArn`
-
+`LogGroupArn`  <a name="cfn-aps-scraper-cloudwatchlogdestination-loggrouparn"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmpConfiguration
-
-ComponentConfig
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

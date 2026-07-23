@@ -2,68 +2,50 @@
 title: "AWS::Synthetics::Canary BaseScreenshot"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Synthetics::Canary BaseScreenshot
+<a name="aws-properties-synthetics-canary-basescreenshot"></a>
 
 A structure representing a screenshot that is used as a baseline during visual monitoring comparisons made by the canary.
 
 ## Syntax
+<a name="aws-properties-synthetics-canary-basescreenshot-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-synthetics-canary-basescreenshot-syntax.json"></a>
 
-```json
-
+```
 {
-  "IgnoreCoordinates" : [ String, ... ],
-  "ScreenshotName" : String
+  "[IgnoreCoordinates](#cfn-synthetics-canary-basescreenshot-ignorecoordinates)" : {{[ String, ... ]}},
+  "[ScreenshotName](#cfn-synthetics-canary-basescreenshot-screenshotname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-synthetics-canary-basescreenshot-syntax.yaml"></a>
 
-```yaml
-
-  IgnoreCoordinates:
-    - String
-  ScreenshotName: String
-
+```
+  [IgnoreCoordinates](#cfn-synthetics-canary-basescreenshot-ignorecoordinates): {{
+    - String}}
+  [ScreenshotName](#cfn-synthetics-canary-basescreenshot-screenshotname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-synthetics-canary-basescreenshot-properties"></a>
 
-`IgnoreCoordinates`
+`IgnoreCoordinates`  <a name="cfn-synthetics-canary-basescreenshot-ignorecoordinates"></a>
+Coordinates that define the part of a screen to ignore during screenshot comparisons. To obtain the coordinates to use here, use the CloudWatch console to draw the boundaries on the screen. For more information, see [ Edit or delete a canary](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/synthetics_canaries_deletion.html).
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Coordinates that define the part of a screen to ignore during screenshot comparisons. To obtain the coordinates to use here, use the
-CloudWatch console to draw the boundaries on the screen. For more information, see
-[Edit or delete a canary](../../../amazoncloudwatch/latest/monitoring/synthetics-canaries-deletion.md).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScreenshotName`
-
-The name of the screenshot. This is generated the first time the canary is run after the `UpdateCanary` operation that
-specified for this canary to perform visual monitoring.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArtifactConfig
-
-BrowserConfig
+`ScreenshotName`  <a name="cfn-synthetics-canary-basescreenshot-screenshotname"></a>
+The name of the screenshot. This is generated the first time the canary is run after the `UpdateCanary` operation that specified for this canary to perform visual monitoring.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

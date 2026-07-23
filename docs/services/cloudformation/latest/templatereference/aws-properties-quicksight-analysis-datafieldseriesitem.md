@@ -2,95 +2,69 @@
 title: "AWS::QuickSight::Analysis DataFieldSeriesItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DataFieldSeriesItem
+<a name="aws-properties-quicksight-analysis-datafieldseriesitem"></a>
 
 The data field series item configuration of a line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-datafieldseriesitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-datafieldseriesitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "AxisBinding" : String,
-  "FieldId" : String,
-  "FieldValue" : String,
-  "Settings" : LineChartSeriesSettings
+  "[AxisBinding](#cfn-quicksight-analysis-datafieldseriesitem-axisbinding)" : {{String}},
+  "[FieldId](#cfn-quicksight-analysis-datafieldseriesitem-fieldid)" : {{String}},
+  "[FieldValue](#cfn-quicksight-analysis-datafieldseriesitem-fieldvalue)" : {{String}},
+  "[Settings](#cfn-quicksight-analysis-datafieldseriesitem-settings)" : {{LineChartSeriesSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-datafieldseriesitem-syntax.yaml"></a>
 
-```yaml
-
-  AxisBinding: String
-  FieldId: String
-  FieldValue: String
-  Settings:
-    LineChartSeriesSettings
-
+```
+  [AxisBinding](#cfn-quicksight-analysis-datafieldseriesitem-axisbinding): {{String}}
+  [FieldId](#cfn-quicksight-analysis-datafieldseriesitem-fieldid): {{String}}
+  [FieldValue](#cfn-quicksight-analysis-datafieldseriesitem-fieldvalue): {{String}}
+  [Settings](#cfn-quicksight-analysis-datafieldseriesitem-settings): {{
+    LineChartSeriesSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-datafieldseriesitem-properties"></a>
 
-`AxisBinding`
-
+`AxisBinding`  <a name="cfn-quicksight-analysis-datafieldseriesitem-axisbinding"></a>
 The axis that you are binding the field to.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PRIMARY_YAXIS | SECONDARY_YAXIS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PRIMARY_YAXIS | SECONDARY_YAXIS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-analysis-datafieldseriesitem-fieldid"></a>
 The field ID of the field that you are setting the axis binding to.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldValue`
-
+`FieldValue`  <a name="cfn-quicksight-analysis-datafieldseriesitem-fieldvalue"></a>
 The field value of the field that you are setting the axis binding to.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Settings`
-
+`Settings`  <a name="cfn-quicksight-analysis-datafieldseriesitem-settings"></a>
 The options that determine the presentation of line series associated to the field.
-
-_Required_: No
-
-_Type_: [LineChartSeriesSettings](aws-properties-quicksight-analysis-linechartseriessettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataColor
-
-DataLabelOptions
+*Required*: No
+*Type*: [LineChartSeriesSettings](aws-properties-quicksight-analysis-linechartseriessettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

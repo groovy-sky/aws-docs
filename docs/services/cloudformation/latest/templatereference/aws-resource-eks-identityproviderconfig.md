@@ -2,162 +2,131 @@
 title: "AWS::EKS::IdentityProviderConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::IdentityProviderConfig
+<a name="aws-resource-eks-identityproviderconfig"></a>
 
 Associates an identity provider configuration to a cluster.
 
-If you want to authenticate identities using an identity provider, you can create an
-identity provider configuration and associate it to your cluster. After configuring
-authentication to your cluster you can create Kubernetes `Role` and
-`ClusterRole` objects, assign permissions to them, and then bind them to
-the identities using Kubernetes `RoleBinding` and `ClusterRoleBinding`
-objects. For more information see [Using RBAC\
-Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac) in the Kubernetes documentation.
+If you want to authenticate identities using an identity provider, you can create an identity provider configuration and associate it to your cluster. After configuring authentication to your cluster you can create Kubernetes `Role` and `ClusterRole` objects, assign permissions to them, and then bind them to the identities using Kubernetes `RoleBinding` and `ClusterRoleBinding` objects. For more information see [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) in the Kubernetes documentation.
 
 ## Syntax
+<a name="aws-resource-eks-identityproviderconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-eks-identityproviderconfig-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EKS::IdentityProviderConfig",
   "Properties" : {
-      "ClusterName" : String,
-      "IdentityProviderConfigName" : String,
-      "Oidc" : OidcIdentityProviderConfig,
-      "Tags" : [ Tag, ... ],
-      "Type" : String
+      "[ClusterName](#cfn-eks-identityproviderconfig-clustername)" : {{String}},
+      "[IdentityProviderConfigName](#cfn-eks-identityproviderconfig-identityproviderconfigname)" : {{String}},
+      "[Oidc](#cfn-eks-identityproviderconfig-oidc)" : {{OidcIdentityProviderConfig}},
+      "[Tags](#cfn-eks-identityproviderconfig-tags)" : {{[ Tag, ... ]}},
+      "[Type](#cfn-eks-identityproviderconfig-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-eks-identityproviderconfig-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EKS::IdentityProviderConfig
 Properties:
-  ClusterName: String
-  IdentityProviderConfigName: String
-  Oidc:
-    OidcIdentityProviderConfig
-  Tags:
-    - Tag
-  Type: String
-
+  [ClusterName](#cfn-eks-identityproviderconfig-clustername): {{String}}
+  [IdentityProviderConfigName](#cfn-eks-identityproviderconfig-identityproviderconfigname): {{String}}
+  [Oidc](#cfn-eks-identityproviderconfig-oidc): {{
+    OidcIdentityProviderConfig}}
+  [Tags](#cfn-eks-identityproviderconfig-tags): {{
+    - Tag}}
+  [Type](#cfn-eks-identityproviderconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-eks-identityproviderconfig-properties"></a>
 
-`ClusterName`
-
+`ClusterName`  <a name="cfn-eks-identityproviderconfig-clustername"></a>
 The name of your cluster.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IdentityProviderConfigName`
-
+`IdentityProviderConfigName`  <a name="cfn-eks-identityproviderconfig-identityproviderconfigname"></a>
 The name of the configuration.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Oidc`
-
+`Oidc`  <a name="cfn-eks-identityproviderconfig-oidc"></a>
 An object representing an OpenID Connect (OIDC) identity provider configuration.
+*Required*: No
+*Type*: [OidcIdentityProviderConfig](aws-properties-eks-identityproviderconfig-oidcidentityproviderconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Tags`  <a name="cfn-eks-identityproviderconfig-tags"></a>
+Metadata that assists with categorization and organization. Each tag consists of a key and an optional value. You define both. Tags don't propagate to any other cluster or AWS resources.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-eks-identityproviderconfig-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [OidcIdentityProviderConfig](aws-properties-eks-identityproviderconfig-oidcidentityproviderconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-Metadata that assists with categorization and organization.
-Each tag consists of a key and an optional value. You define both. Tags don't
-propagate to any other cluster or AWS resources.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-eks-identityproviderconfig-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of the identity provider configuration. The only type available is
-`oidc`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `oidc`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Type`  <a name="cfn-eks-identityproviderconfig-type"></a>
+The type of the identity provider configuration. The only type available is `oidc`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `oidc`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-eks-identityproviderconfig-return-values"></a>
 
 ### Ref
+<a name="aws-resource-eks-identityproviderconfig-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "myIdentityProviderConfig" }`
+ `{ "Ref": "myIdentityProviderConfig" }`
 
-For the IdentityProviderConfig, Ref returns the physical resource ID of the config.
-For example, `cluster-name/oidc/identity-provider-config-name`.
+For the IdentityProviderConfig, Ref returns the physical resource ID of the config. For example, `cluster-name/oidc/identity-provider-config-name`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-eks-identityproviderconfig-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`IdentityProviderConfigArn`
+####
+<a name="aws-resource-eks-identityproviderconfig-return-values-fn--getatt-fn--getatt"></a>
 
+`IdentityProviderConfigArn`  <a name="IdentityProviderConfigArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) associated with the identity provider config.
 
 ## Remarks
+<a name="aws-resource-eks-identityproviderconfig--remarks"></a>
 
-_Creating an identity provider config and Fargate profile_
-_resources in the same template._
+ *Creating an identity provider config and Fargate profile resources in the same template.*
 
-If CloudFormation attempts to create both resources at the same time, resource
-creation fails. If you want to create both resources in the same template, then add
-the `DependsOn` property in your template, as shown in the
-examples.
+If CloudFormation attempts to create both resources at the same time, resource creation fails. If you want to create both resources in the same template, then add the `DependsOn` property in your template, as shown in the examples.
 
 ## Examples
+<a name="aws-resource-eks-identityproviderconfig--examples"></a>
 
 ### Create an identity provider config
+<a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config"></a>
 
-The following example creates a an identity provider config. If you're not
-creating an `EKSFargateProfile` in the same template, remove the
-`"DependsOn"` line in the following example. For more
-information, see [`AWS::EKS::FargateProfile`](../userguide/aws-resource-eks-fargateprofile.md).
+The following example creates a an identity provider config. If you're not creating an `EKSFargateProfile` in the same template, remove the `"DependsOn"` line in the following example. For more information, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-fargateprofile.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-fargateprofile.html).
 
 #### JSON
+<a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config--json"></a>
 
-```json
-
+```
 {
   "EKSIdpConfig": {
     "DependsOn": "EKSFargateProfile",
@@ -175,9 +144,9 @@ information, see [`AWS::EKS::FargateProfile`](../userguide/aws-resource-eks-farg
 ```
 
 #### YAML
+<a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config--yaml"></a>
 
-```yaml
-
+```
 Resources:
   EKSIdpConfig:
     DependsOn: EKSFargateProfile
@@ -191,16 +160,8 @@ Resources:
 ```
 
 ## See also
-
-- [Authenticating users for your cluster from an OpenID Connect identity\
-provider](../../../eks/latest/userguide/authenticate-oidc-identity-provider.md) in the _Amazon EKS User Guide_.
-
-- [AssociateIdentityProviderConfig](../../../../reference/eks/latest/apireference/api-associateidentityproviderconfig.md) in the _Amazon EKS API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-OidcIdentityProviderConfig
+<a name="aws-resource-eks-identityproviderconfig--seealso"></a>
++ [Authenticating users for your cluster from an OpenID Connect identity provider](https://docs.aws.amazon.com/eks/latest/userguide/authenticate-oidc-identity-provider.html) in the *Amazon EKS User Guide *.
++ [AssociateIdentityProviderConfig](https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociateIdentityProviderConfig.html) in the *Amazon EKS API Reference *.
 
 All content copied from https://docs.aws.amazon.com/.

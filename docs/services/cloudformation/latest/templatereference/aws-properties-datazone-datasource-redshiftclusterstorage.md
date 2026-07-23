@@ -2,58 +2,44 @@
 title: "AWS::DataZone::DataSource RedshiftClusterStorage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource RedshiftClusterStorage
+<a name="aws-properties-datazone-datasource-redshiftclusterstorage"></a>
 
 The details of the Amazon Redshift cluster storage.
 
 ## Syntax
+<a name="aws-properties-datazone-datasource-redshiftclusterstorage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-datasource-redshiftclusterstorage-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterName" : String
+  "[ClusterName](#cfn-datazone-datasource-redshiftclusterstorage-clustername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-datasource-redshiftclusterstorage-syntax.yaml"></a>
 
-```yaml
-
-  ClusterName: String
-
+```
+  [ClusterName](#cfn-datazone-datasource-redshiftclusterstorage-clustername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-datasource-redshiftclusterstorage-properties"></a>
 
-`ClusterName`
-
+`ClusterName`  <a name="cfn-datazone-datasource-redshiftclusterstorage-clustername"></a>
 The name of an Amazon Redshift cluster.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z].[a-z0-9\-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RecommendationConfiguration
-
-RedshiftCredentialConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-z].[a-z0-9\-]*$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

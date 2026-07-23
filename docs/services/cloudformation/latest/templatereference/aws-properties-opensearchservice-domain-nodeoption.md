@@ -2,67 +2,51 @@
 title: "AWS::OpenSearchService::Domain NodeOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchService::Domain NodeOption
+<a name="aws-properties-opensearchservice-domain-nodeoption"></a>
 
 Configuration settings for defining the node type within a cluster.
 
 ## Syntax
+<a name="aws-properties-opensearchservice-domain-nodeoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchservice-domain-nodeoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "NodeConfig" : NodeConfig,
-  "NodeType" : String
+  "[NodeConfig](#cfn-opensearchservice-domain-nodeoption-nodeconfig)" : {{NodeConfig}},
+  "[NodeType](#cfn-opensearchservice-domain-nodeoption-nodetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchservice-domain-nodeoption-syntax.yaml"></a>
 
-```yaml
-
-  NodeConfig:
-    NodeConfig
-  NodeType: String
-
+```
+  [NodeConfig](#cfn-opensearchservice-domain-nodeoption-nodeconfig): {{
+    NodeConfig}}
+  [NodeType](#cfn-opensearchservice-domain-nodeoption-nodetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchservice-domain-nodeoption-properties"></a>
 
-`NodeConfig`
-
+`NodeConfig`  <a name="cfn-opensearchservice-domain-nodeoption-nodeconfig"></a>
 Configuration options for defining the setup of any node type.
+*Required*: No
+*Type*: [NodeConfig](aws-properties-opensearchservice-domain-nodeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NodeConfig](aws-properties-opensearchservice-domain-nodeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NodeType`
-
+`NodeType`  <a name="cfn-opensearchservice-domain-nodeoption-nodetype"></a>
 Defines the type of node, such as coordinating nodes.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `coordinator`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NodeConfig
-
-NodeToNodeEncryptionOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `coordinator`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,54 @@
 title: "AWS::DataZone::Connection UsernamePassword"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection UsernamePassword
+<a name="aws-properties-datazone-connection-usernamepassword"></a>
 
 The username and password of a connection.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-usernamepassword-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-usernamepassword-syntax.json"></a>
 
-```json
-
+```
 {
-  "Password" : String,
-  "Username" : String
+  "[Password](#cfn-datazone-connection-usernamepassword-password)" : {{String}},
+  "[Username](#cfn-datazone-connection-usernamepassword-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-usernamepassword-syntax.yaml"></a>
 
-```yaml
-
-  Password: String
-  Username: String
-
+```
+  [Password](#cfn-datazone-connection-usernamepassword-password): {{String}}
+  [Username](#cfn-datazone-connection-usernamepassword-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-usernamepassword-properties"></a>
 
-`Password`
-
+`Password`  <a name="cfn-datazone-connection-usernamepassword-password"></a>
 The password of a connection.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
+`Username`  <a name="cfn-datazone-connection-usernamepassword-username"></a>
 The username of a connection.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SparkGluePropertiesInput
-
-WorkflowsMwaaPropertiesInput
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

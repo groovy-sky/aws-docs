@@ -2,288 +2,215 @@
 title: "AWS::EC2::VPCEncryptionControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPCEncryptionControl
+<a name="aws-resource-ec2-vpcencryptioncontrol"></a>
 
 Describes the configuration and state of VPC encryption controls.
 
-For more information, see [Enforce VPC encryption in transit](../../../vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
+For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the *Amazon VPC User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-vpcencryptioncontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpcencryptioncontrol-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPCEncryptionControl",
   "Properties" : {
-      "EgressOnlyInternetGatewayExclusionInput" : String,
-      "ElasticFileSystemExclusionInput" : String,
-      "InternetGatewayExclusionInput" : String,
-      "LambdaExclusionInput" : String,
-      "Mode" : String,
-      "NatGatewayExclusionInput" : String,
-      "Tags" : [ Tag, ... ],
-      "VirtualPrivateGatewayExclusionInput" : String,
-      "VpcId" : String,
-      "VpcLatticeExclusionInput" : String,
-      "VpcPeeringExclusionInput" : String
+      "[EgressOnlyInternetGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-egressonlyinternetgatewayexclusioninput)" : {{String}},
+      "[ElasticFileSystemExclusionInput](#cfn-ec2-vpcencryptioncontrol-elasticfilesystemexclusioninput)" : {{String}},
+      "[InternetGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-internetgatewayexclusioninput)" : {{String}},
+      "[LambdaExclusionInput](#cfn-ec2-vpcencryptioncontrol-lambdaexclusioninput)" : {{String}},
+      "[Mode](#cfn-ec2-vpcencryptioncontrol-mode)" : {{String}},
+      "[NatGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-natgatewayexclusioninput)" : {{String}},
+      "[Tags](#cfn-ec2-vpcencryptioncontrol-tags)" : {{[ Tag, ... ]}},
+      "[VirtualPrivateGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-virtualprivategatewayexclusioninput)" : {{String}},
+      "[VpcId](#cfn-ec2-vpcencryptioncontrol-vpcid)" : {{String}},
+      "[VpcLatticeExclusionInput](#cfn-ec2-vpcencryptioncontrol-vpclatticeexclusioninput)" : {{String}},
+      "[VpcPeeringExclusionInput](#cfn-ec2-vpcencryptioncontrol-vpcpeeringexclusioninput)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpcencryptioncontrol-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPCEncryptionControl
 Properties:
-  EgressOnlyInternetGatewayExclusionInput: String
-  ElasticFileSystemExclusionInput: String
-  InternetGatewayExclusionInput: String
-  LambdaExclusionInput: String
-  Mode: String
-  NatGatewayExclusionInput: String
-  Tags:
-    - Tag
-  VirtualPrivateGatewayExclusionInput: String
-  VpcId: String
-  VpcLatticeExclusionInput: String
-  VpcPeeringExclusionInput: String
-
+  [EgressOnlyInternetGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-egressonlyinternetgatewayexclusioninput): {{String}}
+  [ElasticFileSystemExclusionInput](#cfn-ec2-vpcencryptioncontrol-elasticfilesystemexclusioninput): {{String}}
+  [InternetGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-internetgatewayexclusioninput): {{String}}
+  [LambdaExclusionInput](#cfn-ec2-vpcencryptioncontrol-lambdaexclusioninput): {{String}}
+  [Mode](#cfn-ec2-vpcencryptioncontrol-mode): {{String}}
+  [NatGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-natgatewayexclusioninput): {{String}}
+  [Tags](#cfn-ec2-vpcencryptioncontrol-tags): {{
+    - Tag}}
+  [VirtualPrivateGatewayExclusionInput](#cfn-ec2-vpcencryptioncontrol-virtualprivategatewayexclusioninput): {{String}}
+  [VpcId](#cfn-ec2-vpcencryptioncontrol-vpcid): {{String}}
+  [VpcLatticeExclusionInput](#cfn-ec2-vpcencryptioncontrol-vpclatticeexclusioninput): {{String}}
+  [VpcPeeringExclusionInput](#cfn-ec2-vpcencryptioncontrol-vpcpeeringexclusioninput): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpcencryptioncontrol-properties"></a>
 
-`EgressOnlyInternetGatewayExclusionInput`
-
+`EgressOnlyInternetGatewayExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-egressonlyinternetgatewayexclusioninput"></a>
 Specifies whether to exclude egress-only internet gateway traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElasticFileSystemExclusionInput`
-
+`ElasticFileSystemExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-elasticfilesystemexclusioninput"></a>
 Specifies whether to exclude Elastic File System traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InternetGatewayExclusionInput`
-
+`InternetGatewayExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-internetgatewayexclusioninput"></a>
 Specifies whether to exclude internet gateway traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaExclusionInput`
-
+`LambdaExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-lambdaexclusioninput"></a>
 Specifies whether to exclude Lambda function traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Mode`
-
+`Mode`  <a name="cfn-ec2-vpcencryptioncontrol-mode"></a>
 The encryption mode for the VPC Encryption Control configuration.
+*Required*: No
+*Type*: String
+*Allowed values*: `monitor | enforce`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `monitor | enforce`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NatGatewayExclusionInput`
-
+`NatGatewayExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-natgatewayexclusioninput"></a>
 Specifies whether to exclude NAT gateway traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-vpcencryptioncontrol-tags"></a>
 The tags assigned to the VPC Encryption Control configuration.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-vpcencryptioncontrol-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-vpcencryptioncontrol-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VirtualPrivateGatewayExclusionInput`
-
+`VirtualPrivateGatewayExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-virtualprivategatewayexclusioninput"></a>
 Specifies whether to exclude virtual private gateway traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-ec2-vpcencryptioncontrol-vpcid"></a>
 The ID of the VPC for which to create the encryption control configuration.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcLatticeExclusionInput`
-
+`VpcLatticeExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-vpclatticeexclusioninput"></a>
 Specifies whether to exclude VPC Lattice traffic from encryption enforcement.
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcPeeringExclusionInput`
-
+`VpcPeeringExclusionInput`  <a name="cfn-ec2-vpcencryptioncontrol-vpcpeeringexclusioninput"></a>
 Specifies whether to exclude VPC peering connection traffic from encryption enforcement.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enable | disable`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Allowed values*: `enable | disable`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-vpcencryptioncontrol-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpcencryptioncontrol-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the VPC Encryption Control ID.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-vpcencryptioncontrol-return-values-fn--getatt"></a>
 
 Describes the configuration and state of VPC encryption controls.
 
-For more information, see [Enforce VPC encryption in transit](../../../vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
+For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the *Amazon VPC User Guide*.
 
-`ResourceExclusions.EgressOnlyInternetGateway.State`
+####
+<a name="aws-resource-ec2-vpcencryptioncontrol-return-values-fn--getatt-fn--getatt"></a>
 
+`ResourceExclusions.EgressOnlyInternetGateway.State`  <a name="ResourceExclusions.EgressOnlyInternetGateway.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.EgressOnlyInternetGateway.StateMessage`
-
+`ResourceExclusions.EgressOnlyInternetGateway.StateMessage`  <a name="ResourceExclusions.EgressOnlyInternetGateway.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.ElasticFileSystem.State`
-
+`ResourceExclusions.ElasticFileSystem.State`  <a name="ResourceExclusions.ElasticFileSystem.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.ElasticFileSystem.StateMessage`
-
+`ResourceExclusions.ElasticFileSystem.StateMessage`  <a name="ResourceExclusions.ElasticFileSystem.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.InternetGateway.State`
-
+`ResourceExclusions.InternetGateway.State`  <a name="ResourceExclusions.InternetGateway.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.InternetGateway.StateMessage`
-
+`ResourceExclusions.InternetGateway.StateMessage`  <a name="ResourceExclusions.InternetGateway.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.Lambda.State`
-
+`ResourceExclusions.Lambda.State`  <a name="ResourceExclusions.Lambda.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.Lambda.StateMessage`
-
+`ResourceExclusions.Lambda.StateMessage`  <a name="ResourceExclusions.Lambda.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.NatGateway.State`
-
+`ResourceExclusions.NatGateway.State`  <a name="ResourceExclusions.NatGateway.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.NatGateway.StateMessage`
-
+`ResourceExclusions.NatGateway.StateMessage`  <a name="ResourceExclusions.NatGateway.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.VirtualPrivateGateway.State`
-
+`ResourceExclusions.VirtualPrivateGateway.State`  <a name="ResourceExclusions.VirtualPrivateGateway.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.VirtualPrivateGateway.StateMessage`
-
+`ResourceExclusions.VirtualPrivateGateway.StateMessage`  <a name="ResourceExclusions.VirtualPrivateGateway.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.VpcLattice.State`
-
+`ResourceExclusions.VpcLattice.State`  <a name="ResourceExclusions.VpcLattice.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.VpcLattice.StateMessage`
-
+`ResourceExclusions.VpcLattice.StateMessage`  <a name="ResourceExclusions.VpcLattice.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`ResourceExclusions.VpcPeering.State`
-
+`ResourceExclusions.VpcPeering.State`  <a name="ResourceExclusions.VpcPeering.State-fn::getatt"></a>
 The current state of the exclusion configuration.
 
-`ResourceExclusions.VpcPeering.StateMessage`
-
+`ResourceExclusions.VpcPeering.StateMessage`  <a name="ResourceExclusions.VpcPeering.StateMessage-fn::getatt"></a>
 A message providing additional information about the exclusion state.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The current state of the VPC Encryption Control configuration.
 
-`StateMessage`
-
+`StateMessage`  <a name="StateMessage-fn::getatt"></a>
 A message providing additional information about the encryption control state.
 
-`VpcEncryptionControlId`
-
+`VpcEncryptionControlId`  <a name="VpcEncryptionControlId-fn::getatt"></a>
 The ID of the VPC Encryption Control configuration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VPCDHCPOptionsAssociation
-
-ResourceExclusions
 
 All content copied from https://docs.aws.amazon.com/.

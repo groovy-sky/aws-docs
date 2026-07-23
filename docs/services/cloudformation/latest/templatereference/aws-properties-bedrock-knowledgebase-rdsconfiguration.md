@@ -2,113 +2,80 @@
 title: "AWS::Bedrock::KnowledgeBase RdsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase RdsConfiguration
+<a name="aws-properties-bedrock-knowledgebase-rdsconfiguration"></a>
 
-Contains details about the storage configuration of the knowledge base in Amazon RDS. For more information, see [Create a vector index in Amazon RDS](../../../bedrock/latest/userguide/knowledge-base-setup-rds.md).
+Contains details about the storage configuration of the knowledge base in Amazon RDS. For more information, see [Create a vector index in Amazon RDS](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup-rds.html).
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-rdsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-rdsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CredentialsSecretArn" : String,
-  "DatabaseName" : String,
-  "FieldMapping" : RdsFieldMapping,
-  "ResourceArn" : String,
-  "TableName" : String
+  "[CredentialsSecretArn](#cfn-bedrock-knowledgebase-rdsconfiguration-credentialssecretarn)" : {{String}},
+  "[DatabaseName](#cfn-bedrock-knowledgebase-rdsconfiguration-databasename)" : {{String}},
+  "[FieldMapping](#cfn-bedrock-knowledgebase-rdsconfiguration-fieldmapping)" : {{RdsFieldMapping}},
+  "[ResourceArn](#cfn-bedrock-knowledgebase-rdsconfiguration-resourcearn)" : {{String}},
+  "[TableName](#cfn-bedrock-knowledgebase-rdsconfiguration-tablename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-rdsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CredentialsSecretArn: String
-  DatabaseName: String
-  FieldMapping:
-    RdsFieldMapping
-  ResourceArn: String
-  TableName: String
-
+```
+  [CredentialsSecretArn](#cfn-bedrock-knowledgebase-rdsconfiguration-credentialssecretarn): {{String}}
+  [DatabaseName](#cfn-bedrock-knowledgebase-rdsconfiguration-databasename): {{String}}
+  [FieldMapping](#cfn-bedrock-knowledgebase-rdsconfiguration-fieldmapping): {{
+    RdsFieldMapping}}
+  [ResourceArn](#cfn-bedrock-knowledgebase-rdsconfiguration-resourcearn): {{String}}
+  [TableName](#cfn-bedrock-knowledgebase-rdsconfiguration-tablename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-rdsconfiguration-properties"></a>
 
-`CredentialsSecretArn`
-
+`CredentialsSecretArn`  <a name="cfn-bedrock-knowledgebase-rdsconfiguration-credentialssecretarn"></a>
 The Amazon Resource Name (ARN) of the secret that you created in AWS Secrets Manager that is linked to your Amazon RDS database.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-cn|-us-gov):secretsmanager:[a-z0-9-]{1,20}:([0-9]{12}|):secret:[a-zA-Z0-9!/_+=.@-]{1,512}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-bedrock-knowledgebase-rdsconfiguration-databasename"></a>
 The name of your Amazon RDS database.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FieldMapping`
-
+`FieldMapping`  <a name="cfn-bedrock-knowledgebase-rdsconfiguration-fieldmapping"></a>
 Contains the names of the fields to which to map information about the vector store.
+*Required*: Yes
+*Type*: [RdsFieldMapping](aws-properties-bedrock-knowledgebase-rdsfieldmapping.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [RdsFieldMapping](aws-properties-bedrock-knowledgebase-rdsfieldmapping.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceArn`
-
+`ResourceArn`  <a name="cfn-bedrock-knowledgebase-rdsconfiguration-resourcearn"></a>
 The Amazon Resource Name (ARN) of the vector store.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(|-cn|-us-gov):rds:[a-zA-Z0-9-]*:[0-9]{12}:cluster:[a-zA-Z0-9-]{1,63}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-cn|-us-gov):rds:[a-zA-Z0-9-]*:[0-9]{12}:cluster:[a-zA-Z0-9-]{1,63}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TableName`
-
+`TableName`  <a name="cfn-bedrock-knowledgebase-rdsconfiguration-tablename"></a>
 The name of the table in the database.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\.\-]+$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QueryGenerationTable
-
-RdsFieldMapping
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\.\-]+$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

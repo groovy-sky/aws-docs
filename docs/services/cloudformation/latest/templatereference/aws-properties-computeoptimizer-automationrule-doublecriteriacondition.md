@@ -2,67 +2,51 @@
 title: "AWS::ComputeOptimizer::AutomationRule DoubleCriteriaCondition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ComputeOptimizer::AutomationRule DoubleCriteriaCondition
+<a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition"></a>
 
 Defines a condition for filtering based on double/floating-point numeric values with comparison operators.
 
 ## Syntax
+<a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comparison" : String,
-  "Values" : [ Number, ... ]
+  "[Comparison](#cfn-computeoptimizer-automationrule-doublecriteriacondition-comparison)" : {{String}},
+  "[Values](#cfn-computeoptimizer-automationrule-doublecriteriacondition-values)" : {{[ Number, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition-syntax.yaml"></a>
 
-```yaml
-
-  Comparison: String
-  Values:
-    - Number
-
+```
+  [Comparison](#cfn-computeoptimizer-automationrule-doublecriteriacondition-comparison): {{String}}
+  [Values](#cfn-computeoptimizer-automationrule-doublecriteriacondition-values): {{
+    - Number}}
 ```
 
 ## Properties
+<a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition-properties"></a>
 
-`Comparison`
-
+`Comparison`  <a name="cfn-computeoptimizer-automationrule-doublecriteriacondition-comparison"></a>
 The comparison operator to use, such as equals, greater than, less than, etc.
+*Required*: No
+*Type*: String
+*Allowed values*: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `StringEquals | StringNotEquals | StringEqualsIgnoreCase | StringNotEqualsIgnoreCase | StringLike | StringNotLike | NumericEquals | NumericNotEquals | NumericLessThan | NumericLessThanEquals | NumericGreaterThan | NumericGreaterThanEquals`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-computeoptimizer-automationrule-doublecriteriacondition-values"></a>
 The list of double values to compare against using the specified comparison operator.
-
-_Required_: No
-
-_Type_: Array of Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Criteria
-
-IntegerCriteriaCondition
+*Required*: No
+*Type*: Array of Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

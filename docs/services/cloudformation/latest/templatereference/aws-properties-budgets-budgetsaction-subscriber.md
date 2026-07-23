@@ -2,77 +2,55 @@
 title: "AWS::Budgets::BudgetsAction Subscriber"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Budgets::BudgetsAction Subscriber
+<a name="aws-properties-budgets-budgetsaction-subscriber"></a>
 
-The subscriber to a budget notification. The subscriber consists of a subscription
-type and either an Amazon SNS topic or an email address.
+The subscriber to a budget notification. The subscriber consists of a subscription type and either an Amazon SNS topic or an email address.
 
 For example, an email subscriber has the following parameters:
-
-- A `subscriptionType` of `EMAIL`
-
-- An `address` of `example@example.com`
++ A `subscriptionType` of `EMAIL`
++ An `address` of `example@example.com`
 
 ## Syntax
+<a name="aws-properties-budgets-budgetsaction-subscriber-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-budgets-budgetsaction-subscriber-syntax.json"></a>
 
-```json
-
+```
 {
-  "Address" : String,
-  "Type" : String
+  "[Address](#cfn-budgets-budgetsaction-subscriber-address)" : {{String}},
+  "[Type](#cfn-budgets-budgetsaction-subscriber-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-budgets-budgetsaction-subscriber-syntax.yaml"></a>
 
-```yaml
-
-  Address: String
-  Type: String
-
+```
+  [Address](#cfn-budgets-budgetsaction-subscriber-address): {{String}}
+  [Type](#cfn-budgets-budgetsaction-subscriber-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-budgets-budgetsaction-subscriber-properties"></a>
 
-`Address`
+`Address`  <a name="cfn-budgets-budgetsaction-subscriber-address"></a>
+The address that AWS sends budget notifications to, either an SNS topic or an email.
+When you create a subscriber, the value of `Address` can't contain line breaks.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The address that AWS sends budget notifications to, either an SNS topic
-or an email.
-
-When you create a subscriber, the value of `Address` can't contain line
-breaks.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-budgets-budgetsaction-subscriber-type"></a>
 The type of notification that AWS sends to a subscriber.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SNS | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SsmActionDefinition
-
-Next
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SNS | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

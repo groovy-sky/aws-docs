@@ -2,53 +2,42 @@
 title: "AWS::EKS::Capability CapabilityConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Capability CapabilityConfiguration
+<a name="aws-properties-eks-capability-capabilityconfiguration"></a>
 
-The `CapabilityConfiguration` property type specifies Property description not available. for an [AWS::EKS::Capability](aws-resource-eks-capability.md).
+<a name="aws-properties-eks-capability-capabilityconfiguration-description"></a>The `CapabilityConfiguration` property type specifies Property description not available. for an [AWS::EKS::Capability](aws-resource-eks-capability.md).
 
 ## Syntax
+<a name="aws-properties-eks-capability-capabilityconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-eks-capability-capabilityconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArgoCd" : ArgoCd
+  "[ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd)" : {{ArgoCd}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-eks-capability-capabilityconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ArgoCd:
-    ArgoCd
-
+```
+  [ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd): {{
+    ArgoCd}}
 ```
 
 ## Properties
+<a name="aws-properties-eks-capability-capabilityconfiguration-properties"></a>
 
-`ArgoCd`
-
+`ArgoCd`  <a name="cfn-eks-capability-capabilityconfiguration-argocd"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [ArgoCd](aws-properties-eks-capability-argocd.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AwsIdc
-
-NetworkAccess
+*Required*: No
+*Type*: [ArgoCd](aws-properties-eks-capability-argocd.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

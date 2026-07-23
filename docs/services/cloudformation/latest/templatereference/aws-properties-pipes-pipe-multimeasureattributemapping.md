@@ -2,87 +2,62 @@
 title: "AWS::Pipes::Pipe MultiMeasureAttributeMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe MultiMeasureAttributeMapping
+<a name="aws-properties-pipes-pipe-multimeasureattributemapping"></a>
 
-A mapping of a source event data field to a measure in a Timestream for
-LiveAnalytics record.
+A mapping of a source event data field to a measure in a Timestream for LiveAnalytics record.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-multimeasureattributemapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-multimeasureattributemapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "MeasureValue" : String,
-  "MeasureValueType" : String,
-  "MultiMeasureAttributeName" : String
+  "[MeasureValue](#cfn-pipes-pipe-multimeasureattributemapping-measurevalue)" : {{String}},
+  "[MeasureValueType](#cfn-pipes-pipe-multimeasureattributemapping-measurevaluetype)" : {{String}},
+  "[MultiMeasureAttributeName](#cfn-pipes-pipe-multimeasureattributemapping-multimeasureattributename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-multimeasureattributemapping-syntax.yaml"></a>
 
-```yaml
-
-  MeasureValue: String
-  MeasureValueType: String
-  MultiMeasureAttributeName: String
-
+```
+  [MeasureValue](#cfn-pipes-pipe-multimeasureattributemapping-measurevalue): {{String}}
+  [MeasureValueType](#cfn-pipes-pipe-multimeasureattributemapping-measurevaluetype): {{String}}
+  [MultiMeasureAttributeName](#cfn-pipes-pipe-multimeasureattributemapping-multimeasureattributename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-multimeasureattributemapping-properties"></a>
 
-`MeasureValue`
-
+`MeasureValue`  <a name="cfn-pipes-pipe-multimeasureattributemapping-measurevalue"></a>
 Dynamic path to the measurement attribute in the source event.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureValueType`
-
+`MeasureValueType`  <a name="cfn-pipes-pipe-multimeasureattributemapping-measurevaluetype"></a>
 Data type of the measurement attribute in the source event.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DOUBLE | BIGINT | VARCHAR | BOOLEAN | TIMESTAMP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DOUBLE | BIGINT | VARCHAR | BOOLEAN | TIMESTAMP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MultiMeasureAttributeName`
-
+`MultiMeasureAttributeName`  <a name="cfn-pipes-pipe-multimeasureattributemapping-multimeasureattributename"></a>
 Target measure name to be used.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MSKAccessCredentials
-
-MultiMeasureMapping
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

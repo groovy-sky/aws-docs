@@ -2,71 +2,53 @@
 title: "AWS::SageMaker::AppImageConfig KernelGatewayImageConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::AppImageConfig KernelGatewayImageConfig
+<a name="aws-properties-sagemaker-appimageconfig-kernelgatewayimageconfig"></a>
 
-The configuration for the file system and kernels in a SageMaker AI image running as a
-KernelGateway app.
+The configuration for the file system and kernels in a SageMaker AI image running as a KernelGateway app.
 
 ## Syntax
+<a name="aws-properties-sagemaker-appimageconfig-kernelgatewayimageconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-appimageconfig-kernelgatewayimageconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FileSystemConfig" : FileSystemConfig,
-  "KernelSpecs" : [ KernelSpec, ... ]
+  "[FileSystemConfig](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-filesystemconfig)" : {{FileSystemConfig}},
+  "[KernelSpecs](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-kernelspecs)" : {{[ KernelSpec, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-appimageconfig-kernelgatewayimageconfig-syntax.yaml"></a>
 
-```yaml
-
-  FileSystemConfig:
-    FileSystemConfig
-  KernelSpecs:
-    - KernelSpec
-
+```
+  [FileSystemConfig](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-filesystemconfig): {{
+    FileSystemConfig}}
+  [KernelSpecs](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-kernelspecs): {{
+    - KernelSpec}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-appimageconfig-kernelgatewayimageconfig-properties"></a>
 
-`FileSystemConfig`
-
+`FileSystemConfig`  <a name="cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-filesystemconfig"></a>
 The Amazon Elastic File System storage configuration for a SageMaker AI image.
+*Required*: No
+*Type*: [FileSystemConfig](aws-properties-sagemaker-appimageconfig-filesystemconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FileSystemConfig](aws-properties-sagemaker-appimageconfig-filesystemconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KernelSpecs`
-
+`KernelSpecs`  <a name="cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-kernelspecs"></a>
 The specification of the Jupyter kernels in the image.
-
-_Required_: Yes
-
-_Type_: Array of [KernelSpec](aws-properties-sagemaker-appimageconfig-kernelspec.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JupyterLabAppImageConfig
-
-KernelSpec
+*Required*: Yes
+*Type*: Array of [KernelSpec](aws-properties-sagemaker-appimageconfig-kernelspec.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

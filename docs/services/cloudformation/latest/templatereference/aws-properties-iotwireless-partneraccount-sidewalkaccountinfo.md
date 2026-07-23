@@ -2,60 +2,44 @@
 title: "AWS::IoTWireless::PartnerAccount SidewalkAccountInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::PartnerAccount SidewalkAccountInfo
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfo"></a>
 
 Information about a Sidewalk account.
 
 ## Syntax
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppServerPrivateKey" : String
+  "[AppServerPrivateKey](#cfn-iotwireless-partneraccount-sidewalkaccountinfo-appserverprivatekey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfo-syntax.yaml"></a>
 
-```yaml
-
-  AppServerPrivateKey: String
-
+```
+  [AppServerPrivateKey](#cfn-iotwireless-partneraccount-sidewalkaccountinfo-appserverprivatekey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfo-properties"></a>
 
-`AppServerPrivateKey`
-
-The Sidewalk application server private key. The application server private key is a
-secret key, which you should handle in a similar way as you would an application password.
-You can protect the application server private key by storing the value in the AWS Secrets Manager and use the [secretsmanager](../userguide/dynamic-references.md#dynamic-references-secretsmanager) to reference this value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-fA-F0-9]{64}`
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTWireless::PartnerAccount
-
-SidewalkAccountInfoWithFingerprint
+`AppServerPrivateKey`  <a name="cfn-iotwireless-partneraccount-sidewalkaccountinfo-appserverprivatekey"></a>
+The Sidewalk application server private key. The application server private key is a secret key, which you should handle in a similar way as you would an application password. You can protect the application server private key by storing the value in the AWS Secrets Manager and use the [secretsmanager](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html#dynamic-references-secretsmanager) to reference this value.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-fA-F0-9]{64}`
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

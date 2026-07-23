@@ -2,96 +2,67 @@
 title: "AWS::Glue::Job JobCommand"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Job JobCommand
+<a name="aws-properties-glue-job-jobcommand"></a>
 
 Specifies code executed when a job is run.
 
 ## Syntax
+<a name="aws-properties-glue-job-jobcommand-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-job-jobcommand-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "PythonVersion" : String,
-  "Runtime" : String,
-  "ScriptLocation" : String
+  "[Name](#cfn-glue-job-jobcommand-name)" : {{String}},
+  "[PythonVersion](#cfn-glue-job-jobcommand-pythonversion)" : {{String}},
+  "[Runtime](#cfn-glue-job-jobcommand-runtime)" : {{String}},
+  "[ScriptLocation](#cfn-glue-job-jobcommand-scriptlocation)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-job-jobcommand-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  PythonVersion: String
-  Runtime: String
-  ScriptLocation: String
-
+```
+  [Name](#cfn-glue-job-jobcommand-name): {{String}}
+  [PythonVersion](#cfn-glue-job-jobcommand-pythonversion): {{String}}
+  [Runtime](#cfn-glue-job-jobcommand-runtime): {{String}}
+  [ScriptLocation](#cfn-glue-job-jobcommand-scriptlocation): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-job-jobcommand-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-glue-job-jobcommand-name"></a>
+The name of the job command. For an Apache Spark ETL job, this must be `glueetl`. For a Python shell job, it must be `pythonshell`. For an Apache Spark streaming ETL job, this must be `gluestreaming`. For a Ray job, this must be `glueray`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the job command. For an Apache Spark ETL job, this must be
-`glueetl`. For a Python shell job, it must be `pythonshell`.
-For an Apache Spark streaming ETL job, this must be `gluestreaming`. For a Ray job,
-this must be `glueray`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PythonVersion`
-
+`PythonVersion`  <a name="cfn-glue-job-jobcommand-pythonversion"></a>
 The Python version being used to execute a Python shell job. Allowed values are 3 or 3.9. Version 2 is deprecated.
+*Required*: No
+*Type*: String
+*Pattern*: `^([2-3]|3[.]9)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Runtime`  <a name="cfn-glue-job-jobcommand-runtime"></a>
+In Ray jobs, Runtime is used to specify the versions of Ray, Python and additional libraries available in your environment. This field is not used in other job types. For supported runtime environment values, see [Working with Ray jobs](https://docs.aws.amazon.com/glue/latest/dg/ray-jobs-section.html) in the AWS Glue Developer Guide.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^([2-3]|3[.]9)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Runtime`
-
-In Ray jobs, Runtime is used to specify the versions of Ray, Python and additional libraries available in your environment. This field is not used in other job types. For supported runtime environment values, see [Working with Ray jobs](../../../glue/latest/dg/ray-jobs-section.md) in the AWS Glue Developer Guide.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScriptLocation`
-
-Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that executes
-a job (required).
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `400000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExecutionProperty
-
-NotificationProperty
+`ScriptLocation`  <a name="cfn-glue-job-jobcommand-scriptlocation"></a>
+Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that executes a job (required).
+*Required*: No
+*Type*: String
+*Maximum*: `400000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

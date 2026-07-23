@@ -2,100 +2,70 @@
 title: "AWS::Route53Resolver::ResolverEndpoint IpAddressRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::ResolverEndpoint IpAddressRequest
+<a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest"></a>
 
-In a
-[CreateResolverEndpoint](../../../../reference/route53/latest/apireference/api-route53resolver-createresolverendpoint.md)
-request, the IP address that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints).
-`IpAddressRequest` also includes the ID of the subnet that contains the IP address.
+In a [CreateResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverEndpoint.html) request, the IP address that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints). `IpAddressRequest` also includes the ID of the subnet that contains the IP address.
 
 ## Syntax
+<a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ip" : String,
-  "Ipv6" : String,
-  "SubnetId" : String
+  "[Ip](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ip)" : {{String}},
+  "[Ipv6](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ipv6)" : {{String}},
+  "[SubnetId](#cfn-route53resolver-resolverendpoint-ipaddressrequest-subnetid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest-syntax.yaml"></a>
 
-```yaml
-
-  Ip: String
-  Ipv6: String
-  SubnetId: String
-
+```
+  [Ip](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ip): {{String}}
+  [Ipv6](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ipv6): {{String}}
+  [SubnetId](#cfn-route53resolver-resolverendpoint-ipaddressrequest-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest-properties"></a>
 
-`Ip`
-
+`Ip`  <a name="cfn-route53resolver-resolverendpoint-ipaddressrequest-ip"></a>
 The IPv4 address that you want to use for DNS queries.
+*Required*: No
+*Type*: String
+*Minimum*: `7`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Ipv6`  <a name="cfn-route53resolver-resolverendpoint-ipaddressrequest-ipv6"></a>
+ The IPv6 address that you want to use for DNS queries.
+*Required*: No
+*Type*: String
+*Minimum*: `7`
+*Maximum*: `39`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `7`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ipv6`
-
-The IPv6 address that you want to use for DNS queries.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `7`
-
-_Maximum_: `39`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-route53resolver-resolverendpoint-ipaddressrequest-subnetid"></a>
 The ID of the subnet that contains the IP address.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+We recommend using [VPC Resolver on AWS Outposts](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outpost-resolver-getting-started.html) to create endpoints on AWS Outposts Racks.
+Outposts subnets with [Local Network Interface (LNI)](https://docs.aws.amazon.com/outposts/latest/server-userguide/local-network-interface.html) enabled are not compatible with Route 53 Resolver endpoints. If you enable LNI on a subnet that contains Route 53 Resolver endpoint elastic network interfaces (ENIs), those ENIs will stop functioning. For more information, see [Subnet compatibility for Resolver endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-practices-resolver.html#best-practices-resolver-subnet-compatibility) in the *Amazon Route 53 Developer Guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Return values](../userguide/aws-resource-route53resolver-resolverendpoint.md#aws-resource-route53resolver-resolverendpoint-return-values)
-in the topic
-[AWS::Route53Resolver::ResolverEndpoint](../userguide/aws-resource-route53resolver-resolverendpoint.md)
-
-- [IpAddressRequest](../../../../reference/route53/latest/apireference/api-route53resolver-ipaddressrequest.md)
-in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Route53Resolver::ResolverEndpoint
-
-Tag
+<a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest--seealso"></a>
++ [Return values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#aws-resource-route53resolver-resolverendpoint-return-values) in the topic [AWS::Route53Resolver::ResolverEndpoint](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html)
++ [IpAddressRequest](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_IpAddressRequest.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

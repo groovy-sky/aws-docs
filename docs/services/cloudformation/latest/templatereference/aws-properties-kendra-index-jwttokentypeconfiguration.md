@@ -2,154 +2,104 @@
 title: "AWS::Kendra::Index JwtTokenTypeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::Index JwtTokenTypeConfiguration
+<a name="aws-properties-kendra-index-jwttokentypeconfiguration"></a>
 
 Provides the configuration information for the JWT token type.
 
 ## Syntax
+<a name="aws-properties-kendra-index-jwttokentypeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-index-jwttokentypeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClaimRegex" : String,
-  "GroupAttributeField" : String,
-  "Issuer" : String,
-  "KeyLocation" : String,
-  "SecretManagerArn" : String,
-  "URL" : String,
-  "UserNameAttributeField" : String
+  "[ClaimRegex](#cfn-kendra-index-jwttokentypeconfiguration-claimregex)" : {{String}},
+  "[GroupAttributeField](#cfn-kendra-index-jwttokentypeconfiguration-groupattributefield)" : {{String}},
+  "[Issuer](#cfn-kendra-index-jwttokentypeconfiguration-issuer)" : {{String}},
+  "[KeyLocation](#cfn-kendra-index-jwttokentypeconfiguration-keylocation)" : {{String}},
+  "[SecretManagerArn](#cfn-kendra-index-jwttokentypeconfiguration-secretmanagerarn)" : {{String}},
+  "[URL](#cfn-kendra-index-jwttokentypeconfiguration-url)" : {{String}},
+  "[UserNameAttributeField](#cfn-kendra-index-jwttokentypeconfiguration-usernameattributefield)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-index-jwttokentypeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ClaimRegex: String
-  GroupAttributeField: String
-  Issuer: String
-  KeyLocation: String
-  SecretManagerArn: String
-  URL: String
-  UserNameAttributeField: String
-
+```
+  [ClaimRegex](#cfn-kendra-index-jwttokentypeconfiguration-claimregex): {{String}}
+  [GroupAttributeField](#cfn-kendra-index-jwttokentypeconfiguration-groupattributefield): {{String}}
+  [Issuer](#cfn-kendra-index-jwttokentypeconfiguration-issuer): {{String}}
+  [KeyLocation](#cfn-kendra-index-jwttokentypeconfiguration-keylocation): {{String}}
+  [SecretManagerArn](#cfn-kendra-index-jwttokentypeconfiguration-secretmanagerarn): {{String}}
+  [URL](#cfn-kendra-index-jwttokentypeconfiguration-url): {{String}}
+  [UserNameAttributeField](#cfn-kendra-index-jwttokentypeconfiguration-usernameattributefield): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-index-jwttokentypeconfiguration-properties"></a>
 
-`ClaimRegex`
-
+`ClaimRegex`  <a name="cfn-kendra-index-jwttokentypeconfiguration-claimregex"></a>
 The regular expression that identifies the claim.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupAttributeField`
-
+`GroupAttributeField`  <a name="cfn-kendra-index-jwttokentypeconfiguration-groupattributefield"></a>
 The group attribute field.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Issuer`
-
+`Issuer`  <a name="cfn-kendra-index-jwttokentypeconfiguration-issuer"></a>
 The issuer of the token.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `65`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `65`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyLocation`
-
+`KeyLocation`  <a name="cfn-kendra-index-jwttokentypeconfiguration-keylocation"></a>
 The location of the key.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `URL | SECRET_MANAGER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `URL | SECRET_MANAGER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretManagerArn`
-
+`SecretManagerArn`  <a name="cfn-kendra-index-jwttokentypeconfiguration-secretmanagerarn"></a>
 The Amazon Resource Name (arn) of the secret.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
+*Minimum*: `1`
+*Maximum*: `1284`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
-
-_Minimum_: `1`
-
-_Maximum_: `1284`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`URL`
-
+`URL`  <a name="cfn-kendra-index-jwttokentypeconfiguration-url"></a>
 The signing key URL.
+*Required*: No
+*Type*: String
+*Pattern*: `^(https?|ftp|file):\/\/([^\s]*)`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(https?|ftp|file):\/\/([^\s]*)`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserNameAttributeField`
-
+`UserNameAttributeField`  <a name="cfn-kendra-index-jwttokentypeconfiguration-usernameattributefield"></a>
 The user name attribute field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JsonTokenTypeConfiguration
-
-Relevance
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

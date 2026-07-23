@@ -2,79 +2,70 @@
 title: "AWS::IoT::Thing AttributePayload"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Thing AttributePayload
+<a name="aws-properties-iot-thing-attributepayload"></a>
 
-The AttributePayload property specifies up to three attributes for an AWS IoT as key-value pairs. AttributePayload is a property of the [AWS::IoT::Thing](../userguide/aws-resource-iot-thing.md) resource.
+The AttributePayload property specifies up to three attributes for an AWS IoT as key-value pairs. AttributePayload is a property of the [AWS::IoT::Thing](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html) resource.
 
 ## Syntax
+<a name="aws-properties-iot-thing-attributepayload-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-thing-attributepayload-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : {Key: Value, ...}
+  "[Attributes](#cfn-iot-thing-attributepayload-attributes)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-thing-attributepayload-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
-    Key: Value
-
+```
+  [Attributes](#cfn-iot-thing-attributepayload-attributes): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-thing-attributepayload-properties"></a>
 
-`Attributes`
-
+`Attributes`  <a name="cfn-iot-thing-attributepayload-attributes"></a>
 A JSON string containing up to three key-value pair in JSON format. For example:
-
-`{\"attributes\":{\"string1\":\"string2\"}}`
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9_.,@/:#-]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+ `{\"attributes\":{\"string1\":\"string2\"}}`
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9_.,@/:#-]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-iot-thing-attributepayload--examples"></a>
+
+###
+<a name="aws-properties-iot-thing-attributepayload--examples--"></a>
 
 The following example declares an attribute payload with three attributes.
 
 #### JSON
+<a name="aws-properties-iot-thing-attributepayload--examples----json"></a>
 
-```json
-
+```
  { "AttributePayload":{ "Attributes":{ "myAttributeA":{
             "Ref":"MyAttributeValueA" }, "myAttributeB":{ "Ref":"MyAttributeValueB" },
             "myAttributeC":{ "Ref":"MyAttributeValueC" } } } }
 ```
 
 #### YAML
+<a name="aws-properties-iot-thing-attributepayload--examples----yaml"></a>
 
-```yaml
-
+```
  AttributePayload: Attributes: myAttributeA: Ref:
             MyAttributeValueA myAttributeB: Ref: MyAttributeValueB myAttributeC: Ref:
             MyAttributeValueC
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::Thing
-
-AWS::IoT::ThingGroup
 
 All content copied from https://docs.aws.amazon.com/.

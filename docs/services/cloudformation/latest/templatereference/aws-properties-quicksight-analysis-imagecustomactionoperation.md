@@ -2,81 +2,62 @@
 title: "AWS::QuickSight::Analysis ImageCustomActionOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ImageCustomActionOperation
+<a name="aws-properties-quicksight-analysis-imagecustomactionoperation"></a>
 
 The operation that is defined by the custom action.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-imagecustomactionoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-imagecustomactionoperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "NavigationOperation" : CustomActionNavigationOperation,
-  "SetParametersOperation" : CustomActionSetParametersOperation,
-  "URLOperation" : CustomActionURLOperation
+  "[NavigationOperation](#cfn-quicksight-analysis-imagecustomactionoperation-navigationoperation)" : {{CustomActionNavigationOperation}},
+  "[SetParametersOperation](#cfn-quicksight-analysis-imagecustomactionoperation-setparametersoperation)" : {{CustomActionSetParametersOperation}},
+  "[URLOperation](#cfn-quicksight-analysis-imagecustomactionoperation-urloperation)" : {{CustomActionURLOperation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-imagecustomactionoperation-syntax.yaml"></a>
 
-```yaml
-
-  NavigationOperation:
-    CustomActionNavigationOperation
-  SetParametersOperation:
-    CustomActionSetParametersOperation
-  URLOperation:
-    CustomActionURLOperation
-
+```
+  [NavigationOperation](#cfn-quicksight-analysis-imagecustomactionoperation-navigationoperation): {{
+    CustomActionNavigationOperation}}
+  [SetParametersOperation](#cfn-quicksight-analysis-imagecustomactionoperation-setparametersoperation): {{
+    CustomActionSetParametersOperation}}
+  [URLOperation](#cfn-quicksight-analysis-imagecustomactionoperation-urloperation): {{
+    CustomActionURLOperation}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-imagecustomactionoperation-properties"></a>
 
-`NavigationOperation`
-
+`NavigationOperation`  <a name="cfn-quicksight-analysis-imagecustomactionoperation-navigationoperation"></a>
 Property description not available.
+*Required*: No
+*Type*: [CustomActionNavigationOperation](aws-properties-quicksight-analysis-customactionnavigationoperation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomActionNavigationOperation](aws-properties-quicksight-analysis-customactionnavigationoperation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SetParametersOperation`
-
+`SetParametersOperation`  <a name="cfn-quicksight-analysis-imagecustomactionoperation-setparametersoperation"></a>
 Property description not available.
+*Required*: No
+*Type*: [CustomActionSetParametersOperation](aws-properties-quicksight-analysis-customactionsetparametersoperation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomActionSetParametersOperation](aws-properties-quicksight-analysis-customactionsetparametersoperation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`URLOperation`
-
+`URLOperation`  <a name="cfn-quicksight-analysis-imagecustomactionoperation-urloperation"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [CustomActionURLOperation](aws-properties-quicksight-analysis-customactionurloperation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageCustomAction
-
-ImageInteractionOptions
+*Required*: No
+*Type*: [CustomActionURLOperation](aws-properties-quicksight-analysis-customactionurloperation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

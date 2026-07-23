@@ -2,154 +2,122 @@
 title: "AWS::AccessAnalyzer::Analyzer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccessAnalyzer::Analyzer
+<a name="aws-resource-accessanalyzer-analyzer"></a>
 
-The `AWS::AccessAnalyzer::Analyzer` resource specifies a new analyzer. The
-analyzer is an object that represents the IAM Access Analyzer feature. An analyzer is
-required for Access Analyzer to become operational.
+The `AWS::AccessAnalyzer::Analyzer` resource specifies a new analyzer. The analyzer is an object that represents the IAM Access Analyzer feature. An analyzer is required for Access Analyzer to become operational.
 
 ## Syntax
+<a name="aws-resource-accessanalyzer-analyzer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-accessanalyzer-analyzer-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AccessAnalyzer::Analyzer",
   "Properties" : {
-      "AnalyzerConfiguration" : AnalyzerConfiguration,
-      "AnalyzerName" : String,
-      "ArchiveRules" : [ ArchiveRule, ... ],
-      "Tags" : [ Tag, ... ],
-      "Type" : String
+      "[AnalyzerConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration)" : {{AnalyzerConfiguration}},
+      "[AnalyzerName](#cfn-accessanalyzer-analyzer-analyzername)" : {{String}},
+      "[ArchiveRules](#cfn-accessanalyzer-analyzer-archiverules)" : {{[ ArchiveRule, ... ]}},
+      "[Tags](#cfn-accessanalyzer-analyzer-tags)" : {{[ Tag, ... ]}},
+      "[Type](#cfn-accessanalyzer-analyzer-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-accessanalyzer-analyzer-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AccessAnalyzer::Analyzer
 Properties:
-  AnalyzerConfiguration:
-    AnalyzerConfiguration
-  AnalyzerName: String
-  ArchiveRules:
-    - ArchiveRule
-  Tags:
-    - Tag
-  Type: String
-
+  [AnalyzerConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration): {{
+    AnalyzerConfiguration}}
+  [AnalyzerName](#cfn-accessanalyzer-analyzer-analyzername): {{String}}
+  [ArchiveRules](#cfn-accessanalyzer-analyzer-archiverules): {{
+    - ArchiveRule}}
+  [Tags](#cfn-accessanalyzer-analyzer-tags): {{
+    - Tag}}
+  [Type](#cfn-accessanalyzer-analyzer-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-accessanalyzer-analyzer-properties"></a>
 
-`AnalyzerConfiguration`
+`AnalyzerConfiguration`  <a name="cfn-accessanalyzer-analyzer-analyzerconfiguration"></a>
+Contains information about the configuration of an analyzer for an AWS organization or account.
+*Required*: No
+*Type*: [AnalyzerConfiguration](aws-properties-accessanalyzer-analyzer-analyzerconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-Contains information about the configuration of an analyzer for an AWS organization or
-account.
-
-_Required_: No
-
-_Type_: [AnalyzerConfiguration](aws-properties-accessanalyzer-analyzer-analyzerconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`AnalyzerName`
-
+`AnalyzerName`  <a name="cfn-accessanalyzer-analyzer-analyzername"></a>
 The name of the analyzer.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ArchiveRules`  <a name="cfn-accessanalyzer-analyzer-archiverules"></a>
+Specifies the archive rules to add for the analyzer. Archive rules automatically archive findings that meet the criteria you define for the rule.
+*Required*: No
+*Type*: Array of [ArchiveRule](aws-properties-accessanalyzer-analyzer-archiverule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ArchiveRules`
-
-Specifies the archive rules to add for the analyzer. Archive rules automatically archive
-findings that meet the criteria you define for the rule.
-
-_Required_: No
-
-_Type_: Array of [ArchiveRule](aws-properties-accessanalyzer-analyzer-archiverule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-An array of key-value pairs to apply to the analyzer. You can use the set of Unicode
-letters, digits, whitespace, `_`, `.`, `/`,
-`=`, `+`, and `-`.
-
-For the tag key, you can specify a value that is 1 to 128 characters in length and
-cannot be prefixed with `aws:`.
-
+`Tags`  <a name="cfn-accessanalyzer-analyzer-tags"></a>
+An array of key-value pairs to apply to the analyzer. You can use the set of Unicode letters, digits, whitespace, `_`, `.`, `/`, `=`, `+`, and `-`.
+For the tag key, you can specify a value that is 1 to 128 characters in length and cannot be prefixed with `aws:`.
 For the tag value, you can specify a value that is 0 to 256 characters in length.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-accessanalyzer-analyzer-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-accessanalyzer-analyzer-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-accessanalyzer-analyzer-type"></a>
 The type represents the zone of trust for the analyzer.
-
-_Allowed Values_: ACCOUNT \| ORGANIZATION \| ACCOUNT\_UNUSED\_ACCESS \|
-ACCOUNT\_INTERNAL\_ACCESS \| ORGANIZATION\_INTERNAL\_ACCESS \|
-ORGANIZATION\_UNUSED\_ACCESS
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Allowed Values*: ACCOUNT \| ORGANIZATION \| ACCOUNT\_UNUSED\_ACCESS \| ACCOUNT\_INTERNAL\_ACCESS \| ORGANIZATION\_INTERNAL\_ACCESS \| ORGANIZATION\_UNUSED\_ACCESS
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-accessanalyzer-analyzer-return-values"></a>
 
 ### Ref
+<a name="aws-resource-accessanalyzer-analyzer-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the analyzer created.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-accessanalyzer-analyzer-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-accessanalyzer-analyzer-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the analyzer that was created.
 
 ## Examples
+<a name="aws-resource-accessanalyzer-analyzer--examples"></a>
 
 ### Declare an Analyzer Resource
+<a name="aws-resource-accessanalyzer-analyzer--examples--Declare_an_Analyzer_Resource"></a>
 
-The following example shows how to declare a IAM Access Analyzer
-`Analyzer` resource:
+The following example shows how to declare a IAM Access Analyzer `Analyzer` resource:
 
 #### JSON
+<a name="aws-resource-accessanalyzer-analyzer--examples--Declare_an_Analyzer_Resource--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -196,9 +164,9 @@ The following example shows how to declare a IAM Access Analyzer
 ```
 
 #### YAML
+<a name="aws-resource-accessanalyzer-analyzer--examples--Declare_an_Analyzer_Resource--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Analyzer:
@@ -229,11 +197,5 @@ Resources:
                 - 'arn:aws:s3:::amzn-s3-demo-logging-bucket'
                 - 'arn:aws:s3:::amzn-s3-demo-website-bucket'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Identity and Access Management Access Analyzer
-
-AnalysisRule
 
 All content copied from https://docs.aws.amazon.com/.

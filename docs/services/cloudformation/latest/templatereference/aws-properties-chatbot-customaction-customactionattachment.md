@@ -2,114 +2,80 @@
 title: "AWS::Chatbot::CustomAction CustomActionAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Chatbot::CustomAction CustomActionAttachment
+<a name="aws-properties-chatbot-customaction-customactionattachment"></a>
 
-###### Note
-
-AWS Chatbot is now Amazon Q Developer. [Learn more](../../../chatbot/latest/adminguide/service-rename.md)
-
+**Note**
+AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com//chatbot/latest/adminguide/service-rename.html)
 `Type` attribute values remain unchanged.
 
 Defines when a custom action button should be attached to a notification.
 
 ## Syntax
+<a name="aws-properties-chatbot-customaction-customactionattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-chatbot-customaction-customactionattachment-syntax.json"></a>
 
-```json
-
+```
 {
-  "ButtonText" : String,
-  "Criteria" : [ CustomActionAttachmentCriteria, ... ],
-  "NotificationType" : String,
-  "Variables" : {Key: Value, ...}
+  "[ButtonText](#cfn-chatbot-customaction-customactionattachment-buttontext)" : {{String}},
+  "[Criteria](#cfn-chatbot-customaction-customactionattachment-criteria)" : {{[ CustomActionAttachmentCriteria, ... ]}},
+  "[NotificationType](#cfn-chatbot-customaction-customactionattachment-notificationtype)" : {{String}},
+  "[Variables](#cfn-chatbot-customaction-customactionattachment-variables)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-chatbot-customaction-customactionattachment-syntax.yaml"></a>
 
-```yaml
-
-  ButtonText: String
-  Criteria:
-    - CustomActionAttachmentCriteria
-  NotificationType: String
-  Variables:
-    Key: Value
-
+```
+  [ButtonText](#cfn-chatbot-customaction-customactionattachment-buttontext): {{String}}
+  [Criteria](#cfn-chatbot-customaction-customactionattachment-criteria): {{
+    - CustomActionAttachmentCriteria}}
+  [NotificationType](#cfn-chatbot-customaction-customactionattachment-notificationtype): {{String}}
+  [Variables](#cfn-chatbot-customaction-customactionattachment-variables): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-chatbot-customaction-customactionattachment-properties"></a>
 
-`ButtonText`
-
+`ButtonText`  <a name="cfn-chatbot-customaction-customactionattachment-buttontext"></a>
 The text of the button that appears on the notification.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S\s]+$`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S\s]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Criteria`
-
+`Criteria`  <a name="cfn-chatbot-customaction-customactionattachment-criteria"></a>
 The criteria for when a button should be shown based on values in the notification.
+*Required*: No
+*Type*: Array of [CustomActionAttachmentCriteria](aws-properties-chatbot-customaction-customactionattachmentcriteria.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [CustomActionAttachmentCriteria](aws-properties-chatbot-customaction-customactionattachmentcriteria.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotificationType`
-
+`NotificationType`  <a name="cfn-chatbot-customaction-customactionattachment-notificationtype"></a>
 The type of notification that the custom action should be attached to.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Variables`
-
+`Variables`  <a name="cfn-chatbot-customaction-customactionattachment-variables"></a>
 The variables to extract from the notification.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Chatbot::CustomAction
-
-CustomActionAttachmentCriteria
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

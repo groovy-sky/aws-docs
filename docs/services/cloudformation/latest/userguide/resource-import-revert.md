@@ -3,22 +3,18 @@ title: "Reverting an import operation"
 ---
 
 # Reverting an import operation
+<a name="resource-import-revert"></a>
 
-To revert an import operation, specify a `Retain` deletion policy for the
-resource you want to remove from the template to ensure that it's preserved when you delete it
-from the stack.
+To revert an import operation, specify a `Retain` deletion policy for the resource you want to remove from the template to ensure that it's preserved when you delete it from the stack.
 
 ## Revert an import operation using the AWS Management Console
+<a name="resource-import-revert-console"></a>
 
-1. Specify a `Retain` [DeletionPolicy](../templatereference/aws-attribute-deletionpolicy.md) for the resources you want to remove from your stack. In
-    the following example template, `GamesTable` is the target of this revert
-    operation.
+1. Specify a `Retain` [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html) for the resources you want to remove from your stack. In the following example template, `GamesTable` is the target of this revert operation.
+**Example JSON**
 
-###### Example JSON
-
-```json
-
-{
+   ```
+   {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
        "Resources": {
@@ -68,50 +64,30 @@ from the stack.
                }
            }
        }
-}
-```
+   }
+   ```
 
-2. Open the CloudFormation console to perform a stack update to apply the deletion
-    policy.
-1. On the **Stacks** page, with the stack selected, choose
-       **Update**, and then choose **Update stack**
-      **(standard)**.
+1. Open the CloudFormation console to perform a stack update to apply the deletion policy.
 
-2. Under **Prepare template**, choose **Replace**
-      **current template**.
+   1. On the **Stacks** page, with the stack selected, choose **Update**, and then choose **Update stack (standard)**.
 
-3. Under **Specify template**, provide the updated source
-       template with the `DeletionPolicy` attribute on
-       `GamesTable`, and then choose **Next**.
+   1. Under **Prepare template**, choose **Replace current template**.
 
-- Choose **Amazon S3 URL**, and then specify the URL to
-the updated source template in the text box.
+   1. Under **Specify template**, provide the updated source template with the `DeletionPolicy` attribute on `GamesTable`, and then choose **Next**.
+      + Choose **Amazon S3 URL**, and then specify the URL to the updated source template in the text box.
+      + Choose **Upload a template file**, and then browse for the updated source template file.
 
-- Choose **Upload a template file**, and then browse
-for the updated source template file.
+   1. On the **Specify stack details** page, no changes are required. Choose **Next**.
 
-4. On the **Specify stack details** page, no changes are
-       required. Choose **Next**.
+   1. On the **Configure stack options** page, no changes are required. Choose **Next**.
 
-5. On the **Configure stack options** page, no changes are
-       required. Choose **Next**.
+   1. On the **Review {{MyStack}}** page, review your changes. If your template contains IAM resources, select **I acknowledge that this template may create IAM resources** to specify that you want to use IAM resources in the template. For more information, see [Acknowledging IAM resources in CloudFormation templates](control-access-with-iam.md#using-iam-capabilities). Then, either update your source stack by creating a change set or update your source stack directly.
 
-6. On the **Review `MyStack`** page,
-       review your changes. If your template contains IAM resources, select
-       **I acknowledge that this template may create IAM**
-      **resources** to specify that you want to use IAM resources in the
-       template. For more information, see
-       [Acknowledging IAM resources in CloudFormation templates](control-access-with-iam.md#using-iam-capabilities).
-       Then, either update your source stack by creating a change set or update your
-       source stack directly.
-3. Remove the resource, related parameters, and outputs from the stack template. In
-    this example, the template now looks like the following.
+1. Remove the resource, related parameters, and outputs from the stack template. In this example, the template now looks like the following.
+**Example JSON**
 
-###### Example JSON
-
-```json
-
-{
+   ```
+   {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
        "Resources": {
@@ -138,23 +114,19 @@ for the updated source template file.
               }
            }
        }
-}
-```
+   }
+   ```
 
-4. Repeat step 2 to delete the resource ( `GamesTable`) and its related
-    parameters and outputs from the stack.
+1. Repeat step 2 to delete the resource (`GamesTable`) and its related parameters and outputs from the stack.
 
 ## Revert an import operation using the AWS CLI
+<a name="resource-import-revert-cli"></a>
 
-1. Specify a `Retain` [DeletionPolicy](../templatereference/aws-attribute-deletionpolicy.md) for the resources you want to remove from your stack. In
-    the following example template, `GamesTable` is the target of this revert
-    operation.
+1. Specify a `Retain` [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html) for the resources you want to remove from your stack. In the following example template, `GamesTable` is the target of this revert operation.
+**Example JSON**
 
-###### Example JSON
-
-```json
-
-{
+   ```
+   {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
        "Resources": {
@@ -204,24 +176,20 @@ for the updated source template file.
                }
            }
        }
-}
-```
+   }
+   ```
 
-2. Update the stack to apply the deletion policy to the resource.
+1. Update the stack to apply the deletion policy to the resource.
 
-```nohighlight
+   ```
+   aws cloudformation update-stack --stack-name {{MyStack}}
+   ```
 
-aws cloudformation update-stack --stack-name MyStack
-```
+1. Remove the resource, related parameters, and outputs from the stack template. In this example, the template now looks like the following.
+**Example JSON**
 
-3. Remove the resource, related parameters, and outputs from the stack template. In
-    this example, the template now looks like the following.
-
-###### Example JSON
-
-```json
-
-{
+   ```
+   {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
        "Resources": {
@@ -248,22 +216,13 @@ aws cloudformation update-stack --stack-name MyStack
               }
            }
        }
-}
-```
+   }
+   ```
 
-4. Update the stack to delete the resource ( `GamesTable`) and its related
-    parameters and outputs from the stack.
+1. Update the stack to delete the resource (`GamesTable`) and its related parameters and outputs from the stack.
 
-```nohighlight
-
-aws cloudformation update-stack --stack-name MyStack
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Automatically import AWS
-resources
-
-Stack refactoring
+   ```
+   aws cloudformation update-stack --stack-name {{MyStack}}
+   ```
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis NegativeValueConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis NegativeValueConfiguration
+<a name="aws-properties-quicksight-analysis-negativevalueconfiguration"></a>
 
 The options that determine the negative value configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-negativevalueconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-negativevalueconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayMode" : String
+  "[DisplayMode](#cfn-quicksight-analysis-negativevalueconfiguration-displaymode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-negativevalueconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DisplayMode: String
-
+```
+  [DisplayMode](#cfn-quicksight-analysis-negativevalueconfiguration-displaymode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-negativevalueconfiguration-properties"></a>
 
-`DisplayMode`
-
+`DisplayMode`  <a name="cfn-quicksight-analysis-negativevalueconfiguration-displaymode"></a>
 Determines the display mode of the negative value configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `POSITIVE | NEGATIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MissingDataConfiguration
-
-NestedFilter
+*Required*: Yes
+*Type*: String
+*Allowed values*: `POSITIVE | NEGATIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

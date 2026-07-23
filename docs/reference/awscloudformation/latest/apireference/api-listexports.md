@@ -3,62 +3,54 @@ title: "ListExports"
 ---
 
 # ListExports
+<a name="API_ListExports"></a>
 
-Lists all exported output values in the account and Region in which you call this action.
-Use this action to see the exported output values that you can import into other stacks. To
-import values, use the [Fn::ImportValue](../../../../services/cloudformation/latest/templatereference/intrinsic-function-reference-importvalue.md) function.
+Lists all exported output values in the account and Region in which you call this action. Use this action to see the exported output values that you can import into other stacks. To import values, use the [ Fn::ImportValue](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-importvalue.html) function.
 
-For more information, see [Get exported outputs\
-from a deployed CloudFormation stack](../../../../services/cloudformation/latest/userguide/using-cfn-stack-exports.md).
+For more information, see [Get exported outputs from a deployed CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html).
 
 ## Request Parameters
+<a name="API_ListExports_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
-**NextToken**
-
-The token for the next set of items to return. (You received this token from a previous
-call.)
-
+ ** NextToken **
+The token for the next set of items to return. (You received this token from a previous call.)
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
 ## Response Elements
+<a name="API_ListExports_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**Exports.member.N**
+ **Exports.member.N**
+The output for the [ListExports](#API_ListExports) action.
+Type: Array of [Export](API_Export.md) objects
 
-The output for the [ListExports](api-listexports.md) action.
-
-Type: Array of [Export](api-export.md) objects
-
-**NextToken**
-
-If the output exceeds 100 exported output values, a string that identifies the next page
-of exports. If there is no additional page, this value is null.
-
+ ** NextToken **
+If the output exceeds 100 exported output values, a string that identifies the next page of exports. If there is no additional page, this value is null.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
 ## Errors
+<a name="API_ListExports_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_ListExports_Examples"></a>
 
 ### ListExports
+<a name="API_ListExports_Example_1"></a>
 
 This example illustrates one usage of ListExports.
 
 #### Sample Request
+<a name="API_ListExports_Example_1_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
  ?Action=ListExports
  &Version=2010-05-15
@@ -70,9 +62,9 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
+<a name="API_ListExports_Example_1_Response"></a>
 
 ```
-
 <ListExportsResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
   <ListExportsResult>
     <Exports>
@@ -105,33 +97,18 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ## See Also
+<a name="API_ListExports_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/ListExports)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ListExports)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListChangeSets
-
-ListGeneratedTemplates
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/ListExports)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ListExports)
 
 All content copied from https://docs.aws.amazon.com/.

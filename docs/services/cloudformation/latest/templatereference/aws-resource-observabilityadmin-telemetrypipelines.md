@@ -2,125 +2,108 @@
 title: "AWS::ObservabilityAdmin::TelemetryPipelines"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryPipelines
+<a name="aws-resource-observabilityadmin-telemetrypipelines"></a>
 
-Creates a telemetry pipeline for processing and transforming telemetry data. The pipeline
-defines how data flows from sources through processors to destinations, enabling data
-transformation and delivering capabilities.
+Creates a telemetry pipeline for processing and transforming telemetry data. The pipeline defines how data flows from sources through processors to destinations, enabling data transformation and delivering capabilities.
 
 ## Syntax
+<a name="aws-resource-observabilityadmin-telemetrypipelines-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-observabilityadmin-telemetrypipelines-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ObservabilityAdmin::TelemetryPipelines",
   "Properties" : {
-      "Configuration" : TelemetryPipelineConfiguration,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Configuration](#cfn-observabilityadmin-telemetrypipelines-configuration)" : {{TelemetryPipelineConfiguration}},
+      "[Name](#cfn-observabilityadmin-telemetrypipelines-name)" : {{String}},
+      "[Tags](#cfn-observabilityadmin-telemetrypipelines-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-observabilityadmin-telemetrypipelines-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ObservabilityAdmin::TelemetryPipelines
 Properties:
-  Configuration:
-    TelemetryPipelineConfiguration
-  Name: String
-  Tags:
-    - Tag
-
+  [Configuration](#cfn-observabilityadmin-telemetrypipelines-configuration): {{
+    TelemetryPipelineConfiguration}}
+  [Name](#cfn-observabilityadmin-telemetrypipelines-name): {{String}}
+  [Tags](#cfn-observabilityadmin-telemetrypipelines-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-observabilityadmin-telemetrypipelines-properties"></a>
 
-`Configuration`
+`Configuration`  <a name="cfn-observabilityadmin-telemetrypipelines-configuration"></a>
+The configuration that defines how the telemetry pipeline processes data, including sources, processors, and destinations. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creating-pipelines.html).
+*Required*: Yes
+*Type*: [TelemetryPipelineConfiguration](aws-properties-observabilityadmin-telemetrypipelines-telemetrypipelineconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The configuration that defines how the telemetry pipeline processes data, including
-sources, processors, and destinations. For more information, see the
-[Amazon CloudWatch User Guide](../../../amazoncloudwatch/latest/monitoring/creating-pipelines.md).
+`Name`  <a name="cfn-observabilityadmin-telemetrypipelines-name"></a>
+The name of the telemetry pipeline to create. The name must be unique within your account.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-z][a-z0-9\-]+`
+*Minimum*: `3`
+*Maximum*: `28`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [TelemetryPipelineConfiguration](aws-properties-observabilityadmin-telemetrypipelines-telemetrypipelineconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the telemetry pipeline to create. The name must be unique within your
-account.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-z][a-z0-9\-]+`
-
-_Minimum_: `3`
-
-_Maximum_: `28`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The key-value pairs to associate with the telemetry pipeline resource for categorization
-and management purposes.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-observabilityadmin-telemetrypipelines-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-observabilityadmin-telemetrypipelines-tags"></a>
+The key-value pairs to associate with the telemetry pipeline resource for categorization and management purposes.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-observabilityadmin-telemetrypipelines-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-observabilityadmin-telemetrypipelines-return-values"></a>
 
 ### Ref
+<a name="aws-resource-observabilityadmin-telemetrypipelines-return-values-ref"></a>
 
 The Amazon Resource Name (ARN) of the created telemetry pipeline.
 
 ### Fn::GetAtt
+<a name="aws-resource-observabilityadmin-telemetrypipelines-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-observabilityadmin-telemetrypipelines-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the created telemetry pipeline.
 
-`PipelineIdentifier`
-
+`PipelineIdentifier`  <a name="PipelineIdentifier-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the telemetry pipeline.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the telemetry pipeline.
 
 ## Examples
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples"></a>
 
-- [Using CloudWatch as a pipeline source](#aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source)
-
-- [Using Amazon S3 as a pipeline source](#aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source)
+**Topics**
++ [Using CloudWatch as a pipeline source](#aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source)
++ [Using Amazon S3 as a pipeline source](#aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source)
 
 ### Using CloudWatch as a pipeline source
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source"></a>
 
 The following is an example of a `Body` property value for the `Configuration` object.
 
 #### JSON
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source--json"></a>
 
-```json
-
+```
 {
   "Type": "AWS::ObservabilityAdmin::TelemetryPipelines",
   "Properties": {
@@ -132,9 +115,9 @@ The following is an example of a `Body` property value for the `Configuration` o
 ```
 
 #### YAML
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ObservabilityAdmin::TelemetryPipelines
 Properties:
   Configuration:
@@ -155,13 +138,14 @@ Properties:
 ```
 
 ### Using Amazon S3 as a pipeline source
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source"></a>
 
 The following is an example of a `Body` property value for the `Configuration` object.
 
 #### JSON
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source--json"></a>
 
-```json
-
+```
 {
   "Type": "AWS::ObservabilityAdmin::TelemetryPipelines",
   "Properties": {
@@ -173,9 +157,9 @@ The following is an example of a `Body` property value for the `Configuration` o
 ```
 
 #### YAML
+<a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ObservabilityAdmin::TelemetryPipelines
 Properties:
   Configuration:
@@ -205,11 +189,5 @@ Properties:
           - cloudwatch_logs:
               log_group: "my-log-group"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ObservabilityAdmin::TelemetryEnrichment
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

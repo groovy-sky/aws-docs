@@ -2,54 +2,42 @@
 title: "AWS::CustomerProfiles::SegmentDefinition ConditionOverrides"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition ConditionOverrides
+<a name="aws-properties-customerprofiles-segmentdefinition-conditionoverrides"></a>
 
 An object to override the original condition block of a calculated attribute.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-conditionoverrides-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-conditionoverrides-syntax.json"></a>
 
-```json
-
+```
 {
-  "Range" : RangeOverride
+  "[Range](#cfn-customerprofiles-segmentdefinition-conditionoverrides-range)" : {{RangeOverride}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-conditionoverrides-syntax.yaml"></a>
 
-```yaml
-
-  Range:
-    RangeOverride
-
+```
+  [Range](#cfn-customerprofiles-segmentdefinition-conditionoverrides-range): {{
+    RangeOverride}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-conditionoverrides-properties"></a>
 
-`Range`
-
-The relative time period over which data is included in the aggregation for this
-override.
-
-_Required_: No
-
-_Type_: [RangeOverride](aws-properties-customerprofiles-segmentdefinition-rangeoverride.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CalculatedAttributeDimension
-
-DateDimension
+`Range`  <a name="cfn-customerprofiles-segmentdefinition-conditionoverrides-range"></a>
+The relative time period over which data is included in the aggregation for this override.
+*Required*: No
+*Type*: [RangeOverride](aws-properties-customerprofiles-segmentdefinition-rangeoverride.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

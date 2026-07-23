@@ -2,53 +2,42 @@
 title: "AWS::IoTWireless::WirelessDevice FPorts"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::WirelessDevice FPorts
+<a name="aws-properties-iotwireless-wirelessdevice-fports"></a>
 
 List of FPorts assigned for different LoRaWAN application packages to use.
 
 ## Syntax
+<a name="aws-properties-iotwireless-wirelessdevice-fports-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-wirelessdevice-fports-syntax.json"></a>
 
-```json
-
+```
 {
-  "Applications" : [ Application, ... ]
+  "[Applications](#cfn-iotwireless-wirelessdevice-fports-applications)" : {{[ Application, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-wirelessdevice-fports-syntax.yaml"></a>
 
-```yaml
-
-  Applications:
-    - Application
-
+```
+  [Applications](#cfn-iotwireless-wirelessdevice-fports-applications): {{
+    - Application}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-wirelessdevice-fports-properties"></a>
 
-`Applications`
-
+`Applications`  <a name="cfn-iotwireless-wirelessdevice-fports-applications"></a>
 LoRaWAN application configuration, which can be used to perform geolocation.
-
-_Required_: No
-
-_Type_: Array of [Application](aws-properties-iotwireless-wirelessdevice-application.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Application
-
-LoRaWANDevice
+*Required*: No
+*Type*: Array of [Application](aws-properties-iotwireless-wirelessdevice-application.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,69 +2,52 @@
 title: "AWS::DataZone::EnvironmentBlueprintConfiguration RegionalParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::EnvironmentBlueprintConfiguration RegionalParameter
+<a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter"></a>
 
 The regional parameters in the environment blueprint.
 
 ## Syntax
+<a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Parameters" : {Key: Value, ...},
-  "Region" : String
+  "[Parameters](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Region](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter-syntax.yaml"></a>
 
-```yaml
-
-  Parameters:
-    Key: Value
-  Region: String
-
+```
+  [Parameters](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-parameters): {{
+    {{Key}}: {{Value}}}}
+  [Region](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter-properties"></a>
 
-`Parameters`
-
+`Parameters`  <a name="cfn-datazone-environmentblueprintconfiguration-regionalparameter-parameters"></a>
 A string to string map containing parameters for the region.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-datazone-environmentblueprintconfiguration-regionalparameter-region"></a>
 The region specified in the environment parameter.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z]{2}-?(iso|gov)?-{1}[a-z]*-{1}[0-9]$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProvisioningConfiguration
-
-AWS::DataZone::EnvironmentProfile
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z]{2}-?(iso|gov)?-{1}[a-z]*-{1}[0-9]$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis AnalysisSourceEntity"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis AnalysisSourceEntity
+<a name="aws-properties-quicksight-analysis-analysissourceentity"></a>
 
 The source entity of an analysis.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-analysissourceentity-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-analysissourceentity-syntax.json"></a>
 
-```json
-
+```
 {
-  "SourceTemplate" : AnalysisSourceTemplate
+  "[SourceTemplate](#cfn-quicksight-analysis-analysissourceentity-sourcetemplate)" : {{AnalysisSourceTemplate}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-analysissourceentity-syntax.yaml"></a>
 
-```yaml
-
-  SourceTemplate:
-    AnalysisSourceTemplate
-
+```
+  [SourceTemplate](#cfn-quicksight-analysis-analysissourceentity-sourcetemplate): {{
+    AnalysisSourceTemplate}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-analysissourceentity-properties"></a>
 
-`SourceTemplate`
-
+`SourceTemplate`  <a name="cfn-quicksight-analysis-analysissourceentity-sourcetemplate"></a>
 The source template for the source entity of the analysis.
-
-_Required_: No
-
-_Type_: [AnalysisSourceTemplate](aws-properties-quicksight-analysis-analysissourcetemplate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisError
-
-AnalysisSourceTemplate
+*Required*: No
+*Type*: [AnalysisSourceTemplate](aws-properties-quicksight-analysis-analysissourcetemplate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

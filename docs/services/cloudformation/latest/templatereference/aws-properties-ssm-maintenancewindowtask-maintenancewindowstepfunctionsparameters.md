@@ -2,73 +2,54 @@
 title: "AWS::SSM::MaintenanceWindowTask MaintenanceWindowStepFunctionsParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::MaintenanceWindowTask MaintenanceWindowStepFunctionsParameters
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters"></a>
 
-The `MaintenanceWindowStepFunctionsParameters` property type specifies the
-parameters for the execution of a `STEP_FUNCTIONS` task in a Systems Manager maintenance window.
+The `MaintenanceWindowStepFunctionsParameters` property type specifies the parameters for the execution of a `STEP_FUNCTIONS` task in a Systems Manager maintenance window.
 
-`MaintenanceWindowStepFunctionsParameters` is a property of the [TaskInvocationParameters](../userguide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.md) property type.
+`MaintenanceWindowStepFunctionsParameters` is a property of the [TaskInvocationParameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html) property type.
 
 ## Syntax
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Input" : String,
-  "Name" : String
+  "[Input](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input)" : {{String}},
+  "[Name](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-syntax.yaml"></a>
 
-```yaml
-
-  Input: String
-  Name: String
-
+```
+  [Input](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input): {{String}}
+  [Name](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-properties"></a>
 
-`Input`
-
+`Input`  <a name="cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input"></a>
 The inputs for the `STEP_FUNCTIONS` task.
+*Required*: No
+*Type*: String
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name"></a>
 The name of the `STEP_FUNCTIONS` task.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `80`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MaintenanceWindowRunCommandParameters
-
-NotificationConfig
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `80`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

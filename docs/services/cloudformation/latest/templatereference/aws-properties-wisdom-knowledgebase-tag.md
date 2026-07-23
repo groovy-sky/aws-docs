@@ -2,77 +2,54 @@
 title: "AWS::Wisdom::KnowledgeBase Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::KnowledgeBase Tag
+<a name="aws-properties-wisdom-knowledgebase-tag"></a>
 
-Metadata to assign to the Wisdom knowledge base. Tags help organize and categorize
-your Amazon Connect Wisdom resources. Each tag consists of a key and an optional
-value, both of which you define.
+Metadata to assign to the Wisdom knowledge base. Tags help organize and categorize your Connect Customer Wisdom resources. Each tag consists of a key and an optional value, both of which you define.
 
 ## Syntax
+<a name="aws-properties-wisdom-knowledgebase-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-knowledgebase-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-wisdom-knowledgebase-tag-key)" : {{String}},
+  "[Value](#cfn-wisdom-knowledgebase-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-knowledgebase-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-wisdom-knowledgebase-tag-key): {{String}}
+  [Value](#cfn-wisdom-knowledgebase-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-knowledgebase-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-wisdom-knowledgebase-tag-key"></a>
+The key-value string map. The valid character set is `[a-zA-Z+-=._:/]`. The tag key can be up to 128 characters and must not start with `aws:`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:)[a-zA-Z+-=._:/]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The key-value string map. The valid character set is `[a-zA-Z+-=._:/]`. The
-tag key can be up to 128 characters and must not start with `aws:`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-wisdom-knowledgebase-tag-value"></a>
 The tag value can be up to 256 characters.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SourceConfiguration
-
-UrlConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

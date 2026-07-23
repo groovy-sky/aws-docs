@@ -2,57 +2,44 @@
 title: "AWS::AutoScaling::AutoScalingGroup BaselinePerformanceFactorsRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::AutoScalingGroup BaselinePerformanceFactorsRequest
+<a name="aws-properties-autoscaling-autoscalinggroup-baselineperformancefactorsrequest"></a>
 
-The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Auto Scaling uses
-this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application.
+ The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Auto Scaling uses this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application.
 
-Currently, this parameter only supports CPU performance as a baseline performance factor. For example, specifying `c6i` uses the CPU performance of the `c6i`
-family as the baseline reference.
+Currently, this parameter only supports CPU performance as a baseline performance factor. For example, specifying `c6i` uses the CPU performance of the `c6i` family as the baseline reference.
 
 ## Syntax
+<a name="aws-properties-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cpu" : CpuPerformanceFactorRequest
+  "[Cpu](#cfn-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-cpu)" : {{CpuPerformanceFactorRequest}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-syntax.yaml"></a>
 
-```yaml
-
-  Cpu:
-    CpuPerformanceFactorRequest
-
+```
+  [Cpu](#cfn-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-cpu): {{
+    CpuPerformanceFactorRequest}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-properties"></a>
 
-`Cpu`
-
-The CPU performance to consider, using an instance family as the baseline reference.
-
-_Required_: No
-
-_Type_: [CpuPerformanceFactorRequest](aws-properties-autoscaling-autoscalinggroup-cpuperformancefactorrequest.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BaselineEbsBandwidthMbpsRequest
-
-CapacityReservationSpecification
+`Cpu`  <a name="cfn-autoscaling-autoscalinggroup-baselineperformancefactorsrequest-cpu"></a>
+ The CPU performance to consider, using an instance family as the baseline reference.
+*Required*: No
+*Type*: [CpuPerformanceFactorRequest](aws-properties-autoscaling-autoscalinggroup-cpuperformancefactorrequest.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

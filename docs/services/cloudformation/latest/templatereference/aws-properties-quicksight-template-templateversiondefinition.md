@@ -2,189 +2,129 @@
 title: "AWS::QuickSight::Template TemplateVersionDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TemplateVersionDefinition
+<a name="aws-properties-quicksight-template-templateversiondefinition"></a>
 
 The detailed definition of a template.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-templateversiondefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-templateversiondefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnalysisDefaults" : AnalysisDefaults,
-  "CalculatedFields" : [ CalculatedField, ... ],
-  "ColumnConfigurations" : [ ColumnConfiguration, ... ],
-  "DataSetConfigurations" : [ DataSetConfiguration, ... ],
-  "FilterGroups" : [ FilterGroup, ... ],
-  "Options" : AssetOptions,
-  "ParameterDeclarations" : [ ParameterDeclaration, ... ],
-  "QueryExecutionOptions" : QueryExecutionOptions,
-  "Sheets" : [ SheetDefinition, ... ]
+  "[AnalysisDefaults](#cfn-quicksight-template-templateversiondefinition-analysisdefaults)" : {{AnalysisDefaults}},
+  "[CalculatedFields](#cfn-quicksight-template-templateversiondefinition-calculatedfields)" : {{[ CalculatedField, ... ]}},
+  "[ColumnConfigurations](#cfn-quicksight-template-templateversiondefinition-columnconfigurations)" : {{[ ColumnConfiguration, ... ]}},
+  "[DataSetConfigurations](#cfn-quicksight-template-templateversiondefinition-datasetconfigurations)" : {{[ DataSetConfiguration, ... ]}},
+  "[FilterGroups](#cfn-quicksight-template-templateversiondefinition-filtergroups)" : {{[ FilterGroup, ... ]}},
+  "[Options](#cfn-quicksight-template-templateversiondefinition-options)" : {{AssetOptions}},
+  "[ParameterDeclarations](#cfn-quicksight-template-templateversiondefinition-parameterdeclarations)" : {{[ ParameterDeclaration, ... ]}},
+  "[QueryExecutionOptions](#cfn-quicksight-template-templateversiondefinition-queryexecutionoptions)" : {{QueryExecutionOptions}},
+  "[Sheets](#cfn-quicksight-template-templateversiondefinition-sheets)" : {{[ SheetDefinition, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-templateversiondefinition-syntax.yaml"></a>
 
-```yaml
-
-  AnalysisDefaults:
-    AnalysisDefaults
-  CalculatedFields:
-    - CalculatedField
-  ColumnConfigurations:
-    - ColumnConfiguration
-  DataSetConfigurations:
-    - DataSetConfiguration
-  FilterGroups:
-    - FilterGroup
-  Options:
-    AssetOptions
-  ParameterDeclarations:
-    - ParameterDeclaration
-  QueryExecutionOptions:
-    QueryExecutionOptions
-  Sheets:
-    - SheetDefinition
-
+```
+  [AnalysisDefaults](#cfn-quicksight-template-templateversiondefinition-analysisdefaults): {{
+    AnalysisDefaults}}
+  [CalculatedFields](#cfn-quicksight-template-templateversiondefinition-calculatedfields): {{
+    - CalculatedField}}
+  [ColumnConfigurations](#cfn-quicksight-template-templateversiondefinition-columnconfigurations): {{
+    - ColumnConfiguration}}
+  [DataSetConfigurations](#cfn-quicksight-template-templateversiondefinition-datasetconfigurations): {{
+    - DataSetConfiguration}}
+  [FilterGroups](#cfn-quicksight-template-templateversiondefinition-filtergroups): {{
+    - FilterGroup}}
+  [Options](#cfn-quicksight-template-templateversiondefinition-options): {{
+    AssetOptions}}
+  [ParameterDeclarations](#cfn-quicksight-template-templateversiondefinition-parameterdeclarations): {{
+    - ParameterDeclaration}}
+  [QueryExecutionOptions](#cfn-quicksight-template-templateversiondefinition-queryexecutionoptions): {{
+    QueryExecutionOptions}}
+  [Sheets](#cfn-quicksight-template-templateversiondefinition-sheets): {{
+    - SheetDefinition}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-templateversiondefinition-properties"></a>
 
-`AnalysisDefaults`
-
+`AnalysisDefaults`  <a name="cfn-quicksight-template-templateversiondefinition-analysisdefaults"></a>
 Property description not available.
+*Required*: No
+*Type*: [AnalysisDefaults](aws-properties-quicksight-template-analysisdefaults.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AnalysisDefaults](aws-properties-quicksight-template-analysisdefaults.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CalculatedFields`
-
+`CalculatedFields`  <a name="cfn-quicksight-template-templateversiondefinition-calculatedfields"></a>
 An array of calculated field definitions for the template.
+*Required*: No
+*Type*: Array of [CalculatedField](aws-properties-quicksight-template-calculatedfield.md)
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ColumnConfigurations`  <a name="cfn-quicksight-template-templateversiondefinition-columnconfigurations"></a>
+ An array of template-level column configurations. Column configurations are used to set default formatting for a column that's used throughout a template.
+*Required*: No
+*Type*: Array of [ColumnConfiguration](aws-properties-quicksight-template-columnconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CalculatedField](aws-properties-quicksight-template-calculatedfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnConfigurations`
-
-An array of template-level column
-configurations. Column configurations are used to set default formatting for a column that's used throughout a template.
-
-_Required_: No
-
-_Type_: Array of [ColumnConfiguration](aws-properties-quicksight-template-columnconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetConfigurations`
-
+`DataSetConfigurations`  <a name="cfn-quicksight-template-templateversiondefinition-datasetconfigurations"></a>
 An array of dataset configurations. These configurations define the required columns for each dataset used within a template.
+*Required*: Yes
+*Type*: Array of [DataSetConfiguration](aws-properties-quicksight-template-datasetconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [DataSetConfiguration](aws-properties-quicksight-template-datasetconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterGroups`
-
+`FilterGroups`  <a name="cfn-quicksight-template-templateversiondefinition-filtergroups"></a>
 Filter definitions for a template.
+For more information, see [Filtering Data](https://docs.aws.amazon.com/quicksight/latest/user/filtering-visual-data.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [FilterGroup](aws-properties-quicksight-template-filtergroup.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Filtering Data](../../../quicksight/latest/user/filtering-visual-data.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [FilterGroup](aws-properties-quicksight-template-filtergroup.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-quicksight-template-templateversiondefinition-options"></a>
 An array of option definitions for a template.
+*Required*: No
+*Type*: [AssetOptions](aws-properties-quicksight-template-assetoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AssetOptions](aws-properties-quicksight-template-assetoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterDeclarations`
-
+`ParameterDeclarations`  <a name="cfn-quicksight-template-templateversiondefinition-parameterdeclarations"></a>
 An array of parameter declarations for a template.
+*Parameters* are named variables that can transfer a value for use by an action or an object.
+For more information, see [Parameters in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/parameters-in-quicksight.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [ParameterDeclaration](aws-properties-quicksight-template-parameterdeclaration.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Parameters_ are named variables that can transfer a value for use by an action or an object.
-
-For more information, see [Parameters in Amazon Quick Sight](../../../quicksight/latest/user/parameters-in-quicksight.md) in the
-_Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [ParameterDeclaration](aws-properties-quicksight-template-parameterdeclaration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryExecutionOptions`
-
+`QueryExecutionOptions`  <a name="cfn-quicksight-template-templateversiondefinition-queryexecutionoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [QueryExecutionOptions](aws-properties-quicksight-template-queryexecutionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [QueryExecutionOptions](aws-properties-quicksight-template-queryexecutionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sheets`
-
+`Sheets`  <a name="cfn-quicksight-template-templateversiondefinition-sheets"></a>
 An array of sheet definitions for a template.
-
-_Required_: No
-
-_Type_: Array of [SheetDefinition](aws-properties-quicksight-template-sheetdefinition.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TemplateVersion
-
-TextAreaControlDisplayOptions
+*Required*: No
+*Type*: Array of [SheetDefinition](aws-properties-quicksight-template-sheetdefinition.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

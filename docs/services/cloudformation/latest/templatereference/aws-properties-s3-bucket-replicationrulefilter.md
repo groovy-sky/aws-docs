@@ -2,95 +2,63 @@
 title: "AWS::S3::Bucket ReplicationRuleFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket ReplicationRuleFilter
+<a name="aws-properties-s3-bucket-replicationrulefilter"></a>
 
-A filter that identifies the subset of objects to which the replication rule applies. A
-`Filter` must specify exactly one `Prefix`, `TagFilter`, or
-an `And` child element.
+A filter that identifies the subset of objects to which the replication rule applies. A `Filter` must specify exactly one `Prefix`, `TagFilter`, or an `And` child element.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-replicationrulefilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-replicationrulefilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "And" : ReplicationRuleAndOperator,
-  "Prefix" : String,
-  "TagFilter" : TagFilter
+  "[And](#cfn-s3-bucket-replicationrulefilter-and)" : {{ReplicationRuleAndOperator}},
+  "[Prefix](#cfn-s3-bucket-replicationrulefilter-prefix)" : {{String}},
+  "[TagFilter](#cfn-s3-bucket-replicationrulefilter-tagfilter)" : {{TagFilter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-replicationrulefilter-syntax.yaml"></a>
 
-```yaml
-
-  And:
-    ReplicationRuleAndOperator
-  Prefix: String
-  TagFilter:
-    TagFilter
-
+```
+  [And](#cfn-s3-bucket-replicationrulefilter-and): {{
+    ReplicationRuleAndOperator}}
+  [Prefix](#cfn-s3-bucket-replicationrulefilter-prefix): {{String}}
+  [TagFilter](#cfn-s3-bucket-replicationrulefilter-tagfilter): {{
+    TagFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-replicationrulefilter-properties"></a>
 
-`And`
+`And`  <a name="cfn-s3-bucket-replicationrulefilter-and"></a>
+A container for specifying rule filters. The filters determine the subset of objects to which the rule applies. This element is required only if you specify more than one filter. For example:
++ If you specify both a `Prefix` and a `TagFilter`, wrap these filters in an `And` tag.
++ If you specify a filter based on multiple tags, wrap the `TagFilter` elements in an `And` tag.
+*Required*: No
+*Type*: [ReplicationRuleAndOperator](aws-properties-s3-bucket-replicationruleandoperator.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A container for specifying rule filters. The filters determine the subset of objects to
-which the rule applies. This element is required only if you specify more than one filter. For
-example:
-
-- If you specify both a `Prefix` and a `TagFilter`, wrap these
-filters in an `And` tag.
-
-- If you specify a filter based on multiple tags, wrap the `TagFilter`
-elements in an `And` tag.
-
-_Required_: No
-
-_Type_: [ReplicationRuleAndOperator](aws-properties-s3-bucket-replicationruleandoperator.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-s3-bucket-replicationrulefilter-prefix"></a>
 An object key name prefix that identifies the subset of objects to which the rule applies.
+Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see [ XML related object key constraints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html#object-key-xml-related-constraints).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Important
-
-Replacement must be made for object keys containing special characters (such as carriage returns) when using
-XML requests. For more information, see [XML related object key constraints](../../../s3/latest/userguide/object-keys.md#object-key-xml-related-constraints).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TagFilter`
-
+`TagFilter`  <a name="cfn-s3-bucket-replicationrulefilter-tagfilter"></a>
 A container for specifying a tag key and value.
-
 The rule applies only to objects that have the tag in their tag set.
-
-_Required_: No
-
-_Type_: [TagFilter](aws-properties-s3-bucket-tagfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationRuleAndOperator
-
-ReplicationTime
+*Required*: No
+*Type*: [TagFilter](aws-properties-s3-bucket-tagfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

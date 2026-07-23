@@ -2,81 +2,59 @@
 title: "AWS::AmazonMQ::Broker MaintenanceWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmazonMQ::Broker MaintenanceWindow
+<a name="aws-properties-amazonmq-broker-maintenancewindow"></a>
 
 The parameters that determine the WeeklyStartTime.
 
 ## Syntax
+<a name="aws-properties-amazonmq-broker-maintenancewindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amazonmq-broker-maintenancewindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "DayOfWeek" : String,
-  "TimeOfDay" : String,
-  "TimeZone" : String
+  "[DayOfWeek](#cfn-amazonmq-broker-maintenancewindow-dayofweek)" : {{String}},
+  "[TimeOfDay](#cfn-amazonmq-broker-maintenancewindow-timeofday)" : {{String}},
+  "[TimeZone](#cfn-amazonmq-broker-maintenancewindow-timezone)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amazonmq-broker-maintenancewindow-syntax.yaml"></a>
 
-```yaml
-
-  DayOfWeek: String
-  TimeOfDay: String
-  TimeZone: String
-
+```
+  [DayOfWeek](#cfn-amazonmq-broker-maintenancewindow-dayofweek): {{String}}
+  [TimeOfDay](#cfn-amazonmq-broker-maintenancewindow-timeofday): {{String}}
+  [TimeZone](#cfn-amazonmq-broker-maintenancewindow-timezone): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amazonmq-broker-maintenancewindow-properties"></a>
 
-`DayOfWeek`
-
+`DayOfWeek`  <a name="cfn-amazonmq-broker-maintenancewindow-dayofweek"></a>
 Required. The day of the week.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY | SUNDAY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY | SUNDAY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeOfDay`
-
+`TimeOfDay`  <a name="cfn-amazonmq-broker-maintenancewindow-timeofday"></a>
 Required. The time, in 24-hour format.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9]{1,2}:[0-9]{2}(:[0-9]{2})?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9]{1,2}:[0-9]{2}(:[0-9]{2})?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeZone`
-
-The time zone, UTC by default, in either the Country/City format, or the UTC
-offset format.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogList
-
-TagsEntry
+`TimeZone`  <a name="cfn-amazonmq-broker-maintenancewindow-timezone"></a>
+The time zone, UTC by default, in either the Country/City format, or the UTC offset format.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

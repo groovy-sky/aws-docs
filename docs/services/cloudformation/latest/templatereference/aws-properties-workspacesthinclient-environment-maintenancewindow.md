@@ -2,157 +2,105 @@
 title: "AWS::WorkSpacesThinClient::Environment MaintenanceWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesThinClient::Environment MaintenanceWindow
+<a name="aws-properties-workspacesthinclient-environment-maintenancewindow"></a>
 
-###### Important
-
-End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027,
-you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see
-[Amazon WorkSpaces Thin Client end of support](../../../workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.md).
+**Important**
+End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html).
 
 Describes the maintenance window for a thin client device.
 
 ## Syntax
+<a name="aws-properties-workspacesthinclient-environment-maintenancewindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspacesthinclient-environment-maintenancewindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplyTimeOf" : String,
-  "DaysOfTheWeek" : [ String, ... ],
-  "EndTimeHour" : Integer,
-  "EndTimeMinute" : Integer,
-  "StartTimeHour" : Integer,
-  "StartTimeMinute" : Integer,
-  "Type" : String
+  "[ApplyTimeOf](#cfn-workspacesthinclient-environment-maintenancewindow-applytimeof)" : {{String}},
+  "[DaysOfTheWeek](#cfn-workspacesthinclient-environment-maintenancewindow-daysoftheweek)" : {{[ String, ... ]}},
+  "[EndTimeHour](#cfn-workspacesthinclient-environment-maintenancewindow-endtimehour)" : {{Integer}},
+  "[EndTimeMinute](#cfn-workspacesthinclient-environment-maintenancewindow-endtimeminute)" : {{Integer}},
+  "[StartTimeHour](#cfn-workspacesthinclient-environment-maintenancewindow-starttimehour)" : {{Integer}},
+  "[StartTimeMinute](#cfn-workspacesthinclient-environment-maintenancewindow-starttimeminute)" : {{Integer}},
+  "[Type](#cfn-workspacesthinclient-environment-maintenancewindow-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspacesthinclient-environment-maintenancewindow-syntax.yaml"></a>
 
-```yaml
-
-  ApplyTimeOf: String
-  DaysOfTheWeek:
-    - String
-  EndTimeHour: Integer
-  EndTimeMinute: Integer
-  StartTimeHour: Integer
-  StartTimeMinute: Integer
-  Type: String
-
+```
+  [ApplyTimeOf](#cfn-workspacesthinclient-environment-maintenancewindow-applytimeof): {{String}}
+  [DaysOfTheWeek](#cfn-workspacesthinclient-environment-maintenancewindow-daysoftheweek): {{
+    - String}}
+  [EndTimeHour](#cfn-workspacesthinclient-environment-maintenancewindow-endtimehour): {{Integer}}
+  [EndTimeMinute](#cfn-workspacesthinclient-environment-maintenancewindow-endtimeminute): {{Integer}}
+  [StartTimeHour](#cfn-workspacesthinclient-environment-maintenancewindow-starttimehour): {{Integer}}
+  [StartTimeMinute](#cfn-workspacesthinclient-environment-maintenancewindow-starttimeminute): {{Integer}}
+  [Type](#cfn-workspacesthinclient-environment-maintenancewindow-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspacesthinclient-environment-maintenancewindow-properties"></a>
 
-`ApplyTimeOf`
+`ApplyTimeOf`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-applytimeof"></a>
+The option to set the maintenance window during the device local time or Universal Coordinated Time (UTC).
+*Required*: No
+*Type*: String
+*Allowed values*: `UTC | DEVICE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The option to set the maintenance window during the device local time or Universal
-Coordinated Time (UTC).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `UTC | DEVICE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DaysOfTheWeek`
-
+`DaysOfTheWeek`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-daysoftheweek"></a>
 The days of the week during which the maintenance window is open.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `7`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EndTimeHour`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-endtimehour"></a>
+The hour for the maintenance window end (`00`-`23`).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `23`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
+`EndTimeMinute`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-endtimeminute"></a>
+The minutes for the maintenance window end (`00`-`59`).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `59`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`StartTimeHour`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-starttimehour"></a>
+The hour for the maintenance window start (`00`-`23`).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `23`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `7`
+`StartTimeMinute`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-starttimeminute"></a>
+The minutes past the hour for the maintenance window start (`00`-`59`).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `59`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndTimeHour`
-
-The hour for the maintenance window end ( `00`- `23`).
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `23`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndTimeMinute`
-
-The minutes for the maintenance window end ( `00`- `59`).
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `59`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTimeHour`
-
-The hour for the maintenance window start ( `00`- `23`).
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `23`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTimeMinute`
-
-The minutes past the hour for the maintenance window start
-( `00`- `59`).
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `59`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-workspacesthinclient-environment-maintenancewindow-type"></a>
 An option to select the default or custom maintenance window.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SYSTEM | CUSTOM`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::WorkSpacesThinClient::Environment
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SYSTEM | CUSTOM`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

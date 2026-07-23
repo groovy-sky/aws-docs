@@ -2,66 +2,50 @@
 title: "AWS::ImageBuilder::ImagePipeline ImageScanningConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImagePipeline ImageScanningConfiguration
+<a name="aws-properties-imagebuilder-imagepipeline-imagescanningconfiguration"></a>
 
 Contains settings for Image Builder image resource and container image scans.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-imagepipeline-imagescanningconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-imagepipeline-imagescanningconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EcrConfiguration" : EcrConfiguration,
-  "ImageScanningEnabled" : Boolean
+  "[EcrConfiguration](#cfn-imagebuilder-imagepipeline-imagescanningconfiguration-ecrconfiguration)" : {{EcrConfiguration}},
+  "[ImageScanningEnabled](#cfn-imagebuilder-imagepipeline-imagescanningconfiguration-imagescanningenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-imagepipeline-imagescanningconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EcrConfiguration:
-    EcrConfiguration
-  ImageScanningEnabled: Boolean
-
+```
+  [EcrConfiguration](#cfn-imagebuilder-imagepipeline-imagescanningconfiguration-ecrconfiguration): {{
+    EcrConfiguration}}
+  [ImageScanningEnabled](#cfn-imagebuilder-imagepipeline-imagescanningconfiguration-imagescanningenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-imagepipeline-imagescanningconfiguration-properties"></a>
 
-`EcrConfiguration`
-
+`EcrConfiguration`  <a name="cfn-imagebuilder-imagepipeline-imagescanningconfiguration-ecrconfiguration"></a>
 Contains Amazon ECR settings for vulnerability scans.
+*Required*: No
+*Type*: [EcrConfiguration](aws-properties-imagebuilder-imagepipeline-ecrconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EcrConfiguration](aws-properties-imagebuilder-imagepipeline-ecrconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageScanningEnabled`
-
-A setting that indicates whether Image Builder keeps a snapshot of the vulnerability scans that
-Amazon Inspector runs against the build instance when you create a new image.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EcrConfiguration
-
-ImageTestsConfiguration
+`ImageScanningEnabled`  <a name="cfn-imagebuilder-imagepipeline-imagescanningconfiguration-imagescanningenabled"></a>
+A setting that indicates whether Image Builder keeps a snapshot of the vulnerability scans that Amazon Inspector runs against the build instance when you create a new image.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

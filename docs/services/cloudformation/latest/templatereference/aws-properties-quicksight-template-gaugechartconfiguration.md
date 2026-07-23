@@ -2,131 +2,96 @@
 title: "AWS::QuickSight::Template GaugeChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template GaugeChartConfiguration
+<a name="aws-properties-quicksight-template-gaugechartconfiguration"></a>
 
 The configuration of a `GaugeChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-gaugechartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-gaugechartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColorConfiguration" : GaugeChartColorConfiguration,
-  "DataLabels" : DataLabelOptions,
-  "FieldWells" : GaugeChartFieldWells,
-  "GaugeChartOptions" : GaugeChartOptions,
-  "Interactions" : VisualInteractionOptions,
-  "TooltipOptions" : TooltipOptions,
-  "VisualPalette" : VisualPalette
+  "[ColorConfiguration](#cfn-quicksight-template-gaugechartconfiguration-colorconfiguration)" : {{GaugeChartColorConfiguration}},
+  "[DataLabels](#cfn-quicksight-template-gaugechartconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[FieldWells](#cfn-quicksight-template-gaugechartconfiguration-fieldwells)" : {{GaugeChartFieldWells}},
+  "[GaugeChartOptions](#cfn-quicksight-template-gaugechartconfiguration-gaugechartoptions)" : {{GaugeChartOptions}},
+  "[Interactions](#cfn-quicksight-template-gaugechartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[TooltipOptions](#cfn-quicksight-template-gaugechartconfiguration-tooltipoptions)" : {{TooltipOptions}},
+  "[VisualPalette](#cfn-quicksight-template-gaugechartconfiguration-visualpalette)" : {{VisualPalette}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-gaugechartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ColorConfiguration:
-    GaugeChartColorConfiguration
-  DataLabels:
-    DataLabelOptions
-  FieldWells:
-    GaugeChartFieldWells
-  GaugeChartOptions:
-    GaugeChartOptions
-  Interactions:
-    VisualInteractionOptions
-  TooltipOptions:
-    TooltipOptions
-  VisualPalette:
-    VisualPalette
-
+```
+  [ColorConfiguration](#cfn-quicksight-template-gaugechartconfiguration-colorconfiguration): {{
+    GaugeChartColorConfiguration}}
+  [DataLabels](#cfn-quicksight-template-gaugechartconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [FieldWells](#cfn-quicksight-template-gaugechartconfiguration-fieldwells): {{
+    GaugeChartFieldWells}}
+  [GaugeChartOptions](#cfn-quicksight-template-gaugechartconfiguration-gaugechartoptions): {{
+    GaugeChartOptions}}
+  [Interactions](#cfn-quicksight-template-gaugechartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [TooltipOptions](#cfn-quicksight-template-gaugechartconfiguration-tooltipoptions): {{
+    TooltipOptions}}
+  [VisualPalette](#cfn-quicksight-template-gaugechartconfiguration-visualpalette): {{
+    VisualPalette}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-gaugechartconfiguration-properties"></a>
 
-`ColorConfiguration`
-
+`ColorConfiguration`  <a name="cfn-quicksight-template-gaugechartconfiguration-colorconfiguration"></a>
 The color configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: [GaugeChartColorConfiguration](aws-properties-quicksight-template-gaugechartcolorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GaugeChartColorConfiguration](aws-properties-quicksight-template-gaugechartcolorconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-template-gaugechartconfiguration-datalabels"></a>
 The data label configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-gaugechartconfiguration-fieldwells"></a>
 The field well configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: [GaugeChartFieldWells](aws-properties-quicksight-template-gaugechartfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GaugeChartFieldWells](aws-properties-quicksight-template-gaugechartfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GaugeChartOptions`
-
+`GaugeChartOptions`  <a name="cfn-quicksight-template-gaugechartconfiguration-gaugechartoptions"></a>
 The options that determine the presentation of the `GaugeChartVisual`.
+*Required*: No
+*Type*: [GaugeChartOptions](aws-properties-quicksight-template-gaugechartoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GaugeChartOptions](aws-properties-quicksight-template-gaugechartoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-gaugechartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TooltipOptions`
-
+`TooltipOptions`  <a name="cfn-quicksight-template-gaugechartconfiguration-tooltipoptions"></a>
 The tooltip configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-template-gaugechartconfiguration-visualpalette"></a>
 The visual palette configuration of a `GaugeChartVisual`.
-
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GaugeChartConditionalFormattingOption
-
-GaugeChartFieldWells
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

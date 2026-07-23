@@ -2,58 +2,44 @@
 title: "AWS::Lex::Bot QInConnectAssistantConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot QInConnectAssistantConfiguration
+<a name="aws-properties-lex-bot-qinconnectassistantconfiguration"></a>
 
-The `QInConnectAssistantConfiguration` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
+<a name="aws-properties-lex-bot-qinconnectassistantconfiguration-description"></a>The `QInConnectAssistantConfiguration` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
 
 ## Syntax
+<a name="aws-properties-lex-bot-qinconnectassistantconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-qinconnectassistantconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AssistantArn" : String
+  "[AssistantArn](#cfn-lex-bot-qinconnectassistantconfiguration-assistantarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-qinconnectassistantconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AssistantArn: String
-
+```
+  [AssistantArn](#cfn-lex-bot-qinconnectassistantconfiguration-assistantarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-qinconnectassistantconfiguration-properties"></a>
 
-`AssistantArn`
-
+`AssistantArn`  <a name="cfn-lex-bot-qinconnectassistantconfiguration-assistantarn"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PromptSpecification
-
-QInConnectIntentConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

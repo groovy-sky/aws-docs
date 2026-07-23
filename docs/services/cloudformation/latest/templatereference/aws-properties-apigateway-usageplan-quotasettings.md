@@ -2,89 +2,66 @@
 title: "AWS::ApiGateway::UsagePlan QuotaSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::UsagePlan QuotaSettings
+<a name="aws-properties-apigateway-usageplan-quotasettings"></a>
 
-`QuotaSettings` is a property of the [AWS::ApiGateway::UsagePlan](../userguide/aws-resource-apigateway-usageplan.md) resource that specifies a target for the maximum number of requests users can make to your REST APIs.
+`QuotaSettings` is a property of the [AWS::ApiGateway::UsagePlan](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html) resource that specifies a target for the maximum number of requests users can make to your REST APIs.
 
-In some cases clients can exceed the targets that you set. Don’t rely on usage plans to control costs. Consider using [AWS Budgets](../../../cost-management/latest/userguide/budgets-managing-costs.md) to monitor costs
-and [AWS WAF](../../../waf/latest/developerguide/waf-chapter.md) to manage API requests.
+In some cases clients can exceed the targets that you set. Don’t rely on usage plans to control costs. Consider using [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) to monitor costs and [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) to manage API requests.
 
 ## Syntax
+<a name="aws-properties-apigateway-usageplan-quotasettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigateway-usageplan-quotasettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "Limit" : Integer,
-  "Offset" : Integer,
-  "Period" : String
+  "[Limit](#cfn-apigateway-usageplan-quotasettings-limit)" : {{Integer}},
+  "[Offset](#cfn-apigateway-usageplan-quotasettings-offset)" : {{Integer}},
+  "[Period](#cfn-apigateway-usageplan-quotasettings-period)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigateway-usageplan-quotasettings-syntax.yaml"></a>
 
-```yaml
-
-  Limit: Integer
-  Offset: Integer
-  Period: String
-
+```
+  [Limit](#cfn-apigateway-usageplan-quotasettings-limit): {{Integer}}
+  [Offset](#cfn-apigateway-usageplan-quotasettings-offset): {{Integer}}
+  [Period](#cfn-apigateway-usageplan-quotasettings-period): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apigateway-usageplan-quotasettings-properties"></a>
 
-`Limit`
-
+`Limit`  <a name="cfn-apigateway-usageplan-quotasettings-limit"></a>
 The target maximum number of requests that can be made in a given time period.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Offset`
-
+`Offset`  <a name="cfn-apigateway-usageplan-quotasettings-offset"></a>
 The number of requests subtracted from the given limit in the initial time period.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Period`
-
+`Period`  <a name="cfn-apigateway-usageplan-quotasettings-period"></a>
 The time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DAY | WEEK | MONTH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Allowed values*: `DAY | WEEK | MONTH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [UsagePlan](../../../apigateway/latest/api/api-usageplan.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiStage
-
-Tag
+<a name="aws-properties-apigateway-usageplan-quotasettings--seealso"></a>
++ [UsagePlan](https://docs.aws.amazon.com/apigateway/latest/api/API_UsagePlan.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

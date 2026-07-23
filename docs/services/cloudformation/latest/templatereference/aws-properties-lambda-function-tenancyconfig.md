@@ -2,57 +2,42 @@
 title: "AWS::Lambda::Function TenancyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Function TenancyConfig
+<a name="aws-properties-lambda-function-tenancyconfig"></a>
 
-Specifies the tenant isolation mode configuration for a Lambda function.
-This allows you to configure specific tenant isolation strategies for your function invocations.
-Tenant isolation configuration cannot be modified after function creation.
+Specifies the tenant isolation mode configuration for a Lambda function. This allows you to configure specific tenant isolation strategies for your function invocations. Tenant isolation configuration cannot be modified after function creation.
 
 ## Syntax
+<a name="aws-properties-lambda-function-tenancyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-function-tenancyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "TenantIsolationMode" : String
+  "[TenantIsolationMode](#cfn-lambda-function-tenancyconfig-tenantisolationmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-function-tenancyconfig-syntax.yaml"></a>
 
-```yaml
-
-  TenantIsolationMode: String
-
+```
+  [TenantIsolationMode](#cfn-lambda-function-tenancyconfig-tenantisolationmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-function-tenancyconfig-properties"></a>
 
-`TenantIsolationMode`
-
-Tenant isolation mode allows for invocation to be sent to a
-corresponding execution environment dedicated to a specific tenant ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PER_TENANT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-TracingConfig
+`TenantIsolationMode`  <a name="cfn-lambda-function-tenancyconfig-tenantisolationmode"></a>
+Tenant isolation mode allows for invocation to be sent to a corresponding execution environment dedicated to a specific tenant ID.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PER_TENANT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

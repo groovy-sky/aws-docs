@@ -2,103 +2,64 @@
 title: "AWS::ECS::TaskSet Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskSet Tag
+<a name="aws-properties-ecs-taskset-tag"></a>
 
-The metadata that you apply to a resource to help you categorize and organize them.
-Each tag consists of a key and an optional value. You define them.
+The metadata that you apply to a resource to help you categorize and organize them. Each tag consists of a key and an optional value. You define them.
 
 The following basic restrictions apply to tags:
-
-- Maximum number of tags per resource - 50
-
-- For each resource, each tag key must be unique, and each tag key can have only
-one value.
-
-- Maximum key length - 128 Unicode characters in UTF-8
-
-- Maximum value length - 256 Unicode characters in UTF-8
-
-- If your tagging schema is used across multiple services and resources,
-remember that other services may have restrictions on allowed characters.
-Generally allowed characters are: letters, numbers, and spaces representable in
-UTF-8, and the following characters: + - = . \_ : / @.
-
-- Tag keys and values are case-sensitive.
-
-- Do not use `aws:`, `AWS:`, or any upper or lowercase
-combination of such as a prefix for either keys or values as it is reserved for
-AWS use. You cannot edit or delete tag keys or values with
-this prefix. Tags with this prefix do not count against your tags per resource
-limit.
++ Maximum number of tags per resource - 50
++ For each resource, each tag key must be unique, and each tag key can have only one value.
++ Maximum key length - 128 Unicode characters in UTF-8
++ Maximum value length - 256 Unicode characters in UTF-8
++ If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: \+ - = . \_ : / @.
++ Tag keys and values are case-sensitive.
++ Do not use `aws:`, `AWS:`, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for AWS use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.
 
 ## Syntax
+<a name="aws-properties-ecs-taskset-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskset-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-ecs-taskset-tag-key)" : {{String}},
+  "[Value](#cfn-ecs-taskset-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskset-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-ecs-taskset-tag-key): {{String}}
+  [Value](#cfn-ecs-taskset-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskset-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-ecs-taskset-tag-key"></a>
+One part of a key-value pair that make up a tag. A `key` is a general label that acts like a category for more specific tag values.
+*Required*: No
+*Type*: String
+*Pattern*: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-One part of a key-value pair that make up a tag. A `key` is a general label
-that acts like a category for more specific tag values.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The optional part of a key-value pair that make up a tag. A `value` acts as
-a descriptor within a tag category (key).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceRegistry
-
-Next
+`Value`  <a name="cfn-ecs-taskset-tag-value"></a>
+The optional part of a key-value pair that make up a tag. A `value` acts as a descriptor within a tag category (key).
+*Required*: No
+*Type*: String
+*Pattern*: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

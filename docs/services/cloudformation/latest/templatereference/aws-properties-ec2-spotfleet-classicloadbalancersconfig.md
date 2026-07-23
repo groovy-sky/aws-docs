@@ -2,58 +2,44 @@
 title: "AWS::EC2::SpotFleet ClassicLoadBalancersConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet ClassicLoadBalancersConfig
+<a name="aws-properties-ec2-spotfleet-classicloadbalancersconfig"></a>
 
-Specifies the Classic Load Balancers to attach to a Spot Fleet. Spot Fleet registers the
-running Spot Instances with these Classic Load Balancers.
+Specifies the Classic Load Balancers to attach to a Spot Fleet. Spot Fleet registers the running Spot Instances with these Classic Load Balancers.
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-classicloadbalancersconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-classicloadbalancersconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClassicLoadBalancers" : [ ClassicLoadBalancer, ... ]
+  "[ClassicLoadBalancers](#cfn-ec2-spotfleet-classicloadbalancersconfig-classicloadbalancers)" : {{[ ClassicLoadBalancer, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-classicloadbalancersconfig-syntax.yaml"></a>
 
-```yaml
-
-  ClassicLoadBalancers:
-    - ClassicLoadBalancer
-
+```
+  [ClassicLoadBalancers](#cfn-ec2-spotfleet-classicloadbalancersconfig-classicloadbalancers): {{
+    - ClassicLoadBalancer}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-classicloadbalancersconfig-properties"></a>
 
-`ClassicLoadBalancers`
-
+`ClassicLoadBalancers`  <a name="cfn-ec2-spotfleet-classicloadbalancersconfig-classicloadbalancers"></a>
 One or more Classic Load Balancers.
-
-_Required_: Yes
-
-_Type_: Array of [ClassicLoadBalancer](aws-properties-ec2-spotfleet-classicloadbalancer.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClassicLoadBalancer
-
-CpuPerformanceFactorRequest
+*Required*: Yes
+*Type*: Array of [ClassicLoadBalancer](aws-properties-ec2-spotfleet-classicloadbalancer.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

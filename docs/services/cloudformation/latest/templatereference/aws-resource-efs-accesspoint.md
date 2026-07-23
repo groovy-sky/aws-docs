@@ -2,163 +2,133 @@
 title: "AWS::EFS::AccessPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EFS::AccessPoint
+<a name="aws-resource-efs-accesspoint"></a>
 
-The `AWS::EFS::AccessPoint` resource creates an EFS access point.
-An access point is an application-specific view into an EFS file system that applies an operating system user and
-group, and a file system path, to any file system request made through the access point. The operating system
-user and group override any identity information provided by the NFS client. The file system path is exposed as
-the access point's root directory. Applications using the access point can only access data in its own directory and below. To learn more, see
-[Mounting a file system using EFS access points](../../../efs/latest/ug/efs-access-points.md).
+The `AWS::EFS::AccessPoint` resource creates an EFS access point. An access point is an application-specific view into an EFS file system that applies an operating system user and group, and a file system path, to any file system request made through the access point. The operating system user and group override any identity information provided by the NFS client. The file system path is exposed as the access point's root directory. Applications using the access point can only access data in its own directory and below. To learn more, see [Mounting a file system using EFS access points](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html).
 
 This operation requires permissions for the `elasticfilesystem:CreateAccessPoint` action.
 
 ## Syntax
+<a name="aws-resource-efs-accesspoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-efs-accesspoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EFS::AccessPoint",
   "Properties" : {
-      "AccessPointTags" : [ AccessPointTag, ... ],
-      "ClientToken" : String,
-      "FileSystemId" : String,
-      "PosixUser" : PosixUser,
-      "RootDirectory" : RootDirectory
+      "[AccessPointTags](#cfn-efs-accesspoint-accesspointtags)" : {{[ AccessPointTag, ... ]}},
+      "[ClientToken](#cfn-efs-accesspoint-clienttoken)" : {{String}},
+      "[FileSystemId](#cfn-efs-accesspoint-filesystemid)" : {{String}},
+      "[PosixUser](#cfn-efs-accesspoint-posixuser)" : {{PosixUser}},
+      "[RootDirectory](#cfn-efs-accesspoint-rootdirectory)" : {{RootDirectory}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-efs-accesspoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EFS::AccessPoint
 Properties:
-  AccessPointTags:
-    - AccessPointTag
-  ClientToken: String
-  FileSystemId: String
-  PosixUser:
-    PosixUser
-  RootDirectory:
-    RootDirectory
-
+  [AccessPointTags](#cfn-efs-accesspoint-accesspointtags): {{
+    - AccessPointTag}}
+  [ClientToken](#cfn-efs-accesspoint-clienttoken): {{String}}
+  [FileSystemId](#cfn-efs-accesspoint-filesystemid): {{String}}
+  [PosixUser](#cfn-efs-accesspoint-posixuser): {{
+    PosixUser}}
+  [RootDirectory](#cfn-efs-accesspoint-rootdirectory): {{
+    RootDirectory}}
 ```
 
 ## Properties
+<a name="aws-resource-efs-accesspoint-properties"></a>
 
-`AccessPointTags`
-
+`AccessPointTags`  <a name="cfn-efs-accesspoint-accesspointtags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [AccessPointTag](aws-properties-efs-accesspoint-accesspointtag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [AccessPointTag](aws-properties-efs-accesspoint-accesspointtag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientToken`
-
+`ClientToken`  <a name="cfn-efs-accesspoint-clienttoken"></a>
 The opaque string specified in the request to ensure idempotent creation.
+*Required*: No
+*Type*: String
+*Pattern*: `.+`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.+`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-efs-accesspoint-filesystemid"></a>
 The ID of the EFS file system that the access point applies to. Accepts only the ID format for input when specifying a file system, for example `fs-0123456789abcedf2`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:aws[-a-z]*:elasticfilesystem:[0-9a-z-:]+:file-system/fs-[0-9a-f]{8,40}|fs-[0-9a-f]{8,40})$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`PosixUser`  <a name="cfn-efs-accesspoint-posixuser"></a>
+The full POSIX identity, including the user ID, group ID, and secondary group IDs on the access point that is used for all file operations by NFS clients using the access point.
+*Required*: No
+*Type*: [PosixUser](aws-properties-efs-accesspoint-posixuser.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^(arn:aws[-a-z]*:elasticfilesystem:[0-9a-z-:]+:file-system/fs-[0-9a-f]{8,40}|fs-[0-9a-f]{8,40})$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PosixUser`
-
-The full POSIX identity, including the user ID, group ID, and secondary group IDs on the access point that is used for all file operations by
-NFS clients using the access point.
-
-_Required_: No
-
-_Type_: [PosixUser](aws-properties-efs-accesspoint-posixuser.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RootDirectory`
-
-The directory on the EFS file system that the access point exposes as the root
-directory to NFS clients using the access point.
-
-_Required_: No
-
-_Type_: [RootDirectory](aws-properties-efs-accesspoint-rootdirectory.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`RootDirectory`  <a name="cfn-efs-accesspoint-rootdirectory"></a>
+The directory on the EFS file system that the access point exposes as the root directory to NFS clients using the access point.
+*Required*: No
+*Type*: [RootDirectory](aws-properties-efs-accesspoint-rootdirectory.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-efs-accesspoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-efs-accesspoint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the AccessPoint ID. For example:
 
 `{"Ref":"access_point-logical_id"}` returns
 
-`fsap-0123456789abcdef0`
+ `fsap-0123456789abcdef0`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-efs-accesspoint-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AccessPointId`
+####
+<a name="aws-resource-efs-accesspoint-return-values-fn--getatt-fn--getatt"></a>
 
+`AccessPointId`  <a name="AccessPointId-fn::getatt"></a>
 The ID of the EFS access point.
 
-`Arn`
-
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the access point.
 
 ## Examples
+<a name="aws-resource-efs-accesspoint--examples"></a>
 
 ### Declare an Access Point for an EFS File System
+<a name="aws-resource-efs-accesspoint--examples--Declare_an_Access_Point_for_an_EFS_File_System"></a>
 
-The following example declares an access point that is associated with an EFS file system. For information about mounting file systems on EC2 instances, see
-[Mounting File Systems](../../../efs/latest/ug/mounting-fs.md) in the
-_EFS User Guide_.
+The following example declares an access point that is associated with an EFS file system. For information about mounting file systems on EC2 instances, see [Mounting File Systems](https://docs.aws.amazon.com/efs/latest/ug/mounting-fs.html) in the *EFS User Guide*.
 
 #### JSON
+<a name="aws-resource-efs-accesspoint--examples--Declare_an_Access_Point_for_an_EFS_File_System--json"></a>
 
-```json
-
+```
 "AccessPointResource": {
             "Type": "AWS::EFS::AccessPoint",
             "Properties": {
@@ -187,9 +157,9 @@ _EFS User Guide_.
 ```
 
 #### YAML
+<a name="aws-resource-efs-accesspoint--examples--Declare_an_Access_Point_for_an_EFS_File_System--yaml"></a>
 
-```yaml
-
+```
 AccessPointResource:
     Type: 'AWS::EFS::AccessPoint'
     Properties:
@@ -209,15 +179,8 @@ AccessPointResource:
 ```
 
 ## See also
-
-- [Amazon EFS: How it works](../../../efs/latest/ug/how-it-works.md).
-
-- [Working with Amazon EFS access points](../../../efs/latest/ug/efs-access-points.md) in the _Amazon EFS User Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Elastic File System
-
-AccessPointTag
+<a name="aws-resource-efs-accesspoint--seealso"></a>
++ [Amazon EFS: How it works](https://docs.aws.amazon.com/efs/latest/ug/how-it-works.html).
++ [Working with Amazon EFS access points](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html) in the *Amazon EFS User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

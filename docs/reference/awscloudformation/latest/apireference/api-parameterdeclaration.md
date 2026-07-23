@@ -3,76 +3,50 @@ title: "ParameterDeclaration"
 ---
 
 # ParameterDeclaration
+<a name="API_ParameterDeclaration"></a>
 
 The `ParameterDeclaration` data type.
 
 ## Contents
+<a name="API_ParameterDeclaration_Contents"></a>
 
-**DefaultValue**
-
+ ** DefaultValue **
 The default value of the parameter.
-
 Type: String
-
 Required: No
 
-**Description**
-
+ ** Description **
 The description that's associate with the parameter.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
-**NoEcho**
-
-Flag that indicates whether the parameter value is shown as plain text in logs and in the
-AWS Management Console.
-
+ ** NoEcho **
+Flag that indicates whether the parameter value is shown as plain text in logs and in the AWS Management Console.
 Type: Boolean
-
 Required: No
 
-**ParameterConstraints**
-
+ ** ParameterConstraints **
 The criteria that CloudFormation uses to validate parameter values.
-
-Type: [ParameterConstraints](api-parameterconstraints.md) object
-
+Type: [ParameterConstraints](API_ParameterConstraints.md) object
 Required: No
 
-**ParameterKey**
-
+ ** ParameterKey **
 The name that's associated with the parameter.
-
 Type: String
-
 Required: No
 
-**ParameterType**
-
+ ** ParameterType **
 The type of parameter.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ParameterDeclaration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ParameterDeclaration)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ParameterDeclaration)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ParameterDeclaration)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterConstraints
-
-PhysicalResourceIdContextKeyValuePair
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ParameterDeclaration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ParameterDeclaration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ParameterDeclaration)
 
 All content copied from https://docs.aws.amazon.com/.

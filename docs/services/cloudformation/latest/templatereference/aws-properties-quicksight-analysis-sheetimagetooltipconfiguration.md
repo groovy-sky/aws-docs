@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Analysis SheetImageTooltipConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SheetImageTooltipConfiguration
+<a name="aws-properties-quicksight-analysis-sheetimagetooltipconfiguration"></a>
 
 The tooltip configuration for a sheet image.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-sheetimagetooltipconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-sheetimagetooltipconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TooltipText" : SheetImageTooltipText,
-  "Visibility" : String
+  "[TooltipText](#cfn-quicksight-analysis-sheetimagetooltipconfiguration-tooltiptext)" : {{SheetImageTooltipText}},
+  "[Visibility](#cfn-quicksight-analysis-sheetimagetooltipconfiguration-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-sheetimagetooltipconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TooltipText:
-    SheetImageTooltipText
-  Visibility: String
-
+```
+  [TooltipText](#cfn-quicksight-analysis-sheetimagetooltipconfiguration-tooltiptext): {{
+    SheetImageTooltipText}}
+  [Visibility](#cfn-quicksight-analysis-sheetimagetooltipconfiguration-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-sheetimagetooltipconfiguration-properties"></a>
 
-`TooltipText`
-
+`TooltipText`  <a name="cfn-quicksight-analysis-sheetimagetooltipconfiguration-tooltiptext"></a>
 The text that appears in the tooltip.
+*Required*: No
+*Type*: [SheetImageTooltipText](aws-properties-quicksight-analysis-sheetimagetooltiptext.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SheetImageTooltipText](aws-properties-quicksight-analysis-sheetimagetooltiptext.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-analysis-sheetimagetooltipconfiguration-visibility"></a>
 The visibility of the tooltip.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetImageStaticFileSource
-
-SheetImageTooltipText
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

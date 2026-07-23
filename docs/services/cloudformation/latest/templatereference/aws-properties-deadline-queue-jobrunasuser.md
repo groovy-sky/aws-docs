@@ -2,81 +2,60 @@
 title: "AWS::Deadline::Queue JobRunAsUser"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Queue JobRunAsUser
+<a name="aws-properties-deadline-queue-jobrunasuser"></a>
 
 Identifies the user for a job.
 
 ## Syntax
+<a name="aws-properties-deadline-queue-jobrunasuser-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-queue-jobrunasuser-syntax.json"></a>
 
-```json
-
+```
 {
-  "Posix" : PosixUser,
-  "RunAs" : String,
-  "Windows" : WindowsUser
+  "[Posix](#cfn-deadline-queue-jobrunasuser-posix)" : {{PosixUser}},
+  "[RunAs](#cfn-deadline-queue-jobrunasuser-runas)" : {{String}},
+  "[Windows](#cfn-deadline-queue-jobrunasuser-windows)" : {{WindowsUser}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-queue-jobrunasuser-syntax.yaml"></a>
 
-```yaml
-
-  Posix:
-    PosixUser
-  RunAs: String
-  Windows:
-    WindowsUser
-
+```
+  [Posix](#cfn-deadline-queue-jobrunasuser-posix): {{
+    PosixUser}}
+  [RunAs](#cfn-deadline-queue-jobrunasuser-runas): {{String}}
+  [Windows](#cfn-deadline-queue-jobrunasuser-windows): {{
+    WindowsUser}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-queue-jobrunasuser-properties"></a>
 
-`Posix`
-
+`Posix`  <a name="cfn-deadline-queue-jobrunasuser-posix"></a>
 The user and group that the jobs in the queue run as.
+*Required*: No
+*Type*: [PosixUser](aws-properties-deadline-queue-posixuser.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RunAs`  <a name="cfn-deadline-queue-jobrunasuser-runas"></a>
+Specifies whether the job should run using the queue's system user or if the job should run using the worker agent system user.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `QUEUE_CONFIGURED_USER | WORKER_AGENT_USER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PosixUser](aws-properties-deadline-queue-posixuser.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RunAs`
-
-Specifies whether the job should run using the queue's system user or if the job should
-run using the worker agent system user.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `QUEUE_CONFIGURED_USER | WORKER_AGENT_USER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Windows`
-
+`Windows`  <a name="cfn-deadline-queue-jobrunasuser-windows"></a>
 Identifies a Microsoft Windows user.
-
-_Required_: No
-
-_Type_: [WindowsUser](aws-properties-deadline-queue-windowsuser.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JobAttachmentSettings
-
-PosixUser
+*Required*: No
+*Type*: [WindowsUser](aws-properties-deadline-queue-windowsuser.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

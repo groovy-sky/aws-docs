@@ -2,56 +2,43 @@
 title: "AWS::ARCRegionSwitch::Plan EksResourceScalingUngraceful"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan EksResourceScalingUngraceful
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingungraceful"></a>
 
 The ungraceful settings for AWS EKS resource scaling.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingungraceful-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingungraceful-syntax.json"></a>
 
-```json
-
+```
 {
-  "MinimumSuccessPercentage" : Number
+  "[MinimumSuccessPercentage](#cfn-arcregionswitch-plan-eksresourcescalingungraceful-minimumsuccesspercentage)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingungraceful-syntax.yaml"></a>
 
-```yaml
-
-  MinimumSuccessPercentage: Number
-
+```
+  [MinimumSuccessPercentage](#cfn-arcregionswitch-plan-eksresourcescalingungraceful-minimumsuccesspercentage): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingungraceful-properties"></a>
 
-`MinimumSuccessPercentage`
-
+`MinimumSuccessPercentage`  <a name="cfn-arcregionswitch-plan-eksresourcescalingungraceful-minimumsuccesspercentage"></a>
 The minimum success percentage for the configuration.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `99`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EksResourceScalingConfiguration
-
-ExecutionApprovalConfiguration
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `99`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

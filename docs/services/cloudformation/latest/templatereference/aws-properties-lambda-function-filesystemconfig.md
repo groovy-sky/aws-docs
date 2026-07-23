@@ -2,73 +2,53 @@
 title: "AWS::Lambda::Function FileSystemConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Function FileSystemConfig
+<a name="aws-properties-lambda-function-filesystemconfig"></a>
 
-Details about the connection between a Lambda function and an [Amazon EFS file system](../../../lambda/latest/dg/configuration-filesystem.md) or an [Amazon S3 Files file system](../../../lambda/latest/dg/configuration-filesystem.md).
+Details about the connection between a Lambda function and an [Amazon EFS file system](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html) or an [Amazon S3 Files file system](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html).
 
 ## Syntax
+<a name="aws-properties-lambda-function-filesystemconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-function-filesystemconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arn" : String,
-  "LocalMountPath" : String
+  "[Arn](#cfn-lambda-function-filesystemconfig-arn)" : {{String}},
+  "[LocalMountPath](#cfn-lambda-function-filesystemconfig-localmountpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-function-filesystemconfig-syntax.yaml"></a>
 
-```yaml
-
-  Arn: String
-  LocalMountPath: String
-
+```
+  [Arn](#cfn-lambda-function-filesystemconfig-arn): {{String}}
+  [LocalMountPath](#cfn-lambda-function-filesystemconfig-localmountpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-function-filesystemconfig-properties"></a>
 
-`Arn`
+`Arn`  <a name="cfn-lambda-function-filesystemconfig-arn"></a>
+The Amazon Resource Name (ARN) of the Amazon EFS or Amazon S3 Files access point that provides access to the file system.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-zA-Z-]*:elasticfilesystem:(eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:\d{12}:access-point/fsap-[a-f0-9]{17}$|^arn:aws[-a-z]*:s3files:[0-9a-z-:]+:file-system/fs-[0-9a-f]{17,40}/access-point/fsap-[0-9a-f]{17,40}$`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of the Amazon EFS or Amazon S3 Files access point that provides access to the file
-system.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-zA-Z-]*:elasticfilesystem:(eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:\d{12}:access-point/fsap-[a-f0-9]{17}$|^arn:aws[-a-z]*:s3files:[0-9a-z-:]+:file-system/fs-[0-9a-f]{17,40}/access-point/fsap-[0-9a-f]{17,40}$`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocalMountPath`
-
+`LocalMountPath`  <a name="cfn-lambda-function-filesystemconfig-localmountpath"></a>
 The path where the function can access the file system, starting with `/mnt/`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^/mnt/[a-zA-Z0-9-_.]+$`
-
-_Maximum_: `160`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EphemeralStorage
-
-FunctionScalingConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `^/mnt/[a-zA-Z0-9-_.]+$`
+*Maximum*: `160`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

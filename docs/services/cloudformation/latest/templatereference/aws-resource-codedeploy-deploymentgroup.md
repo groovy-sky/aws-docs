@@ -2,433 +2,265 @@
 title: "AWS::CodeDeploy::DeploymentGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup
+<a name="aws-resource-codedeploy-deploymentgroup"></a>
 
-The `AWS::CodeDeploy::DeploymentGroup` resource creates an AWS CodeDeploy deployment group that specifies which instances your application revisions
-are deployed to, along with other deployment options. For more information, see [CreateDeploymentGroup](../../../../reference/codedeploy/latest/apireference/api-createdeploymentgroup.md) in the _CodeDeploy API_
-_Reference_.
+ The `AWS::CodeDeploy::DeploymentGroup` resource creates an AWS CodeDeploy deployment group that specifies which instances your application revisions are deployed to, along with other deployment options. For more information, see [CreateDeploymentGroup](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateDeploymentGroup.html) in the *CodeDeploy API Reference*.
 
-###### Note
-
-Amazon ECS blue/green deployments through CodeDeploy do not use the
-`AWS::CodeDeploy::DeploymentGroup` resource. To perform Amazon ECS
-blue/green deployments, use the `AWS::CodeDeploy::BlueGreen` hook. See [Perform\
-Amazon ECS blue/green deployments through CodeDeploy using CloudFormation](../userguide/blue-green.md) for more information.
+**Note**
+Amazon ECS blue/green deployments through CodeDeploy do not use the `AWS::CodeDeploy::DeploymentGroup` resource. To perform Amazon ECS blue/green deployments, use the `AWS::CodeDeploy::BlueGreen` hook. See [Perform Amazon ECS blue/green deployments through CodeDeploy using CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-green.html) for more information.
 
 ## Syntax
+<a name="aws-resource-codedeploy-deploymentgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codedeploy-deploymentgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeDeploy::DeploymentGroup",
   "Properties" : {
-      "AlarmConfiguration" : AlarmConfiguration,
-      "ApplicationName" : String,
-      "AutoRollbackConfiguration" : AutoRollbackConfiguration,
-      "AutoScalingGroups" : [ String, ... ],
-      "BlueGreenDeploymentConfiguration" : BlueGreenDeploymentConfiguration,
-      "Deployment" : Deployment,
-      "DeploymentConfigName" : String,
-      "DeploymentGroupName" : String,
-      "DeploymentStyle" : DeploymentStyle,
-      "Ec2TagFilters" : [ EC2TagFilter, ... ],
-      "Ec2TagSet" : EC2TagSet,
-      "ECSServices" : [ ECSService, ... ],
-      "LoadBalancerInfo" : LoadBalancerInfo,
-      "OnPremisesInstanceTagFilters" : [ TagFilter, ... ],
-      "OnPremisesTagSet" : OnPremisesTagSet,
-      "OutdatedInstancesStrategy" : String,
-      "ServiceRoleArn" : String,
-      "Tags" : [ Tag, ... ],
-      "TerminationHookEnabled" : Boolean,
-      "TriggerConfigurations" : [ TriggerConfig, ... ]
+      "[AlarmConfiguration](#cfn-codedeploy-deploymentgroup-alarmconfiguration)" : {{AlarmConfiguration}},
+      "[ApplicationName](#cfn-codedeploy-deploymentgroup-applicationname)" : {{String}},
+      "[AutoRollbackConfiguration](#cfn-codedeploy-deploymentgroup-autorollbackconfiguration)" : {{AutoRollbackConfiguration}},
+      "[AutoScalingGroups](#cfn-codedeploy-deploymentgroup-autoscalinggroups)" : {{[ String, ... ]}},
+      "[BlueGreenDeploymentConfiguration](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration)" : {{BlueGreenDeploymentConfiguration}},
+      "[Deployment](#cfn-codedeploy-deploymentgroup-deployment)" : {{Deployment}},
+      "[DeploymentConfigName](#cfn-codedeploy-deploymentgroup-deploymentconfigname)" : {{String}},
+      "[DeploymentGroupName](#cfn-codedeploy-deploymentgroup-deploymentgroupname)" : {{String}},
+      "[DeploymentStyle](#cfn-codedeploy-deploymentgroup-deploymentstyle)" : {{DeploymentStyle}},
+      "[Ec2TagFilters](#cfn-codedeploy-deploymentgroup-ec2tagfilters)" : {{[ EC2TagFilter, ... ]}},
+      "[Ec2TagSet](#cfn-codedeploy-deploymentgroup-ec2tagset)" : {{EC2TagSet}},
+      "[ECSServices](#cfn-codedeploy-deploymentgroup-ecsservices)" : {{[ ECSService, ... ]}},
+      "[LoadBalancerInfo](#cfn-codedeploy-deploymentgroup-loadbalancerinfo)" : {{LoadBalancerInfo}},
+      "[OnPremisesInstanceTagFilters](#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters)" : {{[ TagFilter, ... ]}},
+      "[OnPremisesTagSet](#cfn-codedeploy-deploymentgroup-onpremisestagset)" : {{OnPremisesTagSet}},
+      "[OutdatedInstancesStrategy](#cfn-codedeploy-deploymentgroup-outdatedinstancesstrategy)" : {{String}},
+      "[ServiceRoleArn](#cfn-codedeploy-deploymentgroup-servicerolearn)" : {{String}},
+      "[Tags](#cfn-codedeploy-deploymentgroup-tags)" : {{[ Tag, ... ]}},
+      "[TerminationHookEnabled](#cfn-codedeploy-deploymentgroup-terminationhookenabled)" : {{Boolean}},
+      "[TriggerConfigurations](#cfn-codedeploy-deploymentgroup-triggerconfigurations)" : {{[ TriggerConfig, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codedeploy-deploymentgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeDeploy::DeploymentGroup
 Properties:
-  AlarmConfiguration:
-    AlarmConfiguration
-  ApplicationName: String
-  AutoRollbackConfiguration:
-    AutoRollbackConfiguration
-  AutoScalingGroups:
-    - String
-  BlueGreenDeploymentConfiguration:
-    BlueGreenDeploymentConfiguration
-  Deployment:
-    Deployment
-  DeploymentConfigName: String
-  DeploymentGroupName: String
-  DeploymentStyle:
-    DeploymentStyle
-  Ec2TagFilters:
-    - EC2TagFilter
-  Ec2TagSet:
-    EC2TagSet
-  ECSServices:
-    - ECSService
-  LoadBalancerInfo:
-    LoadBalancerInfo
-  OnPremisesInstanceTagFilters:
-    - TagFilter
-  OnPremisesTagSet:
-    OnPremisesTagSet
-  OutdatedInstancesStrategy: String
-  ServiceRoleArn: String
-  Tags:
-    - Tag
-  TerminationHookEnabled: Boolean
-  TriggerConfigurations:
-    - TriggerConfig
-
+  [AlarmConfiguration](#cfn-codedeploy-deploymentgroup-alarmconfiguration): {{
+    AlarmConfiguration}}
+  [ApplicationName](#cfn-codedeploy-deploymentgroup-applicationname): {{String}}
+  [AutoRollbackConfiguration](#cfn-codedeploy-deploymentgroup-autorollbackconfiguration): {{
+    AutoRollbackConfiguration}}
+  [AutoScalingGroups](#cfn-codedeploy-deploymentgroup-autoscalinggroups): {{
+    - String}}
+  [BlueGreenDeploymentConfiguration](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration): {{
+    BlueGreenDeploymentConfiguration}}
+  [Deployment](#cfn-codedeploy-deploymentgroup-deployment): {{
+    Deployment}}
+  [DeploymentConfigName](#cfn-codedeploy-deploymentgroup-deploymentconfigname): {{String}}
+  [DeploymentGroupName](#cfn-codedeploy-deploymentgroup-deploymentgroupname): {{String}}
+  [DeploymentStyle](#cfn-codedeploy-deploymentgroup-deploymentstyle): {{
+    DeploymentStyle}}
+  [Ec2TagFilters](#cfn-codedeploy-deploymentgroup-ec2tagfilters): {{
+    - EC2TagFilter}}
+  [Ec2TagSet](#cfn-codedeploy-deploymentgroup-ec2tagset): {{
+    EC2TagSet}}
+  [ECSServices](#cfn-codedeploy-deploymentgroup-ecsservices): {{
+    - ECSService}}
+  [LoadBalancerInfo](#cfn-codedeploy-deploymentgroup-loadbalancerinfo): {{
+    LoadBalancerInfo}}
+  [OnPremisesInstanceTagFilters](#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters): {{
+    - TagFilter}}
+  [OnPremisesTagSet](#cfn-codedeploy-deploymentgroup-onpremisestagset): {{
+    OnPremisesTagSet}}
+  [OutdatedInstancesStrategy](#cfn-codedeploy-deploymentgroup-outdatedinstancesstrategy): {{String}}
+  [ServiceRoleArn](#cfn-codedeploy-deploymentgroup-servicerolearn): {{String}}
+  [Tags](#cfn-codedeploy-deploymentgroup-tags): {{
+    - Tag}}
+  [TerminationHookEnabled](#cfn-codedeploy-deploymentgroup-terminationhookenabled): {{Boolean}}
+  [TriggerConfigurations](#cfn-codedeploy-deploymentgroup-triggerconfigurations): {{
+    - TriggerConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-codedeploy-deploymentgroup-properties"></a>
 
-`AlarmConfiguration`
+`AlarmConfiguration`  <a name="cfn-codedeploy-deploymentgroup-alarmconfiguration"></a>
+Information about the Amazon CloudWatch alarms that are associated with the deployment group.
+*Required*: No
+*Type*: [AlarmConfiguration](aws-properties-codedeploy-deploymentgroup-alarmconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about the Amazon CloudWatch alarms that are associated with the
-deployment group.
+`ApplicationName`  <a name="cfn-codedeploy-deploymentgroup-applicationname"></a>
+ The name of an existing CodeDeploy application to associate this deployment group with.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`AutoRollbackConfiguration`  <a name="cfn-codedeploy-deploymentgroup-autorollbackconfiguration"></a>
+ Information about the automatic rollback configuration that is associated with the deployment group. If you specify this property, don't specify the `Deployment` property.
+*Required*: No
+*Type*: [AutoRollbackConfiguration](aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AlarmConfiguration](aws-properties-codedeploy-deploymentgroup-alarmconfiguration.md)
+`AutoScalingGroups`  <a name="cfn-codedeploy-deploymentgroup-autoscalinggroups"></a>
+ A list of associated Auto Scaling groups that CodeDeploy automatically deploys revisions to when new instances are created. Duplicates are not allowed.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationName`
-
-The name of an existing CodeDeploy application to associate this deployment
-group with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AutoRollbackConfiguration`
-
-Information about the automatic rollback configuration that is associated with the
-deployment group. If you specify this property, don't specify the `Deployment`
-property.
-
-_Required_: No
-
-_Type_: [AutoRollbackConfiguration](aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoScalingGroups`
-
-A list of associated Auto Scaling groups that CodeDeploy automatically
-deploys revisions to when new instances are created. Duplicates are not allowed.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BlueGreenDeploymentConfiguration`
-
+`BlueGreenDeploymentConfiguration`  <a name="cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration"></a>
 Information about blue/green deployment options for a deployment group.
-
-_Required_: No
-
-_Type_: [BlueGreenDeploymentConfiguration](aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Deployment`
-
-The application revision to deploy to this deployment group. If you specify this
-property, your target application revision is deployed as soon as the provisioning process is
-complete. If you specify this property, don't specify the
-`AutoRollbackConfiguration` property.
-
-_Required_: No
-
-_Type_: [Deployment](aws-properties-codedeploy-deploymentgroup-deployment.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeploymentConfigName`
-
-A deployment configuration name or a predefined configuration name. With predefined
-configurations, you can deploy application revisions to one instance at a time
-( `CodeDeployDefault.OneAtATime`), half of the instances at a time
-( `CodeDeployDefault.HalfAtATime`), or all the instances at once
-( `CodeDeployDefault.AllAtOnce`). For more information and valid values, see
-[Working with Deployment Configurations](../../../codedeploy/latest/userguide/deployment-configurations.md) in the _AWS CodeDeploy_
-_User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeploymentGroupName`
-
-A name for the deployment group. If you don't specify a name, CloudFormation
-generates a unique physical ID and uses that ID for the deployment group name. For more
-information, see [Name Type](../userguide/aws-properties-name.md).
-
-###### Important
-
-If you specify a name, you cannot perform updates that require replacement of this
-resource. You can perform updates that require no or some interruption. If you must replace
-the resource, specify a new name.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DeploymentStyle`
-
-Attributes that determine the type of deployment to run and whether to route deployment
-traffic behind a load balancer.
-
-If you specify this property with a blue/green deployment type, don't specify the
-`AutoScalingGroups`, `LoadBalancerInfo`, or `Deployment`
-properties.
-
-###### Note
-
-For blue/green deployments, CloudFormation supports deployments on Lambda compute platforms only. You can perform Amazon ECS blue/green
-deployments using `AWS::CodeDeploy::BlueGreen ` hook. See [Perform\
-Amazon ECS blue/green deployments through CodeDeploy using CloudFormation](../userguide/blue-green.md) for more information.
-
-_Required_: No
-
-_Type_: [DeploymentStyle](aws-properties-codedeploy-deploymentgroup-deploymentstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ec2TagFilters`
-
-The Amazon EC2 tags that are already applied to Amazon EC2 instances
-that you want to include in the deployment group. CodeDeploy includes all Amazon EC2 instances identified by any of the tags you specify in this deployment group.
-Duplicates are not allowed.
-
-You can specify `EC2TagFilters` or `Ec2TagSet`, but not both.
-
-_Required_: No
-
-_Type_: Array of [EC2TagFilter](aws-properties-codedeploy-deploymentgroup-ec2tagfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ec2TagSet`
-
-Information about groups of tags applied to Amazon EC2 instances. The deployment
-group includes only Amazon EC2 instances identified by all the tag groups. Cannot be
-used in the same call as `ec2TagFilter`.
-
-_Required_: No
-
-_Type_: [EC2TagSet](aws-properties-codedeploy-deploymentgroup-ec2tagset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ECSServices`
-
-The target Amazon ECS services in the deployment group. This applies only to
-deployment groups that use the Amazon ECS compute platform. A target Amazon ECS service is specified as an Amazon ECS cluster and service name
-pair using the format `<clustername>:<servicename>`.
-
-_Required_: No
-
-_Type_: Array of [ECSService](aws-properties-codedeploy-deploymentgroup-ecsservice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoadBalancerInfo`
-
-Information about the load balancer to use in a deployment. For more information, see
-[Integrating\
-CodeDeploy with Elastic Load Balancing](../../../codedeploy/latest/userguide/integrations-aws-elastic-load-balancing.md) in the _AWS CodeDeploy User Guide_.
-
-_Required_: No
-
-_Type_: [LoadBalancerInfo](aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnPremisesInstanceTagFilters`
-
-The on-premises instance tags already applied to on-premises instances that you want to
-include in the deployment group. CodeDeploy includes all on-premises instances
-identified by any of the tags you specify in this deployment group. To register on-premises
-instances with CodeDeploy, see [Working with On-Premises\
-Instances for CodeDeploy](../../../codedeploy/latest/userguide/instances-on-premises.md) in the _AWS CodeDeploy User_
-_Guide_. Duplicates are not allowed.
-
-You can specify `OnPremisesInstanceTagFilters` or
-`OnPremisesInstanceTagSet`, but not both.
-
-_Required_: No
-
-_Type_: Array of [TagFilter](aws-properties-codedeploy-deploymentgroup-tagfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnPremisesTagSet`
-
-Information about groups of tags applied to on-premises instances. The deployment group
-includes only on-premises instances identified by all the tag groups.
-
-You can specify `OnPremisesInstanceTagFilters` or
-`OnPremisesInstanceTagSet`, but not both.
-
-_Required_: No
-
-_Type_: [OnPremisesTagSet](aws-properties-codedeploy-deploymentgroup-onpremisestagset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutdatedInstancesStrategy`
-
-Indicates what happens when new Amazon EC2 instances are launched
-mid-deployment and do not receive the deployed application revision.
-
-If this option is set to `UPDATE` or is unspecified, CodeDeploy initiates
-one or more 'auto-update outdated instances' deployments to apply the deployed
-application revision to the new Amazon EC2 instances.
-
-If this option is set to `IGNORE`, CodeDeploy does not initiate a
-deployment to update the new Amazon EC2 instances. This may result in instances
-having different revisions.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `UPDATE | IGNORE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceRoleArn`
-
-A service role Amazon Resource Name (ARN) that grants CodeDeploy permission to
-make calls to AWS services on your behalf. For more information, see [Create a Service\
-Role for AWS CodeDeploy](../../../codedeploy/latest/userguide/getting-started-create-service-role.md) in the _AWS CodeDeploy User_
-_Guide_.
-
-###### Note
-
-In some cases, you might need to add a dependency on the service role's policy. For
-more information, see IAM role policy in [DependsOn\
-Attribute](../userguide/aws-attribute-dependson.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The metadata that you apply to CodeDeploy deployment groups to help you organize and
-categorize them. Each tag consists of a key and an optional value, both of which you
-define.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codedeploy-deploymentgroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TerminationHookEnabled`
-
-Indicates whether the deployment group was configured to have CodeDeploy
-install a termination hook into an Auto Scaling group.
-
-For more information about the termination hook, see [How Amazon EC2 Auto Scaling works with CodeDeploy](../../../codedeploy/latest/userguide/integrations-aws-auto-scaling.md#integrations-aws-auto-scaling-behaviors) in the
-_AWS CodeDeploy User Guide_.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TriggerConfigurations`
-
-Information about triggers associated with the deployment group. Duplicates are not
-allowed
-
-_Required_: No
-
-_Type_: Array of [TriggerConfig](aws-properties-codedeploy-deploymentgroup-triggerconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [BlueGreenDeploymentConfiguration](aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Deployment`  <a name="cfn-codedeploy-deploymentgroup-deployment"></a>
+ The application revision to deploy to this deployment group. If you specify this property, your target application revision is deployed as soon as the provisioning process is complete. If you specify this property, don't specify the `AutoRollbackConfiguration` property.
+*Required*: No
+*Type*: [Deployment](aws-properties-codedeploy-deploymentgroup-deployment.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DeploymentConfigName`  <a name="cfn-codedeploy-deploymentgroup-deploymentconfigname"></a>
+ A deployment configuration name or a predefined configuration name. With predefined configurations, you can deploy application revisions to one instance at a time (`CodeDeployDefault.OneAtATime`), half of the instances at a time (`CodeDeployDefault.HalfAtATime`), or all the instances at once (`CodeDeployDefault.AllAtOnce`). For more information and valid values, see [Working with Deployment Configurations](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html) in the *AWS CodeDeploy User Guide*.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DeploymentGroupName`  <a name="cfn-codedeploy-deploymentgroup-deploymentgroupname"></a>
+ A name for the deployment group. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the deployment group name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
+ If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`DeploymentStyle`  <a name="cfn-codedeploy-deploymentgroup-deploymentstyle"></a>
+ Attributes that determine the type of deployment to run and whether to route deployment traffic behind a load balancer.
+ If you specify this property with a blue/green deployment type, don't specify the `AutoScalingGroups`, `LoadBalancerInfo`, or `Deployment` properties.
+ For blue/green deployments, CloudFormation supports deployments on Lambda compute platforms only. You can perform Amazon ECS blue/green deployments using `AWS::CodeDeploy::BlueGreen ` hook. See [Perform Amazon ECS blue/green deployments through CodeDeploy using CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-green.html) for more information.
+*Required*: No
+*Type*: [DeploymentStyle](aws-properties-codedeploy-deploymentgroup-deploymentstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Ec2TagFilters`  <a name="cfn-codedeploy-deploymentgroup-ec2tagfilters"></a>
+ The Amazon EC2 tags that are already applied to Amazon EC2 instances that you want to include in the deployment group. CodeDeploy includes all Amazon EC2 instances identified by any of the tags you specify in this deployment group. Duplicates are not allowed.
+ You can specify `EC2TagFilters` or `Ec2TagSet`, but not both.
+*Required*: No
+*Type*: Array of [EC2TagFilter](aws-properties-codedeploy-deploymentgroup-ec2tagfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Ec2TagSet`  <a name="cfn-codedeploy-deploymentgroup-ec2tagset"></a>
+Information about groups of tags applied to Amazon EC2 instances. The deployment group includes only Amazon EC2 instances identified by all the tag groups. Cannot be used in the same call as `ec2TagFilter`.
+*Required*: No
+*Type*: [EC2TagSet](aws-properties-codedeploy-deploymentgroup-ec2tagset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ECSServices`  <a name="cfn-codedeploy-deploymentgroup-ecsservices"></a>
+ The target Amazon ECS services in the deployment group. This applies only to deployment groups that use the Amazon ECS compute platform. A target Amazon ECS service is specified as an Amazon ECS cluster and service name pair using the format `<clustername>:<servicename>`.
+*Required*: No
+*Type*: Array of [ECSService](aws-properties-codedeploy-deploymentgroup-ecsservice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LoadBalancerInfo`  <a name="cfn-codedeploy-deploymentgroup-loadbalancerinfo"></a>
+Information about the load balancer to use in a deployment. For more information, see [ Integrating CodeDeploy with Elastic Load Balancing](https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-aws-elastic-load-balancing.html) in the *AWS CodeDeploy User Guide*.
+*Required*: No
+*Type*: [LoadBalancerInfo](aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OnPremisesInstanceTagFilters`  <a name="cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters"></a>
+ The on-premises instance tags already applied to on-premises instances that you want to include in the deployment group. CodeDeploy includes all on-premises instances identified by any of the tags you specify in this deployment group. To register on-premises instances with CodeDeploy, see [Working with On-Premises Instances for CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on-premises.html) in the *AWS CodeDeploy User Guide*. Duplicates are not allowed.
+ You can specify `OnPremisesInstanceTagFilters` or `OnPremisesInstanceTagSet`, but not both.
+*Required*: No
+*Type*: Array of [TagFilter](aws-properties-codedeploy-deploymentgroup-tagfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OnPremisesTagSet`  <a name="cfn-codedeploy-deploymentgroup-onpremisestagset"></a>
+Information about groups of tags applied to on-premises instances. The deployment group includes only on-premises instances identified by all the tag groups.
+ You can specify `OnPremisesInstanceTagFilters` or `OnPremisesInstanceTagSet`, but not both.
+*Required*: No
+*Type*: [OnPremisesTagSet](aws-properties-codedeploy-deploymentgroup-onpremisestagset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutdatedInstancesStrategy`  <a name="cfn-codedeploy-deploymentgroup-outdatedinstancesstrategy"></a>
+Indicates what happens when new Amazon EC2 instances are launched mid-deployment and do not receive the deployed application revision.
+If this option is set to `UPDATE` or is unspecified, CodeDeploy initiates one or more 'auto-update outdated instances' deployments to apply the deployed application revision to the new Amazon EC2 instances.
+If this option is set to `IGNORE`, CodeDeploy does not initiate a deployment to update the new Amazon EC2 instances. This may result in instances having different revisions.
+*Required*: No
+*Type*: String
+*Allowed values*: `UPDATE | IGNORE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ServiceRoleArn`  <a name="cfn-codedeploy-deploymentgroup-servicerolearn"></a>
+A service role Amazon Resource Name (ARN) that grants CodeDeploy permission to make calls to AWS services on your behalf. For more information, see [Create a Service Role for AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-service-role.html) in the *AWS CodeDeploy User Guide*.
+ In some cases, you might need to add a dependency on the service role's policy. For more information, see IAM role policy in [DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-codedeploy-deploymentgroup-tags"></a>
+ The metadata that you apply to CodeDeploy deployment groups to help you organize and categorize them. Each tag consists of a key and an optional value, both of which you define.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codedeploy-deploymentgroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TerminationHookEnabled`  <a name="cfn-codedeploy-deploymentgroup-terminationhookenabled"></a>
+Indicates whether the deployment group was configured to have CodeDeploy install a termination hook into an Auto Scaling group.
+For more information about the termination hook, see [How Amazon EC2 Auto Scaling works with CodeDeploy](https://docs.aws.amazon.com//codedeploy/latest/userguide/integrations-aws-auto-scaling.html#integrations-aws-auto-scaling-behaviors) in the *AWS CodeDeploy User Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TriggerConfigurations`  <a name="cfn-codedeploy-deploymentgroup-triggerconfigurations"></a>
+Information about triggers associated with the deployment group. Duplicates are not allowed
+*Required*: No
+*Type*: Array of [TriggerConfig](aws-properties-codedeploy-deploymentgroup-triggerconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codedeploy-deploymentgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codedeploy-deploymentgroup-return-values-ref"></a>
 
-When you pass the logical ID of an `AWS::CodeDeploy::DeploymentGroup` resource
-to the intrinsic `Ref` function, the function returns the deployment group name,
-such as `mydeploymentgroup-a123d0d1`.
+When you pass the logical ID of an `AWS::CodeDeploy::DeploymentGroup` resource to the intrinsic `Ref` function, the function returns the deployment group name, such as `mydeploymentgroup-a123d0d1`.
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-codedeploy-deploymentgroup--examples"></a>
 
-- [Revision in GitHub](#aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub)
-
-- [Associate Amazon EC2 Instances](#aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances)
-
-- [Deployment Style](#aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style)
-
-- [Alarm and Trigger](#aws-resource-codedeploy-deploymentgroup--examples--Alarm_and_Trigger)
-
-- [Automatic Rollback Configuration](#aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration)
-
-- [Load Balancer](#aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer)
-
-- [Target Group Info](#aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info)
+**Topics**
++ [Revision in GitHub](#aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub)
++ [Associate Amazon EC2 Instances](#aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances)
++ [Deployment Style](#aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style)
++ [Alarm and Trigger](#aws-resource-codedeploy-deploymentgroup--examples--Alarm_and_Trigger)
++ [Automatic Rollback Configuration](#aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration)
++ [Load Balancer](#aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer)
++ [Target Group Info](#aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info)
 
 ### Revision in GitHub
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub"></a>
 
-The following example creates a deployment group that is associated with Auto Scaling groups and uses an application revision that is stored in a GitHub
-repository. You specify the repository information as input parameters.
+The following example creates a deployment group that is associated with Auto Scaling groups and uses an application revision that is stored in a GitHub repository. You specify the repository information as input parameters.
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub--json"></a>
 
-```json
-
+```
 "DeploymentGroup" : {
     "Type" : "AWS::CodeDeploy::DeploymentGroup",
     "Properties" : {
@@ -456,9 +288,9 @@ repository. You specify the repository information as input parameters.
 ```
 
 #### YAML
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub--yaml"></a>
 
-```yaml
-
+```
 DeploymentGroup:
   Type: AWS::CodeDeploy::DeploymentGroup
   Properties:
@@ -481,15 +313,14 @@ DeploymentGroup:
 ```
 
 ### Associate Amazon EC2 Instances
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances"></a>
 
-The following example creates a deployment group that uses instance tags to associate
-Amazon EC2 instances with the deployment group. The deployment group uses an
-application revision that is stored in an Amazon S3 bucket.
+The following example creates a deployment group that uses instance tags to associate Amazon EC2 instances with the deployment group. The deployment group uses an application revision that is stored in an Amazon S3 bucket.
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances--json"></a>
 
-```json
-
+```
 "DeploymentGroup": {
     "Type": "AWS::CodeDeploy::DeploymentGroup",
     "Properties": {
@@ -540,9 +371,9 @@ application revision that is stored in an Amazon S3 bucket.
 ```
 
 #### YAML
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances--yaml"></a>
 
-```yaml
-
+```
 DeploymentGroup:
   Type: AWS::CodeDeploy::DeploymentGroup
   Properties:
@@ -575,14 +406,14 @@ DeploymentGroup:
 ```
 
 ### Deployment Style
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style"></a>
 
-The following example creates deployment group with a `BLUE_GREEN`
-deployment type.
+The following example creates deployment group with a `BLUE_GREEN` deployment type.
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style--json"></a>
 
-```json
-
+```
 "CodeDeployDeploymentGroup": {
     "Type": "AWS::CodeDeploy::DeploymentGroup",
     "Properties": {
@@ -605,9 +436,9 @@ deployment type.
 ```
 
 #### YAML
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style--yaml"></a>
 
-```yaml
-
+```
 CodeDeployDeploymentGroup:
   Type: 'AWS::CodeDeploy::DeploymentGroup'
   Properties:
@@ -622,14 +453,14 @@ CodeDeployDeploymentGroup:
 ```
 
 ### Alarm and Trigger
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Alarm_and_Trigger"></a>
 
-The following example configures a billing alarm and a notification trigger for the
-deployment group.
+The following example configures a billing alarm and a notification trigger for the deployment group.
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Alarm_and_Trigger--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -751,17 +582,17 @@ deployment group.
         }
     }
 }
-
 ```
 
 ### Automatic Rollback Configuration
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration"></a>
 
 The following example configures automatic rollback for the deployment group.
 
 #### YAML
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   EC2TagKey0:
     Type: String
@@ -829,13 +660,12 @@ Resources:
             - DeploymentRollback
           TriggerName: MyTarget
           TriggerTargetArn: !Ref mySNSTopic
-
 ```
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration--json"></a>
 
-```json
-
+```
 {
   "Parameters": {
     "EC2TagKey0": {
@@ -956,14 +786,14 @@ Resources:
 ```
 
 ### Load Balancer
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer"></a>
 
-The following example configures an Elastic Load Balancing load balancer for the
-deployment group.
+The following example configures an Elastic Load Balancing load balancer for the deployment group.
 
 #### YAML
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   EC2TagKey0:
     Type: String
@@ -1050,13 +880,12 @@ Outputs:
   ELB:
     Description: ELB for DeploymentGroup
     Value: !Ref myELB
-
 ```
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer--json"></a>
 
-```json
-
+```
 {
   "Parameters": {
     "EC2TagKey0": {
@@ -1202,14 +1031,14 @@ Outputs:
 ```
 
 ### Target Group Info
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info"></a>
 
-The following example specifies the target group to use in a deployment. Instances are
-registered as targets in a target group, and traffic is routed to the target group.
+The following example specifies the target group to use in a deployment. Instances are registered as targets in a target group, and traffic is routed to the target group.
 
 #### YAML
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   AppDeploymentGroup:
@@ -1225,9 +1054,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -1251,11 +1080,5 @@ Resources:
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ZonalConfig
-
-Alarm
 
 All content copied from https://docs.aws.amazon.com/.

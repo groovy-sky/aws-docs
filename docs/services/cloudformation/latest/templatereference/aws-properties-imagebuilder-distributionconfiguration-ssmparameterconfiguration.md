@@ -2,92 +2,62 @@
 title: "AWS::ImageBuilder::DistributionConfiguration SsmParameterConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration SsmParameterConfiguration
+<a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration"></a>
 
-Configuration for a single Parameter in the AWS Systems Manager (SSM) Parameter Store in
-a given Region.
+Configuration for a single Parameter in the AWS Systems Manager (SSM) Parameter Store in a given Region.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AmiAccountId" : String,
-  "DataType" : String,
-  "ParameterName" : String
+  "[AmiAccountId](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-amiaccountid)" : {{String}},
+  "[DataType](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-datatype)" : {{String}},
+  "[ParameterName](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-parametername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AmiAccountId: String
-  DataType: String
-  ParameterName: String
-
+```
+  [AmiAccountId](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-amiaccountid): {{String}}
+  [DataType](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-datatype): {{String}}
+  [ParameterName](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-parametername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration-properties"></a>
 
-`AmiAccountId`
+`AmiAccountId`  <a name="cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-amiaccountid"></a>
+Specify the account that will own the Parameter in a given Region. During distribution, this account must be specified in distribution settings as a target account for the Region.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specify the account that will own the Parameter in a given Region. During distribution,
-this account must be specified in distribution settings as a target account for the
-Region.
+`DataType`  <a name="cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-datatype"></a>
+The data type specifies what type of value the Parameter contains. We recommend that you use data type `aws:ec2:image`.
+*Required*: No
+*Type*: String
+*Allowed values*: `text | aws:ec2:image`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataType`
-
-The data type specifies what type of value the Parameter contains. We recommend that
-you use data type `aws:ec2:image`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `text | aws:ec2:image`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterName`
-
-This is the name of the Parameter in the target Region or account. The image
-distribution creates the Parameter if it doesn't already exist. Otherwise, it updates
-the parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.\-\/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1011`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplateConfiguration
-
-TargetContainerRepository
+`ParameterName`  <a name="cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-parametername"></a>
+This is the name of the Parameter in the target Region or account. The image distribution creates the Parameter if it doesn't already exist. Otherwise, it updates the parameter.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.\-\/]+$`
+*Minimum*: `1`
+*Maximum*: `1011`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

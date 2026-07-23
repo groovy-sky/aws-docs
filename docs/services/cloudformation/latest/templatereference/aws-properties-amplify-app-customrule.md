@@ -2,134 +2,87 @@
 title: "AWS::Amplify::App CustomRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Amplify::App CustomRule
+<a name="aws-properties-amplify-app-customrule"></a>
 
-The CustomRule property type allows you to specify redirects, rewrites, and reverse
-proxies. Redirects enable a web app to reroute navigation from one URL to another.
+ The CustomRule property type allows you to specify redirects, rewrites, and reverse proxies. Redirects enable a web app to reroute navigation from one URL to another.
 
 ## Syntax
+<a name="aws-properties-amplify-app-customrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplify-app-customrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Condition" : String,
-  "Source" : String,
-  "Status" : String,
-  "Target" : String
+  "[Condition](#cfn-amplify-app-customrule-condition)" : {{String}},
+  "[Source](#cfn-amplify-app-customrule-source)" : {{String}},
+  "[Status](#cfn-amplify-app-customrule-status)" : {{String}},
+  "[Target](#cfn-amplify-app-customrule-target)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplify-app-customrule-syntax.yaml"></a>
 
-```yaml
-
-  Condition: String
-  Source: String
-  Status: String
-  Target: String
-
+```
+  [Condition](#cfn-amplify-app-customrule-condition): {{String}}
+  [Source](#cfn-amplify-app-customrule-source): {{String}}
+  [Status](#cfn-amplify-app-customrule-status): {{String}}
+  [Target](#cfn-amplify-app-customrule-target): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplify-app-customrule-properties"></a>
 
-`Condition`
-
+`Condition`  <a name="cfn-amplify-app-customrule-condition"></a>
 The condition for a URL rewrite or redirect rule, such as a country code.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Source`  <a name="cfn-amplify-app-customrule-source"></a>
+ The source pattern for a URL rewrite or redirect rule.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?s).+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
-The source pattern for a URL rewrite or redirect rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?s).+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
-The status code for a URL rewrite or redirect rule.
-
+`Status`  <a name="cfn-amplify-app-customrule-status"></a>
+ The status code for a URL rewrite or redirect rule.
 200
-
 Represents a 200 rewrite rule.
-
 301
-
-Represents a 301 (moved pemanently) redirect rule. This and all future requests
-should be directed to the target URL.
-
+Represents a 301 (moved pemanently) redirect rule. This and all future requests should be directed to the target URL.
 302
-
 Represents a 302 temporary redirect rule.
-
 404
-
 Represents a 404 redirect rule.
-
 404-200
-
 Represents a 404 rewrite rule.
+*Required*: No
+*Type*: String
+*Pattern*: `.{3,7}`
+*Minimum*: `3`
+*Maximum*: `7`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.{3,7}`
-
-_Minimum_: `3`
-
-_Maximum_: `7`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
-The target pattern for a URL rewrite or redirect rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?s).+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CacheConfig
-
-EnvironmentVariable
+`Target`  <a name="cfn-amplify-app-customrule-target"></a>
+ The target pattern for a URL rewrite or redirect rule.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?s).+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

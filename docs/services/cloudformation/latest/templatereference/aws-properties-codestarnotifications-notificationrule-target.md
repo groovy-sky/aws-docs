@@ -2,76 +2,55 @@
 title: "AWS::CodeStarNotifications::NotificationRule Target"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeStarNotifications::NotificationRule Target
+<a name="aws-properties-codestarnotifications-notificationrule-target"></a>
 
 Information about the Amazon Q Developer in chat applications topics or Amazon Q Developer in chat applications clients associated with a notification rule.
 
 ## Syntax
+<a name="aws-properties-codestarnotifications-notificationrule-target-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codestarnotifications-notificationrule-target-syntax.json"></a>
 
-```json
-
+```
 {
-  "TargetAddress" : String,
-  "TargetType" : String
+  "[TargetAddress](#cfn-codestarnotifications-notificationrule-target-targetaddress)" : {{String}},
+  "[TargetType](#cfn-codestarnotifications-notificationrule-target-targettype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codestarnotifications-notificationrule-target-syntax.yaml"></a>
 
-```yaml
-
-  TargetAddress: String
-  TargetType: String
-
+```
+  [TargetAddress](#cfn-codestarnotifications-notificationrule-target-targetaddress): {{String}}
+  [TargetType](#cfn-codestarnotifications-notificationrule-target-targettype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codestarnotifications-notificationrule-target-properties"></a>
 
-`TargetAddress`
-
+`TargetAddress`  <a name="cfn-codestarnotifications-notificationrule-target-targetaddress"></a>
 The Amazon Resource Name (ARN) of the Amazon Q Developer in chat applications topic or Amazon Q Developer in chat applications client.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `320`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `320`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetType`
-
+`TargetType`  <a name="cfn-codestarnotifications-notificationrule-target-targettype"></a>
 The target type. Can be an Amazon Simple Notification Service topic or Amazon Q Developer in chat applications client.
-
-- Amazon Simple Notification Service topics are specified as `SNS`.
-
-- Amazon Q Developer in chat applications clients are specified as `AWSChatbotSlack`.
-
-- Amazon Q Developer in chat applications clients for Microsoft Teams are specified as `AWSChatbotMicrosoftTeams`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CodeStarNotifications::NotificationRule
-
-Next
++ Amazon Simple Notification Service topics are specified as `SNS`.
++ Amazon Q Developer in chat applications clients are specified as `AWSChatbotSlack`.
++ Amazon Q Developer in chat applications clients for Microsoft Teams are specified as `AWSChatbotMicrosoftTeams`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

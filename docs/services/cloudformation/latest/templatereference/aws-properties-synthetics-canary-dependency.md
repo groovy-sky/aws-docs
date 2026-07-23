@@ -2,73 +2,53 @@
 title: "AWS::Synthetics::Canary Dependency"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Synthetics::Canary Dependency
+<a name="aws-properties-synthetics-canary-dependency"></a>
 
 A structure that contains information about a dependency for a canary.
 
 ## Syntax
+<a name="aws-properties-synthetics-canary-dependency-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-synthetics-canary-dependency-syntax.json"></a>
 
-```json
-
+```
 {
-  "Reference" : String,
-  "Type" : String
+  "[Reference](#cfn-synthetics-canary-dependency-reference)" : {{String}},
+  "[Type](#cfn-synthetics-canary-dependency-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-synthetics-canary-dependency-syntax.yaml"></a>
 
-```yaml
-
-  Reference: String
-  Type: String
-
+```
+  [Reference](#cfn-synthetics-canary-dependency-reference): {{String}}
+  [Type](#cfn-synthetics-canary-dependency-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-synthetics-canary-dependency-properties"></a>
 
-`Reference`
+`Reference`  <a name="cfn-synthetics-canary-dependency-reference"></a>
+The dependency reference. For Lambda layers, this is the ARN of the Lambda layer. For more information about Lambda ARN format, see [Lambda](https://docs.aws.amazon.com/lambda/latest/api/API_Layer.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:[a-zA-Z0-9-]+:lambda:[a-zA-Z0-9-]+:\d{12}:layer:[a-zA-Z0-9-_]+:[0-9]+`
+*Minimum*: `1`
+*Maximum*: `140`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The dependency reference. For Lambda layers, this is the ARN of the Lambda layer. For more information
-about Lambda ARN format, see [Lambda](../../../lambda/latest/api/api-layer.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:[a-zA-Z0-9-]+:lambda:[a-zA-Z0-9-]+:\d{12}:layer:[a-zA-Z0-9-_]+:[0-9]+`
-
-_Minimum_: `1`
-
-_Maximum_: `140`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-synthetics-canary-dependency-type"></a>
 The type of dependency. Valid value is `LambdaLayer`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LambdaLayer`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Code
-
-RetryConfig
+*Required*: No
+*Type*: String
+*Allowed values*: `LambdaLayer`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

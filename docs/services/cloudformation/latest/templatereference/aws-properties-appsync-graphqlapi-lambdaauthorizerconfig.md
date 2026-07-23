@@ -2,94 +2,61 @@
 title: "AWS::AppSync::GraphQLApi LambdaAuthorizerConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::GraphQLApi LambdaAuthorizerConfig
+<a name="aws-properties-appsync-graphqlapi-lambdaauthorizerconfig"></a>
 
 Configuration for AWS Lambda function authorization.
 
 ## Syntax
+<a name="aws-properties-appsync-graphqlapi-lambdaauthorizerconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-graphqlapi-lambdaauthorizerconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizerResultTtlInSeconds" : Integer,
-  "AuthorizerUri" : String,
-  "IdentityValidationExpression" : String
+  "[AuthorizerResultTtlInSeconds](#cfn-appsync-graphqlapi-lambdaauthorizerconfig-authorizerresultttlinseconds)" : {{Integer}},
+  "[AuthorizerUri](#cfn-appsync-graphqlapi-lambdaauthorizerconfig-authorizeruri)" : {{String}},
+  "[IdentityValidationExpression](#cfn-appsync-graphqlapi-lambdaauthorizerconfig-identityvalidationexpression)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-graphqlapi-lambdaauthorizerconfig-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizerResultTtlInSeconds: Integer
-  AuthorizerUri: String
-  IdentityValidationExpression: String
-
+```
+  [AuthorizerResultTtlInSeconds](#cfn-appsync-graphqlapi-lambdaauthorizerconfig-authorizerresultttlinseconds): {{Integer}}
+  [AuthorizerUri](#cfn-appsync-graphqlapi-lambdaauthorizerconfig-authorizeruri): {{String}}
+  [IdentityValidationExpression](#cfn-appsync-graphqlapi-lambdaauthorizerconfig-identityvalidationexpression): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-graphqlapi-lambdaauthorizerconfig-properties"></a>
 
-`AuthorizerResultTtlInSeconds`
+`AuthorizerResultTtlInSeconds`  <a name="cfn-appsync-graphqlapi-lambdaauthorizerconfig-authorizerresultttlinseconds"></a>
+The number of seconds a response should be cached for. The default is 0 seconds, which disables caching. If you don't specify a value for `authorizerResultTtlInSeconds`, the default value is used. The maximum value is one hour (3600 seconds). The Lambda function can override this by returning a `ttlOverride` key in its response.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `3600`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-The number of seconds a response should be cached for. The default is 0 seconds, which
-disables caching. If you don't specify a value for
-`authorizerResultTtlInSeconds`, the default value is used. The maximum
-value is one hour (3600 seconds). The Lambda function can override this by
-returning a `ttlOverride` key in its response.
+`AuthorizerUri`  <a name="cfn-appsync-graphqlapi-lambdaauthorizerconfig-authorizeruri"></a>
+The ARN of the Lambda function to be called for authorization. This may be a standard Lambda ARN, a version ARN (`.../v3`) or alias ARN.
+*Note*: This Lambda function must have the following resource-based policy assigned to it. When configuring Lambda authorizers in the console, this is done for you. To do so with the AWS CLI, run the following:
+ `aws lambda add-permission --function-name "arn:aws:lambda:us-east-2:111122223333:function:my-function" --statement-id "appsync" --principal appsync.amazonaws.com --action lambda:InvokeFunction`
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `3600`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`AuthorizerUri`
-
-The ARN of the Lambda function to be called for authorization. This may be a standard
-Lambda ARN, a version ARN ( `.../v3`) or alias ARN.
-
-_Note_: This Lambda function must have the following resource-based
-policy assigned to it. When configuring Lambda authorizers in the console, this is done
-for you. To do so with the AWS CLI, run the following:
-
-`aws lambda add-permission --function-name
-                "arn:aws:lambda:us-east-2:111122223333:function:my-function" --statement-id
-                "appsync" --principal appsync.amazonaws.com --action lambda:InvokeFunction`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`IdentityValidationExpression`
-
-A regular expression for validation of tokens before the Lambda function is
-called.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnhancedMetricsConfig
-
-LogConfig
+`IdentityValidationExpression`  <a name="cfn-appsync-graphqlapi-lambdaauthorizerconfig-identityvalidationexpression"></a>
+A regular expression for validation of tokens before the Lambda function is called.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

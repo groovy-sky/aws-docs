@@ -2,236 +2,149 @@
 title: "AWS::Kendra::DataSource SharePointConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource SharePointConfiguration
+<a name="aws-properties-kendra-datasource-sharepointconfiguration"></a>
 
-Provides the configuration information to connect to Microsoft SharePoint as your data
-source.
+Provides the configuration information to connect to Microsoft SharePoint as your data source.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-sharepointconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-sharepointconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CrawlAttachments" : Boolean,
-  "DisableLocalGroups" : Boolean,
-  "DocumentTitleFieldName" : String,
-  "ExclusionPatterns" : [ String, ... ],
-  "FieldMappings" : [ DataSourceToIndexFieldMapping, ... ],
-  "InclusionPatterns" : [ String, ... ],
-  "SecretArn" : String,
-  "SharePointVersion" : String,
-  "SslCertificateS3Path" : S3Path,
-  "Urls" : [ String, ... ],
-  "UseChangeLog" : Boolean,
-  "VpcConfiguration" : DataSourceVpcConfiguration
+  "[CrawlAttachments](#cfn-kendra-datasource-sharepointconfiguration-crawlattachments)" : {{Boolean}},
+  "[DisableLocalGroups](#cfn-kendra-datasource-sharepointconfiguration-disablelocalgroups)" : {{Boolean}},
+  "[DocumentTitleFieldName](#cfn-kendra-datasource-sharepointconfiguration-documenttitlefieldname)" : {{String}},
+  "[ExclusionPatterns](#cfn-kendra-datasource-sharepointconfiguration-exclusionpatterns)" : {{[ String, ... ]}},
+  "[FieldMappings](#cfn-kendra-datasource-sharepointconfiguration-fieldmappings)" : {{[ DataSourceToIndexFieldMapping, ... ]}},
+  "[InclusionPatterns](#cfn-kendra-datasource-sharepointconfiguration-inclusionpatterns)" : {{[ String, ... ]}},
+  "[SecretArn](#cfn-kendra-datasource-sharepointconfiguration-secretarn)" : {{String}},
+  "[SharePointVersion](#cfn-kendra-datasource-sharepointconfiguration-sharepointversion)" : {{String}},
+  "[SslCertificateS3Path](#cfn-kendra-datasource-sharepointconfiguration-sslcertificates3path)" : {{S3Path}},
+  "[Urls](#cfn-kendra-datasource-sharepointconfiguration-urls)" : {{[ String, ... ]}},
+  "[UseChangeLog](#cfn-kendra-datasource-sharepointconfiguration-usechangelog)" : {{Boolean}},
+  "[VpcConfiguration](#cfn-kendra-datasource-sharepointconfiguration-vpcconfiguration)" : {{DataSourceVpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-sharepointconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CrawlAttachments: Boolean
-  DisableLocalGroups: Boolean
-  DocumentTitleFieldName: String
-  ExclusionPatterns:
-    - String
-  FieldMappings:
-    - DataSourceToIndexFieldMapping
-  InclusionPatterns:
-    - String
-  SecretArn: String
-  SharePointVersion: String
-  SslCertificateS3Path:
-    S3Path
-  Urls:
-    - String
-  UseChangeLog: Boolean
-  VpcConfiguration:
-    DataSourceVpcConfiguration
-
+```
+  [CrawlAttachments](#cfn-kendra-datasource-sharepointconfiguration-crawlattachments): {{Boolean}}
+  [DisableLocalGroups](#cfn-kendra-datasource-sharepointconfiguration-disablelocalgroups): {{Boolean}}
+  [DocumentTitleFieldName](#cfn-kendra-datasource-sharepointconfiguration-documenttitlefieldname): {{String}}
+  [ExclusionPatterns](#cfn-kendra-datasource-sharepointconfiguration-exclusionpatterns): {{
+    - String}}
+  [FieldMappings](#cfn-kendra-datasource-sharepointconfiguration-fieldmappings): {{
+    - DataSourceToIndexFieldMapping}}
+  [InclusionPatterns](#cfn-kendra-datasource-sharepointconfiguration-inclusionpatterns): {{
+    - String}}
+  [SecretArn](#cfn-kendra-datasource-sharepointconfiguration-secretarn): {{String}}
+  [SharePointVersion](#cfn-kendra-datasource-sharepointconfiguration-sharepointversion): {{String}}
+  [SslCertificateS3Path](#cfn-kendra-datasource-sharepointconfiguration-sslcertificates3path): {{
+    S3Path}}
+  [Urls](#cfn-kendra-datasource-sharepointconfiguration-urls): {{
+    - String}}
+  [UseChangeLog](#cfn-kendra-datasource-sharepointconfiguration-usechangelog): {{Boolean}}
+  [VpcConfiguration](#cfn-kendra-datasource-sharepointconfiguration-vpcconfiguration): {{
+    DataSourceVpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-sharepointconfiguration-properties"></a>
 
-`CrawlAttachments`
-
+`CrawlAttachments`  <a name="cfn-kendra-datasource-sharepointconfiguration-crawlattachments"></a>
 `TRUE` to index document attachments.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisableLocalGroups`
-
+`DisableLocalGroups`  <a name="cfn-kendra-datasource-sharepointconfiguration-disablelocalgroups"></a>
 `TRUE` to disable local groups information.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DocumentTitleFieldName`  <a name="cfn-kendra-datasource-sharepointconfiguration-documenttitlefieldname"></a>
+The Microsoft SharePoint attribute field that contains the title of the document.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentTitleFieldName`
-
-The Microsoft SharePoint attribute field that contains the title of the
-document.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExclusionPatterns`
-
-A list of regular expression patterns. Documents that match the patterns are excluded
-from the index. Documents that don't match the patterns are included in the index. If a
-document matches both an exclusion pattern and an inclusion pattern, the document is not
-included in the index.
-
+`ExclusionPatterns`  <a name="cfn-kendra-datasource-sharepointconfiguration-exclusionpatterns"></a>
+A list of regular expression patterns. Documents that match the patterns are excluded from the index. Documents that don't match the patterns are included in the index. If a document matches both an exclusion pattern and an inclusion pattern, the document is not included in the index.
 The regex is applied to the display URL of the SharePoint document.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FieldMappings`  <a name="cfn-kendra-datasource-sharepointconfiguration-fieldmappings"></a>
+A list of `DataSourceToIndexFieldMapping` objects that map Microsoft SharePoint attributes or fields to Amazon Kendra index fields. You must first create the index fields using the [UpdateIndex](https://docs.aws.amazon.com/kendra/latest/dg/API_UpdateIndex.html) operation before you map SharePoint attributes. For more information, see [Mapping Data Source Fields](https://docs.aws.amazon.com/kendra/latest/dg/field-mapping.html).
+*Required*: No
+*Type*: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldMappings`
-
-A list of `DataSourceToIndexFieldMapping` objects that map Microsoft
-SharePoint attributes or fields to Amazon Kendra index fields. You must first create the
-index fields using the [UpdateIndex](../../../kendra/latest/dg/api-updateindex.md) operation before you
-map SharePoint attributes. For more information, see [Mapping Data Source Fields](../../../kendra/latest/dg/field-mapping.md).
-
-_Required_: No
-
-_Type_: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InclusionPatterns`
-
-A list of regular expression patterns to include certain documents in your SharePoint.
-Documents that match the patterns are included in the index. Documents that don't match
-the patterns are excluded from the index. If a document matches both an inclusion and
-exclusion pattern, the exclusion pattern takes precedence and the document isn't
-included in the index.
-
+`InclusionPatterns`  <a name="cfn-kendra-datasource-sharepointconfiguration-inclusionpatterns"></a>
+A list of regular expression patterns to include certain documents in your SharePoint. Documents that match the patterns are included in the index. Documents that don't match the patterns are excluded from the index. If a document matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the document isn't included in the index.
 The regex applies to the display URL of the SharePoint document.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecretArn`  <a name="cfn-kendra-datasource-sharepointconfiguration-secretarn"></a>
+The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the user name and password required to connect to the SharePoint instance. For more information, see [Microsoft SharePoint](https://docs.aws.amazon.com/kendra/latest/dg/data-source-sharepoint.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
+*Minimum*: `1`
+*Maximum*: `1284`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretArn`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the
-user name and password required to connect to the SharePoint instance. For more
-information, see [Microsoft\
-SharePoint](../../../kendra/latest/dg/data-source-sharepoint.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
-
-_Minimum_: `1`
-
-_Maximum_: `1284`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SharePointVersion`
-
+`SharePointVersion`  <a name="cfn-kendra-datasource-sharepointconfiguration-sharepointversion"></a>
 The version of Microsoft SharePoint that you use.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SHAREPOINT_ONLINE | SHAREPOINT_2013 | SHAREPOINT_2016`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SHAREPOINT_ONLINE | SHAREPOINT_2013 | SHAREPOINT_2016`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SslCertificateS3Path`
-
+`SslCertificateS3Path`  <a name="cfn-kendra-datasource-sharepointconfiguration-sslcertificates3path"></a>
 Information required to find a specific file in an Amazon S3 bucket.
+*Required*: No
+*Type*: [S3Path](aws-properties-kendra-datasource-s3path.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [S3Path](aws-properties-kendra-datasource-s3path.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Urls`
-
+`Urls`  <a name="cfn-kendra-datasource-sharepointconfiguration-urls"></a>
 The Microsoft SharePoint site URLs for the documents you want to index.
+*Required*: Yes
+*Type*: Array of String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`UseChangeLog`  <a name="cfn-kendra-datasource-sharepointconfiguration-usechangelog"></a>
+`TRUE` to use the SharePoint change log to determine which documents require updating in the index. Depending on the change log's size, it may take longer for Amazon Kendra to use the change log than to scan all of your documents in SharePoint.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseChangeLog`
-
-`TRUE` to use the SharePoint change log to determine which documents
-require updating in the index. Depending on the change log's size, it may take longer
-for Amazon Kendra to use the change log than to scan all of your documents in
-SharePoint.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-kendra-datasource-sharepointconfiguration-vpcconfiguration"></a>
 Provides information for connecting to an Amazon VPC.
-
-_Required_: No
-
-_Type_: [DataSourceVpcConfiguration](aws-properties-kendra-datasource-datasourcevpcconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceNowServiceCatalogConfiguration
-
-SqlConfiguration
+*Required*: No
+*Type*: [DataSourceVpcConfiguration](aws-properties-kendra-datasource-datasourcevpcconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

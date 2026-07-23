@@ -2,192 +2,150 @@
 title: "AWS::SES::MailManagerIngressPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerIngressPoint
+<a name="aws-resource-ses-mailmanageringresspoint"></a>
 
-Resource to provision an ingress endpoint for receiving email. An ingress endpoint
-serves as the entry point for incoming emails, allowing you to define how emails are
-received and processed within your AWS environment.
+Resource to provision an ingress endpoint for receiving email. An ingress endpoint serves as the entry point for incoming emails, allowing you to define how emails are received and processed within your AWS environment.
 
 ## Syntax
+<a name="aws-resource-ses-mailmanageringresspoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-mailmanageringresspoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::MailManagerIngressPoint",
   "Properties" : {
-      "IngressPointConfiguration" : IngressPointConfiguration,
-      "IngressPointName" : String,
-      "NetworkConfiguration" : NetworkConfiguration,
-      "RuleSetId" : String,
-      "StatusToUpdate" : String,
-      "Tags" : [ Tag, ... ],
-      "TrafficPolicyId" : String,
-      "Type" : String
+      "[IngressPointConfiguration](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration)" : {{IngressPointConfiguration}},
+      "[IngressPointName](#cfn-ses-mailmanageringresspoint-ingresspointname)" : {{String}},
+      "[NetworkConfiguration](#cfn-ses-mailmanageringresspoint-networkconfiguration)" : {{NetworkConfiguration}},
+      "[RuleSetId](#cfn-ses-mailmanageringresspoint-rulesetid)" : {{String}},
+      "[StatusToUpdate](#cfn-ses-mailmanageringresspoint-statustoupdate)" : {{String}},
+      "[Tags](#cfn-ses-mailmanageringresspoint-tags)" : {{[ Tag, ... ]}},
+      "[TlsPolicy](#cfn-ses-mailmanageringresspoint-tlspolicy)" : {{String}},
+      "[TrafficPolicyId](#cfn-ses-mailmanageringresspoint-trafficpolicyid)" : {{String}},
+      "[Type](#cfn-ses-mailmanageringresspoint-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-mailmanageringresspoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::MailManagerIngressPoint
 Properties:
-  IngressPointConfiguration:
-    IngressPointConfiguration
-  IngressPointName: String
-  NetworkConfiguration:
-    NetworkConfiguration
-  RuleSetId: String
-  StatusToUpdate: String
-  Tags:
-    - Tag
-  TrafficPolicyId: String
-  Type: String
-
+  [IngressPointConfiguration](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration): {{
+    IngressPointConfiguration}}
+  [IngressPointName](#cfn-ses-mailmanageringresspoint-ingresspointname): {{String}}
+  [NetworkConfiguration](#cfn-ses-mailmanageringresspoint-networkconfiguration): {{
+    NetworkConfiguration}}
+  [RuleSetId](#cfn-ses-mailmanageringresspoint-rulesetid): {{String}}
+  [StatusToUpdate](#cfn-ses-mailmanageringresspoint-statustoupdate): {{String}}
+  [Tags](#cfn-ses-mailmanageringresspoint-tags): {{
+    - Tag}}
+  [TlsPolicy](#cfn-ses-mailmanageringresspoint-tlspolicy): {{String}}
+  [TrafficPolicyId](#cfn-ses-mailmanageringresspoint-trafficpolicyid): {{String}}
+  [Type](#cfn-ses-mailmanageringresspoint-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-mailmanageringresspoint-properties"></a>
 
-`IngressPointConfiguration`
-
+`IngressPointConfiguration`  <a name="cfn-ses-mailmanageringresspoint-ingresspointconfiguration"></a>
 The configuration of the ingress endpoint resource.
+*Required*: No
+*Type*: [IngressPointConfiguration](aws-properties-ses-mailmanageringresspoint-ingresspointconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IngressPointConfiguration](aws-properties-ses-mailmanageringresspoint-ingresspointconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IngressPointName`
-
+`IngressPointName`  <a name="cfn-ses-mailmanageringresspoint-ingresspointname"></a>
 A user friendly name for an ingress endpoint resource.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9_\-]+$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9_\-]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkConfiguration`
-
+`NetworkConfiguration`  <a name="cfn-ses-mailmanageringresspoint-networkconfiguration"></a>
 The network type (IPv4-only, Dual-Stack, PrivateLink) of the ingress endpoint resource.
+*Required*: No
+*Type*: [NetworkConfiguration](aws-properties-ses-mailmanageringresspoint-networkconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RuleSetId`  <a name="cfn-ses-mailmanageringresspoint-rulesetid"></a>
+The identifier of an existing rule set that you attach to an ingress endpoint resource.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [NetworkConfiguration](aws-properties-ses-mailmanageringresspoint-networkconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RuleSetId`
-
-The identifier of an existing rule set that you attach to an ingress endpoint
-resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatusToUpdate`
-
+`StatusToUpdate`  <a name="cfn-ses-mailmanageringresspoint-statustoupdate"></a>
 The update status of an ingress endpoint.
+*Required*: No
+*Type*: String
+*Allowed values*: `ACTIVE | CLOSED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ACTIVE | CLOSED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ses-mailmanageringresspoint-tags"></a>
 The tags used to organize, track, or control access for the resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-mailmanageringresspoint-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TlsPolicy`  <a name="cfn-ses-mailmanageringresspoint-tlspolicy"></a>
+The text of the policy in JSON format. The policy cannot exceed 4 KB.
+For information about the syntax of sending authorization policies, see the [Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/sending-authorization.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `REQUIRED | OPTIONAL | FIPS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Tag](aws-properties-ses-mailmanageringresspoint-tag.md)
+`TrafficPolicyId`  <a name="cfn-ses-mailmanageringresspoint-trafficpolicyid"></a>
+The identifier of an existing traffic policy that you attach to an ingress endpoint resource.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficPolicyId`
-
-The identifier of an existing traffic policy that you attach to an ingress endpoint
-resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-ses-mailmanageringresspoint-type"></a>
 The type of the ingress endpoint to create.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `OPEN | AUTH`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `OPEN | AUTH | MTLS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ses-mailmanageringresspoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-mailmanageringresspoint-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-mailmanageringresspoint-return-values-fn--getatt"></a>
 
-`ARecord`
+####
+<a name="aws-resource-ses-mailmanageringresspoint-return-values-fn--getatt-fn--getatt"></a>
 
-The DNS A Record that identifies your ingress endpoint. Configure your DNS Mail Exchange (MX) record with this value to route emails to Mail Manager.
+`ARecord`  <a name="ARecord-fn::getatt"></a>
+ The DNS A Record that identifies your ingress endpoint. Configure your DNS Mail Exchange (MX) record with this value to route emails to Mail Manager.
 
-`IngressPointArn`
-
+`IngressPointArn`  <a name="IngressPointArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the ingress endpoint resource.
 
-`IngressPointId`
-
+`IngressPointId`  <a name="IngressPointId-fn::getatt"></a>
 The identifier of the ingress endpoint resource.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the ingress endpoint resource.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-IngressPointConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

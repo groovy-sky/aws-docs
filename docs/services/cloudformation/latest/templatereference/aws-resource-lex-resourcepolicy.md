@@ -2,98 +2,78 @@
 title: "AWS::Lex::ResourcePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::ResourcePolicy
+<a name="aws-resource-lex-resourcepolicy"></a>
 
-###### Note
-
+**Note**
 Amazon Lex V2 is the only supported version in CloudFormation.
 
-Specifies a new resource policy with the specified policy
-statements.
+Specifies a new resource policy with the specified policy statements.
 
 ## Syntax
+<a name="aws-resource-lex-resourcepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lex-resourcepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Lex::ResourcePolicy",
   "Properties" : {
-      "Policy" : Json,
-      "ResourceArn" : String
+      "[Policy](#cfn-lex-resourcepolicy-policy)" : {{Json}},
+      "[ResourceArn](#cfn-lex-resourcepolicy-resourcearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lex-resourcepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Lex::ResourcePolicy
 Properties:
-  Policy: Json
-  ResourceArn: String
-
+  [Policy](#cfn-lex-resourcepolicy-policy): {{Json}}
+  [ResourceArn](#cfn-lex-resourcepolicy-resourcearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-lex-resourcepolicy-properties"></a>
 
-`Policy`
+`Policy`  <a name="cfn-lex-resourcepolicy-policy"></a>
+A resource policy to add to the resource. The policy is a JSON structure that contains one or more statements that define the policy. The policy must follow IAM syntax. If the policy isn't valid, Amazon Lex returns a validation exception.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A resource policy to add to the resource. The policy is a JSON
-structure that contains one or more statements that define the policy.
-The policy must follow IAM syntax. If the policy isn't
-valid, Amazon Lex returns a validation exception.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceArn`
-
-The Amazon Resource Name (ARN) of the bot or bot alias that the
-resource policy is attached to.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1011`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`ResourceArn`  <a name="cfn-lex-resourcepolicy-resourcearn"></a>
+The Amazon Resource Name (ARN) of the bot or bot alias that the resource policy is attached to.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1011`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-lex-resourcepolicy-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-lex-resourcepolicy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-lex-resourcepolicy-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The identifier of the resource policy.
 
-`RevisionId`
-
+`RevisionId`  <a name="RevisionId-fn::getatt"></a>
 Specifies the current revision of a resource policy.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BotVersionLocaleSpecification
-
-Next
 
 All content copied from https://docs.aws.amazon.com/.

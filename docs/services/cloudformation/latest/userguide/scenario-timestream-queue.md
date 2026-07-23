@@ -3,51 +3,38 @@ title: "Amazon Timestream template snippets"
 ---
 
 # Amazon Timestream template snippets
+<a name="scenario-timestream-queue"></a>
 
-Amazon Timestream for InfluxDB makes it easy for application developers and DevOps teams to run fully managed InfluxDB
-databases on AWS for real-time time-series applications using open-source APIs. You can quickly create an InfluxDB
-database that handles demanding time- series workloads. With a few simple API calls, you can set up, migrate,
-operate, and scale an InfluxDB database on AWS with automated software patching, backups, and recovery. You can
-also find these samples at [awslabs/amazon-timestream-tools/tree/mainline/integrations/cloudformation/timestream-influxdb](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/integrations/cloudformation/timestream-influxdb) on
-GitHub.
+Amazon Timestream for InfluxDB makes it easy for application developers and DevOps teams to run fully managed InfluxDB databases on AWS for real-time time-series applications using open-source APIs. You can quickly create an InfluxDB database that handles demanding time- series workloads. With a few simple API calls, you can set up, migrate, operate, and scale an InfluxDB database on AWS with automated software patching, backups, and recovery. You can also find these samples at [awslabs/amazon-timestream-tools/tree/mainline/integrations/cloudformation/timestream-influxdb](https://github.com/awslabs/amazon-timestream-tools/tree/mainline/integrations/cloudformation/timestream-influxdb) on GitHub.
 
-###### Topics
+**Topics**
++ [Minimal sample using default values](#scenario-timestream-influxdb-example-1)
++ [More complete example with parameters](#scenario-timestream-influxdb-example-2)
 
-- [Minimal sample using default values](#scenario-timestream-influxdb-example-1)
+These CloudFormation templates create the following resources that are needed to successfully create, connect to, and monitor a Amazon Timestream for InfluxDB instance:
 
-- [More complete example with parameters](#scenario-timestream-influxdb-example-2)
+**Amazon VPC**
++ `VPC`
++ One or more `Subnet`
++ `InternetGateway`
++ `RouteTable`
++ `SecurityGroup`
 
-These CloudFormation templates create the following resources that are needed to successfully create, connect to, and
-monitor a Amazon Timestream for InfluxDB instance:
+**Amazon S3**
++ `Bucket`
 
-###### Amazon VPC
-
-- `VPC`
-
-- One or more `Subnet`
-
-- `InternetGateway`
-
-- `RouteTable`
-
-- `SecurityGroup`
-
-###### Amazon S3
-
-- `Bucket`
-
-###### Amazon Timestream
-
-- `InfluxDBInstance`
+**Amazon Timestream**
++ `InfluxDBInstance`
 
 ## Minimal sample using default values
+<a name="scenario-timestream-influxdb-example-1"></a>
 
 This example deploys a multi- AZ and publicly accessible instance using default values when possible.
 
 ### JSON
+<a name="scenario-timestream-influxdb-example-1.json"></a>
 
-```json
-
+```
 {
   "Metadata": {
     "AWS::CloudFormation::Interface": {
@@ -331,9 +318,9 @@ This example deploys a multi- AZ and publicly accessible instance using default 
 ```
 
 ### YAML
+<a name="scenario-timestream-influxdb-example-1.yaml"></a>
 
-```yaml
-
+```
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -499,18 +486,17 @@ Outputs:
   Endpoint:
     Description: The endpoint URL to connect to InfluxDB
     Value: !Join ["", ["https://", !GetAtt DbInstance.Endpoint, ":8086"]]
-
 ```
 
 ## More complete example with parameters
+<a name="scenario-timestream-influxdb-example-2"></a>
 
-This example template dynamically alters the network resources based on the parameters provided. Parameters
-include `PubliclyAccessible` and `DeploymentType`.
+This example template dynamically alters the network resources based on the parameters provided. Parameters include `PubliclyAccessible` and `DeploymentType`.
 
 ### JSON
+<a name="scenario-timestream-influxdb-example-2.json"></a>
 
-```json
-
+```
 {
   "Metadata": {
     "AWS::CloudFormation::Interface": {
@@ -943,9 +929,9 @@ include `PubliclyAccessible` and `DeploymentType`.
 ```
 
 ### YAML
+<a name="scenario-timestream-influxdb-example-2.yaml"></a>
 
-```yaml
-
+```
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -1213,11 +1199,5 @@ Outputs:
     Description: The endpoint URL to connect to InfluxDB
     Value: !Join ["", ["https://", !GetAtt DbInstance.Endpoint, ":8086"]]
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon SQS
-
-Windows-based stacks
 
 All content copied from https://docs.aws.amazon.com/.

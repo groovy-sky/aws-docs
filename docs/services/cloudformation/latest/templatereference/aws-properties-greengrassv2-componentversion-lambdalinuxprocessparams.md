@@ -2,72 +2,52 @@
 title: "AWS::GreengrassV2::ComponentVersion LambdaLinuxProcessParams"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::ComponentVersion LambdaLinuxProcessParams
+<a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams"></a>
 
-Contains parameters for a Linux process that contains an AWS Lambda
-function.
+Contains parameters for a Linux process that contains an AWS Lambda function.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerParams" : LambdaContainerParams,
-  "IsolationMode" : String
+  "[ContainerParams](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-containerparams)" : {{LambdaContainerParams}},
+  "[IsolationMode](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-isolationmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams-syntax.yaml"></a>
 
-```yaml
-
-  ContainerParams:
-    LambdaContainerParams
-  IsolationMode: String
-
+```
+  [ContainerParams](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-containerparams): {{
+    LambdaContainerParams}}
+  [IsolationMode](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-isolationmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams-properties"></a>
 
-`ContainerParams`
-
+`ContainerParams`  <a name="cfn-greengrassv2-componentversion-lambdalinuxprocessparams-containerparams"></a>
 The parameters for the container in which the Lambda function runs.
+*Required*: No
+*Type*: [LambdaContainerParams](aws-properties-greengrassv2-componentversion-lambdacontainerparams.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [LambdaContainerParams](aws-properties-greengrassv2-componentversion-lambdacontainerparams.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IsolationMode`
-
-The isolation mode for the process that contains the Lambda function. The
-process can run in an isolated runtime environment inside the AWS IoT Greengrass
-container, or as a regular process outside any container.
-
+`IsolationMode`  <a name="cfn-greengrassv2-componentversion-lambdalinuxprocessparams-isolationmode"></a>
+The isolation mode for the process that contains the Lambda function. The process can run in an isolated runtime environment inside the AWS IoT Greengrass container, or as a regular process outside any container.
 Default: `GreengrassContainer`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GreengrassContainer | NoContainer`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaFunctionRecipeSource
-
-LambdaVolumeMount
+*Required*: No
+*Type*: String
+*Allowed values*: `GreengrassContainer | NoContainer`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

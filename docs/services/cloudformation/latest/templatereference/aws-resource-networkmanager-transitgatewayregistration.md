@@ -2,99 +2,84 @@
 title: "AWS::NetworkManager::TransitGatewayRegistration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::TransitGatewayRegistration
+<a name="aws-resource-networkmanager-transitgatewayregistration"></a>
 
-Registers a transit gateway in your global network. Not all Regions support transit
-gateways for global networks. For a list of the supported Regions, see [Region Availability](../../../network-manager/latest/tgwnm/what-are-global-networks.md#nm-available-regions) in the _AWS Transit Gateways for Global_
-_Networks User Guide_. The transit gateway can be in any of the supported
-AWS Regions, but it must be owned by the same AWS account that owns the global
-network. You cannot register a transit gateway in more than one global network.
+Registers a transit gateway in your global network. Not all Regions support transit gateways for global networks. For a list of the supported Regions, see [Region Availability](https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-global-networks.html#nm-available-regions) in the *AWS Transit Gateways for Global Networks User Guide*. The transit gateway can be in any of the supported AWS Regions, but it must be owned by the same AWS account that owns the global network. You cannot register a transit gateway in more than one global network.
 
 ## Syntax
+<a name="aws-resource-networkmanager-transitgatewayregistration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-transitgatewayregistration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::TransitGatewayRegistration",
   "Properties" : {
-      "GlobalNetworkId" : String,
-      "TransitGatewayArn" : String
+      "[GlobalNetworkId](#cfn-networkmanager-transitgatewayregistration-globalnetworkid)" : {{String}},
+      "[TransitGatewayArn](#cfn-networkmanager-transitgatewayregistration-transitgatewayarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-transitgatewayregistration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::TransitGatewayRegistration
 Properties:
-  GlobalNetworkId: String
-  TransitGatewayArn: String
-
+  [GlobalNetworkId](#cfn-networkmanager-transitgatewayregistration-globalnetworkid): {{String}}
+  [TransitGatewayArn](#cfn-networkmanager-transitgatewayregistration-transitgatewayarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-transitgatewayregistration-properties"></a>
 
-`GlobalNetworkId`
-
+`GlobalNetworkId`  <a name="cfn-networkmanager-transitgatewayregistration-globalnetworkid"></a>
 The ID of the global network.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayArn`
-
+`TransitGatewayArn`  <a name="cfn-networkmanager-transitgatewayregistration-transitgatewayarn"></a>
 The Amazon Resource Name (ARN) of the transit gateway.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-networkmanager-transitgatewayregistration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-transitgatewayregistration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the global network and the ARN of the transit gateway. For example: `global-network-01231231231231231|arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-123abc05e04123abc`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-networkmanager-transitgatewayregistration--examples"></a>
 
 ### Transit Gateway Registration
+<a name="aws-resource-networkmanager-transitgatewayregistration--examples--Transit_Gateway_Registration"></a>
 
 The following example registers a transit gateway in a global network.
 
 #### JSON
+<a name="aws-resource-networkmanager-transitgatewayregistration--examples--Transit_Gateway_Registration--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::NetworkManager::TransitGatewayRegistration",
     "Properties": {
@@ -109,19 +94,13 @@ The following example registers a transit gateway in a global network.
 ```
 
 #### YAML
+<a name="aws-resource-networkmanager-transitgatewayregistration--examples--Transit_Gateway_Registration--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::TransitGatewayRegistration
 Properties:
   GlobalNetworkId: !Ref GlobalNetwork
   TransitGatewayArn: !Sub 'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:transit-gateway/${TransitGateway}'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::NetworkManager::TransitGatewayRouteTableAttachment
 
 All content copied from https://docs.aws.amazon.com/.

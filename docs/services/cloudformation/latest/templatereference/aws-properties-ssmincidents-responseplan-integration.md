@@ -2,54 +2,42 @@
 title: "AWS::SSMIncidents::ResponsePlan Integration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan Integration
+<a name="aws-properties-ssmincidents-responseplan-integration"></a>
 
 Information about third-party services integrated into a response plan.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-responseplan-integration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-responseplan-integration-syntax.json"></a>
 
-```json
-
+```
 {
-  "PagerDutyConfiguration" : PagerDutyConfiguration
+  "[PagerDutyConfiguration](#cfn-ssmincidents-responseplan-integration-pagerdutyconfiguration)" : {{PagerDutyConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-responseplan-integration-syntax.yaml"></a>
 
-```yaml
-
-  PagerDutyConfiguration:
-    PagerDutyConfiguration
-
+```
+  [PagerDutyConfiguration](#cfn-ssmincidents-responseplan-integration-pagerdutyconfiguration): {{
+    PagerDutyConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-responseplan-integration-properties"></a>
 
-`PagerDutyConfiguration`
-
-Information about the PagerDuty service where the response plan creates an
-incident.
-
-_Required_: No
-
-_Type_: [PagerDutyConfiguration](aws-properties-ssmincidents-responseplan-pagerdutyconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IncidentTemplate
-
-NotificationTargetItem
+`PagerDutyConfiguration`  <a name="cfn-ssmincidents-responseplan-integration-pagerdutyconfiguration"></a>
+Information about the PagerDuty service where the response plan creates an incident.
+*Required*: No
+*Type*: [PagerDutyConfiguration](aws-properties-ssmincidents-responseplan-pagerdutyconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

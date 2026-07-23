@@ -2,177 +2,143 @@
 title: "AWS::Shield::ProtectionGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Shield::ProtectionGroup
+<a name="aws-resource-shield-protectiongroup"></a>
 
 Creates a grouping of protected resources so they can be handled as a collective. This resource grouping improves the accuracy of detection and reduces false positives.
 
-To configure this resource through CloudFormation, you must be subscribed to AWS Shield Advanced. You can subscribe
-through the [Shield Advanced console](https://console.aws.amazon.com/wafv2/shieldv2) and through
-the APIs. For more information, see
-[Subscribe to AWS Shield Advanced](../../../waf/latest/developerguide/enable-ddos-prem.md).
+To configure this resource through CloudFormation, you must be subscribed to AWS Shield Advanced. You can subscribe through the [Shield Advanced console](https://console.aws.amazon.com/wafv2/shieldv2#/) and through the APIs. For more information, see [Subscribe to AWS Shield Advanced](https://docs.aws.amazon.com/waf/latest/developerguide/enable-ddos-prem.html).
 
 ## Syntax
+<a name="aws-resource-shield-protectiongroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-shield-protectiongroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Shield::ProtectionGroup",
   "Properties" : {
-      "Aggregation" : String,
-      "Members" : [ String, ... ],
-      "Pattern" : String,
-      "ProtectionGroupId" : String,
-      "ResourceType" : String,
-      "Tags" : [ Tag, ... ]
+      "[Aggregation](#cfn-shield-protectiongroup-aggregation)" : {{String}},
+      "[Members](#cfn-shield-protectiongroup-members)" : {{[ String, ... ]}},
+      "[Pattern](#cfn-shield-protectiongroup-pattern)" : {{String}},
+      "[ProtectionGroupId](#cfn-shield-protectiongroup-protectiongroupid)" : {{String}},
+      "[ResourceType](#cfn-shield-protectiongroup-resourcetype)" : {{String}},
+      "[Tags](#cfn-shield-protectiongroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-shield-protectiongroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Shield::ProtectionGroup
 Properties:
-  Aggregation: String
-  Members:
-    - String
-  Pattern: String
-  ProtectionGroupId: String
-  ResourceType: String
-  Tags:
-    - Tag
-
+  [Aggregation](#cfn-shield-protectiongroup-aggregation): {{String}}
+  [Members](#cfn-shield-protectiongroup-members): {{
+    - String}}
+  [Pattern](#cfn-shield-protectiongroup-pattern): {{String}}
+  [ProtectionGroupId](#cfn-shield-protectiongroup-protectiongroupid): {{String}}
+  [ResourceType](#cfn-shield-protectiongroup-resourcetype): {{String}}
+  [Tags](#cfn-shield-protectiongroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-shield-protectiongroup-properties"></a>
 
-`Aggregation`
-
+`Aggregation`  <a name="cfn-shield-protectiongroup-aggregation"></a>
 Defines how AWS Shield combines resource data for the group in order to detect, mitigate, and report events.
++ `Sum` - Use the total traffic across the group. This is a good choice for most cases. Examples include Elastic IP addresses for EC2 instances that scale manually or automatically.
++ `Mean` - Use the average of the traffic across the group. This is a good choice for resources that share traffic uniformly. Examples include accelerators and load balancers.
++ `Max` - Use the highest traffic from each resource. This is useful for resources that don't share traffic and for resources that share that traffic in a non-uniform way. Examples include Amazon CloudFront distributions and origin resources for CloudFront distributions.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SUM | MEAN | MAX`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `Sum` \- Use the total traffic across the group. This is a good choice for most cases. Examples include Elastic IP addresses for EC2 instances that scale manually or automatically.
-
-- `Mean` \- Use the average of the traffic across the group. This is a good choice for resources that share traffic uniformly. Examples include accelerators and load balancers.
-
-- `Max` \- Use the highest traffic from each resource. This is useful for resources that don't share traffic and for resources that share that traffic in a non-uniform way. Examples include Amazon CloudFront distributions and origin resources for CloudFront distributions.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SUM | MEAN | MAX`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Members`
-
+`Members`  <a name="cfn-shield-protectiongroup-members"></a>
 The ARNs (Amazon Resource Names) of the resources to include in the protection group. You must set this when you set `Pattern` to `ARBITRARY` and you must not set it for any other `Pattern` setting.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2048 | 10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `2048 | 10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pattern`
-
+`Pattern`  <a name="cfn-shield-protectiongroup-pattern"></a>
 The criteria to use to choose the protected resources for inclusion in the group. You can include all resources that have protections, provide a list of resource ARNs (Amazon Resource Names), or include all resources of a specified resource type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL | ARBITRARY | BY_RESOURCE_TYPE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL | ARBITRARY | BY_RESOURCE_TYPE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProtectionGroupId`
-
+`ProtectionGroupId`  <a name="cfn-shield-protectiongroup-protectiongroupid"></a>
 The name of the protection group. You use this to identify the protection group in lists and to manage the protection group, for example to update, delete, or describe it.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9\-]*`
+*Minimum*: `1`
+*Maximum*: `36`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`ResourceType`  <a name="cfn-shield-protectiongroup-resourcetype"></a>
+The resource type to include in the protection group. All protected resources of this type are included in the protection group. You must set this when you set `Pattern` to `BY_RESOURCE_TYPE` and you must not set it for any other `Pattern` setting.
+*Required*: No
+*Type*: String
+*Allowed values*: `CLOUDFRONT_DISTRIBUTION | ROUTE_53_HOSTED_ZONE | ELASTIC_IP_ALLOCATION | CLASSIC_LOAD_BALANCER | APPLICATION_LOAD_BALANCER | GLOBAL_ACCELERATOR`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `36`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceType`
-
-The resource type to include in the protection group. All protected resources of this type are included in the protection group.
-You must set this when you set `Pattern` to `BY_RESOURCE_TYPE` and you must not set it for any other `Pattern` setting.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CLOUDFRONT_DISTRIBUTION | ROUTE_53_HOSTED_ZONE | ELASTIC_IP_ALLOCATION | CLASSIC_LOAD_BALANCER | APPLICATION_LOAD_BALANCER | GLOBAL_ACCELERATOR`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-shield-protectiongroup-tags"></a>
 Key:value pairs associated with an AWS resource. The key:value pair can be anything you define. Typically, the tag key represents a category (such as "environment") and the tag value represents a specific value within that category (such as "test," "development," or "production"). You can add up to 50 tags to each AWS resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-shield-protectiongroup-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-shield-protectiongroup-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-shield-protectiongroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-shield-protectiongroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN (Amazon Resource Name) of the protection group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-shield-protectiongroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ProtectionGroupArn`
+####
+<a name="aws-resource-shield-protectiongroup-return-values-fn--getatt-fn--getatt"></a>
 
+`ProtectionGroupArn`  <a name="ProtectionGroupArn-fn::getatt"></a>
 The ARN (Amazon Resource Name) of the new protection group.
 
 ## Examples
+<a name="aws-resource-shield-protectiongroup--examples"></a>
 
-- [Create a protection group for all protected resources](#aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources)
-
-- [Create a protection group for protected Elastic IP address resources](#aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources)
+**Topics**
++ [Create a protection group for all protected resources](#aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources)
++ [Create a protection group for protected Elastic IP address resources](#aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources)
 
 ### Create a protection group for all protected resources
+<a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources"></a>
 
 The following shows an example protection group configuration for all protected resources.
 
 #### YAML
+<a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ProtectionGroup:
     Type: AWS::Shield::ProtectionGroup
@@ -183,9 +149,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "ProtectionGroup": {
@@ -201,13 +167,14 @@ Resources:
 ```
 
 ### Create a protection group for protected Elastic IP address resources
+<a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources"></a>
 
 The following shows an example protection group configuration for all Elastic IP address resources that have AWS Shield Advanced protection.
 
 #### YAML
+<a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ProtectionGroup:
     Type: AWS::Shield::ProtectionGroup
@@ -219,9 +186,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "ProtectionGroup": {
@@ -236,11 +203,5 @@ Resources:
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

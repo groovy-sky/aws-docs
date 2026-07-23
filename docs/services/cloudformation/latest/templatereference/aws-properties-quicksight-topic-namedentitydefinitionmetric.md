@@ -2,78 +2,54 @@
 title: "AWS::QuickSight::Topic NamedEntityDefinitionMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic NamedEntityDefinitionMetric
+<a name="aws-properties-quicksight-topic-namedentitydefinitionmetric"></a>
 
 A structure that represents a metric.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-namedentitydefinitionmetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-namedentitydefinitionmetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "Aggregation" : String,
-  "AggregationFunctionParameters" : {Key: Value, ...}
+  "[Aggregation](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregation)" : {{String}},
+  "[AggregationFunctionParameters](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregationfunctionparameters)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-namedentitydefinitionmetric-syntax.yaml"></a>
 
-```yaml
-
-  Aggregation: String
-  AggregationFunctionParameters:
-    Key: Value
-
+```
+  [Aggregation](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregation): {{String}}
+  [AggregationFunctionParameters](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregationfunctionparameters): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-namedentitydefinitionmetric-properties"></a>
 
-`Aggregation`
+`Aggregation`  <a name="cfn-quicksight-topic-namedentitydefinitionmetric-aggregation"></a>
+The aggregation of a named entity. Valid values for this structure are `SUM`, `MIN`, `MAX`, `COUNT`, `AVERAGE`, `DISTINCT_COUNT`, `STDEV`, `STDEVP`, `VAR`, `VARP`, `PERCENTILE`, `MEDIAN`, and `CUSTOM`.
+*Required*: No
+*Type*: String
+*Allowed values*: `SUM | MIN | MAX | COUNT | AVERAGE | DISTINCT_COUNT | STDEV | STDEVP | VAR | VARP | PERCENTILE | MEDIAN | CUSTOM`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The aggregation of a named entity. Valid values for this structure are `SUM`,
-`MIN`, `MAX`, `COUNT`, `AVERAGE`,
-`DISTINCT_COUNT`, `STDEV`, `STDEVP`, `VAR`,
-`VARP`, `PERCENTILE`,
-`MEDIAN`,
-and `CUSTOM`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SUM | MIN | MAX | COUNT | AVERAGE | DISTINCT_COUNT | STDEV | STDEVP | VAR | VARP | PERCENTILE | MEDIAN | CUSTOM`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AggregationFunctionParameters`
-
+`AggregationFunctionParameters`  <a name="cfn-quicksight-topic-namedentitydefinitionmetric-aggregationfunctionparameters"></a>
 The additional parameters for an aggregation function.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NamedEntityDefinition
-
-NegativeFormat
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

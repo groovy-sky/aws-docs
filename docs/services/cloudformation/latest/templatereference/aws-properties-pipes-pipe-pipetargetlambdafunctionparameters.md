@@ -2,69 +2,45 @@
 title: "AWS::Pipes::Pipe PipeTargetLambdaFunctionParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeTargetLambdaFunctionParameters
+<a name="aws-properties-pipes-pipe-pipetargetlambdafunctionparameters"></a>
 
 The parameters for using a Lambda function as a target.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipetargetlambdafunctionparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipetargetlambdafunctionparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "InvocationType" : String
+  "[InvocationType](#cfn-pipes-pipe-pipetargetlambdafunctionparameters-invocationtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipetargetlambdafunctionparameters-syntax.yaml"></a>
 
-```yaml
-
-  InvocationType: String
-
+```
+  [InvocationType](#cfn-pipes-pipe-pipetargetlambdafunctionparameters-invocationtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipetargetlambdafunctionparameters-properties"></a>
 
-`InvocationType`
-
+`InvocationType`  <a name="cfn-pipes-pipe-pipetargetlambdafunctionparameters-invocationtype"></a>
 Specify whether to invoke the function synchronously or asynchronously.
-
-- `REQUEST_RESPONSE` (default) - Invoke synchronously. This corresponds
-to the `RequestResponse` option in the `InvocationType`
-parameter for the Lambda
-[Invoke](../../../lambda/latest/dg/api-invoke.md#API_Invoke_RequestSyntax)
-API.
-
-- `FIRE_AND_FORGET` \- Invoke asynchronously. This corresponds to the
-`Event` option in the `InvocationType` parameter for the
-Lambda
-[Invoke](../../../lambda/latest/dg/api-invoke.md#API_Invoke_RequestSyntax)
-API.
-
-For more information, see [Invocation\
-types](../../../eventbridge/latest/userguide/eb-pipes.md#pipes-invocation) in the _Amazon EventBridge User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `REQUEST_RESPONSE | FIRE_AND_FORGET`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeTargetKinesisStreamParameters
-
-PipeTargetParameters
++ `REQUEST_RESPONSE` (default) - Invoke synchronously. This corresponds to the `RequestResponse` option in the `InvocationType` parameter for the Lambda [Invoke](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html#API_Invoke_RequestSyntax) API.
++ `FIRE_AND_FORGET` - Invoke asynchronously. This corresponds to the `Event` option in the `InvocationType` parameter for the Lambda [Invoke](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html#API_Invoke_RequestSyntax) API.
+For more information, see [Invocation types](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html#pipes-invocation) in the *Amazon EventBridge User Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `REQUEST_RESPONSE | FIRE_AND_FORGET`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

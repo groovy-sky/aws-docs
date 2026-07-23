@@ -2,65 +2,57 @@
 title: "AWS::S3::AccessPoint VpcConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::AccessPoint VpcConfiguration
+<a name="aws-properties-s3-accesspoint-vpcconfiguration"></a>
 
 The Virtual Private Cloud (VPC) configuration for this access point.
 
 ## Syntax
+<a name="aws-properties-s3-accesspoint-vpcconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-accesspoint-vpcconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "VpcId" : String
+  "[VpcId](#cfn-s3-accesspoint-vpcconfiguration-vpcid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-accesspoint-vpcconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  VpcId: String
-
+```
+  [VpcId](#cfn-s3-accesspoint-vpcconfiguration-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-accesspoint-vpcconfiguration-properties"></a>
 
-`VpcId`
-
-If this field is specified, the access point will only allow connections from the
-specified VPC ID.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`VpcId`  <a name="cfn-s3-accesspoint-vpcconfiguration-vpcid"></a>
+If this field is specified, the access point will only allow connections from the specified VPC ID.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-properties-s3-accesspoint-vpcconfiguration--examples"></a>
 
 ### Create an S3 Access Point restricted to a VPC
+<a name="aws-properties-s3-accesspoint-vpcconfiguration--examples--Create_an_S3_Access_Point_restricted_to_a_VPC"></a>
 
-The following example creates an Amazon S3 access point restricted to a virtual
-private cloud (VPC). For more information, see [Configuring IAM policies for\
-using access points](../../../s3/latest/userguide/access-points-policies.md) in the _Amazon S3 User Guide_.
+The following example creates an Amazon S3 access point restricted to a virtual private cloud (VPC). For more information, see [Configuring IAM policies for using access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-policies.html) in the *Amazon S3 User Guide*.
 
 #### JSON
+<a name="aws-properties-s3-accesspoint-vpcconfiguration--examples--Create_an_S3_Access_Point_restricted_to_a_VPC--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -74,7 +66,7 @@ using access points](../../../s3/latest/userguide/access-points-policies.md) in 
                     "Ref": "S3Bucket"
                 },
                 "PolicyDocument": {
-                    "Version": "2012-10-17",
+                    "Version": "2012-10-17"		 	 	 ,
                     "Statement": [
                         {
                             "Action": "*",
@@ -155,9 +147,9 @@ using access points](../../../s3/latest/userguide/access-points-policies.md) in 
 ```
 
 #### YAML
+<a name="aws-properties-s3-accesspoint-vpcconfiguration--examples--Create_an_S3_Access_Point_restricted_to_a_VPC--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -212,11 +204,5 @@ Outputs:
       Ref: S3AccessPoint
     Description: ARN of the sample Amazon S3 access point.
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::S3::Bucket
 
 All content copied from https://docs.aws.amazon.com/.

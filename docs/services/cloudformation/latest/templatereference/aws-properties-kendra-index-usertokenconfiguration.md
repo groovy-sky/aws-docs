@@ -2,72 +2,54 @@
 title: "AWS::Kendra::Index UserTokenConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::Index UserTokenConfiguration
+<a name="aws-properties-kendra-index-usertokenconfiguration"></a>
 
 Provides the configuration information for a token.
 
-###### Important
-
-If you're using an Amazon Kendra Gen AI Enterprise Edition index and you try to use
-`UserTokenConfigurations` to configure user context policy, Amazon Kendra returns
-a `ValidationException` error.
+**Important**
+If you're using an Amazon Kendra Gen AI Enterprise Edition index and you try to use `UserTokenConfigurations` to configure user context policy, Amazon Kendra returns a `ValidationException` error.
 
 ## Syntax
+<a name="aws-properties-kendra-index-usertokenconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-index-usertokenconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "JsonTokenTypeConfiguration" : JsonTokenTypeConfiguration,
-  "JwtTokenTypeConfiguration" : JwtTokenTypeConfiguration
+  "[JsonTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jsontokentypeconfiguration)" : {{JsonTokenTypeConfiguration}},
+  "[JwtTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jwttokentypeconfiguration)" : {{JwtTokenTypeConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-index-usertokenconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  JsonTokenTypeConfiguration:
-    JsonTokenTypeConfiguration
-  JwtTokenTypeConfiguration:
-    JwtTokenTypeConfiguration
-
+```
+  [JsonTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jsontokentypeconfiguration): {{
+    JsonTokenTypeConfiguration}}
+  [JwtTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jwttokentypeconfiguration): {{
+    JwtTokenTypeConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-index-usertokenconfiguration-properties"></a>
 
-`JsonTokenTypeConfiguration`
-
+`JsonTokenTypeConfiguration`  <a name="cfn-kendra-index-usertokenconfiguration-jsontokentypeconfiguration"></a>
 Information about the JSON token type configuration.
+*Required*: No
+*Type*: [JsonTokenTypeConfiguration](aws-properties-kendra-index-jsontokentypeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JsonTokenTypeConfiguration](aws-properties-kendra-index-jsontokentypeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JwtTokenTypeConfiguration`
-
+`JwtTokenTypeConfiguration`  <a name="cfn-kendra-index-usertokenconfiguration-jwttokentypeconfiguration"></a>
 Information about the JWT token type configuration.
-
-_Required_: No
-
-_Type_: [JwtTokenTypeConfiguration](aws-properties-kendra-index-jwttokentypeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ValueImportanceItem
+*Required*: No
+*Type*: [JwtTokenTypeConfiguration](aws-properties-kendra-index-jwttokentypeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

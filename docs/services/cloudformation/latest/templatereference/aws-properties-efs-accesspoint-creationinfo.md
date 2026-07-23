@@ -2,90 +2,63 @@
 title: "AWS::EFS::AccessPoint CreationInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EFS::AccessPoint CreationInfo
+<a name="aws-properties-efs-accesspoint-creationinfo"></a>
 
-Required if the `RootDirectory` \> `Path` specified does not exist.
-Specifies the POSIX IDs and permissions to apply to the access point's `RootDirectory` \> `Path`.
-If the access point root directory does not exist, EFS creates it with these settings when a client connects to the access point.
-When specifying `CreationInfo`, you must include values for all properties.
+Required if the `RootDirectory` > `Path` specified does not exist. Specifies the POSIX IDs and permissions to apply to the access point's `RootDirectory` > `Path`. If the access point root directory does not exist, EFS creates it with these settings when a client connects to the access point. When specifying `CreationInfo`, you must include values for all properties.
 
-Amazon EFS creates a root directory only if you have provided the CreationInfo: OwnUid, OwnGID, and permissions for the directory.
-If you do not provide this information, Amazon EFS does not create the root directory. If the root directory does not exist, attempts to mount
-using the access point will fail.
+Amazon EFS creates a root directory only if you have provided the CreationInfo: OwnUid, OwnGID, and permissions for the directory. If you do not provide this information, Amazon EFS does not create the root directory. If the root directory does not exist, attempts to mount using the access point will fail.
 
-###### Important
-
-If you do not provide `CreationInfo` and the specified `RootDirectory` does not exist,
-attempts to mount the file system using the access point will fail.
+**Important**
+If you do not provide `CreationInfo` and the specified `RootDirectory` does not exist, attempts to mount the file system using the access point will fail.
 
 ## Syntax
+<a name="aws-properties-efs-accesspoint-creationinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-efs-accesspoint-creationinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "OwnerGid" : String,
-  "OwnerUid" : String,
-  "Permissions" : String
+  "[OwnerGid](#cfn-efs-accesspoint-creationinfo-ownergid)" : {{String}},
+  "[OwnerUid](#cfn-efs-accesspoint-creationinfo-owneruid)" : {{String}},
+  "[Permissions](#cfn-efs-accesspoint-creationinfo-permissions)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-efs-accesspoint-creationinfo-syntax.yaml"></a>
 
-```yaml
-
-  OwnerGid: String
-  OwnerUid: String
-  Permissions: String
-
+```
+  [OwnerGid](#cfn-efs-accesspoint-creationinfo-ownergid): {{String}}
+  [OwnerUid](#cfn-efs-accesspoint-creationinfo-owneruid): {{String}}
+  [Permissions](#cfn-efs-accesspoint-creationinfo-permissions): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-efs-accesspoint-creationinfo-properties"></a>
 
-`OwnerGid`
-
+`OwnerGid`  <a name="cfn-efs-accesspoint-creationinfo-ownergid"></a>
 Specifies the POSIX group ID to apply to the `RootDirectory`. Accepts values from 0 to 2^32 (4294967295).
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OwnerUid`
-
+`OwnerUid`  <a name="cfn-efs-accesspoint-creationinfo-owneruid"></a>
 Specifies the POSIX user ID to apply to the `RootDirectory`. Accepts values from 0 to 2^32 (4294967295).
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Permissions`
-
+`Permissions`  <a name="cfn-efs-accesspoint-creationinfo-permissions"></a>
 Specifies the POSIX permissions to apply to the `RootDirectory`, in the format of an octal number representing the file's mode bits.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-7]{3,4}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessPointTag
-
-PosixUser
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-7]{3,4}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

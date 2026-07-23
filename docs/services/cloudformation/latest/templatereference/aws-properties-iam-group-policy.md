@@ -2,86 +2,63 @@
 title: "AWS::IAM::Group Policy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::Group Policy
+<a name="aws-properties-iam-group-policy"></a>
 
 Contains information about an attached policy.
 
-An attached policy is a managed policy that has been attached to a user, group, or
-role.
+An attached policy is a managed policy that has been attached to a user, group, or role.
 
-For more information about managed policies, see [Managed Policies and Inline\
-Policies](../../../iam/latest/userguide/policies-managed-vs-inline.md) in the _IAM User Guide_.
+For more information about managed policies, see [Managed Policies and Inline Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html) in the *IAM User Guide*.
 
 ## Syntax
+<a name="aws-properties-iam-group-policy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iam-group-policy-syntax.json"></a>
 
-```json
-
+```
 {
-  "PolicyDocument" : Json,
-  "PolicyName" : String
+  "[PolicyDocument](#cfn-iam-group-policy-policydocument)" : {{Json}},
+  "[PolicyName](#cfn-iam-group-policy-policyname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iam-group-policy-syntax.yaml"></a>
 
-```yaml
-
-  PolicyDocument: Json
-  PolicyName: String
-
+```
+  [PolicyDocument](#cfn-iam-group-policy-policydocument): {{Json}}
+  [PolicyName](#cfn-iam-group-policy-policyname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iam-group-policy-properties"></a>
 
-`PolicyDocument`
-
+`PolicyDocument`  <a name="cfn-iam-group-policy-policydocument"></a>
 The policy document.
+*Required*: Yes
+*Type*: Json
+*Pattern*: `[\u0009\u000A\u000D\u0020-\u00FF]+`
+*Minimum*: `1`
+*Maximum*: `131072`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Pattern_: `[\u0009\u000A\u000D\u0020-\u00FF]+`
-
-_Minimum_: `1`
-
-_Maximum_: `131072`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyName`
-
+`PolicyName`  <a name="cfn-iam-group-policy-policyname"></a>
 The friendly name (not ARN) identifying the policy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [PolicyDetail](../../../../reference/iam/latest/apireference/api-policydetail.md) in the _AWS Identity and Access Management API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IAM::Group
-
-AWS::IAM::GroupPolicy
+<a name="aws-properties-iam-group-policy--seealso"></a>
++ [PolicyDetail](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyDetail.html) in the *AWS Identity and Access Management API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

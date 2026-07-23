@@ -2,64 +2,43 @@
 title: "AWS::SageMaker::ModelPackage ModelAccessConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage ModelAccessConfig
+<a name="aws-properties-sagemaker-modelpackage-modelaccessconfig"></a>
 
-The access configuration file to control access to the ML model. You can explicitly accept the model
-end-user license agreement (EULA) within the `ModelAccessConfig`.
-
-- If you are a Jumpstart user, see the [End-user license agreements](../../../sagemaker/latest/dg/jumpstart-foundation-models-choose.md#jumpstart-foundation-models-choose-eula) section for more details on accepting the EULA.
-
-- If you are an AutoML user, see the _Optional Parameters_ section of
-_Create an AutoML job to fine-tune text generation models using the_
-_API_ for details on [How to set the EULA acceptance when fine-tuning a model using the AutoML\
-API](../../../sagemaker/latest/dg/autopilot-create-experiment-finetune-llms.md#autopilot-llms-finetuning-api-optional-params).
+The access configuration file to control access to the ML model. You can explicitly accept the model end-user license agreement (EULA) within the `ModelAccessConfig`.
++ If you are a Jumpstart user, see the [End-user license agreements](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-choose.html#jumpstart-foundation-models-choose-eula) section for more details on accepting the EULA.
++ If you are an AutoML user, see the *Optional Parameters* section of *Create an AutoML job to fine-tune text generation models using the API* for details on [How to set the EULA acceptance when fine-tuning a model using the AutoML API](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-create-experiment-finetune-llms.html#autopilot-llms-finetuning-api-optional-params).
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-modelaccessconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-modelaccessconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AcceptEula" : Boolean
+  "[AcceptEula](#cfn-sagemaker-modelpackage-modelaccessconfig-accepteula)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-modelaccessconfig-syntax.yaml"></a>
 
-```yaml
-
-  AcceptEula: Boolean
-
+```
+  [AcceptEula](#cfn-sagemaker-modelpackage-modelaccessconfig-accepteula): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-modelaccessconfig-properties"></a>
 
-`AcceptEula`
-
-Specifies agreement to the model end-user license agreement (EULA). The
-`AcceptEula` value must be explicitly defined as `True` in order
-to accept the EULA that this model requires. You are responsible for reviewing and
-complying with any applicable license terms and making sure they are acceptable for your
-use case before downloading or using a model.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetricsSource
-
-ModelCard
+`AcceptEula`  <a name="cfn-sagemaker-modelpackage-modelaccessconfig-accepteula"></a>
+Specifies agreement to the model end-user license agreement (EULA). The `AcceptEula` value must be explicitly defined as `True` in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

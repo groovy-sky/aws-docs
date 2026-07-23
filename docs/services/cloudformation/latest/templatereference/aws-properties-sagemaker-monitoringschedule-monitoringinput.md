@@ -2,66 +2,51 @@
 title: "AWS::SageMaker::MonitoringSchedule MonitoringInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::MonitoringSchedule MonitoringInput
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringinput"></a>
 
 The inputs for a monitoring job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchTransformInput" : BatchTransformInput,
-  "EndpointInput" : EndpointInput
+  "[BatchTransformInput](#cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput)" : {{BatchTransformInput}},
+  "[EndpointInput](#cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput)" : {{EndpointInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringinput-syntax.yaml"></a>
 
-```yaml
-
-  BatchTransformInput:
-    BatchTransformInput
-  EndpointInput:
-    EndpointInput
-
+```
+  [BatchTransformInput](#cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput): {{
+    BatchTransformInput}}
+  [EndpointInput](#cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput): {{
+    EndpointInput}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-monitoringschedule-monitoringinput-properties"></a>
 
-`BatchTransformInput`
-
+`BatchTransformInput`  <a name="cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput"></a>
 Input object for the batch transform job.
+*Required*: No
+*Type*: [BatchTransformInput](aws-properties-sagemaker-monitoringschedule-batchtransforminput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BatchTransformInput](aws-properties-sagemaker-monitoringschedule-batchtransforminput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndpointInput`
-
+`EndpointInput`  <a name="cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput"></a>
 The endpoint for a monitoring job.
-
-_Required_: No
-
-_Type_: [EndpointInput](aws-properties-sagemaker-monitoringschedule-endpointinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MonitoringExecutionSummary
-
-MonitoringJobDefinition
+*Required*: No
+*Type*: [EndpointInput](aws-properties-sagemaker-monitoringschedule-endpointinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

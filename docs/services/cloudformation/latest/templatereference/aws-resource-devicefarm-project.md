@@ -2,122 +2,97 @@
 title: "AWS::DeviceFarm::Project"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DeviceFarm::Project
+<a name="aws-resource-devicefarm-project"></a>
 
 Creates a project.
 
 ## Syntax
+<a name="aws-resource-devicefarm-project-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-devicefarm-project-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DeviceFarm::Project",
   "Properties" : {
-      "DefaultJobTimeoutMinutes" : Integer,
-      "Name" : String,
-      "Tags" : [ Tag, ... ],
-      "VpcConfig" : VpcConfig
+      "[DefaultJobTimeoutMinutes](#cfn-devicefarm-project-defaultjobtimeoutminutes)" : {{Integer}},
+      "[Name](#cfn-devicefarm-project-name)" : {{String}},
+      "[Tags](#cfn-devicefarm-project-tags)" : {{[ Tag, ... ]}},
+      "[VpcConfig](#cfn-devicefarm-project-vpcconfig)" : {{VpcConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-devicefarm-project-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DeviceFarm::Project
 Properties:
-  DefaultJobTimeoutMinutes: Integer
-  Name: String
-  Tags:
-    - Tag
-  VpcConfig:
-    VpcConfig
-
+  [DefaultJobTimeoutMinutes](#cfn-devicefarm-project-defaultjobtimeoutminutes): {{Integer}}
+  [Name](#cfn-devicefarm-project-name): {{String}}
+  [Tags](#cfn-devicefarm-project-tags): {{
+    - Tag}}
+  [VpcConfig](#cfn-devicefarm-project-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-devicefarm-project-properties"></a>
 
-`DefaultJobTimeoutMinutes`
+`DefaultJobTimeoutMinutes`  <a name="cfn-devicefarm-project-defaultjobtimeoutminutes"></a>
+Sets the execution timeout value (in minutes) for a project. All test runs in this project use the specified execution timeout value unless overridden when scheduling a run.
+*Required*: No
+*Type*: Integer
+*Minimum*: `5`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Sets the execution timeout value (in minutes) for a project. All test runs in this project use the
-specified execution timeout value unless overridden when scheduling a run.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `5`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-devicefarm-project-name"></a>
 The project's name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Tags`  <a name="cfn-devicefarm-project-tags"></a>
+The tags to add to the resource. A tag is an array of key-value pairs. Tag keys can have a maximum character length of 128 characters. Tag values can have a maximum length of 256 characters.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-devicefarm-project-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags to add to the resource. A tag is an array of key-value pairs. Tag keys can have a maximum
-character length of 128 characters. Tag values can have a maximum length of 256 characters.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-devicefarm-project-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfig`
-
+`VpcConfig`  <a name="cfn-devicefarm-project-vpcconfig"></a>
 The VPC security groups and subnets that are attached to a project.
-
-_Required_: No
-
-_Type_: [VpcConfig](aws-properties-devicefarm-project-vpcconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [VpcConfig](aws-properties-devicefarm-project-vpcconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-devicefarm-project-return-values"></a>
 
 ### Ref
+<a name="aws-resource-devicefarm-project-return-values-ref"></a>
 
 Not supported for this resource.
 
 ### Fn::GetAtt
+<a name="aws-resource-devicefarm-project-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-devicefarm-project-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the project. See [Amazon resource names](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the
-_General Reference guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the project. See [Amazon resource names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *General Reference guide*.
 
 All content copied from https://docs.aws.amazon.com/.

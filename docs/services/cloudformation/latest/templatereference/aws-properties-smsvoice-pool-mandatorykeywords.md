@@ -2,69 +2,51 @@
 title: "AWS::SMSVOICE::Pool MandatoryKeywords"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::Pool MandatoryKeywords
+<a name="aws-properties-smsvoice-pool-mandatorykeywords"></a>
 
-The manadatory keywords, `HELP` and `STOP` to add to the pool. For more information, see
-[Keywords](../../../sms-voice/latest/userguide/keywords.md) in the AWS End User Messaging SMS User Guide.
+The manadatory keywords, `HELP` and `STOP` to add to the pool. For more information, see [Keywords](https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords.html) in the AWS End User Messaging SMS User Guide.
 
 ## Syntax
+<a name="aws-properties-smsvoice-pool-mandatorykeywords-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-smsvoice-pool-mandatorykeywords-syntax.json"></a>
 
-```json
-
+```
 {
-  "HELP" : MandatoryKeyword,
-  "STOP" : MandatoryKeyword
+  "[HELP](#cfn-smsvoice-pool-mandatorykeywords-help)" : {{MandatoryKeyword}},
+  "[STOP](#cfn-smsvoice-pool-mandatorykeywords-stop)" : {{MandatoryKeyword}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-smsvoice-pool-mandatorykeywords-syntax.yaml"></a>
 
-```yaml
-
-  HELP:
-    MandatoryKeyword
-  STOP:
-    MandatoryKeyword
-
+```
+  [HELP](#cfn-smsvoice-pool-mandatorykeywords-help): {{
+    MandatoryKeyword}}
+  [STOP](#cfn-smsvoice-pool-mandatorykeywords-stop): {{
+    MandatoryKeyword}}
 ```
 
 ## Properties
+<a name="aws-properties-smsvoice-pool-mandatorykeywords-properties"></a>
 
-`HELP`
+`HELP`  <a name="cfn-smsvoice-pool-mandatorykeywords-help"></a>
+Specifies the pool's `HELP` keyword. For more information, see [Opt out list required keywords](https://docs.aws.amazon.com/sms-voice/latest/userguide/opt-out-list-keywords.html) in the AWS End User Messaging SMS User Guide.
+*Required*: Yes
+*Type*: [MandatoryKeyword](aws-properties-smsvoice-pool-mandatorykeyword.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the pool's `HELP` keyword. For more information, see
-[Opt out list required keywords](../../../sms-voice/latest/userguide/opt-out-list-keywords.md) in the AWS End User Messaging SMS User Guide.
-
-_Required_: Yes
-
-_Type_: [MandatoryKeyword](aws-properties-smsvoice-pool-mandatorykeyword.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`STOP`
-
-Specifies the pool's opt-out keyword. For more information, see
-[Required opt-out keywords](../../../sms-voice/latest/userguide/keywords-required.md) in the AWS End User Messaging SMS User Guide.
-
-_Required_: Yes
-
-_Type_: [MandatoryKeyword](aws-properties-smsvoice-pool-mandatorykeyword.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MandatoryKeyword
-
-OptionalKeyword
+`STOP`  <a name="cfn-smsvoice-pool-mandatorykeywords-stop"></a>
+Specifies the pool's opt-out keyword. For more information, see [Required opt-out keywords](https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-required.html) in the AWS End User Messaging SMS User Guide.
+*Required*: Yes
+*Type*: [MandatoryKeyword](aws-properties-smsvoice-pool-mandatorykeyword.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

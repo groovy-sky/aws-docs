@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Template DateAxisOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DateAxisOptions
+<a name="aws-properties-quicksight-template-dateaxisoptions"></a>
 
 The options that determine how a date axis is displayed.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-dateaxisoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-dateaxisoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "MissingDateVisibility" : String
+  "[MissingDateVisibility](#cfn-quicksight-template-dateaxisoptions-missingdatevisibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-dateaxisoptions-syntax.yaml"></a>
 
-```yaml
-
-  MissingDateVisibility: String
-
+```
+  [MissingDateVisibility](#cfn-quicksight-template-dateaxisoptions-missingdatevisibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-dateaxisoptions-properties"></a>
 
-`MissingDateVisibility`
-
+`MissingDateVisibility`  <a name="cfn-quicksight-template-dateaxisoptions-missingdatevisibility"></a>
 Determines whether or not missing dates are displayed.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetSchema
-
-DateDimensionField
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard StringFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard StringFormatConfiguration
+<a name="aws-properties-quicksight-dashboard-stringformatconfiguration"></a>
 
 Formatting configuration for string fields.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-stringformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-stringformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "NullValueFormatConfiguration" : NullValueFormatConfiguration,
-  "NumericFormatConfiguration" : NumericFormatConfiguration
+  "[NullValueFormatConfiguration](#cfn-quicksight-dashboard-stringformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
+  "[NumericFormatConfiguration](#cfn-quicksight-dashboard-stringformatconfiguration-numericformatconfiguration)" : {{NumericFormatConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-stringformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  NullValueFormatConfiguration:
-    NullValueFormatConfiguration
-  NumericFormatConfiguration:
-    NumericFormatConfiguration
-
+```
+  [NullValueFormatConfiguration](#cfn-quicksight-dashboard-stringformatconfiguration-nullvalueformatconfiguration): {{
+    NullValueFormatConfiguration}}
+  [NumericFormatConfiguration](#cfn-quicksight-dashboard-stringformatconfiguration-numericformatconfiguration): {{
+    NumericFormatConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-stringformatconfiguration-properties"></a>
 
-`NullValueFormatConfiguration`
-
+`NullValueFormatConfiguration`  <a name="cfn-quicksight-dashboard-stringformatconfiguration-nullvalueformatconfiguration"></a>
 The options that determine the null value format configuration.
+*Required*: No
+*Type*: [NullValueFormatConfiguration](aws-properties-quicksight-dashboard-nullvalueformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NullValueFormatConfiguration](aws-properties-quicksight-dashboard-nullvalueformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericFormatConfiguration`
-
+`NumericFormatConfiguration`  <a name="cfn-quicksight-dashboard-stringformatconfiguration-numericformatconfiguration"></a>
 The formatting configuration for numeric strings.
-
-_Required_: No
-
-_Type_: [NumericFormatConfiguration](aws-properties-quicksight-dashboard-numericformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StringDefaultValues
-
-StringParameter
+*Required*: No
+*Type*: [NumericFormatConfiguration](aws-properties-quicksight-dashboard-numericformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

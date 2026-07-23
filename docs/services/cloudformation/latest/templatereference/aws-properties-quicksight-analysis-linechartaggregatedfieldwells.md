@@ -2,108 +2,77 @@
 title: "AWS::QuickSight::Analysis LineChartAggregatedFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LineChartAggregatedFieldWells
+<a name="aws-properties-quicksight-analysis-linechartaggregatedfieldwells"></a>
 
 The field well configuration of a line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-linechartaggregatedfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-linechartaggregatedfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : [ DimensionField, ... ],
-  "Colors" : [ DimensionField, ... ],
-  "SmallMultiples" : [ DimensionField, ... ],
-  "Values" : [ MeasureField, ... ]
+  "[Category](#cfn-quicksight-analysis-linechartaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
+  "[Colors](#cfn-quicksight-analysis-linechartaggregatedfieldwells-colors)" : {{[ DimensionField, ... ]}},
+  "[SmallMultiples](#cfn-quicksight-analysis-linechartaggregatedfieldwells-smallmultiples)" : {{[ DimensionField, ... ]}},
+  "[Values](#cfn-quicksight-analysis-linechartaggregatedfieldwells-values)" : {{[ MeasureField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-linechartaggregatedfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  Category:
-    - DimensionField
-  Colors:
-    - DimensionField
-  SmallMultiples:
-    - DimensionField
-  Values:
-    - MeasureField
-
+```
+  [Category](#cfn-quicksight-analysis-linechartaggregatedfieldwells-category): {{
+    - DimensionField}}
+  [Colors](#cfn-quicksight-analysis-linechartaggregatedfieldwells-colors): {{
+    - DimensionField}}
+  [SmallMultiples](#cfn-quicksight-analysis-linechartaggregatedfieldwells-smallmultiples): {{
+    - DimensionField}}
+  [Values](#cfn-quicksight-analysis-linechartaggregatedfieldwells-values): {{
+    - MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-linechartaggregatedfieldwells-properties"></a>
 
-`Category`
-
+`Category`  <a name="cfn-quicksight-analysis-linechartaggregatedfieldwells-category"></a>
 The category field wells of a line chart. Values are grouped by category fields.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Colors`
-
+`Colors`  <a name="cfn-quicksight-analysis-linechartaggregatedfieldwells-colors"></a>
 The color field wells of a line chart. Values are grouped by category fields.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmallMultiples`
-
+`SmallMultiples`  <a name="cfn-quicksight-analysis-linechartaggregatedfieldwells-smallmultiples"></a>
 The small multiples field well of a line chart.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-quicksight-analysis-linechartaggregatedfieldwells-values"></a>
 The value field wells of a line chart. Values are aggregated based on categories.
-
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LegendOptions
-
-LineChartConfiguration
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

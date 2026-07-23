@@ -2,90 +2,65 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormSingleSelectQuestionProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormSingleSelectQuestionProperties
+<a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionproperties"></a>
 
 Information about the options in single select questions.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Automation" : EvaluationFormSingleSelectQuestionAutomation,
-  "DisplayAs" : String,
-  "Options" : [ EvaluationFormSingleSelectQuestionOption, ... ]
+  "[Automation](#cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-automation)" : {{EvaluationFormSingleSelectQuestionAutomation}},
+  "[DisplayAs](#cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-displayas)" : {{String}},
+  "[Options](#cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-options)" : {{[ EvaluationFormSingleSelectQuestionOption, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionproperties-syntax.yaml"></a>
 
-```yaml
-
-  Automation:
-    EvaluationFormSingleSelectQuestionAutomation
-  DisplayAs: String
-  Options:
-    - EvaluationFormSingleSelectQuestionOption
-
+```
+  [Automation](#cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-automation): {{
+    EvaluationFormSingleSelectQuestionAutomation}}
+  [DisplayAs](#cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-displayas): {{String}}
+  [Options](#cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-options): {{
+    - EvaluationFormSingleSelectQuestionOption}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionproperties-properties"></a>
 
-`Automation`
-
+`Automation`  <a name="cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-automation"></a>
 The display mode of the single select question.
+*Required*: No
+*Type*: [EvaluationFormSingleSelectQuestionAutomation](aws-properties-connect-evaluationform-evaluationformsingleselectquestionautomation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EvaluationFormSingleSelectQuestionAutomation](aws-properties-connect-evaluationform-evaluationformsingleselectquestionautomation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayAs`
-
+`DisplayAs`  <a name="cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-displayas"></a>
 The display mode of the single select question.
+*Allowed values*: `DROPDOWN` \| `RADIO`
+*Required*: No
+*Type*: String
+*Allowed values*: `DROPDOWN | RADIO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `DROPDOWN` \| `RADIO`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DROPDOWN | RADIO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Options`
-
+`Options`  <a name="cfn-connect-evaluationform-evaluationformsingleselectquestionproperties-options"></a>
 The answer options of the single select question.
-
-_Minimum_: 2
-
-_Maximum_: 256
-
-_Required_: Yes
-
-_Type_: Array of [EvaluationFormSingleSelectQuestionOption](aws-properties-connect-evaluationform-evaluationformsingleselectquestionoption.md)
-
-_Minimum_: `2`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormSingleSelectQuestionOption
-
-EvaluationFormTargetConfiguration
+*Minimum*: 2
+*Maximum*: 256
+*Required*: Yes
+*Type*: Array of [EvaluationFormSingleSelectQuestionOption](aws-properties-connect-evaluationform-evaluationformsingleselectquestionoption.md)
+*Minimum*: `2`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

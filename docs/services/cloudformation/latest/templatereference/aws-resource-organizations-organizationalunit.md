@@ -2,183 +2,130 @@
 title: "AWS::Organizations::OrganizationalUnit"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Organizations::OrganizationalUnit
+<a name="aws-resource-organizations-organizationalunit"></a>
 
-Creates an organizational unit (OU) within a root or parent OU. An OU is a container
-for accounts that enables you to organize your accounts to apply policies according to
-your business requirements. The number of levels deep that you can nest OUs is dependent
-upon the policy types enabled for that root. For service control policies, the limit is
-five.
+Creates an organizational unit (OU) within a root or parent OU. An OU is a container for accounts that enables you to organize your accounts to apply policies according to your business requirements. The number of levels deep that you can nest OUs is dependent upon the policy types enabled for that root. For service control policies, the limit is five.
 
-For more information about OUs, see [Managing organizational units (OUs)](../../../organizations/latest/userguide/orgs-manage-ous.md) in the
-_AWS Organizations User Guide_.
+For more information about OUs, see [Managing organizational units (OUs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) in the *AWS Organizations User Guide*.
 
-If the request includes tags, then the requester must have the
-`organizations:TagResource` permission.
+If the request includes tags, then the requester must have the `organizations:TagResource` permission.
 
 You can only call this operation from the management account.
 
 ## Syntax
+<a name="aws-resource-organizations-organizationalunit-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-organizations-organizationalunit-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Organizations::OrganizationalUnit",
   "Properties" : {
-      "Name" : String,
-      "ParentId" : String,
-      "Tags" : [ Tag, ... ]
+      "[Name](#cfn-organizations-organizationalunit-name)" : {{String}},
+      "[ParentId](#cfn-organizations-organizationalunit-parentid)" : {{String}},
+      "[Tags](#cfn-organizations-organizationalunit-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-organizations-organizationalunit-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Organizations::OrganizationalUnit
 Properties:
-  Name: String
-  ParentId: String
-  Tags:
-    - Tag
-
+  [Name](#cfn-organizations-organizationalunit-name): {{String}}
+  [ParentId](#cfn-organizations-organizationalunit-parentid): {{String}}
+  [Tags](#cfn-organizations-organizationalunit-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-organizations-organizationalunit-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-organizations-organizationalunit-name"></a>
 The friendly name of this OU.
+The [regex pattern](http://wikipedia.org/wiki/regex) that is used to validate this parameter is a string of any of the characters in the ASCII character range.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The [regex pattern](http://wikipedia.org/wiki/regex)
-that is used to validate this parameter is a string of any of the characters in the ASCII
-character range.
+`ParentId`  <a name="cfn-organizations-organizationalunit-parentid"></a>
+The unique identifier (ID) of the parent root or OU that you want to create the new OU in.
+To update the `ParentId` parameter value, you must first remove all accounts attached to the organizational unit (OU). OUs can't be moved within the organization with accounts still attached.
+The [regex pattern](http://wikipedia.org/wiki/regex) for a parent ID string requires one of the following:
++ **Root** - A string that begins with "r-" followed by from 4 to 32 lowercase letters or digits.
++ **Organizational unit (OU)** - A string that begins with "ou-" followed by from 4 to 32 lowercase letters or digits (the ID of the root that the OU is in). This string is followed by a second "-" dash and from 8 to 32 additional lowercase letters or digits.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParentId`
-
-The unique identifier (ID) of the parent root or OU that you want to create the new OU
-in.
-
-###### Important
-
-To update the `ParentId` parameter value, you must first remove all
-accounts attached to the organizational unit (OU). OUs can't be moved within the
-organization with accounts still attached.
-
-The [regex pattern](http://wikipedia.org/wiki/regex) for a parent ID
-string requires one of the following:
-
-- **Root** \- A string that begins with "r-" followed
-by from 4 to 32 lowercase letters or digits.
-
-- **Organizational unit (OU)** \- A string that begins
-with "ou-" followed by from 4 to 32 lowercase letters or digits (the ID of the
-root that the OU is in). This string is followed by a second "-" dash and from 8
-to 32 additional lowercase letters or digits.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A list of tags that you want to attach to the newly created OU. For each tag in the
-list, you must specify both a tag key and a value. You can set the value to an empty
-string, but you can't set it to `null`. For more information about tagging,
-see [Tagging AWS Organizations\
-resources](../../../organizations/latest/userguide/orgs-tagging.md) in the AWS Organizations User Guide.
-
-###### Note
-
-If any one of the tags is not valid or if you exceed the allowed number of tags
-for an OU, then the entire request fails and the OU is not created.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-organizations-organizationalunit-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-organizations-organizationalunit-tags"></a>
+A list of tags that you want to attach to the newly created OU. For each tag in the list, you must specify both a tag key and a value. You can set the value to an empty string, but you can't set it to `null`. For more information about tagging, see [Tagging AWS Organizations resources](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tagging.html) in the AWS Organizations User Guide.
+If any one of the tags is not valid or if you exceed the allowed number of tags for an OU, then the entire request fails and the OU is not created.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-organizations-organizationalunit-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-organizations-organizationalunit-return-values"></a>
 
 ### Ref
+<a name="aws-resource-organizations-organizationalunit-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `Id`. For example:
-`ou-examplerootid111-exampleouid111`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `Id`. For example: `ou-examplerootid111-exampleouid111`.
 
-###### Note
+**Note**
+When creating child OUs, we recommend that you use the `Ref` function instead of `Fn::GetAtt`. For example, in the properties for the child OU, use `ParentId: !Ref ParentOU`, instead of `ParentId: !GetAtt 'ParentOU.Id'`.
 
-When creating child OUs, we recommend that you use the `Ref` function
-instead of `Fn::GetAtt`. For example, in the properties for the child OU,
-use `ParentId: !Ref ParentOU`, instead of `ParentId: !GetAtt
-                    'ParentOU.Id'`.
-
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-organizations-organizationalunit-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-organizations-organizationalunit-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of this OU. For example:
-`arn:aws:organizations::111111111111:ou/o-exampleorgid/ou-examplerootid111-exampleouid111`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of this OU. For example: `arn:aws:organizations::111111111111:ou/o-exampleorgid/ou-examplerootid111-exampleouid111`.
 
-`Id`
+`Id`  <a name="Id-fn::getatt"></a>
+The unique identifier (ID) associated with this OU. For example: `ou-examplerootid111-exampleouid111`.
 
-The unique identifier (ID) associated with this OU. For example:
-`ou-examplerootid111-exampleouid111`.
-
-`Path`
-
+`Path`  <a name="Path-fn::getatt"></a>
 The path in the organization where this OU exists.
 
 ## Examples
+<a name="aws-resource-organizations-organizationalunit--examples"></a>
 
-- [Specify an OU under the root](#aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root)
-
-- [Specify an OU under a parent OU](#aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU)
+**Topics**
++ [Specify an OU under the root](#aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root)
++ [Specify an OU under a parent OU](#aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU)
 
 ### Specify an OU under the root
+<a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root"></a>
 
-This example illustrates how to specify an OU using
-`AWS::Organizations::OrganizationalUnit` directly under the
-root.
+This example illustrates how to specify an OU using `AWS::Organizations::OrganizationalUnit` directly under the root.
 
 #### JSON
+<a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Organizations Template Example",
@@ -199,13 +146,12 @@ root.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Parameters:
@@ -217,19 +163,17 @@ Resources:
     Properties:
       Name: TestTemplateOU
       ParentId: !Ref OrganizationRootId
-
 ```
 
 ### Specify an OU under a parent OU
+<a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU"></a>
 
-This example illustrates how to specify a nested OU using
-`AWS::Organizations::OrganizationalUnit` by referencing another
-OU.
+This example illustrates how to specify a nested OU using `AWS::Organizations::OrganizationalUnit` by referencing another OU.
 
 #### JSON
+<a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Nested OU Template Example",
@@ -259,13 +203,12 @@ OU.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Nested OU Template Example
 Parameters:
@@ -282,21 +225,11 @@ Resources:
     Properties:
       Name: ChildOU
       ParentId: !Ref ParentOU
-
 ```
 
 ## See also
-
-- [Creating an OU](../../../organizations/latest/userguide/orgs-manage-ous.md#create_ou) in the _AWS Organizations User_
-_Guide_.
-
-- [CreateOrganizationalUnit](../../../../reference/organizations/latest/apireference/api-createorganizationalunit.md) in the _AWS Organizations_
-_API Reference Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Organizations::Organization
-
-Tag
+<a name="aws-resource-organizations-organizationalunit--seealso"></a>
++ [Creating an OU](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html#create_ou) in the *AWS Organizations User Guide*.
++ [CreateOrganizationalUnit](https://docs.aws.amazon.com/organizations/latest/APIReference/API_CreateOrganizationalUnit.html) in the *AWS Organizations API Reference Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,84 +2,61 @@
 title: "AWS::IoTWireless::PartnerAccount SidewalkAccountInfoWithFingerprint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::PartnerAccount SidewalkAccountInfoWithFingerprint
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint"></a>
 
 Information about a Sidewalk account.
 
 ## Syntax
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-syntax.json"></a>
 
-```json
-
+```
 {
-  "AmazonId" : String,
-  "Arn" : String,
-  "Fingerprint" : String
+  "[AmazonId](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-amazonid)" : {{String}},
+  "[Arn](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-arn)" : {{String}},
+  "[Fingerprint](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-fingerprint)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-syntax.yaml"></a>
 
-```yaml
-
-  AmazonId: String
-  Arn: String
-  Fingerprint: String
-
+```
+  [AmazonId](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-amazonid): {{String}}
+  [Arn](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-arn): {{String}}
+  [Fingerprint](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-fingerprint): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-properties"></a>
 
-`AmazonId`
-
+`AmazonId`  <a name="cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-amazonid"></a>
 The Sidewalk Amazon ID.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Arn`
-
+`Arn`  <a name="cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-arn"></a>
 The Amazon Resource Name (ARN) of the resource.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Fingerprint`
-
+`Fingerprint`  <a name="cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-fingerprint"></a>
 The fingerprint of the Sidewalk application server private key.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-fA-F0-9]{64}`
-
-_Minimum_: `64`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SidewalkAccountInfo
-
-SidewalkUpdateAccount
+*Required*: No
+*Type*: String
+*Pattern*: `[a-fA-F0-9]{64}`
+*Minimum*: `64`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

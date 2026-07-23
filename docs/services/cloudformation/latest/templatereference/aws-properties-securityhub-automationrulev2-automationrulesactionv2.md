@@ -2,80 +2,60 @@
 title: "AWS::SecurityHub::AutomationRuleV2 AutomationRulesActionV2"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::AutomationRuleV2 AutomationRulesActionV2
+<a name="aws-properties-securityhub-automationrulev2-automationrulesactionv2"></a>
 
 Allows you to configure automated responses.
 
 ## Syntax
+<a name="aws-properties-securityhub-automationrulev2-automationrulesactionv2-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-automationrulev2-automationrulesactionv2-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExternalIntegrationConfiguration" : ExternalIntegrationConfiguration,
-  "FindingFieldsUpdate" : AutomationRulesFindingFieldsUpdateV2,
-  "Type" : String
+  "[ExternalIntegrationConfiguration](#cfn-securityhub-automationrulev2-automationrulesactionv2-externalintegrationconfiguration)" : {{ExternalIntegrationConfiguration}},
+  "[FindingFieldsUpdate](#cfn-securityhub-automationrulev2-automationrulesactionv2-findingfieldsupdate)" : {{AutomationRulesFindingFieldsUpdateV2}},
+  "[Type](#cfn-securityhub-automationrulev2-automationrulesactionv2-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-automationrulev2-automationrulesactionv2-syntax.yaml"></a>
 
-```yaml
-
-  ExternalIntegrationConfiguration:
-    ExternalIntegrationConfiguration
-  FindingFieldsUpdate:
-    AutomationRulesFindingFieldsUpdateV2
-  Type: String
-
+```
+  [ExternalIntegrationConfiguration](#cfn-securityhub-automationrulev2-automationrulesactionv2-externalintegrationconfiguration): {{
+    ExternalIntegrationConfiguration}}
+  [FindingFieldsUpdate](#cfn-securityhub-automationrulev2-automationrulesactionv2-findingfieldsupdate): {{
+    AutomationRulesFindingFieldsUpdateV2}}
+  [Type](#cfn-securityhub-automationrulev2-automationrulesactionv2-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-automationrulev2-automationrulesactionv2-properties"></a>
 
-`ExternalIntegrationConfiguration`
-
+`ExternalIntegrationConfiguration`  <a name="cfn-securityhub-automationrulev2-automationrulesactionv2-externalintegrationconfiguration"></a>
 The settings for integrating automation rule actions with external systems or service.
+*Required*: No
+*Type*: [ExternalIntegrationConfiguration](aws-properties-securityhub-automationrulev2-externalintegrationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FindingFieldsUpdate`  <a name="cfn-securityhub-automationrulev2-automationrulesactionv2-findingfieldsupdate"></a>
+ Specifies that the automation rule action is an update to a finding field.
+*Required*: No
+*Type*: [AutomationRulesFindingFieldsUpdateV2](aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ExternalIntegrationConfiguration](aws-properties-securityhub-automationrulev2-externalintegrationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FindingFieldsUpdate`
-
-Specifies that the automation rule action is an update to a finding field.
-
-_Required_: No
-
-_Type_: [AutomationRulesFindingFieldsUpdateV2](aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Specifies the type of action that Security Hub CSPM takes when a finding matches the defined criteria of a rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `FINDING_FIELDS_UPDATE | EXTERNAL_INTEGRATION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityHub::AutomationRuleV2
-
-AutomationRulesFindingFieldsUpdateV2
+`Type`  <a name="cfn-securityhub-automationrulev2-automationrulesactionv2-type"></a>
+ Specifies the type of action that Security Hub CSPM takes when a finding matches the defined criteria of a rule.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `FINDING_FIELDS_UPDATE | EXTERNAL_INTEGRATION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

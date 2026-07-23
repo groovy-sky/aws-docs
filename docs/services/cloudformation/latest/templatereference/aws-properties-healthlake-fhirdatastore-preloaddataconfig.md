@@ -2,55 +2,42 @@
 title: "AWS::HealthLake::FHIRDatastore PreloadDataConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::HealthLake::FHIRDatastore PreloadDataConfig
+<a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig"></a>
 
-An optional parameter to preload (import) open source Synthea FHIR data upon creation of
-the data store.
+An optional parameter to preload (import) open source Synthea FHIR data upon creation of the data store.
 
 ## Syntax
+<a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "PreloadDataType" : String
+  "[PreloadDataType](#cfn-healthlake-fhirdatastore-preloaddataconfig-preloaddatatype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig-syntax.yaml"></a>
 
-```yaml
-
-  PreloadDataType: String
-
+```
+  [PreloadDataType](#cfn-healthlake-fhirdatastore-preloaddataconfig-preloaddatatype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig-properties"></a>
 
-`PreloadDataType`
-
+`PreloadDataType`  <a name="cfn-healthlake-fhirdatastore-preloaddataconfig-preloaddatatype"></a>
 The type of preloaded data. Only Synthea preloaded data is supported.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SYNTHEA`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KmsEncryptionConfig
-
-SseConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SYNTHEA`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

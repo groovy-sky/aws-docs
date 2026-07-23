@@ -2,198 +2,154 @@
 title: "AWS::MediaLive::SignalMap"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::SignalMap
+<a name="aws-resource-medialive-signalmap"></a>
 
-The `AWS::MediaLive::SignalMap` resource Property description not available. for MediaLive.
+<a name="aws-resource-medialive-signalmap-description"></a>The `AWS::MediaLive::SignalMap` resource Property description not available. for MediaLive.
 
 ## Syntax
+<a name="aws-resource-medialive-signalmap-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-medialive-signalmap-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaLive::SignalMap",
   "Properties" : {
-      "CloudWatchAlarmTemplateGroupIdentifiers" : [ String, ... ],
-      "Description" : String,
-      "DiscoveryEntryPointArn" : String,
-      "EventBridgeRuleTemplateGroupIdentifiers" : [ String, ... ],
-      "ForceRediscovery" : Boolean,
-      "Name" : String,
-      "Tags" : {Key: Value, ...}
+      "[CloudWatchAlarmTemplateGroupIdentifiers](#cfn-medialive-signalmap-cloudwatchalarmtemplategroupidentifiers)" : {{[ String, ... ]}},
+      "[Description](#cfn-medialive-signalmap-description)" : {{String}},
+      "[DiscoveryEntryPointArn](#cfn-medialive-signalmap-discoveryentrypointarn)" : {{String}},
+      "[EventBridgeRuleTemplateGroupIdentifiers](#cfn-medialive-signalmap-eventbridgeruletemplategroupidentifiers)" : {{[ String, ... ]}},
+      "[ForceRediscovery](#cfn-medialive-signalmap-forcerediscovery)" : {{Boolean}},
+      "[Name](#cfn-medialive-signalmap-name)" : {{String}},
+      "[Tags](#cfn-medialive-signalmap-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-medialive-signalmap-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaLive::SignalMap
 Properties:
-  CloudWatchAlarmTemplateGroupIdentifiers:
-    - String
-  Description: String
-  DiscoveryEntryPointArn: String
-  EventBridgeRuleTemplateGroupIdentifiers:
-    - String
-  ForceRediscovery: Boolean
-  Name: String
-  Tags:
-    Key: Value
-
+  [CloudWatchAlarmTemplateGroupIdentifiers](#cfn-medialive-signalmap-cloudwatchalarmtemplategroupidentifiers): {{
+    - String}}
+  [Description](#cfn-medialive-signalmap-description): {{String}}
+  [DiscoveryEntryPointArn](#cfn-medialive-signalmap-discoveryentrypointarn): {{String}}
+  [EventBridgeRuleTemplateGroupIdentifiers](#cfn-medialive-signalmap-eventbridgeruletemplategroupidentifiers): {{
+    - String}}
+  [ForceRediscovery](#cfn-medialive-signalmap-forcerediscovery): {{Boolean}}
+  [Name](#cfn-medialive-signalmap-name): {{String}}
+  [Tags](#cfn-medialive-signalmap-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-medialive-signalmap-properties"></a>
 
-`CloudWatchAlarmTemplateGroupIdentifiers`
-
+`CloudWatchAlarmTemplateGroupIdentifiers`  <a name="cfn-medialive-signalmap-cloudwatchalarmtemplategroupidentifiers"></a>
 A cloudwatch alarm template group's identifier. Can be either be its id or current name.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-medialive-signalmap-description"></a>
 A resource's optional description.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DiscoveryEntryPointArn`
-
+`DiscoveryEntryPointArn`  <a name="cfn-medialive-signalmap-discoveryentrypointarn"></a>
 A top-level supported Amazon Web Services resource ARN to discover a signal map from.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBridgeRuleTemplateGroupIdentifiers`
-
+`EventBridgeRuleTemplateGroupIdentifiers`  <a name="cfn-medialive-signalmap-eventbridgeruletemplategroupidentifiers"></a>
 An eventbridge rule template group's identifier. Can be either be its id or current name.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForceRediscovery`
-
+`ForceRediscovery`  <a name="cfn-medialive-signalmap-forcerediscovery"></a>
 If true, will force a rediscovery of a signal map if an unchanged discoveryEntryPointArn is provided.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-medialive-signalmap-name"></a>
 A resource's name. Names must be unique within the scope of a resource type in a specific region.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^\s]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^\s]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-medialive-signalmap-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-medialive-signalmap-return-values"></a>
 
 ### Ref
+<a name="aws-resource-medialive-signalmap-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-medialive-signalmap-return-values-fn--getatt"></a>
 
-`Arn`
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+
+####
+<a name="aws-resource-medialive-signalmap-return-values-fn--getatt-fn--getatt"></a>
+
+`Arn`  <a name="Arn-fn::getatt"></a>
 A signal map's ARN (Amazon Resource Name)
 
-`CloudWatchAlarmTemplateGroupIds`
-
+`CloudWatchAlarmTemplateGroupIds`  <a name="CloudWatchAlarmTemplateGroupIds-fn::getatt"></a>
 An alarm template group's id.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date and time of resource creation.
 
-`ErrorMessage`
-
+`ErrorMessage`  <a name="ErrorMessage-fn::getatt"></a>
 Error message associated with a failed creation or failed update attempt of a signal map.
 
-`EventBridgeRuleTemplateGroupIds`
-
+`EventBridgeRuleTemplateGroupIds`  <a name="EventBridgeRuleTemplateGroupIds-fn::getatt"></a>
 An eventbridge rule template group's id.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 A signal map's id.
 
-`Identifier`
-
+`Identifier`  <a name="Identifier-fn::getatt"></a>
 Property description not available.
 
-`LastDiscoveredAt`
-
+`LastDiscoveredAt`  <a name="LastDiscoveredAt-fn::getatt"></a>
 The date and time of latest discovery.
 
-`ModifiedAt`
-
+`ModifiedAt`  <a name="ModifiedAt-fn::getatt"></a>
 The date and time of latest resource modification.
 
-`MonitorChangesPendingDeployment`
-
+`MonitorChangesPendingDeployment`  <a name="MonitorChangesPendingDeployment-fn::getatt"></a>
 If true, there are pending monitor changes for this signal map that can be deployed.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 A signal map's current status, which is dependent on its lifecycle actions or associated jobs.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tags
-
-MediaResource
 
 All content copied from https://docs.aws.amazon.com/.

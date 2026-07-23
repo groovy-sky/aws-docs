@@ -2,57 +2,44 @@
 title: "AWS::Lambda::EventSourceMapping Endpoints"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping Endpoints
+<a name="aws-properties-lambda-eventsourcemapping-endpoints"></a>
 
 The list of bootstrap servers for your Kafka brokers in the following format: `"KafkaBootstrapServers": ["abc.xyz.com:xxxx","abc2.xyz.com:xxxx"]`.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-endpoints-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-endpoints-syntax.json"></a>
 
-```json
-
+```
 {
-  "KafkaBootstrapServers" : [ String, ... ]
+  "[KafkaBootstrapServers](#cfn-lambda-eventsourcemapping-endpoints-kafkabootstrapservers)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-endpoints-syntax.yaml"></a>
 
-```yaml
-
-  KafkaBootstrapServers:
-    - String
-
+```
+  [KafkaBootstrapServers](#cfn-lambda-eventsourcemapping-endpoints-kafkabootstrapservers): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-endpoints-properties"></a>
 
-`KafkaBootstrapServers`
-
+`KafkaBootstrapServers`  <a name="cfn-lambda-eventsourcemapping-endpoints-kafkabootstrapservers"></a>
 The list of bootstrap servers for your Kafka brokers in the following format: `"KafkaBootstrapServers": ["abc.xyz.com:xxxx","abc2.xyz.com:xxxx"]`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `300 | 10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentDBEventSourceConfig
-
-Filter
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `300 | 10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,75 +2,55 @@
 title: "AWS::Deadline::Fleet FleetAttributeCapability"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet FleetAttributeCapability
+<a name="aws-properties-deadline-fleet-fleetattributecapability"></a>
 
 Defines the fleet's capability name, minimum, and maximum.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-fleetattributecapability-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-fleetattributecapability-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Values" : [ String, ... ]
+  "[Name](#cfn-deadline-fleet-fleetattributecapability-name)" : {{String}},
+  "[Values](#cfn-deadline-fleet-fleetattributecapability-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-fleetattributecapability-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Values:
-    - String
-
+```
+  [Name](#cfn-deadline-fleet-fleetattributecapability-name): {{String}}
+  [Values](#cfn-deadline-fleet-fleetattributecapability-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-fleetattributecapability-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-deadline-fleet-fleetattributecapability-name"></a>
 The name of the fleet attribute capability for the worker.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([a-zA-Z][a-zA-Z0-9]{0,63}:)?attr(\.[a-zA-Z][a-zA-Z0-9]{0,63})+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([a-zA-Z][a-zA-Z0-9]{0,63}:)?attr(\.[a-zA-Z][a-zA-Z0-9]{0,63})+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-deadline-fleet-fleetattributecapability-values"></a>
 The number of fleet attribute capabilities.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `100 | 10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FleetAmountCapability
-
-FleetCapabilities
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

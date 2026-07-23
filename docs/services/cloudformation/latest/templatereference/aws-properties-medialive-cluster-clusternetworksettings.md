@@ -2,65 +2,50 @@
 title: "AWS::MediaLive::Cluster ClusterNetworkSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Cluster ClusterNetworkSettings
+<a name="aws-properties-medialive-cluster-clusternetworksettings"></a>
 
-The `ClusterNetworkSettings` property type specifies Property description not available. for an [AWS::MediaLive::Cluster](aws-resource-medialive-cluster.md).
+On-premises settings for the interface network mappings and default output logical interface.
 
 ## Syntax
+<a name="aws-properties-medialive-cluster-clusternetworksettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-medialive-cluster-clusternetworksettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultRoute" : String,
-  "InterfaceMappings" : [ InterfaceMapping, ... ]
+  "[DefaultRoute](#cfn-medialive-cluster-clusternetworksettings-defaultroute)" : {{String}},
+  "[InterfaceMappings](#cfn-medialive-cluster-clusternetworksettings-interfacemappings)" : {{[ InterfaceMapping, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-medialive-cluster-clusternetworksettings-syntax.yaml"></a>
 
-```yaml
-
-  DefaultRoute: String
-  InterfaceMappings:
-    - InterfaceMapping
-
+```
+  [DefaultRoute](#cfn-medialive-cluster-clusternetworksettings-defaultroute): {{String}}
+  [InterfaceMappings](#cfn-medialive-cluster-clusternetworksettings-interfacemappings): {{
+    - InterfaceMapping}}
 ```
 
 ## Properties
+<a name="aws-properties-medialive-cluster-clusternetworksettings-properties"></a>
 
-`DefaultRoute`
+`DefaultRoute`  <a name="cfn-medialive-cluster-clusternetworksettings-defaultroute"></a>
+The default route for the network. This value is used if you don't define a route in the channel output API.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InterfaceMappings`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Array of [InterfaceMapping](aws-properties-medialive-cluster-interfacemapping.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaLive::Cluster
-
-InterfaceMapping
+`InterfaceMappings`  <a name="cfn-medialive-cluster-clusternetworksettings-interfacemappings"></a>
+Network mappings for the cluster.
+*Required*: No
+*Type*: Array of [InterfaceMapping](aws-properties-medialive-cluster-interfacemapping.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

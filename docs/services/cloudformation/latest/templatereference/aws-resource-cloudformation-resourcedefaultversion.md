@@ -2,131 +2,109 @@
 title: "AWS::CloudFormation::ResourceDefaultVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::ResourceDefaultVersion
+<a name="aws-resource-cloudformation-resourcedefaultversion"></a>
 
-The `AWS::CloudFormation::ResourceDefaultVersion` resource specifies the
-default version of a resource. The default version of a resource will be used in CloudFormation operations.
+The `AWS::CloudFormation::ResourceDefaultVersion` resource specifies the default version of a resource. The default version of a resource will be used in CloudFormation operations.
 
-For information about the CloudFormation registry, see [Managing\
-extensions with the CloudFormation registry](../userguide/registry.md) in the
-_CloudFormation User Guide_.
+For information about the CloudFormation registry, see [Managing extensions with the CloudFormation registry](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html) in the *CloudFormation User Guide*.
 
 ## Syntax
+<a name="aws-resource-cloudformation-resourcedefaultversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudformation-resourcedefaultversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFormation::ResourceDefaultVersion",
   "Properties" : {
-      "TypeName" : String,
-      "TypeVersionArn" : String,
-      "VersionId" : String
+      "[TypeName](#cfn-cloudformation-resourcedefaultversion-typename)" : {{String}},
+      "[TypeVersionArn](#cfn-cloudformation-resourcedefaultversion-typeversionarn)" : {{String}},
+      "[VersionId](#cfn-cloudformation-resourcedefaultversion-versionid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudformation-resourcedefaultversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFormation::ResourceDefaultVersion
 Properties:
-  TypeName: String
-  TypeVersionArn: String
-  VersionId: String
-
+  [TypeName](#cfn-cloudformation-resourcedefaultversion-typename): {{String}}
+  [TypeVersionArn](#cfn-cloudformation-resourcedefaultversion-typeversionarn): {{String}}
+  [VersionId](#cfn-cloudformation-resourcedefaultversion-versionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudformation-resourcedefaultversion-properties"></a>
 
-`TypeName`
-
+`TypeName`  <a name="cfn-cloudformation-resourcedefaultversion-typename"></a>
 The name of the resource.
+Conditional: You must specify either `TypeVersionArn`, or `TypeName` and `VersionId`.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `^[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Conditional: You must specify either `TypeVersionArn`, or
-`TypeName` and `VersionId`.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeVersionArn`
-
+`TypeVersionArn`  <a name="cfn-cloudformation-resourcedefaultversion-typeversionarn"></a>
 The Amazon Resource Name (ARN) of the resource version.
+Conditional: You must specify either `TypeVersionArn`, or `TypeName` and `VersionId`.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `^arn:aws[A-Za-z0-9-]{0,64}:cloudformation:[A-Za-z0-9-]{1,64}:([0-9]{12})?:type/resource/.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Conditional: You must specify either `TypeVersionArn`, or
-`TypeName` and `VersionId`.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `^arn:aws[A-Za-z0-9-]{0,64}:cloudformation:[A-Za-z0-9-]{1,64}:([0-9]{12})?:type/resource/.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionId`
-
-The ID of a specific version of the resource. The version ID is the value at the end
-of the Amazon Resource Name (ARN) assigned to the resource version when it's
-registered.
-
-Conditional: You must specify either `TypeVersionArn`, or
-`TypeName` and `VersionId`.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9-]{1,128}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VersionId`  <a name="cfn-cloudformation-resourcedefaultversion-versionid"></a>
+The ID of a specific version of the resource. The version ID is the value at the end of the Amazon Resource Name (ARN) assigned to the resource version when it's registered.
+Conditional: You must specify either `TypeVersionArn`, or `TypeName` and `VersionId`.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `^[A-Za-z0-9-]{1,128}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudformation-resourcedefaultversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudformation-resourcedefaultversion-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the resource type. For example:
 
-`arn:aws:cloudformation:us-west-2:123456789012:type/resource/Sample-CloudFormation-Resource`
+ `arn:aws:cloudformation:us-west-2:123456789012:type/resource/Sample-CloudFormation-Resource`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudformation-resourcedefaultversion-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-cloudformation-resourcedefaultversion-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the resource.
 
 ## Examples
+<a name="aws-resource-cloudformation-resourcedefaultversion--examples"></a>
 
 ### Specifying a resource version and setting it as the default version
+<a name="aws-resource-cloudformation-resourcedefaultversion--examples--Specifying_a_resource_version_and_setting_it_as_the_default_version"></a>
 
-The following example demonstrates how to specify and new resource version,
-and use the `Ref` return value to set that version as the default
-version.
+The following example demonstrates how to specify and new resource version, and use the `Ref` return value to set that version as the default version.
 
 #### JSON
+<a name="aws-resource-cloudformation-resourcedefaultversion--examples--Specifying_a_resource_version_and_setting_it_as_the_default_version--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -150,9 +128,9 @@ version.
 ```
 
 #### YAML
+<a name="aws-resource-cloudformation-resourcedefaultversion--examples--Specifying_a_resource_version_and_setting_it_as_the_default_version--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ResourceVersion:
@@ -165,11 +143,5 @@ Resources:
     Properties:
       TypeVersionArn: !Ref ResourceVersion
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFormation::Publisher
-
-AWS::CloudFormation::ResourceVersion
 
 All content copied from https://docs.aws.amazon.com/.

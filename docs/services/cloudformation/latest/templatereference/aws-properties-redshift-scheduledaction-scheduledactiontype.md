@@ -2,79 +2,60 @@
 title: "AWS::Redshift::ScheduledAction ScheduledActionType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::ScheduledAction ScheduledActionType
+<a name="aws-properties-redshift-scheduledaction-scheduledactiontype"></a>
 
 The action type that specifies an Amazon Redshift API operation that is supported by the Amazon Redshift scheduler.
 
 ## Syntax
+<a name="aws-properties-redshift-scheduledaction-scheduledactiontype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshift-scheduledaction-scheduledactiontype-syntax.json"></a>
 
-```json
-
+```
 {
-  "PauseCluster" : PauseClusterMessage,
-  "ResizeCluster" : ResizeClusterMessage,
-  "ResumeCluster" : ResumeClusterMessage
+  "[PauseCluster](#cfn-redshift-scheduledaction-scheduledactiontype-pausecluster)" : {{PauseClusterMessage}},
+  "[ResizeCluster](#cfn-redshift-scheduledaction-scheduledactiontype-resizecluster)" : {{ResizeClusterMessage}},
+  "[ResumeCluster](#cfn-redshift-scheduledaction-scheduledactiontype-resumecluster)" : {{ResumeClusterMessage}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshift-scheduledaction-scheduledactiontype-syntax.yaml"></a>
 
-```yaml
-
-  PauseCluster:
-    PauseClusterMessage
-  ResizeCluster:
-    ResizeClusterMessage
-  ResumeCluster:
-    ResumeClusterMessage
-
+```
+  [PauseCluster](#cfn-redshift-scheduledaction-scheduledactiontype-pausecluster): {{
+    PauseClusterMessage}}
+  [ResizeCluster](#cfn-redshift-scheduledaction-scheduledactiontype-resizecluster): {{
+    ResizeClusterMessage}}
+  [ResumeCluster](#cfn-redshift-scheduledaction-scheduledactiontype-resumecluster): {{
+    ResumeClusterMessage}}
 ```
 
 ## Properties
+<a name="aws-properties-redshift-scheduledaction-scheduledactiontype-properties"></a>
 
-`PauseCluster`
-
+`PauseCluster`  <a name="cfn-redshift-scheduledaction-scheduledactiontype-pausecluster"></a>
 An action that runs a `PauseCluster` API operation.
+*Required*: No
+*Type*: [PauseClusterMessage](aws-properties-redshift-scheduledaction-pauseclustermessage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PauseClusterMessage](aws-properties-redshift-scheduledaction-pauseclustermessage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResizeCluster`
-
+`ResizeCluster`  <a name="cfn-redshift-scheduledaction-scheduledactiontype-resizecluster"></a>
 An action that runs a `ResizeCluster` API operation.
+*Required*: No
+*Type*: [ResizeClusterMessage](aws-properties-redshift-scheduledaction-resizeclustermessage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ResizeClusterMessage](aws-properties-redshift-scheduledaction-resizeclustermessage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResumeCluster`
-
+`ResumeCluster`  <a name="cfn-redshift-scheduledaction-scheduledactiontype-resumecluster"></a>
 An action that runs a `ResumeCluster` API operation.
-
-_Required_: No
-
-_Type_: [ResumeClusterMessage](aws-properties-redshift-scheduledaction-resumeclustermessage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResumeClusterMessage
-
-Next
+*Required*: No
+*Type*: [ResumeClusterMessage](aws-properties-redshift-scheduledaction-resumeclustermessage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

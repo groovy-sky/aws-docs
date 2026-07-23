@@ -2,57 +2,42 @@
 title: "AWS::Transfer::Connector ConnectorEgressConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Connector ConnectorEgressConfig
+<a name="aws-properties-transfer-connector-connectoregressconfig"></a>
 
-Configuration structure that defines how traffic is routed from the connector to the
-SFTP server. Contains VPC Lattice settings when using VPC\_LATTICE egress type for
-private connectivity through customer VPCs.
+Configuration structure that defines how traffic is routed from the connector to the SFTP server. Contains VPC Lattice settings when using VPC\_LATTICE egress type for private connectivity through customer VPCs.
 
 ## Syntax
+<a name="aws-properties-transfer-connector-connectoregressconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-connector-connectoregressconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "VpcLattice" : ConnectorVpcLatticeEgressConfig
+  "[VpcLattice](#cfn-transfer-connector-connectoregressconfig-vpclattice)" : {{ConnectorVpcLatticeEgressConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-connector-connectoregressconfig-syntax.yaml"></a>
 
-```yaml
-
-  VpcLattice:
-    ConnectorVpcLatticeEgressConfig
-
+```
+  [VpcLattice](#cfn-transfer-connector-connectoregressconfig-vpclattice): {{
+    ConnectorVpcLatticeEgressConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-connector-connectoregressconfig-properties"></a>
 
-`VpcLattice`
-
-VPC\_LATTICE configuration for routing connector traffic through customer VPCs. Enables
-private connectivity to SFTP servers without requiring public internet access or complex
-network configurations.
-
-_Required_: Yes
-
-_Type_: [ConnectorVpcLatticeEgressConfig](aws-properties-transfer-connector-connectorvpclatticeegressconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectorAsyncMdnConfig
-
-ConnectorVpcLatticeEgressConfig
+`VpcLattice`  <a name="cfn-transfer-connector-connectoregressconfig-vpclattice"></a>
+VPC\_LATTICE configuration for routing connector traffic through customer VPCs. Enables private connectivity to SFTP servers without requiring public internet access or complex network configurations.
+*Required*: Yes
+*Type*: [ConnectorVpcLatticeEgressConfig](aws-properties-transfer-connector-connectorvpclatticeegressconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

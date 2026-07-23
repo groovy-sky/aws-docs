@@ -2,138 +2,98 @@
 title: "AWS::QuickSight::Analysis NumberDisplayFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis NumberDisplayFormatConfiguration
+<a name="aws-properties-quicksight-analysis-numberdisplayformatconfiguration"></a>
 
 The options that determine the number display format configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-numberdisplayformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-numberdisplayformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DecimalPlacesConfiguration" : DecimalPlacesConfiguration,
-  "NegativeValueConfiguration" : NegativeValueConfiguration,
-  "NullValueFormatConfiguration" : NullValueFormatConfiguration,
-  "NumberScale" : String,
-  "Prefix" : String,
-  "SeparatorConfiguration" : NumericSeparatorConfiguration,
-  "Suffix" : String
+  "[DecimalPlacesConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-decimalplacesconfiguration)" : {{DecimalPlacesConfiguration}},
+  "[NegativeValueConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-negativevalueconfiguration)" : {{NegativeValueConfiguration}},
+  "[NullValueFormatConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
+  "[NumberScale](#cfn-quicksight-analysis-numberdisplayformatconfiguration-numberscale)" : {{String}},
+  "[Prefix](#cfn-quicksight-analysis-numberdisplayformatconfiguration-prefix)" : {{String}},
+  "[SeparatorConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-separatorconfiguration)" : {{NumericSeparatorConfiguration}},
+  "[Suffix](#cfn-quicksight-analysis-numberdisplayformatconfiguration-suffix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-numberdisplayformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DecimalPlacesConfiguration:
-    DecimalPlacesConfiguration
-  NegativeValueConfiguration:
-    NegativeValueConfiguration
-  NullValueFormatConfiguration:
-    NullValueFormatConfiguration
-  NumberScale: String
-  Prefix: String
-  SeparatorConfiguration:
-    NumericSeparatorConfiguration
-  Suffix: String
-
+```
+  [DecimalPlacesConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-decimalplacesconfiguration): {{
+    DecimalPlacesConfiguration}}
+  [NegativeValueConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-negativevalueconfiguration): {{
+    NegativeValueConfiguration}}
+  [NullValueFormatConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-nullvalueformatconfiguration): {{
+    NullValueFormatConfiguration}}
+  [NumberScale](#cfn-quicksight-analysis-numberdisplayformatconfiguration-numberscale): {{String}}
+  [Prefix](#cfn-quicksight-analysis-numberdisplayformatconfiguration-prefix): {{String}}
+  [SeparatorConfiguration](#cfn-quicksight-analysis-numberdisplayformatconfiguration-separatorconfiguration): {{
+    NumericSeparatorConfiguration}}
+  [Suffix](#cfn-quicksight-analysis-numberdisplayformatconfiguration-suffix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-numberdisplayformatconfiguration-properties"></a>
 
-`DecimalPlacesConfiguration`
-
+`DecimalPlacesConfiguration`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-decimalplacesconfiguration"></a>
 The option that determines the decimal places configuration.
+*Required*: No
+*Type*: [DecimalPlacesConfiguration](aws-properties-quicksight-analysis-decimalplacesconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DecimalPlacesConfiguration](aws-properties-quicksight-analysis-decimalplacesconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NegativeValueConfiguration`
-
+`NegativeValueConfiguration`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-negativevalueconfiguration"></a>
 The options that determine the negative value configuration.
+*Required*: No
+*Type*: [NegativeValueConfiguration](aws-properties-quicksight-analysis-negativevalueconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NegativeValueConfiguration](aws-properties-quicksight-analysis-negativevalueconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullValueFormatConfiguration`
-
+`NullValueFormatConfiguration`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-nullvalueformatconfiguration"></a>
 The options that determine the null value format configuration.
+*Required*: No
+*Type*: [NullValueFormatConfiguration](aws-properties-quicksight-analysis-nullvalueformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NullValueFormatConfiguration](aws-properties-quicksight-analysis-nullvalueformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberScale`
-
+`NumberScale`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-numberscale"></a>
 Determines the number scale value of the number format.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | AUTO | THOUSANDS | MILLIONS | BILLIONS | TRILLIONS | LAKHS | CRORES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | AUTO | THOUSANDS | MILLIONS | BILLIONS | TRILLIONS | LAKHS | CRORES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-prefix"></a>
 Determines the prefix value of the number format.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SeparatorConfiguration`
-
+`SeparatorConfiguration`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-separatorconfiguration"></a>
 The options that determine the numeric separator configuration.
+*Required*: No
+*Type*: [NumericSeparatorConfiguration](aws-properties-quicksight-analysis-numericseparatorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumericSeparatorConfiguration](aws-properties-quicksight-analysis-numericseparatorconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Suffix`
-
+`Suffix`  <a name="cfn-quicksight-analysis-numberdisplayformatconfiguration-suffix"></a>
 Determines the suffix value of the number format.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NullValueFormatConfiguration
-
-NumberFormatConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

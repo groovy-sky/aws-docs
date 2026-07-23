@@ -2,66 +2,49 @@
 title: "AWS::EC2::EC2Fleet MemoryGiBPerVCpuRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet MemoryGiBPerVCpuRequest
+<a name="aws-properties-ec2-ec2fleet-memorygibpervcpurequest"></a>
 
 The minimum and maximum amount of memory per vCPU, in GiB.
 
 ## Syntax
+<a name="aws-properties-ec2-ec2fleet-memorygibpervcpurequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-ec2fleet-memorygibpervcpurequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Number,
-  "Min" : Number
+  "[Max](#cfn-ec2-ec2fleet-memorygibpervcpurequest-max)" : {{Number}},
+  "[Min](#cfn-ec2-ec2fleet-memorygibpervcpurequest-min)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-ec2fleet-memorygibpervcpurequest-syntax.yaml"></a>
 
-```yaml
-
-  Max: Number
-  Min: Number
-
+```
+  [Max](#cfn-ec2-ec2fleet-memorygibpervcpurequest-max): {{Number}}
+  [Min](#cfn-ec2-ec2fleet-memorygibpervcpurequest-min): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-ec2fleet-memorygibpervcpurequest-properties"></a>
 
-`Max`
+`Max`  <a name="cfn-ec2-ec2fleet-memorygibpervcpurequest-max"></a>
+The maximum amount of memory per vCPU, in GiB. To specify no maximum limit, omit this parameter.
+*Required*: No
+*Type*: Number
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The maximum amount of memory per vCPU, in GiB. To specify no maximum limit, omit this
-parameter.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Min`
-
-The minimum amount of memory per vCPU, in GiB. To specify no minimum limit, omit this
-parameter.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MaintenanceStrategies
-
-MemoryMiBRequest
+`Min`  <a name="cfn-ec2-ec2fleet-memorygibpervcpurequest-min"></a>
+The minimum amount of memory per vCPU, in GiB. To specify no minimum limit, omit this parameter.
+*Required*: No
+*Type*: Number
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

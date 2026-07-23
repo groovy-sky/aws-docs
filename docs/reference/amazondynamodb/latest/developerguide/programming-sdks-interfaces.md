@@ -3,46 +3,35 @@ title: "Programmatic interfaces that work with DynamoDB"
 ---
 
 # Programmatic interfaces that work with DynamoDB
+<a name="Programming.SDKs.Interfaces"></a>
 
-Every [AWS SDK](https://aws.amazon.com/tools) provides one or more
-programmatic interfaces for working with Amazon DynamoDB. These interfaces range from
-simple low-level DynamoDB wrappers to object-oriented persistence layers. The available
-interfaces vary depending on the AWS SDK and programming language that you
-use.
+Every [AWS SDK](https://aws.amazon.com/tools) provides one or more programmatic interfaces for working with Amazon DynamoDB. These interfaces range from simple low-level DynamoDB wrappers to object-oriented persistence layers. The available interfaces vary depending on the AWS SDK and programming language that you use.
 
-![Programmatic interfaces available in different AWS SDKs for working with DynamoDB.](https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/SDKSupport.SDKInterfaces.png)
+![Programmatic interfaces available in different AWS SDKs for working with DynamoDB.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SDKSupport.SDKInterfaces.png)
 
-The following section highlights some of the interfaces available, using the
-AWS SDK for Java as an example. (Not all interfaces are available in all AWS
-SDKs.)
+The following section highlights some of the interfaces available, using the AWS SDK for Java as an example. (Not all interfaces are available in all AWS SDKs.)
 
-###### Topics
-
-- [Low-level interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.LowLevel)
-
-- [Document interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.Document)
-
-- [Object persistence interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.Mapper)
+**Topics**
++ [Low-level interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.LowLevel)
++ [Document interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.Document)
++ [Object persistence interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.Mapper)
 
 ## Low-level interfaces that work with DynamoDB
+<a name="Programming.SDKs.Interfaces.LowLevel"></a>
 
-Every language-specific AWS SDK provides a low-level interface for
-Amazon DynamoDB, with methods that closely resemble low-level DynamoDB API
-requests.
+Every language-specific AWS SDK provides a low-level interface for Amazon DynamoDB, with methods that closely resemble low-level DynamoDB API requests.
 
-In some cases, you will need to identify the data types of the attributes
-using [Data type descriptors](../../../../services/dynamodb/latest/developerguide/programming-lowlevelapi.md#Programming.LowLevelAPI.DataTypeDescriptors), such as
-`S` for string or `N` for number.
+In some cases, you will need to identify the data types of the attributes using [Data type descriptors](Programming.LowLevelAPI.md#Programming.LowLevelAPI.DataTypeDescriptors), such as `S` for string or `N` for number.
 
-###### Note
-
-A low-level interface is available in every language-specific AWS
-SDK.
+**Note**
+A low-level interface is available in every language-specific AWS SDK.
 
 The following Java program uses the low-level interface of the AWS SDK for Java.
 
-```java
+### Low-level interface example
+<a name="low-level-example"></a>
 
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -125,35 +114,24 @@ public class GetItem {
         }
     }
 }
-
 ```
 
 ## Document interfaces that work with DynamoDB
+<a name="Programming.SDKs.Interfaces.Document"></a>
 
-Many AWS SDKs provide a document interface, allowing you to perform data
-plane operations (create, read, update, delete) on tables and indexes. With a
-document interface, you do not need to specify [Data type descriptors](../../../../services/dynamodb/latest/developerguide/programming-lowlevelapi.md#Programming.LowLevelAPI.DataTypeDescriptors). The data
-types are implied by the semantics of the data itself. These AWS SDKs also
-provide methods to easily convert JSON documents to and from native Amazon DynamoDB
-data types.
+Many AWS SDKs provide a document interface, allowing you to perform data plane operations (create, read, update, delete) on tables and indexes. With a document interface, you do not need to specify [Data type descriptors](Programming.LowLevelAPI.md#Programming.LowLevelAPI.DataTypeDescriptors). The data types are implied by the semantics of the data itself. These AWS SDKs also provide methods to easily convert JSON documents to and from native Amazon DynamoDB data types.
 
-###### Note
+**Note**
+Document interfaces are available in the AWS SDKs for [ Java](https://aws.amazon.com/sdk-for-java), [.NET](https://aws.amazon.com/sdk-for-net), [Node.js](https://aws.amazon.com/sdk-for-node-js), and [JavaScript SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/).
 
-Document interfaces are available in the AWS SDKs for [Java](https://aws.amazon.com/sdk-for-java), [.NET](https://aws.amazon.com/sdk-for-net), [Node.js](https://aws.amazon.com/sdk-for-node-js), and [JavaScript\
-SDK](../../../awsjavascriptsdk/v3/latest/index.md).
+The following Java program uses the document interface of the AWS SDK for Java. The program creates a `Table` object that represents the `Music` table, and then asks that object to use `GetItem` to retrieve a song. The program then prints the year that the song was released.
 
-The following Java program uses the document interface of the AWS SDK for Java. The
-program creates a `Table` object that represents the
-`Music` table, and then asks that object to use
-`GetItem` to retrieve a song. The program then prints the year
-that the song was released.
+The `software.amazon.dynamodb.document.DynamoDB` class implements the DynamoDB document interface. Note how `DynamoDB` acts as a wrapper around the low-level client (`AmazonDynamoDB`).
 
-The `software.amazon.dynamodb.document.DynamoDB` class
-implements the DynamoDB document interface. Note how `DynamoDB` acts as
-a wrapper around the low-level client ( `AmazonDynamoDB`).
+### Document interface example
+<a name="document-level-example"></a>
 
-```java
-
+```
 package com.amazonaws.codesamples.gsg;
 
 import software.amazon.dynamodb.AmazonDynamoDB;
@@ -179,24 +157,20 @@ public class MusicDocumentDemo {
 
     }
 }
-
 ```
 
 ## Object persistence interfaces that work with DynamoDB
+<a name="Programming.SDKs.Interfaces.Mapper"></a>
 
-Some AWS SDKs provide an object persistence interface where you do not
-directly perform data plane operations. Instead, you create objects that
-represent items in Amazon DynamoDB tables and indexes, and interact only with those
-objects. This allows you to write object-centric code, rather than
-database-centric code.
+Some AWS SDKs provide an object persistence interface where you do not directly perform data plane operations. Instead, you create objects that represent items in Amazon DynamoDB tables and indexes, and interact only with those objects. This allows you to write object-centric code, rather than database-centric code.
 
-###### Note
+**Note**
+Object persistence interfaces are available in the AWS SDKs for Java and .NET. For more information, see [Higher-level programming interfaces for DynamoDB](HigherLevelInterfaces.md) for DynamoDB.
 
-Object persistence interfaces are available in the AWS SDKs for Java and
-.NET. For more information, see [Higher-level programming interfaces for DynamoDB](../../../../services/dynamodb/latest/developerguide/higherlevelinterfaces.md) for DynamoDB.
+### Object persistence interface example
+<a name="mapper-level-example"></a>
 
-```java
-
+```
 import com.example.dynamodb.Customer;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
@@ -206,11 +180,9 @@ import software.amazon.awssdk.enhanced.dynamodb.model.GetItemEnhancedRequest;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
-
 ```
 
-```java
-
+```
 import com.example.dynamodb.Customer;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
@@ -271,13 +243,6 @@ public class EnhancedGetItem {
         return result.getCustName();
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Overview of AWS SDK support for DynamoDB
-
-Higher-level programming interfaces
 
 All content copied from https://docs.aws.amazon.com/.

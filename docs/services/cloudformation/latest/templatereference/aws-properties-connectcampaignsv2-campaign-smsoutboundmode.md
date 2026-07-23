@@ -2,52 +2,41 @@
 title: "AWS::ConnectCampaignsV2::Campaign SmsOutboundMode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign SmsOutboundMode
+<a name="aws-properties-connectcampaignsv2-campaign-smsoutboundmode"></a>
 
 Contains information about the SMS outbound mode.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-smsoutboundmode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-smsoutboundmode-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentlessConfig" : Json
+  "[AgentlessConfig](#cfn-connectcampaignsv2-campaign-smsoutboundmode-agentlessconfig)" : {{Json}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-smsoutboundmode-syntax.yaml"></a>
 
-```yaml
-
-  AgentlessConfig: Json
-
+```
+  [AgentlessConfig](#cfn-connectcampaignsv2-campaign-smsoutboundmode-agentlessconfig): {{Json}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-smsoutboundmode-properties"></a>
 
-`AgentlessConfig`
-
+`AgentlessConfig`  <a name="cfn-connectcampaignsv2-campaign-smsoutboundmode-agentlessconfig"></a>
 Contains agentless outbound mode configuration.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SmsOutboundConfig
-
-Source
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

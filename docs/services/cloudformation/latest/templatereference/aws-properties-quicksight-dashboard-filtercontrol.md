@@ -2,146 +2,107 @@
 title: "AWS::QuickSight::Dashboard FilterControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FilterControl
+<a name="aws-properties-quicksight-dashboard-filtercontrol"></a>
 
 The control of a filter that is used to interact with a dashboard or an analysis.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-filtercontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-filtercontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "CrossSheet" : FilterCrossSheetControl,
-  "DateTimePicker" : FilterDateTimePickerControl,
-  "Dropdown" : FilterDropDownControl,
-  "List" : FilterListControl,
-  "RelativeDateTime" : FilterRelativeDateTimeControl,
-  "Slider" : FilterSliderControl,
-  "TextArea" : FilterTextAreaControl,
-  "TextField" : FilterTextFieldControl
+  "[CrossSheet](#cfn-quicksight-dashboard-filtercontrol-crosssheet)" : {{FilterCrossSheetControl}},
+  "[DateTimePicker](#cfn-quicksight-dashboard-filtercontrol-datetimepicker)" : {{FilterDateTimePickerControl}},
+  "[Dropdown](#cfn-quicksight-dashboard-filtercontrol-dropdown)" : {{FilterDropDownControl}},
+  "[List](#cfn-quicksight-dashboard-filtercontrol-list)" : {{FilterListControl}},
+  "[RelativeDateTime](#cfn-quicksight-dashboard-filtercontrol-relativedatetime)" : {{FilterRelativeDateTimeControl}},
+  "[Slider](#cfn-quicksight-dashboard-filtercontrol-slider)" : {{FilterSliderControl}},
+  "[TextArea](#cfn-quicksight-dashboard-filtercontrol-textarea)" : {{FilterTextAreaControl}},
+  "[TextField](#cfn-quicksight-dashboard-filtercontrol-textfield)" : {{FilterTextFieldControl}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-filtercontrol-syntax.yaml"></a>
 
-```yaml
-
-  CrossSheet:
-    FilterCrossSheetControl
-  DateTimePicker:
-    FilterDateTimePickerControl
-  Dropdown:
-    FilterDropDownControl
-  List:
-    FilterListControl
-  RelativeDateTime:
-    FilterRelativeDateTimeControl
-  Slider:
-    FilterSliderControl
-  TextArea:
-    FilterTextAreaControl
-  TextField:
-    FilterTextFieldControl
-
+```
+  [CrossSheet](#cfn-quicksight-dashboard-filtercontrol-crosssheet): {{
+    FilterCrossSheetControl}}
+  [DateTimePicker](#cfn-quicksight-dashboard-filtercontrol-datetimepicker): {{
+    FilterDateTimePickerControl}}
+  [Dropdown](#cfn-quicksight-dashboard-filtercontrol-dropdown): {{
+    FilterDropDownControl}}
+  [List](#cfn-quicksight-dashboard-filtercontrol-list): {{
+    FilterListControl}}
+  [RelativeDateTime](#cfn-quicksight-dashboard-filtercontrol-relativedatetime): {{
+    FilterRelativeDateTimeControl}}
+  [Slider](#cfn-quicksight-dashboard-filtercontrol-slider): {{
+    FilterSliderControl}}
+  [TextArea](#cfn-quicksight-dashboard-filtercontrol-textarea): {{
+    FilterTextAreaControl}}
+  [TextField](#cfn-quicksight-dashboard-filtercontrol-textfield): {{
+    FilterTextFieldControl}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-filtercontrol-properties"></a>
 
-`CrossSheet`
-
+`CrossSheet`  <a name="cfn-quicksight-dashboard-filtercontrol-crosssheet"></a>
 A control from a filter that is scoped across more than one sheet. This represents your filter control on a sheet
+*Required*: No
+*Type*: [FilterCrossSheetControl](aws-properties-quicksight-dashboard-filtercrosssheetcontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterCrossSheetControl](aws-properties-quicksight-dashboard-filtercrosssheetcontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateTimePicker`
-
+`DateTimePicker`  <a name="cfn-quicksight-dashboard-filtercontrol-datetimepicker"></a>
 A control from a date filter that is used to specify date and time.
+*Required*: No
+*Type*: [FilterDateTimePickerControl](aws-properties-quicksight-dashboard-filterdatetimepickercontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterDateTimePickerControl](aws-properties-quicksight-dashboard-filterdatetimepickercontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dropdown`
-
+`Dropdown`  <a name="cfn-quicksight-dashboard-filtercontrol-dropdown"></a>
 A control to display a dropdown list with buttons that are used to select a single value.
+*Required*: No
+*Type*: [FilterDropDownControl](aws-properties-quicksight-dashboard-filterdropdowncontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterDropDownControl](aws-properties-quicksight-dashboard-filterdropdowncontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`List`
-
+`List`  <a name="cfn-quicksight-dashboard-filtercontrol-list"></a>
 A control to display a list of buttons or boxes. This is used to select either a single value or multiple values.
+*Required*: No
+*Type*: [FilterListControl](aws-properties-quicksight-dashboard-filterlistcontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterListControl](aws-properties-quicksight-dashboard-filterlistcontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelativeDateTime`
-
+`RelativeDateTime`  <a name="cfn-quicksight-dashboard-filtercontrol-relativedatetime"></a>
 A control from a date filter that is used to specify the relative date.
+*Required*: No
+*Type*: [FilterRelativeDateTimeControl](aws-properties-quicksight-dashboard-filterrelativedatetimecontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterRelativeDateTimeControl](aws-properties-quicksight-dashboard-filterrelativedatetimecontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slider`
-
+`Slider`  <a name="cfn-quicksight-dashboard-filtercontrol-slider"></a>
 A control to display a horizontal toggle bar. This is used to change a value by sliding the toggle.
+*Required*: No
+*Type*: [FilterSliderControl](aws-properties-quicksight-dashboard-filterslidercontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterSliderControl](aws-properties-quicksight-dashboard-filterslidercontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextArea`
-
+`TextArea`  <a name="cfn-quicksight-dashboard-filtercontrol-textarea"></a>
 A control to display a text box that is used to enter multiple entries.
+*Required*: No
+*Type*: [FilterTextAreaControl](aws-properties-quicksight-dashboard-filtertextareacontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterTextAreaControl](aws-properties-quicksight-dashboard-filtertextareacontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextField`
-
+`TextField`  <a name="cfn-quicksight-dashboard-filtercontrol-textfield"></a>
 A control to display a text box that is used to enter a single entry.
-
-_Required_: No
-
-_Type_: [FilterTextFieldControl](aws-properties-quicksight-dashboard-filtertextfieldcontrol.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Filter
-
-FilterCrossSheetControl
+*Required*: No
+*Type*: [FilterTextFieldControl](aws-properties-quicksight-dashboard-filtertextfieldcontrol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

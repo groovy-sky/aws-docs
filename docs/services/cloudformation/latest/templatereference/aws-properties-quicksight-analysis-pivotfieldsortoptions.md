@@ -2,69 +2,52 @@
 title: "AWS::QuickSight::Analysis PivotFieldSortOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PivotFieldSortOptions
+<a name="aws-properties-quicksight-analysis-pivotfieldsortoptions"></a>
 
 The field sort options for a pivot table sort configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pivotfieldsortoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pivotfieldsortoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String,
-  "SortBy" : PivotTableSortBy
+  "[FieldId](#cfn-quicksight-analysis-pivotfieldsortoptions-fieldid)" : {{String}},
+  "[SortBy](#cfn-quicksight-analysis-pivotfieldsortoptions-sortby)" : {{PivotTableSortBy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pivotfieldsortoptions-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-  SortBy:
-    PivotTableSortBy
-
+```
+  [FieldId](#cfn-quicksight-analysis-pivotfieldsortoptions-fieldid): {{String}}
+  [SortBy](#cfn-quicksight-analysis-pivotfieldsortoptions-sortby): {{
+    PivotTableSortBy}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pivotfieldsortoptions-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-analysis-pivotfieldsortoptions-fieldid"></a>
 The field ID for the field sort options.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortBy`
-
+`SortBy`  <a name="cfn-quicksight-analysis-pivotfieldsortoptions-sortby"></a>
 The sort by field for the field sort options.
-
-_Required_: Yes
-
-_Type_: [PivotTableSortBy](aws-properties-quicksight-analysis-pivottablesortby.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PieChartVisual
-
-PivotTableAggregatedFieldWells
+*Required*: Yes
+*Type*: [PivotTableSortBy](aws-properties-quicksight-analysis-pivottablesortby.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

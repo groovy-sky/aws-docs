@@ -2,76 +2,55 @@
 title: "AWS::Bedrock::IntelligentPromptRouter Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::IntelligentPromptRouter Tag
+<a name="aws-properties-bedrock-intelligentpromptrouter-tag"></a>
 
 An array of key-value pairs to apply to this resource as tags. You can use tags to categorize and manage your AWS resources.
 
 ## Syntax
+<a name="aws-properties-bedrock-intelligentpromptrouter-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-intelligentpromptrouter-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-bedrock-intelligentpromptrouter-tag-key)" : {{String}},
+  "[Value](#cfn-bedrock-intelligentpromptrouter-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-intelligentpromptrouter-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-bedrock-intelligentpromptrouter-tag-key): {{String}}
+  [Value](#cfn-bedrock-intelligentpromptrouter-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-intelligentpromptrouter-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-bedrock-intelligentpromptrouter-tag-key"></a>
 The tag's key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-bedrock-intelligentpromptrouter-tag-value"></a>
 The value associated with a tag.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RoutingCriteria
-
-AWS::Bedrock::KnowledgeBase
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

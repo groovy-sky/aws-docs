@@ -2,84 +2,61 @@
 title: "AWS::AppFlow::Flow SAPODataSourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow SAPODataSourceProperties
+<a name="aws-properties-appflow-flow-sapodatasourceproperties"></a>
 
-The properties that are applied when using SAPOData as a flow source.
+ The properties that are applied when using SAPOData as a flow source.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-sapodatasourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-sapodatasourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "ObjectPath" : String,
-  "paginationConfig" : SAPODataPaginationConfig,
-  "parallelismConfig" : SAPODataParallelismConfig
+  "[ObjectPath](#cfn-appflow-flow-sapodatasourceproperties-objectpath)" : {{String}},
+  "[paginationConfig](#cfn-appflow-flow-sapodatasourceproperties-paginationconfig)" : {{SAPODataPaginationConfig}},
+  "[parallelismConfig](#cfn-appflow-flow-sapodatasourceproperties-parallelismconfig)" : {{SAPODataParallelismConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-sapodatasourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  ObjectPath: String
-  paginationConfig:
-    SAPODataPaginationConfig
-  parallelismConfig:
-    SAPODataParallelismConfig
-
+```
+  [ObjectPath](#cfn-appflow-flow-sapodatasourceproperties-objectpath): {{String}}
+  [paginationConfig](#cfn-appflow-flow-sapodatasourceproperties-paginationconfig): {{
+    SAPODataPaginationConfig}}
+  [parallelismConfig](#cfn-appflow-flow-sapodatasourceproperties-parallelismconfig): {{
+    SAPODataParallelismConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-sapodatasourceproperties-properties"></a>
 
-`ObjectPath`
+`ObjectPath`  <a name="cfn-appflow-flow-sapodatasourceproperties-objectpath"></a>
+ The object path specified in the SAPOData flow source.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The object path specified in the SAPOData flow source.
+`paginationConfig`  <a name="cfn-appflow-flow-sapodatasourceproperties-paginationconfig"></a>
+Sets the page size for each concurrent process that transfers OData records from your SAP instance.
+*Required*: No
+*Type*: [SAPODataPaginationConfig](aws-properties-appflow-flow-sapodatapaginationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`paginationConfig`
-
-Sets the page size for each concurrent process that transfers OData records from your SAP
-instance.
-
-_Required_: No
-
-_Type_: [SAPODataPaginationConfig](aws-properties-appflow-flow-sapodatapaginationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`parallelismConfig`
-
-Sets the number of concurrent processes that transfers OData records from your SAP
-instance.
-
-_Required_: No
-
-_Type_: [SAPODataParallelismConfig](aws-properties-appflow-flow-sapodataparallelismconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SAPODataParallelismConfig
-
-ScheduledTriggerProperties
+`parallelismConfig`  <a name="cfn-appflow-flow-sapodatasourceproperties-parallelismconfig"></a>
+Sets the number of concurrent processes that transfers OData records from your SAP instance.
+*Required*: No
+*Type*: [SAPODataParallelismConfig](aws-properties-appflow-flow-sapodataparallelismconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

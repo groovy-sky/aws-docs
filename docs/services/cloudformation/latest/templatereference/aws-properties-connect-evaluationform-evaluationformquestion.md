@@ -2,170 +2,121 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormQuestion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormQuestion
+<a name="aws-properties-connect-evaluationform-evaluationformquestion"></a>
 
 Information about a question from an evaluation form.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformquestion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformquestion-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enablement" : EvaluationFormItemEnablementConfiguration,
-  "Instructions" : String,
-  "NotApplicableEnabled" : Boolean,
-  "QuestionType" : String,
-  "QuestionTypeProperties" : EvaluationFormQuestionTypeProperties,
-  "RefId" : String,
-  "Title" : String,
-  "Weight" : Number
+  "[Enablement](#cfn-connect-evaluationform-evaluationformquestion-enablement)" : {{EvaluationFormItemEnablementConfiguration}},
+  "[Instructions](#cfn-connect-evaluationform-evaluationformquestion-instructions)" : {{String}},
+  "[NotApplicableEnabled](#cfn-connect-evaluationform-evaluationformquestion-notapplicableenabled)" : {{Boolean}},
+  "[QuestionType](#cfn-connect-evaluationform-evaluationformquestion-questiontype)" : {{String}},
+  "[QuestionTypeProperties](#cfn-connect-evaluationform-evaluationformquestion-questiontypeproperties)" : {{EvaluationFormQuestionTypeProperties}},
+  "[RefId](#cfn-connect-evaluationform-evaluationformquestion-refid)" : {{String}},
+  "[ScoringConfiguration](#cfn-connect-evaluationform-evaluationformquestion-scoringconfiguration)" : {{EvaluationFormQuestionScoringConfiguration}},
+  "[Title](#cfn-connect-evaluationform-evaluationformquestion-title)" : {{String}},
+  "[Weight](#cfn-connect-evaluationform-evaluationformquestion-weight)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformquestion-syntax.yaml"></a>
 
-```yaml
-
-  Enablement:
-    EvaluationFormItemEnablementConfiguration
-  Instructions: String
-  NotApplicableEnabled: Boolean
-  QuestionType: String
-  QuestionTypeProperties:
-    EvaluationFormQuestionTypeProperties
-  RefId: String
-  Title: String
-  Weight: Number
-
+```
+  [Enablement](#cfn-connect-evaluationform-evaluationformquestion-enablement): {{
+    EvaluationFormItemEnablementConfiguration}}
+  [Instructions](#cfn-connect-evaluationform-evaluationformquestion-instructions): {{String}}
+  [NotApplicableEnabled](#cfn-connect-evaluationform-evaluationformquestion-notapplicableenabled): {{Boolean}}
+  [QuestionType](#cfn-connect-evaluationform-evaluationformquestion-questiontype): {{String}}
+  [QuestionTypeProperties](#cfn-connect-evaluationform-evaluationformquestion-questiontypeproperties): {{
+    EvaluationFormQuestionTypeProperties}}
+  [RefId](#cfn-connect-evaluationform-evaluationformquestion-refid): {{String}}
+  [ScoringConfiguration](#cfn-connect-evaluationform-evaluationformquestion-scoringconfiguration): {{
+    EvaluationFormQuestionScoringConfiguration}}
+  [Title](#cfn-connect-evaluationform-evaluationformquestion-title): {{String}}
+  [Weight](#cfn-connect-evaluationform-evaluationformquestion-weight): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformquestion-properties"></a>
 
-`Enablement`
-
+`Enablement`  <a name="cfn-connect-evaluationform-evaluationformquestion-enablement"></a>
 A question conditional enablement.
+*Required*: No
+*Type*: [EvaluationFormItemEnablementConfiguration](aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EvaluationFormItemEnablementConfiguration](aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Instructions`
-
+`Instructions`  <a name="cfn-connect-evaluationform-evaluationformquestion-instructions"></a>
 The instructions of the section.
+*Length Constraints*: Minimum length of 0. Maximum length of 1024.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Length Constraints_: Minimum length of 0. Maximum length of
-1024.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotApplicableEnabled`
-
+`NotApplicableEnabled`  <a name="cfn-connect-evaluationform-evaluationformquestion-notapplicableenabled"></a>
 The flag to enable not applicable answers to the question.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QuestionType`
-
+`QuestionType`  <a name="cfn-connect-evaluationform-evaluationformquestion-questiontype"></a>
 The type of the question.
+*Allowed values*: `NUMERIC` \| `SINGLESELECT` \| `TEXT`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NUMERIC | SINGLESELECT | TEXT | MULTISELECT | DATETIME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `NUMERIC` \| `SINGLESELECT`
-\| `TEXT`
+`QuestionTypeProperties`  <a name="cfn-connect-evaluationform-evaluationformquestion-questiontypeproperties"></a>
+The properties of the type of question. Text questions do not have to define question type properties.
+*Required*: No
+*Type*: [EvaluationFormQuestionTypeProperties](aws-properties-connect-evaluationform-evaluationformquestiontypeproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`RefId`  <a name="cfn-connect-evaluationform-evaluationformquestion-refid"></a>
+The identifier of the question. An identifier must be unique within the evaluation form.
+*Length Constraints*: Minimum length of 1. Maximum length of 40.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9._-]{1,40}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ScoringConfiguration`  <a name="cfn-connect-evaluationform-evaluationformquestion-scoringconfiguration"></a>
+The scoring configuration of the question.
+*Required*: No
+*Type*: [EvaluationFormQuestionScoringConfiguration](aws-properties-connect-evaluationform-evaluationformquestionscoringconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `NUMERIC | SINGLESELECT | TEXT | MULTISELECT | DATETIME`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QuestionTypeProperties`
-
-The properties of the type of question. Text questions do not have to define question
-type properties.
-
-_Required_: No
-
-_Type_: [EvaluationFormQuestionTypeProperties](aws-properties-connect-evaluationform-evaluationformquestiontypeproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefId`
-
-The identifier of the question. An identifier must be unique within the evaluation
-form.
-
-_Length Constraints_: Minimum length of 1. Maximum length of
-40.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9._-]{1,40}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-connect-evaluationform-evaluationformquestion-title"></a>
 The title of the question.
+*Length Constraints*: Minimum length of 1. Maximum length of 350.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `350`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Length Constraints_: Minimum length of 1. Maximum length of
-350.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `350`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
+`Weight`  <a name="cfn-connect-evaluationform-evaluationformquestion-weight"></a>
 The scoring weight of the section.
-
-_Minimum_: 0
-
-_Maximum_: 100
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormNumericQuestionProperties
-
-EvaluationFormQuestionAutomationAnswerSource
+*Minimum*: 0
+*Maximum*: 100
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

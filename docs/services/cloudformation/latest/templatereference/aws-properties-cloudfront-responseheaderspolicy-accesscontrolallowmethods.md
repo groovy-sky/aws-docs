@@ -2,76 +2,53 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy AccessControlAllowMethods"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy AccessControlAllowMethods
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowmethods"></a>
 
-A list of HTTP methods that CloudFront includes as values for the
-`Access-Control-Allow-Methods` HTTP response header.
+A list of HTTP methods that CloudFront includes as values for the `Access-Control-Allow-Methods` HTTP response header.
 
-For more information about the `Access-Control-Allow-Methods` HTTP response
-header, see [Access-Control-Allow-Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods) in the MDN Web Docs.
+For more information about the `Access-Control-Allow-Methods` HTTP response header, see [Access-Control-Allow-Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods) in the MDN Web Docs.
 
 ## Syntax
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowmethods-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowmethods-syntax.json"></a>
 
-```json
-
+```
 {
-  "Items" : [ String, ... ]
+  "[Items](#cfn-cloudfront-responseheaderspolicy-accesscontrolallowmethods-items)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowmethods-syntax.yaml"></a>
 
-```yaml
-
-  Items:
-    - String
-
+```
+  [Items](#cfn-cloudfront-responseheaderspolicy-accesscontrolallowmethods-items): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowmethods-properties"></a>
 
-`Items`
-
+`Items`  <a name="cfn-cloudfront-responseheaderspolicy-accesscontrolallowmethods-items"></a>
 The list of HTTP methods. Valid values are:
-
-- `GET`
-
-- `DELETE`
-
-- `HEAD`
-
-- `OPTIONS`
-
-- `PATCH`
-
-- `POST`
-
-- `PUT`
-
-- `ALL`
-
-`ALL` is a special value that includes all of the listed HTTP
-methods.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessControlAllowHeaders
-
-AccessControlAllowOrigins
++  `GET`
++  `DELETE`
++  `HEAD`
++  `OPTIONS`
++  `PATCH`
++  `POST`
++  `PUT`
++  `ALL`
+`ALL` is a special value that includes all of the listed HTTP methods.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

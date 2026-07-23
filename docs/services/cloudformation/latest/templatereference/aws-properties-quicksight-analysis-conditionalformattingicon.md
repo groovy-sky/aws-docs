@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Analysis ConditionalFormattingIcon"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ConditionalFormattingIcon
+<a name="aws-properties-quicksight-analysis-conditionalformattingicon"></a>
 
 The formatting configuration for the icon.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-conditionalformattingicon-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-conditionalformattingicon-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomCondition" : ConditionalFormattingCustomIconCondition,
-  "IconSet" : ConditionalFormattingIconSet
+  "[CustomCondition](#cfn-quicksight-analysis-conditionalformattingicon-customcondition)" : {{ConditionalFormattingCustomIconCondition}},
+  "[IconSet](#cfn-quicksight-analysis-conditionalformattingicon-iconset)" : {{ConditionalFormattingIconSet}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-conditionalformattingicon-syntax.yaml"></a>
 
-```yaml
-
-  CustomCondition:
-    ConditionalFormattingCustomIconCondition
-  IconSet:
-    ConditionalFormattingIconSet
-
+```
+  [CustomCondition](#cfn-quicksight-analysis-conditionalformattingicon-customcondition): {{
+    ConditionalFormattingCustomIconCondition}}
+  [IconSet](#cfn-quicksight-analysis-conditionalformattingicon-iconset): {{
+    ConditionalFormattingIconSet}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-conditionalformattingicon-properties"></a>
 
-`CustomCondition`
-
+`CustomCondition`  <a name="cfn-quicksight-analysis-conditionalformattingicon-customcondition"></a>
 Determines the custom condition for an icon set.
+*Required*: No
+*Type*: [ConditionalFormattingCustomIconCondition](aws-properties-quicksight-analysis-conditionalformattingcustomiconcondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConditionalFormattingCustomIconCondition](aws-properties-quicksight-analysis-conditionalformattingcustomiconcondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IconSet`
-
+`IconSet`  <a name="cfn-quicksight-analysis-conditionalformattingicon-iconset"></a>
 Formatting configuration for icon set.
-
-_Required_: No
-
-_Type_: [ConditionalFormattingIconSet](aws-properties-quicksight-analysis-conditionalformattingiconset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionalFormattingGradientColor
-
-ConditionalFormattingIconDisplayConfiguration
+*Required*: No
+*Type*: [ConditionalFormattingIconSet](aws-properties-quicksight-analysis-conditionalformattingiconset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

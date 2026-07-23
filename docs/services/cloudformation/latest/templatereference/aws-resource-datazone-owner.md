@@ -2,123 +2,99 @@
 title: "AWS::DataZone::Owner"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Owner
+<a name="aws-resource-datazone-owner"></a>
 
 The owner that you want to add to the entity.
 
 ## Syntax
+<a name="aws-resource-datazone-owner-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datazone-owner-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataZone::Owner",
   "Properties" : {
-      "DomainIdentifier" : String,
-      "EntityIdentifier" : String,
-      "EntityType" : String,
-      "Owner" : OwnerProperties
+      "[DomainIdentifier](#cfn-datazone-owner-domainidentifier)" : {{String}},
+      "[EntityIdentifier](#cfn-datazone-owner-entityidentifier)" : {{String}},
+      "[EntityType](#cfn-datazone-owner-entitytype)" : {{String}},
+      "[Owner](#cfn-datazone-owner-owner)" : {{OwnerProperties}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datazone-owner-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataZone::Owner
 Properties:
-  DomainIdentifier: String
-  EntityIdentifier: String
-  EntityType: String
-  Owner:
-    OwnerProperties
-
+  [DomainIdentifier](#cfn-datazone-owner-domainidentifier): {{String}}
+  [EntityIdentifier](#cfn-datazone-owner-entityidentifier): {{String}}
+  [EntityType](#cfn-datazone-owner-entitytype): {{String}}
+  [Owner](#cfn-datazone-owner-owner): {{
+    OwnerProperties}}
 ```
 
 ## Properties
+<a name="aws-resource-datazone-owner-properties"></a>
 
-`DomainIdentifier`
-
+`DomainIdentifier`  <a name="cfn-datazone-owner-domainidentifier"></a>
 The ID of the domain in which you want to add the entity owner.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^dzd[-_][a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^dzd[-_][a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EntityIdentifier`
-
+`EntityIdentifier`  <a name="cfn-datazone-owner-entityidentifier"></a>
 The ID of the entity to which you want to add an owner.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EntityType`
-
+`EntityType`  <a name="cfn-datazone-owner-entitytype"></a>
 The type of an entity.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DOMAIN_UNIT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DOMAIN_UNIT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Owner`
-
+`Owner`  <a name="cfn-datazone-owner-owner"></a>
 The owner that you want to add to the entity.
-
-_Required_: Yes
-
-_Type_: [OwnerProperties](aws-properties-datazone-owner-ownerproperties.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: [OwnerProperties](aws-properties-datazone-owner-ownerproperties.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-datazone-owner-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datazone-owner-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId`, `EntityType`,
-`EntityId`, `OwnerType`, and `OwnerId`, which uniquely identifies an owner. For
-example: `{ "Ref": "MyOwner" }` for the resource with the logical ID MyOwner, Ref returns
-`DomainId|EntityType|EntityId|OwnerType|OwnerId`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId`, `EntityType`, `EntityId`, `OwnerType`, and `OwnerId`, which uniquely identifies an owner. For example: `{ "Ref": "MyOwner" }` for the resource with the logical ID MyOwner, Ref returns `DomainId|EntityType|EntityId|OwnerType|OwnerId`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datazone-owner-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`OwnerIdentifier`
+####
+<a name="aws-resource-datazone-owner-return-values-fn--getatt-fn--getatt"></a>
 
+`OwnerIdentifier`  <a name="OwnerIdentifier-fn::getatt"></a>
 The ID of the entity to which you want to add an owner.
 
-`OwnerType`
-
+`OwnerType`  <a name="OwnerType-fn::getatt"></a>
 The owner that you want to add to the entity.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::GroupProfile
-
-OwnerGroupProperties
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,54 @@
 title: "AWS::Bedrock::FlowAlias FlowAliasConcurrencyConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::FlowAlias FlowAliasConcurrencyConfiguration
+<a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration"></a>
 
 Determines how multiple nodes in a flow can run in parallel. Running nodes concurrently can improve your flow's performance.
 
 ## Syntax
+<a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxConcurrency" : Number,
-  "Type" : String
+  "[MaxConcurrency](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-maxconcurrency)" : {{Number}},
+  "[Type](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxConcurrency: Number
-  Type: String
-
+```
+  [MaxConcurrency](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-maxconcurrency): {{Number}}
+  [Type](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration-properties"></a>
 
-`MaxConcurrency`
-
+`MaxConcurrency`  <a name="cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-maxconcurrency"></a>
 The maximum number of nodes that can be executed concurrently in the flow.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-type"></a>
 The type of concurrency to use for parallel node execution. Specify one of the following options:
-
-- `Automatic` \- Amazon Bedrock determines which nodes can be executed in parallel based on the flow definition and its dependencies.
-
-- `Manual` \- You specify which nodes can be executed in parallel.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Automatic | Manual`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::FlowAlias
-
-FlowAliasRoutingConfigurationListItem
++ `Automatic` - Amazon Bedrock determines which nodes can be executed in parallel based on the flow definition and its dependencies.
++ `Manual` - You specify which nodes can be executed in parallel.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Automatic | Manual`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

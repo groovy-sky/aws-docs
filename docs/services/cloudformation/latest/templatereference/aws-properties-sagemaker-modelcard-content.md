@@ -2,131 +2,96 @@
 title: "AWS::SageMaker::ModelCard Content"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard Content
+<a name="aws-properties-sagemaker-modelcard-content"></a>
 
-The content of the model card. It follows the [model card json schema](../../../sagemaker/latest/dg/model-cards.md#model-cards-json-schema).
+The content of the model card. It follows the [model card json schema](https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html#model-cards-json-schema).
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelcard-content-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelcard-content-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalInformation" : AdditionalInformation,
-  "BusinessDetails" : BusinessDetails,
-  "EvaluationDetails" : [ EvaluationDetail, ... ],
-  "IntendedUses" : IntendedUses,
-  "ModelOverview" : ModelOverview,
-  "ModelPackageDetails" : ModelPackageDetails,
-  "TrainingDetails" : TrainingDetails
+  "[AdditionalInformation](#cfn-sagemaker-modelcard-content-additionalinformation)" : {{AdditionalInformation}},
+  "[BusinessDetails](#cfn-sagemaker-modelcard-content-businessdetails)" : {{BusinessDetails}},
+  "[EvaluationDetails](#cfn-sagemaker-modelcard-content-evaluationdetails)" : {{[ EvaluationDetail, ... ]}},
+  "[IntendedUses](#cfn-sagemaker-modelcard-content-intendeduses)" : {{IntendedUses}},
+  "[ModelOverview](#cfn-sagemaker-modelcard-content-modeloverview)" : {{ModelOverview}},
+  "[ModelPackageDetails](#cfn-sagemaker-modelcard-content-modelpackagedetails)" : {{ModelPackageDetails}},
+  "[TrainingDetails](#cfn-sagemaker-modelcard-content-trainingdetails)" : {{TrainingDetails}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelcard-content-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalInformation:
-    AdditionalInformation
-  BusinessDetails:
-    BusinessDetails
-  EvaluationDetails:
-    - EvaluationDetail
-  IntendedUses:
-    IntendedUses
-  ModelOverview:
-    ModelOverview
-  ModelPackageDetails:
-    ModelPackageDetails
-  TrainingDetails:
-    TrainingDetails
-
+```
+  [AdditionalInformation](#cfn-sagemaker-modelcard-content-additionalinformation): {{
+    AdditionalInformation}}
+  [BusinessDetails](#cfn-sagemaker-modelcard-content-businessdetails): {{
+    BusinessDetails}}
+  [EvaluationDetails](#cfn-sagemaker-modelcard-content-evaluationdetails): {{
+    - EvaluationDetail}}
+  [IntendedUses](#cfn-sagemaker-modelcard-content-intendeduses): {{
+    IntendedUses}}
+  [ModelOverview](#cfn-sagemaker-modelcard-content-modeloverview): {{
+    ModelOverview}}
+  [ModelPackageDetails](#cfn-sagemaker-modelcard-content-modelpackagedetails): {{
+    ModelPackageDetails}}
+  [TrainingDetails](#cfn-sagemaker-modelcard-content-trainingdetails): {{
+    TrainingDetails}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelcard-content-properties"></a>
 
-`AdditionalInformation`
-
+`AdditionalInformation`  <a name="cfn-sagemaker-modelcard-content-additionalinformation"></a>
 Additional information about the model.
+*Required*: No
+*Type*: [AdditionalInformation](aws-properties-sagemaker-modelcard-additionalinformation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AdditionalInformation](aws-properties-sagemaker-modelcard-additionalinformation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BusinessDetails`
-
+`BusinessDetails`  <a name="cfn-sagemaker-modelcard-content-businessdetails"></a>
 Information about how the model supports business goals.
+*Required*: No
+*Type*: [BusinessDetails](aws-properties-sagemaker-modelcard-businessdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BusinessDetails](aws-properties-sagemaker-modelcard-businessdetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EvaluationDetails`
-
+`EvaluationDetails`  <a name="cfn-sagemaker-modelcard-content-evaluationdetails"></a>
 An overview about the model's evaluation.
+*Required*: No
+*Type*: Array of [EvaluationDetail](aws-properties-sagemaker-modelcard-evaluationdetail.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EvaluationDetail](aws-properties-sagemaker-modelcard-evaluationdetail.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntendedUses`
-
+`IntendedUses`  <a name="cfn-sagemaker-modelcard-content-intendeduses"></a>
 The intended usage of the model.
+*Required*: No
+*Type*: [IntendedUses](aws-properties-sagemaker-modelcard-intendeduses.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IntendedUses](aws-properties-sagemaker-modelcard-intendeduses.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelOverview`
-
+`ModelOverview`  <a name="cfn-sagemaker-modelcard-content-modeloverview"></a>
 An overview about the model
+*Required*: No
+*Type*: [ModelOverview](aws-properties-sagemaker-modelcard-modeloverview.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ModelOverview](aws-properties-sagemaker-modelcard-modeloverview.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelPackageDetails`
-
+`ModelPackageDetails`  <a name="cfn-sagemaker-modelcard-content-modelpackagedetails"></a>
 Details about the model package.
+*Required*: No
+*Type*: [ModelPackageDetails](aws-properties-sagemaker-modelcard-modelpackagedetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ModelPackageDetails](aws-properties-sagemaker-modelcard-modelpackagedetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrainingDetails`
-
+`TrainingDetails`  <a name="cfn-sagemaker-modelcard-content-trainingdetails"></a>
 An overview about model training.
-
-_Required_: No
-
-_Type_: [TrainingDetails](aws-properties-sagemaker-modelcard-trainingdetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Container
-
-EvaluationDetail
+*Required*: No
+*Type*: [TrainingDetails](aws-properties-sagemaker-modelcard-trainingdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

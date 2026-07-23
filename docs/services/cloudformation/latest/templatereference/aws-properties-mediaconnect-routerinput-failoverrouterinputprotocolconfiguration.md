@@ -2,92 +2,69 @@
 title: "AWS::MediaConnect::RouterInput FailoverRouterInputProtocolConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput FailoverRouterInputProtocolConfiguration
+<a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration"></a>
 
 Protocol configuration settings for failover router inputs.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Rist" : RistRouterInputConfiguration,
-  "Rtp" : RtpRouterInputConfiguration,
-  "SrtCaller" : SrtCallerRouterInputConfiguration,
-  "SrtListener" : SrtListenerRouterInputConfiguration
+  "[Rist](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rist)" : {{RistRouterInputConfiguration}},
+  "[Rtp](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rtp)" : {{RtpRouterInputConfiguration}},
+  "[SrtCaller](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-srtcaller)" : {{SrtCallerRouterInputConfiguration}},
+  "[SrtListener](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-srtlistener)" : {{SrtListenerRouterInputConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Rist:
-    RistRouterInputConfiguration
-  Rtp:
-    RtpRouterInputConfiguration
-  SrtCaller:
-    SrtCallerRouterInputConfiguration
-  SrtListener:
-    SrtListenerRouterInputConfiguration
-
+```
+  [Rist](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rist): {{
+    RistRouterInputConfiguration}}
+  [Rtp](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rtp): {{
+    RtpRouterInputConfiguration}}
+  [SrtCaller](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-srtcaller): {{
+    SrtCallerRouterInputConfiguration}}
+  [SrtListener](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-srtlistener): {{
+    SrtListenerRouterInputConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-properties"></a>
 
-`Rist`
-
+`Rist`  <a name="cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rist"></a>
 The configuration settings for a router input using the RIST (Reliable Internet Stream Transport) protocol, including the port and recovery latency.
+*Required*: No
+*Type*: [RistRouterInputConfiguration](aws-properties-mediaconnect-routerinput-ristrouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RistRouterInputConfiguration](aws-properties-mediaconnect-routerinput-ristrouterinputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rtp`
-
+`Rtp`  <a name="cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rtp"></a>
 The configuration settings for a Router Input using the RTP (Real-Time Transport Protocol) protocol, including the port and forward error correction state.
+*Required*: No
+*Type*: [RtpRouterInputConfiguration](aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RtpRouterInputConfiguration](aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SrtCaller`
-
+`SrtCaller`  <a name="cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-srtcaller"></a>
 The configuration settings for a router input using the SRT (Secure Reliable Transport) protocol in caller mode, including the source address and port, minimum latency, stream ID, and decryption key configuration.
+*Required*: No
+*Type*: [SrtCallerRouterInputConfiguration](aws-properties-mediaconnect-routerinput-srtcallerrouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SrtCallerRouterInputConfiguration](aws-properties-mediaconnect-routerinput-srtcallerrouterinputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SrtListener`
-
+`SrtListener`  <a name="cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-srtlistener"></a>
 The configuration settings for a router input using the SRT (Secure Reliable Transport) protocol in listener mode, including the port, minimum latency, and decryption key configuration.
-
-_Required_: No
-
-_Type_: [SrtListenerRouterInputConfiguration](aws-properties-mediaconnect-routerinput-srtlistenerrouterinputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FailoverRouterInputConfiguration
-
-FlowTransitEncryption
+*Required*: No
+*Type*: [SrtListenerRouterInputConfiguration](aws-properties-mediaconnect-routerinput-srtlistenerrouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,277 +2,177 @@
 title: "AWS::QuickSight::Theme UIColorPalette"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme UIColorPalette
+<a name="aws-properties-quicksight-theme-uicolorpalette"></a>
 
-The theme colors that apply to UI and to charts, excluding data colors. The colors description is a hexadecimal
-color code that consists of six alphanumerical characters, prefixed with `#`, for example #37BFF5. For
-more information, see [Using Themes\
-in Amazon Quick](../../../quicksight/latest/user/themes-in-quicksight.md) in the _Amazon Quick User Guide._
+The theme colors that apply to UI and to charts, excluding data colors. The colors description is a hexadecimal color code that consists of six alphanumerical characters, prefixed with `#`, for example \#37BFF5. For more information, see [Using Themes in Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *Amazon Quick User Guide.*
 
 ## Syntax
+<a name="aws-properties-quicksight-theme-uicolorpalette-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-theme-uicolorpalette-syntax.json"></a>
 
-```json
-
+```
 {
-  "Accent" : String,
-  "AccentForeground" : String,
-  "Danger" : String,
-  "DangerForeground" : String,
-  "Dimension" : String,
-  "DimensionForeground" : String,
-  "Measure" : String,
-  "MeasureForeground" : String,
-  "PrimaryBackground" : String,
-  "PrimaryForeground" : String,
-  "SecondaryBackground" : String,
-  "SecondaryForeground" : String,
-  "Success" : String,
-  "SuccessForeground" : String,
-  "Warning" : String,
-  "WarningForeground" : String
+  "[Accent](#cfn-quicksight-theme-uicolorpalette-accent)" : {{String}},
+  "[AccentForeground](#cfn-quicksight-theme-uicolorpalette-accentforeground)" : {{String}},
+  "[Danger](#cfn-quicksight-theme-uicolorpalette-danger)" : {{String}},
+  "[DangerForeground](#cfn-quicksight-theme-uicolorpalette-dangerforeground)" : {{String}},
+  "[Dimension](#cfn-quicksight-theme-uicolorpalette-dimension)" : {{String}},
+  "[DimensionForeground](#cfn-quicksight-theme-uicolorpalette-dimensionforeground)" : {{String}},
+  "[Measure](#cfn-quicksight-theme-uicolorpalette-measure)" : {{String}},
+  "[MeasureForeground](#cfn-quicksight-theme-uicolorpalette-measureforeground)" : {{String}},
+  "[PrimaryBackground](#cfn-quicksight-theme-uicolorpalette-primarybackground)" : {{String}},
+  "[PrimaryForeground](#cfn-quicksight-theme-uicolorpalette-primaryforeground)" : {{String}},
+  "[SecondaryBackground](#cfn-quicksight-theme-uicolorpalette-secondarybackground)" : {{String}},
+  "[SecondaryForeground](#cfn-quicksight-theme-uicolorpalette-secondaryforeground)" : {{String}},
+  "[Success](#cfn-quicksight-theme-uicolorpalette-success)" : {{String}},
+  "[SuccessForeground](#cfn-quicksight-theme-uicolorpalette-successforeground)" : {{String}},
+  "[Warning](#cfn-quicksight-theme-uicolorpalette-warning)" : {{String}},
+  "[WarningForeground](#cfn-quicksight-theme-uicolorpalette-warningforeground)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-theme-uicolorpalette-syntax.yaml"></a>
 
-```yaml
-
-  Accent: String
-  AccentForeground: String
-  Danger: String
-  DangerForeground: String
-  Dimension: String
-  DimensionForeground: String
-  Measure: String
-  MeasureForeground: String
-  PrimaryBackground: String
-  PrimaryForeground: String
-  SecondaryBackground: String
-  SecondaryForeground: String
-  Success: String
-  SuccessForeground: String
-  Warning: String
-  WarningForeground: String
-
+```
+  [Accent](#cfn-quicksight-theme-uicolorpalette-accent): {{String}}
+  [AccentForeground](#cfn-quicksight-theme-uicolorpalette-accentforeground): {{String}}
+  [Danger](#cfn-quicksight-theme-uicolorpalette-danger): {{String}}
+  [DangerForeground](#cfn-quicksight-theme-uicolorpalette-dangerforeground): {{String}}
+  [Dimension](#cfn-quicksight-theme-uicolorpalette-dimension): {{String}}
+  [DimensionForeground](#cfn-quicksight-theme-uicolorpalette-dimensionforeground): {{String}}
+  [Measure](#cfn-quicksight-theme-uicolorpalette-measure): {{String}}
+  [MeasureForeground](#cfn-quicksight-theme-uicolorpalette-measureforeground): {{String}}
+  [PrimaryBackground](#cfn-quicksight-theme-uicolorpalette-primarybackground): {{String}}
+  [PrimaryForeground](#cfn-quicksight-theme-uicolorpalette-primaryforeground): {{String}}
+  [SecondaryBackground](#cfn-quicksight-theme-uicolorpalette-secondarybackground): {{String}}
+  [SecondaryForeground](#cfn-quicksight-theme-uicolorpalette-secondaryforeground): {{String}}
+  [Success](#cfn-quicksight-theme-uicolorpalette-success): {{String}}
+  [SuccessForeground](#cfn-quicksight-theme-uicolorpalette-successforeground): {{String}}
+  [Warning](#cfn-quicksight-theme-uicolorpalette-warning): {{String}}
+  [WarningForeground](#cfn-quicksight-theme-uicolorpalette-warningforeground): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-theme-uicolorpalette-properties"></a>
 
-`Accent`
-
+`Accent`  <a name="cfn-quicksight-theme-uicolorpalette-accent"></a>
 This color is that applies to selected states and buttons.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AccentForeground`  <a name="cfn-quicksight-theme-uicolorpalette-accentforeground"></a>
+The foreground color that applies to any text or other elements that appear over the accent color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AccentForeground`
-
-The foreground color that applies to any text or other elements that appear over the
-accent color.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Danger`
-
+`Danger`  <a name="cfn-quicksight-theme-uicolorpalette-danger"></a>
 The color that applies to error messages.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DangerForeground`  <a name="cfn-quicksight-theme-uicolorpalette-dangerforeground"></a>
+The foreground color that applies to any text or other elements that appear over the error color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Dimension`  <a name="cfn-quicksight-theme-uicolorpalette-dimension"></a>
+The color that applies to the names of fields that are identified as dimensions.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^#[A-F0-9]{6}$`
+`DimensionForeground`  <a name="cfn-quicksight-theme-uicolorpalette-dimensionforeground"></a>
+The foreground color that applies to any text or other elements that appear over the dimension color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DangerForeground`
-
-The foreground color that applies to any text or other elements that appear over the
-error color.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dimension`
-
-The color that applies to the names of fields that are identified as
-dimensions.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DimensionForeground`
-
-The foreground color that applies to any text or other elements that appear over the
-dimension color.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Measure`
-
+`Measure`  <a name="cfn-quicksight-theme-uicolorpalette-measure"></a>
 The color that applies to the names of fields that are identified as measures.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MeasureForeground`  <a name="cfn-quicksight-theme-uicolorpalette-measureforeground"></a>
+The foreground color that applies to any text or other elements that appear over the measure color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureForeground`
-
-The foreground color that applies to any text or other elements that appear over the
-measure color.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryBackground`
-
+`PrimaryBackground`  <a name="cfn-quicksight-theme-uicolorpalette-primarybackground"></a>
 The background color that applies to visuals and other high emphasis UI.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PrimaryForeground`  <a name="cfn-quicksight-theme-uicolorpalette-primaryforeground"></a>
+The color of text and other foreground elements that appear over the primary background regions, such as grid lines, borders, table banding, icons, and so on.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryForeground`
-
-The color of text and other foreground elements that appear over the primary
-background regions, such as grid lines, borders, table banding, icons, and so on.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryBackground`
-
+`SecondaryBackground`  <a name="cfn-quicksight-theme-uicolorpalette-secondarybackground"></a>
 The background color that applies to the sheet background and sheet controls.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecondaryForeground`  <a name="cfn-quicksight-theme-uicolorpalette-secondaryforeground"></a>
+The foreground color that applies to any sheet title, sheet control text, or UI that appears over the secondary background.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Success`  <a name="cfn-quicksight-theme-uicolorpalette-success"></a>
+The color that applies to success messages, for example the check mark for a successful download.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^#[A-F0-9]{6}$`
+`SuccessForeground`  <a name="cfn-quicksight-theme-uicolorpalette-successforeground"></a>
+The foreground color that applies to any text or other elements that appear over the success color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryForeground`
-
-The foreground color that applies to any sheet title, sheet control text, or UI that
-appears over the secondary background.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Success`
-
-The color that applies to success messages, for example the check mark for a
-successful download.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SuccessForeground`
-
-The foreground color that applies to any text or other elements that appear over the
-success color.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Warning`
-
+`Warning`  <a name="cfn-quicksight-theme-uicolorpalette-warning"></a>
 This color that applies to warning and informational messages.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WarningForeground`
-
-The foreground color that applies to any text or other elements that appear over the
-warning color.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Typography
-
-AWS::QuickSight::Topic
+`WarningForeground`  <a name="cfn-quicksight-theme-uicolorpalette-warningforeground"></a>
+The foreground color that applies to any text or other elements that appear over the warning color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

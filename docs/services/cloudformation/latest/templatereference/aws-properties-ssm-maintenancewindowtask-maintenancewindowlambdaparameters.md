@@ -2,100 +2,65 @@
 title: "AWS::SSM::MaintenanceWindowTask MaintenanceWindowLambdaParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::MaintenanceWindowTask MaintenanceWindowLambdaParameters
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters"></a>
 
-The `MaintenanceWindowLambdaParameters` property type specifies the
-parameters for a `LAMBDA` task type for a maintenance window task in AWS Systems Manager.
+The `MaintenanceWindowLambdaParameters` property type specifies the parameters for a `LAMBDA` task type for a maintenance window task in AWS Systems Manager.
 
-`MaintenanceWindowLambdaParameters` is a property of the [TaskInvocationParameters](../userguide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.md) property type.
+`MaintenanceWindowLambdaParameters` is a property of the [TaskInvocationParameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html) property type.
 
 ## Syntax
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientContext" : String,
-  "Payload" : String,
-  "Qualifier" : String
+  "[ClientContext](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext)" : {{String}},
+  "[Payload](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload)" : {{String}},
+  "[Qualifier](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-syntax.yaml"></a>
 
-```yaml
-
-  ClientContext: String
-  Payload: String
-  Qualifier: String
-
+```
+  [ClientContext](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext): {{String}}
+  [Payload](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload): {{String}}
+  [Qualifier](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-properties"></a>
 
-`ClientContext`
+`ClientContext`  <a name="cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext"></a>
+Client-specific information to pass to the AWS Lambda function that you're invoking. You can then use the `context` variable to process the client information in your AWS Lambda function.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `8000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Client-specific information to pass to the AWS Lambda function that
-you're invoking. You can then use the `context` variable to process the
-client information in your AWS Lambda function.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `8000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Payload`
-
+`Payload`  <a name="cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload"></a>
 JSON to provide to your AWS Lambda function as input.
+Although `Type` is listed as "String" for this property, the payload content must be formatted as a Base64-encoded binary data object.
+*Length Constraint:* 4096
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Important
-
-Although `Type` is listed as "String" for this property, the payload
-content must be formatted as a Base64-encoded binary data object.
-
-_Length Constraint:_ 4096
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Qualifier`
-
-An AWS Lambda function version or alias name. If you specify a function
-version, the action uses the qualified function Amazon Resource Name (ARN) to invoke a
-specific Lambda function. If you specify an alias name, the action uses
-the alias ARN to invoke the Lambda function version that the alias points
-to.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MaintenanceWindowAutomationParameters
-
-MaintenanceWindowRunCommandParameters
+`Qualifier`  <a name="cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier"></a>
+An AWS Lambda function version or alias name. If you specify a function version, the action uses the qualified function Amazon Resource Name (ARN) to invoke a specific Lambda function. If you specify an alias name, the action uses the alias ARN to invoke the Lambda function version that the alias points to.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

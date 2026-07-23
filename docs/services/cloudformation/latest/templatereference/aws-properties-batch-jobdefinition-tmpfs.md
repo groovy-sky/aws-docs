@@ -2,93 +2,62 @@
 title: "AWS::Batch::JobDefinition Tmpfs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition Tmpfs
+<a name="aws-properties-batch-jobdefinition-tmpfs"></a>
 
 The container path, mount options, and size of the `tmpfs` mount.
 
-###### Note
-
+**Note**
 This object isn't applicable to jobs that are running on Fargate resources.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-tmpfs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-tmpfs-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerPath" : String,
-  "MountOptions" : [ String, ... ],
-  "Size" : Integer
+  "[ContainerPath](#cfn-batch-jobdefinition-tmpfs-containerpath)" : {{String}},
+  "[MountOptions](#cfn-batch-jobdefinition-tmpfs-mountoptions)" : {{[ String, ... ]}},
+  "[Size](#cfn-batch-jobdefinition-tmpfs-size)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-tmpfs-syntax.yaml"></a>
 
-```yaml
-
-  ContainerPath: String
-  MountOptions:
-    - String
-  Size: Integer
-
+```
+  [ContainerPath](#cfn-batch-jobdefinition-tmpfs-containerpath): {{String}}
+  [MountOptions](#cfn-batch-jobdefinition-tmpfs-mountoptions): {{
+    - String}}
+  [Size](#cfn-batch-jobdefinition-tmpfs-size): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-tmpfs-properties"></a>
 
-`ContainerPath`
+`ContainerPath`  <a name="cfn-batch-jobdefinition-tmpfs-containerpath"></a>
+The absolute file path in the container where the `tmpfs` volume is mounted.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The absolute file path in the container where the `tmpfs` volume is
-mounted.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MountOptions`
-
+`MountOptions`  <a name="cfn-batch-jobdefinition-tmpfs-mountoptions"></a>
 The list of `tmpfs` volume mount options.
+Valid values: "`defaults`" \| "`ro`" \| "`rw`" \| "`suid`" \| "`nosuid`" \| "`dev`" \| "`nodev`" \| "`exec`" \| "`noexec`" \| "`sync`" \| "`async`" \| "`dirsync`" \| "`remount`" \| "`mand`" \| "`nomand`" \| "`atime`" \| "`noatime`" \| "`diratime`" \| "`nodiratime`" \| "`bind`" \| "`rbind" | "unbindable" | "runbindable" | "private" | "rprivate" | "shared" | "rshared" | "slave" | "rslave" | "relatime`" \| "`norelatime`" \| "`strictatime`" \| "`nostrictatime`" \| "`mode`" \| "`uid`" \| "`gid`" \| "`nr_inodes`" \| "`nr_blocks`" \| "`mpol`"
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Valid values: " `defaults`" \| " `ro`" \| " `rw`" \|
-" `suid`" \| " `nosuid`" \| " `dev`" \| " `nodev`" \|
-" `exec`" \| " `noexec`" \| " `sync`" \| " `async`" \|
-" `dirsync`" \| " `remount`" \| " `mand`" \| " `nomand`" \|
-" `atime`" \| " `noatime`" \| " `diratime`" \|
-" `nodiratime`" \| " `bind`" \| " `rbind" | "unbindable" | "runbindable" |
-    "private" | "rprivate" | "shared" | "rshared" | "slave" | "rslave" | "relatime`" \|
-" `norelatime`" \| " `strictatime`" \| " `nostrictatime`" \|
-" `mode`" \| " `uid`" \| " `gid`" \| " `nr_inodes`" \|
-" `nr_blocks`" \| " `mpol`"
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Size`
-
+`Size`  <a name="cfn-batch-jobdefinition-tmpfs-size"></a>
 The size (in MiB) of the `tmpfs` volume.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TaskContainerProperties
-
-Ulimit
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,203 +2,136 @@
 title: "AWS::IoTFleetWise::DecoderManifest ObdSignal"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::DecoderManifest ObdSignal
+<a name="aws-properties-iotfleetwise-decodermanifest-obdsignal"></a>
 
-Information about signal messages using the on-board diagnostics (OBD) II protocol in
-a vehicle.
+Information about signal messages using the on-board diagnostics (OBD) II protocol in a vehicle.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-decodermanifest-obdsignal-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-decodermanifest-obdsignal-syntax.json"></a>
 
-```json
-
+```
 {
-  "BitMaskLength" : String,
-  "BitRightShift" : String,
-  "ByteLength" : String,
-  "IsSigned" : String,
-  "Offset" : String,
-  "Pid" : String,
-  "PidResponseLength" : String,
-  "Scaling" : String,
-  "ServiceMode" : String,
-  "SignalValueType" : String,
-  "StartByte" : String
+  "[BitMaskLength](#cfn-iotfleetwise-decodermanifest-obdsignal-bitmasklength)" : {{String}},
+  "[BitRightShift](#cfn-iotfleetwise-decodermanifest-obdsignal-bitrightshift)" : {{String}},
+  "[ByteLength](#cfn-iotfleetwise-decodermanifest-obdsignal-bytelength)" : {{String}},
+  "[IsSigned](#cfn-iotfleetwise-decodermanifest-obdsignal-issigned)" : {{String}},
+  "[Offset](#cfn-iotfleetwise-decodermanifest-obdsignal-offset)" : {{String}},
+  "[Pid](#cfn-iotfleetwise-decodermanifest-obdsignal-pid)" : {{String}},
+  "[PidResponseLength](#cfn-iotfleetwise-decodermanifest-obdsignal-pidresponselength)" : {{String}},
+  "[Scaling](#cfn-iotfleetwise-decodermanifest-obdsignal-scaling)" : {{String}},
+  "[ServiceMode](#cfn-iotfleetwise-decodermanifest-obdsignal-servicemode)" : {{String}},
+  "[SignalValueType](#cfn-iotfleetwise-decodermanifest-obdsignal-signalvaluetype)" : {{String}},
+  "[StartByte](#cfn-iotfleetwise-decodermanifest-obdsignal-startbyte)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-decodermanifest-obdsignal-syntax.yaml"></a>
 
-```yaml
-
-  BitMaskLength: String
-  BitRightShift: String
-  ByteLength: String
-  IsSigned: String
-  Offset: String
-  Pid: String
-  PidResponseLength: String
-  Scaling: String
-  ServiceMode: String
-  SignalValueType: String
-  StartByte: String
-
+```
+  [BitMaskLength](#cfn-iotfleetwise-decodermanifest-obdsignal-bitmasklength): {{String}}
+  [BitRightShift](#cfn-iotfleetwise-decodermanifest-obdsignal-bitrightshift): {{String}}
+  [ByteLength](#cfn-iotfleetwise-decodermanifest-obdsignal-bytelength): {{String}}
+  [IsSigned](#cfn-iotfleetwise-decodermanifest-obdsignal-issigned): {{String}}
+  [Offset](#cfn-iotfleetwise-decodermanifest-obdsignal-offset): {{String}}
+  [Pid](#cfn-iotfleetwise-decodermanifest-obdsignal-pid): {{String}}
+  [PidResponseLength](#cfn-iotfleetwise-decodermanifest-obdsignal-pidresponselength): {{String}}
+  [Scaling](#cfn-iotfleetwise-decodermanifest-obdsignal-scaling): {{String}}
+  [ServiceMode](#cfn-iotfleetwise-decodermanifest-obdsignal-servicemode): {{String}}
+  [SignalValueType](#cfn-iotfleetwise-decodermanifest-obdsignal-signalvaluetype): {{String}}
+  [StartByte](#cfn-iotfleetwise-decodermanifest-obdsignal-startbyte): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-decodermanifest-obdsignal-properties"></a>
 
-`BitMaskLength`
+`BitMaskLength`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-bitmasklength"></a>
+ The number of bits to mask in a message.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `8`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The number of bits to mask in a message.
+`BitRightShift`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-bitrightshift"></a>
+ The number of positions to shift bits in the message.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `8`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BitRightShift`
-
-The number of positions to shift bits in the message.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ByteLength`
-
+`ByteLength`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-bytelength"></a>
 The length of a message.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `8`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IsSigned`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-issigned"></a>
+Determines whether the message is signed (`true`) or not (`false`). If it's signed, the message can represent both positive and negative numbers. The `isSigned` parameter only applies to the `INTEGER` raw signal type, and it doesn't affect the `FLOATING_POINT` raw signal type. The default value is `false`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `8`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsSigned`
-
-Determines whether the message is signed ( `true`) or not ( `false`). If it's signed, the message can represent both positive and negative numbers. The `isSigned` parameter only applies to the `INTEGER` raw signal type, and it doesn't affect the `FLOATING_POINT` raw signal type. The default value is `false`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Offset`
-
+`Offset`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-offset"></a>
 The offset used to calculate the signal value. Combined with scaling, the calculation is `value = raw_value * scaling + offset`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pid`
-
+`Pid`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-pid"></a>
 The diagnostic code used to request data from a vehicle for this signal.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PidResponseLength`
-
+`PidResponseLength`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-pidresponselength"></a>
 The length of the requested data.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scaling`
-
+`Scaling`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-scaling"></a>
 A multiplier used to decode the message.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceMode`
-
+`ServiceMode`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-servicemode"></a>
 The mode of operation (diagnostic service) in a message.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SignalValueType`
-
+`SignalValueType`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-signalvaluetype"></a>
 The value type of the signal. The default value is `INTEGER`.
+*Required*: No
+*Type*: String
+*Allowed values*: `INTEGER | FLOATING_POINT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INTEGER | FLOATING_POINT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartByte`
-
+`StartByte`  <a name="cfn-iotfleetwise-decodermanifest-obdsignal-startbyte"></a>
 Indicates the beginning of the message.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ObdNetworkInterface
-
-ObdSignalDecoder
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

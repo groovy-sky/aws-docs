@@ -2,105 +2,76 @@
 title: "AWS::AppSync::DataSource DynamoDBConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::DataSource DynamoDBConfig
+<a name="aws-properties-appsync-datasource-dynamodbconfig"></a>
 
-The `DynamoDBConfig` property type specifies the `AwsRegion` and
-`TableName` for an Amazon DynamoDB table in your account for an
-AWS AppSync data source.
+The `DynamoDBConfig` property type specifies the `AwsRegion` and `TableName` for an Amazon DynamoDB table in your account for an AWS AppSync data source.
 
-`DynamoDBConfig` is a property of the [AWS::AppSync::DataSource](../userguide/aws-resource-appsync-datasource.md) property type.
+`DynamoDBConfig` is a property of the [AWS::AppSync::DataSource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html) property type.
 
 ## Syntax
+<a name="aws-properties-appsync-datasource-dynamodbconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-datasource-dynamodbconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsRegion" : String,
-  "DeltaSyncConfig" : DeltaSyncConfig,
-  "TableName" : String,
-  "UseCallerCredentials" : Boolean,
-  "Versioned" : Boolean
+  "[AwsRegion](#cfn-appsync-datasource-dynamodbconfig-awsregion)" : {{String}},
+  "[DeltaSyncConfig](#cfn-appsync-datasource-dynamodbconfig-deltasyncconfig)" : {{DeltaSyncConfig}},
+  "[TableName](#cfn-appsync-datasource-dynamodbconfig-tablename)" : {{String}},
+  "[UseCallerCredentials](#cfn-appsync-datasource-dynamodbconfig-usecallercredentials)" : {{Boolean}},
+  "[Versioned](#cfn-appsync-datasource-dynamodbconfig-versioned)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-datasource-dynamodbconfig-syntax.yaml"></a>
 
-```yaml
-
-  AwsRegion: String
-  DeltaSyncConfig:
-    DeltaSyncConfig
-  TableName: String
-  UseCallerCredentials: Boolean
-  Versioned: Boolean
-
+```
+  [AwsRegion](#cfn-appsync-datasource-dynamodbconfig-awsregion): {{String}}
+  [DeltaSyncConfig](#cfn-appsync-datasource-dynamodbconfig-deltasyncconfig): {{
+    DeltaSyncConfig}}
+  [TableName](#cfn-appsync-datasource-dynamodbconfig-tablename): {{String}}
+  [UseCallerCredentials](#cfn-appsync-datasource-dynamodbconfig-usecallercredentials): {{Boolean}}
+  [Versioned](#cfn-appsync-datasource-dynamodbconfig-versioned): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-datasource-dynamodbconfig-properties"></a>
 
-`AwsRegion`
-
+`AwsRegion`  <a name="cfn-appsync-datasource-dynamodbconfig-awsregion"></a>
 The AWS Region.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeltaSyncConfig`
-
+`DeltaSyncConfig`  <a name="cfn-appsync-datasource-dynamodbconfig-deltasyncconfig"></a>
 The `DeltaSyncConfig` for a versioned datasource.
+*Required*: No
+*Type*: [DeltaSyncConfig](aws-properties-appsync-datasource-deltasyncconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DeltaSyncConfig](aws-properties-appsync-datasource-deltasyncconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
+`TableName`  <a name="cfn-appsync-datasource-dynamodbconfig-tablename"></a>
 The table name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseCallerCredentials`
-
+`UseCallerCredentials`  <a name="cfn-appsync-datasource-dynamodbconfig-usecallercredentials"></a>
 Set to `TRUE` to use AWS Identity and Access Management with this data source.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Versioned`
-
+`Versioned`  <a name="cfn-appsync-datasource-dynamodbconfig-versioned"></a>
 Set to TRUE to use Conflict Detection and Resolution with this data source.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeltaSyncConfig
-
-EventBridgeConfig
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

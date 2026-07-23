@@ -2,121 +2,90 @@
 title: "AWS::SES::ContactList"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ContactList
+<a name="aws-resource-ses-contactlist"></a>
 
-A list that contains contacts that have subscribed to a particular topic or
-topics.
+A list that contains contacts that have subscribed to a particular topic or topics.
 
 ## Syntax
+<a name="aws-resource-ses-contactlist-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-contactlist-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::ContactList",
   "Properties" : {
-      "ContactListName" : String,
-      "Description" : String,
-      "Tags" : [ Tag, ... ],
-      "Topics" : [ Topic, ... ]
+      "[ContactListName](#cfn-ses-contactlist-contactlistname)" : {{String}},
+      "[Description](#cfn-ses-contactlist-description)" : {{String}},
+      "[Tags](#cfn-ses-contactlist-tags)" : {{[ Tag, ... ]}},
+      "[Topics](#cfn-ses-contactlist-topics)" : {{[ Topic, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-contactlist-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::ContactList
 Properties:
-  ContactListName: String
-  Description: String
-  Tags:
-    - Tag
-  Topics:
-    - Topic
-
+  [ContactListName](#cfn-ses-contactlist-contactlistname): {{String}}
+  [Description](#cfn-ses-contactlist-description): {{String}}
+  [Tags](#cfn-ses-contactlist-tags): {{
+    - Tag}}
+  [Topics](#cfn-ses-contactlist-topics): {{
+    - Topic}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-contactlist-properties"></a>
 
-`ContactListName`
-
+`ContactListName`  <a name="cfn-ses-contactlist-contactlistname"></a>
 The name of the contact list.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,64}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,64}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-ses-contactlist-description"></a>
 A description of what the contact list is about.
+*Required*: No
+*Type*: String
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ses-contactlist-tags"></a>
 The tags associated with a contact list.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-contactlist-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-contactlist-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Topics`
-
-An interest group, theme, or label within a list. A contact list can have multiple
-topics.
-
-_Required_: No
-
-_Type_: Array of [Topic](aws-properties-ses-contactlist-topic.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Topics`  <a name="cfn-ses-contactlist-topics"></a>
+An interest group, theme, or label within a list. A contact list can have multiple topics.
+*Required*: No
+*Type*: Array of [Topic](aws-properties-ses-contactlist-topic.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-contactlist-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-contactlist-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic Ref function, Ref
-returns the resource name. For example:
+When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the resource name. For example:
 
-`{ "Ref" : "ContactListName" }`
+ `{ "Ref" : "ContactListName" }`
 
-For the Amazon SES ContactList, `Ref` returns the name of the contact
-list.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnsDestination
-
-Tag
+For the Amazon SES ContactList, `Ref` returns the name of the contact list.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,116 +2,93 @@
 title: "AWS::S3Outposts::BucketPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::BucketPolicy
+<a name="aws-resource-s3outposts-bucketpolicy"></a>
 
 This resource applies a bucket policy to an Amazon S3 on Outposts bucket.
 
-If you are using an identity other than the root user of the AWS account
-that owns the S3 on Outposts bucket, the calling identity must have
-the `s3-outposts:PutBucketPolicy` permissions on the specified
-Outposts bucket and belong to the bucket owner's account in order to use
-this resource.
+If you are using an identity other than the root user of the AWS account that owns the S3 on Outposts bucket, the calling identity must have the `s3-outposts:PutBucketPolicy` permissions on the specified Outposts bucket and belong to the bucket owner's account in order to use this resource.
 
-If you don't have `s3-outposts:PutBucketPolicy` permissions,
-S3 on Outposts returns a `403 Access Denied` error.
+If you don't have `s3-outposts:PutBucketPolicy` permissions, S3 on Outposts returns a `403 Access Denied` error.
 
-###### Important
+**Important**
+The root user of the AWS account that owns an Outposts bucket can *always* use this resource, even if the policy explicitly denies the root user the ability to perform actions on this resource.
 
-The root user of the AWS account that owns an Outposts bucket can
-_always_ use this resource, even if the policy explicitly denies the
-root user the ability to perform actions on this resource.
-
-For more information, see the AWS::IAM::Policy [PolicyDocument](../userguide/aws-resource-iam-policy.md#cfn-iam-policy-policydocument) resource description in this guide and
-[Access Policy Language Overview](../../../s3/latest/userguide/access-policy-language-overview.md).
+ For more information, see the AWS::IAM::Policy [ PolicyDocument](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policydocument) resource description in this guide and [ Access Policy Language Overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-overview.html).
 
 ## Syntax
+<a name="aws-resource-s3outposts-bucketpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3outposts-bucketpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3Outposts::BucketPolicy",
   "Properties" : {
-      "Bucket" : String,
-      "PolicyDocument" : Json
+      "[Bucket](#cfn-s3outposts-bucketpolicy-bucket)" : {{String}},
+      "[PolicyDocument](#cfn-s3outposts-bucketpolicy-policydocument)" : {{Json}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3outposts-bucketpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3Outposts::BucketPolicy
 Properties:
-  Bucket: String
-  PolicyDocument: Json
-
+  [Bucket](#cfn-s3outposts-bucketpolicy-bucket): {{String}}
+  [PolicyDocument](#cfn-s3outposts-bucketpolicy-policydocument): {{Json}}
 ```
 
 ## Properties
+<a name="aws-resource-s3outposts-bucketpolicy-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-s3outposts-bucketpolicy-bucket"></a>
 The name of the Amazon S3 Outposts bucket to which the policy applies.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[^:]+:s3-outposts:[a-zA-Z0-9\-]+:\d{12}:outpost\/[^:]+\/bucket\/[^:]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[^:]+:s3-outposts:[a-zA-Z0-9\-]+:\d{12}:outpost\/[^:]+\/bucket\/[^:]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PolicyDocument`
-
-A policy document containing permissions to add to the specified bucket. In IAM, you must
-provide policy documents in JSON format. However, in CloudFormation, you can provide the
-policy in JSON or YAML format because CloudFormation converts YAML to JSON before submitting
-it to IAM. For more information, see the AWS::IAM::Policy [PolicyDocument](../userguide/aws-resource-iam-policy.md#cfn-iam-policy-policydocument) resource description in this guide and [Access Policy Language\
-Overview](../../../s3/latest/userguide/access-policy-language-overview.md).
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`PolicyDocument`  <a name="cfn-s3outposts-bucketpolicy-policydocument"></a>
+ A policy document containing permissions to add to the specified bucket. In IAM, you must provide policy documents in JSON format. However, in CloudFormation, you can provide the policy in JSON or YAML format because CloudFormation converts YAML to JSON before submitting it to IAM. For more information, see the AWS::IAM::Policy [ PolicyDocument](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policydocument) resource description in this guide and [ Access Policy Language Overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-overview.html).
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-s3outposts-bucketpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3outposts-bucketpolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the S3 on Outposts bucket Amazon Resource Name (ARN).
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-s3outposts-bucketpolicy--examples"></a>
 
 ### Create an Amazon S3 on Outposts bucket with a bucket policy
+<a name="aws-resource-s3outposts-bucketpolicy--examples--Create_an_Amazon_S3_on_Outposts_bucket_with_a_bucket_policy"></a>
 
 The following example creates an Amazon S3 on Outposts bucket and adds a bucket policy to that bucket.
 
-###### Note
-
-To add a bucket policy to a bucket, you must create your Outposts bucket before or
-at the same time as you add your bucket policy.
+**Note**
+To add a bucket policy to a bucket, you must create your Outposts bucket before or at the same time as you add your bucket policy.
 
 #### JSON
+<a name="aws-resource-s3outposts-bucketpolicy--examples--Create_an_Amazon_S3_on_Outposts_bucket_with_a_bucket_policy--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket with no tags + Bucket Policy",
@@ -176,9 +153,9 @@ at the same time as you add your bucket policy.
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-bucketpolicy--examples--Create_an_Amazon_S3_on_Outposts_bucket_with_a_bucket_policy--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Bucket with no tags + Bucket Policy
 Resources:
@@ -214,13 +191,6 @@ Outputs:
     Value: !Ref 'AWS::StackID'
     Export:
       Name: !Sub '${AWS::StackName}-StackID'
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::S3Outposts::Endpoint
 
 All content copied from https://docs.aws.amazon.com/.

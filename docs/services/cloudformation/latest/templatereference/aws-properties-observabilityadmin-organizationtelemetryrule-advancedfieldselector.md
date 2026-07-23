@@ -2,134 +2,97 @@
 title: "AWS::ObservabilityAdmin::OrganizationTelemetryRule AdvancedFieldSelector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule AdvancedFieldSelector
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector"></a>
 
-Defines criteria for selecting resources based on field values.
+ Defines criteria for selecting resources based on field values.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector-syntax.json"></a>
 
-```json
-
+```
 {
-  "EndsWith" : [ String, ... ],
-  "Equals" : [ String, ... ],
-  "Field" : String,
-  "NotEndsWith" : [ String, ... ],
-  "NotEquals" : [ String, ... ],
-  "NotStartsWith" : [ String, ... ],
-  "StartsWith" : [ String, ... ]
+  "[EndsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-endswith)" : {{[ String, ... ]}},
+  "[Equals](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-equals)" : {{[ String, ... ]}},
+  "[Field](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-field)" : {{String}},
+  "[NotEndsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notendswith)" : {{[ String, ... ]}},
+  "[NotEquals](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notequals)" : {{[ String, ... ]}},
+  "[NotStartsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notstartswith)" : {{[ String, ... ]}},
+  "[StartsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-startswith)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector-syntax.yaml"></a>
 
-```yaml
-
-  EndsWith:
-    - String
-  Equals:
-    - String
-  Field: String
-  NotEndsWith:
-    - String
-  NotEquals:
-    - String
-  NotStartsWith:
-    - String
-  StartsWith:
-    - String
-
+```
+  [EndsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-endswith): {{
+    - String}}
+  [Equals](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-equals): {{
+    - String}}
+  [Field](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-field): {{String}}
+  [NotEndsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notendswith): {{
+    - String}}
+  [NotEquals](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notequals): {{
+    - String}}
+  [NotStartsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notstartswith): {{
+    - String}}
+  [StartsWith](#cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-startswith): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedfieldselector-properties"></a>
 
-`EndsWith`
+`EndsWith`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-endswith"></a>
+ Matches if the field value ends with the specified value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Matches if the field value ends with the specified value.
+`Equals`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-equals"></a>
+ Matches if the field value equals the specified value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Field`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-field"></a>
+ The name of the field to use for selection.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
+`NotEndsWith`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notendswith"></a>
+ Matches if the field value does not end with the specified value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`NotEquals`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notequals"></a>
+ Matches if the field value does not equal the specified value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Equals`
+`NotStartsWith`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-notstartswith"></a>
+ Matches if the field value does not start with the specified value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Matches if the field value equals the specified value.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Field`
-
-The name of the field to use for selection.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotEndsWith`
-
-Matches if the field value does not end with the specified value.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotEquals`
-
-Matches if the field value does not equal the specified value.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotStartsWith`
-
-Matches if the field value does not start with the specified value.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartsWith`
-
-Matches if the field value starts with the specified value.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdvancedEventSelector
-
-CloudtrailParameters
+`StartsWith`  <a name="cfn-observabilityadmin-organizationtelemetryrule-advancedfieldselector-startswith"></a>
+ Matches if the field value starts with the specified value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

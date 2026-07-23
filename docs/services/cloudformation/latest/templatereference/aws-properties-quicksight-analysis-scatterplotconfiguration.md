@@ -2,183 +2,132 @@
 title: "AWS::QuickSight::Analysis ScatterPlotConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ScatterPlotConfiguration
+<a name="aws-properties-quicksight-analysis-scatterplotconfiguration"></a>
 
 The configuration of a scatter plot.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-scatterplotconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-scatterplotconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataLabels" : DataLabelOptions,
-  "FieldWells" : ScatterPlotFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "SortConfiguration" : ScatterPlotSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "VisualPalette" : VisualPalette,
-  "XAxisDisplayOptions" : AxisDisplayOptions,
-  "XAxisLabelOptions" : ChartAxisLabelOptions,
-  "YAxisDisplayOptions" : AxisDisplayOptions,
-  "YAxisLabelOptions" : ChartAxisLabelOptions
+  "[DataLabels](#cfn-quicksight-analysis-scatterplotconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[FieldWells](#cfn-quicksight-analysis-scatterplotconfiguration-fieldwells)" : {{ScatterPlotFieldWells}},
+  "[Interactions](#cfn-quicksight-analysis-scatterplotconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-analysis-scatterplotconfiguration-legend)" : {{LegendOptions}},
+  "[SortConfiguration](#cfn-quicksight-analysis-scatterplotconfiguration-sortconfiguration)" : {{ScatterPlotSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-analysis-scatterplotconfiguration-tooltip)" : {{TooltipOptions}},
+  "[VisualPalette](#cfn-quicksight-analysis-scatterplotconfiguration-visualpalette)" : {{VisualPalette}},
+  "[XAxisDisplayOptions](#cfn-quicksight-analysis-scatterplotconfiguration-xaxisdisplayoptions)" : {{AxisDisplayOptions}},
+  "[XAxisLabelOptions](#cfn-quicksight-analysis-scatterplotconfiguration-xaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[YAxisDisplayOptions](#cfn-quicksight-analysis-scatterplotconfiguration-yaxisdisplayoptions)" : {{AxisDisplayOptions}},
+  "[YAxisLabelOptions](#cfn-quicksight-analysis-scatterplotconfiguration-yaxislabeloptions)" : {{ChartAxisLabelOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-scatterplotconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DataLabels:
-    DataLabelOptions
-  FieldWells:
-    ScatterPlotFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  SortConfiguration:
-    ScatterPlotSortConfiguration
-  Tooltip:
-    TooltipOptions
-  VisualPalette:
-    VisualPalette
-  XAxisDisplayOptions:
-    AxisDisplayOptions
-  XAxisLabelOptions:
-    ChartAxisLabelOptions
-  YAxisDisplayOptions:
-    AxisDisplayOptions
-  YAxisLabelOptions:
-    ChartAxisLabelOptions
-
+```
+  [DataLabels](#cfn-quicksight-analysis-scatterplotconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [FieldWells](#cfn-quicksight-analysis-scatterplotconfiguration-fieldwells): {{
+    ScatterPlotFieldWells}}
+  [Interactions](#cfn-quicksight-analysis-scatterplotconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-analysis-scatterplotconfiguration-legend): {{
+    LegendOptions}}
+  [SortConfiguration](#cfn-quicksight-analysis-scatterplotconfiguration-sortconfiguration): {{
+    ScatterPlotSortConfiguration}}
+  [Tooltip](#cfn-quicksight-analysis-scatterplotconfiguration-tooltip): {{
+    TooltipOptions}}
+  [VisualPalette](#cfn-quicksight-analysis-scatterplotconfiguration-visualpalette): {{
+    VisualPalette}}
+  [XAxisDisplayOptions](#cfn-quicksight-analysis-scatterplotconfiguration-xaxisdisplayoptions): {{
+    AxisDisplayOptions}}
+  [XAxisLabelOptions](#cfn-quicksight-analysis-scatterplotconfiguration-xaxislabeloptions): {{
+    ChartAxisLabelOptions}}
+  [YAxisDisplayOptions](#cfn-quicksight-analysis-scatterplotconfiguration-yaxisdisplayoptions): {{
+    AxisDisplayOptions}}
+  [YAxisLabelOptions](#cfn-quicksight-analysis-scatterplotconfiguration-yaxislabeloptions): {{
+    ChartAxisLabelOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-scatterplotconfiguration-properties"></a>
 
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-datalabels"></a>
 The options that determine if visual data labels are displayed.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [ScatterPlotFieldWells](aws-properties-quicksight-analysis-scatterplotfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ScatterPlotFieldWells](aws-properties-quicksight-analysis-scatterplotfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-sortconfiguration"></a>
 The sort configuration of a scatter plot.
+*Required*: No
+*Type*: [ScatterPlotSortConfiguration](aws-properties-quicksight-analysis-scatterplotsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ScatterPlotSortConfiguration](aws-properties-quicksight-analysis-scatterplotsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-tooltip"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-visualpalette"></a>
 The palette (chart color) display setup of the visual.
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxisDisplayOptions`
-
+`XAxisDisplayOptions`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-xaxisdisplayoptions"></a>
 The label display options (grid line, range, scale, and axis step) of the scatter plot's x-axis.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxisLabelOptions`
-
+`XAxisLabelOptions`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-xaxislabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) of the scatter plot's x-axis.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`YAxisDisplayOptions`
-
+`YAxisDisplayOptions`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-yaxisdisplayoptions"></a>
 The label display options (grid line, range, scale, and axis step) of the scatter plot's y-axis.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`YAxisLabelOptions`
-
+`YAxisLabelOptions`  <a name="cfn-quicksight-analysis-scatterplotconfiguration-yaxislabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) of the scatter plot's y-axis.
-
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScatterPlotCategoricallyAggregatedFieldWells
-
-ScatterPlotFieldWells
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

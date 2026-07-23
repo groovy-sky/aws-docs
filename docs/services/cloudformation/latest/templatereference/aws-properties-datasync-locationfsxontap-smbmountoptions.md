@@ -2,80 +2,52 @@
 title: "AWS::DataSync::LocationFSxONTAP SmbMountOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationFSxONTAP SmbMountOptions
+<a name="aws-properties-datasync-locationfsxontap-smbmountoptions"></a>
 
 Specifies the version of the Server Message Block (SMB) protocol that AWS DataSync uses to access an SMB file server.
 
 ## Syntax
+<a name="aws-properties-datasync-locationfsxontap-smbmountoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datasync-locationfsxontap-smbmountoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Version" : String
+  "[Version](#cfn-datasync-locationfsxontap-smbmountoptions-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datasync-locationfsxontap-smbmountoptions-syntax.yaml"></a>
 
-```yaml
-
-  Version: String
-
+```
+  [Version](#cfn-datasync-locationfsxontap-smbmountoptions-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datasync-locationfsxontap-smbmountoptions-properties"></a>
 
-`Version`
-
-By default, DataSync automatically chooses an SMB protocol version based on
-negotiation with your SMB file server. You also can configure DataSync to use a
-specific SMB version, but we recommend doing this only if DataSync has trouble
-negotiating with the SMB file server automatically.
-
+`Version`  <a name="cfn-datasync-locationfsxontap-smbmountoptions-version"></a>
+By default, DataSync automatically chooses an SMB protocol version based on negotiation with your SMB file server. You also can configure DataSync to use a specific SMB version, but we recommend doing this only if DataSync has trouble negotiating with the SMB file server automatically.
 These are the following options for configuring the SMB version:
++ `AUTOMATIC` (default): DataSync and the SMB file server negotiate the highest version of SMB that they mutually support between 2.1 and 3.1.1.
 
-- `AUTOMATIC` (default): DataSync and the SMB file server negotiate
-the highest version of SMB that they mutually support between 2.1 and 3.1.1.
-
-This is the recommended option. If you instead choose a specific version that your
-file server doesn't support, you may get an `Operation Not Supported`
-error.
-
-- `SMB3`: Restricts the protocol negotiation to only SMB version
-3.0.2.
-
-- `SMB2`: Restricts the protocol negotiation to only SMB version 2.1.
-
-- `SMB2_0`: Restricts the protocol negotiation to only SMB version
-2.0.
-
-- `SMB1`: Restricts the protocol negotiation to only SMB version 1.0.
-
-###### Note
-
-The `SMB1` option isn't available when [creating an Amazon FSx for NetApp ONTAP location](../../../datasync/latest/userguide/api-createlocationfsxontap.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTOMATIC | SMB2 | SMB3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SMB
-
-Tag
+  This is the recommended option. If you instead choose a specific version that your file server doesn't support, you may get an `Operation Not Supported` error.
++ `SMB3`: Restricts the protocol negotiation to only SMB version 3.0.2.
++ `SMB2`: Restricts the protocol negotiation to only SMB version 2.1.
++ `SMB2_0`: Restricts the protocol negotiation to only SMB version 2.0.
++ `SMB1`: Restricts the protocol negotiation to only SMB version 1.0.
+**Note**
+The `SMB1` option isn't available when [creating an Amazon FSx for NetApp ONTAP location](https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationFsxOntap.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTOMATIC | SMB2 | SMB3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

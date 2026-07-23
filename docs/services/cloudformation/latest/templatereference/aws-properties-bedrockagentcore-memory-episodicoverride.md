@@ -2,82 +2,60 @@
 title: "AWS::BedrockAgentCore::Memory EpisodicOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory EpisodicOverride
+<a name="aws-properties-bedrockagentcore-memory-episodicoverride"></a>
 
 The configuration to override the episodic memory strategy.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-episodicoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-episodicoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "Consolidation" : EpisodicOverrideConsolidationConfigurationInput,
-  "Extraction" : EpisodicOverrideExtractionConfigurationInput,
-  "Reflection" : EpisodicOverrideReflectionConfigurationInput
+  "[Consolidation](#cfn-bedrockagentcore-memory-episodicoverride-consolidation)" : {{EpisodicOverrideConsolidationConfigurationInput}},
+  "[Extraction](#cfn-bedrockagentcore-memory-episodicoverride-extraction)" : {{EpisodicOverrideExtractionConfigurationInput}},
+  "[Reflection](#cfn-bedrockagentcore-memory-episodicoverride-reflection)" : {{EpisodicOverrideReflectionConfigurationInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-episodicoverride-syntax.yaml"></a>
 
-```yaml
-
-  Consolidation:
-    EpisodicOverrideConsolidationConfigurationInput
-  Extraction:
-    EpisodicOverrideExtractionConfigurationInput
-  Reflection:
-    EpisodicOverrideReflectionConfigurationInput
-
+```
+  [Consolidation](#cfn-bedrockagentcore-memory-episodicoverride-consolidation): {{
+    EpisodicOverrideConsolidationConfigurationInput}}
+  [Extraction](#cfn-bedrockagentcore-memory-episodicoverride-extraction): {{
+    EpisodicOverrideExtractionConfigurationInput}}
+  [Reflection](#cfn-bedrockagentcore-memory-episodicoverride-reflection): {{
+    EpisodicOverrideReflectionConfigurationInput}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-episodicoverride-properties"></a>
 
-`Consolidation`
+`Consolidation`  <a name="cfn-bedrockagentcore-memory-episodicoverride-consolidation"></a>
+Contains configurations for overriding the consolidation step of the episodic memory strategy.
+*Required*: No
+*Type*: [EpisodicOverrideConsolidationConfigurationInput](aws-properties-bedrockagentcore-memory-episodicoverrideconsolidationconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Contains configurations for overriding the consolidation step of the episodic memory
-strategy.
+`Extraction`  <a name="cfn-bedrockagentcore-memory-episodicoverride-extraction"></a>
+Contains configurations for overriding the extraction step of the episodic memory strategy.
+*Required*: No
+*Type*: [EpisodicOverrideExtractionConfigurationInput](aws-properties-bedrockagentcore-memory-episodicoverrideextractionconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EpisodicOverrideConsolidationConfigurationInput](aws-properties-bedrockagentcore-memory-episodicoverrideconsolidationconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Extraction`
-
-Contains configurations for overriding the extraction step of the episodic memory
-strategy.
-
-_Required_: No
-
-_Type_: [EpisodicOverrideExtractionConfigurationInput](aws-properties-bedrockagentcore-memory-episodicoverrideextractionconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Reflection`
-
-Contains configurations for overriding the reflection step of the episodic memory
-strategy.
-
-_Required_: No
-
-_Type_: [EpisodicOverrideReflectionConfigurationInput](aws-properties-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EpisodicMemoryStrategy
-
-EpisodicOverrideConsolidationConfigurationInput
+`Reflection`  <a name="cfn-bedrockagentcore-memory-episodicoverride-reflection"></a>
+Contains configurations for overriding the reflection step of the episodic memory strategy.
+*Required*: No
+*Type*: [EpisodicOverrideReflectionConfigurationInput](aws-properties-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

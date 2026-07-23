@@ -2,72 +2,53 @@
 title: "AWS::Deadline::Fleet MemoryMiBRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet MemoryMiBRange
+<a name="aws-properties-deadline-fleet-memorymibrange"></a>
 
 The range of memory in MiB.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-memorymibrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-memorymibrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Integer,
-  "Min" : Integer
+  "[Max](#cfn-deadline-fleet-memorymibrange-max)" : {{Integer}},
+  "[Min](#cfn-deadline-fleet-memorymibrange-min)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-memorymibrange-syntax.yaml"></a>
 
-```yaml
-
-  Max: Integer
-  Min: Integer
-
+```
+  [Max](#cfn-deadline-fleet-memorymibrange-max): {{Integer}}
+  [Min](#cfn-deadline-fleet-memorymibrange-min): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-memorymibrange-properties"></a>
 
-`Max`
-
+`Max`  <a name="cfn-deadline-fleet-memorymibrange-max"></a>
 The maximum amount of memory (in MiB).
+*Required*: No
+*Type*: Integer
+*Minimum*: `512`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `512`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
+`Min`  <a name="cfn-deadline-fleet-memorymibrange-min"></a>
 The minimum amount of memory (in MiB).
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `512`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HostConfiguration
-
-ServiceManagedEc2AutoScalingConfiguration
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `512`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,223 +2,162 @@
 title: "AWS::AppIntegrations::Application"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application
+<a name="aws-resource-appintegrations-application"></a>
 
 Creates and persists an Application resource.
 
 ## Syntax
+<a name="aws-resource-appintegrations-application-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appintegrations-application-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppIntegrations::Application",
   "Properties" : {
-      "ApplicationConfig" : ApplicationConfig,
-      "ApplicationSourceConfig" : ApplicationSourceConfig,
-      "ApplicationType" : String,
-      "Description" : String,
-      "IframeConfig" : IframeConfig,
-      "InitializationTimeout" : Integer,
-      "IsService" : Boolean,
-      "Name" : String,
-      "Namespace" : String,
-      "Permissions" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[ApplicationConfig](#cfn-appintegrations-application-applicationconfig)" : {{ApplicationConfig}},
+      "[ApplicationSourceConfig](#cfn-appintegrations-application-applicationsourceconfig)" : {{ApplicationSourceConfig}},
+      "[ApplicationType](#cfn-appintegrations-application-applicationtype)" : {{String}},
+      "[Description](#cfn-appintegrations-application-description)" : {{String}},
+      "[IframeConfig](#cfn-appintegrations-application-iframeconfig)" : {{IframeConfig}},
+      "[InitializationTimeout](#cfn-appintegrations-application-initializationtimeout)" : {{Integer}},
+      "[IsService](#cfn-appintegrations-application-isservice)" : {{Boolean}},
+      "[Name](#cfn-appintegrations-application-name)" : {{String}},
+      "[Namespace](#cfn-appintegrations-application-namespace)" : {{String}},
+      "[Permissions](#cfn-appintegrations-application-permissions)" : {{[ String, ... ]}},
+      "[Tags](#cfn-appintegrations-application-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appintegrations-application-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppIntegrations::Application
 Properties:
-  ApplicationConfig:
-    ApplicationConfig
-  ApplicationSourceConfig:
-    ApplicationSourceConfig
-  ApplicationType: String
-  Description: String
-  IframeConfig:
-    IframeConfig
-  InitializationTimeout: Integer
-  IsService: Boolean
-  Name: String
-  Namespace: String
-  Permissions:
-    - String
-  Tags:
-    - Tag
-
+  [ApplicationConfig](#cfn-appintegrations-application-applicationconfig): {{
+    ApplicationConfig}}
+  [ApplicationSourceConfig](#cfn-appintegrations-application-applicationsourceconfig): {{
+    ApplicationSourceConfig}}
+  [ApplicationType](#cfn-appintegrations-application-applicationtype): {{String}}
+  [Description](#cfn-appintegrations-application-description): {{String}}
+  [IframeConfig](#cfn-appintegrations-application-iframeconfig): {{
+    IframeConfig}}
+  [InitializationTimeout](#cfn-appintegrations-application-initializationtimeout): {{Integer}}
+  [IsService](#cfn-appintegrations-application-isservice): {{Boolean}}
+  [Name](#cfn-appintegrations-application-name): {{String}}
+  [Namespace](#cfn-appintegrations-application-namespace): {{String}}
+  [Permissions](#cfn-appintegrations-application-permissions): {{
+    - String}}
+  [Tags](#cfn-appintegrations-application-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-appintegrations-application-properties"></a>
 
-`ApplicationConfig`
-
+`ApplicationConfig`  <a name="cfn-appintegrations-application-applicationconfig"></a>
 Property description not available.
+*Required*: No
+*Type*: [ApplicationConfig](aws-properties-appintegrations-application-applicationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ApplicationConfig](aws-properties-appintegrations-application-applicationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationSourceConfig`
-
+`ApplicationSourceConfig`  <a name="cfn-appintegrations-application-applicationsourceconfig"></a>
 The configuration for where the application should be loaded from.
+*Required*: Yes
+*Type*: [ApplicationSourceConfig](aws-properties-appintegrations-application-applicationsourceconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ApplicationSourceConfig](aws-properties-appintegrations-application-applicationsourceconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationType`
-
+`ApplicationType`  <a name="cfn-appintegrations-application-applicationtype"></a>
 The type of application.
+*Required*: No
+*Type*: String
+*Allowed values*: `STANDARD | SERVICE | MCP_SERVER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STANDARD | SERVICE | MCP_SERVER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-appintegrations-application-description"></a>
 The description of the application.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IframeConfig`
-
+`IframeConfig`  <a name="cfn-appintegrations-application-iframeconfig"></a>
 Property description not available.
+*Required*: No
+*Type*: [IframeConfig](aws-properties-appintegrations-application-iframeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IframeConfig](aws-properties-appintegrations-application-iframeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InitializationTimeout`
-
+`InitializationTimeout`  <a name="cfn-appintegrations-application-initializationtimeout"></a>
 Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsService`
-
+`IsService`  <a name="cfn-appintegrations-application-isservice"></a>
 Indicates whether the application is a service.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-appintegrations-application-name"></a>
 The name of the application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\/\._ \-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\/\._ \-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-appintegrations-application-namespace"></a>
 The namespace of the application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9/\._\-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9/\._\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Permissions`
-
+`Permissions`  <a name="cfn-appintegrations-application-permissions"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags used to organize, track, or control access for this resource. For example, {
-"tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appintegrations-application-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-appintegrations-application-tags"></a>
+The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appintegrations-application-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appintegrations-application-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appintegrations-application-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-appintegrations-application-return-values-fn--getatt"></a>
 
-`ApplicationArn`
+####
+<a name="aws-resource-appintegrations-application-return-values-fn--getatt-fn--getatt"></a>
 
+`ApplicationArn`  <a name="ApplicationArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Application.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 A unique identifier for the Application.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon AppIntegrations
-
-ApplicationConfig
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,55 +2,41 @@
 title: "AWS::IoTEvents::AlarmModel InitializationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel InitializationConfiguration
+<a name="aws-properties-iotevents-alarmmodel-initializationconfiguration"></a>
 
-Specifies the default alarm state.
-The configuration applies to all alarms that were created based on this alarm model.
+Specifies the default alarm state. The configuration applies to all alarms that were created based on this alarm model.
 
 ## Syntax
+<a name="aws-properties-iotevents-alarmmodel-initializationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-alarmmodel-initializationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisabledOnInitialization" : Boolean
+  "[DisabledOnInitialization](#cfn-iotevents-alarmmodel-initializationconfiguration-disabledoninitialization)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-alarmmodel-initializationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DisabledOnInitialization: Boolean
-
+```
+  [DisabledOnInitialization](#cfn-iotevents-alarmmodel-initializationconfiguration-disabledoninitialization): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-alarmmodel-initializationconfiguration-properties"></a>
 
-`DisabledOnInitialization`
-
-The value must be `TRUE` or `FALSE`. If `FALSE`, all
-alarm instances created based on the alarm model are activated. The default value is
-`TRUE`.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Firehose
-
-IotEvents
+`DisabledOnInitialization`  <a name="cfn-iotevents-alarmmodel-initializationconfiguration-disabledoninitialization"></a>
+The value must be `TRUE` or `FALSE`. If `FALSE`, all alarm instances created based on the alarm model are activated. The default value is `TRUE`.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

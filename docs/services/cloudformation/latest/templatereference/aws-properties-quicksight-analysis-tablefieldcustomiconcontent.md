@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis TableFieldCustomIconContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis TableFieldCustomIconContent
+<a name="aws-properties-quicksight-analysis-tablefieldcustomiconcontent"></a>
 
 The custom icon content for the table link content configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-tablefieldcustomiconcontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-tablefieldcustomiconcontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "Icon" : String
+  "[Icon](#cfn-quicksight-analysis-tablefieldcustomiconcontent-icon)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-tablefieldcustomiconcontent-syntax.yaml"></a>
 
-```yaml
-
-  Icon: String
-
+```
+  [Icon](#cfn-quicksight-analysis-tablefieldcustomiconcontent-icon): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-tablefieldcustomiconcontent-properties"></a>
 
-`Icon`
-
+`Icon`  <a name="cfn-quicksight-analysis-tablefieldcustomiconcontent-icon"></a>
 The icon set type (link) of the custom icon content for table URL link content.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LINK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableConfiguration
-
-TableFieldCustomTextContent
+*Required*: No
+*Type*: String
+*Allowed values*: `LINK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

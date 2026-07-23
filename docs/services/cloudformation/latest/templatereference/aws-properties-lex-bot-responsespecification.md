@@ -2,72 +2,52 @@
 title: "AWS::Lex::Bot ResponseSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot ResponseSpecification
+<a name="aws-properties-lex-bot-responsespecification"></a>
 
-Specifies a list of message groups that Amazon Lex uses to respond the
-user input.
+Specifies a list of message groups that Amazon Lex uses to respond the user input.
 
 ## Syntax
+<a name="aws-properties-lex-bot-responsespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-responsespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowInterrupt" : Boolean,
-  "MessageGroupsList" : [ MessageGroup, ... ]
+  "[AllowInterrupt](#cfn-lex-bot-responsespecification-allowinterrupt)" : {{Boolean}},
+  "[MessageGroupsList](#cfn-lex-bot-responsespecification-messagegroupslist)" : {{[ MessageGroup, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-responsespecification-syntax.yaml"></a>
 
-```yaml
-
-  AllowInterrupt: Boolean
-  MessageGroupsList:
-    - MessageGroup
-
+```
+  [AllowInterrupt](#cfn-lex-bot-responsespecification-allowinterrupt): {{Boolean}}
+  [MessageGroupsList](#cfn-lex-bot-responsespecification-messagegroupslist): {{
+    - MessageGroup}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-responsespecification-properties"></a>
 
-`AllowInterrupt`
+`AllowInterrupt`  <a name="cfn-lex-bot-responsespecification-allowinterrupt"></a>
+Indicates whether the user can interrupt a speech response from Amazon Lex.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Indicates whether the user can interrupt a speech response from
-Amazon Lex.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MessageGroupsList`
-
-A collection of responses that Amazon Lex can send to the user. Amazon Lex
-chooses the actual response to send at runtime.
-
-_Required_: Yes
-
-_Type_: Array of [MessageGroup](aws-properties-lex-bot-messagegroup.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Replication
-
-RuntimeSettings
+`MessageGroupsList`  <a name="cfn-lex-bot-responsespecification-messagegroupslist"></a>
+A collection of responses that Amazon Lex can send to the user. Amazon Lex chooses the actual response to send at runtime.
+*Required*: Yes
+*Type*: Array of [MessageGroup](aws-properties-lex-bot-messagegroup.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

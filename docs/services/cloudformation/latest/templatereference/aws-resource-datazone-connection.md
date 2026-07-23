@@ -2,213 +2,168 @@
 title: "AWS::DataZone::Connection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection
+<a name="aws-resource-datazone-connection"></a>
 
-In Amazon DataZone, a connection enables you to connect your resources (domains, projects, and environments) to
-external resources and services.
+In Amazon DataZone, a connection enables you to connect your resources (domains, projects, and environments) to external resources and services.
 
 ## Syntax
+<a name="aws-resource-datazone-connection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datazone-connection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataZone::Connection",
   "Properties" : {
-      "AwsLocation" : AwsLocation,
-      "Description" : String,
-      "DomainIdentifier" : String,
-      "EnableTrustedIdentityPropagation" : Boolean,
-      "EnvironmentIdentifier" : String,
-      "Name" : String,
-      "ProjectIdentifier" : String,
-      "Props" : ConnectionPropertiesInput,
-      "Scope" : String
+      "[AwsLocation](#cfn-datazone-connection-awslocation)" : {{AwsLocation}},
+      "[Configurations](#cfn-datazone-connection-configurations)" : {{[ ConnectionConfiguration, ... ]}},
+      "[Description](#cfn-datazone-connection-description)" : {{String}},
+      "[DomainIdentifier](#cfn-datazone-connection-domainidentifier)" : {{String}},
+      "[EnableTrustedIdentityPropagation](#cfn-datazone-connection-enabletrustedidentitypropagation)" : {{Boolean}},
+      "[EnvironmentIdentifier](#cfn-datazone-connection-environmentidentifier)" : {{String}},
+      "[Name](#cfn-datazone-connection-name)" : {{String}},
+      "[ProjectIdentifier](#cfn-datazone-connection-projectidentifier)" : {{String}},
+      "[Props](#cfn-datazone-connection-props)" : {{ConnectionPropertiesInput}},
+      "[Scope](#cfn-datazone-connection-scope)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datazone-connection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataZone::Connection
 Properties:
-  AwsLocation:
-    AwsLocation
-  Description: String
-  DomainIdentifier: String
-  EnableTrustedIdentityPropagation: Boolean
-  EnvironmentIdentifier: String
-  Name: String
-  ProjectIdentifier: String
-  Props:
-    ConnectionPropertiesInput
-  Scope: String
-
+  [AwsLocation](#cfn-datazone-connection-awslocation): {{
+    AwsLocation}}
+  [Configurations](#cfn-datazone-connection-configurations): {{
+    - ConnectionConfiguration}}
+  [Description](#cfn-datazone-connection-description): {{String}}
+  [DomainIdentifier](#cfn-datazone-connection-domainidentifier): {{String}}
+  [EnableTrustedIdentityPropagation](#cfn-datazone-connection-enabletrustedidentitypropagation): {{Boolean}}
+  [EnvironmentIdentifier](#cfn-datazone-connection-environmentidentifier): {{String}}
+  [Name](#cfn-datazone-connection-name): {{String}}
+  [ProjectIdentifier](#cfn-datazone-connection-projectidentifier): {{String}}
+  [Props](#cfn-datazone-connection-props): {{
+    ConnectionPropertiesInput}}
+  [Scope](#cfn-datazone-connection-scope): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-datazone-connection-properties"></a>
 
-`AwsLocation`
-
+`AwsLocation`  <a name="cfn-datazone-connection-awslocation"></a>
 The location where the connection is created.
+*Required*: No
+*Type*: [AwsLocation](aws-properties-datazone-connection-awslocation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Configurations`  <a name="cfn-datazone-connection-configurations"></a>
+The configurations of a connection summary.
+*Required*: No
+*Type*: Array of [ConnectionConfiguration](aws-properties-datazone-connection-connectionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AwsLocation](aws-properties-datazone-connection-awslocation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-datazone-connection-description"></a>
 Connection description.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S\s]*$`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S\s]*$`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainIdentifier`
-
+`DomainIdentifier`  <a name="cfn-datazone-connection-domainidentifier"></a>
 The ID of the domain where the connection is created.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^dzd[_-][a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^dzd[_-][a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnableTrustedIdentityPropagation`
-
+`EnableTrustedIdentityPropagation`  <a name="cfn-datazone-connection-enabletrustedidentitypropagation"></a>
 Specifies whether the trusted identity propagation is enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnvironmentIdentifier`
-
+`EnvironmentIdentifier`  <a name="cfn-datazone-connection-environmentidentifier"></a>
 The ID of the environment where the connection is created.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-datazone-connection-name"></a>
 The name of the connection.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w][\w\.\-\_]*$`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w][\w\.\-\_]*$`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProjectIdentifier`
-
+`ProjectIdentifier`  <a name="cfn-datazone-connection-projectidentifier"></a>
 The ID of the project where you want to list connections.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Props`
-
+`Props`  <a name="cfn-datazone-connection-props"></a>
 Connection props.
+*Required*: No
+*Type*: [ConnectionPropertiesInput](aws-properties-datazone-connection-connectionpropertiesinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConnectionPropertiesInput](aws-properties-datazone-connection-connectionpropertiesinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scope`
-
+`Scope`  <a name="cfn-datazone-connection-scope"></a>
 The scope of the connection.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DOMAIN | PROJECT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Allowed values*: `DOMAIN | PROJECT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-datazone-connection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datazone-connection-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and
-`ConnectionId`, which uniquely identifies a connection. For example: `{ "Ref": "MyConnection"
-    }` for the resource with the logical ID `MyConnection`, `Ref` returns
-`DomainId|ConnectionId`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and `ConnectionId`, which uniquely identifies a connection. For example: `{ "Ref": "MyConnection" }` for the resource with the logical ID `MyConnection`, `Ref` returns `DomainId|ConnectionId`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datazone-connection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ConnectionId`
+####
+<a name="aws-resource-datazone-connection-return-values-fn--getatt-fn--getatt"></a>
 
+`ConnectionId`  <a name="ConnectionId-fn::getatt"></a>
 The ID of the connection.
 
-`DomainId`
-
+`DomainId`  <a name="DomainId-fn::getatt"></a>
 The domain ID of the connection.
 
-`DomainUnitId`
-
+`DomainUnitId`  <a name="DomainUnitId-fn::getatt"></a>
 The domain unit ID of the connection.
 
-`EnvironmentId`
-
+`EnvironmentId`  <a name="EnvironmentId-fn::getatt"></a>
 The ID of the environment.
 
-`EnvironmentUserRole`
-
+`EnvironmentUserRole`  <a name="EnvironmentUserRole-fn::getatt"></a>
 The environment user role.
 
-`ProjectId`
-
+`ProjectId`  <a name="ProjectId-fn::getatt"></a>
 The ID of the project.
 
-`Type`
-
+`Type`  <a name="Type-fn::getatt"></a>
 The type of the connection.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon DataZone
-
-AmazonQPropertiesInput
 
 All content copied from https://docs.aws.amazon.com/.

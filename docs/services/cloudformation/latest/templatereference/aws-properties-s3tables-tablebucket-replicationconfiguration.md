@@ -2,69 +2,52 @@
 title: "AWS::S3Tables::TableBucket ReplicationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::TableBucket ReplicationConfiguration
+<a name="aws-properties-s3tables-tablebucket-replicationconfiguration"></a>
 
-The `ReplicationConfiguration` property type specifies Property description not available. for an [AWS::S3Tables::TableBucket](aws-resource-s3tables-tablebucket.md).
+<a name="aws-properties-s3tables-tablebucket-replicationconfiguration-description"></a>The `ReplicationConfiguration` property type specifies Property description not available. for an [AWS::S3Tables::TableBucket](aws-resource-s3tables-tablebucket.md).
 
 ## Syntax
+<a name="aws-properties-s3tables-tablebucket-replicationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-tablebucket-replicationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Role" : String,
-  "Rules" : [ ReplicationRule, ... ]
+  "[Role](#cfn-s3tables-tablebucket-replicationconfiguration-role)" : {{String}},
+  "[Rules](#cfn-s3tables-tablebucket-replicationconfiguration-rules)" : {{[ ReplicationRule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-tablebucket-replicationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Role: String
-  Rules:
-    - ReplicationRule
-
+```
+  [Role](#cfn-s3tables-tablebucket-replicationconfiguration-role): {{String}}
+  [Rules](#cfn-s3tables-tablebucket-replicationconfiguration-rules): {{
+    - ReplicationRule}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-tablebucket-replicationconfiguration-properties"></a>
 
-`Role`
-
+`Role`  <a name="cfn-s3tables-tablebucket-replicationconfiguration-role"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rules`
-
+`Rules`  <a name="cfn-s3tables-tablebucket-replicationconfiguration-rules"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [ReplicationRule](aws-properties-s3tables-tablebucket-replicationrule.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetricsConfiguration
-
-ReplicationDestination
+*Required*: Yes
+*Type*: Array of [ReplicationRule](aws-properties-s3tables-tablebucket-replicationrule.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

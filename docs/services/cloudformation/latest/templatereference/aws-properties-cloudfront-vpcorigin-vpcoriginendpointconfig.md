@@ -2,120 +2,93 @@
 title: "AWS::CloudFront::VpcOrigin VpcOriginEndpointConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::VpcOrigin VpcOriginEndpointConfig
+<a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig"></a>
 
 An Amazon CloudFront VPC origin endpoint configuration.
 
 ## Syntax
+<a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arn" : String,
-  "HTTPPort" : Integer,
-  "HTTPSPort" : Integer,
-  "Name" : String,
-  "OriginProtocolPolicy" : String,
-  "OriginSSLProtocols" : [ String, ... ]
+  "[Arn](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-arn)" : {{String}},
+  "[HTTPPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpport)" : {{Integer}},
+  "[HTTPSPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpsport)" : {{Integer}},
+  "[IpAddressType](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-ipaddresstype)" : {{String}},
+  "[Name](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-name)" : {{String}},
+  "[OriginProtocolPolicy](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-originprotocolpolicy)" : {{String}},
+  "[OriginSSLProtocols](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-originsslprotocols)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig-syntax.yaml"></a>
 
-```yaml
-
-  Arn: String
-  HTTPPort: Integer
-  HTTPSPort: Integer
-  Name: String
-  OriginProtocolPolicy: String
-  OriginSSLProtocols:
-    - String
-
+```
+  [Arn](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-arn): {{String}}
+  [HTTPPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpport): {{Integer}}
+  [HTTPSPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpsport): {{Integer}}
+  [IpAddressType](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-ipaddresstype): {{String}}
+  [Name](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-name): {{String}}
+  [OriginProtocolPolicy](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-originprotocolpolicy): {{String}}
+  [OriginSSLProtocols](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-originsslprotocols): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig-properties"></a>
 
-`Arn`
-
+`Arn`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-arn"></a>
 The ARN of the CloudFront VPC origin endpoint configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HTTPPort`
-
+`HTTPPort`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpport"></a>
 The HTTP port for the CloudFront VPC origin endpoint configuration. The default value is `80`.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HTTPSPort`
-
+`HTTPSPort`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpsport"></a>
 The HTTPS port of the CloudFront VPC origin endpoint configuration. The default value is `443`.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IpAddressType`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-ipaddresstype"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ipv4 | dualstack`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-name"></a>
 The name of the CloudFront VPC origin endpoint configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OriginProtocolPolicy`
-
+`OriginProtocolPolicy`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-originprotocolpolicy"></a>
 The origin protocol policy for the CloudFront VPC origin endpoint configuration.
+*Required*: No
+*Type*: String
+*Allowed values*: `http-only | match-viewer | https-only`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `http-only | match-viewer | https-only`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OriginSSLProtocols`
-
-Specifies the minimum SSL/TLS protocol that CloudFront uses when connecting to your origin
-over HTTPS. Valid values include `SSLv3`, `TLSv1`,
-`TLSv1.1`, and `TLSv1.2`.
-
-For more information, see [Minimum Origin SSL Protocol](../../../amazoncloudfront/latest/developerguide/downloaddistvaluesorigin.md#DownloadDistValuesOriginSSLProtocols) in the
-_Amazon CloudFront Developer Guide_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+`OriginSSLProtocols`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-originsslprotocols"></a>
+Specifies the minimum SSL/TLS protocol that CloudFront uses when connecting to your origin over HTTPS. Valid values include `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
+For more information, see [Minimum Origin SSL Protocol](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesOrigin.html#DownloadDistValuesOriginSSLProtocols) in the *Amazon CloudFront Developer Guide*.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

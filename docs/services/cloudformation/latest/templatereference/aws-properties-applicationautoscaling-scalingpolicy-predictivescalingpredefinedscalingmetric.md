@@ -2,97 +2,66 @@
 title: "AWS::ApplicationAutoScaling::ScalingPolicy PredictiveScalingPredefinedScalingMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalingPolicy PredictiveScalingPredefinedScalingMetric
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric"></a>
 
-Describes a scaling metric for a predictive scaling policy.
+ Describes a scaling metric for a predictive scaling policy.
 
-When returned in the output of `DescribePolicies`, it indicates that a
-predictive scaling policy uses individually specified load and scaling metrics instead
-of a metric pair.
+When returned in the output of `DescribePolicies`, it indicates that a predictive scaling policy uses individually specified load and scaling metrics instead of a metric pair.
 
 The following predefined metrics are available for predictive scaling:
-
-- `ECSServiceAverageCPUUtilization`
-
-- `ECSServiceAverageMemoryUtilization`
-
-- `ECSServiceCPUUtilization`
-
-- `ECSServiceMemoryUtilization`
-
-- `ECSServiceTotalCPUUtilization`
-
-- `ECSServiceTotalMemoryUtilization`
-
-- `ALBRequestCount`
-
-- `ALBRequestCountPerTarget`
-
-- `TotalALBRequestCount`
++  `ECSServiceAverageCPUUtilization`
++  `ECSServiceAverageMemoryUtilization`
++  `ECSServiceCPUUtilization`
++  `ECSServiceMemoryUtilization`
++  `ECSServiceTotalCPUUtilization`
++  `ECSServiceTotalMemoryUtilization`
++  `ALBRequestCount`
++  `ALBRequestCountPerTarget`
++  `TotalALBRequestCount`
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "PredefinedMetricType" : String,
-  "ResourceLabel" : String
+  "[PredefinedMetricType](#cfn-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-predefinedmetrictype)" : {{String}},
+  "[ResourceLabel](#cfn-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-resourcelabel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-syntax.yaml"></a>
 
-```yaml
-
-  PredefinedMetricType: String
-  ResourceLabel: String
-
+```
+  [PredefinedMetricType](#cfn-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-predefinedmetrictype): {{String}}
+  [ResourceLabel](#cfn-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-resourcelabel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-properties"></a>
 
-`PredefinedMetricType`
+`PredefinedMetricType`  <a name="cfn-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-predefinedmetrictype"></a>
+ The metric type.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The metric type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceLabel`
-
-A label that uniquely identifies a specific target group from which to determine
-the average request count.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1023`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PredictiveScalingPredefinedMetricPair
-
-StepAdjustment
+`ResourceLabel`  <a name="cfn-applicationautoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-resourcelabel"></a>
+ A label that uniquely identifies a specific target group from which to determine the average request count.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1023`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

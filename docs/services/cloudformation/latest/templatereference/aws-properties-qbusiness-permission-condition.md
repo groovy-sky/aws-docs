@@ -2,87 +2,63 @@
 title: "AWS::QBusiness::Permission Condition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Permission Condition
+<a name="aws-properties-qbusiness-permission-condition"></a>
 
-The `Condition` property type specifies Property description not available. for an [AWS::QBusiness::Permission](aws-resource-qbusiness-permission.md).
+<a name="aws-properties-qbusiness-permission-condition-description"></a>The `Condition` property type specifies Property description not available. for an [AWS::QBusiness::Permission](aws-resource-qbusiness-permission.md).
 
 ## Syntax
+<a name="aws-properties-qbusiness-permission-condition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-permission-condition-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionKey" : String,
-  "ConditionOperator" : String,
-  "ConditionValues" : [ String, ... ]
+  "[ConditionKey](#cfn-qbusiness-permission-condition-conditionkey)" : {{String}},
+  "[ConditionOperator](#cfn-qbusiness-permission-condition-conditionoperator)" : {{String}},
+  "[ConditionValues](#cfn-qbusiness-permission-condition-conditionvalues)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-permission-condition-syntax.yaml"></a>
 
-```yaml
-
-  ConditionKey: String
-  ConditionOperator: String
-  ConditionValues:
-    - String
-
+```
+  [ConditionKey](#cfn-qbusiness-permission-condition-conditionkey): {{String}}
+  [ConditionOperator](#cfn-qbusiness-permission-condition-conditionoperator): {{String}}
+  [ConditionValues](#cfn-qbusiness-permission-condition-conditionvalues): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-permission-condition-properties"></a>
 
-`ConditionKey`
-
+`ConditionKey`  <a name="cfn-qbusiness-permission-condition-conditionkey"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^aws:PrincipalTag/qbusiness-dataaccessor:[a-zA-Z]+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^aws:PrincipalTag/qbusiness-dataaccessor:[a-zA-Z]+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConditionOperator`
-
+`ConditionOperator`  <a name="cfn-qbusiness-permission-condition-conditionoperator"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `StringEquals`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `StringEquals`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConditionValues`
-
+`ConditionValues`  <a name="cfn-qbusiness-permission-condition-conditionvalues"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9_-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::QBusiness::Permission
-
-AWS::QBusiness::Plugin
+*Required*: Yes
+*Type*: Array of String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_-]*$`
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,161 +2,119 @@
 title: "AWS::GroundStation::Config ConfigData"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config ConfigData
+<a name="aws-properties-groundstation-config-configdata"></a>
 
-Config objects provide information to Ground Station about how to configure the antenna and how data flows during a contact.
+ Config objects provide information to Ground Station about how to configure the antenna and how data flows during a contact.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-configdata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-configdata-syntax.json"></a>
 
-```json
-
+```
 {
-  "AntennaDownlinkConfig" : AntennaDownlinkConfig,
-  "AntennaDownlinkDemodDecodeConfig" : AntennaDownlinkDemodDecodeConfig,
-  "AntennaUplinkConfig" : AntennaUplinkConfig,
-  "DataflowEndpointConfig" : DataflowEndpointConfig,
-  "S3RecordingConfig" : S3RecordingConfig,
-  "TelemetrySinkConfig" : TelemetrySinkConfig,
-  "TrackingConfig" : TrackingConfig,
-  "UplinkEchoConfig" : UplinkEchoConfig
+  "[AntennaDownlinkConfig](#cfn-groundstation-config-configdata-antennadownlinkconfig)" : {{AntennaDownlinkConfig}},
+  "[AntennaDownlinkDemodDecodeConfig](#cfn-groundstation-config-configdata-antennadownlinkdemoddecodeconfig)" : {{AntennaDownlinkDemodDecodeConfig}},
+  "[AntennaUplinkConfig](#cfn-groundstation-config-configdata-antennauplinkconfig)" : {{AntennaUplinkConfig}},
+  "[DataflowEndpointConfig](#cfn-groundstation-config-configdata-dataflowendpointconfig)" : {{DataflowEndpointConfig}},
+  "[S3RecordingConfig](#cfn-groundstation-config-configdata-s3recordingconfig)" : {{S3RecordingConfig}},
+  "[TelemetrySinkConfig](#cfn-groundstation-config-configdata-telemetrysinkconfig)" : {{TelemetrySinkConfig}},
+  "[TrackingConfig](#cfn-groundstation-config-configdata-trackingconfig)" : {{TrackingConfig}},
+  "[UplinkEchoConfig](#cfn-groundstation-config-configdata-uplinkechoconfig)" : {{UplinkEchoConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-configdata-syntax.yaml"></a>
 
-```yaml
-
-  AntennaDownlinkConfig:
-    AntennaDownlinkConfig
-  AntennaDownlinkDemodDecodeConfig:
-    AntennaDownlinkDemodDecodeConfig
-  AntennaUplinkConfig:
-    AntennaUplinkConfig
-  DataflowEndpointConfig:
-    DataflowEndpointConfig
-  S3RecordingConfig:
-    S3RecordingConfig
-  TelemetrySinkConfig:
-    TelemetrySinkConfig
-  TrackingConfig:
-    TrackingConfig
-  UplinkEchoConfig:
-    UplinkEchoConfig
-
+```
+  [AntennaDownlinkConfig](#cfn-groundstation-config-configdata-antennadownlinkconfig): {{
+    AntennaDownlinkConfig}}
+  [AntennaDownlinkDemodDecodeConfig](#cfn-groundstation-config-configdata-antennadownlinkdemoddecodeconfig): {{
+    AntennaDownlinkDemodDecodeConfig}}
+  [AntennaUplinkConfig](#cfn-groundstation-config-configdata-antennauplinkconfig): {{
+    AntennaUplinkConfig}}
+  [DataflowEndpointConfig](#cfn-groundstation-config-configdata-dataflowendpointconfig): {{
+    DataflowEndpointConfig}}
+  [S3RecordingConfig](#cfn-groundstation-config-configdata-s3recordingconfig): {{
+    S3RecordingConfig}}
+  [TelemetrySinkConfig](#cfn-groundstation-config-configdata-telemetrysinkconfig): {{
+    TelemetrySinkConfig}}
+  [TrackingConfig](#cfn-groundstation-config-configdata-trackingconfig): {{
+    TrackingConfig}}
+  [UplinkEchoConfig](#cfn-groundstation-config-configdata-uplinkechoconfig): {{
+    UplinkEchoConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-configdata-properties"></a>
 
-`AntennaDownlinkConfig`
+`AntennaDownlinkConfig`  <a name="cfn-groundstation-config-configdata-antennadownlinkconfig"></a>
+ Provides information for an antenna downlink config object. Antenna downlink config objects are used to provide parameters for downlinks where no demodulation or decoding is performed by Ground Station (RF over IP downlinks).
+*Required*: No
+*Type*: [AntennaDownlinkConfig](aws-properties-groundstation-config-antennadownlinkconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Provides information for an antenna downlink config object.
-Antenna downlink config objects are used to provide parameters for downlinks where no demodulation or decoding is performed by Ground Station (RF over IP downlinks).
+`AntennaDownlinkDemodDecodeConfig`  <a name="cfn-groundstation-config-configdata-antennadownlinkdemoddecodeconfig"></a>
+ Provides information for a downlink demod decode config object. Downlink demod decode config objects are used to provide parameters for downlinks where the Ground Station service will demodulate and decode the downlinked data.
+*Required*: No
+*Type*: [AntennaDownlinkDemodDecodeConfig](aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AntennaUplinkConfig`  <a name="cfn-groundstation-config-configdata-antennauplinkconfig"></a>
+ Provides information for an uplink config object. Uplink config objects are used to provide parameters for uplink contacts.
+*Required*: No
+*Type*: [AntennaUplinkConfig](aws-properties-groundstation-config-antennauplinkconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AntennaDownlinkConfig](aws-properties-groundstation-config-antennadownlinkconfig.md)
+`DataflowEndpointConfig`  <a name="cfn-groundstation-config-configdata-dataflowendpointconfig"></a>
+ Provides information for a dataflow endpoint config object. Dataflow endpoint config objects are used to provide parameters about which IP endpoint(s) to use during a contact. Dataflow endpoints are where Ground Station sends data during a downlink contact and where Ground Station receives data to send to the satellite during an uplink contact.
+*Required*: No
+*Type*: [DataflowEndpointConfig](aws-properties-groundstation-config-dataflowendpointconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`S3RecordingConfig`  <a name="cfn-groundstation-config-configdata-s3recordingconfig"></a>
+ Provides information for an S3 recording config object. S3 recording config objects are used to provide parameters for S3 recording during downlink contacts.
+*Required*: No
+*Type*: [S3RecordingConfig](aws-properties-groundstation-config-s3recordingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`AntennaDownlinkDemodDecodeConfig`
+`TelemetrySinkConfig`  <a name="cfn-groundstation-config-configdata-telemetrysinkconfig"></a>
+ Provides information for a telemetry sink config object. Telemetry sink config objects are used to provide parameters for telemetry delivery during contacts.
+*Required*: No
+*Type*: [TelemetrySinkConfig](aws-properties-groundstation-config-telemetrysinkconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Provides information for a downlink demod decode config object.
-Downlink demod decode config objects are used to provide parameters for downlinks where the Ground Station service will demodulate and decode the downlinked data.
+`TrackingConfig`  <a name="cfn-groundstation-config-configdata-trackingconfig"></a>
+ Provides information for a tracking config object. Tracking config objects are used to provide parameters about how to track the satellite through the sky during a contact.
+*Required*: No
+*Type*: [TrackingConfig](aws-properties-groundstation-config-trackingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AntennaDownlinkDemodDecodeConfig](aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AntennaUplinkConfig`
-
-Provides information for an uplink config object.
-Uplink config objects are used to provide parameters for uplink contacts.
-
-_Required_: No
-
-_Type_: [AntennaUplinkConfig](aws-properties-groundstation-config-antennauplinkconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataflowEndpointConfig`
-
-Provides information for a dataflow endpoint config object.
-Dataflow endpoint config objects are used to provide parameters about which IP endpoint(s) to use during a contact.
-Dataflow endpoints are where Ground Station sends data during a downlink contact and where Ground Station receives data to send to the satellite during an uplink contact.
-
-_Required_: No
-
-_Type_: [DataflowEndpointConfig](aws-properties-groundstation-config-dataflowendpointconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3RecordingConfig`
-
-Provides information for an S3 recording config object.
-S3 recording config objects are used to provide parameters for S3 recording during downlink contacts.
-
-_Required_: No
-
-_Type_: [S3RecordingConfig](aws-properties-groundstation-config-s3recordingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TelemetrySinkConfig`
-
-Provides information for a telemetry sink config object.
-Telemetry sink config objects are used to provide parameters for telemetry delivery during contacts.
-
-_Required_: No
-
-_Type_: [TelemetrySinkConfig](aws-properties-groundstation-config-telemetrysinkconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrackingConfig`
-
-Provides information for a tracking config object.
-Tracking config objects are used to provide parameters about how to track the satellite through the sky during a contact.
-
-_Required_: No
-
-_Type_: [TrackingConfig](aws-properties-groundstation-config-trackingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UplinkEchoConfig`
-
-Provides information for an uplink echo config object.
-Uplink echo config objects are used to provide parameters for uplink echo during uplink contacts.
-
-_Required_: No
-
-_Type_: [UplinkEchoConfig](aws-properties-groundstation-config-uplinkechoconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`UplinkEchoConfig`  <a name="cfn-groundstation-config-configdata-uplinkechoconfig"></a>
+ Provides information for an uplink echo config object. Uplink echo config objects are used to provide parameters for uplink echo during uplink contacts.
+*Required*: No
+*Type*: [UplinkEchoConfig](aws-properties-groundstation-config-uplinkechoconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-configdata--examples"></a>
 
 ### Create a ConfigData
+<a name="aws-properties-groundstation-config-configdata--examples--Create_a_ConfigData"></a>
 
-A `ConfigData` can only contain a single config subtype.
-See the config subtype's documentation for more information on its properties.
-An example of a `TrackingConfig` is provided below.
+A `ConfigData` can only contain a single config subtype. See the config subtype's documentation for more information on its properties. An example of a `TrackingConfig` is provided below.
 
 #### JSON
+<a name="aws-properties-groundstation-config-configdata--examples--Create_a_ConfigData--json"></a>
 
-```json
-
+```
 {
   "TrackingConfig": {
     "Autotrack": "PREFERRED"
@@ -165,17 +123,11 @@ An example of a `TrackingConfig` is provided below.
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-configdata--examples--Create_a_ConfigData--yaml"></a>
 
-```yaml
-
+```
 TrackingConfig:
   Autotrack: "PREFERRED"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AntennaUplinkConfig
-
-DataflowEndpointConfig
 
 All content copied from https://docs.aws.amazon.com/.

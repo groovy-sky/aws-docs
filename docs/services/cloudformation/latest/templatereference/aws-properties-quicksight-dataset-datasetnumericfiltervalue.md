@@ -2,52 +2,41 @@
 title: "AWS::QuickSight::DataSet DataSetNumericFilterValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataSetNumericFilterValue
+<a name="aws-properties-quicksight-dataset-datasetnumericfiltervalue"></a>
 
 Represents a numeric value used in filter conditions.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datasetnumericfiltervalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datasetnumericfiltervalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "StaticValue" : Number
+  "[StaticValue](#cfn-quicksight-dataset-datasetnumericfiltervalue-staticvalue)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datasetnumericfiltervalue-syntax.yaml"></a>
 
-```yaml
-
-  StaticValue: Number
-
+```
+  [StaticValue](#cfn-quicksight-dataset-datasetnumericfiltervalue-staticvalue): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datasetnumericfiltervalue-properties"></a>
 
-`StaticValue`
-
+`StaticValue`  <a name="cfn-quicksight-dataset-datasetnumericfiltervalue-staticvalue"></a>
 A static numeric value used for filtering.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetNumericFilterCondition
-
-DataSetNumericRangeFilterCondition
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,75 +2,53 @@
 title: "AWS::ACMPCA::Certificate ExtendedKeyUsage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::Certificate ExtendedKeyUsage
+<a name="aws-properties-acmpca-certificate-extendedkeyusage"></a>
 
-Specifies additional purposes for which the certified public key may be used other
-than basic purposes indicated in the `KeyUsage` extension.
+Specifies additional purposes for which the certified public key may be used other than basic purposes indicated in the `KeyUsage` extension.
 
 ## Syntax
+<a name="aws-properties-acmpca-certificate-extendedkeyusage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificate-extendedkeyusage-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExtendedKeyUsageObjectIdentifier" : String,
-  "ExtendedKeyUsageType" : String
+  "[ExtendedKeyUsageObjectIdentifier](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusageobjectidentifier)" : {{String}},
+  "[ExtendedKeyUsageType](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusagetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificate-extendedkeyusage-syntax.yaml"></a>
 
-```yaml
-
-  ExtendedKeyUsageObjectIdentifier: String
-  ExtendedKeyUsageType: String
-
+```
+  [ExtendedKeyUsageObjectIdentifier](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusageobjectidentifier): {{String}}
+  [ExtendedKeyUsageType](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusagetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificate-extendedkeyusage-properties"></a>
 
-`ExtendedKeyUsageObjectIdentifier`
+`ExtendedKeyUsageObjectIdentifier`  <a name="cfn-acmpca-certificate-extendedkeyusage-extendedkeyusageobjectidentifier"></a>
+Specifies a custom `ExtendedKeyUsage` with an object identifier (OID).
+*Required*: No
+*Type*: String
+*Pattern*: `([0-2])\.([0-9]|([0-3][0-9]))((\.([0-9]+)){0,126})`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specifies a custom `ExtendedKeyUsage` with an object identifier
-(OID).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `([0-2])\.([0-9]|([0-3][0-9]))((\.([0-9]+)){0,126})`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ExtendedKeyUsageType`
-
-Specifies a standard `ExtendedKeyUsage` as defined as in [RFC\
-5280](https://datatracker.ietf.org/doc/html/rfc5280).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SERVER_AUTH | CLIENT_AUTH | CODE_SIGNING | EMAIL_PROTECTION | TIME_STAMPING | OCSP_SIGNING | SMART_CARD_LOGIN | DOCUMENT_SIGNING | CERTIFICATE_TRANSPARENCY`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EdiPartyName
-
-Extensions
+`ExtendedKeyUsageType`  <a name="cfn-acmpca-certificate-extendedkeyusage-extendedkeyusagetype"></a>
+Specifies a standard `ExtendedKeyUsage` as defined as in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12).
+*Required*: No
+*Type*: String
+*Allowed values*: `SERVER_AUTH | CLIENT_AUTH | CODE_SIGNING | EMAIL_PROTECTION | TIME_STAMPING | OCSP_SIGNING | SMART_CARD_LOGIN | DOCUMENT_SIGNING | CERTIFICATE_TRANSPARENCY`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

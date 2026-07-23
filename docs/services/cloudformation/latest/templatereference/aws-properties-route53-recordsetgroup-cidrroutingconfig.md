@@ -2,76 +2,55 @@
 title: "AWS::Route53::RecordSetGroup CidrRoutingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::RecordSetGroup CidrRoutingConfig
+<a name="aws-properties-route53-recordsetgroup-cidrroutingconfig"></a>
 
-The object that is specified in resource record set object when you are linking a
-resource record set to a CIDR location.
+The object that is specified in resource record set object when you are linking a resource record set to a CIDR location.
 
-A `LocationName` with an asterisk “\*” can be used to create a default CIDR
-record. `CollectionId` is still required for default record.
+A `LocationName` with an asterisk “\*” can be used to create a default CIDR record. `CollectionId` is still required for default record.
 
 ## Syntax
+<a name="aws-properties-route53-recordsetgroup-cidrroutingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53-recordsetgroup-cidrroutingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CollectionId" : String,
-  "LocationName" : String
+  "[CollectionId](#cfn-route53-recordsetgroup-cidrroutingconfig-collectionid)" : {{String}},
+  "[LocationName](#cfn-route53-recordsetgroup-cidrroutingconfig-locationname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53-recordsetgroup-cidrroutingconfig-syntax.yaml"></a>
 
-```yaml
-
-  CollectionId: String
-  LocationName: String
-
+```
+  [CollectionId](#cfn-route53-recordsetgroup-cidrroutingconfig-collectionid): {{String}}
+  [LocationName](#cfn-route53-recordsetgroup-cidrroutingconfig-locationname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53-recordsetgroup-cidrroutingconfig-properties"></a>
 
-`CollectionId`
-
+`CollectionId`  <a name="cfn-route53-recordsetgroup-cidrroutingconfig-collectionid"></a>
 The CIDR collection ID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocationName`
-
+`LocationName`  <a name="cfn-route53-recordsetgroup-cidrroutingconfig-locationname"></a>
 The CIDR collection location name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[0-9A-Za-z_\-\*]+`
-
-_Minimum_: `1`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AliasTarget
-
-Coordinates
+*Required*: Yes
+*Type*: String
+*Pattern*: `[0-9A-Za-z_\-\*]+`
+*Minimum*: `1`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

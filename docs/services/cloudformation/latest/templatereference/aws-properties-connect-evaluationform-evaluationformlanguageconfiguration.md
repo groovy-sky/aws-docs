@@ -2,54 +2,42 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormLanguageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormLanguageConfiguration
+<a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration"></a>
 
 Language configuration for an evaluation form.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FormLanguage" : String
+  "[FormLanguage](#cfn-connect-evaluationform-evaluationformlanguageconfiguration-formlanguage)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FormLanguage: String
-
+```
+  [FormLanguage](#cfn-connect-evaluationform-evaluationformlanguageconfiguration-formlanguage): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration-properties"></a>
 
-`FormLanguage`
-
+`FormLanguage`  <a name="cfn-connect-evaluationform-evaluationformlanguageconfiguration-formlanguage"></a>
 The language for the evaluation form.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `de-DE | en-US | es-ES | fr-FR | it-IT | pt-BR`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormItemEnablementSourceValue
-
-EvaluationFormMultiSelectQuestionAutomation
+*Required*: No
+*Type*: String
+*Allowed values*: `de-DE | en-US | es-ES | fr-FR | it-IT | pt-BR | ja-JP | ko-KR | zh-CN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

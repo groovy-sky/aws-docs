@@ -2,166 +2,109 @@
 title: "AWS::Bedrock::Guardrail RegexConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Guardrail RegexConfig
+<a name="aws-properties-bedrock-guardrail-regexconfig"></a>
 
 The regular expression to configure for the guardrail.
 
 ## Syntax
+<a name="aws-properties-bedrock-guardrail-regexconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-guardrail-regexconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "Description" : String,
-  "InputAction" : String,
-  "InputEnabled" : Boolean,
-  "Name" : String,
-  "OutputAction" : String,
-  "OutputEnabled" : Boolean,
-  "Pattern" : String
+  "[Action](#cfn-bedrock-guardrail-regexconfig-action)" : {{String}},
+  "[Description](#cfn-bedrock-guardrail-regexconfig-description)" : {{String}},
+  "[InputAction](#cfn-bedrock-guardrail-regexconfig-inputaction)" : {{String}},
+  "[InputEnabled](#cfn-bedrock-guardrail-regexconfig-inputenabled)" : {{Boolean}},
+  "[Name](#cfn-bedrock-guardrail-regexconfig-name)" : {{String}},
+  "[OutputAction](#cfn-bedrock-guardrail-regexconfig-outputaction)" : {{String}},
+  "[OutputEnabled](#cfn-bedrock-guardrail-regexconfig-outputenabled)" : {{Boolean}},
+  "[Pattern](#cfn-bedrock-guardrail-regexconfig-pattern)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-guardrail-regexconfig-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  Description: String
-  InputAction: String
-  InputEnabled: Boolean
-  Name: String
-  OutputAction: String
-  OutputEnabled: Boolean
-  Pattern: String
-
+```
+  [Action](#cfn-bedrock-guardrail-regexconfig-action): {{String}}
+  [Description](#cfn-bedrock-guardrail-regexconfig-description): {{String}}
+  [InputAction](#cfn-bedrock-guardrail-regexconfig-inputaction): {{String}}
+  [InputEnabled](#cfn-bedrock-guardrail-regexconfig-inputenabled): {{Boolean}}
+  [Name](#cfn-bedrock-guardrail-regexconfig-name): {{String}}
+  [OutputAction](#cfn-bedrock-guardrail-regexconfig-outputaction): {{String}}
+  [OutputEnabled](#cfn-bedrock-guardrail-regexconfig-outputenabled): {{Boolean}}
+  [Pattern](#cfn-bedrock-guardrail-regexconfig-pattern): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-guardrail-regexconfig-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-bedrock-guardrail-regexconfig-action"></a>
 The guardrail action to configure when matching regular expression is detected.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `BLOCK | ANONYMIZE | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `BLOCK | ANONYMIZE | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-bedrock-guardrail-regexconfig-description"></a>
 The description of the regular expression to configure for the guardrail.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputAction`
-
+`InputAction`  <a name="cfn-bedrock-guardrail-regexconfig-inputaction"></a>
 Specifies the action to take when harmful content is detected in the input. Supported values include:
++ `BLOCK` – Block the content and replace it with blocked messaging.
++ `NONE` – Take no action but return detection information in the trace response.
+*Required*: No
+*Type*: String
+*Allowed values*: `BLOCK | ANONYMIZE | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `BLOCK` – Block the content and replace it with blocked
-messaging.
+`InputEnabled`  <a name="cfn-bedrock-guardrail-regexconfig-inputenabled"></a>
+Specifies whether to enable guardrail evaluation on the input. When disabled, you aren't charged for the evaluation. The evaluation doesn't appear in the response.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `NONE` – Take no action but return detection information in the trace
-response.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BLOCK | ANONYMIZE | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputEnabled`
-
-Specifies whether to enable guardrail evaluation on the input. When disabled, you aren't
-charged for the evaluation. The evaluation doesn't appear in the response.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrock-guardrail-regexconfig-name"></a>
 The name of the regular expression to configure for the guardrail.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputAction`
-
+`OutputAction`  <a name="cfn-bedrock-guardrail-regexconfig-outputaction"></a>
 Specifies the action to take when harmful content is detected in the output. Supported values include:
++ `BLOCK` – Block the content and replace it with blocked messaging.
++ `NONE` – Take no action but return detection information in the trace response.
+*Required*: No
+*Type*: String
+*Allowed values*: `BLOCK | ANONYMIZE | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `BLOCK` – Block the content and replace it with blocked
-messaging.
+`OutputEnabled`  <a name="cfn-bedrock-guardrail-regexconfig-outputenabled"></a>
+Specifies whether to enable guardrail evaluation on the output. When disabled, you aren't charged for the evaluation. The evaluation doesn't appear in the response.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `NONE` – Take no action but return detection information in the trace
-response.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BLOCK | ANONYMIZE | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputEnabled`
-
-Specifies whether to enable guardrail evaluation on the output. When disabled, you
-aren't charged for the evaluation. The evaluation doesn't appear in the response.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pattern`
-
+`Pattern`  <a name="cfn-bedrock-guardrail-regexconfig-pattern"></a>
 The regular expression pattern to configure for the guardrail.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PiiEntityConfig
-
-SensitiveInformationPolicyConfig
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

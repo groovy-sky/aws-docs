@@ -2,77 +2,55 @@
 title: "AWS::IoTFleetWise::SignalCatalog Branch"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::SignalCatalog Branch
+<a name="aws-properties-iotfleetwise-signalcatalog-branch"></a>
 
 A group of signals that are defined in a hierarchical structure.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-signalcatalog-branch-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-signalcatalog-branch-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "FullyQualifiedName" : String
+  "[Description](#cfn-iotfleetwise-signalcatalog-branch-description)" : {{String}},
+  "[FullyQualifiedName](#cfn-iotfleetwise-signalcatalog-branch-fullyqualifiedname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-signalcatalog-branch-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  FullyQualifiedName: String
-
+```
+  [Description](#cfn-iotfleetwise-signalcatalog-branch-description): {{String}}
+  [FullyQualifiedName](#cfn-iotfleetwise-signalcatalog-branch-fullyqualifiedname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-signalcatalog-branch-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-iotfleetwise-signalcatalog-branch-description"></a>
+ A brief description of the branch.
+*Required*: No
+*Type*: String
+*Pattern*: `^[^\u0000-\u001F\u007F]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A brief description of the branch.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[^\u0000-\u001F\u007F]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FullyQualifiedName`
-
-The fully qualified name of the branch. For example, the fully qualified name of a
-branch might be `Vehicle.Body.Engine`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.]+`
-
-_Minimum_: `1`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Attribute
-
-Node
+`FullyQualifiedName`  <a name="cfn-iotfleetwise-signalcatalog-branch-fullyqualifiedname"></a>
+The fully qualified name of the branch. For example, the fully qualified name of a branch might be `Vehicle.Body.Engine`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.]+`
+*Minimum*: `1`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

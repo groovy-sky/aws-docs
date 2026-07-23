@@ -2,76 +2,52 @@
 title: "AWS::FMS::Policy ResourceTag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::Policy ResourceTag
+<a name="aws-properties-fms-policy-resourcetag"></a>
 
-The resource tags that AWS Firewall Manager uses to determine if a particular resource
-should be included or excluded from the AWS Firewall Manager policy. Tags enable you to
-categorize your AWS resources in different ways, for example, by purpose, owner, or
-environment. Each tag consists of a key and an optional value. Firewall Manager combines the
-tags with "AND" so that, if you add more than one tag to a policy scope, a resource must have
-all the specified tags to be included or excluded. For more information, see
-[Working with Tag Editor](../../../awsconsolehelpdocs/latest/gsg/tag-editor.md).
+The resource tags that AWS Firewall Manager uses to determine if a particular resource should be included or excluded from the AWS Firewall Manager policy. Tags enable you to categorize your AWS resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value. Firewall Manager combines the tags with "AND" so that, if you add more than one tag to a policy scope, a resource must have all the specified tags to be included or excluded. For more information, see [Working with Tag Editor](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/tag-editor.html).
 
 ## Syntax
+<a name="aws-properties-fms-policy-resourcetag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fms-policy-resourcetag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-fms-policy-resourcetag-key)" : {{String}},
+  "[Value](#cfn-fms-policy-resourcetag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fms-policy-resourcetag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-fms-policy-resourcetag-key): {{String}}
+  [Value](#cfn-fms-policy-resourcetag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fms-policy-resourcetag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-fms-policy-resourcetag-key"></a>
 The resource tag key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-fms-policy-resourcetag-value"></a>
 The resource tag value.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PortRange
-
-SecurityServicePolicyData
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

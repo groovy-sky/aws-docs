@@ -3,21 +3,17 @@ title: "Hello DynamoDB"
 ---
 
 # Hello DynamoDB
+<a name="example_dynamodb_Hello_section"></a>
 
 The following code examples show how to get started using DynamoDB.
 
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using Microsoft.Extensions.DependencyInjection;
@@ -75,27 +71,17 @@ public class HelloDynamoDB
         }
     }
 }
-
 ```
++  For API details, see [ListTables](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/ListTables) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[ListTables](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/ListTables)
-in _AWS SDK for .NET API Reference_.
+------
+#### [ C\+\+ ]
 
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb/hello_dynamodb).
-
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb/hello_dynamodb#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```cpp
-
+```
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -134,13 +120,10 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
         ${AWSSDK_LINK_LIBRARIES})
-
 ```
-
 Code for the hello\_dynamodb.cpp source file.
 
-```cpp
-
+```
 #include <aws/core/Aws.h>
 #include <aws/dynamodb/DynamoDBClient.h>
 #include <aws/dynamodb/model/ListTablesRequest.h>
@@ -193,25 +176,16 @@ int main(int argc, char **argv) {
     Aws::ShutdownAPI(options); // Should only be called once.
     return result;
 }
-
 ```
++  For API details, see [ListTables](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ListTables) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[ListTables](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ListTables)
-in _AWS SDK for C++ API Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -277,27 +251,17 @@ public class ListTables {
         System.out.println("\nDone!");
     }
 }
-
 ```
++  For API details, see [ListTables](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ListTables) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[ListTables](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ListTables)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
+For more details on working with DynamoDB in AWS SDK for JavaScript, see [Programming DynamoDB with JavaScript](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/programming-with-javascript.html).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-For more details on working with DynamoDB in AWS SDK for JavaScript, see [Programming DynamoDB with JavaScript](programming-with-javascript.md).
-
-```javascript
-
+```
 import { ListTablesCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -309,25 +273,16 @@ export const main = async () => {
   console.log(response.TableNames.join("\n"));
   return response;
 };
-
 ```
++  For API details, see [ListTables](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ListTablesCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[ListTables](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ListTablesCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
-```python
-
+```
 import boto3
 
 # Create a DynamoDB client using the default credentials and region
@@ -354,25 +309,16 @@ if not table_names:
     print("You don't have any DynamoDB tables in your account.")
 else:
     print(f"\nFound {len(table_names)} tables.")
-
 ```
++  For API details, see [ListTables](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ListTables) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[ListTables](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ListTables)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
-```ruby
-
+```
 require 'aws-sdk-dynamodb'
 require 'logger'
 
@@ -411,21 +357,11 @@ if $PROGRAM_NAME == __FILE__
   manager = DynamoDBManager.new(dynamodb_client)
   manager.list_tables
 end
-
 ```
++  For API details, see [ListTables](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ListTables) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[ListTables](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ListTables)
-in _AWS SDK for Ruby API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Basics
-
-Learn the basics
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,112 +2,69 @@
 title: "AWS::ECS::TaskSet ServiceRegistry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskSet ServiceRegistry
+<a name="aws-properties-ecs-taskset-serviceregistry"></a>
 
 The details for the service registry.
 
-Each service may be associated with one service registry. Multiple service registries
-for each service are not supported.
+Each service may be associated with one service registry. Multiple service registries for each service are not supported.
 
-When you add, update, or remove the service registries configuration, Amazon ECS
-starts a new deployment. New tasks are registered and deregistered to the updated
-service registry configuration.
+When you add, update, or remove the service registries configuration, Amazon ECS starts a new deployment. New tasks are registered and deregistered to the updated service registry configuration.
 
 ## Syntax
+<a name="aws-properties-ecs-taskset-serviceregistry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskset-serviceregistry-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerName" : String,
-  "ContainerPort" : Integer,
-  "Port" : Integer,
-  "RegistryArn" : String
+  "[ContainerName](#cfn-ecs-taskset-serviceregistry-containername)" : {{String}},
+  "[ContainerPort](#cfn-ecs-taskset-serviceregistry-containerport)" : {{Integer}},
+  "[Port](#cfn-ecs-taskset-serviceregistry-port)" : {{Integer}},
+  "[RegistryArn](#cfn-ecs-taskset-serviceregistry-registryarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskset-serviceregistry-syntax.yaml"></a>
 
-```yaml
-
-  ContainerName: String
-  ContainerPort: Integer
-  Port: Integer
-  RegistryArn: String
-
+```
+  [ContainerName](#cfn-ecs-taskset-serviceregistry-containername): {{String}}
+  [ContainerPort](#cfn-ecs-taskset-serviceregistry-containerport): {{Integer}}
+  [Port](#cfn-ecs-taskset-serviceregistry-port): {{Integer}}
+  [RegistryArn](#cfn-ecs-taskset-serviceregistry-registryarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskset-serviceregistry-properties"></a>
 
-`ContainerName`
+`ContainerName`  <a name="cfn-ecs-taskset-serviceregistry-containername"></a>
+The container name value to be used for your service discovery service. It's already specified in the task definition. If the task definition that your service task specifies uses the `bridge` or `host` network mode, you must specify a `containerName` and `containerPort` combination from the task definition. If the task definition that your service task specifies uses the `awsvpc` network mode and a type SRV DNS record is used, you must specify either a `containerName` and `containerPort` combination or a `port` value. However, you can't specify both.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The container name value to be used for your service discovery service. It's already
-specified in the task definition. If the task definition that your service task
-specifies uses the `bridge` or `host` network mode, you must
-specify a `containerName` and `containerPort` combination from the
-task definition. If the task definition that your service task specifies uses the
-`awsvpc` network mode and a type SRV DNS record is used, you must specify
-either a `containerName` and `containerPort` combination or a
-`port` value. However, you can't specify both.
+`ContainerPort`  <a name="cfn-ecs-taskset-serviceregistry-containerport"></a>
+The port value to be used for your service discovery service. It's already specified in the task definition. If the task definition your service task specifies uses the `bridge` or `host` network mode, you must specify a `containerName` and `containerPort` combination from the task definition. If the task definition your service task specifies uses the `awsvpc` network mode and a type SRV DNS record is used, you must specify either a `containerName` and `containerPort` combination or a `port` value. However, you can't specify both.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Port`  <a name="cfn-ecs-taskset-serviceregistry-port"></a>
+The port value used if your service discovery service specified an SRV record. This field might be used if both the `awsvpc` network mode and SRV records are used.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContainerPort`
-
-The port value to be used for your service discovery service. It's already specified
-in the task definition. If the task definition your service task specifies uses the
-`bridge` or `host` network mode, you must specify a
-`containerName` and `containerPort` combination from the task
-definition. If the task definition your service task specifies uses the
-`awsvpc` network mode and a type SRV DNS record is used, you must specify
-either a `containerName` and `containerPort` combination or a
-`port` value. However, you can't specify both.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Port`
-
-The port value used if your service discovery service specified an SRV record. This
-field might be used if both the `awsvpc` network mode and SRV records are
-used.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RegistryArn`
-
-The Amazon Resource Name (ARN) of the service registry. The currently supported
-service registry is AWS Cloud Map. For more information, see [CreateService](../../../cloud-map/latest/api/api-createservice.md).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Scale
-
-Tag
+`RegistryArn`  <a name="cfn-ecs-taskset-serviceregistry-registryarn"></a>
+The Amazon Resource Name (ARN) of the service registry. The currently supported service registry is AWS Cloud Map. For more information, see [CreateService](https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateService.html).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

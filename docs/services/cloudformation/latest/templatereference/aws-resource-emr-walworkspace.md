@@ -2,80 +2,64 @@
 title: "AWS::EMR::WALWorkspace"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::WALWorkspace
+<a name="aws-resource-emr-walworkspace"></a>
 
-The `AWS::EMR::WALWorkspace` resource Property description not available. for EMR.
+<a name="aws-resource-emr-walworkspace-description"></a>The `AWS::EMR::WALWorkspace` resource Property description not available. for EMR.
 
 ## Syntax
+<a name="aws-resource-emr-walworkspace-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-emr-walworkspace-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EMR::WALWorkspace",
   "Properties" : {
-      "Tags" : [ Tag, ... ],
-      "WALWorkspaceName" : String
+      "[Tags](#cfn-emr-walworkspace-tags)" : {{[ Tag, ... ]}},
+      "[WALWorkspaceName](#cfn-emr-walworkspace-walworkspacename)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-emr-walworkspace-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EMR::WALWorkspace
 Properties:
-  Tags:
-    - Tag
-  WALWorkspaceName: String
-
+  [Tags](#cfn-emr-walworkspace-tags): {{
+    - Tag}}
+  [WALWorkspaceName](#cfn-emr-walworkspace-walworkspacename): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-emr-walworkspace-properties"></a>
 
-`Tags`
-
+`Tags`  <a name="cfn-emr-walworkspace-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-emr-walworkspace-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-emr-walworkspace-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WALWorkspaceName`
-
+`WALWorkspaceName`  <a name="cfn-emr-walworkspace-walworkspacename"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-emr-walworkspace-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EMR::StudioSessionMapping
-
-Tag
+<a name="aws-resource-emr-walworkspace-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

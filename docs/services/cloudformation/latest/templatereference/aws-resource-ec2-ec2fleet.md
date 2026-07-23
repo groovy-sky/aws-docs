@@ -2,276 +2,185 @@
 title: "AWS::EC2::EC2Fleet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet
+<a name="aws-resource-ec2-ec2fleet"></a>
 
-Specifies the configuration information to launch a fleet--or group--of instances. An
-EC2 Fleet can launch multiple instance types across multiple Availability Zones, using the
-On-Demand Instance, Reserved Instance, and Spot Instance purchasing models together. Using
-EC2 Fleet, you can define separate On-Demand and Spot capacity targets, specify the
-instance types that work best for your applications, and specify how Amazon EC2 should
-distribute your fleet capacity within each purchasing model. For more information, see
-[Launching an\
-EC2 Fleet](../../../ec2/latest/userguide/ec2-fleet.md) in the _Amazon EC2 User Guide_.
+Specifies the configuration information to launch a fleet--or group--of instances. An EC2 Fleet can launch multiple instance types across multiple Availability Zones, using the On-Demand Instance, Reserved Instance, and Spot Instance purchasing models together. Using EC2 Fleet, you can define separate On-Demand and Spot capacity targets, specify the instance types that work best for your applications, and specify how Amazon EC2 should distribute your fleet capacity within each purchasing model. For more information, see [Launching an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet.html) in the *Amazon EC2 User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-ec2fleet-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-ec2fleet-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::EC2Fleet",
   "Properties" : {
-      "Context" : String,
-      "ExcessCapacityTerminationPolicy" : String,
-      "LaunchTemplateConfigs" : [ FleetLaunchTemplateConfigRequest, ... ],
-      "OnDemandOptions" : OnDemandOptionsRequest,
-      "ReplaceUnhealthyInstances" : Boolean,
-      "ReservedCapacityOptions" : ReservedCapacityOptionsRequest,
-      "SpotOptions" : SpotOptionsRequest,
-      "TagSpecifications" : [ TagSpecification, ... ],
-      "TargetCapacitySpecification" : TargetCapacitySpecificationRequest,
-      "TerminateInstancesWithExpiration" : Boolean,
-      "Type" : String,
-      "ValidFrom" : String,
-      "ValidUntil" : String
+      "[Context](#cfn-ec2-ec2fleet-context)" : {{String}},
+      "[ExcessCapacityTerminationPolicy](#cfn-ec2-ec2fleet-excesscapacityterminationpolicy)" : {{String}},
+      "[LaunchTemplateConfigs](#cfn-ec2-ec2fleet-launchtemplateconfigs)" : {{[ FleetLaunchTemplateConfigRequest, ... ]}},
+      "[OnDemandOptions](#cfn-ec2-ec2fleet-ondemandoptions)" : {{OnDemandOptionsRequest}},
+      "[ReplaceUnhealthyInstances](#cfn-ec2-ec2fleet-replaceunhealthyinstances)" : {{Boolean}},
+      "[ReservedCapacityOptions](#cfn-ec2-ec2fleet-reservedcapacityoptions)" : {{ReservedCapacityOptionsRequest}},
+      "[SpotOptions](#cfn-ec2-ec2fleet-spotoptions)" : {{SpotOptionsRequest}},
+      "[TagSpecifications](#cfn-ec2-ec2fleet-tagspecifications)" : {{[ TagSpecification, ... ]}},
+      "[TargetCapacitySpecification](#cfn-ec2-ec2fleet-targetcapacityspecification)" : {{TargetCapacitySpecificationRequest}},
+      "[TerminateInstancesWithExpiration](#cfn-ec2-ec2fleet-terminateinstanceswithexpiration)" : {{Boolean}},
+      "[Type](#cfn-ec2-ec2fleet-type)" : {{String}},
+      "[ValidFrom](#cfn-ec2-ec2fleet-validfrom)" : {{String}},
+      "[ValidUntil](#cfn-ec2-ec2fleet-validuntil)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-ec2fleet-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::EC2Fleet
 Properties:
-  Context: String
-  ExcessCapacityTerminationPolicy: String
-  LaunchTemplateConfigs:
-    - FleetLaunchTemplateConfigRequest
-  OnDemandOptions:
-    OnDemandOptionsRequest
-  ReplaceUnhealthyInstances: Boolean
-  ReservedCapacityOptions:
-    ReservedCapacityOptionsRequest
-  SpotOptions:
-    SpotOptionsRequest
-  TagSpecifications:
-    - TagSpecification
-  TargetCapacitySpecification:
-    TargetCapacitySpecificationRequest
-  TerminateInstancesWithExpiration: Boolean
-  Type: String
-  ValidFrom: String
-  ValidUntil: String
-
+  [Context](#cfn-ec2-ec2fleet-context): {{String}}
+  [ExcessCapacityTerminationPolicy](#cfn-ec2-ec2fleet-excesscapacityterminationpolicy): {{String}}
+  [LaunchTemplateConfigs](#cfn-ec2-ec2fleet-launchtemplateconfigs): {{
+    - FleetLaunchTemplateConfigRequest}}
+  [OnDemandOptions](#cfn-ec2-ec2fleet-ondemandoptions): {{
+    OnDemandOptionsRequest}}
+  [ReplaceUnhealthyInstances](#cfn-ec2-ec2fleet-replaceunhealthyinstances): {{Boolean}}
+  [ReservedCapacityOptions](#cfn-ec2-ec2fleet-reservedcapacityoptions): {{
+    ReservedCapacityOptionsRequest}}
+  [SpotOptions](#cfn-ec2-ec2fleet-spotoptions): {{
+    SpotOptionsRequest}}
+  [TagSpecifications](#cfn-ec2-ec2fleet-tagspecifications): {{
+    - TagSpecification}}
+  [TargetCapacitySpecification](#cfn-ec2-ec2fleet-targetcapacityspecification): {{
+    TargetCapacitySpecificationRequest}}
+  [TerminateInstancesWithExpiration](#cfn-ec2-ec2fleet-terminateinstanceswithexpiration): {{Boolean}}
+  [Type](#cfn-ec2-ec2fleet-type): {{String}}
+  [ValidFrom](#cfn-ec2-ec2fleet-validfrom): {{String}}
+  [ValidUntil](#cfn-ec2-ec2fleet-validuntil): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-ec2fleet-properties"></a>
 
-`Context`
-
+`Context`  <a name="cfn-ec2-ec2fleet-context"></a>
 Reserved.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcessCapacityTerminationPolicy`
-
-Indicates whether running instances should be terminated if the total target capacity of
-the EC2 Fleet is decreased below the current size of the EC2 Fleet.
-
+`ExcessCapacityTerminationPolicy`  <a name="cfn-ec2-ec2fleet-excesscapacityterminationpolicy"></a>
+Indicates whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
 Supported only for fleets of type `maintain`.
+*Required*: No
+*Type*: String
+*Allowed values*: `termination | no-termination`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `termination | no-termination`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LaunchTemplateConfigs`
-
+`LaunchTemplateConfigs`  <a name="cfn-ec2-ec2fleet-launchtemplateconfigs"></a>
 The configuration for the EC2 Fleet.
+*Required*: Yes
+*Type*: Array of [FleetLaunchTemplateConfigRequest](aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.md)
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of [FleetLaunchTemplateConfigRequest](aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.md)
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OnDemandOptions`
-
+`OnDemandOptions`  <a name="cfn-ec2-ec2fleet-ondemandoptions"></a>
 Describes the configuration of On-Demand Instances in an EC2 Fleet.
+*Required*: No
+*Type*: [OnDemandOptionsRequest](aws-properties-ec2-ec2fleet-ondemandoptionsrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ReplaceUnhealthyInstances`  <a name="cfn-ec2-ec2fleet-replaceunhealthyinstances"></a>
+Indicates whether EC2 Fleet should replace unhealthy Spot Instances. Supported only for fleets of type `maintain`. For more information, see [EC2 Fleet health checks](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html#ec2-fleet-health-checks) in the *Amazon EC2 User Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [OnDemandOptionsRequest](aws-properties-ec2-ec2fleet-ondemandoptionsrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ReplaceUnhealthyInstances`
-
-Indicates whether EC2 Fleet should replace unhealthy Spot Instances. Supported only for
-fleets of type `maintain`. For more information, see [EC2 Fleet\
-health checks](../../../ec2/latest/userguide/manage-ec2-fleet.md#ec2-fleet-health-checks) in the _Amazon EC2 User Guide_.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ReservedCapacityOptions`
-
+`ReservedCapacityOptions`  <a name="cfn-ec2-ec2fleet-reservedcapacityoptions"></a>
 Defines EC2 Fleet preferences for utilizing reserved capacity when DefaultTargetCapacityType is set to `reserved-capacity`.
+*Required*: No
+*Type*: [ReservedCapacityOptionsRequest](aws-properties-ec2-ec2fleet-reservedcapacityoptionsrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ReservedCapacityOptionsRequest](aws-properties-ec2-ec2fleet-reservedcapacityoptionsrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SpotOptions`
-
+`SpotOptions`  <a name="cfn-ec2-ec2fleet-spotoptions"></a>
 Describes the configuration of Spot Instances in an EC2 Fleet.
+*Required*: No
+*Type*: [SpotOptionsRequest](aws-properties-ec2-ec2fleet-spotoptionsrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`TagSpecifications`  <a name="cfn-ec2-ec2fleet-tagspecifications"></a>
+The key-value pair for tagging the EC2 Fleet request on creation. For more information, see [Tag your resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-resources).
+If the fleet type is `instant`, specify a resource type of `fleet` to tag the fleet, `instance` to tag the instances at launch, `volume` to tag the volumes at launch, or `network-interface` to tag the network interfaces at launch.
+If the fleet type is `maintain` or `request`, specify a resource type of `fleet` to tag the fleet. You cannot specify a resource type of `instance`, `volume`, or `network-interface`. To tag instances at launch, specify the tags in a [launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html#create-launch-template).
+*Required*: No
+*Type*: Array of [TagSpecification](aws-properties-ec2-ec2fleet-tagspecification.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [SpotOptionsRequest](aws-properties-ec2-ec2fleet-spotoptionsrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagSpecifications`
-
-The key-value pair for tagging the EC2 Fleet request on creation. For more information, see
-[Tag your resources](../../../ec2/latest/userguide/using-tags.md#tag-resources).
-
-If the fleet type is `instant`, specify a resource type of `fleet`
-to tag the fleet or `instance` to tag the instances at launch.
-
-If the fleet type is `maintain` or `request`, specify a resource
-type of `fleet` to tag the fleet. You cannot specify a resource type of
-`instance`. To tag instances at launch, specify the tags in a [launch template](../../../ec2/latest/userguide/ec2-launch-templates.md#create-launch-template).
-
-_Required_: No
-
-_Type_: Array of [TagSpecification](aws-properties-ec2-ec2fleet-tagspecification.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TargetCapacitySpecification`
-
+`TargetCapacitySpecification`  <a name="cfn-ec2-ec2fleet-targetcapacityspecification"></a>
 The number of units to request.
+*Required*: Yes
+*Type*: [TargetCapacitySpecificationRequest](aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [TargetCapacitySpecificationRequest](aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TerminateInstancesWithExpiration`
-
+`TerminateInstancesWithExpiration`  <a name="cfn-ec2-ec2fleet-terminateinstanceswithexpiration"></a>
 Indicates whether running instances should be terminated when the EC2 Fleet expires.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-ec2-ec2fleet-type"></a>
 The fleet type. The default value is `maintain`.
++ `maintain` - The EC2 Fleet places an asynchronous request for your desired capacity, and continues to maintain your desired Spot capacity by replenishing interrupted Spot Instances.
++ `request` - The EC2 Fleet places an asynchronous one-time request for your desired capacity, but does submit Spot requests in alternative capacity pools if Spot capacity is unavailable, and does not maintain Spot capacity if Spot Instances are interrupted.
++ `instant` - The EC2 Fleet places a synchronous one-time request for your desired capacity, and returns errors for any instances that could not be launched.
+For more information, see [EC2 Fleet request types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-request-type.html) in the *Amazon EC2 User Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `maintain | request | instant`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `maintain` \- The EC2 Fleet places an asynchronous request for your desired
-capacity, and continues to maintain your desired Spot capacity by replenishing
-interrupted Spot Instances.
+`ValidFrom`  <a name="cfn-ec2-ec2fleet-validfrom"></a>
+The start date and time of the request, in UTC format (for example, *YYYY*-*MM*-*DD*T*HH*:*MM*:*SS*Z). The default is to start fulfilling the request immediately.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `request` \- The EC2 Fleet places an asynchronous one-time request for your
-desired capacity, but does submit Spot requests in alternative capacity pools if Spot
-capacity is unavailable, and does not maintain Spot capacity if Spot Instances are
-interrupted.
-
-- `instant` \- The EC2 Fleet places a synchronous one-time request for your
-desired capacity, and returns errors for any instances that could not be
-launched.
-
-For more information, see [EC2 Fleet\
-request types](../../../ec2/latest/userguide/ec2-fleet-request-type.md) in the _Amazon EC2 User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `maintain | request | instant`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ValidFrom`
-
-The start date and time of the request, in UTC format (for example,
-_YYYY_- _MM_- _DD_ T _HH_: _MM_: _SS_ Z).
-The default is to start fulfilling the request immediately.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ValidUntil`
-
-The end date and time of the request, in UTC format (for example,
-_YYYY_- _MM_- _DD_ T _HH_: _MM_: _SS_ Z).
-At this point, no new EC2 Fleet requests are placed or able to fulfill the request. If no value is specified, the request remains until you cancel it.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`ValidUntil`  <a name="cfn-ec2-ec2fleet-validuntil"></a>
+The end date and time of the request, in UTC format (for example, *YYYY*-*MM*-*DD*T*HH*:*MM*:*SS*Z). At this point, no new EC2 Fleet requests are placed or able to fulfill the request. If no value is specified, the request remains until you cancel it.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-ec2fleet-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-ec2fleet-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the fleet ID, such as
-`fleet-1fe24079-d272-4023-8e7c-70e10784cb0e`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the fleet ID, such as `fleet-1fe24079-d272-4023-8e7c-70e10784cb0e`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-ec2fleet-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`FleetId`
+####
+<a name="aws-resource-ec2-ec2fleet-return-values-fn--getatt-fn--getatt"></a>
 
+`FleetId`  <a name="FleetId-fn::getatt"></a>
 The ID of the EC2 Fleet.
 
 ## See also
-
-- [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md) in the _Amazon EC2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AcceleratorCountRequest
+<a name="aws-resource-ec2-ec2fleet--seealso"></a>
++ [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

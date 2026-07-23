@@ -2,55 +2,44 @@
 title: "AWS::QuickSight::Dashboard GeospatialMapFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialMapFieldWells
+<a name="aws-properties-quicksight-dashboard-geospatialmapfieldwells"></a>
 
 The field wells of a `GeospatialMapVisual`.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatialmapfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatialmapfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "GeospatialMapAggregatedFieldWells" : GeospatialMapAggregatedFieldWells
+  "[GeospatialMapAggregatedFieldWells](#cfn-quicksight-dashboard-geospatialmapfieldwells-geospatialmapaggregatedfieldwells)" : {{GeospatialMapAggregatedFieldWells}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatialmapfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  GeospatialMapAggregatedFieldWells:
-    GeospatialMapAggregatedFieldWells
-
+```
+  [GeospatialMapAggregatedFieldWells](#cfn-quicksight-dashboard-geospatialmapfieldwells-geospatialmapaggregatedfieldwells): {{
+    GeospatialMapAggregatedFieldWells}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatialmapfieldwells-properties"></a>
 
-`GeospatialMapAggregatedFieldWells`
-
+`GeospatialMapAggregatedFieldWells`  <a name="cfn-quicksight-dashboard-geospatialmapfieldwells-geospatialmapaggregatedfieldwells"></a>
 The aggregated field well for a geospatial map.
-
-_Required_: No
-
-_Type_: [GeospatialMapAggregatedFieldWells](aws-properties-quicksight-dashboard-geospatialmapaggregatedfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialMapConfiguration
-
-GeospatialMapState
+*Required*: No
+*Type*: [GeospatialMapAggregatedFieldWells](aws-properties-quicksight-dashboard-geospatialmapaggregatedfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

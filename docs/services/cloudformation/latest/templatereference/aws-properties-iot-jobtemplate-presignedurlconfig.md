@@ -2,80 +2,54 @@
 title: "AWS::IoT::JobTemplate PresignedUrlConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::JobTemplate PresignedUrlConfig
+<a name="aws-properties-iot-jobtemplate-presignedurlconfig"></a>
 
 Configuration for pre-signed S3 URLs.
 
 ## Syntax
+<a name="aws-properties-iot-jobtemplate-presignedurlconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-jobtemplate-presignedurlconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExpiresInSec" : Integer,
-  "RoleArn" : String
+  "[ExpiresInSec](#cfn-iot-jobtemplate-presignedurlconfig-expiresinsec)" : {{Integer}},
+  "[RoleArn](#cfn-iot-jobtemplate-presignedurlconfig-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-jobtemplate-presignedurlconfig-syntax.yaml"></a>
 
-```yaml
-
-  ExpiresInSec: Integer
-  RoleArn: String
-
+```
+  [ExpiresInSec](#cfn-iot-jobtemplate-presignedurlconfig-expiresinsec): {{Integer}}
+  [RoleArn](#cfn-iot-jobtemplate-presignedurlconfig-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-jobtemplate-presignedurlconfig-properties"></a>
 
-`ExpiresInSec`
+`ExpiresInSec`  <a name="cfn-iot-jobtemplate-presignedurlconfig-expiresinsec"></a>
+How long (in seconds) pre-signed URLs are valid. Valid values are 60 - 3600, the default value is 3600 seconds. Pre-signed URLs are generated when Jobs receives an MQTT request for the job document.
+*Required*: No
+*Type*: Integer
+*Minimum*: `60`
+*Maximum*: `3600`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-How long (in seconds) pre-signed URLs are valid. Valid values are 60 - 3600, the
-default value is 3600 seconds. Pre-signed URLs are generated when Jobs receives an MQTT
-request for the job document.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `60`
-
-_Maximum_: `3600`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
-The ARN of an IAM role that grants grants permission to download files from the S3
-bucket where the job data/updates are stored. The role must also grant permission for IoT
-to download the files.
-
-###### Important
-
-For information about addressing the confused deputy problem, see [cross-service confused deputy prevention](../../../iot/latest/developerguide/cross-service-confused-deputy-prevention.md) in the _AWS IoT Core developer guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MaintenanceWindow
-
-RateIncreaseCriteria
+`RoleArn`  <a name="cfn-iot-jobtemplate-presignedurlconfig-rolearn"></a>
+The ARN of an IAM role that grants grants permission to download files from the S3 bucket where the job data/updates are stored. The role must also grant permission for IoT to download the files.
+For information about addressing the confused deputy problem, see [cross-service confused deputy prevention](https://docs.aws.amazon.com/iot/latest/developerguide/cross-service-confused-deputy-prevention.html) in the *AWS IoT Core developer guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

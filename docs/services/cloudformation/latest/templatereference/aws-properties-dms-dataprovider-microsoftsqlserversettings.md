@@ -2,103 +2,74 @@
 title: "AWS::DMS::DataProvider MicrosoftSqlServerSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::DataProvider MicrosoftSqlServerSettings
+<a name="aws-properties-dms-dataprovider-microsoftsqlserversettings"></a>
 
 Provides information that defines a Microsoft SQL Server endpoint.
 
 ## Syntax
+<a name="aws-properties-dms-dataprovider-microsoftsqlserversettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-dataprovider-microsoftsqlserversettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateArn" : String,
-  "DatabaseName" : String,
-  "Port" : Integer,
-  "ServerName" : String,
-  "SslMode" : String
+  "[CertificateArn](#cfn-dms-dataprovider-microsoftsqlserversettings-certificatearn)" : {{String}},
+  "[DatabaseName](#cfn-dms-dataprovider-microsoftsqlserversettings-databasename)" : {{String}},
+  "[Port](#cfn-dms-dataprovider-microsoftsqlserversettings-port)" : {{Integer}},
+  "[ServerName](#cfn-dms-dataprovider-microsoftsqlserversettings-servername)" : {{String}},
+  "[SslMode](#cfn-dms-dataprovider-microsoftsqlserversettings-sslmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-dataprovider-microsoftsqlserversettings-syntax.yaml"></a>
 
-```yaml
-
-  CertificateArn: String
-  DatabaseName: String
-  Port: Integer
-  ServerName: String
-  SslMode: String
-
+```
+  [CertificateArn](#cfn-dms-dataprovider-microsoftsqlserversettings-certificatearn): {{String}}
+  [DatabaseName](#cfn-dms-dataprovider-microsoftsqlserversettings-databasename): {{String}}
+  [Port](#cfn-dms-dataprovider-microsoftsqlserversettings-port): {{Integer}}
+  [ServerName](#cfn-dms-dataprovider-microsoftsqlserversettings-servername): {{String}}
+  [SslMode](#cfn-dms-dataprovider-microsoftsqlserversettings-sslmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-dataprovider-microsoftsqlserversettings-properties"></a>
 
-`CertificateArn`
-
+`CertificateArn`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-certificatearn"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-databasename"></a>
 Database name for the endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-port"></a>
 Endpoint TCP port.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ServerName`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-servername"></a>
+Fully qualified domain name of the endpoint. For an Amazon RDS SQL Server instance, this is the output of [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html), in the `[Endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Endpoint.html).Address` field.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerName`
-
-Fully qualified domain name of the endpoint. For an Amazon RDS SQL Server instance, this is
-the output of [DescribeDBInstances](../../../../reference/amazonrds/latest/apireference/api-describedbinstances.md), in the `Endpoint.Address` field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SslMode`
-
+`SslMode`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-sslmode"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `none | require | verify-ca | verify-full`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MariaDbSettings
-
-MongoDbSettings
+*Required*: Yes
+*Type*: String
+*Allowed values*: `none | require | verify-ca | verify-full`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,131 +2,96 @@
 title: "AWS::QuickSight::Template FilledMapConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FilledMapConfiguration
+<a name="aws-properties-quicksight-template-filledmapconfiguration"></a>
 
 The configuration for a `FilledMapVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-filledmapconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-filledmapconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldWells" : FilledMapFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "MapStyleOptions" : GeospatialMapStyleOptions,
-  "SortConfiguration" : FilledMapSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "WindowOptions" : GeospatialWindowOptions
+  "[FieldWells](#cfn-quicksight-template-filledmapconfiguration-fieldwells)" : {{FilledMapFieldWells}},
+  "[Interactions](#cfn-quicksight-template-filledmapconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-template-filledmapconfiguration-legend)" : {{LegendOptions}},
+  "[MapStyleOptions](#cfn-quicksight-template-filledmapconfiguration-mapstyleoptions)" : {{GeospatialMapStyleOptions}},
+  "[SortConfiguration](#cfn-quicksight-template-filledmapconfiguration-sortconfiguration)" : {{FilledMapSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-template-filledmapconfiguration-tooltip)" : {{TooltipOptions}},
+  "[WindowOptions](#cfn-quicksight-template-filledmapconfiguration-windowoptions)" : {{GeospatialWindowOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-filledmapconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FieldWells:
-    FilledMapFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  MapStyleOptions:
-    GeospatialMapStyleOptions
-  SortConfiguration:
-    FilledMapSortConfiguration
-  Tooltip:
-    TooltipOptions
-  WindowOptions:
-    GeospatialWindowOptions
-
+```
+  [FieldWells](#cfn-quicksight-template-filledmapconfiguration-fieldwells): {{
+    FilledMapFieldWells}}
+  [Interactions](#cfn-quicksight-template-filledmapconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-template-filledmapconfiguration-legend): {{
+    LegendOptions}}
+  [MapStyleOptions](#cfn-quicksight-template-filledmapconfiguration-mapstyleoptions): {{
+    GeospatialMapStyleOptions}}
+  [SortConfiguration](#cfn-quicksight-template-filledmapconfiguration-sortconfiguration): {{
+    FilledMapSortConfiguration}}
+  [Tooltip](#cfn-quicksight-template-filledmapconfiguration-tooltip): {{
+    TooltipOptions}}
+  [WindowOptions](#cfn-quicksight-template-filledmapconfiguration-windowoptions): {{
+    GeospatialWindowOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-filledmapconfiguration-properties"></a>
 
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-filledmapconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [FilledMapFieldWells](aws-properties-quicksight-template-filledmapfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilledMapFieldWells](aws-properties-quicksight-template-filledmapfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-filledmapconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-template-filledmapconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapStyleOptions`
-
+`MapStyleOptions`  <a name="cfn-quicksight-template-filledmapconfiguration-mapstyleoptions"></a>
 The map style options of the filled map visual.
+*Required*: No
+*Type*: [GeospatialMapStyleOptions](aws-properties-quicksight-template-geospatialmapstyleoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialMapStyleOptions](aws-properties-quicksight-template-geospatialmapstyleoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-filledmapconfiguration-sortconfiguration"></a>
 The sort configuration of a `FilledMapVisual`.
+*Required*: No
+*Type*: [FilledMapSortConfiguration](aws-properties-quicksight-template-filledmapsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilledMapSortConfiguration](aws-properties-quicksight-template-filledmapsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-template-filledmapconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WindowOptions`
-
+`WindowOptions`  <a name="cfn-quicksight-template-filledmapconfiguration-windowoptions"></a>
 The window options of the filled map visual.
-
-_Required_: No
-
-_Type_: [GeospatialWindowOptions](aws-properties-quicksight-template-geospatialwindowoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilledMapConditionalFormattingOption
-
-FilledMapFieldWells
+*Required*: No
+*Type*: [GeospatialWindowOptions](aws-properties-quicksight-template-geospatialwindowoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

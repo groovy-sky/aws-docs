@@ -2,77 +2,55 @@
 title: "AWS::ECR::ReplicationConfiguration ReplicationRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::ReplicationConfiguration ReplicationRule
+<a name="aws-properties-ecr-replicationconfiguration-replicationrule"></a>
 
-An array of objects representing the replication destinations and repository filters
-for a replication configuration.
+An array of objects representing the replication destinations and repository filters for a replication configuration.
 
 ## Syntax
+<a name="aws-properties-ecr-replicationconfiguration-replicationrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecr-replicationconfiguration-replicationrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destinations" : [ ReplicationDestination, ... ],
-  "RepositoryFilters" : [ RepositoryFilter, ... ]
+  "[Destinations](#cfn-ecr-replicationconfiguration-replicationrule-destinations)" : {{[ ReplicationDestination, ... ]}},
+  "[RepositoryFilters](#cfn-ecr-replicationconfiguration-replicationrule-repositoryfilters)" : {{[ RepositoryFilter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecr-replicationconfiguration-replicationrule-syntax.yaml"></a>
 
-```yaml
-
-  Destinations:
-    - ReplicationDestination
-  RepositoryFilters:
-    - RepositoryFilter
-
+```
+  [Destinations](#cfn-ecr-replicationconfiguration-replicationrule-destinations): {{
+    - ReplicationDestination}}
+  [RepositoryFilters](#cfn-ecr-replicationconfiguration-replicationrule-repositoryfilters): {{
+    - RepositoryFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-ecr-replicationconfiguration-replicationrule-properties"></a>
 
-`Destinations`
-
+`Destinations`  <a name="cfn-ecr-replicationconfiguration-replicationrule-destinations"></a>
 An array of objects representing the destination for a replication rule.
+*Required*: Yes
+*Type*: Array of [ReplicationDestination](aws-properties-ecr-replicationconfiguration-replicationdestination.md)
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ReplicationDestination](aws-properties-ecr-replicationconfiguration-replicationdestination.md)
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RepositoryFilters`
-
-An array of objects representing the filters for a replication rule. Specifying a
-repository filter for a replication rule provides a method for controlling which
-repositories in a private registry are replicated.
-
-_Required_: No
-
-_Type_: Array of [RepositoryFilter](aws-properties-ecr-replicationconfiguration-repositoryfilter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationDestination
-
-RepositoryFilter
+`RepositoryFilters`  <a name="cfn-ecr-replicationconfiguration-replicationrule-repositoryfilters"></a>
+An array of objects representing the filters for a replication rule. Specifying a repository filter for a replication rule provides a method for controlling which repositories in a private registry are replicated.
+*Required*: No
+*Type*: Array of [RepositoryFilter](aws-properties-ecr-replicationconfiguration-repositoryfilter.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

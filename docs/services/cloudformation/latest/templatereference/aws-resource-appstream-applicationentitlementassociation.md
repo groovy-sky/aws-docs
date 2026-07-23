@@ -2,92 +2,72 @@
 title: "AWS::AppStream::ApplicationEntitlementAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::ApplicationEntitlementAssociation
+<a name="aws-resource-appstream-applicationentitlementassociation"></a>
 
 Associates an application to an entitlement.
 
 ## Syntax
+<a name="aws-resource-appstream-applicationentitlementassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appstream-applicationentitlementassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppStream::ApplicationEntitlementAssociation",
   "Properties" : {
-      "ApplicationIdentifier" : String,
-      "EntitlementName" : String,
-      "StackName" : String
+      "[ApplicationIdentifier](#cfn-appstream-applicationentitlementassociation-applicationidentifier)" : {{String}},
+      "[EntitlementName](#cfn-appstream-applicationentitlementassociation-entitlementname)" : {{String}},
+      "[StackName](#cfn-appstream-applicationentitlementassociation-stackname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appstream-applicationentitlementassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppStream::ApplicationEntitlementAssociation
 Properties:
-  ApplicationIdentifier: String
-  EntitlementName: String
-  StackName: String
-
+  [ApplicationIdentifier](#cfn-appstream-applicationentitlementassociation-applicationidentifier): {{String}}
+  [EntitlementName](#cfn-appstream-applicationentitlementassociation-entitlementname): {{String}}
+  [StackName](#cfn-appstream-applicationentitlementassociation-stackname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-appstream-applicationentitlementassociation-properties"></a>
 
-`ApplicationIdentifier`
-
+`ApplicationIdentifier`  <a name="cfn-appstream-applicationentitlementassociation-applicationidentifier"></a>
 The identifier of the application.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EntitlementName`
-
+`EntitlementName`  <a name="cfn-appstream-applicationentitlementassociation-entitlementname"></a>
 The name of the entitlement.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StackName`
-
+`StackName`  <a name="cfn-appstream-applicationentitlementassociation-stackname"></a>
 The name of the stack.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-appstream-applicationentitlementassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appstream-applicationentitlementassociation-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the combination of the `StackName`,
-`EntitlementName`, and `ApplicationIdentifier`, such as
-`abcdefStack|abcdefEntitlement|abcdefApplication`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the combination of the `StackName`, `EntitlementName`, and `ApplicationIdentifier`, such as `abcdefStack|abcdefEntitlement|abcdefApplication`.
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagItems
-
-AWS::AppStream::ApplicationFleetAssociation
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

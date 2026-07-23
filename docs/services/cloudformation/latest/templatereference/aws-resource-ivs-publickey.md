@@ -2,130 +2,112 @@
 title: "AWS::IVS::PublicKey"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::PublicKey
+<a name="aws-resource-ivs-publickey"></a>
 
-The `AWS::IVS::PublicKey` resource specifies an Amazon IVS public key used to sign stage participant tokens.
-For more information, see [Distribute Participant Tokens](../../../ivs/latest/realtimeuserguide/getting-started-distribute-tokens.md)
-in the _Amazon IVS Real-Time Streaming User Guide_.
+The `AWS::IVS::PublicKey` resource specifies an Amazon IVS public key used to sign stage participant tokens. For more information, see [Distribute Participant Tokens](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html) in the *Amazon IVS Real-Time Streaming User Guide*.
 
 ## Syntax
+<a name="aws-resource-ivs-publickey-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivs-publickey-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVS::PublicKey",
   "Properties" : {
-      "Name" : String,
-      "PublicKeyMaterial" : String,
-      "Tags" : [ Tag, ... ]
+      "[Name](#cfn-ivs-publickey-name)" : {{String}},
+      "[PublicKeyMaterial](#cfn-ivs-publickey-publickeymaterial)" : {{String}},
+      "[Tags](#cfn-ivs-publickey-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivs-publickey-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVS::PublicKey
 Properties:
-  Name: String
-  PublicKeyMaterial: String
-  Tags:
-    - Tag
-
+  [Name](#cfn-ivs-publickey-name): {{String}}
+  [PublicKeyMaterial](#cfn-ivs-publickey-publickeymaterial): {{String}}
+  [Tags](#cfn-ivs-publickey-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ivs-publickey-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-ivs-publickey-name"></a>
 Public key name. The value does not need to be unique.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]*$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PublicKeyMaterial`
-
+`PublicKeyMaterial`  <a name="cfn-ivs-publickey-publickeymaterial"></a>
 The public portion of a customer-generated key pair. Note that this field is required to create the AWS::IVS::PublicKey resource.
+*Required*: No
+*Type*: String
+*Pattern*: `-----BEGIN PUBLIC KEY-----\r?\n([a-zA-Z0-9+/=\r\n]+)\r?\n-----END PUBLIC KEY-----(\r?\n)?`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `-----BEGIN PUBLIC KEY-----\r?\n([a-zA-Z0-9+/=\r\n]+)\r?\n-----END PUBLIC KEY-----(\r?\n)?`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivs-publickey-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivs-publickey-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivs-publickey-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ivs-publickey-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivs-publickey-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the public key ARN. For example:
 
-`{ "Ref": "myPublicKey" }`
+ `{ "Ref": "myPublicKey" }`
 
-For the Amazon IVS public key
-`myPublicKey`, `Ref` returns the
-public key ARN.
+For the Amazon IVS public key `myPublicKey`, `Ref` returns the public key ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivs-publickey-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivs-publickey-return-values-fn--getatt-fn--getatt"></a>
 
-The public key ARN. For example:
-`arn:aws:ivs:us-west-2:123456789012:public-key/abcdABCDefgh`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The public key ARN. For example: `arn:aws:ivs:us-west-2:123456789012:public-key/abcdABCDefgh`
 
-`Fingerprint`
-
-The public key identifier. For example:
-`98:0d:1a:a0:19:96:1e:ea:0a:0a:2c:9a:42:19:2b:e7`
+`Fingerprint`  <a name="Fingerprint-fn::getatt"></a>
+The public key identifier. For example: `98:0d:1a:a0:19:96:1e:ea:0a:0a:2c:9a:42:19:2b:e7`
 
 ## Examples
+<a name="aws-resource-ivs-publickey--examples"></a>
 
 ### PublicKey Template Examples
+<a name="aws-resource-ivs-publickey--examples--PublicKey_Template_Examples"></a>
 
 The following examples specify an Amazon IVS public key.
 
 #### JSON
+<a name="aws-resource-ivs-publickey--examples--PublicKey_Template_Examples--json"></a>
 
-```json
-
+```
 {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -144,13 +126,12 @@ The following examples specify an Amazon IVS public key.
          }
      }
  }
-
 ```
 
 #### YAML
+<a name="aws-resource-ivs-publickey--examples--PublicKey_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   PublicKey:
@@ -169,18 +150,9 @@ Resources:
 ```
 
 ## See also
-
-- [Distribute Participant Tokens](../../../ivs/latest/realtimeuserguide/getting-started-distribute-tokens.md)
-
-- [PublicKey](../../../../reference/ivs/latest/realtimeapireference/api-publickey.md) data
-type
-
-- [ImportPublicKey](../../../../reference/ivs/latest/realtimeapireference/api-importpublickey.md) API endpoint
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+<a name="aws-resource-ivs-publickey--seealso"></a>
++  [Distribute Participant Tokens](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html)
++ [PublicKey](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_PublicKey.html) data type
++ [ImportPublicKey](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ImportPublicKey.html) API endpoint
 
 All content copied from https://docs.aws.amazon.com/.

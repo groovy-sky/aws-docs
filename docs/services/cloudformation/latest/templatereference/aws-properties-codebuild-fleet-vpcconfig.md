@@ -2,84 +2,62 @@
 title: "AWS::CodeBuild::Fleet VpcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeBuild::Fleet VpcConfig
+<a name="aws-properties-codebuild-fleet-vpcconfig"></a>
 
 Information about the VPC configuration that AWS CodeBuild accesses.
 
 ## Syntax
+<a name="aws-properties-codebuild-fleet-vpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codebuild-fleet-vpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "Subnets" : [ String, ... ],
-  "VpcId" : String
+  "[SecurityGroupIds](#cfn-codebuild-fleet-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
+  "[Subnets](#cfn-codebuild-fleet-vpcconfig-subnets)" : {{[ String, ... ]}},
+  "[VpcId](#cfn-codebuild-fleet-vpcconfig-vpcid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codebuild-fleet-vpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  Subnets:
-    - String
-  VpcId: String
-
+```
+  [SecurityGroupIds](#cfn-codebuild-fleet-vpcconfig-securitygroupids): {{
+    - String}}
+  [Subnets](#cfn-codebuild-fleet-vpcconfig-subnets): {{
+    - String}}
+  [VpcId](#cfn-codebuild-fleet-vpcconfig-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codebuild-fleet-vpcconfig-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-codebuild-fleet-vpcconfig-securitygroupids"></a>
 A list of one or more security groups IDs in your Amazon VPC.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subnets`
-
+`Subnets`  <a name="cfn-codebuild-fleet-vpcconfig-subnets"></a>
 A list of one or more subnet IDs in your Amazon VPC.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-codebuild-fleet-vpcconfig-vpcid"></a>
 The ID of the Amazon VPC.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetTrackingScalingConfiguration
-
-AWS::CodeBuild::Project
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

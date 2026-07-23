@@ -2,91 +2,78 @@
 title: "AWS::ApiGateway::DocumentationVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::DocumentationVersion
+<a name="aws-resource-apigateway-documentationversion"></a>
 
-The `AWS::ApiGateway::DocumentationVersion` resource creates a snapshot of the documentation for an API. For more information, see [Representation of API Documentation in API Gateway](../../../apigateway/latest/developerguide/api-gateway-documenting-api-content-representation.md) in the _API Gateway Developer Guide_.
+The `AWS::ApiGateway::DocumentationVersion` resource creates a snapshot of the documentation for an API. For more information, see [Representation of API Documentation in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-documenting-api-content-representation.html) in the *API Gateway Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-apigateway-documentationversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-documentationversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::DocumentationVersion",
   "Properties" : {
-      "Description" : String,
-      "DocumentationVersion" : String,
-      "RestApiId" : String
+      "[Description](#cfn-apigateway-documentationversion-description)" : {{String}},
+      "[DocumentationVersion](#cfn-apigateway-documentationversion-documentationversion)" : {{String}},
+      "[RestApiId](#cfn-apigateway-documentationversion-restapiid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-documentationversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::DocumentationVersion
 Properties:
-  Description: String
-  DocumentationVersion: String
-  RestApiId: String
-
+  [Description](#cfn-apigateway-documentationversion-description): {{String}}
+  [DocumentationVersion](#cfn-apigateway-documentationversion-documentationversion): {{String}}
+  [RestApiId](#cfn-apigateway-documentationversion-restapiid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-documentationversion-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-apigateway-documentationversion-description"></a>
 A description about the new documentation snapshot.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentationVersion`
-
+`DocumentationVersion`  <a name="cfn-apigateway-documentationversion-documentationversion"></a>
 The version identifier of the to-be-updated documentation version.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-apigateway-documentationversion-restapiid"></a>
 The string identifier of the associated RestApi.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-resource-apigateway-documentationversion--examples"></a>
 
 ### Associate documentation version with stage
+<a name="aws-resource-apigateway-documentationversion--examples--Associate_documentation_version_with_stage"></a>
 
 The following example associates a documentation version with an API stage.
 
 #### JSON
+<a name="aws-resource-apigateway-documentationversion--examples--Associate_documentation_version_with_stage--json"></a>
 
-```json
-
+```
 {
     "Parameters": {
         "apiName": {
@@ -201,9 +188,9 @@ The following example associates a documentation version with an API stage.
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-documentationversion--examples--Associate_documentation_version_with_stage--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   apiName:
     Type: String
@@ -264,13 +251,7 @@ Resources:
 ```
 
 ## See also
-
-- [documentationpart:create](../../../apigateway/latest/api/api-createdocumentationpart.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Location
-
-AWS::ApiGateway::DomainName
+<a name="aws-resource-apigateway-documentationversion--seealso"></a>
++ [documentationpart:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDocumentationPart.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

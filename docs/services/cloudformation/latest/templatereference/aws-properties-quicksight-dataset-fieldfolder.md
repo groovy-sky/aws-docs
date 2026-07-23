@@ -2,73 +2,54 @@
 title: "AWS::QuickSight::DataSet FieldFolder"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet FieldFolder
+<a name="aws-properties-quicksight-dataset-fieldfolder"></a>
 
 A FieldFolder element is a folder that contains fields and nested subfolders.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-fieldfolder-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-fieldfolder-syntax.json"></a>
 
-```json
-
+```
 {
-  "Columns" : [ String, ... ],
-  "Description" : String
+  "[Columns](#cfn-quicksight-dataset-fieldfolder-columns)" : {{[ String, ... ]}},
+  "[Description](#cfn-quicksight-dataset-fieldfolder-description)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-fieldfolder-syntax.yaml"></a>
 
-```yaml
-
-  Columns:
-    - String
-  Description: String
-
+```
+  [Columns](#cfn-quicksight-dataset-fieldfolder-columns): {{
+    - String}}
+  [Description](#cfn-quicksight-dataset-fieldfolder-description): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-fieldfolder-properties"></a>
 
-`Columns`
-
+`Columns`  <a name="cfn-quicksight-dataset-fieldfolder-columns"></a>
 A folder has a list of columns. A column can only be in one folder.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-quicksight-dataset-fieldfolder-description"></a>
 The description for a field folder.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DestinationTableSource
-
-FilterOperation
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

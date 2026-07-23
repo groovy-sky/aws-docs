@@ -2,53 +2,42 @@
 title: "AWS::Connect::TaskTemplate ReadOnlyFieldInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::TaskTemplate ReadOnlyFieldInfo
+<a name="aws-properties-connect-tasktemplate-readonlyfieldinfo"></a>
 
 Indicates a field that is read-only to an agent.
 
 ## Syntax
+<a name="aws-properties-connect-tasktemplate-readonlyfieldinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-tasktemplate-readonlyfieldinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : FieldIdentifier
+  "[Id](#cfn-connect-tasktemplate-readonlyfieldinfo-id)" : {{FieldIdentifier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-tasktemplate-readonlyfieldinfo-syntax.yaml"></a>
 
-```yaml
-
-  Id:
-    FieldIdentifier
-
+```
+  [Id](#cfn-connect-tasktemplate-readonlyfieldinfo-id): {{
+    FieldIdentifier}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-tasktemplate-readonlyfieldinfo-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-connect-tasktemplate-readonlyfieldinfo-id"></a>
 Identifier of the read-only field.
-
-_Required_: Yes
-
-_Type_: [FieldIdentifier](aws-properties-connect-tasktemplate-fieldidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InvisibleFieldInfo
-
-RequiredFieldInfo
+*Required*: Yes
+*Type*: [FieldIdentifier](aws-properties-connect-tasktemplate-fieldidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

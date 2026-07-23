@@ -2,79 +2,63 @@
 title: "AWS::Bedrock::ResourcePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::ResourcePolicy
+<a name="aws-resource-bedrock-resourcepolicy"></a>
 
 Adds a resource policy for a Bedrock resource.
 
 ## Syntax
+<a name="aws-resource-bedrock-resourcepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-resourcepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::ResourcePolicy",
   "Properties" : {
-      "PolicyDocument" : Json,
-      "ResourceArn" : String
+      "[PolicyDocument](#cfn-bedrock-resourcepolicy-policydocument)" : {{Json}},
+      "[ResourceArn](#cfn-bedrock-resourcepolicy-resourcearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-resourcepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::ResourcePolicy
 Properties:
-  PolicyDocument: Json
-  ResourceArn: String
-
+  [PolicyDocument](#cfn-bedrock-resourcepolicy-policydocument): {{Json}}
+  [ResourceArn](#cfn-bedrock-resourcepolicy-resourcearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-resourcepolicy-properties"></a>
 
-`PolicyDocument`
-
+`PolicyDocument`  <a name="cfn-bedrock-resourcepolicy-policydocument"></a>
 The JSON string representing the Bedrock resource policy.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceArn`
-
+`ResourceArn`  <a name="cfn-bedrock-resourcepolicy-resourcearn"></a>
 The ARN of the Bedrock resource to which this resource policy applies.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[a-z]+)*:bedrock:[a-z0-9-]+:[0-9]{12}:(guardrail|guardrail-profile)/[a-z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[a-z]+)*:bedrock:[a-z0-9-]+:[0-9]{12}:(guardrail|guardrail-profile)/[a-z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-bedrock-resourcepolicy-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ToolSpecification
-
-Next
+<a name="aws-resource-bedrock-resourcepolicy-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

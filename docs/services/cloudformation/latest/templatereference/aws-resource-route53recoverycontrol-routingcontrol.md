@@ -2,116 +2,94 @@
 title: "AWS::Route53RecoveryControl::RoutingControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryControl::RoutingControl
+<a name="aws-resource-route53recoverycontrol-routingcontrol"></a>
 
-Creates a routing control in Amazon Route 53 Application Recovery Controller. Routing control states are maintained
-on the highly reliable cluster data plane.
+Creates a routing control in Amazon Route 53 Application Recovery Controller. Routing control states are maintained on the highly reliable cluster data plane.
 
-To get or update the state of the routing control, you must specify a cluster endpoint, which is an
-endpoint URL and an AWS Region. For more information, see [Code examples](../../../r53recovery/latest/dg/service-code-examples.md)
-in the Amazon Route 53 Application Recovery Controller Developer Guide.
+To get or update the state of the routing control, you must specify a cluster endpoint, which is an endpoint URL and an AWS Region. For more information, see [Code examples](https://docs.aws.amazon.com/r53recovery/latest/dg/service_code_examples.html) in the Amazon Route 53 Application Recovery Controller Developer Guide.
 
 ## Syntax
+<a name="aws-resource-route53recoverycontrol-routingcontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53recoverycontrol-routingcontrol-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53RecoveryControl::RoutingControl",
   "Properties" : {
-      "ClusterArn" : String,
-      "ControlPanelArn" : String,
-      "Name" : String
+      "[ClusterArn](#cfn-route53recoverycontrol-routingcontrol-clusterarn)" : {{String}},
+      "[ControlPanelArn](#cfn-route53recoverycontrol-routingcontrol-controlpanelarn)" : {{String}},
+      "[Name](#cfn-route53recoverycontrol-routingcontrol-name)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53recoverycontrol-routingcontrol-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53RecoveryControl::RoutingControl
 Properties:
-  ClusterArn: String
-  ControlPanelArn: String
-  Name: String
-
+  [ClusterArn](#cfn-route53recoverycontrol-routingcontrol-clusterarn): {{String}}
+  [ControlPanelArn](#cfn-route53recoverycontrol-routingcontrol-controlpanelarn): {{String}}
+  [Name](#cfn-route53recoverycontrol-routingcontrol-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-route53recoverycontrol-routingcontrol-properties"></a>
 
-`ClusterArn`
-
+`ClusterArn`  <a name="cfn-route53recoverycontrol-routingcontrol-clusterarn"></a>
 The Amazon Resource Name (ARN) of the cluster that hosts the routing control.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9:\/_-]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9:\/_-]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ControlPanelArn`
-
+`ControlPanelArn`  <a name="cfn-route53recoverycontrol-routingcontrol-controlpanelarn"></a>
 The Amazon Resource Name (ARN) of the control panel that includes the routing control.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9:\/_-]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9:\/_-]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-route53recoverycontrol-routingcontrol-name"></a>
 The name of the routing control. You can use any non-white space character in the name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53recoverycontrol-routingcontrol-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53recoverycontrol-routingcontrol-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `RoutingControlArn` object.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53recoverycontrol-routingcontrol-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RoutingControlArn`
+####
+<a name="aws-resource-route53recoverycontrol-routingcontrol-return-values-fn--getatt-fn--getatt"></a>
 
+`RoutingControlArn`  <a name="RoutingControlArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the routing control.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The deployment status of the routing control. Status can be one of the following: PENDING, DEPLOYED, PENDING\_DELETION.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Route53RecoveryControl::SafetyRule
 
 All content copied from https://docs.aws.amazon.com/.

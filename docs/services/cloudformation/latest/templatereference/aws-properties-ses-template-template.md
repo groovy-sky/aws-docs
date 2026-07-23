@@ -2,101 +2,68 @@
 title: "AWS::SES::Template Template"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::Template Template
+<a name="aws-properties-ses-template-template"></a>
 
-An object that defines the email template to use for an email message, and the values
-to use for any message variables in that template. An _email_
-_template_ is a type of message template that contains content that you
-want to reuse in email messages that you send. You can specifiy the email template by providing
-the name or ARN of an _email template_
-previously saved in your Amazon SES account or by providing the full template content.
+An object that defines the email template to use for an email message, and the values to use for any message variables in that template. An *email template* is a type of message template that contains content that you want to reuse in email messages that you send. You can specifiy the email template by providing the name or ARN of an *email template* previously saved in your Amazon SES account or by providing the full template content.
 
 ## Syntax
+<a name="aws-properties-ses-template-template-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-template-template-syntax.json"></a>
 
-```json
-
+```
 {
-  "HtmlPart" : String,
-  "SubjectPart" : String,
-  "TemplateName" : String,
-  "TextPart" : String
+  "[HtmlPart](#cfn-ses-template-template-htmlpart)" : {{String}},
+  "[SubjectPart](#cfn-ses-template-template-subjectpart)" : {{String}},
+  "[TemplateName](#cfn-ses-template-template-templatename)" : {{String}},
+  "[TextPart](#cfn-ses-template-template-textpart)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-template-template-syntax.yaml"></a>
 
-```yaml
-
-  HtmlPart: String
-  SubjectPart: String
-  TemplateName: String
-  TextPart: String
-
+```
+  [HtmlPart](#cfn-ses-template-template-htmlpart): {{String}}
+  [SubjectPart](#cfn-ses-template-template-subjectpart): {{String}}
+  [TemplateName](#cfn-ses-template-template-templatename): {{String}}
+  [TextPart](#cfn-ses-template-template-textpart): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-template-template-properties"></a>
 
-`HtmlPart`
-
+`HtmlPart`  <a name="cfn-ses-template-template-htmlpart"></a>
 The HTML body of the email.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubjectPart`
-
+`SubjectPart`  <a name="cfn-ses-template-template-subjectpart"></a>
 The subject line of the email.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`TemplateName`  <a name="cfn-ses-template-template-templatename"></a>
+The name of the template. You will refer to this name when you send email using the `SendEmail` or `SendBulkEmail` operations.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,64}$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateName`
-
-The name of the template. You will refer to this name when you send email using the
-`SendEmail` or `SendBulkEmail` operations.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,64}$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TextPart`
-
-The email body that is visible to recipients whose email clients do not display HTML
-content.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SES::Tenant
+`TextPart`  <a name="cfn-ses-template-template-textpart"></a>
+The email body that is visible to recipients whose email clients do not display HTML content.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

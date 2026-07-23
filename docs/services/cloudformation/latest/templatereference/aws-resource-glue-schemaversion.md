@@ -2,84 +2,72 @@
 title: "AWS::Glue::SchemaVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::SchemaVersion
+<a name="aws-resource-glue-schemaversion"></a>
 
 The `AWS::Glue::SchemaVersion` is an AWS Glue resource type that manages schema versions of schemas in the AWS Glue Schema Registry.
 
 ## Syntax
+<a name="aws-resource-glue-schemaversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-glue-schemaversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Glue::SchemaVersion",
   "Properties" : {
-      "Schema" : Schema,
-      "SchemaDefinition" : String
+      "[Schema](#cfn-glue-schemaversion-schema)" : {{Schema}},
+      "[SchemaDefinition](#cfn-glue-schemaversion-schemadefinition)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-glue-schemaversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Glue::SchemaVersion
 Properties:
-  Schema:
-    Schema
-  SchemaDefinition: String
-
+  [Schema](#cfn-glue-schemaversion-schema): {{
+    Schema}}
+  [SchemaDefinition](#cfn-glue-schemaversion-schemadefinition): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-glue-schemaversion-properties"></a>
 
-`Schema`
-
+`Schema`  <a name="cfn-glue-schemaversion-schema"></a>
 The schema that includes the schema version.
+*Required*: Yes
+*Type*: [Schema](aws-properties-glue-schemaversion-schema.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [Schema](aws-properties-glue-schemaversion-schema.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SchemaDefinition`
-
+`SchemaDefinition`  <a name="cfn-glue-schemaversion-schemadefinition"></a>
 The schema definition for the schema version.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `170000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `170000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-glue-schemaversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-glue-schemaversion-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-glue-schemaversion-return-values-fn--getatt"></a>
 
-`VersionId`
+####
+<a name="aws-resource-glue-schemaversion-return-values-fn--getatt-fn--getatt"></a>
 
+`VersionId`  <a name="VersionId-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Schema
 
 All content copied from https://docs.aws.amazon.com/.

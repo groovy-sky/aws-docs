@@ -2,78 +2,59 @@
 title: "AWS::S3Outposts::Bucket Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::Bucket Filter
+<a name="aws-properties-s3outposts-bucket-filter"></a>
 
-The `Filter` property type specifies Property description not available. for an [AWS::S3Outposts::Bucket](aws-resource-s3outposts-bucket.md).
+<a name="aws-properties-s3outposts-bucket-filter-description"></a>The `Filter` property type specifies Property description not available. for an [AWS::S3Outposts::Bucket](aws-resource-s3outposts-bucket.md).
 
 ## Syntax
+<a name="aws-properties-s3outposts-bucket-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3outposts-bucket-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AndOperator" : FilterAndOperator,
-  "Prefix" : String,
-  "Tag" : FilterTag
+  "[AndOperator](#cfn-s3outposts-bucket-filter-andoperator)" : {{FilterAndOperator}},
+  "[Prefix](#cfn-s3outposts-bucket-filter-prefix)" : {{String}},
+  "[Tag](#cfn-s3outposts-bucket-filter-tag)" : {{FilterTag}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3outposts-bucket-filter-syntax.yaml"></a>
 
-```yaml
-
-  AndOperator:
-    FilterAndOperator
-  Prefix: String
-  Tag:
-    FilterTag
-
+```
+  [AndOperator](#cfn-s3outposts-bucket-filter-andoperator): {{
+    FilterAndOperator}}
+  [Prefix](#cfn-s3outposts-bucket-filter-prefix): {{String}}
+  [Tag](#cfn-s3outposts-bucket-filter-tag): {{
+    FilterTag}}
 ```
 
 ## Properties
+<a name="aws-properties-s3outposts-bucket-filter-properties"></a>
 
-`AndOperator`
-
+`AndOperator`  <a name="cfn-s3outposts-bucket-filter-andoperator"></a>
 Property description not available.
+*Required*: No
+*Type*: [FilterAndOperator](aws-properties-s3outposts-bucket-filterandoperator.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterAndOperator](aws-properties-s3outposts-bucket-filterandoperator.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-s3outposts-bucket-filter-prefix"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tag`
-
+`Tag`  <a name="cfn-s3outposts-bucket-filter-tag"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [FilterTag](aws-properties-s3outposts-bucket-filtertag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AbortIncompleteMultipartUpload
-
-FilterAndOperator
+*Required*: No
+*Type*: [FilterTag](aws-properties-s3outposts-bucket-filtertag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

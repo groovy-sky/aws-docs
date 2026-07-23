@@ -2,110 +2,73 @@
 title: "AWS::CodePipeline::Pipeline RuleTypeId"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline RuleTypeId
+<a name="aws-properties-codepipeline-pipeline-ruletypeid"></a>
 
-The ID for the rule type, which is made up of the combined values for category, owner,
-provider, and version. For more information about conditions, see [Stage\
-conditions](../../../codepipeline/latest/userguide/stage-conditions.md). For more information about rules, see the [AWS CodePipeline rule reference](../../../codepipeline/latest/userguide/rule-reference.md).
+The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. For more information about conditions, see [Stage conditions](https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-conditions.html). For more information about rules, see the [AWS CodePipeline rule reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/rule-reference.html).
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-ruletypeid-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-ruletypeid-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : String,
-  "Owner" : String,
-  "Provider" : String,
-  "Version" : String
+  "[Category](#cfn-codepipeline-pipeline-ruletypeid-category)" : {{String}},
+  "[Owner](#cfn-codepipeline-pipeline-ruletypeid-owner)" : {{String}},
+  "[Provider](#cfn-codepipeline-pipeline-ruletypeid-provider)" : {{String}},
+  "[Version](#cfn-codepipeline-pipeline-ruletypeid-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-ruletypeid-syntax.yaml"></a>
 
-```yaml
-
-  Category: String
-  Owner: String
-  Provider: String
-  Version: String
-
+```
+  [Category](#cfn-codepipeline-pipeline-ruletypeid-category): {{String}}
+  [Owner](#cfn-codepipeline-pipeline-ruletypeid-owner): {{String}}
+  [Provider](#cfn-codepipeline-pipeline-ruletypeid-provider): {{String}}
+  [Version](#cfn-codepipeline-pipeline-ruletypeid-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-ruletypeid-properties"></a>
 
-`Category`
+`Category`  <a name="cfn-codepipeline-pipeline-ruletypeid-category"></a>
+A category defines what kind of rule can be run in the stage, and constrains the provider type for the rule. The valid category is `Rule`.
+*Required*: No
+*Type*: String
+*Allowed values*: `Rule`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A category defines what kind of rule can be run in the stage, and constrains the
-provider type for the rule. The valid category is `Rule`.
+`Owner`  <a name="cfn-codepipeline-pipeline-ruletypeid-owner"></a>
+The creator of the rule being called. The valid value for the `Owner` field in the rule category is `AWS`.
+*Required*: No
+*Type*: String
+*Allowed values*: `AWS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Provider`  <a name="cfn-codepipeline-pipeline-ruletypeid-provider"></a>
+The rule provider, such as the `DeploymentWindow` rule. For a list of rule provider names, see the rules listed in the [AWS CodePipeline rule reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/rule-reference.html).
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9A-Za-z_-]+`
+*Minimum*: `1`
+*Maximum*: `35`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `Rule`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Owner`
-
-The creator of the rule being called. The valid value for the `Owner` field
-in the rule category is `AWS`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AWS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Provider`
-
-The rule provider, such as the `DeploymentWindow` rule. For a list of rule
-provider names, see the rules listed in the [AWS CodePipeline rule\
-reference](../../../codepipeline/latest/userguide/rule-reference.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9A-Za-z_-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `35`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-codepipeline-pipeline-ruletypeid-version"></a>
 A string that describes the rule version.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9A-Za-z_-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `9`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleDeclaration
-
-StageDeclaration
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9A-Za-z_-]+`
+*Minimum*: `1`
+*Maximum*: `9`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

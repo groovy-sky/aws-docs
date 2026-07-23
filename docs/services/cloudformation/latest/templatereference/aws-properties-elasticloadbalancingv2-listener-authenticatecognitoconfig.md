@@ -2,156 +2,104 @@
 title: "AWS::ElasticLoadBalancingV2::Listener AuthenticateCognitoConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::Listener AuthenticateCognitoConfig
+<a name="aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig"></a>
 
-Specifies information required when integrating with Amazon Cognito to authenticate
-users.
+Specifies information required when integrating with Amazon Cognito to authenticate users.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthenticationRequestExtraParams" : {Key: Value, ...},
-  "OnUnauthenticatedRequest" : String,
-  "Scope" : String,
-  "SessionCookieName" : String,
-  "SessionTimeout" : String,
-  "UserPoolArn" : String,
-  "UserPoolClientId" : String,
-  "UserPoolDomain" : String
+  "[AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[OnUnauthenticatedRequest](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-onunauthenticatedrequest)" : {{String}},
+  "[Scope](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-scope)" : {{String}},
+  "[SessionCookieName](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessioncookiename)" : {{String}},
+  "[SessionTimeout](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessiontimeout)" : {{String}},
+  "[UserPoolArn](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolarn)" : {{String}},
+  "[UserPoolClientId](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolclientid)" : {{String}},
+  "[UserPoolDomain](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpooldomain)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig-syntax.yaml"></a>
 
-```yaml
-
-  AuthenticationRequestExtraParams:
-    Key: Value
-  OnUnauthenticatedRequest: String
-  Scope: String
-  SessionCookieName: String
-  SessionTimeout: String
-  UserPoolArn: String
-  UserPoolClientId: String
-  UserPoolDomain: String
-
+```
+  [AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams): {{
+    {{Key}}: {{Value}}}}
+  [OnUnauthenticatedRequest](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-onunauthenticatedrequest): {{String}}
+  [Scope](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-scope): {{String}}
+  [SessionCookieName](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessioncookiename): {{String}}
+  [SessionTimeout](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessiontimeout): {{String}}
+  [UserPoolArn](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolarn): {{String}}
+  [UserPoolClientId](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolclientid): {{String}}
+  [UserPoolDomain](#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpooldomain): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig-properties"></a>
 
-`AuthenticationRequestExtraParams`
+`AuthenticationRequestExtraParams`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams"></a>
+The query parameters (up to 10) to include in the redirect request to the authorization endpoint.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The query parameters (up to 10) to include in the redirect request to the authorization
-endpoint.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnUnauthenticatedRequest`
-
+`OnUnauthenticatedRequest`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-onunauthenticatedrequest"></a>
 The behavior if the user is not authenticated. The following are possible values:
++ deny`` - Return an HTTP 401 Unauthorized error.
++ allow`` - Allow the request to be forwarded to the target.
++ authenticate`` - Redirect the request to the IdP authorization endpoint. This is the default value.
+*Required*: No
+*Type*: String
+*Allowed values*: `deny | allow | authenticate`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- deny `` \- Return an HTTP 401 Unauthorized error.
+`Scope`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-scope"></a>
+The set of user claims to be requested from the IdP. The default is `openid`.
+To verify which scope values your IdP supports and how to separate multiple values, see the documentation for your IdP.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- allow `` \- Allow the request to be forwarded to the target.
+`SessionCookieName`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessioncookiename"></a>
+The name of the cookie used to maintain session information. The default is AWSELBAuthSessionCookie.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- authenticate `` \- Redirect the request to the IdP authorization endpoint. This is
-the default value.
+`SessionTimeout`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessiontimeout"></a>
+The maximum duration of the authentication session, in seconds. The default is 604800 seconds (7 days).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `deny | allow | authenticate`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scope`
-
-The set of user claims to be requested from the IdP. The default is
-`openid`.
-
-To verify which scope values your IdP supports and how to separate multiple values, see
-the documentation for your IdP.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionCookieName`
-
-The name of the cookie used to maintain session information. The default is
-AWSELBAuthSessionCookie.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionTimeout`
-
-The maximum duration of the authentication session, in seconds. The default is 604800
-seconds (7 days).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolArn`
-
+`UserPoolArn`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolarn"></a>
 The Amazon Resource Name (ARN) of the Amazon Cognito user pool.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolClientId`
-
+`UserPoolClientId`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolclientid"></a>
 The ID of the Amazon Cognito user pool client.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolDomain`
-
+`UserPoolDomain`  <a name="cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpooldomain"></a>
 The domain prefix or fully-qualified domain name of the Amazon Cognito user pool.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Action
-
-AuthenticateOidcConfig
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

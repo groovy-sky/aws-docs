@@ -2,66 +2,46 @@
 title: "AWS::EntityResolution::MatchingWorkflow IncrementalRunConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow IncrementalRunConfig
+<a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig"></a>
 
-Optional. An object that defines the incremental run type. This object contains only the
-`incrementalRunType` field, which appears as "Automatic" in the console.
+Optional. An object that defines the incremental run type. This object contains only the `incrementalRunType` field, which appears as "Automatic" in the console.
 
-###### Important
-
-For workflows where `resolutionType` is `ML_MATCHING` or `PROVIDER`,
-incremental processing is not supported.
+**Important**
+For workflows where `resolutionType` is `PROVIDER`, incremental processing is not supported.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "IncrementalRunType" : String
+  "[IncrementalRunType](#cfn-entityresolution-matchingworkflow-incrementalrunconfig-incrementalruntype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig-syntax.yaml"></a>
 
-```yaml
-
-  IncrementalRunType: String
-
+```
+  [IncrementalRunType](#cfn-entityresolution-matchingworkflow-incrementalrunconfig-incrementalruntype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig-properties"></a>
 
-`IncrementalRunType`
-
-The type of incremental run. The only valid value is `IMMEDIATE`. This
-appears as "Automatic" in the console.
-
-###### Important
-
-For workflows where `resolutionType` is `ML_MATCHING` or `PROVIDER`,
-incremental processing is not supported.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `IMMEDIATE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomerProfilesIntegrationConfig
-
-InputSource
+`IncrementalRunType`  <a name="cfn-entityresolution-matchingworkflow-incrementalrunconfig-incrementalruntype"></a>
+The type of incremental run. The only valid value is `IMMEDIATE`. This appears as "Automatic" in the console.
+For workflows where `resolutionType` is `PROVIDER`, incremental processing is not supported.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `IMMEDIATE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

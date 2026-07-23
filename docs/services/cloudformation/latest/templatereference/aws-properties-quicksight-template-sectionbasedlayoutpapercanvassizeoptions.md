@@ -2,87 +2,62 @@
 title: "AWS::QuickSight::Template SectionBasedLayoutPaperCanvasSizeOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SectionBasedLayoutPaperCanvasSizeOptions
+<a name="aws-properties-quicksight-template-sectionbasedlayoutpapercanvassizeoptions"></a>
 
 The options for a paper canvas of a section-based layout.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "PaperMargin" : Spacing,
-  "PaperOrientation" : String,
-  "PaperSize" : String
+  "[PaperMargin](#cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-papermargin)" : {{Spacing}},
+  "[PaperOrientation](#cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-paperorientation)" : {{String}},
+  "[PaperSize](#cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-papersize)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-syntax.yaml"></a>
 
-```yaml
-
-  PaperMargin:
-    Spacing
-  PaperOrientation: String
-  PaperSize: String
-
+```
+  [PaperMargin](#cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-papermargin): {{
+    Spacing}}
+  [PaperOrientation](#cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-paperorientation): {{String}}
+  [PaperSize](#cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-papersize): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-properties"></a>
 
-`PaperMargin`
-
+`PaperMargin`  <a name="cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-papermargin"></a>
 Defines the spacing between the canvas content and the top, bottom, left, and right edges.
+*Required*: No
+*Type*: [Spacing](aws-properties-quicksight-template-spacing.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PaperOrientation`  <a name="cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-paperorientation"></a>
+The paper orientation that is used to define canvas dimensions. Choose one of the following options:
++ PORTRAIT
++ LANDSCAPE
+*Required*: No
+*Type*: String
+*Allowed values*: `PORTRAIT | LANDSCAPE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [Spacing](aws-properties-quicksight-template-spacing.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PaperOrientation`
-
-The paper orientation that
-is used to define canvas dimensions. Choose one of the following
-options:
-
-- PORTRAIT
-
-- LANDSCAPE
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PORTRAIT | LANDSCAPE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PaperSize`
-
+`PaperSize`  <a name="cfn-quicksight-template-sectionbasedlayoutpapercanvassizeoptions-papersize"></a>
 The paper size that is used to define canvas dimensions.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `US_LETTER | US_LEGAL | US_TABLOID_LEDGER | A0 | A1 | A2 | A3 | A4 | A5 | JIS_B4 | JIS_B5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SectionBasedLayoutConfiguration
-
-SectionLayoutConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `US_LETTER | US_LEGAL | US_TABLOID_LEDGER | A0 | A1 | A2 | A3 | A4 | A5 | JIS_B4 | JIS_B5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

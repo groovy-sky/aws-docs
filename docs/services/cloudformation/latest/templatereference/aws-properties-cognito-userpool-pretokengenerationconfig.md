@@ -2,76 +2,54 @@
 title: "AWS::Cognito::UserPool PreTokenGenerationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPool PreTokenGenerationConfig
+<a name="aws-properties-cognito-userpool-pretokengenerationconfig"></a>
 
 The properties of a pre token generation Lambda trigger.
 
 ## Syntax
+<a name="aws-properties-cognito-userpool-pretokengenerationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpool-pretokengenerationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "LambdaArn" : String,
-  "LambdaVersion" : String
+  "[LambdaArn](#cfn-cognito-userpool-pretokengenerationconfig-lambdaarn)" : {{String}},
+  "[LambdaVersion](#cfn-cognito-userpool-pretokengenerationconfig-lambdaversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpool-pretokengenerationconfig-syntax.yaml"></a>
 
-```yaml
-
-  LambdaArn: String
-  LambdaVersion: String
-
+```
+  [LambdaArn](#cfn-cognito-userpool-pretokengenerationconfig-lambdaarn): {{String}}
+  [LambdaVersion](#cfn-cognito-userpool-pretokengenerationconfig-lambdaversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpool-pretokengenerationconfig-properties"></a>
 
-`LambdaArn`
-
+`LambdaArn`  <a name="cfn-cognito-userpool-pretokengenerationconfig-lambdaarn"></a>
 The Amazon Resource Name (ARN) of the function that you want to assign to your Lambda trigger.
+This parameter and the `PreTokenGeneration` property of `LambdaConfig` have the same value. For new instances of pre token generation triggers, set `LambdaArn`.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This parameter and the `PreTokenGeneration` property of
-`LambdaConfig` have the same value. For new instances of pre token
-generation triggers, set `LambdaArn`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaVersion`
-
+`LambdaVersion`  <a name="cfn-cognito-userpool-pretokengenerationconfig-lambdaversion"></a>
 The user pool trigger version of the request that Amazon Cognito sends to your Lambda function. Higher-numbered versions add fields that support new features.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `V1_0 | V2_0 | V3_0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Policies
-
-RecoveryOption
+*Required*: No
+*Type*: String
+*Allowed values*: `V1_0 | V2_0 | V3_0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

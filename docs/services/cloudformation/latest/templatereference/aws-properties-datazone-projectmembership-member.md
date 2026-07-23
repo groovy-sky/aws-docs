@@ -2,67 +2,51 @@
 title: "AWS::DataZone::ProjectMembership Member"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::ProjectMembership Member
+<a name="aws-properties-datazone-projectmembership-member"></a>
 
 The details about a project member.
 
-Important - this data type is a UNION, so only one of the following members can be specified when used or
-returned.
+Important - this data type is a UNION, so only one of the following members can be specified when used or returned.
 
 ## Syntax
+<a name="aws-properties-datazone-projectmembership-member-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-projectmembership-member-syntax.json"></a>
 
-```json
-
+```
 {
-  "GroupIdentifier" : String,
-  "UserIdentifier" : String
+  "[GroupIdentifier](#cfn-datazone-projectmembership-member-groupidentifier)" : {{String}},
+  "[UserIdentifier](#cfn-datazone-projectmembership-member-useridentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-projectmembership-member-syntax.yaml"></a>
 
-```yaml
-
-  GroupIdentifier: String
-  UserIdentifier: String
-
+```
+  [GroupIdentifier](#cfn-datazone-projectmembership-member-groupidentifier): {{String}}
+  [UserIdentifier](#cfn-datazone-projectmembership-member-useridentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-projectmembership-member-properties"></a>
 
-`GroupIdentifier`
-
+`GroupIdentifier`  <a name="cfn-datazone-projectmembership-member-groupidentifier"></a>
 The ID of the group of a project member.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UserIdentifier`
-
+`UserIdentifier`  <a name="cfn-datazone-projectmembership-member-useridentifier"></a>
 The user ID of a project member.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::ProjectMembership
-
-AWS::DataZone::ProjectProfile
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

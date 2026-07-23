@@ -2,150 +2,88 @@
 title: "AWS::WAFv2::WebACL AWSManagedRulesACFPRuleSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL AWSManagedRulesACFPRuleSet
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset"></a>
 
 Details for your use of the account creation fraud prevention managed rule group, `AWSManagedRulesACFPRuleSet`. This configuration is used in `ManagedRuleGroupConfig`.
 
-For additional information about this and the other intelligent threat mitigation rule groups,
-see [Intelligent threat mitigation in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-protections)
-and [AWS Managed Rules rule groups list](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list)
-in the _AWS WAF Developer Guide_.
+For additional information about this and the other intelligent threat mitigation rule groups, see [Intelligent threat mitigation in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-protections) and [AWS Managed Rules rule groups list](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list) in the *AWS WAF Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset-syntax.json"></a>
 
-```json
-
+```
 {
-  "CreationPath" : String,
-  "EnableRegexInPath" : Boolean,
-  "RegistrationPagePath" : String,
-  "RequestInspection" : RequestInspectionACFP,
-  "ResponseInspection" : ResponseInspection
+  "[CreationPath](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-creationpath)" : {{String}},
+  "[EnableRegexInPath](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-enableregexinpath)" : {{Boolean}},
+  "[RegistrationPagePath](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-registrationpagepath)" : {{String}},
+  "[RequestInspection](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-requestinspection)" : {{RequestInspectionACFP}},
+  "[ResponseInspection](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-responseinspection)" : {{ResponseInspection}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset-syntax.yaml"></a>
 
-```yaml
-
-  CreationPath: String
-  EnableRegexInPath: Boolean
-  RegistrationPagePath: String
-  RequestInspection:
-    RequestInspectionACFP
-  ResponseInspection:
-    ResponseInspection
-
+```
+  [CreationPath](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-creationpath): {{String}}
+  [EnableRegexInPath](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-enableregexinpath): {{Boolean}}
+  [RegistrationPagePath](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-registrationpagepath): {{String}}
+  [RequestInspection](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-requestinspection): {{
+    RequestInspectionACFP}}
+  [ResponseInspection](#cfn-wafv2-webacl-awsmanagedrulesacfpruleset-responseinspection): {{
+    ResponseInspection}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset-properties"></a>
 
-`CreationPath`
-
+`CreationPath`  <a name="cfn-wafv2-webacl-awsmanagedrulesacfpruleset-creationpath"></a>
 The path of the account creation endpoint for your application. This is the page on your website that accepts the completed registration form for a new user. This page must accept `POST` requests.
+For example, for the URL `https://example.com/web/newaccount`, you would provide the path `/web/newaccount`. Account creation page paths that start with the path that you provide are considered a match. For example `/web/newaccount` matches the account creation paths `/web/newaccount`, `/web/newaccount/`, `/web/newaccountPage`, and `/web/newaccount/thisPage`, but doesn't match the path `/home/web/newaccount` or `/website/newaccount`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For example, for the URL `https://example.com/web/newaccount`, you would provide
-the path `/web/newaccount`. Account creation page paths that
-start with the path that you provide are considered a match. For example
-`/web/newaccount` matches the account creation paths
-`/web/newaccount`, `/web/newaccount/`,
-`/web/newaccountPage`, and
-`/web/newaccount/thisPage`, but doesn't match the path
-`/home/web/newaccount` or
-`/website/newaccount`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableRegexInPath`
-
+`EnableRegexInPath`  <a name="cfn-wafv2-webacl-awsmanagedrulesacfpruleset-enableregexinpath"></a>
 Allow the use of regular expressions in the registration page path and the account creation path.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegistrationPagePath`
-
+`RegistrationPagePath`  <a name="cfn-wafv2-webacl-awsmanagedrulesacfpruleset-registrationpagepath"></a>
 The path of the account registration endpoint for your application. This is the page on your website that presents the registration form to new users.
-
-###### Note
-
 This page must accept `GET` text/html requests.
+For example, for the URL `https://example.com/web/registration`, you would provide the path `/web/registration`. Registration page paths that start with the path that you provide are considered a match. For example `/web/registration` matches the registration paths `/web/registration`, `/web/registration/`, `/web/registrationPage`, and `/web/registration/thisPage`, but doesn't match the path `/home/web/registration` or `/website/registration`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For example, for the URL `https://example.com/web/registration`, you would provide
-the path `/web/registration`. Registration page paths that
-start with the path that you provide are considered a match. For example
-`/web/registration` matches the registration paths
-`/web/registration`, `/web/registration/`,
-`/web/registrationPage`, and
-`/web/registration/thisPage`, but doesn't match the path
-`/home/web/registration` or
-`/website/registration`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestInspection`
-
+`RequestInspection`  <a name="cfn-wafv2-webacl-awsmanagedrulesacfpruleset-requestinspection"></a>
 The criteria for inspecting account creation requests, used by the ACFP rule group to validate and track account creation attempts.
+*Required*: Yes
+*Type*: [RequestInspectionACFP](aws-properties-wafv2-webacl-requestinspectionacfp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [RequestInspectionACFP](aws-properties-wafv2-webacl-requestinspectionacfp.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResponseInspection`
-
+`ResponseInspection`  <a name="cfn-wafv2-webacl-awsmanagedrulesacfpruleset-responseinspection"></a>
 The criteria for inspecting responses to account creation requests, used by the ACFP rule group to track account creation success rates.
-
-###### Note
-
 Response inspection is available only in web ACLs that protect Amazon CloudFront distributions.
-
-The ACFP rule group evaluates the responses that your protected resources send back to client account creation attempts, keeping count of successful and failed attempts from each IP address and client session. Using this information, the rule group labels
-and mitigates requests from client sessions and IP addresses that have had too many successful account creation attempts in a short amount of time.
-
-_Required_: No
-
-_Type_: [ResponseInspection](aws-properties-wafv2-webacl-responseinspection.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssociationConfig
-
-AWSManagedRulesAntiDDoSRuleSet
+The ACFP rule group evaluates the responses that your protected resources send back to client account creation attempts, keeping count of successful and failed attempts from each IP address and client session. Using this information, the rule group labels and mitigates requests from client sessions and IP addresses that have had too many successful account creation attempts in a short amount of time.
+*Required*: No
+*Type*: [ResponseInspection](aws-properties-wafv2-webacl-responseinspection.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

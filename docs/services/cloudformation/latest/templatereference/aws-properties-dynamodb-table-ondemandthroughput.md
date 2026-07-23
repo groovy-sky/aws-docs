@@ -2,80 +2,53 @@
 title: "AWS::DynamoDB::Table OnDemandThroughput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table OnDemandThroughput
+<a name="aws-properties-dynamodb-table-ondemandthroughput"></a>
 
-Sets the maximum number of read and write units for the specified on-demand table. If
-you use this property, you must specify `MaxReadRequestUnits`,
-`MaxWriteRequestUnits`, or both.
+Sets the maximum number of read and write units for the specified on-demand table. If you use this property, you must specify `MaxReadRequestUnits`, `MaxWriteRequestUnits`, or both.
 
 ## Syntax
+<a name="aws-properties-dynamodb-table-ondemandthroughput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-table-ondemandthroughput-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxReadRequestUnits" : Integer,
-  "MaxWriteRequestUnits" : Integer
+  "[MaxReadRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxreadrequestunits)" : {{Integer}},
+  "[MaxWriteRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxwriterequestunits)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-table-ondemandthroughput-syntax.yaml"></a>
 
-```yaml
-
-  MaxReadRequestUnits: Integer
-  MaxWriteRequestUnits: Integer
-
+```
+  [MaxReadRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxreadrequestunits): {{Integer}}
+  [MaxWriteRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxwriterequestunits): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-table-ondemandthroughput-properties"></a>
 
-`MaxReadRequestUnits`
-
+`MaxReadRequestUnits`  <a name="cfn-dynamodb-table-ondemandthroughput-maxreadrequestunits"></a>
 Maximum number of read request units for the specified table.
+To specify a maximum `OnDemandThroughput` on your table, set the value of `MaxReadRequestUnits` as greater than or equal to 1. To remove the maximum `OnDemandThroughput` that is currently set on your table, set the value of `MaxReadRequestUnits` to -1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-To specify a maximum `OnDemandThroughput` on your table, set the value of
-`MaxReadRequestUnits` as greater than or equal to 1. To remove the
-maximum `OnDemandThroughput` that is currently set on your table, set the
-value of `MaxReadRequestUnits` to -1.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxWriteRequestUnits`
-
+`MaxWriteRequestUnits`  <a name="cfn-dynamodb-table-ondemandthroughput-maxwriterequestunits"></a>
 Maximum number of write request units for the specified table.
-
-To specify a maximum `OnDemandThroughput` on your table, set the value of
-`MaxWriteRequestUnits` as greater than or equal to 1. To remove the
-maximum `OnDemandThroughput` that is currently set on your table, set the
-value of `MaxWriteRequestUnits` to -1.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LocalSecondaryIndex
-
-PointInTimeRecoverySpecification
+To specify a maximum `OnDemandThroughput` on your table, set the value of `MaxWriteRequestUnits` as greater than or equal to 1. To remove the maximum `OnDemandThroughput` that is currently set on your table, set the value of `MaxWriteRequestUnits` to -1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

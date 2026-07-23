@@ -2,113 +2,81 @@
 title: "AWS::IoT::TopicRule CloudwatchMetricAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule CloudwatchMetricAction
+<a name="aws-properties-iot-topicrule-cloudwatchmetricaction"></a>
 
 Describes an action that captures a CloudWatch metric.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-cloudwatchmetricaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-cloudwatchmetricaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "MetricName" : String,
-  "MetricNamespace" : String,
-  "MetricTimestamp" : String,
-  "MetricUnit" : String,
-  "MetricValue" : String,
-  "RoleArn" : String
+  "[MetricName](#cfn-iot-topicrule-cloudwatchmetricaction-metricname)" : {{String}},
+  "[MetricNamespace](#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace)" : {{String}},
+  "[MetricTimestamp](#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp)" : {{String}},
+  "[MetricUnit](#cfn-iot-topicrule-cloudwatchmetricaction-metricunit)" : {{String}},
+  "[MetricValue](#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue)" : {{String}},
+  "[RoleArn](#cfn-iot-topicrule-cloudwatchmetricaction-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-cloudwatchmetricaction-syntax.yaml"></a>
 
-```yaml
-
-  MetricName: String
-  MetricNamespace: String
-  MetricTimestamp: String
-  MetricUnit: String
-  MetricValue: String
-  RoleArn: String
-
+```
+  [MetricName](#cfn-iot-topicrule-cloudwatchmetricaction-metricname): {{String}}
+  [MetricNamespace](#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace): {{String}}
+  [MetricTimestamp](#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp): {{String}}
+  [MetricUnit](#cfn-iot-topicrule-cloudwatchmetricaction-metricunit): {{String}}
+  [MetricValue](#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue): {{String}}
+  [RoleArn](#cfn-iot-topicrule-cloudwatchmetricaction-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-cloudwatchmetricaction-properties"></a>
 
-`MetricName`
-
+`MetricName`  <a name="cfn-iot-topicrule-cloudwatchmetricaction-metricname"></a>
 The CloudWatch metric name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricNamespace`
-
+`MetricNamespace`  <a name="cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace"></a>
 The CloudWatch metric namespace name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`MetricTimestamp`  <a name="cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp"></a>
+An optional [Unix timestamp](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`MetricUnit`  <a name="cfn-iot-topicrule-cloudwatchmetricaction-metricunit"></a>
+The [metric unit](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit) supported by CloudWatch.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricTimestamp`
-
-An optional [Unix timestamp](../../../amazoncloudwatch/latest/developerguide/cloudwatch-concepts.md#about_timestamp).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricUnit`
-
-The [metric\
-unit](../../../amazoncloudwatch/latest/developerguide/cloudwatch-concepts.md#Unit) supported by CloudWatch.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricValue`
-
+`MetricValue`  <a name="cfn-iot-topicrule-cloudwatchmetricaction-metricvalue"></a>
 The CloudWatch metric value.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-cloudwatchmetricaction-rolearn"></a>
 The IAM role that allows access to the CloudWatch metric.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudwatchLogsAction
-
-DynamoDBAction
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

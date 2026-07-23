@@ -2,68 +2,51 @@
 title: "AWS::Wisdom::AIGuardrail GuardrailContextualGroundingFilterConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail GuardrailContextualGroundingFilterConfig
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig"></a>
 
 A configuration for grounding filter.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Threshold" : Number,
-  "Type" : String
+  "[Threshold](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-threshold)" : {{Number}},
+  "[Type](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-syntax.yaml"></a>
 
-```yaml
-
-  Threshold: Number
-  Type: String
-
+```
+  [Threshold](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-threshold): {{Number}}
+  [Type](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-properties"></a>
 
-`Threshold`
-
+`Threshold`  <a name="cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-threshold"></a>
 The threshold for this filter.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-type"></a>
 The type of this filter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GROUNDING | RELEVANCE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GuardrailContentFilterConfig
-
-GuardrailManagedWordsConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GROUNDING | RELEVANCE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

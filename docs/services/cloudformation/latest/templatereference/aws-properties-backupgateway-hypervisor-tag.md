@@ -2,78 +2,55 @@
 title: "AWS::BackupGateway::Hypervisor Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BackupGateway::Hypervisor Tag
+<a name="aws-properties-backupgateway-hypervisor-tag"></a>
 
-A key-value pair you can use to manage, filter, and search for your resources. Allowed
-characters include UTF-8 letters, numbers, and the following characters: + - = . \_ :
-/. Spaces are not allowed in tag values.
+A key-value pair you can use to manage, filter, and search for your resources. Allowed characters include UTF-8 letters, numbers, and the following characters: \+ - = . \_ : /. Spaces are not allowed in tag values.
 
 ## Syntax
+<a name="aws-properties-backupgateway-hypervisor-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backupgateway-hypervisor-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-backupgateway-hypervisor-tag-key)" : {{String}},
+  "[Value](#cfn-backupgateway-hypervisor-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backupgateway-hypervisor-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-backupgateway-hypervisor-tag-key): {{String}}
+  [Value](#cfn-backupgateway-hypervisor-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-backupgateway-hypervisor-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-backupgateway-hypervisor-tag-key"></a>
 The key part of a tag's key-value pair. The key can't start with `aws:`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-backupgateway-hypervisor-tag-value"></a>
 The value part of a tag's key-value pair.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^\x00]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BackupGateway::Hypervisor
-
-Next
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^\x00]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

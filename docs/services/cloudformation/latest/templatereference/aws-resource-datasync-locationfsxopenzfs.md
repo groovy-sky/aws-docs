@@ -2,165 +2,133 @@
 title: "AWS::DataSync::LocationFSxOpenZFS"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationFSxOpenZFS
+<a name="aws-resource-datasync-locationfsxopenzfs"></a>
 
-The `AWS::DataSync::LocationFSxOpenZFS` resource specifies an endpoint for
-an Amazon FSx for OpenZFS file system.
+The `AWS::DataSync::LocationFSxOpenZFS` resource specifies an endpoint for an Amazon FSx for OpenZFS file system.
 
 ## Syntax
+<a name="aws-resource-datasync-locationfsxopenzfs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datasync-locationfsxopenzfs-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataSync::LocationFSxOpenZFS",
   "Properties" : {
-      "FsxFilesystemArn" : String,
-      "Protocol" : Protocol,
-      "SecurityGroupArns" : [ String, ... ],
-      "Subdirectory" : String,
-      "Tags" : [ Tag, ... ]
+      "[FsxFilesystemArn](#cfn-datasync-locationfsxopenzfs-fsxfilesystemarn)" : {{String}},
+      "[Protocol](#cfn-datasync-locationfsxopenzfs-protocol)" : {{Protocol}},
+      "[SecurityGroupArns](#cfn-datasync-locationfsxopenzfs-securitygrouparns)" : {{[ String, ... ]}},
+      "[Subdirectory](#cfn-datasync-locationfsxopenzfs-subdirectory)" : {{String}},
+      "[Tags](#cfn-datasync-locationfsxopenzfs-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datasync-locationfsxopenzfs-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataSync::LocationFSxOpenZFS
 Properties:
-  FsxFilesystemArn: String
-  Protocol:
-    Protocol
-  SecurityGroupArns:
-    - String
-  Subdirectory: String
-  Tags:
-    - Tag
-
+  [FsxFilesystemArn](#cfn-datasync-locationfsxopenzfs-fsxfilesystemarn): {{String}}
+  [Protocol](#cfn-datasync-locationfsxopenzfs-protocol): {{
+    Protocol}}
+  [SecurityGroupArns](#cfn-datasync-locationfsxopenzfs-securitygrouparns): {{
+    - String}}
+  [Subdirectory](#cfn-datasync-locationfsxopenzfs-subdirectory): {{String}}
+  [Tags](#cfn-datasync-locationfsxopenzfs-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-datasync-locationfsxopenzfs-properties"></a>
 
-`FsxFilesystemArn`
-
+`FsxFilesystemArn`  <a name="cfn-datasync-locationfsxopenzfs-fsxfilesystemarn"></a>
 The Amazon Resource Name (ARN) of the FSx for OpenZFS file system.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):fsx:[a-z\-0-9]+:[0-9]{12}:file-system/fs-[0-9a-f]+$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):fsx:[a-z\-0-9]+:[0-9]{12}:file-system/fs-[0-9a-f]+$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-datasync-locationfsxopenzfs-protocol"></a>
 The type of protocol that AWS DataSync uses to access your file system.
+*Required*: Yes
+*Type*: [Protocol](aws-properties-datasync-locationfsxopenzfs-protocol.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`SecurityGroupArns`  <a name="cfn-datasync-locationfsxopenzfs-securitygrouparns"></a>
+The ARNs of the security groups that are used to configure the FSx for OpenZFS file system.
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b):ec2:[a-z\-0-9]*:[0-9]{12}:security-group/.*$`
+*Length constraints*: Maximum length of 128.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `128 | 5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [Protocol](aws-properties-datasync-locationfsxopenzfs-protocol.md)
+`Subdirectory`  <a name="cfn-datasync-locationfsxopenzfs-subdirectory"></a>
+A subdirectory in the location's path that must begin with `/fsx`. DataSync uses this subdirectory to read or write data (depending on whether the file system is a source or destination location).
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-\+\./\(\)\$\p{Zs}]+$`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityGroupArns`
-
-The ARNs of the security groups that are used to configure the FSx for OpenZFS file
-system.
-
-_Pattern_:
-`^arn:(aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b):ec2:[a-z\-0-9]*:[0-9]{12}:security-group/.*$`
-
-_Length constraints_: Maximum length of 128.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `128 | 5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Subdirectory`
-
-A subdirectory in the location's path that must begin with `/fsx`. DataSync uses this subdirectory to read or write data (depending on whether the file
-system is a source or destination location).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-\+\./\(\)\$\p{Zs}]+$`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The key-value pair that represents a tag that you want to add to the resource. The value
-can be an empty string. This value helps you manage, filter, and search for your resources. We
-recommend that you create a name tag for your location.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-datasync-locationfsxopenzfs-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-datasync-locationfsxopenzfs-tags"></a>
+The key-value pair that represents a tag that you want to add to the resource. The value can be an empty string. This value helps you manage, filter, and search for your resources. We recommend that you create a name tag for your location.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-datasync-locationfsxopenzfs-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-datasync-locationfsxopenzfs-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datasync-locationfsxopenzfs-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the location resource ARN. For example:
 
-`arn:aws:datasync:us-east-2:111222333444:location/loc-07db7abfc326c50s3`
+ `arn:aws:datasync:us-east-2:111222333444:location/loc-07db7abfc326c50s3`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datasync-locationfsxopenzfs-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`LocationArn`
+####
+<a name="aws-resource-datasync-locationfsxopenzfs-return-values-fn--getatt-fn--getatt"></a>
 
+`LocationArn`  <a name="LocationArn-fn::getatt"></a>
 The ARN of the specified FSx for OpenZFS file system location.
 
-`LocationUri`
-
+`LocationUri`  <a name="LocationUri-fn::getatt"></a>
 The URI of the specified FSx for OpenZFS file system location.
 
 ## Examples
+<a name="aws-resource-datasync-locationfsxopenzfs--examples"></a>
 
 ### Specify an Amazon FSx for OpenZFS location for DataSync
+<a name="aws-resource-datasync-locationfsxopenzfs--examples--Specify_an_Amazon_FSx_for_OpenZFS_location_for_DataSync"></a>
 
-The following examples specify an FSx for OpenZFS location for
-DataSync.
+The following examples specify an FSx for OpenZFS location for DataSync.
 
 #### JSON
+<a name="aws-resource-datasync-locationfsxopenzfs--examples--Specify_an_Amazon_FSx_for_OpenZFS_location_for_DataSync--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies an FSx for OpenZFS location for DataSync",
@@ -184,13 +152,12 @@ DataSync.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-datasync-locationfsxopenzfs--examples--Specify_an_Amazon_FSx_for_OpenZFS_location_for_DataSync--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an FSx for OpenZFS location for DataSync
 Resources:
@@ -205,13 +172,6 @@ Resources:
       SecurityGroupArns:
         - arn:aws:ec2:us-east-2:11122233344:security-group/sg-12345678901212345
       Subdirectory: /MySubdirectory
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-MountOptions
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,91 +2,61 @@
 title: "AWS::CloudFront::StreamingDistribution Logging"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::StreamingDistribution Logging
+<a name="aws-properties-cloudfront-streamingdistribution-logging"></a>
 
-A complex type that controls whether access logs are written for the streaming
-distribution.
+A complex type that controls whether access logs are written for the streaming distribution.
 
 ## Syntax
+<a name="aws-properties-cloudfront-streamingdistribution-logging-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-streamingdistribution-logging-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Enabled" : Boolean,
-  "Prefix" : String
+  "[Bucket](#cfn-cloudfront-streamingdistribution-logging-bucket)" : {{String}},
+  "[Enabled](#cfn-cloudfront-streamingdistribution-logging-enabled)" : {{Boolean}},
+  "[Prefix](#cfn-cloudfront-streamingdistribution-logging-prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-streamingdistribution-logging-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Enabled: Boolean
-  Prefix: String
-
+```
+  [Bucket](#cfn-cloudfront-streamingdistribution-logging-bucket): {{String}}
+  [Enabled](#cfn-cloudfront-streamingdistribution-logging-enabled): {{Boolean}}
+  [Prefix](#cfn-cloudfront-streamingdistribution-logging-prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-streamingdistribution-logging-properties"></a>
 
-`Bucket`
+`Bucket`  <a name="cfn-cloudfront-streamingdistribution-logging-bucket"></a>
+The Amazon S3 bucket to store the access logs in, for example, `amzn-s3-demo-bucket.s3.amazonaws.com`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon S3 bucket to store the access logs in, for example,
-`amzn-s3-demo-bucket.s3.amazonaws.com`.
+`Enabled`  <a name="cfn-cloudfront-streamingdistribution-logging-enabled"></a>
+Specifies whether you want CloudFront to save access logs to an Amazon S3 bucket. If you don't want to enable logging when you create a streaming distribution or if you want to disable logging for an existing streaming distribution, specify `false` for `Enabled`, and specify `empty Bucket` and `Prefix` elements. If you specify `false` for `Enabled` but you specify values for `Bucket` and `Prefix`, the values are automatically deleted.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-Specifies whether you want CloudFront to save access logs to an Amazon S3 bucket. If you don't
-want to enable logging when you create a streaming distribution or if you want to
-disable logging for an existing streaming distribution, specify `false` for
-`Enabled`, and specify `empty Bucket` and `Prefix`
-elements. If you specify `false` for `Enabled` but you specify
-values for `Bucket` and `Prefix`, the values are automatically
-deleted.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
-An optional string that you want CloudFront to prefix to the access log filenames for this
-streaming distribution, for example, `myprefix/`. If you want to enable
-logging, but you don't want to specify a prefix, you still must include an empty
-`Prefix` element in the `Logging` element.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Prefix`  <a name="cfn-cloudfront-streamingdistribution-logging-prefix"></a>
+An optional string that you want CloudFront to prefix to the access log filenames for this streaming distribution, for example, `myprefix/`. If you want to enable logging, but you don't want to specify a prefix, you still must include an empty `Prefix` element in the `Logging` element.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [StreamingLoggingConfig](../../../../reference/cloudfront/latest/apireference/api-streamingloggingconfig.md) in the _Amazon CloudFront API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::StreamingDistribution
-
-S3Origin
+<a name="aws-properties-cloudfront-streamingdistribution-logging--seealso"></a>
++ [StreamingLoggingConfig](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_StreamingLoggingConfig.html) in the *Amazon CloudFront API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

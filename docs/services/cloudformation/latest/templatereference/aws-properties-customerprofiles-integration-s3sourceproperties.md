@@ -2,75 +2,54 @@
 title: "AWS::CustomerProfiles::Integration S3SourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Integration S3SourceProperties
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties"></a>
 
-The properties that are applied when Amazon S3 is being used as the flow
-source.
+The properties that are applied when Amazon S3 is being used as the flow source.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "BucketPrefix" : String
+  "[BucketName](#cfn-customerprofiles-integration-s3sourceproperties-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-customerprofiles-integration-s3sourceproperties-bucketprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  BucketPrefix: String
-
+```
+  [BucketName](#cfn-customerprofiles-integration-s3sourceproperties-bucketname): {{String}}
+  [BucketPrefix](#cfn-customerprofiles-integration-s3sourceproperties-bucketprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-customerprofiles-integration-s3sourceproperties-bucketname"></a>
 The Amazon S3 bucket name where the source files are stored.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketPrefix`
-
+`BucketPrefix`  <a name="cfn-customerprofiles-integration-s3sourceproperties-bucketprefix"></a>
 The object key for the Amazon S3 bucket in which the source files are stored.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ObjectTypeMapping
-
-SalesforceSourceProperties
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

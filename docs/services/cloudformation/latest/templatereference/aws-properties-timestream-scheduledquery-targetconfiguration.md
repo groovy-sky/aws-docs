@@ -2,53 +2,42 @@
 title: "AWS::Timestream::ScheduledQuery TargetConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::ScheduledQuery TargetConfiguration
+<a name="aws-properties-timestream-scheduledquery-targetconfiguration"></a>
 
 Configuration used for writing the output of a query.
 
 ## Syntax
+<a name="aws-properties-timestream-scheduledquery-targetconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-scheduledquery-targetconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TimestreamConfiguration" : TimestreamConfiguration
+  "[TimestreamConfiguration](#cfn-timestream-scheduledquery-targetconfiguration-timestreamconfiguration)" : {{TimestreamConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-scheduledquery-targetconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TimestreamConfiguration:
-    TimestreamConfiguration
-
+```
+  [TimestreamConfiguration](#cfn-timestream-scheduledquery-targetconfiguration-timestreamconfiguration): {{
+    TimestreamConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-scheduledquery-targetconfiguration-properties"></a>
 
-`TimestreamConfiguration`
-
+`TimestreamConfiguration`  <a name="cfn-timestream-scheduledquery-targetconfiguration-timestreamconfiguration"></a>
 Configuration needed to write data into the Timestream database and table.
-
-_Required_: Yes
-
-_Type_: [TimestreamConfiguration](aws-properties-timestream-scheduledquery-timestreamconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-TimestreamConfiguration
+*Required*: Yes
+*Type*: [TimestreamConfiguration](aws-properties-timestream-scheduledquery-timestreamconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

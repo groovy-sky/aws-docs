@@ -2,77 +2,56 @@
 title: "AWS::BCMDataExports::Export DataQuery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export DataQuery
+<a name="aws-properties-bcmdataexports-export-dataquery"></a>
 
 The SQL query of column selections and row filters from the data table you want.
 
 ## Syntax
+<a name="aws-properties-bcmdataexports-export-dataquery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bcmdataexports-export-dataquery-syntax.json"></a>
 
-```json
-
+```
 {
-  "QueryStatement" : String,
-  "TableConfigurations" : {Key: Value, ...}
+  "[QueryStatement](#cfn-bcmdataexports-export-dataquery-querystatement)" : {{String}},
+  "[TableConfigurations](#cfn-bcmdataexports-export-dataquery-tableconfigurations)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bcmdataexports-export-dataquery-syntax.yaml"></a>
 
-```yaml
-
-  QueryStatement: String
-  TableConfigurations:
-    Key: Value
-
+```
+  [QueryStatement](#cfn-bcmdataexports-export-dataquery-querystatement): {{String}}
+  [TableConfigurations](#cfn-bcmdataexports-export-dataquery-tableconfigurations): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-bcmdataexports-export-dataquery-properties"></a>
 
-`QueryStatement`
-
+`QueryStatement`  <a name="cfn-bcmdataexports-export-dataquery-querystatement"></a>
 The query statement.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\S\s]*$`
+*Minimum*: `1`
+*Maximum*: `36000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\S\s]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `36000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableConfigurations`
-
+`TableConfigurations`  <a name="cfn-bcmdataexports-export-dataquery-tableconfigurations"></a>
 The table configuration.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\S\s]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `16384`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BCMDataExports::Export
-
-DestinationConfigurations
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\S\s]*$`
+*Minimum*: `0`
+*Maximum*: `16384`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

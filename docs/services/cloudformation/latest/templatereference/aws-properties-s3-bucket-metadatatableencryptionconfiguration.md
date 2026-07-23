@@ -2,71 +2,50 @@
 title: "AWS::S3::Bucket MetadataTableEncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket MetadataTableEncryptionConfiguration
+<a name="aws-properties-s3-bucket-metadatatableencryptionconfiguration"></a>
 
-The encryption settings for an S3 Metadata journal table or inventory table configuration.
+ The encryption settings for an S3 Metadata journal table or inventory table configuration.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-metadatatableencryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-metadatatableencryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyArn" : String,
-  "SseAlgorithm" : String
+  "[KmsKeyArn](#cfn-s3-bucket-metadatatableencryptionconfiguration-kmskeyarn)" : {{String}},
+  "[SseAlgorithm](#cfn-s3-bucket-metadatatableencryptionconfiguration-ssealgorithm)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-metadatatableencryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyArn: String
-  SseAlgorithm: String
-
+```
+  [KmsKeyArn](#cfn-s3-bucket-metadatatableencryptionconfiguration-kmskeyarn): {{String}}
+  [SseAlgorithm](#cfn-s3-bucket-metadatatableencryptionconfiguration-ssealgorithm): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-metadatatableencryptionconfiguration-properties"></a>
 
-`KmsKeyArn`
+`KmsKeyArn`  <a name="cfn-s3-bucket-metadatatableencryptionconfiguration-kmskeyarn"></a>
+ If server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS) is specified, you must also specify the KMS key Amazon Resource Name (ARN). You must specify a customer-managed KMS key that's located in the same Region as the general purpose bucket that corresponds to the metadata table configuration.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS) is specified, you must also
-specify the KMS key Amazon Resource Name (ARN). You must specify a customer-managed KMS key
-that's located in the same Region as the general purpose bucket that corresponds to the metadata
-table configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SseAlgorithm`
-
-The encryption type specified for a metadata table. To specify server-side encryption with
-AWS Key Management Service (AWS KMS) keys (SSE-KMS), use the `aws:kms` value. To specify server-side
-encryption with Amazon S3 managed keys (SSE-S3), use the `AES256` value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `aws:kms | AES256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetadataTableConfiguration
-
-Metrics
+`SseAlgorithm`  <a name="cfn-s3-bucket-metadatatableencryptionconfiguration-ssealgorithm"></a>
+ The encryption type specified for a metadata table. To specify server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), use the `aws:kms` value. To specify server-side encryption with Amazon S3 managed keys (SSE-S3), use the `AES256` value.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `aws:kms | AES256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

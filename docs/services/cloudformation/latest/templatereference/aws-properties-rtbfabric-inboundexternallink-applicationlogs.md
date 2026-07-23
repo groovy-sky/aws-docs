@@ -2,53 +2,42 @@
 title: "AWS::RTBFabric::InboundExternalLink ApplicationLogs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::InboundExternalLink ApplicationLogs
+<a name="aws-properties-rtbfabric-inboundexternallink-applicationlogs"></a>
 
-The `ApplicationLogs` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
+<a name="aws-properties-rtbfabric-inboundexternallink-applicationlogs-description"></a>The `ApplicationLogs` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
 
 ## Syntax
+<a name="aws-properties-rtbfabric-inboundexternallink-applicationlogs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-inboundexternallink-applicationlogs-syntax.json"></a>
 
-```json
-
+```
 {
-  "LinkApplicationLogSampling" : LinkApplicationLogSampling
+  "[LinkApplicationLogSampling](#cfn-rtbfabric-inboundexternallink-applicationlogs-linkapplicationlogsampling)" : {{LinkApplicationLogSampling}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-inboundexternallink-applicationlogs-syntax.yaml"></a>
 
-```yaml
-
-  LinkApplicationLogSampling:
-    LinkApplicationLogSampling
-
+```
+  [LinkApplicationLogSampling](#cfn-rtbfabric-inboundexternallink-applicationlogs-linkapplicationlogsampling): {{
+    LinkApplicationLogSampling}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-inboundexternallink-applicationlogs-properties"></a>
 
-`LinkApplicationLogSampling`
-
+`LinkApplicationLogSampling`  <a name="cfn-rtbfabric-inboundexternallink-applicationlogs-linkapplicationlogsampling"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [LinkApplicationLogSampling](aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RTBFabric::InboundExternalLink
-
-LinkApplicationLogSampling
+*Required*: Yes
+*Type*: [LinkApplicationLogSampling](aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

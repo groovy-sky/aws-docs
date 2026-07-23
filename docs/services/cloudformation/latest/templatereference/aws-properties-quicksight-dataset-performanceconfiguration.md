@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::DataSet PerformanceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet PerformanceConfiguration
+<a name="aws-properties-quicksight-dataset-performanceconfiguration"></a>
 
-The `PerformanceConfiguration` property type specifies Property description not available. for an [AWS::QuickSight::DataSet](aws-resource-quicksight-dataset.md).
+<a name="aws-properties-quicksight-dataset-performanceconfiguration-description"></a>The `PerformanceConfiguration` property type specifies Property description not available. for an [AWS::QuickSight::DataSet](aws-resource-quicksight-dataset.md).
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-performanceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-performanceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "UniqueKeys" : [ UniqueKey, ... ]
+  "[UniqueKeys](#cfn-quicksight-dataset-performanceconfiguration-uniquekeys)" : {{[ UniqueKey, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-performanceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  UniqueKeys:
-    - UniqueKey
-
+```
+  [UniqueKeys](#cfn-quicksight-dataset-performanceconfiguration-uniquekeys): {{
+    - UniqueKey}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-performanceconfiguration-properties"></a>
 
-`UniqueKeys`
-
+`UniqueKeys`  <a name="cfn-quicksight-dataset-performanceconfiguration-uniquekeys"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [UniqueKey](aws-properties-quicksight-dataset-uniquekey.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParentDataSet
-
-PhysicalTable
+*Required*: No
+*Type*: Array of [UniqueKey](aws-properties-quicksight-dataset-uniquekey.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

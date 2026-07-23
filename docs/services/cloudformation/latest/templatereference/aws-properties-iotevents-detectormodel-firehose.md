@@ -2,83 +2,59 @@
 title: "AWS::IoTEvents::DetectorModel Firehose"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel Firehose
+<a name="aws-properties-iotevents-detectormodel-firehose"></a>
 
-Sends information about the detector model instance and the event that triggered the
-action to an Amazon Kinesis Data Firehose delivery stream.
+Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
 
 ## Syntax
+<a name="aws-properties-iotevents-detectormodel-firehose-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-detectormodel-firehose-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeliveryStreamName" : String,
-  "Payload" : Payload,
-  "Separator" : String
+  "[DeliveryStreamName](#cfn-iotevents-detectormodel-firehose-deliverystreamname)" : {{String}},
+  "[Payload](#cfn-iotevents-detectormodel-firehose-payload)" : {{Payload}},
+  "[Separator](#cfn-iotevents-detectormodel-firehose-separator)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-detectormodel-firehose-syntax.yaml"></a>
 
-```yaml
-
-  DeliveryStreamName: String
-  Payload:
-    Payload
-  Separator: String
-
+```
+  [DeliveryStreamName](#cfn-iotevents-detectormodel-firehose-deliverystreamname): {{String}}
+  [Payload](#cfn-iotevents-detectormodel-firehose-payload): {{
+    Payload}}
+  [Separator](#cfn-iotevents-detectormodel-firehose-separator): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-detectormodel-firehose-properties"></a>
 
-`DeliveryStreamName`
-
+`DeliveryStreamName`  <a name="cfn-iotevents-detectormodel-firehose-deliverystreamname"></a>
 The name of the Kinesis Data Firehose delivery stream where the data is written.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Payload`  <a name="cfn-iotevents-detectormodel-firehose-payload"></a>
+You can configure the action payload when you send a message to an Amazon Data Firehose delivery stream.
+*Required*: No
+*Type*: [Payload](aws-properties-iotevents-detectormodel-payload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Payload`
-
-You can configure the action payload when you send a message to an Amazon Data Firehose delivery
-stream.
-
-_Required_: No
-
-_Type_: [Payload](aws-properties-iotevents-detectormodel-payload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Separator`
-
-A character separator that is used to separate records written to the Kinesis Data
-Firehose delivery stream. Valid values are: '\\n' (newline), '\\t' (tab), '\\r\\n' (Windows
-newline), ',' (comma).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `([\n\t])|(\r\n)|(,)`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Event
-
-IotEvents
+`Separator`  <a name="cfn-iotevents-detectormodel-firehose-separator"></a>
+A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\\n' (newline), '\\t' (tab), '\\r\\n' (Windows newline), ',' (comma).
+*Required*: No
+*Type*: String
+*Pattern*: `([\n\t])|(\r\n)|(,)`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

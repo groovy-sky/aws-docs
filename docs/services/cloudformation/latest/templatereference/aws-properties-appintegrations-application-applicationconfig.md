@@ -2,53 +2,42 @@
 title: "AWS::AppIntegrations::Application ApplicationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application ApplicationConfig
+<a name="aws-properties-appintegrations-application-applicationconfig"></a>
 
-The `ApplicationConfig` property type specifies Property description not available. for an [AWS::AppIntegrations::Application](aws-resource-appintegrations-application.md).
+<a name="aws-properties-appintegrations-application-applicationconfig-description"></a>The `ApplicationConfig` property type specifies Property description not available. for an [AWS::AppIntegrations::Application](aws-resource-appintegrations-application.md).
 
 ## Syntax
+<a name="aws-properties-appintegrations-application-applicationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appintegrations-application-applicationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContactHandling" : ContactHandling
+  "[ContactHandling](#cfn-appintegrations-application-applicationconfig-contacthandling)" : {{ContactHandling}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appintegrations-application-applicationconfig-syntax.yaml"></a>
 
-```yaml
-
-  ContactHandling:
-    ContactHandling
-
+```
+  [ContactHandling](#cfn-appintegrations-application-applicationconfig-contacthandling): {{
+    ContactHandling}}
 ```
 
 ## Properties
+<a name="aws-properties-appintegrations-application-applicationconfig-properties"></a>
 
-`ContactHandling`
-
+`ContactHandling`  <a name="cfn-appintegrations-application-applicationconfig-contacthandling"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [ContactHandling](aws-properties-appintegrations-application-contacthandling.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppIntegrations::Application
-
-ApplicationSourceConfig
+*Required*: No
+*Type*: [ContactHandling](aws-properties-appintegrations-application-contacthandling.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

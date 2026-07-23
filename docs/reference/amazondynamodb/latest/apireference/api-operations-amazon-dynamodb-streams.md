@@ -3,21 +3,12 @@ title: "Amazon DynamoDB Streams"
 ---
 
 # Amazon DynamoDB Streams
+<a name="API_Operations_Amazon_DynamoDB_Streams"></a>
 
 The following actions are supported by Amazon DynamoDB Streams:
-
-- [DescribeStream](api-streams-describestream.md)
-
-- [GetRecords](api-streams-getrecords.md)
-
-- [GetShardIterator](api-streams-getsharditerator.md)
-
-- [ListStreams](api-streams-liststreams.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateSubnetGroup
-
-DescribeStream
++  [DescribeStream](API_streams_DescribeStream.md)
++  [GetRecords](API_streams_GetRecords.md)
++  [GetShardIterator](API_streams_GetShardIterator.md)
++  [ListStreams](API_streams_ListStreams.md)
 
 All content copied from https://docs.aws.amazon.com/.

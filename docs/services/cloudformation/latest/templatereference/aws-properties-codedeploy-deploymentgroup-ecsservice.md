@@ -2,65 +2,49 @@
 title: "AWS::CodeDeploy::DeploymentGroup ECSService"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup ECSService
+<a name="aws-properties-codedeploy-deploymentgroup-ecsservice"></a>
 
-Contains the service and cluster names used to identify an Amazon ECS
-deployment's target.
+ Contains the service and cluster names used to identify an Amazon ECS deployment's target.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentgroup-ecsservice-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentgroup-ecsservice-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterName" : String,
-  "ServiceName" : String
+  "[ClusterName](#cfn-codedeploy-deploymentgroup-ecsservice-clustername)" : {{String}},
+  "[ServiceName](#cfn-codedeploy-deploymentgroup-ecsservice-servicename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentgroup-ecsservice-syntax.yaml"></a>
 
-```yaml
-
-  ClusterName: String
-  ServiceName: String
-
+```
+  [ClusterName](#cfn-codedeploy-deploymentgroup-ecsservice-clustername): {{String}}
+  [ServiceName](#cfn-codedeploy-deploymentgroup-ecsservice-servicename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentgroup-ecsservice-properties"></a>
 
-`ClusterName`
+`ClusterName`  <a name="cfn-codedeploy-deploymentgroup-ecsservice-clustername"></a>
+ The name of the cluster that the Amazon ECS service is associated with.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the cluster that the Amazon ECS service is associated with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceName`
-
-The name of the target Amazon ECS service.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EC2TagSetListObject
-
-ELBInfo
+`ServiceName`  <a name="cfn-codedeploy-deploymentgroup-ecsservice-servicename"></a>
+ The name of the target Amazon ECS service.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

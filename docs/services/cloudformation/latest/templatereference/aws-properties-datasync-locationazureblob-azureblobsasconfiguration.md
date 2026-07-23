@@ -2,68 +2,48 @@
 title: "AWS::DataSync::LocationAzureBlob AzureBlobSasConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationAzureBlob AzureBlobSasConfiguration
+<a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration"></a>
 
-The shared access signature (SAS) configuration that allows AWS DataSync to
-access your Microsoft Azure Blob Storage.
+The shared access signature (SAS) configuration that allows AWS DataSync to access your Microsoft Azure Blob Storage.
 
-For more information, see [SAS\
-tokens](../../../datasync/latest/userguide/creating-azure-blob-location.md#azure-blob-sas-tokens) for accessing your Azure Blob Storage.
+For more information, see [SAS tokens](https://docs.aws.amazon.com/datasync/latest/userguide/creating-azure-blob-location.html#azure-blob-sas-tokens) for accessing your Azure Blob Storage.
 
 ## Syntax
+<a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AzureBlobSasToken" : String
+  "[AzureBlobSasToken](#cfn-datasync-locationazureblob-azureblobsasconfiguration-azureblobsastoken)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AzureBlobSasToken: String
-
+```
+  [AzureBlobSasToken](#cfn-datasync-locationazureblob-azureblobsasconfiguration-azureblobsastoken): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration-properties"></a>
 
-`AzureBlobSasToken`
-
-Specifies a SAS token that provides permissions to access your Azure Blob
-Storage.
-
-The token is part of the SAS URI string that comes after the storage resource URI and
-a question mark. A token looks something like this:
-
-`sp=r&st=2023-12-20T14:54:52Z&se=2023-12-20T22:54:52Z&spr=https&sv=2021-06-08&sr=c&sig=aBBKDWQvyuVcTPH9EBp%2FXTI9E%2F%2Fmq171%2BZU178wcwqU%3D`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(^.+$)`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataSync::LocationAzureBlob
-
-CmkSecretConfig
+`AzureBlobSasToken`  <a name="cfn-datasync-locationazureblob-azureblobsasconfiguration-azureblobsastoken"></a>
+Specifies a SAS token that provides permissions to access your Azure Blob Storage.
+The token is part of the SAS URI string that comes after the storage resource URI and a question mark. A token looks something like this:
+ `sp=r&st=2023-12-20T14:54:52Z&se=2023-12-20T22:54:52Z&spr=https&sv=2021-06-08&sr=c&sig=aBBKDWQvyuVcTPH9EBp%2FXTI9E%2F%2Fmq171%2BZU178wcwqU%3D`
+*Required*: Yes
+*Type*: String
+*Pattern*: `(^.+$)`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

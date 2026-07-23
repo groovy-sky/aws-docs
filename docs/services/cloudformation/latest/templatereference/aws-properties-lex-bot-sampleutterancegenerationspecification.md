@@ -2,65 +2,50 @@
 title: "AWS::Lex::Bot SampleUtteranceGenerationSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SampleUtteranceGenerationSpecification
+<a name="aws-properties-lex-bot-sampleutterancegenerationspecification"></a>
 
 Contains specifications for the sample utterance generation feature.
 
 ## Syntax
+<a name="aws-properties-lex-bot-sampleutterancegenerationspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-sampleutterancegenerationspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockModelSpecification" : BedrockModelSpecification,
-  "Enabled" : Boolean
+  "[BedrockModelSpecification](#cfn-lex-bot-sampleutterancegenerationspecification-bedrockmodelspecification)" : {{BedrockModelSpecification}},
+  "[Enabled](#cfn-lex-bot-sampleutterancegenerationspecification-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-sampleutterancegenerationspecification-syntax.yaml"></a>
 
-```yaml
-
-  BedrockModelSpecification:
-    BedrockModelSpecification
-  Enabled: Boolean
-
+```
+  [BedrockModelSpecification](#cfn-lex-bot-sampleutterancegenerationspecification-bedrockmodelspecification): {{
+    BedrockModelSpecification}}
+  [Enabled](#cfn-lex-bot-sampleutterancegenerationspecification-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-sampleutterancegenerationspecification-properties"></a>
 
-`BedrockModelSpecification`
-
+`BedrockModelSpecification`  <a name="cfn-lex-bot-sampleutterancegenerationspecification-bedrockmodelspecification"></a>
 Property description not available.
+*Required*: No
+*Type*: [BedrockModelSpecification](aws-properties-lex-bot-bedrockmodelspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BedrockModelSpecification](aws-properties-lex-bot-bedrockmodelspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-lex-bot-sampleutterancegenerationspecification-enabled"></a>
 Specifies whether to enable sample utterance generation or not.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SampleUtterance
-
-SampleValue
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

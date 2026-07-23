@@ -2,87 +2,62 @@
 title: "AWS::SageMaker::Domain CustomImage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain CustomImage
+<a name="aws-properties-sagemaker-domain-customimage"></a>
 
-A custom SageMaker AI image. For more information, see
-[Bring your own SageMaker AI image](../../../sagemaker/latest/dg/studio-byoi.md).
+A custom SageMaker AI image. For more information, see [Bring your own SageMaker AI image](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-byoi.html).
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-customimage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-customimage-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppImageConfigName" : String,
-  "ImageName" : String,
-  "ImageVersionNumber" : Integer
+  "[AppImageConfigName](#cfn-sagemaker-domain-customimage-appimageconfigname)" : {{String}},
+  "[ImageName](#cfn-sagemaker-domain-customimage-imagename)" : {{String}},
+  "[ImageVersionNumber](#cfn-sagemaker-domain-customimage-imageversionnumber)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-customimage-syntax.yaml"></a>
 
-```yaml
-
-  AppImageConfigName: String
-  ImageName: String
-  ImageVersionNumber: Integer
-
+```
+  [AppImageConfigName](#cfn-sagemaker-domain-customimage-appimageconfigname): {{String}}
+  [ImageName](#cfn-sagemaker-domain-customimage-imagename): {{String}}
+  [ImageVersionNumber](#cfn-sagemaker-domain-customimage-imageversionnumber): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-customimage-properties"></a>
 
-`AppImageConfigName`
-
+`AppImageConfigName`  <a name="cfn-sagemaker-domain-customimage-appimageconfigname"></a>
 The name of the AppImageConfig.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageName`
-
+`ImageName`  <a name="cfn-sagemaker-domain-customimage-imagename"></a>
 The name of the CustomImage. Must be unique to your account.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]([-.]?[a-zA-Z0-9]){0,62}$`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]([-.]?[a-zA-Z0-9]){0,62}$`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageVersionNumber`
-
+`ImageVersionNumber`  <a name="cfn-sagemaker-domain-customimage-imageversionnumber"></a>
 The version number of the CustomImage.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomFileSystemConfig
-
-CustomPosixUserConfig
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

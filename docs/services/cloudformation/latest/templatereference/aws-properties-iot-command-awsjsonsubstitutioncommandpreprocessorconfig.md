@@ -2,54 +2,42 @@
 title: "AWS::IoT::Command AwsJsonSubstitutionCommandPreprocessorConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Command AwsJsonSubstitutionCommandPreprocessorConfig
+<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig"></a>
 
-The `AwsJsonSubstitutionCommandPreprocessorConfig` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
+<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-description"></a>The `AwsJsonSubstitutionCommandPreprocessorConfig` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
 
 ## Syntax
+<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "OutputFormat" : String
+  "[OutputFormat](#cfn-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-outputformat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-syntax.yaml"></a>
 
-```yaml
-
-  OutputFormat: String
-
+```
+  [OutputFormat](#cfn-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-outputformat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-properties"></a>
 
-`OutputFormat`
-
+`OutputFormat`  <a name="cfn-iot-command-awsjsonsubstitutioncommandpreprocessorconfig-outputformat"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `JSON | CBOR`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::Command
-
-CommandParameter
+*Required*: Yes
+*Type*: String
+*Allowed values*: `JSON | CBOR`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

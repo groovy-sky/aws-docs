@@ -2,58 +2,44 @@
 title: "AWS::Pipes::Pipe FirehoseLogDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe FirehoseLogDestination
+<a name="aws-properties-pipes-pipe-firehoselogdestination"></a>
 
 Represents the Amazon Data Firehose logging configuration settings for the pipe.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-firehoselogdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-firehoselogdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeliveryStreamArn" : String
+  "[DeliveryStreamArn](#cfn-pipes-pipe-firehoselogdestination-deliverystreamarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-firehoselogdestination-syntax.yaml"></a>
 
-```yaml
-
-  DeliveryStreamArn: String
-
+```
+  [DeliveryStreamArn](#cfn-pipes-pipe-firehoselogdestination-deliverystreamarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-firehoselogdestination-properties"></a>
 
-`DeliveryStreamArn`
-
+`DeliveryStreamArn`  <a name="cfn-pipes-pipe-firehoselogdestination-deliverystreamarn"></a>
 The Amazon Resource Name (ARN) of the Firehose delivery stream to which EventBridge delivers the pipe log records.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(^arn:aws([a-z]|\-)*:firehose:([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}):(\d{12}):deliverystream/.+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `1600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterCriteria
-
-MQBrokerAccessCredentials
+*Required*: No
+*Type*: String
+*Pattern*: `^(^arn:aws([a-z]|\-)*:firehose:([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}):(\d{12}):deliverystream/.+)$`
+*Minimum*: `1`
+*Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

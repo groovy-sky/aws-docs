@@ -2,72 +2,54 @@
 title: "AWS::ApplicationAutoScaling::ScalableTarget ScalableTargetAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalableTarget ScalableTargetAction
+<a name="aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction"></a>
 
-`ScalableTargetAction` specifies the minimum and maximum capacity for the
-`ScalableTargetAction` property of the [AWS::ApplicationAutoScaling::ScalableTarget ScheduledAction](../userguide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.md) property type.
+`ScalableTargetAction` specifies the minimum and maximum capacity for the `ScalableTargetAction` property of the [AWS::ApplicationAutoScaling::ScalableTarget ScheduledAction](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html) property type.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxCapacity" : Integer,
-  "MinCapacity" : Integer
+  "[MaxCapacity](#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity)" : {{Integer}},
+  "[MinCapacity](#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction-syntax.yaml"></a>
 
-```yaml
-
-  MaxCapacity: Integer
-  MinCapacity: Integer
-
+```
+  [MaxCapacity](#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity): {{Integer}}
+  [MinCapacity](#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction-properties"></a>
 
-`MaxCapacity`
-
+`MaxCapacity`  <a name="cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity"></a>
 The maximum capacity.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinCapacity`
-
+`MinCapacity`  <a name="cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity"></a>
 The minimum capacity.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Configure Application Auto Scaling resources](../userguide/quickref-application-auto-scaling.md)
-
-- [Getting started](../../../autoscaling/application/userguide/getting-started.md)
-in the _Application Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApplicationAutoScaling::ScalableTarget
-
-ScheduledAction
+<a name="aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction--seealso"></a>
++  [Configure Application Auto Scaling resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-application-auto-scaling.html)
++ [Getting started](https://docs.aws.amazon.com/autoscaling/application/userguide/getting-started.html) in the *Application Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

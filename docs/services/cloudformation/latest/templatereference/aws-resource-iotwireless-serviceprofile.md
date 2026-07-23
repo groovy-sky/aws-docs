@@ -2,168 +2,134 @@
 title: "AWS::IoTWireless::ServiceProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::ServiceProfile
+<a name="aws-resource-iotwireless-serviceprofile"></a>
 
 Creates a new service profile.
 
 ## Syntax
+<a name="aws-resource-iotwireless-serviceprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotwireless-serviceprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTWireless::ServiceProfile",
   "Properties" : {
-      "LoRaWAN" : LoRaWANServiceProfile,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[LoRaWAN](#cfn-iotwireless-serviceprofile-lorawan)" : {{LoRaWANServiceProfile}},
+      "[Name](#cfn-iotwireless-serviceprofile-name)" : {{String}},
+      "[Tags](#cfn-iotwireless-serviceprofile-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotwireless-serviceprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTWireless::ServiceProfile
 Properties:
-  LoRaWAN:
-    LoRaWANServiceProfile
-  Name: String
-  Tags:
-    - Tag
-
+  [LoRaWAN](#cfn-iotwireless-serviceprofile-lorawan): {{
+    LoRaWANServiceProfile}}
+  [Name](#cfn-iotwireless-serviceprofile-name): {{String}}
+  [Tags](#cfn-iotwireless-serviceprofile-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotwireless-serviceprofile-properties"></a>
 
-`LoRaWAN`
-
+`LoRaWAN`  <a name="cfn-iotwireless-serviceprofile-lorawan"></a>
 LoRaWAN service profile object.
+*Required*: No
+*Type*: [LoRaWANServiceProfile](aws-properties-iotwireless-serviceprofile-lorawanserviceprofile.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [LoRaWANServiceProfile](aws-properties-iotwireless-serviceprofile-lorawanserviceprofile.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-iotwireless-serviceprofile-name"></a>
 The name of the new resource.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tags are an array of key-value pairs to attach to the specified resource. Tags can
-have a minimum of 0 and a maximum of 50 items.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotwireless-serviceprofile-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iotwireless-serviceprofile-tags"></a>
+The tags are an array of key-value pairs to attach to the specified resource. Tags can have a minimum of 0 and a maximum of 50 items.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotwireless-serviceprofile-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotwireless-serviceprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotwireless-serviceprofile-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the service profile ID.
 
 ### Fn::GetAtt
+<a name="aws-resource-iotwireless-serviceprofile-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-iotwireless-serviceprofile-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the service profile created.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the service profile created.
 
-`LoRaWAN.ChannelMask`
-
+`LoRaWAN.ChannelMask`  <a name="LoRaWAN.ChannelMask-fn::getatt"></a>
 The ChannelMask value.
 
-`LoRaWAN.DevStatusReqFreq`
-
+`LoRaWAN.DevStatusReqFreq`  <a name="LoRaWAN.DevStatusReqFreq-fn::getatt"></a>
 The DevStatusReqFreq value.
 
-`LoRaWAN.DlBucketSize`
-
+`LoRaWAN.DlBucketSize`  <a name="LoRaWAN.DlBucketSize-fn::getatt"></a>
 The DLBucketSize value.
 
-`LoRaWAN.DlRate`
-
+`LoRaWAN.DlRate`  <a name="LoRaWAN.DlRate-fn::getatt"></a>
 The DLRate value.
 
-`LoRaWAN.DlRatePolicy`
-
+`LoRaWAN.DlRatePolicy`  <a name="LoRaWAN.DlRatePolicy-fn::getatt"></a>
 The DLRatePolicy value.
 
-`LoRaWAN.DrMax`
-
+`LoRaWAN.DrMax`  <a name="LoRaWAN.DrMax-fn::getatt"></a>
 The DRMax value.
 
-`LoRaWAN.DrMin`
-
+`LoRaWAN.DrMin`  <a name="LoRaWAN.DrMin-fn::getatt"></a>
 The DRMin value.
 
-`LoRaWAN.HrAllowed`
-
+`LoRaWAN.HrAllowed`  <a name="LoRaWAN.HrAllowed-fn::getatt"></a>
 The HRAllowed value that describes whether handover roaming is allowed.
 
-`LoRaWAN.MinGwDiversity`
-
+`LoRaWAN.MinGwDiversity`  <a name="LoRaWAN.MinGwDiversity-fn::getatt"></a>
 The MinGwDiversity value.
 
-`LoRaWAN.NwkGeoLoc`
-
+`LoRaWAN.NwkGeoLoc`  <a name="LoRaWAN.NwkGeoLoc-fn::getatt"></a>
 The NwkGeoLoc value.
 
-`LoRaWAN.ReportDevStatusBattery`
-
+`LoRaWAN.ReportDevStatusBattery`  <a name="LoRaWAN.ReportDevStatusBattery-fn::getatt"></a>
 The ReportDevStatusBattery value.
 
-`LoRaWAN.ReportDevStatusMargin`
-
+`LoRaWAN.ReportDevStatusMargin`  <a name="LoRaWAN.ReportDevStatusMargin-fn::getatt"></a>
 The ReportDevStatusMargin value.
 
-`LoRaWAN.TargetPer`
-
+`LoRaWAN.TargetPer`  <a name="LoRaWAN.TargetPer-fn::getatt"></a>
 The TargetPer value.
 
-`LoRaWAN.UlBucketSize`
-
+`LoRaWAN.UlBucketSize`  <a name="LoRaWAN.UlBucketSize-fn::getatt"></a>
 The UlBucketSize value.
 
-`LoRaWAN.UlRate`
-
+`LoRaWAN.UlRate`  <a name="LoRaWAN.UlRate-fn::getatt"></a>
 The ULRate value.
 
-`LoRaWAN.UlRatePolicy`
-
+`LoRaWAN.UlRatePolicy`  <a name="LoRaWAN.UlRatePolicy-fn::getatt"></a>
 The ULRatePolicy value.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-LoRaWANServiceProfile
 
 All content copied from https://docs.aws.amazon.com/.

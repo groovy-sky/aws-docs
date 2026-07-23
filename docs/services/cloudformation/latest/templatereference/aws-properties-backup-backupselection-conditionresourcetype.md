@@ -2,81 +2,57 @@
 title: "AWS::Backup::BackupSelection ConditionResourceType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupSelection ConditionResourceType
+<a name="aws-properties-backup-backupselection-conditionresourcetype"></a>
 
-Specifies an object that contains an array of triplets made up of a condition type (such
-as `STRINGEQUALS`), a key, and a value. Conditions are used to filter resources
-in a selection that is assigned to a backup plan.
+Specifies an object that contains an array of triplets made up of a condition type (such as `STRINGEQUALS`), a key, and a value. Conditions are used to filter resources in a selection that is assigned to a backup plan.
 
 ## Syntax
+<a name="aws-properties-backup-backupselection-conditionresourcetype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-backupselection-conditionresourcetype-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionKey" : String,
-  "ConditionType" : String,
-  "ConditionValue" : String
+  "[ConditionKey](#cfn-backup-backupselection-conditionresourcetype-conditionkey)" : {{String}},
+  "[ConditionType](#cfn-backup-backupselection-conditionresourcetype-conditiontype)" : {{String}},
+  "[ConditionValue](#cfn-backup-backupselection-conditionresourcetype-conditionvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-backupselection-conditionresourcetype-syntax.yaml"></a>
 
-```yaml
-
-  ConditionKey: String
-  ConditionType: String
-  ConditionValue: String
-
+```
+  [ConditionKey](#cfn-backup-backupselection-conditionresourcetype-conditionkey): {{String}}
+  [ConditionType](#cfn-backup-backupselection-conditionresourcetype-conditiontype): {{String}}
+  [ConditionValue](#cfn-backup-backupselection-conditionresourcetype-conditionvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-backupselection-conditionresourcetype-properties"></a>
 
-`ConditionKey`
+`ConditionKey`  <a name="cfn-backup-backupselection-conditionresourcetype-conditionkey"></a>
+The key in a key-value pair. For example, in `"Department": "accounting"`, `"Department"` is the key.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The key in a key-value pair. For example, in `"Department": "accounting"`,
-`"Department"` is the key.
+`ConditionType`  <a name="cfn-backup-backupselection-conditionresourcetype-conditiontype"></a>
+An operation, such as `STRINGEQUALS`, that is applied to a key-value pair used to filter resources in a selection.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConditionType`
-
-An operation, such as `STRINGEQUALS`, that is applied to a key-value pair
-used to filter resources in a selection.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConditionValue`
-
-The value in a key-value pair. For example, in `"Department": "accounting"`,
-`"accounting"` is the value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionParameter
-
-Conditions
+`ConditionValue`  <a name="cfn-backup-backupselection-conditionresourcetype-conditionvalue"></a>
+The value in a key-value pair. For example, in `"Department": "accounting"`, `"accounting"` is the value.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,93 +2,61 @@
 title: "AWS::Lex::Bot ConditionalSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot ConditionalSpecification
+<a name="aws-properties-lex-bot-conditionalspecification"></a>
 
-Provides a list of conditional branches. Branches are evaluated in
-the order that they are entered in the list. The first branch with a
-condition that evaluates to true is executed. The last branch in the
-list is the default branch. The default branch should not have any condition
-expression. The default branch is executed if no other branch has a
-matching condition.
+Provides a list of conditional branches. Branches are evaluated in the order that they are entered in the list. The first branch with a condition that evaluates to true is executed. The last branch in the list is the default branch. The default branch should not have any condition expression. The default branch is executed if no other branch has a matching condition.
 
 ## Syntax
+<a name="aws-properties-lex-bot-conditionalspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-conditionalspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionalBranches" : [ ConditionalBranch, ... ],
-  "DefaultBranch" : DefaultConditionalBranch,
-  "IsActive" : Boolean
+  "[ConditionalBranches](#cfn-lex-bot-conditionalspecification-conditionalbranches)" : {{[ ConditionalBranch, ... ]}},
+  "[DefaultBranch](#cfn-lex-bot-conditionalspecification-defaultbranch)" : {{DefaultConditionalBranch}},
+  "[IsActive](#cfn-lex-bot-conditionalspecification-isactive)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-conditionalspecification-syntax.yaml"></a>
 
-```yaml
-
-  ConditionalBranches:
-    - ConditionalBranch
-  DefaultBranch:
-    DefaultConditionalBranch
-  IsActive: Boolean
-
+```
+  [ConditionalBranches](#cfn-lex-bot-conditionalspecification-conditionalbranches): {{
+    - ConditionalBranch}}
+  [DefaultBranch](#cfn-lex-bot-conditionalspecification-defaultbranch): {{
+    DefaultConditionalBranch}}
+  [IsActive](#cfn-lex-bot-conditionalspecification-isactive): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-conditionalspecification-properties"></a>
 
-`ConditionalBranches`
+`ConditionalBranches`  <a name="cfn-lex-bot-conditionalspecification-conditionalbranches"></a>
+A list of conditional branches. A conditional branch is made up of a condition, a response and a next step. The response and next step are executed when the condition is true.
+*Required*: Yes
+*Type*: Array of [ConditionalBranch](aws-properties-lex-bot-conditionalbranch.md)
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of conditional branches. A conditional branch is made up of a
-condition, a response and a next step. The response and next step are
-executed when the condition is true.
+`DefaultBranch`  <a name="cfn-lex-bot-conditionalspecification-defaultbranch"></a>
+The conditional branch that should be followed when the conditions for other branches are not satisfied. A conditional branch is made up of a condition, a response and a next step.
+*Required*: Yes
+*Type*: [DefaultConditionalBranch](aws-properties-lex-bot-defaultconditionalbranch.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ConditionalBranch](aws-properties-lex-bot-conditionalbranch.md)
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultBranch`
-
-The conditional branch that should be followed when the conditions
-for other branches are not satisfied. A conditional branch is made up
-of a condition, a response and a next step.
-
-_Required_: Yes
-
-_Type_: [DefaultConditionalBranch](aws-properties-lex-bot-defaultconditionalbranch.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsActive`
-
-Determines whether a conditional branch is active. When
-`IsActive` is false, the conditions are not
-evaluated.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionalBranch
-
-ConversationLogSettings
+`IsActive`  <a name="cfn-lex-bot-conditionalspecification-isactive"></a>
+Determines whether a conditional branch is active. When `IsActive` is false, the conditions are not evaluated.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,55 @@
 title: "AWS::Location::APIKey AndroidApp"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Location::APIKey AndroidApp
+<a name="aws-properties-location-apikey-androidapp"></a>
 
-The `AndroidApp` property type specifies Property description not available. for an [AWS::Location::APIKey](aws-resource-location-apikey.md).
+<a name="aws-properties-location-apikey-androidapp-description"></a>The `AndroidApp` property type specifies Property description not available. for an [AWS::Location::APIKey](aws-resource-location-apikey.md).
 
 ## Syntax
+<a name="aws-properties-location-apikey-androidapp-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-location-apikey-androidapp-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateFingerprint" : String,
-  "Package" : String
+  "[CertificateFingerprint](#cfn-location-apikey-androidapp-certificatefingerprint)" : {{String}},
+  "[Package](#cfn-location-apikey-androidapp-package)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-location-apikey-androidapp-syntax.yaml"></a>
 
-```yaml
-
-  CertificateFingerprint: String
-  Package: String
-
+```
+  [CertificateFingerprint](#cfn-location-apikey-androidapp-certificatefingerprint): {{String}}
+  [Package](#cfn-location-apikey-androidapp-package): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-location-apikey-androidapp-properties"></a>
 
-`CertificateFingerprint`
-
+`CertificateFingerprint`  <a name="cfn-location-apikey-androidapp-certificatefingerprint"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([A-Fa-f0-9]{2}:){19}[A-Fa-f0-9]{2}$`
+*Minimum*: `59`
+*Maximum*: `59`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([A-Fa-f0-9]{2}:){19}[A-Fa-f0-9]{2}$`
-
-_Minimum_: `59`
-
-_Maximum_: `59`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Package`
-
+`Package`  <a name="cfn-location-apikey-androidapp-package"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([A-Za-z][A-Za-z\d_]*\.)+[A-Za-z][A-Za-z\d_]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Location::APIKey
-
-ApiKeyRestrictions
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([A-Za-z][A-Za-z\d_]*\.)+[A-Za-z][A-Za-z\d_]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

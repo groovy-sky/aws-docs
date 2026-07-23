@@ -2,94 +2,69 @@
 title: "AWS::QuickSight::DataSet PhysicalTable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet PhysicalTable
+<a name="aws-properties-quicksight-dataset-physicaltable"></a>
 
-A view of a data source that contains information about the shape of the data in the
-underlying source. This is a variant type structure. For this structure to be valid,
-only one of the attributes can be non-null.
+A view of a data source that contains information about the shape of the data in the underlying source. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-physicaltable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-physicaltable-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomSql" : CustomSql,
-  "RelationalTable" : RelationalTable,
-  "S3Source" : S3Source,
-  "SaaSTable" : SaaSTable
+  "[CustomSql](#cfn-quicksight-dataset-physicaltable-customsql)" : {{CustomSql}},
+  "[RelationalTable](#cfn-quicksight-dataset-physicaltable-relationaltable)" : {{RelationalTable}},
+  "[S3Source](#cfn-quicksight-dataset-physicaltable-s3source)" : {{S3Source}},
+  "[SaaSTable](#cfn-quicksight-dataset-physicaltable-saastable)" : {{SaaSTable}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-physicaltable-syntax.yaml"></a>
 
-```yaml
-
-  CustomSql:
-    CustomSql
-  RelationalTable:
-    RelationalTable
-  S3Source:
-    S3Source
-  SaaSTable:
-    SaaSTable
-
+```
+  [CustomSql](#cfn-quicksight-dataset-physicaltable-customsql): {{
+    CustomSql}}
+  [RelationalTable](#cfn-quicksight-dataset-physicaltable-relationaltable): {{
+    RelationalTable}}
+  [S3Source](#cfn-quicksight-dataset-physicaltable-s3source): {{
+    S3Source}}
+  [SaaSTable](#cfn-quicksight-dataset-physicaltable-saastable): {{
+    SaaSTable}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-physicaltable-properties"></a>
 
-`CustomSql`
-
+`CustomSql`  <a name="cfn-quicksight-dataset-physicaltable-customsql"></a>
 A physical table type built from the results of the custom SQL query.
+*Required*: No
+*Type*: [CustomSql](aws-properties-quicksight-dataset-customsql.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomSql](aws-properties-quicksight-dataset-customsql.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelationalTable`
-
+`RelationalTable`  <a name="cfn-quicksight-dataset-physicaltable-relationaltable"></a>
 A physical table type for relational data sources.
+*Required*: No
+*Type*: [RelationalTable](aws-properties-quicksight-dataset-relationaltable.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`S3Source`  <a name="cfn-quicksight-dataset-physicaltable-s3source"></a>
+A physical table type for an S3 data source.
+*Required*: No
+*Type*: [S3Source](aws-properties-quicksight-dataset-s3source.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [RelationalTable](aws-properties-quicksight-dataset-relationaltable.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Source`
-
-A physical table type for as S3 data source.
-
-_Required_: No
-
-_Type_: [S3Source](aws-properties-quicksight-dataset-s3source.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SaaSTable`
-
+`SaaSTable`  <a name="cfn-quicksight-dataset-physicaltable-saastable"></a>
 A physical table type for Software-as-a-Service (SaaS) sources.
-
-_Required_: No
-
-_Type_: [SaaSTable](aws-properties-quicksight-dataset-saastable.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PerformanceConfiguration
-
-PivotConfiguration
+*Required*: No
+*Type*: [SaaSTable](aws-properties-quicksight-dataset-saastable.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,84 +2,61 @@
 title: "AWS::QuickSight::Dashboard DataBarsOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DataBarsOptions
+<a name="aws-properties-quicksight-dashboard-databarsoptions"></a>
 
 The options for data bars.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-databarsoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-databarsoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String,
-  "NegativeColor" : String,
-  "PositiveColor" : String
+  "[FieldId](#cfn-quicksight-dashboard-databarsoptions-fieldid)" : {{String}},
+  "[NegativeColor](#cfn-quicksight-dashboard-databarsoptions-negativecolor)" : {{String}},
+  "[PositiveColor](#cfn-quicksight-dashboard-databarsoptions-positivecolor)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-databarsoptions-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-  NegativeColor: String
-  PositiveColor: String
-
+```
+  [FieldId](#cfn-quicksight-dashboard-databarsoptions-fieldid): {{String}}
+  [NegativeColor](#cfn-quicksight-dashboard-databarsoptions-negativecolor): {{String}}
+  [PositiveColor](#cfn-quicksight-dashboard-databarsoptions-positivecolor): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-databarsoptions-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-dashboard-databarsoptions-fieldid"></a>
 The field ID for the data bars options.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NegativeColor`
-
+`NegativeColor`  <a name="cfn-quicksight-dashboard-databarsoptions-negativecolor"></a>
 The color of the negative data bar.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PositiveColor`
-
+`PositiveColor`  <a name="cfn-quicksight-dashboard-databarsoptions-positivecolor"></a>
 The color of the positive data bar.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashboardVisualPublishOptions
-
-DataColor
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

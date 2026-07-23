@@ -2,101 +2,86 @@
 title: "AWS::CloudFront::VpcOrigin"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::VpcOrigin
+<a name="aws-resource-cloudfront-vpcorigin"></a>
 
 An Amazon CloudFront VPC origin.
 
 ## Syntax
+<a name="aws-resource-cloudfront-vpcorigin-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudfront-vpcorigin-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFront::VpcOrigin",
   "Properties" : {
-      "Tags" : [ Tag, ... ],
-      "VpcOriginEndpointConfig" : VpcOriginEndpointConfig
+      "[Tags](#cfn-cloudfront-vpcorigin-tags)" : {{[ Tag, ... ]}},
+      "[VpcOriginEndpointConfig](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig)" : {{VpcOriginEndpointConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudfront-vpcorigin-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFront::VpcOrigin
 Properties:
-  Tags:
-    - Tag
-  VpcOriginEndpointConfig:
-    VpcOriginEndpointConfig
-
+  [Tags](#cfn-cloudfront-vpcorigin-tags): {{
+    - Tag}}
+  [VpcOriginEndpointConfig](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig): {{
+    VpcOriginEndpointConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudfront-vpcorigin-properties"></a>
 
-`Tags`
-
+`Tags`  <a name="cfn-cloudfront-vpcorigin-tags"></a>
 A complex type that contains zero or more `Tag` elements.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudfront-vpcorigin-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cloudfront-vpcorigin-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcOriginEndpointConfig`
-
+`VpcOriginEndpointConfig`  <a name="cfn-cloudfront-vpcorigin-vpcoriginendpointconfig"></a>
 The VPC origin endpoint configuration.
-
-_Required_: Yes
-
-_Type_: [VpcOriginEndpointConfig](aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: [VpcOriginEndpointConfig](aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudfront-vpcorigin-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudfront-vpcorigin-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudfront-vpcorigin-return-values-fn--getatt"></a>
 
-`AccountId`
+####
+<a name="aws-resource-cloudfront-vpcorigin-return-values-fn--getatt-fn--getatt"></a>
 
+`AccountId`  <a name="AccountId-fn::getatt"></a>
 The account ID of the AWS account that owns the VPC origin.
 
-`Arn`
-
+`Arn`  <a name="Arn-fn::getatt"></a>
 The VPC origin ARN.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The VPC origin created time.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The VPC origin ID.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The VPC origin last modified time.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The VPC origin status.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

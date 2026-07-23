@@ -2,200 +2,148 @@
 title: "AWS::DirectoryService::MicrosoftAD"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DirectoryService::MicrosoftAD
+<a name="aws-resource-directoryservice-microsoftad"></a>
 
-The `AWS::DirectoryService::MicrosoftAD` resource specifies a Microsoft Active
-Directory in AWS so that your directory users and groups can access the
-AWS Management Console and AWS applications using their existing
-credentials. For more information, see [AWS Managed Microsoft AD](../../../directoryservice/latest/admin-guide/directory-microsoft-ad.md) in the _Directory Service Admin Guide_.
+The `AWS::DirectoryService::MicrosoftAD` resource specifies a Microsoft Active Directory in AWS so that your directory users and groups can access the AWS Management Console and AWS applications using their existing credentials. For more information, see [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) in the *Directory Service Admin Guide*.
 
 ## Syntax
+<a name="aws-resource-directoryservice-microsoftad-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-directoryservice-microsoftad-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DirectoryService::MicrosoftAD",
   "Properties" : {
-      "CreateAlias" : Boolean,
-      "Edition" : String,
-      "EnableSso" : Boolean,
-      "Name" : String,
-      "Password" : String,
-      "ShortName" : String,
-      "VpcSettings" : VpcSettings
+      "[CreateAlias](#cfn-directoryservice-microsoftad-createalias)" : {{Boolean}},
+      "[Edition](#cfn-directoryservice-microsoftad-edition)" : {{String}},
+      "[EnableSso](#cfn-directoryservice-microsoftad-enablesso)" : {{Boolean}},
+      "[Name](#cfn-directoryservice-microsoftad-name)" : {{String}},
+      "[Password](#cfn-directoryservice-microsoftad-password)" : {{String}},
+      "[ShortName](#cfn-directoryservice-microsoftad-shortname)" : {{String}},
+      "[VpcSettings](#cfn-directoryservice-microsoftad-vpcsettings)" : {{VpcSettings}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-directoryservice-microsoftad-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DirectoryService::MicrosoftAD
 Properties:
-  CreateAlias: Boolean
-  Edition: String
-  EnableSso: Boolean
-  Name: String
-  Password: String
-  ShortName: String
-  VpcSettings:
-    VpcSettings
-
+  [CreateAlias](#cfn-directoryservice-microsoftad-createalias): {{Boolean}}
+  [Edition](#cfn-directoryservice-microsoftad-edition): {{String}}
+  [EnableSso](#cfn-directoryservice-microsoftad-enablesso): {{Boolean}}
+  [Name](#cfn-directoryservice-microsoftad-name): {{String}}
+  [Password](#cfn-directoryservice-microsoftad-password): {{String}}
+  [ShortName](#cfn-directoryservice-microsoftad-shortname): {{String}}
+  [VpcSettings](#cfn-directoryservice-microsoftad-vpcsettings): {{
+    VpcSettings}}
 ```
 
 ## Properties
+<a name="aws-resource-directoryservice-microsoftad-properties"></a>
 
-`CreateAlias`
+`CreateAlias`  <a name="cfn-directoryservice-microsoftad-createalias"></a>
+Specifies an alias for a directory and assigns the alias to the directory. The alias is used to construct the access URL for the directory, such as `http://<alias>.awsapps.com`. By default, CloudFormation does not create an alias.
+After an alias has been created, it cannot be deleted or reused, so this operation should only be used when absolutely necessary.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specifies an alias for a directory and assigns the alias to the directory. The alias is
-used to construct the access URL for the directory, such as
-`http://<alias>.awsapps.com`. By default, CloudFormation does not
-create an alias.
+`Edition`  <a name="cfn-directoryservice-microsoftad-edition"></a>
+AWS Managed Microsoft AD is available in two editions: `Standard` and `Enterprise`. `Enterprise` is the default.
+*Required*: No
+*Type*: String
+*Allowed values*: `Enterprise | Standard | Hybrid`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Important
+`EnableSso`  <a name="cfn-directoryservice-microsoftad-enablesso"></a>
+Whether to enable single sign-on for a Microsoft Active Directory in AWS. Single sign-on allows users in your directory to access certain AWS services from a computer joined to the directory without having to enter their credentials separately. If you don't specify a value, CloudFormation disables single sign-on by default.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-After an alias has been created, it cannot be deleted or reused, so this operation
-should only be used when absolutely necessary.
+`Name`  <a name="cfn-directoryservice-microsoftad-name"></a>
+The fully qualified domain name for the AWS Managed Microsoft AD directory, such as `corp.example.com`. This name will resolve inside your VPC only. It does not need to be publicly resolvable.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Edition`
-
-AWS Managed Microsoft AD is available in two editions: `Standard` and
-`Enterprise`. `Enterprise` is the default.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Enterprise | Standard | Hybrid`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnableSso`
-
-Whether to enable single sign-on for a Microsoft Active Directory in AWS.
-Single sign-on allows users in your directory to access certain AWS services
-from a computer joined to the directory without having to enter their credentials separately.
-If you don't specify a value, CloudFormation disables single sign-on by default.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The fully qualified domain name for the AWS Managed Microsoft AD directory, such as
-`corp.example.com`. This name will resolve inside your VPC only. It does not need
-to be publicly resolvable.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Password`
-
+`Password`  <a name="cfn-directoryservice-microsoftad-password"></a>
 The password for the default administrative user named `Admin`.
+If you need to change the password for the administrator account, see the [ResetUserPassword](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_ResetUserPassword.html) API call in the *Directory Service API Reference*.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-If you need to change the password for the administrator account, see the [ResetUserPassword](../../../directoryservice/latest/devguide/api-resetuserpassword.md) API call in the _Directory Service API Reference_.
+`ShortName`  <a name="cfn-directoryservice-microsoftad-shortname"></a>
+The NetBIOS name for your domain, such as `CORP`. If you don't specify a NetBIOS name, it will default to the first part of your directory DNS. For example, `CORP` for the directory DNS `corp.example.com`.
+*Required*: No
+*Type*: String
+*Pattern*: `^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ShortName`
-
-The NetBIOS name for your domain, such as `CORP`. If you don't specify a
-NetBIOS name, it will default to the first part of your directory DNS. For example,
-`CORP` for the directory DNS `corp.example.com`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcSettings`
-
+`VpcSettings`  <a name="cfn-directoryservice-microsoftad-vpcsettings"></a>
 Specifies the VPC settings of the Microsoft AD directory server in AWS.
-
-_Required_: Yes
-
-_Type_: [VpcSettings](aws-properties-directoryservice-microsoftad-vpcsettings.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: [VpcSettings](aws-properties-directoryservice-microsoftad-vpcsettings.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-directoryservice-microsoftad-return-values"></a>
 
 ### Ref
+<a name="aws-resource-directoryservice-microsoftad-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the `Ref` intrinsic
-function, `Ref` returns the resource ID.
+When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource ID.
 
-In the following sample, the `Ref` function returns the ID of the
-`myDirectory` directory, such as `d-12345ab592`.
+In the following sample, the `Ref` function returns the ID of the `myDirectory` directory, such as `d-12345ab592`.
 
-`{ "Ref": "myDirectory" }`
+ `{ "Ref": "myDirectory" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-directoryservice-microsoftad-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Alias`
+####
+<a name="aws-resource-directoryservice-microsoftad-return-values-fn--getatt-fn--getatt"></a>
 
-The alias for a directory. For example: `alias4-mydirectory-12345abcgmzsk` (if
-you have the `CreateAlias` property set to true).
+`Alias`  <a name="Alias-fn::getatt"></a>
+The alias for a directory. For example: `alias4-mydirectory-12345abcgmzsk` (if you have the `CreateAlias` property set to true).
 
-`DnsIpAddresses`
+`DnsIpAddresses`  <a name="DnsIpAddresses-fn::getatt"></a>
+The IP addresses of the DNS servers for the directory, such as `[ "192.0.2.1", "192.0.2.2" ]`.
 
-The IP addresses of the DNS servers for the directory, such as `[ "192.0.2.1",
-        "192.0.2.2" ]`.
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The directory ID. For example: `d-12373a053a`.
 
 ## Examples
+<a name="aws-resource-directoryservice-microsoftad--examples"></a>
 
-The following example creates a Microsoft Active Directory in AWS,
-where the directory DNS name is `corp.example.com`:
+The following example creates a Microsoft Active Directory in AWS, where the directory DNS name is `corp.example.com`:
 
 ### Create an AWS Managed Microsoft AD
+<a name="aws-resource-directoryservice-microsoftad--examples--Create_an"></a>
 
 #### JSON
+<a name="aws-resource-directoryservice-microsoftad--examples--Create_an--json"></a>
 
-```json
-
+```
 "myDirectory" : {
   "Type" : "AWS::DirectoryService::MicrosoftAD",
   "Properties" : {
@@ -211,9 +159,9 @@ where the directory DNS name is `corp.example.com`:
 ```
 
 #### YAML
+<a name="aws-resource-directoryservice-microsoftad--examples--Create_an--yaml"></a>
 
-```yaml
-
+```
 myDirectory:
   Type: AWS::DirectoryService::MicrosoftAD
   Properties:
@@ -231,16 +179,8 @@ myDirectory:
 ```
 
 ## See also
-
-- [Getting Started\
-with AWS Managed Microsoft AD](../../../directoryservice/latest/admin-guide/ms-ad-getting-started.md) in the _Directory Service Admin Guide_..
-
-- [CreateMicrosoftAD](../../../directoryservice/latest/devguide/api-createmicrosoftad.md) in the _Directory Service API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Directory Service
-
-VpcSettings
+<a name="aws-resource-directoryservice-microsoftad--seealso"></a>
++ [Getting Started with AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started.html) in the *Directory Service Admin Guide*..
++ [CreateMicrosoftAD](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_CreateMicrosoftAD.html) in the *Directory Service API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

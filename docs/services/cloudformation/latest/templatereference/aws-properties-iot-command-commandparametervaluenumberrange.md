@@ -2,68 +2,51 @@
 title: "AWS::IoT::Command CommandParameterValueNumberRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Command CommandParameterValueNumberRange
+<a name="aws-properties-iot-command-commandparametervaluenumberrange"></a>
 
-The `CommandParameterValueNumberRange` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
+<a name="aws-properties-iot-command-commandparametervaluenumberrange-description"></a>The `CommandParameterValueNumberRange` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
 
 ## Syntax
+<a name="aws-properties-iot-command-commandparametervaluenumberrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-command-commandparametervaluenumberrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : String,
-  "Min" : String
+  "[Max](#cfn-iot-command-commandparametervaluenumberrange-max)" : {{String}},
+  "[Min](#cfn-iot-command-commandparametervaluenumberrange-min)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-command-commandparametervaluenumberrange-syntax.yaml"></a>
 
-```yaml
-
-  Max: String
-  Min: String
-
+```
+  [Max](#cfn-iot-command-commandparametervaluenumberrange-max): {{String}}
+  [Min](#cfn-iot-command-commandparametervaluenumberrange-min): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-command-commandparametervaluenumberrange-properties"></a>
 
-`Max`
-
+`Max`  <a name="cfn-iot-command-commandparametervaluenumberrange-max"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
+`Min`  <a name="cfn-iot-command-commandparametervaluenumberrange-min"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CommandParameterValueCondition
-
-CommandPayload
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

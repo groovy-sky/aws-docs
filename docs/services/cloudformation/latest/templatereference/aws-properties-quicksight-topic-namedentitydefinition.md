@@ -2,115 +2,80 @@
 title: "AWS::QuickSight::Topic NamedEntityDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic NamedEntityDefinition
+<a name="aws-properties-quicksight-topic-namedentitydefinition"></a>
 
 A structure that represents a named entity.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-namedentitydefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-namedentitydefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldName" : String,
-  "Metric" : NamedEntityDefinitionMetric,
-  "PropertyName" : String,
-  "PropertyRole" : String,
-  "PropertyUsage" : String
+  "[FieldName](#cfn-quicksight-topic-namedentitydefinition-fieldname)" : {{String}},
+  "[Metric](#cfn-quicksight-topic-namedentitydefinition-metric)" : {{NamedEntityDefinitionMetric}},
+  "[PropertyName](#cfn-quicksight-topic-namedentitydefinition-propertyname)" : {{String}},
+  "[PropertyRole](#cfn-quicksight-topic-namedentitydefinition-propertyrole)" : {{String}},
+  "[PropertyUsage](#cfn-quicksight-topic-namedentitydefinition-propertyusage)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-namedentitydefinition-syntax.yaml"></a>
 
-```yaml
-
-  FieldName: String
-  Metric:
-    NamedEntityDefinitionMetric
-  PropertyName: String
-  PropertyRole: String
-  PropertyUsage: String
-
+```
+  [FieldName](#cfn-quicksight-topic-namedentitydefinition-fieldname): {{String}}
+  [Metric](#cfn-quicksight-topic-namedentitydefinition-metric): {{
+    NamedEntityDefinitionMetric}}
+  [PropertyName](#cfn-quicksight-topic-namedentitydefinition-propertyname): {{String}}
+  [PropertyRole](#cfn-quicksight-topic-namedentitydefinition-propertyrole): {{String}}
+  [PropertyUsage](#cfn-quicksight-topic-namedentitydefinition-propertyusage): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-namedentitydefinition-properties"></a>
 
-`FieldName`
-
+`FieldName`  <a name="cfn-quicksight-topic-namedentitydefinition-fieldname"></a>
 The name of the entity.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Metric`
-
+`Metric`  <a name="cfn-quicksight-topic-namedentitydefinition-metric"></a>
 The definition of a metric.
+*Required*: No
+*Type*: [NamedEntityDefinitionMetric](aws-properties-quicksight-topic-namedentitydefinitionmetric.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NamedEntityDefinitionMetric](aws-properties-quicksight-topic-namedentitydefinitionmetric.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyName`
-
+`PropertyName`  <a name="cfn-quicksight-topic-namedentitydefinition-propertyname"></a>
 The property name to be used for the named entity.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyRole`
-
+`PropertyRole`  <a name="cfn-quicksight-topic-namedentitydefinition-propertyrole"></a>
 The property role. Valid values for this structure are `PRIMARY` and `ID`.
+*Required*: No
+*Type*: String
+*Allowed values*: `PRIMARY | ID`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PRIMARY | ID`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyUsage`
-
-The property usage. Valid values for this structure are `INHERIT`,
-`DIMENSION`,
-and `MEASURE`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INHERIT | DIMENSION | MEASURE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DisplayFormatOptions
-
-NamedEntityDefinitionMetric
+`PropertyUsage`  <a name="cfn-quicksight-topic-namedentitydefinition-propertyusage"></a>
+The property usage. Valid values for this structure are `INHERIT`, `DIMENSION`, and `MEASURE`.
+*Required*: No
+*Type*: String
+*Allowed values*: `INHERIT | DIMENSION | MEASURE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

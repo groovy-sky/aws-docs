@@ -2,56 +2,42 @@
 title: "AWS::Lambda::EventSourceMapping SchemaValidationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping SchemaValidationConfig
+<a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig"></a>
 
-Specific schema validation configuration settings that tell Lambda the message
-attributes you want to validate and filter using your schema registry.
+Specific schema validation configuration settings that tell Lambda the message attributes you want to validate and filter using your schema registry.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attribute" : String
+  "[Attribute](#cfn-lambda-eventsourcemapping-schemavalidationconfig-attribute)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig-syntax.yaml"></a>
 
-```yaml
-
-  Attribute: String
-
+```
+  [Attribute](#cfn-lambda-eventsourcemapping-schemavalidationconfig-attribute): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig-properties"></a>
 
-`Attribute`
-
-The attributes you want your schema registry to validate and filter for. If you selected `JSON` as the
-`EventRecordFormat`, Lambda also deserializes the selected message attributes.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `KEY | VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SchemaRegistryConfig
-
-SelfManagedEventSource
+`Attribute`  <a name="cfn-lambda-eventsourcemapping-schemavalidationconfig-attribute"></a>
+ The attributes you want your schema registry to validate and filter for. If you selected `JSON` as the `EventRecordFormat`, Lambda also deserializes the selected message attributes.
+*Required*: No
+*Type*: String
+*Allowed values*: `KEY | VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

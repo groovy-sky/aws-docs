@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard ClusterMarkerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ClusterMarkerConfiguration
+<a name="aws-properties-quicksight-dashboard-clustermarkerconfiguration"></a>
 
 The cluster marker configuration of the geospatial map selected point style.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-clustermarkerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-clustermarkerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterMarker" : ClusterMarker
+  "[ClusterMarker](#cfn-quicksight-dashboard-clustermarkerconfiguration-clustermarker)" : {{ClusterMarker}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-clustermarkerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ClusterMarker:
-    ClusterMarker
-
+```
+  [ClusterMarker](#cfn-quicksight-dashboard-clustermarkerconfiguration-clustermarker): {{
+    ClusterMarker}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-clustermarkerconfiguration-properties"></a>
 
-`ClusterMarker`
-
+`ClusterMarker`  <a name="cfn-quicksight-dashboard-clustermarkerconfiguration-clustermarker"></a>
 The cluster marker that is a part of the cluster marker configuration.
-
-_Required_: No
-
-_Type_: [ClusterMarker](aws-properties-quicksight-dashboard-clustermarker.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClusterMarker
-
-ColorScale
+*Required*: No
+*Type*: [ClusterMarker](aws-properties-quicksight-dashboard-clustermarker.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

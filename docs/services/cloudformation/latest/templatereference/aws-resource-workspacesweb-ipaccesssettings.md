@@ -2,178 +2,131 @@
 title: "AWS::WorkSpacesWeb::IpAccessSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::IpAccessSettings
+<a name="aws-resource-workspacesweb-ipaccesssettings"></a>
 
-This resource specifies IP access settings that can be associated with a web portal. For
-more information, see [Set up IP access controls (optional)](../../../workspaces-web/latest/adminguide/ip-access-controls.md).
+This resource specifies IP access settings that can be associated with a web portal. For more information, see [Set up IP access controls (optional)](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/ip-access-controls.html).
 
 ## Syntax
+<a name="aws-resource-workspacesweb-ipaccesssettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-workspacesweb-ipaccesssettings-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::WorkSpacesWeb::IpAccessSettings",
   "Properties" : {
-      "AdditionalEncryptionContext" : {Key: Value, ...},
-      "CustomerManagedKey" : String,
-      "Description" : String,
-      "DisplayName" : String,
-      "IpRules" : [ IpRule, ... ],
-      "Tags" : [ Tag, ... ]
+      "[AdditionalEncryptionContext](#cfn-workspacesweb-ipaccesssettings-additionalencryptioncontext)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[CustomerManagedKey](#cfn-workspacesweb-ipaccesssettings-customermanagedkey)" : {{String}},
+      "[Description](#cfn-workspacesweb-ipaccesssettings-description)" : {{String}},
+      "[DisplayName](#cfn-workspacesweb-ipaccesssettings-displayname)" : {{String}},
+      "[IpRules](#cfn-workspacesweb-ipaccesssettings-iprules)" : {{[ IpRule, ... ]}},
+      "[Tags](#cfn-workspacesweb-ipaccesssettings-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-workspacesweb-ipaccesssettings-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::WorkSpacesWeb::IpAccessSettings
 Properties:
-  AdditionalEncryptionContext:
-    Key: Value
-  CustomerManagedKey: String
-  Description: String
-  DisplayName: String
-  IpRules:
-    - IpRule
-  Tags:
-    - Tag
-
+  [AdditionalEncryptionContext](#cfn-workspacesweb-ipaccesssettings-additionalencryptioncontext): {{
+    {{Key}}: {{Value}}}}
+  [CustomerManagedKey](#cfn-workspacesweb-ipaccesssettings-customermanagedkey): {{String}}
+  [Description](#cfn-workspacesweb-ipaccesssettings-description): {{String}}
+  [DisplayName](#cfn-workspacesweb-ipaccesssettings-displayname): {{String}}
+  [IpRules](#cfn-workspacesweb-ipaccesssettings-iprules): {{
+    - IpRule}}
+  [Tags](#cfn-workspacesweb-ipaccesssettings-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-workspacesweb-ipaccesssettings-properties"></a>
 
-`AdditionalEncryptionContext`
-
+`AdditionalEncryptionContext`  <a name="cfn-workspacesweb-ipaccesssettings-additionalencryptioncontext"></a>
 Additional encryption context of the IP access settings.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\s\S]*$`
+*Minimum*: `0`
+*Maximum*: `131072`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\s\S]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `131072`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CustomerManagedKey`
-
+`CustomerManagedKey`  <a name="cfn-workspacesweb-ipaccesssettings-customermanagedkey"></a>
 The custom managed key of the IP access settings.
+*Pattern*: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Pattern_: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[\w+=\/,.@-]+:kms:[a-zA-Z0-9\-]*:[a-zA-Z0-9]{1,12}:key\/[a-zA-Z0-9-]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-workspacesweb-ipaccesssettings-description"></a>
 The description of the IP access settings.
+*Required*: No
+*Type*: String
+*Pattern*: `^.+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DisplayName`  <a name="cfn-workspacesweb-ipaccesssettings-displayname"></a>
+ The display name of the IP access settings.
+*Required*: No
+*Type*: String
+*Pattern*: `^.+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
-The display name of the IP access settings.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpRules`
-
+`IpRules`  <a name="cfn-workspacesweb-ipaccesssettings-iprules"></a>
 The IP rules of the IP access settings.
+*Required*: Yes
+*Type*: Array of [IpRule](aws-properties-workspacesweb-ipaccesssettings-iprule.md)
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [IpRule](aws-properties-workspacesweb-ipaccesssettings-iprule.md)
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-workspacesweb-ipaccesssettings-tags"></a>
 The tags to add to the IP access settings resource. A tag is a key-value pair.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-workspacesweb-ipaccesssettings-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-workspacesweb-ipaccesssettings-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-workspacesweb-ipaccesssettings-return-values"></a>
 
 ### Ref
+<a name="aws-resource-workspacesweb-ipaccesssettings-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the resource's Amazon Resource Name (ARN).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource's Amazon Resource Name (ARN).
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-workspacesweb-ipaccesssettings-return-values-fn--getatt"></a>
 
-`AssociatedPortalArns`
+####
+<a name="aws-resource-workspacesweb-ipaccesssettings-return-values-fn--getatt-fn--getatt"></a>
 
+`AssociatedPortalArns`  <a name="AssociatedPortalArns-fn::getatt"></a>
 A list of web portal ARNs that this IP access settings resource is associated with.
 
-`CreationDate`
-
+`CreationDate`  <a name="CreationDate-fn::getatt"></a>
 The creation date timestamp of the IP access settings.
 
-`IpAccessSettingsArn`
-
+`IpAccessSettingsArn`  <a name="IpAccessSettingsArn-fn::getatt"></a>
 The ARN of the IP access settings resource.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-IpRule
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,110 +2,74 @@
 title: "AWS::AppRunner::Service ImageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service ImageConfiguration
+<a name="aws-properties-apprunner-service-imageconfiguration"></a>
 
 Describes the configuration that AWS App Runner uses to run an App Runner service using an image pulled from a source image repository.
 
 ## Syntax
+<a name="aws-properties-apprunner-service-imageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apprunner-service-imageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Port" : String,
-  "RuntimeEnvironmentSecrets" : [ KeyValuePair, ... ],
-  "RuntimeEnvironmentVariables" : [ KeyValuePair, ... ],
-  "StartCommand" : String
+  "[Port](#cfn-apprunner-service-imageconfiguration-port)" : {{String}},
+  "[RuntimeEnvironmentSecrets](#cfn-apprunner-service-imageconfiguration-runtimeenvironmentsecrets)" : {{[ KeyValuePair, ... ]}},
+  "[RuntimeEnvironmentVariables](#cfn-apprunner-service-imageconfiguration-runtimeenvironmentvariables)" : {{[ KeyValuePair, ... ]}},
+  "[StartCommand](#cfn-apprunner-service-imageconfiguration-startcommand)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apprunner-service-imageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Port: String
-  RuntimeEnvironmentSecrets:
-    - KeyValuePair
-  RuntimeEnvironmentVariables:
-    - KeyValuePair
-  StartCommand: String
-
+```
+  [Port](#cfn-apprunner-service-imageconfiguration-port): {{String}}
+  [RuntimeEnvironmentSecrets](#cfn-apprunner-service-imageconfiguration-runtimeenvironmentsecrets): {{
+    - KeyValuePair}}
+  [RuntimeEnvironmentVariables](#cfn-apprunner-service-imageconfiguration-runtimeenvironmentvariables): {{
+    - KeyValuePair}}
+  [StartCommand](#cfn-apprunner-service-imageconfiguration-startcommand): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apprunner-service-imageconfiguration-properties"></a>
 
-`Port`
-
+`Port`  <a name="cfn-apprunner-service-imageconfiguration-port"></a>
 The port that your application listens to in the container.
-
 Default: `8080`
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `0`
+*Maximum*: `51200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RuntimeEnvironmentSecrets`  <a name="cfn-apprunner-service-imageconfiguration-runtimeenvironmentsecrets"></a>
+An array of key-value pairs representing the secrets and parameters that get referenced to your service as an environment variable. The supported values are either the full Amazon Resource Name (ARN) of the AWS Secrets Manager secret or the full ARN of the parameter in the AWS Systems Manager Parameter Store.
++  If the AWS Systems Manager Parameter Store parameter exists in the same AWS Region as the service that you're launching, you can use either the full ARN or name of the secret. If the parameter exists in a different Region, then the full ARN must be specified.
++  Currently, cross account referencing of AWS Systems Manager Parameter Store parameter is not supported.
+*Required*: No
+*Type*: Array of [KeyValuePair](aws-properties-apprunner-service-keyvaluepair.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `0`
-
-_Maximum_: `51200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuntimeEnvironmentSecrets`
-
-An array of key-value pairs representing the secrets and parameters that get referenced to your service as an environment variable. The supported
-values are either the full Amazon Resource Name (ARN) of the AWS Secrets Manager secret or the full ARN of the parameter in the AWS Systems Manager
-Parameter Store.
-
-###### Note
-
-- If the AWS Systems Manager Parameter Store parameter exists in the same AWS Region as the service that you're launching, you can use
-either the full ARN or name of the secret. If the parameter exists in a different Region, then the full ARN must be specified.
-
-- Currently, cross account referencing of AWS Systems Manager Parameter Store parameter is not supported.
-
-_Required_: No
-
-_Type_: Array of [KeyValuePair](aws-properties-apprunner-service-keyvaluepair.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuntimeEnvironmentVariables`
-
+`RuntimeEnvironmentVariables`  <a name="cfn-apprunner-service-imageconfiguration-runtimeenvironmentvariables"></a>
 Environment variables that are available to your running App Runner service. An array of key-value pairs.
+*Required*: No
+*Type*: Array of [KeyValuePair](aws-properties-apprunner-service-keyvaluepair.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [KeyValuePair](aws-properties-apprunner-service-keyvaluepair.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartCommand`
-
-An optional command that App Runner runs to start the application in the source image. If specified, this command overrides the Docker image’s default start
-command.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[^\x0a\x0d]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HealthCheckConfiguration
-
-ImageRepository
+`StartCommand`  <a name="cfn-apprunner-service-imageconfiguration-startcommand"></a>
+An optional command that App Runner runs to start the application in the source image. If specified, this command overrides the Docker image’s default start command.
+*Required*: No
+*Type*: String
+*Pattern*: `[^\x0a\x0d]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

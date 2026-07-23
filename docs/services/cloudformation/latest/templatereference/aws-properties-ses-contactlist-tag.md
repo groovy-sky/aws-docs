@@ -2,79 +2,53 @@
 title: "AWS::SES::ContactList Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ContactList Tag
+<a name="aws-properties-ses-contactlist-tag"></a>
 
-A tag is a label that you optionally define and associate with a resource, such as a
-contact list. Tags can help you categorize and manage resources in different ways, such
-as by purpose, owner, environment, or other criteria. A resource can have as many as 50
-tags.
+A tag is a label that you optionally define and associate with a resource, such as a contact list. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags.
 
 ## Syntax
+<a name="aws-properties-ses-contactlist-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-contactlist-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-ses-contactlist-tag-key)" : {{String}},
+  "[Value](#cfn-ses-contactlist-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-contactlist-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-ses-contactlist-tag-key): {{String}}
+  [Value](#cfn-ses-contactlist-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-contactlist-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-ses-contactlist-tag-key"></a>
+One part of a key-value pair that defines a tag. The maximum length of a tag key is 128 characters. The minimum length is 1 character.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-One part of a key-value pair that defines a tag. The maximum length of a tag key is
-128 characters. The minimum length is 1 character.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The optional part of a key-value pair that defines a tag. The maximum length of a tag
-value is 256 characters. The minimum length is 0 characters. If you don't want a
-resource to have a specific tag value, don't specify a value for this parameter. If you
-don't specify a value, Amazon SES sets the value to an empty string.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SES::ContactList
-
-Topic
+`Value`  <a name="cfn-ses-contactlist-tag-value"></a>
+The optional part of a key-value pair that defines a tag. The maximum length of a tag value is 256 characters. The minimum length is 0 characters. If you don't want a resource to have a specific tag value, don't specify a value for this parameter. If you don't specify a value, Amazon SES sets the value to an empty string.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

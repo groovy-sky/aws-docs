@@ -2,153 +2,123 @@
 title: "AWS::AppRunner::VpcConnector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::VpcConnector
+<a name="aws-resource-apprunner-vpcconnector"></a>
 
 The `AWS::AppRunner::VpcConnector` resource is an AWS App Runner resource type that specifies an App Runner VPC connector.
 
 App Runner requires this resource when you want to associate your App Runner service to a custom Amazon Virtual Private Cloud (Amazon VPC).
 
 ## Syntax
+<a name="aws-resource-apprunner-vpcconnector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apprunner-vpcconnector-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppRunner::VpcConnector",
   "Properties" : {
-      "SecurityGroups" : [ String, ... ],
-      "Subnets" : [ String, ... ],
-      "Tags" : [ Tag, ... ],
-      "VpcConnectorName" : String
+      "[SecurityGroups](#cfn-apprunner-vpcconnector-securitygroups)" : {{[ String, ... ]}},
+      "[Subnets](#cfn-apprunner-vpcconnector-subnets)" : {{[ String, ... ]}},
+      "[Tags](#cfn-apprunner-vpcconnector-tags)" : {{[ Tag, ... ]}},
+      "[VpcConnectorName](#cfn-apprunner-vpcconnector-vpcconnectorname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apprunner-vpcconnector-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppRunner::VpcConnector
 Properties:
-  SecurityGroups:
-    - String
-  Subnets:
-    - String
-  Tags:
-    - Tag
-  VpcConnectorName: String
-
+  [SecurityGroups](#cfn-apprunner-vpcconnector-securitygroups): {{
+    - String}}
+  [Subnets](#cfn-apprunner-vpcconnector-subnets): {{
+    - String}}
+  [Tags](#cfn-apprunner-vpcconnector-tags): {{
+    - Tag}}
+  [VpcConnectorName](#cfn-apprunner-vpcconnector-vpcconnectorname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apprunner-vpcconnector-properties"></a>
 
-`SecurityGroups`
+`SecurityGroups`  <a name="cfn-apprunner-vpcconnector-securitygroups"></a>
+A list of IDs of security groups that App Runner should use for access to AWS resources under the specified subnets. If not specified, App Runner uses the default security group of the Amazon VPC. The default security group allows all outbound traffic.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A list of IDs of security groups that App Runner should use for access to AWS resources under the specified subnets. If not specified, App Runner uses the
-default security group of the Amazon VPC. The default security group allows all outbound traffic.
+`Subnets`  <a name="cfn-apprunner-vpcconnector-subnets"></a>
+A list of IDs of subnets that App Runner should use when it associates your service with a custom Amazon VPC. Specify IDs of subnets of a single Amazon VPC. App Runner determines the Amazon VPC from the subnets you specify.
+ App Runner only supports subnets of IP address type *IPv4* and *dual stack* (IPv4 and IPv6).
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Subnets`
-
-A list of IDs of subnets that App Runner should use when it associates your service with a custom Amazon VPC. Specify IDs of subnets of a single
-Amazon VPC. App Runner determines the Amazon VPC from the subnets you specify.
-
-###### Note
-
-App Runner only supports subnets of IP address type _IPv4_ and _dual stack_ (IPv4 and IPv6).
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-apprunner-vpcconnector-tags"></a>
 A list of metadata items that you can associate with your VPC connector resource. A tag is a key-value pair.
+A `VpcConnector` is immutable, so you cannot update its tags. To change the tags, replace the resource. To replace a `VpcConnector`, you must provide a new combination of security groups.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-apprunner-vpcconnector-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Note
-
-A `VpcConnector` is immutable, so you cannot update its tags. To change the
-tags, replace the resource. To replace a `VpcConnector`, you must provide a new
-combination of security groups.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-apprunner-vpcconnector-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcConnectorName`
-
+`VpcConnectorName`  <a name="cfn-apprunner-vpcconnector-vpcconnectorname"></a>
 A name for the VPC connector.
-
 If you don't specify a name, CloudFormation generates a name for your VPC connector.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9-\\_]{3,39}$`
-
-_Minimum_: `4`
-
-_Maximum_: `40`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9-\\_]{3,39}$`
+*Minimum*: `4`
+*Maximum*: `40`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-apprunner-vpcconnector-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apprunner-vpcconnector-return-values-ref"></a>
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apprunner-vpcconnector-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`VpcConnectorArn`
+####
+<a name="aws-resource-apprunner-vpcconnector-return-values-fn--getatt-fn--getatt"></a>
 
+`VpcConnectorArn`  <a name="VpcConnectorArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of this VPC connector.
 
-`VpcConnectorRevision`
-
-The revision of this VPC connector. It's unique among all the active connectors ( `"Status": "ACTIVE"`) that share the same
-`Name`.
-
-###### Note
-
+`VpcConnectorRevision`  <a name="VpcConnectorRevision-fn::getatt"></a>
+The revision of this VPC connector. It's unique among all the active connectors (`"Status": "ACTIVE"`) that share the same `Name`.
 At this time, App Runner supports only one revision per name.
 
 ## Examples
+<a name="aws-resource-apprunner-vpcconnector--examples"></a>
 
 ### VPC connector
+<a name="aws-resource-apprunner-vpcconnector--examples--VPC_connector"></a>
 
 This example illustrates creating a VPC connector with two subnets and two security groups.
 
 #### JSON
+<a name="aws-resource-apprunner-vpcconnector--examples--VPC_connector--json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppRunner::VpcConnector",
   "Properties" : {
@@ -160,9 +130,9 @@ This example illustrates creating a VPC connector with two subnets and two secur
 ```
 
 #### YAML
+<a name="aws-resource-apprunner-vpcconnector--examples--VPC_connector--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppRunner::VpcConnector
 Properties:
   VpcConnectorName: my-vpc-connector
@@ -175,14 +145,7 @@ Properties:
 ```
 
 ## See also
-
-- [Enabling Amazon VPC access for your service](../../../apprunner/latest/dg/network-vpc.md) in the
-_AWS App Runner Developer Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+<a name="aws-resource-apprunner-vpcconnector--seealso"></a>
++ [Enabling Amazon VPC access for your service](https://docs.aws.amazon.com/apprunner/latest/dg/network-vpc.html) in the *AWS App Runner Developer Guide*
 
 All content copied from https://docs.aws.amazon.com/.

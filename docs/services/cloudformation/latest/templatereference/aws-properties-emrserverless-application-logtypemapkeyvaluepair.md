@@ -2,75 +2,55 @@
 title: "AWS::EMRServerless::Application LogTypeMapKeyValuePair"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application LogTypeMapKeyValuePair
+<a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair"></a>
 
-The `LogTypeMapKeyValuePair` property type specifies Property description not available. for an [AWS::EMRServerless::Application](aws-resource-emrserverless-application.md).
+<a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-description"></a>The `LogTypeMapKeyValuePair` property type specifies Property description not available. for an [AWS::EMRServerless::Application](aws-resource-emrserverless-application.md).
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : [ String, ... ]
+  "[Key](#cfn-emrserverless-application-logtypemapkeyvaluepair-key)" : {{String}},
+  "[Value](#cfn-emrserverless-application-logtypemapkeyvaluepair-value)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value:
-    - String
-
+```
+  [Key](#cfn-emrserverless-application-logtypemapkeyvaluepair-key): {{String}}
+  [Value](#cfn-emrserverless-application-logtypemapkeyvaluepair-value): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-emrserverless-application-logtypemapkeyvaluepair-key"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z]+[-_]*[a-zA-Z]+$`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z]+[-_]*[a-zA-Z]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-emrserverless-application-logtypemapkeyvaluepair-value"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InteractiveConfiguration
-
-ManagedPersistenceMonitoringConfiguration
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

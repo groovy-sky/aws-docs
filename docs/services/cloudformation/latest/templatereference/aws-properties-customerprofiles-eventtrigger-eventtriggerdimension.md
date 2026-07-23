@@ -2,57 +2,44 @@
 title: "AWS::CustomerProfiles::EventTrigger EventTriggerDimension"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventTrigger EventTriggerDimension
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension"></a>
 
 A specific event dimension to be assessed.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension-syntax.json"></a>
 
-```json
-
+```
 {
-  "ObjectAttributes" : [ ObjectAttribute, ... ]
+  "[ObjectAttributes](#cfn-customerprofiles-eventtrigger-eventtriggerdimension-objectattributes)" : {{[ ObjectAttribute, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension-syntax.yaml"></a>
 
-```yaml
-
-  ObjectAttributes:
-    - ObjectAttribute
-
+```
+  [ObjectAttributes](#cfn-customerprofiles-eventtrigger-eventtriggerdimension-objectattributes): {{
+    - ObjectAttribute}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension-properties"></a>
 
-`ObjectAttributes`
-
+`ObjectAttributes`  <a name="cfn-customerprofiles-eventtrigger-eventtriggerdimension-objectattributes"></a>
 A list of object attributes to be evaluated.
-
-_Required_: Yes
-
-_Type_: Array of [ObjectAttribute](aws-properties-customerprofiles-eventtrigger-objectattribute.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EventTriggerCondition
-
-EventTriggerLimits
+*Required*: Yes
+*Type*: Array of [ObjectAttribute](aws-properties-customerprofiles-eventtrigger-objectattribute.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

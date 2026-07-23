@@ -2,66 +2,51 @@
 title: "AWS::Wisdom::MessageTemplate Content"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::MessageTemplate Content
+<a name="aws-properties-wisdom-messagetemplate-content"></a>
 
 The content of the message template.
 
 ## Syntax
+<a name="aws-properties-wisdom-messagetemplate-content-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-messagetemplate-content-syntax.json"></a>
 
-```json
-
+```
 {
-  "EmailMessageTemplateContent" : EmailMessageTemplateContent,
-  "SmsMessageTemplateContent" : SmsMessageTemplateContent
+  "[EmailMessageTemplateContent](#cfn-wisdom-messagetemplate-content-emailmessagetemplatecontent)" : {{EmailMessageTemplateContent}},
+  "[SmsMessageTemplateContent](#cfn-wisdom-messagetemplate-content-smsmessagetemplatecontent)" : {{SmsMessageTemplateContent}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-messagetemplate-content-syntax.yaml"></a>
 
-```yaml
-
-  EmailMessageTemplateContent:
-    EmailMessageTemplateContent
-  SmsMessageTemplateContent:
-    SmsMessageTemplateContent
-
+```
+  [EmailMessageTemplateContent](#cfn-wisdom-messagetemplate-content-emailmessagetemplatecontent): {{
+    EmailMessageTemplateContent}}
+  [SmsMessageTemplateContent](#cfn-wisdom-messagetemplate-content-smsmessagetemplatecontent): {{
+    SmsMessageTemplateContent}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-messagetemplate-content-properties"></a>
 
-`EmailMessageTemplateContent`
-
+`EmailMessageTemplateContent`  <a name="cfn-wisdom-messagetemplate-content-emailmessagetemplatecontent"></a>
 The content of the message template that applies to the email channel subtype.
+*Required*: No
+*Type*: [EmailMessageTemplateContent](aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EmailMessageTemplateContent](aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmsMessageTemplateContent`
-
+`SmsMessageTemplateContent`  <a name="cfn-wisdom-messagetemplate-content-smsmessagetemplatecontent"></a>
 The content of message template that applies to SMS channel subtype.
-
-_Required_: No
-
-_Type_: [SmsMessageTemplateContent](aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AgentAttributes
-
-CustomerProfileAttributes
+*Required*: No
+*Type*: [SmsMessageTemplateContent](aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

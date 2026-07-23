@@ -2,76 +2,55 @@
 title: "AWS::S3::StorageLens Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens Tag
+<a name="aws-properties-s3-storagelens-tag"></a>
 
 A container of a key value name pair.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-s3-storagelens-tag-key)" : {{String}},
+  "[Value](#cfn-s3-storagelens-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-s3-storagelens-tag-key): {{String}}
+  [Value](#cfn-s3-storagelens-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-s3-storagelens-tag-key"></a>
 Name of the object key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:.*)[a-zA-Z0-9\s\_\.\/\=\+\-\@\:]+$`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:.*)[a-zA-Z0-9\s\_\.\/\=\+\-\@\:]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-s3-storagelens-tag-value"></a>
 Value of the tag.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:.*)[a-zA-Z0-9\s\_\.\/\=\+\-\@\:]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StorageLensTableDestination
-
-AWS::S3::StorageLensGroup
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:.*)[a-zA-Z0-9\s\_\.\/\=\+\-\@\:]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

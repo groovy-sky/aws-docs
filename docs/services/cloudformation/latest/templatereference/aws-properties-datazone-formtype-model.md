@@ -2,56 +2,43 @@
 title: "AWS::DataZone::FormType Model"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::FormType Model
+<a name="aws-properties-datazone-formtype-model"></a>
 
 The model of the API.
 
 ## Syntax
+<a name="aws-properties-datazone-formtype-model-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-formtype-model-syntax.json"></a>
 
-```json
-
+```
 {
-  "Smithy" : String
+  "[Smithy](#cfn-datazone-formtype-model-smithy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-formtype-model-syntax.yaml"></a>
 
-```yaml
-
-  Smithy: String
-
+```
+  [Smithy](#cfn-datazone-formtype-model-smithy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-formtype-model-properties"></a>
 
-`Smithy`
-
+`Smithy`  <a name="cfn-datazone-formtype-model-smithy"></a>
 Indicates the smithy model of the API.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100000`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::FormType
-
-AWS::DataZone::GroupProfile
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100000`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

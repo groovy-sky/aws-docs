@@ -2,90 +2,62 @@
 title: "AWS::ApplicationSignals::ServiceLevelObjective CalendarInterval"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationSignals::ServiceLevelObjective CalendarInterval
+<a name="aws-properties-applicationsignals-servicelevelobjective-calendarinterval"></a>
 
 If the interval for this service level objective is a calendar interval, this structure contains the interval specifications.
 
 ## Syntax
+<a name="aws-properties-applicationsignals-servicelevelobjective-calendarinterval-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationsignals-servicelevelobjective-calendarinterval-syntax.json"></a>
 
-```json
-
+```
 {
-  "Duration" : Integer,
-  "DurationUnit" : String,
-  "StartTime" : Integer
+  "[Duration](#cfn-applicationsignals-servicelevelobjective-calendarinterval-duration)" : {{Integer}},
+  "[DurationUnit](#cfn-applicationsignals-servicelevelobjective-calendarinterval-durationunit)" : {{String}},
+  "[StartTime](#cfn-applicationsignals-servicelevelobjective-calendarinterval-starttime)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationsignals-servicelevelobjective-calendarinterval-syntax.yaml"></a>
 
-```yaml
-
-  Duration: Integer
-  DurationUnit: String
-  StartTime: Integer
-
+```
+  [Duration](#cfn-applicationsignals-servicelevelobjective-calendarinterval-duration): {{Integer}}
+  [DurationUnit](#cfn-applicationsignals-servicelevelobjective-calendarinterval-durationunit): {{String}}
+  [StartTime](#cfn-applicationsignals-servicelevelobjective-calendarinterval-starttime): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationsignals-servicelevelobjective-calendarinterval-properties"></a>
 
-`Duration`
+`Duration`  <a name="cfn-applicationsignals-servicelevelobjective-calendarinterval-duration"></a>
+Specifies the duration of each calendar interval. For example, if `Duration` is `1` and `DurationUnit` is `MONTH`, each interval is one month, aligned with the calendar.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the duration of each calendar interval. For example, if `Duration` is `1` and
-`DurationUnit` is `MONTH`, each interval is one month, aligned with the calendar.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DurationUnit`
-
+`DurationUnit`  <a name="cfn-applicationsignals-servicelevelobjective-calendarinterval-durationunit"></a>
 Specifies the calendar interval unit.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MINUTE | HOUR | DAY | MONTH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MINUTE | HOUR | DAY | MONTH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
-The date and time when you want the first interval to start. Be sure to choose a time that configures the
-intervals the way that you want. For example, if you want weekly intervals
-starting on Mondays at 6 a.m., be sure to specify a start time that is a Monday at 6 a.m.
-
-When used in a raw HTTP Query API, it is formatted as
-be epoch time in seconds. For example: `1698778057`
-
+`StartTime`  <a name="cfn-applicationsignals-servicelevelobjective-calendarinterval-starttime"></a>
+The date and time when you want the first interval to start. Be sure to choose a time that configures the intervals the way that you want. For example, if you want weekly intervals starting on Mondays at 6 a.m., be sure to specify a start time that is a Monday at 6 a.m.
+When used in a raw HTTP Query API, it is formatted as be epoch time in seconds. For example: `1698778057`
 As soon as one calendar interval ends, another automatically begins.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `946684800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BurnRateConfiguration
-
-DependencyConfig
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `946684800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

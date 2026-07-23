@@ -2,66 +2,51 @@
 title: "AWS::EMRContainers::SecurityConfiguration EncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration EncryptionConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration"></a>
 
 Configurations related to encryption for the security configuration.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AtRestEncryptionConfiguration" : AtRestEncryptionConfiguration,
-  "InTransitEncryptionConfiguration" : InTransitEncryptionConfiguration
+  "[AtRestEncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-encryptionconfiguration-atrestencryptionconfiguration)" : {{AtRestEncryptionConfiguration}},
+  "[InTransitEncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-encryptionconfiguration-intransitencryptionconfiguration)" : {{InTransitEncryptionConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AtRestEncryptionConfiguration:
-    AtRestEncryptionConfiguration
-  InTransitEncryptionConfiguration:
-    InTransitEncryptionConfiguration
-
+```
+  [AtRestEncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-encryptionconfiguration-atrestencryptionconfiguration): {{
+    AtRestEncryptionConfiguration}}
+  [InTransitEncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-encryptionconfiguration-intransitencryptionconfiguration): {{
+    InTransitEncryptionConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration-properties"></a>
 
-`AtRestEncryptionConfiguration`
-
+`AtRestEncryptionConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-encryptionconfiguration-atrestencryptionconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [AtRestEncryptionConfiguration](aws-properties-emrcontainers-securityconfiguration-atrestencryptionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [AtRestEncryptionConfiguration](aws-properties-emrcontainers-securityconfiguration-atrestencryptionconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InTransitEncryptionConfiguration`
-
+`InTransitEncryptionConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-encryptionconfiguration-intransitencryptionconfiguration"></a>
 In-transit encryption-related input for the security configuration.
-
-_Required_: No
-
-_Type_: [InTransitEncryptionConfiguration](aws-properties-emrcontainers-securityconfiguration-intransitencryptionconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EksInfo
-
-IAMConfiguration
+*Required*: No
+*Type*: [InTransitEncryptionConfiguration](aws-properties-emrcontainers-securityconfiguration-intransitencryptionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

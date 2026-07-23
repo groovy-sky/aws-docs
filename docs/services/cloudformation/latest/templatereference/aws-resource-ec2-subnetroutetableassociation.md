@@ -2,98 +2,92 @@
 title: "AWS::EC2::SubnetRouteTableAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SubnetRouteTableAssociation
+<a name="aws-resource-ec2-subnetroutetableassociation"></a>
 
-Associates a subnet with a route table. The subnet and route table must be in the same
-VPC. This association causes traffic originating from the subnet to be routed according to
-the routes in the route table. A route table can be associated with multiple subnets. To
-create a route table, see [AWS::EC2::RouteTable](../userguide/aws-resource-ec2-routetable.md).
+Associates a subnet with a route table. The subnet and route table must be in the same VPC. This association causes traffic originating from the subnet to be routed according to the routes in the route table. A route table can be associated with multiple subnets. To create a route table, see [AWS::EC2::RouteTable](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-routetable.html).
 
 ## Syntax
+<a name="aws-resource-ec2-subnetroutetableassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-subnetroutetableassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::SubnetRouteTableAssociation",
   "Properties" : {
-      "RouteTableId" : String,
-      "SubnetId" : String
+      "[RouteTableId](#cfn-ec2-subnetroutetableassociation-routetableid)" : {{String}},
+      "[SubnetId](#cfn-ec2-subnetroutetableassociation-subnetid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-subnetroutetableassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::SubnetRouteTableAssociation
 Properties:
-  RouteTableId: String
-  SubnetId: String
-
+  [RouteTableId](#cfn-ec2-subnetroutetableassociation-routetableid): {{String}}
+  [SubnetId](#cfn-ec2-subnetroutetableassociation-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-subnetroutetableassociation-properties"></a>
 
-`RouteTableId`
-
+`RouteTableId`  <a name="cfn-ec2-subnetroutetableassociation-routetableid"></a>
 The ID of the route table.
-
 The physical ID changes when the route table ID is changed.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-ec2-subnetroutetableassociation-subnetid"></a>
 The ID of the subnet.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-subnetroutetableassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-subnetroutetableassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the subnet route table association.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-subnetroutetableassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-subnetroutetableassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the subnet route table association.
 
 ## Examples
+<a name="aws-resource-ec2-subnetroutetableassociation--examples"></a>
 
 ### Subnet route table association
+<a name="aws-resource-ec2-subnetroutetableassociation--examples--Subnet_route_table_association"></a>
 
 The following example associates a subnet with a route table.
 
 #### JSON
+<a name="aws-resource-ec2-subnetroutetableassociation--examples--Subnet_route_table_association--json"></a>
 
-```json
-
+```
 "mySubnetRouteTableAssociation" : {
    "Type" : "AWS::EC2::SubnetRouteTableAssociation",
    "Properties" : {
@@ -104,9 +98,9 @@ The following example associates a subnet with a route table.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-subnetroutetableassociation--examples--Subnet_route_table_association--yaml"></a>
 
-```yaml
-
+```
   mySubnetRouteTableAssociation:
     Type: AWS::EC2::SubnetRouteTableAssociation
     Properties:
@@ -117,16 +111,8 @@ The following example associates a subnet with a route table.
 ```
 
 ## See also
-
-- [AssociateRouteTable](../../../../reference/awsec2/latest/apireference/api-associateroutetable.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Route tables](../../../vpc/latest/userguide/vpc-route-tables.md) in the _Amazon VPC User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::SubnetNetworkAclAssociation
-
-AWS::EC2::TrafficMirrorFilter
+<a name="aws-resource-ec2-subnetroutetableassociation--seealso"></a>
++ [AssociateRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateRouteTable.html) in the *Amazon EC2 API Reference*
++ [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

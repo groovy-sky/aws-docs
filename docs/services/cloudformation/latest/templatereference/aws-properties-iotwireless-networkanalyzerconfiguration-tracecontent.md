@@ -2,72 +2,51 @@
 title: "AWS::IoTWireless::NetworkAnalyzerConfiguration TraceContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::NetworkAnalyzerConfiguration TraceContent
+<a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent"></a>
 
 Trace content for your wireless gateway and wireless device resources.
 
 ## Syntax
+<a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogLevel" : String,
-  "WirelessDeviceFrameInfo" : String
+  "[LogLevel](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-loglevel)" : {{String}},
+  "[WirelessDeviceFrameInfo](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-wirelessdeviceframeinfo)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent-syntax.yaml"></a>
 
-```yaml
-
-  LogLevel: String
-  WirelessDeviceFrameInfo: String
-
+```
+  [LogLevel](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-loglevel): {{String}}
+  [WirelessDeviceFrameInfo](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-wirelessdeviceframeinfo): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent-properties"></a>
 
-`LogLevel`
+`LogLevel`  <a name="cfn-iotwireless-networkanalyzerconfiguration-tracecontent-loglevel"></a>
+The log level for a log message. The log levels can be disabled, or set to `ERROR` to display less verbose logs containing only error information, or to `INFO` for more detailed logs
+*Required*: No
+*Type*: String
+*Allowed values*: `INFO | ERROR | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The log level for a log message. The log levels can be disabled, or set to
-`ERROR` to display less verbose logs containing only error information, or to
-`INFO` for more detailed logs
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INFO | ERROR | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WirelessDeviceFrameInfo`
-
-`FrameInfo` of your wireless device resources for the trace content. Use
-FrameInfo to debug the communication between your LoRaWAN end devices and the network
-server.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::IoTWireless::PartnerAccount
+`WirelessDeviceFrameInfo`  <a name="cfn-iotwireless-networkanalyzerconfiguration-tracecontent-wirelessdeviceframeinfo"></a>
+`FrameInfo` of your wireless device resources for the trace content. Use FrameInfo to debug the communication between your LoRaWAN end devices and the network server.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

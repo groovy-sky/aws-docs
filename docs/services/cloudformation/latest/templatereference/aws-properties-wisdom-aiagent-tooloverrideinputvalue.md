@@ -2,67 +2,51 @@
 title: "AWS::Wisdom::AIAgent ToolOverrideInputValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent ToolOverrideInputValue
+<a name="aws-properties-wisdom-aiagent-tooloverrideinputvalue"></a>
 
 An input value override for tools.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-tooloverrideinputvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-tooloverrideinputvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "JsonPath" : String,
-  "Value" : ToolOverrideInputValueConfiguration
+  "[JsonPath](#cfn-wisdom-aiagent-tooloverrideinputvalue-jsonpath)" : {{String}},
+  "[Value](#cfn-wisdom-aiagent-tooloverrideinputvalue-value)" : {{ToolOverrideInputValueConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-tooloverrideinputvalue-syntax.yaml"></a>
 
-```yaml
-
-  JsonPath: String
-  Value:
-    ToolOverrideInputValueConfiguration
-
+```
+  [JsonPath](#cfn-wisdom-aiagent-tooloverrideinputvalue-jsonpath): {{String}}
+  [Value](#cfn-wisdom-aiagent-tooloverrideinputvalue-value): {{
+    ToolOverrideInputValueConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-tooloverrideinputvalue-properties"></a>
 
-`JsonPath`
-
+`JsonPath`  <a name="cfn-wisdom-aiagent-tooloverrideinputvalue-jsonpath"></a>
 The JSON path for the input value override.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-wisdom-aiagent-tooloverrideinputvalue-value"></a>
 The override input value.
-
-_Required_: Yes
-
-_Type_: [ToolOverrideInputValueConfiguration](aws-properties-wisdom-aiagent-tooloverrideinputvalueconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ToolOverrideConstantInputValue
-
-ToolOverrideInputValueConfiguration
+*Required*: Yes
+*Type*: [ToolOverrideInputValueConfiguration](aws-properties-wisdom-aiagent-tooloverrideinputvalueconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

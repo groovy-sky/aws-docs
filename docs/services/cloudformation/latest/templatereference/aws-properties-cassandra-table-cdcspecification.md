@@ -2,97 +2,67 @@
 title: "AWS::Cassandra::Table CdcSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Table CdcSpecification
+<a name="aws-properties-cassandra-table-cdcspecification"></a>
 
-The settings for the CDC stream of a table. For more information about CDC streams, see [Working with change data capture (CDC) streams in Amazon Keyspaces](../../../keyspaces/latest/devguide/cdc.md) in the _Amazon Keyspaces Developer_
-_Guide_.
+The settings for the CDC stream of a table. For more information about CDC streams, see [Working with change data capture (CDC) streams in Amazon Keyspaces](https://docs.aws.amazon.com/keyspaces/latest/devguide/cdc.html) in the *Amazon Keyspaces Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-cassandra-table-cdcspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cassandra-table-cdcspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Status" : String,
-  "Tags" : [ Tag, ... ],
-  "ViewType" : String
+  "[Status](#cfn-cassandra-table-cdcspecification-status)" : {{String}},
+  "[Tags](#cfn-cassandra-table-cdcspecification-tags)" : {{[ Tag, ... ]}},
+  "[ViewType](#cfn-cassandra-table-cdcspecification-viewtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cassandra-table-cdcspecification-syntax.yaml"></a>
 
-```yaml
-
-  Status: String
-  Tags:
-    - Tag
-  ViewType: String
-
+```
+  [Status](#cfn-cassandra-table-cdcspecification-status): {{String}}
+  [Tags](#cfn-cassandra-table-cdcspecification-tags): {{
+    - Tag}}
+  [ViewType](#cfn-cassandra-table-cdcspecification-viewtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cassandra-table-cdcspecification-properties"></a>
 
-`Status`
-
+`Status`  <a name="cfn-cassandra-table-cdcspecification-status"></a>
 The status of the CDC stream. You can enable or disable a stream for a table.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-cassandra-table-cdcspecification-tags"></a>
 The tags (key-value pairs) that you want to apply to the stream.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cassandra-table-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cassandra-table-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ViewType`
-
-The view type specifies the changes Amazon Keyspaces records for each changed row in the stream.
-After you create the stream, you can't make changes to this selection.
-
+`ViewType`  <a name="cfn-cassandra-table-cdcspecification-viewtype"></a>
+The view type specifies the changes Amazon Keyspaces records for each changed row in the stream. After you create the stream, you can't make changes to this selection.
 The options are:
-
-- `NEW_AND_OLD_IMAGES` \- both versions of the row, before and after the change. This is the default.
-
-- `NEW_IMAGE` \- the version of the row after the change.
-
-- `OLD_IMAGE` \- the version of the row before the change.
-
-- `KEYS_ONLY` \- the partition and clustering keys of the row that was changed.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NEW_IMAGE | OLD_IMAGE | KEYS_ONLY | NEW_AND_OLD_IMAGES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BillingMode
-
-ClusteringKeyColumn
++ `NEW_AND_OLD_IMAGES` - both versions of the row, before and after the change. This is the default.
++ `NEW_IMAGE` - the version of the row after the change.
++ `OLD_IMAGE` - the version of the row before the change.
++ `KEYS_ONLY` - the partition and clustering keys of the row that was changed.
+*Required*: No
+*Type*: String
+*Allowed values*: `NEW_IMAGE | OLD_IMAGE | KEYS_ONLY | NEW_AND_OLD_IMAGES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

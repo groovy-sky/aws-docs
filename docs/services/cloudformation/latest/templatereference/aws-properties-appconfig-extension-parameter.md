@@ -2,85 +2,59 @@
 title: "AWS::AppConfig::Extension Parameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppConfig::Extension Parameter
+<a name="aws-properties-appconfig-extension-parameter"></a>
 
-A value such as an Amazon Resource Name (ARN) or an Amazon Simple Notification Service topic entered
-in an extension when invoked. Parameter values are specified in an extension association.
-For more information about extensions, see [Extending\
-workflows](../../../appconfig/latest/userguide/working-with-appconfig-extensions.md) in the _AWS AppConfig User Guide_.
+A value such as an Amazon Resource Name (ARN) or an Amazon Simple Notification Service topic entered in an extension when invoked. Parameter values are specified in an extension association. For more information about extensions, see [Extending workflows](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions.html) in the *AWS AppConfig User Guide*.
 
 ## Syntax
+<a name="aws-properties-appconfig-extension-parameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appconfig-extension-parameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "Dynamic" : Boolean,
-  "Required" : Boolean
+  "[Description](#cfn-appconfig-extension-parameter-description)" : {{String}},
+  "[Dynamic](#cfn-appconfig-extension-parameter-dynamic)" : {{Boolean}},
+  "[Required](#cfn-appconfig-extension-parameter-required)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appconfig-extension-parameter-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  Dynamic: Boolean
-  Required: Boolean
-
+```
+  [Description](#cfn-appconfig-extension-parameter-description): {{String}}
+  [Dynamic](#cfn-appconfig-extension-parameter-dynamic): {{Boolean}}
+  [Required](#cfn-appconfig-extension-parameter-required): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-appconfig-extension-parameter-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-appconfig-extension-parameter-description"></a>
 Information about the parameter.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Dynamic`  <a name="cfn-appconfig-extension-parameter-dynamic"></a>
+Indicates whether this parameter's value can be supplied at the extension's action point instead of during extension association. Dynamic parameters can't be marked `Required`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dynamic`
-
-Indicates whether this parameter's value can be supplied at the extension's action point
-instead of during extension association. Dynamic parameters can't be marked
-`Required`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Required`
-
+`Required`  <a name="cfn-appconfig-extension-parameter-required"></a>
 A parameter value must be specified in the extension association.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Action
-
-Tag
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

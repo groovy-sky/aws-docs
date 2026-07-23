@@ -2,68 +2,50 @@
 title: "AWS::Lex::BotVersion BotVersionLocaleSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::BotVersion BotVersionLocaleSpecification
+<a name="aws-properties-lex-botversion-botversionlocalespecification"></a>
 
-Specifies the locale that Amazon Lex adds to this version.
-You can choose the Draft version or any other previously published
-version for each locale. When you specify a source version, the locale
-data is copied from the source version to the new version.
+Specifies the locale that Amazon Lex adds to this version. You can choose the Draft version or any other previously published version for each locale. When you specify a source version, the locale data is copied from the source version to the new version.
 
 ## Syntax
+<a name="aws-properties-lex-botversion-botversionlocalespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-botversion-botversionlocalespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "BotVersionLocaleDetails" : BotVersionLocaleDetails,
-  "LocaleId" : String
+  "[BotVersionLocaleDetails](#cfn-lex-botversion-botversionlocalespecification-botversionlocaledetails)" : {{BotVersionLocaleDetails}},
+  "[LocaleId](#cfn-lex-botversion-botversionlocalespecification-localeid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-botversion-botversionlocalespecification-syntax.yaml"></a>
 
-```yaml
-
-  BotVersionLocaleDetails:
-    BotVersionLocaleDetails
-  LocaleId: String
-
+```
+  [BotVersionLocaleDetails](#cfn-lex-botversion-botversionlocalespecification-botversionlocaledetails): {{
+    BotVersionLocaleDetails}}
+  [LocaleId](#cfn-lex-botversion-botversionlocalespecification-localeid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-botversion-botversionlocalespecification-properties"></a>
 
-`BotVersionLocaleDetails`
-
+`BotVersionLocaleDetails`  <a name="cfn-lex-botversion-botversionlocalespecification-botversionlocaledetails"></a>
 The version of a bot used for a bot locale.
+*Required*: Yes
+*Type*: [BotVersionLocaleDetails](aws-properties-lex-botversion-botversionlocaledetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [BotVersionLocaleDetails](aws-properties-lex-botversion-botversionlocaledetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocaleId`
-
+`LocaleId`  <a name="cfn-lex-botversion-botversionlocalespecification-localeid"></a>
 The identifier of the locale to add to the version.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BotVersionLocaleDetails
-
-AWS::Lex::ResourcePolicy
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

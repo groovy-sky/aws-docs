@@ -2,132 +2,87 @@
 title: "AWS::EVS::Environment HostInfoForCreate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EVS::Environment HostInfoForCreate
+<a name="aws-properties-evs-environment-hostinfoforcreate"></a>
 
 An object that represents a host.
 
-###### Note
-
-You cannot use `dedicatedHostId` and `placementGroupId` together in the same `HostInfoForCreate` object.
-This results in a `ValidationException` response.
+**Note**
+You cannot use `dedicatedHostId` and `placementGroupId` together in the same `HostInfoForCreate`object. This results in a `ValidationException` response.
 
 ## Syntax
+<a name="aws-properties-evs-environment-hostinfoforcreate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-evs-environment-hostinfoforcreate-syntax.json"></a>
 
-```json
-
+```
 {
-  "DedicatedHostId" : String,
-  "HostName" : String,
-  "InstanceType" : String,
-  "KeyName" : String,
-  "PlacementGroupId" : String
+  "[DedicatedHostId](#cfn-evs-environment-hostinfoforcreate-dedicatedhostid)" : {{String}},
+  "[HostName](#cfn-evs-environment-hostinfoforcreate-hostname)" : {{String}},
+  "[InstanceType](#cfn-evs-environment-hostinfoforcreate-instancetype)" : {{String}},
+  "[KeyName](#cfn-evs-environment-hostinfoforcreate-keyname)" : {{String}},
+  "[PlacementGroupId](#cfn-evs-environment-hostinfoforcreate-placementgroupid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-evs-environment-hostinfoforcreate-syntax.yaml"></a>
 
-```yaml
-
-  DedicatedHostId: String
-  HostName: String
-  InstanceType: String
-  KeyName: String
-  PlacementGroupId: String
-
+```
+  [DedicatedHostId](#cfn-evs-environment-hostinfoforcreate-dedicatedhostid): {{String}}
+  [HostName](#cfn-evs-environment-hostinfoforcreate-hostname): {{String}}
+  [InstanceType](#cfn-evs-environment-hostinfoforcreate-instancetype): {{String}}
+  [KeyName](#cfn-evs-environment-hostinfoforcreate-keyname): {{String}}
+  [PlacementGroupId](#cfn-evs-environment-hostinfoforcreate-placementgroupid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-evs-environment-hostinfoforcreate-properties"></a>
 
-`DedicatedHostId`
-
+`DedicatedHostId`  <a name="cfn-evs-environment-hostinfoforcreate-dedicatedhostid"></a>
 The unique ID of the Amazon EC2 Dedicated Host.
+*Required*: No
+*Type*: String
+*Pattern*: `^h-[a-f0-9]{8}([a-f0-9]{9})?$`
+*Minimum*: `1`
+*Maximum*: `25`
+*Update requires*: Updates are not supported.
 
-_Required_: No
+`HostName`  <a name="cfn-evs-environment-hostinfoforcreate-hostname"></a>
+The DNS hostname of the host. DNS hostnames for hosts must be unique across Amazon EVS environments and within VCF.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([a-zA-Z0-9\-]*)$`
+*Update requires*: Updates are not supported.
 
-_Type_: String
-
-_Pattern_: `^h-[a-f0-9]{8}([a-f0-9]{9})?$`
-
-_Minimum_: `1`
-
-_Maximum_: `25`
-
-_Update requires_: Updates are not supported.
-
-`HostName`
-
-The DNS hostname of the host.
-DNS hostnames for hosts must be unique across Amazon EVS environments and within VCF.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([a-zA-Z0-9\-]*)$`
-
-_Update requires_: Updates are not supported.
-
-`InstanceType`
-
+`InstanceType`  <a name="cfn-evs-environment-hostinfoforcreate-instancetype"></a>
 The EC2 instance type that represents the host.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `i4i.metal | i7i.metal-24xl`
+*Update requires*: Updates are not supported.
 
-###### Note
-
-Currently, Amazon EVS supports only the `i4i.metal` instance type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `i4i.metal`
-
-_Update requires_: Updates are not supported.
-
-`KeyName`
-
+`KeyName`  <a name="cfn-evs-environment-hostinfoforcreate-keyname"></a>
 The name of the SSH key that is used to access the host.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: Updates are not supported.
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: Updates are not supported.
-
-`PlacementGroupId`
-
+`PlacementGroupId`  <a name="cfn-evs-environment-hostinfoforcreate-placementgroupid"></a>
 The unique ID of the placement group where the host is placed.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^pg-[a-f0-9]{8}([a-f0-9]{9})?$`
-
-_Minimum_: `1`
-
-_Maximum_: `25`
-
-_Update requires_: Updates are not supported.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectivityInfo
-
-InitialVlanInfo
+*Required*: No
+*Type*: String
+*Pattern*: `^pg-[a-f0-9]{8}([a-f0-9]{9})?$`
+*Minimum*: `1`
+*Maximum*: `25`
+*Update requires*: Updates are not supported.
 
 All content copied from https://docs.aws.amazon.com/.

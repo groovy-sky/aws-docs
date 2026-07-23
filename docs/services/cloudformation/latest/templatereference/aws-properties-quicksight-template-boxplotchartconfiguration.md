@@ -2,200 +2,143 @@
 title: "AWS::QuickSight::Template BoxPlotChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BoxPlotChartConfiguration
+<a name="aws-properties-quicksight-template-boxplotchartconfiguration"></a>
 
 The configuration of a `BoxPlotVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-boxplotchartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-boxplotchartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BoxPlotOptions" : BoxPlotOptions,
-  "CategoryAxis" : AxisDisplayOptions,
-  "CategoryLabelOptions" : ChartAxisLabelOptions,
-  "FieldWells" : BoxPlotFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "PrimaryYAxisDisplayOptions" : AxisDisplayOptions,
-  "PrimaryYAxisLabelOptions" : ChartAxisLabelOptions,
-  "ReferenceLines" : [ ReferenceLine, ... ],
-  "SortConfiguration" : BoxPlotSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "VisualPalette" : VisualPalette
+  "[BoxPlotOptions](#cfn-quicksight-template-boxplotchartconfiguration-boxplotoptions)" : {{BoxPlotOptions}},
+  "[CategoryAxis](#cfn-quicksight-template-boxplotchartconfiguration-categoryaxis)" : {{AxisDisplayOptions}},
+  "[CategoryLabelOptions](#cfn-quicksight-template-boxplotchartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
+  "[FieldWells](#cfn-quicksight-template-boxplotchartconfiguration-fieldwells)" : {{BoxPlotFieldWells}},
+  "[Interactions](#cfn-quicksight-template-boxplotchartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-template-boxplotchartconfiguration-legend)" : {{LegendOptions}},
+  "[PrimaryYAxisDisplayOptions](#cfn-quicksight-template-boxplotchartconfiguration-primaryyaxisdisplayoptions)" : {{AxisDisplayOptions}},
+  "[PrimaryYAxisLabelOptions](#cfn-quicksight-template-boxplotchartconfiguration-primaryyaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ReferenceLines](#cfn-quicksight-template-boxplotchartconfiguration-referencelines)" : {{[ ReferenceLine, ... ]}},
+  "[SortConfiguration](#cfn-quicksight-template-boxplotchartconfiguration-sortconfiguration)" : {{BoxPlotSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-template-boxplotchartconfiguration-tooltip)" : {{TooltipOptions}},
+  "[VisualPalette](#cfn-quicksight-template-boxplotchartconfiguration-visualpalette)" : {{VisualPalette}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-boxplotchartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BoxPlotOptions:
-    BoxPlotOptions
-  CategoryAxis:
-    AxisDisplayOptions
-  CategoryLabelOptions:
-    ChartAxisLabelOptions
-  FieldWells:
-    BoxPlotFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  PrimaryYAxisDisplayOptions:
-    AxisDisplayOptions
-  PrimaryYAxisLabelOptions:
-    ChartAxisLabelOptions
-  ReferenceLines:
-    - ReferenceLine
-  SortConfiguration:
-    BoxPlotSortConfiguration
-  Tooltip:
-    TooltipOptions
-  VisualPalette:
-    VisualPalette
-
+```
+  [BoxPlotOptions](#cfn-quicksight-template-boxplotchartconfiguration-boxplotoptions): {{
+    BoxPlotOptions}}
+  [CategoryAxis](#cfn-quicksight-template-boxplotchartconfiguration-categoryaxis): {{
+    AxisDisplayOptions}}
+  [CategoryLabelOptions](#cfn-quicksight-template-boxplotchartconfiguration-categorylabeloptions): {{
+    ChartAxisLabelOptions}}
+  [FieldWells](#cfn-quicksight-template-boxplotchartconfiguration-fieldwells): {{
+    BoxPlotFieldWells}}
+  [Interactions](#cfn-quicksight-template-boxplotchartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-template-boxplotchartconfiguration-legend): {{
+    LegendOptions}}
+  [PrimaryYAxisDisplayOptions](#cfn-quicksight-template-boxplotchartconfiguration-primaryyaxisdisplayoptions): {{
+    AxisDisplayOptions}}
+  [PrimaryYAxisLabelOptions](#cfn-quicksight-template-boxplotchartconfiguration-primaryyaxislabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ReferenceLines](#cfn-quicksight-template-boxplotchartconfiguration-referencelines): {{
+    - ReferenceLine}}
+  [SortConfiguration](#cfn-quicksight-template-boxplotchartconfiguration-sortconfiguration): {{
+    BoxPlotSortConfiguration}}
+  [Tooltip](#cfn-quicksight-template-boxplotchartconfiguration-tooltip): {{
+    TooltipOptions}}
+  [VisualPalette](#cfn-quicksight-template-boxplotchartconfiguration-visualpalette): {{
+    VisualPalette}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-boxplotchartconfiguration-properties"></a>
 
-`BoxPlotOptions`
-
+`BoxPlotOptions`  <a name="cfn-quicksight-template-boxplotchartconfiguration-boxplotoptions"></a>
 The box plot chart options for a box plot visual
+*Required*: No
+*Type*: [BoxPlotOptions](aws-properties-quicksight-template-boxplotoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BoxPlotOptions](aws-properties-quicksight-template-boxplotoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryAxis`
-
+`CategoryAxis`  <a name="cfn-quicksight-template-boxplotchartconfiguration-categoryaxis"></a>
 The label display options (grid line, range, scale, axis step) of a box plot category.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryLabelOptions`
-
+`CategoryLabelOptions`  <a name="cfn-quicksight-template-boxplotchartconfiguration-categorylabeloptions"></a>
 The label options (label text, label visibility and sort Icon visibility) of a box plot category.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-boxplotchartconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [BoxPlotFieldWells](aws-properties-quicksight-template-boxplotfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BoxPlotFieldWells](aws-properties-quicksight-template-boxplotfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-boxplotchartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-template-boxplotchartconfiguration-legend"></a>
 Property description not available.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryYAxisDisplayOptions`
-
+`PrimaryYAxisDisplayOptions`  <a name="cfn-quicksight-template-boxplotchartconfiguration-primaryyaxisdisplayoptions"></a>
 The label display options (grid line, range, scale, axis step) of a box plot category.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryYAxisLabelOptions`
-
+`PrimaryYAxisLabelOptions`  <a name="cfn-quicksight-template-boxplotchartconfiguration-primaryyaxislabeloptions"></a>
 The label options (label text, label visibility and sort icon visibility) of a box plot value.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReferenceLines`
-
+`ReferenceLines`  <a name="cfn-quicksight-template-boxplotchartconfiguration-referencelines"></a>
 The reference line setup of the visual.
+*Required*: No
+*Type*: Array of [ReferenceLine](aws-properties-quicksight-template-referenceline.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ReferenceLine](aws-properties-quicksight-template-referenceline.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-boxplotchartconfiguration-sortconfiguration"></a>
 The sort configuration of a `BoxPlotVisual`.
+*Required*: No
+*Type*: [BoxPlotSortConfiguration](aws-properties-quicksight-template-boxplotsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BoxPlotSortConfiguration](aws-properties-quicksight-template-boxplotsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-template-boxplotchartconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-template-boxplotchartconfiguration-visualpalette"></a>
 The palette (chart color) display setup of the visual.
-
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BoxPlotAggregatedFieldWells
-
-BoxPlotFieldWells
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

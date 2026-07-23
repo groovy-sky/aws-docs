@@ -2,66 +2,50 @@
 title: "AWS::Redshift::Cluster Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::Cluster Endpoint
+<a name="aws-properties-redshift-cluster-endpoint"></a>
 
 Describes a connection endpoint.
 
 ## Syntax
+<a name="aws-properties-redshift-cluster-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshift-cluster-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Address" : String,
-  "Port" : String
+  "[Address](#cfn-redshift-cluster-endpoint-address)" : {{String}},
+  "[Port](#cfn-redshift-cluster-endpoint-port)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshift-cluster-endpoint-syntax.yaml"></a>
 
-```yaml
-
-  Address: String
-  Port: String
-
+```
+  [Address](#cfn-redshift-cluster-endpoint-address): {{String}}
+  [Port](#cfn-redshift-cluster-endpoint-port): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-redshift-cluster-endpoint-properties"></a>
 
-`Address`
-
+`Address`  <a name="cfn-redshift-cluster-endpoint-address"></a>
 The DNS address of the cluster. This property is read only.
+*Required*: No
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-redshift-cluster-endpoint-port"></a>
 The port that the database engine is listening on. This property is read only.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Redshift::Cluster
-
-LoggingProperties
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,59 +2,46 @@
 title: "AWS::Logs::Transformer TrimString"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer TrimString
+<a name="aws-properties-logs-transformer-trimstring"></a>
 
 Use this processor to remove leading and trailing whitespace.
 
-For more information about this processor including examples, see [trimString](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-processors.md#CloudWatch-Logs-Transformation-trimString) in the _CloudWatch Logs User Guide_.
+For more information about this processor including examples, see [ trimString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-trimString) in the *CloudWatch Logs User Guide*.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-trimstring-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-trimstring-syntax.json"></a>
 
-```json
-
+```
 {
-  "WithKeys" : [ String, ... ]
+  "[WithKeys](#cfn-logs-transformer-trimstring-withkeys)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-trimstring-syntax.yaml"></a>
 
-```yaml
-
-  WithKeys:
-    - String
-
+```
+  [WithKeys](#cfn-logs-transformer-trimstring-withkeys): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-trimstring-properties"></a>
 
-`WithKeys`
-
+`WithKeys`  <a name="cfn-logs-transformer-trimstring-withkeys"></a>
 The array containing the keys of the fields to trim.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SubstituteStringEntry
-
-TypeConverter
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

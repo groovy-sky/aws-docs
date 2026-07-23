@@ -2,69 +2,52 @@
 title: "AWS::Personalize::Solution CategoricalHyperParameterRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Solution CategoricalHyperParameterRange
+<a name="aws-properties-personalize-solution-categoricalhyperparameterrange"></a>
 
 Provides the name and range of a categorical hyperparameter.
 
 ## Syntax
+<a name="aws-properties-personalize-solution-categoricalhyperparameterrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-personalize-solution-categoricalhyperparameterrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Values" : [ String, ... ]
+  "[Name](#cfn-personalize-solution-categoricalhyperparameterrange-name)" : {{String}},
+  "[Values](#cfn-personalize-solution-categoricalhyperparameterrange-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-personalize-solution-categoricalhyperparameterrange-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Values:
-    - String
-
+```
+  [Name](#cfn-personalize-solution-categoricalhyperparameterrange-name): {{String}}
+  [Values](#cfn-personalize-solution-categoricalhyperparameterrange-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-personalize-solution-categoricalhyperparameterrange-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-personalize-solution-categoricalhyperparameterrange-name"></a>
 The name of the hyperparameter.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Values`
-
+`Values`  <a name="cfn-personalize-solution-categoricalhyperparameterrange-values"></a>
 A list of the categories for the hyperparameter.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `1000 | 100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoMLConfig
-
-ContinuousHyperParameterRange
+*Required*: No
+*Type*: Array of String
+*Maximum*: `1000 | 100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

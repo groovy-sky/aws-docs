@@ -2,161 +2,114 @@
 title: "AWS::QuickSight::Analysis GeospatialLayerItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialLayerItem
+<a name="aws-properties-quicksight-analysis-geospatiallayeritem"></a>
 
 The properties for a single geospatial layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatiallayeritem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatiallayeritem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ LayerCustomAction, ... ],
-  "DataSource" : GeospatialDataSourceItem,
-  "JoinDefinition" : GeospatialLayerJoinDefinition,
-  "Label" : String,
-  "LayerDefinition" : GeospatialLayerDefinition,
-  "LayerId" : String,
-  "LayerType" : String,
-  "Tooltip" : TooltipOptions,
-  "Visibility" : String
+  "[Actions](#cfn-quicksight-analysis-geospatiallayeritem-actions)" : {{[ LayerCustomAction, ... ]}},
+  "[DataSource](#cfn-quicksight-analysis-geospatiallayeritem-datasource)" : {{GeospatialDataSourceItem}},
+  "[JoinDefinition](#cfn-quicksight-analysis-geospatiallayeritem-joindefinition)" : {{GeospatialLayerJoinDefinition}},
+  "[Label](#cfn-quicksight-analysis-geospatiallayeritem-label)" : {{String}},
+  "[LayerDefinition](#cfn-quicksight-analysis-geospatiallayeritem-layerdefinition)" : {{GeospatialLayerDefinition}},
+  "[LayerId](#cfn-quicksight-analysis-geospatiallayeritem-layerid)" : {{String}},
+  "[LayerType](#cfn-quicksight-analysis-geospatiallayeritem-layertype)" : {{String}},
+  "[Tooltip](#cfn-quicksight-analysis-geospatiallayeritem-tooltip)" : {{TooltipOptions}},
+  "[Visibility](#cfn-quicksight-analysis-geospatiallayeritem-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatiallayeritem-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - LayerCustomAction
-  DataSource:
-    GeospatialDataSourceItem
-  JoinDefinition:
-    GeospatialLayerJoinDefinition
-  Label: String
-  LayerDefinition:
-    GeospatialLayerDefinition
-  LayerId: String
-  LayerType: String
-  Tooltip:
-    TooltipOptions
-  Visibility: String
-
+```
+  [Actions](#cfn-quicksight-analysis-geospatiallayeritem-actions): {{
+    - LayerCustomAction}}
+  [DataSource](#cfn-quicksight-analysis-geospatiallayeritem-datasource): {{
+    GeospatialDataSourceItem}}
+  [JoinDefinition](#cfn-quicksight-analysis-geospatiallayeritem-joindefinition): {{
+    GeospatialLayerJoinDefinition}}
+  [Label](#cfn-quicksight-analysis-geospatiallayeritem-label): {{String}}
+  [LayerDefinition](#cfn-quicksight-analysis-geospatiallayeritem-layerdefinition): {{
+    GeospatialLayerDefinition}}
+  [LayerId](#cfn-quicksight-analysis-geospatiallayeritem-layerid): {{String}}
+  [LayerType](#cfn-quicksight-analysis-geospatiallayeritem-layertype): {{String}}
+  [Tooltip](#cfn-quicksight-analysis-geospatiallayeritem-tooltip): {{
+    TooltipOptions}}
+  [Visibility](#cfn-quicksight-analysis-geospatiallayeritem-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatiallayeritem-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-quicksight-analysis-geospatiallayeritem-actions"></a>
 A list of custom actions for a layer.
+*Required*: No
+*Type*: Array of [LayerCustomAction](aws-properties-quicksight-analysis-layercustomaction.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [LayerCustomAction](aws-properties-quicksight-analysis-layercustomaction.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSource`
-
+`DataSource`  <a name="cfn-quicksight-analysis-geospatiallayeritem-datasource"></a>
 The data source for the layer.
+*Required*: No
+*Type*: [GeospatialDataSourceItem](aws-properties-quicksight-analysis-geospatialdatasourceitem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialDataSourceItem](aws-properties-quicksight-analysis-geospatialdatasourceitem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JoinDefinition`
-
+`JoinDefinition`  <a name="cfn-quicksight-analysis-geospatiallayeritem-joindefinition"></a>
 The join definition properties for a layer.
+*Required*: No
+*Type*: [GeospatialLayerJoinDefinition](aws-properties-quicksight-analysis-geospatiallayerjoindefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialLayerJoinDefinition](aws-properties-quicksight-analysis-geospatiallayerjoindefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Label`
-
+`Label`  <a name="cfn-quicksight-analysis-geospatiallayeritem-label"></a>
 The label that is displayed for the layer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LayerDefinition`
-
+`LayerDefinition`  <a name="cfn-quicksight-analysis-geospatiallayeritem-layerdefinition"></a>
 The definition properties for a layer.
+*Required*: No
+*Type*: [GeospatialLayerDefinition](aws-properties-quicksight-analysis-geospatiallayerdefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialLayerDefinition](aws-properties-quicksight-analysis-geospatiallayerdefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LayerId`
-
+`LayerId`  <a name="cfn-quicksight-analysis-geospatiallayeritem-layerid"></a>
 The ID of the layer.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LayerType`
-
+`LayerType`  <a name="cfn-quicksight-analysis-geospatiallayeritem-layertype"></a>
 The layer type.
+*Required*: No
+*Type*: String
+*Allowed values*: `POINT | LINE | POLYGON`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `POINT | LINE | POLYGON`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-analysis-geospatiallayeritem-tooltip"></a>
 Property description not available.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-analysis-geospatiallayeritem-visibility"></a>
 The state of visibility for the layer.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLayerDefinition
-
-GeospatialLayerJoinDefinition
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

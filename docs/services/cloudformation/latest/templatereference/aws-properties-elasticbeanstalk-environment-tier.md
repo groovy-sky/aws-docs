@@ -2,95 +2,64 @@
 title: "AWS::ElasticBeanstalk::Environment Tier"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticBeanstalk::Environment Tier
+<a name="aws-properties-elasticbeanstalk-environment-tier"></a>
 
-Describes the environment tier for an [AWS::ElasticBeanstalk::Environment](../userguide/aws-properties-beanstalk-environment.md) resource. For more information, see [Environment Tiers](../../../elasticbeanstalk/latest/dg/using-features-managing-env-tiers.md) in the _AWS Elastic Beanstalk Developer_
-_Guide_.
+Describes the environment tier for an [AWS::ElasticBeanstalk::Environment](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html) resource. For more information, see [Environment Tiers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html) in the *AWS Elastic Beanstalk Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticbeanstalk-environment-tier-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticbeanstalk-environment-tier-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Type" : String,
-  "Version" : String
+  "[Name](#cfn-elasticbeanstalk-environment-tier-name)" : {{String}},
+  "[Type](#cfn-elasticbeanstalk-environment-tier-type)" : {{String}},
+  "[Version](#cfn-elasticbeanstalk-environment-tier-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticbeanstalk-environment-tier-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Type: String
-  Version: String
-
+```
+  [Name](#cfn-elasticbeanstalk-environment-tier-name): {{String}}
+  [Type](#cfn-elasticbeanstalk-environment-tier-type): {{String}}
+  [Version](#cfn-elasticbeanstalk-environment-tier-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticbeanstalk-environment-tier-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-elasticbeanstalk-environment-tier-name"></a>
 The name of this environment tier.
-
 Valid values:
++ For *Web server tier* – `WebServer`
++ For *Worker tier* – `Worker`
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- For _Web server tier_ – `WebServer`
-
-- For _Worker tier_ – `Worker`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-elasticbeanstalk-environment-tier-type"></a>
 The type of this environment tier.
-
 Valid values:
++ For *Web server tier* – `Standard`
++ For *Worker tier* – `SQS/HTTP`
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- For _Web server tier_ – `Standard`
-
-- For _Worker tier_ – `SQS/HTTP`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Version`
-
-The version of this environment tier. When you don't set a value to it, Elastic Beanstalk uses the
-latest compatible worker tier version.
-
-###### Note
-
-This member is deprecated. Any specific version that you set may become out of date.
-We recommend leaving it unspecified.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+`Version`  <a name="cfn-elasticbeanstalk-environment-tier-version"></a>
+The version of this environment tier. When you don't set a value to it, Elastic Beanstalk uses the latest compatible worker tier version.
+This member is deprecated. Any specific version that you set may become out of date. We recommend leaving it unspecified.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

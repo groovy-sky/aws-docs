@@ -3,55 +3,42 @@ title: "Increase your existing DynamoDB table's warm throughput"
 ---
 
 # Increase your existing DynamoDB table's warm throughput
+<a name="update-warm-throughput"></a>
 
-Once you've checked your DynamoDB table's current warm throughput value, you can
-update it with the following steps:
+Once you've checked your DynamoDB table's current warm throughput value, you can update it with the following steps:
 
-To check your DynamoDB table's warm throughput value using the DynamoDB
-console:
+## AWS Management Console
+<a name="warm-throughput-update-console"></a>
 
-1. Sign in to the AWS Management Console and open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+To check your DynamoDB table's warm throughput value using the DynamoDB console:
 
-2. In the left navigation pane, choose Tables.
+1. Sign in to the AWS Management Console and open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-3. On the **Tables** page, choose your
-    desired table.
+1. In the left navigation pane, choose Tables.
 
-4. In the **Warm throughput** field,
-    select **Edit**.
+1. On the **Tables** page, choose your desired table.
 
-5. On the **Edit warm throughput** page,
-    choose **Increase warm**
-**throughput**.
+1. In the **Warm throughput** field, select **Edit**.
 
-6. Adjust the **read units per second**
-    and **write units pers second**. These
-    two settings define the throughput your table can instantly
-    handle.
+1. On the **Edit warm throughput** page, choose **Increase warm throughput**.
 
-7. Select **Save**.
+1. Adjust the **read units per second** and **write units pers second**. These two settings define the throughput your table can instantly handle.
 
-8. Your **read units per second** and
-    **write units per second** will be
-    updated in the **Warm throughput**
-    field when the request finishes processing.
+1. Select **Save**.
 
-###### Note
+1. Your **read units per second** and **write units per second** will be updated in the **Warm throughput** field when the request finishes processing.
+**Note**
+Updating your warm throughput value is an asynchronous task. The `Status` will change from `UPDATING` to `ACTIVE` when the update is complete.
 
-Updating your warm throughput value is an asynchronous task.
-The `Status` will change from `UPDATING`
-to `ACTIVE` when the update is complete.
+## AWS CLI
+<a name="warm-throughput-update-CLI"></a>
 
-The following AWS CLI example shows you how to update your DynamoDB table's
-warm throughput value.
+The following AWS CLI example shows you how to update your DynamoDB table's warm throughput value.
 
-1. Run the `update-table` operation on your DynamoDB
-    table.
+1. Run the `update-table` operation on your DynamoDB table.
 
-```
-
-aws dynamodb update-table \
+   ```
+   aws dynamodb update-table \
        --table-name GameScores \
        --warm-throughput ReadUnitsPerSecond=12345,WriteUnitsPerSecond=4567 \
        --global-secondary-index-updates \
@@ -67,19 +54,12 @@ aws dynamodb update-table \
                }
            ]" \
        --region us-east-1
-```
+   ```
 
-2. You’ll receive a response similar to the one below. Your
-    `WarmThroughput` settings will be displayed as
-    `ReadUnitsPerSecond` and
-    `WriteUnitsPerSecond`. The `Status` will
-    be `UPDATING` when the warm throughput value is being
-    updated, and `ACTIVE` when the new warm throughput value
-    is set.
+1. You’ll receive a response similar to the one below. Your `WarmThroughput` settings will be displayed as `ReadUnitsPerSecond` and `WriteUnitsPerSecond`. The `Status` will be `UPDATING` when the warm throughput value is being updated, and `ACTIVE` when the new warm throughput value is set.
 
-```
-
-{
+   ```
+   {
        "TableDescription": {
            "AttributeDefinitions": [
                {
@@ -159,16 +139,21 @@ aws dynamodb update-table \
                "Status": "UPDATING"
            }
        }
-}
+   }
+   ```
+
+## AWS SDK
+<a name="warm-throughput-update-SDK"></a>
+
+The following SDK examples shows you how to update your DynamoDB table's warm throughput value.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+Update warm throughput setting on an existing DynamoDB table using AWS SDK for Java 2.x.
+
 ```
-
-The following SDK examples shows you how to update your DynamoDB table's warm
-throughput value.
-
-Java
-
-```java
-
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.GlobalSecondaryIndexUpdate;
@@ -176,116 +161,73 @@ import software.amazon.awssdk.services.dynamodb.model.UpdateGlobalSecondaryIndex
 import software.amazon.awssdk.services.dynamodb.model.UpdateTableRequest;
 import software.amazon.awssdk.services.dynamodb.model.WarmThroughput;
 
-...
-public static WarmThroughput buildWarmThroughput(final Long readUnitsPerSecond,
-                                                 final Long writeUnitsPerSecond) {
-    return WarmThroughput.builder()
+    public static WarmThroughput buildWarmThroughput(final Long readUnitsPerSecond, final Long writeUnitsPerSecond) {
+        return WarmThroughput.builder()
             .readUnitsPerSecond(readUnitsPerSecond)
             .writeUnitsPerSecond(writeUnitsPerSecond)
             .build();
-}
+    }
 
-public static void updateDynamoDBTable(DynamoDbClient ddb,
-                                       String tableName,
-                                       Long tableReadUnitsPerSecond,
-                                       Long tableWriteUnitsPerSecond,
-                                       String globalSecondaryIndexName,
-                                       Long globalSecondaryIndexReadUnitsPerSecond,
-                                       Long globalSecondaryIndexWriteUnitsPerSecond) {
+    /**
+     * Updates a DynamoDB table with warm throughput settings for both the table and a global secondary index.
+     *
+     * @param ddb The DynamoDB client
+     * @param tableName The name of the table to update
+     * @param tableReadUnitsPerSecond Read units per second for the table
+     * @param tableWriteUnitsPerSecond Write units per second for the table
+     * @param globalSecondaryIndexName The name of the global secondary index to update
+     * @param globalSecondaryIndexReadUnitsPerSecond Read units per second for the GSI
+     * @param globalSecondaryIndexWriteUnitsPerSecond Write units per second for the GSI
+     */
+    public static void updateDynamoDBTable(
+        final DynamoDbClient ddb,
+        final String tableName,
+        final Long tableReadUnitsPerSecond,
+        final Long tableWriteUnitsPerSecond,
+        final String globalSecondaryIndexName,
+        final Long globalSecondaryIndexReadUnitsPerSecond,
+        final Long globalSecondaryIndexWriteUnitsPerSecond) {
 
-    final WarmThroughput tableWarmThroughput = buildWarmThroughput(tableReadUnitsPerSecond, tableWriteUnitsPerSecond);
-    final WarmThroughput gsiWarmThroughput = buildWarmThroughput(globalSecondaryIndexReadUnitsPerSecond, globalSecondaryIndexWriteUnitsPerSecond);
+        final WarmThroughput tableWarmThroughput =
+            buildWarmThroughput(tableReadUnitsPerSecond, tableWriteUnitsPerSecond);
+        final WarmThroughput gsiWarmThroughput =
+            buildWarmThroughput(globalSecondaryIndexReadUnitsPerSecond, globalSecondaryIndexWriteUnitsPerSecond);
 
-    final GlobalSecondaryIndexUpdate globalSecondaryIndexUpdate = GlobalSecondaryIndexUpdate.builder()
+        final GlobalSecondaryIndexUpdate globalSecondaryIndexUpdate = GlobalSecondaryIndexUpdate.builder()
             .update(UpdateGlobalSecondaryIndexAction.builder()
-                    .indexName(globalSecondaryIndexName)
-                    .warmThroughput(gsiWarmThroughput)
-                    .build()
-            ).build();
+                .indexName(globalSecondaryIndexName)
+                .warmThroughput(gsiWarmThroughput)
+                .build())
+            .build();
 
-    final UpdateTableRequest request = UpdateTableRequest.builder()
+        final UpdateTableRequest request = UpdateTableRequest.builder()
             .tableName(tableName)
             .globalSecondaryIndexUpdates(globalSecondaryIndexUpdate)
             .warmThroughput(tableWarmThroughput)
             .build();
 
-    try {
-        ddb.updateTable(request);
-    } catch (DynamoDbException e) {
-        System.err.println(e.getMessage());
-        System.exit(1);
+        try {
+            ddb.updateTable(request);
+        } catch (DynamoDbException e) {
+            System.err.println(e.getMessage());
+            throw e;
+        }
+
+        System.out.println(SUCCESS_MESSAGE);
     }
-
-    System.out.println("Done!");
-}
 ```
++  For API details, see [UpdateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTable) in *AWS SDK for Java 2.x API Reference*.
 
-Python
+------
+#### [ JavaScript ]
 
-```python
+**SDK for JavaScript (v3)**
+Update warm throughput setting on an existing DynamoDB table using AWS SDK for JavaScript.
 
-from boto3 import resource
-from botocore.exceptions import ClientError
-
-def update_dynamodb_table_warm_throughput(table_name, table_read_units, table_write_units, gsi_name, gsi_read_units, gsi_write_units, region_name="us-east-1"):
-    """
-    Updates the warm throughput of a DynamoDB table and a global secondary index.
-
-    :param table_name: The name of the table to update.
-    :param table_read_units: The new read units per second for the table's warm throughput.
-    :param table_write_units: The new write units per second for the table's warm throughput.
-    :param gsi_name: The name of the global secondary index to update.
-    :param gsi_read_units: The new read units per second for the GSI's warm throughput.
-    :param gsi_write_units: The new write units per second for the GSI's warm throughput.
-    :param region_name: The AWS Region name to target. defaults to us-east-1
-    """
-    try:
-        ddb = resource('dynamodb', region_name)
-
-        # Update the table's warm throughput
-        table_warm_throughput = {
-            "ReadUnitsPerSecond": table_read_units,
-            "WriteUnitsPerSecond": table_write_units
-        }
-
-        # Update the global secondary index's warm throughput
-        gsi_warm_throughput = {
-            "ReadUnitsPerSecond": gsi_read_units,
-            "WriteUnitsPerSecond": gsi_write_units
-        }
-
-        # Construct the global secondary index update
-        global_secondary_index_update = [
-            {
-                "Update": {
-                    "IndexName": gsi_name,
-                    "WarmThroughput": gsi_warm_throughput
-                }
-            }
-        ]
-
-        # Construct the update table request
-        update_table_request = {
-            "TableName": table_name,
-            "GlobalSecondaryIndexUpdates": global_secondary_index_update,
-            "WarmThroughput": table_warm_throughput
-        }
-
-        # Update the table
-        ddb.update_table(**update_table_request)
-        print("Table updated successfully!")
-    except ClientError as e:
-        print(f"Error updating table: {e}")
-        raise e
 ```
-
-Javascript
-
-```javascript
-
 import { DynamoDBClient, UpdateTableCommand } from "@aws-sdk/client-dynamodb";
 
-async function updateDynamoDBTableWarmThroughput(
+export async function updateDynamoDBTableWarmThroughput(
   tableName,
   tableReadUnits,
   tableWriteUnits,
@@ -319,18 +261,94 @@ async function updateDynamoDBTableWarmThroughput(
 
     const command = new UpdateTableCommand(updateTableRequest);
     const response = await ddbClient.send(command);
-    console.log(`Table updated successfully! Response: ${response}`);
+    console.log(`Table updated successfully! Response: ${JSON.stringify(response)}`);
+    return response;
   } catch (error) {
     console.error(`Error updating table: ${error}`);
     throw error;
   }
 }
+
+// Example usage (commented out for testing)
+/*
+updateDynamoDBTableWarmThroughput(
+  'example-table',
+  5, 5,
+  'example-index',
+  2, 2
+);
+*/
 ```
++  For API details, see [UpdateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateTableCommand) in *AWS SDK for JavaScript API Reference*.
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+------
+#### [ Python ]
 
-Check your table's warm throughput
+**SDK for Python (Boto3)**
+Update warm throughput setting on an existing DynamoDB table using AWS SDK for Python (Boto3).
 
-Create a table with higher warm throughput
+```
+from boto3 import client
+from botocore.exceptions import ClientError
+
+def update_dynamodb_table_warm_throughput(
+    table_name,
+    table_read_units,
+    table_write_units,
+    gsi_name,
+    gsi_read_units,
+    gsi_write_units,
+    region_name="us-east-1",
+):
+    """
+    Updates the warm throughput of a DynamoDB table and a global secondary index.
+
+    :param table_name: The name of the table to update.
+    :param table_read_units: The new read units per second for the table's warm throughput.
+    :param table_write_units: The new write units per second for the table's warm throughput.
+    :param gsi_name: The name of the global secondary index to update.
+    :param gsi_read_units: The new read units per second for the GSI's warm throughput.
+    :param gsi_write_units: The new write units per second for the GSI's warm throughput.
+    :param region_name: The AWS Region name to target. defaults to us-east-1
+    :return: The response from the update_table operation
+    """
+    try:
+        ddb = client("dynamodb", region_name=region_name)
+
+        # Update the table's warm throughput
+        table_warm_throughput = {
+            "ReadUnitsPerSecond": table_read_units,
+            "WriteUnitsPerSecond": table_write_units,
+        }
+
+        # Update the global secondary index's warm throughput
+        gsi_warm_throughput = {
+            "ReadUnitsPerSecond": gsi_read_units,
+            "WriteUnitsPerSecond": gsi_write_units,
+        }
+
+        # Construct the global secondary index update
+        global_secondary_index_update = [
+            {"Update": {"IndexName": gsi_name, "WarmThroughput": gsi_warm_throughput}}
+        ]
+
+        # Construct the update table request
+        update_table_request = {
+            "TableName": table_name,
+            "GlobalSecondaryIndexUpdates": global_secondary_index_update,
+            "WarmThroughput": table_warm_throughput,
+        }
+
+        # Update the table
+        response = ddb.update_table(**update_table_request)
+        print("Table updated successfully!")
+        return response  # Make sure to return the response
+    except ClientError as e:
+        print(f"Error updating table: {e}")
+        raise e
+```
++  For API details, see [UpdateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateTable) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
 
 All content copied from https://docs.aws.amazon.com/.

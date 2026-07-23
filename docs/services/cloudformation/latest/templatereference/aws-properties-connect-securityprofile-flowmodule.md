@@ -2,72 +2,53 @@
 title: "AWS::Connect::SecurityProfile FlowModule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::SecurityProfile FlowModule
+<a name="aws-properties-connect-securityprofile-flowmodule"></a>
 
-A list of Flow Modules an AI Agent can invoke as a tool
+ A list of Flow Modules an AI Agent can invoke as a tool
 
 ## Syntax
+<a name="aws-properties-connect-securityprofile-flowmodule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-securityprofile-flowmodule-syntax.json"></a>
 
-```json
-
+```
 {
-  "FlowModuleId" : String,
-  "Type" : String
+  "[FlowModuleId](#cfn-connect-securityprofile-flowmodule-flowmoduleid)" : {{String}},
+  "[Type](#cfn-connect-securityprofile-flowmodule-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-securityprofile-flowmodule-syntax.yaml"></a>
 
-```yaml
-
-  FlowModuleId: String
-  Type: String
-
+```
+  [FlowModuleId](#cfn-connect-securityprofile-flowmodule-flowmoduleid): {{String}}
+  [Type](#cfn-connect-securityprofile-flowmodule-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-securityprofile-flowmodule-properties"></a>
 
-`FlowModuleId`
+`FlowModuleId`  <a name="cfn-connect-securityprofile-flowmodule-flowmoduleid"></a>
+ If of Flow Modules invocable as tool
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If of Flow Modules invocable as tool
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Only Type we support is MCP.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataTableAccessControlConfiguration
-
-GranularAccessControlConfiguration
+`Type`  <a name="cfn-connect-securityprofile-flowmodule-type"></a>
+ Only Type we support is MCP.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

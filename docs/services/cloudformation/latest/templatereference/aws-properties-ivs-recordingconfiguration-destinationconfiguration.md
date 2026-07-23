@@ -2,55 +2,42 @@
 title: "AWS::IVS::RecordingConfiguration DestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::RecordingConfiguration DestinationConfiguration
+<a name="aws-properties-ivs-recordingconfiguration-destinationconfiguration"></a>
 
-The DestinationConfiguration property type describes the location where recorded
-videos will be stored. Each member represents a type of destination configuration. For
-recording, you define one and only one type of destination configuration.
+The DestinationConfiguration property type describes the location where recorded videos will be stored. Each member represents a type of destination configuration. For recording, you define one and only one type of destination configuration.
 
 ## Syntax
+<a name="aws-properties-ivs-recordingconfiguration-destinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ivs-recordingconfiguration-destinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3" : S3DestinationConfiguration
+  "[S3](#cfn-ivs-recordingconfiguration-destinationconfiguration-s3)" : {{S3DestinationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ivs-recordingconfiguration-destinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  S3:
-    S3DestinationConfiguration
-
+```
+  [S3](#cfn-ivs-recordingconfiguration-destinationconfiguration-s3): {{
+    S3DestinationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ivs-recordingconfiguration-destinationconfiguration-properties"></a>
 
-`S3`
-
-An S3 destination configuration where recorded videos will be stored. See the [S3DestinationConfiguration](../userguide/aws-properties-ivs-recordingconfiguration-s3destinationconfiguration.md) property type for more information.
-
-_Required_: No
-
-_Type_: [S3DestinationConfiguration](aws-properties-ivs-recordingconfiguration-s3destinationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IVS::RecordingConfiguration
-
-RenditionConfiguration
+`S3`  <a name="cfn-ivs-recordingconfiguration-destinationconfiguration-s3"></a>
+An S3 destination configuration where recorded videos will be stored. See the [S3DestinationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-recordingconfiguration-s3destinationconfiguration.html) property type for more information.
+*Required*: No
+*Type*: [S3DestinationConfiguration](aws-properties-ivs-recordingconfiguration-s3destinationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

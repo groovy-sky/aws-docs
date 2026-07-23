@@ -2,144 +2,108 @@
 title: "AWS::Notifications::NotificationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Notifications::NotificationConfiguration
+<a name="aws-resource-notifications-notificationconfiguration"></a>
 
 Configures a `NotificationConfiguration` for AWS User Notifications.
 
 ## Syntax
+<a name="aws-resource-notifications-notificationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-notifications-notificationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Notifications::NotificationConfiguration",
   "Properties" : {
-      "AggregationDuration" : String,
-      "Description" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[AggregationDuration](#cfn-notifications-notificationconfiguration-aggregationduration)" : {{String}},
+      "[Description](#cfn-notifications-notificationconfiguration-description)" : {{String}},
+      "[Name](#cfn-notifications-notificationconfiguration-name)" : {{String}},
+      "[Tags](#cfn-notifications-notificationconfiguration-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-notifications-notificationconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Notifications::NotificationConfiguration
 Properties:
-  AggregationDuration: String
-  Description: String
-  Name: String
-  Tags:
-    - Tag
-
+  [AggregationDuration](#cfn-notifications-notificationconfiguration-aggregationduration): {{String}}
+  [Description](#cfn-notifications-notificationconfiguration-description): {{String}}
+  [Name](#cfn-notifications-notificationconfiguration-name): {{String}}
+  [Tags](#cfn-notifications-notificationconfiguration-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-notifications-notificationconfiguration-properties"></a>
 
-`AggregationDuration`
-
+`AggregationDuration`  <a name="cfn-notifications-notificationconfiguration-aggregationduration"></a>
 The aggregation preference of the `NotificationConfiguration`.
++ Values:
+  +  `LONG`
+    + Aggregate notifications for long periods of time (12 hours).
+  +  `SHORT`
+    + Aggregate notifications for short periods of time (5 minutes).
+  +  `NONE`
+    + Don't aggregate notifications.
+*Required*: No
+*Type*: String
+*Allowed values*: `LONG | SHORT | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- Values:
-
-- `LONG`
-
-- Aggregate notifications for long periods of time (12 hours).
-
-- `SHORT`
-
-- Aggregate notifications for short periods of time (5 minutes).
-
-- `NONE`
-
-- Don't aggregate notifications.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LONG | SHORT | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-notifications-notificationconfiguration-description"></a>
 The description of the `NotificationConfiguration`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^\u0001-\u001F\u007F-\u009F]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Name`  <a name="cfn-notifications-notificationconfiguration-name"></a>
+The name of the `NotificationConfiguration`. Supports RFC 3986's unreserved characters.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9_\-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[^\u0001-\u001F\u007F-\u009F]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the `NotificationConfiguration`. Supports RFC 3986's
-unreserved characters.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9_\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-notifications-notificationconfiguration-tags"></a>
 A map of tags assigned to a `NotificationConfiguration`.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-notifications-notificationconfiguration-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-notifications-notificationconfiguration-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-notifications-notificationconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-notifications-notificationconfiguration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the ARN of the configuration created.
 
 ### Fn::GetAtt
+<a name="aws-resource-notifications-notificationconfiguration-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-notifications-notificationconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the `NotificationConfiguration`
-resource.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the `NotificationConfiguration` resource.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The creation time of the `NotificationConfiguration`.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the `NotificationConfiguration`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Notifications::ManagedNotificationAdditionalChannelAssociation
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

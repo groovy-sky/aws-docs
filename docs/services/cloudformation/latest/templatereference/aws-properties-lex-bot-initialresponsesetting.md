@@ -2,99 +2,69 @@
 title: "AWS::Lex::Bot InitialResponseSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot InitialResponseSetting
+<a name="aws-properties-lex-bot-initialresponsesetting"></a>
 
 Configuration setting for a response sent to the user before Amazon Lex starts eliciting slots.
 
 ## Syntax
+<a name="aws-properties-lex-bot-initialresponsesetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-initialresponsesetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "CodeHook" : DialogCodeHookInvocationSetting,
-  "Conditional" : ConditionalSpecification,
-  "InitialResponse" : ResponseSpecification,
-  "NextStep" : DialogState
+  "[CodeHook](#cfn-lex-bot-initialresponsesetting-codehook)" : {{DialogCodeHookInvocationSetting}},
+  "[Conditional](#cfn-lex-bot-initialresponsesetting-conditional)" : {{ConditionalSpecification}},
+  "[InitialResponse](#cfn-lex-bot-initialresponsesetting-initialresponse)" : {{ResponseSpecification}},
+  "[NextStep](#cfn-lex-bot-initialresponsesetting-nextstep)" : {{DialogState}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-initialresponsesetting-syntax.yaml"></a>
 
-```yaml
-
-  CodeHook:
-    DialogCodeHookInvocationSetting
-  Conditional:
-    ConditionalSpecification
-  InitialResponse:
-    ResponseSpecification
-  NextStep:
-    DialogState
-
+```
+  [CodeHook](#cfn-lex-bot-initialresponsesetting-codehook): {{
+    DialogCodeHookInvocationSetting}}
+  [Conditional](#cfn-lex-bot-initialresponsesetting-conditional): {{
+    ConditionalSpecification}}
+  [InitialResponse](#cfn-lex-bot-initialresponsesetting-initialresponse): {{
+    ResponseSpecification}}
+  [NextStep](#cfn-lex-bot-initialresponsesetting-nextstep): {{
+    DialogState}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-initialresponsesetting-properties"></a>
 
-`CodeHook`
+`CodeHook`  <a name="cfn-lex-bot-initialresponsesetting-codehook"></a>
+Settings that specify the dialog code hook that is called by Amazon Lex at a step of the conversation.
+*Required*: No
+*Type*: [DialogCodeHookInvocationSetting](aws-properties-lex-bot-dialogcodehookinvocationsetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Settings that specify the dialog code hook that is
-called by Amazon Lex at a step of the conversation.
+`Conditional`  <a name="cfn-lex-bot-initialresponsesetting-conditional"></a>
+Provides a list of conditional branches. Branches are evaluated in the order that they are entered in the list. The first branch with a condition that evaluates to true is executed. The last branch in the list is the default branch. The default branch should not have any condition expression. The default branch is executed if no other branch has a matching condition.
+*Required*: No
+*Type*: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InitialResponse`  <a name="cfn-lex-bot-initialresponsesetting-initialresponse"></a>
+Specifies a list of message groups that Amazon Lex uses to respond the user input.
+*Required*: No
+*Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DialogCodeHookInvocationSetting](aws-properties-lex-bot-dialogcodehookinvocationsetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Conditional`
-
-Provides a list of conditional branches. Branches are evaluated in
-the order that they are entered in the list. The first branch with a
-condition that evaluates to true is executed. The last branch in the
-list is the default branch. The default branch should not have any condition
-expression. The default branch is executed if no other branch has a
-matching condition.
-
-_Required_: No
-
-_Type_: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InitialResponse`
-
-Specifies a list of message groups that Amazon Lex uses to respond the
-user input.
-
-_Required_: No
-
-_Type_: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NextStep`
-
+`NextStep`  <a name="cfn-lex-bot-initialresponsesetting-nextstep"></a>
 The next step in the conversation.
-
-_Required_: No
-
-_Type_: [DialogState](aws-properties-lex-bot-dialogstate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageResponseCard
-
-InputContext
+*Required*: No
+*Type*: [DialogState](aws-properties-lex-bot-dialogstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

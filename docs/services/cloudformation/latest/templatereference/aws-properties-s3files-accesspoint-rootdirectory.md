@@ -2,76 +2,53 @@
 title: "AWS::S3Files::AccessPoint RootDirectory"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::AccessPoint RootDirectory
+<a name="aws-properties-s3files-accesspoint-rootdirectory"></a>
 
 Specifies the root directory path and optional creation permissions for newly created directories.
 
 ## Syntax
+<a name="aws-properties-s3files-accesspoint-rootdirectory-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3files-accesspoint-rootdirectory-syntax.json"></a>
 
-```json
-
+```
 {
-  "CreationPermissions" : CreationPermissions,
-  "Path" : String
+  "[CreationPermissions](#cfn-s3files-accesspoint-rootdirectory-creationpermissions)" : {{CreationPermissions}},
+  "[Path](#cfn-s3files-accesspoint-rootdirectory-path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3files-accesspoint-rootdirectory-syntax.yaml"></a>
 
-```yaml
-
-  CreationPermissions:
-    CreationPermissions
-  Path: String
-
+```
+  [CreationPermissions](#cfn-s3files-accesspoint-rootdirectory-creationpermissions): {{
+    CreationPermissions}}
+  [Path](#cfn-s3files-accesspoint-rootdirectory-path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3files-accesspoint-rootdirectory-properties"></a>
 
-`CreationPermissions`
+`CreationPermissions`  <a name="cfn-s3files-accesspoint-rootdirectory-creationpermissions"></a>
+The POSIX IDs and permissions to apply to the access point's root directory. If the root directory path specified does not exist, Amazon S3 Files creates the root directory using these settings when a client connects to the access point. When specifying `CreationPermissions`, you must provide values for all properties.
+*Required*: No
+*Type*: [CreationPermissions](aws-properties-s3files-accesspoint-creationpermissions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The POSIX IDs and permissions to apply to the access point's root directory. If the
-root directory path specified does not exist, Amazon S3 Files creates the root directory
-using these settings when a client connects to the access point. When specifying
-`CreationPermissions`, you must provide values for all properties.
-
-_Required_: No
-
-_Type_: [CreationPermissions](aws-properties-s3files-accesspoint-creationpermissions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Path`
-
-The path on the S3 Files file system to expose as the root directory to clients
-using the access point. A path can have up to four subdirectories. If the specified
-path does not exist, you are required to provide the `CreationPermissions`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^(\/|(\/(?!\.)+[^$#<>;;`|&?{}^*/\n]+){1,4})$``
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PosixUser
-
-AWS::S3Files::FileSystem
+`Path`  <a name="cfn-s3files-accesspoint-rootdirectory-path"></a>
+The path on the S3 Files file system to expose as the root directory to clients using the access point. A path can have up to four subdirectories. If the specified path does not exist, you are required to provide the `CreationPermissions`.
+*Required*: No
+*Type*: String
+*Pattern*: `^(\/|(\/(?!\.)+[^$#<>;;`|&?{}^*/\n]+){1,4})$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

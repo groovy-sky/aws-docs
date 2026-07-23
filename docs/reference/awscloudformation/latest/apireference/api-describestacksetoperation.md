@@ -3,99 +3,75 @@ title: "DescribeStackSetOperation"
 ---
 
 # DescribeStackSetOperation
+<a name="API_DescribeStackSetOperation"></a>
 
 Returns the description of the specified StackSet operation.
 
-###### Note
-
-This API provides _strongly consistent_ reads meaning it will always
-return the most up-to-date data.
+**Note**
+This API provides *strongly consistent* reads meaning it will always return the most up-to-date data.
 
 ## Request Parameters
+<a name="API_DescribeStackSetOperation_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
-**CallAs**
+ ** CallAs **
+[Service-managed permissions] Specifies whether you are acting as an account administrator in the organization's management account or as a delegated administrator in a member account.
+By default, `SELF` is specified. Use `SELF` for StackSets with self-managed permissions.
++ If you are signed in to the management account, specify `SELF`.
++ If you are signed in to a delegated administrator account, specify `DELEGATED_ADMIN`.
 
-\[Service-managed permissions\] Specifies whether you are acting as an account administrator
-in the organization's management account or as a delegated administrator in a
-member account.
-
-By default, `SELF` is specified. Use `SELF` for StackSets with
-self-managed permissions.
-
-- If you are signed in to the management account, specify
-`SELF`.
-
-- If you are signed in to a delegated administrator account, specify
-`DELEGATED_ADMIN`.
-
-Your AWS account must be registered as a delegated administrator in the management account. For more information, see [Register a\
-delegated administrator](../../../../services/cloudformation/latest/userguide/stacksets-orgs-delegated-admin.md) in the _AWS CloudFormation User Guide_.
-
+  Your AWS account must be registered as a delegated administrator in the management account. For more information, see [Register a delegated administrator](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-delegated-admin.html) in the * AWS CloudFormation User Guide*.
 Type: String
-
 Valid Values: `SELF | DELEGATED_ADMIN`
-
 Required: No
 
-**OperationId**
-
+ ** OperationId **
 The unique ID of the StackSet operation.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 128.
-
 Pattern: `[a-zA-Z0-9][-a-zA-Z0-9]*`
-
 Required: Yes
 
-**StackSetName**
-
+ ** StackSetName **
 The name or the unique stack ID of the StackSet for the stack operation.
-
 Type: String
-
 Required: Yes
 
 ## Response Elements
+<a name="API_DescribeStackSetOperation_ResponseElements"></a>
 
 The following element is returned by the service.
 
-**StackSetOperation**
-
+ ** StackSetOperation **
 The specified StackSet operation.
-
-Type: [StackSetOperation](api-stacksetoperation.md) object
+Type: [StackSetOperation](API_StackSetOperation.md) object
 
 ## Errors
+<a name="API_DescribeStackSetOperation_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**OperationNotFound**
-
+ ** OperationNotFound **
 The specified ID refers to an operation that doesn't exist.
-
 HTTP Status Code: 404
 
-**StackSetNotFound**
-
+ ** StackSetNotFound **
 The specified StackSet doesn't exist.
-
 HTTP Status Code: 404
 
 ## Examples
+<a name="API_DescribeStackSetOperation_Examples"></a>
 
 ### Describing an Update StackSet Operation
+<a name="API_DescribeStackSetOperation_Example_1"></a>
 
-The following example returns information about a successful update of a StackSet and
-its associated stack instances.
+The following example returns information about a successful update of a StackSet and its associated stack instances.
 
 #### Sample Request
+<a name="API_DescribeStackSetOperation_Example_1_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
  ?Action=DescribeStackSetOperation
  &Version=2010-05-15
@@ -109,9 +85,9 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
+<a name="API_DescribeStackSetOperation_Example_1_Response"></a>
 
 ```
-
 <DescribeStackSetOperationResponse xmlns="http://internal.amazon.com/coral/com.amazonaws.maestro.service.v20160713/">
   <DescribeStackSetOperationResult>
     <StackSetOperation>
@@ -135,14 +111,14 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ### Describing a Drift Detection StackSet Operation
+<a name="API_DescribeStackSetOperation_Example_2"></a>
 
-The following example returns information about a drift detection operation run on a
-StackSet.
+The following example returns information about a drift detection operation run on a StackSet.
 
 #### Sample Request
+<a name="API_DescribeStackSetOperation_Example_2_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
  ?Action=DescribeStackSetOperation
  &Version=2010-05-15
@@ -156,9 +132,9 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
+<a name="API_DescribeStackSetOperation_Example_2_Response"></a>
 
 ```
-
 <DescribeStackSetOperationResponse xmlns="http://internal.amazon.com/coral/com.amazonaws.maestro.service.v20160713/">
   <DescribeStackSetOperationResult>
     <StackSetOperation>
@@ -190,33 +166,18 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ## See Also
+<a name="API_DescribeStackSetOperation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackSetOperation)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeStackSet
-
-DescribeType
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackSetOperation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackSetOperation)
 
 All content copied from https://docs.aws.amazon.com/.

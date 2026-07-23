@@ -2,131 +2,91 @@
 title: "AWS::SMSVOICE::ConfigurationSet EventDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::ConfigurationSet EventDestination
+<a name="aws-properties-smsvoice-configurationset-eventdestination"></a>
 
 Contains information about an event destination.
 
-Event destinations are associated with configuration sets, which enable you to publish
-message sending events to CloudWatch, Firehose, or Amazon SNS.
+Event destinations are associated with configuration sets, which enable you to publish message sending events to CloudWatch, Firehose, or Amazon SNS.
 
 ## Syntax
+<a name="aws-properties-smsvoice-configurationset-eventdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-smsvoice-configurationset-eventdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogsDestination" : CloudWatchLogsDestination,
-  "Enabled" : Boolean,
-  "EventDestinationName" : String,
-  "KinesisFirehoseDestination" : KinesisFirehoseDestination,
-  "MatchingEventTypes" : [ String, ... ],
-  "SnsDestination" : SnsDestination
+  "[CloudWatchLogsDestination](#cfn-smsvoice-configurationset-eventdestination-cloudwatchlogsdestination)" : {{CloudWatchLogsDestination}},
+  "[Enabled](#cfn-smsvoice-configurationset-eventdestination-enabled)" : {{Boolean}},
+  "[EventDestinationName](#cfn-smsvoice-configurationset-eventdestination-eventdestinationname)" : {{String}},
+  "[KinesisFirehoseDestination](#cfn-smsvoice-configurationset-eventdestination-kinesisfirehosedestination)" : {{KinesisFirehoseDestination}},
+  "[MatchingEventTypes](#cfn-smsvoice-configurationset-eventdestination-matchingeventtypes)" : {{[ String, ... ]}},
+  "[SnsDestination](#cfn-smsvoice-configurationset-eventdestination-snsdestination)" : {{SnsDestination}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-smsvoice-configurationset-eventdestination-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogsDestination:
-    CloudWatchLogsDestination
-  Enabled: Boolean
-  EventDestinationName: String
-  KinesisFirehoseDestination:
-    KinesisFirehoseDestination
-  MatchingEventTypes:
-    - String
-  SnsDestination:
-    SnsDestination
-
+```
+  [CloudWatchLogsDestination](#cfn-smsvoice-configurationset-eventdestination-cloudwatchlogsdestination): {{
+    CloudWatchLogsDestination}}
+  [Enabled](#cfn-smsvoice-configurationset-eventdestination-enabled): {{Boolean}}
+  [EventDestinationName](#cfn-smsvoice-configurationset-eventdestination-eventdestinationname): {{String}}
+  [KinesisFirehoseDestination](#cfn-smsvoice-configurationset-eventdestination-kinesisfirehosedestination): {{
+    KinesisFirehoseDestination}}
+  [MatchingEventTypes](#cfn-smsvoice-configurationset-eventdestination-matchingeventtypes): {{
+    - String}}
+  [SnsDestination](#cfn-smsvoice-configurationset-eventdestination-snsdestination): {{
+    SnsDestination}}
 ```
 
 ## Properties
+<a name="aws-properties-smsvoice-configurationset-eventdestination-properties"></a>
 
-`CloudWatchLogsDestination`
+`CloudWatchLogsDestination`  <a name="cfn-smsvoice-configurationset-eventdestination-cloudwatchlogsdestination"></a>
+An object that contains information about an event destination that sends logging events to Amazon CloudWatch logs.
+*Required*: No
+*Type*: [CloudWatchLogsDestination](aws-properties-smsvoice-configurationset-cloudwatchlogsdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An object that contains information about an event destination that sends logging
-events to Amazon CloudWatch logs.
-
-_Required_: No
-
-_Type_: [CloudWatchLogsDestination](aws-properties-smsvoice-configurationset-cloudwatchlogsdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-smsvoice-configurationset-eventdestination-enabled"></a>
 When set to true events will be logged.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventDestinationName`
-
+`EventDestinationName`  <a name="cfn-smsvoice-configurationset-eventdestination-eventdestinationname"></a>
 The name of the EventDestination.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KinesisFirehoseDestination`
-
+`KinesisFirehoseDestination`  <a name="cfn-smsvoice-configurationset-eventdestination-kinesisfirehosedestination"></a>
 An object that contains information about an event destination for logging to Amazon Data Firehose.
+*Required*: No
+*Type*: [KinesisFirehoseDestination](aws-properties-smsvoice-configurationset-kinesisfirehosedestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KinesisFirehoseDestination](aws-properties-smsvoice-configurationset-kinesisfirehosedestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchingEventTypes`
-
+`MatchingEventTypes`  <a name="cfn-smsvoice-configurationset-eventdestination-matchingeventtypes"></a>
 An array of event types that determine which events to log.
-
-###### Note
-
 The `TEXT_SENT` event type is not supported.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnsDestination`
-
-An object that contains information about an event destination that sends logging
-events to Amazon SNS.
-
-_Required_: No
-
-_Type_: [SnsDestination](aws-properties-smsvoice-configurationset-snsdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogsDestination
-
-KinesisFirehoseDestination
+`SnsDestination`  <a name="cfn-smsvoice-configurationset-eventdestination-snsdestination"></a>
+An object that contains information about an event destination that sends logging events to Amazon SNS.
+*Required*: No
+*Type*: [SnsDestination](aws-properties-smsvoice-configurationset-snsdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,53 @@
 title: "AWS::QuickSight::Dashboard SetParameterValueConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SetParameterValueConfiguration
+<a name="aws-properties-quicksight-dashboard-setparametervalueconfiguration"></a>
 
 The configuration of adding parameters in action.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-setparametervalueconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-setparametervalueconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationParameterName" : String,
-  "Value" : DestinationParameterValueConfiguration
+  "[DestinationParameterName](#cfn-quicksight-dashboard-setparametervalueconfiguration-destinationparametername)" : {{String}},
+  "[Value](#cfn-quicksight-dashboard-setparametervalueconfiguration-value)" : {{DestinationParameterValueConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-setparametervalueconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DestinationParameterName: String
-  Value:
-    DestinationParameterValueConfiguration
-
+```
+  [DestinationParameterName](#cfn-quicksight-dashboard-setparametervalueconfiguration-destinationparametername): {{String}}
+  [Value](#cfn-quicksight-dashboard-setparametervalueconfiguration-value): {{
+    DestinationParameterValueConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-setparametervalueconfiguration-properties"></a>
 
-`DestinationParameterName`
-
+`DestinationParameterName`  <a name="cfn-quicksight-dashboard-setparametervalueconfiguration-destinationparametername"></a>
 The destination parameter name of the `SetParameterValueConfiguration`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-quicksight-dashboard-setparametervalueconfiguration-value"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [DestinationParameterValueConfiguration](aws-properties-quicksight-dashboard-destinationparametervalueconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SeriesItem
-
-ShapeConditionalFormat
+*Required*: Yes
+*Type*: [DestinationParameterValueConfiguration](aws-properties-quicksight-dashboard-destinationparametervalueconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

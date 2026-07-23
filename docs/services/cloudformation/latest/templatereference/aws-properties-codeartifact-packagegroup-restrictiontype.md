@@ -2,67 +2,51 @@
 title: "AWS::CodeArtifact::PackageGroup RestrictionType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeArtifact::PackageGroup RestrictionType
+<a name="aws-properties-codeartifact-packagegroup-restrictiontype"></a>
 
-The `RestrictionType` property type specifies Property description not available. for an [AWS::CodeArtifact::PackageGroup](aws-resource-codeartifact-packagegroup.md).
+<a name="aws-properties-codeartifact-packagegroup-restrictiontype-description"></a>The `RestrictionType` property type specifies Property description not available. for an [AWS::CodeArtifact::PackageGroup](aws-resource-codeartifact-packagegroup.md).
 
 ## Syntax
+<a name="aws-properties-codeartifact-packagegroup-restrictiontype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codeartifact-packagegroup-restrictiontype-syntax.json"></a>
 
-```json
-
+```
 {
-  "Repositories" : [ String, ... ],
-  "RestrictionMode" : String
+  "[Repositories](#cfn-codeartifact-packagegroup-restrictiontype-repositories)" : {{[ String, ... ]}},
+  "[RestrictionMode](#cfn-codeartifact-packagegroup-restrictiontype-restrictionmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codeartifact-packagegroup-restrictiontype-syntax.yaml"></a>
 
-```yaml
-
-  Repositories:
-    - String
-  RestrictionMode: String
-
+```
+  [Repositories](#cfn-codeartifact-packagegroup-restrictiontype-repositories): {{
+    - String}}
+  [RestrictionMode](#cfn-codeartifact-packagegroup-restrictiontype-restrictionmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codeartifact-packagegroup-restrictiontype-properties"></a>
 
-`Repositories`
-
+`Repositories`  <a name="cfn-codeartifact-packagegroup-restrictiontype-repositories"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RestrictionMode`
-
+`RestrictionMode`  <a name="cfn-codeartifact-packagegroup-restrictiontype-restrictionmode"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALLOW | BLOCK | ALLOW_SPECIFIC_REPOSITORIES | INHERIT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Restrictions
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALLOW | BLOCK | ALLOW_SPECIFIC_REPOSITORIES | INHERIT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

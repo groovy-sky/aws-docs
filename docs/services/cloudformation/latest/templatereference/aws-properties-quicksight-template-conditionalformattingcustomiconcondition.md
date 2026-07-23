@@ -2,96 +2,70 @@
 title: "AWS::QuickSight::Template ConditionalFormattingCustomIconCondition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ConditionalFormattingCustomIconCondition
+<a name="aws-properties-quicksight-template-conditionalformattingcustomiconcondition"></a>
 
 Determines the custom condition for an icon set.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-conditionalformattingcustomiconcondition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-conditionalformattingcustomiconcondition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "DisplayConfiguration" : ConditionalFormattingIconDisplayConfiguration,
-  "Expression" : String,
-  "IconOptions" : ConditionalFormattingCustomIconOptions
+  "[Color](#cfn-quicksight-template-conditionalformattingcustomiconcondition-color)" : {{String}},
+  "[DisplayConfiguration](#cfn-quicksight-template-conditionalformattingcustomiconcondition-displayconfiguration)" : {{ConditionalFormattingIconDisplayConfiguration}},
+  "[Expression](#cfn-quicksight-template-conditionalformattingcustomiconcondition-expression)" : {{String}},
+  "[IconOptions](#cfn-quicksight-template-conditionalformattingcustomiconcondition-iconoptions)" : {{ConditionalFormattingCustomIconOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-conditionalformattingcustomiconcondition-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  DisplayConfiguration:
-    ConditionalFormattingIconDisplayConfiguration
-  Expression: String
-  IconOptions:
-    ConditionalFormattingCustomIconOptions
-
+```
+  [Color](#cfn-quicksight-template-conditionalformattingcustomiconcondition-color): {{String}}
+  [DisplayConfiguration](#cfn-quicksight-template-conditionalformattingcustomiconcondition-displayconfiguration): {{
+    ConditionalFormattingIconDisplayConfiguration}}
+  [Expression](#cfn-quicksight-template-conditionalformattingcustomiconcondition-expression): {{String}}
+  [IconOptions](#cfn-quicksight-template-conditionalformattingcustomiconcondition-iconoptions): {{
+    ConditionalFormattingCustomIconOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-conditionalformattingcustomiconcondition-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-template-conditionalformattingcustomiconcondition-color"></a>
 Determines the color of the icon.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayConfiguration`
-
+`DisplayConfiguration`  <a name="cfn-quicksight-template-conditionalformattingcustomiconcondition-displayconfiguration"></a>
 Determines the icon display configuration.
+*Required*: No
+*Type*: [ConditionalFormattingIconDisplayConfiguration](aws-properties-quicksight-template-conditionalformattingicondisplayconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConditionalFormattingIconDisplayConfiguration](aws-properties-quicksight-template-conditionalformattingicondisplayconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Expression`
-
+`Expression`  <a name="cfn-quicksight-template-conditionalformattingcustomiconcondition-expression"></a>
 The expression that determines the condition of the icon set.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IconOptions`
-
+`IconOptions`  <a name="cfn-quicksight-template-conditionalformattingcustomiconcondition-iconoptions"></a>
 Custom icon options for an icon set.
-
-_Required_: Yes
-
-_Type_: [ConditionalFormattingCustomIconOptions](aws-properties-quicksight-template-conditionalformattingcustomiconoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionalFormattingColor
-
-ConditionalFormattingCustomIconOptions
+*Required*: Yes
+*Type*: [ConditionalFormattingCustomIconOptions](aws-properties-quicksight-template-conditionalformattingcustomiconoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

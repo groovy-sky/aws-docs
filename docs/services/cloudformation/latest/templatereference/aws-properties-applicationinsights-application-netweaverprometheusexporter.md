@@ -2,81 +2,60 @@
 title: "AWS::ApplicationInsights::Application NetWeaverPrometheusExporter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application NetWeaverPrometheusExporter
+<a name="aws-properties-applicationinsights-application-netweaverprometheusexporter"></a>
 
-The `NetWeaverPrometheusExporter` property type specifies Property description not available. for an [AWS::ApplicationInsights::Application](aws-resource-applicationinsights-application.md).
+<a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-description"></a>The `NetWeaverPrometheusExporter` property type specifies Property description not available. for an [AWS::ApplicationInsights::Application](aws-resource-applicationinsights-application.md).
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-syntax.json"></a>
 
-```json
-
+```
 {
-  "InstanceNumbers" : [ String, ... ],
-  "PrometheusPort" : String,
-  "SAPSID" : String
+  "[InstanceNumbers](#cfn-applicationinsights-application-netweaverprometheusexporter-instancenumbers)" : {{[ String, ... ]}},
+  "[PrometheusPort](#cfn-applicationinsights-application-netweaverprometheusexporter-prometheusport)" : {{String}},
+  "[SAPSID](#cfn-applicationinsights-application-netweaverprometheusexporter-sapsid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-syntax.yaml"></a>
 
-```yaml
-
-  InstanceNumbers:
-    - String
-  PrometheusPort: String
-  SAPSID: String
-
+```
+  [InstanceNumbers](#cfn-applicationinsights-application-netweaverprometheusexporter-instancenumbers): {{
+    - String}}
+  [PrometheusPort](#cfn-applicationinsights-application-netweaverprometheusexporter-prometheusport): {{String}}
+  [SAPSID](#cfn-applicationinsights-application-netweaverprometheusexporter-sapsid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-properties"></a>
 
-`InstanceNumbers`
-
+`InstanceNumbers`  <a name="cfn-applicationinsights-application-netweaverprometheusexporter-instancenumbers"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrometheusPort`
-
+`PrometheusPort`  <a name="cfn-applicationinsights-application-netweaverprometheusexporter-prometheusport"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SAPSID`
-
+`SAPSID`  <a name="cfn-applicationinsights-application-netweaverprometheusexporter-sapsid"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogPatternSet
-
-Process
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

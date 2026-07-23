@@ -2,114 +2,78 @@
 title: "AWS::DataBrew::Dataset DatasetParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset DatasetParameter
+<a name="aws-properties-databrew-dataset-datasetparameter"></a>
 
-Represents a dataset paramater that defines type and conditions for a parameter in the
-Amazon S3 path of the dataset.
+Represents a dataset paramater that defines type and conditions for a parameter in the Amazon S3 path of the dataset.
 
 ## Syntax
+<a name="aws-properties-databrew-dataset-datasetparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-dataset-datasetparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "CreateColumn" : Boolean,
-  "DatetimeOptions" : DatetimeOptions,
-  "Filter" : FilterExpression,
-  "Name" : String,
-  "Type" : String
+  "[CreateColumn](#cfn-databrew-dataset-datasetparameter-createcolumn)" : {{Boolean}},
+  "[DatetimeOptions](#cfn-databrew-dataset-datasetparameter-datetimeoptions)" : {{DatetimeOptions}},
+  "[Filter](#cfn-databrew-dataset-datasetparameter-filter)" : {{FilterExpression}},
+  "[Name](#cfn-databrew-dataset-datasetparameter-name)" : {{String}},
+  "[Type](#cfn-databrew-dataset-datasetparameter-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-dataset-datasetparameter-syntax.yaml"></a>
 
-```yaml
-
-  CreateColumn: Boolean
-  DatetimeOptions:
-    DatetimeOptions
-  Filter:
-    FilterExpression
-  Name: String
-  Type: String
-
+```
+  [CreateColumn](#cfn-databrew-dataset-datasetparameter-createcolumn): {{Boolean}}
+  [DatetimeOptions](#cfn-databrew-dataset-datasetparameter-datetimeoptions): {{
+    DatetimeOptions}}
+  [Filter](#cfn-databrew-dataset-datasetparameter-filter): {{
+    FilterExpression}}
+  [Name](#cfn-databrew-dataset-datasetparameter-name): {{String}}
+  [Type](#cfn-databrew-dataset-datasetparameter-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-dataset-datasetparameter-properties"></a>
 
-`CreateColumn`
+`CreateColumn`  <a name="cfn-databrew-dataset-datasetparameter-createcolumn"></a>
+Optional boolean value that defines whether the captured value of this parameter should be loaded as an additional column in the dataset.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Optional boolean value that defines whether the captured value of this parameter
-should be loaded as an additional column in the dataset.
+`DatetimeOptions`  <a name="cfn-databrew-dataset-datasetparameter-datetimeoptions"></a>
+Additional parameter options such as a format and a timezone. Required for datetime parameters.
+*Required*: No
+*Type*: [DatetimeOptions](aws-properties-databrew-dataset-datetimeoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Filter`  <a name="cfn-databrew-dataset-datasetparameter-filter"></a>
+The optional filter expression structure to apply additional matching criteria to the parameter.
+*Required*: No
+*Type*: [FilterExpression](aws-properties-databrew-dataset-filterexpression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`Name`  <a name="cfn-databrew-dataset-datasetparameter-name"></a>
+The name of the parameter that is used in the dataset's Amazon S3 path.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatetimeOptions`
-
-Additional parameter options such as a format and a timezone. Required for datetime
-parameters.
-
-_Required_: No
-
-_Type_: [DatetimeOptions](aws-properties-databrew-dataset-datetimeoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Filter`
-
-The optional filter expression structure to apply additional matching criteria to the
-parameter.
-
-_Required_: No
-
-_Type_: [FilterExpression](aws-properties-databrew-dataset-filterexpression.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the parameter that is used in the dataset's Amazon S3
-path.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of the dataset parameter, can be one of a 'String', 'Number' or
-'Datetime'.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `String | Number | Datetime`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataCatalogInputDefinition
-
-DatetimeOptions
+`Type`  <a name="cfn-databrew-dataset-datasetparameter-type"></a>
+The type of the dataset parameter, can be one of a 'String', 'Number' or 'Datetime'.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `String | Number | Datetime`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

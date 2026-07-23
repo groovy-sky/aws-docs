@@ -2,220 +2,158 @@
 title: "AWS::SES::ConfigurationSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSet
+<a name="aws-resource-ses-configurationset"></a>
 
-Configuration sets let you create groups of rules that you can apply to the emails you
-send using Amazon SES. For more information about using configuration sets, see [Using Amazon\
-SES Configuration Sets](../../../ses/latest/dg/using-configuration-sets.md) in the [Amazon SES Developer Guide](../../../ses/latest/dg.md).
+Configuration sets let you create groups of rules that you can apply to the emails you send using Amazon SES. For more information about using configuration sets, see [Using Amazon SES Configuration Sets](https://docs.aws.amazon.com/ses/latest/dg/using-configuration-sets.html) in the [Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/dg/).
 
-###### Note
-
-**Required permissions:**
-
-To apply any of the resource options, you will need to have the corresponding
-AWS Identity and Access Management (IAM) SES API v2
-permissions:
-
-- `ses:GetConfigurationSet`
-
-- (This permission is replacing the v1
-_ses:DescribeConfigurationSet_ permission
-which will not work with these v2 resource options.)
-
-- `ses:PutConfigurationSetDeliveryOptions`
-
-- `ses:PutConfigurationSetReputationOptions`
-
-- `ses:PutConfigurationSetSendingOptions`
-
-- `ses:PutConfigurationSetSuppressionOptions`
-
-- `ses:PutConfigurationSetTrackingOptions`
+**Note**
+ **Required permissions:**
+To apply any of the resource options, you will need to have the corresponding AWS Identity and Access Management (IAM) SES API v2 permissions:
+ `ses:GetConfigurationSet`
+(This permission is replacing the v1 *ses:DescribeConfigurationSet* permission which will not work with these v2 resource options.)
+ `ses:PutConfigurationSetDeliveryOptions`
+ `ses:PutConfigurationSetReputationOptions`
+ `ses:PutConfigurationSetSendingOptions`
+ `ses:PutConfigurationSetSuppressionOptions`
+ `ses:PutConfigurationSetTrackingOptions`
 
 ## Syntax
+<a name="aws-resource-ses-configurationset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-configurationset-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::ConfigurationSet",
   "Properties" : {
-      "ArchivingOptions" : ArchivingOptions,
-      "DeliveryOptions" : DeliveryOptions,
-      "Name" : String,
-      "ReputationOptions" : ReputationOptions,
-      "SendingOptions" : SendingOptions,
-      "SuppressionOptions" : SuppressionOptions,
-      "Tags" : [ Tag, ... ],
-      "TrackingOptions" : TrackingOptions,
-      "VdmOptions" : VdmOptions
+      "[ArchivingOptions](#cfn-ses-configurationset-archivingoptions)" : {{ArchivingOptions}},
+      "[DeliveryOptions](#cfn-ses-configurationset-deliveryoptions)" : {{DeliveryOptions}},
+      "[Name](#cfn-ses-configurationset-name)" : {{String}},
+      "[ReputationOptions](#cfn-ses-configurationset-reputationoptions)" : {{ReputationOptions}},
+      "[SendingOptions](#cfn-ses-configurationset-sendingoptions)" : {{SendingOptions}},
+      "[SuppressionOptions](#cfn-ses-configurationset-suppressionoptions)" : {{SuppressionOptions}},
+      "[Tags](#cfn-ses-configurationset-tags)" : {{[ Tag, ... ]}},
+      "[TrackingOptions](#cfn-ses-configurationset-trackingoptions)" : {{TrackingOptions}},
+      "[VdmOptions](#cfn-ses-configurationset-vdmoptions)" : {{VdmOptions}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-configurationset-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::ConfigurationSet
 Properties:
-  ArchivingOptions:
-    ArchivingOptions
-  DeliveryOptions:
-    DeliveryOptions
-  Name: String
-  ReputationOptions:
-    ReputationOptions
-  SendingOptions:
-    SendingOptions
-  SuppressionOptions:
-    SuppressionOptions
-  Tags:
-    - Tag
-  TrackingOptions:
-    TrackingOptions
-  VdmOptions:
-    VdmOptions
-
+  [ArchivingOptions](#cfn-ses-configurationset-archivingoptions): {{
+    ArchivingOptions}}
+  [DeliveryOptions](#cfn-ses-configurationset-deliveryoptions): {{
+    DeliveryOptions}}
+  [Name](#cfn-ses-configurationset-name): {{String}}
+  [ReputationOptions](#cfn-ses-configurationset-reputationoptions): {{
+    ReputationOptions}}
+  [SendingOptions](#cfn-ses-configurationset-sendingoptions): {{
+    SendingOptions}}
+  [SuppressionOptions](#cfn-ses-configurationset-suppressionoptions): {{
+    SuppressionOptions}}
+  [Tags](#cfn-ses-configurationset-tags): {{
+    - Tag}}
+  [TrackingOptions](#cfn-ses-configurationset-trackingoptions): {{
+    TrackingOptions}}
+  [VdmOptions](#cfn-ses-configurationset-vdmoptions): {{
+    VdmOptions}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-configurationset-properties"></a>
 
-`ArchivingOptions`
+`ArchivingOptions`  <a name="cfn-ses-configurationset-archivingoptions"></a>
+An object that defines the MailManager archiving options for emails that you send using the configuration set.
+*Required*: No
+*Type*: [ArchivingOptions](aws-properties-ses-configurationset-archivingoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An object that defines the MailManager archive where sent emails are archived that you send
-using the configuration set.
+`DeliveryOptions`  <a name="cfn-ses-configurationset-deliveryoptions"></a>
+Specifies the name of the dedicated IP pool to associate with the configuration set and whether messages that use the configuration set are required to use Transport Layer Security (TLS).
+*Required*: No
+*Type*: [DeliveryOptions](aws-properties-ses-configurationset-deliveryoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-ses-configurationset-name"></a>
+The name of the configuration set. The name must meet the following requirements:
++ Contain only letters (a-z, A-Z), numbers (0-9), underscores (\_), or dashes (-).
++ Contain 64 characters or fewer.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,64}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [ArchivingOptions](aws-properties-ses-configurationset-archivingoptions.md)
+`ReputationOptions`  <a name="cfn-ses-configurationset-reputationoptions"></a>
+An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set.
+*Required*: No
+*Type*: [ReputationOptions](aws-properties-ses-configurationset-reputationoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SendingOptions`  <a name="cfn-ses-configurationset-sendingoptions"></a>
+An object that defines whether or not Amazon SES can send email that you send using the configuration set.
+*Required*: No
+*Type*: [SendingOptions](aws-properties-ses-configurationset-sendingoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DeliveryOptions`
+`SuppressionOptions`  <a name="cfn-ses-configurationset-suppressionoptions"></a>
+An object that contains information about the suppression list preferences for your account or for a specific tenant.
+*Required*: No
+*Type*: [SuppressionOptions](aws-properties-ses-configurationset-suppressionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the name of the dedicated IP pool to associate with the configuration set
-and whether messages that use the configuration set are required to use Transport Layer
-Security (TLS).
+`Tags`  <a name="cfn-ses-configurationset-tags"></a>
+An array of objects that define the tags (keys and values) that are associated with the configuration set.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-configurationset-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TrackingOptions`  <a name="cfn-ses-configurationset-trackingoptions"></a>
+An object that defines the open and click tracking options for emails that you send using the configuration set.
+*Required*: No
+*Type*: [TrackingOptions](aws-properties-ses-configurationset-trackingoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DeliveryOptions](aws-properties-ses-configurationset-deliveryoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the configuration set. The name must meet the following
-requirements:
-
-- Contain only letters (a-z, A-Z), numbers (0-9), underscores (\_), or dashes
-(-).
-
-- Contain 64 characters or fewer.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,64}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ReputationOptions`
-
-An object that defines whether or not Amazon SES collects reputation metrics for the emails
-that you send that use the configuration set.
-
-_Required_: No
-
-_Type_: [ReputationOptions](aws-properties-ses-configurationset-reputationoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SendingOptions`
-
-An object that defines whether or not Amazon SES can send email that you send using the
-configuration set.
-
-_Required_: No
-
-_Type_: [SendingOptions](aws-properties-ses-configurationset-sendingoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SuppressionOptions`
-
-An object that contains information about the suppression list preferences for your
-account.
-
-_Required_: No
-
-_Type_: [SuppressionOptions](aws-properties-ses-configurationset-suppressionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-An array of objects that define the tags (keys and values) that are associated with
-the configuration set.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-configurationset-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrackingOptions`
-
-An object that defines the open and click tracking options for emails that you send
-using the configuration set.
-
-_Required_: No
-
-_Type_: [TrackingOptions](aws-properties-ses-configurationset-trackingoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VdmOptions`
-
-The Virtual Deliverability Manager (VDM) options that apply to the configuration
-set.
-
-_Required_: No
-
-_Type_: [VdmOptions](aws-properties-ses-configurationset-vdmoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VdmOptions`  <a name="cfn-ses-configurationset-vdmoptions"></a>
+The Virtual Deliverability Manager (VDM) options that apply to the configuration set.
+*Required*: No
+*Type*: [VdmOptions](aws-properties-ses-configurationset-vdmoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-configurationset-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-configurationset-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ses-configurationset--examples"></a>
+
+###
+<a name="aws-resource-ses-configurationset--examples--"></a>
 
 Specifies a configuration set.
 
 #### JSON
+<a name="aws-resource-ses-configurationset--examples----json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES ConfigurationSet Sample Template",
@@ -238,9 +176,9 @@ Specifies a configuration set.
 ```
 
 #### YAML
+<a name="aws-resource-ses-configurationset--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES ConfigurationSet Sample Template
 Parameters:
@@ -252,11 +190,5 @@ Resources:
     Properties:
       Name: !Ref ConfigSetName
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Simple Email Service
-
-ArchivingOptions
 
 All content copied from https://docs.aws.amazon.com/.

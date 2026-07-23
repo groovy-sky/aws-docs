@@ -2,128 +2,89 @@
 title: "AWS::QuickSight::Analysis LegendOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LegendOptions
+<a name="aws-properties-quicksight-analysis-legendoptions"></a>
 
 The options for the legend setup of a visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-legendoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-legendoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Height" : String,
-  "Position" : String,
-  "Title" : LabelOptions,
-  "ValueFontConfiguration" : FontConfiguration,
-  "Visibility" : String,
-  "Width" : String
+  "[Height](#cfn-quicksight-analysis-legendoptions-height)" : {{String}},
+  "[Position](#cfn-quicksight-analysis-legendoptions-position)" : {{String}},
+  "[Title](#cfn-quicksight-analysis-legendoptions-title)" : {{LabelOptions}},
+  "[ValueFontConfiguration](#cfn-quicksight-analysis-legendoptions-valuefontconfiguration)" : {{FontConfiguration}},
+  "[Visibility](#cfn-quicksight-analysis-legendoptions-visibility)" : {{String}},
+  "[Width](#cfn-quicksight-analysis-legendoptions-width)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-legendoptions-syntax.yaml"></a>
 
-```yaml
-
-  Height: String
-  Position: String
-  Title:
-    LabelOptions
-  ValueFontConfiguration:
-    FontConfiguration
-  Visibility: String
-  Width: String
-
+```
+  [Height](#cfn-quicksight-analysis-legendoptions-height): {{String}}
+  [Position](#cfn-quicksight-analysis-legendoptions-position): {{String}}
+  [Title](#cfn-quicksight-analysis-legendoptions-title): {{
+    LabelOptions}}
+  [ValueFontConfiguration](#cfn-quicksight-analysis-legendoptions-valuefontconfiguration): {{
+    FontConfiguration}}
+  [Visibility](#cfn-quicksight-analysis-legendoptions-visibility): {{String}}
+  [Width](#cfn-quicksight-analysis-legendoptions-width): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-legendoptions-properties"></a>
 
-`Height`
+`Height`  <a name="cfn-quicksight-analysis-legendoptions-height"></a>
+The height of the legend. If this value is omitted, a default height is used when rendering.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The height of the legend. If this value is omitted, a default height is used when
-rendering.
+`Position`  <a name="cfn-quicksight-analysis-legendoptions-position"></a>
+The positions for the legend. Choose one of the following options:
++  `AUTO`
++  `RIGHT`
++  `BOTTOM`
++  `LEFT`
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO | RIGHT | BOTTOM | TOP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
-The positions for the legend. Choose one of the following
-options:
-
-- `AUTO`
-
-- `RIGHT`
-
-- `BOTTOM`
-
-- `LEFT`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTO | RIGHT | BOTTOM | TOP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-analysis-legendoptions-title"></a>
 The custom title for the legend.
+*Required*: No
+*Type*: [LabelOptions](aws-properties-quicksight-analysis-labeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LabelOptions](aws-properties-quicksight-analysis-labeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueFontConfiguration`
-
+`ValueFontConfiguration`  <a name="cfn-quicksight-analysis-legendoptions-valuefontconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [FontConfiguration](aws-properties-quicksight-analysis-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FontConfiguration](aws-properties-quicksight-analysis-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-analysis-legendoptions-visibility"></a>
 Determines whether or not the legend is visible.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Width`
-
+`Width`  <a name="cfn-quicksight-analysis-legendoptions-width"></a>
 The width of the legend. If this value is omitted, a default width is used when rendering.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LayoutConfiguration
-
-LineChartAggregatedFieldWells
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

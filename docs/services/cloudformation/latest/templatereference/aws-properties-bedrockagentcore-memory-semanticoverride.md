@@ -2,66 +2,51 @@
 title: "AWS::BedrockAgentCore::Memory SemanticOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory SemanticOverride
+<a name="aws-properties-bedrockagentcore-memory-semanticoverride"></a>
 
 The memory override.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-semanticoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-semanticoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "Consolidation" : SemanticOverrideConsolidationConfigurationInput,
-  "Extraction" : SemanticOverrideExtractionConfigurationInput
+  "[Consolidation](#cfn-bedrockagentcore-memory-semanticoverride-consolidation)" : {{SemanticOverrideConsolidationConfigurationInput}},
+  "[Extraction](#cfn-bedrockagentcore-memory-semanticoverride-extraction)" : {{SemanticOverrideExtractionConfigurationInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-semanticoverride-syntax.yaml"></a>
 
-```yaml
-
-  Consolidation:
-    SemanticOverrideConsolidationConfigurationInput
-  Extraction:
-    SemanticOverrideExtractionConfigurationInput
-
+```
+  [Consolidation](#cfn-bedrockagentcore-memory-semanticoverride-consolidation): {{
+    SemanticOverrideConsolidationConfigurationInput}}
+  [Extraction](#cfn-bedrockagentcore-memory-semanticoverride-extraction): {{
+    SemanticOverrideExtractionConfigurationInput}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-semanticoverride-properties"></a>
 
-`Consolidation`
-
+`Consolidation`  <a name="cfn-bedrockagentcore-memory-semanticoverride-consolidation"></a>
 The memory override consolidation.
+*Required*: No
+*Type*: [SemanticOverrideConsolidationConfigurationInput](aws-properties-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SemanticOverrideConsolidationConfigurationInput](aws-properties-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Extraction`
-
+`Extraction`  <a name="cfn-bedrockagentcore-memory-semanticoverride-extraction"></a>
 The memory override extraction.
-
-_Required_: No
-
-_Type_: [SemanticOverrideExtractionConfigurationInput](aws-properties-bedrockagentcore-memory-semanticoverrideextractionconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SemanticMemoryStrategy
-
-SemanticOverrideConsolidationConfigurationInput
+*Required*: No
+*Type*: [SemanticOverrideExtractionConfigurationInput](aws-properties-bedrockagentcore-memory-semanticoverrideextractionconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

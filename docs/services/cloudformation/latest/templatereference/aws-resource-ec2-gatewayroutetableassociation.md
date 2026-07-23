@@ -2,87 +2,75 @@
 title: "AWS::EC2::GatewayRouteTableAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::GatewayRouteTableAssociation
+<a name="aws-resource-ec2-gatewayroutetableassociation"></a>
 
-Associates a virtual private gateway or internet gateway with a route table. The gateway
-and route table must be in the same VPC. This association causes the incoming traffic to
-the gateway to be routed according to the routes in the route table.
+Associates a virtual private gateway or internet gateway with a route table. The gateway and route table must be in the same VPC. This association causes the incoming traffic to the gateway to be routed according to the routes in the route table.
 
 ## Syntax
+<a name="aws-resource-ec2-gatewayroutetableassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-gatewayroutetableassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::GatewayRouteTableAssociation",
   "Properties" : {
-      "GatewayId" : String,
-      "RouteTableId" : String
+      "[GatewayId](#cfn-ec2-gatewayroutetableassociation-gatewayid)" : {{String}},
+      "[RouteTableId](#cfn-ec2-gatewayroutetableassociation-routetableid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-gatewayroutetableassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::GatewayRouteTableAssociation
 Properties:
-  GatewayId: String
-  RouteTableId: String
-
+  [GatewayId](#cfn-ec2-gatewayroutetableassociation-gatewayid): {{String}}
+  [RouteTableId](#cfn-ec2-gatewayroutetableassociation-routetableid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-gatewayroutetableassociation-properties"></a>
 
-`GatewayId`
-
+`GatewayId`  <a name="cfn-ec2-gatewayroutetableassociation-gatewayid"></a>
 The ID of the gateway.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RouteTableId`
-
+`RouteTableId`  <a name="cfn-ec2-gatewayroutetableassociation-routetableid"></a>
 The ID of the route table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-gatewayroutetableassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-gatewayroutetableassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the association.
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-gatewayroutetableassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AssociationId`
+####
+<a name="aws-resource-ec2-gatewayroutetableassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`AssociationId`  <a name="AssociationId-fn::getatt"></a>
 The ID of the route table association.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::Host
 
 All content copied from https://docs.aws.amazon.com/.

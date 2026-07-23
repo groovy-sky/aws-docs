@@ -2,104 +2,84 @@
 title: "AWS::SSMIncidents::ReplicationSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ReplicationSet
+<a name="aws-resource-ssmincidents-replicationset"></a>
 
-The `AWS::SSMIncidents::ReplicationSet` resource specifies a set of AWS Regions
-that Incident Manager data is replicated to and the AWS Key Management Service (AWS KMS
-key used to encrypt the data.
+The `AWS::SSMIncidents::ReplicationSet` resource specifies a set of AWS Regions that Incident Manager data is replicated to and the AWS Key Management Service (AWS KMS key used to encrypt the data.
 
 ## Syntax
+<a name="aws-resource-ssmincidents-replicationset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssmincidents-replicationset-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSMIncidents::ReplicationSet",
   "Properties" : {
-      "DeletionProtected" : Boolean,
-      "Regions" : [ ReplicationRegion, ... ],
-      "Tags" : [ Tag, ... ]
+      "[DeletionProtected](#cfn-ssmincidents-replicationset-deletionprotected)" : {{Boolean}},
+      "[Regions](#cfn-ssmincidents-replicationset-regions)" : {{[ ReplicationRegion, ... ]}},
+      "[Tags](#cfn-ssmincidents-replicationset-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssmincidents-replicationset-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSMIncidents::ReplicationSet
 Properties:
-  DeletionProtected: Boolean
-  Regions:
-    - ReplicationRegion
-  Tags:
-    - Tag
-
+  [DeletionProtected](#cfn-ssmincidents-replicationset-deletionprotected): {{Boolean}}
+  [Regions](#cfn-ssmincidents-replicationset-regions): {{
+    - ReplicationRegion}}
+  [Tags](#cfn-ssmincidents-replicationset-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ssmincidents-replicationset-properties"></a>
 
-`DeletionProtected`
+`DeletionProtected`  <a name="cfn-ssmincidents-replicationset-deletionprotected"></a>
+Determines if the replication set deletion protection is enabled or not. If deletion protection is enabled, you can't delete the last Region in the replication set.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines if the replication set deletion protection is enabled or not. If deletion
-protection is enabled, you can't delete the last Region in the replication set.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Regions`
-
+`Regions`  <a name="cfn-ssmincidents-replicationset-regions"></a>
 Specifies the Regions of the replication set.
+*Required*: Yes
+*Type*: Array of [ReplicationRegion](aws-properties-ssmincidents-replicationset-replicationregion.md)
+*Minimum*: `1`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ReplicationRegion](aws-properties-ssmincidents-replicationset-replicationregion.md)
-
-_Minimum_: `1`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ssmincidents-replicationset-tags"></a>
 A list of tags to add to the replication set.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ssmincidents-replicationset-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ssmincidents-replicationset-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-resource-ssmincidents-replicationset--examples"></a>
 
 ### Create a replication set
+<a name="aws-resource-ssmincidents-replicationset--examples--Create_a_replication_set"></a>
 
 The following example creates a replication set.
 
-###### Note
-
-We recommend creating a replication set and response plan using a single
-template. For a demonstration, see the examples for
-[AWS::SSMIncidents::ResponsePlan](../userguide/aws-resource-ssmincidents-responseplan.md#aws-resource-ssmincidents-responseplan--examples).
+**Note**
+We recommend creating a replication set and response plan using a single template. For a demonstration, see the examples for [AWS::SSMIncidents::ResponsePlan](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmincidents-responseplan.html#aws-resource-ssmincidents-responseplan--examples).
 
 #### JSON
+<a name="aws-resource-ssmincidents-replicationset--examples--Create_a_replication_set--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Sample AWS CloudFormation template to create a replication set (JSON).",
@@ -128,9 +108,9 @@ template. For a demonstration, see the examples for
 ```
 
 #### YAML
+<a name="aws-resource-ssmincidents-replicationset--examples--Create_a_replication_set--yaml"></a>
 
-```yaml
-
+```
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Sample AWS CloudFormation template to create a replication set (YAML)."
@@ -146,11 +126,5 @@ Resources:
         - Key: MyReplicationSetTagKey
           Value: MyReplicationSetTagValue
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Systems Manager Incident Manager
-
-RegionConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

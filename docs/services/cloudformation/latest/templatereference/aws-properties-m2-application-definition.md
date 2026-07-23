@@ -2,72 +2,52 @@
 title: "AWS::M2::Application Definition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::M2::Application Definition
+<a name="aws-properties-m2-application-definition"></a>
 
-The application definition for a particular application. You can specify either inline
-JSON or an Amazon S3 bucket location.
+The application definition for a particular application. You can specify either inline JSON or an Amazon S3 bucket location.
 
 ## Syntax
+<a name="aws-properties-m2-application-definition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-m2-application-definition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "S3Location" : String
+  "[Content](#cfn-m2-application-definition-content)" : {{String}},
+  "[S3Location](#cfn-m2-application-definition-s3location)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-m2-application-definition-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  S3Location: String
-
+```
+  [Content](#cfn-m2-application-definition-content): {{String}}
+  [S3Location](#cfn-m2-application-definition-s3location): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-m2-application-definition-properties"></a>
 
-`Content`
+`Content`  <a name="cfn-m2-application-definition-content"></a>
+The content of the application definition. This is a JSON object that contains the resource configuration/definitions that identify an application.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `65000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The content of the application definition. This is a JSON object that contains the
-resource configuration/definitions that identify an application.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `65000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Location`
-
+`S3Location`  <a name="cfn-m2-application-definition-s3location"></a>
 The S3 bucket that contains the application definition.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\S{1,2000}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::M2::Application
-
-AWS::M2::Deployment
+*Required*: No
+*Type*: String
+*Pattern*: `^\S{1,2000}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

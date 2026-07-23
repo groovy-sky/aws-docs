@@ -2,89 +2,65 @@
 title: "AWS::ApiGatewayV2::Api BodyS3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Api BodyS3Location
+<a name="aws-properties-apigatewayv2-api-bodys3location"></a>
 
-The `BodyS3Location` property specifies an S3 location from which to
-import an OpenAPI definition. Supported only for HTTP APIs.
+The `BodyS3Location` property specifies an S3 location from which to import an OpenAPI definition. Supported only for HTTP APIs.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-api-bodys3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-api-bodys3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Etag" : String,
-  "Key" : String,
-  "Version" : String
+  "[Bucket](#cfn-apigatewayv2-api-bodys3location-bucket)" : {{String}},
+  "[Etag](#cfn-apigatewayv2-api-bodys3location-etag)" : {{String}},
+  "[Key](#cfn-apigatewayv2-api-bodys3location-key)" : {{String}},
+  "[Version](#cfn-apigatewayv2-api-bodys3location-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-api-bodys3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Etag: String
-  Key: String
-  Version: String
-
+```
+  [Bucket](#cfn-apigatewayv2-api-bodys3location-bucket): {{String}}
+  [Etag](#cfn-apigatewayv2-api-bodys3location-etag): {{String}}
+  [Key](#cfn-apigatewayv2-api-bodys3location-key): {{String}}
+  [Version](#cfn-apigatewayv2-api-bodys3location-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-api-bodys3location-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-apigatewayv2-api-bodys3location-bucket"></a>
 The S3 bucket that contains the OpenAPI definition to import. Required if you specify a `BodyS3Location` for an API.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Etag`
-
+`Etag`  <a name="cfn-apigatewayv2-api-bodys3location-etag"></a>
 The Etag of the S3 object.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-apigatewayv2-api-bodys3location-key"></a>
 The key of the S3 object. Required if you specify a `BodyS3Location` for an API.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-apigatewayv2-api-bodys3location-version"></a>
 The version of the S3 object.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGatewayV2::Api
-
-Cors
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

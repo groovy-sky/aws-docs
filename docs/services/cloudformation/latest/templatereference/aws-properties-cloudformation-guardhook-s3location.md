@@ -2,81 +2,52 @@
 title: "AWS::CloudFormation::GuardHook S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::GuardHook S3Location
+<a name="aws-properties-cloudformation-guardhook-s3location"></a>
 
-Specifies the S3 location where your Guard rules or input
-parameters are located.
+Specifies the S3 location where your Guard rules or input parameters are located.
 
 ## Syntax
+<a name="aws-properties-cloudformation-guardhook-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudformation-guardhook-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Uri" : String,
-  "VersionId" : String
+  "[Uri](#cfn-cloudformation-guardhook-s3location-uri)" : {{String}},
+  "[VersionId](#cfn-cloudformation-guardhook-s3location-versionid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudformation-guardhook-s3location-syntax.yaml"></a>
 
-```yaml
-
-  Uri: String
-  VersionId: String
-
+```
+  [Uri](#cfn-cloudformation-guardhook-s3location-uri): {{String}}
+  [VersionId](#cfn-cloudformation-guardhook-s3location-versionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudformation-guardhook-s3location-properties"></a>
 
-`Uri`
+`Uri`  <a name="cfn-cloudformation-guardhook-s3location-uri"></a>
+Specifies the S3 path to the file that contains your Guard rules or input parameters (in the form `s3://<bucket name>/<file name>`).
+For Guard rules, the object stored in S3 must have one of the following file extensions: `.guard`, `.zip`, or `.tar.gz`.
+For input parameters, the object stored in S3 must have one of the following file extensions: `.yaml`, `.json`, `.zip`, or `.tar.gz`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the S3 path to the file that contains your Guard
-rules or input parameters (in the form `s3://<bucket name>/<file
-                name>`).
-
-For Guard rules, the object stored in S3 must have one of the
-following file extensions: `.guard`, `.zip`, or
-`.tar.gz`.
-
-For input parameters, the object stored in S3 must have one of the following file
-extensions: `.yaml`, `.json`, `.zip`, or
-`.tar.gz`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionId`
-
-For S3 buckets with versioning enabled, specifies the unique ID of the S3 object
-version to download your Guard rules or input parameters
-from.
-
-The Guard Hook downloads files from S3 every time the Hook is
-invoked. To prevent accidental changes or deletions, we recommend using a version when
-configuring your Guard Hook.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Options
-
-StackFilters
+`VersionId`  <a name="cfn-cloudformation-guardhook-s3location-versionid"></a>
+For S3 buckets with versioning enabled, specifies the unique ID of the S3 object version to download your Guard rules or input parameters from.
+The Guard Hook downloads files from S3 every time the Hook is invoked. To prevent accidental changes or deletions, we recommend using a version when configuring your Guard Hook.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

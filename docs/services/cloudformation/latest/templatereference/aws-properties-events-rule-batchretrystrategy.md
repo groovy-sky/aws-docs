@@ -2,77 +2,66 @@
 title: "AWS::Events::Rule BatchRetryStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule BatchRetryStrategy
+<a name="aws-properties-events-rule-batchretrystrategy"></a>
 
-The retry strategy to use for failed jobs, if the target is an AWS Batch job.
-If you specify a retry strategy here, it overrides the retry strategy defined in the job
-definition.
+The retry strategy to use for failed jobs, if the target is an AWS Batch job. If you specify a retry strategy here, it overrides the retry strategy defined in the job definition.
 
 ## Syntax
+<a name="aws-properties-events-rule-batchretrystrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-rule-batchretrystrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attempts" : Integer
+  "[Attempts](#cfn-events-rule-batchretrystrategy-attempts)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-rule-batchretrystrategy-syntax.yaml"></a>
 
-```yaml
-
-  Attempts: Integer
-
+```
+  [Attempts](#cfn-events-rule-batchretrystrategy-attempts): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-events-rule-batchretrystrategy-properties"></a>
 
-`Attempts`
-
+`Attempts`  <a name="cfn-events-rule-batchretrystrategy-attempts"></a>
 The number of times to attempt to retry, if the job fails. Valid values are 1–10.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-events-rule-batchretrystrategy--examples"></a>
 
 ### Set the BatchRetryStrategy property
+<a name="aws-properties-events-rule-batchretrystrategy--examples--Set_the_BatchRetryStrategy_property"></a>
 
 The following example sets the `BatchRetryStrategy` property to 8 retries.
 
 #### JSON
+<a name="aws-properties-events-rule-batchretrystrategy--examples--Set_the_BatchRetryStrategy_property--json"></a>
 
-```json
-
+```
 "RetryStrategy": {
   "Attempts": 8
 }
 ```
 
 #### YAML
+<a name="aws-properties-events-rule-batchretrystrategy--examples--Set_the_BatchRetryStrategy_property--yaml"></a>
 
-```yaml
-
+```
 RetryStrategy
   Attempts: 8
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BatchParameters
-
-CapacityProviderStrategyItem
 
 All content copied from https://docs.aws.amazon.com/.

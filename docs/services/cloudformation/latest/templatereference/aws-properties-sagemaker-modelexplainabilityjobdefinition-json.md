@@ -2,52 +2,41 @@
 title: "AWS::SageMaker::ModelExplainabilityJobDefinition Json"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelExplainabilityJobDefinition Json
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-json"></a>
 
 The JSON dataset format configuration.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-json-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-json-syntax.json"></a>
 
-```json
-
+```
 {
-  "Line" : Boolean
+  "[Line](#cfn-sagemaker-modelexplainabilityjobdefinition-json-line)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-json-syntax.yaml"></a>
 
-```yaml
-
-  Line: Boolean
-
+```
+  [Line](#cfn-sagemaker-modelexplainabilityjobdefinition-json-line): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-json-properties"></a>
 
-`Line`
-
+`Line`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-json-line"></a>
 Indicates whether the JSON data is in line-delimited format.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EndpointInput
-
-ModelExplainabilityAppSpecification
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

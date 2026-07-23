@@ -2,80 +2,60 @@
 title: "AWS::Cognito::UserPoolRiskConfigurationAttachment AccountTakeoverActionsType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRiskConfigurationAttachment AccountTakeoverActionsType
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype"></a>
 
-A list of account-takeover actions for each level of risk that Amazon Cognito might
-assess with advanced security features.
+A list of account-takeover actions for each level of risk that Amazon Cognito might assess with advanced security features.
 
 ## Syntax
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-syntax.json"></a>
 
-```json
-
+```
 {
-  "HighAction" : AccountTakeoverActionType,
-  "LowAction" : AccountTakeoverActionType,
-  "MediumAction" : AccountTakeoverActionType
+  "[HighAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-highaction)" : {{AccountTakeoverActionType}},
+  "[LowAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-lowaction)" : {{AccountTakeoverActionType}},
+  "[MediumAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-mediumaction)" : {{AccountTakeoverActionType}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-syntax.yaml"></a>
 
-```yaml
-
-  HighAction:
-    AccountTakeoverActionType
-  LowAction:
-    AccountTakeoverActionType
-  MediumAction:
-    AccountTakeoverActionType
-
+```
+  [HighAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-highaction): {{
+    AccountTakeoverActionType}}
+  [LowAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-lowaction): {{
+    AccountTakeoverActionType}}
+  [MediumAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-mediumaction): {{
+    AccountTakeoverActionType}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-properties"></a>
 
-`HighAction`
-
+`HighAction`  <a name="cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-highaction"></a>
 The action that you assign to a high-risk assessment by threat protection.
+*Required*: No
+*Type*: [AccountTakeoverActionType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AccountTakeoverActionType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LowAction`
-
+`LowAction`  <a name="cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-lowaction"></a>
 The action that you assign to a low-risk assessment by threat protection.
+*Required*: No
+*Type*: [AccountTakeoverActionType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AccountTakeoverActionType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MediumAction`
-
+`MediumAction`  <a name="cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype-mediumaction"></a>
 The action that you assign to a medium-risk assessment by threat protection.
-
-_Required_: No
-
-_Type_: [AccountTakeoverActionType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Cognito::UserPoolRiskConfigurationAttachment
-
-AccountTakeoverActionType
+*Required*: No
+*Type*: [AccountTakeoverActionType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

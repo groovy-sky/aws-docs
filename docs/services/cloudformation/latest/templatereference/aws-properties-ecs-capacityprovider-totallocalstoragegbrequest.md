@@ -2,68 +2,49 @@
 title: "AWS::ECS::CapacityProvider TotalLocalStorageGBRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::CapacityProvider TotalLocalStorageGBRequest
+<a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest"></a>
 
-The minimum and maximum total local storage in gigabytes (GB) for instance types with
-local storage. This is useful for workloads that require local storage for temporary
-data or caching.
+The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. This is useful for workloads that require local storage for temporary data or caching.
 
 ## Syntax
+<a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Number,
-  "Min" : Number
+  "[Max](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-max)" : {{Number}},
+  "[Min](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-min)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest-syntax.yaml"></a>
 
-```yaml
-
-  Max: Number
-  Min: Number
-
+```
+  [Max](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-max): {{Number}}
+  [Min](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-min): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest-properties"></a>
 
-`Max`
+`Max`  <a name="cfn-ecs-capacityprovider-totallocalstoragegbrequest-max"></a>
+The maximum total local storage in GB. Instance types with more local storage are excluded from selection.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The maximum total local storage in GB. Instance types with more local storage are
-excluded from selection.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
-The minimum total local storage in GB. Instance types with less local storage are
-excluded from selection.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-VCpuCountRangeRequest
+`Min`  <a name="cfn-ecs-capacityprovider-totallocalstoragegbrequest-min"></a>
+The minimum total local storage in GB. Instance types with less local storage are excluded from selection.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

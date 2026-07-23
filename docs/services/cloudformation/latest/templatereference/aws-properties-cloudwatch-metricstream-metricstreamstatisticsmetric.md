@@ -2,73 +2,53 @@
 title: "AWS::CloudWatch::MetricStream MetricStreamStatisticsMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::MetricStream MetricStreamStatisticsMetric
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric"></a>
 
-A structure that specifies the
-metric name and namespace for one metric that is going to have additional statistics included in the stream.
+A structure that specifies the metric name and namespace for one metric that is going to have additional statistics included in the stream.
 
 ## Syntax
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "MetricName" : String,
-  "Namespace" : String
+  "[MetricName](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-metricname)" : {{String}},
+  "[Namespace](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-namespace)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric-syntax.yaml"></a>
 
-```yaml
-
-  MetricName: String
-  Namespace: String
-
+```
+  [MetricName](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-metricname): {{String}}
+  [Namespace](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-namespace): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric-properties"></a>
 
-`MetricName`
-
+`MetricName`  <a name="cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-metricname"></a>
 The name of the metric.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-namespace"></a>
 The namespace of the metric.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetricStreamStatisticsConfiguration
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

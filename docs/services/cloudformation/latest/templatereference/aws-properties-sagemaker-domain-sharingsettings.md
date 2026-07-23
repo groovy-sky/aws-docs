@@ -2,92 +2,62 @@
 title: "AWS::SageMaker::Domain SharingSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain SharingSettings
+<a name="aws-properties-sagemaker-domain-sharingsettings"></a>
 
-Specifies options when sharing an Amazon SageMaker Studio notebook. These settings are specified as part of
-`DefaultUserSettings` when the [CreateDomain](../../../../reference/sagemaker/latest/apireference/api-createdomain.md) API is called, and as part of
-`UserSettings` when the [CreateUserProfile](../../../../reference/sagemaker/latest/apireference/api-createuserprofile.md) API is called.
+Specifies options when sharing an Amazon SageMaker Studio notebook. These settings are specified as part of `DefaultUserSettings` when the [CreateDomain](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateDomain.html) API is called, and as part of `UserSettings` when the [CreateUserProfile](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateUserProfile.html) API is called.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-sharingsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-sharingsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "NotebookOutputOption" : String,
-  "S3KmsKeyId" : String,
-  "S3OutputPath" : String
+  "[NotebookOutputOption](#cfn-sagemaker-domain-sharingsettings-notebookoutputoption)" : {{String}},
+  "[S3KmsKeyId](#cfn-sagemaker-domain-sharingsettings-s3kmskeyid)" : {{String}},
+  "[S3OutputPath](#cfn-sagemaker-domain-sharingsettings-s3outputpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-sharingsettings-syntax.yaml"></a>
 
-```yaml
-
-  NotebookOutputOption: String
-  S3KmsKeyId: String
-  S3OutputPath: String
-
+```
+  [NotebookOutputOption](#cfn-sagemaker-domain-sharingsettings-notebookoutputoption): {{String}}
+  [S3KmsKeyId](#cfn-sagemaker-domain-sharingsettings-s3kmskeyid): {{String}}
+  [S3OutputPath](#cfn-sagemaker-domain-sharingsettings-s3outputpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-sharingsettings-properties"></a>
 
-`NotebookOutputOption`
+`NotebookOutputOption`  <a name="cfn-sagemaker-domain-sharingsettings-notebookoutputoption"></a>
+Whether to include the notebook cell output when sharing the notebook. The default is `Disabled`.
+*Required*: No
+*Type*: String
+*Allowed values*: `Allowed | Disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Whether to include the notebook cell output when sharing the notebook. The default is
-`Disabled`.
+`S3KmsKeyId`  <a name="cfn-sagemaker-domain-sharingsettings-s3kmskeyid"></a>
+When `NotebookOutputOption` is `Allowed`, the AWS Key Management Service (KMS) encryption key ID used to encrypt the notebook cell output in the Amazon S3 bucket.
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Allowed | Disabled`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3KmsKeyId`
-
-When `NotebookOutputOption` is `Allowed`, the AWS Key
-Management Service (KMS) encryption key ID used to encrypt the notebook cell output in the
-Amazon S3 bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3OutputPath`
-
-When `NotebookOutputOption` is `Allowed`, the Amazon S3
-bucket used to store the shared notebook snapshots.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(https|s3)://([^/]+)/?(.*)$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3FileSystemConfig
-
-StudioWebPortalSettings
+`S3OutputPath`  <a name="cfn-sagemaker-domain-sharingsettings-s3outputpath"></a>
+When `NotebookOutputOption` is `Allowed`, the Amazon S3 bucket used to store the shared notebook snapshots.
+*Required*: No
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

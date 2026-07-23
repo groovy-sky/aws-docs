@@ -2,101 +2,90 @@
 title: "AWS::S3::StorageLens"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens
+<a name="aws-resource-s3-storagelens"></a>
 
 The AWS::S3::StorageLens resource creates an Amazon S3 Storage Lens configuration.
 
 ## Syntax
+<a name="aws-resource-s3-storagelens-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3-storagelens-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3::StorageLens",
   "Properties" : {
-      "StorageLensConfiguration" : StorageLensConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[StorageLensConfiguration](#cfn-s3-storagelens-storagelensconfiguration)" : {{StorageLensConfiguration}},
+      "[Tags](#cfn-s3-storagelens-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3-storagelens-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3::StorageLens
 Properties:
-  StorageLensConfiguration:
-    StorageLensConfiguration
-  Tags:
-    - Tag
-
+  [StorageLensConfiguration](#cfn-s3-storagelens-storagelensconfiguration): {{
+    StorageLensConfiguration}}
+  [Tags](#cfn-s3-storagelens-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-s3-storagelens-properties"></a>
 
-`StorageLensConfiguration`
-
+`StorageLensConfiguration`  <a name="cfn-s3-storagelens-storagelensconfiguration"></a>
 This resource contains the details Amazon S3 Storage Lens configuration.
+*Required*: Yes
+*Type*: [StorageLensConfiguration](aws-properties-s3-storagelens-storagelensconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [StorageLensConfiguration](aws-properties-s3-storagelens-storagelensconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-s3-storagelens-tags"></a>
 A set of tags (key–value pairs) to associate with the Storage Lens configuration.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-s3-storagelens-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-s3-storagelens-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-s3-storagelens-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3-storagelens-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the Ref intrinsic function, Ref
-returns the S3 Storage Lens configuration Id, such as
-`your-storage-lens-configuration-id`. For more information about using the Ref
-function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+When the logical ID of this resource is provided to the Ref intrinsic function, Ref returns the S3 Storage Lens configuration Id, such as `your-storage-lens-configuration-id`. For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3-storagelens-return-values-fn--getatt"></a>
 
-Fn::GetAtt returns a value for a specified attribute of this type. For more information,
-see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md). The following are the available attributes and sample return
-values.
+Fn::GetAtt returns a value for a specified attribute of this type. For more information, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html). The following are the available attributes and sample return values.
 
-`StorageLensConfiguration.StorageLensArn`
+####
+<a name="aws-resource-s3-storagelens-return-values-fn--getatt-fn--getatt"></a>
 
-This property contains the details of the ARN of the S3 Storage Lens configuration. This
-property is read-only.
+`StorageLensConfiguration.StorageLensArn`  <a name="StorageLensConfiguration.StorageLensArn-fn::getatt"></a>
+This property contains the details of the ARN of the S3 Storage Lens configuration. This property is read-only.
 
 ## Examples
+<a name="aws-resource-s3-storagelens--examples"></a>
 
-The following examples create an advanced S3 Storage Lens configuration that enables
-advanced metrics, Amazon CloudWatch publishing, and prefix aggregation. This example
-also configures a metrics export and adds tags.
+The following examples create an advanced S3 Storage Lens configuration that enables advanced metrics, Amazon CloudWatch publishing, and prefix aggregation. This example also configures a metrics export and adds tags.
 
 ### Creating an advanced S3 Storage Lens configuration
+<a name="aws-resource-s3-storagelens--examples--Creating_an_advanced_S3_Storage_Lens_configuration"></a>
 
 #### JSON
+<a name="aws-resource-s3-storagelens--examples--Creating_an_advanced_S3_Storage_Lens_configuration--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "StorageLens Advanced Configuration Example",
@@ -187,13 +176,12 @@ also configures a metrics export and adds tags.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-s3-storagelens--examples--Creating_an_advanced_S3_Storage_Lens_configuration--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: StorageLens Advanced Configuration Example
 Resources:
@@ -249,11 +237,5 @@ Resources:
         - Key: "tag-key-2"
           Value: "tag-value-2"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyStatus
-
-AccountLevel
 
 All content copied from https://docs.aws.amazon.com/.

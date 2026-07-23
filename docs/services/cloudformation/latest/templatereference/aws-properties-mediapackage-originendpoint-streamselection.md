@@ -2,80 +2,59 @@
 title: "AWS::MediaPackage::OriginEndpoint StreamSelection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::OriginEndpoint StreamSelection
+<a name="aws-properties-mediapackage-originendpoint-streamselection"></a>
 
 Limitations for outputs from the endpoint, based on the video bitrate.
 
 ## Syntax
+<a name="aws-properties-mediapackage-originendpoint-streamselection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-originendpoint-streamselection-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxVideoBitsPerSecond" : Integer,
-  "MinVideoBitsPerSecond" : Integer,
-  "StreamOrder" : String
+  "[MaxVideoBitsPerSecond](#cfn-mediapackage-originendpoint-streamselection-maxvideobitspersecond)" : {{Integer}},
+  "[MinVideoBitsPerSecond](#cfn-mediapackage-originendpoint-streamselection-minvideobitspersecond)" : {{Integer}},
+  "[StreamOrder](#cfn-mediapackage-originendpoint-streamselection-streamorder)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-originendpoint-streamselection-syntax.yaml"></a>
 
-```yaml
-
-  MaxVideoBitsPerSecond: Integer
-  MinVideoBitsPerSecond: Integer
-  StreamOrder: String
-
+```
+  [MaxVideoBitsPerSecond](#cfn-mediapackage-originendpoint-streamselection-maxvideobitspersecond): {{Integer}}
+  [MinVideoBitsPerSecond](#cfn-mediapackage-originendpoint-streamselection-minvideobitspersecond): {{Integer}}
+  [StreamOrder](#cfn-mediapackage-originendpoint-streamselection-streamorder): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-originendpoint-streamselection-properties"></a>
 
-`MaxVideoBitsPerSecond`
-
+`MaxVideoBitsPerSecond`  <a name="cfn-mediapackage-originendpoint-streamselection-maxvideobitspersecond"></a>
 The upper limit of the bitrates that this endpoint serves. If the video track exceeds this threshold, then AWS Elemental MediaPackage excludes it from output. If you don't specify a value, it defaults to 2147483647 bits per second.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinVideoBitsPerSecond`
-
+`MinVideoBitsPerSecond`  <a name="cfn-mediapackage-originendpoint-streamselection-minvideobitspersecond"></a>
 The lower limit of the bitrates that this endpoint serves. If the video track is below this threshold, then AWS Elemental MediaPackage excludes it from output. If you don't specify a value, it defaults to 0 bits per second.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamOrder`
-
+`StreamOrder`  <a name="cfn-mediapackage-originendpoint-streamselection-streamorder"></a>
 Order in which the different video bitrates are presented to the player.
-
 Valid values: `ORIGINAL`, `VIDEO_BITRATE_ASCENDING`, `VIDEO_BITRATE_DESCENDING`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ORIGINAL | VIDEO_BITRATE_ASCENDING | VIDEO_BITRATE_DESCENDING`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SpekeKeyProvider
-
-Tag
+*Required*: No
+*Type*: String
+*Allowed values*: `ORIGINAL | VIDEO_BITRATE_ASCENDING | VIDEO_BITRATE_DESCENDING`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

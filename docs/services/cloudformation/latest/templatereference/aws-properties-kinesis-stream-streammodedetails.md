@@ -2,56 +2,42 @@
 title: "AWS::Kinesis::Stream StreamModeDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kinesis::Stream StreamModeDetails
+<a name="aws-properties-kinesis-stream-streammodedetails"></a>
 
-Specifies the capacity mode to which you want to set your data stream. Currently, in
-Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
+ Specifies the capacity mode to which you want to set your data stream. Currently, in Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
 
 ## Syntax
+<a name="aws-properties-kinesis-stream-streammodedetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesis-stream-streammodedetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "StreamMode" : String
+  "[StreamMode](#cfn-kinesis-stream-streammodedetails-streammode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesis-stream-streammodedetails-syntax.yaml"></a>
 
-```yaml
-
-  StreamMode: String
-
+```
+  [StreamMode](#cfn-kinesis-stream-streammodedetails-streammode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesis-stream-streammodedetails-properties"></a>
 
-`StreamMode`
-
-Specifies the capacity mode to which you want to set your data stream. Currently, in
-Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ON_DEMAND | PROVISIONED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StreamEncryption
-
-Tag
+`StreamMode`  <a name="cfn-kinesis-stream-streammodedetails-streammode"></a>
+ Specifies the capacity mode to which you want to set your data stream. Currently, in Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ON_DEMAND | PROVISIONED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

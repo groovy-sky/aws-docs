@@ -2,66 +2,50 @@
 title: "AWS::Connect::User PersistentConnectionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User PersistentConnectionConfig
+<a name="aws-properties-connect-user-persistentconnectionconfig"></a>
 
 Configuration settings for persistent connection for a specific channel.
 
 ## Syntax
+<a name="aws-properties-connect-user-persistentconnectionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-user-persistentconnectionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Channel" : String,
-  "PersistentConnection" : Boolean
+  "[Channel](#cfn-connect-user-persistentconnectionconfig-channel)" : {{String}},
+  "[PersistentConnection](#cfn-connect-user-persistentconnectionconfig-persistentconnection)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-user-persistentconnectionconfig-syntax.yaml"></a>
 
-```yaml
-
-  Channel: String
-  PersistentConnection: Boolean
-
+```
+  [Channel](#cfn-connect-user-persistentconnectionconfig-channel): {{String}}
+  [PersistentConnection](#cfn-connect-user-persistentconnectionconfig-persistentconnection): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-user-persistentconnectionconfig-properties"></a>
 
-`Channel`
-
+`Channel`  <a name="cfn-connect-user-persistentconnectionconfig-channel"></a>
 Configuration settings for persistent connection. **Only `VOICE` is supported for this data type.**
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VOICE | CHAT | TASK | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VOICE | CHAT | TASK | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PersistentConnection`
-
+`PersistentConnection`  <a name="cfn-connect-user-persistentconnectionconfig-persistentconnection"></a>
 Indicates whether persistent connection is enabled. When enabled, the agent's connection is maintained after a call ends, enabling subsequent calls to connect faster.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoAcceptConfig
-
-PhoneNumberConfig
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,51 @@
 title: "AWS::Events::Connection BasicAuthParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Connection BasicAuthParameters
+<a name="aws-properties-events-connection-basicauthparameters"></a>
 
 The Basic authorization parameters for the connection.
 
 ## Syntax
+<a name="aws-properties-events-connection-basicauthparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-connection-basicauthparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Password" : String,
-  "Username" : String
+  "[Password](#cfn-events-connection-basicauthparameters-password)" : {{String}},
+  "[Username](#cfn-events-connection-basicauthparameters-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-connection-basicauthparameters-syntax.yaml"></a>
 
-```yaml
-
-  Password: String
-  Username: String
-
+```
+  [Password](#cfn-events-connection-basicauthparameters-password): {{String}}
+  [Username](#cfn-events-connection-basicauthparameters-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-events-connection-basicauthparameters-properties"></a>
 
-`Password`
-
+`Password`  <a name="cfn-events-connection-basicauthparameters-password"></a>
 The password associated with the user name to use for Basic authorization.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[ \t]*[^\x00-\x1F\x7F]+([ \t]+[^\x00-\x1F\x7F]+)*[ \t]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[ \t]*[^\x00-\x1F\x7F]+([ \t]+[^\x00-\x1F\x7F]+)*[ \t]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
+`Username`  <a name="cfn-events-connection-basicauthparameters-username"></a>
 The user name to use for Basic authorization.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[ \t]*[^\x00-\x1F\x7F]+([ \t]+[^\x00-\x1F\x7F]+)*[ \t]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthParameters
-
-ClientParameters
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[ \t]*[^\x00-\x1F\x7F]+([ \t]+[^\x00-\x1F\x7F]+)*[ \t]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

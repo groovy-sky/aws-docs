@@ -2,74 +2,55 @@
 title: "AWS::QuickSight::Template WordCloudAggregatedFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template WordCloudAggregatedFieldWells
+<a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells"></a>
 
 The aggregated field wells of a word cloud.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "GroupBy" : [ DimensionField, ... ],
-  "Size" : [ MeasureField, ... ]
+  "[GroupBy](#cfn-quicksight-template-wordcloudaggregatedfieldwells-groupby)" : {{[ DimensionField, ... ]}},
+  "[Size](#cfn-quicksight-template-wordcloudaggregatedfieldwells-size)" : {{[ MeasureField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  GroupBy:
-    - DimensionField
-  Size:
-    - MeasureField
-
+```
+  [GroupBy](#cfn-quicksight-template-wordcloudaggregatedfieldwells-groupby): {{
+    - DimensionField}}
+  [Size](#cfn-quicksight-template-wordcloudaggregatedfieldwells-size): {{
+    - MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells-properties"></a>
 
-`GroupBy`
-
+`GroupBy`  <a name="cfn-quicksight-template-wordcloudaggregatedfieldwells-groupby"></a>
 The group by field well of a word cloud. Values are grouped by group by fields.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-template-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-template-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Size`
-
+`Size`  <a name="cfn-quicksight-template-wordcloudaggregatedfieldwells-size"></a>
 The size field well of a word cloud. Values are aggregated based on group by fields.
-
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-template-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WhatIfRangeScenario
-
-WordCloudChartConfiguration
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-template-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

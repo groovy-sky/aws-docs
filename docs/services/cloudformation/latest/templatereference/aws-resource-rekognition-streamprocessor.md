@@ -2,328 +2,220 @@
 title: "AWS::Rekognition::StreamProcessor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rekognition::StreamProcessor
+<a name="aws-resource-rekognition-streamprocessor"></a>
 
-The `AWS::Rekognition::StreamProcessor` type creates a stream processor used to detect
-and recognize faces or to detect connected home
-labels in a streaming video. Amazon Rekognition Video is a consumer of live video from
-Amazon Kinesis Video Streams. There are two different settings for stream processors in
-Amazon Rekognition, one for detecting faces and one for connected home features.
+The `AWS::Rekognition::StreamProcessor` type creates a stream processor used to detect and recognize faces or to detect connected home labels in a streaming video. Amazon Rekognition Video is a consumer of live video from Amazon Kinesis Video Streams. There are two different settings for stream processors in Amazon Rekognition, one for detecting faces and one for connected home features.
 
-If you are creating a stream processor for detecting faces, you provide a
-Kinesis video stream (input) and a Kinesis data stream (output). You also specify the face
-recognition criteria in FaceSearchSettings. For example, the collection containing faces
-that you want to recognize.
+If you are creating a stream processor for detecting faces, you provide a Kinesis video stream (input) and a Kinesis data stream (output). You also specify the face recognition criteria in FaceSearchSettings. For example, the collection containing faces that you want to recognize.
 
-If you are creating a stream processor for detection of connected home labels, you
-provide a Kinesis video stream for input, and for output an Amazon S3 bucket and an Amazon SNS topic. You
-can also provide a KMS key ID to encrypt the data sent to your Amazon S3 bucket. You
-specify what you want to detect in ConnectedHomeSettings, such as people, packages, and
-pets.
+If you are creating a stream processor for detection of connected home labels, you provide a Kinesis video stream for input, and for output an Amazon S3 bucket and an Amazon SNS topic. You can also provide a KMS key ID to encrypt the data sent to your Amazon S3 bucket. You specify what you want to detect in ConnectedHomeSettings, such as people, packages, and pets.
 
-You can also specify where in the frame you want Amazon Rekognition to monitor with
-BoundingBoxRegionsOfInterest and PolygonRegionsOfInterest. The Name is used to manage the
-stream processor and it is the identifier for the stream processor. The
-`AWS::Rekognition::StreamProcessor` resource creates a stream processor in
-the same Region where you create the Amazon CloudFormation stack.
+You can also specify where in the frame you want Amazon Rekognition to monitor with BoundingBoxRegionsOfInterest and PolygonRegionsOfInterest. The Name is used to manage the stream processor and it is the identifier for the stream processor. The `AWS::Rekognition::StreamProcessor` resource creates a stream processor in the same Region where you create the Amazon CloudFormation stack.
 
 For more information, see [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
 
 ## Syntax
+<a name="aws-resource-rekognition-streamprocessor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rekognition-streamprocessor-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Rekognition::StreamProcessor",
   "Properties" : {
-      "BoundingBoxRegionsOfInterest" : [ BoundingBox, ... ],
-      "ConnectedHomeSettings" : ConnectedHomeSettings,
-      "DataSharingPreference" : DataSharingPreference,
-      "FaceSearchSettings" : FaceSearchSettings,
-      "KinesisDataStream" : KinesisDataStream,
-      "KinesisVideoStream" : KinesisVideoStream,
-      "KmsKeyId" : String,
-      "Name" : String,
-      "NotificationChannel" : NotificationChannel,
-      "PolygonRegionsOfInterest" : [ [ , ... ], ... ],
-      "RoleArn" : String,
-      "S3Destination" : S3Destination,
-      "Tags" : [ Tag, ... ]
+      "[BoundingBoxRegionsOfInterest](#cfn-rekognition-streamprocessor-boundingboxregionsofinterest)" : {{[ BoundingBox, ... ]}},
+      "[ConnectedHomeSettings](#cfn-rekognition-streamprocessor-connectedhomesettings)" : {{ConnectedHomeSettings}},
+      "[DataSharingPreference](#cfn-rekognition-streamprocessor-datasharingpreference)" : {{DataSharingPreference}},
+      "[FaceSearchSettings](#cfn-rekognition-streamprocessor-facesearchsettings)" : {{FaceSearchSettings}},
+      "[KinesisDataStream](#cfn-rekognition-streamprocessor-kinesisdatastream)" : {{KinesisDataStream}},
+      "[KinesisVideoStream](#cfn-rekognition-streamprocessor-kinesisvideostream)" : {{KinesisVideoStream}},
+      "[KmsKeyId](#cfn-rekognition-streamprocessor-kmskeyid)" : {{String}},
+      "[Name](#cfn-rekognition-streamprocessor-name)" : {{String}},
+      "[NotificationChannel](#cfn-rekognition-streamprocessor-notificationchannel)" : {{NotificationChannel}},
+      "[PolygonRegionsOfInterest](#cfn-rekognition-streamprocessor-polygonregionsofinterest)" : {{[ [ , ... ], ... ]}},
+      "[RoleArn](#cfn-rekognition-streamprocessor-rolearn)" : {{String}},
+      "[S3Destination](#cfn-rekognition-streamprocessor-s3destination)" : {{S3Destination}},
+      "[Tags](#cfn-rekognition-streamprocessor-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rekognition-streamprocessor-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Rekognition::StreamProcessor
 Properties:
-  BoundingBoxRegionsOfInterest:
-    - BoundingBox
-  ConnectedHomeSettings:
-    ConnectedHomeSettings
-  DataSharingPreference:
-    DataSharingPreference
-  FaceSearchSettings:
-    FaceSearchSettings
-  KinesisDataStream:
-    KinesisDataStream
-  KinesisVideoStream:
-    KinesisVideoStream
-  KmsKeyId: String
-  Name: String
-  NotificationChannel:
-    NotificationChannel
-  PolygonRegionsOfInterest:
+  [BoundingBoxRegionsOfInterest](#cfn-rekognition-streamprocessor-boundingboxregionsofinterest): {{
+    - BoundingBox}}
+  [ConnectedHomeSettings](#cfn-rekognition-streamprocessor-connectedhomesettings): {{
+    ConnectedHomeSettings}}
+  [DataSharingPreference](#cfn-rekognition-streamprocessor-datasharingpreference): {{
+    DataSharingPreference}}
+  [FaceSearchSettings](#cfn-rekognition-streamprocessor-facesearchsettings): {{
+    FaceSearchSettings}}
+  [KinesisDataStream](#cfn-rekognition-streamprocessor-kinesisdatastream): {{
+    KinesisDataStream}}
+  [KinesisVideoStream](#cfn-rekognition-streamprocessor-kinesisvideostream): {{
+    KinesisVideoStream}}
+  [KmsKeyId](#cfn-rekognition-streamprocessor-kmskeyid): {{String}}
+  [Name](#cfn-rekognition-streamprocessor-name): {{String}}
+  [NotificationChannel](#cfn-rekognition-streamprocessor-notificationchannel): {{
+    NotificationChannel}}
+  [PolygonRegionsOfInterest](#cfn-rekognition-streamprocessor-polygonregionsofinterest): {{
     -
-    -
-  RoleArn: String
-  S3Destination:
-    S3Destination
-  Tags:
-    - Tag
-
+    - }}
+  [RoleArn](#cfn-rekognition-streamprocessor-rolearn): {{String}}
+  [S3Destination](#cfn-rekognition-streamprocessor-s3destination): {{
+    S3Destination}}
+  [Tags](#cfn-rekognition-streamprocessor-tags): {{
+    - Tag}}
 ```
 
 ## Properties
-
-`BoundingBoxRegionsOfInterest`
-
-List of BoundingBox objects, each of which denotes a region of interest on screen.
-For more information, see the BoundingBox field of [RegionOfInterest](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RegionOfInterest).
-
-_Required_: No
-
-_Type_: Array of [BoundingBox](aws-properties-rekognition-streamprocessor-boundingbox.md)
-
-_Minimum_: `0`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConnectedHomeSettings`
-
-Connected home settings to use on a streaming video. You can use a stream processor for connected home features and select
-what you want the stream processor to detect, such as people or pets. When the stream processor has started, one notification is sent for
-each object class specified. For more information,
-see the ConnectedHome section of [StreamProcessorSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorSettings).
-
-_Required_: No
-
-_Type_: [ConnectedHomeSettings](aws-properties-rekognition-streamprocessor-connectedhomesettings.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DataSharingPreference`
-
-Allows you to opt in or opt out to share data with Rekognition to improve model performance.
-You can choose this option at the account level or on a per-stream basis. Note that if you opt out at the account level this setting is ignored on individual streams.
-For more information, see [StreamProcessorDataSharingPreference](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorDataSharingPreference).
-
-_Required_: No
-
-_Type_: [DataSharingPreference](aws-properties-rekognition-streamprocessor-datasharingpreference.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FaceSearchSettings`
-
-The input parameters used to recognize faces in a streaming video analyzed by an Amazon Rekognition stream processor.
-For more information regarding the contents of the parameters, see [FaceSearchSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_FaceSearchSettings).
-
-_Required_: No
-
-_Type_: [FaceSearchSettings](aws-properties-rekognition-streamprocessor-facesearchsettings.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KinesisDataStream`
-
-Amazon Rekognition's Video Stream Processor takes a Kinesis video stream as input. This is the Amazon Kinesis Data Streams instance
-to which the Amazon Rekognition stream processor streams the analysis results.
-This must be created within the constraints specified at
-[KinesisDataStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisDataStream).
-
-_Required_: No
-
-_Type_: [KinesisDataStream](aws-properties-rekognition-streamprocessor-kinesisdatastream.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KinesisVideoStream`
-
-The Kinesis video stream that provides the source of the streaming video for an Amazon Rekognition Video stream processor. For more information,
-see [KinesisVideoStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisVideoStream).
-
-_Required_: Yes
-
-_Type_: [KinesisVideoStream](aws-properties-rekognition-streamprocessor-kinesisvideostream.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KmsKeyId`
-
-The identifier for your Amazon Key Management Service key (Amazon KMS key). Optional parameter for connected home stream processors
-used to encrypt results and data published to your Amazon S3 bucket.
-For more information, see the KMSKeyId section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
-The Name attribute specifies the name of the stream processor and it must be within the
-constraints described in the Name section of [StreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessor).
-If you don't specify a name, Amazon CloudFormation generates a unique ID and uses that ID for the stream processor name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.\-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NotificationChannel`
-
-The Amazon Simple Notification Service topic to which Amazon Rekognition publishes the object detection results and completion status of a video analysis operation.
-Amazon Rekognition publishes a notification the first time an object of interest or a person is detected in the video stream.
-Amazon Rekognition also publishes an end-of-session notification with a summary when the stream processing session is complete.
-For more information, see [StreamProcessorNotificationChannel](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorNotificationChannel).
-
-_Required_: No
-
-_Type_: [NotificationChannel](aws-properties-rekognition-streamprocessor-notificationchannel.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PolygonRegionsOfInterest`
-
-A set of ordered lists of [Point](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Point) objects.
-Each entry of the set contains a polygon denoting a region of interest on the screen. Each polygon is an ordered
-list of [Point](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Point) objects.
-For more information, see the Polygon field of [RegionOfInterest](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RegionOfInterest).
-
-_Required_: No
-
-_Type_: Array of Array
-
-_Minimum_: `0`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
-The ARN of the IAM role that allows access to the stream processor. The IAM role provides Rekognition read permissions to the Kinesis stream.
-It also provides write permissions to an Amazon S3 bucket and Amazon Simple Notification Service topic for a connected home stream processor.
-This is required for both face search and connected home stream processors.
-For information about constraints, see the RoleArn section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3Destination`
-
-The Amazon S3 bucket location to which Amazon Rekognition publishes the detailed inference results of a video analysis operation.
-For more information, see the S3Destination section of [StreamProcessorOutput](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorOutput).
-
-_Required_: No
-
-_Type_: [S3Destination](aws-properties-rekognition-streamprocessor-s3destination.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A set of tags (key-value pairs) that you want to attach to the stream processor.
-For more information, see the Tags section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rekognition-streamprocessor-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+<a name="aws-resource-rekognition-streamprocessor-properties"></a>
+
+`BoundingBoxRegionsOfInterest`  <a name="cfn-rekognition-streamprocessor-boundingboxregionsofinterest"></a>
+List of BoundingBox objects, each of which denotes a region of interest on screen. For more information, see the BoundingBox field of [RegionOfInterest](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RegionOfInterest).
+*Required*: No
+*Type*: Array of [BoundingBox](aws-properties-rekognition-streamprocessor-boundingbox.md)
+*Minimum*: `0`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ConnectedHomeSettings`  <a name="cfn-rekognition-streamprocessor-connectedhomesettings"></a>
+Connected home settings to use on a streaming video. You can use a stream processor for connected home features and select what you want the stream processor to detect, such as people or pets. When the stream processor has started, one notification is sent for each object class specified. For more information, see the ConnectedHome section of [StreamProcessorSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorSettings).
+*Required*: No
+*Type*: [ConnectedHomeSettings](aws-properties-rekognition-streamprocessor-connectedhomesettings.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`DataSharingPreference`  <a name="cfn-rekognition-streamprocessor-datasharingpreference"></a>
+Allows you to opt in or opt out to share data with Rekognition to improve model performance. You can choose this option at the account level or on a per-stream basis. Note that if you opt out at the account level this setting is ignored on individual streams. For more information, see [StreamProcessorDataSharingPreference](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorDataSharingPreference).
+*Required*: No
+*Type*: [DataSharingPreference](aws-properties-rekognition-streamprocessor-datasharingpreference.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`FaceSearchSettings`  <a name="cfn-rekognition-streamprocessor-facesearchsettings"></a>
+The input parameters used to recognize faces in a streaming video analyzed by an Amazon Rekognition stream processor. For more information regarding the contents of the parameters, see [FaceSearchSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_FaceSearchSettings).
+*Required*: No
+*Type*: [FaceSearchSettings](aws-properties-rekognition-streamprocessor-facesearchsettings.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`KinesisDataStream`  <a name="cfn-rekognition-streamprocessor-kinesisdatastream"></a>
+Amazon Rekognition's Video Stream Processor takes a Kinesis video stream as input. This is the Amazon Kinesis Data Streams instance to which the Amazon Rekognition stream processor streams the analysis results. This must be created within the constraints specified at [KinesisDataStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisDataStream).
+*Required*: No
+*Type*: [KinesisDataStream](aws-properties-rekognition-streamprocessor-kinesisdatastream.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`KinesisVideoStream`  <a name="cfn-rekognition-streamprocessor-kinesisvideostream"></a>
+The Kinesis video stream that provides the source of the streaming video for an Amazon Rekognition Video stream processor. For more information, see [KinesisVideoStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisVideoStream).
+*Required*: Yes
+*Type*: [KinesisVideoStream](aws-properties-rekognition-streamprocessor-kinesisvideostream.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`KmsKeyId`  <a name="cfn-rekognition-streamprocessor-kmskeyid"></a>
+ The identifier for your Amazon Key Management Service key (Amazon KMS key). Optional parameter for connected home stream processors used to encrypt results and data published to your Amazon S3 bucket. For more information, see the KMSKeyId section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Name`  <a name="cfn-rekognition-streamprocessor-name"></a>
+ The Name attribute specifies the name of the stream processor and it must be within the constraints described in the Name section of [StreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessor). If you don't specify a name, Amazon CloudFormation generates a unique ID and uses that ID for the stream processor name.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.\-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NotificationChannel`  <a name="cfn-rekognition-streamprocessor-notificationchannel"></a>
+ The Amazon Simple Notification Service topic to which Amazon Rekognition publishes the object detection results and completion status of a video analysis operation. Amazon Rekognition publishes a notification the first time an object of interest or a person is detected in the video stream. Amazon Rekognition also publishes an end-of-session notification with a summary when the stream processing session is complete. For more information, see [StreamProcessorNotificationChannel](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorNotificationChannel).
+*Required*: No
+*Type*: [NotificationChannel](aws-properties-rekognition-streamprocessor-notificationchannel.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`PolygonRegionsOfInterest`  <a name="cfn-rekognition-streamprocessor-polygonregionsofinterest"></a>
+A set of ordered lists of [Point](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Point) objects. Each entry of the set contains a polygon denoting a region of interest on the screen. Each polygon is an ordered list of [Point](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Point) objects. For more information, see the Polygon field of [RegionOfInterest](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RegionOfInterest).
+*Required*: No
+*Type*: Array of Array
+*Minimum*: `0`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RoleArn`  <a name="cfn-rekognition-streamprocessor-rolearn"></a>
+The ARN of the IAM role that allows access to the stream processor. The IAM role provides Rekognition read permissions to the Kinesis stream. It also provides write permissions to an Amazon S3 bucket and Amazon Simple Notification Service topic for a connected home stream processor. This is required for both face search and connected home stream processors. For information about constraints, see the RoleArn section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`S3Destination`  <a name="cfn-rekognition-streamprocessor-s3destination"></a>
+The Amazon S3 bucket location to which Amazon Rekognition publishes the detailed inference results of a video analysis operation. For more information, see the S3Destination section of [StreamProcessorOutput](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorOutput).
+*Required*: No
+*Type*: [S3Destination](aws-properties-rekognition-streamprocessor-s3destination.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Tags`  <a name="cfn-rekognition-streamprocessor-tags"></a>
+A set of tags (key-value pairs) that you want to attach to the stream processor. For more information, see the Tags section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rekognition-streamprocessor-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rekognition-streamprocessor-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rekognition-streamprocessor-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns
-the name of the stream processor. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the stream processor. For example:
 
-`{ "Ref": "MyStreamProcessor" }`
+ `{ "Ref": "MyStreamProcessor" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-rekognition-streamprocessor-return-values-fn--getatt"></a>
 
-`Fn::GetAtt`
-returns a value for a specified attribute of this type. The
-following are the available attributes and sample return values. For more information about
-using `Fn::GetAtt`, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values. For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-rekognition-streamprocessor-return-values-fn--getatt-fn--getatt"></a>
 
-Amazon Resource Name for the newly created stream processor.
+`Arn`  <a name="Arn-fn::getatt"></a>
+ Amazon Resource Name for the newly created stream processor.
 
-`Status`
+`Status`  <a name="Status-fn::getatt"></a>
+ Current status of the Amazon Rekognition stream processor.
 
-Current status of the Amazon Rekognition stream processor.
-
-`StatusMessage`
-
-Detailed status message about the stream processor.
+`StatusMessage`  <a name="StatusMessage-fn::getatt"></a>
+ Detailed status message about the stream processor.
 
 ## Examples
+<a name="aws-resource-rekognition-streamprocessor--examples"></a>
 
-- [StreamProcessor configured to recognize faces given an input Rekognition Collection](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection)
-
-- [StreamProcessor to detect ConnectedHome labels without any specific regions of interest configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured)
-
-- [StreamProcessor to detect ConnectedHome labels with specific bounding-box based regions of interest and polygon based regions of interest and polygons configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured)
-
-- [StreamProcessor to detect ConnectedHome labels with specific bounding-box based regions of interest and polygon based regions of interest configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured)
-
-- [StreamProcessor to detect ConnectedHome labels with specific polygons configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured)
+**Topics**
++ [StreamProcessor configured to recognize faces given an input Rekognition Collection](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection)
++ [StreamProcessor to detect ConnectedHome labels without any specific regions of interest configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured)
++ [StreamProcessor to detect ConnectedHome labels with specific bounding-box based regions of interest and polygon based regions of interest and polygons configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured)
++ [StreamProcessor to detect ConnectedHome labels with specific bounding-box based regions of interest and polygon based regions of interest configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured)
++ [StreamProcessor to detect ConnectedHome labels with specific polygons configured](#aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured)
 
 ### StreamProcessor configured to recognize faces given an input Rekognition Collection
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection"></a>
 
-This template creates a stream processor configured to recognize
-faces defined in the collection with Collection ID `ExampleCollection`. It outputs the results to the configured
-Kinesis data stream.
+This template creates a stream processor configured to recognize faces defined in the collection with Collection ID `ExampleCollection`. It outputs the results to the configured Kinesis data stream.
 
 #### JSON
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection--json"></a>
 
-```json
-
+```
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -354,13 +246,12 @@ Kinesis data stream.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection--yaml"></a>
 
-```yaml
-
+```
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -377,21 +268,17 @@ ExampleStreamProcessor:
           Value: 'Value1'
         - Key: 'Key2'
           Value: 'Value2'
-
 ```
 
 ### StreamProcessor to detect ConnectedHome labels without any specific regions of interest configured
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured"></a>
 
-This template creates a stream processor that is configured to detect all
-supported labels. Note that the template doesn’t configure any specific regions
-of interest using `BoundingBoxRegionsOfInterest` and/or
-`PolygonRegionsOfInterest`, hence Rekognition detects and outputs
-labels of interest from the entire frame.
+This template creates a stream processor that is configured to detect all supported labels. Note that the template doesn’t configure any specific regions of interest using `BoundingBoxRegionsOfInterest` and/or `PolygonRegionsOfInterest`, hence Rekognition detects and outputs labels of interest from the entire frame.
 
 #### JSON
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured--json"></a>
 
-```json
-
+```
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -414,13 +301,12 @@ labels of interest from the entire frame.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured--yaml"></a>
 
-```yaml
-
+```
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -434,20 +320,17 @@ ExampleStreamProcessor:
         BucketName: 'MyS3Bucket'
       NotificationChannel:
         Arn: 'arn:aws:sns:us-east-1:123456789012:mystack-mytopic-ABCDEFGHIJKL'
-
 ```
 
 ### StreamProcessor to detect ConnectedHome labels with specific bounding-box based regions of interest and polygon based regions of interest and polygons configured
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured"></a>
 
-This template creates a stream processor that is configured to detect PERSON and PACKAGE. The template configures specific regions of
-interest using `BoundingBoxRegionsOfInterest` and `PolygonRegionsOfInterest`, hence Rekognition outputs labels of interest detected
-within those defined bounding boxes and polygons. The template also specifies the optional KMS key ID which Rekognition uses to
-encrypt results while publishing data to the Amazon S3 bucket.
+This template creates a stream processor that is configured to detect PERSON and PACKAGE. The template configures specific regions of interest using `BoundingBoxRegionsOfInterest` and `PolygonRegionsOfInterest`, hence Rekognition outputs labels of interest detected within those defined bounding boxes and polygons. The template also specifies the optional KMS key ID which Rekognition uses to encrypt results while publishing data to the Amazon S3 bucket.
 
 #### JSON
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured--json"></a>
 
-```json
-
+```
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -531,9 +414,9 @@ encrypt results while publishing data to the Amazon S3 bucket.
 ```
 
 #### YAML
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured--yaml"></a>
 
-```yaml
-
+```
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -580,20 +463,17 @@ ExampleStreamProcessor:
           Value: 'Value1'
         - Key: 'Key2'
           Value: 'Value2'
-
 ```
 
 ### StreamProcessor to detect ConnectedHome labels with specific bounding-box based regions of interest and polygon based regions of interest configured
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured"></a>
 
-This template creates a stream processor that is configured to detect PERSON and PACKAGE. The template
-configures specific regions of interest using `BoundingBoxRegionsOfInterest` , hence Rekognition
-outputs labels of interest detected within those defined bounding boxes. The template also specifies the
-optional KMS key ID which Rekognition uses to encrypt results while publishing data to the Amazon S3 bucket.
+This template creates a stream processor that is configured to detect PERSON and PACKAGE. The template configures specific regions of interest using `BoundingBoxRegionsOfInterest` , hence Rekognition outputs labels of interest detected within those defined bounding boxes. The template also specifies the optional KMS key ID which Rekognition uses to encrypt results while publishing data to the Amazon S3 bucket.
 
 #### JSON
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured--json"></a>
 
-```json
-
+```
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -647,9 +527,9 @@ optional KMS key ID which Rekognition uses to encrypt results while publishing d
 ```
 
 #### YAML
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured--yaml"></a>
 
-```yaml
-
+```
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -684,16 +564,14 @@ ExampleStreamProcessor:
 ```
 
 ### StreamProcessor to detect ConnectedHome labels with specific polygons configured
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured"></a>
 
-This template creates a stream processor that is configured to detect PERSON and PACKAGE.
-The template configures specific regions of interest using `PolygonRegionsOfInterest` , hence Rekognition
-outputs labels of interest detected within those defined polygons. The template also specifies the optional
-KMS key ID which Rekognition uses to encrypt results while publishing data to the Amazon S3 bucket.
+This template creates a stream processor that is configured to detect PERSON and PACKAGE. The template configures specific regions of interest using `PolygonRegionsOfInterest` , hence Rekognition outputs labels of interest detected within those defined polygons. The template also specifies the optional KMS key ID which Rekognition uses to encrypt results while publishing data to the Amazon S3 bucket.
 
 #### JSON
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured--json"></a>
 
-```json
-
+```
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -763,9 +641,9 @@ KMS key ID which Rekognition uses to encrypt results while publishing data to th
 ```
 
 #### YAML
+<a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured--yaml"></a>
 
-```yaml
-
+```
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -803,13 +681,6 @@ ExampleStreamProcessor:
           Value: 'Value1'
         - Key: 'Key2'
           Value: 'Value2'
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-BoundingBox
 
 All content copied from https://docs.aws.amazon.com/.

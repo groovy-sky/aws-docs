@@ -2,91 +2,65 @@
 title: "AWS::Batch::JobDefinition EksContainerVolumeMount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition EksContainerVolumeMount
+<a name="aws-properties-batch-jobdefinition-ekscontainervolumemount"></a>
 
-The volume mounts for a container for an Amazon EKS job. For more information about volumes and
-volume mounts in Kubernetes, see [Volumes](https://kubernetes.io/docs/concepts/storage/volumes) in the _Kubernetes documentation_.
+The volume mounts for a container for an Amazon EKS job. For more information about volumes and volume mounts in Kubernetes, see [Volumes](https://kubernetes.io/docs/concepts/storage/volumes/) in the *Kubernetes documentation*.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-ekscontainervolumemount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-ekscontainervolumemount-syntax.json"></a>
 
-```json
-
+```
 {
-  "MountPath" : String,
-  "Name" : String,
-  "ReadOnly" : Boolean,
-  "SubPath" : String
+  "[MountPath](#cfn-batch-jobdefinition-ekscontainervolumemount-mountpath)" : {{String}},
+  "[Name](#cfn-batch-jobdefinition-ekscontainervolumemount-name)" : {{String}},
+  "[ReadOnly](#cfn-batch-jobdefinition-ekscontainervolumemount-readonly)" : {{Boolean}},
+  "[SubPath](#cfn-batch-jobdefinition-ekscontainervolumemount-subpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-ekscontainervolumemount-syntax.yaml"></a>
 
-```yaml
-
-  MountPath: String
-  Name: String
-  ReadOnly: Boolean
-  SubPath: String
-
+```
+  [MountPath](#cfn-batch-jobdefinition-ekscontainervolumemount-mountpath): {{String}}
+  [Name](#cfn-batch-jobdefinition-ekscontainervolumemount-name): {{String}}
+  [ReadOnly](#cfn-batch-jobdefinition-ekscontainervolumemount-readonly): {{Boolean}}
+  [SubPath](#cfn-batch-jobdefinition-ekscontainervolumemount-subpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-ekscontainervolumemount-properties"></a>
 
-`MountPath`
-
+`MountPath`  <a name="cfn-batch-jobdefinition-ekscontainervolumemount-mountpath"></a>
 The path on the container where the volume is mounted.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-batch-jobdefinition-ekscontainervolumemount-name"></a>
+The name the volume mount. This must match the name of one of the volumes in the pod.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ReadOnly`  <a name="cfn-batch-jobdefinition-ekscontainervolumemount-readonly"></a>
+If this value is `true`, the container has read-only access to the volume. Otherwise, the container can write to the volume. The default value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name the volume mount. This must match the name of one of the volumes in the
-pod.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReadOnly`
-
-If this value is `true`, the container has read-only access to the volume.
-Otherwise, the container can write to the volume. The default value is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubPath`
-
+`SubPath`  <a name="cfn-batch-jobdefinition-ekscontainervolumemount-subpath"></a>
 A sub-path inside the referenced volume instead of its root.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EksContainerSecurityContext
-
-EksEmptyDir
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

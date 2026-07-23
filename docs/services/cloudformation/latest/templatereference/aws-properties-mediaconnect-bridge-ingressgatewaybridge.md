@@ -2,64 +2,49 @@
 title: "AWS::MediaConnect::Bridge IngressGatewayBridge"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Bridge IngressGatewayBridge
+<a name="aws-properties-mediaconnect-bridge-ingressgatewaybridge"></a>
 
 Create a bridge with the ingress bridge type. An ingress bridge is a ground-to-cloud bridge. The content originates at your premises and is delivered to the cloud.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-bridge-ingressgatewaybridge-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-bridge-ingressgatewaybridge-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxBitrate" : Integer,
-  "MaxOutputs" : Integer
+  "[MaxBitrate](#cfn-mediaconnect-bridge-ingressgatewaybridge-maxbitrate)" : {{Integer}},
+  "[MaxOutputs](#cfn-mediaconnect-bridge-ingressgatewaybridge-maxoutputs)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-bridge-ingressgatewaybridge-syntax.yaml"></a>
 
-```yaml
-
-  MaxBitrate: Integer
-  MaxOutputs: Integer
-
+```
+  [MaxBitrate](#cfn-mediaconnect-bridge-ingressgatewaybridge-maxbitrate): {{Integer}}
+  [MaxOutputs](#cfn-mediaconnect-bridge-ingressgatewaybridge-maxoutputs): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-bridge-ingressgatewaybridge-properties"></a>
 
-`MaxBitrate`
-
+`MaxBitrate`  <a name="cfn-mediaconnect-bridge-ingressgatewaybridge-maxbitrate"></a>
 The maximum expected bitrate (in bps) of the ingress bridge.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxOutputs`
-
+`MaxOutputs`  <a name="cfn-mediaconnect-bridge-ingressgatewaybridge-maxoutputs"></a>
 The maximum number of outputs on the ingress bridge.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FailoverConfig
-
-MulticastSourceSettings
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

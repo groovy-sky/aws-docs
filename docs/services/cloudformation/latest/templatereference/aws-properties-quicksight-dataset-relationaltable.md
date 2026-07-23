@@ -2,117 +2,82 @@
 title: "AWS::QuickSight::DataSet RelationalTable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet RelationalTable
+<a name="aws-properties-quicksight-dataset-relationaltable"></a>
 
 A physical table type for relational data sources.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-relationaltable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-relationaltable-syntax.json"></a>
 
-```json
-
+```
 {
-  "Catalog" : String,
-  "DataSourceArn" : String,
-  "InputColumns" : [ InputColumn, ... ],
-  "Name" : String,
-  "Schema" : String
+  "[Catalog](#cfn-quicksight-dataset-relationaltable-catalog)" : {{String}},
+  "[DataSourceArn](#cfn-quicksight-dataset-relationaltable-datasourcearn)" : {{String}},
+  "[InputColumns](#cfn-quicksight-dataset-relationaltable-inputcolumns)" : {{[ InputColumn, ... ]}},
+  "[Name](#cfn-quicksight-dataset-relationaltable-name)" : {{String}},
+  "[Schema](#cfn-quicksight-dataset-relationaltable-schema)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-relationaltable-syntax.yaml"></a>
 
-```yaml
-
-  Catalog: String
-  DataSourceArn: String
-  InputColumns:
-    - InputColumn
-  Name: String
-  Schema: String
-
+```
+  [Catalog](#cfn-quicksight-dataset-relationaltable-catalog): {{String}}
+  [DataSourceArn](#cfn-quicksight-dataset-relationaltable-datasourcearn): {{String}}
+  [InputColumns](#cfn-quicksight-dataset-relationaltable-inputcolumns): {{
+    - InputColumn}}
+  [Name](#cfn-quicksight-dataset-relationaltable-name): {{String}}
+  [Schema](#cfn-quicksight-dataset-relationaltable-schema): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-relationaltable-properties"></a>
 
-`Catalog`
-
+`Catalog`  <a name="cfn-quicksight-dataset-relationaltable-catalog"></a>
 The catalog associated with a table.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSourceArn`
-
+`DataSourceArn`  <a name="cfn-quicksight-dataset-relationaltable-datasourcearn"></a>
 The Amazon Resource Name (ARN) for the data source.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputColumns`
-
+`InputColumns`  <a name="cfn-quicksight-dataset-relationaltable-inputcolumns"></a>
 The column schema of the table.
+*Required*: Yes
+*Type*: Array of [InputColumn](aws-properties-quicksight-dataset-inputcolumn.md)
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [InputColumn](aws-properties-quicksight-dataset-inputcolumn.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-dataset-relationaltable-name"></a>
 The name of the relational table.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Schema`
-
+`Schema`  <a name="cfn-quicksight-dataset-relationaltable-schema"></a>
 The schema name. This name applies to certain relational database engines.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RefreshFailureEmailAlert
-
-RenameColumnOperation
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

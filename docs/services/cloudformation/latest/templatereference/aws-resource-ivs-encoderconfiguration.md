@@ -2,127 +2,110 @@
 title: "AWS::IVS::EncoderConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::EncoderConfiguration
+<a name="aws-resource-ivs-encoderconfiguration"></a>
 
-The `AWS::IVS::EncoderConfiguration` resource specifies an Amazon IVS
-encoder configuration. An encoder configuration describes a stream’s video configuration. For more information,
-see [Streaming Configuration](../../../ivs/latest/lowlatencyuserguide/streaming-config.md)
-in the _Amazon IVS Low-Latency Streaming User Guide_.
+The `AWS::IVS::EncoderConfiguration` resource specifies an Amazon IVS encoder configuration. An encoder configuration describes a stream’s video configuration. For more information, see [Streaming Configuration](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/streaming-config.html) in the *Amazon IVS Low-Latency Streaming User Guide*.
 
 ## Syntax
+<a name="aws-resource-ivs-encoderconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivs-encoderconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVS::EncoderConfiguration",
   "Properties" : {
-      "Name" : String,
-      "Tags" : [ Tag, ... ],
-      "Video" : Video
+      "[Name](#cfn-ivs-encoderconfiguration-name)" : {{String}},
+      "[Tags](#cfn-ivs-encoderconfiguration-tags)" : {{[ Tag, ... ]}},
+      "[Video](#cfn-ivs-encoderconfiguration-video)" : {{Video}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivs-encoderconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVS::EncoderConfiguration
 Properties:
-  Name: String
-  Tags:
-    - Tag
-  Video:
-    Video
-
+  [Name](#cfn-ivs-encoderconfiguration-name): {{String}}
+  [Tags](#cfn-ivs-encoderconfiguration-tags): {{
+    - Tag}}
+  [Video](#cfn-ivs-encoderconfiguration-video): {{
+    Video}}
 ```
 
 ## Properties
+<a name="aws-resource-ivs-encoderconfiguration-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-ivs-encoderconfiguration-name"></a>
 Encoder cnfiguration name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]*$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivs-encoderconfiguration-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-encoderconfiguration-tag.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivs-encoderconfiguration-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-ivs-encoderconfiguration-tag.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivs-encoderconfiguration-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Video`
-
-Video configuration. Default: video resolution 1280x720, bitrate 2500 kbps, 30 fps. See the [Video](../userguide/aws-properties-ivs-encoderconfiguration-video.md) property type for more information.
-
-_Required_: No
-
-_Type_: [Video](aws-properties-ivs-encoderconfiguration-video.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Video`  <a name="cfn-ivs-encoderconfiguration-video"></a>
+Video configuration. Default: video resolution 1280x720, bitrate 2500 kbps, 30 fps. See the [Video](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-encoderconfiguration-video.html) property type for more information.
+*Required*: No
+*Type*: [Video](aws-properties-ivs-encoderconfiguration-video.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ivs-encoderconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivs-encoderconfiguration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the encoder-configuration ARN. For example:
 
-`{ "Ref": "myEncoderConfiguration" }`
+ `{ "Ref": "myEncoderConfiguration" }`
 
-For the Amazon IVS encoder configuration
-`"myEncoderConfiguration"`, `Ref` returns the
-encoder-configuration ARN.
+For the Amazon IVS encoder configuration `"myEncoderConfiguration"`, `Ref` returns the encoder-configuration ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivs-encoderconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivs-encoderconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
-The encoder-configuration ARN. For example:
-`arn:aws:ivs:us-west-2:123456789012:encoder-configuration/abcdABCDefgh`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The encoder-configuration ARN. For example: `arn:aws:ivs:us-west-2:123456789012:encoder-configuration/abcdABCDefgh`
 
 ## Examples
+<a name="aws-resource-ivs-encoderconfiguration--examples"></a>
 
 ### EncoderConfiguration Template Examples
+<a name="aws-resource-ivs-encoderconfiguration--examples--EncoderConfiguration_Template_Examples"></a>
 
 The following examples specify an Amazon IVS encoder configuration.
 
 #### JSON
+<a name="aws-resource-ivs-encoderconfiguration--examples--EncoderConfiguration_Template_Examples--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -146,13 +129,12 @@ The following examples specify an Amazon IVS encoder configuration.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-ivs-encoderconfiguration--examples--EncoderConfiguration_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   EncoderConfiguration:
@@ -167,20 +149,11 @@ Resources:
       Tags:
         - Key: myKey
           Value: myValue
-
 ```
 
 ## See also
-
-- [Getting\
-Started with IVS Real-Time Streaming](../../../ivs/latest/realtimeuserguide/getting-started.md)
-
-- [Server-Side Composition (Real-Time Streaming)](../../../ivs/latest/realtimeuserguide/server-side-composition.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+<a name="aws-resource-ivs-encoderconfiguration--seealso"></a>
++  [Getting Started with IVS Real-Time Streaming](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started.html)
++  [ Server-Side Composition (Real-Time Streaming)](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html)
 
 All content copied from https://docs.aws.amazon.com/.

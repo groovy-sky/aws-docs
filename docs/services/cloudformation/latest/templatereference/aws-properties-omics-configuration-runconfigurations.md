@@ -2,53 +2,42 @@
 title: "AWS::Omics::Configuration RunConfigurations"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::Configuration RunConfigurations
+<a name="aws-properties-omics-configuration-runconfigurations"></a>
 
 Run-specific configuration settings.
 
 ## Syntax
+<a name="aws-properties-omics-configuration-runconfigurations-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-configuration-runconfigurations-syntax.json"></a>
 
-```json
-
+```
 {
-  "VpcConfig" : VpcConfig
+  "[VpcConfig](#cfn-omics-configuration-runconfigurations-vpcconfig)" : {{VpcConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-configuration-runconfigurations-syntax.yaml"></a>
 
-```yaml
-
-  VpcConfig:
-    VpcConfig
-
+```
+  [VpcConfig](#cfn-omics-configuration-runconfigurations-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-configuration-runconfigurations-properties"></a>
 
-`VpcConfig`
-
+`VpcConfig`  <a name="cfn-omics-configuration-runconfigurations-vpcconfig"></a>
 VPC configuration for workflow runs.
-
-_Required_: No
-
-_Type_: [VpcConfig](aws-properties-omics-configuration-vpcconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Omics::Configuration
-
-VpcConfig
+*Required*: No
+*Type*: [VpcConfig](aws-properties-omics-configuration-vpcconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

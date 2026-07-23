@@ -2,65 +2,49 @@
 title: "AWS::AmazonMQ::Broker LogList"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmazonMQ::Broker LogList
+<a name="aws-properties-amazonmq-broker-loglist"></a>
 
 The list of information about logs to be enabled for the specified broker.
 
 ## Syntax
+<a name="aws-properties-amazonmq-broker-loglist-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amazonmq-broker-loglist-syntax.json"></a>
 
-```json
-
+```
 {
-  "Audit" : Boolean,
-  "General" : Boolean
+  "[Audit](#cfn-amazonmq-broker-loglist-audit)" : {{Boolean}},
+  "[General](#cfn-amazonmq-broker-loglist-general)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amazonmq-broker-loglist-syntax.yaml"></a>
 
-```yaml
-
-  Audit: Boolean
-  General: Boolean
-
+```
+  [Audit](#cfn-amazonmq-broker-loglist-audit): {{Boolean}}
+  [General](#cfn-amazonmq-broker-loglist-general): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-amazonmq-broker-loglist-properties"></a>
 
-`Audit`
+`Audit`  <a name="cfn-amazonmq-broker-loglist-audit"></a>
+Enables audit logging. Every user management action made using JMX or the ActiveMQ Web Console is logged. Does not apply to RabbitMQ brokers.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Enables audit logging. Every user management action made using JMX or the ActiveMQ
-Web Console is logged. Does not apply to RabbitMQ brokers.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`General`
-
+`General`  <a name="cfn-amazonmq-broker-loglist-general"></a>
 Enables general logging.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LdapServerMetadata
-
-MaintenanceWindow
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,77 @@
 title: "AWS::SES::ConfigurationSetEventDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSetEventDestination
+<a name="aws-resource-ses-configurationseteventdestination"></a>
 
-Specifies a configuration set event destination. _Events_ include
-message sends, deliveries, opens, clicks, bounces, and complaints. _Event_
-_destinations_ are places that you can send information about these events
-to. For example, you can send event data to Amazon SNS to receive notifications when you
-receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream
-data to Amazon S3 for long-term storage.
+Specifies a configuration set event destination. *Events* include message sends, deliveries, opens, clicks, bounces, and complaints. *Event destinations* are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
 
 A single configuration set can include more than one event destination.
 
 ## Syntax
+<a name="aws-resource-ses-configurationseteventdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-configurationseteventdestination-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::ConfigurationSetEventDestination",
   "Properties" : {
-      "ConfigurationSetName" : String,
-      "EventDestination" : EventDestination
+      "[ConfigurationSetName](#cfn-ses-configurationseteventdestination-configurationsetname)" : {{String}},
+      "[EventDestination](#cfn-ses-configurationseteventdestination-eventdestination)" : {{EventDestination}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-configurationseteventdestination-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::ConfigurationSetEventDestination
 Properties:
-  ConfigurationSetName: String
-  EventDestination:
-    EventDestination
-
+  [ConfigurationSetName](#cfn-ses-configurationseteventdestination-configurationsetname): {{String}}
+  [EventDestination](#cfn-ses-configurationseteventdestination-eventdestination): {{
+    EventDestination}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-configurationseteventdestination-properties"></a>
 
-`ConfigurationSetName`
-
+`ConfigurationSetName`  <a name="cfn-ses-configurationseteventdestination-configurationsetname"></a>
 The name of the configuration set that contains the event destination.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EventDestination`
-
+`EventDestination`  <a name="cfn-ses-configurationseteventdestination-eventdestination"></a>
 An object that defines the event destination.
-
-_Required_: Yes
-
-_Type_: [EventDestination](aws-properties-ses-configurationseteventdestination-eventdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: [EventDestination](aws-properties-ses-configurationseteventdestination-eventdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-configurationseteventdestination-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-configurationseteventdestination-return-values-fn--getatt"></a>
 
 ## Examples
+<a name="aws-resource-ses-configurationseteventdestination--examples"></a>
 
 Specifies an event destination for a configuration set.
 
+###
+<a name="aws-resource-ses-configurationseteventdestination--examples--"></a>
+
 #### JSON
+<a name="aws-resource-ses-configurationseteventdestination--examples----json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES ConfigurationSetEventDestination Sample Template",
@@ -184,9 +176,9 @@ Specifies an event destination for a configuration set.
 ```
 
 #### YAML
+<a name="aws-resource-ses-configurationseteventdestination--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES ConfigurationSetEventDestination Sample Template
 Parameters:
@@ -237,11 +229,5 @@ Resources:
               DimensionValueSource: !Ref DimensionValueSource2
               DefaultDimensionValue: !Ref DefaultDimensionValue2
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VdmOptions
-
-CloudWatchDestination
 
 All content copied from https://docs.aws.amazon.com/.

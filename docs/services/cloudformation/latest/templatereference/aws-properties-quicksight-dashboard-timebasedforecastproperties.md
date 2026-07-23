@@ -2,132 +2,91 @@
 title: "AWS::QuickSight::Dashboard TimeBasedForecastProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TimeBasedForecastProperties
+<a name="aws-properties-quicksight-dashboard-timebasedforecastproperties"></a>
 
 The forecast properties setup of a forecast in the line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-timebasedforecastproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-timebasedforecastproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "LowerBoundary" : Number,
-  "PeriodsBackward" : Number,
-  "PeriodsForward" : Number,
-  "PredictionInterval" : Number,
-  "Seasonality" : Number,
-  "UpperBoundary" : Number
+  "[LowerBoundary](#cfn-quicksight-dashboard-timebasedforecastproperties-lowerboundary)" : {{Number}},
+  "[PeriodsBackward](#cfn-quicksight-dashboard-timebasedforecastproperties-periodsbackward)" : {{Number}},
+  "[PeriodsForward](#cfn-quicksight-dashboard-timebasedforecastproperties-periodsforward)" : {{Number}},
+  "[PredictionInterval](#cfn-quicksight-dashboard-timebasedforecastproperties-predictioninterval)" : {{Number}},
+  "[Seasonality](#cfn-quicksight-dashboard-timebasedforecastproperties-seasonality)" : {{Number}},
+  "[UpperBoundary](#cfn-quicksight-dashboard-timebasedforecastproperties-upperboundary)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-timebasedforecastproperties-syntax.yaml"></a>
 
-```yaml
-
-  LowerBoundary: Number
-  PeriodsBackward: Number
-  PeriodsForward: Number
-  PredictionInterval: Number
-  Seasonality: Number
-  UpperBoundary: Number
-
+```
+  [LowerBoundary](#cfn-quicksight-dashboard-timebasedforecastproperties-lowerboundary): {{Number}}
+  [PeriodsBackward](#cfn-quicksight-dashboard-timebasedforecastproperties-periodsbackward): {{Number}}
+  [PeriodsForward](#cfn-quicksight-dashboard-timebasedforecastproperties-periodsforward): {{Number}}
+  [PredictionInterval](#cfn-quicksight-dashboard-timebasedforecastproperties-predictioninterval): {{Number}}
+  [Seasonality](#cfn-quicksight-dashboard-timebasedforecastproperties-seasonality): {{Number}}
+  [UpperBoundary](#cfn-quicksight-dashboard-timebasedforecastproperties-upperboundary): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-timebasedforecastproperties-properties"></a>
 
-`LowerBoundary`
-
+`LowerBoundary`  <a name="cfn-quicksight-dashboard-timebasedforecastproperties-lowerboundary"></a>
 The lower boundary setup of a forecast computation.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeriodsBackward`
-
+`PeriodsBackward`  <a name="cfn-quicksight-dashboard-timebasedforecastproperties-periodsbackward"></a>
 The periods backward setup of a forecast computation.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeriodsForward`
-
+`PeriodsForward`  <a name="cfn-quicksight-dashboard-timebasedforecastproperties-periodsforward"></a>
 The periods forward setup of a forecast computation.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PredictionInterval`
-
+`PredictionInterval`  <a name="cfn-quicksight-dashboard-timebasedforecastproperties-predictioninterval"></a>
 The prediction interval setup of a forecast computation.
+*Required*: No
+*Type*: Number
+*Minimum*: `50`
+*Maximum*: `95`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `50`
-
-_Maximum_: `95`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Seasonality`
-
+`Seasonality`  <a name="cfn-quicksight-dashboard-timebasedforecastproperties-seasonality"></a>
 The seasonality setup of a forecast computation. Choose one of the following options:
++ `NULL`: The input is set to `NULL`.
++ `NON_NULL`: The input is set to a custom value.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `180`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `NULL`: The input is set to `NULL`.
-
-- `NON_NULL`: The input is set to a custom value.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `180`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpperBoundary`
-
+`UpperBoundary`  <a name="cfn-quicksight-dashboard-timebasedforecastproperties-upperboundary"></a>
 The upper boundary setup of a forecast computation.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ThousandSeparatorOptions
-
-TimeEqualityFilter
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

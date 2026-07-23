@@ -2,65 +2,50 @@
 title: "AWS::DevOpsAgent::Service DynatraceServiceDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Service DynatraceServiceDetails
+<a name="aws-properties-devopsagent-service-dynatraceservicedetails"></a>
 
 Configuration details for registering a Dynatrace service.
 
 ## Syntax
+<a name="aws-properties-devopsagent-service-dynatraceservicedetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-service-dynatraceservicedetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountUrn" : String,
-  "AuthorizationConfig" : DynatraceAuthorizationConfig
+  "[AccountUrn](#cfn-devopsagent-service-dynatraceservicedetails-accounturn)" : {{String}},
+  "[AuthorizationConfig](#cfn-devopsagent-service-dynatraceservicedetails-authorizationconfig)" : {{DynatraceAuthorizationConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-service-dynatraceservicedetails-syntax.yaml"></a>
 
-```yaml
-
-  AccountUrn: String
-  AuthorizationConfig:
-    DynatraceAuthorizationConfig
-
+```
+  [AccountUrn](#cfn-devopsagent-service-dynatraceservicedetails-accounturn): {{String}}
+  [AuthorizationConfig](#cfn-devopsagent-service-dynatraceservicedetails-authorizationconfig): {{
+    DynatraceAuthorizationConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-service-dynatraceservicedetails-properties"></a>
 
-`AccountUrn`
-
+`AccountUrn`  <a name="cfn-devopsagent-service-dynatraceservicedetails-accounturn"></a>
 The Dynatrace account URN.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AuthorizationConfig`
-
+`AuthorizationConfig`  <a name="cfn-devopsagent-service-dynatraceservicedetails-authorizationconfig"></a>
 The authorization configuration for the Dynatrace service.
-
-_Required_: No
-
-_Type_: [DynatraceAuthorizationConfig](aws-properties-devopsagent-service-dynatraceauthorizationconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynatraceAuthorizationConfig
-
-GitLabDetails
+*Required*: No
+*Type*: [DynatraceAuthorizationConfig](aws-properties-devopsagent-service-dynatraceauthorizationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

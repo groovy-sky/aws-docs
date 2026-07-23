@@ -2,89 +2,64 @@
 title: "AWS::QuickSight::Template FilterCrossSheetControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FilterCrossSheetControl
+<a name="aws-properties-quicksight-template-filtercrosssheetcontrol"></a>
 
 A control from a filter that is scoped across more than one sheet. This represents your filter control on a sheet
 
 ## Syntax
+<a name="aws-properties-quicksight-template-filtercrosssheetcontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-filtercrosssheetcontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "CascadingControlConfiguration" : CascadingControlConfiguration,
-  "FilterControlId" : String,
-  "SourceFilterId" : String
+  "[CascadingControlConfiguration](#cfn-quicksight-template-filtercrosssheetcontrol-cascadingcontrolconfiguration)" : {{CascadingControlConfiguration}},
+  "[FilterControlId](#cfn-quicksight-template-filtercrosssheetcontrol-filtercontrolid)" : {{String}},
+  "[SourceFilterId](#cfn-quicksight-template-filtercrosssheetcontrol-sourcefilterid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-filtercrosssheetcontrol-syntax.yaml"></a>
 
-```yaml
-
-  CascadingControlConfiguration:
-    CascadingControlConfiguration
-  FilterControlId: String
-  SourceFilterId: String
-
+```
+  [CascadingControlConfiguration](#cfn-quicksight-template-filtercrosssheetcontrol-cascadingcontrolconfiguration): {{
+    CascadingControlConfiguration}}
+  [FilterControlId](#cfn-quicksight-template-filtercrosssheetcontrol-filtercontrolid): {{String}}
+  [SourceFilterId](#cfn-quicksight-template-filtercrosssheetcontrol-sourcefilterid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-filtercrosssheetcontrol-properties"></a>
 
-`CascadingControlConfiguration`
-
+`CascadingControlConfiguration`  <a name="cfn-quicksight-template-filtercrosssheetcontrol-cascadingcontrolconfiguration"></a>
 The values that are displayed in a control can be configured to only show values that are valid based on what's selected in other controls.
+*Required*: No
+*Type*: [CascadingControlConfiguration](aws-properties-quicksight-template-cascadingcontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CascadingControlConfiguration](aws-properties-quicksight-template-cascadingcontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterControlId`
-
+`FilterControlId`  <a name="cfn-quicksight-template-filtercrosssheetcontrol-filtercontrolid"></a>
 The ID of the `FilterCrossSheetControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceFilterId`
-
+`SourceFilterId`  <a name="cfn-quicksight-template-filtercrosssheetcontrol-sourcefilterid"></a>
 The source filter ID of the `FilterCrossSheetControl`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterControl
-
-FilterDateTimePickerControl
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

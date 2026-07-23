@@ -2,80 +2,60 @@
 title: "AWS::SageMaker::ModelQualityJobDefinition ModelQualityJobInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelQualityJobDefinition ModelQualityJobInput
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualityjobinput"></a>
 
-The input for the model quality monitoring job. Currently endpoints are supported for
-input for model quality monitoring jobs.
+The input for the model quality monitoring job. Currently endpoints are supported for input for model quality monitoring jobs.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualityjobinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualityjobinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchTransformInput" : BatchTransformInput,
-  "EndpointInput" : EndpointInput,
-  "GroundTruthS3Input" : MonitoringGroundTruthS3Input
+  "[BatchTransformInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-batchtransforminput)" : {{BatchTransformInput}},
+  "[EndpointInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-endpointinput)" : {{EndpointInput}},
+  "[GroundTruthS3Input](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-groundtruths3input)" : {{MonitoringGroundTruthS3Input}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualityjobinput-syntax.yaml"></a>
 
-```yaml
-
-  BatchTransformInput:
-    BatchTransformInput
-  EndpointInput:
-    EndpointInput
-  GroundTruthS3Input:
-    MonitoringGroundTruthS3Input
-
+```
+  [BatchTransformInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-batchtransforminput): {{
+    BatchTransformInput}}
+  [EndpointInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-endpointinput): {{
+    EndpointInput}}
+  [GroundTruthS3Input](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-groundtruths3input): {{
+    MonitoringGroundTruthS3Input}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualityjobinput-properties"></a>
 
-`BatchTransformInput`
-
+`BatchTransformInput`  <a name="cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-batchtransforminput"></a>
 Input object for the batch transform job.
+*Required*: No
+*Type*: [BatchTransformInput](aws-properties-sagemaker-modelqualityjobdefinition-batchtransforminput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [BatchTransformInput](aws-properties-sagemaker-modelqualityjobdefinition-batchtransforminput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EndpointInput`
-
+`EndpointInput`  <a name="cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-endpointinput"></a>
 Input object for the endpoint
+*Required*: No
+*Type*: [EndpointInput](aws-properties-sagemaker-modelqualityjobdefinition-endpointinput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [EndpointInput](aws-properties-sagemaker-modelqualityjobdefinition-endpointinput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GroundTruthS3Input`
-
+`GroundTruthS3Input`  <a name="cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-groundtruths3input"></a>
 The ground truth label provided for the model.
-
-_Required_: Yes
-
-_Type_: [MonitoringGroundTruthS3Input](aws-properties-sagemaker-modelqualityjobdefinition-monitoringgroundtruths3input.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelQualityBaselineConfig
-
-MonitoringGroundTruthS3Input
+*Required*: Yes
+*Type*: [MonitoringGroundTruthS3Input](aws-properties-sagemaker-modelqualityjobdefinition-monitoringgroundtruths3input.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

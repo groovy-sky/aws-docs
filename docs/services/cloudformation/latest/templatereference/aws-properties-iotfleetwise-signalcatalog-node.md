@@ -2,110 +2,73 @@
 title: "AWS::IoTFleetWise::SignalCatalog Node"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::SignalCatalog Node
+<a name="aws-properties-iotfleetwise-signalcatalog-node"></a>
 
-A general abstraction of a signal. A node can be specified as an actuator, attribute,
-branch, or sensor.
+A general abstraction of a signal. A node can be specified as an actuator, attribute, branch, or sensor.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-signalcatalog-node-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-signalcatalog-node-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actuator" : Actuator,
-  "Attribute" : Attribute,
-  "Branch" : Branch,
-  "Sensor" : Sensor
+  "[Actuator](#cfn-iotfleetwise-signalcatalog-node-actuator)" : {{Actuator}},
+  "[Attribute](#cfn-iotfleetwise-signalcatalog-node-attribute)" : {{Attribute}},
+  "[Branch](#cfn-iotfleetwise-signalcatalog-node-branch)" : {{Branch}},
+  "[Sensor](#cfn-iotfleetwise-signalcatalog-node-sensor)" : {{Sensor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-signalcatalog-node-syntax.yaml"></a>
 
-```yaml
-
-  Actuator:
-    Actuator
-  Attribute:
-    Attribute
-  Branch:
-    Branch
-  Sensor:
-    Sensor
-
+```
+  [Actuator](#cfn-iotfleetwise-signalcatalog-node-actuator): {{
+    Actuator}}
+  [Attribute](#cfn-iotfleetwise-signalcatalog-node-attribute): {{
+    Attribute}}
+  [Branch](#cfn-iotfleetwise-signalcatalog-node-branch): {{
+    Branch}}
+  [Sensor](#cfn-iotfleetwise-signalcatalog-node-sensor): {{
+    Sensor}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-signalcatalog-node-properties"></a>
 
-`Actuator`
-
-Information about a node specified as an actuator.
-
-###### Note
-
+`Actuator`  <a name="cfn-iotfleetwise-signalcatalog-node-actuator"></a>
+ Information about a node specified as an actuator.
 An actuator is a digital representation of a vehicle device.
+*Required*: No
+*Type*: [Actuator](aws-properties-iotfleetwise-signalcatalog-actuator.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Actuator](aws-properties-iotfleetwise-signalcatalog-actuator.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Attribute`
-
-Information about a node specified as an attribute.
-
-###### Note
-
+`Attribute`  <a name="cfn-iotfleetwise-signalcatalog-node-attribute"></a>
+ Information about a node specified as an attribute.
 An attribute represents static information about a vehicle.
+*Required*: No
+*Type*: [Attribute](aws-properties-iotfleetwise-signalcatalog-attribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Attribute](aws-properties-iotfleetwise-signalcatalog-attribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Branch`
-
-Information about a node specified as a branch.
-
-###### Note
-
+`Branch`  <a name="cfn-iotfleetwise-signalcatalog-node-branch"></a>
+ Information about a node specified as a branch.
 A group of signals that are defined in a hierarchical structure.
+*Required*: No
+*Type*: [Branch](aws-properties-iotfleetwise-signalcatalog-branch.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Branch](aws-properties-iotfleetwise-signalcatalog-branch.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sensor`
-
-An input component that reports the environmental condition of a vehicle.
-
-###### Note
-
-You can collect data about fluid levels, temperatures, vibrations, or battery
-voltage from sensors.
-
-_Required_: No
-
-_Type_: [Sensor](aws-properties-iotfleetwise-signalcatalog-sensor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Branch
-
-NodeCounts
+`Sensor`  <a name="cfn-iotfleetwise-signalcatalog-node-sensor"></a>
+ An input component that reports the environmental condition of a vehicle.
+You can collect data about fluid levels, temperatures, vibrations, or battery voltage from sensors.
+*Required*: No
+*Type*: [Sensor](aws-properties-iotfleetwise-signalcatalog-sensor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

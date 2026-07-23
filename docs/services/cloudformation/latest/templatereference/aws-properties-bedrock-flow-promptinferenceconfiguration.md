@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::Flow PromptInferenceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow PromptInferenceConfiguration
+<a name="aws-properties-bedrock-flow-promptinferenceconfiguration"></a>
 
 Contains inference configurations for the prompt.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-promptinferenceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-promptinferenceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Text" : PromptModelInferenceConfiguration
+  "[Text](#cfn-bedrock-flow-promptinferenceconfiguration-text)" : {{PromptModelInferenceConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-promptinferenceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Text:
-    PromptModelInferenceConfiguration
-
+```
+  [Text](#cfn-bedrock-flow-promptinferenceconfiguration-text): {{
+    PromptModelInferenceConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-promptinferenceconfiguration-properties"></a>
 
-`Text`
-
+`Text`  <a name="cfn-bedrock-flow-promptinferenceconfiguration-text"></a>
 Contains inference configurations for a text prompt.
-
-_Required_: Yes
-
-_Type_: [PromptModelInferenceConfiguration](aws-properties-bedrock-flow-promptmodelinferenceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PromptFlowNodeSourceConfiguration
-
-PromptInputVariable
+*Required*: Yes
+*Type*: [PromptModelInferenceConfiguration](aws-properties-bedrock-flow-promptmodelinferenceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

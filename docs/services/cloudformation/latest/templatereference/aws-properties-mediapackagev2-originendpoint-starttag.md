@@ -2,64 +2,49 @@
 title: "AWS::MediaPackageV2::OriginEndpoint StartTag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint StartTag
+<a name="aws-properties-mediapackagev2-originendpoint-starttag"></a>
 
 To insert an EXT-X-START tag in your HLS playlist, specify a StartTag configuration object with a valid TimeOffset. When you do, you can also optionally specify whether to include a PRECISE value in the EXT-X-START tag.
 
 ## Syntax
+<a name="aws-properties-mediapackagev2-originendpoint-starttag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackagev2-originendpoint-starttag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Precise" : Boolean,
-  "TimeOffset" : Number
+  "[Precise](#cfn-mediapackagev2-originendpoint-starttag-precise)" : {{Boolean}},
+  "[TimeOffset](#cfn-mediapackagev2-originendpoint-starttag-timeoffset)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackagev2-originendpoint-starttag-syntax.yaml"></a>
 
-```yaml
-
-  Precise: Boolean
-  TimeOffset: Number
-
+```
+  [Precise](#cfn-mediapackagev2-originendpoint-starttag-precise): {{Boolean}}
+  [TimeOffset](#cfn-mediapackagev2-originendpoint-starttag-timeoffset): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackagev2-originendpoint-starttag-properties"></a>
 
-`Precise`
-
+`Precise`  <a name="cfn-mediapackagev2-originendpoint-starttag-precise"></a>
 Specify the value for PRECISE within your EXT-X-START tag. Leave blank, or choose false, to use the default value NO. Choose yes to use the value YES.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeOffset`
-
+`TimeOffset`  <a name="cfn-mediapackagev2-originendpoint-starttag-timeoffset"></a>
 Specify the value for TIME-OFFSET within your EXT-X-START tag. Enter a signed floating point value which, if positive, must be less than the configured manifest duration minus three times the configured segment target duration. If negative, the absolute value must be larger than three times the configured segment target duration, and the absolute value must be smaller than the configured manifest duration.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SpekeKeyProvider
-
-Tag
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

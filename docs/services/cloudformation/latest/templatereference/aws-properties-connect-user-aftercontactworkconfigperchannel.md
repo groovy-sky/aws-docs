@@ -2,80 +2,60 @@
 title: "AWS::Connect::User AfterContactWorkConfigPerChannel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User AfterContactWorkConfigPerChannel
+<a name="aws-properties-connect-user-aftercontactworkconfigperchannel"></a>
 
 Configuration settings for after contact work (ACW) timeout for a specific channel.
 
 ## Syntax
+<a name="aws-properties-connect-user-aftercontactworkconfigperchannel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-user-aftercontactworkconfigperchannel-syntax.json"></a>
 
-```json
-
+```
 {
-  "AfterContactWorkConfig" : AfterContactWorkConfig,
-  "AgentFirstCallbackAfterContactWorkConfig" : AfterContactWorkConfig,
-  "Channel" : String
+  "[AfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-aftercontactworkconfig)" : {{AfterContactWorkConfig}},
+  "[AgentFirstCallbackAfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-agentfirstcallbackaftercontactworkconfig)" : {{AfterContactWorkConfig}},
+  "[Channel](#cfn-connect-user-aftercontactworkconfigperchannel-channel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-user-aftercontactworkconfigperchannel-syntax.yaml"></a>
 
-```yaml
-
-  AfterContactWorkConfig:
-    AfterContactWorkConfig
-  AgentFirstCallbackAfterContactWorkConfig:
-    AfterContactWorkConfig
-  Channel: String
-
+```
+  [AfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-aftercontactworkconfig): {{
+    AfterContactWorkConfig}}
+  [AgentFirstCallbackAfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-agentfirstcallbackaftercontactworkconfig): {{
+    AfterContactWorkConfig}}
+  [Channel](#cfn-connect-user-aftercontactworkconfigperchannel-channel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-user-aftercontactworkconfigperchannel-properties"></a>
 
-`AfterContactWorkConfig`
-
+`AfterContactWorkConfig`  <a name="cfn-connect-user-aftercontactworkconfigperchannel-aftercontactworkconfig"></a>
 The ACW timeout settings for this channel.
+*Required*: Yes
+*Type*: [AfterContactWorkConfig](aws-properties-connect-user-aftercontactworkconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [AfterContactWorkConfig](aws-properties-connect-user-aftercontactworkconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AgentFirstCallbackAfterContactWorkConfig`
-
+`AgentFirstCallbackAfterContactWorkConfig`  <a name="cfn-connect-user-aftercontactworkconfigperchannel-agentfirstcallbackaftercontactworkconfig"></a>
 The ACW timeout settings for agent-first callbacks. This setting only applies to the VOICE channel.
+*Required*: No
+*Type*: [AfterContactWorkConfig](aws-properties-connect-user-aftercontactworkconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AfterContactWorkConfig](aws-properties-connect-user-aftercontactworkconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Channel`
-
+`Channel`  <a name="cfn-connect-user-aftercontactworkconfigperchannel-channel"></a>
 The channel for this ACW timeout configuration. Valid values: VOICE, CHAT, TASK, EMAIL.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VOICE | CHAT | TASK | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AfterContactWorkConfig
-
-AutoAcceptConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VOICE | CHAT | TASK | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,109 +2,79 @@
 title: "AWS::QuickSight::Dashboard MetricComparisonComputation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard MetricComparisonComputation
+<a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation"></a>
 
 The metric comparison computation configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComputationId" : String,
-  "FromValue" : MeasureField,
-  "Name" : String,
-  "TargetValue" : MeasureField,
-  "Time" : DimensionField
+  "[ComputationId](#cfn-quicksight-dashboard-metriccomparisoncomputation-computationid)" : {{String}},
+  "[FromValue](#cfn-quicksight-dashboard-metriccomparisoncomputation-fromvalue)" : {{MeasureField}},
+  "[Name](#cfn-quicksight-dashboard-metriccomparisoncomputation-name)" : {{String}},
+  "[TargetValue](#cfn-quicksight-dashboard-metriccomparisoncomputation-targetvalue)" : {{MeasureField}},
+  "[Time](#cfn-quicksight-dashboard-metriccomparisoncomputation-time)" : {{DimensionField}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation-syntax.yaml"></a>
 
-```yaml
-
-  ComputationId: String
-  FromValue:
-    MeasureField
-  Name: String
-  TargetValue:
-    MeasureField
-  Time:
-    DimensionField
-
+```
+  [ComputationId](#cfn-quicksight-dashboard-metriccomparisoncomputation-computationid): {{String}}
+  [FromValue](#cfn-quicksight-dashboard-metriccomparisoncomputation-fromvalue): {{
+    MeasureField}}
+  [Name](#cfn-quicksight-dashboard-metriccomparisoncomputation-name): {{String}}
+  [TargetValue](#cfn-quicksight-dashboard-metriccomparisoncomputation-targetvalue): {{
+    MeasureField}}
+  [Time](#cfn-quicksight-dashboard-metriccomparisoncomputation-time): {{
+    DimensionField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation-properties"></a>
 
-`ComputationId`
-
+`ComputationId`  <a name="cfn-quicksight-dashboard-metriccomparisoncomputation-computationid"></a>
 The ID for a computation.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FromValue`
-
+`FromValue`  <a name="cfn-quicksight-dashboard-metriccomparisoncomputation-fromvalue"></a>
 The field that is used in a metric comparison from value setup.
+*Required*: No
+*Type*: [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-dashboard-metriccomparisoncomputation-name"></a>
 The name of a computation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetValue`
-
+`TargetValue`  <a name="cfn-quicksight-dashboard-metriccomparisoncomputation-targetvalue"></a>
 The field that is used in a metric comparison to value setup.
+*Required*: No
+*Type*: [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Time`
-
+`Time`  <a name="cfn-quicksight-dashboard-metriccomparisoncomputation-time"></a>
 The time field that is used in a computation.
-
-_Required_: No
-
-_Type_: [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MeasureField
-
-MinimumLabelType
+*Required*: No
+*Type*: [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

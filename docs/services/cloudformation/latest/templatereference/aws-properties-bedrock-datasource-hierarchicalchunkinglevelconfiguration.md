@@ -2,56 +2,43 @@
 title: "AWS::Bedrock::DataSource HierarchicalChunkingLevelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource HierarchicalChunkingLevelConfiguration
+<a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration"></a>
 
 Token settings for a layer in a hierarchical chunking configuration.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxTokens" : Integer
+  "[MaxTokens](#cfn-bedrock-datasource-hierarchicalchunkinglevelconfiguration-maxtokens)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxTokens: Integer
-
+```
+  [MaxTokens](#cfn-bedrock-datasource-hierarchicalchunkinglevelconfiguration-maxtokens): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration-properties"></a>
 
-`MaxTokens`
-
+`MaxTokens`  <a name="cfn-bedrock-datasource-hierarchicalchunkinglevelconfiguration-maxtokens"></a>
 The maximum number of tokens that a chunk can contain in this layer.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `8192`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HierarchicalChunkingConfiguration
-
-IntermediateStorage
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `8192`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

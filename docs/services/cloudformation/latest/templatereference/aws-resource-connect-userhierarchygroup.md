@@ -2,133 +2,117 @@
 title: "AWS::Connect::UserHierarchyGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::UserHierarchyGroup
+<a name="aws-resource-connect-userhierarchygroup"></a>
 
 Specifies a new user hierarchy group.
 
 ## Syntax
+<a name="aws-resource-connect-userhierarchygroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-userhierarchygroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::UserHierarchyGroup",
   "Properties" : {
-      "InstanceArn" : String,
-      "Name" : String,
-      "ParentGroupArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[InstanceArn](#cfn-connect-userhierarchygroup-instancearn)" : {{String}},
+      "[Name](#cfn-connect-userhierarchygroup-name)" : {{String}},
+      "[ParentGroupArn](#cfn-connect-userhierarchygroup-parentgrouparn)" : {{String}},
+      "[Tags](#cfn-connect-userhierarchygroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-userhierarchygroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::UserHierarchyGroup
 Properties:
-  InstanceArn: String
-  Name: String
-  ParentGroupArn: String
-  Tags:
-    - Tag
-
+  [InstanceArn](#cfn-connect-userhierarchygroup-instancearn): {{String}}
+  [Name](#cfn-connect-userhierarchygroup-name): {{String}}
+  [ParentGroupArn](#cfn-connect-userhierarchygroup-parentgrouparn): {{String}}
+  [Tags](#cfn-connect-userhierarchygroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-userhierarchygroup-properties"></a>
 
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-userhierarchygroup-instancearn"></a>
 The Amazon Resource Name (ARN) of the user hierarchy group.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-userhierarchygroup-name"></a>
 The name of the user hierarchy group.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParentGroupArn`
-
+`ParentGroupArn`  <a name="cfn-connect-userhierarchygroup-parentgrouparn"></a>
 The Amazon Resource Name (ARN) of the parent group.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/agent-group/[-a-zA-Z0-9]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/agent-group/[-a-zA-Z0-9]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-connect-userhierarchygroup-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-connect-userhierarchygroup-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-userhierarchygroup-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-connect-userhierarchygroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-userhierarchygroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the user hierarchy group. For example:
 
-`{ "Ref": "myUserHierarchyGroup" }`
+ `{ "Ref": "myUserHierarchyGroup" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-userhierarchygroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`UserHierarchyGroupArn`
+####
+<a name="aws-resource-connect-userhierarchygroup-return-values-fn--getatt-fn--getatt"></a>
 
+`UserHierarchyGroupArn`  <a name="UserHierarchyGroupArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the user hierarchy group.
 
 ## Examples
+<a name="aws-resource-connect-userhierarchygroup--examples"></a>
 
 ### Specify a user hierarchy group
+<a name="aws-resource-connect-userhierarchygroup--examples--Specify_a_user_hierarchy_group"></a>
 
-The following example specifies a user hierarchy group for an Amazon Connect instance. This example specifies a user hierachy group for the
-instance on top of existing HierarchyStructure
+The following example specifies a user hierarchy group for an Connect Customer instance. This example specifies a user hierachy group for the instance on top of existing HierarchyStructure
 
 #### YAML
+<a name="aws-resource-connect-userhierarchygroup--examples--Specify_a_user_hierarchy_group--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
-Description: Specifies a user hierarchy group for an Amazon Connect instance
+Description: Specifies a user hierarchy group for an Connect Customer instance
 Resources:
     HierarchyGroup:
     Type: 'AWS::Connect::UserHierarchyGroup'
@@ -136,11 +120,5 @@ Resources:
       Name: 'exampleUserHierarchyGroup'
       InstanceArn: 'arn:aws:connect:region-name:aws-account-id:instance/instance-arn'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VoiceEnhancementConfig
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

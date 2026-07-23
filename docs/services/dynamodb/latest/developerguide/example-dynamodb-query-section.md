@@ -1,66 +1,41 @@
 ---
-title: "Use Query with an AWS SDK or CLI"
+title: "Use `Query` with an AWS SDK or CLI"
 ---
 
 # Use `Query` with an AWS SDK or CLI
+<a name="example_dynamodb_Query_section"></a>
 
 The following code examples show how to use `Query`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in
-context in the following code examples:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
++  [Learn the basics](example_dynamodb_Scenario_GettingStartedMovies_section.md)
++  [Accelerate reads with DAX](example_dynamodb_Usage_DaxDemo_section.md)
++  [Advanced Global Secondary Index scenarios](example_dynamodb_Scenario_GSIAdvanced_section.md)
++  [Compare multiple values with a single attribute](example_dynamodb_Scenario_CompareMultipleValues_section.md)
++  [Getting started with NoSQL databases](example_dynamodb_GettingStarted_070_section.md)
++  [Manage Global Secondary Indexes](example_dynamodb_Scenario_GSILifecycle_section.md)
++  [Perform advanced query operations](example_dynamodb_Scenario_AdvancedQueryTechniques_section.md)
++  [Query a table using a begins\_with condition](example_dynamodb_Scenarios_QueryWithBeginsWithCondition_section.md)
++  [Query a table using a date range](example_dynamodb_Scenarios_QueryWithDateRange_section.md)
++  [Query a table using a Global Secondary Index](example_dynamodb_Scenarios_QueryWithGlobalSecondaryIndex_section.md)
++  [Query a table with a complex filter expression](example_dynamodb_Scenarios_QueryWithComplexFilter_section.md)
++  [Query a table with a dynamic filter expression](example_dynamodb_Scenarios_QueryWithDynamicFilter_section.md)
++  [Query a table with a filter expression and limit](example_dynamodb_Scenarios_QueryWithFilterAndLimit_section.md)
++  [Query a table with nested attributes](example_dynamodb_Scenarios_QueryWithNestedAttributes_section.md)
++  [Query a table with pagination](example_dynamodb_Scenarios_QueryWithPagination_section.md)
++  [Query a table with strongly consistent reads](example_dynamodb_Scenarios_QueryWithStronglyConsistentReads_section.md)
++  [Query for TTL items](example_dynamodb_QueryFilteredTTL_section.md)
++  [Query tables using date and time patterns](example_dynamodb_Scenario_DateTimeQueries_section.md)
++  [Use expression attribute names](example_dynamodb_Scenario_ExpressionAttributeNames_section.md)
++  [Work with Local Secondary Indexes](example_dynamodb_Scenario_LSIExamples_section.md)
 
-- [Learn the basics](example-dynamodb-scenario-gettingstartedmovies-section.md)
-
-- [Accelerate reads with DAX](example-dynamodb-usage-daxdemo-section.md)
-
-- [Advanced Global Secondary Index scenarios](example-dynamodb-scenario-gsiadvanced-section.md)
-
-- [Compare multiple values with a single attribute](example-dynamodb-scenario-comparemultiplevalues-section.md)
-
-- [Getting started with DynamoDB](example-dynamodb-gettingstarted-070-section.md)
-
-- [Manage Global Secondary Indexes](example-dynamodb-scenario-gsilifecycle-section.md)
-
-- [Perform advanced query operations](example-dynamodb-scenario-advancedquerytechniques-section.md)
-
-- [Query a table using a begins\_with condition](example-dynamodb-scenarios-querywithbeginswithcondition-section.md)
-
-- [Query a table using a date range](example-dynamodb-scenarios-querywithdaterange-section.md)
-
-- [Query a table using a Global Secondary Index](example-dynamodb-scenarios-querywithglobalsecondaryindex-section.md)
-
-- [Query a table with a complex filter expression](example-dynamodb-scenarios-querywithcomplexfilter-section.md)
-
-- [Query a table with a dynamic filter expression](example-dynamodb-scenarios-querywithdynamicfilter-section.md)
-
-- [Query a table with a filter expression and limit](example-dynamodb-scenarios-querywithfilterandlimit-section.md)
-
-- [Query a table with nested attributes](example-dynamodb-scenarios-querywithnestedattributes-section.md)
-
-- [Query a table with pagination](example-dynamodb-scenarios-querywithpagination-section.md)
-
-- [Query a table with strongly consistent reads](example-dynamodb-scenarios-querywithstronglyconsistentreads-section.md)
-
-- [Query for TTL items](example-dynamodb-queryfilteredttl-section.md)
-
-- [Query tables using date and time patterns](example-dynamodb-scenario-datetimequeries-section.md)
-
-- [Use expression attribute names](example-dynamodb-scenario-expressionattributenames-section.md)
-
-- [Work with Local Secondary Indexes](example-dynamodb-scenario-lsiexamples-section.md)
-
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
     /// <summary>
     /// Queries the table for movies released in a particular year and
     /// then displays the information for the movies returned.
@@ -130,25 +105,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
             throw;
         }
     }
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Query) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Query)
-in _AWS SDK for .NET API Reference_.
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
-```bash
-
+```
 #############################################################################
 # function dynamodb_query
 #
@@ -256,13 +222,10 @@ function dynamodb_query() {
 
   return 0
 }
-
 ```
-
 The utility functions used in this example.
 
-```bash
-
+```
 ###############################################################################
 # function errecho
 #
@@ -307,25 +270,16 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query) in *AWS CLI Command Reference*.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query)
-in _AWS CLI Command Reference_.
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
 //! Perform a query on an Amazon DynamoDB Table and retrieve items.
 /*!
   \sa queryItem()
@@ -409,45 +363,34 @@ bool AwsDoc::DynamoDB::queryItems(const Aws::String &tableName,
 
     return result;
 }
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Query) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Query)
-in _AWS SDK for C++ API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **Example 1: To query a table**
-
-The following `query` example queries items in the `MusicCollection` table. The table has a hash-and-range primary key ( `Artist` and `SongTitle`), but this query only specifies the hash key value. It returns song titles by the artist named "No One You Know".
-
-```nohighlight
-
-aws dynamodb query \
-    --table-name MusicCollection \
-    --projection-expression "SongTitle" \
-    --key-condition-expression "Artist = :v1" \
-    --expression-attribute-values file://expression-attributes.json \
-    --return-consumed-capacity TOTAL
+The following `query` example queries items in the `MusicCollection` table. The table has a hash-and-range primary key (`Artist` and `SongTitle`), but this query only specifies the hash key value. It returns song titles by the artist named "No One You Know".
 
 ```
-
+aws dynamodb query \
+    --table-name {{MusicCollection}} \
+    --projection-expression {{"SongTitle"}} \
+    --key-condition-expression {{"Artist = :v1"}} \
+    --expression-attribute-values {{file://expression-attributes.json}} \
+    --return-consumed-capacity {{TOTAL}}
+```
 Contents of `expression-attributes.json`:
 
-```nohighlight
-
+```
 {
     ":v1": {"S": "No One You Know"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Items": [
         {
@@ -467,39 +410,30 @@ Output:
     }
 }
 ```
-
-For more information, see [Working with Queries in DynamoDB](query.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To query a table using strongly consistent reads and traverse the index in descending order**
-
 The following example performs the same query as the first example, but returns results in reverse order and uses strongly consistent reads.
 
-```nohighlight
-
+```
 aws dynamodb query \
-    --table-name MusicCollection \
-    --projection-expression "SongTitle" \
-    --key-condition-expression "Artist = :v1" \
-    --expression-attribute-values file://expression-attributes.json \
+    --table-name {{MusicCollection}} \
+    --projection-expression {{"SongTitle"}} \
+    --key-condition-expression {{"Artist = :v1"}} \
+    --expression-attribute-values {{file://expression-attributes.json}} \
     --consistent-read \
     --no-scan-index-forward \
-    --return-consumed-capacity TOTAL
-
+    --return-consumed-capacity {{TOTAL}}
 ```
-
 Contents of `expression-attributes.json`:
 
-```nohighlight
-
+```
 {
     ":v1": {"S": "No One You Know"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Items": [
         {
@@ -521,50 +455,39 @@ Output:
     }
 }
 ```
-
-For more information, see [Working with Queries in DynamoDB](query.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To filter out specific results**
-
 The following example queries the `MusicCollection` but excludes results with specific values in the `AlbumTitle` attribute. Note that this does not affect the `ScannedCount` or `ConsumedCapacity`, because the filter is applied after the items have been read.
 
-```nohighlight
-
-aws dynamodb query \
-    --table-name MusicCollection \
-    --key-condition-expression "#n1 = :v1" \
-    --filter-expression "NOT (#n2 IN (:v2, :v3))" \
-    --expression-attribute-names file://names.json \
-    --expression-attribute-values file://values.json \
-    --return-consumed-capacity TOTAL
-
 ```
-
+aws dynamodb query \
+    --table-name {{MusicCollection}} \
+    --key-condition-expression {{"#n1 = :v1"}} \
+    --filter-expression {{"NOT (#n2 IN (:v2, :v3))"}} \
+    --expression-attribute-names {{file://names.json}} \
+    --expression-attribute-values {{file://values.json}} \
+    --return-consumed-capacity {{TOTAL}}
+```
 Contents of `values.json`:
 
-```nohighlight
-
+```
 {
     ":v1": {"S": "No One You Know"},
     ":v2": {"S": "Blue Sky Blues"},
     ":v3": {"S": "Greatest Hits"}
 }
 ```
-
 Contents of `names.json`:
 
-```nohighlight
-
+```
 {
     "#n1": "Artist",
     "#n2": "AlbumTitle"
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Items": [
         {
@@ -587,74 +510,56 @@ Output:
     }
 }
 ```
-
-For more information, see [Working with Queries in DynamoDB](query.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To retrieve only an item count**
-
 The following example retrieves a count of items matching the query, but does not retrieve any of the items themselves.
 
-```nohighlight
-
-aws dynamodb query \
-    --table-name MusicCollection \
-    --select COUNT \
-    --key-condition-expression "Artist = :v1" \
-    --expression-attribute-values file://expression-attributes.json
-
 ```
-
+aws dynamodb query \
+    --table-name {{MusicCollection}} \
+    --select {{COUNT}} \
+    --key-condition-expression {{"Artist = :v1"}} \
+    --expression-attribute-values {{file://expression-attributes.json}}
+```
 Contents of `expression-attributes.json`:
 
-```nohighlight
-
+```
 {
     ":v1": {"S": "No One You Know"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Count": 2,
     "ScannedCount": 2,
     "ConsumedCapacity": null
 }
 ```
-
-For more information, see [Working with Queries in DynamoDB](query.md) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 5: To query an index**
-
 The following example queries the local secondary index `AlbumTitleIndex`. The query returns all attributes from the base table that have been projected into the local secondary index. Note that when querying a local secondary index or global secondary index, you must also provide the name of the base table using the `table-name` parameter.
 
-```nohighlight
-
-aws dynamodb query \
-    --table-name MusicCollection \
-    --index-name AlbumTitleIndex \
-    --key-condition-expression "Artist = :v1" \
-    --expression-attribute-values file://expression-attributes.json \
-    --select ALL_PROJECTED_ATTRIBUTES \
-    --return-consumed-capacity INDEXES
-
 ```
-
+aws dynamodb query \
+    --table-name {{MusicCollection}} \
+    --index-name {{AlbumTitleIndex}} \
+    --key-condition-expression {{"Artist = :v1"}} \
+    --expression-attribute-values {{file://expression-attributes.json}} \
+    --select {{ALL_PROJECTED_ATTRIBUTES}} \
+    --return-consumed-capacity {{INDEXES}}
+```
 Contents of `expression-attributes.json`:
 
-```nohighlight
-
+```
 {
     ":v1": {"S": "No One You Know"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Items": [
         {
@@ -696,25 +601,16 @@ Output:
     }
 }
 ```
+For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [Query](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/query.html) in *AWS CLI Command Reference*.
 
-For more information, see [Working with Queries in DynamoDB](query.md) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[Query](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/query.html)
-in _AWS CLI Command Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
-```go
-
+```
 import (
 	"context"
 	"errors"
@@ -772,13 +668,10 @@ func (basics TableBasics) Query(ctx context.Context, releaseYear int) ([]Movie, 
 	}
 	return movies, err
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -820,27 +713,17 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
++  For API details, see [Query](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.Query) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[Query](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
+Queries a table by using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
-Queries a table by using [DynamoDbClient](../../../../reference/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/dynamodbclient.md).
-
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -929,13 +812,10 @@ public class Query {
         return -1;
     }
 }
-
 ```
-
 Queries a table by using `DynamoDbClient` and a secondary index.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -998,27 +878,17 @@ public class QueryItemsUsingIndex {
         }
     }
 }
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
+This example uses the document client to simplify working with items in DynamoDB. For API details see [QueryCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/QueryCommand/).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-This example uses the document client to simplify working with items in DynamoDB. For API details see [QueryCommand](../../../../reference/awsjavascriptsdk/v3/latest/package/aws-sdk-lib-dynamodb/class/querycommand.md).
-
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { QueryCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
@@ -1041,25 +911,14 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/dynamodb-example-query-scan.md#dynamodb-example-table-query-scan-querying).
-
-- For API details, see
-[Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
-in _AWS SDK for JavaScript API Reference_.
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-example-query-scan.html#dynamodb-example-table-query-scan-querying).
++  For API details, see [Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand) in *AWS SDK for JavaScript API Reference*.
 
 **SDK for JavaScript (v2)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb).
-
-```javascript
-
+```
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -1086,27 +945,17 @@ docClient.query(params, function (err, data) {
     console.log("Success", data.Items);
   }
 });
-
 ```
++  For more information, see [AWS SDK for JavaScript Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-example-query-scan.html#dynamodb-example-table-query-scan-querying).
++  For API details, see [Query](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/Query) in *AWS SDK for JavaScript API Reference*.
 
-- For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-query-scan.md#dynamodb-example-table-query-scan-querying).
-
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/Query)
-in _AWS SDK for JavaScript API Reference_.
-
-Kotlin
+------
+#### [ Kotlin ]
 
 **SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb).
-
-```kotlin
-
+```
 suspend fun queryDynTable(
     tableNameVal: String,
     partitionKeyName: String,
@@ -1133,25 +982,16 @@ suspend fun queryDynTable(
         return response.count
     }
 }
-
 ```
++  For API details, see [Query](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
-- For API details, see
-[Query](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-in _AWS SDK for Kotlin API reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-```php
-
+```
         $birthKey = [
             'Key' => [
                 'year' => [
@@ -1184,21 +1024,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
         ];
         return $this->dynamoDbClient->query($query);
     }
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Query) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Query)
-in _AWS SDK for PHP API Reference_.
-
-PowerShell
+------
+#### [ PowerShell ]
 
 **Tools for PowerShell V4**
-
 **Example 1: Invokes a query that returns DynamoDB items with the specified SongTitle and Artist.**
 
-```powershell
-
+```
 $invokeDDBQuery = @{
     TableName = 'Music'
     KeyConditionExpression = ' SongTitle = :SongTitle and Artist = :Artist'
@@ -1208,13 +1043,10 @@ $invokeDDBQuery = @{
     } | ConvertTo-DDBItem
 }
 Invoke-DDBQuery @invokeDDBQuery | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -1224,17 +1056,12 @@ CriticRating                   9
 SongTitle                      Somewhere Down The Road
 AlbumTitle                     Somewhat Famous
 ```
-
-- For API details, see
-[Query](https://docs.aws.amazon.com/powershell/v4/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
++  For API details, see [Query](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
 
 **Tools for PowerShell V5**
-
 **Example 1: Invokes a query that returns DynamoDB items with the specified SongTitle and Artist.**
 
-```powershell
-
+```
 $invokeDDBQuery = @{
     TableName = 'Music'
     KeyConditionExpression = ' SongTitle = :SongTitle and Artist = :Artist'
@@ -1244,13 +1071,10 @@ $invokeDDBQuery = @{
     } | ConvertTo-DDBItem
 }
 Invoke-DDBQuery @invokeDDBQuery | ConvertFrom-DDBItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Country
@@ -1260,25 +1084,16 @@ CriticRating                   9
 SongTitle                      Somewhere Down The Road
 AlbumTitle                     Somewhat Famous
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/powershell/v5/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Query items by using a key condition expression.
 
-```python
-
+```
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1330,13 +1145,10 @@ class Movies:
             raise
         else:
             return response["Items"]
-
 ```
-
 Query items and project them to return a subset of data.
 
-```python
-
+```
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1378,25 +1190,16 @@ class UpdateQueryWrapper:
                 raise
         else:
             return response["Items"]
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
-```ruby
-
+```
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -1423,27 +1226,17 @@ class DynamoDBBasics
   else
     response.items
   end
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Query) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Query)
-in _AWS SDK for Ruby API Reference_.
-
-Rust
+------
+#### [ Rust ]
 
 **SDK for Rust**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 Find the movies made in the specified year.
 
-```rust
-
+```
 pub async fn movies_in_year(
     client: &Client,
     table_name: &str,
@@ -1465,25 +1258,16 @@ pub async fn movies_in_year(
         Ok(vec![])
     }
 }
-
 ```
++  For API details, see [Query](https://docs.rs/aws-sdk-dynamodb/latest/aws_sdk_dynamodb/client/struct.Client.html#method.query) in *AWS SDK for Rust API reference*.
 
-- For API details, see
-[Query](https://docs.rs/aws-sdk-dynamodb/latest/aws_sdk_dynamodb/client/struct.Client.html)
-in _AWS SDK for Rust API reference_.
-
-SAP ABAP
+------
+#### [ SAP ABAP ]
 
 **SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn).
-
-```sap-abap
-
+```
     TRY.
         " Query movies for a given year .
         DATA(lt_attributelist) = VALUE /aws1/cl_dynattributevalue=>tt_attributevaluelist(
@@ -1509,25 +1293,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/s
       CATCH /aws1/cx_dynresourcenotfoundex.
         MESSAGE 'The table or index does not exist' TYPE 'E'.
     ENDTRY.
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
 
-- For API details, see
-[Query](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-in _AWS SDK for SAP ABAP API reference_.
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
-```swift
-
+```
 import AWSDynamoDB
 
     /// Get all the movies released in the specified year.
@@ -1578,21 +1353,11 @@ import AWSDynamoDB
             throw error
         }
     }
-
 ```
++  For API details, see [Query](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/query(input:)) in *AWS SDK for Swift API reference*.
 
-- For API details, see
-[Query](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/query(input:))
-in _AWS SDK for Swift API reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PutItem
-
-Scan
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

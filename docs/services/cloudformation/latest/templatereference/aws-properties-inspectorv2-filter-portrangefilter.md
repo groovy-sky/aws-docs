@@ -2,72 +2,53 @@
 title: "AWS::InspectorV2::Filter PortRangeFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Filter PortRangeFilter
+<a name="aws-properties-inspectorv2-filter-portrangefilter"></a>
 
 An object that describes the details of a port range filter.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-filter-portrangefilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-filter-portrangefilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "BeginInclusive" : Integer,
-  "EndInclusive" : Integer
+  "[BeginInclusive](#cfn-inspectorv2-filter-portrangefilter-begininclusive)" : {{Integer}},
+  "[EndInclusive](#cfn-inspectorv2-filter-portrangefilter-endinclusive)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-filter-portrangefilter-syntax.yaml"></a>
 
-```yaml
-
-  BeginInclusive: Integer
-  EndInclusive: Integer
-
+```
+  [BeginInclusive](#cfn-inspectorv2-filter-portrangefilter-begininclusive): {{Integer}}
+  [EndInclusive](#cfn-inspectorv2-filter-portrangefilter-endinclusive): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-filter-portrangefilter-properties"></a>
 
-`BeginInclusive`
-
+`BeginInclusive`  <a name="cfn-inspectorv2-filter-portrangefilter-begininclusive"></a>
 The port number the port range begins at.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndInclusive`
-
+`EndInclusive`  <a name="cfn-inspectorv2-filter-portrangefilter-endinclusive"></a>
 The port number the port range ends at.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PackageFilter
-
-StringFilter
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

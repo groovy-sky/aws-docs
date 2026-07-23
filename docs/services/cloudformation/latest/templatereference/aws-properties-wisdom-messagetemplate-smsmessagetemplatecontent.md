@@ -2,53 +2,42 @@
 title: "AWS::Wisdom::MessageTemplate SmsMessageTemplateContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::MessageTemplate SmsMessageTemplateContent
+<a name="aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent"></a>
 
 The content of the message template that applies to the SMS channel subtype.
 
 ## Syntax
+<a name="aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "Body" : SmsMessageTemplateContentBody
+  "[Body](#cfn-wisdom-messagetemplate-smsmessagetemplatecontent-body)" : {{SmsMessageTemplateContentBody}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent-syntax.yaml"></a>
 
-```yaml
-
-  Body:
-    SmsMessageTemplateContentBody
-
+```
+  [Body](#cfn-wisdom-messagetemplate-smsmessagetemplatecontent-body): {{
+    SmsMessageTemplateContentBody}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-messagetemplate-smsmessagetemplatecontent-properties"></a>
 
-`Body`
-
+`Body`  <a name="cfn-wisdom-messagetemplate-smsmessagetemplatecontent-body"></a>
 The body to use in SMS messages.
-
-_Required_: Yes
-
-_Type_: [SmsMessageTemplateContentBody](aws-properties-wisdom-messagetemplate-smsmessagetemplatecontentbody.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MessageTemplateBodyContentProvider
-
-SmsMessageTemplateContentBody
+*Required*: Yes
+*Type*: [SmsMessageTemplateContentBody](aws-properties-wisdom-messagetemplate-smsmessagetemplatecontentbody.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

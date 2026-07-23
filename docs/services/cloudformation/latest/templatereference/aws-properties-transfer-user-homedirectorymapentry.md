@@ -2,100 +2,65 @@
 title: "AWS::Transfer::User HomeDirectoryMapEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::User HomeDirectoryMapEntry
+<a name="aws-properties-transfer-user-homedirectorymapentry"></a>
 
-Represents an object that contains entries and targets for
-`HomeDirectoryMappings` .
+ Represents an object that contains entries and targets for `HomeDirectoryMappings` .
 
 ## Syntax
+<a name="aws-properties-transfer-user-homedirectorymapentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-user-homedirectorymapentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "Entry" : String,
-  "Target" : String,
-  "Type" : String
+  "[Entry](#cfn-transfer-user-homedirectorymapentry-entry)" : {{String}},
+  "[Target](#cfn-transfer-user-homedirectorymapentry-target)" : {{String}},
+  "[Type](#cfn-transfer-user-homedirectorymapentry-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-user-homedirectorymapentry-syntax.yaml"></a>
 
-```yaml
-
-  Entry: String
-  Target: String
-  Type: String
-
+```
+  [Entry](#cfn-transfer-user-homedirectorymapentry-entry): {{String}}
+  [Target](#cfn-transfer-user-homedirectorymapentry-target): {{String}}
+  [Type](#cfn-transfer-user-homedirectorymapentry-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-user-homedirectorymapentry-properties"></a>
 
-`Entry`
-
+`Entry`  <a name="cfn-transfer-user-homedirectorymapentry-entry"></a>
 Represents an entry for `HomeDirectoryMappings`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^/.*$`
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^/.*$`
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
+`Target`  <a name="cfn-transfer-user-homedirectorymapentry-target"></a>
 Represents the map target that is used in a `HomeDirectoryMapEntry`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^/.*$`
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^/.*$`
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Specifies the type of mapping. Set the type to `FILE` if you want the
-mapping to point to a file, or `DIRECTORY` for the directory to point to a
-directory.
-
-###### Note
-
-By default, home directory mappings have a `Type` of
-`DIRECTORY` when you create a Transfer Family server. You would need to
-explicitly set `Type` to `FILE` if you want a mapping to have
-a file target.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FILE | DIRECTORY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Transfer::User
-
-PosixProfile
+`Type`  <a name="cfn-transfer-user-homedirectorymapentry-type"></a>
+Specifies the type of mapping. Set the type to `FILE` if you want the mapping to point to a file, or `DIRECTORY` for the directory to point to a directory.
+By default, home directory mappings have a `Type` of `DIRECTORY` when you create a Transfer Family server. You would need to explicitly set `Type` to `FILE` if you want a mapping to have a file target.
+*Required*: No
+*Type*: String
+*Allowed values*: `FILE | DIRECTORY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

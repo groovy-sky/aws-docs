@@ -2,54 +2,42 @@
 title: "AWS::Bedrock::DataSource BedrockDataAutomationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource BedrockDataAutomationConfiguration
+<a name="aws-properties-bedrock-datasource-bedrockdataautomationconfiguration"></a>
 
 Contains configurations for using Amazon Bedrock Data Automation as the parser for ingesting your data sources.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-bedrockdataautomationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-bedrockdataautomationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParsingModality" : String
+  "[ParsingModality](#cfn-bedrock-datasource-bedrockdataautomationconfiguration-parsingmodality)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-bedrockdataautomationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ParsingModality: String
-
+```
+  [ParsingModality](#cfn-bedrock-datasource-bedrockdataautomationconfiguration-parsingmodality): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-bedrockdataautomationconfiguration-properties"></a>
 
-`ParsingModality`
-
+`ParsingModality`  <a name="cfn-bedrock-datasource-bedrockdataautomationconfiguration-parsingmodality"></a>
 Specifies whether to enable parsing of multimodal data, including both text and/or images.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MULTIMODAL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::DataSource
-
-BedrockFoundationModelConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `MULTIMODAL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

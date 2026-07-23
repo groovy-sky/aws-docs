@@ -2,59 +2,43 @@
 title: "AWS::S3::StorageLens ActivityMetrics"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens ActivityMetrics
+<a name="aws-properties-s3-storagelens-activitymetrics"></a>
 
-This resource enables Amazon S3 Storage Lens activity metrics. Activity metrics
-show details about how your storage is requested, such as requests (for example, All requests,
-Get requests, Put requests), bytes uploaded or downloaded, and errors.
+This resource enables Amazon S3 Storage Lens activity metrics. Activity metrics show details about how your storage is requested, such as requests (for example, All requests, Get requests, Put requests), bytes uploaded or downloaded, and errors.
 
-For more information, see [Assessing your storage activity and usage\
-with S3 Storage Lens](../../../s3/latest/userguide/storage-lens.md) in the _Amazon S3 User Guide_. For a
-complete list of metrics, see [S3 Storage Lens metrics\
-glossary](../../../s3/latest/userguide/storage-lens-metrics-glossary.md) in the _Amazon S3 User Guide_.
+For more information, see [ Assessing your storage activity and usage with S3 Storage Lens](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens.html) in the *Amazon S3 User Guide*. For a complete list of metrics, see [ S3 Storage Lens metrics glossary](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_metrics_glossary.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-activitymetrics-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-activitymetrics-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsEnabled" : Boolean
+  "[IsEnabled](#cfn-s3-storagelens-activitymetrics-isenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-activitymetrics-syntax.yaml"></a>
 
-```yaml
-
-  IsEnabled: Boolean
-
+```
+  [IsEnabled](#cfn-s3-storagelens-activitymetrics-isenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-activitymetrics-properties"></a>
 
-`IsEnabled`
-
+`IsEnabled`  <a name="cfn-s3-storagelens-activitymetrics-isenabled"></a>
 A property that indicates whether the activity metrics is enabled.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccountLevel
-
-AdvancedCostOptimizationMetrics
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

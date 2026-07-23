@@ -2,65 +2,50 @@
 title: "AWS::IoT::AccountAuditConfiguration DeviceCertAgeAuditCheckConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::AccountAuditConfiguration DeviceCertAgeAuditCheckConfiguration
+<a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration"></a>
 
 Configuration for the device certificate age audit check.
 
 ## Syntax
+<a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configuration" : CertAgeCheckCustomConfiguration,
-  "Enabled" : Boolean
+  "[Configuration](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-configuration)" : {{CertAgeCheckCustomConfiguration}},
+  "[Enabled](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Configuration:
-    CertAgeCheckCustomConfiguration
-  Enabled: Boolean
-
+```
+  [Configuration](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-configuration): {{
+    CertAgeCheckCustomConfiguration}}
+  [Enabled](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-properties"></a>
 
-`Configuration`
-
+`Configuration`  <a name="cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-configuration"></a>
 Configuration settings for the device certificate age check, including the threshold in days for certificate age. This configuration is of type `CertAgeCheckCustomConfiguration`.
+*Required*: No
+*Type*: [CertAgeCheckCustomConfiguration](aws-properties-iot-accountauditconfiguration-certagecheckcustomconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CertAgeCheckCustomConfiguration](aws-properties-iot-accountauditconfiguration-certagecheckcustomconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-enabled"></a>
 True if this audit check is enabled for this account.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CertExpirationCheckCustomConfiguration
-
-DeviceCertExpirationAuditCheckConfiguration
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

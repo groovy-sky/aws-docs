@@ -2,78 +2,55 @@
 title: "AWS::IoTFleetWise::Campaign DataPartitionUploadOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign DataPartitionUploadOptions
+<a name="aws-properties-iotfleetwise-campaign-datapartitionuploadoptions"></a>
 
-The upload options for the data partition. If upload options are specified, you must
-also specify storage options. See [DataPartitionStorageOptions](../../../../reference/iot-fleetwise/latest/apireference/api-datapartitionstorageoptions.md).
+The upload options for the data partition. If upload options are specified, you must also specify storage options. See [DataPartitionStorageOptions](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DataPartitionStorageOptions.html).
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-campaign-datapartitionuploadoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-campaign-datapartitionuploadoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionLanguageVersion" : Integer,
-  "Expression" : String
+  "[ConditionLanguageVersion](#cfn-iotfleetwise-campaign-datapartitionuploadoptions-conditionlanguageversion)" : {{Integer}},
+  "[Expression](#cfn-iotfleetwise-campaign-datapartitionuploadoptions-expression)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-campaign-datapartitionuploadoptions-syntax.yaml"></a>
 
-```yaml
-
-  ConditionLanguageVersion: Integer
-  Expression: String
-
+```
+  [ConditionLanguageVersion](#cfn-iotfleetwise-campaign-datapartitionuploadoptions-conditionlanguageversion): {{Integer}}
+  [Expression](#cfn-iotfleetwise-campaign-datapartitionuploadoptions-expression): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-campaign-datapartitionuploadoptions-properties"></a>
 
-`ConditionLanguageVersion`
+`ConditionLanguageVersion`  <a name="cfn-iotfleetwise-campaign-datapartitionuploadoptions-conditionlanguageversion"></a>
+The version of the condition language. Defaults to the most recent condition language version.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The version of the condition language. Defaults to the most recent condition language
-version.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Expression`
-
-The logical expression used to recognize what data to collect. For example, ``$variable.`Vehicle.OutsideAirTemperature` >= 105.0``.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataPartitionStorageOptions
-
-MqttTopicConfig
+`Expression`  <a name="cfn-iotfleetwise-campaign-datapartitionuploadoptions-expression"></a>
+The logical expression used to recognize what data to collect. For example, `$variable.`Vehicle.OutsideAirTemperature` >= 105.0`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

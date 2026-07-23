@@ -2,72 +2,52 @@
 title: "AWS::IoTEvents::DetectorModel IotTopicPublish"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel IotTopicPublish
+<a name="aws-properties-iotevents-detectormodel-iottopicpublish"></a>
 
 Information required to publish the MQTT message through the AWS IoT message broker.
 
 ## Syntax
+<a name="aws-properties-iotevents-detectormodel-iottopicpublish-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-detectormodel-iottopicpublish-syntax.json"></a>
 
-```json
-
+```
 {
-  "MqttTopic" : String,
-  "Payload" : Payload
+  "[MqttTopic](#cfn-iotevents-detectormodel-iottopicpublish-mqtttopic)" : {{String}},
+  "[Payload](#cfn-iotevents-detectormodel-iottopicpublish-payload)" : {{Payload}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-detectormodel-iottopicpublish-syntax.yaml"></a>
 
-```yaml
-
-  MqttTopic: String
-  Payload:
-    Payload
-
+```
+  [MqttTopic](#cfn-iotevents-detectormodel-iottopicpublish-mqtttopic): {{String}}
+  [Payload](#cfn-iotevents-detectormodel-iottopicpublish-payload): {{
+    Payload}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-detectormodel-iottopicpublish-properties"></a>
 
-`MqttTopic`
+`MqttTopic`  <a name="cfn-iotevents-detectormodel-iottopicpublish-mqtttopic"></a>
+The MQTT topic of the message. You can use a string expression that includes variables (`$variable.<variable-name>`) and input values (`$input.<input-name>.<path-to-datum>`) as the topic string.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The MQTT topic of the message. You can use a string expression that includes variables
-( `$variable.<variable-name>`) and input values
-( `$input.<input-name>.<path-to-datum>`) as the topic string.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Payload`
-
-You can configure the action payload when you publish a message to an AWS IoT Core
-topic.
-
-_Required_: No
-
-_Type_: [Payload](aws-properties-iotevents-detectormodel-payload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IotSiteWise
-
-Lambda
+`Payload`  <a name="cfn-iotevents-detectormodel-iottopicpublish-payload"></a>
+You can configure the action payload when you publish a message to an AWS IoT Core topic.
+*Required*: No
+*Type*: [Payload](aws-properties-iotevents-detectormodel-payload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

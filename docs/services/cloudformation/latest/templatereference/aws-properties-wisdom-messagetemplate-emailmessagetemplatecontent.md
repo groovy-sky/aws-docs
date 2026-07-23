@@ -2,84 +2,62 @@
 title: "AWS::Wisdom::MessageTemplate EmailMessageTemplateContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::MessageTemplate EmailMessageTemplateContent
+<a name="aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent"></a>
 
 The content of the message template that applies to the email channel subtype.
 
 ## Syntax
+<a name="aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "Body" : EmailMessageTemplateContentBody,
-  "Headers" : [ EmailMessageTemplateHeader, ... ],
-  "Subject" : String
+  "[Body](#cfn-wisdom-messagetemplate-emailmessagetemplatecontent-body)" : {{EmailMessageTemplateContentBody}},
+  "[Headers](#cfn-wisdom-messagetemplate-emailmessagetemplatecontent-headers)" : {{[ EmailMessageTemplateHeader, ... ]}},
+  "[Subject](#cfn-wisdom-messagetemplate-emailmessagetemplatecontent-subject)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent-syntax.yaml"></a>
 
-```yaml
-
-  Body:
-    EmailMessageTemplateContentBody
-  Headers:
-    - EmailMessageTemplateHeader
-  Subject: String
-
+```
+  [Body](#cfn-wisdom-messagetemplate-emailmessagetemplatecontent-body): {{
+    EmailMessageTemplateContentBody}}
+  [Headers](#cfn-wisdom-messagetemplate-emailmessagetemplatecontent-headers): {{
+    - EmailMessageTemplateHeader}}
+  [Subject](#cfn-wisdom-messagetemplate-emailmessagetemplatecontent-subject): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-messagetemplate-emailmessagetemplatecontent-properties"></a>
 
-`Body`
-
+`Body`  <a name="cfn-wisdom-messagetemplate-emailmessagetemplatecontent-body"></a>
 The body to use in email messages.
+*Required*: Yes
+*Type*: [EmailMessageTemplateContentBody](aws-properties-wisdom-messagetemplate-emailmessagetemplatecontentbody.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [EmailMessageTemplateContentBody](aws-properties-wisdom-messagetemplate-emailmessagetemplatecontentbody.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Headers`
-
+`Headers`  <a name="cfn-wisdom-messagetemplate-emailmessagetemplatecontent-headers"></a>
 The email headers to include in email messages.
+*Required*: Yes
+*Type*: Array of [EmailMessageTemplateHeader](aws-properties-wisdom-messagetemplate-emailmessagetemplateheader.md)
+*Minimum*: `0`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [EmailMessageTemplateHeader](aws-properties-wisdom-messagetemplate-emailmessagetemplateheader.md)
-
-_Minimum_: `0`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subject`
-
+`Subject`  <a name="cfn-wisdom-messagetemplate-emailmessagetemplatecontent-subject"></a>
 The subject line, or title, to use in email messages.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomerProfileAttributes
-
-EmailMessageTemplateContentBody
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,121 +2,93 @@
 title: "AWS::MemoryDB::ParameterGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::ParameterGroup
+<a name="aws-resource-memorydb-parametergroup"></a>
 
-Specifies a new MemoryDB parameter group. A parameter group is a collection of
-parameters and their values that are applied to all of the nodes in any cluster. For more information, see [Configuring engine parameters using\
-parameter groups](../../../memorydb/latest/devguide/parametergroups.md).
+Specifies a new MemoryDB parameter group. A parameter group is a collection of parameters and their values that are applied to all of the nodes in any cluster. For more information, see [Configuring engine parameters using parameter groups](https://docs.aws.amazon.com/memorydb/latest/devguide/parametergroups.html).
 
 ## Syntax
+<a name="aws-resource-memorydb-parametergroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-memorydb-parametergroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MemoryDB::ParameterGroup",
   "Properties" : {
-      "Description" : String,
-      "Family" : String,
-      "ParameterGroupName" : String,
-      "Parameters" : Json,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-memorydb-parametergroup-description)" : {{String}},
+      "[Family](#cfn-memorydb-parametergroup-family)" : {{String}},
+      "[ParameterGroupName](#cfn-memorydb-parametergroup-parametergroupname)" : {{String}},
+      "[Parameters](#cfn-memorydb-parametergroup-parameters)" : {{Json}},
+      "[Tags](#cfn-memorydb-parametergroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-memorydb-parametergroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MemoryDB::ParameterGroup
 Properties:
-  Description: String
-  Family: String
-  ParameterGroupName: String
-  Parameters: Json
-  Tags:
-    - Tag
-
+  [Description](#cfn-memorydb-parametergroup-description): {{String}}
+  [Family](#cfn-memorydb-parametergroup-family): {{String}}
+  [ParameterGroupName](#cfn-memorydb-parametergroup-parametergroupname): {{String}}
+  [Parameters](#cfn-memorydb-parametergroup-parameters): {{Json}}
+  [Tags](#cfn-memorydb-parametergroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-memorydb-parametergroup-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-memorydb-parametergroup-description"></a>
 A description of the parameter group.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Family`
-
+`Family`  <a name="cfn-memorydb-parametergroup-family"></a>
 The name of the parameter group family that this parameter group is compatible with.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterGroupName`
-
+`ParameterGroupName`  <a name="cfn-memorydb-parametergroup-parametergroupname"></a>
 The name of the parameter group.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Parameters`
-
+`Parameters`  <a name="cfn-memorydb-parametergroup-parameters"></a>
 Returns the detailed parameter list for the parameter group.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-memorydb-parametergroup-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-memorydb-parametergroup-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-memorydb-parametergroup-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-memorydb-parametergroup-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-memorydb-parametergroup-return-values-fn--getatt"></a>
 
-`ARN`
+####
+<a name="aws-resource-memorydb-parametergroup-return-values-fn--getatt-fn--getatt"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the ARN of the parameter group,
-such as `arn:aws:memorydb:us-east-1:123456789012:parametergroup/my-parameter-group`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`ARN`  <a name="ARN-fn::getatt"></a>
+When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the ARN of the parameter group, such as `arn:aws:memorydb:us-east-1:123456789012:parametergroup/my-parameter-group`
 
 All content copied from https://docs.aws.amazon.com/.

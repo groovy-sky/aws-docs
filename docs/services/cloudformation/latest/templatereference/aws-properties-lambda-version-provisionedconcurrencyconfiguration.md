@@ -2,66 +2,57 @@
 title: "AWS::Lambda::Version ProvisionedConcurrencyConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Version ProvisionedConcurrencyConfiguration
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration"></a>
 
-A [provisioned concurrency](../../../lambda/latest/dg/configuration-concurrency.md) configuration for a function's version.
+A [provisioned concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) configuration for a function's version.
 
 ## Syntax
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ProvisionedConcurrentExecutions" : Integer
+  "[ProvisionedConcurrentExecutions](#cfn-lambda-version-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ProvisionedConcurrentExecutions: Integer
-
+```
+  [ProvisionedConcurrentExecutions](#cfn-lambda-version-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration-properties"></a>
 
-`ProvisionedConcurrentExecutions`
-
+`ProvisionedConcurrentExecutions`  <a name="cfn-lambda-version-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions"></a>
 The amount of provisioned concurrency to allocate for the version.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration--examples"></a>
 
 ### Provisioned Concurrency Configuration
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration--examples--Provisioned_Concurrency_Configuration"></a>
 
 Allocate 20 provisioned concurrency for a version.
 
 #### YAML
+<a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration--examples--Provisioned_Concurrency_Configuration--yaml"></a>
 
-```yaml
-
+```
       ProvisionedConcurrencyConfig:
         ProvisionedConcurrentExecutions: 20
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FunctionScalingConfig
-
-RuntimePolicy
 
 All content copied from https://docs.aws.amazon.com/.

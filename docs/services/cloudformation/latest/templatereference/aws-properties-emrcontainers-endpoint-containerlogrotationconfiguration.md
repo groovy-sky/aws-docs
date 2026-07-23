@@ -2,74 +2,54 @@
 title: "AWS::EMRContainers::Endpoint ContainerLogRotationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::Endpoint ContainerLogRotationConfiguration
+<a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration"></a>
 
 The settings for container log rotation.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxFilesToKeep" : Integer,
-  "RotationSize" : String
+  "[MaxFilesToKeep](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-maxfilestokeep)" : {{Integer}},
+  "[RotationSize](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-rotationsize)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxFilesToKeep: Integer
-  RotationSize: String
-
+```
+  [MaxFilesToKeep](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-maxfilestokeep): {{Integer}}
+  [RotationSize](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-rotationsize): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration-properties"></a>
 
-`MaxFilesToKeep`
-
+`MaxFilesToKeep`  <a name="cfn-emrcontainers-endpoint-containerlogrotationconfiguration-maxfilestokeep"></a>
 The number of files to keep in container after rotation.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RotationSize`
-
+`RotationSize`  <a name="cfn-emrcontainers-endpoint-containerlogrotationconfiguration-rotationsize"></a>
 The file size at which to rotate logs. Minimum of 2KB, Maximum of 2GB.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d+(\.\d+)?[KMG][Bb]?$`
-
-_Minimum_: `3`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationOverrides
-
-EMREKSConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d+(\.\d+)?[KMG][Bb]?$`
+*Minimum*: `3`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

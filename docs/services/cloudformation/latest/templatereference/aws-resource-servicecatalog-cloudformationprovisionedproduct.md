@@ -2,313 +2,209 @@
 title: "AWS::ServiceCatalog::CloudFormationProvisionedProduct"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::CloudFormationProvisionedProduct
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct"></a>
 
 Provisions the specified product.
 
-A provisioned product is a resourced instance of a product. For example, provisioning
-a product based on a AWS CloudFormation template launches a AWS CloudFormation stack and its
-underlying resources. You can check the status of this request using [DescribeRecord](../../../servicecatalog/latest/dg/api-describerecord.md).
+A provisioned product is a resourced instance of a product. For example, provisioning a product based on a AWS CloudFormation template launches a AWS CloudFormation stack and its underlying resources. You can check the status of this request using [DescribeRecord](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_DescribeRecord.html).
 
-If the request contains a tag key with an empty list of values, there is a tag
-conflict for that key. Do not include conflicted keys as tags, or this causes the error
-"Parameter validation failed: Missing required parameter in
-Tags\[ _N_\]: _Value_".
+If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not include conflicted keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[*N*]:*Value*".
 
 ## Syntax
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::CloudFormationProvisionedProduct",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "NotificationArns" : [ String, ... ],
-      "PathId" : String,
-      "PathName" : String,
-      "ProductId" : String,
-      "ProductName" : String,
-      "ProvisionedProductName" : String,
-      "ProvisioningArtifactId" : String,
-      "ProvisioningArtifactName" : String,
-      "ProvisioningParameters" : [ ProvisioningParameter, ... ],
-      "ProvisioningPreferences" : ProvisioningPreferences,
-      "Tags" : [ Tag, ... ]
+      "[AcceptLanguage](#cfn-servicecatalog-cloudformationprovisionedproduct-acceptlanguage)" : {{String}},
+      "[NotificationArns](#cfn-servicecatalog-cloudformationprovisionedproduct-notificationarns)" : {{[ String, ... ]}},
+      "[PathId](#cfn-servicecatalog-cloudformationprovisionedproduct-pathid)" : {{String}},
+      "[PathName](#cfn-servicecatalog-cloudformationprovisionedproduct-pathname)" : {{String}},
+      "[ProductId](#cfn-servicecatalog-cloudformationprovisionedproduct-productid)" : {{String}},
+      "[ProductName](#cfn-servicecatalog-cloudformationprovisionedproduct-productname)" : {{String}},
+      "[ProvisionedProductName](#cfn-servicecatalog-cloudformationprovisionedproduct-provisionedproductname)" : {{String}},
+      "[ProvisioningArtifactId](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactid)" : {{String}},
+      "[ProvisioningArtifactName](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactname)" : {{String}},
+      "[ProvisioningParameters](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters)" : {{[ ProvisioningParameter, ... ]}},
+      "[ProvisioningPreferences](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences)" : {{ProvisioningPreferences}},
+      "[Tags](#cfn-servicecatalog-cloudformationprovisionedproduct-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::CloudFormationProvisionedProduct
 Properties:
-  AcceptLanguage: String
-  NotificationArns:
-    - String
-  PathId: String
-  PathName: String
-  ProductId: String
-  ProductName: String
-  ProvisionedProductName: String
-  ProvisioningArtifactId: String
-  ProvisioningArtifactName: String
-  ProvisioningParameters:
-    - ProvisioningParameter
-  ProvisioningPreferences:
-    ProvisioningPreferences
-  Tags:
-    - Tag
-
+  [AcceptLanguage](#cfn-servicecatalog-cloudformationprovisionedproduct-acceptlanguage): {{String}}
+  [NotificationArns](#cfn-servicecatalog-cloudformationprovisionedproduct-notificationarns): {{
+    - String}}
+  [PathId](#cfn-servicecatalog-cloudformationprovisionedproduct-pathid): {{String}}
+  [PathName](#cfn-servicecatalog-cloudformationprovisionedproduct-pathname): {{String}}
+  [ProductId](#cfn-servicecatalog-cloudformationprovisionedproduct-productid): {{String}}
+  [ProductName](#cfn-servicecatalog-cloudformationprovisionedproduct-productname): {{String}}
+  [ProvisionedProductName](#cfn-servicecatalog-cloudformationprovisionedproduct-provisionedproductname): {{String}}
+  [ProvisioningArtifactId](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactid): {{String}}
+  [ProvisioningArtifactName](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactname): {{String}}
+  [ProvisioningParameters](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters): {{
+    - ProvisioningParameter}}
+  [ProvisioningPreferences](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences): {{
+    ProvisioningPreferences}}
+  [Tags](#cfn-servicecatalog-cloudformationprovisionedproduct-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-acceptlanguage"></a>
 The language code.
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Allowed values*: `en | jp | zh`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `jp` \- Japanese
+`NotificationArns`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-notificationarns"></a>
+Passed to AWS CloudFormation. The SNS topic ARNs to which to publish stack-related events.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `en | jp | zh`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotificationArns`
-
-Passed to AWS CloudFormation. The SNS topic ARNs to which to publish stack-related
-events.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PathId`
-
-The path identifier of the product. This value is optional if the product has a
-default path, and required if the product has more than one path. To list the paths for a
-product, use [ListLaunchPaths](../../../servicecatalog/latest/dg/api-listlaunchpaths.md).
-
-###### Note
-
+`PathId`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-pathid"></a>
+The path identifier of the product. This value is optional if the product has a default path, and required if the product has more than one path. To list the paths for a product, use [ListLaunchPaths](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ListLaunchPaths.html).
 You must provide the name or ID, but not both.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PathName`
-
-The name of the path. This value is optional if the product has a
-default path, and required if the product has more than one path. To list the paths for a
-product, use [ListLaunchPaths](../../../servicecatalog/latest/dg/api-listlaunchpaths.md).
-
-###### Note
-
+`PathName`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-pathname"></a>
+The name of the path. This value is optional if the product has a default path, and required if the product has more than one path. To list the paths for a product, use [ListLaunchPaths](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ListLaunchPaths.html).
 You must provide the name or ID, but not both.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-productid"></a>
 The product identifier.
+You must specify either the ID or the name of the product, but not both.
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-You must specify either the ID or the name of the product,
-but not both.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProductName`
-
+`ProductName`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-productname"></a>
 The name of the Service Catalog product.
+Each time a stack is created or updated, if `ProductName` is provided it will successfully resolve to `ProductId` as long as only one product exists in the account or Region with that `ProductName`.
+You must specify either the name or the ID of the product, but not both.
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Each time a stack is created or updated, if `ProductName` is provided it will
-successfully resolve to `ProductId` as long as only one product exists in the
-account or Region with that `ProductName`.
+`ProvisionedProductName`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisionedproductname"></a>
+A user-friendly name for the provisioned product. This value must be unique for the AWS account and cannot be updated after the product is provisioned.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Note
-
-You must specify either
-the name or the ID of the product, but not both.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProvisionedProductName`
-
-A user-friendly name for the provisioned product. This value must be
-unique for the AWS account and cannot be updated after the product is provisioned.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProvisioningArtifactId`
-
+`ProvisioningArtifactId`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactid"></a>
 The identifier of the provisioning artifact (also known as a version).
-
-###### Note
-
 You must specify either the ID or the name of the provisioning artifact, but not both.
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
+`ProvisioningArtifactName`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactname"></a>
+The name of the provisioning artifact (also known as a version) for the product. This name must be unique for the product.
+ You must specify either the name or the ID of the provisioning artifact, but not both. You must also specify either the name or the ID of the product, but not both.
+*Required*: Conditional
+*Type*: String
+*Maximum*: `8192`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ProvisioningParameters`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters"></a>
+Parameters specified by the administrator that are required for provisioning the product.
+*Required*: No
+*Type*: Array of [ProvisioningParameter](aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`ProvisioningPreferences`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences"></a>
+ StackSet preferences that are required for provisioning the product or updating a provisioned product.
+*Required*: No
+*Type*: [ProvisioningPreferences](aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProvisioningArtifactName`
-
-The name of the provisioning artifact (also known as a version) for the product. This
-name must be unique for the product.
-
-###### Note
-
-You must specify either the name or the ID of the provisioning artifact, but not both. You must also specify either the name or the ID of the product, but not both.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Maximum_: `8192`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProvisioningParameters`
-
-Parameters specified by the administrator that are required for provisioning the
-product.
-
-_Required_: No
-
-_Type_: Array of [ProvisioningParameter](aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProvisioningPreferences`
-
-StackSet preferences that are required for provisioning the product or updating a provisioned product.
-
-_Required_: No
-
-_Type_: [ProvisioningPreferences](aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-tags"></a>
 One or more tags.
-
-###### Note
-
-Requires the provisioned product to have an [ResourceUpdateConstraint](../userguide/aws-resource-servicecatalog-resourceupdateconstraint.md) resource with
-`TagUpdatesOnProvisionedProduct` set to `ALLOWED` to allow tag
-updates. If `RESOURCE_UPDATE` constraint is not present, tags updates are ignored.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-servicecatalog-cloudformationprovisionedproduct-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+Requires the provisioned product to have an [ResourceUpdateConstraint](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-resourceupdateconstraint.html) resource with `TagUpdatesOnProvisionedProduct` set to `ALLOWED` to allow tag updates. If `RESOURCE_UPDATE` constraint is not present, tags updates are ignored.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-servicecatalog-cloudformationprovisionedproduct-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the provisioned product ID, such as
-`pp-hfyszaotincww`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the provisioned product ID, such as `pp-hfyszaotincww`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CloudformationStackArn`
+####
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-return-values-fn--getatt-fn--getatt"></a>
 
+`CloudformationStackArn`  <a name="CloudformationStackArn-fn::getatt"></a>
 Property description not available.
 
-`ProvisionedProductId`
-
+`ProvisionedProductId`  <a name="ProvisionedProductId-fn::getatt"></a>
 The ID of the provisioned product.
 
-`RecordId`
-
+`RecordId`  <a name="RecordId-fn::getatt"></a>
 The ID of the record, such as `rec-rjeatvy434trk`.
 
 ## Examples
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct--examples"></a>
 
 ### GetAtt Example
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct--examples--GetAtt_Example"></a>
 
 #### YAML
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct--examples--GetAtt_Example--yaml"></a>
 
-```yaml
-
+```
       AWSTemplateFormatVersion: '2010-09-09'
       Description: Serverless Stack
       Resources:
@@ -327,18 +223,10 @@ The ID of the record, such as `rec-rjeatvy434trk`.
                -
                   Key: LambdaArn
                   Value: !GetAtt [SimpleLambda, Outputs.SCLambdaArn]
-
 ```
 
 ## See also
-
-- [ProvisionProduct](../../../servicecatalog/latest/dg/api-provisionproduct.md) in the _AWS Service Catalog API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ProvisioningParameter
+<a name="aws-resource-servicecatalog-cloudformationprovisionedproduct--seealso"></a>
++ [ProvisionProduct](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ProvisionProduct.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

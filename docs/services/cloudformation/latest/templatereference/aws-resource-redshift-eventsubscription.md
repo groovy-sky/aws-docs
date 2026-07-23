@@ -2,242 +2,164 @@
 title: "AWS::Redshift::EventSubscription"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::EventSubscription
+<a name="aws-resource-redshift-eventsubscription"></a>
 
 ## Syntax
+<a name="aws-resource-redshift-eventsubscription-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-redshift-eventsubscription-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Redshift::EventSubscription",
   "Properties" : {
-      "Enabled" : Boolean,
-      "EventCategories" : [ String, ... ],
-      "Severity" : String,
-      "SnsTopicArn" : String,
-      "SourceIds" : [ String, ... ],
-      "SourceType" : String,
-      "SubscriptionName" : String,
-      "Tags" : [ Tag, ... ]
+      "[Enabled](#cfn-redshift-eventsubscription-enabled)" : {{Boolean}},
+      "[EventCategories](#cfn-redshift-eventsubscription-eventcategories)" : {{[ String, ... ]}},
+      "[Severity](#cfn-redshift-eventsubscription-severity)" : {{String}},
+      "[SnsTopicArn](#cfn-redshift-eventsubscription-snstopicarn)" : {{String}},
+      "[SourceIds](#cfn-redshift-eventsubscription-sourceids)" : {{[ String, ... ]}},
+      "[SourceType](#cfn-redshift-eventsubscription-sourcetype)" : {{String}},
+      "[SubscriptionName](#cfn-redshift-eventsubscription-subscriptionname)" : {{String}},
+      "[Tags](#cfn-redshift-eventsubscription-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-redshift-eventsubscription-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Redshift::EventSubscription
 Properties:
-  Enabled: Boolean
-  EventCategories:
-    - String
-  Severity: String
-  SnsTopicArn: String
-  SourceIds:
-    - String
-  SourceType: String
-  SubscriptionName: String
-  Tags:
-    - Tag
-
+  [Enabled](#cfn-redshift-eventsubscription-enabled): {{Boolean}}
+  [EventCategories](#cfn-redshift-eventsubscription-eventcategories): {{
+    - String}}
+  [Severity](#cfn-redshift-eventsubscription-severity): {{String}}
+  [SnsTopicArn](#cfn-redshift-eventsubscription-snstopicarn): {{String}}
+  [SourceIds](#cfn-redshift-eventsubscription-sourceids): {{
+    - String}}
+  [SourceType](#cfn-redshift-eventsubscription-sourcetype): {{String}}
+  [SubscriptionName](#cfn-redshift-eventsubscription-subscriptionname): {{String}}
+  [Tags](#cfn-redshift-eventsubscription-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-redshift-eventsubscription-properties"></a>
 
-`Enabled`
+`Enabled`  <a name="cfn-redshift-eventsubscription-enabled"></a>
+A boolean value; set to `true` to activate the subscription, and set to `false` to create the subscription but not activate it.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A boolean value; set to `true` to activate the subscription, and set to
-`false` to create the subscription but not activate it.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventCategories`
-
-Specifies the Amazon Redshift event categories to be published by the event notification
-subscription.
-
+`EventCategories`  <a name="cfn-redshift-eventsubscription-eventcategories"></a>
+Specifies the Amazon Redshift event categories to be published by the event notification subscription.
 Values: configuration, management, monitoring, security, pending
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `configuration | management | monitoring | security | pending`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `configuration | management | monitoring | security | pending`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Severity`
-
-Specifies the Amazon Redshift event severity to be published by the event notification
-subscription.
-
+`Severity`  <a name="cfn-redshift-eventsubscription-severity"></a>
+Specifies the Amazon Redshift event severity to be published by the event notification subscription.
 Values: ERROR, INFO
+*Required*: No
+*Type*: String
+*Allowed values*: `ERROR | INFO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SnsTopicArn`  <a name="cfn-redshift-eventsubscription-snstopicarn"></a>
+The Amazon Resource Name (ARN) of the Amazon SNS topic used to transmit the event notifications. The ARN is created by Amazon SNS when you create a topic and subscribe to it.
+*Required*: No
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `ERROR | INFO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnsTopicArn`
-
-The Amazon Resource Name (ARN) of the Amazon SNS topic used to transmit the event
-notifications. The ARN is created by Amazon SNS when you create a topic and subscribe to
-it.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceIds`
-
-A list of one or more identifiers of Amazon Redshift source objects. All of the objects
-must be of the same type as was specified in the source type parameter. The event
-subscription will return only events generated by the specified objects. If not
-specified, then events are returned for all objects within the source type
-specified.
-
+`SourceIds`  <a name="cfn-redshift-eventsubscription-sourceids"></a>
+A list of one or more identifiers of Amazon Redshift source objects. All of the objects must be of the same type as was specified in the source type parameter. The event subscription will return only events generated by the specified objects. If not specified, then events are returned for all objects within the source type specified.
 Example: my-cluster-1, my-cluster-2
-
 Example: my-snapshot-20131010
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceType`
-
-The type of source that will be generating the events. For example, if you want to
-be notified of events generated by a cluster, you would set this parameter to cluster.
-If this value is not specified, events are returned for all Amazon Redshift objects in your
-AWS account. You must specify a source type in order to specify source IDs.
-
+`SourceType`  <a name="cfn-redshift-eventsubscription-sourcetype"></a>
+The type of source that will be generating the events. For example, if you want to be notified of events generated by a cluster, you would set this parameter to cluster. If this value is not specified, events are returned for all Amazon Redshift objects in your AWS account. You must specify a source type in order to specify source IDs.
 Valid values: cluster, cluster-parameter-group, cluster-security-group, cluster-snapshot, and scheduled-action.
+*Required*: No
+*Type*: String
+*Allowed values*: `cluster | cluster-parameter-group | cluster-security-group | cluster-snapshot | scheduled-action`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `cluster | cluster-parameter-group | cluster-security-group | cluster-snapshot | scheduled-action`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubscriptionName`
-
+`SubscriptionName`  <a name="cfn-redshift-eventsubscription-subscriptionname"></a>
 The name of the event subscription to be created.
-
 Constraints:
++ Cannot be null, empty, or blank.
++ Must contain from 1 to 255 alphanumeric characters or hyphens.
++ First character must be a letter.
++ Cannot end with a hyphen or contain two consecutive hyphens.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?=^[a-zA-Z][a-zA-Z0-9]*(-[a-zA-Z0-9]+)*$).{1,255}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- Cannot be null, empty, or blank.
-
-- Must contain from 1 to 255 alphanumeric characters or hyphens.
-
-- First character must be a letter.
-
-- Cannot end with a hyphen or contain two consecutive hyphens.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?=^[a-zA-Z][a-zA-Z0-9]*(-[a-zA-Z0-9]+)*$).{1,255}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-redshift-eventsubscription-tags"></a>
 A list of tag instances.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-redshift-eventsubscription-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-redshift-eventsubscription-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-redshift-eventsubscription-return-values"></a>
 
 ### Ref
+<a name="aws-resource-redshift-eventsubscription-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "mySubscriptionName" }`
+ `{ "Ref": "mySubscriptionName" }`
 
-For the Amazon Redshift `EventSubscription`, Ref returns the name of the subscription.
+For the Amazon Redshift`EventSubscription`, Ref returns the name of the subscription.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-redshift-eventsubscription-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CustomerAwsId`
+####
+<a name="aws-resource-redshift-eventsubscription-return-values-fn--getatt-fn--getatt"></a>
 
-The AWS account associated with the Amazon Redshift event notification
-subscription.
+`CustomerAwsId`  <a name="CustomerAwsId-fn::getatt"></a>
+The AWS account associated with the Amazon Redshift event notification subscription.
 
-`CustSubscriptionId`
-
+`CustSubscriptionId`  <a name="CustSubscriptionId-fn::getatt"></a>
 The name of the Amazon Redshift event notification subscription.
 
-`EventCategoriesList`
-
-The list of Amazon Redshift event categories specified in the event notification
-subscription.
-
+`EventCategoriesList`  <a name="EventCategoriesList-fn::getatt"></a>
+The list of Amazon Redshift event categories specified in the event notification subscription.
 Values: Configuration, Management, Monitoring, Security, Pending
 
-`SourceIdsList`
+`SourceIdsList`  <a name="SourceIdsList-fn::getatt"></a>
+A list of the sources that publish events to the Amazon Redshift event notification subscription.
 
-A list of the sources that publish events to the Amazon Redshift event notification
-subscription.
-
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the Amazon Redshift event notification subscription.
-
 Constraints:
++ Can be one of the following: active \| no-permission \| topic-not-exist
++ The status "no-permission" indicates that Amazon Redshift no longer has permission to post to the Amazon SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
 
-- Can be one of the following: active \| no-permission \|
-topic-not-exist
-
-- The status "no-permission" indicates that Amazon Redshift no longer has
-permission to post to the Amazon SNS topic. The status "topic-not-exist"
-indicates that the topic was deleted after the subscription was
-created.
-
-`SubscriptionCreationTime`
-
-The date and time the Amazon Redshift event notification subscription was
-created.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Redshift::EndpointAuthorization
-
-Tag
+`SubscriptionCreationTime`  <a name="SubscriptionCreationTime-fn::getatt"></a>
+The date and time the Amazon Redshift event notification subscription was created.
 
 All content copied from https://docs.aws.amazon.com/.

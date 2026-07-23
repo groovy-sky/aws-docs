@@ -2,86 +2,57 @@
 title: "AWS::ECR::SigningConfiguration RepositoryFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::SigningConfiguration RepositoryFilter
+<a name="aws-properties-ecr-signingconfiguration-repositoryfilter"></a>
 
-A repository filter used to determine which repositories have their
-images automatically signed on push. Each filter consists of a filter type and filter value.
+A repository filter used to determine which repositories have their images automatically signed on push. Each filter consists of a filter type and filter value.
 
 ## Syntax
+<a name="aws-properties-ecr-signingconfiguration-repositoryfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecr-signingconfiguration-repositoryfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Filter" : String,
-  "FilterType" : String
+  "[Filter](#cfn-ecr-signingconfiguration-repositoryfilter-filter)" : {{String}},
+  "[FilterType](#cfn-ecr-signingconfiguration-repositoryfilter-filtertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecr-signingconfiguration-repositoryfilter-syntax.yaml"></a>
 
-```yaml
-
-  Filter: String
-  FilterType: String
-
+```
+  [Filter](#cfn-ecr-signingconfiguration-repositoryfilter-filter): {{String}}
+  [FilterType](#cfn-ecr-signingconfiguration-repositoryfilter-filtertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecr-signingconfiguration-repositoryfilter-properties"></a>
 
-`Filter`
-
-The filter value used to match repository names. When using
-`WILDCARD_MATCH`, the `*` character matches any sequence of characters.
-
+`Filter`  <a name="cfn-ecr-signingconfiguration-repositoryfilter-filter"></a>
+The filter value used to match repository names. When using `WILDCARD_MATCH`, the `*` character matches any sequence of characters.
 Examples:
++ `myapp/*` - Matches all repositories starting with `myapp/`
++ `*/production` - Matches all repositories ending with `/production`
++ `*prod*` - Matches all repositories containing `prod`
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?:[a-z0-9*]+(?:[._-][a-z0-9*]+)*/)*[a-z0-9*]+(?:[._-][a-z0-9*]+)*$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `myapp/*` \- Matches all repositories starting with
-`myapp/`
-
-- `*/production` \- Matches all repositories ending with
-`/production`
-
-- `*prod*` \- Matches all repositories containing
-`prod`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?:[a-z0-9*]+(?:[._-][a-z0-9*]+)*/)*[a-z0-9*]+(?:[._-][a-z0-9*]+)*$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterType`
-
-The type of filter to apply. Currently, only `WILDCARD_MATCH` is supported,
-which uses wildcard patterns to match repository names.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `WILDCARD_MATCH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECR::SigningConfiguration
-
-Rule
+`FilterType`  <a name="cfn-ecr-signingconfiguration-repositoryfilter-filtertype"></a>
+The type of filter to apply. Currently, only `WILDCARD_MATCH` is supported, which uses wildcard patterns to match repository names.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `WILDCARD_MATCH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,82 +2,60 @@
 title: "AWS::ConnectCampaignsV2::Campaign RestrictedPeriod"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign RestrictedPeriod
+<a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod"></a>
 
 Contains information about a restricted period.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod-syntax.json"></a>
 
-```json
-
+```
 {
-  "EndDate" : String,
-  "Name" : String,
-  "StartDate" : String
+  "[EndDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-enddate)" : {{String}},
+  "[Name](#cfn-connectcampaignsv2-campaign-restrictedperiod-name)" : {{String}},
+  "[StartDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-startdate)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod-syntax.yaml"></a>
 
-```yaml
-
-  EndDate: String
-  Name: String
-  StartDate: String
-
+```
+  [EndDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-enddate): {{String}}
+  [Name](#cfn-connectcampaignsv2-campaign-restrictedperiod-name): {{String}}
+  [StartDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-startdate): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod-properties"></a>
 
-`EndDate`
-
+`EndDate`  <a name="cfn-connectcampaignsv2-campaign-restrictedperiod-enddate"></a>
 The end date of the restricted period.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{4}-\d{2}-\d{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{4}-\d{2}-\d{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connectcampaignsv2-campaign-restrictedperiod-name"></a>
 The name of the restricted period.
+*Required*: No
+*Type*: String
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartDate`
-
+`StartDate`  <a name="cfn-connectcampaignsv2-campaign-restrictedperiod-startdate"></a>
 The start date of the restricted period.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{4}-\d{2}-\d{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProgressiveConfig
-
-RestrictedPeriods
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{4}-\d{2}-\d{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

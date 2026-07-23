@@ -2,56 +2,43 @@
 title: "AWS::QuickSight::DataSource AmazonOpenSearchParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource AmazonOpenSearchParameters
+<a name="aws-properties-quicksight-datasource-amazonopensearchparameters"></a>
 
 The parameters for OpenSearch.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-amazonopensearchparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-amazonopensearchparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Domain" : String
+  "[Domain](#cfn-quicksight-datasource-amazonopensearchparameters-domain)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-amazonopensearchparameters-syntax.yaml"></a>
 
-```yaml
-
-  Domain: String
-
+```
+  [Domain](#cfn-quicksight-datasource-amazonopensearchparameters-domain): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-amazonopensearchparameters-properties"></a>
 
-`Domain`
-
+`Domain`  <a name="cfn-quicksight-datasource-amazonopensearchparameters-domain"></a>
 The OpenSearch domain.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmazonElasticsearchParameters
-
-AthenaParameters
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

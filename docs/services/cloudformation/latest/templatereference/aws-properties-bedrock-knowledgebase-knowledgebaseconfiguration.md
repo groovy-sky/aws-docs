@@ -2,93 +2,78 @@
 title: "AWS::Bedrock::KnowledgeBase KnowledgeBaseConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase KnowledgeBaseConfiguration
+<a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration"></a>
 
-Configurations to apply to a knowledge base attached to the agent during query. For more information, see [Knowledge base retrieval configurations](../../../bedrock/latest/userguide/agents-session-state.md#session-state-kb).
+Configurations to apply to a knowledge base attached to the agent during query. For more information, see [Knowledge base retrieval configurations](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-session-state.html#session-state-kb).
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KendraKnowledgeBaseConfiguration" : KendraKnowledgeBaseConfiguration,
-  "SqlKnowledgeBaseConfiguration" : SqlKnowledgeBaseConfiguration,
-  "Type" : String,
-  "VectorKnowledgeBaseConfiguration" : VectorKnowledgeBaseConfiguration
+  "[KendraKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-kendraknowledgebaseconfiguration)" : {{KendraKnowledgeBaseConfiguration}},
+  "[ManagedKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-managedknowledgebaseconfiguration)" : {{ManagedKnowledgeBaseConfiguration}},
+  "[SqlKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-sqlknowledgebaseconfiguration)" : {{SqlKnowledgeBaseConfiguration}},
+  "[Type](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-type)" : {{String}},
+  "[VectorKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-vectorknowledgebaseconfiguration)" : {{VectorKnowledgeBaseConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KendraKnowledgeBaseConfiguration:
-    KendraKnowledgeBaseConfiguration
-  SqlKnowledgeBaseConfiguration:
-    SqlKnowledgeBaseConfiguration
-  Type: String
-  VectorKnowledgeBaseConfiguration:
-    VectorKnowledgeBaseConfiguration
-
+```
+  [KendraKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-kendraknowledgebaseconfiguration): {{
+    KendraKnowledgeBaseConfiguration}}
+  [ManagedKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-managedknowledgebaseconfiguration): {{
+    ManagedKnowledgeBaseConfiguration}}
+  [SqlKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-sqlknowledgebaseconfiguration): {{
+    SqlKnowledgeBaseConfiguration}}
+  [Type](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-type): {{String}}
+  [VectorKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-vectorknowledgebaseconfiguration): {{
+    VectorKnowledgeBaseConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration-properties"></a>
 
-`KendraKnowledgeBaseConfiguration`
-
+`KendraKnowledgeBaseConfiguration`  <a name="cfn-bedrock-knowledgebase-knowledgebaseconfiguration-kendraknowledgebaseconfiguration"></a>
 Settings for an Amazon Kendra knowledge base.
+*Required*: No
+*Type*: [KendraKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-kendraknowledgebaseconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ManagedKnowledgeBaseConfiguration`  <a name="cfn-bedrock-knowledgebase-knowledgebaseconfiguration-managedknowledgebaseconfiguration"></a>
+Contains configuration details for a knowledge base that uses a vector store fully managed by Amazon Bedrock. Specify this object when the knowledge base type is MANAGED.
+*Required*: No
+*Type*: [ManagedKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-managedknowledgebaseconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [KendraKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-kendraknowledgebaseconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SqlKnowledgeBaseConfiguration`
-
+`SqlKnowledgeBaseConfiguration`  <a name="cfn-bedrock-knowledgebase-knowledgebaseconfiguration-sqlknowledgebaseconfiguration"></a>
 Specifies configurations for a knowledge base connected to an SQL database.
+*Required*: No
+*Type*: [SqlKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-sqlknowledgebaseconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Type`  <a name="cfn-bedrock-knowledgebase-knowledgebaseconfiguration-type"></a>
+The type of data that the data source is converted into for the knowledge base. Choose `MANAGED` to create a managed knowledge base.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VECTOR | KENDRA | SQL | MANAGED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [SqlKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-sqlknowledgebaseconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of data that the data source is converted into for the knowledge base.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VECTOR | KENDRA | SQL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VectorKnowledgeBaseConfiguration`
-
+`VectorKnowledgeBaseConfiguration`  <a name="cfn-bedrock-knowledgebase-knowledgebaseconfiguration-vectorknowledgebaseconfiguration"></a>
 Contains details about the model that's used to convert the data source into vector embeddings.
-
-_Required_: No
-
-_Type_: [VectorKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-vectorknowledgebaseconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KendraKnowledgeBaseConfiguration
-
-MongoDbAtlasConfiguration
+*Required*: No
+*Type*: [VectorKnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-vectorknowledgebaseconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

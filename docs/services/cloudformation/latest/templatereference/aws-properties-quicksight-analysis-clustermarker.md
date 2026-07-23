@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis ClusterMarker"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ClusterMarker
+<a name="aws-properties-quicksight-analysis-clustermarker"></a>
 
-The cluster marker that is a part of the cluster marker
-configuration.
+The cluster marker that is a part of the cluster marker configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-clustermarker-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-clustermarker-syntax.json"></a>
 
-```json
-
+```
 {
-  "SimpleClusterMarker" : SimpleClusterMarker
+  "[SimpleClusterMarker](#cfn-quicksight-analysis-clustermarker-simpleclustermarker)" : {{SimpleClusterMarker}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-clustermarker-syntax.yaml"></a>
 
-```yaml
-
-  SimpleClusterMarker:
-    SimpleClusterMarker
-
+```
+  [SimpleClusterMarker](#cfn-quicksight-analysis-clustermarker-simpleclustermarker): {{
+    SimpleClusterMarker}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-clustermarker-properties"></a>
 
-`SimpleClusterMarker`
-
+`SimpleClusterMarker`  <a name="cfn-quicksight-analysis-clustermarker-simpleclustermarker"></a>
 The simple cluster marker of the cluster marker.
-
-_Required_: No
-
-_Type_: [SimpleClusterMarker](aws-properties-quicksight-analysis-simpleclustermarker.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChartAxisLabelOptions
-
-ClusterMarkerConfiguration
+*Required*: No
+*Type*: [SimpleClusterMarker](aws-properties-quicksight-analysis-simpleclustermarker.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

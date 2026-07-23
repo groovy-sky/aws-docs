@@ -2,77 +2,58 @@
 title: "AWS::ECS::DaemonTaskDefinition RestartPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::DaemonTaskDefinition RestartPolicy
+<a name="aws-properties-ecs-daemontaskdefinition-restartpolicy"></a>
 
-The `RestartPolicy` property type specifies Property description not available. for an [AWS::ECS::DaemonTaskDefinition](aws-resource-ecs-daemontaskdefinition.md).
+<a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-description"></a>The `RestartPolicy` property type specifies Property description not available. for an [AWS::ECS::DaemonTaskDefinition](aws-resource-ecs-daemontaskdefinition.md).
 
 ## Syntax
+<a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "IgnoredExitCodes" : [ Integer, ... ],
-  "RestartAttemptPeriod" : Integer
+  "[Enabled](#cfn-ecs-daemontaskdefinition-restartpolicy-enabled)" : {{Boolean}},
+  "[IgnoredExitCodes](#cfn-ecs-daemontaskdefinition-restartpolicy-ignoredexitcodes)" : {{[ Integer, ... ]}},
+  "[RestartAttemptPeriod](#cfn-ecs-daemontaskdefinition-restartpolicy-restartattemptperiod)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  IgnoredExitCodes:
-    - Integer
-  RestartAttemptPeriod: Integer
-
+```
+  [Enabled](#cfn-ecs-daemontaskdefinition-restartpolicy-enabled): {{Boolean}}
+  [IgnoredExitCodes](#cfn-ecs-daemontaskdefinition-restartpolicy-ignoredexitcodes): {{
+    - Integer}}
+  [RestartAttemptPeriod](#cfn-ecs-daemontaskdefinition-restartpolicy-restartattemptperiod): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-ecs-daemontaskdefinition-restartpolicy-enabled"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IgnoredExitCodes`
-
+`IgnoredExitCodes`  <a name="cfn-ecs-daemontaskdefinition-restartpolicy-ignoredexitcodes"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RestartAttemptPeriod`
-
+`RestartAttemptPeriod`  <a name="cfn-ecs-daemontaskdefinition-restartpolicy-restartattemptperiod"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RepositoryCredentials
-
-Secret
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

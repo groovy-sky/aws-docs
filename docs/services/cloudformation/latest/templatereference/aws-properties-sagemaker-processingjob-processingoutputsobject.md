@@ -2,93 +2,67 @@
 title: "AWS::SageMaker::ProcessingJob ProcessingOutputsObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ProcessingJob ProcessingOutputsObject
+<a name="aws-properties-sagemaker-processingjob-processingoutputsobject"></a>
 
-Describes the results of a processing job. The processing output must specify exactly
-one of either `S3Output` or `FeatureStoreOutput` types.
+Describes the results of a processing job. The processing output must specify exactly one of either `S3Output` or `FeatureStoreOutput` types.
 
 ## Syntax
+<a name="aws-properties-sagemaker-processingjob-processingoutputsobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-processingjob-processingoutputsobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppManaged" : Boolean,
-  "FeatureStoreOutput" : FeatureStoreOutput,
-  "OutputName" : String,
-  "S3Output" : S3Output
+  "[AppManaged](#cfn-sagemaker-processingjob-processingoutputsobject-appmanaged)" : {{Boolean}},
+  "[FeatureStoreOutput](#cfn-sagemaker-processingjob-processingoutputsobject-featurestoreoutput)" : {{FeatureStoreOutput}},
+  "[OutputName](#cfn-sagemaker-processingjob-processingoutputsobject-outputname)" : {{String}},
+  "[S3Output](#cfn-sagemaker-processingjob-processingoutputsobject-s3output)" : {{S3Output}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-processingjob-processingoutputsobject-syntax.yaml"></a>
 
-```yaml
-
-  AppManaged: Boolean
-  FeatureStoreOutput:
-    FeatureStoreOutput
-  OutputName: String
-  S3Output:
-    S3Output
-
+```
+  [AppManaged](#cfn-sagemaker-processingjob-processingoutputsobject-appmanaged): {{Boolean}}
+  [FeatureStoreOutput](#cfn-sagemaker-processingjob-processingoutputsobject-featurestoreoutput): {{
+    FeatureStoreOutput}}
+  [OutputName](#cfn-sagemaker-processingjob-processingoutputsobject-outputname): {{String}}
+  [S3Output](#cfn-sagemaker-processingjob-processingoutputsobject-s3output): {{
+    S3Output}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-processingjob-processingoutputsobject-properties"></a>
 
-`AppManaged`
+`AppManaged`  <a name="cfn-sagemaker-processingjob-processingoutputsobject-appmanaged"></a>
+When `True`, output operations such as data upload are managed natively by the processing job application. When `False` (default), output operations are managed by Amazon SageMaker.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-When `True`, output operations such as data upload are managed natively by
-the processing job application. When `False` (default), output operations are
-managed by Amazon SageMaker.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FeatureStoreOutput`
-
+`FeatureStoreOutput`  <a name="cfn-sagemaker-processingjob-processingoutputsobject-featurestoreoutput"></a>
 Configuration for processing job outputs in Amazon SageMaker Feature Store.
+*Required*: No
+*Type*: [FeatureStoreOutput](aws-properties-sagemaker-processingjob-featurestoreoutput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [FeatureStoreOutput](aws-properties-sagemaker-processingjob-featurestoreoutput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OutputName`
-
+`OutputName`  <a name="cfn-sagemaker-processingjob-processingoutputsobject-outputname"></a>
 The name for the processing job output.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3Output`
-
+`S3Output`  <a name="cfn-sagemaker-processingjob-processingoutputsobject-s3output"></a>
 Configuration for uploading output data to Amazon S3 from the processing container.
-
-_Required_: No
-
-_Type_: [S3Output](aws-properties-sagemaker-processingjob-s3output.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProcessingOutputConfig
-
-ProcessingResources
+*Required*: No
+*Type*: [S3Output](aws-properties-sagemaker-processingjob-s3output.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

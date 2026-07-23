@@ -2,84 +2,61 @@
 title: "AWS::QuickSight::Template CustomColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CustomColor
+<a name="aws-properties-quicksight-template-customcolor"></a>
 
 Determines the color that's applied to a particular data value in a column.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-customcolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-customcolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "FieldValue" : String,
-  "SpecialValue" : String
+  "[Color](#cfn-quicksight-template-customcolor-color)" : {{String}},
+  "[FieldValue](#cfn-quicksight-template-customcolor-fieldvalue)" : {{String}},
+  "[SpecialValue](#cfn-quicksight-template-customcolor-specialvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-customcolor-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  FieldValue: String
-  SpecialValue: String
-
+```
+  [Color](#cfn-quicksight-template-customcolor-color): {{String}}
+  [FieldValue](#cfn-quicksight-template-customcolor-fieldvalue): {{String}}
+  [SpecialValue](#cfn-quicksight-template-customcolor-specialvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-customcolor-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-template-customcolor-color"></a>
 The color that is applied to the data value.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldValue`
-
+`FieldValue`  <a name="cfn-quicksight-template-customcolor-fieldvalue"></a>
 The data value that the color is applied to.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpecialValue`
-
+`SpecialValue`  <a name="cfn-quicksight-template-customcolor-specialvalue"></a>
 The value of a special data value.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `EMPTY | NULL | OTHER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomActionURLOperation
-
-CustomContentConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `EMPTY | NULL | OTHER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

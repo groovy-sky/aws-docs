@@ -2,113 +2,102 @@
 title: "AWS::CloudFront::TrustStore"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::TrustStore
+<a name="aws-resource-cloudfront-truststore"></a>
 
 A trust store.
 
 ## Syntax
+<a name="aws-resource-cloudfront-truststore-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudfront-truststore-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFront::TrustStore",
   "Properties" : {
-      "CaCertificatesBundleSource" : CaCertificatesBundleSource,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[CaCertificatesBundleSource](#cfn-cloudfront-truststore-cacertificatesbundlesource)" : {{CaCertificatesBundleSource}},
+      "[Name](#cfn-cloudfront-truststore-name)" : {{String}},
+      "[Tags](#cfn-cloudfront-truststore-tags)" : {{[ Tag, ... ]}},
+      "[UseClientCertificateOCSPEndpoint](#cfn-cloudfront-truststore-useclientcertificateocspendpoint)" : {{Boolean}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudfront-truststore-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFront::TrustStore
 Properties:
-  CaCertificatesBundleSource:
-    CaCertificatesBundleSource
-  Name: String
-  Tags:
-    - Tag
-
+  [CaCertificatesBundleSource](#cfn-cloudfront-truststore-cacertificatesbundlesource): {{
+    CaCertificatesBundleSource}}
+  [Name](#cfn-cloudfront-truststore-name): {{String}}
+  [Tags](#cfn-cloudfront-truststore-tags): {{
+    - Tag}}
+  [UseClientCertificateOCSPEndpoint](#cfn-cloudfront-truststore-useclientcertificateocspendpoint): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudfront-truststore-properties"></a>
 
-`CaCertificatesBundleSource`
-
+`CaCertificatesBundleSource`  <a name="cfn-cloudfront-truststore-cacertificatesbundlesource"></a>
 A CA certificates bundle source.
+*Required*: No
+*Type*: [CaCertificatesBundleSource](aws-properties-cloudfront-truststore-cacertificatesbundlesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CaCertificatesBundleSource](aws-properties-cloudfront-truststore-cacertificatesbundlesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cloudfront-truststore-name"></a>
 The trust store's name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-cloudfront-truststore-tags"></a>
 A complex type that contains zero or more `Tag` elements.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudfront-truststore-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cloudfront-truststore-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`UseClientCertificateOCSPEndpoint`  <a name="cfn-cloudfront-truststore-useclientcertificateocspendpoint"></a>
+A boolean. When true, performs real-time certificate revocation checks by querying the OCSP endpoint specified within the client certificate.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudfront-truststore-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudfront-truststore-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudfront-truststore-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-cloudfront-truststore-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The trust store's Amazon Resource Name (ARN).
 
-`ETag`
-
+`ETag`  <a name="ETag-fn::getatt"></a>
 The version identifier for the current version of the trust store.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The trust store's ID.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The trust store's last modified time.
 
-`NumberOfCaCertificates`
-
+`NumberOfCaCertificates`  <a name="NumberOfCaCertificates-fn::getatt"></a>
 The trust store's number of CA certificates.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The trust store's status.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrustedSigners
-
-CaCertificatesBundleS3Location
 
 All content copied from https://docs.aws.amazon.com/.

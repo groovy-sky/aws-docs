@@ -2,94 +2,77 @@
 title: "AWS::ElasticLoadBalancingV2::ListenerRule FixedResponseConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::ListenerRule FixedResponseConfig
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig"></a>
 
 Specifies information required when returning a custom HTTP response.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContentType" : String,
-  "MessageBody" : String,
-  "StatusCode" : String
+  "[ContentType](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-contenttype)" : {{String}},
+  "[MessageBody](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-messagebody)" : {{String}},
+  "[StatusCode](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-statuscode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig-syntax.yaml"></a>
 
-```yaml
-
-  ContentType: String
-  MessageBody: String
-  StatusCode: String
-
+```
+  [ContentType](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-contenttype): {{String}}
+  [MessageBody](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-messagebody): {{String}}
+  [StatusCode](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-statuscode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig-properties"></a>
 
-`ContentType`
-
+`ContentType`  <a name="cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-contenttype"></a>
 The content type.
+Valid Values: text/plain \| text/css \| text/html \| application/javascript \| application/json
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Valid Values: text/plain \| text/css \| text/html \| application/javascript \|
-application/json
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MessageBody`
-
+`MessageBody`  <a name="cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-messagebody"></a>
 The message.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatusCode`
-
+`StatusCode`  <a name="cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-statuscode"></a>
 The HTTP response code (2XX, 4XX, or 5XX).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(2|4|5)\d\d$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(2|4|5)\d\d$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig--examples"></a>
 
-The following example creates a listener rule with an action that returns
-the specified HTTP response under the specified condition.
+###
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig--examples--"></a>
+
+The following example creates a listener rule with an action that returns the specified HTTP response under the specified condition.
 
 #### YAML
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig--examples----yaml"></a>
 
-```yaml
-
+```
 myListenerRule:
     Type: AWS::ElasticLoadBalancingV2::ListenerRule
     Properties:
@@ -108,9 +91,9 @@ myListenerRule:
 ```
 
 #### JSON
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig--examples----json"></a>
 
-```json
-
+```
 {
     "myListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",
@@ -141,11 +124,5 @@ myListenerRule:
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthenticateOidcConfig
-
-ForwardConfig
 
 All content copied from https://docs.aws.amazon.com/.

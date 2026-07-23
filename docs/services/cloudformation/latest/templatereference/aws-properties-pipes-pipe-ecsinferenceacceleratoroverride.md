@@ -2,69 +2,49 @@
 title: "AWS::Pipes::Pipe EcsInferenceAcceleratorOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe EcsInferenceAcceleratorOverride
+<a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride"></a>
 
-Details on an Elastic Inference accelerator task override. This parameter is used to
-override the Elastic Inference accelerator specified in the task definition. For more
-information, see [Working with Amazon Elastic\
-Inference on Amazon ECS](../../../amazonecs/latest/userguide/ecs-inference.md) in the _Amazon Elastic Container Service_
-_Developer Guide_.
+Details on an Elastic Inference accelerator task override. This parameter is used to override the Elastic Inference accelerator specified in the task definition. For more information, see [Working with Amazon Elastic Inference on Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/userguide/ecs-inference.html) in the *Amazon Elastic Container Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeviceName" : String,
-  "DeviceType" : String
+  "[DeviceName](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicename)" : {{String}},
+  "[DeviceType](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride-syntax.yaml"></a>
 
-```yaml
-
-  DeviceName: String
-  DeviceType: String
-
+```
+  [DeviceName](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicename): {{String}}
+  [DeviceType](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride-properties"></a>
 
-`DeviceName`
+`DeviceName`  <a name="cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicename"></a>
+The Elastic Inference accelerator device name to override for the task. This parameter must match a `deviceName` specified in the task definition.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Elastic Inference accelerator device name to override for the task. This parameter
-must match a `deviceName` specified in the task definition.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeviceType`
-
+`DeviceType`  <a name="cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicetype"></a>
 The Elastic Inference accelerator type to use.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EcsEphemeralStorage
-
-EcsResourceRequirement
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

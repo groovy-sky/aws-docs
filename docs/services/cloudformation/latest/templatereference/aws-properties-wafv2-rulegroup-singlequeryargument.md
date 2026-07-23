@@ -2,64 +2,48 @@
 title: "AWS::WAFv2::RuleGroup SingleQueryArgument"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup SingleQueryArgument
+<a name="aws-properties-wafv2-rulegroup-singlequeryargument"></a>
 
-Inspect one query argument in the web request, identified by name, for example
-_UserName_ or _SalesRegion_. The name isn't case
-sensitive.
+Inspect one query argument in the web request, identified by name, for example *UserName* or *SalesRegion*. The name isn't case sensitive.
 
-This is used to indicate the web request component to inspect, in the [FieldToMatch](../userguide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.md#cfn-wafv2-rulegroup-regexpatternsetreferencestatement-fieldtomatch) specification.
+This is used to indicate the web request component to inspect, in the [FieldToMatch](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.html#cfn-wafv2-rulegroup-regexpatternsetreferencestatement-fieldtomatch) specification.
 
 Example JSON: `"SingleQueryArgument": { "Name": "myArgument" }`
 
 ## Syntax
+<a name="aws-properties-wafv2-rulegroup-singlequeryargument-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-rulegroup-singlequeryargument-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-wafv2-rulegroup-singlequeryargument-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-rulegroup-singlequeryargument-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-wafv2-rulegroup-singlequeryargument-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-rulegroup-singlequeryargument-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-wafv2-rulegroup-singlequeryargument-name"></a>
 The name of the query argument to inspect.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SingleHeader
-
-SizeConstraintStatement
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

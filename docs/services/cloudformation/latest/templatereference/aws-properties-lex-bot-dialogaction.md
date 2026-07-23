@@ -2,86 +2,61 @@
 title: "AWS::Lex::Bot DialogAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot DialogAction
+<a name="aws-properties-lex-bot-dialogaction"></a>
 
-Defines the action that the bot executes at runtime when the
-conversation reaches this step.
+Defines the action that the bot executes at runtime when the conversation reaches this step.
 
 ## Syntax
+<a name="aws-properties-lex-bot-dialogaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-dialogaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "SlotToElicit" : String,
-  "SuppressNextMessage" : Boolean,
-  "Type" : String
+  "[SlotToElicit](#cfn-lex-bot-dialogaction-slottoelicit)" : {{String}},
+  "[SuppressNextMessage](#cfn-lex-bot-dialogaction-suppressnextmessage)" : {{Boolean}},
+  "[Type](#cfn-lex-bot-dialogaction-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-dialogaction-syntax.yaml"></a>
 
-```yaml
-
-  SlotToElicit: String
-  SuppressNextMessage: Boolean
-  Type: String
-
+```
+  [SlotToElicit](#cfn-lex-bot-dialogaction-slottoelicit): {{String}}
+  [SuppressNextMessage](#cfn-lex-bot-dialogaction-suppressnextmessage): {{Boolean}}
+  [Type](#cfn-lex-bot-dialogaction-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-dialogaction-properties"></a>
 
-`SlotToElicit`
+`SlotToElicit`  <a name="cfn-lex-bot-dialogaction-slottoelicit"></a>
+If the dialog action is `ElicitSlot`, defines the slot to elicit from the user.
+*Required*: No
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If the dialog action is `ElicitSlot`, defines the slot to
-elicit from the user.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SuppressNextMessage`
-
+`SuppressNextMessage`  <a name="cfn-lex-bot-dialogaction-suppressnextmessage"></a>
 When true the next message for the intent is not used.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-lex-bot-dialogaction-type"></a>
 The action that the bot should execute.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CloseIntent | ConfirmIntent | ElicitIntent | ElicitSlot | StartIntent | FulfillIntent | EndConversation | EvaluateConditional | InvokeDialogCodeHook`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescriptiveBotBuilderSpecification
-
-DialogCodeHookInvocationSetting
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CloseIntent | ConfirmIntent | ElicitIntent | ElicitSlot | StartIntent | FulfillIntent | EndConversation | EvaluateConditional | InvokeDialogCodeHook`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

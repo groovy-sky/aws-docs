@@ -2,56 +2,43 @@
 title: "AWS::CleanRooms::AnalysisTemplate ErrorMessageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate ErrorMessageConfiguration
+<a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration"></a>
 
 A structure that defines the level of detail included in error messages returned by PySpark jobs. This configuration allows you to control the verbosity of error messages to help with troubleshooting PySpark jobs while maintaining appropriate security controls.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String
+  "[Type](#cfn-cleanrooms-analysistemplate-errormessageconfiguration-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-
+```
+  [Type](#cfn-cleanrooms-analysistemplate-errormessageconfiguration-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-cleanrooms-analysistemplate-errormessageconfiguration-type"></a>
 The level of detail for error messages returned by the PySpark job. When set to DETAILED, error messages include more information to help troubleshoot issues with your PySpark job.
-
 Because this setting may expose sensitive data, it is recommended for development and testing environments.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DETAILED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnClassificationDetails
-
-Hash
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DETAILED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

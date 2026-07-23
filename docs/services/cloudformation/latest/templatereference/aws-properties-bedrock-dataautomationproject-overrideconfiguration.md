@@ -2,105 +2,78 @@
 title: "AWS::Bedrock::DataAutomationProject OverrideConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject OverrideConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration"></a>
 
 Additional settings for a project.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Audio" : AudioOverrideConfiguration,
-  "Document" : DocumentOverrideConfiguration,
-  "Image" : ImageOverrideConfiguration,
-  "ModalityRouting" : ModalityRoutingConfiguration,
-  "Video" : VideoOverrideConfiguration
+  "[Audio](#cfn-bedrock-dataautomationproject-overrideconfiguration-audio)" : {{AudioOverrideConfiguration}},
+  "[Document](#cfn-bedrock-dataautomationproject-overrideconfiguration-document)" : {{DocumentOverrideConfiguration}},
+  "[Image](#cfn-bedrock-dataautomationproject-overrideconfiguration-image)" : {{ImageOverrideConfiguration}},
+  "[ModalityRouting](#cfn-bedrock-dataautomationproject-overrideconfiguration-modalityrouting)" : {{ModalityRoutingConfiguration}},
+  "[Video](#cfn-bedrock-dataautomationproject-overrideconfiguration-video)" : {{VideoOverrideConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Audio:
-    AudioOverrideConfiguration
-  Document:
-    DocumentOverrideConfiguration
-  Image:
-    ImageOverrideConfiguration
-  ModalityRouting:
-    ModalityRoutingConfiguration
-  Video:
-    VideoOverrideConfiguration
-
+```
+  [Audio](#cfn-bedrock-dataautomationproject-overrideconfiguration-audio): {{
+    AudioOverrideConfiguration}}
+  [Document](#cfn-bedrock-dataautomationproject-overrideconfiguration-document): {{
+    DocumentOverrideConfiguration}}
+  [Image](#cfn-bedrock-dataautomationproject-overrideconfiguration-image): {{
+    ImageOverrideConfiguration}}
+  [ModalityRouting](#cfn-bedrock-dataautomationproject-overrideconfiguration-modalityrouting): {{
+    ModalityRoutingConfiguration}}
+  [Video](#cfn-bedrock-dataautomationproject-overrideconfiguration-video): {{
+    VideoOverrideConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration-properties"></a>
 
-`Audio`
-
+`Audio`  <a name="cfn-bedrock-dataautomationproject-overrideconfiguration-audio"></a>
 This element declares whether your project will process audio files.
+*Required*: No
+*Type*: [AudioOverrideConfiguration](aws-properties-bedrock-dataautomationproject-audiooverrideconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AudioOverrideConfiguration](aws-properties-bedrock-dataautomationproject-audiooverrideconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Document`
-
+`Document`  <a name="cfn-bedrock-dataautomationproject-overrideconfiguration-document"></a>
 Additional settings for a project.
+*Required*: No
+*Type*: [DocumentOverrideConfiguration](aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DocumentOverrideConfiguration](aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Image`
-
+`Image`  <a name="cfn-bedrock-dataautomationproject-overrideconfiguration-image"></a>
 This element declares whether your project will process image files.
+*Required*: No
+*Type*: [ImageOverrideConfiguration](aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ImageOverrideConfiguration](aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModalityRouting`
-
+`ModalityRouting`  <a name="cfn-bedrock-dataautomationproject-overrideconfiguration-modalityrouting"></a>
 Lets you set which modalities certain file types are processed as.
+*Required*: No
+*Type*: [ModalityRoutingConfiguration](aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ModalityRoutingConfiguration](aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Video`
-
+`Video`  <a name="cfn-bedrock-dataautomationproject-overrideconfiguration-video"></a>
 This element declares whether your project will process video files.
-
-_Required_: No
-
-_Type_: [VideoOverrideConfiguration](aws-properties-bedrock-dataautomationproject-videooverrideconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModalityRoutingConfiguration
-
-PIIEntitiesConfiguration
+*Required*: No
+*Type*: [VideoOverrideConfiguration](aws-properties-bedrock-dataautomationproject-videooverrideconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

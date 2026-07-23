@@ -2,72 +2,53 @@
 title: "AWS::QuickSight::DataSet DataPrepPercentileAggregationFunction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataPrepPercentileAggregationFunction
+<a name="aws-properties-quicksight-dataset-datapreppercentileaggregationfunction"></a>
 
-The `DataPrepPercentileAggregationFunction` property type specifies Property description not available. for an [AWS::QuickSight::DataSet](aws-resource-quicksight-dataset.md).
+<a name="aws-properties-quicksight-dataset-datapreppercentileaggregationfunction-description"></a>The `DataPrepPercentileAggregationFunction` property type specifies Property description not available. for an [AWS::QuickSight::DataSet](aws-resource-quicksight-dataset.md).
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datapreppercentileaggregationfunction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datapreppercentileaggregationfunction-syntax.json"></a>
 
-```json
-
+```
 {
-  "InputColumnName" : String,
-  "PercentileValue" : Number
+  "[InputColumnName](#cfn-quicksight-dataset-datapreppercentileaggregationfunction-inputcolumnname)" : {{String}},
+  "[PercentileValue](#cfn-quicksight-dataset-datapreppercentileaggregationfunction-percentilevalue)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datapreppercentileaggregationfunction-syntax.yaml"></a>
 
-```yaml
-
-  InputColumnName: String
-  PercentileValue: Number
-
+```
+  [InputColumnName](#cfn-quicksight-dataset-datapreppercentileaggregationfunction-inputcolumnname): {{String}}
+  [PercentileValue](#cfn-quicksight-dataset-datapreppercentileaggregationfunction-percentilevalue): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datapreppercentileaggregationfunction-properties"></a>
 
-`InputColumnName`
-
+`InputColumnName`  <a name="cfn-quicksight-dataset-datapreppercentileaggregationfunction-inputcolumnname"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PercentileValue`
-
+`PercentileValue`  <a name="cfn-quicksight-dataset-datapreppercentileaggregationfunction-percentilevalue"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataPrepListAggregationFunction
-
-DataPrepSimpleAggregationFunction
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

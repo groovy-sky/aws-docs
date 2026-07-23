@@ -2,132 +2,93 @@
 title: "AWS::MediaConnect::Flow Fmtp"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow Fmtp
+<a name="aws-properties-mediaconnect-flow-fmtp"></a>
 
-A set of parameters that define the media stream.
+ A set of parameters that define the media stream.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-fmtp-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-fmtp-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChannelOrder" : String,
-  "Colorimetry" : String,
-  "ExactFramerate" : String,
-  "Par" : String,
-  "Range" : String,
-  "ScanMode" : String,
-  "Tcs" : String
+  "[ChannelOrder](#cfn-mediaconnect-flow-fmtp-channelorder)" : {{String}},
+  "[Colorimetry](#cfn-mediaconnect-flow-fmtp-colorimetry)" : {{String}},
+  "[ExactFramerate](#cfn-mediaconnect-flow-fmtp-exactframerate)" : {{String}},
+  "[Par](#cfn-mediaconnect-flow-fmtp-par)" : {{String}},
+  "[Range](#cfn-mediaconnect-flow-fmtp-range)" : {{String}},
+  "[ScanMode](#cfn-mediaconnect-flow-fmtp-scanmode)" : {{String}},
+  "[Tcs](#cfn-mediaconnect-flow-fmtp-tcs)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-fmtp-syntax.yaml"></a>
 
-```yaml
-
-  ChannelOrder: String
-  Colorimetry: String
-  ExactFramerate: String
-  Par: String
-  Range: String
-  ScanMode: String
-  Tcs: String
-
+```
+  [ChannelOrder](#cfn-mediaconnect-flow-fmtp-channelorder): {{String}}
+  [Colorimetry](#cfn-mediaconnect-flow-fmtp-colorimetry): {{String}}
+  [ExactFramerate](#cfn-mediaconnect-flow-fmtp-exactframerate): {{String}}
+  [Par](#cfn-mediaconnect-flow-fmtp-par): {{String}}
+  [Range](#cfn-mediaconnect-flow-fmtp-range): {{String}}
+  [ScanMode](#cfn-mediaconnect-flow-fmtp-scanmode): {{String}}
+  [Tcs](#cfn-mediaconnect-flow-fmtp-tcs): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-fmtp-properties"></a>
 
-`ChannelOrder`
+`ChannelOrder`  <a name="cfn-mediaconnect-flow-fmtp-channelorder"></a>
+ The format of the audio channel.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The format of the audio channel.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Colorimetry`
-
+`Colorimetry`  <a name="cfn-mediaconnect-flow-fmtp-colorimetry"></a>
 The format used for the representation of color.
+*Required*: No
+*Type*: String
+*Allowed values*: `BT601 | BT709 | BT2020 | BT2100 | ST2065-1 | ST2065-3 | XYZ`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BT601 | BT709 | BT2020 | BT2100 | ST2065-1 | ST2065-3 | XYZ`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExactFramerate`
-
+`ExactFramerate`  <a name="cfn-mediaconnect-flow-fmtp-exactframerate"></a>
 The frame rate for the video stream, in frames/second. For example: 60000/1001.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Par`
-
+`Par`  <a name="cfn-mediaconnect-flow-fmtp-par"></a>
 The pixel aspect ratio (PAR) of the video.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Range`
-
+`Range`  <a name="cfn-mediaconnect-flow-fmtp-range"></a>
 The encoding range of the video.
+*Required*: No
+*Type*: String
+*Allowed values*: `NARROW | FULL | FULLPROTECT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NARROW | FULL | FULLPROTECT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScanMode`
-
+`ScanMode`  <a name="cfn-mediaconnect-flow-fmtp-scanmode"></a>
 The type of compression that was used to smooth the video’s appearance.
+*Required*: No
+*Type*: String
+*Allowed values*: `progressive | interlace | progressive-segmented-frame`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `progressive | interlace | progressive-segmented-frame`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tcs`
-
+`Tcs`  <a name="cfn-mediaconnect-flow-fmtp-tcs"></a>
 The transfer characteristic system (TCS) that is used in the video.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SDR | PQ | HLG | LINEAR | BT2100LINPQ | BT2100LINHLG | ST2065-1 | ST428-1 | DENSITY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowTransitEncryptionKeyConfiguration
-
-FrozenFrames
+*Required*: No
+*Type*: String
+*Allowed values*: `SDR | PQ | HLG | LINEAR | BT2100LINPQ | BT2100LINHLG | ST2065-1 | ST428-1 | DENSITY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

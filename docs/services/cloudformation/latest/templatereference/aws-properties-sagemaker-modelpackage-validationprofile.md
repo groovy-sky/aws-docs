@@ -2,76 +2,55 @@
 title: "AWS::SageMaker::ModelPackage ValidationProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage ValidationProfile
+<a name="aws-properties-sagemaker-modelpackage-validationprofile"></a>
 
-Contains data, such as the inputs and targeted instance types that are used in the
-process of validating the model package.
+Contains data, such as the inputs and targeted instance types that are used in the process of validating the model package.
 
-The data provided in the validation profile is made available to your buyers on
-AWS Marketplace.
+The data provided in the validation profile is made available to your buyers on AWS Marketplace.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-validationprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-validationprofile-syntax.json"></a>
 
-```json
-
+```
 {
-  "ProfileName" : String,
-  "TransformJobDefinition" : TransformJobDefinition
+  "[ProfileName](#cfn-sagemaker-modelpackage-validationprofile-profilename)" : {{String}},
+  "[TransformJobDefinition](#cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition)" : {{TransformJobDefinition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-validationprofile-syntax.yaml"></a>
 
-```yaml
-
-  ProfileName: String
-  TransformJobDefinition:
-    TransformJobDefinition
-
+```
+  [ProfileName](#cfn-sagemaker-modelpackage-validationprofile-profilename): {{String}}
+  [TransformJobDefinition](#cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition): {{
+    TransformJobDefinition}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-validationprofile-properties"></a>
 
-`ProfileName`
-
+`ProfileName`  <a name="cfn-sagemaker-modelpackage-validationprofile-profilename"></a>
 The name of the profile for the model package.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransformJobDefinition`
-
-The `TransformJobDefinition` object that describes the transform job used
-for the validation of the model package.
-
-_Required_: Yes
-
-_Type_: [TransformJobDefinition](aws-properties-sagemaker-modelpackage-transformjobdefinition.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransformResources
-
-ValidationSpecification
+`TransformJobDefinition`  <a name="cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition"></a>
+The `TransformJobDefinition` object that describes the transform job used for the validation of the model package.
+*Required*: Yes
+*Type*: [TransformJobDefinition](aws-properties-sagemaker-modelpackage-transformjobdefinition.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

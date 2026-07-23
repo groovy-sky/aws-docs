@@ -2,53 +2,42 @@
 title: "AWS::ApiGatewayV2::Integration ResponseParameterMap"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Integration ResponseParameterMap
+<a name="aws-properties-apigatewayv2-integration-responseparametermap"></a>
 
-The `ResponseParameterMap` property type specifies Property description not available. for an [AWS::ApiGatewayV2::Integration](aws-resource-apigatewayv2-integration.md).
+<a name="aws-properties-apigatewayv2-integration-responseparametermap-description"></a>The `ResponseParameterMap` property type specifies Property description not available. for an [AWS::ApiGatewayV2::Integration](aws-resource-apigatewayv2-integration.md).
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-integration-responseparametermap-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-integration-responseparametermap-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResponseParameters" : [ ResponseParameter, ... ]
+  "[ResponseParameters](#cfn-apigatewayv2-integration-responseparametermap-responseparameters)" : {{[ ResponseParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-integration-responseparametermap-syntax.yaml"></a>
 
-```yaml
-
-  ResponseParameters:
-    - ResponseParameter
-
+```
+  [ResponseParameters](#cfn-apigatewayv2-integration-responseparametermap-responseparameters): {{
+    - ResponseParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-integration-responseparametermap-properties"></a>
 
-`ResponseParameters`
-
+`ResponseParameters`  <a name="cfn-apigatewayv2-integration-responseparametermap-responseparameters"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [ResponseParameter](aws-properties-apigatewayv2-integration-responseparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResponseParameter
-
-TlsConfig
+*Required*: No
+*Type*: Array of [ResponseParameter](aws-properties-apigatewayv2-integration-responseparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

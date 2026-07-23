@@ -2,227 +2,162 @@
 title: "AWS::Deadline::Fleet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet
+<a name="aws-resource-deadline-fleet"></a>
 
-Creates a fleet. Fleets gather information relating to compute, or capacity, for renders
-within your farms. You can choose to manage your own capacity or opt to have fleets fully
-managed by Deadline Cloud.
+Creates a fleet. Fleets gather information relating to compute, or capacity, for renders within your farms. You can choose to manage your own capacity or opt to have fleets fully managed by Deadline Cloud.
 
 ## Syntax
+<a name="aws-resource-deadline-fleet-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-deadline-fleet-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Deadline::Fleet",
   "Properties" : {
-      "Configuration" : FleetConfiguration,
-      "Description" : String,
-      "DisplayName" : String,
-      "FarmId" : String,
-      "HostConfiguration" : HostConfiguration,
-      "MaxWorkerCount" : Integer,
-      "MinWorkerCount" : Integer,
-      "RoleArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[Configuration](#cfn-deadline-fleet-configuration)" : {{FleetConfiguration}},
+      "[Description](#cfn-deadline-fleet-description)" : {{String}},
+      "[DisplayName](#cfn-deadline-fleet-displayname)" : {{String}},
+      "[FarmId](#cfn-deadline-fleet-farmid)" : {{String}},
+      "[HostConfiguration](#cfn-deadline-fleet-hostconfiguration)" : {{HostConfiguration}},
+      "[MaxWorkerCount](#cfn-deadline-fleet-maxworkercount)" : {{Integer}},
+      "[MinWorkerCount](#cfn-deadline-fleet-minworkercount)" : {{Integer}},
+      "[RoleArn](#cfn-deadline-fleet-rolearn)" : {{String}},
+      "[Tags](#cfn-deadline-fleet-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-deadline-fleet-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Deadline::Fleet
 Properties:
-  Configuration:
-    FleetConfiguration
-  Description: String
-  DisplayName: String
-  FarmId: String
-  HostConfiguration:
-    HostConfiguration
-  MaxWorkerCount: Integer
-  MinWorkerCount: Integer
-  RoleArn: String
-  Tags:
-    - Tag
-
+  [Configuration](#cfn-deadline-fleet-configuration): {{
+    FleetConfiguration}}
+  [Description](#cfn-deadline-fleet-description): {{String}}
+  [DisplayName](#cfn-deadline-fleet-displayname): {{String}}
+  [FarmId](#cfn-deadline-fleet-farmid): {{String}}
+  [HostConfiguration](#cfn-deadline-fleet-hostconfiguration): {{
+    HostConfiguration}}
+  [MaxWorkerCount](#cfn-deadline-fleet-maxworkercount): {{Integer}}
+  [MinWorkerCount](#cfn-deadline-fleet-minworkercount): {{Integer}}
+  [RoleArn](#cfn-deadline-fleet-rolearn): {{String}}
+  [Tags](#cfn-deadline-fleet-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-deadline-fleet-properties"></a>
 
-`Configuration`
-
+`Configuration`  <a name="cfn-deadline-fleet-configuration"></a>
 The configuration details for the fleet.
+*Required*: Yes
+*Type*: [FleetConfiguration](aws-properties-deadline-fleet-fleetconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [FleetConfiguration](aws-properties-deadline-fleet-fleetconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-deadline-fleet-description"></a>
 A description that helps identify what the fleet is used for.
-
-###### Important
-
-This field can store any content. Escape or encode this content before displaying it
-on a webpage or any other system that might interpret the content of this field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
-The display name of the fleet summary to update.
-
-###### Important
-
 This field can store any content. Escape or encode this content before displaying it on a webpage or any other system that might interpret the content of this field.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`DisplayName`  <a name="cfn-deadline-fleet-displayname"></a>
+The display name of the fleet summary to update.
+This field can store any content. Escape or encode this content before displaying it on a webpage or any other system that might interpret the content of this field.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FarmId`
-
+`FarmId`  <a name="cfn-deadline-fleet-farmid"></a>
 The farm ID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^farm-[0-9a-f]{32}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`HostConfiguration`  <a name="cfn-deadline-fleet-hostconfiguration"></a>
+Provides a script that runs as a worker is starting up that you can use to provide additional configuration for workers in your fleet.
+To remove a script from a fleet, use the [UpdateFleet](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateFleet.html) operation with the `hostConfiguration``scriptBody` parameter set to an empty string ("").
+*Required*: No
+*Type*: [HostConfiguration](aws-properties-deadline-fleet-hostconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^farm-[0-9a-f]{32}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HostConfiguration`
-
-Provides a script that runs as a worker is starting up that you can use to provide
-additional configuration for workers in your fleet.
-
-To remove a script from a fleet, use the [UpdateFleet](../../../../reference/deadline-cloud/latest/apireference/api-updatefleet.md)
-operation with the `hostConfiguration` `scriptBody` parameter set to an empty string ("").
-
-_Required_: No
-
-_Type_: [HostConfiguration](aws-properties-deadline-fleet-hostconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxWorkerCount`
-
+`MaxWorkerCount`  <a name="cfn-deadline-fleet-maxworkercount"></a>
 The maximum number of workers specified in the fleet.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinWorkerCount`
-
+`MinWorkerCount`  <a name="cfn-deadline-fleet-minworkercount"></a>
 The minimum number of workers in the fleet.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-deadline-fleet-rolearn"></a>
 The IAM role that workers in the fleet use when processing jobs.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z-]*):iam::\d{12}:role(/[!-.0-~]+)*/[\w+=,.@-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z-]*):iam::\d{12}:role(/[!-.0-~]+)*/[\w+=,.@-]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-deadline-fleet-tags"></a>
 The tags to add to your fleet. Each tag consists of a tag key and a tag value. Tag keys and values are both required, but tag values can be empty strings.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-deadline-fleet-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-deadline-fleet-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-deadline-fleet-return-values"></a>
 
 ### Ref
+<a name="aws-resource-deadline-fleet-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the fleet.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-deadline-fleet-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-deadline-fleet-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) assigned to the fleet.
 
-`FleetId`
-
+`FleetId`  <a name="FleetId-fn::getatt"></a>
 The fleet ID.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the fleet.
 
-`StatusMessage`
-
+`StatusMessage`  <a name="StatusMessage-fn::getatt"></a>
 A message that communicates a suspended status of the fleet.
 
-`WorkerCount`
-
+`WorkerCount`  <a name="WorkerCount-fn::getatt"></a>
 The number of workers in the fleet summary.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AcceleratorCapabilities
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,49 @@
 title: "AWS::Route53RecoveryReadiness::ResourceSet R53ResourceRecord"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryReadiness::ResourceSet R53ResourceRecord
+<a name="aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord"></a>
 
 The Amazon Route 53 resource that a DNS target resource record points to.
 
 ## Syntax
+<a name="aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord-syntax.json"></a>
 
-```json
-
+```
 {
-  "DomainName" : String,
-  "RecordSetId" : String
+  "[DomainName](#cfn-route53recoveryreadiness-resourceset-r53resourcerecord-domainname)" : {{String}},
+  "[RecordSetId](#cfn-route53recoveryreadiness-resourceset-r53resourcerecord-recordsetid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord-syntax.yaml"></a>
 
-```yaml
-
-  DomainName: String
-  RecordSetId: String
-
+```
+  [DomainName](#cfn-route53recoveryreadiness-resourceset-r53resourcerecord-domainname): {{String}}
+  [RecordSetId](#cfn-route53recoveryreadiness-resourceset-r53resourcerecord-recordsetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord-properties"></a>
 
-`DomainName`
-
+`DomainName`  <a name="cfn-route53recoveryreadiness-resourceset-r53resourcerecord-domainname"></a>
 The DNS target domain name.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecordSetId`
-
+`RecordSetId`  <a name="cfn-route53recoveryreadiness-resourceset-r53resourcerecord-recordsetid"></a>
 The Amazon Route 53 Resource Record Set ID.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NLBResource
-
-Resource
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

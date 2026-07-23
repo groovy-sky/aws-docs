@@ -2,93 +2,65 @@
 title: "AWS::CleanRooms::Collaboration DataEncryptionMetadata"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Collaboration DataEncryptionMetadata
+<a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata"></a>
 
 The settings for client-side encryption for cryptographic computing.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowCleartext" : Boolean,
-  "AllowDuplicates" : Boolean,
-  "AllowJoinsOnColumnsWithDifferentNames" : Boolean,
-  "PreserveNulls" : Boolean
+  "[AllowCleartext](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowcleartext)" : {{Boolean}},
+  "[AllowDuplicates](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowduplicates)" : {{Boolean}},
+  "[AllowJoinsOnColumnsWithDifferentNames](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowjoinsoncolumnswithdifferentnames)" : {{Boolean}},
+  "[PreserveNulls](#cfn-cleanrooms-collaboration-dataencryptionmetadata-preservenulls)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata-syntax.yaml"></a>
 
-```yaml
-
-  AllowCleartext: Boolean
-  AllowDuplicates: Boolean
-  AllowJoinsOnColumnsWithDifferentNames: Boolean
-  PreserveNulls: Boolean
-
+```
+  [AllowCleartext](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowcleartext): {{Boolean}}
+  [AllowDuplicates](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowduplicates): {{Boolean}}
+  [AllowJoinsOnColumnsWithDifferentNames](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowjoinsoncolumnswithdifferentnames): {{Boolean}}
+  [PreserveNulls](#cfn-cleanrooms-collaboration-dataencryptionmetadata-preservenulls): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata-properties"></a>
 
-`AllowCleartext`
+`AllowCleartext`  <a name="cfn-cleanrooms-collaboration-dataencryptionmetadata-allowcleartext"></a>
+Indicates whether encrypted tables can contain cleartext data (`TRUE`) or are to cryptographically process every column (`FALSE`).
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Indicates whether encrypted tables can contain cleartext data ( `TRUE`) or are
-to cryptographically process every column ( `FALSE`).
+`AllowDuplicates`  <a name="cfn-cleanrooms-collaboration-dataencryptionmetadata-allowduplicates"></a>
+Indicates whether Fingerprint columns can contain duplicate entries (`TRUE`) or are to contain only non-repeated values (`FALSE`).
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`AllowJoinsOnColumnsWithDifferentNames`  <a name="cfn-cleanrooms-collaboration-dataencryptionmetadata-allowjoinsoncolumnswithdifferentnames"></a>
+Indicates whether Fingerprint columns can be joined on any other Fingerprint column with a different name (`TRUE`) or can only be joined on Fingerprint columns of the same name (`FALSE`).
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AllowDuplicates`
-
-Indicates whether Fingerprint columns can contain duplicate entries ( `TRUE`)
-or are to contain only non-repeated values ( `FALSE`).
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AllowJoinsOnColumnsWithDifferentNames`
-
-Indicates whether Fingerprint columns can be joined on any other Fingerprint column with
-a different name ( `TRUE`) or can only be joined on Fingerprint columns of the
-same name ( `FALSE`).
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PreserveNulls`
-
-Indicates whether NULL values are to be copied as NULL to encrypted tables
-( `TRUE`) or cryptographically processed ( `FALSE`).
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CleanRooms::Collaboration
-
-JobComputePaymentConfig
+`PreserveNulls`  <a name="cfn-cleanrooms-collaboration-dataencryptionmetadata-preservenulls"></a>
+Indicates whether NULL values are to be copied as NULL to encrypted tables (`TRUE`) or cryptographically processed (`FALSE`).
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

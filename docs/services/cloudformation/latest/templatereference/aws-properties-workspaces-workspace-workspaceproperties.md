@@ -2,116 +2,79 @@
 title: "AWS::WorkSpaces::Workspace WorkspaceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpaces::Workspace WorkspaceProperties
+<a name="aws-properties-workspaces-workspace-workspaceproperties"></a>
 
 Information about a WorkSpace.
 
 ## Syntax
+<a name="aws-properties-workspaces-workspace-workspaceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspaces-workspace-workspaceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComputeTypeName" : String,
-  "RootVolumeSizeGib" : Integer,
-  "RunningMode" : String,
-  "RunningModeAutoStopTimeoutInMinutes" : Integer,
-  "UserVolumeSizeGib" : Integer
+  "[ComputeTypeName](#cfn-workspaces-workspace-workspaceproperties-computetypename)" : {{String}},
+  "[RootVolumeSizeGib](#cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib)" : {{Integer}},
+  "[RunningMode](#cfn-workspaces-workspace-workspaceproperties-runningmode)" : {{String}},
+  "[RunningModeAutoStopTimeoutInMinutes](#cfn-workspaces-workspace-workspaceproperties-runningmodeautostoptimeoutinminutes)" : {{Integer}},
+  "[UserVolumeSizeGib](#cfn-workspaces-workspace-workspaceproperties-uservolumesizegib)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspaces-workspace-workspaceproperties-syntax.yaml"></a>
 
-```yaml
-
-  ComputeTypeName: String
-  RootVolumeSizeGib: Integer
-  RunningMode: String
-  RunningModeAutoStopTimeoutInMinutes: Integer
-  UserVolumeSizeGib: Integer
-
+```
+  [ComputeTypeName](#cfn-workspaces-workspace-workspaceproperties-computetypename): {{String}}
+  [RootVolumeSizeGib](#cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib): {{Integer}}
+  [RunningMode](#cfn-workspaces-workspace-workspaceproperties-runningmode): {{String}}
+  [RunningModeAutoStopTimeoutInMinutes](#cfn-workspaces-workspace-workspaceproperties-runningmodeautostoptimeoutinminutes): {{Integer}}
+  [UserVolumeSizeGib](#cfn-workspaces-workspace-workspaceproperties-uservolumesizegib): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-workspaces-workspace-workspaceproperties-properties"></a>
 
-`ComputeTypeName`
+`ComputeTypeName`  <a name="cfn-workspaces-workspace-workspaceproperties-computetypename"></a>
+The compute type. For more information, see [Amazon WorkSpaces Bundles](https://aws.amazon.com/workspaces/details/#Amazon_WorkSpaces_Bundles).
+*Required*: No
+*Type*: String
+*Allowed values*: `VALUE | STANDARD | PERFORMANCE | POWER | GRAPHICS | POWERPRO | GENERALPURPOSE_4XLARGE | GENERALPURPOSE_8XLARGE | GRAPHICSPRO | GRAPHICS_G4DN | GRAPHICSPRO_G4DN | GRAPHICS_G6_XLARGE | GRAPHICS_G6_2XLARGE | GRAPHICS_G6_4XLARGE | GRAPHICS_G6_8XLARGE | GRAPHICS_G6_16XLARGE | GRAPHICS_GR6_4XLARGE | GRAPHICS_GR6_8XLARGE | GRAPHICS_G6F_LARGE | GRAPHICS_G6F_XLARGE | GRAPHICS_G6F_2XLARGE | GRAPHICS_G6F_4XLARGE | GRAPHICS_GR6F_4XLARGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The compute type. For more information, see [Amazon WorkSpaces\
-Bundles](https://aws.amazon.com/workspaces/details).
+`RootVolumeSizeGib`  <a name="cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib"></a>
+The size of the root volume. For important information about how to modify the size of the root and user volumes, see [Modify a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html).
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RunningMode`  <a name="cfn-workspaces-workspace-workspaceproperties-runningmode"></a>
+The running mode. For more information, see [Manage the WorkSpace Running Mode](https://docs.aws.amazon.com/workspaces/latest/adminguide/running-mode.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO_STOP | ALWAYS_ON | MANUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RunningModeAutoStopTimeoutInMinutes`  <a name="cfn-workspaces-workspace-workspaceproperties-runningmodeautostoptimeoutinminutes"></a>
+The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `VALUE | STANDARD | PERFORMANCE | POWER | GRAPHICS | POWERPRO | GENERALPURPOSE_4XLARGE | GENERALPURPOSE_8XLARGE | GRAPHICSPRO | GRAPHICS_G4DN | GRAPHICSPRO_G4DN | GRAPHICS_G6_XLARGE | GRAPHICS_G6_2XLARGE | GRAPHICS_G6_4XLARGE | GRAPHICS_G6_8XLARGE | GRAPHICS_G6_16XLARGE | GRAPHICS_GR6_4XLARGE | GRAPHICS_GR6_8XLARGE | GRAPHICS_G6F_LARGE | GRAPHICS_G6F_XLARGE | GRAPHICS_G6F_2XLARGE | GRAPHICS_G6F_4XLARGE | GRAPHICS_GR6F_4XLARGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RootVolumeSizeGib`
-
-The size of the root volume. For important information about how to modify the size of
-the root and user volumes, see [Modify a\
-WorkSpace](../../../workspaces/latest/adminguide/modify-workspaces.md).
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RunningMode`
-
-The running mode. For more information, see [Manage the WorkSpace Running\
-Mode](../../../workspaces/latest/adminguide/running-mode.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTO_STOP | ALWAYS_ON | MANUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RunningModeAutoStopTimeoutInMinutes`
-
-The time after a user logs off when WorkSpaces are automatically stopped. Configured in
-60-minute intervals.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserVolumeSizeGib`
-
-The size of the user storage. For important information about how to modify the size of
-the root and user volumes, see [Modify a\
-WorkSpace](../../../workspaces/latest/adminguide/modify-workspaces.md).
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`UserVolumeSizeGib`  <a name="cfn-workspaces-workspace-workspaceproperties-uservolumesizegib"></a>
+The size of the user storage. For important information about how to modify the size of the root and user volumes, see [Modify a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html).
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [WorkspaceProperties](../../../workspaces/latest/api/api-workspaceproperties.md) in the _Amazon WorkSpaces API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::WorkSpaces::WorkspacesPool
+<a name="aws-properties-workspaces-workspace-workspaceproperties--seealso"></a>
++ [WorkspaceProperties](https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceProperties.html) in the *Amazon WorkSpaces API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

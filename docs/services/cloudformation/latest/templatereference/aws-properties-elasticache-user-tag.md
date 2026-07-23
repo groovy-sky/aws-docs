@@ -2,80 +2,55 @@
 title: "AWS::ElastiCache::User Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElastiCache::User Tag
+<a name="aws-properties-elasticache-user-tag"></a>
 
-A tag that can be added to an ElastiCache cluster or replication group. Tags are
-composed of a Key/Value pair. You can use tags to categorize and track all your
-ElastiCache resources, with the exception of global replication group. When you add or
-remove tags on replication groups, those actions will be replicated to all nodes in the
-replication group. A tag with a null Value is permitted.
+A tag that can be added to an ElastiCache cluster or replication group. Tags are composed of a Key/Value pair. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. A tag with a null Value is permitted.
 
 ## Syntax
+<a name="aws-properties-elasticache-user-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticache-user-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-elasticache-user-tag-key)" : {{String}},
+  "[Value](#cfn-elasticache-user-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticache-user-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-elasticache-user-tag-key): {{String}}
+  [Value](#cfn-elasticache-user-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticache-user-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-elasticache-user-tag-key"></a>
 The key for the tag. May not be null.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:)[a-zA-Z0-9 _\.\/=+:\-@]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:)[a-zA-Z0-9 _\.\/=+:\-@]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-elasticache-user-tag-value"></a>
 The tag's value. May be null.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9 _\.\/=+:\-@]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthenticationMode
-
-AWS::ElastiCache::UserGroup
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9 _\.\/=+:\-@]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

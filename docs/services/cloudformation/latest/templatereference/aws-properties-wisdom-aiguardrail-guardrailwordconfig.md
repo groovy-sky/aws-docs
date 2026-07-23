@@ -2,54 +2,42 @@
 title: "AWS::Wisdom::AIGuardrail GuardrailWordConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail GuardrailWordConfig
+<a name="aws-properties-wisdom-aiguardrail-guardrailwordconfig"></a>
 
 A custom word config.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-guardrailwordconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-guardrailwordconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Text" : String
+  "[Text](#cfn-wisdom-aiguardrail-guardrailwordconfig-text)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-guardrailwordconfig-syntax.yaml"></a>
 
-```yaml
-
-  Text: String
-
+```
+  [Text](#cfn-wisdom-aiguardrail-guardrailwordconfig-text): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-guardrailwordconfig-properties"></a>
 
-`Text`
-
+`Text`  <a name="cfn-wisdom-aiguardrail-guardrailwordconfig-text"></a>
 The custom word text.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GuardrailTopicConfig
-
-AWS::Wisdom::AIGuardrailVersion
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,144 +2,114 @@
 title: "AWS::Connect::QuickConnect"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::QuickConnect
+<a name="aws-resource-connect-quickconnect"></a>
 
-Specifies a quick connect for an Amazon Connect instance.
+Specifies a quick connect for an Connect Customer instance.
 
 ## Syntax
+<a name="aws-resource-connect-quickconnect-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-quickconnect-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::QuickConnect",
   "Properties" : {
-      "Description" : String,
-      "InstanceArn" : String,
-      "Name" : String,
-      "QuickConnectConfig" : QuickConnectConfig,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-connect-quickconnect-description)" : {{String}},
+      "[InstanceArn](#cfn-connect-quickconnect-instancearn)" : {{String}},
+      "[Name](#cfn-connect-quickconnect-name)" : {{String}},
+      "[QuickConnectConfig](#cfn-connect-quickconnect-quickconnectconfig)" : {{QuickConnectConfig}},
+      "[Tags](#cfn-connect-quickconnect-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-quickconnect-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::QuickConnect
 Properties:
-  Description: String
-  InstanceArn: String
-  Name: String
-  QuickConnectConfig:
-    QuickConnectConfig
-  Tags:
-    - Tag
-
+  [Description](#cfn-connect-quickconnect-description): {{String}}
+  [InstanceArn](#cfn-connect-quickconnect-instancearn): {{String}}
+  [Name](#cfn-connect-quickconnect-name): {{String}}
+  [QuickConnectConfig](#cfn-connect-quickconnect-quickconnectconfig): {{
+    QuickConnectConfig}}
+  [Tags](#cfn-connect-quickconnect-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-quickconnect-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-connect-quickconnect-description"></a>
 The description of the quick connect.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-quickconnect-instancearn"></a>
 The Amazon Resource Name (ARN) of the instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-quickconnect-name"></a>
 The name of the quick connect.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QuickConnectConfig`
-
+`QuickConnectConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig"></a>
 Contains information about the quick connect.
+*Required*: Yes
+*Type*: [QuickConnectConfig](aws-properties-connect-quickconnect-quickconnectconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [QuickConnectConfig](aws-properties-connect-quickconnect-quickconnectconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-connect-quickconnect-tags"></a>
 The tags used to organize, track, or control access for this resource. For example, { "Tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-connect-quickconnect-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-quickconnect-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-connect-quickconnect-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-quickconnect-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the quick connect name. For example:
 
-`{ "Ref": "myQuickConnectName" }`
+ `{ "Ref": "myQuickConnectName" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-quickconnect-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`QuickConnectArn`
+####
+<a name="aws-resource-connect-quickconnect-return-values-fn--getatt-fn--getatt"></a>
 
+`QuickConnectArn`  <a name="QuickConnectArn-fn::getatt"></a>
 Property description not available.
 
-`QuickConnectType`
-
-The type of quick connect. In the Amazon Connect admin website, when you create a quick connect, you are
-prompted to assign one of the following types: Agent (USER), External (PHONE\_NUMBER), or Queue (QUEUE).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-PhoneNumberQuickConnectConfig
+`QuickConnectType`  <a name="QuickConnectType-fn::getatt"></a>
+The type of quick connect. In the Connect Customer admin website, when you create a quick connect, you are prompted to assign one of the following types: Agent (USER), External (PHONE\_NUMBER), or Queue (QUEUE).
 
 All content copied from https://docs.aws.amazon.com/.

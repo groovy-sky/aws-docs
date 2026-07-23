@@ -2,234 +2,170 @@
 title: "AWS::Cognito::IdentityPool"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::IdentityPool
+<a name="aws-resource-cognito-identitypool"></a>
 
-The `AWS::Cognito::IdentityPool` resource creates an Amazon Cognito
-identity pool.
+The `AWS::Cognito::IdentityPool` resource creates an Amazon Cognito identity pool.
 
-To avoid deleting the resource accidentally from CloudFormation, use [DeletionPolicy Attribute](../userguide/aws-attribute-deletionpolicy.md) and the [UpdateReplacePolicy Attribute](../userguide/aws-attribute-updatereplacepolicy.md) to retain the resource on deletion or
-replacement.
+To avoid deleting the resource accidentally from CloudFormation, use [DeletionPolicy Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) and the [UpdateReplacePolicy Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatereplacepolicy.html) to retain the resource on deletion or replacement.
 
 ## Syntax
+<a name="aws-resource-cognito-identitypool-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cognito-identitypool-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Cognito::IdentityPool",
   "Properties" : {
-      "AllowClassicFlow" : Boolean,
-      "AllowUnauthenticatedIdentities" : Boolean,
-      "CognitoEvents" : Json,
-      "CognitoIdentityProviders" : [ CognitoIdentityProvider, ... ],
-      "CognitoStreams" : CognitoStreams,
-      "DeveloperProviderName" : String,
-      "IdentityPoolName" : String,
-      "IdentityPoolTags" : [ Tag, ... ],
-      "OpenIdConnectProviderARNs" : [ String, ... ],
-      "PushSync" : PushSync,
-      "SamlProviderARNs" : [ String, ... ],
-      "SupportedLoginProviders" : Json
+      "[AllowClassicFlow](#cfn-cognito-identitypool-allowclassicflow)" : {{Boolean}},
+      "[AllowUnauthenticatedIdentities](#cfn-cognito-identitypool-allowunauthenticatedidentities)" : {{Boolean}},
+      "[CognitoEvents](#cfn-cognito-identitypool-cognitoevents)" : {{Json}},
+      "[CognitoIdentityProviders](#cfn-cognito-identitypool-cognitoidentityproviders)" : {{[ CognitoIdentityProvider, ... ]}},
+      "[CognitoStreams](#cfn-cognito-identitypool-cognitostreams)" : {{CognitoStreams}},
+      "[DeveloperProviderName](#cfn-cognito-identitypool-developerprovidername)" : {{String}},
+      "[IdentityPoolName](#cfn-cognito-identitypool-identitypoolname)" : {{String}},
+      "[IdentityPoolTags](#cfn-cognito-identitypool-identitypooltags)" : {{[ Tag, ... ]}},
+      "[OpenIdConnectProviderARNs](#cfn-cognito-identitypool-openidconnectproviderarns)" : {{[ String, ... ]}},
+      "[PushSync](#cfn-cognito-identitypool-pushsync)" : {{PushSync}},
+      "[SamlProviderARNs](#cfn-cognito-identitypool-samlproviderarns)" : {{[ String, ... ]}},
+      "[SupportedLoginProviders](#cfn-cognito-identitypool-supportedloginproviders)" : {{Json}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cognito-identitypool-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Cognito::IdentityPool
 Properties:
-  AllowClassicFlow: Boolean
-  AllowUnauthenticatedIdentities: Boolean
-  CognitoEvents: Json
-  CognitoIdentityProviders:
-    - CognitoIdentityProvider
-  CognitoStreams:
-    CognitoStreams
-  DeveloperProviderName: String
-  IdentityPoolName: String
-  IdentityPoolTags:
-    - Tag
-  OpenIdConnectProviderARNs:
-    - String
-  PushSync:
-    PushSync
-  SamlProviderARNs:
-    - String
-  SupportedLoginProviders: Json
-
+  [AllowClassicFlow](#cfn-cognito-identitypool-allowclassicflow): {{Boolean}}
+  [AllowUnauthenticatedIdentities](#cfn-cognito-identitypool-allowunauthenticatedidentities): {{Boolean}}
+  [CognitoEvents](#cfn-cognito-identitypool-cognitoevents): {{Json}}
+  [CognitoIdentityProviders](#cfn-cognito-identitypool-cognitoidentityproviders): {{
+    - CognitoIdentityProvider}}
+  [CognitoStreams](#cfn-cognito-identitypool-cognitostreams): {{
+    CognitoStreams}}
+  [DeveloperProviderName](#cfn-cognito-identitypool-developerprovidername): {{String}}
+  [IdentityPoolName](#cfn-cognito-identitypool-identitypoolname): {{String}}
+  [IdentityPoolTags](#cfn-cognito-identitypool-identitypooltags): {{
+    - Tag}}
+  [OpenIdConnectProviderARNs](#cfn-cognito-identitypool-openidconnectproviderarns): {{
+    - String}}
+  [PushSync](#cfn-cognito-identitypool-pushsync): {{
+    PushSync}}
+  [SamlProviderARNs](#cfn-cognito-identitypool-samlproviderarns): {{
+    - String}}
+  [SupportedLoginProviders](#cfn-cognito-identitypool-supportedloginproviders): {{Json}}
 ```
 
 ## Properties
+<a name="aws-resource-cognito-identitypool-properties"></a>
 
-`AllowClassicFlow`
-
+`AllowClassicFlow`  <a name="cfn-cognito-identitypool-allowclassicflow"></a>
 Enables the Basic (Classic) authentication flow.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowUnauthenticatedIdentities`
-
+`AllowUnauthenticatedIdentities`  <a name="cfn-cognito-identitypool-allowunauthenticatedidentities"></a>
 Specifies whether the identity pool supports unauthenticated logins.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CognitoEvents`
-
+`CognitoEvents`  <a name="cfn-cognito-identitypool-cognitoevents"></a>
 The events to configure.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CognitoIdentityProviders`
-
+`CognitoIdentityProviders`  <a name="cfn-cognito-identitypool-cognitoidentityproviders"></a>
 The Amazon Cognito user pools and their client IDs.
+*Required*: No
+*Type*: Array of [CognitoIdentityProvider](aws-properties-cognito-identitypool-cognitoidentityprovider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [CognitoIdentityProvider](aws-properties-cognito-identitypool-cognitoidentityprovider.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CognitoStreams`
-
+`CognitoStreams`  <a name="cfn-cognito-identitypool-cognitostreams"></a>
 Configuration options for configuring Amazon Cognito streams.
+*Required*: No
+*Type*: [CognitoStreams](aws-properties-cognito-identitypool-cognitostreams.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DeveloperProviderName`  <a name="cfn-cognito-identitypool-developerprovidername"></a>
+The "domain" Amazon Cognito uses when referencing your users. This name acts as a placeholder that allows your backend and the Amazon Cognito service to communicate about the developer provider. For the `DeveloperProviderName`, you can use letters and periods (.), underscores (\_), and dashes (-).
+*Minimum length*: 1
+*Maximum length*: 100
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CognitoStreams](aws-properties-cognito-identitypool-cognitostreams.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeveloperProviderName`
-
-The "domain" Amazon Cognito uses when referencing your users. This name acts as a
-placeholder that allows your backend and the Amazon Cognito service to communicate about
-the developer provider. For the `DeveloperProviderName`, you can use letters
-and periods (.), underscores (\_), and dashes (-).
-
-_Minimum length_: 1
-
-_Maximum length_: 100
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityPoolName`
-
+`IdentityPoolName`  <a name="cfn-cognito-identitypool-identitypoolname"></a>
 The name of your Amazon Cognito identity pool.
+*Minimum length*: 1
+*Maximum length*: 128
+*Pattern*: `[\w\s+=,.@-]+`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum length_: 1
+`IdentityPoolTags`  <a name="cfn-cognito-identitypool-identitypooltags"></a>
+Tags to assign to the identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cognito-identitypool-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum length_: 128
-
-_Pattern_: `[\w\s+=,.@-]+`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityPoolTags`
-
-Tags to assign to the identity pool. A tag is a label that you can apply to identity
-pools to categorize and manage them in different ways, such as by purpose, owner,
-environment, or other criteria.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cognito-identitypool-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OpenIdConnectProviderARNs`
-
+`OpenIdConnectProviderARNs`  <a name="cfn-cognito-identitypool-openidconnectproviderarns"></a>
 The Amazon Resource Names (ARNs) of the OpenID connect providers.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PushSync`
-
+`PushSync`  <a name="cfn-cognito-identitypool-pushsync"></a>
 The configuration options to be applied to the identity pool.
+*Required*: No
+*Type*: [PushSync](aws-properties-cognito-identitypool-pushsync.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SamlProviderARNs`  <a name="cfn-cognito-identitypool-samlproviderarns"></a>
+The Amazon Resource Names (ARNs) of the Security Assertion Markup Language (SAML) providers.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [PushSync](aws-properties-cognito-identitypool-pushsync.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SamlProviderARNs`
-
-The Amazon Resource Names (ARNs) of the Security Assertion Markup Language (SAML)
-providers.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupportedLoginProviders`
-
+`SupportedLoginProviders`  <a name="cfn-cognito-identitypool-supportedloginproviders"></a>
 Key-value pairs that map provider names to provider app IDs.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cognito-identitypool-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cognito-identitypool-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `IdentityPoolId`, such as
-`us-east-2:0d01f4d7-1305-4408-b437-12345EXAMPLE`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `IdentityPoolId`, such as `us-east-2:0d01f4d7-1305-4408-b437-12345EXAMPLE`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cognito-identitypool-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Name`
+####
+<a name="aws-resource-cognito-identitypool-return-values-fn--getatt-fn--getatt"></a>
 
+`Name`  <a name="Name-fn::getatt"></a>
 The name of the Amazon Cognito identity pool, returned as a string.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Cognito
-
-CognitoIdentityProvider
 
 All content copied from https://docs.aws.amazon.com/.

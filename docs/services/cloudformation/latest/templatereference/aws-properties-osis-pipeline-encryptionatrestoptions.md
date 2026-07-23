@@ -2,57 +2,43 @@
 title: "AWS::OSIS::Pipeline EncryptionAtRestOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OSIS::Pipeline EncryptionAtRestOptions
+<a name="aws-properties-osis-pipeline-encryptionatrestoptions"></a>
 
 Options to control how OpenSearch encrypts buffer data.
 
 ## Syntax
+<a name="aws-properties-osis-pipeline-encryptionatrestoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-osis-pipeline-encryptionatrestoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyArn" : String
+  "[KmsKeyArn](#cfn-osis-pipeline-encryptionatrestoptions-kmskeyarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-osis-pipeline-encryptionatrestoptions-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyArn: String
-
+```
+  [KmsKeyArn](#cfn-osis-pipeline-encryptionatrestoptions-kmskeyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-osis-pipeline-encryptionatrestoptions-properties"></a>
 
-`KmsKeyArn`
-
-The ARN of the KMS key used to encrypt buffer data.
-By default, data is encrypted using an AWS owned key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `7`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogDestination
-
-LogPublishingOptions
+`KmsKeyArn`  <a name="cfn-osis-pipeline-encryptionatrestoptions-kmskeyarn"></a>
+The ARN of the KMS key used to encrypt buffer data. By default, data is encrypted using an AWS owned key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `7`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

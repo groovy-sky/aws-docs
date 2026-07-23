@@ -2,178 +2,167 @@
 title: "AWS::GlobalAccelerator::Accelerator"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GlobalAccelerator::Accelerator
+<a name="aws-resource-globalaccelerator-accelerator"></a>
 
-The `AWS::GlobalAccelerator::Accelerator` resource is a Global Accelerator resource type that contains information about
-how you create an accelerator. An accelerator includes one or more listeners that process inbound connections and direct traffic
-to one or more endpoint groups, each of which includes endpoints, such as Application Load Balancers, Network Load Balancers,
-and Amazon EC2 instances.
+The `AWS::GlobalAccelerator::Accelerator` resource is a Global Accelerator resource type that contains information about how you create an accelerator. An accelerator includes one or more listeners that process inbound connections and direct traffic to one or more endpoint groups, each of which includes endpoints, such as Application Load Balancers, Network Load Balancers, and Amazon EC2 instances.
 
 ## Syntax
+<a name="aws-resource-globalaccelerator-accelerator-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-globalaccelerator-accelerator-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::GlobalAccelerator::Accelerator",
   "Properties" : {
-      "Enabled" : Boolean,
-      "IpAddresses" : [ String, ... ],
-      "IpAddressType" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Enabled](#cfn-globalaccelerator-accelerator-enabled)" : {{Boolean}},
+      "[FlowLogsEnabled](#cfn-globalaccelerator-accelerator-flowlogsenabled)" : {{Boolean}},
+      "[FlowLogsS3Bucket](#cfn-globalaccelerator-accelerator-flowlogss3bucket)" : {{String}},
+      "[FlowLogsS3Prefix](#cfn-globalaccelerator-accelerator-flowlogss3prefix)" : {{String}},
+      "[IpAddresses](#cfn-globalaccelerator-accelerator-ipaddresses)" : {{[ String, ... ]}},
+      "[IpAddressType](#cfn-globalaccelerator-accelerator-ipaddresstype)" : {{String}},
+      "[Name](#cfn-globalaccelerator-accelerator-name)" : {{String}},
+      "[Tags](#cfn-globalaccelerator-accelerator-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-globalaccelerator-accelerator-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::GlobalAccelerator::Accelerator
 Properties:
-  Enabled: Boolean
-  IpAddresses:
-    - String
-  IpAddressType: String
-  Name: String
-  Tags:
-    - Tag
-
+  [Enabled](#cfn-globalaccelerator-accelerator-enabled): {{Boolean}}
+  [FlowLogsEnabled](#cfn-globalaccelerator-accelerator-flowlogsenabled): {{Boolean}}
+  [FlowLogsS3Bucket](#cfn-globalaccelerator-accelerator-flowlogss3bucket): {{String}}
+  [FlowLogsS3Prefix](#cfn-globalaccelerator-accelerator-flowlogss3prefix): {{String}}
+  [IpAddresses](#cfn-globalaccelerator-accelerator-ipaddresses): {{
+    - String}}
+  [IpAddressType](#cfn-globalaccelerator-accelerator-ipaddresstype): {{String}}
+  [Name](#cfn-globalaccelerator-accelerator-name): {{String}}
+  [Tags](#cfn-globalaccelerator-accelerator-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-globalaccelerator-accelerator-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-globalaccelerator-accelerator-enabled"></a>
 Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
-
 If the value is set to true, the accelerator cannot be deleted. If set to false, accelerator can be deleted.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FlowLogsEnabled`  <a name="cfn-globalaccelerator-accelerator-flowlogsenabled"></a>
+Indicates whether flow logs are enabled. The default value is false. If the value is true, `FlowLogsS3Bucket` and `FlowLogsS3Prefix` must be specified.
+For more information, see [Flow logs](https://docs.aws.amazon.com/global-accelerator/latest/dg/monitoring-global-accelerator.flow-logs.html) in the *AWS Global Accelerator Developer Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`FlowLogsS3Bucket`  <a name="cfn-globalaccelerator-accelerator-flowlogss3bucket"></a>
+The name of the Amazon S3 bucket for the flow logs. Attribute is required if `FlowLogsEnabled` is `true`. The bucket must exist and have a bucket policy that grants AWS Global Accelerator permission to write to the bucket.
+*Required*: No
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`FlowLogsS3Prefix`  <a name="cfn-globalaccelerator-accelerator-flowlogss3prefix"></a>
+The prefix for the location in the Amazon S3 bucket for the flow logs. Attribute is required if `FlowLogsEnabled` is `true`.
+If you specify slash (/) for the S3 bucket prefix, the log file bucket folder structure will include a double slash (//), like the following:
+s3-bucket\_name//AWSLogs/aws\_account\_id
+*Required*: No
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`IpAddresses`
+`IpAddresses`  <a name="cfn-globalaccelerator-accelerator-ipaddresses"></a>
+Optionally, if you've added your own IP address pool to Global Accelerator (BYOIP), you can choose IP addresses from your own pool to use for the accelerator's static IP addresses when you create an accelerator. You can specify one or two addresses, separated by a comma. Do not include the /32 suffix.
+Only one IP address from each of your IP address ranges can be used for each accelerator. If you specify only one IP address from your IP address range, Global Accelerator assigns a second static IP address for the accelerator from the AWS IP address pool.
+ Note that you can't update IP addresses for an existing accelerator. To change them, you must create a new accelerator with the new addresses.
+For more information, see [Bring Your Own IP Addresses (BYOIP)](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.html) in the *AWS Global Accelerator Developer Guide*.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Optionally, if you've added your own IP address pool to Global Accelerator (BYOIP), you can choose IP addresses
-from your own pool to use for the accelerator's static IP addresses when you create an accelerator. You can
-specify one or two addresses, separated by a comma. Do not include the /32 suffix.
-
-Only one IP address from each of your IP address ranges can be used for each accelerator. If you specify only
-one IP address from your IP address range, Global Accelerator assigns a second static IP address for the
-accelerator from the AWS IP address pool.
-
-Note that you can't update IP addresses for an existing accelerator. To change them, you must create a new
-accelerator with the new addresses.
-
-For more information, see [Bring Your Own \
-IP Addresses (BYOIP)](../../../global-accelerator/latest/dg/using-byoip.md) in the _AWS Global Accelerator Developer Guide_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpAddressType`
-
+`IpAddressType`  <a name="cfn-globalaccelerator-accelerator-ipaddresstype"></a>
 The IP address type that an accelerator supports. For a standard accelerator, the value can be IPV4 or DUAL\_STACK.
+*Required*: No
+*Type*: String
+*Allowed values*: `IPV4 | DUAL_STACK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-globalaccelerator-accelerator-name"></a>
+The name of the accelerator. The name must contain only alphanumeric characters or hyphens (-), and must not begin or end with a hyphen.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{0,64}$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `IPV4 | DUAL_STACK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the accelerator. The name must contain only alphanumeric characters or
-hyphens (-), and must not begin or end with a hyphen.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{0,64}$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-globalaccelerator-accelerator-tags"></a>
 Create tags for an accelerator.
-
-For more information, see [Tagging](../../../global-accelerator/latest/dg/tagging-in-global-accelerator.md) in the _AWS Global Accelerator Developer Guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-globalaccelerator-accelerator-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tagging ](https://docs.aws.amazon.com/global-accelerator/latest/dg/tagging-in-global-accelerator.html) in the *AWS Global Accelerator Developer Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-globalaccelerator-accelerator-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-globalaccelerator-accelerator-return-values"></a>
 
 ### Ref
+<a name="aws-resource-globalaccelerator-accelerator-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the accelerator, such as
-`arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the accelerator, such as `arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-globalaccelerator-accelerator-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AcceleratorArn`
+####
+<a name="aws-resource-globalaccelerator-accelerator-return-values-fn--getatt-fn--getatt"></a>
 
-The ARN of the accelerator, such as
-`arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh`.
+`AcceleratorArn`  <a name="AcceleratorArn-fn::getatt"></a>
+The ARN of the accelerator, such as `arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh`.
 
-`DnsName`
-
+`DnsName`  <a name="DnsName-fn::getatt"></a>
 The Domain Name System (DNS) name that Global Accelerator creates that points to an accelerator's static IPv4 addresses.
 
-`DualStackDnsName`
+`DualStackDnsName`  <a name="DualStackDnsName-fn::getatt"></a>
+The DNS name that Global Accelerator creates that points to a dual-stack accelerator's four static IP addresses: two IPv4 addresses and two IPv6 addresses.
 
-The DNS name that Global Accelerator creates that points to a dual-stack accelerator's four
-static IP addresses: two IPv4 addresses and two IPv6 addresses.
-
-`Ipv4Addresses`
-
+`Ipv4Addresses`  <a name="Ipv4Addresses-fn::getatt"></a>
 The array of IPv4 addresses in the IP address set. An IP address set can have a maximum of two IP addresses.
 
-`Ipv6Addresses`
-
+`Ipv6Addresses`  <a name="Ipv6Addresses-fn::getatt"></a>
 The array of IPv6 addresses in the IP address set. An IP address set can have a maximum of two IP addresses.
 
 ## Examples
+<a name="aws-resource-globalaccelerator-accelerator--examples"></a>
 
 ### Add an accelerator
+<a name="aws-resource-globalaccelerator-accelerator--examples--Add_an_accelerator"></a>
 
 These are examples to specify an accelerator.
 
 #### JSON
+<a name="aws-resource-globalaccelerator-accelerator--examples--Add_an_accelerator--json"></a>
 
-```json
-
+```
 "Resources": {
     "Accelerator": {
         "Type": "AWS::GlobalAccelerator::Accelerator",
@@ -197,9 +186,9 @@ These are examples to specify an accelerator.
 ```
 
 #### YAML
+<a name="aws-resource-globalaccelerator-accelerator--examples--Add_an_accelerator--yaml"></a>
 
-```yaml
-
+```
 Accelerator:
   Type: AWS::GlobalAccelerator::Accelerator
   Properties:
@@ -213,11 +202,5 @@ Outputs:
       - Accelerator
       - DnsName
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Global Accelerator
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

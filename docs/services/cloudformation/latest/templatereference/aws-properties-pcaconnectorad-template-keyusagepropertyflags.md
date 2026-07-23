@@ -2,76 +2,57 @@
 title: "AWS::PCAConnectorAD::Template KeyUsagePropertyFlags"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template KeyUsagePropertyFlags
+<a name="aws-properties-pcaconnectorad-template-keyusagepropertyflags"></a>
 
 Specifies key usage.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-keyusagepropertyflags-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-keyusagepropertyflags-syntax.json"></a>
 
-```json
-
+```
 {
-  "Decrypt" : Boolean,
-  "KeyAgreement" : Boolean,
-  "Sign" : Boolean
+  "[Decrypt](#cfn-pcaconnectorad-template-keyusagepropertyflags-decrypt)" : {{Boolean}},
+  "[KeyAgreement](#cfn-pcaconnectorad-template-keyusagepropertyflags-keyagreement)" : {{Boolean}},
+  "[Sign](#cfn-pcaconnectorad-template-keyusagepropertyflags-sign)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-keyusagepropertyflags-syntax.yaml"></a>
 
-```yaml
-
-  Decrypt: Boolean
-  KeyAgreement: Boolean
-  Sign: Boolean
-
+```
+  [Decrypt](#cfn-pcaconnectorad-template-keyusagepropertyflags-decrypt): {{Boolean}}
+  [KeyAgreement](#cfn-pcaconnectorad-template-keyusagepropertyflags-keyagreement): {{Boolean}}
+  [Sign](#cfn-pcaconnectorad-template-keyusagepropertyflags-sign): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-keyusagepropertyflags-properties"></a>
 
-`Decrypt`
-
+`Decrypt`  <a name="cfn-pcaconnectorad-template-keyusagepropertyflags-decrypt"></a>
 Allows key for encryption and decryption.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyAgreement`
-
+`KeyAgreement`  <a name="cfn-pcaconnectorad-template-keyusagepropertyflags-keyagreement"></a>
 Allows key exchange without encryption.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sign`
-
+`Sign`  <a name="cfn-pcaconnectorad-template-keyusagepropertyflags-sign"></a>
 Allow key use for digital signature.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KeyUsageProperty
-
-PrivateKeyAttributesV2
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

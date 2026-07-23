@@ -2,85 +2,59 @@
 title: "AWS::EntityResolution::MatchingWorkflow InputSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow InputSource
+<a name="aws-properties-entityresolution-matchingworkflow-inputsource"></a>
 
-An object containing `inputSourceARN`, `schemaName`, and
-`applyNormalization`.
+An object containing `inputSourceARN`, `schemaName`, and `applyNormalization`.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-inputsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-inputsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplyNormalization" : Boolean,
-  "InputSourceARN" : String,
-  "SchemaArn" : String
+  "[ApplyNormalization](#cfn-entityresolution-matchingworkflow-inputsource-applynormalization)" : {{Boolean}},
+  "[InputSourceARN](#cfn-entityresolution-matchingworkflow-inputsource-inputsourcearn)" : {{String}},
+  "[SchemaArn](#cfn-entityresolution-matchingworkflow-inputsource-schemaarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-inputsource-syntax.yaml"></a>
 
-```yaml
-
-  ApplyNormalization: Boolean
-  InputSourceARN: String
-  SchemaArn: String
-
+```
+  [ApplyNormalization](#cfn-entityresolution-matchingworkflow-inputsource-applynormalization): {{Boolean}}
+  [InputSourceARN](#cfn-entityresolution-matchingworkflow-inputsource-inputsourcearn): {{String}}
+  [SchemaArn](#cfn-entityresolution-matchingworkflow-inputsource-schemaarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-inputsource-properties"></a>
 
-`ApplyNormalization`
+`ApplyNormalization`  <a name="cfn-entityresolution-matchingworkflow-inputsource-applynormalization"></a>
+Normalizes the attributes defined in the schema in the input data. For example, if an attribute has an `AttributeType` of `PHONE_NUMBER`, and the data in the input table is in a format of 1234567890, AWS Entity Resolution will normalize this field in the output to (123)-456-7890.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Normalizes the attributes defined in the schema in the input data. For example, if an
-attribute has an `AttributeType` of `PHONE_NUMBER`, and the data in
-the input table is in a format of 1234567890, AWS Entity Resolution will normalize this field
-in the output to (123)-456-7890.
+`InputSourceARN`  <a name="cfn-entityresolution-matchingworkflow-inputsource-inputsourcearn"></a>
+An object containing `inputSourceARN`, `schemaName`, and `applyNormalization`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn):.*:.*:[0-9]+:.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputSourceARN`
-
-An object containing `inputSourceARN`, `schemaName`, and
-`applyNormalization`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn):.*:.*:[0-9]+:.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SchemaArn`
-
+`SchemaArn`  <a name="cfn-entityresolution-matchingworkflow-inputsource-schemaarn"></a>
 The name of the schema.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn):entityresolution:.*:[0-9]+:(schemamapping/.*)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IncrementalRunConfig
-
-IntermediateSourceConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn):entityresolution:.*:[0-9]+:(schemamapping/.*)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

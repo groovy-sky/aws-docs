@@ -2,89 +2,63 @@
 title: "AWS::Lambda::EventSourceMapping ProvisionedPollerConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping ProvisionedPollerConfig
+<a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig"></a>
 
-The [provisioned mode](../../../lambda/latest/dg/invocation-eventsourcemapping.md#invocation-eventsourcemapping-provisioned-mode) configuration for the event source. Use Provisioned Mode to customize the minimum and maximum number of event pollers
-for your event source.
+The [ provisioned mode](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html#invocation-eventsourcemapping-provisioned-mode) configuration for the event source. Use Provisioned Mode to customize the minimum and maximum number of event pollers for your event source.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaximumPollers" : Integer,
-  "MinimumPollers" : Integer,
-  "PollerGroupName" : String
+  "[MaximumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-maximumpollers)" : {{Integer}},
+  "[MinimumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-minimumpollers)" : {{Integer}},
+  "[PollerGroupName](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-pollergroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig-syntax.yaml"></a>
 
-```yaml
-
-  MaximumPollers: Integer
-  MinimumPollers: Integer
-  PollerGroupName: String
-
+```
+  [MaximumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-maximumpollers): {{Integer}}
+  [MinimumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-minimumpollers): {{Integer}}
+  [PollerGroupName](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-pollergroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig-properties"></a>
 
-`MaximumPollers`
-
+`MaximumPollers`  <a name="cfn-lambda-eventsourcemapping-provisionedpollerconfig-maximumpollers"></a>
 The maximum number of event pollers this event source can scale up to. For Amazon SQS events source mappings, default is 200, and minimum value allowed is 2. For Amazon MSK and self-managed Apache Kafka event source mappings, default is 200, and minimum value allowed is 1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimumPollers`
-
+`MinimumPollers`  <a name="cfn-lambda-eventsourcemapping-provisionedpollerconfig-minimumpollers"></a>
 The minimum number of event pollers this event source can scale down to. For Amazon SQS events source mappings, default is 2, and minimum 2 required. For Amazon MSK and self-managed Apache Kafka event source mappings, default is 1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PollerGroupName`
-
+`PollerGroupName`  <a name="cfn-lambda-eventsourcemapping-provisionedpollerconfig-pollergroupname"></a>
 (Amazon MSK and self-managed Apache Kafka) The name of the provisioned poller group. Use this option to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OnFailure
-
-ScalingConfig
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

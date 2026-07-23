@@ -2,61 +2,46 @@
 title: "AWS::SSM::PatchBaseline RuleGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::PatchBaseline RuleGroup
+<a name="aws-properties-ssm-patchbaseline-rulegroup"></a>
 
-The `RuleGroup` property type specifies a set of rules that define the
-approval rules for an AWS Systems Manager patch baseline.
+The `RuleGroup` property type specifies a set of rules that define the approval rules for an AWS Systems Manager patch baseline.
 
-`RuleGroup` is the property type for the `ApprovalRules`
-property of the [AWS::SSM::PatchBaseline](../userguide/aws-resource-ssm-patchbaseline.md) resource.
+`RuleGroup` is the property type for the `ApprovalRules` property of the [AWS::SSM::PatchBaseline](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html) resource.
 
 ## Syntax
+<a name="aws-properties-ssm-patchbaseline-rulegroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-patchbaseline-rulegroup-syntax.json"></a>
 
-```json
-
+```
 {
-  "PatchRules" : [ Rule, ... ]
+  "[PatchRules](#cfn-ssm-patchbaseline-rulegroup-patchrules)" : {{[ Rule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-patchbaseline-rulegroup-syntax.yaml"></a>
 
-```yaml
-
-  PatchRules:
-    - Rule
-
+```
+  [PatchRules](#cfn-ssm-patchbaseline-rulegroup-patchrules): {{
+    - Rule}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-patchbaseline-rulegroup-properties"></a>
 
-`PatchRules`
-
+`PatchRules`  <a name="cfn-ssm-patchbaseline-rulegroup-patchrules"></a>
 The rules that make up the rule group.
-
-_Required_: No
-
-_Type_: Array of [Rule](aws-properties-ssm-patchbaseline-rule.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Rule
-
-Tag
+*Required*: No
+*Type*: Array of [Rule](aws-properties-ssm-patchbaseline-rule.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

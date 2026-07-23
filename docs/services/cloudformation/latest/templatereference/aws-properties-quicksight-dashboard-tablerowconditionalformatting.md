@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard TableRowConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TableRowConditionalFormatting
+<a name="aws-properties-quicksight-dashboard-tablerowconditionalformatting"></a>
 
 The conditional formatting of a table row.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-tablerowconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-tablerowconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackgroundColor" : ConditionalFormattingColor,
-  "TextColor" : ConditionalFormattingColor
+  "[BackgroundColor](#cfn-quicksight-dashboard-tablerowconditionalformatting-backgroundcolor)" : {{ConditionalFormattingColor}},
+  "[TextColor](#cfn-quicksight-dashboard-tablerowconditionalformatting-textcolor)" : {{ConditionalFormattingColor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-tablerowconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  BackgroundColor:
-    ConditionalFormattingColor
-  TextColor:
-    ConditionalFormattingColor
-
+```
+  [BackgroundColor](#cfn-quicksight-dashboard-tablerowconditionalformatting-backgroundcolor): {{
+    ConditionalFormattingColor}}
+  [TextColor](#cfn-quicksight-dashboard-tablerowconditionalformatting-textcolor): {{
+    ConditionalFormattingColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-tablerowconditionalformatting-properties"></a>
 
-`BackgroundColor`
-
+`BackgroundColor`  <a name="cfn-quicksight-dashboard-tablerowconditionalformatting-backgroundcolor"></a>
 The conditional formatting color (solid, gradient) of the background for a table row.
+*Required*: No
+*Type*: [ConditionalFormattingColor](aws-properties-quicksight-dashboard-conditionalformattingcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConditionalFormattingColor](aws-properties-quicksight-dashboard-conditionalformattingcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextColor`
-
+`TextColor`  <a name="cfn-quicksight-dashboard-tablerowconditionalformatting-textcolor"></a>
 The conditional formatting color (solid, gradient) of the text for a table row.
-
-_Required_: No
-
-_Type_: [ConditionalFormattingColor](aws-properties-quicksight-dashboard-conditionalformattingcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TablePinnedFieldOptions
-
-TableSideBorderOptions
+*Required*: No
+*Type*: [ConditionalFormattingColor](aws-properties-quicksight-dashboard-conditionalformattingcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

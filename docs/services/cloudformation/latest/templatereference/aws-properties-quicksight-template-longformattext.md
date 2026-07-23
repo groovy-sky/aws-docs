@@ -2,74 +2,55 @@
 title: "AWS::QuickSight::Template LongFormatText"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template LongFormatText
+<a name="aws-properties-quicksight-template-longformattext"></a>
 
 The text format for a subtitle.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-longformattext-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-longformattext-syntax.json"></a>
 
-```json
-
+```
 {
-  "PlainText" : String,
-  "RichText" : String
+  "[PlainText](#cfn-quicksight-template-longformattext-plaintext)" : {{String}},
+  "[RichText](#cfn-quicksight-template-longformattext-richtext)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-longformattext-syntax.yaml"></a>
 
-```yaml
-
-  PlainText: String
-  RichText: String
-
+```
+  [PlainText](#cfn-quicksight-template-longformattext-plaintext): {{String}}
+  [RichText](#cfn-quicksight-template-longformattext-richtext): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-longformattext-properties"></a>
 
-`PlainText`
-
+`PlainText`  <a name="cfn-quicksight-template-longformattext-plaintext"></a>
 Plain text format.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RichText`
-
+`RichText`  <a name="cfn-quicksight-template-longformattext-richtext"></a>
 Rich text. Examples of rich text include bold, underline, and italics.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LocalNavigationConfiguration
-
-MappedDataSetParameter
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

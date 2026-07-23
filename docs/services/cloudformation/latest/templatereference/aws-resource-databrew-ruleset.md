@@ -2,135 +2,97 @@
 title: "AWS::DataBrew::Ruleset"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Ruleset
+<a name="aws-resource-databrew-ruleset"></a>
 
-Specifies a new ruleset that can be used in a profile job to validate the data quality
-of a dataset.
+Specifies a new ruleset that can be used in a profile job to validate the data quality of a dataset.
 
 ## Syntax
+<a name="aws-resource-databrew-ruleset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-databrew-ruleset-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataBrew::Ruleset",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "Rules" : [ Rule, ... ],
-      "Tags" : [ Tag, ... ],
-      "TargetArn" : String
+      "[Description](#cfn-databrew-ruleset-description)" : {{String}},
+      "[Name](#cfn-databrew-ruleset-name)" : {{String}},
+      "[Rules](#cfn-databrew-ruleset-rules)" : {{[ Rule, ... ]}},
+      "[Tags](#cfn-databrew-ruleset-tags)" : {{[ Tag, ... ]}},
+      "[TargetArn](#cfn-databrew-ruleset-targetarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-databrew-ruleset-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataBrew::Ruleset
 Properties:
-  Description: String
-  Name: String
-  Rules:
-    - Rule
-  Tags:
-    - Tag
-  TargetArn: String
-
+  [Description](#cfn-databrew-ruleset-description): {{String}}
+  [Name](#cfn-databrew-ruleset-name): {{String}}
+  [Rules](#cfn-databrew-ruleset-rules): {{
+    - Rule}}
+  [Tags](#cfn-databrew-ruleset-tags): {{
+    - Tag}}
+  [TargetArn](#cfn-databrew-ruleset-targetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-databrew-ruleset-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-databrew-ruleset-description"></a>
 The description of the ruleset.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-databrew-ruleset-name"></a>
 The name of the ruleset.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Rules`
-
+`Rules`  <a name="cfn-databrew-ruleset-rules"></a>
 Contains metadata about the ruleset.
+*Required*: Yes
+*Type*: Array of [Rule](aws-properties-databrew-ruleset-rule.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Rule](aws-properties-databrew-ruleset-rule.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-databrew-ruleset-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-databrew-ruleset-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see
-[Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-databrew-ruleset-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
-The Amazon Resource Name (ARN) of a resource (dataset) that the ruleset is associated
-with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`TargetArn`  <a name="cfn-databrew-ruleset-targetarn"></a>
+The Amazon Resource Name (ARN) of a resource (dataset) that the ruleset is associated with.
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-databrew-ruleset-return-values"></a>
 
 ### Ref
+<a name="aws-resource-databrew-ruleset-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, Ref returns the resource name. For example, `{ "Ref": "myRuleset"
-                }`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the resource name. For example, `{ "Ref": "myRuleset" }`.
 
-For an AWS Glue DataBrew ruleset named `myRuleset`, `Ref`
-returns the name of the ruleset.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ColumnSelector
+For an AWS Glue DataBrew ruleset named `myRuleset`, `Ref` returns the name of the ruleset.
 
 All content copied from https://docs.aws.amazon.com/.

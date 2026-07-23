@@ -2,106 +2,72 @@
 title: "AWS::WAFv2::WebACL AWSManagedRulesATPRuleSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL AWSManagedRulesATPRuleSet
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset"></a>
 
 Details for your use of the account takeover prevention managed rule group, `AWSManagedRulesATPRuleSet`. This configuration is used in `ManagedRuleGroupConfig`.
 
-For additional information about this and the other intelligent threat mitigation rule groups,
-see [Intelligent threat mitigation in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-protections)
-and [AWS Managed Rules rule groups list](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list)
-in the _AWS WAF Developer Guide_.
+For additional information about this and the other intelligent threat mitigation rule groups, see [Intelligent threat mitigation in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-protections) and [AWS Managed Rules rule groups list](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list) in the *AWS WAF Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableRegexInPath" : Boolean,
-  "LoginPath" : String,
-  "RequestInspection" : RequestInspection,
-  "ResponseInspection" : ResponseInspection
+  "[EnableRegexInPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-enableregexinpath)" : {{Boolean}},
+  "[LoginPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-loginpath)" : {{String}},
+  "[RequestInspection](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-requestinspection)" : {{RequestInspection}},
+  "[ResponseInspection](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-responseinspection)" : {{ResponseInspection}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset-syntax.yaml"></a>
 
-```yaml
-
-  EnableRegexInPath: Boolean
-  LoginPath: String
-  RequestInspection:
-    RequestInspection
-  ResponseInspection:
-    ResponseInspection
-
+```
+  [EnableRegexInPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-enableregexinpath): {{Boolean}}
+  [LoginPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-loginpath): {{String}}
+  [RequestInspection](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-requestinspection): {{
+    RequestInspection}}
+  [ResponseInspection](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-responseinspection): {{
+    ResponseInspection}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset-properties"></a>
 
-`EnableRegexInPath`
-
+`EnableRegexInPath`  <a name="cfn-wafv2-webacl-awsmanagedrulesatpruleset-enableregexinpath"></a>
 Allow the use of regular expressions in the login page path.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoginPath`
-
-The path of the login endpoint for your application. For example, for the URL
-`https://example.com/web/login`, you would provide the path
-`/web/login`. Login paths that start with the path that you provide are considered a match. For example `/web/login` matches the login paths `/web/login`, `/web/login/`, `/web/loginPage`, and `/web/login/thisPage`, but doesn't match the login path `/home/web/login` or `/website/login`.
-
+`LoginPath`  <a name="cfn-wafv2-webacl-awsmanagedrulesatpruleset-loginpath"></a>
+The path of the login endpoint for your application. For example, for the URL `https://example.com/web/login`, you would provide the path `/web/login`. Login paths that start with the path that you provide are considered a match. For example `/web/login` matches the login paths `/web/login`, `/web/login/`, `/web/loginPage`, and `/web/login/thisPage`, but doesn't match the login path `/home/web/login` or `/website/login`.
 The rule group inspects only HTTP `POST` requests to your specified login endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestInspection`
-
+`RequestInspection`  <a name="cfn-wafv2-webacl-awsmanagedrulesatpruleset-requestinspection"></a>
 The criteria for inspecting login requests, used by the ATP rule group to validate credentials usage.
+*Required*: No
+*Type*: [RequestInspection](aws-properties-wafv2-webacl-requestinspection.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RequestInspection](aws-properties-wafv2-webacl-requestinspection.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResponseInspection`
-
+`ResponseInspection`  <a name="cfn-wafv2-webacl-awsmanagedrulesatpruleset-responseinspection"></a>
 The criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates.
-
-###### Note
-
 Response inspection is available only in web ACLs that protect Amazon CloudFront distributions.
-
-The ATP rule group evaluates the responses that your protected resources send back to client login attempts, keeping count of successful and failed attempts for each IP address and client session. Using this information, the rule group labels
-and mitigates requests from client sessions and IP addresses that have had too many failed login attempts in a short amount of time.
-
-_Required_: No
-
-_Type_: [ResponseInspection](aws-properties-wafv2-webacl-responseinspection.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWSManagedRulesAntiDDoSRuleSet
-
-AWSManagedRulesBotControlRuleSet
+The ATP rule group evaluates the responses that your protected resources send back to client login attempts, keeping count of successful and failed attempts for each IP address and client session. Using this information, the rule group labels and mitigates requests from client sessions and IP addresses that have had too many failed login attempts in a short amount of time.
+*Required*: No
+*Type*: [ResponseInspection](aws-properties-wafv2-webacl-responseinspection.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

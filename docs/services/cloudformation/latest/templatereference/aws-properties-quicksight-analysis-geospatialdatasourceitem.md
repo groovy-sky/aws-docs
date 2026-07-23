@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis GeospatialDataSourceItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialDataSourceItem
+<a name="aws-properties-quicksight-analysis-geospatialdatasourceitem"></a>
 
 The data source properties for the geospatial data.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialdatasourceitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialdatasourceitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "StaticFileDataSource" : GeospatialStaticFileSource
+  "[StaticFileDataSource](#cfn-quicksight-analysis-geospatialdatasourceitem-staticfiledatasource)" : {{GeospatialStaticFileSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialdatasourceitem-syntax.yaml"></a>
 
-```yaml
-
-  StaticFileDataSource:
-    GeospatialStaticFileSource
-
+```
+  [StaticFileDataSource](#cfn-quicksight-analysis-geospatialdatasourceitem-staticfiledatasource): {{
+    GeospatialStaticFileSource}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialdatasourceitem-properties"></a>
 
-`StaticFileDataSource`
-
+`StaticFileDataSource`  <a name="cfn-quicksight-analysis-geospatialdatasourceitem-staticfiledatasource"></a>
 The static file data source properties for the geospatial data.
-
-_Required_: No
-
-_Type_: [GeospatialStaticFileSource](aws-properties-quicksight-analysis-geospatialstaticfilesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialCoordinateBounds
-
-GeospatialGradientColor
+*Required*: No
+*Type*: [GeospatialStaticFileSource](aws-properties-quicksight-analysis-geospatialstaticfilesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

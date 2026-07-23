@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template DefaultPaginatedLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DefaultPaginatedLayoutConfiguration
+<a name="aws-properties-quicksight-template-defaultpaginatedlayoutconfiguration"></a>
 
 The options that determine the default settings for a paginated layout configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-defaultpaginatedlayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-defaultpaginatedlayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SectionBased" : DefaultSectionBasedLayoutConfiguration
+  "[SectionBased](#cfn-quicksight-template-defaultpaginatedlayoutconfiguration-sectionbased)" : {{DefaultSectionBasedLayoutConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-defaultpaginatedlayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SectionBased:
-    DefaultSectionBasedLayoutConfiguration
-
+```
+  [SectionBased](#cfn-quicksight-template-defaultpaginatedlayoutconfiguration-sectionbased): {{
+    DefaultSectionBasedLayoutConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-defaultpaginatedlayoutconfiguration-properties"></a>
 
-`SectionBased`
-
+`SectionBased`  <a name="cfn-quicksight-template-defaultpaginatedlayoutconfiguration-sectionbased"></a>
 The options that determine the default settings for a section-based layout configuration.
-
-_Required_: No
-
-_Type_: [DefaultSectionBasedLayoutConfiguration](aws-properties-quicksight-template-defaultsectionbasedlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultNewSheetConfiguration
-
-DefaultRelativeDateTimeControlOptions
+*Required*: No
+*Type*: [DefaultSectionBasedLayoutConfiguration](aws-properties-quicksight-template-defaultsectionbasedlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

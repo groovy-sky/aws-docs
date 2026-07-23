@@ -2,131 +2,101 @@
 title: "AWS::SES::MailManagerArchive"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerArchive
+<a name="aws-resource-ses-mailmanagerarchive"></a>
 
 Creates a new email archive resource for storing and retaining emails.
 
 ## Syntax
+<a name="aws-resource-ses-mailmanagerarchive-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-mailmanagerarchive-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::MailManagerArchive",
   "Properties" : {
-      "ArchiveName" : String,
-      "KmsKeyArn" : String,
-      "Retention" : ArchiveRetention,
-      "Tags" : [ Tag, ... ]
+      "[ArchiveName](#cfn-ses-mailmanagerarchive-archivename)" : {{String}},
+      "[KmsKeyArn](#cfn-ses-mailmanagerarchive-kmskeyarn)" : {{String}},
+      "[Retention](#cfn-ses-mailmanagerarchive-retention)" : {{ArchiveRetention}},
+      "[Tags](#cfn-ses-mailmanagerarchive-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-mailmanagerarchive-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::MailManagerArchive
 Properties:
-  ArchiveName: String
-  KmsKeyArn: String
-  Retention:
-    ArchiveRetention
-  Tags:
-    - Tag
-
+  [ArchiveName](#cfn-ses-mailmanagerarchive-archivename): {{String}}
+  [KmsKeyArn](#cfn-ses-mailmanagerarchive-kmskeyarn): {{String}}
+  [Retention](#cfn-ses-mailmanagerarchive-retention): {{
+    ArchiveRetention}}
+  [Tags](#cfn-ses-mailmanagerarchive-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-mailmanagerarchive-properties"></a>
 
-`ArchiveName`
-
+`ArchiveName`  <a name="cfn-ses-mailmanagerarchive-archivename"></a>
 A unique name for the new archive.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyArn`
-
+`KmsKeyArn`  <a name="cfn-ses-mailmanagerarchive-kmskeyarn"></a>
 The Amazon Resource Name (ARN) of the KMS key for encrypting emails in the archive.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(|-cn|-us-gov|-eusc):kms:[a-z0-9-]{1,20}:[0-9]{12}:(key|alias)/.+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-cn|-us-gov|-eusc):kms:[a-z0-9-]{1,20}:[0-9]{12}:(key|alias)/.+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Retention`
-
+`Retention`  <a name="cfn-ses-mailmanagerarchive-retention"></a>
 The period for retaining emails in the archive before automatic deletion.
+*Required*: No
+*Type*: [ArchiveRetention](aws-properties-ses-mailmanagerarchive-archiveretention.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ArchiveRetention](aws-properties-ses-mailmanagerarchive-archiveretention.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ses-mailmanagerarchive-tags"></a>
 The tags used to organize, track, or control access for the resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-mailmanagerarchive-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-mailmanagerarchive-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-mailmanagerarchive-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-mailmanagerarchive-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-mailmanagerarchive-return-values-fn--getatt"></a>
 
-`ArchiveArn`
+####
+<a name="aws-resource-ses-mailmanagerarchive-return-values-fn--getatt-fn--getatt"></a>
 
+`ArchiveArn`  <a name="ArchiveArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the archive.
 
-`ArchiveId`
-
+`ArchiveId`  <a name="ArchiveId-fn::getatt"></a>
 The unique identifier of the archive.
 
-`ArchiveState`
-
+`ArchiveState`  <a name="ArchiveState-fn::getatt"></a>
 The current state of the archive:
-
-- `ACTIVE` – The archive is ready and available for use.
-
-- `PENDING_DELETION` – The archive has been marked for deletion
-and will be permanently deleted in 30 days. No further modifications can be made
-in this state.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ArchiveRetention
++ `ACTIVE` – The archive is ready and available for use.
++ `PENDING_DELETION` – The archive has been marked for deletion and will be permanently deleted in 30 days. No further modifications can be made in this state.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,203 +2,129 @@
 title: "AWS::VpcLattice::TargetGroup HealthCheckConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::TargetGroup HealthCheckConfig
+<a name="aws-properties-vpclattice-targetgroup-healthcheckconfig"></a>
 
-Describes the health check configuration of a target group. Health check configurations
-aren't used for target groups of type `LAMBDA` or `ALB`.
+Describes the health check configuration of a target group. Health check configurations aren't used for target groups of type `LAMBDA` or `ALB`.
 
 ## Syntax
+<a name="aws-properties-vpclattice-targetgroup-healthcheckconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-targetgroup-healthcheckconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "HealthCheckIntervalSeconds" : Integer,
-  "HealthCheckTimeoutSeconds" : Integer,
-  "HealthyThresholdCount" : Integer,
-  "Matcher" : Matcher,
-  "Path" : String,
-  "Port" : Integer,
-  "Protocol" : String,
-  "ProtocolVersion" : String,
-  "UnhealthyThresholdCount" : Integer
+  "[Enabled](#cfn-vpclattice-targetgroup-healthcheckconfig-enabled)" : {{Boolean}},
+  "[HealthCheckIntervalSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthcheckintervalseconds)" : {{Integer}},
+  "[HealthCheckTimeoutSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthchecktimeoutseconds)" : {{Integer}},
+  "[HealthyThresholdCount](#cfn-vpclattice-targetgroup-healthcheckconfig-healthythresholdcount)" : {{Integer}},
+  "[Matcher](#cfn-vpclattice-targetgroup-healthcheckconfig-matcher)" : {{Matcher}},
+  "[Path](#cfn-vpclattice-targetgroup-healthcheckconfig-path)" : {{String}},
+  "[Port](#cfn-vpclattice-targetgroup-healthcheckconfig-port)" : {{Integer}},
+  "[Protocol](#cfn-vpclattice-targetgroup-healthcheckconfig-protocol)" : {{String}},
+  "[ProtocolVersion](#cfn-vpclattice-targetgroup-healthcheckconfig-protocolversion)" : {{String}},
+  "[UnhealthyThresholdCount](#cfn-vpclattice-targetgroup-healthcheckconfig-unhealthythresholdcount)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-targetgroup-healthcheckconfig-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  HealthCheckIntervalSeconds: Integer
-  HealthCheckTimeoutSeconds: Integer
-  HealthyThresholdCount: Integer
-  Matcher:
-    Matcher
-  Path: String
-  Port: Integer
-  Protocol: String
-  ProtocolVersion: String
-  UnhealthyThresholdCount: Integer
-
+```
+  [Enabled](#cfn-vpclattice-targetgroup-healthcheckconfig-enabled): {{Boolean}}
+  [HealthCheckIntervalSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthcheckintervalseconds): {{Integer}}
+  [HealthCheckTimeoutSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthchecktimeoutseconds): {{Integer}}
+  [HealthyThresholdCount](#cfn-vpclattice-targetgroup-healthcheckconfig-healthythresholdcount): {{Integer}}
+  [Matcher](#cfn-vpclattice-targetgroup-healthcheckconfig-matcher): {{
+    Matcher}}
+  [Path](#cfn-vpclattice-targetgroup-healthcheckconfig-path): {{String}}
+  [Port](#cfn-vpclattice-targetgroup-healthcheckconfig-port): {{Integer}}
+  [Protocol](#cfn-vpclattice-targetgroup-healthcheckconfig-protocol): {{String}}
+  [ProtocolVersion](#cfn-vpclattice-targetgroup-healthcheckconfig-protocolversion): {{String}}
+  [UnhealthyThresholdCount](#cfn-vpclattice-targetgroup-healthcheckconfig-unhealthythresholdcount): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-targetgroup-healthcheckconfig-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-enabled"></a>
 Indicates whether health checking is enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`HealthCheckIntervalSeconds`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-healthcheckintervalseconds"></a>
+The approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.
+*Required*: No
+*Type*: Integer
+*Minimum*: `5`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`HealthCheckTimeoutSeconds`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-healthchecktimeoutseconds"></a>
+The amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `120`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`HealthyThresholdCount`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-healthythresholdcount"></a>
+The number of consecutive successful health checks required before considering an unhealthy target healthy. The range is 2–10. The default is 5.
+*Required*: No
+*Type*: Integer
+*Minimum*: `2`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`HealthCheckIntervalSeconds`
-
-The approximate amount of time, in seconds, between health checks of an individual target.
-The range is 5–300 seconds. The default is 30 seconds.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `5`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HealthCheckTimeoutSeconds`
-
-The amount of time, in seconds, to wait before reporting a target as unhealthy. The range is
-1–120 seconds. The default is 5 seconds.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `120`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HealthyThresholdCount`
-
-The number of consecutive successful health checks required before considering an unhealthy
-target healthy. The range is 2–10. The default is 5.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `2`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Matcher`
-
+`Matcher`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-matcher"></a>
 The codes to use when checking for a successful response from a target.
+*Required*: No
+*Type*: [Matcher](aws-properties-vpclattice-targetgroup-matcher.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Path`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-path"></a>
+The destination for health checks on the targets. If the protocol version is `HTTP/1.1` or `HTTP/2`, specify a valid URI (for example, `/path?query`). The default path is `/`. Health checks are not supported if the protocol version is `gRPC`, however, you can choose `HTTP/1.1` or `HTTP/2` and specify a valid URI.
+*Required*: No
+*Type*: String
+*Pattern*: `(^/[a-zA-Z0-9@:%_+.~#?&/=-]*$|(^$))`
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [Matcher](aws-properties-vpclattice-targetgroup-matcher.md)
+`Port`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-port"></a>
+The port used when performing health checks on targets. The default setting is the port that a target receives traffic on.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Protocol`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-protocol"></a>
+The protocol used when performing health checks on targets. The possible protocols are `HTTP` and `HTTPS`. The default is `HTTP`.
+*Required*: No
+*Type*: String
+*Allowed values*: `HTTP | HTTPS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Path`
+`ProtocolVersion`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-protocolversion"></a>
+The protocol version used when performing health checks on targets. The possible protocol versions are `HTTP1` and `HTTP2`.
+*Required*: No
+*Type*: String
+*Allowed values*: `HTTP1 | HTTP2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The destination for health checks on the targets. If the protocol version is
-`HTTP/1.1` or `HTTP/2`, specify a valid URI (for example,
-`/path?query`). The default path is `/`. Health checks are not supported
-if the protocol version is `gRPC`, however, you can choose `HTTP/1.1` or
-`HTTP/2` and specify a valid URI.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(^/[a-zA-Z0-9@:%_+.~#?&/=-]*$|(^$))`
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
-The port used when performing health checks on targets. The default setting is the port that
-a target receives traffic on.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The protocol used when performing health checks on targets. The possible protocols are
-`HTTP` and `HTTPS`. The default is `HTTP`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HTTP | HTTPS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProtocolVersion`
-
-The protocol version used when performing health checks on targets. The possible protocol
-versions are `HTTP1` and `HTTP2`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HTTP1 | HTTP2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnhealthyThresholdCount`
-
-The number of consecutive failed health checks required before considering a target
-unhealthy. The range is 2–10. The default is 2.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `2`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::TargetGroup
-
-Matcher
+`UnhealthyThresholdCount`  <a name="cfn-vpclattice-targetgroup-healthcheckconfig-unhealthythresholdcount"></a>
+The number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.
+*Required*: No
+*Type*: Integer
+*Minimum*: `2`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

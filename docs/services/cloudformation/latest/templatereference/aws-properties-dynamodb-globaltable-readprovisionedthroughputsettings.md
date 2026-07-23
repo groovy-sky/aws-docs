@@ -2,71 +2,51 @@
 title: "AWS::DynamoDB::GlobalTable ReadProvisionedThroughputSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable ReadProvisionedThroughputSettings
+<a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings"></a>
 
-Allows you to specify the read capacity settings for a replica table or a replica global
-secondary index when the `BillingMode` is set to `PROVISIONED`. You
-must specify a value for either `ReadCapacityUnits` or
-`ReadCapacityAutoScalingSettings`, but not both. You can switch between fixed
-capacity and auto scaling.
+Allows you to specify the read capacity settings for a replica table or a replica global secondary index when the `BillingMode` is set to `PROVISIONED`. You must specify a value for either `ReadCapacityUnits` or `ReadCapacityAutoScalingSettings`, but not both. You can switch between fixed capacity and auto scaling.
 
 ## Syntax
+<a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReadCapacityAutoScalingSettings" : CapacityAutoScalingSettings,
-  "ReadCapacityUnits" : Integer
+  "[ReadCapacityAutoScalingSettings](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityautoscalingsettings)" : {{CapacityAutoScalingSettings}},
+  "[ReadCapacityUnits](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityunits)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings-syntax.yaml"></a>
 
-```yaml
-
-  ReadCapacityAutoScalingSettings:
-    CapacityAutoScalingSettings
-  ReadCapacityUnits: Integer
-
+```
+  [ReadCapacityAutoScalingSettings](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityautoscalingsettings): {{
+    CapacityAutoScalingSettings}}
+  [ReadCapacityUnits](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityunits): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings-properties"></a>
 
-`ReadCapacityAutoScalingSettings`
-
+`ReadCapacityAutoScalingSettings`  <a name="cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityautoscalingsettings"></a>
 Specifies auto scaling settings for the replica table or global secondary index.
+*Required*: No
+*Type*: [CapacityAutoScalingSettings](aws-properties-dynamodb-globaltable-capacityautoscalingsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CapacityAutoScalingSettings](aws-properties-dynamodb-globaltable-capacityautoscalingsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReadCapacityUnits`
-
+`ReadCapacityUnits`  <a name="cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityunits"></a>
 Specifies a fixed read capacity for the replica table or global secondary index.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReadOnDemandThroughputSettings
-
-ReplicaGlobalSecondaryIndexSpecification
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

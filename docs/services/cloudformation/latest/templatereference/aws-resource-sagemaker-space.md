@@ -2,188 +2,139 @@
 title: "AWS::SageMaker::Space"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Space
+<a name="aws-resource-sagemaker-space"></a>
 
 Creates a private space or a space used for real time collaboration in a domain.
 
 ## Syntax
+<a name="aws-resource-sagemaker-space-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-space-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::Space",
   "Properties" : {
-      "DomainId" : String,
-      "OwnershipSettings" : OwnershipSettings,
-      "SpaceDisplayName" : String,
-      "SpaceName" : String,
-      "SpaceSettings" : SpaceSettings,
-      "SpaceSharingSettings" : SpaceSharingSettings,
-      "Tags" : [ Tag, ... ]
+      "[DomainId](#cfn-sagemaker-space-domainid)" : {{String}},
+      "[OwnershipSettings](#cfn-sagemaker-space-ownershipsettings)" : {{OwnershipSettings}},
+      "[SpaceDisplayName](#cfn-sagemaker-space-spacedisplayname)" : {{String}},
+      "[SpaceName](#cfn-sagemaker-space-spacename)" : {{String}},
+      "[SpaceSettings](#cfn-sagemaker-space-spacesettings)" : {{SpaceSettings}},
+      "[SpaceSharingSettings](#cfn-sagemaker-space-spacesharingsettings)" : {{SpaceSharingSettings}},
+      "[Tags](#cfn-sagemaker-space-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-space-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::Space
 Properties:
-  DomainId: String
-  OwnershipSettings:
-    OwnershipSettings
-  SpaceDisplayName: String
-  SpaceName: String
-  SpaceSettings:
-    SpaceSettings
-  SpaceSharingSettings:
-    SpaceSharingSettings
-  Tags:
-    - Tag
-
+  [DomainId](#cfn-sagemaker-space-domainid): {{String}}
+  [OwnershipSettings](#cfn-sagemaker-space-ownershipsettings): {{
+    OwnershipSettings}}
+  [SpaceDisplayName](#cfn-sagemaker-space-spacedisplayname): {{String}}
+  [SpaceName](#cfn-sagemaker-space-spacename): {{String}}
+  [SpaceSettings](#cfn-sagemaker-space-spacesettings): {{
+    SpaceSettings}}
+  [SpaceSharingSettings](#cfn-sagemaker-space-spacesharingsettings): {{
+    SpaceSharingSettings}}
+  [Tags](#cfn-sagemaker-space-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-space-properties"></a>
 
-`DomainId`
-
+`DomainId`  <a name="cfn-sagemaker-space-domainid"></a>
 The ID of the associated domain.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OwnershipSettings`
-
+`OwnershipSettings`  <a name="cfn-sagemaker-space-ownershipsettings"></a>
 The collection of ownership settings for a space.
+*Required*: No
+*Type*: [OwnershipSettings](aws-properties-sagemaker-space-ownershipsettings.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [OwnershipSettings](aws-properties-sagemaker-space-ownershipsettings.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SpaceDisplayName`
-
+`SpaceDisplayName`  <a name="cfn-sagemaker-space-spacedisplayname"></a>
 The name of the space that appears in the Studio UI.
+*Required*: No
+*Type*: String
+*Pattern*: `^(?!\s*$).+`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(?!\s*$).+`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpaceName`
-
+`SpaceName`  <a name="cfn-sagemaker-space-spacename"></a>
 The name of the space.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SpaceSettings`
-
+`SpaceSettings`  <a name="cfn-sagemaker-space-spacesettings"></a>
 A collection of space settings.
+*Required*: No
+*Type*: [SpaceSettings](aws-properties-sagemaker-space-spacesettings.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SpaceSettings](aws-properties-sagemaker-space-spacesettings.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpaceSharingSettings`
-
+`SpaceSharingSettings`  <a name="cfn-sagemaker-space-spacesharingsettings"></a>
 A collection of space sharing settings.
+*Required*: No
+*Type*: [SpaceSharingSettings](aws-properties-sagemaker-space-spacesharingsettings.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [SpaceSharingSettings](aws-properties-sagemaker-space-spacesharingsettings.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-space-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-space-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-space-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sagemaker-space-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-space-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the domain that the space is associated with and the name of the
-space.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the domain that the space is associated with and the name of the space.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-space-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`SpaceArn`
+####
+<a name="aws-resource-sagemaker-space-return-values-fn--getatt-fn--getatt"></a>
 
+`SpaceArn`  <a name="SpaceArn-fn::getatt"></a>
 The space's Amazon Resource Name (ARN).
 
-`Url`
-
-Returns the URL of the space. If the space is created with AWS IAM Identity Center (Successor to
-AWS Single Sign-On) authentication, users can navigate to the URL after appending the respective
-redirect parameter for the application type to be federated through AWS IAM Identity Center.
-
+`Url`  <a name="Url-fn::getatt"></a>
+Returns the URL of the space. If the space is created with AWS IAM Identity Center (Successor to AWS Single Sign-On) authentication, users can navigate to the URL after appending the respective redirect parameter for the application type to be federated through AWS IAM Identity Center.
 The following application types are supported:
-
-- Studio Classic: `&redirect=JupyterServer`
-
-- JupyterLab: `&redirect=JupyterLab`
-
-- Code Editor, based on Code-OSS, Visual Studio Code - Open Source: `&redirect=CodeEditor`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TemplateProviderDetail
-
-CodeRepository
++ Studio Classic: `&redirect=JupyterServer`
++ JupyterLab: `&redirect=JupyterLab`
++ Code Editor, based on Code-OSS, Visual Studio Code - Open Source: `&redirect=CodeEditor`
 
 All content copied from https://docs.aws.amazon.com/.

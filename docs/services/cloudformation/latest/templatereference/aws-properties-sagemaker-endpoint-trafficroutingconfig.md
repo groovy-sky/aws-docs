@@ -2,111 +2,73 @@
 title: "AWS::SageMaker::Endpoint TrafficRoutingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Endpoint TrafficRoutingConfig
+<a name="aws-properties-sagemaker-endpoint-trafficroutingconfig"></a>
 
-Defines the traffic routing strategy during an endpoint deployment to shift traffic
-from the old fleet to the new fleet.
+Defines the traffic routing strategy during an endpoint deployment to shift traffic from the old fleet to the new fleet.
 
 ## Syntax
+<a name="aws-properties-sagemaker-endpoint-trafficroutingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-endpoint-trafficroutingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CanarySize" : CapacitySize,
-  "LinearStepSize" : CapacitySize,
-  "Type" : String,
-  "WaitIntervalInSeconds" : Integer
+  "[CanarySize](#cfn-sagemaker-endpoint-trafficroutingconfig-canarysize)" : {{CapacitySize}},
+  "[LinearStepSize](#cfn-sagemaker-endpoint-trafficroutingconfig-linearstepsize)" : {{CapacitySize}},
+  "[Type](#cfn-sagemaker-endpoint-trafficroutingconfig-type)" : {{String}},
+  "[WaitIntervalInSeconds](#cfn-sagemaker-endpoint-trafficroutingconfig-waitintervalinseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-endpoint-trafficroutingconfig-syntax.yaml"></a>
 
-```yaml
-
-  CanarySize:
-    CapacitySize
-  LinearStepSize:
-    CapacitySize
-  Type: String
-  WaitIntervalInSeconds: Integer
-
+```
+  [CanarySize](#cfn-sagemaker-endpoint-trafficroutingconfig-canarysize): {{
+    CapacitySize}}
+  [LinearStepSize](#cfn-sagemaker-endpoint-trafficroutingconfig-linearstepsize): {{
+    CapacitySize}}
+  [Type](#cfn-sagemaker-endpoint-trafficroutingconfig-type): {{String}}
+  [WaitIntervalInSeconds](#cfn-sagemaker-endpoint-trafficroutingconfig-waitintervalinseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-endpoint-trafficroutingconfig-properties"></a>
 
-`CanarySize`
+`CanarySize`  <a name="cfn-sagemaker-endpoint-trafficroutingconfig-canarysize"></a>
+Batch size for the first step to turn on traffic on the new endpoint fleet. `Value` must be less than or equal to 50% of the variant's total instance count.
+*Required*: No
+*Type*: [CapacitySize](aws-properties-sagemaker-endpoint-capacitysize.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Batch size for the first step to turn on traffic on the new endpoint fleet.
-`Value` must be less than or equal to 50% of the variant's total instance
-count.
+`LinearStepSize`  <a name="cfn-sagemaker-endpoint-trafficroutingconfig-linearstepsize"></a>
+Batch size for each step to turn on traffic on the new endpoint fleet. `Value` must be 10-50% of the variant's total instance count.
+*Required*: No
+*Type*: [CapacitySize](aws-properties-sagemaker-endpoint-capacitysize.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CapacitySize](aws-properties-sagemaker-endpoint-capacitysize.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LinearStepSize`
-
-Batch size for each step to turn on traffic on the new endpoint fleet.
-`Value` must be 10-50% of the variant's total instance count.
-
-_Required_: No
-
-_Type_: [CapacitySize](aws-properties-sagemaker-endpoint-capacitysize.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-sagemaker-endpoint-trafficroutingconfig-type"></a>
 Traffic routing strategy type.
++ `ALL_AT_ONCE`: Endpoint traffic shifts to the new fleet in a single step.
++ `CANARY`: Endpoint traffic shifts to the new fleet in two steps. The first step is the canary, which is a small portion of the traffic. The second step is the remainder of the traffic.
++ `LINEAR`: Endpoint traffic shifts to the new fleet in n steps of a configurable size.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL_AT_ONCE | CANARY | LINEAR`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_AT_ONCE`: Endpoint traffic shifts to the new fleet in a single
-step.
-
-- `CANARY`: Endpoint traffic shifts to the new fleet in two steps.
-The first step is the canary, which is a small portion of the traffic. The
-second step is the remainder of the traffic.
-
-- `LINEAR`: Endpoint traffic shifts to the new fleet in n steps of a
-configurable size.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL_AT_ONCE | CANARY | LINEAR`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WaitIntervalInSeconds`
-
-The waiting time (in seconds) between incremental steps to turn on traffic on the new
-endpoint fleet.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `3600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-VariantProperty
+`WaitIntervalInSeconds`  <a name="cfn-sagemaker-endpoint-trafficroutingconfig-waitintervalinseconds"></a>
+The waiting time (in seconds) between incremental steps to turn on traffic on the new endpoint fleet.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `3600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

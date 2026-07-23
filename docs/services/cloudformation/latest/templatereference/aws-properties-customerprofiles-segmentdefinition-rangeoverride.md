@@ -2,86 +2,62 @@
 title: "AWS::CustomerProfiles::SegmentDefinition RangeOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition RangeOverride
+<a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride"></a>
 
 Overrides the original range on a calculated attribute definition.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "End" : Integer,
-  "Start" : Integer,
-  "Unit" : String
+  "[End](#cfn-customerprofiles-segmentdefinition-rangeoverride-end)" : {{Integer}},
+  "[Start](#cfn-customerprofiles-segmentdefinition-rangeoverride-start)" : {{Integer}},
+  "[Unit](#cfn-customerprofiles-segmentdefinition-rangeoverride-unit)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride-syntax.yaml"></a>
 
-```yaml
-
-  End: Integer
-  Start: Integer
-  Unit: String
-
+```
+  [End](#cfn-customerprofiles-segmentdefinition-rangeoverride-end): {{Integer}}
+  [Start](#cfn-customerprofiles-segmentdefinition-rangeoverride-start): {{Integer}}
+  [Unit](#cfn-customerprofiles-segmentdefinition-rangeoverride-unit): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride-properties"></a>
 
-`End`
-
+`End`  <a name="cfn-customerprofiles-segmentdefinition-rangeoverride-end"></a>
 The end time of when to include objects.
+*Required*: No
+*Type*: Integer
+*Minimum*: `-2147483648`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `-2147483648`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Start`
-
+`Start`  <a name="cfn-customerprofiles-segmentdefinition-rangeoverride-start"></a>
 The start time of when to include objects.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `-2147483648`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `-2147483648`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Unit`
-
+`Unit`  <a name="cfn-customerprofiles-segmentdefinition-rangeoverride-unit"></a>
 The unit for start and end.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DAYS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProfileTypeDimension
-
-SegmentGroup
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DAYS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

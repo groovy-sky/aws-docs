@@ -2,64 +2,49 @@
 title: "AWS::MediaConnect::Gateway GatewayNetwork"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Gateway GatewayNetwork
+<a name="aws-properties-mediaconnect-gateway-gatewaynetwork"></a>
 
 The network settings for a gateway.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-gateway-gatewaynetwork-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-gateway-gatewaynetwork-syntax.json"></a>
 
-```json
-
+```
 {
-  "CidrBlock" : String,
-  "Name" : String
+  "[CidrBlock](#cfn-mediaconnect-gateway-gatewaynetwork-cidrblock)" : {{String}},
+  "[Name](#cfn-mediaconnect-gateway-gatewaynetwork-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-gateway-gatewaynetwork-syntax.yaml"></a>
 
-```yaml
-
-  CidrBlock: String
-  Name: String
-
+```
+  [CidrBlock](#cfn-mediaconnect-gateway-gatewaynetwork-cidrblock): {{String}}
+  [Name](#cfn-mediaconnect-gateway-gatewaynetwork-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-gateway-gatewaynetwork-properties"></a>
 
-`CidrBlock`
-
+`CidrBlock`  <a name="cfn-mediaconnect-gateway-gatewaynetwork-cidrblock"></a>
 A unique IP address range to use for this network. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-mediaconnect-gateway-gatewaynetwork-name"></a>
 The name of the network. This name is used to reference the network and must be unique among networks in this gateway.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaConnect::Gateway
-
-AWS::MediaConnect::RouterInput
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

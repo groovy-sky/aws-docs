@@ -2,88 +2,65 @@
 title: "AWS::MediaPackage::Channel IngestEndpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::Channel IngestEndpoint
+<a name="aws-properties-mediapackage-channel-ingestendpoint"></a>
 
 An endpoint for ingesting source content for a channel.
 
 ## Syntax
+<a name="aws-properties-mediapackage-channel-ingestendpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-channel-ingestendpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : String,
-  "Password" : String,
-  "Url" : String,
-  "Username" : String
+  "[Id](#cfn-mediapackage-channel-ingestendpoint-id)" : {{String}},
+  "[Password](#cfn-mediapackage-channel-ingestendpoint-password)" : {{String}},
+  "[Url](#cfn-mediapackage-channel-ingestendpoint-url)" : {{String}},
+  "[Username](#cfn-mediapackage-channel-ingestendpoint-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-channel-ingestendpoint-syntax.yaml"></a>
 
-```yaml
-
-  Id: String
-  Password: String
-  Url: String
-  Username: String
-
+```
+  [Id](#cfn-mediapackage-channel-ingestendpoint-id): {{String}}
+  [Password](#cfn-mediapackage-channel-ingestendpoint-password): {{String}}
+  [Url](#cfn-mediapackage-channel-ingestendpoint-url): {{String}}
+  [Username](#cfn-mediapackage-channel-ingestendpoint-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-channel-ingestendpoint-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-mediapackage-channel-ingestendpoint-id"></a>
 The endpoint identifier.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Password`
-
+`Password`  <a name="cfn-mediapackage-channel-ingestendpoint-password"></a>
 The system-generated password for WebDAV input authentication.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Url`
-
+`Url`  <a name="cfn-mediapackage-channel-ingestendpoint-url"></a>
 The input URL where the source stream should be sent.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
+`Username`  <a name="cfn-mediapackage-channel-ingestendpoint-username"></a>
 The system-generated username for WebDAV input authentication.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HlsIngest
-
-LogConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

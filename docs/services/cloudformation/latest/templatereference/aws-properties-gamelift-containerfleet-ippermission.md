@@ -2,116 +2,77 @@
 title: "AWS::GameLift::ContainerFleet IpPermission"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerFleet IpPermission
+<a name="aws-properties-gamelift-containerfleet-ippermission"></a>
 
-A range of IP addresses and port settings that allow inbound traffic to connect to
-processes on an instance in a fleet. Processes are assigned an IP address/port number
-combination, which must fall into the fleet's allowed ranges.
+A range of IP addresses and port settings that allow inbound traffic to connect to processes on an instance in a fleet. Processes are assigned an IP address/port number combination, which must fall into the fleet's allowed ranges.
 
-For Amazon GameLift Servers Realtime fleets, Amazon GameLift Servers automatically opens two port ranges, one for TCP messaging
-and one for UDP.
+For Amazon GameLift Servers Realtime fleets, Amazon GameLift Servers automatically opens two port ranges, one for TCP messaging and one for UDP.
 
 ## Syntax
+<a name="aws-properties-gamelift-containerfleet-ippermission-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-containerfleet-ippermission-syntax.json"></a>
 
-```json
-
+```
 {
-  "FromPort" : Integer,
-  "IpRange" : String,
-  "Protocol" : String,
-  "ToPort" : Integer
+  "[FromPort](#cfn-gamelift-containerfleet-ippermission-fromport)" : {{Integer}},
+  "[IpRange](#cfn-gamelift-containerfleet-ippermission-iprange)" : {{String}},
+  "[Protocol](#cfn-gamelift-containerfleet-ippermission-protocol)" : {{String}},
+  "[ToPort](#cfn-gamelift-containerfleet-ippermission-toport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-containerfleet-ippermission-syntax.yaml"></a>
 
-```yaml
-
-  FromPort: Integer
-  IpRange: String
-  Protocol: String
-  ToPort: Integer
-
+```
+  [FromPort](#cfn-gamelift-containerfleet-ippermission-fromport): {{Integer}}
+  [IpRange](#cfn-gamelift-containerfleet-ippermission-iprange): {{String}}
+  [Protocol](#cfn-gamelift-containerfleet-ippermission-protocol): {{String}}
+  [ToPort](#cfn-gamelift-containerfleet-ippermission-toport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-containerfleet-ippermission-properties"></a>
 
-`FromPort`
-
+`FromPort`  <a name="cfn-gamelift-containerfleet-ippermission-fromport"></a>
 A starting value for a range of allowed port numbers.
-
 For fleets using Linux builds, only ports `22` and `1026-60000` are valid.
-
 For fleets using Windows builds, only ports `1026-60000` are valid.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `60000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IpRange`  <a name="cfn-gamelift-containerfleet-ippermission-iprange"></a>
+A range of allowed IP addresses. This value must be expressed in CIDR notation. Example: "`000.000.000.000/[subnet mask]`" or optionally the shortened version "`0.0.0.0/[subnet mask]`".
+*Required*: Yes
+*Type*: String
+*Pattern*: `(^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(/([0-9]|[1-2][0-9]|3[0-2]))$)`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `60000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpRange`
-
-A range of allowed IP addresses. This value must be expressed in CIDR notation.
-Example: " `000.000.000.000/[subnet mask]`" or optionally the shortened
-version " `0.0.0.0/[subnet mask]`".
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(/([0-9]|[1-2][0-9]|3[0-2]))$)`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-gamelift-containerfleet-ippermission-protocol"></a>
 The network communication protocol used by the fleet.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TCP | UDP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TCP | UDP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToPort`
-
-An ending value for a range of allowed port numbers. Port numbers are end-inclusive.
-This value must be equal to or greater than `FromPort`.
-
+`ToPort`  <a name="cfn-gamelift-containerfleet-ippermission-toport"></a>
+An ending value for a range of allowed port numbers. Port numbers are end-inclusive. This value must be equal to or greater than `FromPort`.
 For fleets using Linux builds, only ports `22` and `1026-60000` are valid.
-
 For fleets using Windows builds, only ports `1026-60000` are valid.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `60000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GameSessionCreationLimitPolicy
-
-LocationCapacity
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `60000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

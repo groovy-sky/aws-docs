@@ -2,101 +2,68 @@
 title: "AWS::Elasticsearch::Domain CognitoOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain CognitoOptions
+<a name="aws-properties-elasticsearch-domain-cognitooptions"></a>
 
 Configures OpenSearch Service to use Amazon Cognito authentication for OpenSearch Dashboards.
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-Elasticsearch. For more information about the service rename, see [New resource\
-types](../../../opensearch-service/latest/developerguide/rename.md#rename-resource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and Elasticsearch. For more information about the service rename, see [New resource types](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-resource) in the *Amazon OpenSearch Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticsearch-domain-cognitooptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticsearch-domain-cognitooptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "IdentityPoolId" : String,
-  "RoleArn" : String,
-  "UserPoolId" : String
+  "[Enabled](#cfn-elasticsearch-domain-cognitooptions-enabled)" : {{Boolean}},
+  "[IdentityPoolId](#cfn-elasticsearch-domain-cognitooptions-identitypoolid)" : {{String}},
+  "[RoleArn](#cfn-elasticsearch-domain-cognitooptions-rolearn)" : {{String}},
+  "[UserPoolId](#cfn-elasticsearch-domain-cognitooptions-userpoolid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticsearch-domain-cognitooptions-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  IdentityPoolId: String
-  RoleArn: String
-  UserPoolId: String
-
+```
+  [Enabled](#cfn-elasticsearch-domain-cognitooptions-enabled): {{Boolean}}
+  [IdentityPoolId](#cfn-elasticsearch-domain-cognitooptions-identitypoolid): {{String}}
+  [RoleArn](#cfn-elasticsearch-domain-cognitooptions-rolearn): {{String}}
+  [UserPoolId](#cfn-elasticsearch-domain-cognitooptions-userpoolid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticsearch-domain-cognitooptions-properties"></a>
 
-`Enabled`
+`Enabled`  <a name="cfn-elasticsearch-domain-cognitooptions-enabled"></a>
+Whether to enable or disable Amazon Cognito authentication for OpenSearch Dashboards. See [Amazon Cognito authentication for OpenSearch Dashboards](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/cognito-auth.html).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Whether to enable or disable Amazon Cognito authentication for OpenSearch Dashboards. See [Amazon\
-Cognito authentication for OpenSearch Dashboards](../../../opensearch-service/latest/developerguide/cognito-auth.md).
+`IdentityPoolId`  <a name="cfn-elasticsearch-domain-cognitooptions-identitypoolid"></a>
+The Amazon Cognito identity pool ID that you want OpenSearch Service to use for OpenSearch Dashboards authentication. Required if you enable Cognito authentication.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RoleArn`  <a name="cfn-elasticsearch-domain-cognitooptions-rolearn"></a>
+The `AmazonESCognitoAccess` role that allows OpenSearch Service to configure your user pool and identity pool. Required if you enable Cognito authentication.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityPoolId`
-
-The Amazon Cognito identity pool ID that you want OpenSearch Service to use for OpenSearch
-Dashboards authentication. Required if you enable Cognito authentication.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The `AmazonESCognitoAccess` role that allows OpenSearch Service to configure
-your user pool and identity pool. Required if you enable Cognito authentication.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolId`
-
-The Amazon Cognito user pool ID that you want OpenSearch Service to use for OpenSearch
-Dashboards authentication. Required if you enable Cognito authentication.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdvancedSecurityOptionsInput
-
-ColdStorageOptions
+`UserPoolId`  <a name="cfn-elasticsearch-domain-cognitooptions-userpoolid"></a>
+The Amazon Cognito user pool ID that you want OpenSearch Service to use for OpenSearch Dashboards authentication. Required if you enable Cognito authentication.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

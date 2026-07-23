@@ -2,105 +2,73 @@
 title: "AWS::QuickSight::Analysis GeospatialCoordinateBounds"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialCoordinateBounds
+<a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds"></a>
 
-The bound
-options (north, south, west, east) of the geospatial window options.
+The bound options (north, south, west, east) of the geospatial window options.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds-syntax.json"></a>
 
-```json
-
+```
 {
-  "East" : Number,
-  "North" : Number,
-  "South" : Number,
-  "West" : Number
+  "[East](#cfn-quicksight-analysis-geospatialcoordinatebounds-east)" : {{Number}},
+  "[North](#cfn-quicksight-analysis-geospatialcoordinatebounds-north)" : {{Number}},
+  "[South](#cfn-quicksight-analysis-geospatialcoordinatebounds-south)" : {{Number}},
+  "[West](#cfn-quicksight-analysis-geospatialcoordinatebounds-west)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds-syntax.yaml"></a>
 
-```yaml
-
-  East: Number
-  North: Number
-  South: Number
-  West: Number
-
+```
+  [East](#cfn-quicksight-analysis-geospatialcoordinatebounds-east): {{Number}}
+  [North](#cfn-quicksight-analysis-geospatialcoordinatebounds-north): {{Number}}
+  [South](#cfn-quicksight-analysis-geospatialcoordinatebounds-south): {{Number}}
+  [West](#cfn-quicksight-analysis-geospatialcoordinatebounds-west): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds-properties"></a>
 
-`East`
-
+`East`  <a name="cfn-quicksight-analysis-geospatialcoordinatebounds-east"></a>
 The longitude of the east bound of the geospatial coordinate bounds.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `-1800`
+*Maximum*: `1800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `-1800`
-
-_Maximum_: `1800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`North`
-
+`North`  <a name="cfn-quicksight-analysis-geospatialcoordinatebounds-north"></a>
 The latitude of the north bound of the geospatial coordinate bounds.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `-90`
+*Maximum*: `90`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `-90`
-
-_Maximum_: `90`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`South`
-
+`South`  <a name="cfn-quicksight-analysis-geospatialcoordinatebounds-south"></a>
 The latitude of the south bound of the geospatial coordinate bounds.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `-90`
+*Maximum*: `90`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `-90`
-
-_Maximum_: `90`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`West`
-
+`West`  <a name="cfn-quicksight-analysis-geospatialcoordinatebounds-west"></a>
 The longitude of the west bound of the geospatial coordinate bounds.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `-1800`
-
-_Maximum_: `1800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialColor
-
-GeospatialDataSourceItem
+*Required*: Yes
+*Type*: Number
+*Minimum*: `-1800`
+*Maximum*: `1800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

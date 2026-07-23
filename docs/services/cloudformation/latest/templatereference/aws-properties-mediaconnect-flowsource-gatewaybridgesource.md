@@ -2,67 +2,51 @@
 title: "AWS::MediaConnect::FlowSource GatewayBridgeSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::FlowSource GatewayBridgeSource
+<a name="aws-properties-mediaconnect-flowsource-gatewaybridgesource"></a>
 
-The source configuration for cloud flows receiving a stream from a bridge.
+ The source configuration for cloud flows receiving a stream from a bridge.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flowsource-gatewaybridgesource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flowsource-gatewaybridgesource-syntax.json"></a>
 
-```json
-
+```
 {
-  "BridgeArn" : String,
-  "VpcInterfaceAttachment" : VpcInterfaceAttachment
+  "[BridgeArn](#cfn-mediaconnect-flowsource-gatewaybridgesource-bridgearn)" : {{String}},
+  "[VpcInterfaceAttachment](#cfn-mediaconnect-flowsource-gatewaybridgesource-vpcinterfaceattachment)" : {{VpcInterfaceAttachment}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flowsource-gatewaybridgesource-syntax.yaml"></a>
 
-```yaml
-
-  BridgeArn: String
-  VpcInterfaceAttachment:
-    VpcInterfaceAttachment
-
+```
+  [BridgeArn](#cfn-mediaconnect-flowsource-gatewaybridgesource-bridgearn): {{String}}
+  [VpcInterfaceAttachment](#cfn-mediaconnect-flowsource-gatewaybridgesource-vpcinterfaceattachment): {{
+    VpcInterfaceAttachment}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flowsource-gatewaybridgesource-properties"></a>
 
-`BridgeArn`
+`BridgeArn`  <a name="cfn-mediaconnect-flowsource-gatewaybridgesource-bridgearn"></a>
+ The ARN of the bridge feeding this flow.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:bridge:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ARN of the bridge feeding this flow.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:bridge:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcInterfaceAttachment`
-
-The name of the VPC interface attachment to use for this bridge source.
-
-_Required_: No
-
-_Type_: [VpcInterfaceAttachment](aws-properties-mediaconnect-flowsource-vpcinterfaceattachment.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Encryption
-
-Tag
+`VpcInterfaceAttachment`  <a name="cfn-mediaconnect-flowsource-gatewaybridgesource-vpcinterfaceattachment"></a>
+ The name of the VPC interface attachment to use for this bridge source.
+*Required*: No
+*Type*: [VpcInterfaceAttachment](aws-properties-mediaconnect-flowsource-vpcinterfaceattachment.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

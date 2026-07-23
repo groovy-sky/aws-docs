@@ -2,278 +2,212 @@
 title: "AWS::ECS::ExpressGatewayService"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::ExpressGatewayService
+<a name="aws-resource-ecs-expressgatewayservice"></a>
 
-Creates an Express service that simplifies deploying containerized web applications on
-Amazon ECS with managed AWS infrastructure. This operation provisions and configures
-Application Load Balancers, target groups, security groups, and auto-scaling policies
-automatically.
+Creates an Express service that simplifies deploying containerized web applications on Amazon ECS with managed AWS infrastructure. This operation provisions and configures Application Load Balancers, target groups, security groups, and auto-scaling policies automatically.
 
-Specify a primary container configuration with your application image and basic
-settings. Amazon ECS creates the necessary AWS resources for traffic distribution, health
-monitoring, network access control, and capacity management.
+Specify a primary container configuration with your application image and basic settings. Amazon ECS creates the necessary AWS resources for traffic distribution, health monitoring, network access control, and capacity management.
 
-Provide an execution role for task operations and an infrastructure role for managing
-AWS resources on your behalf.
+Provide an execution role for task operations and an infrastructure role for managing AWS resources on your behalf.
 
 ## Syntax
+<a name="aws-resource-ecs-expressgatewayservice-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ecs-expressgatewayservice-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ECS::ExpressGatewayService",
   "Properties" : {
-      "Cluster" : String,
-      "Cpu" : String,
-      "ExecutionRoleArn" : String,
-      "HealthCheckPath" : String,
-      "InfrastructureRoleArn" : String,
-      "Memory" : String,
-      "NetworkConfiguration" : ExpressGatewayServiceNetworkConfiguration,
-      "PrimaryContainer" : ExpressGatewayContainer,
-      "ScalingTarget" : ExpressGatewayScalingTarget,
-      "ServiceName" : String,
-      "Tags" : [ Tag, ... ],
-      "TaskRoleArn" : String
+      "[Cluster](#cfn-ecs-expressgatewayservice-cluster)" : {{String}},
+      "[Cpu](#cfn-ecs-expressgatewayservice-cpu)" : {{String}},
+      "[ExecutionRoleArn](#cfn-ecs-expressgatewayservice-executionrolearn)" : {{String}},
+      "[HealthCheckPath](#cfn-ecs-expressgatewayservice-healthcheckpath)" : {{String}},
+      "[InfrastructureRoleArn](#cfn-ecs-expressgatewayservice-infrastructurerolearn)" : {{String}},
+      "[Memory](#cfn-ecs-expressgatewayservice-memory)" : {{String}},
+      "[NetworkConfiguration](#cfn-ecs-expressgatewayservice-networkconfiguration)" : {{ExpressGatewayServiceNetworkConfiguration}},
+      "[PrimaryContainer](#cfn-ecs-expressgatewayservice-primarycontainer)" : {{ExpressGatewayContainer}},
+      "[ScalingTarget](#cfn-ecs-expressgatewayservice-scalingtarget)" : {{ExpressGatewayScalingTarget}},
+      "[ServiceName](#cfn-ecs-expressgatewayservice-servicename)" : {{String}},
+      "[Tags](#cfn-ecs-expressgatewayservice-tags)" : {{[ Tag, ... ]}},
+      "[TaskDefinitionArn](#cfn-ecs-expressgatewayservice-taskdefinitionarn)" : {{String}},
+      "[TaskRoleArn](#cfn-ecs-expressgatewayservice-taskrolearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ecs-expressgatewayservice-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ECS::ExpressGatewayService
 Properties:
-  Cluster: String
-  Cpu: String
-  ExecutionRoleArn: String
-  HealthCheckPath: String
-  InfrastructureRoleArn: String
-  Memory: String
-  NetworkConfiguration:
-    ExpressGatewayServiceNetworkConfiguration
-  PrimaryContainer:
-    ExpressGatewayContainer
-  ScalingTarget:
-    ExpressGatewayScalingTarget
-  ServiceName: String
-  Tags:
-    - Tag
-  TaskRoleArn: String
-
+  [Cluster](#cfn-ecs-expressgatewayservice-cluster): {{String}}
+  [Cpu](#cfn-ecs-expressgatewayservice-cpu): {{String}}
+  [ExecutionRoleArn](#cfn-ecs-expressgatewayservice-executionrolearn): {{String}}
+  [HealthCheckPath](#cfn-ecs-expressgatewayservice-healthcheckpath): {{String}}
+  [InfrastructureRoleArn](#cfn-ecs-expressgatewayservice-infrastructurerolearn): {{String}}
+  [Memory](#cfn-ecs-expressgatewayservice-memory): {{String}}
+  [NetworkConfiguration](#cfn-ecs-expressgatewayservice-networkconfiguration): {{
+    ExpressGatewayServiceNetworkConfiguration}}
+  [PrimaryContainer](#cfn-ecs-expressgatewayservice-primarycontainer): {{
+    ExpressGatewayContainer}}
+  [ScalingTarget](#cfn-ecs-expressgatewayservice-scalingtarget): {{
+    ExpressGatewayScalingTarget}}
+  [ServiceName](#cfn-ecs-expressgatewayservice-servicename): {{String}}
+  [Tags](#cfn-ecs-expressgatewayservice-tags): {{
+    - Tag}}
+  [TaskDefinitionArn](#cfn-ecs-expressgatewayservice-taskdefinitionarn): {{String}}
+  [TaskRoleArn](#cfn-ecs-expressgatewayservice-taskrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ecs-expressgatewayservice-properties"></a>
 
-`Cluster`
-
+`Cluster`  <a name="cfn-ecs-expressgatewayservice-cluster"></a>
 The short name or full ARN of the cluster that hosts the Express service.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Cpu`
-
+`Cpu`  <a name="cfn-ecs-expressgatewayservice-cpu"></a>
 The CPU allocation for tasks in this service revision.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExecutionRoleArn`
-
+`ExecutionRoleArn`  <a name="cfn-ecs-expressgatewayservice-executionrolearn"></a>
 The ARN of the task execution role for the service revision.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HealthCheckPath`
-
+`HealthCheckPath`  <a name="cfn-ecs-expressgatewayservice-healthcheckpath"></a>
 The health check path for this service revision.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InfrastructureRoleArn`  <a name="cfn-ecs-expressgatewayservice-infrastructurerolearn"></a>
+The ARN of the infrastructure role that manages AWS resources for the Express service.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InfrastructureRoleArn`
-
-The ARN of the infrastructure role that manages AWS resources for the Express
-service.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Memory`
-
+`Memory`  <a name="cfn-ecs-expressgatewayservice-memory"></a>
 The memory allocation for tasks in this service revision.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkConfiguration`
-
+`NetworkConfiguration`  <a name="cfn-ecs-expressgatewayservice-networkconfiguration"></a>
 The network configuration for tasks in this service revision.
+*Required*: No
+*Type*: [ExpressGatewayServiceNetworkConfiguration](aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExpressGatewayServiceNetworkConfiguration](aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryContainer`
-
+`PrimaryContainer`  <a name="cfn-ecs-expressgatewayservice-primarycontainer"></a>
 The primary container configuration for this service revision.
+*Required*: No
+*Type*: [ExpressGatewayContainer](aws-properties-ecs-expressgatewayservice-expressgatewaycontainer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ExpressGatewayContainer](aws-properties-ecs-expressgatewayservice-expressgatewaycontainer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScalingTarget`
-
+`ScalingTarget`  <a name="cfn-ecs-expressgatewayservice-scalingtarget"></a>
 The auto-scaling configuration for this service revision.
+*Required*: No
+*Type*: [ExpressGatewayScalingTarget](aws-properties-ecs-expressgatewayservice-expressgatewayscalingtarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExpressGatewayScalingTarget](aws-properties-ecs-expressgatewayservice-expressgatewayscalingtarget.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceName`
-
+`ServiceName`  <a name="cfn-ecs-expressgatewayservice-servicename"></a>
 The name of the Express service.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ecs-expressgatewayservice-tags"></a>
 The metadata applied to the Express service.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ecs-expressgatewayservice-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`TaskDefinitionArn`  <a name="cfn-ecs-expressgatewayservice-taskdefinitionarn"></a>
+The ARN of the task definition used by this service revision. This is present for all Express services and reflects the task definition in use, whether managed by Amazon ECS or provided by the customer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Tag](aws-properties-ecs-expressgatewayservice-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TaskRoleArn`
-
+`TaskRoleArn`  <a name="cfn-ecs-expressgatewayservice-taskrolearn"></a>
 The ARN of the task role for the service revision.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ecs-expressgatewayservice-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ecs-expressgatewayservice-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ecs-expressgatewayservice-return-values-fn--getatt"></a>
 
-`ActiveConfigurations`
+####
+<a name="aws-resource-ecs-expressgatewayservice-return-values-fn--getatt-fn--getatt"></a>
 
+`ActiveConfigurations`  <a name="ActiveConfigurations-fn::getatt"></a>
 The list of active service configurations for the Express service.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The Unix timestamp for when the Express service was created.
 
-`ECSManagedResourceArns.AutoScaling.ApplicationAutoScalingPolicies`
-
+`ECSManagedResourceArns.AutoScaling.ApplicationAutoScalingPolicies`  <a name="ECSManagedResourceArns.AutoScaling.ApplicationAutoScalingPolicies-fn::getatt"></a>
 The list of Auto Scaling policy ARNs associated with the express service.
 
-`ECSManagedResourceArns.AutoScaling.ScalableTarget`
-
+`ECSManagedResourceArns.AutoScaling.ScalableTarget`  <a name="ECSManagedResourceArns.AutoScaling.ScalableTarget-fn::getatt"></a>
 The Auto Scaling Scalable Target ARN associated with the express service.
 
-`ECSManagedResourceArns.IngressPath.CertificateArn`
-
+`ECSManagedResourceArns.IngressPath.CertificateArn`  <a name="ECSManagedResourceArns.IngressPath.CertificateArn-fn::getatt"></a>
 The Certificate ARN associated with the express service.
 
-`ECSManagedResourceArns.IngressPath.ListenerArn`
-
+`ECSManagedResourceArns.IngressPath.ListenerArn`  <a name="ECSManagedResourceArns.IngressPath.ListenerArn-fn::getatt"></a>
 The ARN of the Load Balancer listener associated with the express service.
 
-`ECSManagedResourceArns.IngressPath.ListenerRuleArn`
-
+`ECSManagedResourceArns.IngressPath.ListenerRuleArn`  <a name="ECSManagedResourceArns.IngressPath.ListenerRuleArn-fn::getatt"></a>
 The ARN of the Load Balancer listener rule associated with the express service.
 
-`ECSManagedResourceArns.IngressPath.LoadBalancerArn`
-
+`ECSManagedResourceArns.IngressPath.LoadBalancerArn`  <a name="ECSManagedResourceArns.IngressPath.LoadBalancerArn-fn::getatt"></a>
 The ARN of the Load Balancer associated with the express service.
 
-`ECSManagedResourceArns.IngressPath.LoadBalancerSecurityGroups`
-
+`ECSManagedResourceArns.IngressPath.LoadBalancerSecurityGroups`  <a name="ECSManagedResourceArns.IngressPath.LoadBalancerSecurityGroups-fn::getatt"></a>
 The list of Load Balancer Security Group ARNs associated with the express service.
 
-`ECSManagedResourceArns.IngressPath.TargetGroupArns`
-
+`ECSManagedResourceArns.IngressPath.TargetGroupArns`  <a name="ECSManagedResourceArns.IngressPath.TargetGroupArns-fn::getatt"></a>
 The list of Target Group ARNs associated with the express service.
 
-`ECSManagedResourceArns.LogGroups`
-
+`ECSManagedResourceArns.LogGroups`  <a name="ECSManagedResourceArns.LogGroups-fn::getatt"></a>
 The list of Log Group ARNs associated with the express service.
 
-`ECSManagedResourceArns.MetricAlarms`
-
+`ECSManagedResourceArns.MetricAlarms`  <a name="ECSManagedResourceArns.MetricAlarms-fn::getatt"></a>
 The list of Metric Alarm ARNs associated with the express service.
 
-`ECSManagedResourceArns.ServiceSecurityGroups`
-
+`ECSManagedResourceArns.ServiceSecurityGroups`  <a name="ECSManagedResourceArns.ServiceSecurityGroups-fn::getatt"></a>
 The list of Security Group ARNs associated with the express service.
 
-`Endpoint`
-
+`Endpoint`  <a name="Endpoint-fn::getatt"></a>
 The Endpoint of the express service.
 
-`ServiceArn`
-
+`ServiceArn`  <a name="ServiceArn-fn::getatt"></a>
 The ARN that identifies the Express service.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The Unix timestamp for when the Express service was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Volume
-
-AutoScalingArns
 
 All content copied from https://docs.aws.amazon.com/.

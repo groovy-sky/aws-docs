@@ -2,53 +2,42 @@
 title: "AWS::MediaPackage::PackagingConfiguration DashEncryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration DashEncryption
+<a name="aws-properties-mediapackage-packagingconfiguration-dashencryption"></a>
 
 Holds encryption information so that access to the content can be controlled by a DRM solution.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packagingconfiguration-dashencryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packagingconfiguration-dashencryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "SpekeKeyProvider" : SpekeKeyProvider
+  "[SpekeKeyProvider](#cfn-mediapackage-packagingconfiguration-dashencryption-spekekeyprovider)" : {{SpekeKeyProvider}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packagingconfiguration-dashencryption-syntax.yaml"></a>
 
-```yaml
-
-  SpekeKeyProvider:
-    SpekeKeyProvider
-
+```
+  [SpekeKeyProvider](#cfn-mediapackage-packagingconfiguration-dashencryption-spekekeyprovider): {{
+    SpekeKeyProvider}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packagingconfiguration-dashencryption-properties"></a>
 
-`SpekeKeyProvider`
-
+`SpekeKeyProvider`  <a name="cfn-mediapackage-packagingconfiguration-dashencryption-spekekeyprovider"></a>
 Parameters for the SPEKE key provider.
-
-_Required_: Yes
-
-_Type_: [SpekeKeyProvider](aws-properties-mediapackage-packagingconfiguration-spekekeyprovider.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CmafPackage
-
-DashManifest
+*Required*: Yes
+*Type*: [SpekeKeyProvider](aws-properties-mediapackage-packagingconfiguration-spekekeyprovider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

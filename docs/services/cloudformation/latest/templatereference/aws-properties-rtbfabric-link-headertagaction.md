@@ -2,64 +2,49 @@
 title: "AWS::RTBFabric::Link HeaderTagAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link HeaderTagAction
+<a name="aws-properties-rtbfabric-link-headertagaction"></a>
 
 Describes the header tag for a bid action.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-link-headertagaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-link-headertagaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-rtbfabric-link-headertagaction-name)" : {{String}},
+  "[Value](#cfn-rtbfabric-link-headertagaction-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-link-headertagaction-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-rtbfabric-link-headertagaction-name): {{String}}
+  [Value](#cfn-rtbfabric-link-headertagaction-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-link-headertagaction-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-rtbfabric-link-headertagaction-name"></a>
 The name of the bid action.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-rtbfabric-link-headertagaction-value"></a>
 The value of the bid action.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterCriterion
-
-LinkApplicationLogSampling
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

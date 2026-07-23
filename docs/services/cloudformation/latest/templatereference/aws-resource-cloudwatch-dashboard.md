@@ -2,88 +2,81 @@
 title: "AWS::CloudWatch::Dashboard"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Dashboard
+<a name="aws-resource-cloudwatch-dashboard"></a>
 
-The `AWS::CloudWatch::Dashboard` resource specifies an Amazon CloudWatch dashboard. A dashboard is a
-customizable home page in the CloudWatch console that you can use to monitor your AWS resources in a single view.
+The `AWS::CloudWatch::Dashboard` resource specifies an Amazon CloudWatch dashboard. A dashboard is a customizable home page in the CloudWatch console that you can use to monitor your AWS resources in a single view.
 
 All dashboards in your account are global, not region-specific.
 
 ## Syntax
+<a name="aws-resource-cloudwatch-dashboard-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudwatch-dashboard-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudWatch::Dashboard",
   "Properties" : {
-      "DashboardBody" : String,
-      "DashboardName" : String
+      "[DashboardBody](#cfn-cloudwatch-dashboard-dashboardbody)" : {{String}},
+      "[DashboardName](#cfn-cloudwatch-dashboard-dashboardname)" : {{String}},
+      "[Tags](#cfn-cloudwatch-dashboard-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudwatch-dashboard-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudWatch::Dashboard
 Properties:
-  DashboardBody: String
-  DashboardName: String
-
+  [DashboardBody](#cfn-cloudwatch-dashboard-dashboardbody): {{String}}
+  [DashboardName](#cfn-cloudwatch-dashboard-dashboardname): {{String}}
+  [Tags](#cfn-cloudwatch-dashboard-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudwatch-dashboard-properties"></a>
 
-`DashboardBody`
+`DashboardBody`  <a name="cfn-cloudwatch-dashboard-dashboardbody"></a>
+The detailed information about the dashboard in JSON format, including the widgets to include and their location on the dashboard. This parameter is required.
+For more information about the syntax, see [Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The detailed information about the dashboard in JSON format, including the widgets to include and their location
-on the dashboard. This parameter is required.
-
-For more information about the syntax,
-see [Dashboard Body Structure and Syntax](../../../../reference/amazoncloudwatch/latest/apireference/cloudwatch-dashboard-body-structure.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DashboardName`
-
+`DashboardName`  <a name="cfn-cloudwatch-dashboard-dashboardname"></a>
 The name of the dashboard. The name must be between 1 and 255 characters. If you do not specify a name, one will be generated automatically.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Tags`  <a name="cfn-cloudwatch-dashboard-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudwatch-dashboard-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudwatch-dashboard-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudwatch-dashboard-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the value of `DashboardName`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## See also
-
-- [Amazon CloudWatch Template Snippets](../userguide/quickref-cloudwatch.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::CloudWatch::InsightRule
+<a name="aws-resource-cloudwatch-dashboard--seealso"></a>
++  [Amazon CloudWatch Template Snippets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-cloudwatch.html)
 
 All content copied from https://docs.aws.amazon.com/.

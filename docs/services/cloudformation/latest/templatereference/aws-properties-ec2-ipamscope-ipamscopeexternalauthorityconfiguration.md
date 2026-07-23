@@ -2,68 +2,52 @@
 title: "AWS::EC2::IPAMScope IpamScopeExternalAuthorityConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::IPAMScope IpamScopeExternalAuthorityConfiguration
+<a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration"></a>
 
 The configuration that links an Amazon VPC IPAM scope to an external authority system. It specifies the type of external system and the external resource identifier that identifies your account or instance in that system.
 
 In IPAM, an external authority is a third-party IP address management system that provides CIDR blocks when you provision address space for top-level IPAM pools. This allows you to use your existing IP management system to control which address ranges are allocated to AWS while using Amazon VPC IPAM to manage subnets within those ranges.
 
 ## Syntax
+<a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExternalResourceIdentifier" : String,
-  "IpamScopeExternalAuthorityType" : String
+  "[ExternalResourceIdentifier](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-externalresourceidentifier)" : {{String}},
+  "[IpamScopeExternalAuthorityType](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-ipamscopeexternalauthoritytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ExternalResourceIdentifier: String
-  IpamScopeExternalAuthorityType: String
-
+```
+  [ExternalResourceIdentifier](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-externalresourceidentifier): {{String}}
+  [IpamScopeExternalAuthorityType](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-ipamscopeexternalauthoritytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-properties"></a>
 
-`ExternalResourceIdentifier`
-
+`ExternalResourceIdentifier`  <a name="cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-externalresourceidentifier"></a>
 The identifier for the external resource managing this scope. For Infoblox integrations, this is the Infoblox resource identifier in the format `<version>.identity.account.<entity_realm>.<entity_id>`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpamScopeExternalAuthorityType`
-
+`IpamScopeExternalAuthorityType`  <a name="cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-ipamscopeexternalauthoritytype"></a>
 The type of external authority managing this scope. Currently supports `Infoblox` for integration with Infoblox Universal DDI.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `infoblox`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::IPAMScope
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `infoblox`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

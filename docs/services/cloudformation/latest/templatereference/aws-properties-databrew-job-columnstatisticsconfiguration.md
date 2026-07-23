@@ -2,71 +2,52 @@
 title: "AWS::DataBrew::Job ColumnStatisticsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Job ColumnStatisticsConfiguration
+<a name="aws-properties-databrew-job-columnstatisticsconfiguration"></a>
 
-Configuration for column evaluations for a profile job. ColumnStatisticsConfiguration can be used to select
-evaluations and override parameters of evaluations for particular columns.
+Configuration for column evaluations for a profile job. ColumnStatisticsConfiguration can be used to select evaluations and override parameters of evaluations for particular columns.
 
 ## Syntax
+<a name="aws-properties-databrew-job-columnstatisticsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-job-columnstatisticsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Selectors" : [ ColumnSelector, ... ],
-  "Statistics" : StatisticsConfiguration
+  "[Selectors](#cfn-databrew-job-columnstatisticsconfiguration-selectors)" : {{[ ColumnSelector, ... ]}},
+  "[Statistics](#cfn-databrew-job-columnstatisticsconfiguration-statistics)" : {{StatisticsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-job-columnstatisticsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Selectors:
-    - ColumnSelector
-  Statistics:
-    StatisticsConfiguration
-
+```
+  [Selectors](#cfn-databrew-job-columnstatisticsconfiguration-selectors): {{
+    - ColumnSelector}}
+  [Statistics](#cfn-databrew-job-columnstatisticsconfiguration-statistics): {{
+    StatisticsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-job-columnstatisticsconfiguration-properties"></a>
 
-`Selectors`
+`Selectors`  <a name="cfn-databrew-job-columnstatisticsconfiguration-selectors"></a>
+List of column selectors. Selectors can be used to select columns from the dataset. When selectors are undefined, configuration will be applied to all supported columns.
+*Required*: No
+*Type*: Array of [ColumnSelector](aws-properties-databrew-job-columnselector.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-List of column selectors. Selectors can be used to select columns from the dataset.
-When selectors are undefined, configuration will be applied to all supported columns.
-
-_Required_: No
-
-_Type_: Array of [ColumnSelector](aws-properties-databrew-job-columnselector.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Statistics`
-
-Configuration for evaluations. Statistics can be used to select evaluations and override
-parameters of evaluations.
-
-_Required_: Yes
-
-_Type_: [StatisticsConfiguration](aws-properties-databrew-job-statisticsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnSelector
-
-CsvOutputOptions
+`Statistics`  <a name="cfn-databrew-job-columnstatisticsconfiguration-statistics"></a>
+Configuration for evaluations. Statistics can be used to select evaluations and override parameters of evaluations.
+*Required*: Yes
+*Type*: [StatisticsConfiguration](aws-properties-databrew-job-statisticsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

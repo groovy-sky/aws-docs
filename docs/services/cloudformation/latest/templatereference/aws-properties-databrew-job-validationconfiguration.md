@@ -2,75 +2,52 @@
 title: "AWS::DataBrew::Job ValidationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Job ValidationConfiguration
+<a name="aws-properties-databrew-job-validationconfiguration"></a>
 
-Configuration for data quality validation. Used to select the Rulesets and Validation Mode
-to be used in the profile job. When ValidationConfiguration is null, the profile
-job will run without data quality validation.
+Configuration for data quality validation. Used to select the Rulesets and Validation Mode to be used in the profile job. When ValidationConfiguration is null, the profile job will run without data quality validation.
 
 ## Syntax
+<a name="aws-properties-databrew-job-validationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-job-validationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "RulesetArn" : String,
-  "ValidationMode" : String
+  "[RulesetArn](#cfn-databrew-job-validationconfiguration-rulesetarn)" : {{String}},
+  "[ValidationMode](#cfn-databrew-job-validationconfiguration-validationmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-job-validationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  RulesetArn: String
-  ValidationMode: String
-
+```
+  [RulesetArn](#cfn-databrew-job-validationconfiguration-rulesetarn): {{String}}
+  [ValidationMode](#cfn-databrew-job-validationconfiguration-validationmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-job-validationconfiguration-properties"></a>
 
-`RulesetArn`
+`RulesetArn`  <a name="cfn-databrew-job-validationconfiguration-rulesetarn"></a>
+The Amazon Resource Name (ARN) for the ruleset to be validated in the profile job. The TargetArn of the selected ruleset should be the same as the Amazon Resource Name (ARN) of the dataset that is associated with the profile job.
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) for the ruleset to be validated in the profile job.
-The TargetArn of the selected ruleset should be the same as the Amazon Resource Name (ARN) of
-the dataset that is associated with the profile job.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValidationMode`
-
-Mode of data quality validation. Default mode is “CHECK\_ALL” which verifies all rules
-defined in the selected ruleset.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CHECK_ALL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::DataBrew::Project
+`ValidationMode`  <a name="cfn-databrew-job-validationconfiguration-validationmode"></a>
+Mode of data quality validation. Default mode is “CHECK\_ALL” which verifies all rules defined in the selected ruleset.
+*Required*: No
+*Type*: String
+*Allowed values*: `CHECK_ALL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,96 +2,70 @@
 title: "AWS::QuickSight::Analysis GeospatialCategoricalColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialCategoricalColor
+<a name="aws-properties-quicksight-analysis-geospatialcategoricalcolor"></a>
 
 The definition for a categorical color.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialcategoricalcolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialcategoricalcolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryDataColors" : [ GeospatialCategoricalDataColor, ... ],
-  "DefaultOpacity" : Number,
-  "NullDataSettings" : GeospatialNullDataSettings,
-  "NullDataVisibility" : String
+  "[CategoryDataColors](#cfn-quicksight-analysis-geospatialcategoricalcolor-categorydatacolors)" : {{[ GeospatialCategoricalDataColor, ... ]}},
+  "[DefaultOpacity](#cfn-quicksight-analysis-geospatialcategoricalcolor-defaultopacity)" : {{Number}},
+  "[NullDataSettings](#cfn-quicksight-analysis-geospatialcategoricalcolor-nulldatasettings)" : {{GeospatialNullDataSettings}},
+  "[NullDataVisibility](#cfn-quicksight-analysis-geospatialcategoricalcolor-nulldatavisibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialcategoricalcolor-syntax.yaml"></a>
 
-```yaml
-
-  CategoryDataColors:
-    - GeospatialCategoricalDataColor
-  DefaultOpacity: Number
-  NullDataSettings:
-    GeospatialNullDataSettings
-  NullDataVisibility: String
-
+```
+  [CategoryDataColors](#cfn-quicksight-analysis-geospatialcategoricalcolor-categorydatacolors): {{
+    - GeospatialCategoricalDataColor}}
+  [DefaultOpacity](#cfn-quicksight-analysis-geospatialcategoricalcolor-defaultopacity): {{Number}}
+  [NullDataSettings](#cfn-quicksight-analysis-geospatialcategoricalcolor-nulldatasettings): {{
+    GeospatialNullDataSettings}}
+  [NullDataVisibility](#cfn-quicksight-analysis-geospatialcategoricalcolor-nulldatavisibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialcategoricalcolor-properties"></a>
 
-`CategoryDataColors`
-
+`CategoryDataColors`  <a name="cfn-quicksight-analysis-geospatialcategoricalcolor-categorydatacolors"></a>
 A list of categorical data colors for each category.
+*Required*: Yes
+*Type*: Array of [GeospatialCategoricalDataColor](aws-properties-quicksight-analysis-geospatialcategoricaldatacolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [GeospatialCategoricalDataColor](aws-properties-quicksight-analysis-geospatialcategoricaldatacolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultOpacity`
-
+`DefaultOpacity`  <a name="cfn-quicksight-analysis-geospatialcategoricalcolor-defaultopacity"></a>
 The default opacity of a categorical color.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullDataSettings`
-
+`NullDataSettings`  <a name="cfn-quicksight-analysis-geospatialcategoricalcolor-nulldatasettings"></a>
 The null data visualization settings.
+*Required*: No
+*Type*: [GeospatialNullDataSettings](aws-properties-quicksight-analysis-geospatialnulldatasettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialNullDataSettings](aws-properties-quicksight-analysis-geospatialnulldatasettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullDataVisibility`
-
+`NullDataVisibility`  <a name="cfn-quicksight-analysis-geospatialcategoricalcolor-nulldatavisibility"></a>
 The state of visibility for null data.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GaugeChartVisual
-
-GeospatialCategoricalDataColor
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

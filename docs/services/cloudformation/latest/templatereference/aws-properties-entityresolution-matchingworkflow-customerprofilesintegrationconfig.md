@@ -2,68 +2,51 @@
 title: "AWS::EntityResolution::MatchingWorkflow CustomerProfilesIntegrationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow CustomerProfilesIntegrationConfig
+<a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig"></a>
 
-The `CustomerProfilesIntegrationConfig` property type specifies Property description not available. for an [AWS::EntityResolution::MatchingWorkflow](aws-resource-entityresolution-matchingworkflow.md).
+Specifies the configuration for integrating with Customer Profiles. This configuration enables AWS Entity Resolution to send matched output directly to Customer Profiles instead of Amazon S3, creating a unified customer view by automatically updating customer profiles based on match clusters.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DomainArn" : String,
-  "ObjectTypeArn" : String
+  "[DomainArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-domainarn)" : {{String}},
+  "[ObjectTypeArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-objecttypearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig-syntax.yaml"></a>
 
-```yaml
-
-  DomainArn: String
-  ObjectTypeArn: String
-
+```
+  [DomainArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-domainarn): {{String}}
+  [ObjectTypeArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-objecttypearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig-properties"></a>
 
-`DomainArn`
+`DomainArn`  <a name="cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-domainarn"></a>
+The Amazon Resource Name (ARN) of the Customer Profiles domain where the matched output will be sent.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn):profile:[a-z]{2}-[a-z]{1,10}-[0-9]:[0-9]{12}:(domains/[a-zA-Z_0-9-]{1,255})$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn):profile:[a-z]{2}-[a-z]{1,10}-[0-9]:[0-9]{12}:(domains/[a-zA-Z_0-9-]{1,255})$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObjectTypeArn`
-
-Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn):profile:[a-z]{2}-[a-z]{1,10}-[0-9]:[0-9]{12}:(domains/[a-zA-Z_0-9-]{1,255}/object-types/[a-zA-Z_0-9-]{1,255})$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EntityResolution::MatchingWorkflow
-
-IncrementalRunConfig
+`ObjectTypeArn`  <a name="cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-objecttypearn"></a>
+The Amazon Resource Name (ARN) of the Customer Profiles object type that defines the structure for the matched customer data.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn):profile:[a-z]{2}-[a-z]{1,10}-[0-9]:[0-9]{12}:(domains/[a-zA-Z_0-9-]{1,255}/object-types/[a-zA-Z_0-9-]{1,255})$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

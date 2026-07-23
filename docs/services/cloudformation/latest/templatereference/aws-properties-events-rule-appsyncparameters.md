@@ -2,60 +2,44 @@
 title: "AWS::Events::Rule AppSyncParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule AppSyncParameters
+<a name="aws-properties-events-rule-appsyncparameters"></a>
 
-Contains the GraphQL operation to be parsed and executed, if the event target is an
-AWS AppSync API.
+Contains the GraphQL operation to be parsed and executed, if the event target is an AWS AppSync API.
 
 ## Syntax
+<a name="aws-properties-events-rule-appsyncparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-rule-appsyncparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "GraphQLOperation" : String
+  "[GraphQLOperation](#cfn-events-rule-appsyncparameters-graphqloperation)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-rule-appsyncparameters-syntax.yaml"></a>
 
-```yaml
-
-  GraphQLOperation: String
-
+```
+  [GraphQLOperation](#cfn-events-rule-appsyncparameters-graphqloperation): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-events-rule-appsyncparameters-properties"></a>
 
-`GraphQLOperation`
-
-The GraphQL operation; that is, the query, mutation, or subscription to be parsed and
-executed by the GraphQL service.
-
-For more information, see [Operations](../../../appsync/latest/devguide/graphql-architecture.md#graphql-operations) in the _AWS AppSync User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1048576`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Events::Rule
-
-AwsVpcConfiguration
+`GraphQLOperation`  <a name="cfn-events-rule-appsyncparameters-graphqloperation"></a>
+The GraphQL operation; that is, the query, mutation, or subscription to be parsed and executed by the GraphQL service.
+For more information, see [Operations](https://docs.aws.amazon.com/appsync/latest/devguide/graphql-architecture.html#graphql-operations) in the *AWS AppSync User Guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1048576`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

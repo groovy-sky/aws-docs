@@ -2,135 +2,93 @@
 title: "AWS::Timestream::ScheduledQuery TimestreamConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::ScheduledQuery TimestreamConfiguration
+<a name="aws-properties-timestream-scheduledquery-timestreamconfiguration"></a>
 
-Configuration to write data into Timestream database and table. This configuration allows
-the user to map the query result select columns into the destination table columns.
+ Configuration to write data into Timestream database and table. This configuration allows the user to map the query result select columns into the destination table columns.
 
 ## Syntax
+<a name="aws-properties-timestream-scheduledquery-timestreamconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-scheduledquery-timestreamconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatabaseName" : String,
-  "DimensionMappings" : [ DimensionMapping, ... ],
-  "MeasureNameColumn" : String,
-  "MixedMeasureMappings" : [ MixedMeasureMapping, ... ],
-  "MultiMeasureMappings" : MultiMeasureMappings,
-  "TableName" : String,
-  "TimeColumn" : String
+  "[DatabaseName](#cfn-timestream-scheduledquery-timestreamconfiguration-databasename)" : {{String}},
+  "[DimensionMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-dimensionmappings)" : {{[ DimensionMapping, ... ]}},
+  "[MeasureNameColumn](#cfn-timestream-scheduledquery-timestreamconfiguration-measurenamecolumn)" : {{String}},
+  "[MixedMeasureMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-mixedmeasuremappings)" : {{[ MixedMeasureMapping, ... ]}},
+  "[MultiMeasureMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-multimeasuremappings)" : {{MultiMeasureMappings}},
+  "[TableName](#cfn-timestream-scheduledquery-timestreamconfiguration-tablename)" : {{String}},
+  "[TimeColumn](#cfn-timestream-scheduledquery-timestreamconfiguration-timecolumn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-scheduledquery-timestreamconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DatabaseName: String
-  DimensionMappings:
-    - DimensionMapping
-  MeasureNameColumn: String
-  MixedMeasureMappings:
-    - MixedMeasureMapping
-  MultiMeasureMappings:
-    MultiMeasureMappings
-  TableName: String
-  TimeColumn: String
-
+```
+  [DatabaseName](#cfn-timestream-scheduledquery-timestreamconfiguration-databasename): {{String}}
+  [DimensionMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-dimensionmappings): {{
+    - DimensionMapping}}
+  [MeasureNameColumn](#cfn-timestream-scheduledquery-timestreamconfiguration-measurenamecolumn): {{String}}
+  [MixedMeasureMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-mixedmeasuremappings): {{
+    - MixedMeasureMapping}}
+  [MultiMeasureMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-multimeasuremappings): {{
+    MultiMeasureMappings}}
+  [TableName](#cfn-timestream-scheduledquery-timestreamconfiguration-tablename): {{String}}
+  [TimeColumn](#cfn-timestream-scheduledquery-timestreamconfiguration-timecolumn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-scheduledquery-timestreamconfiguration-properties"></a>
 
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-databasename"></a>
 Name of Timestream database to which the query result will be written.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`DimensionMappings`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-dimensionmappings"></a>
+ This is to allow mapping column(s) from the query result to the dimension in the destination table.
+*Required*: Yes
+*Type*: Array of [DimensionMapping](aws-properties-timestream-scheduledquery-dimensionmapping.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`MeasureNameColumn`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-measurenamecolumn"></a>
+Name of the measure column. Also see `MultiMeasureMappings` and `MixedMeasureMappings` for how measure name properties on those relate to `MeasureNameColumn`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DimensionMappings`
-
-This is to allow mapping column(s) from the query result to the dimension in the
-destination table.
-
-_Required_: Yes
-
-_Type_: Array of [DimensionMapping](aws-properties-timestream-scheduledquery-dimensionmapping.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MeasureNameColumn`
-
-Name of the measure column. Also see `MultiMeasureMappings` and
-`MixedMeasureMappings` for how measure name properties on those relate to
-`MeasureNameColumn`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MixedMeasureMappings`
-
+`MixedMeasureMappings`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-mixedmeasuremappings"></a>
 Specifies how to map measures to multi-measure records.
+*Required*: No
+*Type*: Array of [MixedMeasureMapping](aws-properties-timestream-scheduledquery-mixedmeasuremapping.md)
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [MixedMeasureMapping](aws-properties-timestream-scheduledquery-mixedmeasuremapping.md)
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MultiMeasureMappings`
-
+`MultiMeasureMappings`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-multimeasuremappings"></a>
 Multi-measure mappings.
+*Required*: No
+*Type*: [MultiMeasureMappings](aws-properties-timestream-scheduledquery-multimeasuremappings.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`TableName`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-tablename"></a>
+Name of Timestream table that the query result will be written to. The table should be within the same database that is provided in Timestream configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [MultiMeasureMappings](aws-properties-timestream-scheduledquery-multimeasuremappings.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TableName`
-
-Name of Timestream table that the query result will be written to. The table should be
-within the same database that is provided in Timestream configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TimeColumn`
-
-Column from query result that should be used as the time column in destination table.
-Column type for this should be TIMESTAMP.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetConfiguration
-
-AWS::Timestream::Table
+`TimeColumn`  <a name="cfn-timestream-scheduledquery-timestreamconfiguration-timecolumn"></a>
+Column from query result that should be used as the time column in destination table. Column type for this should be TIMESTAMP.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

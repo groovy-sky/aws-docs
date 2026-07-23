@@ -2,190 +2,141 @@
 title: "AWS::SecurityLake::Subscriber"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::Subscriber
+<a name="aws-resource-securitylake-subscriber"></a>
 
-Creates a subscriber for accounts that are already enabled in Amazon Security Lake. You can
-create a subscriber with access to data in the current AWS Region.
+Creates a subscriber for accounts that are already enabled in Amazon Security Lake. You can create a subscriber with access to data in the current AWS Region.
 
 ## Syntax
+<a name="aws-resource-securitylake-subscriber-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securitylake-subscriber-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityLake::Subscriber",
   "Properties" : {
-      "AccessTypes" : [ String, ... ],
-      "DataLakeArn" : String,
-      "Sources" : [ Source, ... ],
-      "SubscriberDescription" : String,
-      "SubscriberIdentity" : SubscriberIdentity,
-      "SubscriberName" : String,
-      "Tags" : [ Tag, ... ]
+      "[AccessTypes](#cfn-securitylake-subscriber-accesstypes)" : {{[ String, ... ]}},
+      "[DataLakeArn](#cfn-securitylake-subscriber-datalakearn)" : {{String}},
+      "[Sources](#cfn-securitylake-subscriber-sources)" : {{[ Source, ... ]}},
+      "[SubscriberDescription](#cfn-securitylake-subscriber-subscriberdescription)" : {{String}},
+      "[SubscriberIdentity](#cfn-securitylake-subscriber-subscriberidentity)" : {{SubscriberIdentity}},
+      "[SubscriberName](#cfn-securitylake-subscriber-subscribername)" : {{String}},
+      "[Tags](#cfn-securitylake-subscriber-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securitylake-subscriber-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityLake::Subscriber
 Properties:
-  AccessTypes:
-    - String
-  DataLakeArn: String
-  Sources:
-    - Source
-  SubscriberDescription: String
-  SubscriberIdentity:
-    SubscriberIdentity
-  SubscriberName: String
-  Tags:
-    - Tag
-
+  [AccessTypes](#cfn-securitylake-subscriber-accesstypes): {{
+    - String}}
+  [DataLakeArn](#cfn-securitylake-subscriber-datalakearn): {{String}}
+  [Sources](#cfn-securitylake-subscriber-sources): {{
+    - Source}}
+  [SubscriberDescription](#cfn-securitylake-subscriber-subscriberdescription): {{String}}
+  [SubscriberIdentity](#cfn-securitylake-subscriber-subscriberidentity): {{
+    SubscriberIdentity}}
+  [SubscriberName](#cfn-securitylake-subscriber-subscribername): {{String}}
+  [Tags](#cfn-securitylake-subscriber-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-securitylake-subscriber-properties"></a>
 
-`AccessTypes`
+`AccessTypes`  <a name="cfn-securitylake-subscriber-accesstypes"></a>
+You can choose to notify subscribers of new objects with an Amazon Simple Queue Service (Amazon SQS) queue or through messaging to an HTTPS endpoint provided by the subscriber.
+ Subscribers can consume data by directly querying AWS Lake Formation tables in your Amazon S3 bucket through services like Amazon Athena. This subscription type is defined as `LAKEFORMATION`.
+*Required*: Yes
+*Type*: Array of String
+*Allowed values*: `LAKEFORMATION | S3`
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You can choose to notify subscribers of new objects with an Amazon Simple Queue Service
-(Amazon SQS) queue or through messaging to an HTTPS endpoint provided by the
-subscriber.
-
-Subscribers can consume data by directly querying AWS Lake Formation tables in your
-Amazon S3 bucket through services like Amazon Athena. This subscription
-type is defined as `LAKEFORMATION`.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Allowed values_: `LAKEFORMATION | S3`
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLakeArn`
-
+`DataLakeArn`  <a name="cfn-securitylake-subscriber-datalakearn"></a>
 The Amazon Resource Name (ARN) used to create the data lake.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Sources`  <a name="cfn-securitylake-subscriber-sources"></a>
+Amazon Security Lake supports log and event collection for natively supported AWS services. For more information, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com//security-lake/latest/userguide/source-management.html).
+*Required*: Yes
+*Type*: Array of [Source](aws-properties-securitylake-subscriber-source.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`SubscriberDescription`  <a name="cfn-securitylake-subscriber-subscriberdescription"></a>
+The subscriber descriptions for a subscriber account. The description for a subscriber includes `subscriberName`, `accountID`, `externalID`, and `subscriberId`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Sources`
-
-Amazon Security Lake supports log and event collection for natively supported AWS services. For more information, see the [Amazon Security Lake User Guide](../../../security-lake/latest/userguide/source-management.md).
-
-_Required_: Yes
-
-_Type_: Array of [Source](aws-properties-securitylake-subscriber-source.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubscriberDescription`
-
-The subscriber descriptions for a subscriber account. The description for a subscriber
-includes `subscriberName`, `accountID`, `externalID`, and
-`subscriberId`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubscriberIdentity`
-
+`SubscriberIdentity`  <a name="cfn-securitylake-subscriber-subscriberidentity"></a>
 The AWS identity used to access your data.
+*Required*: Yes
+*Type*: [SubscriberIdentity](aws-properties-securitylake-subscriber-subscriberidentity.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SubscriberIdentity](aws-properties-securitylake-subscriber-subscriberidentity.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubscriberName`
-
+`SubscriberName`  <a name="cfn-securitylake-subscriber-subscribername"></a>
 The name of your Amazon Security Lake subscriber account.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\\\w\s\-_:/,.@=+]*$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\\\w\s\-_:/,.@=+]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-securitylake-subscriber-tags"></a>
 An array of objects, one for each tag to associate with the subscriber. For each tag, you must specify both a tag key and a tag value. A tag value cannot be null, but it can be an empty string.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-securitylake-subscriber-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-securitylake-subscriber-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-securitylake-subscriber-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securitylake-subscriber-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `ref` function, `ref` returns the `Subscriber` name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-securitylake-subscriber-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ResourceShareArn`
+####
+<a name="aws-resource-securitylake-subscriber-return-values-fn--getatt-fn--getatt"></a>
 
+`ResourceShareArn`  <a name="ResourceShareArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Amazon Security Lake subscriber.
 
-`ResourceShareName`
-
+`ResourceShareName`  <a name="ResourceShareName-fn::getatt"></a>
 The ARN name of the Amazon Security Lake subscriber.
 
-`S3BucketArn`
-
+`S3BucketArn`  <a name="S3BucketArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the S3 bucket.
 
-`SubscriberArn`
-
+`SubscriberArn`  <a name="SubscriberArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Security Lake subscriber.
 
-`SubscriberRoleArn`
-
+`SubscriberRoleArn`  <a name="SubscriberRoleArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the role used to create the Security Lake subscriber.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Transitions
-
-AwsLogSource
 
 All content copied from https://docs.aws.amazon.com/.

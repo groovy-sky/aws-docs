@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Dashboard ColumnHierarchy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ColumnHierarchy
+<a name="aws-properties-quicksight-dashboard-columnhierarchy"></a>
 
 The option that determines the hierarchy of the fields for a visual element.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-columnhierarchy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-columnhierarchy-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateTimeHierarchy" : DateTimeHierarchy,
-  "ExplicitHierarchy" : ExplicitHierarchy,
-  "PredefinedHierarchy" : PredefinedHierarchy
+  "[DateTimeHierarchy](#cfn-quicksight-dashboard-columnhierarchy-datetimehierarchy)" : {{DateTimeHierarchy}},
+  "[ExplicitHierarchy](#cfn-quicksight-dashboard-columnhierarchy-explicithierarchy)" : {{ExplicitHierarchy}},
+  "[PredefinedHierarchy](#cfn-quicksight-dashboard-columnhierarchy-predefinedhierarchy)" : {{PredefinedHierarchy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-columnhierarchy-syntax.yaml"></a>
 
-```yaml
-
-  DateTimeHierarchy:
-    DateTimeHierarchy
-  ExplicitHierarchy:
-    ExplicitHierarchy
-  PredefinedHierarchy:
-    PredefinedHierarchy
-
+```
+  [DateTimeHierarchy](#cfn-quicksight-dashboard-columnhierarchy-datetimehierarchy): {{
+    DateTimeHierarchy}}
+  [ExplicitHierarchy](#cfn-quicksight-dashboard-columnhierarchy-explicithierarchy): {{
+    ExplicitHierarchy}}
+  [PredefinedHierarchy](#cfn-quicksight-dashboard-columnhierarchy-predefinedhierarchy): {{
+    PredefinedHierarchy}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-columnhierarchy-properties"></a>
 
-`DateTimeHierarchy`
-
+`DateTimeHierarchy`  <a name="cfn-quicksight-dashboard-columnhierarchy-datetimehierarchy"></a>
 The option that determines the hierarchy of any `DateTime` fields.
+*Required*: No
+*Type*: [DateTimeHierarchy](aws-properties-quicksight-dashboard-datetimehierarchy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimeHierarchy](aws-properties-quicksight-dashboard-datetimehierarchy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExplicitHierarchy`
-
+`ExplicitHierarchy`  <a name="cfn-quicksight-dashboard-columnhierarchy-explicithierarchy"></a>
 The option that determines the hierarchy of the fields that are built within a visual's field wells. These fields can't be duplicated to other visuals.
+*Required*: No
+*Type*: [ExplicitHierarchy](aws-properties-quicksight-dashboard-explicithierarchy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExplicitHierarchy](aws-properties-quicksight-dashboard-explicithierarchy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PredefinedHierarchy`
-
+`PredefinedHierarchy`  <a name="cfn-quicksight-dashboard-columnhierarchy-predefinedhierarchy"></a>
 The option that determines the hierarchy of the fields that are defined during data preparation. These fields are available to use in any analysis that uses the data source.
-
-_Required_: No
-
-_Type_: [PredefinedHierarchy](aws-properties-quicksight-dashboard-predefinedhierarchy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnConfiguration
-
-ColumnIdentifier
+*Required*: No
+*Type*: [PredefinedHierarchy](aws-properties-quicksight-dashboard-predefinedhierarchy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

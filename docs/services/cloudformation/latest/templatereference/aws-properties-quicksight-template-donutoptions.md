@@ -2,74 +2,55 @@
 title: "AWS::QuickSight::Template DonutOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DonutOptions
+<a name="aws-properties-quicksight-template-donutoptions"></a>
 
 The options for configuring a donut chart or pie chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-donutoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-donutoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArcOptions" : ArcOptions,
-  "DonutCenterOptions" : DonutCenterOptions
+  "[ArcOptions](#cfn-quicksight-template-donutoptions-arcoptions)" : {{ArcOptions}},
+  "[DonutCenterOptions](#cfn-quicksight-template-donutoptions-donutcenteroptions)" : {{DonutCenterOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-donutoptions-syntax.yaml"></a>
 
-```yaml
-
-  ArcOptions:
-    ArcOptions
-  DonutCenterOptions:
-    DonutCenterOptions
-
+```
+  [ArcOptions](#cfn-quicksight-template-donutoptions-arcoptions): {{
+    ArcOptions}}
+  [DonutCenterOptions](#cfn-quicksight-template-donutoptions-donutcenteroptions): {{
+    DonutCenterOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-donutoptions-properties"></a>
 
-`ArcOptions`
-
+`ArcOptions`  <a name="cfn-quicksight-template-donutoptions-arcoptions"></a>
 The option for define the arc of the chart shape. Valid values are as follows:
++ `WHOLE` - A pie chart
++ `SMALL`- A small-sized donut chart
++ `MEDIUM`- A medium-sized donut chart
++ `LARGE`- A large-sized donut chart
+*Required*: No
+*Type*: [ArcOptions](aws-properties-quicksight-template-arcoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `WHOLE` \- A pie chart
-
-- `SMALL`\- A small-sized donut chart
-
-- `MEDIUM`\- A medium-sized donut chart
-
-- `LARGE`\- A large-sized donut chart
-
-_Required_: No
-
-_Type_: [ArcOptions](aws-properties-quicksight-template-arcoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DonutCenterOptions`
-
+`DonutCenterOptions`  <a name="cfn-quicksight-template-donutoptions-donutcenteroptions"></a>
 The label options of the label that is displayed in the center of a donut chart. This option isn't available for pie charts.
-
-_Required_: No
-
-_Type_: [DonutCenterOptions](aws-properties-quicksight-template-donutcenteroptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DonutCenterOptions
-
-DrillDownFilter
+*Required*: No
+*Type*: [DonutCenterOptions](aws-properties-quicksight-template-donutcenteroptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

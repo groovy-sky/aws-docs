@@ -2,210 +2,165 @@
 title: "AWS::EC2::VPCCidrBlock"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPCCidrBlock
+<a name="aws-resource-ec2-vpccidrblock"></a>
 
 Associates a CIDR block with your VPC.
 
-A VPC must have an associated IPv4 CIDR block. You can optionally associate additional IPv4 CIDR blocks with a VPC.
-You can optionally associate an IPv6 CIDR block with a VPC. You can request an Amazon-provided
-IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address
-pool that you provisioned through bring your own IP addresses (BYOIP).
+A VPC must have an associated IPv4 CIDR block. You can optionally associate additional IPv4 CIDR blocks with a VPC. You can optionally associate an IPv6 CIDR block with a VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP).
 
-For more information, see [VPC CIDR blocks](../../../vpc/latest/userguide/vpc-cidr-blocks.md)
-in the _Amazon VPC User Guide_.
+For more information, see [VPC CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html) in the *Amazon VPC User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-vpccidrblock-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpccidrblock-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPCCidrBlock",
   "Properties" : {
-      "AmazonProvidedIpv6CidrBlock" : Boolean,
-      "CidrBlock" : String,
-      "Ipv4IpamPoolId" : String,
-      "Ipv4NetmaskLength" : Integer,
-      "Ipv6CidrBlock" : String,
-      "Ipv6CidrBlockNetworkBorderGroup" : String,
-      "Ipv6IpamPoolId" : String,
-      "Ipv6NetmaskLength" : Integer,
-      "Ipv6Pool" : String,
-      "VpcId" : String
+      "[AmazonProvidedIpv6CidrBlock](#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock)" : {{Boolean}},
+      "[CidrBlock](#cfn-ec2-vpccidrblock-cidrblock)" : {{String}},
+      "[Ipv4IpamPoolId](#cfn-ec2-vpccidrblock-ipv4ipampoolid)" : {{String}},
+      "[Ipv4NetmaskLength](#cfn-ec2-vpccidrblock-ipv4netmasklength)" : {{Integer}},
+      "[Ipv6CidrBlock](#cfn-ec2-vpccidrblock-ipv6cidrblock)" : {{String}},
+      "[Ipv6CidrBlockNetworkBorderGroup](#cfn-ec2-vpccidrblock-ipv6cidrblocknetworkbordergroup)" : {{String}},
+      "[Ipv6IpamPoolId](#cfn-ec2-vpccidrblock-ipv6ipampoolid)" : {{String}},
+      "[Ipv6NetmaskLength](#cfn-ec2-vpccidrblock-ipv6netmasklength)" : {{Integer}},
+      "[Ipv6Pool](#cfn-ec2-vpccidrblock-ipv6pool)" : {{String}},
+      "[VpcId](#cfn-ec2-vpccidrblock-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpccidrblock-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPCCidrBlock
 Properties:
-  AmazonProvidedIpv6CidrBlock: Boolean
-  CidrBlock: String
-  Ipv4IpamPoolId: String
-  Ipv4NetmaskLength: Integer
-  Ipv6CidrBlock: String
-  Ipv6CidrBlockNetworkBorderGroup: String
-  Ipv6IpamPoolId: String
-  Ipv6NetmaskLength: Integer
-  Ipv6Pool: String
-  VpcId: String
-
+  [AmazonProvidedIpv6CidrBlock](#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock): {{Boolean}}
+  [CidrBlock](#cfn-ec2-vpccidrblock-cidrblock): {{String}}
+  [Ipv4IpamPoolId](#cfn-ec2-vpccidrblock-ipv4ipampoolid): {{String}}
+  [Ipv4NetmaskLength](#cfn-ec2-vpccidrblock-ipv4netmasklength): {{Integer}}
+  [Ipv6CidrBlock](#cfn-ec2-vpccidrblock-ipv6cidrblock): {{String}}
+  [Ipv6CidrBlockNetworkBorderGroup](#cfn-ec2-vpccidrblock-ipv6cidrblocknetworkbordergroup): {{String}}
+  [Ipv6IpamPoolId](#cfn-ec2-vpccidrblock-ipv6ipampoolid): {{String}}
+  [Ipv6NetmaskLength](#cfn-ec2-vpccidrblock-ipv6netmasklength): {{Integer}}
+  [Ipv6Pool](#cfn-ec2-vpccidrblock-ipv6pool): {{String}}
+  [VpcId](#cfn-ec2-vpccidrblock-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpccidrblock-properties"></a>
 
-`AmazonProvidedIpv6CidrBlock`
+`AmazonProvidedIpv6CidrBlock`  <a name="cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock"></a>
+Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IPv6 addresses or the size of the CIDR block.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You
-cannot specify the range of IPv6 addresses or the size of the CIDR block.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CidrBlock`
-
+`CidrBlock`  <a name="cfn-ec2-vpccidrblock-cidrblock"></a>
 An IPv4 CIDR block to associate with the VPC.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Ipv4IpamPoolId`  <a name="cfn-ec2-vpccidrblock-ipv4ipampoolid"></a>
+Associate a CIDR allocated from an IPv4 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`Ipv4NetmaskLength`  <a name="cfn-ec2-vpccidrblock-ipv4netmasklength"></a>
+The netmask length of the IPv4 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv4IpamPoolId`
-
-Associate a CIDR allocated from an IPv4 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](../../../vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv4NetmaskLength`
-
-The netmask length of the IPv4 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv6CidrBlock`
-
+`Ipv6CidrBlock`  <a name="cfn-ec2-vpccidrblock-ipv6cidrblock"></a>
 An IPv6 CIDR block from the IPv6 address pool. You must also specify `Ipv6Pool` in the request.
-
 To let Amazon choose the IPv6 CIDR block for you, omit this parameter.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Ipv6CidrBlockNetworkBorderGroup`  <a name="cfn-ec2-vpccidrblock-ipv6cidrblocknetworkbordergroup"></a>
+The name of the location from which we advertise the IPV6 CIDR block. Use this parameter to limit the CIDR block to this location.
+ You must set `AmazonProvidedIpv6CidrBlock` to `true` to use this parameter.
+ You can have one IPv6 CIDR block association per network border group.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`Ipv6IpamPoolId`  <a name="cfn-ec2-vpccidrblock-ipv6ipampoolid"></a>
+Associates a CIDR allocated from an IPv6 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Ipv6NetmaskLength`  <a name="cfn-ec2-vpccidrblock-ipv6netmasklength"></a>
+The netmask length of the IPv6 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`Ipv6CidrBlockNetworkBorderGroup`
-
-The name of the location from which we advertise the IPV6 CIDR block. Use this parameter
-to limit the CIDR block to this location.
-
-You must set `AmazonProvidedIpv6CidrBlock` to `true` to use this parameter.
-
-You can have one IPv6 CIDR block association per network border group.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv6IpamPoolId`
-
-Associates a CIDR allocated from an IPv6 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](../../../vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv6NetmaskLength`
-
-The netmask length of the IPv6 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv6Pool`
-
+`Ipv6Pool`  <a name="cfn-ec2-vpccidrblock-ipv6pool"></a>
 The ID of an IPv6 address pool from which to allocate the IPv6 CIDR block.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-ec2-vpccidrblock-vpcid"></a>
 The ID of the VPC.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-vpccidrblock-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpccidrblock-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the association ID for the VPC CIDR block.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-vpccidrblock-return-values-fn--getatt"></a>
 
-`IpSource`
+####
+<a name="aws-resource-ec2-vpccidrblock-return-values-fn--getatt-fn--getatt"></a>
 
+`IpSource`  <a name="IpSource-fn::getatt"></a>
 The source that allocated the IP address space. `byoip` or `amazon` indicates public IP address space allocated by Amazon or space that you have allocated with Bring your own IP (BYOIP). `none` indicates private space.
 
-`Ipv6AddressAttribute`
-
+`Ipv6AddressAttribute`  <a name="Ipv6AddressAttribute-fn::getatt"></a>
 Public IPv6 addresses are those advertised on the internet from AWS. Private IP addresses are not and cannot be advertised on the internet from AWS.
 
 ## Examples
+<a name="aws-resource-ec2-vpccidrblock--examples"></a>
 
-- [Associate an Amazon-provided IPv6 CIDR block](#aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block)
-
-- [Associate an IPv4 CIDR block and an Amazon-provided IPv6 CIDR block](#aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block)
+**Topics**
++ [Associate an Amazon-provided IPv6 CIDR block](#aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block)
++ [Associate an IPv4 CIDR block and an Amazon-provided IPv6 CIDR block](#aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block)
 
 ### Associate an Amazon-provided IPv6 CIDR block
+<a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block"></a>
 
-The following example associates an Amazon-provided IPv6 CIDR block (with a prefix
-length of /56) with the TestVPCIpv6 VPC.
+The following example associates an Amazon-provided IPv6 CIDR block (with a prefix length of /56) with the TestVPCIpv6 VPC.
 
 #### JSON
+<a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block--json"></a>
 
-```json
-
+```
 "Ipv6VPCCidrBlock": {
    "Type": "AWS::EC2::VPCCidrBlock",
    "Properties": {
@@ -216,9 +171,9 @@ length of /56) with the TestVPCIpv6 VPC.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block--yaml"></a>
 
-```yaml
-
+```
 Ipv6VPCCidrBlock:
    Type: AWS::EC2::VPCCidrBlock
    Properties:
@@ -227,15 +182,14 @@ Ipv6VPCCidrBlock:
 ```
 
 ### Associate an IPv4 CIDR block and an Amazon-provided IPv6 CIDR block
+<a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block"></a>
 
-The following example associates an IPv4 CIDR block and an Amazon-provided IPv6
-CIDR block with a VPC. It also outputs the list of IPv4 CIDR block association IDs
-and IPv6 CIDR blocks that are associated with the VPC.
+The following example associates an IPv4 CIDR block and an Amazon-provided IPv6 CIDR block with a VPC. It also outputs the list of IPv4 CIDR block association IDs and IPv6 CIDR blocks that are associated with the VPC.
 
 #### JSON
+<a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "VPC": {
@@ -308,9 +262,9 @@ and IPv6 CIDR blocks that are associated with the VPC.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block--yaml"></a>
 
-```yaml
-
+```
 Resources:
   VPC:
     Type: AWS::EC2::VPC
@@ -337,11 +291,5 @@ Outputs:
   CidrBlockAssociation:
     Value: !Select [ 0, !GetAtt VPC.CidrBlockAssociations ]
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VPCBlockPublicAccessOptions
-
-AWS::EC2::VPCDHCPOptionsAssociation
 
 All content copied from https://docs.aws.amazon.com/.

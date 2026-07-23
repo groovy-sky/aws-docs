@@ -2,53 +2,42 @@
 title: "AWS::IoTSiteWise::ComputationModel ComputationModelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::ComputationModel ComputationModelConfiguration
+<a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration"></a>
 
 The configuration for the computation model.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnomalyDetection" : AnomalyDetectionComputationModelConfiguration
+  "[AnomalyDetection](#cfn-iotsitewise-computationmodel-computationmodelconfiguration-anomalydetection)" : {{AnomalyDetectionComputationModelConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AnomalyDetection:
-    AnomalyDetectionComputationModelConfiguration
-
+```
+  [AnomalyDetection](#cfn-iotsitewise-computationmodel-computationmodelconfiguration-anomalydetection): {{
+    AnomalyDetectionComputationModelConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration-properties"></a>
 
-`AnomalyDetection`
-
+`AnomalyDetection`  <a name="cfn-iotsitewise-computationmodel-computationmodelconfiguration-anomalydetection"></a>
 The configuration for the anomaly detection type of computation model.
-
-_Required_: No
-
-_Type_: [AnomalyDetectionComputationModelConfiguration](aws-properties-iotsitewise-computationmodel-anomalydetectioncomputationmodelconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssetPropertyBindingValue
-
-ComputationModelDataBindingValue
+*Required*: No
+*Type*: [AnomalyDetectionComputationModelConfiguration](aws-properties-iotsitewise-computationmodel-anomalydetectioncomputationmodelconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

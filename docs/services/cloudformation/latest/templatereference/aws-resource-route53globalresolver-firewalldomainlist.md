@@ -2,207 +2,146 @@
 title: "AWS::Route53GlobalResolver::FirewallDomainList"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53GlobalResolver::FirewallDomainList
+<a name="aws-resource-route53globalresolver-firewalldomainlist"></a>
 
-Creates a firewall domain list. Domain lists are reusable sets of domain specifications
-that you use in DNS firewall rules to allow, block, or alert on DNS queries to specific
-domains.
+Creates a firewall domain list. Domain lists are reusable sets of domain specifications that you use in DNS firewall rules to allow, block, or alert on DNS queries to specific domains.
 
-###### Important
-
-Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the
-US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example,
-specify
-`--region us-east-2`
-on AWS CLI commands.
+**Important**
+Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example, specify `--region us-east-2` on AWS CLI commands.
 
 ## Syntax
+<a name="aws-resource-route53globalresolver-firewalldomainlist-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53globalresolver-firewalldomainlist-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53GlobalResolver::FirewallDomainList",
   "Properties" : {
-      "ClientToken" : String,
-      "Description" : String,
-      "DomainFileUrl" : String,
-      "Domains" : [ String, ... ],
-      "GlobalResolverId" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[ClientToken](#cfn-route53globalresolver-firewalldomainlist-clienttoken)" : {{String}},
+      "[Description](#cfn-route53globalresolver-firewalldomainlist-description)" : {{String}},
+      "[DomainFileUrl](#cfn-route53globalresolver-firewalldomainlist-domainfileurl)" : {{String}},
+      "[Domains](#cfn-route53globalresolver-firewalldomainlist-domains)" : {{[ String, ... ]}},
+      "[GlobalResolverId](#cfn-route53globalresolver-firewalldomainlist-globalresolverid)" : {{String}},
+      "[Name](#cfn-route53globalresolver-firewalldomainlist-name)" : {{String}},
+      "[Tags](#cfn-route53globalresolver-firewalldomainlist-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53globalresolver-firewalldomainlist-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53GlobalResolver::FirewallDomainList
 Properties:
-  ClientToken: String
-  Description: String
-  DomainFileUrl: String
-  Domains:
-    - String
-  GlobalResolverId: String
-  Name: String
-  Tags:
-    - Tag
-
+  [ClientToken](#cfn-route53globalresolver-firewalldomainlist-clienttoken): {{String}}
+  [Description](#cfn-route53globalresolver-firewalldomainlist-description): {{String}}
+  [DomainFileUrl](#cfn-route53globalresolver-firewalldomainlist-domainfileurl): {{String}}
+  [Domains](#cfn-route53globalresolver-firewalldomainlist-domains): {{
+    - String}}
+  [GlobalResolverId](#cfn-route53globalresolver-firewalldomainlist-globalresolverid): {{String}}
+  [Name](#cfn-route53globalresolver-firewalldomainlist-name): {{String}}
+  [Tags](#cfn-route53globalresolver-firewalldomainlist-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-route53globalresolver-firewalldomainlist-properties"></a>
 
-`ClientToken`
+`ClientToken`  <a name="cfn-route53globalresolver-firewalldomainlist-clienttoken"></a>
+A unique, case-sensitive identifier to ensure idempotency. This means that making the same request multiple times with the same `clientToken` has the same result every time.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A unique, case-sensitive identifier to ensure idempotency. This means that making the
-same request multiple times with the same `clientToken` has the same result
-every time.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-route53globalresolver-firewalldomainlist-description"></a>
 A description of the firewall domain list.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`DomainFileUrl`  <a name="cfn-route53globalresolver-firewalldomainlist-domainfileurl"></a>
+The fully qualified URL of the file in Amazon S3 that contains the list of domains to import. The file should contain one domain per line.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DomainFileUrl`
-
-The fully qualified URL of the file in Amazon S3 that contains the list of domains to
-import. The file should contain one domain per line.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Domains`
-
+`Domains`  <a name="cfn-route53globalresolver-firewalldomainlist-domains"></a>
 A list of the domains. You can add up to 1000 domains per request.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GlobalResolverId`
-
+`GlobalResolverId`  <a name="cfn-route53globalresolver-firewalldomainlist-globalresolverid"></a>
 The ID of the global resolver that the firewall domain list is associated with.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-route53globalresolver-firewalldomainlist-name"></a>
 The name of the firewall domain list.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?!^[0-9]+$)([a-zA-Z0-9-_' ']+)`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?!^[0-9]+$)([a-zA-Z0-9-_' ']+)`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-An array of user-defined keys and optional values. These tags can be used for
-categorization and organization.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-route53globalresolver-firewalldomainlist-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-route53globalresolver-firewalldomainlist-tags"></a>
+An array of user-defined keys and optional values. These tags can be used for categorization and organization.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-route53globalresolver-firewalldomainlist-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53globalresolver-firewalldomainlist-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53globalresolver-firewalldomainlist-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-route53globalresolver-firewalldomainlist-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-route53globalresolver-firewalldomainlist-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the firewall domain list.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date and time when the firewall domain list was created.
 
-`DomainCount`
-
+`DomainCount`  <a name="DomainCount-fn::getatt"></a>
 Number of domains in the domain list.
 
-`FirewallDomainListId`
-
+`FirewallDomainListId`  <a name="FirewallDomainListId-fn::getatt"></a>
 ID of the domain list.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the firewall domain list.
 
-`StatusMessage`
-
+`StatusMessage`  <a name="StatusMessage-fn::getatt"></a>
 Additional information about the status of the domain list.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The date and time when the firewall domain list was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

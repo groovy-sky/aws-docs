@@ -2,70 +2,52 @@
 title: "AWS::QuickSight::Analysis SheetControlInfoIconLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SheetControlInfoIconLabelOptions
+<a name="aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions"></a>
 
 A control to display info icons for filters and parameters.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "InfoIconText" : String,
-  "Visibility" : String
+  "[InfoIconText](#cfn-quicksight-analysis-sheetcontrolinfoiconlabeloptions-infoicontext)" : {{String}},
+  "[Visibility](#cfn-quicksight-analysis-sheetcontrolinfoiconlabeloptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  InfoIconText: String
-  Visibility: String
-
+```
+  [InfoIconText](#cfn-quicksight-analysis-sheetcontrolinfoiconlabeloptions-infoicontext): {{String}}
+  [Visibility](#cfn-quicksight-analysis-sheetcontrolinfoiconlabeloptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions-properties"></a>
 
-`InfoIconText`
+`InfoIconText`  <a name="cfn-quicksight-analysis-sheetcontrolinfoiconlabeloptions-infoicontext"></a>
+ The text content of info icon.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The text content of info icon.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-analysis-sheetcontrolinfoiconlabeloptions-visibility"></a>
 The visibility configuration of info icon label options.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Sheet
-
-SheetControlLayout
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

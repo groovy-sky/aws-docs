@@ -2,52 +2,41 @@
 title: "AWS::DataZone::PolicyGrant OverrideProjectOwnersPolicyGrantDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::PolicyGrant OverrideProjectOwnersPolicyGrantDetail
+<a name="aws-properties-datazone-policygrant-overrideprojectownerspolicygrantdetail"></a>
 
 The details of the override project owners policy grant.
 
 ## Syntax
+<a name="aws-properties-datazone-policygrant-overrideprojectownerspolicygrantdetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-policygrant-overrideprojectownerspolicygrantdetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "IncludeChildDomainUnits" : Boolean
+  "[IncludeChildDomainUnits](#cfn-datazone-policygrant-overrideprojectownerspolicygrantdetail-includechilddomainunits)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-policygrant-overrideprojectownerspolicygrantdetail-syntax.yaml"></a>
 
-```yaml
-
-  IncludeChildDomainUnits: Boolean
-
+```
+  [IncludeChildDomainUnits](#cfn-datazone-policygrant-overrideprojectownerspolicygrantdetail-includechilddomainunits): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-policygrant-overrideprojectownerspolicygrantdetail-properties"></a>
 
-`IncludeChildDomainUnits`
-
+`IncludeChildDomainUnits`  <a name="cfn-datazone-policygrant-overrideprojectownerspolicygrantdetail-includechilddomainunits"></a>
 Specifies whether the policy is inherited by child domain units.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OverrideDomainUnitOwnersPolicyGrantDetail
-
-PolicyGrantDetail
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

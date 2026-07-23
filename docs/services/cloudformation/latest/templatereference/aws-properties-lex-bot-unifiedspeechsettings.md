@@ -2,53 +2,42 @@
 title: "AWS::Lex::Bot UnifiedSpeechSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot UnifiedSpeechSettings
+<a name="aws-properties-lex-bot-unifiedspeechsettings"></a>
 
 Unified configuration settings that combine speech recognition and synthesis capabilities.
 
 ## Syntax
+<a name="aws-properties-lex-bot-unifiedspeechsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-unifiedspeechsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "SpeechFoundationModel" : SpeechFoundationModel
+  "[SpeechFoundationModel](#cfn-lex-bot-unifiedspeechsettings-speechfoundationmodel)" : {{SpeechFoundationModel}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-unifiedspeechsettings-syntax.yaml"></a>
 
-```yaml
-
-  SpeechFoundationModel:
-    SpeechFoundationModel
-
+```
+  [SpeechFoundationModel](#cfn-lex-bot-unifiedspeechsettings-speechfoundationmodel): {{
+    SpeechFoundationModel}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-unifiedspeechsettings-properties"></a>
 
-`SpeechFoundationModel`
-
+`SpeechFoundationModel`  <a name="cfn-lex-bot-unifiedspeechsettings-speechfoundationmodel"></a>
 The foundation model configuration to use for unified speech processing capabilities.
-
-_Required_: Yes
-
-_Type_: [SpeechFoundationModel](aws-properties-lex-bot-speechfoundationmodel.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TextLogSetting
-
-VoiceSettings
+*Required*: Yes
+*Type*: [SpeechFoundationModel](aws-properties-lex-bot-speechfoundationmodel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

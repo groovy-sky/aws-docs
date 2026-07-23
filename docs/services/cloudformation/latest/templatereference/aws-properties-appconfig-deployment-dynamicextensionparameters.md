@@ -2,87 +2,62 @@
 title: "AWS::AppConfig::Deployment DynamicExtensionParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppConfig::Deployment DynamicExtensionParameters
+<a name="aws-properties-appconfig-deployment-dynamicextensionparameters"></a>
 
-A map of dynamic extension parameter names to values to pass to associated extensions
-with `PRE_START_DEPLOYMENT` actions.
+A map of dynamic extension parameter names to values to pass to associated extensions with `PRE_START_DEPLOYMENT` actions.
 
 ## Syntax
+<a name="aws-properties-appconfig-deployment-dynamicextensionparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appconfig-deployment-dynamicextensionparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExtensionReference" : String,
-  "ParameterName" : String,
-  "ParameterValue" : String
+  "[ExtensionReference](#cfn-appconfig-deployment-dynamicextensionparameters-extensionreference)" : {{String}},
+  "[ParameterName](#cfn-appconfig-deployment-dynamicextensionparameters-parametername)" : {{String}},
+  "[ParameterValue](#cfn-appconfig-deployment-dynamicextensionparameters-parametervalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appconfig-deployment-dynamicextensionparameters-syntax.yaml"></a>
 
-```yaml
-
-  ExtensionReference: String
-  ParameterName: String
-  ParameterValue: String
-
+```
+  [ExtensionReference](#cfn-appconfig-deployment-dynamicextensionparameters-extensionreference): {{String}}
+  [ParameterName](#cfn-appconfig-deployment-dynamicextensionparameters-parametername): {{String}}
+  [ParameterValue](#cfn-appconfig-deployment-dynamicextensionparameters-parametervalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appconfig-deployment-dynamicextensionparameters-properties"></a>
 
-`ExtensionReference`
-
+`ExtensionReference`  <a name="cfn-appconfig-deployment-dynamicextensionparameters-extensionreference"></a>
 The ARN or ID of the extension for which you are inserting a dynamic parameter.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws[a-zA-Z-]*)?:[a-z]+:((eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1})?:(\d{12})?:[a-zA-Z0-9-_/:.]+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws[a-zA-Z-]*)?:[a-z]+:((eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1})?:(\d{12})?:[a-zA-Z0-9-_/:.]+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterName`
-
+`ParameterName`  <a name="cfn-appconfig-deployment-dynamicextensionparameters-parametername"></a>
 The parameter name.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterValue`
-
+`ParameterValue`  <a name="cfn-appconfig-deployment-dynamicextensionparameters-parametervalue"></a>
 The parameter value.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppConfig::Deployment
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

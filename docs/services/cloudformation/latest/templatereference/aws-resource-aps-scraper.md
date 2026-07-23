@@ -2,203 +2,156 @@
 title: "AWS::APS::Scraper"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper
+<a name="aws-resource-aps-scraper"></a>
 
-A scraper is a fully-managed agentless collector that discovers and pulls metrics
-automatically. A scraper pulls metrics from Prometheus-compatible sources within an
-Amazon EKS cluster, and sends them to your Amazon Managed Service for Prometheus
-workspace. Scrapers are flexible. You can configure the scraper to control what metrics
-are collected, the frequency of collection, what transformations are applied to the
-metrics, and more.
+A scraper is a fully-managed agentless collector that discovers and pulls metrics automatically. A scraper pulls metrics from Prometheus-compatible sources within an Amazon EKS cluster, and sends them to your Amazon Managed Service for Prometheus workspace. Scrapers are flexible. You can configure the scraper to control what metrics are collected, the frequency of collection, what transformations are applied to the metrics, and more.
 
-An IAM role will be created for you that Amazon Managed Service for Prometheus uses to
-access the metrics in your cluster. You must configure this role with a policy that
-allows it to scrape metrics from your cluster. For more information, see [Configuring your Amazon EKS cluster](../../../prometheus/latest/userguide/amp-collector-how-to.md#AMP-collector-eks-setup) in the _Amazon Managed Service_
-_for Prometheus User Guide_.
+An IAM role will be created for you that Amazon Managed Service for Prometheus uses to access the metrics in your cluster. You must configure this role with a policy that allows it to scrape metrics from your cluster. For more information, see [Configuring your Amazon EKS cluster](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-how-to.html#AMP-collector-eks-setup) in the *Amazon Managed Service for Prometheus User Guide*.
 
-The `scrapeConfiguration` parameter contains the YAML configuration for the
-scraper.
+The `scrapeConfiguration` parameter contains the YAML configuration for the scraper.
 
-###### Note
-
-For more information about collectors, including what metrics are collected, and
-how to configure the scraper, see [Using an AWS managed collector](../../../prometheus/latest/userguide/amp-collector-how-to.md) in the _Amazon Managed Service_
-_for Prometheus User Guide_.
+**Note**
+For more information about collectors, including what metrics are collected, and how to configure the scraper, see [Using an AWS managed collector](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-how-to.html) in the *Amazon Managed Service for Prometheus User Guide*.
 
 ## Syntax
+<a name="aws-resource-aps-scraper-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-aps-scraper-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::APS::Scraper",
   "Properties" : {
-      "Alias" : String,
-      "Destination" : Destination,
-      "RoleConfiguration" : RoleConfiguration,
-      "ScrapeConfiguration" : ScrapeConfiguration,
-      "ScraperLoggingConfiguration" : ScraperLoggingConfiguration,
-      "Source" : Source,
-      "Tags" : [ Tag, ... ]
+      "[Alias](#cfn-aps-scraper-alias)" : {{String}},
+      "[Destination](#cfn-aps-scraper-destination)" : {{Destination}},
+      "[RoleConfiguration](#cfn-aps-scraper-roleconfiguration)" : {{RoleConfiguration}},
+      "[ScrapeConfiguration](#cfn-aps-scraper-scrapeconfiguration)" : {{ScrapeConfiguration}},
+      "[ScraperLoggingConfiguration](#cfn-aps-scraper-scraperloggingconfiguration)" : {{ScraperLoggingConfiguration}},
+      "[Source](#cfn-aps-scraper-source)" : {{Source}},
+      "[Tags](#cfn-aps-scraper-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-aps-scraper-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::APS::Scraper
 Properties:
-  Alias: String
-  Destination:
-    Destination
-  RoleConfiguration:
-    RoleConfiguration
-  ScrapeConfiguration:
-    ScrapeConfiguration
-  ScraperLoggingConfiguration:
-    ScraperLoggingConfiguration
-  Source:
-    Source
-  Tags:
-    - Tag
-
+  [Alias](#cfn-aps-scraper-alias): {{String}}
+  [Destination](#cfn-aps-scraper-destination): {{
+    Destination}}
+  [RoleConfiguration](#cfn-aps-scraper-roleconfiguration): {{
+    RoleConfiguration}}
+  [ScrapeConfiguration](#cfn-aps-scraper-scrapeconfiguration): {{
+    ScrapeConfiguration}}
+  [ScraperLoggingConfiguration](#cfn-aps-scraper-scraperloggingconfiguration): {{
+    ScraperLoggingConfiguration}}
+  [Source](#cfn-aps-scraper-source): {{
+    Source}}
+  [Tags](#cfn-aps-scraper-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-aps-scraper-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-aps-scraper-alias"></a>
 An optional user-assigned scraper alias.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9A-Za-z][-.0-9A-Z_a-z]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Destination`  <a name="cfn-aps-scraper-destination"></a>
+The Amazon Managed Service for Prometheus workspace the scraper sends metrics to.
+*Required*: Yes
+*Type*: [Destination](aws-properties-aps-scraper-destination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z][-.0-9A-Z_a-z]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Destination`
-
-The Amazon Managed Service for Prometheus workspace the scraper sends metrics
-to.
-
-_Required_: Yes
-
-_Type_: [Destination](aws-properties-aps-scraper-destination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleConfiguration`
-
+`RoleConfiguration`  <a name="cfn-aps-scraper-roleconfiguration"></a>
 The role configuration in an Amazon Managed Service for Prometheus scraper.
+*Required*: No
+*Type*: [RoleConfiguration](aws-properties-aps-scraper-roleconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RoleConfiguration](aws-properties-aps-scraper-roleconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScrapeConfiguration`
-
+`ScrapeConfiguration`  <a name="cfn-aps-scraper-scrapeconfiguration"></a>
 The configuration in use by the scraper.
+*Required*: Yes
+*Type*: [ScrapeConfiguration](aws-properties-aps-scraper-scrapeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ScrapeConfiguration](aws-properties-aps-scraper-scrapeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScraperLoggingConfiguration`
-
+`ScraperLoggingConfiguration`  <a name="cfn-aps-scraper-scraperloggingconfiguration"></a>
 The definition of logging configuration in an Amazon Managed Service for Prometheus workspace.
+*Required*: No
+*Type*: [ScraperLoggingConfiguration](aws-properties-aps-scraper-scraperloggingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ScraperLoggingConfiguration](aws-properties-aps-scraper-scraperloggingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-aps-scraper-source"></a>
 The Amazon EKS cluster from which the scraper collects metrics.
+*Required*: Yes
+*Type*: [Source](aws-properties-aps-scraper-source.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [Source](aws-properties-aps-scraper-source.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-aps-scraper-tags"></a>
 (Optional) The list of tag keys and values associated with the scraper.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-aps-scraper-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-aps-scraper-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-aps-scraper-return-values"></a>
 
 ### Ref
+<a name="aws-resource-aps-scraper-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "Id" }`
+ `{ "Ref": "Id" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-aps-scraper-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-aps-scraper-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the scraper. For example,
-`arn:aws:aps:<region>:123456798012:scraper/s-example1-1234-abcd-5678-ef9012abcd34`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the scraper. For example, `arn:aws:aps:<region>:123456798012:scraper/s-example1-1234-abcd-5678-ef9012abcd34`.
 
-`RoleArn`
+`RoleArn`  <a name="RoleArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the IAM role that provides permissions for the scraper to discover and collect metrics on your behalf.
+For example, `arn:aws:iam::123456789012:role/service-role/AmazonGrafanaServiceRole-12example`.
 
-The Amazon Resource Name (ARN) of the IAM role that provides permissions for the
-scraper to discover and collect metrics on your behalf.
-
-For example,
-`arn:aws:iam::123456789012:role/service-role/AmazonGrafanaServiceRole-12example`.
-
-`ScraperId`
-
-The ID of the scraper. For example,
-`s-example1-1234-abcd-5678-ef9012abcd34`.
+`ScraperId`  <a name="ScraperId-fn::getatt"></a>
+The ID of the scraper. For example, `s-example1-1234-abcd-5678-ef9012abcd34`.
 
 ## Examples
+<a name="aws-resource-aps-scraper--examples"></a>
 
 ### Amazon Managed Service for Prometheus scraper example
+<a name="aws-resource-aps-scraper--examples--Amazon_Managed_Service_for_Prometheus_scraper_example"></a>
 
-The following example creates a scraper, showing how to pass in configuration.
-You must replace values in braces ( `{}`) with values that match your
-system.
+The following example creates a scraper, showing how to pass in configuration. You must replace values in braces (`{}`) with values that match your system.
 
 #### YAML
+<a name="aws-resource-aps-scraper--examples--Amazon_Managed_Service_for_Prometheus_scraper_example--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09 Resources: Scraper: Type:
                 AWS::APS::Scraper UpdateReplacePolicy: Retain DeletionPolicy: Delete Properties:
                 Alias: "Scraper-Test" Source: EksConfiguration: ClusterArn:
@@ -230,9 +183,9 @@ AWSTemplateFormatVersion: 2010-09-09 Resources: Scraper: Type:
 ```
 
 #### JSON
+<a name="aws-resource-aps-scraper--examples--Amazon_Managed_Service_for_Prometheus_scraper_example--json"></a>
 
-```json
-
+```
 { "CreateInputs": { "Alias": "Scraper-Test",
                 "ScrapeConfiguration": { "ConfigurationBlob": "global:\n scrape_interval: 30s\n #
                 external_labels:\n # clusterArn: {cluster-arn}\nscrape_configs:\n # pod metrics\n -
@@ -261,11 +214,5 @@ AWSTemplateFormatVersion: 2010-09-09 Resources: Scraper: Type:
                 "arn:aws:aps:{region}:{account-id}:workspace/ws-{workspace-id}" } }, "Tags": [ {
                 "Key": "BusinessPurpose", "Value": "Testing" } ] }, "PatchInputs": [] }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AmpConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,154 +2,108 @@
 title: "AWS::Pinpoint::InAppTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::InAppTemplate
+<a name="aws-resource-pinpoint-inapptemplate"></a>
 
-Creates a message template that you can use to send in-app messages. A message
-template is a set of content and settings that you can define, save, and reuse in
-messages for any of your Amazon Pinpoint applications. The In-App channel is unavailable in AWS GovCloud (US).
+Creates a message template that you can use to send in-app messages. A message template is a set of content and settings that you can define, save, and reuse in messages for any of your Amazon Pinpoint applications. The In-App channel is unavailable in AWS GovCloud (US).
 
 ## Syntax
+<a name="aws-resource-pinpoint-inapptemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-pinpoint-inapptemplate-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Pinpoint::InAppTemplate",
   "Properties" : {
-      "Content" : [ InAppMessageContent, ... ],
-      "CustomConfig" : Json,
-      "Layout" : String,
-      "Tags" : [ Tag, ... ],
-      "TemplateDescription" : String,
-      "TemplateName" : String
+      "[Content](#cfn-pinpoint-inapptemplate-content)" : {{[ InAppMessageContent, ... ]}},
+      "[CustomConfig](#cfn-pinpoint-inapptemplate-customconfig)" : {{Json}},
+      "[Layout](#cfn-pinpoint-inapptemplate-layout)" : {{String}},
+      "[Tags](#cfn-pinpoint-inapptemplate-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[TemplateDescription](#cfn-pinpoint-inapptemplate-templatedescription)" : {{String}},
+      "[TemplateName](#cfn-pinpoint-inapptemplate-templatename)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-pinpoint-inapptemplate-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Pinpoint::InAppTemplate
 Properties:
-  Content:
-    - InAppMessageContent
-  CustomConfig: Json
-  Layout: String
-  Tags:
-    - Tag
-  TemplateDescription: String
-  TemplateName: String
-
+  [Content](#cfn-pinpoint-inapptemplate-content): {{
+    - InAppMessageContent}}
+  [CustomConfig](#cfn-pinpoint-inapptemplate-customconfig): {{Json}}
+  [Layout](#cfn-pinpoint-inapptemplate-layout): {{String}}
+  [Tags](#cfn-pinpoint-inapptemplate-tags): {{
+    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+  [TemplateDescription](#cfn-pinpoint-inapptemplate-templatedescription): {{String}}
+  [TemplateName](#cfn-pinpoint-inapptemplate-templatename): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-pinpoint-inapptemplate-properties"></a>
 
-`Content`
+`Content`  <a name="cfn-pinpoint-inapptemplate-content"></a>
+An object that contains information about the content of an in-app message, including its title and body text, text colors, background colors, images, buttons, and behaviors.
+*Required*: No
+*Type*: Array of [InAppMessageContent](aws-properties-pinpoint-inapptemplate-inappmessagecontent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An object that contains information about the content of an in-app message,
-including its title and body text, text colors, background colors, images,
-buttons, and behaviors.
+`CustomConfig`  <a name="cfn-pinpoint-inapptemplate-customconfig"></a>
+Custom data, in the form of key-value pairs, that is included in an in-app messaging payload.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Layout`  <a name="cfn-pinpoint-inapptemplate-layout"></a>
+A string that determines the appearance of the in-app message. You can specify one of the following:
++ `BOTTOM_BANNER` – a message that appears as a banner at the bottom of the page.
++ `TOP_BANNER` – a message that appears as a banner at the top of the page.
++ `OVERLAYS` – a message that covers entire screen.
++ `MOBILE_FEED` – a message that appears in a window in front of the page.
++ `MIDDLE_BANNER` – a message that appears as a banner in the middle of the page.
++ `CAROUSEL` – a scrollable layout of up to five unique messages.
+*Required*: No
+*Type*: String
+*Allowed values*: `BOTTOM_BANNER | TOP_BANNER | OVERLAYS | MOBILE_FEED | MIDDLE_BANNER | CAROUSEL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [InAppMessageContent](aws-properties-pinpoint-inapptemplate-inappmessagecontent.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomConfig`
-
-Custom data, in the form of key-value pairs, that is included in an in-app messaging
-payload.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Layout`
-
-A string that determines the appearance of the in-app message. You can specify
-one of the following:
-
-- `BOTTOM_BANNER` – a message that appears as a banner at the
-bottom of the page.
-
-- `TOP_BANNER` – a message that appears as a banner at the
-top of the page.
-
-- `OVERLAYS` – a message that covers entire screen.
-
-- `MOBILE_FEED` – a message that appears in a window in front
-of the page.
-
-- `MIDDLE_BANNER` – a message that appears as a banner in the
-middle of the page.
-
-- `CAROUSEL` – a scrollable layout of up to five unique
-messages.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BOTTOM_BANNER | TOP_BANNER | OVERLAYS | MOBILE_FEED | MIDDLE_BANNER | CAROUSEL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-pinpoint-inapptemplate-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [`Tag`](aws-properties-resource-tags.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateDescription`
-
+`TemplateDescription`  <a name="cfn-pinpoint-inapptemplate-templatedescription"></a>
 An optional description of the in-app template.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateName`
-
+`TemplateName`  <a name="cfn-pinpoint-inapptemplate-templatename"></a>
 The name of the in-app message template.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-pinpoint-inapptemplate-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-pinpoint-inapptemplate-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-pinpoint-inapptemplate-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the message template.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Pinpoint::GCMChannel
-
-BodyConfig
 
 All content copied from https://docs.aws.amazon.com/.

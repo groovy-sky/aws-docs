@@ -3,80 +3,64 @@ title: "DescribeStackSet"
 ---
 
 # DescribeStackSet
+<a name="API_DescribeStackSet"></a>
 
 Returns the description of the specified StackSet.
 
-###### Note
-
-This API provides _strongly consistent_ reads meaning it will always
-return the most up-to-date data.
+**Note**
+This API provides *strongly consistent* reads meaning it will always return the most up-to-date data.
 
 ## Request Parameters
+<a name="API_DescribeStackSet_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
-**CallAs**
+ ** CallAs **
+[Service-managed permissions] Specifies whether you are acting as an account administrator in the organization's management account or as a delegated administrator in a member account.
+By default, `SELF` is specified. Use `SELF` for StackSets with self-managed permissions.
++ If you are signed in to the management account, specify `SELF`.
++ If you are signed in to a delegated administrator account, specify `DELEGATED_ADMIN`.
 
-\[Service-managed permissions\] Specifies whether you are acting as an account administrator
-in the organization's management account or as a delegated administrator in a
-member account.
-
-By default, `SELF` is specified. Use `SELF` for StackSets with
-self-managed permissions.
-
-- If you are signed in to the management account, specify
-`SELF`.
-
-- If you are signed in to a delegated administrator account, specify
-`DELEGATED_ADMIN`.
-
-Your AWS account must be registered as a delegated administrator in the management account. For more information, see [Register a\
-delegated administrator](../../../../services/cloudformation/latest/userguide/stacksets-orgs-delegated-admin.md) in the _AWS CloudFormation User Guide_.
-
+  Your AWS account must be registered as a delegated administrator in the management account. For more information, see [Register a delegated administrator](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-delegated-admin.html) in the * AWS CloudFormation User Guide*.
 Type: String
-
 Valid Values: `SELF | DELEGATED_ADMIN`
-
 Required: No
 
-**StackSetName**
-
+ ** StackSetName **
 The name or unique ID of the StackSet whose description you want.
-
 Type: String
-
 Required: Yes
 
 ## Response Elements
+<a name="API_DescribeStackSet_ResponseElements"></a>
 
 The following element is returned by the service.
 
-**StackSet**
-
+ ** StackSet **
 The specified StackSet.
-
-Type: [StackSet](api-stackset.md) object
+Type: [StackSet](API_StackSet.md) object
 
 ## Errors
+<a name="API_DescribeStackSet_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**StackSetNotFound**
-
+ ** StackSetNotFound **
 The specified StackSet doesn't exist.
-
 HTTP Status Code: 404
 
 ## Examples
+<a name="API_DescribeStackSet_Examples"></a>
 
 ### DescribeStackSet
+<a name="API_DescribeStackSet_Example_1"></a>
 
 This example illustrates one usage of DescribeStackSet.
 
 #### Sample Request
+<a name="API_DescribeStackSet_Example_1_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
  ?Action=DescribeStackSet
  &Version=2010-05-15
@@ -89,9 +73,9 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
+<a name="API_DescribeStackSet_Example_1_Response"></a>
 
 ```
-
 <DescribeStackSetResponse xmlns="http://internal.amazon.com/coral/com.amazonaws.maestro.service.v20160713/">
   <DescribeStackSetResult>
     <StackSet>
@@ -167,15 +151,13 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ### How to view which Regions a StackSet has stack instances deployed to.
+<a name="API_DescribeStackSet_Example_2"></a>
 
-Use the `DescribeStackSets` API to output a list of Regions. This list
-consists of Regions where a given StackSet has stack instances deployed.
+Use the `DescribeStackSets` API to output a list of Regions. This list consists of Regions where a given StackSet has stack instances deployed.
 
-In the following example, the StackSet named "MyStackSet" has stack instances deployed
-in Regions "us-east-1" and "us-west-2":
+In the following example, the StackSet named "MyStackSet" has stack instances deployed in Regions "us-east-1" and "us-west-2":
 
 ```
-
 {
     "StackSet": {
         "StackSetName": "MyStackSet",
@@ -189,33 +171,18 @@ in Regions "us-east-1" and "us-west-2":
 ```
 
 ## See Also
+<a name="API_DescribeStackSet_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackSet)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackSet)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeStacks
-
-DescribeStackSetOperation
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackSet)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackSet)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,82 +2,61 @@
 title: "AWS::QuickSight::Analysis DateTimeFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DateTimeFormatConfiguration
+<a name="aws-properties-quicksight-analysis-datetimeformatconfiguration"></a>
 
 Formatting configuration for `DateTime` fields.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-datetimeformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-datetimeformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateTimeFormat" : String,
-  "NullValueFormatConfiguration" : NullValueFormatConfiguration,
-  "NumericFormatConfiguration" : NumericFormatConfiguration
+  "[DateTimeFormat](#cfn-quicksight-analysis-datetimeformatconfiguration-datetimeformat)" : {{String}},
+  "[NullValueFormatConfiguration](#cfn-quicksight-analysis-datetimeformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
+  "[NumericFormatConfiguration](#cfn-quicksight-analysis-datetimeformatconfiguration-numericformatconfiguration)" : {{NumericFormatConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-datetimeformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DateTimeFormat: String
-  NullValueFormatConfiguration:
-    NullValueFormatConfiguration
-  NumericFormatConfiguration:
-    NumericFormatConfiguration
-
+```
+  [DateTimeFormat](#cfn-quicksight-analysis-datetimeformatconfiguration-datetimeformat): {{String}}
+  [NullValueFormatConfiguration](#cfn-quicksight-analysis-datetimeformatconfiguration-nullvalueformatconfiguration): {{
+    NullValueFormatConfiguration}}
+  [NumericFormatConfiguration](#cfn-quicksight-analysis-datetimeformatconfiguration-numericformatconfiguration): {{
+    NumericFormatConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-datetimeformatconfiguration-properties"></a>
 
-`DateTimeFormat`
-
+`DateTimeFormat`  <a name="cfn-quicksight-analysis-datetimeformatconfiguration-datetimeformat"></a>
 Determines the `DateTime` format.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullValueFormatConfiguration`
-
+`NullValueFormatConfiguration`  <a name="cfn-quicksight-analysis-datetimeformatconfiguration-nullvalueformatconfiguration"></a>
 The options that determine the null value format configuration.
+*Required*: No
+*Type*: [NullValueFormatConfiguration](aws-properties-quicksight-analysis-nullvalueformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NullValueFormatConfiguration](aws-properties-quicksight-analysis-nullvalueformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericFormatConfiguration`
-
+`NumericFormatConfiguration`  <a name="cfn-quicksight-analysis-datetimeformatconfiguration-numericformatconfiguration"></a>
 The formatting configuration for numeric `DateTime` fields.
-
-_Required_: No
-
-_Type_: [NumericFormatConfiguration](aws-properties-quicksight-analysis-numericformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateTimeDefaultValues
-
-DateTimeHierarchy
+*Required*: No
+*Type*: [NumericFormatConfiguration](aws-properties-quicksight-analysis-numericformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Dashboard DynamicDefaultValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DynamicDefaultValue
+<a name="aws-properties-quicksight-dashboard-dynamicdefaultvalue"></a>
 
 Defines different defaults to the users or groups based on mapping.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-dynamicdefaultvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-dynamicdefaultvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValueColumn" : ColumnIdentifier,
-  "GroupNameColumn" : ColumnIdentifier,
-  "UserNameColumn" : ColumnIdentifier
+  "[DefaultValueColumn](#cfn-quicksight-dashboard-dynamicdefaultvalue-defaultvaluecolumn)" : {{ColumnIdentifier}},
+  "[GroupNameColumn](#cfn-quicksight-dashboard-dynamicdefaultvalue-groupnamecolumn)" : {{ColumnIdentifier}},
+  "[UserNameColumn](#cfn-quicksight-dashboard-dynamicdefaultvalue-usernamecolumn)" : {{ColumnIdentifier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-dynamicdefaultvalue-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValueColumn:
-    ColumnIdentifier
-  GroupNameColumn:
-    ColumnIdentifier
-  UserNameColumn:
-    ColumnIdentifier
-
+```
+  [DefaultValueColumn](#cfn-quicksight-dashboard-dynamicdefaultvalue-defaultvaluecolumn): {{
+    ColumnIdentifier}}
+  [GroupNameColumn](#cfn-quicksight-dashboard-dynamicdefaultvalue-groupnamecolumn): {{
+    ColumnIdentifier}}
+  [UserNameColumn](#cfn-quicksight-dashboard-dynamicdefaultvalue-usernamecolumn): {{
+    ColumnIdentifier}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-dynamicdefaultvalue-properties"></a>
 
-`DefaultValueColumn`
-
+`DefaultValueColumn`  <a name="cfn-quicksight-dashboard-dynamicdefaultvalue-defaultvaluecolumn"></a>
 The column that contains the default value of each user or group.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupNameColumn`
-
+`GroupNameColumn`  <a name="cfn-quicksight-dashboard-dynamicdefaultvalue-groupnamecolumn"></a>
 The column that contains the group name.
+*Required*: No
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserNameColumn`
-
+`UserNameColumn`  <a name="cfn-quicksight-dashboard-dynamicdefaultvalue-usernamecolumn"></a>
 The column that contains the username.
-
-_Required_: No
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DropDownControlDisplayOptions
-
-EmptyVisual
+*Required*: No
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

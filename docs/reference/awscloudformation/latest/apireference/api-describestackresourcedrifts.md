@@ -3,131 +3,82 @@ title: "DescribeStackResourceDrifts"
 ---
 
 # DescribeStackResourceDrifts
+<a name="API_DescribeStackResourceDrifts"></a>
 
-Returns drift information for the resources that have been checked for drift in the
-specified stack. This includes actual and expected configuration values for resources where
-CloudFormation detects configuration drift.
+Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where CloudFormation detects configuration drift.
 
-For a given stack, there will be one `StackResourceDrift` for each stack
-resource that has been checked for drift. Resources that haven't yet been checked for drift
-aren't included. Resources that don't currently support drift detection aren't checked, and so
-not included. For a list of resources that support drift detection, see [Resource\
-type support for imports and drift detection](../../../../services/cloudformation/latest/userguide/resource-import-supported-resources.md).
+For a given stack, there will be one `StackResourceDrift` for each stack resource that has been checked for drift. Resources that haven't yet been checked for drift aren't included. Resources that don't currently support drift detection aren't checked, and so not included. For a list of resources that support drift detection, see [Resource type support for imports and drift detection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html).
 
-Use [DetectStackResourceDrift](api-detectstackresourcedrift.md) to detect drift on individual resources, or
-[DetectStackDrift](api-detectstackdrift.md) to detect drift on all supported resources for a given
-stack.
+Use [DetectStackResourceDrift](API_DetectStackResourceDrift.md) to detect drift on individual resources, or [DetectStackDrift](API_DetectStackDrift.md) to detect drift on all supported resources for a given stack.
 
 ## Request Parameters
+<a name="API_DescribeStackResourceDrifts_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
-**MaxResults**
-
-The maximum number of results to be returned with a single call. If the number of
-available results exceeds this maximum, the response includes a `NextToken` value
-that you can assign to the `NextToken` request parameter to get the next set of
-results.
-
+ ** MaxResults **
+The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a `NextToken` value that you can assign to the `NextToken` request parameter to get the next set of results.
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**NextToken**
-
-The token for the next set of items to return. (You received this token from a previous
-call.)
-
+ ** NextToken **
+The token for the next set of items to return. (You received this token from a previous call.)
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
-**StackName**
-
+ ** StackName **
 The name of the stack for which you want drift information.
-
 Type: String
-
 Length Constraints: Minimum length of 1.
-
 Pattern: `([a-zA-Z][-a-zA-Z0-9]*)|(arn:\b(aws|aws-us-gov|aws-cn)\b:[-a-zA-Z0-9:/._+]*)`
-
 Required: Yes
 
-**StackResourceDriftStatusFilters.member.N**
-
-The resource drift status values to use as filters for the resource drift results
-returned.
-
-- `DELETED`: The resource differs from its expected template configuration in
-that the resource has been deleted.
-
-- `MODIFIED`: One or more resource properties differ from their expected
-template values.
-
-- `IN_SYNC`: The resource's actual configuration matches its expected
-template configuration.
-
-- `NOT_CHECKED`: CloudFormation doesn't currently return this value.
-
-- `UNKNOWN`: CloudFormation could not run drift detection for the
-resource.
-
+ **StackResourceDriftStatusFilters.member.N**
+The resource drift status values to use as filters for the resource drift results returned.
++  `DELETED`: The resource differs from its expected template configuration in that the resource has been deleted.
++  `MODIFIED`: One or more resource properties differ from their expected template values.
++  `IN_SYNC`: The resource's actual configuration matches its expected template configuration.
++  `NOT_CHECKED`: CloudFormation doesn't currently return this value.
++  `UNKNOWN`: CloudFormation could not run drift detection for the resource.
 Type: Array of strings
-
 Array Members: Minimum number of 1 item. Maximum number of 4 items.
-
 Valid Values: `IN_SYNC | MODIFIED | DELETED | NOT_CHECKED | UNKNOWN | UNSUPPORTED`
-
 Required: No
 
 ## Response Elements
+<a name="API_DescribeStackResourceDrifts_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**NextToken**
-
-If the request doesn't return all the remaining results, `NextToken` is set to
-a token. To retrieve the next set of results, call `DescribeStackResourceDrifts`
-again and assign that token to the request object's `NextToken` parameter. If the
-request returns all results, `NextToken` is set to `null`.
-
+ ** NextToken **
+If the request doesn't return all the remaining results, `NextToken` is set to a token. To retrieve the next set of results, call `DescribeStackResourceDrifts` again and assign that token to the request object's `NextToken` parameter. If the request returns all results, `NextToken` is set to `null`.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
-**StackResourceDrifts.member.N**
-
-Drift information for the resources that have been checked for drift in the specified
-stack. This includes actual and expected configuration values for resources where CloudFormation
-detects drift.
-
-For a given stack, there will be one `StackResourceDrift` for each stack
-resource that has been checked for drift. Resources that haven't yet been checked for drift
-aren't included. Resources that do not currently support drift detection aren't checked, and
-so not included. For a list of resources that support drift detection, see [Resource\
-type support for imports and drift detection](../../../../services/cloudformation/latest/userguide/resource-import-supported-resources.md).
-
-Type: Array of [StackResourceDrift](api-stackresourcedrift.md) objects
+ **StackResourceDrifts.member.N**
+Drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where CloudFormation detects drift.
+For a given stack, there will be one `StackResourceDrift` for each stack resource that has been checked for drift. Resources that haven't yet been checked for drift aren't included. Resources that do not currently support drift detection aren't checked, and so not included. For a list of resources that support drift detection, see [Resource type support for imports and drift detection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html).
+Type: Array of [StackResourceDrift](API_StackResourceDrift.md) objects
 
 ## Errors
+<a name="API_DescribeStackResourceDrifts_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DescribeStackResourceDrifts_Examples"></a>
 
 ### DescribeStackResourceDrifts
+<a name="API_DescribeStackResourceDrifts_Example_1"></a>
 
 This example illustrates one usage of DescribeStackResourceDrifts.
 
 #### Sample Request
+<a name="API_DescribeStackResourceDrifts_Example_1_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
  ?Action=DescribeStackResourceDrifts
  &Version=2010-05-15
@@ -141,9 +92,9 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
+<a name="API_DescribeStackResourceDrifts_Example_1_Response"></a>
 
 ```
-
 <DescribeStackResourceDriftsResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
   <DescribeStackResourceDriftsResult>
     <StackResourceDrifts>
@@ -204,33 +155,18 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ## See Also
+<a name="API_DescribeStackResourceDrifts_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeStackResource
-
-DescribeStackResources
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackResourceDrifts)
 
 All content copied from https://docs.aws.amazon.com/.

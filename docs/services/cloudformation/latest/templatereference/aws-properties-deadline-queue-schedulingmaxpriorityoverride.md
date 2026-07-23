@@ -2,52 +2,41 @@
 title: "AWS::Deadline::Queue SchedulingMaxPriorityOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Queue SchedulingMaxPriorityOverride
+<a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride"></a>
 
-The `SchedulingMaxPriorityOverride` property type specifies Property description not available. for an [AWS::Deadline::Queue](aws-resource-deadline-queue.md).
+Defines the override behavior for jobs at the maximum priority (100) in weighted balanced scheduling.
 
 ## Syntax
+<a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlwaysScheduleFirst" : Json
+  "[AlwaysScheduleFirst](#cfn-deadline-queue-schedulingmaxpriorityoverride-alwaysschedulefirst)" : {{Json}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride-syntax.yaml"></a>
 
-```yaml
-
-  AlwaysScheduleFirst: Json
-
+```
+  [AlwaysScheduleFirst](#cfn-deadline-queue-schedulingmaxpriorityoverride-alwaysschedulefirst): {{Json}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride-properties"></a>
 
-`AlwaysScheduleFirst`
-
-Property description not available.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SchedulingConfiguration
-
-SchedulingMinPriorityOverride
+`AlwaysScheduleFirst`  <a name="cfn-deadline-queue-schedulingmaxpriorityoverride-alwaysschedulefirst"></a>
+Jobs at the maximum priority (100) are always scheduled before other jobs, regardless of the weighted scheduling formula. If multiple jobs have priority 100, ties are broken using the standard weighted formula.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

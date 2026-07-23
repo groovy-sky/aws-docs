@@ -2,130 +2,108 @@
 title: "AWS::EC2::LocalGatewayVirtualInterfaceGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LocalGatewayVirtualInterfaceGroup
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup"></a>
 
 Describes a local gateway virtual interface group.
 
 ## Syntax
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::LocalGatewayVirtualInterfaceGroup",
   "Properties" : {
-      "LocalBgpAsn" : Integer,
-      "LocalBgpAsnExtended" : Integer,
-      "LocalGatewayId" : String,
-      "Tags" : [ Tag, ... ]
+      "[LocalBgpAsn](#cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasn)" : {{Integer}},
+      "[LocalBgpAsnExtended](#cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasnextended)" : {{Integer}},
+      "[LocalGatewayId](#cfn-ec2-localgatewayvirtualinterfacegroup-localgatewayid)" : {{String}},
+      "[Tags](#cfn-ec2-localgatewayvirtualinterfacegroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::LocalGatewayVirtualInterfaceGroup
 Properties:
-  LocalBgpAsn: Integer
-  LocalBgpAsnExtended: Integer
-  LocalGatewayId: String
-  Tags:
-    - Tag
-
+  [LocalBgpAsn](#cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasn): {{Integer}}
+  [LocalBgpAsnExtended](#cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasnextended): {{Integer}}
+  [LocalGatewayId](#cfn-ec2-localgatewayvirtualinterfacegroup-localgatewayid): {{String}}
+  [Tags](#cfn-ec2-localgatewayvirtualinterfacegroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-properties"></a>
 
-`LocalBgpAsn`
-
+`LocalBgpAsn`  <a name="cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasn"></a>
 The Autonomous System Number(ASN) for the local Border Gateway Protocol (BGP).
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LocalBgpAsnExtended`
-
+`LocalBgpAsnExtended`  <a name="cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasnextended"></a>
 The extended 32-bit ASN for the local BGP configuration.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LocalGatewayId`
-
+`LocalGatewayId`  <a name="cfn-ec2-localgatewayvirtualinterfacegroup-localgatewayid"></a>
 The ID of the local gateway.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-localgatewayvirtualinterfacegroup-tags"></a>
 The tags assigned to the virtual interface group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-localgatewayvirtualinterfacegroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-localgatewayvirtualinterfacegroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the local gateway virtual interface group. For example:
 
-`{ "Ref": "lgw-vif-grp-07145b276bEXAMPLE" }`
+ `{ "Ref": "lgw-vif-grp-07145b276bEXAMPLE" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ConfigurationState`
+####
+<a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-return-values-fn--getatt-fn--getatt"></a>
 
+`ConfigurationState`  <a name="ConfigurationState-fn::getatt"></a>
 The current state of the local gateway virtual interface group.
 
-`LocalGatewayVirtualInterfaceGroupArn`
-
+`LocalGatewayVirtualInterfaceGroupArn`  <a name="LocalGatewayVirtualInterfaceGroupArn-fn::getatt"></a>
 The Amazon Resource Number (ARN) of the local gateway virtual interface group.
 
-`LocalGatewayVirtualInterfaceGroupId`
-
+`LocalGatewayVirtualInterfaceGroupId`  <a name="LocalGatewayVirtualInterfaceGroupId-fn::getatt"></a>
 The ID of the virtual interface group.
 
-`LocalGatewayVirtualInterfaceIds`
-
+`LocalGatewayVirtualInterfaceIds`  <a name="LocalGatewayVirtualInterfaceIds-fn::getatt"></a>
 The IDs of the virtual interfaces.
 
-`OwnerId`
-
+`OwnerId`  <a name="OwnerId-fn::getatt"></a>
 The ID of the AWS account that owns the local gateway virtual interface group.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

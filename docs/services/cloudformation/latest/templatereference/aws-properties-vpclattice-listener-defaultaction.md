@@ -2,68 +2,51 @@
 title: "AWS::VpcLattice::Listener DefaultAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Listener DefaultAction
+<a name="aws-properties-vpclattice-listener-defaultaction"></a>
 
-The action for the default rule. Each listener has a default rule. The default rule is used
-if no other rules match.
+The action for the default rule. Each listener has a default rule. The default rule is used if no other rules match.
 
 ## Syntax
+<a name="aws-properties-vpclattice-listener-defaultaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-listener-defaultaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "FixedResponse" : FixedResponse,
-  "Forward" : Forward
+  "[FixedResponse](#cfn-vpclattice-listener-defaultaction-fixedresponse)" : {{FixedResponse}},
+  "[Forward](#cfn-vpclattice-listener-defaultaction-forward)" : {{Forward}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-listener-defaultaction-syntax.yaml"></a>
 
-```yaml
-
-  FixedResponse:
-    FixedResponse
-  Forward:
-    Forward
-
+```
+  [FixedResponse](#cfn-vpclattice-listener-defaultaction-fixedresponse): {{
+    FixedResponse}}
+  [Forward](#cfn-vpclattice-listener-defaultaction-forward): {{
+    Forward}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-listener-defaultaction-properties"></a>
 
-`FixedResponse`
-
+`FixedResponse`  <a name="cfn-vpclattice-listener-defaultaction-fixedresponse"></a>
 Describes an action that returns a custom HTTP response.
+*Required*: No
+*Type*: [FixedResponse](aws-properties-vpclattice-listener-fixedresponse.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FixedResponse](aws-properties-vpclattice-listener-fixedresponse.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Forward`
-
-Describes a forward action. You can use forward actions to route requests to one or more
-target groups.
-
-_Required_: No
-
-_Type_: [Forward](aws-properties-vpclattice-listener-forward.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::Listener
-
-FixedResponse
+`Forward`  <a name="cfn-vpclattice-listener-defaultaction-forward"></a>
+Describes a forward action. You can use forward actions to route requests to one or more target groups.
+*Required*: No
+*Type*: [Forward](aws-properties-vpclattice-listener-forward.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

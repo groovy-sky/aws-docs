@@ -2,54 +2,42 @@
 title: "AWS::EC2::TransitGatewayConnect TransitGatewayConnectOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayConnect TransitGatewayConnectOptions
+<a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions"></a>
 
 Describes the Connect attachment options.
 
 ## Syntax
+<a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Protocol" : String
+  "[Protocol](#cfn-ec2-transitgatewayconnect-transitgatewayconnectoptions-protocol)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions-syntax.yaml"></a>
 
-```yaml
-
-  Protocol: String
-
+```
+  [Protocol](#cfn-ec2-transitgatewayconnect-transitgatewayconnectoptions-protocol): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions-properties"></a>
 
-`Protocol`
-
+`Protocol`  <a name="cfn-ec2-transitgatewayconnect-transitgatewayconnectoptions-protocol"></a>
 The tunnel protocol.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `gre`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::TransitGatewayConnectPeer
+*Required*: No
+*Type*: String
+*Allowed values*: `gre`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,103 +2,84 @@
 title: "AWS::Glue::IdentityCenterConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::IdentityCenterConfiguration
+<a name="aws-resource-glue-identitycenterconfiguration"></a>
 
-Creates a new AWS Glue Identity Center configuration to enable integration between AWS Glue and AWS IAM
-Identity Center for authentication and authorization.
+Creates a new AWS Glue Identity Center configuration to enable integration between AWS Glue and AWS IAM Identity Center for authentication and authorization.
 
 ## Syntax
+<a name="aws-resource-glue-identitycenterconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-glue-identitycenterconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Glue::IdentityCenterConfiguration",
   "Properties" : {
-      "InstanceArn" : String,
-      "Scopes" : [ String, ... ],
-      "UserBackgroundSessionsEnabled" : Boolean
+      "[InstanceArn](#cfn-glue-identitycenterconfiguration-instancearn)" : {{String}},
+      "[Scopes](#cfn-glue-identitycenterconfiguration-scopes)" : {{[ String, ... ]}},
+      "[UserBackgroundSessionsEnabled](#cfn-glue-identitycenterconfiguration-userbackgroundsessionsenabled)" : {{Boolean}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-glue-identitycenterconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Glue::IdentityCenterConfiguration
 Properties:
-  InstanceArn: String
-  Scopes:
-    - String
-  UserBackgroundSessionsEnabled: Boolean
-
+  [InstanceArn](#cfn-glue-identitycenterconfiguration-instancearn): {{String}}
+  [Scopes](#cfn-glue-identitycenterconfiguration-scopes): {{
+    - String}}
+  [UserBackgroundSessionsEnabled](#cfn-glue-identitycenterconfiguration-userbackgroundsessionsenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-resource-glue-identitycenterconfiguration-properties"></a>
 
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-glue-identitycenterconfiguration-instancearn"></a>
 The Amazon Resource Name (ARN) of the Identity Center instance associated with the AWS Glue configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Scopes`
-
+`Scopes`  <a name="cfn-glue-identitycenterconfiguration-scopes"></a>
 A list of Identity Center scopes that define the permissions and access levels for the AWS Glue configuration.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserBackgroundSessionsEnabled`
-
+`UserBackgroundSessionsEnabled`  <a name="cfn-glue-identitycenterconfiguration-userbackgroundsessionsenabled"></a>
 Indicates whether users can run background sessions when using Identity Center authentication with AWS Glue services.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-glue-identitycenterconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-glue-identitycenterconfiguration-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-glue-identitycenterconfiguration-return-values-fn--getatt"></a>
 
-`AccountId`
+####
+<a name="aws-resource-glue-identitycenterconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`AccountId`  <a name="AccountId-fn::getatt"></a>
 Property description not available.
 
-`ApplicationArn`
-
+`ApplicationArn`  <a name="ApplicationArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Identity Center application associated with the AWS Glue configuration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Glue::DevEndpoint
-
-AWS::Glue::Integration
 
 All content copied from https://docs.aws.amazon.com/.

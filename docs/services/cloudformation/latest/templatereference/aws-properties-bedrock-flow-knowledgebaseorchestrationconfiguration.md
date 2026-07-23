@@ -2,91 +2,68 @@
 title: "AWS::Bedrock::Flow KnowledgeBaseOrchestrationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow KnowledgeBaseOrchestrationConfiguration
+<a name="aws-properties-bedrock-flow-knowledgebaseorchestrationconfiguration"></a>
 
 Configures how the knowledge base orchestrates the retrieval and generation process, allowing for customization of prompts, inference parameters, and performance settings.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-knowledgebaseorchestrationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-knowledgebaseorchestrationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalModelRequestFields" : Json,
-  "InferenceConfig" : PromptInferenceConfiguration,
-  "PerformanceConfig" : PerformanceConfiguration,
-  "PromptTemplate" : KnowledgeBasePromptTemplate
+  "[AdditionalModelRequestFields](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-additionalmodelrequestfields)" : {{Json}},
+  "[InferenceConfig](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-inferenceconfig)" : {{PromptInferenceConfiguration}},
+  "[PerformanceConfig](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-performanceconfig)" : {{PerformanceConfiguration}},
+  "[PromptTemplate](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-prompttemplate)" : {{KnowledgeBasePromptTemplate}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-knowledgebaseorchestrationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalModelRequestFields: Json
-  InferenceConfig:
-    PromptInferenceConfiguration
-  PerformanceConfig:
-    PerformanceConfiguration
-  PromptTemplate:
-    KnowledgeBasePromptTemplate
-
+```
+  [AdditionalModelRequestFields](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-additionalmodelrequestfields): {{Json}}
+  [InferenceConfig](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-inferenceconfig): {{
+    PromptInferenceConfiguration}}
+  [PerformanceConfig](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-performanceconfig): {{
+    PerformanceConfiguration}}
+  [PromptTemplate](#cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-prompttemplate): {{
+    KnowledgeBasePromptTemplate}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-knowledgebaseorchestrationconfiguration-properties"></a>
 
-`AdditionalModelRequestFields`
-
+`AdditionalModelRequestFields`  <a name="cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-additionalmodelrequestfields"></a>
 The additional model-specific request parameters as key-value pairs to be included in the request to the foundation model.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InferenceConfig`
-
+`InferenceConfig`  <a name="cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-inferenceconfig"></a>
 Contains inference configurations for the prompt.
+*Required*: No
+*Type*: [PromptInferenceConfiguration](aws-properties-bedrock-flow-promptinferenceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PromptInferenceConfiguration](aws-properties-bedrock-flow-promptinferenceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PerformanceConfig`
-
+`PerformanceConfig`  <a name="cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-performanceconfig"></a>
 The performance configuration options for the knowledge base retrieval and generation process.
+*Required*: No
+*Type*: [PerformanceConfiguration](aws-properties-bedrock-flow-performanceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PerformanceConfiguration](aws-properties-bedrock-flow-performanceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PromptTemplate`
-
+`PromptTemplate`  <a name="cfn-bedrock-flow-knowledgebaseorchestrationconfiguration-prompttemplate"></a>
 A custom prompt template for orchestrating the retrieval and generation process.
-
-_Required_: No
-
-_Type_: [KnowledgeBasePromptTemplate](aws-properties-bedrock-flow-knowledgebaseprompttemplate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KnowledgeBaseFlowNodeConfiguration
-
-KnowledgeBasePromptTemplate
+*Required*: No
+*Type*: [KnowledgeBasePromptTemplate](aws-properties-bedrock-flow-knowledgebaseprompttemplate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

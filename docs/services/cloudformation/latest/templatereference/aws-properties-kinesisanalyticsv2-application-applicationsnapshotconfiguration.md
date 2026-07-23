@@ -2,57 +2,45 @@
 title: "AWS::KinesisAnalyticsV2::Application ApplicationSnapshotConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application ApplicationSnapshotConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration"></a>
 
 Describes whether snapshots are enabled for a Managed Service for Apache Flink application.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SnapshotsEnabled" : Boolean
+  "[SnapshotsEnabled](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SnapshotsEnabled: Boolean
-
+```
+  [SnapshotsEnabled](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-properties"></a>
 
-`SnapshotsEnabled`
-
+`SnapshotsEnabled`  <a name="cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled"></a>
 Describes whether snapshots are enabled for a Managed Service for Apache Flink application.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ApplicationSnapshotConfiguration](../../../managed-flink/latest/apiv2/api-applicationsnapshotconfiguration.md) in the _Amazon_
-_Kinesis Data Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationRestoreConfiguration
-
-ApplicationSystemRollbackConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration--seealso"></a>
++ [ApplicationSnapshotConfiguration](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ApplicationSnapshotConfiguration.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

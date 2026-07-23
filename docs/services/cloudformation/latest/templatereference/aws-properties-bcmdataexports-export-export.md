@@ -2,133 +2,93 @@
 title: "AWS::BCMDataExports::Export Export"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export Export
+<a name="aws-properties-bcmdataexports-export-export"></a>
 
 The details that are available for an export.
 
 ## Syntax
+<a name="aws-properties-bcmdataexports-export-export-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bcmdataexports-export-export-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataQuery" : DataQuery,
-  "Description" : String,
-  "DestinationConfigurations" : DestinationConfigurations,
-  "ExportArn" : String,
-  "Name" : String,
-  "RefreshCadence" : RefreshCadence
+  "[DataQuery](#cfn-bcmdataexports-export-export-dataquery)" : {{DataQuery}},
+  "[Description](#cfn-bcmdataexports-export-export-description)" : {{String}},
+  "[DestinationConfigurations](#cfn-bcmdataexports-export-export-destinationconfigurations)" : {{DestinationConfigurations}},
+  "[ExportArn](#cfn-bcmdataexports-export-export-exportarn)" : {{String}},
+  "[Name](#cfn-bcmdataexports-export-export-name)" : {{String}},
+  "[RefreshCadence](#cfn-bcmdataexports-export-export-refreshcadence)" : {{RefreshCadence}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bcmdataexports-export-export-syntax.yaml"></a>
 
-```yaml
-
-  DataQuery:
-    DataQuery
-  Description: String
-  DestinationConfigurations:
-    DestinationConfigurations
-  ExportArn: String
-  Name: String
-  RefreshCadence:
-    RefreshCadence
-
+```
+  [DataQuery](#cfn-bcmdataexports-export-export-dataquery): {{
+    DataQuery}}
+  [Description](#cfn-bcmdataexports-export-export-description): {{String}}
+  [DestinationConfigurations](#cfn-bcmdataexports-export-export-destinationconfigurations): {{
+    DestinationConfigurations}}
+  [ExportArn](#cfn-bcmdataexports-export-export-exportarn): {{String}}
+  [Name](#cfn-bcmdataexports-export-export-name): {{String}}
+  [RefreshCadence](#cfn-bcmdataexports-export-export-refreshcadence): {{
+    RefreshCadence}}
 ```
 
 ## Properties
+<a name="aws-properties-bcmdataexports-export-export-properties"></a>
 
-`DataQuery`
-
+`DataQuery`  <a name="cfn-bcmdataexports-export-export-dataquery"></a>
 The data query for this specific data export.
+*Required*: Yes
+*Type*: [DataQuery](aws-properties-bcmdataexports-export-dataquery.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DataQuery](aws-properties-bcmdataexports-export-dataquery.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-bcmdataexports-export-export-description"></a>
 The description for this specific data export.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S\s]*$`
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S\s]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationConfigurations`
-
+`DestinationConfigurations`  <a name="cfn-bcmdataexports-export-export-destinationconfigurations"></a>
 The destination configuration for this specific data export.
+*Required*: Yes
+*Type*: [DestinationConfigurations](aws-properties-bcmdataexports-export-destinationconfigurations.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DestinationConfigurations](aws-properties-bcmdataexports-export-destinationconfigurations.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExportArn`
-
+`ExportArn`  <a name="cfn-bcmdataexports-export-export-exportarn"></a>
 The Amazon Resource Name (ARN) for this export.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:(bcm-data-exports):[-a-z0-9]*:[0-9]{12}:[-a-zA-Z0-9/:_]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:(bcm-data-exports):[-a-z0-9]*:[0-9]{12}:[-a-zA-Z0-9/:_]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bcmdataexports-export-export-name"></a>
 The name of this specific data export.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9A-Za-z\-_]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z\-_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RefreshCadence`
-
+`RefreshCadence`  <a name="cfn-bcmdataexports-export-export-refreshcadence"></a>
 The cadence for AWS to update the export in your S3 bucket.
-
-_Required_: Yes
-
-_Type_: [RefreshCadence](aws-properties-bcmdataexports-export-refreshcadence.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DestinationConfigurations
-
-RefreshCadence
+*Required*: Yes
+*Type*: [RefreshCadence](aws-properties-bcmdataexports-export-refreshcadence.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

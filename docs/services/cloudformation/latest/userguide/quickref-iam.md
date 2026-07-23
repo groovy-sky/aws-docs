@@ -3,54 +3,37 @@ title: "AWS Identity and Access Management template snippets"
 ---
 
 # AWS Identity and Access Management template snippets
+<a name="quickref-iam"></a>
 
 This section contains AWS Identity and Access Management template snippets.
 
-###### Topics
+**Topics**
++ [Declaring an IAM user resource](#scenario-iam-user)
++ [Declaring an IAM access key resource](#scenario-iam-accesskey)
++ [Declaring an IAM group resource](#scenario-iam-group)
++ [Adding users to a group](#scenario-iam-addusertogroup)
++ [Declaring an IAM policy](#scenario-iam-policy)
++ [Declaring an Amazon S3 bucket policy](#scenario-bucket-policy)
++ [Declaring an Amazon SNS topic policy](#scenario-sns-policy)
++ [Declaring an Amazon SQS policy](#scenario-sqs-policy)
++ [IAM role template examples](#scenarios-iamroles)
 
-- [Declaring an IAM user resource](#scenario-iam-user)
-
-- [Declaring an IAM access key resource](#scenario-iam-accesskey)
-
-- [Declaring an IAM group resource](#scenario-iam-group)
-
-- [Adding users to a group](#scenario-iam-addusertogroup)
-
-- [Declaring an IAM policy](#scenario-iam-policy)
-
-- [Declaring an Amazon S3 bucket policy](#scenario-bucket-policy)
-
-- [Declaring an Amazon SNS topic policy](#scenario-sns-policy)
-
-- [Declaring an Amazon SQS policy](#scenario-sqs-policy)
-
-- [IAM role template examples](#scenarios-iamroles)
-
-###### Important
-
-When creating or updating a stack using a template containing IAM resources, you must
-acknowledge the use of IAM capabilities. For more information, see [Acknowledging IAM resources in CloudFormation templates](control-access-with-iam.md#using-iam-capabilities).
+**Important**
+When creating or updating a stack using a template containing IAM resources, you must acknowledge the use of IAM capabilities. For more information, see [Acknowledging IAM resources in CloudFormation templates](control-access-with-iam.md#using-iam-capabilities).
 
 ## Declaring an IAM user resource
+<a name="scenario-iam-user"></a>
 
-This snippet shows how to declare an [AWS::IAM::User](../templatereference/aws-resource-iam-user.md) resource to create an IAM user. The user is
-declared with the path ( `"/"`) and a login profile with the password
-( `myP@ssW0rd`).
+This snippet shows how to declare an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html) resource to create an IAM user. The user is declared with the path (`"/"`) and a login profile with the password (`myP@ssW0rd`).
 
-The policy document named `giveaccesstoqueueonly` gives the user permission
-to perform all Amazon SQS actions on the Amazon SQS queue resource `myqueue`, and denies
-access to all other Amazon SQS queue resources. The `Fn::GetAtt` function gets the
-Arn attribute of the [AWS::SQS::Queue](../templatereference/aws-resource-sqs-queue.md) resource `myqueue`.
+The policy document named `giveaccesstoqueueonly` gives the user permission to perform all Amazon SQS actions on the Amazon SQS queue resource `myqueue`, and denies access to all other Amazon SQS queue resources. The `Fn::GetAtt` function gets the Arn attribute of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queue.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queue.html) resource `myqueue`.
 
-The policy document named `giveaccesstotopiconly` is added to the user to
-give the user permission to perform all Amazon SNS actions on the Amazon SNS topic resource
-`mytopic` and to deny access to all other Amazon SNS resources. The
-`Ref` function gets the ARN of the [AWS::SNS::Topic](../templatereference/aws-resource-sns-topic.md) resource `mytopic`.
+The policy document named `giveaccesstotopiconly` is added to the user to give the user permission to perform all Amazon SNS actions on the Amazon SNS topic resource `mytopic` and to deny access to all other Amazon SNS resources. The `Ref` function gets the ARN of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html) resource `mytopic`.
 
 ### JSON
+<a name="quickref-iam-example-1.json"></a>
 
-```json
-
+```
 "myuser" : {
    "Type" : "AWS::IAM::User",
    "Properties" : {
@@ -96,9 +79,9 @@ give the user permission to perform all Amazon SNS actions on the Amazon SNS top
 ```
 
 ### YAML
+<a name="quickref-iam-example-1.yaml"></a>
 
-```yaml
-
+```
 myuser:
   Type: AWS::IAM::User
   Properties:
@@ -137,15 +120,17 @@ myuser:
 ```
 
 ## Declaring an IAM access key resource
+<a name="scenario-iam-accesskey"></a>
 
-This snippet shows an [AWS::IAM::AccessKey](../templatereference/aws-resource-iam-accesskey.md) resource. The `myaccesskey`
-resource creates an access key and assigns it to an IAM user that is declared as an
-[AWS::IAM::User](../templatereference/aws-resource-iam-user.md) resource in the template.
+###
+<a name="quickref-iam-access-key"></a>
+
+This snippet shows an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-accesskey.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-accesskey.html) resource. The `myaccesskey` resource creates an access key and assigns it to an IAM user that is declared as an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html) resource in the template.
 
 #### JSON
+<a name="quickref-iam-example-2.json"></a>
 
-```json
-
+```
 "myaccesskey" : {
    "Type" : "AWS::IAM::AccessKey",
    "Properties" : {
@@ -155,9 +140,9 @@ resource creates an access key and assigns it to an IAM user that is declared as
 ```
 
 #### YAML
+<a name="quickref-iam-example-2.yaml"></a>
 
-```yaml
-
+```
 myaccesskey:
   Type: AWS::IAM::AccessKey
   Properties:
@@ -165,16 +150,15 @@ myaccesskey:
       !Ref myuser
 ```
 
-You can get the secret key for an `AWS::IAM::AccessKey` resource using the
-`Fn::GetAtt` function. One way to retrieve the secret key is to put it
-into an `Output` value. You can get the access key using the `Ref`
-function. The following `Output` value declarations get the access key and
-secret key for `myaccesskey`.
+###
+<a name="quickref-iam-access-key-2"></a>
+
+You can get the secret key for an `AWS::IAM::AccessKey` resource using the `Fn::GetAtt` function. One way to retrieve the secret key is to put it into an `Output` value. You can get the access key using the `Ref` function. The following `Output` value declarations get the access key and secret key for `myaccesskey`.
 
 #### JSON
+<a name="quickref-iam-example-3.json"></a>
 
-```json
-
+```
 "AccessKeyformyaccesskey" : {
    "Value" : { "Ref" : "myaccesskey" }
 },
@@ -186,9 +170,9 @@ secret key for `myaccesskey`.
 ```
 
 #### YAML
+<a name="quickref-iam-example-3.yaml"></a>
 
-```yaml
-
+```
 AccessKeyformyaccesskey:
   Value:
     !Ref myaccesskey
@@ -196,15 +180,15 @@ SecretKeyformyaccesskey:
   Value: !GetAtt myaccesskey.SecretAccessKey
 ```
 
-You can also pass the AWS access key and secret key to an Amazon EC2 instance or Auto
-Scaling group defined in the template. The following [AWS::EC2::Instance](../templatereference/aws-resource-ec2-instance.md) declaration uses the
-`UserData` property to pass the access key and secret key for the
-`myaccesskey` resource.
+###
+<a name="quickref-iam-access-key-3"></a>
+
+You can also pass the AWS access key and secret key to an Amazon EC2 instance or Auto Scaling group defined in the template. The following [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html) declaration uses the `UserData` property to pass the access key and secret key for the `myaccesskey` resource.
 
 #### JSON
+<a name="quickref-iam-example-4.json"></a>
 
-```json
-
+```
 "myinstance" : {
    "Type" : "AWS::EC2::Instance",
    "Properties" : {
@@ -234,9 +218,9 @@ Scaling group defined in the template. The following [AWS::EC2::Instance](../tem
 ```
 
 #### YAML
+<a name="quickref-iam-example-4.yaml"></a>
 
-```yaml
-
+```
 myinstance:
   Type: AWS::EC2::Instance
   Properties:
@@ -247,20 +231,16 @@ myinstance:
 ```
 
 ## Declaring an IAM group resource
+<a name="scenario-iam-group"></a>
 
-This snippet shows an [AWS::IAM::Group](../templatereference/aws-resource-iam-group.md) resource. The group has a path
-( `"/myapplication/"`). The policy document named `myapppolicy` is
-added to the group to allow the group's users to perform all Amazon SQS actions on the Amazon SQS
-queue resource myqueue and deny access to all other Amazon SQS resources except
-`myqueue`.
+This snippet shows an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-group.html) resource. The group has a path (`"/myapplication/"`). The policy document named `myapppolicy` is added to the group to allow the group's users to perform all Amazon SQS actions on the Amazon SQS queue resource myqueue and deny access to all other Amazon SQS resources except `myqueue`.
 
-To assign a policy to a resource, IAM requires the Amazon Resource Name (ARN) for the
-resource. In the snippet, the `Fn::GetAtt` function gets the ARN of the [AWS::SQS::Queue](../templatereference/aws-resource-sqs-queue.md) resource queue.
+To assign a policy to a resource, IAM requires the Amazon Resource Name (ARN) for the resource. In the snippet, the `Fn::GetAtt` function gets the ARN of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queue.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queue.html) resource queue.
 
 ### JSON
+<a name="quickref-iam-example-5.json"></a>
 
-```json
-
+```
 "mygroup" : {
    "Type" : "AWS::IAM::Group",
    "Properties" : {
@@ -288,9 +268,9 @@ resource. In the snippet, the `Fn::GetAtt` function gets the ARN of the [AWS::SQ
 ```
 
 ### YAML
+<a name="quickref-iam-example-5.yaml"></a>
 
-```yaml
-
+```
 mygroup:
   Type: AWS::IAM::Group
   Properties:
@@ -311,17 +291,14 @@ mygroup:
 ```
 
 ## Adding users to a group
+<a name="scenario-iam-addusertogroup"></a>
 
-The [AWS::IAM::UserToGroupAddition](../templatereference/aws-resource-iam-usertogroupaddition.md) resource adds users to a group.
-In the following snippet, the `addUserToGroup` resource adds the following users
-to an existing group named `myexistinggroup2`: the existing user
-`existinguser1` and the user `myuser` which is declared as an
-[AWS::IAM::User](../templatereference/aws-resource-iam-user.md) resource in the template.
+The [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-usertogroupaddition.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-usertogroupaddition.html) resource adds users to a group. In the following snippet, the `addUserToGroup` resource adds the following users to an existing group named `myexistinggroup2`: the existing user `existinguser1` and the user `myuser` which is declared as an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html) resource in the template.
 
 ### JSON
+<a name="quickref-iam-example-6.json"></a>
 
-```json
-
+```
 "addUserToGroup" : {
    "Type" : "AWS::IAM::UserToGroupAddition",
    "Properties" : {
@@ -332,9 +309,9 @@ to an existing group named `myexistinggroup2`: the existing user
 ```
 
 ### YAML
+<a name="quickref-iam-example-6.yaml"></a>
 
-```yaml
-
+```
 addUserToGroup:
   Type: AWS::IAM::UserToGroupAddition
   Properties:
@@ -345,22 +322,14 @@ addUserToGroup:
 ```
 
 ## Declaring an IAM policy
+<a name="scenario-iam-policy"></a>
 
-This snippet shows how to create a policy and apply it to multiple groups using an
-[AWS::IAM::Policy](../templatereference/aws-resource-iam-policy.md) resource named `mypolicy`. The
-`mypolicy` resource contains a `PolicyDocument` property that
-allows `GetObject`, `PutObject`, and `PutObjectAcl`
-actions on the objects in the S3 bucket represented by the ARN
-`arn:aws:s3:::myAWSBucket`. The `mypolicy` resource applies the
-policy to an existing group named `myexistinggroup1` and a group
-`mygroup` that's declared in the template as an [AWS::IAM::Group](../templatereference/aws-resource-iam-group.md) resource. This example shows how to apply a
-policy to a group using the `Groups` property; however, you can alternatively
-use the `Users` property to add a policy document to a list of users.
+This snippet shows how to create a policy and apply it to multiple groups using an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-policy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-policy.html) resource named `mypolicy`. The `mypolicy` resource contains a `PolicyDocument` property that allows `GetObject`, `PutObject`, and `PutObjectAcl` actions on the objects in the S3 bucket represented by the ARN `arn:aws:s3:::myAWSBucket`. The `mypolicy` resource applies the policy to an existing group named `myexistinggroup1` and a group `mygroup` that's declared in the template as an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-group.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-group.html) resource. This example shows how to apply a policy to a group using the `Groups` property; however, you can alternatively use the `Users` property to add a policy document to a list of users.
 
 ### JSON
+<a name="quickref-iam-example-7.json"></a>
 
-```json
-
+```
 "mypolicy" : {
    "Type" : "AWS::IAM::Policy",
    "Properties" : {
@@ -380,9 +349,9 @@ use the `Users` property to add a policy document to a list of users.
 ```
 
 ### YAML
+<a name="quickref-iam-example-7.yaml"></a>
 
-```yaml
-
+```
 mypolicy:
   Type: AWS::IAM::Policy
   Properties:
@@ -402,21 +371,14 @@ mypolicy:
 ```
 
 ## Declaring an Amazon S3 bucket policy
+<a name="scenario-bucket-policy"></a>
 
-This snippet shows how to create a policy and apply it to an Amazon S3 bucket using the
-[AWS::S3::BucketPolicy](../templatereference/aws-resource-s3-bucket.md) resource. The
-`mybucketpolicy` resource declares a policy document that allows the
-`user1` IAM user to perform the `GetObject` action on all
-objects in the S3 bucket to which this policy is applied. In the snippet, the
-`Fn::GetAtt` function gets the ARN of the `user1` resource. The
-`mybucketpolicy` resource applies the policy to the
-`AWS::S3::BucketPolicy` resource mybucket. The `Ref` function gets
-the bucket name of the `mybucket` resource.
+This snippet shows how to create a policy and apply it to an Amazon S3 bucket using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html) resource. The `mybucketpolicy` resource declares a policy document that allows the `user1` IAM user to perform the `GetObject` action on all objects in the S3 bucket to which this policy is applied. In the snippet, the `Fn::GetAtt` function gets the ARN of the `user1` resource. The `mybucketpolicy` resource applies the policy to the `AWS::S3::BucketPolicy` resource mybucket. The `Ref` function gets the bucket name of the `mybucket` resource.
 
 ### JSON
+<a name="quickref-iam-example-8.json"></a>
 
-```json
-
+```
 "mybucketpolicy" : {
    "Type" : "AWS::S3::BucketPolicy",
    "Properties" : {
@@ -441,9 +403,9 @@ the bucket name of the `mybucket` resource.
 ```
 
 ### YAML
+<a name="quickref-iam-example-8.yaml"></a>
 
-```yaml
-
+```
 mybucketpolicy:
   Type: AWS::S3::BucketPolicy
   Properties:
@@ -462,19 +424,14 @@ mybucketpolicy:
 ```
 
 ## Declaring an Amazon SNS topic policy
+<a name="scenario-sns-policy"></a>
 
-This snippet shows how to create a policy and apply it to an Amazon SNS topic using the
-[AWS::SNS::TopicPolicy](../templatereference/aws-resource-sns-topicpolicy.md) resource. The `mysnspolicy`
-resource contains a `PolicyDocument` property that allows the [AWS::IAM::User](../templatereference/aws-resource-iam-user.md) resource `myuser` to perform the
-`Publish` action on an [AWS::SNS::Topic](../templatereference/aws-resource-sns-topic.md) resource `mytopic`. In the
-snippet, the `Fn::GetAtt` function gets the ARN for the `myuser`
-resource and the `Ref` function gets the ARN for the `mytopic`
-resource.
+This snippet shows how to create a policy and apply it to an Amazon SNS topic using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topicpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topicpolicy.html) resource. The `mysnspolicy` resource contains a `PolicyDocument` property that allows the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html) resource `myuser` to perform the `Publish` action on an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html) resource `mytopic`. In the snippet, the `Fn::GetAtt` function gets the ARN for the `myuser` resource and the `Ref` function gets the ARN for the `mytopic` resource.
 
 ### JSON
+<a name="quickref-iam-example-9.json"></a>
 
-```json
-
+```
 "mysnspolicy" : {
    "Type" : "AWS::SNS::TopicPolicy",
    "Properties" : {
@@ -497,9 +454,9 @@ resource.
 ```
 
 ### YAML
+<a name="quickref-iam-example-9.yaml"></a>
 
-```yaml
-
+```
 mysnspolicy:
   Type: AWS::SNS::TopicPolicy
   Properties:
@@ -518,18 +475,14 @@ mysnspolicy:
 ```
 
 ## Declaring an Amazon SQS policy
+<a name="scenario-sqs-policy"></a>
 
-This snippet shows how to create a policy and apply it to an Amazon SQS queue using the
-[AWS::SQS::QueuePolicy](../templatereference/aws-resource-sqs-queuepolicy.md) resource. The
-`PolicyDocument` property allows the existing user `myapp`
-(specified by its ARN) to perform the `SendMessage` action on an existing queue,
-which is specified by its URL, and an [AWS::SQS::Queue](../templatereference/aws-resource-sqs-queue.md) resource myqueue. The [Ref](resources-section-structure.md#resource-properties-ref) function gets the URL for the
-`myqueue` resource.
+This snippet shows how to create a policy and apply it to an Amazon SQS queue using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queuepolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queuepolicy.html) resource. The `PolicyDocument` property allows the existing user `myapp` (specified by its ARN) to perform the `SendMessage` action on an existing queue, which is specified by its URL, and an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queue.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sqs-queue.html) resource myqueue. The [Ref](resources-section-structure.md#resource-properties-ref) function gets the URL for the `myqueue` resource.
 
 ### JSON
+<a name="quickref-iam-example-10.json"></a>
 
-```json
-
+```
 "mysqspolicy" : {
    "Type" : "AWS::SQS::QueuePolicy",
    "Properties" : {
@@ -547,7 +500,7 @@ which is specified by its URL, and an [AWS::SQS::Queue](../templatereference/aws
          } ]
       },
       "Queues" : [
-         "https://sqs.us-east-2aws-region.amazonaws.com/123456789012/myexistingqueue",
+         "https://sqs.us-east-2{{aws-region}}.amazonaws.com/123456789012/myexistingqueue",
          { "Ref" : "myqueue" }
       ]
    }
@@ -555,9 +508,9 @@ which is specified by its URL, and an [AWS::SQS::Queue](../templatereference/aws
 ```
 
 ### YAML
+<a name="quickref-iam-example-10.yaml"></a>
 
-```yaml
-
+```
 mysqspolicy:
   Type: AWS::SQS::QueuePolicy
   Properties:
@@ -573,28 +526,26 @@ mysqspolicy:
         - sqs:SendMessage
         Resource: "*"
     Queues:
-    - https://sqs.aws-region.amazonaws.com/123456789012/myexistingqueue
+    - https://sqs.{{aws-region}}.amazonaws.com/123456789012/myexistingqueue
     - !Ref myqueue
 ```
 
 ## IAM role template examples
+<a name="scenarios-iamroles"></a>
 
-This section provides CloudFormation template examples for IAM roles for EC2
-instances.
+This section provides CloudFormation template examples for IAM roles for EC2 instances.
 
-For more information, see [IAM roles for Amazon EC2](../../../ec2/latest/userguide/iam-roles-for-amazon-ec2.md) in the
-_Amazon EC2 User Guide_.
+For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) in the *Amazon EC2 User Guide*.
 
 ### IAM role with EC2
+<a name="scenario-iamrole-ec2"></a>
 
-In this example, the instance profile is referenced by the
-`IamInstanceProfile` property of the EC2 instance. Both the instance
-policy and role policy reference [AWS::IAM::Role](../templatereference/aws-resource-iam-role.md).
+In this example, the instance profile is referenced by the `IamInstanceProfile` property of the EC2 instance. Both the instance policy and role policy reference [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html).
 
 #### JSON
+<a name="quickref-iam-example-11.json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -654,9 +605,9 @@ policy and role policy reference [AWS::IAM::Role](../templatereference/aws-resou
 ```
 
 #### YAML
+<a name="quickref-iam-example-11.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myEC2Instance:
@@ -703,15 +654,14 @@ Resources:
 ```
 
 ### IAM role with Auto Scaling group
+<a name="scenario-iamrole-asg"></a>
 
-In this example, the instance profile is referenced by the
-`IamInstanceProfile` property of an Amazon EC2 Auto Scaling launch
-configuration.
+In this example, the instance profile is referenced by the `IamInstanceProfile` property of an Amazon EC2 Auto Scaling launch configuration.
 
 #### JSON
+<a name="quickref-iam-example-12.json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -780,9 +730,9 @@ configuration.
 ```
 
 #### YAML
+<a name="quickref-iam-example-12.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myLCOne:
@@ -838,11 +788,5 @@ Resources:
       Roles:
       - !Ref RootRole
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Elastic Load Balancing
-
-AWS Lambda
 
 All content copied from https://docs.aws.amazon.com/.

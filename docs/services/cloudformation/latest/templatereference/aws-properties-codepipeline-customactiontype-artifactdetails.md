@@ -2,72 +2,53 @@
 title: "AWS::CodePipeline::CustomActionType ArtifactDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::CustomActionType ArtifactDetails
+<a name="aws-properties-codepipeline-customactiontype-artifactdetails"></a>
 
 Returns information about the details of an artifact.
 
 ## Syntax
+<a name="aws-properties-codepipeline-customactiontype-artifactdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-customactiontype-artifactdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaximumCount" : Integer,
-  "MinimumCount" : Integer
+  "[MaximumCount](#cfn-codepipeline-customactiontype-artifactdetails-maximumcount)" : {{Integer}},
+  "[MinimumCount](#cfn-codepipeline-customactiontype-artifactdetails-minimumcount)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-customactiontype-artifactdetails-syntax.yaml"></a>
 
-```yaml
-
-  MaximumCount: Integer
-  MinimumCount: Integer
-
+```
+  [MaximumCount](#cfn-codepipeline-customactiontype-artifactdetails-maximumcount): {{Integer}}
+  [MinimumCount](#cfn-codepipeline-customactiontype-artifactdetails-minimumcount): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-customactiontype-artifactdetails-properties"></a>
 
-`MaximumCount`
-
+`MaximumCount`  <a name="cfn-codepipeline-customactiontype-artifactdetails-maximumcount"></a>
 The maximum number of artifacts allowed for the action type.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MinimumCount`
-
+`MinimumCount`  <a name="cfn-codepipeline-customactiontype-artifactdetails-minimumcount"></a>
 The minimum number of artifacts allowed for the action type.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CodePipeline::CustomActionType
-
-ConfigurationProperties
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

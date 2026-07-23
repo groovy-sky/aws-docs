@@ -2,62 +2,44 @@
 title: "AWS::SES::VdmAttributes DashboardAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::VdmAttributes DashboardAttributes
+<a name="aws-properties-ses-vdmattributes-dashboardattributes"></a>
 
-An object containing additional settings for your VDM configuration as applicable to
-the Dashboard.
+An object containing additional settings for your VDM configuration as applicable to the Dashboard.
 
 ## Syntax
+<a name="aws-properties-ses-vdmattributes-dashboardattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-vdmattributes-dashboardattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "EngagementMetrics" : String
+  "[EngagementMetrics](#cfn-ses-vdmattributes-dashboardattributes-engagementmetrics)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-vdmattributes-dashboardattributes-syntax.yaml"></a>
 
-```yaml
-
-  EngagementMetrics: String
-
+```
+  [EngagementMetrics](#cfn-ses-vdmattributes-dashboardattributes-engagementmetrics): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-vdmattributes-dashboardattributes-properties"></a>
 
-`EngagementMetrics`
-
-Specifies the status of your VDM engagement metrics collection. Can be one of the
-following:
-
-- `ENABLED` – Amazon SES enables engagement metrics for your
-account.
-
-- `DISABLED` – Amazon SES disables engagement metrics for your
-account.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `ENABLED|DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SES::VdmAttributes
-
-GuardianAttributes
+`EngagementMetrics`  <a name="cfn-ses-vdmattributes-dashboardattributes-engagementmetrics"></a>
+Specifies the status of your VDM engagement metrics collection. Can be one of the following:
++ `ENABLED` – Amazon SES enables engagement metrics for your account.
++ `DISABLED` – Amazon SES disables engagement metrics for your account.
+*Required*: No
+*Type*: String
+*Pattern*: `ENABLED|DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::ActionConnector ClientCredentialsDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::ActionConnector ClientCredentialsDetails
+<a name="aws-properties-quicksight-actionconnector-clientcredentialsdetails"></a>
 
 Details for OAuth 2.0 client credentials grant authentication.
 
 ## Syntax
+<a name="aws-properties-quicksight-actionconnector-clientcredentialsdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-actionconnector-clientcredentialsdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientCredentialsGrantDetails" : ClientCredentialsGrantDetails
+  "[ClientCredentialsGrantDetails](#cfn-quicksight-actionconnector-clientcredentialsdetails-clientcredentialsgrantdetails)" : {{ClientCredentialsGrantDetails}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-actionconnector-clientcredentialsdetails-syntax.yaml"></a>
 
-```yaml
-
-  ClientCredentialsGrantDetails:
-    ClientCredentialsGrantDetails
-
+```
+  [ClientCredentialsGrantDetails](#cfn-quicksight-actionconnector-clientcredentialsdetails-clientcredentialsgrantdetails): {{
+    ClientCredentialsGrantDetails}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-actionconnector-clientcredentialsdetails-properties"></a>
 
-`ClientCredentialsGrantDetails`
-
+`ClientCredentialsGrantDetails`  <a name="cfn-quicksight-actionconnector-clientcredentialsdetails-clientcredentialsgrantdetails"></a>
 The OAuth2 client credentials grant configuration details for authentication.
-
-_Required_: Yes
-
-_Type_: [ClientCredentialsGrantDetails](aws-properties-quicksight-actionconnector-clientcredentialsgrantdetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BasicAuthConnectionMetadata
-
-ClientCredentialsGrantDetails
+*Required*: Yes
+*Type*: [ClientCredentialsGrantDetails](aws-properties-quicksight-actionconnector-clientcredentialsgrantdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

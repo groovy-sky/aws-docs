@@ -2,124 +2,84 @@
 title: "AWS::S3::StorageLens S3BucketDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens S3BucketDestination
+<a name="aws-properties-s3-storagelens-s3bucketdestination"></a>
 
-This resource contains the details of the bucket where the Amazon S3 Storage Lens metrics
-export will be placed.
+This resource contains the details of the bucket where the Amazon S3 Storage Lens metrics export will be placed.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-s3bucketdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-s3bucketdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountId" : String,
-  "Arn" : String,
-  "Encryption" : Encryption,
-  "Format" : String,
-  "OutputSchemaVersion" : String,
-  "Prefix" : String
+  "[AccountId](#cfn-s3-storagelens-s3bucketdestination-accountid)" : {{String}},
+  "[Arn](#cfn-s3-storagelens-s3bucketdestination-arn)" : {{String}},
+  "[Encryption](#cfn-s3-storagelens-s3bucketdestination-encryption)" : {{Encryption}},
+  "[Format](#cfn-s3-storagelens-s3bucketdestination-format)" : {{String}},
+  "[OutputSchemaVersion](#cfn-s3-storagelens-s3bucketdestination-outputschemaversion)" : {{String}},
+  "[Prefix](#cfn-s3-storagelens-s3bucketdestination-prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-s3bucketdestination-syntax.yaml"></a>
 
-```yaml
-
-  AccountId: String
-  Arn: String
-  Encryption:
-    Encryption
-  Format: String
-  OutputSchemaVersion: String
-  Prefix: String
-
+```
+  [AccountId](#cfn-s3-storagelens-s3bucketdestination-accountid): {{String}}
+  [Arn](#cfn-s3-storagelens-s3bucketdestination-arn): {{String}}
+  [Encryption](#cfn-s3-storagelens-s3bucketdestination-encryption): {{
+    Encryption}}
+  [Format](#cfn-s3-storagelens-s3bucketdestination-format): {{String}}
+  [OutputSchemaVersion](#cfn-s3-storagelens-s3bucketdestination-outputschemaversion): {{String}}
+  [Prefix](#cfn-s3-storagelens-s3bucketdestination-prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-s3bucketdestination-properties"></a>
 
-`AccountId`
+`AccountId`  <a name="cfn-s3-storagelens-s3bucketdestination-accountid"></a>
+This property contains the details of the AWS account ID of the S3 Storage Lens export bucket destination.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This property contains the details of the AWS account ID of the S3
-Storage Lens export bucket destination.
+`Arn`  <a name="cfn-s3-storagelens-s3bucketdestination-arn"></a>
+This property contains the details of the ARN of the bucket destination of the S3 Storage Lens export.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Encryption`  <a name="cfn-s3-storagelens-s3bucketdestination-encryption"></a>
+This property contains the details of the encryption of the bucket destination of the Amazon S3 Storage Lens metrics export.
+*Required*: No
+*Type*: [Encryption](aws-properties-s3-storagelens-encryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Format`  <a name="cfn-s3-storagelens-s3bucketdestination-format"></a>
+This property contains the details of the format of the S3 Storage Lens export bucket destination.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CSV | Parquet`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`OutputSchemaVersion`  <a name="cfn-s3-storagelens-s3bucketdestination-outputschemaversion"></a>
+This property contains the details of the output schema version of the S3 Storage Lens export bucket destination.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `V_1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Arn`
-
-This property contains the details of the ARN of the bucket destination of the S3 Storage
-Lens export.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Encryption`
-
-This property contains the details of the encryption of the bucket destination of the
-Amazon S3 Storage Lens metrics export.
-
-_Required_: No
-
-_Type_: [Encryption](aws-properties-s3-storagelens-encryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Format`
-
-This property contains the details of the format of the S3 Storage Lens export bucket
-destination.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CSV | Parquet`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputSchemaVersion`
-
-This property contains the details of the output schema version of the S3 Storage Lens
-export bucket destination.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `V_1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
-This property contains the details of the prefix of the bucket destination of the S3
-Storage Lens export .
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrefixLevelStorageMetrics
-
-SelectionCriteria
+`Prefix`  <a name="cfn-s3-storagelens-s3bucketdestination-prefix"></a>
+This property contains the details of the prefix of the bucket destination of the S3 Storage Lens export .
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,189 +2,131 @@
 title: "AWS::Deadline::Fleet ServiceManagedEc2InstanceCapabilities"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet ServiceManagedEc2InstanceCapabilities
+<a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities"></a>
 
 The Amazon EC2 instance capabilities.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities-syntax.json"></a>
 
-```json
-
+```
 {
-  "AcceleratorCapabilities" : AcceleratorCapabilities,
-  "AllowedInstanceTypes" : [ String, ... ],
-  "CpuArchitectureType" : String,
-  "CustomAmounts" : [ FleetAmountCapability, ... ],
-  "CustomAttributes" : [ FleetAttributeCapability, ... ],
-  "ExcludedInstanceTypes" : [ String, ... ],
-  "MemoryMiB" : MemoryMiBRange,
-  "OsFamily" : String,
-  "RootEbsVolume" : Ec2EbsVolume,
-  "VCpuCount" : VCpuCountRange
+  "[AcceleratorCapabilities](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-acceleratorcapabilities)" : {{AcceleratorCapabilities}},
+  "[AllowedInstanceTypes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-allowedinstancetypes)" : {{[ String, ... ]}},
+  "[CpuArchitectureType](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-cpuarchitecturetype)" : {{String}},
+  "[CustomAmounts](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-customamounts)" : {{[ FleetAmountCapability, ... ]}},
+  "[CustomAttributes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-customattributes)" : {{[ FleetAttributeCapability, ... ]}},
+  "[ExcludedInstanceTypes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-excludedinstancetypes)" : {{[ String, ... ]}},
+  "[MemoryMiB](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-memorymib)" : {{MemoryMiBRange}},
+  "[OsFamily](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-osfamily)" : {{String}},
+  "[RootEbsVolume](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-rootebsvolume)" : {{Ec2EbsVolume}},
+  "[VCpuCount](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-vcpucount)" : {{VCpuCountRange}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities-syntax.yaml"></a>
 
-```yaml
-
-  AcceleratorCapabilities:
-    AcceleratorCapabilities
-  AllowedInstanceTypes:
-    - String
-  CpuArchitectureType: String
-  CustomAmounts:
-    - FleetAmountCapability
-  CustomAttributes:
-    - FleetAttributeCapability
-  ExcludedInstanceTypes:
-    - String
-  MemoryMiB:
-    MemoryMiBRange
-  OsFamily: String
-  RootEbsVolume:
-    Ec2EbsVolume
-  VCpuCount:
-    VCpuCountRange
-
+```
+  [AcceleratorCapabilities](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-acceleratorcapabilities): {{
+    AcceleratorCapabilities}}
+  [AllowedInstanceTypes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-allowedinstancetypes): {{
+    - String}}
+  [CpuArchitectureType](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-cpuarchitecturetype): {{String}}
+  [CustomAmounts](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-customamounts): {{
+    - FleetAmountCapability}}
+  [CustomAttributes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-customattributes): {{
+    - FleetAttributeCapability}}
+  [ExcludedInstanceTypes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-excludedinstancetypes): {{
+    - String}}
+  [MemoryMiB](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-memorymib): {{
+    MemoryMiBRange}}
+  [OsFamily](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-osfamily): {{String}}
+  [RootEbsVolume](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-rootebsvolume): {{
+    Ec2EbsVolume}}
+  [VCpuCount](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-vcpucount): {{
+    VCpuCountRange}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities-properties"></a>
 
-`AcceleratorCapabilities`
+`AcceleratorCapabilities`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-acceleratorcapabilities"></a>
+Describes the GPU accelerator capabilities required for worker host instances in this fleet.
+*Required*: No
+*Type*: [AcceleratorCapabilities](aws-properties-deadline-fleet-acceleratorcapabilities.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Describes the GPU accelerator capabilities required for worker host instances in this
-fleet.
-
-_Required_: No
-
-_Type_: [AcceleratorCapabilities](aws-properties-deadline-fleet-acceleratorcapabilities.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowedInstanceTypes`
-
+`AllowedInstanceTypes`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-allowedinstancetypes"></a>
 The allowable Amazon EC2 instance types.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `100 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CpuArchitectureType`
-
+`CpuArchitectureType`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-cpuarchitecturetype"></a>
 The CPU architecture type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `x86_64 | arm64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `x86_64 | arm64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomAmounts`
-
+`CustomAmounts`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-customamounts"></a>
 The custom capability amounts to require for instances in this fleet.
+*Required*: No
+*Type*: Array of [FleetAmountCapability](aws-properties-deadline-fleet-fleetamountcapability.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FleetAmountCapability](aws-properties-deadline-fleet-fleetamountcapability.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomAttributes`
-
+`CustomAttributes`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-customattributes"></a>
 The custom capability attributes to require for instances in this fleet.
+*Required*: No
+*Type*: Array of [FleetAttributeCapability](aws-properties-deadline-fleet-fleetattributecapability.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FleetAttributeCapability](aws-properties-deadline-fleet-fleetattributecapability.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludedInstanceTypes`
-
+`ExcludedInstanceTypes`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-excludedinstancetypes"></a>
 The instance types to exclude from the fleet.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `100 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MemoryMiB`
-
+`MemoryMiB`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-memorymib"></a>
 The memory, as MiB, for the Amazon EC2 instance type.
+*Required*: Yes
+*Type*: [MemoryMiBRange](aws-properties-deadline-fleet-memorymibrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [MemoryMiBRange](aws-properties-deadline-fleet-memorymibrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OsFamily`
-
+`OsFamily`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-osfamily"></a>
 The operating system (OS) family.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `LINUX | WINDOWS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `LINUX | WINDOWS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RootEbsVolume`
-
+`RootEbsVolume`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-rootebsvolume"></a>
 The root EBS volume.
+*Required*: No
+*Type*: [Ec2EbsVolume](aws-properties-deadline-fleet-ec2ebsvolume.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Ec2EbsVolume](aws-properties-deadline-fleet-ec2ebsvolume.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VCpuCount`
-
+`VCpuCount`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-vcpucount"></a>
 The amount of vCPU to require for instances in this fleet.
-
-_Required_: Yes
-
-_Type_: [VCpuCountRange](aws-properties-deadline-fleet-vcpucountrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceManagedEc2FleetConfiguration
-
-ServiceManagedEc2InstanceMarketOptions
+*Required*: Yes
+*Type*: [VCpuCountRange](aws-properties-deadline-fleet-vcpucountrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

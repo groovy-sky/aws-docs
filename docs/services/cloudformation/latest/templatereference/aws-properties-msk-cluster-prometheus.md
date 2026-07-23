@@ -2,66 +2,51 @@
 title: "AWS::MSK::Cluster Prometheus"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster Prometheus
+<a name="aws-properties-msk-cluster-prometheus"></a>
 
 Prometheus settings for open monitoring.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-prometheus-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-prometheus-syntax.json"></a>
 
-```json
-
+```
 {
-  "JmxExporter" : JmxExporter,
-  "NodeExporter" : NodeExporter
+  "[JmxExporter](#cfn-msk-cluster-prometheus-jmxexporter)" : {{JmxExporter}},
+  "[NodeExporter](#cfn-msk-cluster-prometheus-nodeexporter)" : {{NodeExporter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-prometheus-syntax.yaml"></a>
 
-```yaml
-
-  JmxExporter:
-    JmxExporter
-  NodeExporter:
-    NodeExporter
-
+```
+  [JmxExporter](#cfn-msk-cluster-prometheus-jmxexporter): {{
+    JmxExporter}}
+  [NodeExporter](#cfn-msk-cluster-prometheus-nodeexporter): {{
+    NodeExporter}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-prometheus-properties"></a>
 
-`JmxExporter`
-
+`JmxExporter`  <a name="cfn-msk-cluster-prometheus-jmxexporter"></a>
 Indicates whether you want to enable or disable the JMX Exporter.
+*Required*: No
+*Type*: [JmxExporter](aws-properties-msk-cluster-jmxexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JmxExporter](aws-properties-msk-cluster-jmxexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NodeExporter`
-
+`NodeExporter`  <a name="cfn-msk-cluster-prometheus-nodeexporter"></a>
 Indicates whether you want to enable or disable the Node Exporter.
-
-_Required_: No
-
-_Type_: [NodeExporter](aws-properties-msk-cluster-nodeexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OpenMonitoring
-
-ProvisionedThroughput
+*Required*: No
+*Type*: [NodeExporter](aws-properties-msk-cluster-nodeexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

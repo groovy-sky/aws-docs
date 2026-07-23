@@ -3,422 +3,217 @@ title: "DynamoDB API operations supported by resource-based policies"
 ---
 
 # DynamoDB API operations supported by resource-based policies
+<a name="rbac-iam-actions"></a>
 
-This topic lists the API operations that are supported by resource-based policies.
-However, for cross-account access, you can only use a certain set of DynamoDB APIs through
-resource-based policies. You can't attach resource-based policies to resource types, such as
-backups and imports. The IAM actions, which correspond with the APIs operating on these
-resource types, are excluded from the supported IAM actions in resource-based policies.
-Because table administrators configure internal table settings within the same account, APIs,
-such as [UpdateTimeToLive](../../../../reference/amazondynamodb/latest/apireference/api-updatetimetolive.md)
-and [DisableKinesisStreamingDestination](../../../../reference/amazondynamodb/latest/apireference/api-disablekinesisstreamingdestination.md), don't support cross-account access through
-resource-based policies.
+This topic lists the API operations that are supported by resource-based policies. However, for cross-account access, you can only use a certain set of DynamoDB APIs through resource-based policies. You can't attach resource-based policies to resource types, such as backups and imports. The IAM actions, which correspond with the APIs operating on these resource types, are excluded from the supported IAM actions in resource-based policies. Because table administrators configure internal table settings within the same account, APIs, such as [UpdateTimeToLive](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTimeToLive.html) and [DisableKinesisStreamingDestination](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DisableKinesisStreamingDestination.html), don't support cross-account access through resource-based policies.
 
-The DynamoDB data plane and control plane APIs that support cross-account access also support
-table name overloading, which lets you specify the table ARN instead of the table name. You
-can specify table ARN in the `TableName` parameter of these APIs. However, not all
-of these APIs support cross-account access.
+The DynamoDB data plane and control plane APIs that support cross-account access also support table name overloading, which lets you specify the table ARN instead of the table name. You can specify table ARN in the `TableName` parameter of these APIs. However, not all of these APIs support cross-account access.
 
-###### Topics
-
-- [Data plane API operations](#rbac-data-plane-actions)
-
-- [PartiQL API operations](#rbac-partiql-actions)
-
-- [Control plane API operations](#rbac-control-plane-actions)
-
-- [Version 2019.11.21 (Current) global tables API operations](#rbac-current-global-table-actions)
-
-- [Version 2017.11.29 (Legacy) global tables API operations](#rbac-legacy-global-table-actions)
-
-- [Tags API operations](#rbac-tags-actions)
-
-- [Backup and Restore API operations](#rbac-backup-restore-actions)
-
-- [Continuous Backup/Restore (PITR) API operations](#rbac-continuous-backup-restore-actions)
-
-- [Contributor Insights API operations](#rbac-contributor-insights-actions)
-
-- [Export API operations](#rbac-export-actions)
-
-- [Import API operations](#rbac-import-actions)
-
-- [Amazon Kinesis Data Streams API operations](#rbac-kinesis-actions)
-
-- [Resource-based policy API operations](#rbac-rbp-actions)
-
-- [Time-to-Live API operations](#rbac-ttl-actions)
-
-- [Other API operations](#rbac-other-actions)
-
-- [DynamoDB Streams API operations](#rbac-ds-actions)
+**Topics**
++ [Data plane API operations](#rbac-data-plane-actions)
++ [PartiQL API operations](#rbac-partiql-actions)
++ [Control plane API operations](#rbac-control-plane-actions)
++ [Version 2019.11.21 (Current) global tables API operations](#rbac-current-global-table-actions)
++ [Version 2017.11.29 (Legacy) global tables API operations](#rbac-legacy-global-table-actions)
++ [Tags API operations](#rbac-tags-actions)
++ [Backup and Restore API operations](#rbac-backup-restore-actions)
++ [Continuous Backup/Restore (PITR) API operations](#rbac-continuous-backup-restore-actions)
++ [Contributor Insights API operations](#rbac-contributor-insights-actions)
++ [Export API operations](#rbac-export-actions)
++ [Import API operations](#rbac-import-actions)
++ [Amazon Kinesis Data Streams API operations](#rbac-kinesis-actions)
++ [Resource-based policy API operations](#rbac-rbp-actions)
++ [Time-to-Live API operations](#rbac-ttl-actions)
++ [Other API operations](#rbac-other-actions)
++ [DynamoDB Streams API operations](#rbac-ds-actions)
 
 ## Data plane API operations
+<a name="rbac-data-plane-actions"></a>
 
-The following table lists the API-level support provided by [data plane](howitworks-api.md#HowItWorks.API.DataPlane) API operations for resource-based
-policies and cross-account access.
+The following table lists the API-level support provided by [data plane](HowItWorks.API.md#HowItWorks.API.DataPlane) API operations for resource-based policies and cross-account access.
 
-Data Plane - Tables/indexes APIsResource-based policy supportCross-account support
-
-[DeleteItem](../../../../reference/amazondynamodb/latest/apireference/api-deleteitem.md)
-
-YesYes
-
-[GetItem](../../../../reference/amazondynamodb/latest/apireference/api-getitem.md)
-
-YesYes
-
-[PutItem](../../../../reference/amazondynamodb/latest/apireference/api-putitem.md)
-
-YesYes
-
-[Query](../../../../reference/amazondynamodb/latest/apireference/api-query.md)
-
-YesYes
-
-[Scan](../../../../reference/amazondynamodb/latest/apireference/api-scan.md)
-
-YesYes
-
-[UpdateItem](../../../../reference/amazondynamodb/latest/apireference/api-updateitem.md)
-
-YesYes
-
-[TransactGetItems](../../../../reference/amazondynamodb/latest/apireference/api-transactgetitems.md)
-
-YesYes
-
-[TransactWriteItems](../../../../reference/amazondynamodb/latest/apireference/api-transactwriteitems.md)
-
-YesYes
-
-[BatchGetItem](../../../../reference/amazondynamodb/latest/apireference/api-batchgetitem.md)
-
-YesYes
-
-[BatchWriteItem](../../../../reference/amazondynamodb/latest/apireference/api-batchwriteitem.md)
-
-YesYes
+| Data Plane - Tables/indexes APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DeleteItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteItem.html)  | Yes | Yes |
+|  [GetItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html)  | Yes | Yes |
+|  [PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html)  | Yes | Yes |
+|  [Query](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html)  | Yes | Yes |
+|  [Scan](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html)  | Yes | Yes |
+|  [UpdateItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html)  | Yes | Yes |
+|  [TransactGetItems](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactGetItems.html)  | Yes | Yes |
+|  [TransactWriteItems](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html)  | Yes | Yes |
+|  [BatchGetItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchGetItem.html)  | Yes | Yes |
+|  [BatchWriteItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchWriteItem.html)  | Yes | Yes |
 
 ## PartiQL API operations
+<a name="rbac-partiql-actions"></a>
 
-The following table lists the API-level support provided by [PartiQL](howitworks-api.md#HowItWorks.API.DataPlane.partiql) API operations for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by [PartiQL](HowItWorks.API.md#HowItWorks.API.DataPlane.partiql) API operations for resource-based policies and cross-account access.
 
-PartiQL APIsResource-based policy supportCross-account support
-
-[BatchExecuteStatement](../../../../reference/amazondynamodb/latest/apireference/api-batchexecutestatement.md)
-
-YesNo
-
-[ExecuteStatement](../../../../reference/amazondynamodb/latest/apireference/api-executestatement.md)
-
-YesNo
-
-[ExecuteTransaction](../../../../reference/amazondynamodb/latest/apireference/api-executetransaction.md)
-
-YesNo
+| PartiQL APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [BatchExecuteStatement](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchExecuteStatement.html)  | Yes | No |
+|  [ExecuteStatement](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ExecuteStatement.html)  | Yes | No |
+|  [ExecuteTransaction](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ExecuteTransaction.html)  | Yes | No |
 
 ## Control plane API operations
+<a name="rbac-control-plane-actions"></a>
 
-The following table lists the API-level support provided by [control plane](howitworks-api.md#HowItWorks.API.ControlPlane) API operations for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by [control plane](HowItWorks.API.md#HowItWorks.API.ControlPlane) API operations for resource-based policies and cross-account access.
 
-Control Plane - Tables APIsResource-based policy supportCross-account support
-
-[CreateTable](../../../../reference/amazondynamodb/latest/apireference/api-createtable.md)
-
-NoNo
-
-[DeleteTable](../../../../reference/amazondynamodb/latest/apireference/api-deletetable.md)
-
-YesYes
-
-[DescribeTable](../../../../reference/amazondynamodb/latest/apireference/api-describetable.md)
-
-YesYes
-
-[UpdateTable](../../../../reference/amazondynamodb/latest/apireference/api-updatetable.md)
-
-YesYes
+| Control Plane - Tables APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [CreateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html)  | No | No |
+|  [DeleteTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteTable.html)  | Yes | Yes |
+|  [DescribeTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeTable.html)  | Yes | Yes |
+|  [UpdateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html)  | Yes | Yes |
 
 ## Version 2019.11.21 (Current) global tables API operations
+<a name="rbac-current-global-table-actions"></a>
 
-The following table lists the API-level support provided by [Version 2019.11.21 (Current) global tables](globaltables.md) API operations for resource-based
-policies and cross-account access.
+The following table lists the API-level support provided by [Version 2019.11.21 (Current) global tables](GlobalTables.md) API operations for resource-based policies and cross-account access.
 
-Version 2019.11.21 (Current) global tables APIsResource-based policy supportCross-account support
-
-[DescribeTableReplicaAutoScaling](../../../../reference/amazondynamodb/latest/apireference/api-describetablereplicaautoscaling.md)
-
-YesNo
-
-[UpdateTableReplicaAutoScaling](../../../../reference/amazondynamodb/latest/apireference/api-updatetablereplicaautoscaling.md)
-
-YesNo
+| Version 2019.11.21 (Current) global tables APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeTableReplicaAutoScaling](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeTableReplicaAutoScaling.html)  | Yes | No |
+|  [UpdateTableReplicaAutoScaling](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTableReplicaAutoScaling.html)  | Yes | No |
 
 ## Version 2017.11.29 (Legacy) global tables API operations
+<a name="rbac-legacy-global-table-actions"></a>
 
-The following table lists the API-level support provided by [Version 2017.11.29 (Legacy) global tables](globaltables-v1.md) API operations
-for resource-based policies and cross-account access.
+The following table lists the API-level support provided by [Version 2017.11.29 (Legacy) global tables](globaltables.V1.md) API operations for resource-based policies and cross-account access.
 
-Version 2017.11.29 (Legacy) global tables APIsResource-based policy supportCross-account support
-
-[CreateGlobalTable](../../../../reference/amazondynamodb/latest/apireference/api-createglobaltable.md)
-
-NoNo
-
-[DescribeGlobalTable](../../../../reference/amazondynamodb/latest/apireference/api-describeglobaltable.md)
-
-NoNo
-
-[DescribeGlobalTableSettings](../../../../reference/amazondynamodb/latest/apireference/api-describeglobaltablesettings.md)
-
-NoNo
-
-[ListGlobalTables](../../../../reference/amazondynamodb/latest/apireference/api-listglobaltables.md)
-
-NoNo
-
-[UpdateGlobalTable](../../../../reference/amazondynamodb/latest/apireference/api-updateglobaltable.md)
-
-NoNo
-
-[UpdateGlobalTableSettings](../../../../reference/amazondynamodb/latest/apireference/api-updateglobaltablesettings.md)
-
-NoNo
+| Version 2017.11.29 (Legacy) global tables APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [CreateGlobalTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateGlobalTable.html)  | No | No |
+|  [DescribeGlobalTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeGlobalTable.html)  | No | No |
+|  [DescribeGlobalTableSettings](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeGlobalTableSettings.html)  | No | No |
+|  [ListGlobalTables](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListGlobalTables.html)  | No | No |
+|  [UpdateGlobalTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateGlobalTable.html)  | No | No |
+|  [UpdateGlobalTableSettings](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateGlobalTableSettings.html)  | No | No |
 
 ## Tags API operations
+<a name="rbac-tags-actions"></a>
 
-The following table lists the API-level support provided by API operations related to
-[tags](tagging-operations.md) for resource-based policies and
-cross-account access.
+The following table lists the API-level support provided by API operations related to [tags](Tagging.Operations.md) for resource-based policies and cross-account access.
 
-Tags APIsResource-based policy supportCross-account support
-
-[ListTagsOfResource](../../../../reference/amazondynamodb/latest/apireference/api-listtagsofresource.md)
-
-YesYes
-
-[TagResource](../../../../reference/amazondynamodb/latest/apireference/api-tagresource.md)
-
-YesYes
-
-[UntagResource](../../../../reference/amazondynamodb/latest/apireference/api-untagresource.md)
-
-YesYes
+| Tags APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [ListTagsOfResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListTagsOfResource.html)  | Yes | Yes |
+|  [TagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TagResource.html)  | Yes | Yes |
+|  [UntagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UntagResource.html)  | Yes | Yes |
 
 ## Backup and Restore API operations
+<a name="rbac-backup-restore-actions"></a>
 
-The following table lists the API-level support provided by API operations related to
-[backup and restore](backup-and-restore.md) for resource-based policies
-and cross-account access.
+The following table lists the API-level support provided by API operations related to [backup and restore](Backup-and-Restore.md) for resource-based policies and cross-account access.
 
-Backup and Restore APIsResource-based policy supportCross-account support
-
-[CreateBackup](../../../../reference/amazondynamodb/latest/apireference/api-createbackup.md)
-
-YesNo
-
-[DescribeBackup](../../../../reference/amazondynamodb/latest/apireference/api-describebackup.md)
-
-NoNo
-
-[DeleteBackup](../../../../reference/amazondynamodb/latest/apireference/api-deletebackup.md)
-
-NoNo
-
-[RestoreTableFromBackup](../../../../reference/amazondynamodb/latest/apireference/api-restoretablefrombackup.md)
-
-NoNo
+| Backup and Restore APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [CreateBackup](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateBackup.html)  | Yes | No |
+|  [DescribeBackup](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeBackup.html)  | No | No |
+|  [DeleteBackup](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteBackup.html)  | No | No |
+|  [RestoreTableFromBackup](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_RestoreTableFromBackup.html)  | No | No |
 
 ## Continuous Backup/Restore (PITR) API operations
+<a name="rbac-continuous-backup-restore-actions"></a>
 
-The following table lists the API-level support provided by API operations related to
-[Continuous Backup/Restore (PITR)](point-in-time-recovery.md) for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by API operations related to [Continuous Backup/Restore (PITR)](Point-in-time-recovery.md) for resource-based policies and cross-account access.
 
-Continuous Backup/Restore (PITR) APIsResource-based policy supportCross-account support
-
-[DescribeContinuousBackups](../../../../reference/amazondynamodb/latest/apireference/api-describecontinuousbackups.md)
-
-YesNo
-
-[RestoreTableToPointInTime](../../../../reference/amazondynamodb/latest/apireference/api-restoretabletopointintime.md)
-
-YesNo
-
-[UpdateContinuousBackups](../../../../reference/amazondynamodb/latest/apireference/api-updatecontinuousbackups.md)
-
-YesNo
+| Continuous Backup/Restore (PITR) APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeContinuousBackups](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeContinuousBackups.html)  | Yes | No |
+|  [RestoreTableToPointInTime](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_RestoreTableToPointInTime.html)  | Yes | No |
+|  [UpdateContinuousBackups](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateContinuousBackups.html)  | Yes | No |
 
 ## Contributor Insights API operations
+<a name="rbac-contributor-insights-actions"></a>
 
-The following table lists the API-level support provided by API operations related to
-[Continuous Backup/Restore (PITR)](point-in-time-recovery.md) for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by API operations related to [Continuous Backup/Restore (PITR)](Point-in-time-recovery.md) for resource-based policies and cross-account access.
 
-Contributor Insights APIsResource-based policy supportCross-account support
-
-[DescribeContributorInsights](../../../../reference/amazondynamodb/latest/apireference/api-describecontributorinsights.md)
-
-YesNo
-
-[ListContributorInsights](../../../../reference/amazondynamodb/latest/apireference/api-listcontributorinsights.md)
-
-NoNo
-
-[UpdateContributorInsights](../../../../reference/amazondynamodb/latest/apireference/api-updatecontributorinsights.md)
-
-YesNo
+| Contributor Insights APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeContributorInsights](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeContributorInsights.html)  | Yes | No |
+|  [ListContributorInsights](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListContributorInsights.html)  | No | No |
+|  [UpdateContributorInsights](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateContributorInsights.html)  | Yes | No |
 
 ## Export API operations
+<a name="rbac-export-actions"></a>
 
-The following table lists the API-level support provided by Export API operations for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by Export API operations for resource-based policies and cross-account access.
 
-Export APIsResource-based policy supportCross-account support
-
-[DescribeExport](../../../../reference/amazondynamodb/latest/apireference/api-describeexport.md)
-
-NoNo
-
-[ExportTableToPointInTime](../../../../reference/amazondynamodb/latest/apireference/api-exporttabletopointintime.md)
-
-YesNo
-
-[ListExports](../../../../reference/amazondynamodb/latest/apireference/api-listexports.md)
-
-NoNo
+| Export APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeExport](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeExport.html)  | No | No |
+|  [ExportTableToPointInTime](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ExportTableToPointInTime.html)  | Yes | No |
+|  [ListExports](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListExports.html)  | No | No |
 
 ## Import API operations
+<a name="rbac-import-actions"></a>
 
-The following table lists the API-level support provided by Import API operations for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by Import API operations for resource-based policies and cross-account access.
 
-Import APIsResource-based policy supportCross-account support
-
-[DescribeImport](../../../../reference/amazondynamodb/latest/apireference/api-describeimport.md)
-
-NoNo
-
-[ImportTable](../../../../reference/amazondynamodb/latest/apireference/api-importtable.md)
-
-NoNo
-
-[ListImports](../../../../reference/amazondynamodb/latest/apireference/api-listimports.md)
-
-NoNo
+| Import APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeImport](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeImport.html)  | No | No |
+|  [ImportTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ImportTable.html)  | No | No |
+|  [ListImports](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListImports.html)  | No | No |
 
 ## Amazon Kinesis Data Streams API operations
+<a name="rbac-kinesis-actions"></a>
 
-The following table lists the API-level support provided by Kinesis Data Streams API operations for
-resource-based policies and cross-account access.
+The following table lists the API-level support provided by Kinesis Data Streams API operations for resource-based policies and cross-account access.
 
-Kinesis APIsResource-based policy supportCross-account support
-
-[DescribeKinesisStreamingDestination](../../../../reference/amazondynamodb/latest/apireference/api-describekinesisstreamingdestination.md)
-
-YesNo
-
-[DisableKinesisStreamingDestination](../../../../reference/amazondynamodb/latest/apireference/api-disablekinesisstreamingdestination.md)
-
-YesNo
-
-[EnableKinesisStreamingDestination](../../../../reference/amazondynamodb/latest/apireference/api-enablekinesisstreamingdestination.md)
-
-YesNo
-
-[UpdateKinesisStreamingDestination](../../../../reference/amazondynamodb/latest/apireference/api-updatekinesisstreamingdestination.md)
-
-YesNo
+| Kinesis APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeKinesisStreamingDestination](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeKinesisStreamingDestination.html)  | Yes | No |
+|  [DisableKinesisStreamingDestination](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DisableKinesisStreamingDestination.html)  | Yes | No |
+|  [EnableKinesisStreamingDestination](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_EnableKinesisStreamingDestination.html)  | Yes | No |
+|  [UpdateKinesisStreamingDestination](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateKinesisStreamingDestination.html)  | Yes | No |
 
 ## Resource-based policy API operations
+<a name="rbac-rbp-actions"></a>
 
-The following table lists the API-level support provided by resource-based policy API
-operations for resource-based policies and cross-account access.
+The following table lists the API-level support provided by resource-based policy API operations for resource-based policies and cross-account access.
 
-Resource-based policy APIsResource-based policy supportCross-account support
-
-[GetResourcePolicy](../../../../reference/amazondynamodb/latest/apireference/api-getresourcepolicy.md)
-
-YesNo
-
-[PutResourcePolicy](../../../../reference/amazondynamodb/latest/apireference/api-putresourcepolicy.md)
-
-YesNo
-
-[DeleteResourcePolicy](../../../../reference/amazondynamodb/latest/apireference/api-deleteresourcepolicy.md)
-
-YesNo
+| Resource-based policy APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [GetResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetResourcePolicy.html)  | Yes | No |
+|  [PutResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutResourcePolicy.html)  | Yes | No |
+|  [DeleteResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteResourcePolicy.html)  | Yes | No |
 
 ## Time-to-Live API operations
+<a name="rbac-ttl-actions"></a>
 
-The following table lists the API-level support provided by [time to\
-live](ttl.md) (TTL) API operations for resource-based policies and cross-account
-access.
+The following table lists the API-level support provided by [time to live](TTL.md) (TTL) API operations for resource-based policies and cross-account access.
 
-TTL APIsResource-based policy supportCross-account support
-
-[DescribeTimeToLive](../../../../reference/amazondynamodb/latest/apireference/api-describetimetolive.md)
-
-YesNo
-
-[UpdateTimeToLive](../../../../reference/amazondynamodb/latest/apireference/api-updatetimetolive.md)
-
-YesNo
+| TTL APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeTimeToLive](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeTimeToLive.html)  | Yes | No |
+|  [UpdateTimeToLive](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTimeToLive.html)  | Yes | No |
 
 ## Other API operations
+<a name="rbac-other-actions"></a>
 
-The following table lists the API-level support provided by other miscellaneous API
-operations for resource-based policies and cross-account access.
+The following table lists the API-level support provided by other miscellaneous API operations for resource-based policies and cross-account access.
 
-Other APIsResource-based policy supportCross-account support
-
-[DescribeLimits](../../../../reference/amazondynamodb/latest/apireference/api-describelimits.md)
-
-NoNo
-
-[DescribeEndpoints](../../../../reference/amazondynamodb/latest/apireference/api-describeendpoints.md)
-
-NoNo
-
-[ListBackups](../../../../reference/amazondynamodb/latest/apireference/api-listbackups.md)
-
-NoNo
-
-[ListTables](../../../../reference/amazondynamodb/latest/apireference/api-listtables.md)
-
-NoNo
+| Other APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeLimits](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeLimits.html)  | No | No |
+|  [DescribeEndpoints](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeEndpoints.html)  | No | No |
+|  [ListBackups](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListBackups.html)  | No | No |
+|  [ListTables](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListTables.html)  | No | No |
 
 ## DynamoDB Streams API operations
+<a name="rbac-ds-actions"></a>
 
-The following table lists the API-level support of DynamoDB Streams APIs for resource-based policies
-and cross-account access.
+The following table lists the API-level support of DynamoDB Streams APIs for resource-based policies and cross-account access.
 
-DynamoDB Streams APIsResource-based policy supportCross-account support
-
-[DescribeStream](../../../../reference/amazondynamodb/latest/apireference/api-streams-describestream.md)
-
-YesYes
-
-[GetRecords](../../../../reference/amazondynamodb/latest/apireference/api-streams-getrecords.md)
-
-YesYes
-
-[GetShardIterator](../../../../reference/amazondynamodb/latest/apireference/api-streams-getsharditerator.md)
-
-YesYes
-
-[ListStreams](../../../../reference/amazondynamodb/latest/apireference/api-streams-liststreams.md)
-
-NoNo
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Blocking public access
-
-IAM
-authorization
+| DynamoDB Streams APIs | Resource-based policy support | Cross-account support |
+| --- | --- | --- |
+|  [DescribeStream](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_DescribeStream.html)  | Yes | Yes |
+|  [GetRecords](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetRecords.html)  | Yes | Yes |
+|  [GetShardIterator](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html)  | Yes | Yes |
+|  [ListStreams](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_ListStreams.html)  | No | No |
 
 All content copied from https://docs.aws.amazon.com/.

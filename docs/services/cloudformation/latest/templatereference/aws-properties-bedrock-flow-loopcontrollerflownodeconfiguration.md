@@ -2,71 +2,52 @@
 title: "AWS::Bedrock::Flow LoopControllerFlowNodeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow LoopControllerFlowNodeConfiguration
+<a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration"></a>
 
 Contains configurations for the controller node of a DoWhile loop in the flow.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContinueCondition" : FlowCondition,
-  "MaxIterations" : Number
+  "[ContinueCondition](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-continuecondition)" : {{FlowCondition}},
+  "[MaxIterations](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-maxiterations)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ContinueCondition:
-    FlowCondition
-  MaxIterations: Number
-
+```
+  [ContinueCondition](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-continuecondition): {{
+    FlowCondition}}
+  [MaxIterations](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-maxiterations): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration-properties"></a>
 
-`ContinueCondition`
+`ContinueCondition`  <a name="cfn-bedrock-flow-loopcontrollerflownodeconfiguration-continuecondition"></a>
+Specifies the condition that determines when the flow exits the DoWhile loop. The loop executes until this condition evaluates to true.
+*Required*: Yes
+*Type*: [FlowCondition](aws-properties-bedrock-flow-flowcondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the condition that determines when the flow exits the DoWhile loop. The loop
-executes until this condition evaluates to true.
-
-_Required_: Yes
-
-_Type_: [FlowCondition](aws-properties-bedrock-flow-flowcondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxIterations`
-
-Specifies the maximum number of times the DoWhile loop can iterate before the flow
-exits the loop.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LexFlowNodeConfiguration
-
-LoopFlowNodeConfiguration
+`MaxIterations`  <a name="cfn-bedrock-flow-loopcontrollerflownodeconfiguration-maxiterations"></a>
+Specifies the maximum number of times the DoWhile loop can iterate before the flow exits the loop.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

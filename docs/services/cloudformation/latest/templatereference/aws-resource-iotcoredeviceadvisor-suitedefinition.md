@@ -2,102 +2,99 @@
 title: "AWS::IoTCoreDeviceAdvisor::SuiteDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTCoreDeviceAdvisor::SuiteDefinition
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition"></a>
 
 Creates a Device Advisor test suite.
 
-Requires permission to access the [CreateSuiteDefinition](../../../service-authorization/latest/reference/list-awsiot.md#awsiot-actions-as-permissions) action.
+Requires permission to access the [CreateSuiteDefinition](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
 
 ## Syntax
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTCoreDeviceAdvisor::SuiteDefinition",
   "Properties" : {
-      "SuiteDefinitionConfiguration" : SuiteDefinitionConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[SuiteDefinitionConfiguration](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration)" : {{SuiteDefinitionConfiguration}},
+      "[Tags](#cfn-iotcoredeviceadvisor-suitedefinition-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTCoreDeviceAdvisor::SuiteDefinition
 Properties:
-  SuiteDefinitionConfiguration:
-    SuiteDefinitionConfiguration
-  Tags:
-    - Tag
-
+  [SuiteDefinitionConfiguration](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration): {{
+    SuiteDefinitionConfiguration}}
+  [Tags](#cfn-iotcoredeviceadvisor-suitedefinition-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-properties"></a>
 
-`SuiteDefinitionConfiguration`
-
+`SuiteDefinitionConfiguration`  <a name="cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration"></a>
 Gets the suite definition configuration.
+*Required*: Yes
+*Type*: [SuiteDefinitionConfiguration](aws-properties-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SuiteDefinitionConfiguration](aws-properties-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-iotcoredeviceadvisor-suitedefinition-tags"></a>
 Metadata that can be used to manage the the Suite Definition.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotcoredeviceadvisor-suitedefinition-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotcoredeviceadvisor-suitedefinition-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the Suite Definition name.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Suite Definition name.
 
 ### Fn::GetAtt
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`SuiteDefinitionArn`
+####
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition-return-values-fn--getatt-fn--getatt"></a>
 
+`SuiteDefinitionArn`  <a name="SuiteDefinitionArn-fn::getatt"></a>
 The Arn of the Suite Definition.
 
-`SuiteDefinitionId`
-
+`SuiteDefinitionId`  <a name="SuiteDefinitionId-fn::getatt"></a>
 The version of the Suite Definition.
 
-`SuiteDefinitionVersion`
-
+`SuiteDefinitionVersion`  <a name="SuiteDefinitionVersion-fn::getatt"></a>
 The ID of the Suite Definition.
 
 ## Examples
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition--examples"></a>
+
+###
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition--examples--"></a>
 
 The following example is a template of a `SuiteDefintion`.
 
 #### JSON
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition--examples----json"></a>
 
-```json
-
+```
 {
    "Resources": {
       "TestSuiteDefinition": {
@@ -121,9 +118,9 @@ The following example is a template of a `SuiteDefintion`.
 ```
 
 #### YAML
+<a name="aws-resource-iotcoredeviceadvisor-suitedefinition--examples----yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestSuiteDefinition:
     Type: 'AWS::IoTCoreDeviceAdvisor::SuiteDefinition'
@@ -154,11 +151,5 @@ Resources:
             }'
         IntendedForQualification: false
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS IoT Core Device Advisor
-
-DeviceUnderTest
 
 All content copied from https://docs.aws.amazon.com/.

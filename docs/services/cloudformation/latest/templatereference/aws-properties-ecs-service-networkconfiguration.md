@@ -2,61 +2,47 @@
 title: "AWS::ECS::Service NetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Service NetworkConfiguration
+<a name="aws-properties-ecs-service-networkconfiguration"></a>
 
 The network configuration for a task or service.
 
 ## Syntax
+<a name="aws-properties-ecs-service-networkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-service-networkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsvpcConfiguration" : AwsVpcConfiguration
+  "[AwsvpcConfiguration](#cfn-ecs-service-networkconfiguration-awsvpcconfiguration)" : {{AwsVpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-service-networkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AwsvpcConfiguration:
-    AwsVpcConfiguration
-
+```
+  [AwsvpcConfiguration](#cfn-ecs-service-networkconfiguration-awsvpcconfiguration): {{
+    AwsVpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-service-networkconfiguration-properties"></a>
 
-`AwsvpcConfiguration`
-
+`AwsvpcConfiguration`  <a name="cfn-ecs-service-networkconfiguration-awsvpcconfiguration"></a>
 The VPC subnets and security groups that are associated with a task.
-
-###### Note
-
 All specified subnets and security groups must be from the same VPC.
-
-_Required_: No
-
-_Type_: [AwsVpcConfiguration](aws-properties-ecs-service-awsvpcconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [AwsVpcConfiguration](aws-properties-ecs-service-awsvpcconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Associate an Application Load Balancer with a service](../userguide/aws-resource-ecs-service.md#aws-resource-ecs-service--examples--Associate_an_Application_Load_Balancer_with_a_service)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogConfiguration
-
-PlacementConstraint
+<a name="aws-properties-ecs-service-networkconfiguration--seealso"></a>
++  [Associate an Application Load Balancer with a service](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#aws-resource-ecs-service--examples--Associate_an_Application_Load_Balancer_with_a_service)
 
 All content copied from https://docs.aws.amazon.com/.

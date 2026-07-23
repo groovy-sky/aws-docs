@@ -2,56 +2,44 @@
 title: "AWS::MediaTailor::PlaybackConfiguration ManifestServiceInteractionLog"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::PlaybackConfiguration ManifestServiceInteractionLog
+<a name="aws-properties-mediatailor-playbackconfiguration-manifestserviceinteractionlog"></a>
 
 Settings for customizing what events are included in logs for interactions with the origin server.
 
-For more information about manifest service logs, including descriptions of the event types, see [MediaTailor manifest logs description and event types](../../../mediatailor/latest/ug/log-types.md)
-in AWS Elemental MediaTailor User Guide.
+For more information about manifest service logs, including descriptions of the event types, see [MediaTailor manifest logs description and event types](https://docs.aws.amazon.com/mediatailor/latest/ug/log-types.html) in AWS Elemental MediaTailor User Guide.
 
 ## Syntax
+<a name="aws-properties-mediatailor-playbackconfiguration-manifestserviceinteractionlog-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-playbackconfiguration-manifestserviceinteractionlog-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExcludeEventTypes" : [ String, ... ]
+  "[ExcludeEventTypes](#cfn-mediatailor-playbackconfiguration-manifestserviceinteractionlog-excludeeventtypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-playbackconfiguration-manifestserviceinteractionlog-syntax.yaml"></a>
 
-```yaml
-
-  ExcludeEventTypes:
-    - String
-
+```
+  [ExcludeEventTypes](#cfn-mediatailor-playbackconfiguration-manifestserviceinteractionlog-excludeeventtypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-playbackconfiguration-manifestserviceinteractionlog-properties"></a>
 
-`ExcludeEventTypes`
-
+`ExcludeEventTypes`  <a name="cfn-mediatailor-playbackconfiguration-manifestserviceinteractionlog-excludeeventtypes"></a>
 Indicates that MediaTailor won't emit the selected events in the logs for playback sessions that are initialized with this configuration.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManifestProcessingRules
-
-Tag
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

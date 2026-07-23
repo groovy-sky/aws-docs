@@ -2,173 +2,115 @@
 title: "AWS::ElasticLoadBalancingV2::Listener Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::Listener Action
+<a name="aws-properties-elasticloadbalancingv2-listener-action"></a>
 
 Specifies an action for a listener rule.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listener-action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-listener-action-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthenticateCognitoConfig" : AuthenticateCognitoConfig,
-  "AuthenticateOidcConfig" : AuthenticateOidcConfig,
-  "FixedResponseConfig" : FixedResponseConfig,
-  "ForwardConfig" : ForwardConfig,
-  "JwtValidationConfig" : JwtValidationConfig,
-  "Order" : Integer,
-  "RedirectConfig" : RedirectConfig,
-  "TargetGroupArn" : String,
-  "Type" : String
+  "[AuthenticateCognitoConfig](#cfn-elasticloadbalancingv2-listener-action-authenticatecognitoconfig)" : {{AuthenticateCognitoConfig}},
+  "[AuthenticateOidcConfig](#cfn-elasticloadbalancingv2-listener-action-authenticateoidcconfig)" : {{AuthenticateOidcConfig}},
+  "[FixedResponseConfig](#cfn-elasticloadbalancingv2-listener-action-fixedresponseconfig)" : {{FixedResponseConfig}},
+  "[ForwardConfig](#cfn-elasticloadbalancingv2-listener-action-forwardconfig)" : {{ForwardConfig}},
+  "[JwtValidationConfig](#cfn-elasticloadbalancingv2-listener-action-jwtvalidationconfig)" : {{JwtValidationConfig}},
+  "[Order](#cfn-elasticloadbalancingv2-listener-action-order)" : {{Integer}},
+  "[RedirectConfig](#cfn-elasticloadbalancingv2-listener-action-redirectconfig)" : {{RedirectConfig}},
+  "[TargetGroupArn](#cfn-elasticloadbalancingv2-listener-action-targetgrouparn)" : {{String}},
+  "[Type](#cfn-elasticloadbalancingv2-listener-action-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-listener-action-syntax.yaml"></a>
 
-```yaml
-
-  AuthenticateCognitoConfig:
-    AuthenticateCognitoConfig
-  AuthenticateOidcConfig:
-    AuthenticateOidcConfig
-  FixedResponseConfig:
-    FixedResponseConfig
-  ForwardConfig:
-    ForwardConfig
-  JwtValidationConfig:
-    JwtValidationConfig
-  Order: Integer
-  RedirectConfig:
-    RedirectConfig
-  TargetGroupArn: String
-  Type: String
-
+```
+  [AuthenticateCognitoConfig](#cfn-elasticloadbalancingv2-listener-action-authenticatecognitoconfig): {{
+    AuthenticateCognitoConfig}}
+  [AuthenticateOidcConfig](#cfn-elasticloadbalancingv2-listener-action-authenticateoidcconfig): {{
+    AuthenticateOidcConfig}}
+  [FixedResponseConfig](#cfn-elasticloadbalancingv2-listener-action-fixedresponseconfig): {{
+    FixedResponseConfig}}
+  [ForwardConfig](#cfn-elasticloadbalancingv2-listener-action-forwardconfig): {{
+    ForwardConfig}}
+  [JwtValidationConfig](#cfn-elasticloadbalancingv2-listener-action-jwtvalidationconfig): {{
+    JwtValidationConfig}}
+  [Order](#cfn-elasticloadbalancingv2-listener-action-order): {{Integer}}
+  [RedirectConfig](#cfn-elasticloadbalancingv2-listener-action-redirectconfig): {{
+    RedirectConfig}}
+  [TargetGroupArn](#cfn-elasticloadbalancingv2-listener-action-targetgrouparn): {{String}}
+  [Type](#cfn-elasticloadbalancingv2-listener-action-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-listener-action-properties"></a>
 
-`AuthenticateCognitoConfig`
+`AuthenticateCognitoConfig`  <a name="cfn-elasticloadbalancingv2-listener-action-authenticatecognitoconfig"></a>
+[HTTPS listeners] Information for using Amazon Cognito to authenticate users. Specify only when `Type` is `authenticate-cognito`.
+*Required*: No
+*Type*: [AuthenticateCognitoConfig](aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-\[HTTPS listeners\] Information for using Amazon Cognito to authenticate users. Specify only
-when `Type` is `authenticate-cognito`.
+`AuthenticateOidcConfig`  <a name="cfn-elasticloadbalancingv2-listener-action-authenticateoidcconfig"></a>
+[HTTPS listeners] Information about an identity provider that is compliant with OpenID Connect (OIDC). Specify only when `Type` is `authenticate-oidc`.
+*Required*: No
+*Type*: [AuthenticateOidcConfig](aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FixedResponseConfig`  <a name="cfn-elasticloadbalancingv2-listener-action-fixedresponseconfig"></a>
+[Application Load Balancer] Information for creating an action that returns a custom HTTP response. Specify only when `Type` is `fixed-response`.
+*Required*: No
+*Type*: [FixedResponseConfig](aws-properties-elasticloadbalancingv2-listener-fixedresponseconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AuthenticateCognitoConfig](aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.md)
+`ForwardConfig`  <a name="cfn-elasticloadbalancingv2-listener-action-forwardconfig"></a>
+Information for creating an action that distributes requests among multiple target groups. Specify only when `Type` is `forward`.
+If you specify both `ForwardConfig` and `TargetGroupArn`, you can specify only one target group using `ForwardConfig` and it must be the same target group specified in `TargetGroupArn`.
+*Required*: No
+*Type*: [ForwardConfig](aws-properties-elasticloadbalancingv2-listener-forwardconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`JwtValidationConfig`  <a name="cfn-elasticloadbalancingv2-listener-action-jwtvalidationconfig"></a>
+[HTTPS listeners] Information for validating JWT access tokens in client requests. Specify only when `Type` is `jwt-validation`.
+*Required*: No
+*Type*: [JwtValidationConfig](aws-properties-elasticloadbalancingv2-listener-jwtvalidationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`AuthenticateOidcConfig`
+`Order`  <a name="cfn-elasticloadbalancingv2-listener-action-order"></a>
+The order for the action. This value is required for rules with multiple actions. The action with the lowest value for order is performed first.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `50000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-\[HTTPS listeners\] Information about an identity provider that is compliant with OpenID
-Connect (OIDC). Specify only when `Type` is `authenticate-oidc`.
+`RedirectConfig`  <a name="cfn-elasticloadbalancingv2-listener-action-redirectconfig"></a>
+[Application Load Balancer] Information for creating a redirect action. Specify only when `Type` is `redirect`.
+*Required*: No
+*Type*: [RedirectConfig](aws-properties-elasticloadbalancingv2-listener-redirectconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TargetGroupArn`  <a name="cfn-elasticloadbalancingv2-listener-action-targetgrouparn"></a>
+The Amazon Resource Name (ARN) of the target group. Specify only when `Type` is `forward` and you want to route to a single target group. To route to multiple target groups, you must use `ForwardConfig` instead.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AuthenticateOidcConfig](aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FixedResponseConfig`
-
-\[Application Load Balancer\] Information for creating an action that returns a custom HTTP
-response. Specify only when `Type` is `fixed-response`.
-
-_Required_: No
-
-_Type_: [FixedResponseConfig](aws-properties-elasticloadbalancingv2-listener-fixedresponseconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForwardConfig`
-
-Information for creating an action that distributes requests among multiple target
-groups. Specify only when `Type` is `forward`.
-
-If you specify both `ForwardConfig` and `TargetGroupArn`, you can
-specify only one target group using `ForwardConfig` and it must be the same
-target group specified in `TargetGroupArn`.
-
-_Required_: No
-
-_Type_: [ForwardConfig](aws-properties-elasticloadbalancingv2-listener-forwardconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JwtValidationConfig`
-
-\[HTTPS listeners\] Information for validating JWT access tokens in client requests.
-Specify only when `Type` is `jwt-validation`.
-
-_Required_: No
-
-_Type_: [JwtValidationConfig](aws-properties-elasticloadbalancingv2-listener-jwtvalidationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Order`
-
-The order for the action. This value is required for rules with multiple actions. The
-action with the lowest value for order is performed first.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `50000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedirectConfig`
-
-\[Application Load Balancer\] Information for creating a redirect action. Specify only when
-`Type` is `redirect`.
-
-_Required_: No
-
-_Type_: [RedirectConfig](aws-properties-elasticloadbalancingv2-listener-redirectconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetGroupArn`
-
-The Amazon Resource Name (ARN) of the target group. Specify only when `Type` is
-`forward` and you want to route to a single target group. To route to multiple
-target groups, you must use `ForwardConfig` instead.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-elasticloadbalancingv2-listener-action-type"></a>
 The type of action.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `forward | authenticate-oidc | authenticate-cognito | redirect | fixed-response | jwt-validation`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ElasticLoadBalancingV2::Listener
-
-AuthenticateCognitoConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `forward | authenticate-oidc | authenticate-cognito | redirect | fixed-response | jwt-validation`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

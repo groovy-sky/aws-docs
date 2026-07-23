@@ -2,60 +2,43 @@
 title: "AWS::KinesisFirehose::DeliveryStream AmazonopensearchserviceRetryOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream AmazonopensearchserviceRetryOptions
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions"></a>
 
-Configures retry behavior in case Kinesis Data Firehose is unable to deliver documents
-to Amazon OpenSearch Service.
+Configures retry behavior in case Kinesis Data Firehose is unable to deliver documents to Amazon OpenSearch Service.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "DurationInSeconds" : Integer
+  "[DurationInSeconds](#cfn-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-durationinseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-syntax.yaml"></a>
 
-```yaml
-
-  DurationInSeconds: Integer
-
+```
+  [DurationInSeconds](#cfn-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-durationinseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-properties"></a>
 
-`DurationInSeconds`
-
-After an initial failure to deliver to Amazon OpenSearch Service, the total amount of
-time during which Kinesis Data Firehose retries delivery (including the first attempt).
-After this time has elapsed, the failed documents are written to Amazon S3. Default value
-is 300 seconds (5 minutes). A value of 0 (zero) results in no retries.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `7200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmazonopensearchserviceDestinationConfiguration
-
-AuthenticationConfiguration
+`DurationInSeconds`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions-durationinseconds"></a>
+After an initial failure to deliver to Amazon OpenSearch Service, the total amount of time during which Kinesis Data Firehose retries delivery (including the first attempt). After this time has elapsed, the failed documents are written to Amazon S3. Default value is 300 seconds (5 minutes). A value of 0 (zero) results in no retries.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `7200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

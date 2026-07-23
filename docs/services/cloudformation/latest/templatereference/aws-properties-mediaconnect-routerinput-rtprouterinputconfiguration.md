@@ -2,70 +2,52 @@
 title: "AWS::MediaConnect::RouterInput RtpRouterInputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput RtpRouterInputConfiguration
+<a name="aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration"></a>
 
 The configuration settings for a Router Input using the RTP (Real-Time Transport Protocol) protocol, including the port and forward error correction state.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ForwardErrorCorrection" : String,
-  "Port" : Integer
+  "[ForwardErrorCorrection](#cfn-mediaconnect-routerinput-rtprouterinputconfiguration-forwarderrorcorrection)" : {{String}},
+  "[Port](#cfn-mediaconnect-routerinput-rtprouterinputconfiguration-port)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ForwardErrorCorrection: String
-  Port: Integer
-
+```
+  [ForwardErrorCorrection](#cfn-mediaconnect-routerinput-rtprouterinputconfiguration-forwarderrorcorrection): {{String}}
+  [Port](#cfn-mediaconnect-routerinput-rtprouterinputconfiguration-port): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration-properties"></a>
 
-`ForwardErrorCorrection`
-
+`ForwardErrorCorrection`  <a name="cfn-mediaconnect-routerinput-rtprouterinputconfiguration-forwarderrorcorrection"></a>
 The state of forward error correction for the RTP protocol in the router input configuration.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-mediaconnect-routerinput-rtprouterinputconfiguration-port"></a>
 The port number used for the RTP protocol in the router input configuration.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `3000`
-
-_Maximum_: `30000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RouterInputTransitEncryptionKeyConfiguration
-
-SecretsManagerEncryptionKeyConfiguration
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `3000`
+*Maximum*: `30000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

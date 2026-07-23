@@ -2,60 +2,44 @@
 title: "AWS::EC2::LaunchTemplate HibernationOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate HibernationOptions
+<a name="aws-properties-ec2-launchtemplate-hibernationoptions"></a>
 
-Specifies whether your instance is configured for hibernation. This parameter is valid
-only if the instance meets the [hibernation\
-prerequisites](../../../ec2/latest/userguide/hibernate.md#hibernating-prerequisites). For more information, see [Hibernate Your Instance](../../../ec2/latest/userguide/hibernate.md) in the
-_Amazon EC2 User Guide_.
+Specifies whether your instance is configured for hibernation. This parameter is valid only if the instance meets the [hibernation prerequisites](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html#hibernating-prerequisites). For more information, see [Hibernate Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html) in the *Amazon EC2 User Guide*.
 
-`HibernationOptions` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md).
+`HibernationOptions` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-hibernationoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-hibernationoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configured" : Boolean
+  "[Configured](#cfn-ec2-launchtemplate-hibernationoptions-configured)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-hibernationoptions-syntax.yaml"></a>
 
-```yaml
-
-  Configured: Boolean
-
+```
+  [Configured](#cfn-ec2-launchtemplate-hibernationoptions-configured): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-hibernationoptions-properties"></a>
 
-`Configured`
-
-If you set this parameter to `true`, the instance is enabled for
-hibernation.
-
+`Configured`  <a name="cfn-ec2-launchtemplate-hibernationoptions-configured"></a>
+If you set this parameter to `true`, the instance is enabled for hibernation.
 Default: `false`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnclaveOptions
-
-IamInstanceProfile
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

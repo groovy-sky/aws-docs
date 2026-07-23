@@ -2,72 +2,53 @@
 title: "AWS::IoTSiteWise::ComputationModel Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::ComputationModel Tag
+<a name="aws-properties-iotsitewise-computationmodel-tag"></a>
 
 Metadata assigned to an AWS IoT SiteWise resource that consists of a key-value pair.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-computationmodel-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-computationmodel-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-iotsitewise-computationmodel-tag-key)" : {{String}},
+  "[Value](#cfn-iotsitewise-computationmodel-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-computationmodel-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-iotsitewise-computationmodel-tag-key): {{String}}
+  [Value](#cfn-iotsitewise-computationmodel-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-computationmodel-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-iotsitewise-computationmodel-tag-key"></a>
 The key or name that identifies the tag.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iotsitewise-computationmodel-tag-value"></a>
 The value of the tag.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComputationModelDataBindingValue
-
-AWS::IoTSiteWise::Dashboard
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

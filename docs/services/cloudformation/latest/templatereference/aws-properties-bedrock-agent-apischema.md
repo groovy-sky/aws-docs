@@ -2,66 +2,50 @@
 title: "AWS::Bedrock::Agent APISchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent APISchema
+<a name="aws-properties-bedrock-agent-apischema"></a>
 
-Contains details about the OpenAPI schema for the action group. For more information, see [Action group OpenAPI schemas](../../../bedrock/latest/userguide/agents-api-schema.md).
-You can either include the schema directly in the payload field or you can upload it to an S3 bucket and specify the S3 bucket location in the s3 field.
+ Contains details about the OpenAPI schema for the action group. For more information, see [Action group OpenAPI schemas](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-api-schema.html). You can either include the schema directly in the payload field or you can upload it to an S3 bucket and specify the S3 bucket location in the s3 field.
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-apischema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-apischema-syntax.json"></a>
 
-```json
-
+```
 {
-  "Payload" : String,
-  "S3" : S3Identifier
+  "[Payload](#cfn-bedrock-agent-apischema-payload)" : {{String}},
+  "[S3](#cfn-bedrock-agent-apischema-s3)" : {{S3Identifier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-apischema-syntax.yaml"></a>
 
-```yaml
-
-  Payload: String
-  S3:
-    S3Identifier
-
+```
+  [Payload](#cfn-bedrock-agent-apischema-payload): {{String}}
+  [S3](#cfn-bedrock-agent-apischema-s3): {{
+    S3Identifier}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-apischema-properties"></a>
 
-`Payload`
+`Payload`  <a name="cfn-bedrock-agent-apischema-payload"></a>
+ The JSON or YAML-formatted payload defining the OpenAPI schema for the action group.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The JSON or YAML-formatted payload defining the OpenAPI schema for the action group.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3`
-
-Contains details about the S3 object containing the OpenAPI schema for the action group.
-
-_Required_: No
-
-_Type_: [S3Identifier](aws-properties-bedrock-agent-s3identifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AgentKnowledgeBase
-
-CustomOrchestration
+`S3`  <a name="cfn-bedrock-agent-apischema-s3"></a>
+ Contains details about the S3 object containing the OpenAPI schema for the action group.
+*Required*: No
+*Type*: [S3Identifier](aws-properties-bedrock-agent-s3identifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

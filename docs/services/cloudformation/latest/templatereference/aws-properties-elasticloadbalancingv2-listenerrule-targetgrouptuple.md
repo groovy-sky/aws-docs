@@ -2,65 +2,49 @@
 title: "AWS::ElasticLoadBalancingV2::ListenerRule TargetGroupTuple"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::ListenerRule TargetGroupTuple
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple"></a>
 
-Information about how traffic will be distributed between multiple target groups in a
-forward rule.
+Information about how traffic will be distributed between multiple target groups in a forward rule.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple-syntax.json"></a>
 
-```json
-
+```
 {
-  "TargetGroupArn" : String,
-  "Weight" : Integer
+  "[TargetGroupArn](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-targetgrouparn)" : {{String}},
+  "[Weight](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-weight)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple-syntax.yaml"></a>
 
-```yaml
-
-  TargetGroupArn: String
-  Weight: Integer
-
+```
+  [TargetGroupArn](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-targetgrouparn): {{String}}
+  [Weight](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-weight): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple-properties"></a>
 
-`TargetGroupArn`
-
+`TargetGroupArn`  <a name="cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-targetgrouparn"></a>
 The Amazon Resource Name (ARN) of the target group.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
+`Weight`  <a name="cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-weight"></a>
 The weight. The range is 0 to 999.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetGroupStickinessConfig
-
-Transform
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

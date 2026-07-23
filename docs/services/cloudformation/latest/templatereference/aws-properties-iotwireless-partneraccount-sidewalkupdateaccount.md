@@ -2,58 +2,44 @@
 title: "AWS::IoTWireless::PartnerAccount SidewalkUpdateAccount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::PartnerAccount SidewalkUpdateAccount
+<a name="aws-properties-iotwireless-partneraccount-sidewalkupdateaccount"></a>
 
 Sidewalk update.
 
 ## Syntax
+<a name="aws-properties-iotwireless-partneraccount-sidewalkupdateaccount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-partneraccount-sidewalkupdateaccount-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppServerPrivateKey" : String
+  "[AppServerPrivateKey](#cfn-iotwireless-partneraccount-sidewalkupdateaccount-appserverprivatekey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-partneraccount-sidewalkupdateaccount-syntax.yaml"></a>
 
-```yaml
-
-  AppServerPrivateKey: String
-
+```
+  [AppServerPrivateKey](#cfn-iotwireless-partneraccount-sidewalkupdateaccount-appserverprivatekey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-partneraccount-sidewalkupdateaccount-properties"></a>
 
-`AppServerPrivateKey`
-
+`AppServerPrivateKey`  <a name="cfn-iotwireless-partneraccount-sidewalkupdateaccount-appserverprivatekey"></a>
 The new Sidewalk application server private key.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-fA-F0-9]{64}`
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SidewalkAccountInfoWithFingerprint
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `[a-fA-F0-9]{64}`
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

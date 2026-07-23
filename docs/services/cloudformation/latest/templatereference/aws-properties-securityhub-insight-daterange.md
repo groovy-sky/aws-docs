@@ -2,66 +2,50 @@
 title: "AWS::SecurityHub::Insight DateRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::Insight DateRange
+<a name="aws-properties-securityhub-insight-daterange"></a>
 
 A date range for the date filter.
 
 ## Syntax
+<a name="aws-properties-securityhub-insight-daterange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-insight-daterange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Unit" : String,
-  "Value" : Number
+  "[Unit](#cfn-securityhub-insight-daterange-unit)" : {{String}},
+  "[Value](#cfn-securityhub-insight-daterange-value)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-insight-daterange-syntax.yaml"></a>
 
-```yaml
-
-  Unit: String
-  Value: Number
-
+```
+  [Unit](#cfn-securityhub-insight-daterange-unit): {{String}}
+  [Value](#cfn-securityhub-insight-daterange-value): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-insight-daterange-properties"></a>
 
-`Unit`
-
+`Unit`  <a name="cfn-securityhub-insight-daterange-unit"></a>
 A date range unit for the date filter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DAYS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DAYS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-securityhub-insight-daterange-value"></a>
 A date range value for the date filter.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateFilter
-
-IpFilter
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

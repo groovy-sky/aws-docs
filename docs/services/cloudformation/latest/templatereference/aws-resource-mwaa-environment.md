@@ -2,521 +2,362 @@
 title: "AWS::MWAA::Environment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAA::Environment
+<a name="aws-resource-mwaa-environment"></a>
 
 The `AWS::MWAA::Environment` resource creates an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 
 ## Syntax
+<a name="aws-resource-mwaa-environment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-mwaa-environment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MWAA::Environment",
   "Properties" : {
-      "AirflowConfigurationOptions" : Json,
-      "AirflowVersion" : String,
-      "DagS3Path" : String,
-      "EndpointManagement" : String,
-      "EnvironmentClass" : String,
-      "ExecutionRoleArn" : String,
-      "KmsKey" : String,
-      "LoggingConfiguration" : LoggingConfiguration,
-      "MaxWebservers" : Integer,
-      "MaxWorkers" : Integer,
-      "MinWebservers" : Integer,
-      "MinWorkers" : Integer,
-      "Name" : String,
-      "NetworkConfiguration" : NetworkConfiguration,
-      "PluginsS3ObjectVersion" : String,
-      "PluginsS3Path" : String,
-      "RequirementsS3ObjectVersion" : String,
-      "RequirementsS3Path" : String,
-      "Schedulers" : Integer,
-      "SourceBucketArn" : String,
-      "StartupScriptS3ObjectVersion" : String,
-      "StartupScriptS3Path" : String,
-      "Tags" : [ Tag, ... ],
-      "WebserverAccessMode" : String,
-      "WeeklyMaintenanceWindowStart" : String,
-      "WorkerReplacementStrategy" : String
+      "[AirflowConfigurationOptions](#cfn-mwaa-environment-airflowconfigurationoptions)" : {{Json}},
+      "[AirflowVersion](#cfn-mwaa-environment-airflowversion)" : {{String}},
+      "[DagS3Path](#cfn-mwaa-environment-dags3path)" : {{String}},
+      "[EndpointManagement](#cfn-mwaa-environment-endpointmanagement)" : {{String}},
+      "[EnvironmentClass](#cfn-mwaa-environment-environmentclass)" : {{String}},
+      "[ExecutionRoleArn](#cfn-mwaa-environment-executionrolearn)" : {{String}},
+      "[KmsKey](#cfn-mwaa-environment-kmskey)" : {{String}},
+      "[LoggingConfiguration](#cfn-mwaa-environment-loggingconfiguration)" : {{LoggingConfiguration}},
+      "[MaxWebservers](#cfn-mwaa-environment-maxwebservers)" : {{Integer}},
+      "[MaxWorkers](#cfn-mwaa-environment-maxworkers)" : {{Integer}},
+      "[MinWebservers](#cfn-mwaa-environment-minwebservers)" : {{Integer}},
+      "[MinWorkers](#cfn-mwaa-environment-minworkers)" : {{Integer}},
+      "[Name](#cfn-mwaa-environment-name)" : {{String}},
+      "[NetworkConfiguration](#cfn-mwaa-environment-networkconfiguration)" : {{NetworkConfiguration}},
+      "[PluginsS3ObjectVersion](#cfn-mwaa-environment-pluginss3objectversion)" : {{String}},
+      "[PluginsS3Path](#cfn-mwaa-environment-pluginss3path)" : {{String}},
+      "[RequirementsS3ObjectVersion](#cfn-mwaa-environment-requirementss3objectversion)" : {{String}},
+      "[RequirementsS3Path](#cfn-mwaa-environment-requirementss3path)" : {{String}},
+      "[Schedulers](#cfn-mwaa-environment-schedulers)" : {{Integer}},
+      "[SourceBucketArn](#cfn-mwaa-environment-sourcebucketarn)" : {{String}},
+      "[StartupScriptS3ObjectVersion](#cfn-mwaa-environment-startupscripts3objectversion)" : {{String}},
+      "[StartupScriptS3Path](#cfn-mwaa-environment-startupscripts3path)" : {{String}},
+      "[Tags](#cfn-mwaa-environment-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[WebserverAccessMode](#cfn-mwaa-environment-webserveraccessmode)" : {{String}},
+      "[WeeklyMaintenanceWindowStart](#cfn-mwaa-environment-weeklymaintenancewindowstart)" : {{String}},
+      "[WorkerReplacementStrategy](#cfn-mwaa-environment-workerreplacementstrategy)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-mwaa-environment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MWAA::Environment
 Properties:
-  AirflowConfigurationOptions: Json
-  AirflowVersion: String
-  DagS3Path: String
-  EndpointManagement: String
-  EnvironmentClass: String
-  ExecutionRoleArn: String
-  KmsKey: String
-  LoggingConfiguration:
-    LoggingConfiguration
-  MaxWebservers: Integer
-  MaxWorkers: Integer
-  MinWebservers: Integer
-  MinWorkers: Integer
-  Name: String
-  NetworkConfiguration:
-    NetworkConfiguration
-  PluginsS3ObjectVersion: String
-  PluginsS3Path: String
-  RequirementsS3ObjectVersion: String
-  RequirementsS3Path: String
-  Schedulers: Integer
-  SourceBucketArn: String
-  StartupScriptS3ObjectVersion: String
-  StartupScriptS3Path: String
-  Tags:
-    - Tag
-  WebserverAccessMode: String
-  WeeklyMaintenanceWindowStart: String
-  WorkerReplacementStrategy: String
-
+  [AirflowConfigurationOptions](#cfn-mwaa-environment-airflowconfigurationoptions): {{Json}}
+  [AirflowVersion](#cfn-mwaa-environment-airflowversion): {{String}}
+  [DagS3Path](#cfn-mwaa-environment-dags3path): {{String}}
+  [EndpointManagement](#cfn-mwaa-environment-endpointmanagement): {{String}}
+  [EnvironmentClass](#cfn-mwaa-environment-environmentclass): {{String}}
+  [ExecutionRoleArn](#cfn-mwaa-environment-executionrolearn): {{String}}
+  [KmsKey](#cfn-mwaa-environment-kmskey): {{String}}
+  [LoggingConfiguration](#cfn-mwaa-environment-loggingconfiguration): {{
+    LoggingConfiguration}}
+  [MaxWebservers](#cfn-mwaa-environment-maxwebservers): {{Integer}}
+  [MaxWorkers](#cfn-mwaa-environment-maxworkers): {{Integer}}
+  [MinWebservers](#cfn-mwaa-environment-minwebservers): {{Integer}}
+  [MinWorkers](#cfn-mwaa-environment-minworkers): {{Integer}}
+  [Name](#cfn-mwaa-environment-name): {{String}}
+  [NetworkConfiguration](#cfn-mwaa-environment-networkconfiguration): {{
+    NetworkConfiguration}}
+  [PluginsS3ObjectVersion](#cfn-mwaa-environment-pluginss3objectversion): {{String}}
+  [PluginsS3Path](#cfn-mwaa-environment-pluginss3path): {{String}}
+  [RequirementsS3ObjectVersion](#cfn-mwaa-environment-requirementss3objectversion): {{String}}
+  [RequirementsS3Path](#cfn-mwaa-environment-requirementss3path): {{String}}
+  [Schedulers](#cfn-mwaa-environment-schedulers): {{Integer}}
+  [SourceBucketArn](#cfn-mwaa-environment-sourcebucketarn): {{String}}
+  [StartupScriptS3ObjectVersion](#cfn-mwaa-environment-startupscripts3objectversion): {{String}}
+  [StartupScriptS3Path](#cfn-mwaa-environment-startupscripts3path): {{String}}
+  [Tags](#cfn-mwaa-environment-tags): {{
+    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+  [WebserverAccessMode](#cfn-mwaa-environment-webserveraccessmode): {{String}}
+  [WeeklyMaintenanceWindowStart](#cfn-mwaa-environment-weeklymaintenancewindowstart): {{String}}
+  [WorkerReplacementStrategy](#cfn-mwaa-environment-workerreplacementstrategy): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-mwaa-environment-properties"></a>
 
-`AirflowConfigurationOptions`
+`AirflowConfigurationOptions`  <a name="cfn-mwaa-environment-airflowconfigurationoptions"></a>
+A list of key-value pairs containing the Airflow configuration options for your environment. For example, `core.default_timezone: utc`. To learn more, see [Apache Airflow configuration options](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-variables.html).
+*Required*: No
+*Type*: Json
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-A list of key-value pairs containing the Airflow configuration options for your environment. For example, `core.default_timezone: utc`. To learn more, see [Apache Airflow configuration options](../../../mwaa/latest/userguide/configuring-env-variables.md).
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`AirflowVersion`
-
+`AirflowVersion`  <a name="cfn-mwaa-environment-airflowversion"></a>
 The version of Apache Airflow to use for the environment. If no value is specified, defaults to the latest version.
-
 If you specify a newer version number for an existing environment, the version update requires some service interruption before taking effect.
+*Allowed Values*: `2.7.2` \| `2.8.1` \| `2.9.2` \| `2.10.1` \| `2.10.3` \| `3.0.6` \| `3.2.1` (latest)
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-z.]+$`
+*Maximum*: `32`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Allowed Values_: `2.7.2` \| `2.8.1` \| `2.9.2` \| `2.10.1` \| `2.10.3` \| `3.0.6` (latest)
+`DagS3Path`  <a name="cfn-mwaa-environment-dags3path"></a>
+The relative path to the DAGs folder on your Amazon S3 bucket. For example, `dags`. To learn more, see [Adding or updating DAGs](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-dag-folder.html).
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
+`EndpointManagement`  <a name="cfn-mwaa-environment-endpointmanagement"></a>
+Defines whether the VPC endpoints configured for the environment are created, and managed, by the customer or by Amazon MWAA. If set to `SERVICE`, Amazon MWAA will create and manage the required VPC endpoints in your VPC. If set to `CUSTOMER`, you must create, and manage, the VPC endpoints in your VPC.
+*Required*: No
+*Type*: String
+*Allowed values*: `CUSTOMER | SERVICE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`EnvironmentClass`  <a name="cfn-mwaa-environment-environmentclass"></a>
+The environment class type. Valid values: `mw1.micro`, `mw1.small`, `mw1.medium`, `mw1.large`, `mw1.1large`, and `mw1.2large`. To learn more, see [Amazon MWAA environment class](https://docs.aws.amazon.com/mwaa/latest/userguide/environment-class.html).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Pattern_: `^[0-9a-z.]+$`
+`ExecutionRoleArn`  <a name="cfn-mwaa-environment-executionrolearn"></a>
+The Amazon Resource Name (ARN) of the execution role in IAM that allows MWAA to access AWS resources in your environment. For example, `arn:aws:iam::123456789:role/my-execution-role`. To learn more, see [Amazon MWAA Execution role](https://docs.aws.amazon.com/mwaa/latest/userguide/mwaa-create-role.html).
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
+*Maximum*: `1224`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Maximum_: `32`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DagS3Path`
-
-The relative path to the DAGs folder on your Amazon S3 bucket. For example, `dags`. To learn more, see [Adding or updating DAGs](../../../mwaa/latest/userguide/configuring-dag-folder.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`EndpointManagement`
-
-Defines whether the VPC endpoints configured for the environment are created, and managed, by the customer or by Amazon MWAA. If set to `SERVICE`, Amazon MWAA will create and manage the required VPC endpoints in
-your VPC. If set to `CUSTOMER`, you must create, and manage, the VPC endpoints in your VPC.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CUSTOMER | SERVICE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnvironmentClass`
-
-The environment class type. Valid values: `mw1.micro`, `mw1.small`, `mw1.medium`, `mw1.large`, `mw1.1large`, and `mw1.2large`. To learn more, see [Amazon MWAA environment class](../../../mwaa/latest/userguide/environment-class.md).
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ExecutionRoleArn`
-
-The Amazon Resource Name (ARN) of the execution role in IAM that allows MWAA to access AWS resources in your environment. For example, `arn:aws:iam::123456789:role/my-execution-role`. To learn more, see [Amazon MWAA Execution role](../../../mwaa/latest/userguide/mwaa-create-role.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
-
-_Maximum_: `1224`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`KmsKey`
-
+`KmsKey`  <a name="cfn-mwaa-environment-kmskey"></a>
 The AWS Key Management Service (KMS) key to encrypt and decrypt the data in your environment. You can use an AWS KMS key managed by MWAA, or a customer-managed KMS key (advanced).
+*Required*: No
+*Type*: String
+*Pattern*: `^(((arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:kms:[a-z]{2}-[a-z]+-\d:\d+:)?key\/)?[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|(arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):kms:[a-z]{2}-[a-z]+-\d:\d+:)?alias/.+)$`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(((arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:kms:[a-z]{2}-[a-z]+-\d:\d+:)?key\/)?[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|(arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):kms:[a-z]{2}-[a-z]+-\d:\d+:)?alias/.+)$`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LoggingConfiguration`
-
+`LoggingConfiguration`  <a name="cfn-mwaa-environment-loggingconfiguration"></a>
 The Apache Airflow logs being sent to CloudWatch Logs: `DagProcessingLogs`, `SchedulerLogs`, `TaskLogs`, `WebserverLogs`, `WorkerLogs`.
+*Required*: No
+*Type*: [LoggingConfiguration](aws-properties-mwaa-environment-loggingconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: [LoggingConfiguration](aws-properties-mwaa-environment-loggingconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`MaxWebservers`
-
+`MaxWebservers`  <a name="cfn-mwaa-environment-maxwebservers"></a>
 The maximum number of web servers that you want to run in your environment. Amazon MWAA scales the number of Apache Airflow web servers up to the number you specify for `MaxWebservers` when you interact with your Apache Airflow environment using Apache Airflow REST API, or the Apache Airflow CLI. For example, in scenarios where your workload requires network calls to the Apache Airflow REST API with a high transaction-per-second (TPS) rate, Amazon MWAA will increase the number of web servers up to the number set in `MaxWebservers`. As TPS rates decrease Amazon MWAA disposes of the additional web servers, and scales down to the number set in `MinWebservers`.
-
 Valid values: For environments larger than mw1.micro, accepts values from `2` to `5`. Defaults to `2` for all environment sizes except mw1.micro, which defaults to `1`.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`MaxWorkers`
-
+`MaxWorkers`  <a name="cfn-mwaa-environment-maxworkers"></a>
 The maximum number of workers that you want to run in your environment. MWAA scales the number of Apache Airflow workers up to the number you specify in the `MaxWorkers` field. For example, `20`. When there are no more tasks running, and no more in the queue, MWAA disposes of the extra workers leaving the one worker that is included with your environment, or the number you specify in `MinWorkers`.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`MinWebservers`
-
+`MinWebservers`  <a name="cfn-mwaa-environment-minwebservers"></a>
 The minimum number of web servers that you want to run in your environment. Amazon MWAA scales the number of Apache Airflow web servers up to the number you specify for `MaxWebservers` when you interact with your Apache Airflow environment using Apache Airflow REST API, or the Apache Airflow CLI. As the transaction-per-second rate, and the network load, decrease, Amazon MWAA disposes of the additional web servers, and scales down to the number set in `MinWebservers`.
-
 Valid values: For environments larger than mw1.micro, accepts values from `2` to `5`. Defaults to `2` for all environment sizes except mw1.micro, which defaults to `1`.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`MinWorkers`
-
+`MinWorkers`  <a name="cfn-mwaa-environment-minworkers"></a>
 The minimum number of workers that you want to run in your environment. MWAA scales the number of Apache Airflow workers up to the number you specify in the `MaxWorkers` field. When there are no more tasks running, and no more in the queue, MWAA disposes of the extra workers leaving the worker count you specify in the `MinWorkers` field. For example, `2`.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-mwaa-environment-name"></a>
 The name of your Amazon MWAA environment.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z][0-9a-zA-Z\-_]*$`
+*Minimum*: `1`
+*Maximum*: `80`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`NetworkConfiguration`  <a name="cfn-mwaa-environment-networkconfiguration"></a>
+The VPC networking components used to secure and enable network traffic between the AWS resources for your environment. To learn more, see [About networking on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/networking-about.html).
+*Required*: No
+*Type*: [NetworkConfiguration](aws-properties-mwaa-environment-networkconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`PluginsS3ObjectVersion`  <a name="cfn-mwaa-environment-pluginss3objectversion"></a>
+The version of the plugins.zip file on your Amazon S3 bucket. To learn more, see [Installing custom plugins](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-dag-import-plugins.html).
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Pattern_: `^[a-zA-Z][0-9a-zA-Z\-_]*$`
+`PluginsS3Path`  <a name="cfn-mwaa-environment-pluginss3path"></a>
+The relative path to the `plugins.zip` file on your Amazon S3 bucket. For example, `plugins.zip`. To learn more, see [Installing custom plugins](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-dag-import-plugins.html).
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Minimum_: `1`
+`RequirementsS3ObjectVersion`  <a name="cfn-mwaa-environment-requirementss3objectversion"></a>
+The version of the requirements.txt file on your Amazon S3 bucket. To learn more, see [Installing Python dependencies](https://docs.aws.amazon.com/mwaa/latest/userguide/working-dags-dependencies.html).
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Maximum_: `80`
+`RequirementsS3Path`  <a name="cfn-mwaa-environment-requirementss3path"></a>
+The relative path to the `requirements.txt` file on your Amazon S3 bucket. For example, `requirements.txt`. To learn more, see [Installing Python dependencies](https://docs.aws.amazon.com/mwaa/latest/userguide/working-dags-dependencies.html).
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkConfiguration`
-
-The VPC networking components used to secure and enable network traffic between the AWS resources for your environment. To learn more, see [About networking on Amazon MWAA](../../../mwaa/latest/userguide/networking-about.md).
-
-_Required_: No
-
-_Type_: [NetworkConfiguration](aws-properties-mwaa-environment-networkconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PluginsS3ObjectVersion`
-
-The version of the plugins.zip file on your Amazon S3 bucket. To learn more, see [Installing custom plugins](../../../mwaa/latest/userguide/configuring-dag-import-plugins.md).
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`PluginsS3Path`
-
-The relative path to the `plugins.zip` file on your Amazon S3 bucket. For example, `plugins.zip`. To learn more, see [Installing custom plugins](../../../mwaa/latest/userguide/configuring-dag-import-plugins.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`RequirementsS3ObjectVersion`
-
-The version of the requirements.txt file on your Amazon S3 bucket. To learn more, see [Installing Python dependencies](../../../mwaa/latest/userguide/working-dags-dependencies.md).
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`RequirementsS3Path`
-
-The relative path to the `requirements.txt` file on your Amazon S3 bucket. For example, `requirements.txt`. To learn more, see [Installing Python dependencies](../../../mwaa/latest/userguide/working-dags-dependencies.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Schedulers`
-
+`Schedulers`  <a name="cfn-mwaa-environment-schedulers"></a>
 The number of schedulers that you want to run in your environment. Valid values:
++ **v2** - For environments larger than mw1.micro, accepts values from 2 to 5. Defaults to 2 for all environment sizes except mw1.micro, which defaults to 1.
++ **v1** - Accepts 1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-- **v2** \- For environments larger than mw1.micro, accepts values from 2 to 5. Defaults to 2 for all environment sizes except mw1.micro, which defaults to 1.
+`SourceBucketArn`  <a name="cfn-mwaa-environment-sourcebucketarn"></a>
+The Amazon Resource Name (ARN) of the Amazon S3 bucket where your DAG code and supporting files are stored. For example, `arn:aws:s3:::my-airflow-bucket-unique-name`. To learn more, see [Create an Amazon S3 bucket for Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/mwaa-s3-bucket.html).
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:s3:::[a-z0-9.\-]+$`
+*Minimum*: `1`
+*Maximum*: `1224`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-- **v1** \- Accepts 1.
+`StartupScriptS3ObjectVersion`  <a name="cfn-mwaa-environment-startupscripts3objectversion"></a>
+The version of the startup shell script in your Amazon S3 bucket. You must specify the [version ID](https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html) that Amazon S3 assigns to the file every time you update the script.
+ Version IDs are Unicode, UTF-8 encoded, URL-ready, opaque strings that are no more than 1,024 bytes long. The following is an example:
+ `3sL4kqtJlcpXroDTDmJ+rmSpXd3dIbrHY+MTRCxf3vjVBH40Nr8X8gdRQBpUMLUo`
+ For more information, see [Using a startup script](https://docs.aws.amazon.com/mwaa/latest/userguide/using-startup-script.html).
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`SourceBucketArn`
-
-The Amazon Resource Name (ARN) of the Amazon S3 bucket where your DAG code and supporting files are stored. For example, `arn:aws:s3:::my-airflow-bucket-unique-name`. To learn more, see [Create an Amazon S3 bucket for Amazon MWAA](../../../mwaa/latest/userguide/mwaa-s3-bucket.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b)(-[a-z]+)?:s3:::[a-z0-9.\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1224`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`StartupScriptS3ObjectVersion`
-
-The version of the startup shell script in your Amazon S3 bucket. You must specify the [version ID](../../../s3/latest/userguide/versioning-workflows.md) that Amazon S3 assigns to the file
-every time you update the script.
-
-Version IDs are Unicode, UTF-8 encoded, URL-ready, opaque strings that are no more than 1,024 bytes long. The following is an example:
-
-`3sL4kqtJlcpXroDTDmJ+rmSpXd3dIbrHY+MTRCxf3vjVBH40Nr8X8gdRQBpUMLUo`
-
-For more information, see [Using a startup script](../../../mwaa/latest/userguide/using-startup-script.md).
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`StartupScriptS3Path`
-
+`StartupScriptS3Path`  <a name="cfn-mwaa-environment-startupscripts3path"></a>
 The relative path to the startup shell script in your Amazon S3 bucket. For example, `s3://mwaa-environment/startup.sh`.
+ Amazon MWAA runs the script as your environment starts, and before running the Apache Airflow process. You can use this script to install dependencies, modify Apache Airflow configuration options, and set environment variables. For more information, see [Using a startup script](https://docs.aws.amazon.com/mwaa/latest/userguide/using-startup-script.html).
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-Amazon MWAA runs the script as your environment starts, and before running the Apache Airflow process.
-You can use this script to install dependencies, modify Apache Airflow configuration options, and set environment variables. For more information, see
-[Using a startup script](../../../mwaa/latest/userguide/using-startup-script.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
-The key-value tag pairs associated to your environment. For example, `"Environment": "Staging"`. To learn more, see [Tagging](../../../../general/latest/gr/aws-tagging.md).
-
+`Tags`  <a name="cfn-mwaa-environment-tags"></a>
+The key-value tag pairs associated to your environment. For example, `"Environment": "Staging"`. To learn more, see [Tagging](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html).
 If you specify new tags for an existing environment, the update requires service interruption before taking effect.
+*Required*: No
+*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
+`WebserverAccessMode`  <a name="cfn-mwaa-environment-webserveraccessmode"></a>
+The Apache Airflow *Web server* access mode. To learn more, see [Apache Airflow access modes](https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-networking.html). Valid values: `PRIVATE_ONLY`, `PUBLIC_ONLY`, or `PUBLIC_AND_PRIVATE`.
+*Required*: No
+*Type*: String
+*Allowed values*: `PRIVATE_ONLY | PUBLIC_ONLY | PUBLIC_AND_PRIVATE`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Type_: Array of [`Tag`](aws-properties-resource-tags.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`WebserverAccessMode`
-
-The Apache Airflow _Web server_ access mode. To learn more, see [Apache Airflow access modes](../../../mwaa/latest/userguide/configuring-networking.md). Valid values: `PRIVATE_ONLY` or `PUBLIC_ONLY`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PRIVATE_ONLY | PUBLIC_ONLY`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`WeeklyMaintenanceWindowStart`
-
+`WeeklyMaintenanceWindowStart`  <a name="cfn-mwaa-environment-weeklymaintenancewindowstart"></a>
 The day and time of the week to start weekly maintenance updates of your environment in the following format: `DAY:HH:MM`. For example: `TUE:03:30`. You can specify a start time in 30 minute increments only. Supported input includes the following:
++ MON\|TUE\|WED\|THU\|FRI\|SAT\|SUN:([01]\\\\d\|2[0-3]):(00\|30)
+*Required*: No
+*Type*: String
+*Pattern*: `(MON|TUE|WED|THU|FRI|SAT|SUN):([01]\d|2[0-3]):(00|30)`
+*Maximum*: `9`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-- MON\|TUE\|WED\|THU\|FRI\|SAT\|SUN:(\[01\]\\\d\|2\[0-3\]):(00\|30)
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(MON|TUE|WED|THU|FRI|SAT|SUN):([01]\d|2[0-3]):(00|30)`
-
-_Maximum_: `9`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`WorkerReplacementStrategy`
-
+`WorkerReplacementStrategy`  <a name="cfn-mwaa-environment-workerreplacementstrategy"></a>
 The worker replacement strategy for your Amazon MWAA environment.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FORCED | GRACEFUL`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
+*Required*: No
+*Type*: String
+*Allowed values*: `FORCED | GRACEFUL`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 ## Return values
+<a name="aws-resource-mwaa-environment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-mwaa-environment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the environment details.
 
 ### Fn::GetAtt
+<a name="aws-resource-mwaa-environment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-mwaa-environment-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN for the Amazon MWAA environment.
 
-`CeleryExecutorQueue`
+`CeleryExecutorQueue`  <a name="CeleryExecutorQueue-fn::getatt"></a>
+The queue ARN for the environment's [Celery Executor](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/celery.html). Amazon MWAA uses a Celery Executor to distribute tasks across multiple workers. When you create an environment in a shared VPC, you must provide access to the Celery Executor queue from your VPC.
 
-The queue ARN for the environment's [Celery Executor](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/celery.html). Amazon MWAA uses a Celery Executor
-to distribute tasks across multiple workers. When you create an environment in a shared VPC, you must provide access to the Celery Executor queue from your VPC.
-
-`DatabaseVpcEndpointService`
-
+`DatabaseVpcEndpointService`  <a name="DatabaseVpcEndpointService-fn::getatt"></a>
 The VPC endpoint for the environment's Amazon RDS database.
 
-`LoggingConfiguration.DagProcessingLogs.CloudWatchLogGroupArn`
-
+`LoggingConfiguration.DagProcessingLogs.CloudWatchLogGroupArn`  <a name="LoggingConfiguration.DagProcessingLogs.CloudWatchLogGroupArn-fn::getatt"></a>
 The ARN for the CloudWatch Logs group where the Apache Airflow DAG processing logs are published.
 
-`LoggingConfiguration.SchedulerLogs.CloudWatchLogGroupArn`
-
+`LoggingConfiguration.SchedulerLogs.CloudWatchLogGroupArn`  <a name="LoggingConfiguration.SchedulerLogs.CloudWatchLogGroupArn-fn::getatt"></a>
 The ARN for the CloudWatch Logs group where the Apache Airflow Scheduler logs are published.
 
-`LoggingConfiguration.TaskLogs.CloudWatchLogGroupArn`
-
+`LoggingConfiguration.TaskLogs.CloudWatchLogGroupArn`  <a name="LoggingConfiguration.TaskLogs.CloudWatchLogGroupArn-fn::getatt"></a>
 The ARN for the CloudWatch Logs group where the Apache Airflow task logs are published.
 
-`LoggingConfiguration.WebserverLogs.CloudWatchLogGroupArn`
-
+`LoggingConfiguration.WebserverLogs.CloudWatchLogGroupArn`  <a name="LoggingConfiguration.WebserverLogs.CloudWatchLogGroupArn-fn::getatt"></a>
 The ARN for the CloudWatch Logs group where the Apache Airflow Web server logs are published.
 
-`LoggingConfiguration.WorkerLogs.CloudWatchLogGroupArn`
-
+`LoggingConfiguration.WorkerLogs.CloudWatchLogGroupArn`  <a name="LoggingConfiguration.WorkerLogs.CloudWatchLogGroupArn-fn::getatt"></a>
 The ARN for the CloudWatch Logs group where the Apache Airflow Worker logs are published.
 
-`WebserverUrl`
-
+`WebserverUrl`  <a name="WebserverUrl-fn::getatt"></a>
 The URL of your Apache Airflow UI.
 
-`WebserverVpcEndpointService`
-
+`WebserverVpcEndpointService`  <a name="WebserverVpcEndpointService-fn::getatt"></a>
 The VPC endpoint for the environment's web server.
 
 ## Examples
+<a name="aws-resource-mwaa-environment--examples"></a>
 
-- [Create a MWAA environment - JSON](#aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_JSON)
-
-- [Create a MWAA environment - YAML](#aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_YAML)
+**Topics**
++ [Create a MWAA environment - JSON](#aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_JSON)
++ [Create a MWAA environment - YAML](#aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_YAML)
 
 ### Create a MWAA environment - JSON
+<a name="aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_JSON"></a>
 
 The following example shows how to create a MWAA environment:
 
 #### JSON
+<a name="aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_JSON--json"></a>
 
-```json
-
+```
 {
     "Environment": {
         "Type": "AWS::MWAA::Environment",
@@ -572,13 +413,14 @@ The following example shows how to create a MWAA environment:
 ```
 
 ### Create a MWAA environment - YAML
+<a name="aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_YAML"></a>
 
 The following example shows how to create a MWAA environment:
 
 #### YAML
+<a name="aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_YAML--yaml"></a>
 
-```yaml
-
+```
 Environment:
     Properties:
       AirflowConfigurationOptions:
@@ -617,11 +459,5 @@ Environment:
         Team: Analytics
     Type: "AWS::MWAA::Environment"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Managed Workflows for Apache Airflow
-
-LoggingConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

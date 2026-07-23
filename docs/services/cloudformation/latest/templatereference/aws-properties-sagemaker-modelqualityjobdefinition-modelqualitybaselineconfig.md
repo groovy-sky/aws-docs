@@ -2,73 +2,53 @@
 title: "AWS::SageMaker::ModelQualityJobDefinition ModelQualityBaselineConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelQualityJobDefinition ModelQualityBaselineConfig
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig"></a>
 
-Configuration for monitoring constraints and monitoring statistics. These baseline resources are
-compared against the results of the current job from the series of jobs scheduled to collect data
-periodically.
+Configuration for monitoring constraints and monitoring statistics. These baseline resources are compared against the results of the current job from the series of jobs scheduled to collect data periodically.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "BaseliningJobName" : String,
-  "ConstraintsResource" : ConstraintsResource
+  "[BaseliningJobName](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-baseliningjobname)" : {{String}},
+  "[ConstraintsResource](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-constraintsresource)" : {{ConstraintsResource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-syntax.yaml"></a>
 
-```yaml
-
-  BaseliningJobName: String
-  ConstraintsResource:
-    ConstraintsResource
-
+```
+  [BaseliningJobName](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-baseliningjobname): {{String}}
+  [ConstraintsResource](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-constraintsresource): {{
+    ConstraintsResource}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-properties"></a>
 
-`BaseliningJobName`
-
+`BaseliningJobName`  <a name="cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-baseliningjobname"></a>
 The name of the job that performs baselining for the monitoring job.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConstraintsResource`
-
+`ConstraintsResource`  <a name="cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-constraintsresource"></a>
 The constraints resource for a monitoring job.
-
-_Required_: No
-
-_Type_: [ConstraintsResource](aws-properties-sagemaker-modelqualityjobdefinition-constraintsresource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelQualityAppSpecification
-
-ModelQualityJobInput
+*Required*: No
+*Type*: [ConstraintsResource](aws-properties-sagemaker-modelqualityjobdefinition-constraintsresource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

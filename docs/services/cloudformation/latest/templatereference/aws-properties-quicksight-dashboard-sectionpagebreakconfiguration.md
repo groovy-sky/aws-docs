@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard SectionPageBreakConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SectionPageBreakConfiguration
+<a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration"></a>
 
 The configuration of a page break for a section.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "After" : SectionAfterPageBreak
+  "[After](#cfn-quicksight-dashboard-sectionpagebreakconfiguration-after)" : {{SectionAfterPageBreak}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  After:
-    SectionAfterPageBreak
-
+```
+  [After](#cfn-quicksight-dashboard-sectionpagebreakconfiguration-after): {{
+    SectionAfterPageBreak}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration-properties"></a>
 
-`After`
-
+`After`  <a name="cfn-quicksight-dashboard-sectionpagebreakconfiguration-after"></a>
 The configuration of a page break after a section.
-
-_Required_: No
-
-_Type_: [SectionAfterPageBreak](aws-properties-quicksight-dashboard-sectionafterpagebreak.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SectionLayoutConfiguration
-
-SectionStyle
+*Required*: No
+*Type*: [SectionAfterPageBreak](aws-properties-quicksight-dashboard-sectionafterpagebreak.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

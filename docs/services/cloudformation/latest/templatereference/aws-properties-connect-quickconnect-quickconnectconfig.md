@@ -2,95 +2,69 @@
 title: "AWS::Connect::QuickConnect QuickConnectConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::QuickConnect QuickConnectConfig
+<a name="aws-properties-connect-quickconnect-quickconnectconfig"></a>
 
 Contains configuration settings for a quick connect.
 
 ## Syntax
+<a name="aws-properties-connect-quickconnect-quickconnectconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-quickconnect-quickconnectconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "PhoneConfig" : PhoneNumberQuickConnectConfig,
-  "QueueConfig" : QueueQuickConnectConfig,
-  "QuickConnectType" : String,
-  "UserConfig" : UserQuickConnectConfig
+  "[PhoneConfig](#cfn-connect-quickconnect-quickconnectconfig-phoneconfig)" : {{PhoneNumberQuickConnectConfig}},
+  "[QueueConfig](#cfn-connect-quickconnect-quickconnectconfig-queueconfig)" : {{QueueQuickConnectConfig}},
+  "[QuickConnectType](#cfn-connect-quickconnect-quickconnectconfig-quickconnecttype)" : {{String}},
+  "[UserConfig](#cfn-connect-quickconnect-quickconnectconfig-userconfig)" : {{UserQuickConnectConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-quickconnect-quickconnectconfig-syntax.yaml"></a>
 
-```yaml
-
-  PhoneConfig:
-    PhoneNumberQuickConnectConfig
-  QueueConfig:
-    QueueQuickConnectConfig
-  QuickConnectType: String
-  UserConfig:
-    UserQuickConnectConfig
-
+```
+  [PhoneConfig](#cfn-connect-quickconnect-quickconnectconfig-phoneconfig): {{
+    PhoneNumberQuickConnectConfig}}
+  [QueueConfig](#cfn-connect-quickconnect-quickconnectconfig-queueconfig): {{
+    QueueQuickConnectConfig}}
+  [QuickConnectType](#cfn-connect-quickconnect-quickconnectconfig-quickconnecttype): {{String}}
+  [UserConfig](#cfn-connect-quickconnect-quickconnectconfig-userconfig): {{
+    UserQuickConnectConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-quickconnect-quickconnectconfig-properties"></a>
 
-`PhoneConfig`
-
+`PhoneConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig-phoneconfig"></a>
 The phone configuration. This is required only if QuickConnectType is PHONE\_NUMBER.
+*Required*: No
+*Type*: [PhoneNumberQuickConnectConfig](aws-properties-connect-quickconnect-phonenumberquickconnectconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PhoneNumberQuickConnectConfig](aws-properties-connect-quickconnect-phonenumberquickconnectconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueueConfig`
-
+`QueueConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig-queueconfig"></a>
 The queue configuration. This is required only if QuickConnectType is QUEUE.
+*Required*: No
+*Type*: [QueueQuickConnectConfig](aws-properties-connect-quickconnect-queuequickconnectconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`QuickConnectType`  <a name="cfn-connect-quickconnect-quickconnectconfig-quickconnecttype"></a>
+The type of quick connect. In the Connect Customer console, when you create a quick connect, you are prompted to assign one of the following types: Agent (USER), External (PHONE\_NUMBER), or Queue (QUEUE).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PHONE_NUMBER | QUEUE | USER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [QueueQuickConnectConfig](aws-properties-connect-quickconnect-queuequickconnectconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QuickConnectType`
-
-The type of quick connect. In the Amazon Connect console, when you create a
-quick connect, you are prompted to assign one of the following types: Agent (USER),
-External (PHONE\_NUMBER), or Queue (QUEUE).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PHONE_NUMBER | QUEUE | USER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserConfig`
-
+`UserConfig`  <a name="cfn-connect-quickconnect-quickconnectconfig-userconfig"></a>
 The user configuration. This is required only if QuickConnectType is USER.
-
-_Required_: No
-
-_Type_: [UserQuickConnectConfig](aws-properties-connect-quickconnect-userquickconnectconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QueueQuickConnectConfig
-
-Tag
+*Required*: No
+*Type*: [UserQuickConnectConfig](aws-properties-connect-quickconnect-userquickconnectconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,50 @@
 title: "AWS::AppStream::ImageBuilder DomainJoinInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::ImageBuilder DomainJoinInfo
+<a name="aws-properties-appstream-imagebuilder-domainjoininfo"></a>
 
 The name of the directory and organizational unit (OU) to use to join the image builder to a Microsoft Active Directory domain.
 
 ## Syntax
+<a name="aws-properties-appstream-imagebuilder-domainjoininfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-imagebuilder-domainjoininfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "DirectoryName" : String,
-  "OrganizationalUnitDistinguishedName" : String
+  "[DirectoryName](#cfn-appstream-imagebuilder-domainjoininfo-directoryname)" : {{String}},
+  "[OrganizationalUnitDistinguishedName](#cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-imagebuilder-domainjoininfo-syntax.yaml"></a>
 
-```yaml
-
-  DirectoryName: String
-  OrganizationalUnitDistinguishedName: String
-
+```
+  [DirectoryName](#cfn-appstream-imagebuilder-domainjoininfo-directoryname): {{String}}
+  [OrganizationalUnitDistinguishedName](#cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-imagebuilder-domainjoininfo-properties"></a>
 
-`DirectoryName`
-
+`DirectoryName`  <a name="cfn-appstream-imagebuilder-domainjoininfo-directoryname"></a>
 The fully qualified name of the directory (for example, corp.example.com).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrganizationalUnitDistinguishedName`
-
+`OrganizationalUnitDistinguishedName`  <a name="cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname"></a>
 The distinguished name of the organizational unit for computer accounts.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessEndpoint
-
-Tag
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,53 @@
 title: "AWS::Connect::HoursOfOperation OverrideTimeSlice"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::HoursOfOperation OverrideTimeSlice
+<a name="aws-properties-connect-hoursofoperation-overridetimeslice"></a>
 
 The start time or end time for an hours of operation override.
 
 ## Syntax
+<a name="aws-properties-connect-hoursofoperation-overridetimeslice-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-hoursofoperation-overridetimeslice-syntax.json"></a>
 
-```json
-
+```
 {
-  "Hours" : Integer,
-  "Minutes" : Integer
+  "[Hours](#cfn-connect-hoursofoperation-overridetimeslice-hours)" : {{Integer}},
+  "[Minutes](#cfn-connect-hoursofoperation-overridetimeslice-minutes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-hoursofoperation-overridetimeslice-syntax.yaml"></a>
 
-```yaml
-
-  Hours: Integer
-  Minutes: Integer
-
+```
+  [Hours](#cfn-connect-hoursofoperation-overridetimeslice-hours): {{Integer}}
+  [Minutes](#cfn-connect-hoursofoperation-overridetimeslice-minutes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-hoursofoperation-overridetimeslice-properties"></a>
 
-`Hours`
-
+`Hours`  <a name="cfn-connect-hoursofoperation-overridetimeslice-hours"></a>
 The hours.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `23`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `23`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Minutes`
-
+`Minutes`  <a name="cfn-connect-hoursofoperation-overridetimeslice-minutes"></a>
 The minutes.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `59`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HoursOfOperationTimeSlice
-
-RecurrenceConfig
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `59`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

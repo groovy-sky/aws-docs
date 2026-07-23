@@ -3,149 +3,59 @@ title: "Step 2: Create a user and policy"
 ---
 
 # Step 2: Create a user and policy
+<a name="DAX.client.create-user-policy"></a>
 
-In this step, you create a user with a policy that grants access to your Amazon
-DynamoDB Accelerator (DAX) cluster and to DynamoDB using AWS Identity and Access Management. You can then run applications
-that interact with your DAX cluster.
-
-## Sign up for an AWS account
-
-If you do not have an AWS account, complete the following steps to create one.
-
-###### To sign up for an AWS account
-
-1. Open [https://portal.aws.amazon.com/billing/signup](https://portal.aws.amazon.com/billing/signup).
-
-2. Follow the online instructions.
-
-Part of the sign-up procedure involves receiving a phone call or text message and entering
-    a verification code on the phone keypad.
-
-When you sign up for an AWS account, an _AWS account root user_ is created. The root user has access to all AWS services
-    and resources in the account. As a security best practice, assign administrative access to a user, and use only the root user to perform [tasks that require root user access](../../../iam/latest/userguide/id-root-user.md#root-user-tasks).
-
-AWS sends you a confirmation email after the sign-up process is
-complete. At any time, you can view your current account activity and manage your account by
-going to [https://aws.amazon.com/](https://aws.amazon.com/) and choosing **My**
-**Account**.
-
-## Create a user with administrative access
-
-After you sign up for an AWS account, secure your AWS account root user, enable AWS IAM Identity Center, and create an administrative user so that you
-don't use the root user for everyday tasks.
-
-###### Secure your AWS account root user
-
-1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/) as the account owner by choosing **Root user** and entering your AWS account email address. On the next page, enter your password.
-
-For help signing in by using root user, see [Signing in as the root user](../../../signin/latest/userguide/console-sign-in-tutorials.md#introduction-to-root-user-sign-in-tutorial) in the _AWS Sign-In User Guide_.
-
-2. Turn on multi-factor authentication (MFA) for your root user.
-
-For instructions, see [Enable a virtual MFA device for your AWS account root user (console)](../../../iam/latest/userguide/enable-virt-mfa-for-root.md) in the _IAM User Guide_.
-
-###### Create a user with administrative access
-
-1. Enable IAM Identity Center.
-
-For instructions, see [Enabling\
-    AWS IAM Identity Center](../../../singlesignon/latest/userguide/get-set-up-for-idc.md) in the
-    _AWS IAM Identity Center User Guide_.
-
-2. In IAM Identity Center, grant administrative access to a user.
-
-For a tutorial about using the IAM Identity Center directory as your identity source, see [Configure user access with the default IAM Identity Center directory](../../../singlesignon/latest/userguide/quick-start-default-idc.md) in the
-    _AWS IAM Identity Center User Guide_.
-
-###### Sign in as the user with administrative access
-
-- To sign in with your IAM Identity Center user, use the sign-in URL that was sent to your email address when you created the IAM Identity Center user.
-
-For help signing in using an IAM Identity Center user, see [Signing in to the AWS access portal](../../../signin/latest/userguide/iam-id-center-sign-in-tutorial.md) in the _AWS Sign-In User Guide_.
-
-###### Assign access to additional users
-
-1. In IAM Identity Center, create a permission set that follows the best practice of applying least-privilege permissions.
-
-For instructions, see [Create a permission set](../../../singlesignon/latest/userguide/get-started-create-a-permission-set.md) in the _AWS IAM Identity Center User Guide_.
-
-2. Assign users to a group, and then assign single sign-on access to the group.
-
-For instructions, see [Add groups](../../../singlesignon/latest/userguide/addgroups.md) in the _AWS IAM Identity Center User Guide_.
+In this step, you create a user with a policy that grants access to your Amazon DynamoDB Accelerator (DAX) cluster and to DynamoDB using AWS Identity and Access Management. You can then run applications that interact with your DAX cluster.
 
 To provide access, add permissions to your users, groups, or roles:
++ Users and groups in AWS IAM Identity Center:
 
-- Users and groups in AWS IAM Identity Center:
+  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
++ Users managed in IAM through an identity provider:
 
-Create a permission set. Follow the instructions in [Create a permission set](../../../singlesignon/latest/userguide/howtocreatepermissionset.md) in the _AWS IAM Identity Center User Guide_.
+  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
++ IAM users:
+  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
-- Users managed in IAM through an identity provider:
+**To use the JSON policy editor to create a policy**
 
-Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](../../../iam/latest/userguide/id-roles-create-for-idp.md)
-in the _IAM User Guide_.
+1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
-- IAM users:
+1. In the navigation pane on the left, choose **Policies**.
 
-- Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](../../../iam/latest/userguide/id-roles-create-for-user.md) in the _IAM User Guide_.
+   If this is your first time choosing **Policies**, the **Welcome to Managed Policies** page appears. Choose **Get Started**.
 
-- (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](../../../iam/latest/userguide/id-users-change-permissions.md#users_change_permissions-add-console) in the _IAM User Guide_.
+1. At the top of the page, choose **Create policy**.
 
-###### To use the JSON policy editor to create a policy
+1. In the **Policy editor** section, choose the **JSON** option.
 
-01. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
+1. Enter or paste a JSON policy document. For details about the IAM policy language, see [IAM JSON policy reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html).
 
-02. In the navigation pane on the left, choose **Policies**.
+1. Resolve any security warnings, errors, or general warnings generated during [policy validation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html), and then choose **Next**.
+**Note**
+You can switch between the **Visual** and **JSON** editor options anytime. However, if you make changes or choose **Next** in the **Visual** editor, IAM might restructure your policy to optimize it for the visual editor. For more information, see [Policy restructuring](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_policies.html#troubleshoot_viseditor-restructure) in the *IAM User Guide*.
 
-    If this is your first time choosing **Policies**, the
-     **Welcome to Managed Policies** page appears. Choose **Get**
-    **Started**.
+1. (Optional) When you create or edit a policy in the AWS Management Console, you can generate a JSON or YAML policy template that you can use in CloudFormation templates.
 
-03. At the top of the page, choose **Create policy**.
+   To do this, in the **Policy editor** choose **Actions**, and then choose **Generate CloudFormation template**. To learn more about CloudFormation, see [AWS Identity and Access Management resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_IAM.html) in the *AWS CloudFormation User Guide*.
 
-04. In the **Policy editor** section, choose the
-     **JSON** option.
+1. When you are finished adding permissions to the policy, choose **Next**.
 
-05. Enter or paste a JSON policy document. For details about the IAM policy language, see
-     [IAM JSON policy reference](../../../iam/latest/userguide/reference-policies.md).
+1. On the **Review and create** page, enter a **Policy name** and a **Description** (optional) for the policy that you are creating. Review **Permissions defined in this policy** to see the permissions that are granted by your policy.
 
-06. Resolve any security warnings, errors, or general warnings generated during [policy validation](../../../iam/latest/userguide/access-policies-policy-validator.md), and then choose **Next**.
+1. (Optional) Add metadata to the policy by attaching tags as key-value pairs. For more information about using tags in IAM, see [Tags for AWS Identity and Access Management resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *IAM User Guide*.
 
-    ###### Note
+1. Choose **Create policy** to save your new policy.
 
-    You can switch between the **Visual** and **JSON**
-    editor options anytime. However, if you make changes or choose **Next**
-    in the **Visual** editor, IAM might restructure your policy to
-    optimize it for the visual editor. For more information, see [Policy restructuring](../../../iam/latest/userguide/troubleshoot-policies.md#troubleshoot_viseditor-restructure)
-    in the _IAM User Guide_.
+ **Policy document** – Copy and paste the following document to create the JSON policy.
 
-07. (Optional) When you create or edit a policy in the AWS Management Console, you can generate a JSON
-     or YAML policy template that you can use in CloudFormation templates.
+------
+#### [ JSON ]
 
-    To do this, in the **Policy editor** choose
-     **Actions**, and then choose **Generate CloudFormation**
-    **template**. To learn more about CloudFormation, see [AWS Identity and Access Management resource type reference](../../../cloudformation/latest/userguide/aws-iam.md) in the
-     _AWS CloudFormation User Guide_.
+****
 
-08. When you are finished adding permissions to the policy, choose
-     **Next**.
-
-09. On the **Review and create** page, enter a **Policy**
-    **name** and a **Description** (optional) for the policy that
-     you are creating. Review **Permissions defined in this policy** to see
-     the permissions that are granted by your policy.
-
-10. (Optional) Add metadata to the policy by attaching tags as key-value pairs. For more
-     information about using tags in IAM, see [Tags for AWS Identity and Access Management resources](../../../iam/latest/userguide/id-tags.md) in the _IAM User Guide_.
-
-11. Choose **Create policy** to save your new policy.
-
-**Policy document** – Copy and paste the following document to
-create the JSON policy.
-
-JSON
-
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -169,13 +79,8 @@ JSON
         }
     ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 1: Launch an EC2 instance
-
-Step 3: Configure an EC2 instance
+------
 
 All content copied from https://docs.aws.amazon.com/.

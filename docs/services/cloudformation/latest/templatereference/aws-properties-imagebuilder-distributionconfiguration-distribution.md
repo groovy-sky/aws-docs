@@ -2,182 +2,132 @@
 title: "AWS::ImageBuilder::DistributionConfiguration Distribution"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration Distribution
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution"></a>
 
-The distribution configuration distribution defines the settings for a specific Region
-in the Distribution Configuration. You must specify whether the distribution is for an AMI
-or a container image. To do so, include exactly one of the following data types for your
-distribution:
-
-- amiDistributionConfiguration
-
-- containerDistributionConfiguration
+Defines the settings for a specific Region in the distribution configuration. You must specify whether the distribution is for an AMI or a container image. To do so, include exactly one of the following data types for your distribution:
++  `AmiDistributionConfiguration`
++  `ContainerDistributionConfiguration`
 
 ## Syntax
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution-syntax.json"></a>
 
-```json
-
+```
 {
-  "AmiDistributionConfiguration" : AmiDistributionConfiguration,
-  "ContainerDistributionConfiguration" : ContainerDistributionConfiguration,
-  "FastLaunchConfigurations" : [ FastLaunchConfiguration, ... ],
-  "LaunchTemplateConfigurations" : [ LaunchTemplateConfiguration, ... ],
-  "LicenseConfigurationArns" : [ String, ... ],
-  "Region" : String,
-  "SsmParameterConfigurations" : [ SsmParameterConfiguration, ... ]
+  "[AmiDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-amidistributionconfiguration)" : {{AmiDistributionConfiguration}},
+  "[ContainerDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-containerdistributionconfiguration)" : {{ContainerDistributionConfiguration}},
+  "[FastLaunchConfigurations](#cfn-imagebuilder-distributionconfiguration-distribution-fastlaunchconfigurations)" : {{[ FastLaunchConfiguration, ... ]}},
+  "[LaunchTemplateConfigurations](#cfn-imagebuilder-distributionconfiguration-distribution-launchtemplateconfigurations)" : {{[ LaunchTemplateConfiguration, ... ]}},
+  "[LicenseConfigurationArns](#cfn-imagebuilder-distributionconfiguration-distribution-licenseconfigurationarns)" : {{[ String, ... ]}},
+  "[Region](#cfn-imagebuilder-distributionconfiguration-distribution-region)" : {{String}},
+  "[SsmParameterConfigurations](#cfn-imagebuilder-distributionconfiguration-distribution-ssmparameterconfigurations)" : {{[ SsmParameterConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution-syntax.yaml"></a>
 
-```yaml
-
-  AmiDistributionConfiguration:
-    AmiDistributionConfiguration
-  ContainerDistributionConfiguration:
-    ContainerDistributionConfiguration
-  FastLaunchConfigurations:
-    - FastLaunchConfiguration
-  LaunchTemplateConfigurations:
-    - LaunchTemplateConfiguration
-  LicenseConfigurationArns:
-    - String
-  Region: String
-  SsmParameterConfigurations:
-    - SsmParameterConfiguration
-
+```
+  [AmiDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-amidistributionconfiguration): {{
+    AmiDistributionConfiguration}}
+  [ContainerDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-containerdistributionconfiguration): {{
+    ContainerDistributionConfiguration}}
+  [FastLaunchConfigurations](#cfn-imagebuilder-distributionconfiguration-distribution-fastlaunchconfigurations): {{
+    - FastLaunchConfiguration}}
+  [LaunchTemplateConfigurations](#cfn-imagebuilder-distributionconfiguration-distribution-launchtemplateconfigurations): {{
+    - LaunchTemplateConfiguration}}
+  [LicenseConfigurationArns](#cfn-imagebuilder-distributionconfiguration-distribution-licenseconfigurationarns): {{
+    - String}}
+  [Region](#cfn-imagebuilder-distributionconfiguration-distribution-region): {{String}}
+  [SsmParameterConfigurations](#cfn-imagebuilder-distributionconfiguration-distribution-ssmparameterconfigurations): {{
+    - SsmParameterConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution-properties"></a>
 
-`AmiDistributionConfiguration`
+`AmiDistributionConfiguration`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-amidistributionconfiguration"></a>
+The specific AMI settings; for example, launch permissions or AMI tags.
+*Required*: No
+*Type*: [AmiDistributionConfiguration](aws-properties-imagebuilder-distributionconfiguration-amidistributionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The specific AMI settings, such as launch permissions and AMI tags. For details,
-see example schema below.
+`ContainerDistributionConfiguration`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-containerdistributionconfiguration"></a>
+Container distribution settings for encryption, licensing, and sharing in a specific Region.
+*Required*: No
+*Type*: [ContainerDistributionConfiguration](aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AmiDistributionConfiguration](aws-properties-imagebuilder-distributionconfiguration-amidistributionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContainerDistributionConfiguration`
-
-Container distribution settings for encryption, licensing, and sharing
-in a specific Region. For details, see example schema below.
-
-_Required_: No
-
-_Type_: [ContainerDistributionConfiguration](aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FastLaunchConfigurations`
-
+`FastLaunchConfigurations`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-fastlaunchconfigurations"></a>
 The Windows faster-launching configurations to use for AMI distribution.
+*Required*: No
+*Type*: Array of [FastLaunchConfiguration](aws-properties-imagebuilder-distributionconfiguration-fastlaunchconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LaunchTemplateConfigurations`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-launchtemplateconfigurations"></a>
+A group of launchTemplateConfiguration settings that apply to image distribution for specified accounts.
+*Required*: No
+*Type*: Array of [LaunchTemplateConfiguration](aws-properties-imagebuilder-distributionconfiguration-launchtemplateconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [FastLaunchConfiguration](aws-properties-imagebuilder-distributionconfiguration-fastlaunchconfiguration.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LaunchTemplateConfigurations`
-
-A group of launchTemplateConfiguration settings that apply to image distribution for
-specified accounts.
-
-_Required_: No
-
-_Type_: Array of [LaunchTemplateConfiguration](aws-properties-imagebuilder-distributionconfiguration-launchtemplateconfiguration.md)
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LicenseConfigurationArns`
-
+`LicenseConfigurationArns`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-licenseconfigurationarns"></a>
 The License Manager Configuration to associate with the AMI in the specified Region.
-For more information, see the [LicenseConfiguration API](../../../../reference/license-manager/latest/apireference/api-licenseconfiguration.md).
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Region`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-region"></a>
+The target Region.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
-The target Region for the Distribution Configuration. For example,
-`eu-west-1`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SsmParameterConfigurations`
-
-Contains settings to update AWS Systems Manager (SSM) Parameter Store Parameters with
-output AMI IDs from the build by target Region.
-
-_Required_: No
-
-_Type_: Array of [SsmParameterConfiguration](aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SsmParameterConfigurations`  <a name="cfn-imagebuilder-distributionconfiguration-distribution-ssmparameterconfigurations"></a>
+Contains settings to update AWS Systems Manager (SSM) Parameter Store Parameters with output AMI IDs from the build by target Region.
+*Required*: No
+*Type*: Array of [SsmParameterConfiguration](aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples"></a>
 
-- [Example 1: AmiDistributionConfiguration schema with launch permissions](#aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_schema_with_launch_permissions)
+**Topics**
++ [Example 1: AmiDistributionConfiguration with launch permissions](#aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_with_launch_permissions)
++ [Example 2: Create a distribution configuration resource for a copied AMI](#aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI)
++ [Example 3: ContainerDistributionConfiguration](#aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration)
 
-- [Example 2: Create a distribution configuration resource for a copied AMI](#aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI)
+### Example 1: AmiDistributionConfiguration with launch permissions
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_with_launch_permissions"></a>
 
-- [Example 3: ContainerDistributionConfiguration schema](#aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration_schema)
+The following example shows the template for the AmiDistributionConfiguration property in both YAML and JSON format.
 
-### Example 1: AmiDistributionConfiguration schema with launch permissions
-
-The following example shows the schema for the AmiDistributionConfiguration
-property in both YAML and JSON format.
-
-###### Note
-
-To make an AMI public, set the launch permission authorized accounts to
-`all`. See the examples for making an AMI public at [EC2 ModifyImageAttribute](../../../../reference/awsec2/latest/apireference/api-modifyimageattribute.md).
+**Note**
+To make an AMI public, set the launch permission authorized accounts to `all`. See the examples for making an AMI public at [EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html).
 
 #### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_with_launch_permissions--yaml"></a>
 
-```yaml
-
+```
 Distributions:
   - Region: 'us-west-2'
     AmiDistributionConfiguration:
       Name: 'AmiCopyConfiguration - {{ imagebuilder:buildDate }}'
-      Description: 'Share an AMI in the distribution Region by granting launch permissions to specified AWS organizations, OUs, user groups, and accounts.'
+      Description: 'Share an AMI in the distribution Region by granting launch permissions to specified organizations, OUs, user groups, and accounts.'
       AmiTags:
         AmiTagKey: 'AmiTagValue'
       LaunchPermissionConfiguration:
@@ -194,42 +144,48 @@ Distributions:
 ```
 
 #### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_with_launch_permissions--json"></a>
 
-```json
-
-"{
+```
+{
     "Distributions": [{
-        AmiDistributionConfiguration": {
-        "Name": "AmiCopyConfiguration - {{ imagebuilder:buildDate }}",
-        "Description": "Share an AMI in the distribution Region by granting launch permissions to specified user groups and accounts.",
-        "AmiTags": {
-            "AmiTagKey": "AmiTagValue"
-        },
-        "LaunchPermissionConfiguration": {
-            "OrganizationArns": ["arn:aws:organizations::123456789012:organization/o-myorganization123"],
-            "OrganizationalUnitArns": ["arn:aws:organizations::123456789012:ou/o-123example/ou-1234-myorganizationalunit"],
-            "UserGroups": [
-                "GroupName1",
-                "GroupName2"
-            ],
-            "UserIds": [
-                "123456789012",
-                "345678901234"
-            ]
+        "Region": "us-west-2",
+        "AmiDistributionConfiguration": {
+            "Name": "AmiCopyConfiguration - {{ imagebuilder:buildDate }}",
+            "Description": "Share an AMI in the distribution Region by granting launch permissions to specified organizations, OUs, user groups, and accounts.",
+            "AmiTags": {
+                "AmiTagKey": "AmiTagValue"
+            },
+            "LaunchPermissionConfiguration": {
+                "OrganizationArns": [
+                    "arn:aws:organizations::123456789012:organization/o-myorganization123"
+                ],
+                "OrganizationalUnitArns": [
+                    "arn:aws:organizations::123456789012:ou/o-123example/ou-1234-myorganizationalunit"
+                ],
+                "UserGroups": [
+                    "GroupName1",
+                    "GroupName2"
+                ],
+                "UserIds": [
+                    "123456789012",
+                    "345678901234"
+                ]
+            }
         }
     }]
 }
 ```
 
 ### Example 2: Create a distribution configuration resource for a copied AMI
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI"></a>
 
-The following example shows the schema for the AmiDistributionConfiguration
-property in both YAML and JSON.
+The following example shows the template for the AmiDistributionConfiguration property in both YAML and JSON.
 
 #### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI--yaml"></a>
 
-```yaml
-
+```
 Distributions:
   - Region: 'us-west-2'
     AmiDistributionConfiguration:
@@ -243,11 +199,12 @@ Distributions:
 ```
 
 #### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI--json"></a>
 
-```json
-
+```
 {
     "Distributions": [{
+        "Region": "us-west-2",
         "AmiDistributionConfiguration": {
             "Name": "AmiCopyConfiguration - {{ imagebuilder:buildDate }}",
             "Description": "Distribute a copy of the AMI to specific accounts in the destination Region.",
@@ -260,19 +217,19 @@ Distributions:
 }
 ```
 
-### Example 3: ContainerDistributionConfiguration schema
+### Example 3: ContainerDistributionConfiguration
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration"></a>
 
-The following example shows the schema for the ContainerDistributionConfiguration
-property in both YAML and JSON format.
+The following example shows the template for the ContainerDistributionConfiguration property in both YAML and JSON format.
 
 #### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration--yaml"></a>
 
-```yaml
-
+```
 Distributions:
   - Region: 'us-west-2'
     ContainerDistributionConfiguration:
-      Description: 'test distribution cfn template'
+      Description: 'Container distribution for us-west-2'
       TargetRepository:
         Service: ECR
         RepositoryName: 'cfn-test'
@@ -282,13 +239,14 @@ Distributions:
 ```
 
 #### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration--json"></a>
 
-```json
-
+```
 {
     "Distributions": [{
+        "Region": "us-west-2",
         "ContainerDistributionConfiguration": {
-            "Description": "test distribution cfn template",
+            "Description": "Container distribution for us-west-2",
             "TargetRepository": {
                 "Service": "ECR",
                 "RepositoryName": "cfn-test"
@@ -298,11 +256,5 @@ Distributions:
     }]
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerDistributionConfiguration
-
-FastLaunchConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,52 +2,41 @@
 title: "AWS::QuickSight::Dashboard StaticFileUrlSourceOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard StaticFileUrlSourceOptions
+<a name="aws-properties-quicksight-dashboard-staticfileurlsourceoptions"></a>
 
 The structure that contains the URL to download the static file from.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-staticfileurlsourceoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-staticfileurlsourceoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Url" : String
+  "[Url](#cfn-quicksight-dashboard-staticfileurlsourceoptions-url)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-staticfileurlsourceoptions-syntax.yaml"></a>
 
-```yaml
-
-  Url: String
-
+```
+  [Url](#cfn-quicksight-dashboard-staticfileurlsourceoptions-url): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-staticfileurlsourceoptions-properties"></a>
 
-`Url`
-
+`Url`  <a name="cfn-quicksight-dashboard-staticfileurlsourceoptions-url"></a>
 The URL to download the static file from.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StaticFileSource
-
-StringDefaultValues
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

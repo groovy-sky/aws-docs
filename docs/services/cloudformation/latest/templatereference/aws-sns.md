@@ -2,26 +2,15 @@
 title: "Amazon Simple Notification Service"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Amazon Simple Notification Service
+<a name="AWS_SNS"></a>
 
 **Resource types**
-
-- [AWS::SNS::Subscription](aws-resource-sns-subscription.md)
-
-- [AWS::SNS::Topic](aws-resource-sns-topic.md)
-
-- [AWS::SNS::TopicInlinePolicy](aws-resource-sns-topicinlinepolicy.md)
-
-- [AWS::SNS::TopicPolicy](aws-resource-sns-topicpolicy.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Previous
-
-AWS::SNS::Subscription
++ [AWS::SNS::Subscription](aws-resource-sns-subscription.md)
++ [AWS::SNS::Topic](aws-resource-sns-topic.md)
++ [AWS::SNS::TopicInlinePolicy](aws-resource-sns-topicinlinepolicy.md)
++ [AWS::SNS::TopicPolicy](aws-resource-sns-topicpolicy.md)
 
 All content copied from https://docs.aws.amazon.com/.

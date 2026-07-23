@@ -2,143 +2,120 @@
 title: "AWS::ImageBuilder::DistributionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration
+<a name="aws-resource-imagebuilder-distributionconfiguration"></a>
 
-A distribution configuration allows you to specify the name and description of your
-output AMI, authorize other AWS accounts to launch the AMI, and replicate the AMI to other
-AWS Regions. It also allows you to export the AMI to Amazon S3.
+A distribution configuration allows you to specify the name and description of your output AMI, authorize other AWS accounts to launch the AMI, and replicate the AMI to other AWS Regions. It also allows you to export the AMI to Amazon S3.
 
 ## Syntax
+<a name="aws-resource-imagebuilder-distributionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-imagebuilder-distributionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ImageBuilder::DistributionConfiguration",
   "Properties" : {
-      "Description" : String,
-      "Distributions" : [ Distribution, ... ],
-      "Name" : String,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-imagebuilder-distributionconfiguration-description)" : {{String}},
+      "[Distributions](#cfn-imagebuilder-distributionconfiguration-distributions)" : {{[ Distribution, ... ]}},
+      "[Name](#cfn-imagebuilder-distributionconfiguration-name)" : {{String}},
+      "[Tags](#cfn-imagebuilder-distributionconfiguration-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-imagebuilder-distributionconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ImageBuilder::DistributionConfiguration
 Properties:
-  Description: String
-  Distributions:
-    - Distribution
-  Name: String
-  Tags:
-    Key: Value
-
+  [Description](#cfn-imagebuilder-distributionconfiguration-description): {{String}}
+  [Distributions](#cfn-imagebuilder-distributionconfiguration-distributions): {{
+    - Distribution}}
+  [Name](#cfn-imagebuilder-distributionconfiguration-name): {{String}}
+  [Tags](#cfn-imagebuilder-distributionconfiguration-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-imagebuilder-distributionconfiguration-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-imagebuilder-distributionconfiguration-description"></a>
+The description of the distribution configuration.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The description of this distribution configuration.
+`Distributions`  <a name="cfn-imagebuilder-distributionconfiguration-distributions"></a>
+The distribution objects that apply Region-specific settings for the deployment of the image to targeted Regions.
+*Required*: Yes
+*Type*: Array of [Distribution](aws-properties-imagebuilder-distributionconfiguration-distribution.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-imagebuilder-distributionconfiguration-name"></a>
+The name of the distribution configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Distributions`
-
-The distributions of this distribution configuration formatted as an array of
-Distribution objects.
-
-_Required_: Yes
-
-_Type_: Array of [Distribution](aws-properties-imagebuilder-distributionconfiguration-distribution.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of this distribution configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tags of this distribution configuration.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-imagebuilder-distributionconfiguration-tags"></a>
+The tags of the distribution configuration.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-imagebuilder-distributionconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-imagebuilder-distributionconfiguration-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the resource, such as
-`arn:aws:imagebuilder:us-west-2:123456789012:distribution-configuration/myexampledistribution`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the resource, such as `arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/myexampledistribution`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-imagebuilder-distributionconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-imagebuilder-distributionconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
-Returns the Amazon Resource Name (ARN) of this distribution configuration. The following
-pattern is applied:
-`^arn:aws[^:]*:imagebuilder:[^:]+:(?:\d{12}|aws):(?:image-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline)/[a-z0-9-_]+(?:/(?:(?:x|\d+)\.(?:x|\d+)\.(?:x|\d+))(?:/\d+)?)?$`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+Returns the Amazon Resource Name (ARN) of this distribution configuration. For example, `arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/myexampledistribution`.
 
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 Returns the name of the distribution configuration.
 
 ## Examples
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples"></a>
 
-- [Create a distribution configuration resource for an AMI](#aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI)
-
-- [Create a distribution configuration resource for a container image](#aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image)
+**Topics**
++ [Create a distribution configuration resource for an AMI](#aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI)
++ [Create a distribution configuration resource for a container image](#aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image)
 
 ### Create a distribution configuration resource for an AMI
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI"></a>
 
-The following example shows the schema for a DistributionConfiguration
-resource document for an AMI that is shared using launch permissions, presented
-in both YAML and JSON.
+The following example shows the template for a DistributionConfiguration resource for an AMI that is shared using launch permissions, presented in both YAML and JSON.
 
 #### YAML
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI--yaml"></a>
 
-```yaml
-
+```
 Resources:
   DistributionConfigurationAllParameters:
     Type: 'AWS::ImageBuilder::DistributionConfiguration'
@@ -179,16 +156,15 @@ Resources:
                 - 'arn:aws:organizations::123456789012:organization/o-myorganization123'
               OrganizationalUnitArns:
                 - 'arn:aws:organizations::123456789012:ou/o-123example/ou-1234-myorganizationalunit'
-
-    Tags:
-      CustomerDistributionConfigTagKey1: 'CustomerDistributionConfigTagValue1'
-      CustomerDistributionConfigTagKey2: 'CustomerDistributionConfigTagValue2'
+      Tags:
+        CustomerDistributionConfigTagKey1: 'CustomerDistributionConfigTagValue1'
+        CustomerDistributionConfigTagKey2: 'CustomerDistributionConfigTagValue2'
 ```
 
 #### JSON
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "DistributionConfigurationAllParameters": {
@@ -224,38 +200,36 @@ Resources:
                         "Region": "us-east-1",
                         "AmiDistributionConfiguration": {
                             "Name": "ami-dist-config-name-2 {{ imagebuilder:buildDate }}",
-                            "Description": "Distribute to specified target accounts.",
+                            "Description": "Distribute a copy of the AMI to specified target accounts.",
                             "TargetAccountIds": [
                                 "111122223333",
                                 "444455556666"
                             ]
-
                         }
                     },
                     {
                         "Region": "us-east-2",
                         "AmiDistributionConfiguration": {
-	                        "Name": "ami-dist-config-name-3 {{ imagebuilder:buildDate }}",
-	                        "Description": "Distribute to orgs and OUs.",
-	                        "AmiTags": {
-	                            "auto-delete": "no"
-	                        },
-	                        "LaunchPermissionConfiguration": {
-	                    	    "OrganizationArns": [
-	                    	   	 "arn:aws:organizations::123456789012:organization/o-myorganization123"
-		                        ],
-		                        "OrganizationalUnitArns": [
-		                       	 "arn:aws:organizations::123456789012:ou/o-123example/ou-1234-myorganizationalunit"
-		                        ]
-	                        }
-
+                            "Name": "ami-dist-config-name-3 {{ imagebuilder:buildDate }}",
+                            "Description": "Distribute to orgs and OUs.",
+                            "AmiTags": {
+                                "auto-delete": "no"
+                            },
+                            "LaunchPermissionConfiguration": {
+                                "OrganizationArns": [
+                                    "arn:aws:organizations::123456789012:organization/o-myorganization123"
+                                ],
+                                "OrganizationalUnitArns": [
+                                    "arn:aws:organizations::123456789012:ou/o-123example/ou-1234-myorganizationalunit"
+                                ]
+                            }
                         }
                     }
-                ]
-            },
-            "Tags": {
-                "CustomerDistributionConfigTagKey1": "CustomerDistributionConfigTagValue1",
-                "CustomerDistributionConfigTagKey2": "CustomerDistributionConfigTagValue2"
+                ],
+                "Tags": {
+                    "CustomerDistributionConfigTagKey1": "CustomerDistributionConfigTagValue1",
+                    "CustomerDistributionConfigTagKey2": "CustomerDistributionConfigTagValue2"
+                }
             }
         }
     }
@@ -263,15 +237,14 @@ Resources:
 ```
 
 ### Create a distribution configuration resource for a container image
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image"></a>
 
-The following example shows the schema for a DistributionConfiguration
-resource document for a container image that is distributed to two Regions,
-presented in both YAML and JSON.
+The following example shows the template for a DistributionConfiguration resource for a container image that is distributed to two Regions, presented in both YAML and JSON.
 
 #### YAML
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image--yaml"></a>
 
-```yaml
-
+```
 Resources:
   DistributionConfigurationAllParameters:
     Type: 'AWS::ImageBuilder::DistributionConfiguration'
@@ -281,7 +254,7 @@ Resources:
       Distributions:
         - Region: 'us-west-2'
           ContainerDistributionConfiguration:
-            Description: 'test distribution cfn template'
+            Description: 'Container distribution for us-west-2'
             TargetRepository:
               Service: ECR
               RepositoryName: 'cfn-test'
@@ -290,34 +263,34 @@ Resources:
               - 'Tag2'
         - Region: 'us-east-1'
           ContainerDistributionConfiguration:
-            Description: 'test distribution cfn template'
+            Description: 'Container distribution for us-east-1'
             TargetRepository:
               Service: ECR
               RepositoryName: 'cfn-test'
             ContainerTags:
               - 'Tag1'
               - 'Tag2'
-    Tags:
-      DistributionConfigurationTestTagKey1: 'DistributionConfigurationTestTagValue1'
-      DistributionConfigurationTestTagKey2: 'DistributionConfigurationTestTagValue2'
+      Tags:
+        DistributionConfigurationTestTagKey1: 'DistributionConfigurationTestTagValue1'
+        DistributionConfigurationTestTagKey2: 'DistributionConfigurationTestTagValue2'
 ```
 
 #### JSON
+<a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "DistributionConfigurationAllParameters": {
             "Type": "AWS::ImageBuilder::DistributionConfiguration",
             "Properties": {
-                "Name": "distribution-configuration-name",
+                "Name": "distribution-configuration-all-parameters",
                 "Description": "Set target repository and container tags for container distribution to two Regions.",
                 "Distributions": [
                     {
                         "Region": "us-west-2",
                         "ContainerDistributionConfiguration": {
-                            "Description": "description",
+                            "Description": "Container distribution for us-west-2",
                             "TargetRepository": {
                                 "Service": "ECR",
                                 "RepositoryName": "cfn-test"
@@ -328,7 +301,7 @@ Resources:
                     {
                         "Region": "us-east-1",
                         "ContainerDistributionConfiguration": {
-                            "Description": "description",
+                            "Description": "Container distribution for us-east-1",
                             "TargetRepository": {
                                 "Service": "ECR",
                                 "RepositoryName": "cfn-test"
@@ -336,11 +309,11 @@ Resources:
                            "ContainerTags": ["Tag1", "Tag2"]
                         }
                     }
-                ]
-            },
-            "Tags": {
-   			"DistributionConfigurationTestTagKey1": "DistributionConfigurationTestTagValue1",
-   			"DistributionConfigurationTestTagKey2": "DistributionConfigurationTestTagValue2"
+                ],
+                "Tags": {
+                    "DistributionConfigurationTestTagKey1": "DistributionConfigurationTestTagValue1",
+                    "DistributionConfigurationTestTagKey2": "DistributionConfigurationTestTagValue2"
+                }
             }
         }
     }
@@ -348,14 +321,7 @@ Resources:
 ```
 
 ## See also
-
-- [Create a distribution configuration](../../../imagebuilder/latest/userguide/managing-image-builder-cli.md#image-builder-cli-create-distribution-configuration) in the
-_Image Builder User Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetContainerRepository
-
-AmiDistributionConfiguration
+<a name="aws-resource-imagebuilder-distributionconfiguration--seealso"></a>
++ [Manage distribution settings](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-distribution-settings.html) in the *Image Builder User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

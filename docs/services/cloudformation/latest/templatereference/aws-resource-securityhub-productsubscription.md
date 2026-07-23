@@ -2,91 +2,88 @@
 title: "AWS::SecurityHub::ProductSubscription"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ProductSubscription
+<a name="aws-resource-securityhub-productsubscription"></a>
 
-The `AWS::SecurityHub::ProductSubscription` resource creates a subscription to a third-party product
-that generates findings that you want to receive in AWS Security Hub CSPM. For a list of integrations to third-party
-products, see [Available third-party partner product integrations](../../../securityhub/latest/userguide/securityhub-partner-providers.md)
-in the _AWS Security Hub CSPM User Guide_.
+The `AWS::SecurityHub::ProductSubscription` resource creates a subscription to a third-party product that generates findings that you want to receive in AWS Security Hub CSPM. For a list of integrations to third-party products, see [Available third-party partner product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-partner-providers.html) in the *AWS Security Hub CSPM User Guide*.
 
 To change a product subscription, remove the current product subscription resource, and then create a new one.
 
 Tags aren't supported for this resource.
 
 ## Syntax
+<a name="aws-resource-securityhub-productsubscription-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securityhub-productsubscription-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityHub::ProductSubscription",
   "Properties" : {
-      "ProductArn" : String
+      "[ProductArn](#cfn-securityhub-productsubscription-productarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securityhub-productsubscription-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityHub::ProductSubscription
 Properties:
-  ProductArn: String
-
+  [ProductArn](#cfn-securityhub-productsubscription-productarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-securityhub-productsubscription-properties"></a>
 
-`ProductArn`
-
+`ProductArn`  <a name="cfn-securityhub-productsubscription-productarn"></a>
 The ARN of the product to enable the integration for.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws\S*:securityhub:\S*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws\S*:securityhub:\S*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-securityhub-productsubscription-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securityhub-productsubscription-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of your subscription to the product to enable integrations
-for. For example, `arn:aws:securityhub:us-east-1:123456789012:product-subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of your subscription to the product to enable integrations for. For example, `arn:aws:securityhub:us-east-1:123456789012:product-subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-securityhub-productsubscription-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ProductSubscriptionArn`
+####
+<a name="aws-resource-securityhub-productsubscription-return-values-fn--getatt-fn--getatt"></a>
 
+`ProductSubscriptionArn`  <a name="ProductSubscriptionArn-fn::getatt"></a>
 The ARN of your subscription to the product to enable integrations for.
 
 ## Examples
+<a name="aws-resource-securityhub-productsubscription--examples"></a>
 
 ### Creating a Security Hub CSPM product subscription
+<a name="aws-resource-securityhub-productsubscription--examples--Creating_a_product_subscription"></a>
 
 The following example creates a Security Hub CSPM product subscription to the specified third-party product.
 
 #### JSON
+<a name="aws-resource-securityhub-productsubscription--examples--Creating_a_product_subscription--json"></a>
 
-```json
-
+```
 {
 	"Description": "Example template to create a Security Hub product subscription",
 	"Resources": {
@@ -103,9 +100,9 @@ The following example creates a Security Hub CSPM product subscription to the sp
 ```
 
 #### YAML
+<a name="aws-resource-securityhub-productsubscription--examples--Creating_a_product_subscription--yaml"></a>
 
-```yaml
-
+```
 Description: Example template to create a Security Hub product subscription
 Resources:
   SecurityHubProductSubscription:
@@ -113,11 +110,5 @@ Resources:
     Properties:
       ProductArn: !Sub 'arn:${AWS::Partition}:securityhub:${AWS::Region}::product/aws/example'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityHub::PolicyAssociation
-
-AWS::SecurityHub::SecurityControl
 
 All content copied from https://docs.aws.amazon.com/.

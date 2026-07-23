@@ -2,65 +2,49 @@
 title: "AWS::KinesisFirehose::DeliveryStream PartitionSpec"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream PartitionSpec
+<a name="aws-properties-kinesisfirehose-deliverystream-partitionspec"></a>
 
-Represents how to produce partition data for a table. Partition data is produced by
-transforming columns in a table. Each column transform is represented by a named
-`PartitionField`.
+Represents how to produce partition data for a table. Partition data is produced by transforming columns in a table. Each column transform is represented by a named `PartitionField`.
 
 Here is an example of the schema in JSON.
 
-`"partitionSpec": { "identity": [ {"sourceName": "column1"}, {"sourceName":
-            "column2"}, {"sourceName": "column3"} ] }`
+ `"partitionSpec": { "identity": [ {"sourceName": "column1"}, {"sourceName": "column2"}, {"sourceName": "column3"} ] }`
 
 Amazon Data Firehose is in preview release and is subject to change.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-partitionspec-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-partitionspec-syntax.json"></a>
 
-```json
-
+```
 {
-  "Identity" : [ PartitionField, ... ]
+  "[Identity](#cfn-kinesisfirehose-deliverystream-partitionspec-identity)" : {{[ PartitionField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-partitionspec-syntax.yaml"></a>
 
-```yaml
-
-  Identity:
-    - PartitionField
-
+```
+  [Identity](#cfn-kinesisfirehose-deliverystream-partitionspec-identity): {{
+    - PartitionField}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-partitionspec-properties"></a>
 
-`Identity`
-
-List of identity [transforms](https://iceberg.apache.org/spec) that performs an identity transformation. The transform takes the
-source value, and does not modify it. Result type is the source type.
-
+`Identity`  <a name="cfn-kinesisfirehose-deliverystream-partitionspec-identity"></a>
+ List of identity [transforms](https://iceberg.apache.org/spec/#partition-transforms) that performs an identity transformation. The transform takes the source value, and does not modify it. Result type is the source type.
 Amazon Data Firehose is in preview release and is subject to change.
-
-_Required_: No
-
-_Type_: Array of [PartitionField](aws-properties-kinesisfirehose-deliverystream-partitionfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PartitionField
-
-ProcessingConfiguration
+*Required*: No
+*Type*: Array of [PartitionField](aws-properties-kinesisfirehose-deliverystream-partitionfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,57 +2,43 @@
 title: "AWS::SMSVOICE::Pool MandatoryKeyword"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::Pool MandatoryKeyword
+<a name="aws-properties-smsvoice-pool-mandatorykeyword"></a>
 
-The keywords `HELP` and `STOP` are mandatory keywords that each phone number must have. For more information, see
-[Keywords](../../../sms-voice/latest/userguide/keywords.md) in the AWS End User Messaging SMS User Guide.
+The keywords `HELP` and `STOP` are mandatory keywords that each phone number must have. For more information, see [Keywords](https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords.html) in the AWS End User Messaging SMS User Guide.
 
 ## Syntax
+<a name="aws-properties-smsvoice-pool-mandatorykeyword-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-smsvoice-pool-mandatorykeyword-syntax.json"></a>
 
-```json
-
+```
 {
-  "Message" : String
+  "[Message](#cfn-smsvoice-pool-mandatorykeyword-message)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-smsvoice-pool-mandatorykeyword-syntax.yaml"></a>
 
-```yaml
-
-  Message: String
-
+```
+  [Message](#cfn-smsvoice-pool-mandatorykeyword-message): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-smsvoice-pool-mandatorykeyword-properties"></a>
 
-`Message`
-
+`Message`  <a name="cfn-smsvoice-pool-mandatorykeyword-message"></a>
 The message associated with the keyword.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!\s*$)[\s\S]+$`
-
-_Maximum_: `1600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SMSVOICE::Pool
-
-MandatoryKeywords
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!\s*$)[\s\S]+$`
+*Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,87 +2,72 @@
 title: "AWS::QuickSight::DataSet SemanticTable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet SemanticTable
+<a name="aws-properties-quicksight-dataset-semantictable"></a>
 
 A semantic table that represents the final analytical structure of the data.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-semantictable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-semantictable-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alias" : String,
-  "DestinationTableId" : String,
-  "RowLevelPermissionConfiguration" : RowLevelPermissionConfiguration
+  "[Alias](#cfn-quicksight-dataset-semantictable-alias)" : {{String}},
+  "[DestinationTableId](#cfn-quicksight-dataset-semantictable-destinationtableid)" : {{String}},
+  "[RowLevelPermissionConfiguration](#cfn-quicksight-dataset-semantictable-rowlevelpermissionconfiguration)" : {{RowLevelPermissionConfiguration}},
+  "[SemanticMetadata](#cfn-quicksight-dataset-semantictable-semanticmetadata)" : {{TableSemanticMetadata}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-semantictable-syntax.yaml"></a>
 
-```yaml
-
-  Alias: String
-  DestinationTableId: String
-  RowLevelPermissionConfiguration:
-    RowLevelPermissionConfiguration
-
+```
+  [Alias](#cfn-quicksight-dataset-semantictable-alias): {{String}}
+  [DestinationTableId](#cfn-quicksight-dataset-semantictable-destinationtableid): {{String}}
+  [RowLevelPermissionConfiguration](#cfn-quicksight-dataset-semantictable-rowlevelpermissionconfiguration): {{
+    RowLevelPermissionConfiguration}}
+  [SemanticMetadata](#cfn-quicksight-dataset-semantictable-semanticmetadata): {{
+    TableSemanticMetadata}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-semantictable-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-quicksight-dataset-semantictable-alias"></a>
 Alias for the semantic table.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationTableId`
-
+`DestinationTableId`  <a name="cfn-quicksight-dataset-semantictable-destinationtableid"></a>
 The identifier of the destination table from data preparation that provides data to this semantic table.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z-]*$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowLevelPermissionConfiguration`
-
+`RowLevelPermissionConfiguration`  <a name="cfn-quicksight-dataset-semantictable-rowlevelpermissionconfiguration"></a>
 Configuration for row level security that control data access for this semantic table.
+*Required*: No
+*Type*: [RowLevelPermissionConfiguration](aws-properties-quicksight-dataset-rowlevelpermissionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RowLevelPermissionConfiguration](aws-properties-quicksight-dataset-rowlevelpermissionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SemanticModelConfiguration
-
-SourceTable
+`SemanticMetadata`  <a name="cfn-quicksight-dataset-semantictable-semanticmetadata"></a>
+The column-level semantic metadata for this semantic table.
+*Required*: No
+*Type*: [TableSemanticMetadata](aws-properties-quicksight-dataset-tablesemanticmetadata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

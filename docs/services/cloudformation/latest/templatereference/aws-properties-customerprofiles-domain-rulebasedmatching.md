@@ -2,165 +2,108 @@
 title: "AWS::CustomerProfiles::Domain RuleBasedMatching"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Domain RuleBasedMatching
+<a name="aws-properties-customerprofiles-domain-rulebasedmatching"></a>
 
-The process of matching duplicate profiles using Rule-Based matching. If
-`RuleBasedMatching = true`, Amazon Connect Customer Profiles will
-start to match and merge your profiles according to your configuration in the
-`RuleBasedMatchingRequest`. You can use the
-`ListRuleBasedMatches` and `GetSimilarProfiles` API to return
-and review the results. Also, if you have configured `ExportingConfig` in the
-`RuleBasedMatchingRequest`, you can download the results from S3.
+The process of matching duplicate profiles using Rule-Based matching. If `RuleBasedMatching = true`, Connect Customer Customer Profiles will start to match and merge your profiles according to your configuration in the `RuleBasedMatchingRequest`. You can use the `ListRuleBasedMatches` and `GetSimilarProfiles` API to return and review the results. Also, if you have configured `ExportingConfig` in the `RuleBasedMatchingRequest`, you can download the results from S3.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-domain-rulebasedmatching-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-domain-rulebasedmatching-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttributeTypesSelector" : AttributeTypesSelector,
-  "ConflictResolution" : ConflictResolution,
-  "Enabled" : Boolean,
-  "ExportingConfig" : ExportingConfig,
-  "MatchingRules" : [ MatchingRule, ... ],
-  "MaxAllowedRuleLevelForMatching" : Integer,
-  "MaxAllowedRuleLevelForMerging" : Integer,
-  "Status" : String
+  "[AttributeTypesSelector](#cfn-customerprofiles-domain-rulebasedmatching-attributetypesselector)" : {{AttributeTypesSelector}},
+  "[ConflictResolution](#cfn-customerprofiles-domain-rulebasedmatching-conflictresolution)" : {{ConflictResolution}},
+  "[Enabled](#cfn-customerprofiles-domain-rulebasedmatching-enabled)" : {{Boolean}},
+  "[ExportingConfig](#cfn-customerprofiles-domain-rulebasedmatching-exportingconfig)" : {{ExportingConfig}},
+  "[MatchingRules](#cfn-customerprofiles-domain-rulebasedmatching-matchingrules)" : {{[ MatchingRule, ... ]}},
+  "[MaxAllowedRuleLevelForMatching](#cfn-customerprofiles-domain-rulebasedmatching-maxallowedrulelevelformatching)" : {{Integer}},
+  "[MaxAllowedRuleLevelForMerging](#cfn-customerprofiles-domain-rulebasedmatching-maxallowedrulelevelformerging)" : {{Integer}},
+  "[Status](#cfn-customerprofiles-domain-rulebasedmatching-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-domain-rulebasedmatching-syntax.yaml"></a>
 
-```yaml
-
-  AttributeTypesSelector:
-    AttributeTypesSelector
-  ConflictResolution:
-    ConflictResolution
-  Enabled: Boolean
-  ExportingConfig:
-    ExportingConfig
-  MatchingRules:
-    - MatchingRule
-  MaxAllowedRuleLevelForMatching: Integer
-  MaxAllowedRuleLevelForMerging: Integer
-  Status: String
-
+```
+  [AttributeTypesSelector](#cfn-customerprofiles-domain-rulebasedmatching-attributetypesselector): {{
+    AttributeTypesSelector}}
+  [ConflictResolution](#cfn-customerprofiles-domain-rulebasedmatching-conflictresolution): {{
+    ConflictResolution}}
+  [Enabled](#cfn-customerprofiles-domain-rulebasedmatching-enabled): {{Boolean}}
+  [ExportingConfig](#cfn-customerprofiles-domain-rulebasedmatching-exportingconfig): {{
+    ExportingConfig}}
+  [MatchingRules](#cfn-customerprofiles-domain-rulebasedmatching-matchingrules): {{
+    - MatchingRule}}
+  [MaxAllowedRuleLevelForMatching](#cfn-customerprofiles-domain-rulebasedmatching-maxallowedrulelevelformatching): {{Integer}}
+  [MaxAllowedRuleLevelForMerging](#cfn-customerprofiles-domain-rulebasedmatching-maxallowedrulelevelformerging): {{Integer}}
+  [Status](#cfn-customerprofiles-domain-rulebasedmatching-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-domain-rulebasedmatching-properties"></a>
 
-`AttributeTypesSelector`
+`AttributeTypesSelector`  <a name="cfn-customerprofiles-domain-rulebasedmatching-attributetypesselector"></a>
+Configures information about the `AttributeTypesSelector` where the rule-based identity resolution uses to match profiles.
+*Required*: No
+*Type*: [AttributeTypesSelector](aws-properties-customerprofiles-domain-attributetypesselector.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configures information about the `AttributeTypesSelector` where the
-rule-based identity resolution uses to match profiles.
+`ConflictResolution`  <a name="cfn-customerprofiles-domain-rulebasedmatching-conflictresolution"></a>
+Determines how the auto-merging process should resolve conflicts between different profiles. For example, if Profile A and Profile B have the same `FirstName` and `LastName`, `ConflictResolution` specifies which `EmailAddress` should be used.
+*Required*: No
+*Type*: [ConflictResolution](aws-properties-customerprofiles-domain-conflictresolution.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AttributeTypesSelector](aws-properties-customerprofiles-domain-attributetypesselector.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConflictResolution`
-
-Determines how the auto-merging process should resolve conflicts between different
-profiles. For example, if Profile A and Profile B have the same `FirstName`
-and `LastName`, `ConflictResolution` specifies which
-`EmailAddress` should be used.
-
-_Required_: No
-
-_Type_: [ConflictResolution](aws-properties-customerprofiles-domain-conflictresolution.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-customerprofiles-domain-rulebasedmatching-enabled"></a>
 The flag that enables the matching process of duplicate profiles.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExportingConfig`
-
+`ExportingConfig`  <a name="cfn-customerprofiles-domain-rulebasedmatching-exportingconfig"></a>
 The S3 location where Identity Resolution Jobs write result files.
+*Required*: No
+*Type*: [ExportingConfig](aws-properties-customerprofiles-domain-exportingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MatchingRules`  <a name="cfn-customerprofiles-domain-rulebasedmatching-matchingrules"></a>
+Configures how the rule-based matching process should match profiles. You can have up to 15 `MatchingRule` in the `MatchingRules`.
+*Required*: No
+*Type*: Array of [MatchingRule](aws-properties-customerprofiles-domain-matchingrule.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ExportingConfig](aws-properties-customerprofiles-domain-exportingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchingRules`
-
-Configures how the rule-based matching process should match profiles. You can have up
-to 15 `MatchingRule` in the `MatchingRules`.
-
-_Required_: No
-
-_Type_: Array of [MatchingRule](aws-properties-customerprofiles-domain-matchingrule.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxAllowedRuleLevelForMatching`
-
+`MaxAllowedRuleLevelForMatching`  <a name="cfn-customerprofiles-domain-rulebasedmatching-maxallowedrulelevelformatching"></a>
 Indicates the maximum allowed rule level for matching.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxAllowedRuleLevelForMerging`
-
+`MaxAllowedRuleLevelForMerging`  <a name="cfn-customerprofiles-domain-rulebasedmatching-maxallowedrulelevelformerging"></a>
 Indicates the maximum allowed rule level for merging.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-customerprofiles-domain-rulebasedmatching-status"></a>
 The status of rule-based matching rule.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PENDING | IN_PROGRESS | ACTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Readiness
-
-S3ExportingConfig
+*Required*: No
+*Type*: String
+*Allowed values*: `PENDING | IN_PROGRESS | ACTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

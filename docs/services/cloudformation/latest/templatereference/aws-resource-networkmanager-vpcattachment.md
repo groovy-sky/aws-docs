@@ -2,212 +2,166 @@
 title: "AWS::NetworkManager::VpcAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::VpcAttachment
+<a name="aws-resource-networkmanager-vpcattachment"></a>
 
 Creates a VPC attachment on an edge location of a core network.
 
 ## Syntax
+<a name="aws-resource-networkmanager-vpcattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-vpcattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::VpcAttachment",
   "Properties" : {
-      "CoreNetworkId" : String,
-      "Options" : VpcOptions,
-      "ProposedNetworkFunctionGroupChange" : ProposedNetworkFunctionGroupChange,
-      "ProposedSegmentChange" : ProposedSegmentChange,
-      "RoutingPolicyLabel" : String,
-      "SubnetArns" : [ String, ... ],
-      "Tags" : [ Tag, ... ],
-      "VpcArn" : String
+      "[CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid)" : {{String}},
+      "[Options](#cfn-networkmanager-vpcattachment-options)" : {{VpcOptions}},
+      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-vpcattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
+      "[ProposedSegmentChange](#cfn-networkmanager-vpcattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
+      "[RoutingPolicyLabel](#cfn-networkmanager-vpcattachment-routingpolicylabel)" : {{String}},
+      "[SubnetArns](#cfn-networkmanager-vpcattachment-subnetarns)" : {{[ String, ... ]}},
+      "[Tags](#cfn-networkmanager-vpcattachment-tags)" : {{[ Tag, ... ]}},
+      "[VpcArn](#cfn-networkmanager-vpcattachment-vpcarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-vpcattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::VpcAttachment
 Properties:
-  CoreNetworkId: String
-  Options:
-    VpcOptions
-  ProposedNetworkFunctionGroupChange:
-    ProposedNetworkFunctionGroupChange
-  ProposedSegmentChange:
-    ProposedSegmentChange
-  RoutingPolicyLabel: String
-  SubnetArns:
-    - String
-  Tags:
-    - Tag
-  VpcArn: String
-
+  [CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid): {{String}}
+  [Options](#cfn-networkmanager-vpcattachment-options): {{
+    VpcOptions}}
+  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-vpcattachment-proposednetworkfunctiongroupchange): {{
+    ProposedNetworkFunctionGroupChange}}
+  [ProposedSegmentChange](#cfn-networkmanager-vpcattachment-proposedsegmentchange): {{
+    ProposedSegmentChange}}
+  [RoutingPolicyLabel](#cfn-networkmanager-vpcattachment-routingpolicylabel): {{String}}
+  [SubnetArns](#cfn-networkmanager-vpcattachment-subnetarns): {{
+    - String}}
+  [Tags](#cfn-networkmanager-vpcattachment-tags): {{
+    - Tag}}
+  [VpcArn](#cfn-networkmanager-vpcattachment-vpcarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-vpcattachment-properties"></a>
 
-`CoreNetworkId`
-
+`CoreNetworkId`  <a name="cfn-networkmanager-vpcattachment-corenetworkid"></a>
 The core network ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Options`
-
+`Options`  <a name="cfn-networkmanager-vpcattachment-options"></a>
 Options for creating the VPC attachment.
+*Required*: No
+*Type*: [VpcOptions](aws-properties-networkmanager-vpcattachment-vpcoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VpcOptions](aws-properties-networkmanager-vpcattachment-vpcoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProposedNetworkFunctionGroupChange`
-
+`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-vpcattachment-proposednetworkfunctiongroupchange"></a>
 Describes proposed changes to a network function group.
+*Required*: No
+*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-vpcattachment-proposednetworkfunctiongroupchange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-vpcattachment-proposednetworkfunctiongroupchange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProposedSegmentChange`
-
+`ProposedSegmentChange`  <a name="cfn-networkmanager-vpcattachment-proposedsegmentchange"></a>
 Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.
+*Required*: No
+*Type*: [ProposedSegmentChange](aws-properties-networkmanager-vpcattachment-proposedsegmentchange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProposedSegmentChange](aws-properties-networkmanager-vpcattachment-proposedsegmentchange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingPolicyLabel`
-
+`RoutingPolicyLabel`  <a name="cfn-networkmanager-vpcattachment-routingpolicylabel"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetArns`
-
+`SubnetArns`  <a name="cfn-networkmanager-vpcattachment-subnetarns"></a>
 The subnet ARNs.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkmanager-vpcattachment-tags"></a>
 The tags associated with the VPC attachment.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkmanager-vpcattachment-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkmanager-vpcattachment-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcArn`
-
+`VpcArn`  <a name="cfn-networkmanager-vpcattachment-vpcarn"></a>
 The ARN of the VPC attachment.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-networkmanager-vpcattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-vpcattachment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `AttachmentId`. For example, `{ "Ref: "attachment-00067e74104d33769" }`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-networkmanager-vpcattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AttachmentId`
+####
+<a name="aws-resource-networkmanager-vpcattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`AttachmentId`  <a name="AttachmentId-fn::getatt"></a>
 The ID of the VPC attachment.
 
-`AttachmentPolicyRuleNumber`
-
+`AttachmentPolicyRuleNumber`  <a name="AttachmentPolicyRuleNumber-fn::getatt"></a>
 The policy rule number associated with the attachment.
 
-`AttachmentType`
-
+`AttachmentType`  <a name="AttachmentType-fn::getatt"></a>
 The type of attachment. This will be `VPC`.
 
-`CoreNetworkArn`
-
+`CoreNetworkArn`  <a name="CoreNetworkArn-fn::getatt"></a>
 The ARN of the core network.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the VPC attachment was created.
 
-`EdgeLocation`
-
+`EdgeLocation`  <a name="EdgeLocation-fn::getatt"></a>
 The Region where the core network edge is located.
 
-`LastModificationErrors`
-
+`LastModificationErrors`  <a name="LastModificationErrors-fn::getatt"></a>
 Property description not available.
 
-`NetworkFunctionGroupName`
-
+`NetworkFunctionGroupName`  <a name="NetworkFunctionGroupName-fn::getatt"></a>
 The name of the network function group.
 
-`OwnerAccountId`
-
+`OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
 The ID of the VPC attachment owner.
 
-`ResourceArn`
-
+`ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
 The resource ARN for the VPC attachment.
 
-`SegmentName`
-
+`SegmentName`  <a name="SegmentName-fn::getatt"></a>
 The name of the attachment's segment.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the attachment. This can be: `REJECTED` \| `PENDING_ATTACHMENT_ACCEPTANCE` \| `CREATING` \| `FAILED` \| `AVAILABLE` \| `UPDATING` \| ` PENDING_NETWORK_UPDATE` \| `PENDING_TAG_ACCEPTANCE` \| `DELETING`.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the VPC attachment was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ProposedNetworkFunctionGroupChange
 
 All content copied from https://docs.aws.amazon.com/.

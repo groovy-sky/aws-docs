@@ -2,207 +2,141 @@
 title: "AWS::IoTSiteWise::AssetModel AssetModelCompositeModel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel AssetModelCompositeModel
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel"></a>
 
-Contains information about a composite model in an asset model. This object contains the
-asset property definitions that you define in the composite model.
+Contains information about a composite model in an asset model. This object contains the asset property definitions that you define in the composite model.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComposedAssetModelId" : String,
-  "CompositeModelProperties" : [ AssetModelProperty, ... ],
-  "Description" : String,
-  "ExternalId" : String,
-  "Id" : String,
-  "Name" : String,
-  "ParentAssetModelCompositeModelExternalId" : String,
-  "Path" : [ String, ... ],
-  "Type" : String
+  "[ComposedAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-composedassetmodelid)" : {{String}},
+  "[CompositeModelProperties](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-compositemodelproperties)" : {{[ AssetModelProperty, ... ]}},
+  "[Description](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-description)" : {{String}},
+  "[ExternalId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-externalid)" : {{String}},
+  "[Id](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-id)" : {{String}},
+  "[Name](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-name)" : {{String}},
+  "[ParentAssetModelCompositeModelExternalId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-parentassetmodelcompositemodelexternalid)" : {{String}},
+  "[Path](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-path)" : {{[ String, ... ]}},
+  "[Type](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel-syntax.yaml"></a>
 
-```yaml
-
-  ComposedAssetModelId: String
-  CompositeModelProperties:
-    - AssetModelProperty
-  Description: String
-  ExternalId: String
-  Id: String
-  Name: String
-  ParentAssetModelCompositeModelExternalId: String
-  Path:
-    - String
-  Type: String
-
+```
+  [ComposedAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-composedassetmodelid): {{String}}
+  [CompositeModelProperties](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-compositemodelproperties): {{
+    - AssetModelProperty}}
+  [Description](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-description): {{String}}
+  [ExternalId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-externalid): {{String}}
+  [Id](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-id): {{String}}
+  [Name](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-name): {{String}}
+  [ParentAssetModelCompositeModelExternalId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-parentassetmodelcompositemodelexternalid): {{String}}
+  [Path](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-path): {{
+    - String}}
+  [Type](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel-properties"></a>
 
-`ComposedAssetModelId`
-
+`ComposedAssetModelId`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-composedassetmodelid"></a>
 The ID of a component model which is reused to create this composite model.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CompositeModelProperties`
-
+`CompositeModelProperties`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-compositemodelproperties"></a>
 The asset property definitions for this composite model.
+*Required*: No
+*Type*: Array of [AssetModelProperty](aws-properties-iotsitewise-assetmodel-assetmodelproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AssetModelProperty](aws-properties-iotsitewise-assetmodel-assetmodelproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-description"></a>
 The description of the composite model.
+If the composite model is a `component-model-based` composite model, the description is inherited from the `COMPONENT_MODEL` asset model and cannot be changed.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-If the composite model is a `component-model-based` composite model,
-the description is inherited from the `COMPONENT_MODEL` asset model and
-cannot be changed.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExternalId`
-
-The external ID of a composite model on this asset model. For more information, see
-[Using external\
-IDs](../../../iot-sitewise/latest/userguide/object-ids.md#external-ids) in the _AWS IoT SiteWise User Guide_.
-
-###### Note
-
+`ExternalId`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-externalid"></a>
+The external ID of a composite model on this asset model. For more information, see [Using external IDs](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/object-ids.html#external-ids) in the *AWS IoT SiteWise User Guide*.
 One of `ExternalId` or `Path` must be specified.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_][a-zA-Z_\-0-9.:]*[a-zA-Z0-9_]+`
+*Minimum*: `2`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_][a-zA-Z_\-0-9.:]*[a-zA-Z0-9_]+`
-
-_Minimum_: `2`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
-The ID of the asset model composite model.
-
-###### Note
-
+`Id`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-id"></a>
+ The ID of the asset model composite model.
 This is a return value and can't be set.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+*Minimum*: `36`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
-
-_Minimum_: `36`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-name"></a>
 The name of the composite model.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ParentAssetModelCompositeModelExternalId`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-parentassetmodelcompositemodelexternalid"></a>
+The external ID of the parent composite model. For more information, see [Using external IDs](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/object-ids.html#external-ids) in the *AWS IoT SiteWise User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_][a-zA-Z_\-0-9.:]*[a-zA-Z0-9_]+`
+*Minimum*: `2`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParentAssetModelCompositeModelExternalId`
-
-The external ID of the parent composite model. For more information, see [Using external\
-IDs](../../../iot-sitewise/latest/userguide/object-ids.md#external-ids) in the _AWS IoT SiteWise User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_][a-zA-Z_\-0-9.:]*[a-zA-Z0-9_]+`
-
-_Minimum_: `2`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Path`
-
-The structured path to the property from the root of the asset using property names.
-Path is used as the ID if the asset model is a derived composite model.
-
-###### Note
-
+`Path`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-path"></a>
+The structured path to the property from the root of the asset using property names. Path is used as the ID if the asset model is a derived composite model.
 One of `ExternalId` or `Path` must be specified.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of the composite model. For alarm composite models, this type is
-`AWS/ALARM`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Type`  <a name="cfn-iotsitewise-assetmodel-assetmodelcompositemodel-type"></a>
+The type of the composite model. For alarm composite models, this type is `AWS/ALARM`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples"></a>
 
-- [Create an alarm model](#aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_an_alarm_model)
-
-- [Create a component-model-based composite model](#aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_a_component-model-based_composite_model)
+**Topics**
++ [Create an alarm model](#aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_an_alarm_model)
++ [Create a `component-model-based` composite model](#aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_a_component-model-based_composite_model)
 
 ### Create an alarm model
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_an_alarm_model"></a>
 
 You can modify the following example to create an alarm model.
 
-###### Note
-
-Replace `TestAlarmModel` with the name of your alarm
-model.
+**Note**
+Replace `TestAlarmModel` with the name of your alarm model.
 
 #### YAML
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_an_alarm_model--yaml"></a>
 
-```yaml
-
+```
 Resources: AssetModelWithAlarmCompositeModel: Type:
                 AWS::IoTSiteWise::AssetModel Properties: AssetModelName:
                 AssetModelWithValidAlarmCompositeModel AssetModelDescription:
@@ -218,14 +152,14 @@ Resources: AssetModelWithAlarmCompositeModel: Type:
 ```
 
 ### Create a `component-model-based` composite model
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_a_component-model-based_composite_model"></a>
 
-You can modify the following example to create a
-`component-model-based` composite model.
+You can modify the following example to create a `component-model-based` composite model.
 
 #### YAML
+<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_a_component-model-based_composite_model--yaml"></a>
 
-```yaml
-
+```
 Resources: MainAssetModel: Type: AWS::IoTSiteWise::AssetModel
                 Properties: AssetModelExternalId: AssetModelName: AssetModelWithCustomComposites
                 AssetModelDescription: Asset model with custom composite models
@@ -256,13 +190,6 @@ Resources: MainAssetModel: Type: AWS::IoTSiteWise::AssetModel
                 ComponentModel2ExternalId AssetModelType: COMPONENT_MODEL AssetModelName:
                 ComponentModel2 AssetModelProperties: - Name: ComponentModel2Property ExternalId:
                 ComponentModel2PropertyExternalId DataType: DOUBLE Type: TypeName: Measurement
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTSiteWise::AssetModel
-
-AssetModelHierarchy
 
 All content copied from https://docs.aws.amazon.com/.

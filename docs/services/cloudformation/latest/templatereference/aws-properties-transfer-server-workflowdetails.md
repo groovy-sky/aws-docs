@@ -2,95 +2,60 @@
 title: "AWS::Transfer::Server WorkflowDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Server WorkflowDetails
+<a name="aws-properties-transfer-server-workflowdetails"></a>
 
-Container for the `WorkflowDetail` data type. It is used by actions that
-trigger a workflow to begin execution.
+Container for the `WorkflowDetail` data type. It is used by actions that trigger a workflow to begin execution.
 
 ## Syntax
+<a name="aws-properties-transfer-server-workflowdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-server-workflowdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "OnPartialUpload" : [ WorkflowDetail, ... ],
-  "OnUpload" : [ WorkflowDetail, ... ]
+  "[OnPartialUpload](#cfn-transfer-server-workflowdetails-onpartialupload)" : {{[ WorkflowDetail, ... ]}},
+  "[OnUpload](#cfn-transfer-server-workflowdetails-onupload)" : {{[ WorkflowDetail, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-server-workflowdetails-syntax.yaml"></a>
 
-```yaml
-
-  OnPartialUpload:
-    - WorkflowDetail
-  OnUpload:
-    - WorkflowDetail
-
+```
+  [OnPartialUpload](#cfn-transfer-server-workflowdetails-onpartialupload): {{
+    - WorkflowDetail}}
+  [OnUpload](#cfn-transfer-server-workflowdetails-onupload): {{
+    - WorkflowDetail}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-server-workflowdetails-properties"></a>
 
-`OnPartialUpload`
+`OnPartialUpload`  <a name="cfn-transfer-server-workflowdetails-onpartialupload"></a>
+A trigger that starts a workflow if a file is only partially uploaded. You can attach a workflow to a server that executes whenever there is a partial upload.
+A *partial upload* occurs when a file is open when the session disconnects.
+`OnPartialUpload` can contain a maximum of one `WorkflowDetail` object.
+*Required*: No
+*Type*: Array of [WorkflowDetail](aws-properties-transfer-server-workflowdetail.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A trigger that starts a workflow if a file is only partially uploaded. You can attach
-a workflow to a server that executes whenever there is a partial upload.
-
-A _partial upload_ occurs when a file is open when the session
-disconnects.
-
-###### Note
-
-`OnPartialUpload` can contain a maximum of one
-`WorkflowDetail` object.
-
-_Required_: No
-
-_Type_: Array of [WorkflowDetail](aws-properties-transfer-server-workflowdetail.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnUpload`
-
-A trigger that starts a workflow: the workflow begins to execute after a file is
-uploaded.
-
-To remove an associated workflow from a server, you can provide an empty
-`OnUpload` object, as in the following example.
-
-`aws transfer update-server --server-id s-01234567890abcdef --workflow-details '{"OnUpload":[]}'`
-
-###### Note
-
-`OnUpload` can contain a maximum of one `WorkflowDetail`
-object.
-
-_Required_: No
-
-_Type_: Array of [WorkflowDetail](aws-properties-transfer-server-workflowdetail.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkflowDetail
-
-AWS::Transfer::User
+`OnUpload`  <a name="cfn-transfer-server-workflowdetails-onupload"></a>
+A trigger that starts a workflow: the workflow begins to execute after a file is uploaded.
+To remove an associated workflow from a server, you can provide an empty `OnUpload` object, as in the following example.
+ `aws transfer update-server --server-id s-01234567890abcdef --workflow-details '{"OnUpload":[]}'`
+`OnUpload` can contain a maximum of one `WorkflowDetail` object.
+*Required*: No
+*Type*: Array of [WorkflowDetail](aws-properties-transfer-server-workflowdetail.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

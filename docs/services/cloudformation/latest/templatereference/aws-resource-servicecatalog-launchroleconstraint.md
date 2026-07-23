@@ -2,160 +2,117 @@
 title: "AWS::ServiceCatalog::LaunchRoleConstraint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::LaunchRoleConstraint
+<a name="aws-resource-servicecatalog-launchroleconstraint"></a>
 
 Specifies a launch constraint.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-launchroleconstraint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-launchroleconstraint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::LaunchRoleConstraint",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "Description" : String,
-      "LocalRoleName" : String,
-      "PortfolioId" : String,
-      "ProductId" : String,
-      "RoleArn" : String
+      "[AcceptLanguage](#cfn-servicecatalog-launchroleconstraint-acceptlanguage)" : {{String}},
+      "[Description](#cfn-servicecatalog-launchroleconstraint-description)" : {{String}},
+      "[LocalRoleName](#cfn-servicecatalog-launchroleconstraint-localrolename)" : {{String}},
+      "[PortfolioId](#cfn-servicecatalog-launchroleconstraint-portfolioid)" : {{String}},
+      "[ProductId](#cfn-servicecatalog-launchroleconstraint-productid)" : {{String}},
+      "[RoleArn](#cfn-servicecatalog-launchroleconstraint-rolearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-launchroleconstraint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::LaunchRoleConstraint
 Properties:
-  AcceptLanguage: String
-  Description: String
-  LocalRoleName: String
-  PortfolioId: String
-  ProductId: String
-  RoleArn: String
-
+  [AcceptLanguage](#cfn-servicecatalog-launchroleconstraint-acceptlanguage): {{String}}
+  [Description](#cfn-servicecatalog-launchroleconstraint-description): {{String}}
+  [LocalRoleName](#cfn-servicecatalog-launchroleconstraint-localrolename): {{String}}
+  [PortfolioId](#cfn-servicecatalog-launchroleconstraint-portfolioid): {{String}}
+  [ProductId](#cfn-servicecatalog-launchroleconstraint-productid): {{String}}
+  [RoleArn](#cfn-servicecatalog-launchroleconstraint-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-launchroleconstraint-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-launchroleconstraint-acceptlanguage"></a>
 The language code.
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `jp` \- Japanese
-
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-servicecatalog-launchroleconstraint-description"></a>
 The description of the constraint.
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocalRoleName`
-
+`LocalRoleName`  <a name="cfn-servicecatalog-launchroleconstraint-localrolename"></a>
 You are required to specify either the `RoleArn` or the `LocalRoleName` but can't use both.
-
 If you specify the `LocalRoleName` property, when an account uses the launch constraint, the IAM role with that name in the account will be used. This allows launch-role constraints to be account-agnostic so the administrator can create fewer resources per shared account.
-
 The given role name must exist in the account used to create the launch constraint and the account of the user who launches a product with this launch constraint.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PortfolioId`
-
+`PortfolioId`  <a name="cfn-servicecatalog-launchroleconstraint-portfolioid"></a>
 The portfolio identifier.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-servicecatalog-launchroleconstraint-productid"></a>
 The product identifier.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-servicecatalog-launchroleconstraint-rolearn"></a>
 The ARN of the launch role.
-
 You are required to specify `RoleArn` or `LocalRoleName` but can't use both.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role)\/.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role)\/.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-servicecatalog-launchroleconstraint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-launchroleconstraint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns identifier of the constraint.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-servicecatalog-launchroleconstraint-return-values-fn--getatt"></a>
 
 ## See also
-
-- [CreateConstraint](../../../servicecatalog/latest/dg/api-createconstraint.md) in the _AWS Service Catalog API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::LaunchNotificationConstraint
-
-AWS::ServiceCatalog::LaunchTemplateConstraint
+<a name="aws-resource-servicecatalog-launchroleconstraint--seealso"></a>
++ [CreateConstraint](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_CreateConstraint.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

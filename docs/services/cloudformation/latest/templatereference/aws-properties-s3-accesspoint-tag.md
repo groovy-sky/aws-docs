@@ -2,70 +2,52 @@
 title: "AWS::S3::AccessPoint Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::AccessPoint Tag
+<a name="aws-properties-s3-accesspoint-tag"></a>
 
-A key-value pair that you use to label your access points. You can add tags to new access points when you create them, or you can add tags to existing access points. Tags can help you organize and control access to access points. For more information, see [Using tags for attribute-based access control (ABAC)](../../../s3/latest/userguide/tagging.md#using-tags-for-abac).
+A key-value pair that you use to label your access points. You can add tags to new access points when you create them, or you can add tags to existing access points. Tags can help you organize and control access to access points. For more information, see [Using tags for attribute-based access control (ABAC)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging.html#using-tags-for-abac).
 
 ## Syntax
+<a name="aws-properties-s3-accesspoint-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-accesspoint-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-s3-accesspoint-tag-key)" : {{String}},
+  "[Value](#cfn-s3-accesspoint-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-accesspoint-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-s3-accesspoint-tag-key): {{String}}
+  [Value](#cfn-s3-accesspoint-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-accesspoint-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-s3-accesspoint-tag-key"></a>
+The key of the tag. Tags are key-value pairs that you use to label your access points. Tags can help you organize and control access to access points. For more information, see [Tagging S3 resources for cost allocation or attribute-based access control (ABAC)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging.html).
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The key of the tag. Tags are key-value pairs that you use to label your access points. Tags can help you organize and control access to access points. For more information, see [Tagging S3 resources for cost allocation or attribute-based access control (ABAC)](../../../s3/latest/userguide/tagging.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The value of the tag. Tags are key-value pairs that you use to label your access points. Tags can help you organize and control access to access points. For more information, see [Tagging S3 resources for cost allocation or attribute-based access control (ABAC)](../../../s3/latest/userguide/tagging.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PublicAccessBlockConfiguration
-
-VpcConfiguration
+`Value`  <a name="cfn-s3-accesspoint-tag-value"></a>
+The value of the tag. Tags are key-value pairs that you use to label your access points. Tags can help you organize and control access to access points. For more information, see [Tagging S3 resources for cost allocation or attribute-based access control (ABAC)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging.html).
+*Required*: Yes
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

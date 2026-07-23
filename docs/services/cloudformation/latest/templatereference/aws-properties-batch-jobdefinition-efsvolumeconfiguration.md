@@ -2,120 +2,76 @@
 title: "AWS::Batch::JobDefinition EFSVolumeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition EFSVolumeConfiguration
+<a name="aws-properties-batch-jobdefinition-efsvolumeconfiguration"></a>
 
-This is used when you're using an Amazon Elastic File System file system for job storage. For more
-information, see [Amazon EFS\
-Volumes](../../../batch/latest/userguide/efs-volumes.md) in the _AWS Batch User Guide_.
+This is used when you're using an Amazon Elastic File System file system for job storage. For more information, see [Amazon EFS Volumes](https://docs.aws.amazon.com/batch/latest/userguide/efs-volumes.html) in the *AWS Batch User Guide*.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-efsvolumeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-efsvolumeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationConfig" : EFSAuthorizationConfig,
-  "FileSystemId" : String,
-  "RootDirectory" : String,
-  "TransitEncryption" : String,
-  "TransitEncryptionPort" : Integer
+  "[AuthorizationConfig](#cfn-batch-jobdefinition-efsvolumeconfiguration-authorizationconfig)" : {{EFSAuthorizationConfig}},
+  "[FileSystemId](#cfn-batch-jobdefinition-efsvolumeconfiguration-filesystemid)" : {{String}},
+  "[RootDirectory](#cfn-batch-jobdefinition-efsvolumeconfiguration-rootdirectory)" : {{String}},
+  "[TransitEncryption](#cfn-batch-jobdefinition-efsvolumeconfiguration-transitencryption)" : {{String}},
+  "[TransitEncryptionPort](#cfn-batch-jobdefinition-efsvolumeconfiguration-transitencryptionport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-efsvolumeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationConfig:
-    EFSAuthorizationConfig
-  FileSystemId: String
-  RootDirectory: String
-  TransitEncryption: String
-  TransitEncryptionPort: Integer
-
+```
+  [AuthorizationConfig](#cfn-batch-jobdefinition-efsvolumeconfiguration-authorizationconfig): {{
+    EFSAuthorizationConfig}}
+  [FileSystemId](#cfn-batch-jobdefinition-efsvolumeconfiguration-filesystemid): {{String}}
+  [RootDirectory](#cfn-batch-jobdefinition-efsvolumeconfiguration-rootdirectory): {{String}}
+  [TransitEncryption](#cfn-batch-jobdefinition-efsvolumeconfiguration-transitencryption): {{String}}
+  [TransitEncryptionPort](#cfn-batch-jobdefinition-efsvolumeconfiguration-transitencryptionport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-efsvolumeconfiguration-properties"></a>
 
-`AuthorizationConfig`
-
+`AuthorizationConfig`  <a name="cfn-batch-jobdefinition-efsvolumeconfiguration-authorizationconfig"></a>
 The authorization configuration details for the Amazon EFS file system.
+*Required*: No
+*Type*: [EFSAuthorizationConfig](aws-properties-batch-jobdefinition-efsauthorizationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EFSAuthorizationConfig](aws-properties-batch-jobdefinition-efsauthorizationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-batch-jobdefinition-efsvolumeconfiguration-filesystemid"></a>
 The Amazon EFS file system ID to use.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`RootDirectory`  <a name="cfn-batch-jobdefinition-efsvolumeconfiguration-rootdirectory"></a>
+The directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume is used instead. Specifying `/` has the same effect as omitting this parameter. The maximum length is 4,096 characters.
+If an EFS access point is specified in the `authorizationConfig`, the root directory parameter must either be omitted or set to `/`, which enforces the path set on the Amazon EFS access point.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`TransitEncryption`  <a name="cfn-batch-jobdefinition-efsvolumeconfiguration-transitencryption"></a>
+Determines whether to enable encryption for Amazon EFS data in transit between the Amazon ECS host and the Amazon EFS server. Transit encryption must be enabled if Amazon EFS IAM authorization is used. If this parameter is omitted, the default value of `DISABLED` is used. For more information, see [Encrypting data in transit](https://docs.aws.amazon.com/efs/latest/ug/encryption-in-transit.html) in the *Amazon Elastic File System User Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RootDirectory`
-
-The directory within the Amazon EFS file system to mount as the root directory inside the host.
-If this parameter is omitted, the root of the Amazon EFS volume is used instead. Specifying
-`/` has the same effect as omitting this parameter. The maximum length is 4,096
-characters.
-
-###### Important
-
-If an EFS access point is specified in the `authorizationConfig`, the root
-directory parameter must either be omitted or set to `/`, which enforces the path set
-on the Amazon EFS access point.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitEncryption`
-
-Determines whether to enable encryption for Amazon EFS data in transit between the Amazon ECS host and
-the Amazon EFS server. Transit encryption must be enabled if Amazon EFS IAM authorization is used. If
-this parameter is omitted, the default value of `DISABLED` is used. For more
-information, see [Encrypting data in transit](../../../efs/latest/ug/encryption-in-transit.md) in the _Amazon Elastic File System User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitEncryptionPort`
-
-The port to use when sending encrypted data between the Amazon ECS host and the Amazon EFS server. If
-you don't specify a transit encryption port, it uses the port selection strategy that the Amazon EFS
-mount helper uses. The value must be between 0 and 65,535. For more information, see [EFS mount helper](../../../efs/latest/ug/efs-mount-helper.md) in the
-_Amazon Elastic File System User Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EFSAuthorizationConfig
-
-EksContainer
+`TransitEncryptionPort`  <a name="cfn-batch-jobdefinition-efsvolumeconfiguration-transitencryptionport"></a>
+The port to use when sending encrypted data between the Amazon ECS host and the Amazon EFS server. If you don't specify a transit encryption port, it uses the port selection strategy that the Amazon EFS mount helper uses. The value must be between 0 and 65,535. For more information, see [EFS mount helper](https://docs.aws.amazon.com/efs/latest/ug/efs-mount-helper.html) in the *Amazon Elastic File System User Guide*.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

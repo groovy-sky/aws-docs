@@ -2,100 +2,73 @@
 title: "AWS::IoTFleetWise::SignalCatalog NodeCounts"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::SignalCatalog NodeCounts
+<a name="aws-properties-iotfleetwise-signalcatalog-nodecounts"></a>
 
 Information about the number of nodes and node types in a vehicle network.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-signalcatalog-nodecounts-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-signalcatalog-nodecounts-syntax.json"></a>
 
-```json
-
+```
 {
-  "TotalActuators" : Number,
-  "TotalAttributes" : Number,
-  "TotalBranches" : Number,
-  "TotalNodes" : Number,
-  "TotalSensors" : Number
+  "[TotalActuators](#cfn-iotfleetwise-signalcatalog-nodecounts-totalactuators)" : {{Number}},
+  "[TotalAttributes](#cfn-iotfleetwise-signalcatalog-nodecounts-totalattributes)" : {{Number}},
+  "[TotalBranches](#cfn-iotfleetwise-signalcatalog-nodecounts-totalbranches)" : {{Number}},
+  "[TotalNodes](#cfn-iotfleetwise-signalcatalog-nodecounts-totalnodes)" : {{Number}},
+  "[TotalSensors](#cfn-iotfleetwise-signalcatalog-nodecounts-totalsensors)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-signalcatalog-nodecounts-syntax.yaml"></a>
 
-```yaml
-
-  TotalActuators: Number
-  TotalAttributes: Number
-  TotalBranches: Number
-  TotalNodes: Number
-  TotalSensors: Number
-
+```
+  [TotalActuators](#cfn-iotfleetwise-signalcatalog-nodecounts-totalactuators): {{Number}}
+  [TotalAttributes](#cfn-iotfleetwise-signalcatalog-nodecounts-totalattributes): {{Number}}
+  [TotalBranches](#cfn-iotfleetwise-signalcatalog-nodecounts-totalbranches): {{Number}}
+  [TotalNodes](#cfn-iotfleetwise-signalcatalog-nodecounts-totalnodes): {{Number}}
+  [TotalSensors](#cfn-iotfleetwise-signalcatalog-nodecounts-totalsensors): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-signalcatalog-nodecounts-properties"></a>
 
-`TotalActuators`
+`TotalActuators`  <a name="cfn-iotfleetwise-signalcatalog-nodecounts-totalactuators"></a>
+ The total number of nodes in a vehicle network that represent actuators.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The total number of nodes in a vehicle network that represent actuators.
+`TotalAttributes`  <a name="cfn-iotfleetwise-signalcatalog-nodecounts-totalattributes"></a>
+ The total number of nodes in a vehicle network that represent attributes.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TotalBranches`  <a name="cfn-iotfleetwise-signalcatalog-nodecounts-totalbranches"></a>
+ The total number of nodes in a vehicle network that represent branches.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Number
+`TotalNodes`  <a name="cfn-iotfleetwise-signalcatalog-nodecounts-totalnodes"></a>
+ The total number of nodes in a vehicle network.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalAttributes`
-
-The total number of nodes in a vehicle network that represent attributes.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalBranches`
-
-The total number of nodes in a vehicle network that represent branches.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalNodes`
-
-The total number of nodes in a vehicle network.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalSensors`
-
-The total number of nodes in a vehicle network that represent sensors.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Node
-
-Sensor
+`TotalSensors`  <a name="cfn-iotfleetwise-signalcatalog-nodecounts-totalsensors"></a>
+ The total number of nodes in a vehicle network that represent sensors.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

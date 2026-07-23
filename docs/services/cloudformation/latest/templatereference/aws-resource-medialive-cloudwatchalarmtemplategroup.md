@@ -2,120 +2,100 @@
 title: "AWS::MediaLive::CloudWatchAlarmTemplateGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::CloudWatchAlarmTemplateGroup
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup"></a>
 
-The `AWS::MediaLive::CloudWatchAlarmTemplateGroup` resource Property description not available. for MediaLive.
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-description"></a>The `AWS::MediaLive::CloudWatchAlarmTemplateGroup` resource Property description not available. for MediaLive.
 
 ## Syntax
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaLive::CloudWatchAlarmTemplateGroup",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-medialive-cloudwatchalarmtemplategroup-description)" : {{String}},
+      "[Name](#cfn-medialive-cloudwatchalarmtemplategroup-name)" : {{String}},
+      "[Tags](#cfn-medialive-cloudwatchalarmtemplategroup-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaLive::CloudWatchAlarmTemplateGroup
 Properties:
-  Description: String
-  Name: String
-  Tags:
-    Key: Value
-
+  [Description](#cfn-medialive-cloudwatchalarmtemplategroup-description): {{String}}
+  [Name](#cfn-medialive-cloudwatchalarmtemplategroup-name): {{String}}
+  [Tags](#cfn-medialive-cloudwatchalarmtemplategroup-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-medialive-cloudwatchalarmtemplategroup-description"></a>
 A resource's optional description.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-medialive-cloudwatchalarmtemplategroup-name"></a>
 A resource's name. Names must be unique within the scope of a resource type in a specific region.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^\s]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^\s]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-medialive-cloudwatchalarmtemplategroup-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-return-values-fn--getatt"></a>
 
-`Arn`
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+
+####
+<a name="aws-resource-medialive-cloudwatchalarmtemplategroup-return-values-fn--getatt-fn--getatt"></a>
+
+`Arn`  <a name="Arn-fn::getatt"></a>
 A cloudwatch alarm template group's ARN (Amazon Resource Name)
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date and time of resource creation.
 
-`Id`
+`Id`  <a name="Id-fn::getatt"></a>
+A CloudWatch alarm template group's id. Amazon Web Services provided template groups have ids that start with <code>`aws-`</code>
 
-A CloudWatch alarm template group's id. Amazon Web Services provided template groups have ids that start with <code>\`aws-\`</code>
-
-`Identifier`
-
+`Identifier`  <a name="Identifier-fn::getatt"></a>
 Property description not available.
 
-`ModifiedAt`
-
+`ModifiedAt`  <a name="ModifiedAt-fn::getatt"></a>
 The date and time of latest resource modification.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaLive::CloudWatchAlarmTemplate
-
-AWS::MediaLive::Cluster
 
 All content copied from https://docs.aws.amazon.com/.

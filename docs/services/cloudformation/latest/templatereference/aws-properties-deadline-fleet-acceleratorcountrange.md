@@ -2,73 +2,53 @@
 title: "AWS::Deadline::Fleet AcceleratorCountRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet AcceleratorCountRange
+<a name="aws-properties-deadline-fleet-acceleratorcountrange"></a>
 
-Defines the maximum and minimum number of GPU accelerators required for a worker
-instance..
+Defines the maximum and minimum number of GPU accelerators required for a worker instance..
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-acceleratorcountrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-acceleratorcountrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Integer,
-  "Min" : Integer
+  "[Max](#cfn-deadline-fleet-acceleratorcountrange-max)" : {{Integer}},
+  "[Min](#cfn-deadline-fleet-acceleratorcountrange-min)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-acceleratorcountrange-syntax.yaml"></a>
 
-```yaml
-
-  Max: Integer
-  Min: Integer
-
+```
+  [Max](#cfn-deadline-fleet-acceleratorcountrange-max): {{Integer}}
+  [Min](#cfn-deadline-fleet-acceleratorcountrange-min): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-acceleratorcountrange-properties"></a>
 
-`Max`
-
+`Max`  <a name="cfn-deadline-fleet-acceleratorcountrange-max"></a>
 The maximum number of GPU accelerators in the worker host.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
+`Min`  <a name="cfn-deadline-fleet-acceleratorcountrange-min"></a>
 The minimum number of GPU accelerators in the worker host.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AcceleratorCapabilities
-
-AcceleratorSelection
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

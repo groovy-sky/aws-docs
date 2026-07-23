@@ -2,200 +2,143 @@
 title: "AWS::QuickSight::Analysis PieChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PieChartConfiguration
+<a name="aws-properties-quicksight-analysis-piechartconfiguration"></a>
 
 The configuration of a pie chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-piechartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-piechartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryLabelOptions" : ChartAxisLabelOptions,
-  "ContributionAnalysisDefaults" : [ ContributionAnalysisDefault, ... ],
-  "DataLabels" : DataLabelOptions,
-  "DonutOptions" : DonutOptions,
-  "FieldWells" : PieChartFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "SmallMultiplesOptions" : SmallMultiplesOptions,
-  "SortConfiguration" : PieChartSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "ValueLabelOptions" : ChartAxisLabelOptions,
-  "VisualPalette" : VisualPalette
+  "[CategoryLabelOptions](#cfn-quicksight-analysis-piechartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ContributionAnalysisDefaults](#cfn-quicksight-analysis-piechartconfiguration-contributionanalysisdefaults)" : {{[ ContributionAnalysisDefault, ... ]}},
+  "[DataLabels](#cfn-quicksight-analysis-piechartconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[DonutOptions](#cfn-quicksight-analysis-piechartconfiguration-donutoptions)" : {{DonutOptions}},
+  "[FieldWells](#cfn-quicksight-analysis-piechartconfiguration-fieldwells)" : {{PieChartFieldWells}},
+  "[Interactions](#cfn-quicksight-analysis-piechartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-analysis-piechartconfiguration-legend)" : {{LegendOptions}},
+  "[SmallMultiplesOptions](#cfn-quicksight-analysis-piechartconfiguration-smallmultiplesoptions)" : {{SmallMultiplesOptions}},
+  "[SortConfiguration](#cfn-quicksight-analysis-piechartconfiguration-sortconfiguration)" : {{PieChartSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-analysis-piechartconfiguration-tooltip)" : {{TooltipOptions}},
+  "[ValueLabelOptions](#cfn-quicksight-analysis-piechartconfiguration-valuelabeloptions)" : {{ChartAxisLabelOptions}},
+  "[VisualPalette](#cfn-quicksight-analysis-piechartconfiguration-visualpalette)" : {{VisualPalette}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-piechartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CategoryLabelOptions:
-    ChartAxisLabelOptions
-  ContributionAnalysisDefaults:
-    - ContributionAnalysisDefault
-  DataLabels:
-    DataLabelOptions
-  DonutOptions:
-    DonutOptions
-  FieldWells:
-    PieChartFieldWells
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  SmallMultiplesOptions:
-    SmallMultiplesOptions
-  SortConfiguration:
-    PieChartSortConfiguration
-  Tooltip:
-    TooltipOptions
-  ValueLabelOptions:
-    ChartAxisLabelOptions
-  VisualPalette:
-    VisualPalette
-
+```
+  [CategoryLabelOptions](#cfn-quicksight-analysis-piechartconfiguration-categorylabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ContributionAnalysisDefaults](#cfn-quicksight-analysis-piechartconfiguration-contributionanalysisdefaults): {{
+    - ContributionAnalysisDefault}}
+  [DataLabels](#cfn-quicksight-analysis-piechartconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [DonutOptions](#cfn-quicksight-analysis-piechartconfiguration-donutoptions): {{
+    DonutOptions}}
+  [FieldWells](#cfn-quicksight-analysis-piechartconfiguration-fieldwells): {{
+    PieChartFieldWells}}
+  [Interactions](#cfn-quicksight-analysis-piechartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-analysis-piechartconfiguration-legend): {{
+    LegendOptions}}
+  [SmallMultiplesOptions](#cfn-quicksight-analysis-piechartconfiguration-smallmultiplesoptions): {{
+    SmallMultiplesOptions}}
+  [SortConfiguration](#cfn-quicksight-analysis-piechartconfiguration-sortconfiguration): {{
+    PieChartSortConfiguration}}
+  [Tooltip](#cfn-quicksight-analysis-piechartconfiguration-tooltip): {{
+    TooltipOptions}}
+  [ValueLabelOptions](#cfn-quicksight-analysis-piechartconfiguration-valuelabeloptions): {{
+    ChartAxisLabelOptions}}
+  [VisualPalette](#cfn-quicksight-analysis-piechartconfiguration-visualpalette): {{
+    VisualPalette}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-piechartconfiguration-properties"></a>
 
-`CategoryLabelOptions`
-
+`CategoryLabelOptions`  <a name="cfn-quicksight-analysis-piechartconfiguration-categorylabeloptions"></a>
 The label options of the group/color that is displayed in a pie chart.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContributionAnalysisDefaults`
-
+`ContributionAnalysisDefaults`  <a name="cfn-quicksight-analysis-piechartconfiguration-contributionanalysisdefaults"></a>
 The contribution analysis (anomaly configuration) setup of the visual.
+*Required*: No
+*Type*: Array of [ContributionAnalysisDefault](aws-properties-quicksight-analysis-contributionanalysisdefault.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ContributionAnalysisDefault](aws-properties-quicksight-analysis-contributionanalysisdefault.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-analysis-piechartconfiguration-datalabels"></a>
 The options that determine if visual data labels are displayed.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DonutOptions`
-
+`DonutOptions`  <a name="cfn-quicksight-analysis-piechartconfiguration-donutoptions"></a>
 The options that determine the shape of the chart. This option determines whether the chart is a pie chart or a donut chart.
+*Required*: No
+*Type*: [DonutOptions](aws-properties-quicksight-analysis-donutoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DonutOptions](aws-properties-quicksight-analysis-donutoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-analysis-piechartconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [PieChartFieldWells](aws-properties-quicksight-analysis-piechartfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PieChartFieldWells](aws-properties-quicksight-analysis-piechartfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-analysis-piechartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-analysis-piechartconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmallMultiplesOptions`
-
+`SmallMultiplesOptions`  <a name="cfn-quicksight-analysis-piechartconfiguration-smallmultiplesoptions"></a>
 The small multiples setup for the visual.
+*Required*: No
+*Type*: [SmallMultiplesOptions](aws-properties-quicksight-analysis-smallmultiplesoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SmallMultiplesOptions](aws-properties-quicksight-analysis-smallmultiplesoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-analysis-piechartconfiguration-sortconfiguration"></a>
 The sort configuration of a pie chart.
+*Required*: No
+*Type*: [PieChartSortConfiguration](aws-properties-quicksight-analysis-piechartsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PieChartSortConfiguration](aws-properties-quicksight-analysis-piechartsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-analysis-piechartconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueLabelOptions`
-
+`ValueLabelOptions`  <a name="cfn-quicksight-analysis-piechartconfiguration-valuelabeloptions"></a>
 The label options for the value that is displayed in a pie chart.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-analysis-piechartconfiguration-visualpalette"></a>
 The palette (chart color) display setup of the visual.
-
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PieChartAggregatedFieldWells
-
-PieChartFieldWells
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

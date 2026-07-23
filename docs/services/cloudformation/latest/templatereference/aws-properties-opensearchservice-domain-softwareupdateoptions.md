@@ -2,52 +2,41 @@
 title: "AWS::OpenSearchService::Domain SoftwareUpdateOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchService::Domain SoftwareUpdateOptions
+<a name="aws-properties-opensearchservice-domain-softwareupdateoptions"></a>
 
 Options for configuring service software updates for a domain.
 
 ## Syntax
+<a name="aws-properties-opensearchservice-domain-softwareupdateoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchservice-domain-softwareupdateoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoSoftwareUpdateEnabled" : Boolean
+  "[AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchservice-domain-softwareupdateoptions-syntax.yaml"></a>
 
-```yaml
-
-  AutoSoftwareUpdateEnabled: Boolean
-
+```
+  [AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchservice-domain-softwareupdateoptions-properties"></a>
 
-`AutoSoftwareUpdateEnabled`
-
+`AutoSoftwareUpdateEnabled`  <a name="cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled"></a>
 Specifies whether automatic service software updates are enabled for the domain.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnapshotOptions
-
-Tag
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

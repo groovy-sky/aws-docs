@@ -2,85 +2,62 @@
 title: "AWS::Bedrock::DataSource BedrockFoundationModelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource BedrockFoundationModelConfiguration
+<a name="aws-properties-bedrock-datasource-bedrockfoundationmodelconfiguration"></a>
 
-Settings for a foundation model used to parse documents for a data source.
+Configuration for a Bedrock foundation model.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-bedrockfoundationmodelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-bedrockfoundationmodelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ModelArn" : String,
-  "ParsingModality" : String,
-  "ParsingPrompt" : ParsingPrompt
+  "[ModelArn](#cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-modelarn)" : {{String}},
+  "[ParsingModality](#cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-parsingmodality)" : {{String}},
+  "[ParsingPrompt](#cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-parsingprompt)" : {{ParsingPrompt}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-bedrockfoundationmodelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ModelArn: String
-  ParsingModality: String
-  ParsingPrompt:
-    ParsingPrompt
-
+```
+  [ModelArn](#cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-modelarn): {{String}}
+  [ParsingModality](#cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-parsingmodality): {{String}}
+  [ParsingPrompt](#cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-parsingprompt): {{
+    ParsingPrompt}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-bedrockfoundationmodelconfiguration-properties"></a>
 
-`ModelArn`
-
+`ModelArn`  <a name="cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-modelarn"></a>
 The ARN of the foundation model to use for parsing.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:aws(-cn|-us-gov|-eusc|-iso(-[b-f])?)?:(bedrock):[a-z0-9-]{1,20}:([0-9]{12})?:([a-z-]+/)?)?([a-zA-Z0-9.-]{1,63}){0,2}(([:][a-z0-9-]{1,63}){0,2})?(/[a-z0-9]{1,12})?$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:aws(-cn|-us-gov|-eusc|-iso(-[b-f])?)?:(bedrock):[a-z0-9-]{1,20}:([0-9]{12})?:([a-z-]+/)?)?([a-zA-Z0-9.-]{1,63}){0,2}(([:][a-z0-9-]{1,63}){0,2})?(/[a-z0-9]{1,12})?$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParsingModality`
-
+`ParsingModality`  <a name="cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-parsingmodality"></a>
 Specifies whether to enable parsing of multimodal data, including both text and/or images.
+*Required*: No
+*Type*: String
+*Allowed values*: `MULTIMODAL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MULTIMODAL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParsingPrompt`
-
+`ParsingPrompt`  <a name="cfn-bedrock-datasource-bedrockfoundationmodelconfiguration-parsingprompt"></a>
 Instructions for interpreting the contents of a document.
-
-_Required_: No
-
-_Type_: [ParsingPrompt](aws-properties-bedrock-datasource-parsingprompt.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BedrockDataAutomationConfiguration
-
-BedrockFoundationModelContextEnrichmentConfiguration
+*Required*: No
+*Type*: [ParsingPrompt](aws-properties-bedrock-datasource-parsingprompt.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

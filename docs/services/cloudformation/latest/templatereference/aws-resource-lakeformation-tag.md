@@ -2,128 +2,107 @@
 title: "AWS::LakeFormation::Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::Tag
+<a name="aws-resource-lakeformation-tag"></a>
 
-The `AWS::LakeFormation::Tag` resource represents an LF-tag, which consists of a key and one or more possible values for the key.
-During a stack operation, AWS CloudFormation calls the AWS Lake Formation `CreateLFTag` API to create a tag, and `UpdateLFTag` API to update a tag resource, and a `DeleteLFTag` to delete it.
+The `AWS::LakeFormation::Tag` resource represents an LF-tag, which consists of a key and one or more possible values for the key. During a stack operation, AWS CloudFormation calls the AWS Lake Formation`CreateLFTag` API to create a tag, and `UpdateLFTag` API to update a tag resource, and a `DeleteLFTag` to delete it.
 
 ## Syntax
+<a name="aws-resource-lakeformation-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lakeformation-tag-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::LakeFormation::Tag",
   "Properties" : {
-      "CatalogId" : String,
-      "TagKey" : String,
-      "TagValues" : [ String, ... ]
+      "[CatalogId](#cfn-lakeformation-tag-catalogid)" : {{String}},
+      "[TagKey](#cfn-lakeformation-tag-tagkey)" : {{String}},
+      "[TagValues](#cfn-lakeformation-tag-tagvalues)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lakeformation-tag-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::LakeFormation::Tag
 Properties:
-  CatalogId: String
-  TagKey: String
-  TagValues:
-    - String
-
+  [CatalogId](#cfn-lakeformation-tag-catalogid): {{String}}
+  [TagKey](#cfn-lakeformation-tag-tagkey): {{String}}
+  [TagValues](#cfn-lakeformation-tag-tagvalues): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-lakeformation-tag-properties"></a>
 
-`CatalogId`
+`CatalogId`  <a name="cfn-lakeformation-tag-catalogid"></a>
+Catalog id string, not less than 1 or more than 255 bytes long, matching the [single-line string pattern](https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-aws-lake-formation-api-common.html).
+The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment.
+*Required*: No
+*Type*: String
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Catalog id string, not less than 1 or more than 255 bytes long, matching the [single-line string pattern](../../../lake-formation/latest/dg/aws-lake-formation-api-aws-lake-formation-api-common.md).
-
-The identifier for the Data Catalog. By default, the account ID.
-The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagKey`
-
-UTF-8 string, not less than 1 or more than 255 bytes long, matching the [single-line string pattern](../../../lake-formation/latest/dg/aws-lake-formation-api-aws-lake-formation-api-common.md).
-
+`TagKey`  <a name="cfn-lakeformation-tag-tagkey"></a>
+ UTF-8 string, not less than 1 or more than 255 bytes long, matching the [single-line string pattern](https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-aws-lake-formation-api-common.html).
 The key-name for the LF-tag.
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([{a-zA-Z}{\s}{0-9}_.:\/=+\-@%]*)$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([{a-zA-Z}{\s}{0-9}_.:\/=+\-@%]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagValues`
-
-An array of UTF-8 strings, not less than 1 or more than 50 strings.
-
-A list of possible values of the corresponding `TagKey` of an LF-tag key-value pair.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TagValues`  <a name="cfn-lakeformation-tag-tagvalues"></a>
+ An array of UTF-8 strings, not less than 1 or more than 50 strings.
+ A list of possible values of the corresponding `TagKey` of an LF-tag key-value pair.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-lakeformation-tag-return-values"></a>
 
 ### Ref
+<a name="aws-resource-lakeformation-tag-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Tag’s `TagKey` property value.
 
 For example: `tagKeyName`
 
 ## Remarks
+<a name="aws-resource-lakeformation-tag--remarks"></a>
 
-_Note the following:_
+ *Note the following:*
 
-Only data lake administrators can create LF-tags.
+ Only data lake administrators can create LF-tags.
 
-An `LF-tag` can be assigned to Data Catalog resources (databases, tables, and columns) via [AWS::LakeFormation::TagAssociation](../userguide/aws-resource-lakeformation-tagassociation.md) to implement tag-based access control.
+An `LF-tag` can be assigned to Data Catalog resources (databases, tables, and columns) via [AWS::LakeFormation::TagAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-tagassociation.html) to implement tag-based access control.
 
 ## Examples
+<a name="aws-resource-lakeformation-tag--examples"></a>
 
 ### Creating a tag resource in a template
+<a name="aws-resource-lakeformation-tag--examples--Creating_a_tag_resource_in_a_template"></a>
 
 The following example demonstrates how to define a tag resource in a template.
 
 #### JSON
+<a name="aws-resource-lakeformation-tag--examples--Creating_a_tag_resource_in_a_template--json"></a>
 
-```json
-
+```
 {
     "SampleTag": {
         "Type": "AWS::LakeFormation::Tag",
@@ -133,13 +112,12 @@ The following example demonstrates how to define a tag resource in a template.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-lakeformation-tag--examples--Creating_a_tag_resource_in_a_template--yaml"></a>
 
-```yaml
-
+```
 SampleTag:
     Type: AWS::LakeFormation::Tag
     Properties:
@@ -150,13 +128,8 @@ SampleTag:
 ```
 
 ## See also
+<a name="aws-resource-lakeformation-tag--seealso"></a>
 
-[Assign an `LF-tag` to a Data Catalog resource - AWS::LakeFormation::TagAssociation](../userguide/aws-properties-lakeformation-tagassociation-resource.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::LakeFormation::Resource
-
-AWS::LakeFormation::TagAssociation
+[Assign an `LF-tag` to a Data Catalog resource - AWS::LakeFormation::TagAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-tagassociation-resource.html).
 
 All content copied from https://docs.aws.amazon.com/.

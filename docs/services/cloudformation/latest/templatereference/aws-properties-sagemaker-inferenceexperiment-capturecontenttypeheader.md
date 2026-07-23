@@ -2,77 +2,55 @@
 title: "AWS::SageMaker::InferenceExperiment CaptureContentTypeHeader"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceExperiment CaptureContentTypeHeader
+<a name="aws-properties-sagemaker-inferenceexperiment-capturecontenttypeheader"></a>
 
-Configuration specifying how to treat different headers. If no headers are specified
-Amazon SageMaker AI will by default base64 encode when capturing the data.
+Configuration specifying how to treat different headers. If no headers are specified Amazon SageMaker AI will by default base64 encode when capturing the data.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferenceexperiment-capturecontenttypeheader-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferenceexperiment-capturecontenttypeheader-syntax.json"></a>
 
-```json
-
+```
 {
-  "CsvContentTypes" : [ String, ... ],
-  "JsonContentTypes" : [ String, ... ]
+  "[CsvContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-csvcontenttypes)" : {{[ String, ... ]}},
+  "[JsonContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-jsoncontenttypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferenceexperiment-capturecontenttypeheader-syntax.yaml"></a>
 
-```yaml
-
-  CsvContentTypes:
-    - String
-  JsonContentTypes:
-    - String
-
+```
+  [CsvContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-csvcontenttypes): {{
+    - String}}
+  [JsonContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-jsoncontenttypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferenceexperiment-capturecontenttypeheader-properties"></a>
 
-`CsvContentTypes`
+`CsvContentTypes`  <a name="cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-csvcontenttypes"></a>
+The list of all content type headers that Amazon SageMaker AI will treat as CSV and capture accordingly.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `256 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The list of all content type headers that Amazon SageMaker AI will treat as CSV and
-capture accordingly.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `256 | 10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JsonContentTypes`
-
-The list of all content type headers that SageMaker AI will treat as JSON and
-capture accordingly.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `256 | 10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::InferenceExperiment
-
-DataStorageConfig
+`JsonContentTypes`  <a name="cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-jsoncontenttypes"></a>
+The list of all content type headers that SageMaker AI will treat as JSON and capture accordingly.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `256 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

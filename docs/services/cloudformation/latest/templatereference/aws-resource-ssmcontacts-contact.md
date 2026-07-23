@@ -2,158 +2,127 @@
 title: "AWS::SSMContacts::Contact"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMContacts::Contact
+<a name="aws-resource-ssmcontacts-contact"></a>
 
-The `AWS::SSMContacts::Contact` resource specifies a contact or escalation
-plan. Incident Manager contacts are a subset of actions and data types that you
-can use for managing responder engagement and interaction.
+The `AWS::SSMContacts::Contact` resource specifies a contact or escalation plan. Incident Manager contacts are a subset of actions and data types that you can use for managing responder engagement and interaction.
 
 ## Syntax
+<a name="aws-resource-ssmcontacts-contact-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssmcontacts-contact-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSMContacts::Contact",
   "Properties" : {
-      "Alias" : String,
-      "DisplayName" : String,
-      "Plan" : [ Stage, ... ],
-      "Tags" : [ Tag, ... ],
-      "Type" : String
+      "[Alias](#cfn-ssmcontacts-contact-alias)" : {{String}},
+      "[DisplayName](#cfn-ssmcontacts-contact-displayname)" : {{String}},
+      "[Plan](#cfn-ssmcontacts-contact-plan)" : {{[ Stage, ... ]}},
+      "[Tags](#cfn-ssmcontacts-contact-tags)" : {{[ Tag, ... ]}},
+      "[Type](#cfn-ssmcontacts-contact-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssmcontacts-contact-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSMContacts::Contact
 Properties:
-  Alias: String
-  DisplayName: String
-  Plan:
-    - Stage
-  Tags:
-    - Tag
-  Type: String
-
+  [Alias](#cfn-ssmcontacts-contact-alias): {{String}}
+  [DisplayName](#cfn-ssmcontacts-contact-displayname): {{String}}
+  [Plan](#cfn-ssmcontacts-contact-plan): {{
+    - Stage}}
+  [Tags](#cfn-ssmcontacts-contact-tags): {{
+    - Tag}}
+  [Type](#cfn-ssmcontacts-contact-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ssmcontacts-contact-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-ssmcontacts-contact-alias"></a>
 The unique and identifiable alias of the contact or escalation plan.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9_\-\.]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9_\-\.]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-ssmcontacts-contact-displayname"></a>
 The full name of the contact or escalation plan.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-\s]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Plan`  <a name="cfn-ssmcontacts-contact-plan"></a>
+A list of stages. A contact has an engagement plan with stages that contact specified contact channels. An escalation plan uses stages that contact specified contacts.
+*Required*: No
+*Type*: Array of [Stage](aws-properties-ssmcontacts-contact-stage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-\s]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Plan`
-
-A list of stages. A contact has an engagement plan with stages that contact specified
-contact channels. An escalation plan uses stages that contact specified contacts.
-
-_Required_: No
-
-_Type_: Array of [Stage](aws-properties-ssmcontacts-contact-stage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ssmcontacts-contact-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ssmcontacts-contact-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ssmcontacts-contact-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-ssmcontacts-contact-type"></a>
 The type of contact.
-
-- `PERSONAL`: A single, individual contact.
-
-- `ESCALATION`: An escalation plan.
-
-- `ONCALL_SCHEDULE`: An on-call schedule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PERSONAL | ESCALATION | ONCALL_SCHEDULE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
++ `PERSONAL`: A single, individual contact.
++ `ESCALATION`: An escalation plan.
++ `ONCALL_SCHEDULE`: An on-call schedule.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PERSONAL | ESCALATION | ONCALL_SCHEDULE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ssmcontacts-contact-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ssmcontacts-contact-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the resource.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ssmcontacts-contact-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ssmcontacts-contact-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the `Contact` resource, such as
-`arn:aws:ssm-contacts:us-west-2:123456789012:contact/contactalias`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the `Contact` resource, such as `arn:aws:ssm-contacts:us-west-2:123456789012:contact/contactalias`.
 
 ## Examples
+<a name="aws-resource-ssmcontacts-contact--examples"></a>
 
 ### Create Incident Manager resources
+<a name="aws-resource-ssmcontacts-contact--examples--Create_resources"></a>
 
-The following example demonstrates the creation of not only contacts, but also a
-contact channel, a contact plan, and on-call rotation schedules. We recommend
-creating all Incident Manager `Contacts` resources using a single AWS CloudFormation
-template.
+The following example demonstrates the creation of not only contacts, but also a contact channel, a contact plan, and on-call rotation schedules. We recommend creating all Incident Manager`Contacts` resources using a single AWS CloudFormation template.
 
 #### JSON
+<a name="aws-resource-ssmcontacts-contact--examples--Create_resources--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -302,9 +271,9 @@ template.
 ```
 
 #### YAML
+<a name="aws-resource-ssmcontacts-contact--examples--Create_resources--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MySSMContact:
@@ -403,13 +372,6 @@ Resources:
         MonthlySettings:
           - DayOfMonth: 10
             HandOffTime: '13:00'
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Systems Manager Incident Manager Contacts
-
-ChannelTargetInfo
 
 All content copied from https://docs.aws.amazon.com/.

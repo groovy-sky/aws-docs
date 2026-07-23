@@ -2,85 +2,68 @@
 title: "AWS::S3::Bucket ReplicationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket ReplicationConfiguration
+<a name="aws-properties-s3-bucket-replicationconfiguration"></a>
 
-A container for replication rules. You can add up to 1,000 rules. The maximum size of a
-replication configuration is 2 MB. The latest version of the replication configuration XML is V2. For more information about XML V2 replication configurations, see
-[Replication configuration](../../../s3/latest/userguide/replication-add-config.md) in
-the _Amazon S3 User Guide_.
+A container for replication rules. You can add up to 1,000 rules. The maximum size of a replication configuration is 2 MB. The latest version of the replication configuration XML is V2. For more information about XML V2 replication configurations, see [Replication configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-add-config.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-replicationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-replicationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Role" : String,
-  "Rules" : [ ReplicationRule, ... ]
+  "[Role](#cfn-s3-bucket-replicationconfiguration-role)" : {{String}},
+  "[Rules](#cfn-s3-bucket-replicationconfiguration-rules)" : {{[ ReplicationRule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-replicationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Role: String
-  Rules:
-    - ReplicationRule
-
+```
+  [Role](#cfn-s3-bucket-replicationconfiguration-role): {{String}}
+  [Rules](#cfn-s3-bucket-replicationconfiguration-rules): {{
+    - ReplicationRule}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-replicationconfiguration-properties"></a>
 
-`Role`
+`Role`  <a name="cfn-s3-bucket-replicationconfiguration-role"></a>
+The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 assumes when replicating objects. For more information, see [How to Set Up Replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-how-setup.html) in the *Amazon S3 User Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 assumes when replicating
-objects. For more information, see [How to Set Up Replication](../../../s3/latest/dev/replication-how-setup.md) in the
-_Amazon S3 User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rules`
-
-A container for one or more replication rules. A replication configuration must have at least one
-rule and can contain a maximum of 1,000 rules.
-
-_Required_: Yes
-
-_Type_: Array of [ReplicationRule](aws-properties-s3-bucket-replicationrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Rules`  <a name="cfn-s3-bucket-replicationconfiguration-rules"></a>
+A container for one or more replication rules. A replication configuration must have at least one rule and can contain a maximum of 1,000 rules.
+*Required*: Yes
+*Type*: Array of [ReplicationRule](aws-properties-s3-bucket-replicationrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples"></a>
 
-- [Associate a replication configuration IAM role with an S3 bucket](#aws-properties-s3-bucket-replicationconfiguration--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket)
-
-- [Enable versioning and replicate objects](#aws-properties-s3-bucket-replicationconfiguration--examples--Enable_versioning_and_replicate_objects)
+**Topics**
++ [Associate a replication configuration IAM role with an S3 bucket](#aws-properties-s3-bucket-replicationconfiguration--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket)
++ [Enable versioning and replicate objects](#aws-properties-s3-bucket-replicationconfiguration--examples--Enable_versioning_and_replicate_objects)
 
 ### Associate a replication configuration IAM role with an S3 bucket
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket"></a>
 
-The following example creates an S3 bucket and grants it permission to write to a
-replication bucket by using an AWS Identity and Access Management (IAM)
-role. To avoid a circular dependency, the role's policy is declared as a separate
-resource. The bucket depends on the `WorkItemBucketBackupRole` role. If the
-policy is included in the role, the role also depends on the bucket.
+The following example creates an S3 bucket and grants it permission to write to a replication bucket by using an AWS Identity and Access Management (IAM) role. To avoid a circular dependency, the role's policy is declared as a separate resource. The bucket depends on the `WorkItemBucketBackupRole` role. If the policy is included in the role, the role also depends on the bucket.
 
 #### JSON
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "RecordServiceS3Bucket": {
@@ -245,9 +228,9 @@ policy is included in the role, the role also depends on the bucket.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket--yaml"></a>
 
-```yaml
-
+```
 Resources:
   RecordServiceS3Bucket:
     Type: 'AWS::S3::Bucket'
@@ -328,15 +311,14 @@ Resources:
 ```
 
 ### Enable versioning and replicate objects
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples--Enable_versioning_and_replicate_objects"></a>
 
-The following example enables versioning and two replication rules. The rules copy
-objects prefixed with either `MyPrefix` and `MyOtherPrefix` and
-stores the copied objects in a bucket named `my-replication-bucket`.
+The following example enables versioning and two replication rules. The rules copy objects prefixed with either `MyPrefix` and `MyOtherPrefix` and stores the copied objects in a bucket named `my-replication-bucket`.
 
 #### JSON
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples--Enable_versioning_and_replicate_objects--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -374,9 +356,9 @@ stores the copied objects in a bucket named `my-replication-bucket`.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-replicationconfiguration--examples--Enable_versioning_and_replicate_objects--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -398,11 +380,5 @@ Resources:
             Destination:
               Bucket: 'arn:aws:s3:::my-replication-bucket'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicaModifications
-
-ReplicationDestination
 
 All content copied from https://docs.aws.amazon.com/.

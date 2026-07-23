@@ -2,173 +2,143 @@
 title: "AWS::Route53Resolver::OutpostResolver"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::OutpostResolver
+<a name="aws-resource-route53resolver-outpostresolver"></a>
 
 Creates a Amazon Route 53 Resolver on an Outpost.
 
 ## Syntax
+<a name="aws-resource-route53resolver-outpostresolver-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53resolver-outpostresolver-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53Resolver::OutpostResolver",
   "Properties" : {
-      "InstanceCount" : Integer,
-      "Name" : String,
-      "OutpostArn" : String,
-      "PreferredInstanceType" : String,
-      "Tags" : [ Tag, ... ]
+      "[InstanceCount](#cfn-route53resolver-outpostresolver-instancecount)" : {{Integer}},
+      "[Name](#cfn-route53resolver-outpostresolver-name)" : {{String}},
+      "[OutpostArn](#cfn-route53resolver-outpostresolver-outpostarn)" : {{String}},
+      "[PreferredInstanceType](#cfn-route53resolver-outpostresolver-preferredinstancetype)" : {{String}},
+      "[Tags](#cfn-route53resolver-outpostresolver-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53resolver-outpostresolver-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Resolver::OutpostResolver
 Properties:
-  InstanceCount: Integer
-  Name: String
-  OutpostArn: String
-  PreferredInstanceType: String
-  Tags:
-    - Tag
-
+  [InstanceCount](#cfn-route53resolver-outpostresolver-instancecount): {{Integer}}
+  [Name](#cfn-route53resolver-outpostresolver-name): {{String}}
+  [OutpostArn](#cfn-route53resolver-outpostresolver-outpostarn): {{String}}
+  [PreferredInstanceType](#cfn-route53resolver-outpostresolver-preferredinstancetype): {{String}}
+  [Tags](#cfn-route53resolver-outpostresolver-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-route53resolver-outpostresolver-properties"></a>
 
-`InstanceCount`
-
+`InstanceCount`  <a name="cfn-route53resolver-outpostresolver-instancecount"></a>
 Amazon EC2 instance count for the Resolver on the Outpost.
+*Required*: No
+*Type*: Integer
+*Minimum*: `4`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `4`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-route53resolver-outpostresolver-name"></a>
 Name of the Resolver.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutpostArn`
-
+`OutpostArn`  <a name="cfn-route53resolver-outpostresolver-outpostarn"></a>
 The ARN (Amazon Resource Name) for the Outpost.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`PreferredInstanceType`  <a name="cfn-route53resolver-outpostresolver-preferredinstancetype"></a>
+ The Amazon EC2 instance type. If you specify this, you must also specify a value for the `OutpostArn`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PreferredInstanceType`
-
-The Amazon EC2 instance type. If you specify this, you must also specify a value for the `OutpostArn`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-route53resolver-outpostresolver-tags"></a>
 A key value pair that helps you identify a Route 53 Resolver.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-route53resolver-outpostresolver-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-route53resolver-outpostresolver-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53resolver-outpostresolver-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53resolver-outpostresolver-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns returns the `Id` of the Outpost Resolver.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53resolver-outpostresolver-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-route53resolver-outpostresolver-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN (Amazon Resource Name) for the Resolver on an Outpost.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The date and time that the Outpost Resolver was created, in Unix time format and Coordinated Universal Time (UTC).
 
-`CreatorRequestId`
+`CreatorRequestId`  <a name="CreatorRequestId-fn::getatt"></a>
+A unique string that identifies the request that created the Resolver endpoint. The `CreatorRequestId` allows failed requests to be retried without the risk of running the operation twice.
 
-A unique string that identifies the request that created the Resolver endpoint.
-The `CreatorRequestId` allows failed requests to be retried without the risk of running the operation twice.
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the Resolver on Outpost.
 
-`ModificationTime`
-
+`ModificationTime`  <a name="ModificationTime-fn::getatt"></a>
 The date and time that the Outpost Resolver was modified, in Unix time format and Coordinated Universal Time (UTC).
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 Status of the Resolver.
-
 Valid Values: CREATING \| OPERATIONAL \| UPDATING \| DELETING \| ACTION\_NEEDED \| FAILED\_CREATION \| FAILED\_DELETION.
 
-`StatusMessage`
-
+`StatusMessage`  <a name="StatusMessage-fn::getatt"></a>
 A detailed description of the Resolver.
 
 ## Examples
+<a name="aws-resource-route53resolver-outpostresolver--examples"></a>
 
 ### Create a Resolver on Outpost
+<a name="aws-resource-route53resolver-outpostresolver--examples--Create_a_Resolver_on_Outpost"></a>
 
 The following example creates a Amazon Route 53 Resolver on an AWS Outposts.
 
 #### JSON
+<a name="aws-resource-route53resolver-outpostresolver--examples--Create_a_Resolver_on_Outpost--json"></a>
 
-```json
-
+```
 {
 "Type": "AWS::Route53Resolver::OutpostResolver",
 "Properties": {
@@ -191,9 +161,9 @@ The following example creates a Amazon Route 53 Resolver on an AWS Outposts.
 ```
 
 #### YAML
+<a name="aws-resource-route53resolver-outpostresolver--examples--Create_a_Resolver_on_Outpost--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Resolver::OutpostResolver
 Properties:
   Name: SampleOutpostResolver
@@ -206,11 +176,5 @@ Properties:
     - Key: "keyname2"
       Value: "value2"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

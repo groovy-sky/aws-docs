@@ -2,72 +2,53 @@
 title: "AWS::SageMaker::Domain DockerSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain DockerSettings
+<a name="aws-properties-sagemaker-domain-dockersettings"></a>
 
 A collection of settings that configure the domain's Docker interaction.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-dockersettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-dockersettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableDockerAccess" : String,
-  "VpcOnlyTrustedAccounts" : [ String, ... ]
+  "[EnableDockerAccess](#cfn-sagemaker-domain-dockersettings-enabledockeraccess)" : {{String}},
+  "[VpcOnlyTrustedAccounts](#cfn-sagemaker-domain-dockersettings-vpconlytrustedaccounts)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-dockersettings-syntax.yaml"></a>
 
-```yaml
-
-  EnableDockerAccess: String
-  VpcOnlyTrustedAccounts:
-    - String
-
+```
+  [EnableDockerAccess](#cfn-sagemaker-domain-dockersettings-enabledockeraccess): {{String}}
+  [VpcOnlyTrustedAccounts](#cfn-sagemaker-domain-dockersettings-vpconlytrustedaccounts): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-dockersettings-properties"></a>
 
-`EnableDockerAccess`
-
+`EnableDockerAccess`  <a name="cfn-sagemaker-domain-dockersettings-enabledockeraccess"></a>
 Indicates whether the domain can access Docker.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcOnlyTrustedAccounts`
-
-The list of AWS accounts that are trusted when the domain is created in
-VPC-only mode.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `12 | 0`
-
-_Maximum_: `12 | 20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultSpaceStorageSettings
-
-DomainSettings
+`VpcOnlyTrustedAccounts`  <a name="cfn-sagemaker-domain-dockersettings-vpconlytrustedaccounts"></a>
+The list of AWS accounts that are trusted when the domain is created in VPC-only mode.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `12 | 0`
+*Maximum*: `12 | 20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

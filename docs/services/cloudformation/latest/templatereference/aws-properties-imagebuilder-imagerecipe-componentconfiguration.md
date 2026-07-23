@@ -2,70 +2,52 @@
 title: "AWS::ImageBuilder::ImageRecipe ComponentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImageRecipe ComponentConfiguration
+<a name="aws-properties-imagebuilder-imagerecipe-componentconfiguration"></a>
 
 Configuration details of the component.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-imagerecipe-componentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-imagerecipe-componentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComponentArn" : String,
-  "Parameters" : [ ComponentParameter, ... ]
+  "[ComponentArn](#cfn-imagebuilder-imagerecipe-componentconfiguration-componentarn)" : {{String}},
+  "[Parameters](#cfn-imagebuilder-imagerecipe-componentconfiguration-parameters)" : {{[ ComponentParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-imagerecipe-componentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ComponentArn: String
-  Parameters:
-    - ComponentParameter
-
+```
+  [ComponentArn](#cfn-imagebuilder-imagerecipe-componentconfiguration-componentarn): {{String}}
+  [Parameters](#cfn-imagebuilder-imagerecipe-componentconfiguration-parameters): {{
+    - ComponentParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-imagerecipe-componentconfiguration-properties"></a>
 
-`ComponentArn`
-
+`ComponentArn`  <a name="cfn-imagebuilder-imagerecipe-componentconfiguration-componentarn"></a>
 The Amazon Resource Name (ARN) of the component.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/(?:(?:([0-9]+|x)\.([0-9]+|x)\.([0-9]+|x))|(?:[0-9]+\.[0-9]+\.[0-9]+/[0-9]+))$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/(?:(?:([0-9]+|x)\.([0-9]+|x)\.([0-9]+|x))|(?:[0-9]+\.[0-9]+\.[0-9]+/[0-9]+))$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Parameters`
-
-A group of parameter settings that Image Builder uses to configure the component for a specific
-recipe.
-
-_Required_: No
-
-_Type_: Array of [ComponentParameter](aws-properties-imagebuilder-imagerecipe-componentparameter.md)
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdditionalInstanceConfiguration
-
-ComponentParameter
+`Parameters`  <a name="cfn-imagebuilder-imagerecipe-componentconfiguration-parameters"></a>
+A group of parameter settings that Image Builder uses to configure the component for a specific recipe.
+*Required*: No
+*Type*: Array of [ComponentParameter](aws-properties-imagebuilder-imagerecipe-componentparameter.md)
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

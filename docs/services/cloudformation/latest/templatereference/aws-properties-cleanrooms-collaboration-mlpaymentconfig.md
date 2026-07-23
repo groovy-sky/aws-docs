@@ -2,80 +2,60 @@
 title: "AWS::CleanRooms::Collaboration MLPaymentConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Collaboration MLPaymentConfig
+<a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig"></a>
 
-An object representing the collaboration member's machine learning payment responsibilities set by the
-collaboration creator.
+An object representing the collaboration member's machine learning payment responsibilities set by the collaboration creator.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ModelInference" : ModelInferencePaymentConfig,
-  "ModelTraining" : ModelTrainingPaymentConfig,
-  "SyntheticDataGeneration" : SyntheticDataGenerationPaymentConfig
+  "[ModelInference](#cfn-cleanrooms-collaboration-mlpaymentconfig-modelinference)" : {{ModelInferencePaymentConfig}},
+  "[ModelTraining](#cfn-cleanrooms-collaboration-mlpaymentconfig-modeltraining)" : {{ModelTrainingPaymentConfig}},
+  "[SyntheticDataGeneration](#cfn-cleanrooms-collaboration-mlpaymentconfig-syntheticdatageneration)" : {{SyntheticDataGenerationPaymentConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig-syntax.yaml"></a>
 
-```yaml
-
-  ModelInference:
-    ModelInferencePaymentConfig
-  ModelTraining:
-    ModelTrainingPaymentConfig
-  SyntheticDataGeneration:
-    SyntheticDataGenerationPaymentConfig
-
+```
+  [ModelInference](#cfn-cleanrooms-collaboration-mlpaymentconfig-modelinference): {{
+    ModelInferencePaymentConfig}}
+  [ModelTraining](#cfn-cleanrooms-collaboration-mlpaymentconfig-modeltraining): {{
+    ModelTrainingPaymentConfig}}
+  [SyntheticDataGeneration](#cfn-cleanrooms-collaboration-mlpaymentconfig-syntheticdatageneration): {{
+    SyntheticDataGenerationPaymentConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig-properties"></a>
 
-`ModelInference`
-
+`ModelInference`  <a name="cfn-cleanrooms-collaboration-mlpaymentconfig-modelinference"></a>
 The payment responsibilities accepted by the member for model inference.
+*Required*: No
+*Type*: [ModelInferencePaymentConfig](aws-properties-cleanrooms-collaboration-modelinferencepaymentconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ModelInferencePaymentConfig](aws-properties-cleanrooms-collaboration-modelinferencepaymentconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelTraining`
-
+`ModelTraining`  <a name="cfn-cleanrooms-collaboration-mlpaymentconfig-modeltraining"></a>
 The payment responsibilities accepted by the member for model training.
+*Required*: No
+*Type*: [ModelTrainingPaymentConfig](aws-properties-cleanrooms-collaboration-modeltrainingpaymentconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ModelTrainingPaymentConfig](aws-properties-cleanrooms-collaboration-modeltrainingpaymentconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SyntheticDataGeneration`
-
+`SyntheticDataGeneration`  <a name="cfn-cleanrooms-collaboration-mlpaymentconfig-syntheticdatageneration"></a>
 The payment configuration for machine learning synthetic data generation.
-
-_Required_: No
-
-_Type_: [SyntheticDataGenerationPaymentConfig](aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MLMemberAbilities
-
-ModelInferencePaymentConfig
+*Required*: No
+*Type*: [SyntheticDataGenerationPaymentConfig](aws-properties-cleanrooms-collaboration-syntheticdatagenerationpaymentconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

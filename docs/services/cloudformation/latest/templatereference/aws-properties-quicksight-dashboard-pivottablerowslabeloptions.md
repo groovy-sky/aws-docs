@@ -2,70 +2,52 @@
 title: "AWS::QuickSight::Dashboard PivotTableRowsLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard PivotTableRowsLabelOptions
+<a name="aws-properties-quicksight-dashboard-pivottablerowslabeloptions"></a>
 
 The options for the label thta is located above the row headers. This option is only applicable when `RowsLayout` is set to `HIERARCHY`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-pivottablerowslabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-pivottablerowslabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomLabel" : String,
-  "Visibility" : String
+  "[CustomLabel](#cfn-quicksight-dashboard-pivottablerowslabeloptions-customlabel)" : {{String}},
+  "[Visibility](#cfn-quicksight-dashboard-pivottablerowslabeloptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-pivottablerowslabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  CustomLabel: String
-  Visibility: String
-
+```
+  [CustomLabel](#cfn-quicksight-dashboard-pivottablerowslabeloptions-customlabel): {{String}}
+  [Visibility](#cfn-quicksight-dashboard-pivottablerowslabeloptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-pivottablerowslabeloptions-properties"></a>
 
-`CustomLabel`
-
+`CustomLabel`  <a name="cfn-quicksight-dashboard-pivottablerowslabeloptions-customlabel"></a>
 The custom label string for the rows label.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-dashboard-pivottablerowslabeloptions-visibility"></a>
 The visibility of the rows label.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTablePaginatedReportOptions
-
-PivotTableSortBy
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

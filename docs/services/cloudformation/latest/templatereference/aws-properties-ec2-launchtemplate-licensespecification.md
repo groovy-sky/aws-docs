@@ -2,61 +2,48 @@
 title: "AWS::EC2::LaunchTemplate LicenseSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate LicenseSpecification
+<a name="aws-properties-ec2-launchtemplate-licensespecification"></a>
 
 Specifies a license configuration for an instance.
 
-`LicenseSpecification` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md).
+`LicenseSpecification` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-licensespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-licensespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "LicenseConfigurationArn" : String
+  "[LicenseConfigurationArn](#cfn-ec2-launchtemplate-licensespecification-licenseconfigurationarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-licensespecification-syntax.yaml"></a>
 
-```yaml
-
-  LicenseConfigurationArn: String
-
+```
+  [LicenseConfigurationArn](#cfn-ec2-launchtemplate-licensespecification-licenseconfigurationarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-licensespecification-properties"></a>
 
-`LicenseConfigurationArn`
-
+`LicenseConfigurationArn`  <a name="cfn-ec2-launchtemplate-licensespecification-licenseconfigurationarn"></a>
 The Amazon Resource Name (ARN) of the license configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [LaunchTemplateLicenseConfigurationRequest](../../../../reference/awsec2/latest/apireference/api-launchtemplatelicenseconfigurationrequest.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Create a launch template using advanced settings](../../../autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.md) in the _Amazon EC2 Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplateTagSpecification
-
-MaintenanceOptions
+<a name="aws-properties-ec2-launchtemplate-licensespecification--seealso"></a>
++ [ LaunchTemplateLicenseConfigurationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateLicenseConfigurationRequest.html) in the *Amazon EC2 API Reference*
++ [ Create a launch template using advanced settings](https://docs.aws.amazon.com/autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.html) in the *Amazon EC2 Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

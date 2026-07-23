@@ -2,93 +2,65 @@
 title: "AWS::IoTFleetWise::Campaign DataPartition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign DataPartition
+<a name="aws-properties-iotfleetwise-campaign-datapartition"></a>
 
-The configuration for signal data storage and upload options. You can only specify these
-options when the campaign's spooling mode is `TO_DISK`.
+The configuration for signal data storage and upload options. You can only specify these options when the campaign's spooling mode is `TO_DISK`.
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-campaign-datapartition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-campaign-datapartition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : String,
-  "StorageOptions" : DataPartitionStorageOptions,
-  "UploadOptions" : DataPartitionUploadOptions
+  "[Id](#cfn-iotfleetwise-campaign-datapartition-id)" : {{String}},
+  "[StorageOptions](#cfn-iotfleetwise-campaign-datapartition-storageoptions)" : {{DataPartitionStorageOptions}},
+  "[UploadOptions](#cfn-iotfleetwise-campaign-datapartition-uploadoptions)" : {{DataPartitionUploadOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-campaign-datapartition-syntax.yaml"></a>
 
-```yaml
-
-  Id: String
-  StorageOptions:
-    DataPartitionStorageOptions
-  UploadOptions:
-    DataPartitionUploadOptions
-
+```
+  [Id](#cfn-iotfleetwise-campaign-datapartition-id): {{String}}
+  [StorageOptions](#cfn-iotfleetwise-campaign-datapartition-storageoptions): {{
+    DataPartitionStorageOptions}}
+  [UploadOptions](#cfn-iotfleetwise-campaign-datapartition-uploadoptions): {{
+    DataPartitionUploadOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-campaign-datapartition-properties"></a>
 
-`Id`
+`Id`  <a name="cfn-iotfleetwise-campaign-datapartition-id"></a>
+The ID of the data partition. The data partition ID must be unique within a campaign. You can establish a data partition as the default partition for a campaign by using `default` as the ID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ID of the data partition. The data partition ID must be unique within a campaign.
-You can establish a data partition as the default partition for a campaign by using
-`default` as the ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StorageOptions`
-
+`StorageOptions`  <a name="cfn-iotfleetwise-campaign-datapartition-storageoptions"></a>
 The storage options for a data partition.
+*Required*: Yes
+*Type*: [DataPartitionStorageOptions](aws-properties-iotfleetwise-campaign-datapartitionstorageoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [DataPartitionStorageOptions](aws-properties-iotfleetwise-campaign-datapartitionstorageoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UploadOptions`
-
+`UploadOptions`  <a name="cfn-iotfleetwise-campaign-datapartition-uploadoptions"></a>
 The upload options for the data partition.
-
-_Required_: No
-
-_Type_: [DataPartitionUploadOptions](aws-properties-iotfleetwise-campaign-datapartitionuploadoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataDestinationConfig
-
-DataPartitionStorageOptions
+*Required*: No
+*Type*: [DataPartitionUploadOptions](aws-properties-iotfleetwise-campaign-datapartitionuploadoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

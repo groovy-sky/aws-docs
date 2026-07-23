@@ -2,54 +2,42 @@
 title: "AWS::MSK::Replicator AmazonMskCluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator AmazonMskCluster
+<a name="aws-properties-msk-replicator-amazonmskcluster"></a>
 
 Details of an Amazon MSK Cluster.
 
 ## Syntax
+<a name="aws-properties-msk-replicator-amazonmskcluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-replicator-amazonmskcluster-syntax.json"></a>
 
-```json
-
+```
 {
-  "MskClusterArn" : String
+  "[MskClusterArn](#cfn-msk-replicator-amazonmskcluster-mskclusterarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-replicator-amazonmskcluster-syntax.yaml"></a>
 
-```yaml
-
-  MskClusterArn: String
-
+```
+  [MskClusterArn](#cfn-msk-replicator-amazonmskcluster-mskclusterarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-replicator-amazonmskcluster-properties"></a>
 
-`MskClusterArn`
-
+`MskClusterArn`  <a name="cfn-msk-replicator-amazonmskcluster-mskclusterarn"></a>
 The Amazon Resource Name (ARN) of an Amazon MSK cluster.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn):kafka:.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MSK::Replicator
-
-ConsumerGroupReplication
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafka:.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

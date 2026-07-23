@@ -2,66 +2,51 @@
 title: "AWS::IoTSiteWise::AccessPolicy AccessPolicyResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AccessPolicy AccessPolicyResource
+<a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource"></a>
 
 The AWS IoT SiteWise Monitor resource for this access policy. Choose either a portal or a project.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "Portal" : Portal,
-  "Project" : Project
+  "[Portal](#cfn-iotsitewise-accesspolicy-accesspolicyresource-portal)" : {{Portal}},
+  "[Project](#cfn-iotsitewise-accesspolicy-accesspolicyresource-project)" : {{Project}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource-syntax.yaml"></a>
 
-```yaml
-
-  Portal:
-    Portal
-  Project:
-    Project
-
+```
+  [Portal](#cfn-iotsitewise-accesspolicy-accesspolicyresource-portal): {{
+    Portal}}
+  [Project](#cfn-iotsitewise-accesspolicy-accesspolicyresource-project): {{
+    Project}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource-properties"></a>
 
-`Portal`
-
+`Portal`  <a name="cfn-iotsitewise-accesspolicy-accesspolicyresource-portal"></a>
 Identifies an AWS IoT SiteWise Monitor portal.
+*Required*: No
+*Type*: [Portal](aws-properties-iotsitewise-accesspolicy-portal.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Portal](aws-properties-iotsitewise-accesspolicy-portal.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Project`
-
+`Project`  <a name="cfn-iotsitewise-accesspolicy-accesspolicyresource-project"></a>
 Identifies a specific AWS IoT SiteWise Monitor project.
-
-_Required_: No
-
-_Type_: [Project](aws-properties-iotsitewise-accesspolicy-project.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessPolicyIdentity
-
-IamRole
+*Required*: No
+*Type*: [Project](aws-properties-iotsitewise-accesspolicy-project.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

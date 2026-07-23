@@ -2,216 +2,166 @@
 title: "AWS::CodeArtifact::Repository"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeArtifact::Repository
+<a name="aws-resource-codeartifact-repository"></a>
 
-The `AWS::CodeArtifact::Repository` resource creates an AWS CodeArtifact repository.
-CodeArtifact _repositories_ contain a set of package versions.
-For more information about repositories, see the
-[Repository concepts information](../../../codeartifact/latest/ug/codeartifact-concepts.md#welcome-concepts-repository)
-in the _CodeArtifact User Guide_. For more information about the `CreateRepository` API, see
-[CreateRepository](../../../../reference/codeartifact/latest/apireference/api-createrepository.md)
-in the _CodeArtifact API Reference_.
+The `AWS::CodeArtifact::Repository` resource creates an AWS CodeArtifact repository. CodeArtifact*repositories* contain a set of package versions. For more information about repositories, see the [Repository concepts information](https://docs.aws.amazon.com/codeartifact/latest/ug/codeartifact-concepts.html#welcome-concepts-repository) in the *CodeArtifact User Guide*. For more information about the `CreateRepository` API, see [CreateRepository](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_CreateRepository.html) in the *CodeArtifact API Reference*.
 
 ## Syntax
+<a name="aws-resource-codeartifact-repository-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codeartifact-repository-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeArtifact::Repository",
   "Properties" : {
-      "Description" : String,
-      "DomainName" : String,
-      "DomainOwner" : String,
-      "ExternalConnections" : [ String, ... ],
-      "PermissionsPolicyDocument" : Json,
-      "RepositoryName" : String,
-      "Tags" : [ Tag, ... ],
-      "Upstreams" : [ String, ... ]
+      "[Description](#cfn-codeartifact-repository-description)" : {{String}},
+      "[DomainName](#cfn-codeartifact-repository-domainname)" : {{String}},
+      "[DomainOwner](#cfn-codeartifact-repository-domainowner)" : {{String}},
+      "[ExternalConnections](#cfn-codeartifact-repository-externalconnections)" : {{[ String, ... ]}},
+      "[PermissionsPolicyDocument](#cfn-codeartifact-repository-permissionspolicydocument)" : {{Json}},
+      "[RepositoryName](#cfn-codeartifact-repository-repositoryname)" : {{String}},
+      "[Tags](#cfn-codeartifact-repository-tags)" : {{[ Tag, ... ]}},
+      "[Upstreams](#cfn-codeartifact-repository-upstreams)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codeartifact-repository-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeArtifact::Repository
 Properties:
-  Description: String
-  DomainName: String
-  DomainOwner: String
-  ExternalConnections:
-    - String
-  PermissionsPolicyDocument: Json
-  RepositoryName: String
-  Tags:
-    - Tag
-  Upstreams:
-    - String
-
+  [Description](#cfn-codeartifact-repository-description): {{String}}
+  [DomainName](#cfn-codeartifact-repository-domainname): {{String}}
+  [DomainOwner](#cfn-codeartifact-repository-domainowner): {{String}}
+  [ExternalConnections](#cfn-codeartifact-repository-externalconnections): {{
+    - String}}
+  [PermissionsPolicyDocument](#cfn-codeartifact-repository-permissionspolicydocument): {{Json}}
+  [RepositoryName](#cfn-codeartifact-repository-repositoryname): {{String}}
+  [Tags](#cfn-codeartifact-repository-tags): {{
+    - Tag}}
+  [Upstreams](#cfn-codeartifact-repository-upstreams): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-codeartifact-repository-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-codeartifact-repository-description"></a>
+ A text description of the repository.
+*Required*: No
+*Type*: String
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A text description of the repository.
+`DomainName`  <a name="cfn-codeartifact-repository-domainname"></a>
+ The name of the domain that contains the repository.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([a-z][a-z0-9\-]{0,48}[a-z0-9])$`
+*Minimum*: `2`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`DomainOwner`  <a name="cfn-codeartifact-repository-domainowner"></a>
+ The 12-digit account number of the AWS account that owns the domain that contains the repository. It does not include dashes or spaces.
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9]{12}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`ExternalConnections`  <a name="cfn-codeartifact-repository-externalconnections"></a>
+ An array of external connections associated with the repository. For more information, see [Supported external connection repositories](https://docs.aws.amazon.com/codeartifact/latest/ug/external-connection.html#supported-public-repositories) in the *CodeArtifact user guide*.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
-The name of the domain that contains the repository.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([a-z][a-z0-9\-]{0,48}[a-z0-9])$`
-
-_Minimum_: `2`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DomainOwner`
-
-The 12-digit account number of the AWS account that owns the domain that contains the repository. It does not include
-dashes or spaces.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9]{12}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ExternalConnections`
-
-An array of external connections associated with the repository. For more information, see [Supported external connection repositories](../../../codeartifact/latest/ug/external-connection.md#supported-public-repositories) in the _CodeArtifact user guide_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PermissionsPolicyDocument`
-
+`PermissionsPolicyDocument`  <a name="cfn-codeartifact-repository-permissionspolicydocument"></a>
 The document that defines the resource policy that is set on a repository.
+*Required*: No
+*Type*: Json
+*Minimum*: `2`
+*Maximum*: `5120`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RepositoryName`  <a name="cfn-codeartifact-repository-repositoryname"></a>
+ The name of an upstream repository.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([A-Za-z0-9][A-Za-z0-9._\-]{1,99})$`
+*Minimum*: `2`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Json
-
-_Minimum_: `2`
-
-_Maximum_: `5120`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RepositoryName`
-
-The name of an upstream repository.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([A-Za-z0-9][A-Za-z0-9._\-]{1,99})$`
-
-_Minimum_: `2`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-codeartifact-repository-tags"></a>
 A list of tags to be applied to the repository.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codeartifact-repository-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codeartifact-repository-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Upstreams`
-
-A list of upstream repositories to associate with the repository. The order of the upstream repositories
-in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more
-information, see [Working with upstream repositories](../../../codeartifact/latest/ug/repos-upstream.md).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Upstreams`  <a name="cfn-codeartifact-repository-upstreams"></a>
+ A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more information, see [Working with upstream repositories](https://docs.aws.amazon.com/codeartifact/latest/ug/repos-upstream.html).
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codeartifact-repository-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codeartifact-repository-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource arn.
 
 ### Fn::GetAtt
+<a name="aws-resource-codeartifact-repository-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-codeartifact-repository-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the Amazon Resource Name (ARN) of the repository.
 
-`DomainName`
-
+`DomainName`  <a name="DomainName-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the domain name that contains the repository.
 
-`DomainOwner`
-
+`DomainOwner`  <a name="DomainOwner-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the 12-digit account number of the AWS account that owns the domain that contains the repository.
 
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the name of the repository.
 
 ## Examples
+<a name="aws-resource-codeartifact-repository--examples"></a>
 
 The following examples can help you create CodeArtifact repositories using CloudFormation.
 
-- [Create a domain and repository](#aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository)
-
-- [Create a repository with an upstream repository and external connection](#aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection)
-
-- [Create a domain and repository with tags](#aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags)
+**Topics**
++ [Create a domain and repository](#aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository)
++ [Create a repository with an upstream repository and external connection](#aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection)
++ [Create a domain and repository with tags](#aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags)
 
 ### Create a domain and repository
+<a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository"></a>
 
-The following example creates a CodeArtifact domain named _my-domain_ and a CodeArtifact
-repository named _my-repo_ inside it.
+The following example creates a CodeArtifact domain named *my-domain* and a CodeArtifact repository named *my-repo* inside it.
 
 #### YAML
+<a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -225,9 +175,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -253,17 +203,14 @@ Resources:
 ```
 
 ### Create a repository with an upstream repository and external connection
+<a name="aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection"></a>
 
-The following example creates a CodeArtifact domain named _my-domain_ to store repositories. It also
-creates two CodeArtifact repositories: _my-repo_ and _my-upstream-repo_
-within the domain. _my-repo_ has _my-upstream-repo_ configured as an upstream
-repository, and _my-upstream-repo_ has an external connection to the public repository,
-**npmjs**.
+The following example creates a CodeArtifact domain named *my-domain* to store repositories. It also creates two CodeArtifact repositories: *my-repo* and *my-upstream-repo* within the domain. *my-repo* has *my-upstream-repo* configured as an upstream repository, and *my-upstream-repo* has an external connection to the public repository, **npmjs**.
 
 #### YAML
+<a name="aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -286,9 +233,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -337,16 +284,14 @@ Resources:
 ```
 
 ### Create a domain and repository with tags
+<a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags"></a>
 
-The following example creates a CodeArtifact domain named _my-domain_ and a CodeArtifact
-repository named _my-repo_ inside it with two tags. One tag consists of a key
-named `keyname1` and a value of `value1`. The other
-consists of a key named `keyname2` and a value of `value2`.
+The following example creates a CodeArtifact domain named *my-domain* and a CodeArtifact repository named *my-repo* inside it with two tags. One tag consists of a key named `keyname1` and a value of `value1`. The other consists of a key named `keyname2` and a value of `value2`.
 
 #### YAML
+<a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -365,9 +310,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -401,11 +346,5 @@ Resources:
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

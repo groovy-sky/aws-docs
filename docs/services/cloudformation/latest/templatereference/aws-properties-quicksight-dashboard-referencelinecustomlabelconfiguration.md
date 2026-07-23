@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Dashboard ReferenceLineCustomLabelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ReferenceLineCustomLabelConfiguration
+<a name="aws-properties-quicksight-dashboard-referencelinecustomlabelconfiguration"></a>
 
 The configuration for a custom label on a `ReferenceLine`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-referencelinecustomlabelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-referencelinecustomlabelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomLabel" : String
+  "[CustomLabel](#cfn-quicksight-dashboard-referencelinecustomlabelconfiguration-customlabel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-referencelinecustomlabelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomLabel: String
-
+```
+  [CustomLabel](#cfn-quicksight-dashboard-referencelinecustomlabelconfiguration-customlabel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-referencelinecustomlabelconfiguration-properties"></a>
 
-`CustomLabel`
-
+`CustomLabel`  <a name="cfn-quicksight-dashboard-referencelinecustomlabelconfiguration-customlabel"></a>
 The string text of the custom label.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReferenceLine
-
-ReferenceLineDataConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

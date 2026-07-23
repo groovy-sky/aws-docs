@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template PluginVisualOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PluginVisualOptions
+<a name="aws-properties-quicksight-template-pluginvisualoptions"></a>
 
 The options and persisted properties for the plugin visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pluginvisualoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pluginvisualoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "VisualProperties" : [ PluginVisualProperty, ... ]
+  "[VisualProperties](#cfn-quicksight-template-pluginvisualoptions-visualproperties)" : {{[ PluginVisualProperty, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pluginvisualoptions-syntax.yaml"></a>
 
-```yaml
-
-  VisualProperties:
-    - PluginVisualProperty
-
+```
+  [VisualProperties](#cfn-quicksight-template-pluginvisualoptions-visualproperties): {{
+    - PluginVisualProperty}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pluginvisualoptions-properties"></a>
 
-`VisualProperties`
-
+`VisualProperties`  <a name="cfn-quicksight-template-pluginvisualoptions-visualproperties"></a>
 The persisted properties and their values.
-
-_Required_: No
-
-_Type_: Array of [PluginVisualProperty](aws-properties-quicksight-template-pluginvisualproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginVisualItemsLimitConfiguration
-
-PluginVisualProperty
+*Required*: No
+*Type*: Array of [PluginVisualProperty](aws-properties-quicksight-template-pluginvisualproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,56 +2,43 @@
 title: "AWS::Bedrock::KnowledgeBase AudioSegmentationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase AudioSegmentationConfiguration
+<a name="aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration"></a>
 
 Configuration for segmenting audio content during multimodal knowledge base ingestion. Determines how audio files are divided into chunks for processing.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FixedLengthDuration" : Integer
+  "[FixedLengthDuration](#cfn-bedrock-knowledgebase-audiosegmentationconfiguration-fixedlengthduration)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FixedLengthDuration: Integer
-
+```
+  [FixedLengthDuration](#cfn-bedrock-knowledgebase-audiosegmentationconfiguration-fixedlengthduration): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-audiosegmentationconfiguration-properties"></a>
 
-`FixedLengthDuration`
-
+`FixedLengthDuration`  <a name="cfn-bedrock-knowledgebase-audiosegmentationconfiguration-fixedlengthduration"></a>
 The duration in seconds for each audio segment. Audio files will be divided into chunks of this length for processing.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `30`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AudioConfiguration
-
-BedrockEmbeddingModelConfiguration
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `30`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,183 +2,137 @@
 title: "AWS::Connect::Instance Attributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Instance Attributes
+<a name="aws-properties-connect-instance-attributes"></a>
 
-_This is a preview release for Amazon Connect. It is subject to_
-_change._
+ *This is a preview release for Connect Customer. It is subject to change.*
 
 ## Syntax
+<a name="aws-properties-connect-instance-attributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-instance-attributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoResolveBestVoices" : Boolean,
-  "ContactflowLogs" : Boolean,
-  "ContactLens" : Boolean,
-  "EarlyMedia" : Boolean,
-  "EnhancedChatMonitoring" : Boolean,
-  "EnhancedContactMonitoring" : Boolean,
-  "HighVolumeOutBound" : Boolean,
-  "InboundCalls" : Boolean,
-  "MessageStreaming" : Boolean,
-  "MultiPartyChatConference" : Boolean,
-  "MultiPartyConference" : Boolean,
-  "OutboundCalls" : Boolean,
-  "UseCustomTTSVoices" : Boolean
+  "[AutoResolveBestVoices](#cfn-connect-instance-attributes-autoresolvebestvoices)" : {{Boolean}},
+  "[ContactflowLogs](#cfn-connect-instance-attributes-contactflowlogs)" : {{Boolean}},
+  "[ContactLens](#cfn-connect-instance-attributes-contactlens)" : {{Boolean}},
+  "[EarlyMedia](#cfn-connect-instance-attributes-earlymedia)" : {{Boolean}},
+  "[EnhancedChatMonitoring](#cfn-connect-instance-attributes-enhancedchatmonitoring)" : {{Boolean}},
+  "[EnhancedContactMonitoring](#cfn-connect-instance-attributes-enhancedcontactmonitoring)" : {{Boolean}},
+  "[HighVolumeOutBound](#cfn-connect-instance-attributes-highvolumeoutbound)" : {{Boolean}},
+  "[InboundCalls](#cfn-connect-instance-attributes-inboundcalls)" : {{Boolean}},
+  "[MessageStreaming](#cfn-connect-instance-attributes-messagestreaming)" : {{Boolean}},
+  "[MultiPartyChatConference](#cfn-connect-instance-attributes-multipartychatconference)" : {{Boolean}},
+  "[MultiPartyConference](#cfn-connect-instance-attributes-multipartyconference)" : {{Boolean}},
+  "[OutboundCalls](#cfn-connect-instance-attributes-outboundcalls)" : {{Boolean}},
+  "[UseCustomTTSVoices](#cfn-connect-instance-attributes-usecustomttsvoices)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-instance-attributes-syntax.yaml"></a>
 
-```yaml
-
-  AutoResolveBestVoices: Boolean
-  ContactflowLogs: Boolean
-  ContactLens: Boolean
-  EarlyMedia: Boolean
-  EnhancedChatMonitoring: Boolean
-  EnhancedContactMonitoring: Boolean
-  HighVolumeOutBound: Boolean
-  InboundCalls: Boolean
-  MessageStreaming: Boolean
-  MultiPartyChatConference: Boolean
-  MultiPartyConference: Boolean
-  OutboundCalls: Boolean
-  UseCustomTTSVoices: Boolean
-
+```
+  [AutoResolveBestVoices](#cfn-connect-instance-attributes-autoresolvebestvoices): {{Boolean}}
+  [ContactflowLogs](#cfn-connect-instance-attributes-contactflowlogs): {{Boolean}}
+  [ContactLens](#cfn-connect-instance-attributes-contactlens): {{Boolean}}
+  [EarlyMedia](#cfn-connect-instance-attributes-earlymedia): {{Boolean}}
+  [EnhancedChatMonitoring](#cfn-connect-instance-attributes-enhancedchatmonitoring): {{Boolean}}
+  [EnhancedContactMonitoring](#cfn-connect-instance-attributes-enhancedcontactmonitoring): {{Boolean}}
+  [HighVolumeOutBound](#cfn-connect-instance-attributes-highvolumeoutbound): {{Boolean}}
+  [InboundCalls](#cfn-connect-instance-attributes-inboundcalls): {{Boolean}}
+  [MessageStreaming](#cfn-connect-instance-attributes-messagestreaming): {{Boolean}}
+  [MultiPartyChatConference](#cfn-connect-instance-attributes-multipartychatconference): {{Boolean}}
+  [MultiPartyConference](#cfn-connect-instance-attributes-multipartyconference): {{Boolean}}
+  [OutboundCalls](#cfn-connect-instance-attributes-outboundcalls): {{Boolean}}
+  [UseCustomTTSVoices](#cfn-connect-instance-attributes-usecustomttsvoices): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-instance-attributes-properties"></a>
 
-`AutoResolveBestVoices`
+`AutoResolveBestVoices`  <a name="cfn-connect-instance-attributes-autoresolvebestvoices"></a>
 
-_Required_: No
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`ContactflowLogs`  <a name="cfn-connect-instance-attributes-contactflowlogs"></a>
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ContactflowLogs`
+`ContactLens`  <a name="cfn-connect-instance-attributes-contactlens"></a>
 
-_Required_: No
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`EarlyMedia`  <a name="cfn-connect-instance-attributes-earlymedia"></a>
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ContactLens`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EarlyMedia`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnhancedChatMonitoring`
-
+`EnhancedChatMonitoring`  <a name="cfn-connect-instance-attributes-enhancedchatmonitoring"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnhancedContactMonitoring`
-
+`EnhancedContactMonitoring`  <a name="cfn-connect-instance-attributes-enhancedcontactmonitoring"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HighVolumeOutBound`
-
+`HighVolumeOutBound`  <a name="cfn-connect-instance-attributes-highvolumeoutbound"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InboundCalls`  <a name="cfn-connect-instance-attributes-inboundcalls"></a>
 
-_Type_: Boolean
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InboundCalls`
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MessageStreaming`
-
+`MessageStreaming`  <a name="cfn-connect-instance-attributes-messagestreaming"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MultiPartyChatConference`
-
+`MultiPartyChatConference`  <a name="cfn-connect-instance-attributes-multipartychatconference"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MultiPartyConference`
-
+`MultiPartyConference`  <a name="cfn-connect-instance-attributes-multipartyconference"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OutboundCalls`  <a name="cfn-connect-instance-attributes-outboundcalls"></a>
 
-_Type_: Boolean
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`UseCustomTTSVoices`  <a name="cfn-connect-instance-attributes-usecustomttsvoices"></a>
 
-`OutboundCalls`
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseCustomTTSVoices`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::Instance
-
-Tag
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

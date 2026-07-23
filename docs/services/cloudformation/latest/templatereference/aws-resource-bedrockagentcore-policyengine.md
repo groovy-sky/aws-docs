@@ -2,156 +2,124 @@
 title: "AWS::BedrockAgentCore::PolicyEngine"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::PolicyEngine
+<a name="aws-resource-bedrockagentcore-policyengine"></a>
 
 Specifies a policy engine for Amazon Bedrock AgentCore. A policy engine provides Cedar-based authorization to control what actions your AI agents can perform.
 
-For more information, see [Control agent actions with Amazon Bedrock AgentCore policy engines](../../../bedrock-agentcore/latest/devguide/policy-engine.md).
+For more information, see [Control agent actions with Amazon Bedrock AgentCore policy engines](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy-engine.html).
 
 See the **Properties** section below for descriptions of both the required and optional properties.
 
 ## Syntax
+<a name="aws-resource-bedrockagentcore-policyengine-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrockagentcore-policyengine-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BedrockAgentCore::PolicyEngine",
   "Properties" : {
-      "Description" : String,
-      "EncryptionKeyArn" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-bedrockagentcore-policyengine-description)" : {{String}},
+      "[EncryptionKeyArn](#cfn-bedrockagentcore-policyengine-encryptionkeyarn)" : {{String}},
+      "[Name](#cfn-bedrockagentcore-policyengine-name)" : {{String}},
+      "[Tags](#cfn-bedrockagentcore-policyengine-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrockagentcore-policyengine-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BedrockAgentCore::PolicyEngine
 Properties:
-  Description: String
-  EncryptionKeyArn: String
-  Name: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-bedrockagentcore-policyengine-description): {{String}}
+  [EncryptionKeyArn](#cfn-bedrockagentcore-policyengine-encryptionkeyarn): {{String}}
+  [Name](#cfn-bedrockagentcore-policyengine-name): {{String}}
+  [Tags](#cfn-bedrockagentcore-policyengine-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrockagentcore-policyengine-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrockagentcore-policyengine-description"></a>
 A human-readable description of the policy engine's purpose and scope. Limited to 4,096 characters, this helps administrators understand the policy engine's role in the overall governance strategy.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionKeyArn`
-
+`EncryptionKeyArn`  <a name="cfn-bedrockagentcore-policyengine-encryptionkeyarn"></a>
 The ARN of the KMS key used to encrypt the policy engine data.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-bedrockagentcore-policyengine-name"></a>
 The customer-assigned immutable name for the policy engine. This human-readable identifier must be unique within the account and cannot exceed 48 characters.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z][A-Za-z0-9_]*$`
+*Minimum*: `1`
+*Maximum*: `48`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z][A-Za-z0-9_]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `48`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrockagentcore-policyengine-tags"></a>
 The tags for the policy engine.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrockagentcore-policyengine-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrockagentcore-policyengine-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrockagentcore-policyengine-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrockagentcore-policyengine-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the policy engine. For example:
 
-`arn:aws:bedrock-agentcore:us-east-1:123456789012:policy-engine/MyPolicyEngine-a1b2c3d4e5`
+ `arn:aws:bedrock-agentcore:us-east-1:123456789012:policy-engine/MyPolicyEngine-a1b2c3d4e5`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrockagentcore-policyengine-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrockagentcore-policyengine-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the policy engine was created.
 
-`PolicyEngineArn`
-
+`PolicyEngineArn`  <a name="PolicyEngineArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the policy engine.
 
-`PolicyEngineId`
-
+`PolicyEngineId`  <a name="PolicyEngineId-fn::getatt"></a>
 The unique identifier of the policy engine.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the policy engine.
 
-`StatusReasons`
-
+`StatusReasons`  <a name="StatusReasons-fn::getatt"></a>
 Additional information about the current status of the policy engine.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the policy engine was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyDefinition
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

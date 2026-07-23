@@ -2,166 +2,113 @@
 title: "AWS::PCAConnectorAD::Template SubjectNameFlagsV4"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template SubjectNameFlagsV4
+<a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4"></a>
 
-Information to include in the subject name and alternate subject name of the
-certificate. The subject name can be common name, directory path, DNS as common name, or
-left blank. You can optionally include email to the subject name for user templates. If you
-leave the subject name blank then you must set a subject alternate name. The subject
-alternate name (SAN) can include globally unique identifier (GUID), DNS, domain DNS, email,
-service principal name (SPN), and user principal name (UPN). You can leave the SAN blank.
-If you leave the SAN blank, then you must set a subject name.
+Information to include in the subject name and alternate subject name of the certificate. The subject name can be common name, directory path, DNS as common name, or left blank. You can optionally include email to the subject name for user templates. If you leave the subject name blank then you must set a subject alternate name. The subject alternate name (SAN) can include globally unique identifier (GUID), DNS, domain DNS, email, service principal name (SPN), and user principal name (UPN). You can leave the SAN blank. If you leave the SAN blank, then you must set a subject name.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4-syntax.json"></a>
 
-```json
-
+```
 {
-  "RequireCommonName" : Boolean,
-  "RequireDirectoryPath" : Boolean,
-  "RequireDnsAsCn" : Boolean,
-  "RequireEmail" : Boolean,
-  "SanRequireDirectoryGuid" : Boolean,
-  "SanRequireDns" : Boolean,
-  "SanRequireDomainDns" : Boolean,
-  "SanRequireEmail" : Boolean,
-  "SanRequireSpn" : Boolean,
-  "SanRequireUpn" : Boolean
+  "[RequireCommonName](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirecommonname)" : {{Boolean}},
+  "[RequireDirectoryPath](#cfn-pcaconnectorad-template-subjectnameflagsv4-requiredirectorypath)" : {{Boolean}},
+  "[RequireDnsAsCn](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirednsascn)" : {{Boolean}},
+  "[RequireEmail](#cfn-pcaconnectorad-template-subjectnameflagsv4-requireemail)" : {{Boolean}},
+  "[SanRequireDirectoryGuid](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredirectoryguid)" : {{Boolean}},
+  "[SanRequireDns](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredns)" : {{Boolean}},
+  "[SanRequireDomainDns](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredomaindns)" : {{Boolean}},
+  "[SanRequireEmail](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequireemail)" : {{Boolean}},
+  "[SanRequireSpn](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequirespn)" : {{Boolean}},
+  "[SanRequireUpn](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequireupn)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4-syntax.yaml"></a>
 
-```yaml
-
-  RequireCommonName: Boolean
-  RequireDirectoryPath: Boolean
-  RequireDnsAsCn: Boolean
-  RequireEmail: Boolean
-  SanRequireDirectoryGuid: Boolean
-  SanRequireDns: Boolean
-  SanRequireDomainDns: Boolean
-  SanRequireEmail: Boolean
-  SanRequireSpn: Boolean
-  SanRequireUpn: Boolean
-
+```
+  [RequireCommonName](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirecommonname): {{Boolean}}
+  [RequireDirectoryPath](#cfn-pcaconnectorad-template-subjectnameflagsv4-requiredirectorypath): {{Boolean}}
+  [RequireDnsAsCn](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirednsascn): {{Boolean}}
+  [RequireEmail](#cfn-pcaconnectorad-template-subjectnameflagsv4-requireemail): {{Boolean}}
+  [SanRequireDirectoryGuid](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredirectoryguid): {{Boolean}}
+  [SanRequireDns](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredns): {{Boolean}}
+  [SanRequireDomainDns](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredomaindns): {{Boolean}}
+  [SanRequireEmail](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequireemail): {{Boolean}}
+  [SanRequireSpn](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequirespn): {{Boolean}}
+  [SanRequireUpn](#cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequireupn): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4-properties"></a>
 
-`RequireCommonName`
-
+`RequireCommonName`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-requirecommonname"></a>
 Include the common name in the subject name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequireDirectoryPath`
-
+`RequireDirectoryPath`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-requiredirectorypath"></a>
 Include the directory path in the subject name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequireDnsAsCn`
-
+`RequireDnsAsCn`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-requirednsascn"></a>
 Include the DNS as common name in the subject name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequireEmail`
-
+`RequireEmail`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-requireemail"></a>
 Include the subject's email in the subject name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SanRequireDirectoryGuid`
-
+`SanRequireDirectoryGuid`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredirectoryguid"></a>
 Include the globally unique identifier (GUID) in the subject alternate name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SanRequireDns`
-
+`SanRequireDns`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredns"></a>
 Include the DNS in the subject alternate name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SanRequireDomainDns`
-
+`SanRequireDomainDns`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequiredomaindns"></a>
 Include the domain DNS in the subject alternate name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SanRequireEmail`
-
+`SanRequireEmail`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequireemail"></a>
 Include the subject's email in the subject alternate name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SanRequireSpn`
-
+`SanRequireSpn`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequirespn"></a>
 Include the service principal name (SPN) in the subject alternate name.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SanRequireUpn`
-
+`SanRequireUpn`  <a name="cfn-pcaconnectorad-template-subjectnameflagsv4-sanrequireupn"></a>
 Include the user principal name (UPN) in the subject alternate name.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SubjectNameFlagsV3
-
-TemplateDefinition
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

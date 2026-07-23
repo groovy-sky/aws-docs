@@ -2,86 +2,55 @@
 title: "AWS::SES::EmailIdentity MailFromAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::EmailIdentity MailFromAttributes
+<a name="aws-properties-ses-emailidentity-mailfromattributes"></a>
 
-Used to enable or disable the custom Mail-From domain configuration for an email
-identity.
+Used to enable or disable the custom Mail-From domain configuration for an email identity.
 
 ## Syntax
+<a name="aws-properties-ses-emailidentity-mailfromattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-emailidentity-mailfromattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "BehaviorOnMxFailure" : String,
-  "MailFromDomain" : String
+  "[BehaviorOnMxFailure](#cfn-ses-emailidentity-mailfromattributes-behavioronmxfailure)" : {{String}},
+  "[MailFromDomain](#cfn-ses-emailidentity-mailfromattributes-mailfromdomain)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-emailidentity-mailfromattributes-syntax.yaml"></a>
 
-```yaml
-
-  BehaviorOnMxFailure: String
-  MailFromDomain: String
-
+```
+  [BehaviorOnMxFailure](#cfn-ses-emailidentity-mailfromattributes-behavioronmxfailure): {{String}}
+  [MailFromDomain](#cfn-ses-emailidentity-mailfromattributes-mailfromdomain): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-emailidentity-mailfromattributes-properties"></a>
 
-`BehaviorOnMxFailure`
-
-The action to take if the required MX record isn't found when you send an email. When
-you set this value to `USE_DEFAULT_VALUE`, the mail is sent using
-_amazonses.com_ as the MAIL FROM domain. When you set this value
-to `REJECT_MESSAGE`, the Amazon SES API v2 returns a
-`MailFromDomainNotVerified` error, and doesn't attempt to deliver the
-email.
-
-These behaviors are taken when the custom MAIL FROM domain configuration is in the
-`Pending`, `Failed`, and `TemporaryFailure`
-states.
-
+`BehaviorOnMxFailure`  <a name="cfn-ses-emailidentity-mailfromattributes-behavioronmxfailure"></a>
+The action to take if the required MX record isn't found when you send an email. When you set this value to `USE_DEFAULT_VALUE`, the mail is sent using *amazonses.com* as the MAIL FROM domain. When you set this value to `REJECT_MESSAGE`, the Amazon SES API v2 returns a `MailFromDomainNotVerified` error, and doesn't attempt to deliver the email.
+These behaviors are taken when the custom MAIL FROM domain configuration is in the `Pending`, `Failed`, and `TemporaryFailure` states.
 Valid Values: `USE_DEFAULT_VALUE | REJECT_MESSAGE`
+*Required*: No
+*Type*: String
+*Pattern*: `USE_DEFAULT_VALUE|REJECT_MESSAGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `USE_DEFAULT_VALUE|REJECT_MESSAGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailFromDomain`
-
-The custom MAIL FROM domain that you want the verified identity to use. The MAIL FROM
-domain must meet the following criteria:
-
-- It has to be a subdomain of the verified identity.
-
-- It can't be used to receive email.
-
-- It can't be used in a "From" address if the MAIL FROM domain is a destination
-for feedback forwarding emails.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FeedbackAttributes
-
-Tag
+`MailFromDomain`  <a name="cfn-ses-emailidentity-mailfromattributes-mailfromdomain"></a>
+The custom MAIL FROM domain that you want the verified identity to use. The MAIL FROM domain must meet the following criteria:
++ It has to be a subdomain of the verified identity.
++ It can't be used to receive email.
++ It can't be used in a "From" address if the MAIL FROM domain is a destination for feedback forwarding emails.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

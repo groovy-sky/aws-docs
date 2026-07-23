@@ -2,268 +2,192 @@
 title: "AWS::Logs::ScheduledQuery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::ScheduledQuery
+<a name="aws-resource-logs-scheduledquery"></a>
 
-Creates a scheduled query that runs CloudWatch Logs Insights queries at regular intervals.
-Scheduled queries enable proactive monitoring by automatically executing queries to detect
-patterns and anomalies in your log data. Query results can be delivered to Amazon S3 for analysis
-or further processing.
+Creates a scheduled query that runs CloudWatch Logs Insights queries at regular intervals. Scheduled queries enable proactive monitoring by automatically executing queries to detect patterns and anomalies in your log data. Query results can be delivered to Amazon S3 for analysis or further processing.
 
 ## Syntax
+<a name="aws-resource-logs-scheduledquery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-logs-scheduledquery-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Logs::ScheduledQuery",
   "Properties" : {
-      "Description" : String,
-      "DestinationConfiguration" : DestinationConfiguration,
-      "ExecutionRoleArn" : String,
-      "LogGroupIdentifiers" : [ String, ... ],
-      "Name" : String,
-      "QueryLanguage" : String,
-      "QueryString" : String,
-      "ScheduleEndTime" : Number,
-      "ScheduleExpression" : String,
-      "ScheduleStartTime" : Number,
-      "StartTimeOffset" : Integer,
-      "State" : String,
-      "Tags" : [ TagsItems, ... ],
-      "Timezone" : String
+      "[Description](#cfn-logs-scheduledquery-description)" : {{String}},
+      "[DestinationConfiguration](#cfn-logs-scheduledquery-destinationconfiguration)" : {{DestinationConfiguration}},
+      "[ExecutionRoleArn](#cfn-logs-scheduledquery-executionrolearn)" : {{String}},
+      "[LogGroupIdentifiers](#cfn-logs-scheduledquery-loggroupidentifiers)" : {{[ String, ... ]}},
+      "[Name](#cfn-logs-scheduledquery-name)" : {{String}},
+      "[QueryLanguage](#cfn-logs-scheduledquery-querylanguage)" : {{String}},
+      "[QueryString](#cfn-logs-scheduledquery-querystring)" : {{String}},
+      "[ScheduleEndTime](#cfn-logs-scheduledquery-scheduleendtime)" : {{Number}},
+      "[ScheduleExpression](#cfn-logs-scheduledquery-scheduleexpression)" : {{String}},
+      "[ScheduleStartTime](#cfn-logs-scheduledquery-schedulestarttime)" : {{Number}},
+      "[StartTimeOffset](#cfn-logs-scheduledquery-starttimeoffset)" : {{Integer}},
+      "[State](#cfn-logs-scheduledquery-state)" : {{String}},
+      "[Tags](#cfn-logs-scheduledquery-tags)" : {{[ TagsItems, ... ]}},
+      "[Timezone](#cfn-logs-scheduledquery-timezone)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-logs-scheduledquery-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Logs::ScheduledQuery
 Properties:
-  Description: String
-  DestinationConfiguration:
-    DestinationConfiguration
-  ExecutionRoleArn: String
-  LogGroupIdentifiers:
-    - String
-  Name: String
-  QueryLanguage: String
-  QueryString:
-    String
-  ScheduleEndTime: Number
-  ScheduleExpression: String
-  ScheduleStartTime: Number
-  StartTimeOffset: Integer
-  State: String
-  Tags:
-    - TagsItems
-  Timezone: String
-
+  [Description](#cfn-logs-scheduledquery-description): {{String}}
+  [DestinationConfiguration](#cfn-logs-scheduledquery-destinationconfiguration): {{
+    DestinationConfiguration}}
+  [ExecutionRoleArn](#cfn-logs-scheduledquery-executionrolearn): {{String}}
+  [LogGroupIdentifiers](#cfn-logs-scheduledquery-loggroupidentifiers): {{
+    - String}}
+  [Name](#cfn-logs-scheduledquery-name): {{String}}
+  [QueryLanguage](#cfn-logs-scheduledquery-querylanguage): {{String}}
+  [QueryString](#cfn-logs-scheduledquery-querystring): {{
+    String}}
+  [ScheduleEndTime](#cfn-logs-scheduledquery-scheduleendtime): {{Number}}
+  [ScheduleExpression](#cfn-logs-scheduledquery-scheduleexpression): {{String}}
+  [ScheduleStartTime](#cfn-logs-scheduledquery-schedulestarttime): {{Number}}
+  [StartTimeOffset](#cfn-logs-scheduledquery-starttimeoffset): {{Integer}}
+  [State](#cfn-logs-scheduledquery-state): {{String}}
+  [Tags](#cfn-logs-scheduledquery-tags): {{
+    - TagsItems}}
+  [Timezone](#cfn-logs-scheduledquery-timezone): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-logs-scheduledquery-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-logs-scheduledquery-description"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationConfiguration`
-
+`DestinationConfiguration`  <a name="cfn-logs-scheduledquery-destinationconfiguration"></a>
 Configuration for where query results are delivered.
+*Required*: No
+*Type*: [DestinationConfiguration](aws-properties-logs-scheduledquery-destinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DestinationConfiguration](aws-properties-logs-scheduledquery-destinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExecutionRoleArn`
-
+`ExecutionRoleArn`  <a name="cfn-logs-scheduledquery-executionrolearn"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogGroupIdentifiers`
-
+`LogGroupIdentifiers`  <a name="cfn-logs-scheduledquery-loggroupidentifiers"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-logs-scheduledquery-name"></a>
 The name of the scheduled query.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-/.#]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-/.#]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`QueryLanguage`
-
+`QueryLanguage`  <a name="cfn-logs-scheduledquery-querylanguage"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryString`
-
+`QueryString`  <a name="cfn-logs-scheduledquery-querystring"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScheduleEndTime`
-
+`ScheduleEndTime`  <a name="cfn-logs-scheduledquery-scheduleendtime"></a>
 Property description not available.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScheduleExpression`
-
+`ScheduleExpression`  <a name="cfn-logs-scheduledquery-scheduleexpression"></a>
 The cron expression that defines when the scheduled query runs.
+*Required*: Yes
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScheduleStartTime`
-
+`ScheduleStartTime`  <a name="cfn-logs-scheduledquery-schedulestarttime"></a>
 Property description not available.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTimeOffset`
-
+`StartTimeOffset`  <a name="cfn-logs-scheduledquery-starttimeoffset"></a>
 Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`State`
-
+`State`  <a name="cfn-logs-scheduledquery-state"></a>
 The current state of the scheduled query.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-logs-scheduledquery-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [TagsItems](aws-properties-logs-scheduledquery-tagsitems.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TagsItems](aws-properties-logs-scheduledquery-tagsitems.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timezone`
-
+`Timezone`  <a name="cfn-logs-scheduledquery-timezone"></a>
 The timezone used for evaluating the schedule expression.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-logs-scheduledquery-return-values"></a>
 
 ### Ref
+<a name="aws-resource-logs-scheduledquery-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-logs-scheduledquery-return-values-fn--getatt"></a>
 
-`CreationTime`
+####
+<a name="aws-resource-logs-scheduledquery-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The timestamp when the scheduled query was created.
 
-`LastExecutionStatus`
-
+`LastExecutionStatus`  <a name="LastExecutionStatus-fn::getatt"></a>
 The status of the most recent execution.
 
-`LastTriggeredTime`
-
+`LastTriggeredTime`  <a name="LastTriggeredTime-fn::getatt"></a>
 The timestamp when the scheduled query was last executed.
 
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 The timestamp when the scheduled query was last updated.
 
-`ScheduledQueryArn`
-
+`ScheduledQueryArn`  <a name="ScheduledQueryArn-fn::getatt"></a>
 The ARN of the scheduled query.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Logs::ResourcePolicy
-
-DestinationConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

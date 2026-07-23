@@ -2,53 +2,42 @@
 title: "AWS::ApplicationAutoScaling::ScalingPolicy PredictiveScalingCustomizedLoadMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalingPolicy PredictiveScalingCustomizedLoadMetric
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric"></a>
 
-The customized load metric specification.
+ The customized load metric specification.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "MetricDataQueries" : [ PredictiveScalingMetricDataQuery, ... ]
+  "[MetricDataQueries](#cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-metricdataqueries)" : {{[ PredictiveScalingMetricDataQuery, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-syntax.yaml"></a>
 
-```yaml
-
-  MetricDataQueries:
-    - PredictiveScalingMetricDataQuery
-
+```
+  [MetricDataQueries](#cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-metricdataqueries): {{
+    - PredictiveScalingMetricDataQuery}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-properties"></a>
 
-`MetricDataQueries`
-
+`MetricDataQueries`  <a name="cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-metricdataqueries"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [PredictiveScalingMetricDataQuery](aws-properties-applicationautoscaling-scalingpolicy-predictivescalingmetricdataquery.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PredictiveScalingCustomizedCapacityMetric
-
-PredictiveScalingCustomizedScalingMetric
+*Required*: Yes
+*Type*: Array of [PredictiveScalingMetricDataQuery](aws-properties-applicationautoscaling-scalingpolicy-predictivescalingmetricdataquery.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

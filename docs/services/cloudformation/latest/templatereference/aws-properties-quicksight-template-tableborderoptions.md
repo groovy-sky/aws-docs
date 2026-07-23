@@ -2,84 +2,61 @@
 title: "AWS::QuickSight::Template TableBorderOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TableBorderOptions
+<a name="aws-properties-quicksight-template-tableborderoptions"></a>
 
 The border options for a table border.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-tableborderoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-tableborderoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "Style" : String,
-  "Thickness" : Number
+  "[Color](#cfn-quicksight-template-tableborderoptions-color)" : {{String}},
+  "[Style](#cfn-quicksight-template-tableborderoptions-style)" : {{String}},
+  "[Thickness](#cfn-quicksight-template-tableborderoptions-thickness)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-tableborderoptions-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  Style: String
-  Thickness: Number
-
+```
+  [Color](#cfn-quicksight-template-tableborderoptions-color): {{String}}
+  [Style](#cfn-quicksight-template-tableborderoptions-style): {{String}}
+  [Thickness](#cfn-quicksight-template-tableborderoptions-thickness): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-tableborderoptions-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-template-tableborderoptions-color"></a>
 The color of a table border.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Style`
-
+`Style`  <a name="cfn-quicksight-template-tableborderoptions-style"></a>
 The style (none, solid) of a table border.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | SOLID`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | SOLID`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Thickness`
-
+`Thickness`  <a name="cfn-quicksight-template-tableborderoptions-thickness"></a>
 The thickness of a table border.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableAggregatedFieldWells
-
-TableCellConditionalFormatting
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

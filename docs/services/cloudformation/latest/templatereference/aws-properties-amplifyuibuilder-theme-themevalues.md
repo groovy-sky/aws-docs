@@ -2,65 +2,50 @@
 title: "AWS::AmplifyUIBuilder::Theme ThemeValues"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Theme ThemeValues
+<a name="aws-properties-amplifyuibuilder-theme-themevalues"></a>
 
 The `ThemeValues` property specifies key-value pair that defines a property of a theme.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-theme-themevalues-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-theme-themevalues-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : ThemeValue
+  "[Key](#cfn-amplifyuibuilder-theme-themevalues-key)" : {{String}},
+  "[Value](#cfn-amplifyuibuilder-theme-themevalues-value)" : {{ThemeValue}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-theme-themevalues-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value:
-    ThemeValue
-
+```
+  [Key](#cfn-amplifyuibuilder-theme-themevalues-key): {{String}}
+  [Value](#cfn-amplifyuibuilder-theme-themevalues-value): {{
+    ThemeValue}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-theme-themevalues-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-amplifyuibuilder-theme-themevalues-key"></a>
 The name of the property.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-amplifyuibuilder-theme-themevalues-value"></a>
 The value of the property.
-
-_Required_: No
-
-_Type_: [ThemeValue](aws-properties-amplifyuibuilder-theme-themevalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ThemeValue
-
-Next
+*Required*: No
+*Type*: [ThemeValue](aws-properties-amplifyuibuilder-theme-themevalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

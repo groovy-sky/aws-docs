@@ -2,109 +2,78 @@
 title: "AWS::AppFlow::ConnectorProfile CustomConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile CustomConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-customconnectorprofilecredentials"></a>
 
-The connector-specific profile credentials that are required when using the custom
-connector.
+The connector-specific profile credentials that are required when using the custom connector.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-customconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-customconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiKey" : ApiKeyCredentials,
-  "AuthenticationType" : String,
-  "Basic" : BasicAuthCredentials,
-  "Custom" : CustomAuthCredentials,
-  "Oauth2" : OAuth2Credentials
+  "[ApiKey](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-apikey)" : {{ApiKeyCredentials}},
+  "[AuthenticationType](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-authenticationtype)" : {{String}},
+  "[Basic](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-basic)" : {{BasicAuthCredentials}},
+  "[Custom](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-custom)" : {{CustomAuthCredentials}},
+  "[Oauth2](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-oauth2)" : {{OAuth2Credentials}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-customconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  ApiKey:
-    ApiKeyCredentials
-  AuthenticationType: String
-  Basic:
-    BasicAuthCredentials
-  Custom:
-    CustomAuthCredentials
-  Oauth2:
-    OAuth2Credentials
-
+```
+  [ApiKey](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-apikey): {{
+    ApiKeyCredentials}}
+  [AuthenticationType](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-authenticationtype): {{String}}
+  [Basic](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-basic): {{
+    BasicAuthCredentials}}
+  [Custom](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-custom): {{
+    CustomAuthCredentials}}
+  [Oauth2](#cfn-appflow-connectorprofile-customconnectorprofilecredentials-oauth2): {{
+    OAuth2Credentials}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-customconnectorprofilecredentials-properties"></a>
 
-`ApiKey`
-
+`ApiKey`  <a name="cfn-appflow-connectorprofile-customconnectorprofilecredentials-apikey"></a>
 The API keys required for the authentication of the user.
+*Required*: No
+*Type*: [ApiKeyCredentials](aws-properties-appflow-connectorprofile-apikeycredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AuthenticationType`  <a name="cfn-appflow-connectorprofile-customconnectorprofilecredentials-authenticationtype"></a>
+The authentication type that the custom connector uses for authenticating while creating a connector profile.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `OAUTH2 | APIKEY | BASIC | CUSTOM`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ApiKeyCredentials](aws-properties-appflow-connectorprofile-apikeycredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthenticationType`
-
-The authentication type that the custom connector uses for authenticating while creating a
-connector profile.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `OAUTH2 | APIKEY | BASIC | CUSTOM`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Basic`
-
+`Basic`  <a name="cfn-appflow-connectorprofile-customconnectorprofilecredentials-basic"></a>
 The basic credentials that are required for the authentication of the user.
+*Required*: No
+*Type*: [BasicAuthCredentials](aws-properties-appflow-connectorprofile-basicauthcredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Custom`  <a name="cfn-appflow-connectorprofile-customconnectorprofilecredentials-custom"></a>
+If the connector uses the custom authentication mechanism, this holds the required credentials.
+*Required*: No
+*Type*: [CustomAuthCredentials](aws-properties-appflow-connectorprofile-customauthcredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [BasicAuthCredentials](aws-properties-appflow-connectorprofile-basicauthcredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Custom`
-
-If the connector uses the custom authentication mechanism, this holds the required
-credentials.
-
-_Required_: No
-
-_Type_: [CustomAuthCredentials](aws-properties-appflow-connectorprofile-customauthcredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Oauth2`
-
+`Oauth2`  <a name="cfn-appflow-connectorprofile-customconnectorprofilecredentials-oauth2"></a>
 The OAuth 2.0 credentials required for the authentication of the user.
-
-_Required_: No
-
-_Type_: [OAuth2Credentials](aws-properties-appflow-connectorprofile-oauth2credentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomAuthCredentials
-
-CustomConnectorProfileProperties
+*Required*: No
+*Type*: [OAuth2Credentials](aws-properties-appflow-connectorprofile-oauth2credentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

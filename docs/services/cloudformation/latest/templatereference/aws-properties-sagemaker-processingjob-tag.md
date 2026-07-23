@@ -2,83 +2,57 @@
 title: "AWS::SageMaker::ProcessingJob Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ProcessingJob Tag
+<a name="aws-properties-sagemaker-processingjob-tag"></a>
 
-A tag object that consists of a key and an optional value, used to manage metadata
-for SageMaker AWS resources.
+A tag object that consists of a key and an optional value, used to manage metadata for SageMaker AWS resources.
 
-You can add tags to notebook instances, training jobs, hyperparameter tuning jobs,
-batch transform jobs, models, labeling jobs, work teams, endpoint configurations, and
-endpoints. For more information on adding tags to SageMaker resources, see [AddTags](../../../../reference/sagemaker/latest/apireference/api-addtags.md).
+You can add tags to notebook instances, training jobs, hyperparameter tuning jobs, batch transform jobs, models, labeling jobs, work teams, endpoint configurations, and endpoints. For more information on adding tags to SageMaker resources, see [AddTags](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddTags.html).
 
-For more information on adding metadata to your AWS resources with
-tagging, see [Tagging AWS resources](../../../../general/latest/gr/aws-tagging.md). For advice on best practices for
-managing AWS resources with tagging, see [Tagging\
-Best Practices: Implement an Effective AWS Resource Tagging\
-Strategy](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
+For more information on adding metadata to your AWS resources with tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html). For advice on best practices for managing AWS resources with tagging, see [Tagging Best Practices: Implement an Effective AWS Resource Tagging Strategy](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 
 ## Syntax
+<a name="aws-properties-sagemaker-processingjob-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-processingjob-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-sagemaker-processingjob-tag-key)" : {{String}},
+  "[Value](#cfn-sagemaker-processingjob-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-processingjob-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-sagemaker-processingjob-tag-key): {{String}}
+  [Value](#cfn-sagemaker-processingjob-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-processingjob-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-sagemaker-processingjob-tag-key"></a>
 The tag key. Tag keys must be unique per resource.
+*Required*: Yes
+*Type*: String
+*Pattern*: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-sagemaker-processingjob-tag-value"></a>
 The tag value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StoppingCondition
-
-VpcConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

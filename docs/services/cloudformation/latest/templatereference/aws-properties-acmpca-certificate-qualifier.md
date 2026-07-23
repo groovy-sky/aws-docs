@@ -2,58 +2,43 @@
 title: "AWS::ACMPCA::Certificate Qualifier"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::Certificate Qualifier
+<a name="aws-properties-acmpca-certificate-qualifier"></a>
 
-Defines a `PolicyInformation` qualifier. AWS Private CA supports the [certification\
-practice statement (CPS) qualifier](https://datatracker.ietf.org/doc/html/rfc5280) defined in RFC 5280.
+Defines a `PolicyInformation` qualifier. AWS Private CA supports the [certification practice statement (CPS) qualifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.4) defined in RFC 5280.
 
 ## Syntax
+<a name="aws-properties-acmpca-certificate-qualifier-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificate-qualifier-syntax.json"></a>
 
-```json
-
+```
 {
-  "CpsUri" : String
+  "[CpsUri](#cfn-acmpca-certificate-qualifier-cpsuri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificate-qualifier-syntax.yaml"></a>
 
-```yaml
-
-  CpsUri: String
-
+```
+  [CpsUri](#cfn-acmpca-certificate-qualifier-cpsuri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificate-qualifier-properties"></a>
 
-`CpsUri`
-
-Contains a pointer to a certification practice statement (CPS) published by the
-CA.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyQualifierInfo
-
-Subject
+`CpsUri`  <a name="cfn-acmpca-certificate-qualifier-cpsuri"></a>
+Contains a pointer to a certification practice statement (CPS) published by the CA.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

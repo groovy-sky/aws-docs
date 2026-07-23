@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard KPIVisualLayoutOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard KPIVisualLayoutOptions
+<a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions"></a>
 
 The options that determine the layout a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "StandardLayout" : KPIVisualStandardLayout
+  "[StandardLayout](#cfn-quicksight-dashboard-kpivisuallayoutoptions-standardlayout)" : {{KPIVisualStandardLayout}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions-syntax.yaml"></a>
 
-```yaml
-
-  StandardLayout:
-    KPIVisualStandardLayout
-
+```
+  [StandardLayout](#cfn-quicksight-dashboard-kpivisuallayoutoptions-standardlayout): {{
+    KPIVisualStandardLayout}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions-properties"></a>
 
-`StandardLayout`
-
+`StandardLayout`  <a name="cfn-quicksight-dashboard-kpivisuallayoutoptions-standardlayout"></a>
 The standard layout of the KPI visual.
-
-_Required_: No
-
-_Type_: [KPIVisualStandardLayout](aws-properties-quicksight-dashboard-kpivisualstandardlayout.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPIVisual
-
-KPIVisualStandardLayout
+*Required*: No
+*Type*: [KPIVisualStandardLayout](aws-properties-quicksight-dashboard-kpivisualstandardlayout.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

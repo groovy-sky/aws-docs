@@ -2,76 +2,55 @@
 title: "AWS::KinesisAnalyticsV2::Application RecordFormat"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application RecordFormat
+<a name="aws-properties-kinesisanalyticsv2-application-recordformat"></a>
 
-For a SQL-based Kinesis Data Analytics application, describes the record format
-and relevant mapping information that should be applied to schematize the records on the
-stream.
+ For a SQL-based Kinesis Data Analytics application, describes the record format and relevant mapping information that should be applied to schematize the records on the stream.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-recordformat-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-recordformat-syntax.json"></a>
 
-```json
-
+```
 {
-  "MappingParameters" : MappingParameters,
-  "RecordFormatType" : String
+  "[MappingParameters](#cfn-kinesisanalyticsv2-application-recordformat-mappingparameters)" : {{MappingParameters}},
+  "[RecordFormatType](#cfn-kinesisanalyticsv2-application-recordformat-recordformattype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-recordformat-syntax.yaml"></a>
 
-```yaml
-
-  MappingParameters:
-    MappingParameters
-  RecordFormatType: String
-
+```
+  [MappingParameters](#cfn-kinesisanalyticsv2-application-recordformat-mappingparameters): {{
+    MappingParameters}}
+  [RecordFormatType](#cfn-kinesisanalyticsv2-application-recordformat-recordformattype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-recordformat-properties"></a>
 
-`MappingParameters`
+`MappingParameters`  <a name="cfn-kinesisanalyticsv2-application-recordformat-mappingparameters"></a>
+When you configure application input at the time of creating or updating an application, provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.
+*Required*: No
+*Type*: [MappingParameters](aws-properties-kinesisanalyticsv2-application-mappingparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-When you configure application input at the time of creating or updating an application,
-provides additional mapping information specific to the record format (such as JSON, CSV, or
-record fields delimited by some delimiter) on the streaming source.
-
-_Required_: No
-
-_Type_: [MappingParameters](aws-properties-kinesisanalyticsv2-application-mappingparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecordFormatType`
-
+`RecordFormatType`  <a name="cfn-kinesisanalyticsv2-application-recordformat-recordformattype"></a>
 The type of record format.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CSV | JSON`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CSV | JSON`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [RecordFormat](../../../managed-flink/latest/apiv2/api-recordformat.md) in the _Amazon Kinesis Data Analytics API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RecordColumn
-
-RunConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-recordformat--seealso"></a>
++ [RecordFormat](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_RecordFormat.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

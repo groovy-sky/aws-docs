@@ -2,64 +2,45 @@
 title: "AWS::Comprehend::Flywheel EntityTypesListItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::Flywheel EntityTypesListItem
+<a name="aws-properties-comprehend-flywheel-entitytypeslistitem"></a>
 
-An entity type within a labeled training dataset that Amazon Comprehend uses to train a
-custom entity recognizer.
+An entity type within a labeled training dataset that Amazon Comprehend uses to train a custom entity recognizer.
 
 ## Syntax
+<a name="aws-properties-comprehend-flywheel-entitytypeslistitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-comprehend-flywheel-entitytypeslistitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String
+  "[Type](#cfn-comprehend-flywheel-entitytypeslistitem-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-comprehend-flywheel-entitytypeslistitem-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-
+```
+  [Type](#cfn-comprehend-flywheel-entitytypeslistitem-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-comprehend-flywheel-entitytypeslistitem-properties"></a>
 
-`Type`
-
-An entity type within a labeled training dataset that Amazon Comprehend uses to train a
-custom entity recognizer.
-
-Entity types must not contain the following invalid characters: \\n (line break), \\\n
-(escaped line break, \\r (carriage return), \\\r (escaped carriage return), \\t (tab), \\\t
-(escaped tab), and , (comma).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?![^\n\r\t,]*\\n|\\r|\\t)[^\n\r\t,]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EntityRecognitionConfig
-
-Tag
+`Type`  <a name="cfn-comprehend-flywheel-entitytypeslistitem-type"></a>
+An entity type within a labeled training dataset that Amazon Comprehend uses to train a custom entity recognizer.
+Entity types must not contain the following invalid characters: \\n (line break), \\\\n (escaped line break, \\r (carriage return), \\\\r (escaped carriage return), \\t (tab), \\\\t (escaped tab), and , (comma).
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?![^\n\r\t,]*\\n|\\r|\\t)[^\n\r\t,]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

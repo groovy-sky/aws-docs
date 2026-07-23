@@ -2,55 +2,43 @@
 title: "AWS::Bedrock::Guardrail ContextualGroundingPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Guardrail ContextualGroundingPolicyConfig
+<a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig"></a>
 
 The policy configuration details for the guardrails contextual grounding policy.
 
 ## Syntax
+<a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FiltersConfig" : [ ContextualGroundingFilterConfig, ... ]
+  "[FiltersConfig](#cfn-bedrock-guardrail-contextualgroundingpolicyconfig-filtersconfig)" : {{[ ContextualGroundingFilterConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  FiltersConfig:
-    - ContextualGroundingFilterConfig
-
+```
+  [FiltersConfig](#cfn-bedrock-guardrail-contextualgroundingpolicyconfig-filtersconfig): {{
+    - ContextualGroundingFilterConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig-properties"></a>
 
-`FiltersConfig`
-
+`FiltersConfig`  <a name="cfn-bedrock-guardrail-contextualgroundingpolicyconfig-filtersconfig"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [ContextualGroundingFilterConfig](aws-properties-bedrock-guardrail-contextualgroundingfilterconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContextualGroundingFilterConfig
-
-GuardrailCrossRegionConfig
+*Required*: Yes
+*Type*: Array of [ContextualGroundingFilterConfig](aws-properties-bedrock-guardrail-contextualgroundingfilterconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

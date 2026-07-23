@@ -2,144 +2,115 @@
 title: "AWS::OpenSearchServerless::VpcEndpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::VpcEndpoint
+<a name="aws-resource-opensearchserverless-vpcendpoint"></a>
 
-Creates an OpenSearch Serverless-managed interface VPC endpoint. For more information, see [Access\
-Amazon OpenSearch Serverless using an interface endpoint](../../../opensearch-service/latest/developerguide/serverless-vpc.md).
+Creates an OpenSearch Serverless-managed interface VPC endpoint. For more information, see [Access Amazon OpenSearch Serverless using an interface endpoint](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-vpc.html).
 
 ## Syntax
+<a name="aws-resource-opensearchserverless-vpcendpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-opensearchserverless-vpcendpoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::OpenSearchServerless::VpcEndpoint",
   "Properties" : {
-      "Name" : String,
-      "SecurityGroupIds" : [ String, ... ],
-      "SubnetIds" : [ String, ... ],
-      "VpcId" : String
+      "[Name](#cfn-opensearchserverless-vpcendpoint-name)" : {{String}},
+      "[SecurityGroupIds](#cfn-opensearchserverless-vpcendpoint-securitygroupids)" : {{[ String, ... ]}},
+      "[SubnetIds](#cfn-opensearchserverless-vpcendpoint-subnetids)" : {{[ String, ... ]}},
+      "[VpcId](#cfn-opensearchserverless-vpcendpoint-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-opensearchserverless-vpcendpoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::OpenSearchServerless::VpcEndpoint
 Properties:
-  Name: String
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-  VpcId: String
-
+  [Name](#cfn-opensearchserverless-vpcendpoint-name): {{String}}
+  [SecurityGroupIds](#cfn-opensearchserverless-vpcendpoint-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-opensearchserverless-vpcendpoint-subnetids): {{
+    - String}}
+  [VpcId](#cfn-opensearchserverless-vpcendpoint-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-opensearchserverless-vpcendpoint-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-opensearchserverless-vpcendpoint-name"></a>
 The name of the endpoint.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z][a-z0-9-]{2,31}$`
+*Minimum*: `3`
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`SecurityGroupIds`  <a name="cfn-opensearchserverless-vpcendpoint-securitygroupids"></a>
+The unique identifiers of the security groups that define the ports, protocols, and sources for inbound traffic that you are authorizing into your endpoint.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `128 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-z][a-z0-9-]{2,31}$`
-
-_Minimum_: `3`
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroupIds`
-
-The unique identifiers of the security groups that define the ports, protocols, and
-sources for inbound traffic that you are authorizing into your endpoint.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `128 | 5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-opensearchserverless-vpcendpoint-subnetids"></a>
 The ID of the subnets from which you access OpenSearch Serverless.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `32 | 6`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `32 | 6`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-opensearchserverless-vpcendpoint-vpcid"></a>
 The ID of the VPC from which you access OpenSearch Serverless.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^vpc-[0-9a-z]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^vpc-[0-9a-z]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-opensearchserverless-vpcendpoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-opensearchserverless-vpcendpoint-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the endpoint ID. For more information about using the
-`Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the endpoint ID. For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-opensearchserverless-vpcendpoint-return-values-fn--getatt"></a>
 
-`GetAtt` returns a value for a specified attribute of this type. For more
-information, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md). The following are the available attributes and sample return
-values.
+`GetAtt` returns a value for a specified attribute of this type. For more information, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html). The following are the available attributes and sample return values.
 
-`Id`
+####
+<a name="aws-resource-opensearchserverless-vpcendpoint-return-values-fn--getatt-fn--getatt"></a>
 
-The unique identifier of the endpoint. For example,
-`vpce-050f79086ee71ac05`.
+`Id`  <a name="Id-fn::getatt"></a>
+The unique identifier of the endpoint. For example, `vpce-050f79086ee71ac05`.
 
 ## Examples
+<a name="aws-resource-opensearchserverless-vpcendpoint--examples"></a>
 
 ### Create a VPC endpoint
+<a name="aws-resource-opensearchserverless-vpcendpoint--examples--Create_a_VPC_endpoint"></a>
 
-The following example specifies an OpenSearch Serverless-managed interface VPC
-endpoint named `test-vpcendpoint`. The endpoint has one subnet and one
-security group.
+The following example specifies an OpenSearch Serverless-managed interface VPC endpoint named `test-vpcendpoint`. The endpoint has one subnet and one security group.
 
 #### JSON
+<a name="aws-resource-opensearchserverless-vpcendpoint--examples--Create_a_VPC_endpoint--json"></a>
 
-```json
-
+```
 {
    "Description":"OpenSearch Serverless VPC endpoint template",
    "Resources":{
@@ -161,9 +132,9 @@ security group.
 ```
 
 #### YAML
+<a name="aws-resource-opensearchserverless-vpcendpoint--examples--Create_a_VPC_endpoint--yaml"></a>
 
-```yaml
-
+```
 AAWSTemplateFormatVersion: '2010-09-09'
 Description: OpenSearch Serverless VPC endpoint template
 Resources:
@@ -177,11 +148,5 @@ Resources:
       SecurityGroupIds:
         - sg-03843b03f369eb245
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::OpenSearchServerless::SecurityPolicy
-
-Next
 
 All content copied from https://docs.aws.amazon.com/.

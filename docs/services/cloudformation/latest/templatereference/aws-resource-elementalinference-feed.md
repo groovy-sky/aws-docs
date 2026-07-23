@@ -2,118 +2,98 @@
 title: "AWS::ElementalInference::Feed"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElementalInference::Feed
+<a name="aws-resource-elementalinference-feed"></a>
 
-Represents a feed that receives media for inference processing.
+ Represents a feed that receives media for inference processing.
 
 ## Syntax
+<a name="aws-resource-elementalinference-feed-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-elementalinference-feed-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ElementalInference::Feed",
   "Properties" : {
-      "Name" : String,
-      "Outputs" : [ GetOutput, ... ],
-      "Tags" : {Key: Value, ...}
+      "[Name](#cfn-elementalinference-feed-name)" : {{String}},
+      "[Outputs](#cfn-elementalinference-feed-outputs)" : {{[ GetOutput, ... ]}},
+      "[Tags](#cfn-elementalinference-feed-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-elementalinference-feed-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ElementalInference::Feed
 Properties:
-  Name: String
-  Outputs:
-    - GetOutput
-  Tags:
-    Key: Value
-
+  [Name](#cfn-elementalinference-feed-name): {{String}}
+  [Outputs](#cfn-elementalinference-feed-outputs): {{
+    - GetOutput}}
+  [Tags](#cfn-elementalinference-feed-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-elementalinference-feed-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-elementalinference-feed-name"></a>
 A name for the feed.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]([a-zA-Z0-9-_]{0,126}[a-zA-Z0-9])?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]([a-zA-Z0-9-_]{0,126}[a-zA-Z0-9])?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Outputs`
-
+`Outputs`  <a name="cfn-elementalinference-feed-outputs"></a>
 An array of outputs for this feed. Each output represents a specific Elemental Inference feature. For example, an output might represent the cropping feature.
+*Required*: Yes
+*Type*: Array of [GetOutput](aws-properties-elementalinference-feed-getoutput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [GetOutput](aws-properties-elementalinference-feed-getoutput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-elementalinference-feed-tags"></a>
 A collection of tags for this feed. Each tag is a key-value pair.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-elementalinference-feed-return-values"></a>
 
 ### Ref
+<a name="aws-resource-elementalinference-feed-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the feed. For example:
 
-`{"Ref":"abcdefghijklmnopqrst"}`
+ `{"Ref":"abcdefghijklmnopqrst"}`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-elementalinference-feed-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-elementalinference-feed-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The unique ARN of the feed, generated by Elemental Inference.
 
-`DataEndpoints`
+`DataEndpoints`  <a name="DataEndpoints-fn::getatt"></a>
+The unique data endpoint for this feed. The endpoint is used by feed to receive media data and return the resulting metadata. For example, `https://stuvwxyz.elemental-inference-data.us-west-2.amazonaws.com/`
 
-The unique data endpoint for this feed. The endpoint is used by feed to receive media data and return the resulting metadata.
-For example, `https://stuvwxyz.elemental-inference-data.us-west-2.amazonaws.com/`
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the feed, generated by Elemental Inference.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Elemental Inference
-
-ClippingConfig
 
 All content copied from https://docs.aws.amazon.com/.

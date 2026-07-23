@@ -2,53 +2,42 @@
 title: "AWS::AppIntegrations::Application ApplicationSourceConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application ApplicationSourceConfig
+<a name="aws-properties-appintegrations-application-applicationsourceconfig"></a>
 
 The configuration for where the application should be loaded from.
 
 ## Syntax
+<a name="aws-properties-appintegrations-application-applicationsourceconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appintegrations-application-applicationsourceconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExternalUrlConfig" : ExternalUrlConfig
+  "[ExternalUrlConfig](#cfn-appintegrations-application-applicationsourceconfig-externalurlconfig)" : {{ExternalUrlConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appintegrations-application-applicationsourceconfig-syntax.yaml"></a>
 
-```yaml
-
-  ExternalUrlConfig:
-    ExternalUrlConfig
-
+```
+  [ExternalUrlConfig](#cfn-appintegrations-application-applicationsourceconfig-externalurlconfig): {{
+    ExternalUrlConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-appintegrations-application-applicationsourceconfig-properties"></a>
 
-`ExternalUrlConfig`
-
+`ExternalUrlConfig`  <a name="cfn-appintegrations-application-applicationsourceconfig-externalurlconfig"></a>
 The external URL source for the application.
-
-_Required_: Yes
-
-_Type_: [ExternalUrlConfig](aws-properties-appintegrations-application-externalurlconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationConfig
-
-ContactHandling
+*Required*: Yes
+*Type*: [ExternalUrlConfig](aws-properties-appintegrations-application-externalurlconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

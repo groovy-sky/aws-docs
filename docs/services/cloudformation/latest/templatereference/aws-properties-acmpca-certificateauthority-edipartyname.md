@@ -2,74 +2,53 @@
 title: "AWS::ACMPCA::CertificateAuthority EdiPartyName"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority EdiPartyName
+<a name="aws-properties-acmpca-certificateauthority-edipartyname"></a>
 
-Describes an Electronic Data Interchange (EDI) entity as described in as defined in
-[Subject Alternative\
-Name](https://datatracker.ietf.org/doc/html/rfc5280) in RFC 5280.
+Describes an Electronic Data Interchange (EDI) entity as described in as defined in [Subject Alternative Name](https://datatracker.ietf.org/doc/html/rfc5280) in RFC 5280.
 
 ## Syntax
+<a name="aws-properties-acmpca-certificateauthority-edipartyname-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificateauthority-edipartyname-syntax.json"></a>
 
-```json
-
+```
 {
-  "NameAssigner" : String,
-  "PartyName" : String
+  "[NameAssigner](#cfn-acmpca-certificateauthority-edipartyname-nameassigner)" : {{String}},
+  "[PartyName](#cfn-acmpca-certificateauthority-edipartyname-partyname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificateauthority-edipartyname-syntax.yaml"></a>
 
-```yaml
-
-  NameAssigner: String
-  PartyName: String
-
+```
+  [NameAssigner](#cfn-acmpca-certificateauthority-edipartyname-nameassigner): {{String}}
+  [PartyName](#cfn-acmpca-certificateauthority-edipartyname-partyname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificateauthority-edipartyname-properties"></a>
 
-`NameAssigner`
-
+`NameAssigner`  <a name="cfn-acmpca-certificateauthority-edipartyname-nameassigner"></a>
 Specifies the name assigner.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PartyName`
-
+`PartyName`  <a name="cfn-acmpca-certificateauthority-edipartyname-partyname"></a>
 Specifies the party name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomAttribute
-
-GeneralName
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

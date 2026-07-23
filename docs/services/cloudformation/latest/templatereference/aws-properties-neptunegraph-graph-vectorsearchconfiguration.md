@@ -2,53 +2,41 @@
 title: "AWS::NeptuneGraph::Graph VectorSearchConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NeptuneGraph::Graph VectorSearchConfiguration
+<a name="aws-properties-neptunegraph-graph-vectorsearchconfiguration"></a>
 
-The vector-search configuration for the graph, which specifies the vector dimension
-to use in the vector index, if any.
+The vector-search configuration for the graph, which specifies the vector dimension to use in the vector index, if any.
 
 ## Syntax
+<a name="aws-properties-neptunegraph-graph-vectorsearchconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-neptunegraph-graph-vectorsearchconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "VectorSearchDimension" : Integer
+  "[VectorSearchDimension](#cfn-neptunegraph-graph-vectorsearchconfiguration-vectorsearchdimension)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-neptunegraph-graph-vectorsearchconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  VectorSearchDimension: Integer
-
+```
+  [VectorSearchDimension](#cfn-neptunegraph-graph-vectorsearchconfiguration-vectorsearchdimension): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-neptunegraph-graph-vectorsearchconfiguration-properties"></a>
 
-`VectorSearchDimension`
-
+`VectorSearchDimension`  <a name="cfn-neptunegraph-graph-vectorsearchconfiguration-vectorsearchdimension"></a>
 The number of dimensions.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::NeptuneGraph::GraphSnapshot
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

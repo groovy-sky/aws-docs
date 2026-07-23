@@ -2,58 +2,44 @@
 title: "AWS::Bedrock::ApplicationInferenceProfile InferenceProfileModelSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::ApplicationInferenceProfile InferenceProfileModelSource
+<a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource"></a>
 
 Contains information about the model or system-defined inference profile that is the source for an inference profile..
 
 ## Syntax
+<a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "CopyFrom" : String
+  "[CopyFrom](#cfn-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-copyfrom)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-syntax.yaml"></a>
 
-```yaml
-
-  CopyFrom: String
-
+```
+  [CopyFrom](#cfn-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-copyfrom): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-properties"></a>
 
-`CopyFrom`
-
+`CopyFrom`  <a name="cfn-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-copyfrom"></a>
 The ARN of the model or system-defined inference profile that is the source for the inference profile.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-us-gov|-cn|-iso|-iso-b):bedrock:(|[0-9a-z-]{0,20}):(|[0-9]{12}):(inference-profile|foundation-model)/[a-zA-Z0-9-:.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceProfileModel
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(|-us-gov|-cn|-iso|-iso-b):bedrock:(|[0-9a-z-]{0,20}):(|[0-9]{12}):(inference-profile|foundation-model)/[a-zA-Z0-9-:.]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

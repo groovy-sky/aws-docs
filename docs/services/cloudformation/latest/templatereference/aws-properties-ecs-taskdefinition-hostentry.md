@@ -2,67 +2,49 @@
 title: "AWS::ECS::TaskDefinition HostEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition HostEntry
+<a name="aws-properties-ecs-taskdefinition-hostentry"></a>
 
-The `HostEntry` property specifies a hostname and an IP address that are
-added to the `/etc/hosts` file of a container through the
-`extraHosts` parameter of its `ContainerDefinition`
-resource.
+The `HostEntry` property specifies a hostname and an IP address that are added to the `/etc/hosts` file of a container through the `extraHosts` parameter of its `ContainerDefinition` resource.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-hostentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-hostentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "Hostname" : String,
-  "IpAddress" : String
+  "[Hostname](#cfn-ecs-taskdefinition-hostentry-hostname)" : {{String}},
+  "[IpAddress](#cfn-ecs-taskdefinition-hostentry-ipaddress)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-hostentry-syntax.yaml"></a>
 
-```yaml
-
-  Hostname: String
-  IpAddress: String
-
+```
+  [Hostname](#cfn-ecs-taskdefinition-hostentry-hostname): {{String}}
+  [IpAddress](#cfn-ecs-taskdefinition-hostentry-ipaddress): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-hostentry-properties"></a>
 
-`Hostname`
-
+`Hostname`  <a name="cfn-ecs-taskdefinition-hostentry-hostname"></a>
 The hostname to use in the `/etc/hosts` entry.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IpAddress`
-
+`IpAddress`  <a name="cfn-ecs-taskdefinition-hostentry-ipaddress"></a>
 The IP address to use in the `/etc/hosts` entry.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HealthCheck
-
-HostVolumeProperties
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

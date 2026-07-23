@@ -2,177 +2,134 @@
 title: "AWS::LicenseManager::Grant"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LicenseManager::Grant
+<a name="aws-resource-licensemanager-grant"></a>
 
 Specifies a grant.
 
-A grant shares the use of license entitlements with specific AWS accounts. For more information,
-see [Granted \
-licenses](../../../license-manager/latest/userguide/granted-licenses.md) in the _AWS License Manager User Guide_.
+A grant shares the use of license entitlements with specific AWS accounts. For more information, see [Granted licenses](https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html) in the *AWS License Manager User Guide*.
 
 ## Syntax
+<a name="aws-resource-licensemanager-grant-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-licensemanager-grant-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::LicenseManager::Grant",
   "Properties" : {
-      "AllowedOperations" : [ String, ... ],
-      "GrantName" : String,
-      "HomeRegion" : String,
-      "LicenseArn" : String,
-      "Principals" : [ String, ... ],
-      "Status" : String,
-      "Tags" : [ Tag, ... ]
+      "[AllowedOperations](#cfn-licensemanager-grant-allowedoperations)" : {{[ String, ... ]}},
+      "[GrantName](#cfn-licensemanager-grant-grantname)" : {{String}},
+      "[HomeRegion](#cfn-licensemanager-grant-homeregion)" : {{String}},
+      "[LicenseArn](#cfn-licensemanager-grant-licensearn)" : {{String}},
+      "[Principals](#cfn-licensemanager-grant-principals)" : {{[ String, ... ]}},
+      "[Status](#cfn-licensemanager-grant-status)" : {{String}},
+      "[Tags](#cfn-licensemanager-grant-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-licensemanager-grant-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::LicenseManager::Grant
 Properties:
-  AllowedOperations:
-    - String
-  GrantName: String
-  HomeRegion: String
-  LicenseArn: String
-  Principals:
-    - String
-  Status: String
-  Tags:
-    - Tag
-
+  [AllowedOperations](#cfn-licensemanager-grant-allowedoperations): {{
+    - String}}
+  [GrantName](#cfn-licensemanager-grant-grantname): {{String}}
+  [HomeRegion](#cfn-licensemanager-grant-homeregion): {{String}}
+  [LicenseArn](#cfn-licensemanager-grant-licensearn): {{String}}
+  [Principals](#cfn-licensemanager-grant-principals): {{
+    - String}}
+  [Status](#cfn-licensemanager-grant-status): {{String}}
+  [Tags](#cfn-licensemanager-grant-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-licensemanager-grant-properties"></a>
 
-`AllowedOperations`
-
+`AllowedOperations`  <a name="cfn-licensemanager-grant-allowedoperations"></a>
 Allowed operations for the grant.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `8`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `8`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GrantName`
-
+`GrantName`  <a name="cfn-licensemanager-grant-grantname"></a>
 Grant name.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HomeRegion`
-
+`HomeRegion`  <a name="cfn-licensemanager-grant-homeregion"></a>
 Home Region of the grant.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LicenseArn`
-
+`LicenseArn`  <a name="cfn-licensemanager-grant-licensearn"></a>
 License ARN.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Principals`  <a name="cfn-licensemanager-grant-principals"></a>
+The grant principals. You can specify one of the following as an Amazon Resource Name (ARN):
++ An AWS account, which includes only the account specified.
++ An organizational unit (OU), which includes all accounts in the OU.
++ An organization, which will include all accounts across your organization.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Principals`
-
-The grant principals. You can specify one of the following as an Amazon Resource Name
-(ARN):
-
-- An AWS account, which includes only the account specified.
-
-- An organizational unit (OU), which includes all accounts in the OU.
-
-- An organization, which will include all accounts across your organization.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-licensemanager-grant-status"></a>
 Granted license status.
+*Required*: No
+*Type*: String
+*Allowed values*: `AVAILABLE | PENDING_AVAILABLE | DEACTIVATED | SUSPENDED | EXPIRED | PENDING_DELETE | DELETED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AVAILABLE | PENDING_AVAILABLE | DEACTIVATED | SUSPENDED | EXPIRED | PENDING_DELETE | DELETED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-licensemanager-grant-tags"></a>
 One or more tags.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-licensemanager-grant-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-licensemanager-grant-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-licensemanager-grant-return-values"></a>
 
 ### Ref
+<a name="aws-resource-licensemanager-grant-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the grant.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-licensemanager-grant-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`GrantArn`
+####
+<a name="aws-resource-licensemanager-grant-return-values-fn--getatt-fn--getatt"></a>
 
+`GrantArn`  <a name="GrantArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the grant.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The grant version.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS License Manager
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

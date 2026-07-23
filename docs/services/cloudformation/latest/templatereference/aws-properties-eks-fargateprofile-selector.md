@@ -2,68 +2,51 @@
 title: "AWS::EKS::FargateProfile Selector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::FargateProfile Selector
+<a name="aws-properties-eks-fargateprofile-selector"></a>
 
 An object representing an AWS Fargate profile selector.
 
 ## Syntax
+<a name="aws-properties-eks-fargateprofile-selector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-eks-fargateprofile-selector-syntax.json"></a>
 
-```json
-
+```
 {
-  "Labels" : [ Label, ... ],
-  "Namespace" : String
+  "[Labels](#cfn-eks-fargateprofile-selector-labels)" : {{[ Label, ... ]}},
+  "[Namespace](#cfn-eks-fargateprofile-selector-namespace)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-eks-fargateprofile-selector-syntax.yaml"></a>
 
-```yaml
-
-  Labels:
-    - Label
-  Namespace: String
-
+```
+  [Labels](#cfn-eks-fargateprofile-selector-labels): {{
+    - Label}}
+  [Namespace](#cfn-eks-fargateprofile-selector-namespace): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-eks-fargateprofile-selector-properties"></a>
 
-`Labels`
+`Labels`  <a name="cfn-eks-fargateprofile-selector-labels"></a>
+The Kubernetes labels that the selector should match. A pod must contain all of the labels that are specified in the selector for it to be considered a match.
+*Required*: No
+*Type*: Array of [Label](aws-properties-eks-fargateprofile-label.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Kubernetes labels that the selector should match. A pod must contain all of the labels
-that are specified in the selector for it to be considered a match.
-
-_Required_: No
-
-_Type_: Array of [Label](aws-properties-eks-fargateprofile-label.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-eks-fargateprofile-selector-namespace"></a>
 The Kubernetes `namespace` that the selector should match.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Label
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

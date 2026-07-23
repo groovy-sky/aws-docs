@@ -2,129 +2,103 @@
 title: "AWS::Route53Profiles::ProfileResourceAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Profiles::ProfileResourceAssociation
+<a name="aws-resource-route53profiles-profileresourceassociation"></a>
 
-The association between a Route 53 Profile and resources.
+ The association between a Route 53 Profile and resources.
 
 ## Syntax
+<a name="aws-resource-route53profiles-profileresourceassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53profiles-profileresourceassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53Profiles::ProfileResourceAssociation",
   "Properties" : {
-      "Name" : String,
-      "ProfileId" : String,
-      "ResourceArn" : String,
-      "ResourceProperties" : String
+      "[Name](#cfn-route53profiles-profileresourceassociation-name)" : {{String}},
+      "[ProfileId](#cfn-route53profiles-profileresourceassociation-profileid)" : {{String}},
+      "[ResourceArn](#cfn-route53profiles-profileresourceassociation-resourcearn)" : {{String}},
+      "[ResourceProperties](#cfn-route53profiles-profileresourceassociation-resourceproperties)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53profiles-profileresourceassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Profiles::ProfileResourceAssociation
 Properties:
-  Name: String
-  ProfileId: String
-  ResourceArn: String
-  ResourceProperties: String
-
+  [Name](#cfn-route53profiles-profileresourceassociation-name): {{String}}
+  [ProfileId](#cfn-route53profiles-profileresourceassociation-profileid): {{String}}
+  [ResourceArn](#cfn-route53profiles-profileresourceassociation-resourcearn): {{String}}
+  [ResourceProperties](#cfn-route53profiles-profileresourceassociation-resourceproperties): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-route53profiles-profileresourceassociation-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-route53profiles-profileresourceassociation-name"></a>
+ Name of the Profile resource association.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Name of the Profile resource association.
+`ProfileId`  <a name="cfn-route53profiles-profileresourceassociation-profileid"></a>
+ Profile ID of the Profile that the resources are associated with.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`ResourceArn`  <a name="cfn-route53profiles-profileresourceassociation-resourcearn"></a>
+ The Amazon Resource Name (ARN) of the resource association.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfileId`
-
-Profile ID of the Profile that the resources are associated with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceArn`
-
-The Amazon Resource Name (ARN) of the resource association.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceProperties`
-
-If the DNS resource is a DNS Firewall rule group, this indicates the priority.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ResourceProperties`  <a name="cfn-route53profiles-profileresourceassociation-resourceproperties"></a>
+ If the DNS resource is a DNS Firewall rule group, this indicates the priority.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53profiles-profileresourceassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53profiles-profileresourceassociation-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `ProfileResourceAssociation` ID for the profile resource association, such as `rpr-001ba2563f9example6`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`ProfileResourceAssociation` ID for the profile resource association, such as `rpr-001ba2563f9example6`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53profiles-profileresourceassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-route53profiles-profileresourceassociation-return-values-fn--getatt-fn--getatt"></a>
 
-ID of the Profile resource association.
+`Id`  <a name="Id-fn::getatt"></a>
+ ID of the Profile resource association.
 
-`ResourceType`
-
-Resource type, such as a private hosted zone, interface VPC endpoint, or DNS Firewall rule group.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+`ResourceType`  <a name="ResourceType-fn::getatt"></a>
+ Resource type, such as a private hosted zone, interface VPC endpoint, Resolver query log configuration, or DNS Firewall rule group.
 
 All content copied from https://docs.aws.amazon.com/.

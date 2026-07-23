@@ -2,78 +2,52 @@
 title: "AWS::ImageBuilder::ImagePipeline ImageTestsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImagePipeline ImageTestsConfiguration
+<a name="aws-properties-imagebuilder-imagepipeline-imagetestsconfiguration"></a>
 
-When you create an image or container recipe with Image Builder, you can add the build or
-test components that your image pipeline uses to create the final image. You must
-have at least one build component to create a recipe, but test components are not required.
-Your pipeline runs tests after it builds the image, to ensure that the target image is
-functional and can be used reliably for launching Amazon EC2 instances.
+Configure image tests for your pipeline build. Tests run after building the image, to verify that the AMI or container image is valid before distributing it.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-imagepipeline-imagetestsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-imagepipeline-imagetestsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageTestsEnabled" : Boolean,
-  "TimeoutMinutes" : Integer
+  "[ImageTestsEnabled](#cfn-imagebuilder-imagepipeline-imagetestsconfiguration-imagetestsenabled)" : {{Boolean}},
+  "[TimeoutMinutes](#cfn-imagebuilder-imagepipeline-imagetestsconfiguration-timeoutminutes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-imagepipeline-imagetestsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ImageTestsEnabled: Boolean
-  TimeoutMinutes: Integer
-
+```
+  [ImageTestsEnabled](#cfn-imagebuilder-imagepipeline-imagetestsconfiguration-imagetestsenabled): {{Boolean}}
+  [TimeoutMinutes](#cfn-imagebuilder-imagepipeline-imagetestsconfiguration-timeoutminutes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-imagepipeline-imagetestsconfiguration-properties"></a>
 
-`ImageTestsEnabled`
+`ImageTestsEnabled`  <a name="cfn-imagebuilder-imagepipeline-imagetestsconfiguration-imagetestsenabled"></a>
+Determines if tests should run after building the image. Image Builder defaults to enable tests to run following the image build, before image distribution.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Defines if tests should be executed when building this image. For example,
-`true` or `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeoutMinutes`
-
+`TimeoutMinutes`  <a name="cfn-imagebuilder-imagepipeline-imagetestsconfiguration-timeoutminutes"></a>
 The maximum time in minutes that tests are permitted to run.
-
-###### Note
-
-The timeout property is not currently active. This value is
-ignored.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `60`
-
-_Maximum_: `1440`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageScanningConfiguration
-
-PipelineLoggingConfiguration
+The timeout property is not currently active. This value is ignored.
+*Required*: No
+*Type*: Integer
+*Minimum*: `60`
+*Maximum*: `1440`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::CloudFront::AnycastIpList Tags"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::AnycastIpList Tags
+<a name="aws-properties-cloudfront-anycastiplist-tags"></a>
 
 A complex type that contains zero or more `Tag` elements.
 
 ## Syntax
+<a name="aws-properties-cloudfront-anycastiplist-tags-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-anycastiplist-tags-syntax.json"></a>
 
-```json
-
+```
 {
-  "Items" : [ Tag, ... ]
+  "[Items](#cfn-cloudfront-anycastiplist-tags-items)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-anycastiplist-tags-syntax.yaml"></a>
 
-```yaml
-
-  Items:
-    - Tag
-
+```
+  [Items](#cfn-cloudfront-anycastiplist-tags-items): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-anycastiplist-tags-properties"></a>
 
-`Items`
-
+`Items`  <a name="cfn-cloudfront-anycastiplist-tags-items"></a>
 A complex type that contains `Tag` elements.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cloudfront-anycastiplist-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::CloudFront::CachePolicy
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudfront-anycastiplist-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

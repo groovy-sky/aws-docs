@@ -2,78 +2,59 @@
 title: "AWS::QuickSight::Dashboard GeospatialLayerJoinDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialLayerJoinDefinition
+<a name="aws-properties-quicksight-dashboard-geospatiallayerjoindefinition"></a>
 
 The custom actions for a layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatiallayerjoindefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatiallayerjoindefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColorField" : GeospatialLayerColorField,
-  "DatasetKeyField" : UnaggregatedField,
-  "ShapeKeyField" : String
+  "[ColorField](#cfn-quicksight-dashboard-geospatiallayerjoindefinition-colorfield)" : {{GeospatialLayerColorField}},
+  "[DatasetKeyField](#cfn-quicksight-dashboard-geospatiallayerjoindefinition-datasetkeyfield)" : {{UnaggregatedField}},
+  "[ShapeKeyField](#cfn-quicksight-dashboard-geospatiallayerjoindefinition-shapekeyfield)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatiallayerjoindefinition-syntax.yaml"></a>
 
-```yaml
-
-  ColorField:
-    GeospatialLayerColorField
-  DatasetKeyField:
-    UnaggregatedField
-  ShapeKeyField: String
-
+```
+  [ColorField](#cfn-quicksight-dashboard-geospatiallayerjoindefinition-colorfield): {{
+    GeospatialLayerColorField}}
+  [DatasetKeyField](#cfn-quicksight-dashboard-geospatiallayerjoindefinition-datasetkeyfield): {{
+    UnaggregatedField}}
+  [ShapeKeyField](#cfn-quicksight-dashboard-geospatiallayerjoindefinition-shapekeyfield): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatiallayerjoindefinition-properties"></a>
 
-`ColorField`
-
+`ColorField`  <a name="cfn-quicksight-dashboard-geospatiallayerjoindefinition-colorfield"></a>
 The geospatial color field for the join definition.
+*Required*: No
+*Type*: [GeospatialLayerColorField](aws-properties-quicksight-dashboard-geospatiallayercolorfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialLayerColorField](aws-properties-quicksight-dashboard-geospatiallayercolorfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatasetKeyField`
-
+`DatasetKeyField`  <a name="cfn-quicksight-dashboard-geospatiallayerjoindefinition-datasetkeyfield"></a>
 Property description not available.
+*Required*: No
+*Type*: [UnaggregatedField](aws-properties-quicksight-dashboard-unaggregatedfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [UnaggregatedField](aws-properties-quicksight-dashboard-unaggregatedfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShapeKeyField`
-
+`ShapeKeyField`  <a name="cfn-quicksight-dashboard-geospatiallayerjoindefinition-shapekeyfield"></a>
 The name of the field or property in the geospatial data source.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLayerItem
-
-GeospatialLayerMapConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

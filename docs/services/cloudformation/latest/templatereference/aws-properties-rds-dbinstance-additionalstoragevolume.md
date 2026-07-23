@@ -2,122 +2,84 @@
 title: "AWS::RDS::DBInstance AdditionalStorageVolume"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBInstance AdditionalStorageVolume
+<a name="aws-properties-rds-dbinstance-additionalstoragevolume"></a>
 
-Contains details about an additional storage volume for a DB instance. RDS support
-additional storage volumes for RDS for Oracle and RDS for SQL Server.
+Contains details about an additional storage volume for a DB instance. RDS support additional storage volumes for RDS for Oracle and RDS for SQL Server.
 
 ## Syntax
+<a name="aws-properties-rds-dbinstance-additionalstoragevolume-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rds-dbinstance-additionalstoragevolume-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllocatedStorage" : String,
-  "Iops" : Integer,
-  "MaxAllocatedStorage" : Integer,
-  "StorageThroughput" : Integer,
-  "StorageType" : String,
-  "VolumeName" : String
+  "[AllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage)" : {{String}},
+  "[Iops](#cfn-rds-dbinstance-additionalstoragevolume-iops)" : {{Integer}},
+  "[MaxAllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-maxallocatedstorage)" : {{Integer}},
+  "[StorageThroughput](#cfn-rds-dbinstance-additionalstoragevolume-storagethroughput)" : {{Integer}},
+  "[StorageType](#cfn-rds-dbinstance-additionalstoragevolume-storagetype)" : {{String}},
+  "[VolumeName](#cfn-rds-dbinstance-additionalstoragevolume-volumename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rds-dbinstance-additionalstoragevolume-syntax.yaml"></a>
 
-```yaml
-
-  AllocatedStorage: String
-  Iops: Integer
-  MaxAllocatedStorage: Integer
-  StorageThroughput: Integer
-  StorageType: String
-  VolumeName: String
-
+```
+  [AllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage): {{String}}
+  [Iops](#cfn-rds-dbinstance-additionalstoragevolume-iops): {{Integer}}
+  [MaxAllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-maxallocatedstorage): {{Integer}}
+  [StorageThroughput](#cfn-rds-dbinstance-additionalstoragevolume-storagethroughput): {{Integer}}
+  [StorageType](#cfn-rds-dbinstance-additionalstoragevolume-storagetype): {{String}}
+  [VolumeName](#cfn-rds-dbinstance-additionalstoragevolume-volumename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rds-dbinstance-additionalstoragevolume-properties"></a>
 
-`AllocatedStorage`
+`AllocatedStorage`  <a name="cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage"></a>
+The amount of storage allocated for the additional storage volume, in gibibytes (GiB). The minimum is 20 GiB. The maximum is 65,536 GiB (64 TiB).
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The amount of storage allocated for the additional storage volume, in gibibytes (GiB).
-The minimum is 20 GiB. The maximum is 65,536 GiB (64 TiB).
+`Iops`  <a name="cfn-rds-dbinstance-additionalstoragevolume-iops"></a>
+The number of I/O operations per second (IOPS) provisioned for the additional storage volume.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MaxAllocatedStorage`  <a name="cfn-rds-dbinstance-additionalstoragevolume-maxallocatedstorage"></a>
+The upper limit in gibibytes (GiB) to which RDS can automatically scale the storage of the additional storage volume.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`StorageThroughput`  <a name="cfn-rds-dbinstance-additionalstoragevolume-storagethroughput"></a>
+The storage throughput value for the additional storage volume, in mebibytes per second (MiBps). This setting applies only to the General Purpose SSD (`gp3`) storage type.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Iops`
-
-The number of I/O operations per second (IOPS) provisioned for the additional storage
-volume.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxAllocatedStorage`
-
-The upper limit in gibibytes (GiB) to which RDS can automatically scale the storage of
-the additional storage volume.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageThroughput`
-
-The storage throughput value for the additional storage volume, in mebibytes per second (MiBps). This setting applies only to the General Purpose SSD ( `gp3`) storage type.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageType`
-
+`StorageType`  <a name="cfn-rds-dbinstance-additionalstoragevolume-storagetype"></a>
 The storage type for the additional storage volume.
-
 Valid Values: `GP3 | IO2`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VolumeName`
-
+`VolumeName`  <a name="cfn-rds-dbinstance-additionalstoragevolume-volumename"></a>
 The name of the additional storage volume.
-
 Valid Values: `RDSDBDATA2 | RDSDBDATA3 | RDSDBDATA4`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RDS::DBInstance
-
-CertificateDetails
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

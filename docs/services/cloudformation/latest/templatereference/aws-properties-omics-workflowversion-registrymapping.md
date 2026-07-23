@@ -2,114 +2,77 @@
 title: "AWS::Omics::WorkflowVersion RegistryMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::WorkflowVersion RegistryMapping
+<a name="aws-properties-omics-workflowversion-registrymapping"></a>
 
-If you are using the ECR pull through cache feature, the registry mapping
-maps between the ECR repository and the upstream registry where container images
-are pulled and synchronized.
+If you are using the ECR pull through cache feature, the registry mapping maps between the ECR repository and the upstream registry where container images are pulled and synchronized.
 
 ## Syntax
+<a name="aws-properties-omics-workflowversion-registrymapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-workflowversion-registrymapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "EcrAccountId" : String,
-  "EcrRepositoryPrefix" : String,
-  "UpstreamRegistryUrl" : String,
-  "UpstreamRepositoryPrefix" : String
+  "[EcrAccountId](#cfn-omics-workflowversion-registrymapping-ecraccountid)" : {{String}},
+  "[EcrRepositoryPrefix](#cfn-omics-workflowversion-registrymapping-ecrrepositoryprefix)" : {{String}},
+  "[UpstreamRegistryUrl](#cfn-omics-workflowversion-registrymapping-upstreamregistryurl)" : {{String}},
+  "[UpstreamRepositoryPrefix](#cfn-omics-workflowversion-registrymapping-upstreamrepositoryprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-workflowversion-registrymapping-syntax.yaml"></a>
 
-```yaml
-
-  EcrAccountId: String
-  EcrRepositoryPrefix: String
-  UpstreamRegistryUrl: String
-  UpstreamRepositoryPrefix: String
-
+```
+  [EcrAccountId](#cfn-omics-workflowversion-registrymapping-ecraccountid): {{String}}
+  [EcrRepositoryPrefix](#cfn-omics-workflowversion-registrymapping-ecrrepositoryprefix): {{String}}
+  [UpstreamRegistryUrl](#cfn-omics-workflowversion-registrymapping-upstreamregistryurl): {{String}}
+  [UpstreamRepositoryPrefix](#cfn-omics-workflowversion-registrymapping-upstreamrepositoryprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-workflowversion-registrymapping-properties"></a>
 
-`EcrAccountId`
-
+`EcrAccountId`  <a name="cfn-omics-workflowversion-registrymapping-ecraccountid"></a>
 Account ID of the account that owns the upstream container image.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]+$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]+$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EcrRepositoryPrefix`
-
+`EcrRepositoryPrefix`  <a name="cfn-omics-workflowversion-registrymapping-ecrrepositoryprefix"></a>
 The repository prefix to use in the ECR private repository.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UpstreamRegistryUrl`
-
+`UpstreamRegistryUrl`  <a name="cfn-omics-workflowversion-registrymapping-upstreamregistryurl"></a>
 The URI of the upstream registry.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `750`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `750`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UpstreamRepositoryPrefix`
-
+`UpstreamRepositoryPrefix`  <a name="cfn-omics-workflowversion-registrymapping-upstreamrepositoryprefix"></a>
 The repository prefix of the corresponding repository in the upstream registry.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `2`
-
-_Maximum_: `30`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageMapping
-
-SourceReference
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `2`
+*Maximum*: `30`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

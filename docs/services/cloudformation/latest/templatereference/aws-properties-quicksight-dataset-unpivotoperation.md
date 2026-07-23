@@ -2,150 +2,103 @@
 title: "AWS::QuickSight::DataSet UnpivotOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet UnpivotOperation
+<a name="aws-properties-quicksight-dataset-unpivotoperation"></a>
 
 A transform operation that converts columns into rows, normalizing the data structure.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-unpivotoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-unpivotoperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alias" : String,
-  "ColumnsToUnpivot" : [ ColumnToUnpivot, ... ],
-  "Source" : TransformOperationSource,
-  "UnpivotedLabelColumnId" : String,
-  "UnpivotedLabelColumnName" : String,
-  "UnpivotedValueColumnId" : String,
-  "UnpivotedValueColumnName" : String
+  "[Alias](#cfn-quicksight-dataset-unpivotoperation-alias)" : {{String}},
+  "[ColumnsToUnpivot](#cfn-quicksight-dataset-unpivotoperation-columnstounpivot)" : {{[ ColumnToUnpivot, ... ]}},
+  "[Source](#cfn-quicksight-dataset-unpivotoperation-source)" : {{TransformOperationSource}},
+  "[UnpivotedLabelColumnId](#cfn-quicksight-dataset-unpivotoperation-unpivotedlabelcolumnid)" : {{String}},
+  "[UnpivotedLabelColumnName](#cfn-quicksight-dataset-unpivotoperation-unpivotedlabelcolumnname)" : {{String}},
+  "[UnpivotedValueColumnId](#cfn-quicksight-dataset-unpivotoperation-unpivotedvaluecolumnid)" : {{String}},
+  "[UnpivotedValueColumnName](#cfn-quicksight-dataset-unpivotoperation-unpivotedvaluecolumnname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-unpivotoperation-syntax.yaml"></a>
 
-```yaml
-
-  Alias: String
-  ColumnsToUnpivot:
-    - ColumnToUnpivot
-  Source:
-    TransformOperationSource
-  UnpivotedLabelColumnId: String
-  UnpivotedLabelColumnName: String
-  UnpivotedValueColumnId: String
-  UnpivotedValueColumnName: String
-
+```
+  [Alias](#cfn-quicksight-dataset-unpivotoperation-alias): {{String}}
+  [ColumnsToUnpivot](#cfn-quicksight-dataset-unpivotoperation-columnstounpivot): {{
+    - ColumnToUnpivot}}
+  [Source](#cfn-quicksight-dataset-unpivotoperation-source): {{
+    TransformOperationSource}}
+  [UnpivotedLabelColumnId](#cfn-quicksight-dataset-unpivotoperation-unpivotedlabelcolumnid): {{String}}
+  [UnpivotedLabelColumnName](#cfn-quicksight-dataset-unpivotoperation-unpivotedlabelcolumnname): {{String}}
+  [UnpivotedValueColumnId](#cfn-quicksight-dataset-unpivotoperation-unpivotedvaluecolumnid): {{String}}
+  [UnpivotedValueColumnName](#cfn-quicksight-dataset-unpivotoperation-unpivotedvaluecolumnname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-unpivotoperation-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-quicksight-dataset-unpivotoperation-alias"></a>
 Alias for this operation.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnsToUnpivot`
-
+`ColumnsToUnpivot`  <a name="cfn-quicksight-dataset-unpivotoperation-columnstounpivot"></a>
 The list of columns to unpivot from the source data.
+*Required*: Yes
+*Type*: Array of [ColumnToUnpivot](aws-properties-quicksight-dataset-columntounpivot.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ColumnToUnpivot](aws-properties-quicksight-dataset-columntounpivot.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-quicksight-dataset-unpivotoperation-source"></a>
 The source transform operation that provides input data for unpivoting.
+*Required*: Yes
+*Type*: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnpivotedLabelColumnId`
-
+`UnpivotedLabelColumnId`  <a name="cfn-quicksight-dataset-unpivotoperation-unpivotedlabelcolumnid"></a>
 A unique identifier for the new column that will contain the unpivoted column names.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnpivotedLabelColumnName`
-
+`UnpivotedLabelColumnName`  <a name="cfn-quicksight-dataset-unpivotoperation-unpivotedlabelcolumnname"></a>
 The name for the new column that will contain the unpivoted column names.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnpivotedValueColumnId`
-
+`UnpivotedValueColumnId`  <a name="cfn-quicksight-dataset-unpivotoperation-unpivotedvaluecolumnid"></a>
 A unique identifier for the new column that will contain the unpivoted values.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnpivotedValueColumnName`
-
+`UnpivotedValueColumnName`  <a name="cfn-quicksight-dataset-unpivotoperation-unpivotedvaluecolumnname"></a>
 The name for the new column that will contain the unpivoted values.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UniqueKey
-
-UntagColumnOperation
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

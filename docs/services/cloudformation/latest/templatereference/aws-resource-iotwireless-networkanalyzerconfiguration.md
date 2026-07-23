@@ -2,148 +2,113 @@
 title: "AWS::IoTWireless::NetworkAnalyzerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::NetworkAnalyzerConfiguration
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration"></a>
 
 Network analyzer configuration.
 
 ## Syntax
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTWireless::NetworkAnalyzerConfiguration",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ],
-      "TraceContent" : TraceContent,
-      "WirelessDevices" : [ String, ... ],
-      "WirelessGateways" : [ String, ... ]
+      "[Description](#cfn-iotwireless-networkanalyzerconfiguration-description)" : {{String}},
+      "[Name](#cfn-iotwireless-networkanalyzerconfiguration-name)" : {{String}},
+      "[Tags](#cfn-iotwireless-networkanalyzerconfiguration-tags)" : {{[ Tag, ... ]}},
+      "[TraceContent](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent)" : {{TraceContent}},
+      "[WirelessDevices](#cfn-iotwireless-networkanalyzerconfiguration-wirelessdevices)" : {{[ String, ... ]}},
+      "[WirelessGateways](#cfn-iotwireless-networkanalyzerconfiguration-wirelessgateways)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTWireless::NetworkAnalyzerConfiguration
 Properties:
-  Description: String
-  Name: String
-  Tags:
-    - Tag
-  TraceContent:
-    TraceContent
-  WirelessDevices:
-    - String
-  WirelessGateways:
-    - String
-
+  [Description](#cfn-iotwireless-networkanalyzerconfiguration-description): {{String}}
+  [Name](#cfn-iotwireless-networkanalyzerconfiguration-name): {{String}}
+  [Tags](#cfn-iotwireless-networkanalyzerconfiguration-tags): {{
+    - Tag}}
+  [TraceContent](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent): {{
+    TraceContent}}
+  [WirelessDevices](#cfn-iotwireless-networkanalyzerconfiguration-wirelessdevices): {{
+    - String}}
+  [WirelessGateways](#cfn-iotwireless-networkanalyzerconfiguration-wirelessgateways): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-iotwireless-networkanalyzerconfiguration-description"></a>
 The description of the resource.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-iotwireless-networkanalyzerconfiguration-name"></a>
 Name of the network analyzer configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]+$`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Tags`  <a name="cfn-iotwireless-networkanalyzerconfiguration-tags"></a>
+The tags to attach to the specified resource. Tags are metadata that you can use to manage a resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotwireless-networkanalyzerconfiguration-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]+$`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tags to attach to the specified resource. Tags are metadata that you can use to
-manage a resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotwireless-networkanalyzerconfiguration-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TraceContent`
-
+`TraceContent`  <a name="cfn-iotwireless-networkanalyzerconfiguration-tracecontent"></a>
 Trace content for your wireless gateway and wireless device resources.
+*Required*: No
+*Type*: [TraceContent](aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`WirelessDevices`  <a name="cfn-iotwireless-networkanalyzerconfiguration-wirelessdevices"></a>
+Wireless device resources to add to the network analyzer configuration. Provide the `WirelessDeviceId` of the resource to add in the input array.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [TraceContent](aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WirelessDevices`
-
-Wireless device resources to add to the network analyzer configuration. Provide the
-`WirelessDeviceId` of the resource to add in the input array.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WirelessGateways`
-
-Wireless gateway resources to add to the network analyzer configuration. Provide the
-`WirelessGatewayId` of the resource to add in the input array.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`WirelessGateways`  <a name="cfn-iotwireless-networkanalyzerconfiguration-wirelessgateways"></a>
+Wireless gateway resources to add to the network analyzer configuration. Provide the `WirelessGatewayId` of the resource to add in the input array.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the network analyzer configuration.
 
 ### Fn::GetAtt
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-iotwireless-networkanalyzerconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the resource.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

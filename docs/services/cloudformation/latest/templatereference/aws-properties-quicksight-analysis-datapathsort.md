@@ -2,71 +2,53 @@
 title: "AWS::QuickSight::Analysis DataPathSort"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DataPathSort
+<a name="aws-properties-quicksight-analysis-datapathsort"></a>
 
 Allows data paths to be sorted by a specific data value.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-datapathsort-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-datapathsort-syntax.json"></a>
 
-```json
-
+```
 {
-  "Direction" : String,
-  "SortPaths" : [ DataPathValue, ... ]
+  "[Direction](#cfn-quicksight-analysis-datapathsort-direction)" : {{String}},
+  "[SortPaths](#cfn-quicksight-analysis-datapathsort-sortpaths)" : {{[ DataPathValue, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-datapathsort-syntax.yaml"></a>
 
-```yaml
-
-  Direction: String
-  SortPaths:
-    - DataPathValue
-
+```
+  [Direction](#cfn-quicksight-analysis-datapathsort-direction): {{String}}
+  [SortPaths](#cfn-quicksight-analysis-datapathsort-sortpaths): {{
+    - DataPathValue}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-datapathsort-properties"></a>
 
-`Direction`
-
+`Direction`  <a name="cfn-quicksight-analysis-datapathsort-direction"></a>
 Determines the sort direction.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ASC | DESC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ASC | DESC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortPaths`
-
+`SortPaths`  <a name="cfn-quicksight-analysis-datapathsort-sortpaths"></a>
 The list of data paths that need to be sorted.
-
-_Required_: Yes
-
-_Type_: Array of [DataPathValue](aws-properties-quicksight-analysis-datapathvalue.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataPathLabelType
-
-DataPathType
+*Required*: Yes
+*Type*: Array of [DataPathValue](aws-properties-quicksight-analysis-datapathvalue.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

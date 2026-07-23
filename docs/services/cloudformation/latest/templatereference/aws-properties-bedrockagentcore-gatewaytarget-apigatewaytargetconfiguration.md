@@ -2,77 +2,58 @@
 title: "AWS::BedrockAgentCore::GatewayTarget ApiGatewayTargetConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget ApiGatewayTargetConfiguration
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration"></a>
 
 The configuration for an Amazon API Gateway target.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiGatewayToolConfiguration" : ApiGatewayToolConfiguration,
-  "RestApiId" : String,
-  "Stage" : String
+  "[ApiGatewayToolConfiguration](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-apigatewaytoolconfiguration)" : {{ApiGatewayToolConfiguration}},
+  "[RestApiId](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-restapiid)" : {{String}},
+  "[Stage](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-stage)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ApiGatewayToolConfiguration:
-    ApiGatewayToolConfiguration
-  RestApiId: String
-  Stage: String
-
+```
+  [ApiGatewayToolConfiguration](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-apigatewaytoolconfiguration): {{
+    ApiGatewayToolConfiguration}}
+  [RestApiId](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-restapiid): {{String}}
+  [Stage](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-stage): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-properties"></a>
 
-`ApiGatewayToolConfiguration`
-
+`ApiGatewayToolConfiguration`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-apigatewaytoolconfiguration"></a>
 The configuration for defining REST API tool filters and overrides for the gateway target.
+*Required*: Yes
+*Type*: [ApiGatewayToolConfiguration](aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ApiGatewayToolConfiguration](aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-restapiid"></a>
 The ID of the API Gateway REST API.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Stage`
-
+`Stage`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-stage"></a>
 The ID of the stage of the REST API to add as a target.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BedrockAgentCore::GatewayTarget
-
-ApiGatewayToolConfiguration
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

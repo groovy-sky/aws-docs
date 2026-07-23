@@ -2,180 +2,142 @@
 title: "AWS::SecurityAgent::AgentSpace"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::AgentSpace
+<a name="aws-resource-securityagent-agentspace"></a>
 
 The `AWS::SecurityAgent::AgentSpace` resource specifies an agent space for security testing. An agent space defines the scope of resources, integrations, and settings available to security testing operations.
 
 ## Syntax
+<a name="aws-resource-securityagent-agentspace-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securityagent-agentspace-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityAgent::AgentSpace",
   "Properties" : {
-      "AwsResources" : AWSResources,
-      "CodeReviewSettings" : CodeReviewSettings,
-      "Description" : String,
-      "IntegratedResources" : [ IntegratedResource, ... ],
-      "KmsKeyId" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ],
-      "TargetDomainIds" : [ String, ... ]
+      "[AwsResources](#cfn-securityagent-agentspace-awsresources)" : {{AWSResources}},
+      "[CodeReviewSettings](#cfn-securityagent-agentspace-codereviewsettings)" : {{CodeReviewSettings}},
+      "[Description](#cfn-securityagent-agentspace-description)" : {{String}},
+      "[IntegratedResources](#cfn-securityagent-agentspace-integratedresources)" : {{[ IntegratedResource, ... ]}},
+      "[KmsKeyId](#cfn-securityagent-agentspace-kmskeyid)" : {{String}},
+      "[Name](#cfn-securityagent-agentspace-name)" : {{String}},
+      "[Tags](#cfn-securityagent-agentspace-tags)" : {{[ Tag, ... ]}},
+      "[TargetDomainIds](#cfn-securityagent-agentspace-targetdomainids)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securityagent-agentspace-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityAgent::AgentSpace
 Properties:
-  AwsResources:
-    AWSResources
-  CodeReviewSettings:
-    CodeReviewSettings
-  Description: String
-  IntegratedResources:
-    - IntegratedResource
-  KmsKeyId: String
-  Name: String
-  Tags:
-    - Tag
-  TargetDomainIds:
-    - String
-
+  [AwsResources](#cfn-securityagent-agentspace-awsresources): {{
+    AWSResources}}
+  [CodeReviewSettings](#cfn-securityagent-agentspace-codereviewsettings): {{
+    CodeReviewSettings}}
+  [Description](#cfn-securityagent-agentspace-description): {{String}}
+  [IntegratedResources](#cfn-securityagent-agentspace-integratedresources): {{
+    - IntegratedResource}}
+  [KmsKeyId](#cfn-securityagent-agentspace-kmskeyid): {{String}}
+  [Name](#cfn-securityagent-agentspace-name): {{String}}
+  [Tags](#cfn-securityagent-agentspace-tags): {{
+    - Tag}}
+  [TargetDomainIds](#cfn-securityagent-agentspace-targetdomainids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-securityagent-agentspace-properties"></a>
 
-`AwsResources`
-
+`AwsResources`  <a name="cfn-securityagent-agentspace-awsresources"></a>
 The Amazon Web Services resources to associate with the agent space.
+*Required*: No
+*Type*: [AWSResources](aws-properties-securityagent-agentspace-awsresources.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AWSResources](aws-properties-securityagent-agentspace-awsresources.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeReviewSettings`
-
+`CodeReviewSettings`  <a name="cfn-securityagent-agentspace-codereviewsettings"></a>
 The code review settings for the agent space.
+*Required*: No
+*Type*: [CodeReviewSettings](aws-properties-securityagent-agentspace-codereviewsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CodeReviewSettings](aws-properties-securityagent-agentspace-codereviewsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-securityagent-agentspace-description"></a>
 A description of the agent space.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegratedResources`
-
+`IntegratedResources`  <a name="cfn-securityagent-agentspace-integratedresources"></a>
 The list of integrated resource items to update.
+*Required*: No
+*Type*: Array of [IntegratedResource](aws-properties-securityagent-agentspace-integratedresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [IntegratedResource](aws-properties-securityagent-agentspace-integratedresource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-securityagent-agentspace-kmskeyid"></a>
 The identifier of the Amazon Web Services KMS key to use for encrypting data in the agent space.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-securityagent-agentspace-name"></a>
 The name of the agent space.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-securityagent-agentspace-tags"></a>
 The tags to associate with the agent space.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-securityagent-agentspace-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-securityagent-agentspace-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetDomainIds`
-
+`TargetDomainIds`  <a name="cfn-securityagent-agentspace-targetdomainids"></a>
 The list of target domain identifiers to associate with the agent space.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-securityagent-agentspace-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securityagent-agentspace-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the agent space ID. For example:
 
-`{ "Ref": "MyAgentSpace" }`
+ `{ "Ref": "MyAgentSpace" }`
 
 For the agent space `MyAgentSpace`, `Ref` returns the unique identifier of the agent space.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-securityagent-agentspace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AgentSpaceId`
+####
+<a name="aws-resource-securityagent-agentspace-return-values-fn--getatt-fn--getatt"></a>
 
+`AgentSpaceId`  <a name="AgentSpaceId-fn::getatt"></a>
 The unique identifier of the agent space. For example: `as-0123456789abcdef0`.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date and time when the agent space was created, in ISO 8601 format. For example: `2024-01-01T00:00:00Z`.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The date and time when the agent space was last updated, in ISO 8601 format. For example: `2024-01-01T00:00:00Z`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Security Agent
-
-AWSResources
 
 All content copied from https://docs.aws.amazon.com/.

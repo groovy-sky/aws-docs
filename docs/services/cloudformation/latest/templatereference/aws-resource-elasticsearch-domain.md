@@ -2,426 +2,274 @@
 title: "AWS::Elasticsearch::Domain"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain
+<a name="aws-resource-elasticsearch-domain"></a>
 
-The AWS::Elasticsearch::Domain resource creates an Amazon OpenSearch Service
-domain.
+The AWS::Elasticsearch::Domain resource creates an Amazon OpenSearch Service domain.
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-legacy Elasticsearch. For instructions to upgrade domains defined within CloudFormation from
-Elasticsearch to OpenSearch, see [Remarks](../userguide/aws-resource-opensearchservice-domain.md#aws-resource-opensearchservice-domain--remarks).
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and legacy Elasticsearch. For instructions to upgrade domains defined within CloudFormation from Elasticsearch to OpenSearch, see [Remarks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html#aws-resource-opensearchservice-domain--remarks).
 
 ## Syntax
+<a name="aws-resource-elasticsearch-domain-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-elasticsearch-domain-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Elasticsearch::Domain",
   "Properties" : {
-      "AccessPolicies" : Json,
-      "AdvancedOptions" : {Key: Value, ...},
-      "AdvancedSecurityOptions" : AdvancedSecurityOptionsInput,
-      "CognitoOptions" : CognitoOptions,
-      "DomainEndpointOptions" : DomainEndpointOptions,
-      "DomainName" : String,
-      "EBSOptions" : EBSOptions,
-      "ElasticsearchClusterConfig" : ElasticsearchClusterConfig,
-      "ElasticsearchVersion" : String,
-      "EncryptionAtRestOptions" : EncryptionAtRestOptions,
-      "LogPublishingOptions" : {Key: Value, ...},
-      "NodeToNodeEncryptionOptions" : NodeToNodeEncryptionOptions,
-      "SnapshotOptions" : SnapshotOptions,
-      "Tags" : [ Tag, ... ],
-      "VPCOptions" : VPCOptions
+      "[AccessPolicies](#cfn-elasticsearch-domain-accesspolicies)" : {{Json}},
+      "[AdvancedOptions](#cfn-elasticsearch-domain-advancedoptions)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[AdvancedSecurityOptions](#cfn-elasticsearch-domain-advancedsecurityoptions)" : {{AdvancedSecurityOptionsInput}},
+      "[CognitoOptions](#cfn-elasticsearch-domain-cognitooptions)" : {{CognitoOptions}},
+      "[DomainEndpointOptions](#cfn-elasticsearch-domain-domainendpointoptions)" : {{DomainEndpointOptions}},
+      "[DomainName](#cfn-elasticsearch-domain-domainname)" : {{String}},
+      "[EBSOptions](#cfn-elasticsearch-domain-ebsoptions)" : {{EBSOptions}},
+      "[ElasticsearchClusterConfig](#cfn-elasticsearch-domain-elasticsearchclusterconfig)" : {{ElasticsearchClusterConfig}},
+      "[ElasticsearchVersion](#cfn-elasticsearch-domain-elasticsearchversion)" : {{String}},
+      "[EncryptionAtRestOptions](#cfn-elasticsearch-domain-encryptionatrestoptions)" : {{EncryptionAtRestOptions}},
+      "[LogPublishingOptions](#cfn-elasticsearch-domain-logpublishingoptions)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[NodeToNodeEncryptionOptions](#cfn-elasticsearch-domain-nodetonodeencryptionoptions)" : {{NodeToNodeEncryptionOptions}},
+      "[SnapshotOptions](#cfn-elasticsearch-domain-snapshotoptions)" : {{SnapshotOptions}},
+      "[Tags](#cfn-elasticsearch-domain-tags)" : {{[ Tag, ... ]}},
+      "[VPCOptions](#cfn-elasticsearch-domain-vpcoptions)" : {{VPCOptions}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-elasticsearch-domain-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Elasticsearch::Domain
 Properties:
-  AccessPolicies: Json
-  AdvancedOptions:
-    Key: Value
-  AdvancedSecurityOptions:
-    AdvancedSecurityOptionsInput
-  CognitoOptions:
-    CognitoOptions
-  DomainEndpointOptions:
-    DomainEndpointOptions
-  DomainName: String
-  EBSOptions:
-    EBSOptions
-  ElasticsearchClusterConfig:
-    ElasticsearchClusterConfig
-  ElasticsearchVersion: String
-  EncryptionAtRestOptions:
-    EncryptionAtRestOptions
-  LogPublishingOptions:
-    Key: Value
-  NodeToNodeEncryptionOptions:
-    NodeToNodeEncryptionOptions
-  SnapshotOptions:
-    SnapshotOptions
-  Tags:
-    - Tag
-  VPCOptions:
-    VPCOptions
-
+  [AccessPolicies](#cfn-elasticsearch-domain-accesspolicies): {{Json}}
+  [AdvancedOptions](#cfn-elasticsearch-domain-advancedoptions): {{
+    {{Key}}: {{Value}}}}
+  [AdvancedSecurityOptions](#cfn-elasticsearch-domain-advancedsecurityoptions): {{
+    AdvancedSecurityOptionsInput}}
+  [CognitoOptions](#cfn-elasticsearch-domain-cognitooptions): {{
+    CognitoOptions}}
+  [DomainEndpointOptions](#cfn-elasticsearch-domain-domainendpointoptions): {{
+    DomainEndpointOptions}}
+  [DomainName](#cfn-elasticsearch-domain-domainname): {{String}}
+  [EBSOptions](#cfn-elasticsearch-domain-ebsoptions): {{
+    EBSOptions}}
+  [ElasticsearchClusterConfig](#cfn-elasticsearch-domain-elasticsearchclusterconfig): {{
+    ElasticsearchClusterConfig}}
+  [ElasticsearchVersion](#cfn-elasticsearch-domain-elasticsearchversion): {{String}}
+  [EncryptionAtRestOptions](#cfn-elasticsearch-domain-encryptionatrestoptions): {{
+    EncryptionAtRestOptions}}
+  [LogPublishingOptions](#cfn-elasticsearch-domain-logpublishingoptions): {{
+    {{Key}}: {{Value}}}}
+  [NodeToNodeEncryptionOptions](#cfn-elasticsearch-domain-nodetonodeencryptionoptions): {{
+    NodeToNodeEncryptionOptions}}
+  [SnapshotOptions](#cfn-elasticsearch-domain-snapshotoptions): {{
+    SnapshotOptions}}
+  [Tags](#cfn-elasticsearch-domain-tags): {{
+    - Tag}}
+  [VPCOptions](#cfn-elasticsearch-domain-vpcoptions): {{
+    VPCOptions}}
 ```
 
 ## Properties
+<a name="aws-resource-elasticsearch-domain-properties"></a>
 
-`AccessPolicies`
+`AccessPolicies`  <a name="cfn-elasticsearch-domain-accesspolicies"></a>
+An AWS Identity and Access Management (IAM) policy document that specifies who can access the OpenSearch Service domain and their permissions. For more information, see [Configuring access policies](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html#ac-creating) in the *Amazon OpenSearch Service Developer Guid*e.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An AWS Identity and Access Management (IAM) policy document that specifies who can
-access the OpenSearch Service domain and their permissions. For more information, see [Configuring access policies](../../../opensearch-service/latest/developerguide/ac.md#ac-creating) in the _Amazon OpenSearch Service Developer_
-_Guid_ e.
+`AdvancedOptions`  <a name="cfn-elasticsearch-domain-advancedoptions"></a>
+Additional options to specify for the OpenSearch Service domain. For more information, see [Advanced cluster parameters](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html#createdomain-configure-advanced-options) in the *Amazon OpenSearch Service Developer Guide*.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdvancedOptions`
-
-Additional options to specify for the OpenSearch Service domain. For more information, see [Advanced cluster parameters](../../../opensearch-service/latest/developerguide/createupdatedomains.md#createdomain-configure-advanced-options) in the _Amazon OpenSearch Service_
-_Developer Guide_.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdvancedSecurityOptions`
-
+`AdvancedSecurityOptions`  <a name="cfn-elasticsearch-domain-advancedsecurityoptions"></a>
 Specifies options for fine-grained access control.
+*Required*: No
+*Type*: [AdvancedSecurityOptionsInput](aws-properties-elasticsearch-domain-advancedsecurityoptionsinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AdvancedSecurityOptionsInput](aws-properties-elasticsearch-domain-advancedsecurityoptionsinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CognitoOptions`
-
+`CognitoOptions`  <a name="cfn-elasticsearch-domain-cognitooptions"></a>
 Configures OpenSearch Service to use Amazon Cognito authentication for OpenSearch Dashboards.
+*Required*: No
+*Type*: [CognitoOptions](aws-properties-elasticsearch-domain-cognitooptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CognitoOptions](aws-properties-elasticsearch-domain-cognitooptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainEndpointOptions`
-
+`DomainEndpointOptions`  <a name="cfn-elasticsearch-domain-domainendpointoptions"></a>
 Specifies additional options for the domain endpoint, such as whether to require HTTPS for all traffic or whether to use a custom endpoint rather than the default endpoint.
+*Required*: No
+*Type*: [DomainEndpointOptions](aws-properties-elasticsearch-domain-domainendpointoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DomainName`  <a name="cfn-elasticsearch-domain-domainname"></a>
+A name for the OpenSearch Service domain. For valid values, see the [DomainName](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configuration-api.html#configuration-api-datatypes-domainname) data type in the *Amazon OpenSearch Service Developer Guide*. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the domain name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
+If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [DomainEndpointOptions](aws-properties-elasticsearch-domain-domainendpointoptions.md)
+`EBSOptions`  <a name="cfn-elasticsearch-domain-ebsoptions"></a>
+The configurations of Amazon Elastic Block Store (Amazon EBS) volumes that are attached to data nodes in the OpenSearch Service domain. For more information, see [EBS volume size limits](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/limits.html#ebsresource) in the *Amazon OpenSearch Service Developer Guide*.
+*Required*: No
+*Type*: [EBSOptions](aws-properties-elasticsearch-domain-ebsoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ElasticsearchClusterConfig`  <a name="cfn-elasticsearch-domain-elasticsearchclusterconfig"></a>
+ElasticsearchClusterConfig is a property of the AWS::Elasticsearch::Domain resource that configures the cluster of an Amazon OpenSearch Service domain.
+*Required*: No
+*Type*: [ElasticsearchClusterConfig](aws-properties-elasticsearch-domain-elasticsearchclusterconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DomainName`
+`ElasticsearchVersion`  <a name="cfn-elasticsearch-domain-elasticsearchversion"></a>
+The version of Elasticsearch to use, such as 2.3. If not specified, 1.5 is used as the default. For information about the versions that OpenSearch Service supports, see [Supported versions of OpenSearch and Elasticsearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html#choosing-version) in the *Amazon OpenSearch Service Developer Guide*.
+If you set the [EnableVersionUpgrade](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html#cfn-attributes-updatepolicy-upgradeopensearchdomain) update policy to `true`, you can update `ElasticsearchVersion` without interruption. When `EnableVersionUpgrade` is set to `false`, or is not specified, updating `ElasticsearchVersion` results in [replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A name for the OpenSearch Service domain. For valid values, see the [DomainName](../../../opensearch-service/latest/developerguide/configuration-api.md#configuration-api-datatypes-domainname) data type in the _Amazon OpenSearch Service Developer_
-_Guide_. If you don't specify a name, CloudFormation generates a unique
-physical ID and uses that ID for the domain name. For more information, see [Name\
-Type](../userguide/aws-properties-name.md).
+`EncryptionAtRestOptions`  <a name="cfn-elasticsearch-domain-encryptionatrestoptions"></a>
+Whether the domain should encrypt data at rest, and if so, the AWS Key Management Service key to use. See [Encryption of data at rest for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/encryption-at-rest.html).
+*Required*: No
+*Type*: [EncryptionAtRestOptions](aws-properties-elasticsearch-domain-encryptionatrestoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Important
+`LogPublishingOptions`  <a name="cfn-elasticsearch-domain-logpublishingoptions"></a>
+An object with one or more of the following keys: `SEARCH_SLOW_LOGS`, `ES_APPLICATION_LOGS`, `INDEX_SLOW_LOGS`, `AUDIT_LOGS`, depending on the types of logs you want to publish. Each key needs a valid `LogPublishingOption` value.
+*Required*: No
+*Type*: Object of [LogPublishingOption](aws-properties-elasticsearch-domain-logpublishingoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you specify a name, you cannot perform updates that require replacement of this
-resource. You can perform updates that require no or some interruption. If you must replace
-the resource, specify a new name.
+`NodeToNodeEncryptionOptions`  <a name="cfn-elasticsearch-domain-nodetonodeencryptionoptions"></a>
+Specifies whether node-to-node encryption is enabled. See [Node-to-node encryption for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ntn.html).
+*Required*: No
+*Type*: [NodeToNodeEncryptionOptions](aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
+`SnapshotOptions`  <a name="cfn-elasticsearch-domain-snapshotoptions"></a>
+**DEPRECATED**. The automated snapshot configuration for the OpenSearch Service domain indices.
+*Required*: No
+*Type*: [SnapshotOptions](aws-properties-elasticsearch-domain-snapshotoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EBSOptions`
-
-The configurations of Amazon Elastic Block Store (Amazon EBS) volumes that are attached to
-data nodes in the OpenSearch Service domain. For more information, see [EBS volume size limits](../../../opensearch-service/latest/developerguide/limits.md#ebsresource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
-
-_Required_: No
-
-_Type_: [EBSOptions](aws-properties-elasticsearch-domain-ebsoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElasticsearchClusterConfig`
-
-ElasticsearchClusterConfig is a property of the AWS::Elasticsearch::Domain resource that
-configures the cluster of an Amazon OpenSearch Service domain.
-
-_Required_: No
-
-_Type_: [ElasticsearchClusterConfig](aws-properties-elasticsearch-domain-elasticsearchclusterconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElasticsearchVersion`
-
-The version of Elasticsearch to use, such as 2.3. If not specified, 1.5 is used as the
-default. For information about the versions that OpenSearch Service supports, see [Supported\
-versions of OpenSearch and Elasticsearch](../../../opensearch-service/latest/developerguide/what-is.md#choosing-version) in the _Amazon OpenSearch Service_
-_Developer Guide_.
-
-If you set the [EnableVersionUpgrade](../userguide/aws-attribute-updatepolicy.md#cfn-attributes-updatepolicy-upgradeopensearchdomain) update policy to `true`, you can update
-`ElasticsearchVersion` without interruption. When
-`EnableVersionUpgrade` is set to `false`, or is not specified,
-updating `ElasticsearchVersion` results in [replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionAtRestOptions`
-
-Whether the domain should encrypt data at rest, and if so, the AWS Key Management Service
-key to use. See [Encryption of data at\
-rest for Amazon OpenSearch Service](../../../opensearch-service/latest/developerguide/encryption-at-rest.md).
-
-_Required_: No
-
-_Type_: [EncryptionAtRestOptions](aws-properties-elasticsearch-domain-encryptionatrestoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogPublishingOptions`
-
-An object with one or more of the following keys: `SEARCH_SLOW_LOGS`,
-`ES_APPLICATION_LOGS`, `INDEX_SLOW_LOGS`, `AUDIT_LOGS`,
-depending on the types of logs you want to publish. Each key needs a valid
-`LogPublishingOption` value.
-
-_Required_: No
-
-_Type_: Object of [LogPublishingOption](aws-properties-elasticsearch-domain-logpublishingoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NodeToNodeEncryptionOptions`
-
-Specifies whether node-to-node encryption is enabled. See [Node-to-node encryption for Amazon\
-OpenSearch Service](../../../opensearch-service/latest/developerguide/ntn.md).
-
-_Required_: No
-
-_Type_: [NodeToNodeEncryptionOptions](aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnapshotOptions`
-
-**DEPRECATED**. The automated snapshot configuration for the
-OpenSearch Service domain indices.
-
-_Required_: No
-
-_Type_: [SnapshotOptions](aws-properties-elasticsearch-domain-snapshotoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-elasticsearch-domain-tags"></a>
 An arbitrary set of tags (key–value pairs) to associate with the OpenSearch Service domain.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-elasticsearch-domain-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-elasticsearch-domain-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VPCOptions`
-
-The virtual private cloud (VPC) configuration for the OpenSearch Service domain. For more
-information, see [Launching your Amazon OpenSearch\
-Service domains within a VPC](../../../opensearch-service/latest/developerguide/vpc.md) in the _Amazon OpenSearch Service Developer_
-_Guide_.
-
-_Required_: No
-
-_Type_: [VPCOptions](aws-properties-elasticsearch-domain-vpcoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VPCOptions`  <a name="cfn-elasticsearch-domain-vpcoptions"></a>
+The virtual private cloud (VPC) configuration for the OpenSearch Service domain. For more information, see [Launching your Amazon OpenSearch Service domains within a VPC](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) in the *Amazon OpenSearch Service Developer Guide*.
+*Required*: No
+*Type*: [VPCOptions](aws-properties-elasticsearch-domain-vpcoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-elasticsearch-domain-return-values"></a>
 
 ### Ref
+<a name="aws-resource-elasticsearch-domain-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the Ref intrinsic function, Ref
-returns the resource name, such as `mystack-elasticsea-abc1d2efg3h4.` For more
-information about using the Ref function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+When the logical ID of this resource is provided to the Ref intrinsic function, Ref returns the resource name, such as `mystack-elasticsea-abc1d2efg3h4.` For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-elasticsearch-domain-return-values-fn--getatt"></a>
 
-Fn::GetAtt returns a value for a specified attribute of this type. For more information,
-see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md). The following are the available attributes and sample return
-values.
+Fn::GetAtt returns a value for a specified attribute of this type. For more information, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html). The following are the available attributes and sample return values.
 
-`Arn`
+####
+<a name="aws-resource-elasticsearch-domain-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the domain, such as
-`arn:aws:es:us-west-2:123456789012:domain/mystack-elasti-1ab2cdefghij`. This
-returned value is the same as the one returned by
-`AWS::Elasticsearch::Domain.DomainArn`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the domain, such as `arn:aws:es:us-west-2:123456789012:domain/mystack-elasti-1ab2cdefghij`. This returned value is the same as the one returned by `AWS::Elasticsearch::Domain.DomainArn`.
 
-`DomainArn`
+`DomainArn`  <a name="DomainArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the domain, such as `arn:aws:es:us-west-2:123456789012:domain/mystack-elasti-1ab2cdefghij`. This returned value is the same as the one returned by `AWS::Elasticsearch::Domain.Arn`.
 
-The Amazon Resource Name (ARN) of the domain, such as
-`arn:aws:es:us-west-2:123456789012:domain/mystack-elasti-1ab2cdefghij`. This
-returned value is the same as the one returned by
-`AWS::Elasticsearch::Domain.Arn`.
-
-`DomainEndpoint`
-
-The domain-specific endpoint that's used for requests to the OpenSearch APIs, such as
-`search-mystack-elasti-1ab2cdefghij-ab1c2deckoyb3hofw7wpqa3cm.us-west-1.es.amazonaws.com`.
+`DomainEndpoint`  <a name="DomainEndpoint-fn::getatt"></a>
+The domain-specific endpoint that's used for requests to the OpenSearch APIs, such as `search-mystack-elasti-1ab2cdefghij-ab1c2deckoyb3hofw7wpqa3cm.us-west-1.es.amazonaws.com`.
 
 ## Remarks
+<a name="aws-resource-elasticsearch-domain--remarks"></a>
 
-_Migrating stacks from Elasticsearch to OpenSearch_
+ *Migrating stacks from Elasticsearch to OpenSearch*
 
-###### Important
+**Important**
+You can't directly update a CloudFormation templates to use the `AWS::OpenSearchService::Domain` resource in place of `AWS::Elasticsearch::Domain`, otherwise the corresponding domain will be deleted along with all of its data.
 
-You can't directly update a CloudFormation templates to use the
-`AWS::OpenSearchService::Domain` resource in place of
-`AWS::Elasticsearch::Domain`, otherwise the corresponding domain will be
-deleted along with all of its data.
+Perform the following steps to migrate an Elasticsearch domain to an OpenSearch domain if the domain is defined within CloudFormation.
 
-Perform the following steps to migrate an Elasticsearch domain to an OpenSearch domain
-if the domain is defined within CloudFormation.
+ **Step 1: Prepare your existing stack for deprecation**
 
-**Step 1: Prepare your existing stack for deprecation**
+Make a copy of your original CloudFormation template, which contains the Elasticsearch domain resource, for use in step 3. Then add the following attributes to the Elasticsearch domain resource at the same level as `Type` and `Properties`.
 
-Make a copy of your original CloudFormation template, which contains the Elasticsearch
-domain resource, for use in step 3. Then add the following attributes to the Elasticsearch
-domain resource at the same level as `Type` and `Properties`.
+ `DeletionPolicy: Retain`
 
-`DeletionPolicy: Retain`
+ `UpdateReplacePolicy: Retain`
 
-`UpdateReplacePolicy: Retain`
+These settings ensure that CloudFormation doesn't delete or modify the corresponding domain when you delete this resource from your stack. If you have other custom resources defined in the stack that aren't critically important during the short migration period, you can delete them from the template and they'll be recreated when you create the new stack.
 
-These settings ensure that CloudFormation doesn't delete or modify the corresponding
-domain when you delete this resource from your stack. If you have other custom resources
-defined in the stack that aren't critically important during the short migration period, you
-can delete them from the template and they'll be recreated when you create the new
-stack.
+ **Step 2: Upgrade your domain to OpenSearch**
 
-**Step 2: Upgrade your domain to OpenSearch**
+After you add the two policy attributes to your template, upgrade your domain to an OpenSearch version using the normal upgrade process. For instructions, see [Starting an upgrade](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/version-migration.html#starting-upgrades). Make sure to take a snapshot of your domain before upgrading it to prevent accidental loss of data.
 
-After you add the two policy attributes to your template, upgrade your domain to an
-OpenSearch version using the normal upgrade process. For instructions, see [Starting an upgrade](../../../opensearch-service/latest/developerguide/version-migration.md#starting-upgrades). Make sure to take a snapshot of your domain before upgrading
-it to prevent accidental loss of data.
+ **Step 3: Create a new CloudFormation template**
 
-**Step 3: Create a new CloudFormation template**
-
-While you wait for the upgrade to complete, prepare your new OpenSearch template. Using
-the copy of your original template that you made in step 1, make the following
-changes:
-
-- Change the domain resource type from `AWS::Elasticsearch::Domain` to
-`AWS::OpenSearchService::Domain`.
-
-- Add the `DeletionPolicy` and `UpdateReplacePolicy` attributes
-to the resource, as you did in step 1.
-
-- Change `ElasticsearchVersion` to `EngineVersion` and set its value to
-`OpenSearch_1.0` (or whichever version of OpenSearch you want to upgrade
-to).
-
-- If your resource contains `ElasticsearchClusterConfig`, change it to
-`ClusterConfig`.
-
-- Change the suffixes of all instance types from `.elasticsearch` to
-`.search`.
-
-- If your template includes `ColdStorageOptions`, remove it, as it's not
-currently supported for OpenSearch resources.
-
-- If there are any `Fn::GetAtt` or `!GetAtt` references to your
-domain ARN, change them to `!GetAtt MyDomain.Arn`.
-
-- Comment out any resources not currently within the stack (most likely everything
-except `AWS::OpenSearchService::Domain`).
+While you wait for the upgrade to complete, prepare your new OpenSearch template. Using the copy of your original template that you made in step 1, make the following changes:
++ Change the domain resource type from `AWS::Elasticsearch::Domain` to `AWS::OpenSearchService::Domain`.
++ Add the `DeletionPolicy` and `UpdateReplacePolicy` attributes to the resource, as you did in step 1.
++ Change `ElasticsearchVersion` to `EngineVersion` and set its value to `OpenSearch_1.0` (or whichever version of OpenSearch you want to upgrade to).
++ If your resource contains `ElasticsearchClusterConfig`, change it to `ClusterConfig`.
++ Change the suffixes of all instance types from `.elasticsearch` to `.search`.
++ If your template includes `ColdStorageOptions`, remove it, as it's not currently supported for OpenSearch resources.
++ If there are any `Fn::GetAtt` or `!GetAtt` references to your domain ARN, change them to `!GetAtt MyDomain.Arn`.
++ Comment out any resources not currently within the stack (most likely everything except `AWS::OpenSearchService::Domain`).
 
 See the next section for examples that demonstrate the new format.
 
-**Step 4: Import the OpenSearch stack**
+ **Step 4: Import the OpenSearch stack**
 
-Once your domain upgrade finishes, you can import the new stack. Within CloudFormation,
-choose **Create stack** and **With existing**
-**resources (import resources)**, then upload the template you created in the
-previous step.
+Once your domain upgrade finishes, you can import the new stack. Within CloudFormation, choose **Create stack** and **With existing resources (import resources)**, then upload the template you created in the previous step.
 
-CloudFormation prompts you for the name (identifier value) of the existing domain. Copy
-the domain name directly from the OpenSearch console. Give the stack a name that's different
-from the current one, then choose **Import resources**.
+CloudFormation prompts you for the name (identifier value) of the existing domain. Copy the domain name directly from the OpenSearch console. Give the stack a name that's different from the current one, then choose **Import resources**.
 
-After the stack is created, uncomment any related resources from the stack and update it
-to ensure they're recreated. You can remove the `DeletionPolicy` and
-`UpdateReplacePolicy` attributes if you want, but they can help prevent
-accidental deletions in the future.
+After the stack is created, uncomment any related resources from the stack and update it to ensure they're recreated. You can remove the `DeletionPolicy` and `UpdateReplacePolicy` attributes if you want, but they can help prevent accidental deletions in the future.
 
-**Step 5: Delete the Elasticsearch stack**
+ **Step 5: Delete the Elasticsearch stack**
 
-Now that your new stack is created, delete the old stack which contains the legacy
-Elasticsearch resource.
+Now that your new stack is created, delete the old stack which contains the legacy Elasticsearch resource.
 
-###### Important
+**Important**
+Before deleting the old stack, make absolutely sure that the template contains the `DeletionPolicy: Retain` attribute.
 
-Before deleting the old stack, make absolutely sure that the template contains the
-`DeletionPolicy: Retain` attribute.
-
-\*The above steps were partially derived from this [blog\
-post](https://onecloudplease.com/blog/migrating-to-opensearch-with-cloudformation).
+\*The above steps were partially derived from this [blog post](https://onecloudplease.com/blog/migrating-to-opensearch-with-cloudformation).
 
 ## Examples
+<a name="aws-resource-elasticsearch-domain--examples"></a>
 
-- [Create an OpenSearch Service domain that contains two data nodes and three master nodes](#aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes)
-
-- [Create a domain with VPC options](#aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options)
+**Topics**
++ [Create an OpenSearch Service domain that contains two data nodes and three master nodes](#aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes)
++ [Create a domain with VPC options](#aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options)
 
 ### Create an OpenSearch Service domain that contains two data nodes and three master nodes
+<a name="aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes"></a>
 
-The following example creates an OpenSearch Service domain running Elasticsearch 7.10 that
-contains two data nodes and three dedicated master nodes. The domain has 40 GiB of storage
-and enables log publishing for application logs, search slow logs, and index slow logs.
-The access policy permits the root user for the AWS account to make all HTTP requests to
-the domain, such as indexing documents or searching indices.
+The following example creates an OpenSearch Service domain running Elasticsearch 7.10 that contains two data nodes and three dedicated master nodes. The domain has 40 GiB of storage and enables log publishing for application logs, search slow logs, and index slow logs. The access policy permits the root user for the AWS account to make all HTTP requests to the domain, such as indexing documents or searching indices.
 
 #### JSON
+<a name="aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes--json"></a>
 
-```json
-
+```
 "ElasticsearchDomain": {
    "Type":"AWS::Elasticsearch::Domain",
    "Properties": {
@@ -476,9 +324,9 @@ the domain, such as indexing documents or searching indices.
 ```
 
 #### YAML
+<a name="aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes--yaml"></a>
 
-```yaml
-
+```
 ElasticsearchDomain:
   Type: AWS::Elasticsearch::Domain
   Properties:
@@ -497,7 +345,7 @@ ElasticsearchDomain:
       VolumeSize: '20'
       VolumeType: 'gp2'
     AccessPolicies:
-      Version: '2012-10-17'
+      Version: '2012-10-17		 	 	 '
       Statement:
         -
           Effect: 'Allow'
@@ -520,13 +368,14 @@ ElasticsearchDomain:
 ```
 
 ### Create a domain with VPC options
+<a name="aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options"></a>
 
 The following example creates a domain with VPC options.
 
 #### JSON
+<a name="aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "ElasticsearchDomain resource",
@@ -688,9 +537,9 @@ The following example creates a domain with VPC options.
 ```
 
 #### YAML
+<a name="aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: ElasticsearchDomain resource
 Parameters:
@@ -728,7 +577,7 @@ Resources:
         VolumeSize: '10'
         VolumeType: 'standard'
       AccessPolicies:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
           - Effect: Deny
             Principal:
@@ -790,11 +639,5 @@ Outputs:
     Value:
       Ref: subnet
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon OpenSearch Service (legacy Elasticsearch resource)
-
-AdvancedSecurityOptionsInput
 
 All content copied from https://docs.aws.amazon.com/.

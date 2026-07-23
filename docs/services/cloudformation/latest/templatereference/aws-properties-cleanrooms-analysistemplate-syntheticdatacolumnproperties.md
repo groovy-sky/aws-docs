@@ -2,82 +2,60 @@
 title: "AWS::CleanRooms::AnalysisTemplate SyntheticDataColumnProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate SyntheticDataColumnProperties
+<a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties"></a>
 
 Properties that define how a specific data column should be handled during synthetic data generation, including its name, type, and role in predictive modeling.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnName" : String,
-  "ColumnType" : String,
-  "IsPredictiveValue" : Boolean
+  "[ColumnName](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columnname)" : {{String}},
+  "[ColumnType](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columntype)" : {{String}},
+  "[IsPredictiveValue](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-ispredictivevalue)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties-syntax.yaml"></a>
 
-```yaml
-
-  ColumnName: String
-  ColumnType: String
-  IsPredictiveValue: Boolean
-
+```
+  [ColumnName](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columnname): {{String}}
+  [ColumnType](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columntype): {{String}}
+  [IsPredictiveValue](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-ispredictivevalue): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties-properties"></a>
 
-`ColumnName`
-
+`ColumnName`  <a name="cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columnname"></a>
 The name of the data column as it appears in the dataset.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9_](([a-z0-9_]+-)*([a-z0-9_]+))?$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9_](([a-z0-9_]+-)*([a-z0-9_]+))?$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ColumnType`
-
+`ColumnType`  <a name="cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columntype"></a>
 The data type of the column, which determines how the synthetic data generation algorithm processes and synthesizes values for this column.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CATEGORICAL | NUMERICAL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CATEGORICAL | NUMERICAL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IsPredictiveValue`
-
+`IsPredictiveValue`  <a name="cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-ispredictivevalue"></a>
 Indicates if this column contains predictive values that should be treated as target variables in machine learning models. This affects how the synthetic data generation preserves statistical relationships.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-SyntheticDataParameters
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

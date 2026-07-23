@@ -2,55 +2,42 @@
 title: "AWS::AppSync::Api AuthMode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::Api AuthMode
+<a name="aws-properties-appsync-api-authmode"></a>
 
-Describes an authorization configuration. Use `AuthMode` to specify the
-publishing and subscription authorization configuration for an Event API.
+Describes an authorization configuration. Use `AuthMode` to specify the publishing and subscription authorization configuration for an Event API.
 
 ## Syntax
+<a name="aws-properties-appsync-api-authmode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-api-authmode-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthType" : String
+  "[AuthType](#cfn-appsync-api-authmode-authtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-api-authmode-syntax.yaml"></a>
 
-```yaml
-
-  AuthType: String
-
+```
+  [AuthType](#cfn-appsync-api-authmode-authtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-api-authmode-properties"></a>
 
-`AuthType`
-
+`AuthType`  <a name="cfn-appsync-api-authmode-authtype"></a>
 The authorization type.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AMAZON_COGNITO_USER_POOLS | AWS_IAM | API_KEY | OPENID_CONNECT | AWS_LAMBDA`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppSync::Api
-
-AuthProvider
+*Required*: No
+*Type*: String
+*Allowed values*: `AMAZON_COGNITO_USER_POOLS | AWS_IAM | API_KEY | OPENID_CONNECT | AWS_LAMBDA`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

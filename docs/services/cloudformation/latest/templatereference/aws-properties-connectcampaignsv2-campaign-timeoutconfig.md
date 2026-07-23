@@ -2,56 +2,43 @@
 title: "AWS::ConnectCampaignsV2::Campaign TimeoutConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign TimeoutConfig
+<a name="aws-properties-connectcampaignsv2-campaign-timeoutconfig"></a>
 
 Contains preview outbound mode timeout configuration.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-timeoutconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-timeoutconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DurationInSeconds" : Integer
+  "[DurationInSeconds](#cfn-connectcampaignsv2-campaign-timeoutconfig-durationinseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-timeoutconfig-syntax.yaml"></a>
 
-```yaml
-
-  DurationInSeconds: Integer
-
+```
+  [DurationInSeconds](#cfn-connectcampaignsv2-campaign-timeoutconfig-durationinseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-timeoutconfig-properties"></a>
 
-`DurationInSeconds`
-
+`DurationInSeconds`  <a name="cfn-connectcampaignsv2-campaign-timeoutconfig-durationinseconds"></a>
 Duration in seconds for the countdown timer.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `10`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TelephonyOutboundMode
-
-TimeRange
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

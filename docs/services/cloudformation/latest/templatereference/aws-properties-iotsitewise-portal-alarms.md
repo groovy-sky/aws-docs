@@ -2,69 +2,49 @@
 title: "AWS::IoTSiteWise::Portal Alarms"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::Portal Alarms
+<a name="aws-properties-iotsitewise-portal-alarms"></a>
 
-Contains the configuration information of an alarm created in an AWS IoT SiteWise Monitor portal.
-You can use the alarm to monitor an asset property and get notified when the asset property value is outside a specified range.
-For more information, see [Monitoring with alarms](../../../iot-sitewise/latest/appguide/monitor-alarms.md) in the _AWS IoT SiteWise Application Guide_.
+Contains the configuration information of an alarm created in an AWS IoT SiteWise Monitor portal. You can use the alarm to monitor an asset property and get notified when the asset property value is outside a specified range. For more information, see [Monitoring with alarms](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/monitor-alarms.html) in the *AWS IoT SiteWise Application Guide*.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-portal-alarms-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-portal-alarms-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlarmRoleArn" : String,
-  "NotificationLambdaArn" : String
+  "[AlarmRoleArn](#cfn-iotsitewise-portal-alarms-alarmrolearn)" : {{String}},
+  "[NotificationLambdaArn](#cfn-iotsitewise-portal-alarms-notificationlambdaarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-portal-alarms-syntax.yaml"></a>
 
-```yaml
-
-  AlarmRoleArn: String
-  NotificationLambdaArn: String
-
+```
+  [AlarmRoleArn](#cfn-iotsitewise-portal-alarms-alarmrolearn): {{String}}
+  [NotificationLambdaArn](#cfn-iotsitewise-portal-alarms-notificationlambdaarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-portal-alarms-properties"></a>
 
-`AlarmRoleArn`
+`AlarmRoleArn`  <a name="cfn-iotsitewise-portal-alarms-alarmrolearn"></a>
+The [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the IAM role that allows the alarm to perform actions and access AWS resources and services, such as AWS IoT Events.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The [ARN](../../../../general/latest/gr/aws-arns-and-namespaces.md) of the IAM role that allows the alarm to perform actions and access AWS
-resources and services, such as AWS IoT Events.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotificationLambdaArn`
-
-The [ARN](../../../../general/latest/gr/aws-arns-and-namespaces.md) of the Lambda function that manages alarm notifications. For more
-information, see [Managing alarm\
-notifications](../../../iotevents/latest/developerguide/lambda-support.md) in the _AWS IoT Events Developer Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTSiteWise::Portal
-
-PortalTypeEntry
+`NotificationLambdaArn`  <a name="cfn-iotsitewise-portal-alarms-notificationlambdaarn"></a>
+The [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the Lambda function that manages alarm notifications. For more information, see [Managing alarm notifications](https://docs.aws.amazon.com/iotevents/latest/developerguide/lambda-support.html) in the *AWS IoT Events Developer Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

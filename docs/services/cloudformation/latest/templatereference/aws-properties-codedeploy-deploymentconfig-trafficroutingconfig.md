@@ -2,90 +2,60 @@
 title: "AWS::CodeDeploy::DeploymentConfig TrafficRoutingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentConfig TrafficRoutingConfig
+<a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig"></a>
 
-The configuration that specifies how traffic is shifted from one version of a Lambda function to another version during an AWS Lambda deployment,
-or from one Amazon ECS task set to another during an Amazon ECS
-deployment.
+The configuration that specifies how traffic is shifted from one version of a Lambda function to another version during an AWS Lambda deployment, or from one Amazon ECS task set to another during an Amazon ECS deployment.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "TimeBasedCanary" : TimeBasedCanary,
-  "TimeBasedLinear" : TimeBasedLinear,
-  "Type" : String
+  "[TimeBasedCanary](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedcanary)" : {{TimeBasedCanary}},
+  "[TimeBasedLinear](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedlinear)" : {{TimeBasedLinear}},
+  "[Type](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig-syntax.yaml"></a>
 
-```yaml
-
-  TimeBasedCanary:
-    TimeBasedCanary
-  TimeBasedLinear:
-    TimeBasedLinear
-  Type: String
-
+```
+  [TimeBasedCanary](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedcanary): {{
+    TimeBasedCanary}}
+  [TimeBasedLinear](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedlinear): {{
+    TimeBasedLinear}}
+  [Type](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig-properties"></a>
 
-`TimeBasedCanary`
+`TimeBasedCanary`  <a name="cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedcanary"></a>
+A configuration that shifts traffic from one version of a Lambda function or ECS task set to another in two increments. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
+*Required*: No
+*Type*: [TimeBasedCanary](aws-properties-codedeploy-deploymentconfig-timebasedcanary.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A configuration that shifts traffic from one version of a Lambda function
-or ECS task set to another in two increments. The original and target Lambda
-function versions or ECS task sets are specified in the deployment's AppSpec
-file.
+`TimeBasedLinear`  <a name="cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedlinear"></a>
+A configuration that shifts traffic from one version of a Lambda function or Amazon ECS task set to another in equal increments, with an equal number of minutes between each increment. The original and target Lambda function versions or Amazon ECS task sets are specified in the deployment's AppSpec file.
+*Required*: No
+*Type*: [TimeBasedLinear](aws-properties-codedeploy-deploymentconfig-timebasedlinear.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [TimeBasedCanary](aws-properties-codedeploy-deploymentconfig-timebasedcanary.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TimeBasedLinear`
-
-A configuration that shifts traffic from one version of a Lambda function
-or Amazon ECS task set to another in equal increments, with an equal number of
-minutes between each increment. The original and target Lambda function
-versions or Amazon ECS task sets are specified in the deployment's AppSpec
-file.
-
-_Required_: No
-
-_Type_: [TimeBasedLinear](aws-properties-codedeploy-deploymentconfig-timebasedlinear.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
-The type of traffic shifting ( `TimeBasedCanary` or
-`TimeBasedLinear`) used by a deployment configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TimeBasedCanary | TimeBasedLinear | TimeBasedFlexible | AllAtOnce`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeBasedLinear
-
-ZonalConfig
+`Type`  <a name="cfn-codedeploy-deploymentconfig-trafficroutingconfig-type"></a>
+The type of traffic shifting (`TimeBasedCanary` or `TimeBasedLinear`) used by a deployment configuration.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TimeBasedCanary | TimeBasedLinear | TimeBasedFlexible | AllAtOnce`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,97 +2,64 @@
 title: "AWS::QuickSight::DataSource CredentialPair"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource CredentialPair
+<a name="aws-properties-quicksight-datasource-credentialpair"></a>
 
 The combination of user name and password that are used as credentials.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-credentialpair-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-credentialpair-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlternateDataSourceParameters" : [ DataSourceParameters, ... ],
-  "Password" : String,
-  "Username" : String
+  "[AlternateDataSourceParameters](#cfn-quicksight-datasource-credentialpair-alternatedatasourceparameters)" : {{[ DataSourceParameters, ... ]}},
+  "[Password](#cfn-quicksight-datasource-credentialpair-password)" : {{String}},
+  "[Username](#cfn-quicksight-datasource-credentialpair-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-credentialpair-syntax.yaml"></a>
 
-```yaml
-
-  AlternateDataSourceParameters:
-    - DataSourceParameters
-  Password: String
-  Username: String
-
+```
+  [AlternateDataSourceParameters](#cfn-quicksight-datasource-credentialpair-alternatedatasourceparameters): {{
+    - DataSourceParameters}}
+  [Password](#cfn-quicksight-datasource-credentialpair-password): {{String}}
+  [Username](#cfn-quicksight-datasource-credentialpair-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-credentialpair-properties"></a>
 
-`AlternateDataSourceParameters`
+`AlternateDataSourceParameters`  <a name="cfn-quicksight-datasource-credentialpair-alternatedatasourceparameters"></a>
+A set of alternate data source parameters that you want to share for these credentials. The credentials are applied in tandem with the data source parameters when you copy a data source by using a create or update request. The API operation compares the `DataSourceParameters` structure that's in the request with the structures in the `AlternateDataSourceParameters` allow list. If the structures are an exact match, the request is allowed to use the new data source with the existing credentials. If the `AlternateDataSourceParameters` list is null, the `DataSourceParameters` originally used with these `Credentials` is automatically allowed.
+*Required*: No
+*Type*: Array of [DataSourceParameters](aws-properties-quicksight-datasource-datasourceparameters.md)
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A set of alternate data source parameters that you want to share for these
-credentials. The credentials are applied in tandem with the data source parameters when
-you copy a data source by using a create or update request. The API operation compares
-the `DataSourceParameters` structure that's in the request with the
-structures in the `AlternateDataSourceParameters` allow list. If the
-structures are an exact match, the request is allowed to use the new data source with
-the existing credentials. If the `AlternateDataSourceParameters` list is
-null, the `DataSourceParameters` originally used with these
-`Credentials` is automatically allowed.
-
-_Required_: No
-
-_Type_: Array of [DataSourceParameters](aws-properties-quicksight-datasource-datasourceparameters.md)
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Password`
-
+`Password`  <a name="cfn-quicksight-datasource-credentialpair-password"></a>
 Password.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
+`Username`  <a name="cfn-quicksight-datasource-credentialpair-username"></a>
 User name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuroraPostgreSqlParameters
-
-DatabricksParameters
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::Connect::Workspace FontFamily"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Workspace FontFamily
+<a name="aws-properties-connect-workspace-fontfamily"></a>
 
 Contains font family configuration for workspace themes.
 
 ## Syntax
+<a name="aws-properties-connect-workspace-fontfamily-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-workspace-fontfamily-syntax.json"></a>
 
-```json
-
+```
 {
-  "Default" : String
+  "[Default](#cfn-connect-workspace-fontfamily-default)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-workspace-fontfamily-syntax.yaml"></a>
 
-```yaml
-
-  Default: String
-
+```
+  [Default](#cfn-connect-workspace-fontfamily-default): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-workspace-fontfamily-properties"></a>
 
-`Default`
-
+`Default`  <a name="cfn-connect-workspace-fontfamily-default"></a>
 The default font family to use in the workspace theme.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ARIAL | COURIER_NEW | GEORGIA | TIMES_NEW_ROMAN | TREBUCHET | VERDANA`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::Workspace
-
-MediaItem
+*Required*: No
+*Type*: String
+*Allowed values*: `ARIAL | COURIER_NEW | GEORGIA | TIMES_NEW_ROMAN | TREBUCHET | VERDANA`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

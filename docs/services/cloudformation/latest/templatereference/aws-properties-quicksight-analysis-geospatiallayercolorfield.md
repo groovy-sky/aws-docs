@@ -2,74 +2,55 @@
 title: "AWS::QuickSight::Analysis GeospatialLayerColorField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialLayerColorField
+<a name="aws-properties-quicksight-analysis-geospatiallayercolorfield"></a>
 
 The color field that defines a gradient or categorical style.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatiallayercolorfield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatiallayercolorfield-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColorDimensionsFields" : [ DimensionField, ... ],
-  "ColorValuesFields" : [ MeasureField, ... ]
+  "[ColorDimensionsFields](#cfn-quicksight-analysis-geospatiallayercolorfield-colordimensionsfields)" : {{[ DimensionField, ... ]}},
+  "[ColorValuesFields](#cfn-quicksight-analysis-geospatiallayercolorfield-colorvaluesfields)" : {{[ MeasureField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatiallayercolorfield-syntax.yaml"></a>
 
-```yaml
-
-  ColorDimensionsFields:
-    - DimensionField
-  ColorValuesFields:
-    - MeasureField
-
+```
+  [ColorDimensionsFields](#cfn-quicksight-analysis-geospatiallayercolorfield-colordimensionsfields): {{
+    - DimensionField}}
+  [ColorValuesFields](#cfn-quicksight-analysis-geospatiallayercolorfield-colorvaluesfields): {{
+    - MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatiallayercolorfield-properties"></a>
 
-`ColorDimensionsFields`
-
+`ColorDimensionsFields`  <a name="cfn-quicksight-analysis-geospatiallayercolorfield-colordimensionsfields"></a>
 A list of color dimension fields.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColorValuesFields`
-
+`ColorValuesFields`  <a name="cfn-quicksight-analysis-geospatiallayercolorfield-colorvaluesfields"></a>
 A list of color measure fields.
-
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialHeatmapDataColor
-
-GeospatialLayerDefinition
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

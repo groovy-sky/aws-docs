@@ -2,80 +2,56 @@
 title: "AWS::Amplify::Domain SubDomainSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Amplify::Domain SubDomainSetting
+<a name="aws-properties-amplify-domain-subdomainsetting"></a>
 
-The SubDomainSetting property type enables you to connect a subdomain (for example,
-example.exampledomain.com) to a specific branch.
+ The SubDomainSetting property type enables you to connect a subdomain (for example, example.exampledomain.com) to a specific branch.
 
 ## Syntax
+<a name="aws-properties-amplify-domain-subdomainsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplify-domain-subdomainsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "BranchName" : String,
-  "Prefix" : String
+  "[BranchName](#cfn-amplify-domain-subdomainsetting-branchname)" : {{String}},
+  "[Prefix](#cfn-amplify-domain-subdomainsetting-prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplify-domain-subdomainsetting-syntax.yaml"></a>
 
-```yaml
-
-  BranchName: String
-  Prefix: String
-
+```
+  [BranchName](#cfn-amplify-domain-subdomainsetting-branchname): {{String}}
+  [Prefix](#cfn-amplify-domain-subdomainsetting-prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplify-domain-subdomainsetting-properties"></a>
 
-`BranchName`
+`BranchName`  <a name="cfn-amplify-domain-subdomainsetting-branchname"></a>
+ The branch name setting for the subdomain.
+*Length Constraints:* Minimum length of 1. Maximum length of 255.
+*Pattern:* (?s).\+
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?s).+`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The branch name setting for the subdomain.
-
-_Length Constraints:_ Minimum length of 1. Maximum length of
-255.
-
-_Pattern:_ (?s).+
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?s).+`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
-The prefix setting for the subdomain.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CertificateSettings
-
-Next
+`Prefix`  <a name="cfn-amplify-domain-subdomainsetting-prefix"></a>
+ The prefix setting for the subdomain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?s).*`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

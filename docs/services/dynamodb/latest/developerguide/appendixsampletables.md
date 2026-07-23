@@ -3,79 +3,46 @@ title: "Example tables and data for use in DynamoDB"
 ---
 
 # Example tables and data for use in DynamoDB
+<a name="AppendixSampleTables"></a>
 
-The _Amazon DynamoDB Developer Guide_ uses sample tables to
-illustrate various aspects of DynamoDB.
+The *Amazon DynamoDB Developer Guide* uses sample tables to illustrate various aspects of DynamoDB.
 
-Table namePrimary key_ProductCatalog_
+****
 
-Simple primary key:
+| Table name | Primary key |
+| --- | --- |
+| ProductCatalog | Simple primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
+| Forum | Simple primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
+| Thread | Composite primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
+| Reply | Composite primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
 
-- `Id` (Number)
+The *Reply* table has a global secondary index named *PostedBy-Message-Index*. This index will facilitate queries on two non-key attributes of the *Reply* table.
 
-_Forum_
+****
 
-Simple primary key:
-
-- `Name` (String)
-
-_Thread_
-
-Composite primary key:
-
-- `ForumName` (String)
-
-- `Subject` (String)
-
-_Reply_
-
-Composite primary key:
-
-- `Id` (String)
-
-- `ReplyDateTime` (String)
-
-The _Reply_ table has a global secondary index named
-_PostedBy-Message-Index_. This index will
-facilitate queries on two non-key attributes of the
-_Reply_ table.
-
-Index namePrimary key_PostedBy-Message-Index_
-
-Composite primary key:
-
-- `PostedBy` (String)
-
-- `Message` (String)
+| Index name | Primary key |
+| --- | --- |
+| PostedBy-Message-Index | Composite primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
 
 For more information about these tables, see [Step 1: Create a table in DynamoDB](getting-started-step-1.md) and [Step 2: Write data to a DynamoDB table](getting-started-step-2.md).
 
 ## Sample data files
+<a name="AppendixSampleData"></a>
 
-###### Topics
+**Topics**
++ [*ProductCatalog* sample data](#AppendixSampleData.ProductCatalog)
++ [*Forum* sample data](#AppendixSampleData.Forum)
++ [*Thread* sample data](#AppendixSampleData.Thread)
++ [*Reply* sample data](#AppendixSampleDataProductCatalog)
 
-- [ProductCatalog sample data](#AppendixSampleData.ProductCatalog)
+The following sections show the sample data files that are used for loading the *ProductCatalog*, *Forum*, *Thread* and *Reply* tables.
 
-- [Forum sample data](#AppendixSampleData.Forum)
+Each data file contains multiple `PutRequest` elements, each of which contain a single item. These `PutRequest` elements are used as input to the `BatchWriteItem` operation, using the AWS Command Line Interface (AWS CLI).
 
-- [Thread sample data](#AppendixSampleData.Thread)
+### *ProductCatalog* sample data
+<a name="AppendixSampleData.ProductCatalog"></a>
 
-- [Reply sample data](#AppendixSampleDataProductCatalog)
-
-The following sections show the sample data files that are used
-for loading the _ProductCatalog_,
-_Forum_, _Thread_ and
-_Reply_ tables.
-
-Each data file contains multiple `PutRequest` elements,
-each of which contain a single item. These `PutRequest`
-elements are used as input to the `BatchWriteItem`
-operation, using the AWS Command Line Interface (AWS CLI).
-
-### _ProductCatalog_ sample data
-
-```json
-
+```
 {
     "ProductCatalog": [
         {
@@ -382,13 +349,12 @@ operation, using the AWS Command Line Interface (AWS CLI).
         }
     ]
 }
-
 ```
 
-### _Forum_ sample data
+### *Forum* sample data
+<a name="AppendixSampleData.Forum"></a>
 
-```json
-
+```
 {
     "Forum": [
         {
@@ -412,13 +378,12 @@ operation, using the AWS Command Line Interface (AWS CLI).
         }
     ]
 }
-
 ```
 
-### _Thread_ sample data
+### *Thread* sample data
+<a name="AppendixSampleData.Thread"></a>
 
-```json
-
+```
 {
     "Thread": [
         {
@@ -549,13 +514,12 @@ operation, using the AWS Command Line Interface (AWS CLI).
         }
     ]
 }
-
 ```
 
-### _Reply_ sample data
+### *Reply* sample data
+<a name="AppendixSampleDataProductCatalog"></a>
 
-```json
-
+```
 {
     "Reply": [
         {
@@ -633,11 +597,5 @@ operation, using the AWS Command Line Interface (AWS CLI).
     ]
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Troubleshooting SSL/TLS connection establishment issues with DynamoDB
-
-Creating example tables and uploading data
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,297 +2,215 @@
 title: "AWS::ImageBuilder::InfrastructureConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::InfrastructureConfiguration
+<a name="aws-resource-imagebuilder-infrastructureconfiguration"></a>
 
-Creates a new infrastructure configuration. An infrastructure configuration defines
-the environment in which your image will be built and tested.
+Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
 
 ## Syntax
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ImageBuilder::InfrastructureConfiguration",
   "Properties" : {
-      "Description" : String,
-      "InstanceMetadataOptions" : InstanceMetadataOptions,
-      "InstanceProfileName" : String,
-      "InstanceTypes" : [ String, ... ],
-      "KeyPair" : String,
-      "Logging" : Logging,
-      "Name" : String,
-      "Placement" : Placement,
-      "ResourceTags" : {Key: Value, ...},
-      "SecurityGroupIds" : [ String, ... ],
-      "SnsTopicArn" : String,
-      "SubnetId" : String,
-      "Tags" : {Key: Value, ...},
-      "TerminateInstanceOnFailure" : Boolean
+      "[Description](#cfn-imagebuilder-infrastructureconfiguration-description)" : {{String}},
+      "[InstanceMetadataOptions](#cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions)" : {{InstanceMetadataOptions}},
+      "[InstanceProfileName](#cfn-imagebuilder-infrastructureconfiguration-instanceprofilename)" : {{String}},
+      "[InstanceTypes](#cfn-imagebuilder-infrastructureconfiguration-instancetypes)" : {{[ String, ... ]}},
+      "[KeyPair](#cfn-imagebuilder-infrastructureconfiguration-keypair)" : {{String}},
+      "[Logging](#cfn-imagebuilder-infrastructureconfiguration-logging)" : {{Logging}},
+      "[Name](#cfn-imagebuilder-infrastructureconfiguration-name)" : {{String}},
+      "[Placement](#cfn-imagebuilder-infrastructureconfiguration-placement)" : {{Placement}},
+      "[ResourceTags](#cfn-imagebuilder-infrastructureconfiguration-resourcetags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[SecurityGroupIds](#cfn-imagebuilder-infrastructureconfiguration-securitygroupids)" : {{[ String, ... ]}},
+      "[SnsTopicArn](#cfn-imagebuilder-infrastructureconfiguration-snstopicarn)" : {{String}},
+      "[SubnetId](#cfn-imagebuilder-infrastructureconfiguration-subnetid)" : {{String}},
+      "[Tags](#cfn-imagebuilder-infrastructureconfiguration-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[TerminateInstanceOnFailure](#cfn-imagebuilder-infrastructureconfiguration-terminateinstanceonfailure)" : {{Boolean}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ImageBuilder::InfrastructureConfiguration
 Properties:
-  Description: String
-  InstanceMetadataOptions:
-    InstanceMetadataOptions
-  InstanceProfileName: String
-  InstanceTypes:
-    - String
-  KeyPair: String
-  Logging:
-    Logging
-  Name: String
-  Placement:
-    Placement
-  ResourceTags:
-    Key: Value
-  SecurityGroupIds:
-    - String
-  SnsTopicArn: String
-  SubnetId: String
-  Tags:
-    Key: Value
-  TerminateInstanceOnFailure: Boolean
-
+  [Description](#cfn-imagebuilder-infrastructureconfiguration-description): {{String}}
+  [InstanceMetadataOptions](#cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions): {{
+    InstanceMetadataOptions}}
+  [InstanceProfileName](#cfn-imagebuilder-infrastructureconfiguration-instanceprofilename): {{String}}
+  [InstanceTypes](#cfn-imagebuilder-infrastructureconfiguration-instancetypes): {{
+    - String}}
+  [KeyPair](#cfn-imagebuilder-infrastructureconfiguration-keypair): {{String}}
+  [Logging](#cfn-imagebuilder-infrastructureconfiguration-logging): {{
+    Logging}}
+  [Name](#cfn-imagebuilder-infrastructureconfiguration-name): {{String}}
+  [Placement](#cfn-imagebuilder-infrastructureconfiguration-placement): {{
+    Placement}}
+  [ResourceTags](#cfn-imagebuilder-infrastructureconfiguration-resourcetags): {{
+    {{Key}}: {{Value}}}}
+  [SecurityGroupIds](#cfn-imagebuilder-infrastructureconfiguration-securitygroupids): {{
+    - String}}
+  [SnsTopicArn](#cfn-imagebuilder-infrastructureconfiguration-snstopicarn): {{String}}
+  [SubnetId](#cfn-imagebuilder-infrastructureconfiguration-subnetid): {{String}}
+  [Tags](#cfn-imagebuilder-infrastructureconfiguration-tags): {{
+    {{Key}}: {{Value}}}}
+  [TerminateInstanceOnFailure](#cfn-imagebuilder-infrastructureconfiguration-terminateinstanceonfailure): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-imagebuilder-infrastructureconfiguration-description"></a>
 The description of the infrastructure configuration.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InstanceMetadataOptions`  <a name="cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions"></a>
+The instance metadata options that you can set for the HTTP requests that pipeline builds use to launch EC2 build and test instances.
+*Required*: No
+*Type*: [InstanceMetadataOptions](aws-properties-imagebuilder-infrastructureconfiguration-instancemetadataoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`InstanceProfileName`  <a name="cfn-imagebuilder-infrastructureconfiguration-instanceprofilename"></a>
+The instance profile to associate with the instance used to customize your Amazon EC2 AMI.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w+=,.@-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`InstanceTypes`  <a name="cfn-imagebuilder-infrastructureconfiguration-instancetypes"></a>
+The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. The service will pick one of these instance types based on availability.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1024`
+`KeyPair`  <a name="cfn-imagebuilder-infrastructureconfiguration-keypair"></a>
+The key pair of the infrastructure configuration. You can use this to log on to and debug the instance used to create your image.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceMetadataOptions`
-
-The instance metadata options that you can set for the HTTP requests that pipeline
-builds use to launch EC2 build and test instances.
-
-_Required_: No
-
-_Type_: [InstanceMetadataOptions](aws-properties-imagebuilder-infrastructureconfiguration-instancemetadataoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceProfileName`
-
-The instance profile to associate with the instance used to customize your Amazon EC2
-AMI.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w+=,.@-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceTypes`
-
-The instance types of the infrastructure configuration. You can specify one or more
-instance types to use for this build. The service will pick one of these instance types
-based on availability.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyPair`
-
-The key pair of the infrastructure configuration. You can use this to log on to and
-debug the instance used to create your image.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Logging`
-
+`Logging`  <a name="cfn-imagebuilder-infrastructureconfiguration-logging"></a>
 The logging configuration of the infrastructure configuration.
+*Required*: No
+*Type*: [Logging](aws-properties-imagebuilder-infrastructureconfiguration-logging.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Logging](aws-properties-imagebuilder-infrastructureconfiguration-logging.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-imagebuilder-infrastructureconfiguration-name"></a>
 The name of the infrastructure configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Placement`  <a name="cfn-imagebuilder-infrastructureconfiguration-placement"></a>
+The instance placement settings that define where the instances that are launched from your image will run.
+*Required*: No
+*Type*: [Placement](aws-properties-imagebuilder-infrastructureconfiguration-placement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ResourceTags`  <a name="cfn-imagebuilder-infrastructureconfiguration-resourcetags"></a>
+The metadata tags to assign to the Amazon EC2 instance that Image Builder launches during the build process. Tags are formatted as key value pairs.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
+`SecurityGroupIds`  <a name="cfn-imagebuilder-infrastructureconfiguration-securitygroupids"></a>
+The security group IDs to associate with the instance used to customize your Amazon EC2 AMI.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`SnsTopicArn`  <a name="cfn-imagebuilder-infrastructureconfiguration-snstopicarn"></a>
+The Amazon Resource Name (ARN) for the SNS topic to which we send image build event notifications.
+EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys from other accounts. The key that is used to encrypt the SNS topic must reside in the account that the Image Builder service runs under.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[^:]*:sns:[^:]+:[0-9]{12}:[a-zA-Z0-9-_]{1,256}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Placement`
-
-The instance placement settings that define where the instances that are launched
-from your image will run.
-
-_Required_: No
-
-_Type_: [Placement](aws-properties-imagebuilder-infrastructureconfiguration-placement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceTags`
-
-The metadata tags to assign to the Amazon EC2 instance that Image Builder launches during the build process.
-Tags are formatted as key value pairs.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityGroupIds`
-
-The security group IDs to associate with the instance used to customize your Amazon EC2
-AMI.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnsTopicArn`
-
-The Amazon Resource Name (ARN) for the SNS topic to which we send image build event
-notifications.
-
-###### Note
-
-EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys
-from other accounts. The key that is used to encrypt the SNS topic must reside in the
-account that the Image Builder service runs under.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[^:]*:sns:[^:]+:[0-9]{12}:[a-zA-Z0-9-_]{1,256}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-imagebuilder-infrastructureconfiguration-subnetid"></a>
 The subnet ID in which to place the instance used to customize your Amazon EC2 AMI.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Tags`  <a name="cfn-imagebuilder-infrastructureconfiguration-tags"></a>
+The metadata tags to assign to the infrastructure configuration resource that Image Builder creates as output. Tags are formatted as key value pairs.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The metadata tags to assign to the infrastructure configuration resource that Image Builder
-creates as output. Tags are formatted as key value pairs.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TerminateInstanceOnFailure`
-
-The terminate instance on failure setting of the infrastructure configuration. Set to
-false if you want Image Builder to retain the instance used to configure your AMI if the build or
-test phase of your workflow fails.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TerminateInstanceOnFailure`  <a name="cfn-imagebuilder-infrastructureconfiguration-terminateinstanceonfailure"></a>
+The terminate instance on failure setting of the infrastructure configuration. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ARN, such as
-`arn:aws:imagebuilder:us-west-2:123456789012:infrastructure-configuration/my-example-infrastructure`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ARN, such as `arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/my-example-infrastructure`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-imagebuilder-infrastructureconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
-Returns the Amazon Resource Name (ARN) of the infrastructure configuration. The
-following pattern is applied:
-`^arn:aws[^:]*:imagebuilder:[^:]+:(?:\d{12}|aws):(?:image-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline)/[a-z0-9-_]+(?:/(?:(?:x|\d+)\.(?:x|\d+)\.(?:x|\d+))(?:/\d+)?)?$`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+Returns the Amazon Resource Name (ARN) of the infrastructure configuration. For example, `arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/myexampleinfrastructure`.
 
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 The name of the infrastructure configuration.
 
 ## Examples
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples"></a>
+
+**Topics**
++ [Create an infrastructure configuration](#aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration)
++ [Create an infrastructure configuration with placement and metadata options](#aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration_with_placement_and_metadata_options)
 
 ### Create an infrastructure configuration
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration"></a>
 
-The following example shows the schema for all of the parameters of the
-InfrastructureConfiguration resource document in both JSON and YAML format.
+The following example shows the template for the InfrastructureConfiguration resource in both JSON and YAML format.
 
 #### JSON
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration--json"></a>
 
-```json
-
+```
 {
 	"Resources": {
 		"InfrastructureConfigurationAll": {
@@ -332,9 +250,9 @@ InfrastructureConfiguration resource document in both JSON and YAML format.
 ```
 
 #### YAML
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration--yaml"></a>
 
-```yaml
-
+```
 Resources:
   InfrastructureConfigurationAll:
     Type: 'AWS::ImageBuilder::InfrastructureConfiguration'
@@ -361,10 +279,94 @@ Resources:
         CustomerInfraConfigTagKey2: 'CustomerInfraConfigTagValue2'
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+### Create an infrastructure configuration with placement and metadata options
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration_with_placement_and_metadata_options"></a>
 
-SystemsManagerAgent
+The following example creates an infrastructure configuration that uses dedicated tenancy and requires Instance Metadata Service Version 2 (IMDSv2) tokens. The configuration also applies resource tags to the build instance.
 
-InstanceMetadataOptions
+#### YAML
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration_with_placement_and_metadata_options--yaml"></a>
+
+```
+Resources:
+  InfraConfigAdvanced:
+    Type: AWS::ImageBuilder::InfrastructureConfiguration
+    Properties:
+      Name: infra-config-advanced
+      InstanceProfileName: !Ref ImageBuilderInstanceProfile
+      InstanceTypes:
+        - m5.large
+        - m5.xlarge
+      SubnetId: !Ref PrivateSubnet
+      SecurityGroupIds:
+        - !Ref BuildSecurityGroup
+      Placement:
+        Tenancy: dedicated
+        AvailabilityZone: us-west-2a
+      InstanceMetadataOptions:
+        HttpTokens: required
+        HttpPutResponseHopLimit: 2
+      ResourceTags:
+        CostCenter: imaging
+        Environment: build
+      TerminateInstanceOnFailure: true
+      Logging:
+        S3Logs:
+          S3BucketName: !Ref LogBucket
+          S3KeyPrefix: image-builder/logs
+```
+
+#### JSON
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration_with_placement_and_metadata_options--json"></a>
+
+```
+{
+    "Resources": {
+        "InfraConfigAdvanced": {
+            "Type": "AWS::ImageBuilder::InfrastructureConfiguration",
+            "Properties": {
+                "Name": "infra-config-advanced",
+                "InstanceProfileName": {
+                    "Ref": "ImageBuilderInstanceProfile"
+                },
+                "InstanceTypes": ["m5.large", "m5.xlarge"],
+                "SubnetId": {
+                    "Ref": "PrivateSubnet"
+                },
+                "SecurityGroupIds": [
+                    {
+                        "Ref": "BuildSecurityGroup"
+                    }
+                ],
+                "Placement": {
+                    "Tenancy": "dedicated",
+                    "AvailabilityZone": "us-west-2a"
+                },
+                "InstanceMetadataOptions": {
+                    "HttpTokens": "required",
+                    "HttpPutResponseHopLimit": 2
+                },
+                "ResourceTags": {
+                    "CostCenter": "imaging",
+                    "Environment": "build"
+                },
+                "TerminateInstanceOnFailure": true,
+                "Logging": {
+                    "S3Logs": {
+                        "S3BucketName": {
+                            "Ref": "LogBucket"
+                        },
+                        "S3KeyPrefix": "image-builder/logs"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## See also
+<a name="aws-resource-imagebuilder-infrastructureconfiguration--seealso"></a>
++ [Manage infrastructure configurations](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-infra-config.html) in the *Image Builder User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

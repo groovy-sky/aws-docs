@@ -2,166 +2,119 @@
 title: "AWS::ApiGateway::Deployment MethodSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::Deployment MethodSetting
+<a name="aws-properties-apigateway-deployment-methodsetting"></a>
 
 The `MethodSetting` property type configures settings for all methods in a stage. If you modify this property type, you must create a new deployment for your API.
 
-The `MethodSettings` property of the [Amazon API Gateway Deployment StageDescription](../userguide/aws-properties-apigateway-deployment-stagedescription.md) property type contains a list of `MethodSetting` property types.
+The `MethodSettings` property of the [Amazon API Gateway Deployment StageDescription](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html) property type contains a list of `MethodSetting` property types.
 
 ## Syntax
+<a name="aws-properties-apigateway-deployment-methodsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigateway-deployment-methodsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "CacheDataEncrypted" : Boolean,
-  "CacheTtlInSeconds" : Integer,
-  "CachingEnabled" : Boolean,
-  "DataTraceEnabled" : Boolean,
-  "HttpMethod" : String,
-  "LoggingLevel" : String,
-  "MetricsEnabled" : Boolean,
-  "ResourcePath" : String,
-  "ThrottlingBurstLimit" : Integer,
-  "ThrottlingRateLimit" : Number
+  "[CacheDataEncrypted](#cfn-apigateway-deployment-methodsetting-cachedataencrypted)" : {{Boolean}},
+  "[CacheTtlInSeconds](#cfn-apigateway-deployment-methodsetting-cachettlinseconds)" : {{Integer}},
+  "[CachingEnabled](#cfn-apigateway-deployment-methodsetting-cachingenabled)" : {{Boolean}},
+  "[DataTraceEnabled](#cfn-apigateway-deployment-methodsetting-datatraceenabled)" : {{Boolean}},
+  "[HttpMethod](#cfn-apigateway-deployment-methodsetting-httpmethod)" : {{String}},
+  "[LoggingLevel](#cfn-apigateway-deployment-methodsetting-logginglevel)" : {{String}},
+  "[MetricsEnabled](#cfn-apigateway-deployment-methodsetting-metricsenabled)" : {{Boolean}},
+  "[ResourcePath](#cfn-apigateway-deployment-methodsetting-resourcepath)" : {{String}},
+  "[ThrottlingBurstLimit](#cfn-apigateway-deployment-methodsetting-throttlingburstlimit)" : {{Integer}},
+  "[ThrottlingRateLimit](#cfn-apigateway-deployment-methodsetting-throttlingratelimit)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigateway-deployment-methodsetting-syntax.yaml"></a>
 
-```yaml
-
-  CacheDataEncrypted: Boolean
-  CacheTtlInSeconds: Integer
-  CachingEnabled: Boolean
-  DataTraceEnabled: Boolean
-  HttpMethod: String
-  LoggingLevel: String
-  MetricsEnabled: Boolean
-  ResourcePath: String
-  ThrottlingBurstLimit: Integer
-  ThrottlingRateLimit: Number
-
+```
+  [CacheDataEncrypted](#cfn-apigateway-deployment-methodsetting-cachedataencrypted): {{Boolean}}
+  [CacheTtlInSeconds](#cfn-apigateway-deployment-methodsetting-cachettlinseconds): {{Integer}}
+  [CachingEnabled](#cfn-apigateway-deployment-methodsetting-cachingenabled): {{Boolean}}
+  [DataTraceEnabled](#cfn-apigateway-deployment-methodsetting-datatraceenabled): {{Boolean}}
+  [HttpMethod](#cfn-apigateway-deployment-methodsetting-httpmethod): {{String}}
+  [LoggingLevel](#cfn-apigateway-deployment-methodsetting-logginglevel): {{String}}
+  [MetricsEnabled](#cfn-apigateway-deployment-methodsetting-metricsenabled): {{Boolean}}
+  [ResourcePath](#cfn-apigateway-deployment-methodsetting-resourcepath): {{String}}
+  [ThrottlingBurstLimit](#cfn-apigateway-deployment-methodsetting-throttlingburstlimit): {{Integer}}
+  [ThrottlingRateLimit](#cfn-apigateway-deployment-methodsetting-throttlingratelimit): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-apigateway-deployment-methodsetting-properties"></a>
 
-`CacheDataEncrypted`
-
+`CacheDataEncrypted`  <a name="cfn-apigateway-deployment-methodsetting-cachedataencrypted"></a>
 Specifies whether the cached responses are encrypted.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CacheTtlInSeconds`
-
+`CacheTtlInSeconds`  <a name="cfn-apigateway-deployment-methodsetting-cachettlinseconds"></a>
 Specifies the time to live (TTL), in seconds, for cached responses. The higher the TTL, the longer the response will be cached.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CachingEnabled`
-
+`CachingEnabled`  <a name="cfn-apigateway-deployment-methodsetting-cachingenabled"></a>
 Specifies whether responses should be cached and returned for requests. A cache cluster must be enabled on the stage for responses to be cached.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataTraceEnabled`
-
+`DataTraceEnabled`  <a name="cfn-apigateway-deployment-methodsetting-datatraceenabled"></a>
 Specifies whether data trace logging is enabled for this method, which affects the log entries pushed to Amazon CloudWatch Logs. This can be useful to troubleshoot APIs, but can result in logging sensitive data. We recommend that you don't enable this option for production APIs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpMethod`
-
+`HttpMethod`  <a name="cfn-apigateway-deployment-methodsetting-httpmethod"></a>
 The HTTP method.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoggingLevel`
-
+`LoggingLevel`  <a name="cfn-apigateway-deployment-methodsetting-logginglevel"></a>
 Specifies the logging level for this method, which affects the log entries pushed to Amazon CloudWatch Logs. Valid values are `OFF`, `ERROR`, and `INFO`. Choose `ERROR` to write only error-level entries to CloudWatch Logs, or choose `INFO` to include all `ERROR` events as well as extra informational events.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricsEnabled`
-
+`MetricsEnabled`  <a name="cfn-apigateway-deployment-methodsetting-metricsenabled"></a>
 Specifies whether Amazon CloudWatch metrics are enabled for this method.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ResourcePath`  <a name="cfn-apigateway-deployment-methodsetting-resourcepath"></a>
+The resource path for this method. Forward slashes (`/`) are encoded as `~1` and the initial slash must include a forward slash. For example, the path value `/resource/subresource` must be encoded as `/~1resource~1subresource`. To specify the root path, use only a slash (`/`).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourcePath`
-
-The resource path for this method. Forward slashes ( `/`) are encoded as `~1` and the initial slash must include a forward slash. For example, the path value `/resource/subresource` must be encoded as `/~1resource~1subresource`. To specify the root path, use only a slash ( `/`).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThrottlingBurstLimit`
-
+`ThrottlingBurstLimit`  <a name="cfn-apigateway-deployment-methodsetting-throttlingburstlimit"></a>
 Specifies the throttling burst limit.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThrottlingRateLimit`
-
+`ThrottlingRateLimit`  <a name="cfn-apigateway-deployment-methodsetting-throttlingratelimit"></a>
 Specifies the throttling rate limit.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Stage](../../../apigateway/latest/api/api-stage.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeploymentCanarySettings
-
-StageDescription
+<a name="aws-properties-apigateway-deployment-methodsetting--seealso"></a>
++ [Stage](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

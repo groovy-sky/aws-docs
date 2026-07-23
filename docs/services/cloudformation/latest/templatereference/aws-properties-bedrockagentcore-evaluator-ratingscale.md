@@ -2,66 +2,51 @@
 title: "AWS::BedrockAgentCore::Evaluator RatingScale"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator RatingScale
+<a name="aws-properties-bedrockagentcore-evaluator-ratingscale"></a>
 
-The rating scale that defines how the evaluator should score agent performance, either numerical or categorical.
+ The rating scale that defines how the evaluator should score agent performance, either numerical or categorical.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-evaluator-ratingscale-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-evaluator-ratingscale-syntax.json"></a>
 
-```json
-
+```
 {
-  "Categorical" : [ CategoricalScaleDefinition, ... ],
-  "Numerical" : [ NumericalScaleDefinition, ... ]
+  "[Categorical](#cfn-bedrockagentcore-evaluator-ratingscale-categorical)" : {{[ CategoricalScaleDefinition, ... ]}},
+  "[Numerical](#cfn-bedrockagentcore-evaluator-ratingscale-numerical)" : {{[ NumericalScaleDefinition, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-evaluator-ratingscale-syntax.yaml"></a>
 
-```yaml
-
-  Categorical:
-    - CategoricalScaleDefinition
-  Numerical:
-    - NumericalScaleDefinition
-
+```
+  [Categorical](#cfn-bedrockagentcore-evaluator-ratingscale-categorical): {{
+    - CategoricalScaleDefinition}}
+  [Numerical](#cfn-bedrockagentcore-evaluator-ratingscale-numerical): {{
+    - NumericalScaleDefinition}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-evaluator-ratingscale-properties"></a>
 
-`Categorical`
+`Categorical`  <a name="cfn-bedrockagentcore-evaluator-ratingscale-categorical"></a>
+ The categorical rating scale with named categories and definitions for qualitative evaluation.
+*Required*: No
+*Type*: Array of [CategoricalScaleDefinition](aws-properties-bedrockagentcore-evaluator-categoricalscaledefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The categorical rating scale with named categories and definitions for qualitative evaluation.
-
-_Required_: No
-
-_Type_: Array of [CategoricalScaleDefinition](aws-properties-bedrockagentcore-evaluator-categoricalscaledefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Numerical`
-
-The numerical rating scale with defined score values and descriptions for quantitative evaluation.
-
-_Required_: No
-
-_Type_: Array of [NumericalScaleDefinition](aws-properties-bedrockagentcore-evaluator-numericalscaledefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NumericalScaleDefinition
-
-Tag
+`Numerical`  <a name="cfn-bedrockagentcore-evaluator-ratingscale-numerical"></a>
+ The numerical rating scale with defined score values and descriptions for quantitative evaluation.
+*Required*: No
+*Type*: Array of [NumericalScaleDefinition](aws-properties-bedrockagentcore-evaluator-numericalscaledefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,89 +2,62 @@
 title: "AWS::CustomerProfiles::ObjectType ObjectTypeField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::ObjectType ObjectTypeField
+<a name="aws-properties-customerprofiles-objecttype-objecttypefield"></a>
 
 Represents a field in a ProfileObjectType.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-objecttype-objecttypefield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-objecttype-objecttypefield-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContentType" : String,
-  "Source" : String,
-  "Target" : String
+  "[ContentType](#cfn-customerprofiles-objecttype-objecttypefield-contenttype)" : {{String}},
+  "[Source](#cfn-customerprofiles-objecttype-objecttypefield-source)" : {{String}},
+  "[Target](#cfn-customerprofiles-objecttype-objecttypefield-target)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-objecttype-objecttypefield-syntax.yaml"></a>
 
-```yaml
-
-  ContentType: String
-  Source: String
-  Target: String
-
+```
+  [ContentType](#cfn-customerprofiles-objecttype-objecttypefield-contenttype): {{String}}
+  [Source](#cfn-customerprofiles-objecttype-objecttypefield-source): {{String}}
+  [Target](#cfn-customerprofiles-objecttype-objecttypefield-target): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-objecttype-objecttypefield-properties"></a>
 
-`ContentType`
-
+`ContentType`  <a name="cfn-customerprofiles-objecttype-objecttypefield-contenttype"></a>
 The content type of the field. Used for determining equality when searching.
+*Required*: No
+*Type*: String
+*Allowed values*: `STRING | NUMBER | PHONE_NUMBER | EMAIL_ADDRESS | NAME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Source`  <a name="cfn-customerprofiles-objecttype-objecttypefield-source"></a>
+A field of a ProfileObject. For example: \_source.FirstName, where “\_source” is a ProfileObjectType of a Zendesk user and “FirstName” is a field in that ObjectType.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `STRING | NUMBER | PHONE_NUMBER | EMAIL_ADDRESS | NAME`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
-A field of a ProfileObject. For example: \_source.FirstName, where “\_source” is a
-ProfileObjectType of a Zendesk user and “FirstName” is a field in that
-ObjectType.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
-The location of the data in the standard ProfileObject model. For example:
-\_profile.Address.PostalCode.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KeyMap
-
-ObjectTypeKey
+`Target`  <a name="cfn-customerprofiles-objecttype-objecttypefield-target"></a>
+The location of the data in the standard ProfileObject model. For example: \_profile.Address.PostalCode.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

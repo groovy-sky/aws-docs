@@ -2,101 +2,71 @@
 title: "AWS::QuickSight::DataSet CastColumnTypeOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet CastColumnTypeOperation
+<a name="aws-properties-quicksight-dataset-castcolumntypeoperation"></a>
 
 A transform operation that casts a column to a different type.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-castcolumntypeoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-castcolumntypeoperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnName" : String,
-  "Format" : String,
-  "NewColumnType" : String,
-  "SubType" : String
+  "[ColumnName](#cfn-quicksight-dataset-castcolumntypeoperation-columnname)" : {{String}},
+  "[Format](#cfn-quicksight-dataset-castcolumntypeoperation-format)" : {{String}},
+  "[NewColumnType](#cfn-quicksight-dataset-castcolumntypeoperation-newcolumntype)" : {{String}},
+  "[SubType](#cfn-quicksight-dataset-castcolumntypeoperation-subtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-castcolumntypeoperation-syntax.yaml"></a>
 
-```yaml
-
-  ColumnName: String
-  Format: String
-  NewColumnType: String
-  SubType: String
-
+```
+  [ColumnName](#cfn-quicksight-dataset-castcolumntypeoperation-columnname): {{String}}
+  [Format](#cfn-quicksight-dataset-castcolumntypeoperation-format): {{String}}
+  [NewColumnType](#cfn-quicksight-dataset-castcolumntypeoperation-newcolumntype): {{String}}
+  [SubType](#cfn-quicksight-dataset-castcolumntypeoperation-subtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-castcolumntypeoperation-properties"></a>
 
-`ColumnName`
-
+`ColumnName`  <a name="cfn-quicksight-dataset-castcolumntypeoperation-columnname"></a>
 Column name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Format`  <a name="cfn-quicksight-dataset-castcolumntypeoperation-format"></a>
+When casting a column from string to datetime type, you can supply a string in a format supported by Quick Sight to denote the source data format.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Format`
-
-When casting a column from string to datetime type, you can supply a string in a
-format supported by Quick Sight to denote the source data format.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NewColumnType`
-
+`NewColumnType`  <a name="cfn-quicksight-dataset-castcolumntypeoperation-newcolumntype"></a>
 New column data type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `STRING | INTEGER | DECIMAL | DATETIME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `STRING | INTEGER | DECIMAL | DATETIME`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubType`
-
+`SubType`  <a name="cfn-quicksight-dataset-castcolumntypeoperation-subtype"></a>
 The sub data type of the new column. Sub types are only available for decimal columns that are part of a SPICE dataset.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FLOAT | FIXED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CalculatedColumn
-
-CastColumnTypesOperation
+*Required*: No
+*Type*: String
+*Allowed values*: `FLOAT | FIXED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

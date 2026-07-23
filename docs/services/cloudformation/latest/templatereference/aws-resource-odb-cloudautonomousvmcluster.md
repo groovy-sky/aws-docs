@@ -2,431 +2,309 @@
 title: "AWS::ODB::CloudAutonomousVmCluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudAutonomousVmCluster
+<a name="aws-resource-odb-cloudautonomousvmcluster"></a>
 
 The `AWS::ODB::CloudAutonomousVmCluster` resource creates an Autonomous VM cluster. An Autonomous VM cluster provides the infrastructure for running Autonomous Databases.
 
 ## Syntax
+<a name="aws-resource-odb-cloudautonomousvmcluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-odb-cloudautonomousvmcluster-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ODB::CloudAutonomousVmCluster",
   "Properties" : {
-      "AutonomousDataStorageSizeInTBs" : Number,
-      "CloudExadataInfrastructureId" : String,
-      "CpuCoreCountPerNode" : Integer,
-      "DbServers" : [ String, ... ],
-      "Description" : String,
-      "DisplayName" : String,
-      "IamRoles" : [ IamRole, ... ],
-      "IsMtlsEnabledVmCluster" : Boolean,
-      "LicenseModel" : String,
-      "MaintenanceWindow" : MaintenanceWindow,
-      "MemoryPerOracleComputeUnitInGBs" : Integer,
-      "OdbNetworkId" : String,
-      "ScanListenerPortNonTls" : Integer,
-      "ScanListenerPortTls" : Integer,
-      "Tags" : [ Tag, ... ],
-      "TimeZone" : String,
-      "TotalContainerDatabases" : Integer
+      "[AutonomousDataStorageSizeInTBs](#cfn-odb-cloudautonomousvmcluster-autonomousdatastoragesizeintbs)" : {{Number}},
+      "[CloudExadataInfrastructureId](#cfn-odb-cloudautonomousvmcluster-cloudexadatainfrastructureid)" : {{String}},
+      "[CpuCoreCountPerNode](#cfn-odb-cloudautonomousvmcluster-cpucorecountpernode)" : {{Integer}},
+      "[DbServers](#cfn-odb-cloudautonomousvmcluster-dbservers)" : {{[ String, ... ]}},
+      "[Description](#cfn-odb-cloudautonomousvmcluster-description)" : {{String}},
+      "[DisplayName](#cfn-odb-cloudautonomousvmcluster-displayname)" : {{String}},
+      "[IamRoles](#cfn-odb-cloudautonomousvmcluster-iamroles)" : {{[ IamRole, ... ]}},
+      "[IsMtlsEnabledVmCluster](#cfn-odb-cloudautonomousvmcluster-ismtlsenabledvmcluster)" : {{Boolean}},
+      "[LicenseModel](#cfn-odb-cloudautonomousvmcluster-licensemodel)" : {{String}},
+      "[MaintenanceWindow](#cfn-odb-cloudautonomousvmcluster-maintenancewindow)" : {{MaintenanceWindow}},
+      "[MemoryPerOracleComputeUnitInGBs](#cfn-odb-cloudautonomousvmcluster-memoryperoraclecomputeunitingbs)" : {{Integer}},
+      "[OdbNetworkId](#cfn-odb-cloudautonomousvmcluster-odbnetworkid)" : {{String}},
+      "[ScanListenerPortNonTls](#cfn-odb-cloudautonomousvmcluster-scanlistenerportnontls)" : {{Integer}},
+      "[ScanListenerPortTls](#cfn-odb-cloudautonomousvmcluster-scanlistenerporttls)" : {{Integer}},
+      "[Tags](#cfn-odb-cloudautonomousvmcluster-tags)" : {{[ Tag, ... ]}},
+      "[TimeZone](#cfn-odb-cloudautonomousvmcluster-timezone)" : {{String}},
+      "[TotalContainerDatabases](#cfn-odb-cloudautonomousvmcluster-totalcontainerdatabases)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-odb-cloudautonomousvmcluster-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ODB::CloudAutonomousVmCluster
 Properties:
-  AutonomousDataStorageSizeInTBs: Number
-  CloudExadataInfrastructureId: String
-  CpuCoreCountPerNode: Integer
-  DbServers:
-    - String
-  Description: String
-  DisplayName: String
-  IamRoles:
-    - IamRole
-  IsMtlsEnabledVmCluster: Boolean
-  LicenseModel: String
-  MaintenanceWindow:
-    MaintenanceWindow
-  MemoryPerOracleComputeUnitInGBs: Integer
-  OdbNetworkId: String
-  ScanListenerPortNonTls: Integer
-  ScanListenerPortTls: Integer
-  Tags:
-    - Tag
-  TimeZone: String
-  TotalContainerDatabases: Integer
-
+  [AutonomousDataStorageSizeInTBs](#cfn-odb-cloudautonomousvmcluster-autonomousdatastoragesizeintbs): {{Number}}
+  [CloudExadataInfrastructureId](#cfn-odb-cloudautonomousvmcluster-cloudexadatainfrastructureid): {{String}}
+  [CpuCoreCountPerNode](#cfn-odb-cloudautonomousvmcluster-cpucorecountpernode): {{Integer}}
+  [DbServers](#cfn-odb-cloudautonomousvmcluster-dbservers): {{
+    - String}}
+  [Description](#cfn-odb-cloudautonomousvmcluster-description): {{String}}
+  [DisplayName](#cfn-odb-cloudautonomousvmcluster-displayname): {{String}}
+  [IamRoles](#cfn-odb-cloudautonomousvmcluster-iamroles): {{
+    - IamRole}}
+  [IsMtlsEnabledVmCluster](#cfn-odb-cloudautonomousvmcluster-ismtlsenabledvmcluster): {{Boolean}}
+  [LicenseModel](#cfn-odb-cloudautonomousvmcluster-licensemodel): {{String}}
+  [MaintenanceWindow](#cfn-odb-cloudautonomousvmcluster-maintenancewindow): {{
+    MaintenanceWindow}}
+  [MemoryPerOracleComputeUnitInGBs](#cfn-odb-cloudautonomousvmcluster-memoryperoraclecomputeunitingbs): {{Integer}}
+  [OdbNetworkId](#cfn-odb-cloudautonomousvmcluster-odbnetworkid): {{String}}
+  [ScanListenerPortNonTls](#cfn-odb-cloudautonomousvmcluster-scanlistenerportnontls): {{Integer}}
+  [ScanListenerPortTls](#cfn-odb-cloudautonomousvmcluster-scanlistenerporttls): {{Integer}}
+  [Tags](#cfn-odb-cloudautonomousvmcluster-tags): {{
+    - Tag}}
+  [TimeZone](#cfn-odb-cloudautonomousvmcluster-timezone): {{String}}
+  [TotalContainerDatabases](#cfn-odb-cloudautonomousvmcluster-totalcontainerdatabases): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-odb-cloudautonomousvmcluster-properties"></a>
 
-`AutonomousDataStorageSizeInTBs`
-
+`AutonomousDataStorageSizeInTBs`  <a name="cfn-odb-cloudautonomousvmcluster-autonomousdatastoragesizeintbs"></a>
 The data storage size allocated for Autonomous Databases in the Autonomous VM cluster, in TB.
-
 Required when creating an Autonomous VM cluster.
+*Required*: Conditional
+*Type*: Number
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: Number
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CloudExadataInfrastructureId`
-
+`CloudExadataInfrastructureId`  <a name="cfn-odb-cloudautonomousvmcluster-cloudexadatainfrastructureid"></a>
 The unique identifier of the Cloud Exadata Infrastructure containing this Autonomous VM cluster.
-
 Required when creating an Autonomous VM cluster.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
+*Minimum*: `6`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
-
-_Minimum_: `6`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CpuCoreCountPerNode`
-
+`CpuCoreCountPerNode`  <a name="cfn-odb-cloudautonomousvmcluster-cpucorecountpernode"></a>
 The number of CPU cores enabled per node in the Autonomous VM cluster.
-
 Required when creating an Autonomous VM cluster.
+*Required*: Conditional
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DbServers`
-
+`DbServers`  <a name="cfn-odb-cloudautonomousvmcluster-dbservers"></a>
 The list of database servers associated with the Autonomous VM cluster.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-odb-cloudautonomousvmcluster-description"></a>
 The user-provided description of the Autonomous VM cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-odb-cloudautonomousvmcluster-displayname"></a>
 The display name of the Autonomous VM cluster.
-
 Required when creating an Autonomous VM cluster.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `^[a-zA-Z_](?!.*--)[a-zA-Z0-9_-]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z_](?!.*--)[a-zA-Z0-9_-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IamRoles`
-
+`IamRoles`  <a name="cfn-odb-cloudautonomousvmcluster-iamroles"></a>
 The AWS Identity and Access Management (IAM) service roles associated with the Autonomous VM cluster.
+*Required*: No
+*Type*: Array of [IamRole](aws-properties-odb-cloudautonomousvmcluster-iamrole.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [IamRole](aws-properties-odb-cloudautonomousvmcluster-iamrole.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsMtlsEnabledVmCluster`
-
+`IsMtlsEnabledVmCluster`  <a name="cfn-odb-cloudautonomousvmcluster-ismtlsenabledvmcluster"></a>
 Specifies whether mutual TLS (mTLS) authentication is enabled for the Autonomous VM cluster.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LicenseModel`
-
+`LicenseModel`  <a name="cfn-odb-cloudautonomousvmcluster-licensemodel"></a>
 The Oracle license model that applies to the Autonomous VM cluster. Valid values are `LICENSE_INCLUDED` or `BRING_YOUR_OWN_LICENSE`.
+*Required*: No
+*Type*: String
+*Allowed values*: `BRING_YOUR_OWN_LICENSE | LICENSE_INCLUDED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BRING_YOUR_OWN_LICENSE | LICENSE_INCLUDED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaintenanceWindow`
-
+`MaintenanceWindow`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow"></a>
 The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
+*Required*: No
+*Type*: [MaintenanceWindow](aws-properties-odb-cloudautonomousvmcluster-maintenancewindow.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [MaintenanceWindow](aws-properties-odb-cloudautonomousvmcluster-maintenancewindow.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MemoryPerOracleComputeUnitInGBs`
-
+`MemoryPerOracleComputeUnitInGBs`  <a name="cfn-odb-cloudautonomousvmcluster-memoryperoraclecomputeunitingbs"></a>
 The amount of memory allocated per Oracle Compute Unit, in GB.
-
 Required when creating an Autonomous VM cluster.
+*Required*: Conditional
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OdbNetworkId`
-
+`OdbNetworkId`  <a name="cfn-odb-cloudautonomousvmcluster-odbnetworkid"></a>
 The unique identifier of the ODB network associated with this Autonomous VM cluster.
-
 Required when creating an Autonomous VM cluster.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
+*Minimum*: `6`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
-
-_Minimum_: `6`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ScanListenerPortNonTls`
-
+`ScanListenerPortNonTls`  <a name="cfn-odb-cloudautonomousvmcluster-scanlistenerportnontls"></a>
 The SCAN listener port for non-TLS (TCP) protocol. The default is 1521.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1024`
+*Maximum*: `8999`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1024`
-
-_Maximum_: `8999`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ScanListenerPortTls`
-
+`ScanListenerPortTls`  <a name="cfn-odb-cloudautonomousvmcluster-scanlistenerporttls"></a>
 The SCAN listener port for TLS (TCP) protocol. The default is 2484.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1024`
+*Maximum*: `8999`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1024`
-
-_Maximum_: `8999`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-odb-cloudautonomousvmcluster-tags"></a>
 Tags to assign to the Autonomous Vm Cluster.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-odb-cloudautonomousvmcluster-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-odb-cloudautonomousvmcluster-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeZone`
-
+`TimeZone`  <a name="cfn-odb-cloudautonomousvmcluster-timezone"></a>
 The time zone of the Autonomous VM cluster.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TotalContainerDatabases`
-
+`TotalContainerDatabases`  <a name="cfn-odb-cloudautonomousvmcluster-totalcontainerdatabases"></a>
 The total number of Autonomous Container Databases that can be created with the allocated local storage.
-
 Required when creating an Autonomous VM cluster.
-
-_Required_: Conditional
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Conditional
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-odb-cloudautonomousvmcluster-return-values"></a>
 
 ### Ref
+<a name="aws-resource-odb-cloudautonomousvmcluster-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the unique identifier of the Autonomous VM cluster. For example:
 
-`{ "Ref": "myAutonomousVmCluster" }`
+ `{ "Ref": "myAutonomousVmCluster" }`
 
 For the Autonomous VM cluster `myAutonomousVmCluster`, `Ref` returns the unique identifier of the Autonomous VM cluster.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-odb-cloudautonomousvmcluster-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-`AutonomousDataStoragePercentage`
+####
+<a name="aws-resource-odb-cloudautonomousvmcluster-return-values-fn--getatt-fn--getatt"></a>
 
+`AutonomousDataStoragePercentage`  <a name="AutonomousDataStoragePercentage-fn::getatt"></a>
 The percentage of data storage currently in use for Autonomous Databases in the Autonomous VM cluster.
 
-`AvailableAutonomousDataStorageSizeInTBs`
-
+`AvailableAutonomousDataStorageSizeInTBs`  <a name="AvailableAutonomousDataStorageSizeInTBs-fn::getatt"></a>
 The available data storage space for Autonomous Databases in the Autonomous VM cluster, in TB.
 
-`AvailableContainerDatabases`
-
+`AvailableContainerDatabases`  <a name="AvailableContainerDatabases-fn::getatt"></a>
 The number of Autonomous CDBs that you can create with the currently available storage.
 
-`AvailableCpus`
-
+`AvailableCpus`  <a name="AvailableCpus-fn::getatt"></a>
 The number of CPU cores available for allocation to Autonomous Databases.
 
-`CloudAutonomousVmClusterArn`
-
+`CloudAutonomousVmClusterArn`  <a name="CloudAutonomousVmClusterArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) for the Autonomous VM cluster.
 
-`CloudAutonomousVmClusterId`
-
+`CloudAutonomousVmClusterId`  <a name="CloudAutonomousVmClusterId-fn::getatt"></a>
 The unique identifier of the Autonomous VM cluster.
 
-`ComputeModel`
-
+`ComputeModel`  <a name="ComputeModel-fn::getatt"></a>
 The compute model of the Autonomous VM cluster: ECPU or OCPU.
 
-`CpuCoreCount`
-
+`CpuCoreCount`  <a name="CpuCoreCount-fn::getatt"></a>
 The total number of CPU cores in the Autonomous VM cluster.
 
-`CpuPercentage`
-
+`CpuPercentage`  <a name="CpuPercentage-fn::getatt"></a>
 The percentage of total CPU cores currently in use in the Autonomous VM cluster.
 
-`DataStorageSizeInGBs`
-
+`DataStorageSizeInGBs`  <a name="DataStorageSizeInGBs-fn::getatt"></a>
 The total data storage allocated to the Autonomous VM cluster, in GB.
 
-`DataStorageSizeInTBs`
-
+`DataStorageSizeInTBs`  <a name="DataStorageSizeInTBs-fn::getatt"></a>
 The total data storage allocated to the Autonomous VM cluster, in TB.
 
-`DbNodeStorageSizeInGBs`
-
+`DbNodeStorageSizeInGBs`  <a name="DbNodeStorageSizeInGBs-fn::getatt"></a>
 The local node storage allocated to the Autonomous VM cluster, in gigabytes (GB).
 
-`Domain`
-
+`Domain`  <a name="Domain-fn::getatt"></a>
 The domain name for the Autonomous VM cluster.
 
-`ExadataStorageInTBsLowestScaledValue`
-
+`ExadataStorageInTBsLowestScaledValue`  <a name="ExadataStorageInTBsLowestScaledValue-fn::getatt"></a>
 The minimum value to which you can scale down the Exadata storage, in TB.
 
-`Hostname`
-
+`Hostname`  <a name="Hostname-fn::getatt"></a>
 The hostname for the Autonomous VM cluster.
 
-`MaxAcdsLowestScaledValue`
-
+`MaxAcdsLowestScaledValue`  <a name="MaxAcdsLowestScaledValue-fn::getatt"></a>
 The minimum value to which you can scale down the maximum number of Autonomous CDBs.
 
-`MemorySizeInGBs`
-
+`MemorySizeInGBs`  <a name="MemorySizeInGBs-fn::getatt"></a>
 The total amount of memory allocated to the Autonomous VM cluster, in gigabytes (GB).
 
-`NodeCount`
-
+`NodeCount`  <a name="NodeCount-fn::getatt"></a>
 The number of database server nodes in the Autonomous VM cluster.
 
-`NonProvisionableAutonomousContainerDatabases`
-
+`NonProvisionableAutonomousContainerDatabases`  <a name="NonProvisionableAutonomousContainerDatabases-fn::getatt"></a>
 The number of Autonomous CDBs that can't be provisioned because of resource constraints.
 
-`Ocid`
-
+`Ocid`  <a name="Ocid-fn::getatt"></a>
 The Oracle Cloud Identifier (OCID) of the Autonomous VM cluster.
 
-`OciResourceAnchorName`
-
+`OciResourceAnchorName`  <a name="OciResourceAnchorName-fn::getatt"></a>
 The name of the OCI resource anchor associated with this Autonomous VM cluster.
 
-`OciUrl`
-
+`OciUrl`  <a name="OciUrl-fn::getatt"></a>
 The URL for accessing the OCI console page for this Autonomous VM cluster.
 
-`ProvisionableAutonomousContainerDatabases`
-
+`ProvisionableAutonomousContainerDatabases`  <a name="ProvisionableAutonomousContainerDatabases-fn::getatt"></a>
 The number of Autonomous CDBs that can be provisioned in the Autonomous VM cluster.
 
-`ProvisionedAutonomousContainerDatabases`
-
+`ProvisionedAutonomousContainerDatabases`  <a name="ProvisionedAutonomousContainerDatabases-fn::getatt"></a>
 The number of Autonomous CDBs currently provisioned in the Autonomous VM cluster.
 
-`ProvisionedCpus`
-
+`ProvisionedCpus`  <a name="ProvisionedCpus-fn::getatt"></a>
 The number of CPU cores currently provisioned in the Autonomous VM cluster.
 
-`ReclaimableCpus`
-
+`ReclaimableCpus`  <a name="ReclaimableCpus-fn::getatt"></a>
 The number of CPU cores that can be reclaimed from terminated or scaled-down Autonomous Databases.
 
-`ReservedCpus`
-
+`ReservedCpus`  <a name="ReservedCpus-fn::getatt"></a>
 The number of CPU cores reserved for system operations and redundancy.
 
-`Shape`
-
+`Shape`  <a name="Shape-fn::getatt"></a>
 The shape of the Exadata infrastructure for the Autonomous VM cluster.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Oracle Database@AWS
-
-IamRole
 
 All content copied from https://docs.aws.amazon.com/.

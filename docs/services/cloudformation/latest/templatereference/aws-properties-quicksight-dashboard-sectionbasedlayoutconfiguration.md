@@ -2,105 +2,75 @@
 title: "AWS::QuickSight::Dashboard SectionBasedLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SectionBasedLayoutConfiguration
+<a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration"></a>
 
-The configuration for a
-section-based layout.
+The configuration for a section-based layout.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BodySections" : [ BodySectionConfiguration, ... ],
-  "CanvasSizeOptions" : SectionBasedLayoutCanvasSizeOptions,
-  "FooterSections" : [ HeaderFooterSectionConfiguration, ... ],
-  "HeaderSections" : [ HeaderFooterSectionConfiguration, ... ]
+  "[BodySections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-bodysections)" : {{[ BodySectionConfiguration, ... ]}},
+  "[CanvasSizeOptions](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-canvassizeoptions)" : {{SectionBasedLayoutCanvasSizeOptions}},
+  "[FooterSections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-footersections)" : {{[ HeaderFooterSectionConfiguration, ... ]}},
+  "[HeaderSections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-headersections)" : {{[ HeaderFooterSectionConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BodySections:
-    - BodySectionConfiguration
-  CanvasSizeOptions:
-    SectionBasedLayoutCanvasSizeOptions
-  FooterSections:
-    - HeaderFooterSectionConfiguration
-  HeaderSections:
-    - HeaderFooterSectionConfiguration
-
+```
+  [BodySections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-bodysections): {{
+    - BodySectionConfiguration}}
+  [CanvasSizeOptions](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-canvassizeoptions): {{
+    SectionBasedLayoutCanvasSizeOptions}}
+  [FooterSections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-footersections): {{
+    - HeaderFooterSectionConfiguration}}
+  [HeaderSections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-headersections): {{
+    - HeaderFooterSectionConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration-properties"></a>
 
-`BodySections`
-
+`BodySections`  <a name="cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-bodysections"></a>
 A list of body section configurations.
+*Required*: Yes
+*Type*: Array of [BodySectionConfiguration](aws-properties-quicksight-dashboard-bodysectionconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `28`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [BodySectionConfiguration](aws-properties-quicksight-dashboard-bodysectionconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `28`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CanvasSizeOptions`
-
+`CanvasSizeOptions`  <a name="cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-canvassizeoptions"></a>
 The options for the canvas of a section-based layout.
+*Required*: Yes
+*Type*: [SectionBasedLayoutCanvasSizeOptions](aws-properties-quicksight-dashboard-sectionbasedlayoutcanvassizeoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SectionBasedLayoutCanvasSizeOptions](aws-properties-quicksight-dashboard-sectionbasedlayoutcanvassizeoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FooterSections`
-
+`FooterSections`  <a name="cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-footersections"></a>
 A list of footer section configurations.
+*Required*: Yes
+*Type*: Array of [HeaderFooterSectionConfiguration](aws-properties-quicksight-dashboard-headerfootersectionconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [HeaderFooterSectionConfiguration](aws-properties-quicksight-dashboard-headerfootersectionconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HeaderSections`
-
+`HeaderSections`  <a name="cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-headersections"></a>
 A list of header section configurations.
-
-_Required_: Yes
-
-_Type_: Array of [HeaderFooterSectionConfiguration](aws-properties-quicksight-dashboard-headerfootersectionconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SectionBasedLayoutCanvasSizeOptions
-
-SectionBasedLayoutPaperCanvasSizeOptions
+*Required*: Yes
+*Type*: Array of [HeaderFooterSectionConfiguration](aws-properties-quicksight-dashboard-headerfootersectionconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

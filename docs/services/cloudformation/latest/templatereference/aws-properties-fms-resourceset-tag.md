@@ -2,74 +2,54 @@
 title: "AWS::FMS::ResourceSet Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::ResourceSet Tag
+<a name="aws-properties-fms-resourceset-tag"></a>
 
 A collection of key:value pairs associated with an AWS resource. The key:value pair can be anything you define. Typically, the tag key represents a category (such as "environment") and the tag value represents a specific value within that category (such as "test," "development," or "production"). You can add up to 50 tags to each AWS resource.
 
 ## Syntax
+<a name="aws-properties-fms-resourceset-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fms-resourceset-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-fms-resourceset-tag-key)" : {{String}},
+  "[Value](#cfn-fms-resourceset-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fms-resourceset-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-fms-resourceset-tag-key): {{String}}
+  [Value](#cfn-fms-resourceset-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fms-resourceset-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-fms-resourceset-tag-key"></a>
 Part of the key:value pair that defines a tag. You can use a tag key to describe a category of information, such as "customer." Tag keys are case-sensitive.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([^\s]*)$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([^\s]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-fms-resourceset-tag-value"></a>
 Part of the key:value pair that defines a tag. You can use a tag value to describe a specific value within a category, such as "companyA" or "companyB." Tag values are case-sensitive.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([^\s]*)$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::FMS::ResourceSet
-
-Next
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([^\s]*)$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,49 @@
 title: "AWS::CloudFormation::StackSet Parameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::StackSet Parameter
+<a name="aws-properties-cloudformation-stackset-parameter"></a>
 
 The Parameter data type.
 
 ## Syntax
+<a name="aws-properties-cloudformation-stackset-parameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudformation-stackset-parameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParameterKey" : String,
-  "ParameterValue" : String
+  "[ParameterKey](#cfn-cloudformation-stackset-parameter-parameterkey)" : {{String}},
+  "[ParameterValue](#cfn-cloudformation-stackset-parameter-parametervalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudformation-stackset-parameter-syntax.yaml"></a>
 
-```yaml
-
-  ParameterKey: String
-  ParameterValue: String
-
+```
+  [ParameterKey](#cfn-cloudformation-stackset-parameter-parameterkey): {{String}}
+  [ParameterValue](#cfn-cloudformation-stackset-parameter-parametervalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudformation-stackset-parameter-properties"></a>
 
-`ParameterKey`
+`ParameterKey`  <a name="cfn-cloudformation-stackset-parameter-parameterkey"></a>
+The key associated with the parameter. If you don't specify a key and value for a particular parameter, CloudFormation uses the default value that's specified in your template.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The key associated with the parameter. If you don't specify a key and value for a
-particular parameter, CloudFormation uses the default value that's specified in
-your template.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValue`
-
+`ParameterValue`  <a name="cfn-cloudformation-stackset-parameter-parametervalue"></a>
 The input value associated with the parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OperationPreferences
-
-StackInstances
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

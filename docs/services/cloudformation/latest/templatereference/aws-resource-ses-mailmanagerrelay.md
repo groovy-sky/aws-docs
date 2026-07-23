@@ -2,143 +2,108 @@
 title: "AWS::SES::MailManagerRelay"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRelay
+<a name="aws-resource-ses-mailmanagerrelay"></a>
 
-Resource to create an SMTP relay, which can be used within a Mail Manager rule set to
-forward incoming emails to defined relay destinations.
+Resource to create an SMTP relay, which can be used within a Mail Manager rule set to forward incoming emails to defined relay destinations.
 
 ## Syntax
+<a name="aws-resource-ses-mailmanagerrelay-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-mailmanagerrelay-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::MailManagerRelay",
   "Properties" : {
-      "Authentication" : RelayAuthentication,
-      "RelayName" : String,
-      "ServerName" : String,
-      "ServerPort" : Number,
-      "Tags" : [ Tag, ... ]
+      "[Authentication](#cfn-ses-mailmanagerrelay-authentication)" : {{RelayAuthentication}},
+      "[RelayName](#cfn-ses-mailmanagerrelay-relayname)" : {{String}},
+      "[ServerName](#cfn-ses-mailmanagerrelay-servername)" : {{String}},
+      "[ServerPort](#cfn-ses-mailmanagerrelay-serverport)" : {{Number}},
+      "[Tags](#cfn-ses-mailmanagerrelay-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-mailmanagerrelay-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::MailManagerRelay
 Properties:
-  Authentication:
-    RelayAuthentication
-  RelayName: String
-  ServerName: String
-  ServerPort: Number
-  Tags:
-    - Tag
-
+  [Authentication](#cfn-ses-mailmanagerrelay-authentication): {{
+    RelayAuthentication}}
+  [RelayName](#cfn-ses-mailmanagerrelay-relayname): {{String}}
+  [ServerName](#cfn-ses-mailmanagerrelay-servername): {{String}}
+  [ServerPort](#cfn-ses-mailmanagerrelay-serverport): {{Number}}
+  [Tags](#cfn-ses-mailmanagerrelay-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-mailmanagerrelay-properties"></a>
 
-`Authentication`
+`Authentication`  <a name="cfn-ses-mailmanagerrelay-authentication"></a>
+Authentication for the relay destination server—specify the secretARN where the SMTP credentials are stored.
+*Required*: Yes
+*Type*: [RelayAuthentication](aws-properties-ses-mailmanagerrelay-relayauthentication.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Authentication for the relay destination server—specify the secretARN where
-the SMTP credentials are stored.
-
-_Required_: Yes
-
-_Type_: [RelayAuthentication](aws-properties-ses-mailmanagerrelay-relayauthentication.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelayName`
-
+`RelayName`  <a name="cfn-ses-mailmanagerrelay-relayname"></a>
 The unique relay name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerName`
-
+`ServerName`  <a name="cfn-ses-mailmanagerrelay-servername"></a>
 The destination relay server address.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-\.]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-\.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerPort`
-
+`ServerPort`  <a name="cfn-ses-mailmanagerrelay-serverport"></a>
 The destination relay server port.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ses-mailmanagerrelay-tags"></a>
 The tags used to organize, track, or control access for the resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-mailmanagerrelay-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-mailmanagerrelay-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-mailmanagerrelay-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-mailmanagerrelay-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-mailmanagerrelay-return-values-fn--getatt"></a>
 
-`RelayArn`
+####
+<a name="aws-resource-ses-mailmanagerrelay-return-values-fn--getatt-fn--getatt"></a>
 
+`RelayArn`  <a name="RelayArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the relay.
 
-`RelayId`
-
+`RelayId`  <a name="RelayId-fn::getatt"></a>
 The unique relay identifier.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-RelayAuthentication
 
 All content copied from https://docs.aws.amazon.com/.

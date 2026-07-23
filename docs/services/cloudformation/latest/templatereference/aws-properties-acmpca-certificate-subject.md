@@ -2,310 +2,190 @@
 title: "AWS::ACMPCA::Certificate Subject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::Certificate Subject
+<a name="aws-properties-acmpca-certificate-subject"></a>
 
-Contains information about the certificate subject. The `Subject` field in
-the certificate identifies the entity that owns or controls the public key in the
-certificate. The entity can be a user, computer, device, or service. The `Subject
-            ` must contain an X.500 distinguished name (DN). A DN is a sequence of relative
-distinguished names (RDNs). The RDNs are separated by commas in the certificate.
+Contains information about the certificate subject. The `Subject` field in the certificate identifies the entity that owns or controls the public key in the certificate. The entity can be a user, computer, device, or service. The `Subject `must contain an X.500 distinguished name (DN). A DN is a sequence of relative distinguished names (RDNs). The RDNs are separated by commas in the certificate.
 
 ## Syntax
+<a name="aws-properties-acmpca-certificate-subject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificate-subject-syntax.json"></a>
 
-```json
-
+```
 {
-  "CommonName" : String,
-  "Country" : String,
-  "CustomAttributes" : [ CustomAttribute, ... ],
-  "DistinguishedNameQualifier" : String,
-  "GenerationQualifier" : String,
-  "GivenName" : String,
-  "Initials" : String,
-  "Locality" : String,
-  "Organization" : String,
-  "OrganizationalUnit" : String,
-  "Pseudonym" : String,
-  "SerialNumber" : String,
-  "State" : String,
-  "Surname" : String,
-  "Title" : String
+  "[CommonName](#cfn-acmpca-certificate-subject-commonname)" : {{String}},
+  "[Country](#cfn-acmpca-certificate-subject-country)" : {{String}},
+  "[CustomAttributes](#cfn-acmpca-certificate-subject-customattributes)" : {{[ CustomAttribute, ... ]}},
+  "[DistinguishedNameQualifier](#cfn-acmpca-certificate-subject-distinguishednamequalifier)" : {{String}},
+  "[GenerationQualifier](#cfn-acmpca-certificate-subject-generationqualifier)" : {{String}},
+  "[GivenName](#cfn-acmpca-certificate-subject-givenname)" : {{String}},
+  "[Initials](#cfn-acmpca-certificate-subject-initials)" : {{String}},
+  "[Locality](#cfn-acmpca-certificate-subject-locality)" : {{String}},
+  "[Organization](#cfn-acmpca-certificate-subject-organization)" : {{String}},
+  "[OrganizationalUnit](#cfn-acmpca-certificate-subject-organizationalunit)" : {{String}},
+  "[Pseudonym](#cfn-acmpca-certificate-subject-pseudonym)" : {{String}},
+  "[SerialNumber](#cfn-acmpca-certificate-subject-serialnumber)" : {{String}},
+  "[State](#cfn-acmpca-certificate-subject-state)" : {{String}},
+  "[Surname](#cfn-acmpca-certificate-subject-surname)" : {{String}},
+  "[Title](#cfn-acmpca-certificate-subject-title)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificate-subject-syntax.yaml"></a>
 
-```yaml
-
-  CommonName: String
-  Country: String
-  CustomAttributes:
-    - CustomAttribute
-  DistinguishedNameQualifier: String
-  GenerationQualifier: String
-  GivenName: String
-  Initials: String
-  Locality: String
-  Organization: String
-  OrganizationalUnit: String
-  Pseudonym: String
-  SerialNumber: String
-  State: String
-  Surname: String
-  Title: String
-
+```
+  [CommonName](#cfn-acmpca-certificate-subject-commonname): {{String}}
+  [Country](#cfn-acmpca-certificate-subject-country): {{String}}
+  [CustomAttributes](#cfn-acmpca-certificate-subject-customattributes): {{
+    - CustomAttribute}}
+  [DistinguishedNameQualifier](#cfn-acmpca-certificate-subject-distinguishednamequalifier): {{String}}
+  [GenerationQualifier](#cfn-acmpca-certificate-subject-generationqualifier): {{String}}
+  [GivenName](#cfn-acmpca-certificate-subject-givenname): {{String}}
+  [Initials](#cfn-acmpca-certificate-subject-initials): {{String}}
+  [Locality](#cfn-acmpca-certificate-subject-locality): {{String}}
+  [Organization](#cfn-acmpca-certificate-subject-organization): {{String}}
+  [OrganizationalUnit](#cfn-acmpca-certificate-subject-organizationalunit): {{String}}
+  [Pseudonym](#cfn-acmpca-certificate-subject-pseudonym): {{String}}
+  [SerialNumber](#cfn-acmpca-certificate-subject-serialnumber): {{String}}
+  [State](#cfn-acmpca-certificate-subject-state): {{String}}
+  [Surname](#cfn-acmpca-certificate-subject-surname): {{String}}
+  [Title](#cfn-acmpca-certificate-subject-title): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificate-subject-properties"></a>
 
-`CommonName`
+`CommonName`  <a name="cfn-acmpca-certificate-subject-commonname"></a>
+For CA and end-entity certificates in a private PKI, the common name (CN) can be any string within the length limit.
+Note: In publicly trusted certificates, the common name must be a fully qualified domain name (FQDN) associated with the certificate subject.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-For CA and end-entity certificates in a private PKI, the common name (CN) can be any
-string within the length limit.
+`Country`  <a name="cfn-acmpca-certificate-subject-country"></a>
+Two-digit code that specifies the country in which the certificate subject located.
+*Required*: No
+*Type*: String
+*Pattern*: `[A-Za-z]{2}`
+*Minimum*: `2`
+*Maximum*: `2`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Note: In publicly trusted certificates, the common name must be a fully qualified
-domain name (FQDN) associated with the certificate subject.
+`CustomAttributes`  <a name="cfn-acmpca-certificate-subject-customattributes"></a>
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Country`
-
-Two-digit code that specifies the country in which the certificate subject
-located.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[A-Za-z]{2}`
-
-_Minimum_: `2`
-
-_Maximum_: `2`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CustomAttributes`
-
-Contains a sequence of one or more X.500 relative distinguished names (RDNs), each of
-which consists of an object identifier (OID) and a value. For more information, see
-NIST’s definition of [Object Identifier (OID)](https://csrc.nist.gov/glossary/term/Object_Identifier).
-
-###### Note
-
+Contains a sequence of one or more X.500 relative distinguished names (RDNs), each of which consists of an object identifier (OID) and a value. For more information, see NIST’s definition of [Object Identifier (OID)](https://csrc.nist.gov/glossary/term/Object_Identifier).
 Custom attributes cannot be used in combination with standard attributes.
+*Required*: No
+*Type*: Array of [CustomAttribute](aws-properties-acmpca-certificate-customattribute.md)
+*Minimum*: `1`
+*Maximum*: `150`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [CustomAttribute](aws-properties-acmpca-certificate-customattribute.md)
-
-_Minimum_: `1`
-
-_Maximum_: `150`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DistinguishedNameQualifier`
-
+`DistinguishedNameQualifier`  <a name="cfn-acmpca-certificate-subject-distinguishednamequalifier"></a>
 Disambiguating information for the certificate subject.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9'()+-.?:/= ]*`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`GenerationQualifier`  <a name="cfn-acmpca-certificate-subject-generationqualifier"></a>
+Typically a qualifier appended to the name of an individual. Examples include Jr. for junior, Sr. for senior, and III for third.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9'()+-.?:/= ]*`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GenerationQualifier`
-
-Typically a qualifier appended to the name of an individual. Examples include Jr. for
-junior, Sr. for senior, and III for third.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GivenName`
-
+`GivenName`  <a name="cfn-acmpca-certificate-subject-givenname"></a>
 First name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `16`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Initials`  <a name="cfn-acmpca-certificate-subject-initials"></a>
+Concatenation that typically contains the first letter of the **GivenName**, the first letter of the middle name if one exists, and the first letter of the **Surname**.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`Locality`  <a name="cfn-acmpca-certificate-subject-locality"></a>
+The locality (such as a city or town) in which the certificate subject is located.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `0`
-
-_Maximum_: `16`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Initials`
-
-Concatenation that typically contains the first letter of the **GivenName**, the first letter of the middle name if one exists, and the
-first letter of the **Surname**.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Locality`
-
-The locality (such as a city or town) in which the certificate subject is
-located.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Organization`
-
+`Organization`  <a name="cfn-acmpca-certificate-subject-organization"></a>
 Legal name of the organization with which the certificate subject is affiliated.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`OrganizationalUnit`  <a name="cfn-acmpca-certificate-subject-organizationalunit"></a>
+A subdivision or unit of the organization (such as sales or finance) with which the certificate subject is affiliated.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`Pseudonym`  <a name="cfn-acmpca-certificate-subject-pseudonym"></a>
+Typically a shortened version of a longer **GivenName**. For example, Jonathan is often shortened to John. Elizabeth is often shortened to Beth, Liz, or Eliza.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OrganizationalUnit`
-
-A subdivision or unit of the organization (such as sales or finance) with which the
-certificate subject is affiliated.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Pseudonym`
-
-Typically a shortened version of a longer **GivenName**.
-For example, Jonathan is often shortened to John. Elizabeth is often shortened to Beth,
-Liz, or Eliza.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SerialNumber`
-
+`SerialNumber`  <a name="cfn-acmpca-certificate-subject-serialnumber"></a>
 The certificate serial number.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9'()+-.?:/= ]*`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9'()+-.?:/= ]*`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`State`
-
+`State`  <a name="cfn-acmpca-certificate-subject-state"></a>
 State in which the subject of the certificate is located.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Surname`  <a name="cfn-acmpca-certificate-subject-surname"></a>
+Family name. In the US and the UK, for example, the surname of an individual is ordered last. In Asian cultures the surname is typically ordered first.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `40`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Surname`
-
-Family name. In the US and the UK, for example, the surname of an individual is
-ordered last. In Asian cultures the surname is typically ordered first.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `40`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Title`
-
-A title such as Mr. or Ms., which is pre-pended to the name to refer formally to the
-certificate subject.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Qualifier
-
-Validity
+`Title`  <a name="cfn-acmpca-certificate-subject-title"></a>
+A title such as Mr. or Ms., which is pre-pended to the name to refer formally to the certificate subject.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

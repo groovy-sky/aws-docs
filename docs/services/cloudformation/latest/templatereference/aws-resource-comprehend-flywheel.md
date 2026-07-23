@@ -2,200 +2,147 @@
 title: "AWS::Comprehend::Flywheel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::Flywheel
+<a name="aws-resource-comprehend-flywheel"></a>
 
-A flywheel is an AWS resource that orchestrates the ongoing training of a model for custom classification
-or custom entity recognition. You can create a flywheel to start with an existing trained model, or
-Comprehend can create and train a new model.
+A flywheel is an AWS resource that orchestrates the ongoing training of a model for custom classification or custom entity recognition. You can create a flywheel to start with an existing trained model, or Comprehend can create and train a new model.
 
-When you create the flywheel, Comprehend creates a data lake in your account. The data lake holds the training
-data and test data for all versions of the model.
+When you create the flywheel, Comprehend creates a data lake in your account. The data lake holds the training data and test data for all versions of the model.
 
-To use a flywheel with an existing trained model, you specify the active model version. Comprehend copies the model's
-training data and test data into the flywheel's data lake.
+To use a flywheel with an existing trained model, you specify the active model version. Comprehend copies the model's training data and test data into the flywheel's data lake.
 
-To use the flywheel with a new model, you need to provide a dataset for training data (and optional test data)
-when you create the flywheel.
+To use the flywheel with a new model, you need to provide a dataset for training data (and optional test data) when you create the flywheel.
 
-For more information about flywheels, see [Flywheel overview](../../../comprehend/latest/dg/flywheels-about.md) in the _Amazon Comprehend Developer Guide_.
+For more information about flywheels, see [ Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-comprehend-flywheel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-comprehend-flywheel-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Comprehend::Flywheel",
   "Properties" : {
-      "ActiveModelArn" : String,
-      "DataAccessRoleArn" : String,
-      "DataLakeS3Uri" : String,
-      "DataSecurityConfig" : DataSecurityConfig,
-      "FlywheelName" : String,
-      "ModelType" : String,
-      "Tags" : [ Tag, ... ],
-      "TaskConfig" : TaskConfig
+      "[ActiveModelArn](#cfn-comprehend-flywheel-activemodelarn)" : {{String}},
+      "[DataAccessRoleArn](#cfn-comprehend-flywheel-dataaccessrolearn)" : {{String}},
+      "[DataLakeS3Uri](#cfn-comprehend-flywheel-datalakes3uri)" : {{String}},
+      "[DataSecurityConfig](#cfn-comprehend-flywheel-datasecurityconfig)" : {{DataSecurityConfig}},
+      "[FlywheelName](#cfn-comprehend-flywheel-flywheelname)" : {{String}},
+      "[ModelType](#cfn-comprehend-flywheel-modeltype)" : {{String}},
+      "[Tags](#cfn-comprehend-flywheel-tags)" : {{[ Tag, ... ]}},
+      "[TaskConfig](#cfn-comprehend-flywheel-taskconfig)" : {{TaskConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-comprehend-flywheel-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Comprehend::Flywheel
 Properties:
-  ActiveModelArn: String
-  DataAccessRoleArn: String
-  DataLakeS3Uri: String
-  DataSecurityConfig:
-    DataSecurityConfig
-  FlywheelName: String
-  ModelType: String
-  Tags:
-    - Tag
-  TaskConfig:
-    TaskConfig
-
+  [ActiveModelArn](#cfn-comprehend-flywheel-activemodelarn): {{String}}
+  [DataAccessRoleArn](#cfn-comprehend-flywheel-dataaccessrolearn): {{String}}
+  [DataLakeS3Uri](#cfn-comprehend-flywheel-datalakes3uri): {{String}}
+  [DataSecurityConfig](#cfn-comprehend-flywheel-datasecurityconfig): {{
+    DataSecurityConfig}}
+  [FlywheelName](#cfn-comprehend-flywheel-flywheelname): {{String}}
+  [ModelType](#cfn-comprehend-flywheel-modeltype): {{String}}
+  [Tags](#cfn-comprehend-flywheel-tags): {{
+    - Tag}}
+  [TaskConfig](#cfn-comprehend-flywheel-taskconfig): {{
+    TaskConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-comprehend-flywheel-properties"></a>
 
-`ActiveModelArn`
-
+`ActiveModelArn`  <a name="cfn-comprehend-flywheel-activemodelarn"></a>
 The Amazon Resource Number (ARN) of the active model version.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws(-[^:]+)?:comprehend:[a-zA-Z0-9-]*:[0-9]{12}:(document-classifier|entity-recognizer)/[a-zA-Z0-9](-*[a-zA-Z0-9])*(/version/[a-zA-Z0-9](-*[a-zA-Z0-9])*)?`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DataAccessRoleArn`  <a name="cfn-comprehend-flywheel-dataaccessrolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend permission to access the flywheel data.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws(-[^:]+)?:iam::[0-9]{12}:role/.+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `arn:aws(-[^:]+)?:comprehend:[a-zA-Z0-9-]*:[0-9]{12}:(document-classifier|entity-recognizer)/[a-zA-Z0-9](-*[a-zA-Z0-9])*(/version/[a-zA-Z0-9](-*[a-zA-Z0-9])*)?`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataAccessRoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role that
-grants Amazon Comprehend permission to access the flywheel data.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws(-[^:]+)?:iam::[0-9]{12}:role/.+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLakeS3Uri`
-
+`DataLakeS3Uri`  <a name="cfn-comprehend-flywheel-datalakes3uri"></a>
 Amazon S3 URI of the data lake location.
+*Required*: Yes
+*Type*: String
+*Pattern*: `s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DataSecurityConfig`
-
+`DataSecurityConfig`  <a name="cfn-comprehend-flywheel-datasecurityconfig"></a>
 Data security configuration.
+*Required*: No
+*Type*: [DataSecurityConfig](aws-properties-comprehend-flywheel-datasecurityconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataSecurityConfig](aws-properties-comprehend-flywheel-datasecurityconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FlywheelName`
-
+`FlywheelName`  <a name="cfn-comprehend-flywheel-flywheelname"></a>
 Name for the flywheel.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelType`
-
+`ModelType`  <a name="cfn-comprehend-flywheel-modeltype"></a>
 Model type of the flywheel's model.
+*Required*: No
+*Type*: String
+*Allowed values*: `DOCUMENT_CLASSIFIER | ENTITY_RECOGNIZER`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Tags`  <a name="cfn-comprehend-flywheel-tags"></a>
+Tags associated with the endpoint being created. A tag is a key-value pair that adds metadata to the endpoint. For example, a tag with "Sales" as the key might be added to an endpoint to indicate its use by the sales department.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-comprehend-flywheel-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `DOCUMENT_CLASSIFIER | ENTITY_RECOGNIZER`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-Tags associated with the endpoint being created. A tag is a key-value pair that adds
-metadata to the endpoint. For example, a tag with "Sales" as the key might be added to an
-endpoint to indicate its use by the sales department.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-comprehend-flywheel-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TaskConfig`
-
+`TaskConfig`  <a name="cfn-comprehend-flywheel-taskconfig"></a>
 Configuration about the model associated with a flywheel.
-
-_Required_: No
-
-_Type_: [TaskConfig](aws-properties-comprehend-flywheel-taskconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: [TaskConfig](aws-properties-comprehend-flywheel-taskconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-comprehend-flywheel-return-values"></a>
 
 ### Ref
+<a name="aws-resource-comprehend-flywheel-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the flywheel.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-comprehend-flywheel-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-comprehend-flywheel-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the flywheel.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfig
-
-DataSecurityConfig
 
 All content copied from https://docs.aws.amazon.com/.

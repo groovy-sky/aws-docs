@@ -2,91 +2,66 @@
 title: "AWS::QuickSight::Dashboard SankeyDiagramAggregatedFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SankeyDiagramAggregatedFieldWells
+<a name="aws-properties-quicksight-dashboard-sankeydiagramaggregatedfieldwells"></a>
 
 The field well configuration of a sankey diagram.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-sankeydiagramaggregatedfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-sankeydiagramaggregatedfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destination" : [ DimensionField, ... ],
-  "Source" : [ DimensionField, ... ],
-  "Weight" : [ MeasureField, ... ]
+  "[Destination](#cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-destination)" : {{[ DimensionField, ... ]}},
+  "[Source](#cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-source)" : {{[ DimensionField, ... ]}},
+  "[Weight](#cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-weight)" : {{[ MeasureField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-sankeydiagramaggregatedfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  Destination:
-    - DimensionField
-  Source:
-    - DimensionField
-  Weight:
-    - MeasureField
-
+```
+  [Destination](#cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-destination): {{
+    - DimensionField}}
+  [Source](#cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-source): {{
+    - DimensionField}}
+  [Weight](#cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-weight): {{
+    - MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-sankeydiagramaggregatedfieldwells-properties"></a>
 
-`Destination`
-
+`Destination`  <a name="cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-destination"></a>
 The destination field wells of a sankey diagram.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-source"></a>
 The source field wells of a sankey diagram.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
+`Weight`  <a name="cfn-quicksight-dashboard-sankeydiagramaggregatedfieldwells-weight"></a>
 The weight field wells of a sankey diagram.
-
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SameSheetTargetVisualConfiguration
-
-SankeyDiagramChartConfiguration
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

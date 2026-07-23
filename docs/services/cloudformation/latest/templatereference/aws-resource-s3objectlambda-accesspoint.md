@@ -2,107 +2,88 @@
 title: "AWS::S3ObjectLambda::AccessPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3ObjectLambda::AccessPoint
+<a name="aws-resource-s3objectlambda-accesspoint"></a>
 
-The `AWS::S3ObjectLambda::AccessPoint` resource specifies an Object Lambda
-Access Point used to access a bucket.
+The `AWS::S3ObjectLambda::AccessPoint` resource specifies an Object Lambda Access Point used to access a bucket.
 
 ## Syntax
+<a name="aws-resource-s3objectlambda-accesspoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3objectlambda-accesspoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3ObjectLambda::AccessPoint",
   "Properties" : {
-      "Name" : String,
-      "ObjectLambdaConfiguration" : ObjectLambdaConfiguration
+      "[Name](#cfn-s3objectlambda-accesspoint-name)" : {{String}},
+      "[ObjectLambdaConfiguration](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration)" : {{ObjectLambdaConfiguration}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3objectlambda-accesspoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3ObjectLambda::AccessPoint
 Properties:
-  Name: String
-  ObjectLambdaConfiguration:
-    ObjectLambdaConfiguration
-
+  [Name](#cfn-s3objectlambda-accesspoint-name): {{String}}
+  [ObjectLambdaConfiguration](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration): {{
+    ObjectLambdaConfiguration}}
 ```
 
 ## Properties
+<a name="aws-resource-s3objectlambda-accesspoint-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-s3objectlambda-accesspoint-name"></a>
 The name of this access point.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9]([a-z0-9\-]*[a-z0-9])?$`
+*Minimum*: `3`
+*Maximum*: `45`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9]([a-z0-9\-]*[a-z0-9])?$`
-
-_Minimum_: `3`
-
-_Maximum_: `45`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ObjectLambdaConfiguration`
-
+`ObjectLambdaConfiguration`  <a name="cfn-s3objectlambda-accesspoint-objectlambdaconfiguration"></a>
 A configuration used when creating an Object Lambda Access Point.
-
-_Required_: Yes
-
-_Type_: [ObjectLambdaConfiguration](aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: [ObjectLambdaConfiguration](aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-s3objectlambda-accesspoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3objectlambda-accesspoint-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3objectlambda-accesspoint-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Alias.Status`
+####
+<a name="aws-resource-s3objectlambda-accesspoint-return-values-fn--getatt-fn--getatt"></a>
 
+`Alias.Status`  <a name="Alias.Status-fn::getatt"></a>
 The status of the Object Lambda Access Point alias. Valid Values: `PROVISIONING` \| `READY`.
 
-`Alias.Value`
-
+`Alias.Value`  <a name="Alias.Value-fn::getatt"></a>
 The alias name value of the Object Lambda Access Point. For example: `myolap-1a4n8yjrb3kda96f67zwrwiiuse1a--ol-s3`.
 
-`Arn`
+`Arn`  <a name="Arn-fn::getatt"></a>
+Specifies the ARN for the Object Lambda Access Point.
 
-Specifies the ARN for the Object Lambda Access
-Point.
-
-`CreationDate`
-
-The date and time when the specified Object
-Lambda Access Point was created.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon S3 Object Lambda
-
-Alias
+`CreationDate`  <a name="CreationDate-fn::getatt"></a>
+The date and time when the specified Object Lambda Access Point was created.
 
 All content copied from https://docs.aws.amazon.com/.

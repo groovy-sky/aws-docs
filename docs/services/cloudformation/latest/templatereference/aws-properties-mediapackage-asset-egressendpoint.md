@@ -2,64 +2,49 @@
 title: "AWS::MediaPackage::Asset EgressEndpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::Asset EgressEndpoint
+<a name="aws-properties-mediapackage-asset-egressendpoint"></a>
 
 The playback endpoint for a packaging configuration on an asset.
 
 ## Syntax
+<a name="aws-properties-mediapackage-asset-egressendpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-asset-egressendpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "PackagingConfigurationId" : String,
-  "Url" : String
+  "[PackagingConfigurationId](#cfn-mediapackage-asset-egressendpoint-packagingconfigurationid)" : {{String}},
+  "[Url](#cfn-mediapackage-asset-egressendpoint-url)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-asset-egressendpoint-syntax.yaml"></a>
 
-```yaml
-
-  PackagingConfigurationId: String
-  Url: String
-
+```
+  [PackagingConfigurationId](#cfn-mediapackage-asset-egressendpoint-packagingconfigurationid): {{String}}
+  [Url](#cfn-mediapackage-asset-egressendpoint-url): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-asset-egressendpoint-properties"></a>
 
-`PackagingConfigurationId`
-
+`PackagingConfigurationId`  <a name="cfn-mediapackage-asset-egressendpoint-packagingconfigurationid"></a>
 The ID of a packaging configuration that's applied to this asset.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Url`
-
+`Url`  <a name="cfn-mediapackage-asset-egressendpoint-url"></a>
 The URL that's used to request content from this endpoint.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaPackage::Asset
-
-Tag
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

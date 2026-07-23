@@ -2,82 +2,60 @@
 title: "AWS::CodeDeploy::DeploymentGroup BlueGreenDeploymentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup BlueGreenDeploymentConfiguration
+<a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration"></a>
 
 Information about blue/green deployment options for a deployment group.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeploymentReadyOption" : DeploymentReadyOption,
-  "GreenFleetProvisioningOption" : GreenFleetProvisioningOption,
-  "TerminateBlueInstancesOnDeploymentSuccess" : BlueInstanceTerminationOption
+  "[DeploymentReadyOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-deploymentreadyoption)" : {{DeploymentReadyOption}},
+  "[GreenFleetProvisioningOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-greenfleetprovisioningoption)" : {{GreenFleetProvisioningOption}},
+  "[TerminateBlueInstancesOnDeploymentSuccess](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-terminateblueinstancesondeploymentsuccess)" : {{BlueInstanceTerminationOption}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DeploymentReadyOption:
-    DeploymentReadyOption
-  GreenFleetProvisioningOption:
-    GreenFleetProvisioningOption
-  TerminateBlueInstancesOnDeploymentSuccess:
-    BlueInstanceTerminationOption
-
+```
+  [DeploymentReadyOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-deploymentreadyoption): {{
+    DeploymentReadyOption}}
+  [GreenFleetProvisioningOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-greenfleetprovisioningoption): {{
+    GreenFleetProvisioningOption}}
+  [TerminateBlueInstancesOnDeploymentSuccess](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-terminateblueinstancesondeploymentsuccess): {{
+    BlueInstanceTerminationOption}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-properties"></a>
 
-`DeploymentReadyOption`
+`DeploymentReadyOption`  <a name="cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-deploymentreadyoption"></a>
+Information about the action to take when newly provisioned instances are ready to receive traffic in a blue/green deployment.
+*Required*: No
+*Type*: [DeploymentReadyOption](aws-properties-codedeploy-deploymentgroup-deploymentreadyoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about the action to take when newly provisioned instances are ready to
-receive traffic in a blue/green deployment.
+`GreenFleetProvisioningOption`  <a name="cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-greenfleetprovisioningoption"></a>
+Information about how instances are provisioned for a replacement environment in a blue/green deployment.
+*Required*: No
+*Type*: [GreenFleetProvisioningOption](aws-properties-codedeploy-deploymentgroup-greenfleetprovisioningoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DeploymentReadyOption](aws-properties-codedeploy-deploymentgroup-deploymentreadyoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GreenFleetProvisioningOption`
-
-Information about how instances are provisioned for a replacement environment in a
-blue/green deployment.
-
-_Required_: No
-
-_Type_: [GreenFleetProvisioningOption](aws-properties-codedeploy-deploymentgroup-greenfleetprovisioningoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TerminateBlueInstancesOnDeploymentSuccess`
-
-Information about whether to terminate instances in the original fleet during a
-blue/green deployment.
-
-_Required_: No
-
-_Type_: [BlueInstanceTerminationOption](aws-properties-codedeploy-deploymentgroup-blueinstanceterminationoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoRollbackConfiguration
-
-BlueInstanceTerminationOption
+`TerminateBlueInstancesOnDeploymentSuccess`  <a name="cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-terminateblueinstancesondeploymentsuccess"></a>
+Information about whether to terminate instances in the original fleet during a blue/green deployment.
+*Required*: No
+*Type*: [BlueInstanceTerminationOption](aws-properties-codedeploy-deploymentgroup-blueinstanceterminationoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

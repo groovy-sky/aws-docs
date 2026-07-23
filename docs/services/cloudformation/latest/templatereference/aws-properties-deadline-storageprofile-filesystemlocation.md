@@ -2,88 +2,63 @@
 title: "AWS::Deadline::StorageProfile FileSystemLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::StorageProfile FileSystemLocation
+<a name="aws-properties-deadline-storageprofile-filesystemlocation"></a>
 
 The details of the file system location for the resource.
 
 ## Syntax
+<a name="aws-properties-deadline-storageprofile-filesystemlocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-storageprofile-filesystemlocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Path" : String,
-  "Type" : String
+  "[Name](#cfn-deadline-storageprofile-filesystemlocation-name)" : {{String}},
+  "[Path](#cfn-deadline-storageprofile-filesystemlocation-path)" : {{String}},
+  "[Type](#cfn-deadline-storageprofile-filesystemlocation-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-storageprofile-filesystemlocation-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Path: String
-  Type: String
-
+```
+  [Name](#cfn-deadline-storageprofile-filesystemlocation-name): {{String}}
+  [Path](#cfn-deadline-storageprofile-filesystemlocation-path): {{String}}
+  [Type](#cfn-deadline-storageprofile-filesystemlocation-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-storageprofile-filesystemlocation-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-deadline-storageprofile-filesystemlocation-name"></a>
 The location name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9A-Za-z ]*$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z ]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Path`
-
+`Path`  <a name="cfn-deadline-storageprofile-filesystemlocation-path"></a>
 The file path.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-deadline-storageprofile-filesystemlocation-type"></a>
 The type of file.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SHARED | LOCAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Deadline::StorageProfile
-
-Next
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SHARED | LOCAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

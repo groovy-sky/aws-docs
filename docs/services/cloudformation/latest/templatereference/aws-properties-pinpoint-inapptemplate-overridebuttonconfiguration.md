@@ -2,75 +2,53 @@
 title: "AWS::Pinpoint::InAppTemplate OverrideButtonConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::InAppTemplate OverrideButtonConfiguration
+<a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration"></a>
 
-Specifies the configuration of a button with settings that are specific to a certain
-device type.
+Specifies the configuration of a button with settings that are specific to a certain device type.
 
 ## Syntax
+<a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ButtonAction" : String,
-  "Link" : String
+  "[ButtonAction](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-buttonaction)" : {{String}},
+  "[Link](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-link)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ButtonAction: String
-  Link: String
-
+```
+  [ButtonAction](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-buttonaction): {{String}}
+  [Link](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-link): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration-properties"></a>
 
-`ButtonAction`
+`ButtonAction`  <a name="cfn-pinpoint-inapptemplate-overridebuttonconfiguration-buttonaction"></a>
+The action that occurs when a recipient chooses a button in an in-app message. You can specify one of the following:
++ `LINK` – A link to a web destination.
++ `DEEP_LINK` – A link to a specific page in an application.
++ `CLOSE` – Dismisses the message.
+*Required*: No
+*Type*: String
+*Allowed values*: `LINK | DEEP_LINK | CLOSE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The action that occurs when a recipient chooses a button in an in-app message.
-You can specify one of the following:
-
-- `LINK` – A link to a web destination.
-
-- `DEEP_LINK` – A link to a specific page in an
-application.
-
-- `CLOSE` – Dismisses the message.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LINK | DEEP_LINK | CLOSE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Link`
-
+`Link`  <a name="cfn-pinpoint-inapptemplate-overridebuttonconfiguration-link"></a>
 The destination (such as a URL) for a button.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InAppMessageContent
-
-AWS::Pinpoint::PushTemplate
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,53 +3,41 @@ title: "Enable time to live (TTL) in DynamoDB"
 ---
 
 # Enable time to live (TTL) in DynamoDB
+<a name="time-to-live-ttl-how-to"></a>
 
-###### Note
+**Note**
+To assist in debugging and verification of proper operation of the TTL feature, the values provided for the item TTL are logged in plaintext in DynamoDB diagnostic logs.
 
-To assist in debugging and verification of proper operation of the TTL feature, the
-values provided for the item TTL are logged in plaintext in DynamoDB diagnostic
-logs.
+You can enable TTL in the Amazon DynamoDB Console, the AWS Command Line Interface (AWS CLI), or using the [Amazon DynamoDB API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/) with any of the supposed AWS SDKs. It takes approximately one hour to enable TTL across all partitions.
 
-You can enable TTL in the Amazon DynamoDB Console, the AWS Command Line Interface (AWS CLI), or using the
-[Amazon DynamoDB API Reference](../../../../reference/amazondynamodb/latest/apireference.md) with any of the supposed AWS SDKs. It takes approximately one hour to
-enable TTL across all partitions.
+## Enable DynamoDB TTL using the AWS console
+<a name="time-to-live-ttl-how-to-enable-console"></a>
 
-1. Sign in to the AWS Management Console and open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+1. Sign in to the AWS Management Console and open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-2. Choose **Tables**, and then choose the table that you
-    want to modify.
+1. Choose **Tables**, and then choose the table that you want to modify.
 
-3. In the **Additional settings** tab, in the **Time**
-**to Live (TTL)** section, choose **Turn on** to
-    enable TTL.
+1. In the **Additional settings** tab, in the **Time to Live (TTL)** section, choose **Turn on** to enable TTL.
 
-4. When enabling TTL on a table, DynamoDB requires you to identify a specific
-    attribute name that the service will look for when determining if an item is
-    eligible for expiration. The TTL attribute name, shown below, is case
-    sensitive and must match the attribute defined in your read and write
-    operations. A mismatch will cause expired items to go undeleted. Renaming
-    the TTL attribute requires you to disable TTL and then re-enable it with the
-    new attribute going forward. TTL will continue to process deletions for
-    approximately 30 minutes once it is disabled. TTL must be reconfigured on
-    restored tables.
+1. When enabling TTL on a table, DynamoDB requires you to identify a specific attribute name that the service will look for when determining if an item is eligible for expiration. The TTL attribute name, shown below, is case sensitive and must match the attribute defined in your read and write operations. A mismatch will cause expired items to go undeleted. Renaming the TTL attribute requires you to disable TTL and then re-enable it with the new attribute going forward. TTL will continue to process deletions for approximately 30 minutes once it is disabled. TTL must be reconfigured on restored tables.
+![Case-sensitive TTL attribute name that DynamoDB uses to determine an item's eligiblity for expiration.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/EnableTTL-Settings.png)
 
-![Case-sensitive TTL attribute name that DynamoDB uses to determine an item's eligiblity for expiration.](https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/EnableTTL-Settings.png)
+1. (Optional) You can perform a test by simulating the date and time of the expiration and matching a few items. This provides you with a sample list of items and confirms that there are items containing the TTL attribute name provided along with the expiration time.
 
-5. (Optional) You can perform a test by simulating the date and time of the
-    expiration and matching a few items. This provides you with a sample list of
-    items and confirms that there are items containing the TTL attribute name
-    provided along with the expiration time.
+After TTL is enabled, the TTL attribute is marked **TTL** when you view items on the DynamoDB console. You can view the date and time that an item expires by hovering your pointer over the attribute.
 
-After TTL is enabled, the TTL attribute is marked **TTL** when you view items on the DynamoDB console. You can view the date
-and time that an item expires by hovering your pointer over the attribute.
+## Enable DynamoDB TTL using the API
+<a name="time-to-live-ttl-how-to-enable-api"></a>
 
-Python
+**Note**
+`UpdateTimeToLive` is not idempotent. If TTL is already enabled, or if you call `UpdateTimeToLive` more than once for the same table within a one-hour window, the operation returns a `ValidationException` (HTTP 400) instead of succeeding silently. Enabling TTL with a different attribute name while TTL is already active also returns a `ValidationException`. Handle this exception in your calling code rather than assuming the call always succeeds. For example, you can treat a "TimeToLive is already enabled" error as confirmation that the setting is already in place.
+
+------
+#### [ Python ]
 
 You can enable TTL with code, using the [UpdateTimeToLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb/client/update_time_to_live.html) operation.
 
-```python
-
+```
 import boto3
 
 def enable_ttl(table_name, ttl_attribute_name):
@@ -86,12 +74,9 @@ def enable_ttl(table_name, ttl_attribute_name):
 enable_ttl('your-table-name', 'expirationDate')
 ```
 
-You can confirm TTL is enabled by using the [DescribeTimeToLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb/client/describe_time_to_live.html) operation, which describes the TTL
-status on a table. The `TimeToLive` status is either
-`ENABLED` or `DISABLED`.
+You can confirm TTL is enabled by using the [DescribeTimeToLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb/client/describe_time_to_live.html) operation, which describes the TTL status on a table. The `TimeToLive` status is either `ENABLED` or `DISABLED`.
 
-```python
-
+```
 # create a DynamoDB client
 dynamodb = boto3.client('dynamodb')
 
@@ -102,12 +87,12 @@ table_name = 'YourTable'
 response = dynamodb.describe_time_to_live(TableName=table_name)
 ```
 
-JavaScript
+------
+#### [ JavaScript ]
 
-You can enable TTL with code, using the [UpdateTimeToLiveCommand](../../../../reference/awsjavascriptsdk/v3/latest/package/aws-sdk-client-dynamodb/class/updatetimetolivecommand.md) operation.
+You can enable TTL with code, using the [UpdateTimeToLiveCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-dynamodb/Class/UpdateTimeToLiveCommand/) operation.
 
-```javascript
-
+```
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 const enableTTL = async (tableName, ttlAttribute) => {
@@ -140,58 +125,51 @@ const enableTTL = async (tableName, ttlAttribute) => {
 enableTTL('ExampleTable', 'exampleTtlAttribute');
 ```
 
+------
+
+## Enable Time to Live using the AWS CLI
+<a name="time-to-live-ttl-how-to-enable-cli-sdk"></a>
+
 1. Enable TTL on the `TTLExample` table.
 
-```nohighlight
+   ```
+   aws dynamodb update-time-to-live --table-name TTLExample --time-to-live-specification "Enabled=true, AttributeName=ttl"
+   ```
 
-aws dynamodb update-time-to-live --table-name TTLExample --time-to-live-specification "Enabled=true, AttributeName=ttl"
-```
+1. Describe TTL on the `TTLExample` table.
 
-2. Describe TTL on the `TTLExample` table.
-
-```nohighlight
-
-aws dynamodb describe-time-to-live --table-name TTLExample
-{
+   ```
+   aws dynamodb describe-time-to-live --table-name TTLExample
+   {
        "TimeToLiveDescription": {
            "AttributeName": "ttl",
            "TimeToLiveStatus": "ENABLED"
        }
-}
-```
+   }
+   ```
 
-3. Add an item to the `TTLExample` table with the Time to Live attribute
-    set using the BASH shell and the AWS CLI.
+1. Add an item to the `TTLExample` table with the Time to Live attribute set using the BASH shell and the AWS CLI.
 
-```nohighlight
+   ```
+   EXP=`date -d '+5 days' +%s`
+   aws dynamodb put-item --table-name "TTLExample" --item '{"id": {"N": "1"}, "ttl": {"N": "'$EXP'"}}'
+   ```
 
-EXP=`date -d '+5 days' +%s`
-aws dynamodb put-item --table-name "TTLExample" --item '{"id": {"N": "1"}, "ttl": {"N": "'$EXP'"}}'
-```
+This example starts with the current date and adds 5 days to it to create an expiration time. Then, it converts the expiration time to epoch time format to finally add an item to the "`TTLExample`" table.
 
-This example starts with the current date and adds 5 days to it to create an
-expiration time. Then, it converts the expiration time to epoch time format to
-finally add an item to the " `TTLExample`" table.
+**Note**
+ One way to set expiration values for Time to Live is to calculate the number of seconds to add to the expiration time. For example, 5 days is 432,000 seconds. However, it is often preferable to start with a date and work from there.
 
-###### Note
+It is fairly simple to get the current time in epoch time format, as in the following examples.
++ Linux Terminal: `date +%s`
++ Python: `import time; int(time.time())`
++ Java: `System.currentTimeMillis() / 1000L`
++ JavaScript: `Math.floor(Date.now() / 1000)`
 
-One way to set expiration values for Time to Live is to calculate the number of
-seconds to add to the expiration time. For example, 5 days is 432,000 seconds.
-However, it is often preferable to start with a date and work from there.
-
-It is fairly simple to get the current time in epoch time format, as in the
-following examples.
-
-- Linux Terminal: `date +%s`
-
-- Python: `import time; int(time.time())`
-
-- Java: `System.currentTimeMillis() / 1000L`
-
-- JavaScript: `Math.floor(Date.now() / 1000)`
+## Enable DynamoDB TTL using CloudFormation
+<a name="time-to-live-ttl-how-to-enable-cf"></a>
 
 ```
-
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   TTLExampleTable:
@@ -216,12 +194,6 @@ Resources:
         Enabled: true
 ```
 
-Additional details on using TTL within your CloudFormation templates can be found [here](../../../cloudformation/latest/userguide/aws-properties-dynamodb-table-timetolivespecification.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Time to Live (TTL)
-
-Computing TTL
+Additional details on using TTL within your CloudFormation templates can be found [here](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-timetolivespecification.html).
 
 All content copied from https://docs.aws.amazon.com/.

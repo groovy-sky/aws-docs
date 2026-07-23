@@ -2,135 +2,89 @@
 title: "AWS::OpenSearchServerless::SecurityConfig IamIdentityCenterConfigOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::SecurityConfig IamIdentityCenterConfigOptions
+<a name="aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions"></a>
 
-Describes IAM Identity Center options for an OpenSearch Serverless security
-configuration in the form of a key-value map.
+Describes IAM Identity Center options for an OpenSearch Serverless security configuration in the form of a key-value map.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplicationArn" : String,
-  "ApplicationDescription" : String,
-  "ApplicationName" : String,
-  "GroupAttribute" : String,
-  "InstanceArn" : String,
-  "UserAttribute" : String
+  "[ApplicationArn](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationarn)" : {{String}},
+  "[ApplicationDescription](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationdescription)" : {{String}},
+  "[ApplicationName](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationname)" : {{String}},
+  "[GroupAttribute](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-groupattribute)" : {{String}},
+  "[InstanceArn](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-instancearn)" : {{String}},
+  "[UserAttribute](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-userattribute)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-syntax.yaml"></a>
 
-```yaml
-
-  ApplicationArn: String
-  ApplicationDescription: String
-  ApplicationName: String
-  GroupAttribute: String
-  InstanceArn: String
-  UserAttribute: String
-
+```
+  [ApplicationArn](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationarn): {{String}}
+  [ApplicationDescription](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationdescription): {{String}}
+  [ApplicationName](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationname): {{String}}
+  [GroupAttribute](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-groupattribute): {{String}}
+  [InstanceArn](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-instancearn): {{String}}
+  [UserAttribute](#cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-userattribute): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-properties"></a>
 
-`ApplicationArn`
+`ApplicationArn`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationarn"></a>
+The ARN of the IAM Identity Center application used to integrate with OpenSearch Serverless.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso::\d{12}:application/(sso)?ins-[a-zA-Z0-9-.]{16}/apl-[a-zA-Z0-9]{16}`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ARN of the IAM Identity Center application used to integrate with OpenSearch
-Serverless.
+`ApplicationDescription`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationdescription"></a>
+The description of the IAM Identity Center application used to integrate with OpenSearch Serverless.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ApplicationName`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-applicationname"></a>
+The name of the IAM Identity Center application used to integrate with OpenSearch Serverless.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`GroupAttribute`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-groupattribute"></a>
+The group attribute for this IAM Identity Center integration. Defaults to `GroupId`.
+*Required*: No
+*Type*: String
+*Allowed values*: `GroupId | GroupName`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso::\d{12}:application/(sso)?ins-[a-zA-Z0-9-.]{16}/apl-[a-zA-Z0-9]{16}`
+`InstanceArn`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-instancearn"></a>
+The ARN of the IAM Identity Center instance used to integrate with OpenSearch Serverless.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationDescription`
-
-The description of the IAM Identity Center application used to integrate with
-OpenSearch Serverless.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationName`
-
-The name of the IAM Identity Center application used to integrate with OpenSearch
-Serverless.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupAttribute`
-
-The group attribute for this IAM Identity Center integration. Defaults to
-`GroupId`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GroupId | GroupName`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
-The ARN of the IAM Identity Center instance used to integrate with OpenSearch
-Serverless.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UserAttribute`
-
-The user attribute for this IAM Identity Center integration. Defaults to
-`UserId`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `UserId | UserName | Email`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IamFederationConfigOptions
-
-SamlConfigOptions
+`UserAttribute`  <a name="cfn-opensearchserverless-securityconfig-iamidentitycenterconfigoptions-userattribute"></a>
+The user attribute for this IAM Identity Center integration. Defaults to `UserId`
+*Required*: No
+*Type*: String
+*Allowed values*: `UserId | UserName | Email`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

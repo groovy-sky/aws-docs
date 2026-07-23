@@ -2,84 +2,60 @@
 title: "AWS::IoTEvents::DetectorModel Event"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel Event
+<a name="aws-properties-iotevents-detectormodel-event"></a>
 
-Specifies the `actions` to be performed when the `condition`
-evaluates to TRUE.
+Specifies the `actions` to be performed when the `condition` evaluates to TRUE.
 
 ## Syntax
+<a name="aws-properties-iotevents-detectormodel-event-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-detectormodel-event-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ Action, ... ],
-  "Condition" : String,
-  "EventName" : String
+  "[Actions](#cfn-iotevents-detectormodel-event-actions)" : {{[ Action, ... ]}},
+  "[Condition](#cfn-iotevents-detectormodel-event-condition)" : {{String}},
+  "[EventName](#cfn-iotevents-detectormodel-event-eventname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-detectormodel-event-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - Action
-  Condition: String
-  EventName: String
-
+```
+  [Actions](#cfn-iotevents-detectormodel-event-actions): {{
+    - Action}}
+  [Condition](#cfn-iotevents-detectormodel-event-condition): {{String}}
+  [EventName](#cfn-iotevents-detectormodel-event-eventname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-detectormodel-event-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-iotevents-detectormodel-event-actions"></a>
 The actions to be performed.
+*Required*: No
+*Type*: Array of [Action](aws-properties-iotevents-detectormodel-action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Condition`  <a name="cfn-iotevents-detectormodel-event-condition"></a>
+Optional. The Boolean expression that, when TRUE, causes the `actions` to be performed. If not present, the actions are performed (=TRUE). If the expression result is not a Boolean value, the actions are not performed (=FALSE).
+*Required*: No
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Action](aws-properties-iotevents-detectormodel-action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Condition`
-
-Optional. The Boolean expression that, when TRUE, causes the `actions` to be
-performed. If not present, the actions are performed (=TRUE). If the expression result is not
-a Boolean value, the actions are not performed (=FALSE).
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventName`
-
+`EventName`  <a name="cfn-iotevents-detectormodel-event-eventname"></a>
 The name of the event.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamoDBv2
-
-Firehose
+*Required*: Yes
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

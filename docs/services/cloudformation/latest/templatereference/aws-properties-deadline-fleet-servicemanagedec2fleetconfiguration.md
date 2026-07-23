@@ -2,106 +2,87 @@
 title: "AWS::Deadline::Fleet ServiceManagedEc2FleetConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet ServiceManagedEc2FleetConfiguration
+<a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration"></a>
 
 The configuration details for a service managed EC2 fleet.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoScalingConfiguration" : ServiceManagedEc2AutoScalingConfiguration,
-  "InstanceCapabilities" : ServiceManagedEc2InstanceCapabilities,
-  "InstanceMarketOptions" : ServiceManagedEc2InstanceMarketOptions,
-  "StorageProfileId" : String,
-  "VpcConfiguration" : VpcConfiguration
+  "[AutoScalingConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-autoscalingconfiguration)" : {{ServiceManagedEc2AutoScalingConfiguration}},
+  "[InstanceCapabilities](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancecapabilities)" : {{ServiceManagedEc2InstanceCapabilities}},
+  "[InstanceMarketOptions](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancemarketoptions)" : {{ServiceManagedEc2InstanceMarketOptions}},
+  "[PersistentVolumeConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-persistentvolumeconfiguration)" : {{PersistentVolumeConfiguration}},
+  "[StorageProfileId](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-storageprofileid)" : {{String}},
+  "[VpcConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-vpcconfiguration)" : {{VpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AutoScalingConfiguration:
-    ServiceManagedEc2AutoScalingConfiguration
-  InstanceCapabilities:
-    ServiceManagedEc2InstanceCapabilities
-  InstanceMarketOptions:
-    ServiceManagedEc2InstanceMarketOptions
-  StorageProfileId: String
-  VpcConfiguration:
-    VpcConfiguration
-
+```
+  [AutoScalingConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-autoscalingconfiguration): {{
+    ServiceManagedEc2AutoScalingConfiguration}}
+  [InstanceCapabilities](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancecapabilities): {{
+    ServiceManagedEc2InstanceCapabilities}}
+  [InstanceMarketOptions](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancemarketoptions): {{
+    ServiceManagedEc2InstanceMarketOptions}}
+  [PersistentVolumeConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-persistentvolumeconfiguration): {{
+    PersistentVolumeConfiguration}}
+  [StorageProfileId](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-storageprofileid): {{String}}
+  [VpcConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-vpcconfiguration): {{
+    VpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration-properties"></a>
 
-`AutoScalingConfiguration`
+`AutoScalingConfiguration`  <a name="cfn-deadline-fleet-servicemanagedec2fleetconfiguration-autoscalingconfiguration"></a>
+The auto scaling configuration settings for the service managed EC2 fleet.
+*Required*: No
+*Type*: [ServiceManagedEc2AutoScalingConfiguration](aws-properties-deadline-fleet-servicemanagedec2autoscalingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
-
-_Required_: No
-
-_Type_: [ServiceManagedEc2AutoScalingConfiguration](aws-properties-deadline-fleet-servicemanagedec2autoscalingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceCapabilities`
-
+`InstanceCapabilities`  <a name="cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancecapabilities"></a>
 The instance capabilities for the service managed EC2 fleet.
+*Required*: Yes
+*Type*: [ServiceManagedEc2InstanceCapabilities](aws-properties-deadline-fleet-servicemanagedec2instancecapabilities.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ServiceManagedEc2InstanceCapabilities](aws-properties-deadline-fleet-servicemanagedec2instancecapabilities.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceMarketOptions`
-
+`InstanceMarketOptions`  <a name="cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancemarketoptions"></a>
 The instance market options for the service managed EC2 fleet.
+*Required*: Yes
+*Type*: [ServiceManagedEc2InstanceMarketOptions](aws-properties-deadline-fleet-servicemanagedec2instancemarketoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`PersistentVolumeConfiguration`  <a name="cfn-deadline-fleet-servicemanagedec2fleetconfiguration-persistentvolumeconfiguration"></a>
+The persistent volume configuration for the service managed EC2 fleet.
+*Required*: No
+*Type*: [PersistentVolumeConfiguration](aws-properties-deadline-fleet-persistentvolumeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ServiceManagedEc2InstanceMarketOptions](aws-properties-deadline-fleet-servicemanagedec2instancemarketoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageProfileId`
-
+`StorageProfileId`  <a name="cfn-deadline-fleet-servicemanagedec2fleetconfiguration-storageprofileid"></a>
 The storage profile ID for the service managed EC2 fleet.
+*Required*: No
+*Type*: String
+*Pattern*: `^sp-[0-9a-f]{32}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^sp-[0-9a-f]{32}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-deadline-fleet-servicemanagedec2fleetconfiguration-vpcconfiguration"></a>
 The VPC configuration for the service managed EC2 fleet.
-
-_Required_: No
-
-_Type_: [VpcConfiguration](aws-properties-deadline-fleet-vpcconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceManagedEc2AutoScalingConfiguration
-
-ServiceManagedEc2InstanceCapabilities
+*Required*: No
+*Type*: [VpcConfiguration](aws-properties-deadline-fleet-vpcconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

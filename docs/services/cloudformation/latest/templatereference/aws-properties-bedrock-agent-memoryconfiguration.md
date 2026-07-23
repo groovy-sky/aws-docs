@@ -2,86 +2,63 @@
 title: "AWS::Bedrock::Agent MemoryConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent MemoryConfiguration
+<a name="aws-properties-bedrock-agent-memoryconfiguration"></a>
 
 Details of the memory configuration.
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-memoryconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-memoryconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnabledMemoryTypes" : [ String, ... ],
-  "SessionSummaryConfiguration" : SessionSummaryConfiguration,
-  "StorageDays" : Number
+  "[EnabledMemoryTypes](#cfn-bedrock-agent-memoryconfiguration-enabledmemorytypes)" : {{[ String, ... ]}},
+  "[SessionSummaryConfiguration](#cfn-bedrock-agent-memoryconfiguration-sessionsummaryconfiguration)" : {{SessionSummaryConfiguration}},
+  "[StorageDays](#cfn-bedrock-agent-memoryconfiguration-storagedays)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-memoryconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EnabledMemoryTypes:
-    - String
-  SessionSummaryConfiguration:
-    SessionSummaryConfiguration
-  StorageDays: Number
-
+```
+  [EnabledMemoryTypes](#cfn-bedrock-agent-memoryconfiguration-enabledmemorytypes): {{
+    - String}}
+  [SessionSummaryConfiguration](#cfn-bedrock-agent-memoryconfiguration-sessionsummaryconfiguration): {{
+    SessionSummaryConfiguration}}
+  [StorageDays](#cfn-bedrock-agent-memoryconfiguration-storagedays): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-memoryconfiguration-properties"></a>
 
-`EnabledMemoryTypes`
-
+`EnabledMemoryTypes`  <a name="cfn-bedrock-agent-memoryconfiguration-enabledmemorytypes"></a>
 The type of memory that is stored.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionSummaryConfiguration`
-
+`SessionSummaryConfiguration`  <a name="cfn-bedrock-agent-memoryconfiguration-sessionsummaryconfiguration"></a>
 Contains the configuration for SESSION\_SUMMARY memory type enabled for the agent.
+*Required*: No
+*Type*: [SessionSummaryConfiguration](aws-properties-bedrock-agent-sessionsummaryconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SessionSummaryConfiguration](aws-properties-bedrock-agent-sessionsummaryconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageDays`
-
+`StorageDays`  <a name="cfn-bedrock-agent-memoryconfiguration-storagedays"></a>
 The number of days the agent is configured to retain the conversational context.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `365`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceConfiguration
-
-OrchestrationExecutor
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `365`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

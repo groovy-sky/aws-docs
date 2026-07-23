@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Template CategoryDrillDownFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CategoryDrillDownFilter
+<a name="aws-properties-quicksight-template-categorydrilldownfilter"></a>
 
 The category drill down filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-categorydrilldownfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-categorydrilldownfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryValues" : [ String, ... ],
-  "Column" : ColumnIdentifier
+  "[CategoryValues](#cfn-quicksight-template-categorydrilldownfilter-categoryvalues)" : {{[ String, ... ]}},
+  "[Column](#cfn-quicksight-template-categorydrilldownfilter-column)" : {{ColumnIdentifier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-categorydrilldownfilter-syntax.yaml"></a>
 
-```yaml
-
-  CategoryValues:
-    - String
-  Column:
-    ColumnIdentifier
-
+```
+  [CategoryValues](#cfn-quicksight-template-categorydrilldownfilter-categoryvalues): {{
+    - String}}
+  [Column](#cfn-quicksight-template-categorydrilldownfilter-column): {{
+    ColumnIdentifier}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-categorydrilldownfilter-properties"></a>
 
-`CategoryValues`
-
+`CategoryValues`  <a name="cfn-quicksight-template-categorydrilldownfilter-categoryvalues"></a>
 A list of the string inputs that are the values of the category drill down filter.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0 | 0`
+*Maximum*: `512 | 100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0 | 0`
-
-_Maximum_: `512 | 100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-categorydrilldownfilter-column"></a>
 The column that the filter is applied to.
-
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CategoricalMeasureField
-
-CategoryFilter
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

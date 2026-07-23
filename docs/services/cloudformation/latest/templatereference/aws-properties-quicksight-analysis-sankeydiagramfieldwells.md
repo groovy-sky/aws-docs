@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis SankeyDiagramFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SankeyDiagramFieldWells
+<a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells"></a>
 
 The field well configuration of a sankey diagram.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "SankeyDiagramAggregatedFieldWells" : SankeyDiagramAggregatedFieldWells
+  "[SankeyDiagramAggregatedFieldWells](#cfn-quicksight-analysis-sankeydiagramfieldwells-sankeydiagramaggregatedfieldwells)" : {{SankeyDiagramAggregatedFieldWells}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  SankeyDiagramAggregatedFieldWells:
-    SankeyDiagramAggregatedFieldWells
-
+```
+  [SankeyDiagramAggregatedFieldWells](#cfn-quicksight-analysis-sankeydiagramfieldwells-sankeydiagramaggregatedfieldwells): {{
+    SankeyDiagramAggregatedFieldWells}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells-properties"></a>
 
-`SankeyDiagramAggregatedFieldWells`
-
+`SankeyDiagramAggregatedFieldWells`  <a name="cfn-quicksight-analysis-sankeydiagramfieldwells-sankeydiagramaggregatedfieldwells"></a>
 The field well configuration of a sankey diagram.
-
-_Required_: No
-
-_Type_: [SankeyDiagramAggregatedFieldWells](aws-properties-quicksight-analysis-sankeydiagramaggregatedfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SankeyDiagramChartConfiguration
-
-SankeyDiagramSortConfiguration
+*Required*: No
+*Type*: [SankeyDiagramAggregatedFieldWells](aws-properties-quicksight-analysis-sankeydiagramaggregatedfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,55 @@
 title: "AWS::CloudWatch::MetricStream MetricStreamStatisticsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::MetricStream MetricStreamStatisticsConfiguration
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration"></a>
 
-This structure specifies a list of additional statistics to stream, and the metrics to stream those
-additional statistics for.
+This structure specifies a list of additional statistics to stream, and the metrics to stream those additional statistics for.
 
-All metrics that match the combination of metric name and namespace will be streamed
-with the additional statistics, no matter their dimensions.
+All metrics that match the combination of metric name and namespace will be streamed with the additional statistics, no matter their dimensions.
 
 ## Syntax
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalStatistics" : [ String, ... ],
-  "IncludeMetrics" : [ MetricStreamStatisticsMetric, ... ]
+  "[AdditionalStatistics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-additionalstatistics)" : {{[ String, ... ]}},
+  "[IncludeMetrics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-includemetrics)" : {{[ MetricStreamStatisticsMetric, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalStatistics:
-    - String
-  IncludeMetrics:
-    - MetricStreamStatisticsMetric
-
+```
+  [AdditionalStatistics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-additionalstatistics): {{
+    - String}}
+  [IncludeMetrics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-includemetrics): {{
+    - MetricStreamStatisticsMetric}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration-properties"></a>
 
-`AdditionalStatistics`
+`AdditionalStatistics`  <a name="cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-additionalstatistics"></a>
+The additional statistics to stream for the metrics listed in `IncludeMetrics`.
+*Required*: Yes
+*Type*: Array of String
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The
-additional statistics to stream for the metrics listed in `IncludeMetrics`.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeMetrics`
-
-An array that
-defines the metrics that are to have additional statistics streamed.
-
-_Required_: Yes
-
-_Type_: Array of [MetricStreamStatisticsMetric](aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetricStreamFilter
-
-MetricStreamStatisticsMetric
+`IncludeMetrics`  <a name="cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-includemetrics"></a>
+An array that defines the metrics that are to have additional statistics streamed.
+*Required*: Yes
+*Type*: Array of [MetricStreamStatisticsMetric](aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

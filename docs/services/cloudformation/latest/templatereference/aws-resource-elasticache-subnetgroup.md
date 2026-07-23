@@ -2,114 +2,96 @@
 title: "AWS::ElastiCache::SubnetGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElastiCache::SubnetGroup
+<a name="aws-resource-elasticache-subnetgroup"></a>
 
-Creates a cache subnet group. For more information about cache subnet groups, go to Cache Subnet Groups in the
-_Amazon ElastiCache User Guide_ or go to [CreateCacheSubnetGroup](../../../../reference/amazonelasticache/latest/apireference/api-createcachesubnetgroup.md) in the
-_Amazon ElastiCache API Reference Guide_.
+Creates a cache subnet group. For more information about cache subnet groups, go to Cache Subnet Groups in the *Amazon ElastiCache User Guide* or go to [CreateCacheSubnetGroup](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheSubnetGroup.html) in the *Amazon ElastiCache API Reference Guide*.
 
 ## Syntax
+<a name="aws-resource-elasticache-subnetgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-elasticache-subnetgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ElastiCache::SubnetGroup",
   "Properties" : {
-      "CacheSubnetGroupName" : String,
-      "Description" : String,
-      "SubnetIds" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[CacheSubnetGroupName](#cfn-elasticache-subnetgroup-cachesubnetgroupname)" : {{String}},
+      "[Description](#cfn-elasticache-subnetgroup-description)" : {{String}},
+      "[SubnetIds](#cfn-elasticache-subnetgroup-subnetids)" : {{[ String, ... ]}},
+      "[Tags](#cfn-elasticache-subnetgroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-elasticache-subnetgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ElastiCache::SubnetGroup
 Properties:
-  CacheSubnetGroupName: String
-  Description: String
-  SubnetIds:
-    - String
-  Tags:
-    - Tag
-
+  [CacheSubnetGroupName](#cfn-elasticache-subnetgroup-cachesubnetgroupname): {{String}}
+  [Description](#cfn-elasticache-subnetgroup-description): {{String}}
+  [SubnetIds](#cfn-elasticache-subnetgroup-subnetids): {{
+    - String}}
+  [Tags](#cfn-elasticache-subnetgroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-elasticache-subnetgroup-properties"></a>
 
-`CacheSubnetGroupName`
-
-The name for the cache subnet group. This value is stored as a lowercase
-string.
-
+`CacheSubnetGroupName`  <a name="cfn-elasticache-subnetgroup-cachesubnetgroupname"></a>
+The name for the cache subnet group. This value is stored as a lowercase string.
 Constraints: Must contain no more than 255 alphanumeric characters or hyphens.
-
 Example: `mysubnetgroup`
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-elasticache-subnetgroup-description"></a>
 The description for the cache subnet group.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-elasticache-subnetgroup-subnetids"></a>
 The EC2 subnet IDs for the cache subnet group.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A tag that can be added to an ElastiCache subnet group. Tags are composed of a Key/Value pair. You can use tags
-to categorize and track all your subnet groups. A tag with a null Value is permitted.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-elasticache-subnetgroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-elasticache-subnetgroup-tags"></a>
+A tag that can be added to an ElastiCache subnet group. Tags are composed of a Key/Value pair. You can use tags to categorize and track all your subnet groups. A tag with a null Value is permitted.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-elasticache-subnetgroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-elasticache-subnetgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-elasticache-subnetgroup-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the Ref intrinsic function, Ref returns the resource
-name.
+When the logical ID of this resource is provided to the Ref intrinsic function, Ref returns the resource name.
 
-For more information about using the Ref function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+ For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-elasticache-subnetgroup--examples"></a>
+
+###
+<a name="aws-resource-elasticache-subnetgroup--examples--"></a>
 
 #### JSON
+<a name="aws-resource-elasticache-subnetgroup--examples----json"></a>
 
-```json
-
+```
 {
     "SubnetGroup": {
         "Type": "AWS::ElastiCache::SubnetGroup",
@@ -129,9 +111,9 @@ For more information about using the Ref function, see [Ref](../userguide/intrin
 ```
 
 #### YAML
+<a name="aws-resource-elasticache-subnetgroup--examples----yaml"></a>
 
-```yaml
-
+```
 SubnetGroup:
   Type: 'AWS::ElastiCache::SubnetGroup'
   Properties:
@@ -140,11 +122,5 @@ SubnetGroup:
       - !Ref Subnet1
       - !Ref Subnet2
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

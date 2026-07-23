@@ -2,54 +2,42 @@
 title: "AWS::Cases::Layout LayoutContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::Layout LayoutContent
+<a name="aws-properties-cases-layout-layoutcontent"></a>
 
 Object to store union of different versions of layout content.
 
 ## Syntax
+<a name="aws-properties-cases-layout-layoutcontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-layout-layoutcontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "Basic" : BasicLayout
+  "[Basic](#cfn-cases-layout-layoutcontent-basic)" : {{BasicLayout}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-layout-layoutcontent-syntax.yaml"></a>
 
-```yaml
-
-  Basic:
-    BasicLayout
-
+```
+  [Basic](#cfn-cases-layout-layoutcontent-basic): {{
+    BasicLayout}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-layout-layoutcontent-properties"></a>
 
-`Basic`
-
-Content specific to `BasicLayout` type. It configures fields in the top panel
-and More Info tab of agent application.
-
-_Required_: Yes
-
-_Type_: [BasicLayout](aws-properties-cases-layout-basiclayout.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldItem
-
-LayoutSections
+`Basic`  <a name="cfn-cases-layout-layoutcontent-basic"></a>
+Content specific to `BasicLayout` type. It configures fields in the top panel and More Info tab of agent application.
+*Required*: Yes
+*Type*: [BasicLayout](aws-properties-cases-layout-basiclayout.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

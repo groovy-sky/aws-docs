@@ -3,77 +3,62 @@ title: "DescribeStackEvents"
 ---
 
 # DescribeStackEvents
+<a name="API_DescribeStackEvents"></a>
 
-Returns all stack related events for a specified stack in reverse chronological order. For
-more information about a stack's event history, see [Understand CloudFormation stack creation events](../../../../services/cloudformation/latest/userguide/stack-resource-configuration-complete.md) in the
-_AWS CloudFormation User Guide_.
+Returns all stack related events for a specified stack in reverse chronological order. For more information about a stack's event history, see [Understand CloudFormation stack creation events](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack-resource-configuration-complete.html) in the * AWS CloudFormation User Guide*.
 
-###### Note
-
-You can list events for stacks that have failed to create or have been deleted by
-specifying the unique stack identifier (stack ID).
+**Note**
+You can list events for stacks that have failed to create or have been deleted by specifying the unique stack identifier (stack ID).
 
 ## Request Parameters
+<a name="API_DescribeStackEvents_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
-**NextToken**
-
-The token for the next set of items to return. (You received this token from a previous
-call.)
-
+ ** NextToken **
+The token for the next set of items to return. (You received this token from a previous call.)
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
-**StackName**
-
-The name or the unique stack ID that's associated with the stack, which aren't always
-interchangeable:
-
-- Running stacks: You can specify either the stack's name or its unique stack ID.
-
-- Deleted stacks: You must specify the unique stack ID.
-
+ ** StackName **
+The name or the unique stack ID that's associated with the stack, which aren't always interchangeable:
++ Running stacks: You can specify either the stack's name or its unique stack ID.
++ Deleted stacks: You must specify the unique stack ID.
 Type: String
-
 Required: Yes
 
 ## Response Elements
+<a name="API_DescribeStackEvents_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**NextToken**
-
-If the output exceeds 1 MB in size, a string that identifies the next page of events. If
-no additional page exists, this value is null.
-
+ ** NextToken **
+If the output exceeds 1 MB in size, a string that identifies the next page of events. If no additional page exists, this value is null.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
-**StackEvents.member.N**
-
+ **StackEvents.member.N**
 A list of `StackEvents` structures.
-
-Type: Array of [StackEvent](api-stackevent.md) objects
+Type: Array of [StackEvent](API_StackEvent.md) objects
 
 ## Errors
+<a name="API_DescribeStackEvents_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DescribeStackEvents_Examples"></a>
 
 ### DescribeStackEvents
+<a name="API_DescribeStackEvents_Example_1"></a>
 
 This example illustrates one usage of DescribeStackEvents.
 
 #### Sample Request
+<a name="API_DescribeStackEvents_Example_1_Request"></a>
 
 ```
-
             https://cloudformation.us-east-1.amazonaws.com/
  ?Action=DescribeStackEvents
  &StackName=MyStack
@@ -86,9 +71,9 @@ This example illustrates one usage of DescribeStackEvents.
 ```
 
 #### Sample Response
+<a name="API_DescribeStackEvents_Example_1_Response"></a>
 
 ```
-
 <DescribeStackEventsResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
   <DescribeStackEventsResult>
     <StackEvents>
@@ -156,33 +141,18 @@ This example illustrates one usage of DescribeStackEvents.
 ```
 
 ## See Also
+<a name="API_DescribeStackEvents_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackEvents)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackEvents)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeStackDriftDetectionStatus
-
-DescribeStackInstance
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeStackEvents)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeStackEvents)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,237 +3,171 @@ title: "RestoreTableToPointInTime"
 ---
 
 # RestoreTableToPointInTime
+<a name="API_RestoreTableToPointInTime"></a>
 
-Restores the specified table to the specified point in time within
-`EarliestRestorableDateTime` and `LatestRestorableDateTime`.
-You can restore your table to any point in time in the last 35 days. You can set the
-recovery period to any value between 1 and 35 days. Any number of users can execute up
-to 50 concurrent restores (any type of restore) in a given account.
+Restores the specified table to the specified point in time within `EarliestRestorableDateTime` and `LatestRestorableDateTime`. You can restore your table to any point in time in the last 35 days. You can set the recovery period to any value between 1 and 35 days. Any number of users can execute up to 50 concurrent restores (any type of restore) in a given account.
 
-When you restore using point in time recovery, DynamoDB restores your table data to
-the state based on the selected date and time (day:hour:minute:second) to a new table.
+When you restore using point in time recovery, DynamoDB restores your table data to the state based on the selected date and time (day:hour:minute:second) to a new table.
 
-Along with data, the following are also included on the new restored table using point
-in time recovery:
-
-- Global secondary indexes (GSIs)
-
-- Local secondary indexes (LSIs)
-
-- Provisioned read and write capacity
-
-- Encryption settings
-
-###### Important
-
-All these settings come from the current settings of the source table at
-the time of restore.
+Along with data, the following are also included on the new restored table using point in time recovery:
++ Global secondary indexes (GSIs)
++ Local secondary indexes (LSIs)
++ Provisioned read and write capacity
++ Encryption settings
+**Important**
+ All these settings come from the current settings of the source table at the time of restore.
 
 You must manually set up the following on the restored table:
-
-- Auto scaling policies
-
-- IAM policies
-
-- Amazon CloudWatch metrics and alarms
-
-- Tags
-
-- Stream settings
-
-- Time to Live (TTL) settings
-
-- Point in time recovery settings
++ Auto scaling policies
++ IAM policies
++ Amazon CloudWatch metrics and alarms
++ Tags
++ Stream settings
++ Time to Live (TTL) settings
++ Point in time recovery settings
 
 ## Request Syntax
+<a name="API_RestoreTableToPointInTime_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "BillingModeOverride": "string",
+   "BillingModeOverride": "{{string}}",
    "GlobalSecondaryIndexOverride": [
       {
-         "IndexName": "string",
+         "IndexName": "{{string}}",
          "KeySchema": [
             {
-               "AttributeName": "string",
-               "KeyType": "string"
+               "AttributeName": "{{string}}",
+               "KeyType": "{{string}}"
             }
          ],
          "OnDemandThroughput": {
-            "MaxReadRequestUnits": number,
-            "MaxWriteRequestUnits": number
+            "MaxReadRequestUnits": {{number}},
+            "MaxWriteRequestUnits": {{number}}
          },
          "Projection": {
-            "NonKeyAttributes": [ "string" ],
-            "ProjectionType": "string"
+            "NonKeyAttributes": [ "{{string}}" ],
+            "ProjectionType": "{{string}}"
          },
          "ProvisionedThroughput": {
-            "ReadCapacityUnits": number,
-            "WriteCapacityUnits": number
+            "ReadCapacityUnits": {{number}},
+            "WriteCapacityUnits": {{number}}
          },
          "WarmThroughput": {
-            "ReadUnitsPerSecond": number,
-            "WriteUnitsPerSecond": number
+            "ReadUnitsPerSecond": {{number}},
+            "WriteUnitsPerSecond": {{number}}
          }
       }
    ],
    "LocalSecondaryIndexOverride": [
       {
-         "IndexName": "string",
+         "IndexName": "{{string}}",
          "KeySchema": [
             {
-               "AttributeName": "string",
-               "KeyType": "string"
+               "AttributeName": "{{string}}",
+               "KeyType": "{{string}}"
             }
          ],
          "Projection": {
-            "NonKeyAttributes": [ "string" ],
-            "ProjectionType": "string"
+            "NonKeyAttributes": [ "{{string}}" ],
+            "ProjectionType": "{{string}}"
          }
       }
    ],
    "OnDemandThroughputOverride": {
-      "MaxReadRequestUnits": number,
-      "MaxWriteRequestUnits": number
+      "MaxReadRequestUnits": {{number}},
+      "MaxWriteRequestUnits": {{number}}
    },
    "ProvisionedThroughputOverride": {
-      "ReadCapacityUnits": number,
-      "WriteCapacityUnits": number
+      "ReadCapacityUnits": {{number}},
+      "WriteCapacityUnits": {{number}}
    },
-   "RestoreDateTime": number,
-   "SourceTableArn": "string",
-   "SourceTableName": "string",
+   "RestoreDateTime": {{number}},
+   "SourceTableArn": "{{string}}",
+   "SourceTableName": "{{string}}",
    "SSESpecificationOverride": {
-      "Enabled": boolean,
-      "KMSMasterKeyId": "string",
-      "SSEType": "string"
+      "Enabled": {{boolean}},
+      "KMSMasterKeyId": "{{string}}",
+      "SSEType": "{{string}}"
    },
-   "TargetTableName": "string",
-   "UseLatestRestorableTime": boolean
+   "TargetTableName": "{{string}}",
+   "UseLatestRestorableTime": {{boolean}}
 }
 ```
 
 ## Request Parameters
+<a name="API_RestoreTableToPointInTime_RequestParameters"></a>
 
 The request accepts the following data in JSON format.
 
-###### Note
-
+**Note**
 In the following list, the required parameters are described first.
 
-**[TargetTableName](#API_RestoreTableToPointInTime_RequestSyntax)**
-
+ ** [TargetTableName](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-TargetTableName"></a>
 The name of the new table to which it must be restored to.
-
 Type: String
-
 Length Constraints: Minimum length of 3. Maximum length of 255.
-
 Pattern: `[a-zA-Z0-9_.-]+`
-
 Required: Yes
 
-**[BillingModeOverride](#API_RestoreTableToPointInTime_RequestSyntax)**
-
+ ** [BillingModeOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-BillingModeOverride"></a>
 The billing mode of the restored table.
-
 Type: String
-
 Valid Values: `PROVISIONED | PAY_PER_REQUEST`
-
 Required: No
 
-**[GlobalSecondaryIndexOverride](#API_RestoreTableToPointInTime_RequestSyntax)**
-
-List of global secondary indexes for the restored table. The indexes provided should
-match existing secondary indexes. You can choose to exclude some or all of the indexes
-at the time of restore.
-
-Type: Array of [GlobalSecondaryIndex](api-globalsecondaryindex.md) objects
-
+ ** [GlobalSecondaryIndexOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-GlobalSecondaryIndexOverride"></a>
+List of global secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
+Type: Array of [GlobalSecondaryIndex](API_GlobalSecondaryIndex.md) objects
 Required: No
 
-**[LocalSecondaryIndexOverride](#API_RestoreTableToPointInTime_RequestSyntax)**
-
-List of local secondary indexes for the restored table. The indexes provided should
-match existing secondary indexes. You can choose to exclude some or all of the indexes
-at the time of restore.
-
-Type: Array of [LocalSecondaryIndex](api-localsecondaryindex.md) objects
-
+ ** [LocalSecondaryIndexOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-LocalSecondaryIndexOverride"></a>
+List of local secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
+Type: Array of [LocalSecondaryIndex](API_LocalSecondaryIndex.md) objects
 Required: No
 
-**[OnDemandThroughputOverride](#API_RestoreTableToPointInTime_RequestSyntax)**
-
-Sets the maximum number of read and write units for the specified on-demand table. If
-you use this parameter, you must specify `MaxReadRequestUnits`,
-`MaxWriteRequestUnits`, or both.
-
-Type: [OnDemandThroughput](api-ondemandthroughput.md) object
-
+ ** [OnDemandThroughputOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-OnDemandThroughputOverride"></a>
+Sets the maximum number of read and write units for the specified on-demand table. If you use this parameter, you must specify `MaxReadRequestUnits`, `MaxWriteRequestUnits`, or both.
+Type: [OnDemandThroughput](API_OnDemandThroughput.md) object
 Required: No
 
-**[ProvisionedThroughputOverride](#API_RestoreTableToPointInTime_RequestSyntax)**
-
+ ** [ProvisionedThroughputOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-ProvisionedThroughputOverride"></a>
 Provisioned throughput settings for the restored table.
-
-Type: [ProvisionedThroughput](api-provisionedthroughput.md) object
-
+Type: [ProvisionedThroughput](API_ProvisionedThroughput.md) object
 Required: No
 
-**[RestoreDateTime](#API_RestoreTableToPointInTime_RequestSyntax)**
-
+ ** [RestoreDateTime](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-RestoreDateTime"></a>
 Time in the past to restore the table to.
-
 Type: Timestamp
-
 Required: No
 
-**[SourceTableArn](#API_RestoreTableToPointInTime_RequestSyntax)**
-
-The DynamoDB table that will be restored. This value is an Amazon Resource Name
-(ARN).
-
+ ** [SourceTableArn](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-SourceTableArn"></a>
+The DynamoDB table that will be restored. This value is an Amazon Resource Name (ARN).
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
-**[SourceTableName](#API_RestoreTableToPointInTime_RequestSyntax)**
-
+ ** [SourceTableName](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-SourceTableName"></a>
 Name of the source table that is being restored.
-
 Type: String
-
 Length Constraints: Minimum length of 3. Maximum length of 255.
-
 Pattern: `[a-zA-Z0-9_.-]+`
-
 Required: No
 
-**[SSESpecificationOverride](#API_RestoreTableToPointInTime_RequestSyntax)**
-
+ ** [SSESpecificationOverride](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-SSESpecificationOverride"></a>
 The new server-side encryption settings for the restored table.
-
-Type: [SSESpecification](api-ssespecification.md) object
-
+Type: [SSESpecification](API_SSESpecification.md) object
 Required: No
 
-**[UseLatestRestorableTime](#API_RestoreTableToPointInTime_RequestSyntax)**
-
-Restore the table to the latest possible time. `LatestRestorableDateTime`
-is typically 5 minutes before the current time.
-
+ ** [UseLatestRestorableTime](#API_RestoreTableToPointInTime_RequestSyntax) **   <a name="DDB-RestoreTableToPointInTime-request-UseLatestRestorableTime"></a>
+Restore the table to the latest possible time. `LatestRestorableDateTime` is typically 5 minutes before the current time.
 Type: Boolean
-
 Required: No
 
 ## Response Syntax
+<a name="API_RestoreTableToPointInTime_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "TableDescription": {
       "ArchivalSummary": {
@@ -414,123 +348,72 @@ Required: No
 ```
 
 ## Response Elements
+<a name="API_RestoreTableToPointInTime_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[TableDescription](#API_RestoreTableToPointInTime_ResponseSyntax)**
-
+ ** [TableDescription](#API_RestoreTableToPointInTime_ResponseSyntax) **   <a name="DDB-RestoreTableToPointInTime-response-TableDescription"></a>
 Represents the properties of a table.
-
-Type: [TableDescription](api-tabledescription.md) object
+Type: [TableDescription](API_TableDescription.md) object
 
 ## Errors
+<a name="API_RestoreTableToPointInTime_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerError**
-
+ ** InternalServerError **
 An error occurred on the server side.
-
-**message**
-
+ ** message **
 The server encountered an internal error trying to fulfill the request.
-
 HTTP Status Code: 500
 
-**InvalidRestoreTimeException**
-
-An invalid restore time was specified. RestoreDateTime must be between
-EarliestRestorableDateTime and LatestRestorableDateTime.
-
+ ** InvalidRestoreTimeException **
+An invalid restore time was specified. RestoreDateTime must be between EarliestRestorableDateTime and LatestRestorableDateTime.
 HTTP Status Code: 400
 
-**LimitExceededException**
-
+ ** LimitExceededException **
 There is no limit to the number of daily on-demand backups that can be taken.
-
-For most purposes, up to 500 simultaneous table operations are allowed per account.
-These operations include `CreateTable`, `UpdateTable`,
-`DeleteTable`, `UpdateTimeToLive`,
-`RestoreTableFromBackup`, and `RestoreTableToPointInTime`.
-
-When you are creating a table with one or more secondary indexes, you can have up
-to 250 such requests running at a time. However, if the table or index specifications
-are complex, then DynamoDB might temporarily reduce the number of concurrent
-operations.
-
-When importing into DynamoDB, up to 50 simultaneous import table operations are
-allowed per account.
-
+For most purposes, up to 500 simultaneous table operations are allowed per account. These operations include `CreateTable`, `UpdateTable`, `DeleteTable`,`UpdateTimeToLive`, `RestoreTableFromBackup`, and `RestoreTableToPointInTime`.
+When you are creating a table with one or more secondary indexes, you can have up to 250 such requests running at a time. However, if the table or index specifications are complex, then DynamoDB might temporarily reduce the number of concurrent operations.
+When importing into DynamoDB, up to 50 simultaneous import table operations are allowed per account.
 There is a soft account quota of 2,500 tables.
-
-GetRecords was called with a value of more than 1000 for the limit request
-parameter.
-
-More than 2 processes are reading from the same streams shard at the same time.
-Exceeding this limit may result in request throttling.
-
-**message**
-
+GetRecords was called with a value of more than 1000 for the limit request parameter.
+More than 2 processes are reading from the same streams shard at the same time. Exceeding this limit may result in request throttling.
+ ** message **
 Too many operations for a given subscriber.
-
 HTTP Status Code: 400
 
-**PointInTimeRecoveryUnavailableException**
-
+ ** PointInTimeRecoveryUnavailableException **
 Point in time recovery has not yet been enabled for this source table.
-
 HTTP Status Code: 400
 
-**TableAlreadyExistsException**
-
+ ** TableAlreadyExistsException **
 A target table with the specified name already exists.
-
 HTTP Status Code: 400
 
-**TableInUseException**
-
+ ** TableInUseException **
 A target table with the specified name is either being created or deleted.
-
 HTTP Status Code: 400
 
-**TableNotFoundException**
-
-A source table with the name `TableName` does not currently exist within
-the subscriber's account or the subscriber is operating in the wrong AWS
-Region.
-
+ ** TableNotFoundException **
+A source table with the name `TableName` does not currently exist within the subscriber's account or the subscriber is operating in the wrong AWS Region.
 HTTP Status Code: 400
 
 ## See Also
+<a name="API_RestoreTableToPointInTime_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RestoreTableFromBackup
-
-Scan
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableToPointInTime)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/RestoreTableToPointInTime)
 
 All content copied from https://docs.aws.amazon.com/.

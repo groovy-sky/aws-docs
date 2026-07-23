@@ -2,53 +2,42 @@
 title: "AWS::B2BI::Transformer FormatOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer FormatOptions
+<a name="aws-properties-b2bi-transformer-formatoptions"></a>
 
 A structure that contains the X12 transaction set and version.
 
 ## Syntax
+<a name="aws-properties-b2bi-transformer-formatoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-transformer-formatoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "X12" : X12Details
+  "[X12](#cfn-b2bi-transformer-formatoptions-x12)" : {{X12Details}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-transformer-formatoptions-syntax.yaml"></a>
 
-```yaml
-
-  X12:
-    X12Details
-
+```
+  [X12](#cfn-b2bi-transformer-formatoptions-x12): {{
+    X12Details}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-transformer-formatoptions-properties"></a>
 
-`X12`
-
+`X12`  <a name="cfn-b2bi-transformer-formatoptions-x12"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [X12Details](aws-properties-b2bi-transformer-x12details.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdvancedOptions
-
-InputConversion
+*Required*: Yes
+*Type*: [X12Details](aws-properties-b2bi-transformer-x12details.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

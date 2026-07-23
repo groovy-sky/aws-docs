@@ -2,86 +2,71 @@
 title: "AWS::ObservabilityAdmin::OrganizationCentralizationRule CentralizationRuleDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationCentralizationRule CentralizationRuleDestination
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationruledestination"></a>
 
 Configuration specifying the primary destination for centralized telemetry data.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationruledestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationruledestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "Account" : String,
-  "DestinationLogsConfiguration" : DestinationLogsConfiguration,
-  "Region" : String
+  "[Account](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-account)" : {{String}},
+  "[DestinationLogsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-destinationlogsconfiguration)" : {{DestinationLogsConfiguration}},
+  "[DestinationMetricsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-destinationmetricsconfiguration)" : {{DestinationMetricsConfiguration}},
+  "[Region](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationruledestination-syntax.yaml"></a>
 
-```yaml
-
-  Account: String
-  DestinationLogsConfiguration:
-    DestinationLogsConfiguration
-  Region: String
-
+```
+  [Account](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-account): {{String}}
+  [DestinationLogsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-destinationlogsconfiguration): {{
+    DestinationLogsConfiguration}}
+  [DestinationMetricsConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-destinationmetricsconfiguration): {{
+    DestinationMetricsConfiguration}}
+  [Region](#cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationruledestination-properties"></a>
 
-`Account`
+`Account`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-account"></a>
+The destination account (within the organization) to which the telemetry data should be centralized.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The destination account (within the organization) to which the telemetry data should be
-centralized.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationLogsConfiguration`
-
+`DestinationLogsConfiguration`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-destinationlogsconfiguration"></a>
 Log specific configuration for centralization destination log groups.
+*Required*: No
+*Type*: [DestinationLogsConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DestinationMetricsConfiguration`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-destinationmetricsconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [DestinationMetricsConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-destinationmetricsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DestinationLogsConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-observabilityadmin-organizationcentralizationrule-centralizationruledestination-region"></a>
 The primary destination region to which telemetry data should be centralized.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CentralizationRule
-
-CentralizationRuleSource
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

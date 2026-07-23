@@ -2,67 +2,51 @@
 title: "AWS::Transfer::Workflow InputFileLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Workflow InputFileLocation
+<a name="aws-properties-transfer-workflow-inputfilelocation"></a>
 
 Specifies the location for the file that's being processed.
 
 ## Syntax
+<a name="aws-properties-transfer-workflow-inputfilelocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-workflow-inputfilelocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "EfsFileLocation" : EfsInputFileLocation,
-  "S3FileLocation" : S3InputFileLocation
+  "[EfsFileLocation](#cfn-transfer-workflow-inputfilelocation-efsfilelocation)" : {{EfsInputFileLocation}},
+  "[S3FileLocation](#cfn-transfer-workflow-inputfilelocation-s3filelocation)" : {{S3InputFileLocation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-workflow-inputfilelocation-syntax.yaml"></a>
 
-```yaml
-
-  EfsFileLocation:
-    EfsInputFileLocation
-  S3FileLocation:
-    S3InputFileLocation
-
+```
+  [EfsFileLocation](#cfn-transfer-workflow-inputfilelocation-efsfilelocation): {{
+    EfsInputFileLocation}}
+  [S3FileLocation](#cfn-transfer-workflow-inputfilelocation-s3filelocation): {{
+    S3InputFileLocation}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-workflow-inputfilelocation-properties"></a>
 
-`EfsFileLocation`
+`EfsFileLocation`  <a name="cfn-transfer-workflow-inputfilelocation-efsfilelocation"></a>
+Specifies the details for the Amazon Elastic File System (Amazon EFS) file that's being decrypted.
+*Required*: No
+*Type*: [EfsInputFileLocation](aws-properties-transfer-workflow-efsinputfilelocation.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specifies the details for the Amazon Elastic File System (Amazon EFS) file that's
-being decrypted.
-
-_Required_: No
-
-_Type_: [EfsInputFileLocation](aws-properties-transfer-workflow-efsinputfilelocation.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3FileLocation`
-
+`S3FileLocation`  <a name="cfn-transfer-workflow-inputfilelocation-s3filelocation"></a>
 Specifies the details for the Amazon S3 file that's being copied or decrypted.
-
-_Required_: No
-
-_Type_: [S3InputFileLocation](aws-properties-transfer-workflow-s3inputfilelocation.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EfsInputFileLocation
-
-S3FileLocation
+*Required*: No
+*Type*: [S3InputFileLocation](aws-properties-transfer-workflow-s3inputfilelocation.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

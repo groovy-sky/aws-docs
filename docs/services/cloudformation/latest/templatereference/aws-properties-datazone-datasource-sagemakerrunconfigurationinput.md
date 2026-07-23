@@ -2,55 +2,43 @@
 title: "AWS::DataZone::DataSource SageMakerRunConfigurationInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource SageMakerRunConfigurationInput
+<a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput"></a>
 
 The Amazon SageMaker run configuration.
 
 ## Syntax
+<a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "TrackingAssets" : {Key: Value, ...}
+  "[TrackingAssets](#cfn-datazone-datasource-sagemakerrunconfigurationinput-trackingassets)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput-syntax.yaml"></a>
 
-```yaml
-
-  TrackingAssets:
-    Key: Value
-
+```
+  [TrackingAssets](#cfn-datazone-datasource-sagemakerrunconfigurationinput-trackingassets): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput-properties"></a>
 
-`TrackingAssets`
-
+`TrackingAssets`  <a name="cfn-datazone-datasource-sagemakerrunconfigurationinput-trackingassets"></a>
 The tracking assets of the Amazon SageMaker run.
-
-_Required_: Yes
-
-_Type_: Object of Array
-
-_Pattern_: `^.{1,64}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RelationalFilterConfiguration
-
-ScheduleConfiguration
+*Required*: Yes
+*Type*: Object of Array
+*Pattern*: `^.{1,64}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,53 @@
 title: "AWS::Omics::SequenceStore SseConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::SequenceStore SseConfig
+<a name="aws-properties-omics-sequencestore-sseconfig"></a>
 
 Server-side encryption (SSE) settings for a store.
 
 ## Syntax
+<a name="aws-properties-omics-sequencestore-sseconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-sequencestore-sseconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "KeyArn" : String,
-  "Type" : String
+  "[KeyArn](#cfn-omics-sequencestore-sseconfig-keyarn)" : {{String}},
+  "[Type](#cfn-omics-sequencestore-sseconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-sequencestore-sseconfig-syntax.yaml"></a>
 
-```yaml
-
-  KeyArn: String
-  Type: String
-
+```
+  [KeyArn](#cfn-omics-sequencestore-sseconfig-keyarn): {{String}}
+  [Type](#cfn-omics-sequencestore-sseconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-sequencestore-sseconfig-properties"></a>
 
-`KeyArn`
-
+`KeyArn`  <a name="cfn-omics-sequencestore-sseconfig-keyarn"></a>
 An encryption key ARN.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:([^: ]*):([^: ]*):([^: ]*):([0-9]{12}):([^: ]*)`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:([^:
-]*):([^:
-]*):([^:
-]*):([0-9]{12}):([^:
-]*)`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-omics-sequencestore-sseconfig-type"></a>
 The encryption type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `KMS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Omics::SequenceStore
-
-AWS::Omics::VariantStore
+*Required*: Yes
+*Type*: String
+*Allowed values*: `KMS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

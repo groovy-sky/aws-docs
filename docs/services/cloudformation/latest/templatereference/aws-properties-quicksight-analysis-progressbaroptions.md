@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis ProgressBarOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ProgressBarOptions
+<a name="aws-properties-quicksight-analysis-progressbaroptions"></a>
 
 The options that determine the presentation of the progress bar of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-progressbaroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-progressbaroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Visibility" : String
+  "[Visibility](#cfn-quicksight-analysis-progressbaroptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-progressbaroptions-syntax.yaml"></a>
 
-```yaml
-
-  Visibility: String
-
+```
+  [Visibility](#cfn-quicksight-analysis-progressbaroptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-progressbaroptions-properties"></a>
 
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-analysis-progressbaroptions-visibility"></a>
 The visibility of the progress bar.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PredefinedHierarchy
-
-QueryExecutionOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,53 @@
 title: "AWS::Lex::Bot IntentOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot IntentOverride
+<a name="aws-properties-lex-bot-intentoverride"></a>
 
 Override settings to configure the intent state.
 
 ## Syntax
+<a name="aws-properties-lex-bot-intentoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-intentoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Slots" : [ SlotValueOverrideMap, ... ]
+  "[Name](#cfn-lex-bot-intentoverride-name)" : {{String}},
+  "[Slots](#cfn-lex-bot-intentoverride-slots)" : {{[ SlotValueOverrideMap, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-intentoverride-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Slots:
-    - SlotValueOverrideMap
-
+```
+  [Name](#cfn-lex-bot-intentoverride-name): {{String}}
+  [Slots](#cfn-lex-bot-intentoverride-slots): {{
+    - SlotValueOverrideMap}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-intentoverride-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-lex-bot-intentoverride-name"></a>
+The name of the intent. Only required when you're switching intents.
+*Required*: No
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the intent. Only required when you're switching
-intents.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slots`
-
-A map of all of the slot value overrides for the intent. The name of
-the slot maps to the value of the slot. Slots that are not included in
-the map aren't overridden.
-
-_Required_: No
-
-_Type_: Array of [SlotValueOverrideMap](aws-properties-lex-bot-slotvalueoverridemap.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IntentDisambiguationSettings
-
-KendraConfiguration
+`Slots`  <a name="cfn-lex-bot-intentoverride-slots"></a>
+A map of all of the slot value overrides for the intent. The name of the slot maps to the value of the slot. Slots that are not included in the map aren't overridden.
+*Required*: No
+*Type*: Array of [SlotValueOverrideMap](aws-properties-lex-bot-slotvalueoverridemap.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::S3Tables::TableBucket ReplicationDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::TableBucket ReplicationDestination
+<a name="aws-properties-s3tables-tablebucket-replicationdestination"></a>
 
 Specifies a destination table bucket for replication.
 
 ## Syntax
+<a name="aws-properties-s3tables-tablebucket-replicationdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-tablebucket-replicationdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationTableBucketARN" : String
+  "[DestinationTableBucketARN](#cfn-s3tables-tablebucket-replicationdestination-destinationtablebucketarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-tablebucket-replicationdestination-syntax.yaml"></a>
 
-```yaml
-
-  DestinationTableBucketARN: String
-
+```
+  [DestinationTableBucketARN](#cfn-s3tables-tablebucket-replicationdestination-destinationtablebucketarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-tablebucket-replicationdestination-properties"></a>
 
-`DestinationTableBucketARN`
-
+`DestinationTableBucketARN`  <a name="cfn-s3tables-tablebucket-replicationdestination-destinationtablebucketarn"></a>
 The Amazon Resource Name (ARN) of the destination table bucket where tables will be replicated.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(arn:aws[-a-z0-9]*:[a-z0-9]+:[-a-z0-9]*:[0-9]{12}:bucket/[a-z0-9_-]{3,63})`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationConfiguration
-
-ReplicationRule
+*Required*: Yes
+*Type*: String
+*Pattern*: `(arn:aws[-a-z0-9]*:[a-z0-9]+:[-a-z0-9]*:[0-9]{12}:bucket/[a-z0-9_-]{3,63})`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,79 +2,55 @@
 title: "AWS::Grafana::Workspace RoleValues"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Grafana::Workspace RoleValues
+<a name="aws-properties-grafana-workspace-rolevalues"></a>
 
-This structure defines which groups defined in the SAML assertion attribute are to be
-mapped to the Grafana `Admin` and `Editor` roles in the workspace.
-SAML authenticated users not part of `Admin` or `Editor` role
-groups have `Viewer` permission over the workspace.
+This structure defines which groups defined in the SAML assertion attribute are to be mapped to the Grafana `Admin` and `Editor` roles in the workspace. SAML authenticated users not part of `Admin` or `Editor` role groups have `Viewer` permission over the workspace.
 
 ## Syntax
+<a name="aws-properties-grafana-workspace-rolevalues-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-grafana-workspace-rolevalues-syntax.json"></a>
 
-```json
-
+```
 {
-  "Admin" : [ String, ... ],
-  "Editor" : [ String, ... ]
+  "[Admin](#cfn-grafana-workspace-rolevalues-admin)" : {{[ String, ... ]}},
+  "[Editor](#cfn-grafana-workspace-rolevalues-editor)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-grafana-workspace-rolevalues-syntax.yaml"></a>
 
-```yaml
-
-  Admin:
-    - String
-  Editor:
-    - String
-
+```
+  [Admin](#cfn-grafana-workspace-rolevalues-admin): {{
+    - String}}
+  [Editor](#cfn-grafana-workspace-rolevalues-editor): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-grafana-workspace-rolevalues-properties"></a>
 
-`Admin`
+`Admin`  <a name="cfn-grafana-workspace-rolevalues-admin"></a>
+A list of groups from the SAML assertion attribute to grant the Grafana `Admin` role to.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of groups from the SAML assertion attribute to grant the Grafana
-`Admin` role to.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Editor`
-
-A list of groups from the SAML assertion attribute to grant the Grafana
-`Editor` role to.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NetworkAccessControl
-
-SamlConfiguration
+`Editor`  <a name="cfn-grafana-workspace-rolevalues-editor"></a>
+A list of groups from the SAML assertion attribute to grant the Grafana `Editor` role to.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

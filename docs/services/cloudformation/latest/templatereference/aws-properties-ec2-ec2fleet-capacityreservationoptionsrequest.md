@@ -2,75 +2,49 @@
 title: "AWS::EC2::EC2Fleet CapacityReservationOptionsRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet CapacityReservationOptionsRequest
+<a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest"></a>
 
-Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand
-capacity.
+Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand capacity.
 
-###### Note
-
+**Note**
 This strategy can only be used if the EC2 Fleet is of type `instant`.
 
-For more information about Capacity Reservations, see [On-Demand Capacity\
-Reservations](../../../ec2/latest/userguide/ec2-capacity-reservations.md) in the _Amazon EC2 User Guide_. For examples of using
-Capacity Reservations in an EC2 Fleet, see [EC2 Fleet example\
-configurations](../../../ec2/latest/userguide/ec2-fleet-examples.md) in the _Amazon EC2 User Guide_.
+For more information about Capacity Reservations, see [On-Demand Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html) in the *Amazon EC2 User Guide*. For examples of using Capacity Reservations in an EC2 Fleet, see [EC2 Fleet example configurations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-examples.html) in the *Amazon EC2 User Guide*.
 
 ## Syntax
+<a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "UsageStrategy" : String
+  "[UsageStrategy](#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest-syntax.yaml"></a>
 
-```yaml
-
-  UsageStrategy: String
-
+```
+  [UsageStrategy](#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest-properties"></a>
 
-`UsageStrategy`
-
+`UsageStrategy`  <a name="cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy"></a>
 Indicates whether to use unused Capacity Reservations for fulfilling On-Demand capacity.
-
-If you specify `use-capacity-reservations-first`, the fleet uses unused
-Capacity Reservations to fulfill On-Demand capacity up to the target On-Demand capacity. If
-multiple instance pools have unused Capacity Reservations, the On-Demand allocation
-strategy ( `lowest-price` or `prioritized`) is applied. If the number
-of unused Capacity Reservations is less than the On-Demand target capacity, the remaining
-On-Demand target capacity is launched according to the On-Demand allocation strategy
-( `lowest-price` or `prioritized`).
-
-If you do not specify a value, the fleet fulfils the On-Demand capacity according to the
-chosen On-Demand allocation strategy.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `use-capacity-reservations-first`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityRebalance
-
-CpuPerformanceFactorRequest
+If you specify `use-capacity-reservations-first`, the fleet uses unused Capacity Reservations to fulfill On-Demand capacity up to the target On-Demand capacity. If multiple instance pools have unused Capacity Reservations, the On-Demand allocation strategy (`lowest-price` or `prioritized`) is applied. If the number of unused Capacity Reservations is less than the On-Demand target capacity, the remaining On-Demand target capacity is launched according to the On-Demand allocation strategy (`lowest-price` or `prioritized`).
+If you do not specify a value, the fleet fulfils the On-Demand capacity according to the chosen On-Demand allocation strategy.
+*Required*: No
+*Type*: String
+*Allowed values*: `use-capacity-reservations-first`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

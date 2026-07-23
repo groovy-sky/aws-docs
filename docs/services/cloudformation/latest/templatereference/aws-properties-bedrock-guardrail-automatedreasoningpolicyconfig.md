@@ -2,73 +2,54 @@
 title: "AWS::Bedrock::Guardrail AutomatedReasoningPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Guardrail AutomatedReasoningPolicyConfig
+<a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig"></a>
 
 Configuration settings for integrating Automated Reasoning policies with Amazon Bedrock Guardrails.
 
 ## Syntax
+<a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConfidenceThreshold" : Number,
-  "Policies" : [ String, ... ]
+  "[ConfidenceThreshold](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-confidencethreshold)" : {{Number}},
+  "[Policies](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-policies)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  ConfidenceThreshold: Number
-  Policies:
-    - String
-
+```
+  [ConfidenceThreshold](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-confidencethreshold): {{Number}}
+  [Policies](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-policies): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig-properties"></a>
 
-`ConfidenceThreshold`
-
+`ConfidenceThreshold`  <a name="cfn-bedrock-guardrail-automatedreasoningpolicyconfig-confidencethreshold"></a>
 The minimum confidence level required for Automated Reasoning policy violations to trigger guardrail actions. Values range from 0.0 to 1.0.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Policies`
-
+`Policies`  <a name="cfn-bedrock-guardrail-automatedreasoningpolicyconfig-policies"></a>
 The list of Automated Reasoning policy ARNs that should be applied as part of this guardrail configuration.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `15 | 1`
-
-_Maximum_: `2048 | 2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::Guardrail
-
-ContentFilterConfig
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `15 | 1`
+*Maximum*: `2048 | 2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

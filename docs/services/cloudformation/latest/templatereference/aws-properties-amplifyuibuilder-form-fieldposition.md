@@ -2,78 +2,58 @@
 title: "AWS::AmplifyUIBuilder::Form FieldPosition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FieldPosition
+<a name="aws-properties-amplifyuibuilder-form-fieldposition"></a>
 
 The `FieldPosition` property specifies the field position.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-fieldposition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-fieldposition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Below" : String,
-  "Fixed" : String,
-  "RightOf" : String
+  "[Below](#cfn-amplifyuibuilder-form-fieldposition-below)" : {{String}},
+  "[Fixed](#cfn-amplifyuibuilder-form-fieldposition-fixed)" : {{String}},
+  "[RightOf](#cfn-amplifyuibuilder-form-fieldposition-rightof)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-fieldposition-syntax.yaml"></a>
 
-```yaml
-
-  Below: String
-  Fixed: String
-  RightOf: String
-
+```
+  [Below](#cfn-amplifyuibuilder-form-fieldposition-below): {{String}}
+  [Fixed](#cfn-amplifyuibuilder-form-fieldposition-fixed): {{String}}
+  [RightOf](#cfn-amplifyuibuilder-form-fieldposition-rightof): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-fieldposition-properties"></a>
 
-`Below`
-
+`Below`  <a name="cfn-amplifyuibuilder-form-fieldposition-below"></a>
 The field position is below the field specified by the string.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Fixed`
-
+`Fixed`  <a name="cfn-amplifyuibuilder-form-fieldposition-fixed"></a>
 The field position is fixed and doesn't change in relation to other fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `first`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `first`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RightOf`
-
+`RightOf`  <a name="cfn-amplifyuibuilder-form-fieldposition-rightof"></a>
 The field position is to the right of the field specified by the string.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldInputConfig
-
-FieldValidationConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

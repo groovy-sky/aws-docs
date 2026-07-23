@@ -2,88 +2,65 @@
 title: "AWS::QuickSight::Template Spacing"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template Spacing
+<a name="aws-properties-quicksight-template-spacing"></a>
 
 The configuration of spacing (often a margin or padding).
 
 ## Syntax
+<a name="aws-properties-quicksight-template-spacing-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-spacing-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bottom" : String,
-  "Left" : String,
-  "Right" : String,
-  "Top" : String
+  "[Bottom](#cfn-quicksight-template-spacing-bottom)" : {{String}},
+  "[Left](#cfn-quicksight-template-spacing-left)" : {{String}},
+  "[Right](#cfn-quicksight-template-spacing-right)" : {{String}},
+  "[Top](#cfn-quicksight-template-spacing-top)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-spacing-syntax.yaml"></a>
 
-```yaml
-
-  Bottom: String
-  Left: String
-  Right: String
-  Top: String
-
+```
+  [Bottom](#cfn-quicksight-template-spacing-bottom): {{String}}
+  [Left](#cfn-quicksight-template-spacing-left): {{String}}
+  [Right](#cfn-quicksight-template-spacing-right): {{String}}
+  [Top](#cfn-quicksight-template-spacing-top): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-spacing-properties"></a>
 
-`Bottom`
-
+`Bottom`  <a name="cfn-quicksight-template-spacing-bottom"></a>
 Define the bottom spacing.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Left`
-
+`Left`  <a name="cfn-quicksight-template-spacing-left"></a>
 Define the left spacing.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Right`
-
+`Right`  <a name="cfn-quicksight-template-spacing-right"></a>
 Define the right spacing.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Top`
-
+`Top`  <a name="cfn-quicksight-template-spacing-top"></a>
 Define the top spacing.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SmallMultiplesOptions
-
-StringDefaultValues
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,124 +2,86 @@
 title: "AWS::AppFlow::ConnectorProfile GoogleAnalyticsConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile GoogleAnalyticsConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials"></a>
 
-The connector-specific profile credentials required by Google Analytics.
+ The connector-specific profile credentials required by Google Analytics.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessToken" : String,
-  "ClientId" : String,
-  "ClientSecret" : String,
-  "ConnectorOAuthRequest" : ConnectorOAuthRequest,
-  "RefreshToken" : String
+  "[AccessToken](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-accesstoken)" : {{String}},
+  "[ClientId](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientid)" : {{String}},
+  "[ClientSecret](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientsecret)" : {{String}},
+  "[ConnectorOAuthRequest](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-connectoroauthrequest)" : {{ConnectorOAuthRequest}},
+  "[RefreshToken](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-refreshtoken)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  AccessToken: String
-  ClientId: String
-  ClientSecret: String
-  ConnectorOAuthRequest:
-    ConnectorOAuthRequest
-  RefreshToken: String
-
+```
+  [AccessToken](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-accesstoken): {{String}}
+  [ClientId](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientid): {{String}}
+  [ClientSecret](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientsecret): {{String}}
+  [ConnectorOAuthRequest](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-connectoroauthrequest): {{
+    ConnectorOAuthRequest}}
+  [RefreshToken](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-refreshtoken): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-properties"></a>
 
-`AccessToken`
+`AccessToken`  <a name="cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-accesstoken"></a>
+ The credentials used to access protected Google Analytics resources.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The credentials used to access protected Google Analytics resources.
+`ClientId`  <a name="cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientid"></a>
+ The identifier for the desired client.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ClientSecret`  <a name="cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientsecret"></a>
+ The client secret used by the OAuth client to authenticate to the authorization server.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ConnectorOAuthRequest`  <a name="cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-connectoroauthrequest"></a>
+ Used by select connectors for which the OAuth workflow is supported, such as Salesforce, Google Analytics, Marketo, Zendesk, and Slack.
+*Required*: No
+*Type*: [ConnectorOAuthRequest](aws-properties-appflow-connectorprofile-connectoroauthrequest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `\S+`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientId`
-
-The identifier for the desired client.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientSecret`
-
-The client secret used by the OAuth client to authenticate to the authorization server.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectorOAuthRequest`
-
-Used by select connectors for which the OAuth workflow is supported, such as Salesforce,
-Google Analytics, Marketo, Zendesk, and Slack.
-
-_Required_: No
-
-_Type_: [ConnectorOAuthRequest](aws-properties-appflow-connectorprofile-connectoroauthrequest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefreshToken`
-
-The credentials used to acquire new access tokens. This is required only for OAuth2
-access tokens, and is not required for OAuth1 access tokens.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RefreshToken`  <a name="cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-refreshtoken"></a>
+ The credentials used to acquire new access tokens. This is required only for OAuth2 access tokens, and is not required for OAuth1 access tokens.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [GoogleAnalyticsConnectorProfileCredentials](../../../../reference/appflow/1-0/apireference/api-googleanalyticsconnectorprofilecredentials.md) in the _Amazon AppFlow_
-_API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynatraceConnectorProfileProperties
-
-InforNexusConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials--seealso"></a>
++ [GoogleAnalyticsConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GoogleAnalyticsConnectorProfileCredentials.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

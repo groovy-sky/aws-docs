@@ -2,53 +2,42 @@
 title: "AWS::DevOpsAgent::Association SlackTransmissionTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association SlackTransmissionTarget
+<a name="aws-properties-devopsagent-association-slacktransmissiontarget"></a>
 
 Defines the Slack channels where different types of agent notifications will be sent.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-slacktransmissiontarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-slacktransmissiontarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "IncidentResponseTarget" : SlackChannel
+  "[IncidentResponseTarget](#cfn-devopsagent-association-slacktransmissiontarget-incidentresponsetarget)" : {{SlackChannel}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-slacktransmissiontarget-syntax.yaml"></a>
 
-```yaml
-
-  IncidentResponseTarget:
-    SlackChannel
-
+```
+  [IncidentResponseTarget](#cfn-devopsagent-association-slacktransmissiontarget-incidentresponsetarget): {{
+    SlackChannel}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-slacktransmissiontarget-properties"></a>
 
-`IncidentResponseTarget`
-
+`IncidentResponseTarget`  <a name="cfn-devopsagent-association-slacktransmissiontarget-incidentresponsetarget"></a>
 Destination for AWS DevOps Agent Incident Response.
-
-_Required_: Yes
-
-_Type_: [SlackChannel](aws-properties-devopsagent-association-slackchannel.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlackConfiguration
-
-SourceAwsConfiguration
+*Required*: Yes
+*Type*: [SlackChannel](aws-properties-devopsagent-association-slackchannel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,100 +2,87 @@
 title: "AWS::S3::AccessGrantsInstance"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::AccessGrantsInstance
+<a name="aws-resource-s3-accessgrantsinstance"></a>
 
 The `AWS::S3::AccessGrantInstance` resource creates an S3 Access Grants instance, which serves as a logical grouping for access grants. You can create one S3 Access Grants instance per Region per account.
 
 Permissions
-
 You must have the `s3:CreateAccessGrantsInstance` permission to use this resource.
 
 Additional Permissions
-
 To associate an IAM Identity Center instance with your S3 Access Grants instance, you must also have the `sso:DescribeInstance`, `sso:CreateApplication`, `sso:PutApplicationGrant`, and `sso:PutApplicationAuthenticationMethod` permissions.
 
 ## Syntax
+<a name="aws-resource-s3-accessgrantsinstance-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3-accessgrantsinstance-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3::AccessGrantsInstance",
   "Properties" : {
-      "IdentityCenterArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[IdentityCenterArn](#cfn-s3-accessgrantsinstance-identitycenterarn)" : {{String}},
+      "[Tags](#cfn-s3-accessgrantsinstance-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3-accessgrantsinstance-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3::AccessGrantsInstance
 Properties:
-  IdentityCenterArn: String
-  Tags:
-    - Tag
-
+  [IdentityCenterArn](#cfn-s3-accessgrantsinstance-identitycenterarn): {{String}}
+  [Tags](#cfn-s3-accessgrantsinstance-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-s3-accessgrantsinstance-properties"></a>
 
-`IdentityCenterArn`
-
+`IdentityCenterArn`  <a name="cfn-s3-accessgrantsinstance-identitycenterarn"></a>
 If you would like to associate your S3 Access Grants instance with an AWSIAM Identity Center instance, use this field to pass the Amazon Resource Name (ARN) of the AWSIAM Identity Center instance that you are associating with your S3 Access Grants instance. An IAM Identity Center instance is your corporate identity directory that you added to the IAM Identity Center.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-s3-accessgrantsinstance-tags"></a>
 The AWS resource tags that you are adding to the S3 Access Grants instance. Each tag is a label consisting of a user-defined key and value. Tags can help you manage, identify, organize, search for, and filter resources.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-s3-accessgrantsinstance-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-s3-accessgrantsinstance-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-s3-accessgrantsinstance-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3-accessgrantsinstance-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns some information about your S3 Access Grants instance.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3-accessgrantsinstance-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AccessGrantsInstanceArn`
+####
+<a name="aws-resource-s3-accessgrantsinstance-return-values-fn--getatt-fn--getatt"></a>
 
+`AccessGrantsInstanceArn`  <a name="AccessGrantsInstanceArn-fn::getatt"></a>
 The ARN of the S3 Access Grants instance.
 
-`AccessGrantsInstanceId`
-
+`AccessGrantsInstanceId`  <a name="AccessGrantsInstanceId-fn::getatt"></a>
 The ID of the S3 Access Grants instance. The ID is `default`. You can have one S3 Access Grants instance per Region per account.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,157 +2,121 @@
 title: "AWS::IoTWireless::PartnerAccount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::PartnerAccount
+<a name="aws-resource-iotwireless-partneraccount"></a>
 
-A partner account. If `PartnerAccountId` and `PartnerType` are
-`null`, returns all partner accounts.
+A partner account. If `PartnerAccountId` and `PartnerType` are `null`, returns all partner accounts.
 
 ## Syntax
+<a name="aws-resource-iotwireless-partneraccount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotwireless-partneraccount-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTWireless::PartnerAccount",
   "Properties" : {
-      "AccountLinked" : Boolean,
-      "PartnerAccountId" : String,
-      "PartnerType" : String,
-      "Sidewalk" : SidewalkAccountInfo,
-      "SidewalkResponse" : SidewalkAccountInfoWithFingerprint,
-      "SidewalkUpdate" : SidewalkUpdateAccount,
-      "Tags" : [ Tag, ... ]
+      "[AccountLinked](#cfn-iotwireless-partneraccount-accountlinked)" : {{Boolean}},
+      "[PartnerAccountId](#cfn-iotwireless-partneraccount-partneraccountid)" : {{String}},
+      "[PartnerType](#cfn-iotwireless-partneraccount-partnertype)" : {{String}},
+      "[Sidewalk](#cfn-iotwireless-partneraccount-sidewalk)" : {{SidewalkAccountInfo}},
+      "[SidewalkResponse](#cfn-iotwireless-partneraccount-sidewalkresponse)" : {{SidewalkAccountInfoWithFingerprint}},
+      "[SidewalkUpdate](#cfn-iotwireless-partneraccount-sidewalkupdate)" : {{SidewalkUpdateAccount}},
+      "[Tags](#cfn-iotwireless-partneraccount-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotwireless-partneraccount-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTWireless::PartnerAccount
 Properties:
-  AccountLinked: Boolean
-  PartnerAccountId: String
-  PartnerType: String
-  Sidewalk:
-    SidewalkAccountInfo
-  SidewalkResponse:
-    SidewalkAccountInfoWithFingerprint
-  SidewalkUpdate:
-    SidewalkUpdateAccount
-  Tags:
-    - Tag
-
+  [AccountLinked](#cfn-iotwireless-partneraccount-accountlinked): {{Boolean}}
+  [PartnerAccountId](#cfn-iotwireless-partneraccount-partneraccountid): {{String}}
+  [PartnerType](#cfn-iotwireless-partneraccount-partnertype): {{String}}
+  [Sidewalk](#cfn-iotwireless-partneraccount-sidewalk): {{
+    SidewalkAccountInfo}}
+  [SidewalkResponse](#cfn-iotwireless-partneraccount-sidewalkresponse): {{
+    SidewalkAccountInfoWithFingerprint}}
+  [SidewalkUpdate](#cfn-iotwireless-partneraccount-sidewalkupdate): {{
+    SidewalkUpdateAccount}}
+  [Tags](#cfn-iotwireless-partneraccount-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotwireless-partneraccount-properties"></a>
 
-`AccountLinked`
-
+`AccountLinked`  <a name="cfn-iotwireless-partneraccount-accountlinked"></a>
 Whether the partner account is linked to the AWS account.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PartnerAccountId`
-
+`PartnerAccountId`  <a name="cfn-iotwireless-partneraccount-partneraccountid"></a>
 The ID of the partner account to update.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PartnerType`
-
+`PartnerType`  <a name="cfn-iotwireless-partneraccount-partnertype"></a>
 The partner type.
+*Required*: No
+*Type*: String
+*Allowed values*: `Sidewalk`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Sidewalk`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sidewalk`
-
+`Sidewalk`  <a name="cfn-iotwireless-partneraccount-sidewalk"></a>
 The Sidewalk account credentials.
+*Required*: No
+*Type*: [SidewalkAccountInfo](aws-properties-iotwireless-partneraccount-sidewalkaccountinfo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SidewalkAccountInfo](aws-properties-iotwireless-partneraccount-sidewalkaccountinfo.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SidewalkResponse`
-
+`SidewalkResponse`  <a name="cfn-iotwireless-partneraccount-sidewalkresponse"></a>
 Information about a Sidewalk account.
+*Required*: No
+*Type*: [SidewalkAccountInfoWithFingerprint](aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SidewalkAccountInfoWithFingerprint](aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SidewalkUpdate`
-
+`SidewalkUpdate`  <a name="cfn-iotwireless-partneraccount-sidewalkupdate"></a>
 Sidewalk update.
+*Required*: No
+*Type*: [SidewalkUpdateAccount](aws-properties-iotwireless-partneraccount-sidewalkupdateaccount.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SidewalkUpdateAccount](aws-properties-iotwireless-partneraccount-sidewalkupdateaccount.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags are an array of key-value pairs to attach to the specified resource. Tags can
-have a minimum of 0 and a maximum of 50 items.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotwireless-partneraccount-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iotwireless-partneraccount-tags"></a>
+The tags are an array of key-value pairs to attach to the specified resource. Tags can have a minimum of 0 and a maximum of 50 items.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotwireless-partneraccount-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotwireless-partneraccount-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotwireless-partneraccount-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the partner account.
 
 ### Fn::GetAtt
+<a name="aws-resource-iotwireless-partneraccount-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-iotwireless-partneraccount-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the resource.
 
-`Fingerprint`
-
+`Fingerprint`  <a name="Fingerprint-fn::getatt"></a>
 The fingerprint of the Sidewalk application server private key.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TraceContent
-
-SidewalkAccountInfo
 
 All content copied from https://docs.aws.amazon.com/.

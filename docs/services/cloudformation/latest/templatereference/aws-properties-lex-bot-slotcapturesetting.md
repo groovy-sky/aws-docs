@@ -2,153 +2,105 @@
 title: "AWS::Lex::Bot SlotCaptureSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotCaptureSetting
+<a name="aws-properties-lex-bot-slotcapturesetting"></a>
 
-Settings used when Amazon Lex successfully captures a slot
-value from a user.
+Settings used when Amazon Lex successfully captures a slot value from a user.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slotcapturesetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slotcapturesetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "CaptureConditional" : ConditionalSpecification,
-  "CaptureNextStep" : DialogState,
-  "CaptureResponse" : ResponseSpecification,
-  "CodeHook" : DialogCodeHookInvocationSetting,
-  "ElicitationCodeHook" : ElicitationCodeHookInvocationSetting,
-  "FailureConditional" : ConditionalSpecification,
-  "FailureNextStep" : DialogState,
-  "FailureResponse" : ResponseSpecification
+  "[CaptureConditional](#cfn-lex-bot-slotcapturesetting-captureconditional)" : {{ConditionalSpecification}},
+  "[CaptureNextStep](#cfn-lex-bot-slotcapturesetting-capturenextstep)" : {{DialogState}},
+  "[CaptureResponse](#cfn-lex-bot-slotcapturesetting-captureresponse)" : {{ResponseSpecification}},
+  "[CodeHook](#cfn-lex-bot-slotcapturesetting-codehook)" : {{DialogCodeHookInvocationSetting}},
+  "[ElicitationCodeHook](#cfn-lex-bot-slotcapturesetting-elicitationcodehook)" : {{ElicitationCodeHookInvocationSetting}},
+  "[FailureConditional](#cfn-lex-bot-slotcapturesetting-failureconditional)" : {{ConditionalSpecification}},
+  "[FailureNextStep](#cfn-lex-bot-slotcapturesetting-failurenextstep)" : {{DialogState}},
+  "[FailureResponse](#cfn-lex-bot-slotcapturesetting-failureresponse)" : {{ResponseSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slotcapturesetting-syntax.yaml"></a>
 
-```yaml
-
-  CaptureConditional:
-    ConditionalSpecification
-  CaptureNextStep:
-    DialogState
-  CaptureResponse:
-    ResponseSpecification
-  CodeHook:
-    DialogCodeHookInvocationSetting
-  ElicitationCodeHook:
-    ElicitationCodeHookInvocationSetting
-  FailureConditional:
-    ConditionalSpecification
-  FailureNextStep:
-    DialogState
-  FailureResponse:
-    ResponseSpecification
-
+```
+  [CaptureConditional](#cfn-lex-bot-slotcapturesetting-captureconditional): {{
+    ConditionalSpecification}}
+  [CaptureNextStep](#cfn-lex-bot-slotcapturesetting-capturenextstep): {{
+    DialogState}}
+  [CaptureResponse](#cfn-lex-bot-slotcapturesetting-captureresponse): {{
+    ResponseSpecification}}
+  [CodeHook](#cfn-lex-bot-slotcapturesetting-codehook): {{
+    DialogCodeHookInvocationSetting}}
+  [ElicitationCodeHook](#cfn-lex-bot-slotcapturesetting-elicitationcodehook): {{
+    ElicitationCodeHookInvocationSetting}}
+  [FailureConditional](#cfn-lex-bot-slotcapturesetting-failureconditional): {{
+    ConditionalSpecification}}
+  [FailureNextStep](#cfn-lex-bot-slotcapturesetting-failurenextstep): {{
+    DialogState}}
+  [FailureResponse](#cfn-lex-bot-slotcapturesetting-failureresponse): {{
+    ResponseSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slotcapturesetting-properties"></a>
 
-`CaptureConditional`
+`CaptureConditional`  <a name="cfn-lex-bot-slotcapturesetting-captureconditional"></a>
+A list of conditional branches to evaluate after the slot value is captured.
+*Required*: No
+*Type*: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of conditional branches to evaluate after the slot value is
-captured.
+`CaptureNextStep`  <a name="cfn-lex-bot-slotcapturesetting-capturenextstep"></a>
+Specifies the next step that the bot runs when the slot value is captured before the code hook times out.
+*Required*: No
+*Type*: [DialogState](aws-properties-lex-bot-dialogstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`CaptureResponse`  <a name="cfn-lex-bot-slotcapturesetting-captureresponse"></a>
+Specifies a list of message groups that Amazon Lex uses to respond the user input.
+*Required*: No
+*Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
+`CodeHook`  <a name="cfn-lex-bot-slotcapturesetting-codehook"></a>
+Code hook called after Amazon Lex successfully captures a slot value.
+*Required*: No
+*Type*: [DialogCodeHookInvocationSetting](aws-properties-lex-bot-dialogcodehookinvocationsetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ElicitationCodeHook`  <a name="cfn-lex-bot-slotcapturesetting-elicitationcodehook"></a>
+Code hook called when Amazon Lex doesn't capture a slot value.
+*Required*: No
+*Type*: [ElicitationCodeHookInvocationSetting](aws-properties-lex-bot-elicitationcodehookinvocationsetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`CaptureNextStep`
+`FailureConditional`  <a name="cfn-lex-bot-slotcapturesetting-failureconditional"></a>
+A list of conditional branches to evaluate when the slot value isn't captured.
+*Required*: No
+*Type*: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the next step that the bot runs when the slot value is
-captured before the code hook times out.
+`FailureNextStep`  <a name="cfn-lex-bot-slotcapturesetting-failurenextstep"></a>
+Specifies the next step that the bot runs when the slot value code is not recognized.
+*Required*: No
+*Type*: [DialogState](aws-properties-lex-bot-dialogstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DialogState](aws-properties-lex-bot-dialogstate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CaptureResponse`
-
-Specifies a list of message groups that Amazon Lex uses to respond the
-user input.
-
-_Required_: No
-
-_Type_: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeHook`
-
-Code hook called after Amazon Lex successfully captures a
-slot value.
-
-_Required_: No
-
-_Type_: [DialogCodeHookInvocationSetting](aws-properties-lex-bot-dialogcodehookinvocationsetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElicitationCodeHook`
-
-Code hook called when Amazon Lex doesn't capture a slot
-value.
-
-_Required_: No
-
-_Type_: [ElicitationCodeHookInvocationSetting](aws-properties-lex-bot-elicitationcodehookinvocationsetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FailureConditional`
-
-A list of conditional branches to evaluate when the slot value isn't
-captured.
-
-_Required_: No
-
-_Type_: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FailureNextStep`
-
-Specifies the next step that the bot runs when the slot value code
-is not recognized.
-
-_Required_: No
-
-_Type_: [DialogState](aws-properties-lex-bot-dialogstate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FailureResponse`
-
-Specifies a list of message groups that Amazon Lex uses to respond the
-user input when the slot fails to be captured.
-
-_Required_: No
-
-_Type_: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Slot
-
-SlotDefaultValue
+`FailureResponse`  <a name="cfn-lex-bot-slotcapturesetting-failureresponse"></a>
+Specifies a list of message groups that Amazon Lex uses to respond the user input when the slot fails to be captured.
+*Required*: No
+*Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

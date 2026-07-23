@@ -2,72 +2,71 @@
 title: "AWS::BedrockAgentCore::OAuth2CredentialProvider GoogleOauth2ProviderConfigInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OAuth2CredentialProvider GoogleOauth2ProviderConfigInput
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput"></a>
 
 Input configuration for a Google OAuth2 provider.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientId" : String,
-  "ClientSecret" : String
+  "[ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientid)" : {{String}},
+  "[ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecret)" : {{String}},
+  "[ClientSecretConfig](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretconfig)" : {{SecretReference}},
+  "[ClientSecretSource](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretsource)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-syntax.yaml"></a>
 
-```yaml
-
-  ClientId: String
-  ClientSecret: String
-
+```
+  [ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientid): {{String}}
+  [ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecret): {{String}}
+  [ClientSecretConfig](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretconfig): {{
+    SecretReference}}
+  [ClientSecretSource](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretsource): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-properties"></a>
 
-`ClientId`
-
+`ClientId`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientid"></a>
 The client ID for the Google OAuth2 provider.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientSecret`
-
+`ClientSecret`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecret"></a>
 The client secret for the Google OAuth2 provider.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ClientSecretConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretconfig"></a>
+A reference to the AWS Secrets Manager secret that stores the client secret. This includes the secret ID and the JSON key used to extract the client secret value from the secret. Required when `clientSecretSource` is set to `EXTERNAL`.
+*Required*: No
+*Type*: [SecretReference](aws-properties-bedrockagentcore-oauth2credentialprovider-secretreference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GithubOauth2ProviderConfigInput
-
-IncludedOauth2ProviderConfigInput
+`ClientSecretSource`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretsource"></a>
+The source type of the client secret. Use `MANAGED` if the secret is managed by the service, or `EXTERNAL` if you manage the secret yourself in AWS Secrets Manager.
+*Required*: No
+*Type*: String
+*Allowed values*: `MANAGED | EXTERNAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,67 +2,51 @@
 title: "AWS::Cases::Layout BasicLayout"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::Layout BasicLayout
+<a name="aws-properties-cases-layout-basiclayout"></a>
 
-Content specific to `BasicLayout` type. It configures fields in the top panel
-and More Info tab of agent application.
+Content specific to `BasicLayout` type. It configures fields in the top panel and More Info tab of agent application.
 
 ## Syntax
+<a name="aws-properties-cases-layout-basiclayout-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-layout-basiclayout-syntax.json"></a>
 
-```json
-
+```
 {
-  "MoreInfo" : LayoutSections,
-  "TopPanel" : LayoutSections
+  "[MoreInfo](#cfn-cases-layout-basiclayout-moreinfo)" : {{LayoutSections}},
+  "[TopPanel](#cfn-cases-layout-basiclayout-toppanel)" : {{LayoutSections}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-layout-basiclayout-syntax.yaml"></a>
 
-```yaml
-
-  MoreInfo:
-    LayoutSections
-  TopPanel:
-    LayoutSections
-
+```
+  [MoreInfo](#cfn-cases-layout-basiclayout-moreinfo): {{
+    LayoutSections}}
+  [TopPanel](#cfn-cases-layout-basiclayout-toppanel): {{
+    LayoutSections}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-layout-basiclayout-properties"></a>
 
-`MoreInfo`
-
+`MoreInfo`  <a name="cfn-cases-layout-basiclayout-moreinfo"></a>
 This represents sections in a tab of the page layout.
+*Required*: No
+*Type*: [LayoutSections](aws-properties-cases-layout-layoutsections.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LayoutSections](aws-properties-cases-layout-layoutsections.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopPanel`
-
+`TopPanel`  <a name="cfn-cases-layout-basiclayout-toppanel"></a>
 This represents sections in a panel of the page layout.
-
-_Required_: No
-
-_Type_: [LayoutSections](aws-properties-cases-layout-layoutsections.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Cases::Layout
-
-FieldGroup
+*Required*: No
+*Type*: [LayoutSections](aws-properties-cases-layout-layoutsections.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

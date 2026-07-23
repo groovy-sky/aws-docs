@@ -2,92 +2,59 @@
 title: "AWS::AutoScaling::ScalingPolicy PredictiveScalingPredefinedScalingMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::ScalingPolicy PredictiveScalingPredefinedScalingMetric
+<a name="aws-properties-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric"></a>
 
-Contains scaling metric information for the
-`PredefinedScalingMetricSpecification` property of the [AWS::AutoScaling::ScalingPolicy PredictiveScalingMetricSpecification](../userguide/aws-properties-autoscaling-scalingpolicy-predictivescalingmetricspecification.md) property
-type.
+Contains scaling metric information for the `PredefinedScalingMetricSpecification` property of the [AWS::AutoScaling::ScalingPolicy PredictiveScalingMetricSpecification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predictivescalingmetricspecification.html) property type.
 
-###### Important
-
-Does not apply to policies that use a _metric pair_ for the metric
-specification.
+**Important**
+Does not apply to policies that use a *metric pair* for the metric specification.
 
 ## Syntax
+<a name="aws-properties-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "PredefinedMetricType" : String,
-  "ResourceLabel" : String
+  "[PredefinedMetricType](#cfn-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-predefinedmetrictype)" : {{String}},
+  "[ResourceLabel](#cfn-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-resourcelabel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-syntax.yaml"></a>
 
-```yaml
-
-  PredefinedMetricType: String
-  ResourceLabel: String
-
+```
+  [PredefinedMetricType](#cfn-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-predefinedmetrictype): {{String}}
+  [ResourceLabel](#cfn-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-resourcelabel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-properties"></a>
 
-`PredefinedMetricType`
-
+`PredefinedMetricType`  <a name="cfn-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-predefinedmetrictype"></a>
 The metric type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ASGAverageCPUUtilization | ASGAverageNetworkIn | ASGAverageNetworkOut | ALBRequestCountPerTarget`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ASGAverageCPUUtilization | ASGAverageNetworkIn | ASGAverageNetworkOut | ALBRequestCountPerTarget`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceLabel`
-
-A label that uniquely identifies a specific Application Load Balancer target group from which to determine
-the average request count served by your Auto Scaling group. You can't specify a resource label
-unless the target group is attached to the Auto Scaling group.
-
-You create the resource label by appending the final portion of the load balancer ARN
-and the final portion of the target group ARN into a single value, separated by a forward
-slash (/). The format of the resource label is:
-
+`ResourceLabel`  <a name="cfn-autoscaling-scalingpolicy-predictivescalingpredefinedscalingmetric-resourcelabel"></a>
+A label that uniquely identifies a specific Application Load Balancer target group from which to determine the average request count served by your Auto Scaling group. You can't specify a resource label unless the target group is attached to the Auto Scaling group.
+You create the resource label by appending the final portion of the load balancer ARN and the final portion of the target group ARN into a single value, separated by a forward slash (/). The format of the resource label is:
 `app/my-alb/778d41231b141a0f/targetgroup/my-alb-target-group/943f017f100becff`.
-
 Where:
-
-- app/<load-balancer-name>/<load-balancer-id> is the final portion of
-the load balancer ARN
-
-- targetgroup/<target-group-name>/<target-group-id> is the final portion
-of the target group ARN.
-
-To find the ARN for an Application Load Balancer, use the [DescribeLoadBalancers](../../../../reference/elasticloadbalancing/latest/apireference/api-describeloadbalancers.md) API operation. To find the ARN for the target group, use
-the [DescribeTargetGroups](../../../../reference/elasticloadbalancing/latest/apireference/api-describetargetgroups.md) API operation.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PredictiveScalingPredefinedMetricPair
-
-StepAdjustment
++ app/<load-balancer-name>/<load-balancer-id> is the final portion of the load balancer ARN
++ targetgroup/<target-group-name>/<target-group-id> is the final portion of the target group ARN.
+To find the ARN for an Application Load Balancer, use the [DescribeLoadBalancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancers.html) API operation. To find the ARN for the target group, use the [DescribeTargetGroups](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeTargetGroups.html) API operation.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

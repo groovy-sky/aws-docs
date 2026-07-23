@@ -2,194 +2,151 @@
 title: "AWS::S3Outposts::Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::Endpoint
+<a name="aws-resource-s3outposts-endpoint"></a>
 
 This AWS::S3Outposts::Endpoint resource specifies an endpoint and associates it with the specified Outpost.
 
-Amazon S3 on Outposts access points simplify managing data access at scale for shared
-datasets in S3 on Outposts. S3 on Outposts uses endpoints to connect to S3 on Outposts buckets
-so that you can perform actions within your virtual private cloud (VPC). For more information,
-see [Accessing S3 on Outposts using VPC-only access points](../../../s3/latest/userguide/accessings3outposts.md).
+Amazon S3 on Outposts access points simplify managing data access at scale for shared datasets in S3 on Outposts. S3 on Outposts uses endpoints to connect to S3 on Outposts buckets so that you can perform actions within your virtual private cloud (VPC). For more information, see [ Accessing S3 on Outposts using VPC-only access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/AccessingS3Outposts.html).
 
-###### Note
-
+**Note**
 It can take up to 5 minutes for this resource to be created.
 
 ## Syntax
+<a name="aws-resource-s3outposts-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3outposts-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3Outposts::Endpoint",
   "Properties" : {
-      "AccessType" : String,
-      "CustomerOwnedIpv4Pool" : String,
-      "FailedReason" : FailedReason,
-      "OutpostId" : String,
-      "SecurityGroupId" : String,
-      "SubnetId" : String
+      "[AccessType](#cfn-s3outposts-endpoint-accesstype)" : {{String}},
+      "[CustomerOwnedIpv4Pool](#cfn-s3outposts-endpoint-customerownedipv4pool)" : {{String}},
+      "[FailedReason](#cfn-s3outposts-endpoint-failedreason)" : {{FailedReason}},
+      "[OutpostId](#cfn-s3outposts-endpoint-outpostid)" : {{String}},
+      "[SecurityGroupId](#cfn-s3outposts-endpoint-securitygroupid)" : {{String}},
+      "[SubnetId](#cfn-s3outposts-endpoint-subnetid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3outposts-endpoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3Outposts::Endpoint
 Properties:
-  AccessType: String
-  CustomerOwnedIpv4Pool: String
-  FailedReason:
-    FailedReason
-  OutpostId: String
-  SecurityGroupId: String
-  SubnetId: String
-
+  [AccessType](#cfn-s3outposts-endpoint-accesstype): {{String}}
+  [CustomerOwnedIpv4Pool](#cfn-s3outposts-endpoint-customerownedipv4pool): {{String}}
+  [FailedReason](#cfn-s3outposts-endpoint-failedreason): {{
+    FailedReason}}
+  [OutpostId](#cfn-s3outposts-endpoint-outpostid): {{String}}
+  [SecurityGroupId](#cfn-s3outposts-endpoint-securitygroupid): {{String}}
+  [SubnetId](#cfn-s3outposts-endpoint-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-s3outposts-endpoint-properties"></a>
 
-`AccessType`
-
-The container for the type of connectivity used to access the Amazon S3 on Outposts
-endpoint. To use the Amazon VPC, choose `Private`. To use the endpoint
-with an on-premises network, choose `CustomerOwnedIp`. If you choose
-`CustomerOwnedIp`, you must also provide the customer-owned IP address pool (CoIP
-pool).
-
-###### Note
-
+`AccessType`  <a name="cfn-s3outposts-endpoint-accesstype"></a>
+The container for the type of connectivity used to access the Amazon S3 on Outposts endpoint. To use the Amazon VPC, choose `Private`. To use the endpoint with an on-premises network, choose `CustomerOwnedIp`. If you choose `CustomerOwnedIp`, you must also provide the customer-owned IP address pool (CoIP pool).
 `Private` is the default access type value.
+*Required*: No
+*Type*: String
+*Allowed values*: `CustomerOwnedIp | Private`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`CustomerOwnedIpv4Pool`  <a name="cfn-s3outposts-endpoint-customerownedipv4pool"></a>
+The ID of the customer-owned IPv4 address pool (CoIP pool) for the endpoint. IP addresses are allocated from this pool for the endpoint.
+*Required*: No
+*Type*: String
+*Pattern*: `^ipv4pool-coip-([0-9a-f]{17})$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `CustomerOwnedIp | Private`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CustomerOwnedIpv4Pool`
-
-The ID of the customer-owned IPv4 address pool (CoIP pool) for the endpoint. IP addresses
-are allocated from this pool for the endpoint.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^ipv4pool-coip-([0-9a-f]{17})$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FailedReason`
-
+`FailedReason`  <a name="cfn-s3outposts-endpoint-failedreason"></a>
 The failure reason, if any, for a create or delete endpoint operation.
+*Required*: No
+*Type*: [FailedReason](aws-properties-s3outposts-endpoint-failedreason.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FailedReason](aws-properties-s3outposts-endpoint-failedreason.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutpostId`
-
+`OutpostId`  <a name="cfn-s3outposts-endpoint-outpostid"></a>
 The ID of the Outpost.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(op-[a-f0-9]{17}|\d{12}|ec2)$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(op-[a-f0-9]{17}|\d{12}|ec2)$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroupId`
-
+`SecurityGroupId`  <a name="cfn-s3outposts-endpoint-securitygroupid"></a>
 The ID of the security group used for the endpoint.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^sg-([0-9a-f]{8}|[0-9a-f]{17})$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^sg-([0-9a-f]{8}|[0-9a-f]{17})$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-s3outposts-endpoint-subnetid"></a>
 The ID of the subnet used for the endpoint.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^subnet-([0-9a-f]{8}|[0-9a-f]{17})$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^subnet-([0-9a-f]{8}|[0-9a-f]{17})$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-s3outposts-endpoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3outposts-endpoint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) for the endpoint.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3outposts-endpoint-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-s3outposts-endpoint-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the endpoint.
 
-`CidrBlock`
-
+`CidrBlock`  <a name="CidrBlock-fn::getatt"></a>
 The VPC CIDR block committed by this endpoint.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the endpoint was created.
 
-`NetworkInterfaces`
-
+`NetworkInterfaces`  <a name="NetworkInterfaces-fn::getatt"></a>
 The network interface of the endpoint.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the endpoint.
 
 ## Examples
+<a name="aws-resource-s3outposts-endpoint--examples"></a>
 
-- [Creating an endpoint for your Outpost using CloudFormation](#aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation)
-
-- [Creating an on-premises endpoint for your Outpost using CloudFormation](#aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation)
+**Topics**
++ [Creating an endpoint for your Outpost using CloudFormation](#aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation)
++ [Creating an on-premises endpoint for your Outpost using CloudFormation](#aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation)
 
 ### Creating an endpoint for your Outpost using CloudFormation
+<a name="aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation"></a>
 
 This example creates an endpoint for an Outpost.
 
 #### JSON
+<a name="aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Endpoint",
@@ -235,9 +192,9 @@ This example creates an endpoint for an Outpost.
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Endpoint
 Resources:
@@ -265,18 +222,17 @@ Outputs:
     Export:
       Name:
         Fn::Sub: "${AWS::StackName}-StackID"
-
 ```
 
 ### Creating an on-premises endpoint for your Outpost using CloudFormation
+<a name="aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation"></a>
 
-This example creates an on-premises endpoint for an Outpost using customer-owner IP
-(CoIP) addresses.
+This example creates an on-premises endpoint for an Outpost using customer-owner IP (CoIP) addresses.
 
 #### JSON
+<a name="aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Endpoint",
@@ -321,13 +277,12 @@ This example creates an on-premises endpoint for an Outpost using customer-owner
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Endpoint
 Resources:
@@ -357,13 +312,6 @@ Outputs:
     Export:
       Name:
         Fn::Sub: "${AWS::StackName}-StackID"
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::S3Outposts::BucketPolicy
-
-FailedReason
 
 All content copied from https://docs.aws.amazon.com/.

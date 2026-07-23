@@ -2,79 +2,60 @@
 title: "AWS::EMRContainers::SecurityConfiguration SecurityConfigurationData"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration SecurityConfigurationData
+<a name="aws-properties-emrcontainers-securityconfiguration-securityconfigurationdata"></a>
 
 Configurations related to the security configuration for the request.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-securityconfigurationdata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-securityconfigurationdata-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthenticationConfiguration" : AuthenticationConfiguration,
-  "AuthorizationConfiguration" : AuthorizationConfiguration,
-  "EncryptionConfiguration" : EncryptionConfiguration
+  "[AuthenticationConfiguration](#cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authenticationconfiguration)" : {{AuthenticationConfiguration}},
+  "[AuthorizationConfiguration](#cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authorizationconfiguration)" : {{AuthorizationConfiguration}},
+  "[EncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-securityconfigurationdata-encryptionconfiguration)" : {{EncryptionConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-securityconfigurationdata-syntax.yaml"></a>
 
-```yaml
-
-  AuthenticationConfiguration:
-    AuthenticationConfiguration
-  AuthorizationConfiguration:
-    AuthorizationConfiguration
-  EncryptionConfiguration:
-    EncryptionConfiguration
-
+```
+  [AuthenticationConfiguration](#cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authenticationconfiguration): {{
+    AuthenticationConfiguration}}
+  [AuthorizationConfiguration](#cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authorizationconfiguration): {{
+    AuthorizationConfiguration}}
+  [EncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-securityconfigurationdata-encryptionconfiguration): {{
+    EncryptionConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-securityconfigurationdata-properties"></a>
 
-`AuthenticationConfiguration`
-
+`AuthenticationConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authenticationconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [AuthenticationConfiguration](aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [AuthenticationConfiguration](aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AuthorizationConfiguration`
-
+`AuthorizationConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authorizationconfiguration"></a>
 Authorization-related configuration input for the security configuration.
+*Required*: No
+*Type*: [AuthorizationConfiguration](aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [AuthorizationConfiguration](aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EncryptionConfiguration`
-
+`EncryptionConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-securityconfigurationdata-encryptionconfiguration"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [EncryptionConfiguration](aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecureNamespaceInfo
-
-Tag
+*Required*: No
+*Type*: [EncryptionConfiguration](aws-properties-emrcontainers-securityconfiguration-encryptionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

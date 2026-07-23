@@ -2,57 +2,43 @@
 title: "AWS::GreengrassV2::Deployment IoTJobAbortConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment IoTJobAbortConfig
+<a name="aws-properties-greengrassv2-deployment-iotjobabortconfig"></a>
 
-Contains a list of criteria that define when and how to cancel a configuration
-deployment.
+Contains a list of criteria that define when and how to cancel a configuration deployment.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-iotjobabortconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-iotjobabortconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CriteriaList" : [ IoTJobAbortCriteria, ... ]
+  "[CriteriaList](#cfn-greengrassv2-deployment-iotjobabortconfig-criterialist)" : {{[ IoTJobAbortCriteria, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-iotjobabortconfig-syntax.yaml"></a>
 
-```yaml
-
-  CriteriaList:
-    - IoTJobAbortCriteria
-
+```
+  [CriteriaList](#cfn-greengrassv2-deployment-iotjobabortconfig-criterialist): {{
+    - IoTJobAbortCriteria}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-iotjobabortconfig-properties"></a>
 
-`CriteriaList`
-
-The list of criteria that define when and how to cancel the configuration
-deployment.
-
-_Required_: Yes
-
-_Type_: Array of [IoTJobAbortCriteria](aws-properties-greengrassv2-deployment-iotjobabortcriteria.md)
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeploymentPolicies
-
-IoTJobAbortCriteria
+`CriteriaList`  <a name="cfn-greengrassv2-deployment-iotjobabortconfig-criterialist"></a>
+The list of criteria that define when and how to cancel the configuration deployment.
+*Required*: Yes
+*Type*: Array of [IoTJobAbortCriteria](aws-properties-greengrassv2-deployment-iotjobabortcriteria.md)
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

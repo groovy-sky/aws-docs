@@ -2,94 +2,67 @@
 title: "AWS::DevOpsAgent::Association MCPServerDatadogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association MCPServerDatadogConfiguration
+<a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration"></a>
 
-Configuration for Datadog MCP server integration. Defines the server name, endpoint URL, optional description,
-and webhook update settings.
+Configuration for Datadog MCP server integration. Defines the server name, endpoint URL, optional description, and webhook update settings.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "EnableWebhookUpdates" : Boolean,
-  "Endpoint" : String,
-  "Name" : String
+  "[Description](#cfn-devopsagent-association-mcpserverdatadogconfiguration-description)" : {{String}},
+  "[EnableWebhookUpdates](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enablewebhookupdates)" : {{Boolean}},
+  "[Endpoint](#cfn-devopsagent-association-mcpserverdatadogconfiguration-endpoint)" : {{String}},
+  "[Name](#cfn-devopsagent-association-mcpserverdatadogconfiguration-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  EnableWebhookUpdates: Boolean
-  Endpoint: String
-  Name: String
-
+```
+  [Description](#cfn-devopsagent-association-mcpserverdatadogconfiguration-description): {{String}}
+  [EnableWebhookUpdates](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enablewebhookupdates): {{Boolean}}
+  [Endpoint](#cfn-devopsagent-association-mcpserverdatadogconfiguration-endpoint): {{String}}
+  [Name](#cfn-devopsagent-association-mcpserverdatadogconfiguration-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-devopsagent-association-mcpserverdatadogconfiguration-description"></a>
 The description of the MCP server.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EnableWebhookUpdates`  <a name="cfn-devopsagent-association-mcpserverdatadogconfiguration-enablewebhookupdates"></a>
+When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableWebhookUpdates`
-
-When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events
-from the service.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Endpoint`
-
+`Endpoint`  <a name="cfn-devopsagent-association-mcpserverdatadogconfiguration-endpoint"></a>
 The MCP server endpoint URL. Must be an HTTPS URL.
+*Required*: No
+*Type*: String
+*Pattern*: `^https://[a-zA-Z0-9.-]+(?::[0-9]+)?(?:/.*)?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^https://[a-zA-Z0-9.-]+(?::[0-9]+)?(?:/.*)?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-devopsagent-association-mcpserverdatadogconfiguration-name"></a>
 The name of the MCP server. The name must match the pattern `^[a-zA-Z0-9_-]+$`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MCPServerConfiguration
-
-MCPServerNewRelicConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

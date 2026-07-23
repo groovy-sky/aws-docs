@@ -2,91 +2,65 @@
 title: "AWS::DevOpsAgent::Association GitLabConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association GitLabConfiguration
+<a name="aws-properties-devopsagent-association-gitlabconfiguration"></a>
 
-Configuration for GitLab project integration. Defines the numeric project ID, full project path
-(namespace/project-name), GitLab instance identifier, and webhook update settings required for the Agent Space to
-access and interact with the GitLab project.
+Configuration for GitLab project integration. Defines the numeric project ID, full project path (namespace/project-name), GitLab instance identifier, and webhook update settings required for the Agent Space to access and interact with the GitLab project.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-gitlabconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-gitlabconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableWebhookUpdates" : Boolean,
-  "InstanceIdentifier" : String,
-  "ProjectId" : String,
-  "ProjectPath" : String
+  "[EnableWebhookUpdates](#cfn-devopsagent-association-gitlabconfiguration-enablewebhookupdates)" : {{Boolean}},
+  "[InstanceIdentifier](#cfn-devopsagent-association-gitlabconfiguration-instanceidentifier)" : {{String}},
+  "[ProjectId](#cfn-devopsagent-association-gitlabconfiguration-projectid)" : {{String}},
+  "[ProjectPath](#cfn-devopsagent-association-gitlabconfiguration-projectpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-gitlabconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EnableWebhookUpdates: Boolean
-  InstanceIdentifier: String
-  ProjectId: String
-  ProjectPath: String
-
+```
+  [EnableWebhookUpdates](#cfn-devopsagent-association-gitlabconfiguration-enablewebhookupdates): {{Boolean}}
+  [InstanceIdentifier](#cfn-devopsagent-association-gitlabconfiguration-instanceidentifier): {{String}}
+  [ProjectId](#cfn-devopsagent-association-gitlabconfiguration-projectid): {{String}}
+  [ProjectPath](#cfn-devopsagent-association-gitlabconfiguration-projectpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-gitlabconfiguration-properties"></a>
 
-`EnableWebhookUpdates`
+`EnableWebhookUpdates`  <a name="cfn-devopsagent-association-gitlabconfiguration-enablewebhookupdates"></a>
+When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events
-from the service.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceIdentifier`
-
+`InstanceIdentifier`  <a name="cfn-devopsagent-association-gitlabconfiguration-instanceidentifier"></a>
 The GitLab instance identifier (for example, `gitlab.com`).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProjectId`
-
+`ProjectId`  <a name="cfn-devopsagent-association-gitlabconfiguration-projectid"></a>
 GitLab numeric project ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProjectPath`
-
+`ProjectPath`  <a name="cfn-devopsagent-association-gitlabconfiguration-projectpath"></a>
 The full GitLab project path (for example, `namespace/project-name`).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GitHubConfiguration
-
-KeyValuePair
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

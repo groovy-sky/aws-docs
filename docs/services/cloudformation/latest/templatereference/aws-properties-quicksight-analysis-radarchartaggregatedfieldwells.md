@@ -2,91 +2,66 @@
 title: "AWS::QuickSight::Analysis RadarChartAggregatedFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis RadarChartAggregatedFieldWells
+<a name="aws-properties-quicksight-analysis-radarchartaggregatedfieldwells"></a>
 
 The aggregated field well configuration of a `RadarChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-radarchartaggregatedfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-radarchartaggregatedfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : [ DimensionField, ... ],
-  "Color" : [ DimensionField, ... ],
-  "Values" : [ MeasureField, ... ]
+  "[Category](#cfn-quicksight-analysis-radarchartaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
+  "[Color](#cfn-quicksight-analysis-radarchartaggregatedfieldwells-color)" : {{[ DimensionField, ... ]}},
+  "[Values](#cfn-quicksight-analysis-radarchartaggregatedfieldwells-values)" : {{[ MeasureField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-radarchartaggregatedfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  Category:
-    - DimensionField
-  Color:
-    - DimensionField
-  Values:
-    - MeasureField
-
+```
+  [Category](#cfn-quicksight-analysis-radarchartaggregatedfieldwells-category): {{
+    - DimensionField}}
+  [Color](#cfn-quicksight-analysis-radarchartaggregatedfieldwells-color): {{
+    - DimensionField}}
+  [Values](#cfn-quicksight-analysis-radarchartaggregatedfieldwells-values): {{
+    - MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-radarchartaggregatedfieldwells-properties"></a>
 
-`Category`
-
+`Category`  <a name="cfn-quicksight-analysis-radarchartaggregatedfieldwells-category"></a>
 The aggregated field well categories of a radar chart.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Color`
-
+`Color`  <a name="cfn-quicksight-analysis-radarchartaggregatedfieldwells-color"></a>
 The color that are assigned to the aggregated field wells of a radar chart.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-quicksight-analysis-radarchartaggregatedfieldwells-values"></a>
 The values that are assigned to the aggregated field wells of a radar chart.
-
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QueryExecutionOptions
-
-RadarChartAreaStyleSettings
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

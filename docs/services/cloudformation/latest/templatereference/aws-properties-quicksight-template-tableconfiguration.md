@@ -2,148 +2,107 @@
 title: "AWS::QuickSight::Template TableConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TableConfiguration
+<a name="aws-properties-quicksight-template-tableconfiguration"></a>
 
 The configuration for a `TableVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-tableconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-tableconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldOptions" : TableFieldOptions,
-  "FieldWells" : TableFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "PaginatedReportOptions" : TablePaginatedReportOptions,
-  "SortConfiguration" : TableSortConfiguration,
-  "TableInlineVisualizations" : [ TableInlineVisualization, ... ],
-  "TableOptions" : TableOptions,
-  "TotalOptions" : TotalOptions
+  "[FieldOptions](#cfn-quicksight-template-tableconfiguration-fieldoptions)" : {{TableFieldOptions}},
+  "[FieldWells](#cfn-quicksight-template-tableconfiguration-fieldwells)" : {{TableFieldWells}},
+  "[Interactions](#cfn-quicksight-template-tableconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[PaginatedReportOptions](#cfn-quicksight-template-tableconfiguration-paginatedreportoptions)" : {{TablePaginatedReportOptions}},
+  "[SortConfiguration](#cfn-quicksight-template-tableconfiguration-sortconfiguration)" : {{TableSortConfiguration}},
+  "[TableInlineVisualizations](#cfn-quicksight-template-tableconfiguration-tableinlinevisualizations)" : {{[ TableInlineVisualization, ... ]}},
+  "[TableOptions](#cfn-quicksight-template-tableconfiguration-tableoptions)" : {{TableOptions}},
+  "[TotalOptions](#cfn-quicksight-template-tableconfiguration-totaloptions)" : {{TotalOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-tableconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FieldOptions:
-    TableFieldOptions
-  FieldWells:
-    TableFieldWells
-  Interactions:
-    VisualInteractionOptions
-  PaginatedReportOptions:
-    TablePaginatedReportOptions
-  SortConfiguration:
-    TableSortConfiguration
-  TableInlineVisualizations:
-    - TableInlineVisualization
-  TableOptions:
-    TableOptions
-  TotalOptions:
-    TotalOptions
-
+```
+  [FieldOptions](#cfn-quicksight-template-tableconfiguration-fieldoptions): {{
+    TableFieldOptions}}
+  [FieldWells](#cfn-quicksight-template-tableconfiguration-fieldwells): {{
+    TableFieldWells}}
+  [Interactions](#cfn-quicksight-template-tableconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [PaginatedReportOptions](#cfn-quicksight-template-tableconfiguration-paginatedreportoptions): {{
+    TablePaginatedReportOptions}}
+  [SortConfiguration](#cfn-quicksight-template-tableconfiguration-sortconfiguration): {{
+    TableSortConfiguration}}
+  [TableInlineVisualizations](#cfn-quicksight-template-tableconfiguration-tableinlinevisualizations): {{
+    - TableInlineVisualization}}
+  [TableOptions](#cfn-quicksight-template-tableconfiguration-tableoptions): {{
+    TableOptions}}
+  [TotalOptions](#cfn-quicksight-template-tableconfiguration-totaloptions): {{
+    TotalOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-tableconfiguration-properties"></a>
 
-`FieldOptions`
-
+`FieldOptions`  <a name="cfn-quicksight-template-tableconfiguration-fieldoptions"></a>
 The field options for a table visual.
+*Required*: No
+*Type*: [TableFieldOptions](aws-properties-quicksight-template-tablefieldoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableFieldOptions](aws-properties-quicksight-template-tablefieldoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-tableconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [TableFieldWells](aws-properties-quicksight-template-tablefieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableFieldWells](aws-properties-quicksight-template-tablefieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-tableconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PaginatedReportOptions`
-
+`PaginatedReportOptions`  <a name="cfn-quicksight-template-tableconfiguration-paginatedreportoptions"></a>
 The paginated report options for a table visual.
+*Required*: No
+*Type*: [TablePaginatedReportOptions](aws-properties-quicksight-template-tablepaginatedreportoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TablePaginatedReportOptions](aws-properties-quicksight-template-tablepaginatedreportoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-tableconfiguration-sortconfiguration"></a>
 The sort configuration for a `TableVisual`.
+*Required*: No
+*Type*: [TableSortConfiguration](aws-properties-quicksight-template-tablesortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableSortConfiguration](aws-properties-quicksight-template-tablesortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableInlineVisualizations`
-
+`TableInlineVisualizations`  <a name="cfn-quicksight-template-tableconfiguration-tableinlinevisualizations"></a>
 A collection of inline visualizations to display within a chart.
+*Required*: No
+*Type*: Array of [TableInlineVisualization](aws-properties-quicksight-template-tableinlinevisualization.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TableInlineVisualization](aws-properties-quicksight-template-tableinlinevisualization.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableOptions`
-
+`TableOptions`  <a name="cfn-quicksight-template-tableconfiguration-tableoptions"></a>
 The table options for a table visual.
+*Required*: No
+*Type*: [TableOptions](aws-properties-quicksight-template-tableoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableOptions](aws-properties-quicksight-template-tableoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalOptions`
-
+`TotalOptions`  <a name="cfn-quicksight-template-tableconfiguration-totaloptions"></a>
 The total options for a table visual.
-
-_Required_: No
-
-_Type_: [TotalOptions](aws-properties-quicksight-template-totaloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableConditionalFormattingOption
-
-TableFieldCustomIconContent
+*Required*: No
+*Type*: [TotalOptions](aws-properties-quicksight-template-totaloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

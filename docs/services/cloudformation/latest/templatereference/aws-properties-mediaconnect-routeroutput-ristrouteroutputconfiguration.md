@@ -2,68 +2,51 @@
 title: "AWS::MediaConnect::RouterOutput RistRouterOutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterOutput RistRouterOutputConfiguration
+<a name="aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration"></a>
 
 The configuration settings for a router output using the RIST (Reliable Internet Stream Transport) protocol, including the destination address and port.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationAddress" : String,
-  "DestinationPort" : Integer
+  "[DestinationAddress](#cfn-mediaconnect-routeroutput-ristrouteroutputconfiguration-destinationaddress)" : {{String}},
+  "[DestinationPort](#cfn-mediaconnect-routeroutput-ristrouteroutputconfiguration-destinationport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DestinationAddress: String
-  DestinationPort: Integer
-
+```
+  [DestinationAddress](#cfn-mediaconnect-routeroutput-ristrouteroutputconfiguration-destinationaddress): {{String}}
+  [DestinationPort](#cfn-mediaconnect-routeroutput-ristrouteroutputconfiguration-destinationport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration-properties"></a>
 
-`DestinationAddress`
-
+`DestinationAddress`  <a name="cfn-mediaconnect-routeroutput-ristrouteroutputconfiguration-destinationaddress"></a>
 The destination IP address for the RIST protocol in the router output configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationPort`
-
+`DestinationPort`  <a name="cfn-mediaconnect-routeroutput-ristrouteroutputconfiguration-destinationport"></a>
 The destination port number for the RIST protocol in the router output configuration.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PreferredDayTimeMaintenanceConfiguration
-
-RouterOutputConfiguration
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1024`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

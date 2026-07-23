@@ -2,150 +2,119 @@
 title: "AWS::Route53::RecordSetGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::RecordSetGroup
+<a name="aws-resource-route53-recordsetgroup"></a>
 
-A complex type that contains an optional comment, the name and ID of the hosted zone that you want to make changes in,
-and values for the records that you want to create.
+A complex type that contains an optional comment, the name and ID of the hosted zone that you want to make changes in, and values for the records that you want to create.
 
 ## Syntax
+<a name="aws-resource-route53-recordsetgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53-recordsetgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53::RecordSetGroup",
   "Properties" : {
-      "Comment" : String,
-      "HostedZoneId" : String,
-      "HostedZoneName" : String,
-      "RecordSets" : [ RecordSet, ... ]
+      "[Comment](#cfn-route53-recordsetgroup-comment)" : {{String}},
+      "[HostedZoneId](#cfn-route53-recordsetgroup-hostedzoneid)" : {{String}},
+      "[HostedZoneName](#cfn-route53-recordsetgroup-hostedzonename)" : {{String}},
+      "[RecordSets](#cfn-route53-recordsetgroup-recordsets)" : {{[ RecordSet, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53-recordsetgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53::RecordSetGroup
 Properties:
-  Comment: String
-  HostedZoneId: String
-  HostedZoneName: String
-  RecordSets:
-    - RecordSet
-
+  [Comment](#cfn-route53-recordsetgroup-comment): {{String}}
+  [HostedZoneId](#cfn-route53-recordsetgroup-hostedzoneid): {{String}}
+  [HostedZoneName](#cfn-route53-recordsetgroup-hostedzonename): {{String}}
+  [RecordSets](#cfn-route53-recordsetgroup-recordsets): {{
+    - RecordSet}}
 ```
 
 ## Properties
+<a name="aws-resource-route53-recordsetgroup-properties"></a>
 
-`Comment`
+`Comment`  <a name="cfn-route53-recordsetgroup-comment"></a>
+*Optional:* Any comments you want to include about a change batch request.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Optional:_ Any comments you want to include about a change batch
-request.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HostedZoneId`
-
+`HostedZoneId`  <a name="cfn-route53-recordsetgroup-hostedzoneid"></a>
 The ID of the hosted zone that you want to create records in.
+Specify either `HostedZoneName` or `HostedZoneId`, but not both. If you have multiple hosted zones with the same domain name, you must specify the hosted zone using `HostedZoneId`.
+*Required*: No
+*Type*: String
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specify either `HostedZoneName` or `HostedZoneId`, but not both. If you have multiple hosted zones
-with the same domain name, you must specify the hosted zone using `HostedZoneId`.
+`HostedZoneName`  <a name="cfn-route53-recordsetgroup-hostedzonename"></a>
+The name of the hosted zone that you want to create records in. You must include a trailing dot (for example, `www.example.com.`) as part of the `HostedZoneName`.
+When you create a stack using an `AWS::Route53::RecordSet` that specifies `HostedZoneName`, AWS CloudFormation attempts to find a hosted zone whose name matches the `HostedZoneName`. If AWS CloudFormation can't find a hosted zone with a matching domain name, or if there is more than one hosted zone with the specified domain name, AWS CloudFormation will not create the stack.
+Specify either `HostedZoneName` or `HostedZoneId`, but not both. If you have multiple hosted zones with the same domain name, you must specify the hosted zone using `HostedZoneId`.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HostedZoneName`
-
-The name of the hosted zone that you want to create records in. You must include a trailing dot (for example, `www.example.com.`) as part
-of the `HostedZoneName`.
-
-When you create a stack using an `AWS::Route53::RecordSet` that specifies `HostedZoneName`,
-AWS CloudFormation attempts to find a hosted zone whose name matches the `HostedZoneName`. If AWS CloudFormation
-can't find a hosted zone with a matching domain name, or if there is more than one hosted zone with the specified domain name,
-AWS CloudFormation will not create the stack.
-
-Specify either `HostedZoneName` or `HostedZoneId`, but not both. If you have multiple hosted zones
-with the same domain name, you must specify the hosted zone using `HostedZoneId`.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RecordSets`
-
+`RecordSets`  <a name="cfn-route53-recordsetgroup-recordsets"></a>
 A complex type that contains one `RecordSet` element for each record that you want to create.
-
-_Required_: No
-
-_Type_: Array of [RecordSet](aws-properties-route53-recordsetgroup-recordset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [RecordSet](aws-properties-route53-recordsetgroup-recordset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53-recordsetgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53-recordsetgroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the record set group, for example, `MyRecordSetGroup`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53-recordsetgroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-route53-recordsetgroup-return-values-fn--getatt-fn--getatt"></a>
 
-This element contains an ID that you use when performing a `GetChange` action to get detailed information about the change.
+`Id`  <a name="Id-fn::getatt"></a>
+ This element contains an ID that you use when performing a `GetChange` action to get detailed information about the change.
 
 ## Examples
+<a name="aws-resource-route53-recordsetgroup--examples"></a>
 
-For more examples, see
-[Route 53 Template Snippets](../userguide/quickref-route53.md).
+For more examples, see [Route 53 Template Snippets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-route53.html).
 
 ### Creating records for a mail server
+<a name="aws-resource-route53-recordsetgroup--examples--Creating_records_for_a_mail_server"></a>
 
 The following example shows how to create three records for a mail server:
-
-- An A record that specifies the IP address for the mail server.
-
-- An MX record that routes email to that server.
-
-- A TXT record that contains an SPF string, which is used to identify the sender of email messages.
-SPF records are no longer recommended. For more information, see
-[SPF Record Type](../../../route53/latest/developerguide/resourcerecordtypes.md#SPFFormat)
-in the _Amazon Route 53 Developer Guide_.
++ An A record that specifies the IP address for the mail server.
++ An MX record that routes email to that server.
++ A TXT record that contains an SPF string, which is used to identify the sender of email messages. SPF records are no longer recommended. For more information, see [SPF Record Type](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#SPFFormat) in the *Amazon Route 53 Developer Guide*.
 
 #### JSON
+<a name="aws-resource-route53-recordsetgroup--examples--Creating_records_for_a_mail_server--json"></a>
 
-```json
-
+```
 {
    "myExampleDotComEmailServer": {
       "Type": "AWS::Route53::RecordSetGroup",
@@ -184,9 +153,9 @@ in the _Amazon Route 53 Developer Guide_.
 ```
 
 #### YAML
+<a name="aws-resource-route53-recordsetgroup--examples--Creating_records_for_a_mail_server--yaml"></a>
 
-```yaml
-
+```
 myExampleDotComEmailServer:
   Type: AWS::Route53::RecordSetGroup
   Properties:
@@ -211,13 +180,7 @@ myExampleDotComEmailServer:
 ```
 
 ## See also
-
-- For `AWS::Route53::RecordSetGroup` examples, see [ChangeResourceRecordSets](../../../../reference/route53/latest/apireference/api-changeresourcerecordsets.md) in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeoProximityLocation
-
-AliasTarget
+<a name="aws-resource-route53-recordsetgroup--seealso"></a>
++ For `AWS::Route53::RecordSetGroup` examples, see [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

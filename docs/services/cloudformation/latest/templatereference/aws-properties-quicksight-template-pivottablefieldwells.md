@@ -2,55 +2,44 @@
 title: "AWS::QuickSight::Template PivotTableFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PivotTableFieldWells
+<a name="aws-properties-quicksight-template-pivottablefieldwells"></a>
 
 The field wells for a pivot table visual.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pivottablefieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pivottablefieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "PivotTableAggregatedFieldWells" : PivotTableAggregatedFieldWells
+  "[PivotTableAggregatedFieldWells](#cfn-quicksight-template-pivottablefieldwells-pivottableaggregatedfieldwells)" : {{PivotTableAggregatedFieldWells}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pivottablefieldwells-syntax.yaml"></a>
 
-```yaml
-
-  PivotTableAggregatedFieldWells:
-    PivotTableAggregatedFieldWells
-
+```
+  [PivotTableAggregatedFieldWells](#cfn-quicksight-template-pivottablefieldwells-pivottableaggregatedfieldwells): {{
+    PivotTableAggregatedFieldWells}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pivottablefieldwells-properties"></a>
 
-`PivotTableAggregatedFieldWells`
-
+`PivotTableAggregatedFieldWells`  <a name="cfn-quicksight-template-pivottablefieldwells-pivottableaggregatedfieldwells"></a>
 The aggregated field well for the pivot table.
-
-_Required_: No
-
-_Type_: [PivotTableAggregatedFieldWells](aws-properties-quicksight-template-pivottableaggregatedfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableFieldSubtotalOptions
-
-PivotTableOptions
+*Required*: No
+*Type*: [PivotTableAggregatedFieldWells](aws-properties-quicksight-template-pivottableaggregatedfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

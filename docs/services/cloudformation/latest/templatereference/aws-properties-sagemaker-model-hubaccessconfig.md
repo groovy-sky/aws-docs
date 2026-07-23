@@ -2,61 +2,46 @@
 title: "AWS::SageMaker::Model HubAccessConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Model HubAccessConfig
+<a name="aws-properties-sagemaker-model-hubaccessconfig"></a>
 
 The configuration for a private hub model reference that points to a public SageMaker JumpStart model.
 
-For more information about private hubs, see [Private curated hubs for foundation model access control in JumpStart](../../../sagemaker/latest/dg/jumpstart-curated-hubs.md).
+For more information about private hubs, see [Private curated hubs for foundation model access control in JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html).
 
 ## Syntax
+<a name="aws-properties-sagemaker-model-hubaccessconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-model-hubaccessconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "HubContentArn" : String
+  "[HubContentArn](#cfn-sagemaker-model-hubaccessconfig-hubcontentarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-model-hubaccessconfig-syntax.yaml"></a>
 
-```yaml
-
-  HubContentArn: String
-
+```
+  [HubContentArn](#cfn-sagemaker-model-hubaccessconfig-hubcontentarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-model-hubaccessconfig-properties"></a>
 
-`HubContentArn`
-
-The ARN of your private model hub content. This should be a `ModelReference`
-resource type that points to a SageMaker JumpStart public hub model.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerDefinition
-
-ImageConfig
+`HubContentArn`  <a name="cfn-sagemaker-model-hubaccessconfig-hubcontentarn"></a>
+The ARN of your private model hub content. This should be a `ModelReference` resource type that points to a SageMaker JumpStart public hub model.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

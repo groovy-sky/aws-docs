@@ -2,188 +2,136 @@
 title: "AWS::AppFlow::Flow DestinationConnectorProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow DestinationConnectorProperties
+<a name="aws-properties-appflow-flow-destinationconnectorproperties"></a>
 
-This stores the information that is required to query a particular connector.
+ This stores the information that is required to query a particular connector.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-destinationconnectorproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-destinationconnectorproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomConnector" : CustomConnectorDestinationProperties,
-  "EventBridge" : EventBridgeDestinationProperties,
-  "LookoutMetrics" : LookoutMetricsDestinationProperties,
-  "Marketo" : MarketoDestinationProperties,
-  "Redshift" : RedshiftDestinationProperties,
-  "S3" : S3DestinationProperties,
-  "Salesforce" : SalesforceDestinationProperties,
-  "SAPOData" : SAPODataDestinationProperties,
-  "Snowflake" : SnowflakeDestinationProperties,
-  "Upsolver" : UpsolverDestinationProperties,
-  "Zendesk" : ZendeskDestinationProperties
+  "[CustomConnector](#cfn-appflow-flow-destinationconnectorproperties-customconnector)" : {{CustomConnectorDestinationProperties}},
+  "[EventBridge](#cfn-appflow-flow-destinationconnectorproperties-eventbridge)" : {{EventBridgeDestinationProperties}},
+  "[LookoutMetrics](#cfn-appflow-flow-destinationconnectorproperties-lookoutmetrics)" : {{LookoutMetricsDestinationProperties}},
+  "[Marketo](#cfn-appflow-flow-destinationconnectorproperties-marketo)" : {{MarketoDestinationProperties}},
+  "[Redshift](#cfn-appflow-flow-destinationconnectorproperties-redshift)" : {{RedshiftDestinationProperties}},
+  "[S3](#cfn-appflow-flow-destinationconnectorproperties-s3)" : {{S3DestinationProperties}},
+  "[Salesforce](#cfn-appflow-flow-destinationconnectorproperties-salesforce)" : {{SalesforceDestinationProperties}},
+  "[SAPOData](#cfn-appflow-flow-destinationconnectorproperties-sapodata)" : {{SAPODataDestinationProperties}},
+  "[Snowflake](#cfn-appflow-flow-destinationconnectorproperties-snowflake)" : {{SnowflakeDestinationProperties}},
+  "[Upsolver](#cfn-appflow-flow-destinationconnectorproperties-upsolver)" : {{UpsolverDestinationProperties}},
+  "[Zendesk](#cfn-appflow-flow-destinationconnectorproperties-zendesk)" : {{ZendeskDestinationProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-destinationconnectorproperties-syntax.yaml"></a>
 
-```yaml
-
-  CustomConnector:
-    CustomConnectorDestinationProperties
-  EventBridge:
-    EventBridgeDestinationProperties
-  LookoutMetrics:
-    LookoutMetricsDestinationProperties
-  Marketo:
-    MarketoDestinationProperties
-  Redshift:
-    RedshiftDestinationProperties
-  S3:
-    S3DestinationProperties
-  Salesforce:
-    SalesforceDestinationProperties
-  SAPOData:
-    SAPODataDestinationProperties
-  Snowflake:
-    SnowflakeDestinationProperties
-  Upsolver:
-    UpsolverDestinationProperties
-  Zendesk:
-    ZendeskDestinationProperties
-
+```
+  [CustomConnector](#cfn-appflow-flow-destinationconnectorproperties-customconnector): {{
+    CustomConnectorDestinationProperties}}
+  [EventBridge](#cfn-appflow-flow-destinationconnectorproperties-eventbridge): {{
+    EventBridgeDestinationProperties}}
+  [LookoutMetrics](#cfn-appflow-flow-destinationconnectorproperties-lookoutmetrics): {{
+    LookoutMetricsDestinationProperties}}
+  [Marketo](#cfn-appflow-flow-destinationconnectorproperties-marketo): {{
+    MarketoDestinationProperties}}
+  [Redshift](#cfn-appflow-flow-destinationconnectorproperties-redshift): {{
+    RedshiftDestinationProperties}}
+  [S3](#cfn-appflow-flow-destinationconnectorproperties-s3): {{
+    S3DestinationProperties}}
+  [Salesforce](#cfn-appflow-flow-destinationconnectorproperties-salesforce): {{
+    SalesforceDestinationProperties}}
+  [SAPOData](#cfn-appflow-flow-destinationconnectorproperties-sapodata): {{
+    SAPODataDestinationProperties}}
+  [Snowflake](#cfn-appflow-flow-destinationconnectorproperties-snowflake): {{
+    SnowflakeDestinationProperties}}
+  [Upsolver](#cfn-appflow-flow-destinationconnectorproperties-upsolver): {{
+    UpsolverDestinationProperties}}
+  [Zendesk](#cfn-appflow-flow-destinationconnectorproperties-zendesk): {{
+    ZendeskDestinationProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-destinationconnectorproperties-properties"></a>
 
-`CustomConnector`
-
+`CustomConnector`  <a name="cfn-appflow-flow-destinationconnectorproperties-customconnector"></a>
 The properties that are required to query the custom Connector.
+*Required*: No
+*Type*: [CustomConnectorDestinationProperties](aws-properties-appflow-flow-customconnectordestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EventBridge`  <a name="cfn-appflow-flow-destinationconnectorproperties-eventbridge"></a>
+ The properties required to query Amazon EventBridge.
+*Required*: No
+*Type*: [EventBridgeDestinationProperties](aws-properties-appflow-flow-eventbridgedestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CustomConnectorDestinationProperties](aws-properties-appflow-flow-customconnectordestinationproperties.md)
+`LookoutMetrics`  <a name="cfn-appflow-flow-destinationconnectorproperties-lookoutmetrics"></a>
+ The properties required to query Amazon Lookout for Metrics.
+*Required*: No
+*Type*: [LookoutMetricsDestinationProperties](aws-properties-appflow-flow-lookoutmetricsdestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBridge`
-
-The properties required to query Amazon EventBridge.
-
-_Required_: No
-
-_Type_: [EventBridgeDestinationProperties](aws-properties-appflow-flow-eventbridgedestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LookoutMetrics`
-
-The properties required to query Amazon Lookout for Metrics.
-
-_Required_: No
-
-_Type_: [LookoutMetricsDestinationProperties](aws-properties-appflow-flow-lookoutmetricsdestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Marketo`
-
+`Marketo`  <a name="cfn-appflow-flow-destinationconnectorproperties-marketo"></a>
 The properties required to query Marketo.
+*Required*: No
+*Type*: [MarketoDestinationProperties](aws-properties-appflow-flow-marketodestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Redshift`  <a name="cfn-appflow-flow-destinationconnectorproperties-redshift"></a>
+ The properties required to query Amazon Redshift.
+*Required*: No
+*Type*: [RedshiftDestinationProperties](aws-properties-appflow-flow-redshiftdestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [MarketoDestinationProperties](aws-properties-appflow-flow-marketodestinationproperties.md)
+`S3`  <a name="cfn-appflow-flow-destinationconnectorproperties-s3"></a>
+ The properties required to query Amazon S3.
+*Required*: No
+*Type*: [S3DestinationProperties](aws-properties-appflow-flow-s3destinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Salesforce`  <a name="cfn-appflow-flow-destinationconnectorproperties-salesforce"></a>
+ The properties required to query Salesforce.
+*Required*: No
+*Type*: [SalesforceDestinationProperties](aws-properties-appflow-flow-salesforcedestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Redshift`
-
-The properties required to query Amazon Redshift.
-
-_Required_: No
-
-_Type_: [RedshiftDestinationProperties](aws-properties-appflow-flow-redshiftdestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3`
-
-The properties required to query Amazon S3.
-
-_Required_: No
-
-_Type_: [S3DestinationProperties](aws-properties-appflow-flow-s3destinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Salesforce`
-
-The properties required to query Salesforce.
-
-_Required_: No
-
-_Type_: [SalesforceDestinationProperties](aws-properties-appflow-flow-salesforcedestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SAPOData`
-
+`SAPOData`  <a name="cfn-appflow-flow-destinationconnectorproperties-sapodata"></a>
 The properties required to query SAPOData.
+*Required*: No
+*Type*: [SAPODataDestinationProperties](aws-properties-appflow-flow-sapodatadestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Snowflake`  <a name="cfn-appflow-flow-destinationconnectorproperties-snowflake"></a>
+ The properties required to query Snowflake.
+*Required*: No
+*Type*: [SnowflakeDestinationProperties](aws-properties-appflow-flow-snowflakedestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [SAPODataDestinationProperties](aws-properties-appflow-flow-sapodatadestinationproperties.md)
+`Upsolver`  <a name="cfn-appflow-flow-destinationconnectorproperties-upsolver"></a>
+ The properties required to query Upsolver.
+*Required*: No
+*Type*: [UpsolverDestinationProperties](aws-properties-appflow-flow-upsolverdestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Snowflake`
-
-The properties required to query Snowflake.
-
-_Required_: No
-
-_Type_: [SnowflakeDestinationProperties](aws-properties-appflow-flow-snowflakedestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Upsolver`
-
-The properties required to query Upsolver.
-
-_Required_: No
-
-_Type_: [UpsolverDestinationProperties](aws-properties-appflow-flow-upsolverdestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Zendesk`
-
+`Zendesk`  <a name="cfn-appflow-flow-destinationconnectorproperties-zendesk"></a>
 The properties required to query Zendesk.
-
-_Required_: No
-
-_Type_: [ZendeskDestinationProperties](aws-properties-appflow-flow-zendeskdestinationproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [ZendeskDestinationProperties](aws-properties-appflow-flow-zendeskdestinationproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [DestinationConnectorProperties](../../../../reference/appflow/1-0/apireference/api-destinationconnectorproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataTransferApi
-
-DestinationFlowConfig
+<a name="aws-properties-appflow-flow-destinationconnectorproperties--seealso"></a>
++ [DestinationConnectorProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DestinationConnectorProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

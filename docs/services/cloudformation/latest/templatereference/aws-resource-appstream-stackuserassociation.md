@@ -2,111 +2,80 @@
 title: "AWS::AppStream::StackUserAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::StackUserAssociation
+<a name="aws-resource-appstream-stackuserassociation"></a>
 
 The `AWS::AppStream::StackUserAssociation` resource associates the specified users with the specified stacks for Amazon WorkSpaces Applications. Users in an WorkSpaces Applications user pool cannot be assigned to stacks with fleets that are joined to an Active Directory domain.
 
 ## Syntax
+<a name="aws-resource-appstream-stackuserassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appstream-stackuserassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppStream::StackUserAssociation",
   "Properties" : {
-      "AuthenticationType" : String,
-      "SendEmailNotification" : Boolean,
-      "StackName" : String,
-      "UserName" : String
+      "[AuthenticationType](#cfn-appstream-stackuserassociation-authenticationtype)" : {{String}},
+      "[SendEmailNotification](#cfn-appstream-stackuserassociation-sendemailnotification)" : {{Boolean}},
+      "[StackName](#cfn-appstream-stackuserassociation-stackname)" : {{String}},
+      "[UserName](#cfn-appstream-stackuserassociation-username)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appstream-stackuserassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppStream::StackUserAssociation
 Properties:
-  AuthenticationType: String
-  SendEmailNotification: Boolean
-  StackName: String
-  UserName: String
-
+  [AuthenticationType](#cfn-appstream-stackuserassociation-authenticationtype): {{String}}
+  [SendEmailNotification](#cfn-appstream-stackuserassociation-sendemailnotification): {{Boolean}}
+  [StackName](#cfn-appstream-stackuserassociation-stackname): {{String}}
+  [UserName](#cfn-appstream-stackuserassociation-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-appstream-stackuserassociation-properties"></a>
 
-`AuthenticationType`
-
+`AuthenticationType`  <a name="cfn-appstream-stackuserassociation-authenticationtype"></a>
 The authentication type for the user who is associated with the stack. You must specify USERPOOL.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `API | SAML | USERPOOL | AWS_AD`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `API | SAML | USERPOOL | AWS_AD`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SendEmailNotification`
-
+`SendEmailNotification`  <a name="cfn-appstream-stackuserassociation-sendemailnotification"></a>
 Specifies whether a welcome email is sent to a user after the user is created in the user pool.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StackName`
-
+`StackName`  <a name="cfn-appstream-stackuserassociation-stackname"></a>
 The name of the stack that is associated with the user.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UserName`
-
+`UserName`  <a name="cfn-appstream-stackuserassociation-username"></a>
 The email address of the user who is associated with the stack.
-
-###### Note
-
 Users' email addresses are case-sensitive.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also
-
-- [BatchAssociateUserStack](../../../../reference/appstream2/latest/apireference/api-batchassociateuserstack.md) in the _Amazon WorkSpaces Applications API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppStream::StackFleetAssociation
-
-AWS::AppStream::User
+<a name="aws-resource-appstream-stackuserassociation--seealso"></a>
++ [BatchAssociateUserStack](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_BatchAssociateUserStack.html) in the *Amazon WorkSpaces Applications API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

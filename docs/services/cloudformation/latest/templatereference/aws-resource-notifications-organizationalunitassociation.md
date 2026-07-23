@@ -2,77 +2,62 @@
 title: "AWS::Notifications::OrganizationalUnitAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Notifications::OrganizationalUnitAssociation
+<a name="aws-resource-notifications-organizationalunitassociation"></a>
 
-The `AWS::Notifications::OrganizationalUnitAssociation` resource Property description not available. for Notifications.
+<a name="aws-resource-notifications-organizationalunitassociation-description"></a>The `AWS::Notifications::OrganizationalUnitAssociation` resource Property description not available. for Notifications.
 
 ## Syntax
+<a name="aws-resource-notifications-organizationalunitassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-notifications-organizationalunitassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Notifications::OrganizationalUnitAssociation",
   "Properties" : {
-      "NotificationConfigurationArn" : String,
-      "OrganizationalUnitId" : String
+      "[NotificationConfigurationArn](#cfn-notifications-organizationalunitassociation-notificationconfigurationarn)" : {{String}},
+      "[OrganizationalUnitId](#cfn-notifications-organizationalunitassociation-organizationalunitid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-notifications-organizationalunitassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Notifications::OrganizationalUnitAssociation
 Properties:
-  NotificationConfigurationArn: String
-  OrganizationalUnitId: String
-
+  [NotificationConfigurationArn](#cfn-notifications-organizationalunitassociation-notificationconfigurationarn): {{String}}
+  [OrganizationalUnitId](#cfn-notifications-organizationalunitassociation-organizationalunitid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-notifications-organizationalunitassociation-properties"></a>
 
-`NotificationConfigurationArn`
-
+`NotificationConfigurationArn`  <a name="cfn-notifications-organizationalunitassociation-notificationconfigurationarn"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-z-]{3,10}:notifications::[0-9]{12}:configuration/[a-z0-9]{27}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z-]{3,10}:notifications::[0-9]{12}:configuration/[a-z0-9]{27}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OrganizationalUnitId`
-
+`OrganizationalUnitId`  <a name="cfn-notifications-organizationalunitassociation-organizationalunitid"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-notifications-organizationalunitassociation-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotificationHubStatusSummary
-
-Next
+<a name="aws-resource-notifications-organizationalunitassociation-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

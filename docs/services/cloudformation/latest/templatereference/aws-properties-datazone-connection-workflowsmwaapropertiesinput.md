@@ -2,52 +2,41 @@
 title: "AWS::DataZone::Connection WorkflowsMwaaPropertiesInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection WorkflowsMwaaPropertiesInput
+<a name="aws-properties-datazone-connection-workflowsmwaapropertiesinput"></a>
 
 The Amazon MWAA properties.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-workflowsmwaapropertiesinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-workflowsmwaapropertiesinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "MwaaEnvironmentName" : String
+  "[MwaaEnvironmentName](#cfn-datazone-connection-workflowsmwaapropertiesinput-mwaaenvironmentname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-workflowsmwaapropertiesinput-syntax.yaml"></a>
 
-```yaml
-
-  MwaaEnvironmentName: String
-
+```
+  [MwaaEnvironmentName](#cfn-datazone-connection-workflowsmwaapropertiesinput-mwaaenvironmentname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-workflowsmwaapropertiesinput-properties"></a>
 
-`MwaaEnvironmentName`
-
+`MwaaEnvironmentName`  <a name="cfn-datazone-connection-workflowsmwaapropertiesinput-mwaaenvironmentname"></a>
 The MWAA environment name.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UsernamePassword
-
-AWS::DataZone::DataSource
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

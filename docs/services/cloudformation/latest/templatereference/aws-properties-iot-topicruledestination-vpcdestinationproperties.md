@@ -2,90 +2,67 @@
 title: "AWS::IoT::TopicRuleDestination VpcDestinationProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRuleDestination VpcDestinationProperties
+<a name="aws-properties-iot-topicruledestination-vpcdestinationproperties"></a>
 
 The properties of a virtual private cloud (VPC) destination.
 
 ## Syntax
+<a name="aws-properties-iot-topicruledestination-vpcdestinationproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicruledestination-vpcdestinationproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "RoleArn" : String,
-  "SecurityGroups" : [ String, ... ],
-  "SubnetIds" : [ String, ... ],
-  "VpcId" : String
+  "[RoleArn](#cfn-iot-topicruledestination-vpcdestinationproperties-rolearn)" : {{String}},
+  "[SecurityGroups](#cfn-iot-topicruledestination-vpcdestinationproperties-securitygroups)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-iot-topicruledestination-vpcdestinationproperties-subnetids)" : {{[ String, ... ]}},
+  "[VpcId](#cfn-iot-topicruledestination-vpcdestinationproperties-vpcid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicruledestination-vpcdestinationproperties-syntax.yaml"></a>
 
-```yaml
-
-  RoleArn: String
-  SecurityGroups:
-    - String
-  SubnetIds:
-    - String
-  VpcId: String
-
+```
+  [RoleArn](#cfn-iot-topicruledestination-vpcdestinationproperties-rolearn): {{String}}
+  [SecurityGroups](#cfn-iot-topicruledestination-vpcdestinationproperties-securitygroups): {{
+    - String}}
+  [SubnetIds](#cfn-iot-topicruledestination-vpcdestinationproperties-subnetids): {{
+    - String}}
+  [VpcId](#cfn-iot-topicruledestination-vpcdestinationproperties-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicruledestination-vpcdestinationproperties-properties"></a>
 
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicruledestination-vpcdestinationproperties-rolearn"></a>
 The ARN of a role that has permission to create and attach to elastic network interfaces (ENIs).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroups`
-
+`SecurityGroups`  <a name="cfn-iot-topicruledestination-vpcdestinationproperties-securitygroups"></a>
 The security groups of the VPC destination.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-iot-topicruledestination-vpcdestinationproperties-subnetids"></a>
 The subnet IDs of the VPC destination.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-iot-topicruledestination-vpcdestinationproperties-vpcid"></a>
 The ID of the VPC.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HttpUrlDestinationSummary
-
-Next
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

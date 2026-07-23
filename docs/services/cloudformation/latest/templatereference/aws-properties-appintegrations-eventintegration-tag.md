@@ -2,81 +2,54 @@
 title: "AWS::AppIntegrations::EventIntegration Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::EventIntegration Tag
+<a name="aws-properties-appintegrations-eventintegration-tag"></a>
 
-The tags used to organize, track, or control access for this resource. For example, {
-"tags": {"key1":"value1", "key2":"value2"} }.
+The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
 
 ## Syntax
+<a name="aws-properties-appintegrations-eventintegration-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appintegrations-eventintegration-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-appintegrations-eventintegration-tag-key)" : {{String}},
+  "[Value](#cfn-appintegrations-eventintegration-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appintegrations-eventintegration-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-appintegrations-eventintegration-tag-key): {{String}}
+  [Value](#cfn-appintegrations-eventintegration-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appintegrations-eventintegration-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-appintegrations-eventintegration-tag-key"></a>
+The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, `_`, `.`, `/`, `=`, `+`, and `-`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:)[a-zA-Z+-=._:/]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in
-length and cannot be prefixed with aws:. You can use any of the following characters: the set
-of Unicode letters, digits, whitespace, `_`, `.`, `/`,
-`=`, `+`, and `-`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The value for the tag. You can specify a value that is 0 to 256 Unicode characters in
-length and cannot be prefixed with aws:. You can use any of the following characters: the set
-of Unicode letters, digits, whitespace, `_`, `.`, `/`,
-`=`, `+`, and `-`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EventFilter
-
-Next
+`Value`  <a name="cfn-appintegrations-eventintegration-tag-value"></a>
+The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, `_`, `.`, `/`, `=`, `+`, and `-`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

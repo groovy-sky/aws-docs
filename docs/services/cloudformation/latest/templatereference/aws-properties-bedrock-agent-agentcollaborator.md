@@ -2,97 +2,70 @@
 title: "AWS::Bedrock::Agent AgentCollaborator"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent AgentCollaborator
+<a name="aws-properties-bedrock-agent-agentcollaborator"></a>
 
 An agent collaborator.
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-agentcollaborator-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-agentcollaborator-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentDescriptor" : AgentDescriptor,
-  "CollaborationInstruction" : String,
-  "CollaboratorName" : String,
-  "RelayConversationHistory" : String
+  "[AgentDescriptor](#cfn-bedrock-agent-agentcollaborator-agentdescriptor)" : {{AgentDescriptor}},
+  "[CollaborationInstruction](#cfn-bedrock-agent-agentcollaborator-collaborationinstruction)" : {{String}},
+  "[CollaboratorName](#cfn-bedrock-agent-agentcollaborator-collaboratorname)" : {{String}},
+  "[RelayConversationHistory](#cfn-bedrock-agent-agentcollaborator-relayconversationhistory)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-agentcollaborator-syntax.yaml"></a>
 
-```yaml
-
-  AgentDescriptor:
-    AgentDescriptor
-  CollaborationInstruction: String
-  CollaboratorName: String
-  RelayConversationHistory: String
-
+```
+  [AgentDescriptor](#cfn-bedrock-agent-agentcollaborator-agentdescriptor): {{
+    AgentDescriptor}}
+  [CollaborationInstruction](#cfn-bedrock-agent-agentcollaborator-collaborationinstruction): {{String}}
+  [CollaboratorName](#cfn-bedrock-agent-agentcollaborator-collaboratorname): {{String}}
+  [RelayConversationHistory](#cfn-bedrock-agent-agentcollaborator-relayconversationhistory): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-agentcollaborator-properties"></a>
 
-`AgentDescriptor`
-
+`AgentDescriptor`  <a name="cfn-bedrock-agent-agentcollaborator-agentdescriptor"></a>
 The collaborator's agent descriptor.
+*Required*: Yes
+*Type*: [AgentDescriptor](aws-properties-bedrock-agent-agentdescriptor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [AgentDescriptor](aws-properties-bedrock-agent-agentdescriptor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CollaborationInstruction`
-
+`CollaborationInstruction`  <a name="cfn-bedrock-agent-agentcollaborator-collaborationinstruction"></a>
 The collaborator's instructions.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CollaboratorName`
-
+`CollaboratorName`  <a name="cfn-bedrock-agent-agentcollaborator-collaboratorname"></a>
 The collaborator's collaborator name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `([0-9a-zA-Z][_-]?){1,100}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([0-9a-zA-Z][_-]?){1,100}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelayConversationHistory`
-
+`RelayConversationHistory`  <a name="cfn-bedrock-agent-agentcollaborator-relayconversationhistory"></a>
 The collaborator's relay conversation history.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TO_COLLABORATOR | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AgentActionGroup
-
-AgentDescriptor
+*Required*: No
+*Type*: String
+*Allowed values*: `TO_COLLABORATOR | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

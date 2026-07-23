@@ -2,98 +2,70 @@
 title: "AWS::IoTEvents::DetectorModel State"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel State
+<a name="aws-properties-iotevents-detectormodel-state"></a>
 
 Information that defines a state of a detector.
 
 ## Syntax
+<a name="aws-properties-iotevents-detectormodel-state-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-detectormodel-state-syntax.json"></a>
 
-```json
-
+```
 {
-  "OnEnter" : OnEnter,
-  "OnExit" : OnExit,
-  "OnInput" : OnInput,
-  "StateName" : String
+  "[OnEnter](#cfn-iotevents-detectormodel-state-onenter)" : {{OnEnter}},
+  "[OnExit](#cfn-iotevents-detectormodel-state-onexit)" : {{OnExit}},
+  "[OnInput](#cfn-iotevents-detectormodel-state-oninput)" : {{OnInput}},
+  "[StateName](#cfn-iotevents-detectormodel-state-statename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-detectormodel-state-syntax.yaml"></a>
 
-```yaml
-
-  OnEnter:
-    OnEnter
-  OnExit:
-    OnExit
-  OnInput:
-    OnInput
-  StateName: String
-
+```
+  [OnEnter](#cfn-iotevents-detectormodel-state-onenter): {{
+    OnEnter}}
+  [OnExit](#cfn-iotevents-detectormodel-state-onexit): {{
+    OnExit}}
+  [OnInput](#cfn-iotevents-detectormodel-state-oninput): {{
+    OnInput}}
+  [StateName](#cfn-iotevents-detectormodel-state-statename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-detectormodel-state-properties"></a>
 
-`OnEnter`
+`OnEnter`  <a name="cfn-iotevents-detectormodel-state-onenter"></a>
+When entering this state, perform these `actions` if the `condition` is TRUE.
+*Required*: No
+*Type*: [OnEnter](aws-properties-iotevents-detectormodel-onenter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-When entering this state, perform these `actions` if the `condition`
-is TRUE.
+`OnExit`  <a name="cfn-iotevents-detectormodel-state-onexit"></a>
+When exiting this state, perform these `actions` if the specified `condition` is `TRUE`.
+*Required*: No
+*Type*: [OnExit](aws-properties-iotevents-detectormodel-onexit.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OnInput`  <a name="cfn-iotevents-detectormodel-state-oninput"></a>
+When an input is received and the `condition` is TRUE, perform the specified `actions`.
+*Required*: No
+*Type*: [OnInput](aws-properties-iotevents-detectormodel-oninput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [OnEnter](aws-properties-iotevents-detectormodel-onenter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnExit`
-
-When exiting this state, perform these `actions` if the specified
-`condition` is `TRUE`.
-
-_Required_: No
-
-_Type_: [OnExit](aws-properties-iotevents-detectormodel-onexit.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OnInput`
-
-When an input is received and the `condition` is TRUE, perform the specified
-`actions`.
-
-_Required_: No
-
-_Type_: [OnInput](aws-properties-iotevents-detectormodel-oninput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StateName`
-
+`StateName`  <a name="cfn-iotevents-detectormodel-state-statename"></a>
 The name of the state.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Sqs
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

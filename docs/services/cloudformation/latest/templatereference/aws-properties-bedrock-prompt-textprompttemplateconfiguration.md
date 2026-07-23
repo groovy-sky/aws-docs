@@ -2,99 +2,72 @@
 title: "AWS::Bedrock::Prompt TextPromptTemplateConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Prompt TextPromptTemplateConfiguration
+<a name="aws-properties-bedrock-prompt-textprompttemplateconfiguration"></a>
 
 Contains configurations for a text prompt template. To include a variable, enclose a word in double curly braces as in `{{variable}}`.
 
 ## Syntax
+<a name="aws-properties-bedrock-prompt-textprompttemplateconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-prompt-textprompttemplateconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CachePoint" : CachePointBlock,
-  "InputVariables" : [ PromptInputVariable, ... ],
-  "Text" : String,
-  "TextS3Location" : TextS3Location
+  "[CachePoint](#cfn-bedrock-prompt-textprompttemplateconfiguration-cachepoint)" : {{CachePointBlock}},
+  "[InputVariables](#cfn-bedrock-prompt-textprompttemplateconfiguration-inputvariables)" : {{[ PromptInputVariable, ... ]}},
+  "[Text](#cfn-bedrock-prompt-textprompttemplateconfiguration-text)" : {{String}},
+  "[TextS3Location](#cfn-bedrock-prompt-textprompttemplateconfiguration-texts3location)" : {{TextS3Location}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-prompt-textprompttemplateconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CachePoint:
-    CachePointBlock
-  InputVariables:
-    - PromptInputVariable
-  Text: String
-  TextS3Location:
-    TextS3Location
-
+```
+  [CachePoint](#cfn-bedrock-prompt-textprompttemplateconfiguration-cachepoint): {{
+    CachePointBlock}}
+  [InputVariables](#cfn-bedrock-prompt-textprompttemplateconfiguration-inputvariables): {{
+    - PromptInputVariable}}
+  [Text](#cfn-bedrock-prompt-textprompttemplateconfiguration-text): {{String}}
+  [TextS3Location](#cfn-bedrock-prompt-textprompttemplateconfiguration-texts3location): {{
+    TextS3Location}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-prompt-textprompttemplateconfiguration-properties"></a>
 
-`CachePoint`
-
+`CachePoint`  <a name="cfn-bedrock-prompt-textprompttemplateconfiguration-cachepoint"></a>
 A cache checkpoint within a template configuration.
+*Required*: No
+*Type*: [CachePointBlock](aws-properties-bedrock-prompt-cachepointblock.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CachePointBlock](aws-properties-bedrock-prompt-cachepointblock.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputVariables`
-
+`InputVariables`  <a name="cfn-bedrock-prompt-textprompttemplateconfiguration-inputvariables"></a>
 An array of the variables in the prompt template.
+*Required*: No
+*Type*: Array of [PromptInputVariable](aws-properties-bedrock-prompt-promptinputvariable.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PromptInputVariable](aws-properties-bedrock-prompt-promptinputvariable.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Text`
-
+`Text`  <a name="cfn-bedrock-prompt-textprompttemplateconfiguration-text"></a>
 The message for the prompt.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextS3Location`
-
+`TextS3Location`  <a name="cfn-bedrock-prompt-textprompttemplateconfiguration-texts3location"></a>
 The Amazon S3location of the prompt text.
-
-_Required_: No
-
-_Type_: [TextS3Location](aws-properties-bedrock-prompt-texts3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SystemContentBlock
-
-TextS3Location
+*Required*: No
+*Type*: [TextS3Location](aws-properties-bedrock-prompt-texts3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

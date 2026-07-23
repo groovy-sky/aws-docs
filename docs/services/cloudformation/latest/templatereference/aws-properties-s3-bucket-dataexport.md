@@ -2,72 +2,55 @@
 title: "AWS::S3::Bucket DataExport"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket DataExport
+<a name="aws-properties-s3-bucket-dataexport"></a>
 
-Specifies how data related to the storage class analysis for an Amazon S3 bucket should be
-exported.
+Specifies how data related to the storage class analysis for an Amazon S3 bucket should be exported.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-dataexport-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-dataexport-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destination" : Destination,
-  "OutputSchemaVersion" : String
+  "[Destination](#cfn-s3-bucket-dataexport-destination)" : {{Destination}},
+  "[OutputSchemaVersion](#cfn-s3-bucket-dataexport-outputschemaversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-dataexport-syntax.yaml"></a>
 
-```yaml
-
-  Destination:
-    Destination
-  OutputSchemaVersion: String
-
+```
+  [Destination](#cfn-s3-bucket-dataexport-destination): {{
+    Destination}}
+  [OutputSchemaVersion](#cfn-s3-bucket-dataexport-outputschemaversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-dataexport-properties"></a>
 
-`Destination`
-
+`Destination`  <a name="cfn-s3-bucket-dataexport-destination"></a>
 The place to store the data for an analysis.
+*Required*: Yes
+*Type*: [Destination](aws-properties-s3-bucket-destination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Destination](aws-properties-s3-bucket-destination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputSchemaVersion`
-
+`OutputSchemaVersion`  <a name="cfn-s3-bucket-dataexport-outputschemaversion"></a>
 The version of the output schema to use when exporting data. Must be `V_1`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `V_1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `V_1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- AWS::S3::Bucket [Examples](../userguide/aws-properties-s3-bucket.md#aws-properties-s3-bucket--examples)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CorsRule
-
-DefaultRetention
+<a name="aws-properties-s3-bucket-dataexport--seealso"></a>
++ AWS::S3::Bucket [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket--examples)
 
 All content copied from https://docs.aws.amazon.com/.

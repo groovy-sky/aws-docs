@@ -2,117 +2,79 @@
 title: "AWS::EntityResolution::MatchingWorkflow OutputSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow OutputSource
+<a name="aws-properties-entityresolution-matchingworkflow-outputsource"></a>
 
-A list of `OutputAttribute` objects, each of which have the fields
-`Name` and `Hashed`. Each of these objects selects a column to be
-included in the output table, and whether the values of the column should be hashed.
+A list of `OutputAttribute` objects, each of which have the fields `Name` and `Hashed`. Each of these objects selects a column to be included in the output table, and whether the values of the column should be hashed.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-outputsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-outputsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplyNormalization" : Boolean,
-  "CustomerProfilesIntegrationConfig" : CustomerProfilesIntegrationConfig,
-  "KMSArn" : String,
-  "Output" : [ OutputAttribute, ... ],
-  "OutputS3Path" : String
+  "[ApplyNormalization](#cfn-entityresolution-matchingworkflow-outputsource-applynormalization)" : {{Boolean}},
+  "[CustomerProfilesIntegrationConfig](#cfn-entityresolution-matchingworkflow-outputsource-customerprofilesintegrationconfig)" : {{CustomerProfilesIntegrationConfig}},
+  "[KMSArn](#cfn-entityresolution-matchingworkflow-outputsource-kmsarn)" : {{String}},
+  "[Output](#cfn-entityresolution-matchingworkflow-outputsource-output)" : {{[ OutputAttribute, ... ]}},
+  "[OutputS3Path](#cfn-entityresolution-matchingworkflow-outputsource-outputs3path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-outputsource-syntax.yaml"></a>
 
-```yaml
-
-  ApplyNormalization: Boolean
-  CustomerProfilesIntegrationConfig:
-    CustomerProfilesIntegrationConfig
-  KMSArn: String
-  Output:
-    - OutputAttribute
-  OutputS3Path: String
-
+```
+  [ApplyNormalization](#cfn-entityresolution-matchingworkflow-outputsource-applynormalization): {{Boolean}}
+  [CustomerProfilesIntegrationConfig](#cfn-entityresolution-matchingworkflow-outputsource-customerprofilesintegrationconfig): {{
+    CustomerProfilesIntegrationConfig}}
+  [KMSArn](#cfn-entityresolution-matchingworkflow-outputsource-kmsarn): {{String}}
+  [Output](#cfn-entityresolution-matchingworkflow-outputsource-output): {{
+    - OutputAttribute}}
+  [OutputS3Path](#cfn-entityresolution-matchingworkflow-outputsource-outputs3path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-outputsource-properties"></a>
 
-`ApplyNormalization`
+`ApplyNormalization`  <a name="cfn-entityresolution-matchingworkflow-outputsource-applynormalization"></a>
+Normalizes the attributes defined in the schema in the input data. For example, if an attribute has an `AttributeType` of `PHONE_NUMBER`, and the data in the input table is in a format of 1234567890, AWS Entity Resolution will normalize this field in the output to (123)-456-7890.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Normalizes the attributes defined in the schema in the input data. For example, if an
-attribute has an `AttributeType` of `PHONE_NUMBER`, and the data in
-the input table is in a format of 1234567890, AWS Entity Resolution will normalize this field
-in the output to (123)-456-7890.
+`CustomerProfilesIntegrationConfig`  <a name="cfn-entityresolution-matchingworkflow-outputsource-customerprofilesintegrationconfig"></a>
+Specifies the Customer Profiles integration configuration for sending matched output directly to Customer Profiles. When configured, AWS Entity Resolution automatically creates and updates customer profiles based on match clusters, eliminating the need for manual Amazon S3 integration setup.
+*Required*: No
+*Type*: [CustomerProfilesIntegrationConfig](aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomerProfilesIntegrationConfig`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: [CustomerProfilesIntegrationConfig](aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KMSArn`
-
+`KMSArn`  <a name="cfn-entityresolution-matchingworkflow-outputsource-kmsarn"></a>
 Customer KMS ARN for encryption at rest. If not provided, system will use an AWS Entity Resolution managed KMS key.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn):kms:.*:[0-9]+:.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Output`  <a name="cfn-entityresolution-matchingworkflow-outputsource-output"></a>
+A list of `OutputAttribute` objects, each of which have the fields `Name` and `Hashed`. Each of these objects selects a column to be included in the output table, and whether the values of the column should be hashed.
+*Required*: Yes
+*Type*: Array of [OutputAttribute](aws-properties-entityresolution-matchingworkflow-outputattribute.md)
+*Minimum*: `0`
+*Maximum*: `750`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn):kms:.*:[0-9]+:.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Output`
-
-A list of `OutputAttribute` objects, each of which have the fields
-`Name` and `Hashed`. Each of these objects selects a column to be
-included in the output table, and whether the values of the column should be hashed.
-
-_Required_: Yes
-
-_Type_: Array of [OutputAttribute](aws-properties-entityresolution-matchingworkflow-outputattribute.md)
-
-_Minimum_: `0`
-
-_Maximum_: `750`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputS3Path`
-
+`OutputS3Path`  <a name="cfn-entityresolution-matchingworkflow-outputsource-outputs3path"></a>
 The S3 path to which AWS Entity Resolution will write the output table.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^s3://([^/]+)/?(.*?([^/]+)/?)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputAttribute
-
-ProviderProperties
+*Required*: No
+*Type*: String
+*Pattern*: `^s3://([^/]+)/?(.*?([^/]+)/?)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

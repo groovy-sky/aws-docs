@@ -2,78 +2,53 @@
 title: "AWS::KinesisAnalyticsV2::Application Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application Tag
+<a name="aws-properties-kinesisanalyticsv2-application-tag"></a>
 
-A key-value pair (the value is optional) that you can define and assign to Amazon resources.
-If you specify a tag that already exists, the tag value is replaced with the value that you
-specify in the request. Note that
-the maximum number of application tags includes system tags. The maximum number of user-defined
-application tags is 50.
-For more information, see
-[Using Tagging](../../../kinesisanalytics/latest/java/how-tagging.md).
+A key-value pair (the value is optional) that you can define and assign to Amazon resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see [Using Tagging](https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-tagging.html).
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-kinesisanalyticsv2-application-tag-key)" : {{String}},
+  "[Value](#cfn-kinesisanalyticsv2-application-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-kinesisanalyticsv2-application-tag-key): {{String}}
+  [Value](#cfn-kinesisanalyticsv2-application-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-kinesisanalyticsv2-application-tag-key"></a>
 The key of the key-value tag.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-kinesisanalyticsv2-application-tag-value"></a>
 The value of the key-value tag. The value is optional.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SqlApplicationConfiguration
-
-VpcConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

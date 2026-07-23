@@ -2,85 +2,62 @@
 title: "AWS::Connect::InstanceStorageConfig S3Config"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::InstanceStorageConfig S3Config
+<a name="aws-properties-connect-instancestorageconfig-s3config"></a>
 
 Information about the Amazon Simple Storage Service (Amazon S3) storage type.
 
 ## Syntax
+<a name="aws-properties-connect-instancestorageconfig-s3config-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-instancestorageconfig-s3config-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "BucketPrefix" : String,
-  "EncryptionConfig" : EncryptionConfig
+  "[BucketName](#cfn-connect-instancestorageconfig-s3config-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-connect-instancestorageconfig-s3config-bucketprefix)" : {{String}},
+  "[EncryptionConfig](#cfn-connect-instancestorageconfig-s3config-encryptionconfig)" : {{EncryptionConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-instancestorageconfig-s3config-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  BucketPrefix: String
-  EncryptionConfig:
-    EncryptionConfig
-
+```
+  [BucketName](#cfn-connect-instancestorageconfig-s3config-bucketname): {{String}}
+  [BucketPrefix](#cfn-connect-instancestorageconfig-s3config-bucketprefix): {{String}}
+  [EncryptionConfig](#cfn-connect-instancestorageconfig-s3config-encryptionconfig): {{
+    EncryptionConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-instancestorageconfig-s3config-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-connect-instancestorageconfig-s3config-bucketname"></a>
 The S3 bucket name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketPrefix`
-
+`BucketPrefix`  <a name="cfn-connect-instancestorageconfig-s3config-bucketprefix"></a>
 The S3 bucket prefix.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionConfig`
-
+`EncryptionConfig`  <a name="cfn-connect-instancestorageconfig-s3config-encryptionconfig"></a>
 The Amazon S3 encryption configuration.
-
-_Required_: No
-
-_Type_: [EncryptionConfig](aws-properties-connect-instancestorageconfig-encryptionconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KinesisVideoStreamConfig
-
-AWS::Connect::IntegrationAssociation
+*Required*: No
+*Type*: [EncryptionConfig](aws-properties-connect-instancestorageconfig-encryptionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

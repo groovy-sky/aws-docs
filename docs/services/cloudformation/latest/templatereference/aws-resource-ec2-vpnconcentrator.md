@@ -2,96 +2,81 @@
 title: "AWS::EC2::VPNConcentrator"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPNConcentrator
+<a name="aws-resource-ec2-vpnconcentrator"></a>
 
 Describes a VPN concentrator.
 
 ## Syntax
+<a name="aws-resource-ec2-vpnconcentrator-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-vpnconcentrator-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VPNConcentrator",
   "Properties" : {
-      "Tags" : [ Tag, ... ],
-      "TransitGatewayId" : String,
-      "Type" : String
+      "[Tags](#cfn-ec2-vpnconcentrator-tags)" : {{[ Tag, ... ]}},
+      "[TransitGatewayId](#cfn-ec2-vpnconcentrator-transitgatewayid)" : {{String}},
+      "[Type](#cfn-ec2-vpnconcentrator-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-vpnconcentrator-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VPNConcentrator
 Properties:
-  Tags:
-    - Tag
-  TransitGatewayId: String
-  Type: String
-
+  [Tags](#cfn-ec2-vpnconcentrator-tags): {{
+    - Tag}}
+  [TransitGatewayId](#cfn-ec2-vpnconcentrator-transitgatewayid): {{String}}
+  [Type](#cfn-ec2-vpnconcentrator-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-vpnconcentrator-properties"></a>
 
-`Tags`
-
+`Tags`  <a name="cfn-ec2-vpnconcentrator-tags"></a>
 Any tags assigned to the VPN concentrator.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-vpnconcentrator-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-vpnconcentrator-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitGatewayId`
-
+`TransitGatewayId`  <a name="cfn-ec2-vpnconcentrator-transitgatewayid"></a>
 The ID of the transit gateway associated with the VPN concentrator.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-ec2-vpnconcentrator-type"></a>
 The type of VPN concentrator.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-vpnconcentrator-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-vpnconcentrator-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-vpnconcentrator-return-values-fn--getatt"></a>
 
-`TransitGatewayAttachmentId`
+####
+<a name="aws-resource-ec2-vpnconcentrator-return-values-fn--getatt-fn--getatt"></a>
 
+`TransitGatewayAttachmentId`  <a name="TransitGatewayAttachmentId-fn::getatt"></a>
 The ID of the transit gateway attachment for the VPN concentrator.
 
-`VpnConcentratorId`
-
+`VpnConcentratorId`  <a name="VpnConcentratorId-fn::getatt"></a>
 The ID of the VPN concentrator to associate with the VPN connection.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

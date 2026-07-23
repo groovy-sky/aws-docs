@@ -2,75 +2,52 @@
 title: "AWS::Connect::Rule Reference"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule Reference
+<a name="aws-properties-connect-rule-reference"></a>
 
-Information about the reference when the `referenceType` is
-`URL`. Otherwise, null. (Supports variable injection in the
-`Value` field.)
+Information about the reference when the `referenceType` is `URL`. Otherwise, null. (Supports variable injection in the `Value` field.)
 
 ## Syntax
+<a name="aws-properties-connect-rule-reference-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-reference-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "Value" : String
+  "[Type](#cfn-connect-rule-reference-type)" : {{String}},
+  "[Value](#cfn-connect-rule-reference-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-reference-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  Value: String
-
+```
+  [Type](#cfn-connect-rule-reference-type): {{String}}
+  [Value](#cfn-connect-rule-reference-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-reference-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-connect-rule-reference-type"></a>
 The type of the reference. `DATE` must be of type Epoch timestamp.
+*Allowed values*: `URL` \| `ATTACHMENT` \| `NUMBER` \| `STRING` \| `DATE` \| `EMAIL`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `URL | ATTACHMENT | NUMBER | STRING | DATE | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `URL` \| `ATTACHMENT` \|
-`NUMBER` \| `STRING` \| `DATE` \|
-`EMAIL`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `URL | ATTACHMENT | NUMBER | STRING | DATE | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-A valid value for the reference. For example, for a URL reference, a formatted URL
-that is displayed to an agent in the Contact Control Panel (CCP).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(/|https:)`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotificationRecipientType
-
-RuleTriggerEventSource
+`Value`  <a name="cfn-connect-rule-reference-value"></a>
+ A valid value for the reference. For example, for a URL reference, a formatted URL that is displayed to an agent in the Contact Control Panel (CCP).
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(/|https:)`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

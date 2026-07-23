@@ -2,118 +2,87 @@
 title: "AWS::QuickSight::Dashboard TableSideBorderOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TableSideBorderOptions
+<a name="aws-properties-quicksight-dashboard-tablesideborderoptions"></a>
 
 The side border options for a table.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-tablesideborderoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-tablesideborderoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bottom" : TableBorderOptions,
-  "InnerHorizontal" : TableBorderOptions,
-  "InnerVertical" : TableBorderOptions,
-  "Left" : TableBorderOptions,
-  "Right" : TableBorderOptions,
-  "Top" : TableBorderOptions
+  "[Bottom](#cfn-quicksight-dashboard-tablesideborderoptions-bottom)" : {{TableBorderOptions}},
+  "[InnerHorizontal](#cfn-quicksight-dashboard-tablesideborderoptions-innerhorizontal)" : {{TableBorderOptions}},
+  "[InnerVertical](#cfn-quicksight-dashboard-tablesideborderoptions-innervertical)" : {{TableBorderOptions}},
+  "[Left](#cfn-quicksight-dashboard-tablesideborderoptions-left)" : {{TableBorderOptions}},
+  "[Right](#cfn-quicksight-dashboard-tablesideborderoptions-right)" : {{TableBorderOptions}},
+  "[Top](#cfn-quicksight-dashboard-tablesideborderoptions-top)" : {{TableBorderOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-tablesideborderoptions-syntax.yaml"></a>
 
-```yaml
-
-  Bottom:
-    TableBorderOptions
-  InnerHorizontal:
-    TableBorderOptions
-  InnerVertical:
-    TableBorderOptions
-  Left:
-    TableBorderOptions
-  Right:
-    TableBorderOptions
-  Top:
-    TableBorderOptions
-
+```
+  [Bottom](#cfn-quicksight-dashboard-tablesideborderoptions-bottom): {{
+    TableBorderOptions}}
+  [InnerHorizontal](#cfn-quicksight-dashboard-tablesideborderoptions-innerhorizontal): {{
+    TableBorderOptions}}
+  [InnerVertical](#cfn-quicksight-dashboard-tablesideborderoptions-innervertical): {{
+    TableBorderOptions}}
+  [Left](#cfn-quicksight-dashboard-tablesideborderoptions-left): {{
+    TableBorderOptions}}
+  [Right](#cfn-quicksight-dashboard-tablesideborderoptions-right): {{
+    TableBorderOptions}}
+  [Top](#cfn-quicksight-dashboard-tablesideborderoptions-top): {{
+    TableBorderOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-tablesideborderoptions-properties"></a>
 
-`Bottom`
-
+`Bottom`  <a name="cfn-quicksight-dashboard-tablesideborderoptions-bottom"></a>
 The table border options of the bottom border.
+*Required*: No
+*Type*: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InnerHorizontal`
-
+`InnerHorizontal`  <a name="cfn-quicksight-dashboard-tablesideborderoptions-innerhorizontal"></a>
 The table border options of the inner horizontal border.
+*Required*: No
+*Type*: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InnerVertical`
-
+`InnerVertical`  <a name="cfn-quicksight-dashboard-tablesideborderoptions-innervertical"></a>
 The table border options of the inner vertical border.
+*Required*: No
+*Type*: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Left`
-
+`Left`  <a name="cfn-quicksight-dashboard-tablesideborderoptions-left"></a>
 The table border options of the left border.
+*Required*: No
+*Type*: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Right`
-
+`Right`  <a name="cfn-quicksight-dashboard-tablesideborderoptions-right"></a>
 The table border options of the right border.
+*Required*: No
+*Type*: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Top`
-
+`Top`  <a name="cfn-quicksight-dashboard-tablesideborderoptions-top"></a>
 The table border options of the top border.
-
-_Required_: No
-
-_Type_: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableRowConditionalFormatting
-
-TableSortConfiguration
+*Required*: No
+*Type*: [TableBorderOptions](aws-properties-quicksight-dashboard-tableborderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

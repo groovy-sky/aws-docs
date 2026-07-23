@@ -2,73 +2,66 @@
 title: "AWS::SSMGuiConnect::Preferences"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMGuiConnect::Preferences
+<a name="aws-resource-ssmguiconnect-preferences"></a>
 
-Specify new or changed connection recording preferences for
-your AWS Systems Manager GUI Connect connections.
+Specify new or changed connection recording preferences for your AWS Systems Manager GUI Connect connections.
 
 ## Syntax
+<a name="aws-resource-ssmguiconnect-preferences-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssmguiconnect-preferences-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSMGuiConnect::Preferences",
   "Properties" : {
-      "ConnectionRecordingPreferences" : ConnectionRecordingPreferences
+      "[ConnectionRecordingPreferences](#cfn-ssmguiconnect-preferences-connectionrecordingpreferences)" : {{ConnectionRecordingPreferences}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssmguiconnect-preferences-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSMGuiConnect::Preferences
 Properties:
-  ConnectionRecordingPreferences:
-    ConnectionRecordingPreferences
-
+  [ConnectionRecordingPreferences](#cfn-ssmguiconnect-preferences-connectionrecordingpreferences): {{
+    ConnectionRecordingPreferences}}
 ```
 
 ## Properties
+<a name="aws-resource-ssmguiconnect-preferences-properties"></a>
 
-`ConnectionRecordingPreferences`
-
+`ConnectionRecordingPreferences`  <a name="cfn-ssmguiconnect-preferences-connectionrecordingpreferences"></a>
 The set of preferences used for recording RDP connections in the requesting AWS account and AWS Region. This includes details such as which S3 bucket recordings are stored in.
-
-_Required_: No
-
-_Type_: [ConnectionRecordingPreferences](aws-properties-ssmguiconnect-preferences-connectionrecordingpreferences.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [ConnectionRecordingPreferences](aws-properties-ssmguiconnect-preferences-connectionrecordingpreferences.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ssmguiconnect-preferences-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ssmguiconnect-preferences-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ssmguiconnect-preferences-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AccountId`
+####
+<a name="aws-resource-ssmguiconnect-preferences-return-values-fn--getatt-fn--getatt"></a>
 
+`AccountId`  <a name="AccountId-fn::getatt"></a>
 The primary identifier for the AWS CloudFormation resource.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Systems Manager GUI Connect
-
-ConnectionRecordingPreferences
 
 All content copied from https://docs.aws.amazon.com/.

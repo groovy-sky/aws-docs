@@ -2,78 +2,58 @@
 title: "AWS::MediaTailor::LiveSource HttpPackageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::LiveSource HttpPackageConfiguration
+<a name="aws-properties-mediatailor-livesource-httppackageconfiguration"></a>
 
 The HTTP package configuration properties for the requested VOD source.
 
 ## Syntax
+<a name="aws-properties-mediatailor-livesource-httppackageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-livesource-httppackageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Path" : String,
-  "SourceGroup" : String,
-  "Type" : String
+  "[Path](#cfn-mediatailor-livesource-httppackageconfiguration-path)" : {{String}},
+  "[SourceGroup](#cfn-mediatailor-livesource-httppackageconfiguration-sourcegroup)" : {{String}},
+  "[Type](#cfn-mediatailor-livesource-httppackageconfiguration-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-livesource-httppackageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Path: String
-  SourceGroup: String
-  Type: String
-
+```
+  [Path](#cfn-mediatailor-livesource-httppackageconfiguration-path): {{String}}
+  [SourceGroup](#cfn-mediatailor-livesource-httppackageconfiguration-sourcegroup): {{String}}
+  [Type](#cfn-mediatailor-livesource-httppackageconfiguration-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-livesource-httppackageconfiguration-properties"></a>
 
-`Path`
-
+`Path`  <a name="cfn-mediatailor-livesource-httppackageconfiguration-path"></a>
 The relative path to the URL for this VOD source. This is combined with `SourceLocation::HttpConfiguration::BaseUrl` to form a valid URL.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceGroup`
-
+`SourceGroup`  <a name="cfn-mediatailor-livesource-httppackageconfiguration-sourcegroup"></a>
 The name of the source group. This has to match one of the `Channel::Outputs::SourceGroup`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-mediatailor-livesource-httppackageconfiguration-type"></a>
 The streaming protocol for this package configuration. Supported values are `HLS` and `DASH`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DASH | HLS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaTailor::LiveSource
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DASH | HLS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,92 +2,69 @@
 title: "AWS::DataZone::PolicyGrant PolicyGrantPrincipal"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::PolicyGrant PolicyGrantPrincipal
+<a name="aws-properties-datazone-policygrant-policygrantprincipal"></a>
 
 The policy grant principal.
 
 ## Syntax
+<a name="aws-properties-datazone-policygrant-policygrantprincipal-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-policygrant-policygrantprincipal-syntax.json"></a>
 
-```json
-
+```
 {
-  "DomainUnit" : DomainUnitPolicyGrantPrincipal,
-  "Group" : GroupPolicyGrantPrincipal,
-  "Project" : ProjectPolicyGrantPrincipal,
-  "User" : UserPolicyGrantPrincipal
+  "[DomainUnit](#cfn-datazone-policygrant-policygrantprincipal-domainunit)" : {{DomainUnitPolicyGrantPrincipal}},
+  "[Group](#cfn-datazone-policygrant-policygrantprincipal-group)" : {{GroupPolicyGrantPrincipal}},
+  "[Project](#cfn-datazone-policygrant-policygrantprincipal-project)" : {{ProjectPolicyGrantPrincipal}},
+  "[User](#cfn-datazone-policygrant-policygrantprincipal-user)" : {{UserPolicyGrantPrincipal}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-policygrant-policygrantprincipal-syntax.yaml"></a>
 
-```yaml
-
-  DomainUnit:
-    DomainUnitPolicyGrantPrincipal
-  Group:
-    GroupPolicyGrantPrincipal
-  Project:
-    ProjectPolicyGrantPrincipal
-  User:
-    UserPolicyGrantPrincipal
-
+```
+  [DomainUnit](#cfn-datazone-policygrant-policygrantprincipal-domainunit): {{
+    DomainUnitPolicyGrantPrincipal}}
+  [Group](#cfn-datazone-policygrant-policygrantprincipal-group): {{
+    GroupPolicyGrantPrincipal}}
+  [Project](#cfn-datazone-policygrant-policygrantprincipal-project): {{
+    ProjectPolicyGrantPrincipal}}
+  [User](#cfn-datazone-policygrant-policygrantprincipal-user): {{
+    UserPolicyGrantPrincipal}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-policygrant-policygrantprincipal-properties"></a>
 
-`DomainUnit`
-
+`DomainUnit`  <a name="cfn-datazone-policygrant-policygrantprincipal-domainunit"></a>
 The domain unit of the policy grant principal.
+*Required*: No
+*Type*: [DomainUnitPolicyGrantPrincipal](aws-properties-datazone-policygrant-domainunitpolicygrantprincipal.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DomainUnitPolicyGrantPrincipal](aws-properties-datazone-policygrant-domainunitpolicygrantprincipal.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Group`
-
+`Group`  <a name="cfn-datazone-policygrant-policygrantprincipal-group"></a>
 The group of the policy grant principal.
+*Required*: No
+*Type*: [GroupPolicyGrantPrincipal](aws-properties-datazone-policygrant-grouppolicygrantprincipal.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [GroupPolicyGrantPrincipal](aws-properties-datazone-policygrant-grouppolicygrantprincipal.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Project`
-
+`Project`  <a name="cfn-datazone-policygrant-policygrantprincipal-project"></a>
 The project of the policy grant principal.
+*Required*: No
+*Type*: [ProjectPolicyGrantPrincipal](aws-properties-datazone-policygrant-projectpolicygrantprincipal.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ProjectPolicyGrantPrincipal](aws-properties-datazone-policygrant-projectpolicygrantprincipal.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`User`
-
+`User`  <a name="cfn-datazone-policygrant-policygrantprincipal-user"></a>
 The user of the policy grant principal.
-
-_Required_: No
-
-_Type_: [UserPolicyGrantPrincipal](aws-properties-datazone-policygrant-userpolicygrantprincipal.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyGrantDetail
-
-ProjectGrantFilter
+*Required*: No
+*Type*: [UserPolicyGrantPrincipal](aws-properties-datazone-policygrant-userpolicygrantprincipal.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

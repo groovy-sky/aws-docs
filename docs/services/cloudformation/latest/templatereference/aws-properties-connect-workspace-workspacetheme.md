@@ -2,66 +2,51 @@
 title: "AWS::Connect::Workspace WorkspaceTheme"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Workspace WorkspaceTheme
+<a name="aws-properties-connect-workspace-workspacetheme"></a>
 
 Contains theme configuration for a workspace, supporting both light and dark modes.
 
 ## Syntax
+<a name="aws-properties-connect-workspace-workspacetheme-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-workspace-workspacetheme-syntax.json"></a>
 
-```json
-
+```
 {
-  "Dark" : WorkspaceThemeConfig,
-  "Light" : WorkspaceThemeConfig
+  "[Dark](#cfn-connect-workspace-workspacetheme-dark)" : {{WorkspaceThemeConfig}},
+  "[Light](#cfn-connect-workspace-workspacetheme-light)" : {{WorkspaceThemeConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-workspace-workspacetheme-syntax.yaml"></a>
 
-```yaml
-
-  Dark:
-    WorkspaceThemeConfig
-  Light:
-    WorkspaceThemeConfig
-
+```
+  [Dark](#cfn-connect-workspace-workspacetheme-dark): {{
+    WorkspaceThemeConfig}}
+  [Light](#cfn-connect-workspace-workspacetheme-light): {{
+    WorkspaceThemeConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-workspace-workspacetheme-properties"></a>
 
-`Dark`
-
+`Dark`  <a name="cfn-connect-workspace-workspacetheme-dark"></a>
 The theme configuration for dark mode.
+*Required*: No
+*Type*: [WorkspaceThemeConfig](aws-properties-connect-workspace-workspacethemeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [WorkspaceThemeConfig](aws-properties-connect-workspace-workspacethemeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Light`
-
+`Light`  <a name="cfn-connect-workspace-workspacetheme-light"></a>
 The theme configuration for light mode.
-
-_Required_: No
-
-_Type_: [WorkspaceThemeConfig](aws-properties-connect-workspace-workspacethemeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WorkspacePage
-
-WorkspaceThemeConfig
+*Required*: No
+*Type*: [WorkspaceThemeConfig](aws-properties-connect-workspace-workspacethemeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

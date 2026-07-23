@@ -2,84 +2,78 @@
 title: "AWS::ECR::RegistryPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::RegistryPolicy
+<a name="aws-resource-ecr-registrypolicy"></a>
 
-The `AWS::ECR::RegistryPolicy` resource creates or updates the permissions
-policy for a private registry.
+The `AWS::ECR::RegistryPolicy` resource creates or updates the permissions policy for a private registry.
 
-A private registry policy is used to specify permissions for another AWS account and is used when configuring cross-account replication. For
-more information, see [Registry\
-permissions](../../../amazonecr/latest/userguide/registry-permissions.md) in the _Amazon Elastic Container Registry User_
-_Guide_.
+A private registry policy is used to specify permissions for another AWS account and is used when configuring cross-account replication. For more information, see [Registry permissions](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-permissions.html) in the *Amazon Elastic Container Registry User Guide*.
 
 ## Syntax
+<a name="aws-resource-ecr-registrypolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ecr-registrypolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ECR::RegistryPolicy",
   "Properties" : {
-      "PolicyText" : Json
+      "[PolicyText](#cfn-ecr-registrypolicy-policytext)" : {{Json}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ecr-registrypolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ECR::RegistryPolicy
 Properties:
-  PolicyText: Json
-
+  [PolicyText](#cfn-ecr-registrypolicy-policytext): {{Json}}
 ```
 
 ## Properties
+<a name="aws-resource-ecr-registrypolicy-properties"></a>
 
-`PolicyText`
-
+`PolicyText`  <a name="cfn-ecr-registrypolicy-policytext"></a>
 The JSON policy text for your registry.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ecr-registrypolicy-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ecr-registrypolicy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RegistryId`
+####
+<a name="aws-resource-ecr-registrypolicy-return-values-fn--getatt-fn--getatt"></a>
 
+`RegistryId`  <a name="RegistryId-fn::getatt"></a>
 The account ID of the private registry the policy is associated with.
 
 ## Examples
+<a name="aws-resource-ecr-registrypolicy--examples"></a>
 
 ### Specify a registry policy for a private registry
+<a name="aws-resource-ecr-registrypolicy--examples--Specify_a_registry_policy_for_a_private_registry"></a>
 
-The following example specifies a private registry policy in
-`us-west-2` that grants permission for account
-`210987654321` to create repositories and replicate their
-contents to your private registry.
+The following example specifies a private registry policy in `us-west-2` that grants permission for account `210987654321` to create repositories and replicate their contents to your private registry.
 
 #### JSON
+<a name="aws-resource-ecr-registrypolicy--examples--Specify_a_registry_policy_for_a_private_registry--json"></a>
 
-```json
-
+```
 "TestRegistryPolicy": {
    "Type": "AWS::ECR::RegistryPolicy",
    "Properties": {
@@ -105,9 +99,9 @@ contents to your private registry.
 ```
 
 #### YAML
+<a name="aws-resource-ecr-registrypolicy--examples--Specify_a_registry_policy_for_a_private_registry--yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestRegistryPolicy:
     Type: 'AWS::ECR::RegistryPolicy'
@@ -124,11 +118,5 @@ Resources:
               - 'ecr:ReplicateImage'
             Resource: 'arn:aws:ecr:us-west-2:123456789012:repository/*'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECR::PullTimeUpdateExclusion
-
-AWS::ECR::RegistryScanningConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

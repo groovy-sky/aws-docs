@@ -2,56 +2,43 @@
 title: "AWS::BedrockAgentCore::OnlineEvaluationConfig SessionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OnlineEvaluationConfig SessionConfig
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig"></a>
 
-The session configuration that defines timeout settings for detecting when agent sessions are complete and ready for evaluation.
+ The session configuration that defines timeout settings for detecting when agent sessions are complete and ready for evaluation.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SessionTimeoutMinutes" : Integer
+  "[SessionTimeoutMinutes](#cfn-bedrockagentcore-onlineevaluationconfig-sessionconfig-sessiontimeoutminutes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig-syntax.yaml"></a>
 
-```yaml
-
-  SessionTimeoutMinutes: Integer
-
+```
+  [SessionTimeoutMinutes](#cfn-bedrockagentcore-onlineevaluationconfig-sessionconfig-sessiontimeoutminutes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig-properties"></a>
 
-`SessionTimeoutMinutes`
-
-The number of minutes of inactivity after which an agent session is considered complete and ready for evaluation.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `1440`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SamplingConfig
-
-Tag
+`SessionTimeoutMinutes`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-sessionconfig-sessiontimeoutminutes"></a>
+ The number of minutes of inactivity after which an agent session is considered complete and ready for evaluation.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `1440`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

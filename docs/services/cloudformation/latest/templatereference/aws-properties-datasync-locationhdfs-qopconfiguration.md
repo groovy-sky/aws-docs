@@ -2,74 +2,51 @@
 title: "AWS::DataSync::LocationHDFS QopConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationHDFS QopConfiguration
+<a name="aws-properties-datasync-locationhdfs-qopconfiguration"></a>
 
-The Quality of Protection (QOP) configuration specifies the Remote Procedure Call
-(RPC) and data transfer privacy settings configured on the Hadoop Distributed File
-System (HDFS) cluster.
+The Quality of Protection (QOP) configuration specifies the Remote Procedure Call (RPC) and data transfer privacy settings configured on the Hadoop Distributed File System (HDFS) cluster.
 
 ## Syntax
+<a name="aws-properties-datasync-locationhdfs-qopconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datasync-locationhdfs-qopconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataTransferProtection" : String,
-  "RpcProtection" : String
+  "[DataTransferProtection](#cfn-datasync-locationhdfs-qopconfiguration-datatransferprotection)" : {{String}},
+  "[RpcProtection](#cfn-datasync-locationhdfs-qopconfiguration-rpcprotection)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datasync-locationhdfs-qopconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DataTransferProtection: String
-  RpcProtection: String
-
+```
+  [DataTransferProtection](#cfn-datasync-locationhdfs-qopconfiguration-datatransferprotection): {{String}}
+  [RpcProtection](#cfn-datasync-locationhdfs-qopconfiguration-rpcprotection): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datasync-locationhdfs-qopconfiguration-properties"></a>
 
-`DataTransferProtection`
+`DataTransferProtection`  <a name="cfn-datasync-locationhdfs-qopconfiguration-datatransferprotection"></a>
+The data transfer protection setting configured on the HDFS cluster. This setting corresponds to your `dfs.data.transfer.protection` setting in the `hdfs-site.xml` file on your Hadoop cluster.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTHENTICATION | INTEGRITY | PRIVACY | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The data transfer protection setting configured on the HDFS cluster. This setting
-corresponds to your `dfs.data.transfer.protection` setting in the
-`hdfs-site.xml` file on your Hadoop cluster.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTHENTICATION | INTEGRITY | PRIVACY | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RpcProtection`
-
-The Remote Procedure Call (RPC) protection setting configured on the HDFS cluster.
-This setting corresponds to your `hadoop.rpc.protection` setting in your
-`core-site.xml` file on your Hadoop cluster.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTHENTICATION | INTEGRITY | PRIVACY | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NameNode
-
-Tag
+`RpcProtection`  <a name="cfn-datasync-locationhdfs-qopconfiguration-rpcprotection"></a>
+The Remote Procedure Call (RPC) protection setting configured on the HDFS cluster. This setting corresponds to your `hadoop.rpc.protection` setting in your `core-site.xml` file on your Hadoop cluster.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTHENTICATION | INTEGRITY | PRIVACY | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

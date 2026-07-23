@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard CustomActionFilterOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard CustomActionFilterOperation
+<a name="aws-properties-quicksight-dashboard-customactionfilteroperation"></a>
 
 The filter operation that filters data included in a visual or in an entire sheet.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-customactionfilteroperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-customactionfilteroperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "SelectedFieldsConfiguration" : FilterOperationSelectedFieldsConfiguration,
-  "TargetVisualsConfiguration" : FilterOperationTargetVisualsConfiguration
+  "[SelectedFieldsConfiguration](#cfn-quicksight-dashboard-customactionfilteroperation-selectedfieldsconfiguration)" : {{FilterOperationSelectedFieldsConfiguration}},
+  "[TargetVisualsConfiguration](#cfn-quicksight-dashboard-customactionfilteroperation-targetvisualsconfiguration)" : {{FilterOperationTargetVisualsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-customactionfilteroperation-syntax.yaml"></a>
 
-```yaml
-
-  SelectedFieldsConfiguration:
-    FilterOperationSelectedFieldsConfiguration
-  TargetVisualsConfiguration:
-    FilterOperationTargetVisualsConfiguration
-
+```
+  [SelectedFieldsConfiguration](#cfn-quicksight-dashboard-customactionfilteroperation-selectedfieldsconfiguration): {{
+    FilterOperationSelectedFieldsConfiguration}}
+  [TargetVisualsConfiguration](#cfn-quicksight-dashboard-customactionfilteroperation-targetvisualsconfiguration): {{
+    FilterOperationTargetVisualsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-customactionfilteroperation-properties"></a>
 
-`SelectedFieldsConfiguration`
-
+`SelectedFieldsConfiguration`  <a name="cfn-quicksight-dashboard-customactionfilteroperation-selectedfieldsconfiguration"></a>
 The configuration that chooses the fields to be filtered.
+*Required*: Yes
+*Type*: [FilterOperationSelectedFieldsConfiguration](aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [FilterOperationSelectedFieldsConfiguration](aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetVisualsConfiguration`
-
+`TargetVisualsConfiguration`  <a name="cfn-quicksight-dashboard-customactionfilteroperation-targetvisualsconfiguration"></a>
 The configuration that chooses the target visuals to be filtered.
-
-_Required_: Yes
-
-_Type_: [FilterOperationTargetVisualsConfiguration](aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CurrencyDisplayFormatConfiguration
-
-CustomActionNavigationOperation
+*Required*: Yes
+*Type*: [FilterOperationTargetVisualsConfiguration](aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

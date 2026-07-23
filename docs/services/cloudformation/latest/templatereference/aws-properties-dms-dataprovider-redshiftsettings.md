@@ -2,77 +2,57 @@
 title: "AWS::DMS::DataProvider RedshiftSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::DataProvider RedshiftSettings
+<a name="aws-properties-dms-dataprovider-redshiftsettings"></a>
 
 Provides information that defines an Amazon Redshift endpoint.
 
 ## Syntax
+<a name="aws-properties-dms-dataprovider-redshiftsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-dataprovider-redshiftsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatabaseName" : String,
-  "Port" : Integer,
-  "ServerName" : String
+  "[DatabaseName](#cfn-dms-dataprovider-redshiftsettings-databasename)" : {{String}},
+  "[Port](#cfn-dms-dataprovider-redshiftsettings-port)" : {{Integer}},
+  "[ServerName](#cfn-dms-dataprovider-redshiftsettings-servername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-dataprovider-redshiftsettings-syntax.yaml"></a>
 
-```yaml
-
-  DatabaseName: String
-  Port: Integer
-  ServerName: String
-
+```
+  [DatabaseName](#cfn-dms-dataprovider-redshiftsettings-databasename): {{String}}
+  [Port](#cfn-dms-dataprovider-redshiftsettings-port): {{Integer}}
+  [ServerName](#cfn-dms-dataprovider-redshiftsettings-servername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-dataprovider-redshiftsettings-properties"></a>
 
-`DatabaseName`
+`DatabaseName`  <a name="cfn-dms-dataprovider-redshiftsettings-databasename"></a>
+The name of the Amazon Redshift data warehouse (service) that you are working with.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the Amazon Redshift data warehouse (service) that you are working
-with.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-dms-dataprovider-redshiftsettings-port"></a>
 The port number for Amazon Redshift. The default value is 5439.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerName`
-
+`ServerName`  <a name="cfn-dms-dataprovider-redshiftsettings-servername"></a>
 The name of the Amazon Redshift cluster you are using.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PostgreSqlSettings
-
-Settings
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,53 @@
 title: "AWS::QuickSight::Analysis ImageStaticFile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ImageStaticFile
+<a name="aws-properties-quicksight-analysis-imagestaticfile"></a>
 
 A static file that contains an image.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-imagestaticfile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-imagestaticfile-syntax.json"></a>
 
-```json
-
+```
 {
-  "Source" : StaticFileSource,
-  "StaticFileId" : String
+  "[Source](#cfn-quicksight-analysis-imagestaticfile-source)" : {{StaticFileSource}},
+  "[StaticFileId](#cfn-quicksight-analysis-imagestaticfile-staticfileid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-imagestaticfile-syntax.yaml"></a>
 
-```yaml
-
-  Source:
-    StaticFileSource
-  StaticFileId: String
-
+```
+  [Source](#cfn-quicksight-analysis-imagestaticfile-source): {{
+    StaticFileSource}}
+  [StaticFileId](#cfn-quicksight-analysis-imagestaticfile-staticfileid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-imagestaticfile-properties"></a>
 
-`Source`
-
+`Source`  <a name="cfn-quicksight-analysis-imagestaticfile-source"></a>
 The source of the image static file.
+*Required*: No
+*Type*: [StaticFileSource](aws-properties-quicksight-analysis-staticfilesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StaticFileSource](aws-properties-quicksight-analysis-staticfilesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticFileId`
-
+`StaticFileId`  <a name="cfn-quicksight-analysis-imagestaticfile-staticfileid"></a>
 The ID of the static file that contains an image.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageMenuOption
-
-InnerFilter
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

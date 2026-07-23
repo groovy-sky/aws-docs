@@ -2,72 +2,53 @@
 title: "AWS::CustomerProfiles::EventTrigger EventTriggerCondition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventTrigger EventTriggerCondition
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition"></a>
 
-Specifies the circumstances under which the event should trigger the
-destination.
+Specifies the circumstances under which the event should trigger the destination.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventTriggerDimensions" : [ EventTriggerDimension, ... ],
-  "LogicalOperator" : String
+  "[EventTriggerDimensions](#cfn-customerprofiles-eventtrigger-eventtriggercondition-eventtriggerdimensions)" : {{[ EventTriggerDimension, ... ]}},
+  "[LogicalOperator](#cfn-customerprofiles-eventtrigger-eventtriggercondition-logicaloperator)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition-syntax.yaml"></a>
 
-```yaml
-
-  EventTriggerDimensions:
-    - EventTriggerDimension
-  LogicalOperator: String
-
+```
+  [EventTriggerDimensions](#cfn-customerprofiles-eventtrigger-eventtriggercondition-eventtriggerdimensions): {{
+    - EventTriggerDimension}}
+  [LogicalOperator](#cfn-customerprofiles-eventtrigger-eventtriggercondition-logicaloperator): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition-properties"></a>
 
-`EventTriggerDimensions`
-
+`EventTriggerDimensions`  <a name="cfn-customerprofiles-eventtrigger-eventtriggercondition-eventtriggerdimensions"></a>
 A list of dimensions to be evaluated for the event.
+*Required*: Yes
+*Type*: Array of [EventTriggerDimension](aws-properties-customerprofiles-eventtrigger-eventtriggerdimension.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [EventTriggerDimension](aws-properties-customerprofiles-eventtrigger-eventtriggerdimension.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogicalOperator`
-
+`LogicalOperator`  <a name="cfn-customerprofiles-eventtrigger-eventtriggercondition-logicaloperator"></a>
 The operator used to combine multiple dimensions.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ANY | ALL | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CustomerProfiles::EventTrigger
-
-EventTriggerDimension
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ANY | ALL | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

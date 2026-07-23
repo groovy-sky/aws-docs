@@ -2,56 +2,44 @@
 title: "AWS::KinesisFirehose::DeliveryStream TableCreationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream TableCreationConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration"></a>
 
 The configuration to enable automatic table creation.
 
 Amazon Data Firehose is in preview release and is subject to change.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-kinesisfirehose-deliverystream-tablecreationconfiguration-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-kinesisfirehose-deliverystream-tablecreationconfiguration-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-tablecreationconfiguration-properties"></a>
 
-`Enabled`
-
-Specify whether you want to enable automatic table creation.
-
+`Enabled`  <a name="cfn-kinesisfirehose-deliverystream-tablecreationconfiguration-enabled"></a>
+ Specify whether you want to enable automatic table creation.
 Amazon Data Firehose is in preview release and is subject to change.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SplunkRetryOptions
-
-Tag
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

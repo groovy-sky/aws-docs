@@ -2,121 +2,84 @@
 title: "AWS::Pipes::Pipe PipeSourceRabbitMQBrokerParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeSourceRabbitMQBrokerParameters
+<a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters"></a>
 
 The parameters for using a Rabbit MQ broker as a source.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchSize" : Integer,
-  "Credentials" : MQBrokerAccessCredentials,
-  "MaximumBatchingWindowInSeconds" : Integer,
-  "QueueName" : String,
-  "VirtualHost" : String
+  "[BatchSize](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-batchsize)" : {{Integer}},
+  "[Credentials](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-credentials)" : {{MQBrokerAccessCredentials}},
+  "[MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-maximumbatchingwindowinseconds)" : {{Integer}},
+  "[QueueName](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-queuename)" : {{String}},
+  "[VirtualHost](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-virtualhost)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters-syntax.yaml"></a>
 
-```yaml
-
-  BatchSize: Integer
-  Credentials:
-    MQBrokerAccessCredentials
-  MaximumBatchingWindowInSeconds: Integer
-  QueueName: String
-  VirtualHost: String
-
+```
+  [BatchSize](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-batchsize): {{Integer}}
+  [Credentials](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-credentials): {{
+    MQBrokerAccessCredentials}}
+  [MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-maximumbatchingwindowinseconds): {{Integer}}
+  [QueueName](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-queuename): {{String}}
+  [VirtualHost](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-virtualhost): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters-properties"></a>
 
-`BatchSize`
-
+`BatchSize`  <a name="cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-batchsize"></a>
 The maximum number of records to include in each batch.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Credentials`
-
+`Credentials`  <a name="cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-credentials"></a>
 The credentials needed to access the resource.
+*Required*: Yes
+*Type*: [MQBrokerAccessCredentials](aws-properties-pipes-pipe-mqbrokeraccesscredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [MQBrokerAccessCredentials](aws-properties-pipes-pipe-mqbrokeraccesscredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumBatchingWindowInSeconds`
-
+`MaximumBatchingWindowInSeconds`  <a name="cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-maximumbatchingwindowinseconds"></a>
 The maximum length of a time to wait for events.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueueName`
-
+`QueueName`  <a name="cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-queuename"></a>
 The name of the destination queue to consume.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\s\S]*$`
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\s\S]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VirtualHost`
-
+`VirtualHost`  <a name="cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-virtualhost"></a>
 The name of the virtual host associated with the source broker.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-\/*:_+=.@-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeSourceParameters
-
-PipeSourceSelfManagedKafkaParameters
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-\/*:_+=.@-]*$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,87 +2,63 @@
 title: "AWS::QuickSight::DataSet GeoSpatialColumnGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet GeoSpatialColumnGroup
+<a name="aws-properties-quicksight-dataset-geospatialcolumngroup"></a>
 
 Geospatial column group that denotes a hierarchy.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-geospatialcolumngroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-geospatialcolumngroup-syntax.json"></a>
 
-```json
-
+```
 {
-  "Columns" : [ String, ... ],
-  "CountryCode" : String,
-  "Name" : String
+  "[Columns](#cfn-quicksight-dataset-geospatialcolumngroup-columns)" : {{[ String, ... ]}},
+  "[CountryCode](#cfn-quicksight-dataset-geospatialcolumngroup-countrycode)" : {{String}},
+  "[Name](#cfn-quicksight-dataset-geospatialcolumngroup-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-geospatialcolumngroup-syntax.yaml"></a>
 
-```yaml
-
-  Columns:
-    - String
-  CountryCode: String
-  Name: String
-
+```
+  [Columns](#cfn-quicksight-dataset-geospatialcolumngroup-columns): {{
+    - String}}
+  [CountryCode](#cfn-quicksight-dataset-geospatialcolumngroup-countrycode): {{String}}
+  [Name](#cfn-quicksight-dataset-geospatialcolumngroup-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-geospatialcolumngroup-properties"></a>
 
-`Columns`
-
+`Columns`  <a name="cfn-quicksight-dataset-geospatialcolumngroup-columns"></a>
 Columns in this hierarchy.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `127 | 16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `127 | 16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CountryCode`
-
+`CountryCode`  <a name="cfn-quicksight-dataset-geospatialcolumngroup-countrycode"></a>
 Country code.
+*Required*: No
+*Type*: String
+*Allowed values*: `US`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `US`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-dataset-geospatialcolumngroup-name"></a>
 A display name for the hierarchy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FiltersOperation
-
-ImportTableOperation
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

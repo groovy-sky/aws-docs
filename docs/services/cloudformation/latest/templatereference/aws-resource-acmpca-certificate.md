@@ -2,187 +2,128 @@
 title: "AWS::ACMPCA::Certificate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::Certificate
+<a name="aws-resource-acmpca-certificate"></a>
 
-The `AWS::ACMPCA::Certificate` resource is used to issue a certificate
-using your private certificate authority. For more information, see the [IssueCertificate](../../../../reference/privateca/latest/apireference/api-issuecertificate.md) action.
+The `AWS::ACMPCA::Certificate` resource is used to issue a certificate using your private certificate authority. For more information, see the [IssueCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_IssueCertificate.html) action.
 
 ## Syntax
+<a name="aws-resource-acmpca-certificate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-acmpca-certificate-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ACMPCA::Certificate",
   "Properties" : {
-      "ApiPassthrough" : ApiPassthrough,
-      "CertificateAuthorityArn" : String,
-      "CertificateSigningRequest" : String,
-      "SigningAlgorithm" : String,
-      "TemplateArn" : String,
-      "Validity" : Validity,
-      "ValidityNotBefore" : Validity
+      "[ApiPassthrough](#cfn-acmpca-certificate-apipassthrough)" : {{ApiPassthrough}},
+      "[CertificateAuthorityArn](#cfn-acmpca-certificate-certificateauthorityarn)" : {{String}},
+      "[CertificateSigningRequest](#cfn-acmpca-certificate-certificatesigningrequest)" : {{String}},
+      "[SigningAlgorithm](#cfn-acmpca-certificate-signingalgorithm)" : {{String}},
+      "[TemplateArn](#cfn-acmpca-certificate-templatearn)" : {{String}},
+      "[Validity](#cfn-acmpca-certificate-validity)" : {{Validity}},
+      "[ValidityNotBefore](#cfn-acmpca-certificate-validitynotbefore)" : {{Validity}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-acmpca-certificate-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ACMPCA::Certificate
 Properties:
-  ApiPassthrough:
-    ApiPassthrough
-  CertificateAuthorityArn: String
-  CertificateSigningRequest: String
-  SigningAlgorithm: String
-  TemplateArn: String
-  Validity:
-    Validity
-  ValidityNotBefore:
-    Validity
-
+  [ApiPassthrough](#cfn-acmpca-certificate-apipassthrough): {{
+    ApiPassthrough}}
+  [CertificateAuthorityArn](#cfn-acmpca-certificate-certificateauthorityarn): {{String}}
+  [CertificateSigningRequest](#cfn-acmpca-certificate-certificatesigningrequest): {{String}}
+  [SigningAlgorithm](#cfn-acmpca-certificate-signingalgorithm): {{String}}
+  [TemplateArn](#cfn-acmpca-certificate-templatearn): {{String}}
+  [Validity](#cfn-acmpca-certificate-validity): {{
+    Validity}}
+  [ValidityNotBefore](#cfn-acmpca-certificate-validitynotbefore): {{
+    Validity}}
 ```
 
 ## Properties
+<a name="aws-resource-acmpca-certificate-properties"></a>
 
-`ApiPassthrough`
+`ApiPassthrough`  <a name="cfn-acmpca-certificate-apipassthrough"></a>
+Specifies X.509 certificate information to be included in the issued certificate. An `APIPassthrough` or `APICSRPassthrough` template variant must be selected, or else this parameter is ignored.
+*Required*: No
+*Type*: [ApiPassthrough](aws-properties-acmpca-certificate-apipassthrough.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specifies X.509 certificate information to be included in the issued certificate. An
-`APIPassthrough` or `APICSRPassthrough` template variant must
-be selected, or else this parameter is ignored.
-
-_Required_: No
-
-_Type_: [ApiPassthrough](aws-properties-acmpca-certificate-apipassthrough.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CertificateAuthorityArn`
-
+`CertificateAuthorityArn`  <a name="cfn-acmpca-certificate-certificateauthorityarn"></a>
 The Amazon Resource Name (ARN) for the private CA issues the certificate.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CertificateSigningRequest`
-
+`CertificateSigningRequest`  <a name="cfn-acmpca-certificate-certificatesigningrequest"></a>
 The certificate signing request (CSR) for the certificate.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SigningAlgorithm`
-
+`SigningAlgorithm`  <a name="cfn-acmpca-certificate-signingalgorithm"></a>
 The name of the algorithm that will be used to sign the certificate to be issued.
+This parameter should not be confused with the `SigningAlgorithm` parameter used to sign a CSR in the `CreateCertificateAuthority` action.
+The specified signing algorithm family (RSA or ECDSA) must match the algorithm family of the CA's secret key.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SHA256WITHECDSA | SHA384WITHECDSA | SHA512WITHECDSA | SHA256WITHRSA | SHA384WITHRSA | SHA512WITHRSA | SM3WITHSM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-This parameter should not be confused with the `SigningAlgorithm` parameter
-used to sign a CSR in the `CreateCertificateAuthority` action.
+`TemplateArn`  <a name="cfn-acmpca-certificate-templatearn"></a>
+Specifies a custom configuration template to use when issuing a certificate. If this parameter is not provided, AWS Private CA defaults to the `EndEntityCertificate/V1` template. For more information about AWS Private CA templates, see [Using Templates](https://docs.aws.amazon.com/privateca/latest/userguide/UsingTemplates.html).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Note
-
-The specified signing algorithm family (RSA or ECDSA) must match the algorithm
-family of the CA's secret key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SHA256WITHECDSA | SHA384WITHECDSA | SHA512WITHECDSA | SHA256WITHRSA | SHA384WITHRSA | SHA512WITHRSA | SM3WITHSM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TemplateArn`
-
-Specifies a custom configuration template to use when issuing a certificate. If this
-parameter is not provided, AWS Private CA defaults to the
-`EndEntityCertificate/V1` template. For more information about AWS Private CA templates, see [Using Templates](../../../privateca/latest/userguide/usingtemplates.md).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Validity`
-
+`Validity`  <a name="cfn-acmpca-certificate-validity"></a>
 The period of time during which the certificate will be valid.
+*Required*: Yes
+*Type*: [Validity](aws-properties-acmpca-certificate-validity.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [Validity](aws-properties-acmpca-certificate-validity.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ValidityNotBefore`
-
-Information describing the start of the validity period of the certificate. This
-parameter sets the “Not Before" date for the certificate.
-
-By default, when issuing a certificate, AWS Private CA sets the "Not
-Before" date to the issuance time minus 60 minutes. This compensates for clock
-inconsistencies across computer systems. The `ValidityNotBefore` parameter
-can be used to customize the “Not Before” value.
-
-Unlike the `Validity` parameter, the `ValidityNotBefore`
-parameter is optional.
-
-The `ValidityNotBefore` value is expressed as an explicit date and time,
-using the `Validity` type value `ABSOLUTE`.
-
-_Required_: No
-
-_Type_: [Validity](aws-properties-acmpca-certificate-validity.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`ValidityNotBefore`  <a name="cfn-acmpca-certificate-validitynotbefore"></a>
+Information describing the start of the validity period of the certificate. This parameter sets the “Not Before" date for the certificate.
+By default, when issuing a certificate, AWS Private CA sets the "Not Before" date to the issuance time minus 60 minutes. This compensates for clock inconsistencies across computer systems. The `ValidityNotBefore` parameter can be used to customize the “Not Before” value.
+Unlike the `Validity` parameter, the `ValidityNotBefore` parameter is optional.
+The `ValidityNotBefore` value is expressed as an explicit date and time, using the `Validity` type value `ABSOLUTE`.
+*Required*: No
+*Type*: [Validity](aws-properties-acmpca-certificate-validity.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-acmpca-certificate-return-values"></a>
 
 ### Ref
+<a name="aws-resource-acmpca-certificate-return-values-ref"></a>
 
-This reference should not be used in CloudFormation templates. Instead, use
-`AWS::ACMPCA::Certificate.Arn` to identify a certificate, and use
-`AWS::ACMPCA::Certificate.CertificateAuthorityArn` to identify a
-certificate authority.
+This reference should not be used in CloudFormation templates. Instead, use `AWS::ACMPCA::Certificate.Arn` to identify a certificate, and use `AWS::ACMPCA::Certificate.CertificateAuthorityArn` to identify a certificate authority.
 
 ### Fn::GetAtt
+<a name="aws-resource-acmpca-certificate-return-values-fn--getatt"></a>
 
-The `Fn::GetAtt` intrinsic function returns a value for a specified
-attribute of this type. The following are the available attributes and sample return
-values.
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-acmpca-certificate-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the issued certificate.
 
-`Certificate`
-
+`Certificate`  <a name="Certificate-fn::getatt"></a>
 The issued Base64 PEM-encoded certificate.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Private Certificate Authority
-
-ApiPassthrough
 
 All content copied from https://docs.aws.amazon.com/.

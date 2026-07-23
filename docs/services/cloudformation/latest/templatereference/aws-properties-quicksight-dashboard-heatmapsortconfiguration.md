@@ -2,100 +2,73 @@
 title: "AWS::QuickSight::Dashboard HeatMapSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard HeatMapSortConfiguration
+<a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration"></a>
 
 The sort configuration of a heat map.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "HeatMapColumnItemsLimitConfiguration" : ItemsLimitConfiguration,
-  "HeatMapColumnSort" : [ FieldSortOptions, ... ],
-  "HeatMapRowItemsLimitConfiguration" : ItemsLimitConfiguration,
-  "HeatMapRowSort" : [ FieldSortOptions, ... ]
+  "[HeatMapColumnItemsLimitConfiguration](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnitemslimitconfiguration)" : {{ItemsLimitConfiguration}},
+  "[HeatMapColumnSort](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnsort)" : {{[ FieldSortOptions, ... ]}},
+  "[HeatMapRowItemsLimitConfiguration](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmaprowitemslimitconfiguration)" : {{ItemsLimitConfiguration}},
+  "[HeatMapRowSort](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmaprowsort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  HeatMapColumnItemsLimitConfiguration:
-    ItemsLimitConfiguration
-  HeatMapColumnSort:
-    - FieldSortOptions
-  HeatMapRowItemsLimitConfiguration:
-    ItemsLimitConfiguration
-  HeatMapRowSort:
-    - FieldSortOptions
-
+```
+  [HeatMapColumnItemsLimitConfiguration](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnitemslimitconfiguration): {{
+    ItemsLimitConfiguration}}
+  [HeatMapColumnSort](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnsort): {{
+    - FieldSortOptions}}
+  [HeatMapRowItemsLimitConfiguration](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmaprowitemslimitconfiguration): {{
+    ItemsLimitConfiguration}}
+  [HeatMapRowSort](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmaprowsort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration-properties"></a>
 
-`HeatMapColumnItemsLimitConfiguration`
-
+`HeatMapColumnItemsLimitConfiguration`  <a name="cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnitemslimitconfiguration"></a>
 The limit on the number of columns that are displayed in a heat map.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HeatMapColumnSort`
-
+`HeatMapColumnSort`  <a name="cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnsort"></a>
 The column sort configuration for heat map for columns that aren't a part of a field well.
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HeatMapRowItemsLimitConfiguration`
-
+`HeatMapRowItemsLimitConfiguration`  <a name="cfn-quicksight-dashboard-heatmapsortconfiguration-heatmaprowitemslimitconfiguration"></a>
 The limit on the number of rows that are displayed in a heat map.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HeatMapRowSort`
-
+`HeatMapRowSort`  <a name="cfn-quicksight-dashboard-heatmapsortconfiguration-heatmaprowsort"></a>
 The field sort configuration of the rows fields.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HeatMapFieldWells
-
-HeatMapVisual
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

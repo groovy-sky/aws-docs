@@ -2,164 +2,123 @@
 title: "AWS::Wisdom::AIAgent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent
+<a name="aws-resource-wisdom-aiagent"></a>
 
 Creates an Amazon Q in Connect AI Agent.
 
 ## Syntax
+<a name="aws-resource-wisdom-aiagent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-wisdom-aiagent-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Wisdom::AIAgent",
   "Properties" : {
-      "AssistantId" : String,
-      "Configuration" : AIAgentConfiguration,
-      "Description" : String,
-      "Name" : String,
-      "Tags" : {Key: Value, ...},
-      "Type" : String
+      "[AssistantId](#cfn-wisdom-aiagent-assistantid)" : {{String}},
+      "[Configuration](#cfn-wisdom-aiagent-configuration)" : {{AIAgentConfiguration}},
+      "[Description](#cfn-wisdom-aiagent-description)" : {{String}},
+      "[Name](#cfn-wisdom-aiagent-name)" : {{String}},
+      "[Tags](#cfn-wisdom-aiagent-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[Type](#cfn-wisdom-aiagent-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-wisdom-aiagent-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Wisdom::AIAgent
 Properties:
-  AssistantId: String
-  Configuration:
-    AIAgentConfiguration
-  Description: String
-  Name: String
-  Tags:
-    Key: Value
-  Type: String
-
+  [AssistantId](#cfn-wisdom-aiagent-assistantid): {{String}}
+  [Configuration](#cfn-wisdom-aiagent-configuration): {{
+    AIAgentConfiguration}}
+  [Description](#cfn-wisdom-aiagent-description): {{String}}
+  [Name](#cfn-wisdom-aiagent-name): {{String}}
+  [Tags](#cfn-wisdom-aiagent-tags): {{
+    {{Key}}: {{Value}}}}
+  [Type](#cfn-wisdom-aiagent-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-wisdom-aiagent-properties"></a>
 
-`AssistantId`
+`AssistantId`  <a name="cfn-wisdom-aiagent-assistantid"></a>
+The identifier of the Amazon Q in Connect assistant. Can be either the ID or the ARN. URLs cannot contain the ARN.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$|^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The identifier of the Amazon Q in Connect assistant. Can be either the ID or the ARN. URLs cannot contain the
-ARN.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$|^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Configuration`
-
+`Configuration`  <a name="cfn-wisdom-aiagent-configuration"></a>
 Configuration for the AI Agent.
+*Required*: Yes
+*Type*: [AIAgentConfiguration](aws-properties-wisdom-aiagent-aiagentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [AIAgentConfiguration](aws-properties-wisdom-aiagent-aiagentconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-wisdom-aiagent-description"></a>
 The description of the AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\s_.,-]+`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\s_.,-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-wisdom-aiagent-name"></a>
 The name of the AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\s_.,-]+`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\s_.,-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-wisdom-aiagent-tags"></a>
 The tags used to organize, track, or control access for this resource.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^(?!aws:)[a-zA-Z+-=._:/]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-wisdom-aiagent-type"></a>
 The type of the AI Agent.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MANUAL_SEARCH | ANSWER_RECOMMENDATION | SELF_SERVICE | EMAIL_RESPONSE | EMAIL_OVERVIEW | EMAIL_GENERATIVE_ANSWER | ORCHESTRATION | NOTE_TAKING | CASE_SUMMARIZATION`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MANUAL_SEARCH | ANSWER_RECOMMENDATION | SELF_SERVICE | EMAIL_RESPONSE | EMAIL_OVERVIEW | EMAIL_GENERATIVE_ANSWER | ORCHESTRATION | NOTE_TAKING | CASE_SUMMARIZATION`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-wisdom-aiagent-return-values"></a>
 
 ### Ref
+<a name="aws-resource-wisdom-aiagent-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-wisdom-aiagent-return-values-fn--getatt"></a>
 
-`AIAgentArn`
+####
+<a name="aws-resource-wisdom-aiagent-return-values-fn--getatt-fn--getatt"></a>
 
+`AIAgentArn`  <a name="AIAgentArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the AI agent.
 
-`AIAgentId`
-
+`AIAgentId`  <a name="AIAgentId-fn::getatt"></a>
 The identifier of the AI Agent.
 
-`AssistantArn`
-
+`AssistantArn`  <a name="AssistantArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Amazon Q in Connect assistant.
 
-`ModifiedTimeSeconds`
-
+`ModifiedTimeSeconds`  <a name="ModifiedTimeSeconds-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Connect Wisdom
-
-AIAgentConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

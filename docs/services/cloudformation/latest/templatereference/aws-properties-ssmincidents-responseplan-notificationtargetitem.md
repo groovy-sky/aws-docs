@@ -2,57 +2,43 @@
 title: "AWS::SSMIncidents::ResponsePlan NotificationTargetItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan NotificationTargetItem
+<a name="aws-properties-ssmincidents-responseplan-notificationtargetitem"></a>
 
-The Amazon SNS topic that's used by Amazon Q Developer in chat applications to notify the incidents chat
-channel.
+The Amazon SNS topic that's used by Amazon Q Developer in chat applications to notify the incidents chat channel.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-responseplan-notificationtargetitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-responseplan-notificationtargetitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "SnsTopicArn" : String
+  "[SnsTopicArn](#cfn-ssmincidents-responseplan-notificationtargetitem-snstopicarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-responseplan-notificationtargetitem-syntax.yaml"></a>
 
-```yaml
-
-  SnsTopicArn: String
-
+```
+  [SnsTopicArn](#cfn-ssmincidents-responseplan-notificationtargetitem-snstopicarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-responseplan-notificationtargetitem-properties"></a>
 
-`SnsTopicArn`
-
+`SnsTopicArn`  <a name="cfn-ssmincidents-responseplan-notificationtargetitem-snstopicarn"></a>
 The Amazon Resource Name (ARN) of the Amazon SNS topic.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-(cn|us-gov))?:sns:(([a-z]+-)+[0-9])?:([0-9]{12})?:[^.]+$`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Integration
-
-PagerDutyConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(-(cn|us-gov))?:sns:(([a-z]+-)+[0-9])?:([0-9]{12})?:[^.]+$`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,128 +2,110 @@
 title: "AWS::EC2::EIPAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EIPAssociation
+<a name="aws-resource-ec2-eipassociation"></a>
 
-Associates an Elastic IP address with an instance or a network interface. Before you can
-use an Elastic IP address, you must allocate it to your account. For more information about
-working with Elastic IP addresses, see [Elastic IP address concepts and rules](../../../vpc/latest/userguide/vpc-eips.md#vpc-eip-overview).
+Associates an Elastic IP address with an instance or a network interface. Before you can use an Elastic IP address, you must allocate it to your account. For more information about working with Elastic IP addresses, see [ Elastic IP address concepts and rules](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-eips.html#vpc-eip-overview).
 
-You must specify `AllocationId` and either `InstanceId`,
-`NetworkInterfaceId`, or `PrivateIpAddress`.
+You must specify `AllocationId` and either `InstanceId`, `NetworkInterfaceId`, or `PrivateIpAddress`.
 
 ## Syntax
+<a name="aws-resource-ec2-eipassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-eipassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::EIPAssociation",
   "Properties" : {
-      "AllocationId" : String,
-      "InstanceId" : String,
-      "NetworkInterfaceId" : String,
-      "PrivateIpAddress" : String
+      "[AllocationId](#cfn-ec2-eipassociation-allocationid)" : {{String}},
+      "[InstanceId](#cfn-ec2-eipassociation-instanceid)" : {{String}},
+      "[NetworkInterfaceId](#cfn-ec2-eipassociation-networkinterfaceid)" : {{String}},
+      "[PrivateIpAddress](#cfn-ec2-eipassociation-privateipaddress)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-eipassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::EIPAssociation
 Properties:
-  AllocationId: String
-  InstanceId: String
-  NetworkInterfaceId: String
-  PrivateIpAddress: String
-
+  [AllocationId](#cfn-ec2-eipassociation-allocationid): {{String}}
+  [InstanceId](#cfn-ec2-eipassociation-instanceid): {{String}}
+  [NetworkInterfaceId](#cfn-ec2-eipassociation-networkinterfaceid): {{String}}
+  [PrivateIpAddress](#cfn-ec2-eipassociation-privateipaddress): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-eipassociation-properties"></a>
 
-`AllocationId`
-
+`AllocationId`  <a name="cfn-ec2-eipassociation-allocationid"></a>
 The allocation ID. This is required.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
+`InstanceId`  <a name="cfn-ec2-eipassociation-instanceid"></a>
+The ID of the instance. The instance must have exactly one attached network interface. You can specify either the instance ID or the network interface ID, but not both.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InstanceId`
-
-The ID of the instance. The instance must have exactly one attached network interface.
-You can specify either the instance ID or the network interface ID, but not both.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="cfn-ec2-eipassociation-networkinterfaceid"></a>
 The ID of the network interface. If the instance has more than one network interface, you must specify a network interface ID.
-
 You can specify either the instance ID or the network interface ID, but not both.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrivateIpAddress`
-
+`PrivateIpAddress`  <a name="cfn-ec2-eipassociation-privateipaddress"></a>
 The primary or secondary private IP address to associate with the Elastic IP address. If no private IP address is specified, the Elastic IP address is associated with the primary private IP address.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-eipassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-eipassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the association.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-eipassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-eipassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the association.
 
 ## Examples
+<a name="aws-resource-ec2-eipassociation--examples"></a>
 
 ### Associate an Elastic IP address to an instance
+<a name="aws-resource-ec2-eipassociation--examples--Associate_an_Elastic_IP_address_to_an_instance"></a>
 
-The following example creates an Elastic IP address and a network interface,
-and associates the Elastic IP address with the network interface. The example
-uses the ID of an existing subnet and an example IP address from the subnet
-CIDR range.
+The following example creates an Elastic IP address and a network interface, and associates the Elastic IP address with the network interface. The example uses the ID of an existing subnet and an example IP address from the subnet CIDR range.
 
 #### JSON
+<a name="aws-resource-ec2-eipassociation--examples--Associate_an_Elastic_IP_address_to_an_instance--json"></a>
 
-```json
-
+```
   "Resources" : {
     "myEIP" : {
         "Type" : "AWS::EC2::EIP",
@@ -153,9 +135,9 @@ CIDR range.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-eipassociation--examples--Associate_an_Elastic_IP_address_to_an_instance--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myEIP:
     Type: AWS::EC2::EIP
@@ -172,11 +154,5 @@ Resources:
       AllocationId: !GetAtt myEIP.AllocationId
       NetworkInterfaceId: !Ref myENI
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::EnclaveCertificateIamRoleAssociation
 
 All content copied from https://docs.aws.amazon.com/.

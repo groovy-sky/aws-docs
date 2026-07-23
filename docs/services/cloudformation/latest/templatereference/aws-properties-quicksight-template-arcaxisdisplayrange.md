@@ -2,64 +2,49 @@
 title: "AWS::QuickSight::Template ArcAxisDisplayRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ArcAxisDisplayRange
+<a name="aws-properties-quicksight-template-arcaxisdisplayrange"></a>
 
 The arc axis range of a `GaugeChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-arcaxisdisplayrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-arcaxisdisplayrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Number,
-  "Min" : Number
+  "[Max](#cfn-quicksight-template-arcaxisdisplayrange-max)" : {{Number}},
+  "[Min](#cfn-quicksight-template-arcaxisdisplayrange-min)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-arcaxisdisplayrange-syntax.yaml"></a>
 
-```yaml
-
-  Max: Number
-  Min: Number
-
+```
+  [Max](#cfn-quicksight-template-arcaxisdisplayrange-max): {{Number}}
+  [Min](#cfn-quicksight-template-arcaxisdisplayrange-min): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-arcaxisdisplayrange-properties"></a>
 
-`Max`
-
+`Max`  <a name="cfn-quicksight-template-arcaxisdisplayrange-max"></a>
 The maximum value of the arc axis range.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
+`Min`  <a name="cfn-quicksight-template-arcaxisdisplayrange-min"></a>
 The minimum value of the arc axis range.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArcAxisConfiguration
-
-ArcConfiguration
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

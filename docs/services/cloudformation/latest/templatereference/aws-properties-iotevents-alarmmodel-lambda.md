@@ -2,70 +2,52 @@
 title: "AWS::IoTEvents::AlarmModel Lambda"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel Lambda
+<a name="aws-properties-iotevents-alarmmodel-lambda"></a>
 
-Calls a Lambda function, passing in information about the detector model instance and the
-event that triggered the action.
+Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
 
 ## Syntax
+<a name="aws-properties-iotevents-alarmmodel-lambda-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-alarmmodel-lambda-syntax.json"></a>
 
-```json
-
+```
 {
-  "FunctionArn" : String,
-  "Payload" : Payload
+  "[FunctionArn](#cfn-iotevents-alarmmodel-lambda-functionarn)" : {{String}},
+  "[Payload](#cfn-iotevents-alarmmodel-lambda-payload)" : {{Payload}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-alarmmodel-lambda-syntax.yaml"></a>
 
-```yaml
-
-  FunctionArn: String
-  Payload:
-    Payload
-
+```
+  [FunctionArn](#cfn-iotevents-alarmmodel-lambda-functionarn): {{String}}
+  [Payload](#cfn-iotevents-alarmmodel-lambda-payload): {{
+    Payload}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-alarmmodel-lambda-properties"></a>
 
-`FunctionArn`
-
+`FunctionArn`  <a name="cfn-iotevents-alarmmodel-lambda-functionarn"></a>
 The ARN of the Lambda function that is executed.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Payload`
-
+`Payload`  <a name="cfn-iotevents-alarmmodel-lambda-payload"></a>
 You can configure the action payload when you send a message to a Lambda function.
-
-_Required_: No
-
-_Type_: [Payload](aws-properties-iotevents-alarmmodel-payload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IotTopicPublish
-
-Payload
+*Required*: No
+*Type*: [Payload](aws-properties-iotevents-alarmmodel-payload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

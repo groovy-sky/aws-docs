@@ -2,74 +2,55 @@
 title: "AWS::MWAA::Environment NetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAA::Environment NetworkConfiguration
+<a name="aws-properties-mwaa-environment-networkconfiguration"></a>
 
-The VPC networking components used to secure and enable network traffic between the AWS resources for your environment. To learn more, see [About networking on Amazon MWAA](../../../mwaa/latest/userguide/networking-about.md).
+The VPC networking components used to secure and enable network traffic between the AWS resources for your environment. To learn more, see [About networking on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/networking-about.html).
 
 ## Syntax
+<a name="aws-properties-mwaa-environment-networkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mwaa-environment-networkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-mwaa-environment-networkconfiguration-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-mwaa-environment-networkconfiguration-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mwaa-environment-networkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-mwaa-environment-networkconfiguration-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-mwaa-environment-networkconfiguration-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-mwaa-environment-networkconfiguration-properties"></a>
 
-`SecurityGroupIds`
+`SecurityGroupIds`  <a name="cfn-mwaa-environment-networkconfiguration-securitygroupids"></a>
+A list of one or more security group IDs. Accepts up to 5 security group IDs. A security group must be attached to the same VPC as the subnets. To learn more, see [Security in your VPC on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-security.html).
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A list of one or more security group IDs. Accepts up to 5 security group IDs. A security group must be attached to the same VPC as the subnets. To learn more, see [Security in your VPC on Amazon MWAA](../../../mwaa/latest/userguide/vpc-security.md).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
-A list of subnet IDs. **Required** to create an environment. Must be private subnets in two different availability zones. A subnet must be attached to the same VPC as the security group. To learn more, see [About networking on Amazon MWAA](../../../mwaa/latest/userguide/networking-about.md).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `2`
-
-_Maximum_: `2`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModuleLoggingConfiguration
-
-Next
+`SubnetIds`  <a name="cfn-mwaa-environment-networkconfiguration-subnetids"></a>
+A list of subnet IDs. **Required** to create an environment. Must be private subnets in two different availability zones. A subnet must be attached to the same VPC as the security group. To learn more, see [About networking on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/networking-about.html).
+*Required*: No
+*Type*: Array of String
+*Minimum*: `2`
+*Maximum*: `2`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

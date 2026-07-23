@@ -2,225 +2,167 @@
 title: "AWS::SecurityHub::AutomationRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::AutomationRule
+<a name="aws-resource-securityhub-automationrule"></a>
 
-The `AWS::SecurityHub::AutomationRule` resource specifies an automation rule based on input parameters. For more information, see
-[Automation rules](../../../securityhub/latest/userguide/automation-rules.md) in the _AWS Security Hub CSPM User Guide_.
+ The `AWS::SecurityHub::AutomationRule` resource specifies an automation rule based on input parameters. For more information, see [Automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html) in the *AWS Security Hub CSPM User Guide*.
 
 ## Syntax
+<a name="aws-resource-securityhub-automationrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securityhub-automationrule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityHub::AutomationRule",
   "Properties" : {
-      "Actions" : [ AutomationRulesAction, ... ],
-      "Criteria" : AutomationRulesFindingFilters,
-      "Description" : String,
-      "IsTerminal" : Boolean,
-      "RuleName" : String,
-      "RuleOrder" : Integer,
-      "RuleStatus" : String,
-      "Tags" : {Key: Value, ...}
+      "[Actions](#cfn-securityhub-automationrule-actions)" : {{[ AutomationRulesAction, ... ]}},
+      "[Criteria](#cfn-securityhub-automationrule-criteria)" : {{AutomationRulesFindingFilters}},
+      "[Description](#cfn-securityhub-automationrule-description)" : {{String}},
+      "[IsTerminal](#cfn-securityhub-automationrule-isterminal)" : {{Boolean}},
+      "[RuleName](#cfn-securityhub-automationrule-rulename)" : {{String}},
+      "[RuleOrder](#cfn-securityhub-automationrule-ruleorder)" : {{Integer}},
+      "[RuleStatus](#cfn-securityhub-automationrule-rulestatus)" : {{String}},
+      "[Tags](#cfn-securityhub-automationrule-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securityhub-automationrule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityHub::AutomationRule
 Properties:
-  Actions:
-    - AutomationRulesAction
-  Criteria:
-    AutomationRulesFindingFilters
-  Description: String
-  IsTerminal: Boolean
-  RuleName: String
-  RuleOrder: Integer
-  RuleStatus: String
-  Tags:
-    Key: Value
-
+  [Actions](#cfn-securityhub-automationrule-actions): {{
+    - AutomationRulesAction}}
+  [Criteria](#cfn-securityhub-automationrule-criteria): {{
+    AutomationRulesFindingFilters}}
+  [Description](#cfn-securityhub-automationrule-description): {{String}}
+  [IsTerminal](#cfn-securityhub-automationrule-isterminal): {{Boolean}}
+  [RuleName](#cfn-securityhub-automationrule-rulename): {{String}}
+  [RuleOrder](#cfn-securityhub-automationrule-ruleorder): {{Integer}}
+  [RuleStatus](#cfn-securityhub-automationrule-rulestatus): {{String}}
+  [Tags](#cfn-securityhub-automationrule-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-securityhub-automationrule-properties"></a>
 
-`Actions`
+`Actions`  <a name="cfn-securityhub-automationrule-actions"></a>
+ One or more actions to update finding fields if a finding matches the conditions specified in `Criteria`.
+*Required*: Yes
+*Type*: Array of [AutomationRulesAction](aws-properties-securityhub-automationrule-automationrulesaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-One or more actions to update finding fields if a finding matches the conditions
-specified in `Criteria`.
+`Criteria`  <a name="cfn-securityhub-automationrule-criteria"></a>
+ A set of [AWS Security Finding Format (ASFF)](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html) finding field attributes and corresponding expected values that Security Hub CSPM uses to filter findings. If a rule is enabled and a finding matches the criteria specified in this parameter, Security Hub CSPM applies the rule action to the finding.
+*Required*: Yes
+*Type*: [AutomationRulesFindingFilters](aws-properties-securityhub-automationrule-automationrulesfindingfilters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Description`  <a name="cfn-securityhub-automationrule-description"></a>
+ A description of the rule.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [AutomationRulesAction](aws-properties-securityhub-automationrule-automationrulesaction.md)
+`IsTerminal`  <a name="cfn-securityhub-automationrule-isterminal"></a>
+Specifies whether a rule is the last to be applied with respect to a finding that matches the rule criteria. This is useful when a finding matches the criteria for multiple rules, and each rule has different actions. If a rule is terminal, Security Hub CSPM applies the rule action to a finding that matches the rule criteria and doesn't evaluate other rules for the finding. By default, a rule isn't terminal.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`RuleName`  <a name="cfn-securityhub-automationrule-rulename"></a>
+ The name of the rule.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1`
+`RuleOrder`  <a name="cfn-securityhub-automationrule-ruleorder"></a>
+An integer ranging from 1 to 1000 that represents the order in which the rule action is applied to findings. Security Hub CSPM applies rules with lower values for this parameter first.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RuleStatus`  <a name="cfn-securityhub-automationrule-rulestatus"></a>
+ Whether the rule is active after it is created. If this parameter is equal to `ENABLED`, Security Hub CSPM applies the rule to findings and finding updates after the rule is created.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Criteria`
-
-A set of [AWS Security Finding Format (ASFF)](../../../securityhub/latest/userguide/securityhub-findings-format.md) finding field attributes and corresponding expected values that
-Security Hub CSPM uses to filter findings. If a rule is enabled and a finding matches the criteria specified in
-this parameter, Security Hub CSPM applies the rule action to the finding.
-
-_Required_: Yes
-
-_Type_: [AutomationRulesFindingFilters](aws-properties-securityhub-automationrule-automationrulesfindingfilters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
-A description of the rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsTerminal`
-
-Specifies whether a rule is the last to be applied with respect to a finding that matches the rule criteria. This is useful when a finding
-matches the criteria for multiple rules, and each rule has different actions. If a rule is terminal, Security Hub CSPM applies the rule action to a finding that matches
-the rule criteria and doesn't evaluate other rules for the finding. By default, a rule isn't terminal.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleName`
-
-The name of the rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleOrder`
-
-An integer ranging from 1 to 1000 that represents the order in which the rule action is
-applied to findings. Security Hub CSPM applies rules with lower values for this parameter
-first.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleStatus`
-
-Whether the rule is active after it is created. If
-this parameter is equal to `ENABLED`, Security Hub CSPM applies the rule to findings
-and finding updates after the rule is created.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-User-defined tags associated with an automation rule.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9]{1,128}$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-securityhub-automationrule-tags"></a>
+ User-defined tags associated with an automation rule.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9]{1,128}$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-securityhub-automationrule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securityhub-automationrule-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `RuleArn`. For example, `arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`RuleArn`. For example, `arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-securityhub-automationrule-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-securityhub-automationrule-return-values-fn--getatt-fn--getatt"></a>
 
-A timestamp that indicates when the rule was created.
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
+ A timestamp that indicates when the rule was created.
+Uses the `date-time` format specified in [RFC 3339 section 5.6, Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6). The value cannot contain spaces. For example, `2020-03-22T13:22:13.933Z`.
 
-Uses the `date-time` format specified in [RFC 3339 section 5.6, Internet\
-Date/Time Format](https://tools.ietf.org/html/rfc3339). The value cannot contain spaces. For example,
-`2020-03-22T13:22:13.933Z`.
+`CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
+ The principal that created the rule. For example, `arn:aws:sts::123456789012:assumed-role/Developer-Role/JaneDoe`.
 
-`CreatedBy`
+`RuleArn`  <a name="RuleArn-fn::getatt"></a>
+ The Amazon Resource Name (ARN) of the automation rule that you create. For example, `arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
-The principal that created the rule. For example, `arn:aws:sts::123456789012:assumed-role/Developer-Role/JaneDoe`.
-
-`RuleArn`
-
-The Amazon Resource Name (ARN) of the automation rule that you create. For example, `arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
-
-`UpdatedAt`
-
-A timestamp that indicates when the rule was most recently updated.
-
-Uses the `date-time` format specified in [RFC 3339 section 5.6, Internet\
-Date/Time Format](https://tools.ietf.org/html/rfc3339). The value cannot contain spaces. For example,
-`2020-03-22T13:22:13.933Z`.
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
+ A timestamp that indicates when the rule was most recently updated.
+Uses the `date-time` format specified in [RFC 3339 section 5.6, Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6). The value cannot contain spaces. For example, `2020-03-22T13:22:13.933Z`.
 
 ## Examples
+<a name="aws-resource-securityhub-automationrule--examples"></a>
 
 The following examples demonstrate how to declare an `AWS::SecurityHub::AutomationRule` resource.
 
 ### Creating an automation rule
+<a name="aws-resource-securityhub-automationrule--examples--Creating_an_automation_rule"></a>
 
-This example creates a Security Hub CSPM automation rule. This example contains all available
-fields for `Actions` and `Criteria` for demonstration purposes.
+This example creates a Security Hub CSPM automation rule. This example contains all available fields for `Actions` and `Criteria` for demonstration purposes.
 
 #### JSON
+<a name="aws-resource-securityhub-automationrule--examples--Creating_an_automation_rule--json"></a>
 
-```json
-
+```
 {
   "Description": "Example template to create a Security Hub automation rule",
   "Resources": {
@@ -553,9 +495,9 @@ fields for `Actions` and `Criteria` for demonstration purposes.
 ```
 
 #### YAML
+<a name="aws-resource-securityhub-automationrule--examples--Creating_an_automation_rule--yaml"></a>
 
-```yaml
-
+```
 Description: Example template to create a Security Hub automation rule
 Resources:
   RuleWithCriteriaActionsTags:
@@ -734,11 +676,5 @@ Resources:
         sampleTag: sampleValue
         organizationUnit: pnw
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityHub::AggregatorV2
-
-AutomationRulesAction
 
 All content copied from https://docs.aws.amazon.com/.

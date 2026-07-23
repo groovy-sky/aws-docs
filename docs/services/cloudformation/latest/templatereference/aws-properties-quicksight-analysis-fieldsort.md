@@ -2,76 +2,54 @@
 title: "AWS::QuickSight::Analysis FieldSort"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis FieldSort
+<a name="aws-properties-quicksight-analysis-fieldsort"></a>
 
-The sort configuration for a field in a
-field well.
+The sort configuration for a field in a field well.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-fieldsort-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-fieldsort-syntax.json"></a>
 
-```json
-
+```
 {
-  "Direction" : String,
-  "FieldId" : String
+  "[Direction](#cfn-quicksight-analysis-fieldsort-direction)" : {{String}},
+  "[FieldId](#cfn-quicksight-analysis-fieldsort-fieldid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-fieldsort-syntax.yaml"></a>
 
-```yaml
-
-  Direction: String
-  FieldId: String
-
+```
+  [Direction](#cfn-quicksight-analysis-fieldsort-direction): {{String}}
+  [FieldId](#cfn-quicksight-analysis-fieldsort-fieldid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-fieldsort-properties"></a>
 
-`Direction`
+`Direction`  <a name="cfn-quicksight-analysis-fieldsort-direction"></a>
+The sort direction. Choose one of the following options:
++ `ASC`: Ascending
++ `DESC`: Descending
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ASC | DESC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The sort direction. Choose one of the following
-options:
-
-- `ASC`: Ascending
-
-- `DESC`: Descending
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ASC | DESC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-analysis-fieldsort-fieldid"></a>
 The sort configuration target field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldSeriesItem
-
-FieldSortOptions
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

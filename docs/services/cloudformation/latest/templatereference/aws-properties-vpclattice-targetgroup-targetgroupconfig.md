@@ -2,152 +2,101 @@
 title: "AWS::VpcLattice::TargetGroup TargetGroupConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::TargetGroup TargetGroupConfig
+<a name="aws-properties-vpclattice-targetgroup-targetgroupconfig"></a>
 
 Describes the configuration of a target group.
 
-For more information, see [Target groups](../../../vpc-lattice/latest/ug/target-groups.md) in the
-_Amazon VPC Lattice User Guide_.
+For more information, see [Target groups](https://docs.aws.amazon.com/vpc-lattice/latest/ug/target-groups.html) in the *Amazon VPC Lattice User Guide*.
 
 ## Syntax
+<a name="aws-properties-vpclattice-targetgroup-targetgroupconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-targetgroup-targetgroupconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "HealthCheck" : HealthCheckConfig,
-  "IpAddressType" : String,
-  "LambdaEventStructureVersion" : String,
-  "Port" : Integer,
-  "Protocol" : String,
-  "ProtocolVersion" : String,
-  "VpcIdentifier" : String
+  "[HealthCheck](#cfn-vpclattice-targetgroup-targetgroupconfig-healthcheck)" : {{HealthCheckConfig}},
+  "[IpAddressType](#cfn-vpclattice-targetgroup-targetgroupconfig-ipaddresstype)" : {{String}},
+  "[LambdaEventStructureVersion](#cfn-vpclattice-targetgroup-targetgroupconfig-lambdaeventstructureversion)" : {{String}},
+  "[Port](#cfn-vpclattice-targetgroup-targetgroupconfig-port)" : {{Integer}},
+  "[Protocol](#cfn-vpclattice-targetgroup-targetgroupconfig-protocol)" : {{String}},
+  "[ProtocolVersion](#cfn-vpclattice-targetgroup-targetgroupconfig-protocolversion)" : {{String}},
+  "[VpcIdentifier](#cfn-vpclattice-targetgroup-targetgroupconfig-vpcidentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-targetgroup-targetgroupconfig-syntax.yaml"></a>
 
-```yaml
-
-  HealthCheck:
-    HealthCheckConfig
-  IpAddressType: String
-  LambdaEventStructureVersion: String
-  Port: Integer
-  Protocol: String
-  ProtocolVersion: String
-  VpcIdentifier: String
-
+```
+  [HealthCheck](#cfn-vpclattice-targetgroup-targetgroupconfig-healthcheck): {{
+    HealthCheckConfig}}
+  [IpAddressType](#cfn-vpclattice-targetgroup-targetgroupconfig-ipaddresstype): {{String}}
+  [LambdaEventStructureVersion](#cfn-vpclattice-targetgroup-targetgroupconfig-lambdaeventstructureversion): {{String}}
+  [Port](#cfn-vpclattice-targetgroup-targetgroupconfig-port): {{Integer}}
+  [Protocol](#cfn-vpclattice-targetgroup-targetgroupconfig-protocol): {{String}}
+  [ProtocolVersion](#cfn-vpclattice-targetgroup-targetgroupconfig-protocolversion): {{String}}
+  [VpcIdentifier](#cfn-vpclattice-targetgroup-targetgroupconfig-vpcidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-targetgroup-targetgroupconfig-properties"></a>
 
-`HealthCheck`
+`HealthCheck`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-healthcheck"></a>
+The health check configuration. Not supported if the target group type is `LAMBDA` or `ALB`.
+*Required*: No
+*Type*: [HealthCheckConfig](aws-properties-vpclattice-targetgroup-healthcheckconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The health check configuration. Not supported if the target group type is
-`LAMBDA` or `ALB`.
+`IpAddressType`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-ipaddresstype"></a>
+The type of IP address used for the target group. Supported only if the target group type is `IP`. The default is `IPV4`.
+*Required*: No
+*Type*: String
+*Allowed values*: `IPV4 | IPV6`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`LambdaEventStructureVersion`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-lambdaeventstructureversion"></a>
+The version of the event structure that your Lambda function receives. Supported only if the target group type is `LAMBDA`. The default is `V1`.
+*Required*: No
+*Type*: String
+*Allowed values*: `V1 | V2`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [HealthCheckConfig](aws-properties-vpclattice-targetgroup-healthcheckconfig.md)
+`Port`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-port"></a>
+The port on which the targets are listening. For HTTP, the default is 80. For HTTPS, the default is 443. Not supported if the target group type is `LAMBDA`.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Protocol`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-protocol"></a>
+The protocol to use for routing traffic to the targets. The default is the protocol of the target group. Not supported if the target group type is `LAMBDA`.
+*Required*: No
+*Type*: String
+*Allowed values*: `HTTP | HTTPS | TCP`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`IpAddressType`
+`ProtocolVersion`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-protocolversion"></a>
+The protocol version. The default is `HTTP1`. Not supported if the target group type is `LAMBDA`.
+*Required*: No
+*Type*: String
+*Allowed values*: `HTTP1 | HTTP2 | GRPC`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The type of IP address used for the target group. Supported only if the target group type is
-`IP`. The default is `IPV4`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `IPV4 | IPV6`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LambdaEventStructureVersion`
-
-The version of the event structure that your Lambda function receives. Supported only if the
-target group type is `LAMBDA`. The default is `V1`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `V1 | V2`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Port`
-
-The port on which the targets are listening. For HTTP, the default is 80. For HTTPS, the
-default is 443. Not supported if the target group type is `LAMBDA`.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Protocol`
-
-The protocol to use for routing traffic to the targets. The default is the protocol of the
-target group. Not supported if the target group type is `LAMBDA`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HTTP | HTTPS | TCP`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProtocolVersion`
-
-The protocol version. The default is `HTTP1`. Not supported if the target group
-type is `LAMBDA`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HTTP1 | HTTP2 | GRPC`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcIdentifier`
-
+`VpcIdentifier`  <a name="cfn-vpclattice-targetgroup-targetgroupconfig-vpcidentifier"></a>
 The ID of the VPC. Not supported if the target group type is `LAMBDA`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^vpc-(([0-9a-z]{8})|([0-9a-z]{17}))$`
-
-_Minimum_: `5`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Target
-
-Next
+*Required*: No
+*Type*: String
+*Pattern*: `^vpc-(([0-9a-z]{8})|([0-9a-z]{17}))$`
+*Minimum*: `5`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

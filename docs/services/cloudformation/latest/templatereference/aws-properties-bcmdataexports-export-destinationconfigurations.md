@@ -2,53 +2,42 @@
 title: "AWS::BCMDataExports::Export DestinationConfigurations"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export DestinationConfigurations
+<a name="aws-properties-bcmdataexports-export-destinationconfigurations"></a>
 
 The destinations used for data exports.
 
 ## Syntax
+<a name="aws-properties-bcmdataexports-export-destinationconfigurations-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bcmdataexports-export-destinationconfigurations-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Destination" : S3Destination
+  "[S3Destination](#cfn-bcmdataexports-export-destinationconfigurations-s3destination)" : {{S3Destination}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bcmdataexports-export-destinationconfigurations-syntax.yaml"></a>
 
-```yaml
-
-  S3Destination:
-    S3Destination
-
+```
+  [S3Destination](#cfn-bcmdataexports-export-destinationconfigurations-s3destination): {{
+    S3Destination}}
 ```
 
 ## Properties
+<a name="aws-properties-bcmdataexports-export-destinationconfigurations-properties"></a>
 
-`S3Destination`
-
+`S3Destination`  <a name="cfn-bcmdataexports-export-destinationconfigurations-s3destination"></a>
 An object that describes the destination of the data exports file.
-
-_Required_: Yes
-
-_Type_: [S3Destination](aws-properties-bcmdataexports-export-s3destination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataQuery
-
-Export
+*Required*: Yes
+*Type*: [S3Destination](aws-properties-bcmdataexports-export-s3destination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

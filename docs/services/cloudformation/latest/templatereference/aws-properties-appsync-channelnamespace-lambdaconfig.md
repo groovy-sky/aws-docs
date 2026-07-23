@@ -2,54 +2,42 @@
 title: "AWS::AppSync::ChannelNamespace LambdaConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::ChannelNamespace LambdaConfig
+<a name="aws-properties-appsync-channelnamespace-lambdaconfig"></a>
 
 The `LambdaConfig` property type specifies the integration configuration for a Lambda data source.
 
 ## Syntax
+<a name="aws-properties-appsync-channelnamespace-lambdaconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-channelnamespace-lambdaconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InvokeType" : String
+  "[InvokeType](#cfn-appsync-channelnamespace-lambdaconfig-invoketype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-channelnamespace-lambdaconfig-syntax.yaml"></a>
 
-```yaml
-
-  InvokeType: String
-
+```
+  [InvokeType](#cfn-appsync-channelnamespace-lambdaconfig-invoketype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-channelnamespace-lambdaconfig-properties"></a>
 
-`InvokeType`
-
+`InvokeType`  <a name="cfn-appsync-channelnamespace-lambdaconfig-invoketype"></a>
 The invocation type for a Lambda data source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `REQUEST_RESPONSE | EVENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Integration
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `REQUEST_RESPONSE | EVENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

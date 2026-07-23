@@ -2,76 +2,55 @@
 title: "AWS::IoT::RoleAlias Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::RoleAlias Tag
+<a name="aws-properties-iot-rolealias-tag"></a>
 
 A set of key/value pairs that are used to manage the resource.
 
 ## Syntax
+<a name="aws-properties-iot-rolealias-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-rolealias-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-iot-rolealias-tag-key)" : {{String}},
+  "[Value](#cfn-iot-rolealias-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-rolealias-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-iot-rolealias-tag-key): {{String}}
+  [Value](#cfn-iot-rolealias-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-rolealias-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-iot-rolealias-tag-key"></a>
 The tag's key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iot-rolealias-tag-value"></a>
 The tag's value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::RoleAlias
-
-AWS::IoT::ScheduledAudit
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

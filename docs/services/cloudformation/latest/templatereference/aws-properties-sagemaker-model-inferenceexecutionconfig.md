@@ -2,58 +2,44 @@
 title: "AWS::SageMaker::Model InferenceExecutionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Model InferenceExecutionConfig
+<a name="aws-properties-sagemaker-model-inferenceexecutionconfig"></a>
 
 Specifies details about how containers in a multi-container endpoint are run.
 
 ## Syntax
+<a name="aws-properties-sagemaker-model-inferenceexecutionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-model-inferenceexecutionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mode" : String
+  "[Mode](#cfn-sagemaker-model-inferenceexecutionconfig-mode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-model-inferenceexecutionconfig-syntax.yaml"></a>
 
-```yaml
-
-  Mode: String
-
+```
+  [Mode](#cfn-sagemaker-model-inferenceexecutionconfig-mode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-model-inferenceexecutionconfig-properties"></a>
 
-`Mode`
-
+`Mode`  <a name="cfn-sagemaker-model-inferenceexecutionconfig-mode"></a>
 How containers in a multi-container are run. The following values are valid.
-
-- `Serial` \- Containers run as a serial pipeline.
-
-- `Direct` \- Only the individual container that you specify is run.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Serial | Direct`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageConfig
-
-ModelAccessConfig
++ `Serial` - Containers run as a serial pipeline.
++ `Direct` - Only the individual container that you specify is run.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Serial | Direct`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

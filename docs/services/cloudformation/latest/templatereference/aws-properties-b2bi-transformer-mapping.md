@@ -2,72 +2,52 @@
 title: "AWS::B2BI::Transformer Mapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer Mapping
+<a name="aws-properties-b2bi-transformer-mapping"></a>
 
-Specifies the mapping template for the transformer. This template is used to map the
-parsed EDI file using JSONata or XSLT.
+Specifies the mapping template for the transformer. This template is used to map the parsed EDI file using JSONata or XSLT.
 
 ## Syntax
+<a name="aws-properties-b2bi-transformer-mapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-transformer-mapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "Template" : String,
-  "TemplateLanguage" : String
+  "[Template](#cfn-b2bi-transformer-mapping-template)" : {{String}},
+  "[TemplateLanguage](#cfn-b2bi-transformer-mapping-templatelanguage)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-transformer-mapping-syntax.yaml"></a>
 
-```yaml
-
-  Template: String
-  TemplateLanguage: String
-
+```
+  [Template](#cfn-b2bi-transformer-mapping-template): {{String}}
+  [TemplateLanguage](#cfn-b2bi-transformer-mapping-templatelanguage): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-transformer-mapping-properties"></a>
 
-`Template`
+`Template`  <a name="cfn-b2bi-transformer-mapping-template"></a>
+A string that represents the mapping template, in the transformation language specified in `templateLanguage`.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `350000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A string that represents the mapping template, in the transformation language specified
-in `templateLanguage`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `350000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateLanguage`
-
+`TemplateLanguage`  <a name="cfn-b2bi-transformer-mapping-templatelanguage"></a>
 The transformation language for the template, either XSLT or JSONATA.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `XSLT | JSONATA`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InputConversion
-
-OutputConversion
+*Required*: Yes
+*Type*: String
+*Allowed values*: `XSLT | JSONATA`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

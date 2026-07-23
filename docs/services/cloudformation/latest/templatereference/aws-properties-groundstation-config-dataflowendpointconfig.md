@@ -2,70 +2,63 @@
 title: "AWS::GroundStation::Config DataflowEndpointConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config DataflowEndpointConfig
+<a name="aws-properties-groundstation-config-dataflowendpointconfig"></a>
 
-Provides information to AWS Ground Station about which IP endpoints to use during a contact.
+ Provides information to AWS Ground Station about which IP endpoints to use during a contact.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-dataflowendpointconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-dataflowendpointconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataflowEndpointName" : String,
-  "DataflowEndpointRegion" : String
+  "[DataflowEndpointName](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointname)" : {{String}},
+  "[DataflowEndpointRegion](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointregion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-dataflowendpointconfig-syntax.yaml"></a>
 
-```yaml
-
-  DataflowEndpointName: String
-  DataflowEndpointRegion: String
-
+```
+  [DataflowEndpointName](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointname): {{String}}
+  [DataflowEndpointRegion](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointregion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-dataflowendpointconfig-properties"></a>
 
-`DataflowEndpointName`
+`DataflowEndpointName`  <a name="cfn-groundstation-config-dataflowendpointconfig-dataflowendpointname"></a>
+ The name of the dataflow endpoint to use during contacts.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the dataflow endpoint to use during contacts.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataflowEndpointRegion`
-
-The region of the dataflow endpoint to use during contacts. When omitted, Ground Station will use the region of the contact.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`DataflowEndpointRegion`  <a name="cfn-groundstation-config-dataflowendpointconfig-dataflowendpointregion"></a>
+ The region of the dataflow endpoint to use during contacts. When omitted, Ground Station will use the region of the contact.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-dataflowendpointconfig--examples"></a>
 
 ### Create a DataflowEndpointConfig
+<a name="aws-properties-groundstation-config-dataflowendpointconfig--examples--Create_a_DataflowEndpointConfig"></a>
 
 The following example creates a Ground Station `DataflowEndpointConfig`
 
 #### JSON
+<a name="aws-properties-groundstation-config-dataflowendpointconfig--examples--Create_a_DataflowEndpointConfig--json"></a>
 
-```json
-
+```
 {
   "DataflowEndpointConfig": {
     "DataflowEndpointName": "Downlink Demod Decode",
@@ -75,18 +68,12 @@ The following example creates a Ground Station `DataflowEndpointConfig`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-dataflowendpointconfig--examples--Create_a_DataflowEndpointConfig--yaml"></a>
 
-```yaml
-
+```
 DataflowEndpointConfig:
   DataflowEndpointName: "Downlink Demod Decode"
   DataflowEndpointRegion: "us-east-2"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigData
-
-DecodeConfig
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,81 +2,60 @@
 title: "AWS::CodeDeploy::DeploymentGroup TargetGroupPairInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup TargetGroupPairInfo
+<a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo"></a>
 
-Information about two target groups and how traffic is routed during an Amazon ECS deployment. An optional test traffic route can be specified.
+ Information about two target groups and how traffic is routed during an Amazon ECS deployment. An optional test traffic route can be specified.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "ProdTrafficRoute" : TrafficRoute,
-  "TargetGroups" : [ TargetGroupInfo, ... ],
-  "TestTrafficRoute" : TrafficRoute
+  "[ProdTrafficRoute](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-prodtrafficroute)" : {{TrafficRoute}},
+  "[TargetGroups](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-targetgroups)" : {{[ TargetGroupInfo, ... ]}},
+  "[TestTrafficRoute](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-testtrafficroute)" : {{TrafficRoute}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo-syntax.yaml"></a>
 
-```yaml
-
-  ProdTrafficRoute:
-    TrafficRoute
-  TargetGroups:
-    - TargetGroupInfo
-  TestTrafficRoute:
-    TrafficRoute
-
+```
+  [ProdTrafficRoute](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-prodtrafficroute): {{
+    TrafficRoute}}
+  [TargetGroups](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-targetgroups): {{
+    - TargetGroupInfo}}
+  [TestTrafficRoute](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-testtrafficroute): {{
+    TrafficRoute}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo-properties"></a>
 
-`ProdTrafficRoute`
+`ProdTrafficRoute`  <a name="cfn-codedeploy-deploymentgroup-targetgrouppairinfo-prodtrafficroute"></a>
+ The path used by a load balancer to route production traffic when an Amazon ECS deployment is complete.
+*Required*: No
+*Type*: [TrafficRoute](aws-properties-codedeploy-deploymentgroup-trafficroute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The path used by a load balancer to route production traffic when an Amazon ECS deployment is complete.
+`TargetGroups`  <a name="cfn-codedeploy-deploymentgroup-targetgrouppairinfo-targetgroups"></a>
+ One pair of target groups. One is associated with the original task set. The second is associated with the task set that serves traffic after the deployment is complete.
+*Required*: No
+*Type*: Array of [TargetGroupInfo](aws-properties-codedeploy-deploymentgroup-targetgroupinfo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TrafficRoute](aws-properties-codedeploy-deploymentgroup-trafficroute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetGroups`
-
-One pair of target groups. One is associated with the original task set. The second
-is associated with the task set that serves traffic after the deployment is complete.
-
-_Required_: No
-
-_Type_: Array of [TargetGroupInfo](aws-properties-codedeploy-deploymentgroup-targetgroupinfo.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TestTrafficRoute`
-
-An optional path used by a load balancer to route test traffic after an Amazon ECS deployment. Validation can occur while test traffic is served during a
-deployment.
-
-_Required_: No
-
-_Type_: [TrafficRoute](aws-properties-codedeploy-deploymentgroup-trafficroute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetGroupInfo
-
-TrafficRoute
+`TestTrafficRoute`  <a name="cfn-codedeploy-deploymentgroup-targetgrouppairinfo-testtrafficroute"></a>
+ An optional path used by a load balancer to route test traffic after an Amazon ECS deployment. Validation can occur while test traffic is served during a deployment.
+*Required*: No
+*Type*: [TrafficRoute](aws-properties-codedeploy-deploymentgroup-trafficroute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

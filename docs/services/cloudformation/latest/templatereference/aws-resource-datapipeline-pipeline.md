@@ -2,198 +2,156 @@
 title: "AWS::DataPipeline::Pipeline"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataPipeline::Pipeline
+<a name="aws-resource-datapipeline-pipeline"></a>
 
-The AWS::DataPipeline::Pipeline resource specifies a data pipeline that you can use to
-automate the movement and transformation of data.
+The AWS::DataPipeline::Pipeline resource specifies a data pipeline that you can use to automate the movement and transformation of data.
 
-###### Important
+**Important**
+AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
-AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline)
+In each pipeline, you define pipeline objects, such as activities, schedules, data nodes, and resources.
 
-In each pipeline, you define pipeline
-objects, such as activities, schedules, data nodes, and resources.
+The `AWS::DataPipeline::Pipeline` resource adds tasks, schedules, and preconditions to the specified pipeline. You can use `PutPipelineDefinition` to populate a new pipeline.
 
-The `AWS::DataPipeline::Pipeline` resource adds tasks, schedules, and
-preconditions to the specified pipeline. You can use `PutPipelineDefinition` to
-populate a new pipeline.
+`PutPipelineDefinition` also validates the configuration as it adds it to the pipeline. Changes to the pipeline are saved unless one of the following validation errors exist in the pipeline.
++ An object is missing a name or identifier field.
++ A string or reference field is empty.
++ The number of objects in the pipeline exceeds the allowed maximum number of objects.
++ The pipeline is in a FINISHED state.
 
-`PutPipelineDefinition` also validates the configuration as it adds it to the pipeline. Changes to the pipeline are saved unless one
-of the following validation errors exist in the pipeline.
-
-- An object is missing a name or identifier field.
-
-- A string or reference field is empty.
-
-- The number of objects in the pipeline exceeds the allowed maximum number of objects.
-
-- The pipeline is in a FINISHED state.
-
-Pipeline object definitions are passed to the [PutPipelineDefinition](../../../../reference/datapipeline/latest/apireference/api-putpipelinedefinition.md) action and returned by the [GetPipelineDefinition](../../../../reference/datapipeline/latest/apireference/api-getpipelinedefinition.md) action.
+ Pipeline object definitions are passed to the [PutPipelineDefinition](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_PutPipelineDefinition.html) action and returned by the [GetPipelineDefinition](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_GetPipelineDefinition.html) action.
 
 ## Syntax
+<a name="aws-resource-datapipeline-pipeline-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datapipeline-pipeline-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataPipeline::Pipeline",
   "Properties" : {
-      "Activate" : Boolean,
-      "Description" : String,
-      "Name" : String,
-      "ParameterObjects" : [ ParameterObject, ... ],
-      "ParameterValues" : [ ParameterValue, ... ],
-      "PipelineObjects" : [ PipelineObject, ... ],
-      "PipelineTags" : [ PipelineTag, ... ]
+      "[Activate](#cfn-datapipeline-pipeline-activate)" : {{Boolean}},
+      "[Description](#cfn-datapipeline-pipeline-description)" : {{String}},
+      "[Name](#cfn-datapipeline-pipeline-name)" : {{String}},
+      "[ParameterObjects](#cfn-datapipeline-pipeline-parameterobjects)" : {{[ ParameterObject, ... ]}},
+      "[ParameterValues](#cfn-datapipeline-pipeline-parametervalues)" : {{[ ParameterValue, ... ]}},
+      "[PipelineObjects](#cfn-datapipeline-pipeline-pipelineobjects)" : {{[ PipelineObject, ... ]}},
+      "[PipelineTags](#cfn-datapipeline-pipeline-pipelinetags)" : {{[ PipelineTag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datapipeline-pipeline-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataPipeline::Pipeline
 Properties:
-  Activate: Boolean
-  Description: String
-  Name: String
-  ParameterObjects:
-    - ParameterObject
-  ParameterValues:
-    - ParameterValue
-  PipelineObjects:
-    - PipelineObject
-  PipelineTags:
-    - PipelineTag
-
+  [Activate](#cfn-datapipeline-pipeline-activate): {{Boolean}}
+  [Description](#cfn-datapipeline-pipeline-description): {{String}}
+  [Name](#cfn-datapipeline-pipeline-name): {{String}}
+  [ParameterObjects](#cfn-datapipeline-pipeline-parameterobjects): {{
+    - ParameterObject}}
+  [ParameterValues](#cfn-datapipeline-pipeline-parametervalues): {{
+    - ParameterValue}}
+  [PipelineObjects](#cfn-datapipeline-pipeline-pipelineobjects): {{
+    - PipelineObject}}
+  [PipelineTags](#cfn-datapipeline-pipeline-pipelinetags): {{
+    - PipelineTag}}
 ```
 
 ## Properties
+<a name="aws-resource-datapipeline-pipeline-properties"></a>
 
-`Activate`
+`Activate`  <a name="cfn-datapipeline-pipeline-activate"></a>
+Indicates whether to validate and start the pipeline or stop an active pipeline. By default, the value is set to `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Indicates whether to validate and start the pipeline or stop an active pipeline. By
-default, the value is set to `true`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-datapipeline-pipeline-description"></a>
 A description of the pipeline.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-datapipeline-pipeline-name"></a>
 The name of the pipeline.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\n\t]*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\n\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterObjects`
-
+`ParameterObjects`  <a name="cfn-datapipeline-pipeline-parameterobjects"></a>
 The parameter objects used with the pipeline.
+*Required*: No
+*Type*: Array of [ParameterObject](aws-properties-datapipeline-pipeline-parameterobject.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ParameterObject](aws-properties-datapipeline-pipeline-parameterobject.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValues`
-
+`ParameterValues`  <a name="cfn-datapipeline-pipeline-parametervalues"></a>
 The parameter values used with the pipeline.
+*Required*: No
+*Type*: Array of [ParameterValue](aws-properties-datapipeline-pipeline-parametervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PipelineObjects`  <a name="cfn-datapipeline-pipeline-pipelineobjects"></a>
+The objects that define the pipeline. These objects overwrite the existing pipeline definition. Not all objects, fields, and values can be updated. For information about restrictions, see [Editing Your Pipeline](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-manage-pipeline-modify-console.html) in the *AWS Data Pipeline Developer Guide*.
+*Required*: No
+*Type*: Array of [PipelineObject](aws-properties-datapipeline-pipeline-pipelineobject.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [ParameterValue](aws-properties-datapipeline-pipeline-parametervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PipelineObjects`
-
-The objects that define the pipeline. These objects overwrite the existing pipeline definition. Not all objects, fields, and values
-can be updated. For information about restrictions, see
-[Editing Your Pipeline](../../../datapipeline/latest/developerguide/dp-manage-pipeline-modify-console.md)
-in the _AWS Data Pipeline Developer Guide_.
-
-_Required_: No
-
-_Type_: Array of [PipelineObject](aws-properties-datapipeline-pipeline-pipelineobject.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PipelineTags`
-
-A list of arbitrary tags (key-value pairs) to associate with the pipeline, which you
-can use to control permissions. For more information, see [Controlling Access to\
-Pipelines and Resources](../../../datapipeline/latest/developerguide/dp-control-access.md) in the
-_AWS Data Pipeline Developer Guide_.
-
-_Required_: No
-
-_Type_: Array of [PipelineTag](aws-properties-datapipeline-pipeline-pipelinetag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`PipelineTags`  <a name="cfn-datapipeline-pipeline-pipelinetags"></a>
+A list of arbitrary tags (key-value pairs) to associate with the pipeline, which you can use to control permissions. For more information, see [Controlling Access to Pipelines and Resources](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-control-access.html) in the *AWS Data Pipeline Developer Guide*.
+*Required*: No
+*Type*: Array of [PipelineTag](aws-properties-datapipeline-pipeline-pipelinetag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-datapipeline-pipeline-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datapipeline-pipeline-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the pipeline ID.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datapipeline-pipeline-return-values-fn--getatt"></a>
 
-`PipelineId`
+####
+<a name="aws-resource-datapipeline-pipeline-return-values-fn--getatt-fn--getatt"></a>
 
+`PipelineId`  <a name="PipelineId-fn::getatt"></a>
 The ID of the pipeline.
 
 ## Examples
+<a name="aws-resource-datapipeline-pipeline--examples"></a>
 
-The following data pipeline backs up data from an Amazon DynamoDB table to an Amazon
-S3 bucket. The pipeline uses the `HiveCopyActivity` activity to copy the data,
-and runs it once a day. The [roles](../../../datapipeline/latest/developerguide/dp-iam-roles.md) for the
-pipeline and the pipeline resource are declared elsewhere in the same template.
+The following data pipeline backs up data from an Amazon DynamoDB table to an Amazon S3 bucket. The pipeline uses the `HiveCopyActivity` activity to copy the data, and runs it once a day. The [roles](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-iam-roles.html) for the pipeline and the pipeline resource are declared elsewhere in the same template.
+
+**Topics**
++ [](#aws-resource-datapipeline-pipeline--examples--)
++ [](#aws-resource-datapipeline-pipeline--examples--)
+
+###
+<a name="aws-resource-datapipeline-pipeline--examples--"></a>
 
 #### JSON
+<a name="aws-resource-datapipeline-pipeline--examples----json"></a>
 
-```json
-
+```
 "DynamoDBInputS3OutputHive": {
   "Type": "AWS::DataPipeline::Pipeline",
   "Properties": {
@@ -419,10 +377,13 @@ pipeline and the pipeline resource are declared elsewhere in the same template.
 }
 ```
 
+###
+<a name="aws-resource-datapipeline-pipeline--examples--"></a>
+
 #### YAML
+<a name="aws-resource-datapipeline-pipeline--examples----yaml"></a>
 
-```yaml
-
+```
 DynamoDBInputS3OutputHive:
   Type: AWS::DataPipeline::Pipeline
   Properties:
@@ -593,18 +554,8 @@ DynamoDBInputS3OutputHive:
 ```
 
 ## See also
-
-- [Pipeline Object\
-Reference](../../../datapipeline/latest/developerguide/dp-pipeline-objects.md) in the _AWS Data Pipeline Developer_
-_Guide_.
-
-- [PutPipelineDefinition](../../../../reference/datapipeline/latest/apireference/api-putpipelinedefinition.md) in the
-_AWS Data Pipeline API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Data Pipeline
-
-Field
+<a name="aws-resource-datapipeline-pipeline--seealso"></a>
++ [Pipeline Object Reference](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-pipeline-objects.html) in the *AWS Data Pipeline Developer Guide*.
++ [PutPipelineDefinition](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_PutPipelineDefinition.html) in the *AWS Data Pipeline API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

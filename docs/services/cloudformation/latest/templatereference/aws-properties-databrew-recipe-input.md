@@ -2,67 +2,51 @@
 title: "AWS::DataBrew::Recipe Input"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Recipe Input
+<a name="aws-properties-databrew-recipe-input"></a>
 
-Represents information on how DataBrew can find data, in either the AWS Glue Data Catalog or
-Amazon S3.
+Represents information on how DataBrew can find data, in either the AWS Glue Data Catalog or Amazon S3.
 
 ## Syntax
+<a name="aws-properties-databrew-recipe-input-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-recipe-input-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataCatalogInputDefinition" : DataCatalogInputDefinition,
-  "S3InputDefinition" : S3Location
+  "[DataCatalogInputDefinition](#cfn-databrew-recipe-input-datacataloginputdefinition)" : {{DataCatalogInputDefinition}},
+  "[S3InputDefinition](#cfn-databrew-recipe-input-s3inputdefinition)" : {{S3Location}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-recipe-input-syntax.yaml"></a>
 
-```yaml
-
-  DataCatalogInputDefinition:
-    DataCatalogInputDefinition
-  S3InputDefinition:
-    S3Location
-
+```
+  [DataCatalogInputDefinition](#cfn-databrew-recipe-input-datacataloginputdefinition): {{
+    DataCatalogInputDefinition}}
+  [S3InputDefinition](#cfn-databrew-recipe-input-s3inputdefinition): {{
+    S3Location}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-recipe-input-properties"></a>
 
-`DataCatalogInputDefinition`
-
+`DataCatalogInputDefinition`  <a name="cfn-databrew-recipe-input-datacataloginputdefinition"></a>
 The AWS Glue Data Catalog parameters for the data.
+*Required*: No
+*Type*: [DataCatalogInputDefinition](aws-properties-databrew-recipe-datacataloginputdefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataCatalogInputDefinition](aws-properties-databrew-recipe-datacataloginputdefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3InputDefinition`
-
+`S3InputDefinition`  <a name="cfn-databrew-recipe-input-s3inputdefinition"></a>
 The Amazon S3 location where the data is stored.
-
-_Required_: No
-
-_Type_: [S3Location](aws-properties-databrew-recipe-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataCatalogInputDefinition
-
-Parameters
+*Required*: No
+*Type*: [S3Location](aws-properties-databrew-recipe-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

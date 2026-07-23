@@ -2,231 +2,169 @@
 title: "AWS::DataZone::ProjectProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::ProjectProfile
+<a name="aws-resource-datazone-projectprofile"></a>
 
 The summary of a project profile.
 
 ## Syntax
+<a name="aws-resource-datazone-projectprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datazone-projectprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataZone::ProjectProfile",
   "Properties" : {
-      "AllowCustomProjectResourceTags" : Boolean,
-      "Description" : String,
-      "DomainIdentifier" : String,
-      "DomainUnitIdentifier" : String,
-      "EnvironmentConfigurations" : [ EnvironmentConfiguration, ... ],
-      "Name" : String,
-      "ProjectResourceTags" : [ ResourceTagParameter, ... ],
-      "ProjectResourceTagsDescription" : String,
-      "Status" : String,
-      "UseDefaultConfigurations" : Boolean
+      "[AllowCustomProjectResourceTags](#cfn-datazone-projectprofile-allowcustomprojectresourcetags)" : {{Boolean}},
+      "[Description](#cfn-datazone-projectprofile-description)" : {{String}},
+      "[DomainIdentifier](#cfn-datazone-projectprofile-domainidentifier)" : {{String}},
+      "[DomainUnitIdentifier](#cfn-datazone-projectprofile-domainunitidentifier)" : {{String}},
+      "[EnvironmentConfigurations](#cfn-datazone-projectprofile-environmentconfigurations)" : {{[ EnvironmentConfiguration, ... ]}},
+      "[Name](#cfn-datazone-projectprofile-name)" : {{String}},
+      "[ProjectResourceTags](#cfn-datazone-projectprofile-projectresourcetags)" : {{[ ResourceTagParameter, ... ]}},
+      "[ProjectResourceTagsDescription](#cfn-datazone-projectprofile-projectresourcetagsdescription)" : {{String}},
+      "[Status](#cfn-datazone-projectprofile-status)" : {{String}},
+      "[UseDefaultConfigurations](#cfn-datazone-projectprofile-usedefaultconfigurations)" : {{Boolean}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datazone-projectprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataZone::ProjectProfile
 Properties:
-  AllowCustomProjectResourceTags: Boolean
-  Description: String
-  DomainIdentifier: String
-  DomainUnitIdentifier: String
-  EnvironmentConfigurations:
-    - EnvironmentConfiguration
-  Name: String
-  ProjectResourceTags:
-    - ResourceTagParameter
-  ProjectResourceTagsDescription: String
-  Status: String
-  UseDefaultConfigurations: Boolean
-
+  [AllowCustomProjectResourceTags](#cfn-datazone-projectprofile-allowcustomprojectresourcetags): {{Boolean}}
+  [Description](#cfn-datazone-projectprofile-description): {{String}}
+  [DomainIdentifier](#cfn-datazone-projectprofile-domainidentifier): {{String}}
+  [DomainUnitIdentifier](#cfn-datazone-projectprofile-domainunitidentifier): {{String}}
+  [EnvironmentConfigurations](#cfn-datazone-projectprofile-environmentconfigurations): {{
+    - EnvironmentConfiguration}}
+  [Name](#cfn-datazone-projectprofile-name): {{String}}
+  [ProjectResourceTags](#cfn-datazone-projectprofile-projectresourcetags): {{
+    - ResourceTagParameter}}
+  [ProjectResourceTagsDescription](#cfn-datazone-projectprofile-projectresourcetagsdescription): {{String}}
+  [Status](#cfn-datazone-projectprofile-status): {{String}}
+  [UseDefaultConfigurations](#cfn-datazone-projectprofile-usedefaultconfigurations): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-resource-datazone-projectprofile-properties"></a>
 
-`AllowCustomProjectResourceTags`
-
+`AllowCustomProjectResourceTags`  <a name="cfn-datazone-projectprofile-allowcustomprojectresourcetags"></a>
 Specifies whether custom project resource tags are supported.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-datazone-projectprofile-description"></a>
 The description of the project profile.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainIdentifier`
-
+`DomainIdentifier`  <a name="cfn-datazone-projectprofile-domainidentifier"></a>
 A domain ID of the project profile.
+*Required*: No
+*Type*: String
+*Pattern*: `^dzd[_-][a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^dzd[_-][a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DomainUnitIdentifier`
-
+`DomainUnitIdentifier`  <a name="cfn-datazone-projectprofile-domainunitidentifier"></a>
 A domain unit ID of the project profile.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9_\-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9_\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentConfigurations`
-
+`EnvironmentConfigurations`  <a name="cfn-datazone-projectprofile-environmentconfigurations"></a>
 Environment configurations of a project profile.
+*Required*: No
+*Type*: Array of [EnvironmentConfiguration](aws-properties-datazone-projectprofile-environmentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EnvironmentConfiguration](aws-properties-datazone-projectprofile-environmentconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-datazone-projectprofile-name"></a>
 The name of a project profile.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w -]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w -]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProjectResourceTags`
-
+`ProjectResourceTags`  <a name="cfn-datazone-projectprofile-projectresourcetags"></a>
 The resource tag of the project.
+*Required*: No
+*Type*: Array of [ResourceTagParameter](aws-properties-datazone-projectprofile-resourcetagparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ProjectResourceTagsDescription`  <a name="cfn-datazone-projectprofile-projectresourcetagsdescription"></a>
+Field viewable through the UI that provides a project user with the allowed resource tag specifications.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [ResourceTagParameter](aws-properties-datazone-projectprofile-resourcetagparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProjectResourceTagsDescription`
-
-Field viewable through the UI that provides a project user with the allowed resource tag
-specifications.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-datazone-projectprofile-status"></a>
 The status of a project profile.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseDefaultConfigurations`
-
+`UseDefaultConfigurations`  <a name="cfn-datazone-projectprofile-usedefaultconfigurations"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-datazone-projectprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datazone-projectprofile-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and
-`DomainUnitId`, which uniquely identifies a domain unit. For example: { `"Ref":
-    "MyDomainUnit"` } for the resource with the logical ID MyDomainUnit, Ref returns
-`DomainId|DomainUnitId`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a string containing pipe-separated `DomainId` and `DomainUnitId`, which uniquely identifies a domain unit. For example: { `"Ref": "MyDomainUnit"` } for the resource with the logical ID MyDomainUnit, Ref returns `DomainId|DomainUnitId`.
 
 ### Fn::GetAtt
+<a name="aws-resource-datazone-projectprofile-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-datazone-projectprofile-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp of when the project profile was created.
 
-`CreatedBy`
-
+`CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
 The user who created the project profile.
 
-`DomainId`
-
+`DomainId`  <a name="DomainId-fn::getatt"></a>
 The domain ID of the project profile.
 
-`DomainUnitId`
-
+`DomainUnitId`  <a name="DomainUnitId-fn::getatt"></a>
 The domain unit ID of the project profile.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the project profile.
 
-`Identifier`
-
+`Identifier`  <a name="Identifier-fn::getatt"></a>
 Project profile ID.
 
-`LastUpdatedAt`
-
+`LastUpdatedAt`  <a name="LastUpdatedAt-fn::getatt"></a>
 The timestamp at which a project profile was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Member
-
-AwsAccount
 
 All content copied from https://docs.aws.amazon.com/.

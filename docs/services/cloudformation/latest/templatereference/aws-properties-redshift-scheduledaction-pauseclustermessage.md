@@ -2,54 +2,42 @@
 title: "AWS::Redshift::ScheduledAction PauseClusterMessage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::ScheduledAction PauseClusterMessage
+<a name="aws-properties-redshift-scheduledaction-pauseclustermessage"></a>
 
 Describes a pause cluster operation. For example, a scheduled action to run the `PauseCluster` API operation.
 
 ## Syntax
+<a name="aws-properties-redshift-scheduledaction-pauseclustermessage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshift-scheduledaction-pauseclustermessage-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterIdentifier" : String
+  "[ClusterIdentifier](#cfn-redshift-scheduledaction-pauseclustermessage-clusteridentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshift-scheduledaction-pauseclustermessage-syntax.yaml"></a>
 
-```yaml
-
-  ClusterIdentifier: String
-
+```
+  [ClusterIdentifier](#cfn-redshift-scheduledaction-pauseclustermessage-clusteridentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-redshift-scheduledaction-pauseclustermessage-properties"></a>
 
-`ClusterIdentifier`
-
+`ClusterIdentifier`  <a name="cfn-redshift-scheduledaction-pauseclustermessage-clusteridentifier"></a>
 The identifier of the cluster to be paused.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Redshift::ScheduledAction
-
-ResizeClusterMessage
+*Required*: Yes
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

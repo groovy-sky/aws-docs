@@ -2,91 +2,61 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy ReferrerPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy ReferrerPolicy
+<a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy"></a>
 
-Determines whether CloudFront includes the `Referrer-Policy` HTTP response header
-and the header's value.
+Determines whether CloudFront includes the `Referrer-Policy` HTTP response header and the header's value.
 
-For more information about the `Referrer-Policy` HTTP response header, see
-[Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
+For more information about the `Referrer-Policy` HTTP response header, see [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
 
 ## Syntax
+<a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Override" : Boolean,
-  "ReferrerPolicy" : String
+  "[Override](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-override)" : {{Boolean}},
+  "[ReferrerPolicy](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-referrerpolicy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy-syntax.yaml"></a>
 
-```yaml
-
-  Override: Boolean
-  ReferrerPolicy: String
-
+```
+  [Override](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-override): {{Boolean}}
+  [ReferrerPolicy](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-referrerpolicy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy-properties"></a>
 
-`Override`
+`Override`  <a name="cfn-cloudfront-responseheaderspolicy-referrerpolicy-override"></a>
+A Boolean that determines whether CloudFront overrides the `Referrer-Policy` HTTP response header received from the origin with the one specified in this response headers policy.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A Boolean that determines whether CloudFront overrides the `Referrer-Policy` HTTP
-response header received from the origin with the one specified in this response headers
-policy.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReferrerPolicy`
-
-The value of the `Referrer-Policy` HTTP response header. Valid values
-are:
-
-- `no-referrer`
-
-- `no-referrer-when-downgrade`
-
-- `origin`
-
-- `origin-when-cross-origin`
-
-- `same-origin`
-
-- `strict-origin`
-
-- `strict-origin-when-cross-origin`
-
-- `unsafe-url`
-
+`ReferrerPolicy`  <a name="cfn-cloudfront-responseheaderspolicy-referrerpolicy-referrerpolicy"></a>
+The value of the `Referrer-Policy` HTTP response header. Valid values are:
++  `no-referrer`
++  `no-referrer-when-downgrade`
++  `origin`
++  `origin-when-cross-origin`
++  `same-origin`
++  `strict-origin`
++  `strict-origin-when-cross-origin`
++  `unsafe-url`
 For more information about these values, see [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
-
-_Required_: Yes
-
-_Type_: [String](aws-properties-cloudfront-responseheaderspolicy-referrerpolicy.md)
-
-_Pattern_: `^(no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin|strict-origin-when-cross-origin|unsafe-url)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FrameOptions
-
-RemoveHeader
+*Required*: Yes
+*Type*: [String](#aws-properties-cloudfront-responseheaderspolicy-referrerpolicy)
+*Pattern*: `^(no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin|strict-origin-when-cross-origin|unsafe-url)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

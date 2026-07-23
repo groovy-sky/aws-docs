@@ -2,73 +2,53 @@
 title: "AWS::ElastiCache::GlobalReplicationGroup ReshardingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElastiCache::GlobalReplicationGroup ReshardingConfiguration
+<a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration"></a>
 
-A list of `PreferredAvailabilityZones` objects that specifies the
-configuration of a node group in the resharded cluster.
+A list of `PreferredAvailabilityZones` objects that specifies the configuration of a node group in the resharded cluster.
 
 ## Syntax
+<a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "NodeGroupId" : String,
-  "PreferredAvailabilityZones" : [ String, ... ]
+  "[NodeGroupId](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-nodegroupid)" : {{String}},
+  "[PreferredAvailabilityZones](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-preferredavailabilityzones)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  NodeGroupId: String
-  PreferredAvailabilityZones:
-    - String
-
+```
+  [NodeGroupId](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-nodegroupid): {{String}}
+  [PreferredAvailabilityZones](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-preferredavailabilityzones): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration-properties"></a>
 
-`NodeGroupId`
+`NodeGroupId`  <a name="cfn-elasticache-globalreplicationgroup-reshardingconfiguration-nodegroupid"></a>
+Either the ElastiCache supplied 4-digit id or a user supplied id for the node group these configuration values apply to.
+*Required*: No
+*Type*: String
+*Pattern*: `\d+`
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Either the ElastiCache supplied 4-digit id or a user supplied id for the
-node group these configuration values apply to.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\d+`
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PreferredAvailabilityZones`
-
+`PreferredAvailabilityZones`  <a name="cfn-elasticache-globalreplicationgroup-reshardingconfiguration-preferredavailabilityzones"></a>
 A list of preferred availability zones for the nodes in this cluster.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RegionalConfiguration
-
-AWS::ElastiCache::ParameterGroup
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,59 +2,44 @@
 title: "AWS::EMRServerless::Application IdentityCenterConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application IdentityCenterConfiguration
+<a name="aws-properties-emrserverless-application-identitycenterconfiguration"></a>
 
-The IAM Identity Center Configuration accepts the Identity Center instance parameter required to enable trusted identity
-propagation. This configuration allows identity propagation between integrated services and the Identity Center instance.
+The IAM Identity Center Configuration accepts the Identity Center instance parameter required to enable trusted identity propagation. This configuration allows identity propagation between integrated services and the Identity Center instance.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-identitycenterconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-identitycenterconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdentityCenterInstanceArn" : String
+  "[IdentityCenterInstanceArn](#cfn-emrserverless-application-identitycenterconfiguration-identitycenterinstancearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-identitycenterconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IdentityCenterInstanceArn: String
-
+```
+  [IdentityCenterInstanceArn](#cfn-emrserverless-application-identitycenterconfiguration-identitycenterinstancearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-identitycenterconfiguration-properties"></a>
 
-`IdentityCenterInstanceArn`
-
+`IdentityCenterInstanceArn`  <a name="cfn-emrserverless-application-identitycenterconfiguration-identitycenterinstancearn"></a>
 The ARN of the IAM Identity Center instance.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z0-9-]*):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationObject
-
-ImageConfigurationInput
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z0-9-]*):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

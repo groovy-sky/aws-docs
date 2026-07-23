@@ -2,198 +2,108 @@
 title: "AWS::Batch::ComputeEnvironment Ec2ConfigurationObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::ComputeEnvironment Ec2ConfigurationObject
+<a name="aws-properties-batch-computeenvironment-ec2configurationobject"></a>
 
-Provides information used to select Amazon Machine Images (AMIs) for instances in the
-compute environment. If `Ec2Configuration` isn't specified, the default is
-`ECS_AL2023` ( [Amazon ECS-optimized Amazon Linux 2023](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md)) for EC2 (ECS) compute environments and `EKS_AL2023` ( [Amazon EKS-optimized Amazon Linux 2023\
-AMI](../../../eks/latest/userguide/eks-optimized-ami.md)) for EKS compute environments.
+Provides information used to select Amazon Machine Images (AMIs) for instances in the compute environment. If `Ec2Configuration` isn't specified, the default is `ECS_AL2023` ([Amazon ECS-optimized Amazon Linux 2023](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html)) for EC2 (ECS) compute environments and `EKS_AL2023` ([Amazon EKS-optimized Amazon Linux 2023 AMI](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html)) for EKS compute environments.
 
-###### Note
-
+**Note**
 This object isn't applicable to jobs that are running on Fargate resources.
 
 ## Syntax
+<a name="aws-properties-batch-computeenvironment-ec2configurationobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-computeenvironment-ec2configurationobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageIdOverride" : String,
-  "ImageKubernetesVersion" : String,
-  "ImageType" : String
+  "[BatchImageStatus](#cfn-batch-computeenvironment-ec2configurationobject-batchimagestatus)" : {{String}},
+  "[ImageIdOverride](#cfn-batch-computeenvironment-ec2configurationobject-imageidoverride)" : {{String}},
+  "[ImageKubernetesVersion](#cfn-batch-computeenvironment-ec2configurationobject-imagekubernetesversion)" : {{String}},
+  "[ImageType](#cfn-batch-computeenvironment-ec2configurationobject-imagetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-computeenvironment-ec2configurationobject-syntax.yaml"></a>
 
-```yaml
-
-  ImageIdOverride: String
-  ImageKubernetesVersion: String
-  ImageType: String
-
+```
+  [BatchImageStatus](#cfn-batch-computeenvironment-ec2configurationobject-batchimagestatus): {{String}}
+  [ImageIdOverride](#cfn-batch-computeenvironment-ec2configurationobject-imageidoverride): {{String}}
+  [ImageKubernetesVersion](#cfn-batch-computeenvironment-ec2configurationobject-imagekubernetesversion): {{String}}
+  [ImageType](#cfn-batch-computeenvironment-ec2configurationobject-imagetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-computeenvironment-ec2configurationobject-properties"></a>
 
-`ImageIdOverride`
+`BatchImageStatus`  <a name="cfn-batch-computeenvironment-ec2configurationobject-batchimagestatus"></a>
+The status of the Batch-provided default AMIs associated with the `imageType`.
+The field only appears after the compute environment has begun scaling instances using the `imageType`. The field is not present when an image is specified in `ComputeResources.imageId` (deprecated), the default launch template, or `Ec2Configuration.imageIdOverride`. The field is also not present when the compute environment has a launch template override. For more information on image selection, see [AMI selection order](https://docs.aws.amazon.com/batch/latest/userguide/ami-selection-order.html).
+This field is read-only and only appears in the [DescribeComputeEnvironments](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeComputeEnvironments.html) response.
++ `LATEST` − Using the most recent AMI supported
++ `UPDATE_AVAILABLE` − An updated AMI is available
+  + If a compute environment has multiple AMIs for the `imageType` and any one AMI has `UPDATE_AVAILABLE`, the status shows `UPDATE_AVAILABLE`.
+  + For compute environments that use `BEST_FIT` as their allocation strategy, you can perform a [blue/green update](https://docs.aws.amazon.com/batch/latest/userguide/blue-green-updates.html) to update the AMI.
+  + For all other compute environments, you can perform an [AMI version update](https://docs.aws.amazon.com/batch/latest/userguide/managing-ami-versions.html#updating-ami-versions) to update the AMI to the latest version.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-The AMI ID used for instances launched in the compute environment that match the image type.
-This setting overrides the `imageId` set in the `computeResource`
-object.
+`ImageIdOverride`  <a name="cfn-batch-computeenvironment-ec2configurationobject-imageidoverride"></a>
+The AMI ID used for instances launched in the compute environment that match the image type. This setting overrides the `imageId` set in the `computeResource` object.
+The AMI that you choose for a compute environment must match the architecture of the instance types that you intend to use for that compute environment. For example, if your compute environment uses A1 instance types, the compute resource AMI that you choose must support ARM instances. Amazon ECS vends both x86 and ARM versions of the Amazon ECS-optimized Amazon Linux 2023 AMI. For more information, see [Amazon ECS-optimized Amazon Linux 2023 AMI](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html#ecs-optimized-ami-linux-variants.html) in the *Amazon Elastic Container Service Developer Guide*.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-###### Note
+`ImageKubernetesVersion`  <a name="cfn-batch-computeenvironment-ec2configurationobject-imagekubernetesversion"></a>
+The Kubernetes version for the compute environment. If you don't specify a value, the latest version that AWS Batch supports is used.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-The AMI that you choose for a compute environment must match the architecture of the instance types that
-you intend to use for that compute environment. For example, if your compute environment uses A1 instance types,
-the compute resource AMI that you choose must support ARM instances. Amazon ECS vends both x86 and ARM versions of the
-Amazon ECS-optimized Amazon Linux 2023 AMI. For more information, see [Amazon ECS-optimized\
-Amazon Linux 2023 AMI](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md#ecs-optimized-ami-linux-variants.html)
-in the _Amazon Elastic Container Service Developer Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ImageKubernetesVersion`
-
-The Kubernetes version for the compute environment. If you don't specify a value, the latest
-version that AWS Batch supports is used.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ImageType`
-
-The image type to match with the instance type to select an AMI. The supported values are
-different for `ECS` and `EKS` resources.
-
+`ImageType`  <a name="cfn-batch-computeenvironment-ec2configurationobject-imagetype"></a>
+The image type to match with the instance type to select an AMI. The supported values are different for `ECS` and `EKS` resources.
 ECS
-
-If the `imageIdOverride` parameter isn't specified, then a recent [Amazon ECS-optimized Amazon Linux 2023 AMI](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md) ( `ECS_AL2023`) is used. If a new image type is
-specified in an update, but neither an `imageId` nor a `imageIdOverride`
-parameter is specified, then the latest Amazon ECS optimized AMI for that image type that's
-supported by AWS Batch is used.
-
-###### Important
-
-AWS is ending support for Amazon ECS Amazon Linux 2-optimized and accelerated AMIs on June 30,
-2026\. On January 12, 2026, AWS Batch changed the default AMI for new Amazon ECS compute environments
-from Amazon Linux 2 to Amazon Linux 2023. Effective June 30, 2026, AWS Batch will block creation
-of new Amazon ECS compute environments using Batch-provided Amazon Linux 2 AMIs. We strongly recommend
-migrating your existing AWS Batch Amazon ECS compute environments to Amazon Linux 2023 prior to June 30,
-2026\. For more information on upgrading from AL2 to AL2023, see [How to migrate\
-from ECS AL2 to ECS AL2023](../../../batch/latest/userguide/ecs-migration-2023.md) in the _AWS Batch User Guide_.
-
+If the `imageIdOverride` parameter isn't specified, then a recent [Amazon ECS-optimized Amazon Linux 2023 AMI](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html) (`ECS_AL2023`) is used. If a new image type is specified in an update, but neither an `imageId` nor a `imageIdOverride` parameter is specified, then the latest Amazon ECS optimized AMI for that image type that's supported by AWS Batch is used.
+AWS is ending support for Amazon ECS Amazon Linux 2-optimized and accelerated AMIs on June 30, 2026. On January 12, 2026, AWS Batch changed the default AMI for new Amazon ECS compute environments from Amazon Linux 2 to Amazon Linux 2023. Effective June 30, 2026, AWS Batch will block creation of new Amazon ECS compute environments using Batch-provided Amazon Linux 2 AMIs. We strongly recommend migrating your existing AWS Batch Amazon ECS compute environments to Amazon Linux 2023 prior to June 30, 2026. For more information on upgrading from AL2 to AL2023, see [How to migrate from ECS AL2 to ECS AL2023](https://docs.aws.amazon.com/batch/latest/userguide/ecs-migration-2023.html) in the *AWS Batch User Guide*.
 ECS\_AL2
-
-[Amazon Linux\
-2](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md): Used for non-GPU instance families.
-
+[Amazon Linux 2](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html): Used for non-GPU instance families.
 ECS\_AL2\_NVIDIA
-
-[Amazon Linux 2\
-(GPU)](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md#gpuami): Used for GPU instance families (for example `P4` and
-`G4`) and non AWS Graviton-based instance types.
-
+[Amazon Linux 2 (GPU)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html#gpuami): Used for GPU instance families (for example `P4` and `G4`) and non AWS Graviton-based instance types.
 ECS\_AL2023
-
-[Amazon Linux 2023](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md): Default
-for all non-GPU instance families.
-
-###### Note
-
+[Amazon Linux 2023](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html): Default for all non-GPU instance families.
 Amazon Linux 2023 does not support `A1` instances.
-
 ECS\_AL2023\_NVIDIA
-
-[Amazon Linux 2023\
-(GPU)](../../../amazonecs/latest/developerguide/ecs-optimized-ami.md#gpuami): Default for all GPU instance families and can be used for all non AWS Graviton-based instance types.
-
-###### Note
-
+[Amazon Linux 2023 (GPU)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html#gpuami): Default for all GPU instance families and can be used for all non AWS Graviton-based instance types.
 ECS\_AL2023\_NVIDIA doesn't support `p3` and `g3` instance types.
-
 EKS
-
-If the `imageIdOverride` parameter isn't specified, then a recent [Amazon EKS-optimized Amazon Linux 2023\
-AMI](../../../eks/latest/userguide/eks-optimized-ami.md) ( `EKS_AL2023`) is used. If a new image type is specified in an update,
-but neither an `imageId` nor a `imageIdOverride` parameter is specified,
-then the latest Amazon EKS optimized AMI for that image type that AWS Batch supports is used.
-
-###### Important
-
-Amazon Linux 2023 AMIs are the
-default on AWS Batch for Amazon EKS.
-
-AWS ended support for Amazon EKS AL2-optimized and AL2-accelerated AMIs on November 26,
-2025\. AWS Batch Amazon EKS compute environments using Amazon Linux 2 will no longer receive software
-updates, security patches, or bug fixes from AWS. We recommend migrating to Amazon Linux
-2023\. For more information on upgrading from AL2 to AL2023, see [How to upgrade from EKS AL2 to EKS AL2023](../../../batch/latest/userguide/eks-migration-2023.md) in the _AWS Batch User Guide_.
-
+If the `imageIdOverride` parameter isn't specified, then a recent [Amazon EKS-optimized Amazon Linux 2023 AMI](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html) (`EKS_AL2023`) is used. If a new image type is specified in an update, but neither an `imageId` nor a `imageIdOverride` parameter is specified, then the latest Amazon EKS optimized AMI for that image type that AWS Batch supports is used.
+Amazon Linux 2023 AMIs are the default on AWS Batch for Amazon EKS.
+AWS ended support for Amazon EKS AL2-optimized and AL2-accelerated AMIs on November 26, 2025. AWS Batch Amazon EKS compute environments using Amazon Linux 2 will no longer receive software updates, security patches, or bug fixes from AWS. We recommend migrating to Amazon Linux 2023. For more information on upgrading from AL2 to AL2023, see [How to upgrade from EKS AL2 to EKS AL2023](https://docs.aws.amazon.com/batch/latest/userguide/eks-migration-2023.html) in the *AWS Batch User Guide*.
 EKS\_AL2
-
-[Amazon\
-Linux 2](../../../eks/latest/userguide/eks-optimized-ami.md): Used for non-GPU instance families.
-
+[Amazon Linux 2](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html): Used for non-GPU instance families.
 EKS\_AL2\_NVIDIA
-
-[Amazon\
-Linux 2 (accelerated)](../../../eks/latest/userguide/eks-optimized-ami.md): Used for GPU instance families (for example,
-`P4` and `G4`) and can be used for all non AWS Graviton-based
-instance types.
-
+[Amazon Linux 2 (accelerated)](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html): Used for GPU instance families (for example, `P4` and `G4`) and can be used for all non AWS Graviton-based instance types.
 EKS\_AL2023
-
-[Amazon\
-Linux 2023](../../../eks/latest/userguide/eks-optimized-ami.md): Default for non-GPU instance families.
-
-###### Note
-
+[Amazon Linux 2023](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html): Default for non-GPU instance families.
 Amazon Linux 2023 does not support `A1` instances.
-
 EKS\_AL2023\_NVIDIA
-
-[Amazon\
-Linux 2023 (accelerated)](../../../eks/latest/userguide/eks-optimized-ami.md): Default for GPU instance families and can be used for all non AWS
-Graviton-based instance types.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComputeScalingPolicy
-
-EksConfiguration
+[Amazon Linux 2023 (accelerated)](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html): Default for GPU instance families and can be used for all non AWS Graviton-based instance types.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

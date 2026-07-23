@@ -2,88 +2,63 @@
 title: "AWS::IoTWireless::TaskDefinition LoRaWANGatewayVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::TaskDefinition LoRaWANGatewayVersion
+<a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion"></a>
 
 LoRaWANGatewayVersion object.
 
 ## Syntax
+<a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion-syntax.json"></a>
 
-```json
-
+```
 {
-  "Model" : String,
-  "PackageVersion" : String,
-  "Station" : String
+  "[Model](#cfn-iotwireless-taskdefinition-lorawangatewayversion-model)" : {{String}},
+  "[PackageVersion](#cfn-iotwireless-taskdefinition-lorawangatewayversion-packageversion)" : {{String}},
+  "[Station](#cfn-iotwireless-taskdefinition-lorawangatewayversion-station)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion-syntax.yaml"></a>
 
-```yaml
-
-  Model: String
-  PackageVersion: String
-  Station: String
-
+```
+  [Model](#cfn-iotwireless-taskdefinition-lorawangatewayversion-model): {{String}}
+  [PackageVersion](#cfn-iotwireless-taskdefinition-lorawangatewayversion-packageversion): {{String}}
+  [Station](#cfn-iotwireless-taskdefinition-lorawangatewayversion-station): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion-properties"></a>
 
-`Model`
-
+`Model`  <a name="cfn-iotwireless-taskdefinition-lorawangatewayversion-model"></a>
 The model number of the wireless gateway.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PackageVersion`
-
+`PackageVersion`  <a name="cfn-iotwireless-taskdefinition-lorawangatewayversion-packageversion"></a>
 The version of the wireless gateway firmware.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Station`
-
+`Station`  <a name="cfn-iotwireless-taskdefinition-lorawangatewayversion-station"></a>
 The basic station version of the wireless gateway.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTWireless::TaskDefinition
-
-LoRaWANUpdateGatewayTaskCreate
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

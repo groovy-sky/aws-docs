@@ -2,65 +2,50 @@
 title: "AWS::IoTSiteWise::AssetModel ExpressionVariable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel ExpressionVariable
+<a name="aws-properties-iotsitewise-assetmodel-expressionvariable"></a>
 
 Contains expression variable information.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-assetmodel-expressionvariable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-assetmodel-expressionvariable-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : VariableValue
+  "[Name](#cfn-iotsitewise-assetmodel-expressionvariable-name)" : {{String}},
+  "[Value](#cfn-iotsitewise-assetmodel-expressionvariable-value)" : {{VariableValue}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-assetmodel-expressionvariable-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value:
-    VariableValue
-
+```
+  [Name](#cfn-iotsitewise-assetmodel-expressionvariable-name): {{String}}
+  [Value](#cfn-iotsitewise-assetmodel-expressionvariable-value): {{
+    VariableValue}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-assetmodel-expressionvariable-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-iotsitewise-assetmodel-expressionvariable-name"></a>
 The friendly name of the variable to be used in the expression.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iotsitewise-assetmodel-expressionvariable-value"></a>
 The variable that identifies an asset property from which to use values.
-
-_Required_: Yes
-
-_Type_: [VariableValue](aws-properties-iotsitewise-assetmodel-variablevalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnforcedAssetModelInterfaceRelationship
-
-Metric
+*Required*: Yes
+*Type*: [VariableValue](aws-properties-iotsitewise-assetmodel-variablevalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

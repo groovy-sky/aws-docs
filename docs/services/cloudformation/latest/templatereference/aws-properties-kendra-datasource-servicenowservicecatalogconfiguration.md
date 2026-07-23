@@ -2,151 +2,95 @@
 title: "AWS::Kendra::DataSource ServiceNowServiceCatalogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource ServiceNowServiceCatalogConfiguration
+<a name="aws-properties-kendra-datasource-servicenowservicecatalogconfiguration"></a>
 
-Provides the configuration information for crawling service catalog items in the
-ServiceNow site
+Provides the configuration information for crawling service catalog items in the ServiceNow site
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-servicenowservicecatalogconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-servicenowservicecatalogconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CrawlAttachments" : Boolean,
-  "DocumentDataFieldName" : String,
-  "DocumentTitleFieldName" : String,
-  "ExcludeAttachmentFilePatterns" : [ String, ... ],
-  "FieldMappings" : [ DataSourceToIndexFieldMapping, ... ],
-  "IncludeAttachmentFilePatterns" : [ String, ... ]
+  "[CrawlAttachments](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-crawlattachments)" : {{Boolean}},
+  "[DocumentDataFieldName](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-documentdatafieldname)" : {{String}},
+  "[DocumentTitleFieldName](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-documenttitlefieldname)" : {{String}},
+  "[ExcludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-excludeattachmentfilepatterns)" : {{[ String, ... ]}},
+  "[FieldMappings](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-fieldmappings)" : {{[ DataSourceToIndexFieldMapping, ... ]}},
+  "[IncludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-includeattachmentfilepatterns)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-servicenowservicecatalogconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CrawlAttachments: Boolean
-  DocumentDataFieldName: String
-  DocumentTitleFieldName: String
-  ExcludeAttachmentFilePatterns:
-    - String
-  FieldMappings:
-    - DataSourceToIndexFieldMapping
-  IncludeAttachmentFilePatterns:
-    - String
-
+```
+  [CrawlAttachments](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-crawlattachments): {{Boolean}}
+  [DocumentDataFieldName](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-documentdatafieldname): {{String}}
+  [DocumentTitleFieldName](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-documenttitlefieldname): {{String}}
+  [ExcludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-excludeattachmentfilepatterns): {{
+    - String}}
+  [FieldMappings](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-fieldmappings): {{
+    - DataSourceToIndexFieldMapping}}
+  [IncludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowservicecatalogconfiguration-includeattachmentfilepatterns): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-servicenowservicecatalogconfiguration-properties"></a>
 
-`CrawlAttachments`
-
+`CrawlAttachments`  <a name="cfn-kendra-datasource-servicenowservicecatalogconfiguration-crawlattachments"></a>
 `TRUE` to index attachments to service catalog items.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DocumentDataFieldName`  <a name="cfn-kendra-datasource-servicenowservicecatalogconfiguration-documentdatafieldname"></a>
+The name of the ServiceNow field that is mapped to the index document contents field in the Amazon Kendra index.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`DocumentTitleFieldName`  <a name="cfn-kendra-datasource-servicenowservicecatalogconfiguration-documenttitlefieldname"></a>
+The name of the ServiceNow field that is mapped to the index document title field.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentDataFieldName`
-
-The name of the ServiceNow field that is mapped to the index document contents field
-in the Amazon Kendra index.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentTitleFieldName`
-
-The name of the ServiceNow field that is mapped to the index document title
-field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludeAttachmentFilePatterns`
-
-A list of regular expression patterns to exclude certain attachments of catalogs in
-your ServiceNow. Item that match the patterns are excluded from the index. Items that
-don't match the patterns are included in the index. If an item matches both an inclusion
-and exclusion pattern, the exclusion pattern takes precedence and the item isn't
-included in the index.
-
+`ExcludeAttachmentFilePatterns`  <a name="cfn-kendra-datasource-servicenowservicecatalogconfiguration-excludeattachmentfilepatterns"></a>
+A list of regular expression patterns to exclude certain attachments of catalogs in your ServiceNow. Item that match the patterns are excluded from the index. Items that don't match the patterns are included in the index. If an item matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the item isn't included in the index.
 The regex is applied to the file name of the attachment.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FieldMappings`  <a name="cfn-kendra-datasource-servicenowservicecatalogconfiguration-fieldmappings"></a>
+Maps attributes or field names of catalogs to Amazon Kendra index field names. To create custom fields, use the `UpdateIndex` API before you map to ServiceNow fields. For more information, see [Mapping data source fields](https://docs.aws.amazon.com/kendra/latest/dg/field-mapping.html). The ServiceNow data source field names must exist in your ServiceNow custom metadata.
+*Required*: No
+*Type*: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldMappings`
-
-Maps attributes or field names of catalogs to Amazon Kendra index field names. To
-create custom fields, use the `UpdateIndex` API before you map to ServiceNow
-fields. For more information, see [Mapping data source fields](../../../kendra/latest/dg/field-mapping.md). The
-ServiceNow data source field names must exist in your ServiceNow custom metadata.
-
-_Required_: No
-
-_Type_: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeAttachmentFilePatterns`
-
-A list of regular expression patterns to include certain attachments of catalogs in
-your ServiceNow. Item that match the patterns are included in the index. Items that
-don't match the patterns are excluded from the index. If an item matches both an
-inclusion and exclusion pattern, the exclusion pattern takes precedence and the item
-isn't included in the index.
-
+`IncludeAttachmentFilePatterns`  <a name="cfn-kendra-datasource-servicenowservicecatalogconfiguration-includeattachmentfilepatterns"></a>
+A list of regular expression patterns to include certain attachments of catalogs in your ServiceNow. Item that match the patterns are included in the index. Items that don't match the patterns are excluded from the index. If an item matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the item isn't included in the index.
 The regex is applied to the file name of the attachment.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceNowKnowledgeArticleConfiguration
-
-SharePointConfiguration
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

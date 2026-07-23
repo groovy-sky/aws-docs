@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard RadarChartSeriesSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard RadarChartSeriesSettings
+<a name="aws-properties-quicksight-dashboard-radarchartseriessettings"></a>
 
 The series settings of a radar chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-radarchartseriessettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-radarchartseriessettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "AreaStyleSettings" : RadarChartAreaStyleSettings
+  "[AreaStyleSettings](#cfn-quicksight-dashboard-radarchartseriessettings-areastylesettings)" : {{RadarChartAreaStyleSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-radarchartseriessettings-syntax.yaml"></a>
 
-```yaml
-
-  AreaStyleSettings:
-    RadarChartAreaStyleSettings
-
+```
+  [AreaStyleSettings](#cfn-quicksight-dashboard-radarchartseriessettings-areastylesettings): {{
+    RadarChartAreaStyleSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-radarchartseriessettings-properties"></a>
 
-`AreaStyleSettings`
-
+`AreaStyleSettings`  <a name="cfn-quicksight-dashboard-radarchartseriessettings-areastylesettings"></a>
 The area style settings of a radar chart.
-
-_Required_: No
-
-_Type_: [RadarChartAreaStyleSettings](aws-properties-quicksight-dashboard-radarchartareastylesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RadarChartFieldWells
-
-RadarChartSortConfiguration
+*Required*: No
+*Type*: [RadarChartAreaStyleSettings](aws-properties-quicksight-dashboard-radarchartareastylesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

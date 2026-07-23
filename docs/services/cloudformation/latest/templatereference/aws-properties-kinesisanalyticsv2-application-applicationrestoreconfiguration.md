@@ -2,74 +2,53 @@
 title: "AWS::KinesisAnalyticsV2::Application ApplicationRestoreConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application ApplicationRestoreConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration"></a>
 
 Specifies the method and snapshot to use when restarting an application using previously saved application state.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplicationRestoreType" : String,
-  "SnapshotName" : String
+  "[ApplicationRestoreType](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype)" : {{String}},
+  "[SnapshotName](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ApplicationRestoreType: String
-  SnapshotName: String
-
+```
+  [ApplicationRestoreType](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype): {{String}}
+  [SnapshotName](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration-properties"></a>
 
-`ApplicationRestoreType`
-
+`ApplicationRestoreType`  <a name="cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype"></a>
 Specifies how the application should be restored.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SKIP_RESTORE_FROM_SNAPSHOT | RESTORE_FROM_LATEST_SNAPSHOT | RESTORE_FROM_CUSTOM_SNAPSHOT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SKIP_RESTORE_FROM_SNAPSHOT | RESTORE_FROM_LATEST_SNAPSHOT | RESTORE_FROM_CUSTOM_SNAPSHOT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnapshotName`
-
-The identifier of an existing snapshot of application state to use to restart an application.
-The application uses this value if `RESTORE_FROM_CUSTOM_SNAPSHOT` is specified for the
-`ApplicationRestoreType`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationMaintenanceConfiguration
-
-ApplicationSnapshotConfiguration
+`SnapshotName`  <a name="cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname"></a>
+The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if `RESTORE_FROM_CUSTOM_SNAPSHOT` is specified for the `ApplicationRestoreType`.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

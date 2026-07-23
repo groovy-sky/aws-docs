@@ -2,123 +2,84 @@
 title: "AWS::Kendra::DataSource ColumnConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource ColumnConfiguration
+<a name="aws-properties-kendra-datasource-columnconfiguration"></a>
 
-Provides information about how Amazon Kendra should use the columns of a database
-in an index.
+Provides information about how Amazon Kendra should use the columns of a database in an index.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-columnconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-columnconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChangeDetectingColumns" : [ String, ... ],
-  "DocumentDataColumnName" : String,
-  "DocumentIdColumnName" : String,
-  "DocumentTitleColumnName" : String,
-  "FieldMappings" : [ DataSourceToIndexFieldMapping, ... ]
+  "[ChangeDetectingColumns](#cfn-kendra-datasource-columnconfiguration-changedetectingcolumns)" : {{[ String, ... ]}},
+  "[DocumentDataColumnName](#cfn-kendra-datasource-columnconfiguration-documentdatacolumnname)" : {{String}},
+  "[DocumentIdColumnName](#cfn-kendra-datasource-columnconfiguration-documentidcolumnname)" : {{String}},
+  "[DocumentTitleColumnName](#cfn-kendra-datasource-columnconfiguration-documenttitlecolumnname)" : {{String}},
+  "[FieldMappings](#cfn-kendra-datasource-columnconfiguration-fieldmappings)" : {{[ DataSourceToIndexFieldMapping, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-columnconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ChangeDetectingColumns:
-    - String
-  DocumentDataColumnName: String
-  DocumentIdColumnName: String
-  DocumentTitleColumnName: String
-  FieldMappings:
-    - DataSourceToIndexFieldMapping
-
+```
+  [ChangeDetectingColumns](#cfn-kendra-datasource-columnconfiguration-changedetectingcolumns): {{
+    - String}}
+  [DocumentDataColumnName](#cfn-kendra-datasource-columnconfiguration-documentdatacolumnname): {{String}}
+  [DocumentIdColumnName](#cfn-kendra-datasource-columnconfiguration-documentidcolumnname): {{String}}
+  [DocumentTitleColumnName](#cfn-kendra-datasource-columnconfiguration-documenttitlecolumnname): {{String}}
+  [FieldMappings](#cfn-kendra-datasource-columnconfiguration-fieldmappings): {{
+    - DataSourceToIndexFieldMapping}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-columnconfiguration-properties"></a>
 
-`ChangeDetectingColumns`
-
+`ChangeDetectingColumns`  <a name="cfn-kendra-datasource-columnconfiguration-changedetectingcolumns"></a>
 One to five columns that indicate when a document in the database has changed.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentDataColumnName`
-
+`DocumentDataColumnName`  <a name="cfn-kendra-datasource-columnconfiguration-documentdatacolumnname"></a>
 The column that contains the contents of the document.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentIdColumnName`
-
+`DocumentIdColumnName`  <a name="cfn-kendra-datasource-columnconfiguration-documentidcolumnname"></a>
 The column that provides the document's identifier.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentTitleColumnName`
-
+`DocumentTitleColumnName`  <a name="cfn-kendra-datasource-columnconfiguration-documenttitlecolumnname"></a>
 The column that contains the title of the document.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldMappings`
-
-An array of objects that map database column names to the corresponding fields in an
-index. You must first create the fields in the index using the [UpdateIndex](../../../kendra/latest/dg/api-updateindex.md)
-operation.
-
-_Required_: No
-
-_Type_: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AclConfiguration
-
-ConfluenceAttachmentConfiguration
+`FieldMappings`  <a name="cfn-kendra-datasource-columnconfiguration-fieldmappings"></a>
+An array of objects that map database column names to the corresponding fields in an index. You must first create the fields in the index using the [UpdateIndex](https://docs.aws.amazon.com/kendra/latest/dg/API_UpdateIndex.html) operation.
+*Required*: No
+*Type*: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

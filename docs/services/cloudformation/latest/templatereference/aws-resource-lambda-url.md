@@ -2,161 +2,119 @@
 title: "AWS::Lambda::Url"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Url
+<a name="aws-resource-lambda-url"></a>
 
-The `AWS::Lambda::Url` resource creates a function URL with the specified configuration parameters. A [function URL](../../../lambda/latest/dg/lambda-urls.md) is a dedicated HTTP(S) endpoint that
-you can use to invoke your function.
+The `AWS::Lambda::Url` resource creates a function URL with the specified configuration parameters. A [function URL](https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html) is a dedicated HTTP(S) endpoint that you can use to invoke your function.
 
 ## Syntax
+<a name="aws-resource-lambda-url-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lambda-url-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Lambda::Url",
   "Properties" : {
-      "AuthType" : String,
-      "Cors" : Cors,
-      "InvokeMode" : String,
-      "Qualifier" : String,
-      "TargetFunctionArn" : String
+      "[AuthType](#cfn-lambda-url-authtype)" : {{String}},
+      "[Cors](#cfn-lambda-url-cors)" : {{Cors}},
+      "[InvokeMode](#cfn-lambda-url-invokemode)" : {{String}},
+      "[Qualifier](#cfn-lambda-url-qualifier)" : {{String}},
+      "[TargetFunctionArn](#cfn-lambda-url-targetfunctionarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lambda-url-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Lambda::Url
 Properties:
-  AuthType: String
-  Cors:
-    Cors
-  InvokeMode: String
-  Qualifier: String
-  TargetFunctionArn: String
-
+  [AuthType](#cfn-lambda-url-authtype): {{String}}
+  [Cors](#cfn-lambda-url-cors): {{
+    Cors}}
+  [InvokeMode](#cfn-lambda-url-invokemode): {{String}}
+  [Qualifier](#cfn-lambda-url-qualifier): {{String}}
+  [TargetFunctionArn](#cfn-lambda-url-targetfunctionarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-lambda-url-properties"></a>
 
-`AuthType`
+`AuthType`  <a name="cfn-lambda-url-authtype"></a>
+The type of authentication that your function URL uses. Set to `AWS_IAM` if you want to restrict access to authenticated users only. Set to `NONE` if you want to bypass IAM authentication to create a public endpoint. For more information, see [Security and auth model for Lambda function URLs](https://docs.aws.amazon.com/lambda/latest/dg/urls-auth.html).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AWS_IAM | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of authentication that your function URL uses. Set to `AWS_IAM` if you want to restrict access to authenticated
-users only. Set to `NONE` if you want to bypass IAM authentication to create a public endpoint. For more information,
-see [Security and auth model for Lambda function URLs](../../../lambda/latest/dg/urls-auth.md).
+`Cors`  <a name="cfn-lambda-url-cors"></a>
+The [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) settings for your function URL.
+*Required*: No
+*Type*: [Cors](aws-properties-lambda-url-cors.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AWS_IAM | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Cors`
-
-The [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) settings
-for your function URL.
-
-_Required_: No
-
-_Type_: [Cors](aws-properties-lambda-url-cors.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InvokeMode`
-
+`InvokeMode`  <a name="cfn-lambda-url-invokemode"></a>
 Use one of the following options:
++ `BUFFERED` – This is the default option. Lambda invokes your function using the `Invoke` API operation. Invocation results are available when the payload is complete. The maximum payload size is 6 MB.
++ `RESPONSE_STREAM` – Your function streams payload results as they become available. Lambda invokes your function using the `InvokeWithResponseStream` API operation. The maximum response payload size is 200 MB.
+*Required*: No
+*Type*: String
+*Allowed values*: `BUFFERED | RESPONSE_STREAM`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `BUFFERED` – This is the default option. Lambda invokes your function using the `Invoke` API operation. Invocation results
-are available when the payload is complete. The maximum payload size is 6 MB.
-
-- `RESPONSE_STREAM` – Your function streams payload results as they become available. Lambda invokes your function using
-the `InvokeWithResponseStream` API operation. The maximum response payload size is 200 MB.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BUFFERED | RESPONSE_STREAM`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Qualifier`
-
+`Qualifier`  <a name="cfn-lambda-url-qualifier"></a>
 The alias name.
+*Required*: No
+*Type*: String
+*Pattern*: `((?!^[0-9]+$)([a-zA-Z0-9-_]+))`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `((?!^[0-9]+$)([a-zA-Z0-9-_]+))`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TargetFunctionArn`
-
+`TargetFunctionArn`  <a name="cfn-lambda-url-targetfunctionarn"></a>
 The name of the Lambda function.
 
-###### Name formats
-
-- **Function name** \- `my-function`.
-
-- **Function ARN** \- `arn:aws:lambda:us-east-2:123456789012:function:my-function`.
-
-- **Partial ARN** \- `123456789012:function:my-function`.
-
-The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64
-characters in length.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso(b?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:((?!\d+)[0-9a-zA-Z-_]+))?$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+**Name formats**
++ **Function name** - `my-function`.
++ **Function ARN** - `arn:aws:lambda:us-east-2:123456789012:function:my-function`.
++ **Partial ARN** - `123456789012:function:my-function`.
+The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso(b?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:((?!\d+)[0-9a-zA-Z-_]+))?$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-lambda-url-return-values"></a>
 
 ### Ref
+<a name="aws-resource-lambda-url-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-lambda-url-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`FunctionArn`
+####
+<a name="aws-resource-lambda-url-return-values-fn--getatt-fn--getatt"></a>
 
+`FunctionArn`  <a name="FunctionArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the function.
 
-`FunctionUrl`
-
+`FunctionUrl`  <a name="FunctionUrl-fn::getatt"></a>
 The HTTP URL endpoint for your function.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Lambda::Permission
-
-Cors
 
 All content copied from https://docs.aws.amazon.com/.

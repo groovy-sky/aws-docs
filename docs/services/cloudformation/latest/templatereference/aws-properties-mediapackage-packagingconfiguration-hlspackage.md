@@ -2,102 +2,75 @@
 title: "AWS::MediaPackage::PackagingConfiguration HlsPackage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration HlsPackage
+<a name="aws-properties-mediapackage-packagingconfiguration-hlspackage"></a>
 
 Parameters for a packaging configuration that uses HTTP Live Streaming (HLS) packaging.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packagingconfiguration-hlspackage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packagingconfiguration-hlspackage-syntax.json"></a>
 
-```json
-
+```
 {
-  "Encryption" : HlsEncryption,
-  "HlsManifests" : [ HlsManifest, ... ],
-  "IncludeDvbSubtitles" : Boolean,
-  "SegmentDurationSeconds" : Integer,
-  "UseAudioRenditionGroup" : Boolean
+  "[Encryption](#cfn-mediapackage-packagingconfiguration-hlspackage-encryption)" : {{HlsEncryption}},
+  "[HlsManifests](#cfn-mediapackage-packagingconfiguration-hlspackage-hlsmanifests)" : {{[ HlsManifest, ... ]}},
+  "[IncludeDvbSubtitles](#cfn-mediapackage-packagingconfiguration-hlspackage-includedvbsubtitles)" : {{Boolean}},
+  "[SegmentDurationSeconds](#cfn-mediapackage-packagingconfiguration-hlspackage-segmentdurationseconds)" : {{Integer}},
+  "[UseAudioRenditionGroup](#cfn-mediapackage-packagingconfiguration-hlspackage-useaudiorenditiongroup)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packagingconfiguration-hlspackage-syntax.yaml"></a>
 
-```yaml
-
-  Encryption:
-    HlsEncryption
-  HlsManifests:
-    - HlsManifest
-  IncludeDvbSubtitles: Boolean
-  SegmentDurationSeconds: Integer
-  UseAudioRenditionGroup: Boolean
-
+```
+  [Encryption](#cfn-mediapackage-packagingconfiguration-hlspackage-encryption): {{
+    HlsEncryption}}
+  [HlsManifests](#cfn-mediapackage-packagingconfiguration-hlspackage-hlsmanifests): {{
+    - HlsManifest}}
+  [IncludeDvbSubtitles](#cfn-mediapackage-packagingconfiguration-hlspackage-includedvbsubtitles): {{Boolean}}
+  [SegmentDurationSeconds](#cfn-mediapackage-packagingconfiguration-hlspackage-segmentdurationseconds): {{Integer}}
+  [UseAudioRenditionGroup](#cfn-mediapackage-packagingconfiguration-hlspackage-useaudiorenditiongroup): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packagingconfiguration-hlspackage-properties"></a>
 
-`Encryption`
-
+`Encryption`  <a name="cfn-mediapackage-packagingconfiguration-hlspackage-encryption"></a>
 Parameters for encrypting content.
+*Required*: No
+*Type*: [HlsEncryption](aws-properties-mediapackage-packagingconfiguration-hlsencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HlsEncryption](aws-properties-mediapackage-packagingconfiguration-hlsencryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HlsManifests`
-
+`HlsManifests`  <a name="cfn-mediapackage-packagingconfiguration-hlspackage-hlsmanifests"></a>
 A list of HLS manifest configurations that are available from this endpoint.
+*Required*: Yes
+*Type*: Array of [HlsManifest](aws-properties-mediapackage-packagingconfiguration-hlsmanifest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [HlsManifest](aws-properties-mediapackage-packagingconfiguration-hlsmanifest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeDvbSubtitles`
-
+`IncludeDvbSubtitles`  <a name="cfn-mediapackage-packagingconfiguration-hlspackage-includedvbsubtitles"></a>
 When enabled, MediaPackage passes through digital video broadcasting (DVB) subtitles into the output.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentDurationSeconds`
-
+`SegmentDurationSeconds`  <a name="cfn-mediapackage-packagingconfiguration-hlspackage-segmentdurationseconds"></a>
 Duration (in seconds) of each fragment. Actual fragments are rounded to the nearest multiple of the source fragment duration.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseAudioRenditionGroup`
-
+`UseAudioRenditionGroup`  <a name="cfn-mediapackage-packagingconfiguration-hlspackage-useaudiorenditiongroup"></a>
 When true, AWS Elemental MediaPackage bundles all audio tracks in a rendition group. All other tracks in the stream can be used with any audio rendition from the group.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HlsManifest
-
-MssEncryption
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

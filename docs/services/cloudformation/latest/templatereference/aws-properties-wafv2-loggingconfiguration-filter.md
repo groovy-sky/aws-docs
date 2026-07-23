@@ -2,84 +2,61 @@
 title: "AWS::WAFv2::LoggingConfiguration Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::LoggingConfiguration Filter
+<a name="aws-properties-wafv2-loggingconfiguration-filter"></a>
 
 A single logging filter, used in `LoggingFilter`.
 
 ## Syntax
+<a name="aws-properties-wafv2-loggingconfiguration-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-loggingconfiguration-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Behavior" : String,
-  "Conditions" : [ Condition, ... ],
-  "Requirement" : String
+  "[Behavior](#cfn-wafv2-loggingconfiguration-filter-behavior)" : {{String}},
+  "[Conditions](#cfn-wafv2-loggingconfiguration-filter-conditions)" : {{[ Condition, ... ]}},
+  "[Requirement](#cfn-wafv2-loggingconfiguration-filter-requirement)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-loggingconfiguration-filter-syntax.yaml"></a>
 
-```yaml
-
-  Behavior: String
-  Conditions:
-    - Condition
-  Requirement: String
-
+```
+  [Behavior](#cfn-wafv2-loggingconfiguration-filter-behavior): {{String}}
+  [Conditions](#cfn-wafv2-loggingconfiguration-filter-conditions): {{
+    - Condition}}
+  [Requirement](#cfn-wafv2-loggingconfiguration-filter-requirement): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-loggingconfiguration-filter-properties"></a>
 
-`Behavior`
-
+`Behavior`  <a name="cfn-wafv2-loggingconfiguration-filter-behavior"></a>
 How to handle logs that satisfy the filter's conditions and requirement.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `KEEP | DROP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `KEEP | DROP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Conditions`
-
+`Conditions`  <a name="cfn-wafv2-loggingconfiguration-filter-conditions"></a>
 Match conditions for the filter.
+*Required*: Yes
+*Type*: Array of [Condition](aws-properties-wafv2-loggingconfiguration-condition.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Condition](aws-properties-wafv2-loggingconfiguration-condition.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Requirement`
-
-Logic to apply to the filtering conditions. You can specify that, in order to satisfy
-the filter, a log must match all conditions or must match at least one condition.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MEETS_ALL | MEETS_ANY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldToMatch
-
-LabelNameCondition
+`Requirement`  <a name="cfn-wafv2-loggingconfiguration-filter-requirement"></a>
+Logic to apply to the filtering conditions. You can specify that, in order to satisfy the filter, a log must match all conditions or must match at least one condition.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MEETS_ALL | MEETS_ANY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

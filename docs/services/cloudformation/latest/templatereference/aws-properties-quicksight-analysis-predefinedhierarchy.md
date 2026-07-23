@@ -2,90 +2,65 @@
 title: "AWS::QuickSight::Analysis PredefinedHierarchy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PredefinedHierarchy
+<a name="aws-properties-quicksight-analysis-predefinedhierarchy"></a>
 
 The option that determines the hierarchy of the fields that are defined during data preparation. These fields are available to use in any analysis that uses the data source.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-predefinedhierarchy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-predefinedhierarchy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Columns" : [ ColumnIdentifier, ... ],
-  "DrillDownFilters" : [ DrillDownFilter, ... ],
-  "HierarchyId" : String
+  "[Columns](#cfn-quicksight-analysis-predefinedhierarchy-columns)" : {{[ ColumnIdentifier, ... ]}},
+  "[DrillDownFilters](#cfn-quicksight-analysis-predefinedhierarchy-drilldownfilters)" : {{[ DrillDownFilter, ... ]}},
+  "[HierarchyId](#cfn-quicksight-analysis-predefinedhierarchy-hierarchyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-predefinedhierarchy-syntax.yaml"></a>
 
-```yaml
-
-  Columns:
-    - ColumnIdentifier
-  DrillDownFilters:
-    - DrillDownFilter
-  HierarchyId: String
-
+```
+  [Columns](#cfn-quicksight-analysis-predefinedhierarchy-columns): {{
+    - ColumnIdentifier}}
+  [DrillDownFilters](#cfn-quicksight-analysis-predefinedhierarchy-drilldownfilters): {{
+    - DrillDownFilter}}
+  [HierarchyId](#cfn-quicksight-analysis-predefinedhierarchy-hierarchyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-predefinedhierarchy-properties"></a>
 
-`Columns`
-
+`Columns`  <a name="cfn-quicksight-analysis-predefinedhierarchy-columns"></a>
 The list of columns that define the predefined hierarchy.
+*Required*: Yes
+*Type*: Array of [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DrillDownFilters`
-
+`DrillDownFilters`  <a name="cfn-quicksight-analysis-predefinedhierarchy-drilldownfilters"></a>
 The option that determines the drill down filters for the predefined hierarchy.
+*Required*: No
+*Type*: Array of [DrillDownFilter](aws-properties-quicksight-analysis-drilldownfilter.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DrillDownFilter](aws-properties-quicksight-analysis-drilldownfilter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HierarchyId`
-
+`HierarchyId`  <a name="cfn-quicksight-analysis-predefinedhierarchy-hierarchyid"></a>
 The hierarchy ID of the predefined hierarchy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginVisualTableQuerySort
-
-ProgressBarOptions
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

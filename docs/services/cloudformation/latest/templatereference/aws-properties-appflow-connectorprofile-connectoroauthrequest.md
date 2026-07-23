@@ -2,79 +2,57 @@
 title: "AWS::AppFlow::ConnectorProfile ConnectorOAuthRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile ConnectorOAuthRequest
+<a name="aws-properties-appflow-connectorprofile-connectoroauthrequest"></a>
 
-Used by select connectors for which the OAuth workflow is supported, such as Salesforce,
-Google Analytics, Marketo, Zendesk, and Slack.
+ Used by select connectors for which the OAuth workflow is supported, such as Salesforce, Google Analytics, Marketo, Zendesk, and Slack.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-connectoroauthrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-connectoroauthrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthCode" : String,
-  "RedirectUri" : String
+  "[AuthCode](#cfn-appflow-connectorprofile-connectoroauthrequest-authcode)" : {{String}},
+  "[RedirectUri](#cfn-appflow-connectorprofile-connectoroauthrequest-redirecturi)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-connectoroauthrequest-syntax.yaml"></a>
 
-```yaml
-
-  AuthCode: String
-  RedirectUri: String
-
+```
+  [AuthCode](#cfn-appflow-connectorprofile-connectoroauthrequest-authcode): {{String}}
+  [RedirectUri](#cfn-appflow-connectorprofile-connectoroauthrequest-redirecturi): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-connectoroauthrequest-properties"></a>
 
-`AuthCode`
+`AuthCode`  <a name="cfn-appflow-connectorprofile-connectoroauthrequest-authcode"></a>
+ The code provided by the connector when it has been authenticated via the connected app.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The code provided by the connector when it has been authenticated via the connected app.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedirectUri`
-
-The URL to which the authentication server redirects the browser after authorization has
-been granted.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RedirectUri`  <a name="cfn-appflow-connectorprofile-connectoroauthrequest-redirecturi"></a>
+ The URL to which the authentication server redirects the browser after authorization has been granted.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ConnectorOAuthRequest](../../../../reference/appflow/1-0/apireference/api-connectoroauthrequest.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BasicAuthCredentials
-
-ConnectorProfileConfig
+<a name="aws-properties-appflow-connectorprofile-connectoroauthrequest--seealso"></a>
++ [ConnectorOAuthRequest](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorOAuthRequest.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

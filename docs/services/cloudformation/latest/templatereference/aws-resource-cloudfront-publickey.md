@@ -2,83 +2,75 @@
 title: "AWS::CloudFront::PublicKey"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::PublicKey
+<a name="aws-resource-cloudfront-publickey"></a>
 
-A public key that you can use with [signed URLs and signed cookies](../../../amazoncloudfront/latest/developerguide/privatecontent.md), or with [field-level encryption](../../../amazoncloudfront/latest/developerguide/field-level-encryption.md).
+A public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).
 
 CloudFront supports signed URLs and signed cookies with RSA 2048 or ECDSA 256 key signatures. Field-level encryption is only compatible with RSA 2048 key signatures.
 
 ## Syntax
+<a name="aws-resource-cloudfront-publickey-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudfront-publickey-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFront::PublicKey",
   "Properties" : {
-      "PublicKeyConfig" : PublicKeyConfig
+      "[PublicKeyConfig](#cfn-cloudfront-publickey-publickeyconfig)" : {{PublicKeyConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudfront-publickey-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFront::PublicKey
 Properties:
-  PublicKeyConfig:
-    PublicKeyConfig
-
+  [PublicKeyConfig](#cfn-cloudfront-publickey-publickeyconfig): {{
+    PublicKeyConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudfront-publickey-properties"></a>
 
-`PublicKeyConfig`
-
-Configuration information about a public key that you can use with [signed URLs and signed cookies](../../../amazoncloudfront/latest/developerguide/privatecontent.md), or with [field-level encryption](../../../amazoncloudfront/latest/developerguide/field-level-encryption.md).
-
-_Required_: Yes
-
-_Type_: [PublicKeyConfig](aws-properties-cloudfront-publickey-publickeyconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`PublicKeyConfig`  <a name="cfn-cloudfront-publickey-publickeyconfig"></a>
+Configuration information about a public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).
+*Required*: Yes
+*Type*: [PublicKeyConfig](aws-properties-cloudfront-publickey-publickeyconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudfront-publickey-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudfront-publickey-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the public key. For example:
-`K36X4X2EO997HM`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the public key. For example: `K36X4X2EO997HM`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudfront-publickey-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedTime`
+####
+<a name="aws-resource-cloudfront-publickey-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The date and time when the public key was uploaded.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The identifier of the public key.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QueryStringsConfig
-
-PublicKeyConfig
 
 All content copied from https://docs.aws.amazon.com/.

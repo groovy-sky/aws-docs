@@ -2,80 +2,58 @@
 title: "AWS::Route53RecoveryControl::SafetyRule RuleConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryControl::SafetyRule RuleConfig
+<a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig"></a>
 
-The rule configuration for an assertion rule. That is, the criteria that you set for specific assertion
-controls (routing controls) that specify how many controls must be enabled after a transaction completes.
+The rule configuration for an assertion rule. That is, the criteria that you set for specific assertion controls (routing controls) that specify how many controls must be enabled after a transaction completes.
 
 ## Syntax
+<a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Inverted" : Boolean,
-  "Threshold" : Integer,
-  "Type" : String
+  "[Inverted](#cfn-route53recoverycontrol-safetyrule-ruleconfig-inverted)" : {{Boolean}},
+  "[Threshold](#cfn-route53recoverycontrol-safetyrule-ruleconfig-threshold)" : {{Integer}},
+  "[Type](#cfn-route53recoverycontrol-safetyrule-ruleconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig-syntax.yaml"></a>
 
-```yaml
-
-  Inverted: Boolean
-  Threshold: Integer
-  Type: String
-
+```
+  [Inverted](#cfn-route53recoverycontrol-safetyrule-ruleconfig-inverted): {{Boolean}}
+  [Threshold](#cfn-route53recoverycontrol-safetyrule-ruleconfig-threshold): {{Integer}}
+  [Type](#cfn-route53recoverycontrol-safetyrule-ruleconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig-properties"></a>
 
-`Inverted`
-
+`Inverted`  <a name="cfn-route53recoverycontrol-safetyrule-ruleconfig-inverted"></a>
 Logical negation of the rule. If the rule would usually evaluate true, it's evaluated as false, and vice versa.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
+`Threshold`  <a name="cfn-route53recoverycontrol-safetyrule-ruleconfig-threshold"></a>
+The value of N, when you specify an `ATLEAST` rule type. That is, `Threshold` is the number of controls that must be set when you specify an `ATLEAST` type.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Threshold`
-
-The value of N, when you specify an `ATLEAST` rule type. That is, `Threshold` is the number
-of controls that must be set when you specify an `ATLEAST` type.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-route53recoverycontrol-safetyrule-ruleconfig-type"></a>
 A rule can be one of the following: `ATLEAST`, `AND`, or `OR`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AND | OR | ATLEAST`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GatingRule
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AND | OR | ATLEAST`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

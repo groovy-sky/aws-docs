@@ -2,60 +2,44 @@
 title: "AWS::VerifiedPermissions::IdentitySource CognitoGroupConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VerifiedPermissions::IdentitySource CognitoGroupConfiguration
+<a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration"></a>
 
-The type of entity that a policy store maps to groups from an Amazon Cognito user
-pool identity source.
+The type of entity that a policy store maps to groups from an Amazon Cognito user pool identity source.
 
 ## Syntax
+<a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "GroupEntityType" : String
+  "[GroupEntityType](#cfn-verifiedpermissions-identitysource-cognitogroupconfiguration-groupentitytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  GroupEntityType: String
-
+```
+  [GroupEntityType](#cfn-verifiedpermissions-identitysource-cognitogroupconfiguration-groupentitytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration-properties"></a>
 
-`GroupEntityType`
-
-The name of the schema entity type that's mapped to the user pool group. Defaults
-to `AWS::CognitoGroup`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([_a-zA-Z][_a-zA-Z0-9]*::)*[_a-zA-Z][_a-zA-Z0-9]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VerifiedPermissions::IdentitySource
-
-CognitoUserPoolConfiguration
+`GroupEntityType`  <a name="cfn-verifiedpermissions-identitysource-cognitogroupconfiguration-groupentitytype"></a>
+The name of the schema entity type that's mapped to the user pool group. Defaults to `AWS::CognitoGroup`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([_a-zA-Z][_a-zA-Z0-9]*::)*[_a-zA-Z][_a-zA-Z0-9]*$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

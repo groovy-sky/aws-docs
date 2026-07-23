@@ -2,55 +2,42 @@
 title: "AWS::BCMDataExports::Export RefreshCadence"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export RefreshCadence
+<a name="aws-properties-bcmdataexports-export-refreshcadence"></a>
 
 The cadence for AWS to update the data export in your S3 bucket.
 
 ## Syntax
+<a name="aws-properties-bcmdataexports-export-refreshcadence-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bcmdataexports-export-refreshcadence-syntax.json"></a>
 
-```json
-
+```
 {
-  "Frequency" : String
+  "[Frequency](#cfn-bcmdataexports-export-refreshcadence-frequency)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bcmdataexports-export-refreshcadence-syntax.yaml"></a>
 
-```yaml
-
-  Frequency: String
-
+```
+  [Frequency](#cfn-bcmdataexports-export-refreshcadence-frequency): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bcmdataexports-export-refreshcadence-properties"></a>
 
-`Frequency`
-
-The frequency that data exports are updated. The export refreshes each time the source
-data updates, up to three times daily.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SYNCHRONOUS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Export
-
-ResourceTag
+`Frequency`  <a name="cfn-bcmdataexports-export-refreshcadence-frequency"></a>
+The frequency that data exports are updated. The export refreshes each time the source data updates, up to three times daily.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SYNCHRONOUS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

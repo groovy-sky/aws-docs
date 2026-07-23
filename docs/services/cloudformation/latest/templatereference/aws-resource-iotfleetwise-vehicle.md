@@ -2,187 +2,140 @@
 title: "AWS::IoTFleetWise::Vehicle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Vehicle
+<a name="aws-resource-iotfleetwise-vehicle"></a>
 
-Creates a vehicle, which is an instance of a vehicle model (model manifest). Vehicles
-created from the same vehicle model consist of the same signals inherited from the
-vehicle model.
+ Creates a vehicle, which is an instance of a vehicle model (model manifest). Vehicles created from the same vehicle model consist of the same signals inherited from the vehicle model.
 
-###### Note
+**Note**
+ If you have an existing AWS IoT thing, you can use AWS IoT FleetWise to create a vehicle and collect data from your thing.
 
-If you have an existing AWS IoT thing, you can use AWS IoT FleetWise to create a
-vehicle and collect data from your thing.
-
-For more information, see [Vehicles](../../../iot-fleetwise/latest/developerguide/vehicles.md) in the _AWS IoT FleetWise Developer Guide_.
+For more information, see [Vehicles](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/vehicles.html) in the *AWS IoT FleetWise Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-iotfleetwise-vehicle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotfleetwise-vehicle-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTFleetWise::Vehicle",
   "Properties" : {
-      "AssociationBehavior" : String,
-      "Attributes" : {Key: Value, ...},
-      "DecoderManifestArn" : String,
-      "ModelManifestArn" : String,
-      "Name" : String,
-      "StateTemplates" : [ StateTemplateAssociation, ... ],
-      "Tags" : [ Tag, ... ]
+      "[AssociationBehavior](#cfn-iotfleetwise-vehicle-associationbehavior)" : {{String}},
+      "[Attributes](#cfn-iotfleetwise-vehicle-attributes)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[DecoderManifestArn](#cfn-iotfleetwise-vehicle-decodermanifestarn)" : {{String}},
+      "[ModelManifestArn](#cfn-iotfleetwise-vehicle-modelmanifestarn)" : {{String}},
+      "[Name](#cfn-iotfleetwise-vehicle-name)" : {{String}},
+      "[StateTemplates](#cfn-iotfleetwise-vehicle-statetemplates)" : {{[ StateTemplateAssociation, ... ]}},
+      "[Tags](#cfn-iotfleetwise-vehicle-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotfleetwise-vehicle-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTFleetWise::Vehicle
 Properties:
-  AssociationBehavior: String
-  Attributes:
-    Key: Value
-  DecoderManifestArn: String
-  ModelManifestArn: String
-  Name: String
-  StateTemplates:
-    - StateTemplateAssociation
-  Tags:
-    - Tag
-
+  [AssociationBehavior](#cfn-iotfleetwise-vehicle-associationbehavior): {{String}}
+  [Attributes](#cfn-iotfleetwise-vehicle-attributes): {{
+    {{Key}}: {{Value}}}}
+  [DecoderManifestArn](#cfn-iotfleetwise-vehicle-decodermanifestarn): {{String}}
+  [ModelManifestArn](#cfn-iotfleetwise-vehicle-modelmanifestarn): {{String}}
+  [Name](#cfn-iotfleetwise-vehicle-name): {{String}}
+  [StateTemplates](#cfn-iotfleetwise-vehicle-statetemplates): {{
+    - StateTemplateAssociation}}
+  [Tags](#cfn-iotfleetwise-vehicle-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotfleetwise-vehicle-properties"></a>
 
-`AssociationBehavior`
+`AssociationBehavior`  <a name="cfn-iotfleetwise-vehicle-associationbehavior"></a>
+ An option to create a new AWS IoT thing when creating a vehicle, or to validate an existing thing as a vehicle.
+*Required*: No
+*Type*: String
+*Allowed values*: `CreateIotThing | ValidateIotThingExists`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An option to create a new AWS IoT thing when creating a vehicle, or to validate an
-existing thing as a vehicle.
+`Attributes`  <a name="cfn-iotfleetwise-vehicle-attributes"></a>
+ Static information about a vehicle in a key-value pair. For example: `"engine Type"` : `"v6"`
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CreateIotThing | ValidateIotThingExists`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Attributes`
-
-Static information about a vehicle in a key-value pair. For example: `"engine
-                Type"` : `"v6"`
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DecoderManifestArn`
-
+`DecoderManifestArn`  <a name="cfn-iotfleetwise-vehicle-decodermanifestarn"></a>
 The Amazon Resource Name (ARN) of a decoder manifest associated with the vehicle to create.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelManifestArn`
-
+`ModelManifestArn`  <a name="cfn-iotfleetwise-vehicle-modelmanifestarn"></a>
 The Amazon Resource Name (ARN) of the vehicle model (model manifest) to create the vehicle from.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-iotfleetwise-vehicle-name"></a>
 The unique ID of the vehicle.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z\d\-_:]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z\d\-_:]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StateTemplates`
-
+`StateTemplates`  <a name="cfn-iotfleetwise-vehicle-statetemplates"></a>
 Associate state templates to track the state of the vehicle. State templates determine which signal updates the vehicle sends to the cloud.
+*Required*: No
+*Type*: Array of [StateTemplateAssociation](aws-properties-iotfleetwise-vehicle-statetemplateassociation.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [StateTemplateAssociation](aws-properties-iotfleetwise-vehicle-statetemplateassociation.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Metadata which can be used to manage the vehicle.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotfleetwise-vehicle-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iotfleetwise-vehicle-tags"></a>
+ Metadata which can be used to manage the vehicle.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotfleetwise-vehicle-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotfleetwise-vehicle-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotfleetwise-vehicle-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iotfleetwise-vehicle-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iotfleetwise-vehicle-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the vehicle.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the vehicle was created in seconds since epoch (January 1, 1970 at midnight UTC time).
 
-`LastModificationTime`
-
+`LastModificationTime`  <a name="LastModificationTime-fn::getatt"></a>
 The time the vehicle was last updated in seconds since epoch (January 1, 1970 at midnight UTC time).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-PeriodicStateTemplateUpdateStrategy
 
 All content copied from https://docs.aws.amazon.com/.

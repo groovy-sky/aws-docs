@@ -2,53 +2,42 @@
 title: "AWS::B2BI::Partnership OutboundEdiOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Partnership OutboundEdiOptions
+<a name="aws-properties-b2bi-partnership-outboundedioptions"></a>
 
 A container for outbound EDI options.
 
 ## Syntax
+<a name="aws-properties-b2bi-partnership-outboundedioptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-partnership-outboundedioptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "X12" : X12Envelope
+  "[X12](#cfn-b2bi-partnership-outboundedioptions-x12)" : {{X12Envelope}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-partnership-outboundedioptions-syntax.yaml"></a>
 
-```yaml
-
-  X12:
-    X12Envelope
-
+```
+  [X12](#cfn-b2bi-partnership-outboundedioptions-x12): {{
+    X12Envelope}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-partnership-outboundedioptions-properties"></a>
 
-`X12`
-
+`X12`  <a name="cfn-b2bi-partnership-outboundedioptions-x12"></a>
 A structure that contains an X12 envelope structure.
-
-_Required_: Yes
-
-_Type_: [X12Envelope](aws-properties-b2bi-partnership-x12envelope.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InboundEdiOptions
-
-Tag
+*Required*: Yes
+*Type*: [X12Envelope](aws-properties-b2bi-partnership-x12envelope.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

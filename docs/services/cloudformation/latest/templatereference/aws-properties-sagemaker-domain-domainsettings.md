@@ -2,131 +2,89 @@
 title: "AWS::SageMaker::Domain DomainSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain DomainSettings
+<a name="aws-properties-sagemaker-domain-domainsettings"></a>
 
-A collection of settings that apply to the `SageMaker Domain`. These settings
-are specified through the `CreateDomain` API call.
+A collection of settings that apply to the `SageMaker Domain`. These settings are specified through the `CreateDomain` API call.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-domainsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-domainsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DockerSettings" : DockerSettings,
-  "ExecutionRoleIdentityConfig" : String,
-  "IpAddressType" : String,
-  "RStudioServerProDomainSettings" : RStudioServerProDomainSettings,
-  "SecurityGroupIds" : [ String, ... ],
-  "UnifiedStudioSettings" : UnifiedStudioSettings
+  "[DockerSettings](#cfn-sagemaker-domain-domainsettings-dockersettings)" : {{DockerSettings}},
+  "[ExecutionRoleIdentityConfig](#cfn-sagemaker-domain-domainsettings-executionroleidentityconfig)" : {{String}},
+  "[IpAddressType](#cfn-sagemaker-domain-domainsettings-ipaddresstype)" : {{String}},
+  "[RStudioServerProDomainSettings](#cfn-sagemaker-domain-domainsettings-rstudioserverprodomainsettings)" : {{RStudioServerProDomainSettings}},
+  "[SecurityGroupIds](#cfn-sagemaker-domain-domainsettings-securitygroupids)" : {{[ String, ... ]}},
+  "[UnifiedStudioSettings](#cfn-sagemaker-domain-domainsettings-unifiedstudiosettings)" : {{UnifiedStudioSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-domainsettings-syntax.yaml"></a>
 
-```yaml
-
-  DockerSettings:
-    DockerSettings
-  ExecutionRoleIdentityConfig: String
-  IpAddressType: String
-  RStudioServerProDomainSettings:
-    RStudioServerProDomainSettings
-  SecurityGroupIds:
-    - String
-  UnifiedStudioSettings:
-    UnifiedStudioSettings
-
+```
+  [DockerSettings](#cfn-sagemaker-domain-domainsettings-dockersettings): {{
+    DockerSettings}}
+  [ExecutionRoleIdentityConfig](#cfn-sagemaker-domain-domainsettings-executionroleidentityconfig): {{String}}
+  [IpAddressType](#cfn-sagemaker-domain-domainsettings-ipaddresstype): {{String}}
+  [RStudioServerProDomainSettings](#cfn-sagemaker-domain-domainsettings-rstudioserverprodomainsettings): {{
+    RStudioServerProDomainSettings}}
+  [SecurityGroupIds](#cfn-sagemaker-domain-domainsettings-securitygroupids): {{
+    - String}}
+  [UnifiedStudioSettings](#cfn-sagemaker-domain-domainsettings-unifiedstudiosettings): {{
+    UnifiedStudioSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-domainsettings-properties"></a>
 
-`DockerSettings`
-
+`DockerSettings`  <a name="cfn-sagemaker-domain-domainsettings-dockersettings"></a>
 A collection of settings that configure the domain's Docker interaction.
+*Required*: No
+*Type*: [DockerSettings](aws-properties-sagemaker-domain-dockersettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ExecutionRoleIdentityConfig`  <a name="cfn-sagemaker-domain-domainsettings-executionroleidentityconfig"></a>
+The configuration for attaching a SageMaker AI user profile name to the execution role as a [sts:SourceIdentity key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `USER_PROFILE_NAME | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DockerSettings](aws-properties-sagemaker-domain-dockersettings.md)
+`IpAddressType`  <a name="cfn-sagemaker-domain-domainsettings-ipaddresstype"></a>
+The IP address type for the domain. Specify `ipv4` for IPv4-only connectivity or `dualstack` for both IPv4 and IPv6 connectivity. When you specify `dualstack`, the subnet must support IPv6 CIDR blocks. If not specified, defaults to `ipv4`.
+*Required*: No
+*Type*: String
+*Allowed values*: `IPV4 | DUALSTACK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RStudioServerProDomainSettings`  <a name="cfn-sagemaker-domain-domainsettings-rstudioserverprodomainsettings"></a>
+A collection of settings that configure the `RStudioServerPro` Domain-level app.
+*Required*: No
+*Type*: [RStudioServerProDomainSettings](aws-properties-sagemaker-domain-rstudioserverprodomainsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ExecutionRoleIdentityConfig`
+`SecurityGroupIds`  <a name="cfn-sagemaker-domain-domainsettings-securitygroupids"></a>
+The security groups for the Amazon Virtual Private Cloud that the `Domain` uses for communication between Domain-level apps and user apps.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `32 | 3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The configuration for attaching a SageMaker AI user profile name to the execution
-role as a [sts:SourceIdentity key](../../../iam/latest/userguide/id-credentials-temp-control-access-monitor.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `USER_PROFILE_NAME | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpAddressType`
-
-The IP address type for the domain. Specify `ipv4` for IPv4-only
-connectivity or `dualstack` for both IPv4 and IPv6 connectivity. When you
-specify `dualstack`, the subnet must support IPv6 CIDR blocks. If not specified,
-defaults to `ipv4`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `IPV4 | DUALSTACK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RStudioServerProDomainSettings`
-
-A collection of settings that configure the `RStudioServerPro` Domain-level
-app.
-
-_Required_: No
-
-_Type_: [RStudioServerProDomainSettings](aws-properties-sagemaker-domain-rstudioserverprodomainsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityGroupIds`
-
-The security groups for the Amazon Virtual Private Cloud that the `Domain` uses for
-communication between Domain-level apps and user apps.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `32 | 3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnifiedStudioSettings`
-
+`UnifiedStudioSettings`  <a name="cfn-sagemaker-domain-domainsettings-unifiedstudiosettings"></a>
 The settings that apply to an SageMaker AI domain when you use it in Amazon SageMaker Unified Studio.
-
-_Required_: No
-
-_Type_: [UnifiedStudioSettings](aws-properties-sagemaker-domain-unifiedstudiosettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DockerSettings
-
-EFSFileSystemConfig
+*Required*: No
+*Type*: [UnifiedStudioSettings](aws-properties-sagemaker-domain-unifiedstudiosettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

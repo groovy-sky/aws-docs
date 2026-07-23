@@ -2,91 +2,63 @@
 title: "AWS::IoTFleetWise::DecoderManifest CanNetworkInterface"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::DecoderManifest CanNetworkInterface
+<a name="aws-properties-iotfleetwise-decodermanifest-cannetworkinterface"></a>
 
-Represents a node and its specifications in an in-vehicle communication network. All
-signal decoders must be associated with a network node.
+Represents a node and its specifications in an in-vehicle communication network. All signal decoders must be associated with a network node.
 
-To return this information about all the network interfaces specified in a decoder
-manifest, use the [ListDecoderManifestNetworkInterfaces](../../../../reference/iot-fleetwise/latest/apireference/api-listdecodermanifestnetworkinterfaces.md) in the _AWS IoT FleetWise API Reference_.
+ To return this information about all the network interfaces specified in a decoder manifest, use the [ListDecoderManifestNetworkInterfaces](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListDecoderManifestNetworkInterfaces.html) in the *AWS IoT FleetWise API Reference*.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-decodermanifest-cannetworkinterface-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-decodermanifest-cannetworkinterface-syntax.json"></a>
 
-```json
-
+```
 {
-  "CanInterface" : CanInterface,
-  "InterfaceId" : String,
-  "Type" : String
+  "[CanInterface](#cfn-iotfleetwise-decodermanifest-cannetworkinterface-caninterface)" : {{CanInterface}},
+  "[InterfaceId](#cfn-iotfleetwise-decodermanifest-cannetworkinterface-interfaceid)" : {{String}},
+  "[Type](#cfn-iotfleetwise-decodermanifest-cannetworkinterface-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-decodermanifest-cannetworkinterface-syntax.yaml"></a>
 
-```yaml
-
-  CanInterface:
-    CanInterface
-  InterfaceId: String
-  Type: String
-
+```
+  [CanInterface](#cfn-iotfleetwise-decodermanifest-cannetworkinterface-caninterface): {{
+    CanInterface}}
+  [InterfaceId](#cfn-iotfleetwise-decodermanifest-cannetworkinterface-interfaceid): {{String}}
+  [Type](#cfn-iotfleetwise-decodermanifest-cannetworkinterface-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-decodermanifest-cannetworkinterface-properties"></a>
 
-`CanInterface`
+`CanInterface`  <a name="cfn-iotfleetwise-decodermanifest-cannetworkinterface-caninterface"></a>
+Information about a network interface specified by the Controller Area Network (CAN) protocol.
+*Required*: Yes
+*Type*: [CanInterface](aws-properties-iotfleetwise-decodermanifest-caninterface.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about a network interface specified by the Controller Area Network (CAN)
-protocol.
-
-_Required_: Yes
-
-_Type_: [CanInterface](aws-properties-iotfleetwise-decodermanifest-caninterface.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InterfaceId`
-
+`InterfaceId`  <a name="cfn-iotfleetwise-decodermanifest-cannetworkinterface-interfaceid"></a>
 The ID of the network interface.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The network protocol for the vehicle. For example, `CAN_SIGNAL` specifies
-a protocol that defines how data is communicated between electronic control units
-(ECUs). `OBD_SIGNAL` specifies a protocol that defines how self-diagnostic
-data is communicated between ECUs.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CAN_INTERFACE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CanInterface
-
-CanSignal
+`Type`  <a name="cfn-iotfleetwise-decodermanifest-cannetworkinterface-type"></a>
+The network protocol for the vehicle. For example, `CAN_SIGNAL` specifies a protocol that defines how data is communicated between electronic control units (ECUs). `OBD_SIGNAL` specifies a protocol that defines how self-diagnostic data is communicated between ECUs.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CAN_INTERFACE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

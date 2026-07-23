@@ -2,79 +2,57 @@
 title: "AWS::ECS::TaskDefinition MountPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition MountPoint
+<a name="aws-properties-ecs-taskdefinition-mountpoint"></a>
 
 The details for a volume mount point that's used in a container definition.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-mountpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-mountpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerPath" : String,
-  "ReadOnly" : Boolean,
-  "SourceVolume" : String
+  "[ContainerPath](#cfn-ecs-taskdefinition-mountpoint-containerpath)" : {{String}},
+  "[ReadOnly](#cfn-ecs-taskdefinition-mountpoint-readonly)" : {{Boolean}},
+  "[SourceVolume](#cfn-ecs-taskdefinition-mountpoint-sourcevolume)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-mountpoint-syntax.yaml"></a>
 
-```yaml
-
-  ContainerPath: String
-  ReadOnly: Boolean
-  SourceVolume: String
-
+```
+  [ContainerPath](#cfn-ecs-taskdefinition-mountpoint-containerpath): {{String}}
+  [ReadOnly](#cfn-ecs-taskdefinition-mountpoint-readonly): {{Boolean}}
+  [SourceVolume](#cfn-ecs-taskdefinition-mountpoint-sourcevolume): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-mountpoint-properties"></a>
 
-`ContainerPath`
-
+`ContainerPath`  <a name="cfn-ecs-taskdefinition-mountpoint-containerpath"></a>
 The path on the container to mount the host volume at.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ReadOnly`  <a name="cfn-ecs-taskdefinition-mountpoint-readonly"></a>
+If this value is `true`, the container has read-only access to the volume. If this value is `false`, then the container can write to the volume. The default value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ReadOnly`
-
-If this value is `true`, the container has read-only access to the volume.
-If this value is `false`, then the container can write to the volume. The
-default value is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceVolume`
-
-The name of the volume to mount. Must be a volume name referenced in the
-`name` parameter of task definition `volume`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogConfiguration
-
-PortMapping
+`SourceVolume`  <a name="cfn-ecs-taskdefinition-mountpoint-sourcevolume"></a>
+The name of the volume to mount. Must be a volume name referenced in the `name` parameter of task definition `volume`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

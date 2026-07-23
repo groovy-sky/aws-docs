@@ -2,132 +2,94 @@
 title: "AWS::QuickSight::Template HistogramVisual"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template HistogramVisual
+<a name="aws-properties-quicksight-template-histogramvisual"></a>
 
 A histogram.
 
-For more information, see [Using histograms](../../../quicksight/latest/user/histogram-charts.md) in the _Amazon Quick Suite User Guide_.
+For more information, see [Using histograms](https://docs.aws.amazon.com/quicksight/latest/user/histogram-charts.html) in the *Amazon Quick Suite User Guide*.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-histogramvisual-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-histogramvisual-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ VisualCustomAction, ... ],
-  "ChartConfiguration" : HistogramConfiguration,
-  "Subtitle" : VisualSubtitleLabelOptions,
-  "Title" : VisualTitleLabelOptions,
-  "VisualContentAltText" : String,
-  "VisualId" : String
+  "[Actions](#cfn-quicksight-template-histogramvisual-actions)" : {{[ VisualCustomAction, ... ]}},
+  "[ChartConfiguration](#cfn-quicksight-template-histogramvisual-chartconfiguration)" : {{HistogramConfiguration}},
+  "[Subtitle](#cfn-quicksight-template-histogramvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
+  "[Title](#cfn-quicksight-template-histogramvisual-title)" : {{VisualTitleLabelOptions}},
+  "[VisualContentAltText](#cfn-quicksight-template-histogramvisual-visualcontentalttext)" : {{String}},
+  "[VisualId](#cfn-quicksight-template-histogramvisual-visualid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-histogramvisual-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - VisualCustomAction
-  ChartConfiguration:
-    HistogramConfiguration
-  Subtitle:
-    VisualSubtitleLabelOptions
-  Title:
-    VisualTitleLabelOptions
-  VisualContentAltText: String
-  VisualId: String
-
+```
+  [Actions](#cfn-quicksight-template-histogramvisual-actions): {{
+    - VisualCustomAction}}
+  [ChartConfiguration](#cfn-quicksight-template-histogramvisual-chartconfiguration): {{
+    HistogramConfiguration}}
+  [Subtitle](#cfn-quicksight-template-histogramvisual-subtitle): {{
+    VisualSubtitleLabelOptions}}
+  [Title](#cfn-quicksight-template-histogramvisual-title): {{
+    VisualTitleLabelOptions}}
+  [VisualContentAltText](#cfn-quicksight-template-histogramvisual-visualcontentalttext): {{String}}
+  [VisualId](#cfn-quicksight-template-histogramvisual-visualid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-histogramvisual-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-quicksight-template-histogramvisual-actions"></a>
 The list of custom actions that are configured for a visual.
+*Required*: No
+*Type*: Array of [VisualCustomAction](aws-properties-quicksight-template-visualcustomaction.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [VisualCustomAction](aws-properties-quicksight-template-visualcustomaction.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChartConfiguration`
-
+`ChartConfiguration`  <a name="cfn-quicksight-template-histogramvisual-chartconfiguration"></a>
 The configuration for a `HistogramVisual`.
+*Required*: No
+*Type*: [HistogramConfiguration](aws-properties-quicksight-template-histogramconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HistogramConfiguration](aws-properties-quicksight-template-histogramconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subtitle`
-
+`Subtitle`  <a name="cfn-quicksight-template-histogramvisual-subtitle"></a>
 The subtitle that is displayed on the visual.
+*Required*: No
+*Type*: [VisualSubtitleLabelOptions](aws-properties-quicksight-template-visualsubtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualSubtitleLabelOptions](aws-properties-quicksight-template-visualsubtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-template-histogramvisual-title"></a>
 The title that is displayed on the visual.
+*Required*: No
+*Type*: [VisualTitleLabelOptions](aws-properties-quicksight-template-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualTitleLabelOptions](aws-properties-quicksight-template-visualtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualContentAltText`
-
+`VisualContentAltText`  <a name="cfn-quicksight-template-histogramvisual-visualcontentalttext"></a>
 The alt text for the visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualId`
-
+`VisualId`  <a name="cfn-quicksight-template-histogramvisual-visualid"></a>
 The unique identifier of a visual. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have visuals with the same identifiers.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HistogramFieldWells
-
-ImageCustomAction
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,50 @@
 title: "AWS::BedrockAgentCore::GatewayTarget ApiGatewayToolFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget ApiGatewayToolFilter
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter"></a>
 
 Specifies which operations from an API Gateway REST API are exposed as tools. Tool names and descriptions are derived from the operationId and description fields in the API's exported OpenAPI specification.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "FilterPath" : String,
-  "Methods" : [ String, ... ]
+  "[FilterPath](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-filterpath)" : {{String}},
+  "[Methods](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-methods)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-syntax.yaml"></a>
 
-```yaml
-
-  FilterPath: String
-  Methods:
-    - String
-
+```
+  [FilterPath](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-filterpath): {{String}}
+  [Methods](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-methods): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-properties"></a>
 
-`FilterPath`
-
+`FilterPath`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-filterpath"></a>
 Resource path to match in the REST API. Supports exact paths (for example, `/pets`) or wildcard paths (for example, `/pets/*` to match all paths under `/pets`). Must match existing paths in the REST API.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Methods`
-
+`Methods`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-methods"></a>
 The methods to filter for.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiGatewayToolConfiguration
-
-ApiGatewayToolOverride
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

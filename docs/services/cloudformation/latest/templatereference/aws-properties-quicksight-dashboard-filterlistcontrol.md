@@ -2,149 +2,103 @@
 title: "AWS::QuickSight::Dashboard FilterListControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FilterListControl
+<a name="aws-properties-quicksight-dashboard-filterlistcontrol"></a>
 
 A control to display a list of buttons or boxes. This is used to select either a single value or multiple values.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-filterlistcontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-filterlistcontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "CascadingControlConfiguration" : CascadingControlConfiguration,
-  "DisplayOptions" : ListControlDisplayOptions,
-  "FilterControlId" : String,
-  "SelectableValues" : FilterSelectableValues,
-  "SourceFilterId" : String,
-  "Title" : String,
-  "Type" : String
+  "[CascadingControlConfiguration](#cfn-quicksight-dashboard-filterlistcontrol-cascadingcontrolconfiguration)" : {{CascadingControlConfiguration}},
+  "[DisplayOptions](#cfn-quicksight-dashboard-filterlistcontrol-displayoptions)" : {{ListControlDisplayOptions}},
+  "[FilterControlId](#cfn-quicksight-dashboard-filterlistcontrol-filtercontrolid)" : {{String}},
+  "[SelectableValues](#cfn-quicksight-dashboard-filterlistcontrol-selectablevalues)" : {{FilterSelectableValues}},
+  "[SourceFilterId](#cfn-quicksight-dashboard-filterlistcontrol-sourcefilterid)" : {{String}},
+  "[Title](#cfn-quicksight-dashboard-filterlistcontrol-title)" : {{String}},
+  "[Type](#cfn-quicksight-dashboard-filterlistcontrol-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-filterlistcontrol-syntax.yaml"></a>
 
-```yaml
-
-  CascadingControlConfiguration:
-    CascadingControlConfiguration
-  DisplayOptions:
-    ListControlDisplayOptions
-  FilterControlId: String
-  SelectableValues:
-    FilterSelectableValues
-  SourceFilterId: String
-  Title: String
-  Type: String
-
+```
+  [CascadingControlConfiguration](#cfn-quicksight-dashboard-filterlistcontrol-cascadingcontrolconfiguration): {{
+    CascadingControlConfiguration}}
+  [DisplayOptions](#cfn-quicksight-dashboard-filterlistcontrol-displayoptions): {{
+    ListControlDisplayOptions}}
+  [FilterControlId](#cfn-quicksight-dashboard-filterlistcontrol-filtercontrolid): {{String}}
+  [SelectableValues](#cfn-quicksight-dashboard-filterlistcontrol-selectablevalues): {{
+    FilterSelectableValues}}
+  [SourceFilterId](#cfn-quicksight-dashboard-filterlistcontrol-sourcefilterid): {{String}}
+  [Title](#cfn-quicksight-dashboard-filterlistcontrol-title): {{String}}
+  [Type](#cfn-quicksight-dashboard-filterlistcontrol-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-filterlistcontrol-properties"></a>
 
-`CascadingControlConfiguration`
-
+`CascadingControlConfiguration`  <a name="cfn-quicksight-dashboard-filterlistcontrol-cascadingcontrolconfiguration"></a>
 The values that are displayed in a control can be configured to only show values that are valid based on what's selected in other controls.
+*Required*: No
+*Type*: [CascadingControlConfiguration](aws-properties-quicksight-dashboard-cascadingcontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CascadingControlConfiguration](aws-properties-quicksight-dashboard-cascadingcontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-dashboard-filterlistcontrol-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [ListControlDisplayOptions](aws-properties-quicksight-dashboard-listcontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ListControlDisplayOptions](aws-properties-quicksight-dashboard-listcontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterControlId`
-
+`FilterControlId`  <a name="cfn-quicksight-dashboard-filterlistcontrol-filtercontrolid"></a>
 The ID of the `FilterListControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectableValues`
-
+`SelectableValues`  <a name="cfn-quicksight-dashboard-filterlistcontrol-selectablevalues"></a>
 A list of selectable values that are used in a control.
+*Required*: No
+*Type*: [FilterSelectableValues](aws-properties-quicksight-dashboard-filterselectablevalues.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FilterSelectableValues](aws-properties-quicksight-dashboard-filterselectablevalues.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceFilterId`
-
+`SourceFilterId`  <a name="cfn-quicksight-dashboard-filterlistcontrol-sourcefilterid"></a>
 The source filter ID of the `FilterListControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-dashboard-filterlistcontrol-title"></a>
 The title of the `FilterListControl`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dashboard-filterlistcontrol-type"></a>
 The type of the `FilterListControl`. Choose one of the following options:
-
-- `MULTI_SELECT`: The user can select multiple entries from the list.
-
-- `SINGLE_SELECT`: The user can select a single entry from the list.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MULTI_SELECT | SINGLE_SELECT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterListConfiguration
-
-FilterOperationSelectedFieldsConfiguration
++ `MULTI_SELECT`: The user can select multiple entries from the list.
++ `SINGLE_SELECT`: The user can select a single entry from the list.
+*Required*: No
+*Type*: String
+*Allowed values*: `MULTI_SELECT | SINGLE_SELECT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

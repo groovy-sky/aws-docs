@@ -2,93 +2,64 @@
 title: "AWS::IoTSiteWise::AssetModel Metric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel Metric
+<a name="aws-properties-iotsitewise-assetmodel-metric"></a>
 
-Contains an asset metric property. With metrics, you can calculate aggregate functions,
-such as an average, maximum, or minimum, as specified through an expression. A metric maps
-several values to a single value (such as a sum).
+Contains an asset metric property. With metrics, you can calculate aggregate functions, such as an average, maximum, or minimum, as specified through an expression. A metric maps several values to a single value (such as a sum).
 
-The maximum number of dependent/cascading variables used in any one metric calculation is
-10\. Therefore, a _root_ metric can have
-up to 10 cascading metrics in its computational dependency
-tree. Additionally, a metric can only have a data type of `DOUBLE` and consume
-properties with data types of `INTEGER` or `DOUBLE`.
+The maximum number of dependent/cascading variables used in any one metric calculation is 10. Therefore, a *root* metric can have up to 10 cascading metrics in its computational dependency tree. Additionally, a metric can only have a data type of `DOUBLE` and consume properties with data types of `INTEGER` or `DOUBLE`.
 
-For more information, see [Metrics](../../../iot-sitewise/latest/userguide/asset-properties.md#metrics) in the _AWS IoT SiteWise User Guide_.
+For more information, see [Metrics](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/asset-properties.html#metrics) in the *AWS IoT SiteWise User Guide*.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-assetmodel-metric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-assetmodel-metric-syntax.json"></a>
 
-```json
-
+```
 {
-  "Expression" : String,
-  "Variables" : [ ExpressionVariable, ... ],
-  "Window" : MetricWindow
+  "[Expression](#cfn-iotsitewise-assetmodel-metric-expression)" : {{String}},
+  "[Variables](#cfn-iotsitewise-assetmodel-metric-variables)" : {{[ ExpressionVariable, ... ]}},
+  "[Window](#cfn-iotsitewise-assetmodel-metric-window)" : {{MetricWindow}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-assetmodel-metric-syntax.yaml"></a>
 
-```yaml
-
-  Expression: String
-  Variables:
-    - ExpressionVariable
-  Window:
-    MetricWindow
-
+```
+  [Expression](#cfn-iotsitewise-assetmodel-metric-expression): {{String}}
+  [Variables](#cfn-iotsitewise-assetmodel-metric-variables): {{
+    - ExpressionVariable}}
+  [Window](#cfn-iotsitewise-assetmodel-metric-window): {{
+    MetricWindow}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-assetmodel-metric-properties"></a>
 
-`Expression`
+`Expression`  <a name="cfn-iotsitewise-assetmodel-metric-expression"></a>
+The mathematical expression that defines the metric aggregation function. You can specify up to 10 variables per expression. You can specify up to 10 functions per expression.
+For more information, see [Quotas](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/quotas.html) in the *AWS IoT SiteWise User Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The mathematical expression that defines the metric aggregation function. You can specify
-up to 10 variables per expression. You can specify up to 10 functions
-per expression.
-
-For more information, see [Quotas](../../../iot-sitewise/latest/userguide/quotas.md) in the _AWS IoT SiteWise User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Variables`
-
+`Variables`  <a name="cfn-iotsitewise-assetmodel-metric-variables"></a>
 The list of variables used in the expression.
+*Required*: Yes
+*Type*: Array of [ExpressionVariable](aws-properties-iotsitewise-assetmodel-expressionvariable.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ExpressionVariable](aws-properties-iotsitewise-assetmodel-expressionvariable.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Window`
-
-The window (time interval) over which AWS IoT SiteWise computes the metric's aggregation expression.
-AWS IoT SiteWise computes one data point per `window`.
-
-_Required_: Yes
-
-_Type_: [MetricWindow](aws-properties-iotsitewise-assetmodel-metricwindow.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExpressionVariable
-
-MetricWindow
+`Window`  <a name="cfn-iotsitewise-assetmodel-metric-window"></a>
+The window (time interval) over which AWS IoT SiteWise computes the metric's aggregation expression. AWS IoT SiteWise computes one data point per `window`.
+*Required*: Yes
+*Type*: [MetricWindow](aws-properties-iotsitewise-assetmodel-metricwindow.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

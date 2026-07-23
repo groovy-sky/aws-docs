@@ -2,71 +2,51 @@
 title: "AWS::Cognito::UserPoolRiskConfigurationAttachment AccountTakeoverRiskConfigurationType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRiskConfigurationAttachment AccountTakeoverRiskConfigurationType
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype"></a>
 
-The settings for automated responses and notification templates for adaptive
-authentication with advanced security features.
+The settings for automated responses and notification templates for adaptive authentication with advanced security features.
 
 ## Syntax
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : AccountTakeoverActionsType,
-  "NotifyConfiguration" : NotifyConfigurationType
+  "[Actions](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-actions)" : {{AccountTakeoverActionsType}},
+  "[NotifyConfiguration](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-notifyconfiguration)" : {{NotifyConfigurationType}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    AccountTakeoverActionsType
-  NotifyConfiguration:
-    NotifyConfigurationType
-
+```
+  [Actions](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-actions): {{
+    AccountTakeoverActionsType}}
+  [NotifyConfiguration](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-notifyconfiguration): {{
+    NotifyConfigurationType}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-properties"></a>
 
-`Actions`
+`Actions`  <a name="cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-actions"></a>
+A list of account-takeover actions for each level of risk that Amazon Cognito might assess with threat protection.
+*Required*: Yes
+*Type*: [AccountTakeoverActionsType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of account-takeover actions for each level of risk that Amazon Cognito might assess with
-threat protection.
-
-_Required_: Yes
-
-_Type_: [AccountTakeoverActionsType](aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractionstype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotifyConfiguration`
-
-The settings for composing and sending an email message when threat protection
-assesses a risk level with adaptive authentication. When you choose to notify users in
-`AccountTakeoverRiskConfiguration`, Amazon Cognito sends an email message using
-the method and template that you set with this data type.
-
-_Required_: No
-
-_Type_: [NotifyConfigurationType](aws-properties-cognito-userpoolriskconfigurationattachment-notifyconfigurationtype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccountTakeoverActionType
-
-CompromisedCredentialsActionsType
+`NotifyConfiguration`  <a name="cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-notifyconfiguration"></a>
+The settings for composing and sending an email message when threat protection assesses a risk level with adaptive authentication. When you choose to notify users in `AccountTakeoverRiskConfiguration`, Amazon Cognito sends an email message using the method and template that you set with this data type.
+*Required*: No
+*Type*: [NotifyConfigurationType](aws-properties-cognito-userpoolriskconfigurationattachment-notifyconfigurationtype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

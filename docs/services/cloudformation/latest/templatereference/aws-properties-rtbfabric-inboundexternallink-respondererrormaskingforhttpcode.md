@@ -2,105 +2,74 @@
 title: "AWS::RTBFabric::InboundExternalLink ResponderErrorMaskingForHttpCode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::InboundExternalLink ResponderErrorMaskingForHttpCode
+<a name="aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode"></a>
 
-The `ResponderErrorMaskingForHttpCode` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
+<a name="aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-description"></a>The `ResponderErrorMaskingForHttpCode` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
 
 ## Syntax
+<a name="aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "HttpCode" : String,
-  "LoggingTypes" : [ String, ... ],
-  "ResponseLoggingPercentage" : Number
+  "[Action](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-action)" : {{String}},
+  "[HttpCode](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-httpcode)" : {{String}},
+  "[LoggingTypes](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-loggingtypes)" : {{[ String, ... ]}},
+  "[ResponseLoggingPercentage](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-responseloggingpercentage)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  HttpCode: String
-  LoggingTypes:
-    - String
-  ResponseLoggingPercentage: Number
-
+```
+  [Action](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-action): {{String}}
+  [HttpCode](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-httpcode): {{String}}
+  [LoggingTypes](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-loggingtypes): {{
+    - String}}
+  [ResponseLoggingPercentage](#cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-responseloggingpercentage): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-action"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NO_BID | PASSTHROUGH`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `NO_BID | PASSTHROUGH`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`HttpCode`
-
+`HttpCode`  <a name="cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-httpcode"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^DEFAULT|4XX|5XX|\d{3}$`
+*Minimum*: `3`
+*Maximum*: `7`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^DEFAULT|4XX|5XX|\d{3}$`
-
-_Minimum_: `3`
-
-_Maximum_: `7`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LoggingTypes`
-
+`LoggingTypes`  <a name="cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-loggingtypes"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ResponseLoggingPercentage`
-
+`ResponseLoggingPercentage`  <a name="cfn-rtbfabric-inboundexternallink-respondererrormaskingforhttpcode-responseloggingpercentage"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LinkLogSettings
-
-Tag
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

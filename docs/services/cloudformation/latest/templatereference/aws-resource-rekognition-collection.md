@@ -2,102 +2,82 @@
 title: "AWS::Rekognition::Collection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rekognition::Collection
+<a name="aws-resource-rekognition-collection"></a>
 
-The `AWS::Rekognition::Collection` type creates a server-side container called a collection. You can use a collection
-to store information about detected faces and search for known faces in images, stored videos, and streaming videos.
+The `AWS::Rekognition::Collection` type creates a server-side container called a collection. You can use a collection to store information about detected faces and search for known faces in images, stored videos, and streaming videos.
 
 ## Syntax
+<a name="aws-resource-rekognition-collection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rekognition-collection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Rekognition::Collection",
   "Properties" : {
-      "CollectionId" : String,
-      "Tags" : [ Tag, ... ]
+      "[CollectionId](#cfn-rekognition-collection-collectionid)" : {{String}},
+      "[Tags](#cfn-rekognition-collection-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rekognition-collection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Rekognition::Collection
 Properties:
-  CollectionId: String
-  Tags:
-    - Tag
-
+  [CollectionId](#cfn-rekognition-collection-collectionid): {{String}}
+  [Tags](#cfn-rekognition-collection-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-rekognition-collection-properties"></a>
 
-`CollectionId`
-
+`CollectionId`  <a name="cfn-rekognition-collection-collectionid"></a>
 ID for the collection that you are creating.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\A[a-zA-Z0-9_\.\-]+$`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\A[a-zA-Z0-9_\.\-]+$`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A set of tags (key-value pairs) that you want to attach to the collection.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rekognition-collection-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-rekognition-collection-tags"></a>
+ A set of tags (key-value pairs) that you want to attach to the collection.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rekognition-collection-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rekognition-collection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rekognition-collection-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns
-the collection ID. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the collection ID. For example:
 
-`{ "Ref": "MyCollection" }`
+ `{ "Ref": "MyCollection" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-rekognition-collection-return-values-fn--getatt"></a>
 
-`Fn::GetAtt`
-returns a value for a specified attribute of this type. The
-following are the available attributes and sample return values. For more information about
-using `Fn::GetAtt`, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values. For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-rekognition-collection-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Returns the Amazon Resource Name of the collection.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Rekognition
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

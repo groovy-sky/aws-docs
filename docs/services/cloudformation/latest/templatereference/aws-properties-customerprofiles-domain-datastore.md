@@ -2,65 +2,50 @@
 title: "AWS::CustomerProfiles::Domain DataStore"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Domain DataStore
+<a name="aws-properties-customerprofiles-domain-datastore"></a>
 
-The `DataStore` property type specifies Property description not available. for an [AWS::CustomerProfiles::Domain](aws-resource-customerprofiles-domain.md).
+<a name="aws-properties-customerprofiles-domain-datastore-description"></a>The `DataStore` property type specifies Property description not available. for an [AWS::CustomerProfiles::Domain](aws-resource-customerprofiles-domain.md).
 
 ## Syntax
+<a name="aws-properties-customerprofiles-domain-datastore-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-domain-datastore-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "Readiness" : Readiness
+  "[Enabled](#cfn-customerprofiles-domain-datastore-enabled)" : {{Boolean}},
+  "[Readiness](#cfn-customerprofiles-domain-datastore-readiness)" : {{Readiness}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-domain-datastore-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  Readiness:
-    Readiness
-
+```
+  [Enabled](#cfn-customerprofiles-domain-datastore-enabled): {{Boolean}}
+  [Readiness](#cfn-customerprofiles-domain-datastore-readiness): {{
+    Readiness}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-domain-datastore-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-customerprofiles-domain-datastore-enabled"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Readiness`
-
+`Readiness`  <a name="cfn-customerprofiles-domain-datastore-readiness"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [Readiness](aws-properties-customerprofiles-domain-readiness.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Consolidation
-
-DomainStats
+*Required*: No
+*Type*: [Readiness](aws-properties-customerprofiles-domain-readiness.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

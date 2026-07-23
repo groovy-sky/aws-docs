@@ -2,211 +2,155 @@
 title: "AWS::Cases::Template"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::Template
+<a name="aws-resource-cases-template"></a>
 
-Creates a template in the Cases domain. This template is used to define the case object
-model (that is, to define what data can be captured on cases) in a Cases domain. A template
-must have a unique name within a domain, and it must reference existing field IDs and layout
-IDs. Additionally, multiple fields with same IDs are not allowed within the same Template. A
-template can be either Active or Inactive, as indicated by its status. Inactive templates
-cannot be used to create cases.
+Creates a template in the Cases domain. This template is used to define the case object model (that is, to define what data can be captured on cases) in a Cases domain. A template must have a unique name within a domain, and it must reference existing field IDs and layout IDs. Additionally, multiple fields with same IDs are not allowed within the same Template. A template can be either Active or Inactive, as indicated by its status. Inactive templates cannot be used to create cases.
 
-Other template APIs are:
-
-- [DeleteTemplate](../../../../reference/connect/latest/apireference/api-connect-cases-deletetemplate.md)
-
-- [GetTemplate](../../../../reference/connect/latest/apireference/api-connect-cases-gettemplate.md)
-
-- [ListTemplates](../../../../reference/connect/latest/apireference/api-connect-cases-listtemplates.md)
-
-- [UpdateTemplate](../../../../reference/connect/latest/apireference/api-connect-cases-updatetemplate.md)
+ Other template APIs are:
++  [DeleteTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_DeleteTemplate.html)
++  [GetTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_GetTemplate.html)
++  [ListTemplates](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_ListTemplates.html)
++  [UpdateTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_UpdateTemplate.html)
 
 ## Syntax
+<a name="aws-resource-cases-template-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cases-template-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Cases::Template",
   "Properties" : {
-      "Description" : String,
-      "DomainId" : String,
-      "LayoutConfiguration" : LayoutConfiguration,
-      "Name" : String,
-      "RequiredFields" : [ RequiredField, ... ],
-      "Rules" : [ TemplateRule, ... ],
-      "Status" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-cases-template-description)" : {{String}},
+      "[DomainId](#cfn-cases-template-domainid)" : {{String}},
+      "[LayoutConfiguration](#cfn-cases-template-layoutconfiguration)" : {{LayoutConfiguration}},
+      "[Name](#cfn-cases-template-name)" : {{String}},
+      "[RequiredFields](#cfn-cases-template-requiredfields)" : {{[ RequiredField, ... ]}},
+      "[Rules](#cfn-cases-template-rules)" : {{[ TemplateRule, ... ]}},
+      "[Status](#cfn-cases-template-status)" : {{String}},
+      "[Tags](#cfn-cases-template-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cases-template-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Cases::Template
 Properties:
-  Description: String
-  DomainId: String
-  LayoutConfiguration:
-    LayoutConfiguration
-  Name: String
-  RequiredFields:
-    - RequiredField
-  Rules:
-    - TemplateRule
-  Status: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-cases-template-description): {{String}}
+  [DomainId](#cfn-cases-template-domainid): {{String}}
+  [LayoutConfiguration](#cfn-cases-template-layoutconfiguration): {{
+    LayoutConfiguration}}
+  [Name](#cfn-cases-template-name): {{String}}
+  [RequiredFields](#cfn-cases-template-requiredfields): {{
+    - RequiredField}}
+  [Rules](#cfn-cases-template-rules): {{
+    - TemplateRule}}
+  [Status](#cfn-cases-template-status): {{String}}
+  [Tags](#cfn-cases-template-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-cases-template-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-cases-template-description"></a>
 A brief description of the template.
+*Required*: No
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainId`
-
+`DomainId`  <a name="cfn-cases-template-domainid"></a>
 The unique identifier of the Cases domain.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: Updates are not supported.
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: Updates are not supported.
-
-`LayoutConfiguration`
-
+`LayoutConfiguration`  <a name="cfn-cases-template-layoutconfiguration"></a>
 Object to store configuration of layouts associated to the template.
+*Required*: No
+*Type*: [LayoutConfiguration](aws-properties-cases-template-layoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LayoutConfiguration](aws-properties-cases-template-layoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cases-template-name"></a>
 The template name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^.*[\S]$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`RequiredFields`  <a name="cfn-cases-template-requiredfields"></a>
+A list of fields that must contain a value for a case to be successfully created with this template.
+*Required*: No
+*Type*: Array of [RequiredField](aws-properties-cases-template-requiredfield.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Rules`  <a name="cfn-cases-template-rules"></a>
+A list of case rules (also known as [case field conditions](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html)) on a template.
+*Required*: No
+*Type*: Array of [TemplateRule](aws-properties-cases-template-templaterule.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^.*[\S]$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequiredFields`
-
-A list of fields that must contain a value for a case to be successfully created with this
-template.
-
-_Required_: No
-
-_Type_: Array of [RequiredField](aws-properties-cases-template-requiredfield.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rules`
-
-A list of case rules (also known as [case field conditions](../../../connect/latest/adminguide/case-field-conditions.md)) on a template.
-
-_Required_: No
-
-_Type_: Array of [TemplateRule](aws-properties-cases-template-templaterule.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-cases-template-status"></a>
 The status of the template.
+*Required*: No
+*Type*: String
+*Allowed values*: `Active | Inactive`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Active | Inactive`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-cases-template-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cases-template-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cases-template-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cases-template-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cases-template-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the template. For example:
 
-`arn:aws:cases:us-west-2:123456789012:domain/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/template/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555`
+ `arn:aws:cases:us-west-2:123456789012:domain/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/template/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cases-template-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedTime`
+####
+<a name="aws-resource-cases-template-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 Timestamp at which the resource was created.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 Timestamp at which the resource was created or last modified.
 
-`TemplateArn`
-
+`TemplateArn`  <a name="TemplateArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the template.
 
-`TemplateId`
-
+`TemplateId`  <a name="TemplateId-fn::getatt"></a>
 A unique identifier of a template.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-LayoutConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

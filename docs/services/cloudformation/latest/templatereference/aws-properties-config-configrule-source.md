@@ -2,118 +2,77 @@
 title: "AWS::Config::ConfigRule Source"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConfigRule Source
+<a name="aws-properties-config-configrule-source"></a>
 
-Provides the CustomPolicyDetails, the rule owner ( `
-                    AWS
-                ` for managed rules, `CUSTOM_POLICY` for Custom Policy rules, and `CUSTOM_LAMBDA` for Custom Lambda rules), the rule
-identifier, and the events that cause the evaluation of your AWS
-resources.
+Provides the CustomPolicyDetails, the rule owner (` AWS ` for managed rules, `CUSTOM_POLICY` for Custom Policy rules, and `CUSTOM_LAMBDA` for Custom Lambda rules), the rule identifier, and the events that cause the evaluation of your AWS resources.
 
 ## Syntax
+<a name="aws-properties-config-configrule-source-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-config-configrule-source-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomPolicyDetails" : CustomPolicyDetails,
-  "Owner" : String,
-  "SourceDetails" : [ SourceDetail, ... ],
-  "SourceIdentifier" : String
+  "[CustomPolicyDetails](#cfn-config-configrule-source-custompolicydetails)" : {{CustomPolicyDetails}},
+  "[Owner](#cfn-config-configrule-source-owner)" : {{String}},
+  "[SourceDetails](#cfn-config-configrule-source-sourcedetails)" : {{[ SourceDetail, ... ]}},
+  "[SourceIdentifier](#cfn-config-configrule-source-sourceidentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-config-configrule-source-syntax.yaml"></a>
 
-```yaml
-
-  CustomPolicyDetails:
-    CustomPolicyDetails
-  Owner: String
-  SourceDetails:
-    - SourceDetail
-  SourceIdentifier: String
-
+```
+  [CustomPolicyDetails](#cfn-config-configrule-source-custompolicydetails): {{
+    CustomPolicyDetails}}
+  [Owner](#cfn-config-configrule-source-owner): {{String}}
+  [SourceDetails](#cfn-config-configrule-source-sourcedetails): {{
+    - SourceDetail}}
+  [SourceIdentifier](#cfn-config-configrule-source-sourceidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-config-configrule-source-properties"></a>
 
-`CustomPolicyDetails`
-
+`CustomPolicyDetails`  <a name="cfn-config-configrule-source-custompolicydetails"></a>
 Provides the runtime system, policy definition, and whether debug logging is enabled. Required when owner is set to `CUSTOM_POLICY`.
+*Required*: No
+*Type*: [CustomPolicyDetails](aws-properties-config-configrule-custompolicydetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomPolicyDetails](aws-properties-config-configrule-custompolicydetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Owner`
-
+`Owner`  <a name="cfn-config-configrule-source-owner"></a>
 Indicates whether AWS or the customer owns and manages the AWS Config rule.
+AWS Config Managed Rules are predefined rules owned by AWS. For more information, see [AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) in the *AWS Config developer guide*.
+AWS Config Custom Rules are rules that you can develop either with Guard (`CUSTOM_POLICY`) or AWS Lambda (`CUSTOM_LAMBDA`). For more information, see [AWS Config Custom Rules ](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html) in the *AWS Config developer guide*.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CUSTOM_LAMBDA | AWS | CUSTOM_POLICY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-AWS Config Managed Rules are predefined rules owned by AWS. For more information, see [AWS Config Managed Rules](../../../config/latest/developerguide/evaluate-config-use-managed-rules.md) in the _AWS Config developer guide_.
-
-AWS Config Custom Rules are rules that you can develop either with Guard ( `CUSTOM_POLICY`) or AWS Lambda ( `CUSTOM_LAMBDA`). For more information, see [AWS Config Custom Rules](../../../config/latest/developerguide/evaluate-config-develop-rules.md) in the _AWS Config developer guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CUSTOM_LAMBDA | AWS | CUSTOM_POLICY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceDetails`
-
+`SourceDetails`  <a name="cfn-config-configrule-source-sourcedetails"></a>
 Provides the source and the message types that cause AWS Config to evaluate your AWS resources against a rule. It also provides the frequency with which you want AWS Config to run evaluations for the rule if the trigger type is periodic.
-
 If the owner is set to `CUSTOM_POLICY`, the only acceptable values for the AWS Config rule trigger message type are `ConfigurationItemChangeNotification` and `OversizedConfigurationItemChangeNotification`.
+*Required*: No
+*Type*: Array of [SourceDetail](aws-properties-config-configrule-sourcedetail.md)
+*Minimum*: `0`
+*Maximum*: `25`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SourceDetail](aws-properties-config-configrule-sourcedetail.md)
-
-_Minimum_: `0`
-
-_Maximum_: `25`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceIdentifier`
-
-For AWS Config Managed rules, a predefined identifier from a
-list. For example, `IAM_PASSWORD_POLICY` is a managed
-rule. To reference a managed rule, see [List of AWS Config Managed Rules](../../../config/latest/developerguide/managed-rules-by-aws-config.md).
-
-For AWS Config Custom Lambda rules, the identifier is the Amazon Resource Name
-(ARN) of the rule's AWS Lambda function, such as
-`arn:aws:lambda:us-east-2:123456789012:function:custom_rule_name`.
-
+`SourceIdentifier`  <a name="cfn-config-configrule-source-sourceidentifier"></a>
+For AWS Config Managed rules, a predefined identifier from a list. For example, `IAM_PASSWORD_POLICY` is a managed rule. To reference a managed rule, see [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html).
+For AWS Config Custom Lambda rules, the identifier is the Amazon Resource Name (ARN) of the rule's AWS Lambda function, such as `arn:aws:lambda:us-east-2:123456789012:function:custom_rule_name`.
 For AWS Config Custom Policy rules, this field will be ignored.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Scope
-
-SourceDetail
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

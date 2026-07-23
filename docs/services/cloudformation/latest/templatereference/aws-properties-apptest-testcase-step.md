@@ -2,83 +2,61 @@
 title: "AWS::AppTest::TestCase Step"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase Step
+<a name="aws-properties-apptest-testcase-step"></a>
 
 Defines a step.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-step-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-step-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : StepAction,
-  "Description" : String,
-  "Name" : String
+  "[Action](#cfn-apptest-testcase-step-action)" : {{StepAction}},
+  "[Description](#cfn-apptest-testcase-step-description)" : {{String}},
+  "[Name](#cfn-apptest-testcase-step-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-step-syntax.yaml"></a>
 
-```yaml
-
-  Action:
-    StepAction
-  Description: String
-  Name: String
-
+```
+  [Action](#cfn-apptest-testcase-step-action): {{
+    StepAction}}
+  [Description](#cfn-apptest-testcase-step-description): {{String}}
+  [Name](#cfn-apptest-testcase-step-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-step-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-apptest-testcase-step-action"></a>
 The action of the step.
+*Required*: Yes
+*Type*: [StepAction](aws-properties-apptest-testcase-stepaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [StepAction](aws-properties-apptest-testcase-stepaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-apptest-testcase-step-description"></a>
 The description of the step.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-apptest-testcase-step-name"></a>
 The name of the step.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z][A-Za-z0-9_\-]{1,59}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SourceDatabaseMetadata
-
-StepAction
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z][A-Za-z0-9_\-]{1,59}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

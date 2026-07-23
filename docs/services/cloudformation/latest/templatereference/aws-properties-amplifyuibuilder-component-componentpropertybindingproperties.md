@@ -2,66 +2,49 @@
 title: "AWS::AmplifyUIBuilder::Component ComponentPropertyBindingProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component ComponentPropertyBindingProperties
+<a name="aws-properties-amplifyuibuilder-component-componentpropertybindingproperties"></a>
 
-The `ComponentPropertyBindingProperties` property specifies a component
-property to associate with a binding property. This enables exposed properties on the top
-level component to propagate data to the component's property values.
+The `ComponentPropertyBindingProperties` property specifies a component property to associate with a binding property. This enables exposed properties on the top level component to propagate data to the component's property values.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-component-componentpropertybindingproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-component-componentpropertybindingproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Field" : String,
-  "Property" : String
+  "[Field](#cfn-amplifyuibuilder-component-componentpropertybindingproperties-field)" : {{String}},
+  "[Property](#cfn-amplifyuibuilder-component-componentpropertybindingproperties-property)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-component-componentpropertybindingproperties-syntax.yaml"></a>
 
-```yaml
-
-  Field: String
-  Property: String
-
+```
+  [Field](#cfn-amplifyuibuilder-component-componentpropertybindingproperties-field): {{String}}
+  [Property](#cfn-amplifyuibuilder-component-componentpropertybindingproperties-property): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-component-componentpropertybindingproperties-properties"></a>
 
-`Field`
-
+`Field`  <a name="cfn-amplifyuibuilder-component-componentpropertybindingproperties-field"></a>
 The data field to bind the property to.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Property`
-
+`Property`  <a name="cfn-amplifyuibuilder-component-componentpropertybindingproperties-property"></a>
 The component property to bind to the data field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentProperty
-
-ComponentVariant
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,79 +2,55 @@
 title: "AWS::SSM::Document Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::Document Tag
+<a name="aws-properties-ssm-document-tag"></a>
 
-Metadata that you assign to your AWS resources. Tags enable you to categorize your
-resources in different ways, for example, by purpose, owner, or environment. In AWS Systems Manager, you
-can apply tags to Systems Manager documents (SSM documents), managed nodes, maintenance windows,
-parameters, patch baselines, OpsItems, and OpsMetadata.
+Metadata that you assign to your AWS resources. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. In AWS Systems Manager, you can apply tags to Systems Manager documents (SSM documents), managed nodes, maintenance windows, parameters, patch baselines, OpsItems, and OpsMetadata.
 
 ## Syntax
+<a name="aws-properties-ssm-document-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-document-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-ssm-document-tag-key)" : {{String}},
+  "[Value](#cfn-ssm-document-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-document-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-ssm-document-tag-key): {{String}}
+  [Value](#cfn-ssm-document-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-document-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ssm-document-tag-key"></a>
 The name of the tag.
+*Required*: No
+*Type*: String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ssm-document-tag-value"></a>
 The value of the tag.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentRequires
-
-AWS::SSM::MaintenanceWindow
+*Required*: No
+*Type*: String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

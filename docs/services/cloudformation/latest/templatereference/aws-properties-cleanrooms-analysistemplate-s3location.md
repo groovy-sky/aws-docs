@@ -2,74 +2,54 @@
 title: "AWS::CleanRooms::AnalysisTemplate S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate S3Location
+<a name="aws-properties-cleanrooms-analysistemplate-s3location"></a>
 
 The S3 location.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String
+  "[Bucket](#cfn-cleanrooms-analysistemplate-s3location-bucket)" : {{String}},
+  "[Key](#cfn-cleanrooms-analysistemplate-s3location-key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-s3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-
+```
+  [Bucket](#cfn-cleanrooms-analysistemplate-s3location-bucket): {{String}}
+  [Key](#cfn-cleanrooms-analysistemplate-s3location-key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-s3location-properties"></a>
 
-`Bucket`
+`Bucket`  <a name="cfn-cleanrooms-analysistemplate-s3location-bucket"></a>
+ The bucket name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The bucket name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Key`
-
-The object key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9!_.*'()-/]+`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MLSyntheticDataParameters
-
-SyntheticDataColumnProperties
+`Key`  <a name="cfn-cleanrooms-analysistemplate-s3location-key"></a>
+ The object key.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9!_.*'()-/]+`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

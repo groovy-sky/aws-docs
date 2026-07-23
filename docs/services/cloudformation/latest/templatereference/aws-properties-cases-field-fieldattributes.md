@@ -2,53 +2,42 @@
 title: "AWS::Cases::Field FieldAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::Field FieldAttributes
+<a name="aws-properties-cases-field-fieldattributes"></a>
 
 Union of field attributes.
 
 ## Syntax
+<a name="aws-properties-cases-field-fieldattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-field-fieldattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "Text" : TextAttributes
+  "[Text](#cfn-cases-field-fieldattributes-text)" : {{TextAttributes}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-field-fieldattributes-syntax.yaml"></a>
 
-```yaml
-
-  Text:
-    TextAttributes
-
+```
+  [Text](#cfn-cases-field-fieldattributes-text): {{
+    TextAttributes}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-field-fieldattributes-properties"></a>
 
-`Text`
-
+`Text`  <a name="cfn-cases-field-fieldattributes-text"></a>
 Field attributes for Text field type.
-
-_Required_: No
-
-_Type_: [TextAttributes](aws-properties-cases-field-textattributes.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Cases::Field
-
-Tag
+*Required*: No
+*Type*: [TextAttributes](aws-properties-cases-field-textattributes.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

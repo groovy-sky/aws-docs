@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Template FreeFormSectionLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FreeFormSectionLayoutConfiguration
+<a name="aws-properties-quicksight-template-freeformsectionlayoutconfiguration"></a>
 
 The free-form layout configuration of a section.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-freeformsectionlayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-freeformsectionlayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Elements" : [ FreeFormLayoutElement, ... ]
+  "[Elements](#cfn-quicksight-template-freeformsectionlayoutconfiguration-elements)" : {{[ FreeFormLayoutElement, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-freeformsectionlayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Elements:
-    - FreeFormLayoutElement
-
+```
+  [Elements](#cfn-quicksight-template-freeformsectionlayoutconfiguration-elements): {{
+    - FreeFormLayoutElement}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-freeformsectionlayoutconfiguration-properties"></a>
 
-`Elements`
-
+`Elements`  <a name="cfn-quicksight-template-freeformsectionlayoutconfiguration-elements"></a>
 The elements that are included in the free-form layout.
-
-_Required_: Yes
-
-_Type_: Array of [FreeFormLayoutElement](aws-properties-quicksight-template-freeformlayoutelement.md)
-
-_Minimum_: `0`
-
-_Maximum_: `430`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FreeFormLayoutScreenCanvasSizeOptions
-
-FunnelChartAggregatedFieldWells
+*Required*: Yes
+*Type*: Array of [FreeFormLayoutElement](aws-properties-quicksight-template-freeformlayoutelement.md)
+*Minimum*: `0`
+*Maximum*: `430`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

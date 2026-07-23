@@ -1,38 +1,27 @@
 ---
-title: "Use ExecuteStatement with an AWS SDK"
+title: "Use `ExecuteStatement` with an AWS SDK"
 ---
 
 # Use `ExecuteStatement` with an AWS SDK
+<a name="example_dynamodb_ExecuteStatement_section"></a>
 
 The following code examples show how to use `ExecuteStatement`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in
-context in the following code examples:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
++  [Delete data using PartiQL DELETE](example_dynamodb_PartiQLDelete_section.md)
++  [Insert data using PartiQL INSERT](example_dynamodb_PartiQLInsert_section.md)
++  [Query a table using PartiQL](example_dynamodb_Scenario_PartiQLSingle_section.md)
++  [Query data using PartiQL SELECT](example_dynamodb_PartiQLSelect_section.md)
++  [Update data using PartiQL UPDATE](example_dynamodb_PartiQLUpdate_section.md)
 
-- [Delete data using PartiQL DELETE](example-dynamodb-partiqldelete-section.md)
-
-- [Insert data using PartiQL INSERT](example-dynamodb-partiqlinsert-section.md)
-
-- [Query a table using PartiQL](example-dynamodb-scenario-partiqlsingle-section.md)
-
-- [Query data using PartiQL SELECT](example-dynamodb-partiqlselect-section.md)
-
-- [Update data using PartiQL UPDATE](example-dynamodb-partiqlupdate-section.md)
-
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 Use an INSERT statement to add an item.
 
-```csharp
-
+```
         /// <summary>
         /// Inserts a single movie into the movies table.
         /// </summary>
@@ -57,13 +46,10 @@ Use an INSERT statement to add an item.
 
             return response.HttpStatusCode == System.Net.HttpStatusCode.OK;
         }
-
 ```
-
 Use a SELECT statement to get an item.
 
-```csharp
-
+```
         /// <summary>
         /// Uses a PartiQL SELECT statement to retrieve a single movie from the
         /// movie database.
@@ -88,13 +74,10 @@ Use a SELECT statement to get an item.
 
             return response.Items;
         }
-
 ```
-
 Use a SELECT statement to get a list of items.
 
-```csharp
-
+```
         /// <summary>
         /// Retrieve multiple movies by year using a SELECT statement.
         /// </summary>
@@ -117,13 +100,10 @@ Use a SELECT statement to get a list of items.
 
             return response.Items;
         }
-
 ```
-
 Use an UPDATE statement to update an item.
 
-```csharp
-
+```
         /// <summary>
         /// Updates a single movie in the table, adding information for the
         /// producer.
@@ -151,13 +131,10 @@ Use an UPDATE statement to update an item.
 
             return response.HttpStatusCode == System.Net.HttpStatusCode.OK;
         }
-
 ```
-
 Use a DELETE statement to delete a single movie.
 
-```csharp
-
+```
         /// <summary>
         /// Deletes a single movie from the table.
         /// </summary>
@@ -182,27 +159,17 @@ Use a DELETE statement to delete a single movie.
 
             return response.HttpStatusCode == System.Net.HttpStatusCode.OK;
         }
-
 ```
++  For API details, see [ExecuteStatement](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/ExecuteStatement) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/ExecuteStatement)
-in _AWS SDK for .NET API Reference_.
+------
+#### [ C\+\+ ]
 
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 Use an INSERT statement to add an item.
 
-```cpp
-
+```
     Aws::DynamoDB::DynamoDBClient dynamoClient(clientConfiguration);
 
     // 2. Add a new movie using an "Insert" statement. (ExecuteStatement)
@@ -254,13 +221,10 @@ Use an INSERT statement to add an item.
             return false;
         }
     }
-
 ```
-
 Use a SELECT statement to get an item.
 
-```cpp
-
+```
     //  3. Get the data for the movie using a "Select" statement. (ExecuteStatement)
     {
         Aws::DynamoDB::Model::ExecuteStatementRequest request;
@@ -298,13 +262,10 @@ Use a SELECT statement to get an item.
             }
         }
     }
-
 ```
-
 Use an UPDATE statement to update an item.
 
-```cpp
-
+```
     //  4. Update the data for the movie using an "Update" statement. (ExecuteStatement)
     {
         rating = askQuestionForFloatRange(
@@ -336,13 +297,10 @@ Use an UPDATE statement to update an item.
             return false;
         }
     }
-
 ```
-
 Use a DELETE statement to delete an item.
 
-```cpp
-
+```
     // 6. Delete the movie using a "Delete" statement. (ExecuteStatement)
     {
         Aws::DynamoDB::Model::ExecuteStatementRequest request;
@@ -365,27 +323,17 @@ Use a DELETE statement to delete an item.
             return false;
         }
     }
-
 ```
++  For API details, see [ExecuteStatement](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ExecuteStatement) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ExecuteStatement)
-in _AWS SDK for C++ API Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Define a function receiver struct for the example.
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -404,13 +352,10 @@ type PartiQLRunner struct {
 	DynamoDbClient *dynamodb.Client
 	TableName      string
 }
-
 ```
-
 Use an INSERT statement to add an item.
 
-```go
-
+```
 // AddMovie runs a PartiQL INSERT statement to add a movie to the DynamoDB table.
 func (runner PartiQLRunner) AddMovie(ctx context.Context, movie Movie) error {
 	params, err := attributevalue.MarshalList([]interface{}{movie.Title, movie.Year, movie.Info})
@@ -428,13 +373,10 @@ func (runner PartiQLRunner) AddMovie(ctx context.Context, movie Movie) error {
 	}
 	return err
 }
-
 ```
-
 Use a SELECT statement to get an item.
 
-```go
-
+```
 // GetMovie runs a PartiQL SELECT statement to get a movie from the DynamoDB table by
 // title and year.
 func (runner PartiQLRunner) GetMovie(ctx context.Context, title string, year int) (Movie, error) {
@@ -459,13 +401,10 @@ func (runner PartiQLRunner) GetMovie(ctx context.Context, title string, year int
 	}
 	return movie, err
 }
-
 ```
-
 Use a SELECT statement to get a list of items and project the results.
 
-```go
-
+```
 // GetAllMovies runs a PartiQL SELECT statement to get all movies from the DynamoDB table.
 // pageSize is not typically required and is used to show how to paginate the results.
 // The results are projected to return only the title and rating of each movie.
@@ -499,13 +438,10 @@ func (runner PartiQLRunner) GetAllMovies(ctx context.Context, pageSize int32) ([
 	}
 	return output, err
 }
-
 ```
-
 Use an UPDATE statement to update an item.
 
-```go
-
+```
 // UpdateMovie runs a PartiQL UPDATE statement to update the rating of a movie that
 // already exists in the DynamoDB table.
 func (runner PartiQLRunner) UpdateMovie(ctx context.Context, movie Movie, rating float64) error {
@@ -524,13 +460,10 @@ func (runner PartiQLRunner) UpdateMovie(ctx context.Context, movie Movie, rating
 	}
 	return err
 }
-
 ```
-
 Use a DELETE statement to delete an item.
 
-```go
-
+```
 // DeleteMovie runs a PartiQL DELETE statement to remove a movie from the DynamoDB table.
 func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error {
 	params, err := attributevalue.MarshalList([]interface{}{movie.Title, movie.Year})
@@ -548,13 +481,10 @@ func (runner PartiQLRunner) DeleteMovie(ctx context.Context, movie Movie) error 
 	}
 	return err
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -596,27 +526,17 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
++  For API details, see [ExecuteStatement](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.ExecuteStatement) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Create an item using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -637,13 +557,10 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
 Get an item using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -665,13 +582,10 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
 Update an item using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -692,13 +606,10 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
 Delete an item using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -719,25 +630,16 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
++  For API details, see [ExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ExecuteStatementCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ExecuteStatementCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-```php
-
+```
     public function insertItemByPartiQL(string $statement, array $parameters)
     {
         $this->dynamoDbClient->executeStatement([
@@ -771,25 +673,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
             'Parameters' => $parameters,
         ]);
     }
-
 ```
++  For API details, see [ExecuteStatement](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/ExecuteStatement) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/ExecuteStatement)
-in _AWS SDK for PHP API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
-```python
-
+```
 class PartiQLWrapper:
     """
     Encapsulates a DynamoDB resource to run PartiQL statements.
@@ -834,27 +727,17 @@ class PartiQLWrapper:
             raise
         else:
             return output
-
 ```
++  For API details, see [ExecuteStatement](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ExecuteStatement) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ExecuteStatement)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Select a single item using PartiQL.
 
-```ruby
-
+```
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -877,13 +760,10 @@ class DynamoDBPartiQLSingle
     }
     @dynamodb.client.execute_statement(request)
   end
-
 ```
-
 Update a single item using PartiQL.
 
-```ruby
-
+```
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -906,13 +786,10 @@ class DynamoDBPartiQLSingle
     }
     @dynamodb.client.execute_statement(request)
   end
-
 ```
-
 Add a single item using PartiQL.
 
-```ruby
-
+```
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -936,13 +813,10 @@ class DynamoDBPartiQLSingle
     }
     @dynamodb.client.execute_statement(request)
   end
-
 ```
-
 Delete a single item using PartiQL.
 
-```ruby
-
+```
 class DynamoDBPartiQLSingle
   attr_reader :dynamo_resource, :table
 
@@ -964,21 +838,11 @@ class DynamoDBPartiQLSingle
     }
     @dynamodb.client.execute_statement(request)
   end
-
 ```
++  For API details, see [ExecuteStatement](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ExecuteStatement) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[ExecuteStatement](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ExecuteStatement)
-in _AWS SDK for Ruby API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeTimeToLive
-
-GetItem
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,73 +2,50 @@
 title: "AWS::S3::Bucket Tiering"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket Tiering
+<a name="aws-properties-s3-bucket-tiering"></a>
 
-The S3 Intelligent-Tiering storage class is designed to optimize storage costs by automatically
-moving data to the most cost-effective storage access tier, without additional operational
-overhead.
+The S3 Intelligent-Tiering storage class is designed to optimize storage costs by automatically moving data to the most cost-effective storage access tier, without additional operational overhead.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-tiering-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-tiering-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessTier" : String,
-  "Days" : Integer
+  "[AccessTier](#cfn-s3-bucket-tiering-accesstier)" : {{String}},
+  "[Days](#cfn-s3-bucket-tiering-days)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-tiering-syntax.yaml"></a>
 
-```yaml
-
-  AccessTier: String
-  Days: Integer
-
+```
+  [AccessTier](#cfn-s3-bucket-tiering-accesstier): {{String}}
+  [Days](#cfn-s3-bucket-tiering-days): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-tiering-properties"></a>
 
-`AccessTier`
+`AccessTier`  <a name="cfn-s3-bucket-tiering-accesstier"></a>
+S3 Intelligent-Tiering access tier. See [Storage class for automatically optimizing frequently and infrequently accessed objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html#sc-dynamic-data-access) for a list of access tiers in the S3 Intelligent-Tiering storage class.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ARCHIVE_ACCESS | DEEP_ARCHIVE_ACCESS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-S3 Intelligent-Tiering access tier. See [Storage class for\
-automatically optimizing frequently and infrequently accessed objects](../../../s3/latest/dev/storage-class-intro.md#sc-dynamic-data-access) for a list of access
-tiers in the S3 Intelligent-Tiering storage class.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ARCHIVE_ACCESS | DEEP_ARCHIVE_ACCESS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Days`
-
-The number of consecutive days of no access after which an object will be eligible to be
-transitioned to the corresponding tier. The minimum number of days specified for Archive Access tier
-must be at least 90 days and Deep Archive Access tier must be at least 180 days. The maximum can be up to
-2 years (730 days).
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetObjectKeyFormat
-
-TopicConfiguration
+`Days`  <a name="cfn-s3-bucket-tiering-days"></a>
+The number of consecutive days of no access after which an object will be eligible to be transitioned to the corresponding tier. The minimum number of days specified for Archive Access tier must be at least 90 days and Deep Archive Access tier must be at least 180 days. The maximum can be up to 2 years (730 days).
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

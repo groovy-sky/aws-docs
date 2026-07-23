@@ -2,100 +2,73 @@
 title: "AWS::QuickSight::Template PieChartSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PieChartSortConfiguration
+<a name="aws-properties-quicksight-template-piechartsortconfiguration"></a>
 
 The sort configuration of a pie chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-piechartsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-piechartsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryItemsLimit" : ItemsLimitConfiguration,
-  "CategorySort" : [ FieldSortOptions, ... ],
-  "SmallMultiplesLimitConfiguration" : ItemsLimitConfiguration,
-  "SmallMultiplesSort" : [ FieldSortOptions, ... ]
+  "[CategoryItemsLimit](#cfn-quicksight-template-piechartsortconfiguration-categoryitemslimit)" : {{ItemsLimitConfiguration}},
+  "[CategorySort](#cfn-quicksight-template-piechartsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}},
+  "[SmallMultiplesLimitConfiguration](#cfn-quicksight-template-piechartsortconfiguration-smallmultipleslimitconfiguration)" : {{ItemsLimitConfiguration}},
+  "[SmallMultiplesSort](#cfn-quicksight-template-piechartsortconfiguration-smallmultiplessort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-piechartsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CategoryItemsLimit:
-    ItemsLimitConfiguration
-  CategorySort:
-    - FieldSortOptions
-  SmallMultiplesLimitConfiguration:
-    ItemsLimitConfiguration
-  SmallMultiplesSort:
-    - FieldSortOptions
-
+```
+  [CategoryItemsLimit](#cfn-quicksight-template-piechartsortconfiguration-categoryitemslimit): {{
+    ItemsLimitConfiguration}}
+  [CategorySort](#cfn-quicksight-template-piechartsortconfiguration-categorysort): {{
+    - FieldSortOptions}}
+  [SmallMultiplesLimitConfiguration](#cfn-quicksight-template-piechartsortconfiguration-smallmultipleslimitconfiguration): {{
+    ItemsLimitConfiguration}}
+  [SmallMultiplesSort](#cfn-quicksight-template-piechartsortconfiguration-smallmultiplessort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-piechartsortconfiguration-properties"></a>
 
-`CategoryItemsLimit`
-
+`CategoryItemsLimit`  <a name="cfn-quicksight-template-piechartsortconfiguration-categoryitemslimit"></a>
 The limit on the number of categories that are displayed in a pie chart.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-template-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-template-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategorySort`
-
+`CategorySort`  <a name="cfn-quicksight-template-piechartsortconfiguration-categorysort"></a>
 The sort configuration of the category fields.
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmallMultiplesLimitConfiguration`
-
+`SmallMultiplesLimitConfiguration`  <a name="cfn-quicksight-template-piechartsortconfiguration-smallmultipleslimitconfiguration"></a>
 The limit on the number of small multiples panels that are displayed.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-template-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-template-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmallMultiplesSort`
-
+`SmallMultiplesSort`  <a name="cfn-quicksight-template-piechartsortconfiguration-smallmultiplessort"></a>
 The sort configuration of the small multiples field.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PieChartFieldWells
-
-PieChartVisual
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

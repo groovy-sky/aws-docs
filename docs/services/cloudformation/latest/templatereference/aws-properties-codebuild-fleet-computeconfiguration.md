@@ -2,104 +2,75 @@
 title: "AWS::CodeBuild::Fleet ComputeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeBuild::Fleet ComputeConfiguration
+<a name="aws-properties-codebuild-fleet-computeconfiguration"></a>
 
 Contains compute attributes. These attributes only need be specified when your project's or fleet's `computeType` is set to `ATTRIBUTE_BASED_COMPUTE` or `CUSTOM_INSTANCE_TYPE`.
 
 ## Syntax
+<a name="aws-properties-codebuild-fleet-computeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codebuild-fleet-computeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "disk" : Integer,
-  "instanceType" : String,
-  "machineType" : String,
-  "memory" : Integer,
-  "vCpu" : Integer
+  "[disk](#cfn-codebuild-fleet-computeconfiguration-disk)" : {{Integer}},
+  "[instanceType](#cfn-codebuild-fleet-computeconfiguration-instancetype)" : {{String}},
+  "[machineType](#cfn-codebuild-fleet-computeconfiguration-machinetype)" : {{String}},
+  "[memory](#cfn-codebuild-fleet-computeconfiguration-memory)" : {{Integer}},
+  "[vCpu](#cfn-codebuild-fleet-computeconfiguration-vcpu)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codebuild-fleet-computeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  disk: Integer
-  instanceType: String
-  machineType: String
-  memory: Integer
-  vCpu: Integer
-
+```
+  [disk](#cfn-codebuild-fleet-computeconfiguration-disk): {{Integer}}
+  [instanceType](#cfn-codebuild-fleet-computeconfiguration-instancetype): {{String}}
+  [machineType](#cfn-codebuild-fleet-computeconfiguration-machinetype): {{String}}
+  [memory](#cfn-codebuild-fleet-computeconfiguration-memory): {{Integer}}
+  [vCpu](#cfn-codebuild-fleet-computeconfiguration-vcpu): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-codebuild-fleet-computeconfiguration-properties"></a>
 
-`disk`
-
+`disk`  <a name="cfn-codebuild-fleet-computeconfiguration-disk"></a>
 The amount of disk space of the instance type included in your fleet.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`instanceType`
-
+`instanceType`  <a name="cfn-codebuild-fleet-computeconfiguration-instancetype"></a>
 The EC2 instance type to be launched in your fleet.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`machineType`
-
+`machineType`  <a name="cfn-codebuild-fleet-computeconfiguration-machinetype"></a>
 The machine type of the instance type included in your fleet.
+*Required*: No
+*Type*: String
+*Allowed values*: `GENERAL | NVME`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GENERAL | NVME`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`memory`
-
+`memory`  <a name="cfn-codebuild-fleet-computeconfiguration-memory"></a>
 The amount of memory of the instance type included in your fleet.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`vCpu`
-
+`vCpu`  <a name="cfn-codebuild-fleet-computeconfiguration-vcpu"></a>
 The number of vCPUs of the instance type included in your fleet.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CodeBuild::Fleet
-
-FleetProxyRule
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

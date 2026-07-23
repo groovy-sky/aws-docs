@@ -2,80 +2,60 @@
 title: "AWS::Connect::HoursOfOperation HoursOfOperationOverrideConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::HoursOfOperation HoursOfOperationOverrideConfig
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig"></a>
 
 Information about the hours of operation override config: day, start time, and end time.
 
 ## Syntax
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Day" : String,
-  "EndTime" : OverrideTimeSlice,
-  "StartTime" : OverrideTimeSlice
+  "[Day](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-day)" : {{String}},
+  "[EndTime](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-endtime)" : {{OverrideTimeSlice}},
+  "[StartTime](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-starttime)" : {{OverrideTimeSlice}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig-syntax.yaml"></a>
 
-```yaml
-
-  Day: String
-  EndTime:
-    OverrideTimeSlice
-  StartTime:
-    OverrideTimeSlice
-
+```
+  [Day](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-day): {{String}}
+  [EndTime](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-endtime): {{
+    OverrideTimeSlice}}
+  [StartTime](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-starttime): {{
+    OverrideTimeSlice}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig-properties"></a>
 
-`Day`
-
+`Day`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-day"></a>
 The day that the hours of operation override applies to.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SUNDAY | MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SUNDAY | MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndTime`
-
+`EndTime`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-endtime"></a>
 The end time that your contact center closes if overrides are applied.
+*Required*: Yes
+*Type*: [OverrideTimeSlice](aws-properties-connect-hoursofoperation-overridetimeslice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [OverrideTimeSlice](aws-properties-connect-hoursofoperation-overridetimeslice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
+`StartTime`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-starttime"></a>
 The start time when your contact center opens if overrides are applied.
-
-_Required_: Yes
-
-_Type_: [OverrideTimeSlice](aws-properties-connect-hoursofoperation-overridetimeslice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HoursOfOperationOverride
-
-HoursOfOperationsIdentifier
+*Required*: Yes
+*Type*: [OverrideTimeSlice](aws-properties-connect-hoursofoperation-overridetimeslice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

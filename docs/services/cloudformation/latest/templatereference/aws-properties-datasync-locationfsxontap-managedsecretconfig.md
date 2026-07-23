@@ -2,58 +2,43 @@
 title: "AWS::DataSync::LocationFSxONTAP ManagedSecretConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationFSxONTAP ManagedSecretConfig
+<a name="aws-properties-datasync-locationfsxontap-managedsecretconfig"></a>
 
-Specifies configuration information for a DataSync-managed secret, such as an
-authentication token or set of credentials that DataSync uses to access a specific
-transfer location. DataSync uses the default AWS-managed KMS key to encrypt this secret in AWS Secrets Manager.
+Specifies configuration information for a DataSync-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location. DataSync uses the default AWS-managed KMS key to encrypt this secret in AWS Secrets Manager.
 
 ## Syntax
+<a name="aws-properties-datasync-locationfsxontap-managedsecretconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datasync-locationfsxontap-managedsecretconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecretArn" : String
+  "[SecretArn](#cfn-datasync-locationfsxontap-managedsecretconfig-secretarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datasync-locationfsxontap-managedsecretconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecretArn: String
-
+```
+  [SecretArn](#cfn-datasync-locationfsxontap-managedsecretconfig-secretarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datasync-locationfsxontap-managedsecretconfig-properties"></a>
 
-`SecretArn`
-
+`SecretArn`  <a name="cfn-datasync-locationfsxontap-managedsecretconfig-secretarn"></a>
 Specifies the ARN for an AWS Secrets Manager secret.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):secretsmanager:[a-z-0-9]+:[0-9]{12}:secret:.*|)$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomSecretConfig
-
-NFS
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):secretsmanager:[a-z-0-9]+:[0-9]{12}:secret:.*|)$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

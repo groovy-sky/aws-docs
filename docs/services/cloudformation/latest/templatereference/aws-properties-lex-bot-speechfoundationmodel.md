@@ -2,64 +2,49 @@
 title: "AWS::Lex::Bot SpeechFoundationModel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SpeechFoundationModel
+<a name="aws-properties-lex-bot-speechfoundationmodel"></a>
 
 Configuration for a foundation model used for speech synthesis and recognition capabilities.
 
 ## Syntax
+<a name="aws-properties-lex-bot-speechfoundationmodel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-speechfoundationmodel-syntax.json"></a>
 
-```json
-
+```
 {
-  "ModelArn" : String,
-  "VoiceId" : String
+  "[ModelArn](#cfn-lex-bot-speechfoundationmodel-modelarn)" : {{String}},
+  "[VoiceId](#cfn-lex-bot-speechfoundationmodel-voiceid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-speechfoundationmodel-syntax.yaml"></a>
 
-```yaml
-
-  ModelArn: String
-  VoiceId: String
-
+```
+  [ModelArn](#cfn-lex-bot-speechfoundationmodel-modelarn): {{String}}
+  [VoiceId](#cfn-lex-bot-speechfoundationmodel-voiceid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-speechfoundationmodel-properties"></a>
 
-`ModelArn`
-
+`ModelArn`  <a name="cfn-lex-bot-speechfoundationmodel-modelarn"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VoiceId`
-
+`VoiceId`  <a name="cfn-lex-bot-speechfoundationmodel-voiceid"></a>
 The identifier of the voice to use for speech synthesis with the foundation model.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Specifications
-
-SpeechModelConfig
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,75 +2,55 @@
 title: "AWS::Budgets::BudgetsAction ScpActionDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Budgets::BudgetsAction ScpActionDefinition
+<a name="aws-properties-budgets-budgetsaction-scpactiondefinition"></a>
 
 The service control policies (SCP) action definition details.
 
 ## Syntax
+<a name="aws-properties-budgets-budgetsaction-scpactiondefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-budgets-budgetsaction-scpactiondefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "PolicyId" : String,
-  "TargetIds" : [ String, ... ]
+  "[PolicyId](#cfn-budgets-budgetsaction-scpactiondefinition-policyid)" : {{String}},
+  "[TargetIds](#cfn-budgets-budgetsaction-scpactiondefinition-targetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-budgets-budgetsaction-scpactiondefinition-syntax.yaml"></a>
 
-```yaml
-
-  PolicyId: String
-  TargetIds:
-    - String
-
+```
+  [PolicyId](#cfn-budgets-budgetsaction-scpactiondefinition-policyid): {{String}}
+  [TargetIds](#cfn-budgets-budgetsaction-scpactiondefinition-targetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-budgets-budgetsaction-scpactiondefinition-properties"></a>
 
-`PolicyId`
-
+`PolicyId`  <a name="cfn-budgets-budgetsaction-scpactiondefinition-policyid"></a>
 The policy ID attached.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^p-[0-9a-zA-Z_]{8,128}$`
+*Minimum*: `10`
+*Maximum*: `130`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^p-[0-9a-zA-Z_]{8,128}$`
-
-_Minimum_: `10`
-
-_Maximum_: `130`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetIds`
-
+`TargetIds`  <a name="cfn-budgets-budgetsaction-scpactiondefinition-targetids"></a>
 A list of target IDs.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResourceTag
-
-SsmActionDefinition
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,59 +2,43 @@
 title: "AWS::Scheduler::Schedule SqsParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Scheduler::Schedule SqsParameters
+<a name="aws-properties-scheduler-schedule-sqsparameters"></a>
 
-The templated target type for the Amazon SQS [`SendMessage`](../../../../reference/awssimplequeueservice/latest/apireference/api-sendmessage.md) API operation.
-Contains the message group ID to use when the target is a FIFO queue. If you specify an Amazon SQS FIFO queue as a target, the queue must have content-based deduplication enabled.
-For more information, see [Using the Amazon SQS message deduplication ID](../../../awssimplequeueservice/latest/sqsdeveloperguide/using-messagededuplicationid-property.md) in the
-_Amazon SQS Developer Guide_.
+The templated target type for the Amazon SQS [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) API operation. Contains the message group ID to use when the target is a FIFO queue. If you specify an Amazon SQS FIFO queue as a target, the queue must have content-based deduplication enabled. For more information, see [Using the Amazon SQS message deduplication ID](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagededuplicationid-property.html) in the *Amazon SQS Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-scheduler-schedule-sqsparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-scheduler-schedule-sqsparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "MessageGroupId" : String
+  "[MessageGroupId](#cfn-scheduler-schedule-sqsparameters-messagegroupid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-scheduler-schedule-sqsparameters-syntax.yaml"></a>
 
-```yaml
-
-  MessageGroupId: String
-
+```
+  [MessageGroupId](#cfn-scheduler-schedule-sqsparameters-messagegroupid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-scheduler-schedule-sqsparameters-properties"></a>
 
-`MessageGroupId`
-
+`MessageGroupId`  <a name="cfn-scheduler-schedule-sqsparameters-messagegroupid"></a>
 The FIFO message group ID to use as the target.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SageMakerPipelineParameters
-
-Target
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

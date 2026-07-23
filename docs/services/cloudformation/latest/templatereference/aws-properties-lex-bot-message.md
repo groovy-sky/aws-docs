@@ -2,94 +2,69 @@
 title: "AWS::Lex::Bot Message"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot Message
+<a name="aws-properties-lex-bot-message"></a>
 
 The object that provides message text and its type.
 
 ## Syntax
+<a name="aws-properties-lex-bot-message-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-message-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomPayload" : CustomPayload,
-  "ImageResponseCard" : ImageResponseCard,
-  "PlainTextMessage" : PlainTextMessage,
-  "SSMLMessage" : SSMLMessage
+  "[CustomPayload](#cfn-lex-bot-message-custompayload)" : {{CustomPayload}},
+  "[ImageResponseCard](#cfn-lex-bot-message-imageresponsecard)" : {{ImageResponseCard}},
+  "[PlainTextMessage](#cfn-lex-bot-message-plaintextmessage)" : {{PlainTextMessage}},
+  "[SSMLMessage](#cfn-lex-bot-message-ssmlmessage)" : {{SSMLMessage}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-message-syntax.yaml"></a>
 
-```yaml
-
-  CustomPayload:
-    CustomPayload
-  ImageResponseCard:
-    ImageResponseCard
-  PlainTextMessage:
-    PlainTextMessage
-  SSMLMessage:
-    SSMLMessage
-
+```
+  [CustomPayload](#cfn-lex-bot-message-custompayload): {{
+    CustomPayload}}
+  [ImageResponseCard](#cfn-lex-bot-message-imageresponsecard): {{
+    ImageResponseCard}}
+  [PlainTextMessage](#cfn-lex-bot-message-plaintextmessage): {{
+    PlainTextMessage}}
+  [SSMLMessage](#cfn-lex-bot-message-ssmlmessage): {{
+    SSMLMessage}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-message-properties"></a>
 
-`CustomPayload`
+`CustomPayload`  <a name="cfn-lex-bot-message-custompayload"></a>
+A message in a custom format defined by the client application.
+*Required*: No
+*Type*: [CustomPayload](aws-properties-lex-bot-custompayload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A message in a custom format defined by the client
-application.
+`ImageResponseCard`  <a name="cfn-lex-bot-message-imageresponsecard"></a>
+A message that defines a response card that the client application can show to the user.
+*Required*: No
+*Type*: [ImageResponseCard](aws-properties-lex-bot-imageresponsecard.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomPayload](aws-properties-lex-bot-custompayload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageResponseCard`
-
-A message that defines a response card that the client application
-can show to the user.
-
-_Required_: No
-
-_Type_: [ImageResponseCard](aws-properties-lex-bot-imageresponsecard.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PlainTextMessage`
-
+`PlainTextMessage`  <a name="cfn-lex-bot-message-plaintextmessage"></a>
 A message in plain text format.
+*Required*: No
+*Type*: [PlainTextMessage](aws-properties-lex-bot-plaintextmessage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PlainTextMessage](aws-properties-lex-bot-plaintextmessage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SSMLMessage`
-
+`SSMLMessage`  <a name="cfn-lex-bot-message-ssmlmessage"></a>
 A message in Speech Synthesis Markup Language (SSML).
-
-_Required_: No
-
-_Type_: [SSMLMessage](aws-properties-lex-bot-ssmlmessage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaCodeHook
-
-MessageGroup
+*Required*: No
+*Type*: [SSMLMessage](aws-properties-lex-bot-ssmlmessage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,174 +2,122 @@
 title: "AWS::AmazonMQ::Broker LdapServerMetadata"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmazonMQ::Broker LdapServerMetadata
+<a name="aws-properties-amazonmq-broker-ldapservermetadata"></a>
 
-Optional. The metadata of the LDAP server used to authenticate and authorize
-connections to the broker. Does not apply to RabbitMQ brokers.
+Optional. The metadata of the LDAP server used to authenticate and authorize connections to the broker. Does not apply to RabbitMQ brokers.
 
 ## Syntax
+<a name="aws-properties-amazonmq-broker-ldapservermetadata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amazonmq-broker-ldapservermetadata-syntax.json"></a>
 
-```json
-
+```
 {
-  "Hosts" : [ String, ... ],
-  "RoleBase" : String,
-  "RoleName" : String,
-  "RoleSearchMatching" : String,
-  "RoleSearchSubtree" : Boolean,
-  "ServiceAccountPassword" : String,
-  "ServiceAccountUsername" : String,
-  "UserBase" : String,
-  "UserRoleName" : String,
-  "UserSearchMatching" : String,
-  "UserSearchSubtree" : Boolean
+  "[Hosts](#cfn-amazonmq-broker-ldapservermetadata-hosts)" : {{[ String, ... ]}},
+  "[RoleBase](#cfn-amazonmq-broker-ldapservermetadata-rolebase)" : {{String}},
+  "[RoleName](#cfn-amazonmq-broker-ldapservermetadata-rolename)" : {{String}},
+  "[RoleSearchMatching](#cfn-amazonmq-broker-ldapservermetadata-rolesearchmatching)" : {{String}},
+  "[RoleSearchSubtree](#cfn-amazonmq-broker-ldapservermetadata-rolesearchsubtree)" : {{Boolean}},
+  "[ServiceAccountPassword](#cfn-amazonmq-broker-ldapservermetadata-serviceaccountpassword)" : {{String}},
+  "[ServiceAccountUsername](#cfn-amazonmq-broker-ldapservermetadata-serviceaccountusername)" : {{String}},
+  "[UserBase](#cfn-amazonmq-broker-ldapservermetadata-userbase)" : {{String}},
+  "[UserRoleName](#cfn-amazonmq-broker-ldapservermetadata-userrolename)" : {{String}},
+  "[UserSearchMatching](#cfn-amazonmq-broker-ldapservermetadata-usersearchmatching)" : {{String}},
+  "[UserSearchSubtree](#cfn-amazonmq-broker-ldapservermetadata-usersearchsubtree)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amazonmq-broker-ldapservermetadata-syntax.yaml"></a>
 
-```yaml
-
-  Hosts:
-    - String
-  RoleBase: String
-  RoleName: String
-  RoleSearchMatching: String
-  RoleSearchSubtree: Boolean
-  ServiceAccountPassword: String
-  ServiceAccountUsername: String
-  UserBase: String
-  UserRoleName: String
-  UserSearchMatching: String
-  UserSearchSubtree: Boolean
-
+```
+  [Hosts](#cfn-amazonmq-broker-ldapservermetadata-hosts): {{
+    - String}}
+  [RoleBase](#cfn-amazonmq-broker-ldapservermetadata-rolebase): {{String}}
+  [RoleName](#cfn-amazonmq-broker-ldapservermetadata-rolename): {{String}}
+  [RoleSearchMatching](#cfn-amazonmq-broker-ldapservermetadata-rolesearchmatching): {{String}}
+  [RoleSearchSubtree](#cfn-amazonmq-broker-ldapservermetadata-rolesearchsubtree): {{Boolean}}
+  [ServiceAccountPassword](#cfn-amazonmq-broker-ldapservermetadata-serviceaccountpassword): {{String}}
+  [ServiceAccountUsername](#cfn-amazonmq-broker-ldapservermetadata-serviceaccountusername): {{String}}
+  [UserBase](#cfn-amazonmq-broker-ldapservermetadata-userbase): {{String}}
+  [UserRoleName](#cfn-amazonmq-broker-ldapservermetadata-userrolename): {{String}}
+  [UserSearchMatching](#cfn-amazonmq-broker-ldapservermetadata-usersearchmatching): {{String}}
+  [UserSearchSubtree](#cfn-amazonmq-broker-ldapservermetadata-usersearchsubtree): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-amazonmq-broker-ldapservermetadata-properties"></a>
 
-`Hosts`
-
+`Hosts`  <a name="cfn-amazonmq-broker-ldapservermetadata-hosts"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleBase`
-
+`RoleBase`  <a name="cfn-amazonmq-broker-ldapservermetadata-rolebase"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleName`
-
+`RoleName`  <a name="cfn-amazonmq-broker-ldapservermetadata-rolename"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleSearchMatching`
-
+`RoleSearchMatching`  <a name="cfn-amazonmq-broker-ldapservermetadata-rolesearchmatching"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleSearchSubtree`
-
+`RoleSearchSubtree`  <a name="cfn-amazonmq-broker-ldapservermetadata-rolesearchsubtree"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceAccountPassword`
-
+`ServiceAccountPassword`  <a name="cfn-amazonmq-broker-ldapservermetadata-serviceaccountpassword"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceAccountUsername`
-
+`ServiceAccountUsername`  <a name="cfn-amazonmq-broker-ldapservermetadata-serviceaccountusername"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserBase`
-
+`UserBase`  <a name="cfn-amazonmq-broker-ldapservermetadata-userbase"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserRoleName`
-
+`UserRoleName`  <a name="cfn-amazonmq-broker-ldapservermetadata-userrolename"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserSearchMatching`
-
+`UserSearchMatching`  <a name="cfn-amazonmq-broker-ldapservermetadata-usersearchmatching"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserSearchSubtree`
-
+`UserSearchSubtree`  <a name="cfn-amazonmq-broker-ldapservermetadata-usersearchsubtree"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionOptions
-
-LogList
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

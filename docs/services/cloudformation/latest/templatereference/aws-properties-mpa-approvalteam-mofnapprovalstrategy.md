@@ -2,52 +2,41 @@
 title: "AWS::MPA::ApprovalTeam MofNApprovalStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MPA::ApprovalTeam MofNApprovalStrategy
+<a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy"></a>
 
 Strategy for how an approval team grants approval.
 
 ## Syntax
+<a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "MinApprovalsRequired" : Integer
+  "[MinApprovalsRequired](#cfn-mpa-approvalteam-mofnapprovalstrategy-minapprovalsrequired)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy-syntax.yaml"></a>
 
-```yaml
-
-  MinApprovalsRequired: Integer
-
+```
+  [MinApprovalsRequired](#cfn-mpa-approvalteam-mofnapprovalstrategy-minapprovalsrequired): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy-properties"></a>
 
-`MinApprovalsRequired`
-
+`MinApprovalsRequired`  <a name="cfn-mpa-approvalteam-mofnapprovalstrategy-minapprovalsrequired"></a>
 Minimum number of approvals (M) required for a total number of approvers (N).
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Approver
-
-Policy
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

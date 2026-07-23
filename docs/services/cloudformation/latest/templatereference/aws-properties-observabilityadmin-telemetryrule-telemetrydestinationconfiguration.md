@@ -2,147 +2,103 @@
 title: "AWS::ObservabilityAdmin::TelemetryRule TelemetryDestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryRule TelemetryDestinationConfiguration
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration"></a>
 
-Configuration specifying where and how telemetry data should be delivered for AWS
-resources.
+ Configuration specifying where and how telemetry data should be delivered for AWS resources.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudtrailParameters" : CloudtrailParameters,
-  "DestinationPattern" : String,
-  "DestinationType" : String,
-  "ELBLoadBalancerLoggingParameters" : ELBLoadBalancerLoggingParameters,
-  "LogDeliveryParameters" : LogDeliveryParameters,
-  "RetentionInDays" : Integer,
-  "VPCFlowLogParameters" : VPCFlowLogParameters,
-  "WAFLoggingParameters" : WAFLoggingParameters
+  "[CloudtrailParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-cloudtrailparameters)" : {{CloudtrailParameters}},
+  "[DestinationPattern](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationpattern)" : {{String}},
+  "[DestinationType](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationtype)" : {{String}},
+  "[ELBLoadBalancerLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-elbloadbalancerloggingparameters)" : {{ELBLoadBalancerLoggingParameters}},
+  "[LogDeliveryParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters)" : {{LogDeliveryParameters}},
+  "[RetentionInDays](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays)" : {{Integer}},
+  "[VPCFlowLogParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-vpcflowlogparameters)" : {{VPCFlowLogParameters}},
+  "[WAFLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-wafloggingparameters)" : {{WAFLoggingParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudtrailParameters:
-    CloudtrailParameters
-  DestinationPattern: String
-  DestinationType: String
-  ELBLoadBalancerLoggingParameters:
-    ELBLoadBalancerLoggingParameters
-  LogDeliveryParameters:
-    LogDeliveryParameters
-  RetentionInDays: Integer
-  VPCFlowLogParameters:
-    VPCFlowLogParameters
-  WAFLoggingParameters:
-    WAFLoggingParameters
-
+```
+  [CloudtrailParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-cloudtrailparameters): {{
+    CloudtrailParameters}}
+  [DestinationPattern](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationpattern): {{String}}
+  [DestinationType](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationtype): {{String}}
+  [ELBLoadBalancerLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-elbloadbalancerloggingparameters): {{
+    ELBLoadBalancerLoggingParameters}}
+  [LogDeliveryParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters): {{
+    LogDeliveryParameters}}
+  [RetentionInDays](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays): {{Integer}}
+  [VPCFlowLogParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-vpcflowlogparameters): {{
+    VPCFlowLogParameters}}
+  [WAFLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-wafloggingparameters): {{
+    WAFLoggingParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-properties"></a>
 
-`CloudtrailParameters`
+`CloudtrailParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-cloudtrailparameters"></a>
+ Configuration parameters specific to AWS CloudTrail when CloudTrail is the source type.
+*Required*: No
+*Type*: [CloudtrailParameters](aws-properties-observabilityadmin-telemetryrule-cloudtrailparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration parameters specific to AWS CloudTrail when CloudTrail is the source type.
+`DestinationPattern`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationpattern"></a>
+ The pattern used to generate the destination path or name, supporting macros like <resourceId> and <accountId>.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DestinationType`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationtype"></a>
+ The type of destination for the telemetry data (e.g., "Amazon CloudWatch Logs", "S3").
+*Required*: No
+*Type*: String
+*Allowed values*: `cloud-watch-logs`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CloudtrailParameters](aws-properties-observabilityadmin-telemetryrule-cloudtrailparameters.md)
+`ELBLoadBalancerLoggingParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-elbloadbalancerloggingparameters"></a>
+ Configuration parameters specific to ELB load balancer logging when ELB is the resource type.
+*Required*: No
+*Type*: [ELBLoadBalancerLoggingParameters](aws-properties-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`LogDeliveryParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters"></a>
+Configuration parameters specific to Amazon Bedrock AgentCore logging when Amazon Bedrock AgentCore is the resource type.
+*Required*: No
+*Type*: [LogDeliveryParameters](aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DestinationPattern`
+`RetentionInDays`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays"></a>
+ The number of days to retain the telemetry data in the destination.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The pattern used to generate the destination path or name, supporting macros like
-<resourceId> and <accountId>.
+`VPCFlowLogParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-vpcflowlogparameters"></a>
+ Configuration parameters specific to VPC Flow Logs when VPC is the resource type.
+*Required*: No
+*Type*: [VPCFlowLogParameters](aws-properties-observabilityadmin-telemetryrule-vpcflowlogparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationType`
-
-The type of destination for the telemetry data (e.g., "Amazon CloudWatch Logs", "S3").
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `cloud-watch-logs`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ELBLoadBalancerLoggingParameters`
-
-Configuration parameters specific to ELB load balancer logging when ELB is the resource
-type.
-
-_Required_: No
-
-_Type_: [ELBLoadBalancerLoggingParameters](aws-properties-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogDeliveryParameters`
-
-Configuration parameters specific to Amazon Bedrock AgentCore logging when Amazon Bedrock AgentCore is the resource
-type.
-
-_Required_: No
-
-_Type_: [LogDeliveryParameters](aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetentionInDays`
-
-The number of days to retain the telemetry data in the destination.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VPCFlowLogParameters`
-
-Configuration parameters specific to VPC Flow Logs when VPC is the resource type.
-
-_Required_: No
-
-_Type_: [VPCFlowLogParameters](aws-properties-observabilityadmin-telemetryrule-vpcflowlogparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WAFLoggingParameters`
-
-Configuration parameters specific to WAF logging when WAF is the resource type.
-
-_Required_: No
-
-_Type_: [WAFLoggingParameters](aws-properties-observabilityadmin-telemetryrule-wafloggingparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-TelemetryRule
+`WAFLoggingParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-wafloggingparameters"></a>
+ Configuration parameters specific to WAF logging when WAF is the resource type.
+*Required*: No
+*Type*: [WAFLoggingParameters](aws-properties-observabilityadmin-telemetryrule-wafloggingparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

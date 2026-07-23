@@ -2,121 +2,95 @@
 title: "AWS::QuickSight::CustomPermissions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::CustomPermissions
+<a name="aws-resource-quicksight-custompermissions"></a>
 
 Creates a custom permissions profile.
 
 ## Syntax
+<a name="aws-resource-quicksight-custompermissions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-quicksight-custompermissions-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::QuickSight::CustomPermissions",
   "Properties" : {
-      "AwsAccountId" : String,
-      "Capabilities" : Capabilities,
-      "CustomPermissionsName" : String,
-      "Tags" : [ Tag, ... ]
+      "[AwsAccountId](#cfn-quicksight-custompermissions-awsaccountid)" : {{String}},
+      "[Capabilities](#cfn-quicksight-custompermissions-capabilities)" : {{Capabilities}},
+      "[CustomPermissionsName](#cfn-quicksight-custompermissions-custompermissionsname)" : {{String}},
+      "[Tags](#cfn-quicksight-custompermissions-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-quicksight-custompermissions-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::QuickSight::CustomPermissions
 Properties:
-  AwsAccountId: String
-  Capabilities:
-    Capabilities
-  CustomPermissionsName: String
-  Tags:
-    - Tag
-
+  [AwsAccountId](#cfn-quicksight-custompermissions-awsaccountid): {{String}}
+  [Capabilities](#cfn-quicksight-custompermissions-capabilities): {{
+    Capabilities}}
+  [CustomPermissionsName](#cfn-quicksight-custompermissions-custompermissionsname): {{String}}
+  [Tags](#cfn-quicksight-custompermissions-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-quicksight-custompermissions-properties"></a>
 
-`AwsAccountId`
-
+`AwsAccountId`  <a name="cfn-quicksight-custompermissions-awsaccountid"></a>
 The ID of the AWS account that contains the custom permission configuration that you want to update.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Capabilities`
-
+`Capabilities`  <a name="cfn-quicksight-custompermissions-capabilities"></a>
 A set of actions in the custom permissions profile.
+*Required*: No
+*Type*: [Capabilities](aws-properties-quicksight-custompermissions-capabilities.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Capabilities](aws-properties-quicksight-custompermissions-capabilities.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomPermissionsName`
-
+`CustomPermissionsName`  <a name="cfn-quicksight-custompermissions-custompermissionsname"></a>
 The name of the custom permissions profile.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9+=,.@_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9+=,.@_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-quicksight-custompermissions-tags"></a>
 The tags to associate with the custom permissions profile.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-quicksight-custompermissions-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-quicksight-custompermissions-tag.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-quicksight-custompermissions-return-values"></a>
 
 ### Ref
+<a name="aws-resource-quicksight-custompermissions-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-quicksight-custompermissions-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-quicksight-custompermissions-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the custom permissions profile.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-YAxisOptions
-
-Capabilities
 
 All content copied from https://docs.aws.amazon.com/.

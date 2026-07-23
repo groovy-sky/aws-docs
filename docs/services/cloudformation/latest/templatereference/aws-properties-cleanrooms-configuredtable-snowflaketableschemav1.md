@@ -2,75 +2,51 @@
 title: "AWS::CleanRooms::ConfiguredTable SnowflakeTableSchemaV1"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable SnowflakeTableSchemaV1
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1"></a>
 
-The Snowflake table schema.
+ The Snowflake table schema.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnName" : String,
-  "ColumnType" : String
+  "[ColumnName](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columnname)" : {{String}},
+  "[ColumnType](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columntype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1-syntax.yaml"></a>
 
-```yaml
-
-  ColumnName: String
-  ColumnType: String
-
+```
+  [ColumnName](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columnname): {{String}}
+  [ColumnType](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columntype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1-properties"></a>
 
-`ColumnName`
+`ColumnName`  <a name="cfn-cleanrooms-configuredtable-snowflaketableschemav1-columnname"></a>
+ The column name.
+*Required*: Yes
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The column name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnType`
-
-The column's data type. Supported data types: `ARRAY`, `BIGINT`,
-`BOOLEAN`, `CHAR`, `DATE`,
-`DECIMAL`, `DOUBLE`, `DOUBLE PRECISION`,
-`FLOAT`, `FLOAT4`, `INT`, `INTEGER`,
-`MAP`, `NUMERIC`, `NUMBER`, `REAL`,
-`SMALLINT`, `STRING`, `TIMESTAMP`,
-`TIMESTAMP_LTZ`, `TIMESTAMP_NTZ`, `DATETIME`,
-`TINYINT`, `VARCHAR`, `TEXT`, `CHARACTER`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnowflakeTableSchema
-
-TableReference
+`ColumnType`  <a name="cfn-cleanrooms-configuredtable-snowflaketableschemav1-columntype"></a>
+ The column's data type. Supported data types: `ARRAY`, `BIGINT`, `BOOLEAN`, `CHAR`, `DATE`, `DECIMAL`, `DOUBLE`, `DOUBLE PRECISION`, `FLOAT`, `FLOAT4`, `INT`, `INTEGER`, `MAP`, `NUMERIC`, `NUMBER`, `REAL`, `SMALLINT`, `STRING`, `TIMESTAMP`, `TIMESTAMP_LTZ`, `TIMESTAMP_NTZ`, `DATETIME`, `TINYINT`, `VARCHAR`, `TEXT`, `CHARACTER`.
+*Required*: Yes
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

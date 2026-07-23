@@ -2,68 +2,52 @@
 title: "AWS::KafkaConnect::Connector Vpc"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector Vpc
+<a name="aws-properties-kafkaconnect-connector-vpc"></a>
 
 Information about the VPC in which the connector resides.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-vpc-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-vpc-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroups" : [ String, ... ],
-  "Subnets" : [ String, ... ]
+  "[SecurityGroups](#cfn-kafkaconnect-connector-vpc-securitygroups)" : {{[ String, ... ]}},
+  "[Subnets](#cfn-kafkaconnect-connector-vpc-subnets)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-vpc-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroups:
-    - String
-  Subnets:
-    - String
-
+```
+  [SecurityGroups](#cfn-kafkaconnect-connector-vpc-securitygroups): {{
+    - String}}
+  [Subnets](#cfn-kafkaconnect-connector-vpc-subnets): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-vpc-properties"></a>
 
-`SecurityGroups`
-
+`SecurityGroups`  <a name="cfn-kafkaconnect-connector-vpc-securitygroups"></a>
 The security group IDs for the connector.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Subnets`
-
+`Subnets`  <a name="cfn-kafkaconnect-connector-vpc-subnets"></a>
 The subnets for the connector.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-WorkerConfiguration
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

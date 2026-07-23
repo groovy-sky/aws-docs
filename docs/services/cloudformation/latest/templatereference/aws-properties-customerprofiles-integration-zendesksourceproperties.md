@@ -2,56 +2,43 @@
 title: "AWS::CustomerProfiles::Integration ZendeskSourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Integration ZendeskSourceProperties
+<a name="aws-properties-customerprofiles-integration-zendesksourceproperties"></a>
 
 The properties that are applied when using Zendesk as a flow source.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-integration-zendesksourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-integration-zendesksourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Object" : String
+  "[Object](#cfn-customerprofiles-integration-zendesksourceproperties-object)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-integration-zendesksourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  Object: String
-
+```
+  [Object](#cfn-customerprofiles-integration-zendesksourceproperties-object): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-integration-zendesksourceproperties-properties"></a>
 
-`Object`
-
+`Object`  <a name="cfn-customerprofiles-integration-zendesksourceproperties-object"></a>
 The object specified in the Zendesk flow source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TriggerProperties
-
-AWS::CustomerProfiles::ObjectType
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

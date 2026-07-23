@@ -2,147 +2,117 @@
 title: "AWS::Redshift::ClusterParameterGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::ClusterParameterGroup
+<a name="aws-resource-redshift-clusterparametergroup"></a>
 
 Describes a parameter group.
 
 ## Syntax
+<a name="aws-resource-redshift-clusterparametergroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-redshift-clusterparametergroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Redshift::ClusterParameterGroup",
   "Properties" : {
-      "Description" : String,
-      "ParameterGroupFamily" : String,
-      "ParameterGroupName" : String,
-      "Parameters" : [ Parameter, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-redshift-clusterparametergroup-description)" : {{String}},
+      "[ParameterGroupFamily](#cfn-redshift-clusterparametergroup-parametergroupfamily)" : {{String}},
+      "[ParameterGroupName](#cfn-redshift-clusterparametergroup-parametergroupname)" : {{String}},
+      "[Parameters](#cfn-redshift-clusterparametergroup-parameters)" : {{[ Parameter, ... ]}},
+      "[Tags](#cfn-redshift-clusterparametergroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-redshift-clusterparametergroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Redshift::ClusterParameterGroup
 Properties:
-  Description: String
-  ParameterGroupFamily: String
-  ParameterGroupName: String
-  Parameters:
-    - Parameter
-  Tags:
-    - Tag
-
+  [Description](#cfn-redshift-clusterparametergroup-description): {{String}}
+  [ParameterGroupFamily](#cfn-redshift-clusterparametergroup-parametergroupfamily): {{String}}
+  [ParameterGroupName](#cfn-redshift-clusterparametergroup-parametergroupname): {{String}}
+  [Parameters](#cfn-redshift-clusterparametergroup-parameters): {{
+    - Parameter}}
+  [Tags](#cfn-redshift-clusterparametergroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-redshift-clusterparametergroup-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-redshift-clusterparametergroup-description"></a>
 The description of the parameter group.
+*Required*: Yes
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`ParameterGroupFamily`  <a name="cfn-redshift-clusterparametergroup-parametergroupfamily"></a>
+The name of the cluster parameter group family that this cluster parameter group is compatible with. You can create a custom parameter group and then associate your cluster with it. For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html).
+*Required*: Yes
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterGroupFamily`
-
-The name of the cluster parameter group family that this cluster parameter group is
-compatible with. You can create a custom parameter group and then associate your cluster with it. For more information, see
-[Amazon Redshift parameter groups](../../../redshift/latest/mgmt/working-with-parameter-groups.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ParameterGroupName`
-
+`ParameterGroupName`  <a name="cfn-redshift-clusterparametergroup-parametergroupname"></a>
 The name of the cluster parameter group.
+*Required*: No
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Parameters`  <a name="cfn-redshift-clusterparametergroup-parameters"></a>
+An array of parameters to be modified. A maximum of 20 parameters can be modified in a single request.
+For each parameter to be modified, you must supply at least the parameter name and parameter value; other name-value pairs of the parameter are optional.
+For the workload management (WLM) configuration, you must supply all the name-value pairs in the wlm\_json\_configuration parameter.
+*Required*: No
+*Type*: Array of [Parameter](aws-properties-redshift-clusterparametergroup-parameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Parameters`
-
-An array of parameters to be modified. A maximum of 20 parameters can be modified
-in a single request.
-
-For each parameter to be modified, you must supply at least the parameter name and
-parameter value; other name-value pairs of the parameter are optional.
-
-For the workload management (WLM) configuration, you must supply all the name-value
-pairs in the wlm\_json\_configuration parameter.
-
-_Required_: No
-
-_Type_: Array of [Parameter](aws-properties-redshift-clusterparametergroup-parameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-redshift-clusterparametergroup-tags"></a>
 The list of tags for the cluster parameter group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-redshift-clusterparametergroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-redshift-clusterparametergroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-redshift-clusterparametergroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-redshift-clusterparametergroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "myClusterParameterGroup" }`
+ `{ "Ref": "myClusterParameterGroup" }`
 
-For the Amazon Redshift cluster parameter group
-`myClusterParameterGroup`, `Ref` returns the name of the cluster
-parameter group.
+For the Amazon Redshift cluster parameter group `myClusterParameterGroup`, `Ref` returns the name of the cluster parameter group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-redshift-clusterparametergroup--examples"></a>
 
-- [Single Parameter](#aws-resource-redshift-clusterparametergroup--examples--Single_Parameter)
-
-- [Workload Management Configuration](#aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration)
+**Topics**
++ [Single Parameter](#aws-resource-redshift-clusterparametergroup--examples--Single_Parameter)
++ [Workload Management Configuration](#aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration)
 
 ### Single Parameter
+<a name="aws-resource-redshift-clusterparametergroup--examples--Single_Parameter"></a>
 
-The following example describes a parameter group with one parameter that's
-specified:
+The following example describes a parameter group with one parameter that's specified:
 
 #### JSON
+<a name="aws-resource-redshift-clusterparametergroup--examples--Single_Parameter--json"></a>
 
-```json
-
+```
 "myClusterParameterGroup" : {
   "Type" : "AWS::Redshift::ClusterParameterGroup",
   "Properties" : {
@@ -157,9 +127,9 @@ specified:
 ```
 
 #### YAML
+<a name="aws-resource-redshift-clusterparametergroup--examples--Single_Parameter--yaml"></a>
 
-```yaml
-
+```
 myClusterParameterGroup:
   Type: "AWS::Redshift::ClusterParameterGroup"
   Properties:
@@ -172,15 +142,14 @@ myClusterParameterGroup:
 ```
 
 ### Workload Management Configuration
+<a name="aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration"></a>
 
-The following example modifies the workload management configuration using the
-`wlm_json_configuration` parameter. The parameter value is a JSON
-object that must be passed as a string enclosed in quotation marks (").
+The following example modifies the workload management configuration using the `wlm_json_configuration` parameter. The parameter value is a JSON object that must be passed as a string enclosed in quotation marks (").
 
 #### JSON
+<a name="aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration--json"></a>
 
-```json
-
+```
 "RedshiftClusterParameterGroup": {
   "Type": "AWS::Redshift::ClusterParameterGroup",
   "Properties": {
@@ -201,9 +170,9 @@ object that must be passed as a string enclosed in quotation marks (").
 ```
 
 #### YAML
+<a name="aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration--yaml"></a>
 
-```yaml
-
+```
 RedshiftClusterParameterGroup:
   Type: "AWS::Redshift::ClusterParameterGroup"
   Properties:
@@ -217,11 +186,5 @@ RedshiftClusterParameterGroup:
       - Key: foo
         Value: bar
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Parameter
 
 All content copied from https://docs.aws.amazon.com/.

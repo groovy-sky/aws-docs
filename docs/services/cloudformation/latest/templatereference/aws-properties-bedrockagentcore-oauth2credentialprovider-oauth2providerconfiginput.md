@@ -2,158 +2,114 @@
 title: "AWS::BedrockAgentCore::OAuth2CredentialProvider Oauth2ProviderConfigInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OAuth2CredentialProvider Oauth2ProviderConfigInput
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput"></a>
 
 Contains the input configuration for an OAuth2 provider.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-syntax.json"></a>
 
-```json
-
+```
 {
-  "AtlassianOauth2ProviderConfig" : AtlassianOauth2ProviderConfigInput,
-  "CustomOauth2ProviderConfig" : CustomOauth2ProviderConfigInput,
-  "GithubOauth2ProviderConfig" : GithubOauth2ProviderConfigInput,
-  "GoogleOauth2ProviderConfig" : GoogleOauth2ProviderConfigInput,
-  "IncludedOauth2ProviderConfig" : IncludedOauth2ProviderConfigInput,
-  "LinkedinOauth2ProviderConfig" : LinkedinOauth2ProviderConfigInput,
-  "MicrosoftOauth2ProviderConfig" : MicrosoftOauth2ProviderConfigInput,
-  "SalesforceOauth2ProviderConfig" : SalesforceOauth2ProviderConfigInput,
-  "SlackOauth2ProviderConfig" : SlackOauth2ProviderConfigInput
+  "[AtlassianOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-atlassianoauth2providerconfig)" : {{AtlassianOauth2ProviderConfigInput}},
+  "[CustomOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-customoauth2providerconfig)" : {{CustomOauth2ProviderConfigInput}},
+  "[GithubOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-githuboauth2providerconfig)" : {{GithubOauth2ProviderConfigInput}},
+  "[GoogleOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-googleoauth2providerconfig)" : {{GoogleOauth2ProviderConfigInput}},
+  "[IncludedOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-includedoauth2providerconfig)" : {{IncludedOauth2ProviderConfigInput}},
+  "[LinkedinOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-linkedinoauth2providerconfig)" : {{LinkedinOauth2ProviderConfigInput}},
+  "[MicrosoftOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-microsoftoauth2providerconfig)" : {{MicrosoftOauth2ProviderConfigInput}},
+  "[SalesforceOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-salesforceoauth2providerconfig)" : {{SalesforceOauth2ProviderConfigInput}},
+  "[SlackOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-slackoauth2providerconfig)" : {{SlackOauth2ProviderConfigInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-syntax.yaml"></a>
 
-```yaml
-
-  AtlassianOauth2ProviderConfig:
-    AtlassianOauth2ProviderConfigInput
-  CustomOauth2ProviderConfig:
-    CustomOauth2ProviderConfigInput
-  GithubOauth2ProviderConfig:
-    GithubOauth2ProviderConfigInput
-  GoogleOauth2ProviderConfig:
-    GoogleOauth2ProviderConfigInput
-  IncludedOauth2ProviderConfig:
-    IncludedOauth2ProviderConfigInput
-  LinkedinOauth2ProviderConfig:
-    LinkedinOauth2ProviderConfigInput
-  MicrosoftOauth2ProviderConfig:
-    MicrosoftOauth2ProviderConfigInput
-  SalesforceOauth2ProviderConfig:
-    SalesforceOauth2ProviderConfigInput
-  SlackOauth2ProviderConfig:
-    SlackOauth2ProviderConfigInput
-
+```
+  [AtlassianOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-atlassianoauth2providerconfig): {{
+    AtlassianOauth2ProviderConfigInput}}
+  [CustomOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-customoauth2providerconfig): {{
+    CustomOauth2ProviderConfigInput}}
+  [GithubOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-githuboauth2providerconfig): {{
+    GithubOauth2ProviderConfigInput}}
+  [GoogleOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-googleoauth2providerconfig): {{
+    GoogleOauth2ProviderConfigInput}}
+  [IncludedOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-includedoauth2providerconfig): {{
+    IncludedOauth2ProviderConfigInput}}
+  [LinkedinOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-linkedinoauth2providerconfig): {{
+    LinkedinOauth2ProviderConfigInput}}
+  [MicrosoftOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-microsoftoauth2providerconfig): {{
+    MicrosoftOauth2ProviderConfigInput}}
+  [SalesforceOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-salesforceoauth2providerconfig): {{
+    SalesforceOauth2ProviderConfigInput}}
+  [SlackOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-slackoauth2providerconfig): {{
+    SlackOauth2ProviderConfigInput}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-properties"></a>
 
-`AtlassianOauth2ProviderConfig`
-
+`AtlassianOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-atlassianoauth2providerconfig"></a>
 Configuration settings for Atlassian OAuth2 provider integration.
+*Required*: No
+*Type*: [AtlassianOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-atlassianoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AtlassianOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-atlassianoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomOauth2ProviderConfig`
-
+`CustomOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-customoauth2providerconfig"></a>
 The configuration for a custom OAuth2 provider.
+*Required*: No
+*Type*: [CustomOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GithubOauth2ProviderConfig`
-
+`GithubOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-githuboauth2providerconfig"></a>
 The configuration for a GitHub OAuth2 provider.
+*Required*: No
+*Type*: [GithubOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-githuboauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GithubOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-githuboauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GoogleOauth2ProviderConfig`
-
+`GoogleOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-googleoauth2providerconfig"></a>
 The configuration for a Google OAuth2 provider.
+*Required*: No
+*Type*: [GoogleOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IncludedOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-includedoauth2providerconfig"></a>
+The configuration for a non-custom OAuth2 provider. This includes settings for supported OAuth2 providers that have built-in integration support.
+*Required*: No
+*Type*: [IncludedOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-includedoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [GoogleOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludedOauth2ProviderConfig`
-
-The configuration for a non-custom OAuth2 provider. This includes settings for supported
-OAuth2 providers that have built-in integration support.
-
-_Required_: No
-
-_Type_: [IncludedOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-includedoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LinkedinOauth2ProviderConfig`
-
+`LinkedinOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-linkedinoauth2providerconfig"></a>
 Configuration settings for LinkedIn OAuth2 provider integration.
+*Required*: No
+*Type*: [LinkedinOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-linkedinoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LinkedinOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-linkedinoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MicrosoftOauth2ProviderConfig`
-
+`MicrosoftOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-microsoftoauth2providerconfig"></a>
 The configuration for a Microsoft OAuth2 provider.
+*Required*: No
+*Type*: [MicrosoftOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MicrosoftOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SalesforceOauth2ProviderConfig`
-
+`SalesforceOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-salesforceoauth2providerconfig"></a>
 The configuration for a Salesforce OAuth2 provider.
+*Required*: No
+*Type*: [SalesforceOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-salesforceoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SalesforceOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-salesforceoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlackOauth2ProviderConfig`
-
+`SlackOauth2ProviderConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-slackoauth2providerconfig"></a>
 The configuration for a Slack OAuth2 provider.
-
-_Required_: No
-
-_Type_: [SlackOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-slackoauth2providerconfiginput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Oauth2Discovery
-
-Oauth2ProviderConfigOutput
+*Required*: No
+*Type*: [SlackOauth2ProviderConfigInput](aws-properties-bedrockagentcore-oauth2credentialprovider-slackoauth2providerconfiginput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,55 +2,42 @@
 title: "AWS::Transfer::Workflow S3FileLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Workflow S3FileLocation
+<a name="aws-properties-transfer-workflow-s3filelocation"></a>
 
-Specifies the S3 details for the file being used, such as bucket, ETag, and so
-forth.
+Specifies the S3 details for the file being used, such as bucket, ETag, and so forth.
 
 ## Syntax
+<a name="aws-properties-transfer-workflow-s3filelocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-workflow-s3filelocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3FileLocation" : S3InputFileLocation
+  "[S3FileLocation](#cfn-transfer-workflow-s3filelocation-s3filelocation)" : {{S3InputFileLocation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-workflow-s3filelocation-syntax.yaml"></a>
 
-```yaml
-
-  S3FileLocation:
-    S3InputFileLocation
-
+```
+  [S3FileLocation](#cfn-transfer-workflow-s3filelocation-s3filelocation): {{
+    S3InputFileLocation}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-workflow-s3filelocation-properties"></a>
 
-`S3FileLocation`
-
-Specifies the details for the file location for the file that's being used in the
-workflow. Only applicable if you are using Amazon S3 storage.
-
-_Required_: No
-
-_Type_: [S3InputFileLocation](aws-properties-transfer-workflow-s3inputfilelocation.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InputFileLocation
-
-S3InputFileLocation
+`S3FileLocation`  <a name="cfn-transfer-workflow-s3filelocation-s3filelocation"></a>
+ Specifies the details for the file location for the file that's being used in the workflow. Only applicable if you are using Amazon S3 storage.
+*Required*: No
+*Type*: [S3InputFileLocation](aws-properties-transfer-workflow-s3inputfilelocation.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

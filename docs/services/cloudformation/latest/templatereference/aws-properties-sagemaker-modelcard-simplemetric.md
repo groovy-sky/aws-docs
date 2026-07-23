@@ -2,122 +2,86 @@
 title: "AWS::SageMaker::ModelCard SimpleMetric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard SimpleMetric
+<a name="aws-properties-sagemaker-modelcard-simplemetric"></a>
 
 A simple metric for evaluating model performance.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelcard-simplemetric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelcard-simplemetric-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Notes" : String,
-  "Type" : String,
-  "Value" : Number,
-  "XAxisName" : String,
-  "YAxisName" : String
+  "[Name](#cfn-sagemaker-modelcard-simplemetric-name)" : {{String}},
+  "[Notes](#cfn-sagemaker-modelcard-simplemetric-notes)" : {{String}},
+  "[Type](#cfn-sagemaker-modelcard-simplemetric-type)" : {{String}},
+  "[Value](#cfn-sagemaker-modelcard-simplemetric-value)" : {{Number}},
+  "[XAxisName](#cfn-sagemaker-modelcard-simplemetric-xaxisname)" : {{String}},
+  "[YAxisName](#cfn-sagemaker-modelcard-simplemetric-yaxisname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelcard-simplemetric-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Notes: String
-  Type: String
-  Value: Number
-  XAxisName: String
-  YAxisName: String
-
+```
+  [Name](#cfn-sagemaker-modelcard-simplemetric-name): {{String}}
+  [Notes](#cfn-sagemaker-modelcard-simplemetric-notes): {{String}}
+  [Type](#cfn-sagemaker-modelcard-simplemetric-type): {{String}}
+  [Value](#cfn-sagemaker-modelcard-simplemetric-value): {{Number}}
+  [XAxisName](#cfn-sagemaker-modelcard-simplemetric-xaxisname): {{String}}
+  [YAxisName](#cfn-sagemaker-modelcard-simplemetric-yaxisname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelcard-simplemetric-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-sagemaker-modelcard-simplemetric-name"></a>
 The name of the metric.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.{1,255}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.{1,255}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Notes`
-
+`Notes`  <a name="cfn-sagemaker-modelcard-simplemetric-notes"></a>
 Additional notes about the metric.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-sagemaker-modelcard-simplemetric-type"></a>
 The type of the metric.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `number | string | boolean`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `number | string | boolean`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-sagemaker-modelcard-simplemetric-value"></a>
 The value of the metric.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxisName`
-
+`XAxisName`  <a name="cfn-sagemaker-modelcard-simplemetric-xaxisname"></a>
 The name of the X-axis for the metric visualization.
+*Required*: No
+*Type*: String
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`YAxisName`
-
+`YAxisName`  <a name="cfn-sagemaker-modelcard-simplemetric-yaxisname"></a>
 The name of the Y-axis for the metric visualization.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecurityConfig
-
-SourceAlgorithm
+*Required*: No
+*Type*: String
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

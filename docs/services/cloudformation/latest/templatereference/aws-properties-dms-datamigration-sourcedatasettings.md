@@ -2,96 +2,69 @@
 title: "AWS::DMS::DataMigration SourceDataSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::DataMigration SourceDataSettings
+<a name="aws-properties-dms-datamigration-sourcedatasettings"></a>
 
-The `SourceDataSettings` property type specifies Property description not available. for an [AWS::DMS::DataMigration](aws-resource-dms-datamigration.md).
+<a name="aws-properties-dms-datamigration-sourcedatasettings-description"></a>The `SourceDataSettings` property type specifies Property description not available. for an [AWS::DMS::DataMigration](aws-resource-dms-datamigration.md).
 
 ## Syntax
+<a name="aws-properties-dms-datamigration-sourcedatasettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-datamigration-sourcedatasettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "CDCStartPosition" : String,
-  "CDCStartTime" : String,
-  "CDCStopTime" : String,
-  "SlotName" : String
+  "[CDCStartPosition](#cfn-dms-datamigration-sourcedatasettings-cdcstartposition)" : {{String}},
+  "[CDCStartTime](#cfn-dms-datamigration-sourcedatasettings-cdcstarttime)" : {{String}},
+  "[CDCStopTime](#cfn-dms-datamigration-sourcedatasettings-cdcstoptime)" : {{String}},
+  "[SlotName](#cfn-dms-datamigration-sourcedatasettings-slotname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-datamigration-sourcedatasettings-syntax.yaml"></a>
 
-```yaml
-
-  CDCStartPosition: String
-  CDCStartTime: String
-  CDCStopTime: String
-  SlotName: String
-
+```
+  [CDCStartPosition](#cfn-dms-datamigration-sourcedatasettings-cdcstartposition): {{String}}
+  [CDCStartTime](#cfn-dms-datamigration-sourcedatasettings-cdcstarttime): {{String}}
+  [CDCStopTime](#cfn-dms-datamigration-sourcedatasettings-cdcstoptime): {{String}}
+  [SlotName](#cfn-dms-datamigration-sourcedatasettings-slotname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-datamigration-sourcedatasettings-properties"></a>
 
-`CDCStartPosition`
-
+`CDCStartPosition`  <a name="cfn-dms-datamigration-sourcedatasettings-cdcstartposition"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Maximum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CDCStartTime`
-
+`CDCStartTime`  <a name="cfn-dms-datamigration-sourcedatasettings-cdcstarttime"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Maximum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CDCStopTime`
-
+`CDCStopTime`  <a name="cfn-dms-datamigration-sourcedatasettings-cdcstoptime"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Maximum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotName`
-
+`SlotName`  <a name="cfn-dms-datamigration-sourcedatasettings-slotname"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataMigrationSettings
-
-Tag
+*Required*: No
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

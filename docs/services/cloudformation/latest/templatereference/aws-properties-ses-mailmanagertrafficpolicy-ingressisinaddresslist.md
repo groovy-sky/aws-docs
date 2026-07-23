@@ -2,72 +2,53 @@
 title: "AWS::SES::MailManagerTrafficPolicy IngressIsInAddressList"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy IngressIsInAddressList
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist"></a>
 
-The address lists and the address list attribute value that is evaluated in a policy statement's
-conditional expression to either deny or block the incoming email.
+The address lists and the address list attribute value that is evaluated in a policy statement's conditional expression to either deny or block the incoming email.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist-syntax.json"></a>
 
-```json
-
+```
 {
-  "AddressLists" : [ String, ... ],
-  "Attribute" : String
+  "[AddressLists](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-addresslists)" : {{[ String, ... ]}},
+  "[Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-attribute)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist-syntax.yaml"></a>
 
-```yaml
-
-  AddressLists:
-    - String
-  Attribute: String
-
+```
+  [AddressLists](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-addresslists): {{
+    - String}}
+  [Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-attribute): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist-properties"></a>
 
-`AddressLists`
-
+`AddressLists`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-addresslists"></a>
 The address lists that will be used for evaluation.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Attribute`
-
+`Attribute`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-attribute"></a>
 The email attribute that needs to be evaluated against the address list.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `RECIPIENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngressIpv6ToEvaluate
-
-IngressStringExpression
+*Required*: Yes
+*Type*: String
+*Allowed values*: `RECIPIENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

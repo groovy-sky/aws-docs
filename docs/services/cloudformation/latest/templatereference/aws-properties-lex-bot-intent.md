@@ -2,305 +2,200 @@
 title: "AWS::Lex::Bot Intent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot Intent
+<a name="aws-properties-lex-bot-intent"></a>
 
 Represents an action that the user wants to perform.
 
 ## Syntax
+<a name="aws-properties-lex-bot-intent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-intent-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockAgentIntentConfiguration" : BedrockAgentIntentConfiguration,
-  "Description" : String,
-  "DialogCodeHook" : DialogCodeHookSetting,
-  "DisplayName" : String,
-  "FulfillmentCodeHook" : FulfillmentCodeHookSetting,
-  "InitialResponseSetting" : InitialResponseSetting,
-  "InputContexts" : [ InputContext, ... ],
-  "IntentClosingSetting" : IntentClosingSetting,
-  "IntentConfirmationSetting" : IntentConfirmationSetting,
-  "KendraConfiguration" : KendraConfiguration,
-  "Name" : String,
-  "OutputContexts" : [ OutputContext, ... ],
-  "ParentIntentSignature" : String,
-  "QInConnectIntentConfiguration" : QInConnectIntentConfiguration,
-  "QnAIntentConfiguration" : QnAIntentConfiguration,
-  "SampleUtterances" : [ SampleUtterance, ... ],
-  "SlotPriorities" : [ SlotPriority, ... ],
-  "Slots" : [ Slot, ... ]
+  "[BedrockAgentIntentConfiguration](#cfn-lex-bot-intent-bedrockagentintentconfiguration)" : {{BedrockAgentIntentConfiguration}},
+  "[Description](#cfn-lex-bot-intent-description)" : {{String}},
+  "[DialogCodeHook](#cfn-lex-bot-intent-dialogcodehook)" : {{DialogCodeHookSetting}},
+  "[DisplayName](#cfn-lex-bot-intent-displayname)" : {{String}},
+  "[FulfillmentCodeHook](#cfn-lex-bot-intent-fulfillmentcodehook)" : {{FulfillmentCodeHookSetting}},
+  "[InitialResponseSetting](#cfn-lex-bot-intent-initialresponsesetting)" : {{InitialResponseSetting}},
+  "[InputContexts](#cfn-lex-bot-intent-inputcontexts)" : {{[ InputContext, ... ]}},
+  "[IntentClosingSetting](#cfn-lex-bot-intent-intentclosingsetting)" : {{IntentClosingSetting}},
+  "[IntentConfirmationSetting](#cfn-lex-bot-intent-intentconfirmationsetting)" : {{IntentConfirmationSetting}},
+  "[KendraConfiguration](#cfn-lex-bot-intent-kendraconfiguration)" : {{KendraConfiguration}},
+  "[Name](#cfn-lex-bot-intent-name)" : {{String}},
+  "[OutputContexts](#cfn-lex-bot-intent-outputcontexts)" : {{[ OutputContext, ... ]}},
+  "[ParentIntentSignature](#cfn-lex-bot-intent-parentintentsignature)" : {{String}},
+  "[QInConnectIntentConfiguration](#cfn-lex-bot-intent-qinconnectintentconfiguration)" : {{QInConnectIntentConfiguration}},
+  "[QnAIntentConfiguration](#cfn-lex-bot-intent-qnaintentconfiguration)" : {{QnAIntentConfiguration}},
+  "[SampleUtterances](#cfn-lex-bot-intent-sampleutterances)" : {{[ SampleUtterance, ... ]}},
+  "[SlotPriorities](#cfn-lex-bot-intent-slotpriorities)" : {{[ SlotPriority, ... ]}},
+  "[Slots](#cfn-lex-bot-intent-slots)" : {{[ Slot, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-intent-syntax.yaml"></a>
 
-```yaml
-
-  BedrockAgentIntentConfiguration:
-    BedrockAgentIntentConfiguration
-  Description: String
-  DialogCodeHook:
-    DialogCodeHookSetting
-  DisplayName: String
-  FulfillmentCodeHook:
-    FulfillmentCodeHookSetting
-  InitialResponseSetting:
-    InitialResponseSetting
-  InputContexts:
-    - InputContext
-  IntentClosingSetting:
-    IntentClosingSetting
-  IntentConfirmationSetting:
-    IntentConfirmationSetting
-  KendraConfiguration:
-    KendraConfiguration
-  Name: String
-  OutputContexts:
-    - OutputContext
-  ParentIntentSignature: String
-  QInConnectIntentConfiguration:
-    QInConnectIntentConfiguration
-  QnAIntentConfiguration:
-    QnAIntentConfiguration
-  SampleUtterances:
-    - SampleUtterance
-  SlotPriorities:
-    - SlotPriority
-  Slots:
-    - Slot
-
+```
+  [BedrockAgentIntentConfiguration](#cfn-lex-bot-intent-bedrockagentintentconfiguration): {{
+    BedrockAgentIntentConfiguration}}
+  [Description](#cfn-lex-bot-intent-description): {{String}}
+  [DialogCodeHook](#cfn-lex-bot-intent-dialogcodehook): {{
+    DialogCodeHookSetting}}
+  [DisplayName](#cfn-lex-bot-intent-displayname): {{String}}
+  [FulfillmentCodeHook](#cfn-lex-bot-intent-fulfillmentcodehook): {{
+    FulfillmentCodeHookSetting}}
+  [InitialResponseSetting](#cfn-lex-bot-intent-initialresponsesetting): {{
+    InitialResponseSetting}}
+  [InputContexts](#cfn-lex-bot-intent-inputcontexts): {{
+    - InputContext}}
+  [IntentClosingSetting](#cfn-lex-bot-intent-intentclosingsetting): {{
+    IntentClosingSetting}}
+  [IntentConfirmationSetting](#cfn-lex-bot-intent-intentconfirmationsetting): {{
+    IntentConfirmationSetting}}
+  [KendraConfiguration](#cfn-lex-bot-intent-kendraconfiguration): {{
+    KendraConfiguration}}
+  [Name](#cfn-lex-bot-intent-name): {{String}}
+  [OutputContexts](#cfn-lex-bot-intent-outputcontexts): {{
+    - OutputContext}}
+  [ParentIntentSignature](#cfn-lex-bot-intent-parentintentsignature): {{String}}
+  [QInConnectIntentConfiguration](#cfn-lex-bot-intent-qinconnectintentconfiguration): {{
+    QInConnectIntentConfiguration}}
+  [QnAIntentConfiguration](#cfn-lex-bot-intent-qnaintentconfiguration): {{
+    QnAIntentConfiguration}}
+  [SampleUtterances](#cfn-lex-bot-intent-sampleutterances): {{
+    - SampleUtterance}}
+  [SlotPriorities](#cfn-lex-bot-intent-slotpriorities): {{
+    - SlotPriority}}
+  [Slots](#cfn-lex-bot-intent-slots): {{
+    - Slot}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-intent-properties"></a>
 
-`BedrockAgentIntentConfiguration`
-
+`BedrockAgentIntentConfiguration`  <a name="cfn-lex-bot-intent-bedrockagentintentconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [BedrockAgentIntentConfiguration](aws-properties-lex-bot-bedrockagentintentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Description`  <a name="cfn-lex-bot-intent-description"></a>
+A description of the intent. Use the description to help identify the intent in lists.
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [BedrockAgentIntentConfiguration](aws-properties-lex-bot-bedrockagentintentconfiguration.md)
+`DialogCodeHook`  <a name="cfn-lex-bot-intent-dialogcodehook"></a>
+Specifies that Amazon Lex invokes the alias Lambda function for each user input. You can invoke this Lambda function to personalize user interaction.
+*Required*: No
+*Type*: [DialogCodeHookSetting](aws-properties-lex-bot-dialogcodehooksetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
-A description of the intent. Use the description to help identify
-the intent in lists.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DialogCodeHook`
-
-Specifies that Amazon Lex invokes the alias Lambda function for each user input. You can invoke this Lambda
-function to personalize user interaction.
-
-_Required_: No
-
-_Type_: [DialogCodeHookSetting](aws-properties-lex-bot-dialogcodehooksetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-lex-bot-intent-displayname"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FulfillmentCodeHook`  <a name="cfn-lex-bot-intent-fulfillmentcodehook"></a>
+Specifies that Amazon Lex invokes the alias Lambda function when the intent is ready for fulfillment. You can invoke this function to complete the bot's transaction with the user.
+*Required*: No
+*Type*: [FulfillmentCodeHookSetting](aws-properties-lex-bot-fulfillmentcodehooksetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FulfillmentCodeHook`
-
-Specifies that Amazon Lex invokes the alias Lambda function when the intent is ready for fulfillment. You can invoke
-this function to complete the bot's transaction with the user.
-
-_Required_: No
-
-_Type_: [FulfillmentCodeHookSetting](aws-properties-lex-bot-fulfillmentcodehooksetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InitialResponseSetting`
-
+`InitialResponseSetting`  <a name="cfn-lex-bot-intent-initialresponsesetting"></a>
 Configuration setting for a response sent to the user before Amazon Lex starts eliciting slots.
+*Required*: No
+*Type*: [InitialResponseSetting](aws-properties-lex-bot-initialresponsesetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InputContexts`  <a name="cfn-lex-bot-intent-inputcontexts"></a>
+A list of contexts that must be active for this intent to be considered by Amazon Lex.
+*Required*: No
+*Type*: Array of [InputContext](aws-properties-lex-bot-inputcontext.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [InitialResponseSetting](aws-properties-lex-bot-initialresponsesetting.md)
+`IntentClosingSetting`  <a name="cfn-lex-bot-intent-intentclosingsetting"></a>
+Sets the response that Amazon Lex sends to the user when the intent is closed.
+*Required*: No
+*Type*: [IntentClosingSetting](aws-properties-lex-bot-intentclosingsetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`IntentConfirmationSetting`  <a name="cfn-lex-bot-intent-intentconfirmationsetting"></a>
+Provides prompts that Amazon Lex sends to the user to confirm the completion of an intent. If the user answers "no," the settings contain a statement that is sent to the user to end the intent.
+*Required*: No
+*Type*: [IntentConfirmationSetting](aws-properties-lex-bot-intentconfirmationsetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`InputContexts`
+`KendraConfiguration`  <a name="cfn-lex-bot-intent-kendraconfiguration"></a>
+Provides configuration information for the `AMAZON.KendraSearchIntent` intent. When you use this intent, Amazon Lex searches the specified Amazon Kendra index and returns documents from the index that match the user's utterance.
+*Required*: No
+*Type*: [KendraConfiguration](aws-properties-lex-bot-kendraconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of contexts that must be active for this intent to be
-considered by Amazon Lex.
+`Name`  <a name="cfn-lex-bot-intent-name"></a>
+The name of the intent. Intent names must be unique within the locale that contains the intent and can't match the name of any built-in intent.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?)+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OutputContexts`  <a name="cfn-lex-bot-intent-outputcontexts"></a>
+A list of contexts that the intent activates when it is fulfilled.
+*Required*: No
+*Type*: Array of [OutputContext](aws-properties-lex-bot-outputcontext.md)
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [InputContext](aws-properties-lex-bot-inputcontext.md)
+`ParentIntentSignature`  <a name="cfn-lex-bot-intent-parentintentsignature"></a>
+A unique identifier for the built-in intent to base this intent on.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntentClosingSetting`
-
-Sets the response that Amazon Lex sends to the user when the
-intent is closed.
-
-_Required_: No
-
-_Type_: [IntentClosingSetting](aws-properties-lex-bot-intentclosingsetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntentConfirmationSetting`
-
-Provides prompts that Amazon Lex sends to the user to
-confirm the completion of an intent. If the user answers "no," the
-settings contain a statement that is sent to the user to end the
-intent.
-
-_Required_: No
-
-_Type_: [IntentConfirmationSetting](aws-properties-lex-bot-intentconfirmationsetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KendraConfiguration`
-
-Provides configuration information for the `AMAZON.KendraSearchIntent`
-intent. When you use this intent, Amazon Lex searches the specified Amazon Kendra
-index and returns documents from the index that match the user's
-utterance.
-
-_Required_: No
-
-_Type_: [KendraConfiguration](aws-properties-lex-bot-kendraconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the intent. Intent names must be unique within the
-locale that contains the intent and can't match the name of any
-built-in intent.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?)+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputContexts`
-
-A list of contexts that the intent activates when it is
-fulfilled.
-
-_Required_: No
-
-_Type_: Array of [OutputContext](aws-properties-lex-bot-outputcontext.md)
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParentIntentSignature`
-
-A unique identifier for the built-in intent to base this intent
-on.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QInConnectIntentConfiguration`
-
+`QInConnectIntentConfiguration`  <a name="cfn-lex-bot-intent-qinconnectintentconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [QInConnectIntentConfiguration](aws-properties-lex-bot-qinconnectintentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [QInConnectIntentConfiguration](aws-properties-lex-bot-qinconnectintentconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QnAIntentConfiguration`
-
+`QnAIntentConfiguration`  <a name="cfn-lex-bot-intent-qnaintentconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [QnAIntentConfiguration](aws-properties-lex-bot-qnaintentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SampleUtterances`  <a name="cfn-lex-bot-intent-sampleutterances"></a>
+A list of utterances that a user might say to signal the intent.
+*Required*: No
+*Type*: Array of [SampleUtterance](aws-properties-lex-bot-sampleutterance.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [QnAIntentConfiguration](aws-properties-lex-bot-qnaintentconfiguration.md)
+`SlotPriorities`  <a name="cfn-lex-bot-intent-slotpriorities"></a>
+Indicates the priority for slots. Amazon Lex prompts the user for slot values in priority order.
+*Required*: No
+*Type*: Array of [SlotPriority](aws-properties-lex-bot-slotpriority.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SampleUtterances`
-
-A list of utterances that a user might say to signal the
-intent.
-
-_Required_: No
-
-_Type_: Array of [SampleUtterance](aws-properties-lex-bot-sampleutterance.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotPriorities`
-
-Indicates the priority for slots. Amazon Lex prompts the
-user for slot values in priority order.
-
-_Required_: No
-
-_Type_: Array of [SlotPriority](aws-properties-lex-bot-slotpriority.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slots`
-
+`Slots`  <a name="cfn-lex-bot-intent-slots"></a>
 A list of slots that the intent requires for fulfillment.
-
-_Required_: No
-
-_Type_: Array of [Slot](aws-properties-lex-bot-slot.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InputContext
-
-IntentClosingSetting
+*Required*: No
+*Type*: Array of [Slot](aws-properties-lex-bot-slot.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,52 @@
 title: "AWS::WorkSpaces::WorkspacesPool ApplicationSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpaces::WorkspacesPool ApplicationSettings
+<a name="aws-properties-workspaces-workspacespool-applicationsettings"></a>
 
 The persistent application settings for users in the pool.
 
 ## Syntax
+<a name="aws-properties-workspaces-workspacespool-applicationsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspaces-workspacespool-applicationsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "SettingsGroup" : String,
-  "Status" : String
+  "[SettingsGroup](#cfn-workspaces-workspacespool-applicationsettings-settingsgroup)" : {{String}},
+  "[Status](#cfn-workspaces-workspacespool-applicationsettings-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspaces-workspacespool-applicationsettings-syntax.yaml"></a>
 
-```yaml
-
-  SettingsGroup: String
-  Status: String
-
+```
+  [SettingsGroup](#cfn-workspaces-workspacespool-applicationsettings-settingsgroup): {{String}}
+  [Status](#cfn-workspaces-workspacespool-applicationsettings-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspaces-workspacespool-applicationsettings-properties"></a>
 
-`SettingsGroup`
+`SettingsGroup`  <a name="cfn-workspaces-workspacespool-applicationsettings-settingsgroup"></a>
+The path prefix for the S3 bucket where users’ persistent application settings are stored.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9_./()!*'-]+$`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The path prefix for the S3 bucket where users’ persistent application settings are
-stored.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9_./()!*'-]+$`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
-Enables or disables persistent application settings for users during their pool
-sessions.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DISABLED | ENABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::WorkSpaces::WorkspacesPool
-
-Capacity
+`Status`  <a name="cfn-workspaces-workspacespool-applicationsettings-status"></a>
+Enables or disables persistent application settings for users during their pool sessions.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DISABLED | ENABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

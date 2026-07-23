@@ -2,58 +2,44 @@
 title: "AWS::SageMaker::Space FSxLustreFileSystem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Space FSxLustreFileSystem
+<a name="aws-properties-sagemaker-space-fsxlustrefilesystem"></a>
 
 A custom file system in Amazon FSx for Lustre.
 
 ## Syntax
+<a name="aws-properties-sagemaker-space-fsxlustrefilesystem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-space-fsxlustrefilesystem-syntax.json"></a>
 
-```json
-
+```
 {
-  "FileSystemId" : String
+  "[FileSystemId](#cfn-sagemaker-space-fsxlustrefilesystem-filesystemid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-space-fsxlustrefilesystem-syntax.yaml"></a>
 
-```yaml
-
-  FileSystemId: String
-
+```
+  [FileSystemId](#cfn-sagemaker-space-fsxlustrefilesystem-filesystemid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-space-fsxlustrefilesystem-properties"></a>
 
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-sagemaker-space-fsxlustrefilesystem-filesystemid"></a>
 Amazon FSx for Lustre file system ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(fs-[0-9a-f]{8,})$`
-
-_Minimum_: `11`
-
-_Maximum_: `21`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EFSFileSystem
-
-JupyterServerAppSettings
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(fs-[0-9a-f]{8,})$`
+*Minimum*: `11`
+*Maximum*: `21`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

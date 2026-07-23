@@ -2,56 +2,43 @@
 title: "AWS::BedrockAgentCore::Memory MessageBasedTriggerInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory MessageBasedTriggerInput
+<a name="aws-properties-bedrockagentcore-memory-messagebasedtriggerinput"></a>
 
 The message based trigger input.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-messagebasedtriggerinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-messagebasedtriggerinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "MessageCount" : Integer
+  "[MessageCount](#cfn-bedrockagentcore-memory-messagebasedtriggerinput-messagecount)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-messagebasedtriggerinput-syntax.yaml"></a>
 
-```yaml
-
-  MessageCount: Integer
-
+```
+  [MessageCount](#cfn-bedrockagentcore-memory-messagebasedtriggerinput-messagecount): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-messagebasedtriggerinput-properties"></a>
 
-`MessageCount`
-
+`MessageCount`  <a name="cfn-bedrockagentcore-memory-messagebasedtriggerinput-messagecount"></a>
 The memory trigger condition input for the message based trigger message count.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MemoryStrategy
-
-SelfManagedConfiguration
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

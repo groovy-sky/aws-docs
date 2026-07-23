@@ -2,60 +2,43 @@
 title: "AWS::AppFlow::Flow SAPODataParallelismConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow SAPODataParallelismConfig
+<a name="aws-properties-appflow-flow-sapodataparallelismconfig"></a>
 
-Sets the number of _concurrent processes_ that transfer OData records
-from your SAP instance. A concurrent process is query that retrieves a batch of records as
-part of a flow run. Amazon AppFlow can run multiple concurrent processes in parallel to
-transfer data faster.
+Sets the number of *concurrent processes* that transfer OData records from your SAP instance. A concurrent process is query that retrieves a batch of records as part of a flow run. Amazon AppFlow can run multiple concurrent processes in parallel to transfer data faster.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-sapodataparallelismconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-sapodataparallelismconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "maxParallelism" : Integer
+  "[maxParallelism](#cfn-appflow-flow-sapodataparallelismconfig-maxparallelism)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-sapodataparallelismconfig-syntax.yaml"></a>
 
-```yaml
-
-  maxParallelism: Integer
-
+```
+  [maxParallelism](#cfn-appflow-flow-sapodataparallelismconfig-maxparallelism): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-sapodataparallelismconfig-properties"></a>
 
-`maxParallelism`
-
-The maximum number of processes that Amazon AppFlow runs at the same time when it
-retrieves your data from your SAP application.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SAPODataPaginationConfig
-
-SAPODataSourceProperties
+`maxParallelism`  <a name="cfn-appflow-flow-sapodataparallelismconfig-maxparallelism"></a>
+The maximum number of processes that Amazon AppFlow runs at the same time when it retrieves your data from your SAP application.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

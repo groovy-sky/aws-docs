@@ -2,132 +2,86 @@
 title: "AWS::KinesisFirehose::DeliveryStream ParquetSerDe"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream ParquetSerDe
+<a name="aws-properties-kinesisfirehose-deliverystream-parquetserde"></a>
 
-A serializer to use for converting data to the Parquet format before storing it in
-Amazon S3. For more information, see [Apache Parquet](https://parquet.apache.org/docs).
+A serializer to use for converting data to the Parquet format before storing it in Amazon S3. For more information, see [Apache Parquet](https://parquet.apache.org/docs/).
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-parquetserde-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-parquetserde-syntax.json"></a>
 
-```json
-
+```
 {
-  "BlockSizeBytes" : Integer,
-  "Compression" : String,
-  "EnableDictionaryCompression" : Boolean,
-  "MaxPaddingBytes" : Integer,
-  "PageSizeBytes" : Integer,
-  "WriterVersion" : String
+  "[BlockSizeBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes)" : {{Integer}},
+  "[Compression](#cfn-kinesisfirehose-deliverystream-parquetserde-compression)" : {{String}},
+  "[EnableDictionaryCompression](#cfn-kinesisfirehose-deliverystream-parquetserde-enabledictionarycompression)" : {{Boolean}},
+  "[MaxPaddingBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-maxpaddingbytes)" : {{Integer}},
+  "[PageSizeBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-pagesizebytes)" : {{Integer}},
+  "[WriterVersion](#cfn-kinesisfirehose-deliverystream-parquetserde-writerversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-parquetserde-syntax.yaml"></a>
 
-```yaml
-
-  BlockSizeBytes: Integer
-  Compression: String
-  EnableDictionaryCompression: Boolean
-  MaxPaddingBytes: Integer
-  PageSizeBytes: Integer
-  WriterVersion: String
-
+```
+  [BlockSizeBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes): {{Integer}}
+  [Compression](#cfn-kinesisfirehose-deliverystream-parquetserde-compression): {{String}}
+  [EnableDictionaryCompression](#cfn-kinesisfirehose-deliverystream-parquetserde-enabledictionarycompression): {{Boolean}}
+  [MaxPaddingBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-maxpaddingbytes): {{Integer}}
+  [PageSizeBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-pagesizebytes): {{Integer}}
+  [WriterVersion](#cfn-kinesisfirehose-deliverystream-parquetserde-writerversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-parquetserde-properties"></a>
 
-`BlockSizeBytes`
+`BlockSizeBytes`  <a name="cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes"></a>
+The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Firehose uses this value for padding calculations.
+*Required*: No
+*Type*: Integer
+*Minimum*: `67108864`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to
-copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the
-minimum is 64 MiB. Firehose uses this value for padding calculations.
+`Compression`  <a name="cfn-kinesisfirehose-deliverystream-parquetserde-compression"></a>
+The compression code to use over data blocks. The possible values are `UNCOMPRESSED`, `SNAPPY`, and `GZIP`, with the default being `SNAPPY`. Use `SNAPPY` for higher decompression speed. Use `GZIP` if the compression ratio is more important than speed.
+*Required*: No
+*Type*: String
+*Allowed values*: `UNCOMPRESSED | GZIP | SNAPPY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `67108864`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Compression`
-
-The compression code to use over data blocks. The possible values are
-`UNCOMPRESSED`, `SNAPPY`, and `GZIP`, with the default
-being `SNAPPY`. Use `SNAPPY` for higher decompression speed. Use
-`GZIP` if the compression ratio is more important than speed.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `UNCOMPRESSED | GZIP | SNAPPY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableDictionaryCompression`
-
+`EnableDictionaryCompression`  <a name="cfn-kinesisfirehose-deliverystream-parquetserde-enabledictionarycompression"></a>
 Indicates whether to enable dictionary compression.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MaxPaddingBytes`  <a name="cfn-kinesisfirehose-deliverystream-parquetserde-maxpaddingbytes"></a>
+The maximum amount of padding to apply. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 0.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`PageSizeBytes`  <a name="cfn-kinesisfirehose-deliverystream-parquetserde-pagesizebytes"></a>
+The Parquet page size. Column chunks are divided into pages. A page is conceptually an indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and the default is 1 MiB.
+*Required*: No
+*Type*: Integer
+*Minimum*: `65536`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxPaddingBytes`
-
-The maximum amount of padding to apply. This is useful if you intend to copy the data
-from Amazon S3 to HDFS before querying. The default is 0.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PageSizeBytes`
-
-The Parquet page size. Column chunks are divided into pages. A page is conceptually an
-indivisible unit (in terms of compression and encoding). The minimum value is 64 KiB and
-the default is 1 MiB.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `65536`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WriterVersion`
-
-Indicates the version of row format to output. The possible values are `V1`
-and `V2`. The default is `V1`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `V1 | V2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputFormatConfiguration
-
-PartitionField
+`WriterVersion`  <a name="cfn-kinesisfirehose-deliverystream-parquetserde-writerversion"></a>
+Indicates the version of row format to output. The possible values are `V1` and `V2`. The default is `V1`.
+*Required*: No
+*Type*: String
+*Allowed values*: `V1 | V2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

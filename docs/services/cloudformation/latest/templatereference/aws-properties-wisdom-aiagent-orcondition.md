@@ -2,66 +2,51 @@
 title: "AWS::Wisdom::AIAgent OrCondition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent OrCondition
+<a name="aws-properties-wisdom-aiagent-orcondition"></a>
 
 A list of conditions which would be applied together with an `OR` condition.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-orcondition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-orcondition-syntax.json"></a>
 
-```json
-
+```
 {
-  "AndConditions" : [ TagCondition, ... ],
-  "TagCondition" : TagCondition
+  "[AndConditions](#cfn-wisdom-aiagent-orcondition-andconditions)" : {{[ TagCondition, ... ]}},
+  "[TagCondition](#cfn-wisdom-aiagent-orcondition-tagcondition)" : {{TagCondition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-orcondition-syntax.yaml"></a>
 
-```yaml
-
-  AndConditions:
-    - TagCondition
-  TagCondition:
-    TagCondition
-
+```
+  [AndConditions](#cfn-wisdom-aiagent-orcondition-andconditions): {{
+    - TagCondition}}
+  [TagCondition](#cfn-wisdom-aiagent-orcondition-tagcondition): {{
+    TagCondition}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-orcondition-properties"></a>
 
-`AndConditions`
-
+`AndConditions`  <a name="cfn-wisdom-aiagent-orcondition-andconditions"></a>
 A list of conditions which would be applied together with an `AND` condition.
+*Required*: No
+*Type*: Array of [TagCondition](aws-properties-wisdom-aiagent-tagcondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TagCondition](aws-properties-wisdom-aiagent-tagcondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TagCondition`
-
+`TagCondition`  <a name="cfn-wisdom-aiagent-orcondition-tagcondition"></a>
 A leaf node condition which can be used to specify a tag condition.
-
-_Required_: No
-
-_Type_: [TagCondition](aws-properties-wisdom-aiagent-tagcondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OrchestrationAIAgentConfiguration
-
-SelfServiceAIAgentConfiguration
+*Required*: No
+*Type*: [TagCondition](aws-properties-wisdom-aiagent-tagcondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

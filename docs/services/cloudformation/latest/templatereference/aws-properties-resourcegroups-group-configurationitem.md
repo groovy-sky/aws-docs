@@ -2,75 +2,52 @@
 title: "AWS::ResourceGroups::Group ConfigurationItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResourceGroups::Group ConfigurationItem
+<a name="aws-properties-resourcegroups-group-configurationitem"></a>
 
-One of the items in the service configuration assigned to a resource group. A service
-configuration can consist of one or more items. For details service configurations and
-how to construct them, see [Service configurations for resource\
-groups](../../../../reference/arg/latest/apireference/about-slg.md) in the _AWS Resource Groups User_
-_Guide_.
+One of the items in the service configuration assigned to a resource group. A service configuration can consist of one or more items. For details service configurations and how to construct them, see [Service configurations for resource groups](https://docs.aws.amazon.com//ARG/latest/APIReference/about-slg.html) in the *AWS Resource Groups User Guide*.
 
 ## Syntax
+<a name="aws-properties-resourcegroups-group-configurationitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-resourcegroups-group-configurationitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Parameters" : [ ConfigurationParameter, ... ],
-  "Type" : String
+  "[Parameters](#cfn-resourcegroups-group-configurationitem-parameters)" : {{[ ConfigurationParameter, ... ]}},
+  "[Type](#cfn-resourcegroups-group-configurationitem-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-resourcegroups-group-configurationitem-syntax.yaml"></a>
 
-```yaml
-
-  Parameters:
-    - ConfigurationParameter
-  Type: String
-
+```
+  [Parameters](#cfn-resourcegroups-group-configurationitem-parameters): {{
+    - ConfigurationParameter}}
+  [Type](#cfn-resourcegroups-group-configurationitem-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-resourcegroups-group-configurationitem-properties"></a>
 
-`Parameters`
+`Parameters`  <a name="cfn-resourcegroups-group-configurationitem-parameters"></a>
+A collection of parameters for this configuration item. For the list of parameters that you can use with each configuration item `Type`, see [Supported resource types and parameters](https://docs.aws.amazon.com//ARG/latest/APIReference/about-slg.html#about-slg-types) in the *AWS Resource Groups User Guide*.
+*Required*: No
+*Type*: Array of [ConfigurationParameter](aws-properties-resourcegroups-group-configurationparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A collection of parameters for this configuration item. For the list of parameters
-that you can use with each configuration item `Type`, see [Supported resource types and parameters](../../../../reference/arg/latest/apireference/about-slg.md#about-slg-types) in the _AWS Resource Groups User Guide_.
-
-_Required_: No
-
-_Type_: Array of [ConfigurationParameter](aws-properties-resourcegroups-group-configurationparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Specifies the type of configuration item. Each item must have a unique value for type.
-For the list of the types that you can specify for a configuration item, see [Supported resource types and parameters](../../../../reference/arg/latest/apireference/about-slg.md#about-slg-types) in the _AWS Resource Groups User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `AWS::[a-zA-Z0-9]+::[a-zA-Z0-9]+`
-
-_Maximum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ResourceGroups::Group
-
-ConfigurationParameter
+`Type`  <a name="cfn-resourcegroups-group-configurationitem-type"></a>
+Specifies the type of configuration item. Each item must have a unique value for type. For the list of the types that you can specify for a configuration item, see [Supported resource types and parameters](https://docs.aws.amazon.com//ARG/latest/APIReference/about-slg.html#about-slg-types) in the *AWS Resource Groups User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `AWS::[a-zA-Z0-9]+::[a-zA-Z0-9]+`
+*Maximum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

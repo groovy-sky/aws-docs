@@ -2,54 +2,42 @@
 title: "AWS::SageMaker::Space SpaceSharingSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Space SpaceSharingSettings
+<a name="aws-properties-sagemaker-space-spacesharingsettings"></a>
 
 A collection of space sharing settings.
 
 ## Syntax
+<a name="aws-properties-sagemaker-space-spacesharingsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-space-spacesharingsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "SharingType" : String
+  "[SharingType](#cfn-sagemaker-space-spacesharingsettings-sharingtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-space-spacesharingsettings-syntax.yaml"></a>
 
-```yaml
-
-  SharingType: String
-
+```
+  [SharingType](#cfn-sagemaker-space-spacesharingsettings-sharingtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-space-spacesharingsettings-properties"></a>
 
-`SharingType`
-
+`SharingType`  <a name="cfn-sagemaker-space-spacesharingsettings-sharingtype"></a>
 Specifies the sharing type of the space.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Private | Shared`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SpaceSettings
-
-SpaceStorageSettings
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Private | Shared`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

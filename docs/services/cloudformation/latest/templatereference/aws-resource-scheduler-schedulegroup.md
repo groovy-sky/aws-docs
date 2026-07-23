@@ -2,118 +2,94 @@
 title: "AWS::Scheduler::ScheduleGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Scheduler::ScheduleGroup
+<a name="aws-resource-scheduler-schedulegroup"></a>
 
-A _schedule group_ is an Amazon EventBridge Scheduler resource you use to organize your schedules.
+ A *schedule group* is an Amazon EventBridge Scheduler resource you use to organize your schedules.
 
-Your AWS account comes with a `default` scheduler group. You associate a new schedule with the `default` group or with schedule groups that
-you create and manage. You can create up to [500 schedule groups](../../../scheduler/latest/userguide/scheduler-quotas.md) in your AWS account.
-With EventBridge Scheduler, you apply [tags](../../../../general/latest/gr/aws-tagging.md) to schedule groups, not to individual schedules to organize your resources.
+ Your AWS account comes with a `default` scheduler group. You associate a new schedule with the `default` group or with schedule groups that you create and manage. You can create up to [500 schedule groups](https://docs.aws.amazon.com/scheduler/latest/UserGuide/scheduler-quotas.html) in your AWS account. With EventBridge Scheduler, you apply [tags](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) to schedule groups, not to individual schedules to organize your resources.
 
-For more information about managing schedule groups, see [Managing a schedule group](../../../scheduler/latest/userguide/managing-schedule-group.md)
-in the _EventBridge Scheduler User Guide_.
+ For more information about managing schedule groups, see [Managing a schedule group](https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-schedule-group.html) in the *EventBridge Scheduler User Guide*.
 
 ## Syntax
+<a name="aws-resource-scheduler-schedulegroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-scheduler-schedulegroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Scheduler::ScheduleGroup",
   "Properties" : {
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Name](#cfn-scheduler-schedulegroup-name)" : {{String}},
+      "[Tags](#cfn-scheduler-schedulegroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-scheduler-schedulegroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Scheduler::ScheduleGroup
 Properties:
-  Name: String
-  Tags:
-    - Tag
-
+  [Name](#cfn-scheduler-schedulegroup-name): {{String}}
+  [Tags](#cfn-scheduler-schedulegroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-scheduler-schedulegroup-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-scheduler-schedulegroup-name"></a>
 The name of the schedule group.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z-_.]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z-_.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-scheduler-schedulegroup-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-scheduler-schedulegroup-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-scheduler-schedulegroup-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-scheduler-schedulegroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-scheduler-schedulegroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `Name` attribute of the schedule group.
 
 ### Fn::GetAtt
+<a name="aws-resource-scheduler-schedulegroup-return-values-fn--getatt"></a>
 
-The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes that `Fn::GetAtt` returns.
-For more information about using the `Fn::GetAtt` intrinsic function, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+ The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes that `Fn::GetAtt` returns. For more information about using the `Fn::GetAtt` intrinsic function, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-scheduler-schedulegroup-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the schedule group.
 
-`CreationDate`
-
+`CreationDate`  <a name="CreationDate-fn::getatt"></a>
 The date and time at which the schedule group was created.
 
-`LastModificationDate`
+`LastModificationDate`  <a name="LastModificationDate-fn::getatt"></a>
+ The time at which the schedule group was last modified.
 
-The time at which the schedule group was last modified.
-
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 Specifies the state of the schedule group.
-
-_Allowed Values_: `ACTIVE` \| `DELETING`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Target
-
-Tag
+*Allowed Values*: `ACTIVE` \| `DELETING`
 
 All content copied from https://docs.aws.amazon.com/.

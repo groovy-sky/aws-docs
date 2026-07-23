@@ -2,77 +2,53 @@
 title: "AWS::CloudFront::CachePolicy HeadersConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::CachePolicy HeadersConfig
+<a name="aws-properties-cloudfront-cachepolicy-headersconfig"></a>
 
-An object that determines whether any HTTP headers (and if so, which headers) are included
-in the cache key and in requests that CloudFront sends to the origin.
+An object that determines whether any HTTP headers (and if so, which headers) are included in the cache key and in requests that CloudFront sends to the origin.
 
 ## Syntax
+<a name="aws-properties-cloudfront-cachepolicy-headersconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-cachepolicy-headersconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "HeaderBehavior" : String,
-  "Headers" : [ String, ... ]
+  "[HeaderBehavior](#cfn-cloudfront-cachepolicy-headersconfig-headerbehavior)" : {{String}},
+  "[Headers](#cfn-cloudfront-cachepolicy-headersconfig-headers)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-cachepolicy-headersconfig-syntax.yaml"></a>
 
-```yaml
-
-  HeaderBehavior: String
-  Headers:
-    - String
-
+```
+  [HeaderBehavior](#cfn-cloudfront-cachepolicy-headersconfig-headerbehavior): {{String}}
+  [Headers](#cfn-cloudfront-cachepolicy-headersconfig-headers): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-cachepolicy-headersconfig-properties"></a>
 
-`HeaderBehavior`
+`HeaderBehavior`  <a name="cfn-cloudfront-cachepolicy-headersconfig-headerbehavior"></a>
+Determines whether any HTTP headers are included in the cache key and in requests that CloudFront sends to the origin. Valid values are:
++ `none` – No HTTP headers are included in the cache key or in requests that CloudFront sends to the origin. Even when this field is set to `none`, any headers that are listed in an `OriginRequestPolicy`*are* included in origin requests.
++ `whitelist` – Only the HTTP headers that are listed in the `Headers` type are included in the cache key and in requests that CloudFront sends to the origin.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(none|whitelist)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines whether any HTTP headers are included in the cache key and in requests that CloudFront
-sends to the origin. Valid values are:
-
-- `none` – No HTTP headers are included in the cache key or in requests that CloudFront
-sends to the origin. Even when this field is set to `none`, any
-headers that are listed in an `OriginRequestPolicy` _are_ included in origin requests.
-
-- `whitelist` – Only the HTTP headers that are listed in the `Headers`
-type are included in the cache key and in requests that CloudFront sends to the
-origin.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(none|whitelist)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Headers`
-
+`Headers`  <a name="cfn-cloudfront-cachepolicy-headersconfig-headers"></a>
 Contains a list of HTTP header names.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CookiesConfig
-
-ParametersInCacheKeyAndForwardedToOrigin
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

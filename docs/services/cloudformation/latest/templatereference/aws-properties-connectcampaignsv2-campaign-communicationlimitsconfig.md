@@ -2,67 +2,51 @@
 title: "AWS::ConnectCampaignsV2::Campaign CommunicationLimitsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign CommunicationLimitsConfig
+<a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig"></a>
 
 Contains the communication limits configuration for an outbound campaign.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllChannelsSubtypes" : CommunicationLimits,
-  "InstanceLimitsHandling" : String
+  "[AllChannelsSubtypes](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-allchannelssubtypes)" : {{CommunicationLimits}},
+  "[InstanceLimitsHandling](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-instancelimitshandling)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig-syntax.yaml"></a>
 
-```yaml
-
-  AllChannelsSubtypes:
-    CommunicationLimits
-  InstanceLimitsHandling: String
-
+```
+  [AllChannelsSubtypes](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-allchannelssubtypes): {{
+    CommunicationLimits}}
+  [InstanceLimitsHandling](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-instancelimitshandling): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig-properties"></a>
 
-`AllChannelsSubtypes`
-
+`AllChannelsSubtypes`  <a name="cfn-connectcampaignsv2-campaign-communicationlimitsconfig-allchannelssubtypes"></a>
 The CommunicationLimits that apply to all channel subtypes defined in an outbound campaign.
+*Required*: No
+*Type*: [CommunicationLimits](aws-properties-connectcampaignsv2-campaign-communicationlimits.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CommunicationLimits](aws-properties-connectcampaignsv2-campaign-communicationlimits.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceLimitsHandling`
-
+`InstanceLimitsHandling`  <a name="cfn-connectcampaignsv2-campaign-communicationlimitsconfig-instancelimitshandling"></a>
 Opt-in or Opt-out from instance-level limits.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `OPT_IN | OPT_OUT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CommunicationLimits
-
-CommunicationTimeConfig
+*Required*: No
+*Type*: String
+*Allowed values*: `OPT_IN | OPT_OUT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

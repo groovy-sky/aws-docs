@@ -2,69 +2,51 @@
 title: "AWS::QuickSight::DataSet DataSetNumericComparisonFilterCondition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataSetNumericComparisonFilterCondition
+<a name="aws-properties-quicksight-dataset-datasetnumericcomparisonfiltercondition"></a>
 
-A filter condition that compares numeric values using operators like `EQUALS`, `GREATER_THAN`,
-or `LESS_THAN`.
+A filter condition that compares numeric values using operators like `EQUALS`, `GREATER_THAN`, or `LESS_THAN`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datasetnumericcomparisonfiltercondition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datasetnumericcomparisonfiltercondition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Operator" : String,
-  "Value" : DataSetNumericFilterValue
+  "[Operator](#cfn-quicksight-dataset-datasetnumericcomparisonfiltercondition-operator)" : {{String}},
+  "[Value](#cfn-quicksight-dataset-datasetnumericcomparisonfiltercondition-value)" : {{DataSetNumericFilterValue}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datasetnumericcomparisonfiltercondition-syntax.yaml"></a>
 
-```yaml
-
-  Operator: String
-  Value:
-    DataSetNumericFilterValue
-
+```
+  [Operator](#cfn-quicksight-dataset-datasetnumericcomparisonfiltercondition-operator): {{String}}
+  [Value](#cfn-quicksight-dataset-datasetnumericcomparisonfiltercondition-value): {{
+    DataSetNumericFilterValue}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datasetnumericcomparisonfiltercondition-properties"></a>
 
-`Operator`
+`Operator`  <a name="cfn-quicksight-dataset-datasetnumericcomparisonfiltercondition-operator"></a>
+The comparison operator to use, such as `EQUALS`, `GREATER_THAN`, `LESS_THAN`, or their variants.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS | DOES_NOT_EQUAL | GREATER_THAN | GREATER_THAN_OR_EQUALS_TO | LESS_THAN | LESS_THAN_OR_EQUALS_TO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The comparison operator to use, such as `EQUALS`, `GREATER_THAN`, `LESS_THAN`,
-or their variants.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS | DOES_NOT_EQUAL | GREATER_THAN | GREATER_THAN_OR_EQUALS_TO | LESS_THAN | LESS_THAN_OR_EQUALS_TO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-quicksight-dataset-datasetnumericcomparisonfiltercondition-value"></a>
 The numeric value to compare against.
-
-_Required_: No
-
-_Type_: [DataSetNumericFilterValue](aws-properties-quicksight-dataset-datasetnumericfiltervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetDateRangeFilterCondition
-
-DataSetNumericFilterCondition
+*Required*: No
+*Type*: [DataSetNumericFilterValue](aws-properties-quicksight-dataset-datasetnumericfiltervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

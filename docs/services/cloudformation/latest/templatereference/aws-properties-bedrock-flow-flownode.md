@@ -2,111 +2,80 @@
 title: "AWS::Bedrock::Flow FlowNode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow FlowNode
+<a name="aws-properties-bedrock-flow-flownode"></a>
 
 Contains configurations about a node in the flow.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-flownode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-flownode-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configuration" : FlowNodeConfiguration,
-  "Inputs" : [ FlowNodeInput, ... ],
-  "Name" : String,
-  "Outputs" : [ FlowNodeOutput, ... ],
-  "Type" : String
+  "[Configuration](#cfn-bedrock-flow-flownode-configuration)" : {{FlowNodeConfiguration}},
+  "[Inputs](#cfn-bedrock-flow-flownode-inputs)" : {{[ FlowNodeInput, ... ]}},
+  "[Name](#cfn-bedrock-flow-flownode-name)" : {{String}},
+  "[Outputs](#cfn-bedrock-flow-flownode-outputs)" : {{[ FlowNodeOutput, ... ]}},
+  "[Type](#cfn-bedrock-flow-flownode-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-flownode-syntax.yaml"></a>
 
-```yaml
-
-  Configuration:
-    FlowNodeConfiguration
-  Inputs:
-    - FlowNodeInput
-  Name: String
-  Outputs:
-    - FlowNodeOutput
-  Type: String
-
+```
+  [Configuration](#cfn-bedrock-flow-flownode-configuration): {{
+    FlowNodeConfiguration}}
+  [Inputs](#cfn-bedrock-flow-flownode-inputs): {{
+    - FlowNodeInput}}
+  [Name](#cfn-bedrock-flow-flownode-name): {{String}}
+  [Outputs](#cfn-bedrock-flow-flownode-outputs): {{
+    - FlowNodeOutput}}
+  [Type](#cfn-bedrock-flow-flownode-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-flownode-properties"></a>
 
-`Configuration`
-
+`Configuration`  <a name="cfn-bedrock-flow-flownode-configuration"></a>
 Contains configurations for the node.
+*Required*: No
+*Type*: [FlowNodeConfiguration](aws-properties-bedrock-flow-flownodeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FlowNodeConfiguration](aws-properties-bedrock-flow-flownodeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Inputs`
-
+`Inputs`  <a name="cfn-bedrock-flow-flownode-inputs"></a>
 An array of objects, each of which contains information about an input into the node.
+*Required*: No
+*Type*: Array of [FlowNodeInput](aws-properties-bedrock-flow-flownodeinput.md)
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FlowNodeInput](aws-properties-bedrock-flow-flownodeinput.md)
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrock-flow-flownode-name"></a>
 A name for the node.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Outputs`
-
+`Outputs`  <a name="cfn-bedrock-flow-flownode-outputs"></a>
 A list of objects, each of which contains information about an output from the node.
+*Required*: No
+*Type*: Array of [FlowNodeOutput](aws-properties-bedrock-flow-flownodeoutput.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FlowNodeOutput](aws-properties-bedrock-flow-flownodeoutput.md)
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-bedrock-flow-flownode-type"></a>
 The type of node. This value must match the name of the key that you provide in the configuration you provide in the `FlowNodeConfiguration` field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Input | Output | KnowledgeBase | Condition | Lex | Prompt | LambdaFunction | Agent | Storage | Retrieval | Iterator | Collector | InlineCode | Loop | LoopInput | LoopController`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowDefinition
-
-FlowNodeConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Input | Output | KnowledgeBase | Condition | Lex | Prompt | LambdaFunction | Agent | Storage | Retrieval | Iterator | Collector | InlineCode | Loop | LoopInput | LoopController`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

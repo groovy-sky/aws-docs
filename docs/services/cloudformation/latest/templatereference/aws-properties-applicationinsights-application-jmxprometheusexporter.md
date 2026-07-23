@@ -2,80 +2,57 @@
 title: "AWS::ApplicationInsights::Application JMXPrometheusExporter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application JMXPrometheusExporter
+<a name="aws-properties-applicationinsights-application-jmxprometheusexporter"></a>
 
-The `AWS::ApplicationInsights::Application JMXPrometheusExporter` property type
-defines the JMXPrometheus Exporter configuration. For more information, see the
-[component configuration](../../../amazoncloudwatch/latest/monitoring/component-config-sections.md#component-configuration-prometheus) in the CloudWatch Application Insights
-documentation.
+The `AWS::ApplicationInsights::Application JMXPrometheusExporter` property type defines the JMXPrometheus Exporter configuration. For more information, see the [component configuration](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/component-config-sections.html#component-configuration-prometheus) in the CloudWatch Application Insights documentation.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-jmxprometheusexporter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-jmxprometheusexporter-syntax.json"></a>
 
-```json
-
+```
 {
-  "HostPort" : String,
-  "JMXURL" : String,
-  "PrometheusPort" : String
+  "[HostPort](#cfn-applicationinsights-application-jmxprometheusexporter-hostport)" : {{String}},
+  "[JMXURL](#cfn-applicationinsights-application-jmxprometheusexporter-jmxurl)" : {{String}},
+  "[PrometheusPort](#cfn-applicationinsights-application-jmxprometheusexporter-prometheusport)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-jmxprometheusexporter-syntax.yaml"></a>
 
-```yaml
-
-  HostPort: String
-  JMXURL: String
-  PrometheusPort: String
-
+```
+  [HostPort](#cfn-applicationinsights-application-jmxprometheusexporter-hostport): {{String}}
+  [JMXURL](#cfn-applicationinsights-application-jmxprometheusexporter-jmxurl): {{String}}
+  [PrometheusPort](#cfn-applicationinsights-application-jmxprometheusexporter-prometheusport): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-jmxprometheusexporter-properties"></a>
 
-`HostPort`
+`HostPort`  <a name="cfn-applicationinsights-application-jmxprometheusexporter-hostport"></a>
+The host and port to connect to through remote JMX. Only one of `jmxURL` and `hostPort` can be specified.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The host and port to connect to through remote JMX. Only one of `jmxURL` and `hostPort` can be
-specified.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JMXURL`
-
+`JMXURL`  <a name="cfn-applicationinsights-application-jmxprometheusexporter-jmxurl"></a>
 The complete JMX URL to connect to.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrometheusPort`
-
+`PrometheusPort`  <a name="cfn-applicationinsights-application-jmxprometheusexporter-prometheusport"></a>
 The target port to send Prometheus metrics to. If not specified, the default port `9404` is used.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HANAPrometheusExporter
-
-Log
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

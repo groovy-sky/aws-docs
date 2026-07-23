@@ -2,82 +2,60 @@
 title: "AWS::Connect::User PhoneNumberConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User PhoneNumberConfig
+<a name="aws-properties-connect-user-phonenumberconfig"></a>
 
 Configuration settings for phone type and phone number.
 
 ## Syntax
+<a name="aws-properties-connect-user-phonenumberconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-user-phonenumberconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Channel" : String,
-  "PhoneNumber" : String,
-  "PhoneType" : String
+  "[Channel](#cfn-connect-user-phonenumberconfig-channel)" : {{String}},
+  "[PhoneNumber](#cfn-connect-user-phonenumberconfig-phonenumber)" : {{String}},
+  "[PhoneType](#cfn-connect-user-phonenumberconfig-phonetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-user-phonenumberconfig-syntax.yaml"></a>
 
-```yaml
-
-  Channel: String
-  PhoneNumber: String
-  PhoneType: String
-
+```
+  [Channel](#cfn-connect-user-phonenumberconfig-channel): {{String}}
+  [PhoneNumber](#cfn-connect-user-phonenumberconfig-phonenumber): {{String}}
+  [PhoneType](#cfn-connect-user-phonenumberconfig-phonetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-user-phonenumberconfig-properties"></a>
 
-`Channel`
-
+`Channel`  <a name="cfn-connect-user-phonenumberconfig-channel"></a>
 The channel for this phone number configuration. **Only `VOICE` is supported for this data type.**
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VOICE | CHAT | TASK | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VOICE | CHAT | TASK | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PhoneNumber`
-
+`PhoneNumber`  <a name="cfn-connect-user-phonenumberconfig-phonenumber"></a>
 The phone number for the user's desk phone.
+*Required*: No
+*Type*: String
+*Pattern*: `\+[1-9]\d{1,14}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\+[1-9]\d{1,14}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PhoneType`
-
+`PhoneType`  <a name="cfn-connect-user-phonenumberconfig-phonetype"></a>
 The phone type. Valid values: SOFT\_PHONE, DESK\_PHONE.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SOFT_PHONE | DESK_PHONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PersistentConnectionConfig
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SOFT_PHONE | DESK_PHONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

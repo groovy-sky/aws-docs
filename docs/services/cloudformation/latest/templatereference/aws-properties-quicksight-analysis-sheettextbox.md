@@ -2,74 +2,54 @@
 title: "AWS::QuickSight::Analysis SheetTextBox"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SheetTextBox
+<a name="aws-properties-quicksight-analysis-sheettextbox"></a>
 
 A text box.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-sheettextbox-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-sheettextbox-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "SheetTextBoxId" : String
+  "[Content](#cfn-quicksight-analysis-sheettextbox-content)" : {{String}},
+  "[SheetTextBoxId](#cfn-quicksight-analysis-sheettextbox-sheettextboxid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-sheettextbox-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  SheetTextBoxId: String
-
+```
+  [Content](#cfn-quicksight-analysis-sheettextbox-content): {{String}}
+  [SheetTextBoxId](#cfn-quicksight-analysis-sheettextbox-sheettextboxid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-sheettextbox-properties"></a>
 
-`Content`
-
+`Content`  <a name="cfn-quicksight-analysis-sheettextbox-content"></a>
 The content that is displayed in the text box.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `150000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `150000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetTextBoxId`
-
+`SheetTextBoxId`  <a name="cfn-quicksight-analysis-sheettextbox-sheettextboxid"></a>
 The unique identifier for a text box. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have text boxes that share identifiers.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetImageTooltipText
-
-SheetVisualScopingConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

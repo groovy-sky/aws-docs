@@ -2,78 +2,54 @@
 title: "AWS::WAFv2::RuleGroup CustomResponseBody"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup CustomResponseBody
+<a name="aws-properties-wafv2-rulegroup-customresponsebody"></a>
 
-The response body to use in a custom response to a web request. This is referenced by
-key from [CustomResponse](../userguide/aws-properties-wafv2-webacl-blockaction.md#cfn-wafv2-webacl-blockaction-customresponse) `CustomResponseBodyKey`.
+The response body to use in a custom response to a web request. This is referenced by key from [CustomResponse](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-blockaction.html#cfn-wafv2-webacl-blockaction-customresponse)`CustomResponseBodyKey`.
 
 ## Syntax
+<a name="aws-properties-wafv2-rulegroup-customresponsebody-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-rulegroup-customresponsebody-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "ContentType" : String
+  "[Content](#cfn-wafv2-rulegroup-customresponsebody-content)" : {{String}},
+  "[ContentType](#cfn-wafv2-rulegroup-customresponsebody-contenttype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-rulegroup-customresponsebody-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  ContentType: String
-
+```
+  [Content](#cfn-wafv2-rulegroup-customresponsebody-content): {{String}}
+  [ContentType](#cfn-wafv2-rulegroup-customresponsebody-contenttype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-rulegroup-customresponsebody-properties"></a>
 
-`Content`
-
+`Content`  <a name="cfn-wafv2-rulegroup-customresponsebody-content"></a>
 The payload of the custom response.
+You can use JSON escape strings in JSON content. To do this, you must specify JSON content in the `ContentType` setting.
+For information about the limits on count and size for custom request and response settings, see [AWS WAF quotas](https://docs.aws.amazon.com/waf/latest/developerguide/limits.html) in the *AWS WAF Developer Guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `10240`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You can use JSON escape strings in JSON content. To do this, you must specify JSON
-content in the `ContentType` setting.
-
-For information about the limits on count and size for custom request and response settings, see [AWS WAF quotas](../../../waf/latest/developerguide/limits.md)
-in the _AWS WAF Developer Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `10240`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContentType`
-
-The type of content in the payload that you are defining in the `Content`
-string.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `TEXT_PLAIN | TEXT_HTML | APPLICATION_JSON`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomResponse
-
-FieldToMatch
+`ContentType`  <a name="cfn-wafv2-rulegroup-customresponsebody-contenttype"></a>
+The type of content in the payload that you are defining in the `Content` string.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `TEXT_PLAIN | TEXT_HTML | APPLICATION_JSON`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

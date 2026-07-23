@@ -2,99 +2,68 @@
 title: "AWS::CustomerProfiles::Domain Matching"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Domain Matching
+<a name="aws-properties-customerprofiles-domain-matching"></a>
 
-The process of matching duplicate profiles. If `Matching = true`, Amazon Connect Customer Profiles starts a weekly batch process called _Identity_
-_Resolution Job_. If you do not specify a date and time for the
-_Identity Resolution Job_ to run, by default it runs every
-Saturday at 12AM UTC to detect duplicate profiles in your domains. After the
-_Identity Resolution Job_ completes, use the
-`GetMatches` API to return and review the results. Or, if you have
-configured `ExportingConfig` in the `MatchingRequest`, you can
-download the results from S3.
+The process of matching duplicate profiles. If `Matching = true`, Connect Customer Customer Profiles starts a weekly batch process called *Identity Resolution Job*. If you do not specify a date and time for the *Identity Resolution Job* to run, by default it runs every Saturday at 12AM UTC to detect duplicate profiles in your domains. After the *Identity Resolution Job* completes, use the `GetMatches` API to return and review the results. Or, if you have configured `ExportingConfig` in the `MatchingRequest`, you can download the results from S3.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-domain-matching-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-domain-matching-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoMerging" : AutoMerging,
-  "Enabled" : Boolean,
-  "ExportingConfig" : ExportingConfig,
-  "JobSchedule" : JobSchedule
+  "[AutoMerging](#cfn-customerprofiles-domain-matching-automerging)" : {{AutoMerging}},
+  "[Enabled](#cfn-customerprofiles-domain-matching-enabled)" : {{Boolean}},
+  "[ExportingConfig](#cfn-customerprofiles-domain-matching-exportingconfig)" : {{ExportingConfig}},
+  "[JobSchedule](#cfn-customerprofiles-domain-matching-jobschedule)" : {{JobSchedule}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-domain-matching-syntax.yaml"></a>
 
-```yaml
-
-  AutoMerging:
-    AutoMerging
-  Enabled: Boolean
-  ExportingConfig:
-    ExportingConfig
-  JobSchedule:
-    JobSchedule
-
+```
+  [AutoMerging](#cfn-customerprofiles-domain-matching-automerging): {{
+    AutoMerging}}
+  [Enabled](#cfn-customerprofiles-domain-matching-enabled): {{Boolean}}
+  [ExportingConfig](#cfn-customerprofiles-domain-matching-exportingconfig): {{
+    ExportingConfig}}
+  [JobSchedule](#cfn-customerprofiles-domain-matching-jobschedule): {{
+    JobSchedule}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-domain-matching-properties"></a>
 
-`AutoMerging`
-
+`AutoMerging`  <a name="cfn-customerprofiles-domain-matching-automerging"></a>
 Configuration information about the auto-merging process.
+*Required*: No
+*Type*: [AutoMerging](aws-properties-customerprofiles-domain-automerging.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AutoMerging](aws-properties-customerprofiles-domain-automerging.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-customerprofiles-domain-matching-enabled"></a>
 The flag that enables the matching process of duplicate profiles.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExportingConfig`
-
+`ExportingConfig`  <a name="cfn-customerprofiles-domain-matching-exportingconfig"></a>
 The S3 location where Identity Resolution Jobs write result files.
+*Required*: No
+*Type*: [ExportingConfig](aws-properties-customerprofiles-domain-exportingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExportingConfig](aws-properties-customerprofiles-domain-exportingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobSchedule`
-
-The day and time when do you want to start the Identity Resolution Job every
-week.
-
-_Required_: No
-
-_Type_: [JobSchedule](aws-properties-customerprofiles-domain-jobschedule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JobSchedule
-
-MatchingRule
+`JobSchedule`  <a name="cfn-customerprofiles-domain-matching-jobschedule"></a>
+The day and time when do you want to start the Identity Resolution Job every week.
+*Required*: No
+*Type*: [JobSchedule](aws-properties-customerprofiles-domain-jobschedule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

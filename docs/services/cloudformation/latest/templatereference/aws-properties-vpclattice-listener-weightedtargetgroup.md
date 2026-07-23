@@ -2,79 +2,54 @@
 title: "AWS::VpcLattice::Listener WeightedTargetGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Listener WeightedTargetGroup
+<a name="aws-properties-vpclattice-listener-weightedtargetgroup"></a>
 
 Describes the weight of a target group.
 
 ## Syntax
+<a name="aws-properties-vpclattice-listener-weightedtargetgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-listener-weightedtargetgroup-syntax.json"></a>
 
-```json
-
+```
 {
-  "TargetGroupIdentifier" : String,
-  "Weight" : Integer
+  "[TargetGroupIdentifier](#cfn-vpclattice-listener-weightedtargetgroup-targetgroupidentifier)" : {{String}},
+  "[Weight](#cfn-vpclattice-listener-weightedtargetgroup-weight)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-listener-weightedtargetgroup-syntax.yaml"></a>
 
-```yaml
-
-  TargetGroupIdentifier: String
-  Weight: Integer
-
+```
+  [TargetGroupIdentifier](#cfn-vpclattice-listener-weightedtargetgroup-targetgroupidentifier): {{String}}
+  [Weight](#cfn-vpclattice-listener-weightedtargetgroup-weight): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-listener-weightedtargetgroup-properties"></a>
 
-`TargetGroupIdentifier`
-
+`TargetGroupIdentifier`  <a name="cfn-vpclattice-listener-weightedtargetgroup-targetgroupidentifier"></a>
 The ID of the target group.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^((tg-[0-9a-z]{17})|(arn:[a-z0-9\-]+:vpc-lattice:[a-zA-Z0-9\-]+:\d{12}:targetgroup/tg-[0-9a-z]{17}))$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^((tg-[0-9a-z]{17})|(arn:[a-z0-9\-]+:vpc-lattice:[a-zA-Z0-9\-]+:\d{12}:targetgroup/tg-[0-9a-z]{17}))$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
-Only required if you specify multiple target groups for a forward action. The weight
-determines how requests are distributed to the target group. For example, if you specify two
-target groups, each with a weight of 10, each target group receives half the requests. If you
-specify two target groups, one with a weight of 10 and the other with a weight of 20, the target
-group with a weight of 20 receives twice as many requests as the other target group. If there's
-only one target group specified, then the default value is 100.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `999`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::VpcLattice::ResourceConfiguration
+`Weight`  <a name="cfn-vpclattice-listener-weightedtargetgroup-weight"></a>
+Only required if you specify multiple target groups for a forward action. The weight determines how requests are distributed to the target group. For example, if you specify two target groups, each with a weight of 10, each target group receives half the requests. If you specify two target groups, one with a weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. If there's only one target group specified, then the default value is 100.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `999`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,83 +2,61 @@
 title: "AWS::CustomerProfiles::CalculatedAttributeDefinition Conditions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::CalculatedAttributeDefinition Conditions
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-conditions"></a>
 
-The conditions including range, object count, and threshold for the calculated
-attribute.
+The conditions including range, object count, and threshold for the calculated attribute.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-conditions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-conditions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ObjectCount" : Integer,
-  "Range" : Range,
-  "Threshold" : Threshold
+  "[ObjectCount](#cfn-customerprofiles-calculatedattributedefinition-conditions-objectcount)" : {{Integer}},
+  "[Range](#cfn-customerprofiles-calculatedattributedefinition-conditions-range)" : {{Range}},
+  "[Threshold](#cfn-customerprofiles-calculatedattributedefinition-conditions-threshold)" : {{Threshold}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-conditions-syntax.yaml"></a>
 
-```yaml
-
-  ObjectCount: Integer
-  Range:
-    Range
-  Threshold:
-    Threshold
-
+```
+  [ObjectCount](#cfn-customerprofiles-calculatedattributedefinition-conditions-objectcount): {{Integer}}
+  [Range](#cfn-customerprofiles-calculatedattributedefinition-conditions-range): {{
+    Range}}
+  [Threshold](#cfn-customerprofiles-calculatedattributedefinition-conditions-threshold): {{
+    Threshold}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-conditions-properties"></a>
 
-`ObjectCount`
-
+`ObjectCount`  <a name="cfn-customerprofiles-calculatedattributedefinition-conditions-objectcount"></a>
 The number of profile objects used for the calculated attribute.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Range`
-
+`Range`  <a name="cfn-customerprofiles-calculatedattributedefinition-conditions-range"></a>
 The relative time period over which data is included in the aggregation.
+*Required*: No
+*Type*: [Range](aws-properties-customerprofiles-calculatedattributedefinition-range.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Range](aws-properties-customerprofiles-calculatedattributedefinition-range.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Threshold`
-
+`Threshold`  <a name="cfn-customerprofiles-calculatedattributedefinition-conditions-threshold"></a>
 The threshold for the calculated attribute.
-
-_Required_: No
-
-_Type_: [Threshold](aws-properties-customerprofiles-calculatedattributedefinition-threshold.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttributeItem
-
-Range
+*Required*: No
+*Type*: [Threshold](aws-properties-customerprofiles-calculatedattributedefinition-threshold.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

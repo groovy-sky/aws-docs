@@ -2,55 +2,42 @@
 title: "AWS::APS::Scraper AmpConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper AmpConfiguration
+<a name="aws-properties-aps-scraper-ampconfiguration"></a>
 
-The `AmpConfiguration` structure defines the Amazon Managed Service for
-Prometheus instance a scraper should send metrics to.
+The `AmpConfiguration` structure defines the Amazon Managed Service for Prometheus instance a scraper should send metrics to.
 
 ## Syntax
+<a name="aws-properties-aps-scraper-ampconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-scraper-ampconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "WorkspaceArn" : String
+  "[WorkspaceArn](#cfn-aps-scraper-ampconfiguration-workspacearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-scraper-ampconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  WorkspaceArn: String
-
+```
+  [WorkspaceArn](#cfn-aps-scraper-ampconfiguration-workspacearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-scraper-ampconfiguration-properties"></a>
 
-`WorkspaceArn`
-
+`WorkspaceArn`  <a name="cfn-aps-scraper-ampconfiguration-workspacearn"></a>
 ARN of the Amazon Managed Service for Prometheus workspace.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z]*:aps:[-a-z0-9]+:[0-9]{12}:workspace/.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::APS::Scraper
-
-CloudWatchLogDestination
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z]*:aps:[-a-z0-9]+:[0-9]{12}:workspace/.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

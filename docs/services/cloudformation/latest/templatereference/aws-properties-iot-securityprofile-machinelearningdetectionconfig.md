@@ -2,61 +2,44 @@
 title: "AWS::IoT::SecurityProfile MachineLearningDetectionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::SecurityProfile MachineLearningDetectionConfig
+<a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig"></a>
 
-The `MachineLearningDetectionConfig` property type controls confidence of the
-machine learning model.
+The `MachineLearningDetectionConfig` property type controls confidence of the machine learning model.
 
 ## Syntax
+<a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConfidenceLevel" : String
+  "[ConfidenceLevel](#cfn-iot-securityprofile-machinelearningdetectionconfig-confidencelevel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig-syntax.yaml"></a>
 
-```yaml
-
-  ConfidenceLevel: String
-
+```
+  [ConfidenceLevel](#cfn-iot-securityprofile-machinelearningdetectionconfig-confidencelevel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig-properties"></a>
 
-`ConfidenceLevel`
-
+`ConfidenceLevel`  <a name="cfn-iot-securityprofile-machinelearningdetectionconfig-confidencelevel"></a>
 The model confidence level.
-
-There are three levels of confidence, `"high"`, `"medium"`, and
-`"low"`.
-
-The higher the confidence level, the lower the sensitivity, and the lower the alarm
-frequency will be.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LOW | MEDIUM | HIGH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BehaviorCriteria
-
-MetricDimension
+There are three levels of confidence, `"high"`, `"medium"`, and `"low"`.
+The higher the confidence level, the lower the sensitivity, and the lower the alarm frequency will be.
+*Required*: No
+*Type*: String
+*Allowed values*: `LOW | MEDIUM | HIGH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

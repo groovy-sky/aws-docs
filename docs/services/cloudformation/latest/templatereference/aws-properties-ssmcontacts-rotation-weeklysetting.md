@@ -2,68 +2,51 @@
 title: "AWS::SSMContacts::Rotation WeeklySetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMContacts::Rotation WeeklySetting
+<a name="aws-properties-ssmcontacts-rotation-weeklysetting"></a>
 
 Information about rotations that recur weekly.
 
 ## Syntax
+<a name="aws-properties-ssmcontacts-rotation-weeklysetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmcontacts-rotation-weeklysetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "DayOfWeek" : String,
-  "HandOffTime" : String
+  "[DayOfWeek](#cfn-ssmcontacts-rotation-weeklysetting-dayofweek)" : {{String}},
+  "[HandOffTime](#cfn-ssmcontacts-rotation-weeklysetting-handofftime)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmcontacts-rotation-weeklysetting-syntax.yaml"></a>
 
-```yaml
-
-  DayOfWeek: String
-  HandOffTime: String
-
+```
+  [DayOfWeek](#cfn-ssmcontacts-rotation-weeklysetting-dayofweek): {{String}}
+  [HandOffTime](#cfn-ssmcontacts-rotation-weeklysetting-handofftime): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmcontacts-rotation-weeklysetting-properties"></a>
 
-`DayOfWeek`
-
+`DayOfWeek`  <a name="cfn-ssmcontacts-rotation-weeklysetting-dayofweek"></a>
 The day of the week when weekly recurring on-call shift rotations begins.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MON | TUE | WED | THU | FRI | SAT | SUN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MON | TUE | WED | THU | FRI | SAT | SUN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HandOffTime`
-
+`HandOffTime`  <a name="cfn-ssmcontacts-rotation-weeklysetting-handofftime"></a>
 The time of day when a weekly recurring on-call shift rotation begins.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

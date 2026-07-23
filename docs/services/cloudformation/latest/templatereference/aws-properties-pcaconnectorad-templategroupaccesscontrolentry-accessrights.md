@@ -2,71 +2,51 @@
 title: "AWS::PCAConnectorAD::TemplateGroupAccessControlEntry AccessRights"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::TemplateGroupAccessControlEntry AccessRights
+<a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights"></a>
 
-Allow or deny permissions for an Active Directory group to enroll or autoenroll certificates for a
-template.
+ Allow or deny permissions for an Active Directory group to enroll or autoenroll certificates for a template.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoEnroll" : String,
-  "Enroll" : String
+  "[AutoEnroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-autoenroll)" : {{String}},
+  "[Enroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-enroll)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights-syntax.yaml"></a>
 
-```yaml
-
-  AutoEnroll: String
-  Enroll: String
-
+```
+  [AutoEnroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-autoenroll): {{String}}
+  [Enroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-enroll): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights-properties"></a>
 
-`AutoEnroll`
+`AutoEnroll`  <a name="cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-autoenroll"></a>
+Allow or deny an Active Directory group from autoenrolling certificates issued against a template. The Active Directory group must be allowed to enroll to allow autoenrollment
+*Required*: No
+*Type*: String
+*Allowed values*: `ALLOW | DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Allow or deny an Active Directory group from autoenrolling certificates issued against a template.
-The Active Directory group must be allowed to enroll to allow autoenrollment
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALLOW | DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enroll`
-
-Allow or deny an Active Directory group from enrolling certificates issued against a
-template.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALLOW | DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::PCAConnectorAD::TemplateGroupAccessControlEntry
-
-Next
+`Enroll`  <a name="cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-enroll"></a>
+Allow or deny an Active Directory group from enrolling certificates issued against a template.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALLOW | DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

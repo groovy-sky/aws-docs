@@ -2,60 +2,44 @@
 title: "AWS::CodePipeline::Pipeline SuccessConditions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline SuccessConditions
+<a name="aws-properties-codepipeline-pipeline-successconditions"></a>
 
-The conditions for making checks that, if met, succeed a stage. For more information
-about conditions, see [Stage conditions](../../../codepipeline/latest/userguide/stage-conditions.md)
-and [How do\
-stage conditions work?](../../../codepipeline/latest/userguide/concepts-how-it-works-conditions.md).
+The conditions for making checks that, if met, succeed a stage. For more information about conditions, see [Stage conditions](https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-conditions.html) and [How do stage conditions work?](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-how-it-works-conditions.html).
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-successconditions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-successconditions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Conditions" : [ Condition, ... ]
+  "[Conditions](#cfn-codepipeline-pipeline-successconditions-conditions)" : {{[ Condition, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-successconditions-syntax.yaml"></a>
 
-```yaml
-
-  Conditions:
-    - Condition
-
+```
+  [Conditions](#cfn-codepipeline-pipeline-successconditions-conditions): {{
+    - Condition}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-successconditions-properties"></a>
 
-`Conditions`
-
+`Conditions`  <a name="cfn-codepipeline-pipeline-successconditions-conditions"></a>
 The conditions that are success conditions.
-
-_Required_: No
-
-_Type_: Array of [Condition](aws-properties-codepipeline-pipeline-condition.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StageTransition
-
-Tag
+*Required*: No
+*Type*: Array of [Condition](aws-properties-codepipeline-pipeline-condition.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

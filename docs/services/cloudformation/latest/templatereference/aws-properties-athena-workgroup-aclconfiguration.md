@@ -2,65 +2,42 @@
 title: "AWS::Athena::WorkGroup AclConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Athena::WorkGroup AclConfiguration
+<a name="aws-properties-athena-workgroup-aclconfiguration"></a>
 
-Indicates that an Amazon S3 canned ACL should be set to control ownership of
-stored query results, including data files inserted by Athena as the result
-of statements like CTAS or INSERT INTO. When Athena stores query results in
-Amazon S3, the canned ACL is set with the `x-amz-acl` request
-header. For more information about S3 Object Ownership, see [Object Ownership settings](../../../s3/latest/userguide/about-object-ownership.md#object-ownership-overview) in the _Amazon S3 User_
-_Guide_.
+Indicates that an Amazon S3 canned ACL should be set to control ownership of stored query results, including data files inserted by Athena as the result of statements like CTAS or INSERT INTO. When Athena stores query results in Amazon S3, the canned ACL is set with the `x-amz-acl` request header. For more information about S3 Object Ownership, see [Object Ownership settings](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html#object-ownership-overview) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-athena-workgroup-aclconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-athena-workgroup-aclconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3AclOption" : String
+  "[S3AclOption](#cfn-athena-workgroup-aclconfiguration-s3acloption)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-athena-workgroup-aclconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  S3AclOption: String
-
+```
+  [S3AclOption](#cfn-athena-workgroup-aclconfiguration-s3acloption): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-athena-workgroup-aclconfiguration-properties"></a>
 
-`S3AclOption`
-
-The Amazon S3 canned ACL that Athena should specify when storing
-query results, including data files inserted by Athena as the result
-of statements like CTAS or INSERT INTO. Currently the only supported canned ACL is
-`BUCKET_OWNER_FULL_CONTROL`. If a query runs in a workgroup and the
-workgroup overrides client-side settings, then the Amazon S3 canned ACL
-specified in the workgroup's settings is used for all queries that run in the workgroup.
-For more information about Amazon S3 canned ACLs, see [Canned ACL](../../../s3/latest/userguide/acl-overview.md#canned-acl) in the _Amazon S3 User Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `BUCKET_OWNER_FULL_CONTROL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Athena::WorkGroup
-
-Classification
+`S3AclOption`  <a name="cfn-athena-workgroup-aclconfiguration-s3acloption"></a>
+The Amazon S3 canned ACL that Athena should specify when storing query results, including data files inserted by Athena as the result of statements like CTAS or INSERT INTO. Currently the only supported canned ACL is `BUCKET_OWNER_FULL_CONTROL`. If a query runs in a workgroup and the workgroup overrides client-side settings, then the Amazon S3 canned ACL specified in the workgroup's settings is used for all queries that run in the workgroup. For more information about Amazon S3 canned ACLs, see [Canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl) in the *Amazon S3 User Guide*.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `BUCKET_OWNER_FULL_CONTROL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

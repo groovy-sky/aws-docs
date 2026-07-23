@@ -2,194 +2,132 @@
 title: "AWS::Connect::Notification NotificationContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Notification NotificationContent
+<a name="aws-properties-connect-notification-notificationcontent"></a>
 
 A map of localized notification content where keys are locale codes and values are the notification text in that locale. Each localized string can be 0-500 characters.
 
 ## Syntax
+<a name="aws-properties-connect-notification-notificationcontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-notification-notificationcontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeDE" : String,
-  "EnUS" : String,
-  "EsES" : String,
-  "FrFR" : String,
-  "IdID" : String,
-  "ItIT" : String,
-  "JaJP" : String,
-  "KoKR" : String,
-  "PtBR" : String,
-  "ZhCN" : String,
-  "ZhTW" : String
+  "[DeDE](#cfn-connect-notification-notificationcontent-dede)" : {{String}},
+  "[EnUS](#cfn-connect-notification-notificationcontent-enus)" : {{String}},
+  "[EsES](#cfn-connect-notification-notificationcontent-eses)" : {{String}},
+  "[FrFR](#cfn-connect-notification-notificationcontent-frfr)" : {{String}},
+  "[IdID](#cfn-connect-notification-notificationcontent-idid)" : {{String}},
+  "[ItIT](#cfn-connect-notification-notificationcontent-itit)" : {{String}},
+  "[JaJP](#cfn-connect-notification-notificationcontent-jajp)" : {{String}},
+  "[KoKR](#cfn-connect-notification-notificationcontent-kokr)" : {{String}},
+  "[PtBR](#cfn-connect-notification-notificationcontent-ptbr)" : {{String}},
+  "[ZhCN](#cfn-connect-notification-notificationcontent-zhcn)" : {{String}},
+  "[ZhTW](#cfn-connect-notification-notificationcontent-zhtw)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-notification-notificationcontent-syntax.yaml"></a>
 
-```yaml
-
-  DeDE: String
-  EnUS: String
-  EsES: String
-  FrFR: String
-  IdID: String
-  ItIT: String
-  JaJP: String
-  KoKR: String
-  PtBR: String
-  ZhCN: String
-  ZhTW: String
-
+```
+  [DeDE](#cfn-connect-notification-notificationcontent-dede): {{String}}
+  [EnUS](#cfn-connect-notification-notificationcontent-enus): {{String}}
+  [EsES](#cfn-connect-notification-notificationcontent-eses): {{String}}
+  [FrFR](#cfn-connect-notification-notificationcontent-frfr): {{String}}
+  [IdID](#cfn-connect-notification-notificationcontent-idid): {{String}}
+  [ItIT](#cfn-connect-notification-notificationcontent-itit): {{String}}
+  [JaJP](#cfn-connect-notification-notificationcontent-jajp): {{String}}
+  [KoKR](#cfn-connect-notification-notificationcontent-kokr): {{String}}
+  [PtBR](#cfn-connect-notification-notificationcontent-ptbr): {{String}}
+  [ZhCN](#cfn-connect-notification-notificationcontent-zhcn): {{String}}
+  [ZhTW](#cfn-connect-notification-notificationcontent-zhtw): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-notification-notificationcontent-properties"></a>
 
-`DeDE`
-
+`DeDE`  <a name="cfn-connect-notification-notificationcontent-dede"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnUS`
-
+`EnUS`  <a name="cfn-connect-notification-notificationcontent-enus"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EsES`
-
+`EsES`  <a name="cfn-connect-notification-notificationcontent-eses"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FrFR`
-
+`FrFR`  <a name="cfn-connect-notification-notificationcontent-frfr"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdID`
-
+`IdID`  <a name="cfn-connect-notification-notificationcontent-idid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ItIT`
-
+`ItIT`  <a name="cfn-connect-notification-notificationcontent-itit"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JaJP`
-
+`JaJP`  <a name="cfn-connect-notification-notificationcontent-jajp"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KoKR`
-
+`KoKR`  <a name="cfn-connect-notification-notificationcontent-kokr"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PtBR`
-
+`PtBR`  <a name="cfn-connect-notification-notificationcontent-ptbr"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ZhCN`
-
+`ZhCN`  <a name="cfn-connect-notification-notificationcontent-zhcn"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ZhTW`
-
+`ZhTW`  <a name="cfn-connect-notification-notificationcontent-zhtw"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.{0,500}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::Notification
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `^.{0,500}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,77 +2,58 @@
 title: "AWS::AmplifyUIBuilder::Form FormButton"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FormButton
+<a name="aws-properties-amplifyuibuilder-form-formbutton"></a>
 
 The `FormButton` property specifies the configuration for a button UI element that is a part of a form.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-formbutton-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-formbutton-syntax.json"></a>
 
-```json
-
+```
 {
-  "Children" : String,
-  "Excluded" : Boolean,
-  "Position" : FieldPosition
+  "[Children](#cfn-amplifyuibuilder-form-formbutton-children)" : {{String}},
+  "[Excluded](#cfn-amplifyuibuilder-form-formbutton-excluded)" : {{Boolean}},
+  "[Position](#cfn-amplifyuibuilder-form-formbutton-position)" : {{FieldPosition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-formbutton-syntax.yaml"></a>
 
-```yaml
-
-  Children: String
-  Excluded: Boolean
-  Position:
-    FieldPosition
-
+```
+  [Children](#cfn-amplifyuibuilder-form-formbutton-children): {{String}}
+  [Excluded](#cfn-amplifyuibuilder-form-formbutton-excluded): {{Boolean}}
+  [Position](#cfn-amplifyuibuilder-form-formbutton-position): {{
+    FieldPosition}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-formbutton-properties"></a>
 
-`Children`
-
+`Children`  <a name="cfn-amplifyuibuilder-form-formbutton-children"></a>
 Describes the button's properties.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Excluded`
-
+`Excluded`  <a name="cfn-amplifyuibuilder-form-formbutton-excluded"></a>
 Specifies whether the button is visible on the form.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
+`Position`  <a name="cfn-amplifyuibuilder-form-formbutton-position"></a>
 The position of the button.
-
-_Required_: No
-
-_Type_: [FieldPosition](aws-properties-amplifyuibuilder-form-fieldposition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FileUploaderFieldConfig
-
-FormCTA
+*Required*: No
+*Type*: [FieldPosition](aws-properties-amplifyuibuilder-form-fieldposition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

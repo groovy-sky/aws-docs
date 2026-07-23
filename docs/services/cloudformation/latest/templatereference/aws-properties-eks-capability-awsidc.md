@@ -2,76 +2,57 @@
 title: "AWS::EKS::Capability AwsIdc"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Capability AwsIdc
+<a name="aws-properties-eks-capability-awsidc"></a>
 
-The `AwsIdc` property type specifies Property description not available. for an [AWS::EKS::Capability](aws-resource-eks-capability.md).
+<a name="aws-properties-eks-capability-awsidc-description"></a>The `AwsIdc` property type specifies Property description not available. for an [AWS::EKS::Capability](aws-resource-eks-capability.md).
 
 ## Syntax
+<a name="aws-properties-eks-capability-awsidc-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-eks-capability-awsidc-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdcInstanceArn" : String,
-  "IdcManagedApplicationArn" : String,
-  "IdcRegion" : String
+  "[IdcInstanceArn](#cfn-eks-capability-awsidc-idcinstancearn)" : {{String}},
+  "[IdcManagedApplicationArn](#cfn-eks-capability-awsidc-idcmanagedapplicationarn)" : {{String}},
+  "[IdcRegion](#cfn-eks-capability-awsidc-idcregion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-eks-capability-awsidc-syntax.yaml"></a>
 
-```yaml
-
-  IdcInstanceArn: String
-  IdcManagedApplicationArn: String
-  IdcRegion: String
-
+```
+  [IdcInstanceArn](#cfn-eks-capability-awsidc-idcinstancearn): {{String}}
+  [IdcManagedApplicationArn](#cfn-eks-capability-awsidc-idcmanagedapplicationarn): {{String}}
+  [IdcRegion](#cfn-eks-capability-awsidc-idcregion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-eks-capability-awsidc-properties"></a>
 
-`IdcInstanceArn`
-
+`IdcInstanceArn`  <a name="cfn-eks-capability-awsidc-idcinstancearn"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IdcManagedApplicationArn`
-
+`IdcManagedApplicationArn`  <a name="cfn-eks-capability-awsidc-idcmanagedapplicationarn"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IdcRegion`
-
+`IdcRegion`  <a name="cfn-eks-capability-awsidc-idcregion"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArgoCdRoleMapping
-
-CapabilityConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

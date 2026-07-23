@@ -2,72 +2,53 @@
 title: "AWS::RTBFabric::InboundExternalLink LinkApplicationLogSampling"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::InboundExternalLink LinkApplicationLogSampling
+<a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling"></a>
 
-The `LinkApplicationLogSampling` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
+<a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-description"></a>The `LinkApplicationLogSampling` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
 
 ## Syntax
+<a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-syntax.json"></a>
 
-```json
-
+```
 {
-  "ErrorLog" : Number,
-  "FilterLog" : Number
+  "[ErrorLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-errorlog)" : {{Number}},
+  "[FilterLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-filterlog)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-syntax.yaml"></a>
 
-```yaml
-
-  ErrorLog: Number
-  FilterLog: Number
-
+```
+  [ErrorLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-errorlog): {{Number}}
+  [FilterLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-filterlog): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-properties"></a>
 
-`ErrorLog`
-
+`ErrorLog`  <a name="cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-errorlog"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`FilterLog`
-
+`FilterLog`  <a name="cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-filterlog"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationLogs
-
-LinkAttributes
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

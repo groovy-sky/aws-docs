@@ -2,82 +2,60 @@
 title: "AWS::Personalize::Solution ContinuousHyperParameterRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Solution ContinuousHyperParameterRange
+<a name="aws-properties-personalize-solution-continuoushyperparameterrange"></a>
 
 Provides the name and range of a continuous hyperparameter.
 
 ## Syntax
+<a name="aws-properties-personalize-solution-continuoushyperparameterrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-personalize-solution-continuoushyperparameterrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxValue" : Number,
-  "MinValue" : Number,
-  "Name" : String
+  "[MaxValue](#cfn-personalize-solution-continuoushyperparameterrange-maxvalue)" : {{Number}},
+  "[MinValue](#cfn-personalize-solution-continuoushyperparameterrange-minvalue)" : {{Number}},
+  "[Name](#cfn-personalize-solution-continuoushyperparameterrange-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-personalize-solution-continuoushyperparameterrange-syntax.yaml"></a>
 
-```yaml
-
-  MaxValue: Number
-  MinValue: Number
-  Name: String
-
+```
+  [MaxValue](#cfn-personalize-solution-continuoushyperparameterrange-maxvalue): {{Number}}
+  [MinValue](#cfn-personalize-solution-continuoushyperparameterrange-minvalue): {{Number}}
+  [Name](#cfn-personalize-solution-continuoushyperparameterrange-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-personalize-solution-continuoushyperparameterrange-properties"></a>
 
-`MaxValue`
-
+`MaxValue`  <a name="cfn-personalize-solution-continuoushyperparameterrange-maxvalue"></a>
 The maximum allowable value for the hyperparameter.
+*Required*: No
+*Type*: Number
+*Minimum*: `-1000000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `-1000000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MinValue`
-
+`MinValue`  <a name="cfn-personalize-solution-continuoushyperparameterrange-minvalue"></a>
 The minimum allowable value for the hyperparameter.
+*Required*: No
+*Type*: Number
+*Minimum*: `-1000000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `-1000000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-personalize-solution-continuoushyperparameterrange-name"></a>
 The name of the hyperparameter.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CategoricalHyperParameterRange
-
-HpoConfig
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

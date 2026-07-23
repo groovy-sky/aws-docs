@@ -2,79 +2,52 @@
 title: "AWS::S3Express::DirectoryBucket ServerSideEncryptionRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Express::DirectoryBucket ServerSideEncryptionRule
+<a name="aws-properties-s3express-directorybucket-serversideencryptionrule"></a>
 
 Specifies the default server-side encryption configuration.
 
 ## Syntax
+<a name="aws-properties-s3express-directorybucket-serversideencryptionrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3express-directorybucket-serversideencryptionrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketKeyEnabled" : Boolean,
-  "ServerSideEncryptionByDefault" : ServerSideEncryptionByDefault
+  "[BucketKeyEnabled](#cfn-s3express-directorybucket-serversideencryptionrule-bucketkeyenabled)" : {{Boolean}},
+  "[ServerSideEncryptionByDefault](#cfn-s3express-directorybucket-serversideencryptionrule-serversideencryptionbydefault)" : {{ServerSideEncryptionByDefault}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3express-directorybucket-serversideencryptionrule-syntax.yaml"></a>
 
-```yaml
-
-  BucketKeyEnabled: Boolean
-  ServerSideEncryptionByDefault:
-    ServerSideEncryptionByDefault
-
+```
+  [BucketKeyEnabled](#cfn-s3express-directorybucket-serversideencryptionrule-bucketkeyenabled): {{Boolean}}
+  [ServerSideEncryptionByDefault](#cfn-s3express-directorybucket-serversideencryptionrule-serversideencryptionbydefault): {{
+    ServerSideEncryptionByDefault}}
 ```
 
 ## Properties
+<a name="aws-properties-s3express-directorybucket-serversideencryptionrule-properties"></a>
 
-`BucketKeyEnabled`
+`BucketKeyEnabled`  <a name="cfn-s3express-directorybucket-serversideencryptionrule-bucketkeyenabled"></a>
+Specifies whether Amazon S3 should use an S3 Bucket Key with server-side encryption using KMS (SSE-KMS) for new objects in the bucket. S3 Bucket Keys are always enabled for `GET` and `PUT` operations on a directory bucket and can’t be disabled. It's only allowed to set the `BucketKeyEnabled` element to `true`.
+S3 Bucket Keys aren't supported, when you copy SSE-KMS encrypted objects from general purpose buckets to directory buckets, from directory buckets to general purpose buckets, or between directory buckets, through [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html), [UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html), [the Copy operation in Batch Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-Batch-Ops), or [the import jobs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-import-job). In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object.
+For more information, see [Amazon S3 Bucket Keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-UsingKMSEncryption.html#s3-express-sse-kms-bucket-keys) in the *Amazon S3 User Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies whether Amazon S3 should use an S3 Bucket Key with server-side encryption
-using KMS (SSE-KMS) for new objects in the bucket. S3 Bucket Keys are always enabled for
-`GET` and `PUT` operations on a directory bucket and can’t be
-disabled. It's only allowed to set the `BucketKeyEnabled` element to
-`true`.
-
-S3 Bucket Keys aren't supported, when you copy SSE-KMS encrypted objects from general
-purpose buckets to directory buckets, from directory buckets to general purpose buckets, or
-between directory buckets, through [CopyObject](../../../s3/latest/api/api-copyobject.md), [UploadPartCopy](../../../s3/latest/api/api-uploadpartcopy.md), [the Copy operation\
-in Batch Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-Batch-Ops), or [the import jobs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-import-job). In this case,
-Amazon S3 makes a call to AWS KMS every time a copy request is made for a
-KMS-encrypted object.
-
-For more information, see [Amazon S3 Bucket Keys](../../../s3/latest/userguide/s3-express-usingkmsencryption.md#s3-express-sse-kms-bucket-keys) in the _Amazon S3 User Guide_.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerSideEncryptionByDefault`
-
-Specifies the default server-side encryption to apply to new objects in the bucket. If a PUT Object
-request doesn't specify any server-side encryption, this default encryption will be applied.
-
-_Required_: No
-
-_Type_: [ServerSideEncryptionByDefault](aws-properties-s3express-directorybucket-serversideencryptionbydefault.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServerSideEncryptionByDefault
-
-Tag
+`ServerSideEncryptionByDefault`  <a name="cfn-s3express-directorybucket-serversideencryptionrule-serversideencryptionbydefault"></a>
+Specifies the default server-side encryption to apply to new objects in the bucket. If a PUT Object request doesn't specify any server-side encryption, this default encryption will be applied.
+*Required*: No
+*Type*: [ServerSideEncryptionByDefault](aws-properties-s3express-directorybucket-serversideencryptionbydefault.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

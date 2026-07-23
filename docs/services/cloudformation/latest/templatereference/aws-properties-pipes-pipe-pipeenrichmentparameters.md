@@ -2,80 +2,54 @@
 title: "AWS::Pipes::Pipe PipeEnrichmentParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeEnrichmentParameters
+<a name="aws-properties-pipes-pipe-pipeenrichmentparameters"></a>
 
 The parameters required to set up enrichment on your pipe.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipeenrichmentparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipeenrichmentparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "HttpParameters" : PipeEnrichmentHttpParameters,
-  "InputTemplate" : String
+  "[HttpParameters](#cfn-pipes-pipe-pipeenrichmentparameters-httpparameters)" : {{PipeEnrichmentHttpParameters}},
+  "[InputTemplate](#cfn-pipes-pipe-pipeenrichmentparameters-inputtemplate)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipeenrichmentparameters-syntax.yaml"></a>
 
-```yaml
-
-  HttpParameters:
-    PipeEnrichmentHttpParameters
-  InputTemplate: String
-
+```
+  [HttpParameters](#cfn-pipes-pipe-pipeenrichmentparameters-httpparameters): {{
+    PipeEnrichmentHttpParameters}}
+  [InputTemplate](#cfn-pipes-pipe-pipeenrichmentparameters-inputtemplate): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipeenrichmentparameters-properties"></a>
 
-`HttpParameters`
+`HttpParameters`  <a name="cfn-pipes-pipe-pipeenrichmentparameters-httpparameters"></a>
+Contains the HTTP parameters to use when the target is a API Gateway REST endpoint or EventBridge ApiDestination.
+If you specify an API Gateway REST API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you're using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence.
+*Required*: No
+*Type*: [PipeEnrichmentHttpParameters](aws-properties-pipes-pipe-pipeenrichmenthttpparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Contains the HTTP parameters to use when the target is a API Gateway REST
-endpoint or EventBridge ApiDestination.
-
-If you specify an API Gateway REST API or EventBridge ApiDestination as a
-target, you can use this parameter to specify headers, path parameters, and query string
-keys/values as part of your target invoking request. If you're using ApiDestinations, the
-corresponding Connection can also have these values configured. In case of any conflicting
-keys, values from the Connection take precedence.
-
-_Required_: No
-
-_Type_: [PipeEnrichmentHttpParameters](aws-properties-pipes-pipe-pipeenrichmenthttpparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputTemplate`
-
-Valid JSON text passed to the enrichment. In this case, nothing from the event itself is
-passed to the enrichment. For more information, see [The JavaScript Object Notation (JSON)\
-Data Interchange Format](http://www.rfc-editor.org/rfc/rfc7159.txt).
-
+`InputTemplate`  <a name="cfn-pipes-pipe-pipeenrichmentparameters-inputtemplate"></a>
+Valid JSON text passed to the enrichment. In this case, nothing from the event itself is passed to the enrichment. For more information, see [The JavaScript Object Notation (JSON) Data Interchange Format](http://www.rfc-editor.org/rfc/rfc7159.txt).
 To remove an input template, specify an empty string.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `8192`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeEnrichmentHttpParameters
-
-PipeLogConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `8192`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::EC2::NetworkInsightsAccessScope PathStatementRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInsightsAccessScope PathStatementRequest
+<a name="aws-properties-ec2-networkinsightsaccessscope-pathstatementrequest"></a>
 
 Describes a path statement.
 
 ## Syntax
+<a name="aws-properties-ec2-networkinsightsaccessscope-pathstatementrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-networkinsightsaccessscope-pathstatementrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "PacketHeaderStatement" : PacketHeaderStatementRequest,
-  "ResourceStatement" : ResourceStatementRequest
+  "[PacketHeaderStatement](#cfn-ec2-networkinsightsaccessscope-pathstatementrequest-packetheaderstatement)" : {{PacketHeaderStatementRequest}},
+  "[ResourceStatement](#cfn-ec2-networkinsightsaccessscope-pathstatementrequest-resourcestatement)" : {{ResourceStatementRequest}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-networkinsightsaccessscope-pathstatementrequest-syntax.yaml"></a>
 
-```yaml
-
-  PacketHeaderStatement:
-    PacketHeaderStatementRequest
-  ResourceStatement:
-    ResourceStatementRequest
-
+```
+  [PacketHeaderStatement](#cfn-ec2-networkinsightsaccessscope-pathstatementrequest-packetheaderstatement): {{
+    PacketHeaderStatementRequest}}
+  [ResourceStatement](#cfn-ec2-networkinsightsaccessscope-pathstatementrequest-resourcestatement): {{
+    ResourceStatementRequest}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-networkinsightsaccessscope-pathstatementrequest-properties"></a>
 
-`PacketHeaderStatement`
-
+`PacketHeaderStatement`  <a name="cfn-ec2-networkinsightsaccessscope-pathstatementrequest-packetheaderstatement"></a>
 The packet header statement.
+*Required*: No
+*Type*: [PacketHeaderStatementRequest](aws-properties-ec2-networkinsightsaccessscope-packetheaderstatementrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [PacketHeaderStatementRequest](aws-properties-ec2-networkinsightsaccessscope-packetheaderstatementrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceStatement`
-
+`ResourceStatement`  <a name="cfn-ec2-networkinsightsaccessscope-pathstatementrequest-resourcestatement"></a>
 The resource statement.
-
-_Required_: No
-
-_Type_: [ResourceStatementRequest](aws-properties-ec2-networkinsightsaccessscope-resourcestatementrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PacketHeaderStatementRequest
-
-ResourceStatementRequest
+*Required*: No
+*Type*: [ResourceStatementRequest](aws-properties-ec2-networkinsightsaccessscope-resourcestatementrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

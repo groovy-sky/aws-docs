@@ -2,88 +2,61 @@
 title: "AWS::IoTFleetWise::DecoderManifest ObdNetworkInterface"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::DecoderManifest ObdNetworkInterface
+<a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface"></a>
 
-Information about a network interface specified by the On-board diagnostic (OBD) II
-protocol.
+Information about a network interface specified by the On-board diagnostic (OBD) II protocol.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface-syntax.json"></a>
 
-```json
-
+```
 {
-  "InterfaceId" : String,
-  "ObdInterface" : ObdInterface,
-  "Type" : String
+  "[InterfaceId](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-interfaceid)" : {{String}},
+  "[ObdInterface](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-obdinterface)" : {{ObdInterface}},
+  "[Type](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface-syntax.yaml"></a>
 
-```yaml
-
-  InterfaceId: String
-  ObdInterface:
-    ObdInterface
-  Type: String
-
+```
+  [InterfaceId](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-interfaceid): {{String}}
+  [ObdInterface](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-obdinterface): {{
+    ObdInterface}}
+  [Type](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface-properties"></a>
 
-`InterfaceId`
-
+`InterfaceId`  <a name="cfn-iotfleetwise-decodermanifest-obdnetworkinterface-interfaceid"></a>
 The ID of the network interface.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ObdInterface`  <a name="cfn-iotfleetwise-decodermanifest-obdnetworkinterface-obdinterface"></a>
+ Information about a network interface specified by the On-board diagnostic (OBD) II protocol.
+*Required*: Yes
+*Type*: [ObdInterface](aws-properties-iotfleetwise-decodermanifest-obdinterface.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObdInterface`
-
-Information about a network interface specified by the On-board diagnostic (OBD) II
-protocol.
-
-_Required_: Yes
-
-_Type_: [ObdInterface](aws-properties-iotfleetwise-decodermanifest-obdinterface.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The network protocol for the vehicle. For example, `CAN_SIGNAL` specifies
-a protocol that defines how data is communicated between electronic control units
-(ECUs). `OBD_SIGNAL` specifies a protocol that defines how self-diagnostic
-data is communicated between ECUs.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `OBD_INTERFACE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ObdInterface
-
-ObdSignal
+`Type`  <a name="cfn-iotfleetwise-decodermanifest-obdnetworkinterface-type"></a>
+The network protocol for the vehicle. For example, `CAN_SIGNAL` specifies a protocol that defines how data is communicated between electronic control units (ECUs). `OBD_SIGNAL` specifies a protocol that defines how self-diagnostic data is communicated between ECUs.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `OBD_INTERFACE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

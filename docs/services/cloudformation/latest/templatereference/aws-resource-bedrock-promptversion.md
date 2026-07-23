@@ -2,153 +2,120 @@
 title: "AWS::Bedrock::PromptVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::PromptVersion
+<a name="aws-resource-bedrock-promptversion"></a>
 
-Creates a static snapshot of your prompt that can be deployed to production. For more information, see [Deploy prompts using Prompt management by creating versions](../../../bedrock/latest/userguide/prompt-management-deploy.md) in the Amazon Bedrock User Guide.
+Creates a static snapshot of your prompt that can be deployed to production. For more information, see [Deploy prompts using Prompt management by creating versions](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-deploy.html) in the Amazon Bedrock User Guide.
 
 ## Syntax
+<a name="aws-resource-bedrock-promptversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-promptversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::PromptVersion",
   "Properties" : {
-      "Description" : String,
-      "PromptArn" : String,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-bedrock-promptversion-description)" : {{String}},
+      "[PromptArn](#cfn-bedrock-promptversion-promptarn)" : {{String}},
+      "[Tags](#cfn-bedrock-promptversion-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-promptversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::PromptVersion
 Properties:
-  Description: String
-  PromptArn: String
-  Tags:
-    Key: Value
-
+  [Description](#cfn-bedrock-promptversion-description): {{String}}
+  [PromptArn](#cfn-bedrock-promptversion-promptarn): {{String}}
+  [Tags](#cfn-bedrock-promptversion-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-promptversion-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrock-promptversion-description"></a>
 The description of the prompt version.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PromptArn`
-
+`PromptArn`  <a name="cfn-bedrock-promptversion-promptarn"></a>
 The Amazon Resource Name (ARN) of the version of the prompt.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:prompt/[0-9a-zA-Z]{10})$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:prompt/[0-9a-zA-Z]{10})$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrock-promptversion-tags"></a>
 A map of tags attached to the prompt version and their values.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-bedrock-promptversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-promptversion-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Number (ARN) of the prompt
-version.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Number (ARN) of the prompt version.
 
-For example, `{ "Ref": "myPromptVersion" }` could return the value
-`""arn:aws:bedrock:us-east-1:123456789012:prompt/PROMPT12345:1"`.
+For example, `{ "Ref": "myPromptVersion" }` could return the value `""arn:aws:bedrock:us-east-1:123456789012:prompt/PROMPT12345:1"`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-promptversion-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-bedrock-promptversion-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the prompt or the prompt version (if you specified a version in the request).
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time at which the prompt was created.
 
-`CustomerEncryptionKeyArn`
+`CustomerEncryptionKeyArn`  <a name="CustomerEncryptionKeyArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the KMS key that the prompt version is encrypted with.
 
-The Amazon Resource Name (ARN) of the KMS key that the prompt version is encrypted
-with.
+`DefaultVariant`  <a name="DefaultVariant-fn::getatt"></a>
+The name of the default variant for the prompt. This value must match the `name` field in the relevant [PromptVariant](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PromptVariant.html) object.
 
-`DefaultVariant`
-
-The name of the default variant for the prompt. This value must match the `name` field in the relevant [PromptVariant](../../../../reference/bedrock/latest/apireference/api-agent-promptvariant.md) object.
-
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 The name of the prompt.
 
-`PromptId`
-
+`PromptId`  <a name="PromptId-fn::getatt"></a>
 The unique identifier of the prompt.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The time at which the prompt was last updated.
 
-`Variants`
-
+`Variants`  <a name="Variants-fn::getatt"></a>
 A list of objects, each containing details about a variant of the prompt.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The version of the prompt that this summary applies to.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ToolSpecification
-
-CachePointBlock
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,83 +2,62 @@
 title: "AWS::QuickSight::Dashboard InsightConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard InsightConfiguration
+<a name="aws-properties-quicksight-dashboard-insightconfiguration"></a>
 
 The configuration of an insight visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-insightconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-insightconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Computations" : [ Computation, ... ],
-  "CustomNarrative" : CustomNarrativeOptions,
-  "Interactions" : VisualInteractionOptions
+  "[Computations](#cfn-quicksight-dashboard-insightconfiguration-computations)" : {{[ Computation, ... ]}},
+  "[CustomNarrative](#cfn-quicksight-dashboard-insightconfiguration-customnarrative)" : {{CustomNarrativeOptions}},
+  "[Interactions](#cfn-quicksight-dashboard-insightconfiguration-interactions)" : {{VisualInteractionOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-insightconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Computations:
-    - Computation
-  CustomNarrative:
-    CustomNarrativeOptions
-  Interactions:
-    VisualInteractionOptions
-
+```
+  [Computations](#cfn-quicksight-dashboard-insightconfiguration-computations): {{
+    - Computation}}
+  [CustomNarrative](#cfn-quicksight-dashboard-insightconfiguration-customnarrative): {{
+    CustomNarrativeOptions}}
+  [Interactions](#cfn-quicksight-dashboard-insightconfiguration-interactions): {{
+    VisualInteractionOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-insightconfiguration-properties"></a>
 
-`Computations`
-
+`Computations`  <a name="cfn-quicksight-dashboard-insightconfiguration-computations"></a>
 The computations configurations of the insight visual
+*Required*: No
+*Type*: Array of [Computation](aws-properties-quicksight-dashboard-computation.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Computation](aws-properties-quicksight-dashboard-computation.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomNarrative`
-
+`CustomNarrative`  <a name="cfn-quicksight-dashboard-insightconfiguration-customnarrative"></a>
 The custom narrative of the insight visual.
+*Required*: No
+*Type*: [CustomNarrativeOptions](aws-properties-quicksight-dashboard-customnarrativeoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomNarrativeOptions](aws-properties-quicksight-dashboard-customnarrativeoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-dashboard-insightconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
-
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-dashboard-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InnerFilter
-
-InsightVisual
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-dashboard-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

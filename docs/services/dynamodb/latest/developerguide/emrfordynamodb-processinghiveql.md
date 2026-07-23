@@ -3,29 +3,22 @@ title: "Processing HiveQL statements"
 ---
 
 # Processing HiveQL statements
+<a name="EMRforDynamoDB.ProcessingHiveQL"></a>
 
-Hive is an application that runs on Hadoop, which is a batch-oriented framework for
-running MapReduce jobs. When you issue a HiveQL statement, Hive determines whether it
-can return the results immediately or whether it must submit a MapReduce job.
+Hive is an application that runs on Hadoop, which is a batch-oriented framework for running MapReduce jobs. When you issue a HiveQL statement, Hive determines whether it can return the results immediately or whether it must submit a MapReduce job.
 
-For example, consider the _ddb\_features_ table (from [Tutorial: Working with Amazon DynamoDB and Apache Hive](emrfordynamodb-tutorial.md)). The
-following Hive query prints state abbreviations and the number of summits in
-each:
+For example, consider the *ddb\_features* table (from [Tutorial: Working with Amazon DynamoDB and Apache Hive](EMRforDynamoDB.Tutorial.md)). The following Hive query prints state abbreviations and the number of summits in each:
 
-```nohighlight
-
+```
 SELECT state_alpha, count(*)
 FROM ddb_features
 WHERE feature_class = 'Summit'
 GROUP BY state_alpha;
 ```
 
-Hive does not return the results immediately. Instead, it submits a MapReduce job,
-which is processed by the Hadoop framework. Hive will wait until the job is complete
-before it shows the results from the query:
+Hive does not return the results immediately. Instead, it submits a MapReduce job, which is processed by the Hadoop framework. Hive will wait until the job is complete before it shows the results from the query:
 
-```nohighlight
-
+```
 AK  2
 AL  2
 AR  2
@@ -55,19 +48,10 @@ Time taken: 8.753 seconds, Fetched: 25 row(s)
 ```
 
 ## Monitoring and canceling jobs
+<a name="EMRforDynamoDB.MonitorAndCancelJob"></a>
 
-When Hive launches a Hadoop job, it prints output from that job. The job
-completion status is updated as the job progresses. In some cases, the status might
-not be updated for a long time. (This can happen when you are querying a large
-DynamoDB table that has a low provisioned read capacity setting.)
+When Hive launches a Hadoop job, it prints output from that job. The job completion status is updated as the job progresses. In some cases, the status might not be updated for a long time. (This can happen when you are querying a large DynamoDB table that has a low provisioned read capacity setting.)
 
-If you need to cancel the job before it is complete, you can type
-`Ctrl+C` at any time.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Creating an external table in Hive
-
-Querying data in DynamoDB
+If you need to cancel the job before it is complete, you can type **Ctrl\+C** at any time.
 
 All content copied from https://docs.aws.amazon.com/.

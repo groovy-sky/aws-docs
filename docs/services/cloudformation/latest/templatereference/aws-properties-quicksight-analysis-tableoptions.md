@@ -2,93 +2,69 @@
 title: "AWS::QuickSight::Analysis TableOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis TableOptions
+<a name="aws-properties-quicksight-analysis-tableoptions"></a>
 
 The table options for a table visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-tableoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-tableoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CellStyle" : TableCellStyle,
-  "HeaderStyle" : TableCellStyle,
-  "Orientation" : String,
-  "RowAlternateColorOptions" : RowAlternateColorOptions
+  "[CellStyle](#cfn-quicksight-analysis-tableoptions-cellstyle)" : {{TableCellStyle}},
+  "[HeaderStyle](#cfn-quicksight-analysis-tableoptions-headerstyle)" : {{TableCellStyle}},
+  "[Orientation](#cfn-quicksight-analysis-tableoptions-orientation)" : {{String}},
+  "[RowAlternateColorOptions](#cfn-quicksight-analysis-tableoptions-rowalternatecoloroptions)" : {{RowAlternateColorOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-tableoptions-syntax.yaml"></a>
 
-```yaml
-
-  CellStyle:
-    TableCellStyle
-  HeaderStyle:
-    TableCellStyle
-  Orientation: String
-  RowAlternateColorOptions:
-    RowAlternateColorOptions
-
+```
+  [CellStyle](#cfn-quicksight-analysis-tableoptions-cellstyle): {{
+    TableCellStyle}}
+  [HeaderStyle](#cfn-quicksight-analysis-tableoptions-headerstyle): {{
+    TableCellStyle}}
+  [Orientation](#cfn-quicksight-analysis-tableoptions-orientation): {{String}}
+  [RowAlternateColorOptions](#cfn-quicksight-analysis-tableoptions-rowalternatecoloroptions): {{
+    RowAlternateColorOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-tableoptions-properties"></a>
 
-`CellStyle`
-
+`CellStyle`  <a name="cfn-quicksight-analysis-tableoptions-cellstyle"></a>
 The table cell style of table cells.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HeaderStyle`
-
+`HeaderStyle`  <a name="cfn-quicksight-analysis-tableoptions-headerstyle"></a>
 The table cell style of a table header.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-analysis-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Orientation`
-
+`Orientation`  <a name="cfn-quicksight-analysis-tableoptions-orientation"></a>
 The orientation (vertical, horizontal) for a table.
+*Required*: No
+*Type*: String
+*Allowed values*: `VERTICAL | HORIZONTAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `VERTICAL | HORIZONTAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowAlternateColorOptions`
-
+`RowAlternateColorOptions`  <a name="cfn-quicksight-analysis-tableoptions-rowalternatecoloroptions"></a>
 The row alternate color options (widget status, row alternate colors) for a table.
-
-_Required_: No
-
-_Type_: [RowAlternateColorOptions](aws-properties-quicksight-analysis-rowalternatecoloroptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableInlineVisualization
-
-TablePaginatedReportOptions
+*Required*: No
+*Type*: [RowAlternateColorOptions](aws-properties-quicksight-analysis-rowalternatecoloroptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

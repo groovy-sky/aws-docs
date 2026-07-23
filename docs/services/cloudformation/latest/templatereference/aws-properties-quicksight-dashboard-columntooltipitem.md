@@ -2,106 +2,77 @@
 title: "AWS::QuickSight::Dashboard ColumnTooltipItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ColumnTooltipItem
+<a name="aws-properties-quicksight-dashboard-columntooltipitem"></a>
 
 The tooltip item for the columns that are not part of a field well.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-columntooltipitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-columntooltipitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Aggregation" : AggregationFunction,
-  "Column" : ColumnIdentifier,
-  "Label" : String,
-  "TooltipTarget" : String,
-  "Visibility" : String
+  "[Aggregation](#cfn-quicksight-dashboard-columntooltipitem-aggregation)" : {{AggregationFunction}},
+  "[Column](#cfn-quicksight-dashboard-columntooltipitem-column)" : {{ColumnIdentifier}},
+  "[Label](#cfn-quicksight-dashboard-columntooltipitem-label)" : {{String}},
+  "[TooltipTarget](#cfn-quicksight-dashboard-columntooltipitem-tooltiptarget)" : {{String}},
+  "[Visibility](#cfn-quicksight-dashboard-columntooltipitem-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-columntooltipitem-syntax.yaml"></a>
 
-```yaml
-
-  Aggregation:
-    AggregationFunction
-  Column:
-    ColumnIdentifier
-  Label: String
-  TooltipTarget: String
-  Visibility: String
-
+```
+  [Aggregation](#cfn-quicksight-dashboard-columntooltipitem-aggregation): {{
+    AggregationFunction}}
+  [Column](#cfn-quicksight-dashboard-columntooltipitem-column): {{
+    ColumnIdentifier}}
+  [Label](#cfn-quicksight-dashboard-columntooltipitem-label): {{String}}
+  [TooltipTarget](#cfn-quicksight-dashboard-columntooltipitem-tooltiptarget): {{String}}
+  [Visibility](#cfn-quicksight-dashboard-columntooltipitem-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-columntooltipitem-properties"></a>
 
-`Aggregation`
-
+`Aggregation`  <a name="cfn-quicksight-dashboard-columntooltipitem-aggregation"></a>
 The aggregation function of the column tooltip item.
+*Required*: No
+*Type*: [AggregationFunction](aws-properties-quicksight-dashboard-aggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AggregationFunction](aws-properties-quicksight-dashboard-aggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-dashboard-columntooltipitem-column"></a>
 The target column of the tooltip item.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Label`
-
+`Label`  <a name="cfn-quicksight-dashboard-columntooltipitem-label"></a>
 The label of the tooltip item.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TooltipTarget`
-
+`TooltipTarget`  <a name="cfn-quicksight-dashboard-columntooltipitem-tooltiptarget"></a>
 Determines the target of the column tooltip item in a combo chart visual.
+*Required*: No
+*Type*: String
+*Allowed values*: `BOTH | BAR | LINE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BOTH | BAR | LINE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-dashboard-columntooltipitem-visibility"></a>
 The visibility of the tooltip item.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnSort
-
-ComboChartAggregatedFieldWells
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

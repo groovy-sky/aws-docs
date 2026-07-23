@@ -2,66 +2,50 @@
 title: "AWS::KafkaConnect::Connector ApacheKafkaCluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector ApacheKafkaCluster
+<a name="aws-properties-kafkaconnect-connector-apachekafkacluster"></a>
 
 The details of the Apache Kafka cluster to which the connector is connected.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-apachekafkacluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-apachekafkacluster-syntax.json"></a>
 
-```json
-
+```
 {
-  "BootstrapServers" : String,
-  "Vpc" : Vpc
+  "[BootstrapServers](#cfn-kafkaconnect-connector-apachekafkacluster-bootstrapservers)" : {{String}},
+  "[Vpc](#cfn-kafkaconnect-connector-apachekafkacluster-vpc)" : {{Vpc}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-apachekafkacluster-syntax.yaml"></a>
 
-```yaml
-
-  BootstrapServers: String
-  Vpc:
-    Vpc
-
+```
+  [BootstrapServers](#cfn-kafkaconnect-connector-apachekafkacluster-bootstrapservers): {{String}}
+  [Vpc](#cfn-kafkaconnect-connector-apachekafkacluster-vpc): {{
+    Vpc}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-apachekafkacluster-properties"></a>
 
-`BootstrapServers`
-
+`BootstrapServers`  <a name="cfn-kafkaconnect-connector-apachekafkacluster-bootstrapservers"></a>
 The bootstrap servers of the cluster.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Vpc`
-
-Details of an Amazon VPC which has network connectivity to the Apache Kafka
-cluster.
-
-_Required_: Yes
-
-_Type_: [Vpc](aws-properties-kafkaconnect-connector-vpc.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::KafkaConnect::Connector
-
-AutoScaling
+`Vpc`  <a name="cfn-kafkaconnect-connector-apachekafkacluster-vpc"></a>
+Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.
+*Required*: Yes
+*Type*: [Vpc](aws-properties-kafkaconnect-connector-vpc.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

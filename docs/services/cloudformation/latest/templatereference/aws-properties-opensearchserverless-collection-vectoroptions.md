@@ -2,54 +2,42 @@
 title: "AWS::OpenSearchServerless::Collection VectorOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Collection VectorOptions
+<a name="aws-properties-opensearchserverless-collection-vectoroptions"></a>
 
 Configuration options for vector search capabilities in an OpenSearch Serverless collection.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-collection-vectoroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-collection-vectoroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ServerlessVectorAcceleration" : String
+  "[ServerlessVectorAcceleration](#cfn-opensearchserverless-collection-vectoroptions-serverlessvectoracceleration)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-collection-vectoroptions-syntax.yaml"></a>
 
-```yaml
-
-  ServerlessVectorAcceleration: String
-
+```
+  [ServerlessVectorAcceleration](#cfn-opensearchserverless-collection-vectoroptions-serverlessvectoracceleration): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-collection-vectoroptions-properties"></a>
 
-`ServerlessVectorAcceleration`
-
+`ServerlessVectorAcceleration`  <a name="cfn-opensearchserverless-collection-vectoroptions-serverlessvectoracceleration"></a>
 Specifies whether serverless vector acceleration is enabled for the collection.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED | ALLOWED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::OpenSearchServerless::CollectionGroup
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED | ALLOWED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

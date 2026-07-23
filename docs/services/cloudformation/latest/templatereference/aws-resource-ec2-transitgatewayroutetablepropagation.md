@@ -2,87 +2,70 @@
 title: "AWS::EC2::TransitGatewayRouteTablePropagation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayRouteTablePropagation
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation"></a>
 
-Enables the specified attachment to propagate routes to the specified propagation route
-table.
+Enables the specified attachment to propagate routes to the specified propagation route table.
 
-For more information about enabling transit gateway route propagation, see [EnableTransitGatewayRouteTablePropagation](../../../../reference/awsec2/latest/apireference/api-enabletransitgatewayroutetablepropagation.md) in the _Amazon EC2 API_
-_Reference_.
+For more information about enabling transit gateway route propagation, see [EnableTransitGatewayRouteTablePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableTransitGatewayRouteTablePropagation.html) in the *Amazon EC2 API Reference*.
 
 ## Syntax
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TransitGatewayRouteTablePropagation",
   "Properties" : {
-      "TransitGatewayAttachmentId" : String,
-      "TransitGatewayRouteTableId" : String
+      "[TransitGatewayAttachmentId](#cfn-ec2-transitgatewayroutetablepropagation-transitgatewayattachmentid)" : {{String}},
+      "[TransitGatewayRouteTableId](#cfn-ec2-transitgatewayroutetablepropagation-transitgatewayroutetableid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TransitGatewayRouteTablePropagation
 Properties:
-  TransitGatewayAttachmentId: String
-  TransitGatewayRouteTableId: String
-
+  [TransitGatewayAttachmentId](#cfn-ec2-transitgatewayroutetablepropagation-transitgatewayattachmentid): {{String}}
+  [TransitGatewayRouteTableId](#cfn-ec2-transitgatewayroutetablepropagation-transitgatewayroutetableid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation-properties"></a>
 
-`TransitGatewayAttachmentId`
-
+`TransitGatewayAttachmentId`  <a name="cfn-ec2-transitgatewayroutetablepropagation-transitgatewayattachmentid"></a>
 The ID of the attachment.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayRouteTableId`
-
+`TransitGatewayRouteTableId`  <a name="cfn-ec2-transitgatewayroutetablepropagation-transitgatewayroutetableid"></a>
 The ID of the propagation route table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the transit gateway route table that is
-propagated.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the transit gateway route table that is propagated.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## See also
-
-- [EnableTransitGatewayRouteTablePropagation](../../../../reference/awsec2/latest/apireference/api-enabletransitgatewayroutetablepropagation.md) in the _Amazon EC2_
-_API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::TransitGatewayRouteTableAssociation
-
-AWS::EC2::TransitGatewayVpcAttachment
+<a name="aws-resource-ec2-transitgatewayroutetablepropagation--seealso"></a>
++ [EnableTransitGatewayRouteTablePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableTransitGatewayRouteTablePropagation.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

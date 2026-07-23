@@ -2,70 +2,51 @@
 title: "AWS::EntityResolution::IdMappingWorkflow IdMappingWorkflowOutputSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::IdMappingWorkflow IdMappingWorkflowOutputSource
+<a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowoutputsource"></a>
 
-A list of `IdMappingWorkflowOutputSource` objects, each of which contains
-fields `outputS3Path` and `KMSArn`.
+A list of `IdMappingWorkflowOutputSource` objects, each of which contains fields `outputS3Path` and `KMSArn`.
 
 ## Syntax
+<a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "KMSArn" : String,
-  "OutputS3Path" : String
+  "[KMSArn](#cfn-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-kmsarn)" : {{String}},
+  "[OutputS3Path](#cfn-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-outputs3path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-syntax.yaml"></a>
 
-```yaml
-
-  KMSArn: String
-  OutputS3Path: String
-
+```
+  [KMSArn](#cfn-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-kmsarn): {{String}}
+  [OutputS3Path](#cfn-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-outputs3path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-properties"></a>
 
-`KMSArn`
+`KMSArn`  <a name="cfn-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-kmsarn"></a>
+Customer AWS KMS ARN for encryption at rest. If not provided, system will use an AWS Entity Resolution managed KMS key.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn):kms:.*:[0-9]+:.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Customer AWS KMS ARN for encryption at rest. If not provided, system will use
-an AWS Entity Resolution managed KMS key.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn):kms:.*:[0-9]+:.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputS3Path`
-
+`OutputS3Path`  <a name="cfn-entityresolution-idmappingworkflow-idmappingworkflowoutputsource-outputs3path"></a>
 The S3 path to which AWS Entity Resolution will write the output table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^s3://([^/]+)/?(.*?([^/]+)/?)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IdMappingWorkflowInputSource
-
-IntermediateSourceConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^s3://([^/]+)/?(.*?([^/]+)/?)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

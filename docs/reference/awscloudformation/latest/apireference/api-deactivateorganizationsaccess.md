@@ -3,45 +3,43 @@ title: "DeactivateOrganizationsAccess"
 ---
 
 # DeactivateOrganizationsAccess
+<a name="API_DeactivateOrganizationsAccess"></a>
 
-Deactivates trusted access with AWS Organizations. If trusted access is deactivated,
-the management account does not have permissions to create and manage
-service-managed StackSets for your organization.
+Deactivates trusted access with AWS Organizations. If trusted access is deactivated, the management account does not have permissions to create and manage service-managed StackSets for your organization.
 
 ## Errors
+<a name="API_DeactivateOrganizationsAccess_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InvalidOperation**
-
+ ** InvalidOperation **
 The specified operation isn't valid.
-
 HTTP Status Code: 400
 
-**OperationNotFound**
-
+ ** OperationNotFound **
 The specified ID refers to an operation that doesn't exist.
-
 HTTP Status Code: 404
 
 ## Examples
+<a name="API_DeactivateOrganizationsAccess_Examples"></a>
 
 ### DeactivateOrganizationsAccess
+<a name="API_DeactivateOrganizationsAccess_Example_1"></a>
 
 This example illustrates one usage of DeactivateOrganizationsAccess.
 
 #### Sample Request
+<a name="API_DeactivateOrganizationsAccess_Example_1_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
     ?Action=DeactivateOrganizationsAccess
 ```
 
 #### Sample Response
+<a name="API_DeactivateOrganizationsAccess_Example_1_Response"></a>
 
 ```
-
 <DeactivateOrganizationsAccessResponse xmlns="http://internal.amazon.com/coral/com.amazonaws.maestro.service.v20160713/">
   <DeactivateOrganizationsAccessResult/>
   <ResponseMetadata>
@@ -51,33 +49,18 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ## See Also
+<a name="API_DeactivateOrganizationsAccess_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateStackSet
-
-DeactivateType
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DeactivateOrganizationsAccess)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,86 +2,60 @@
 title: "AWS::Lex::Bot SlotValueOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotValueOverride
+<a name="aws-properties-lex-bot-slotvalueoverride"></a>
 
-The slot values that Amazon Lex uses when it sets slot
-values in a dialog step.
+The slot values that Amazon Lex uses when it sets slot values in a dialog step.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slotvalueoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slotvalueoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "Shape" : String,
-  "Value" : SlotValue,
-  "Values" : [ SlotValueOverride, ... ]
+  "[Shape](#cfn-lex-bot-slotvalueoverride-shape)" : {{String}},
+  "[Value](#cfn-lex-bot-slotvalueoverride-value)" : {{SlotValue}},
+  "[Values](#cfn-lex-bot-slotvalueoverride-values)" : {{[ SlotValueOverride, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slotvalueoverride-syntax.yaml"></a>
 
-```yaml
-
-  Shape: String
-  Value:
-    SlotValue
-  Values:
-    - SlotValueOverride
-
+```
+  [Shape](#cfn-lex-bot-slotvalueoverride-shape): {{String}}
+  [Value](#cfn-lex-bot-slotvalueoverride-value): {{
+    SlotValue}}
+  [Values](#cfn-lex-bot-slotvalueoverride-values): {{
+    - SlotValueOverride}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slotvalueoverride-properties"></a>
 
-`Shape`
+`Shape`  <a name="cfn-lex-bot-slotvalueoverride-shape"></a>
+When the shape value is `List`, it indicates that the `values` field contains a list of slot values. When the value is `Scalar`, it indicates that the `value` field contains a single value.
+*Required*: No
+*Type*: String
+*Allowed values*: `Scalar | List`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-When the shape value is `List`, it indicates that the
-`values` field contains a list of slot values. When the
-value is `Scalar`, it indicates that the `value`
-field contains a single value.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Scalar | List`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-lex-bot-slotvalueoverride-value"></a>
 The current value of the slot.
+*Required*: No
+*Type*: [SlotValue](aws-properties-lex-bot-slotvalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SlotValue](aws-properties-lex-bot-slotvalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
-A list of one or more values that the user provided for the slot.
-For example, for a slot that elicits pizza toppings, the values
-might be "pepperoni" and "pineapple."
-
-_Required_: No
-
-_Type_: Array of [SlotValueOverride](aws-properties-lex-bot-slotvalueoverride.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlotValueElicitationSetting
-
-SlotValueOverrideMap
+`Values`  <a name="cfn-lex-bot-slotvalueoverride-values"></a>
+A list of one or more values that the user provided for the slot. For example, for a slot that elicits pizza toppings, the values might be "pepperoni" and "pineapple."
+*Required*: No
+*Type*: Array of [SlotValueOverride](#aws-properties-lex-bot-slotvalueoverride)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

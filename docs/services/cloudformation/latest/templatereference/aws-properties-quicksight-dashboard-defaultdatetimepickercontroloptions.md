@@ -2,85 +2,62 @@
 title: "AWS::QuickSight::Dashboard DefaultDateTimePickerControlOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DefaultDateTimePickerControlOptions
+<a name="aws-properties-quicksight-dashboard-defaultdatetimepickercontroloptions"></a>
 
 The default options that correspond to the filter control type of a `DateTimePicker`.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-defaultdatetimepickercontroloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-defaultdatetimepickercontroloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CommitMode" : String,
-  "DisplayOptions" : DateTimePickerControlDisplayOptions,
-  "Type" : String
+  "[CommitMode](#cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-commitmode)" : {{String}},
+  "[DisplayOptions](#cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-displayoptions)" : {{DateTimePickerControlDisplayOptions}},
+  "[Type](#cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-defaultdatetimepickercontroloptions-syntax.yaml"></a>
 
-```yaml
-
-  CommitMode: String
-  DisplayOptions:
-    DateTimePickerControlDisplayOptions
-  Type: String
-
+```
+  [CommitMode](#cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-commitmode): {{String}}
+  [DisplayOptions](#cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-displayoptions): {{
+    DateTimePickerControlDisplayOptions}}
+  [Type](#cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-defaultdatetimepickercontroloptions-properties"></a>
 
-`CommitMode`
-
+`CommitMode`  <a name="cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-commitmode"></a>
 The visibility configuration of the Apply button on a `DateTimePickerControl`.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO | MANUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTO | MANUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [DateTimePickerControlDisplayOptions](aws-properties-quicksight-dashboard-datetimepickercontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimePickerControlDisplayOptions](aws-properties-quicksight-dashboard-datetimepickercontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dashboard-defaultdatetimepickercontroloptions-type"></a>
 The date time picker type of the `DefaultDateTimePickerControlOptions`. Choose one of the following options:
-
-- `SINGLE_VALUED`: The filter condition is a fixed date.
-
-- `DATE_RANGE`: The filter condition is a date time range.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SINGLE_VALUED | DATE_RANGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DecimalValueWhenUnsetConfiguration
-
-DefaultFilterControlConfiguration
++ `SINGLE_VALUED`: The filter condition is a fixed date.
++ `DATE_RANGE`: The filter condition is a date time range.
+*Required*: No
+*Type*: String
+*Allowed values*: `SINGLE_VALUED | DATE_RANGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

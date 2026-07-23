@@ -2,73 +2,51 @@
 title: "AWS::ECS::TaskDefinition FSxAuthorizationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition FSxAuthorizationConfig
+<a name="aws-properties-ecs-taskdefinition-fsxauthorizationconfig"></a>
 
-The authorization configuration details for Amazon FSx for Windows File Server file
-system. See [FSxWindowsFileServerVolumeConfiguration](../../../../reference/amazonecs/latest/apireference/api-fsxwindowsfileservervolumeconfiguration.md) in the _Amazon ECS API_
-_Reference_.
+The authorization configuration details for Amazon FSx for Windows File Server file system. See [FSxWindowsFileServerVolumeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_FSxWindowsFileServerVolumeConfiguration.html) in the *Amazon ECS API Reference*.
 
-For more information and the input format, see [Amazon FSx for Windows File\
-Server Volumes](../../../amazonecs/latest/developerguide/wfsx-volumes.md) in the _Amazon Elastic Container Service Developer_
-_Guide_.
+For more information and the input format, see [Amazon FSx for Windows File Server Volumes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-volumes.html) in the *Amazon Elastic Container Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-fsxauthorizationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-fsxauthorizationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CredentialsParameter" : String,
-  "Domain" : String
+  "[CredentialsParameter](#cfn-ecs-taskdefinition-fsxauthorizationconfig-credentialsparameter)" : {{String}},
+  "[Domain](#cfn-ecs-taskdefinition-fsxauthorizationconfig-domain)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-fsxauthorizationconfig-syntax.yaml"></a>
 
-```yaml
-
-  CredentialsParameter: String
-  Domain: String
-
+```
+  [CredentialsParameter](#cfn-ecs-taskdefinition-fsxauthorizationconfig-credentialsparameter): {{String}}
+  [Domain](#cfn-ecs-taskdefinition-fsxauthorizationconfig-domain): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-fsxauthorizationconfig-properties"></a>
 
-`CredentialsParameter`
+`CredentialsParameter`  <a name="cfn-ecs-taskdefinition-fsxauthorizationconfig-credentialsparameter"></a>
+The authorization credential option to use. The authorization credential options can be provided using either the Amazon Resource Name (ARN) of an AWS Secrets Manager secret or SSM Parameter Store parameter. The ARN refers to the stored credentials.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The authorization credential option to use. The authorization credential options can
-be provided using either the Amazon Resource Name (ARN) of an AWS Secrets Manager secret or SSM
-Parameter Store parameter. The ARN refers to the stored credentials.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Domain`
-
-A fully qualified domain name hosted by an [AWS Directory Service](../../../directoryservice/latest/admin-guide/directory-microsoft-ad.md) Managed Microsoft AD (Active Directory) or self-hosted
-AD on Amazon EC2.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FirelensConfiguration
-
-FSxWindowsFileServerVolumeConfiguration
+`Domain`  <a name="cfn-ecs-taskdefinition-fsxauthorizationconfig-domain"></a>
+A fully qualified domain name hosted by an [AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

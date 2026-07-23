@@ -2,71 +2,55 @@
 title: "AWS::ECS::Cluster ClusterConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Cluster ClusterConfiguration
+<a name="aws-properties-ecs-cluster-clusterconfiguration"></a>
 
 The execute command and managed storage configuration for the cluster.
 
 ## Syntax
+<a name="aws-properties-ecs-cluster-clusterconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-cluster-clusterconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExecuteCommandConfiguration" : ExecuteCommandConfiguration,
-  "ManagedStorageConfiguration" : ManagedStorageConfiguration
+  "[ExecuteCommandConfiguration](#cfn-ecs-cluster-clusterconfiguration-executecommandconfiguration)" : {{ExecuteCommandConfiguration}},
+  "[ManagedStorageConfiguration](#cfn-ecs-cluster-clusterconfiguration-managedstorageconfiguration)" : {{ManagedStorageConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-cluster-clusterconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ExecuteCommandConfiguration:
-    ExecuteCommandConfiguration
-  ManagedStorageConfiguration:
-    ManagedStorageConfiguration
-
+```
+  [ExecuteCommandConfiguration](#cfn-ecs-cluster-clusterconfiguration-executecommandconfiguration): {{
+    ExecuteCommandConfiguration}}
+  [ManagedStorageConfiguration](#cfn-ecs-cluster-clusterconfiguration-managedstorageconfiguration): {{
+    ManagedStorageConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-cluster-clusterconfiguration-properties"></a>
 
-`ExecuteCommandConfiguration`
-
+`ExecuteCommandConfiguration`  <a name="cfn-ecs-cluster-clusterconfiguration-executecommandconfiguration"></a>
 The details of the execute command configuration.
+*Required*: No
+*Type*: [ExecuteCommandConfiguration](aws-properties-ecs-cluster-executecommandconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExecuteCommandConfiguration](aws-properties-ecs-cluster-executecommandconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManagedStorageConfiguration`
-
+`ManagedStorageConfiguration`  <a name="cfn-ecs-cluster-clusterconfiguration-managedstorageconfiguration"></a>
 The details of the managed storage configuration.
-
-_Required_: No
-
-_Type_: [ManagedStorageConfiguration](aws-properties-ecs-cluster-managedstorageconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [ManagedStorageConfiguration](aws-properties-ecs-cluster-managedstorageconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Define a cluster with the AWS Fargate capacity providers and\
-a default capacity provider strategy defined](../userguide/aws-resource-ecs-cluster.md#aws-resource-ecs-cluster--examples--Define_a_cluster_with_the__capacity_providers_and_a_default_capacity_provider_strategy_defined)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityProviderStrategyItem
-
-ClusterSettings
+<a name="aws-properties-ecs-cluster-clusterconfiguration--seealso"></a>
++  [ Define a cluster with the AWS Fargate capacity providers and a default capacity provider strategy defined](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#aws-resource-ecs-cluster--examples--Define_a_cluster_with_the__capacity_providers_and_a_default_capacity_provider_strategy_defined)
 
 All content copied from https://docs.aws.amazon.com/.

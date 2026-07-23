@@ -2,54 +2,42 @@
 title: "AWS::Logs::ScheduledQuery DestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::ScheduledQuery DestinationConfiguration
+<a name="aws-properties-logs-scheduledquery-destinationconfiguration"></a>
 
-Configuration for where to deliver scheduled query results. Specifies the destination type
-and associated settings for result delivery.
+Configuration for where to deliver scheduled query results. Specifies the destination type and associated settings for result delivery.
 
 ## Syntax
+<a name="aws-properties-logs-scheduledquery-destinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-scheduledquery-destinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Configuration" : S3Configuration
+  "[S3Configuration](#cfn-logs-scheduledquery-destinationconfiguration-s3configuration)" : {{S3Configuration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-scheduledquery-destinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  S3Configuration:
-    S3Configuration
-
+```
+  [S3Configuration](#cfn-logs-scheduledquery-destinationconfiguration-s3configuration): {{
+    S3Configuration}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-scheduledquery-destinationconfiguration-properties"></a>
 
-`S3Configuration`
-
+`S3Configuration`  <a name="cfn-logs-scheduledquery-destinationconfiguration-s3configuration"></a>
 Configuration for delivering query results to Amazon S3.
-
-_Required_: No
-
-_Type_: [S3Configuration](aws-properties-logs-scheduledquery-s3configuration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Logs::ScheduledQuery
-
-S3Configuration
+*Required*: No
+*Type*: [S3Configuration](aws-properties-logs-scheduledquery-s3configuration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

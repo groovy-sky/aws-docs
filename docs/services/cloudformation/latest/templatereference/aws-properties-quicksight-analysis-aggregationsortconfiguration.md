@@ -2,84 +2,62 @@
 title: "AWS::QuickSight::Analysis AggregationSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis AggregationSortConfiguration
+<a name="aws-properties-quicksight-analysis-aggregationsortconfiguration"></a>
 
 The configuration options to sort aggregated values.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-aggregationsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-aggregationsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationFunction" : AggregationFunction,
-  "Column" : ColumnIdentifier,
-  "SortDirection" : String
+  "[AggregationFunction](#cfn-quicksight-analysis-aggregationsortconfiguration-aggregationfunction)" : {{AggregationFunction}},
+  "[Column](#cfn-quicksight-analysis-aggregationsortconfiguration-column)" : {{ColumnIdentifier}},
+  "[SortDirection](#cfn-quicksight-analysis-aggregationsortconfiguration-sortdirection)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-aggregationsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AggregationFunction:
-    AggregationFunction
-  Column:
-    ColumnIdentifier
-  SortDirection: String
-
+```
+  [AggregationFunction](#cfn-quicksight-analysis-aggregationsortconfiguration-aggregationfunction): {{
+    AggregationFunction}}
+  [Column](#cfn-quicksight-analysis-aggregationsortconfiguration-column): {{
+    ColumnIdentifier}}
+  [SortDirection](#cfn-quicksight-analysis-aggregationsortconfiguration-sortdirection): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-aggregationsortconfiguration-properties"></a>
 
-`AggregationFunction`
-
+`AggregationFunction`  <a name="cfn-quicksight-analysis-aggregationsortconfiguration-aggregationfunction"></a>
 The function that aggregates the values in `Column`.
+*Required*: No
+*Type*: [AggregationFunction](aws-properties-quicksight-analysis-aggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AggregationFunction](aws-properties-quicksight-analysis-aggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-analysis-aggregationsortconfiguration-column"></a>
 The column that determines the sort order of aggregated values.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortDirection`
-
+`SortDirection`  <a name="cfn-quicksight-analysis-aggregationsortconfiguration-sortdirection"></a>
 The sort direction of values.
-
-- `ASC`: Sort in ascending order.
-
-- `DESC`: Sort in descending order.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ASC | DESC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AggregationFunction
-
-AnalysisDefaults
++ `ASC`: Sort in ascending order.
++ `DESC`: Sort in descending order.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ASC | DESC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

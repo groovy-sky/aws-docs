@@ -2,74 +2,64 @@
 title: "AWS::RDS::DBInstance ProcessorFeature"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBInstance ProcessorFeature
+<a name="aws-properties-rds-dbinstance-processorfeature"></a>
 
-The `ProcessorFeature` property type specifies the processor features of a
-DB instance class.
+The `ProcessorFeature` property type specifies the processor features of a DB instance class.
 
 ## Syntax
+<a name="aws-properties-rds-dbinstance-processorfeature-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rds-dbinstance-processorfeature-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-rds-dbinstance-processorfeature-name)" : {{String}},
+  "[Value](#cfn-rds-dbinstance-processorfeature-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rds-dbinstance-processorfeature-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-rds-dbinstance-processorfeature-name): {{String}}
+  [Value](#cfn-rds-dbinstance-processorfeature-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rds-dbinstance-processorfeature-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-rds-dbinstance-processorfeature-name"></a>
 The name of the processor feature. Valid names are `coreCount` and `threadsPerCore`.
+*Required*: No
+*Type*: String
+*Allowed values*: `coreCount | threadsPerCore`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `coreCount | threadsPerCore`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-rds-dbinstance-processorfeature-value"></a>
 The value of a processor feature.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-rds-dbinstance-processorfeature--examples"></a>
 
-The following example specifies processor features of an Oracle DB instance
-class.
+The following example specifies processor features of an Oracle DB instance class.
 
 ### Authentication details
+<a name="aws-properties-rds-dbinstance-processorfeature--examples--Authentication_details"></a>
 
 #### JSON
+<a name="aws-properties-rds-dbinstance-processorfeature--examples--Authentication_details--json"></a>
 
-```json
-
+```
 "ProcessorFeatures":[
    {
       "Name": "threadsPerCore",
@@ -83,20 +73,14 @@ class.
 ```
 
 #### YAML
+<a name="aws-properties-rds-dbinstance-processorfeature--examples--Authentication_details--yaml"></a>
 
-```yaml
-
+```
 ProcessorFeatures:
   - Name: threadsPerCore
     Value: 4
   - Name: coreCount
     Value: 4
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MasterUserSecret
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,44 +3,30 @@ title: "Example: Batch operations using the AWS SDK for .NET low-level API"
 ---
 
 # Example: Batch operations using the AWS SDK for .NET low-level API
+<a name="batch-operation-lowlevel-dotnet"></a>
 
-###### Topics
+**Topics**
++ [Example: Batch write operation using the AWS SDK for .NET low-level API](#batch-write-low-level-dotnet)
++ [Example: Batch get operation using the AWS SDK for .NET low-level API](#LowLevelDotNetBatchGet)
 
-- [Example: Batch write operation using the AWS SDK for .NET low-level API](#batch-write-low-level-dotnet)
-
-- [Example: Batch get operation using the AWS SDK for .NET low-level API](#LowLevelDotNetBatchGet)
-
-This section provides examples of batch operations, _batch write_ and
-_batch get_, that Amazon DynamoDB supports.
+This section provides examples of batch operations, *batch write* and *batch get*, that Amazon DynamoDB supports.
 
 ## Example: Batch write operation using the AWS SDK for .NET low-level API
+<a name="batch-write-low-level-dotnet"></a>
 
-The following C# code example uses the `BatchWriteItem` method to perform the
-following put and delete operations:
+The following C\# code example uses the `BatchWriteItem` method to perform the following put and delete operations:
++ Put one item in the `Forum` table.
++ Put one item and delete one item from the `Thread` table.
 
-- Put one item in the `Forum` table.
+You can specify any number of put and delete requests against one or more tables when creating your batch write request. However, DynamoDB `BatchWriteItem` limits the size of a batch write request and the number of put and delete operations in a single batch write operation. For more information, see [BatchWriteItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchWriteItem.html). If your request exceeds these limits, your request is rejected. If your table does not have sufficient provisioned throughput to serve this request, the unprocessed request items are returned in the response.
 
-- Put one item and delete one item from the `Thread` table.
+The following example checks the response to see if it has any unprocessed request items. If it does, it loops back and resends the `BatchWriteItem` request with unprocessed items in the request. You can also create these sample tables and upload sample data programmatically. For more information, see [Creating example tables and uploading data using the AWS SDK for .NET](AppendixSampleDataCodeDotNET.md).
 
-You can specify any number of put and delete requests against one or more tables when
-creating your batch write request. However, DynamoDB `BatchWriteItem` limits the
-size of a batch write request and the number of put and delete operations in a single batch
-write operation. For more information, see [BatchWriteItem](../../../../reference/amazondynamodb/latest/apireference/api-batchwriteitem.md). If your request exceeds
-these limits, your request is rejected. If your table does not have sufficient provisioned
-throughput to serve this request, the unprocessed request items are returned in the
-response.
+For step-by-step instructions for testing the following sample, see [.NET code examples](CodeSamples.DotNet.md).
 
-The following example checks the response to see if it has any unprocessed request
-items. If it does, it loops back and resends the `BatchWriteItem` request with
-unprocessed items in the request. You can also create these sample tables and upload
-sample data programmatically. For more information, see [Creating example tables and uploading data using the AWS SDK for .NET](appendixsampledatacodedotnet.md).
+**Example**
 
-For step-by-step instructions for testing the following sample, see [.NET code examples](codesamples-dotnet.md).
-
-###### Example
-
-```csharp
-
+```
 using System;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2;
@@ -181,22 +167,18 @@ namespace com.amazonaws.codesamples
         }
     }
 }
-
 ```
 
 ## Example: Batch get operation using the AWS SDK for .NET low-level API
+<a name="LowLevelDotNetBatchGet"></a>
 
-The following C# code example uses the `BatchGetItem` method to retrieve
-multiple items from the `Forum` and the `Thread` tables in Amazon DynamoDB.
-The `BatchGetItemRequest` specifies the table names and a list of primary keys
-for each table. The example processes the response by printing the items retrieved.
+The following C\# code example uses the `BatchGetItem` method to retrieve multiple items from the `Forum` and the `Thread` tables in Amazon DynamoDB. The `BatchGetItemRequest` specifies the table names and a list of primary keys for each table. The example processes the response by printing the items retrieved.
 
-For step-by-step instructions for testing the following sample, see [.NET code examples](codesamples-dotnet.md).
+For step-by-step instructions for testing the following sample, see [.NET code examples](CodeSamples.DotNet.md).
 
-###### Example
+**Example**
 
-```csharp
-
+```
 using System;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2;
@@ -343,13 +325,6 @@ namespace com.amazonaws.codesamples
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Example: CRUD operations - .NET low-level API
-
-Example: Handling binary type attributes - .NET low-level API
 
 All content copied from https://docs.aws.amazon.com/.

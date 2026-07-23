@@ -2,208 +2,148 @@
 title: "AWS::Lex::Bot BotLocale"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BotLocale
+<a name="aws-properties-lex-bot-botlocale"></a>
 
 Provides configuration information for a locale.
 
 ## Syntax
+<a name="aws-properties-lex-bot-botlocale-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-botlocale-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomVocabulary" : CustomVocabulary,
-  "Description" : String,
-  "GenerativeAISettings" : GenerativeAISettings,
-  "Intents" : [ Intent, ... ],
-  "LocaleId" : String,
-  "NluConfidenceThreshold" : Number,
-  "SlotTypes" : [ SlotType, ... ],
-  "SpeechDetectionSensitivity" : String,
-  "SpeechRecognitionSettings" : SpeechRecognitionSettings,
-  "UnifiedSpeechSettings" : UnifiedSpeechSettings,
-  "VoiceSettings" : VoiceSettings
+  "[AudioFillerSettings](#cfn-lex-bot-botlocale-audiofillersettings)" : {{AudioFillerSettings}},
+  "[CustomVocabulary](#cfn-lex-bot-botlocale-customvocabulary)" : {{CustomVocabulary}},
+  "[Description](#cfn-lex-bot-botlocale-description)" : {{String}},
+  "[GenerativeAISettings](#cfn-lex-bot-botlocale-generativeaisettings)" : {{GenerativeAISettings}},
+  "[Intents](#cfn-lex-bot-botlocale-intents)" : {{[ Intent, ... ]}},
+  "[LocaleId](#cfn-lex-bot-botlocale-localeid)" : {{String}},
+  "[NluConfidenceThreshold](#cfn-lex-bot-botlocale-nluconfidencethreshold)" : {{Number}},
+  "[SlotTypes](#cfn-lex-bot-botlocale-slottypes)" : {{[ SlotType, ... ]}},
+  "[SpeechDetectionSensitivity](#cfn-lex-bot-botlocale-speechdetectionsensitivity)" : {{String}},
+  "[SpeechRecognitionSettings](#cfn-lex-bot-botlocale-speechrecognitionsettings)" : {{SpeechRecognitionSettings}},
+  "[UnifiedSpeechSettings](#cfn-lex-bot-botlocale-unifiedspeechsettings)" : {{UnifiedSpeechSettings}},
+  "[VoiceSettings](#cfn-lex-bot-botlocale-voicesettings)" : {{VoiceSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-botlocale-syntax.yaml"></a>
 
-```yaml
-
-  CustomVocabulary:
-    CustomVocabulary
-  Description: String
-  GenerativeAISettings:
-    GenerativeAISettings
-  Intents:
-    - Intent
-  LocaleId: String
-  NluConfidenceThreshold: Number
-  SlotTypes:
-    - SlotType
-  SpeechDetectionSensitivity: String
-  SpeechRecognitionSettings:
-    SpeechRecognitionSettings
-  UnifiedSpeechSettings:
-    UnifiedSpeechSettings
-  VoiceSettings:
-    VoiceSettings
-
+```
+  [AudioFillerSettings](#cfn-lex-bot-botlocale-audiofillersettings): {{
+    AudioFillerSettings}}
+  [CustomVocabulary](#cfn-lex-bot-botlocale-customvocabulary): {{
+    CustomVocabulary}}
+  [Description](#cfn-lex-bot-botlocale-description): {{String}}
+  [GenerativeAISettings](#cfn-lex-bot-botlocale-generativeaisettings): {{
+    GenerativeAISettings}}
+  [Intents](#cfn-lex-bot-botlocale-intents): {{
+    - Intent}}
+  [LocaleId](#cfn-lex-bot-botlocale-localeid): {{String}}
+  [NluConfidenceThreshold](#cfn-lex-bot-botlocale-nluconfidencethreshold): {{Number}}
+  [SlotTypes](#cfn-lex-bot-botlocale-slottypes): {{
+    - SlotType}}
+  [SpeechDetectionSensitivity](#cfn-lex-bot-botlocale-speechdetectionsensitivity): {{String}}
+  [SpeechRecognitionSettings](#cfn-lex-bot-botlocale-speechrecognitionsettings): {{
+    SpeechRecognitionSettings}}
+  [UnifiedSpeechSettings](#cfn-lex-bot-botlocale-unifiedspeechsettings): {{
+    UnifiedSpeechSettings}}
+  [VoiceSettings](#cfn-lex-bot-botlocale-voicesettings): {{
+    VoiceSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-botlocale-properties"></a>
 
-`CustomVocabulary`
+`AudioFillerSettings`  <a name="cfn-lex-bot-botlocale-audiofillersettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [AudioFillerSettings](aws-properties-lex-bot-audiofillersettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`CustomVocabulary`  <a name="cfn-lex-bot-botlocale-customvocabulary"></a>
 Specifies a custom vocabulary to use with a specific locale.
+*Required*: No
+*Type*: [CustomVocabulary](aws-properties-lex-bot-customvocabulary.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Description`  <a name="cfn-lex-bot-botlocale-description"></a>
+A description of the bot locale. Use this to help identify the bot locale in lists.
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CustomVocabulary](aws-properties-lex-bot-customvocabulary.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
-A description of the bot locale. Use this to help identify the bot
-locale in lists.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GenerativeAISettings`
-
+`GenerativeAISettings`  <a name="cfn-lex-bot-botlocale-generativeaisettings"></a>
 Property description not available.
+*Required*: No
+*Type*: [GenerativeAISettings](aws-properties-lex-bot-generativeaisettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GenerativeAISettings](aws-properties-lex-bot-generativeaisettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Intents`
-
+`Intents`  <a name="cfn-lex-bot-botlocale-intents"></a>
 One or more intents defined for the locale.
+*Required*: No
+*Type*: Array of [Intent](aws-properties-lex-bot-intent.md)
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LocaleId`  <a name="cfn-lex-bot-botlocale-localeid"></a>
+The identifier of the language and locale that the bot will be used in. The string must match one of the supported locales.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Intent](aws-properties-lex-bot-intent.md)
+`NluConfidenceThreshold`  <a name="cfn-lex-bot-botlocale-nluconfidencethreshold"></a>
+Determines the threshold where Amazon Lex will insert the `AMAZON.FallbackIntent`, `AMAZON.KendraSearchIntent`, or both when returning alternative intents. You must configure an `AMAZON.FallbackIntent`. `AMAZON.KendraSearchIntent` is only inserted if it is configured for the bot.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocaleId`
-
-The identifier of the language and locale that the bot will be used
-in. The string must match one of the supported locales.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NluConfidenceThreshold`
-
-Determines the threshold where Amazon Lex will insert the
-`AMAZON.FallbackIntent`, `AMAZON.KendraSearchIntent`,
-or both when returning alternative intents. You must configure an
-`AMAZON.FallbackIntent`. `AMAZON.KendraSearchIntent` is
-only inserted if it is configured for the bot.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotTypes`
-
+`SlotTypes`  <a name="cfn-lex-bot-botlocale-slottypes"></a>
 One or more slot types defined for the locale.
+*Required*: No
+*Type*: Array of [SlotType](aws-properties-lex-bot-slottype.md)
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SlotType](aws-properties-lex-bot-slottype.md)
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpeechDetectionSensitivity`
-
+`SpeechDetectionSensitivity`  <a name="cfn-lex-bot-botlocale-speechdetectionsensitivity"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `Default | HighNoiseTolerance | MaximumNoiseTolerance`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Default | HighNoiseTolerance | MaximumNoiseTolerance`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpeechRecognitionSettings`
-
+`SpeechRecognitionSettings`  <a name="cfn-lex-bot-botlocale-speechrecognitionsettings"></a>
 Property description not available.
+*Required*: No
+*Type*: [SpeechRecognitionSettings](aws-properties-lex-bot-speechrecognitionsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SpeechRecognitionSettings](aws-properties-lex-bot-speechrecognitionsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnifiedSpeechSettings`
-
+`UnifiedSpeechSettings`  <a name="cfn-lex-bot-botlocale-unifiedspeechsettings"></a>
 Property description not available.
+*Required*: No
+*Type*: [UnifiedSpeechSettings](aws-properties-lex-bot-unifiedspeechsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [UnifiedSpeechSettings](aws-properties-lex-bot-unifiedspeechsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VoiceSettings`
-
-Defines settings for using an Amazon Polly voice to communicate with a
-user.
-
+`VoiceSettings`  <a name="cfn-lex-bot-botlocale-voicesettings"></a>
+Defines settings for using an Amazon Polly voice to communicate with a user.
 Valid values include:
-
-- `standard`
-
-- `neural`
-
-- `long-form`
-
-- `generative`
-
-_Required_: No
-
-_Type_: [VoiceSettings](aws-properties-lex-bot-voicesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BotAliasLocaleSettingsItem
-
-BuildtimeSettings
++  `standard`
++  `neural`
++  `long-form`
++  `generative`
+*Required*: No
+*Type*: [VoiceSettings](aws-properties-lex-bot-voicesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

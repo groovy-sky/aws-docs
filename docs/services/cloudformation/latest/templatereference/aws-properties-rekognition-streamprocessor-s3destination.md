@@ -2,71 +2,51 @@
 title: "AWS::Rekognition::StreamProcessor S3Destination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rekognition::StreamProcessor S3Destination
+<a name="aws-properties-rekognition-streamprocessor-s3destination"></a>
 
-The Amazon S3 bucket location to which Amazon Rekognition publishes the detailed inference results of a video analysis operation.
-These results include the name of the stream processor resource, the session ID of the stream processing session,
-and labeled timestamps and bounding boxes for detected labels. For more information, see
-[S3Destination](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_S3Destination).
+The Amazon S3 bucket location to which Amazon Rekognition publishes the detailed inference results of a video analysis operation. These results include the name of the stream processor resource, the session ID of the stream processing session, and labeled timestamps and bounding boxes for detected labels. For more information, see [S3Destination](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_S3Destination).
 
 ## Syntax
+<a name="aws-properties-rekognition-streamprocessor-s3destination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rekognition-streamprocessor-s3destination-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "ObjectKeyPrefix" : String
+  "[BucketName](#cfn-rekognition-streamprocessor-s3destination-bucketname)" : {{String}},
+  "[ObjectKeyPrefix](#cfn-rekognition-streamprocessor-s3destination-objectkeyprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rekognition-streamprocessor-s3destination-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  ObjectKeyPrefix: String
-
+```
+  [BucketName](#cfn-rekognition-streamprocessor-s3destination-bucketname): {{String}}
+  [ObjectKeyPrefix](#cfn-rekognition-streamprocessor-s3destination-objectkeyprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rekognition-streamprocessor-s3destination-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-rekognition-streamprocessor-s3destination-bucketname"></a>
 Describes the destination Amazon Simple Storage Service (Amazon S3) bucket name of a stream processor's exports.
+*Required*: Yes
+*Type*: String
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ObjectKeyPrefix`
-
+`ObjectKeyPrefix`  <a name="cfn-rekognition-streamprocessor-s3destination-objectkeyprefix"></a>
 Describes the destination Amazon Simple Storage Service (Amazon S3) object keys of a stream processor's exports.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Point
-
-Tag
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

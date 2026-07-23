@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Theme TileLayoutStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme TileLayoutStyle
+<a name="aws-properties-quicksight-theme-tilelayoutstyle"></a>
 
 The display options for the layout of tiles on a sheet.
 
 ## Syntax
+<a name="aws-properties-quicksight-theme-tilelayoutstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-theme-tilelayoutstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "Gutter" : GutterStyle,
-  "Margin" : MarginStyle
+  "[Gutter](#cfn-quicksight-theme-tilelayoutstyle-gutter)" : {{GutterStyle}},
+  "[Margin](#cfn-quicksight-theme-tilelayoutstyle-margin)" : {{MarginStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-theme-tilelayoutstyle-syntax.yaml"></a>
 
-```yaml
-
-  Gutter:
-    GutterStyle
-  Margin:
-    MarginStyle
-
+```
+  [Gutter](#cfn-quicksight-theme-tilelayoutstyle-gutter): {{
+    GutterStyle}}
+  [Margin](#cfn-quicksight-theme-tilelayoutstyle-margin): {{
+    MarginStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-theme-tilelayoutstyle-properties"></a>
 
-`Gutter`
-
+`Gutter`  <a name="cfn-quicksight-theme-tilelayoutstyle-gutter"></a>
 The gutter settings that apply between tiles.
+*Required*: No
+*Type*: [GutterStyle](aws-properties-quicksight-theme-gutterstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GutterStyle](aws-properties-quicksight-theme-gutterstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Margin`
-
+`Margin`  <a name="cfn-quicksight-theme-tilelayoutstyle-margin"></a>
 The margin settings that apply around the outside edge of sheets.
-
-_Required_: No
-
-_Type_: [MarginStyle](aws-properties-quicksight-theme-marginstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ThemeVersion
-
-TileStyle
+*Required*: No
+*Type*: [MarginStyle](aws-properties-quicksight-theme-marginstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

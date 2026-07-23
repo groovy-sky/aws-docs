@@ -2,126 +2,87 @@
 title: "AWS::BedrockAgentCore::GatewayTarget OAuthCredentialProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget OAuthCredentialProvider
+<a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider"></a>
 
 An OAuth credential provider for gateway authentication. This structure contains the configuration for authenticating with the target endpoint using OAuth.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomParameters" : {Key: Value, ...},
-  "DefaultReturnUrl" : String,
-  "GrantType" : String,
-  "ProviderArn" : String,
-  "Scopes" : [ String, ... ]
+  "[CustomParameters](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-customparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[DefaultReturnUrl](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-defaultreturnurl)" : {{String}},
+  "[GrantType](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-granttype)" : {{String}},
+  "[ProviderArn](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-providerarn)" : {{String}},
+  "[Scopes](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-scopes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider-syntax.yaml"></a>
 
-```yaml
-
-  CustomParameters:
-    Key: Value
-  DefaultReturnUrl: String
-  GrantType: String
-  ProviderArn: String
-  Scopes:
-    - String
-
+```
+  [CustomParameters](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-customparameters): {{
+    {{Key}}: {{Value}}}}
+  [DefaultReturnUrl](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-defaultreturnurl): {{String}}
+  [GrantType](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-granttype): {{String}}
+  [ProviderArn](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-providerarn): {{String}}
+  [Scopes](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-scopes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider-properties"></a>
 
-`CustomParameters`
-
+`CustomParameters`  <a name="cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-customparameters"></a>
 The custom parameters for the OAuth credential provider. These parameters provide additional configuration for the OAuth authentication process.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultReturnUrl`
-
+`DefaultReturnUrl`  <a name="cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-defaultreturnurl"></a>
 The URL where the end user's browser is redirected after obtaining the authorization code. Generally points to the customer's application.
+*Required*: No
+*Type*: String
+*Pattern*: `\w+:(\/?\/?)[^\s]+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\w+:(\/?\/?)[^\s]+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GrantType`
-
+`GrantType`  <a name="cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-granttype"></a>
 Specifies the kind of credentials to use for authorization:
++ `CLIENT_CREDENTIALS` - Authorization with a client ID and secret.
++ `AUTHORIZATION_CODE` - Authorization with a token that is specific to an individual end user.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | TOKEN_EXCHANGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `CLIENT_CREDENTIALS` \- Authorization with a client ID and secret.
-
-- `AUTHORIZATION_CODE` \- Authorization with a token that is specific to an individual end user.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProviderArn`
-
+`ProviderArn`  <a name="cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-providerarn"></a>
 The Amazon Resource Name (ARN) of the OAuth credential provider. This ARN identifies the provider in AWS.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:([^:]*):([^:]*):([^:]*):([0-9]{12})?:(.+)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:([^:]*):([^:]*):([^:]*):([0-9]{12})?:(.+)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scopes`
-
+`Scopes`  <a name="cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-scopes"></a>
 The OAuth scopes for the credential provider. These scopes define the level of access requested from the OAuth provider.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `64 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetadataConfiguration
-
-S3Configuration
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `128 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

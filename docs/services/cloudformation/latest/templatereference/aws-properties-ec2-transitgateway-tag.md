@@ -2,68 +2,63 @@
 title: "AWS::EC2::TransitGateway Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGateway Tag
+<a name="aws-properties-ec2-transitgateway-tag"></a>
 
-Specifies a tag. For more information, see [Resource tags](../userguide/aws-properties-resource-tags.md).
+Specifies a tag. For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
 
 ## Syntax
+<a name="aws-properties-ec2-transitgateway-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-transitgateway-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-ec2-transitgateway-tag-key)" : {{String}},
+  "[Value](#cfn-ec2-transitgateway-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-transitgateway-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-ec2-transitgateway-tag-key): {{String}}
+  [Value](#cfn-ec2-transitgateway-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-transitgateway-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ec2-transitgateway-tag-key"></a>
 The tag key.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ec2-transitgateway-tag-value"></a>
 The tag value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-ec2-transitgateway-tag--examples"></a>
+
+###
+<a name="aws-properties-ec2-transitgateway-tag--examples--"></a>
 
 This example specifies two tags for the transit gateway.
 
 #### JSON
+<a name="aws-properties-ec2-transitgateway-tag--examples----json"></a>
 
-```json
-
+```
 "Tags" : [
    {
       "Key" : "key1",
@@ -77,20 +72,14 @@ This example specifies two tags for the transit gateway.
 ```
 
 #### YAML
+<a name="aws-properties-ec2-transitgateway-tag--examples----yaml"></a>
 
-```yaml
-
+```
 Tags:
   - Key: "key1"
     Value: "value1"
   - Key: "key2"
     Value: "value2"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::TransitGateway
-
-AWS::EC2::TransitGatewayAttachment
 
 All content copied from https://docs.aws.amazon.com/.

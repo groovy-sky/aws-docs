@@ -2,73 +2,53 @@
 title: "AWS::Bedrock::KnowledgeBase NeptuneAnalyticsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase NeptuneAnalyticsConfiguration
+<a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsconfiguration"></a>
 
-Contains details about the storage configuration of the knowledge base in
-Amazon Neptune Analytics. For more information, see [Create a vector index \
-in Amazon Neptune Analytics](../../../bedrock/latest/userguide/knowledge-base-setup-neptune.md).
+Contains details about the storage configuration of the knowledge base in Amazon Neptune Analytics. For more information, see [Create a vector index in Amazon Neptune Analytics](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup-neptune.html).
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldMapping" : NeptuneAnalyticsFieldMapping,
-  "GraphArn" : String
+  "[FieldMapping](#cfn-bedrock-knowledgebase-neptuneanalyticsconfiguration-fieldmapping)" : {{NeptuneAnalyticsFieldMapping}},
+  "[GraphArn](#cfn-bedrock-knowledgebase-neptuneanalyticsconfiguration-grapharn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FieldMapping:
-    NeptuneAnalyticsFieldMapping
-  GraphArn: String
-
+```
+  [FieldMapping](#cfn-bedrock-knowledgebase-neptuneanalyticsconfiguration-fieldmapping): {{
+    NeptuneAnalyticsFieldMapping}}
+  [GraphArn](#cfn-bedrock-knowledgebase-neptuneanalyticsconfiguration-grapharn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsconfiguration-properties"></a>
 
-`FieldMapping`
-
+`FieldMapping`  <a name="cfn-bedrock-knowledgebase-neptuneanalyticsconfiguration-fieldmapping"></a>
 Contains the names of the fields to which to map information about the vector store.
+*Required*: Yes
+*Type*: [NeptuneAnalyticsFieldMapping](aws-properties-bedrock-knowledgebase-neptuneanalyticsfieldmapping.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [NeptuneAnalyticsFieldMapping](aws-properties-bedrock-knowledgebase-neptuneanalyticsfieldmapping.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GraphArn`
-
+`GraphArn`  <a name="cfn-bedrock-knowledgebase-neptuneanalyticsconfiguration-grapharn"></a>
 The Amazon Resource Name (ARN) of the Neptune Analytics vector store.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(|-cn|-us-gov):neptune-graph:[a-zA-Z0-9-]*:[0-9]{12}:graph\/g-[a-zA-Z0-9]{10}$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MongoDbAtlasFieldMapping
-
-NeptuneAnalyticsFieldMapping
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(|-cn|-us-gov):neptune-graph:[a-zA-Z0-9-]*:[0-9]{12}:graph\/g-[a-zA-Z0-9]{10}$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

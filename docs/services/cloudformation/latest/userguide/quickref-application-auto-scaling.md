@@ -3,54 +3,34 @@ title: "Configure Application Auto Scaling resources with CloudFormation"
 ---
 
 # Configure Application Auto Scaling resources with CloudFormation
+<a name="quickref-application-auto-scaling"></a>
 
-This section provides CloudFormation template examples for Application Auto Scaling scaling policies and scheduled
-actions for different AWS resources.
+This section provides CloudFormation template examples for Application Auto Scaling scaling policies and scheduled actions for different AWS resources.
 
-###### Important
+**Important**
+When an Application Auto Scaling snippet is included in the template, you might need to declare a dependency on the specific scalable resource that's created through the template using the `DependsOn` attribute. This overrides the default parallelism and directs CloudFormation to operate on resources in a specified order. Otherwise, the scaling configuration might be applied before the resource has been set up completely.
+For more information, see [DependsOn attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-dependson.html).
 
-When an Application Auto Scaling snippet is included in the template, you might need to declare a
-dependency on the specific scalable resource that's created through the template using the
-`DependsOn` attribute. This overrides the default parallelism and directs CloudFormation
-to operate on resources in a specified order. Otherwise, the scaling configuration might be
-applied before the resource has been set up completely.
-
-For more information, see [DependsOn\
-attribute](../templatereference/aws-attribute-dependson.md).
-
-###### Snippet categories
-
-- [Create a scaling policy for an AppStream fleet](#w2aac11c41c15c19b9)
-
-- [Create a scaling policy for an Aurora DB cluster](#w2aac11c41c15c19c11)
-
-- [Create a scaling policy for a DynamoDB table](#w2aac11c41c15c19c13)
-
-- [Create a scaling policy for an Amazon ECS service (metrics: average CPU and memory)](#w2aac11c41c15c19c15)
-
-- [Create a scaling policy for an Amazon ECS service (metric: average request count per target)](#w2aac11c41c15c19c17)
-
-- [Create a scheduled action with a cron expression for a Lambda function](#w2aac11c41c15c19c19)
-
-- [Create a scheduled action with an at expression for a Spot Fleet](#w2aac11c41c15c19c21)
+**Topics**
++ [Create a scaling policy for an AppStream fleet](#w2aac11c41c15c19b9)
++ [Create a scaling policy for an Aurora DB cluster](#w2aac11c41c15c19c11)
++ [Create a scaling policy for a DynamoDB table](#w2aac11c41c15c19c13)
++ [Create a scaling policy for an Amazon ECS service (metrics: average CPU and memory)](#w2aac11c41c15c19c15)
++ [Create a scaling policy for an Amazon ECS service (metric: average request count per target)](#w2aac11c41c15c19c17)
++ [Create a scheduled action with a cron expression for a Lambda function](#w2aac11c41c15c19c19)
++ [Create a scheduled action with an `at` expression for a Spot Fleet](#w2aac11c41c15c19c21)
 
 ## Create a scaling policy for an AppStream fleet
+<a name="w2aac11c41c15c19b9"></a>
 
-This snippet shows how to create a policy and apply it to an [`AWS::AppStream::Fleet`](../templatereference/aws-resource-appstream-fleet.md) resource using the [`AWS::ApplicationAutoScaling::ScalingPolicy`](../templatereference/aws-resource-applicationautoscaling-scalingpolicy.md) resource. The [`AWS::ApplicationAutoScaling::ScalableTarget`](../templatereference/aws-resource-applicationautoscaling-scalabletarget.md) resource declares a
-scalable target to which this policy is applied. Application Auto Scaling can scale the number of fleet
-instances at a minimum of 1 instance and a maximum of 20. The policy keeps the average
-capacity utilization of the fleet at 75 percent, with scale-out and scale-in cooldown
-periods of 300 seconds (5 minutes).
+This snippet shows how to create a policy and apply it to an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-appstream-fleet.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-appstream-fleet.html) resource using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html) resource. The [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html) resource declares a scalable target to which this policy is applied. Application Auto Scaling can scale the number of fleet instances at a minimum of 1 instance and a maximum of 20. The policy keeps the average capacity utilization of the fleet at 75 percent, with scale-out and scale-in cooldown periods of 300 seconds (5 minutes).
 
-It uses the `Fn::Join` and `Rev` intrinsic functions to construct
-the `ResourceId` property with the logical name of the
-`AWS::AppStream::Fleet` resource that's specified in the same template. For
-more information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+It uses the `Fn::Join` and `Rev` intrinsic functions to construct the `ResourceId` property with the logical name of the `AWS::AppStream::Fleet` resource that's specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
 ### JSON
+<a name="quickref-autoscaling-example-6.json"></a>
 
-```json
-
+```
 {
   "Resources" : {
     "ScalableTarget" : {
@@ -67,7 +47,7 @@ more information, see [Intrinsic function reference](../templatereference/intrin
             [
               "fleet",
               {
-                "Ref" : "logicalName"
+                "Ref" : "{{logicalName}}"
               }
             ]
           ]
@@ -87,7 +67,7 @@ more information, see [Intrinsic function reference](../templatereference/intrin
             [
               "fleet",
               {
-                "Ref" : "logicalName"
+                "Ref" : "{{logicalName}}"
               }
             ]
           ]
@@ -107,9 +87,9 @@ more information, see [Intrinsic function reference](../templatereference/intrin
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-6.yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   ScalableTarget:
@@ -124,7 +104,7 @@ Resources:
       ResourceId: !Join
         - /
         - - fleet
-          - !Ref logicalName
+          - !Ref {{logicalName}}
   ScalingPolicyAppStreamFleet:
     Type: AWS::ApplicationAutoScaling::ScalingPolicy
     Properties:
@@ -135,7 +115,7 @@ Resources:
       ResourceId: !Join
         - /
         - - fleet
-          - !Ref logicalName
+          - !Ref {{logicalName}}
       TargetTrackingScalingPolicyConfiguration:
         TargetValue: 75
         PredefinedMetricSpecification:
@@ -145,26 +125,18 @@ Resources:
 ```
 
 ## Create a scaling policy for an Aurora DB cluster
+<a name="w2aac11c41c15c19c11"></a>
 
-In this snippet, you register an [`AWS::RDS::DBCluster`](../templatereference/aws-resource-rds-dbcluster.md)
-resource. The [`AWS::ApplicationAutoScaling::ScalableTarget`](../templatereference/aws-resource-applicationautoscaling-scalabletarget.md) resource indicates
-that the DB cluster should be dynamically scaled to have from one to eight Aurora Replicas.
-You also apply a target tracking scaling policy to the cluster using the [`AWS::ApplicationAutoScaling::ScalingPolicy`](../templatereference/aws-resource-applicationautoscaling-scalingpolicy.md) resource.
+In this snippet, you register an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbcluster.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbcluster.html) resource. The [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html) resource indicates that the DB cluster should be dynamically scaled to have from one to eight Aurora Replicas. You also apply a target tracking scaling policy to the cluster using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html) resource.
 
-In this configuration, the `RDSReaderAverageCPUUtilization` predefined metric
-is used to adjust an Aurora DB cluster based on an average CPU utilization of 40 percent
-across all Aurora Replicas in that Aurora DB cluster. The configuration provides a scale-in
-cooldown period of 10 minutes and a scale-out cooldown period of 5 minutes.
+In this configuration, the `RDSReaderAverageCPUUtilization` predefined metric is used to adjust an Aurora DB cluster based on an average CPU utilization of 40 percent across all Aurora Replicas in that Aurora DB cluster. The configuration provides a scale-in cooldown period of 10 minutes and a scale-out cooldown period of 5 minutes.
 
-This example uses the `Fn::Sub` intrinsic function to construct the
-`ResourceId` property with the logical name of the
-`AWS::RDS::DBCluster` resource that is specified in the same template. For more
-information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+This example uses the `Fn::Sub` intrinsic function to construct the `ResourceId` property with the logical name of the `AWS::RDS::DBCluster` resource that is specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
 ### JSON
+<a name="quickref-autoscaling-example-7.json"></a>
 
-```json
-
+```
 {
   "Resources" : {
     "ScalableTarget" : {
@@ -175,7 +147,7 @@ information, see [Intrinsic function reference](../templatereference/intrinsic-f
         "RoleARN" : { "Fn::Sub" : "arn:aws:iam::${AWS::AccountId}:role/aws-service-role/rds.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_RDSCluster" },
         "ServiceNamespace" : "rds",
         "ScalableDimension" : "rds:cluster:ReadReplicaCount",
-        "ResourceId" : { "Fn::Sub" : "cluster:${logicalName}" }
+        "ResourceId" : { "Fn::Sub" : "cluster:${{{logicalName}}}" }
       }
     },
     "ScalingPolicyDBCluster" : {
@@ -185,7 +157,7 @@ information, see [Intrinsic function reference](../templatereference/intrinsic-f
         "PolicyType" : "TargetTrackingScaling",
         "ServiceNamespace" : "rds",
         "ScalableDimension" : "rds:cluster:ReadReplicaCount",
-        "ResourceId" : { "Fn::Sub" : "cluster:${logicalName}" },
+        "ResourceId" : { "Fn::Sub" : "cluster:${{{logicalName}}}" },
         "TargetTrackingScalingPolicyConfiguration" : {
           "TargetValue" : 40,
           "PredefinedMetricSpecification" : {
@@ -201,9 +173,9 @@ information, see [Intrinsic function reference](../templatereference/intrinsic-f
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-7.yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   ScalableTarget:
@@ -215,7 +187,7 @@ Resources:
         Fn::Sub: 'arn:aws:iam::${AWS::AccountId}:role/aws-service-role/rds.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_RDSCluster'
       ServiceNamespace: rds
       ScalableDimension: rds:cluster:ReadReplicaCount
-      ResourceId: !Sub cluster:${logicalName}
+      ResourceId: !Sub cluster:${{{logicalName}}}
   ScalingPolicyDBCluster:
     Type: AWS::ApplicationAutoScaling::ScalingPolicy
     Properties:
@@ -223,7 +195,7 @@ Resources:
       PolicyType: TargetTrackingScaling
       ServiceNamespace: rds
       ScalableDimension: rds:cluster:ReadReplicaCount
-      ResourceId: !Sub cluster:${logicalName}
+      ResourceId: !Sub cluster:${{{logicalName}}}
       TargetTrackingScalingPolicyConfiguration:
         TargetValue: 40
         PredefinedMetricSpecification:
@@ -233,29 +205,19 @@ Resources:
 ```
 
 ## Create a scaling policy for a DynamoDB table
+<a name="w2aac11c41c15c19c13"></a>
 
-This snippet shows how to create a policy with the `TargetTrackingScaling`
-policy type and apply it to an [`AWS::DynamoDB::Table`](../templatereference/aws-resource-dynamodb-table.md) resource using the [`AWS::ApplicationAutoScaling::ScalingPolicy`](../templatereference/aws-resource-applicationautoscaling-scalingpolicy.md) resource. The [`AWS::ApplicationAutoScaling::ScalableTarget`](../templatereference/aws-resource-applicationautoscaling-scalabletarget.md) resource declares a
-scalable target to which this policy is applied, with a minimum of five write capacity units
-and a maximum of 15. The scaling policy scales the table's write capacity throughput to
-maintain the target utilization at 50 percent based on the
-`DynamoDBWriteCapacityUtilization` predefined metric.
+This snippet shows how to create a policy with the `TargetTrackingScaling` policy type and apply it to an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-dynamodb-table.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-dynamodb-table.html) resource using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html) resource. The [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html) resource declares a scalable target to which this policy is applied, with a minimum of five write capacity units and a maximum of 15. The scaling policy scales the table's write capacity throughput to maintain the target utilization at 50 percent based on the `DynamoDBWriteCapacityUtilization` predefined metric.
 
-It uses the `Fn::Join` and `Ref` intrinsic functions to construct
-the `ResourceId` property with the logical name of the
-`AWS::DynamoDB::Table` resource that's specified in the same template. For more
-information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+It uses the `Fn::Join` and `Ref` intrinsic functions to construct the `ResourceId` property with the logical name of the `AWS::DynamoDB::Table` resource that's specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
-###### Note
-
-For more information about how to create an CloudFormation template for DynamoDB resources, see
-the blog post [How to use CloudFormation to configure auto scaling for Amazon DynamoDB tables and\
-indexes](https://aws.amazon.com/blogs/database/how-to-use-aws-cloudformation-to-configure-auto-scaling-for-amazon-dynamodb-tables-and-indexes) on the AWS Database Blog.
+**Note**
+For more information about how to create an CloudFormation template for DynamoDB resources, see the blog post [How to use CloudFormation to configure auto scaling for Amazon DynamoDB tables and indexes](https://aws.amazon.com/blogs/database/how-to-use-aws-cloudformation-to-configure-auto-scaling-for-amazon-dynamodb-tables-and-indexes/) on the AWS Database Blog.
 
 ### JSON
+<a name="quickref-autoscaling-example-8.json"></a>
 
-```json
-
+```
 {
   "Resources" : {
     "WriteCapacityScalableTarget" : {
@@ -272,7 +234,7 @@ indexes](https://aws.amazon.com/blogs/database/how-to-use-aws-cloudformation-to-
             [
               "table",
               {
-                "Ref" : "logicalName"
+                "Ref" : "{{logicalName}}"
               }
             ]
           ]
@@ -300,9 +262,9 @@ indexes](https://aws.amazon.com/blogs/database/how-to-use-aws-cloudformation-to-
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-8.yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   WriteCapacityScalableTarget:
@@ -317,7 +279,7 @@ Resources:
       ResourceId: !Join
         - /
         - - table
-          - !Ref logicalName
+          - !Ref {{logicalName}}
   WriteScalingPolicy:
     Type: AWS::ApplicationAutoScaling::ScalingPolicy
     Properties:
@@ -333,23 +295,16 @@ Resources:
 ```
 
 ## Create a scaling policy for an Amazon ECS service (metrics: average CPU and memory)
+<a name="w2aac11c41c15c19c15"></a>
 
-This snippet shows how to create a policy and apply it to an [`AWS::ECS::Service`](../templatereference/aws-resource-ecs-service.md)
-resource using the [`AWS::ApplicationAutoScaling::ScalingPolicy`](../templatereference/aws-resource-applicationautoscaling-scalingpolicy.md) resource. The [`AWS::ApplicationAutoScaling::ScalableTarget`](../templatereference/aws-resource-applicationautoscaling-scalabletarget.md) resource declares a
-scalable target to which this policy is applied. Application Auto Scaling can scale the number of tasks at a
-minimum of 1 task and a maximum of 6.
+This snippet shows how to create a policy and apply it to an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-service.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-service.html) resource using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalingpolicy.html) resource. The [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html) resource declares a scalable target to which this policy is applied. Application Auto Scaling can scale the number of tasks at a minimum of 1 task and a maximum of 6.
 
-It creates two scaling policies with the `TargetTrackingScaling` policy type.
-The policies are used to scale the ECS service based on the service's average CPU and memory
-usage. It uses the `Fn::Join` and `Ref` intrinsic functions to
-construct the `ResourceId` property with the logical names of the [`AWS::ECS::Cluster`](../templatereference/aws-resource-ecs-cluster.md) ( `myContainerCluster`) and
-`AWS::ECS::Service` ( `myService`) resources that are specified in
-the same template. For more information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+It creates two scaling policies with the `TargetTrackingScaling` policy type. The policies are used to scale the ECS service based on the service's average CPU and memory usage. It uses the `Fn::Join` and `Ref` intrinsic functions to construct the `ResourceId` property with the logical names of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-cluster.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ecs-cluster.html) (`myContainerCluster`) and `AWS::ECS::Service` (`myService`) resources that are specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
 ### JSON
+<a name="quickref-autoscaling-example-9.json"></a>
 
-```json
-
+```
 {
   "Resources" : {
     "ECSScalableTarget" : {
@@ -366,11 +321,11 @@ the same template. For more information, see [Intrinsic function reference](../t
             [
               "service",
               {
-                "Ref" : "myContainerCluster"
+                "Ref" : "{{myContainerCluster}}"
               },
               {
                 "Fn::GetAtt" : [
-                  "myService",
+                  "{{myService}}",
                   "Name"
                 ]
               }
@@ -416,9 +371,9 @@ the same template. For more information, see [Intrinsic function reference](../t
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-9.yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   ECSScalableTarget:
@@ -433,8 +388,8 @@ Resources:
       ResourceId: !Join
         - /
         - - service
-          - !Ref myContainerCluster
-          - !GetAtt myService.Name
+          - !Ref {{myContainerCluster}}
+          - !GetAtt {{myService}}.Name
   ServiceScalingPolicyCPU:
     Type: AWS::ApplicationAutoScaling::ScalingPolicy
     Properties:
@@ -462,28 +417,18 @@ Resources:
 ```
 
 ## Create a scaling policy for an Amazon ECS service (metric: average request count per target)
+<a name="w2aac11c41c15c19c17"></a>
 
-The following example applies a target tracking scaling policy with the
-`ALBRequestCountPerTarget` predefined metric to an ECS service. The policy is
-used to add capacity to the ECS service when the request count per target (per minute)
-exceeds the target value. Because the value of `DisableScaleIn` is set to
-`true`, the target tracking policy won't remove capacity from the scalable
-target.
+The following example applies a target tracking scaling policy with the `ALBRequestCountPerTarget` predefined metric to an ECS service. The policy is used to add capacity to the ECS service when the request count per target (per minute) exceeds the target value. Because the value of `DisableScaleIn` is set to `true`, the target tracking policy won't remove capacity from the scalable target.
 
-It uses the `Fn::Join` and `Fn::GetAtt` intrinsic functions to
-construct the `ResourceLabel` property with the logical names of the [`AWS::ElasticLoadBalancingV2::LoadBalancer`](../templatereference/aws-resource-elasticloadbalancingv2-loadbalancer.md)
-( `myLoadBalancer`) and [`AWS::ElasticLoadBalancingV2::TargetGroup`](../templatereference/aws-resource-elasticloadbalancingv2-targetgroup.md)
-( `myTargetGroup`) resources that are specified in the same template. For more
-information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+It uses the `Fn::Join` and `Fn::GetAtt` intrinsic functions to construct the `ResourceLabel` property with the logical names of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-loadbalancer.html) (`myLoadBalancer`) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticloadbalancingv2-targetgroup.html) (`myTargetGroup`) resources that are specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
-The `MaxCapacity` and `MinCapacity` properties of the scalable
-target and the `TargetValue` property of the scaling policy reference parameter
-values that you pass to the template when creating or updating a stack.
+The `MaxCapacity` and `MinCapacity` properties of the scalable target and the `TargetValue` property of the scaling policy reference parameter values that you pass to the template when creating or updating a stack.
 
 ### JSON
+<a name="quickref-autoscaling-example-10.json"></a>
 
-```json
-
+```
 {
   "Resources" : {
     "ECSScalableTarget" : {
@@ -500,11 +445,11 @@ values that you pass to the template when creating or updating a stack.
             [
               "service",
               {
-                "Ref" : "myContainerCluster"
+                "Ref" : "{{myContainerCluster}}"
               },
               {
                 "Fn::GetAtt" : [
-                  "myService",
+                  "{{myService}}",
                   "Name"
                 ]
               }
@@ -532,13 +477,13 @@ values that you pass to the template when creating or updating a stack.
                 [
                   {
                     "Fn::GetAtt" : [
-                      "myLoadBalancer",
+                      "{{myLoadBalancer}}",
                       "LoadBalancerFullName"
                     ]
                   },
                   {
                     "Fn::GetAtt" : [
-                      "myTargetGroup",
+                      "{{myTargetGroup}}",
                       "TargetGroupFullName"
                     ]
                   }
@@ -554,9 +499,9 @@ values that you pass to the template when creating or updating a stack.
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-10.yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   ECSScalableTarget:
@@ -571,8 +516,8 @@ Resources:
       ResourceId: !Join
         - /
         - - service
-          - !Ref myContainerCluster
-          - !GetAtt myService.Name
+          - !Ref {{myContainerCluster}}
+          - !GetAtt {{myService}}.Name
   ServiceScalingPolicyALB:
     Type: AWS::ApplicationAutoScaling::ScalingPolicy
     Properties:
@@ -588,36 +533,25 @@ Resources:
           PredefinedMetricType: ALBRequestCountPerTarget
           ResourceLabel: !Join
             - '/'
-            - - !GetAtt myLoadBalancer.LoadBalancerFullName
-              - !GetAtt myTargetGroup.TargetGroupFullName
+            - - !GetAtt {{myLoadBalancer}}.LoadBalancerFullName
+              - !GetAtt {{myTargetGroup}}.TargetGroupFullName
 ```
 
 ## Create a scheduled action with a cron expression for a Lambda function
+<a name="w2aac11c41c15c19c19"></a>
 
-This snippet registers the provisioned concurrency for a function alias ( [`AWS::Lambda::Alias`](../templatereference/aws-resource-lambda-alias.md)) named `BLUE` using the [`AWS::ApplicationAutoScaling::ScalableTarget`](../templatereference/aws-resource-applicationautoscaling-scalabletarget.md) resource. It also
-creates a scheduled action with a recurring schedule using a cron expression. The time zone
-for the recurring schedule is UTC.
+This snippet registers the provisioned concurrency for a function alias ([https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-alias.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-alias.html)) named `BLUE` using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html) resource. It also creates a scheduled action with a recurring schedule using a cron expression. The time zone for the recurring schedule is UTC.
 
-It uses the `Fn::Join` and `Ref` intrinsic functions in the
-`RoleARN` property to specify the ARN of the service-linked role. It uses the
-`Fn::Sub` intrinsic function to construct the `ResourceId` property
-with the logical name of the [`AWS::Lambda::Function`](../templatereference/aws-resource-lambda-function.md) or [`AWS::Serverless::Function`](../../../serverless-application-model/latest/developerguide/sam-resource-function.md) resource that is specified in the same
-template. For more information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+It uses the `Fn::Join` and `Ref` intrinsic functions in the `RoleARN` property to specify the ARN of the service-linked role. It uses the `Fn::Sub` intrinsic function to construct the `ResourceId` property with the logical name of the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html) or [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html) resource that is specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
-###### Note
-
-You can't allocate provisioned concurrency on an alias that points to the unpublished
-version
-( `$LATEST`).
-
-For more information about how to create an CloudFormation template for Lambda resources, see
-the blog post [Scheduling AWS Lambda Provisioned Concurrency for recurring peak usage](https://aws.amazon.com/blogs/compute/scheduling-aws-lambda-provisioned-concurrency-for-recurring-peak-usage) on the
-AWS Compute Blog.
+**Note**
+You can't allocate provisioned concurrency on an alias that points to the unpublished version (`$LATEST`).
+For more information about how to create an CloudFormation template for Lambda resources, see the blog post [Scheduling AWS Lambda Provisioned Concurrency for recurring peak usage](https://aws.amazon.com/blogs/compute/scheduling-aws-lambda-provisioned-concurrency-for-recurring-peak-usage/) on the AWS Compute Blog.
 
 ### JSON
+<a name="quickref-autoscaling-example-11.json"></a>
 
-```json
-
+```
 {
   "ScalableTarget" : {
     "Type" : "AWS::ApplicationAutoScaling::ScalableTarget",
@@ -638,7 +572,7 @@ AWS Compute Blog.
       },
       "ServiceNamespace" : "lambda",
       "ScalableDimension" : "lambda:function:ProvisionedConcurrency",
-      "ResourceId" : { "Fn::Sub" : "function:${logicalName}:BLUE" },
+      "ResourceId" : { "Fn::Sub" : "function:${{{logicalName}}}:BLUE" },
       "ScheduledActions" : [
         {
           "ScalableTargetAction" : {
@@ -655,9 +589,9 @@ AWS Compute Blog.
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-11.yaml"></a>
 
-```yaml
-
+```
 ScalableTarget:
   Type: AWS::ApplicationAutoScaling::ScalableTarget
   Properties:
@@ -670,7 +604,7 @@ ScalableTarget:
         - role/aws-service-role/lambda.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_LambdaConcurrency
     ServiceNamespace: lambda
     ScalableDimension: lambda:function:ProvisionedConcurrency
-    ResourceId: !Sub function:${logicalName}:BLUE
+    ResourceId: !Sub function:${{{logicalName}}}:BLUE
     ScheduledActions:
       - ScalableTargetAction:
           MinCapacity: 250
@@ -680,25 +614,19 @@ ScalableTarget:
 ```
 
 ## Create a scheduled action with an `at` expression for a Spot Fleet
+<a name="w2aac11c41c15c19c21"></a>
 
-This snippet shows how to create two scheduled actions that occur only once for an
-[`AWS::EC2::SpotFleet`](../templatereference/aws-resource-ec2-spotfleet.md) resource using the [`AWS::ApplicationAutoScaling::ScalableTarget`](../templatereference/aws-resource-applicationautoscaling-scalabletarget.md) resource. The time
-zone for each one-time scheduled action is UTC.
+This snippet shows how to create two scheduled actions that occur only once for an [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-spotfleet.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-spotfleet.html) resource using the [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-applicationautoscaling-scalabletarget.html) resource. The time zone for each one-time scheduled action is UTC.
 
-It uses the `Fn::Join` and `Ref` intrinsic functions to construct
-the `ResourceId` property with the logical name of the
-`AWS::EC2::SpotFleet` resource that is specified in the same template. For more
-information, see [Intrinsic function reference](../templatereference/intrinsic-function-reference.md).
+It uses the `Fn::Join` and `Ref` intrinsic functions to construct the `ResourceId` property with the logical name of the `AWS::EC2::SpotFleet` resource that is specified in the same template. For more information, see [Intrinsic function reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html).
 
-###### Note
-
-The Spot Fleet request must have a request type of `maintain`. Automatic
-scaling isn't supported for one-time requests or Spot blocks.
+**Note**
+The Spot Fleet request must have a request type of `maintain`. Automatic scaling isn't supported for one-time requests or Spot blocks.
 
 ### JSON
+<a name="quickref-autoscaling-example-12.json"></a>
 
-```json
-
+```
 {
   "Resources" : {
     "SpotFleetScalableTarget" : {
@@ -715,7 +643,7 @@ scaling isn't supported for one-time requests or Spot blocks.
             [
               "spot-fleet-request",
               {
-                "Ref" : "logicalName"
+                "Ref" : "{{logicalName}}"
               }
             ]
           ]
@@ -745,9 +673,9 @@ scaling isn't supported for one-time requests or Spot blocks.
 ```
 
 ### YAML
+<a name="quickref-autoscaling-example-12.yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   SpotFleetScalableTarget:
@@ -762,7 +690,7 @@ Resources:
       ResourceId: !Join
         - /
         - - spot-fleet-request
-          - !Ref logicalName
+          - !Ref {{logicalName}}
       ScheduledActions:
         - ScalableTargetAction:
             MaxCapacity: 10
@@ -775,12 +703,5 @@ Resources:
           ScheduledActionName: my-scale-in-scheduled-action
           Schedule: 'at(2022-05-20T21:00:00)'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configure Amazon EC2 Auto Scaling
-resources
-
-AWS Billing Console
 
 All content copied from https://docs.aws.amazon.com/.

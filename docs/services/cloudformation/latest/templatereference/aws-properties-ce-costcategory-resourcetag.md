@@ -2,79 +2,57 @@
 title: "AWS::CE::CostCategory ResourceTag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CE::CostCategory ResourceTag
+<a name="aws-properties-ce-costcategory-resourcetag"></a>
 
 The tag structure that contains a tag key and value.
 
-###### Note
-
-Tagging is supported only for the following Cost Explorer resource types:
-[`AnomalyMonitor`](../../../../reference/aws-cost-management/latest/apireference/api-anomalymonitor.md), [`AnomalySubscription`](../../../../reference/aws-cost-management/latest/apireference/api-anomalysubscription.md), [`CostCategory`](../../../../reference/aws-cost-management/latest/apireference/api-costcategory.md).
+**Note**
+Tagging is supported only for the following Cost Explorer resource types: [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalyMonitor.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalyMonitor.html), [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalySubscription.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalySubscription.html), [https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html).
 
 ## Syntax
+<a name="aws-properties-ce-costcategory-resourcetag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ce-costcategory-resourcetag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-ce-costcategory-resourcetag-key)" : {{String}},
+  "[Value](#cfn-ce-costcategory-resourcetag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ce-costcategory-resourcetag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-ce-costcategory-resourcetag-key): {{String}}
+  [Value](#cfn-ce-costcategory-resourcetag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ce-costcategory-resourcetag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ce-costcategory-resourcetag-key"></a>
 The key that's associated with the tag.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:).*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:).*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ce-costcategory-resourcetag-value"></a>
 The value that's associated with the tag.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CE::CostCategory
-
-Next
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

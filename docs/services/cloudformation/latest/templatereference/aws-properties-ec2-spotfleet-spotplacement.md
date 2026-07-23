@@ -2,101 +2,69 @@
 title: "AWS::EC2::SpotFleet SpotPlacement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet SpotPlacement
+<a name="aws-properties-ec2-spotfleet-spotplacement"></a>
 
 Describes Spot Instance placement.
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-spotplacement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-spotplacement-syntax.json"></a>
 
-```json
-
+```
 {
-  "AvailabilityZone" : String,
-  "AvailabilityZoneId" : String,
-  "GroupName" : String,
-  "Tenancy" : String
+  "[AvailabilityZone](#cfn-ec2-spotfleet-spotplacement-availabilityzone)" : {{String}},
+  "[AvailabilityZoneId](#cfn-ec2-spotfleet-spotplacement-availabilityzoneid)" : {{String}},
+  "[GroupName](#cfn-ec2-spotfleet-spotplacement-groupname)" : {{String}},
+  "[Tenancy](#cfn-ec2-spotfleet-spotplacement-tenancy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-spotplacement-syntax.yaml"></a>
 
-```yaml
-
-  AvailabilityZone: String
-  AvailabilityZoneId: String
-  GroupName: String
-  Tenancy: String
-
+```
+  [AvailabilityZone](#cfn-ec2-spotfleet-spotplacement-availabilityzone): {{String}}
+  [AvailabilityZoneId](#cfn-ec2-spotfleet-spotplacement-availabilityzoneid): {{String}}
+  [GroupName](#cfn-ec2-spotfleet-spotplacement-groupname): {{String}}
+  [Tenancy](#cfn-ec2-spotfleet-spotplacement-tenancy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-spotplacement-properties"></a>
 
-`AvailabilityZone`
-
+`AvailabilityZone`  <a name="cfn-ec2-spotfleet-spotplacement-availabilityzone"></a>
 The Availability Zone.
+To specify multiple Availability Zones, separate them using commas; for example, "us-west-2a, us-west-2b".
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-To specify multiple Availability Zones, separate them using commas; for example,
-"us-west-2a, us-west-2b".
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AvailabilityZoneId`
-
+`AvailabilityZoneId`  <a name="cfn-ec2-spotfleet-spotplacement-availabilityzoneid"></a>
 The ID of the Availability Zone. For example, `use2-az1`.
+[Spot Fleet only] To specify multiple Availability Zones, separate them using commas; for example, "`use2-az1`, `use2-bz1`".
+Either `AvailabilityZone` or `AvailabilityZoneId` must be specified in the request, but not both.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-\[Spot Fleet only\] To specify multiple Availability Zones, separate them using commas;
-for example, " `use2-az1`, `use2-bz1`".
-
-Either `AvailabilityZone` or `AvailabilityZoneId` must be
-specified in the request, but not both.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GroupName`
-
+`GroupName`  <a name="cfn-ec2-spotfleet-spotplacement-groupname"></a>
 The name of the placement group.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tenancy`
-
-The tenancy of the instance (if the instance is running in a VPC). An instance with a
-tenancy of `dedicated` runs on single-tenant hardware. The `host`
-tenancy is not supported for Spot Instances.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `dedicated | default | host`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SpotMaintenanceStrategies
-
-Tag
+`Tenancy`  <a name="cfn-ec2-spotfleet-spotplacement-tenancy"></a>
+The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of `dedicated` runs on single-tenant hardware. The `host` tenancy is not supported for Spot Instances.
+*Required*: No
+*Type*: String
+*Allowed values*: `dedicated | default | host`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

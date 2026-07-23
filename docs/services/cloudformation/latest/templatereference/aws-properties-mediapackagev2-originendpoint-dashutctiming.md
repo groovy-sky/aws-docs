@@ -2,70 +2,52 @@
 title: "AWS::MediaPackageV2::OriginEndpoint DashUtcTiming"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint DashUtcTiming
+<a name="aws-properties-mediapackagev2-originendpoint-dashutctiming"></a>
 
 Determines the type of UTC timing included in the DASH Media Presentation Description (MPD).
 
 ## Syntax
+<a name="aws-properties-mediapackagev2-originendpoint-dashutctiming-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackagev2-originendpoint-dashutctiming-syntax.json"></a>
 
-```json
-
+```
 {
-  "TimingMode" : String,
-  "TimingSource" : String
+  "[TimingMode](#cfn-mediapackagev2-originendpoint-dashutctiming-timingmode)" : {{String}},
+  "[TimingSource](#cfn-mediapackagev2-originendpoint-dashutctiming-timingsource)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackagev2-originendpoint-dashutctiming-syntax.yaml"></a>
 
-```yaml
-
-  TimingMode: String
-  TimingSource: String
-
+```
+  [TimingMode](#cfn-mediapackagev2-originendpoint-dashutctiming-timingmode): {{String}}
+  [TimingSource](#cfn-mediapackagev2-originendpoint-dashutctiming-timingsource): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackagev2-originendpoint-dashutctiming-properties"></a>
 
-`TimingMode`
-
+`TimingMode`  <a name="cfn-mediapackagev2-originendpoint-dashutctiming-timingmode"></a>
 The UTC timing mode.
+*Required*: No
+*Type*: String
+*Allowed values*: `HTTP_HEAD | HTTP_ISO | HTTP_XSDATE | UTC_DIRECT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HTTP_HEAD | HTTP_ISO | HTTP_XSDATE | UTC_DIRECT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimingSource`
-
+`TimingSource`  <a name="cfn-mediapackagev2-originendpoint-dashutctiming-timingsource"></a>
 The the method that the player uses to synchronize to coordinated universal time (UTC) wall clock time.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashTtmlConfiguration
-
-Encryption
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

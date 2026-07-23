@@ -2,78 +2,58 @@
 title: "AWS::CodeDeploy::DeploymentGroup TriggerConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup TriggerConfig
+<a name="aws-properties-codedeploy-deploymentgroup-triggerconfig"></a>
 
 Information about notification triggers for the deployment group.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentgroup-triggerconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentgroup-triggerconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "TriggerEvents" : [ String, ... ],
-  "TriggerName" : String,
-  "TriggerTargetArn" : String
+  "[TriggerEvents](#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents)" : {{[ String, ... ]}},
+  "[TriggerName](#cfn-codedeploy-deploymentgroup-triggerconfig-triggername)" : {{String}},
+  "[TriggerTargetArn](#cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentgroup-triggerconfig-syntax.yaml"></a>
 
-```yaml
-
-  TriggerEvents:
-    - String
-  TriggerName: String
-  TriggerTargetArn: String
-
+```
+  [TriggerEvents](#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents): {{
+    - String}}
+  [TriggerName](#cfn-codedeploy-deploymentgroup-triggerconfig-triggername): {{String}}
+  [TriggerTargetArn](#cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentgroup-triggerconfig-properties"></a>
 
-`TriggerEvents`
+`TriggerEvents`  <a name="cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents"></a>
+ The event type or types that trigger notifications.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The event type or types that trigger notifications.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TriggerName`
-
+`TriggerName`  <a name="cfn-codedeploy-deploymentgroup-triggerconfig-triggername"></a>
 The name of the notification trigger.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TriggerTargetArn`
-
-The Amazon Resource Name (ARN) of the Amazon Simple Notification Service topic through
-which notifications about deployment or instance events are sent.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrafficRoute
-
-Next
+`TriggerTargetArn`  <a name="cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn"></a>
+The Amazon Resource Name (ARN) of the Amazon Simple Notification Service topic through which notifications about deployment or instance events are sent.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,139 +2,112 @@
 title: "AWS::Panorama::Package"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Panorama::Package
+<a name="aws-resource-panorama-package"></a>
 
-###### Important
-
-End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. After May 31, 2026,
-you will no longer be able to access the AWS Panorama console or AWS Panorama resources. For more information, see
-[AWS Panorama end of support](../../../panorama/latest/dev/panorama-end-of-support.md).
+**Important**
+End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. After May 31, 2026, you will no longer be able to access the AWS Panorama console or AWS Panorama resources. For more information, see [AWS Panorama end of support](https://docs.aws.amazon.com/panorama/latest/dev/panorama-end-of-support.html).
 
 Creates a package and storage location in an Amazon S3 access point.
 
 ## Syntax
+<a name="aws-resource-panorama-package-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-panorama-package-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Panorama::Package",
   "Properties" : {
-      "PackageName" : String,
-      "StorageLocation" : StorageLocation,
-      "Tags" : [ Tag, ... ]
+      "[PackageName](#cfn-panorama-package-packagename)" : {{String}},
+      "[StorageLocation](#cfn-panorama-package-storagelocation)" : {{StorageLocation}},
+      "[Tags](#cfn-panorama-package-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-panorama-package-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Panorama::Package
 Properties:
-  PackageName: String
-  StorageLocation:
-    StorageLocation
-  Tags:
-    - Tag
-
+  [PackageName](#cfn-panorama-package-packagename): {{String}}
+  [StorageLocation](#cfn-panorama-package-storagelocation): {{
+    StorageLocation}}
+  [Tags](#cfn-panorama-package-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-panorama-package-properties"></a>
 
-`PackageName`
-
+`PackageName`  <a name="cfn-panorama-package-packagename"></a>
 A name for the package.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-\_]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-\_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StorageLocation`
-
+`StorageLocation`  <a name="cfn-panorama-package-storagelocation"></a>
 A storage location.
+*Required*: No
+*Type*: [StorageLocation](aws-properties-panorama-package-storagelocation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StorageLocation](aws-properties-panorama-package-storagelocation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-panorama-package-tags"></a>
 Tags for the package.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-panorama-package-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-panorama-package-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-panorama-package-return-values"></a>
 
 ### Ref
+<a name="aws-resource-panorama-package-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a unique identifier for this resource.
 
 ### Fn::GetAtt
+<a name="aws-resource-panorama-package-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-panorama-package-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The package's ARN.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 When the package was created.
 
-`PackageId`
-
+`PackageId`  <a name="PackageId-fn::getatt"></a>
 The package's ID.
 
-`StorageLocation.BinaryPrefixLocation`
-
+`StorageLocation.BinaryPrefixLocation`  <a name="StorageLocation.BinaryPrefixLocation-fn::getatt"></a>
 Property description not available.
 
-`StorageLocation.Bucket`
-
+`StorageLocation.Bucket`  <a name="StorageLocation.Bucket-fn::getatt"></a>
 Property description not available.
 
-`StorageLocation.GeneratedPrefixLocation`
-
+`StorageLocation.GeneratedPrefixLocation`  <a name="StorageLocation.GeneratedPrefixLocation-fn::getatt"></a>
 Property description not available.
 
-`StorageLocation.ManifestPrefixLocation`
-
+`StorageLocation.ManifestPrefixLocation`  <a name="StorageLocation.ManifestPrefixLocation-fn::getatt"></a>
 Property description not available.
 
-`StorageLocation.RepoPrefixLocation`
-
+`StorageLocation.RepoPrefixLocation`  <a name="StorageLocation.RepoPrefixLocation-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-StorageLocation
 
 All content copied from https://docs.aws.amazon.com/.

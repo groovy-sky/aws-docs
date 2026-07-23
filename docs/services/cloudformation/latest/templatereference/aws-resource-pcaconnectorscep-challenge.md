@@ -2,90 +2,76 @@
 title: "AWS::PCAConnectorSCEP::Challenge"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorSCEP::Challenge
+<a name="aws-resource-pcaconnectorscep-challenge"></a>
 
-For general-purpose connectors. Creates a _challenge password_ for the specified connector. The SCEP protocol uses a challenge password to authenticate a request before issuing a certificate from a certificate authority (CA). Your SCEP clients include the challenge password as part of their certificate request to Connector for SCEP. To retrieve the connector Amazon Resource Names (ARNs) for the connectors in your account, call [ListConnectors](../../../../reference/pca-connector-scep/latest/apireference/api-listconnectors.md).
+For general-purpose connectors. Creates a *challenge password* for the specified connector. The SCEP protocol uses a challenge password to authenticate a request before issuing a certificate from a certificate authority (CA). Your SCEP clients include the challenge password as part of their certificate request to Connector for SCEP. To retrieve the connector Amazon Resource Names (ARNs) for the connectors in your account, call [ListConnectors](https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/API_ListConnectors.html).
 
 To create additional challenge passwords for the connector, call `CreateChallenge` again. We recommend frequently rotating your challenge passwords.
 
 ## Syntax
+<a name="aws-resource-pcaconnectorscep-challenge-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-pcaconnectorscep-challenge-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::PCAConnectorSCEP::Challenge",
   "Properties" : {
-      "ConnectorArn" : String,
-      "Tags" : {Key: Value, ...}
+      "[ConnectorArn](#cfn-pcaconnectorscep-challenge-connectorarn)" : {{String}},
+      "[Tags](#cfn-pcaconnectorscep-challenge-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-pcaconnectorscep-challenge-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::PCAConnectorSCEP::Challenge
 Properties:
-  ConnectorArn: String
-  Tags:
-    Key: Value
-
+  [ConnectorArn](#cfn-pcaconnectorscep-challenge-connectorarn): {{String}}
+  [Tags](#cfn-pcaconnectorscep-challenge-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-pcaconnectorscep-challenge-properties"></a>
 
-`ConnectorArn`
-
+`ConnectorArn`  <a name="cfn-pcaconnectorscep-challenge-connectorarn"></a>
 The Amazon Resource Name (ARN) of the connector.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[a-z]+)*:pca-connector-scep:[a-z]+(-[a-z]+)+-[1-9]\d*:\d{12}:connector\/[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$`
+*Minimum*: `5`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[a-z]+)*:pca-connector-scep:[a-z]+(-[a-z]+)+-[1-9]\d*:\d{12}:connector\/[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$`
-
-_Minimum_: `5`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-pcaconnectorscep-challenge-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-pcaconnectorscep-challenge-return-values"></a>
 
 ### Ref
+<a name="aws-resource-pcaconnectorscep-challenge-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-pcaconnectorscep-challenge-return-values-fn--getatt"></a>
 
-`ChallengeArn`
+####
+<a name="aws-resource-pcaconnectorscep-challenge-return-values-fn--getatt-fn--getatt"></a>
 
+`ChallengeArn`  <a name="ChallengeArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the challenge.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Private Certificate Authority Connector for SCEP
-
-AWS::PCAConnectorSCEP::Connector
 
 All content copied from https://docs.aws.amazon.com/.

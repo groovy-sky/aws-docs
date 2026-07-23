@@ -2,85 +2,61 @@
 title: "AWS::IoT::TopicRule DynamoDBv2Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule DynamoDBv2Action
+<a name="aws-properties-iot-topicrule-dynamodbv2action"></a>
 
 Describes an action to write to a DynamoDB table.
 
-This DynamoDB action writes each attribute in the message payload into it's own
-column in the DynamoDB table.
+This DynamoDB action writes each attribute in the message payload into it's own column in the DynamoDB table.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-dynamodbv2action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-dynamodbv2action-syntax.json"></a>
 
-```json
-
+```
 {
-  "PutItem" : PutItemInput,
-  "RoleArn" : String
+  "[PutItem](#cfn-iot-topicrule-dynamodbv2action-putitem)" : {{PutItemInput}},
+  "[RoleArn](#cfn-iot-topicrule-dynamodbv2action-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-dynamodbv2action-syntax.yaml"></a>
 
-```yaml
-
-  PutItem:
-    PutItemInput
-  RoleArn: String
-
+```
+  [PutItem](#cfn-iot-topicrule-dynamodbv2action-putitem): {{
+    PutItemInput}}
+  [RoleArn](#cfn-iot-topicrule-dynamodbv2action-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-dynamodbv2action-properties"></a>
 
-`PutItem`
+`PutItem`  <a name="cfn-iot-topicrule-dynamodbv2action-putitem"></a>
+Specifies the DynamoDB table to which the message data will be written. For example:
+ `{ "dynamoDBv2": { "roleArn": "aws:iam:12341251:my-role" "putItem": { "tableName": "my-table" } } }`
+Each attribute in the message payload will be written to a separate column in the DynamoDB database.
+*Required*: No
+*Type*: [PutItemInput](aws-properties-iot-topicrule-putiteminput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the DynamoDB table to which the message data will be written. For
-example:
-
-`{ "dynamoDBv2": { "roleArn": "aws:iam:12341251:my-role" "putItem": { "tableName":
-            "my-table" } } }`
-
-Each attribute in the message payload will be written to a separate column in the
-DynamoDB database.
-
-_Required_: No
-
-_Type_: [PutItemInput](aws-properties-iot-topicrule-putiteminput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-dynamodbv2action-rolearn"></a>
 The ARN of the IAM role that grants access to the DynamoDB table.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [AWS SDK for C++](https://sdk.amazonaws.com/cpp/api/LATEST/class_aws_1_1_io_t_1_1_model_1_1_dynamo_d_bv2_action.html).
-
-- [AWS SDK for Go](../../../../reference/sdk-for-go/api/service/iot.md#DynamoDBv2Action).
-
-- [AWS SDK for Java](../../../../reference/awsjavasdk/latest/javadoc/com/amazonaws/services/iot/model/dynamodbv2action.md).
-
-- [AWS SDK for Ruby V2](../../../../reference/sdkforruby/api/aws/iot/types/dynamodbv2action.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamoDBAction
-
-ElasticsearchAction
+<a name="aws-properties-iot-topicrule-dynamodbv2action--seealso"></a>
++ [AWS SDK for C\+\+](https://sdk.amazonaws.com/cpp/api/LATEST/class_aws_1_1_io_t_1_1_model_1_1_dynamo_d_bv2_action.html).
++ [AWS SDK for Go](https://docs.aws.amazon.com/sdk-for-go/api/service/iot/#DynamoDBv2Action).
++ [AWS SDK for Java](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/iot/model/DynamoDBv2Action.html).
++ [AWS SDK for Ruby V2](https://docs.aws.amazon.com/sdkforruby/api/Aws/IoT/Types/DynamoDBv2Action.html).
 
 All content copied from https://docs.aws.amazon.com/.

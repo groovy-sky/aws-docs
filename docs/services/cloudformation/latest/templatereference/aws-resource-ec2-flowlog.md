@@ -2,278 +2,211 @@
 title: "AWS::EC2::FlowLog"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::FlowLog
+<a name="aws-resource-ec2-flowlog"></a>
 
-Specifies a VPC flow log that captures IP traffic for a specified network interface,
-subnet, or VPC. To view the log data, use Amazon CloudWatch Logs (CloudWatch Logs) to help
-troubleshoot connection issues. For example, you can use a flow log to investigate why
-certain traffic isn't reaching an instance, which can help you diagnose overly restrictive
-security group rules. For more information, see [VPC Flow Logs](../../../vpc/latest/userguide/flow-logs.md) in the
-_Amazon VPC User Guide_.
+Specifies a VPC flow log that captures IP traffic for a specified network interface, subnet, or VPC. To view the log data, use Amazon CloudWatch Logs (CloudWatch Logs) to help troubleshoot connection issues. For example, you can use a flow log to investigate why certain traffic isn't reaching an instance, which can help you diagnose overly restrictive security group rules. For more information, see [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) in the *Amazon VPC User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-flowlog-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-flowlog-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::FlowLog",
   "Properties" : {
-      "DeliverCrossAccountRole" : String,
-      "DeliverLogsPermissionArn" : String,
-      "DestinationOptions" : DestinationOptions,
-      "LogDestination" : String,
-      "LogDestinationType" : String,
-      "LogFormat" : String,
-      "LogGroupName" : String,
-      "MaxAggregationInterval" : Integer,
-      "ResourceId" : String,
-      "ResourceType" : String,
-      "Tags" : [ Tag, ... ],
-      "TrafficType" : String
+      "[DeliverCrossAccountRole](#cfn-ec2-flowlog-delivercrossaccountrole)" : {{String}},
+      "[DeliverLogsPermissionArn](#cfn-ec2-flowlog-deliverlogspermissionarn)" : {{String}},
+      "[DestinationOptions](#cfn-ec2-flowlog-destinationoptions)" : {{DestinationOptions}},
+      "[LogDestination](#cfn-ec2-flowlog-logdestination)" : {{String}},
+      "[LogDestinationType](#cfn-ec2-flowlog-logdestinationtype)" : {{String}},
+      "[LogFormat](#cfn-ec2-flowlog-logformat)" : {{String}},
+      "[LogGroupName](#cfn-ec2-flowlog-loggroupname)" : {{String}},
+      "[MaxAggregationInterval](#cfn-ec2-flowlog-maxaggregationinterval)" : {{Integer}},
+      "[ResourceId](#cfn-ec2-flowlog-resourceid)" : {{String}},
+      "[ResourceType](#cfn-ec2-flowlog-resourcetype)" : {{String}},
+      "[TagFieldSpecifications](#cfn-ec2-flowlog-tagfieldspecifications)" : {{[ TagFieldSpecification, ... ]}},
+      "[Tags](#cfn-ec2-flowlog-tags)" : {{[ Tag, ... ]}},
+      "[TrafficType](#cfn-ec2-flowlog-traffictype)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-flowlog-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::FlowLog
 Properties:
-  DeliverCrossAccountRole: String
-  DeliverLogsPermissionArn: String
-  DestinationOptions:
-    DestinationOptions
-  LogDestination: String
-  LogDestinationType: String
-  LogFormat: String
-  LogGroupName: String
-  MaxAggregationInterval: Integer
-  ResourceId: String
-  ResourceType: String
-  Tags:
-    - Tag
-  TrafficType: String
-
+  [DeliverCrossAccountRole](#cfn-ec2-flowlog-delivercrossaccountrole): {{String}}
+  [DeliverLogsPermissionArn](#cfn-ec2-flowlog-deliverlogspermissionarn): {{String}}
+  [DestinationOptions](#cfn-ec2-flowlog-destinationoptions): {{
+    DestinationOptions}}
+  [LogDestination](#cfn-ec2-flowlog-logdestination): {{String}}
+  [LogDestinationType](#cfn-ec2-flowlog-logdestinationtype): {{String}}
+  [LogFormat](#cfn-ec2-flowlog-logformat): {{String}}
+  [LogGroupName](#cfn-ec2-flowlog-loggroupname): {{String}}
+  [MaxAggregationInterval](#cfn-ec2-flowlog-maxaggregationinterval): {{Integer}}
+  [ResourceId](#cfn-ec2-flowlog-resourceid): {{String}}
+  [ResourceType](#cfn-ec2-flowlog-resourcetype): {{String}}
+  [TagFieldSpecifications](#cfn-ec2-flowlog-tagfieldspecifications): {{
+    - TagFieldSpecification}}
+  [Tags](#cfn-ec2-flowlog-tags): {{
+    - Tag}}
+  [TrafficType](#cfn-ec2-flowlog-traffictype): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-flowlog-properties"></a>
 
-`DeliverCrossAccountRole`
-
+`DeliverCrossAccountRole`  <a name="cfn-ec2-flowlog-delivercrossaccountrole"></a>
 The ARN of the IAM role that allows the service to publish flow logs across accounts.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DeliverLogsPermissionArn`
-
+`DeliverLogsPermissionArn`  <a name="cfn-ec2-flowlog-deliverlogspermissionarn"></a>
 The ARN of the IAM role that allows Amazon EC2 to publish flow logs to the log destination.
+This parameter is required if the destination type is `cloud-watch-logs`, or if the destination type is `kinesis-data-firehose` and the delivery stream and the resources to monitor are in different accounts.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-This parameter is required if the destination type is `cloud-watch-logs`,
-or if the destination type is `kinesis-data-firehose` and the delivery stream
-and the resources to monitor are in different accounts.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationOptions`
-
+`DestinationOptions`  <a name="cfn-ec2-flowlog-destinationoptions"></a>
 The destination options.
+*Required*: No
+*Type*: [DestinationOptions](aws-properties-ec2-flowlog-destinationoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DestinationOptions](aws-properties-ec2-flowlog-destinationoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogDestination`
-
+`LogDestination`  <a name="cfn-ec2-flowlog-logdestination"></a>
 The destination for the flow log data. The meaning of this parameter depends on the destination type.
++ If the destination type is `cloud-watch-logs`, specify the ARN of a CloudWatch Logs log group. For example:
 
-- If the destination type is `cloud-watch-logs`, specify the ARN of a CloudWatch Logs log group. For example:
+  arn:aws:logs:*region*:*account\_id*:log-group:*my\_group*
 
-arn:aws:logs: _region_: _account\_id_:log-group: _my\_group_
+  Alternatively, use the `LogGroupName` parameter.
++ If the destination type is `s3`, specify the ARN of an S3 bucket. For example:
 
-Alternatively, use the `LogGroupName` parameter.
+  arn:aws:s3:::*my\_bucket*/*my\_subfolder*/
 
-- If the destination type is `s3`, specify the ARN of an S3 bucket. For example:
+  The subfolder is optional. Note that you can't use `AWSLogs` as a subfolder name.
++ If the destination type is `kinesis-data-firehose`, specify the ARN of a Kinesis Data Firehose delivery stream. For example:
 
-arn:aws:s3::: _my\_bucket_/ _my\_subfolder_/
+  arn:aws:firehose:*region*:*account\_id*:deliverystream:*my\_stream*
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The subfolder is optional. Note that you can't use `AWSLogs` as a subfolder name.
-
-- If the destination type is `kinesis-data-firehose`, specify the ARN of a Kinesis Data Firehose delivery stream. For example:
-
-arn:aws:firehose: _region_: _account\_id_:deliverystream: _my\_stream_
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogDestinationType`
-
+`LogDestinationType`  <a name="cfn-ec2-flowlog-logdestinationtype"></a>
 The type of destination for the flow log data.
-
 Default: `cloud-watch-logs`
+*Required*: No
+*Type*: String
+*Allowed values*: `cloud-watch-logs | s3 | kinesis-data-firehose`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`LogFormat`  <a name="cfn-ec2-flowlog-logformat"></a>
+The fields to include in the flow log record, in the order in which they should appear. If you omit this parameter, the flow log is created using the default format. If you specify this parameter, you must include at least one field. For more information about the available fields, see [Flow log records](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html#flow-log-records) in the *Amazon VPC User Guide* or [Transit Gateway Flow Log records](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-flow-logs.html#flow-log-records) in the *AWS Transit Gateway Guide*.
+Specify the fields using the `${field-id}` format, separated by spaces.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `cloud-watch-logs | s3 | kinesis-data-firehose`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogFormat`
-
-The fields to include in the flow log record, in the order in which they should appear.
-If you omit this parameter, the flow log is created using the default format. If you specify
-this parameter, you must include at least one field. For more information about the available fields,
-see [Flow log\
-records](../../../vpc/latest/userguide/flow-logs.md#flow-log-records) in the _Amazon VPC User Guide_ or [Transit Gateway \
-Flow Log records](../../../vpc/latest/tgw/tgw-flow-logs.md#flow-log-records) in the _AWS Transit Gateway Guide_.
-
-Specify the fields using the `${field-id}` format, separated by
-spaces.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogGroupName`
-
+`LogGroupName`  <a name="cfn-ec2-flowlog-loggroupname"></a>
 The name of a new or existing CloudWatch Logs log group where Amazon EC2 publishes your flow logs.
-
 This parameter is valid only if the destination type is `cloud-watch-logs`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxAggregationInterval`
-
-The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record.
-The possible values are 60 seconds (1 minute) or 600 seconds (10 minutes).
-This parameter must be 60 seconds for transit gateway resource types.
-
-When a network interface is attached to a [Nitro-based\
-instance](../../../ec2/latest/instancetypes/ec2-nitro-instances.md), the aggregation interval is always 60 seconds or less, regardless
-of the value that you specify.
-
+`MaxAggregationInterval`  <a name="cfn-ec2-flowlog-maxaggregationinterval"></a>
+The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. The possible values are 60 seconds (1 minute) or 600 seconds (10 minutes). This parameter must be 60 seconds for transit gateway resource types.
+When a network interface is attached to a [Nitro-based instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html), the aggregation interval is always 60 seconds or less, regardless of the value that you specify.
 Default: 600
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ResourceId`  <a name="cfn-ec2-flowlog-resourceid"></a>
+The ID of the resource to monitor. For example, if the resource type is `VPC`, specify the ID of the VPC.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceId`
-
-The ID of the resource to monitor. For example, if the resource type is
-`VPC`, specify the ID of the VPC.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceType`
-
+`ResourceType`  <a name="cfn-ec2-flowlog-resourcetype"></a>
 The type of resource to monitor.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NetworkInterface | Subnet | VPC | TransitGateway | TransitGatewayAttachment | RegionalNatGateway`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`TagFieldSpecifications`  <a name="cfn-ec2-flowlog-tagfieldspecifications"></a>
+The tag configuration associated with the Flow Logs Amazon EC2 Tags feature fields in your custom log format.
+*Required*: No
+*Type*: Array of [TagFieldSpecification](aws-properties-ec2-flowlog-tagfieldspecification.md)
+*Minimum*: `1`
+*Maximum*: `3`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `NetworkInterface | Subnet | VPC | TransitGateway | TransitGatewayAttachment | RegionalNatGateway`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-flowlog-tags"></a>
 The tags to apply to the flow logs.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-flowlog-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-flowlog-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficType`
-
-The type of traffic to monitor (accepted traffic, rejected traffic, or all traffic).
-This parameter is not supported for transit gateway resource types. It is required for
-the other resource types.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ACCEPT | ALL | REJECT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`TrafficType`  <a name="cfn-ec2-flowlog-traffictype"></a>
+The type of traffic to monitor (accepted traffic, rejected traffic, or all traffic). This parameter is not supported for transit gateway resource types. It is required for the other resource types.
+*Required*: No
+*Type*: String
+*Allowed values*: `ACCEPT | ALL | REJECT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-flowlog-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-flowlog-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the flow log ID, such as
-`fl-123456abc123abc1`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the flow log ID, such as `fl-123456abc123abc1`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-flowlog-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-flowlog-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the flow log. For example, `fl-123456abc123abc1`.
 
 ## Examples
+<a name="aws-resource-ec2-flowlog--examples"></a>
 
-- [Publish a flow log to CloudWatch Logs to monitor all traffic](#aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic)
-
-- [Publish a custom format flow log to CloudWatch Logs for REJECT traffic](#aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic)
-
-- [Publish a custom format flow log to Amazon S3 for ACCEPT traffic](#aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic)
+**Topics**
++ [Publish a flow log to CloudWatch Logs to monitor all traffic](#aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic)
++ [Publish a custom format flow log to CloudWatch Logs for REJECT traffic](#aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic)
++ [Publish a custom format flow log to Amazon S3 for ACCEPT traffic](#aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic)
 
 ### Publish a flow log to CloudWatch Logs to monitor all traffic
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic"></a>
 
-The following example creates a flow log for the specified VPC, and captures all
-traffic types. Amazon EC2 publishes the logs to the `FlowLogsGroup` log
-group.
+The following example creates a flow log for the specified VPC, and captures all traffic types. Amazon EC2 publishes the logs to the `FlowLogsGroup` log group.
 
 #### JSON
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic--json"></a>
 
-```json
-
+```
 {
   "MyFlowLog": {
     "Type": "AWS::EC2::FlowLog",
@@ -296,9 +229,9 @@ group.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic--yaml"></a>
 
-```yaml
-
+```
 MyFlowLog:
   Type: AWS::EC2::FlowLog
   Properties:
@@ -310,18 +243,14 @@ MyFlowLog:
 ```
 
 ### Publish a custom format flow log to CloudWatch Logs for REJECT traffic
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic"></a>
 
-The following example creates a flow log for the specified subnet and captures
-REJECT traffic. The flow log uses a custom log format (the `LogFormat`
-property uses the `${field-id}` format, separated by spaces). Amazon EC2
-aggregates the logs over 60 second intervals, and publishes the logs to the
-`FlowLogsGroup` log group. The flow log is created with two
-tags.
+The following example creates a flow log for the specified subnet and captures REJECT traffic. The flow log uses a custom log format (the `LogFormat` property uses the `${field-id}` format, separated by spaces). Amazon EC2 aggregates the logs over 60 second intervals, and publishes the logs to the `FlowLogsGroup` log group. The flow log is created with two tags.
 
 #### JSON
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic--json"></a>
 
-```json
-
+```
 {
   "MyDetailedFlowLogDeliveringToCloudWatchLogs": {
     "Type": "AWS::EC2::FlowLog",
@@ -356,9 +285,9 @@ tags.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic--yaml"></a>
 
-```yaml
-
+```
 MyDetailedFlowLogDeliveringToCloudWatchLogs:
   Type: AWS::EC2::FlowLog
   Properties:
@@ -377,19 +306,14 @@ MyDetailedFlowLogDeliveringToCloudWatchLogs:
 ```
 
 ### Publish a custom format flow log to Amazon S3 for ACCEPT traffic
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic"></a>
 
-The following example creates a flow log for the specified subnet and captures
-ACCEPT traffic. The flow log uses a custom log format (the `LogFormat`
-property uses the `${field-id}` format, separated by spaces). Amazon EC2
-aggregates the logs over 60 second intervals, and publishes the logs to an Amazon S3
-bucket that's referenced by its ARN, `MyS3Bucket.Arn`. The logs are
-published in parquet format in Hive-compatible prefixes partitioned on an hourly basis.
-The flow log is created with two tags.
+The following example creates a flow log for the specified subnet and captures ACCEPT traffic. The flow log uses a custom log format (the `LogFormat` property uses the `${field-id}` format, separated by spaces). Amazon EC2 aggregates the logs over 60 second intervals, and publishes the logs to an Amazon S3 bucket that's referenced by its ARN, `MyS3Bucket.Arn`. The logs are published in parquet format in Hive-compatible prefixes partitioned on an hourly basis. The flow log is created with two tags.
 
 #### JSON
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic--json"></a>
 
-```json
-
+```
 {
   "MyFlowLogDeliveringToS3": {
     "Type": "AWS::EC2::FlowLog",
@@ -429,9 +353,9 @@ The flow log is created with two tags.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic--yaml"></a>
 
-```yaml
-
+```
 MyFlowLogDeliveringToS3:
   Type: AWS::EC2::FlowLog
   Properties:
@@ -452,11 +376,5 @@ MyFlowLogDeliveringToS3:
       - Key: Purpose
         Value: AcceptTraffic
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::EnclaveCertificateIamRoleAssociation
-
-DestinationOptions
 
 All content copied from https://docs.aws.amazon.com/.

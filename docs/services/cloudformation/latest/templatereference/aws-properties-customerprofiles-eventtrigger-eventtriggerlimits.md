@@ -2,72 +2,52 @@
 title: "AWS::CustomerProfiles::EventTrigger EventTriggerLimits"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventTrigger EventTriggerLimits
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits"></a>
 
-Defines limits controlling whether an event triggers the destination, based on
-ingestion latency and the number of invocations per profile over specific time
-periods.
+Defines limits controlling whether an event triggers the destination, based on ingestion latency and the number of invocations per profile over specific time periods.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventExpiration" : Integer,
-  "Periods" : [ Period, ... ]
+  "[EventExpiration](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-eventexpiration)" : {{Integer}},
+  "[Periods](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-periods)" : {{[ Period, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits-syntax.yaml"></a>
 
-```yaml
-
-  EventExpiration: Integer
-  Periods:
-    - Period
-
+```
+  [EventExpiration](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-eventexpiration): {{Integer}}
+  [Periods](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-periods): {{
+    - Period}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits-properties"></a>
 
-`EventExpiration`
+`EventExpiration`  <a name="cfn-customerprofiles-eventtrigger-eventtriggerlimits-eventexpiration"></a>
+Specifies that an event will only trigger the destination if it is processed within a certain latency period.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies that an event will only trigger the destination if it is processed within a
-certain latency period.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Periods`
-
+`Periods`  <a name="cfn-customerprofiles-eventtrigger-eventtriggerlimits-periods"></a>
 A list of time periods during which the limits apply.
-
-_Required_: No
-
-_Type_: Array of [Period](aws-properties-customerprofiles-eventtrigger-period.md)
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EventTriggerDimension
-
-ObjectAttribute
+*Required*: No
+*Type*: Array of [Period](aws-properties-customerprofiles-eventtrigger-period.md)
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

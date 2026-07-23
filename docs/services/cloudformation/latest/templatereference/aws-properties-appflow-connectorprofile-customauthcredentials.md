@@ -2,75 +2,55 @@
 title: "AWS::AppFlow::ConnectorProfile CustomAuthCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile CustomAuthCredentials
+<a name="aws-properties-appflow-connectorprofile-customauthcredentials"></a>
 
 The custom credentials required for custom authentication.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-customauthcredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-customauthcredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "CredentialsMap" : {Key: Value, ...},
-  "CustomAuthenticationType" : String
+  "[CredentialsMap](#cfn-appflow-connectorprofile-customauthcredentials-credentialsmap)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[CustomAuthenticationType](#cfn-appflow-connectorprofile-customauthcredentials-customauthenticationtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-customauthcredentials-syntax.yaml"></a>
 
-```yaml
-
-  CredentialsMap:
-    Key: Value
-  CustomAuthenticationType: String
-
+```
+  [CredentialsMap](#cfn-appflow-connectorprofile-customauthcredentials-credentialsmap): {{
+    {{Key}}: {{Value}}}}
+  [CustomAuthenticationType](#cfn-appflow-connectorprofile-customauthcredentials-customauthenticationtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-customauthcredentials-properties"></a>
 
-`CredentialsMap`
-
+`CredentialsMap`  <a name="cfn-appflow-connectorprofile-customauthcredentials-credentialsmap"></a>
 A map that holds custom authentication credentials.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\w]{1,128}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\w]{1,128}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomAuthenticationType`
-
+`CustomAuthenticationType`  <a name="cfn-appflow-connectorprofile-customauthcredentials-customauthenticationtype"></a>
 The custom authentication type that the connector uses.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectorProfileProperties
-
-CustomConnectorProfileCredentials
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

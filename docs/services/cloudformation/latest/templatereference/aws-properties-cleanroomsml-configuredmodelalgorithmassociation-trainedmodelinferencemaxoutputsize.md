@@ -2,70 +2,52 @@
 title: "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation TrainedModelInferenceMaxOutputSize"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation TrainedModelInferenceMaxOutputSize
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize"></a>
 
 Information about the maximum output size for a trained model inference job.
 
 ## Syntax
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-syntax.json"></a>
 
-```json
-
+```
 {
-  "Unit" : String,
-  "Value" : Number
+  "[Unit](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-unit)" : {{String}},
+  "[Value](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-value)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-syntax.yaml"></a>
 
-```yaml
-
-  Unit: String
-  Value: Number
-
+```
+  [Unit](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-unit): {{String}}
+  [Value](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-value): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-properties"></a>
 
-`Unit`
-
+`Unit`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-unit"></a>
 The measurement unit to use.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GB`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GB`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize-value"></a>
 The maximum output size value.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrainedModelInferenceJobsConfigurationPolicy
-
-TrainedModelsConfigurationPolicy
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

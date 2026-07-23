@@ -2,203 +2,164 @@
 title: "AWS::Connect::HoursOfOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::HoursOfOperation
+<a name="aws-resource-connect-hoursofoperation"></a>
 
 Specifies hours of operation.
 
 ## Syntax
+<a name="aws-resource-connect-hoursofoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-hoursofoperation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::HoursOfOperation",
   "Properties" : {
-      "ChildHoursOfOperations" : [ HoursOfOperationsIdentifier, ... ],
-      "Config" : [ HoursOfOperationConfig, ... ],
-      "Description" : String,
-      "HoursOfOperationOverrides" : [ HoursOfOperationOverride, ... ],
-      "InstanceArn" : String,
-      "Name" : String,
-      "ParentHoursOfOperations" : [ HoursOfOperationsIdentifier, ... ],
-      "Tags" : [ Tag, ... ],
-      "TimeZone" : String
+      "[ChildHoursOfOperations](#cfn-connect-hoursofoperation-childhoursofoperations)" : {{[ HoursOfOperationsIdentifier, ... ]}},
+      "[Config](#cfn-connect-hoursofoperation-config)" : {{[ HoursOfOperationConfig, ... ]}},
+      "[Description](#cfn-connect-hoursofoperation-description)" : {{String}},
+      "[HoursOfOperationOverrides](#cfn-connect-hoursofoperation-hoursofoperationoverrides)" : {{[ HoursOfOperationOverride, ... ]}},
+      "[InstanceArn](#cfn-connect-hoursofoperation-instancearn)" : {{String}},
+      "[Name](#cfn-connect-hoursofoperation-name)" : {{String}},
+      "[ParentHoursOfOperations](#cfn-connect-hoursofoperation-parenthoursofoperations)" : {{[ HoursOfOperationsIdentifier, ... ]}},
+      "[Tags](#cfn-connect-hoursofoperation-tags)" : {{[ Tag, ... ]}},
+      "[TimeZone](#cfn-connect-hoursofoperation-timezone)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-hoursofoperation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::HoursOfOperation
 Properties:
-  ChildHoursOfOperations:
-    - HoursOfOperationsIdentifier
-  Config:
-    - HoursOfOperationConfig
-  Description: String
-  HoursOfOperationOverrides:
-    - HoursOfOperationOverride
-  InstanceArn: String
-  Name: String
-  ParentHoursOfOperations:
-    - HoursOfOperationsIdentifier
-  Tags:
-    - Tag
-  TimeZone: String
-
+  [ChildHoursOfOperations](#cfn-connect-hoursofoperation-childhoursofoperations): {{
+    - HoursOfOperationsIdentifier}}
+  [Config](#cfn-connect-hoursofoperation-config): {{
+    - HoursOfOperationConfig}}
+  [Description](#cfn-connect-hoursofoperation-description): {{String}}
+  [HoursOfOperationOverrides](#cfn-connect-hoursofoperation-hoursofoperationoverrides): {{
+    - HoursOfOperationOverride}}
+  [InstanceArn](#cfn-connect-hoursofoperation-instancearn): {{String}}
+  [Name](#cfn-connect-hoursofoperation-name): {{String}}
+  [ParentHoursOfOperations](#cfn-connect-hoursofoperation-parenthoursofoperations): {{
+    - HoursOfOperationsIdentifier}}
+  [Tags](#cfn-connect-hoursofoperation-tags): {{
+    - Tag}}
+  [TimeZone](#cfn-connect-hoursofoperation-timezone): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-hoursofoperation-properties"></a>
 
-`ChildHoursOfOperations`
-
+`ChildHoursOfOperations`  <a name="cfn-connect-hoursofoperation-childhoursofoperations"></a>
 Information about child hours of operations.
+*Required*: No
+*Type*: Array of [HoursOfOperationsIdentifier](aws-properties-connect-hoursofoperation-hoursofoperationsidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [HoursOfOperationsIdentifier](aws-properties-connect-hoursofoperation-hoursofoperationsidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Config`
-
+`Config`  <a name="cfn-connect-hoursofoperation-config"></a>
 Configuration information for the hours of operation.
+*Required*: Yes
+*Type*: Array of [HoursOfOperationConfig](aws-properties-connect-hoursofoperation-hoursofoperationconfig.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [HoursOfOperationConfig](aws-properties-connect-hoursofoperation-hoursofoperationconfig.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-connect-hoursofoperation-description"></a>
 The description for the hours of operation.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HoursOfOperationOverrides`
-
+`HoursOfOperationOverrides`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverrides"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [HoursOfOperationOverride](aws-properties-connect-hoursofoperation-hoursofoperationoverride.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [HoursOfOperationOverride](aws-properties-connect-hoursofoperation-hoursofoperationoverride.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-hoursofoperation-instancearn"></a>
 The Amazon Resource Name (ARN) of the instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-hoursofoperation-name"></a>
 The name for the hours of operation.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParentHoursOfOperations`
-
+`ParentHoursOfOperations`  <a name="cfn-connect-hoursofoperation-parenthoursofoperations"></a>
 Information about parent hours of operations.
+*Required*: No
+*Type*: Array of [HoursOfOperationsIdentifier](aws-properties-connect-hoursofoperation-hoursofoperationsidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [HoursOfOperationsIdentifier](aws-properties-connect-hoursofoperation-hoursofoperationsidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-connect-hoursofoperation-tags"></a>
 The tags used to organize, track, or control access for this resource. For example, { "Tags": {"key1":"value1", "key2":"value2"} }.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-hoursofoperation-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-connect-hoursofoperation-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeZone`
-
+`TimeZone`  <a name="cfn-connect-hoursofoperation-timezone"></a>
 The time zone for the hours of operation.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-connect-hoursofoperation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-hoursofoperation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the hours of operation. For example:
 
-`{ "Ref": "myHoursOfOperation" }`
+ `{ "Ref": "myHoursOfOperation" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-hoursofoperation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`HoursOfOperationArn`
+####
+<a name="aws-resource-connect-hoursofoperation-return-values-fn--getatt-fn--getatt"></a>
 
+`HoursOfOperationArn`  <a name="HoursOfOperationArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the hours of operation.
 
 ## Examples
+<a name="aws-resource-connect-hoursofoperation--examples"></a>
 
 ### Specify an hours of operation resource
+<a name="aws-resource-connect-hoursofoperation--examples--Specify_an_hours_of_operation_resource"></a>
 
-The following example specifies an hours of operation resource for an Amazon Connect instance. In the following example, the hours of operation
-claimed operates in Sunday 10:01 to 11:59 AM Pacific Standard Time.
+The following example specifies an hours of operation resource for an Connect Customer instance. In the following example, the hours of operation claimed operates in Sunday 10:01 to 11:59 AM Pacific Standard Time.
 
 #### YAML
+<a name="aws-resource-connect-hoursofoperation--examples--Specify_an_hours_of_operation_resource--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
-Description: Specifies an hours of operation for an Amazon Connect instance
+Description: Specifies an hours of operation for an Connect Customer instance
 Resources:
   HoursOfOperation:
     Type: 'AWS::Connect::HoursOfOperation'
@@ -219,11 +180,5 @@ Resources:
         - Key: 'tagKey'
           Value: 'tagValue'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-HoursOfOperationConfig
 
 All content copied from https://docs.aws.amazon.com/.

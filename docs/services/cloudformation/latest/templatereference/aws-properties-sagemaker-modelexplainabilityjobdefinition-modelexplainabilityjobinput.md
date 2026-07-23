@@ -2,66 +2,51 @@
 title: "AWS::SageMaker::ModelExplainabilityJobDefinition ModelExplainabilityJobInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelExplainabilityJobDefinition ModelExplainabilityJobInput
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput"></a>
 
 Inputs for the model explainability job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchTransformInput" : BatchTransformInput,
-  "EndpointInput" : EndpointInput
+  "[BatchTransformInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-batchtransforminput)" : {{BatchTransformInput}},
+  "[EndpointInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-endpointinput)" : {{EndpointInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-syntax.yaml"></a>
 
-```yaml
-
-  BatchTransformInput:
-    BatchTransformInput
-  EndpointInput:
-    EndpointInput
-
+```
+  [BatchTransformInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-batchtransforminput): {{
+    BatchTransformInput}}
+  [EndpointInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-endpointinput): {{
+    EndpointInput}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-properties"></a>
 
-`BatchTransformInput`
-
+`BatchTransformInput`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-batchtransforminput"></a>
 Input object for the batch transform job.
+*Required*: No
+*Type*: [BatchTransformInput](aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [BatchTransformInput](aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EndpointInput`
-
+`EndpointInput`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-endpointinput"></a>
 Input object for the endpoint
-
-_Required_: No
-
-_Type_: [EndpointInput](aws-properties-sagemaker-modelexplainabilityjobdefinition-endpointinput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelExplainabilityBaselineConfig
-
-MonitoringOutput
+*Required*: No
+*Type*: [EndpointInput](aws-properties-sagemaker-modelexplainabilityjobdefinition-endpointinput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

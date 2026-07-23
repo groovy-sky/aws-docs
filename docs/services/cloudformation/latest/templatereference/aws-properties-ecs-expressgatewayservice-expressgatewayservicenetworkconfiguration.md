@@ -2,66 +2,51 @@
 title: "AWS::ECS::ExpressGatewayService ExpressGatewayServiceNetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::ExpressGatewayService ExpressGatewayServiceNetworkConfiguration
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration"></a>
 
 The network configuration for an Express service. By default, an Express service utilizes subnets and security groups associated with the default VPC.
 
 ## Syntax
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroups" : [ String, ... ],
-  "Subnets" : [ String, ... ]
+  "[SecurityGroups](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-securitygroups)" : {{[ String, ... ]}},
+  "[Subnets](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-subnets)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroups:
-    - String
-  Subnets:
-    - String
-
+```
+  [SecurityGroups](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-securitygroups): {{
+    - String}}
+  [Subnets](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-subnets): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-properties"></a>
 
-`SecurityGroups`
-
+`SecurityGroups`  <a name="cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-securitygroups"></a>
 The IDs of the security groups associated with the Express service.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subnets`
-
+`Subnets`  <a name="cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-subnets"></a>
 The IDs of the subnets associated with the Express service.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExpressGatewayServiceConfiguration
-
-ExpressGatewayServiceStatus
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

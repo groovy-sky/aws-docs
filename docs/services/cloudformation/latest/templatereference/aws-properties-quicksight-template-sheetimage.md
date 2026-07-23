@@ -2,143 +2,101 @@
 title: "AWS::QuickSight::Template SheetImage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SheetImage
+<a name="aws-properties-quicksight-template-sheetimage"></a>
 
 An image that is located on a sheet.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sheetimage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sheetimage-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ ImageCustomAction, ... ],
-  "ImageContentAltText" : String,
-  "Interactions" : ImageInteractionOptions,
-  "Scaling" : SheetImageScalingConfiguration,
-  "SheetImageId" : String,
-  "Source" : SheetImageSource,
-  "Tooltip" : SheetImageTooltipConfiguration
+  "[Actions](#cfn-quicksight-template-sheetimage-actions)" : {{[ ImageCustomAction, ... ]}},
+  "[ImageContentAltText](#cfn-quicksight-template-sheetimage-imagecontentalttext)" : {{String}},
+  "[Interactions](#cfn-quicksight-template-sheetimage-interactions)" : {{ImageInteractionOptions}},
+  "[Scaling](#cfn-quicksight-template-sheetimage-scaling)" : {{SheetImageScalingConfiguration}},
+  "[SheetImageId](#cfn-quicksight-template-sheetimage-sheetimageid)" : {{String}},
+  "[Source](#cfn-quicksight-template-sheetimage-source)" : {{SheetImageSource}},
+  "[Tooltip](#cfn-quicksight-template-sheetimage-tooltip)" : {{SheetImageTooltipConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sheetimage-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - ImageCustomAction
-  ImageContentAltText: String
-  Interactions:
-    ImageInteractionOptions
-  Scaling:
-    SheetImageScalingConfiguration
-  SheetImageId: String
-  Source:
-    SheetImageSource
-  Tooltip:
-    SheetImageTooltipConfiguration
-
+```
+  [Actions](#cfn-quicksight-template-sheetimage-actions): {{
+    - ImageCustomAction}}
+  [ImageContentAltText](#cfn-quicksight-template-sheetimage-imagecontentalttext): {{String}}
+  [Interactions](#cfn-quicksight-template-sheetimage-interactions): {{
+    ImageInteractionOptions}}
+  [Scaling](#cfn-quicksight-template-sheetimage-scaling): {{
+    SheetImageScalingConfiguration}}
+  [SheetImageId](#cfn-quicksight-template-sheetimage-sheetimageid): {{String}}
+  [Source](#cfn-quicksight-template-sheetimage-source): {{
+    SheetImageSource}}
+  [Tooltip](#cfn-quicksight-template-sheetimage-tooltip): {{
+    SheetImageTooltipConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sheetimage-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-quicksight-template-sheetimage-actions"></a>
 A list of custom actions that are configured for an image.
+*Required*: No
+*Type*: Array of [ImageCustomAction](aws-properties-quicksight-template-imagecustomaction.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ImageCustomAction](aws-properties-quicksight-template-imagecustomaction.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageContentAltText`
-
+`ImageContentAltText`  <a name="cfn-quicksight-template-sheetimage-imagecontentalttext"></a>
 The alt text for the image.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-sheetimage-interactions"></a>
 The general image interactions setup for an image.
+*Required*: No
+*Type*: [ImageInteractionOptions](aws-properties-quicksight-template-imageinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ImageInteractionOptions](aws-properties-quicksight-template-imageinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scaling`
-
+`Scaling`  <a name="cfn-quicksight-template-sheetimage-scaling"></a>
 Determines how the image is scaled.
+*Required*: No
+*Type*: [SheetImageScalingConfiguration](aws-properties-quicksight-template-sheetimagescalingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SheetImageScalingConfiguration](aws-properties-quicksight-template-sheetimagescalingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetImageId`
-
+`SheetImageId`  <a name="cfn-quicksight-template-sheetimage-sheetimageid"></a>
 The ID of the sheet image.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-quicksight-template-sheetimage-source"></a>
 The source of the image.
+*Required*: Yes
+*Type*: [SheetImageSource](aws-properties-quicksight-template-sheetimagesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SheetImageSource](aws-properties-quicksight-template-sheetimagesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-template-sheetimage-tooltip"></a>
 The tooltip to be shown when hovering over the image.
-
-_Required_: No
-
-_Type_: [SheetImageTooltipConfiguration](aws-properties-quicksight-template-sheetimagetooltipconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetElementRenderingRule
-
-SheetImageScalingConfiguration
+*Required*: No
+*Type*: [SheetImageTooltipConfiguration](aws-properties-quicksight-template-sheetimagetooltipconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,167 +2,131 @@
 title: "AWS::CodeGuruProfiler::ProfilingGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeGuruProfiler::ProfilingGroup
+<a name="aws-resource-codeguruprofiler-profilinggroup"></a>
 
 Creates a profiling group.
 
 ## Syntax
+<a name="aws-resource-codeguruprofiler-profilinggroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codeguruprofiler-profilinggroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties" : {
-      "AgentPermissions" : AgentPermissions,
-      "AnomalyDetectionNotificationConfiguration" : [ Channel, ... ],
-      "ComputePlatform" : String,
-      "ProfilingGroupName" : String,
-      "Tags" : [ Tag, ... ]
+      "[AgentPermissions](#cfn-codeguruprofiler-profilinggroup-agentpermissions)" : {{AgentPermissions}},
+      "[AnomalyDetectionNotificationConfiguration](#cfn-codeguruprofiler-profilinggroup-anomalydetectionnotificationconfiguration)" : {{[ Channel, ... ]}},
+      "[ComputePlatform](#cfn-codeguruprofiler-profilinggroup-computeplatform)" : {{String}},
+      "[ProfilingGroupName](#cfn-codeguruprofiler-profilinggroup-profilinggroupname)" : {{String}},
+      "[Tags](#cfn-codeguruprofiler-profilinggroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codeguruprofiler-profilinggroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeGuruProfiler::ProfilingGroup
 Properties:
-  AgentPermissions:
-    AgentPermissions
-  AnomalyDetectionNotificationConfiguration:
-    - Channel
-  ComputePlatform: String
-  ProfilingGroupName: String
-  Tags:
-    - Tag
-
+  [AgentPermissions](#cfn-codeguruprofiler-profilinggroup-agentpermissions): {{
+    AgentPermissions}}
+  [AnomalyDetectionNotificationConfiguration](#cfn-codeguruprofiler-profilinggroup-anomalydetectionnotificationconfiguration): {{
+    - Channel}}
+  [ComputePlatform](#cfn-codeguruprofiler-profilinggroup-computeplatform): {{String}}
+  [ProfilingGroupName](#cfn-codeguruprofiler-profilinggroup-profilinggroupname): {{String}}
+  [Tags](#cfn-codeguruprofiler-profilinggroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-codeguruprofiler-profilinggroup-properties"></a>
 
-`AgentPermissions`
+`AgentPermissions`  <a name="cfn-codeguruprofiler-profilinggroup-agentpermissions"></a>
+The agent permissions attached to this profiling group. This action group grants `ConfigureAgent` and `PostAgentProfile` permissions to perform actions required by the profiling agent. The Json consists of key `Principals`.
+*Principals*: A list of string ARNs for the roles and users you want to grant access to the profiling group. Wildcards are not supported in the ARNs. You are allowed to provide up to 50 ARNs. An empty list is not permitted. This is a required key.
+For more information, see [Resource-based policies in CodeGuru Profiler](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/resource-based-policies.html) in the *Amazon CodeGuru Profiler user guide*, [ConfigureAgent](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html), and [PostAgentProfile](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAgentProfile.html).
+*Required*: No
+*Type*: [AgentPermissions](aws-properties-codeguruprofiler-profilinggroup-agentpermissions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The agent permissions attached to this profiling group. This action group grants
-`ConfigureAgent` and `PostAgentProfile` permissions to perform
-actions required by the profiling agent. The Json consists of key
-`Principals`.
-
-_Principals_: A list of string ARNs for the roles and users you want
-to grant access to the profiling group. Wildcards are not supported in the ARNs. You are
-allowed to provide up to 50 ARNs. An empty list is not permitted. This is a required key.
-
-For more information, see [Resource-based policies\
-in CodeGuru Profiler](../../../codeguru/latest/profiler-ug/resource-based-policies.md) in the _Amazon CodeGuru Profiler user_
-_guide_, [ConfigureAgent](../../../codeguru/latest/profiler-api/api-configureagent.md), and
-[PostAgentProfile](../../../codeguru/latest/profiler-api/api-postagentprofile.md).
-
-_Required_: No
-
-_Type_: [AgentPermissions](aws-properties-codeguruprofiler-profilinggroup-agentpermissions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AnomalyDetectionNotificationConfiguration`
-
+`AnomalyDetectionNotificationConfiguration`  <a name="cfn-codeguruprofiler-profilinggroup-anomalydetectionnotificationconfiguration"></a>
 Adds anomaly notifications for a profiling group.
+*Required*: No
+*Type*: Array of [Channel](aws-properties-codeguruprofiler-profilinggroup-channel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ComputePlatform`  <a name="cfn-codeguruprofiler-profilinggroup-computeplatform"></a>
+ The compute platform of the profiling group. Use `AWSLambda` if your application runs on AWS Lambda. Use `Default` if your application runs on a compute platform that is not AWS Lambda, such an Amazon EC2 instance, an on-premises server, or a different platform. If not specified, `Default` is used. This property is immutable.
+*Required*: No
+*Type*: String
+*Allowed values*: `Default | AWSLambda`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Array of [Channel](aws-properties-codeguruprofiler-profilinggroup-channel.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComputePlatform`
-
-The compute platform of the profiling group. Use `AWSLambda` if your
-application runs on AWS Lambda. Use `Default` if your application runs on a
-compute platform that is not AWS Lambda, such an Amazon EC2 instance, an on-premises
-server, or a different platform. If not specified, `Default` is used. This
-property is immutable.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Default | AWSLambda`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfilingGroupName`
-
+`ProfilingGroupName`  <a name="cfn-codeguruprofiler-profilinggroup-profilinggroupname"></a>
 The name of the profiling group.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A list of tags to add to the created profiling group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codeguruprofiler-profilinggroup-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-codeguruprofiler-profilinggroup-tags"></a>
+ A list of tags to add to the created profiling group.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codeguruprofiler-profilinggroup-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codeguruprofiler-profilinggroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codeguruprofiler-profilinggroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the profiling group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-codeguruprofiler-profilinggroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-codeguruprofiler-profilinggroup-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The full Amazon Resource Name (ARN) for that profiling group.
 
 ## Examples
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples"></a>
 
-- [CodeGuru Profiler profiling group resource configuration](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration)
-
-- [CodeGuru Profiler profiling group resource with compute platform](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform)
-
-- [CodeGuru Profiler profiling group resource with notifications](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications)
-
-- [CodeGuru Profiler profiling group configuration](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration)
+**Topics**
++ [CodeGuru Profiler profiling group resource configuration](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration)
++ [CodeGuru Profiler profiling group resource with compute platform](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform)
++ [CodeGuru Profiler profiling group resource with notifications](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications)
++ [CodeGuru Profiler profiling group configuration](#aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration)
 
 ### CodeGuru Profiler profiling group resource configuration
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration"></a>
 
-The following is an example of the profiling group resource with the profiling
-group name and agent permissions properties.
+The following is an example of the profiling group resource with the profiling group name and agent permissions properties.
 
 #### JSON
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration--json"></a>
 
-```json
-
+```
 "MyProfilingGroupWithAgentPermissions": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -175,13 +139,12 @@ group name and agent permissions properties.
     }
   }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration--yaml"></a>
 
-```yaml
-
+```
 MyProfilingGroupWithAgentPermissions:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -193,13 +156,14 @@ MyProfilingGroupWithAgentPermissions:
 ```
 
 ### CodeGuru Profiler profiling group resource with compute platform
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform"></a>
 
 The following is an example of the profiling group resource that runs on AWS Lambda.
 
 #### JSON
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform--json"></a>
 
-```json
-
+```
 "MyProfilingGroupWithComputePlatform": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -210,9 +174,9 @@ The following is an example of the profiling group resource that runs on AWS Lam
 ```
 
 #### YAML
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform--yaml"></a>
 
-```yaml
-
+```
 MyProfilingGroupWithComputePlatform:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -221,14 +185,14 @@ MyProfilingGroupWithComputePlatform:
 ```
 
 ### CodeGuru Profiler profiling group resource with notifications
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications"></a>
 
-The following is an example of the a notification configuration for a profiling
-group.
+The following is an example of the a notification configuration for a profiling group.
 
 #### JSON
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications--json"></a>
 
-```json
-
+```
 "MyProfilingGroupWithNotificationChannelConfiguration": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -244,9 +208,9 @@ group.
 ```
 
 #### YAML
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications--yaml"></a>
 
-```yaml
-
+```
 MyProfilingGroupWithNotificationChannelConfiguration:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -257,15 +221,14 @@ MyProfilingGroupWithNotificationChannelConfiguration:
 ```
 
 ### CodeGuru Profiler profiling group configuration
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration"></a>
 
-The following is an example of a profiling group that runs on AWS Lambda. This
-profiling group has enabled agent permissions. Notifications have also been
-configured with `AnomalyDetectionConfiguration`.
+The following is an example of a profiling group that runs on AWS Lambda. This profiling group has enabled agent permissions. Notifications have also been configured with `AnomalyDetectionConfiguration`.
 
 #### JSON
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration--json"></a>
 
-```json
-
+```
 "MyProfilingGroupWithAgentPermissions": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -288,9 +251,9 @@ configured with `AnomalyDetectionConfiguration`.
 ```
 
 #### YAML
+<a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration--yaml"></a>
 
-```yaml
-
+```
 MyProfilingGroup:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -304,11 +267,5 @@ MyProfilingGroup:
     - channelUri: SOME_SNS_TOPIC_ARN
       channelId: aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon CodeGuru Profiler
-
-AgentPermissions
 
 All content copied from https://docs.aws.amazon.com/.

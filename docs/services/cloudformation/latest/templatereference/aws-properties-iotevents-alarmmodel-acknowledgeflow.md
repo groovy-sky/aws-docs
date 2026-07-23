@@ -2,56 +2,41 @@
 title: "AWS::IoTEvents::AlarmModel AcknowledgeFlow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel AcknowledgeFlow
+<a name="aws-properties-iotevents-alarmmodel-acknowledgeflow"></a>
 
 Specifies whether to get notified for alarm state changes.
 
 ## Syntax
+<a name="aws-properties-iotevents-alarmmodel-acknowledgeflow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-alarmmodel-acknowledgeflow-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-iotevents-alarmmodel-acknowledgeflow-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-alarmmodel-acknowledgeflow-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-iotevents-alarmmodel-acknowledgeflow-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-alarmmodel-acknowledgeflow-properties"></a>
 
-`Enabled`
-
-The value must be `TRUE` or `FALSE`. If `TRUE`, you
-receive a notification when the alarm state changes. You must choose to acknowledge the
-notification before the alarm state can return to `NORMAL`. If `FALSE`,
-you won't receive notifications. The alarm automatically changes to the `NORMAL`
-state when the input property value returns to the specified range.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTEvents::AlarmModel
-
-AlarmAction
+`Enabled`  <a name="cfn-iotevents-alarmmodel-acknowledgeflow-enabled"></a>
+The value must be `TRUE` or `FALSE`. If `TRUE`, you receive a notification when the alarm state changes. You must choose to acknowledge the notification before the alarm state can return to `NORMAL`. If `FALSE`, you won't receive notifications. The alarm automatically changes to the `NORMAL` state when the input property value returns to the specified range.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

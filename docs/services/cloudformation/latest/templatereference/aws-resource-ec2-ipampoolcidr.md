@@ -2,102 +2,86 @@
 title: "AWS::EC2::IPAMPoolCidr"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::IPAMPoolCidr
+<a name="aws-resource-ec2-ipampoolcidr"></a>
 
 A CIDR provisioned to an IPAM pool.
 
 ## Syntax
+<a name="aws-resource-ec2-ipampoolcidr-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-ipampoolcidr-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::IPAMPoolCidr",
   "Properties" : {
-      "Cidr" : String,
-      "IpamPoolId" : String,
-      "NetmaskLength" : Integer
+      "[Cidr](#cfn-ec2-ipampoolcidr-cidr)" : {{String}},
+      "[IpamPoolId](#cfn-ec2-ipampoolcidr-ipampoolid)" : {{String}},
+      "[NetmaskLength](#cfn-ec2-ipampoolcidr-netmasklength)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-ipampoolcidr-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::IPAMPoolCidr
 Properties:
-  Cidr: String
-  IpamPoolId: String
-  NetmaskLength: Integer
-
+  [Cidr](#cfn-ec2-ipampoolcidr-cidr): {{String}}
+  [IpamPoolId](#cfn-ec2-ipampoolcidr-ipampoolid): {{String}}
+  [NetmaskLength](#cfn-ec2-ipampoolcidr-netmasklength): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-ipampoolcidr-properties"></a>
 
-`Cidr`
+`Cidr`  <a name="cfn-ec2-ipampoolcidr-cidr"></a>
+The CIDR provisioned to the IPAM pool. A CIDR is a representation of an IP address and its associated network mask (or netmask) and refers to a range of IP addresses. An IPv4 CIDR example is `10.24.34.0/23`. An IPv6 CIDR example is `2001:DB8::/32`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The CIDR provisioned to the IPAM pool. A CIDR is a representation of an IP address and its associated network mask (or netmask)
-and refers to a range of IP addresses. An IPv4 CIDR example is `10.24.34.0/23`. An IPv6 CIDR example is `2001:DB8::/32`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IpamPoolId`
-
+`IpamPoolId`  <a name="cfn-ec2-ipampoolcidr-ipampoolid"></a>
 The ID of the IPAM pool.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetmaskLength`
-
+`NetmaskLength`  <a name="cfn-ec2-ipampoolcidr-netmasklength"></a>
 The netmask length of the CIDR you'd like to provision to a pool. Can be used for provisioning Amazon-provided IPv6 CIDRs to top-level pools and for provisioning CIDRs to pools with source pools. Cannot be used to provision BYOIP CIDRs to top-level pools. "NetmaskLength" or "Cidr" is required.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-ipampoolcidr-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-ipampoolcidr-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the IPAM pool ID and IPAM pool CIDR ID in the following format: `ipam-pool-01123456|ipam-pool-cidr-0123456`.
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-ipampoolcidr-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`IpamPoolCidrId`
+####
+<a name="aws-resource-ec2-ipampoolcidr-return-values-fn--getatt-fn--getatt"></a>
 
+`IpamPoolCidrId`  <a name="IpamPoolCidrId-fn::getatt"></a>
 The IPAM pool CIDR ID.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the CIDR.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::IPAMPrefixListResolver
 
 All content copied from https://docs.aws.amazon.com/.

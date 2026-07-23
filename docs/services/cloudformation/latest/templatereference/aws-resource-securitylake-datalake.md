@@ -2,165 +2,132 @@
 title: "AWS::SecurityLake::DataLake"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::DataLake
+<a name="aws-resource-securitylake-datalake"></a>
 
-Initializes an Amazon Security Lake instance with the provided (or default) configuration. You
-can enable Security Lake in AWS Regions with customized settings before enabling
-log collection in Regions. To specify particular Regions, configure these Regions using the
-`configurations` parameter. If you have already enabled Security Lake in a Region
-when you call this command, the command will update the Region if you provide new
-configuration parameters. If you have not already enabled Security Lake in the Region when you
-call this API, it will set up the data lake in the Region with the specified
-configurations.
+Initializes an Amazon Security Lake instance with the provided (or default) configuration. You can enable Security Lake in AWS Regions with customized settings before enabling log collection in Regions. To specify particular Regions, configure these Regions using the `configurations` parameter. If you have already enabled Security Lake in a Region when you call this command, the command will update the Region if you provide new configuration parameters. If you have not already enabled Security Lake in the Region when you call this API, it will set up the data lake in the Region with the specified configurations.
 
-When you enable Security Lake, it starts ingesting security data after the
-`CreateAwsLogSource` call. This includes ingesting security data from
-sources, storing data, and making data accessible to subscribers. Security Lake also enables
-all the existing settings and resources that it stores or maintains for your AWS account in the current Region, including security log and event data. For
-more information, see the [Amazon Security Lake User\
-Guide](../../../security-lake/latest/userguide/what-is-security-lake.md).
+When you enable Security Lake, it starts ingesting security data after the `CreateAwsLogSource` call. This includes ingesting security data from sources, storing data, and making data accessible to subscribers. Security Lake also enables all the existing settings and resources that it stores or maintains for your AWS account in the current Region, including security log and event data. For more information, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com//security-lake/latest/userguide/what-is-security-lake.html).
 
-###### Important
-
-If you use this template to create multiple data lakes in different AWS Regions,
-and more than one of your data lakes include an [AWS::SecurityLake::AwsLogSource](../userguide/aws-resource-securitylake-awslogsource.md) resource, then you must deploy these data lakes sequentially.
-This is required because data lakes operate globally, and `AwsLogSource` resources must be deployed one at a time.
+**Important**
+If you use this template to create multiple data lakes in different AWS Regions, and more than one of your data lakes include an [AWS::SecurityLake::AwsLogSource](/AWSCloudFormation/latest/UserGuide/aws-resource-securitylake-awslogsource.html) resource, then you must deploy these data lakes sequentially. This is required because data lakes operate globally, and `AwsLogSource` resources must be deployed one at a time.
 
 ## Syntax
+<a name="aws-resource-securitylake-datalake-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securitylake-datalake-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityLake::DataLake",
   "Properties" : {
-      "EncryptionConfiguration" : EncryptionConfiguration,
-      "LifecycleConfiguration" : LifecycleConfiguration,
-      "MetaStoreManagerRoleArn" : String,
-      "ReplicationConfiguration" : ReplicationConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[EncryptionConfiguration](#cfn-securitylake-datalake-encryptionconfiguration)" : {{EncryptionConfiguration}},
+      "[LifecycleConfiguration](#cfn-securitylake-datalake-lifecycleconfiguration)" : {{LifecycleConfiguration}},
+      "[MetaStoreManagerRoleArn](#cfn-securitylake-datalake-metastoremanagerrolearn)" : {{String}},
+      "[ReplicationConfiguration](#cfn-securitylake-datalake-replicationconfiguration)" : {{ReplicationConfiguration}},
+      "[Tags](#cfn-securitylake-datalake-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securitylake-datalake-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityLake::DataLake
 Properties:
-  EncryptionConfiguration:
-    EncryptionConfiguration
-  LifecycleConfiguration:
-    LifecycleConfiguration
-  MetaStoreManagerRoleArn: String
-  ReplicationConfiguration:
-    ReplicationConfiguration
-  Tags:
-    - Tag
-
+  [EncryptionConfiguration](#cfn-securitylake-datalake-encryptionconfiguration): {{
+    EncryptionConfiguration}}
+  [LifecycleConfiguration](#cfn-securitylake-datalake-lifecycleconfiguration): {{
+    LifecycleConfiguration}}
+  [MetaStoreManagerRoleArn](#cfn-securitylake-datalake-metastoremanagerrolearn): {{String}}
+  [ReplicationConfiguration](#cfn-securitylake-datalake-replicationconfiguration): {{
+    ReplicationConfiguration}}
+  [Tags](#cfn-securitylake-datalake-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-securitylake-datalake-properties"></a>
 
-`EncryptionConfiguration`
-
+`EncryptionConfiguration`  <a name="cfn-securitylake-datalake-encryptionconfiguration"></a>
 Provides encryption details of the Amazon Security Lake object.
+*Required*: No
+*Type*: [EncryptionConfiguration](aws-properties-securitylake-datalake-encryptionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LifecycleConfiguration`  <a name="cfn-securitylake-datalake-lifecycleconfiguration"></a>
+You can customize Security Lake to store data in your preferred AWS Regions for your preferred amount of time. Lifecycle management can help you comply with different compliance requirements. For more details, see [Lifecycle management](https://docs.aws.amazon.com//security-lake/latest/userguide/lifecycle-management.html) in the Amazon Security Lake User Guide.
+*Required*: No
+*Type*: [LifecycleConfiguration](aws-properties-securitylake-datalake-lifecycleconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [EncryptionConfiguration](aws-properties-securitylake-datalake-encryptionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LifecycleConfiguration`
-
-You can customize Security Lake to store data in your preferred AWS Regions for your preferred amount of time. Lifecycle management can help you comply with different compliance requirements. For more details, see [Lifecycle management](../../../security-lake/latest/userguide/lifecycle-management.md) in the Amazon Security Lake User Guide.
-
-_Required_: No
-
-_Type_: [LifecycleConfiguration](aws-properties-securitylake-datalake-lifecycleconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetaStoreManagerRoleArn`
-
+`MetaStoreManagerRoleArn`  <a name="cfn-securitylake-datalake-metastoremanagerrolearn"></a>
 The Amazon Resource Name (ARN) used to create and update the AWS Glue table. This table contains partitions generated by the ingestion and normalization of AWS log sources and custom sources.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReplicationConfiguration`
-
+`ReplicationConfiguration`  <a name="cfn-securitylake-datalake-replicationconfiguration"></a>
 Provides replication details of Amazon Security Lake object.
+*Required*: No
+*Type*: [ReplicationConfiguration](aws-properties-securitylake-datalake-replicationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ReplicationConfiguration](aws-properties-securitylake-datalake-replicationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-securitylake-datalake-tags"></a>
 An array of objects, one for each tag to associate with the data lake configuration. For each tag, you must specify both a tag key and a tag value. A tag value cannot be null, but it can be an empty string.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-securitylake-datalake-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-securitylake-datalake-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-securitylake-datalake-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securitylake-datalake-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `ref` function, `ref` returns the `DataLake` name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-securitylake-datalake-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-securitylake-datalake-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the data lake.
 
-`S3BucketArn`
-
+`S3BucketArn`  <a name="S3BucketArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Amazon S3 bucket.
 
 ## Examples
+<a name="aws-resource-securitylake-datalake--examples"></a>
 
-- [Enable Security Lake in two accounts for three log sources](#aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources)
-
-- [Enable Security Lake in all accounts for three log sources](#aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources)
-
-- [Deploys a contributing Security Lake Region](#aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region)
-
-- [Configure with KMS](#aws-resource-securitylake-datalake--examples--Configure_with_KMS)
+**Topics**
++ [Enable Security Lake in two accounts for three log sources](#aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources)
++ [Enable Security Lake in all accounts for three log sources](#aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources)
++ [Deploys a contributing Security Lake Region](#aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region)
++ [Configure with KMS](#aws-resource-securitylake-datalake--examples--Configure_with_KMS)
 
 ### Enable Security Lake in two accounts for three log sources
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources"></a>
 
 #### JSON
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources--json"></a>
 
-```json
-
+```
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Transform": "AWS::Serverless-2016-10-31",
@@ -285,13 +252,12 @@ The Amazon Resource Name (ARN) of the Amazon S3 bucket.
     }
 }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description:  Creates Security Lake with NO KMS and two sources, this can be used as a rollup region.
@@ -317,7 +283,7 @@ Resources:
       RoleName:
         Fn::Sub: ${RoleName}-SecurityLakeMetasStoreManager
       AssumeRolePolicyDocument:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
         - Effect: Allow
           Principal:
@@ -375,15 +341,15 @@ Resources:
       SourceName: S3_DATA
       SourceVersion: "2.0"
     DependsOn: SecurityLakeSourcesSecurityHub
-
 ```
 
 ### Enable Security Lake in all accounts for three log sources
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources"></a>
 
 #### JSON
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources--json"></a>
 
-```json
-
+```
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Transform": "AWS::Serverless-2016-10-31",
@@ -474,13 +440,12 @@ Resources:
     }
 }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description:  Creates Security Lake with NO KMS on three sources and all accounts. This can be used as a centralized Region.
@@ -498,7 +463,7 @@ Resources:
       RoleName:
         Fn::Sub: ${RoleName}-SecurityLakeMetasStoreManager
       AssumeRolePolicyDocument:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
         - Effect: Allow
           Principal:
@@ -547,17 +512,17 @@ Resources:
       SourceName: S3_DATA
       SourceVersion: "2.0"
     DependsOn: SecurityLakeSourcesSecurityHub
-
 ```
 
 ### Deploys a contributing Security Lake Region
+<a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region"></a>
 
-Enables Security lake in two accounts for three logs sources as a contributing Region.
+ Enables Security lake in two accounts for three logs sources as a contributing Region.
 
 #### JSON
+<a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region--json"></a>
 
-```json
-
+```
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Transform": "AWS::Serverless-2016-10-31",
@@ -677,9 +642,9 @@ Enables Security lake in two accounts for three logs sources as a contributing R
 ```
 
 #### YAML
+<a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Creates Security Lake with NO KMS and two sources, replicates to one region.
@@ -758,17 +723,17 @@ Resources:
       SourceName: S3_DATA
       SourceVersion: "2.0"
     DependsOn: SecurityLakeSourcesSecurityHub
-
 ```
 
 ### Configure with KMS
+<a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS"></a>
 
 For each Region add the encryption configuration parameter and assign respective KMS ARN for your Region.
 
 #### JSON
+<a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS--json"></a>
 
-```json
-
+```
 {
     "SecurityLakeEnablement": {
         "Type": "AWS::SecurityLake::DataLake",
@@ -790,9 +755,9 @@ For each Region add the encryption configuration parameter and assign respective
 ```
 
 #### YAML
+<a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS--yaml"></a>
 
-```yaml
-
+```
 SecurityLakeEnablement:
     Type: AWS::SecurityLake::DataLake
     Properties:
@@ -803,13 +768,6 @@ SecurityLakeEnablement:
       EncryptionConfiguration:
         KmsKeyId:
           Ref: KmsArn
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityLake::AwsLogSource
-
-EncryptionConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

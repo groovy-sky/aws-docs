@@ -2,76 +2,53 @@
 title: "AWS::QBusiness::Index Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Index Tag
+<a name="aws-properties-qbusiness-index-tag"></a>
 
-A list of key/value pairs that identify an index, FAQ, or data source. Tag keys and
-values can consist of Unicode letters, digits, white space, and any of the following
-symbols: \_ . : / = + - @.
+A list of key/value pairs that identify an index, FAQ, or data source. Tag keys and values can consist of Unicode letters, digits, white space, and any of the following symbols: \_ . : / = \+ - @.
 
 ## Syntax
+<a name="aws-properties-qbusiness-index-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-index-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-qbusiness-index-tag-key)" : {{String}},
+  "[Value](#cfn-qbusiness-index-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-index-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-qbusiness-index-tag-key): {{String}}
+  [Value](#cfn-qbusiness-index-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-index-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-qbusiness-index-tag-key"></a>
+ The key for the tag. Keys are not case sensitive and must be unique for the Amazon Q Business application or data source.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The key for the tag. Keys are not case sensitive and must be unique for the
-Amazon Q Business application or data source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The value associated with the tag. The value may be an empty string but it can't be
-null.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IndexStatistics
-
-TextDocumentStatistics
+`Value`  <a name="cfn-qbusiness-index-tag-value"></a>
+The value associated with the tag. The value may be an empty string but it can't be null.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

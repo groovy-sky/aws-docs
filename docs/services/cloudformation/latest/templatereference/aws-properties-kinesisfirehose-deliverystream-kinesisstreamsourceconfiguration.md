@@ -2,78 +2,55 @@
 title: "AWS::KinesisFirehose::DeliveryStream KinesisStreamSourceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream KinesisStreamSourceConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration"></a>
 
-The `KinesisStreamSourceConfiguration` property type specifies the stream and
-role Amazon Resource Names (ARNs) for a Kinesis stream used as the source for a delivery
-stream.
+The `KinesisStreamSourceConfiguration` property type specifies the stream and role Amazon Resource Names (ARNs) for a Kinesis stream used as the source for a delivery stream.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KinesisStreamARN" : String,
-  "RoleARN" : String
+  "[KinesisStreamARN](#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn)" : {{String}},
+  "[RoleARN](#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KinesisStreamARN: String
-  RoleARN: String
-
+```
+  [KinesisStreamARN](#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn): {{String}}
+  [RoleARN](#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-properties"></a>
 
-`KinesisStreamARN`
-
+`KinesisStreamARN`  <a name="cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn"></a>
 The ARN of the source Kinesis data stream.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleARN`
-
+`RoleARN`  <a name="cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn"></a>
 The ARN of the role that provides access to the source Kinesis data stream.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InputFormatConfiguration
-
-KMSEncryptionConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

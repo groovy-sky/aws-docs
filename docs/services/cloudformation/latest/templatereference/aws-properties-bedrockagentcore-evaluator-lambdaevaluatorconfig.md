@@ -2,70 +2,52 @@
 title: "AWS::BedrockAgentCore::Evaluator LambdaEvaluatorConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator LambdaEvaluatorConfig
+<a name="aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig"></a>
 
-The `LambdaEvaluatorConfig` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md).
+<a name="aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig-description"></a>The `LambdaEvaluatorConfig` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md).
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "LambdaArn" : String,
-  "LambdaTimeoutInSeconds" : Integer
+  "[LambdaArn](#cfn-bedrockagentcore-evaluator-lambdaevaluatorconfig-lambdaarn)" : {{String}},
+  "[LambdaTimeoutInSeconds](#cfn-bedrockagentcore-evaluator-lambdaevaluatorconfig-lambdatimeoutinseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig-syntax.yaml"></a>
 
-```yaml
-
-  LambdaArn: String
-  LambdaTimeoutInSeconds: Integer
-
+```
+  [LambdaArn](#cfn-bedrockagentcore-evaluator-lambdaevaluatorconfig-lambdaarn): {{String}}
+  [LambdaTimeoutInSeconds](#cfn-bedrockagentcore-evaluator-lambdaevaluatorconfig-lambdatimeoutinseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-evaluator-lambdaevaluatorconfig-properties"></a>
 
-`LambdaArn`
-
+`LambdaArn`  <a name="cfn-bedrockagentcore-evaluator-lambdaevaluatorconfig-lambdaarn"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z-]*)?:lambda:([a-z]{2}(-gov)?-[a-z]+-\d{1}):(\d{12}):function:([a-zA-Z0-9-_.]+)(:(\$LATEST|[a-zA-Z0-9-_]+))?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z-]*)?:lambda:([a-z]{2}(-gov)?-[a-z]+-\d{1}):(\d{12}):function:([a-zA-Z0-9-_.]+)(:(\$LATEST|[a-zA-Z0-9-_]+))?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaTimeoutInSeconds`
-
+`LambdaTimeoutInSeconds`  <a name="cfn-bedrockagentcore-evaluator-lambdaevaluatorconfig-lambdatimeoutinseconds"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceConfiguration
-
-LlmAsAJudgeEvaluatorConfig
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,50 @@
 title: "AWS::S3Tables::Table IcebergSortOrder"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergSortOrder
+<a name="aws-properties-s3tables-table-icebergsortorder"></a>
 
 Defines the sort order for data within an Iceberg table. Sorting data can improve query performance by enabling more efficient data skipping.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-icebergsortorder-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-icebergsortorder-syntax.json"></a>
 
-```json
-
+```
 {
-  "Fields" : [ IcebergSortField, ... ],
-  "OrderId" : Integer
+  "[Fields](#cfn-s3tables-table-icebergsortorder-fields)" : {{[ IcebergSortField, ... ]}},
+  "[OrderId](#cfn-s3tables-table-icebergsortorder-orderid)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-icebergsortorder-syntax.yaml"></a>
 
-```yaml
-
-  Fields:
-    - IcebergSortField
-  OrderId: Integer
-
+```
+  [Fields](#cfn-s3tables-table-icebergsortorder-fields): {{
+    - IcebergSortField}}
+  [OrderId](#cfn-s3tables-table-icebergsortorder-orderid): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-icebergsortorder-properties"></a>
 
-`Fields`
-
+`Fields`  <a name="cfn-s3tables-table-icebergsortorder-fields"></a>
 The list of sort fields that define how data is sorted within files. Each field specifies a source field, sort direction, and null ordering. This field is required if `writeOrder` is provided.
+*Required*: Yes
+*Type*: Array of [IcebergSortField](aws-properties-s3tables-table-icebergsortfield.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of [IcebergSortField](aws-properties-s3tables-table-icebergsortfield.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OrderId`
-
+`OrderId`  <a name="cfn-s3tables-table-icebergsortorder-orderid"></a>
 The unique identifier for this sort order. If not specified, defaults to `1`. The order ID is used by Apache Iceberg to track sort order evolution.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IcebergSortField
-
-SchemaField
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

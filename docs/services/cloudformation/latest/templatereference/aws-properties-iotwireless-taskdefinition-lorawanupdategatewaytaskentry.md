@@ -2,66 +2,51 @@
 title: "AWS::IoTWireless::TaskDefinition LoRaWANUpdateGatewayTaskEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::TaskDefinition LoRaWANUpdateGatewayTaskEntry
+<a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskentry"></a>
 
 LoRaWANUpdateGatewayTaskEntry object.
 
 ## Syntax
+<a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "CurrentVersion" : LoRaWANGatewayVersion,
-  "UpdateVersion" : LoRaWANGatewayVersion
+  "[CurrentVersion](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-currentversion)" : {{LoRaWANGatewayVersion}},
+  "[UpdateVersion](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-updateversion)" : {{LoRaWANGatewayVersion}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-syntax.yaml"></a>
 
-```yaml
-
-  CurrentVersion:
-    LoRaWANGatewayVersion
-  UpdateVersion:
-    LoRaWANGatewayVersion
-
+```
+  [CurrentVersion](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-currentversion): {{
+    LoRaWANGatewayVersion}}
+  [UpdateVersion](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-updateversion): {{
+    LoRaWANGatewayVersion}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-properties"></a>
 
-`CurrentVersion`
-
+`CurrentVersion`  <a name="cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-currentversion"></a>
 The version of the gateways that should receive the update.
+*Required*: No
+*Type*: [LoRaWANGatewayVersion](aws-properties-iotwireless-taskdefinition-lorawangatewayversion.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LoRaWANGatewayVersion](aws-properties-iotwireless-taskdefinition-lorawangatewayversion.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdateVersion`
-
+`UpdateVersion`  <a name="cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskentry-updateversion"></a>
 The firmware version to update the gateway to.
-
-_Required_: No
-
-_Type_: [LoRaWANGatewayVersion](aws-properties-iotwireless-taskdefinition-lorawangatewayversion.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoRaWANUpdateGatewayTaskCreate
-
-Tag
+*Required*: No
+*Type*: [LoRaWANGatewayVersion](aws-properties-iotwireless-taskdefinition-lorawangatewayversion.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

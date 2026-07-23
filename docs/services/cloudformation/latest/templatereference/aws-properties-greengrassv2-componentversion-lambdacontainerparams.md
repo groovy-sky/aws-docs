@@ -2,96 +2,69 @@
 title: "AWS::GreengrassV2::ComponentVersion LambdaContainerParams"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::ComponentVersion LambdaContainerParams
+<a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams"></a>
 
-Contains information about a container in which AWS Lambda functions run on
-AWS IoT Greengrass core devices.
+Contains information about a container in which AWS Lambda functions run on AWS IoT Greengrass core devices.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams-syntax.json"></a>
 
-```json
-
+```
 {
-  "Devices" : [ LambdaDeviceMount, ... ],
-  "MemorySizeInKB" : Integer,
-  "MountROSysfs" : Boolean,
-  "Volumes" : [ LambdaVolumeMount, ... ]
+  "[Devices](#cfn-greengrassv2-componentversion-lambdacontainerparams-devices)" : {{[ LambdaDeviceMount, ... ]}},
+  "[MemorySizeInKB](#cfn-greengrassv2-componentversion-lambdacontainerparams-memorysizeinkb)" : {{Integer}},
+  "[MountROSysfs](#cfn-greengrassv2-componentversion-lambdacontainerparams-mountrosysfs)" : {{Boolean}},
+  "[Volumes](#cfn-greengrassv2-componentversion-lambdacontainerparams-volumes)" : {{[ LambdaVolumeMount, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams-syntax.yaml"></a>
 
-```yaml
-
-  Devices:
-    - LambdaDeviceMount
-  MemorySizeInKB: Integer
-  MountROSysfs: Boolean
-  Volumes:
-    - LambdaVolumeMount
-
+```
+  [Devices](#cfn-greengrassv2-componentversion-lambdacontainerparams-devices): {{
+    - LambdaDeviceMount}}
+  [MemorySizeInKB](#cfn-greengrassv2-componentversion-lambdacontainerparams-memorysizeinkb): {{Integer}}
+  [MountROSysfs](#cfn-greengrassv2-componentversion-lambdacontainerparams-mountrosysfs): {{Boolean}}
+  [Volumes](#cfn-greengrassv2-componentversion-lambdacontainerparams-volumes): {{
+    - LambdaVolumeMount}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams-properties"></a>
 
-`Devices`
-
+`Devices`  <a name="cfn-greengrassv2-componentversion-lambdacontainerparams-devices"></a>
 The list of system devices that the container can access.
+*Required*: No
+*Type*: Array of [LambdaDeviceMount](aws-properties-greengrassv2-componentversion-lambdadevicemount.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [LambdaDeviceMount](aws-properties-greengrassv2-componentversion-lambdadevicemount.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MemorySizeInKB`
-
+`MemorySizeInKB`  <a name="cfn-greengrassv2-componentversion-lambdacontainerparams-memorysizeinkb"></a>
 The memory size of the container, expressed in kilobytes.
-
 Default: `16384` (16 MB)
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MountROSysfs`
-
-Whether or not the container can read information from the device's `/sys`
-folder.
-
+`MountROSysfs`  <a name="cfn-greengrassv2-componentversion-lambdacontainerparams-mountrosysfs"></a>
+Whether or not the container can read information from the device's `/sys` folder.
 Default: `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Volumes`
-
+`Volumes`  <a name="cfn-greengrassv2-componentversion-lambdacontainerparams-volumes"></a>
 The list of volumes that the container can access.
-
-_Required_: No
-
-_Type_: Array of [LambdaVolumeMount](aws-properties-greengrassv2-componentversion-lambdavolumemount.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentPlatform
-
-LambdaDeviceMount
+*Required*: No
+*Type*: Array of [LambdaVolumeMount](aws-properties-greengrassv2-componentversion-lambdavolumemount.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

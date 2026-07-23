@@ -2,74 +2,55 @@
 title: "AWS::SageMaker::PartnerApp PartnerAppConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::PartnerApp PartnerAppConfig
+<a name="aws-properties-sagemaker-partnerapp-partnerappconfig"></a>
 
 A collection of configuration settings for the PartnerApp.
 
 ## Syntax
+<a name="aws-properties-sagemaker-partnerapp-partnerappconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-partnerapp-partnerappconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdminUsers" : [ String, ... ],
-  "Arguments" : {Key: Value, ...}
+  "[AdminUsers](#cfn-sagemaker-partnerapp-partnerappconfig-adminusers)" : {{[ String, ... ]}},
+  "[Arguments](#cfn-sagemaker-partnerapp-partnerappconfig-arguments)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-partnerapp-partnerappconfig-syntax.yaml"></a>
 
-```yaml
-
-  AdminUsers:
-    - String
-  Arguments:
-    Key: Value
-
+```
+  [AdminUsers](#cfn-sagemaker-partnerapp-partnerappconfig-adminusers): {{
+    - String}}
+  [Arguments](#cfn-sagemaker-partnerapp-partnerappconfig-arguments): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-partnerapp-partnerappconfig-properties"></a>
 
-`AdminUsers`
-
+`AdminUsers`  <a name="cfn-sagemaker-partnerapp-partnerappconfig-adminusers"></a>
 A list of users that will have administrative access to the Partner AI App.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Arguments`
-
+`Arguments`  <a name="cfn-sagemaker-partnerapp-partnerappconfig-arguments"></a>
 Additional arguments passed to the Partner AI App during initialization or runtime.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^(?!\s*$).{1,256}$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::PartnerApp
-
-PartnerAppMaintenanceConfig
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^(?!\s*$).{1,256}$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

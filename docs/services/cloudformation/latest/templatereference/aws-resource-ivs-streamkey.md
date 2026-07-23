@@ -2,113 +2,102 @@
 title: "AWS::IVS::StreamKey"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::StreamKey
+<a name="aws-resource-ivs-streamkey"></a>
 
-The `AWS::IVS::StreamKey` resource specifies an Amazon IVS stream key associated with the referenced channel. Use
-a stream key to initiate a live stream.
+The `AWS::IVS::StreamKey` resource specifies an Amazon IVS stream key associated with the referenced channel. Use a stream key to initiate a live stream.
 
 ## Syntax
+<a name="aws-resource-ivs-streamkey-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivs-streamkey-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVS::StreamKey",
   "Properties" : {
-      "ChannelArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[ChannelArn](#cfn-ivs-streamkey-channelarn)" : {{String}},
+      "[Tags](#cfn-ivs-streamkey-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivs-streamkey-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVS::StreamKey
 Properties:
-  ChannelArn: String
-  Tags:
-    - Tag
-
+  [ChannelArn](#cfn-ivs-streamkey-channelarn): {{String}}
+  [Tags](#cfn-ivs-streamkey-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ivs-streamkey-properties"></a>
 
-`ChannelArn`
-
+`ChannelArn`  <a name="cfn-ivs-streamkey-channelarn"></a>
 Channel ARN for the stream.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws:ivs:[a-z0-9-]+:[0-9]+:channel/[a-zA-Z0-9-]+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws:ivs:[a-z0-9-]+:[0-9]+:channel/[a-zA-Z0-9-]+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivs-streamkey-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-ivs-streamkey-tag.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivs-streamkey-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-streamkey-tag.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivs-streamkey-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ivs-streamkey-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivs-streamkey-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ARN. For example:
 
-`{ "Ref": "myStreamKey" }`
+ `{ "Ref": "myStreamKey" }`
 
-For the Amazon IVS stream key `myStreamKey`,
-`Ref` returns the stream key ARN.
+For the Amazon IVS stream key `myStreamKey`, `Ref` returns the stream key ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivs-streamkey-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivs-streamkey-return-values-fn--getatt-fn--getatt"></a>
 
-The stream-key ARN. For example:
-`arn:aws:ivs:us-west-2:123456789012:stream-key/g1H2I3j4k5L6`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The stream-key ARN. For example: `arn:aws:ivs:us-west-2:123456789012:stream-key/g1H2I3j4k5L6`
 
-`Value`
-
-The stream-key value. For example:
-`sk_us-west-2_abcdABCDefgh_567890abcdef`
+`Value`  <a name="Value-fn::getatt"></a>
+The stream-key value. For example: `sk_us-west-2_abcdABCDefgh_567890abcdef`
 
 ## Examples
+<a name="aws-resource-ivs-streamkey--examples"></a>
 
 ### Channel and Stream Key Template Examples
+<a name="aws-resource-ivs-streamkey--examples--Channel_and_Stream_Key_Template_Examples"></a>
 
-The following examples specify an Amazon IVS channel
-and stream key.
+The following examples specify an Amazon IVS channel and stream key.
 
 #### JSON
+<a name="aws-resource-ivs-streamkey--examples--Channel_and_Stream_Key_Template_Examples--json"></a>
 
-```json
-
+```
 {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -163,13 +152,12 @@ and stream key.
          }
      }
  }
-
 ```
 
 #### YAML
+<a name="aws-resource-ivs-streamkey--examples--Channel_and_Stream_Key_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Channel:
@@ -196,23 +184,12 @@ Outputs:
     Value: !GetAtt Channel.PlaybackUrl
   StreamKeyArn:
     Value: !Ref StreamKey
-
 ```
 
 ## See also
-
-- [Getting\
-Started with IVS Low-Latency Streaming](../../../ivs/latest/lowlatencyuserguide/getting-started.md)
-
-- [StreamKey](../../../../reference/ivs/latest/lowlatencyapireference/api-streamkey.md) data
-type
-
-- [CreateStreamKey](../../../../reference/ivs/latest/lowlatencyapireference/api-createstreamkey.md) API endpoint
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+<a name="aws-resource-ivs-streamkey--seealso"></a>
++  [Getting Started with IVS Low-Latency Streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started.html)
++ [StreamKey](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_StreamKey.html) data type
++ [CreateStreamKey](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_CreateStreamKey.html) API endpoint
 
 All content copied from https://docs.aws.amazon.com/.

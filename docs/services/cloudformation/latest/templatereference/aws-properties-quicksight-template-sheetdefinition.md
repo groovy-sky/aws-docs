@@ -2,251 +2,165 @@
 title: "AWS::QuickSight::Template SheetDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SheetDefinition
+<a name="aws-properties-quicksight-template-sheetdefinition"></a>
 
-A sheet is an object that contains a set of visuals that
-are viewed together on one page in a paginated report. Every analysis and dashboard must contain at least one sheet.
+A sheet is an object that contains a set of visuals that are viewed together on one page in a paginated report. Every analysis and dashboard must contain at least one sheet.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sheetdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sheetdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContentType" : String,
-  "Description" : String,
-  "FilterControls" : [ FilterControl, ... ],
-  "Images" : [ SheetImage, ... ],
-  "Layouts" : [ Layout, ... ],
-  "Name" : String,
-  "ParameterControls" : [ ParameterControl, ... ],
-  "SheetControlLayouts" : [ SheetControlLayout, ... ],
-  "SheetId" : String,
-  "TextBoxes" : [ SheetTextBox, ... ],
-  "Title" : String,
-  "Visuals" : [ Visual, ... ]
+  "[ContentType](#cfn-quicksight-template-sheetdefinition-contenttype)" : {{String}},
+  "[Description](#cfn-quicksight-template-sheetdefinition-description)" : {{String}},
+  "[FilterControls](#cfn-quicksight-template-sheetdefinition-filtercontrols)" : {{[ FilterControl, ... ]}},
+  "[Images](#cfn-quicksight-template-sheetdefinition-images)" : {{[ SheetImage, ... ]}},
+  "[Layouts](#cfn-quicksight-template-sheetdefinition-layouts)" : {{[ Layout, ... ]}},
+  "[Name](#cfn-quicksight-template-sheetdefinition-name)" : {{String}},
+  "[ParameterControls](#cfn-quicksight-template-sheetdefinition-parametercontrols)" : {{[ ParameterControl, ... ]}},
+  "[SheetControlLayouts](#cfn-quicksight-template-sheetdefinition-sheetcontrollayouts)" : {{[ SheetControlLayout, ... ]}},
+  "[SheetId](#cfn-quicksight-template-sheetdefinition-sheetid)" : {{String}},
+  "[TextBoxes](#cfn-quicksight-template-sheetdefinition-textboxes)" : {{[ SheetTextBox, ... ]}},
+  "[Title](#cfn-quicksight-template-sheetdefinition-title)" : {{String}},
+  "[Visuals](#cfn-quicksight-template-sheetdefinition-visuals)" : {{[ Visual, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sheetdefinition-syntax.yaml"></a>
 
-```yaml
-
-  ContentType: String
-  Description: String
-  FilterControls:
-    - FilterControl
-  Images:
-    - SheetImage
-  Layouts:
-    - Layout
-  Name: String
-  ParameterControls:
-    - ParameterControl
-  SheetControlLayouts:
-    - SheetControlLayout
-  SheetId: String
-  TextBoxes:
-    - SheetTextBox
-  Title: String
-  Visuals:
-    - Visual
-
+```
+  [ContentType](#cfn-quicksight-template-sheetdefinition-contenttype): {{String}}
+  [Description](#cfn-quicksight-template-sheetdefinition-description): {{String}}
+  [FilterControls](#cfn-quicksight-template-sheetdefinition-filtercontrols): {{
+    - FilterControl}}
+  [Images](#cfn-quicksight-template-sheetdefinition-images): {{
+    - SheetImage}}
+  [Layouts](#cfn-quicksight-template-sheetdefinition-layouts): {{
+    - Layout}}
+  [Name](#cfn-quicksight-template-sheetdefinition-name): {{String}}
+  [ParameterControls](#cfn-quicksight-template-sheetdefinition-parametercontrols): {{
+    - ParameterControl}}
+  [SheetControlLayouts](#cfn-quicksight-template-sheetdefinition-sheetcontrollayouts): {{
+    - SheetControlLayout}}
+  [SheetId](#cfn-quicksight-template-sheetdefinition-sheetid): {{String}}
+  [TextBoxes](#cfn-quicksight-template-sheetdefinition-textboxes): {{
+    - SheetTextBox}}
+  [Title](#cfn-quicksight-template-sheetdefinition-title): {{String}}
+  [Visuals](#cfn-quicksight-template-sheetdefinition-visuals): {{
+    - Visual}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sheetdefinition-properties"></a>
 
-`ContentType`
-
+`ContentType`  <a name="cfn-quicksight-template-sheetdefinition-contenttype"></a>
 The layout content type of the sheet. Choose one of the following options:
++ `PAGINATED`: Creates a sheet for a paginated report.
++ `INTERACTIVE`: Creates a sheet for an interactive dashboard.
+*Required*: No
+*Type*: String
+*Allowed values*: `PAGINATED | INTERACTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `PAGINATED`: Creates a sheet for a paginated report.
-
-- `INTERACTIVE`: Creates a sheet for an interactive dashboard.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PAGINATED | INTERACTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-quicksight-template-sheetdefinition-description"></a>
 A description of the sheet.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterControls`
-
+`FilterControls`  <a name="cfn-quicksight-template-sheetdefinition-filtercontrols"></a>
 The list of filter controls that are on a sheet.
+For more information, see [Adding filter controls to analysis sheets](https://docs.aws.amazon.com/quicksight/latest/user/filter-controls.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [FilterControl](aws-properties-quicksight-template-filtercontrol.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Adding filter controls to analysis sheets](../../../quicksight/latest/user/filter-controls.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [FilterControl](aws-properties-quicksight-template-filtercontrol.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Images`
-
+`Images`  <a name="cfn-quicksight-template-sheetdefinition-images"></a>
 A list of images on a sheet.
+*Required*: No
+*Type*: Array of [SheetImage](aws-properties-quicksight-template-sheetimage.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SheetImage](aws-properties-quicksight-template-sheetimage.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Layouts`
-
+`Layouts`  <a name="cfn-quicksight-template-sheetdefinition-layouts"></a>
 Layouts define how the components of a sheet are arranged.
+For more information, see [Types of layout](https://docs.aws.amazon.com/quicksight/latest/user/types-of-layout.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [Layout](aws-properties-quicksight-template-layout.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Types of layout](../../../quicksight/latest/user/types-of-layout.md) in the _Amazon Quick Suite User Guide_.
+`Name`  <a name="cfn-quicksight-template-sheetdefinition-name"></a>
+The name of the sheet. This name is displayed on the sheet's tab in the Quick console.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Layout](aws-properties-quicksight-template-layout.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the sheet. This name is displayed on the sheet's tab in the Quick
-console.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterControls`
-
+`ParameterControls`  <a name="cfn-quicksight-template-sheetdefinition-parametercontrols"></a>
 The list of parameter controls that are on a sheet.
+For more information, see [Using a Control with a Parameter in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/parameters-controls.html) in the *Amazon Quick Suite User Guide*.
+*Required*: No
+*Type*: Array of [ParameterControl](aws-properties-quicksight-template-parametercontrol.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Using a Control with a Parameter in Amazon Quick Sight](../../../quicksight/latest/user/parameters-controls.md) in the _Amazon Quick Suite User Guide_.
-
-_Required_: No
-
-_Type_: Array of [ParameterControl](aws-properties-quicksight-template-parametercontrol.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetControlLayouts`
-
+`SheetControlLayouts`  <a name="cfn-quicksight-template-sheetdefinition-sheetcontrollayouts"></a>
 The control layouts of the sheet.
+*Required*: No
+*Type*: Array of [SheetControlLayout](aws-properties-quicksight-template-sheetcontrollayout.md)
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SheetControlLayout](aws-properties-quicksight-template-sheetcontrollayout.md)
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetId`
-
+`SheetId`  <a name="cfn-quicksight-template-sheetdefinition-sheetid"></a>
 The unique identifier of a sheet.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextBoxes`
-
+`TextBoxes`  <a name="cfn-quicksight-template-sheetdefinition-textboxes"></a>
 The text boxes that are on a sheet.
+*Required*: No
+*Type*: Array of [SheetTextBox](aws-properties-quicksight-template-sheettextbox.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SheetTextBox](aws-properties-quicksight-template-sheettextbox.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-template-sheetdefinition-title"></a>
 The title of the sheet.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visuals`
-
+`Visuals`  <a name="cfn-quicksight-template-sheetdefinition-visuals"></a>
 A list of the visuals that are on a sheet. Visual placement is determined by the layout of the sheet.
-
-_Required_: No
-
-_Type_: Array of [Visual](aws-properties-quicksight-template-visual.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetControlLayoutConfiguration
-
-SheetElementConfigurationOverrides
+*Required*: No
+*Type*: Array of [Visual](aws-properties-quicksight-template-visual.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,108 +2,77 @@
 title: "AWS::QuickSight::Analysis ComboChartAggregatedFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ComboChartAggregatedFieldWells
+<a name="aws-properties-quicksight-analysis-combochartaggregatedfieldwells"></a>
 
 The aggregated field wells of a combo chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-combochartaggregatedfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-combochartaggregatedfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "BarValues" : [ MeasureField, ... ],
-  "Category" : [ DimensionField, ... ],
-  "Colors" : [ DimensionField, ... ],
-  "LineValues" : [ MeasureField, ... ]
+  "[BarValues](#cfn-quicksight-analysis-combochartaggregatedfieldwells-barvalues)" : {{[ MeasureField, ... ]}},
+  "[Category](#cfn-quicksight-analysis-combochartaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
+  "[Colors](#cfn-quicksight-analysis-combochartaggregatedfieldwells-colors)" : {{[ DimensionField, ... ]}},
+  "[LineValues](#cfn-quicksight-analysis-combochartaggregatedfieldwells-linevalues)" : {{[ MeasureField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-combochartaggregatedfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  BarValues:
-    - MeasureField
-  Category:
-    - DimensionField
-  Colors:
-    - DimensionField
-  LineValues:
-    - MeasureField
-
+```
+  [BarValues](#cfn-quicksight-analysis-combochartaggregatedfieldwells-barvalues): {{
+    - MeasureField}}
+  [Category](#cfn-quicksight-analysis-combochartaggregatedfieldwells-category): {{
+    - DimensionField}}
+  [Colors](#cfn-quicksight-analysis-combochartaggregatedfieldwells-colors): {{
+    - DimensionField}}
+  [LineValues](#cfn-quicksight-analysis-combochartaggregatedfieldwells-linevalues): {{
+    - MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-combochartaggregatedfieldwells-properties"></a>
 
-`BarValues`
-
+`BarValues`  <a name="cfn-quicksight-analysis-combochartaggregatedfieldwells-barvalues"></a>
 The aggregated `BarValues` field well of a combo chart.
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Category`
-
+`Category`  <a name="cfn-quicksight-analysis-combochartaggregatedfieldwells-category"></a>
 The aggregated category field wells of a combo chart.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Colors`
-
+`Colors`  <a name="cfn-quicksight-analysis-combochartaggregatedfieldwells-colors"></a>
 The aggregated colors field well of a combo chart.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LineValues`
-
+`LineValues`  <a name="cfn-quicksight-analysis-combochartaggregatedfieldwells-linevalues"></a>
 The aggregated `LineValues` field well of a combo chart.
-
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnTooltipItem
-
-ComboChartConfiguration
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard GeospatialNullDataSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialNullDataSettings
+<a name="aws-properties-quicksight-dashboard-geospatialnulldatasettings"></a>
 
 The properties for the visualization of null data.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatialnulldatasettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatialnulldatasettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "SymbolStyle" : GeospatialNullSymbolStyle
+  "[SymbolStyle](#cfn-quicksight-dashboard-geospatialnulldatasettings-symbolstyle)" : {{GeospatialNullSymbolStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatialnulldatasettings-syntax.yaml"></a>
 
-```yaml
-
-  SymbolStyle:
-    GeospatialNullSymbolStyle
-
+```
+  [SymbolStyle](#cfn-quicksight-dashboard-geospatialnulldatasettings-symbolstyle): {{
+    GeospatialNullSymbolStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatialnulldatasettings-properties"></a>
 
-`SymbolStyle`
-
+`SymbolStyle`  <a name="cfn-quicksight-dashboard-geospatialnulldatasettings-symbolstyle"></a>
 The symbol style for null data.
-
-_Required_: Yes
-
-_Type_: [GeospatialNullSymbolStyle](aws-properties-quicksight-dashboard-geospatialnullsymbolstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialMapVisual
-
-GeospatialNullSymbolStyle
+*Required*: Yes
+*Type*: [GeospatialNullSymbolStyle](aws-properties-quicksight-dashboard-geospatialnullsymbolstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

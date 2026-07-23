@@ -2,123 +2,85 @@
 title: "AWS::SageMaker::UserProfile CodeEditorAppSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::UserProfile CodeEditorAppSettings
+<a name="aws-properties-sagemaker-userprofile-codeeditorappsettings"></a>
 
 The Code Editor application settings.
 
-For more information about Code Editor, see [Get started with Code \
-Editor in Amazon SageMaker](../../../sagemaker/latest/dg/code-editor.md).
+For more information about Code Editor, see [Get started with Code Editor in Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html).
 
 ## Syntax
+<a name="aws-properties-sagemaker-userprofile-codeeditorappsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-userprofile-codeeditorappsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "AppLifecycleManagement" : AppLifecycleManagement,
-  "BuiltInLifecycleConfigArn" : String,
-  "CustomImages" : [ CustomImage, ... ],
-  "DefaultResourceSpec" : ResourceSpec,
-  "LifecycleConfigArns" : [ String, ... ]
+  "[AppLifecycleManagement](#cfn-sagemaker-userprofile-codeeditorappsettings-applifecyclemanagement)" : {{AppLifecycleManagement}},
+  "[BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-codeeditorappsettings-builtinlifecycleconfigarn)" : {{String}},
+  "[CustomImages](#cfn-sagemaker-userprofile-codeeditorappsettings-customimages)" : {{[ CustomImage, ... ]}},
+  "[DefaultResourceSpec](#cfn-sagemaker-userprofile-codeeditorappsettings-defaultresourcespec)" : {{ResourceSpec}},
+  "[LifecycleConfigArns](#cfn-sagemaker-userprofile-codeeditorappsettings-lifecycleconfigarns)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-userprofile-codeeditorappsettings-syntax.yaml"></a>
 
-```yaml
-
-  AppLifecycleManagement:
-    AppLifecycleManagement
-  BuiltInLifecycleConfigArn: String
-  CustomImages:
-    - CustomImage
-  DefaultResourceSpec:
-    ResourceSpec
-  LifecycleConfigArns:
-    - String
-
+```
+  [AppLifecycleManagement](#cfn-sagemaker-userprofile-codeeditorappsettings-applifecyclemanagement): {{
+    AppLifecycleManagement}}
+  [BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-codeeditorappsettings-builtinlifecycleconfigarn): {{String}}
+  [CustomImages](#cfn-sagemaker-userprofile-codeeditorappsettings-customimages): {{
+    - CustomImage}}
+  [DefaultResourceSpec](#cfn-sagemaker-userprofile-codeeditorappsettings-defaultresourcespec): {{
+    ResourceSpec}}
+  [LifecycleConfigArns](#cfn-sagemaker-userprofile-codeeditorappsettings-lifecycleconfigarns): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-userprofile-codeeditorappsettings-properties"></a>
 
-`AppLifecycleManagement`
+`AppLifecycleManagement`  <a name="cfn-sagemaker-userprofile-codeeditorappsettings-applifecyclemanagement"></a>
+Settings that are used to configure and manage the lifecycle of CodeEditor applications.
+*Required*: No
+*Type*: [AppLifecycleManagement](aws-properties-sagemaker-userprofile-applifecyclemanagement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Settings that are used to configure and manage the lifecycle of CodeEditor
-applications.
+`BuiltInLifecycleConfigArn`  <a name="cfn-sagemaker-userprofile-codeeditorappsettings-builtinlifecycleconfigarn"></a>
+The lifecycle configuration that runs before the default lifecycle configuration. It can override changes made in the default lifecycle configuration.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:studio-lifecycle-config/.*|None)$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AppLifecycleManagement](aws-properties-sagemaker-userprofile-applifecyclemanagement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BuiltInLifecycleConfigArn`
-
-The lifecycle configuration that runs before the default lifecycle configuration. It can
-override changes made in the default lifecycle configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:studio-lifecycle-config/.*|None)$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomImages`
-
+`CustomImages`  <a name="cfn-sagemaker-userprofile-codeeditorappsettings-customimages"></a>
 A list of custom SageMaker images that are configured to run as a Code Editor app.
+*Required*: No
+*Type*: Array of [CustomImage](aws-properties-sagemaker-userprofile-customimage.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DefaultResourceSpec`  <a name="cfn-sagemaker-userprofile-codeeditorappsettings-defaultresourcespec"></a>
+The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the Code Editor app.
+*Required*: No
+*Type*: [ResourceSpec](aws-properties-sagemaker-userprofile-resourcespec.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CustomImage](aws-properties-sagemaker-userprofile-customimage.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultResourceSpec`
-
-The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the Code
-Editor app.
-
-_Required_: No
-
-_Type_: [ResourceSpec](aws-properties-sagemaker-userprofile-resourcespec.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LifecycleConfigArns`
-
-The Amazon Resource Name (ARN) of the Code Editor application
-lifecycle configuration.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AppLifecycleManagement
-
-CodeRepository
+`LifecycleConfigArns`  <a name="cfn-sagemaker-userprofile-codeeditorappsettings-lifecycleconfigarns"></a>
+The Amazon Resource Name (ARN) of the Code Editor application lifecycle configuration.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

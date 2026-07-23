@@ -2,104 +2,88 @@
 title: "AWS::SMSVOICE::ProtectConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::ProtectConfiguration
+<a name="aws-resource-smsvoice-protectconfiguration"></a>
 
-Create a new protect configuration. By default all country rule sets for each capability are set to `ALLOW`.
-A protect configurations name is stored as a Tag with the key set to `Name` and value as the name of the protect configuration.
+Create a new protect configuration. By default all country rule sets for each capability are set to `ALLOW`. A protect configurations name is stored as a Tag with the key set to `Name` and value as the name of the protect configuration.
 
 ## Syntax
+<a name="aws-resource-smsvoice-protectconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-smsvoice-protectconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SMSVOICE::ProtectConfiguration",
   "Properties" : {
-      "CountryRuleSet" : CountryRuleSet,
-      "DeletionProtectionEnabled" : Boolean,
-      "Tags" : [ Tag, ... ]
+      "[CountryRuleSet](#cfn-smsvoice-protectconfiguration-countryruleset)" : {{CountryRuleSet}},
+      "[DeletionProtectionEnabled](#cfn-smsvoice-protectconfiguration-deletionprotectionenabled)" : {{Boolean}},
+      "[Tags](#cfn-smsvoice-protectconfiguration-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-smsvoice-protectconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SMSVOICE::ProtectConfiguration
 Properties:
-  CountryRuleSet:
-    CountryRuleSet
-  DeletionProtectionEnabled: Boolean
-  Tags:
-    - Tag
-
+  [CountryRuleSet](#cfn-smsvoice-protectconfiguration-countryruleset): {{
+    CountryRuleSet}}
+  [DeletionProtectionEnabled](#cfn-smsvoice-protectconfiguration-deletionprotectionenabled): {{Boolean}}
+  [Tags](#cfn-smsvoice-protectconfiguration-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-smsvoice-protectconfiguration-properties"></a>
 
-`CountryRuleSet`
-
+`CountryRuleSet`  <a name="cfn-smsvoice-protectconfiguration-countryruleset"></a>
 The set of `CountryRules` you specify to control which countries AWS End User Messaging SMS can send your messages to.
+*Required*: No
+*Type*: [CountryRuleSet](aws-properties-smsvoice-protectconfiguration-countryruleset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CountryRuleSet](aws-properties-smsvoice-protectconfiguration-countryruleset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeletionProtectionEnabled`
-
+`DeletionProtectionEnabled`  <a name="cfn-smsvoice-protectconfiguration-deletionprotectionenabled"></a>
 The status of deletion protection for the protect configuration. When set to true deletion protection is enabled. By default this is set to false.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-smsvoice-protectconfiguration-tags"></a>
 An array of key and value pair tags that are associated with the resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-smsvoice-protectconfiguration-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-smsvoice-protectconfiguration-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-smsvoice-protectconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-smsvoice-protectconfiguration-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `ProtectConfigurationId`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`ProtectConfigurationId`.
 
 ### Fn::GetAtt
+<a name="aws-resource-smsvoice-protectconfiguration-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-smsvoice-protectconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the protect configuration.
 
-`ProtectConfigurationId`
-
+`ProtectConfigurationId`  <a name="ProtectConfigurationId-fn::getatt"></a>
 The unique identifier for the protect configuration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TwoWay
-
-CountryRule
 
 All content copied from https://docs.aws.amazon.com/.

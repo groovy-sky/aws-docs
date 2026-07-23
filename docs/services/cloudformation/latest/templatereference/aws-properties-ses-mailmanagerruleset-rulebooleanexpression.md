@@ -2,67 +2,51 @@
 title: "AWS::SES::MailManagerRuleSet RuleBooleanExpression"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet RuleBooleanExpression
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression"></a>
 
 A boolean expression to be used in a rule condition.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression-syntax.json"></a>
 
-```json
-
+```
 {
-  "Evaluate" : RuleBooleanToEvaluate,
-  "Operator" : String
+  "[Evaluate](#cfn-ses-mailmanagerruleset-rulebooleanexpression-evaluate)" : {{RuleBooleanToEvaluate}},
+  "[Operator](#cfn-ses-mailmanagerruleset-rulebooleanexpression-operator)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression-syntax.yaml"></a>
 
-```yaml
-
-  Evaluate:
-    RuleBooleanToEvaluate
-  Operator: String
-
+```
+  [Evaluate](#cfn-ses-mailmanagerruleset-rulebooleanexpression-evaluate): {{
+    RuleBooleanToEvaluate}}
+  [Operator](#cfn-ses-mailmanagerruleset-rulebooleanexpression-operator): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression-properties"></a>
 
-`Evaluate`
-
+`Evaluate`  <a name="cfn-ses-mailmanagerruleset-rulebooleanexpression-evaluate"></a>
 The operand on which to perform a boolean condition operation.
+*Required*: Yes
+*Type*: [RuleBooleanToEvaluate](aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [RuleBooleanToEvaluate](aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operator`
-
+`Operator`  <a name="cfn-ses-mailmanagerruleset-rulebooleanexpression-operator"></a>
 The matching operator for a boolean condition expression.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `IS_TRUE | IS_FALSE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleAction
-
-RuleBooleanToEvaluate
+*Required*: Yes
+*Type*: String
+*Allowed values*: `IS_TRUE | IS_FALSE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

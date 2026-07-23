@@ -2,75 +2,64 @@
 title: "AWS::APS::Workspace"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Workspace
+<a name="aws-resource-aps-workspace"></a>
 
-An Amazon Managed Service for Prometheus workspace is a logical and isolated
-Prometheus server dedicated to ingesting, storing, and querying your
-Prometheus-compatible metrics.
+An Amazon Managed Service for Prometheus workspace is a logical and isolated Prometheus server dedicated to ingesting, storing, and querying your Prometheus-compatible metrics.
 
 ## Syntax
+<a name="aws-resource-aps-workspace-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-aps-workspace-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::APS::Workspace",
   "Properties" : {
-      "AlertManagerDefinition" : String,
-      "Alias" : String,
-      "KmsKeyArn" : String,
-      "LoggingConfiguration" : LoggingConfiguration,
-      "QueryLoggingConfiguration" : QueryLoggingConfiguration,
-      "Tags" : [ Tag, ... ],
-      "WorkspaceConfiguration" : WorkspaceConfiguration
+      "[AlertManagerDefinition](#cfn-aps-workspace-alertmanagerdefinition)" : {{String}},
+      "[Alias](#cfn-aps-workspace-alias)" : {{String}},
+      "[KmsKeyArn](#cfn-aps-workspace-kmskeyarn)" : {{String}},
+      "[LoggingConfiguration](#cfn-aps-workspace-loggingconfiguration)" : {{LoggingConfiguration}},
+      "[QueryLoggingConfiguration](#cfn-aps-workspace-queryloggingconfiguration)" : {{QueryLoggingConfiguration}},
+      "[Tags](#cfn-aps-workspace-tags)" : {{[ Tag, ... ]}},
+      "[WorkspaceConfiguration](#cfn-aps-workspace-workspaceconfiguration)" : {{WorkspaceConfiguration}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-aps-workspace-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::APS::Workspace
 Properties:
-  AlertManagerDefinition: String
-  Alias: String
-  KmsKeyArn: String
-  LoggingConfiguration:
-    LoggingConfiguration
-  QueryLoggingConfiguration:
-    QueryLoggingConfiguration
-  Tags:
-    - Tag
-  WorkspaceConfiguration:
-    WorkspaceConfiguration
-
+  [AlertManagerDefinition](#cfn-aps-workspace-alertmanagerdefinition): {{String}}
+  [Alias](#cfn-aps-workspace-alias): {{String}}
+  [KmsKeyArn](#cfn-aps-workspace-kmskeyarn): {{String}}
+  [LoggingConfiguration](#cfn-aps-workspace-loggingconfiguration): {{
+    LoggingConfiguration}}
+  [QueryLoggingConfiguration](#cfn-aps-workspace-queryloggingconfiguration): {{
+    QueryLoggingConfiguration}}
+  [Tags](#cfn-aps-workspace-tags): {{
+    - Tag}}
+  [WorkspaceConfiguration](#cfn-aps-workspace-workspaceconfiguration): {{
+    WorkspaceConfiguration}}
 ```
 
 ## Properties
+<a name="aws-resource-aps-workspace-properties"></a>
 
-`AlertManagerDefinition`
-
-The alert manager definition, a YAML configuration for the alert manager in your
-Amazon Managed Service for Prometheus workspace.
-
-For details about the alert manager definition, see [Creating an alert\
-manager configuration files](../../../prometheus/latest/userguide/amp-alertmanager-config.md) in the _Amazon Managed Service for Prometheus User_
-_Guide_.
-
-The following example shows part of a CloudFormation YAML file with an embedded alert
-manager definition (following the `- |-`).
+`AlertManagerDefinition`  <a name="cfn-aps-workspace-alertmanagerdefinition"></a>
+The alert manager definition, a YAML configuration for the alert manager in your Amazon Managed Service for Prometheus workspace.
+For details about the alert manager definition, see [Creating an alert manager configuration files](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertmanager-config.html) in the *Amazon Managed Service for Prometheus User Guide*.
+The following example shows part of a CloudFormation YAML file with an embedded alert manager definition (following the `- |-`).
 
 ```
-
   Workspace:
     Type: AWS::APS::Workspace
     ....
@@ -90,158 +79,120 @@ manager definition (following the `- |-`).
                     - topic_arn: 'arn:aws:sns:${AWS::Region}:${AWS::AccountId}:${TopicName}'
           -
 ```
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Alias`  <a name="cfn-aps-workspace-alias"></a>
+The alias that is assigned to this workspace to help identify it. It does not need to be unique.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`KmsKeyArn`  <a name="cfn-aps-workspace-kmskeyarn"></a>
+(optional) The ARN for a customer managed AWS KMS key to use for encrypting data within your workspace. For more information about using your own key in your workspace, see [Encryption at rest](https://docs.aws.amazon.com/prometheus/latest/userguide/encryption-at-rest-Amazon-Service-Prometheus.html) in the *Amazon Managed Service for Prometheus User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[-a-z]*:kms:[-a-z0-9]+:[0-9]{12}:key/.+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Alias`
-
-The alias that is assigned to this workspace to help identify it. It does not need to
-be unique.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyArn`
-
-(optional) The ARN for a customer managed AWS KMS key to use for encrypting
-data within your workspace. For more information about using your own key in your
-workspace, see [Encryption at rest](../../../prometheus/latest/userguide/encryption-at-rest-amazon-service-prometheus.md) in the _Amazon Managed Service for Prometheus_
-_User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z]*:kms:[-a-z0-9]+:[0-9]{12}:key/.+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LoggingConfiguration`
-
+`LoggingConfiguration`  <a name="cfn-aps-workspace-loggingconfiguration"></a>
 Contains information about the logging configuration for the workspace.
+*Required*: No
+*Type*: [LoggingConfiguration](aws-properties-aps-workspace-loggingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`QueryLoggingConfiguration`  <a name="cfn-aps-workspace-queryloggingconfiguration"></a>
+The definition of logging configuration in an Amazon Managed Service for Prometheus workspace.
+*Required*: No
+*Type*: [QueryLoggingConfiguration](aws-properties-aps-workspace-queryloggingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [LoggingConfiguration](aws-properties-aps-workspace-loggingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryLoggingConfiguration`
-
-The definition of logging configuration in an Amazon Managed Service for Prometheus
-workspace.
-
-_Required_: No
-
-_Type_: [QueryLoggingConfiguration](aws-properties-aps-workspace-queryloggingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-aps-workspace-tags"></a>
 The list of tag keys and values that are associated with the workspace.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-aps-workspace-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-aps-workspace-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkspaceConfiguration`
-
-Use this structure to define label sets and the ingestion limits for time series that
-match label sets, and to specify the retention period of the workspace.
-
-_Required_: No
-
-_Type_: [WorkspaceConfiguration](aws-properties-aps-workspace-workspaceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`WorkspaceConfiguration`  <a name="cfn-aps-workspace-workspaceconfiguration"></a>
+Use this structure to define label sets and the ingestion limits for time series that match label sets, and to specify the retention period of the workspace.
+*Required*: No
+*Type*: [WorkspaceConfiguration](aws-properties-aps-workspace-workspaceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-aps-workspace-return-values"></a>
 
 ### Ref
+<a name="aws-resource-aps-workspace-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "Id" }`
+ `{ "Ref": "Id" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-aps-workspace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-aps-workspace-return-values-fn--getatt-fn--getatt"></a>
 
-The ARN of the workspace. For example,
-`arn:aws:aps:<region>:123456789012:workspace/ws-example1-1234-abcd-5678-ef90abcd1234`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The ARN of the workspace. For example, `arn:aws:aps:<region>:123456789012:workspace/ws-example1-1234-abcd-5678-ef90abcd1234`.
 
-`PrometheusEndpoint`
+`PrometheusEndpoint`  <a name="PrometheusEndpoint-fn::getatt"></a>
+The Prometheus endpoint available for this workspace. For example, `https://aps-workspaces.<region>.amazonaws.com/workspaces/ws-example1-1234-abcd-5678-ef90abcd1234/api/v1/`.
 
-The Prometheus endpoint available for this workspace. For example,
-`https://aps-workspaces.<region>.amazonaws.com/workspaces/ws-example1-1234-abcd-5678-ef90abcd1234/api/v1/`.
-
-`WorkspaceId`
-
-The unique ID for the workspace. For example,
-`ws-example1-1234-abcd-5678-ef90abcd1234`.
+`WorkspaceId`  <a name="WorkspaceId-fn::getatt"></a>
+The unique ID for the workspace. For example, `ws-example1-1234-abcd-5678-ef90abcd1234`.
 
 ## Examples
+<a name="aws-resource-aps-workspace--examples"></a>
 
-- [Amazon Managed Service for Prometheus workspace example](#aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example)
-
-- [Amazon Managed Service for Prometheus logging configuration example](#aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example)
+**Topics**
++ [Amazon Managed Service for Prometheus workspace example](#aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example)
++ [Amazon Managed Service for Prometheus logging configuration example](#aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example)
 
 ### Amazon Managed Service for Prometheus workspace example
+<a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example"></a>
 
-The following example creates an Amazon Managed Service for Prometheus workspace with an alias
-and one tag.
+The following example creates an Amazon Managed Service for Prometheus workspace with an alias and one tag.
 
 #### JSON
+<a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example--json"></a>
 
-```json
-
+```
 { "Resources": { "APSWorkspace": { "Type":
                 "AWS::APS::Workspace", "Properties": { "Alias": "TestWorkspace" "Tags": [ { "Key":
                 "BusinessPurpose", "Value": "LoadTesting" } ] } } } }
 ```
 
 #### YAML
+<a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example--yaml"></a>
 
-```yaml
-
+```
 Resources: APSWorkspace: Type: AWS::APS::Workspace Properties:
                 Alias: TestWorkspace Tags: - Key: BusinessPurpose Value: LoadTesting
 ```
 
 ### Amazon Managed Service for Prometheus logging configuration example
+<a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example"></a>
 
-The following example creates a new workspace and sets a new logging
-configuration. You must replace the `LogGroupArn` with a valid ARN
-for your system.
+The following example creates a new workspace and sets a new logging configuration. You must replace the `LogGroupArn` with a valid ARN for your system.
 
 #### JSON
+<a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example--json"></a>
 
-```json
-
+```
 { "Resources": { "APSWorkspace": { "Type":
                 "AWS::APS::Workspace", "Properties": { "Alias": "TestWorkspace",
                 "LoggingConfiguration": { "LogGroupArn":
@@ -250,19 +201,13 @@ for your system.
 ```
 
 #### YAML
+<a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example--yaml"></a>
 
-```yaml
-
+```
 Resources: APSWorkspace: Type: AWS::APS::Workspace Properties:
                 Alias: TestWorkspace LoggingConfiguration: LogGroupArn:
                 "arn:aws:logs:{region}:{account}:log-group:test-log-group:*" Tags: - Key:
                 BusinessPurpose Value: LoadTesting
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfiguration
-
-CloudWatchLogDestination
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,51 @@
 title: "AWS::FIS::ExperimentTemplate ExperimentTemplateExperimentOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FIS::ExperimentTemplate ExperimentTemplateExperimentOptions
+<a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions"></a>
 
 Describes the experiment options for an experiment template.
 
 ## Syntax
+<a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountTargeting" : String,
-  "EmptyTargetResolutionMode" : String
+  "[AccountTargeting](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-accounttargeting)" : {{String}},
+  "[EmptyTargetResolutionMode](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-emptytargetresolutionmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions-syntax.yaml"></a>
 
-```yaml
-
-  AccountTargeting: String
-  EmptyTargetResolutionMode: String
-
+```
+  [AccountTargeting](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-accounttargeting): {{String}}
+  [EmptyTargetResolutionMode](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-emptytargetresolutionmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions-properties"></a>
 
-`AccountTargeting`
-
+`AccountTargeting`  <a name="cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-accounttargeting"></a>
 The account targeting setting for an experiment template.
+*Required*: No
+*Type*: String
+*Allowed values*: `multi-account | single-account`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `multi-account | single-account`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EmptyTargetResolutionMode`
-
+`EmptyTargetResolutionMode`  <a name="cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-emptytargetresolutionmode"></a>
 The empty target resolution mode for an experiment template.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `fail | skip`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExperimentTemplateAction
-
-ExperimentTemplateExperimentReportConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `fail | skip`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

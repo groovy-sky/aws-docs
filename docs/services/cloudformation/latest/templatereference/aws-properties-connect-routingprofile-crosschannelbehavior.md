@@ -2,55 +2,42 @@
 title: "AWS::Connect::RoutingProfile CrossChannelBehavior"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::RoutingProfile CrossChannelBehavior
+<a name="aws-properties-connect-routingprofile-crosschannelbehavior"></a>
 
-Defines the cross-channel routing behavior that allows an agent working on a contact in one channel to be
-offered a contact from a different channel.
+Defines the cross-channel routing behavior that allows an agent working on a contact in one channel to be offered a contact from a different channel.
 
 ## Syntax
+<a name="aws-properties-connect-routingprofile-crosschannelbehavior-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-routingprofile-crosschannelbehavior-syntax.json"></a>
 
-```json
-
+```
 {
-  "BehaviorType" : String
+  "[BehaviorType](#cfn-connect-routingprofile-crosschannelbehavior-behaviortype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-routingprofile-crosschannelbehavior-syntax.yaml"></a>
 
-```yaml
-
-  BehaviorType: String
-
+```
+  [BehaviorType](#cfn-connect-routingprofile-crosschannelbehavior-behaviortype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-routingprofile-crosschannelbehavior-properties"></a>
 
-`BehaviorType`
-
+`BehaviorType`  <a name="cfn-connect-routingprofile-crosschannelbehavior-behaviortype"></a>
 Specifies the other channels that can be routed to an agent handling their current channel.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ROUTE_CURRENT_CHANNEL_ONLY | ROUTE_ANY_CHANNEL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::RoutingProfile
-
-MediaConcurrency
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ROUTE_CURRENT_CHANNEL_ONLY | ROUTE_ANY_CHANNEL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

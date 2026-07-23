@@ -2,90 +2,67 @@
 title: "AWS::Connect::Rule FieldValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule FieldValue
+<a name="aws-properties-connect-rule-fieldvalue"></a>
 
 Object for case field values.
 
 ## Syntax
+<a name="aws-properties-connect-rule-fieldvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-fieldvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "BooleanValue" : Boolean,
-  "DoubleValue" : Number,
-  "EmptyValue" : Json,
-  "StringValue" : String
+  "[BooleanValue](#cfn-connect-rule-fieldvalue-booleanvalue)" : {{Boolean}},
+  "[DoubleValue](#cfn-connect-rule-fieldvalue-doublevalue)" : {{Number}},
+  "[EmptyValue](#cfn-connect-rule-fieldvalue-emptyvalue)" : {{Json}},
+  "[StringValue](#cfn-connect-rule-fieldvalue-stringvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-fieldvalue-syntax.yaml"></a>
 
-```yaml
-
-  BooleanValue:
-    Boolean
-  DoubleValue: Number
-  EmptyValue: Json
-  StringValue:
-    String
-
+```
+  [BooleanValue](#cfn-connect-rule-fieldvalue-booleanvalue): {{
+    Boolean}}
+  [DoubleValue](#cfn-connect-rule-fieldvalue-doublevalue): {{Number}}
+  [EmptyValue](#cfn-connect-rule-fieldvalue-emptyvalue): {{Json}}
+  [StringValue](#cfn-connect-rule-fieldvalue-stringvalue): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-fieldvalue-properties"></a>
 
-`BooleanValue`
-
+`BooleanValue`  <a name="cfn-connect-rule-fieldvalue-booleanvalue"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DoubleValue`
-
+`DoubleValue`  <a name="cfn-connect-rule-fieldvalue-doublevalue"></a>
 Property description not available.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EmptyValue`
-
+`EmptyValue`  <a name="cfn-connect-rule-fieldvalue-emptyvalue"></a>
 Property description not available.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringValue`
-
+`StringValue`  <a name="cfn-connect-rule-fieldvalue-stringvalue"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Field
-
-NotificationRecipientType
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

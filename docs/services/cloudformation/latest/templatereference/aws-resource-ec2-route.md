@@ -2,267 +2,212 @@
 title: "AWS::EC2::Route"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::Route
+<a name="aws-resource-ec2-route"></a>
 
-Specifies a route in a route table. For more information, see [Routes](../../../vpc/latest/userguide/vpc-route-tables.md#route-table-routes)
-in the _Amazon VPC User Guide_.
+Specifies a route in a route table. For more information, see [Routes](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html#route-table-routes) in the *Amazon VPC User Guide*.
 
-You must specify either a destination CIDR block or prefix list ID. You must also
-specify exactly one of the resources as the target.
+You must specify either a destination CIDR block or prefix list ID. You must also specify exactly one of the resources as the target.
 
-If you create a route that references a transit gateway in the same template where you
-create the transit gateway, you must declare a dependency on the transit gateway
-attachment. The route table cannot use the transit gateway until it has successfully
-attached to the VPC. Add a [DependsOn\
-Attribute](../userguide/aws-attribute-dependson.md) in the `AWS::EC2::Route` resource to explicitly declare a
-dependency on the `AWS::EC2::TransitGatewayAttachment` resource.
+If you create a route that references a transit gateway in the same template where you create the transit gateway, you must declare a dependency on the transit gateway attachment. The route table cannot use the transit gateway until it has successfully attached to the VPC. Add a [ DependsOn Attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html) in the `AWS::EC2::Route` resource to explicitly declare a dependency on the `AWS::EC2::TransitGatewayAttachment` resource.
 
 ## Syntax
+<a name="aws-resource-ec2-route-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-route-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::Route",
   "Properties" : {
-      "CarrierGatewayId" : String,
-      "CoreNetworkArn" : String,
-      "DestinationCidrBlock" : String,
-      "DestinationIpv6CidrBlock" : String,
-      "DestinationPrefixListId" : String,
-      "EgressOnlyInternetGatewayId" : String,
-      "GatewayId" : String,
-      "InstanceId" : String,
-      "LocalGatewayId" : String,
-      "NatGatewayId" : String,
-      "NetworkInterfaceId" : String,
-      "RouteTableId" : String,
-      "TransitGatewayId" : String,
-      "VpcEndpointId" : String,
-      "VpcPeeringConnectionId" : String
+      "[CarrierGatewayId](#cfn-ec2-route-carriergatewayid)" : {{String}},
+      "[CoreNetworkArn](#cfn-ec2-route-corenetworkarn)" : {{String}},
+      "[DestinationCidrBlock](#cfn-ec2-route-destinationcidrblock)" : {{String}},
+      "[DestinationIpv6CidrBlock](#cfn-ec2-route-destinationipv6cidrblock)" : {{String}},
+      "[DestinationPrefixListId](#cfn-ec2-route-destinationprefixlistid)" : {{String}},
+      "[EgressOnlyInternetGatewayId](#cfn-ec2-route-egressonlyinternetgatewayid)" : {{String}},
+      "[GatewayId](#cfn-ec2-route-gatewayid)" : {{String}},
+      "[InstanceId](#cfn-ec2-route-instanceid)" : {{String}},
+      "[LocalGatewayId](#cfn-ec2-route-localgatewayid)" : {{String}},
+      "[NatGatewayId](#cfn-ec2-route-natgatewayid)" : {{String}},
+      "[NetworkInterfaceId](#cfn-ec2-route-networkinterfaceid)" : {{String}},
+      "[OdbNetworkArn](#cfn-ec2-route-odbnetworkarn)" : {{String}},
+      "[RouteTableId](#cfn-ec2-route-routetableid)" : {{String}},
+      "[TransitGatewayId](#cfn-ec2-route-transitgatewayid)" : {{String}},
+      "[VpcEndpointId](#cfn-ec2-route-vpcendpointid)" : {{String}},
+      "[VpcPeeringConnectionId](#cfn-ec2-route-vpcpeeringconnectionid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-route-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::Route
 Properties:
-  CarrierGatewayId: String
-  CoreNetworkArn: String
-  DestinationCidrBlock: String
-  DestinationIpv6CidrBlock: String
-  DestinationPrefixListId: String
-  EgressOnlyInternetGatewayId: String
-  GatewayId: String
-  InstanceId: String
-  LocalGatewayId: String
-  NatGatewayId: String
-  NetworkInterfaceId: String
-  RouteTableId: String
-  TransitGatewayId: String
-  VpcEndpointId: String
-  VpcPeeringConnectionId: String
-
+  [CarrierGatewayId](#cfn-ec2-route-carriergatewayid): {{String}}
+  [CoreNetworkArn](#cfn-ec2-route-corenetworkarn): {{String}}
+  [DestinationCidrBlock](#cfn-ec2-route-destinationcidrblock): {{String}}
+  [DestinationIpv6CidrBlock](#cfn-ec2-route-destinationipv6cidrblock): {{String}}
+  [DestinationPrefixListId](#cfn-ec2-route-destinationprefixlistid): {{String}}
+  [EgressOnlyInternetGatewayId](#cfn-ec2-route-egressonlyinternetgatewayid): {{String}}
+  [GatewayId](#cfn-ec2-route-gatewayid): {{String}}
+  [InstanceId](#cfn-ec2-route-instanceid): {{String}}
+  [LocalGatewayId](#cfn-ec2-route-localgatewayid): {{String}}
+  [NatGatewayId](#cfn-ec2-route-natgatewayid): {{String}}
+  [NetworkInterfaceId](#cfn-ec2-route-networkinterfaceid): {{String}}
+  [OdbNetworkArn](#cfn-ec2-route-odbnetworkarn): {{String}}
+  [RouteTableId](#cfn-ec2-route-routetableid): {{String}}
+  [TransitGatewayId](#cfn-ec2-route-transitgatewayid): {{String}}
+  [VpcEndpointId](#cfn-ec2-route-vpcendpointid): {{String}}
+  [VpcPeeringConnectionId](#cfn-ec2-route-vpcpeeringconnectionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-route-properties"></a>
 
-`CarrierGatewayId`
-
+`CarrierGatewayId`  <a name="cfn-ec2-route-carriergatewayid"></a>
 The ID of the carrier gateway.
-
 You can only use this option when the VPC contains a subnet which is associated with a Wavelength Zone.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CoreNetworkArn`
-
+`CoreNetworkArn`  <a name="cfn-ec2-route-corenetworkarn"></a>
 The Amazon Resource Name (ARN) of the core network.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationCidrBlock`
-
+`DestinationCidrBlock`  <a name="cfn-ec2-route-destinationcidrblock"></a>
 The IPv4 CIDR address block used for the destination match. Routing decisions are based on the most specific match. We modify the specified CIDR block to its canonical form; for example, if you specify `100.68.0.18/18`, we modify it to `100.68.0.0/18`.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationIpv6CidrBlock`
-
+`DestinationIpv6CidrBlock`  <a name="cfn-ec2-route-destinationipv6cidrblock"></a>
 The IPv6 CIDR block used for the destination match. Routing decisions are based on the most specific match.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationPrefixListId`
-
+`DestinationPrefixListId`  <a name="cfn-ec2-route-destinationprefixlistid"></a>
 The ID of a prefix list used for the destination match.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
+`EgressOnlyInternetGatewayId`  <a name="cfn-ec2-route-egressonlyinternetgatewayid"></a>
+[IPv6 traffic only] The ID of an egress-only internet gateway.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`GatewayId`  <a name="cfn-ec2-route-gatewayid"></a>
+The ID of an internet gateway or virtual private gateway attached to your VPC.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EgressOnlyInternetGatewayId`
-
-\[IPv6 traffic only\] The ID of an egress-only internet gateway.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GatewayId`
-
-The ID of an internet gateway or virtual private gateway attached to your
-VPC.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceId`
-
+`InstanceId`  <a name="cfn-ec2-route-instanceid"></a>
 The ID of a NAT instance in your VPC. The operation fails if you specify an instance ID unless exactly one network interface is attached.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocalGatewayId`
-
+`LocalGatewayId`  <a name="cfn-ec2-route-localgatewayid"></a>
 The ID of the local gateway.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`NatGatewayId`  <a name="cfn-ec2-route-natgatewayid"></a>
+[IPv4 traffic only] The ID of a NAT gateway.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NatGatewayId`
-
-\[IPv4 traffic only\] The ID of a NAT gateway.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="cfn-ec2-route-networkinterfaceid"></a>
 The ID of a network interface.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OdbNetworkArn`  <a name="cfn-ec2-route-odbnetworkarn"></a>
+The Amazon Resource Name (ARN) of the ODB network.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RouteTableId`
-
+`RouteTableId`  <a name="cfn-ec2-route-routetableid"></a>
 The ID of the route table for the route.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayId`
-
+`TransitGatewayId`  <a name="cfn-ec2-route-transitgatewayid"></a>
 The ID of a transit gateway.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcEndpointId`
-
+`VpcEndpointId`  <a name="cfn-ec2-route-vpcendpointid"></a>
 The ID of a VPC endpoint. Supported for Gateway Load Balancer endpoints only.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcPeeringConnectionId`
-
+`VpcPeeringConnectionId`  <a name="cfn-ec2-route-vpcpeeringconnectionid"></a>
 The ID of a VPC peering connection.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-route-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-route-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the route.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-route-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CidrBlock`
+####
+<a name="aws-resource-ec2-route-return-values-fn--getatt-fn--getatt"></a>
 
+`CidrBlock`  <a name="CidrBlock-fn::getatt"></a>
 The IPv4 CIDR block.
 
 ## Examples
+<a name="aws-resource-ec2-route--examples"></a>
 
-- [Create a route to a gateway](#aws-resource-ec2-route--examples--Create_a_route_to_a_gateway)
-
-- [Create a route to a carrier gateway](#aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway)
+**Topics**
++ [Create a route to a gateway](#aws-resource-ec2-route--examples--Create_a_route_to_a_gateway)
++ [Create a route to a carrier gateway](#aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway)
 
 ### Create a route to a gateway
+<a name="aws-resource-ec2-route--examples--Create_a_route_to_a_gateway"></a>
 
 The following example adds a route that is added to an internet gateway.
 
 #### JSON
+<a name="aws-resource-ec2-route--examples--Create_a_route_to_a_gateway--json"></a>
 
-```json
-
+```
 "myRoute" : {
    "Type" : "AWS::EC2::Route",
    "DependsOn" : "GatewayToInternet",
@@ -275,9 +220,9 @@ The following example adds a route that is added to an internet gateway.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-route--examples--Create_a_route_to_a_gateway--yaml"></a>
 
-```yaml
-
+```
   myRoute:
     Type: AWS::EC2::Route
     DependsOn: GatewayToInternet
@@ -290,13 +235,14 @@ The following example adds a route that is added to an internet gateway.
 ```
 
 ### Create a route to a carrier gateway
+<a name="aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway"></a>
 
 The following example creates a route to a carrier gateway.
 
 #### JSON
+<a name="aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway--json"></a>
 
-```json
-
+```
 "myCarrierRoute" : {
    "Type" : "AWS::EC2::Route",
    "DependsOn" : "GatewayToInternetAndCarrierNetwork",
@@ -309,9 +255,9 @@ The following example creates a route to a carrier gateway.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway--yaml"></a>
 
-```yaml
-
+```
  myCarrierRoute:
     Type: AWS::EC2::Route
     DependsOn: GatewayToInternetAndCarrierNetwork
@@ -324,17 +270,8 @@ The following example creates a route to a carrier gateway.
 ```
 
 ## See also
-
-- [CreateRoute](../../../../reference/awsec2/latest/apireference/api-createroute.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Route\
-tables](../../../vpc/latest/userguide/vpc-route-tables.md) in the _Amazon VPC User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::RouteServer
+<a name="aws-resource-ec2-route--seealso"></a>
++ [CreateRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRoute.html) in the *Amazon EC2 API Reference*
++ [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,53 @@
 title: "AWS::QuickSight::Template VisualPalette"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template VisualPalette
+<a name="aws-properties-quicksight-template-visualpalette"></a>
 
 The visual display options for the visual palette.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-visualpalette-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-visualpalette-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChartColor" : String,
-  "ColorMap" : [ DataPathColor, ... ]
+  "[ChartColor](#cfn-quicksight-template-visualpalette-chartcolor)" : {{String}},
+  "[ColorMap](#cfn-quicksight-template-visualpalette-colormap)" : {{[ DataPathColor, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-visualpalette-syntax.yaml"></a>
 
-```yaml
-
-  ChartColor: String
-  ColorMap:
-    - DataPathColor
-
+```
+  [ChartColor](#cfn-quicksight-template-visualpalette-chartcolor): {{String}}
+  [ColorMap](#cfn-quicksight-template-visualpalette-colormap): {{
+    - DataPathColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-visualpalette-properties"></a>
 
-`ChartColor`
-
+`ChartColor`  <a name="cfn-quicksight-template-visualpalette-chartcolor"></a>
 The chart color options for the visual palette.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColorMap`
-
+`ColorMap`  <a name="cfn-quicksight-template-visualpalette-colormap"></a>
 The color map options for the visual palette.
-
-_Required_: No
-
-_Type_: Array of [DataPathColor](aws-properties-quicksight-template-datapathcolor.md)
-
-_Minimum_: `0`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VisualMenuOption
-
-VisualSubtitleLabelOptions
+*Required*: No
+*Type*: Array of [DataPathColor](aws-properties-quicksight-template-datapathcolor.md)
+*Minimum*: `0`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,83 +2,60 @@
 title: "AWS::EntityResolution::MatchingWorkflow ProviderProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow ProviderProperties
+<a name="aws-properties-entityresolution-matchingworkflow-providerproperties"></a>
 
-An object containing the `providerServiceARN`,
-`intermediateSourceConfiguration`, and
-`providerConfiguration`.
+An object containing the `providerServiceARN`, `intermediateSourceConfiguration`, and `providerConfiguration`.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-providerproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-providerproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "IntermediateSourceConfiguration" : IntermediateSourceConfiguration,
-  "ProviderConfiguration" : {Key: Value, ...},
-  "ProviderServiceArn" : String
+  "[IntermediateSourceConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-intermediatesourceconfiguration)" : {{IntermediateSourceConfiguration}},
+  "[ProviderConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-providerconfiguration)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[ProviderServiceArn](#cfn-entityresolution-matchingworkflow-providerproperties-providerservicearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-providerproperties-syntax.yaml"></a>
 
-```yaml
-
-  IntermediateSourceConfiguration:
-    IntermediateSourceConfiguration
-  ProviderConfiguration:
-    Key: Value
-  ProviderServiceArn: String
-
+```
+  [IntermediateSourceConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-intermediatesourceconfiguration): {{
+    IntermediateSourceConfiguration}}
+  [ProviderConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-providerconfiguration): {{
+    {{Key}}: {{Value}}}}
+  [ProviderServiceArn](#cfn-entityresolution-matchingworkflow-providerproperties-providerservicearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-providerproperties-properties"></a>
 
-`IntermediateSourceConfiguration`
+`IntermediateSourceConfiguration`  <a name="cfn-entityresolution-matchingworkflow-providerproperties-intermediatesourceconfiguration"></a>
+The Amazon S3 location that temporarily stores your data while it processes. Your information won't be saved permanently.
+*Required*: No
+*Type*: [IntermediateSourceConfiguration](aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon S3 location that temporarily stores your data while it processes.
-Your information won't be saved permanently.
-
-_Required_: No
-
-_Type_: [IntermediateSourceConfiguration](aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProviderConfiguration`
-
+`ProviderConfiguration`  <a name="cfn-entityresolution-matchingworkflow-providerproperties-providerconfiguration"></a>
 The required configuration fields to use with the provider service.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProviderServiceArn`
-
+`ProviderServiceArn`  <a name="cfn-entityresolution-matchingworkflow-providerproperties-providerservicearn"></a>
 The ARN of the provider service.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputSource
-
-ResolutionTechniques
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

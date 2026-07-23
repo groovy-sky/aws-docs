@@ -2,89 +2,64 @@
 title: "AWS::LakeFormation::PrincipalPermissions LFTagKeyResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::PrincipalPermissions LFTagKeyResource
+<a name="aws-properties-lakeformation-principalpermissions-lftagkeyresource"></a>
 
 A structure containing an LF-tag key and values for a resource.
 
 ## Syntax
+<a name="aws-properties-lakeformation-principalpermissions-lftagkeyresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lakeformation-principalpermissions-lftagkeyresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "CatalogId" : String,
-  "TagKey" : String,
-  "TagValues" : [ String, ... ]
+  "[CatalogId](#cfn-lakeformation-principalpermissions-lftagkeyresource-catalogid)" : {{String}},
+  "[TagKey](#cfn-lakeformation-principalpermissions-lftagkeyresource-tagkey)" : {{String}},
+  "[TagValues](#cfn-lakeformation-principalpermissions-lftagkeyresource-tagvalues)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lakeformation-principalpermissions-lftagkeyresource-syntax.yaml"></a>
 
-```yaml
-
-  CatalogId: String
-  TagKey: String
-  TagValues:
-    - String
-
+```
+  [CatalogId](#cfn-lakeformation-principalpermissions-lftagkeyresource-catalogid): {{String}}
+  [TagKey](#cfn-lakeformation-principalpermissions-lftagkeyresource-tagkey): {{String}}
+  [TagValues](#cfn-lakeformation-principalpermissions-lftagkeyresource-tagvalues): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lakeformation-principalpermissions-lftagkeyresource-properties"></a>
 
-`CatalogId`
-
+`CatalogId`  <a name="cfn-lakeformation-principalpermissions-lftagkeyresource-catalogid"></a>
 The identifier for the Data Catalog where the location is registered with Data Catalog.
+*Required*: Yes
+*Type*: String
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagKey`
-
+`TagKey`  <a name="cfn-lakeformation-principalpermissions-lftagkeyresource-tagkey"></a>
 The key-name for the LF-tag.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagValues`
-
-A list of possible values for the corresponding `TagKey` of an LF-tag key-value pair.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LFTag
-
-LFTagPolicyResource
+`TagValues`  <a name="cfn-lakeformation-principalpermissions-lftagkeyresource-tagvalues"></a>
+ A list of possible values for the corresponding `TagKey` of an LF-tag key-value pair.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

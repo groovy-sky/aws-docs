@@ -2,140 +2,93 @@
 title: "AWS::Pipes::Pipe PipeTargetRedshiftDataParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeTargetRedshiftDataParameters
+<a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters"></a>
 
-These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the
-Amazon Redshift Data API BatchExecuteStatement.
+These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the Amazon Redshift Data API BatchExecuteStatement.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Database" : String,
-  "DbUser" : String,
-  "SecretManagerArn" : String,
-  "Sqls" : [ String, ... ],
-  "StatementName" : String,
-  "WithEvent" : Boolean
+  "[Database](#cfn-pipes-pipe-pipetargetredshiftdataparameters-database)" : {{String}},
+  "[DbUser](#cfn-pipes-pipe-pipetargetredshiftdataparameters-dbuser)" : {{String}},
+  "[SecretManagerArn](#cfn-pipes-pipe-pipetargetredshiftdataparameters-secretmanagerarn)" : {{String}},
+  "[Sqls](#cfn-pipes-pipe-pipetargetredshiftdataparameters-sqls)" : {{[ String, ... ]}},
+  "[StatementName](#cfn-pipes-pipe-pipetargetredshiftdataparameters-statementname)" : {{String}},
+  "[WithEvent](#cfn-pipes-pipe-pipetargetredshiftdataparameters-withevent)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters-syntax.yaml"></a>
 
-```yaml
-
-  Database: String
-  DbUser: String
-  SecretManagerArn: String
-  Sqls:
-    - String
-  StatementName: String
-  WithEvent: Boolean
-
+```
+  [Database](#cfn-pipes-pipe-pipetargetredshiftdataparameters-database): {{String}}
+  [DbUser](#cfn-pipes-pipe-pipetargetredshiftdataparameters-dbuser): {{String}}
+  [SecretManagerArn](#cfn-pipes-pipe-pipetargetredshiftdataparameters-secretmanagerarn): {{String}}
+  [Sqls](#cfn-pipes-pipe-pipetargetredshiftdataparameters-sqls): {{
+    - String}}
+  [StatementName](#cfn-pipes-pipe-pipetargetredshiftdataparameters-statementname): {{String}}
+  [WithEvent](#cfn-pipes-pipe-pipetargetredshiftdataparameters-withevent): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters-properties"></a>
 
-`Database`
+`Database`  <a name="cfn-pipes-pipe-pipetargetredshiftdataparameters-database"></a>
+The name of the database. Required when authenticating using temporary credentials.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the database. Required when authenticating using temporary
-credentials.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DbUser`
-
+`DbUser`  <a name="cfn-pipes-pipe-pipetargetredshiftdataparameters-dbuser"></a>
 The database user name. Required when authenticating using temporary credentials.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecretManagerArn`  <a name="cfn-pipes-pipe-pipetargetredshiftdataparameters-secretmanagerarn"></a>
+The name or ARN of the secret that enables access to the database. Required when authenticating using Secrets Manager.
+*Required*: No
+*Type*: String
+*Pattern*: `^(^arn:aws([a-z]|\-)*:secretsmanager:([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}):(\d{12}):secret:.+)|(\$(\.[\w/_-]+(\[(\d+|\*)\])*)*)$`
+*Minimum*: `1`
+*Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretManagerArn`
-
-The name or ARN of the secret that enables access to the database. Required when
-authenticating using Secrets Manager.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(^arn:aws([a-z]|\-)*:secretsmanager:([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}):(\d{12}):secret:.+)|(\$(\.[\w/_-]+(\[(\d+|\*)\])*)*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `1600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sqls`
-
+`Sqls`  <a name="cfn-pipes-pipe-pipetargetredshiftdataparameters-sqls"></a>
 The SQL statement text to run.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `100000 | 40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`StatementName`  <a name="cfn-pipes-pipe-pipetargetredshiftdataparameters-statementname"></a>
+The name of the SQL statement. You can name the SQL statement when you create it to identify the query.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `100000 | 40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatementName`
-
-The name of the SQL statement. You can name the SQL statement when you create it to
-identify the query.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WithEvent`
-
-Indicates whether to send an event back to EventBridge after the SQL statement
-runs.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeTargetParameters
-
-PipeTargetSageMakerPipelineParameters
+`WithEvent`  <a name="cfn-pipes-pipe-pipetargetredshiftdataparameters-withevent"></a>
+Indicates whether to send an event back to EventBridge after the SQL statement runs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

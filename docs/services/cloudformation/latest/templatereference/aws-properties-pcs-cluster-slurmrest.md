@@ -2,54 +2,42 @@
 title: "AWS::PCS::Cluster SlurmRest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::Cluster SlurmRest
+<a name="aws-properties-pcs-cluster-slurmrest"></a>
 
-The Slurm REST API configuration includes settings for enabling and configuring the Slurm REST API. It's a property of the [ClusterSlurmConfiguration](../userguide/aws-properties-pcs-cluster-slurmconfiguration.md) object.
+The Slurm REST API configuration includes settings for enabling and configuring the Slurm REST API. It's a property of the [ClusterSlurmConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pcs-cluster-slurmconfiguration.html) object.
 
 ## Syntax
+<a name="aws-properties-pcs-cluster-slurmrest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcs-cluster-slurmrest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mode" : String
+  "[Mode](#cfn-pcs-cluster-slurmrest-mode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcs-cluster-slurmrest-syntax.yaml"></a>
 
-```yaml
-
-  Mode: String
-
+```
+  [Mode](#cfn-pcs-cluster-slurmrest-mode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcs-cluster-slurmrest-properties"></a>
 
-`Mode`
-
+`Mode`  <a name="cfn-pcs-cluster-slurmrest-mode"></a>
 The default value for `mode` is `NONE`. A value of `STANDARD` means the Slurm REST API is enabled.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `STANDARD | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlurmdbdCustomSetting
-
-AWS::PCS::ComputeNodeGroup
+*Required*: Yes
+*Type*: String
+*Allowed values*: `STANDARD | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

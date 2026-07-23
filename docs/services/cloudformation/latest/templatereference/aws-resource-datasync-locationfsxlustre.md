@@ -2,157 +2,125 @@
 title: "AWS::DataSync::LocationFSxLustre"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationFSxLustre
+<a name="aws-resource-datasync-locationfsxlustre"></a>
 
-The `AWS::DataSync::LocationFSxLustre` resource specifies an endpoint for
-an Amazon FSx for Lustre file system.
+The `AWS::DataSync::LocationFSxLustre` resource specifies an endpoint for an Amazon FSx for Lustre file system.
 
 ## Syntax
+<a name="aws-resource-datasync-locationfsxlustre-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-datasync-locationfsxlustre-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataSync::LocationFSxLustre",
   "Properties" : {
-      "FsxFilesystemArn" : String,
-      "SecurityGroupArns" : [ String, ... ],
-      "Subdirectory" : String,
-      "Tags" : [ Tag, ... ]
+      "[FsxFilesystemArn](#cfn-datasync-locationfsxlustre-fsxfilesystemarn)" : {{String}},
+      "[SecurityGroupArns](#cfn-datasync-locationfsxlustre-securitygrouparns)" : {{[ String, ... ]}},
+      "[Subdirectory](#cfn-datasync-locationfsxlustre-subdirectory)" : {{String}},
+      "[Tags](#cfn-datasync-locationfsxlustre-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-datasync-locationfsxlustre-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataSync::LocationFSxLustre
 Properties:
-  FsxFilesystemArn: String
-  SecurityGroupArns:
-    - String
-  Subdirectory: String
-  Tags:
-    - Tag
-
+  [FsxFilesystemArn](#cfn-datasync-locationfsxlustre-fsxfilesystemarn): {{String}}
+  [SecurityGroupArns](#cfn-datasync-locationfsxlustre-securitygrouparns): {{
+    - String}}
+  [Subdirectory](#cfn-datasync-locationfsxlustre-subdirectory): {{String}}
+  [Tags](#cfn-datasync-locationfsxlustre-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-datasync-locationfsxlustre-properties"></a>
 
-`FsxFilesystemArn`
+`FsxFilesystemArn`  <a name="cfn-datasync-locationfsxlustre-fsxfilesystemarn"></a>
+Specifies the Amazon Resource Name (ARN) of the FSx for Lustre file system.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):fsx:[a-z\-0-9]+:[0-9]{12}:file-system/fs-[0-9a-f]+$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specifies the Amazon Resource Name (ARN) of the FSx for Lustre file
-system.
+`SecurityGroupArns`  <a name="cfn-datasync-locationfsxlustre-securitygrouparns"></a>
+The ARNs of the security groups that are used to configure the FSx for Lustre file system.
+*Pattern*: `^arn:(aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b):ec2:[a-z\-0-9]*:[0-9]{12}:security-group/.*$`
+*Length constraints*: Maximum length of 128.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `128 | 5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Subdirectory`  <a name="cfn-datasync-locationfsxlustre-subdirectory"></a>
+Specifies a mount path for your FSx for Lustre file system. The path can include subdirectories.
+When the location is used as a source, DataSync reads data from the mount path. When the location is used as a destination, DataSync writes data to the mount path. If you don't include this parameter, DataSync uses the file system's root directory (`/`).
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-\+\./\(\)\$\p{Zs}]+$`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):fsx:[a-z\-0-9]+:[0-9]{12}:file-system/fs-[0-9a-f]+$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroupArns`
-
-The ARNs of the security groups that are used to configure the FSx for Lustre file
-system.
-
-_Pattern_:
-`^arn:(aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b):ec2:[a-z\-0-9]*:[0-9]{12}:security-group/.*$`
-
-_Length constraints_: Maximum length of 128.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `128 | 5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Subdirectory`
-
-Specifies a mount path for your FSx for Lustre file system. The path can include
-subdirectories.
-
-When the location is used as a source, DataSync reads data from the mount path.
-When the location is used as a destination, DataSync writes data to the mount path.
-If you don't include this parameter, DataSync uses the file system's root directory
-( `/`).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-\+\./\(\)\$\p{Zs}]+$`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Specifies labels that help you categorize, filter, and search for your AWS
-resources. We recommend creating at least a name tag for your location.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-datasync-locationfsxlustre-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-datasync-locationfsxlustre-tags"></a>
+Specifies labels that help you categorize, filter, and search for your AWS resources. We recommend creating at least a name tag for your location.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-datasync-locationfsxlustre-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-datasync-locationfsxlustre-return-values"></a>
 
 ### Ref
+<a name="aws-resource-datasync-locationfsxlustre-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the location resource ARN. For example:
 
-`arn:aws:datasync:us-east-2:111222333444:location/loc-07db7abfc326c50s3`
+ `arn:aws:datasync:us-east-2:111222333444:location/loc-07db7abfc326c50s3`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-datasync-locationfsxlustre-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`LocationArn`
+####
+<a name="aws-resource-datasync-locationfsxlustre-return-values-fn--getatt-fn--getatt"></a>
 
+`LocationArn`  <a name="LocationArn-fn::getatt"></a>
 The ARN of the specified FSx for Lustre file system location.
 
-`LocationUri`
-
+`LocationUri`  <a name="LocationUri-fn::getatt"></a>
 The URI of the specified FSx for Lustre file system location.
 
 ## Examples
+<a name="aws-resource-datasync-locationfsxlustre--examples"></a>
 
 ### Specify an Amazon FSx for Lustre location for DataSync
+<a name="aws-resource-datasync-locationfsxlustre--examples--Specify_an_Amazon_FSx_for_Lustre_location_for_DataSync"></a>
 
-The following examples specify an FSx for Lustre location for DataSync,
-including the subdirectory `/MySubdirectory`.
+The following examples specify an FSx for Lustre location for DataSync, including the subdirectory `/MySubdirectory`.
 
 #### JSON
+<a name="aws-resource-datasync-locationfsxlustre--examples--Specify_an_Amazon_FSx_for_Lustre_location_for_DataSync--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies an FSx for Lustre location for DataSync",
@@ -169,13 +137,12 @@ including the subdirectory `/MySubdirectory`.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-datasync-locationfsxlustre--examples--Specify_an_Amazon_FSx_for_Lustre_location_for_DataSync--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an FSx for Lustre location for DataSync
 Resources:
@@ -186,13 +153,6 @@ Resources:
       SecurityGroupArns:
         - arn:aws:ec2:us-east-2:11122233344:security-group/sg-12345678901212345
       Subdirectory: /MySubdirectory
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

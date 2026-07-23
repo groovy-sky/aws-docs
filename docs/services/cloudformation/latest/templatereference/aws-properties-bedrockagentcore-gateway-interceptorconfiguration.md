@@ -2,53 +2,42 @@
 title: "AWS::BedrockAgentCore::Gateway InterceptorConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway InterceptorConfiguration
+<a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration"></a>
 
 The interceptor configuration.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Lambda" : LambdaInterceptorConfiguration
+  "[Lambda](#cfn-bedrockagentcore-gateway-interceptorconfiguration-lambda)" : {{LambdaInterceptorConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Lambda:
-    LambdaInterceptorConfiguration
-
+```
+  [Lambda](#cfn-bedrockagentcore-gateway-interceptorconfiguration-lambda): {{
+    LambdaInterceptorConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration-properties"></a>
 
-`Lambda`
-
+`Lambda`  <a name="cfn-bedrockagentcore-gateway-interceptorconfiguration-lambda"></a>
 The details of the lambda function used for the interceptor.
-
-_Required_: Yes
-
-_Type_: [LambdaInterceptorConfiguration](aws-properties-bedrockagentcore-gateway-lambdainterceptorconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GatewayProtocolConfiguration
-
-InterceptorInputConfiguration
+*Required*: Yes
+*Type*: [LambdaInterceptorConfiguration](aws-properties-bedrockagentcore-gateway-lambdainterceptorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

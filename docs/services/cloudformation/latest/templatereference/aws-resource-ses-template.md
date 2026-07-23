@@ -2,96 +2,86 @@
 title: "AWS::SES::Template"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::Template
+<a name="aws-resource-ses-template"></a>
 
-Specifies an email template. Email templates enable you to send personalized email to
-one or more destinations in a single API operation.
+Specifies an email template. Email templates enable you to send personalized email to one or more destinations in a single API operation.
 
 ## Syntax
+<a name="aws-resource-ses-template-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-template-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::Template",
   "Properties" : {
-      "Tags" : [ Tag, ... ],
-      "Template" : Template
+      "[Tags](#cfn-ses-template-tags)" : {{[ Tag, ... ]}},
+      "[Template](#cfn-ses-template-template)" : {{Template}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-template-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::Template
 Properties:
-  Tags:
-    - Tag
-  Template:
-    Template
-
+  [Tags](#cfn-ses-template-tags): {{
+    - Tag}}
+  [Template](#cfn-ses-template-template): {{
+    Template}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-template-properties"></a>
 
-`Tags`
-
+`Tags`  <a name="cfn-ses-template-tags"></a>
 An array of objects that define the tags (keys and values) to associate with the email template.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-template-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-template-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Template`
-
-The content of the email, composed of a subject line and either an HTML part or a
-text-only part.
-
-_Required_: No
-
-_Type_: [Template](aws-properties-ses-template-template.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Template`  <a name="cfn-ses-template-template"></a>
+The content of the email, composed of a subject line and either an HTML part or a text-only part.
+*Required*: No
+*Type*: [Template](aws-properties-ses-template-template.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-template-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-template-return-values-fn--getatt"></a>
 
-`Id`
+####
+<a name="aws-resource-ses-template-return-values-fn--getatt-fn--getatt"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the resource ID. For example:
-
-`{ "Ref": "MyTemplate" }`
-
-For the Amazon SES template `MyTemplate`, `Ref` returns the
-template ID.
+`Id`  <a name="Id-fn::getatt"></a>
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ID. For example:
+ `{ "Ref": "MyTemplate" }`
+For the Amazon SES template `MyTemplate`, `Ref` returns the template ID.
 
 ## Examples
+<a name="aws-resource-ses-template--examples"></a>
 
-Specifies an email template, which is used when sending templated email
-messages.
+Specifies an email template, which is used when sending templated email messages.
+
+###
+<a name="aws-resource-ses-template--examples--"></a>
 
 #### JSON
+<a name="aws-resource-ses-template--examples----json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES Template Sample Template",
@@ -134,9 +124,9 @@ messages.
 ```
 
 #### YAML
+<a name="aws-resource-ses-template--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES Template Sample Template
 Parameters:
@@ -158,11 +148,5 @@ Resources:
         TextPart: !Ref TextPart
         HtmlPart: !Ref HtmlPart
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SES::ReceiptRuleSet
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

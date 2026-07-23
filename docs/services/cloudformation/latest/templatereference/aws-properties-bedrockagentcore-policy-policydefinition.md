@@ -2,53 +2,51 @@
 title: "AWS::BedrockAgentCore::Policy PolicyDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Policy PolicyDefinition
+<a name="aws-properties-bedrockagentcore-policy-policydefinition"></a>
 
 The definition structure for policies. Encapsulates different policy formats.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-policy-policydefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-policy-policydefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cedar" : CedarPolicy
+  "[Cedar](#cfn-bedrockagentcore-policy-policydefinition-cedar)" : {{CedarPolicy}},
+  "[Policy](#cfn-bedrockagentcore-policy-policydefinition-policy)" : {{PolicyStatement}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-policy-policydefinition-syntax.yaml"></a>
 
-```yaml
-
-  Cedar:
-    CedarPolicy
-
+```
+  [Cedar](#cfn-bedrockagentcore-policy-policydefinition-cedar): {{
+    CedarPolicy}}
+  [Policy](#cfn-bedrockagentcore-policy-policydefinition-policy): {{
+    PolicyStatement}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-policy-policydefinition-properties"></a>
 
-`Cedar`
-
+`Cedar`  <a name="cfn-bedrockagentcore-policy-policydefinition-cedar"></a>
 The Cedar policy definition.
+*Required*: No
+*Type*: [CedarPolicy](aws-properties-bedrockagentcore-policy-cedarpolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [CedarPolicy](aws-properties-bedrockagentcore-policy-cedarpolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CedarPolicy
-
-AWS::BedrockAgentCore::PolicyEngine
+`Policy`  <a name="cfn-bedrockagentcore-policy-policydefinition-policy"></a>
+The policy statement definition.
+*Required*: No
+*Type*: [PolicyStatement](aws-properties-bedrockagentcore-policy-policystatement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

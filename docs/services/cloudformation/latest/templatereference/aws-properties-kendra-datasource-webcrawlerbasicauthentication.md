@@ -2,105 +2,68 @@
 title: "AWS::Kendra::DataSource WebCrawlerBasicAuthentication"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource WebCrawlerBasicAuthentication
+<a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication"></a>
 
-Provides the configuration information to connect to websites that require basic user
-authentication.
+Provides the configuration information to connect to websites that require basic user authentication.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication-syntax.json"></a>
 
-```json
-
+```
 {
-  "Credentials" : String,
-  "Host" : String,
-  "Port" : Integer
+  "[Credentials](#cfn-kendra-datasource-webcrawlerbasicauthentication-credentials)" : {{String}},
+  "[Host](#cfn-kendra-datasource-webcrawlerbasicauthentication-host)" : {{String}},
+  "[Port](#cfn-kendra-datasource-webcrawlerbasicauthentication-port)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication-syntax.yaml"></a>
 
-```yaml
-
-  Credentials: String
-  Host: String
-  Port: Integer
-
+```
+  [Credentials](#cfn-kendra-datasource-webcrawlerbasicauthentication-credentials): {{String}}
+  [Host](#cfn-kendra-datasource-webcrawlerbasicauthentication-host): {{String}}
+  [Port](#cfn-kendra-datasource-webcrawlerbasicauthentication-port): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication-properties"></a>
 
-`Credentials`
+`Credentials`  <a name="cfn-kendra-datasource-webcrawlerbasicauthentication-credentials"></a>
+The Amazon Resource Name (ARN) of an AWS Secrets Manager secret. You create a secret to store your credentials in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+You use a secret if basic authentication credentials are required to connect to a website. The secret stores your credentials of user name and password.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
+*Minimum*: `1`
+*Maximum*: `1284`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret. You create a
-secret to store your credentials in [AWS Secrets Manager](../../../secretsmanager/latest/userguide/intro.md)
+`Host`  <a name="cfn-kendra-datasource-webcrawlerbasicauthentication-host"></a>
+The name of the website host you want to connect to using authentication credentials.
+For example, the host name of https://a.example.com/page1.html is "a.example.com".
+*Required*: Yes
+*Type*: String
+*Pattern*: `([^\s]*)`
+*Minimum*: `1`
+*Maximum*: `253`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You use a secret if basic authentication credentials are required to connect to a
-website. The secret stores your credentials of user name and password.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
-
-_Minimum_: `1`
-
-_Maximum_: `1284`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Host`
-
-The name of the website host you want to connect to using authentication
-credentials.
-
-For example, the host name of https://a.example.com/page1.html is
-"a.example.com".
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([^\s]*)`
-
-_Minimum_: `1`
-
-_Maximum_: `253`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
-The port number of the website host you want to connect to using authentication
-credentials.
-
-For example, the port for https://a.example.com/page1.html is 443, the standard port
-for HTTPS.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WebCrawlerAuthenticationConfiguration
-
-WebCrawlerConfiguration
+`Port`  <a name="cfn-kendra-datasource-webcrawlerbasicauthentication-port"></a>
+The port number of the website host you want to connect to using authentication credentials.
+For example, the port for https://a.example.com/page1.html is 443, the standard port for HTTPS.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

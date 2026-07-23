@@ -2,77 +2,55 @@
 title: "AWS::EMRContainers::Endpoint CloudWatchMonitoringConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::Endpoint CloudWatchMonitoringConfiguration
+<a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration"></a>
 
-A configuration for CloudWatch monitoring. You can configure your jobs to send log
-information to CloudWatch Logs.
+A configuration for CloudWatch monitoring. You can configure your jobs to send log information to CloudWatch Logs.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogGroupName" : String,
-  "LogStreamNamePrefix" : String
+  "[LogGroupName](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-loggroupname)" : {{String}},
+  "[LogStreamNamePrefix](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-logstreamnameprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LogGroupName: String
-  LogStreamNamePrefix: String
-
+```
+  [LogGroupName](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-loggroupname): {{String}}
+  [LogStreamNamePrefix](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-logstreamnameprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-properties"></a>
 
-`LogGroupName`
-
+`LogGroupName`  <a name="cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-loggroupname"></a>
 The name of the log group for log publishing.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\.\-_/#A-Za-z0-9]+`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\.\-_/#A-Za-z0-9]+`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogStreamNamePrefix`
-
+`LogStreamNamePrefix`  <a name="cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-logstreamnameprefix"></a>
 The specified name prefix for log streams.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Certificate
-
-ConfigurationOverrides
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

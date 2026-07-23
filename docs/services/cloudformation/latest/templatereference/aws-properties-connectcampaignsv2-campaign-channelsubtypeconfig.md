@@ -2,92 +2,69 @@
 title: "AWS::ConnectCampaignsV2::Campaign ChannelSubtypeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign ChannelSubtypeConfig
+<a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig"></a>
 
 Contains channel subtype configuration for an outbound campaign.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Email" : EmailChannelSubtypeConfig,
-  "Sms" : SmsChannelSubtypeConfig,
-  "Telephony" : TelephonyChannelSubtypeConfig,
-  "WhatsApp" : WhatsAppChannelSubtypeConfig
+  "[Email](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-email)" : {{EmailChannelSubtypeConfig}},
+  "[Sms](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-sms)" : {{SmsChannelSubtypeConfig}},
+  "[Telephony](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-telephony)" : {{TelephonyChannelSubtypeConfig}},
+  "[WhatsApp](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-whatsapp)" : {{WhatsAppChannelSubtypeConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig-syntax.yaml"></a>
 
-```yaml
-
-  Email:
-    EmailChannelSubtypeConfig
-  Sms:
-    SmsChannelSubtypeConfig
-  Telephony:
-    TelephonyChannelSubtypeConfig
-  WhatsApp:
-    WhatsAppChannelSubtypeConfig
-
+```
+  [Email](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-email): {{
+    EmailChannelSubtypeConfig}}
+  [Sms](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-sms): {{
+    SmsChannelSubtypeConfig}}
+  [Telephony](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-telephony): {{
+    TelephonyChannelSubtypeConfig}}
+  [WhatsApp](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-whatsapp): {{
+    WhatsAppChannelSubtypeConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig-properties"></a>
 
-`Email`
-
+`Email`  <a name="cfn-connectcampaignsv2-campaign-channelsubtypeconfig-email"></a>
 The configuration of the email channel subtype.
+*Required*: No
+*Type*: [EmailChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-emailchannelsubtypeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EmailChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-emailchannelsubtypeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sms`
-
+`Sms`  <a name="cfn-connectcampaignsv2-campaign-channelsubtypeconfig-sms"></a>
 The configuration of the SMS channel subtype.
+*Required*: No
+*Type*: [SmsChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SmsChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-smschannelsubtypeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Telephony`
-
+`Telephony`  <a name="cfn-connectcampaignsv2-campaign-channelsubtypeconfig-telephony"></a>
 The configuration of the telephony channel subtype.
+*Required*: No
+*Type*: [TelephonyChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-telephonychannelsubtypeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TelephonyChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-telephonychannelsubtypeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WhatsApp`
-
+`WhatsApp`  <a name="cfn-connectcampaignsv2-campaign-channelsubtypeconfig-whatsapp"></a>
 The configuration of the WhatsApp channel subtype.
-
-_Required_: No
-
-_Type_: [WhatsAppChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnswerMachineDetectionConfig
-
-CommunicationLimit
+*Required*: No
+*Type*: [WhatsAppChannelSubtypeConfig](aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

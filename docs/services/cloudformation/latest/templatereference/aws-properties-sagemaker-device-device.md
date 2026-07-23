@@ -2,92 +2,65 @@
 title: "AWS::SageMaker::Device Device"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Device Device
+<a name="aws-properties-sagemaker-device-device"></a>
 
 Information of a particular device.
 
 ## Syntax
+<a name="aws-properties-sagemaker-device-device-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-device-device-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "DeviceName" : String,
-  "IotThingName" : String
+  "[Description](#cfn-sagemaker-device-device-description)" : {{String}},
+  "[DeviceName](#cfn-sagemaker-device-device-devicename)" : {{String}},
+  "[IotThingName](#cfn-sagemaker-device-device-iotthingname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-device-device-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  DeviceName: String
-  IotThingName: String
-
+```
+  [Description](#cfn-sagemaker-device-device-description): {{String}}
+  [DeviceName](#cfn-sagemaker-device-device-devicename): {{String}}
+  [IotThingName](#cfn-sagemaker-device-device-iotthingname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-device-device-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-sagemaker-device-device-description"></a>
 Description of the device.
+*Required*: No
+*Type*: String
+*Pattern*: `[\S\s]+`
+*Minimum*: `1`
+*Maximum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\S\s]+`
-
-_Minimum_: `1`
-
-_Maximum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeviceName`
-
+`DeviceName`  <a name="cfn-sagemaker-device-device-devicename"></a>
 The name of the device.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IotThingName`
-
+`IotThingName`  <a name="cfn-sagemaker-device-device-iotthingname"></a>
 AWS Internet of Things (IoT) object name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9:_-]+`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::Device
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9:_-]+`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

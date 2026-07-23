@@ -2,122 +2,85 @@
 title: "AWS::ResilienceHub::App ResourceMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResilienceHub::App ResourceMapping
+<a name="aws-properties-resiliencehub-app-resourcemapping"></a>
 
 Defines a resource mapping.
 
 ## Syntax
+<a name="aws-properties-resiliencehub-app-resourcemapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-resiliencehub-app-resourcemapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "EksSourceName" : String,
-  "LogicalStackName" : String,
-  "MappingType" : String,
-  "PhysicalResourceId" : PhysicalResourceId,
-  "ResourceName" : String,
-  "TerraformSourceName" : String
+  "[EksSourceName](#cfn-resiliencehub-app-resourcemapping-ekssourcename)" : {{String}},
+  "[LogicalStackName](#cfn-resiliencehub-app-resourcemapping-logicalstackname)" : {{String}},
+  "[MappingType](#cfn-resiliencehub-app-resourcemapping-mappingtype)" : {{String}},
+  "[PhysicalResourceId](#cfn-resiliencehub-app-resourcemapping-physicalresourceid)" : {{PhysicalResourceId}},
+  "[ResourceName](#cfn-resiliencehub-app-resourcemapping-resourcename)" : {{String}},
+  "[TerraformSourceName](#cfn-resiliencehub-app-resourcemapping-terraformsourcename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-resiliencehub-app-resourcemapping-syntax.yaml"></a>
 
-```yaml
-
-  EksSourceName: String
-  LogicalStackName: String
-  MappingType: String
-  PhysicalResourceId:
-    PhysicalResourceId
-  ResourceName: String
-  TerraformSourceName: String
-
+```
+  [EksSourceName](#cfn-resiliencehub-app-resourcemapping-ekssourcename): {{String}}
+  [LogicalStackName](#cfn-resiliencehub-app-resourcemapping-logicalstackname): {{String}}
+  [MappingType](#cfn-resiliencehub-app-resourcemapping-mappingtype): {{String}}
+  [PhysicalResourceId](#cfn-resiliencehub-app-resourcemapping-physicalresourceid): {{
+    PhysicalResourceId}}
+  [ResourceName](#cfn-resiliencehub-app-resourcemapping-resourcename): {{String}}
+  [TerraformSourceName](#cfn-resiliencehub-app-resourcemapping-terraformsourcename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-resiliencehub-app-resourcemapping-properties"></a>
 
-`EksSourceName`
-
-Name of the Amazon Elastic Kubernetes Service cluster and namespace that this resource is mapped to when the `mappingType` is
-`EKS`.
-
-###### Note
-
+`EksSourceName`  <a name="cfn-resiliencehub-app-resourcemapping-ekssourcename"></a>
+Name of the Amazon Elastic Kubernetes Service cluster and namespace that this resource is mapped to when the `mappingType` is `EKS`.
 This parameter accepts values in "eks-cluster/namespace" format.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogicalStackName`
-
+`LogicalStackName`  <a name="cfn-resiliencehub-app-resourcemapping-logicalstackname"></a>
 Name of the CloudFormation stack this resource is mapped to when the `mappingType` is `CfnStack`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MappingType`
-
+`MappingType`  <a name="cfn-resiliencehub-app-resourcemapping-mappingtype"></a>
 Specifies the type of resource mapping.
+*Required*: Yes
+*Type*: String
+*Pattern*: `CfnStack|Resource|Terraform|EKS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `CfnStack|Resource|Terraform|EKS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PhysicalResourceId`
-
+`PhysicalResourceId`  <a name="cfn-resiliencehub-app-resourcemapping-physicalresourceid"></a>
 Identifier of the physical resource.
+*Required*: Yes
+*Type*: [PhysicalResourceId](aws-properties-resiliencehub-app-physicalresourceid.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [PhysicalResourceId](aws-properties-resiliencehub-app-physicalresourceid.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceName`
-
+`ResourceName`  <a name="cfn-resiliencehub-app-resourcemapping-resourcename"></a>
 Name of the resource that this resource is mapped to when the `mappingType` is `Resource`.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9_\-]{1,59}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9_\-]{1,59}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TerraformSourceName`
-
+`TerraformSourceName`  <a name="cfn-resiliencehub-app-resourcemapping-terraformsourcename"></a>
 Name of the Terraform source that this resource is mapped to when the `mappingType` is `Terraform`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PhysicalResourceId
-
-AWS::ResilienceHub::ResiliencyPolicy
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

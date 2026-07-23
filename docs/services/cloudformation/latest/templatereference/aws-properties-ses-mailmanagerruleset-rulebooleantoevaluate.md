@@ -2,81 +2,60 @@
 title: "AWS::SES::MailManagerRuleSet RuleBooleanToEvaluate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet RuleBooleanToEvaluate
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate"></a>
 
-The union type representing the allowed types of operands for a boolean
-condition.
+The union type representing the allowed types of operands for a boolean condition.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate-syntax.json"></a>
 
-```json
-
+```
 {
-  "Analysis" : Analysis,
-  "Attribute" : String,
-  "IsInAddressList" : RuleIsInAddressList
+  "[Analysis](#cfn-ses-mailmanagerruleset-rulebooleantoevaluate-analysis)" : {{Analysis}},
+  "[Attribute](#cfn-ses-mailmanagerruleset-rulebooleantoevaluate-attribute)" : {{String}},
+  "[IsInAddressList](#cfn-ses-mailmanagerruleset-rulebooleantoevaluate-isinaddresslist)" : {{RuleIsInAddressList}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate-syntax.yaml"></a>
 
-```yaml
-
-  Analysis:
-    Analysis
-  Attribute: String
-  IsInAddressList:
-    RuleIsInAddressList
-
+```
+  [Analysis](#cfn-ses-mailmanagerruleset-rulebooleantoevaluate-analysis): {{
+    Analysis}}
+  [Attribute](#cfn-ses-mailmanagerruleset-rulebooleantoevaluate-attribute): {{String}}
+  [IsInAddressList](#cfn-ses-mailmanagerruleset-rulebooleantoevaluate-isinaddresslist): {{
+    RuleIsInAddressList}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagerruleset-rulebooleantoevaluate-properties"></a>
 
-`Analysis`
-
+`Analysis`  <a name="cfn-ses-mailmanagerruleset-rulebooleantoevaluate-analysis"></a>
 The Add On ARN and its returned value to evaluate in a boolean condition expression.
+*Required*: No
+*Type*: [Analysis](aws-properties-ses-mailmanagerruleset-analysis.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Analysis](aws-properties-ses-mailmanagerruleset-analysis.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Attribute`
-
+`Attribute`  <a name="cfn-ses-mailmanagerruleset-rulebooleantoevaluate-attribute"></a>
 The boolean type representing the allowed attribute types for an email.
+*Required*: No
+*Type*: String
+*Allowed values*: `READ_RECEIPT_REQUESTED | TLS | TLS_WRAPPED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `READ_RECEIPT_REQUESTED | TLS | TLS_WRAPPED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsInAddressList`
-
+`IsInAddressList`  <a name="cfn-ses-mailmanagerruleset-rulebooleantoevaluate-isinaddresslist"></a>
 The structure representing the address lists and address list attribute that will be used in evaluation of boolean expression.
-
-_Required_: No
-
-_Type_: [RuleIsInAddressList](aws-properties-ses-mailmanagerruleset-ruleisinaddresslist.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleBooleanExpression
-
-RuleCondition
+*Required*: No
+*Type*: [RuleIsInAddressList](aws-properties-ses-mailmanagerruleset-ruleisinaddresslist.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

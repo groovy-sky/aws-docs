@@ -2,90 +2,64 @@
 title: "AWS::AppFlow::Flow CustomConnectorSourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow CustomConnectorSourceProperties
+<a name="aws-properties-appflow-flow-customconnectorsourceproperties"></a>
 
-The properties that are applied when the custom connector is being used as a
-source.
+The properties that are applied when the custom connector is being used as a source.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-customconnectorsourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-customconnectorsourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomProperties" : {Key: Value, ...},
-  "DataTransferApi" : DataTransferApi,
-  "EntityName" : String
+  "[CustomProperties](#cfn-appflow-flow-customconnectorsourceproperties-customproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[DataTransferApi](#cfn-appflow-flow-customconnectorsourceproperties-datatransferapi)" : {{DataTransferApi}},
+  "[EntityName](#cfn-appflow-flow-customconnectorsourceproperties-entityname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-customconnectorsourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  CustomProperties:
-    Key: Value
-  DataTransferApi:
-    DataTransferApi
-  EntityName: String
-
+```
+  [CustomProperties](#cfn-appflow-flow-customconnectorsourceproperties-customproperties): {{
+    {{Key}}: {{Value}}}}
+  [DataTransferApi](#cfn-appflow-flow-customconnectorsourceproperties-datatransferapi): {{
+    DataTransferApi}}
+  [EntityName](#cfn-appflow-flow-customconnectorsourceproperties-entityname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-customconnectorsourceproperties-properties"></a>
 
-`CustomProperties`
-
+`CustomProperties`  <a name="cfn-appflow-flow-customconnectorsourceproperties-customproperties"></a>
 Custom properties that are required to use the custom connector as a source.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\w]{1,2048}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DataTransferApi`  <a name="cfn-appflow-flow-customconnectorsourceproperties-datatransferapi"></a>
+The API of the connector application that Amazon AppFlow uses to transfer your data.
+*Required*: No
+*Type*: [DataTransferApi](aws-properties-appflow-flow-datatransferapi.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Object of String
-
-_Pattern_: `^[\w]{1,2048}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataTransferApi`
-
-The API of the connector application that Amazon AppFlow uses to transfer your
-data.
-
-_Required_: No
-
-_Type_: [DataTransferApi](aws-properties-appflow-flow-datatransferapi.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntityName`
-
+`EntityName`  <a name="cfn-appflow-flow-customconnectorsourceproperties-entityname"></a>
 The entity specified in the custom connector as a source in the flow.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomConnectorDestinationProperties
-
-DatadogSourceProperties
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

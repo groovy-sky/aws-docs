@@ -2,173 +2,130 @@
 title: "AWS::Omics::RunGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::RunGroup
+<a name="aws-resource-omics-rungroup"></a>
 
-Creates a run group to limit the compute resources for the runs that are added to the group.
-Returns an ARN, ID, and tags for the run group.
+Creates a run group to limit the compute resources for the runs that are added to the group. Returns an ARN, ID, and tags for the run group.
 
 ## Syntax
+<a name="aws-resource-omics-rungroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-omics-rungroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Omics::RunGroup",
   "Properties" : {
-      "MaxCpus" : Number,
-      "MaxDuration" : Number,
-      "MaxGpus" : Number,
-      "MaxRuns" : Number,
-      "Name" : String,
-      "Tags" : {Key: Value, ...}
+      "[MaxCpus](#cfn-omics-rungroup-maxcpus)" : {{Number}},
+      "[MaxDuration](#cfn-omics-rungroup-maxduration)" : {{Number}},
+      "[MaxGpus](#cfn-omics-rungroup-maxgpus)" : {{Number}},
+      "[MaxRuns](#cfn-omics-rungroup-maxruns)" : {{Number}},
+      "[Name](#cfn-omics-rungroup-name)" : {{String}},
+      "[Tags](#cfn-omics-rungroup-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-omics-rungroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Omics::RunGroup
 Properties:
-  MaxCpus: Number
-  MaxDuration: Number
-  MaxGpus: Number
-  MaxRuns: Number
-  Name: String
-  Tags:
-    Key: Value
-
+  [MaxCpus](#cfn-omics-rungroup-maxcpus): {{Number}}
+  [MaxDuration](#cfn-omics-rungroup-maxduration): {{Number}}
+  [MaxGpus](#cfn-omics-rungroup-maxgpus): {{Number}}
+  [MaxRuns](#cfn-omics-rungroup-maxruns): {{Number}}
+  [Name](#cfn-omics-rungroup-name): {{String}}
+  [Tags](#cfn-omics-rungroup-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-omics-rungroup-properties"></a>
 
-`MaxCpus`
-
+`MaxCpus`  <a name="cfn-omics-rungroup-maxcpus"></a>
 The group's maximum CPU count setting.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxDuration`
-
+`MaxDuration`  <a name="cfn-omics-rungroup-maxduration"></a>
 The group's maximum duration setting in minutes.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MaxGpus`  <a name="cfn-omics-rungroup-maxgpus"></a>
+ The maximum GPUs that can be used by a run group.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxGpus`
-
-The maximum GPUs that can be used by a run group.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxRuns`
-
+`MaxRuns`  <a name="cfn-omics-rungroup-maxruns"></a>
 The group's maximum concurrent run setting.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-omics-rungroup-name"></a>
 The group's name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-omics-rungroup-tags"></a>
 Tags for the group.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-omics-rungroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-omics-rungroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the details of this resource. For example:
 
-`{ "Ref": "RunGroup.CreationTime" }` `Ref` returns the timestamp for a run group.
+`{ "Ref": "RunGroup.CreationTime" }``Ref` returns the timestamp for a run group.
 
 ### Fn::GetAtt
+<a name="aws-resource-omics-rungroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-omics-rungroup-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The run group's ARN.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 When the run group was created.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The run group's ID.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SseConfig
-
-AWS::Omics::SequenceStore
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,200 +2,145 @@
 title: "AWS::AppConfig::HostedConfigurationVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppConfig::HostedConfigurationVersion
+<a name="aws-resource-appconfig-hostedconfigurationversion"></a>
 
-Create a new configuration in the AWS AppConfig hosted configuration store.
-Configurations must be 1 MB or smaller. The AWS AppConfig hosted configuration store
-provides the following benefits over other configuration store options.
-
-- You don't need to set up and configure other services such as Amazon Simple Storage Service
-(Amazon S3) or Parameter Store.
-
-- You don't need to configure AWS Identity and Access Management (IAM)
-permissions to use the configuration store.
-
-- You can store configurations in any content type.
-
-- There is no cost to use the store.
-
-- You can create a configuration and add it to the store when you create a configuration
-profile.
+Create a new configuration in the AWS AppConfig hosted configuration store. Configurations must be 1 MB or smaller. The AWS AppConfig hosted configuration store provides the following benefits over other configuration store options.
++ You don't need to set up and configure other services such as Amazon Simple Storage Service (Amazon S3) or Parameter Store.
++ You don't need to configure AWS Identity and Access Management (IAM) permissions to use the configuration store.
++ You can store configurations in any content type.
++ There is no cost to use the store.
++ You can create a configuration and add it to the store when you create a configuration profile.
 
 ## Syntax
+<a name="aws-resource-appconfig-hostedconfigurationversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appconfig-hostedconfigurationversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppConfig::HostedConfigurationVersion",
   "Properties" : {
-      "ApplicationId" : String,
-      "ConfigurationProfileId" : String,
-      "Content" : String,
-      "ContentType" : String,
-      "Description" : String,
-      "LatestVersionNumber" : Integer,
-      "VersionLabel" : String
+      "[ApplicationId](#cfn-appconfig-hostedconfigurationversion-applicationid)" : {{String}},
+      "[ConfigurationProfileId](#cfn-appconfig-hostedconfigurationversion-configurationprofileid)" : {{String}},
+      "[Content](#cfn-appconfig-hostedconfigurationversion-content)" : {{String}},
+      "[ContentType](#cfn-appconfig-hostedconfigurationversion-contenttype)" : {{String}},
+      "[Description](#cfn-appconfig-hostedconfigurationversion-description)" : {{String}},
+      "[LatestVersionNumber](#cfn-appconfig-hostedconfigurationversion-latestversionnumber)" : {{Integer}},
+      "[VersionLabel](#cfn-appconfig-hostedconfigurationversion-versionlabel)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appconfig-hostedconfigurationversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppConfig::HostedConfigurationVersion
 Properties:
-  ApplicationId: String
-  ConfigurationProfileId: String
-  Content: String
-  ContentType: String
-  Description: String
-  LatestVersionNumber: Integer
-  VersionLabel: String
-
+  [ApplicationId](#cfn-appconfig-hostedconfigurationversion-applicationid): {{String}}
+  [ConfigurationProfileId](#cfn-appconfig-hostedconfigurationversion-configurationprofileid): {{String}}
+  [Content](#cfn-appconfig-hostedconfigurationversion-content): {{String}}
+  [ContentType](#cfn-appconfig-hostedconfigurationversion-contenttype): {{String}}
+  [Description](#cfn-appconfig-hostedconfigurationversion-description): {{String}}
+  [LatestVersionNumber](#cfn-appconfig-hostedconfigurationversion-latestversionnumber): {{Integer}}
+  [VersionLabel](#cfn-appconfig-hostedconfigurationversion-versionlabel): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-appconfig-hostedconfigurationversion-properties"></a>
 
-`ApplicationId`
+`ApplicationId`  <a name="cfn-appconfig-hostedconfigurationversion-applicationid"></a>
+The ID or name of the application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z0-9]{4,7}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The application ID.
+`ConfigurationProfileId`  <a name="cfn-appconfig-hostedconfigurationversion-configurationprofileid"></a>
+The ID or name of the configuration profile.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z0-9]{4,7}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z0-9]{4,7}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConfigurationProfileId`
-
-The configuration profile ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z0-9]{4,7}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Content`
-
+`Content`  <a name="cfn-appconfig-hostedconfigurationversion-content"></a>
 The configuration data, as bytes.
+AWS AppConfig accepts any type of data, including text formats like JSON or TOML, or binary formats like protocol buffers or compressed data.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Note
+`ContentType`  <a name="cfn-appconfig-hostedconfigurationversion-contenttype"></a>
+A standard MIME type describing the format of the configuration content. For more information, see [Content-Type](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17).
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-AWS AppConfig accepts any type of data, including text formats like JSON or
-TOML, or binary formats like protocol buffers or compressed data.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContentType`
-
-A standard MIME type describing the format of the configuration content. For more
-information, see [Content-Type](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-appconfig-hostedconfigurationversion-description"></a>
 A description of the configuration.
-
-###### Note
-
 Due to HTTP limitations, this field only supports ASCII characters.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`LatestVersionNumber`  <a name="cfn-appconfig-hostedconfigurationversion-latestversionnumber"></a>
+An optional locking token used to prevent race conditions from overwriting configuration updates when creating a new version. To ensure your data is not overwritten when creating multiple hosted configuration versions in rapid succession, specify the version number of the latest hosted configuration version.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LatestVersionNumber`
-
-An optional locking token used to prevent race conditions from overwriting configuration
-updates when creating a new version. To ensure your data is not overwritten when creating
-multiple hosted configuration versions in rapid succession, specify the version number of
-the latest hosted configuration version.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VersionLabel`
-
+`VersionLabel`  <a name="cfn-appconfig-hostedconfigurationversion-versionlabel"></a>
 A user-defined label for an AWS AppConfig hosted configuration version.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^$|.*[^0-9].*`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `^$|.*[^0-9].*`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-appconfig-hostedconfigurationversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appconfig-hostedconfigurationversion-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the version number.
 
 ### Fn::GetAtt
+<a name="aws-resource-appconfig-hostedconfigurationversion-return-values-fn--getatt"></a>
 
-`VersionNumber`
+####
+<a name="aws-resource-appconfig-hostedconfigurationversion-return-values-fn--getatt-fn--getatt"></a>
 
+`VersionNumber`  <a name="VersionNumber-fn::getatt"></a>
 The configuration version.
 
 ## Examples
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples"></a>
 
-- [AWS AppConfig feature flag](#aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag)
-
-- [AWS AppConfig hosted configuration](#aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration)
+**Topics**
++ [AWS AppConfig feature flag](#aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag)
++ [AWS AppConfig hosted configuration](#aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration)
 
 ### AWS AppConfig feature flag
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag"></a>
 
-The following example creates an AWS AppConfig configuration profile of type
-`HostedConfigurationVersion`. The feature flag created by this example
-enables cryptocurrency at checkout. AWS AppConfig stores the configuration data
-for this profile in the AWS AppConfig hosted configuration store.
+The following example creates an AWS AppConfig configuration profile of type `HostedConfigurationVersion`. The feature flag created by this example enables cryptocurrency at checkout. AWS AppConfig stores the configuration data for this profile in the AWS AppConfig hosted configuration store.
 
 #### JSON
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::LanguageExtensions",
@@ -271,9 +216,9 @@ for this profile in the AWS AppConfig hosted configuration store.
 ```
 
 #### YAML
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Transform: 'AWS::LanguageExtensions'
 Resources:
@@ -328,14 +273,14 @@ Resources:
 ```
 
 ### AWS AppConfig hosted configuration
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration"></a>
 
-The following example creates an AWS AppConfig configuration profile named
-`MyTestProfile` for an application called `MyApplication`. AWS AppConfig stores the configuration data for this profile in the AWS AppConfig hosted configuration store.
+The following example creates an AWS AppConfig configuration profile named `MyTestProfile` for an application called `MyApplication`. AWS AppConfig stores the configuration data for this profile in the AWS AppConfig hosted configuration store.
 
 #### JSON
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "DependentApplication": {
@@ -367,9 +312,9 @@ The following example creates an AWS AppConfig configuration profile named
 ```
 
 #### YAML
+<a name="aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration--yaml"></a>
 
-```yaml
-
+```
 Resources:
   DependentApplication:
     Type: AWS::AppConfig::Application
@@ -392,17 +337,9 @@ Resources:
 ```
 
 ## See also
-
-- [AWS AppConfig](../../../appconfig/latest/userguide/what-is-appconfig.md)
-
-- [Creating a configuration and a configuration profile](../../../systems-manager/latest/userguide/appconfig-creating-configuration-and-profile.md)
-
-- [About the AWS AppConfig hosted configuration store](../../../systems-manager/latest/userguide/appconfig-creating-configuration-and-profile.md#appconfig-creating-configuration-and-profile-about-hosted-store)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+<a name="aws-resource-appconfig-hostedconfigurationversion--seealso"></a>
++  [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)
++  [Creating a configuration and a configuration profile ](https://docs.aws.amazon.com/systems-manager/latest/userguide/appconfig-creating-configuration-and-profile.html)
++  [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/systems-manager/latest/userguide/appconfig-creating-configuration-and-profile.html#appconfig-creating-configuration-and-profile-about-hosted-store)
 
 All content copied from https://docs.aws.amazon.com/.

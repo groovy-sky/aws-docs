@@ -2,389 +2,263 @@
 title: "AWS::KinesisFirehose::DeliveryStream"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream
+<a name="aws-resource-kinesisfirehose-deliverystream"></a>
 
-The `AWS::KinesisFirehose::DeliveryStream` resource specifies an Amazon
-Kinesis Data Firehose (Kinesis Data Firehose) delivery stream that delivers real-time
-streaming data to an Amazon Simple Storage Service (Amazon S3), Amazon Redshift, or Amazon
-Elasticsearch Service (Amazon ES) destination. For more information, see [Creating an Amazon\
-Kinesis Data Firehose Delivery Stream](../../../firehose/latest/dev/basic-create.md) in the _Amazon Kinesis Data_
-_Firehose Developer Guide_.
+The `AWS::KinesisFirehose::DeliveryStream` resource specifies an Amazon Kinesis Data Firehose (Kinesis Data Firehose) delivery stream that delivers real-time streaming data to an Amazon Simple Storage Service (Amazon S3), Amazon Redshift, or Amazon Elasticsearch Service (Amazon ES) destination. For more information, see [Creating an Amazon Kinesis Data Firehose Delivery Stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html) in the *Amazon Kinesis Data Firehose Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-kinesisfirehose-deliverystream-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kinesisfirehose-deliverystream-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::KinesisFirehose::DeliveryStream",
   "Properties" : {
-      "AmazonOpenSearchServerlessDestinationConfiguration" : AmazonOpenSearchServerlessDestinationConfiguration,
-      "AmazonopensearchserviceDestinationConfiguration" : AmazonopensearchserviceDestinationConfiguration,
-      "DatabaseSourceConfiguration" : DatabaseSourceConfiguration,
-      "DeliveryStreamEncryptionConfigurationInput" : DeliveryStreamEncryptionConfigurationInput,
-      "DeliveryStreamName" : String,
-      "DeliveryStreamType" : String,
-      "DirectPutSourceConfiguration" : DirectPutSourceConfiguration,
-      "ElasticsearchDestinationConfiguration" : ElasticsearchDestinationConfiguration,
-      "ExtendedS3DestinationConfiguration" : ExtendedS3DestinationConfiguration,
-      "HttpEndpointDestinationConfiguration" : HttpEndpointDestinationConfiguration,
-      "IcebergDestinationConfiguration" : IcebergDestinationConfiguration,
-      "KinesisStreamSourceConfiguration" : KinesisStreamSourceConfiguration,
-      "MSKSourceConfiguration" : MSKSourceConfiguration,
-      "RedshiftDestinationConfiguration" : RedshiftDestinationConfiguration,
-      "S3DestinationConfiguration" : S3DestinationConfiguration,
-      "SnowflakeDestinationConfiguration" : SnowflakeDestinationConfiguration,
-      "SplunkDestinationConfiguration" : SplunkDestinationConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[AmazonOpenSearchServerlessDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessdestinationconfiguration)" : {{AmazonOpenSearchServerlessDestinationConfiguration}},
+      "[AmazonopensearchserviceDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration)" : {{AmazonopensearchserviceDestinationConfiguration}},
+      "[DatabaseSourceConfiguration](#cfn-kinesisfirehose-deliverystream-databasesourceconfiguration)" : {{DatabaseSourceConfiguration}},
+      "[DeliveryStreamEncryptionConfigurationInput](#cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput)" : {{DeliveryStreamEncryptionConfigurationInput}},
+      "[DeliveryStreamName](#cfn-kinesisfirehose-deliverystream-deliverystreamname)" : {{String}},
+      "[DeliveryStreamType](#cfn-kinesisfirehose-deliverystream-deliverystreamtype)" : {{String}},
+      "[DirectPutSourceConfiguration](#cfn-kinesisfirehose-deliverystream-directputsourceconfiguration)" : {{DirectPutSourceConfiguration}},
+      "[ElasticsearchDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration)" : {{ElasticsearchDestinationConfiguration}},
+      "[ExtendedS3DestinationConfiguration](#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration)" : {{ExtendedS3DestinationConfiguration}},
+      "[HttpEndpointDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-httpendpointdestinationconfiguration)" : {{HttpEndpointDestinationConfiguration}},
+      "[IcebergDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration)" : {{IcebergDestinationConfiguration}},
+      "[KinesisStreamSourceConfiguration](#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration)" : {{KinesisStreamSourceConfiguration}},
+      "[MSKSourceConfiguration](#cfn-kinesisfirehose-deliverystream-msksourceconfiguration)" : {{MSKSourceConfiguration}},
+      "[RedshiftDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration)" : {{RedshiftDestinationConfiguration}},
+      "[S3DestinationConfiguration](#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration)" : {{S3DestinationConfiguration}},
+      "[SnowflakeDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration)" : {{SnowflakeDestinationConfiguration}},
+      "[SplunkDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration)" : {{SplunkDestinationConfiguration}},
+      "[Tags](#cfn-kinesisfirehose-deliverystream-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kinesisfirehose-deliverystream-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::KinesisFirehose::DeliveryStream
 Properties:
-  AmazonOpenSearchServerlessDestinationConfiguration:
-    AmazonOpenSearchServerlessDestinationConfiguration
-  AmazonopensearchserviceDestinationConfiguration:
-    AmazonopensearchserviceDestinationConfiguration
-  DatabaseSourceConfiguration:
-    DatabaseSourceConfiguration
-  DeliveryStreamEncryptionConfigurationInput:
-    DeliveryStreamEncryptionConfigurationInput
-  DeliveryStreamName: String
-  DeliveryStreamType: String
-  DirectPutSourceConfiguration:
-    DirectPutSourceConfiguration
-  ElasticsearchDestinationConfiguration:
-    ElasticsearchDestinationConfiguration
-  ExtendedS3DestinationConfiguration:
-    ExtendedS3DestinationConfiguration
-  HttpEndpointDestinationConfiguration:
-    HttpEndpointDestinationConfiguration
-  IcebergDestinationConfiguration:
-    IcebergDestinationConfiguration
-  KinesisStreamSourceConfiguration:
-    KinesisStreamSourceConfiguration
-  MSKSourceConfiguration:
-    MSKSourceConfiguration
-  RedshiftDestinationConfiguration:
-    RedshiftDestinationConfiguration
-  S3DestinationConfiguration:
-    S3DestinationConfiguration
-  SnowflakeDestinationConfiguration:
-    SnowflakeDestinationConfiguration
-  SplunkDestinationConfiguration:
-    SplunkDestinationConfiguration
-  Tags:
-    - Tag
-
+  [AmazonOpenSearchServerlessDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessdestinationconfiguration): {{
+    AmazonOpenSearchServerlessDestinationConfiguration}}
+  [AmazonopensearchserviceDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration): {{
+    AmazonopensearchserviceDestinationConfiguration}}
+  [DatabaseSourceConfiguration](#cfn-kinesisfirehose-deliverystream-databasesourceconfiguration): {{
+    DatabaseSourceConfiguration}}
+  [DeliveryStreamEncryptionConfigurationInput](#cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput): {{
+    DeliveryStreamEncryptionConfigurationInput}}
+  [DeliveryStreamName](#cfn-kinesisfirehose-deliverystream-deliverystreamname): {{String}}
+  [DeliveryStreamType](#cfn-kinesisfirehose-deliverystream-deliverystreamtype): {{String}}
+  [DirectPutSourceConfiguration](#cfn-kinesisfirehose-deliverystream-directputsourceconfiguration): {{
+    DirectPutSourceConfiguration}}
+  [ElasticsearchDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration): {{
+    ElasticsearchDestinationConfiguration}}
+  [ExtendedS3DestinationConfiguration](#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration): {{
+    ExtendedS3DestinationConfiguration}}
+  [HttpEndpointDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-httpendpointdestinationconfiguration): {{
+    HttpEndpointDestinationConfiguration}}
+  [IcebergDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration): {{
+    IcebergDestinationConfiguration}}
+  [KinesisStreamSourceConfiguration](#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration): {{
+    KinesisStreamSourceConfiguration}}
+  [MSKSourceConfiguration](#cfn-kinesisfirehose-deliverystream-msksourceconfiguration): {{
+    MSKSourceConfiguration}}
+  [RedshiftDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration): {{
+    RedshiftDestinationConfiguration}}
+  [S3DestinationConfiguration](#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration): {{
+    S3DestinationConfiguration}}
+  [SnowflakeDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration): {{
+    SnowflakeDestinationConfiguration}}
+  [SplunkDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration): {{
+    SplunkDestinationConfiguration}}
+  [Tags](#cfn-kinesisfirehose-deliverystream-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-kinesisfirehose-deliverystream-properties"></a>
 
-`AmazonOpenSearchServerlessDestinationConfiguration`
+`AmazonOpenSearchServerlessDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessdestinationconfiguration"></a>
+Describes the configuration of a destination in the Serverless offering for Amazon OpenSearch Service.
+*Required*: No
+*Type*: [AmazonOpenSearchServerlessDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-amazonopensearchserverlessdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Describes the configuration of a destination in the Serverless offering for Amazon
-OpenSearch Service.
+`AmazonopensearchserviceDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration"></a>
+The destination in Amazon OpenSearch Service. You can specify only one destination.
+*Required*: Conditional
+*Type*: [AmazonopensearchserviceDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AmazonOpenSearchServerlessDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-amazonopensearchserverlessdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AmazonopensearchserviceDestinationConfiguration`
-
-The destination in Amazon OpenSearch Service. You can specify only one
-destination.
-
-_Required_: Conditional
-
-_Type_: [AmazonopensearchserviceDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseSourceConfiguration`
-
-The top level object for configuring streams with database as a source.
-
+`DatabaseSourceConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-databasesourceconfiguration"></a>
+ The top level object for configuring streams with database as a source.
 Amazon Data Firehose is in preview release and is subject to change.
+*Required*: No
+*Type*: [DatabaseSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-databasesourceconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`DeliveryStreamEncryptionConfigurationInput`  <a name="cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput"></a>
+Specifies the type and Amazon Resource Name (ARN) of the CMK to use for Server-Side Encryption (SSE).
+*Required*: No
+*Type*: [DeliveryStreamEncryptionConfigurationInput](aws-properties-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DatabaseSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-databasesourceconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DeliveryStreamEncryptionConfigurationInput`
-
-Specifies the type and Amazon Resource Name (ARN) of the CMK to use for Server-Side
-Encryption (SSE).
-
-_Required_: No
-
-_Type_: [DeliveryStreamEncryptionConfigurationInput](aws-properties-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeliveryStreamName`
-
+`DeliveryStreamName`  <a name="cfn-kinesisfirehose-deliverystream-deliverystreamname"></a>
 The name of the Firehose stream.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9._-]+`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9._-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DeliveryStreamType`
-
+`DeliveryStreamType`  <a name="cfn-kinesisfirehose-deliverystream-deliverystreamtype"></a>
 The Firehose stream type. This can be one of the following values:
++ `DirectPut`: Provider applications access the Firehose stream directly.
++ `KinesisStreamAsSource`: The Firehose stream uses a Kinesis data stream as a source.
+*Required*: No
+*Type*: String
+*Allowed values*: `DatabaseAsSource | DirectPut | KinesisStreamAsSource | MSKAsSource`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `DirectPut`: Provider applications access the Firehose stream
-directly.
+`DirectPutSourceConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-directputsourceconfiguration"></a>
+The structure that configures parameters such as `ThroughputHintInMBs` for a stream configured with Direct PUT as a source.
+*Required*: No
+*Type*: [DirectPutSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-directputsourceconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `KinesisStreamAsSource`: The Firehose stream uses a Kinesis data
-stream as a source.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DatabaseAsSource | DirectPut | KinesisStreamAsSource | MSKAsSource`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DirectPutSourceConfiguration`
-
-The structure that configures parameters such as `ThroughputHintInMBs` for a stream configured with
-Direct PUT as a source.
-
-_Required_: No
-
-_Type_: [DirectPutSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-directputsourceconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ElasticsearchDestinationConfiguration`
-
+`ElasticsearchDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration"></a>
 An Amazon ES destination for the delivery stream.
-
 Conditional. You must specify only one destination configuration.
+If you change the delivery stream destination from an Amazon ES destination to an Amazon S3 or Amazon Redshift destination, update requires [some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt).
+*Required*: Conditional
+*Type*: [ElasticsearchDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you change the delivery stream destination from an Amazon ES destination to an
-Amazon S3 or Amazon Redshift destination, update requires [some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt).
-
-_Required_: Conditional
-
-_Type_: [ElasticsearchDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExtendedS3DestinationConfiguration`
-
+`ExtendedS3DestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration"></a>
 An Amazon S3 destination for the delivery stream.
-
 Conditional. You must specify only one destination configuration.
+If you change the delivery stream destination from an Amazon Extended S3 destination to an Amazon ES destination, update requires [some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt).
+*Required*: Conditional
+*Type*: [ExtendedS3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you change the delivery stream destination from an Amazon Extended S3 destination
-to an Amazon ES destination, update requires [some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt).
+`HttpEndpointDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-httpendpointdestinationconfiguration"></a>
+Enables configuring Kinesis Firehose to deliver data to any HTTP endpoint destination. You can specify only one destination.
+*Required*: No
+*Type*: [HttpEndpointDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-httpendpointdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
+`IcebergDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration"></a>
+ Specifies the destination configure settings for Apache Iceberg Table.
+*Required*: No
+*Type*: [IcebergDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ExtendedS3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.md)
+`KinesisStreamSourceConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration"></a>
+When a Kinesis stream is used as the source for the delivery stream, a [KinesisStreamSourceConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html) containing the Kinesis stream ARN and the role ARN for the source stream.
+*Required*: No
+*Type*: [KinesisStreamSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`MSKSourceConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-msksourceconfiguration"></a>
+The configuration for the Amazon MSK cluster to be used as the source for a delivery stream.
+*Required*: No
+*Type*: [MSKSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-msksourceconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`HttpEndpointDestinationConfiguration`
-
-Enables configuring Kinesis Firehose to deliver data to any HTTP endpoint
-destination. You can specify only one destination.
-
-_Required_: No
-
-_Type_: [HttpEndpointDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-httpendpointdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IcebergDestinationConfiguration`
-
-Specifies the destination configure settings for Apache Iceberg Table.
-
-_Required_: No
-
-_Type_: [IcebergDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KinesisStreamSourceConfiguration`
-
-When a Kinesis stream is used as the source for the delivery stream, a [KinesisStreamSourceConfiguration](../userguide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.md) containing the Kinesis stream ARN and the role
-ARN for the source stream.
-
-_Required_: No
-
-_Type_: [KinesisStreamSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MSKSourceConfiguration`
-
-The configuration for the Amazon MSK cluster to be used as the source for a delivery
-stream.
-
-_Required_: No
-
-_Type_: [MSKSourceConfiguration](aws-properties-kinesisfirehose-deliverystream-msksourceconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RedshiftDestinationConfiguration`
-
+`RedshiftDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration"></a>
 An Amazon Redshift destination for the delivery stream.
-
 Conditional. You must specify only one destination configuration.
+If you change the delivery stream destination from an Amazon Redshift destination to an Amazon ES destination, update requires [some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt).
+*Required*: Conditional
+*Type*: [RedshiftDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you change the delivery stream destination from an Amazon Redshift destination to
-an Amazon ES destination, update requires [some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt).
-
-_Required_: Conditional
-
-_Type_: [RedshiftDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3DestinationConfiguration`
-
-The `S3DestinationConfiguration` property type specifies an Amazon Simple
-Storage Service (Amazon S3) destination to which Amazon Kinesis Data Firehose (Kinesis Data
-Firehose) delivers data.
-
+`S3DestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-s3destinationconfiguration"></a>
+The `S3DestinationConfiguration` property type specifies an Amazon Simple Storage Service (Amazon S3) destination to which Amazon Kinesis Data Firehose (Kinesis Data Firehose) delivers data.
 Conditional. You must specify only one destination configuration.
+If you change the delivery stream destination from an Amazon S3 destination to an Amazon ES destination, update requires [some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt).
+*Required*: Conditional
+*Type*: [S3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you change the delivery stream destination from an Amazon S3 destination to an
-Amazon ES destination, update requires [some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt).
-
-_Required_: Conditional
-
-_Type_: [S3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnowflakeDestinationConfiguration`
-
+`SnowflakeDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration"></a>
 Configure Snowflake destination
+*Required*: No
+*Type*: [SnowflakeDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-snowflakedestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SnowflakeDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-snowflakedestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SplunkDestinationConfiguration`
-
+`SplunkDestinationConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration"></a>
 The configuration of a destination in Splunk for the delivery stream.
+*Required*: No
+*Type*: [SplunkDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SplunkDestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A set of tags to assign to the Firehose stream. A tag is a key-value pair that you can
-define and assign to AWS resources. Tags are metadata. For example, you can
-add friendly names and descriptions or other types of information that can help you
-distinguish the Firehose stream. For more information about tags, see [Using\
-Cost Allocation Tags](../../../awsaccountbilling/latest/aboutv2/cost-alloc-tags.md) in the AWS Billing and Cost Management User
-Guide.
-
+`Tags`  <a name="cfn-kinesisfirehose-deliverystream-tags"></a>
+A set of tags to assign to the Firehose stream. A tag is a key-value pair that you can define and assign to AWS resources. Tags are metadata. For example, you can add friendly names and descriptions or other types of information that can help you distinguish the Firehose stream. For more information about tags, see [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the AWS Billing and Cost Management User Guide.
 You can specify up to 50 tags when creating a Firehose stream.
-
-If you specify tags in the `CreateDeliveryStream` action, Amazon Data
-Firehose performs an additional authorization on the
-`firehose:TagDeliveryStream` action to verify if users have permissions to
-create tags. If you do not provide this permission, requests to create new Firehose streams
-with IAM resource tags will fail with an `AccessDeniedException` such as
-following.
-
-**AccessDeniedException**
-
+If you specify tags in the `CreateDeliveryStream` action, Amazon Data Firehose performs an additional authorization on the `firehose:TagDeliveryStream` action to verify if users have permissions to create tags. If you do not provide this permission, requests to create new Firehose streams with IAM resource tags will fail with an `AccessDeniedException` such as following.
+ **AccessDeniedException**
 User: arn:aws:sts::x:assumed-role/x/x is not authorized to perform: firehose:TagDeliveryStream on resource: arn:aws:firehose:us-east-1:x:deliverystream/x with an explicit deny in an identity-based policy.
-
-For an example IAM policy, see [Tag example.](../../../../reference/firehose/latest/apireference/api-createdeliverystream.md#API_CreateDeliveryStream_Examples)
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kinesisfirehose-deliverystream-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For an example IAM policy, see [Tag example.](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html#API_CreateDeliveryStream_Examples)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kinesisfirehose-deliverystream-tag.md)
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-kinesisfirehose-deliverystream-return-values"></a>
 
 ### Ref
+<a name="aws-resource-kinesisfirehose-deliverystream-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the Ref intrinsic function, Ref
-returns the delivery stream name, such as
-`mystack-deliverystream-1ABCD2EF3GHIJ`.
+When the logical ID of this resource is provided to the Ref intrinsic function, Ref returns the delivery stream name, such as `mystack-deliverystream-1ABCD2EF3GHIJ`.
 
-For more information about using the Ref function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-kinesisfirehose-deliverystream-return-values-fn--getatt"></a>
 
-Fn::GetAtt returns a value for a specified attribute of this type. The following are
-the available attributes and sample return values.
+Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using Fn::GetAtt, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+For more information about using Fn::GetAtt, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-kinesisfirehose-deliverystream-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the delivery stream, such as
-`arn:aws:firehose:us-east-2:123456789012:deliverystream/delivery-stream-name`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the delivery stream, such as `arn:aws:firehose:us-east-2:123456789012:deliverystream/delivery-stream-name`.
 
 ## Examples
+<a name="aws-resource-kinesisfirehose-deliverystream--examples"></a>
 
-- [Create a Kinesis Data Firehose Delivery Stream](#aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream)
-
-- [Convert Record Format](#aws-resource-kinesisfirehose-deliverystream--examples--Convert_Record_Format)
-
-- [Specify an Amazon S3 Destination for the Delivery Stream](#aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream)
-
-- [Specify a Kinesis Stream as the Source for the Delivery Stream](#aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream)
+**Topics**
++ [Create a Kinesis Data Firehose Delivery Stream](#aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream)
++ [Convert Record Format](#aws-resource-kinesisfirehose-deliverystream--examples--Convert_Record_Format)
++ [Specify an Amazon S3 Destination for the Delivery Stream](#aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream)
++ [Specify a Kinesis Stream as the Source for the Delivery Stream](#aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream)
 
 ### Create a Kinesis Data Firehose Delivery Stream
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream"></a>
 
-The following example creates a Kinesis Data Firehose delivery stream that
-delivers data to an Amazon ES destination. Kinesis Data Firehose backs up all data
-sent to the destination in an Amazon S3 bucket.
+The following example creates a Kinesis Data Firehose delivery stream that delivers data to an Amazon ES destination. Kinesis Data Firehose backs up all data sent to the destination in an Amazon S3 bucket.
 
 #### JSON
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream--json"></a>
 
-```json
-
+```
 "ElasticSearchDeliveryStream": {
    "Type": "AWS::KinesisFirehose::DeliveryStream",
    "Properties": {
@@ -428,9 +302,9 @@ sent to the destination in an Amazon S3 bucket.
 ```
 
 #### YAML
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream--yaml"></a>
 
-```yaml
-
+```
 ElasticSearchDeliveryStream:
    Type: AWS::KinesisFirehose::DeliveryStream
    Properties:
@@ -474,13 +348,14 @@ ElasticSearchDeliveryStream:
 ```
 
 ### Convert Record Format
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Convert_Record_Format"></a>
 
 The following example shows record format conversion.
 
 #### YAML
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Convert_Record_Format--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Stack for Firehose DeliveryStream S3 Destination.
 Resources:
@@ -657,14 +532,14 @@ Outputs:
 ```
 
 ### Specify an Amazon S3 Destination for the Delivery Stream
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream"></a>
 
-The following example uses the `ExtendedS3DestinationConfiguration`
-property to specify an Amazon S3 destination for the delivery stream.
+The following example uses the `ExtendedS3DestinationConfiguration` property to specify an Amazon S3 destination for the delivery stream.
 
 #### JSON
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream--json"></a>
 
-```json
-
+```
 {
   "Resources":{
     "Firehose":{
@@ -725,9 +600,9 @@ property to specify an Amazon S3 destination for the delivery stream.
 ```
 
 #### YAML
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream--yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
   Firehose:
@@ -763,18 +638,17 @@ Resources:
             Parameters:
             - ParameterName: Delimiter
               ParameterValue: "\\n"
-
 ```
 
 ### Specify a Kinesis Stream as the Source for the Delivery Stream
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream"></a>
 
-The following example uses the `KinesisStreamSourceConfiguration`
-property to specify a Kinesis stream as the source for the delivery stream.
+The following example uses the `KinesisStreamSourceConfiguration` property to specify a Kinesis stream as the source for the delivery stream.
 
 #### JSON
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream--json"></a>
 
-```json
-
+```
 {
     "Parameters": {
         "deliveryRoleArn": {
@@ -830,9 +704,9 @@ property to specify a Kinesis stream as the source for the delivery stream.
 ```
 
 #### YAML
+<a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream--yaml"></a>
 
-```yaml
-
+```
 Parameters:
     deliveryRoleArn:
         Type: String
@@ -864,14 +738,7 @@ Resources :
 ```
 
 ## See also
-
-- [CreateDeliveryStream](../../../../reference/firehose/latest/apireference/api-createdeliverystream.md) in the _Amazon Kinesis Data Firehose API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Data Firehose
-
-AmazonOpenSearchServerlessBufferingHints
+<a name="aws-resource-kinesisfirehose-deliverystream--seealso"></a>
++ [CreateDeliveryStream](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html) in the *Amazon Kinesis Data Firehose API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

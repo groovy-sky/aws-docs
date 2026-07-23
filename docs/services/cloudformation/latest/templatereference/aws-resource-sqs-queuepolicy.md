@@ -2,95 +2,81 @@
 title: "AWS::SQS::QueuePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SQS::QueuePolicy
+<a name="aws-resource-sqs-queuepolicy"></a>
 
-The `AWS::SQS::QueuePolicy` type applies a policy to Amazon SQS queues.
-For an example snippet, see [Declaring an\
-Amazon SQS policy](../userguide/quickref-iam.md#scenario-sqs-policy) in the _CloudFormation User Guide_.
+The `AWS::SQS::QueuePolicy` type applies a policy to Amazon SQS queues. For an example snippet, see [Declaring an Amazon SQS policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenario-sqs-policy) in the *CloudFormation User Guide*.
 
 ## Syntax
+<a name="aws-resource-sqs-queuepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sqs-queuepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SQS::QueuePolicy",
   "Properties" : {
-      "PolicyDocument" : Json,
-      "Queues" : [ String, ... ]
+      "[PolicyDocument](#cfn-sqs-queuepolicy-policydocument)" : {{Json}},
+      "[Queues](#cfn-sqs-queuepolicy-queues)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sqs-queuepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SQS::QueuePolicy
 Properties:
-  PolicyDocument: Json
-  Queues:
-    - String
-
+  [PolicyDocument](#cfn-sqs-queuepolicy-policydocument): {{Json}}
+  [Queues](#cfn-sqs-queuepolicy-queues): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-sqs-queuepolicy-properties"></a>
 
-`PolicyDocument`
+`PolicyDocument`  <a name="cfn-sqs-queuepolicy-policydocument"></a>
+A policy document that contains the permissions for the specified Amazon SQS queues. For more information about Amazon SQS policies, see [Using custom policies with the Amazon SQS access policy language](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-creating-custom-policies.html) in the *Amazon SQS Developer Guide*.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A policy document that contains the permissions for the specified Amazon SQS
-queues. For more information about Amazon SQS policies, see [Using\
-custom policies with the Amazon SQS access policy language](../../../awssimplequeueservice/latest/sqsdeveloperguide/sqs-creating-custom-policies.md) in the _Amazon SQS Developer Guide_.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Queues`
-
-The URLs of the queues to which you want to add the policy. You can use the `
-
-          Ref
-                        ` function to specify an `
-
-          AWS::SQS::Queue
-                        ` resource.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Queues`  <a name="cfn-sqs-queuepolicy-queues"></a>
+The URLs of the queues to which you want to add the policy. You can use the ` [ Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html) ` function to specify an ` [ AWS::SQS::Queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sqs-queue.html) ` resource.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sqs-queuepolicy-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-sqs-queuepolicy-return-values-fn--getatt"></a>
 
-`Id`
+####
+<a name="aws-resource-sqs-queuepolicy-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The provider-assigned unique ID for this managed resource.
 
 ## Examples
+<a name="aws-resource-sqs-queuepolicy--examples"></a>
 
 ### Amazon SQS Queue Policy
+<a name="aws-resource-sqs-queuepolicy--examples--Amazon_SQS_Queue_Policy"></a>
 
-The following sample is a queue policy that allows AWS account
-111122223333 to send and receive messages on queue queue2. You add the policy to the
-resources section of your template.
+The following sample is a queue policy that allows AWS account 111122223333 to send and receive messages on queue queue2. You add the policy to the resources section of your template.
 
 #### JSON
+<a name="aws-resource-sqs-queuepolicy--examples--Amazon_SQS_Queue_Policy--json"></a>
 
-```json
+```
 
 "SampleSQSPolicy" : {
   "Type" : "AWS::SQS::QueuePolicy",
@@ -109,12 +95,12 @@ resources section of your template.
     }
   }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-sqs-queuepolicy--examples--Amazon_SQS_Queue_Policy--yaml"></a>
 
-```yaml
+```
 
 SampleSQSPolicy:
   Type: AWS::SQS::QueuePolicy
@@ -132,13 +118,6 @@ SampleSQSPolicy:
           Principal:
             AWS:
               - "111122223333"
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SQS::QueueInlinePolicy
-
-Next
 
 All content copied from https://docs.aws.amazon.com/.

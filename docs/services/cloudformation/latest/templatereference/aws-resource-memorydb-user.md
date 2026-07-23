@@ -2,71 +2,62 @@
 title: "AWS::MemoryDB::User"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::User
+<a name="aws-resource-memorydb-user"></a>
 
-Specifies a MemoryDB user. For more information, see [Authenticating\
-users with Access Contol Lists (ACLs)](../../../memorydb/latest/devguide/clusters-acls.md).
+Specifies a MemoryDB user. For more information, see [Authenticating users with Access Contol Lists (ACLs)](https://docs.aws.amazon.com/memorydb/latest/devguide/clusters.acls.html).
 
 ## Syntax
+<a name="aws-resource-memorydb-user-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-memorydb-user-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MemoryDB::User",
   "Properties" : {
-      "AccessString" : String,
-      "AuthenticationMode" : AuthenticationMode,
-      "Tags" : [ Tag, ... ],
-      "UserName" : String
+      "[AccessString](#cfn-memorydb-user-accessstring)" : {{String}},
+      "[AuthenticationMode](#cfn-memorydb-user-authenticationmode)" : {{AuthenticationMode}},
+      "[Tags](#cfn-memorydb-user-tags)" : {{[ Tag, ... ]}},
+      "[UserName](#cfn-memorydb-user-username)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-memorydb-user-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MemoryDB::User
 Properties:
-  AccessString:
-    String
-  AuthenticationMode:
-    AuthenticationMode
-  Tags:
-    - Tag
-  UserName: String
-
+  [AccessString](#cfn-memorydb-user-accessstring): {{
+    String}}
+  [AuthenticationMode](#cfn-memorydb-user-authenticationmode): {{
+    AuthenticationMode}}
+  [Tags](#cfn-memorydb-user-tags): {{
+    - Tag}}
+  [UserName](#cfn-memorydb-user-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-memorydb-user-properties"></a>
 
-`AccessString`
-
+`AccessString`  <a name="cfn-memorydb-user-accessstring"></a>
 Access permissions string used for this user.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthenticationMode`
-
+`AuthenticationMode`  <a name="cfn-memorydb-user-authenticationmode"></a>
 Denotes whether the user requires a password to authenticate.
+ **Example:**
 
-**Example:**
-
-```json
-
+```
 mynewdbuser:
      Type: AWS::MemoryDB::User
      Properties:
@@ -82,59 +73,39 @@ mynewdbuser:
          "Type": "Password"
      }
 ```
+*Required*: No
+*Type*: [AuthenticationMode](aws-properties-memorydb-user-authenticationmode.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AuthenticationMode](aws-properties-memorydb-user-authenticationmode.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-memorydb-user-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-memorydb-user-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-memorydb-user-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserName`
-
+`UserName`  <a name="cfn-memorydb-user-username"></a>
 The name of the user.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z][a-z0-9\\-]*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z][a-z0-9\\-]*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-memorydb-user-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-memorydb-user-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-memorydb-user-return-values-fn--getatt-fn--getatt"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the ARN of the user,
-such as `arn:aws:memorydb:us-east-1:123456789012:user/user1`
+`Arn`  <a name="Arn-fn::getatt"></a>
+When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the ARN of the user, such as `arn:aws:memorydb:us-east-1:123456789012:user/user1`
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 Indicates the user status.
-
-_Valid values_: `active` \| `modifying` \|
-`deleting`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AuthenticationMode
+*Valid values*: `active` \| `modifying` \| `deleting`
 
 All content copied from https://docs.aws.amazon.com/.

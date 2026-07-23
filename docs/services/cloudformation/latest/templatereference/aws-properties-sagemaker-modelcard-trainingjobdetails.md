@@ -2,134 +2,97 @@
 title: "AWS::SageMaker::ModelCard TrainingJobDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard TrainingJobDetails
+<a name="aws-properties-sagemaker-modelcard-trainingjobdetails"></a>
 
 The overview of a training job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelcard-trainingjobdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelcard-trainingjobdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "HyperParameters" : [ TrainingHyperParameter, ... ],
-  "TrainingArn" : String,
-  "TrainingDatasets" : [ String, ... ],
-  "TrainingEnvironment" : TrainingEnvironment,
-  "TrainingMetrics" : [ TrainingMetric, ... ],
-  "UserProvidedHyperParameters" : [ TrainingHyperParameter, ... ],
-  "UserProvidedTrainingMetrics" : [ TrainingMetric, ... ]
+  "[HyperParameters](#cfn-sagemaker-modelcard-trainingjobdetails-hyperparameters)" : {{[ TrainingHyperParameter, ... ]}},
+  "[TrainingArn](#cfn-sagemaker-modelcard-trainingjobdetails-trainingarn)" : {{String}},
+  "[TrainingDatasets](#cfn-sagemaker-modelcard-trainingjobdetails-trainingdatasets)" : {{[ String, ... ]}},
+  "[TrainingEnvironment](#cfn-sagemaker-modelcard-trainingjobdetails-trainingenvironment)" : {{TrainingEnvironment}},
+  "[TrainingMetrics](#cfn-sagemaker-modelcard-trainingjobdetails-trainingmetrics)" : {{[ TrainingMetric, ... ]}},
+  "[UserProvidedHyperParameters](#cfn-sagemaker-modelcard-trainingjobdetails-userprovidedhyperparameters)" : {{[ TrainingHyperParameter, ... ]}},
+  "[UserProvidedTrainingMetrics](#cfn-sagemaker-modelcard-trainingjobdetails-userprovidedtrainingmetrics)" : {{[ TrainingMetric, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelcard-trainingjobdetails-syntax.yaml"></a>
 
-```yaml
-
-  HyperParameters:
-    - TrainingHyperParameter
-  TrainingArn: String
-  TrainingDatasets:
-    - String
-  TrainingEnvironment:
-    TrainingEnvironment
-  TrainingMetrics:
-    - TrainingMetric
-  UserProvidedHyperParameters:
-    - TrainingHyperParameter
-  UserProvidedTrainingMetrics:
-    - TrainingMetric
-
+```
+  [HyperParameters](#cfn-sagemaker-modelcard-trainingjobdetails-hyperparameters): {{
+    - TrainingHyperParameter}}
+  [TrainingArn](#cfn-sagemaker-modelcard-trainingjobdetails-trainingarn): {{String}}
+  [TrainingDatasets](#cfn-sagemaker-modelcard-trainingjobdetails-trainingdatasets): {{
+    - String}}
+  [TrainingEnvironment](#cfn-sagemaker-modelcard-trainingjobdetails-trainingenvironment): {{
+    TrainingEnvironment}}
+  [TrainingMetrics](#cfn-sagemaker-modelcard-trainingjobdetails-trainingmetrics): {{
+    - TrainingMetric}}
+  [UserProvidedHyperParameters](#cfn-sagemaker-modelcard-trainingjobdetails-userprovidedhyperparameters): {{
+    - TrainingHyperParameter}}
+  [UserProvidedTrainingMetrics](#cfn-sagemaker-modelcard-trainingjobdetails-userprovidedtrainingmetrics): {{
+    - TrainingMetric}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelcard-trainingjobdetails-properties"></a>
 
-`HyperParameters`
-
+`HyperParameters`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-hyperparameters"></a>
 The hyper parameters used in the training job.
+*Required*: No
+*Type*: Array of [TrainingHyperParameter](aws-properties-sagemaker-modelcard-traininghyperparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TrainingHyperParameter](aws-properties-sagemaker-modelcard-traininghyperparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrainingArn`
-
+`TrainingArn`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-trainingarn"></a>
 The SageMaker AI training job Amazon Resource Name (ARN)
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrainingDatasets`
-
+`TrainingDatasets`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-trainingdatasets"></a>
 The location of the datasets used to train the model.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `1024 | 15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `1024 | 15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrainingEnvironment`
-
+`TrainingEnvironment`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-trainingenvironment"></a>
 The SageMaker AI training job image URI.
+*Required*: No
+*Type*: [TrainingEnvironment](aws-properties-sagemaker-modelcard-trainingenvironment.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TrainingEnvironment](aws-properties-sagemaker-modelcard-trainingenvironment.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrainingMetrics`
-
+`TrainingMetrics`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-trainingmetrics"></a>
 The SageMaker AI training job results.
+*Required*: No
+*Type*: Array of [TrainingMetric](aws-properties-sagemaker-modelcard-trainingmetric.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TrainingMetric](aws-properties-sagemaker-modelcard-trainingmetric.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserProvidedHyperParameters`
-
+`UserProvidedHyperParameters`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-userprovidedhyperparameters"></a>
 Additional hyper parameters that you've specified when training the model.
+*Required*: No
+*Type*: Array of [TrainingHyperParameter](aws-properties-sagemaker-modelcard-traininghyperparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [TrainingHyperParameter](aws-properties-sagemaker-modelcard-traininghyperparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserProvidedTrainingMetrics`
-
+`UserProvidedTrainingMetrics`  <a name="cfn-sagemaker-modelcard-trainingjobdetails-userprovidedtrainingmetrics"></a>
 Custom training job results.
-
-_Required_: No
-
-_Type_: Array of [TrainingMetric](aws-properties-sagemaker-modelcard-trainingmetric.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrainingHyperParameter
-
-TrainingMetric
+*Required*: No
+*Type*: Array of [TrainingMetric](aws-properties-sagemaker-modelcard-trainingmetric.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

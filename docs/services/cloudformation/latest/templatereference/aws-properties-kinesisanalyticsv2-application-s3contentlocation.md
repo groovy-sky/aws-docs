@@ -2,95 +2,68 @@
 title: "AWS::KinesisAnalyticsV2::Application S3ContentLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application S3ContentLocation
+<a name="aws-properties-kinesisanalyticsv2-application-s3contentlocation"></a>
 
 The location of an application or a custom artifact.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-s3contentlocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-s3contentlocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketARN" : String,
-  "FileKey" : String,
-  "ObjectVersion" : String
+  "[BucketARN](#cfn-kinesisanalyticsv2-application-s3contentlocation-bucketarn)" : {{String}},
+  "[FileKey](#cfn-kinesisanalyticsv2-application-s3contentlocation-filekey)" : {{String}},
+  "[ObjectVersion](#cfn-kinesisanalyticsv2-application-s3contentlocation-objectversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-s3contentlocation-syntax.yaml"></a>
 
-```yaml
-
-  BucketARN: String
-  FileKey: String
-  ObjectVersion: String
-
+```
+  [BucketARN](#cfn-kinesisanalyticsv2-application-s3contentlocation-bucketarn): {{String}}
+  [FileKey](#cfn-kinesisanalyticsv2-application-s3contentlocation-filekey): {{String}}
+  [ObjectVersion](#cfn-kinesisanalyticsv2-application-s3contentlocation-objectversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-s3contentlocation-properties"></a>
 
-`BucketARN`
-
+`BucketARN`  <a name="cfn-kinesisanalyticsv2-application-s3contentlocation-bucketarn"></a>
 The Amazon Resource Name (ARN) for the S3 bucket containing the application code.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.*$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileKey`
-
+`FileKey`  <a name="cfn-kinesisanalyticsv2-application-s3contentlocation-filekey"></a>
 The file key for the object containing the application code.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObjectVersion`
-
+`ObjectVersion`  <a name="cfn-kinesisanalyticsv2-application-s3contentlocation-objectversion"></a>
 The version of the object containing the application code.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [S3ContentLocation](../../../managed-flink/latest/apiv2/api-s3contentlocation.md) in the _Amazon Kinesis Data_
-_Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3ContentBaseLocation
-
-SqlApplicationConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-s3contentlocation--seealso"></a>
++ [S3ContentLocation](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_S3ContentLocation.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

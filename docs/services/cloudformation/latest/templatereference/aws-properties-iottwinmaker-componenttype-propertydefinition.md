@@ -2,132 +2,95 @@
 title: "AWS::IoTTwinMaker::ComponentType PropertyDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::ComponentType PropertyDefinition
+<a name="aws-properties-iottwinmaker-componenttype-propertydefinition"></a>
 
 PropertyDefinition is an object that maps strings to the property definitions in the component type.
 
 ## Syntax
+<a name="aws-properties-iottwinmaker-componenttype-propertydefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iottwinmaker-componenttype-propertydefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configurations" : {Key: Value, ...},
-  "DataType" : DataType,
-  "DefaultValue" : DataValue,
-  "IsExternalId" : Boolean,
-  "IsRequiredInEntity" : Boolean,
-  "IsStoredExternally" : Boolean,
-  "IsTimeSeries" : Boolean
+  "[Configurations](#cfn-iottwinmaker-componenttype-propertydefinition-configurations)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[DataType](#cfn-iottwinmaker-componenttype-propertydefinition-datatype)" : {{DataType}},
+  "[DefaultValue](#cfn-iottwinmaker-componenttype-propertydefinition-defaultvalue)" : {{DataValue}},
+  "[IsExternalId](#cfn-iottwinmaker-componenttype-propertydefinition-isexternalid)" : {{Boolean}},
+  "[IsRequiredInEntity](#cfn-iottwinmaker-componenttype-propertydefinition-isrequiredinentity)" : {{Boolean}},
+  "[IsStoredExternally](#cfn-iottwinmaker-componenttype-propertydefinition-isstoredexternally)" : {{Boolean}},
+  "[IsTimeSeries](#cfn-iottwinmaker-componenttype-propertydefinition-istimeseries)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iottwinmaker-componenttype-propertydefinition-syntax.yaml"></a>
 
-```yaml
-
-  Configurations:
-    Key: Value
-  DataType:
-    DataType
-  DefaultValue:
-    DataValue
-  IsExternalId: Boolean
-  IsRequiredInEntity: Boolean
-  IsStoredExternally: Boolean
-  IsTimeSeries: Boolean
-
+```
+  [Configurations](#cfn-iottwinmaker-componenttype-propertydefinition-configurations): {{
+    {{Key}}: {{Value}}}}
+  [DataType](#cfn-iottwinmaker-componenttype-propertydefinition-datatype): {{
+    DataType}}
+  [DefaultValue](#cfn-iottwinmaker-componenttype-propertydefinition-defaultvalue): {{
+    DataValue}}
+  [IsExternalId](#cfn-iottwinmaker-componenttype-propertydefinition-isexternalid): {{Boolean}}
+  [IsRequiredInEntity](#cfn-iottwinmaker-componenttype-propertydefinition-isrequiredinentity): {{Boolean}}
+  [IsStoredExternally](#cfn-iottwinmaker-componenttype-propertydefinition-isstoredexternally): {{Boolean}}
+  [IsTimeSeries](#cfn-iottwinmaker-componenttype-propertydefinition-istimeseries): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iottwinmaker-componenttype-propertydefinition-properties"></a>
 
-`Configurations`
-
+`Configurations`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-configurations"></a>
 A mapping that specifies configuration information about the property.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z_\-0-9]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DataType`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-datatype"></a>
 
-_Type_: Object of String
+*Required*: No
+*Type*: [DataType](aws-properties-iottwinmaker-componenttype-datatype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `[a-zA-Z_\-0-9]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataType`
-
-_Required_: No
-
-_Type_: [DataType](aws-properties-iottwinmaker-componenttype-datatype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-defaultvalue"></a>
 A boolean value that specifies whether the property ID comes from an external data store.
+*Required*: No
+*Type*: [DataValue](aws-properties-iottwinmaker-componenttype-datavalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IsExternalId`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-isexternalid"></a>
+A Boolean value that specifies whether the property ID comes from an external data source.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DataValue](aws-properties-iottwinmaker-componenttype-datavalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsExternalId`
-
-A Boolean value that specifies whether the property ID comes from an external
-data source.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsRequiredInEntity`
-
+`IsRequiredInEntity`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-isrequiredinentity"></a>
 A boolean value that specifies whether the property is required in an entity.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsStoredExternally`
-
+`IsStoredExternally`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-isstoredexternally"></a>
 A boolean value that specifies whether the property is stored externally.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsTimeSeries`
-
+`IsTimeSeries`  <a name="cfn-iottwinmaker-componenttype-propertydefinition-istimeseries"></a>
 A boolean value that specifies whether the property consists of time series data.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaFunction
-
-PropertyGroup
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

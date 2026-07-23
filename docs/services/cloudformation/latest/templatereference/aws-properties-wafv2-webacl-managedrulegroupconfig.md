@@ -2,201 +2,116 @@
 title: "AWS::WAFv2::WebACL ManagedRuleGroupConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL ManagedRuleGroupConfig
+<a name="aws-properties-wafv2-webacl-managedrulegroupconfig"></a>
 
-Additional information that's used by a managed rule group. Many managed rule groups
-don't require this.
+Additional information that's used by a managed rule group. Many managed rule groups don't require this.
 
 The rule groups used for intelligent threat mitigation require additional configuration:
-
-- Use the `AWSManagedRulesACFPRuleSet` configuration object to configure
-the account creation fraud prevention managed rule group. The configuration includes
-the registration and sign-up pages of your application and the locations in the
-account creation request payload of data, such as the user email and phone number
-fields.
-
-- Use the `AWSManagedRulesATPRuleSet` configuration object to configure
-the account takeover prevention managed rule group. The configuration includes the
-sign-in page of your application and the locations in the login request payload of
-data such as the username and password.
-
-- Use the `AWSManagedRulesBotControlRuleSet` configuration object to
-configure the protection level that you want the Bot Control rule group to use.
++ Use the `AWSManagedRulesACFPRuleSet` configuration object to configure the account creation fraud prevention managed rule group. The configuration includes the registration and sign-up pages of your application and the locations in the account creation request payload of data, such as the user email and phone number fields.
++ Use the `AWSManagedRulesATPRuleSet` configuration object to configure the account takeover prevention managed rule group. The configuration includes the sign-in page of your application and the locations in the login request payload of data such as the username and password.
++ Use the `AWSManagedRulesBotControlRuleSet` configuration object to configure the protection level that you want the Bot Control rule group to use.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-managedrulegroupconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-managedrulegroupconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AWSManagedRulesACFPRuleSet" : AWSManagedRulesACFPRuleSet,
-  "AWSManagedRulesAntiDDoSRuleSet" : AWSManagedRulesAntiDDoSRuleSet,
-  "AWSManagedRulesATPRuleSet" : AWSManagedRulesATPRuleSet,
-  "AWSManagedRulesBotControlRuleSet" : AWSManagedRulesBotControlRuleSet,
-  "LoginPath" : String,
-  "PasswordField" : FieldIdentifier,
-  "PayloadType" : String,
-  "UsernameField" : FieldIdentifier
+  "[AWSManagedRulesACFPRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesacfpruleset)" : {{AWSManagedRulesACFPRuleSet}},
+  "[AWSManagedRulesAntiDDoSRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesantiddosruleset)" : {{AWSManagedRulesAntiDDoSRuleSet}},
+  "[AWSManagedRulesATPRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesatpruleset)" : {{AWSManagedRulesATPRuleSet}},
+  "[AWSManagedRulesBotControlRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesbotcontrolruleset)" : {{AWSManagedRulesBotControlRuleSet}},
+  "[LoginPath](#cfn-wafv2-webacl-managedrulegroupconfig-loginpath)" : {{String}},
+  "[PasswordField](#cfn-wafv2-webacl-managedrulegroupconfig-passwordfield)" : {{FieldIdentifier}},
+  "[PayloadType](#cfn-wafv2-webacl-managedrulegroupconfig-payloadtype)" : {{String}},
+  "[UsernameField](#cfn-wafv2-webacl-managedrulegroupconfig-usernamefield)" : {{FieldIdentifier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-managedrulegroupconfig-syntax.yaml"></a>
 
-```yaml
-
-  AWSManagedRulesACFPRuleSet:
-    AWSManagedRulesACFPRuleSet
-  AWSManagedRulesAntiDDoSRuleSet:
-    AWSManagedRulesAntiDDoSRuleSet
-  AWSManagedRulesATPRuleSet:
-    AWSManagedRulesATPRuleSet
-  AWSManagedRulesBotControlRuleSet:
-    AWSManagedRulesBotControlRuleSet
-  LoginPath: String
-  PasswordField:
-    FieldIdentifier
-  PayloadType: String
-  UsernameField:
-    FieldIdentifier
-
+```
+  [AWSManagedRulesACFPRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesacfpruleset): {{
+    AWSManagedRulesACFPRuleSet}}
+  [AWSManagedRulesAntiDDoSRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesantiddosruleset): {{
+    AWSManagedRulesAntiDDoSRuleSet}}
+  [AWSManagedRulesATPRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesatpruleset): {{
+    AWSManagedRulesATPRuleSet}}
+  [AWSManagedRulesBotControlRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesbotcontrolruleset): {{
+    AWSManagedRulesBotControlRuleSet}}
+  [LoginPath](#cfn-wafv2-webacl-managedrulegroupconfig-loginpath): {{String}}
+  [PasswordField](#cfn-wafv2-webacl-managedrulegroupconfig-passwordfield): {{
+    FieldIdentifier}}
+  [PayloadType](#cfn-wafv2-webacl-managedrulegroupconfig-payloadtype): {{String}}
+  [UsernameField](#cfn-wafv2-webacl-managedrulegroupconfig-usernamefield): {{
+    FieldIdentifier}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-managedrulegroupconfig-properties"></a>
 
-`AWSManagedRulesACFPRuleSet`
+`AWSManagedRulesACFPRuleSet`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesacfpruleset"></a>
+Additional configuration for using the account creation fraud prevention (ACFP) managed rule group, `AWSManagedRulesACFPRuleSet`. Use this to provide account creation request information to the rule group. For web ACLs that protect CloudFront distributions, use this to also provide the information about how your distribution responds to account creation requests.
+For information about using the ACFP managed rule group, see [AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.html) and [AWS WAF Fraud Control account creation fraud prevention (ACFP)](https://docs.aws.amazon.com/waf/latest/developerguide/waf-acfp.html) in the *AWS WAF Developer Guide*.
+*Required*: No
+*Type*: [AWSManagedRulesACFPRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Additional configuration for using the account creation fraud prevention (ACFP) managed rule group, `AWSManagedRulesACFPRuleSet`.
-Use this to provide account creation request information to the rule group. For web ACLs that protect CloudFront distributions, use this to also provide
-the information about how your distribution responds to account creation requests.
+`AWSManagedRulesAntiDDoSRuleSet`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesantiddosruleset"></a>
+Additional configuration for using the anti-DDoS managed rule group, `AWSManagedRulesAntiDDoSRuleSet`. Use this to configure anti-DDoS behavior for the rule group.
+For information about using the anti-DDoS managed rule group, see [AWS WAF Anti-DDoS rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.html) and [Distributed Denial of Service (DDoS) prevention](https://docs.aws.amazon.com/waf/latest/developerguide/waf-anti-ddos.html) in the *AWS WAF Developer Guide*.
+*Required*: No
+*Type*: [AWSManagedRulesAntiDDoSRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesantiddosruleset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For information
-about using the ACFP managed rule group, see [AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group](../../../waf/latest/developerguide/aws-managed-rule-groups-acfp.md)
-and [AWS WAF Fraud Control account creation fraud prevention (ACFP)](../../../waf/latest/developerguide/waf-acfp.md)
-in the _AWS WAF Developer Guide_.
-
-_Required_: No
-
-_Type_: [AWSManagedRulesACFPRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesacfpruleset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AWSManagedRulesAntiDDoSRuleSet`
-
-Additional configuration for using the anti-DDoS managed rule group, `AWSManagedRulesAntiDDoSRuleSet`.
-Use this to configure anti-DDoS behavior for the rule group.
-
-For information
-about using the anti-DDoS managed rule group, see [AWS WAF Anti-DDoS rule group](../../../waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md)
-and [Distributed Denial of Service (DDoS) prevention](../../../waf/latest/developerguide/waf-anti-ddos.md)
-in the _AWS WAF Developer Guide_.
-
-_Required_: No
-
-_Type_: [AWSManagedRulesAntiDDoSRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesantiddosruleset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AWSManagedRulesATPRuleSet`
-
-Additional configuration for using the account takeover prevention (ATP) managed rule group, `AWSManagedRulesATPRuleSet`.
-Use this to provide login request information to the rule group. For web ACLs that protect CloudFront distributions, use this to also provide
-the information about how your distribution responds to login requests.
-
+`AWSManagedRulesATPRuleSet`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesatpruleset"></a>
+Additional configuration for using the account takeover prevention (ATP) managed rule group, `AWSManagedRulesATPRuleSet`. Use this to provide login request information to the rule group. For web ACLs that protect CloudFront distributions, use this to also provide the information about how your distribution responds to login requests.
 This configuration replaces the individual configuration fields in `ManagedRuleGroupConfig` and provides additional feature configuration.
+For information about using the ATP managed rule group, see [AWS WAF Fraud Control account takeover prevention (ATP) rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.html) and [AWS WAF Fraud Control account takeover prevention (ATP)](https://docs.aws.amazon.com/waf/latest/developerguide/waf-atp.html) in the *AWS WAF Developer Guide*.
+*Required*: No
+*Type*: [AWSManagedRulesATPRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesatpruleset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For information
-about using the ATP managed rule group, see [AWS WAF Fraud Control account takeover prevention (ATP) rule group](../../../waf/latest/developerguide/aws-managed-rule-groups-atp.md)
-and [AWS WAF Fraud Control account takeover prevention (ATP)](../../../waf/latest/developerguide/waf-atp.md)
-in the _AWS WAF Developer Guide_.
+`AWSManagedRulesBotControlRuleSet`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesbotcontrolruleset"></a>
+Additional configuration for using the Bot Control managed rule group. Use this to specify the inspection level that you want to use. For information about using the Bot Control managed rule group, see [AWS WAF Bot Control rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.html) and [AWS WAF Bot Control](https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-control.html) in the *AWS WAF Developer Guide*.
+*Required*: No
+*Type*: [AWSManagedRulesBotControlRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesbotcontrolruleset.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AWSManagedRulesATPRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesatpruleset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AWSManagedRulesBotControlRuleSet`
-
-Additional configuration for using the Bot Control managed rule group. Use this to specify the
-inspection level that you want to use. For information
-about using the Bot Control managed rule group, see [AWS WAF Bot Control rule group](../../../waf/latest/developerguide/aws-managed-rule-groups-bot.md)
-and [AWS WAF Bot Control](../../../waf/latest/developerguide/waf-bot-control.md)
-in the _AWS WAF Developer Guide_.
-
-_Required_: No
-
-_Type_: [AWSManagedRulesBotControlRuleSet](aws-properties-wafv2-webacl-awsmanagedrulesbotcontrolruleset.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoginPath`
-
-###### Note
-
+`LoginPath`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-loginpath"></a>
 Instead of this setting, provide your configuration under `AWSManagedRulesATPRuleSet`.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PasswordField`
-
-###### Note
-
+`PasswordField`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-passwordfield"></a>
 Instead of this setting, provide your configuration under the request inspection configuration for `AWSManagedRulesATPRuleSet` or `AWSManagedRulesACFPRuleSet`.
+*Required*: No
+*Type*: [FieldIdentifier](aws-properties-wafv2-webacl-fieldidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FieldIdentifier](aws-properties-wafv2-webacl-fieldidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PayloadType`
-
-###### Note
-
+`PayloadType`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-payloadtype"></a>
 Instead of this setting, provide your configuration under the request inspection configuration for `AWSManagedRulesATPRuleSet` or `AWSManagedRulesACFPRuleSet`.
+*Required*: No
+*Type*: String
+*Allowed values*: `JSON | FORM_ENCODED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `JSON | FORM_ENCODED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UsernameField`
-
-###### Note
-
+`UsernameField`  <a name="cfn-wafv2-webacl-managedrulegroupconfig-usernamefield"></a>
 Instead of this setting, provide your configuration under the request inspection configuration for `AWSManagedRulesATPRuleSet` or `AWSManagedRulesACFPRuleSet`.
-
-_Required_: No
-
-_Type_: [FieldIdentifier](aws-properties-wafv2-webacl-fieldidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LabelMatchStatement
-
-ManagedRuleGroupStatement
+*Required*: No
+*Type*: [FieldIdentifier](aws-properties-wafv2-webacl-fieldidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

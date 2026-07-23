@@ -2,58 +2,44 @@
 title: "AWS::Bedrock::FlowAlias FlowAliasRoutingConfigurationListItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::FlowAlias FlowAliasRoutingConfigurationListItem
+<a name="aws-properties-bedrock-flowalias-flowaliasroutingconfigurationlistitem"></a>
 
 Contains information about a version that the alias maps to.
 
 ## Syntax
+<a name="aws-properties-bedrock-flowalias-flowaliasroutingconfigurationlistitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flowalias-flowaliasroutingconfigurationlistitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "FlowVersion" : String
+  "[FlowVersion](#cfn-bedrock-flowalias-flowaliasroutingconfigurationlistitem-flowversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flowalias-flowaliasroutingconfigurationlistitem-syntax.yaml"></a>
 
-```yaml
-
-  FlowVersion: String
-
+```
+  [FlowVersion](#cfn-bedrock-flowalias-flowaliasroutingconfigurationlistitem-flowversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flowalias-flowaliasroutingconfigurationlistitem-properties"></a>
 
-`FlowVersion`
-
+`FlowVersion`  <a name="cfn-bedrock-flowalias-flowaliasroutingconfigurationlistitem-flowversion"></a>
 The version that the alias maps to.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(DRAFT|[0-9]{0,4}[1-9][0-9]{0,4})$`
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowAliasConcurrencyConfiguration
-
-AWS::Bedrock::FlowVersion
+*Required*: No
+*Type*: String
+*Pattern*: `^(DRAFT|[0-9]{0,4}[1-9][0-9]{0,4})$`
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

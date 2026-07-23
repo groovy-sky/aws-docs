@@ -2,91 +2,64 @@
 title: "AWS::CloudWatch::Alarm Metric"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Alarm Metric
+<a name="aws-properties-cloudwatch-alarm-metric"></a>
 
-The `Metric` property type represents a specific metric. `Metric` is a property of the
-[MetricStat](../userguide/aws-properties-cloudwatch-alarm-metricstat.md) property type.
+The `Metric` property type represents a specific metric. `Metric` is a property of the [MetricStat](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html) property type.
 
 ## Syntax
+<a name="aws-properties-cloudwatch-alarm-metric-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudwatch-alarm-metric-syntax.json"></a>
 
-```json
-
+```
 {
-  "Dimensions" : [ Dimension, ... ],
-  "MetricName" : String,
-  "Namespace" : String
+  "[Dimensions](#cfn-cloudwatch-alarm-metric-dimensions)" : {{[ Dimension, ... ]}},
+  "[MetricName](#cfn-cloudwatch-alarm-metric-metricname)" : {{String}},
+  "[Namespace](#cfn-cloudwatch-alarm-metric-namespace)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudwatch-alarm-metric-syntax.yaml"></a>
 
-```yaml
-
-  Dimensions:
-    - Dimension
-  MetricName: String
-  Namespace: String
-
+```
+  [Dimensions](#cfn-cloudwatch-alarm-metric-dimensions): {{
+    - Dimension}}
+  [MetricName](#cfn-cloudwatch-alarm-metric-metricname): {{String}}
+  [Namespace](#cfn-cloudwatch-alarm-metric-namespace): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudwatch-alarm-metric-properties"></a>
 
-`Dimensions`
+`Dimensions`  <a name="cfn-cloudwatch-alarm-metric-dimensions"></a>
+The metric dimensions that you want to be used for the metric that the alarm will watch.
+*Required*: No
+*Type*: Array of [Dimension](aws-properties-cloudwatch-alarm-dimension.md)
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The metric dimensions that you want to be used for the metric that
-the alarm will watch.
-
-_Required_: No
-
-_Type_: Array of [Dimension](aws-properties-cloudwatch-alarm-dimension.md)
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricName`
-
+`MetricName`  <a name="cfn-cloudwatch-alarm-metric-metricname"></a>
 The name of the metric that you want the alarm to watch. This is a required field.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-cloudwatch-alarm-metric-namespace"></a>
 The namespace of the metric that the alarm will watch.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[^:].*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationCriteria
-
-MetricDataQuery
+*Required*: No
+*Type*: String
+*Pattern*: `[^:].*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

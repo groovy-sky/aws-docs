@@ -2,123 +2,103 @@
 title: "AWS::ApiGateway::Model"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::Model
+<a name="aws-resource-apigateway-model"></a>
 
 The `AWS::ApiGateway::Model` resource defines the structure of a request or response payload for an API method.
 
 ## Syntax
+<a name="aws-resource-apigateway-model-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-model-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::Model",
   "Properties" : {
-      "ContentType" : String,
-      "Description" : String,
-      "Name" : String,
-      "RestApiId" : String,
-      "Schema" : Json
+      "[ContentType](#cfn-apigateway-model-contenttype)" : {{String}},
+      "[Description](#cfn-apigateway-model-description)" : {{String}},
+      "[Name](#cfn-apigateway-model-name)" : {{String}},
+      "[RestApiId](#cfn-apigateway-model-restapiid)" : {{String}},
+      "[Schema](#cfn-apigateway-model-schema)" : {{Json}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-model-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::Model
 Properties:
-  ContentType: String
-  Description: String
-  Name: String
-  RestApiId: String
-  Schema: Json
-
+  [ContentType](#cfn-apigateway-model-contenttype): {{String}}
+  [Description](#cfn-apigateway-model-description): {{String}}
+  [Name](#cfn-apigateway-model-name): {{String}}
+  [RestApiId](#cfn-apigateway-model-restapiid): {{String}}
+  [Schema](#cfn-apigateway-model-schema): {{Json}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-model-properties"></a>
 
-`ContentType`
-
+`ContentType`  <a name="cfn-apigateway-model-contenttype"></a>
 The content-type for the model.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-apigateway-model-description"></a>
 The description of the model.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-A name for the model. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the model name. For more information, see [Name Type](../userguide/aws-properties-name.md).
-
-###### Important
-
+`Name`  <a name="cfn-apigateway-model-name"></a>
+A name for the model. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the model name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
 If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-apigateway-model-restapiid"></a>
 The string identifier of the associated RestApi.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Schema`
-
+`Schema`  <a name="cfn-apigateway-model-schema"></a>
 The schema for the model. For `application/json` models, this should be JSON schema draft 4 model. Do not include "\\\*/" characters in the description of any properties because such "\\\*/" characters may be interpreted as the closing marker for comments in some languages, such as Java or JavaScript, causing the installation of your API's SDK generated by API Gateway to fail.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigateway-model-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigateway-model-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the model name, such as `myModel`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-apigateway-model--examples"></a>
 
 ### Create model
+<a name="aws-resource-apigateway-model--examples--Create_model"></a>
 
 The following example creates a model that transforms input data into the described schema.
 
 #### JSON
+<a name="aws-resource-apigateway-model--examples--Create_model--json"></a>
 
-```json
-
+```
 {
     "PetsModelNoFlatten": {
         "Type": "AWS::ApiGateway::Model",
@@ -154,9 +134,9 @@ The following example creates a model that transforms input data into the descri
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-model--examples--Create_model--yaml"></a>
 
-```yaml
-
+```
 PetsModelNoFlatten:
   Type: 'AWS::ApiGateway::Model'
   Properties:
@@ -177,17 +157,10 @@ PetsModelNoFlatten:
             type: string
           salesPrice:
             type: number
-
 ```
 
 ## See also
-
-- [model:create](../../../apigateway/latest/api/api-createmodel.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MethodResponse
-
-AWS::ApiGateway::RequestValidator
+<a name="aws-resource-apigateway-model--seealso"></a>
++ [model:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateModel.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

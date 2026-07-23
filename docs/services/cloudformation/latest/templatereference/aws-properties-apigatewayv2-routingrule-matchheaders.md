@@ -2,53 +2,42 @@
 title: "AWS::ApiGatewayV2::RoutingRule MatchHeaders"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::RoutingRule MatchHeaders
+<a name="aws-properties-apigatewayv2-routingrule-matchheaders"></a>
 
 Represents a `MatchHeaders` condition.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-routingrule-matchheaders-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-routingrule-matchheaders-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnyOf" : [ MatchHeaderValue, ... ]
+  "[AnyOf](#cfn-apigatewayv2-routingrule-matchheaders-anyof)" : {{[ MatchHeaderValue, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-routingrule-matchheaders-syntax.yaml"></a>
 
-```yaml
-
-  AnyOf:
-    - MatchHeaderValue
-
+```
+  [AnyOf](#cfn-apigatewayv2-routingrule-matchheaders-anyof): {{
+    - MatchHeaderValue}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-routingrule-matchheaders-properties"></a>
 
-`AnyOf`
-
+`AnyOf`  <a name="cfn-apigatewayv2-routingrule-matchheaders-anyof"></a>
 The header name and header value glob to be matched. The matchHeaders condition is matched if any of the header name and header value globs are matched.
-
-_Required_: Yes
-
-_Type_: Array of [MatchHeaderValue](aws-properties-apigatewayv2-routingrule-matchheadervalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MatchBasePaths
-
-MatchHeaderValue
+*Required*: Yes
+*Type*: Array of [MatchHeaderValue](aws-properties-apigatewayv2-routingrule-matchheadervalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

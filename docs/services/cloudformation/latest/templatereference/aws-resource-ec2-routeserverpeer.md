@@ -2,137 +2,113 @@
 title: "AWS::EC2::RouteServerPeer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::RouteServerPeer
+<a name="aws-resource-ec2-routeserverpeer"></a>
 
 Specifies a BGP peer configuration for a route server endpoint.
 
 A route server peer is a session between a route server endpoint and the device deployed in AWS (such as a firewall appliance or other network security function running on an EC2 instance).
 
 ## Syntax
+<a name="aws-resource-ec2-routeserverpeer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-routeserverpeer-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::RouteServerPeer",
   "Properties" : {
-      "BgpOptions" : BgpOptions,
-      "PeerAddress" : String,
-      "RouteServerEndpointId" : String,
-      "Tags" : [ Tag, ... ]
+      "[BgpOptions](#cfn-ec2-routeserverpeer-bgpoptions)" : {{BgpOptions}},
+      "[PeerAddress](#cfn-ec2-routeserverpeer-peeraddress)" : {{String}},
+      "[RouteServerEndpointId](#cfn-ec2-routeserverpeer-routeserverendpointid)" : {{String}},
+      "[Tags](#cfn-ec2-routeserverpeer-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-routeserverpeer-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::RouteServerPeer
 Properties:
-  BgpOptions:
-    BgpOptions
-  PeerAddress: String
-  RouteServerEndpointId: String
-  Tags:
-    - Tag
-
+  [BgpOptions](#cfn-ec2-routeserverpeer-bgpoptions): {{
+    BgpOptions}}
+  [PeerAddress](#cfn-ec2-routeserverpeer-peeraddress): {{String}}
+  [RouteServerEndpointId](#cfn-ec2-routeserverpeer-routeserverendpointid): {{String}}
+  [Tags](#cfn-ec2-routeserverpeer-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-routeserverpeer-properties"></a>
 
-`BgpOptions`
-
+`BgpOptions`  <a name="cfn-ec2-routeserverpeer-bgpoptions"></a>
 The BGP configuration options for this peer, including ASN (Autonomous System Number) and BFD (Bidrectional Forwarding Detection) settings.
+*Required*: Yes
+*Type*: [BgpOptions](aws-properties-ec2-routeserverpeer-bgpoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [BgpOptions](aws-properties-ec2-routeserverpeer-bgpoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PeerAddress`
-
+`PeerAddress`  <a name="cfn-ec2-routeserverpeer-peeraddress"></a>
 The IPv4 address of the peer device.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RouteServerEndpointId`
-
+`RouteServerEndpointId`  <a name="cfn-ec2-routeserverpeer-routeserverendpointid"></a>
 The ID of the route server endpoint associated with this peer.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-routeserverpeer-tags"></a>
 Any tags assigned to the route server peer.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-routeserverpeer-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-routeserverpeer-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-routeserverpeer-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-routeserverpeer-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the peer ID.
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-routeserverpeer-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ec2-routeserverpeer-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the route server peer.
 
-`EndpointEniAddress`
-
+`EndpointEniAddress`  <a name="EndpointEniAddress-fn::getatt"></a>
 The IP address of the Elastic network interface for the route server endpoint.
 
-`EndpointEniId`
-
+`EndpointEniId`  <a name="EndpointEniId-fn::getatt"></a>
 The ID of the Elastic network interface for the route server endpoint.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the route server peer.
 
-`RouteServerId`
-
+`RouteServerId`  <a name="RouteServerId-fn::getatt"></a>
 The ID of the route server associated with this peer.
 
-`SubnetId`
-
+`SubnetId`  <a name="SubnetId-fn::getatt"></a>
 The ID of the subnet containing the route server peer.
 
-`VpcId`
-
+`VpcId`  <a name="VpcId-fn::getatt"></a>
 The ID of the VPC containing the route server peer.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-BgpOptions
 
 All content copied from https://docs.aws.amazon.com/.

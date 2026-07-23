@@ -2,63 +2,45 @@
 title: "AWS::Kendra::DataSource ConfluencePageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource ConfluencePageConfiguration
+<a name="aws-properties-kendra-datasource-confluencepageconfiguration"></a>
 
 Configuration of the page settings for the Confluence data source.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-confluencepageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-confluencepageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "PageFieldMappings" : [ ConfluencePageToIndexFieldMapping, ... ]
+  "[PageFieldMappings](#cfn-kendra-datasource-confluencepageconfiguration-pagefieldmappings)" : {{[ ConfluencePageToIndexFieldMapping, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-confluencepageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  PageFieldMappings:
-    - ConfluencePageToIndexFieldMapping
-
+```
+  [PageFieldMappings](#cfn-kendra-datasource-confluencepageconfiguration-pagefieldmappings): {{
+    - ConfluencePageToIndexFieldMapping}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-confluencepageconfiguration-properties"></a>
 
-`PageFieldMappings`
-
-Maps attributes or field names of Confluence pages to Amazon Kendra index field
-names. To create custom fields, use the `UpdateIndex` API before you map to
-Confluence fields. For more information, see [Mapping data source fields](../../../kendra/latest/dg/field-mapping.md). The
-Confluence data source field names must exist in your Confluence custom metadata.
-
-If you specify the `PageFieldMappings` parameter, you must specify at least
-one field mapping.
-
-_Required_: No
-
-_Type_: Array of [ConfluencePageToIndexFieldMapping](aws-properties-kendra-datasource-confluencepagetoindexfieldmapping.md)
-
-_Minimum_: `1`
-
-_Maximum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfluenceConfiguration
-
-ConfluencePageToIndexFieldMapping
+`PageFieldMappings`  <a name="cfn-kendra-datasource-confluencepageconfiguration-pagefieldmappings"></a>
+Maps attributes or field names of Confluence pages to Amazon Kendra index field names. To create custom fields, use the `UpdateIndex` API before you map to Confluence fields. For more information, see [Mapping data source fields](https://docs.aws.amazon.com/kendra/latest/dg/field-mapping.html). The Confluence data source field names must exist in your Confluence custom metadata.
+If you specify the `PageFieldMappings` parameter, you must specify at least one field mapping.
+*Required*: No
+*Type*: Array of [ConfluencePageToIndexFieldMapping](aws-properties-kendra-datasource-confluencepagetoindexfieldmapping.md)
+*Minimum*: `1`
+*Maximum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

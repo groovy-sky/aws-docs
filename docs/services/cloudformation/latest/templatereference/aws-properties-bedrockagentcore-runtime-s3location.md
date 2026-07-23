@@ -2,86 +2,62 @@
 title: "AWS::BedrockAgentCore::Runtime S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime S3Location
+<a name="aws-properties-bedrockagentcore-runtime-s3location"></a>
 
 The Amazon S3 location for storing data. This structure defines where in Amazon S3 data is stored.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-runtime-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-runtime-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Prefix" : String,
-  "VersionId" : String
+  "[Bucket](#cfn-bedrockagentcore-runtime-s3location-bucket)" : {{String}},
+  "[Prefix](#cfn-bedrockagentcore-runtime-s3location-prefix)" : {{String}},
+  "[VersionId](#cfn-bedrockagentcore-runtime-s3location-versionid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-runtime-s3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Prefix: String
-  VersionId: String
-
+```
+  [Bucket](#cfn-bedrockagentcore-runtime-s3location-bucket): {{String}}
+  [Prefix](#cfn-bedrockagentcore-runtime-s3location-prefix): {{String}}
+  [VersionId](#cfn-bedrockagentcore-runtime-s3location-versionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-runtime-s3location-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-bedrockagentcore-runtime-s3location-bucket"></a>
 The name of the Amazon S3 bucket.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9][a-z0-9.-]{1,61}[a-z0-9]$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9][a-z0-9.-]{1,61}[a-z0-9]$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-bedrockagentcore-runtime-s3location-prefix"></a>
 The prefix for objects in the Amazon S3 bucket.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionId`
-
+`VersionId`  <a name="cfn-bedrockagentcore-runtime-s3location-versionid"></a>
 The version ID of the Amazon Amazon S3 object. If not specified, the latest version of the object is used.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RequestHeaderConfiguration
-
-SessionStorageConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

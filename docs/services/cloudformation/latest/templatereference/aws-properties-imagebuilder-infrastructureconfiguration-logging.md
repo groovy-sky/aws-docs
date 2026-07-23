@@ -2,53 +2,42 @@
 title: "AWS::ImageBuilder::InfrastructureConfiguration Logging"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::InfrastructureConfiguration Logging
+<a name="aws-properties-imagebuilder-infrastructureconfiguration-logging"></a>
 
 Logging configuration defines where Image Builder uploads your logs.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-infrastructureconfiguration-logging-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-infrastructureconfiguration-logging-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Logs" : S3Logs
+  "[S3Logs](#cfn-imagebuilder-infrastructureconfiguration-logging-s3logs)" : {{S3Logs}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-infrastructureconfiguration-logging-syntax.yaml"></a>
 
-```yaml
-
-  S3Logs:
-    S3Logs
-
+```
+  [S3Logs](#cfn-imagebuilder-infrastructureconfiguration-logging-s3logs): {{
+    S3Logs}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-infrastructureconfiguration-logging-properties"></a>
 
-`S3Logs`
-
+`S3Logs`  <a name="cfn-imagebuilder-infrastructureconfiguration-logging-s3logs"></a>
 The Amazon S3 logging configuration.
-
-_Required_: No
-
-_Type_: [S3Logs](aws-properties-imagebuilder-infrastructureconfiguration-s3logs.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceMetadataOptions
-
-Placement
+*Required*: No
+*Type*: [S3Logs](aws-properties-imagebuilder-infrastructureconfiguration-s3logs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

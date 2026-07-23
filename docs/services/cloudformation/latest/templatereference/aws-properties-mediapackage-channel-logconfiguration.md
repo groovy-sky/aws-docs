@@ -2,58 +2,44 @@
 title: "AWS::MediaPackage::Channel LogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::Channel LogConfiguration
+<a name="aws-properties-mediapackage-channel-logconfiguration"></a>
 
 The access log configuration parameters for your channel.
 
 ## Syntax
+<a name="aws-properties-mediapackage-channel-logconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-channel-logconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogGroupName" : String
+  "[LogGroupName](#cfn-mediapackage-channel-logconfiguration-loggroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-channel-logconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LogGroupName: String
-
+```
+  [LogGroupName](#cfn-mediapackage-channel-logconfiguration-loggroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-channel-logconfiguration-properties"></a>
 
-`LogGroupName`
-
+`LogGroupName`  <a name="cfn-mediapackage-channel-logconfiguration-loggroupname"></a>
 Sets a custom Amazon CloudWatch log group name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\A^(\/aws\/MediaPackage\/)[a-zA-Z0-9_-]+\Z`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngestEndpoint
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `\A^(\/aws\/MediaPackage\/)[a-zA-Z0-9_-]+\Z`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

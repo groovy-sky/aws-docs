@@ -2,90 +2,63 @@
 title: "AWS::Lex::Bot CustomVocabularyItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot CustomVocabularyItem
+<a name="aws-properties-lex-bot-customvocabularyitem"></a>
 
 Specifies an entry in a custom vocabulary.
 
 ## Syntax
+<a name="aws-properties-lex-bot-customvocabularyitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-customvocabularyitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayAs" : String,
-  "Phrase" : String,
-  "Weight" : Integer
+  "[DisplayAs](#cfn-lex-bot-customvocabularyitem-displayas)" : {{String}},
+  "[Phrase](#cfn-lex-bot-customvocabularyitem-phrase)" : {{String}},
+  "[Weight](#cfn-lex-bot-customvocabularyitem-weight)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-customvocabularyitem-syntax.yaml"></a>
 
-```yaml
-
-  DisplayAs: String
-  Phrase: String
-  Weight: Integer
-
+```
+  [DisplayAs](#cfn-lex-bot-customvocabularyitem-displayas): {{String}}
+  [Phrase](#cfn-lex-bot-customvocabularyitem-phrase): {{String}}
+  [Weight](#cfn-lex-bot-customvocabularyitem-weight): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-customvocabularyitem-properties"></a>
 
-`DisplayAs`
+`DisplayAs`  <a name="cfn-lex-bot-customvocabularyitem-displayas"></a>
+The DisplayAs value for the custom vocabulary item from the custom vocabulary list.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The DisplayAs value for the custom vocabulary item
-from the custom vocabulary list.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Phrase`
-
+`Phrase`  <a name="cfn-lex-bot-customvocabularyitem-phrase"></a>
 Specifies 1 - 4 words that should be recognized.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
-Specifies the degree to which the phrase recognition is boosted. The
-default value is 1.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomVocabulary
-
-DataPrivacy
+`Weight`  <a name="cfn-lex-bot-customvocabularyitem-weight"></a>
+Specifies the degree to which the phrase recognition is boosted. The default value is 1.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

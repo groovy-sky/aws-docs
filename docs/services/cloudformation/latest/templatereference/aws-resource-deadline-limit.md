@@ -2,164 +2,115 @@
 title: "AWS::Deadline::Limit"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Limit
+<a name="aws-resource-deadline-limit"></a>
 
-Creates a limit that manages the distribution of shared resources, such as floating
-licenses. A limit can throttle work assignments, help manage workloads, and track current
-usage. Before you use a limit, you must associate the limit with one or more queues.
+Creates a limit that manages the distribution of shared resources, such as floating licenses. A limit can throttle work assignments, help manage workloads, and track current usage. Before you use a limit, you must associate the limit with one or more queues.
 
-You must add the `amountRequirementName` to a step in a job template to
-declare the limit requirement.
+You must add the `amountRequirementName` to a step in a job template to declare the limit requirement.
 
 ## Syntax
+<a name="aws-resource-deadline-limit-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-deadline-limit-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Deadline::Limit",
   "Properties" : {
-      "AmountRequirementName" : String,
-      "Description" : String,
-      "DisplayName" : String,
-      "FarmId" : String,
-      "MaxCount" : Integer
+      "[AmountRequirementName](#cfn-deadline-limit-amountrequirementname)" : {{String}},
+      "[Description](#cfn-deadline-limit-description)" : {{String}},
+      "[DisplayName](#cfn-deadline-limit-displayname)" : {{String}},
+      "[FarmId](#cfn-deadline-limit-farmid)" : {{String}},
+      "[MaxCount](#cfn-deadline-limit-maxcount)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-deadline-limit-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Deadline::Limit
 Properties:
-  AmountRequirementName: String
-  Description: String
-  DisplayName: String
-  FarmId: String
-  MaxCount: Integer
-
+  [AmountRequirementName](#cfn-deadline-limit-amountrequirementname): {{String}}
+  [Description](#cfn-deadline-limit-description): {{String}}
+  [DisplayName](#cfn-deadline-limit-displayname): {{String}}
+  [FarmId](#cfn-deadline-limit-farmid): {{String}}
+  [MaxCount](#cfn-deadline-limit-maxcount): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-deadline-limit-properties"></a>
 
-`AmountRequirementName`
+`AmountRequirementName`  <a name="cfn-deadline-limit-amountrequirementname"></a>
+The value that you specify as the `name` in the `amounts` field of the `hostRequirements` in a step of a job template to declare the limit requirement.
+*Required*: Yes
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The value that you specify as the `name` in the `amounts` field of
-the `hostRequirements` in a step of a job template to declare the limit
-requirement.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
-A description of the limit. A clear description helps you identify the purpose of the
-limit.
-
-###### Important
-
-This field can store any content. Escape or encode this content before displaying it
-on a webpage or any other system that might interpret the content of this field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
-The name of the limit used in lists to identify the limit.
-
-###### Important
-
+`Description`  <a name="cfn-deadline-limit-description"></a>
+A description of the limit. A clear description helps you identify the purpose of the limit.
 This field can store any content. Escape or encode this content before displaying it on a webpage or any other system that might interpret the content of this field.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`DisplayName`  <a name="cfn-deadline-limit-displayname"></a>
+The name of the limit used in lists to identify the limit.
+This field can store any content. Escape or encode this content before displaying it on a webpage or any other system that might interpret the content of this field.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FarmId`
-
+`FarmId`  <a name="cfn-deadline-limit-farmid"></a>
 The unique identifier of the farm that contains the limit.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^farm-[0-9a-f]{32}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^farm-[0-9a-f]{32}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxCount`
-
-The maximum number of resources constrained by this limit. When all of the resources are
-in use, steps that require the limit won't be scheduled until the resource is
-available.
-
-The `maxValue` must not be 0. If the value is -1, there is no restriction on
-the number of resources that can be acquired for this limit.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `-1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`MaxCount`  <a name="cfn-deadline-limit-maxcount"></a>
+The maximum number of resources constrained by this limit. When all of the resources are in use, steps that require the limit won't be scheduled until the resource is available.
+The `maxValue` must not be 0. If the value is -1, there is no restriction on the number of resources that can be acquired for this limit.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `-1`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-deadline-limit-return-values"></a>
 
 ### Ref
+<a name="aws-resource-deadline-limit-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the unique identifier of the limit.
 
 ### Fn::GetAtt
+<a name="aws-resource-deadline-limit-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CurrentCount`
+####
+<a name="aws-resource-deadline-limit-return-values-fn--getatt-fn--getatt"></a>
 
-The number of resources from the limit that are being used by jobs. The result is
-delayed and may not be the count at the time that you called the operation.
+`CurrentCount`  <a name="CurrentCount-fn::getatt"></a>
+The number of resources from the limit that are being used by jobs. The result is delayed and may not be the count at the time that you called the operation.
 
-`LimitId`
-
+`LimitId`  <a name="LimitId-fn::getatt"></a>
 The unique identifier of the limit.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Deadline::MeteredProduct
 
 All content copied from https://docs.aws.amazon.com/.

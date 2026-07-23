@@ -2,102 +2,73 @@
 title: "AWS::QuickSight::Dashboard ReferenceLineDataConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ReferenceLineDataConfiguration
+<a name="aws-properties-quicksight-dashboard-referencelinedataconfiguration"></a>
 
 The data configuration of the reference line.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-referencelinedataconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-referencelinedataconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AxisBinding" : String,
-  "DynamicConfiguration" : ReferenceLineDynamicDataConfiguration,
-  "SeriesType" : String,
-  "StaticConfiguration" : ReferenceLineStaticDataConfiguration
+  "[AxisBinding](#cfn-quicksight-dashboard-referencelinedataconfiguration-axisbinding)" : {{String}},
+  "[DynamicConfiguration](#cfn-quicksight-dashboard-referencelinedataconfiguration-dynamicconfiguration)" : {{ReferenceLineDynamicDataConfiguration}},
+  "[SeriesType](#cfn-quicksight-dashboard-referencelinedataconfiguration-seriestype)" : {{String}},
+  "[StaticConfiguration](#cfn-quicksight-dashboard-referencelinedataconfiguration-staticconfiguration)" : {{ReferenceLineStaticDataConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-referencelinedataconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AxisBinding: String
-  DynamicConfiguration:
-    ReferenceLineDynamicDataConfiguration
-  SeriesType: String
-  StaticConfiguration:
-    ReferenceLineStaticDataConfiguration
-
+```
+  [AxisBinding](#cfn-quicksight-dashboard-referencelinedataconfiguration-axisbinding): {{String}}
+  [DynamicConfiguration](#cfn-quicksight-dashboard-referencelinedataconfiguration-dynamicconfiguration): {{
+    ReferenceLineDynamicDataConfiguration}}
+  [SeriesType](#cfn-quicksight-dashboard-referencelinedataconfiguration-seriestype): {{String}}
+  [StaticConfiguration](#cfn-quicksight-dashboard-referencelinedataconfiguration-staticconfiguration): {{
+    ReferenceLineStaticDataConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-referencelinedataconfiguration-properties"></a>
 
-`AxisBinding`
-
+`AxisBinding`  <a name="cfn-quicksight-dashboard-referencelinedataconfiguration-axisbinding"></a>
 The axis binding type of the reference line. Choose one of the following options:
++  `PrimaryY`
++  `SecondaryY`
+*Required*: No
+*Type*: String
+*Allowed values*: `PRIMARY_YAXIS | SECONDARY_YAXIS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `PrimaryY`
-
-- `SecondaryY`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PRIMARY_YAXIS | SECONDARY_YAXIS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DynamicConfiguration`
-
+`DynamicConfiguration`  <a name="cfn-quicksight-dashboard-referencelinedataconfiguration-dynamicconfiguration"></a>
 The dynamic configuration of the reference line data configuration.
+*Required*: No
+*Type*: [ReferenceLineDynamicDataConfiguration](aws-properties-quicksight-dashboard-referencelinedynamicdataconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ReferenceLineDynamicDataConfiguration](aws-properties-quicksight-dashboard-referencelinedynamicdataconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SeriesType`
-
+`SeriesType`  <a name="cfn-quicksight-dashboard-referencelinedataconfiguration-seriestype"></a>
 The series type of the reference line data configuration. Choose one of the following options:
++  `BAR`
++  `LINE`
+*Required*: No
+*Type*: String
+*Allowed values*: `BAR | LINE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `BAR`
-
-- `LINE`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BAR | LINE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticConfiguration`
-
+`StaticConfiguration`  <a name="cfn-quicksight-dashboard-referencelinedataconfiguration-staticconfiguration"></a>
 The static data configuration of the reference line data configuration.
-
-_Required_: No
-
-_Type_: [ReferenceLineStaticDataConfiguration](aws-properties-quicksight-dashboard-referencelinestaticdataconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReferenceLineCustomLabelConfiguration
-
-ReferenceLineDynamicDataConfiguration
+*Required*: No
+*Type*: [ReferenceLineStaticDataConfiguration](aws-properties-quicksight-dashboard-referencelinestaticdataconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

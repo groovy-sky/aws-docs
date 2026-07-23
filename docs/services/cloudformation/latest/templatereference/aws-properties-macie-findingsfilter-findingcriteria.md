@@ -2,59 +2,42 @@
 title: "AWS::Macie::FindingsFilter FindingCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Macie::FindingsFilter FindingCriteria
+<a name="aws-properties-macie-findingsfilter-findingcriteria"></a>
 
-Specifies, as a map, one or more property-based conditions for a findings filter. A _findings filter_, also referred
-to as a _filter rule_, is a set of custom criteria that specifies which findings to include or exclude
-from the results of a query for findings. You can also configure a findings filter to suppress (automatically archive) findings that
-match the filter's criteria. For more information,
-see [Filtering Macie findings](../../../macie/latest/user/findings-filter-overview.md) in
-the _Amazon Macie User Guide_.
+Specifies, as a map, one or more property-based conditions for a findings filter. A *findings filter*, also referred to as a *filter rule*, is a set of custom criteria that specifies which findings to include or exclude from the results of a query for findings. You can also configure a findings filter to suppress (automatically archive) findings that match the filter's criteria. For more information, see [Filtering Macie findings](https://docs.aws.amazon.com/macie/latest/user/findings-filter-overview.html) in the *Amazon Macie User Guide*.
 
 ## Syntax
+<a name="aws-properties-macie-findingsfilter-findingcriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-macie-findingsfilter-findingcriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "Criterion" : {Key: Value, ...}
+  "[Criterion](#cfn-macie-findingsfilter-findingcriteria-criterion)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-macie-findingsfilter-findingcriteria-syntax.yaml"></a>
 
-```yaml
-
-  Criterion:
-    Key: Value
-
+```
+  [Criterion](#cfn-macie-findingsfilter-findingcriteria-criterion): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-macie-findingsfilter-findingcriteria-properties"></a>
 
-`Criterion`
-
-Specifies a condition that defines the property, operator, and one or more values to
-use to filter the results.
-
-_Required_: No
-
-_Type_: Object of [CriterionAdditionalProperties](aws-properties-macie-findingsfilter-criterionadditionalproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CriterionAdditionalProperties
-
-Tag
+`Criterion`  <a name="cfn-macie-findingsfilter-findingcriteria-criterion"></a>
+Specifies a condition that defines the property, operator, and one or more values to use to filter the results.
+*Required*: No
+*Type*: Object of [CriterionAdditionalProperties](aws-properties-macie-findingsfilter-criterionadditionalproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

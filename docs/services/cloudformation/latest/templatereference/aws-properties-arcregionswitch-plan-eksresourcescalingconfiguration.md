@@ -2,139 +2,99 @@
 title: "AWS::ARCRegionSwitch::Plan EksResourceScalingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan EksResourceScalingConfiguration
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration"></a>
 
 The AWS EKS resource scaling configuration.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CapacityMonitoringApproach" : ,
-  "EksClusters" : [ EksCluster, ... ],
-  "KubernetesResourceType" : KubernetesResourceType,
-  "ScalingResources" : [ {Key: Value, ...}, ... ],
-  "TargetPercent" : Number,
-  "TimeoutMinutes" : Number,
-  "Ungraceful" : EksResourceScalingUngraceful
+  "[CapacityMonitoringApproach](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-capacitymonitoringapproach)" : {{}},
+  "[EksClusters](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-eksclusters)" : {{[ EksCluster, ... ]}},
+  "[KubernetesResourceType](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-kubernetesresourcetype)" : {{KubernetesResourceType}},
+  "[ScalingResources](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-scalingresources)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
+  "[TargetPercent](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-targetpercent)" : {{Number}},
+  "[TimeoutMinutes](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-timeoutminutes)" : {{Number}},
+  "[Ungraceful](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-ungraceful)" : {{EksResourceScalingUngraceful}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CapacityMonitoringApproach:
-
-  EksClusters:
-    - EksCluster
-  KubernetesResourceType:
-    KubernetesResourceType
-  ScalingResources:
+```
+  [CapacityMonitoringApproach](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-capacitymonitoringapproach): {{
+    }}
+  [EksClusters](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-eksclusters): {{
+    - EksCluster}}
+  [KubernetesResourceType](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-kubernetesresourcetype): {{
+    KubernetesResourceType}}
+  [ScalingResources](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-scalingresources): {{
     -
-    Key: Value
-  TargetPercent: Number
-  TimeoutMinutes: Number
-  Ungraceful:
-    EksResourceScalingUngraceful
-
+    {{Key}}: {{Value}}}}
+  [TargetPercent](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-targetpercent): {{Number}}
+  [TimeoutMinutes](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-timeoutminutes): {{Number}}
+  [Ungraceful](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-ungraceful): {{
+    EksResourceScalingUngraceful}}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration-properties"></a>
 
-`CapacityMonitoringApproach`
+`CapacityMonitoringApproach`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-capacitymonitoringapproach"></a>
+The monitoring approach for the configuration, that is, whether it was sampled in the last 24 hours or autoscaled in the last 24 hours.
+*Required*: No
+*Type*:
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The monitoring approach for the configuration, that is, whether it was sampled in the last
-24 hours or autoscaled in the last 24 hours.
-
-_Required_: No
-
-_Type_:
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EksClusters`
-
+`EksClusters`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-eksclusters"></a>
 The clusters for the configuration.
+*Required*: No
+*Type*: Array of [EksCluster](aws-properties-arcregionswitch-plan-ekscluster.md)
+*Minimum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EksCluster](aws-properties-arcregionswitch-plan-ekscluster.md)
-
-_Minimum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KubernetesResourceType`
-
+`KubernetesResourceType`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-kubernetesresourcetype"></a>
 The Kubernetes resource type for the configuration.
+*Required*: Yes
+*Type*: [KubernetesResourceType](aws-properties-arcregionswitch-plan-kubernetesresourcetype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [KubernetesResourceType](aws-properties-arcregionswitch-plan-kubernetesresourcetype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScalingResources`
-
+`ScalingResources`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-scalingresources"></a>
 The scaling resources for the configuration.
+*Required*: No
+*Type*: Array of Object
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of Object
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetPercent`
-
+`TargetPercent`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-targetpercent"></a>
 The target percentage for the configuration. The default is 100.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeoutMinutes`
-
+`TimeoutMinutes`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-timeoutminutes"></a>
 The timeout value specified for the configuration.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ungraceful`
-
+`Ungraceful`  <a name="cfn-arcregionswitch-plan-eksresourcescalingconfiguration-ungraceful"></a>
 The settings for ungraceful execution.
-
-_Required_: No
-
-_Type_: [EksResourceScalingUngraceful](aws-properties-arcregionswitch-plan-eksresourcescalingungraceful.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EksCluster
-
-EksResourceScalingUngraceful
+*Required*: No
+*Type*: [EksResourceScalingUngraceful](aws-properties-arcregionswitch-plan-eksresourcescalingungraceful.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

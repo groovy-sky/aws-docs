@@ -2,57 +2,44 @@
 title: "AWS::CustomerProfiles::SegmentDefinition SegmentSort"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition SegmentSort
+<a name="aws-properties-customerprofiles-segmentdefinition-segmentsort"></a>
 
-The `SegmentSort` property type specifies Property description not available. for an [AWS::CustomerProfiles::SegmentDefinition](aws-resource-customerprofiles-segmentdefinition.md).
+<a name="aws-properties-customerprofiles-segmentdefinition-segmentsort-description"></a>The `SegmentSort` property type specifies Property description not available. for an [AWS::CustomerProfiles::SegmentDefinition](aws-resource-customerprofiles-segmentdefinition.md).
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-segmentsort-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-segmentsort-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : [ SortAttribute, ... ]
+  "[Attributes](#cfn-customerprofiles-segmentdefinition-segmentsort-attributes)" : {{[ SortAttribute, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-segmentsort-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
-    - SortAttribute
-
+```
+  [Attributes](#cfn-customerprofiles-segmentdefinition-segmentsort-attributes): {{
+    - SortAttribute}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-segmentsort-properties"></a>
 
-`Attributes`
-
+`Attributes`  <a name="cfn-customerprofiles-segmentdefinition-segmentsort-attributes"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [SortAttribute](aws-properties-customerprofiles-segmentdefinition-sortattribute.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SegmentGroup
-
-SortAttribute
+*Required*: Yes
+*Type*: Array of [SortAttribute](aws-properties-customerprofiles-segmentdefinition-sortattribute.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

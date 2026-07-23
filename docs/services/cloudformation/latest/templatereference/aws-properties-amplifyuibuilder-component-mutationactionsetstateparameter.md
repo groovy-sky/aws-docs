@@ -2,78 +2,58 @@
 title: "AWS::AmplifyUIBuilder::Component MutationActionSetStateParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component MutationActionSetStateParameter
+<a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter"></a>
 
-Represents the state configuration when an action modifies a property of another element
-within the same component.
+Represents the state configuration when an action modifies a property of another element within the same component.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComponentName" : String,
-  "Property" : String,
-  "Set" : ComponentProperty
+  "[ComponentName](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-componentname)" : {{String}},
+  "[Property](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-property)" : {{String}},
+  "[Set](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-set)" : {{ComponentProperty}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter-syntax.yaml"></a>
 
-```yaml
-
-  ComponentName: String
-  Property: String
-  Set:
-    ComponentProperty
-
+```
+  [ComponentName](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-componentname): {{String}}
+  [Property](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-property): {{String}}
+  [Set](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-set): {{
+    ComponentProperty}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter-properties"></a>
 
-`ComponentName`
-
+`ComponentName`  <a name="cfn-amplifyuibuilder-component-mutationactionsetstateparameter-componentname"></a>
 The name of the component that is being modified.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Property`
-
+`Property`  <a name="cfn-amplifyuibuilder-component-mutationactionsetstateparameter-property"></a>
 The name of the component property to apply the state configuration to.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Set`
-
+`Set`  <a name="cfn-amplifyuibuilder-component-mutationactionsetstateparameter-set"></a>
 The state configuration to assign to the property.
-
-_Required_: Yes
-
-_Type_: [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FormBindingElement
-
-Predicate
+*Required*: Yes
+*Type*: [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

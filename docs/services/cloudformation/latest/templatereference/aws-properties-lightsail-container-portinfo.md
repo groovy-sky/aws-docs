@@ -2,67 +2,50 @@
 title: "AWS::Lightsail::Container PortInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Container PortInfo
+<a name="aws-properties-lightsail-container-portinfo"></a>
 
-`PortInfo` is a property of the [Container](../userguide/aws-properties-lightsail-container-container.md) property. It describes the ports to open and the protocols to use for
-a container on a Amazon Lightsail container service.
+`PortInfo` is a property of the [Container](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lightsail-container-container.html) property. It describes the ports to open and the protocols to use for a container on a Amazon Lightsail container service.
 
 ## Syntax
+<a name="aws-properties-lightsail-container-portinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-container-portinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "Port" : String,
-  "Protocol" : String
+  "[Port](#cfn-lightsail-container-portinfo-port)" : {{String}},
+  "[Protocol](#cfn-lightsail-container-portinfo-protocol)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-container-portinfo-syntax.yaml"></a>
 
-```yaml
-
-  Port: String
-  Protocol: String
-
+```
+  [Port](#cfn-lightsail-container-portinfo-port): {{String}}
+  [Protocol](#cfn-lightsail-container-portinfo-protocol): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-container-portinfo-properties"></a>
 
-`Port`
-
+`Port`  <a name="cfn-lightsail-container-portinfo-port"></a>
 The open firewall ports of the container.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-lightsail-container-portinfo-protocol"></a>
 The protocol name for the open ports.
-
-_Allowed values_: `HTTP` \| `HTTPS` \| `TCP` \| `UDP`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HealthCheckConfig
-
-PrivateRegistryAccess
+*Allowed values*: `HTTP` \| `HTTPS` \| `TCP` \| `UDP`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

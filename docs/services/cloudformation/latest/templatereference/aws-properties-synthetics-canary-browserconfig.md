@@ -2,54 +2,42 @@
 title: "AWS::Synthetics::Canary BrowserConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Synthetics::Canary BrowserConfig
+<a name="aws-properties-synthetics-canary-browserconfig"></a>
 
 A structure that specifies the browser type to use for a canary run.
 
 ## Syntax
+<a name="aws-properties-synthetics-canary-browserconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-synthetics-canary-browserconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "BrowserType" : String
+  "[BrowserType](#cfn-synthetics-canary-browserconfig-browsertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-synthetics-canary-browserconfig-syntax.yaml"></a>
 
-```yaml
-
-  BrowserType: String
-
+```
+  [BrowserType](#cfn-synthetics-canary-browserconfig-browsertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-synthetics-canary-browserconfig-properties"></a>
 
-`BrowserType`
-
+`BrowserType`  <a name="cfn-synthetics-canary-browserconfig-browsertype"></a>
 The browser type associated with this browser configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CHROME | FIREFOX`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BaseScreenshot
-
-Code
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CHROME | FIREFOX`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

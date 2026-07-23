@@ -2,171 +2,141 @@
 title: "AWS::Connect::Rule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule
+<a name="aws-resource-connect-rule"></a>
 
-Creates a rule for the specified Amazon Connect instance.
+Creates a rule for the specified Connect Customer instance.
 
 ## Syntax
+<a name="aws-resource-connect-rule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-rule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::Rule",
   "Properties" : {
-      "Actions" : Actions,
-      "Function" : String,
-      "InstanceArn" : String,
-      "Name" : String,
-      "PublishStatus" : String,
-      "Tags" : [ Tag, ... ],
-      "TriggerEventSource" : RuleTriggerEventSource
+      "[Actions](#cfn-connect-rule-actions)" : {{Actions}},
+      "[Function](#cfn-connect-rule-function)" : {{String}},
+      "[InstanceArn](#cfn-connect-rule-instancearn)" : {{String}},
+      "[Name](#cfn-connect-rule-name)" : {{String}},
+      "[PublishStatus](#cfn-connect-rule-publishstatus)" : {{String}},
+      "[Tags](#cfn-connect-rule-tags)" : {{[ Tag, ... ]}},
+      "[TriggerEventSource](#cfn-connect-rule-triggereventsource)" : {{RuleTriggerEventSource}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-rule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::Rule
 Properties:
-  Actions:
-    Actions
-  Function: String
-  InstanceArn: String
-  Name: String
-  PublishStatus: String
-  Tags:
-    - Tag
-  TriggerEventSource:
-    RuleTriggerEventSource
-
+  [Actions](#cfn-connect-rule-actions): {{
+    Actions}}
+  [Function](#cfn-connect-rule-function): {{String}}
+  [InstanceArn](#cfn-connect-rule-instancearn): {{String}}
+  [Name](#cfn-connect-rule-name): {{String}}
+  [PublishStatus](#cfn-connect-rule-publishstatus): {{String}}
+  [Tags](#cfn-connect-rule-tags): {{
+    - Tag}}
+  [TriggerEventSource](#cfn-connect-rule-triggereventsource): {{
+    RuleTriggerEventSource}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-rule-properties"></a>
 
-`Actions`
+`Actions`  <a name="cfn-connect-rule-actions"></a>
+ A list of actions to be run when the rule is triggered.
+*Required*: Yes
+*Type*: [Actions](aws-properties-connect-rule-actions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of actions to be run when the rule is triggered.
-
-_Required_: Yes
-
-_Type_: [Actions](aws-properties-connect-rule-actions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Function`
-
+`Function`  <a name="cfn-connect-rule-function"></a>
 The conditions of the rule.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-rule-instancearn"></a>
 The Amazon Resource Name (ARN) of the instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-connect-rule-name"></a>
 The name of the rule.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9._-]{1,200}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`PublishStatus`  <a name="cfn-connect-rule-publishstatus"></a>
+ The publish status of the rule.
+*Allowed values*: `DRAFT` \| `PUBLISHED`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DRAFT | PUBLISHED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Tags`  <a name="cfn-connect-rule-tags"></a>
+The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-rule-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[a-zA-Z0-9._-]{1,200}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PublishStatus`
-
-The publish status of the rule.
-
-_Allowed values_: `DRAFT` \|
-`PUBLISHED`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DRAFT | PUBLISHED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags used to organize, track, or control access for this resource. For example, {
-"tags": {"key1":"value1", "key2":"value2"} }.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-connect-rule-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TriggerEventSource`
-
+`TriggerEventSource`  <a name="cfn-connect-rule-triggereventsource"></a>
 The event source to trigger the rule.
-
-_Required_: Yes
-
-_Type_: [RuleTriggerEventSource](aws-properties-connect-rule-ruletriggereventsource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: [RuleTriggerEventSource](aws-properties-connect-rule-ruletriggereventsource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-connect-rule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-rule-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the quick rule name. For example:
 
-`{ "Ref": "myRuleName" }`
+ `{ "Ref": "myRuleName" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-rule-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RuleArn`
+####
+<a name="aws-resource-connect-rule-return-values-fn--getatt-fn--getatt"></a>
 
+`RuleArn`  <a name="RuleArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the rule.
 
 ## Examples
+<a name="aws-resource-connect-rule--examples"></a>
 
 ### Specify a rule resource
+<a name="aws-resource-connect-rule--examples--Specify_a_rule_resource"></a>
 
-The following example specifies a rule resource for an Amazon Connect
-instance.
+The following example specifies a rule resource for an Connect Customer instance.
 
 #### JSON
+<a name="aws-resource-connect-rule--examples--Specify_a_rule_resource--json"></a>
 
-```json
-
+```
 {
     "Name": "ExampleRule",
     "InstanceArn": "arn:aws:connect:region-name:aws-account-id:instance/instance-arn",
@@ -209,11 +179,5 @@ instance.
     "PublishStatus": "DRAFT"
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Actions
 
 All content copied from https://docs.aws.amazon.com/.

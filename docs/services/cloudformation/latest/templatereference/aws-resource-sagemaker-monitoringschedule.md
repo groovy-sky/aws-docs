@@ -2,183 +2,149 @@
 title: "AWS::SageMaker::MonitoringSchedule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::MonitoringSchedule
+<a name="aws-resource-sagemaker-monitoringschedule"></a>
 
-The `AWS::SageMaker::MonitoringSchedule` resource is an Amazon SageMaker resource type that regularly
-starts SageMaker processing Jobs to monitor the data captured for a SageMaker endpoint.
+The `AWS::SageMaker::MonitoringSchedule` resource is an Amazon SageMaker resource type that regularly starts SageMaker processing Jobs to monitor the data captured for a SageMaker endpoint.
 
 ## Syntax
+<a name="aws-resource-sagemaker-monitoringschedule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-monitoringschedule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::MonitoringSchedule",
   "Properties" : {
-      "EndpointName" : String,
-      "FailureReason" : String,
-      "LastMonitoringExecutionSummary" : MonitoringExecutionSummary,
-      "MonitoringScheduleConfig" : MonitoringScheduleConfig,
-      "MonitoringScheduleName" : String,
-      "MonitoringScheduleStatus" : String,
-      "Tags" : [ Tag, ... ]
+      "[EndpointName](#cfn-sagemaker-monitoringschedule-endpointname)" : {{String}},
+      "[FailureReason](#cfn-sagemaker-monitoringschedule-failurereason)" : {{String}},
+      "[LastMonitoringExecutionSummary](#cfn-sagemaker-monitoringschedule-lastmonitoringexecutionsummary)" : {{MonitoringExecutionSummary}},
+      "[MonitoringScheduleConfig](#cfn-sagemaker-monitoringschedule-monitoringscheduleconfig)" : {{MonitoringScheduleConfig}},
+      "[MonitoringScheduleName](#cfn-sagemaker-monitoringschedule-monitoringschedulename)" : {{String}},
+      "[MonitoringScheduleStatus](#cfn-sagemaker-monitoringschedule-monitoringschedulestatus)" : {{String}},
+      "[Tags](#cfn-sagemaker-monitoringschedule-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-monitoringschedule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::MonitoringSchedule
 Properties:
-  EndpointName: String
-  FailureReason: String
-  LastMonitoringExecutionSummary:
-    MonitoringExecutionSummary
-  MonitoringScheduleConfig:
-    MonitoringScheduleConfig
-  MonitoringScheduleName: String
-  MonitoringScheduleStatus: String
-  Tags:
-    - Tag
-
+  [EndpointName](#cfn-sagemaker-monitoringschedule-endpointname): {{String}}
+  [FailureReason](#cfn-sagemaker-monitoringschedule-failurereason): {{String}}
+  [LastMonitoringExecutionSummary](#cfn-sagemaker-monitoringschedule-lastmonitoringexecutionsummary): {{
+    MonitoringExecutionSummary}}
+  [MonitoringScheduleConfig](#cfn-sagemaker-monitoringschedule-monitoringscheduleconfig): {{
+    MonitoringScheduleConfig}}
+  [MonitoringScheduleName](#cfn-sagemaker-monitoringschedule-monitoringschedulename): {{String}}
+  [MonitoringScheduleStatus](#cfn-sagemaker-monitoringschedule-monitoringschedulestatus): {{String}}
+  [Tags](#cfn-sagemaker-monitoringschedule-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-monitoringschedule-properties"></a>
 
-`EndpointName`
-
+`EndpointName`  <a name="cfn-sagemaker-monitoringschedule-endpointname"></a>
 The name of the endpoint using the monitoring schedule.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FailureReason`
-
+`FailureReason`  <a name="cfn-sagemaker-monitoringschedule-failurereason"></a>
 Contains the reason a monitoring job failed, if it failed.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LastMonitoringExecutionSummary`
-
+`LastMonitoringExecutionSummary`  <a name="cfn-sagemaker-monitoringschedule-lastmonitoringexecutionsummary"></a>
 Describes metadata on the last execution to run, if there was one.
+*Required*: No
+*Type*: [MonitoringExecutionSummary](aws-properties-sagemaker-monitoringschedule-monitoringexecutionsummary.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MonitoringExecutionSummary](aws-properties-sagemaker-monitoringschedule-monitoringexecutionsummary.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MonitoringScheduleConfig`
-
+`MonitoringScheduleConfig`  <a name="cfn-sagemaker-monitoringschedule-monitoringscheduleconfig"></a>
 The configuration object that specifies the monitoring schedule and defines the monitoring job.
+*Required*: Yes
+*Type*: [MonitoringScheduleConfig](aws-properties-sagemaker-monitoringschedule-monitoringscheduleconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [MonitoringScheduleConfig](aws-properties-sagemaker-monitoringschedule-monitoringscheduleconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MonitoringScheduleName`
-
+`MonitoringScheduleName`  <a name="cfn-sagemaker-monitoringschedule-monitoringschedulename"></a>
 The name of the monitoring schedule.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MonitoringScheduleStatus`
-
+`MonitoringScheduleStatus`  <a name="cfn-sagemaker-monitoringschedule-monitoringschedulestatus"></a>
 The status of the monitoring schedule.
+*Required*: No
+*Type*: String
+*Allowed values*: `Pending | Failed | Scheduled | Stopped`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Pending | Failed | Scheduled | Stopped`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-monitoringschedule-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-monitoringschedule-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-monitoringschedule-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sagemaker-monitoringschedule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-monitoringschedule-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the monitoring schedule.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-monitoringschedule-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-sagemaker-monitoringschedule-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time when the monitoring schedule was created.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The last time that the monitoring schedule was modified.
 
-`MonitoringScheduleArn`
-
+`MonitoringScheduleArn`  <a name="MonitoringScheduleArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the monitoring schedule.
 
 ## Examples
+<a name="aws-resource-sagemaker-monitoringschedule--examples"></a>
 
 ### SageMaker MonitoringSchedule Example
+<a name="aws-resource-sagemaker-monitoringschedule--examples--SageMaker_MonitoringSchedule_Example"></a>
 
 The following example creates a monitoring schedule for a SageMaker endpoint.
 
 #### JSON
+<a name="aws-resource-sagemaker-monitoringschedule--examples--SageMaker_MonitoringSchedule_Example--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a monitoring schedule",
@@ -244,7 +210,7 @@ The following example creates a monitoring schedule for a SageMaker endpoint.
          "Type": "AWS::IAM::Role",
          "Properties": {
             "AssumeRolePolicyDocument": {
-               "Version": "2012-10-17",
+               "Version": "2012-10-17"		 	 	 ,
                "Statement": [
                   {
                      "Effect": "Allow",
@@ -264,7 +230,7 @@ The following example creates a monitoring schedule for a SageMaker endpoint.
                {
                   "PolicyName": "root",
                   "PolicyDocument": {
-                     "Version": "2012-10-17",
+                     "Version": "2012-10-17"		 	 	 ,
                      "Statement": [
                         {
                            "Effect": "Allow",
@@ -281,7 +247,7 @@ The following example creates a monitoring schedule for a SageMaker endpoint.
          "Type": "AWS::IAM::Role",
          "Properties": {
             "AssumeRolePolicyDocument": {
-               "Version": "2012-10-17",
+               "Version": "2012-10-17"		 	 	 ,
                "Statement": [
                   {
                      "Effect": "Allow",
@@ -360,9 +326,9 @@ The following example creates a monitoring schedule for a SageMaker endpoint.
 ```
 
 #### YAML
+<a name="aws-resource-sagemaker-monitoringschedule--examples--SageMaker_MonitoringSchedule_Example--yaml"></a>
 
-```yaml
-
+```
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Basic SageMaker Hosting entities to create a monitoring schedule
@@ -477,13 +443,6 @@ Resources:
         ScheduleConfig:
           ScheduleExpression: cron(0 * ? * * *)
       MonitoringScheduleName: BasicMonitoringSchedule
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfig
-
-BaselineConfig
 
 All content copied from https://docs.aws.amazon.com/.

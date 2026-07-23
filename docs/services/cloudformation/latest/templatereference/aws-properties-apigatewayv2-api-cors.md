@@ -2,117 +2,85 @@
 title: "AWS::ApiGatewayV2::Api Cors"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Api Cors
+<a name="aws-properties-apigatewayv2-api-cors"></a>
 
-The `Cors` property specifies a CORS configuration for an API.
-Supported only for HTTP APIs. See [Configuring CORS](../../../apigateway/latest/developerguide/http-api-cors.md) for more information.
+The `Cors` property specifies a CORS configuration for an API. Supported only for HTTP APIs. See [Configuring CORS](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html) for more information.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-api-cors-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-api-cors-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowCredentials" : Boolean,
-  "AllowHeaders" : [ String, ... ],
-  "AllowMethods" : [ String, ... ],
-  "AllowOrigins" : [ String, ... ],
-  "ExposeHeaders" : [ String, ... ],
-  "MaxAge" : Integer
+  "[AllowCredentials](#cfn-apigatewayv2-api-cors-allowcredentials)" : {{Boolean}},
+  "[AllowHeaders](#cfn-apigatewayv2-api-cors-allowheaders)" : {{[ String, ... ]}},
+  "[AllowMethods](#cfn-apigatewayv2-api-cors-allowmethods)" : {{[ String, ... ]}},
+  "[AllowOrigins](#cfn-apigatewayv2-api-cors-alloworigins)" : {{[ String, ... ]}},
+  "[ExposeHeaders](#cfn-apigatewayv2-api-cors-exposeheaders)" : {{[ String, ... ]}},
+  "[MaxAge](#cfn-apigatewayv2-api-cors-maxage)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-api-cors-syntax.yaml"></a>
 
-```yaml
-
-  AllowCredentials: Boolean
-  AllowHeaders:
-    - String
-  AllowMethods:
-    - String
-  AllowOrigins:
-    - String
-  ExposeHeaders:
-    - String
-  MaxAge: Integer
-
+```
+  [AllowCredentials](#cfn-apigatewayv2-api-cors-allowcredentials): {{Boolean}}
+  [AllowHeaders](#cfn-apigatewayv2-api-cors-allowheaders): {{
+    - String}}
+  [AllowMethods](#cfn-apigatewayv2-api-cors-allowmethods): {{
+    - String}}
+  [AllowOrigins](#cfn-apigatewayv2-api-cors-alloworigins): {{
+    - String}}
+  [ExposeHeaders](#cfn-apigatewayv2-api-cors-exposeheaders): {{
+    - String}}
+  [MaxAge](#cfn-apigatewayv2-api-cors-maxage): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-api-cors-properties"></a>
 
-`AllowCredentials`
-
+`AllowCredentials`  <a name="cfn-apigatewayv2-api-cors-allowcredentials"></a>
 Specifies whether credentials are included in the CORS request. Supported only for HTTP APIs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowHeaders`
-
+`AllowHeaders`  <a name="cfn-apigatewayv2-api-cors-allowheaders"></a>
 Represents a collection of allowed headers. Supported only for HTTP APIs.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowMethods`
-
+`AllowMethods`  <a name="cfn-apigatewayv2-api-cors-allowmethods"></a>
 Represents a collection of allowed HTTP methods. Supported only for HTTP APIs.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllowOrigins`
-
+`AllowOrigins`  <a name="cfn-apigatewayv2-api-cors-alloworigins"></a>
 Represents a collection of allowed origins. Supported only for HTTP APIs.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExposeHeaders`
-
+`ExposeHeaders`  <a name="cfn-apigatewayv2-api-cors-exposeheaders"></a>
 Represents a collection of exposed headers. Supported only for HTTP APIs.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxAge`
-
+`MaxAge`  <a name="cfn-apigatewayv2-api-cors-maxage"></a>
 The number of seconds that the browser should cache preflight request results. Supported only for HTTP APIs.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BodyS3Location
-
-AWS::ApiGatewayV2::ApiGatewayManagedOverrides
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

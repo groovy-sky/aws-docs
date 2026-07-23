@@ -2,109 +2,77 @@
 title: "AWS::Budgets::BudgetsAction IamActionDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Budgets::BudgetsAction IamActionDefinition
+<a name="aws-properties-budgets-budgetsaction-iamactiondefinition"></a>
 
 The AWS Identity and Access Management (IAM) action definition details.
 
 ## Syntax
+<a name="aws-properties-budgets-budgetsaction-iamactiondefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-budgets-budgetsaction-iamactiondefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Groups" : [ String, ... ],
-  "PolicyArn" : String,
-  "Roles" : [ String, ... ],
-  "Users" : [ String, ... ]
+  "[Groups](#cfn-budgets-budgetsaction-iamactiondefinition-groups)" : {{[ String, ... ]}},
+  "[PolicyArn](#cfn-budgets-budgetsaction-iamactiondefinition-policyarn)" : {{String}},
+  "[Roles](#cfn-budgets-budgetsaction-iamactiondefinition-roles)" : {{[ String, ... ]}},
+  "[Users](#cfn-budgets-budgetsaction-iamactiondefinition-users)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-budgets-budgetsaction-iamactiondefinition-syntax.yaml"></a>
 
-```yaml
-
-  Groups:
-    - String
-  PolicyArn: String
-  Roles:
-    - String
-  Users:
-    - String
-
+```
+  [Groups](#cfn-budgets-budgetsaction-iamactiondefinition-groups): {{
+    - String}}
+  [PolicyArn](#cfn-budgets-budgetsaction-iamactiondefinition-policyarn): {{String}}
+  [Roles](#cfn-budgets-budgetsaction-iamactiondefinition-roles): {{
+    - String}}
+  [Users](#cfn-budgets-budgetsaction-iamactiondefinition-users): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-budgets-budgetsaction-iamactiondefinition-properties"></a>
 
-`Groups`
-
+`Groups`  <a name="cfn-budgets-budgetsaction-iamactiondefinition-groups"></a>
 A list of groups to be attached. There must be at least one group.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyArn`
-
+`PolicyArn`  <a name="cfn-budgets-budgetsaction-iamactiondefinition-policyarn"></a>
 The Amazon Resource Name (ARN) of the policy to be attached.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-eusc|-cn|-us-gov|-iso|-iso-[a-z]{1})?:iam::(\d{12}|aws):policy(\u002F[\u0021-\u007F]+\u002F|\u002F)[\w+=,.@-]+$`
+*Minimum*: `25`
+*Maximum*: `684`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-eusc|-cn|-us-gov|-iso|-iso-[a-z]{1})?:iam::(\d{12}|aws):policy(\u002F[\u0021-\u007F]+\u002F|\u002F)[\w+=,.@-]+$`
-
-_Minimum_: `25`
-
-_Maximum_: `684`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Roles`
-
+`Roles`  <a name="cfn-budgets-budgetsaction-iamactiondefinition-roles"></a>
 A list of roles to be attached. There must be at least one role.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Users`
-
+`Users`  <a name="cfn-budgets-budgetsaction-iamactiondefinition-users"></a>
 A list of users to be attached. There must be at least one user.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Definition
-
-ResourceTag
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

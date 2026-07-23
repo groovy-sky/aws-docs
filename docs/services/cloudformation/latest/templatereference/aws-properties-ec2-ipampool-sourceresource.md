@@ -2,90 +2,66 @@
 title: "AWS::EC2::IPAMPool SourceResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::IPAMPool SourceResource
+<a name="aws-properties-ec2-ipampool-sourceresource"></a>
 
 The resource used to provision CIDRs to a resource planning pool.
 
 ## Syntax
+<a name="aws-properties-ec2-ipampool-sourceresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-ipampool-sourceresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceId" : String,
-  "ResourceOwner" : String,
-  "ResourceRegion" : String,
-  "ResourceType" : String
+  "[ResourceId](#cfn-ec2-ipampool-sourceresource-resourceid)" : {{String}},
+  "[ResourceOwner](#cfn-ec2-ipampool-sourceresource-resourceowner)" : {{String}},
+  "[ResourceRegion](#cfn-ec2-ipampool-sourceresource-resourceregion)" : {{String}},
+  "[ResourceType](#cfn-ec2-ipampool-sourceresource-resourcetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-ipampool-sourceresource-syntax.yaml"></a>
 
-```yaml
-
-  ResourceId: String
-  ResourceOwner: String
-  ResourceRegion: String
-  ResourceType: String
-
+```
+  [ResourceId](#cfn-ec2-ipampool-sourceresource-resourceid): {{String}}
+  [ResourceOwner](#cfn-ec2-ipampool-sourceresource-resourceowner): {{String}}
+  [ResourceRegion](#cfn-ec2-ipampool-sourceresource-resourceregion): {{String}}
+  [ResourceType](#cfn-ec2-ipampool-sourceresource-resourcetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-ipampool-sourceresource-properties"></a>
 
-`ResourceId`
-
+`ResourceId`  <a name="cfn-ec2-ipampool-sourceresource-resourceid"></a>
 The source resource ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceOwner`
-
+`ResourceOwner`  <a name="cfn-ec2-ipampool-sourceresource-resourceowner"></a>
 The source resource owner.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceRegion`
-
+`ResourceRegion`  <a name="cfn-ec2-ipampool-sourceresource-resourceregion"></a>
 The source resource Region.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceType`
-
+`ResourceType`  <a name="cfn-ec2-ipampool-sourceresource-resourcetype"></a>
 The source resource type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `vpc`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProvisionedCidr
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `vpc`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

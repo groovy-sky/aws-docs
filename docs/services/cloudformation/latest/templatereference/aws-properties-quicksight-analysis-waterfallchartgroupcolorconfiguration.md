@@ -2,82 +2,60 @@
 title: "AWS::QuickSight::Analysis WaterfallChartGroupColorConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis WaterfallChartGroupColorConfiguration
+<a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration"></a>
 
 The color configuration for individual groups within a waterfall visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "NegativeBarColor" : String,
-  "PositiveBarColor" : String,
-  "TotalBarColor" : String
+  "[NegativeBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-negativebarcolor)" : {{String}},
+  "[PositiveBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-positivebarcolor)" : {{String}},
+  "[TotalBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-totalbarcolor)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  NegativeBarColor: String
-  PositiveBarColor: String
-  TotalBarColor: String
-
+```
+  [NegativeBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-negativebarcolor): {{String}}
+  [PositiveBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-positivebarcolor): {{String}}
+  [TotalBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-totalbarcolor): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration-properties"></a>
 
-`NegativeBarColor`
-
+`NegativeBarColor`  <a name="cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-negativebarcolor"></a>
 Defines the color for the negative bars of a waterfall chart.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PositiveBarColor`
-
+`PositiveBarColor`  <a name="cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-positivebarcolor"></a>
 Defines the color for the positive bars of a waterfall chart.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalBarColor`
-
+`TotalBarColor`  <a name="cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-totalbarcolor"></a>
 Defines the color for the total bars of a waterfall chart.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WaterfallChartFieldWells
-
-WaterfallChartOptions
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

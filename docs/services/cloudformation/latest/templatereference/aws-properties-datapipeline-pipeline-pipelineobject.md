@@ -2,91 +2,64 @@
 title: "AWS::DataPipeline::Pipeline PipelineObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataPipeline::Pipeline PipelineObject
+<a name="aws-properties-datapipeline-pipeline-pipelineobject"></a>
 
-PipelineObject is property of the AWS::DataPipeline::Pipeline resource that contains
-information about a pipeline object. This can be a logical, physical, or physical attempt
-pipeline object. The complete set of components of a pipeline defines the pipeline.
+PipelineObject is property of the AWS::DataPipeline::Pipeline resource that contains information about a pipeline object. This can be a logical, physical, or physical attempt pipeline object. The complete set of components of a pipeline defines the pipeline.
 
 ## Syntax
+<a name="aws-properties-datapipeline-pipeline-pipelineobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datapipeline-pipeline-pipelineobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "Fields" : [ Field, ... ],
-  "Id" : String,
-  "Name" : String
+  "[Fields](#cfn-datapipeline-pipeline-pipelineobject-fields)" : {{[ Field, ... ]}},
+  "[Id](#cfn-datapipeline-pipeline-pipelineobject-id)" : {{String}},
+  "[Name](#cfn-datapipeline-pipeline-pipelineobject-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datapipeline-pipeline-pipelineobject-syntax.yaml"></a>
 
-```yaml
-
-  Fields:
-    - Field
-  Id: String
-  Name: String
-
+```
+  [Fields](#cfn-datapipeline-pipeline-pipelineobject-fields): {{
+    - Field}}
+  [Id](#cfn-datapipeline-pipeline-pipelineobject-id): {{String}}
+  [Name](#cfn-datapipeline-pipeline-pipelineobject-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datapipeline-pipeline-pipelineobject-properties"></a>
 
-`Fields`
-
+`Fields`  <a name="cfn-datapipeline-pipeline-pipelineobject-fields"></a>
 Key-value pairs that define the properties of the object.
+*Required*: Yes
+*Type*: Array of [Field](aws-properties-datapipeline-pipeline-field.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Field](aws-properties-datapipeline-pipeline-field.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-datapipeline-pipeline-pipelineobject-id"></a>
 The ID of the object.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\n\t]*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\n\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-datapipeline-pipeline-pipelineobject-name"></a>
 The name of the object.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\n\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterValue
-
-PipelineTag
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\n\t]*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

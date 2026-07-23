@@ -2,108 +2,73 @@
 title: "AWS::Kendra::DataSource SalesforceCustomKnowledgeArticleTypeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource SalesforceCustomKnowledgeArticleTypeConfiguration
+<a name="aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration"></a>
 
 Provides the configuration information for indexing Salesforce custom articles.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DocumentDataFieldName" : String,
-  "DocumentTitleFieldName" : String,
-  "FieldMappings" : [ DataSourceToIndexFieldMapping, ... ],
-  "Name" : String
+  "[DocumentDataFieldName](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-documentdatafieldname)" : {{String}},
+  "[DocumentTitleFieldName](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-documenttitlefieldname)" : {{String}},
+  "[FieldMappings](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-fieldmappings)" : {{[ DataSourceToIndexFieldMapping, ... ]}},
+  "[Name](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DocumentDataFieldName: String
-  DocumentTitleFieldName: String
-  FieldMappings:
-    - DataSourceToIndexFieldMapping
-  Name: String
-
+```
+  [DocumentDataFieldName](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-documentdatafieldname): {{String}}
+  [DocumentTitleFieldName](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-documenttitlefieldname): {{String}}
+  [FieldMappings](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-fieldmappings): {{
+    - DataSourceToIndexFieldMapping}}
+  [Name](#cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-properties"></a>
 
-`DocumentDataFieldName`
+`DocumentDataFieldName`  <a name="cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-documentdatafieldname"></a>
+The name of the field in the custom knowledge article that contains the document data to index.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the field in the custom knowledge article that contains the document data
-to index.
+`DocumentTitleFieldName`  <a name="cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-documenttitlefieldname"></a>
+The name of the field in the custom knowledge article that contains the document title.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`FieldMappings`  <a name="cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-fieldmappings"></a>
+Maps attributes or field names of the custom knowledge article to Amazon Kendra index field names. To create custom fields, use the `UpdateIndex` API before you map to Salesforce fields. For more information, see [Mapping data source fields](https://docs.aws.amazon.com/kendra/latest/dg/field-mapping.html). The Salesforce data source field names must exist in your Salesforce custom metadata.
+*Required*: No
+*Type*: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentTitleFieldName`
-
-The name of the field in the custom knowledge article that contains the document
-title.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldMappings`
-
-Maps attributes or field names of the custom knowledge article to Amazon Kendra
-index field names. To create custom fields, use the `UpdateIndex` API before
-you map to Salesforce fields. For more information, see [Mapping data source fields](../../../kendra/latest/dg/field-mapping.md). The
-Salesforce data source field names must exist in your Salesforce custom metadata.
-
-_Required_: No
-
-_Type_: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-kendra-datasource-salesforcecustomknowledgearticletypeconfiguration-name"></a>
 The name of the configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SalesforceConfiguration
-
-SalesforceKnowledgeArticleConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

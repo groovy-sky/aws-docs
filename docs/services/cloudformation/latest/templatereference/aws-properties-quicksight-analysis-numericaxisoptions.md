@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Analysis NumericAxisOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis NumericAxisOptions
+<a name="aws-properties-quicksight-analysis-numericaxisoptions"></a>
 
 The options for an axis with a numeric field.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-numericaxisoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-numericaxisoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Range" : AxisDisplayRange,
-  "Scale" : AxisScale
+  "[Range](#cfn-quicksight-analysis-numericaxisoptions-range)" : {{AxisDisplayRange}},
+  "[Scale](#cfn-quicksight-analysis-numericaxisoptions-scale)" : {{AxisScale}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-numericaxisoptions-syntax.yaml"></a>
 
-```yaml
-
-  Range:
-    AxisDisplayRange
-  Scale:
-    AxisScale
-
+```
+  [Range](#cfn-quicksight-analysis-numericaxisoptions-range): {{
+    AxisDisplayRange}}
+  [Scale](#cfn-quicksight-analysis-numericaxisoptions-scale): {{
+    AxisScale}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-numericaxisoptions-properties"></a>
 
-`Range`
-
+`Range`  <a name="cfn-quicksight-analysis-numericaxisoptions-range"></a>
 The range setup of a numeric axis.
+*Required*: No
+*Type*: [AxisDisplayRange](aws-properties-quicksight-analysis-axisdisplayrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayRange](aws-properties-quicksight-analysis-axisdisplayrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scale`
-
+`Scale`  <a name="cfn-quicksight-analysis-numericaxisoptions-scale"></a>
 The scale setup of a numeric axis.
-
-_Required_: No
-
-_Type_: [AxisScale](aws-properties-quicksight-analysis-axisscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NumericalMeasureField
-
-NumericEqualityDrillDownFilter
+*Required*: No
+*Type*: [AxisScale](aws-properties-quicksight-analysis-axisscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

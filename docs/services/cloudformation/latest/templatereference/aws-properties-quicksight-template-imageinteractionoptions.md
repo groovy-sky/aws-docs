@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template ImageInteractionOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ImageInteractionOptions
+<a name="aws-properties-quicksight-template-imageinteractionoptions"></a>
 
 The general image interactions setup for image publish options.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-imageinteractionoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-imageinteractionoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageMenuOption" : ImageMenuOption
+  "[ImageMenuOption](#cfn-quicksight-template-imageinteractionoptions-imagemenuoption)" : {{ImageMenuOption}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-imageinteractionoptions-syntax.yaml"></a>
 
-```yaml
-
-  ImageMenuOption:
-    ImageMenuOption
-
+```
+  [ImageMenuOption](#cfn-quicksight-template-imageinteractionoptions-imagemenuoption): {{
+    ImageMenuOption}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-imageinteractionoptions-properties"></a>
 
-`ImageMenuOption`
-
+`ImageMenuOption`  <a name="cfn-quicksight-template-imageinteractionoptions-imagemenuoption"></a>
 The menu options for the image.
-
-_Required_: No
-
-_Type_: [ImageMenuOption](aws-properties-quicksight-template-imagemenuoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageCustomActionOperation
-
-ImageMenuOption
+*Required*: No
+*Type*: [ImageMenuOption](aws-properties-quicksight-template-imagemenuoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

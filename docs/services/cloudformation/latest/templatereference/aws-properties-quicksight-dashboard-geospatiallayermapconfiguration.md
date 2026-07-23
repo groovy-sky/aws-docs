@@ -2,105 +2,78 @@
 title: "AWS::QuickSight::Dashboard GeospatialLayerMapConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialLayerMapConfiguration
+<a name="aws-properties-quicksight-dashboard-geospatiallayermapconfiguration"></a>
 
 The map definition that defines map state, map style, and geospatial layers.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatiallayermapconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatiallayermapconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "MapLayers" : [ GeospatialLayerItem, ... ],
-  "MapState" : GeospatialMapState,
-  "MapStyle" : GeospatialMapStyle
+  "[Interactions](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-legend)" : {{LegendOptions}},
+  "[MapLayers](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-maplayers)" : {{[ GeospatialLayerItem, ... ]}},
+  "[MapState](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-mapstate)" : {{GeospatialMapState}},
+  "[MapStyle](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-mapstyle)" : {{GeospatialMapStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatiallayermapconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  MapLayers:
-    - GeospatialLayerItem
-  MapState:
-    GeospatialMapState
-  MapStyle:
-    GeospatialMapStyle
-
+```
+  [Interactions](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-legend): {{
+    LegendOptions}}
+  [MapLayers](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-maplayers): {{
+    - GeospatialLayerItem}}
+  [MapState](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-mapstate): {{
+    GeospatialMapState}}
+  [MapStyle](#cfn-quicksight-dashboard-geospatiallayermapconfiguration-mapstyle): {{
+    GeospatialMapStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatiallayermapconfiguration-properties"></a>
 
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-dashboard-geospatiallayermapconfiguration-interactions"></a>
 Property description not available.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-dashboard-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-dashboard-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-dashboard-geospatiallayermapconfiguration-legend"></a>
 Property description not available.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-dashboard-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-dashboard-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapLayers`
-
+`MapLayers`  <a name="cfn-quicksight-dashboard-geospatiallayermapconfiguration-maplayers"></a>
 The geospatial layers to visualize on the map.
+*Required*: No
+*Type*: Array of [GeospatialLayerItem](aws-properties-quicksight-dashboard-geospatiallayeritem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [GeospatialLayerItem](aws-properties-quicksight-dashboard-geospatiallayeritem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapState`
-
+`MapState`  <a name="cfn-quicksight-dashboard-geospatiallayermapconfiguration-mapstate"></a>
 The map state properties for the map.
+*Required*: No
+*Type*: [GeospatialMapState](aws-properties-quicksight-dashboard-geospatialmapstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialMapState](aws-properties-quicksight-dashboard-geospatialmapstate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapStyle`
-
+`MapStyle`  <a name="cfn-quicksight-dashboard-geospatiallayermapconfiguration-mapstyle"></a>
 The map style properties for the map.
-
-_Required_: No
-
-_Type_: [GeospatialMapStyle](aws-properties-quicksight-dashboard-geospatialmapstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLayerJoinDefinition
-
-GeospatialLineLayer
+*Required*: No
+*Type*: [GeospatialMapStyle](aws-properties-quicksight-dashboard-geospatialmapstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

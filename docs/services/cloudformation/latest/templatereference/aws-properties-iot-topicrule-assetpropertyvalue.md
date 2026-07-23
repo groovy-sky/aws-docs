@@ -2,79 +2,59 @@
 title: "AWS::IoT::TopicRule AssetPropertyValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule AssetPropertyValue
+<a name="aws-properties-iot-topicrule-assetpropertyvalue"></a>
 
 An asset property value entry containing the following information.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-assetpropertyvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-assetpropertyvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "Quality" : String,
-  "Timestamp" : AssetPropertyTimestamp,
-  "Value" : AssetPropertyVariant
+  "[Quality](#cfn-iot-topicrule-assetpropertyvalue-quality)" : {{String}},
+  "[Timestamp](#cfn-iot-topicrule-assetpropertyvalue-timestamp)" : {{AssetPropertyTimestamp}},
+  "[Value](#cfn-iot-topicrule-assetpropertyvalue-value)" : {{AssetPropertyVariant}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-assetpropertyvalue-syntax.yaml"></a>
 
-```yaml
-
-  Quality: String
-  Timestamp:
-    AssetPropertyTimestamp
-  Value:
-    AssetPropertyVariant
-
+```
+  [Quality](#cfn-iot-topicrule-assetpropertyvalue-quality): {{String}}
+  [Timestamp](#cfn-iot-topicrule-assetpropertyvalue-timestamp): {{
+    AssetPropertyTimestamp}}
+  [Value](#cfn-iot-topicrule-assetpropertyvalue-value): {{
+    AssetPropertyVariant}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-assetpropertyvalue-properties"></a>
 
-`Quality`
+`Quality`  <a name="cfn-iot-topicrule-assetpropertyvalue-quality"></a>
+Optional. A string that describes the quality of the value. Accepts substitution templates. Must be `GOOD`, `BAD`, or `UNCERTAIN`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Optional. A string that describes the quality of the value. Accepts substitution
-templates. Must be `GOOD`, `BAD`, or `UNCERTAIN`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timestamp`
-
+`Timestamp`  <a name="cfn-iot-topicrule-assetpropertyvalue-timestamp"></a>
 The asset property value timestamp.
+*Required*: Yes
+*Type*: [AssetPropertyTimestamp](aws-properties-iot-topicrule-assetpropertytimestamp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [AssetPropertyTimestamp](aws-properties-iot-topicrule-assetpropertytimestamp.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iot-topicrule-assetpropertyvalue-value"></a>
 The value of the asset property.
-
-_Required_: Yes
-
-_Type_: [AssetPropertyVariant](aws-properties-iot-topicrule-assetpropertyvariant.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssetPropertyTimestamp
-
-AssetPropertyVariant
+*Required*: Yes
+*Type*: [AssetPropertyVariant](aws-properties-iot-topicrule-assetpropertyvariant.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

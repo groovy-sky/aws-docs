@@ -2,54 +2,42 @@
 title: "AWS::SageMaker::UserProfile AppLifecycleManagement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::UserProfile AppLifecycleManagement
+<a name="aws-properties-sagemaker-userprofile-applifecyclemanagement"></a>
 
-Settings that are used to configure and manage the lifecycle of Amazon SageMaker Studio
-applications.
+Settings that are used to configure and manage the lifecycle of Amazon SageMaker Studio applications.
 
 ## Syntax
+<a name="aws-properties-sagemaker-userprofile-applifecyclemanagement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-userprofile-applifecyclemanagement-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdleSettings" : IdleSettings
+  "[IdleSettings](#cfn-sagemaker-userprofile-applifecyclemanagement-idlesettings)" : {{IdleSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-userprofile-applifecyclemanagement-syntax.yaml"></a>
 
-```yaml
-
-  IdleSettings:
-    IdleSettings
-
+```
+  [IdleSettings](#cfn-sagemaker-userprofile-applifecyclemanagement-idlesettings): {{
+    IdleSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-userprofile-applifecyclemanagement-properties"></a>
 
-`IdleSettings`
-
+`IdleSettings`  <a name="cfn-sagemaker-userprofile-applifecyclemanagement-idlesettings"></a>
 Settings related to idle shutdown of Studio applications.
-
-_Required_: No
-
-_Type_: [IdleSettings](aws-properties-sagemaker-userprofile-idlesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::UserProfile
-
-CodeEditorAppSettings
+*Required*: No
+*Type*: [IdleSettings](aws-properties-sagemaker-userprofile-idlesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

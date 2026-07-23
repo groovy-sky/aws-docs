@@ -2,127 +2,87 @@
 title: "AWS::QuickSight::Analysis LayerCustomAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LayerCustomAction
+<a name="aws-properties-quicksight-analysis-layercustomaction"></a>
 
 A layer custom action.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-layercustomaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-layercustomaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActionOperations" : [ LayerCustomActionOperation, ... ],
-  "CustomActionId" : String,
-  "Name" : String,
-  "Status" : String,
-  "Trigger" : String
+  "[ActionOperations](#cfn-quicksight-analysis-layercustomaction-actionoperations)" : {{[ LayerCustomActionOperation, ... ]}},
+  "[CustomActionId](#cfn-quicksight-analysis-layercustomaction-customactionid)" : {{String}},
+  "[Name](#cfn-quicksight-analysis-layercustomaction-name)" : {{String}},
+  "[Status](#cfn-quicksight-analysis-layercustomaction-status)" : {{String}},
+  "[Trigger](#cfn-quicksight-analysis-layercustomaction-trigger)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-layercustomaction-syntax.yaml"></a>
 
-```yaml
-
-  ActionOperations:
-    - LayerCustomActionOperation
-  CustomActionId: String
-  Name: String
-  Status: String
-  Trigger: String
-
+```
+  [ActionOperations](#cfn-quicksight-analysis-layercustomaction-actionoperations): {{
+    - LayerCustomActionOperation}}
+  [CustomActionId](#cfn-quicksight-analysis-layercustomaction-customactionid): {{String}}
+  [Name](#cfn-quicksight-analysis-layercustomaction-name): {{String}}
+  [Status](#cfn-quicksight-analysis-layercustomaction-status): {{String}}
+  [Trigger](#cfn-quicksight-analysis-layercustomaction-trigger): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-layercustomaction-properties"></a>
 
-`ActionOperations`
-
+`ActionOperations`  <a name="cfn-quicksight-analysis-layercustomaction-actionoperations"></a>
 A list of `LayerCustomActionOperations`.
-
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
+*Required*: Yes
+*Type*: Array of [LayerCustomActionOperation](aws-properties-quicksight-analysis-layercustomactionoperation.md)
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [LayerCustomActionOperation](aws-properties-quicksight-analysis-layercustomactionoperation.md)
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomActionId`
-
+`CustomActionId`  <a name="cfn-quicksight-analysis-layercustomaction-customactionid"></a>
 The ID of the custom action.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-analysis-layercustomaction-name"></a>
 The name of the custom action.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-quicksight-analysis-layercustomaction-status"></a>
 The status of the `LayerCustomAction`.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Trigger`
-
+`Trigger`  <a name="cfn-quicksight-analysis-layercustomaction-trigger"></a>
 The trigger of the `LayerCustomAction`.
-
 Valid values are defined as follows:
-
-- `DATA_POINT_CLICK`: Initiates a custom action by a left pointer click on a data point.
-
-- `DATA_POINT_MENU`: Initiates a custom action by right pointer click from the menu.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DATA_POINT_CLICK | DATA_POINT_MENU`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LabelOptions
-
-LayerCustomActionOperation
++ `DATA_POINT_CLICK`: Initiates a custom action by a left pointer click on a data point.
++ `DATA_POINT_MENU`: Initiates a custom action by right pointer click from the menu.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DATA_POINT_CLICK | DATA_POINT_MENU`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

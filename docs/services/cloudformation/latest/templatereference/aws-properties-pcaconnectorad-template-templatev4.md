@@ -2,174 +2,116 @@
 title: "AWS::PCAConnectorAD::Template TemplateV4"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template TemplateV4
+<a name="aws-properties-pcaconnectorad-template-templatev4"></a>
 
-v4 template schema that can use either Legacy Cryptographic Providers or Key Storage
-Providers.
+v4 template schema that can use either Legacy Cryptographic Providers or Key Storage Providers.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-templatev4-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-templatev4-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateValidity" : CertificateValidity,
-  "EnrollmentFlags" : EnrollmentFlagsV4,
-  "Extensions" : ExtensionsV4,
-  "GeneralFlags" : GeneralFlagsV4,
-  "HashAlgorithm" : String,
-  "PrivateKeyAttributes" : PrivateKeyAttributesV4,
-  "PrivateKeyFlags" : PrivateKeyFlagsV4,
-  "SubjectNameFlags" : SubjectNameFlagsV4,
-  "SupersededTemplates" : [ String, ... ]
+  "[CertificateValidity](#cfn-pcaconnectorad-template-templatev4-certificatevalidity)" : {{CertificateValidity}},
+  "[EnrollmentFlags](#cfn-pcaconnectorad-template-templatev4-enrollmentflags)" : {{EnrollmentFlagsV4}},
+  "[Extensions](#cfn-pcaconnectorad-template-templatev4-extensions)" : {{ExtensionsV4}},
+  "[GeneralFlags](#cfn-pcaconnectorad-template-templatev4-generalflags)" : {{GeneralFlagsV4}},
+  "[HashAlgorithm](#cfn-pcaconnectorad-template-templatev4-hashalgorithm)" : {{String}},
+  "[PrivateKeyAttributes](#cfn-pcaconnectorad-template-templatev4-privatekeyattributes)" : {{PrivateKeyAttributesV4}},
+  "[PrivateKeyFlags](#cfn-pcaconnectorad-template-templatev4-privatekeyflags)" : {{PrivateKeyFlagsV4}},
+  "[SubjectNameFlags](#cfn-pcaconnectorad-template-templatev4-subjectnameflags)" : {{SubjectNameFlagsV4}},
+  "[SupersededTemplates](#cfn-pcaconnectorad-template-templatev4-supersededtemplates)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-templatev4-syntax.yaml"></a>
 
-```yaml
-
-  CertificateValidity:
-    CertificateValidity
-  EnrollmentFlags:
-    EnrollmentFlagsV4
-  Extensions:
-    ExtensionsV4
-  GeneralFlags:
-    GeneralFlagsV4
-  HashAlgorithm: String
-  PrivateKeyAttributes:
-    PrivateKeyAttributesV4
-  PrivateKeyFlags:
-    PrivateKeyFlagsV4
-  SubjectNameFlags:
-    SubjectNameFlagsV4
-  SupersededTemplates:
-    - String
-
+```
+  [CertificateValidity](#cfn-pcaconnectorad-template-templatev4-certificatevalidity): {{
+    CertificateValidity}}
+  [EnrollmentFlags](#cfn-pcaconnectorad-template-templatev4-enrollmentflags): {{
+    EnrollmentFlagsV4}}
+  [Extensions](#cfn-pcaconnectorad-template-templatev4-extensions): {{
+    ExtensionsV4}}
+  [GeneralFlags](#cfn-pcaconnectorad-template-templatev4-generalflags): {{
+    GeneralFlagsV4}}
+  [HashAlgorithm](#cfn-pcaconnectorad-template-templatev4-hashalgorithm): {{String}}
+  [PrivateKeyAttributes](#cfn-pcaconnectorad-template-templatev4-privatekeyattributes): {{
+    PrivateKeyAttributesV4}}
+  [PrivateKeyFlags](#cfn-pcaconnectorad-template-templatev4-privatekeyflags): {{
+    PrivateKeyFlagsV4}}
+  [SubjectNameFlags](#cfn-pcaconnectorad-template-templatev4-subjectnameflags): {{
+    SubjectNameFlagsV4}}
+  [SupersededTemplates](#cfn-pcaconnectorad-template-templatev4-supersededtemplates): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-templatev4-properties"></a>
 
-`CertificateValidity`
-
+`CertificateValidity`  <a name="cfn-pcaconnectorad-template-templatev4-certificatevalidity"></a>
 Certificate validity describes the validity and renewal periods of a certificate.
+*Required*: Yes
+*Type*: [CertificateValidity](aws-properties-pcaconnectorad-template-certificatevalidity.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`EnrollmentFlags`  <a name="cfn-pcaconnectorad-template-templatev4-enrollmentflags"></a>
+Enrollment flags describe the enrollment settings for certificates using the existing private key and deleting expired or revoked certificates.
+*Required*: Yes
+*Type*: [EnrollmentFlagsV4](aws-properties-pcaconnectorad-template-enrollmentflagsv4.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CertificateValidity](aws-properties-pcaconnectorad-template-certificatevalidity.md)
+`Extensions`  <a name="cfn-pcaconnectorad-template-templatev4-extensions"></a>
+Extensions describe the key usage extensions and application policies for a template.
+*Required*: Yes
+*Type*: [ExtensionsV4](aws-properties-pcaconnectorad-template-extensionsv4.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`GeneralFlags`  <a name="cfn-pcaconnectorad-template-templatev4-generalflags"></a>
+General flags describe whether the template is used for computers or users and if the template can be used with autoenrollment.
+*Required*: Yes
+*Type*: [GeneralFlagsV4](aws-properties-pcaconnectorad-template-generalflagsv4.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`EnrollmentFlags`
+`HashAlgorithm`  <a name="cfn-pcaconnectorad-template-templatev4-hashalgorithm"></a>
+Specifies the hash algorithm used to hash the private key. Hash algorithm can only be specified when using Key Storage Providers.
+*Required*: No
+*Type*: String
+*Allowed values*: `SHA256 | SHA384 | SHA512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Enrollment flags describe the enrollment settings for certificates using the existing
-private key and deleting expired or revoked certificates.
+`PrivateKeyAttributes`  <a name="cfn-pcaconnectorad-template-templatev4-privatekeyattributes"></a>
+Private key attributes allow you to specify the minimal key length, key spec, key usage, and cryptographic providers for the private key of a certificate for v4 templates. V4 templates allow you to use either Key Storage Providers or Legacy Cryptographic Service Providers. You specify the cryptography provider category in private key flags.
+*Required*: Yes
+*Type*: [PrivateKeyAttributesV4](aws-properties-pcaconnectorad-template-privatekeyattributesv4.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`PrivateKeyFlags`  <a name="cfn-pcaconnectorad-template-templatev4-privatekeyflags"></a>
+Private key flags for v4 templates specify the client compatibility, if the private key can be exported, if user input is required when using a private key, if an alternate signature algorithm should be used, and if certificates are renewed using the same private key.
+*Required*: Yes
+*Type*: [PrivateKeyFlagsV4](aws-properties-pcaconnectorad-template-privatekeyflagsv4.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [EnrollmentFlagsV4](aws-properties-pcaconnectorad-template-enrollmentflagsv4.md)
+`SubjectNameFlags`  <a name="cfn-pcaconnectorad-template-templatev4-subjectnameflags"></a>
+Subject name flags describe the subject name and subject alternate name that is included in a certificate.
+*Required*: Yes
+*Type*: [SubjectNameFlagsV4](aws-properties-pcaconnectorad-template-subjectnameflagsv4.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Extensions`
-
-Extensions describe the key usage extensions and application policies for a
-template.
-
-_Required_: Yes
-
-_Type_: [ExtensionsV4](aws-properties-pcaconnectorad-template-extensionsv4.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GeneralFlags`
-
-General flags describe whether the template is used for computers or users and if the
-template can be used with autoenrollment.
-
-_Required_: Yes
-
-_Type_: [GeneralFlagsV4](aws-properties-pcaconnectorad-template-generalflagsv4.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HashAlgorithm`
-
-Specifies the hash algorithm used to hash the private key. Hash algorithm can only be
-specified when using Key Storage Providers.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SHA256 | SHA384 | SHA512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrivateKeyAttributes`
-
-Private key attributes allow you to specify the minimal key length, key spec, key usage,
-and cryptographic providers for the private key of a certificate for v4 templates. V4
-templates allow you to use either Key Storage Providers or Legacy Cryptographic Service
-Providers. You specify the cryptography provider category in private key flags.
-
-_Required_: Yes
-
-_Type_: [PrivateKeyAttributesV4](aws-properties-pcaconnectorad-template-privatekeyattributesv4.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrivateKeyFlags`
-
-Private key flags for v4 templates specify the client compatibility, if the private key
-can be exported, if user input is required when using a private key, if an alternate
-signature algorithm should be used, and if certificates are renewed using the same private
-key.
-
-_Required_: Yes
-
-_Type_: [PrivateKeyFlagsV4](aws-properties-pcaconnectorad-template-privatekeyflagsv4.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubjectNameFlags`
-
-Subject name flags describe the subject name and subject alternate name that is included
-in a certificate.
-
-_Required_: Yes
-
-_Type_: [SubjectNameFlagsV4](aws-properties-pcaconnectorad-template-subjectnameflagsv4.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupersededTemplates`
-
+`SupersededTemplates`  <a name="cfn-pcaconnectorad-template-templatev4-supersededtemplates"></a>
 List of templates in Active Directory that are superseded by this template.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `64 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TemplateV3
-
-ValidityPeriod
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `64 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

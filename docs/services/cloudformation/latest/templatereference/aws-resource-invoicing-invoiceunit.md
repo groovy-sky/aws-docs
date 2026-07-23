@@ -2,153 +2,117 @@
 title: "AWS::Invoicing::InvoiceUnit"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Invoicing::InvoiceUnit
+<a name="aws-resource-invoicing-invoiceunit"></a>
 
 An invoice unit is a set of mutually exclusive account that correspond to your business entity. Invoice units allow you separate AWS account costs and configures your invoice for each business entity going forward.
 
 ## Syntax
+<a name="aws-resource-invoicing-invoiceunit-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-invoicing-invoiceunit-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Invoicing::InvoiceUnit",
   "Properties" : {
-      "Description" : String,
-      "InvoiceReceiver" : String,
-      "Name" : String,
-      "ResourceTags" : [ ResourceTag, ... ],
-      "Rule" : Rule,
-      "TaxInheritanceDisabled" : Boolean
+      "[Description](#cfn-invoicing-invoiceunit-description)" : {{String}},
+      "[InvoiceReceiver](#cfn-invoicing-invoiceunit-invoicereceiver)" : {{String}},
+      "[Name](#cfn-invoicing-invoiceunit-name)" : {{String}},
+      "[ResourceTags](#cfn-invoicing-invoiceunit-resourcetags)" : {{[ ResourceTag, ... ]}},
+      "[Rule](#cfn-invoicing-invoiceunit-rule)" : {{Rule}},
+      "[TaxInheritanceDisabled](#cfn-invoicing-invoiceunit-taxinheritancedisabled)" : {{Boolean}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-invoicing-invoiceunit-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Invoicing::InvoiceUnit
 Properties:
-  Description: String
-  InvoiceReceiver: String
-  Name: String
-  ResourceTags:
-    - ResourceTag
-  Rule:
-    Rule
-  TaxInheritanceDisabled: Boolean
-
+  [Description](#cfn-invoicing-invoiceunit-description): {{String}}
+  [InvoiceReceiver](#cfn-invoicing-invoiceunit-invoicereceiver): {{String}}
+  [Name](#cfn-invoicing-invoiceunit-name): {{String}}
+  [ResourceTags](#cfn-invoicing-invoiceunit-resourcetags): {{
+    - ResourceTag}}
+  [Rule](#cfn-invoicing-invoiceunit-rule): {{
+    Rule}}
+  [TaxInheritanceDisabled](#cfn-invoicing-invoiceunit-taxinheritancedisabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-resource-invoicing-invoiceunit-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-invoicing-invoiceunit-description"></a>
 The assigned description for an invoice unit. This information can't be modified or deleted.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S\s]*$`
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S\s]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InvoiceReceiver`
-
+`InvoiceReceiver`  <a name="cfn-invoicing-invoiceunit-invoicereceiver"></a>
 The account that receives invoices related to the invoice unit.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Name`  <a name="cfn-invoicing-invoiceunit-name"></a>
+ A unique name that is distinctive within your AWS.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?! )[\p{L}\p{N}\p{Z}-_]*(?<! )$`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^\d{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
-A unique name that is distinctive within your AWS.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?! )[\p{L}\p{N}\p{Z}-_]*(?<! )$`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceTags`
-
+`ResourceTags`  <a name="cfn-invoicing-invoiceunit-resourcetags"></a>
 The tag structure that contains a tag key and value.
+*Required*: No
+*Type*: Array of [ResourceTag](aws-properties-invoicing-invoiceunit-resourcetag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ResourceTag](aws-properties-invoicing-invoiceunit-resourcetag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Rule`
-
+`Rule`  <a name="cfn-invoicing-invoiceunit-rule"></a>
 An `InvoiceUnitRule` object used the categorize invoice units.
+*Required*: Yes
+*Type*: [Rule](aws-properties-invoicing-invoiceunit-rule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Rule](aws-properties-invoicing-invoiceunit-rule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TaxInheritanceDisabled`
-
+`TaxInheritanceDisabled`  <a name="cfn-invoicing-invoiceunit-taxinheritancedisabled"></a>
 Whether the invoice unit based tax inheritance is/ should be enabled or disabled.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-invoicing-invoiceunit-return-values"></a>
 
 ### Ref
+<a name="aws-resource-invoicing-invoiceunit-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [`Ref`](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-invoicing-invoiceunit-return-values-fn--getatt"></a>
 
-`InvoiceUnitArn`
+####
+<a name="aws-resource-invoicing-invoiceunit-return-values-fn--getatt-fn--getatt"></a>
 
+`InvoiceUnitArn`  <a name="InvoiceUnitArn-fn::getatt"></a>
 The ARN to identify an invoice unit. This information can't be modified or deleted.
 
-`LastModified`
-
-The last time the invoice unit was updated. This is important to determine the version of invoice unit configuration used to create the invoices. Any invoice created after this modified time will use this invoice unit configuration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Invoicing
-
-ResourceTag
+`LastModified`  <a name="LastModified-fn::getatt"></a>
+ The last time the invoice unit was updated. This is important to determine the version of invoice unit configuration used to create the invoices. Any invoice created after this modified time will use this invoice unit configuration.
 
 All content copied from https://docs.aws.amazon.com/.

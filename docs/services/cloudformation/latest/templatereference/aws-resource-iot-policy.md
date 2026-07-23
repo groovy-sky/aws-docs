@@ -2,123 +2,110 @@
 title: "AWS::IoT::Policy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Policy
+<a name="aws-resource-iot-policy"></a>
 
-Use the `AWS::IoT::Policy` resource to declare an AWS IoT
-policy. For more information about working with AWS IoT policies, see [Authorization](../../../iot/latest/developerguide/authorization.md) in the _AWS IoT Developer Guide_.
+Use the `AWS::IoT::Policy` resource to declare an AWS IoT policy. For more information about working with AWS IoT policies, see [Authorization](https://docs.aws.amazon.com/iot/latest/developerguide/authorization.html) in the *AWS IoT Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-iot-policy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iot-policy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoT::Policy",
   "Properties" : {
-      "PolicyDocument" : Json,
-      "PolicyName" : String,
-      "Tags" : [ Tag, ... ]
+      "[PolicyDocument](#cfn-iot-policy-policydocument)" : {{Json}},
+      "[PolicyName](#cfn-iot-policy-policyname)" : {{String}},
+      "[Tags](#cfn-iot-policy-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iot-policy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoT::Policy
 Properties:
-  PolicyDocument: Json
-  PolicyName: String
-  Tags:
-    - Tag
-
+  [PolicyDocument](#cfn-iot-policy-policydocument): {{Json}}
+  [PolicyName](#cfn-iot-policy-policyname): {{String}}
+  [Tags](#cfn-iot-policy-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iot-policy-properties"></a>
 
-`PolicyDocument`
-
+`PolicyDocument`  <a name="cfn-iot-policy-policydocument"></a>
 The JSON document that describes the policy.
+*Required*: Yes
+*Type*: Json
+*Minimum*: `1`
+*Maximum*: `404600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Minimum_: `1`
-
-_Maximum_: `404600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyName`
-
+`PolicyName`  <a name="cfn-iot-policy-policyname"></a>
 The policy name.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-iot-policy-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iot-policy-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iot-policy-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iot-policy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iot-policy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the policy name. For example:
 
-`{ "Ref": "MyPolicy" }`
+ `{ "Ref": "MyPolicy" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iot-policy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iot-policy-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the AWS IoT policy, such as
-`arn:aws:iot:us-east-2:123456789012:policy/MyPolicy`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the AWS IoT policy, such as `arn:aws:iot:us-east-2:123456789012:policy/MyPolicy`.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The name of this policy.
 
 ## Examples
+<a name="aws-resource-iot-policy--examples"></a>
 
-The following example declares an AWS IoT policy. This example grants
-permission to connect to AWS IoT with client ID client1.
+###
+<a name="aws-resource-iot-policy--examples--"></a>
+
+The following example declares an AWS IoT policy. This example grants permission to connect to AWS IoT with client ID client1.
 
 #### JSON
+<a name="aws-resource-iot-policy--examples----json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -147,16 +134,16 @@ permission to connect to AWS IoT with client ID client1.
 ```
 
 #### YAML
+<a name="aws-resource-iot-policy--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyIoTPolicy:
     Type: AWS::IoT::Policy
     Properties:
       PolicyDocument:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
           - Effect: Allow
             Action:
@@ -164,13 +151,6 @@ Resources:
             Resource:
               - arn:aws:iot:us-east-1:123456789012:client/client1
       PolicyName: PolicyName
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpdateDeviceCertificateParams
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,151 +2,103 @@
 title: "AWS::OpenSearchService::Domain AdvancedSecurityOptionsInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchService::Domain AdvancedSecurityOptionsInput
+<a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput"></a>
 
 Specifies options for fine-grained access control.
 
-If you specify advanced security options,
-you must also enable node-to-node encryption ( [NodeToNodeEncryptionOptions](../userguide/aws-properties-opensearchservice-domain-nodetonodeencryptionoptions.md)) and encryption at rest ( [EncryptionAtRestOptions](../userguide/aws-properties-opensearchservice-domain-encryptionatrestoptions.md)). You must also enable `EnforceHTTPS` within
-[DomainEndpointOptions](../userguide/aws-properties-opensearchservice-domain-domainendpointoptions.md), which requires HTTPS for all traffic to the domain.
+If you specify advanced security options, you must also enable node-to-node encryption ([NodeToNodeEncryptionOptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opensearchservice-domain-nodetonodeencryptionoptions.html)) and encryption at rest ([EncryptionAtRestOptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opensearchservice-domain-encryptionatrestoptions.html)). You must also enable `EnforceHTTPS` within [DomainEndpointOptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opensearchservice-domain-domainendpointoptions.html), which requires HTTPS for all traffic to the domain.
 
 ## Syntax
+<a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnonymousAuthDisableDate" : String,
-  "AnonymousAuthEnabled" : Boolean,
-  "Enabled" : Boolean,
-  "IAMFederationOptions" : IAMFederationOptions,
-  "InternalUserDatabaseEnabled" : Boolean,
-  "JWTOptions" : JWTOptions,
-  "MasterUserOptions" : MasterUserOptions,
-  "SAMLOptions" : SAMLOptions
+  "[AnonymousAuthDisableDate](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthdisabledate)" : {{String}},
+  "[AnonymousAuthEnabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthenabled)" : {{Boolean}},
+  "[Enabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-enabled)" : {{Boolean}},
+  "[IAMFederationOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-iamfederationoptions)" : {{IAMFederationOptions}},
+  "[InternalUserDatabaseEnabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-internaluserdatabaseenabled)" : {{Boolean}},
+  "[JWTOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-jwtoptions)" : {{JWTOptions}},
+  "[MasterUserOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-masteruseroptions)" : {{MasterUserOptions}},
+  "[SAMLOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-samloptions)" : {{SAMLOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput-syntax.yaml"></a>
 
-```yaml
-
-  AnonymousAuthDisableDate: String
-  AnonymousAuthEnabled: Boolean
-  Enabled: Boolean
-  IAMFederationOptions:
-    IAMFederationOptions
-  InternalUserDatabaseEnabled: Boolean
-  JWTOptions:
-    JWTOptions
-  MasterUserOptions:
-    MasterUserOptions
-  SAMLOptions:
-    SAMLOptions
-
+```
+  [AnonymousAuthDisableDate](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthdisabledate): {{String}}
+  [AnonymousAuthEnabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthenabled): {{Boolean}}
+  [Enabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-enabled): {{Boolean}}
+  [IAMFederationOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-iamfederationoptions): {{
+    IAMFederationOptions}}
+  [InternalUserDatabaseEnabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-internaluserdatabaseenabled): {{Boolean}}
+  [JWTOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-jwtoptions): {{
+    JWTOptions}}
+  [MasterUserOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-masteruseroptions): {{
+    MasterUserOptions}}
+  [SAMLOptions](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-samloptions): {{
+    SAMLOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput-properties"></a>
 
-`AnonymousAuthDisableDate`
+`AnonymousAuthDisableDate`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthdisabledate"></a>
+Date and time when the migration period will be disabled. Only necessary when [enabling fine-grained access control on an existing domain](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html#fgac-enabling-existing).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Date and time when the migration period will be disabled. Only necessary when [enabling\
-fine-grained access control on an existing domain](../../../opensearch-service/latest/developerguide/fgac.md#fgac-enabling-existing).
+`AnonymousAuthEnabled`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthenabled"></a>
+True to enable a 30-day migration period during which administrators can create role mappings. Only necessary when [enabling fine-grained access control on an existing domain](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html#fgac-enabling-existing).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Enabled`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-enabled"></a>
+True to enable fine-grained access control. You must also enable encryption of data at rest and node-to-node encryption. See [Fine-grained access control in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`IAMFederationOptions`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-iamfederationoptions"></a>
+Input configuration for IAM identity federation within advanced security options.
+*Required*: No
+*Type*: [IAMFederationOptions](aws-properties-opensearchservice-domain-iamfederationoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AnonymousAuthEnabled`
-
-True to enable a 30-day migration period during which administrators can create role
-mappings. Only necessary when [enabling fine-grained access control on an existing domain](../../../opensearch-service/latest/developerguide/fgac.md#fgac-enabling-existing).
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-True to enable fine-grained access control. You must also enable encryption of data at rest
-and node-to-node encryption. See [Fine-grained access control in\
-Amazon OpenSearch Service](../../../opensearch-service/latest/developerguide/fgac.md).
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IAMFederationOptions`
-
-Input configuration for IAM identity federation within advanced security
-options.
-
-_Required_: No
-
-_Type_: [IAMFederationOptions](aws-properties-opensearchservice-domain-iamfederationoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InternalUserDatabaseEnabled`
-
+`InternalUserDatabaseEnabled`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-internaluserdatabaseenabled"></a>
 True to enable the internal user database.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`JWTOptions`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-jwtoptions"></a>
+Container for information about the JWT configuration of the Amazon OpenSearch Service.
+*Required*: No
+*Type*: [JWTOptions](aws-properties-opensearchservice-domain-jwtoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JWTOptions`
-
-Container for information about the JWT configuration of the Amazon OpenSearch
-Service.
-
-_Required_: No
-
-_Type_: [JWTOptions](aws-properties-opensearchservice-domain-jwtoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MasterUserOptions`
-
+`MasterUserOptions`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-masteruseroptions"></a>
 Specifies information about the master user.
+*Required*: No
+*Type*: [MasterUserOptions](aws-properties-opensearchservice-domain-masteruseroptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MasterUserOptions](aws-properties-opensearchservice-domain-masteruseroptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SAMLOptions`
-
-Container for information about the SAML configuration for OpenSearch
-Dashboards.
-
-_Required_: No
-
-_Type_: [SAMLOptions](aws-properties-opensearchservice-domain-samloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::OpenSearchService::Domain
-
-AIMLOptions
+`SAMLOptions`  <a name="cfn-opensearchservice-domain-advancedsecurityoptionsinput-samloptions"></a>
+Container for information about the SAML configuration for OpenSearch Dashboards.
+*Required*: No
+*Type*: [SAMLOptions](aws-properties-opensearchservice-domain-samloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

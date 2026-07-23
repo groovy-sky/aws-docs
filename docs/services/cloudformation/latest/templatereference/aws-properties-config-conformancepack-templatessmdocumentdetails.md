@@ -2,80 +2,56 @@
 title: "AWS::Config::ConformancePack TemplateSSMDocumentDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConformancePack TemplateSSMDocumentDetails
+<a name="aws-properties-config-conformancepack-templatessmdocumentdetails"></a>
 
-This API allows you to create a conformance pack template with an AWS Systems Manager document (SSM document).
-To deploy a conformance pack using an SSM document, first create an SSM document with conformance pack content, and then provide the `DocumentName` in the [PutConformancePack API](../../../../reference/config/latest/apireference/api-putconformancepack.md). You can also provide the `DocumentVersion`.
+This API allows you to create a conformance pack template with an AWS Systems Manager document (SSM document). To deploy a conformance pack using an SSM document, first create an SSM document with conformance pack content, and then provide the `DocumentName` in the [PutConformancePack API](https://docs.aws.amazon.com/config/latest/APIReference/API_PutConformancePack.html). You can also provide the `DocumentVersion`.
 
 The `TemplateSSMDocumentDetails` object contains the name of the SSM document and the version of the SSM document.
 
 ## Syntax
+<a name="aws-properties-config-conformancepack-templatessmdocumentdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-config-conformancepack-templatessmdocumentdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "DocumentName" : String,
-  "DocumentVersion" : String
+  "[DocumentName](#cfn-config-conformancepack-templatessmdocumentdetails-documentname)" : {{String}},
+  "[DocumentVersion](#cfn-config-conformancepack-templatessmdocumentdetails-documentversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-config-conformancepack-templatessmdocumentdetails-syntax.yaml"></a>
 
-```yaml
-
-  DocumentName: String
-  DocumentVersion: String
-
+```
+  [DocumentName](#cfn-config-conformancepack-templatessmdocumentdetails-documentname): {{String}}
+  [DocumentVersion](#cfn-config-conformancepack-templatessmdocumentdetails-documentversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-config-conformancepack-templatessmdocumentdetails-properties"></a>
 
-`DocumentName`
+`DocumentName`  <a name="cfn-config-conformancepack-templatessmdocumentdetails-documentname"></a>
+The name or Amazon Resource Name (ARN) of the SSM document to use to create a conformance pack. If you use the document name, AWS Config checks only your account and AWS Region for the SSM document.
+*Required*: No
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name or Amazon Resource Name (ARN) of the SSM document to use to create a conformance pack.
-If you use the document name, AWS Config checks only your account and AWS Region for the SSM document.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentVersion`
-
+`DocumentVersion`  <a name="cfn-config-conformancepack-templatessmdocumentdetails-documentversion"></a>
 The version of the SSM document to use to create a conformance pack. By default, AWS Config uses the latest version.
-
-###### Note
-
 This field is optional.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConformancePackInputParameter
-
-AWS::Config::DeliveryChannel
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

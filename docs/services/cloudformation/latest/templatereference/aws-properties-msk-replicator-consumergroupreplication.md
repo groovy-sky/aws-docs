@@ -2,98 +2,80 @@
 title: "AWS::MSK::Replicator ConsumerGroupReplication"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator ConsumerGroupReplication
+<a name="aws-properties-msk-replicator-consumergroupreplication"></a>
 
 Details about consumer group replication.
 
 ## Syntax
+<a name="aws-properties-msk-replicator-consumergroupreplication-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-replicator-consumergroupreplication-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConsumerGroupsToExclude" : [ String, ... ],
-  "ConsumerGroupsToReplicate" : [ String, ... ],
-  "DetectAndCopyNewConsumerGroups" : Boolean,
-  "SynchroniseConsumerGroupOffsets" : Boolean
+  "[ConsumerGroupOffsetSyncMode](#cfn-msk-replicator-consumergroupreplication-consumergroupoffsetsyncmode)" : {{String}},
+  "[ConsumerGroupsToExclude](#cfn-msk-replicator-consumergroupreplication-consumergroupstoexclude)" : {{[ String, ... ]}},
+  "[ConsumerGroupsToReplicate](#cfn-msk-replicator-consumergroupreplication-consumergroupstoreplicate)" : {{[ String, ... ]}},
+  "[DetectAndCopyNewConsumerGroups](#cfn-msk-replicator-consumergroupreplication-detectandcopynewconsumergroups)" : {{Boolean}},
+  "[SynchroniseConsumerGroupOffsets](#cfn-msk-replicator-consumergroupreplication-synchroniseconsumergroupoffsets)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-replicator-consumergroupreplication-syntax.yaml"></a>
 
-```yaml
-
-  ConsumerGroupsToExclude:
-    - String
-  ConsumerGroupsToReplicate:
-    - String
-  DetectAndCopyNewConsumerGroups: Boolean
-  SynchroniseConsumerGroupOffsets: Boolean
-
+```
+  [ConsumerGroupOffsetSyncMode](#cfn-msk-replicator-consumergroupreplication-consumergroupoffsetsyncmode): {{String}}
+  [ConsumerGroupsToExclude](#cfn-msk-replicator-consumergroupreplication-consumergroupstoexclude): {{
+    - String}}
+  [ConsumerGroupsToReplicate](#cfn-msk-replicator-consumergroupreplication-consumergroupstoreplicate): {{
+    - String}}
+  [DetectAndCopyNewConsumerGroups](#cfn-msk-replicator-consumergroupreplication-detectandcopynewconsumergroups): {{Boolean}}
+  [SynchroniseConsumerGroupOffsets](#cfn-msk-replicator-consumergroupreplication-synchroniseconsumergroupoffsets): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-replicator-consumergroupreplication-properties"></a>
 
-`ConsumerGroupsToExclude`
+`ConsumerGroupOffsetSyncMode`  <a name="cfn-msk-replicator-consumergroupreplication-consumergroupoffsetsyncmode"></a>
+The consumer group offset synchronization mode. With LEGACY, offsets are synchronized when producers write to the source cluster. With ENHANCED, consumer offsets are synchronized regardless of producer location. ENHANCED requires a corresponding replicator that replicates data from the target cluster to the source cluster.
+*Required*: No
+*Type*: String
+*Allowed values*: `LEGACY | ENHANCED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`ConsumerGroupsToExclude`  <a name="cfn-msk-replicator-consumergroupreplication-consumergroupstoexclude"></a>
 List of regular expression patterns indicating the consumer groups that should not be replicated.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `256 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `256 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConsumerGroupsToReplicate`
-
+`ConsumerGroupsToReplicate`  <a name="cfn-msk-replicator-consumergroupreplication-consumergroupstoreplicate"></a>
 List of regular expression patterns indicating the consumer groups to copy.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `256 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `256 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DetectAndCopyNewConsumerGroups`
-
+`DetectAndCopyNewConsumerGroups`  <a name="cfn-msk-replicator-consumergroupreplication-detectandcopynewconsumergroups"></a>
 Enables synchronization of consumer groups to target cluster.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SynchroniseConsumerGroupOffsets`
-
+`SynchroniseConsumerGroupOffsets`  <a name="cfn-msk-replicator-consumergroupreplication-synchroniseconsumergroupoffsets"></a>
 Enables synchronization of consumer group offsets to target cluster. The translated offsets will be written to topic \_\_consumer\_offsets.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmazonMskCluster
-
-KafkaCluster
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

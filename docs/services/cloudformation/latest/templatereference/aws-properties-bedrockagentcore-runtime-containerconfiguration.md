@@ -2,58 +2,44 @@
 title: "AWS::BedrockAgentCore::Runtime ContainerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime ContainerConfiguration
+<a name="aws-properties-bedrockagentcore-runtime-containerconfiguration"></a>
 
 Representation of a container configuration.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-runtime-containerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-runtime-containerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerUri" : String
+  "[ContainerUri](#cfn-bedrockagentcore-runtime-containerconfiguration-containeruri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-runtime-containerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ContainerUri: String
-
+```
+  [ContainerUri](#cfn-bedrockagentcore-runtime-containerconfiguration-containeruri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-runtime-containerconfiguration-properties"></a>
 
-`ContainerUri`
-
+`ContainerUri`  <a name="cfn-bedrockagentcore-runtime-containerconfiguration-containeruri"></a>
 The ECR URI of the container.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{12}\.dkr\.ecr\.([a-z0-9-]+)\.amazonaws\.com/((?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)*[a-z0-9]+(?:[._-][a-z0-9]+)*)([:@]\S+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CodeConfiguration
-
-CustomClaimValidationType
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{12}\.dkr\.ecr\.([a-z0-9-]+)\.amazonaws\.com/((?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)*[a-z0-9]+(?:[._-][a-z0-9]+)*)([:@]\S+)$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

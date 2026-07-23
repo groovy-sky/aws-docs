@@ -2,54 +2,42 @@
 title: "AWS::DynamoDB::GlobalTable GlobalReadProvisionedThroughputSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable GlobalReadProvisionedThroughputSettings
+<a name="aws-properties-dynamodb-globaltable-globalreadprovisionedthroughputsettings"></a>
 
 Sets read capacity settings for the multi-account global table or its global secondary index.
 
 ## Syntax
+<a name="aws-properties-dynamodb-globaltable-globalreadprovisionedthroughputsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-globaltable-globalreadprovisionedthroughputsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReadCapacityUnits" : Integer
+  "[ReadCapacityUnits](#cfn-dynamodb-globaltable-globalreadprovisionedthroughputsettings-readcapacityunits)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-globaltable-globalreadprovisionedthroughputsettings-syntax.yaml"></a>
 
-```yaml
-
-  ReadCapacityUnits: Integer
-
+```
+  [ReadCapacityUnits](#cfn-dynamodb-globaltable-globalreadprovisionedthroughputsettings-readcapacityunits): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-globaltable-globalreadprovisionedthroughputsettings-properties"></a>
 
-`ReadCapacityUnits`
-
+`ReadCapacityUnits`  <a name="cfn-dynamodb-globaltable-globalreadprovisionedthroughputsettings-readcapacityunits"></a>
 Sets read capacity settings for the multi-account global table or its global secondary index.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContributorInsightsSpecification
-
-GlobalSecondaryIndex
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

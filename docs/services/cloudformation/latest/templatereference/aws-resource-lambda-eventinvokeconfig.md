@@ -2,164 +2,123 @@
 title: "AWS::Lambda::EventInvokeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventInvokeConfig
+<a name="aws-resource-lambda-eventinvokeconfig"></a>
 
-The `AWS::Lambda::EventInvokeConfig` resource configures options for [asynchronous invocation](../../../lambda/latest/dg/invocation-async.md) on a version or an alias.
+The `AWS::Lambda::EventInvokeConfig` resource configures options for [asynchronous invocation](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html) on a version or an alias.
 
-By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains
-events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous
-invocation queue for too long, Lambda discards it.
+By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous invocation queue for too long, Lambda discards it.
 
 ## Syntax
+<a name="aws-resource-lambda-eventinvokeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lambda-eventinvokeconfig-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Lambda::EventInvokeConfig",
   "Properties" : {
-      "DestinationConfig" : DestinationConfig,
-      "FunctionName" : String,
-      "MaximumEventAgeInSeconds" : Integer,
-      "MaximumRetryAttempts" : Integer,
-      "Qualifier" : String
+      "[DestinationConfig](#cfn-lambda-eventinvokeconfig-destinationconfig)" : {{DestinationConfig}},
+      "[FunctionName](#cfn-lambda-eventinvokeconfig-functionname)" : {{String}},
+      "[MaximumEventAgeInSeconds](#cfn-lambda-eventinvokeconfig-maximumeventageinseconds)" : {{Integer}},
+      "[MaximumRetryAttempts](#cfn-lambda-eventinvokeconfig-maximumretryattempts)" : {{Integer}},
+      "[Qualifier](#cfn-lambda-eventinvokeconfig-qualifier)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lambda-eventinvokeconfig-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Lambda::EventInvokeConfig
 Properties:
-  DestinationConfig:
-    DestinationConfig
-  FunctionName: String
-  MaximumEventAgeInSeconds: Integer
-  MaximumRetryAttempts: Integer
-  Qualifier: String
-
+  [DestinationConfig](#cfn-lambda-eventinvokeconfig-destinationconfig): {{
+    DestinationConfig}}
+  [FunctionName](#cfn-lambda-eventinvokeconfig-functionname): {{String}}
+  [MaximumEventAgeInSeconds](#cfn-lambda-eventinvokeconfig-maximumeventageinseconds): {{Integer}}
+  [MaximumRetryAttempts](#cfn-lambda-eventinvokeconfig-maximumretryattempts): {{Integer}}
+  [Qualifier](#cfn-lambda-eventinvokeconfig-qualifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-lambda-eventinvokeconfig-properties"></a>
 
-`DestinationConfig`
-
+`DestinationConfig`  <a name="cfn-lambda-eventinvokeconfig-destinationconfig"></a>
 A destination for events after they have been sent to a function for processing.
 
-###### Destinations
-
-- **Function** \- The Amazon Resource Name (ARN) of a Lambda function.
-
-- **Queue** \- The ARN of a standard SQS queue.
-
-- **Bucket** \- The ARN of an Amazon S3 bucket.
-
-- **Topic** \- The ARN of a standard SNS topic.
-
-- **Event Bus** \- The ARN of an Amazon EventBridge event bus.
-
-###### Note
-
+**Destinations**
++ **Function** - The Amazon Resource Name (ARN) of a Lambda function.
++ **Queue** - The ARN of a standard SQS queue.
++ **Bucket** - The ARN of an Amazon S3 bucket.
++ **Topic** - The ARN of a standard SNS topic.
++ **Event Bus** - The ARN of an Amazon EventBridge event bus.
 S3 buckets are supported only for on-failure destinations. To retain records of successful invocations, use another destination type.
+*Required*: No
+*Type*: [DestinationConfig](aws-properties-lambda-eventinvokeconfig-destinationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DestinationConfig](aws-properties-lambda-eventinvokeconfig-destinationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FunctionName`
-
+`FunctionName`  <a name="cfn-lambda-eventinvokeconfig-functionname"></a>
 The name of the Lambda function.
+*Minimum*: `1`
+*Maximum*: `64`
+*Pattern*: `([a-zA-Z0-9-_]+)`
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]+(-[a-z]+)+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Pattern_: `([a-zA-Z0-9-_]+)`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]+(-[a-z]+)+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaximumEventAgeInSeconds`
-
+`MaximumEventAgeInSeconds`  <a name="cfn-lambda-eventinvokeconfig-maximumeventageinseconds"></a>
 The maximum age of a request that Lambda sends to a function for processing.
+*Required*: No
+*Type*: Integer
+*Minimum*: `60`
+*Maximum*: `21600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `60`
-
-_Maximum_: `21600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumRetryAttempts`
-
+`MaximumRetryAttempts`  <a name="cfn-lambda-eventinvokeconfig-maximumretryattempts"></a>
 The maximum number of times to retry when the function returns an error.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Qualifier`
-
+`Qualifier`  <a name="cfn-lambda-eventinvokeconfig-qualifier"></a>
 The identifier of a version or alias.
-
-- **Version** \- A version number.
-
-- **Alias** \- An alias name.
-
-- **Latest** \- To specify the unpublished version, use
-`$LATEST`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\$(LATEST(\.PUBLISHED)?)|[a-zA-Z0-9$_-]{1,129}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
++ **Version** - A version number.
++ **Alias** - An alias name.
++ **Latest** - To specify the unpublished version, use `$LATEST`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\$(LATEST(\.PUBLISHED)?)|[a-zA-Z0-9$_-]{1,129}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-lambda-eventinvokeconfig-return-values"></a>
 
 ### Ref
+<a name="aws-resource-lambda-eventinvokeconfig-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a unique identifier for this resource.
 
 ## Examples
+<a name="aws-resource-lambda-eventinvokeconfig--examples"></a>
 
 ### Asynchronous Invocation Configuration
+<a name="aws-resource-lambda-eventinvokeconfig--examples--Asynchronous_Invocation_Configuration"></a>
 
-Error handling and destination configuration for a version of a function. Node.js function and version are
-included.
+Error handling and destination configuration for a version of a function. Node.js function and version are included.
 
 #### YAML
+<a name="aws-resource-lambda-eventinvokeconfig--examples--Asynchronous_Invocation_Configuration--yaml"></a>
 
-```yaml
-
+```
 Resources:
   function:
     Type: AWS::Lambda::Function
@@ -196,11 +155,5 @@ Resources:
       MaximumRetryAttempts: 1
       Qualifier: !GetAtt version.Version
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-DestinationConfig
 
 All content copied from https://docs.aws.amazon.com/.

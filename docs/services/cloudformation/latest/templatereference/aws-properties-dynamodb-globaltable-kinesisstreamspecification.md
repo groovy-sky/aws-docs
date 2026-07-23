@@ -2,70 +2,52 @@
 title: "AWS::DynamoDB::GlobalTable KinesisStreamSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable KinesisStreamSpecification
+<a name="aws-properties-dynamodb-globaltable-kinesisstreamspecification"></a>
 
 The Kinesis Data Streams configuration for the specified global table replica.
 
 ## Syntax
+<a name="aws-properties-dynamodb-globaltable-kinesisstreamspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-globaltable-kinesisstreamspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApproximateCreationDateTimePrecision" : String,
-  "StreamArn" : String
+  "[ApproximateCreationDateTimePrecision](#cfn-dynamodb-globaltable-kinesisstreamspecification-approximatecreationdatetimeprecision)" : {{String}},
+  "[StreamArn](#cfn-dynamodb-globaltable-kinesisstreamspecification-streamarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-globaltable-kinesisstreamspecification-syntax.yaml"></a>
 
-```yaml
-
-  ApproximateCreationDateTimePrecision: String
-  StreamArn: String
-
+```
+  [ApproximateCreationDateTimePrecision](#cfn-dynamodb-globaltable-kinesisstreamspecification-approximatecreationdatetimeprecision): {{String}}
+  [StreamArn](#cfn-dynamodb-globaltable-kinesisstreamspecification-streamarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-globaltable-kinesisstreamspecification-properties"></a>
 
-`ApproximateCreationDateTimePrecision`
-
+`ApproximateCreationDateTimePrecision`  <a name="cfn-dynamodb-globaltable-kinesisstreamspecification-approximatecreationdatetimeprecision"></a>
 The precision for the time and date that the stream was created.
+*Required*: No
+*Type*: String
+*Allowed values*: `MICROSECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MICROSECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamArn`
-
+`StreamArn`  <a name="cfn-dynamodb-globaltable-kinesisstreamspecification-streamarn"></a>
 The ARN for a specific Kinesis data stream.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `37`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KeySchema
-
-LocalSecondaryIndex
+*Required*: Yes
+*Type*: String
+*Minimum*: `37`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

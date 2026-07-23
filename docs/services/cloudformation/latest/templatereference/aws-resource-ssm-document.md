@@ -2,272 +2,177 @@
 title: "AWS::SSM::Document"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::Document
+<a name="aws-resource-ssm-document"></a>
 
-The `AWS::SSM::Document` resource creates a Systems Manager (SSM)
-document in AWS Systems Manager. This document defines the actions that Systems Manager performs on your AWS resources.
+The `AWS::SSM::Document` resource creates a Systems Manager (SSM) document in AWS Systems Manager. This document defines the actions that Systems Manager performs on your AWS resources.
 
-###### Note
-
+**Note**
 This resource does not support CloudFormation drift detection.
 
 ## Syntax
+<a name="aws-resource-ssm-document-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssm-document-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSM::Document",
   "Properties" : {
-      "Attachments" : [ AttachmentsSource, ... ],
-      "Content" : Json,
-      "DocumentFormat" : String,
-      "DocumentType" : String,
-      "Name" : String,
-      "Requires" : [ DocumentRequires, ... ],
-      "Tags" : [ Tag, ... ],
-      "TargetType" : String,
-      "UpdateMethod" : String,
-      "VersionName" : String
+      "[Attachments](#cfn-ssm-document-attachments)" : {{[ AttachmentsSource, ... ]}},
+      "[Content](#cfn-ssm-document-content)" : {{Json}},
+      "[DocumentFormat](#cfn-ssm-document-documentformat)" : {{String}},
+      "[DocumentType](#cfn-ssm-document-documenttype)" : {{String}},
+      "[Name](#cfn-ssm-document-name)" : {{String}},
+      "[Requires](#cfn-ssm-document-requires)" : {{[ DocumentRequires, ... ]}},
+      "[Tags](#cfn-ssm-document-tags)" : {{[ Tag, ... ]}},
+      "[TargetType](#cfn-ssm-document-targettype)" : {{String}},
+      "[UpdateMethod](#cfn-ssm-document-updatemethod)" : {{String}},
+      "[VersionName](#cfn-ssm-document-versionname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssm-document-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSM::Document
 Properties:
-  Attachments:
-    - AttachmentsSource
-  Content: Json
-  DocumentFormat: String
-  DocumentType: String
-  Name: String
-  Requires:
-    - DocumentRequires
-  Tags:
-    - Tag
-  TargetType: String
-  UpdateMethod: String
-  VersionName: String
-
+  [Attachments](#cfn-ssm-document-attachments): {{
+    - AttachmentsSource}}
+  [Content](#cfn-ssm-document-content): {{Json}}
+  [DocumentFormat](#cfn-ssm-document-documentformat): {{String}}
+  [DocumentType](#cfn-ssm-document-documenttype): {{String}}
+  [Name](#cfn-ssm-document-name): {{String}}
+  [Requires](#cfn-ssm-document-requires): {{
+    - DocumentRequires}}
+  [Tags](#cfn-ssm-document-tags): {{
+    - Tag}}
+  [TargetType](#cfn-ssm-document-targettype): {{String}}
+  [UpdateMethod](#cfn-ssm-document-updatemethod): {{String}}
+  [VersionName](#cfn-ssm-document-versionname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ssm-document-properties"></a>
 
-`Attachments`
-
+`Attachments`  <a name="cfn-ssm-document-attachments"></a>
 A list of key-value pairs that describe attachments to a version of a document.
+*Required*: No
+*Type*: Array of [AttachmentsSource](aws-properties-ssm-document-attachmentssource.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AttachmentsSource](aws-properties-ssm-document-attachmentssource.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Content`
-
-The content for the new SSM document in JSON or YAML. For more information about the
-schemas for SSM document content, see [SSM document\
-schema features and examples](../../../systems-manager/latest/userguide/document-schemas-features.md) in the _AWS Systems Manager User_
-_Guide_.
-
-###### Note
-
+`Content`  <a name="cfn-ssm-document-content"></a>
+The content for the new SSM document in JSON or YAML. For more information about the schemas for SSM document content, see [SSM document schema features and examples](https://docs.aws.amazon.com/systems-manager/latest/userguide/document-schemas-features.html) in the *AWS Systems Manager User Guide*.
 This parameter also supports `String` data types.
+*Required*: Yes
+*Type*: Json
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
+`DocumentFormat`  <a name="cfn-ssm-document-documentformat"></a>
+Specify the document format for the request. `JSON` is the default format.
+*Required*: No
+*Type*: String
+*Allowed values*: `YAML | JSON | TEXT`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Type_: Json
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DocumentFormat`
-
-Specify the document format for the request. `JSON` is the default
-format.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `YAML | JSON | TEXT`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DocumentType`
-
+`DocumentType`  <a name="cfn-ssm-document-documenttype"></a>
 The type of document to create.
+*Required*: No
+*Type*: String
+*Allowed values*: `ApplicationConfiguration | ApplicationConfigurationSchema | Automation | Automation.ChangeTemplate | AutoApprovalPolicy | ChangeCalendar | CloudFormation | Command | DeploymentStrategy | ManualApprovalPolicy | Package | Policy | ProblemAnalysis | ProblemAnalysisTemplate | Session`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ApplicationConfiguration | ApplicationConfigurationSchema | Automation | Automation.ChangeTemplate | AutoApprovalPolicy | ChangeCalendar | CloudFormation | Command | DeploymentStrategy | ManualApprovalPolicy | Package | Policy | ProblemAnalysis | ProblemAnalysisTemplate | Session`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-ssm-document-name"></a>
 A name for the SSM document.
+You can't use the following strings as document name prefixes. These are reserved by AWS for use as document name prefixes:
++  `aws`
++  `amazon`
++  `amzn`
++  `AWSEC2`
++  `AWSConfigRemediation`
++  `AWSSupport`
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-.]{3,128}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Important
+`Requires`  <a name="cfn-ssm-document-requires"></a>
+A list of SSM documents required by a document. This parameter is used exclusively by AWS AppConfig. When a user creates an AWS AppConfig configuration in an SSM document, the user must also specify a required document for validation purposes. In this case, an `ApplicationConfiguration` document requires an `ApplicationConfigurationSchema` document for validation purposes. For more information, see [What is AWS AppConfig?](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) in the *AWS AppConfig User Guide*.
+*Required*: No
+*Type*: Array of [DocumentRequires](aws-properties-ssm-document-documentrequires.md)
+*Minimum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-You can't use the following strings as document name prefixes. These are reserved by AWS
-for use as document name prefixes:
+`Tags`  <a name="cfn-ssm-document-tags"></a>
+AWS CloudFormation resource tags to apply to the document. Use tags to help you identify and categorize resources.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ssm-document-tag.md)
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `aws`
+`TargetType`  <a name="cfn-ssm-document-targettype"></a>
+Specify a target type to define the kinds of resources the document can run on. For example, to run a document on EC2 instances, specify the following value: `/AWS::EC2::Instance`. If you specify a value of '/' the document can run on all types of resources. If you don't specify a value, the document can't run on any resources. For a list of valid resource types, see [AWS resource and property types reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) in the *AWS CloudFormation User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `^\/[\w\.\-\:\/]*$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-- `amazon`
+`UpdateMethod`  <a name="cfn-ssm-document-updatemethod"></a>
+If the document resource you specify in your template already exists, this parameter determines whether a new version of the existing document is created, or the existing document is replaced. `Replace` is the default method. If you specify `NewVersion` for the `UpdateMethod` parameter, and the `Name` of the document does not match an existing resource, a new document is created. When you specify `NewVersion`, the default version of the document is changed to the newly created version.
+*Required*: No
+*Type*: String
+*Allowed values*: `Replace | NewVersion`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `amzn`
-
-- `AWSEC2`
-
-- `AWSConfigRemediation`
-
-- `AWSSupport`
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-.]{3,128}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Requires`
-
-A list of SSM documents required by a document. This parameter is used exclusively by
-AWS AppConfig. When a user creates an AWS AppConfig configuration in an SSM document, the user must also
-specify a required document for validation purposes. In this case, an
-`ApplicationConfiguration` document requires an
-`ApplicationConfigurationSchema` document for validation purposes. For more
-information, see [What is AWS AppConfig?](../../../appconfig/latest/userguide/what-is-appconfig.md) in the
-_AWS AppConfig User Guide_.
-
-_Required_: No
-
-_Type_: Array of [DocumentRequires](aws-properties-ssm-document-documentrequires.md)
-
-_Minimum_: `1`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
-AWS CloudFormation resource tags to apply to the document. Use tags to help you
-identify and categorize resources.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ssm-document-tag.md)
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetType`
-
-Specify a target type to define the kinds of resources the document can run on. For
-example, to run a document on EC2 instances, specify the following value:
-`/AWS::EC2::Instance`. If you specify a value of '/' the document can run
-on all types of resources. If you don't specify a value, the document can't run on any
-resources. For a list of valid resource types, see [AWS resource and property types reference](../userguide/aws-template-resource-type-ref.md) in the
-_AWS CloudFormation User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\/[\w\.\-\:\/]*$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`UpdateMethod`
-
-If the document resource you specify in your template already exists, this parameter
-determines whether a new version of the existing document is created, or the existing
-document is replaced. `Replace` is the default method. If you specify
-`NewVersion` for the `UpdateMethod` parameter, and the
-`Name` of the document does not match an existing resource, a new
-document is created. When you specify `NewVersion`, the default version of
-the document is changed to the newly created version.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Replace | NewVersion`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionName`
-
-An optional field specifying the version of the artifact you are creating with the document.
-For example, `Release12.1`. This value is unique across all versions of a document,
-and can't be changed.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-.]{1,128}$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
+`VersionName`  <a name="cfn-ssm-document-versionname"></a>
+An optional field specifying the version of the artifact you are creating with the document. For example, `Release12.1`. This value is unique across all versions of a document, and can't be changed.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-.]{1,128}$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 ## Return values
+<a name="aws-resource-ssm-document-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ssm-document-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Systems Manager document name, such as
-`MyNewSSMDocument`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Systems Manager document name, such as `MyNewSSMDocument`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ssm-document--examples"></a>
 
-- [Create an Automation runbook that runs commands on an EC2 Linux instance](#aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance)
-
-- [Create a document that runs commands on an EC2 Linux instance](#aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance)
-
-- [Join a managed instance to a directory in AWS Directory Service](#aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in)
-
-- [Associate an SSM document with an instance](#aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance)
-
-- [Create a Systems Manager document for Session Manager preferences](#aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences)
-
-- [Create a Systems Manager document with JSON content](#aws-resource-ssm-document--examples--Create_a_document_with_JSON_content)
-
-- [Create a Systems Manager Distributor package](#aws-resource-ssm-document--examples--Create_a_Distributor_package)
-
-- [Create a Systems Manager Change Calendar document](#aws-resource-ssm-document--examples--Create_a_Change_Calendar_document)
+**Topics**
++ [Create an Automation runbook that runs commands on an EC2 Linux instance](#aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance)
++ [Create a document that runs commands on an EC2 Linux instance](#aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance)
++ [Join a managed instance to a directory in AWS Directory Service](#aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in)
++ [Associate an SSM document with an instance](#aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance)
++ [Create a Systems Manager document for Session Manager preferences](#aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences)
++ [Create a Systems Manager document with JSON content](#aws-resource-ssm-document--examples--Create_a_document_with_JSON_content)
++ [Create a Systems Manager Distributor package](#aws-resource-ssm-document--examples--Create_a_Distributor_package)
++ [Create a Systems Manager Change Calendar document](#aws-resource-ssm-document--examples--Create_a_Change_Calendar_document)
 
 ### Create an Automation runbook that runs commands on an EC2 Linux instance
+<a name="aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance"></a>
 
-The following runbook runs the commands you specify on your target Amazon EC2 Linux instance. You specify the commands parameter value when
-starting the runbook.
+The following runbook runs the commands you specify on your target Amazon EC2 Linux instance. You specify the commands parameter value when starting the runbook.
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance--yaml"></a>
 
-```yaml
-
+```
 document:
     Type: AWS::SSM::Document
     Properties:
@@ -303,9 +208,9 @@ document:
 ```
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance--json"></a>
 
-```json
-
+```
 "document": {
          "Type": "AWS::SSM::Document",
          "Properties": {
@@ -354,15 +259,14 @@ document:
 ```
 
 ### Create a document that runs commands on an EC2 Linux instance
+<a name="aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance"></a>
 
-The following SSM document runs the commands you specify on your target
-Amazon EC2 Linux instance. You specify the commands parameter
-value when you run the document using Run Command.
+The following SSM document runs the commands you specify on your target Amazon EC2 Linux instance. You specify the commands parameter value when you run the document using Run Command.
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance--yaml"></a>
 
-```yaml
-
+```
 document:
   Type: AWS::SSM::Document
   Properties:
@@ -388,9 +292,9 @@ document:
 ```
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance--json"></a>
 
-```json
-
+```
 "document": {
   "Type": "AWS::SSM::Document",
   "Properties": {
@@ -424,15 +328,14 @@ document:
 ```
 
 ### Join a managed instance to a directory in AWS Directory Service
+<a name="aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in"></a>
 
-The following SSM document joins instances to a directory in AWS Directory Service. The three runtime configuration parameters specify which
-directory the instance joins. You specify these parameter values when you
-associate the document with an instance.
+The following SSM document joins instances to a directory in AWS Directory Service. The three runtime configuration parameters specify which directory the instance joins. You specify these parameter values when you associate the document with an instance.
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in--yaml"></a>
 
-```yaml
-
+```
 document:
   Type: AWS::SSM::Document
   Properties:
@@ -461,9 +364,9 @@ document:
 ```
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in--json"></a>
 
-```json
-
+```
 "document" : {
     "Type": "AWS::SSM::Document",
     "Properties": {
@@ -501,16 +404,14 @@ document:
 ```
 
 ### Associate an SSM document with an instance
+<a name="aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance"></a>
 
-The following example shows how to associate an SSM document with an instance.
-The `DocumentName` property specifies the SSM document and the
-`AssociationParameters` property specifies values for the runtime
-configuration parameters.
+The following example shows how to associate an SSM document with an instance. The `DocumentName` property specifies the SSM document and the `AssociationParameters` property specifies values for the runtime configuration parameters.
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance--yaml"></a>
 
-```yaml
-
+```
 myEC2:
   Type: AWS::EC2::Instance
   Properties:
@@ -544,9 +445,9 @@ myEC2:
 ```
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance--json"></a>
 
-```json
-
+```
 "myEC2" : {
     "Type": "AWS::EC2::Instance",
     "Properties": {
@@ -606,15 +507,14 @@ myEC2:
 ```
 
 ### Create a Systems Manager document for Session Manager preferences
+<a name="aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences"></a>
 
-The following example creates a Systems Manager `Session` type
-document for Session Manager preferences. Before using this example template
-replace the placeholder values.
+The following example creates a Systems Manager`Session` type document for Session Manager preferences. Before using this example template replace the placeholder values.
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences--json"></a>
 
-```json
-
+```
 {
    "Resources":{
       "SessionPreferencesDocument":{
@@ -656,9 +556,9 @@ replace the placeholder values.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences--yaml"></a>
 
-```yaml
-
+```
 Resources:
   SessionPreferencesDocument:
     Type: AWS::SSM::Document
@@ -691,14 +591,14 @@ Outputs:
 ```
 
 ### Create a Systems Manager document with JSON content
+<a name="aws-resource-ssm-document--examples--Create_a_document_with_JSON_content"></a>
 
-The following example creates a new Systems Manager command document with
-JSON content.
+The following example creates a new Systems Manager command document with JSON content.
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Create_a_document_with_JSON_content--json"></a>
 
-```json
-
+```
 {
    "Type":"AWS::SSM::Document",
    "Properties":{
@@ -710,9 +610,9 @@ JSON content.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Create_a_document_with_JSON_content--yaml"></a>
 
-```yaml
-
+```
 ---
 Type: "AWS::SSM::Document"
 Properties:
@@ -722,14 +622,14 @@ Properties:
 ```
 
 ### Create a Systems Manager Distributor package
+<a name="aws-resource-ssm-document--examples--Create_a_Distributor_package"></a>
 
-The following example creates a new Systems Manager Distributor
-package.
+The following example creates a new Systems Manager Distributor package.
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Create_a_Distributor_package--json"></a>
 
-```json
-
+```
 {
         "Resources": {
         "ExamplePackageDocument": {
@@ -752,9 +652,9 @@ package.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Create_a_Distributor_package--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ExamplePackageDocument:
     Type: AWS::SSM::Document
@@ -772,14 +672,14 @@ Resources:
 ```
 
 ### Create a Systems Manager Change Calendar document
+<a name="aws-resource-ssm-document--examples--Create_a_Change_Calendar_document"></a>
 
-The following example creates a new Systems Manager Change Calendar
-document.
+The following example creates a new Systems Manager Change Calendar document.
 
 #### JSON
+<a name="aws-resource-ssm-document--examples--Create_a_Change_Calendar_document--json"></a>
 
-```json
-
+```
 {
    "Resources":{
       "ExampleChangeCalendarDocument":{
@@ -795,9 +695,9 @@ document.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-document--examples--Create_a_Change_Calendar_document--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ExampleChangeCalendarDocument:
     Type: 'AWS::SSM::Document'
@@ -808,13 +708,7 @@ Resources:
 ```
 
 ## See also
-
-- [AWS Systems Manager Documents](../../../systems-manager/latest/userguide/sysman-ssm-docs.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Target
-
-AttachmentsSource
+<a name="aws-resource-ssm-document--seealso"></a>
++  [AWS Systems Manager Documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-ssm-docs.html)
 
 All content copied from https://docs.aws.amazon.com/.

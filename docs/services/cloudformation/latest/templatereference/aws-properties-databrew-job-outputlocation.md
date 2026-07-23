@@ -2,81 +2,59 @@
 title: "AWS::DataBrew::Job OutputLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Job OutputLocation
+<a name="aws-properties-databrew-job-outputlocation"></a>
 
-The location in Amazon S3 or AWS Glue Data Catalog where the job
-writes its output.
+The location in Amazon S3 or AWS Glue Data Catalog where the job writes its output.
 
 ## Syntax
+<a name="aws-properties-databrew-job-outputlocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-job-outputlocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "BucketOwner" : String,
-  "Key" : String
+  "[Bucket](#cfn-databrew-job-outputlocation-bucket)" : {{String}},
+  "[BucketOwner](#cfn-databrew-job-outputlocation-bucketowner)" : {{String}},
+  "[Key](#cfn-databrew-job-outputlocation-key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-job-outputlocation-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  BucketOwner: String
-  Key: String
-
+```
+  [Bucket](#cfn-databrew-job-outputlocation-bucket): {{String}}
+  [BucketOwner](#cfn-databrew-job-outputlocation-bucketowner): {{String}}
+  [Key](#cfn-databrew-job-outputlocation-key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-job-outputlocation-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-databrew-job-outputlocation-bucket"></a>
 The Amazon S3 bucket name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketOwner`
-
+`BucketOwner`  <a name="cfn-databrew-job-outputlocation-bucketowner"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-databrew-job-outputlocation-key"></a>
 The unique name of the object in the bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputFormatOptions
-
-ProfileConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

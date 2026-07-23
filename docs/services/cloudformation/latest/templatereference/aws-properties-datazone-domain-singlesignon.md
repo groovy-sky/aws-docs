@@ -2,86 +2,62 @@
 title: "AWS::DataZone::Domain SingleSignOn"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Domain SingleSignOn
+<a name="aws-properties-datazone-domain-singlesignon"></a>
 
 The single sign-on details in Amazon DataZone.
 
 ## Syntax
+<a name="aws-properties-datazone-domain-singlesignon-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-domain-singlesignon-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdcInstanceArn" : String,
-  "Type" : String,
-  "UserAssignment" : String
+  "[IdcInstanceArn](#cfn-datazone-domain-singlesignon-idcinstancearn)" : {{String}},
+  "[Type](#cfn-datazone-domain-singlesignon-type)" : {{String}},
+  "[UserAssignment](#cfn-datazone-domain-singlesignon-userassignment)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-domain-singlesignon-syntax.yaml"></a>
 
-```yaml
-
-  IdcInstanceArn: String
-  Type: String
-  UserAssignment: String
-
+```
+  [IdcInstanceArn](#cfn-datazone-domain-singlesignon-idcinstancearn): {{String}}
+  [Type](#cfn-datazone-domain-singlesignon-type): {{String}}
+  [UserAssignment](#cfn-datazone-domain-singlesignon-userassignment): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-domain-singlesignon-properties"></a>
 
-`IdcInstanceArn`
-
+`IdcInstanceArn`  <a name="cfn-datazone-domain-singlesignon-idcinstancearn"></a>
 The ARN of the IDC instance.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-datazone-domain-singlesignon-type"></a>
 The type of single sign-on in Amazon DataZone.
+*Required*: No
+*Type*: String
+*Allowed values*: `IAM_IDC | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `IAM_IDC | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserAssignment`
-
+`UserAssignment`  <a name="cfn-datazone-domain-singlesignon-userassignment"></a>
 The single sign-on user assignment in Amazon DataZone.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AUTOMATIC | MANUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::Domain
-
-Tag
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTOMATIC | MANUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

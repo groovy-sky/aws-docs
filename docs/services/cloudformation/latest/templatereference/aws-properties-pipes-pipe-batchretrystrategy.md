@@ -2,58 +2,43 @@
 title: "AWS::Pipes::Pipe BatchRetryStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe BatchRetryStrategy
+<a name="aws-properties-pipes-pipe-batchretrystrategy"></a>
 
-The retry strategy that's associated with a job. For more information, see [Automated job retries](../../../batch/latest/userguide/job-retries.md) in the _AWS Batch User Guide_.
+The retry strategy that's associated with a job. For more information, see [ Automated job retries](https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html) in the *AWS Batch User Guide*.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-batchretrystrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-batchretrystrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attempts" : Integer
+  "[Attempts](#cfn-pipes-pipe-batchretrystrategy-attempts)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-batchretrystrategy-syntax.yaml"></a>
 
-```yaml
-
-  Attempts: Integer
-
+```
+  [Attempts](#cfn-pipes-pipe-batchretrystrategy-attempts): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-batchretrystrategy-properties"></a>
 
-`Attempts`
-
-The number of times to move a job to the `RUNNABLE` status. If the value of
-`attempts` is greater than one, the job is retried on failure the same number
-of attempts as the value.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BatchResourceRequirement
-
-CapacityProviderStrategyItem
+`Attempts`  <a name="cfn-pipes-pipe-batchretrystrategy-attempts"></a>
+The number of times to move a job to the `RUNNABLE` status. If the value of `attempts` is greater than one, the job is retried on failure the same number of attempts as the value.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

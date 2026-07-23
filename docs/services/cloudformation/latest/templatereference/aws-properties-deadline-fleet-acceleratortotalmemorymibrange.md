@@ -2,73 +2,53 @@
 title: "AWS::Deadline::Fleet AcceleratorTotalMemoryMiBRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet AcceleratorTotalMemoryMiBRange
+<a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange"></a>
 
-Defines the maximum and minimum amount of memory, in MiB, to use for the
-accelerator.
+Defines the maximum and minimum amount of memory, in MiB, to use for the accelerator.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Integer,
-  "Min" : Integer
+  "[Max](#cfn-deadline-fleet-acceleratortotalmemorymibrange-max)" : {{Integer}},
+  "[Min](#cfn-deadline-fleet-acceleratortotalmemorymibrange-min)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange-syntax.yaml"></a>
 
-```yaml
-
-  Max: Integer
-  Min: Integer
-
+```
+  [Max](#cfn-deadline-fleet-acceleratortotalmemorymibrange-max): {{Integer}}
+  [Min](#cfn-deadline-fleet-acceleratortotalmemorymibrange-min): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange-properties"></a>
 
-`Max`
-
+`Max`  <a name="cfn-deadline-fleet-acceleratortotalmemorymibrange-max"></a>
 The maximum amount of memory to use for the accelerator, measured in MiB.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
+`Min`  <a name="cfn-deadline-fleet-acceleratortotalmemorymibrange-min"></a>
 The minimum amount of memory to use for the accelerator, measured in MiB.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AcceleratorSelection
-
-CustomerManagedAutoScalingConfiguration
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

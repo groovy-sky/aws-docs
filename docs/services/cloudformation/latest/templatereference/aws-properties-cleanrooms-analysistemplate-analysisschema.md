@@ -2,55 +2,43 @@
 title: "AWS::CleanRooms::AnalysisTemplate AnalysisSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate AnalysisSchema
+<a name="aws-properties-cleanrooms-analysistemplate-analysisschema"></a>
 
 A relation within an analysis.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-analysisschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-analysisschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReferencedTables" : [ String, ... ]
+  "[ReferencedTables](#cfn-cleanrooms-analysistemplate-analysisschema-referencedtables)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-analysisschema-syntax.yaml"></a>
 
-```yaml
-
-  ReferencedTables:
-    - String
-
+```
+  [ReferencedTables](#cfn-cleanrooms-analysistemplate-analysisschema-referencedtables): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-analysisschema-properties"></a>
 
-`ReferencedTables`
-
+`ReferencedTables`  <a name="cfn-cleanrooms-analysistemplate-analysisschema-referencedtables"></a>
 The tables referenced in the analysis schema.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Update requires_: Updates are not supported.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisParameter
-
-AnalysisSource
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Update requires*: Updates are not supported.
 
 All content copied from https://docs.aws.amazon.com/.

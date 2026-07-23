@@ -2,72 +2,53 @@
 title: "AWS::Lex::Bot BedrockAgentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BedrockAgentConfiguration
+<a name="aws-properties-lex-bot-bedrockagentconfiguration"></a>
 
-The `BedrockAgentConfiguration` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
+<a name="aws-properties-lex-bot-bedrockagentconfiguration-description"></a>The `BedrockAgentConfiguration` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
 
 ## Syntax
+<a name="aws-properties-lex-bot-bedrockagentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-bedrockagentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockAgentAliasId" : String,
-  "BedrockAgentId" : String
+  "[BedrockAgentAliasId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentaliasid)" : {{String}},
+  "[BedrockAgentId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-bedrockagentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BedrockAgentAliasId: String
-  BedrockAgentId: String
-
+```
+  [BedrockAgentAliasId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentaliasid): {{String}}
+  [BedrockAgentId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-bedrockagentconfiguration-properties"></a>
 
-`BedrockAgentAliasId`
-
+`BedrockAgentAliasId`  <a name="cfn-lex-bot-bedrockagentconfiguration-bedrockagentaliasid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BedrockAgentId`
-
+`BedrockAgentId`  <a name="cfn-lex-bot-bedrockagentconfiguration-bedrockagentid"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AudioSpecification
-
-BedrockAgentIntentConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

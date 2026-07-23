@@ -2,73 +2,53 @@
 title: "AWS::Lambda::EventSourceMapping AmazonManagedKafkaEventSourceConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping AmazonManagedKafkaEventSourceConfig
+<a name="aws-properties-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig"></a>
 
 Specific configuration settings for an Amazon Managed Streaming for Apache Kafka (Amazon MSK) event source.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConsumerGroupId" : String,
-  "SchemaRegistryConfig" : SchemaRegistryConfig
+  "[ConsumerGroupId](#cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-consumergroupid)" : {{String}},
+  "[SchemaRegistryConfig](#cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-schemaregistryconfig)" : {{SchemaRegistryConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-syntax.yaml"></a>
 
-```yaml
-
-  ConsumerGroupId: String
-  SchemaRegistryConfig:
-    SchemaRegistryConfig
-
+```
+  [ConsumerGroupId](#cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-consumergroupid): {{String}}
+  [SchemaRegistryConfig](#cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-schemaregistryconfig): {{
+    SchemaRegistryConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-properties"></a>
 
-`ConsumerGroupId`
+`ConsumerGroupId`  <a name="cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-consumergroupid"></a>
+The identifier for the Kafka consumer group to join. The consumer group ID must be unique among all your Kafka event sources. After creating a Kafka event source mapping with the consumer group ID specified, you cannot update this value. For more information, see [Customizable consumer group ID](https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html#services-msk-consumer-group-id).
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9-\/*:_+=.@-]*`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The identifier for the Kafka consumer group to join. The consumer group ID must be unique among all your Kafka event sources.
-After creating a Kafka event source mapping with the consumer group ID specified, you cannot update this value. For more information, see
-[Customizable consumer group ID](../../../lambda/latest/dg/with-msk.md#services-msk-consumer-group-id).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9-\/*:_+=.@-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SchemaRegistryConfig`
-
+`SchemaRegistryConfig`  <a name="cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig-schemaregistryconfig"></a>
 Specific configuration settings for a Kafka schema registry.
-
-_Required_: No
-
-_Type_: [SchemaRegistryConfig](aws-properties-lambda-eventsourcemapping-schemaregistryconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Lambda::EventSourceMapping
-
-DestinationConfig
+*Required*: No
+*Type*: [SchemaRegistryConfig](aws-properties-lambda-eventsourcemapping-schemaregistryconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

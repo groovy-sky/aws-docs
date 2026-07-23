@@ -2,121 +2,83 @@
 title: "AWS::Macie::FindingsFilter CriterionAdditionalProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Macie::FindingsFilter CriterionAdditionalProperties
+<a name="aws-properties-macie-findingsfilter-criterionadditionalproperties"></a>
 
-Specifies a condition that defines the property, operator, and one or more values to
-use in a findings filter. A _findings filter_, also referred to as a _filter rule_, is a
-set of custom criteria that specifies which findings to include or exclude from the results of a query for findings. You can also
-configure a findings filter to suppress (automatically archive) findings that match the filter's criteria. For more information,
-see [Filtering Macie findings](../../../macie/latest/user/findings-filter-overview.md) in
-the _Amazon Macie User Guide_.
+Specifies a condition that defines the property, operator, and one or more values to use in a findings filter. A *findings filter*, also referred to as a *filter rule*, is a set of custom criteria that specifies which findings to include or exclude from the results of a query for findings. You can also configure a findings filter to suppress (automatically archive) findings that match the filter's criteria. For more information, see [Filtering Macie findings](https://docs.aws.amazon.com/macie/latest/user/findings-filter-overview.html) in the *Amazon Macie User Guide*.
 
 ## Syntax
+<a name="aws-properties-macie-findingsfilter-criterionadditionalproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-macie-findingsfilter-criterionadditionalproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "eq" : [ String, ... ],
-  "gt" : Integer,
-  "gte" : Integer,
-  "lt" : Integer,
-  "lte" : Integer,
-  "neq" : [ String, ... ]
+  "[eq](#cfn-macie-findingsfilter-criterionadditionalproperties-eq)" : {{[ String, ... ]}},
+  "[gt](#cfn-macie-findingsfilter-criterionadditionalproperties-gt)" : {{Integer}},
+  "[gte](#cfn-macie-findingsfilter-criterionadditionalproperties-gte)" : {{Integer}},
+  "[lt](#cfn-macie-findingsfilter-criterionadditionalproperties-lt)" : {{Integer}},
+  "[lte](#cfn-macie-findingsfilter-criterionadditionalproperties-lte)" : {{Integer}},
+  "[neq](#cfn-macie-findingsfilter-criterionadditionalproperties-neq)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-macie-findingsfilter-criterionadditionalproperties-syntax.yaml"></a>
 
-```yaml
-
-  eq:
-    - String
-  gt: Integer
-  gte: Integer
-  lt: Integer
-  lte: Integer
-  neq:
-    - String
-
+```
+  [eq](#cfn-macie-findingsfilter-criterionadditionalproperties-eq): {{
+    - String}}
+  [gt](#cfn-macie-findingsfilter-criterionadditionalproperties-gt): {{Integer}}
+  [gte](#cfn-macie-findingsfilter-criterionadditionalproperties-gte): {{Integer}}
+  [lt](#cfn-macie-findingsfilter-criterionadditionalproperties-lt): {{Integer}}
+  [lte](#cfn-macie-findingsfilter-criterionadditionalproperties-lte): {{Integer}}
+  [neq](#cfn-macie-findingsfilter-criterionadditionalproperties-neq): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-macie-findingsfilter-criterionadditionalproperties-properties"></a>
 
-`eq`
+`eq`  <a name="cfn-macie-findingsfilter-criterionadditionalproperties-eq"></a>
+The value for the specified property matches (equals) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The value for the specified property matches (equals) the specified value. If you specify
-multiple values, Amazon Macie uses OR logic to join the values.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`gt`
-
+`gt`  <a name="cfn-macie-findingsfilter-criterionadditionalproperties-gt"></a>
 The value for the specified property is greater than the specified value.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`gte`
-
+`gte`  <a name="cfn-macie-findingsfilter-criterionadditionalproperties-gte"></a>
 The value for the specified property is greater than or equal to the specified value.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`lt`
-
+`lt`  <a name="cfn-macie-findingsfilter-criterionadditionalproperties-lt"></a>
 The value for the specified property is less than the specified value.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`lte`
-
+`lte`  <a name="cfn-macie-findingsfilter-criterionadditionalproperties-lte"></a>
 The value for the specified property is less than or equal to the specified value.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`neq`
-
-The value for the specified property doesn't match (doesn't equal) the specified
-value. If you specify multiple values, Amazon Macie uses OR logic to join the values.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Macie::FindingsFilter
-
-FindingCriteria
+`neq`  <a name="cfn-macie-findingsfilter-criterionadditionalproperties-neq"></a>
+The value for the specified property doesn't match (doesn't equal) the specified value. If you specify multiple values, Amazon Macie uses OR logic to join the values.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

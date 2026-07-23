@@ -2,117 +2,84 @@
 title: "AWS::AmplifyUIBuilder::Component Predicate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component Predicate
+<a name="aws-properties-amplifyuibuilder-component-predicate"></a>
 
-The `Predicate` property specifies information for generating Amplify DataStore queries. Use `Predicate` to retrieve a subset of the
-data in a collection.
+The `Predicate` property specifies information for generating Amplify DataStore queries. Use `Predicate` to retrieve a subset of the data in a collection.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-component-predicate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-component-predicate-syntax.json"></a>
 
-```json
-
+```
 {
-  "And" : [ Predicate, ... ],
-  "Field" : String,
-  "Operand" : String,
-  "OperandType" : String,
-  "Operator" : String,
-  "Or" : [ Predicate, ... ]
+  "[And](#cfn-amplifyuibuilder-component-predicate-and)" : {{[ Predicate, ... ]}},
+  "[Field](#cfn-amplifyuibuilder-component-predicate-field)" : {{String}},
+  "[Operand](#cfn-amplifyuibuilder-component-predicate-operand)" : {{String}},
+  "[OperandType](#cfn-amplifyuibuilder-component-predicate-operandtype)" : {{String}},
+  "[Operator](#cfn-amplifyuibuilder-component-predicate-operator)" : {{String}},
+  "[Or](#cfn-amplifyuibuilder-component-predicate-or)" : {{[ Predicate, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-component-predicate-syntax.yaml"></a>
 
-```yaml
-
-  And:
-    - Predicate
-  Field: String
-  Operand: String
-  OperandType: String
-  Operator: String
-  Or:
-    - Predicate
-
+```
+  [And](#cfn-amplifyuibuilder-component-predicate-and): {{
+    - Predicate}}
+  [Field](#cfn-amplifyuibuilder-component-predicate-field): {{String}}
+  [Operand](#cfn-amplifyuibuilder-component-predicate-operand): {{String}}
+  [OperandType](#cfn-amplifyuibuilder-component-predicate-operandtype): {{String}}
+  [Operator](#cfn-amplifyuibuilder-component-predicate-operator): {{String}}
+  [Or](#cfn-amplifyuibuilder-component-predicate-or): {{
+    - Predicate}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-component-predicate-properties"></a>
 
-`And`
-
+`And`  <a name="cfn-amplifyuibuilder-component-predicate-and"></a>
 A list of predicates to combine logically.
+*Required*: No
+*Type*: Array of [Predicate](#aws-properties-amplifyuibuilder-component-predicate)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Field`
-
+`Field`  <a name="cfn-amplifyuibuilder-component-predicate-field"></a>
 The field to query.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operand`
-
+`Operand`  <a name="cfn-amplifyuibuilder-component-predicate-operand"></a>
 The value to use when performing the evaluation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperandType`
-
+`OperandType`  <a name="cfn-amplifyuibuilder-component-predicate-operandtype"></a>
 The type of value to use when performing the evaluation.
+*Required*: No
+*Type*: String
+*Pattern*: `^boolean|string|number$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^boolean|string|number$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operator`
-
+`Operator`  <a name="cfn-amplifyuibuilder-component-predicate-operator"></a>
 The operator to use to perform the evaluation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Or`
-
+`Or`  <a name="cfn-amplifyuibuilder-component-predicate-or"></a>
 A list of predicates to combine logically.
-
-_Required_: No
-
-_Type_: Array of [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MutationActionSetStateParameter
-
-SortProperty
+*Required*: No
+*Type*: Array of [Predicate](#aws-properties-amplifyuibuilder-component-predicate)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

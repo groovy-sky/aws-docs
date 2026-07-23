@@ -2,96 +2,69 @@
 title: "AWS::S3ObjectLambda::AccessPoint ObjectLambdaConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3ObjectLambda::AccessPoint ObjectLambdaConfiguration
+<a name="aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration"></a>
 
 A configuration used when creating an Object Lambda Access Point.
 
 ## Syntax
+<a name="aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowedFeatures" : [ String, ... ],
-  "CloudWatchMetricsEnabled" : Boolean,
-  "SupportingAccessPoint" : String,
-  "TransformationConfigurations" : [ TransformationConfiguration, ... ]
+  "[AllowedFeatures](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-allowedfeatures)" : {{[ String, ... ]}},
+  "[CloudWatchMetricsEnabled](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-cloudwatchmetricsenabled)" : {{Boolean}},
+  "[SupportingAccessPoint](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-supportingaccesspoint)" : {{String}},
+  "[TransformationConfigurations](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-transformationconfigurations)" : {{[ TransformationConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AllowedFeatures:
-    - String
-  CloudWatchMetricsEnabled: Boolean
-  SupportingAccessPoint: String
-  TransformationConfigurations:
-    - TransformationConfiguration
-
+```
+  [AllowedFeatures](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-allowedfeatures): {{
+    - String}}
+  [CloudWatchMetricsEnabled](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-cloudwatchmetricsenabled): {{Boolean}}
+  [SupportingAccessPoint](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-supportingaccesspoint): {{String}}
+  [TransformationConfigurations](#cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-transformationconfigurations): {{
+    - TransformationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-s3objectlambda-accesspoint-objectlambdaconfiguration-properties"></a>
 
-`AllowedFeatures`
+`AllowedFeatures`  <a name="cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-allowedfeatures"></a>
+A container for allowed features. Valid inputs are `GetObject-Range`, `GetObject-PartNumber`, `HeadObject-Range`, and `HeadObject-PartNumber`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A container for allowed features. Valid inputs are `GetObject-Range`,
-`GetObject-PartNumber`, `HeadObject-Range`, and
-`HeadObject-PartNumber`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CloudWatchMetricsEnabled`
-
+`CloudWatchMetricsEnabled`  <a name="cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-cloudwatchmetricsenabled"></a>
 A container for whether the CloudWatch metrics configuration is enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SupportingAccessPoint`
-
+`SupportingAccessPoint`  <a name="cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-supportingaccesspoint"></a>
 Standard access point associated with the Object Lambda Access Point.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransformationConfigurations`
-
+`TransformationConfigurations`  <a name="cfn-s3objectlambda-accesspoint-objectlambdaconfiguration-transformationconfigurations"></a>
 A container for transformation configurations for an Object Lambda Access Point.
-
-_Required_: Yes
-
-_Type_: Array of [TransformationConfiguration](aws-properties-s3objectlambda-accesspoint-transformationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContentTransformation
-
-PublicAccessBlockConfiguration
+*Required*: Yes
+*Type*: Array of [TransformationConfiguration](aws-properties-s3objectlambda-accesspoint-transformationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

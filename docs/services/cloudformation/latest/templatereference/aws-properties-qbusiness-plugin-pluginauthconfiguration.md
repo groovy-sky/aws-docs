@@ -2,80 +2,59 @@
 title: "AWS::QBusiness::Plugin PluginAuthConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Plugin PluginAuthConfiguration
+<a name="aws-properties-qbusiness-plugin-pluginauthconfiguration"></a>
 
 Authentication configuration information for an Amazon Q Business plugin.
 
 ## Syntax
+<a name="aws-properties-qbusiness-plugin-pluginauthconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-plugin-pluginauthconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BasicAuthConfiguration" : BasicAuthConfiguration,
-  "NoAuthConfiguration" : Json,
-  "OAuth2ClientCredentialConfiguration" : OAuth2ClientCredentialConfiguration
+  "[BasicAuthConfiguration](#cfn-qbusiness-plugin-pluginauthconfiguration-basicauthconfiguration)" : {{BasicAuthConfiguration}},
+  "[NoAuthConfiguration](#cfn-qbusiness-plugin-pluginauthconfiguration-noauthconfiguration)" : {{Json}},
+  "[OAuth2ClientCredentialConfiguration](#cfn-qbusiness-plugin-pluginauthconfiguration-oauth2clientcredentialconfiguration)" : {{OAuth2ClientCredentialConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-plugin-pluginauthconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BasicAuthConfiguration:
-    BasicAuthConfiguration
-  NoAuthConfiguration: Json
-  OAuth2ClientCredentialConfiguration:
-    OAuth2ClientCredentialConfiguration
-
+```
+  [BasicAuthConfiguration](#cfn-qbusiness-plugin-pluginauthconfiguration-basicauthconfiguration): {{
+    BasicAuthConfiguration}}
+  [NoAuthConfiguration](#cfn-qbusiness-plugin-pluginauthconfiguration-noauthconfiguration): {{Json}}
+  [OAuth2ClientCredentialConfiguration](#cfn-qbusiness-plugin-pluginauthconfiguration-oauth2clientcredentialconfiguration): {{
+    OAuth2ClientCredentialConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-plugin-pluginauthconfiguration-properties"></a>
 
-`BasicAuthConfiguration`
+`BasicAuthConfiguration`  <a name="cfn-qbusiness-plugin-pluginauthconfiguration-basicauthconfiguration"></a>
+Information about the basic authentication credentials used to configure a plugin.
+*Required*: No
+*Type*: [BasicAuthConfiguration](aws-properties-qbusiness-plugin-basicauthconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about the basic authentication credentials used to configure a
-plugin.
-
-_Required_: No
-
-_Type_: [BasicAuthConfiguration](aws-properties-qbusiness-plugin-basicauthconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NoAuthConfiguration`
-
+`NoAuthConfiguration`  <a name="cfn-qbusiness-plugin-pluginauthconfiguration-noauthconfiguration"></a>
 Information about invoking a custom plugin without any authentication.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OAuth2ClientCredentialConfiguration`
-
-Information about the OAuth 2.0 authentication credential/token used to configure a
-plugin.
-
-_Required_: No
-
-_Type_: [OAuth2ClientCredentialConfiguration](aws-properties-qbusiness-plugin-oauth2clientcredentialconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OAuth2ClientCredentialConfiguration
-
-S3
+`OAuth2ClientCredentialConfiguration`  <a name="cfn-qbusiness-plugin-pluginauthconfiguration-oauth2clientcredentialconfiguration"></a>
+Information about the OAuth 2.0 authentication credential/token used to configure a plugin.
+*Required*: No
+*Type*: [OAuth2ClientCredentialConfiguration](aws-properties-qbusiness-plugin-oauth2clientcredentialconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

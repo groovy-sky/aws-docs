@@ -2,145 +2,111 @@
 title: "AWS::WorkSpacesWeb::NetworkSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::NetworkSettings
+<a name="aws-resource-workspacesweb-networksettings"></a>
 
-This resource specifies network settings that can be associated with a web portal. Once
-associated with a web portal, network settings define how streaming instances will connect
-with your specified VPC.
+This resource specifies network settings that can be associated with a web portal. Once associated with a web portal, network settings define how streaming instances will connect with your specified VPC.
 
 The VPC must have default tenancy. VPCs with dedicated tenancy are not supported.
 
-For availability consideration, you must have at least two subnets created in two different Availability Zones. WorkSpaces Secure Browser is available in a subset of the Availability Zones for each supported Region. For more information, see [Supported Availability Zones](../../../workspaces-web/latest/adminguide/availability-zones.md).
+For availability consideration, you must have at least two subnets created in two different Availability Zones. WorkSpaces Secure Browser is available in a subset of the Availability Zones for each supported Region. For more information, see [Supported Availability Zones](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/availability-zones.html).
 
 ## Syntax
+<a name="aws-resource-workspacesweb-networksettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-workspacesweb-networksettings-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::WorkSpacesWeb::NetworkSettings",
   "Properties" : {
-      "SecurityGroupIds" : [ String, ... ],
-      "SubnetIds" : [ String, ... ],
-      "Tags" : [ Tag, ... ],
-      "VpcId" : String
+      "[SecurityGroupIds](#cfn-workspacesweb-networksettings-securitygroupids)" : {{[ String, ... ]}},
+      "[SubnetIds](#cfn-workspacesweb-networksettings-subnetids)" : {{[ String, ... ]}},
+      "[Tags](#cfn-workspacesweb-networksettings-tags)" : {{[ Tag, ... ]}},
+      "[VpcId](#cfn-workspacesweb-networksettings-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-workspacesweb-networksettings-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::WorkSpacesWeb::NetworkSettings
 Properties:
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-  Tags:
-    - Tag
-  VpcId: String
-
+  [SecurityGroupIds](#cfn-workspacesweb-networksettings-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-workspacesweb-networksettings-subnetids): {{
+    - String}}
+  [Tags](#cfn-workspacesweb-networksettings-tags): {{
+    - Tag}}
+  [VpcId](#cfn-workspacesweb-networksettings-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-workspacesweb-networksettings-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-workspacesweb-networksettings-securitygroupids"></a>
 One or more security groups used to control access from streaming instances to your VPC.
+*Pattern*: `^[\w+\-]+$`
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `128 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[\w+\-]+$`
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `128 | 5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-workspacesweb-networksettings-subnetids"></a>
 The subnets in which network interfaces are created to connect streaming instances to your VPC. At least two of these subnets must be in different availability zones.
+*Pattern*: `^subnet-([0-9a-f]{8}|[0-9a-f]{17})$`
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 2`
+*Maximum*: `32 | 3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^subnet-([0-9a-f]{8}|[0-9a-f]{17})$`
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 2`
-
-_Maximum_: `32 | 3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-workspacesweb-networksettings-tags"></a>
 The tags to add to the network settings resource. A tag is a key-value pair.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-workspacesweb-networksettings-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-workspacesweb-networksettings-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-workspacesweb-networksettings-vpcid"></a>
 The VPC that streaming instances will connect to.
-
-_Pattern_: `^vpc-[0-9a-z]*$`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^vpc-[0-9a-z]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Pattern*: `^vpc-[0-9a-z]*$`
+*Required*: Yes
+*Type*: String
+*Pattern*: `^vpc-[0-9a-z]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-workspacesweb-networksettings-return-values"></a>
 
 ### Ref
+<a name="aws-resource-workspacesweb-networksettings-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function,
-`Ref` returns the resource's Amazon Resource Name (ARN).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource's Amazon Resource Name (ARN).
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-workspacesweb-networksettings-return-values-fn--getatt"></a>
 
-`AssociatedPortalArns`
+####
+<a name="aws-resource-workspacesweb-networksettings-return-values-fn--getatt-fn--getatt"></a>
 
+`AssociatedPortalArns`  <a name="AssociatedPortalArns-fn::getatt"></a>
 A list of web portal ARNs that this network settings is associated with.
 
-`NetworkSettingsArn`
-
+`NetworkSettingsArn`  <a name="NetworkSettingsArn-fn::getatt"></a>
 The ARN of the network settings.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

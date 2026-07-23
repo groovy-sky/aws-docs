@@ -2,218 +2,151 @@
 title: "AWS::QuickSight::Template PivotTableOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PivotTableOptions
+<a name="aws-properties-quicksight-template-pivottableoptions"></a>
 
 The table options for a pivot table visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pivottableoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pivottableoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CellStyle" : TableCellStyle,
-  "CollapsedRowDimensionsVisibility" : String,
-  "ColumnHeaderStyle" : TableCellStyle,
-  "ColumnNamesVisibility" : String,
-  "DefaultCellWidth" : String,
-  "MetricPlacement" : String,
-  "RowAlternateColorOptions" : RowAlternateColorOptions,
-  "RowFieldNamesStyle" : TableCellStyle,
-  "RowHeaderStyle" : TableCellStyle,
-  "RowsLabelOptions" : PivotTableRowsLabelOptions,
-  "RowsLayout" : String,
-  "SingleMetricVisibility" : String,
-  "ToggleButtonsVisibility" : String
+  "[CellStyle](#cfn-quicksight-template-pivottableoptions-cellstyle)" : {{TableCellStyle}},
+  "[CollapsedRowDimensionsVisibility](#cfn-quicksight-template-pivottableoptions-collapsedrowdimensionsvisibility)" : {{String}},
+  "[ColumnHeaderStyle](#cfn-quicksight-template-pivottableoptions-columnheaderstyle)" : {{TableCellStyle}},
+  "[ColumnNamesVisibility](#cfn-quicksight-template-pivottableoptions-columnnamesvisibility)" : {{String}},
+  "[DefaultCellWidth](#cfn-quicksight-template-pivottableoptions-defaultcellwidth)" : {{String}},
+  "[MetricPlacement](#cfn-quicksight-template-pivottableoptions-metricplacement)" : {{String}},
+  "[RowAlternateColorOptions](#cfn-quicksight-template-pivottableoptions-rowalternatecoloroptions)" : {{RowAlternateColorOptions}},
+  "[RowFieldNamesStyle](#cfn-quicksight-template-pivottableoptions-rowfieldnamesstyle)" : {{TableCellStyle}},
+  "[RowHeaderStyle](#cfn-quicksight-template-pivottableoptions-rowheaderstyle)" : {{TableCellStyle}},
+  "[RowsLabelOptions](#cfn-quicksight-template-pivottableoptions-rowslabeloptions)" : {{PivotTableRowsLabelOptions}},
+  "[RowsLayout](#cfn-quicksight-template-pivottableoptions-rowslayout)" : {{String}},
+  "[SingleMetricVisibility](#cfn-quicksight-template-pivottableoptions-singlemetricvisibility)" : {{String}},
+  "[ToggleButtonsVisibility](#cfn-quicksight-template-pivottableoptions-togglebuttonsvisibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pivottableoptions-syntax.yaml"></a>
 
-```yaml
-
-  CellStyle:
-    TableCellStyle
-  CollapsedRowDimensionsVisibility: String
-  ColumnHeaderStyle:
-    TableCellStyle
-  ColumnNamesVisibility: String
-  DefaultCellWidth: String
-  MetricPlacement: String
-  RowAlternateColorOptions:
-    RowAlternateColorOptions
-  RowFieldNamesStyle:
-    TableCellStyle
-  RowHeaderStyle:
-    TableCellStyle
-  RowsLabelOptions:
-    PivotTableRowsLabelOptions
-  RowsLayout: String
-  SingleMetricVisibility: String
-  ToggleButtonsVisibility: String
-
+```
+  [CellStyle](#cfn-quicksight-template-pivottableoptions-cellstyle): {{
+    TableCellStyle}}
+  [CollapsedRowDimensionsVisibility](#cfn-quicksight-template-pivottableoptions-collapsedrowdimensionsvisibility): {{String}}
+  [ColumnHeaderStyle](#cfn-quicksight-template-pivottableoptions-columnheaderstyle): {{
+    TableCellStyle}}
+  [ColumnNamesVisibility](#cfn-quicksight-template-pivottableoptions-columnnamesvisibility): {{String}}
+  [DefaultCellWidth](#cfn-quicksight-template-pivottableoptions-defaultcellwidth): {{String}}
+  [MetricPlacement](#cfn-quicksight-template-pivottableoptions-metricplacement): {{String}}
+  [RowAlternateColorOptions](#cfn-quicksight-template-pivottableoptions-rowalternatecoloroptions): {{
+    RowAlternateColorOptions}}
+  [RowFieldNamesStyle](#cfn-quicksight-template-pivottableoptions-rowfieldnamesstyle): {{
+    TableCellStyle}}
+  [RowHeaderStyle](#cfn-quicksight-template-pivottableoptions-rowheaderstyle): {{
+    TableCellStyle}}
+  [RowsLabelOptions](#cfn-quicksight-template-pivottableoptions-rowslabeloptions): {{
+    PivotTableRowsLabelOptions}}
+  [RowsLayout](#cfn-quicksight-template-pivottableoptions-rowslayout): {{String}}
+  [SingleMetricVisibility](#cfn-quicksight-template-pivottableoptions-singlemetricvisibility): {{String}}
+  [ToggleButtonsVisibility](#cfn-quicksight-template-pivottableoptions-togglebuttonsvisibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pivottableoptions-properties"></a>
 
-`CellStyle`
-
+`CellStyle`  <a name="cfn-quicksight-template-pivottableoptions-cellstyle"></a>
 The table cell style of cells.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CollapsedRowDimensionsVisibility`
-
+`CollapsedRowDimensionsVisibility`  <a name="cfn-quicksight-template-pivottableoptions-collapsedrowdimensionsvisibility"></a>
 The visibility setting of a pivot table's collapsed row dimension fields. If the value of this structure is `HIDDEN`, all collapsed columns in a pivot table are automatically hidden. The default value is `VISIBLE`.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnHeaderStyle`
-
+`ColumnHeaderStyle`  <a name="cfn-quicksight-template-pivottableoptions-columnheaderstyle"></a>
 The table cell style of the column header.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnNamesVisibility`
-
+`ColumnNamesVisibility`  <a name="cfn-quicksight-template-pivottableoptions-columnnamesvisibility"></a>
 The visibility of the column names.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultCellWidth`
-
+`DefaultCellWidth`  <a name="cfn-quicksight-template-pivottableoptions-defaultcellwidth"></a>
 The default cell width of the pivot table.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricPlacement`
-
+`MetricPlacement`  <a name="cfn-quicksight-template-pivottableoptions-metricplacement"></a>
 The metric placement (row, column) options.
+*Required*: No
+*Type*: String
+*Allowed values*: `ROW | COLUMN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ROW | COLUMN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowAlternateColorOptions`
-
+`RowAlternateColorOptions`  <a name="cfn-quicksight-template-pivottableoptions-rowalternatecoloroptions"></a>
 The row alternate color options (widget status, row alternate colors).
+*Required*: No
+*Type*: [RowAlternateColorOptions](aws-properties-quicksight-template-rowalternatecoloroptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RowAlternateColorOptions](aws-properties-quicksight-template-rowalternatecoloroptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowFieldNamesStyle`
-
+`RowFieldNamesStyle`  <a name="cfn-quicksight-template-pivottableoptions-rowfieldnamesstyle"></a>
 The table cell style of row field names.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowHeaderStyle`
-
+`RowHeaderStyle`  <a name="cfn-quicksight-template-pivottableoptions-rowheaderstyle"></a>
 The table cell style of the row headers.
+*Required*: No
+*Type*: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TableCellStyle](aws-properties-quicksight-template-tablecellstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowsLabelOptions`
-
+`RowsLabelOptions`  <a name="cfn-quicksight-template-pivottableoptions-rowslabeloptions"></a>
 The options for the label that is located above the row headers. This option is only applicable when `RowsLayout` is set to `HIERARCHY`.
+*Required*: No
+*Type*: [PivotTableRowsLabelOptions](aws-properties-quicksight-template-pivottablerowslabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTableRowsLabelOptions](aws-properties-quicksight-template-pivottablerowslabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowsLayout`
-
+`RowsLayout`  <a name="cfn-quicksight-template-pivottableoptions-rowslayout"></a>
 The layout for the row dimension headers of a pivot table. Choose one of the following options.
++ `TABULAR`: (Default) Each row field is displayed in a separate column.
++ `HIERARCHY`: All row fields are displayed in a single column. Indentation is used to differentiate row headers of different fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `TABULAR | HIERARCHY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `TABULAR`: (Default) Each row field is displayed in a separate column.
-
-- `HIERARCHY`: All row fields are displayed in a single column. Indentation is used to differentiate row headers of different fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TABULAR | HIERARCHY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingleMetricVisibility`
-
+`SingleMetricVisibility`  <a name="cfn-quicksight-template-pivottableoptions-singlemetricvisibility"></a>
 The visibility of the single metric options.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToggleButtonsVisibility`
-
+`ToggleButtonsVisibility`  <a name="cfn-quicksight-template-pivottableoptions-togglebuttonsvisibility"></a>
 Determines the visibility of the pivot table.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableFieldWells
-
-PivotTablePaginatedReportOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

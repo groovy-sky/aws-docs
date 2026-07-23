@@ -2,209 +2,155 @@
 title: "AWS::EC2::TransitGatewayMeteringPolicyEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayMeteringPolicyEntry
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry"></a>
 
 Creates an entry in a transit gateway metering policy to define traffic measurement rules.
 
 ## Syntax
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TransitGatewayMeteringPolicyEntry",
   "Properties" : {
-      "DestinationCidrBlock" : String,
-      "DestinationPortRange" : String,
-      "DestinationTransitGatewayAttachmentId" : String,
-      "DestinationTransitGatewayAttachmentType" : String,
-      "MeteredAccount" : String,
-      "PolicyRuleNumber" : Integer,
-      "Protocol" : String,
-      "SourceCidrBlock" : String,
-      "SourcePortRange" : String,
-      "SourceTransitGatewayAttachmentId" : String,
-      "SourceTransitGatewayAttachmentType" : String,
-      "TransitGatewayMeteringPolicyId" : String
+      "[DestinationCidrBlock](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationcidrblock)" : {{String}},
+      "[DestinationPortRange](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationportrange)" : {{String}},
+      "[DestinationTransitGatewayAttachmentId](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationtransitgatewayattachmentid)" : {{String}},
+      "[DestinationTransitGatewayAttachmentType](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationtransitgatewayattachmenttype)" : {{String}},
+      "[MeteredAccount](#cfn-ec2-transitgatewaymeteringpolicyentry-meteredaccount)" : {{String}},
+      "[PolicyRuleNumber](#cfn-ec2-transitgatewaymeteringpolicyentry-policyrulenumber)" : {{Integer}},
+      "[Protocol](#cfn-ec2-transitgatewaymeteringpolicyentry-protocol)" : {{String}},
+      "[SourceCidrBlock](#cfn-ec2-transitgatewaymeteringpolicyentry-sourcecidrblock)" : {{String}},
+      "[SourcePortRange](#cfn-ec2-transitgatewaymeteringpolicyentry-sourceportrange)" : {{String}},
+      "[SourceTransitGatewayAttachmentId](#cfn-ec2-transitgatewaymeteringpolicyentry-sourcetransitgatewayattachmentid)" : {{String}},
+      "[SourceTransitGatewayAttachmentType](#cfn-ec2-transitgatewaymeteringpolicyentry-sourcetransitgatewayattachmenttype)" : {{String}},
+      "[TransitGatewayMeteringPolicyId](#cfn-ec2-transitgatewaymeteringpolicyentry-transitgatewaymeteringpolicyid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TransitGatewayMeteringPolicyEntry
 Properties:
-  DestinationCidrBlock: String
-  DestinationPortRange: String
-  DestinationTransitGatewayAttachmentId: String
-  DestinationTransitGatewayAttachmentType: String
-  MeteredAccount: String
-  PolicyRuleNumber: Integer
-  Protocol: String
-  SourceCidrBlock: String
-  SourcePortRange: String
-  SourceTransitGatewayAttachmentId: String
-  SourceTransitGatewayAttachmentType: String
-  TransitGatewayMeteringPolicyId: String
-
+  [DestinationCidrBlock](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationcidrblock): {{String}}
+  [DestinationPortRange](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationportrange): {{String}}
+  [DestinationTransitGatewayAttachmentId](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationtransitgatewayattachmentid): {{String}}
+  [DestinationTransitGatewayAttachmentType](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationtransitgatewayattachmenttype): {{String}}
+  [MeteredAccount](#cfn-ec2-transitgatewaymeteringpolicyentry-meteredaccount): {{String}}
+  [PolicyRuleNumber](#cfn-ec2-transitgatewaymeteringpolicyentry-policyrulenumber): {{Integer}}
+  [Protocol](#cfn-ec2-transitgatewaymeteringpolicyentry-protocol): {{String}}
+  [SourceCidrBlock](#cfn-ec2-transitgatewaymeteringpolicyentry-sourcecidrblock): {{String}}
+  [SourcePortRange](#cfn-ec2-transitgatewaymeteringpolicyentry-sourceportrange): {{String}}
+  [SourceTransitGatewayAttachmentId](#cfn-ec2-transitgatewaymeteringpolicyentry-sourcetransitgatewayattachmentid): {{String}}
+  [SourceTransitGatewayAttachmentType](#cfn-ec2-transitgatewaymeteringpolicyentry-sourcetransitgatewayattachmenttype): {{String}}
+  [TransitGatewayMeteringPolicyId](#cfn-ec2-transitgatewaymeteringpolicyentry-transitgatewaymeteringpolicyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-properties"></a>
 
-`DestinationCidrBlock`
-
+`DestinationCidrBlock`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-destinationcidrblock"></a>
 Describes an IPv4 CIDR block.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationPortRange`
-
+`DestinationPortRange`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-destinationportrange"></a>
 Describes a range of ports.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationTransitGatewayAttachmentId`
-
+`DestinationTransitGatewayAttachmentId`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-destinationtransitgatewayattachmentid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationTransitGatewayAttachmentType`
-
+`DestinationTransitGatewayAttachmentType`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-destinationtransitgatewayattachmenttype"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `vpc | vpn | direct-connect-gateway | peering | network-function | vpn-concentrator | client-vpn`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `vpc | vpn | direct-connect-gateway | peering | network-function | vpn-concentrator | client-vpn`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MeteredAccount`
-
+`MeteredAccount`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-meteredaccount"></a>
 The AWS account ID to which the metered traffic is attributed.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `source-attachment-owner | destination-attachment-owner | transit-gateway-owner`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `source-attachment-owner | destination-attachment-owner | transit-gateway-owner`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PolicyRuleNumber`
-
+`PolicyRuleNumber`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-policyrulenumber"></a>
 The rule number of the metering policy entry.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-protocol"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceCidrBlock`
-
+`SourceCidrBlock`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-sourcecidrblock"></a>
 Describes an IPv4 CIDR block.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourcePortRange`
-
+`SourcePortRange`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-sourceportrange"></a>
 Describes a range of ports.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceTransitGatewayAttachmentId`
-
+`SourceTransitGatewayAttachmentId`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-sourcetransitgatewayattachmentid"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceTransitGatewayAttachmentType`
-
+`SourceTransitGatewayAttachmentType`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-sourcetransitgatewayattachmenttype"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `vpc | vpn | direct-connect-gateway | peering | network-function | vpn-concentrator | client-vpn`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `vpc | vpn | direct-connect-gateway | peering | network-function | vpn-concentrator | client-vpn`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitGatewayMeteringPolicyId`
-
+`TransitGatewayMeteringPolicyId`  <a name="cfn-ec2-transitgatewaymeteringpolicyentry-transitgatewaymeteringpolicyid"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-return-values-fn--getatt"></a>
 
-`State`
+####
+<a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-return-values-fn--getatt-fn--getatt"></a>
 
+`State`  <a name="State-fn::getatt"></a>
 The state of the metering policy entry.
 
-`UpdateEffectiveAt`
-
+`UpdateEffectiveAt`  <a name="UpdateEffectiveAt-fn::getatt"></a>
 The date and time when the metering policy entry update becomes effective.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::TransitGatewayMulticastDomain
 
 All content copied from https://docs.aws.amazon.com/.

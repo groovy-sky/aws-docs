@@ -2,80 +2,57 @@
 title: "AWS::Batch::JobDefinition MountPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition MountPoint
+<a name="aws-properties-batch-jobdefinition-mountpoint"></a>
 
-Details for a Docker volume mount point that's used in a job's container properties. This
-parameter maps to `Volumes` in the [Create a\
-container](https://docs.docker.com/engine/api/v1.43) section of the _Docker Remote API_ and the
-`--volume` option to docker run.
+Details for a Docker volume mount point that's used in a job's container properties. This parameter maps to `Volumes` in the [Create a container](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerCreate) section of the *Docker Remote API* and the `--volume` option to docker run.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-mountpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-mountpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerPath" : String,
-  "ReadOnly" : Boolean,
-  "SourceVolume" : String
+  "[ContainerPath](#cfn-batch-jobdefinition-mountpoint-containerpath)" : {{String}},
+  "[ReadOnly](#cfn-batch-jobdefinition-mountpoint-readonly)" : {{Boolean}},
+  "[SourceVolume](#cfn-batch-jobdefinition-mountpoint-sourcevolume)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-mountpoint-syntax.yaml"></a>
 
-```yaml
-
-  ContainerPath: String
-  ReadOnly: Boolean
-  SourceVolume: String
-
+```
+  [ContainerPath](#cfn-batch-jobdefinition-mountpoint-containerpath): {{String}}
+  [ReadOnly](#cfn-batch-jobdefinition-mountpoint-readonly): {{Boolean}}
+  [SourceVolume](#cfn-batch-jobdefinition-mountpoint-sourcevolume): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-mountpoint-properties"></a>
 
-`ContainerPath`
-
+`ContainerPath`  <a name="cfn-batch-jobdefinition-mountpoint-containerpath"></a>
 The path on the container where the host volume is mounted.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ReadOnly`  <a name="cfn-batch-jobdefinition-mountpoint-readonly"></a>
+If this value is `true`, the container has read-only access to the volume. Otherwise, the container can write to the volume. The default value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReadOnly`
-
-If this value is `true`, the container has read-only access to the volume.
-Otherwise, the container can write to the volume. The default value is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceVolume`
-
+`SourceVolume`  <a name="cfn-batch-jobdefinition-mountpoint-sourcevolume"></a>
 The name of the volume to mount.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogConfiguration
-
-MultiNodeContainerProperties
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

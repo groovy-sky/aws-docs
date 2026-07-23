@@ -2,89 +2,63 @@
 title: "AWS::Transfer::WebApp WebAppCustomization"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::WebApp WebAppCustomization
+<a name="aws-properties-transfer-webapp-webappcustomization"></a>
 
-A structure that contains the customization fields for the web app. You can provide a
-title, logo, and icon to customize the appearance of your web app.
+A structure that contains the customization fields for the web app. You can provide a title, logo, and icon to customize the appearance of your web app.
 
 ## Syntax
+<a name="aws-properties-transfer-webapp-webappcustomization-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-webapp-webappcustomization-syntax.json"></a>
 
-```json
-
+```
 {
-  "FaviconFile" : String,
-  "LogoFile" : String,
-  "Title" : String
+  "[FaviconFile](#cfn-transfer-webapp-webappcustomization-faviconfile)" : {{String}},
+  "[LogoFile](#cfn-transfer-webapp-webappcustomization-logofile)" : {{String}},
+  "[Title](#cfn-transfer-webapp-webappcustomization-title)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-webapp-webappcustomization-syntax.yaml"></a>
 
-```yaml
-
-  FaviconFile: String
-  LogoFile: String
-  Title: String
-
+```
+  [FaviconFile](#cfn-transfer-webapp-webappcustomization-faviconfile): {{String}}
+  [LogoFile](#cfn-transfer-webapp-webappcustomization-logofile): {{String}}
+  [Title](#cfn-transfer-webapp-webappcustomization-title): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-webapp-webappcustomization-properties"></a>
 
-`FaviconFile`
-
+`FaviconFile`  <a name="cfn-transfer-webapp-webappcustomization-faviconfile"></a>
 Returns an icon file data string (in base64 encoding).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `20960`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `20960`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogoFile`
-
+`LogoFile`  <a name="cfn-transfer-webapp-webappcustomization-logofile"></a>
 Returns a logo file data string (in base64 encoding).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `51200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `51200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-transfer-webapp-webappcustomization-title"></a>
 Returns the page title that you defined for your web app.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Vpc
-
-WebAppUnits
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

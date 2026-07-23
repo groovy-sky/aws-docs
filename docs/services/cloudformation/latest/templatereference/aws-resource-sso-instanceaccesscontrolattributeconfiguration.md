@@ -2,108 +2,84 @@
 title: "AWS::SSO::InstanceAccessControlAttributeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSO::InstanceAccessControlAttributeConfiguration
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration"></a>
 
-Enables the attribute-based access control (ABAC) feature for the specified IAM Identity Center instance. You can also specify new attributes to add to your ABAC
-configuration during the enabling process. For more information about ABAC, see [Attribute-Based\
-Access Control](../../../singlesignon/latest/userguide/abac.md) in the _IAM Identity Center User Guide_.
+Enables the attribute-based access control (ABAC) feature for the specified IAM Identity Center instance. You can also specify new attributes to add to your ABAC configuration during the enabling process. For more information about ABAC, see [Attribute-Based Access Control](https://docs.aws.amazon.com//singlesignon/latest/userguide/abac.html) in the *IAM Identity Center User Guide*.
 
-###### Note
-
-The `InstanceAccessControlAttributeConfiguration` property has been
-deprecated but is still supported for backwards compatibility purposes. We recommend
-that you use the `AccessControlAttributes` property instead.
+**Note**
+The `InstanceAccessControlAttributeConfiguration` property has been deprecated but is still supported for backwards compatibility purposes. We recommend that you use the `AccessControlAttributes` property instead.
 
 ## Syntax
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSO::InstanceAccessControlAttributeConfiguration",
   "Properties" : {
-      "AccessControlAttributes" : [ AccessControlAttribute, ... ],
-      "InstanceArn" : String
+      "[AccessControlAttributes](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattributes)" : {{[ AccessControlAttribute, ... ]}},
+      "[InstanceArn](#cfn-sso-instanceaccesscontrolattributeconfiguration-instancearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSO::InstanceAccessControlAttributeConfiguration
 Properties:
-  AccessControlAttributes:
-    - AccessControlAttribute
-  InstanceArn: String
-
+  [AccessControlAttributes](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattributes): {{
+    - AccessControlAttribute}}
+  [InstanceArn](#cfn-sso-instanceaccesscontrolattributeconfiguration-instancearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-properties"></a>
 
-`AccessControlAttributes`
+`AccessControlAttributes`  <a name="cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattributes"></a>
+Lists the attributes that are configured for ABAC in the specified IAM Identity Center instance.
+*Required*: No
+*Type*: Array of [AccessControlAttribute](aws-properties-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Lists the attributes that are configured for ABAC in the specified IAM Identity Center
-instance.
-
-_Required_: No
-
-_Type_: Array of [AccessControlAttribute](aws-properties-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
-The ARN of the IAM Identity Center instance under which the operation will be
-executed.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws(-[a-z]{1,5}){0,3}:sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`InstanceArn`  <a name="cfn-sso-instanceaccesscontrolattributeconfiguration-instancearn"></a>
+The ARN of the IAM Identity Center instance under which the operation will be executed.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws(-[a-z]{1,5}){0,3}:sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-return-values-ref"></a>
 
-Specifies the IAM Identity Center identity store attributes to add to your ABAC
-configuration. When using an external identity provider as an identity source, you can pass
-attributes through the SAML assertion. Doing so provides an alternative to configuring
-attributes from the IAM Identity Center identity store. If a SAML assertion passes any of
-these attributes, IAM Identity Center will replace the attribute value with the value from
-the IAM Identity Center identity store.
+Specifies the IAM Identity Center identity store attributes to add to your ABAC configuration. When using an external identity provider as an identity source, you can pass attributes through the SAML assertion. Doing so provides an alternative to configuring attributes from the IAM Identity Center identity store. If a SAML assertion passes any of these attributes, IAM Identity Center will replace the attribute value with the value from the IAM Identity Center identity store.
 
 ## Examples
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration--examples"></a>
 
 ### Enabling and configuring attributes used for access control in IAM Identity Center
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration--examples--Enabling_and_configuring_attributes_used_for_access_control_in"></a>
 
-The following example enables ABAC in IAM Identity Center and creates a new
-attribute key `CostCenter` that is mapped to the Value
-`“${path:enterprise.costCenter}”` which is coming from your identity
-source.
+The following example enables ABAC in IAM Identity Center and creates a new attribute key `CostCenter` that is mapped to the Value `“${path:enterprise.costCenter}”` which is coming from your identity source.
 
 #### JSON
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration--examples--Enabling_and_configuring_attributes_used_for_access_control_in--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "ABAC": {
@@ -127,9 +103,9 @@ source.
 ```
 
 #### YAML
+<a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration--examples--Enabling_and_configuring_attributes_used_for_access_control_in--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ABAC:
     Type: 'AWS::SSO::InstanceAccessControlAttributeConfiguration'
@@ -141,11 +117,5 @@ Resources:
             Source:
               - '${path:enterprise.costCenter}'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AccessControlAttribute
 
 All content copied from https://docs.aws.amazon.com/.

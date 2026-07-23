@@ -2,100 +2,71 @@
 title: "AWS::Glue::IntegrationResourceProperty TargetProcessingProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::IntegrationResourceProperty TargetProcessingProperties
+<a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties"></a>
 
 The structure used to define the resource properties associated with the integration target.
 
 ## Syntax
+<a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectionName" : String,
-  "EventBusArn" : String,
-  "KmsArn" : String,
-  "RoleArn" : String
+  "[ConnectionName](#cfn-glue-integrationresourceproperty-targetprocessingproperties-connectionname)" : {{String}},
+  "[EventBusArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-eventbusarn)" : {{String}},
+  "[KmsArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-kmsarn)" : {{String}},
+  "[RoleArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties-syntax.yaml"></a>
 
-```yaml
-
-  ConnectionName: String
-  EventBusArn: String
-  KmsArn: String
-  RoleArn: String
-
+```
+  [ConnectionName](#cfn-glue-integrationresourceproperty-targetprocessingproperties-connectionname): {{String}}
+  [EventBusArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-eventbusarn): {{String}}
+  [KmsArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-kmsarn): {{String}}
+  [RoleArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-glue-integrationresourceproperty-targetprocessingproperties-connectionname"></a>
 The AWS Glue network connection to configure the AWS Glue job running in the customer VPC.
+*Required*: No
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBusArn`
-
+`EventBusArn`  <a name="cfn-glue-integrationresourceproperty-targetprocessingproperties-eventbusarn"></a>
 The ARN of an Eventbridge event bus to receive the integration status notification.
+*Required*: No
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsArn`
-
+`KmsArn`  <a name="cfn-glue-integrationresourceproperty-targetprocessingproperties-kmsarn"></a>
 The ARN of the KMS key used for encryption.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws:kms:.*:[0-9]+:.*`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws:kms:.*:[0-9]+:.*`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-glue-integrationresourceproperty-targetprocessingproperties-rolearn"></a>
 The IAM role to access the AWS Glue database.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws:iam:.*:[0-9]+:.*`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Glue::Job
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws:iam:.*:[0-9]+:.*`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

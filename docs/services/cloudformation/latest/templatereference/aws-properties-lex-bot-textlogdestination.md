@@ -2,55 +2,42 @@
 title: "AWS::Lex::Bot TextLogDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot TextLogDestination
+<a name="aws-properties-lex-bot-textlogdestination"></a>
 
-Defines the Amazon CloudWatch Logs destination log group for
-conversation text logs.
+Defines the Amazon CloudWatch Logs destination log group for conversation text logs.
 
 ## Syntax
+<a name="aws-properties-lex-bot-textlogdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-textlogdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatch" : CloudWatchLogGroupLogDestination
+  "[CloudWatch](#cfn-lex-bot-textlogdestination-cloudwatch)" : {{CloudWatchLogGroupLogDestination}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-textlogdestination-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatch:
-    CloudWatchLogGroupLogDestination
-
+```
+  [CloudWatch](#cfn-lex-bot-textlogdestination-cloudwatch): {{
+    CloudWatchLogGroupLogDestination}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-textlogdestination-properties"></a>
 
-`CloudWatch`
-
-Defines the Amazon CloudWatch Logs log group where text and metadata logs are
-delivered.
-
-_Required_: Yes
-
-_Type_: [CloudWatchLogGroupLogDestination](aws-properties-lex-bot-cloudwatchloggrouplogdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TextInputSpecification
-
-TextLogSetting
+`CloudWatch`  <a name="cfn-lex-bot-textlogdestination-cloudwatch"></a>
+Defines the Amazon CloudWatch Logs log group where text and metadata logs are delivered.
+*Required*: Yes
+*Type*: [CloudWatchLogGroupLogDestination](aws-properties-lex-bot-cloudwatchloggrouplogdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

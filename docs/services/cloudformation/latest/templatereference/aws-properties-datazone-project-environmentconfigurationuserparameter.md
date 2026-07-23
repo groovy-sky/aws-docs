@@ -2,85 +2,62 @@
 title: "AWS::DataZone::Project EnvironmentConfigurationUserParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Project EnvironmentConfigurationUserParameter
+<a name="aws-properties-datazone-project-environmentconfigurationuserparameter"></a>
 
 The environment configuration user parameters.
 
 ## Syntax
+<a name="aws-properties-datazone-project-environmentconfigurationuserparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-project-environmentconfigurationuserparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnvironmentConfigurationName" : String,
-  "EnvironmentId" : String,
-  "EnvironmentParameters" : [ EnvironmentParameter, ... ]
+  "[EnvironmentConfigurationName](#cfn-datazone-project-environmentconfigurationuserparameter-environmentconfigurationname)" : {{String}},
+  "[EnvironmentId](#cfn-datazone-project-environmentconfigurationuserparameter-environmentid)" : {{String}},
+  "[EnvironmentParameters](#cfn-datazone-project-environmentconfigurationuserparameter-environmentparameters)" : {{[ EnvironmentParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-project-environmentconfigurationuserparameter-syntax.yaml"></a>
 
-```yaml
-
-  EnvironmentConfigurationName: String
-  EnvironmentId: String
-  EnvironmentParameters:
-    - EnvironmentParameter
-
+```
+  [EnvironmentConfigurationName](#cfn-datazone-project-environmentconfigurationuserparameter-environmentconfigurationname): {{String}}
+  [EnvironmentId](#cfn-datazone-project-environmentconfigurationuserparameter-environmentid): {{String}}
+  [EnvironmentParameters](#cfn-datazone-project-environmentconfigurationuserparameter-environmentparameters): {{
+    - EnvironmentParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-project-environmentconfigurationuserparameter-properties"></a>
 
-`EnvironmentConfigurationName`
-
+`EnvironmentConfigurationName`  <a name="cfn-datazone-project-environmentconfigurationuserparameter-environmentconfigurationname"></a>
 The environment configuration name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\w -]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\w -]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentId`
-
+`EnvironmentId`  <a name="cfn-datazone-project-environmentconfigurationuserparameter-environmentid"></a>
 The ID of the environment.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,36}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentParameters`
-
+`EnvironmentParameters`  <a name="cfn-datazone-project-environmentconfigurationuserparameter-environmentparameters"></a>
 The environment parameters.
-
-_Required_: No
-
-_Type_: Array of [EnvironmentParameter](aws-properties-datazone-project-environmentparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::Project
-
-EnvironmentParameter
+*Required*: No
+*Type*: Array of [EnvironmentParameter](aws-properties-datazone-project-environmentparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

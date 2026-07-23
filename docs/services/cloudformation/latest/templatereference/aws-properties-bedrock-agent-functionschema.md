@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::Agent FunctionSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent FunctionSchema
+<a name="aws-properties-bedrock-agent-functionschema"></a>
 
-Contains details about the function schema for the action group or the JSON or YAML-formatted payload defining the schema.
+ Contains details about the function schema for the action group or the JSON or YAML-formatted payload defining the schema.
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-functionschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-functionschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "Functions" : [ Function, ... ]
+  "[Functions](#cfn-bedrock-agent-functionschema-functions)" : {{[ Function, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-functionschema-syntax.yaml"></a>
 
-```yaml
-
-  Functions:
-    - Function
-
+```
+  [Functions](#cfn-bedrock-agent-functionschema-functions): {{
+    - Function}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-functionschema-properties"></a>
 
-`Functions`
-
-A list of functions that each define an action in the action group.
-
-_Required_: Yes
-
-_Type_: Array of [Function](aws-properties-bedrock-agent-function.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Function
-
-GuardrailConfiguration
+`Functions`  <a name="cfn-bedrock-agent-functionschema-functions"></a>
+ A list of functions that each define an action in the action group.
+*Required*: Yes
+*Type*: Array of [Function](aws-properties-bedrock-agent-function.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

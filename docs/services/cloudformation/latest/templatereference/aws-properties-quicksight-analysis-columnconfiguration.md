@@ -2,93 +2,69 @@
 title: "AWS::QuickSight::Analysis ColumnConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ColumnConfiguration
+<a name="aws-properties-quicksight-analysis-columnconfiguration"></a>
 
 The general configuration of a column.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-columnconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-columnconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColorsConfiguration" : ColorsConfiguration,
-  "Column" : ColumnIdentifier,
-  "FormatConfiguration" : FormatConfiguration,
-  "Role" : String
+  "[ColorsConfiguration](#cfn-quicksight-analysis-columnconfiguration-colorsconfiguration)" : {{ColorsConfiguration}},
+  "[Column](#cfn-quicksight-analysis-columnconfiguration-column)" : {{ColumnIdentifier}},
+  "[FormatConfiguration](#cfn-quicksight-analysis-columnconfiguration-formatconfiguration)" : {{FormatConfiguration}},
+  "[Role](#cfn-quicksight-analysis-columnconfiguration-role)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-columnconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ColorsConfiguration:
-    ColorsConfiguration
-  Column:
-    ColumnIdentifier
-  FormatConfiguration:
-    FormatConfiguration
-  Role: String
-
+```
+  [ColorsConfiguration](#cfn-quicksight-analysis-columnconfiguration-colorsconfiguration): {{
+    ColorsConfiguration}}
+  [Column](#cfn-quicksight-analysis-columnconfiguration-column): {{
+    ColumnIdentifier}}
+  [FormatConfiguration](#cfn-quicksight-analysis-columnconfiguration-formatconfiguration): {{
+    FormatConfiguration}}
+  [Role](#cfn-quicksight-analysis-columnconfiguration-role): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-columnconfiguration-properties"></a>
 
-`ColorsConfiguration`
-
+`ColorsConfiguration`  <a name="cfn-quicksight-analysis-columnconfiguration-colorsconfiguration"></a>
 The color configurations of the column.
+*Required*: No
+*Type*: [ColorsConfiguration](aws-properties-quicksight-analysis-colorsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColorsConfiguration](aws-properties-quicksight-analysis-colorsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-analysis-columnconfiguration-column"></a>
 The column.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FormatConfiguration`
-
+`FormatConfiguration`  <a name="cfn-quicksight-analysis-columnconfiguration-formatconfiguration"></a>
 The format configuration of a column.
+*Required*: No
+*Type*: [FormatConfiguration](aws-properties-quicksight-analysis-formatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FormatConfiguration](aws-properties-quicksight-analysis-formatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Role`
-
+`Role`  <a name="cfn-quicksight-analysis-columnconfiguration-role"></a>
 The role of the column.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DIMENSION | MEASURE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColorsConfiguration
-
-ColumnHierarchy
+*Required*: No
+*Type*: String
+*Allowed values*: `DIMENSION | MEASURE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

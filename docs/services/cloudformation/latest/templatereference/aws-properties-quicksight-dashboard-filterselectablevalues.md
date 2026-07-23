@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Dashboard FilterSelectableValues"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FilterSelectableValues
+<a name="aws-properties-quicksight-dashboard-filterselectablevalues"></a>
 
 A list of selectable values that are used in a control.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-filterselectablevalues-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-filterselectablevalues-syntax.json"></a>
 
-```json
-
+```
 {
-  "Values" : [ String, ... ]
+  "[Values](#cfn-quicksight-dashboard-filterselectablevalues-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-filterselectablevalues-syntax.yaml"></a>
 
-```yaml
-
-  Values:
-    - String
-
+```
+  [Values](#cfn-quicksight-dashboard-filterselectablevalues-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-filterselectablevalues-properties"></a>
 
-`Values`
-
+`Values`  <a name="cfn-quicksight-dashboard-filterselectablevalues-values"></a>
 The values that are used in the `FilterSelectableValues`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterScopeConfiguration
-
-FilterSliderControl
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,159 +2,114 @@
 title: "AWS::ElasticLoadBalancingV2::Listener RedirectConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::Listener RedirectConfig
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig"></a>
 
 Information about a redirect action.
 
-A URI consists of the following components: protocol://hostname:port/path?query. You must
-modify at least one of the following components to avoid a redirect loop: protocol, hostname,
-port, or path. Any components that you do not modify retain their original values.
+A URI consists of the following components: protocol://hostname:port/path?query. You must modify at least one of the following components to avoid a redirect loop: protocol, hostname, port, or path. Any components that you do not modify retain their original values.
 
 You can reuse URI components using the following reserved keywords:
++ \#{protocol}
++ \#{host}
++ \#{port}
++ \#{path} (the leading "/" is removed)
++ \#{query}
 
-- #{protocol}
-
-- #{host}
-
-- #{port}
-
-- #{path} (the leading "/" is removed)
-
-- #{query}
-
-For example, you can change the path to "/new/#{path}", the hostname to "example.#{host}",
-or the query to "#{query}&value=xyz".
+For example, you can change the path to "/new/\#{path}", the hostname to "example.\#{host}", or the query to "\#{query}&value=xyz".
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Host" : String,
-  "Path" : String,
-  "Port" : String,
-  "Protocol" : String,
-  "Query" : String,
-  "StatusCode" : String
+  "[Host](#cfn-elasticloadbalancingv2-listener-redirectconfig-host)" : {{String}},
+  "[Path](#cfn-elasticloadbalancingv2-listener-redirectconfig-path)" : {{String}},
+  "[Port](#cfn-elasticloadbalancingv2-listener-redirectconfig-port)" : {{String}},
+  "[Protocol](#cfn-elasticloadbalancingv2-listener-redirectconfig-protocol)" : {{String}},
+  "[Query](#cfn-elasticloadbalancingv2-listener-redirectconfig-query)" : {{String}},
+  "[StatusCode](#cfn-elasticloadbalancingv2-listener-redirectconfig-statuscode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig-syntax.yaml"></a>
 
-```yaml
-
-  Host: String
-  Path: String
-  Port: String
-  Protocol: String
-  Query: String
-  StatusCode: String
-
+```
+  [Host](#cfn-elasticloadbalancingv2-listener-redirectconfig-host): {{String}}
+  [Path](#cfn-elasticloadbalancingv2-listener-redirectconfig-path): {{String}}
+  [Port](#cfn-elasticloadbalancingv2-listener-redirectconfig-port): {{String}}
+  [Protocol](#cfn-elasticloadbalancingv2-listener-redirectconfig-protocol): {{String}}
+  [Query](#cfn-elasticloadbalancingv2-listener-redirectconfig-query): {{String}}
+  [StatusCode](#cfn-elasticloadbalancingv2-listener-redirectconfig-statuscode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig-properties"></a>
 
-`Host`
+`Host`  <a name="cfn-elasticloadbalancingv2-listener-redirectconfig-host"></a>
+The hostname. This component is not percent-encoded. The hostname can contain \#{host}.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The hostname. This component is not percent-encoded. The hostname can contain
-#{host}.
+`Path`  <a name="cfn-elasticloadbalancingv2-listener-redirectconfig-path"></a>
+The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain \#{host}, \#{path}, and \#{port}.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Port`  <a name="cfn-elasticloadbalancingv2-listener-redirectconfig-port"></a>
+The port. You can specify a value from 1 to 65535 or \#{port}.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Protocol`  <a name="cfn-elasticloadbalancingv2-listener-redirectconfig-protocol"></a>
+The protocol. You can specify HTTP, HTTPS, or \#{protocol}. You can redirect HTTP to HTTP, HTTP to HTTPS, and HTTPS to HTTPS. You can't redirect HTTPS to HTTP.
+*Required*: No
+*Type*: String
+*Pattern*: `^(HTTPS?|#\{protocol\})$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`Query`  <a name="cfn-elasticloadbalancingv2-listener-redirectconfig-query"></a>
+The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?", as it is automatically added. You can specify any of the reserved keywords.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Path`
-
-The absolute path, starting with the leading "/". This component is not percent-encoded.
-The path can contain #{host}, #{path}, and #{port}.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
-The port. You can specify a value from 1 to 65535 or #{port}.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The protocol. You can specify HTTP, HTTPS, or #{protocol}. You can redirect HTTP to HTTP,
-HTTP to HTTPS, and HTTPS to HTTPS. You can't redirect HTTPS to HTTP.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(HTTPS?|#\{protocol\})$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Query`
-
-The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include
-the leading "?", as it is automatically added. You can specify any of the reserved
-keywords.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatusCode`
-
-The HTTP redirect code. The redirect is either permanent (HTTP 301) or temporary (HTTP
-302).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HTTP_301 | HTTP_302`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`StatusCode`  <a name="cfn-elasticloadbalancingv2-listener-redirectconfig-statuscode"></a>
+The HTTP redirect code. The redirect is either permanent (HTTP 301) or temporary (HTTP 302).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HTTP_301 | HTTP_302`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig--examples"></a>
 
-The following example creates a listener with a default action that redirects HTTP
-requests on port 80 to HTTPS requests on port 443, retaining the original host name,
-path, and query string.
+The following example creates a listener with a default action that redirects HTTP requests on port 80 to HTTPS requests on port 443, retaining the original host name, path, and query string.
+
+###
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig--examples--"></a>
 
 #### YAML
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig--examples----yaml"></a>
 
-```yaml
-
+```
 myHTTPlistener:
   Type: "AWS::ElasticLoadBalancingV2::Listener"
   Properties:
@@ -173,9 +128,9 @@ myHTTPlistener:
 ```
 
 #### JSON
+<a name="aws-properties-elasticloadbalancingv2-listener-redirectconfig--examples----json"></a>
 
-```json
-
+```
 {
     "myHTTPlistener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -202,11 +157,5 @@ myHTTPlistener:
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MutualAuthentication
-
-TargetGroupStickinessConfig
 
 All content copied from https://docs.aws.amazon.com/.

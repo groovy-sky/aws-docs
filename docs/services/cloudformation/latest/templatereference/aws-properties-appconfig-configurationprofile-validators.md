@@ -2,76 +2,52 @@
 title: "AWS::AppConfig::ConfigurationProfile Validators"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppConfig::ConfigurationProfile Validators
+<a name="aws-properties-appconfig-configurationprofile-validators"></a>
 
-A validator provides a syntactic or semantic check to ensure the configuration that you
-want to deploy functions as intended. To validate your application configuration data, you
-provide a schema or an AWS Lambda function that runs against the configuration. The
-configuration deployment or update can only proceed when the configuration data is valid.
-For more information, see [About validators](../../../appconfig/latest/userguide/appconfig-creating-configuration-profile.md#appconfig-creating-configuration-and-profile-validators) in the _AWS AppConfig User Guide_.
+A validator provides a syntactic or semantic check to ensure the configuration that you want to deploy functions as intended. To validate your application configuration data, you provide a schema or an AWS Lambda function that runs against the configuration. The configuration deployment or update can only proceed when the configuration data is valid. For more information, see [About validators](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-profile.html#appconfig-creating-configuration-and-profile-validators) in the *AWS AppConfig User Guide*.
 
 ## Syntax
+<a name="aws-properties-appconfig-configurationprofile-validators-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appconfig-configurationprofile-validators-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "Type" : String
+  "[Content](#cfn-appconfig-configurationprofile-validators-content)" : {{String}},
+  "[Type](#cfn-appconfig-configurationprofile-validators-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appconfig-configurationprofile-validators-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  Type: String
-
+```
+  [Content](#cfn-appconfig-configurationprofile-validators-content): {{String}}
+  [Type](#cfn-appconfig-configurationprofile-validators-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appconfig-configurationprofile-validators-properties"></a>
 
-`Content`
+`Content`  <a name="cfn-appconfig-configurationprofile-validators-content"></a>
+Either the JSON Schema content or the Amazon Resource Name (ARN) of an Lambda function.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `32768`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Either the JSON Schema content or the Amazon Resource Name (ARN) of an Lambda
-function.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `32768`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-AWS AppConfig supports validators of type `JSON_SCHEMA` and
-`LAMBDA`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `JSON_SCHEMA | LAMBDA`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tags
-
-AWS::AppConfig::Deployment
+`Type`  <a name="cfn-appconfig-configurationprofile-validators-type"></a>
+AWS AppConfig supports validators of type `JSON_SCHEMA` and `LAMBDA`
+*Required*: No
+*Type*: String
+*Allowed values*: `JSON_SCHEMA | LAMBDA`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

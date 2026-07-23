@@ -2,82 +2,60 @@
 title: "AWS::IoT::AccountAuditConfiguration AuditNotificationTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::AccountAuditConfiguration AuditNotificationTarget
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget"></a>
 
 Information about the targets to which audit notifications are sent.
 
 ## Syntax
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "RoleArn" : String,
-  "TargetArn" : String
+  "[Enabled](#cfn-iot-accountauditconfiguration-auditnotificationtarget-enabled)" : {{Boolean}},
+  "[RoleArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-rolearn)" : {{String}},
+  "[TargetArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-targetarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  RoleArn: String
-  TargetArn: String
-
+```
+  [Enabled](#cfn-iot-accountauditconfiguration-auditnotificationtarget-enabled): {{Boolean}}
+  [RoleArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-rolearn): {{String}}
+  [TargetArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-targetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-iot-accountauditconfiguration-auditnotificationtarget-enabled"></a>
 True if notifications to the target are enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-accountauditconfiguration-auditnotificationtarget-rolearn"></a>
 The ARN of the role that grants permission to send notifications to the target.
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
+`TargetArn`  <a name="cfn-iot-accountauditconfiguration-auditnotificationtarget-targetarn"></a>
 The ARN of the target (SNS topic) to which audit notifications are sent.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuditCheckConfigurations
-
-AuditNotificationTargetConfigurations
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,49 @@
 title: "AWS::KafkaConnect::Connector CloudWatchLogsLogDelivery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector CloudWatchLogsLogDelivery
+<a name="aws-properties-kafkaconnect-connector-cloudwatchlogslogdelivery"></a>
 
 The settings for delivering connector logs to Amazon CloudWatch Logs.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-cloudwatchlogslogdelivery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-cloudwatchlogslogdelivery-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "LogGroup" : String
+  "[Enabled](#cfn-kafkaconnect-connector-cloudwatchlogslogdelivery-enabled)" : {{Boolean}},
+  "[LogGroup](#cfn-kafkaconnect-connector-cloudwatchlogslogdelivery-loggroup)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-cloudwatchlogslogdelivery-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  LogGroup: String
-
+```
+  [Enabled](#cfn-kafkaconnect-connector-cloudwatchlogslogdelivery-enabled): {{Boolean}}
+  [LogGroup](#cfn-kafkaconnect-connector-cloudwatchlogslogdelivery-loggroup): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-cloudwatchlogslogdelivery-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-kafkaconnect-connector-cloudwatchlogslogdelivery-enabled"></a>
 Whether log delivery to Amazon CloudWatch Logs is enabled.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogGroup`
-
+`LogGroup`  <a name="cfn-kafkaconnect-connector-cloudwatchlogslogdelivery-loggroup"></a>
 The name of the CloudWatch log group that is the destination for log delivery.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Capacity
-
-CustomPlugin
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

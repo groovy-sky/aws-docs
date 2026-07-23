@@ -2,82 +2,60 @@
 title: "AWS::Wisdom::AIAgent NoteTakingAIAgentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent NoteTakingAIAgentConfiguration
+<a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration"></a>
 
 The configuration for AI Agents of type `NOTE_TAKING`.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Locale" : String,
-  "NoteTakingAIGuardrailId" : String,
-  "NoteTakingAIPromptId" : String
+  "[Locale](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-locale)" : {{String}},
+  "[NoteTakingAIGuardrailId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaiguardrailid)" : {{String}},
+  "[NoteTakingAIPromptId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaipromptid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Locale: String
-  NoteTakingAIGuardrailId: String
-  NoteTakingAIPromptId: String
-
+```
+  [Locale](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-locale): {{String}}
+  [NoteTakingAIGuardrailId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaiguardrailid): {{String}}
+  [NoteTakingAIPromptId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaipromptid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration-properties"></a>
 
-`Locale`
-
+`Locale`  <a name="cfn-wisdom-aiagent-notetakingaiagentconfiguration-locale"></a>
 The locale setting for language-specific case summarization generation (for example, en\_US, es\_ES).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NoteTakingAIGuardrailId`
-
+`NoteTakingAIGuardrailId`  <a name="cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaiguardrailid"></a>
 The AI Guardrail identifier used by the Note Taking AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NoteTakingAIPromptId`
-
+`NoteTakingAIPromptId`  <a name="cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaipromptid"></a>
 The AI Prompt identifier used by the Note Taking AI Agent.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManualSearchAIAgentConfiguration
-
-OrchestrationAIAgentConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

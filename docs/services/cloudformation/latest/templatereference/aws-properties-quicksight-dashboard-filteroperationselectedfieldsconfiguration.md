@@ -2,94 +2,68 @@
 title: "AWS::QuickSight::Dashboard FilterOperationSelectedFieldsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FilterOperationSelectedFieldsConfiguration
+<a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration"></a>
 
-The configuration of selected fields in the `CustomActionFilterOperation`.
+The configuration of selected fields in the`CustomActionFilterOperation`.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SelectedColumns" : [ ColumnIdentifier, ... ],
-  "SelectedFieldOptions" : String,
-  "SelectedFields" : [ String, ... ]
+  "[SelectedColumns](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedcolumns)" : {{[ ColumnIdentifier, ... ]}},
+  "[SelectedFieldOptions](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfieldoptions)" : {{String}},
+  "[SelectedFields](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfields)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SelectedColumns:
-    - ColumnIdentifier
-  SelectedFieldOptions: String
-  SelectedFields:
-    - String
-
+```
+  [SelectedColumns](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedcolumns): {{
+    - ColumnIdentifier}}
+  [SelectedFieldOptions](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfieldoptions): {{String}}
+  [SelectedFields](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfields): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration-properties"></a>
 
-`SelectedColumns`
-
+`SelectedColumns`  <a name="cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedcolumns"></a>
 The selected columns of a dataset.
+*Required*: No
+*Type*: Array of [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedFieldOptions`
-
+`SelectedFieldOptions`  <a name="cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfieldoptions"></a>
 A structure that contains the options that choose which fields are filtered in the `CustomActionFilterOperation`.
-
 Valid values are defined as follows:
++ `ALL_FIELDS`: Applies the filter operation to all fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL_FIELDS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_FIELDS`: Applies the filter operation to all fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL_FIELDS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedFields`
-
+`SelectedFields`  <a name="cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfields"></a>
 Chooses the fields that are filtered in `CustomActionFilterOperation`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `512 | 20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterListControl
-
-FilterOperationTargetVisualsConfiguration
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `512 | 20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

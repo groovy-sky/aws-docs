@@ -2,121 +2,84 @@
 title: "AWS::QuickSight::Template FilterTextAreaControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FilterTextAreaControl
+<a name="aws-properties-quicksight-template-filtertextareacontrol"></a>
 
 A control to display a text box that is used to enter multiple entries.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-filtertextareacontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-filtertextareacontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "Delimiter" : String,
-  "DisplayOptions" : TextAreaControlDisplayOptions,
-  "FilterControlId" : String,
-  "SourceFilterId" : String,
-  "Title" : String
+  "[Delimiter](#cfn-quicksight-template-filtertextareacontrol-delimiter)" : {{String}},
+  "[DisplayOptions](#cfn-quicksight-template-filtertextareacontrol-displayoptions)" : {{TextAreaControlDisplayOptions}},
+  "[FilterControlId](#cfn-quicksight-template-filtertextareacontrol-filtercontrolid)" : {{String}},
+  "[SourceFilterId](#cfn-quicksight-template-filtertextareacontrol-sourcefilterid)" : {{String}},
+  "[Title](#cfn-quicksight-template-filtertextareacontrol-title)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-filtertextareacontrol-syntax.yaml"></a>
 
-```yaml
-
-  Delimiter: String
-  DisplayOptions:
-    TextAreaControlDisplayOptions
-  FilterControlId: String
-  SourceFilterId: String
-  Title: String
-
+```
+  [Delimiter](#cfn-quicksight-template-filtertextareacontrol-delimiter): {{String}}
+  [DisplayOptions](#cfn-quicksight-template-filtertextareacontrol-displayoptions): {{
+    TextAreaControlDisplayOptions}}
+  [FilterControlId](#cfn-quicksight-template-filtertextareacontrol-filtercontrolid): {{String}}
+  [SourceFilterId](#cfn-quicksight-template-filtertextareacontrol-sourcefilterid): {{String}}
+  [Title](#cfn-quicksight-template-filtertextareacontrol-title): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-filtertextareacontrol-properties"></a>
 
-`Delimiter`
-
+`Delimiter`  <a name="cfn-quicksight-template-filtertextareacontrol-delimiter"></a>
 The delimiter that is used to separate the lines in text.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-template-filtertextareacontrol-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [TextAreaControlDisplayOptions](aws-properties-quicksight-template-textareacontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TextAreaControlDisplayOptions](aws-properties-quicksight-template-textareacontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterControlId`
-
+`FilterControlId`  <a name="cfn-quicksight-template-filtertextareacontrol-filtercontrolid"></a>
 The ID of the `FilterTextAreaControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceFilterId`
-
+`SourceFilterId`  <a name="cfn-quicksight-template-filtertextareacontrol-sourcefilterid"></a>
 The source filter ID of the `FilterTextAreaControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-template-filtertextareacontrol-title"></a>
 The title of the `FilterTextAreaControl`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterSliderControl
-
-FilterTextFieldControl
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

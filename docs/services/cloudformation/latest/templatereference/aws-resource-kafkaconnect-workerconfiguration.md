@@ -2,114 +2,92 @@
 title: "AWS::KafkaConnect::WorkerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::WorkerConfiguration
+<a name="aws-resource-kafkaconnect-workerconfiguration"></a>
 
 Creates a worker configuration using the specified properties.
 
 ## Syntax
+<a name="aws-resource-kafkaconnect-workerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kafkaconnect-workerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::KafkaConnect::WorkerConfiguration",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "PropertiesFileContent" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-kafkaconnect-workerconfiguration-description)" : {{String}},
+      "[Name](#cfn-kafkaconnect-workerconfiguration-name)" : {{String}},
+      "[PropertiesFileContent](#cfn-kafkaconnect-workerconfiguration-propertiesfilecontent)" : {{String}},
+      "[Tags](#cfn-kafkaconnect-workerconfiguration-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kafkaconnect-workerconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::KafkaConnect::WorkerConfiguration
 Properties:
-  Description: String
-  Name: String
-  PropertiesFileContent: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-kafkaconnect-workerconfiguration-description): {{String}}
+  [Name](#cfn-kafkaconnect-workerconfiguration-name): {{String}}
+  [PropertiesFileContent](#cfn-kafkaconnect-workerconfiguration-propertiesfilecontent): {{String}}
+  [Tags](#cfn-kafkaconnect-workerconfiguration-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-kafkaconnect-workerconfiguration-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-kafkaconnect-workerconfiguration-description"></a>
 The description of a worker configuration.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-kafkaconnect-workerconfiguration-name"></a>
 The name of the worker configuration.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PropertiesFileContent`
-
+`PropertiesFileContent`  <a name="cfn-kafkaconnect-workerconfiguration-propertiesfilecontent"></a>
 Base64 encoded contents of the connect-distributed.properties file.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-kafkaconnect-workerconfiguration-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kafkaconnect-workerconfiguration-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kafkaconnect-workerconfiguration-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-kafkaconnect-workerconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-kafkaconnect-workerconfiguration-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-kafkaconnect-workerconfiguration-return-values-fn--getatt"></a>
 
-`Revision`
+####
+<a name="aws-resource-kafkaconnect-workerconfiguration-return-values-fn--getatt-fn--getatt"></a>
 
+`Revision`  <a name="Revision-fn::getatt"></a>
 The revision of the worker configuration.
 
-`WorkerConfigurationArn`
-
+`WorkerConfigurationArn`  <a name="WorkerConfigurationArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the worker configuration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

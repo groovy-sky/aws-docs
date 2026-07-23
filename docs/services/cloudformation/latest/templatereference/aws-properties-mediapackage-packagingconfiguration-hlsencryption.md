@@ -2,80 +2,59 @@
 title: "AWS::MediaPackage::PackagingConfiguration HlsEncryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration HlsEncryption
+<a name="aws-properties-mediapackage-packagingconfiguration-hlsencryption"></a>
 
 Holds encryption information so that access to the content can be controlled by a DRM solution.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packagingconfiguration-hlsencryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packagingconfiguration-hlsencryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConstantInitializationVector" : String,
-  "EncryptionMethod" : String,
-  "SpekeKeyProvider" : SpekeKeyProvider
+  "[ConstantInitializationVector](#cfn-mediapackage-packagingconfiguration-hlsencryption-constantinitializationvector)" : {{String}},
+  "[EncryptionMethod](#cfn-mediapackage-packagingconfiguration-hlsencryption-encryptionmethod)" : {{String}},
+  "[SpekeKeyProvider](#cfn-mediapackage-packagingconfiguration-hlsencryption-spekekeyprovider)" : {{SpekeKeyProvider}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packagingconfiguration-hlsencryption-syntax.yaml"></a>
 
-```yaml
-
-  ConstantInitializationVector: String
-  EncryptionMethod: String
-  SpekeKeyProvider:
-    SpekeKeyProvider
-
+```
+  [ConstantInitializationVector](#cfn-mediapackage-packagingconfiguration-hlsencryption-constantinitializationvector): {{String}}
+  [EncryptionMethod](#cfn-mediapackage-packagingconfiguration-hlsencryption-encryptionmethod): {{String}}
+  [SpekeKeyProvider](#cfn-mediapackage-packagingconfiguration-hlsencryption-spekekeyprovider): {{
+    SpekeKeyProvider}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packagingconfiguration-hlsencryption-properties"></a>
 
-`ConstantInitializationVector`
+`ConstantInitializationVector`  <a name="cfn-mediapackage-packagingconfiguration-hlsencryption-constantinitializationvector"></a>
+A 128-bit, 16-byte hex value represented by a 32-character string, used with the key for encrypting blocks. If you don't specify a constant initialization vector (IV), AWS Elemental MediaPackage periodically rotates the IV.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A 128-bit, 16-byte hex value represented by a 32-character string, used with the key for encrypting blocks. If you don't specify a constant initialization vector (IV),
-AWS Elemental MediaPackage periodically rotates the IV.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionMethod`
-
+`EncryptionMethod`  <a name="cfn-mediapackage-packagingconfiguration-hlsencryption-encryptionmethod"></a>
 HLS encryption type.
+*Required*: No
+*Type*: String
+*Allowed values*: `AES_128 | SAMPLE_AES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AES_128 | SAMPLE_AES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpekeKeyProvider`
-
+`SpekeKeyProvider`  <a name="cfn-mediapackage-packagingconfiguration-hlsencryption-spekekeyprovider"></a>
 Parameters for the SPEKE key provider.
-
-_Required_: Yes
-
-_Type_: [SpekeKeyProvider](aws-properties-mediapackage-packagingconfiguration-spekekeyprovider.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionContractConfiguration
-
-HlsManifest
+*Required*: Yes
+*Type*: [SpekeKeyProvider](aws-properties-mediapackage-packagingconfiguration-spekekeyprovider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

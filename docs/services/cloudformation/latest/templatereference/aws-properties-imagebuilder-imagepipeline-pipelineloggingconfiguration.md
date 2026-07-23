@@ -2,79 +2,55 @@
 title: "AWS::ImageBuilder::ImagePipeline PipelineLoggingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImagePipeline PipelineLoggingConfiguration
+<a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration"></a>
 
 The logging configuration that's defined for pipeline execution.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImageLogGroupName" : String,
-  "PipelineLogGroupName" : String
+  "[ImageLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-imageloggroupname)" : {{String}},
+  "[PipelineLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-pipelineloggroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ImageLogGroupName: String
-  PipelineLogGroupName: String
-
+```
+  [ImageLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-imageloggroupname): {{String}}
+  [PipelineLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-pipelineloggroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration-properties"></a>
 
-`ImageLogGroupName`
+`ImageLogGroupName`  <a name="cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-imageloggroupname"></a>
+Specifies the CloudWatch Logs log group name for image build logs. The log group name can contain alphanumeric characters, hyphens, underscores, forward slashes, and periods, up to 512 characters. Log group names not starting with `/aws/imagebuilder/` require an `executionRole` with CloudWatch Logs write permissions. If not specified, defaults to `/aws/imagebuilder/image-name`.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-_/\.]{1,512}$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The log group name that Image Builder uses for image creation. If not specified, the log group
-name defaults to `/aws/imagebuilder/image-name`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-_/\.]{1,512}$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PipelineLogGroupName`
-
-The log group name that Image Builder uses for the log output during creation of a new pipeline.
-If not specified, the pipeline log group name defaults to
-`/aws/imagebuilder/pipeline/pipeline-name`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-_/\.]{1,512}$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageTestsConfiguration
-
-Schedule
+`PipelineLogGroupName`  <a name="cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-pipelineloggroupname"></a>
+Specifies the CloudWatch Logs log group name for pipeline execution logs. The log group name can contain alphanumeric characters, hyphens, underscores, forward slashes, and periods, up to 512 characters. Log group names not starting with `/aws/imagebuilder/` require an `executionRole` with CloudWatch Logs write permissions. If not specified, defaults to `/aws/imagebuilder/pipeline/pipeline-name`.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-_/\.]{1,512}$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

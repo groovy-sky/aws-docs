@@ -2,79 +2,60 @@
 title: "AWS::CleanRooms::ConfiguredTable ConfiguredTableAnalysisRulePolicyV1"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable ConfiguredTableAnalysisRulePolicyV1
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1"></a>
 
 Controls on the query specifications that can be run on a configured table.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-syntax.json"></a>
 
-```json
-
+```
 {
-  "Aggregation" : AnalysisRuleAggregation,
-  "Custom" : AnalysisRuleCustom,
-  "List" : AnalysisRuleList
+  "[Aggregation](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-aggregation)" : {{AnalysisRuleAggregation}},
+  "[Custom](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-custom)" : {{AnalysisRuleCustom}},
+  "[List](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-list)" : {{AnalysisRuleList}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-syntax.yaml"></a>
 
-```yaml
-
-  Aggregation:
-    AnalysisRuleAggregation
-  Custom:
-    AnalysisRuleCustom
-  List:
-    AnalysisRuleList
-
+```
+  [Aggregation](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-aggregation): {{
+    AnalysisRuleAggregation}}
+  [Custom](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-custom): {{
+    AnalysisRuleCustom}}
+  [List](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-list): {{
+    AnalysisRuleList}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-properties"></a>
 
-`Aggregation`
-
+`Aggregation`  <a name="cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-aggregation"></a>
 Analysis rule type that enables only aggregation queries on a configured table.
+*Required*: No
+*Type*: [AnalysisRuleAggregation](aws-properties-cleanrooms-configuredtable-analysisruleaggregation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AnalysisRuleAggregation](aws-properties-cleanrooms-configuredtable-analysisruleaggregation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Custom`
-
+`Custom`  <a name="cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-custom"></a>
 Analysis rule type that enables custom SQL queries on a configured table.
+*Required*: No
+*Type*: [AnalysisRuleCustom](aws-properties-cleanrooms-configuredtable-analysisrulecustom.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AnalysisRuleCustom](aws-properties-cleanrooms-configuredtable-analysisrulecustom.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`List`
-
+`List`  <a name="cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1-list"></a>
 Analysis rule type that enables only list queries on a configured table.
-
-_Required_: No
-
-_Type_: [AnalysisRuleList](aws-properties-cleanrooms-configuredtable-analysisrulelist.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfiguredTableAnalysisRulePolicy
-
-DifferentialPrivacy
+*Required*: No
+*Type*: [AnalysisRuleList](aws-properties-cleanrooms-configuredtable-analysisrulelist.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

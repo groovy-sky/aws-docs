@@ -2,55 +2,42 @@
 title: "AWS::S3::Bucket NotificationFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket NotificationFilter
+<a name="aws-properties-s3-bucket-notificationfilter"></a>
 
-Specifies object key name filtering rules. For information about key name filtering, see [Configuring\
-event notifications using object key name filtering](../../../s3/latest/userguide/notification-how-to-filtering.md) in the
-_Amazon S3 User Guide_.
+Specifies object key name filtering rules. For information about key name filtering, see [Configuring event notifications using object key name filtering](https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-filtering.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-notificationfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-notificationfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Key" : S3KeyFilter
+  "[S3Key](#cfn-s3-bucket-notificationfilter-s3key)" : {{S3KeyFilter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-notificationfilter-syntax.yaml"></a>
 
-```yaml
-
-  S3Key:
-    S3KeyFilter
-
+```
+  [S3Key](#cfn-s3-bucket-notificationfilter-s3key): {{
+    S3KeyFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-notificationfilter-properties"></a>
 
-`S3Key`
-
+`S3Key`  <a name="cfn-s3-bucket-notificationfilter-s3key"></a>
 A container for object key name prefix and suffix filtering rules.
-
-_Required_: Yes
-
-_Type_: [S3KeyFilter](aws-properties-s3-bucket-s3keyfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotificationConfiguration
-
-ObjectLockConfiguration
+*Required*: Yes
+*Type*: [S3KeyFilter](aws-properties-s3-bucket-s3keyfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,49 @@
 title: "AWS::Connect::PredefinedAttribute AttributeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::PredefinedAttribute AttributeConfiguration
+<a name="aws-properties-connect-predefinedattribute-attributeconfiguration"></a>
 
-The `AttributeConfiguration` property type specifies Property description not available. for an [AWS::Connect::PredefinedAttribute](aws-resource-connect-predefinedattribute.md).
+<a name="aws-properties-connect-predefinedattribute-attributeconfiguration-description"></a>The `AttributeConfiguration` property type specifies Property description not available. for an [AWS::Connect::PredefinedAttribute](aws-resource-connect-predefinedattribute.md).
 
 ## Syntax
+<a name="aws-properties-connect-predefinedattribute-attributeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-predefinedattribute-attributeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableValueValidationOnAssociation" : Boolean,
-  "IsReadOnly" : Boolean
+  "[EnableValueValidationOnAssociation](#cfn-connect-predefinedattribute-attributeconfiguration-enablevaluevalidationonassociation)" : {{Boolean}},
+  "[IsReadOnly](#cfn-connect-predefinedattribute-attributeconfiguration-isreadonly)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-predefinedattribute-attributeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EnableValueValidationOnAssociation: Boolean
-  IsReadOnly: Boolean
-
+```
+  [EnableValueValidationOnAssociation](#cfn-connect-predefinedattribute-attributeconfiguration-enablevaluevalidationonassociation): {{Boolean}}
+  [IsReadOnly](#cfn-connect-predefinedattribute-attributeconfiguration-isreadonly): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-predefinedattribute-attributeconfiguration-properties"></a>
 
-`EnableValueValidationOnAssociation`
-
+`EnableValueValidationOnAssociation`  <a name="cfn-connect-predefinedattribute-attributeconfiguration-enablevaluevalidationonassociation"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsReadOnly`
-
+`IsReadOnly`  <a name="cfn-connect-predefinedattribute-attributeconfiguration-isreadonly"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::PredefinedAttribute
-
-Values
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,80 +2,59 @@
 title: "AWS::Bedrock::KnowledgeBase S3VectorsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase S3VectorsConfiguration
+<a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration"></a>
 
 Contains the storage configuration of the knowledge base for S3 vectors.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IndexArn" : String,
-  "IndexName" : String,
-  "VectorBucketArn" : String
+  "[IndexArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexarn)" : {{String}},
+  "[IndexName](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexname)" : {{String}},
+  "[VectorBucketArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-vectorbucketarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IndexArn: String
-  IndexName: String
-  VectorBucketArn: String
-
+```
+  [IndexArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexarn): {{String}}
+  [IndexName](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexname): {{String}}
+  [VectorBucketArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-vectorbucketarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration-properties"></a>
 
-`IndexArn`
-
+`IndexArn`  <a name="cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexarn"></a>
 The Amazon Resource Name (ARN) of the vector index used for the knowledge base. This ARN identifies the specific vector index resource within Amazon Bedrock.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IndexName`
-
+`IndexName`  <a name="cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexname"></a>
 The name of the vector index used for the knowledge base. This name identifies the vector index within the Amazon Bedrock service.
+*Required*: No
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VectorBucketArn`
-
+`VectorBucketArn`  <a name="cfn-bedrock-knowledgebase-s3vectorsconfiguration-vectorbucketarn"></a>
 The Amazon Resource Name (ARN) of the S3 bucket where vector embeddings are stored. This bucket contains the vector data used by the knowledge base.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-SqlKnowledgeBaseConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

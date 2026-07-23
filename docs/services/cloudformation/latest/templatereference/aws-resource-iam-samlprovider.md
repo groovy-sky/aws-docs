@@ -2,222 +2,148 @@
 title: "AWS::IAM::SAMLProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::SAMLProvider
+<a name="aws-resource-iam-samlprovider"></a>
 
-Creates an IAM resource that describes an identity provider (IdP) that supports SAML
-2.0.
+Creates an IAM resource that describes an identity provider (IdP) that supports SAML 2.0.
 
-The SAML provider resource that you create with this operation can be used as a
-principal in an IAM role's trust policy. Such a policy can enable federated users who
-sign in using the SAML IdP to assume the role. You can create an IAM role that
-supports Web-based single sign-on (SSO) to the AWS Management Console or one that supports API access
-to AWS.
+The SAML provider resource that you create with this operation can be used as a principal in an IAM role's trust policy. Such a policy can enable federated users who sign in using the SAML IdP to assume the role. You can create an IAM role that supports Web-based single sign-on (SSO) to the AWS Management Console or one that supports API access to AWS.
 
-When you create the SAML provider resource, you upload a SAML metadata document that
-you get from your IdP. That document includes the issuer's name, expiration information,
-and keys that can be used to validate the SAML authentication response (assertions) that
-the IdP sends. You must generate the metadata document using the identity management
-software that is used as your organization's IdP.
+When you create the SAML provider resource, you upload a SAML metadata document that you get from your IdP. That document includes the issuer's name, expiration information, and keys that can be used to validate the SAML authentication response (assertions) that the IdP sends. You must generate the metadata document using the identity management software that is used as your organization's IdP.
 
-###### Note
+**Note**
+ This operation requires [Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
 
-This operation requires [Signature Version 4](../../../../general/latest/gr/signature-version-4.md).
-
-For more information, see [Enabling SAML 2.0\
-federated users to access the AWS Management Console](../../../iam/latest/userguide/id-roles-providers-enable-console-saml.md) and [About SAML 2.0-based\
-federation](../../../iam/latest/userguide/id-roles-providers-saml.md) in the _IAM User Guide_.
+ For more information, see [Enabling SAML 2.0 federated users to access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html) and [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html) in the *IAM User Guide*.
 
 ## Syntax
+<a name="aws-resource-iam-samlprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iam-samlprovider-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IAM::SAMLProvider",
   "Properties" : {
-      "AddPrivateKey" : String,
-      "AssertionEncryptionMode" : String,
-      "Name" : String,
-      "PrivateKeyList" : [ SAMLPrivateKey, ... ],
-      "RemovePrivateKey" : String,
-      "SamlMetadataDocument" : String,
-      "Tags" : [ Tag, ... ]
+      "[AddPrivateKey](#cfn-iam-samlprovider-addprivatekey)" : {{String}},
+      "[AssertionEncryptionMode](#cfn-iam-samlprovider-assertionencryptionmode)" : {{String}},
+      "[Name](#cfn-iam-samlprovider-name)" : {{String}},
+      "[PrivateKeyList](#cfn-iam-samlprovider-privatekeylist)" : {{[ SAMLPrivateKey, ... ]}},
+      "[RemovePrivateKey](#cfn-iam-samlprovider-removeprivatekey)" : {{String}},
+      "[SamlMetadataDocument](#cfn-iam-samlprovider-samlmetadatadocument)" : {{String}},
+      "[Tags](#cfn-iam-samlprovider-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iam-samlprovider-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IAM::SAMLProvider
 Properties:
-  AddPrivateKey: String
-  AssertionEncryptionMode: String
-  Name: String
-  PrivateKeyList:
-    - SAMLPrivateKey
-  RemovePrivateKey: String
-  SamlMetadataDocument: String
-  Tags:
-    - Tag
-
+  [AddPrivateKey](#cfn-iam-samlprovider-addprivatekey): {{String}}
+  [AssertionEncryptionMode](#cfn-iam-samlprovider-assertionencryptionmode): {{String}}
+  [Name](#cfn-iam-samlprovider-name): {{String}}
+  [PrivateKeyList](#cfn-iam-samlprovider-privatekeylist): {{
+    - SAMLPrivateKey}}
+  [RemovePrivateKey](#cfn-iam-samlprovider-removeprivatekey): {{String}}
+  [SamlMetadataDocument](#cfn-iam-samlprovider-samlmetadatadocument): {{String}}
+  [Tags](#cfn-iam-samlprovider-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iam-samlprovider-properties"></a>
 
-`AddPrivateKey`
+`AddPrivateKey`  <a name="cfn-iam-samlprovider-addprivatekey"></a>
+Specifies the new private key from your external identity provider. The private key must be a .pem file that uses AES-GCM or AES-CBC encryption algorithm to decrypt SAML assertions.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0009\u000A\u000D\u0020-\u00FF]+`
+*Minimum*: `1`
+*Maximum*: `16384`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Specifies the new private key from your external identity provider. The private key
-must be a .pem file that uses AES-GCM or AES-CBC encryption algorithm to decrypt SAML
-assertions.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0009\u000A\u000D\u0020-\u00FF]+`
-
-_Minimum_: `1`
-
-_Maximum_: `16384`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AssertionEncryptionMode`
-
+`AssertionEncryptionMode`  <a name="cfn-iam-samlprovider-assertionencryptionmode"></a>
 Specifies the encryption setting for the SAML provider.
+*Required*: No
+*Type*: String
+*Allowed values*: `Allowed | Required`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Allowed | Required`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-iam-samlprovider-name"></a>
 The name of the provider to create.
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-
+*Required*: No
+*Type*: String
+*Pattern*: `[\w._-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w._-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrivateKeyList`
-
+`PrivateKeyList`  <a name="cfn-iam-samlprovider-privatekeylist"></a>
 The private key metadata for the SAML provider.
+*Required*: No
+*Type*: Array of [SAMLPrivateKey](aws-properties-iam-samlprovider-samlprivatekey.md)
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SAMLPrivateKey](aws-properties-iam-samlprovider-samlprivatekey.md)
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemovePrivateKey`
-
+`RemovePrivateKey`  <a name="cfn-iam-samlprovider-removeprivatekey"></a>
 The Key ID of the private key to remove.
+*Required*: No
+*Type*: String
+*Pattern*: `[A-Z0-9]+`
+*Minimum*: `22`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`SamlMetadataDocument`  <a name="cfn-iam-samlprovider-samlmetadatadocument"></a>
+An XML document generated by an identity provider (IdP) that supports SAML 2.0. The document includes the issuer's name, expiration information, and keys that can be used to validate the SAML authentication response (assertions) that are received from the IdP. You must generate the metadata document using the identity management software that is used as your organization's IdP.
+For more information, see [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html) in the *IAM User Guide*
+*Required*: No
+*Type*: String
+*Minimum*: `1000`
+*Maximum*: `10000000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[A-Z0-9]+`
-
-_Minimum_: `22`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SamlMetadataDocument`
-
-An XML document generated by an identity provider (IdP) that supports SAML 2.0. The
-document includes the issuer's name, expiration information, and keys that can be used
-to validate the SAML authentication response (assertions) that are received from the
-IdP. You must generate the metadata document using the identity management software that
-is used as your organization's IdP.
-
-For more information, see [About SAML 2.0-based\
-federation](../../../iam/latest/userguide/id-roles-providers-saml.md) in the _IAM User Guide_
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1000`
-
-_Maximum_: `10000000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A list of tags that you want to attach to the new IAM SAML provider.
-Each tag consists of a key name and an associated value. For more information about tagging, see [Tagging IAM resources](../../../iam/latest/userguide/id-tags.md) in the
-_IAM User Guide_.
-
-###### Note
-
-If any one of the tags is invalid or if you exceed the allowed maximum number of tags, then the entire request
-fails and the resource is not created.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iam-samlprovider-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iam-samlprovider-tags"></a>
+A list of tags that you want to attach to the new IAM SAML provider. Each tag consists of a key name and an associated value. For more information about tagging, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *IAM User Guide*.
+If any one of the tags is invalid or if you exceed the allowed maximum number of tags, then the entire request fails and the resource is not created.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iam-samlprovider-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iam-samlprovider-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iam-samlprovider-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iam-samlprovider-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iam-samlprovider-return-values-fn--getatt-fn--getatt"></a>
 
-Returns the Amazon Resource Name (ARN) for the specified
-`AWS::IAM::SAMLProvider` resource.
+`Arn`  <a name="Arn-fn::getatt"></a>
+Returns the Amazon Resource Name (ARN) for the specified `AWS::IAM::SAMLProvider` resource.
 
-`SamlProviderUUID`
-
+`SamlProviderUUID`  <a name="SamlProviderUUID-fn::getatt"></a>
 The unique identifier assigned to the SAML provider.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IAM::RolePolicy
-
-SAMLPrivateKey
 
 All content copied from https://docs.aws.amazon.com/.

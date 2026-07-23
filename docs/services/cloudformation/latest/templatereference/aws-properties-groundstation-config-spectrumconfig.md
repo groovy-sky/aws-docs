@@ -2,92 +2,77 @@
 title: "AWS::GroundStation::Config SpectrumConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config SpectrumConfig
+<a name="aws-properties-groundstation-config-spectrumconfig"></a>
 
-Defines a spectrum.
+ Defines a spectrum.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-spectrumconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-spectrumconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bandwidth" : FrequencyBandwidth,
-  "CenterFrequency" : Frequency,
-  "Polarization" : String
+  "[Bandwidth](#cfn-groundstation-config-spectrumconfig-bandwidth)" : {{FrequencyBandwidth}},
+  "[CenterFrequency](#cfn-groundstation-config-spectrumconfig-centerfrequency)" : {{Frequency}},
+  "[Polarization](#cfn-groundstation-config-spectrumconfig-polarization)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-spectrumconfig-syntax.yaml"></a>
 
-```yaml
-
-  Bandwidth:
-    FrequencyBandwidth
-  CenterFrequency:
-    Frequency
-  Polarization: String
-
+```
+  [Bandwidth](#cfn-groundstation-config-spectrumconfig-bandwidth): {{
+    FrequencyBandwidth}}
+  [CenterFrequency](#cfn-groundstation-config-spectrumconfig-centerfrequency): {{
+    Frequency}}
+  [Polarization](#cfn-groundstation-config-spectrumconfig-polarization): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-spectrumconfig-properties"></a>
 
-`Bandwidth`
+`Bandwidth`  <a name="cfn-groundstation-config-spectrumconfig-bandwidth"></a>
+ The bandwidth of the spectrum. AWS Ground Station currently has the following bandwidth limitations:
++ For `AntennaDownlinkDemodDecodeconfig`, valid values are between 125 kHz to 650 MHz.
++ For `AntennaDownlinkconfig`, valid values are between 10 kHz to 54 MHz.
++ For `AntennaUplinkConfig`, valid values are between 10 kHz to 54 MHz.
+*Required*: No
+*Type*: [FrequencyBandwidth](aws-properties-groundstation-config-frequencybandwidth.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The bandwidth of the spectrum. AWS Ground Station currently has the following bandwidth limitations:
+`CenterFrequency`  <a name="cfn-groundstation-config-spectrumconfig-centerfrequency"></a>
+ The center frequency of the spectrum. Valid values are between 2200 to 2300 MHz and 7750 to 8400 MHz for downlink and 2025 to 2120 MHz for uplink.
+*Required*: No
+*Type*: [Frequency](aws-properties-groundstation-config-frequency.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- For `AntennaDownlinkDemodDecodeconfig`, valid values are between 125 kHz to 650 MHz.
-
-- For `AntennaDownlinkconfig`, valid values are between 10 kHz to 54 MHz.
-
-- For `AntennaUplinkConfig`, valid values are between 10 kHz to 54 MHz.
-
-_Required_: No
-
-_Type_: [FrequencyBandwidth](aws-properties-groundstation-config-frequencybandwidth.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CenterFrequency`
-
-The center frequency of the spectrum. Valid values are between 2200 to 2300 MHz and 7750 to 8400 MHz for downlink and 2025 to 2120 MHz for uplink.
-
-_Required_: No
-
-_Type_: [Frequency](aws-properties-groundstation-config-frequency.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Polarization`
-
-The polarization of the spectrum. Valid values are `"RIGHT_HAND"` and `"LEFT_HAND"`. Capturing both `"RIGHT_HAND"` and `"LEFT_HAND"` polarization requires two separate configs.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LEFT_HAND | RIGHT_HAND | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Polarization`  <a name="cfn-groundstation-config-spectrumconfig-polarization"></a>
+ The polarization of the spectrum. Valid values are `"RIGHT_HAND"` and `"LEFT_HAND"`. Capturing both `"RIGHT_HAND"` and `"LEFT_HAND"` polarization requires two separate configs.
+*Required*: No
+*Type*: String
+*Allowed values*: `LEFT_HAND | RIGHT_HAND | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-spectrumconfig--examples"></a>
 
 ### Create a SpectrumConfig
+<a name="aws-properties-groundstation-config-spectrumconfig--examples--Create_a_SpectrumConfig"></a>
 
 The following example creates a Ground Station `SpectrumConfig`
 
 #### JSON
+<a name="aws-properties-groundstation-config-spectrumconfig--examples--Create_a_SpectrumConfig--json"></a>
 
-```json
-
+```
 {
   "SpectrumConfig": {
     "Bandwidth": {
@@ -104,9 +89,9 @@ The following example creates a Ground Station `SpectrumConfig`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-spectrumconfig--examples--Create_a_SpectrumConfig--yaml"></a>
 
-```yaml
-
+```
 SpectrumConfig:
   Bandwidth:
     Value: 30
@@ -116,11 +101,5 @@ SpectrumConfig:
     Units: MHz
   Polarization: RIGHT_HAND
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3RecordingConfig
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

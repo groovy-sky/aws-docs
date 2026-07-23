@@ -2,67 +2,51 @@
 title: "AWS::PCAConnectorAD::Template ExtensionsV4"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template ExtensionsV4
+<a name="aws-properties-pcaconnectorad-template-extensionsv4"></a>
 
 Certificate extensions for v4 template schema
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-extensionsv4-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-extensionsv4-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplicationPolicies" : ApplicationPolicies,
-  "KeyUsage" : KeyUsage
+  "[ApplicationPolicies](#cfn-pcaconnectorad-template-extensionsv4-applicationpolicies)" : {{ApplicationPolicies}},
+  "[KeyUsage](#cfn-pcaconnectorad-template-extensionsv4-keyusage)" : {{KeyUsage}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-extensionsv4-syntax.yaml"></a>
 
-```yaml
-
-  ApplicationPolicies:
-    ApplicationPolicies
-  KeyUsage:
-    KeyUsage
-
+```
+  [ApplicationPolicies](#cfn-pcaconnectorad-template-extensionsv4-applicationpolicies): {{
+    ApplicationPolicies}}
+  [KeyUsage](#cfn-pcaconnectorad-template-extensionsv4-keyusage): {{
+    KeyUsage}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-extensionsv4-properties"></a>
 
-`ApplicationPolicies`
-
+`ApplicationPolicies`  <a name="cfn-pcaconnectorad-template-extensionsv4-applicationpolicies"></a>
 Application policies specify what the certificate is used for and its purpose.
+*Required*: No
+*Type*: [ApplicationPolicies](aws-properties-pcaconnectorad-template-applicationpolicies.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ApplicationPolicies](aws-properties-pcaconnectorad-template-applicationpolicies.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyUsage`
-
-The key usage extension defines the purpose (e.g., encipherment, signature) of the key
-contained in the certificate.
-
-_Required_: Yes
-
-_Type_: [KeyUsage](aws-properties-pcaconnectorad-template-keyusage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExtensionsV3
-
-GeneralFlagsV2
+`KeyUsage`  <a name="cfn-pcaconnectorad-template-extensionsv4-keyusage"></a>
+The key usage extension defines the purpose (e.g., encipherment, signature) of the key contained in the certificate.
+*Required*: Yes
+*Type*: [KeyUsage](aws-properties-pcaconnectorad-template-keyusage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

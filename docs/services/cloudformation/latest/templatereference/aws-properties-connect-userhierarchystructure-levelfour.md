@@ -2,78 +2,58 @@
 title: "AWS::Connect::UserHierarchyStructure LevelFour"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::UserHierarchyStructure LevelFour
+<a name="aws-properties-connect-userhierarchystructure-levelfour"></a>
 
 The update for level four.
 
 ## Syntax
+<a name="aws-properties-connect-userhierarchystructure-levelfour-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-userhierarchystructure-levelfour-syntax.json"></a>
 
-```json
-
+```
 {
-  "HierarchyLevelArn" : String,
-  "HierarchyLevelId" : String,
-  "Name" : String
+  "[HierarchyLevelArn](#cfn-connect-userhierarchystructure-levelfour-hierarchylevelarn)" : {{String}},
+  "[HierarchyLevelId](#cfn-connect-userhierarchystructure-levelfour-hierarchylevelid)" : {{String}},
+  "[Name](#cfn-connect-userhierarchystructure-levelfour-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-userhierarchystructure-levelfour-syntax.yaml"></a>
 
-```yaml
-
-  HierarchyLevelArn: String
-  HierarchyLevelId: String
-  Name: String
-
+```
+  [HierarchyLevelArn](#cfn-connect-userhierarchystructure-levelfour-hierarchylevelarn): {{String}}
+  [HierarchyLevelId](#cfn-connect-userhierarchystructure-levelfour-hierarchylevelid): {{String}}
+  [Name](#cfn-connect-userhierarchystructure-levelfour-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-userhierarchystructure-levelfour-properties"></a>
 
-`HierarchyLevelArn`
-
+`HierarchyLevelArn`  <a name="cfn-connect-userhierarchystructure-levelfour-hierarchylevelarn"></a>
 The Amazon Resource Name (ARN) of the hierarchy level.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/agent-group-level/[-0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/agent-group-level/[-0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HierarchyLevelId`
-
+`HierarchyLevelId`  <a name="cfn-connect-userhierarchystructure-levelfour-hierarchylevelid"></a>
 The identifier of the hierarchy level.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-connect-userhierarchystructure-levelfour-name"></a>
 The name of the hierarchy level.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LevelFive
-
-LevelOne
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

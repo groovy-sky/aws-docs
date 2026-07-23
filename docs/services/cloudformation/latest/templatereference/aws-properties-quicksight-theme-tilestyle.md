@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Theme TileStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme TileStyle
+<a name="aws-properties-quicksight-theme-tilestyle"></a>
 
 Display options related to tiles on a sheet.
 
 ## Syntax
+<a name="aws-properties-quicksight-theme-tilestyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-theme-tilestyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "Border" : BorderStyle
+  "[Border](#cfn-quicksight-theme-tilestyle-border)" : {{BorderStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-theme-tilestyle-syntax.yaml"></a>
 
-```yaml
-
-  Border:
-    BorderStyle
-
+```
+  [Border](#cfn-quicksight-theme-tilestyle-border): {{
+    BorderStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-theme-tilestyle-properties"></a>
 
-`Border`
-
+`Border`  <a name="cfn-quicksight-theme-tilestyle-border"></a>
 The border around a tile.
-
-_Required_: No
-
-_Type_: [BorderStyle](aws-properties-quicksight-theme-borderstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TileLayoutStyle
-
-Typography
+*Required*: No
+*Type*: [BorderStyle](aws-properties-quicksight-theme-borderstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

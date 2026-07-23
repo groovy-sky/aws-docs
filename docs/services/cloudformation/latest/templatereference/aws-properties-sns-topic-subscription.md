@@ -2,77 +2,52 @@
 title: "AWS::SNS::Topic Subscription"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SNS::Topic Subscription
+<a name="aws-properties-sns-topic-subscription"></a>
 
-`Subscription` is an embedded property that describes the subscription endpoints
-of an Amazon SNS topic.
+`Subscription` is an embedded property that describes the subscription endpoints of an Amazon SNS topic.
 
-###### Note
-
-For full control over subscription behavior (for example, delivery policy, filtering,
-raw message delivery, and cross-region subscriptions), use the [AWS::SNS::Subscription](../userguide/aws-resource-sns-subscription.md) resource.
+**Note**
+For full control over subscription behavior (for example, delivery policy, filtering, raw message delivery, and cross-region subscriptions), use the [AWS::SNS::Subscription](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html) resource.
 
 ## Syntax
+<a name="aws-properties-sns-topic-subscription-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sns-topic-subscription-syntax.json"></a>
 
-```json
-
+```
 {
-  "Endpoint" : String,
-  "Protocol" : String
+  "[Endpoint](#cfn-sns-topic-subscription-endpoint)" : {{String}},
+  "[Protocol](#cfn-sns-topic-subscription-protocol)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sns-topic-subscription-syntax.yaml"></a>
 
-```yaml
-
-  Endpoint: String
-  Protocol: String
-
+```
+  [Endpoint](#cfn-sns-topic-subscription-endpoint): {{String}}
+  [Protocol](#cfn-sns-topic-subscription-protocol): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sns-topic-subscription-properties"></a>
 
-`Endpoint`
+`Endpoint`  <a name="cfn-sns-topic-subscription-endpoint"></a>
+The endpoint that receives notifications from the Amazon SNS topic. The endpoint value depends on the protocol that you specify. For more information, see the `Endpoint` parameter of the ` [Subscribe](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) ` action in the *Amazon SNS API Reference*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The endpoint that receives notifications from the Amazon SNS topic. The endpoint
-value depends on the protocol that you specify. For more information, see the
-`Endpoint` parameter of the `
-                            Subscribe
-                        ` action in the _Amazon SNS API Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The subscription's protocol. For more information, see the `Protocol`
-parameter of the `
-                            Subscribe
-                        ` action in the _Amazon SNS API Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingConfig
-
-Tag
+`Protocol`  <a name="cfn-sns-topic-subscription-protocol"></a>
+The subscription's protocol. For more information, see the `Protocol` parameter of the ` [Subscribe](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) ` action in the *Amazon SNS API Reference*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

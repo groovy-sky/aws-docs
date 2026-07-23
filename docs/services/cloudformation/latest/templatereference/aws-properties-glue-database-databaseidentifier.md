@@ -2,76 +2,57 @@
 title: "AWS::Glue::Database DatabaseIdentifier"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Database DatabaseIdentifier
+<a name="aws-properties-glue-database-databaseidentifier"></a>
 
 A structure that describes a target database for resource linking.
 
 ## Syntax
+<a name="aws-properties-glue-database-databaseidentifier-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-database-databaseidentifier-syntax.json"></a>
 
-```json
-
+```
 {
-  "CatalogId" : String,
-  "DatabaseName" : String,
-  "Region" : String
+  "[CatalogId](#cfn-glue-database-databaseidentifier-catalogid)" : {{String}},
+  "[DatabaseName](#cfn-glue-database-databaseidentifier-databasename)" : {{String}},
+  "[Region](#cfn-glue-database-databaseidentifier-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-database-databaseidentifier-syntax.yaml"></a>
 
-```yaml
-
-  CatalogId: String
-  DatabaseName: String
-  Region: String
-
+```
+  [CatalogId](#cfn-glue-database-databaseidentifier-catalogid): {{String}}
+  [DatabaseName](#cfn-glue-database-databaseidentifier-databasename): {{String}}
+  [Region](#cfn-glue-database-databaseidentifier-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-database-databaseidentifier-properties"></a>
 
-`CatalogId`
-
+`CatalogId`  <a name="cfn-glue-database-databaseidentifier-catalogid"></a>
 The ID of the Data Catalog in which the database resides.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-glue-database-databaseidentifier-databasename"></a>
 The name of the catalog database.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-glue-database-databaseidentifier-region"></a>
 The Region of the database.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Glue::Database
-
-DatabaseInput
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

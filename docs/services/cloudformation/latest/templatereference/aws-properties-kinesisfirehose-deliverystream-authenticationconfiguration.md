@@ -2,72 +2,53 @@
 title: "AWS::KinesisFirehose::DeliveryStream AuthenticationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream AuthenticationConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-authenticationconfiguration"></a>
 
 The authentication configuration of the Amazon MSK cluster.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-authenticationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-authenticationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Connectivity" : String,
-  "RoleARN" : String
+  "[Connectivity](#cfn-kinesisfirehose-deliverystream-authenticationconfiguration-connectivity)" : {{String}},
+  "[RoleARN](#cfn-kinesisfirehose-deliverystream-authenticationconfiguration-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-authenticationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Connectivity: String
-  RoleARN: String
-
+```
+  [Connectivity](#cfn-kinesisfirehose-deliverystream-authenticationconfiguration-connectivity): {{String}}
+  [RoleARN](#cfn-kinesisfirehose-deliverystream-authenticationconfiguration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-authenticationconfiguration-properties"></a>
 
-`Connectivity`
-
+`Connectivity`  <a name="cfn-kinesisfirehose-deliverystream-authenticationconfiguration-connectivity"></a>
 The type of connectivity used to access the Amazon MSK cluster.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PUBLIC | PRIVATE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PUBLIC | PRIVATE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleARN`
-
+`RoleARN`  <a name="cfn-kinesisfirehose-deliverystream-authenticationconfiguration-rolearn"></a>
 The ARN of the role used to access the Amazon MSK cluster.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmazonopensearchserviceRetryOptions
-
-BufferingHints
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

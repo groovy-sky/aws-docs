@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Analysis TextFieldControlDisplayOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis TextFieldControlDisplayOptions
+<a name="aws-properties-quicksight-analysis-textfieldcontroldisplayoptions"></a>
 
 The display options of a control.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-textfieldcontroldisplayoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-textfieldcontroldisplayoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "InfoIconLabelOptions" : SheetControlInfoIconLabelOptions,
-  "PlaceholderOptions" : TextControlPlaceholderOptions,
-  "TitleOptions" : LabelOptions
+  "[InfoIconLabelOptions](#cfn-quicksight-analysis-textfieldcontroldisplayoptions-infoiconlabeloptions)" : {{SheetControlInfoIconLabelOptions}},
+  "[PlaceholderOptions](#cfn-quicksight-analysis-textfieldcontroldisplayoptions-placeholderoptions)" : {{TextControlPlaceholderOptions}},
+  "[TitleOptions](#cfn-quicksight-analysis-textfieldcontroldisplayoptions-titleoptions)" : {{LabelOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-textfieldcontroldisplayoptions-syntax.yaml"></a>
 
-```yaml
-
-  InfoIconLabelOptions:
-    SheetControlInfoIconLabelOptions
-  PlaceholderOptions:
-    TextControlPlaceholderOptions
-  TitleOptions:
-    LabelOptions
-
+```
+  [InfoIconLabelOptions](#cfn-quicksight-analysis-textfieldcontroldisplayoptions-infoiconlabeloptions): {{
+    SheetControlInfoIconLabelOptions}}
+  [PlaceholderOptions](#cfn-quicksight-analysis-textfieldcontroldisplayoptions-placeholderoptions): {{
+    TextControlPlaceholderOptions}}
+  [TitleOptions](#cfn-quicksight-analysis-textfieldcontroldisplayoptions-titleoptions): {{
+    LabelOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-textfieldcontroldisplayoptions-properties"></a>
 
-`InfoIconLabelOptions`
-
+`InfoIconLabelOptions`  <a name="cfn-quicksight-analysis-textfieldcontroldisplayoptions-infoiconlabeloptions"></a>
 The configuration of info icon label options.
+*Required*: No
+*Type*: [SheetControlInfoIconLabelOptions](aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SheetControlInfoIconLabelOptions](aws-properties-quicksight-analysis-sheetcontrolinfoiconlabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PlaceholderOptions`
-
+`PlaceholderOptions`  <a name="cfn-quicksight-analysis-textfieldcontroldisplayoptions-placeholderoptions"></a>
 The configuration of the placeholder options in a text field control.
+*Required*: No
+*Type*: [TextControlPlaceholderOptions](aws-properties-quicksight-analysis-textcontrolplaceholderoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TextControlPlaceholderOptions](aws-properties-quicksight-analysis-textcontrolplaceholderoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TitleOptions`
-
+`TitleOptions`  <a name="cfn-quicksight-analysis-textfieldcontroldisplayoptions-titleoptions"></a>
 The options to configure the title visibility, name, and font size.
-
-_Required_: No
-
-_Type_: [LabelOptions](aws-properties-quicksight-analysis-labeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TextControlPlaceholderOptions
-
-ThousandSeparatorOptions
+*Required*: No
+*Type*: [LabelOptions](aws-properties-quicksight-analysis-labeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

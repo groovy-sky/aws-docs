@@ -2,119 +2,89 @@
 title: "AWS::S3::Bucket NotificationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket NotificationConfiguration
+<a name="aws-properties-s3-bucket-notificationconfiguration"></a>
 
 Describes the notification configuration for an Amazon S3 bucket.
 
-###### Note
-
-If you create the target resource and related permissions in the same template, you
-might have a circular dependency.
-
-For example, you might use the `AWS::Lambda::Permission` resource to grant
-the bucket permission to invoke an AWS Lambda function. However, AWS CloudFormation can't create the bucket until the bucket has permission to
-invoke the function (AWS CloudFormation checks whether the bucket can
-invoke the function). If you're using Refs to pass the bucket name, this leads to a circular
-dependency.
-
-To avoid this dependency, you can create all resources without specifying the
-notification configuration. Then, update the stack with a notification configuration.
-
-For more information on permissions, see [AWS::Lambda::Permission](../userguide/aws-resource-lambda-permission.md) and [Granting Permissions to Publish Event Notification Messages to a\
-Destination](../../../s3/latest/dev/notificationhowto.md#grant-destinations-permissions-to-s3).
+**Note**
+If you create the target resource and related permissions in the same template, you might have a circular dependency.
+For example, you might use the `AWS::Lambda::Permission` resource to grant the bucket permission to invoke an AWS Lambda function. However, AWS CloudFormation can't create the bucket until the bucket has permission to invoke the function (AWS CloudFormation checks whether the bucket can invoke the function). If you're using Refs to pass the bucket name, this leads to a circular dependency.
+To avoid this dependency, you can create all resources without specifying the notification configuration. Then, update the stack with a notification configuration.
+For more information on permissions, see [AWS::Lambda::Permission](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html) and [Granting Permissions to Publish Event Notification Messages to a Destination](https://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#grant-destinations-permissions-to-s3).
 
 ## Syntax
+<a name="aws-properties-s3-bucket-notificationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-notificationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventBridgeConfiguration" : EventBridgeConfiguration,
-  "LambdaConfigurations" : [ LambdaConfiguration, ... ],
-  "QueueConfigurations" : [ QueueConfiguration, ... ],
-  "TopicConfigurations" : [ TopicConfiguration, ... ]
+  "[EventBridgeConfiguration](#cfn-s3-bucket-notificationconfiguration-eventbridgeconfiguration)" : {{EventBridgeConfiguration}},
+  "[LambdaConfigurations](#cfn-s3-bucket-notificationconfiguration-lambdaconfigurations)" : {{[ LambdaConfiguration, ... ]}},
+  "[QueueConfigurations](#cfn-s3-bucket-notificationconfiguration-queueconfigurations)" : {{[ QueueConfiguration, ... ]}},
+  "[TopicConfigurations](#cfn-s3-bucket-notificationconfiguration-topicconfigurations)" : {{[ TopicConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-notificationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EventBridgeConfiguration:
-    EventBridgeConfiguration
-  LambdaConfigurations:
-    - LambdaConfiguration
-  QueueConfigurations:
-    - QueueConfiguration
-  TopicConfigurations:
-    - TopicConfiguration
-
+```
+  [EventBridgeConfiguration](#cfn-s3-bucket-notificationconfiguration-eventbridgeconfiguration): {{
+    EventBridgeConfiguration}}
+  [LambdaConfigurations](#cfn-s3-bucket-notificationconfiguration-lambdaconfigurations): {{
+    - LambdaConfiguration}}
+  [QueueConfigurations](#cfn-s3-bucket-notificationconfiguration-queueconfigurations): {{
+    - QueueConfiguration}}
+  [TopicConfigurations](#cfn-s3-bucket-notificationconfiguration-topicconfigurations): {{
+    - TopicConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-notificationconfiguration-properties"></a>
 
-`EventBridgeConfiguration`
-
+`EventBridgeConfiguration`  <a name="cfn-s3-bucket-notificationconfiguration-eventbridgeconfiguration"></a>
 Enables delivery of events to Amazon EventBridge.
+*Required*: No
+*Type*: [EventBridgeConfiguration](aws-properties-s3-bucket-eventbridgeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EventBridgeConfiguration](aws-properties-s3-bucket-eventbridgeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaConfigurations`
-
+`LambdaConfigurations`  <a name="cfn-s3-bucket-notificationconfiguration-lambdaconfigurations"></a>
 Describes the AWS Lambda functions to invoke and the events for which to invoke them.
+*Required*: No
+*Type*: Array of [LambdaConfiguration](aws-properties-s3-bucket-lambdaconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`QueueConfigurations`  <a name="cfn-s3-bucket-notificationconfiguration-queueconfigurations"></a>
+The Amazon Simple Queue Service queues to publish messages to and the events for which to publish messages.
+*Required*: No
+*Type*: Array of [QueueConfiguration](aws-properties-s3-bucket-queueconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [LambdaConfiguration](aws-properties-s3-bucket-lambdaconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueueConfigurations`
-
-The Amazon Simple Queue Service queues to publish messages to and the events for which to publish
-messages.
-
-_Required_: No
-
-_Type_: Array of [QueueConfiguration](aws-properties-s3-bucket-queueconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopicConfigurations`
-
-The topic to which notifications are sent and the events for which notifications are
-generated.
-
-_Required_: No
-
-_Type_: Array of [TopicConfiguration](aws-properties-s3-bucket-topicconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TopicConfigurations`  <a name="cfn-s3-bucket-notificationconfiguration-topicconfigurations"></a>
+The topic to which notifications are sent and the events for which notifications are generated.
+*Required*: No
+*Type*: Array of [TopicConfiguration](aws-properties-s3-bucket-topicconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-notificationconfiguration--examples"></a>
 
 ### Receive S3 bucket notifications to an SNS topic
+<a name="aws-properties-s3-bucket-notificationconfiguration--examples--Receive_S3_bucket_notifications_to_an_SNS_topic"></a>
 
-The following example template shows an Amazon S3 bucket with a notification
-configuration that sends an event to the specified SNS topic when S3 has lost all replicas
-of an object.
+The following example template shows an Amazon S3 bucket with a notification configuration that sends an event to the specified SNS topic when S3 has lost all replicas of an object.
 
 #### JSON
+<a name="aws-properties-s3-bucket-notificationconfiguration--examples--Receive_S3_bucket_notifications_to_an_SNS_topic--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -145,9 +115,9 @@ of an object.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-notificationconfiguration--examples--Receive_S3_bucket_notifications_to_an_SNS_topic--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -163,11 +133,5 @@ Outputs:
     Value: !Ref S3Bucket
     Description: Name of the sample Amazon S3 bucket with a notification configuration.
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NoncurrentVersionTransition
-
-NotificationFilter
 
 All content copied from https://docs.aws.amazon.com/.

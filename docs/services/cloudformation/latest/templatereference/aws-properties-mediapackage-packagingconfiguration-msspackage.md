@@ -2,78 +2,59 @@
 title: "AWS::MediaPackage::PackagingConfiguration MssPackage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration MssPackage
+<a name="aws-properties-mediapackage-packagingconfiguration-msspackage"></a>
 
 Parameters for a packaging configuration that uses Microsoft Smooth Streaming (MSS) packaging.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packagingconfiguration-msspackage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packagingconfiguration-msspackage-syntax.json"></a>
 
-```json
-
+```
 {
-  "Encryption" : MssEncryption,
-  "MssManifests" : [ MssManifest, ... ],
-  "SegmentDurationSeconds" : Integer
+  "[Encryption](#cfn-mediapackage-packagingconfiguration-msspackage-encryption)" : {{MssEncryption}},
+  "[MssManifests](#cfn-mediapackage-packagingconfiguration-msspackage-mssmanifests)" : {{[ MssManifest, ... ]}},
+  "[SegmentDurationSeconds](#cfn-mediapackage-packagingconfiguration-msspackage-segmentdurationseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packagingconfiguration-msspackage-syntax.yaml"></a>
 
-```yaml
-
-  Encryption:
-    MssEncryption
-  MssManifests:
-    - MssManifest
-  SegmentDurationSeconds: Integer
-
+```
+  [Encryption](#cfn-mediapackage-packagingconfiguration-msspackage-encryption): {{
+    MssEncryption}}
+  [MssManifests](#cfn-mediapackage-packagingconfiguration-msspackage-mssmanifests): {{
+    - MssManifest}}
+  [SegmentDurationSeconds](#cfn-mediapackage-packagingconfiguration-msspackage-segmentdurationseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packagingconfiguration-msspackage-properties"></a>
 
-`Encryption`
-
+`Encryption`  <a name="cfn-mediapackage-packagingconfiguration-msspackage-encryption"></a>
 Parameters for encrypting content.
+*Required*: No
+*Type*: [MssEncryption](aws-properties-mediapackage-packagingconfiguration-mssencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MssEncryption](aws-properties-mediapackage-packagingconfiguration-mssencryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MssManifests`
-
+`MssManifests`  <a name="cfn-mediapackage-packagingconfiguration-msspackage-mssmanifests"></a>
 A list of Microsoft Smooth manifest configurations that are available from this endpoint.
+*Required*: Yes
+*Type*: Array of [MssManifest](aws-properties-mediapackage-packagingconfiguration-mssmanifest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [MssManifest](aws-properties-mediapackage-packagingconfiguration-mssmanifest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentDurationSeconds`
-
+`SegmentDurationSeconds`  <a name="cfn-mediapackage-packagingconfiguration-msspackage-segmentdurationseconds"></a>
 Duration (in seconds) of each fragment. Actual fragments are rounded to the nearest multiple of the source fragment duration.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MssManifest
-
-SpekeKeyProvider
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

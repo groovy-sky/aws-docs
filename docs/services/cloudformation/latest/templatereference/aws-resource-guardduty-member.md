@@ -2,147 +2,110 @@
 title: "AWS::GuardDuty::Member"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::Member
+<a name="aws-resource-guardduty-member"></a>
 
-You can use the `AWS::GuardDuty::Member` resource to add an AWS account as a GuardDuty member account to the current GuardDuty administrator account. If the value of the `Status` property is
-not provided or is set to `Created`, a member account is created but not
-invited. If the value of the `Status` property is set to `Invited`, a
-member account is created and invited. An `AWS::GuardDuty::Member` resource must
-be created with the `Status` property set to `Invited` before the
-`AWS::GuardDuty::Master` resource can be created in a GuardDuty
-member account.
+You can use the `AWS::GuardDuty::Member` resource to add an AWS account as a GuardDuty member account to the current GuardDuty administrator account. If the value of the `Status` property is not provided or is set to `Created`, a member account is created but not invited. If the value of the `Status` property is set to `Invited`, a member account is created and invited. An `AWS::GuardDuty::Member` resource must be created with the `Status` property set to `Invited` before the `AWS::GuardDuty::Master` resource can be created in a GuardDuty member account.
 
 ## Syntax
+<a name="aws-resource-guardduty-member-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-guardduty-member-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::GuardDuty::Member",
   "Properties" : {
-      "DetectorId" : String,
-      "DisableEmailNotification" : Boolean,
-      "Email" : String,
-      "MemberId" : String,
-      "Message" : String,
-      "Status" : String
+      "[DetectorId](#cfn-guardduty-member-detectorid)" : {{String}},
+      "[DisableEmailNotification](#cfn-guardduty-member-disableemailnotification)" : {{Boolean}},
+      "[Email](#cfn-guardduty-member-email)" : {{String}},
+      "[MemberId](#cfn-guardduty-member-memberid)" : {{String}},
+      "[Message](#cfn-guardduty-member-message)" : {{String}},
+      "[Status](#cfn-guardduty-member-status)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-guardduty-member-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::GuardDuty::Member
 Properties:
-  DetectorId: String
-  DisableEmailNotification: Boolean
-  Email: String
-  MemberId: String
-  Message: String
-  Status: String
-
+  [DetectorId](#cfn-guardduty-member-detectorid): {{String}}
+  [DisableEmailNotification](#cfn-guardduty-member-disableemailnotification): {{Boolean}}
+  [Email](#cfn-guardduty-member-email): {{String}}
+  [MemberId](#cfn-guardduty-member-memberid): {{String}}
+  [Message](#cfn-guardduty-member-message): {{String}}
+  [Status](#cfn-guardduty-member-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-guardduty-member-properties"></a>
 
-`DetectorId`
+`DetectorId`  <a name="cfn-guardduty-member-detectorid"></a>
+The ID of the detector associated with the GuardDuty service to add the member to.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ID of the detector associated with the GuardDuty service to add the member
-to.
+`DisableEmailNotification`  <a name="cfn-guardduty-member-disableemailnotification"></a>
+Specifies whether or not to disable email notification for the member account that you invite.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DisableEmailNotification`
-
-Specifies whether or not to disable email notification for the member account that you
-invite.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Email`
-
+`Email`  <a name="cfn-guardduty-member-email"></a>
 The email address associated with the member account.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MemberId`
-
+`MemberId`  <a name="cfn-guardduty-member-memberid"></a>
 The AWS account ID of the account to designate as a member.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Message`  <a name="cfn-guardduty-member-message"></a>
+The invitation message that you want to send to the accounts that you're inviting to GuardDuty as members.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Message`
-
-The invitation message that you want to send to the accounts that you're inviting to
-GuardDuty as members.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
-You can use the `Status` property to update the status of the relationship
-between the member account and its administrator account. Valid values are
-`Created` and `Invited` when using an
-`AWS::GuardDuty::Member` resource. If the value for this property is not
-provided or set to `Created`, a member account is created but not invited. If
-the value of this property is set to `Invited`, a member account is created and
-invited.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Status`  <a name="cfn-guardduty-member-status"></a>
+You can use the `Status` property to update the status of the relationship between the member account and its administrator account. Valid values are `Created` and `Invited` when using an `AWS::GuardDuty::Member` resource. If the value for this property is not provided or set to `Created`, a member account is created but not invited. If the value of this property is set to `Invited`, a member account is created and invited.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-guardduty-member-return-values"></a>
 
 ### Ref
+<a name="aws-resource-guardduty-member-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the unique ID of the GuardDuty member account, such
-as `111122223333`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the unique ID of the GuardDuty member account, such as `111122223333`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-guardduty-member--examples"></a>
 
 ### Declare a Member Resource
+<a name="aws-resource-guardduty-member--examples--Declare_a_Member_Resource"></a>
 
-The following example shows how to declare a GuardDuty `Member` resource:
+The following example shows how to declare a GuardDuty`Member` resource:
 
 #### JSON
+<a name="aws-resource-guardduty-member--examples--Declare_a_Member_Resource--json"></a>
 
-```json
-
+```
 "GDmaster": {
     "Type": "AWS::GuardDuty::Member",
     "Properties": {
@@ -157,9 +120,9 @@ The following example shows how to declare a GuardDuty `Member` resource:
 ```
 
 #### YAML
+<a name="aws-resource-guardduty-member--examples--Declare_a_Member_Resource--yaml"></a>
 
-```yaml
-
+```
       Type: AWS::GuardDuty::Member
       Properties:
             Status: Invited
@@ -168,13 +131,6 @@ The following example shows how to declare a GuardDuty `Member` resource:
             Message: You are invited to enable Amazon Guardduty.
             DetectorId: a12abc34d567e8fa901bc2d34e56789f0
             DisableEmailNotification: true
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GuardDuty::Master
-
-AWS::GuardDuty::PublishingDestination
 
 All content copied from https://docs.aws.amazon.com/.

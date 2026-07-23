@@ -2,55 +2,43 @@
 title: "AWS::Wisdom::AIGuardrail AIGuardrailContextualGroundingPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail AIGuardrailContextualGroundingPolicyConfig
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig"></a>
 
 Contextual grounding policy config for a guardrail.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "FiltersConfig" : [ GuardrailContextualGroundingFilterConfig, ... ]
+  "[FiltersConfig](#cfn-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-filtersconfig)" : {{[ GuardrailContextualGroundingFilterConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  FiltersConfig:
-    - GuardrailContextualGroundingFilterConfig
-
+```
+  [FiltersConfig](#cfn-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-filtersconfig): {{
+    - GuardrailContextualGroundingFilterConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-properties"></a>
 
-`FiltersConfig`
-
+`FiltersConfig`  <a name="cfn-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-filtersconfig"></a>
 List of contextual grounding filter configs.
-
-_Required_: Yes
-
-_Type_: Array of [GuardrailContextualGroundingFilterConfig](aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AIGuardrailContentPolicyConfig
-
-AIGuardrailSensitiveInformationPolicyConfig
+*Required*: Yes
+*Type*: Array of [GuardrailContextualGroundingFilterConfig](aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

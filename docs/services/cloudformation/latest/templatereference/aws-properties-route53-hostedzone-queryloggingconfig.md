@@ -2,63 +2,46 @@
 title: "AWS::Route53::HostedZone QueryLoggingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::HostedZone QueryLoggingConfig
+<a name="aws-properties-route53-hostedzone-queryloggingconfig"></a>
 
-A complex type that contains information about a configuration for DNS query
-logging.
+A complex type that contains information about a configuration for DNS query logging.
 
 ## Syntax
+<a name="aws-properties-route53-hostedzone-queryloggingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53-hostedzone-queryloggingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogsLogGroupArn" : String
+  "[CloudWatchLogsLogGroupArn](#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53-hostedzone-queryloggingconfig-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogsLogGroupArn: String
-
+```
+  [CloudWatchLogsLogGroupArn](#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53-hostedzone-queryloggingconfig-properties"></a>
 
-`CloudWatchLogsLogGroupArn`
-
-The Amazon Resource Name (ARN) of the CloudWatch Logs log group that Amazon Route 53
-is publishing logs to.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`CloudWatchLogsLogGroupArn`  <a name="cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn"></a>
+The Amazon Resource Name (ARN) of the CloudWatch Logs log group that Amazon Route 53 is publishing logs to.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Return values](../userguide/aws-resource-route53-hostedzone.md#aws-resource-route53-hostedzone-return-values)
-in the topic
-[AWS::Route53::HostedZone](../userguide/aws-resource-route53-hostedzone.md)
-
-- [QueryLoggingConfig](../../../../reference/route53/latest/apireference/api-queryloggingconfig.md)
-in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HostedZoneTag
-
-VPC
+<a name="aws-properties-route53-hostedzone-queryloggingconfig--seealso"></a>
++ [Return values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#aws-resource-route53-hostedzone-return-values) in the topic [AWS::Route53::HostedZone](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html)
++ [QueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_QueryLoggingConfig.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

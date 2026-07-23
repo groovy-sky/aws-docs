@@ -2,89 +2,66 @@
 title: "AWS::Glue::Crawler DeltaTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Crawler DeltaTarget
+<a name="aws-properties-glue-crawler-deltatarget"></a>
 
 Specifies a Delta data store to crawl one or more Delta tables.
 
 ## Syntax
+<a name="aws-properties-glue-crawler-deltatarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-crawler-deltatarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectionName" : String,
-  "CreateNativeDeltaTable" : Boolean,
-  "DeltaTables" : [ String, ... ],
-  "WriteManifest" : Boolean
+  "[ConnectionName](#cfn-glue-crawler-deltatarget-connectionname)" : {{String}},
+  "[CreateNativeDeltaTable](#cfn-glue-crawler-deltatarget-createnativedeltatable)" : {{Boolean}},
+  "[DeltaTables](#cfn-glue-crawler-deltatarget-deltatables)" : {{[ String, ... ]}},
+  "[WriteManifest](#cfn-glue-crawler-deltatarget-writemanifest)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-crawler-deltatarget-syntax.yaml"></a>
 
-```yaml
-
-  ConnectionName: String
-  CreateNativeDeltaTable: Boolean
-  DeltaTables:
-    - String
-  WriteManifest: Boolean
-
+```
+  [ConnectionName](#cfn-glue-crawler-deltatarget-connectionname): {{String}}
+  [CreateNativeDeltaTable](#cfn-glue-crawler-deltatarget-createnativedeltatable): {{Boolean}}
+  [DeltaTables](#cfn-glue-crawler-deltatarget-deltatables): {{
+    - String}}
+  [WriteManifest](#cfn-glue-crawler-deltatarget-writemanifest): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-crawler-deltatarget-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-glue-crawler-deltatarget-connectionname"></a>
 The name of the connection to use to connect to the Delta table target.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CreateNativeDeltaTable`
-
+`CreateNativeDeltaTable`  <a name="cfn-glue-crawler-deltatarget-createnativedeltatable"></a>
 Specifies whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeltaTables`
-
+`DeltaTables`  <a name="cfn-glue-crawler-deltatarget-deltatables"></a>
 A list of the Amazon S3 paths to the Delta tables.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WriteManifest`
-
+`WriteManifest`  <a name="cfn-glue-crawler-deltatarget-writemanifest"></a>
 Specifies whether to write the manifest files to the Delta table path.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CatalogTarget
-
-DynamoDBTarget
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

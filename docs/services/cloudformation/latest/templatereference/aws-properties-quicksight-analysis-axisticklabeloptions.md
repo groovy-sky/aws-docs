@@ -2,65 +2,50 @@
 title: "AWS::QuickSight::Analysis AxisTickLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis AxisTickLabelOptions
+<a name="aws-properties-quicksight-analysis-axisticklabeloptions"></a>
 
 The tick label options of an axis.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-axisticklabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-axisticklabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "LabelOptions" : LabelOptions,
-  "RotationAngle" : Number
+  "[LabelOptions](#cfn-quicksight-analysis-axisticklabeloptions-labeloptions)" : {{LabelOptions}},
+  "[RotationAngle](#cfn-quicksight-analysis-axisticklabeloptions-rotationangle)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-axisticklabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  LabelOptions:
-    LabelOptions
-  RotationAngle: Number
-
+```
+  [LabelOptions](#cfn-quicksight-analysis-axisticklabeloptions-labeloptions): {{
+    LabelOptions}}
+  [RotationAngle](#cfn-quicksight-analysis-axisticklabeloptions-rotationangle): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-axisticklabeloptions-properties"></a>
 
-`LabelOptions`
-
+`LabelOptions`  <a name="cfn-quicksight-analysis-axisticklabeloptions-labeloptions"></a>
 Determines whether or not the axis ticks are visible.
+*Required*: No
+*Type*: [LabelOptions](aws-properties-quicksight-analysis-labeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LabelOptions](aws-properties-quicksight-analysis-labeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RotationAngle`
-
+`RotationAngle`  <a name="cfn-quicksight-analysis-axisticklabeloptions-rotationangle"></a>
 The rotation angle of the axis tick labels.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AxisScale
-
-BarChartAggregatedFieldWells
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

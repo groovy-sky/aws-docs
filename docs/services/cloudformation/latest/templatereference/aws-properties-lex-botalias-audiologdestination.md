@@ -2,53 +2,42 @@
 title: "AWS::Lex::BotAlias AudioLogDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::BotAlias AudioLogDestination
+<a name="aws-properties-lex-botalias-audiologdestination"></a>
 
 Specifies the S3 bucket location where audio logs are stored.
 
 ## Syntax
+<a name="aws-properties-lex-botalias-audiologdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-botalias-audiologdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Bucket" : S3BucketLogDestination
+  "[S3Bucket](#cfn-lex-botalias-audiologdestination-s3bucket)" : {{S3BucketLogDestination}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-botalias-audiologdestination-syntax.yaml"></a>
 
-```yaml
-
-  S3Bucket:
-    S3BucketLogDestination
-
+```
+  [S3Bucket](#cfn-lex-botalias-audiologdestination-s3bucket): {{
+    S3BucketLogDestination}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-botalias-audiologdestination-properties"></a>
 
-`S3Bucket`
-
+`S3Bucket`  <a name="cfn-lex-botalias-audiologdestination-s3bucket"></a>
 The S3 bucket location where audio logs are stored.
-
-_Required_: Yes
-
-_Type_: [S3BucketLogDestination](aws-properties-lex-botalias-s3bucketlogdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Lex::BotAlias
-
-AudioLogSetting
+*Required*: Yes
+*Type*: [S3BucketLogDestination](aws-properties-lex-botalias-s3bucketlogdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

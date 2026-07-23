@@ -2,67 +2,52 @@
 title: "AWS::EC2::Instance AssociationParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::Instance AssociationParameter
+<a name="aws-properties-ec2-instance-associationparameter"></a>
 
 Specifies input parameter values for an SSM document in AWS Systems Manager.
 
-`AssociationParameter` is a property of the [SsmAssociation](../userguide/aws-properties-ec2-instance-ssmassociation.md) property type.
+`AssociationParameter` is a property of the [SsmAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociation.html) property type.
 
 ## Syntax
+<a name="aws-properties-ec2-instance-associationparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-instance-associationparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : [ String, ... ]
+  "[Key](#cfn-ec2-instance-associationparameter-key)" : {{String}},
+  "[Value](#cfn-ec2-instance-associationparameter-value)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-instance-associationparameter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value:
-    - String
-
+```
+  [Key](#cfn-ec2-instance-associationparameter-key): {{String}}
+  [Value](#cfn-ec2-instance-associationparameter-value): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-instance-associationparameter-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ec2-instance-associationparameter-key"></a>
 The name of an input parameter that is in the associated SSM document.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ec2-instance-associationparameter-value"></a>
 The value of an input parameter.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::Instance
-
-BlockDeviceMapping
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

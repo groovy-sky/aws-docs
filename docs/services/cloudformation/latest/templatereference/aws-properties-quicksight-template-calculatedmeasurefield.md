@@ -2,72 +2,53 @@
 title: "AWS::QuickSight::Template CalculatedMeasureField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CalculatedMeasureField
+<a name="aws-properties-quicksight-template-calculatedmeasurefield"></a>
 
 The table calculation measure field for pivot tables.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-calculatedmeasurefield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-calculatedmeasurefield-syntax.json"></a>
 
-```json
-
+```
 {
-  "Expression" : String,
-  "FieldId" : String
+  "[Expression](#cfn-quicksight-template-calculatedmeasurefield-expression)" : {{String}},
+  "[FieldId](#cfn-quicksight-template-calculatedmeasurefield-fieldid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-calculatedmeasurefield-syntax.yaml"></a>
 
-```yaml
-
-  Expression: String
-  FieldId: String
-
+```
+  [Expression](#cfn-quicksight-template-calculatedmeasurefield-expression): {{String}}
+  [FieldId](#cfn-quicksight-template-calculatedmeasurefield-fieldid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-calculatedmeasurefield-properties"></a>
 
-`Expression`
-
+`Expression`  <a name="cfn-quicksight-template-calculatedmeasurefield-expression"></a>
 The expression in the table calculation.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-calculatedmeasurefield-fieldid"></a>
 The custom field ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CalculatedField
-
-CascadingControlConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,73 +2,51 @@
 title: "AWS::EVS::Environment LicenseInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EVS::Environment LicenseInfo
+<a name="aws-properties-evs-environment-licenseinfo"></a>
 
-The license information that Amazon EVS requires to create an environment.
-Amazon EVS requires two license keys: a VCF solution key and a vSAN license key.
+ The license information that Amazon EVS requires to create an environment. Amazon EVS requires two license keys: a VCF solution key and a vSAN license key.
 
 ## Syntax
+<a name="aws-properties-evs-environment-licenseinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-evs-environment-licenseinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "SolutionKey" : String,
-  "VsanKey" : String
+  "[SolutionKey](#cfn-evs-environment-licenseinfo-solutionkey)" : {{String}},
+  "[VsanKey](#cfn-evs-environment-licenseinfo-vsankey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-evs-environment-licenseinfo-syntax.yaml"></a>
 
-```yaml
-
-  SolutionKey: String
-  VsanKey: String
-
+```
+  [SolutionKey](#cfn-evs-environment-licenseinfo-solutionkey): {{String}}
+  [VsanKey](#cfn-evs-environment-licenseinfo-vsankey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-evs-environment-licenseinfo-properties"></a>
 
-`SolutionKey`
+`SolutionKey`  <a name="cfn-evs-environment-licenseinfo-solutionkey"></a>
+ The VCF solution key. This license unlocks VMware VCF product features, including vSphere, NSX, SDDC Manager, and vCenter Server. The VCF solution key must meet the instance-type-specific minimum core requirements.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}$`
+*Update requires*: Updates are not supported.
 
-The VCF solution key.
-This license unlocks VMware VCF product features, including vSphere, NSX, SDDC Manager, and vCenter Server.
-The VCF solution key must cover a minimum of 256 cores.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}$`
-
-_Update requires_: Updates are not supported.
-
-`VsanKey`
-
-The VSAN license key.
-This license unlocks vSAN features.
-The vSAN license key must provide at least 110 TiB of vSAN capacity.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}$`
-
-_Update requires_: Updates are not supported.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InitialVlans
-
-Secret
+`VsanKey`  <a name="cfn-evs-environment-licenseinfo-vsankey"></a>
+ The VSAN license key. This license unlocks vSAN features. The vSAN license key must meet the instance-type-specific minimum capacity requirements.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}$`
+*Update requires*: Updates are not supported.
 
 All content copied from https://docs.aws.amazon.com/.

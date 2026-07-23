@@ -1,25 +1,18 @@
 ---
-title: "Examples of Fn::ForEach in the Conditions section"
+title: "Examples of `Fn::ForEach` in the `Conditions` section"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Examples of `Fn::ForEach` in the `Conditions` section
+<a name="intrinsic-function-reference-foreach-example-conditions"></a>
 
-These examples demonstrate using the `Fn::ForEach` intrinsic function in the
-`Conditions` section. For more information about this section, see [Conditions](../userguide/conditions-section-structure.md)
-in the _AWS CloudFormation User Guide_.
+These examples demonstrate using the `Fn::ForEach` intrinsic function in the `Conditions` section. For more information about this section, see [Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html) in the *AWS CloudFormation User Guide*.
 
-###### Important
+**Important**
+`Conditions` must be the second property listed, or later. Stack creation will fail if `Conditions` is the first property listed within the template fragment parameter of `Fn::ForEach`.
 
-`Conditions` must be the second property listed, or later. Stack creation
-will fail if `Conditions` is the first property listed within the template
-fragment parameter of `Fn::ForEach`.
-
-```yaml
-
+```
 Resources:
   'Fn::ForEach::Topics':
     - LogicalId
@@ -31,11 +24,9 @@ Resources:
           TopicName: !Sub 'My${LogicalId}'
 ```
 
-`Conditions` must be added as the second key, or later, for stack creation to
-succeed:
+`Conditions` must be added as the second key, or later, for stack creation to succeed:
 
-```yaml
-
+```
 Resources:
   'Fn::ForEach::Topics':
     - LogicalId
@@ -47,20 +38,18 @@ Resources:
           TopicName: !Sub 'My${LogicalId}'
 ```
 
-###### Topics
-
-- [Replicate a single condition](#intrinsic-function-reference-foreach-example-replicated-single-condition)
+**Topics**
++ [Replicate a single condition](#intrinsic-function-reference-foreach-example-replicated-single-condition)
 
 ## Replicate a single condition
+<a name="intrinsic-function-reference-foreach-example-replicated-single-condition"></a>
 
-This example uses the `Fn::ForEach` intrinsic function in the
-`Conditions` section to replicate multiple similar conditions with different
-properties.
+This example uses the `Fn::ForEach` intrinsic function in the `Conditions` section to replicate multiple similar conditions with different properties.
 
 ### JSON
+<a name="intrinsic-function-reference-foreach-example-conditions.json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Transform": "AWS::LanguageExtensions",
@@ -117,9 +106,9 @@ properties.
 ```
 
 ### YAML
+<a name="intrinsic-function-reference-foreach-example-conditions.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Parameters:
@@ -158,8 +147,7 @@ Resources:
 
 The transformed template will be equivalent to the following template:
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   ParamA:
@@ -199,11 +187,5 @@ Resources:
   WaitConditionHandle:
     Type: AWS::CloudFormation::WaitConditionHandle
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Outputs section
-
-Fn::GetAtt
 
 All content copied from https://docs.aws.amazon.com/.

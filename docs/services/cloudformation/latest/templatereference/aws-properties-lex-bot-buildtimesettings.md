@@ -2,66 +2,51 @@
 title: "AWS::Lex::Bot BuildtimeSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BuildtimeSettings
+<a name="aws-properties-lex-bot-buildtimesettings"></a>
 
 Contains specifications about the Amazon Lex build time generative AI capabilities from Amazon Bedrock that you can turn on for your bot.
 
 ## Syntax
+<a name="aws-properties-lex-bot-buildtimesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-buildtimesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DescriptiveBotBuilderSpecification" : DescriptiveBotBuilderSpecification,
-  "SampleUtteranceGenerationSpecification" : SampleUtteranceGenerationSpecification
+  "[DescriptiveBotBuilderSpecification](#cfn-lex-bot-buildtimesettings-descriptivebotbuilderspecification)" : {{DescriptiveBotBuilderSpecification}},
+  "[SampleUtteranceGenerationSpecification](#cfn-lex-bot-buildtimesettings-sampleutterancegenerationspecification)" : {{SampleUtteranceGenerationSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-buildtimesettings-syntax.yaml"></a>
 
-```yaml
-
-  DescriptiveBotBuilderSpecification:
-    DescriptiveBotBuilderSpecification
-  SampleUtteranceGenerationSpecification:
-    SampleUtteranceGenerationSpecification
-
+```
+  [DescriptiveBotBuilderSpecification](#cfn-lex-bot-buildtimesettings-descriptivebotbuilderspecification): {{
+    DescriptiveBotBuilderSpecification}}
+  [SampleUtteranceGenerationSpecification](#cfn-lex-bot-buildtimesettings-sampleutterancegenerationspecification): {{
+    SampleUtteranceGenerationSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-buildtimesettings-properties"></a>
 
-`DescriptiveBotBuilderSpecification`
-
+`DescriptiveBotBuilderSpecification`  <a name="cfn-lex-bot-buildtimesettings-descriptivebotbuilderspecification"></a>
 Property description not available.
+*Required*: No
+*Type*: [DescriptiveBotBuilderSpecification](aws-properties-lex-bot-descriptivebotbuilderspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DescriptiveBotBuilderSpecification](aws-properties-lex-bot-descriptivebotbuilderspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SampleUtteranceGenerationSpecification`
-
+`SampleUtteranceGenerationSpecification`  <a name="cfn-lex-bot-buildtimesettings-sampleutterancegenerationspecification"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [SampleUtteranceGenerationSpecification](aws-properties-lex-bot-sampleutterancegenerationspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BotLocale
-
-Button
+*Required*: No
+*Type*: [SampleUtteranceGenerationSpecification](aws-properties-lex-bot-sampleutterancegenerationspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

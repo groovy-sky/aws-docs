@@ -2,67 +2,51 @@
 title: "AWS::AppSync::ChannelNamespace HandlerConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::ChannelNamespace HandlerConfig
+<a name="aws-properties-appsync-channelnamespace-handlerconfig"></a>
 
 The `HandlerConfig` property type specifies the configuration for the handler.
 
 ## Syntax
+<a name="aws-properties-appsync-channelnamespace-handlerconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-channelnamespace-handlerconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Behavior" : String,
-  "Integration" : Integration
+  "[Behavior](#cfn-appsync-channelnamespace-handlerconfig-behavior)" : {{String}},
+  "[Integration](#cfn-appsync-channelnamespace-handlerconfig-integration)" : {{Integration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-channelnamespace-handlerconfig-syntax.yaml"></a>
 
-```yaml
-
-  Behavior: String
-  Integration:
-    Integration
-
+```
+  [Behavior](#cfn-appsync-channelnamespace-handlerconfig-behavior): {{String}}
+  [Integration](#cfn-appsync-channelnamespace-handlerconfig-integration): {{
+    Integration}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-channelnamespace-handlerconfig-properties"></a>
 
-`Behavior`
-
+`Behavior`  <a name="cfn-appsync-channelnamespace-handlerconfig-behavior"></a>
 The behavior for the handler.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CODE | DIRECT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CODE | DIRECT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Integration`
-
+`Integration`  <a name="cfn-appsync-channelnamespace-handlerconfig-integration"></a>
 The integration data source configuration for the handler.
-
-_Required_: Yes
-
-_Type_: [Integration](aws-properties-appsync-channelnamespace-integration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthMode
-
-HandlerConfigs
+*Required*: Yes
+*Type*: [Integration](aws-properties-appsync-channelnamespace-integration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

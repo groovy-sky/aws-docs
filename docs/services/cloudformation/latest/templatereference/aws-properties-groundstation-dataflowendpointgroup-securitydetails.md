@@ -2,91 +2,75 @@
 title: "AWS::GroundStation::DataflowEndpointGroup SecurityDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroup SecurityDetails
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails"></a>
 
-Information about IAM roles, subnets, and security groups needed for this DataflowEndpointGroup.
+ Information about IAM roles, subnets, and security groups needed for this DataflowEndpointGroup.
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "RoleArn" : String,
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[RoleArn](#cfn-groundstation-dataflowendpointgroup-securitydetails-rolearn)" : {{String}},
+  "[SecurityGroupIds](#cfn-groundstation-dataflowendpointgroup-securitydetails-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-groundstation-dataflowendpointgroup-securitydetails-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails-syntax.yaml"></a>
 
-```yaml
-
-  RoleArn: String
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [RoleArn](#cfn-groundstation-dataflowendpointgroup-securitydetails-rolearn): {{String}}
+  [SecurityGroupIds](#cfn-groundstation-dataflowendpointgroup-securitydetails-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-groundstation-dataflowendpointgroup-securitydetails-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails-properties"></a>
 
-`RoleArn`
+`RoleArn`  <a name="cfn-groundstation-dataflowendpointgroup-securitydetails-rolearn"></a>
+The ARN of a role which Ground Station has permission to assume, such as `arn:aws:iam::012345678910:role/DataDeliveryServiceRole`.
+ Ground Station will assume this role and create an ENI in your VPC on the specified subnet upon creation of a dataflow endpoint group. This ENI is used as the ingress/egress point for data streamed during a satellite contact.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:[a-z0-9-.]+:.*)|()$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ARN of a role which Ground Station has permission to assume, such as
-`arn:aws:iam::012345678910:role/DataDeliveryServiceRole`.
+`SecurityGroupIds`  <a name="cfn-groundstation-dataflowendpointgroup-securitydetails-securitygroupids"></a>
+The security group Ids of the security role, such as `sg-1234567890abcdef0`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Ground Station will assume this role and create an ENI in your VPC on the specified subnet upon creation of a dataflow endpoint group. This ENI is used as the ingress/egress point for data streamed during a satellite contact.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(arn:(aws[a-zA-Z-]*)?:[a-z0-9-.]+:.*)|()$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroupIds`
-
-The security group Ids of the security role, such as
-`sg-1234567890abcdef0`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
-The subnet Ids of the security details, such as
-`subnet-12345678`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`SubnetIds`  <a name="cfn-groundstation-dataflowendpointgroup-securitydetails-subnetids"></a>
+The subnet Ids of the security details, such as `subnet-12345678`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails--examples"></a>
 
 ### Create SecurityDetails
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails--examples--Create_SecurityDetails"></a>
 
 The following example creates Ground Station `SecurityDetails`
 
 #### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails--examples--Create_SecurityDetails--json"></a>
 
-```json
-
+```
 {
   "SecurityDetails": {
     "SubnetIds": [
@@ -101,9 +85,9 @@ The following example creates Ground Station `SecurityDetails`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails--examples--Create_SecurityDetails--yaml"></a>
 
-```yaml
-
+```
 SecurityDetails:
   SubnetIds:
     - subnet-12345678
@@ -111,11 +95,5 @@ SecurityDetails:
     - sg-87654321
   RoleArn: arn:aws:iam::012345678910:role/groundstation-service-role-AWSServiceRoleForAmazonGroundStation-EXAMPLEABCDE
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RangedSocketAddress
-
-SocketAddress
 
 All content copied from https://docs.aws.amazon.com/.

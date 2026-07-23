@@ -2,97 +2,67 @@
 title: "AWS::EMRServerless::Application ConfigurationObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application ConfigurationObject
+<a name="aws-properties-emrserverless-application-configurationobject"></a>
 
-A configuration specification to be used when provisioning an application. A
-configuration consists of a classification, properties, and optional nested configurations.
-A classification refers to an application-specific configuration file. Properties are the
-settings you want to change in that file.
+A configuration specification to be used when provisioning an application. A configuration consists of a classification, properties, and optional nested configurations. A classification refers to an application-specific configuration file. Properties are the settings you want to change in that file.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-configurationobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-configurationobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "Classification" : String,
-  "Configurations" : [ ConfigurationObject, ... ],
-  "Properties" : {Key: Value, ...}
+  "[Classification](#cfn-emrserverless-application-configurationobject-classification)" : {{String}},
+  "[Configurations](#cfn-emrserverless-application-configurationobject-configurations)" : {{[ ConfigurationObject, ... ]}},
+  "[Properties](#cfn-emrserverless-application-configurationobject-properties)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-configurationobject-syntax.yaml"></a>
 
-```yaml
-
-  Classification: String
-  Configurations:
-    - ConfigurationObject
-  Properties:
-    Key: Value
-
+```
+  [Classification](#cfn-emrserverless-application-configurationobject-classification): {{String}}
+  [Configurations](#cfn-emrserverless-application-configurationobject-configurations): {{
+    - ConfigurationObject}}
+  [Properties](#cfn-emrserverless-application-configurationobject-properties): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-configurationobject-properties"></a>
 
-`Classification`
-
+`Classification`  <a name="cfn-emrserverless-application-configurationobject-classification"></a>
 The classification within a configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Configurations`
-
+`Configurations`  <a name="cfn-emrserverless-application-configurationobject-configurations"></a>
 A list of additional configurations to apply within a configuration object.
+*Required*: No
+*Type*: Array of [ConfigurationObject](#aws-properties-emrserverless-application-configurationobject)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ConfigurationObject](aws-properties-emrserverless-application-configurationobject.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Properties`
-
+`Properties`  <a name="cfn-emrserverless-application-configurationobject-properties"></a>
 A set of properties specified within a configuration classification.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z]+[-a-zA-Z0-9_.]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLoggingConfiguration
-
-IdentityCenterConfiguration
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z]+[-a-zA-Z0-9_.]*$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,92 +2,64 @@
 title: "AWS::Timestream::ScheduledQuery S3Configuration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::ScheduledQuery S3Configuration
+<a name="aws-properties-timestream-scheduledquery-s3configuration"></a>
 
 Details on S3 location for error reports that result from running a query.
 
 ## Syntax
+<a name="aws-properties-timestream-scheduledquery-s3configuration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-scheduledquery-s3configuration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "EncryptionOption" : String,
-  "ObjectKeyPrefix" : String
+  "[BucketName](#cfn-timestream-scheduledquery-s3configuration-bucketname)" : {{String}},
+  "[EncryptionOption](#cfn-timestream-scheduledquery-s3configuration-encryptionoption)" : {{String}},
+  "[ObjectKeyPrefix](#cfn-timestream-scheduledquery-s3configuration-objectkeyprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-scheduledquery-s3configuration-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  EncryptionOption: String
-  ObjectKeyPrefix: String
-
+```
+  [BucketName](#cfn-timestream-scheduledquery-s3configuration-bucketname): {{String}}
+  [EncryptionOption](#cfn-timestream-scheduledquery-s3configuration-encryptionoption): {{String}}
+  [ObjectKeyPrefix](#cfn-timestream-scheduledquery-s3configuration-objectkeyprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-scheduledquery-s3configuration-properties"></a>
 
-`BucketName`
+`BucketName`  <a name="cfn-timestream-scheduledquery-s3configuration-bucketname"></a>
+ Name of the S3 bucket under which error reports will be created.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Name of the S3 bucket under which error reports will be created.
+`EncryptionOption`  <a name="cfn-timestream-scheduledquery-s3configuration-encryptionoption"></a>
+ Encryption at rest options for the error reports. If no encryption option is specified, Timestream will choose SSE\_S3 as default.
+*Required*: No
+*Type*: String
+*Allowed values*: `SSE_S3 | SSE_KMS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EncryptionOption`
-
-Encryption at rest options for the error reports. If no encryption option is specified,
-Timestream will choose SSE\_S3 as default.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SSE_S3 | SSE_KMS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ObjectKeyPrefix`
-
-Prefix for the error report key. Timestream by default adds the following prefix to the
-error report path.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9|!\-_*'\(\)]([a-zA-Z0-9]|[!\-_*'\(\)\/.])+`
-
-_Minimum_: `1`
-
-_Maximum_: `896`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotificationConfiguration
-
-ScheduleConfiguration
+`ObjectKeyPrefix`  <a name="cfn-timestream-scheduledquery-s3configuration-objectkeyprefix"></a>
+ Prefix for the error report key. Timestream by default adds the following prefix to the error report path.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9|!\-_*'\(\)]([a-zA-Z0-9]|[!\-_*'\(\)\/.])+`
+*Minimum*: `1`
+*Maximum*: `896`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,53 @@
 title: "AWS::Transfer::User Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::User Tag
+<a name="aws-properties-transfer-user-tag"></a>
 
-Creates a key-value pair for a specific resource. Tags are metadata that you can use
-to search for and group a resource for various purposes. You can apply tags to servers,
-users, and roles. A tag key can take more than one value. For example, to group servers
-for accounting purposes, you might create a tag called `Group` and assign the
-values `Research` and `Accounting` to that group.
+Creates a key-value pair for a specific resource. Tags are metadata that you can use to search for and group a resource for various purposes. You can apply tags to servers, users, and roles. A tag key can take more than one value. For example, to group servers for accounting purposes, you might create a tag called `Group` and assign the values `Research` and `Accounting` to that group.
 
 ## Syntax
+<a name="aws-properties-transfer-user-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-user-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-transfer-user-tag-key)" : {{String}},
+  "[Value](#cfn-transfer-user-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-user-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-transfer-user-tag-key): {{String}}
+  [Value](#cfn-transfer-user-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-user-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-transfer-user-tag-key"></a>
 The name assigned to the tag that you create.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-transfer-user-tag-value"></a>
 Contains one or more values that you assigned to the key name you create.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PosixProfile
-
-AWS::Transfer::WebApp
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

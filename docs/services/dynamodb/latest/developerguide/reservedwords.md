@@ -3,16 +3,13 @@ title: "Reserved words in DynamoDB"
 ---
 
 # Reserved words in DynamoDB
+<a name="ReservedWords"></a>
 
-The following keywords are reserved for use by DynamoDB. Don't use any of these words as
-attribute names in expressions. This list isn't case-sensitive.
+The following keywords are reserved for use by DynamoDB. Don't use any of these words as attribute names in expressions. This list isn't case-sensitive.
 
-If you need to write an expression containing an attribute name that conflicts with a
-DynamoDB reserved word, you can define an expression attribute name to use in the place of the
-reserved word. For more information, see [Expression attribute names (aliases) in DynamoDB](expressions-expressionattributenames.md).
+ If you need to write an expression containing an attribute name that conflicts with a DynamoDB reserved word, you can define an expression attribute name to use in the place of the reserved word. For more information, see [Expression attribute names (aliases) in DynamoDB](Expressions.ExpressionAttributeNames.md).
 
-```nohighlight
-
+```
 ABORT
 ABSOLUTE
 ACTION
@@ -587,11 +584,5 @@ WRITE
 YEAR
 ZONE
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 4: Clean up resources
-
-AWS SDK for Java 1.x examples
 
 All content copied from https://docs.aws.amazon.com/.

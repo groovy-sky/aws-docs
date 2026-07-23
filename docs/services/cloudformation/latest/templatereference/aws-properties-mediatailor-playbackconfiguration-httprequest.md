@@ -2,95 +2,69 @@
 title: "AWS::MediaTailor::PlaybackConfiguration HttpRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::PlaybackConfiguration HttpRequest
+<a name="aws-properties-mediatailor-playbackconfiguration-httprequest"></a>
 
-The `HttpRequest` property type specifies Property description not available. for an [AWS::MediaTailor::PlaybackConfiguration](aws-resource-mediatailor-playbackconfiguration.md).
+HTTP request configuration parameters that define how MediaTailor communicates with the ad decision server.
 
 ## Syntax
+<a name="aws-properties-mediatailor-playbackconfiguration-httprequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-playbackconfiguration-httprequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Body" : String,
-  "CompressRequest" : String,
-  "Headers" : {Key: Value, ...},
-  "HttpMethod" : String
+  "[Body](#cfn-mediatailor-playbackconfiguration-httprequest-body)" : {{String}},
+  "[CompressRequest](#cfn-mediatailor-playbackconfiguration-httprequest-compressrequest)" : {{String}},
+  "[Headers](#cfn-mediatailor-playbackconfiguration-httprequest-headers)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[HttpMethod](#cfn-mediatailor-playbackconfiguration-httprequest-httpmethod)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-playbackconfiguration-httprequest-syntax.yaml"></a>
 
-```yaml
-
-  Body: String
-  CompressRequest: String
-  Headers:
-    Key: Value
-  HttpMethod: String
-
+```
+  [Body](#cfn-mediatailor-playbackconfiguration-httprequest-body): {{String}}
+  [CompressRequest](#cfn-mediatailor-playbackconfiguration-httprequest-compressrequest): {{String}}
+  [Headers](#cfn-mediatailor-playbackconfiguration-httprequest-headers): {{
+    {{Key}}: {{Value}}}}
+  [HttpMethod](#cfn-mediatailor-playbackconfiguration-httprequest-httpmethod): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-playbackconfiguration-httprequest-properties"></a>
 
-`Body`
+`Body`  <a name="cfn-mediatailor-playbackconfiguration-httprequest-body"></a>
+The request body content to send with HTTP requests to the ad decision server. This value is only eligible for `POST` requests.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`CompressRequest`  <a name="cfn-mediatailor-playbackconfiguration-httprequest-compressrequest"></a>
+The compression method to apply to requests sent to the ad decision server. Supported values are `NONE` and `GZIP`. This value is only eligible for `POST` requests.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | GZIP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Headers`  <a name="cfn-mediatailor-playbackconfiguration-httprequest-headers"></a>
+Custom HTTP headers to include in requests to the ad decision server. Specify headers as key-value pairs. This value is only eligible for `POST` requests.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`HttpMethod`  <a name="cfn-mediatailor-playbackconfiguration-httprequest-httpmethod"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CompressRequest`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | GZIP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Headers`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpMethod`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GET | POST`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HlsConfiguration
-
-LivePreRollConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `GET | POST`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

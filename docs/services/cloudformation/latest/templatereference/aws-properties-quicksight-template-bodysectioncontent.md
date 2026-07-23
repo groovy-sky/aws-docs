@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template BodySectionContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BodySectionContent
+<a name="aws-properties-quicksight-template-bodysectioncontent"></a>
 
 The configuration of content in a body section.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-bodysectioncontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-bodysectioncontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "Layout" : SectionLayoutConfiguration
+  "[Layout](#cfn-quicksight-template-bodysectioncontent-layout)" : {{SectionLayoutConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-bodysectioncontent-syntax.yaml"></a>
 
-```yaml
-
-  Layout:
-    SectionLayoutConfiguration
-
+```
+  [Layout](#cfn-quicksight-template-bodysectioncontent-layout): {{
+    SectionLayoutConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-bodysectioncontent-properties"></a>
 
-`Layout`
-
+`Layout`  <a name="cfn-quicksight-template-bodysectioncontent-layout"></a>
 The layout configuration of a body section.
-
-_Required_: No
-
-_Type_: [SectionLayoutConfiguration](aws-properties-quicksight-template-sectionlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BodySectionConfiguration
-
-BodySectionDynamicCategoryDimensionConfiguration
+*Required*: No
+*Type*: [SectionLayoutConfiguration](aws-properties-quicksight-template-sectionlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

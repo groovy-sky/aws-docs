@@ -2,75 +2,53 @@
 title: "AWS::ObservabilityAdmin::S3TableIntegration EncryptionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::S3TableIntegration EncryptionConfig
+<a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig"></a>
 
-Defines the encryption configuration for S3 Table integrations, including the encryption
-algorithm and KMS key settings.
+Defines the encryption configuration for S3 Table integrations, including the encryption algorithm and KMS key settings.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyArn" : String,
-  "SseAlgorithm" : String
+  "[KmsKeyArn](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-kmskeyarn)" : {{String}},
+  "[SseAlgorithm](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-ssealgorithm)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyArn: String
-  SseAlgorithm: String
-
+```
+  [KmsKeyArn](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-kmskeyarn): {{String}}
+  [SseAlgorithm](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-ssealgorithm): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig-properties"></a>
 
-`KmsKeyArn`
+`KmsKeyArn`  <a name="cfn-observabilityadmin-s3tableintegration-encryptionconfig-kmskeyarn"></a>
+The Amazon Resource Name (ARN) of the KMS key used for encryption when using customer-managed keys.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws([a-z0-9\-]+)?:([a-zA-Z0-9\-]+):([a-z0-9\-]+)?:([0-9]{12})?:(.+)$`
+*Minimum*: `1`
+*Maximum*: `1011`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Amazon Resource Name (ARN) of the KMS key used for encryption when using
-customer-managed keys.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws([a-z0-9\-]+)?:([a-zA-Z0-9\-]+):([a-z0-9\-]+)?:([0-9]{12})?:(.+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `1011`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SseAlgorithm`
-
-The server-side encryption algorithm used for encrypting data in the S3 Table
-integration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AES256 | aws:kms`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ObservabilityAdmin::S3TableIntegration
-
-LogSource
+`SseAlgorithm`  <a name="cfn-observabilityadmin-s3tableintegration-encryptionconfig-ssealgorithm"></a>
+The server-side encryption algorithm used for encrypting data in the S3 Table integration.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AES256 | aws:kms`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,53 @@
 title: "AWS::FMS::Policy PortRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::Policy PortRange
+<a name="aws-properties-fms-policy-portrange"></a>
 
 TCP or UDP protocols: The range of ports the rule applies to.
 
 ## Syntax
+<a name="aws-properties-fms-policy-portrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fms-policy-portrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "From" : Integer,
-  "To" : Integer
+  "[From](#cfn-fms-policy-portrange-from)" : {{Integer}},
+  "[To](#cfn-fms-policy-portrange-to)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fms-policy-portrange-syntax.yaml"></a>
 
-```yaml
-
-  From: Integer
-  To: Integer
-
+```
+  [From](#cfn-fms-policy-portrange-from): {{Integer}}
+  [To](#cfn-fms-policy-portrange-to): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-fms-policy-portrange-properties"></a>
 
-`From`
-
+`From`  <a name="cfn-fms-policy-portrange-from"></a>
 The beginning port number of the range.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`To`
-
+`To`  <a name="cfn-fms-policy-portrange-to"></a>
 The ending port number of the range.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyTag
-
-ResourceTag
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

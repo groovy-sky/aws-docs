@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template DefaultFreeFormLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DefaultFreeFormLayoutConfiguration
+<a name="aws-properties-quicksight-template-defaultfreeformlayoutconfiguration"></a>
 
 The options that determine the default settings of a free-form layout configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-defaultfreeformlayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-defaultfreeformlayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CanvasSizeOptions" : FreeFormLayoutCanvasSizeOptions
+  "[CanvasSizeOptions](#cfn-quicksight-template-defaultfreeformlayoutconfiguration-canvassizeoptions)" : {{FreeFormLayoutCanvasSizeOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-defaultfreeformlayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CanvasSizeOptions:
-    FreeFormLayoutCanvasSizeOptions
-
+```
+  [CanvasSizeOptions](#cfn-quicksight-template-defaultfreeformlayoutconfiguration-canvassizeoptions): {{
+    FreeFormLayoutCanvasSizeOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-defaultfreeformlayoutconfiguration-properties"></a>
 
-`CanvasSizeOptions`
-
+`CanvasSizeOptions`  <a name="cfn-quicksight-template-defaultfreeformlayoutconfiguration-canvassizeoptions"></a>
 Determines the screen canvas size options for a free-form layout.
-
-_Required_: Yes
-
-_Type_: [FreeFormLayoutCanvasSizeOptions](aws-properties-quicksight-template-freeformlayoutcanvassizeoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultFilterListControlOptions
-
-DefaultGridLayoutConfiguration
+*Required*: Yes
+*Type*: [FreeFormLayoutCanvasSizeOptions](aws-properties-quicksight-template-freeformlayoutcanvassizeoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

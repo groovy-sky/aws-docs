@@ -2,77 +2,55 @@
 title: "AWS::CustomerProfiles::Domain S3ExportingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Domain S3ExportingConfig
+<a name="aws-properties-customerprofiles-domain-s3exportingconfig"></a>
 
 The S3 location where Identity Resolution Jobs write result files.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-domain-s3exportingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-domain-s3exportingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3BucketName" : String,
-  "S3KeyName" : String
+  "[S3BucketName](#cfn-customerprofiles-domain-s3exportingconfig-s3bucketname)" : {{String}},
+  "[S3KeyName](#cfn-customerprofiles-domain-s3exportingconfig-s3keyname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-domain-s3exportingconfig-syntax.yaml"></a>
 
-```yaml
-
-  S3BucketName: String
-  S3KeyName: String
-
+```
+  [S3BucketName](#cfn-customerprofiles-domain-s3exportingconfig-s3bucketname): {{String}}
+  [S3KeyName](#cfn-customerprofiles-domain-s3exportingconfig-s3keyname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-domain-s3exportingconfig-properties"></a>
 
-`S3BucketName`
-
+`S3BucketName`  <a name="cfn-customerprofiles-domain-s3exportingconfig-s3bucketname"></a>
 The name of the S3 bucket where Identity Resolution Jobs write result files.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9.-]+$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9.-]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3KeyName`
-
-The S3 key name of the location where Identity Resolution Jobs write result
-files.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `1`
-
-_Maximum_: `800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleBasedMatching
-
-Tag
+`S3KeyName`  <a name="cfn-customerprofiles-domain-s3exportingconfig-s3keyname"></a>
+The S3 key name of the location where Identity Resolution Jobs write result files.
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `1`
+*Maximum*: `800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

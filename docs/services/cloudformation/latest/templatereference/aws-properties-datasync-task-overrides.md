@@ -2,92 +2,69 @@
 title: "AWS::DataSync::Task Overrides"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::Task Overrides
+<a name="aws-properties-datasync-task-overrides"></a>
 
-The `Overrides` property type specifies Property description not available. for an [AWS::DataSync::Task](aws-resource-datasync-task.md).
+<a name="aws-properties-datasync-task-overrides-description"></a>The `Overrides` property type specifies Property description not available. for an [AWS::DataSync::Task](aws-resource-datasync-task.md).
 
 ## Syntax
+<a name="aws-properties-datasync-task-overrides-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datasync-task-overrides-syntax.json"></a>
 
-```json
-
+```
 {
-  "Deleted" : Deleted,
-  "Skipped" : Skipped,
-  "Transferred" : Transferred,
-  "Verified" : Verified
+  "[Deleted](#cfn-datasync-task-overrides-deleted)" : {{Deleted}},
+  "[Skipped](#cfn-datasync-task-overrides-skipped)" : {{Skipped}},
+  "[Transferred](#cfn-datasync-task-overrides-transferred)" : {{Transferred}},
+  "[Verified](#cfn-datasync-task-overrides-verified)" : {{Verified}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datasync-task-overrides-syntax.yaml"></a>
 
-```yaml
-
-  Deleted:
-    Deleted
-  Skipped:
-    Skipped
-  Transferred:
-    Transferred
-  Verified:
-    Verified
-
+```
+  [Deleted](#cfn-datasync-task-overrides-deleted): {{
+    Deleted}}
+  [Skipped](#cfn-datasync-task-overrides-skipped): {{
+    Skipped}}
+  [Transferred](#cfn-datasync-task-overrides-transferred): {{
+    Transferred}}
+  [Verified](#cfn-datasync-task-overrides-verified): {{
+    Verified}}
 ```
 
 ## Properties
+<a name="aws-properties-datasync-task-overrides-properties"></a>
 
-`Deleted`
-
+`Deleted`  <a name="cfn-datasync-task-overrides-deleted"></a>
 Property description not available.
+*Required*: No
+*Type*: [Deleted](aws-properties-datasync-task-deleted.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Deleted](aws-properties-datasync-task-deleted.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Skipped`
-
+`Skipped`  <a name="cfn-datasync-task-overrides-skipped"></a>
 Property description not available.
+*Required*: No
+*Type*: [Skipped](aws-properties-datasync-task-skipped.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Skipped](aws-properties-datasync-task-skipped.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Transferred`
-
+`Transferred`  <a name="cfn-datasync-task-overrides-transferred"></a>
 Property description not available.
+*Required*: No
+*Type*: [Transferred](aws-properties-datasync-task-transferred.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Transferred](aws-properties-datasync-task-transferred.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Verified`
-
+`Verified`  <a name="cfn-datasync-task-overrides-verified"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [Verified](aws-properties-datasync-task-verified.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Options
-
-Skipped
+*Required*: No
+*Type*: [Verified](aws-properties-datasync-task-verified.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

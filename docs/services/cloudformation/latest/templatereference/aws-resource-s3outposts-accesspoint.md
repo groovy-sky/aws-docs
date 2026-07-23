@@ -2,141 +2,116 @@
 title: "AWS::S3Outposts::AccessPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::AccessPoint
+<a name="aws-resource-s3outposts-accesspoint"></a>
 
-The AWS::S3Outposts::AccessPoint resource specifies an access point and associates it with
-the specified Amazon S3 on Outposts bucket. For more information, see [Managing data access\
-with Amazon S3 access points](../../../s3/latest/userguide/access-points.md).
+The AWS::S3Outposts::AccessPoint resource specifies an access point and associates it with the specified Amazon S3 on Outposts bucket. For more information, see [Managing data access with Amazon S3 access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html).
 
-###### Note
-
+**Note**
 S3 on Outposts supports only VPC-style access points.
 
 ## Syntax
+<a name="aws-resource-s3outposts-accesspoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3outposts-accesspoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3Outposts::AccessPoint",
   "Properties" : {
-      "Bucket" : String,
-      "Name" : String,
-      "Policy" : Json,
-      "VpcConfiguration" : VpcConfiguration
+      "[Bucket](#cfn-s3outposts-accesspoint-bucket)" : {{String}},
+      "[Name](#cfn-s3outposts-accesspoint-name)" : {{String}},
+      "[Policy](#cfn-s3outposts-accesspoint-policy)" : {{Json}},
+      "[VpcConfiguration](#cfn-s3outposts-accesspoint-vpcconfiguration)" : {{VpcConfiguration}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3outposts-accesspoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3Outposts::AccessPoint
 Properties:
-  Bucket: String
-  Name: String
-  Policy: Json
-  VpcConfiguration:
-    VpcConfiguration
-
+  [Bucket](#cfn-s3outposts-accesspoint-bucket): {{String}}
+  [Name](#cfn-s3outposts-accesspoint-name): {{String}}
+  [Policy](#cfn-s3outposts-accesspoint-policy): {{Json}}
+  [VpcConfiguration](#cfn-s3outposts-accesspoint-vpcconfiguration): {{
+    VpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-resource-s3outposts-accesspoint-properties"></a>
 
-`Bucket`
+`Bucket`  <a name="cfn-s3outposts-accesspoint-bucket"></a>
+The Amazon Resource Name (ARN) of the S3 on Outposts bucket that is associated with this access point.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[^:]+:s3-outposts:[a-zA-Z0-9\-]+:\d{12}:outpost\/[^:]+\/bucket\/[^:]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Amazon Resource Name (ARN) of the S3 on Outposts bucket that is associated with this
-access point.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[^:]+:s3-outposts:[a-zA-Z0-9\-]+:\d{12}:outpost\/[^:]+\/bucket\/[^:]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-s3outposts-accesspoint-name"></a>
 The name of this access point.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$`
+*Minimum*: `3`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$`
-
-_Minimum_: `3`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Policy`
-
+`Policy`  <a name="cfn-s3outposts-accesspoint-policy"></a>
 The access point policy associated with this access point.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-s3outposts-accesspoint-vpcconfiguration"></a>
 The virtual private cloud (VPC) configuration for this access point, if one exists.
-
-_Required_: Yes
-
-_Type_: [VpcConfiguration](aws-properties-s3outposts-accesspoint-vpcconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: [VpcConfiguration](aws-properties-s3outposts-accesspoint-vpcconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-s3outposts-accesspoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3outposts-accesspoint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the access point ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3outposts-accesspoint-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-s3outposts-accesspoint-return-values-fn--getatt-fn--getatt"></a>
 
-This resource contains the details of the S3 on Outposts bucket access point ARN. This
-resource is read-only.
+`Arn`  <a name="Arn-fn::getatt"></a>
+This resource contains the details of the S3 on Outposts bucket access point ARN. This resource is read-only.
 
 ## Examples
+<a name="aws-resource-s3outposts-accesspoint--examples"></a>
 
 ### Creating an access point with an access point policy for your Amazon S3 on Outposts using CloudFormation
+<a name="aws-resource-s3outposts-accesspoint--examples--Creating_an_access_point_with_an_access_point_policy_for_your_Amazon_S3_on_Outposts_using_CloudFormation"></a>
 
-The following example shows how you can create an S3 on Outposts bucket and S3 on
-Outposts access point in the same CFN stack.
+The following example shows how you can create an S3 on Outposts bucket and S3 on Outposts access point in the same CFN stack.
 
-###### Note
-
-To create an access point, you must already have an S3 on Outposts bucket ARN. This
-means that you must create your Outposts bucket before or at the same time as you create
-the access point.
+**Note**
+To create an access point, you must already have an S3 on Outposts bucket ARN. This means that you must create your Outposts bucket before or at the same time as you create the access point.
 
 #### JSON
+<a name="aws-resource-s3outposts-accesspoint--examples--Creating_an_access_point_with_an_access_point_policy_for_your_Amazon_S3_on_Outposts_using_CloudFormation--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, no tags, no lifecycle configuration with access point",
@@ -192,9 +167,9 @@ the access point.
 ```
 
 #### YAML
+<a name="aws-resource-s3outposts-accesspoint--examples--Creating_an_access_point_with_an_access_point_policy_for_your_Amazon_S3_on_Outposts_using_CloudFormation--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, no tags, no lifecycle configuration with access point
 Resources:
@@ -212,7 +187,7 @@ Resources:
       VpcConfiguration:
         VpcID: vpc-12345
       Policy:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         ID: AccessPointPolicy
         Statement:
         - Sid: st1
@@ -237,13 +212,6 @@ Outputs:
     Export:
       Name:
         Fn::Sub: "${AWS::StackName}-StackID"
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon S3 on Outposts
-
-VpcConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

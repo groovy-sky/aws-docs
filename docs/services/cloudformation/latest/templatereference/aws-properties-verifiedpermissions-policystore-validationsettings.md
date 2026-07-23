@@ -2,74 +2,46 @@
 title: "AWS::VerifiedPermissions::PolicyStore ValidationSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VerifiedPermissions::PolicyStore ValidationSettings
+<a name="aws-properties-verifiedpermissions-policystore-validationsettings"></a>
 
-A structure that contains Cedar policy validation settings for the policy store. The
-validation mode determines which validation failures that Cedar considers serious enough
-to block acceptance of a new or edited static policy or policy template.
+A structure that contains Cedar policy validation settings for the policy store. The validation mode determines which validation failures that Cedar considers serious enough to block acceptance of a new or edited static policy or policy template.
 
 ## Syntax
+<a name="aws-properties-verifiedpermissions-policystore-validationsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-verifiedpermissions-policystore-validationsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mode" : String
+  "[Mode](#cfn-verifiedpermissions-policystore-validationsettings-mode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-verifiedpermissions-policystore-validationsettings-syntax.yaml"></a>
 
-```yaml
-
-  Mode: String
-
+```
+  [Mode](#cfn-verifiedpermissions-policystore-validationsettings-mode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-verifiedpermissions-policystore-validationsettings-properties"></a>
 
-`Mode`
-
-The validation mode currently configured for this policy store. The valid values
-are:
-
-- **OFF** – Neither Verified Permissions nor Cedar
-perform any validation on policies. No validation errors are reported by either
-service.
-
-- **STRICT** – Requires a schema to be present in
-the policy store. Cedar performs validation on all submitted new or updated
-static policies and policy templates. Any that fail validation are rejected and
-Cedar doesn't store them in the policy store.
-
-###### Important
-
-If `Mode=STRICT` and the policy store doesn't contain a schema, Verified Permissions rejects all static policies and policy templates because there is no
-schema to validate against.
-
-To submit a static policy or policy template without a schema, you must turn off
-validation.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `OFF | STRICT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::VerifiedPermissions::PolicyTemplate
+`Mode`  <a name="cfn-verifiedpermissions-policystore-validationsettings-mode"></a>
+The validation mode currently configured for this policy store. The valid values are:
++ **OFF** – Neither Verified Permissions nor Cedar perform any validation on policies. No validation errors are reported by either service.
++ **STRICT** – Requires a schema to be present in the policy store. Cedar performs validation on all submitted new or updated static policies and policy templates. Any that fail validation are rejected and Cedar doesn't store them in the policy store.
+If `Mode=STRICT` and the policy store doesn't contain a schema, Verified Permissions rejects all static policies and policy templates because there is no schema to validate against.
+To submit a static policy or policy template without a schema, you must turn off validation.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `OFF | STRICT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,52 +2,41 @@
 title: "AWS::QuickSight::DataSet DataSetDateFilterValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataSetDateFilterValue
+<a name="aws-properties-quicksight-dataset-datasetdatefiltervalue"></a>
 
 Represents a date value used in filter conditions.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datasetdatefiltervalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datasetdatefiltervalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "StaticValue" : String
+  "[StaticValue](#cfn-quicksight-dataset-datasetdatefiltervalue-staticvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datasetdatefiltervalue-syntax.yaml"></a>
 
-```yaml
-
-  StaticValue: String
-
+```
+  [StaticValue](#cfn-quicksight-dataset-datasetdatefiltervalue-staticvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datasetdatefiltervalue-properties"></a>
 
-`StaticValue`
-
+`StaticValue`  <a name="cfn-quicksight-dataset-datasetdatefiltervalue-staticvalue"></a>
 A static date value used for filtering.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetDateFilterCondition
-
-DataSetDateRangeFilterCondition
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,83 +2,60 @@
 title: "AWS::IVSChat::LoggingConfiguration DestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVSChat::LoggingConfiguration DestinationConfiguration
+<a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration"></a>
 
-The DestinationConfiguration property type describes a location where chat logs will be stored. Each member
-represents the configuration of one log destination. For logging, you define only one type of
-destination.
+The DestinationConfiguration property type describes a location where chat logs will be stored. Each member represents the configuration of one log destination. For logging, you define only one type of destination.
 
 ## Syntax
+<a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLogs" : CloudWatchLogsDestinationConfiguration,
-  "Firehose" : FirehoseDestinationConfiguration,
-  "S3" : S3DestinationConfiguration
+  "[CloudWatchLogs](#cfn-ivschat-loggingconfiguration-destinationconfiguration-cloudwatchlogs)" : {{CloudWatchLogsDestinationConfiguration}},
+  "[Firehose](#cfn-ivschat-loggingconfiguration-destinationconfiguration-firehose)" : {{FirehoseDestinationConfiguration}},
+  "[S3](#cfn-ivschat-loggingconfiguration-destinationconfiguration-s3)" : {{S3DestinationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLogs:
-    CloudWatchLogsDestinationConfiguration
-  Firehose:
-    FirehoseDestinationConfiguration
-  S3:
-    S3DestinationConfiguration
-
+```
+  [CloudWatchLogs](#cfn-ivschat-loggingconfiguration-destinationconfiguration-cloudwatchlogs): {{
+    CloudWatchLogsDestinationConfiguration}}
+  [Firehose](#cfn-ivschat-loggingconfiguration-destinationconfiguration-firehose): {{
+    FirehoseDestinationConfiguration}}
+  [S3](#cfn-ivschat-loggingconfiguration-destinationconfiguration-s3): {{
+    S3DestinationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration-properties"></a>
 
-`CloudWatchLogs`
+`CloudWatchLogs`  <a name="cfn-ivschat-loggingconfiguration-destinationconfiguration-cloudwatchlogs"></a>
+An Amazon CloudWatch Logs destination configuration where chat activity will be logged.
+*Required*: No
+*Type*: [CloudWatchLogsDestinationConfiguration](aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An Amazon CloudWatch Logs destination configuration where chat activity will be
-logged.
+`Firehose`  <a name="cfn-ivschat-loggingconfiguration-destinationconfiguration-firehose"></a>
+An Amazon Kinesis Data Firehose destination configuration where chat activity will be logged.
+*Required*: No
+*Type*: [FirehoseDestinationConfiguration](aws-properties-ivschat-loggingconfiguration-firehosedestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudWatchLogsDestinationConfiguration](aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Firehose`
-
-An Amazon Kinesis Data Firehose destination configuration where chat activity will be
-logged.
-
-_Required_: No
-
-_Type_: [FirehoseDestinationConfiguration](aws-properties-ivschat-loggingconfiguration-firehosedestinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3`
-
+`S3`  <a name="cfn-ivschat-loggingconfiguration-destinationconfiguration-s3"></a>
 An Amazon S3 destination configuration where chat activity will be logged.
-
-_Required_: No
-
-_Type_: [S3DestinationConfiguration](aws-properties-ivschat-loggingconfiguration-s3destinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogsDestinationConfiguration
-
-FirehoseDestinationConfiguration
+*Required*: No
+*Type*: [S3DestinationConfiguration](aws-properties-ivschat-loggingconfiguration-s3destinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,69 +2,52 @@
 title: "AWS::RTBFabric::Link LinkAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link LinkAttributes
+<a name="aws-properties-rtbfabric-link-linkattributes"></a>
 
 Describes the attributes of a link.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-link-linkattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-link-linkattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomerProvidedId" : String,
-  "ResponderErrorMasking" : [ ResponderErrorMaskingForHttpCode, ... ]
+  "[CustomerProvidedId](#cfn-rtbfabric-link-linkattributes-customerprovidedid)" : {{String}},
+  "[ResponderErrorMasking](#cfn-rtbfabric-link-linkattributes-respondererrormasking)" : {{[ ResponderErrorMaskingForHttpCode, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-link-linkattributes-syntax.yaml"></a>
 
-```yaml
-
-  CustomerProvidedId: String
-  ResponderErrorMasking:
-    - ResponderErrorMaskingForHttpCode
-
+```
+  [CustomerProvidedId](#cfn-rtbfabric-link-linkattributes-customerprovidedid): {{String}}
+  [ResponderErrorMasking](#cfn-rtbfabric-link-linkattributes-respondererrormasking): {{
+    - ResponderErrorMaskingForHttpCode}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-link-linkattributes-properties"></a>
 
-`CustomerProvidedId`
-
+`CustomerProvidedId`  <a name="cfn-rtbfabric-link-linkattributes-customerprovidedid"></a>
 The customer-provided unique identifier of the link.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ResponderErrorMasking`
-
+`ResponderErrorMasking`  <a name="cfn-rtbfabric-link-linkattributes-respondererrormasking"></a>
 Describes the masking for HTTP error codes.
-
-_Required_: No
-
-_Type_: Array of [ResponderErrorMaskingForHttpCode](aws-properties-rtbfabric-link-respondererrormaskingforhttpcode.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LinkApplicationLogSampling
-
-LinkLogSettings
+*Required*: No
+*Type*: Array of [ResponderErrorMaskingForHttpCode](aws-properties-rtbfabric-link-respondererrormaskingforhttpcode.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

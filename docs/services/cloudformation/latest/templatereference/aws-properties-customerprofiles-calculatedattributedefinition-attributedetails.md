@@ -2,77 +2,54 @@
 title: "AWS::CustomerProfiles::CalculatedAttributeDefinition AttributeDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::CalculatedAttributeDefinition AttributeDetails
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributedetails"></a>
 
-Mathematical expression and a list of attribute items specified in that
-expression.
+Mathematical expression and a list of attribute items specified in that expression.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributedetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributedetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : [ AttributeItem, ... ],
-  "Expression" : String
+  "[Attributes](#cfn-customerprofiles-calculatedattributedefinition-attributedetails-attributes)" : {{[ AttributeItem, ... ]}},
+  "[Expression](#cfn-customerprofiles-calculatedattributedefinition-attributedetails-expression)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributedetails-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
-    - AttributeItem
-  Expression: String
-
+```
+  [Attributes](#cfn-customerprofiles-calculatedattributedefinition-attributedetails-attributes): {{
+    - AttributeItem}}
+  [Expression](#cfn-customerprofiles-calculatedattributedefinition-attributedetails-expression): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributedetails-properties"></a>
 
-`Attributes`
+`Attributes`  <a name="cfn-customerprofiles-calculatedattributedefinition-attributedetails-attributes"></a>
+Mathematical expression and a list of attribute items specified in that expression.
+*Required*: Yes
+*Type*: Array of [AttributeItem](aws-properties-customerprofiles-calculatedattributedefinition-attributeitem.md)
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Mathematical expression and a list of attribute items specified in that
-expression.
-
-_Required_: Yes
-
-_Type_: Array of [AttributeItem](aws-properties-customerprofiles-calculatedattributedefinition-attributeitem.md)
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Expression`
-
-Mathematical expression that is performed on attribute items provided in the attribute
-list. Each element in the expression should follow the structure of
-\\"{ObjectTypeName.AttributeName}\\".
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CustomerProfiles::CalculatedAttributeDefinition
-
-AttributeItem
+`Expression`  <a name="cfn-customerprofiles-calculatedattributedefinition-attributedetails-expression"></a>
+Mathematical expression that is performed on attribute items provided in the attribute list. Each element in the expression should follow the structure of \\"{ObjectTypeName.AttributeName}\\".
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

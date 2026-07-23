@@ -2,91 +2,60 @@
 title: "AWS::Kendra::DataSource WebCrawlerSeedUrlConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource WebCrawlerSeedUrlConfiguration
+<a name="aws-properties-kendra-datasource-webcrawlerseedurlconfiguration"></a>
 
-Provides the configuration information of the seed or starting point URLs to
-crawl.
+Provides the configuration information of the seed or starting point URLs to crawl.
 
-_When selecting websites to index, you must adhere to the [Amazon Acceptable Use Policy](https://aws.amazon.com/aup) and all other_
-_Amazon terms. Remember that you must only use the Amazon Kendra web crawler to index_
-_your own webpages, or webpages that you have authorization to index._
+ *When selecting websites to index, you must adhere to the [Amazon Acceptable Use Policy](https://aws.amazon.com/aup/) and all other Amazon terms. Remember that you must only use the Amazon Kendra web crawler to index your own webpages, or webpages that you have authorization to index.*
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-webcrawlerseedurlconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-webcrawlerseedurlconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SeedUrls" : [ String, ... ],
-  "WebCrawlerMode" : String
+  "[SeedUrls](#cfn-kendra-datasource-webcrawlerseedurlconfiguration-seedurls)" : {{[ String, ... ]}},
+  "[WebCrawlerMode](#cfn-kendra-datasource-webcrawlerseedurlconfiguration-webcrawlermode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-webcrawlerseedurlconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SeedUrls:
-    - String
-  WebCrawlerMode: String
-
+```
+  [SeedUrls](#cfn-kendra-datasource-webcrawlerseedurlconfiguration-seedurls): {{
+    - String}}
+  [WebCrawlerMode](#cfn-kendra-datasource-webcrawlerseedurlconfiguration-webcrawlermode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-webcrawlerseedurlconfiguration-properties"></a>
 
-`SeedUrls`
-
+`SeedUrls`  <a name="cfn-kendra-datasource-webcrawlerseedurlconfiguration-seedurls"></a>
 The list of seed or starting point URLs of the websites you want to crawl.
-
 The list can include a maximum of 100 seed URLs.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WebCrawlerMode`
-
+`WebCrawlerMode`  <a name="cfn-kendra-datasource-webcrawlerseedurlconfiguration-webcrawlermode"></a>
 You can choose one of the following modes:
-
-- `HOST_ONLY`—crawl only the website host names. For
-example, if the seed URL is "abc.example.com", then only URLs with host name
-"abc.example.com" are crawled.
-
-- `SUBDOMAINS`—crawl the website host names with subdomains.
-For example, if the seed URL is "abc.example.com", then "a.abc.example.com" and
-"b.abc.example.com" are also crawled.
-
-- `EVERYTHING`—crawl the website host names with subdomains
-and other domains that the web pages link to.
-
++ `HOST_ONLY`—crawl only the website host names. For example, if the seed URL is "abc.example.com", then only URLs with host name "abc.example.com" are crawled.
++ `SUBDOMAINS`—crawl the website host names with subdomains. For example, if the seed URL is "abc.example.com", then "a.abc.example.com" and "b.abc.example.com" are also crawled.
++ `EVERYTHING`—crawl the website host names with subdomains and other domains that the web pages link to.
 The default mode is set to `HOST_ONLY`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HOST_ONLY | SUBDOMAINS | EVERYTHING`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WebCrawlerConfiguration
-
-WebCrawlerSiteMapsConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `HOST_ONLY | SUBDOMAINS | EVERYTHING`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

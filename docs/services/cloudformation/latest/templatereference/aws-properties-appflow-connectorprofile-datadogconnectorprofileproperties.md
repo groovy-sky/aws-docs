@@ -2,61 +2,47 @@
 title: "AWS::AppFlow::ConnectorProfile DatadogConnectorProfileProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile DatadogConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties"></a>
 
-The connector-specific profile properties required by Datadog.
+ The connector-specific profile properties required by Datadog.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "InstanceUrl" : String
+  "[InstanceUrl](#cfn-appflow-connectorprofile-datadogconnectorprofileproperties-instanceurl)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties-syntax.yaml"></a>
 
-```yaml
-
-  InstanceUrl: String
-
+```
+  [InstanceUrl](#cfn-appflow-connectorprofile-datadogconnectorprofileproperties-instanceurl): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties-properties"></a>
 
-`InstanceUrl`
-
-The location of the Datadog resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`InstanceUrl`  <a name="cfn-appflow-connectorprofile-datadogconnectorprofileproperties-instanceurl"></a>
+ The location of the Datadog resource.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [DatadogConnectorProfileProperties](../../../../reference/appflow/1-0/apireference/api-datadogconnectorprofileproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatadogConnectorProfileCredentials
-
-DynatraceConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofileproperties--seealso"></a>
++ [DatadogConnectorProfileProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogConnectorProfileProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

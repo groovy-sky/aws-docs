@@ -2,78 +2,59 @@
 title: "AWS::QuickSight::Dashboard AxisLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard AxisLabelOptions
+<a name="aws-properties-quicksight-dashboard-axislabeloptions"></a>
 
 The label options for a chart axis. You must specify the field that the label is targeted to.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-axislabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-axislabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplyTo" : AxisLabelReferenceOptions,
-  "CustomLabel" : String,
-  "FontConfiguration" : FontConfiguration
+  "[ApplyTo](#cfn-quicksight-dashboard-axislabeloptions-applyto)" : {{AxisLabelReferenceOptions}},
+  "[CustomLabel](#cfn-quicksight-dashboard-axislabeloptions-customlabel)" : {{String}},
+  "[FontConfiguration](#cfn-quicksight-dashboard-axislabeloptions-fontconfiguration)" : {{FontConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-axislabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  ApplyTo:
-    AxisLabelReferenceOptions
-  CustomLabel: String
-  FontConfiguration:
-    FontConfiguration
-
+```
+  [ApplyTo](#cfn-quicksight-dashboard-axislabeloptions-applyto): {{
+    AxisLabelReferenceOptions}}
+  [CustomLabel](#cfn-quicksight-dashboard-axislabeloptions-customlabel): {{String}}
+  [FontConfiguration](#cfn-quicksight-dashboard-axislabeloptions-fontconfiguration): {{
+    FontConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-axislabeloptions-properties"></a>
 
-`ApplyTo`
-
+`ApplyTo`  <a name="cfn-quicksight-dashboard-axislabeloptions-applyto"></a>
 The options that indicate which field the label belongs to.
+*Required*: No
+*Type*: [AxisLabelReferenceOptions](aws-properties-quicksight-dashboard-axislabelreferenceoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisLabelReferenceOptions](aws-properties-quicksight-dashboard-axislabelreferenceoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomLabel`
-
+`CustomLabel`  <a name="cfn-quicksight-dashboard-axislabeloptions-customlabel"></a>
 The text for the axis label.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FontConfiguration`
-
+`FontConfiguration`  <a name="cfn-quicksight-dashboard-axislabeloptions-fontconfiguration"></a>
 The font configuration of the axis label.
-
-_Required_: No
-
-_Type_: [FontConfiguration](aws-properties-quicksight-dashboard-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AxisDisplayRange
-
-AxisLabelReferenceOptions
+*Required*: No
+*Type*: [FontConfiguration](aws-properties-quicksight-dashboard-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

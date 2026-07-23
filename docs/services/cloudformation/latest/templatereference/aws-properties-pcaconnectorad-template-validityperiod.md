@@ -2,77 +2,52 @@
 title: "AWS::PCAConnectorAD::Template ValidityPeriod"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template ValidityPeriod
+<a name="aws-properties-pcaconnectorad-template-validityperiod"></a>
 
-Information describing the end of the validity period of the certificate. This parameter
-sets the “Not After” date for the certificate. Certificate validity is the period of time
-during which a certificate is valid. Validity can be expressed as an explicit date and time
-when the certificate expires, or as a span of time after issuance, stated in hours, days,
-months, or years. For more information, see Validity in RFC 5280. This value is unaffected
-when ValidityNotBefore is also specified. For example, if Validity is set to 20 days in the
-future, the certificate will expire 20 days from issuance time regardless of the
-ValidityNotBefore value.
+Information describing the end of the validity period of the certificate. This parameter sets the “Not After” date for the certificate. Certificate validity is the period of time during which a certificate is valid. Validity can be expressed as an explicit date and time when the certificate expires, or as a span of time after issuance, stated in hours, days, months, or years. For more information, see Validity in RFC 5280. This value is unaffected when ValidityNotBefore is also specified. For example, if Validity is set to 20 days in the future, the certificate will expire 20 days from issuance time regardless of the ValidityNotBefore value.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-validityperiod-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-validityperiod-syntax.json"></a>
 
-```json
-
+```
 {
-  "Period" : Number,
-  "PeriodType" : String
+  "[Period](#cfn-pcaconnectorad-template-validityperiod-period)" : {{Number}},
+  "[PeriodType](#cfn-pcaconnectorad-template-validityperiod-periodtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-validityperiod-syntax.yaml"></a>
 
-```yaml
-
-  Period: Number
-  PeriodType: String
-
+```
+  [Period](#cfn-pcaconnectorad-template-validityperiod-period): {{Number}}
+  [PeriodType](#cfn-pcaconnectorad-template-validityperiod-periodtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-validityperiod-properties"></a>
 
-`Period`
-
+`Period`  <a name="cfn-pcaconnectorad-template-validityperiod-period"></a>
 The numeric value for the validity period.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `8766000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `8766000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PeriodType`
-
+`PeriodType`  <a name="cfn-pcaconnectorad-template-validityperiod-periodtype"></a>
 The unit of time. You can select hours, days, weeks, months, and years.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HOURS | DAYS | WEEKS | MONTHS | YEARS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TemplateV4
-
-AWS::PCAConnectorAD::TemplateGroupAccessControlEntry
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HOURS | DAYS | WEEKS | MONTHS | YEARS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

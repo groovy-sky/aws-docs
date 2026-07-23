@@ -2,62 +2,44 @@
 title: "AWS::Elasticsearch::Domain ColdStorageOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain ColdStorageOptions
+<a name="aws-properties-elasticsearch-domain-coldstorageoptions"></a>
 
-Specifies options for cold storage. For more information, see [Cold storage for Amazon\
-Elasticsearch Service](../../../elasticsearch-service/latest/developerguide/cold-storage.md).
+Specifies options for cold storage. For more information, see [Cold storage for Amazon Elasticsearch Service](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/cold-storage.html).
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-Elasticsearch. For more information about the service rename, see [New resource\
-types](../../../opensearch-service/latest/developerguide/rename.md#rename-resource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and Elasticsearch. For more information about the service rename, see [New resource types](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-resource) in the *Amazon OpenSearch Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticsearch-domain-coldstorageoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticsearch-domain-coldstorageoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-elasticsearch-domain-coldstorageoptions-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticsearch-domain-coldstorageoptions-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-elasticsearch-domain-coldstorageoptions-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticsearch-domain-coldstorageoptions-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-elasticsearch-domain-coldstorageoptions-enabled"></a>
 Whether to enable or disable cold storage on the domain. You must enable UltraWarm storage in order to enable cold storage.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CognitoOptions
-
-DomainEndpointOptions
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,52 @@
 title: "AWS::SSMContacts::Plan Stage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMContacts::Plan Stage
+<a name="aws-properties-ssmcontacts-plan-stage"></a>
 
-A set amount of time that an escalation plan or engagement plan engages the specified
-contacts or contact methods.
+A set amount of time that an escalation plan or engagement plan engages the specified contacts or contact methods.
 
 ## Syntax
+<a name="aws-properties-ssmcontacts-plan-stage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmcontacts-plan-stage-syntax.json"></a>
 
-```json
-
+```
 {
-  "DurationInMinutes" : Integer,
-  "Targets" : [ Targets, ... ]
+  "[DurationInMinutes](#cfn-ssmcontacts-plan-stage-durationinminutes)" : {{Integer}},
+  "[Targets](#cfn-ssmcontacts-plan-stage-targets)" : {{[ Targets, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmcontacts-plan-stage-syntax.yaml"></a>
 
-```yaml
-
-  DurationInMinutes: Integer
-  Targets:
-    - Targets
-
+```
+  [DurationInMinutes](#cfn-ssmcontacts-plan-stage-durationinminutes): {{Integer}}
+  [Targets](#cfn-ssmcontacts-plan-stage-targets): {{
+    - Targets}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmcontacts-plan-stage-properties"></a>
 
-`DurationInMinutes`
+`DurationInMinutes`  <a name="cfn-ssmcontacts-plan-stage-durationinminutes"></a>
+The time to wait until beginning the next stage. The duration can only be set to 0 if a target is specified.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The time to wait until beginning the next stage. The duration can only be set to 0 if a
-target is specified.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Targets`
-
-The contacts or contact methods that the escalation plan or engagement plan is
-engaging.
-
-_Required_: No
-
-_Type_: [Array](aws-properties-ssmcontacts-plan-targets.md) of [Targets](aws-properties-ssmcontacts-plan-targets.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContactTargetInfo
-
-Targets
+`Targets`  <a name="cfn-ssmcontacts-plan-stage-targets"></a>
+The contacts or contact methods that the escalation plan or engagement plan is engaging.
+*Required*: No
+*Type*: [Array](aws-properties-ssmcontacts-plan-targets.md) of [Targets](aws-properties-ssmcontacts-plan-targets.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

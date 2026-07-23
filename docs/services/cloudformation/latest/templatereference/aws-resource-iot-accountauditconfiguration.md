@@ -2,130 +2,100 @@
 title: "AWS::IoT::AccountAuditConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::AccountAuditConfiguration
+<a name="aws-resource-iot-accountauditconfiguration"></a>
 
-Use the `AWS::IoT::AccountAuditConfiguration` resource to configure or
-reconfigure the Device Defender audit settings for your account. Settings include how audit
-notifications are sent and which audit checks are enabled or disabled. For API reference,
-see [UpdateAccountAuditConfiguration](../../../../reference/iot/latest/apireference/api-updateaccountauditconfiguration.md) and for detailed information on all available
-audit checks, see [Audit\
-checks](../../../iot/latest/developerguide/device-defender-audit-checks.md).
+Use the `AWS::IoT::AccountAuditConfiguration` resource to configure or reconfigure the Device Defender audit settings for your account. Settings include how audit notifications are sent and which audit checks are enabled or disabled. For API reference, see [UpdateAccountAuditConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAccountAuditConfiguration.html) and for detailed information on all available audit checks, see [Audit checks](https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-audit-checks.html).
 
 ## Syntax
+<a name="aws-resource-iot-accountauditconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iot-accountauditconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoT::AccountAuditConfiguration",
   "Properties" : {
-      "AccountId" : String,
-      "AuditCheckConfigurations" : AuditCheckConfigurations,
-      "AuditNotificationTargetConfigurations" : AuditNotificationTargetConfigurations,
-      "RoleArn" : String
+      "[AccountId](#cfn-iot-accountauditconfiguration-accountid)" : {{String}},
+      "[AuditCheckConfigurations](#cfn-iot-accountauditconfiguration-auditcheckconfigurations)" : {{AuditCheckConfigurations}},
+      "[AuditNotificationTargetConfigurations](#cfn-iot-accountauditconfiguration-auditnotificationtargetconfigurations)" : {{AuditNotificationTargetConfigurations}},
+      "[RoleArn](#cfn-iot-accountauditconfiguration-rolearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iot-accountauditconfiguration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoT::AccountAuditConfiguration
 Properties:
-  AccountId: String
-  AuditCheckConfigurations:
-    AuditCheckConfigurations
-  AuditNotificationTargetConfigurations:
-    AuditNotificationTargetConfigurations
-  RoleArn: String
-
+  [AccountId](#cfn-iot-accountauditconfiguration-accountid): {{String}}
+  [AuditCheckConfigurations](#cfn-iot-accountauditconfiguration-auditcheckconfigurations): {{
+    AuditCheckConfigurations}}
+  [AuditNotificationTargetConfigurations](#cfn-iot-accountauditconfiguration-auditnotificationtargetconfigurations): {{
+    AuditNotificationTargetConfigurations}}
+  [RoleArn](#cfn-iot-accountauditconfiguration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-iot-accountauditconfiguration-properties"></a>
 
-`AccountId`
+`AccountId`  <a name="cfn-iot-accountauditconfiguration-accountid"></a>
+The ID of the account. You can use the expression `!Sub "${AWS::AccountId}"` to use your account ID.
+*Required*: Yes
+*Type*: String
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ID of the account. You can use the expression `!Sub "${AWS::AccountId}"`
-to use your account ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AuditCheckConfigurations`
-
+`AuditCheckConfigurations`  <a name="cfn-iot-accountauditconfiguration-auditcheckconfigurations"></a>
 Specifies which audit checks are enabled and disabled for this account.
-
-Some data collection might start immediately when certain checks are enabled. When a
-check is disabled, any data collected so far in relation to the check is deleted. To
-disable a check, set the value of the `Enabled:` key to
-`false`.
-
+Some data collection might start immediately when certain checks are enabled. When a check is disabled, any data collected so far in relation to the check is deleted. To disable a check, set the value of the `Enabled:` key to `false`.
 If an enabled check is removed from the template, it will also be disabled.
+You can't disable a check if it's used by any scheduled audit. You must delete the check from the scheduled audit or delete the scheduled audit itself to disable the check.
+For more information on available audit checks see [AWS::IoT::AccountAuditConfiguration AuditCheckConfigurations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.html)
+*Required*: Yes
+*Type*: [AuditCheckConfigurations](aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You can't disable a check if it's used by any scheduled audit. You must delete the check
-from the scheduled audit or delete the scheduled audit itself to disable the check.
-
-For more information on available audit checks see [AWS::IoT::AccountAuditConfiguration AuditCheckConfigurations](../userguide/aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.md)
-
-_Required_: Yes
-
-_Type_: [AuditCheckConfigurations](aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuditNotificationTargetConfigurations`
-
+`AuditNotificationTargetConfigurations`  <a name="cfn-iot-accountauditconfiguration-auditnotificationtargetconfigurations"></a>
 Information about the targets to which audit notifications are sent.
+*Required*: No
+*Type*: [AuditNotificationTargetConfigurations](aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AuditNotificationTargetConfigurations](aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the role that grants permission to AWS IoT to access information about your devices, policies, certificates, and other items as
-required when performing an audit.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RoleArn`  <a name="cfn-iot-accountauditconfiguration-rolearn"></a>
+The Amazon Resource Name (ARN) of the role that grants permission to AWS IoT to access information about your devices, policies, certificates, and other items as required when performing an audit.
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iot-accountauditconfiguration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iot-accountauditconfiguration-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the account ID.
 
 ## Examples
+<a name="aws-resource-iot-accountauditconfiguration--examples"></a>
+
+###
+<a name="aws-resource-iot-accountauditconfiguration--examples--"></a>
 
 #### JSON
+<a name="aws-resource-iot-accountauditconfiguration--examples----json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT AccountAuditConfiguration Sample Template",
@@ -202,9 +172,9 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 ```
 
 #### YAML
+<a name="aws-resource-iot-accountauditconfiguration--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT AccountAuditConfiguration Sample Template
 Resources:
@@ -256,23 +226,10 @@ Resources:
 ```
 
 ## See also
+<a name="aws-resource-iot-accountauditconfiguration--seealso"></a>
 
-When you use CloudFormation to perform drift detection for
-`AccountAuditConfiguration`, it won't compare values that aren't part of
-the stack template. In `AccountAuditConfiguration`, specifying a
-configuration for every check is optional, and skipped checks are interpreted as
-disabled. To have accurate drift detection with CloudFormation, include configurations
-(enabled or disabled) for all the 14 audit checks in your template. For more information
-on the audit checks see [AWS::IoT::AccountAuditConfiguration AuditCheckConfigurations](../userguide/aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.md).
+When you use CloudFormation to perform drift detection for `AccountAuditConfiguration`, it won't compare values that aren't part of the stack template. In `AccountAuditConfiguration`, specifying a configuration for every check is optional, and skipped checks are interpreted as disabled. To have accurate drift detection with CloudFormation, include configurations (enabled or disabled) for all the 14 audit checks in your template. For more information on the audit checks see [AWS::IoT::AccountAuditConfiguration AuditCheckConfigurations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.html).
 
-For more information, see [Detecting\
-unmanaged configuration changes to stacks and resources](../userguide/using-cfn-stack-drift.md) in the _user_
-_guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS IoT
-
-AuditCheckConfiguration
+For more information, see [Detecting unmanaged configuration changes to stacks and resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html) in the *user guide*.
 
 All content copied from https://docs.aws.amazon.com/.

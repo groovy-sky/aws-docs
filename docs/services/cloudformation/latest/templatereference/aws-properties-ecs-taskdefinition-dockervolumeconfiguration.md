@@ -2,130 +2,79 @@
 title: "AWS::ECS::TaskDefinition DockerVolumeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition DockerVolumeConfiguration
+<a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration"></a>
 
-The `DockerVolumeConfiguration` property specifies a Docker volume
-configuration and is used when you use Docker volumes. Docker volumes are only supported
-when you are using the EC2 launch type. Windows containers only support the use of the
-`local` driver. To use bind mounts, specify a `host`
-instead.
+The `DockerVolumeConfiguration` property specifies a Docker volume configuration and is used when you use Docker volumes. Docker volumes are only supported when you are using the EC2 launch type. Windows containers only support the use of the `local` driver. To use bind mounts, specify a `host` instead.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Autoprovision" : Boolean,
-  "Driver" : String,
-  "DriverOpts" : {Key: Value, ...},
-  "Labels" : {Key: Value, ...},
-  "Scope" : String
+  "[Autoprovision](#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision)" : {{Boolean}},
+  "[Driver](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver)" : {{String}},
+  "[DriverOpts](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Labels](#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Scope](#cfn-ecs-taskdefinition-dockervolumeconfiguration-scope)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Autoprovision: Boolean
-  Driver: String
-  DriverOpts:
-    Key: Value
-  Labels:
-    Key: Value
-  Scope: String
-
+```
+  [Autoprovision](#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision): {{Boolean}}
+  [Driver](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver): {{String}}
+  [DriverOpts](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts): {{
+    {{Key}}: {{Value}}}}
+  [Labels](#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels): {{
+    {{Key}}: {{Value}}}}
+  [Scope](#cfn-ecs-taskdefinition-dockervolumeconfiguration-scope): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration-properties"></a>
 
-`Autoprovision`
-
-If this value is `true`, the Docker volume is created if it doesn't already
-exist.
-
-###### Note
-
+`Autoprovision`  <a name="cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision"></a>
+If this value is `true`, the Docker volume is created if it doesn't already exist.
 This field is only used if the `scope` is `shared`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Driver`  <a name="cfn-ecs-taskdefinition-dockervolumeconfiguration-driver"></a>
+The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement. If the driver was installed using the Docker plugin CLI, use `docker plugin ls` to retrieve the driver name from your container instance. If the driver was installed using another method, use Docker plugin discovery to retrieve the driver name. This parameter maps to `Driver` in the docker container create command and the `xxdriver` option to docker volume create.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Boolean
+`DriverOpts`  <a name="cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts"></a>
+A map of Docker driver-specific options passed through. This parameter maps to `DriverOpts` in the docker create-volume command and the `xxopt` option to docker volume create.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Labels`  <a name="cfn-ecs-taskdefinition-dockervolumeconfiguration-labels"></a>
+Custom metadata to add to your Docker volume. This parameter maps to `Labels` in the docker container create command and the `xxlabel` option to docker volume create.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`Driver`
-
-The Docker volume driver to use. The driver value must match the driver name provided
-by Docker because it is used for task placement. If the driver was installed using the
-Docker plugin CLI, use `docker plugin ls` to retrieve the driver name from
-your container instance. If the driver was installed using another method, use Docker
-plugin discovery to retrieve the driver name. This parameter maps to `Driver`
-in the docker container create command and the `xxdriver` option to docker
-volume create.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DriverOpts`
-
-A map of Docker driver-specific options passed through. This parameter maps to
-`DriverOpts` in the docker create-volume command and the
-`xxopt` option to docker volume create.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Labels`
-
-Custom metadata to add to your Docker volume. This parameter maps to
-`Labels` in the docker container create command and the
-`xxlabel` option to docker volume create.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Scope`
-
-The scope for the Docker volume that determines its lifecycle. Docker volumes that are
-scoped to a `task` are automatically provisioned when the task starts and
-destroyed when the task stops. Docker volumes that are scoped as `shared`
-persist after the task stops.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `task | shared`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Device
-
-EFSVolumeConfiguration
+`Scope`  <a name="cfn-ecs-taskdefinition-dockervolumeconfiguration-scope"></a>
+The scope for the Docker volume that determines its lifecycle. Docker volumes that are scoped to a `task` are automatically provisioned when the task starts and destroyed when the task stops. Docker volumes that are scoped as `shared` persist after the task stops.
+*Required*: No
+*Type*: String
+*Allowed values*: `task | shared`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

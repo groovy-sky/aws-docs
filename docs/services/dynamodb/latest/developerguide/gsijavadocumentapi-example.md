@@ -3,35 +3,20 @@ title: "Example: Global Secondary Indexes using the AWS SDK for Java document AP
 ---
 
 # Example: Global Secondary Indexes using the AWS SDK for Java document API
+<a name="GSIJavaDocumentAPI.Example"></a>
 
-The following Java code example shows how to work with global secondary indexes. The
-example creates a table named `Issues`, which might be used in a simple bug
-tracking system for software development. The partition key is `IssueId` and
-the sort key is `Title`. There are three global secondary indexes on this
-table:
+The following Java code example shows how to work with global secondary indexes. The example creates a table named `Issues`, which might be used in a simple bug tracking system for software development. The partition key is `IssueId` and the sort key is `Title`. There are three global secondary indexes on this table:
++ `CreateDateIndex` — The partition key is `CreateDate` and the sort key is `IssueId`. In addition to the table keys, the attributes `Description` and `Status` are projected into the index.
++ `TitleIndex` — The partition key is `Title` and the sort key is `IssueId`. No attributes other than the table keys are projected into the index.
++ `DueDateIndex` — The partition key is `DueDate`, and there is no sort key. All of the table attributes are projected into the index.
 
-- `CreateDateIndex` — The partition key is
-`CreateDate` and the sort key is `IssueId`. In
-addition to the table keys, the attributes `Description` and
-`Status` are projected into the index.
+After the `Issues` table is created, the program loads the table with data representing software bug reports. It then queries the data using the global secondary indexes. Finally, the program deletes the `Issues` table.
 
-- `TitleIndex` — The partition key is `Title` and the sort key is
-`IssueId`. No attributes other than the table keys are projected
-into the index.
+For step-by-step instructions for testing the following example, see [Java code examples](CodeSamples.Java.md).
 
-- `DueDateIndex` — The partition key is `DueDate`, and there is no
-sort key. All of the table attributes are projected into the index.
+**Example**
 
-After the `Issues` table is created, the program loads the table with data
-representing software bug reports. It then queries the data using the global secondary
-indexes. Finally, the program deletes the `Issues` table.
-
-For step-by-step instructions for testing the following example, see [Java code examples](codesamples-java.md).
-
-###### Example
-
-```java
-
+```
 package com.amazonaws.codesamples.document;
 
 import java.util.ArrayList;
@@ -154,18 +139,18 @@ public class DocumentAPIGlobalSecondaryIndexExample {
 
         QuerySpec querySpec = new QuerySpec();
 
-        if (indexName == "CreateDateIndex") {
+        if ("CreateDateIndex".equals(indexName)) {
             System.out.println("Issues filed on 2013-11-01");
             querySpec.withKeyConditionExpression("CreateDate = :v_date and begins_with(IssueId, :v_issue)")
                     .withValueMap(new ValueMap().withString(":v_date", "2013-11-01").withString(":v_issue", "A-"));
             items = index.query(querySpec);
-        } else if (indexName == "TitleIndex") {
+        } else if ("TitleIndex".equals(indexName)) {
             System.out.println("Compilation errors");
             querySpec.withKeyConditionExpression("Title = :v_title and begins_with(IssueId, :v_issue)")
                     .withValueMap(
                             new ValueMap().withString(":v_title", "Compilation error").withString(":v_issue", "A-"));
             items = index.query(querySpec);
-        } else if (indexName == "DueDateIndex") {
+        } else if ("DueDateIndex".equals(indexName)) {
             System.out.println("Items that are due on 2013-11-30");
             querySpec.withKeyConditionExpression("DueDate = :v_date")
                     .withValueMap(new ValueMap().withString(":v_date", "2013-11-30"));
@@ -243,13 +228,6 @@ public class DocumentAPIGlobalSecondaryIndexExample {
     }
 
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Global Secondary Indexes: Java
-
-Global Secondary Indexes: .NET
 
 All content copied from https://docs.aws.amazon.com/.

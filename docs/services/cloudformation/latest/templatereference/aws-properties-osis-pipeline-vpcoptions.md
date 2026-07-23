@@ -2,102 +2,73 @@
 title: "AWS::OSIS::Pipeline VpcOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OSIS::Pipeline VpcOptions
+<a name="aws-properties-osis-pipeline-vpcoptions"></a>
 
-Options that specify the subnets and security groups for an OpenSearch Ingestion
-VPC endpoint.
+Options that specify the subnets and security groups for an OpenSearch Ingestion VPC endpoint.
 
 ## Syntax
+<a name="aws-properties-osis-pipeline-vpcoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-osis-pipeline-vpcoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ],
-  "VpcAttachmentOptions" : VpcAttachmentOptions,
-  "VpcEndpointManagement" : String
+  "[SecurityGroupIds](#cfn-osis-pipeline-vpcoptions-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-osis-pipeline-vpcoptions-subnetids)" : {{[ String, ... ]}},
+  "[VpcAttachmentOptions](#cfn-osis-pipeline-vpcoptions-vpcattachmentoptions)" : {{VpcAttachmentOptions}},
+  "[VpcEndpointManagement](#cfn-osis-pipeline-vpcoptions-vpcendpointmanagement)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-osis-pipeline-vpcoptions-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-  VpcAttachmentOptions:
-    VpcAttachmentOptions
-  VpcEndpointManagement: String
-
+```
+  [SecurityGroupIds](#cfn-osis-pipeline-vpcoptions-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-osis-pipeline-vpcoptions-subnetids): {{
+    - String}}
+  [VpcAttachmentOptions](#cfn-osis-pipeline-vpcoptions-vpcattachmentoptions): {{
+    VpcAttachmentOptions}}
+  [VpcEndpointManagement](#cfn-osis-pipeline-vpcoptions-vpcendpointmanagement): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-osis-pipeline-vpcoptions-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-osis-pipeline-vpcoptions-securitygroupids"></a>
 A list of security groups associated with the VPC endpoint.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `11`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `11`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-osis-pipeline-vpcoptions-subnetids"></a>
 A list of subnet IDs associated with the VPC endpoint.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `15`
+*Maximum*: `24`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `15`
-
-_Maximum_: `24`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcAttachmentOptions`
-
+`VpcAttachmentOptions`  <a name="cfn-osis-pipeline-vpcoptions-vpcattachmentoptions"></a>
 Options for attaching a VPC to a pipeline.
+*Required*: No
+*Type*: [VpcAttachmentOptions](aws-properties-osis-pipeline-vpcattachmentoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VpcAttachmentOptions](aws-properties-osis-pipeline-vpcattachmentoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcEndpointManagement`
-
+`VpcEndpointManagement`  <a name="cfn-osis-pipeline-vpcoptions-vpcendpointmanagement"></a>
 Defines whether you or Amazon OpenSearch Ingestion service create and manage the VPC endpoint configured for the pipeline.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CUSTOMER | SERVICE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcEndpoint
-
-Next
+*Required*: No
+*Type*: String
+*Allowed values*: `CUSTOMER | SERVICE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

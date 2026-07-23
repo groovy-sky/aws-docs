@@ -2,66 +2,50 @@
 title: "AWS::Omics::WorkflowVersion SourceReference"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::WorkflowVersion SourceReference
+<a name="aws-properties-omics-workflowversion-sourcereference"></a>
 
 Contains information about the source reference in a code repository, such as a branch, tag, or commit.
 
 ## Syntax
+<a name="aws-properties-omics-workflowversion-sourcereference-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-workflowversion-sourcereference-syntax.json"></a>
 
-```json
-
+```
 {
-  "type" : String,
-  "value" : String
+  "[type](#cfn-omics-workflowversion-sourcereference-type)" : {{String}},
+  "[value](#cfn-omics-workflowversion-sourcereference-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-workflowversion-sourcereference-syntax.yaml"></a>
 
-```yaml
-
-  type: String
-  value: String
-
+```
+  [type](#cfn-omics-workflowversion-sourcereference-type): {{String}}
+  [value](#cfn-omics-workflowversion-sourcereference-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-workflowversion-sourcereference-properties"></a>
 
-`type`
-
+`type`  <a name="cfn-omics-workflowversion-sourcereference-type"></a>
 The type of source reference, such as branch, tag, or commit.
+*Required*: No
+*Type*: String
+*Allowed values*: `BRANCH | TAG | COMMIT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BRANCH | TAG | COMMIT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`value`
-
+`value`  <a name="cfn-omics-workflowversion-sourcereference-value"></a>
 The value of the source reference, such as the branch name, tag name, or commit ID.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RegistryMapping
-
-WorkflowParameter
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

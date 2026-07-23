@@ -2,269 +2,184 @@
 title: "AWS::SageMaker::Cluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Cluster
+<a name="aws-resource-sagemaker-cluster"></a>
 
-Creates an Amazon SageMaker HyperPod cluster. SageMaker HyperPod is a capability of SageMaker for creating and
-managing persistent clusters for developing large machine learning models, such as large
-language models (LLMs) and diffusion models. To learn more, see [Amazon SageMaker HyperPod](../../../sagemaker/latest/dg/sagemaker-hyperpod.md) in the
-_Amazon SageMaker Developer Guide_.
+Creates an Amazon SageMaker HyperPod cluster. SageMaker HyperPod is a capability of SageMaker for creating and managing persistent clusters for developing large machine learning models, such as large language models (LLMs) and diffusion models. To learn more, see [Amazon SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod.html) in the *Amazon SageMaker Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-sagemaker-cluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-cluster-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::Cluster",
   "Properties" : {
-      "AutoScaling" : ClusterAutoScalingConfig,
-      "ClusterName" : String,
-      "ClusterRole" : String,
-      "InstanceGroups" : [ ClusterInstanceGroup, ... ],
-      "NodeProvisioningMode" : String,
-      "NodeRecovery" : String,
-      "Orchestrator" : Orchestrator,
-      "RestrictedInstanceGroups" : [ ClusterRestrictedInstanceGroup, ... ],
-      "Tags" : [ Tag, ... ],
-      "TieredStorageConfig" : TieredStorageConfig,
-      "VpcConfig" : VpcConfig
+      "[AutoScaling](#cfn-sagemaker-cluster-autoscaling)" : {{ClusterAutoScalingConfig}},
+      "[ClusterName](#cfn-sagemaker-cluster-clustername)" : {{String}},
+      "[ClusterRole](#cfn-sagemaker-cluster-clusterrole)" : {{String}},
+      "[InstanceGroups](#cfn-sagemaker-cluster-instancegroups)" : {{[ ClusterInstanceGroup, ... ]}},
+      "[NodeProvisioningMode](#cfn-sagemaker-cluster-nodeprovisioningmode)" : {{String}},
+      "[NodeRecovery](#cfn-sagemaker-cluster-noderecovery)" : {{String}},
+      "[Orchestrator](#cfn-sagemaker-cluster-orchestrator)" : {{Orchestrator}},
+      "[RestrictedInstanceGroups](#cfn-sagemaker-cluster-restrictedinstancegroups)" : {{[ ClusterRestrictedInstanceGroup, ... ]}},
+      "[RestrictedInstanceGroupsConfig](#cfn-sagemaker-cluster-restrictedinstancegroupsconfig)" : {{RestrictedInstanceGroupsConfig}},
+      "[Tags](#cfn-sagemaker-cluster-tags)" : {{[ Tag, ... ]}},
+      "[TieredStorageConfig](#cfn-sagemaker-cluster-tieredstorageconfig)" : {{TieredStorageConfig}},
+      "[VpcConfig](#cfn-sagemaker-cluster-vpcconfig)" : {{VpcConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-cluster-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::Cluster
 Properties:
-  AutoScaling:
-    ClusterAutoScalingConfig
-  ClusterName: String
-  ClusterRole: String
-  InstanceGroups:
-    - ClusterInstanceGroup
-  NodeProvisioningMode: String
-  NodeRecovery: String
-  Orchestrator:
-    Orchestrator
-  RestrictedInstanceGroups:
-    - ClusterRestrictedInstanceGroup
-  Tags:
-    - Tag
-  TieredStorageConfig:
-    TieredStorageConfig
-  VpcConfig:
-    VpcConfig
-
+  [AutoScaling](#cfn-sagemaker-cluster-autoscaling): {{
+    ClusterAutoScalingConfig}}
+  [ClusterName](#cfn-sagemaker-cluster-clustername): {{String}}
+  [ClusterRole](#cfn-sagemaker-cluster-clusterrole): {{String}}
+  [InstanceGroups](#cfn-sagemaker-cluster-instancegroups): {{
+    - ClusterInstanceGroup}}
+  [NodeProvisioningMode](#cfn-sagemaker-cluster-nodeprovisioningmode): {{String}}
+  [NodeRecovery](#cfn-sagemaker-cluster-noderecovery): {{String}}
+  [Orchestrator](#cfn-sagemaker-cluster-orchestrator): {{
+    Orchestrator}}
+  [RestrictedInstanceGroups](#cfn-sagemaker-cluster-restrictedinstancegroups): {{
+    - ClusterRestrictedInstanceGroup}}
+  [RestrictedInstanceGroupsConfig](#cfn-sagemaker-cluster-restrictedinstancegroupsconfig): {{
+    RestrictedInstanceGroupsConfig}}
+  [Tags](#cfn-sagemaker-cluster-tags): {{
+    - Tag}}
+  [TieredStorageConfig](#cfn-sagemaker-cluster-tieredstorageconfig): {{
+    TieredStorageConfig}}
+  [VpcConfig](#cfn-sagemaker-cluster-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-cluster-properties"></a>
 
-`AutoScaling`
+`AutoScaling`  <a name="cfn-sagemaker-cluster-autoscaling"></a>
+The autoscaling configuration for the cluster. Enables automatic scaling of cluster nodes based on workload demand using a Karpenter-based system.
+*Required*: No
+*Type*: [ClusterAutoScalingConfig](aws-properties-sagemaker-cluster-clusterautoscalingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The autoscaling configuration for the cluster. Enables automatic scaling of cluster
-nodes based on workload demand using a Karpenter-based system.
-
-_Required_: No
-
-_Type_: [ClusterAutoScalingConfig](aws-properties-sagemaker-cluster-clusterautoscalingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClusterName`
-
+`ClusterName`  <a name="cfn-sagemaker-cluster-clustername"></a>
 The name of the SageMaker HyperPod cluster.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ClusterRole`  <a name="cfn-sagemaker-cluster-clusterrole"></a>
+The Amazon Resource Name (ARN) of the IAM role that HyperPod assumes to perform cluster autoscaling operations. This role must have permissions for `sagemaker:BatchAddClusterNodes` and `sagemaker:BatchDeleteClusterNodes`. This is only required when autoscaling is enabled and when HyperPod is performing autoscaling operations.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`InstanceGroups`  <a name="cfn-sagemaker-cluster-instancegroups"></a>
+The instance groups of the SageMaker HyperPod cluster. To delete an instance group, remove it from the array.
+*Required*: No
+*Type*: Array of [ClusterInstanceGroup](aws-properties-sagemaker-cluster-clusterinstancegroup.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$`
+`NodeProvisioningMode`  <a name="cfn-sagemaker-cluster-nodeprovisioningmode"></a>
+The mode for provisioning nodes in the cluster. You can specify the following modes:
++ **Continuous**: Scaling behavior that enables 1) concurrent operation execution within instance groups, 2) continuous retry mechanisms for failed operations, 3) enhanced customer visibility into cluster events through detailed event streams, 4) partial provisioning capabilities. Your clusters and instance groups remain `InService` while scaling. This mode is only supported for EKS orchestrated clusters.
+*Required*: No
+*Type*: String
+*Allowed values*: `Continuous`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`NodeRecovery`  <a name="cfn-sagemaker-cluster-noderecovery"></a>
+Specifies whether to enable or disable the automatic node recovery feature of SageMaker HyperPod. Available values are `Automatic` for enabling and `None` for disabling.
+*Required*: No
+*Type*: String
+*Allowed values*: `Automatic | None`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `63`
+`Orchestrator`  <a name="cfn-sagemaker-cluster-orchestrator"></a>
+The orchestrator type for the SageMaker HyperPod cluster. Currently, `'eks'` is the only available option.
+*Required*: No
+*Type*: [Orchestrator](aws-properties-sagemaker-cluster-orchestrator.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`RestrictedInstanceGroups`  <a name="cfn-sagemaker-cluster-restrictedinstancegroups"></a>
+The specialized instance groups for training models like Amazon Nova to be created in the SageMaker HyperPod cluster.
+*Required*: No
+*Type*: Array of [ClusterRestrictedInstanceGroup](aws-properties-sagemaker-cluster-clusterrestrictedinstancegroup.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ClusterRole`
+`RestrictedInstanceGroupsConfig`  <a name="cfn-sagemaker-cluster-restrictedinstancegroupsconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [RestrictedInstanceGroupsConfig](aws-properties-sagemaker-cluster-restrictedinstancegroupsconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of the IAM role that HyperPod assumes to perform cluster
-autoscaling operations. This role must have permissions for
-`sagemaker:BatchAddClusterNodes` and
-`sagemaker:BatchDeleteClusterNodes`. This is only required when autoscaling
-is enabled and when HyperPod is performing autoscaling operations.
+`Tags`  <a name="cfn-sagemaker-cluster-tags"></a>
+A tag object that consists of a key and an optional value, used to manage metadata for SageMaker AWS resources.
+You can add tags to notebook instances, training jobs, hyperparameter tuning jobs, batch transform jobs, models, labeling jobs, work teams, endpoint configurations, and endpoints. For more information on adding tags to SageMaker resources, see [AddTags](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddTags.html).
+For more information on adding metadata to your AWS resources with tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html). For advice on best practices for managing AWS resources with tagging, see [Tagging Best Practices: Implement an Effective AWS Resource Tagging Strategy](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-cluster-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TieredStorageConfig`  <a name="cfn-sagemaker-cluster-tieredstorageconfig"></a>
+The configuration for managed tier checkpointing on the HyperPod cluster. When enabled, this feature uses a multi-tier storage approach for storing model checkpoints, providing faster checkpoint operations and improved fault tolerance across cluster nodes.
+*Required*: No
+*Type*: [TieredStorageConfig](aws-properties-sagemaker-cluster-tieredstorageconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceGroups`
-
-The instance groups of the SageMaker HyperPod cluster. To delete an instance group, remove it from the
-array.
-
-_Required_: No
-
-_Type_: Array of [ClusterInstanceGroup](aws-properties-sagemaker-cluster-clusterinstancegroup.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NodeProvisioningMode`
-
-The mode for provisioning nodes in the cluster. You can specify the following
-modes:
-
-- **Continuous**: Scaling behavior that enables 1)
-concurrent operation execution within instance groups, 2) continuous retry mechanisms
-for failed operations, 3) enhanced customer visibility into cluster events through
-detailed event streams, 4) partial provisioning capabilities. Your clusters and
-instance groups remain `InService` while scaling. This mode is only
-supported for EKS orchestrated clusters.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Continuous`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NodeRecovery`
-
-Specifies whether to enable or disable the automatic node recovery feature of SageMaker HyperPod. Available
-values are `Automatic` for enabling and `None` for disabling.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Automatic | None`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Orchestrator`
-
-The orchestrator type for the SageMaker HyperPod cluster. Currently, `'eks'` is the only available
-option.
-
-_Required_: No
-
-_Type_: [Orchestrator](aws-properties-sagemaker-cluster-orchestrator.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RestrictedInstanceGroups`
-
-The specialized instance groups for training models like Amazon Nova to be created in the
-SageMaker HyperPod cluster.
-
-_Required_: No
-
-_Type_: Array of [ClusterRestrictedInstanceGroup](aws-properties-sagemaker-cluster-clusterrestrictedinstancegroup.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A tag object that consists of a key and an optional value, used to manage metadata
-for SageMaker AWS resources.
-
-You can add tags to notebook instances, training jobs, hyperparameter tuning jobs,
-batch transform jobs, models, labeling jobs, work teams, endpoint configurations, and
-endpoints. For more information on adding tags to SageMaker resources, see [AddTags](../../../../reference/sagemaker/latest/apireference/api-addtags.md).
-
-For more information on adding metadata to your AWS resources with
-tagging, see [Tagging AWS resources](../../../../general/latest/gr/aws-tagging.md). For advice on best practices for
-managing AWS resources with tagging, see [Tagging\
-Best Practices: Implement an Effective AWS Resource Tagging\
-Strategy](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-cluster-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TieredStorageConfig`
-
-The configuration for managed tier checkpointing on the HyperPod cluster. When
-enabled, this feature uses a multi-tier storage approach for storing model checkpoints,
-providing faster checkpoint operations and improved fault tolerance across cluster
-nodes.
-
-_Required_: No
-
-_Type_: [TieredStorageConfig](aws-properties-sagemaker-cluster-tieredstorageconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfig`
-
-Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources
-have access to. You can control access to and from your resources by configuring a VPC.
-For more information, see [Give SageMaker Access to\
-Resources in your Amazon VPC](../../../sagemaker/latest/dg/infrastructure-give-access.md).
-
-_Required_: No
-
-_Type_: [VpcConfig](aws-properties-sagemaker-cluster-vpcconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`VpcConfig`  <a name="cfn-sagemaker-cluster-vpcconfig"></a>
+Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC. For more information, see [Give SageMaker Access to Resources in your Amazon VPC](https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
+*Required*: No
+*Type*: [VpcConfig](aws-properties-sagemaker-cluster-vpcconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sagemaker-cluster-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-cluster-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-cluster-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ClusterArn`
+####
+<a name="aws-resource-sagemaker-cluster-return-values-fn--getatt-fn--getatt"></a>
 
+`ClusterArn`  <a name="ClusterArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the SageMaker HyperPod cluster.
 
-`ClusterStatus`
-
+`ClusterStatus`  <a name="ClusterStatus-fn::getatt"></a>
 The status of the SageMaker HyperPod cluster.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time when the SageMaker HyperPod cluster is created.
 
-`FailureMessage`
-
+`FailureMessage`  <a name="FailureMessage-fn::getatt"></a>
 The failure message of the SageMaker HyperPod cluster.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AlarmDetails
 
 All content copied from https://docs.aws.amazon.com/.

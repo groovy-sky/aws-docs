@@ -2,118 +2,85 @@
 title: "AWS::WAFv2::RuleGroup Cookies"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup Cookies
+<a name="aws-properties-wafv2-rulegroup-cookies"></a>
 
-Inspect the cookies in the web request. You can specify the parts of the cookies to
-inspect and you can narrow the set of cookies to inspect by including or excluding specific
-keys.
+Inspect the cookies in the web request. You can specify the parts of the cookies to inspect and you can narrow the set of cookies to inspect by including or excluding specific keys.
 
-This is used to indicate the web request component to inspect, in the
-`FieldToMatch` specification.
+This is used to indicate the web request component to inspect, in the `FieldToMatch` specification.
 
-Example JSON: `"Cookies": { "MatchPattern": { "All": {} }, "MatchScope": "KEY",
-            "OversizeHandling": "MATCH" }`
+Example JSON: `"Cookies": { "MatchPattern": { "All": {} }, "MatchScope": "KEY", "OversizeHandling": "MATCH" }`
 
 ## Syntax
+<a name="aws-properties-wafv2-rulegroup-cookies-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-rulegroup-cookies-syntax.json"></a>
 
-```json
-
+```
 {
-  "MatchPattern" : CookieMatchPattern,
-  "MatchScope" : String,
-  "OversizeHandling" : String
+  "[MatchPattern](#cfn-wafv2-rulegroup-cookies-matchpattern)" : {{CookieMatchPattern}},
+  "[MatchScope](#cfn-wafv2-rulegroup-cookies-matchscope)" : {{String}},
+  "[OversizeHandling](#cfn-wafv2-rulegroup-cookies-oversizehandling)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-rulegroup-cookies-syntax.yaml"></a>
 
-```yaml
-
-  MatchPattern:
-    CookieMatchPattern
-  MatchScope: String
-  OversizeHandling: String
-
+```
+  [MatchPattern](#cfn-wafv2-rulegroup-cookies-matchpattern): {{
+    CookieMatchPattern}}
+  [MatchScope](#cfn-wafv2-rulegroup-cookies-matchscope): {{String}}
+  [OversizeHandling](#cfn-wafv2-rulegroup-cookies-oversizehandling): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-rulegroup-cookies-properties"></a>
 
-`MatchPattern`
-
+`MatchPattern`  <a name="cfn-wafv2-rulegroup-cookies-matchpattern"></a>
 The filter to use to identify the subset of cookies to inspect in a web request.
-
 You must specify exactly one setting: either `All`, `IncludedCookies`, or `ExcludedCookies`.
-
 Example JSON: `"MatchPattern": { "IncludedCookies": [ "session-id-time", "session-id" ] }`
+*Required*: Yes
+*Type*: [CookieMatchPattern](aws-properties-wafv2-rulegroup-cookiematchpattern.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`MatchScope`  <a name="cfn-wafv2-rulegroup-cookies-matchscope"></a>
+The parts of the cookies to inspect with the rule inspection criteria. If you specify `ALL`, AWS WAF inspects both keys and values.
+`All` does not require a match to be found in the keys and a match to be found in the values. It requires a match to be found in the keys or the values or both. To require a match in the keys and in the values, use a logical `AND` statement to combine two match rules, one that inspects the keys and another that inspects the values.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL | KEY | VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CookieMatchPattern](aws-properties-wafv2-rulegroup-cookiematchpattern.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchScope`
-
-The parts of the cookies to inspect with the rule inspection criteria. If you specify
-`ALL`, AWS WAF inspects both keys and values.
-
-`All` does not require a match to be found in the keys
-and a match to be found in the values. It requires a match to be found in the keys
-or the values or both. To require a match in the keys and in the values, use a logical `AND` statement
-to combine two match rules, one that inspects the keys and another that inspects the values.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL | KEY | VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OversizeHandling`
-
-What AWS WAF should do if the cookies of the request are more numerous or larger than AWS WAF can inspect.
-AWS WAF does not support inspecting the entire contents of request cookies
-when they exceed 8 KB (8192 bytes) or 200 total cookies. The underlying host service forwards a maximum of 200 cookies
-and at most 8 KB of cookie contents to AWS WAF.
-
+`OversizeHandling`  <a name="cfn-wafv2-rulegroup-cookies-oversizehandling"></a>
+What AWS WAF should do if the cookies of the request are more numerous or larger than AWS WAF can inspect. AWS WAF does not support inspecting the entire contents of request cookies when they exceed 8 KB (8192 bytes) or 200 total cookies. The underlying host service forwards a maximum of 200 cookies and at most 8 KB of cookie contents to AWS WAF.
 The options for oversize handling are the following:
-
-- `CONTINUE` \- Inspect the available cookies normally, according to the rule inspection criteria.
-
-- `MATCH` \- Treat the web request as matching the rule statement. AWS WAF
-applies the rule action to the request.
-
-- `NO_MATCH` \- Treat the web request as not matching the rule
-statement.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CONTINUE | MATCH | NO_MATCH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
++ `CONTINUE` - Inspect the available cookies normally, according to the rule inspection criteria.
++ `MATCH` - Treat the web request as matching the rule statement. AWS WAF applies the rule action to the request.
++ `NO_MATCH` - Treat the web request as not matching the rule statement.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CONTINUE | MATCH | NO_MATCH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-wafv2-rulegroup-cookies--examples"></a>
 
 ### Set the Cookies specification
+<a name="aws-properties-wafv2-rulegroup-cookies--examples--Set_the_Cookies_specification"></a>
 
 The following shows an example Cookies field to match specification.
 
 #### YAML
+<a name="aws-properties-wafv2-rulegroup-cookies--examples--Set_the_Cookies_specification--yaml"></a>
 
-```yaml
-
+```
 FieldToMatch:
   Cookies:
     MatchPattern:
@@ -125,9 +92,9 @@ FieldToMatch:
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-rulegroup-cookies--examples--Set_the_Cookies_specification--json"></a>
 
-```json
-
+```
 "FieldToMatch": {
   "Cookies": {
     "MatchPattern": {
@@ -141,11 +108,5 @@ FieldToMatch:
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CookieMatchPattern
-
-CountAction
 
 All content copied from https://docs.aws.amazon.com/.

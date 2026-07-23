@@ -2,91 +2,73 @@
 title: "AWS::EC2::LaunchTemplate CpuOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate CpuOptions
+<a name="aws-properties-ec2-launchtemplate-cpuoptions"></a>
 
-Specifies the CPU options for an instance. For more information, see [Optimize\
-CPU options](../../../ec2/latest/userguide/instance-optimize-cpu.md) in the _Amazon Elastic Compute Cloud User_
-_Guide_.
+Specifies the CPU options for an instance. For more information, see [Optimize CPU options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-optimize-cpu.html) in the *Amazon Elastic Compute Cloud User Guide*.
 
-`CpuOptions` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md).
+`CpuOptions` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-cpuoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-cpuoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AmdSevSnp" : String,
-  "CoreCount" : Integer,
-  "ThreadsPerCore" : Integer
+  "[AmdSevSnp](#cfn-ec2-launchtemplate-cpuoptions-amdsevsnp)" : {{String}},
+  "[CoreCount](#cfn-ec2-launchtemplate-cpuoptions-corecount)" : {{Integer}},
+  "[NestedVirtualization](#cfn-ec2-launchtemplate-cpuoptions-nestedvirtualization)" : {{String}},
+  "[ThreadsPerCore](#cfn-ec2-launchtemplate-cpuoptions-threadspercore)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-cpuoptions-syntax.yaml"></a>
 
-```yaml
-
-  AmdSevSnp: String
-  CoreCount: Integer
-  ThreadsPerCore: Integer
-
+```
+  [AmdSevSnp](#cfn-ec2-launchtemplate-cpuoptions-amdsevsnp): {{String}}
+  [CoreCount](#cfn-ec2-launchtemplate-cpuoptions-corecount): {{Integer}}
+  [NestedVirtualization](#cfn-ec2-launchtemplate-cpuoptions-nestedvirtualization): {{String}}
+  [ThreadsPerCore](#cfn-ec2-launchtemplate-cpuoptions-threadspercore): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-cpuoptions-properties"></a>
 
-`AmdSevSnp`
+`AmdSevSnp`  <a name="cfn-ec2-launchtemplate-cpuoptions-amdsevsnp"></a>
+Indicates whether to enable the instance for AMD SEV-SNP. AMD SEV-SNP is supported with M6a, R6a, and C6a instance types only. For more information, see [AMD SEV-SNP for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sev-snp.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `enabled | disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Indicates whether to enable the instance for AMD SEV-SNP. AMD SEV-SNP is supported
-with M6a, R6a, and C6a instance types only. For more information, see [AMD SEV-SNP for\
-Amazon EC2 instances](../../../ec2/latest/userguide/sev-snp.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `enabled | disabled`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CoreCount`
-
+`CoreCount`  <a name="cfn-ec2-launchtemplate-cpuoptions-corecount"></a>
 The number of CPU cores for the instance.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`NestedVirtualization`  <a name="cfn-ec2-launchtemplate-cpuoptions-nestedvirtualization"></a>
+Indicates whether the instance is enabled for nested virtualization.
+*Required*: No
+*Type*: String
+*Allowed values*: `enabled | disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThreadsPerCore`
-
-The number of threads per CPU core. To disable multithreading for the instance,
-specify a value of `1`. Otherwise, specify the default value of
-`2`.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ThreadsPerCore`  <a name="cfn-ec2-launchtemplate-cpuoptions-threadspercore"></a>
+The number of threads per CPU core. To disable multithreading for the instance, specify a value of `1`. Otherwise, specify the default value of `2`.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Optimize CPU\
-options](../../../ec2/latest/userguide/instance-optimize-cpu.md) in the _Amazon EC2 User Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Cpu
-
-CreditSpecification
+<a name="aws-properties-ec2-launchtemplate-cpuoptions--seealso"></a>
++ [Optimize CPU options](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-optimize-cpu.html) in the *Amazon EC2 User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

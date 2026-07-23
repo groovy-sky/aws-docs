@@ -2,56 +2,43 @@
 title: "AWS::DataZone::EnvironmentActions AwsConsoleLinkParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::EnvironmentActions AwsConsoleLinkParameters
+<a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters"></a>
 
 The parameters of the console link specified as part of the environment action.
 
 ## Syntax
+<a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Uri" : String
+  "[Uri](#cfn-datazone-environmentactions-awsconsolelinkparameters-uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters-syntax.yaml"></a>
 
-```yaml
-
-  Uri: String
-
+```
+  [Uri](#cfn-datazone-environmentactions-awsconsolelinkparameters-uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters-properties"></a>
 
-`Uri`
-
+`Uri`  <a name="cfn-datazone-environmentactions-awsconsolelinkparameters-uri"></a>
 The URI of the console link specified as part of the environment action.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::EnvironmentActions
-
-AWS::DataZone::EnvironmentBlueprintConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

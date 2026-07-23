@@ -2,85 +2,61 @@
 title: "AWS::Batch::JobDefinition Device"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition Device
+<a name="aws-properties-batch-jobdefinition-device"></a>
 
 An object that represents a container instance host device.
 
-###### Note
-
-This object isn't applicable to jobs that are running on Fargate resources and shouldn't
-be provided.
+**Note**
+This object isn't applicable to jobs that are running on Fargate resources and shouldn't be provided.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-device-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-device-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerPath" : String,
-  "HostPath" : String,
-  "Permissions" : [ String, ... ]
+  "[ContainerPath](#cfn-batch-jobdefinition-device-containerpath)" : {{String}},
+  "[HostPath](#cfn-batch-jobdefinition-device-hostpath)" : {{String}},
+  "[Permissions](#cfn-batch-jobdefinition-device-permissions)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-device-syntax.yaml"></a>
 
-```yaml
-
-  ContainerPath: String
-  HostPath: String
-  Permissions:
-    - String
-
+```
+  [ContainerPath](#cfn-batch-jobdefinition-device-containerpath): {{String}}
+  [HostPath](#cfn-batch-jobdefinition-device-hostpath): {{String}}
+  [Permissions](#cfn-batch-jobdefinition-device-permissions): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-device-properties"></a>
 
-`ContainerPath`
+`ContainerPath`  <a name="cfn-batch-jobdefinition-device-containerpath"></a>
+The path inside the container that's used to expose the host device. By default, the `hostPath` value is used.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The path inside the container that's used to expose the host device. By default, the
-`hostPath` value is used.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HostPath`
-
+`HostPath`  <a name="cfn-batch-jobdefinition-device-hostpath"></a>
 The path for the device on the host container instance.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Permissions`
-
-The explicit permissions to provide to the container for the device. By default, the
-container has permissions for `read`, `write`, and `mknod` for
-the device.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerProperties
-
-EcsProperties
+`Permissions`  <a name="cfn-batch-jobdefinition-device-permissions"></a>
+The explicit permissions to provide to the container for the device. By default, the container has permissions for `read`, `write`, and `mknod` for the device.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

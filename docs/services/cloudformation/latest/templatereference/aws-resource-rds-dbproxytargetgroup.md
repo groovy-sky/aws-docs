@@ -2,160 +2,121 @@
 title: "AWS::RDS::DBProxyTargetGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBProxyTargetGroup
+<a name="aws-resource-rds-dbproxytargetgroup"></a>
 
-The `AWS::RDS::DBProxyTargetGroup` resource represents a set of RDS DB
-instances, Aurora DB clusters, or both that a proxy can connect to. Currently, each
-target group is associated with exactly one RDS DB instance or Aurora DB cluster.
+The `AWS::RDS::DBProxyTargetGroup` resource represents a set of RDS DB instances, Aurora DB clusters, or both that a proxy can connect to. Currently, each target group is associated with exactly one RDS DB instance or Aurora DB cluster.
 
-This data type is used as a response element in the
-`DescribeDBProxyTargetGroups` action.
+This data type is used as a response element in the `DescribeDBProxyTargetGroups` action.
 
-For information about RDS Proxy for Amazon RDS, see [Managing Connections with Amazon\
-RDS Proxy](../../../amazonrds/latest/userguide/rds-proxy.md) in the _Amazon RDS User Guide_.
+For information about RDS Proxy for Amazon RDS, see [ Managing Connections with Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html) in the *Amazon RDS User Guide*.
 
-For information about RDS Proxy for Amazon Aurora, see [Managing Connections with\
-Amazon RDS Proxy](../../../amazonrds/latest/aurorauserguide/rds-proxy.md) in the _Amazon Aurora User Guide_.
+For information about RDS Proxy for Amazon Aurora, see [ Managing Connections with Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy.html) in the *Amazon Aurora User Guide*.
 
-For a sample template that creates a DB proxy and registers a DB instance, see
-[Examples](../userguide/aws-resource-rds-dbproxy.md#aws-resource-rds-dbproxy--examples) in AWS::RDS::DBProxy.
+For a sample template that creates a DB proxy and registers a DB instance, see [ Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxy.html#aws-resource-rds-dbproxy--examples) in AWS::RDS::DBProxy.
 
-###### Note
-
-Limitations apply to RDS Proxy, including DB engine version limitations and AWS
-Region limitations.
-
-For information about limitations that apply to RDS Proxy for Amazon RDS, see
-[Limitations for RDS Proxy](../../../amazonrds/latest/userguide/rds-proxy.md#rds-proxy.limitations) in the _Amazon RDS User Guide_.
-
-For information about that apply to RDS Proxy for Amazon Aurora, see [Limitations for RDS Proxy](../../../amazonrds/latest/aurorauserguide/rds-proxy.md#rds-proxy.limitations) in the _Amazon Aurora User Guide_.
+**Note**
+Limitations apply to RDS Proxy, including DB engine version limitations and AWS Region limitations.
+For information about limitations that apply to RDS Proxy for Amazon RDS, see [ Limitations for RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html#rds-proxy.limitations) in the *Amazon RDS User Guide*.
+For information about that apply to RDS Proxy for Amazon Aurora, see [ Limitations for RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy.html#rds-proxy.limitations) in the *Amazon Aurora User Guide*.
 
 ## Syntax
+<a name="aws-resource-rds-dbproxytargetgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rds-dbproxytargetgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::RDS::DBProxyTargetGroup",
   "Properties" : {
-      "ConnectionPoolConfigurationInfo" : ConnectionPoolConfigurationInfoFormat,
-      "DBClusterIdentifiers" : [ String, ... ],
-      "DBInstanceIdentifiers" : [ String, ... ],
-      "DBProxyName" : String,
-      "TargetGroupName" : String
+      "[ConnectionPoolConfigurationInfo](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfo)" : {{ConnectionPoolConfigurationInfoFormat}},
+      "[DBClusterIdentifiers](#cfn-rds-dbproxytargetgroup-dbclusteridentifiers)" : {{[ String, ... ]}},
+      "[DBInstanceIdentifiers](#cfn-rds-dbproxytargetgroup-dbinstanceidentifiers)" : {{[ String, ... ]}},
+      "[DBProxyName](#cfn-rds-dbproxytargetgroup-dbproxyname)" : {{String}},
+      "[TargetGroupName](#cfn-rds-dbproxytargetgroup-targetgroupname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rds-dbproxytargetgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::RDS::DBProxyTargetGroup
 Properties:
-  ConnectionPoolConfigurationInfo:
-    ConnectionPoolConfigurationInfoFormat
-  DBClusterIdentifiers:
-    - String
-  DBInstanceIdentifiers:
-    - String
-  DBProxyName: String
-  TargetGroupName: String
-
+  [ConnectionPoolConfigurationInfo](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfo): {{
+    ConnectionPoolConfigurationInfoFormat}}
+  [DBClusterIdentifiers](#cfn-rds-dbproxytargetgroup-dbclusteridentifiers): {{
+    - String}}
+  [DBInstanceIdentifiers](#cfn-rds-dbproxytargetgroup-dbinstanceidentifiers): {{
+    - String}}
+  [DBProxyName](#cfn-rds-dbproxytargetgroup-dbproxyname): {{String}}
+  [TargetGroupName](#cfn-rds-dbproxytargetgroup-targetgroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-rds-dbproxytargetgroup-properties"></a>
 
-`ConnectionPoolConfigurationInfo`
-
+`ConnectionPoolConfigurationInfo`  <a name="cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfo"></a>
 Displays the settings that control the size and behavior of the connection pool associated with a `DBProxyTarget`.
+*Required*: No
+*Type*: [ConnectionPoolConfigurationInfoFormat](aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConnectionPoolConfigurationInfoFormat](aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DBClusterIdentifiers`
-
+`DBClusterIdentifiers`  <a name="cfn-rds-dbproxytargetgroup-dbclusteridentifiers"></a>
 One or more DB cluster identifiers.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DBInstanceIdentifiers`
-
+`DBInstanceIdentifiers`  <a name="cfn-rds-dbproxytargetgroup-dbinstanceidentifiers"></a>
 One or more DB instance identifiers.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DBProxyName`
-
+`DBProxyName`  <a name="cfn-rds-dbproxytargetgroup-dbproxyname"></a>
 The identifier of the `DBProxy` that is associated with the `DBProxyTargetGroup`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-z][0-z]*`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-z][0-z]*`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TargetGroupName`
-
+`TargetGroupName`  <a name="cfn-rds-dbproxytargetgroup-targetgroupname"></a>
 The identifier for the target group.
-
-###### Note
-
 Currently, this property must be set to `default`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `default`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `default`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-rds-dbproxytargetgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rds-dbproxytargetgroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the target group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-rds-dbproxytargetgroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`TargetGroupArn`
+####
+<a name="aws-resource-rds-dbproxytargetgroup-return-values-fn--getatt-fn--getatt"></a>
 
+`TargetGroupArn`  <a name="TargetGroupArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) representing the target group.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagFormat
-
-ConnectionPoolConfigurationInfoFormat
 
 All content copied from https://docs.aws.amazon.com/.

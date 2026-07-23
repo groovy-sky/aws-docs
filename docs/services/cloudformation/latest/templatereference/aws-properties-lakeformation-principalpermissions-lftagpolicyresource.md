@@ -2,95 +2,79 @@
 title: "AWS::LakeFormation::PrincipalPermissions LFTagPolicyResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::PrincipalPermissions LFTagPolicyResource
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource"></a>
 
 A list of LF-tag conditions that define a resource's LF-tag policy.
 
 A structure that allows an admin to grant user permissions on certain conditions. For example, granting a role access to all columns that do not have the LF-tag 'PII' in tables that have the LF-tag 'Prod'.
 
 ## Syntax
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "CatalogId" : String,
-  "Expression" : [ LFTag, ... ],
-  "ResourceType" : String
+  "[CatalogId](#cfn-lakeformation-principalpermissions-lftagpolicyresource-catalogid)" : {{String}},
+  "[Expression](#cfn-lakeformation-principalpermissions-lftagpolicyresource-expression)" : {{[ LFTag, ... ]}},
+  "[ResourceType](#cfn-lakeformation-principalpermissions-lftagpolicyresource-resourcetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource-syntax.yaml"></a>
 
-```yaml
-
-  CatalogId: String
-  Expression:
-    - LFTag
-  ResourceType: String
-
+```
+  [CatalogId](#cfn-lakeformation-principalpermissions-lftagpolicyresource-catalogid): {{String}}
+  [Expression](#cfn-lakeformation-principalpermissions-lftagpolicyresource-expression): {{
+    - LFTag}}
+  [ResourceType](#cfn-lakeformation-principalpermissions-lftagpolicyresource-resourcetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource-properties"></a>
 
-`CatalogId`
-
+`CatalogId`  <a name="cfn-lakeformation-principalpermissions-lftagpolicyresource-catalogid"></a>
 The identifier for the Data Catalog. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment.
+*Required*: Yes
+*Type*: String
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Expression`
-
+`Expression`  <a name="cfn-lakeformation-principalpermissions-lftagpolicyresource-expression"></a>
 A list of LF-tag conditions that apply to the resource's LF-tag policy.
+*Required*: Yes
+*Type*: Array of [LFTag](aws-properties-lakeformation-principalpermissions-lftag.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of [LFTag](aws-properties-lakeformation-principalpermissions-lftag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceType`
-
+`ResourceType`  <a name="cfn-lakeformation-principalpermissions-lftagpolicyresource-resourcetype"></a>
 The resource type for which the LF-tag policy applies.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DATABASE | TABLE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DATABASE | TABLE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource--examples"></a>
 
 ### Permissions on LF-tag policy resource
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource--examples--Permissions_on_LF-tag_policy_resource"></a>
 
 The following example demonstrates how to grant permissions on a `LFTagPolicy` resource.
 
 #### JSON
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource--examples--Permissions_on_LF-tag_policy_resource--json"></a>
 
-```json
-
+```
 {
   "SamplePermission": {
       "LFTagPolicy": {
@@ -110,9 +94,9 @@ The following example demonstrates how to grant permissions on a `LFTagPolicy` r
 ```
 
 #### YAML
+<a name="aws-properties-lakeformation-principalpermissions-lftagpolicyresource--examples--Permissions_on_LF-tag_policy_resource--yaml"></a>
 
-```yaml
-
+```
 SamplePermission:
   Type: AWS::LakeFormation::PrincipalPermissions
   Properties:
@@ -130,11 +114,5 @@ SamplePermission:
     PermissionsWithGrantOption:
          - "DESCRIBE"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LFTagKeyResource
-
-Resource
 
 All content copied from https://docs.aws.amazon.com/.

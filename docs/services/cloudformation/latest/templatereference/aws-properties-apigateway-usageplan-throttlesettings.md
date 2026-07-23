@@ -2,72 +2,55 @@
 title: "AWS::ApiGateway::UsagePlan ThrottleSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::UsagePlan ThrottleSettings
+<a name="aws-properties-apigateway-usageplan-throttlesettings"></a>
 
-`ThrottleSettings` is a property of the [AWS::ApiGateway::UsagePlan](../userguide/aws-resource-apigateway-usageplan.md) resource that specifies the overall request rate (average requests per second) and burst capacity when users call your REST APIs.
+`ThrottleSettings` is a property of the [AWS::ApiGateway::UsagePlan](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html) resource that specifies the overall request rate (average requests per second) and burst capacity when users call your REST APIs.
 
 ## Syntax
+<a name="aws-properties-apigateway-usageplan-throttlesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigateway-usageplan-throttlesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "BurstLimit" : Integer,
-  "RateLimit" : Number
+  "[BurstLimit](#cfn-apigateway-usageplan-throttlesettings-burstlimit)" : {{Integer}},
+  "[RateLimit](#cfn-apigateway-usageplan-throttlesettings-ratelimit)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigateway-usageplan-throttlesettings-syntax.yaml"></a>
 
-```yaml
-
-  BurstLimit: Integer
-  RateLimit: Number
-
+```
+  [BurstLimit](#cfn-apigateway-usageplan-throttlesettings-burstlimit): {{Integer}}
+  [RateLimit](#cfn-apigateway-usageplan-throttlesettings-ratelimit): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-apigateway-usageplan-throttlesettings-properties"></a>
 
-`BurstLimit`
-
+`BurstLimit`  <a name="cfn-apigateway-usageplan-throttlesettings-burstlimit"></a>
 The API target request burst rate limit. This allows more requests through for a period of time than the target rate limit.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RateLimit`
-
+`RateLimit`  <a name="cfn-apigateway-usageplan-throttlesettings-ratelimit"></a>
 The API target request rate limit.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [UsagePlan](../../../apigateway/latest/api/api-usageplan.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::ApiGateway::UsagePlanKey
+<a name="aws-properties-apigateway-usageplan-throttlesettings--seealso"></a>
++ [UsagePlan](https://docs.aws.amazon.com/apigateway/latest/api/API_UsagePlan.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

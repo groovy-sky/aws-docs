@@ -2,123 +2,107 @@
 title: "AWS::ApiGatewayV2::ApiMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::ApiMapping
+<a name="aws-resource-apigatewayv2-apimapping"></a>
 
-The `AWS::ApiGatewayV2::ApiMapping` resource contains an API mapping.
-An API mapping relates a path of your custom domain name to a stage of your API. A
-custom domain name can have multiple API mappings, but the paths can't overlap. A
-custom domain can map only to APIs of the same protocol type. For more
-information, see [CreateApiMapping](../../../apigatewayv2/latest/api-reference/domainnames-domainname-apimappings.md#CreateApiMapping) in the _Amazon API Gateway V2 API_
-_Reference_.
+The `AWS::ApiGatewayV2::ApiMapping` resource contains an API mapping. An API mapping relates a path of your custom domain name to a stage of your API. A custom domain name can have multiple API mappings, but the paths can't overlap. A custom domain can map only to APIs of the same protocol type. For more information, see [CreateApiMapping](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/domainnames-domainname-apimappings.html#CreateApiMapping) in the *Amazon API Gateway V2 API Reference*.
 
 ## Syntax
+<a name="aws-resource-apigatewayv2-apimapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigatewayv2-apimapping-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGatewayV2::ApiMapping",
   "Properties" : {
-      "ApiId" : String,
-      "ApiMappingKey" : String,
-      "DomainName" : String,
-      "Stage" : String
+      "[ApiId](#cfn-apigatewayv2-apimapping-apiid)" : {{String}},
+      "[ApiMappingKey](#cfn-apigatewayv2-apimapping-apimappingkey)" : {{String}},
+      "[DomainName](#cfn-apigatewayv2-apimapping-domainname)" : {{String}},
+      "[Stage](#cfn-apigatewayv2-apimapping-stage)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigatewayv2-apimapping-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGatewayV2::ApiMapping
 Properties:
-  ApiId: String
-  ApiMappingKey: String
-  DomainName: String
-  Stage: String
-
+  [ApiId](#cfn-apigatewayv2-apimapping-apiid): {{String}}
+  [ApiMappingKey](#cfn-apigatewayv2-apimapping-apimappingkey): {{String}}
+  [DomainName](#cfn-apigatewayv2-apimapping-domainname): {{String}}
+  [Stage](#cfn-apigatewayv2-apimapping-stage): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigatewayv2-apimapping-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-apigatewayv2-apimapping-apiid"></a>
 The API identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApiMappingKey`
-
+`ApiMappingKey`  <a name="cfn-apigatewayv2-apimapping-apimappingkey"></a>
 The API mapping key.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-apigatewayv2-apimapping-domainname"></a>
 The domain name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Stage`
-
+`Stage`  <a name="cfn-apigatewayv2-apimapping-stage"></a>
 The API stage.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigatewayv2-apimapping-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigatewayv2-apimapping-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the API mapping resource ID.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigatewayv2-apimapping-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ApiMappingId`
+####
+<a name="aws-resource-apigatewayv2-apimapping-return-values-fn--getatt-fn--getatt"></a>
 
+`ApiMappingId`  <a name="ApiMappingId-fn::getatt"></a>
 The API mapping resource ID.
 
 ## Examples
+<a name="aws-resource-apigatewayv2-apimapping--examples"></a>
 
 ### API mapping creation example
+<a name="aws-resource-apigatewayv2-apimapping--examples--API_mapping_creation_example"></a>
 
-The following example creates an `ApiMapping` resource
-called `MyApiMapping`.
+The following example creates an `ApiMapping` resource called `MyApiMapping`.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-apimapping--examples--API_mapping_creation_example--json"></a>
 
-```json
-
+```
 {
     "MyApiMapping": {
         "Type": "AWS::ApiGatewayV2::ApiMapping",
@@ -136,27 +120,19 @@ called `MyApiMapping`.
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-apimapping--examples--API_mapping_creation_example--yaml"></a>
 
-```yaml
-
+```
 MyApiMapping:
   Type: 'AWS::ApiGatewayV2::ApiMapping'
   Properties:
     DomainName: mydomainame.us-east-1.com
     ApiId: !Ref MyApi
     Stage: !Ref MyStage
-
 ```
 
 ## See also
-
-- [CreateApiMapping](../../../apigatewayv2/latest/api-reference/domainnames-domainname-apimappings.md#CreateApiMapping) in the _Amazon API_
-_Gateway Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StageOverrides
-
-AWS::ApiGatewayV2::Authorizer
+<a name="aws-resource-apigatewayv2-apimapping--seealso"></a>
++ [CreateApiMapping](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/domainnames-domainname-apimappings.html#CreateApiMapping) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

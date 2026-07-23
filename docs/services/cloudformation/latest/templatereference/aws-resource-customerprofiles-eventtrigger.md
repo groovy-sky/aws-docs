@@ -2,198 +2,141 @@
 title: "AWS::CustomerProfiles::EventTrigger"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventTrigger
+<a name="aws-resource-customerprofiles-eventtrigger"></a>
 
 Specifies the rules to perform an action based on customer ingested data.
 
 ## Syntax
+<a name="aws-resource-customerprofiles-eventtrigger-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-customerprofiles-eventtrigger-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CustomerProfiles::EventTrigger",
   "Properties" : {
-      "Description" : String,
-      "DomainName" : String,
-      "EventTriggerConditions" : [ EventTriggerCondition, ... ],
-      "EventTriggerLimits" : EventTriggerLimits,
-      "EventTriggerName" : String,
-      "ObjectTypeName" : String,
-      "SegmentFilter" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-customerprofiles-eventtrigger-description)" : {{String}},
+      "[DomainName](#cfn-customerprofiles-eventtrigger-domainname)" : {{String}},
+      "[EventTriggerConditions](#cfn-customerprofiles-eventtrigger-eventtriggerconditions)" : {{[ EventTriggerCondition, ... ]}},
+      "[EventTriggerLimits](#cfn-customerprofiles-eventtrigger-eventtriggerlimits)" : {{EventTriggerLimits}},
+      "[EventTriggerName](#cfn-customerprofiles-eventtrigger-eventtriggername)" : {{String}},
+      "[ObjectTypeName](#cfn-customerprofiles-eventtrigger-objecttypename)" : {{String}},
+      "[SegmentFilter](#cfn-customerprofiles-eventtrigger-segmentfilter)" : {{String}},
+      "[Tags](#cfn-customerprofiles-eventtrigger-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-customerprofiles-eventtrigger-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CustomerProfiles::EventTrigger
 Properties:
-  Description: String
-  DomainName: String
-  EventTriggerConditions:
-    - EventTriggerCondition
-  EventTriggerLimits:
-    EventTriggerLimits
-  EventTriggerName: String
-  ObjectTypeName: String
-  SegmentFilter: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-customerprofiles-eventtrigger-description): {{String}}
+  [DomainName](#cfn-customerprofiles-eventtrigger-domainname): {{String}}
+  [EventTriggerConditions](#cfn-customerprofiles-eventtrigger-eventtriggerconditions): {{
+    - EventTriggerCondition}}
+  [EventTriggerLimits](#cfn-customerprofiles-eventtrigger-eventtriggerlimits): {{
+    EventTriggerLimits}}
+  [EventTriggerName](#cfn-customerprofiles-eventtrigger-eventtriggername): {{String}}
+  [ObjectTypeName](#cfn-customerprofiles-eventtrigger-objecttypename): {{String}}
+  [SegmentFilter](#cfn-customerprofiles-eventtrigger-segmentfilter): {{String}}
+  [Tags](#cfn-customerprofiles-eventtrigger-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-customerprofiles-eventtrigger-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-customerprofiles-eventtrigger-description"></a>
 The description of the event trigger.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-customerprofiles-eventtrigger-domainname"></a>
 The unique name of the domain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`EventTriggerConditions`  <a name="cfn-customerprofiles-eventtrigger-eventtriggerconditions"></a>
+A list of conditions that determine when an event should trigger the destination.
+*Required*: Yes
+*Type*: Array of [EventTriggerCondition](aws-properties-customerprofiles-eventtrigger-eventtriggercondition.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`EventTriggerLimits`  <a name="cfn-customerprofiles-eventtrigger-eventtriggerlimits"></a>
+Defines limits controlling whether an event triggers the destination, based on ingestion latency and the number of invocations per profile over specific time periods.
+*Required*: No
+*Type*: [EventTriggerLimits](aws-properties-customerprofiles-eventtrigger-eventtriggerlimits.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EventTriggerConditions`
-
-A list of conditions that determine when an event should trigger the
-destination.
-
-_Required_: Yes
-
-_Type_: Array of [EventTriggerCondition](aws-properties-customerprofiles-eventtrigger-eventtriggercondition.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventTriggerLimits`
-
-Defines limits controlling whether an event triggers the destination, based on
-ingestion latency and the number of invocations per profile over specific time
-periods.
-
-_Required_: No
-
-_Type_: [EventTriggerLimits](aws-properties-customerprofiles-eventtrigger-eventtriggerlimits.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventTriggerName`
-
+`EventTriggerName`  <a name="cfn-customerprofiles-eventtrigger-eventtriggername"></a>
 The unique name of the event trigger.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ObjectTypeName`
-
+`ObjectTypeName`  <a name="cfn-customerprofiles-eventtrigger-objecttypename"></a>
 The unique name of the object type.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z_][a-zA-Z_0-9-]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`SegmentFilter`  <a name="cfn-customerprofiles-eventtrigger-segmentfilter"></a>
+The destination is triggered only for profiles that meet the criteria of a segment definition.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z_][a-zA-Z_0-9-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentFilter`
-
-The destination is triggered only for profiles that meet the criteria of a segment
-definition.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-customerprofiles-eventtrigger-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-customerprofiles-eventtrigger-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-customerprofiles-eventtrigger-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-customerprofiles-eventtrigger-return-values"></a>
 
 ### Ref
+<a name="aws-resource-customerprofiles-eventtrigger-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-customerprofiles-eventtrigger-return-values-fn--getatt"></a>
 
-`CreatedAt`
+####
+<a name="aws-resource-customerprofiles-eventtrigger-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp of when the event trigger was created.
 
-`LastUpdatedAt`
-
+`LastUpdatedAt`  <a name="LastUpdatedAt-fn::getatt"></a>
 The timestamp of when the event trigger was most recently updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-EventTriggerCondition
 
 All content copied from https://docs.aws.amazon.com/.

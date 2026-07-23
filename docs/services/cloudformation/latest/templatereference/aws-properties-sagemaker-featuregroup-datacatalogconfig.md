@@ -2,95 +2,66 @@
 title: "AWS::SageMaker::FeatureGroup DataCatalogConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::FeatureGroup DataCatalogConfig
+<a name="aws-properties-sagemaker-featuregroup-datacatalogconfig"></a>
 
-The meta data of the Glue table which serves as data catalog for the
-`OfflineStore`.
+The meta data of the Glue table which serves as data catalog for the `OfflineStore`.
 
 ## Syntax
+<a name="aws-properties-sagemaker-featuregroup-datacatalogconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-featuregroup-datacatalogconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Catalog" : String,
-  "Database" : String,
-  "TableName" : String
+  "[Catalog](#cfn-sagemaker-featuregroup-datacatalogconfig-catalog)" : {{String}},
+  "[Database](#cfn-sagemaker-featuregroup-datacatalogconfig-database)" : {{String}},
+  "[TableName](#cfn-sagemaker-featuregroup-datacatalogconfig-tablename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-featuregroup-datacatalogconfig-syntax.yaml"></a>
 
-```yaml
-
-  Catalog: String
-  Database: String
-  TableName: String
-
+```
+  [Catalog](#cfn-sagemaker-featuregroup-datacatalogconfig-catalog): {{String}}
+  [Database](#cfn-sagemaker-featuregroup-datacatalogconfig-database): {{String}}
+  [TableName](#cfn-sagemaker-featuregroup-datacatalogconfig-tablename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-featuregroup-datacatalogconfig-properties"></a>
 
-`Catalog`
-
+`Catalog`  <a name="cfn-sagemaker-featuregroup-datacatalogconfig-catalog"></a>
 The name of the Glue table catalog.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF ]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF	]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Database`
-
+`Database`  <a name="cfn-sagemaker-featuregroup-datacatalogconfig-database"></a>
 The name of the Glue table database.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF ]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF	]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TableName`
-
+`TableName`  <a name="cfn-sagemaker-featuregroup-datacatalogconfig-tablename"></a>
 The name of the Glue table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF	]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::FeatureGroup
-
-FeatureDefinition
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF ]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

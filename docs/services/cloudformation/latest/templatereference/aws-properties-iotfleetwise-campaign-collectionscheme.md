@@ -2,68 +2,51 @@
 title: "AWS::IoTFleetWise::Campaign CollectionScheme"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign CollectionScheme
+<a name="aws-properties-iotfleetwise-campaign-collectionscheme"></a>
 
 Specifies what data to collect and how often or when to collect it.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-campaign-collectionscheme-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-campaign-collectionscheme-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionBasedCollectionScheme" : ConditionBasedCollectionScheme,
-  "TimeBasedCollectionScheme" : TimeBasedCollectionScheme
+  "[ConditionBasedCollectionScheme](#cfn-iotfleetwise-campaign-collectionscheme-conditionbasedcollectionscheme)" : {{ConditionBasedCollectionScheme}},
+  "[TimeBasedCollectionScheme](#cfn-iotfleetwise-campaign-collectionscheme-timebasedcollectionscheme)" : {{TimeBasedCollectionScheme}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-campaign-collectionscheme-syntax.yaml"></a>
 
-```yaml
-
-  ConditionBasedCollectionScheme:
-    ConditionBasedCollectionScheme
-  TimeBasedCollectionScheme:
-    TimeBasedCollectionScheme
-
+```
+  [ConditionBasedCollectionScheme](#cfn-iotfleetwise-campaign-collectionscheme-conditionbasedcollectionscheme): {{
+    ConditionBasedCollectionScheme}}
+  [TimeBasedCollectionScheme](#cfn-iotfleetwise-campaign-collectionscheme-timebasedcollectionscheme): {{
+    TimeBasedCollectionScheme}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-campaign-collectionscheme-properties"></a>
 
-`ConditionBasedCollectionScheme`
+`ConditionBasedCollectionScheme`  <a name="cfn-iotfleetwise-campaign-collectionscheme-conditionbasedcollectionscheme"></a>
+ Information about a collection scheme that uses a simple logical expression to recognize what data to collect.
+*Required*: No
+*Type*: [ConditionBasedCollectionScheme](aws-properties-iotfleetwise-campaign-conditionbasedcollectionscheme.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Information about a collection scheme that uses a simple logical expression to
-recognize what data to collect.
-
-_Required_: No
-
-_Type_: [ConditionBasedCollectionScheme](aws-properties-iotfleetwise-campaign-conditionbasedcollectionscheme.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TimeBasedCollectionScheme`
-
-Information about a collection scheme that uses a time period to decide how often to
-collect data.
-
-_Required_: No
-
-_Type_: [TimeBasedCollectionScheme](aws-properties-iotfleetwise-campaign-timebasedcollectionscheme.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTFleetWise::Campaign
-
-ConditionBasedCollectionScheme
+`TimeBasedCollectionScheme`  <a name="cfn-iotfleetwise-campaign-collectionscheme-timebasedcollectionscheme"></a>
+ Information about a collection scheme that uses a time period to decide how often to collect data.
+*Required*: No
+*Type*: [TimeBasedCollectionScheme](aws-properties-iotfleetwise-campaign-timebasedcollectionscheme.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

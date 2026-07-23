@@ -2,90 +2,66 @@
 title: "AWS::AppFlow::ConnectorProfile ServiceNowConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile ServiceNowConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials"></a>
 
-The connector-specific profile credentials required when using ServiceNow.
+ The connector-specific profile credentials required when using ServiceNow.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "OAuth2Credentials" : OAuth2Credentials,
-  "Password" : String,
-  "Username" : String
+  "[OAuth2Credentials](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-oauth2credentials)" : {{OAuth2Credentials}},
+  "[Password](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-password)" : {{String}},
+  "[Username](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  OAuth2Credentials:
-    OAuth2Credentials
-  Password: String
-  Username: String
-
+```
+  [OAuth2Credentials](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-oauth2credentials): {{
+    OAuth2Credentials}}
+  [Password](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-password): {{String}}
+  [Username](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials-properties"></a>
 
-`OAuth2Credentials`
+`OAuth2Credentials`  <a name="cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-oauth2credentials"></a>
+ The OAuth 2.0 credentials required to authenticate the user.
+*Required*: No
+*Type*: [OAuth2Credentials](aws-properties-appflow-connectorprofile-oauth2credentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The OAuth 2.0 credentials required to authenticate the user.
+`Password`  <a name="cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-password"></a>
+ The password that corresponds to the user name.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [OAuth2Credentials](aws-properties-appflow-connectorprofile-oauth2credentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Password`
-
-The password that corresponds to the user name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
-The name of the user.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Username`  <a name="cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-username"></a>
+ The name of the user.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ServiceNowConnectorProfileCredentials](../../../../reference/appflow/1-0/apireference/api-servicenowconnectorprofilecredentials.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SAPODataConnectorProfileProperties
-
-ServiceNowConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials--seealso"></a>
++ [ServiceNowConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ServiceNowConnectorProfileCredentials.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

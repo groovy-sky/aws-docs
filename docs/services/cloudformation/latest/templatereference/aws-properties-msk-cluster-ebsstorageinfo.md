@@ -2,69 +2,52 @@
 title: "AWS::MSK::Cluster EBSStorageInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster EBSStorageInfo
+<a name="aws-properties-msk-cluster-ebsstorageinfo"></a>
 
 Contains information about the EBS storage volumes attached to the broker nodes.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-ebsstorageinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-ebsstorageinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "ProvisionedThroughput" : ProvisionedThroughput,
-  "VolumeSize" : Integer
+  "[ProvisionedThroughput](#cfn-msk-cluster-ebsstorageinfo-provisionedthroughput)" : {{ProvisionedThroughput}},
+  "[VolumeSize](#cfn-msk-cluster-ebsstorageinfo-volumesize)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-ebsstorageinfo-syntax.yaml"></a>
 
-```yaml
-
-  ProvisionedThroughput:
-    ProvisionedThroughput
-  VolumeSize: Integer
-
+```
+  [ProvisionedThroughput](#cfn-msk-cluster-ebsstorageinfo-provisionedthroughput): {{
+    ProvisionedThroughput}}
+  [VolumeSize](#cfn-msk-cluster-ebsstorageinfo-volumesize): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-ebsstorageinfo-properties"></a>
 
-`ProvisionedThroughput`
-
+`ProvisionedThroughput`  <a name="cfn-msk-cluster-ebsstorageinfo-provisionedthroughput"></a>
 EBS volume provisioned throughput information.
+*Required*: No
+*Type*: [ProvisionedThroughput](aws-properties-msk-cluster-provisionedthroughput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProvisionedThroughput](aws-properties-msk-cluster-provisionedthroughput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VolumeSize`
-
+`VolumeSize`  <a name="cfn-msk-cluster-ebsstorageinfo-volumesize"></a>
 The size in GiB of the EBS volume for the data drive on each broker node.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `16384`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectivityInfo
-
-EncryptionAtRest
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `16384`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

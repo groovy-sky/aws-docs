@@ -2,55 +2,42 @@
 title: "AWS::Bedrock::DataAutomationProject ChannelLabelingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject ChannelLabelingConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-channellabelingconfiguration"></a>
 
-Enables or disables channel labeling. Channel labeling, when enabled will assign a number to each audio channel, and indicate which channel is being used in each portion of the transcript.
-This appears in the response as "ch\_0" for the first channel, and "ch\_1" for the second.
+Enables or disables channel labeling. Channel labeling, when enabled will assign a number to each audio channel, and indicate which channel is being used in each portion of the transcript. This appears in the response as "ch\_0" for the first channel, and "ch\_1" for the second.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-channellabelingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-channellabelingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "State" : String
+  "[State](#cfn-bedrock-dataautomationproject-channellabelingconfiguration-state)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-channellabelingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  State: String
-
+```
+  [State](#cfn-bedrock-dataautomationproject-channellabelingconfiguration-state): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-channellabelingconfiguration-properties"></a>
 
-`State`
-
+`State`  <a name="cfn-bedrock-dataautomationproject-channellabelingconfiguration-state"></a>
 State of channel labeling, either enabled or disabled.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BlueprintItem
-
-CustomOutputConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

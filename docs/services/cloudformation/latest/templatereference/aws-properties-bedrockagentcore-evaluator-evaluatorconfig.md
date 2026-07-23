@@ -2,66 +2,51 @@
 title: "AWS::BedrockAgentCore::Evaluator EvaluatorConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator EvaluatorConfig
+<a name="aws-properties-bedrockagentcore-evaluator-evaluatorconfig"></a>
 
-The configuration of the evaluator, including LLM-as-a-Judge settings for custom evaluators.
+ The configuration of the evaluator, including LLM-as-a-Judge settings for custom evaluators.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-evaluator-evaluatorconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-evaluator-evaluatorconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CodeBased" : CodeBasedEvaluatorConfig,
-  "LlmAsAJudge" : LlmAsAJudgeEvaluatorConfig
+  "[CodeBased](#cfn-bedrockagentcore-evaluator-evaluatorconfig-codebased)" : {{CodeBasedEvaluatorConfig}},
+  "[LlmAsAJudge](#cfn-bedrockagentcore-evaluator-evaluatorconfig-llmasajudge)" : {{LlmAsAJudgeEvaluatorConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-evaluator-evaluatorconfig-syntax.yaml"></a>
 
-```yaml
-
-  CodeBased:
-    CodeBasedEvaluatorConfig
-  LlmAsAJudge:
-    LlmAsAJudgeEvaluatorConfig
-
+```
+  [CodeBased](#cfn-bedrockagentcore-evaluator-evaluatorconfig-codebased): {{
+    CodeBasedEvaluatorConfig}}
+  [LlmAsAJudge](#cfn-bedrockagentcore-evaluator-evaluatorconfig-llmasajudge): {{
+    LlmAsAJudgeEvaluatorConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-evaluator-evaluatorconfig-properties"></a>
 
-`CodeBased`
-
+`CodeBased`  <a name="cfn-bedrockagentcore-evaluator-evaluatorconfig-codebased"></a>
 Property description not available.
+*Required*: No
+*Type*: [CodeBasedEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CodeBasedEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LlmAsAJudge`
-
-The LLM-as-a-Judge configuration that uses a language model to evaluate agent performance based on custom instructions and rating scales.
-
-_Required_: No
-
-_Type_: [LlmAsAJudgeEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CodeBasedEvaluatorConfig
-
-EvaluatorModelConfig
+`LlmAsAJudge`  <a name="cfn-bedrockagentcore-evaluator-evaluatorconfig-llmasajudge"></a>
+ The LLM-as-a-Judge configuration that uses a language model to evaluate agent performance based on custom instructions and rating scales.
+*Required*: No
+*Type*: [LlmAsAJudgeEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-llmasajudgeevaluatorconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

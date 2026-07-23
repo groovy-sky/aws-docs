@@ -2,100 +2,70 @@
 title: "AWS::SES::ContactList Topic"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ContactList Topic
+<a name="aws-properties-ses-contactlist-topic"></a>
 
-An interest group, theme, or label within a list. Lists can have multiple
-topics.
+An interest group, theme, or label within a list. Lists can have multiple topics.
 
 ## Syntax
+<a name="aws-properties-ses-contactlist-topic-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-contactlist-topic-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultSubscriptionStatus" : String,
-  "Description" : String,
-  "DisplayName" : String,
-  "TopicName" : String
+  "[DefaultSubscriptionStatus](#cfn-ses-contactlist-topic-defaultsubscriptionstatus)" : {{String}},
+  "[Description](#cfn-ses-contactlist-topic-description)" : {{String}},
+  "[DisplayName](#cfn-ses-contactlist-topic-displayname)" : {{String}},
+  "[TopicName](#cfn-ses-contactlist-topic-topicname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-contactlist-topic-syntax.yaml"></a>
 
-```yaml
-
-  DefaultSubscriptionStatus: String
-  Description: String
-  DisplayName: String
-  TopicName: String
-
+```
+  [DefaultSubscriptionStatus](#cfn-ses-contactlist-topic-defaultsubscriptionstatus): {{String}}
+  [Description](#cfn-ses-contactlist-topic-description): {{String}}
+  [DisplayName](#cfn-ses-contactlist-topic-displayname): {{String}}
+  [TopicName](#cfn-ses-contactlist-topic-topicname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-contactlist-topic-properties"></a>
 
-`DefaultSubscriptionStatus`
+`DefaultSubscriptionStatus`  <a name="cfn-ses-contactlist-topic-defaultsubscriptionstatus"></a>
+The default subscription status to be applied to a contact if the contact has not noted their preference for subscribing to a topic.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The default subscription status to be applied to a contact if the contact has not
-noted their preference for subscribing to a topic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-ses-contactlist-topic-description"></a>
 A description of what the topic is about, which the contact will see.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-ses-contactlist-topic-displayname"></a>
 The name of the topic the contact will see.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TopicName`
-
+`TopicName`  <a name="cfn-ses-contactlist-topic-topicname"></a>
 The name of the topic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]{1,64}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SES::CustomVerificationEmailTemplate
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]{1,64}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

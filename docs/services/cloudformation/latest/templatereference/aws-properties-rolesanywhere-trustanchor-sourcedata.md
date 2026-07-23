@@ -2,69 +2,51 @@
 title: "AWS::RolesAnywhere::TrustAnchor SourceData"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RolesAnywhere::TrustAnchor SourceData
+<a name="aws-properties-rolesanywhere-trustanchor-sourcedata"></a>
 
-A union object representing the data field of the TrustAnchor depending on its type
+ A union object representing the data field of the TrustAnchor depending on its type
 
 ## Syntax
+<a name="aws-properties-rolesanywhere-trustanchor-sourcedata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rolesanywhere-trustanchor-sourcedata-syntax.json"></a>
 
-```json
-
+```
 {
-  "AcmPcaArn" : String,
-  "X509CertificateData" : String
+  "[AcmPcaArn](#cfn-rolesanywhere-trustanchor-sourcedata-acmpcaarn)" : {{String}},
+  "[X509CertificateData](#cfn-rolesanywhere-trustanchor-sourcedata-x509certificatedata)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rolesanywhere-trustanchor-sourcedata-syntax.yaml"></a>
 
-```yaml
-
-  AcmPcaArn: String
-  X509CertificateData: String
-
+```
+  [AcmPcaArn](#cfn-rolesanywhere-trustanchor-sourcedata-acmpcaarn): {{String}}
+  [X509CertificateData](#cfn-rolesanywhere-trustanchor-sourcedata-x509certificatedata): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rolesanywhere-trustanchor-sourcedata-properties"></a>
 
-`AcmPcaArn`
+`AcmPcaArn`  <a name="cfn-rolesanywhere-trustanchor-sourcedata-acmpcaarn"></a>
+ The root certificate of the AWS Private Certificate Authority specified by this ARN is used in trust validation for temporary credential requests. Included for trust anchors of type `AWS_ACM_PCA`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The root certificate of the AWS Private Certificate Authority specified by this ARN is used in trust
-validation for temporary credential requests. Included for trust anchors of type `AWS_ACM_PCA`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`X509CertificateData`
-
+`X509CertificateData`  <a name="cfn-rolesanywhere-trustanchor-sourcedata-x509certificatedata"></a>
 The PEM-encoded data for the certificate anchor. Included for trust anchors of type `CERTIFICATE_BUNDLE`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `8000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Source
-
-Tag
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `8000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

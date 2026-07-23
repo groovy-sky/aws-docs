@@ -1,23 +1,21 @@
 ---
-title: "Query a DynamoDB table using a begins_with condition with an AWS SDK"
+title: "Query a DynamoDB table using a begins\\_with condition with an AWS SDK"
 ---
 
 # Query a DynamoDB table using a begins\_with condition with an AWS SDK
+<a name="example_dynamodb_Scenarios_QueryWithBeginsWithCondition_section"></a>
 
 The following code examples show how to query a table using a begins\_with condition.
++ Use the begins\_with function in a key condition expression.
++ Filter items based on a prefix pattern in the sort key.
 
-- Use the begins\_with function in a key condition expression.
-
-- Filter items based on a prefix pattern in the sort key.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for Java 2.x.
 
-```java
-
+```
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -75,13 +73,10 @@ import java.util.logging.Logger;
             throw e;
         }
     }
-
 ```
-
 Demonstrate using begins\_with with different prefix lengths with AWS SDK for Java 2.x.
 
-```java
-
+```
     public static void main(String[] args) {
         try {
             CodeSampleUtils.BeginsWithQueryConfig config = CodeSampleUtils.BeginsWithQueryConfig.fromArgs(args);
@@ -135,21 +130,16 @@ Demonstrate using begins\_with with different prefix lengths with AWS SDK for Ja
             LOGGER.log(Level.SEVERE, "Unexpected error", e);
         }
     }
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
-
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for JavaScript.
 
-```javascript
-
+```
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -197,21 +187,16 @@ async function queryWithBeginsWith(
     throw error;
   }
 }
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for Python (Boto3).
 
-```python
-
+```
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -242,21 +227,11 @@ def query_with_begins_with(
     response = table.query(KeyConditionExpression=key_condition)
 
     return response
-
 ```
++  For API details, see [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
-in _AWS SDK for Python (Boto3) API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Query a table using a Global Secondary Index
-
-Query a table using a date range
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,230 +2,165 @@
 title: "AWS::Wisdom::QuickResponse"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::QuickResponse
+<a name="aws-resource-wisdom-quickresponse"></a>
 
 Creates an Amazon Q in Connect quick response.
 
 ## Syntax
+<a name="aws-resource-wisdom-quickresponse-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-wisdom-quickresponse-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Wisdom::QuickResponse",
   "Properties" : {
-      "Channels" : [ String, ... ],
-      "Content" : QuickResponseContentProvider,
-      "ContentType" : String,
-      "Description" : String,
-      "GroupingConfiguration" : GroupingConfiguration,
-      "IsActive" : Boolean,
-      "KnowledgeBaseArn" : String,
-      "Language" : String,
-      "Name" : String,
-      "ShortcutKey" : String,
-      "Tags" : [ Tag, ... ]
+      "[Channels](#cfn-wisdom-quickresponse-channels)" : {{[ String, ... ]}},
+      "[Content](#cfn-wisdom-quickresponse-content)" : {{QuickResponseContentProvider}},
+      "[ContentType](#cfn-wisdom-quickresponse-contenttype)" : {{String}},
+      "[Description](#cfn-wisdom-quickresponse-description)" : {{String}},
+      "[GroupingConfiguration](#cfn-wisdom-quickresponse-groupingconfiguration)" : {{GroupingConfiguration}},
+      "[IsActive](#cfn-wisdom-quickresponse-isactive)" : {{Boolean}},
+      "[KnowledgeBaseArn](#cfn-wisdom-quickresponse-knowledgebasearn)" : {{String}},
+      "[Language](#cfn-wisdom-quickresponse-language)" : {{String}},
+      "[Name](#cfn-wisdom-quickresponse-name)" : {{String}},
+      "[ShortcutKey](#cfn-wisdom-quickresponse-shortcutkey)" : {{String}},
+      "[Tags](#cfn-wisdom-quickresponse-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-wisdom-quickresponse-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Wisdom::QuickResponse
 Properties:
-  Channels:
-    - String
-  Content:
-    QuickResponseContentProvider
-  ContentType: String
-  Description: String
-  GroupingConfiguration:
-    GroupingConfiguration
-  IsActive: Boolean
-  KnowledgeBaseArn: String
-  Language: String
-  Name: String
-  ShortcutKey: String
-  Tags:
-    - Tag
-
+  [Channels](#cfn-wisdom-quickresponse-channels): {{
+    - String}}
+  [Content](#cfn-wisdom-quickresponse-content): {{
+    QuickResponseContentProvider}}
+  [ContentType](#cfn-wisdom-quickresponse-contenttype): {{String}}
+  [Description](#cfn-wisdom-quickresponse-description): {{String}}
+  [GroupingConfiguration](#cfn-wisdom-quickresponse-groupingconfiguration): {{
+    GroupingConfiguration}}
+  [IsActive](#cfn-wisdom-quickresponse-isactive): {{Boolean}}
+  [KnowledgeBaseArn](#cfn-wisdom-quickresponse-knowledgebasearn): {{String}}
+  [Language](#cfn-wisdom-quickresponse-language): {{String}}
+  [Name](#cfn-wisdom-quickresponse-name): {{String}}
+  [ShortcutKey](#cfn-wisdom-quickresponse-shortcutkey): {{String}}
+  [Tags](#cfn-wisdom-quickresponse-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-wisdom-quickresponse-properties"></a>
 
-`Channels`
+`Channels`  <a name="cfn-wisdom-quickresponse-channels"></a>
+The Connect Customer contact channels this quick response applies to. The supported contact channel types include `Chat`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Connect contact channels this quick response applies to. The supported contact channel types include `Chat`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Content`
-
+`Content`  <a name="cfn-wisdom-quickresponse-content"></a>
 The content of the quick response.
+*Required*: Yes
+*Type*: [QuickResponseContentProvider](aws-properties-wisdom-quickresponse-quickresponsecontentprovider.md)
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [QuickResponseContentProvider](aws-properties-wisdom-quickresponse-quickresponsecontentprovider.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContentType`
-
+`ContentType`  <a name="cfn-wisdom-quickresponse-contenttype"></a>
 The media type of the quick response content.
++ Use `application/x.quickresponse;format=plain` for quick response written in plain text.
++ Use `application/x.quickresponse;format=markdown` for quick response written in richtext.
+*Required*: No
+*Type*: String
+*Pattern*: `^(application/x\.quickresponse;format=(plain|markdown))$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- Use `application/x.quickresponse;format=plain` for quick response written in plain text.
-
-- Use `application/x.quickresponse;format=markdown` for quick response written in richtext.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(application/x\.quickresponse;format=(plain|markdown))$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-wisdom-quickresponse-description"></a>
 The description of the quick response.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupingConfiguration`
-
+`GroupingConfiguration`  <a name="cfn-wisdom-quickresponse-groupingconfiguration"></a>
 The configuration information of the user groups that the quick response is accessible to.
+*Required*: No
+*Type*: [GroupingConfiguration](aws-properties-wisdom-quickresponse-groupingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GroupingConfiguration](aws-properties-wisdom-quickresponse-groupingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsActive`
-
+`IsActive`  <a name="cfn-wisdom-quickresponse-isactive"></a>
 Whether the quick response is active.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KnowledgeBaseArn`
-
+`KnowledgeBaseArn`  <a name="cfn-wisdom-quickresponse-knowledgebasearn"></a>
 The Amazon Resource Name (ARN) of the knowledge base.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Language`  <a name="cfn-wisdom-quickresponse-language"></a>
+The language code value for the language in which the quick response is written. The supported language codes include `de_DE`, `en_US`, `es_ES`, `fr_FR`, `id_ID`, `it_IT`, `ja_JP`, `ko_KR`, `pt_BR`, `zh_CN`, `zh_TW`
+*Required*: No
+*Type*: String
+*Minimum*: `2`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Language`
-
-The language code value for the language in which the quick response is written. The supported language codes include `de_DE`, `en_US`, `es_ES`,
-`fr_FR`, `id_ID`, `it_IT`, `ja_JP`, `ko_KR`, `pt_BR`,
-`zh_CN`, `zh_TW`
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `2`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-wisdom-quickresponse-name"></a>
 The name of the quick response.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ShortcutKey`  <a name="cfn-wisdom-quickresponse-shortcutkey"></a>
+The shortcut key of the quick response. The value should be unique across the knowledge base.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShortcutKey`
-
-The shortcut key of the quick response. The value should be unique across the
-knowledge base.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-wisdom-quickresponse-tags"></a>
 The tags used to organize, track, or control access for this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-wisdom-quickresponse-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-wisdom-quickresponse-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-wisdom-quickresponse-return-values"></a>
 
 ### Ref
+<a name="aws-resource-wisdom-quickresponse-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-wisdom-quickresponse-return-values-fn--getatt"></a>
 
-`QuickResponseArn`
+####
+<a name="aws-resource-wisdom-quickresponse-return-values-fn--getatt-fn--getatt"></a>
 
+`QuickResponseArn`  <a name="QuickResponseArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the quick response.
 
-`QuickResponseId`
-
+`QuickResponseId`  <a name="QuickResponseId-fn::getatt"></a>
 The identifier of the quick response.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the quick response data.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Wisdom::MessageTemplateVersion
-
-GroupingConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

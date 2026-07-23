@@ -2,155 +2,122 @@
 title: "AWS::DataBrew::Project"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Project
+<a name="aws-resource-databrew-project"></a>
 
 Specifies a new AWS Glue DataBrew project.
 
 ## Syntax
+<a name="aws-resource-databrew-project-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-databrew-project-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DataBrew::Project",
   "Properties" : {
-      "DatasetName" : String,
-      "Name" : String,
-      "RecipeName" : String,
-      "RoleArn" : String,
-      "Sample" : Sample,
-      "Tags" : [ Tag, ... ]
+      "[DatasetName](#cfn-databrew-project-datasetname)" : {{String}},
+      "[Name](#cfn-databrew-project-name)" : {{String}},
+      "[RecipeName](#cfn-databrew-project-recipename)" : {{String}},
+      "[RoleArn](#cfn-databrew-project-rolearn)" : {{String}},
+      "[Sample](#cfn-databrew-project-sample)" : {{Sample}},
+      "[Tags](#cfn-databrew-project-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-databrew-project-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DataBrew::Project
 Properties:
-  DatasetName: String
-  Name: String
-  RecipeName: String
-  RoleArn: String
-  Sample:
-    Sample
-  Tags:
-    - Tag
-
+  [DatasetName](#cfn-databrew-project-datasetname): {{String}}
+  [Name](#cfn-databrew-project-name): {{String}}
+  [RecipeName](#cfn-databrew-project-recipename): {{String}}
+  [RoleArn](#cfn-databrew-project-rolearn): {{String}}
+  [Sample](#cfn-databrew-project-sample): {{
+    Sample}}
+  [Tags](#cfn-databrew-project-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-databrew-project-properties"></a>
 
-`DatasetName`
-
+`DatasetName`  <a name="cfn-databrew-project-datasetname"></a>
 The dataset that the project is to act upon.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-databrew-project-name"></a>
 The unique name of a project.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RecipeName`
-
+`RecipeName`  <a name="cfn-databrew-project-recipename"></a>
 The name of a recipe that will be developed during a project session.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`RoleArn`  <a name="cfn-databrew-project-rolearn"></a>
+The Amazon Resource Name (ARN) of the role that will be assumed for this project.
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Sample`  <a name="cfn-databrew-project-sample"></a>
+The sample size and sampling type to apply to the data. If this parameter isn't specified, then the sample consists of the first 500 rows from the dataset.
+*Required*: No
+*Type*: [Sample](aws-properties-databrew-project-sample.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the role that will be assumed for this
-project.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sample`
-
-The sample size and sampling type to apply to the data. If this parameter isn't
-specified, then the sample consists of the first 500 rows from the dataset.
-
-_Required_: No
-
-_Type_: [Sample](aws-properties-databrew-project-sample.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-databrew-project-tags"></a>
 Metadata tags that have been applied to the project.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-databrew-project-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-databrew-project-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-databrew-project-return-values"></a>
 
 ### Ref
+<a name="aws-resource-databrew-project-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref`
-function, `Ref` returns the resource name. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "myProject" }`
+ `{ "Ref": "myProject" }`
 
-For an AWS Glue DataBrew project named `myProject`,
-`Ref` returns the name of the project.
+For an AWS Glue DataBrew project named `myProject`, `Ref` returns the name of the project.
 
 ## Examples
+<a name="aws-resource-databrew-project--examples"></a>
 
 ### Creating projects
+<a name="aws-resource-databrew-project--examples--Creating_projects"></a>
 
 The following examples create new DataBrew projects.
 
 #### YAML
+<a name="aws-resource-databrew-project--examples--Creating_projects--yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestDataBrewProject:
     Type: AWS::DataBrew::Project
@@ -162,13 +129,12 @@ Resources:
       Sample:
         Size: 500
         Type: LAST_N
-
 ```
 
 #### JSON
+<a name="aws-resource-databrew-project--examples--Creating_projects--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Project",
@@ -194,13 +160,6 @@ Resources:
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ValidationConfiguration
-
-Sample
 
 All content copied from https://docs.aws.amazon.com/.

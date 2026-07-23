@@ -2,64 +2,49 @@
 title: "AWS::EC2::VerifiedAccessInstance CloudWatchLogs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessInstance CloudWatchLogs
+<a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs"></a>
 
 Options for CloudWatch Logs as a logging destination.
 
 ## Syntax
+<a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "LogGroup" : String
+  "[Enabled](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-enabled)" : {{Boolean}},
+  "[LogGroup](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-loggroup)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  LogGroup: String
-
+```
+  [Enabled](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-enabled): {{Boolean}}
+  [LogGroup](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-loggroup): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-ec2-verifiedaccessinstance-cloudwatchlogs-enabled"></a>
 Indicates whether logging is enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogGroup`
-
+`LogGroup`  <a name="cfn-ec2-verifiedaccessinstance-cloudwatchlogs-loggroup"></a>
 The ID of the CloudWatch Logs log group.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::VerifiedAccessInstance
-
-KinesisDataFirehose
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

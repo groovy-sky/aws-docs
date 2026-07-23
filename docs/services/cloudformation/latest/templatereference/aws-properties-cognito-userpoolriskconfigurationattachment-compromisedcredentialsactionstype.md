@@ -2,55 +2,42 @@
 title: "AWS::Cognito::UserPoolRiskConfigurationAttachment CompromisedCredentialsActionsType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRiskConfigurationAttachment CompromisedCredentialsActionsType
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype"></a>
 
-Settings for user pool actions when Amazon Cognito detects compromised credentials
-with advanced security features in full-function `ENFORCED` mode.
+Settings for user pool actions when Amazon Cognito detects compromised credentials with advanced security features in full-function `ENFORCED` mode.
 
 ## Syntax
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventAction" : String
+  "[EventAction](#cfn-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-eventaction)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-syntax.yaml"></a>
 
-```yaml
-
-  EventAction: String
-
+```
+  [EventAction](#cfn-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-eventaction): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-properties"></a>
 
-`EventAction`
-
+`EventAction`  <a name="cfn-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-eventaction"></a>
 The action that Amazon Cognito takes when it detects compromised credentials.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `BLOCK | NO_ACTION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccountTakeoverRiskConfigurationType
-
-CompromisedCredentialsRiskConfigurationType
+*Required*: Yes
+*Type*: String
+*Allowed values*: `BLOCK | NO_ACTION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

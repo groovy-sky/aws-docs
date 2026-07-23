@@ -2,53 +2,42 @@
 title: "AWS::EMRContainers::VirtualCluster ContainerInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::VirtualCluster ContainerInfo
+<a name="aws-properties-emrcontainers-virtualcluster-containerinfo"></a>
 
 The information about the container used for a job run or a managed endpoint.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-virtualcluster-containerinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-virtualcluster-containerinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "EksInfo" : EksInfo
+  "[EksInfo](#cfn-emrcontainers-virtualcluster-containerinfo-eksinfo)" : {{EksInfo}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-virtualcluster-containerinfo-syntax.yaml"></a>
 
-```yaml
-
-  EksInfo:
-    EksInfo
-
+```
+  [EksInfo](#cfn-emrcontainers-virtualcluster-containerinfo-eksinfo): {{
+    EksInfo}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-virtualcluster-containerinfo-properties"></a>
 
-`EksInfo`
-
+`EksInfo`  <a name="cfn-emrcontainers-virtualcluster-containerinfo-eksinfo"></a>
 The information about the Amazon EKS cluster.
-
-_Required_: Yes
-
-_Type_: [EksInfo](aws-properties-emrcontainers-virtualcluster-eksinfo.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EMRContainers::VirtualCluster
-
-ContainerProvider
+*Required*: Yes
+*Type*: [EksInfo](aws-properties-emrcontainers-virtualcluster-eksinfo.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,61 +2,44 @@
 title: "AWS::WAFv2::RuleGroup LabelSummary"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup LabelSummary
+<a name="aws-properties-wafv2-rulegroup-labelsummary"></a>
 
-List of labels used by one or more of the rules of a [AWS::WAFv2::RuleGroup](aws-resource-wafv2-rulegroup.md). This
-summary object is used for the following rule group lists:
-
-- `AvailableLabels` \- Labels that rules add to matching requests. These
-labels are defined in the `RuleLabels` for a rule.
-
-- `ConsumedLabels` \- Labels that rules match against. These labels are
-defined in a `LabelMatchStatement` specification, in the [Statement](../userguide/aws-properties-wafv2-webacl-notstatement.md#cfn-wafv2-webacl-notstatement-statement) definition of a rule.
+List of labels used by one or more of the rules of a [AWS::WAFv2::RuleGroup](aws-resource-wafv2-rulegroup.md). This summary object is used for the following rule group lists:
++ `AvailableLabels` - Labels that rules add to matching requests. These labels are defined in the `RuleLabels` for a rule.
++ `ConsumedLabels` - Labels that rules match against. These labels are defined in a `LabelMatchStatement` specification, in the [Statement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-notstatement.html#cfn-wafv2-webacl-notstatement-statement) definition of a rule.
 
 ## Syntax
+<a name="aws-properties-wafv2-rulegroup-labelsummary-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-rulegroup-labelsummary-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-wafv2-rulegroup-labelsummary-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-rulegroup-labelsummary-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-wafv2-rulegroup-labelsummary-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-rulegroup-labelsummary-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-wafv2-rulegroup-labelsummary-name"></a>
 An individual label specification.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z_:-]{1,1024}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LabelMatchStatement
-
-NotStatement
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9A-Za-z_:-]{1,1024}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

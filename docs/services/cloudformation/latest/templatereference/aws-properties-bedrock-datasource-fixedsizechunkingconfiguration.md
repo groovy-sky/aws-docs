@@ -2,70 +2,52 @@
 title: "AWS::Bedrock::DataSource FixedSizeChunkingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource FixedSizeChunkingConfiguration
+<a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration"></a>
 
 Configurations for when you choose fixed-size chunking. If you set the `chunkingStrategy` as `NONE`, exclude this field.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxTokens" : Integer,
-  "OverlapPercentage" : Integer
+  "[MaxTokens](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-maxtokens)" : {{Integer}},
+  "[OverlapPercentage](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-overlappercentage)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxTokens: Integer
-  OverlapPercentage: Integer
-
+```
+  [MaxTokens](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-maxtokens): {{Integer}}
+  [OverlapPercentage](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-overlappercentage): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration-properties"></a>
 
-`MaxTokens`
-
+`MaxTokens`  <a name="cfn-bedrock-datasource-fixedsizechunkingconfiguration-maxtokens"></a>
 The maximum number of tokens to include in a chunk.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OverlapPercentage`
-
+`OverlapPercentage`  <a name="cfn-bedrock-datasource-fixedsizechunkingconfiguration-overlappercentage"></a>
 The percentage of overlap between adjacent chunks of a data source.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `99`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnrichmentStrategyConfiguration
-
-HierarchicalChunkingConfiguration
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `99`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

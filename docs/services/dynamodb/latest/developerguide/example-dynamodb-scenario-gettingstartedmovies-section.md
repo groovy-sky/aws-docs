@@ -3,33 +3,23 @@ title: "Learn the basics of DynamoDB with an AWS SDK"
 ---
 
 # Learn the basics of DynamoDB with an AWS SDK
+<a name="example_dynamodb_Scenario_GettingStartedMovies_section"></a>
 
 The following code examples show how to:
++ Create a table that can hold movie data.
++ Put, get, and update a single movie in the table.
++ Write movie data to the table from a sample JSON file.
++ Query for movies that were released in a given year.
++ Scan for movies that were released in a range of years.
++ Delete a movie from the table, then delete the table.
 
-- Create a table that can hold movie data.
-
-- Put, get, and update a single movie in the table.
-
-- Write movie data to the table from a sample JSON file.
-
-- Query for movies that were released in a given year.
-
-- Scan for movies that were released in a range of years.
-
-- Delete a movie from the table, then delete the table.
-
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
 /// <summary>
 /// This example application performs the following basic Amazon DynamoDB
 /// functions:
@@ -248,13 +238,10 @@ public class DynamoDbBasics
         }
     }
 }
-
 ```
-
 Use the injected client for table operations.
 
-```csharp
-
+```
 using System.Text.Json;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
@@ -278,13 +265,10 @@ public class DynamoDbWrapper
     {
         _amazonDynamoDB = amazonDynamoDB;
     }
-
 ```
-
 Creates a table to contain movie data.
 
-```csharp
-
+```
     /// <summary>
     /// Creates a new Amazon DynamoDB table and then waits for the new
     /// table to become active.
@@ -368,13 +352,10 @@ Creates a table to contain movie data.
             throw;
         }
     }
-
 ```
-
 Adds a single movie to the table.
 
-```csharp
-
+```
     /// <summary>
     /// Adds a new item to the table.
     /// </summary>
@@ -417,13 +398,10 @@ Adds a single movie to the table.
             throw;
         }
     }
-
 ```
-
 Updates a single item in a table.
 
-```csharp
-
+```
     /// <summary>
     /// Updates an existing item in the movies table.
     /// </summary>
@@ -486,13 +464,10 @@ Updates a single item in a table.
             throw;
         }
     }
-
 ```
-
 Retrieves a single item from the movie table.
 
-```csharp
-
+```
     /// <summary>
     /// Gets information about an existing movie from the table.
     /// </summary>
@@ -536,13 +511,10 @@ Retrieves a single item from the movie table.
             throw;
         }
     }
-
 ```
-
 Writes a batch of items to the movie table.
 
-```csharp
-
+```
     /// <summary>
     /// Loads the contents of a JSON file into a list of movies to be
     /// added to the DynamoDB table.
@@ -627,13 +599,10 @@ Writes a batch of items to the movie table.
             throw;
         }
     }
-
 ```
-
 Deletes a single item from the table.
 
-```csharp
-
+```
     /// <summary>
     /// Deletes a single item from a DynamoDB table.
     /// </summary>
@@ -676,13 +645,10 @@ Deletes a single item from the table.
             throw;
         }
     }
-
 ```
-
 Queries the table for movies released in a particular year.
 
-```csharp
-
+```
     /// <summary>
     /// Queries the table for movies released in a particular year and
     /// then displays the information for the movies returned.
@@ -752,13 +718,10 @@ Queries the table for movies released in a particular year.
             throw;
         }
     }
-
 ```
-
 Scans the table for movies released in a range of years.
 
-```csharp
-
+```
     /// <summary>
     /// Scans the table for movies released between the specified years.
     /// </summary>
@@ -820,13 +783,10 @@ Scans the table for movies released in a range of years.
             throw;
         }
     }
-
 ```
-
 Deletes the movie table.
 
-```csharp
-
+```
     /// <summary>
     /// Deletes a DynamoDB table.
     /// </summary>
@@ -863,45 +823,27 @@ Deletes the movie table.
             return false;
         }
     }
-
 ```
++ For API details, see the following topics in *AWS SDK for .NET API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for .NET API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateItem)
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 The DynamoDB getting started scenario.
 
-```bash
-
+```
 ###############################################################################
 # function dynamodb_getting_started_movies
 #
@@ -1162,13 +1104,10 @@ function dynamodb_getting_started_movies() {
 
   return 0
 }
-
 ```
-
 The DynamoDB functions used in this scenario.
 
-```bash
-
+```
 ###############################################################################
 # function dynamodb_create_table
 #
@@ -2026,13 +1965,10 @@ function dynamodb_delete_table() {
 
   return 0
 }
-
 ```
-
 The utility functions used in this scenario.
 
-```bash
-
+```
 ###############################################################################
 # function iecho
 #
@@ -2089,43 +2025,26 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++ For API details, see the following topics in *AWS CLI Command Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem)
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see the following topics in _AWS CLI Command Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem)
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
     {
         Aws::Client::ClientConfiguration clientConfig;
         //  1. Create a table with partition: year (N) and sort: title (S). (CreateTable)
@@ -2639,45 +2558,27 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
     }
     return false;
 }
-
 ```
++ For API details, see the following topics in *AWS SDK for C\+\+ API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for C++ API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateItem)
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run an interactive scenario to create the table and perform actions on it.
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -2874,13 +2775,10 @@ func RunMovieScenario(
 	log.Println("Thanks for watching!")
 	log.Println(strings.Repeat("-", 88))
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -2922,13 +2820,10 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
-
 Create a struct and methods that call DynamoDB actions.
 
-```go
-
+```
 import (
 	"context"
 	"errors"
@@ -3232,45 +3127,27 @@ func (basics TableBasics) DeleteTable(ctx context.Context) error {
 	}
 	return err
 }
-
 ```
++ For API details, see the following topics in *AWS SDK for Go API Reference*.
+  + [BatchWriteItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.BatchWriteItem)
+  + [CreateTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.CreateTable)
+  + [DeleteItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.DeleteItem)
+  + [DeleteTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.DeleteTable)
+  + [DescribeTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.DescribeTable)
+  + [GetItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.GetItem)
+  + [PutItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.PutItem)
+  + [Query](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.Query)
+  + [Scan](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.Scan)
+  + [UpdateItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for Go API Reference_.
-
-- [BatchWriteItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [CreateTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [DeleteItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [DeleteTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [DescribeTable](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [GetItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [PutItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [Query](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [Scan](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-- [UpdateItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Create a DynamoDB table.
 
-```java
-
+```
     // Create a table with a Sort key.
     public static void createTable(DynamoDbClient ddb, String tableName) {
         DynamoDbWaiter dbWaiter = ddb.waiter();
@@ -3326,13 +3203,10 @@ Create a DynamoDB table.
             System.exit(1);
         }
     }
-
 ```
-
 Create a helper function to download and extract the sample JSON file.
 
-```java
-
+```
     // Load data into the table.
     public static void loadData(DynamoDbClient ddb, String tableName, String fileName) throws IOException {
         DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()
@@ -3365,13 +3239,10 @@ Create a helper function to download and extract the sample JSON file.
             t++;
         }
     }
-
 ```
-
 Get an item from a table.
 
-```java
-
+```
     public static void getItem(DynamoDbClient ddb) {
 
         HashMap<String, AttributeValue> keyToGet = new HashMap<>();
@@ -3407,13 +3278,10 @@ Get an item from a table.
             System.exit(1);
         }
     }
-
 ```
-
 Full example.
 
-```java
-
+```
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -3739,43 +3607,26 @@ public class Scenario {
         }
     }
 }
-
 ```
++ For API details, see the following topics in *AWS SDK for Java 2.x API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-```javascript
-
+```
 import { readFileSync } from "node:fs";
 import {
   BillingMode,
@@ -4037,45 +3888,27 @@ export const main = async () => {
   await client.send(deleteTableCommand);
   log("Table deleted.");
 };
-
 ```
++ For API details, see the following topics in *AWS SDK for JavaScript API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchWriteItemCommand)
+  + [CreateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/CreateTableCommand)
+  + [DeleteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteItemCommand)
+  + [DeleteTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteTableCommand)
+  + [DescribeTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DescribeTableCommand)
+  + [GetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/GetItemCommand)
+  + [PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
+  + [Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
+  + [Scan](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ScanCommand)
+  + [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 
-- For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchWriteItemCommand)
-
-- [CreateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/CreateTableCommand)
-
-- [DeleteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteItemCommand)
-
-- [DeleteTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteTableCommand)
-
-- [DescribeTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DescribeTableCommand)
-
-- [GetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/GetItemCommand)
-
-- [PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
-
-- [Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
-
-- [Scan](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ScanCommand)
-
-- [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
-
-Kotlin
+------
+#### [ Kotlin ]
 
 **SDK for Kotlin**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 Create a DynamoDB table.
 
-```kotlin
-
+```
 suspend fun createScenarioTable(
     tableNameVal: String,
     key: String,
@@ -4121,13 +3954,10 @@ suspend fun createScenarioTable(
         println("The table was successfully created ${response.tableDescription?.tableArn}")
     }
 }
-
 ```
-
 Create a helper function to download and extract the sample JSON file.
 
-```kotlin
-
+```
 // Load data into the table.
 suspend fun loadData(
     tableName: String,
@@ -4177,13 +4007,10 @@ suspend fun putMovie(
         println("Added $title to the Movie table.")
     }
 }
-
 ```
-
 Get an item from a table.
 
-```kotlin
-
+```
 suspend fun getMovie(
     tableNameVal: String,
     keyName: String,
@@ -4208,13 +4035,10 @@ suspend fun getMovie(
         }
     }
 }
-
 ```
-
 Full example.
 
-```kotlin
-
+```
 suspend fun main() {
     val tableName = "Movies"
     val fileName = "../../../resources/sample_files/movies.json"
@@ -4405,45 +4229,27 @@ suspend fun scanMovies(tableNameVal: String) {
         }
     }
 }
-
 ```
++ For API details, see the following topics in *AWS SDK for Kotlin API reference*.
+  + [BatchWriteItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [CreateTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [DeleteItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [DeleteTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [DescribeTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [GetItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [PutItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [Query](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [Scan](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
+  + [UpdateItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
 
-- For API details, see the following topics in _AWS SDK for Kotlin API reference_.
-
-- [BatchWriteItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [CreateTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [DeleteItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [DeleteTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [DescribeTable](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [GetItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [PutItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [Query](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [Scan](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-- [UpdateItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
+Because this example uses supporting files, be sure to [read the guidance](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/php/README.md#prerequisites) in the PHP examples README.md file.
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-Because this example uses supporting files, be sure to [read the guidance](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/php/README.md) in the PHP examples README.md file.
-
-```php
-
+```
 namespace DynamoDb\Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -4599,45 +4405,27 @@ class GettingStartedWithDynamoDB
         $service->deleteTable($tableName);
     }
 }
-
 ```
++ For API details, see the following topics in *AWS SDK for PHP API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for PHP API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateItem)
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that encapsulates a DynamoDB table.
 
-```python
-
+```
 from decimal import Decimal
 from io import BytesIO
 import json
@@ -4959,13 +4747,10 @@ class Movies:
                 err.response["Error"]["Message"],
             )
             raise
-
 ```
-
 Create a helper function to download and extract the sample JSON file.
 
-```python
-
+```
 def get_sample_movie_data(movie_file_name):
     """
     Gets sample movie data, either from a local file or by first downloading it from
@@ -4994,13 +4779,10 @@ def get_sample_movie_data(movie_file_name):
     else:
         # The sample file lists over 4000 movies, return only the first 250.
         return movie_data[:250]
-
 ```
-
 Run an interactive scenario to create the table and perform actions on it.
 
-```python
-
+```
 def run_scenario(table_name, movie_file_name, dyn_resource):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -5153,13 +4935,10 @@ if __name__ == "__main__":
         )
     except Exception as e:
         print(f"Something went wrong with the demo! Here's what: {e}")
-
 ```
-
 This scenario uses the following helper class to ask questions at a command prompt.
 
-```python
-
+```
 class Question:
     """
     A helper class to ask questions at a command prompt and validate and convert
@@ -5281,45 +5060,27 @@ class Question:
             )
 
         return _validate
-
 ```
++ For API details, see the following topics in *AWS SDK for Python (Boto3) API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Create a class that encapsulates a DynamoDB table.
 
-```ruby
-
+```
   # Creates an Amazon DynamoDB table that can be used to store movie data.
   # The table uses the release year of the movie as the partition key and the
   # title as the sort key.
@@ -5345,13 +5106,10 @@ Create a class that encapsulates a DynamoDB table.
     @logger.error("Failed create table #{table_name}:\n#{e.code}: #{e.message}")
     raise
   end
-
 ```
-
 Create a helper function to download and extract the sample JSON file.
 
-```ruby
-
+```
   # Gets sample movie data, either from a local file or by first downloading it from
   # the Amazon DynamoDB Developer Guide.
   #
@@ -5379,13 +5137,10 @@ Create a helper function to download and extract the sample JSON file.
     puts("Failure downloading movie data:\n#{e}")
     raise
   end
-
 ```
-
 Run an interactive scenario to create the table and perform actions on it.
 
-```ruby
-
+```
   table_name = "doc-example-table-movies-#{rand(10**4)}"
   scaffold = Scaffold.new(table_name)
   dynamodb_wrapper = DynamoDBBasics.new(table_name)
@@ -5489,43 +5244,26 @@ rescue Aws::Errors::ServiceError
 rescue Errno::ENOENT
   true
 end
-
 ```
++ For API details, see the following topics in *AWS SDK for Ruby API Reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchWriteItem)
+  + [CreateTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CreateTable)
+  + [DeleteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteItem)
+  + [DeleteTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteTable)
+  + [DescribeTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DescribeTable)
+  + [GetItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GetItem)
+  + [PutItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/PutItem)
+  + [Query](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Query)
+  + [Scan](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Scan)
+  + [UpdateItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateItem)
 
-- For API details, see the following topics in _AWS SDK for Ruby API Reference_.
-
-- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchWriteItem)
-
-- [CreateTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CreateTable)
-
-- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteItem)
-
-- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteTable)
-
-- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DescribeTable)
-
-- [GetItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GetItem)
-
-- [PutItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/PutItem)
-
-- [Query](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Query)
-
-- [Scan](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Scan)
-
-- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateItem)
-
-SAP ABAP
+------
+#### [ SAP ABAP ]
 
 **SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn).
-
-```sap-abap
-
+```
     " Create an Amazon Dynamo DB table.
 
     TRY.
@@ -5713,45 +5451,27 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/s
       CATCH /aws1/cx_dynresourceinuseex.
         MESSAGE 'The table cannot be deleted as it is in use' TYPE 'E'.
     ENDTRY.
-
 ```
++ For API details, see the following topics in *AWS SDK for SAP ABAP API reference*.
+  + [BatchWriteItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [CreateTable](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [DeleteItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [DeleteTable](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [DescribeTable](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [GetItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [PutItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [Query](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [Scan](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [UpdateItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
 
-- For API details, see the following topics in _AWS SDK for SAP ABAP API reference_.
-
-- [BatchWriteItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [CreateTable](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [DeleteItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [DeleteTable](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [DescribeTable](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [GetItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [PutItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [Query](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [Scan](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-- [UpdateItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 A Swift class that handles DynamoDB calls to the SDK for Swift.
 
-```swift
-
+```
 import AWSDynamoDB
 import Foundation
 
@@ -6276,13 +5996,10 @@ public class MovieTable {
         }
     }
 }
-
 ```
-
 The structures used by the MovieTable class to represent movies.
 
-```swift
-
+```
 import Foundation
 import AWSDynamoDB
 
@@ -6425,13 +6142,10 @@ public struct Movie: Codable {
         return item
     }
  }
-
 ```
-
 A program that uses the MovieTable class to access a DynamoDB database.
 
-```swift
-
+```
 import ArgumentParser
 import ClientRuntime
 import Foundation
@@ -6587,39 +6301,21 @@ struct Main {
         }
     }
 }
-
 ```
++ For API details, see the following topics in *AWS SDK for Swift API reference*.
+  + [BatchWriteItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/batchwriteitem(input:))
+  + [CreateTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/createtable(input:))
+  + [DeleteItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/deleteitem(input:))
+  + [DeleteTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/deletetable(input:))
+  + [DescribeTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/describetable(input:))
+  + [GetItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/getitem(input:))
+  + [PutItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/putitem(input:))
+  + [Query](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/query(input:))
+  + [Scan](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/scan(input:))
+  + [UpdateItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/updateitem(input:))
 
-- For API details, see the following topics in _AWS SDK for Swift API reference_.
+------
 
-- [BatchWriteItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/batchwriteitem(input:))
-
-- [CreateTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/createtable(input:))
-
-- [DeleteItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/deleteitem(input:))
-
-- [DeleteTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/deletetable(input:))
-
-- [DescribeTable](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/describetable(input:))
-
-- [GetItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/getitem(input:))
-
-- [PutItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/putitem(input:))
-
-- [Query](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/query(input:))
-
-- [Scan](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/scan(input:))
-
-- [UpdateItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/updateitem(input:))
-
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Hello DynamoDB
-
-Actions
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

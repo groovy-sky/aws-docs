@@ -2,82 +2,58 @@
 title: "AWS::S3::Bucket LambdaConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket LambdaConfiguration
+<a name="aws-properties-s3-bucket-lambdaconfiguration"></a>
 
 Describes the AWS Lambda functions to invoke and the events for which to invoke them.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-lambdaconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-lambdaconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Event" : String,
-  "Filter" : NotificationFilter,
-  "Function" : String
+  "[Event](#cfn-s3-bucket-lambdaconfiguration-event)" : {{String}},
+  "[Filter](#cfn-s3-bucket-lambdaconfiguration-filter)" : {{NotificationFilter}},
+  "[Function](#cfn-s3-bucket-lambdaconfiguration-function)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-lambdaconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Event: String
-  Filter:
-    NotificationFilter
-  Function: String
-
+```
+  [Event](#cfn-s3-bucket-lambdaconfiguration-event): {{String}}
+  [Filter](#cfn-s3-bucket-lambdaconfiguration-filter): {{
+    NotificationFilter}}
+  [Function](#cfn-s3-bucket-lambdaconfiguration-function): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-lambdaconfiguration-properties"></a>
 
-`Event`
+`Event`  <a name="cfn-s3-bucket-lambdaconfiguration-event"></a>
+The Amazon S3 bucket event for which to invoke the AWS Lambda function. For more information, see [Supported Event Types](https://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html) in the *Amazon S3 User Guide*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon S3 bucket event for which to invoke the AWS Lambda function. For more information, see [Supported Event Types](../../../s3/latest/dev/notificationhowto.md) in
-the _Amazon S3 User Guide_.
+`Filter`  <a name="cfn-s3-bucket-lambdaconfiguration-filter"></a>
+The filtering rules that determine which objects invoke the AWS Lambda function. For example, you can create a filter so that only image files with a `.jpg` extension invoke the function when they are added to the Amazon S3 bucket.
+*Required*: No
+*Type*: [NotificationFilter](aws-properties-s3-bucket-notificationfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Filter`
-
-The filtering rules that determine which objects invoke the AWS Lambda
-function. For example, you can create a filter so that only image files with a
-`.jpg` extension invoke the function when they are added to the Amazon S3
-bucket.
-
-_Required_: No
-
-_Type_: [NotificationFilter](aws-properties-s3-bucket-notificationfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Function`
-
-The Amazon Resource Name (ARN) of the AWS Lambda function that Amazon S3 invokes when the specified event
-type occurs.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JournalTableConfiguration
-
-LifecycleConfiguration
+`Function`  <a name="cfn-s3-bucket-lambdaconfiguration-function"></a>
+The Amazon Resource Name (ARN) of the AWS Lambda function that Amazon S3 invokes when the specified event type occurs.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

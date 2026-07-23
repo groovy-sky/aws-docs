@@ -2,128 +2,89 @@
 title: "AWS::RTBFabric::ResponderGateway EksEndpointsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::ResponderGateway EksEndpointsConfiguration
+<a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration"></a>
 
 Describes the configuration of an Amazon Elastic Kubernetes Service endpoint.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterApiServerCaCertificateChain" : String,
-  "ClusterApiServerEndpointUri" : String,
-  "ClusterName" : String,
-  "EndpointsResourceName" : String,
-  "EndpointsResourceNamespace" : String,
-  "RoleArn" : String
+  "[ClusterApiServerCaCertificateChain](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiservercacertificatechain)" : {{String}},
+  "[ClusterApiServerEndpointUri](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiserverendpointuri)" : {{String}},
+  "[ClusterName](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clustername)" : {{String}},
+  "[EndpointsResourceName](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-endpointsresourcename)" : {{String}},
+  "[EndpointsResourceNamespace](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-endpointsresourcenamespace)" : {{String}},
+  "[RoleArn](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ClusterApiServerCaCertificateChain: String
-  ClusterApiServerEndpointUri: String
-  ClusterName: String
-  EndpointsResourceName: String
-  EndpointsResourceNamespace: String
-  RoleArn: String
-
+```
+  [ClusterApiServerCaCertificateChain](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiservercacertificatechain): {{String}}
+  [ClusterApiServerEndpointUri](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiserverendpointuri): {{String}}
+  [ClusterName](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clustername): {{String}}
+  [EndpointsResourceName](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-endpointsresourcename): {{String}}
+  [EndpointsResourceNamespace](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-endpointsresourcenamespace): {{String}}
+  [RoleArn](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration-properties"></a>
 
-`ClusterApiServerCaCertificateChain`
-
+`ClusterApiServerCaCertificateChain`  <a name="cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiservercacertificatechain"></a>
 The CA certificate chain of the cluster API server.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2097152`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2097152`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ClusterApiServerEndpointUri`
-
+`ClusterApiServerEndpointUri`  <a name="cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiserverendpointuri"></a>
 The URI of the cluster API server endpoint.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(https|http)://(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)(?:\.(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?))+$`
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(https|http)://(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)(?:\.(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?))+$`
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ClusterName`
-
+`ClusterName`  <a name="cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clustername"></a>
 The name of the cluster.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9]$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9]$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`EndpointsResourceName`
-
+`EndpointsResourceName`  <a name="cfn-rtbfabric-respondergateway-eksendpointsconfiguration-endpointsresourcename"></a>
 The name of the endpoint resource.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9]$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9]$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`EndpointsResourceNamespace`
-
+`EndpointsResourceNamespace`  <a name="cfn-rtbfabric-respondergateway-eksendpointsconfiguration-endpointsresourcenamespace"></a>
 The namespace of the endpoint resource.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9]$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9]$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-rtbfabric-respondergateway-eksendpointsconfiguration-rolearn"></a>
 The role ARN for the cluster.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoScalingGroupsConfiguration
-
-ManagedEndpointConfiguration
+*Required*: Yes
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

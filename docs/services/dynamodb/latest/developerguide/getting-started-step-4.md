@@ -3,69 +3,52 @@ title: "Step 4: Update data in a DynamoDB table"
 ---
 
 # Step 4: Update data in a DynamoDB table
+<a name="getting-started-step-4"></a>
 
-In this step, you update an item that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can
-use the DynamoDB console or the AWS CLI to update the `AlbumTitle` of an item in
-the `Music` table by specifying `Artist`, `SongTitle`,
-and the updated `AlbumTitle`.
+In this step, you update an item that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can use the DynamoDB console or the AWS CLI to update the `AlbumTitle` of an item in the `Music` table by specifying `Artist`, `SongTitle`, and the updated `AlbumTitle`.
 
-For more information about write operations, see [Writing an item](workingwithitems.md#WorkingWithItems.WritingData).
+For more information about write operations, see [Writing an item](WorkingWithItems.md#WorkingWithItems.WritingData).
 
-You can use the DynamoDB console to update data in the `Music`
-table.
+## AWS Management Console
+<a name="getting-started-step-4-Console"></a>
 
-1. Open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+You can use the DynamoDB console to update data in the `Music` table.
 
-2. In the left navigation pane, choose
-    **Tables**.
+1. Open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-3. Choose the **Music** table from the table
-    list.
+1. In the left navigation pane, choose **Tables**.
 
-4. Choose **Explore table items**.
+1. Choose the **Music** table from the table list.
 
-5. In **Items returned**, for the item row with
-    **Acme Band** **Artist** and **Happy Day** **SongTitle**, do the following:
+1. Choose **Explore table items**.
 
-1. Place your cursor on the **AlbumTitle** named
-       **Songs About Life**.
+1. In **Items returned**, for the item row with **Acme Band** **Artist** and **Happy Day** **SongTitle**, do the following:
 
-2. Choose the Edit icon.
+   1. Place your cursor on the **AlbumTitle** named **Songs About Life**.
 
-3. In the **Edit String** popup window, enter
-       `Songs of Twilight`.
+   1. Choose the Edit icon.
 
-4. Choose **Save**.
+   1. In the **Edit String** popup window, enter **Songs of Twilight**.
 
-###### Tip
+   1. Choose **Save**.
+**Tip**
+Alternatively, to update an item, do the following in the **Items returned** section:
+Choose the item row with **Artist** named **Acme Band** and **SongTitle** named **Happy Day**.
+From the **Actions** dropdown list, choose **Edit item**.
+For enter **AlbumTitle**, enter **Songs of Twilight**.
+Choose **Save and close**.
 
-Alternatively, to update an item, do the following in the
-**Items returned** section:
+## AWS CLI
+<a name="getting-started-step-4-CLI"></a>
 
-1. Choose the item row with **Artist** named
-    **Acme Band** and
-    **SongTitle** named **Happy**
-**Day**.
+The following AWS CLI example updates an item in the `Music` table. You can do this either through the DynamoDB API or [PartiQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html), a SQL-compatible query language for DynamoDB.
 
-2. From the **Actions** dropdown list,
-    choose **Edit item**.
-
-3. For enter **AlbumTitle**, enter
-    `Songs of Twilight`.
-
-4. Choose **Save and close**.
-
-The following AWS CLI example updates an item in the `Music` table.
-You can do this either through the DynamoDB API or [PartiQL](ql-reference.md), a SQL-compatible query
-language for DynamoDB.
-
-DynamoDB API
+------
+#### [ DynamoDB API ]
 
 **Linux**
 
-```nohighlight
-
+```
 aws dynamodb update-item \
     --table-name Music \
     --key '{ "Artist": {"S": "Acme Band"}, "SongTitle": {"S": "Happy Day"}}' \
@@ -76,8 +59,7 @@ aws dynamodb update-item \
 
 **Windows CMD**
 
-```nohighlight
-
+```
 aws dynamodb update-item ^
     --table-name Music ^
     --key "{\"Artist\": {\"S\": \"Acme Band\"}, \"SongTitle\": {\"S\": \"Happy Day\"}}" ^
@@ -86,11 +68,9 @@ aws dynamodb update-item ^
     --return-values ALL_NEW
 ```
 
-Using `update-item` returns the following sample result
-because `return-values ALL_NEW` was specified.
+Using `update-item` returns the following sample result because `return-values ALL_NEW` was specified.
 
-```json
-
+```
 {
     "Attributes": {
         "AlbumTitle": {
@@ -109,12 +89,12 @@ because `return-values ALL_NEW` was specified.
 }
 ```
 
-PartiQL for DynamoDB
+------
+#### [ PartiQL for DynamoDB ]
 
 **Linux**
 
-```nohighlight
-
+```
 aws dynamodb execute-statement --statement "UPDATE Music  \
     SET AlbumTitle='Updated Album Title'  \
     WHERE Artist='Acme Band' AND SongTitle='Happy Day' \
@@ -123,17 +103,13 @@ aws dynamodb execute-statement --statement "UPDATE Music  \
 
 **Windows CMD**
 
-```nohighlight
-
+```
 aws dynamodb execute-statement --statement "UPDATE Music SET AlbumTitle='Updated Album Title' WHERE Artist='Acme Band' AND SongTitle='Happy Day' RETURNING ALL NEW *"
 ```
 
-Using the `Update` statement returns the following
-sample result because `RETURNING ALL NEW *` was
-specified.
+Using the `Update` statement returns the following sample result because `RETURNING ALL NEW *` was specified.
 
-```json
-
+```
 {
     "Items": [
         {
@@ -154,24 +130,22 @@ specified.
 }
 ```
 
-For more information about updating data with PartiQL, see [PartiQL update\
-statements](ql-reference-update.md).
+For more information about updating data with PartiQL, see [PartiQL update statements](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.update.html).
 
-The following code examples show how to update an item in a DynamoDB table using
-an AWS SDK.
+------
 
-.NET
+## AWS SDK
+<a name="getting-started-step-4-SDK"></a>
+
+The following code examples show how to update an item in a DynamoDB table using an AWS SDK.
+
+------
+#### [ .NET ]
 
 **SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB).
-
-```csharp
-
+```
     /// <summary>
     /// Updates an existing item in the movies table.
     /// </summary>
@@ -234,25 +208,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
             throw;
         }
     }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for .NET API Reference_.
-
-Bash
+------
+#### [ Bash ]
 
 **AWS CLI with Bash script**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb).
-
-```bash
-
+```
 ##############################################################################
 # function dynamodb_update_item
 #
@@ -351,13 +316,10 @@ function dynamodb_update_item() {
   return 0
 
 }
-
 ```
-
 The utility functions used in this example.
 
-```bash
-
+```
 ###############################################################################
 # function iecho
 #
@@ -414,25 +376,16 @@ function aws_cli_error_log() {
 
   return 0
 }
+```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem) in *AWS CLI Command Reference*.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
 ```
-
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem)
-in _AWS CLI Command Reference_.
-
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
-```cpp
-
 //! Update an Amazon DynamoDB table item.
 /*!
   \sa updateItem()
@@ -498,13 +451,10 @@ bool AwsDoc::DynamoDB::updateItem(const Aws::String &tableName,
 
     return waitTableActive(tableName, dynamoClient);
 }
-
 ```
-
 Code that waits for the table to become active.
 
-```cpp
-
+```
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -543,68 +493,53 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
     }
     return false;
 }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for C++ API Reference_.
-
-CLI
+------
+#### [ CLI ]
 
 **AWS CLI**
-
 **Example 1: To update an item in a table**
-
-The following `update-item` example updates an item in the `MusicCollection` table. It adds a new attribute ( `Year`) and modifies the `AlbumTitle` attribute. All of the attributes in the item, as they appear after the update, are returned in the response.
-
-```nohighlight
-
-aws dynamodb update-item \
-    --table-name MusicCollection \
-    --key file://key.json \
-    --update-expression "SET #Y = :y, #AT = :t" \
-    --expression-attribute-names file://expression-attribute-names.json \
-    --expression-attribute-values file://expression-attribute-values.json  \
-    --return-values ALL_NEW \
-    --return-consumed-capacity TOTAL \
-    --return-item-collection-metrics SIZE
+The following `update-item` example updates an item in the `MusicCollection` table. It adds a new attribute (`Year`) and modifies the `AlbumTitle` attribute. All of the attributes in the item, as they appear after the update, are returned in the response.
 
 ```
-
+aws dynamodb update-item \
+    --table-name {{MusicCollection}} \
+    --key {{file://key.json}} \
+    --update-expression {{"SET #Y = :y, #AT = :t"}} \
+    --expression-attribute-names {{file://expression-attribute-names.json}} \
+    --expression-attribute-values {{file://expression-attribute-values.json}}  \
+    --return-values {{ALL_NEW}} \
+    --return-consumed-capacity {{TOTAL}} \
+    --return-item-collection-metrics {{SIZE}}
+```
 Contents of `key.json`:
 
-```nohighlight
-
+```
 {
     "Artist": {"S": "Acme Band"},
     "SongTitle": {"S": "Happy Day"}
 }
 ```
-
 Contents of `expression-attribute-names.json`:
 
-```nohighlight
-
+```
 {
     "#Y":"Year", "#AT":"AlbumTitle"
 }
 ```
-
 Contents of `expression-attribute-values.json`:
 
-```nohighlight
-
+```
 {
     ":y":{"N": "2015"},
     ":t":{"S": "Louder Than Ever"}
 }
 ```
-
 Output:
 
-```nohighlight
-
+```
 {
     "Attributes": {
         "AlbumTitle": {
@@ -640,80 +575,58 @@ Output:
     }
 }
 ```
-
-For more information, see [Writing an Item](workingwithitems.md#WorkingWithItems.WritingData) in the _Amazon DynamoDB Developer Guide_.
-
+For more information, see [Writing an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.WritingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To update an item conditionally**
-
 The following example updates an item in the `MusicCollection` table, but only if the existing item does not already have a `Year` attribute.
 
-```nohighlight
-
-aws dynamodb update-item \
-    --table-name MusicCollection \
-    --key file://key.json \
-    --update-expression "SET #Y = :y, #AT = :t" \
-    --expression-attribute-names file://expression-attribute-names.json \
-    --expression-attribute-values file://expression-attribute-values.json  \
-    --condition-expression "attribute_not_exists(#Y)"
-
 ```
-
+aws dynamodb update-item \
+    --table-name {{MusicCollection}} \
+    --key {{file://key.json}} \
+    --update-expression {{"SET #Y = :y, #AT = :t"}} \
+    --expression-attribute-names {{file://expression-attribute-names.json}} \
+    --expression-attribute-values {{file://expression-attribute-values.json}}  \
+    --condition-expression {{"attribute_not_exists(#Y)"}}
+```
 Contents of `key.json`:
 
-```nohighlight
-
+```
 {
     "Artist": {"S": "Acme Band"},
     "SongTitle": {"S": "Happy Day"}
 }
 ```
-
 Contents of `expression-attribute-names.json`:
 
-```nohighlight
-
+```
 {
     "#Y":"Year",
     "#AT":"AlbumTitle"
 }
 ```
-
 Contents of `expression-attribute-values.json`:
 
-```nohighlight
-
+```
 {
     ":y":{"N": "2015"},
     ":t":{"S": "Louder Than Ever"}
 }
 ```
-
 If the item already has a `Year` attribute, DynamoDB returns the following output.
 
-```nohighlight
-
+```
 An error occurred (ConditionalCheckFailedException) when calling the UpdateItem operation: The conditional request failed
 ```
+For more information, see [Writing an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.WritingData) in the *Amazon DynamoDB Developer Guide*.
++  For API details, see [UpdateItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/update-item.html) in *AWS CLI Command Reference*.
 
-For more information, see [Writing an Item](workingwithitems.md#WorkingWithItems.WritingData) in the _Amazon DynamoDB Developer Guide_.
-
-- For API details, see
-[UpdateItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/update-item.html)
-in _AWS CLI Command Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
-```go
-
+```
 import (
 	"context"
 	"errors"
@@ -766,13 +679,10 @@ func (basics TableBasics) UpdateMovie(ctx context.Context, movie Movie) (map[str
 	}
 	return attributeMap, err
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -814,27 +724,17 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
++  For API details, see [UpdateItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.UpdateItem) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[UpdateItem](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
+Updates an item in a table using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb).
-
-Updates an item in a table using [DynamoDbClient](../../../../reference/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/dynamodbclient.md).
-
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.AttributeAction;
@@ -925,27 +825,17 @@ public class UpdateItem {
         System.out.println("The Amazon DynamoDB table was updated!");
     }
 }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
+This example uses the document client to simplify working with items in DynamoDB. For API details see [UpdateCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/UpdateCommand/).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
-This example uses the document client to simplify working with items in DynamoDB. For API details see [UpdateCommand](../../../../reference/awsjavascriptsdk/v3/latest/package/aws-sdk-lib-dynamodb/class/updatecommand.md).
-
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -969,25 +859,16 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Kotlin
+------
+#### [ Kotlin ]
 
 **SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb).
-
-```kotlin
-
+```
 suspend fun updateTableItem(
     tableNameVal: String,
     keyName: String,
@@ -1017,25 +898,16 @@ suspend fun updateTableItem(
         println("Item in $tableNameVal was updated")
     }
 }
-
 ```
++  For API details, see [UpdateItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
-- For API details, see
-[UpdateItem](https://sdk.amazonaws.com/kotlin/api/latest/index.html)
-in _AWS SDK for Kotlin API reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-```php
-
+```
         echo "What rating would you like to give {$movie['Item']['title']['S']}?\n";
         $rating = 0;
         while (!is_numeric($rating) || intval($rating) != $rating || $rating < 1 || $rating > 10) {
@@ -1064,21 +936,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
             ],
         ]);
     }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for PHP API Reference_.
-
-PowerShell
+------
+#### [ PowerShell ]
 
 **Tools for PowerShell V4**
-
 **Example 1: Sets the genre attribute to 'Rap' on the DynamoDB item with the partition key SongTitle and the sort key Artist.**
 
-```powershell
-
+```
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -1093,28 +960,20 @@ $updateDdbItem = @{
     })
 }
 Update-DDBItem @updateDdbItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Rap
 ```
-
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/powershell/v4/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
 
 **Tools for PowerShell V5**
-
 **Example 1: Sets the genre attribute to 'Rap' on the DynamoDB item with the partition key SongTitle and the sort key Artist.**
 
-```powershell
-
+```
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -1129,36 +988,24 @@ $updateDdbItem = @{
     })
 }
 Update-DDBItem @updateDdbItem
-
 ```
-
 **Output:**
 
-```nohighlight
-
+```
 Name                           Value
 ----                           -----
 Genre                          Rap
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/powershell/v5/reference)
-in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Update an item by using an update expression.
 
-```python
-
+```
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -1219,13 +1066,10 @@ class Movies:
             raise
         else:
             return response["Attributes"]
-
 ```
-
 Update an item by using an update expression that includes an arithmetic operation.
 
-```python
-
+```
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1260,13 +1104,10 @@ class UpdateQueryWrapper:
             raise
         else:
             return response["Attributes"]
-
 ```
-
 Update an item only when it meets certain conditions.
 
-```python
-
+```
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -1307,25 +1148,16 @@ class UpdateQueryWrapper:
             raise
         else:
             return response["Attributes"]
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
-```ruby
-
+```
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -1352,25 +1184,16 @@ class DynamoDBBasics
   else
     response.attributes
   end
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Ruby API Reference_.
-
-SAP ABAP
+------
+#### [ SAP ABAP ]
 
 **SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn).
-
-```sap-abap
-
+```
     TRY.
         oo_output = lo_dyn->updateitem(
           iv_tablename        = iv_table_name
@@ -1384,25 +1207,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/s
       CATCH /aws1/cx_dyntransactconflictex.
         MESSAGE 'Another transaction is using the item' TYPE 'E'.
     ENDTRY.
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
 
-- For API details, see
-[UpdateItem](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
-in _AWS SDK for SAP ABAP API reference_.
-
-Swift
+------
+#### [ Swift ]
 
 **SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb).
-
-```swift
-
+```
 import AWSDynamoDB
 
     /// Update the specified movie with new `rating` and `plot` information.
@@ -1466,21 +1280,13 @@ import AWSDynamoDB
             throw error
         }
     }
-
 ```
++  For API details, see [UpdateItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/updateitem(input:)) in *AWS SDK for Swift API reference*.
 
-- For API details, see
-[UpdateItem](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient/updateitem(input:))
-in _AWS SDK for Swift API reference_.
+------
 
-For more DynamoDB examples, see [Code examples for DynamoDB using AWS SDKs](service-code-examples.md).
+For more DynamoDB examples, see [Code examples for DynamoDB using AWS SDKs](service_code_examples.md).
 
 To query the data in the `Music` table, proceed to [Step 5: Query data in a DynamoDB table](getting-started-step-5.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Step 3: Read data
-
-Step 5: Query data
 
 All content copied from https://docs.aws.amazon.com/.

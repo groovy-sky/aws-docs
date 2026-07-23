@@ -2,96 +2,70 @@
 title: "AWS::QuickSight::Template NestedFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template NestedFilter
+<a name="aws-properties-quicksight-template-nestedfilter"></a>
 
 A `NestedFilter` filters data with a subset of data that is defined by the nested inner filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-nestedfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-nestedfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnIdentifier,
-  "FilterId" : String,
-  "IncludeInnerSet" : Boolean,
-  "InnerFilter" : InnerFilter
+  "[Column](#cfn-quicksight-template-nestedfilter-column)" : {{ColumnIdentifier}},
+  "[FilterId](#cfn-quicksight-template-nestedfilter-filterid)" : {{String}},
+  "[IncludeInnerSet](#cfn-quicksight-template-nestedfilter-includeinnerset)" : {{Boolean}},
+  "[InnerFilter](#cfn-quicksight-template-nestedfilter-innerfilter)" : {{InnerFilter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-nestedfilter-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnIdentifier
-  FilterId: String
-  IncludeInnerSet: Boolean
-  InnerFilter:
-    InnerFilter
-
+```
+  [Column](#cfn-quicksight-template-nestedfilter-column): {{
+    ColumnIdentifier}}
+  [FilterId](#cfn-quicksight-template-nestedfilter-filterid): {{String}}
+  [IncludeInnerSet](#cfn-quicksight-template-nestedfilter-includeinnerset): {{Boolean}}
+  [InnerFilter](#cfn-quicksight-template-nestedfilter-innerfilter): {{
+    InnerFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-nestedfilter-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-nestedfilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterId`
-
+`FilterId`  <a name="cfn-quicksight-template-nestedfilter-filterid"></a>
 An identifier that uniquely identifies a filter within a dashboard, analysis, or template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeInnerSet`
-
+`IncludeInnerSet`  <a name="cfn-quicksight-template-nestedfilter-includeinnerset"></a>
 A boolean condition to include or exclude the subset that is defined by the values of the nested inner filter.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InnerFilter`
-
+`InnerFilter`  <a name="cfn-quicksight-template-nestedfilter-innerfilter"></a>
 The `InnerFilter` defines the subset of data to be used with the `NestedFilter`.
-
-_Required_: Yes
-
-_Type_: [InnerFilter](aws-properties-quicksight-template-innerfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NegativeValueConfiguration
-
-NullValueFormatConfiguration
+*Required*: Yes
+*Type*: [InnerFilter](aws-properties-quicksight-template-innerfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

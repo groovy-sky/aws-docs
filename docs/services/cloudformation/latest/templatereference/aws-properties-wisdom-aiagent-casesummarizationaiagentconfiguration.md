@@ -2,82 +2,60 @@
 title: "AWS::Wisdom::AIAgent CaseSummarizationAIAgentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent CaseSummarizationAIAgentConfiguration
+<a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration"></a>
 
 The configuration for AI Agents of type `CASE_SUMMARIZATION`.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CaseSummarizationAIGuardrailId" : String,
-  "CaseSummarizationAIPromptId" : String,
-  "Locale" : String
+  "[CaseSummarizationAIGuardrailId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaiguardrailid)" : {{String}},
+  "[CaseSummarizationAIPromptId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaipromptid)" : {{String}},
+  "[Locale](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-locale)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CaseSummarizationAIGuardrailId: String
-  CaseSummarizationAIPromptId: String
-  Locale: String
-
+```
+  [CaseSummarizationAIGuardrailId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaiguardrailid): {{String}}
+  [CaseSummarizationAIPromptId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaipromptid): {{String}}
+  [Locale](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-locale): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration-properties"></a>
 
-`CaseSummarizationAIGuardrailId`
-
+`CaseSummarizationAIGuardrailId`  <a name="cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaiguardrailid"></a>
 The AI Guardrail identifier used by the Case Summarization AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CaseSummarizationAIPromptId`
-
+`CaseSummarizationAIPromptId`  <a name="cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaipromptid"></a>
 The AI Prompt identifier used by the Case Summarization AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Locale`
-
+`Locale`  <a name="cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-locale"></a>
 The locale setting for the Case Summarization AI Agent.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssociationConfigurationData
-
-EmailGenerativeAnswerAIAgentConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

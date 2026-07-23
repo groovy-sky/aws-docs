@@ -2,78 +2,58 @@
 title: "AWS::MPA::IdentitySource IamIdentityCenter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MPA::IdentitySource IamIdentityCenter
+<a name="aws-properties-mpa-identitysource-iamidentitycenter"></a>
 
-AWS IAM Identity Center credentials. For more information see, [AWS IAM Identity Center](https://aws.amazon.com/identity-center) .
+AWS IAM Identity Center credentials. For more information see, [AWS IAM Identity Center](https://aws.amazon.com/identity-center/) .
 
 ## Syntax
+<a name="aws-properties-mpa-identitysource-iamidentitycenter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mpa-identitysource-iamidentitycenter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApprovalPortalUrl" : String,
-  "InstanceArn" : String,
-  "Region" : String
+  "[ApprovalPortalUrl](#cfn-mpa-identitysource-iamidentitycenter-approvalportalurl)" : {{String}},
+  "[InstanceArn](#cfn-mpa-identitysource-iamidentitycenter-instancearn)" : {{String}},
+  "[Region](#cfn-mpa-identitysource-iamidentitycenter-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mpa-identitysource-iamidentitycenter-syntax.yaml"></a>
 
-```yaml
-
-  ApprovalPortalUrl: String
-  InstanceArn: String
-  Region: String
-
+```
+  [ApprovalPortalUrl](#cfn-mpa-identitysource-iamidentitycenter-approvalportalurl): {{String}}
+  [InstanceArn](#cfn-mpa-identitysource-iamidentitycenter-instancearn): {{String}}
+  [Region](#cfn-mpa-identitysource-iamidentitycenter-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mpa-identitysource-iamidentitycenter-properties"></a>
 
-`ApprovalPortalUrl`
-
+`ApprovalPortalUrl`  <a name="cfn-mpa-identitysource-iamidentitycenter-approvalportalurl"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-mpa-identitysource-iamidentitycenter-instancearn"></a>
 Amazon Resource Name (ARN) for the IAM Identity Center instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.+:sso:::instance/(?:sso)?ins-[a-zA-Z0-9-.]{16}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.+:sso:::instance/(?:sso)?ins-[a-zA-Z0-9-.]{16}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Region`
-
+`Region`  <a name="cfn-mpa-identitysource-iamidentitycenter-region"></a>
 AWS Region where the IAM Identity Center instance is located.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MPA::IdentitySource
-
-IdentitySourceParameters
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,96 +2,69 @@
 title: "AWS::QuickSight::Dashboard KPISparklineOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard KPISparklineOptions
+<a name="aws-properties-quicksight-dashboard-kpisparklineoptions"></a>
 
 The options that determine the visibility, color, type, and tooltip visibility of the sparkline of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-kpisparklineoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-kpisparklineoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "TooltipVisibility" : String,
-  "Type" : String,
-  "Visibility" : String
+  "[Color](#cfn-quicksight-dashboard-kpisparklineoptions-color)" : {{String}},
+  "[TooltipVisibility](#cfn-quicksight-dashboard-kpisparklineoptions-tooltipvisibility)" : {{String}},
+  "[Type](#cfn-quicksight-dashboard-kpisparklineoptions-type)" : {{String}},
+  "[Visibility](#cfn-quicksight-dashboard-kpisparklineoptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-kpisparklineoptions-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  TooltipVisibility: String
-  Type: String
-  Visibility: String
-
+```
+  [Color](#cfn-quicksight-dashboard-kpisparklineoptions-color): {{String}}
+  [TooltipVisibility](#cfn-quicksight-dashboard-kpisparklineoptions-tooltipvisibility): {{String}}
+  [Type](#cfn-quicksight-dashboard-kpisparklineoptions-type): {{String}}
+  [Visibility](#cfn-quicksight-dashboard-kpisparklineoptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-kpisparklineoptions-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-dashboard-kpisparklineoptions-color"></a>
 The color of the sparkline.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TooltipVisibility`
-
+`TooltipVisibility`  <a name="cfn-quicksight-dashboard-kpisparklineoptions-tooltipvisibility"></a>
 The tooltip visibility of the sparkline.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dashboard-kpisparklineoptions-type"></a>
 The type of the sparkline.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `LINE | AREA`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `LINE | AREA`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-dashboard-kpisparklineoptions-visibility"></a>
 The visibility of the sparkline.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPISortConfiguration
-
-KPIVisual
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

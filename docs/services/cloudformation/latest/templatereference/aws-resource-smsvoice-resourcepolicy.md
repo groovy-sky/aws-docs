@@ -2,80 +2,63 @@
 title: "AWS::SMSVOICE::ResourcePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::ResourcePolicy
+<a name="aws-resource-smsvoice-resourcepolicy"></a>
 
-Attaches a resource-based policy to a AWS End User Messaging SMS resource(phone number, sender Id, phone poll, or opt-out list) that is used for
-sharing the resource. A shared resource can be a Pool, Opt-out list, Sender Id, or Phone number. For more information about
-resource-based policies, see [Working with shared resources](../../../sms-voice/latest/userguide/shared-resources.md) in the _AWS End User Messaging SMS User Guide_.
+Attaches a resource-based policy to a AWS End User Messaging SMS resource(phone number, sender Id, phone poll, or opt-out list) that is used for sharing the resource. A shared resource can be a Pool, Opt-out list, Sender Id, or Phone number. For more information about resource-based policies, see [Working with shared resources](https://docs.aws.amazon.com/sms-voice/latest/userguide/shared-resources.html) in the *AWS End User Messaging SMS User Guide*.
 
 ## Syntax
+<a name="aws-resource-smsvoice-resourcepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-smsvoice-resourcepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SMSVOICE::ResourcePolicy",
   "Properties" : {
-      "PolicyDocument" : Json,
-      "ResourceArn" : String
+      "[PolicyDocument](#cfn-smsvoice-resourcepolicy-policydocument)" : {{Json}},
+      "[ResourceArn](#cfn-smsvoice-resourcepolicy-resourcearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-smsvoice-resourcepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SMSVOICE::ResourcePolicy
 Properties:
-  PolicyDocument: Json
-  ResourceArn: String
-
+  [PolicyDocument](#cfn-smsvoice-resourcepolicy-policydocument): {{Json}}
+  [ResourceArn](#cfn-smsvoice-resourcepolicy-resourcearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-smsvoice-resourcepolicy-properties"></a>
 
-`PolicyDocument`
-
+`PolicyDocument`  <a name="cfn-smsvoice-resourcepolicy-policydocument"></a>
 The JSON formatted resource-based policy to attach.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceArn`
-
+`ResourceArn`  <a name="cfn-smsvoice-resourcepolicy-resourcearn"></a>
 The Amazon Resource Name (ARN) of the AWS End User Messaging SMS resource attached to the resource-based policy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:\S+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:\S+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-smsvoice-resourcepolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-smsvoice-resourcepolicy-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns
-`ResourceArn`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SMSVOICE::SenderId
+ When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `ResourceArn`
 
 All content copied from https://docs.aws.amazon.com/.

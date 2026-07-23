@@ -2,448 +2,310 @@
 title: "AWS::Bedrock::Agent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent
+<a name="aws-resource-bedrock-agent"></a>
 
-Specifies an agent as a resource in a top-level template. Minimally, you must specify
-the following properties:
+Specifies an agent as a resource in a top-level template. Minimally, you must specify the following properties:
++ AgentName – Specify a name for the agent.
++ AgentResourceRoleArn – Specify the Amazon Resource Name (ARN) of the service role with permissions to invoke API operations on the agent. For more information, see [Create a service role for Agents for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-permissions.html).
++ FoundationModel – Specify the model ID of a foundation model to use when invoking the agent. For more information, see [Supported regions and models for Agents for Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-supported.html).
 
-- AgentName – Specify a name for the agent.
+For more information about using agents in Amazon Bedrock, see [Agents for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html).
 
-- AgentResourceRoleArn – Specify the Amazon Resource Name (ARN) of the service
-role with permissions to invoke API operations on the agent. For more
-information, see [Create a service role\
-for Agents for Amazon Bedrock](../../../bedrock/latest/userguide/agents-permissions.md).
-
-- FoundationModel – Specify the model ID of a foundation model to use when
-invoking the agent. For more information, see [Supported regions and\
-models for Agents for Amazon Bedrock](../../../bedrock/latest/userguide/agents-supported.md).
-
-For more information about using agents in Amazon Bedrock, see [Agents for Amazon Bedrock](../../../bedrock/latest/userguide/agents.md).
-
-See the **Properties** section below for descriptions of
-both the required and optional properties.
+See the **Properties** section below for descriptions of both the required and optional properties.
 
 ## Syntax
+<a name="aws-resource-bedrock-agent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-agent-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::Agent",
   "Properties" : {
-      "ActionGroups" : [ AgentActionGroup, ... ],
-      "AgentCollaboration" : String,
-      "AgentCollaborators" : [ AgentCollaborator, ... ],
-      "AgentName" : String,
-      "AgentResourceRoleArn" : String,
-      "AutoPrepare" : Boolean,
-      "CustomerEncryptionKeyArn" : String,
-      "CustomOrchestration" : CustomOrchestration,
-      "Description" : String,
-      "FoundationModel" : String,
-      "GuardrailConfiguration" : GuardrailConfiguration,
-      "IdleSessionTTLInSeconds" : Number,
-      "Instruction" : String,
-      "KnowledgeBases" : [ AgentKnowledgeBase, ... ],
-      "MemoryConfiguration" : MemoryConfiguration,
-      "OrchestrationType" : String,
-      "PromptOverrideConfiguration" : PromptOverrideConfiguration,
-      "SkipResourceInUseCheckOnDelete" : Boolean,
-      "Tags" : {Key: Value, ...},
-      "TestAliasTags" : {Key: Value, ...}
+      "[ActionGroups](#cfn-bedrock-agent-actiongroups)" : {{[ AgentActionGroup, ... ]}},
+      "[AgentCollaboration](#cfn-bedrock-agent-agentcollaboration)" : {{String}},
+      "[AgentCollaborators](#cfn-bedrock-agent-agentcollaborators)" : {{[ AgentCollaborator, ... ]}},
+      "[AgentName](#cfn-bedrock-agent-agentname)" : {{String}},
+      "[AgentResourceRoleArn](#cfn-bedrock-agent-agentresourcerolearn)" : {{String}},
+      "[AutoPrepare](#cfn-bedrock-agent-autoprepare)" : {{Boolean}},
+      "[CustomerEncryptionKeyArn](#cfn-bedrock-agent-customerencryptionkeyarn)" : {{String}},
+      "[CustomOrchestration](#cfn-bedrock-agent-customorchestration)" : {{CustomOrchestration}},
+      "[Description](#cfn-bedrock-agent-description)" : {{String}},
+      "[FoundationModel](#cfn-bedrock-agent-foundationmodel)" : {{String}},
+      "[GuardrailConfiguration](#cfn-bedrock-agent-guardrailconfiguration)" : {{GuardrailConfiguration}},
+      "[IdleSessionTTLInSeconds](#cfn-bedrock-agent-idlesessionttlinseconds)" : {{Number}},
+      "[Instruction](#cfn-bedrock-agent-instruction)" : {{String}},
+      "[KnowledgeBases](#cfn-bedrock-agent-knowledgebases)" : {{[ AgentKnowledgeBase, ... ]}},
+      "[MemoryConfiguration](#cfn-bedrock-agent-memoryconfiguration)" : {{MemoryConfiguration}},
+      "[OrchestrationType](#cfn-bedrock-agent-orchestrationtype)" : {{String}},
+      "[PromptOverrideConfiguration](#cfn-bedrock-agent-promptoverrideconfiguration)" : {{PromptOverrideConfiguration}},
+      "[SkipResourceInUseCheckOnDelete](#cfn-bedrock-agent-skipresourceinusecheckondelete)" : {{Boolean}},
+      "[Tags](#cfn-bedrock-agent-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[TestAliasTags](#cfn-bedrock-agent-testaliastags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-agent-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::Agent
 Properties:
-  ActionGroups:
-    - AgentActionGroup
-  AgentCollaboration: String
-  AgentCollaborators:
-    - AgentCollaborator
-  AgentName: String
-  AgentResourceRoleArn: String
-  AutoPrepare: Boolean
-  CustomerEncryptionKeyArn: String
-  CustomOrchestration:
-    CustomOrchestration
-  Description: String
-  FoundationModel: String
-  GuardrailConfiguration:
-    GuardrailConfiguration
-  IdleSessionTTLInSeconds: Number
-  Instruction: String
-  KnowledgeBases:
-    - AgentKnowledgeBase
-  MemoryConfiguration:
-    MemoryConfiguration
-  OrchestrationType: String
-  PromptOverrideConfiguration:
-    PromptOverrideConfiguration
-  SkipResourceInUseCheckOnDelete: Boolean
-  Tags:
-    Key: Value
-  TestAliasTags:
-    Key: Value
-
+  [ActionGroups](#cfn-bedrock-agent-actiongroups): {{
+    - AgentActionGroup}}
+  [AgentCollaboration](#cfn-bedrock-agent-agentcollaboration): {{String}}
+  [AgentCollaborators](#cfn-bedrock-agent-agentcollaborators): {{
+    - AgentCollaborator}}
+  [AgentName](#cfn-bedrock-agent-agentname): {{String}}
+  [AgentResourceRoleArn](#cfn-bedrock-agent-agentresourcerolearn): {{String}}
+  [AutoPrepare](#cfn-bedrock-agent-autoprepare): {{Boolean}}
+  [CustomerEncryptionKeyArn](#cfn-bedrock-agent-customerencryptionkeyarn): {{String}}
+  [CustomOrchestration](#cfn-bedrock-agent-customorchestration): {{
+    CustomOrchestration}}
+  [Description](#cfn-bedrock-agent-description): {{String}}
+  [FoundationModel](#cfn-bedrock-agent-foundationmodel): {{String}}
+  [GuardrailConfiguration](#cfn-bedrock-agent-guardrailconfiguration): {{
+    GuardrailConfiguration}}
+  [IdleSessionTTLInSeconds](#cfn-bedrock-agent-idlesessionttlinseconds): {{Number}}
+  [Instruction](#cfn-bedrock-agent-instruction): {{String}}
+  [KnowledgeBases](#cfn-bedrock-agent-knowledgebases): {{
+    - AgentKnowledgeBase}}
+  [MemoryConfiguration](#cfn-bedrock-agent-memoryconfiguration): {{
+    MemoryConfiguration}}
+  [OrchestrationType](#cfn-bedrock-agent-orchestrationtype): {{String}}
+  [PromptOverrideConfiguration](#cfn-bedrock-agent-promptoverrideconfiguration): {{
+    PromptOverrideConfiguration}}
+  [SkipResourceInUseCheckOnDelete](#cfn-bedrock-agent-skipresourceinusecheckondelete): {{Boolean}}
+  [Tags](#cfn-bedrock-agent-tags): {{
+    {{Key}}: {{Value}}}}
+  [TestAliasTags](#cfn-bedrock-agent-testaliastags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-agent-properties"></a>
 
-`ActionGroups`
-
+`ActionGroups`  <a name="cfn-bedrock-agent-actiongroups"></a>
 The action groups that belong to an agent.
+*Required*: No
+*Type*: Array of [AgentActionGroup](aws-properties-bedrock-agent-agentactiongroup.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AgentActionGroup](aws-properties-bedrock-agent-agentactiongroup.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AgentCollaboration`
-
+`AgentCollaboration`  <a name="cfn-bedrock-agent-agentcollaboration"></a>
 The agent's collaboration settings.
+*Required*: No
+*Type*: String
+*Allowed values*: `DISABLED | SUPERVISOR | SUPERVISOR_ROUTER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DISABLED | SUPERVISOR | SUPERVISOR_ROUTER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AgentCollaborators`
-
+`AgentCollaborators`  <a name="cfn-bedrock-agent-agentcollaborators"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [AgentCollaborator](aws-properties-bedrock-agent-agentcollaborator.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AgentCollaborator](aws-properties-bedrock-agent-agentcollaborator.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AgentName`
-
+`AgentName`  <a name="cfn-bedrock-agent-agentname"></a>
 The name of the agent.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?){1,100}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?){1,100}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AgentResourceRoleArn`
-
+`AgentResourceRoleArn`  <a name="cfn-bedrock-agent-agentresourcerolearn"></a>
 The Amazon Resource Name (ARN) of the IAM role with permissions to invoke API operations on the agent.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AutoPrepare`  <a name="cfn-bedrock-agent-autoprepare"></a>
+Specifies whether to automatically update the `DRAFT` version of the agent after making changes to the agent. The `DRAFT` version can be continually iterated upon during internal development. By default, this value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoPrepare`
-
-Specifies whether to automatically update the `DRAFT` version of the agent
-after making changes to the agent. The `DRAFT` version can be continually
-iterated upon during internal development. By default, this value is
-`false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomerEncryptionKeyArn`
-
+`CustomerEncryptionKeyArn`  <a name="cfn-bedrock-agent-customerencryptionkeyarn"></a>
 The Amazon Resource Name (ARN) of the AWS KMS key that encrypts the agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`CustomOrchestration`  <a name="cfn-bedrock-agent-customorchestration"></a>
+ Contains custom orchestration configurations for the agent.
+*Required*: No
+*Type*: [CustomOrchestration](aws-properties-bedrock-agent-customorchestration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:aws(-[^:]+)?:kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomOrchestration`
-
-Contains custom orchestration configurations for the agent.
-
-_Required_: No
-
-_Type_: [CustomOrchestration](aws-properties-bedrock-agent-customorchestration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-bedrock-agent-description"></a>
 The description of the agent.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FoundationModel`
-
+`FoundationModel`  <a name="cfn-bedrock-agent-foundationmodel"></a>
 The foundation model used for orchestration by the agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:(([0-9]{12}:custom-model/[a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}(([:][a-z0-9-]{1,63}){0,2})?/[a-z0-9]{12})|(:foundation-model/([a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}([.]?[a-z0-9-]{1,63})([:][a-z0-9-]{1,63}){0,2}))|([0-9]{12}:(inference-profile|application-inference-profile)/[a-zA-Z0-9-:.]+))|(([a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}([.]?[a-z0-9-]{1,63})([:][a-z0-9-]{1,63}){0,2}))|(([0-9a-zA-Z][_-]?)+)$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:(([0-9]{12}:custom-model/[a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}(([:][a-z0-9-]{1,63}){0,2})?/[a-z0-9]{12})|(:foundation-model/([a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}([.]?[a-z0-9-]{1,63})([:][a-z0-9-]{1,63}){0,2}))|([0-9]{12}:(inference-profile|application-inference-profile)/[a-zA-Z0-9-:.]+))|(([a-z0-9-]{1,63}[.]{1}[a-z0-9-]{1,63}([.]?[a-z0-9-]{1,63})([:][a-z0-9-]{1,63}){0,2}))|(([0-9a-zA-Z][_-]?)+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GuardrailConfiguration`
-
+`GuardrailConfiguration`  <a name="cfn-bedrock-agent-guardrailconfiguration"></a>
 Details about the guardrail associated with the agent.
+*Required*: No
+*Type*: [GuardrailConfiguration](aws-properties-bedrock-agent-guardrailconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GuardrailConfiguration](aws-properties-bedrock-agent-guardrailconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdleSessionTTLInSeconds`
-
+`IdleSessionTTLInSeconds`  <a name="cfn-bedrock-agent-idlesessionttlinseconds"></a>
 The number of seconds for which Amazon Bedrock keeps information about a user's conversation with the agent.
-
 A user interaction remains active for the amount of time specified. If no conversation occurs during this time, the session expires and Amazon Bedrock deletes any data provided before the timeout.
+*Required*: No
+*Type*: Number
+*Minimum*: `60`
+*Maximum*: `5400`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `60`
-
-_Maximum_: `5400`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Instruction`
-
+`Instruction`  <a name="cfn-bedrock-agent-instruction"></a>
 Instructions that tell the agent what it should do and how it should interact with users.
+*Required*: No
+*Type*: String
+*Minimum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KnowledgeBases`
-
+`KnowledgeBases`  <a name="cfn-bedrock-agent-knowledgebases"></a>
 The knowledge bases associated with the agent.
+*Required*: No
+*Type*: Array of [AgentKnowledgeBase](aws-properties-bedrock-agent-agentknowledgebase.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AgentKnowledgeBase](aws-properties-bedrock-agent-agentknowledgebase.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MemoryConfiguration`
-
+`MemoryConfiguration`  <a name="cfn-bedrock-agent-memoryconfiguration"></a>
 Contains memory configuration for the agent.
+*Required*: No
+*Type*: [MemoryConfiguration](aws-properties-bedrock-agent-memoryconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OrchestrationType`  <a name="cfn-bedrock-agent-orchestrationtype"></a>
+ Specifies the orchestration strategy for the agent.
+*Required*: No
+*Type*: String
+*Allowed values*: `DEFAULT | CUSTOM_ORCHESTRATION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [MemoryConfiguration](aws-properties-bedrock-agent-memoryconfiguration.md)
+`PromptOverrideConfiguration`  <a name="cfn-bedrock-agent-promptoverrideconfiguration"></a>
+Contains configurations to override prompt templates in different parts of an agent sequence. For more information, see [Advanced prompts](https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompts.html).
+*Required*: No
+*Type*: [PromptOverrideConfiguration](aws-properties-bedrock-agent-promptoverrideconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SkipResourceInUseCheckOnDelete`  <a name="cfn-bedrock-agent-skipresourceinusecheckondelete"></a>
+Specifies whether to delete the resource even if it's in use. By default, this value is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`OrchestrationType`
+`Tags`  <a name="cfn-bedrock-agent-tags"></a>
+Metadata that you can assign to a resource as key-value pairs. For more information, see the following resources:
++  [Tag naming limits and requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-conventions)
++  [Tagging best practices](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-best-practices)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the orchestration strategy for the agent.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DEFAULT | CUSTOM_ORCHESTRATION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PromptOverrideConfiguration`
-
-Contains configurations to override prompt templates in different parts of an agent sequence. For more information, see [Advanced prompts](../../../bedrock/latest/userguide/advanced-prompts.md).
-
-_Required_: No
-
-_Type_: [PromptOverrideConfiguration](aws-properties-bedrock-agent-promptoverrideconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SkipResourceInUseCheckOnDelete`
-
-Specifies whether to delete the resource even if it's in use. By default, this value
-is `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Metadata that you can assign to a resource as key-value pairs. For more information,
-see the following resources:
-
-- [Tag naming\
-limits and requirements](../../../tag-editor/latest/userguide/tagging.md#tag-conventions)
-
-- [Tagging\
-best practices](../../../tag-editor/latest/userguide/tagging.md#tag-best-practices)
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TestAliasTags`
-
-Metadata that you can assign to a resource as key-value pairs. For more information,
-see the following resources:
-
-- [Tag naming\
-limits and requirements](../../../tag-editor/latest/userguide/tagging.md#tag-conventions)
-
-- [Tagging\
-best practices](../../../tag-editor/latest/userguide/tagging.md#tag-best-practices)
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TestAliasTags`  <a name="cfn-bedrock-agent-testaliastags"></a>
+Metadata that you can assign to a resource as key-value pairs. For more information, see the following resources:
++  [Tag naming limits and requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-conventions)
++  [Tagging best practices](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-best-practices)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrock-agent-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-agent-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the agent base ID.
 
-For example, `{ "Ref": "myAgent" }` could return the value
-`"AGENT12345"`.
+For example, `{ "Ref": "myAgent" }` could return the value `"AGENT12345"`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-agent-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AgentArn`
+####
+<a name="aws-resource-bedrock-agent-return-values-fn--getatt-fn--getatt"></a>
 
+`AgentArn`  <a name="AgentArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the agent.
 
-`AgentId`
-
+`AgentId`  <a name="AgentId-fn::getatt"></a>
 The unique identifier of the agent.
 
-`AgentStatus`
-
+`AgentStatus`  <a name="AgentStatus-fn::getatt"></a>
 The status of the agent and whether it is ready for use. The following statuses are possible:
++ CREATING – The agent is being created.
++ PREPARING – The agent is being prepared.
++ PREPARED – The agent is prepared and ready to be invoked.
++ NOT\_PREPARED – The agent has been created but not yet prepared.
++ FAILED – The agent API operation failed.
++ UPDATING – The agent is being updated.
++ DELETING – The agent is being deleted.
 
-- CREATING – The agent is being created.
-
-- PREPARING – The agent is being prepared.
-
-- PREPARED – The agent is prepared and ready to be invoked.
-
-- NOT\_PREPARED – The agent has been created but not yet prepared.
-
-- FAILED – The agent API operation failed.
-
-- UPDATING – The agent is being updated.
-
-- DELETING – The agent is being deleted.
-
-`AgentVersion`
-
+`AgentVersion`  <a name="AgentVersion-fn::getatt"></a>
 The version of the agent.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time at which the agent was created.
 
-`FailureReasons`
-
+`FailureReasons`  <a name="FailureReasons-fn::getatt"></a>
 Contains reasons that the agent-related API that you invoked failed.
 
-`PreparedAt`
-
+`PreparedAt`  <a name="PreparedAt-fn::getatt"></a>
 The time at which the agent was last prepared.
 
-`RecommendedActions`
-
+`RecommendedActions`  <a name="RecommendedActions-fn::getatt"></a>
 Contains recommended actions to take for the agent-related API that you invoked to succeed.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The time at which the agent was last updated.
 
 ## Examples
+<a name="aws-resource-bedrock-agent--examples"></a>
 
 ### Create an agent
+<a name="aws-resource-bedrock-agent--examples--Create_an_agent"></a>
 
-The following example creates an agent that orchestrates on the Anthropic
-Claude v2 foundation model to help customers with IT problems. It contains one
-action group and one knowledge base.
+The following example creates an agent that orchestrates on the Anthropic Claude v2 foundation model to help customers with IT problems. It contains one action group and one knowledge base.
 
 #### YAML
+<a name="aws-resource-bedrock-agent--examples--Create_an_agent--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: "CFN stack for creating an agent"
 Resources:
@@ -473,9 +335,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-bedrock-agent--examples--Create_an_agent--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "CFN stack for creating an agent",
@@ -517,11 +379,5 @@ Resources:
    }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Bedrock
-
-ActionGroupExecutor
 
 All content copied from https://docs.aws.amazon.com/.

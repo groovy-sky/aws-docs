@@ -2,235 +2,157 @@
 title: "AWS::DataZone::Connection GlueConnectionInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection GlueConnectionInput
+<a name="aws-properties-datazone-connection-glueconnectioninput"></a>
 
 The AWS Glue connecton input.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-glueconnectioninput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-glueconnectioninput-syntax.json"></a>
 
-```json
-
+```
 {
-  "AthenaProperties" : {Key: Value, ...},
-  "AuthenticationConfiguration" : AuthenticationConfigurationInput,
-  "ConnectionProperties" : {Key: Value, ...},
-  "ConnectionType" : String,
-  "Description" : String,
-  "MatchCriteria" : String,
-  "Name" : String,
-  "PhysicalConnectionRequirements" : PhysicalConnectionRequirements,
-  "PythonProperties" : {Key: Value, ...},
-  "SparkProperties" : {Key: Value, ...},
-  "ValidateCredentials" : Boolean,
-  "ValidateForComputeEnvironments" : [ String, ... ]
+  "[AthenaProperties](#cfn-datazone-connection-glueconnectioninput-athenaproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[AuthenticationConfiguration](#cfn-datazone-connection-glueconnectioninput-authenticationconfiguration)" : {{AuthenticationConfigurationInput}},
+  "[ConnectionProperties](#cfn-datazone-connection-glueconnectioninput-connectionproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[ConnectionType](#cfn-datazone-connection-glueconnectioninput-connectiontype)" : {{String}},
+  "[Description](#cfn-datazone-connection-glueconnectioninput-description)" : {{String}},
+  "[MatchCriteria](#cfn-datazone-connection-glueconnectioninput-matchcriteria)" : {{String}},
+  "[Name](#cfn-datazone-connection-glueconnectioninput-name)" : {{String}},
+  "[PhysicalConnectionRequirements](#cfn-datazone-connection-glueconnectioninput-physicalconnectionrequirements)" : {{PhysicalConnectionRequirements}},
+  "[PythonProperties](#cfn-datazone-connection-glueconnectioninput-pythonproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[SparkProperties](#cfn-datazone-connection-glueconnectioninput-sparkproperties)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[ValidateCredentials](#cfn-datazone-connection-glueconnectioninput-validatecredentials)" : {{Boolean}},
+  "[ValidateForComputeEnvironments](#cfn-datazone-connection-glueconnectioninput-validateforcomputeenvironments)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-glueconnectioninput-syntax.yaml"></a>
 
-```yaml
-
-  AthenaProperties:
-    Key: Value
-  AuthenticationConfiguration:
-    AuthenticationConfigurationInput
-  ConnectionProperties:
-    Key: Value
-  ConnectionType: String
-  Description: String
-  MatchCriteria: String
-  Name: String
-  PhysicalConnectionRequirements:
-    PhysicalConnectionRequirements
-  PythonProperties:
-    Key: Value
-  SparkProperties:
-    Key: Value
-  ValidateCredentials: Boolean
-  ValidateForComputeEnvironments:
-    - String
-
+```
+  [AthenaProperties](#cfn-datazone-connection-glueconnectioninput-athenaproperties): {{
+    {{Key}}: {{Value}}}}
+  [AuthenticationConfiguration](#cfn-datazone-connection-glueconnectioninput-authenticationconfiguration): {{
+    AuthenticationConfigurationInput}}
+  [ConnectionProperties](#cfn-datazone-connection-glueconnectioninput-connectionproperties): {{
+    {{Key}}: {{Value}}}}
+  [ConnectionType](#cfn-datazone-connection-glueconnectioninput-connectiontype): {{String}}
+  [Description](#cfn-datazone-connection-glueconnectioninput-description): {{String}}
+  [MatchCriteria](#cfn-datazone-connection-glueconnectioninput-matchcriteria): {{String}}
+  [Name](#cfn-datazone-connection-glueconnectioninput-name): {{String}}
+  [PhysicalConnectionRequirements](#cfn-datazone-connection-glueconnectioninput-physicalconnectionrequirements): {{
+    PhysicalConnectionRequirements}}
+  [PythonProperties](#cfn-datazone-connection-glueconnectioninput-pythonproperties): {{
+    {{Key}}: {{Value}}}}
+  [SparkProperties](#cfn-datazone-connection-glueconnectioninput-sparkproperties): {{
+    {{Key}}: {{Value}}}}
+  [ValidateCredentials](#cfn-datazone-connection-glueconnectioninput-validatecredentials): {{Boolean}}
+  [ValidateForComputeEnvironments](#cfn-datazone-connection-glueconnectioninput-validateforcomputeenvironments): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-glueconnectioninput-properties"></a>
 
-`AthenaProperties`
-
+`AthenaProperties`  <a name="cfn-datazone-connection-glueconnectioninput-athenaproperties"></a>
 The Amazon Athena properties of the AWS Glue connection.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthenticationConfiguration`
-
+`AuthenticationConfiguration`  <a name="cfn-datazone-connection-glueconnectioninput-authenticationconfiguration"></a>
 The authentication configuration of the AWS Glue connection.
+*Required*: No
+*Type*: [AuthenticationConfigurationInput](aws-properties-datazone-connection-authenticationconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AuthenticationConfigurationInput](aws-properties-datazone-connection-authenticationconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectionProperties`
-
+`ConnectionProperties`  <a name="cfn-datazone-connection-glueconnectioninput-connectionproperties"></a>
 The connection properties of the AWS Glue connection.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectionType`
-
+`ConnectionType`  <a name="cfn-datazone-connection-glueconnectioninput-connectiontype"></a>
 The connection type of the AWS Glue connection.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-datazone-connection-glueconnectioninput-description"></a>
 The description of the AWS Glue connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFF\r\n\t]*$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\u0020-\uD7FF\uE000-\uFFFF\r\n\t]*$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchCriteria`
-
+`MatchCriteria`  <a name="cfn-datazone-connection-glueconnectioninput-matchcriteria"></a>
 The match criteria of the AWS Glue connection.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-datazone-connection-glueconnectioninput-name"></a>
 The name of the AWS Glue connection.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PhysicalConnectionRequirements`
-
+`PhysicalConnectionRequirements`  <a name="cfn-datazone-connection-glueconnectioninput-physicalconnectionrequirements"></a>
 The physical connection requirements for the AWS Glue connection.
+*Required*: No
+*Type*: [PhysicalConnectionRequirements](aws-properties-datazone-connection-physicalconnectionrequirements.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PhysicalConnectionRequirements](aws-properties-datazone-connection-physicalconnectionrequirements.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PythonProperties`
-
+`PythonProperties`  <a name="cfn-datazone-connection-glueconnectioninput-pythonproperties"></a>
 The Python properties of the AWS Glue connection.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SparkProperties`
-
+`SparkProperties`  <a name="cfn-datazone-connection-glueconnectioninput-sparkproperties"></a>
 The Spark properties of the AWS Glue connection.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ValidateCredentials`  <a name="cfn-datazone-connection-glueconnectioninput-validatecredentials"></a>
+Speciefies whether to validate credentials of the AWS Glue connection.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Object of String
-
-_Pattern_: `^[\u0020-\uD7FF\uE000-\uFFFF\t]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValidateCredentials`
-
-Speciefies whether to validate credentials of the AWS Glue
-connection.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValidateForComputeEnvironments`
-
-Speciefies whether to validate for compute environments of the AWS Glue
-connection.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectionPropertiesInput
-
-GlueOAuth2Credentials
+`ValidateForComputeEnvironments`  <a name="cfn-datazone-connection-glueconnectioninput-validateforcomputeenvironments"></a>
+Speciefies whether to validate for compute environments of the AWS Glue connection.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

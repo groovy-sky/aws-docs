@@ -2,250 +2,180 @@
 title: "AWS::AppFlow::Flow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow
+<a name="aws-resource-appflow-flow"></a>
 
-The `AWS::AppFlow::Flow` resource is an Amazon AppFlow resource type that
-specifies a new flow.
+ The `AWS::AppFlow::Flow` resource is an Amazon AppFlow resource type that specifies a new flow.
 
-###### Note
-
-If you want to use CloudFormation to create a connector profile for connectors
-that implement OAuth (such as Salesforce, Slack, Zendesk, and Google Analytics), you must
-fetch the access and refresh tokens. You can do this by implementing your own UI for OAuth,
-or by retrieving the tokens from elsewhere. Alternatively, you can use the Amazon AppFlow
-console to create the connector profile, and then use that connector profile in the flow
-creation CloudFormation template.
+**Note**
+If you want to use CloudFormation to create a connector profile for connectors that implement OAuth (such as Salesforce, Slack, Zendesk, and Google Analytics), you must fetch the access and refresh tokens. You can do this by implementing your own UI for OAuth, or by retrieving the tokens from elsewhere. Alternatively, you can use the Amazon AppFlow console to create the connector profile, and then use that connector profile in the flow creation CloudFormation template.
 
 ## Syntax
+<a name="aws-resource-appflow-flow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appflow-flow-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppFlow::Flow",
   "Properties" : {
-      "Description" : String,
-      "DestinationFlowConfigList" : [ DestinationFlowConfig, ... ],
-      "FlowName" : String,
-      "FlowStatus" : String,
-      "KMSArn" : String,
-      "MetadataCatalogConfig" : MetadataCatalogConfig,
-      "SourceFlowConfig" : SourceFlowConfig,
-      "Tags" : [ Tag, ... ],
-      "Tasks" : [ Task, ... ],
-      "TriggerConfig" : TriggerConfig
+      "[Description](#cfn-appflow-flow-description)" : {{String}},
+      "[DestinationFlowConfigList](#cfn-appflow-flow-destinationflowconfiglist)" : {{[ DestinationFlowConfig, ... ]}},
+      "[FlowName](#cfn-appflow-flow-flowname)" : {{String}},
+      "[FlowStatus](#cfn-appflow-flow-flowstatus)" : {{String}},
+      "[KMSArn](#cfn-appflow-flow-kmsarn)" : {{String}},
+      "[MetadataCatalogConfig](#cfn-appflow-flow-metadatacatalogconfig)" : {{MetadataCatalogConfig}},
+      "[SourceFlowConfig](#cfn-appflow-flow-sourceflowconfig)" : {{SourceFlowConfig}},
+      "[Tags](#cfn-appflow-flow-tags)" : {{[ Tag, ... ]}},
+      "[Tasks](#cfn-appflow-flow-tasks)" : {{[ Task, ... ]}},
+      "[TriggerConfig](#cfn-appflow-flow-triggerconfig)" : {{TriggerConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appflow-flow-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppFlow::Flow
 Properties:
-  Description: String
-  DestinationFlowConfigList:
-    - DestinationFlowConfig
-  FlowName: String
-  FlowStatus: String
-  KMSArn: String
-  MetadataCatalogConfig:
-    MetadataCatalogConfig
-  SourceFlowConfig:
-    SourceFlowConfig
-  Tags:
-    - Tag
-  Tasks:
-    - Task
-  TriggerConfig:
-    TriggerConfig
-
+  [Description](#cfn-appflow-flow-description): {{String}}
+  [DestinationFlowConfigList](#cfn-appflow-flow-destinationflowconfiglist): {{
+    - DestinationFlowConfig}}
+  [FlowName](#cfn-appflow-flow-flowname): {{String}}
+  [FlowStatus](#cfn-appflow-flow-flowstatus): {{String}}
+  [KMSArn](#cfn-appflow-flow-kmsarn): {{String}}
+  [MetadataCatalogConfig](#cfn-appflow-flow-metadatacatalogconfig): {{
+    MetadataCatalogConfig}}
+  [SourceFlowConfig](#cfn-appflow-flow-sourceflowconfig): {{
+    SourceFlowConfig}}
+  [Tags](#cfn-appflow-flow-tags): {{
+    - Tag}}
+  [Tasks](#cfn-appflow-flow-tasks): {{
+    - Task}}
+  [TriggerConfig](#cfn-appflow-flow-triggerconfig): {{
+    TriggerConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-appflow-flow-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-appflow-flow-description"></a>
+ A user-entered description of the flow.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w!@#\-.?,\s]*`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A user-entered description of the flow.
+`DestinationFlowConfigList`  <a name="cfn-appflow-flow-destinationflowconfiglist"></a>
+ The configuration that controls how Amazon AppFlow places data in the destination connector.
+*Required*: Yes
+*Type*: Array of [DestinationFlowConfig](aws-properties-appflow-flow-destinationflowconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FlowName`  <a name="cfn-appflow-flow-flowname"></a>
+ The specified name of the flow. Spaces are not allowed. Use underscores (\_) or hyphens (-) only.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9][\w!@#.-]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `[\w!@#\-.?,\s]*`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationFlowConfigList`
-
-The configuration that controls how Amazon AppFlow places data in the destination
-connector.
-
-_Required_: Yes
-
-_Type_: Array of [DestinationFlowConfig](aws-properties-appflow-flow-destinationflowconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FlowName`
-
-The specified name of the flow. Spaces are not allowed. Use underscores (\_) or hyphens
-(-) only.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9][\w!@#.-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FlowStatus`
-
+`FlowStatus`  <a name="cfn-appflow-flow-flowstatus"></a>
 Sets the status of the flow. You can specify one of the following values:
-
 Active
-
-The flow runs based on the trigger settings that you defined. Active scheduled flows run
-as scheduled, and active event-triggered flows run when the specified change event occurs.
-However, active on-demand flows run only when you manually start them by using Amazon
-AppFlow.
-
+The flow runs based on the trigger settings that you defined. Active scheduled flows run as scheduled, and active event-triggered flows run when the specified change event occurs. However, active on-demand flows run only when you manually start them by using Amazon AppFlow.
 Suspended
+You can use this option to deactivate an active flow. Scheduled and event-triggered flows will cease to run until you reactive them. This value only affects scheduled and event-triggered flows. It has no effect for on-demand flows.
+If you omit the FlowStatus parameter, Amazon AppFlow creates the flow with a default status. The default status for on-demand flows is Active. The default status for scheduled and event-triggered flows is Draft, which means they’re not yet active.
+*Required*: No
+*Type*: String
+*Allowed values*: `Active | Suspended | Draft`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You can use this option to deactivate an active flow. Scheduled and event-triggered
-flows will cease to run until you reactive them. This value only affects scheduled and
-event-triggered flows. It has no effect for on-demand flows.
+`KMSArn`  <a name="cfn-appflow-flow-kmsarn"></a>
+ The ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws:kms:.*:[0-9]+:.*`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-If you omit the FlowStatus parameter, Amazon AppFlow creates the flow with a default
-status. The default status for on-demand flows is Active. The default status for scheduled and
-event-triggered flows is Draft, which means they’re not yet active.
+`MetadataCatalogConfig`  <a name="cfn-appflow-flow-metadatacatalogconfig"></a>
+Specifies the configuration that Amazon AppFlow uses when it catalogs your data. When Amazon AppFlow catalogs your data, it stores metadata in a data catalog.
+*Required*: No
+*Type*: [MetadataCatalogConfig](aws-properties-appflow-flow-metadatacatalogconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SourceFlowConfig`  <a name="cfn-appflow-flow-sourceflowconfig"></a>
+ Contains information about the configuration of the source connector used in the flow.
+*Required*: Yes
+*Type*: [SourceFlowConfig](aws-properties-appflow-flow-sourceflowconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Tags`  <a name="cfn-appflow-flow-tags"></a>
+ The tags used to organize, track, or control access for your flow.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appflow-flow-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `Active | Suspended | Draft`
+`Tasks`  <a name="cfn-appflow-flow-tasks"></a>
+ A list of tasks that Amazon AppFlow performs while transferring the data in the flow run.
+*Required*: Yes
+*Type*: Array of [Task](aws-properties-appflow-flow-task.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KMSArn`
-
-The ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for
-encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS
-key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws:kms:.*:[0-9]+:.*`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MetadataCatalogConfig`
-
-Specifies the configuration that Amazon AppFlow uses when it catalogs your data. When
-Amazon AppFlow catalogs your data, it stores metadata in a data catalog.
-
-_Required_: No
-
-_Type_: [MetadataCatalogConfig](aws-properties-appflow-flow-metadatacatalogconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceFlowConfig`
-
-Contains information about the configuration of the source connector used in the flow.
-
-_Required_: Yes
-
-_Type_: [SourceFlowConfig](aws-properties-appflow-flow-sourceflowconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-The tags used to organize, track, or control access for your flow.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appflow-flow-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tasks`
-
-A list of tasks that Amazon AppFlow performs while transferring the data in the flow
-run.
-
-_Required_: Yes
-
-_Type_: Array of [Task](aws-properties-appflow-flow-task.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TriggerConfig`
-
-The trigger settings that determine how and when Amazon AppFlow runs the specified
-flow.
-
-_Required_: Yes
-
-_Type_: [TriggerConfig](aws-properties-appflow-flow-triggerconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TriggerConfig`  <a name="cfn-appflow-flow-triggerconfig"></a>
+ The trigger settings that determine how and when Amazon AppFlow runs the specified flow.
+*Required*: Yes
+*Type*: [TriggerConfig](aws-properties-appflow-flow-triggerconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appflow-flow-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appflow-flow-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the flow name. For example:
 
-`{ "Ref": "myFlowName" }`
+            `{ "Ref": "myFlowName" }`        
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-appflow-flow-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`FlowArn`
+####
+<a name="aws-resource-appflow-flow-return-values-fn--getatt-fn--getatt"></a>
 
+`FlowArn`  <a name="FlowArn-fn::getatt"></a>
 The flow's Amazon Resource Name (ARN).
 
 ## Examples
+<a name="aws-resource-appflow-flow--examples"></a>
 
 ### Test flow for CloudFormation from Salesforce to Amazon S3
+<a name="aws-resource-appflow-flow--examples--Test_flow_for_CloudFormation_from_Salesforce_to_Amazon_S3"></a>
 
-The following example shows a test event flow for CloudFormation using Salesforce as
-the source and Amazon S3 as the destination.
+The following example shows a test event flow for CloudFormation using Salesforce as the source and Amazon S3 as the destination.
 
 #### JSON
+<a name="aws-resource-appflow-flow--examples--Test_flow_for_CloudFormation_from_Salesforce_to_Amazon_S3--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion":"2010-09-09",
     "Resources": {
@@ -346,13 +276,12 @@ the source and Amazon S3 as the destination.
         }
     }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-appflow-flow--examples--Test_flow_for_CloudFormation_from_Salesforce_to_Amazon_S3--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   TestFlow:
@@ -407,23 +336,13 @@ Resources:
           DestinationField: Name
           ConnectorOperator:
             Salesforce: NO_OP
-
 ```
 
 ## See also
-
-- [CreateFlow](../../../../reference/appflow/1-0/apireference/api-createflow.md) in the _Amazon AppFlow API Reference_.
-
-- [DescribeFlow](../../../../reference/appflow/1-0/apireference/api-describeflow.md) in the _Amazon AppFlow API Reference_.
-
-- [DeleteFlow](../../../../reference/appflow/1-0/apireference/api-deleteflow.md) in the _Amazon AppFlow API Reference_.
-
-- [UpdateFlow](../../../../reference/appflow/1-0/apireference/api-updateflow.md) in the _Amazon AppFlow API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ZendeskConnectorProfileProperties
-
-AggregationConfig
+<a name="aws-resource-appflow-flow--seealso"></a>
++ [CreateFlow](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CreateFlow.html) in the *Amazon AppFlow API Reference*.
++ [DescribeFlow](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeFlow.html) in the *Amazon AppFlow API Reference*.
++ [DeleteFlow](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DeleteFlow.html) in the *Amazon AppFlow API Reference*.
++ [UpdateFlow](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpdateFlow.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

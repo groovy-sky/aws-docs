@@ -2,60 +2,56 @@
 title: "AWS::GroundStation::Config AntennaDownlinkConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config AntennaDownlinkConfig
+<a name="aws-properties-groundstation-config-antennadownlinkconfig"></a>
 
-Provides information about how AWS Ground Station should configure an antenna for downlink during a contact.
-Use an antenna downlink config in a mission profile to receive the downlink data in raw DigIF format.
+ Provides information about how AWS Ground Station should configure an antenna for downlink during a contact. Use an antenna downlink config in a mission profile to receive the downlink data in raw DigIF format.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-antennadownlinkconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-antennadownlinkconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SpectrumConfig" : SpectrumConfig
+  "[SpectrumConfig](#cfn-groundstation-config-antennadownlinkconfig-spectrumconfig)" : {{SpectrumConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-antennadownlinkconfig-syntax.yaml"></a>
 
-```yaml
-
-  SpectrumConfig:
-    SpectrumConfig
-
+```
+  [SpectrumConfig](#cfn-groundstation-config-antennadownlinkconfig-spectrumconfig): {{
+    SpectrumConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-antennadownlinkconfig-properties"></a>
 
-`SpectrumConfig`
-
-Defines the spectrum configuration.
-
-_Required_: No
-
-_Type_: [SpectrumConfig](aws-properties-groundstation-config-spectrumconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SpectrumConfig`  <a name="cfn-groundstation-config-antennadownlinkconfig-spectrumconfig"></a>
+ Defines the spectrum configuration.
+*Required*: No
+*Type*: [SpectrumConfig](aws-properties-groundstation-config-spectrumconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-antennadownlinkconfig--examples"></a>
 
 ### Create an AntennaDownlinkConfig
+<a name="aws-properties-groundstation-config-antennadownlinkconfig--examples--Create_an_AntennaDownlinkConfig"></a>
 
 The following example creates a Ground Station `AntennaDownlinkConfig`
 
 #### JSON
+<a name="aws-properties-groundstation-config-antennadownlinkconfig--examples--Create_an_AntennaDownlinkConfig--json"></a>
 
-```json
-
+```
 {
   "AntennaDownlinkConfig": {
     "SpectrumConfig": {
@@ -74,9 +70,9 @@ The following example creates a Ground Station `AntennaDownlinkConfig`
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-antennadownlinkconfig--examples--Create_an_AntennaDownlinkConfig--yaml"></a>
 
-```yaml
-
+```
 AntennaDownlinkConfig:
   SpectrumConfig:
     CenterFrequency:
@@ -87,11 +83,5 @@ AntennaDownlinkConfig:
       Units: MHz
     Polarization: RIGHT_HAND
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GroundStation::Config
-
-AntennaDownlinkDemodDecodeConfig
 
 All content copied from https://docs.aws.amazon.com/.

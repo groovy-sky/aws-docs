@@ -2,89 +2,63 @@
 title: "AWS::DataZone::ProjectProfile ResourceTagParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::ProjectProfile ResourceTagParameter
+<a name="aws-properties-datazone-projectprofile-resourcetagparameter"></a>
 
 The resource tag parameter of the project profile.
 
 ## Syntax
+<a name="aws-properties-datazone-projectprofile-resourcetagparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-projectprofile-resourcetagparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsValueEditable" : Boolean,
-  "Key" : String,
-  "Value" : String
+  "[IsValueEditable](#cfn-datazone-projectprofile-resourcetagparameter-isvalueeditable)" : {{Boolean}},
+  "[Key](#cfn-datazone-projectprofile-resourcetagparameter-key)" : {{String}},
+  "[Value](#cfn-datazone-projectprofile-resourcetagparameter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-projectprofile-resourcetagparameter-syntax.yaml"></a>
 
-```yaml
-
-  IsValueEditable: Boolean
-  Key: String
-  Value: String
-
+```
+  [IsValueEditable](#cfn-datazone-projectprofile-resourcetagparameter-isvalueeditable): {{Boolean}}
+  [Key](#cfn-datazone-projectprofile-resourcetagparameter-key): {{String}}
+  [Value](#cfn-datazone-projectprofile-resourcetagparameter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-projectprofile-resourcetagparameter-properties"></a>
 
-`IsValueEditable`
+`IsValueEditable`  <a name="cfn-datazone-projectprofile-resourcetagparameter-isvalueeditable"></a>
+Specifies whether the value of the resource tag parameter of the project profile is editable at the project level.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies whether the value of the resource tag parameter of the project profile is
-editable at the project level.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-datazone-projectprofile-resourcetagparameter-key"></a>
 The key of the resource tag parameter of the project profile.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w \.:/=+@-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w \.:/=+@-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-datazone-projectprofile-resourcetagparameter-value"></a>
 The value of the resource tag parameter key of the project profile.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w \.:/=+@-]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Region
-
-AWS::DataZone::SubscriptionTarget
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w \.:/=+@-]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

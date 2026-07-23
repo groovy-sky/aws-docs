@@ -2,56 +2,43 @@
 title: "AWS::VpcLattice::Listener FixedResponse"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Listener FixedResponse
+<a name="aws-properties-vpclattice-listener-fixedresponse"></a>
 
 Describes an action that returns a custom HTTP response.
 
 ## Syntax
+<a name="aws-properties-vpclattice-listener-fixedresponse-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-listener-fixedresponse-syntax.json"></a>
 
-```json
-
+```
 {
-  "StatusCode" : Integer
+  "[StatusCode](#cfn-vpclattice-listener-fixedresponse-statuscode)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-listener-fixedresponse-syntax.yaml"></a>
 
-```yaml
-
-  StatusCode: Integer
-
+```
+  [StatusCode](#cfn-vpclattice-listener-fixedresponse-statuscode): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-listener-fixedresponse-properties"></a>
 
-`StatusCode`
-
+`StatusCode`  <a name="cfn-vpclattice-listener-fixedresponse-statuscode"></a>
 The HTTP response code. Only `404` and `500` status codes are supported.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `100`
-
-_Maximum_: `599`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultAction
-
-Forward
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `100`
+*Maximum*: `599`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

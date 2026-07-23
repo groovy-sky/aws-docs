@@ -2,67 +2,49 @@
 title: "AWS::AppSync::FunctionConfiguration AppSyncRuntime"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::FunctionConfiguration AppSyncRuntime
+<a name="aws-properties-appsync-functionconfiguration-appsyncruntime"></a>
 
-Describes a runtime used by an AWS AppSync resolver or AWS AppSync function. Specifies the name and version of the runtime to use.
-Note that if a runtime is specified, code must also be specified.
+Describes a runtime used by an AWS AppSync resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified.
 
 ## Syntax
+<a name="aws-properties-appsync-functionconfiguration-appsyncruntime-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-functionconfiguration-appsyncruntime-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "RuntimeVersion" : String
+  "[Name](#cfn-appsync-functionconfiguration-appsyncruntime-name)" : {{String}},
+  "[RuntimeVersion](#cfn-appsync-functionconfiguration-appsyncruntime-runtimeversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-functionconfiguration-appsyncruntime-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  RuntimeVersion: String
-
+```
+  [Name](#cfn-appsync-functionconfiguration-appsyncruntime-name): {{String}}
+  [RuntimeVersion](#cfn-appsync-functionconfiguration-appsyncruntime-runtimeversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-functionconfiguration-appsyncruntime-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-appsync-functionconfiguration-appsyncruntime-name"></a>
+The `name` of the runtime to use. Currently, the only allowed value is `APPSYNC_JS`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The `name` of the runtime to use. Currently, the only allowed value is
-`APPSYNC_JS`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuntimeVersion`
-
-The `version` of the runtime to use. Currently, the only allowed version is
-`1.0.0`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppSync::FunctionConfiguration
-
-LambdaConflictHandlerConfig
+`RuntimeVersion`  <a name="cfn-appsync-functionconfiguration-appsyncruntime-runtimeversion"></a>
+The `version` of the runtime to use. Currently, the only allowed version is `1.0.0`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

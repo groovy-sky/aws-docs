@@ -2,79 +2,60 @@
 title: "AWS::Budgets::BudgetsAction Definition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Budgets::BudgetsAction Definition
+<a name="aws-properties-budgets-budgetsaction-definition"></a>
 
 The definition is where you specify all of the type-specific parameters.
 
 ## Syntax
+<a name="aws-properties-budgets-budgetsaction-definition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-budgets-budgetsaction-definition-syntax.json"></a>
 
-```json
-
+```
 {
-  "IamActionDefinition" : IamActionDefinition,
-  "ScpActionDefinition" : ScpActionDefinition,
-  "SsmActionDefinition" : SsmActionDefinition
+  "[IamActionDefinition](#cfn-budgets-budgetsaction-definition-iamactiondefinition)" : {{IamActionDefinition}},
+  "[ScpActionDefinition](#cfn-budgets-budgetsaction-definition-scpactiondefinition)" : {{ScpActionDefinition}},
+  "[SsmActionDefinition](#cfn-budgets-budgetsaction-definition-ssmactiondefinition)" : {{SsmActionDefinition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-budgets-budgetsaction-definition-syntax.yaml"></a>
 
-```yaml
-
-  IamActionDefinition:
-    IamActionDefinition
-  ScpActionDefinition:
-    ScpActionDefinition
-  SsmActionDefinition:
-    SsmActionDefinition
-
+```
+  [IamActionDefinition](#cfn-budgets-budgetsaction-definition-iamactiondefinition): {{
+    IamActionDefinition}}
+  [ScpActionDefinition](#cfn-budgets-budgetsaction-definition-scpactiondefinition): {{
+    ScpActionDefinition}}
+  [SsmActionDefinition](#cfn-budgets-budgetsaction-definition-ssmactiondefinition): {{
+    SsmActionDefinition}}
 ```
 
 ## Properties
+<a name="aws-properties-budgets-budgetsaction-definition-properties"></a>
 
-`IamActionDefinition`
-
+`IamActionDefinition`  <a name="cfn-budgets-budgetsaction-definition-iamactiondefinition"></a>
 The AWS Identity and Access Management (IAM) action definition details.
+*Required*: No
+*Type*: [IamActionDefinition](aws-properties-budgets-budgetsaction-iamactiondefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IamActionDefinition](aws-properties-budgets-budgetsaction-iamactiondefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScpActionDefinition`
-
+`ScpActionDefinition`  <a name="cfn-budgets-budgetsaction-definition-scpactiondefinition"></a>
 The service control policies (SCP) action definition details.
+*Required*: No
+*Type*: [ScpActionDefinition](aws-properties-budgets-budgetsaction-scpactiondefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ScpActionDefinition](aws-properties-budgets-budgetsaction-scpactiondefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SsmActionDefinition`
-
+`SsmActionDefinition`  <a name="cfn-budgets-budgetsaction-definition-ssmactiondefinition"></a>
 The Amazon EC2 Systems Manager (SSM) action definition details.
-
-_Required_: No
-
-_Type_: [SsmActionDefinition](aws-properties-budgets-budgetsaction-ssmactiondefinition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ActionThreshold
-
-IamActionDefinition
+*Required*: No
+*Type*: [SsmActionDefinition](aws-properties-budgets-budgetsaction-ssmactiondefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis PluginVisualSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PluginVisualSortConfiguration
+<a name="aws-properties-quicksight-analysis-pluginvisualsortconfiguration"></a>
 
 Determines how the plugin visual sorts the data during query.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pluginvisualsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pluginvisualsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "PluginVisualTableQuerySort" : PluginVisualTableQuerySort
+  "[PluginVisualTableQuerySort](#cfn-quicksight-analysis-pluginvisualsortconfiguration-pluginvisualtablequerysort)" : {{PluginVisualTableQuerySort}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pluginvisualsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  PluginVisualTableQuerySort:
-    PluginVisualTableQuerySort
-
+```
+  [PluginVisualTableQuerySort](#cfn-quicksight-analysis-pluginvisualsortconfiguration-pluginvisualtablequerysort): {{
+    PluginVisualTableQuerySort}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pluginvisualsortconfiguration-properties"></a>
 
-`PluginVisualTableQuerySort`
-
+`PluginVisualTableQuerySort`  <a name="cfn-quicksight-analysis-pluginvisualsortconfiguration-pluginvisualtablequerysort"></a>
 The table query sorting options for the plugin visual.
-
-_Required_: No
-
-_Type_: [PluginVisualTableQuerySort](aws-properties-quicksight-analysis-pluginvisualtablequerysort.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginVisualProperty
-
-PluginVisualTableQuerySort
+*Required*: No
+*Type*: [PluginVisualTableQuerySort](aws-properties-quicksight-analysis-pluginvisualtablequerysort.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

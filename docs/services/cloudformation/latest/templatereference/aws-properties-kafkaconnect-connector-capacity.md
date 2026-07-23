@@ -2,67 +2,51 @@
 title: "AWS::KafkaConnect::Connector Capacity"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector Capacity
+<a name="aws-properties-kafkaconnect-connector-capacity"></a>
 
-Information about the capacity of the connector, whether it is auto scaled or
-provisioned.
+Information about the capacity of the connector, whether it is auto scaled or provisioned.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-capacity-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-capacity-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoScaling" : AutoScaling,
-  "ProvisionedCapacity" : ProvisionedCapacity
+  "[AutoScaling](#cfn-kafkaconnect-connector-capacity-autoscaling)" : {{AutoScaling}},
+  "[ProvisionedCapacity](#cfn-kafkaconnect-connector-capacity-provisionedcapacity)" : {{ProvisionedCapacity}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-capacity-syntax.yaml"></a>
 
-```yaml
-
-  AutoScaling:
-    AutoScaling
-  ProvisionedCapacity:
-    ProvisionedCapacity
-
+```
+  [AutoScaling](#cfn-kafkaconnect-connector-capacity-autoscaling): {{
+    AutoScaling}}
+  [ProvisionedCapacity](#cfn-kafkaconnect-connector-capacity-provisionedcapacity): {{
+    ProvisionedCapacity}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-capacity-properties"></a>
 
-`AutoScaling`
-
+`AutoScaling`  <a name="cfn-kafkaconnect-connector-capacity-autoscaling"></a>
 Information about the auto scaling parameters for the connector.
+*Required*: No
+*Type*: [AutoScaling](aws-properties-kafkaconnect-connector-autoscaling.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AutoScaling](aws-properties-kafkaconnect-connector-autoscaling.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProvisionedCapacity`
-
+`ProvisionedCapacity`  <a name="cfn-kafkaconnect-connector-capacity-provisionedcapacity"></a>
 Details about a fixed capacity allocated to a connector.
-
-_Required_: No
-
-_Type_: [ProvisionedCapacity](aws-properties-kafkaconnect-connector-provisionedcapacity.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoScaling
-
-CloudWatchLogsLogDelivery
+*Required*: No
+*Type*: [ProvisionedCapacity](aws-properties-kafkaconnect-connector-provisionedcapacity.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

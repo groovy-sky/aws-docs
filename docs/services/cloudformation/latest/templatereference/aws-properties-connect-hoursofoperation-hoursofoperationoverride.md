@@ -2,156 +2,108 @@
 title: "AWS::Connect::HoursOfOperation HoursOfOperationOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::HoursOfOperation HoursOfOperationOverride
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverride"></a>
 
 Information about the hours of operations override.
 
 ## Syntax
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "EffectiveFrom" : String,
-  "EffectiveTill" : String,
-  "HoursOfOperationOverrideId" : String,
-  "OverrideConfig" : [ HoursOfOperationOverrideConfig, ... ],
-  "OverrideDescription" : String,
-  "OverrideName" : String,
-  "OverrideType" : String,
-  "RecurrenceConfig" : RecurrenceConfig
+  "[EffectiveFrom](#cfn-connect-hoursofoperation-hoursofoperationoverride-effectivefrom)" : {{String}},
+  "[EffectiveTill](#cfn-connect-hoursofoperation-hoursofoperationoverride-effectivetill)" : {{String}},
+  "[HoursOfOperationOverrideId](#cfn-connect-hoursofoperation-hoursofoperationoverride-hoursofoperationoverrideid)" : {{String}},
+  "[OverrideConfig](#cfn-connect-hoursofoperation-hoursofoperationoverride-overrideconfig)" : {{[ HoursOfOperationOverrideConfig, ... ]}},
+  "[OverrideDescription](#cfn-connect-hoursofoperation-hoursofoperationoverride-overridedescription)" : {{String}},
+  "[OverrideName](#cfn-connect-hoursofoperation-hoursofoperationoverride-overridename)" : {{String}},
+  "[OverrideType](#cfn-connect-hoursofoperation-hoursofoperationoverride-overridetype)" : {{String}},
+  "[RecurrenceConfig](#cfn-connect-hoursofoperation-hoursofoperationoverride-recurrenceconfig)" : {{RecurrenceConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverride-syntax.yaml"></a>
 
-```yaml
-
-  EffectiveFrom: String
-  EffectiveTill: String
-  HoursOfOperationOverrideId: String
-  OverrideConfig:
-    - HoursOfOperationOverrideConfig
-  OverrideDescription: String
-  OverrideName: String
-  OverrideType: String
-  RecurrenceConfig:
-    RecurrenceConfig
-
+```
+  [EffectiveFrom](#cfn-connect-hoursofoperation-hoursofoperationoverride-effectivefrom): {{String}}
+  [EffectiveTill](#cfn-connect-hoursofoperation-hoursofoperationoverride-effectivetill): {{String}}
+  [HoursOfOperationOverrideId](#cfn-connect-hoursofoperation-hoursofoperationoverride-hoursofoperationoverrideid): {{String}}
+  [OverrideConfig](#cfn-connect-hoursofoperation-hoursofoperationoverride-overrideconfig): {{
+    - HoursOfOperationOverrideConfig}}
+  [OverrideDescription](#cfn-connect-hoursofoperation-hoursofoperationoverride-overridedescription): {{String}}
+  [OverrideName](#cfn-connect-hoursofoperation-hoursofoperationoverride-overridename): {{String}}
+  [OverrideType](#cfn-connect-hoursofoperation-hoursofoperationoverride-overridetype): {{String}}
+  [RecurrenceConfig](#cfn-connect-hoursofoperation-hoursofoperationoverride-recurrenceconfig): {{
+    RecurrenceConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationoverride-properties"></a>
 
-`EffectiveFrom`
-
+`EffectiveFrom`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-effectivefrom"></a>
 The date from which the hours of operation override would be effective.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{4}-\d{2}-\d{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{4}-\d{2}-\d{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EffectiveTill`
-
+`EffectiveTill`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-effectivetill"></a>
 The date until the hours of operation override is effective.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{4}-\d{2}-\d{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{4}-\d{2}-\d{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HoursOfOperationOverrideId`
-
+`HoursOfOperationOverrideId`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-hoursofoperationoverrideid"></a>
 The identifier for the hours of operation override.
+*Required*: No
+*Type*: String
+*Pattern*: `^[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OverrideConfig`
-
+`OverrideConfig`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-overrideconfig"></a>
 Property description not available.
+*Required*: Yes
+*Type*: Array of [HoursOfOperationOverrideConfig](aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [HoursOfOperationOverrideConfig](aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OverrideDescription`
-
+`OverrideDescription`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-overridedescription"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OverrideName`
-
+`OverrideName`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-overridename"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`OverrideType`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-overridetype"></a>
+Whether the override will be defined as a *standard* or as a *recurring event*.
+*Required*: No
+*Type*: String
+*Allowed values*: `STANDARD | OPEN | CLOSED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OverrideType`
-
-Whether the override will be defined as a _standard_ or as a _recurring event_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STANDARD | OPEN | CLOSED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecurrenceConfig`
-
+`RecurrenceConfig`  <a name="cfn-connect-hoursofoperation-hoursofoperationoverride-recurrenceconfig"></a>
 Configuration for a recurring event.
-
-_Required_: No
-
-_Type_: [RecurrenceConfig](aws-properties-connect-hoursofoperation-recurrenceconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HoursOfOperationConfig
-
-HoursOfOperationOverrideConfig
+*Required*: No
+*Type*: [RecurrenceConfig](aws-properties-connect-hoursofoperation-recurrenceconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

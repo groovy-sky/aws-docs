@@ -2,79 +2,60 @@
 title: "AWS::ImageBuilder::LifecyclePolicy PolicyDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::LifecyclePolicy PolicyDetail
+<a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail"></a>
 
 The configuration details for a lifecycle policy resource.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : Action,
-  "ExclusionRules" : ExclusionRules,
-  "Filter" : Filter
+  "[Action](#cfn-imagebuilder-lifecyclepolicy-policydetail-action)" : {{Action}},
+  "[ExclusionRules](#cfn-imagebuilder-lifecyclepolicy-policydetail-exclusionrules)" : {{ExclusionRules}},
+  "[Filter](#cfn-imagebuilder-lifecyclepolicy-policydetail-filter)" : {{Filter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-syntax.yaml"></a>
 
-```yaml
-
-  Action:
-    Action
-  ExclusionRules:
-    ExclusionRules
-  Filter:
-    Filter
-
+```
+  [Action](#cfn-imagebuilder-lifecyclepolicy-policydetail-action): {{
+    Action}}
+  [ExclusionRules](#cfn-imagebuilder-lifecyclepolicy-policydetail-exclusionrules): {{
+    ExclusionRules}}
+  [Filter](#cfn-imagebuilder-lifecyclepolicy-policydetail-filter): {{
+    Filter}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-imagebuilder-lifecyclepolicy-policydetail-action"></a>
 Configuration details for the policy action.
+*Required*: Yes
+*Type*: [Action](aws-properties-imagebuilder-lifecyclepolicy-action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Action](aws-properties-imagebuilder-lifecyclepolicy-action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExclusionRules`
-
+`ExclusionRules`  <a name="cfn-imagebuilder-lifecyclepolicy-policydetail-exclusionrules"></a>
 Additional rules to specify resources that should be exempt from policy actions.
+*Required*: No
+*Type*: [ExclusionRules](aws-properties-imagebuilder-lifecyclepolicy-exclusionrules.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExclusionRules](aws-properties-imagebuilder-lifecyclepolicy-exclusionrules.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Filter`
-
+`Filter`  <a name="cfn-imagebuilder-lifecyclepolicy-policydetail-filter"></a>
 Specifies the resources that the lifecycle policy applies to.
-
-_Required_: Yes
-
-_Type_: [Filter](aws-properties-imagebuilder-lifecyclepolicy-filter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LastLaunched
-
-RecipeSelection
+*Required*: Yes
+*Type*: [Filter](aws-properties-imagebuilder-lifecyclepolicy-filter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,108 +2,102 @@
 title: "AWS::ObservabilityAdmin::TelemetryRule TelemetryRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryRule TelemetryRule
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetryrule"></a>
 
-Defines how telemetry should be configured for specific AWS resources.
+ Defines how telemetry should be configured for specific AWS resources.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetryrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetryrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationConfiguration" : TelemetryDestinationConfiguration,
-  "ResourceType" : String,
-  "SelectionCriteria" : String,
-  "TelemetrySourceTypes" : [ String, ... ],
-  "TelemetryType" : String
+  "[AllowFieldUpdates](#cfn-observabilityadmin-telemetryrule-telemetryrule-allowfieldupdates)" : {{Boolean}},
+  "[AllRegions](#cfn-observabilityadmin-telemetryrule-telemetryrule-allregions)" : {{Boolean}},
+  "[DestinationConfiguration](#cfn-observabilityadmin-telemetryrule-telemetryrule-destinationconfiguration)" : {{TelemetryDestinationConfiguration}},
+  "[Regions](#cfn-observabilityadmin-telemetryrule-telemetryrule-regions)" : {{[ String, ... ]}},
+  "[ResourceType](#cfn-observabilityadmin-telemetryrule-telemetryrule-resourcetype)" : {{String}},
+  "[SelectionCriteria](#cfn-observabilityadmin-telemetryrule-telemetryrule-selectioncriteria)" : {{String}},
+  "[TelemetrySourceTypes](#cfn-observabilityadmin-telemetryrule-telemetryrule-telemetrysourcetypes)" : {{[ String, ... ]}},
+  "[TelemetryType](#cfn-observabilityadmin-telemetryrule-telemetryrule-telemetrytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetryrule-syntax.yaml"></a>
 
-```yaml
-
-  DestinationConfiguration:
-    TelemetryDestinationConfiguration
-  ResourceType: String
-  SelectionCriteria: String
-  TelemetrySourceTypes:
-    - String
-  TelemetryType: String
-
+```
+  [AllowFieldUpdates](#cfn-observabilityadmin-telemetryrule-telemetryrule-allowfieldupdates): {{Boolean}}
+  [AllRegions](#cfn-observabilityadmin-telemetryrule-telemetryrule-allregions): {{Boolean}}
+  [DestinationConfiguration](#cfn-observabilityadmin-telemetryrule-telemetryrule-destinationconfiguration): {{
+    TelemetryDestinationConfiguration}}
+  [Regions](#cfn-observabilityadmin-telemetryrule-telemetryrule-regions): {{
+    - String}}
+  [ResourceType](#cfn-observabilityadmin-telemetryrule-telemetryrule-resourcetype): {{String}}
+  [SelectionCriteria](#cfn-observabilityadmin-telemetryrule-telemetryrule-selectioncriteria): {{String}}
+  [TelemetrySourceTypes](#cfn-observabilityadmin-telemetryrule-telemetryrule-telemetrysourcetypes): {{
+    - String}}
+  [TelemetryType](#cfn-observabilityadmin-telemetryrule-telemetryrule-telemetrytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-telemetryrule-telemetryrule-properties"></a>
 
-`DestinationConfiguration`
+`AllowFieldUpdates`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-allowfieldupdates"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration specifying where and how the telemetry data should be delivered.
+`AllRegions`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-allregions"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`DestinationConfiguration`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-destinationconfiguration"></a>
+ Configuration specifying where and how the telemetry data should be delivered.
+*Required*: No
+*Type*: [TelemetryDestinationConfiguration](aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [TelemetryDestinationConfiguration](aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration.md)
+`Regions`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-regions"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ResourceType`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-resourcetype"></a>
+ The type of AWS resource to configure telemetry for (e.g., "AWS::EC2::VPC", "AWS::EKS::Cluster", "AWS::WAFv2::WebACL").
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::BedrockAgentCore::Runtime | AWS::BedrockAgentCore::Browser | AWS::BedrockAgentCore::CodeInterpreter | AWS::SecurityHub::Hub`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ResourceType`
+`SelectionCriteria`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-selectioncriteria"></a>
+ Criteria for selecting which resources the rule applies to, such as resource tags.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of AWS resource to configure telemetry for (e.g., "AWS::EC2::VPC",
-"AWS::EKS::Cluster", "AWS::WAFv2::WebACL").
+`TelemetrySourceTypes`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-telemetrysourcetypes"></a>
+ The specific telemetry source types to configure for the resource, such as VPC\_FLOW\_LOGS or EKS\_AUDIT\_LOGS. TelemetrySourceTypes must be correlated with the specific resource type.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::BedrockAgentCore::Runtime | AWS::BedrockAgentCore::Browser | AWS::BedrockAgentCore::CodeInterpreter`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectionCriteria`
-
-Criteria for selecting which resources the rule applies to, such as resource tags.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TelemetrySourceTypes`
-
-The specific telemetry source types to configure for the resource, such as VPC\_FLOW\_LOGS
-or EKS\_AUDIT\_LOGS. TelemetrySourceTypes must be correlated with the specific resource type.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TelemetryType`
-
-The type of telemetry to collect (Logs, Metrics, or Traces).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Logs | Traces | Metrics`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TelemetryDestinationConfiguration
-
-VPCFlowLogParameters
+`TelemetryType`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-telemetrytype"></a>
+ The type of telemetry to collect (Logs, Metrics, or Traces).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Logs | Traces | Metrics`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

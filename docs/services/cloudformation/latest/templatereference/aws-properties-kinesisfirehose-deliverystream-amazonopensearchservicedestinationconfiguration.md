@@ -2,251 +2,167 @@
 title: "AWS::KinesisFirehose::DeliveryStream AmazonopensearchserviceDestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream AmazonopensearchserviceDestinationConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration"></a>
 
 Describes the configuration of a destination in Amazon OpenSearch Service.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BufferingHints" : AmazonopensearchserviceBufferingHints,
-  "CloudWatchLoggingOptions" : CloudWatchLoggingOptions,
-  "ClusterEndpoint" : String,
-  "DocumentIdOptions" : DocumentIdOptions,
-  "DomainARN" : String,
-  "IndexName" : String,
-  "IndexRotationPeriod" : String,
-  "ProcessingConfiguration" : ProcessingConfiguration,
-  "RetryOptions" : AmazonopensearchserviceRetryOptions,
-  "RoleARN" : String,
-  "S3BackupMode" : String,
-  "S3Configuration" : S3DestinationConfiguration,
-  "TypeName" : String,
-  "VpcConfiguration" : VpcConfiguration
+  "[BufferingHints](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-bufferinghints)" : {{AmazonopensearchserviceBufferingHints}},
+  "[CloudWatchLoggingOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-cloudwatchloggingoptions)" : {{CloudWatchLoggingOptions}},
+  "[ClusterEndpoint](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-clusterendpoint)" : {{String}},
+  "[DocumentIdOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-documentidoptions)" : {{DocumentIdOptions}},
+  "[DomainARN](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-domainarn)" : {{String}},
+  "[IndexName](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-indexname)" : {{String}},
+  "[IndexRotationPeriod](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-indexrotationperiod)" : {{String}},
+  "[ProcessingConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-processingconfiguration)" : {{ProcessingConfiguration}},
+  "[RetryOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-retryoptions)" : {{AmazonopensearchserviceRetryOptions}},
+  "[RoleARN](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-rolearn)" : {{String}},
+  "[S3BackupMode](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-s3backupmode)" : {{String}},
+  "[S3Configuration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-s3configuration)" : {{S3DestinationConfiguration}},
+  "[TypeName](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-typename)" : {{String}},
+  "[VpcConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-vpcconfiguration)" : {{VpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BufferingHints:
-    AmazonopensearchserviceBufferingHints
-  CloudWatchLoggingOptions:
-    CloudWatchLoggingOptions
-  ClusterEndpoint: String
-  DocumentIdOptions:
-    DocumentIdOptions
-  DomainARN: String
-  IndexName: String
-  IndexRotationPeriod: String
-  ProcessingConfiguration:
-    ProcessingConfiguration
-  RetryOptions:
-    AmazonopensearchserviceRetryOptions
-  RoleARN: String
-  S3BackupMode: String
-  S3Configuration:
-    S3DestinationConfiguration
-  TypeName: String
-  VpcConfiguration:
-    VpcConfiguration
-
+```
+  [BufferingHints](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-bufferinghints): {{
+    AmazonopensearchserviceBufferingHints}}
+  [CloudWatchLoggingOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-cloudwatchloggingoptions): {{
+    CloudWatchLoggingOptions}}
+  [ClusterEndpoint](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-clusterendpoint): {{String}}
+  [DocumentIdOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-documentidoptions): {{
+    DocumentIdOptions}}
+  [DomainARN](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-domainarn): {{String}}
+  [IndexName](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-indexname): {{String}}
+  [IndexRotationPeriod](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-indexrotationperiod): {{String}}
+  [ProcessingConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-processingconfiguration): {{
+    ProcessingConfiguration}}
+  [RetryOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-retryoptions): {{
+    AmazonopensearchserviceRetryOptions}}
+  [RoleARN](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-rolearn): {{String}}
+  [S3BackupMode](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-s3backupmode): {{String}}
+  [S3Configuration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-s3configuration): {{
+    S3DestinationConfiguration}}
+  [TypeName](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-typename): {{String}}
+  [VpcConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-vpcconfiguration): {{
+    VpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-properties"></a>
 
-`BufferingHints`
+`BufferingHints`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-bufferinghints"></a>
+The buffering options. If no value is specified, the default values for AmazonopensearchserviceBufferingHints are used.
+*Required*: No
+*Type*: [AmazonopensearchserviceBufferingHints](aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicebufferinghints.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The buffering options. If no value is specified, the default values for
-AmazonopensearchserviceBufferingHints are used.
-
-_Required_: No
-
-_Type_: [AmazonopensearchserviceBufferingHints](aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicebufferinghints.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CloudWatchLoggingOptions`
-
+`CloudWatchLoggingOptions`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-cloudwatchloggingoptions"></a>
 Describes the Amazon CloudWatch logging options for your delivery stream.
+*Required*: No
+*Type*: [CloudWatchLoggingOptions](aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ClusterEndpoint`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-clusterendpoint"></a>
+The endpoint to use when communicating with the cluster. Specify either this ClusterEndpoint or the DomainARN field.
+*Required*: No
+*Type*: String
+*Pattern*: `https:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [CloudWatchLoggingOptions](aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClusterEndpoint`
-
-The endpoint to use when communicating with the cluster. Specify either this
-ClusterEndpoint or the DomainARN field.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `https:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentIdOptions`
-
+`DocumentIdOptions`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-documentidoptions"></a>
 Indicates the method for setting up document ID. The supported methods are Firehose generated document ID and OpenSearch Service generated document ID.
+*Required*: No
+*Type*: [DocumentIdOptions](aws-properties-kinesisfirehose-deliverystream-documentidoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DocumentIdOptions](aws-properties-kinesisfirehose-deliverystream-documentidoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainARN`
-
+`DomainARN`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-domainarn"></a>
 The ARN of the Amazon OpenSearch Service domain.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IndexName`
-
+`IndexName`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-indexname"></a>
 The Amazon OpenSearch Service index name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `80`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IndexRotationPeriod`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-indexrotationperiod"></a>
+The Amazon OpenSearch Service index rotation period. Index rotation appends a timestamp to the IndexName to facilitate the expiration of old data.
+*Required*: No
+*Type*: String
+*Allowed values*: `NoRotation | OneHour | OneDay | OneWeek | OneMonth`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `80`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IndexRotationPeriod`
-
-The Amazon OpenSearch Service index rotation period. Index rotation appends a timestamp
-to the IndexName to facilitate the expiration of old data.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NoRotation | OneHour | OneDay | OneWeek | OneMonth`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProcessingConfiguration`
-
+`ProcessingConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-processingconfiguration"></a>
 Describes a data processing configuration.
+*Required*: No
+*Type*: [ProcessingConfiguration](aws-properties-kinesisfirehose-deliverystream-processingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RetryOptions`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-retryoptions"></a>
+The retry behavior in case Kinesis Data Firehose is unable to deliver documents to Amazon OpenSearch Service. The default value is 300 (5 minutes).
+*Required*: No
+*Type*: [AmazonopensearchserviceRetryOptions](aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ProcessingConfiguration](aws-properties-kinesisfirehose-deliverystream-processingconfiguration.md)
+`RoleARN`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-rolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon OpenSearch Service Configuration API and for indexing documents.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryOptions`
-
-The retry behavior in case Kinesis Data Firehose is unable to deliver documents to
-Amazon OpenSearch Service. The default value is 300 (5 minutes).
-
-_Required_: No
-
-_Type_: [AmazonopensearchserviceRetryOptions](aws-properties-kinesisfirehose-deliverystream-amazonopensearchserviceretryoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleARN`
-
-The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose
-for calling the Amazon OpenSearch Service Configuration API and for indexing
-documents.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3BackupMode`
-
+`S3BackupMode`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-s3backupmode"></a>
 Defines how documents should be delivered to Amazon S3.
+*Required*: No
+*Type*: String
+*Allowed values*: `FailedDocumentsOnly | AllDocuments`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FailedDocumentsOnly | AllDocuments`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Configuration`
-
+`S3Configuration`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-s3configuration"></a>
 Describes the configuration of a destination in Amazon S3.
+*Required*: Yes
+*Type*: [S3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [S3DestinationConfiguration](aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeName`
-
+`TypeName`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-typename"></a>
 The Amazon OpenSearch Service type name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-vpcconfiguration"></a>
 The details of the VPC of the Amazon OpenSearch Service destination.
-
-_Required_: No
-
-_Type_: [VpcConfiguration](aws-properties-kinesisfirehose-deliverystream-vpcconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmazonopensearchserviceBufferingHints
-
-AmazonopensearchserviceRetryOptions
+*Required*: No
+*Type*: [VpcConfiguration](aws-properties-kinesisfirehose-deliverystream-vpcconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,55 @@
 title: "AWS::KinesisFirehose::DeliveryStream ElasticsearchBufferingHints"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream ElasticsearchBufferingHints
+<a name="aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints"></a>
 
-The `ElasticsearchBufferingHints` property type specifies how Amazon
-Kinesis Data Firehose (Kinesis Data Firehose) buffers incoming data while delivering it to
-the destination. The first buffer condition that is satisfied triggers Kinesis Data
-Firehose to deliver the data.
+The `ElasticsearchBufferingHints` property type specifies how Amazon Kinesis Data Firehose (Kinesis Data Firehose) buffers incoming data while delivering it to the destination. The first buffer condition that is satisfied triggers Kinesis Data Firehose to deliver the data.
 
-ElasticsearchBufferingHints is the property type for the `BufferingHints`
-property of the [Amazon Kinesis Data Firehose DeliveryStream\
-ElasticsearchDestinationConfiguration](../userguide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.md) property type.
+ElasticsearchBufferingHints is the property type for the `BufferingHints` property of the [Amazon Kinesis Data Firehose DeliveryStream ElasticsearchDestinationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html) property type.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints-syntax.json"></a>
 
-```json
-
+```
 {
-  "IntervalInSeconds" : Integer,
-  "SizeInMBs" : Integer
+  "[IntervalInSeconds](#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds)" : {{Integer}},
+  "[SizeInMBs](#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints-syntax.yaml"></a>
 
-```yaml
-
-  IntervalInSeconds: Integer
-  SizeInMBs: Integer
-
+```
+  [IntervalInSeconds](#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds): {{Integer}}
+  [SizeInMBs](#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints-properties"></a>
 
-`IntervalInSeconds`
+`IntervalInSeconds`  <a name="cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds"></a>
+The length of time, in seconds, that Kinesis Data Firehose buffers incoming data before delivering it to the destination. For valid values, see the `IntervalInSeconds` content for the [BufferingHints](https://docs.aws.amazon.com/firehose/latest/APIReference/API_BufferingHints.html) data type in the *Amazon Kinesis Data Firehose API Reference*.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `900`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The length of time, in seconds, that Kinesis Data Firehose buffers incoming data
-before delivering it to the destination. For valid values, see the
-`IntervalInSeconds` content for the [BufferingHints](../../../../reference/firehose/latest/apireference/api-bufferinghints.md) data
-type in the _Amazon Kinesis Data Firehose API Reference_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `900`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SizeInMBs`
-
-The size of the buffer, in MBs, that Kinesis Data Firehose uses for incoming data
-before delivering it to the destination. For valid values, see the `SizeInMBs`
-content for the [BufferingHints](../../../../reference/firehose/latest/apireference/api-bufferinghints.md) data
-type in the _Amazon Kinesis Data Firehose API Reference_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamicPartitioningConfiguration
-
-ElasticsearchDestinationConfiguration
+`SizeInMBs`  <a name="cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs"></a>
+The size of the buffer, in MBs, that Kinesis Data Firehose uses for incoming data before delivering it to the destination. For valid values, see the `SizeInMBs` content for the [BufferingHints](https://docs.aws.amazon.com/firehose/latest/APIReference/API_BufferingHints.html) data type in the *Amazon Kinesis Data Firehose API Reference*.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

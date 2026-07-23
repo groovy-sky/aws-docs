@@ -2,107 +2,79 @@
 title: "AWS::S3Tables::Table IcebergMetadata"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergMetadata
+<a name="aws-properties-s3tables-table-icebergmetadata"></a>
 
 Contains details about the metadata for an Iceberg table.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-icebergmetadata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-icebergmetadata-syntax.json"></a>
 
-```json
-
+```
 {
-  "IcebergPartitionSpec" : IcebergPartitionSpec,
-  "IcebergSchema" : IcebergSchema,
-  "IcebergSchemaV2" : IcebergSchemaV2,
-  "IcebergSortOrder" : IcebergSortOrder,
-  "TableProperties" : {Key: Value, ...}
+  "[IcebergPartitionSpec](#cfn-s3tables-table-icebergmetadata-icebergpartitionspec)" : {{IcebergPartitionSpec}},
+  "[IcebergSchema](#cfn-s3tables-table-icebergmetadata-icebergschema)" : {{IcebergSchema}},
+  "[IcebergSchemaV2](#cfn-s3tables-table-icebergmetadata-icebergschemav2)" : {{IcebergSchemaV2}},
+  "[IcebergSortOrder](#cfn-s3tables-table-icebergmetadata-icebergsortorder)" : {{IcebergSortOrder}},
+  "[TableProperties](#cfn-s3tables-table-icebergmetadata-tableproperties)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-icebergmetadata-syntax.yaml"></a>
 
-```yaml
-
-  IcebergPartitionSpec:
-    IcebergPartitionSpec
-  IcebergSchema:
-    IcebergSchema
-  IcebergSchemaV2:
-    IcebergSchemaV2
-  IcebergSortOrder:
-    IcebergSortOrder
-  TableProperties:
-    Key: Value
-
+```
+  [IcebergPartitionSpec](#cfn-s3tables-table-icebergmetadata-icebergpartitionspec): {{
+    IcebergPartitionSpec}}
+  [IcebergSchema](#cfn-s3tables-table-icebergmetadata-icebergschema): {{
+    IcebergSchema}}
+  [IcebergSchemaV2](#cfn-s3tables-table-icebergmetadata-icebergschemav2): {{
+    IcebergSchemaV2}}
+  [IcebergSortOrder](#cfn-s3tables-table-icebergmetadata-icebergsortorder): {{
+    IcebergSortOrder}}
+  [TableProperties](#cfn-s3tables-table-icebergmetadata-tableproperties): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-icebergmetadata-properties"></a>
 
-`IcebergPartitionSpec`
-
+`IcebergPartitionSpec`  <a name="cfn-s3tables-table-icebergmetadata-icebergpartitionspec"></a>
 Property description not available.
+*Required*: No
+*Type*: [IcebergPartitionSpec](aws-properties-s3tables-table-icebergpartitionspec.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [IcebergPartitionSpec](aws-properties-s3tables-table-icebergpartitionspec.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IcebergSchema`
-
+`IcebergSchema`  <a name="cfn-s3tables-table-icebergmetadata-icebergschema"></a>
 The schema for an Iceberg table. Use this property to define table schemas with primitive types only. For schemas that include nested or complex types such as `struct`, `list`, or `map`, use `schemaV2` instead.
+*Required*: No
+*Type*: [IcebergSchema](aws-properties-s3tables-table-icebergschema.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [IcebergSchema](aws-properties-s3tables-table-icebergschema.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IcebergSchemaV2`
-
+`IcebergSchemaV2`  <a name="cfn-s3tables-table-icebergmetadata-icebergschemav2"></a>
 The schema for an Iceberg table using the V2 format. Use this property to define table schemas that include nested or complex data types such as `struct`, `list`, or `map`, in addition to primitive types. For schemas with only primitive types, you can use either `schema` or `schemaV2`.
+*Required*: No
+*Type*: [IcebergSchemaV2](aws-properties-s3tables-table-icebergschemav2.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [IcebergSchemaV2](aws-properties-s3tables-table-icebergschemav2.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IcebergSortOrder`
-
+`IcebergSortOrder`  <a name="cfn-s3tables-table-icebergmetadata-icebergsortorder"></a>
 Property description not available.
+*Required*: No
+*Type*: [IcebergSortOrder](aws-properties-s3tables-table-icebergsortorder.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [IcebergSortOrder](aws-properties-s3tables-table-icebergsortorder.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TableProperties`
-
+`TableProperties`  <a name="cfn-s3tables-table-icebergmetadata-tableproperties"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^.+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Compaction
-
-IcebergPartitionField
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

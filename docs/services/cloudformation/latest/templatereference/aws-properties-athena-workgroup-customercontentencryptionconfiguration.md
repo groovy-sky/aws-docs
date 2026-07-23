@@ -2,60 +2,44 @@
 title: "AWS::Athena::WorkGroup CustomerContentEncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Athena::WorkGroup CustomerContentEncryptionConfiguration
+<a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration"></a>
 
-Specifies the customer managed KMS key that is used to encrypt the user's data stores
-in Athena. When an AWS managed key is used, this value is
-null. This setting does not apply to Athena SQL workgroups.
+Specifies the customer managed KMS key that is used to encrypt the user's data stores in Athena. When an AWS managed key is used, this value is null. This setting does not apply to Athena SQL workgroups.
 
 ## Syntax
+<a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKey" : String
+  "[KmsKey](#cfn-athena-workgroup-customercontentencryptionconfiguration-kmskey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KmsKey: String
-
+```
+  [KmsKey](#cfn-athena-workgroup-customercontentencryptionconfiguration-kmskey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration-properties"></a>
 
-`KmsKey`
-
+`KmsKey`  <a name="cfn-athena-workgroup-customercontentencryptionconfiguration-kmskey"></a>
 The customer managed KMS key that is used to encrypt the user's data stores in Athena.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:key/?[a-zA-Z_0-9+=,.@\-_/]+$|^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:alias/?[a-zA-Z_0-9+=,.@\-_/]+$|^alias/[a-zA-Z0-9/_-]+$|[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLoggingConfiguration
-
-EncryptionConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:key/?[a-zA-Z_0-9+=,.@\-_/]+$|^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:alias/?[a-zA-Z_0-9+=,.@\-_/]+$|^alias/[a-zA-Z0-9/_-]+$|[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

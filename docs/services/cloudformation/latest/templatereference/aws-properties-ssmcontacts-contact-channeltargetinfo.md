@@ -2,76 +2,54 @@
 title: "AWS::SSMContacts::Contact ChannelTargetInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMContacts::Contact ChannelTargetInfo
+<a name="aws-properties-ssmcontacts-contact-channeltargetinfo"></a>
 
-Information about the contact channel that Incident Manager uses to engage the
-contact.
+Information about the contact channel that Incident Manager uses to engage the contact.
 
 ## Syntax
+<a name="aws-properties-ssmcontacts-contact-channeltargetinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmcontacts-contact-channeltargetinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChannelId" : String,
-  "RetryIntervalInMinutes" : Integer
+  "[ChannelId](#cfn-ssmcontacts-contact-channeltargetinfo-channelid)" : {{String}},
+  "[RetryIntervalInMinutes](#cfn-ssmcontacts-contact-channeltargetinfo-retryintervalinminutes)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmcontacts-contact-channeltargetinfo-syntax.yaml"></a>
 
-```yaml
-
-  ChannelId: String
-  RetryIntervalInMinutes: Integer
-
+```
+  [ChannelId](#cfn-ssmcontacts-contact-channeltargetinfo-channelid): {{String}}
+  [RetryIntervalInMinutes](#cfn-ssmcontacts-contact-channeltargetinfo-retryintervalinminutes): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmcontacts-contact-channeltargetinfo-properties"></a>
 
-`ChannelId`
-
+`ChannelId`  <a name="cfn-ssmcontacts-contact-channeltargetinfo-channelid"></a>
 The Amazon Resource Name (ARN) of the contact channel.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-cn|aws-us-gov):ssm-contacts:[-\w+=\/,.@]*:[0-9]+:([\w+=\/,.@:-])*`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-cn|aws-us-gov):ssm-contacts:[-\w+=\/,.@]*:[0-9]+:([\w+=\/,.@:-])*`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryIntervalInMinutes`
-
-The number of minutes to wait before retrying to send engagement if the engagement
-initially failed.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `60`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SSMContacts::Contact
-
-ContactTargetInfo
+`RetryIntervalInMinutes`  <a name="cfn-ssmcontacts-contact-channeltargetinfo-retryintervalinminutes"></a>
+The number of minutes to wait before retrying to send engagement if the engagement initially failed.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `60`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

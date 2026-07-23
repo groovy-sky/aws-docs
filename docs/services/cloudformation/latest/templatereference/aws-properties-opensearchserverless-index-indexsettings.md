@@ -2,53 +2,51 @@
 title: "AWS::OpenSearchServerless::Index IndexSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Index IndexSettings
+<a name="aws-properties-opensearchserverless-index-indexsettings"></a>
 
 Index settings for the OpenSearch Serverless index.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-index-indexsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-index-indexsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "Index" : Index
+  "[Analysis](#cfn-opensearchserverless-index-indexsettings-analysis)" : {{Analysis}},
+  "[Index](#cfn-opensearchserverless-index-indexsettings-index)" : {{Index}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-index-indexsettings-syntax.yaml"></a>
 
-```yaml
-
-  Index:
-    Index
-
+```
+  [Analysis](#cfn-opensearchserverless-index-indexsettings-analysis): {{
+    Analysis}}
+  [Index](#cfn-opensearchserverless-index-indexsettings-index): {{
+    Index}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-index-indexsettings-properties"></a>
 
-`Index`
+`Analysis`  <a name="cfn-opensearchserverless-index-indexsettings-analysis"></a>
+Property description not available.
+*Required*: No
+*Type*: [Analysis](aws-properties-opensearchserverless-index-analysis.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`Index`  <a name="cfn-opensearchserverless-index-indexsettings-index"></a>
 Index settings.
-
-_Required_: No
-
-_Type_: [Index](aws-properties-opensearchserverless-index-index.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Index
-
-Mappings
+*Required*: No
+*Type*: [Index](aws-properties-opensearchserverless-index-index.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

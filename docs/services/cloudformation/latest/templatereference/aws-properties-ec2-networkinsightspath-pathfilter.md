@@ -2,103 +2,73 @@
 title: "AWS::EC2::NetworkInsightsPath PathFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInsightsPath PathFilter
+<a name="aws-properties-ec2-networkinsightspath-pathfilter"></a>
 
-Describes a set of filters for a path analysis. Use path filters to scope the analysis when
-there can be multiple resulting paths.
+Describes a set of filters for a path analysis. Use path filters to scope the analysis when there can be multiple resulting paths.
 
 ## Syntax
+<a name="aws-properties-ec2-networkinsightspath-pathfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-networkinsightspath-pathfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationAddress" : String,
-  "DestinationPortRange" : FilterPortRange,
-  "SourceAddress" : String,
-  "SourcePortRange" : FilterPortRange
+  "[DestinationAddress](#cfn-ec2-networkinsightspath-pathfilter-destinationaddress)" : {{String}},
+  "[DestinationPortRange](#cfn-ec2-networkinsightspath-pathfilter-destinationportrange)" : {{FilterPortRange}},
+  "[SourceAddress](#cfn-ec2-networkinsightspath-pathfilter-sourceaddress)" : {{String}},
+  "[SourcePortRange](#cfn-ec2-networkinsightspath-pathfilter-sourceportrange)" : {{FilterPortRange}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-networkinsightspath-pathfilter-syntax.yaml"></a>
 
-```yaml
-
-  DestinationAddress: String
-  DestinationPortRange:
-    FilterPortRange
-  SourceAddress: String
-  SourcePortRange:
-    FilterPortRange
-
+```
+  [DestinationAddress](#cfn-ec2-networkinsightspath-pathfilter-destinationaddress): {{String}}
+  [DestinationPortRange](#cfn-ec2-networkinsightspath-pathfilter-destinationportrange): {{
+    FilterPortRange}}
+  [SourceAddress](#cfn-ec2-networkinsightspath-pathfilter-sourceaddress): {{String}}
+  [SourcePortRange](#cfn-ec2-networkinsightspath-pathfilter-sourceportrange): {{
+    FilterPortRange}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-networkinsightspath-pathfilter-properties"></a>
 
-`DestinationAddress`
-
+`DestinationAddress`  <a name="cfn-ec2-networkinsightspath-pathfilter-destinationaddress"></a>
 The destination IPv4 address.
+*Required*: No
+*Type*: String
+*Pattern*: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
+*Minimum*: `0`
+*Maximum*: `15`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
-
-_Minimum_: `0`
-
-_Maximum_: `15`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationPortRange`
-
+`DestinationPortRange`  <a name="cfn-ec2-networkinsightspath-pathfilter-destinationportrange"></a>
 The destination port range.
+*Required*: No
+*Type*: [FilterPortRange](aws-properties-ec2-networkinsightspath-filterportrange.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [FilterPortRange](aws-properties-ec2-networkinsightspath-filterportrange.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceAddress`
-
+`SourceAddress`  <a name="cfn-ec2-networkinsightspath-pathfilter-sourceaddress"></a>
 The source IPv4 address.
+*Required*: No
+*Type*: String
+*Pattern*: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
+*Minimum*: `0`
+*Maximum*: `15`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
-
-_Minimum_: `0`
-
-_Maximum_: `15`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourcePortRange`
-
+`SourcePortRange`  <a name="cfn-ec2-networkinsightspath-pathfilter-sourceportrange"></a>
 The source port range.
-
-_Required_: No
-
-_Type_: [FilterPortRange](aws-properties-ec2-networkinsightspath-filterportrange.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterPortRange
-
-Tag
+*Required*: No
+*Type*: [FilterPortRange](aws-properties-ec2-networkinsightspath-filterportrange.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

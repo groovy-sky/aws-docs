@@ -2,115 +2,81 @@
 title: "AWS::Pipes::Pipe PipeLogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeLogConfiguration
+<a name="aws-properties-pipes-pipe-pipelogconfiguration"></a>
 
 Represents the configuration settings for the logs to which this pipe should report events.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipelogconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipelogconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudwatchLogsLogDestination" : CloudwatchLogsLogDestination,
-  "FirehoseLogDestination" : FirehoseLogDestination,
-  "IncludeExecutionData" : [ String, ... ],
-  "Level" : String,
-  "S3LogDestination" : S3LogDestination
+  "[CloudwatchLogsLogDestination](#cfn-pipes-pipe-pipelogconfiguration-cloudwatchlogslogdestination)" : {{CloudwatchLogsLogDestination}},
+  "[FirehoseLogDestination](#cfn-pipes-pipe-pipelogconfiguration-firehoselogdestination)" : {{FirehoseLogDestination}},
+  "[IncludeExecutionData](#cfn-pipes-pipe-pipelogconfiguration-includeexecutiondata)" : {{[ String, ... ]}},
+  "[Level](#cfn-pipes-pipe-pipelogconfiguration-level)" : {{String}},
+  "[S3LogDestination](#cfn-pipes-pipe-pipelogconfiguration-s3logdestination)" : {{S3LogDestination}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipelogconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudwatchLogsLogDestination:
-    CloudwatchLogsLogDestination
-  FirehoseLogDestination:
-    FirehoseLogDestination
-  IncludeExecutionData:
-    - String
-  Level: String
-  S3LogDestination:
-    S3LogDestination
-
+```
+  [CloudwatchLogsLogDestination](#cfn-pipes-pipe-pipelogconfiguration-cloudwatchlogslogdestination): {{
+    CloudwatchLogsLogDestination}}
+  [FirehoseLogDestination](#cfn-pipes-pipe-pipelogconfiguration-firehoselogdestination): {{
+    FirehoseLogDestination}}
+  [IncludeExecutionData](#cfn-pipes-pipe-pipelogconfiguration-includeexecutiondata): {{
+    - String}}
+  [Level](#cfn-pipes-pipe-pipelogconfiguration-level): {{String}}
+  [S3LogDestination](#cfn-pipes-pipe-pipelogconfiguration-s3logdestination): {{
+    S3LogDestination}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipelogconfiguration-properties"></a>
 
-`CloudwatchLogsLogDestination`
-
+`CloudwatchLogsLogDestination`  <a name="cfn-pipes-pipe-pipelogconfiguration-cloudwatchlogslogdestination"></a>
 The logging configuration settings for the pipe.
+*Required*: No
+*Type*: [CloudwatchLogsLogDestination](aws-properties-pipes-pipe-cloudwatchlogslogdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudwatchLogsLogDestination](aws-properties-pipes-pipe-cloudwatchlogslogdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirehoseLogDestination`
-
+`FirehoseLogDestination`  <a name="cfn-pipes-pipe-pipelogconfiguration-firehoselogdestination"></a>
 The Amazon Data Firehose logging configuration settings for the pipe.
+*Required*: No
+*Type*: [FirehoseLogDestination](aws-properties-pipes-pipe-firehoselogdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FirehoseLogDestination](aws-properties-pipes-pipe-firehoselogdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeExecutionData`
-
-Whether the execution data (specifically, the `payload`,
-`awsRequest`, and `awsResponse` fields) is included in the log
-messages for this pipe.
-
+`IncludeExecutionData`  <a name="cfn-pipes-pipe-pipelogconfiguration-includeexecutiondata"></a>
+Whether the execution data (specifically, the `payload`, `awsRequest`, and `awsResponse` fields) is included in the log messages for this pipe.
 This applies to all log destinations for the pipe.
+For more information, see [Including execution data in logs](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-logs.html#eb-pipes-logs-execution-data) in the *Amazon EventBridge User Guide*.
+ *Allowed values:* `ALL`
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Including execution data in logs](../../../eventbridge/latest/userguide/eb-pipes-logs.md#eb-pipes-logs-execution-data) in the _Amazon EventBridge User_
-_Guide_.
-
-_Allowed values:_ `ALL`
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Level`
-
+`Level`  <a name="cfn-pipes-pipe-pipelogconfiguration-level"></a>
 The level of logging detail to include. This applies to all log destinations for the pipe.
+*Required*: No
+*Type*: String
+*Allowed values*: `OFF | ERROR | INFO | TRACE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `OFF | ERROR | INFO | TRACE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3LogDestination`
-
+`S3LogDestination`  <a name="cfn-pipes-pipe-pipelogconfiguration-s3logdestination"></a>
 The Amazon S3 logging configuration settings for the pipe.
-
-_Required_: No
-
-_Type_: [S3LogDestination](aws-properties-pipes-pipe-s3logdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeEnrichmentParameters
-
-PipeSourceActiveMQBrokerParameters
+*Required*: No
+*Type*: [S3LogDestination](aws-properties-pipes-pipe-s3logdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

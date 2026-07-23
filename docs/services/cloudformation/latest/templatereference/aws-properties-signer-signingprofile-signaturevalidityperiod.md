@@ -2,66 +2,50 @@
 title: "AWS::Signer::SigningProfile SignatureValidityPeriod"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Signer::SigningProfile SignatureValidityPeriod
+<a name="aws-properties-signer-signingprofile-signaturevalidityperiod"></a>
 
 The validity period for the signing job.
 
 ## Syntax
+<a name="aws-properties-signer-signingprofile-signaturevalidityperiod-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-signer-signingprofile-signaturevalidityperiod-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "Value" : Integer
+  "[Type](#cfn-signer-signingprofile-signaturevalidityperiod-type)" : {{String}},
+  "[Value](#cfn-signer-signingprofile-signaturevalidityperiod-value)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-signer-signingprofile-signaturevalidityperiod-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  Value: Integer
-
+```
+  [Type](#cfn-signer-signingprofile-signaturevalidityperiod-type): {{String}}
+  [Value](#cfn-signer-signingprofile-signaturevalidityperiod-value): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-signer-signingprofile-signaturevalidityperiod-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-signer-signingprofile-signaturevalidityperiod-type"></a>
 The time unit for signature validity: DAYS \| MONTHS \| YEARS.
+*Required*: No
+*Type*: String
+*Allowed values*: `DAYS | MONTHS | YEARS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DAYS | MONTHS | YEARS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-signer-signingprofile-signaturevalidityperiod-value"></a>
 The numerical value of the time unit for signature validity.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Signer::SigningProfile
-
-Tag
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

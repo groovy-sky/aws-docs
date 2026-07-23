@@ -2,89 +2,64 @@
 title: "AWS::Connect::SecurityProfile Application"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::SecurityProfile Application
+<a name="aws-properties-connect-securityprofile-application"></a>
 
-This API is in preview release for Amazon Connect and is subject to change.
+This API is in preview release for Connect Customer and is subject to change.
 
 A third-party application's metadata.
 
 ## Syntax
+<a name="aws-properties-connect-securityprofile-application-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-securityprofile-application-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplicationPermissions" : [ String, ... ],
-  "Namespace" : String,
-  "Type" : String
+  "[ApplicationPermissions](#cfn-connect-securityprofile-application-applicationpermissions)" : {{[ String, ... ]}},
+  "[Namespace](#cfn-connect-securityprofile-application-namespace)" : {{String}},
+  "[Type](#cfn-connect-securityprofile-application-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-securityprofile-application-syntax.yaml"></a>
 
-```yaml
-
-  ApplicationPermissions:
-    - String
-  Namespace: String
-  Type: String
-
+```
+  [ApplicationPermissions](#cfn-connect-securityprofile-application-applicationpermissions): {{
+    - String}}
+  [Namespace](#cfn-connect-securityprofile-application-namespace): {{String}}
+  [Type](#cfn-connect-securityprofile-application-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-securityprofile-application-properties"></a>
 
-`ApplicationPermissions`
+`ApplicationPermissions`  <a name="cfn-connect-securityprofile-application-applicationpermissions"></a>
+The permissions that the agent is granted on the application. For third-party applications, only the `ACCESS` permission is supported. For MCP Servers, the permissions are tool Identifiers accepted by MCP Server.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The permissions that the agent is granted on the application. For third-party applications, only the
-`ACCESS` permission is supported. For MCP Servers, the permissions are tool Identifiers accepted by MCP
-Server.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-connect-securityprofile-application-namespace"></a>
 Namespace of the application that you want to give access to.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-Type of Application.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MCP | THIRD_PARTY_APPLICATION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::SecurityProfile
-
-DataTableAccessControlConfiguration
+`Type`  <a name="cfn-connect-securityprofile-application-type"></a>
+ Type of Application.
+*Required*: No
+*Type*: String
+*Allowed values*: `MCP | THIRD_PARTY_APPLICATION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

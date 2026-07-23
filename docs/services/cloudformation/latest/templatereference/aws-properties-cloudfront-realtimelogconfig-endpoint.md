@@ -2,68 +2,50 @@
 title: "AWS::CloudFront::RealtimeLogConfig EndPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::RealtimeLogConfig EndPoint
+<a name="aws-properties-cloudfront-realtimelogconfig-endpoint"></a>
 
-Contains information about the Amazon Kinesis data stream where you are sending real-time
-log data for this real-time log configuration.
+Contains information about the Amazon Kinesis data stream where you are sending real-time log data for this real-time log configuration.
 
 ## Syntax
+<a name="aws-properties-cloudfront-realtimelogconfig-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-realtimelogconfig-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "KinesisStreamConfig" : KinesisStreamConfig,
-  "StreamType" : String
+  "[KinesisStreamConfig](#cfn-cloudfront-realtimelogconfig-endpoint-kinesisstreamconfig)" : {{KinesisStreamConfig}},
+  "[StreamType](#cfn-cloudfront-realtimelogconfig-endpoint-streamtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-realtimelogconfig-endpoint-syntax.yaml"></a>
 
-```yaml
-
-  KinesisStreamConfig:
-    KinesisStreamConfig
-  StreamType: String
-
+```
+  [KinesisStreamConfig](#cfn-cloudfront-realtimelogconfig-endpoint-kinesisstreamconfig): {{
+    KinesisStreamConfig}}
+  [StreamType](#cfn-cloudfront-realtimelogconfig-endpoint-streamtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-realtimelogconfig-endpoint-properties"></a>
 
-`KinesisStreamConfig`
+`KinesisStreamConfig`  <a name="cfn-cloudfront-realtimelogconfig-endpoint-kinesisstreamconfig"></a>
+Contains information about the Amazon Kinesis data stream where you are sending real-time log data in a real-time log configuration.
+*Required*: Yes
+*Type*: [KinesisStreamConfig](aws-properties-cloudfront-realtimelogconfig-kinesisstreamconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Contains information about the Amazon Kinesis data stream where you are sending real-time
-log data in a real-time log configuration.
-
-_Required_: Yes
-
-_Type_: [KinesisStreamConfig](aws-properties-cloudfront-realtimelogconfig-kinesisstreamconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamType`
-
-The type of data stream where you are sending real-time log data. The only valid value
-is `Kinesis`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::RealtimeLogConfig
-
-KinesisStreamConfig
+`StreamType`  <a name="cfn-cloudfront-realtimelogconfig-endpoint-streamtype"></a>
+The type of data stream where you are sending real-time log data. The only valid value is `Kinesis`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

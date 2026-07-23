@@ -2,68 +2,51 @@
 title: "AWS::QuickSight::Template FreeFormLayoutElementBorderStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FreeFormLayoutElementBorderStyle
+<a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle"></a>
 
 The background style configuration of a free-form layout element.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "Visibility" : String
+  "[Color](#cfn-quicksight-template-freeformlayoutelementborderstyle-color)" : {{String}},
+  "[Visibility](#cfn-quicksight-template-freeformlayoutelementborderstyle-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  Visibility: String
-
+```
+  [Color](#cfn-quicksight-template-freeformlayoutelementborderstyle-color): {{String}}
+  [Visibility](#cfn-quicksight-template-freeformlayoutelementborderstyle-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-template-freeformlayoutelementborderstyle-color"></a>
 The border color of a free-form layout element.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-template-freeformlayoutelementborderstyle-visibility"></a>
 The border visibility of a free-form layout element.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FreeFormLayoutElementBackgroundStyle
-
-FreeFormLayoutScreenCanvasSizeOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

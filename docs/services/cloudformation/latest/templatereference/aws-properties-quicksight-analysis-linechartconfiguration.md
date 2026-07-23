@@ -2,330 +2,230 @@
 title: "AWS::QuickSight::Analysis LineChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LineChartConfiguration
+<a name="aws-properties-quicksight-analysis-linechartconfiguration"></a>
 
 The configuration of a line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-linechartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-linechartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContributionAnalysisDefaults" : [ ContributionAnalysisDefault, ... ],
-  "DataLabels" : DataLabelOptions,
-  "DefaultSeriesSettings" : LineChartDefaultSeriesSettings,
-  "FieldWells" : LineChartFieldWells,
-  "ForecastConfigurations" : [ ForecastConfiguration, ... ],
-  "Interactions" : VisualInteractionOptions,
-  "Legend" : LegendOptions,
-  "PrimaryYAxisDisplayOptions" : LineSeriesAxisDisplayOptions,
-  "PrimaryYAxisLabelOptions" : ChartAxisLabelOptions,
-  "ReferenceLines" : [ ReferenceLine, ... ],
-  "SecondaryYAxisDisplayOptions" : LineSeriesAxisDisplayOptions,
-  "SecondaryYAxisLabelOptions" : ChartAxisLabelOptions,
-  "Series" : [ SeriesItem, ... ],
-  "SingleAxisOptions" : SingleAxisOptions,
-  "SmallMultiplesOptions" : SmallMultiplesOptions,
-  "SortConfiguration" : LineChartSortConfiguration,
-  "Tooltip" : TooltipOptions,
-  "Type" : String,
-  "VisualPalette" : VisualPalette,
-  "XAxisDisplayOptions" : AxisDisplayOptions,
-  "XAxisLabelOptions" : ChartAxisLabelOptions
+  "[ContributionAnalysisDefaults](#cfn-quicksight-analysis-linechartconfiguration-contributionanalysisdefaults)" : {{[ ContributionAnalysisDefault, ... ]}},
+  "[DataLabels](#cfn-quicksight-analysis-linechartconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[DefaultSeriesSettings](#cfn-quicksight-analysis-linechartconfiguration-defaultseriessettings)" : {{LineChartDefaultSeriesSettings}},
+  "[FieldWells](#cfn-quicksight-analysis-linechartconfiguration-fieldwells)" : {{LineChartFieldWells}},
+  "[ForecastConfigurations](#cfn-quicksight-analysis-linechartconfiguration-forecastconfigurations)" : {{[ ForecastConfiguration, ... ]}},
+  "[Interactions](#cfn-quicksight-analysis-linechartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[Legend](#cfn-quicksight-analysis-linechartconfiguration-legend)" : {{LegendOptions}},
+  "[PrimaryYAxisDisplayOptions](#cfn-quicksight-analysis-linechartconfiguration-primaryyaxisdisplayoptions)" : {{LineSeriesAxisDisplayOptions}},
+  "[PrimaryYAxisLabelOptions](#cfn-quicksight-analysis-linechartconfiguration-primaryyaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[ReferenceLines](#cfn-quicksight-analysis-linechartconfiguration-referencelines)" : {{[ ReferenceLine, ... ]}},
+  "[SecondaryYAxisDisplayOptions](#cfn-quicksight-analysis-linechartconfiguration-secondaryyaxisdisplayoptions)" : {{LineSeriesAxisDisplayOptions}},
+  "[SecondaryYAxisLabelOptions](#cfn-quicksight-analysis-linechartconfiguration-secondaryyaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[Series](#cfn-quicksight-analysis-linechartconfiguration-series)" : {{[ SeriesItem, ... ]}},
+  "[SingleAxisOptions](#cfn-quicksight-analysis-linechartconfiguration-singleaxisoptions)" : {{SingleAxisOptions}},
+  "[SmallMultiplesOptions](#cfn-quicksight-analysis-linechartconfiguration-smallmultiplesoptions)" : {{SmallMultiplesOptions}},
+  "[SortConfiguration](#cfn-quicksight-analysis-linechartconfiguration-sortconfiguration)" : {{LineChartSortConfiguration}},
+  "[Tooltip](#cfn-quicksight-analysis-linechartconfiguration-tooltip)" : {{TooltipOptions}},
+  "[Type](#cfn-quicksight-analysis-linechartconfiguration-type)" : {{String}},
+  "[VisualPalette](#cfn-quicksight-analysis-linechartconfiguration-visualpalette)" : {{VisualPalette}},
+  "[XAxisDisplayOptions](#cfn-quicksight-analysis-linechartconfiguration-xaxisdisplayoptions)" : {{AxisDisplayOptions}},
+  "[XAxisLabelOptions](#cfn-quicksight-analysis-linechartconfiguration-xaxislabeloptions)" : {{ChartAxisLabelOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-linechartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ContributionAnalysisDefaults:
-    - ContributionAnalysisDefault
-  DataLabels:
-    DataLabelOptions
-  DefaultSeriesSettings:
-    LineChartDefaultSeriesSettings
-  FieldWells:
-    LineChartFieldWells
-  ForecastConfigurations:
-    - ForecastConfiguration
-  Interactions:
-    VisualInteractionOptions
-  Legend:
-    LegendOptions
-  PrimaryYAxisDisplayOptions:
-    LineSeriesAxisDisplayOptions
-  PrimaryYAxisLabelOptions:
-    ChartAxisLabelOptions
-  ReferenceLines:
-    - ReferenceLine
-  SecondaryYAxisDisplayOptions:
-    LineSeriesAxisDisplayOptions
-  SecondaryYAxisLabelOptions:
-    ChartAxisLabelOptions
-  Series:
-    - SeriesItem
-  SingleAxisOptions:
-    SingleAxisOptions
-  SmallMultiplesOptions:
-    SmallMultiplesOptions
-  SortConfiguration:
-    LineChartSortConfiguration
-  Tooltip:
-    TooltipOptions
-  Type: String
-  VisualPalette:
-    VisualPalette
-  XAxisDisplayOptions:
-    AxisDisplayOptions
-  XAxisLabelOptions:
-    ChartAxisLabelOptions
-
+```
+  [ContributionAnalysisDefaults](#cfn-quicksight-analysis-linechartconfiguration-contributionanalysisdefaults): {{
+    - ContributionAnalysisDefault}}
+  [DataLabels](#cfn-quicksight-analysis-linechartconfiguration-datalabels): {{
+    DataLabelOptions}}
+  [DefaultSeriesSettings](#cfn-quicksight-analysis-linechartconfiguration-defaultseriessettings): {{
+    LineChartDefaultSeriesSettings}}
+  [FieldWells](#cfn-quicksight-analysis-linechartconfiguration-fieldwells): {{
+    LineChartFieldWells}}
+  [ForecastConfigurations](#cfn-quicksight-analysis-linechartconfiguration-forecastconfigurations): {{
+    - ForecastConfiguration}}
+  [Interactions](#cfn-quicksight-analysis-linechartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [Legend](#cfn-quicksight-analysis-linechartconfiguration-legend): {{
+    LegendOptions}}
+  [PrimaryYAxisDisplayOptions](#cfn-quicksight-analysis-linechartconfiguration-primaryyaxisdisplayoptions): {{
+    LineSeriesAxisDisplayOptions}}
+  [PrimaryYAxisLabelOptions](#cfn-quicksight-analysis-linechartconfiguration-primaryyaxislabeloptions): {{
+    ChartAxisLabelOptions}}
+  [ReferenceLines](#cfn-quicksight-analysis-linechartconfiguration-referencelines): {{
+    - ReferenceLine}}
+  [SecondaryYAxisDisplayOptions](#cfn-quicksight-analysis-linechartconfiguration-secondaryyaxisdisplayoptions): {{
+    LineSeriesAxisDisplayOptions}}
+  [SecondaryYAxisLabelOptions](#cfn-quicksight-analysis-linechartconfiguration-secondaryyaxislabeloptions): {{
+    ChartAxisLabelOptions}}
+  [Series](#cfn-quicksight-analysis-linechartconfiguration-series): {{
+    - SeriesItem}}
+  [SingleAxisOptions](#cfn-quicksight-analysis-linechartconfiguration-singleaxisoptions): {{
+    SingleAxisOptions}}
+  [SmallMultiplesOptions](#cfn-quicksight-analysis-linechartconfiguration-smallmultiplesoptions): {{
+    SmallMultiplesOptions}}
+  [SortConfiguration](#cfn-quicksight-analysis-linechartconfiguration-sortconfiguration): {{
+    LineChartSortConfiguration}}
+  [Tooltip](#cfn-quicksight-analysis-linechartconfiguration-tooltip): {{
+    TooltipOptions}}
+  [Type](#cfn-quicksight-analysis-linechartconfiguration-type): {{String}}
+  [VisualPalette](#cfn-quicksight-analysis-linechartconfiguration-visualpalette): {{
+    VisualPalette}}
+  [XAxisDisplayOptions](#cfn-quicksight-analysis-linechartconfiguration-xaxisdisplayoptions): {{
+    AxisDisplayOptions}}
+  [XAxisLabelOptions](#cfn-quicksight-analysis-linechartconfiguration-xaxislabeloptions): {{
+    ChartAxisLabelOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-linechartconfiguration-properties"></a>
 
-`ContributionAnalysisDefaults`
-
+`ContributionAnalysisDefaults`  <a name="cfn-quicksight-analysis-linechartconfiguration-contributionanalysisdefaults"></a>
 The default configuration of a line chart's contribution analysis.
+*Required*: No
+*Type*: Array of [ContributionAnalysisDefault](aws-properties-quicksight-analysis-contributionanalysisdefault.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ContributionAnalysisDefault](aws-properties-quicksight-analysis-contributionanalysisdefault.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabels`
-
+`DataLabels`  <a name="cfn-quicksight-analysis-linechartconfiguration-datalabels"></a>
 The data label configuration of a line chart.
+*Required*: No
+*Type*: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataLabelOptions](aws-properties-quicksight-analysis-datalabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultSeriesSettings`
-
+`DefaultSeriesSettings`  <a name="cfn-quicksight-analysis-linechartconfiguration-defaultseriessettings"></a>
 The options that determine the default presentation of all line series in `LineChartVisual`.
+*Required*: No
+*Type*: [LineChartDefaultSeriesSettings](aws-properties-quicksight-analysis-linechartdefaultseriessettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LineChartDefaultSeriesSettings](aws-properties-quicksight-analysis-linechartdefaultseriessettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-analysis-linechartconfiguration-fieldwells"></a>
 The field well configuration of a line chart.
+*Required*: No
+*Type*: [LineChartFieldWells](aws-properties-quicksight-analysis-linechartfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LineChartFieldWells](aws-properties-quicksight-analysis-linechartfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForecastConfigurations`
-
+`ForecastConfigurations`  <a name="cfn-quicksight-analysis-linechartconfiguration-forecastconfigurations"></a>
 The forecast configuration of a line chart.
+*Required*: No
+*Type*: Array of [ForecastConfiguration](aws-properties-quicksight-analysis-forecastconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ForecastConfiguration](aws-properties-quicksight-analysis-forecastconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-analysis-linechartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-analysis-linechartconfiguration-legend"></a>
 The legend configuration of a line chart.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-analysis-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryYAxisDisplayOptions`
-
+`PrimaryYAxisDisplayOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-primaryyaxisdisplayoptions"></a>
 The series axis configuration of a line chart.
+*Required*: No
+*Type*: [LineSeriesAxisDisplayOptions](aws-properties-quicksight-analysis-lineseriesaxisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LineSeriesAxisDisplayOptions](aws-properties-quicksight-analysis-lineseriesaxisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryYAxisLabelOptions`
-
+`PrimaryYAxisLabelOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-primaryyaxislabeloptions"></a>
 The options that determine the presentation of the y-axis label.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReferenceLines`
-
+`ReferenceLines`  <a name="cfn-quicksight-analysis-linechartconfiguration-referencelines"></a>
 The reference lines configuration of a line chart.
+*Required*: No
+*Type*: Array of [ReferenceLine](aws-properties-quicksight-analysis-referenceline.md)
+*Minimum*: `0`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ReferenceLine](aws-properties-quicksight-analysis-referenceline.md)
-
-_Minimum_: `0`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryYAxisDisplayOptions`
-
+`SecondaryYAxisDisplayOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-secondaryyaxisdisplayoptions"></a>
 The series axis configuration of a line chart.
+*Required*: No
+*Type*: [LineSeriesAxisDisplayOptions](aws-properties-quicksight-analysis-lineseriesaxisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LineSeriesAxisDisplayOptions](aws-properties-quicksight-analysis-lineseriesaxisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryYAxisLabelOptions`
-
+`SecondaryYAxisLabelOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-secondaryyaxislabeloptions"></a>
 The options that determine the presentation of the secondary y-axis label.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Series`
-
+`Series`  <a name="cfn-quicksight-analysis-linechartconfiguration-series"></a>
 The series item configuration of a line chart.
+*Required*: No
+*Type*: Array of [SeriesItem](aws-properties-quicksight-analysis-seriesitem.md)
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SeriesItem](aws-properties-quicksight-analysis-seriesitem.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingleAxisOptions`
-
+`SingleAxisOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-singleaxisoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [SingleAxisOptions](aws-properties-quicksight-analysis-singleaxisoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SingleAxisOptions](aws-properties-quicksight-analysis-singleaxisoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SmallMultiplesOptions`
-
+`SmallMultiplesOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-smallmultiplesoptions"></a>
 The small multiples setup for the visual.
+*Required*: No
+*Type*: [SmallMultiplesOptions](aws-properties-quicksight-analysis-smallmultiplesoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SmallMultiplesOptions](aws-properties-quicksight-analysis-smallmultiplesoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-analysis-linechartconfiguration-sortconfiguration"></a>
 The sort configuration of a line chart.
+*Required*: No
+*Type*: [LineChartSortConfiguration](aws-properties-quicksight-analysis-linechartsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LineChartSortConfiguration](aws-properties-quicksight-analysis-linechartsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-analysis-linechartconfiguration-tooltip"></a>
 The tooltip configuration of a line chart.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-analysis-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-analysis-linechartconfiguration-type"></a>
 Determines the type of the line chart.
+*Required*: No
+*Type*: String
+*Allowed values*: `LINE | AREA | STACKED_AREA`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LINE | AREA | STACKED_AREA`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-analysis-linechartconfiguration-visualpalette"></a>
 The visual palette configuration of a line chart.
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-analysis-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxisDisplayOptions`
-
+`XAxisDisplayOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-xaxisdisplayoptions"></a>
 The options that determine the presentation of the x-axis.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-analysis-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxisLabelOptions`
-
+`XAxisLabelOptions`  <a name="cfn-quicksight-analysis-linechartconfiguration-xaxislabeloptions"></a>
 The options that determine the presentation of the x-axis label.
-
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LineChartAggregatedFieldWells
-
-LineChartDefaultSeriesSettings
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-analysis-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,87 +2,61 @@
 title: "AWS::Timestream::Table PartitionKey"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::Table PartitionKey
+<a name="aws-properties-timestream-table-partitionkey"></a>
 
-An attribute used in partitioning data in a table. A dimension key partitions data using the values of the
-dimension specified by the dimension-name as partition key, while a measure key partitions data using measure names
-(values of the 'measure\_name' column).
+ An attribute used in partitioning data in a table. A dimension key partitions data using the values of the dimension specified by the dimension-name as partition key, while a measure key partitions data using measure names (values of the 'measure\_name' column).
 
 ## Syntax
+<a name="aws-properties-timestream-table-partitionkey-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-table-partitionkey-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnforcementInRecord" : String,
-  "Name" : String,
-  "Type" : String
+  "[EnforcementInRecord](#cfn-timestream-table-partitionkey-enforcementinrecord)" : {{String}},
+  "[Name](#cfn-timestream-table-partitionkey-name)" : {{String}},
+  "[Type](#cfn-timestream-table-partitionkey-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-table-partitionkey-syntax.yaml"></a>
 
-```yaml
-
-  EnforcementInRecord: String
-  Name: String
-  Type: String
-
+```
+  [EnforcementInRecord](#cfn-timestream-table-partitionkey-enforcementinrecord): {{String}}
+  [Name](#cfn-timestream-table-partitionkey-name): {{String}}
+  [Type](#cfn-timestream-table-partitionkey-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-table-partitionkey-properties"></a>
 
-`EnforcementInRecord`
+`EnforcementInRecord`  <a name="cfn-timestream-table-partitionkey-enforcementinrecord"></a>
+ The level of enforcement for the specification of a dimension key in ingested records. Options are REQUIRED (dimension key must be specified) and OPTIONAL (dimension key does not have to be specified).
+*Required*: No
+*Type*: String
+*Allowed values*: `REQUIRED | OPTIONAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The level of enforcement for the specification of a dimension key in ingested records. Options are REQUIRED
-(dimension key must be specified) and OPTIONAL (dimension key does not have to be specified).
+`Name`  <a name="cfn-timestream-table-partitionkey-name"></a>
+ The name of the attribute used for a dimension key.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `REQUIRED | OPTIONAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the attribute used for a dimension key.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of the partition key. Options are DIMENSION (dimension key) and MEASURE (measure key).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DIMENSION | MEASURE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MagneticStoreWriteProperties
-
-RetentionProperties
+`Type`  <a name="cfn-timestream-table-partitionkey-type"></a>
+ The type of the partition key. Options are DIMENSION (dimension key) and MEASURE (measure key).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DIMENSION | MEASURE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

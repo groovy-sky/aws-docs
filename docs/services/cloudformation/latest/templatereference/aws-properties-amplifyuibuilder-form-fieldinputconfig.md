@@ -2,235 +2,163 @@
 title: "AWS::AmplifyUIBuilder::Form FieldInputConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FieldInputConfig
+<a name="aws-properties-amplifyuibuilder-form-fieldinputconfig"></a>
 
 The `FieldInputConfig` property specifies the configuration for the default input values to display for a field.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-fieldinputconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-fieldinputconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultChecked" : Boolean,
-  "DefaultCountryCode" : String,
-  "DefaultValue" : String,
-  "DescriptiveText" : String,
-  "FileUploaderConfig" : FileUploaderFieldConfig,
-  "IsArray" : Boolean,
-  "MaxValue" : Number,
-  "MinValue" : Number,
-  "Name" : String,
-  "Placeholder" : String,
-  "ReadOnly" : Boolean,
-  "Required" : Boolean,
-  "Step" : Number,
-  "Type" : String,
-  "Value" : String,
-  "ValueMappings" : ValueMappings
+  "[DefaultChecked](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultchecked)" : {{Boolean}},
+  "[DefaultCountryCode](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultcountrycode)" : {{String}},
+  "[DefaultValue](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultvalue)" : {{String}},
+  "[DescriptiveText](#cfn-amplifyuibuilder-form-fieldinputconfig-descriptivetext)" : {{String}},
+  "[FileUploaderConfig](#cfn-amplifyuibuilder-form-fieldinputconfig-fileuploaderconfig)" : {{FileUploaderFieldConfig}},
+  "[IsArray](#cfn-amplifyuibuilder-form-fieldinputconfig-isarray)" : {{Boolean}},
+  "[MaxValue](#cfn-amplifyuibuilder-form-fieldinputconfig-maxvalue)" : {{Number}},
+  "[MinValue](#cfn-amplifyuibuilder-form-fieldinputconfig-minvalue)" : {{Number}},
+  "[Name](#cfn-amplifyuibuilder-form-fieldinputconfig-name)" : {{String}},
+  "[Placeholder](#cfn-amplifyuibuilder-form-fieldinputconfig-placeholder)" : {{String}},
+  "[ReadOnly](#cfn-amplifyuibuilder-form-fieldinputconfig-readonly)" : {{Boolean}},
+  "[Required](#cfn-amplifyuibuilder-form-fieldinputconfig-required)" : {{Boolean}},
+  "[Step](#cfn-amplifyuibuilder-form-fieldinputconfig-step)" : {{Number}},
+  "[Type](#cfn-amplifyuibuilder-form-fieldinputconfig-type)" : {{String}},
+  "[Value](#cfn-amplifyuibuilder-form-fieldinputconfig-value)" : {{String}},
+  "[ValueMappings](#cfn-amplifyuibuilder-form-fieldinputconfig-valuemappings)" : {{ValueMappings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-fieldinputconfig-syntax.yaml"></a>
 
-```yaml
-
-  DefaultChecked: Boolean
-  DefaultCountryCode: String
-  DefaultValue: String
-  DescriptiveText: String
-  FileUploaderConfig:
-    FileUploaderFieldConfig
-  IsArray: Boolean
-  MaxValue: Number
-  MinValue: Number
-  Name: String
-  Placeholder: String
-  ReadOnly: Boolean
-  Required: Boolean
-  Step: Number
-  Type: String
-  Value: String
-  ValueMappings:
-    ValueMappings
-
+```
+  [DefaultChecked](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultchecked): {{Boolean}}
+  [DefaultCountryCode](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultcountrycode): {{String}}
+  [DefaultValue](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultvalue): {{String}}
+  [DescriptiveText](#cfn-amplifyuibuilder-form-fieldinputconfig-descriptivetext): {{String}}
+  [FileUploaderConfig](#cfn-amplifyuibuilder-form-fieldinputconfig-fileuploaderconfig): {{
+    FileUploaderFieldConfig}}
+  [IsArray](#cfn-amplifyuibuilder-form-fieldinputconfig-isarray): {{Boolean}}
+  [MaxValue](#cfn-amplifyuibuilder-form-fieldinputconfig-maxvalue): {{Number}}
+  [MinValue](#cfn-amplifyuibuilder-form-fieldinputconfig-minvalue): {{Number}}
+  [Name](#cfn-amplifyuibuilder-form-fieldinputconfig-name): {{String}}
+  [Placeholder](#cfn-amplifyuibuilder-form-fieldinputconfig-placeholder): {{String}}
+  [ReadOnly](#cfn-amplifyuibuilder-form-fieldinputconfig-readonly): {{Boolean}}
+  [Required](#cfn-amplifyuibuilder-form-fieldinputconfig-required): {{Boolean}}
+  [Step](#cfn-amplifyuibuilder-form-fieldinputconfig-step): {{Number}}
+  [Type](#cfn-amplifyuibuilder-form-fieldinputconfig-type): {{String}}
+  [Value](#cfn-amplifyuibuilder-form-fieldinputconfig-value): {{String}}
+  [ValueMappings](#cfn-amplifyuibuilder-form-fieldinputconfig-valuemappings): {{
+    ValueMappings}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-fieldinputconfig-properties"></a>
 
-`DefaultChecked`
-
+`DefaultChecked`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-defaultchecked"></a>
 Specifies whether a field has a default value.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultCountryCode`
-
+`DefaultCountryCode`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-defaultcountrycode"></a>
 The default country code for a phone number.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-defaultvalue"></a>
 The default value for the field.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DescriptiveText`
-
+`DescriptiveText`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-descriptivetext"></a>
 The text to display to describe the field.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileUploaderConfig`
-
+`FileUploaderConfig`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-fileuploaderconfig"></a>
 The configuration for the file uploader field.
+*Required*: No
+*Type*: [FileUploaderFieldConfig](aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IsArray`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-isarray"></a>
+Specifies whether to render the field as an array. This property is ignored if the `dataSourceType` for the form is a Data Store.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [FileUploaderFieldConfig](aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsArray`
-
-Specifies whether to render the field as an array. This property is ignored if the
-`dataSourceType` for the form is a Data Store.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxValue`
-
+`MaxValue`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-maxvalue"></a>
 The maximum value to display for the field.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinValue`
-
+`MinValue`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-minvalue"></a>
 The minimum value to display for the field.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-name"></a>
 The name of the field.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Placeholder`
-
+`Placeholder`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-placeholder"></a>
 The text to display as a placeholder for the field.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReadOnly`
-
+`ReadOnly`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-readonly"></a>
 Specifies a read only field.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Required`
-
+`Required`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-required"></a>
 Specifies a field that requires input.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Step`
-
+`Step`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-step"></a>
 The stepping increment for a numeric value in a field.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-type"></a>
 The input type for the field.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-value"></a>
 The value for the field.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueMappings`
-
+`ValueMappings`  <a name="cfn-amplifyuibuilder-form-fieldinputconfig-valuemappings"></a>
 The information to use to customize the input fields with data at runtime.
-
-_Required_: No
-
-_Type_: [ValueMappings](aws-properties-amplifyuibuilder-form-valuemappings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldConfig
-
-FieldPosition
+*Required*: No
+*Type*: [ValueMappings](aws-properties-amplifyuibuilder-form-valuemappings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

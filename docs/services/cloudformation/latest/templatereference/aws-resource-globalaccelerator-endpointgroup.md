@@ -2,243 +2,177 @@
 title: "AWS::GlobalAccelerator::EndpointGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GlobalAccelerator::EndpointGroup
+<a name="aws-resource-globalaccelerator-endpointgroup"></a>
 
-The `AWS::GlobalAccelerator::EndpointGroup` resource is a Global Accelerator resource type that contains information about
-how you create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region.
+The `AWS::GlobalAccelerator::EndpointGroup` resource is a Global Accelerator resource type that contains information about how you create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region.
 
 ## Syntax
+<a name="aws-resource-globalaccelerator-endpointgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-globalaccelerator-endpointgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::GlobalAccelerator::EndpointGroup",
   "Properties" : {
-      "EndpointConfigurations" : [ EndpointConfiguration, ... ],
-      "EndpointGroupRegion" : String,
-      "HealthCheckIntervalSeconds" : Integer,
-      "HealthCheckPath" : String,
-      "HealthCheckPort" : Integer,
-      "HealthCheckProtocol" : String,
-      "ListenerArn" : String,
-      "PortOverrides" : [ PortOverride, ... ],
-      "ThresholdCount" : Integer,
-      "TrafficDialPercentage" : Number
+      "[EndpointConfigurations](#cfn-globalaccelerator-endpointgroup-endpointconfigurations)" : {{[ EndpointConfiguration, ... ]}},
+      "[EndpointGroupRegion](#cfn-globalaccelerator-endpointgroup-endpointgroupregion)" : {{String}},
+      "[HealthCheckIntervalSeconds](#cfn-globalaccelerator-endpointgroup-healthcheckintervalseconds)" : {{Integer}},
+      "[HealthCheckPath](#cfn-globalaccelerator-endpointgroup-healthcheckpath)" : {{String}},
+      "[HealthCheckPort](#cfn-globalaccelerator-endpointgroup-healthcheckport)" : {{Integer}},
+      "[HealthCheckProtocol](#cfn-globalaccelerator-endpointgroup-healthcheckprotocol)" : {{String}},
+      "[ListenerArn](#cfn-globalaccelerator-endpointgroup-listenerarn)" : {{String}},
+      "[PortOverrides](#cfn-globalaccelerator-endpointgroup-portoverrides)" : {{[ PortOverride, ... ]}},
+      "[ThresholdCount](#cfn-globalaccelerator-endpointgroup-thresholdcount)" : {{Integer}},
+      "[TrafficDialPercentage](#cfn-globalaccelerator-endpointgroup-trafficdialpercentage)" : {{Number}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-globalaccelerator-endpointgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::GlobalAccelerator::EndpointGroup
 Properties:
-  EndpointConfigurations:
-    - EndpointConfiguration
-  EndpointGroupRegion: String
-  HealthCheckIntervalSeconds: Integer
-  HealthCheckPath: String
-  HealthCheckPort: Integer
-  HealthCheckProtocol: String
-  ListenerArn: String
-  PortOverrides:
-    - PortOverride
-  ThresholdCount: Integer
-  TrafficDialPercentage: Number
-
+  [EndpointConfigurations](#cfn-globalaccelerator-endpointgroup-endpointconfigurations): {{
+    - EndpointConfiguration}}
+  [EndpointGroupRegion](#cfn-globalaccelerator-endpointgroup-endpointgroupregion): {{String}}
+  [HealthCheckIntervalSeconds](#cfn-globalaccelerator-endpointgroup-healthcheckintervalseconds): {{Integer}}
+  [HealthCheckPath](#cfn-globalaccelerator-endpointgroup-healthcheckpath): {{String}}
+  [HealthCheckPort](#cfn-globalaccelerator-endpointgroup-healthcheckport): {{Integer}}
+  [HealthCheckProtocol](#cfn-globalaccelerator-endpointgroup-healthcheckprotocol): {{String}}
+  [ListenerArn](#cfn-globalaccelerator-endpointgroup-listenerarn): {{String}}
+  [PortOverrides](#cfn-globalaccelerator-endpointgroup-portoverrides): {{
+    - PortOverride}}
+  [ThresholdCount](#cfn-globalaccelerator-endpointgroup-thresholdcount): {{Integer}}
+  [TrafficDialPercentage](#cfn-globalaccelerator-endpointgroup-trafficdialpercentage): {{Number}}
 ```
 
 ## Properties
+<a name="aws-resource-globalaccelerator-endpointgroup-properties"></a>
 
-`EndpointConfigurations`
-
+`EndpointConfigurations`  <a name="cfn-globalaccelerator-endpointgroup-endpointconfigurations"></a>
 The list of endpoint objects.
+*Required*: No
+*Type*: Array of [EndpointConfiguration](aws-properties-globalaccelerator-endpointgroup-endpointconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EndpointConfiguration](aws-properties-globalaccelerator-endpointgroup-endpointconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndpointGroupRegion`
-
+`EndpointGroupRegion`  <a name="cfn-globalaccelerator-endpointgroup-endpointgroupregion"></a>
 The AWS Regions where the endpoint group is located.
+*Required*: Yes
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HealthCheckIntervalSeconds`
-
+`HealthCheckIntervalSeconds`  <a name="cfn-globalaccelerator-endpointgroup-healthcheckintervalseconds"></a>
 The time—10 seconds or 30 seconds—between health checks for each endpoint. The default value is 30.
+*Required*: No
+*Type*: Integer
+*Minimum*: `10`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`HealthCheckPath`  <a name="cfn-globalaccelerator-endpointgroup-healthcheckpath"></a>
+If the protocol is HTTP/S, then this value provides the ping path that Global Accelerator uses for the destination on the endpoints for health checks. The default is slash (/).
+*Required*: No
+*Type*: String
+*Pattern*: `^/[-a-zA-Z0-9@:%_\\+.~#?&/=]*$`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Minimum_: `10`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HealthCheckPath`
-
-If the protocol is HTTP/S, then this value provides the ping path that Global Accelerator uses for the destination on the
-endpoints for health checks. The default is slash (/).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^/[-a-zA-Z0-9@:%_\\+.~#?&/=]*$`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HealthCheckPort`
-
+`HealthCheckPort`  <a name="cfn-globalaccelerator-endpointgroup-healthcheckport"></a>
 The port that Global Accelerator uses to perform health checks on endpoints that are part of this endpoint group.
+The default port is the port for the listener that this endpoint group is associated with. If the listener port is a list, Global Accelerator uses the first specified port in the list of ports.
+*Required*: No
+*Type*: Integer
+*Minimum*: `-1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The default port is the port for the listener that this endpoint group is associated with. If the listener port is a
-list, Global Accelerator uses the first specified port in the list of ports.
+`HealthCheckProtocol`  <a name="cfn-globalaccelerator-endpointgroup-healthcheckprotocol"></a>
+The protocol that Global Accelerator uses to perform health checks on endpoints that are part of this endpoint group. The default value is TCP.
+*Required*: No
+*Type*: String
+*Allowed values*: `TCP | HTTP | HTTPS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `-1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HealthCheckProtocol`
-
-The protocol that Global Accelerator uses to perform health checks on endpoints that are part of this endpoint group. The default
-value is TCP.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TCP | HTTP | HTTPS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ListenerArn`
-
+`ListenerArn`  <a name="cfn-globalaccelerator-endpointgroup-listenerarn"></a>
 The Amazon Resource Name (ARN) of the listener.
+*Required*: Yes
+*Type*: String
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`PortOverrides`  <a name="cfn-globalaccelerator-endpointgroup-portoverrides"></a>
+Allows you to override the destination ports used to route traffic to an endpoint. Using a port override lets you map a list of external destination ports (that your users send traffic to) to a list of internal destination ports that you want an application endpoint to receive traffic on.
+*Required*: No
+*Type*: Array of [PortOverride](aws-properties-globalaccelerator-endpointgroup-portoverride.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ThresholdCount`  <a name="cfn-globalaccelerator-endpointgroup-thresholdcount"></a>
+The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PortOverrides`
-
-Allows you to override the destination ports used to route traffic to an endpoint.
-Using a port override lets you map a list of external destination ports (that your
-users send traffic to) to a list of internal destination ports that you want an application
-endpoint to receive traffic on.
-
-_Required_: No
-
-_Type_: Array of [PortOverride](aws-properties-globalaccelerator-endpointgroup-portoverride.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThresholdCount`
-
-The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an
-unhealthy endpoint to healthy. The default value is 3.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficDialPercentage`
-
-The percentage of traffic to send to an AWS Regions. Additional traffic is distributed to other endpoint groups for
-this listener.
-
-Use this action to increase (dial up) or decrease (dial down) traffic to a specific Region. The percentage is
-applied to the traffic that would otherwise have been routed to the Region based on optimal routing.
-
+`TrafficDialPercentage`  <a name="cfn-globalaccelerator-endpointgroup-trafficdialpercentage"></a>
+The percentage of traffic to send to an AWS Regions. Additional traffic is distributed to other endpoint groups for this listener.
+Use this action to increase (dial up) or decrease (dial down) traffic to a specific Region. The percentage is applied to the traffic that would otherwise have been routed to the Region based on optimal routing.
 The default value is 100.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-globalaccelerator-endpointgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-globalaccelerator-endpointgroup-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the endpoint group, such as
-`arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the endpoint group, such as `arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-globalaccelerator-endpointgroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`EndpointGroupArn`
+####
+<a name="aws-resource-globalaccelerator-endpointgroup-return-values-fn--getatt-fn--getatt"></a>
 
-The ARN of the endpoint group, such as
-`arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu`.
+`EndpointGroupArn`  <a name="EndpointGroupArn-fn::getatt"></a>
+The ARN of the endpoint group, such as `arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu`.
 
 ## Examples
+<a name="aws-resource-globalaccelerator-endpointgroup--examples"></a>
 
 ### Add an endpoint group
+<a name="aws-resource-globalaccelerator-endpointgroup--examples--Add_an_endpoint_group"></a>
 
 These are examples to specify an endpoint group.
 
 #### JSON
+<a name="aws-resource-globalaccelerator-endpointgroup--examples--Add_an_endpoint_group--json"></a>
 
-```json
-
+```
 "Resources": {
         "EndpointGroup": {
         "Type": "AWS::GlobalAccelerator::EndpointGroup",
@@ -263,9 +197,9 @@ These are examples to specify an endpoint group.
 ```
 
 #### YAML
+<a name="aws-resource-globalaccelerator-endpointgroup--examples--Add_an_endpoint_group--yaml"></a>
 
-```yaml
-
+```
 EndpointGroup:
   Type: AWS::GlobalAccelerator::EndpointGroup
   Properties:
@@ -278,11 +212,5 @@ EndpointGroup:
     - EndpointId:
         Ref: EndpointId
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-EndpointConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

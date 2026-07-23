@@ -3,44 +3,30 @@ title: "Amazon CloudWatch Logs template snippets"
 ---
 
 # Amazon CloudWatch Logs template snippets
+<a name="quickref-cloudwatchlogs"></a>
 
-Amazon CloudWatch Logs can monitor your system, application, and custom log files from Amazon EC2 instances
-or other sources. You can use CloudFormation to provision and manage log groups and metric filters.
-For more information about Amazon CloudWatch Logs, see the [Amazon CloudWatch Logs User Guide](../../../amazoncloudwatch/latest/logs/whatiscloudwatchlogs.md).
+Amazon CloudWatch Logs can monitor your system, application, and custom log files from Amazon EC2 instances or other sources. You can use CloudFormation to provision and manage log groups and metric filters. For more information about Amazon CloudWatch Logs, see the [Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
 
-###### Topics
-
-- [Send logs to CloudWatch Logs from a Linux instance](#quickref-cloudwatchlogs-example1)
-
-- [Send logs to CloudWatch Logs from a Windows instance](#quickref-cloudwatchlogs-example2)
-
-- [See also](#w2aac11c41c35c11)
+**Topics**
++ [Send logs to CloudWatch Logs from a Linux instance](#quickref-cloudwatchlogs-example1)
++ [Send logs to CloudWatch Logs from a Windows instance](#quickref-cloudwatchlogs-example2)
++ [See also](#w2aac11c41c35c11)
 
 ## Send logs to CloudWatch Logs from a Linux instance
+<a name="quickref-cloudwatchlogs-example1"></a>
 
-The following template demonstrates how to set up a web server on Amazon Linux 2023 with
-CloudWatch Logs integration. The template performs the following tasks:
+The following template demonstrates how to set up a web server on Amazon Linux 2023 with CloudWatch Logs integration. The template performs the following tasks:
++ Installs Apache and PHP.
++ Configures the CloudWatch agent to forward Apache access logs to CloudWatch Logs.
++ Sets up an IAM role to allow the CloudWatch agent to send log data to CloudWatch Logs.
++ Creates custom alarms and notifications to monitor for 404 errors or high bandwidth usage.
 
-- Installs Apache and PHP.
-
-- Configures the CloudWatch agent to forward Apache access logs to CloudWatch Logs.
-
-- Sets up an IAM role to allow the CloudWatch agent to send log data to
-CloudWatch Logs.
-
-- Creates custom alarms and notifications to monitor for 404 errors or high
-bandwidth usage.
-
-Log events from the web server provide metric data for CloudWatch alarms. The two metric
-filters describe how the log information is transformed into CloudWatch metrics. The 404
-metric counts the number of 404 occurrences. The size metric tracks the size of a
-request. The two CloudWatch alarms will send notifications if there are more than two 404s
-within 2 minutes or if the average request size is over 3500 KB over 10 minutes.
+Log events from the web server provide metric data for CloudWatch alarms. The two metric filters describe how the log information is transformed into CloudWatch metrics. The 404 metric counts the number of 404 occurrences. The size metric tracks the size of a request. The two CloudWatch alarms will send notifications if there are more than two 404s within 2 minutes or if the average request size is over 3500 KB over 10 minutes.
 
 ### JSON
+<a name="quickref-cloudwatchlogs-example.json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Sample template that sets up and configures CloudWatch Logs on Amazon Linux 2023 instance.",
@@ -350,9 +336,9 @@ within 2 minutes or if the average request size is over 3500 KB over 10 minutes.
 ```
 
 ### YAML
+<a name="quickref-cloudwatchlogs-example.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: Sample template that sets up and configures CloudWatch Logs on Amazon Linux 2023 instance.
 Parameters:
@@ -576,28 +562,21 @@ Outputs:
   CloudWatchLogGroupName:
     Description: The name of the CloudWatch log group
     Value: !Ref WebServerLogGroup
-
 ```
 
 ## Send logs to CloudWatch Logs from a Windows instance
+<a name="quickref-cloudwatchlogs-example2"></a>
 
 The following template configures CloudWatch Logs for a Windows 2012R2 instance.
 
-The CloudWatch Logs agent on Windows (SSM agent on Windows 2012R2 and Windows 2016 AMIs) only
-sends logs after it's started, so any logs that are generated before startup aren't
-sent. To work around this, the template helps to ensure that the agent starts before any
-logs are written by:
-
-- Configuring the agent setup as the first `config` item in cfn-init
-`configSets`.
-
-- Using `waitAfterCompletion` to insert a pause after the command
-that starts the agent.
+The CloudWatch Logs agent on Windows (SSM agent on Windows 2012R2 and Windows 2016 AMIs) only sends logs after it's started, so any logs that are generated before startup aren't sent. To work around this, the template helps to ensure that the agent starts before any logs are written by:
++ Configuring the agent setup as the first `config` item in cfn-init `configSets`.
++ Using `waitAfterCompletion` to insert a pause after the command that starts the agent.
 
 ### JSON
+<a name="quickref-cloudwatchlogs-example2.json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Sample template that sets up and configures CloudWatch Logs on Windows 2012R2 instance.",
@@ -1015,9 +994,9 @@ that starts the agent.
 ```
 
 ### YAML
+<a name="quickref-cloudwatchlogs-example2.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Sample template that sets up and configures CloudWatch Logs on Windows 2012R2 instance.
@@ -1378,18 +1357,11 @@ Outputs:
   CloudWatchLogGroupName:
     Description: The name of the CloudWatch log group
     Value: !Ref LogGroup
-
 ```
 
 ## See also
+<a name="w2aac11c41c35c11"></a>
 
-For more information about CloudWatch Logs resources, see [AWS::Logs::LogGroup](../templatereference/aws-resource-logs-loggroup.md) or
-[AWS::Logs::MetricFilter](../templatereference/aws-resource-logs-metricfilter.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatch
-
-DynamoDB
+For more information about CloudWatch Logs resources, see [AWS::Logs::LogGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-logs-loggroup.html) or [AWS::Logs::MetricFilter](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-logs-metricfilter.html).
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,106 +2,74 @@
 title: "AWS::CustomerProfiles::EventTrigger ObjectAttribute"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::EventTrigger ObjectAttribute
+<a name="aws-properties-customerprofiles-eventtrigger-objectattribute"></a>
 
-The criteria that a specific object attribute must meet to trigger the
-destination.
+The criteria that a specific object attribute must meet to trigger the destination.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-eventtrigger-objectattribute-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-eventtrigger-objectattribute-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComparisonOperator" : String,
-  "FieldName" : String,
-  "Source" : String,
-  "Values" : [ String, ... ]
+  "[ComparisonOperator](#cfn-customerprofiles-eventtrigger-objectattribute-comparisonoperator)" : {{String}},
+  "[FieldName](#cfn-customerprofiles-eventtrigger-objectattribute-fieldname)" : {{String}},
+  "[Source](#cfn-customerprofiles-eventtrigger-objectattribute-source)" : {{String}},
+  "[Values](#cfn-customerprofiles-eventtrigger-objectattribute-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-eventtrigger-objectattribute-syntax.yaml"></a>
 
-```yaml
-
-  ComparisonOperator: String
-  FieldName: String
-  Source: String
-  Values:
-    - String
-
+```
+  [ComparisonOperator](#cfn-customerprofiles-eventtrigger-objectattribute-comparisonoperator): {{String}}
+  [FieldName](#cfn-customerprofiles-eventtrigger-objectattribute-fieldname): {{String}}
+  [Source](#cfn-customerprofiles-eventtrigger-objectattribute-source): {{String}}
+  [Values](#cfn-customerprofiles-eventtrigger-objectattribute-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-eventtrigger-objectattribute-properties"></a>
 
-`ComparisonOperator`
-
+`ComparisonOperator`  <a name="cfn-customerprofiles-eventtrigger-objectattribute-comparisonoperator"></a>
 The operator used to compare an attribute against a list of values.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL | BEFORE | AFTER | ON | BETWEEN | NOT_BETWEEN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL | BEFORE | AFTER | ON | BETWEEN | NOT_BETWEEN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldName`
-
+`FieldName`  <a name="cfn-customerprofiles-eventtrigger-objectattribute-fieldname"></a>
 A field defined within an object type.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-customerprofiles-eventtrigger-objectattribute-source"></a>
 An attribute contained within a source object.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-customerprofiles-eventtrigger-objectattribute-values"></a>
 The amount of time of the specified unit.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `255 | 10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EventTriggerLimits
-
-Period
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `255 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

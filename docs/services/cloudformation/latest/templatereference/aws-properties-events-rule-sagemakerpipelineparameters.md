@@ -2,59 +2,44 @@
 title: "AWS::Events::Rule SageMakerPipelineParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule SageMakerPipelineParameters
+<a name="aws-properties-events-rule-sagemakerpipelineparameters"></a>
 
-These are custom parameters to use when the target is a SageMaker AI Model Building
-Pipeline that starts based on EventBridge events.
+These are custom parameters to use when the target is a SageMaker AI Model Building Pipeline that starts based on EventBridge events.
 
 ## Syntax
+<a name="aws-properties-events-rule-sagemakerpipelineparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-rule-sagemakerpipelineparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "PipelineParameterList" : [ SageMakerPipelineParameter, ... ]
+  "[PipelineParameterList](#cfn-events-rule-sagemakerpipelineparameters-pipelineparameterlist)" : {{[ SageMakerPipelineParameter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-rule-sagemakerpipelineparameters-syntax.yaml"></a>
 
-```yaml
-
-  PipelineParameterList:
-    - SageMakerPipelineParameter
-
+```
+  [PipelineParameterList](#cfn-events-rule-sagemakerpipelineparameters-pipelineparameterlist): {{
+    - SageMakerPipelineParameter}}
 ```
 
 ## Properties
+<a name="aws-properties-events-rule-sagemakerpipelineparameters-properties"></a>
 
-`PipelineParameterList`
-
-List of Parameter names and values for SageMaker AI Model Building Pipeline
-execution.
-
-_Required_: No
-
-_Type_: Array of [SageMakerPipelineParameter](aws-properties-events-rule-sagemakerpipelineparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SageMakerPipelineParameter
-
-SqsParameters
+`PipelineParameterList`  <a name="cfn-events-rule-sagemakerpipelineparameters-pipelineparameterlist"></a>
+List of Parameter names and values for SageMaker AI Model Building Pipeline execution.
+*Required*: No
+*Type*: Array of [SageMakerPipelineParameter](aws-properties-events-rule-sagemakerpipelineparameter.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

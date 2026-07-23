@@ -2,161 +2,132 @@
 title: "AWS::CodeArtifact::Domain"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeArtifact::Domain
+<a name="aws-resource-codeartifact-domain"></a>
 
-The `AWS::CodeArtifact::Domain` resource creates an AWS CodeArtifact domain.
-CodeArtifact _domains_ make it easier to manage multiple repositories across an
-organization. You can use a domain to apply permissions across many repositories owned by different
-AWS accounts. For more information about domains, see the
-[Domain concepts information](../../../codeartifact/latest/ug/codeartifact-concepts.md#welcome-concepts-domain)
-in the _CodeArtifact User Guide_. For more information about the `CreateDomain` API, see
-[CreateDomain](../../../../reference/codeartifact/latest/apireference/api-createdomain.md)
-in the _CodeArtifact API Reference_.
+The `AWS::CodeArtifact::Domain` resource creates an AWS CodeArtifact domain. CodeArtifact*domains* make it easier to manage multiple repositories across an organization. You can use a domain to apply permissions across many repositories owned by different AWS accounts. For more information about domains, see the [Domain concepts information](https://docs.aws.amazon.com/codeartifact/latest/ug/codeartifact-concepts.html#welcome-concepts-domain) in the *CodeArtifact User Guide*. For more information about the `CreateDomain` API, see [CreateDomain](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_CreateDomain.html) in the *CodeArtifact API Reference*.
 
 ## Syntax
+<a name="aws-resource-codeartifact-domain-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codeartifact-domain-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeArtifact::Domain",
   "Properties" : {
-      "DomainName" : String,
-      "EncryptionKey" : String,
-      "PermissionsPolicyDocument" : Json,
-      "Tags" : [ Tag, ... ]
+      "[DomainName](#cfn-codeartifact-domain-domainname)" : {{String}},
+      "[EncryptionKey](#cfn-codeartifact-domain-encryptionkey)" : {{String}},
+      "[PermissionsPolicyDocument](#cfn-codeartifact-domain-permissionspolicydocument)" : {{Json}},
+      "[Tags](#cfn-codeartifact-domain-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codeartifact-domain-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeArtifact::Domain
 Properties:
-  DomainName: String
-  EncryptionKey: String
-  PermissionsPolicyDocument: Json
-  Tags:
-    - Tag
-
+  [DomainName](#cfn-codeartifact-domain-domainname): {{String}}
+  [EncryptionKey](#cfn-codeartifact-domain-encryptionkey): {{String}}
+  [PermissionsPolicyDocument](#cfn-codeartifact-domain-permissionspolicydocument): {{Json}}
+  [Tags](#cfn-codeartifact-domain-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-codeartifact-domain-properties"></a>
 
-`DomainName`
+`DomainName`  <a name="cfn-codeartifact-domain-domainname"></a>
+ A string that specifies the name of the requested domain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([a-z][a-z0-9\-]{0,48}[a-z0-9])$`
+*Minimum*: `2`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A string that specifies the name of the requested domain.
+`EncryptionKey`  <a name="cfn-codeartifact-domain-encryptionkey"></a>
+ The key used to encrypt the domain.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Minimum*: `1`
+*Maximum*: `1011`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([a-z][a-z0-9\-]{0,48}[a-z0-9])$`
-
-_Minimum_: `2`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EncryptionKey`
-
-The key used to encrypt the domain.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Minimum_: `1`
-
-_Maximum_: `1011`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PermissionsPolicyDocument`
-
+`PermissionsPolicyDocument`  <a name="cfn-codeartifact-domain-permissionspolicydocument"></a>
 The document that defines the resource policy that is set on a domain.
+*Required*: No
+*Type*: Json
+*Minimum*: `2`
+*Maximum*: `5120`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Minimum_: `2`
-
-_Maximum_: `5120`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-codeartifact-domain-tags"></a>
 A list of tags to be applied to the domain.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codeartifact-domain-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codeartifact-domain-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codeartifact-domain-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codeartifact-domain-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource arn.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-codeartifact-domain-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-codeartifact-domain-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the Amazon Resource Name (ARN) of the domain.
 
-`EncryptionKey`
-
+`EncryptionKey`  <a name="EncryptionKey-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the key used to encrypt the domain.
 
-`Name`
-
+`Name`  <a name="Name-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the name of the domain.
 
-`Owner`
-
+`Owner`  <a name="Owner-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the 12-digit account number of the AWS account that owns the domain.
 
 ## Examples
+<a name="aws-resource-codeartifact-domain--examples"></a>
 
 The following examples can help you create CodeArtifact domains using CloudFormation.
 
-- [Create a domain](#aws-resource-codeartifact-domain--examples--Create_a_domain)
-
-- [Create a domain with an AWS Key Management Service encryption key and IAM resource-based policy](#aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy)
-
-- [Create a domain with tags](#aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags)
+**Topics**
++ [Create a domain](#aws-resource-codeartifact-domain--examples--Create_a_domain)
++ [Create a domain with an AWS Key Management Service encryption key and IAM resource-based policy](#aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy)
++ [Create a domain with tags](#aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags)
 
 ### Create a domain
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain"></a>
 
-The following example creates a CodeArtifact domain named _my-domain_.
+The following example creates a CodeArtifact domain named *my-domain*.
 
 #### YAML
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -165,9 +136,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -181,14 +152,14 @@ Resources:
 ```
 
 ### Create a domain with an AWS Key Management Service encryption key and IAM resource-based policy
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy"></a>
 
-The following example creates a CodeArtifact domain named _my-domain_
-with an AWS Key Management Service encryption key and attaches an IAM resource-based policy.
+The following example creates a CodeArtifact domain named *my-domain* with an AWS Key Management Service encryption key and attaches an IAM resource-based policy.
 
 #### YAML
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -216,9 +187,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -227,7 +198,7 @@ Resources:
         "DomainName": "my-domain",
         "EncryptionKey": "arn:aws:kms:us-west-2:123456789012:key/12345678-9abc-def1-2345-6789abcdef12",
         "PermissionsPolicyDocument": {
-          "Version": "2012-10-17",
+          "Version": "2012-10-17"		 	 	 ,
           "Statement": [
             {
               "Action": [
@@ -257,15 +228,14 @@ Resources:
 ```
 
 ### Create a domain with tags
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags"></a>
 
-The following example creates a CodeArtifact domain named _my-domain_ with two tags.
-One tag consists of a key named `keyname1` and a value of `value1`. The other
-consists of a key named `keyname2` and a value of `value2`.
+The following example creates a CodeArtifact domain named *my-domain* with two tags. One tag consists of a key named `keyname1` and a value of `value1`. The other consists of a key named `keyname2` and a value of `value2`.
 
 #### YAML
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -279,9 +249,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -303,11 +273,5 @@ Resources:
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS CodeArtifact
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

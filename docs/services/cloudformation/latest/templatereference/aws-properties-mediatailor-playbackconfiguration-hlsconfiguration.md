@@ -2,52 +2,41 @@
 title: "AWS::MediaTailor::PlaybackConfiguration HlsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::PlaybackConfiguration HlsConfiguration
+<a name="aws-properties-mediatailor-playbackconfiguration-hlsconfiguration"></a>
 
 The configuration for HLS content.
 
 ## Syntax
+<a name="aws-properties-mediatailor-playbackconfiguration-hlsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-playbackconfiguration-hlsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ManifestEndpointPrefix" : String
+  "[ManifestEndpointPrefix](#cfn-mediatailor-playbackconfiguration-hlsconfiguration-manifestendpointprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-playbackconfiguration-hlsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ManifestEndpointPrefix: String
-
+```
+  [ManifestEndpointPrefix](#cfn-mediatailor-playbackconfiguration-hlsconfiguration-manifestendpointprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-playbackconfiguration-hlsconfiguration-properties"></a>
 
-`ManifestEndpointPrefix`
-
+`ManifestEndpointPrefix`  <a name="cfn-mediatailor-playbackconfiguration-hlsconfiguration-manifestendpointprefix"></a>
 The URL that is used to initiate a playback session for devices that support Apple HLS. The session uses server-side reporting.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashConfiguration
-
-HttpRequest
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

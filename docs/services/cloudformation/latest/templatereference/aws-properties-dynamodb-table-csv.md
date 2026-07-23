@@ -2,79 +2,55 @@
 title: "AWS::DynamoDB::Table Csv"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table Csv
+<a name="aws-properties-dynamodb-table-csv"></a>
 
-The options for imported source files in CSV format. The values are Delimiter and
-HeaderList.
+ The options for imported source files in CSV format. The values are Delimiter and HeaderList.
 
 ## Syntax
+<a name="aws-properties-dynamodb-table-csv-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-table-csv-syntax.json"></a>
 
-```json
-
+```
 {
-  "Delimiter" : String,
-  "HeaderList" : [ String, ... ]
+  "[Delimiter](#cfn-dynamodb-table-csv-delimiter)" : {{String}},
+  "[HeaderList](#cfn-dynamodb-table-csv-headerlist)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-table-csv-syntax.yaml"></a>
 
-```yaml
-
-  Delimiter: String
-  HeaderList:
-    - String
-
+```
+  [Delimiter](#cfn-dynamodb-table-csv-delimiter): {{String}}
+  [HeaderList](#cfn-dynamodb-table-csv-headerlist): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-table-csv-properties"></a>
 
-`Delimiter`
+`Delimiter`  <a name="cfn-dynamodb-table-csv-delimiter"></a>
+ The delimiter used for separating items in the CSV file being imported.
+*Required*: No
+*Type*: String
+*Pattern*: `[,;:|\t ]`
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The delimiter used for separating items in the CSV file being imported.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[,;:|\t ]`
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HeaderList`
-
-List of the headers used to specify a common header for all source CSV files being
-imported. If this field is specified then the first line of each CSV file is treated as
-data instead of the header. If this field is not specified the the first line of each
-CSV file is treated as the header.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContributorInsightsSpecification
-
-GlobalSecondaryIndex
+`HeaderList`  <a name="cfn-dynamodb-table-csv-headerlist"></a>
+ List of the headers used to specify a common header for all source CSV files being imported. If this field is specified then the first line of each CSV file is treated as data instead of the header. If this field is not specified the the first line of each CSV file is treated as the header.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

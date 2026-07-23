@@ -2,107 +2,73 @@
 title: "AWS::SageMaker::InferenceComponent InferenceComponentContainerSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent InferenceComponentContainerSpecification
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification"></a>
 
-Defines a container that provides the runtime environment for a model that you deploy
-with an inference component.
+Defines a container that provides the runtime environment for a model that you deploy with an inference component.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArtifactUrl" : String,
-  "DeployedImage" : DeployedImage,
-  "Environment" : {Key: Value, ...},
-  "Image" : String
+  "[ArtifactUrl](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-artifacturl)" : {{String}},
+  "[DeployedImage](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-deployedimage)" : {{DeployedImage}},
+  "[Environment](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-environment)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Image](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-image)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-syntax.yaml"></a>
 
-```yaml
-
-  ArtifactUrl: String
-  DeployedImage:
-    DeployedImage
-  Environment:
-    Key: Value
-  Image: String
-
+```
+  [ArtifactUrl](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-artifacturl): {{String}}
+  [DeployedImage](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-deployedimage): {{
+    DeployedImage}}
+  [Environment](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-environment): {{
+    {{Key}}: {{Value}}}}
+  [Image](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-image): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-properties"></a>
 
-`ArtifactUrl`
+`ArtifactUrl`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-artifacturl"></a>
+The Amazon S3 path where the model artifacts, which result from model training, are stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix).
+*Required*: No
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon S3 path where the model artifacts, which result from model training,
-are stored. This path must point to a single gzip compressed tar archive (.tar.gz
-suffix).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(https|s3)://([^/]+)/?(.*)$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeployedImage`
-
+`DeployedImage`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-deployedimage"></a>
 The deployed container image for the inference component.
+*Required*: No
+*Type*: [DeployedImage](aws-properties-sagemaker-inferencecomponent-deployedimage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Environment`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-environment"></a>
+The environment variables to set in the Docker container. Each key and value in the Environment string-to-string map can have length of up to 1024. We support up to 16 entries in the map.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z_][a-zA-Z0-9_]{1,1024}$`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DeployedImage](aws-properties-sagemaker-inferencecomponent-deployedimage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Environment`
-
-The environment variables to set in the Docker container. Each key and value in the
-Environment string-to-string map can have length of up to 1024. We support up to 16 entries
-in the map.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z_][a-zA-Z0-9_]{1,1024}$`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Image`
-
+`Image`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-image"></a>
 The Amazon Elastic Container Registry (Amazon ECR) path where the Docker image for the model is stored.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\S]+`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceComponentComputeResourceRequirements
-
-InferenceComponentDeploymentConfig
+*Required*: No
+*Type*: String
+*Pattern*: `[\S]+`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

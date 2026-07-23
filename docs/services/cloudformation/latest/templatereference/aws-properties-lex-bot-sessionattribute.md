@@ -2,73 +2,53 @@
 title: "AWS::Lex::Bot SessionAttribute"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SessionAttribute
+<a name="aws-properties-lex-bot-sessionattribute"></a>
 
-A key/value pair representing session-specific context information. It contains application information passed between
-Amazon Lex V2 and a client application.
+A key/value pair representing session-specific context information. It contains application information passed between Amazon Lex V2 and a client application.
 
 ## Syntax
+<a name="aws-properties-lex-bot-sessionattribute-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-sessionattribute-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-lex-bot-sessionattribute-key)" : {{String}},
+  "[Value](#cfn-lex-bot-sessionattribute-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-sessionattribute-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-lex-bot-sessionattribute-key): {{String}}
+  [Value](#cfn-lex-bot-sessionattribute-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-sessionattribute-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-lex-bot-sessionattribute-key"></a>
 The name of the session attribute.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-lex-bot-sessionattribute-value"></a>
 The session-specific context information for the session attribute.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SentimentAnalysisSettings
-
-Slot
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

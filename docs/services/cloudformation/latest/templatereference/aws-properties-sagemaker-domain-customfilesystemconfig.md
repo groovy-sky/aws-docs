@@ -2,80 +2,60 @@
 title: "AWS::SageMaker::Domain CustomFileSystemConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain CustomFileSystemConfig
+<a name="aws-properties-sagemaker-domain-customfilesystemconfig"></a>
 
-The settings for assigning a custom file system to a user profile or space for an Amazon SageMaker AI Domain. Permitted users can access this file system in Amazon SageMaker AI
-Studio.
+The settings for assigning a custom file system to a user profile or space for an Amazon SageMaker AI Domain. Permitted users can access this file system in Amazon SageMaker AI Studio.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-customfilesystemconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-customfilesystemconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "EFSFileSystemConfig" : EFSFileSystemConfig,
-  "FSxLustreFileSystemConfig" : FSxLustreFileSystemConfig,
-  "S3FileSystemConfig" : S3FileSystemConfig
+  "[EFSFileSystemConfig](#cfn-sagemaker-domain-customfilesystemconfig-efsfilesystemconfig)" : {{EFSFileSystemConfig}},
+  "[FSxLustreFileSystemConfig](#cfn-sagemaker-domain-customfilesystemconfig-fsxlustrefilesystemconfig)" : {{FSxLustreFileSystemConfig}},
+  "[S3FileSystemConfig](#cfn-sagemaker-domain-customfilesystemconfig-s3filesystemconfig)" : {{S3FileSystemConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-customfilesystemconfig-syntax.yaml"></a>
 
-```yaml
-
-  EFSFileSystemConfig:
-    EFSFileSystemConfig
-  FSxLustreFileSystemConfig:
-    FSxLustreFileSystemConfig
-  S3FileSystemConfig:
-    S3FileSystemConfig
-
+```
+  [EFSFileSystemConfig](#cfn-sagemaker-domain-customfilesystemconfig-efsfilesystemconfig): {{
+    EFSFileSystemConfig}}
+  [FSxLustreFileSystemConfig](#cfn-sagemaker-domain-customfilesystemconfig-fsxlustrefilesystemconfig): {{
+    FSxLustreFileSystemConfig}}
+  [S3FileSystemConfig](#cfn-sagemaker-domain-customfilesystemconfig-s3filesystemconfig): {{
+    S3FileSystemConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-customfilesystemconfig-properties"></a>
 
-`EFSFileSystemConfig`
-
+`EFSFileSystemConfig`  <a name="cfn-sagemaker-domain-customfilesystemconfig-efsfilesystemconfig"></a>
 The settings for a custom Amazon EFS file system.
+*Required*: No
+*Type*: [EFSFileSystemConfig](aws-properties-sagemaker-domain-efsfilesystemconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EFSFileSystemConfig](aws-properties-sagemaker-domain-efsfilesystemconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FSxLustreFileSystemConfig`
-
+`FSxLustreFileSystemConfig`  <a name="cfn-sagemaker-domain-customfilesystemconfig-fsxlustrefilesystemconfig"></a>
 The settings for a custom Amazon FSx for Lustre file system.
+*Required*: No
+*Type*: [FSxLustreFileSystemConfig](aws-properties-sagemaker-domain-fsxlustrefilesystemconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FSxLustreFileSystemConfig](aws-properties-sagemaker-domain-fsxlustrefilesystemconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3FileSystemConfig`
-
+`S3FileSystemConfig`  <a name="cfn-sagemaker-domain-customfilesystemconfig-s3filesystemconfig"></a>
 Configuration settings for a custom Amazon S3 file system.
-
-_Required_: No
-
-_Type_: [S3FileSystemConfig](aws-properties-sagemaker-domain-s3filesystemconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CodeRepository
-
-CustomImage
+*Required*: No
+*Type*: [S3FileSystemConfig](aws-properties-sagemaker-domain-s3filesystemconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

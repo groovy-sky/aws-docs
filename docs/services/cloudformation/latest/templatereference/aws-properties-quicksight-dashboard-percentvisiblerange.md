@@ -2,72 +2,53 @@
 title: "AWS::QuickSight::Dashboard PercentVisibleRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard PercentVisibleRange
+<a name="aws-properties-quicksight-dashboard-percentvisiblerange"></a>
 
 The percent range in the visible range.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-percentvisiblerange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-percentvisiblerange-syntax.json"></a>
 
-```json
-
+```
 {
-  "From" : Number,
-  "To" : Number
+  "[From](#cfn-quicksight-dashboard-percentvisiblerange-from)" : {{Number}},
+  "[To](#cfn-quicksight-dashboard-percentvisiblerange-to)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-percentvisiblerange-syntax.yaml"></a>
 
-```yaml
-
-  From: Number
-  To: Number
-
+```
+  [From](#cfn-quicksight-dashboard-percentvisiblerange-from): {{Number}}
+  [To](#cfn-quicksight-dashboard-percentvisiblerange-to): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-percentvisiblerange-properties"></a>
 
-`From`
-
+`From`  <a name="cfn-quicksight-dashboard-percentvisiblerange-from"></a>
 The lower bound of the range.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`To`
-
+`To`  <a name="cfn-quicksight-dashboard-percentvisiblerange-to"></a>
 The top bound of the range.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PercentileAggregation
-
-PeriodOverPeriodComputation
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,111 +2,80 @@
 title: "AWS::ImageBuilder::LifecyclePolicy AmiExclusionRules"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::LifecyclePolicy AmiExclusionRules
+<a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules"></a>
 
 Defines criteria for AMIs that are excluded from lifecycle actions.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsPublic" : Boolean,
-  "LastLaunched" : LastLaunched,
-  "Regions" : [ String, ... ],
-  "SharedAccounts" : [ String, ... ],
-  "TagMap" : {Key: Value, ...}
+  "[IsPublic](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-ispublic)" : {{Boolean}},
+  "[LastLaunched](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-lastlaunched)" : {{LastLaunched}},
+  "[Regions](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-regions)" : {{[ String, ... ]}},
+  "[SharedAccounts](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-sharedaccounts)" : {{[ String, ... ]}},
+  "[TagMap](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-tagmap)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules-syntax.yaml"></a>
 
-```yaml
-
-  IsPublic: Boolean
-  LastLaunched:
-    LastLaunched
-  Regions:
-    - String
-  SharedAccounts:
-    - String
-  TagMap:
-    Key: Value
-
+```
+  [IsPublic](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-ispublic): {{Boolean}}
+  [LastLaunched](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-lastlaunched): {{
+    LastLaunched}}
+  [Regions](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-regions): {{
+    - String}}
+  [SharedAccounts](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-sharedaccounts): {{
+    - String}}
+  [TagMap](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-tagmap): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules-properties"></a>
 
-`IsPublic`
-
+`IsPublic`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-ispublic"></a>
 Configures whether public AMIs are excluded from the lifecycle action.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LastLaunched`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-lastlaunched"></a>
+Specifies configuration details for Image Builder to exclude the most recent resources from lifecycle actions.
+*Required*: No
+*Type*: [LastLaunched](aws-properties-imagebuilder-lifecyclepolicy-lastlaunched.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LastLaunched`
-
-Specifies configuration details for Image Builder to exclude the most recent resources
-from lifecycle actions.
-
-_Required_: No
-
-_Type_: [LastLaunched](aws-properties-imagebuilder-lifecyclepolicy-lastlaunched.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Regions`
-
+`Regions`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-regions"></a>
 Configures AWS Regions that are excluded from the lifecycle action.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SharedAccounts`
-
+`SharedAccounts`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-sharedaccounts"></a>
 Specifies AWS accounts whose resources are excluded from the lifecycle action.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1536`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1536`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TagMap`
-
+`TagMap`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-tagmap"></a>
 Lists tags that should be excluded from lifecycle actions for the AMIs that have them.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Action
-
-ExclusionRules
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

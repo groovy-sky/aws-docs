@@ -2,72 +2,53 @@
 title: "AWS::FIS::ExperimentTemplate ExperimentReportS3Configuration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FIS::ExperimentTemplate ExperimentReportS3Configuration
+<a name="aws-properties-fis-experimenttemplate-experimentreports3configuration"></a>
 
 The S3 destination for the experiment report.
 
 ## Syntax
+<a name="aws-properties-fis-experimenttemplate-experimentreports3configuration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fis-experimenttemplate-experimentreports3configuration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "Prefix" : String
+  "[BucketName](#cfn-fis-experimenttemplate-experimentreports3configuration-bucketname)" : {{String}},
+  "[Prefix](#cfn-fis-experimenttemplate-experimentreports3configuration-prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fis-experimenttemplate-experimentreports3configuration-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  Prefix: String
-
+```
+  [BucketName](#cfn-fis-experimenttemplate-experimentreports3configuration-bucketname): {{String}}
+  [Prefix](#cfn-fis-experimenttemplate-experimentreports3configuration-prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fis-experimenttemplate-experimentreports3configuration-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-fis-experimenttemplate-experimentreports3configuration-bucketname"></a>
 The name of the S3 bucket where the experiment report will be stored.
+*Required*: Yes
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-fis-experimenttemplate-experimentreports3configuration-prefix"></a>
 The prefix of the S3 bucket where the experiment report will be stored.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSources
-
-ExperimentTemplateAction
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,123 +2,77 @@
 title: "AWS::AutoScaling::LaunchConfiguration BlockDeviceMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::LaunchConfiguration BlockDeviceMapping
+<a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping"></a>
 
-`BlockDeviceMapping` specifies a block device mapping for the
-`BlockDeviceMappings` property of the [AWS::AutoScaling::LaunchConfiguration](../userguide/aws-resource-autoscaling-launchconfiguration.md) resource.
+`BlockDeviceMapping` specifies a block device mapping for the `BlockDeviceMappings` property of the [AWS::AutoScaling::LaunchConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-launchconfiguration.html) resource.
 
-Each instance that is launched has an associated root device volume, either an Amazon EBS
-volume or an instance store volume. You can use block device mappings to specify additional
-EBS volumes or instance store volumes to attach to an instance when it is launched.
+Each instance that is launched has an associated root device volume, either an Amazon EBS volume or an instance store volume. You can use block device mappings to specify additional EBS volumes or instance store volumes to attach to an instance when it is launched.
 
-For more information, see [Example block device mapping](../../../ec2/latest/userguide/block-device-mapping-concepts.md#block-device-mapping-ex) in the _Amazon EC2 User Guide for Linux_
-_Instances_.
+For more information, see [Example block device mapping](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html#block-device-mapping-ex) in the *Amazon EC2 User Guide for Linux Instances*.
 
 ## Syntax
+<a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeviceName" : String,
-  "Ebs" : BlockDevice,
-  "NoDevice" : Boolean,
-  "VirtualName" : String
+  "[DeviceName](#cfn-autoscaling-launchconfiguration-blockdevicemapping-devicename)" : {{String}},
+  "[Ebs](#cfn-autoscaling-launchconfiguration-blockdevicemapping-ebs)" : {{BlockDevice}},
+  "[NoDevice](#cfn-autoscaling-launchconfiguration-blockdevicemapping-nodevice)" : {{Boolean}},
+  "[VirtualName](#cfn-autoscaling-launchconfiguration-blockdevicemapping-virtualname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping-syntax.yaml"></a>
 
-```yaml
-
-  DeviceName: String
-  Ebs:
-    BlockDevice
-  NoDevice: Boolean
-  VirtualName: String
-
+```
+  [DeviceName](#cfn-autoscaling-launchconfiguration-blockdevicemapping-devicename): {{String}}
+  [Ebs](#cfn-autoscaling-launchconfiguration-blockdevicemapping-ebs): {{
+    BlockDevice}}
+  [NoDevice](#cfn-autoscaling-launchconfiguration-blockdevicemapping-nodevice): {{Boolean}}
+  [VirtualName](#cfn-autoscaling-launchconfiguration-blockdevicemapping-virtualname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping-properties"></a>
 
-`DeviceName`
+`DeviceName`  <a name="cfn-autoscaling-launchconfiguration-blockdevicemapping-devicename"></a>
+The device name assigned to the volume (for example, `/dev/sdh` or `xvdh`). For more information, see [Device naming on Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/device_naming.html) in the *Amazon EC2 User Guide*.
+To define a block device mapping, set the device name and exactly one of the following properties: `Ebs`, `NoDevice`, or `VirtualName`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The device name assigned to the volume (for example, `/dev/sdh` or
-`xvdh`). For more information, see [Device naming on Linux\
-instances](../../../ec2/latest/userguide/device-naming.md) in the _Amazon EC2 User Guide_.
-
-###### Note
-
-To define a block device mapping, set the device name and exactly one of the
-following properties: `Ebs`, `NoDevice`, or
-`VirtualName`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ebs`
-
+`Ebs`  <a name="cfn-autoscaling-launchconfiguration-blockdevicemapping-ebs"></a>
 Information to attach an EBS volume to an instance at launch.
+*Required*: No
+*Type*: [BlockDevice](aws-properties-autoscaling-launchconfiguration-blockdevice.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`NoDevice`  <a name="cfn-autoscaling-launchconfiguration-blockdevicemapping-nodevice"></a>
+Setting this value to `true` prevents a volume that is included in the block device mapping of the AMI from being mapped to the specified device name at launch.
+If `NoDevice` is `true` for the root device, instances might fail the EC2 health check. In that case, Amazon EC2 Auto Scaling launches replacement instances.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [BlockDevice](aws-properties-autoscaling-launchconfiguration-blockdevice.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NoDevice`
-
-Setting this value to `true` prevents a volume that is included in the
-block device mapping of the AMI from being mapped to the specified device name at
-launch.
-
-If `NoDevice` is `true` for the root device, instances might
-fail the EC2 health check. In that case, Amazon EC2 Auto Scaling launches replacement instances.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VirtualName`
-
-The name of the instance store volume (virtual device) to attach to an instance at
-launch. The name must be in the form ephemeral _X_ where
-_X_ is a number starting from zero (0), for example,
-`ephemeral0`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`VirtualName`  <a name="cfn-autoscaling-launchconfiguration-blockdevicemapping-virtualname"></a>
+The name of the instance store volume (virtual device) to attach to an instance at launch. The name must be in the form ephemeral*X* where *X* is a number starting from zero (0), for example, `ephemeral0`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also
-
-- [Amazon\
-EC2 instance store](../../../ec2/latest/userguide/instancestorage.md) in the _Amazon EC2 User Guide for Linux_
-_Instances_
-
-- [Amazon Elastic\
-Block Store (Amazon EBS)](../../../ec2/latest/userguide/amazonebs.md) in the _Amazon EC2 User Guide for Linux_
-_Instances_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BlockDevice
-
-MetadataOptions
+<a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping--seealso"></a>
++ [Amazon EC2 instance store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) in the *Amazon EC2 User Guide for Linux Instances*
++ [Amazon Elastic Block Store (Amazon EBS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html) in the *Amazon EC2 User Guide for Linux Instances*
 
 All content copied from https://docs.aws.amazon.com/.

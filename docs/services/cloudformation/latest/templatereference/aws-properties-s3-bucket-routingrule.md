@@ -2,88 +2,67 @@
 title: "AWS::S3::Bucket RoutingRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket RoutingRule
+<a name="aws-properties-s3-bucket-routingrule"></a>
 
-Specifies the redirect behavior and when a redirect is applied. For more information about routing
-rules, see [Configuring\
-advanced conditional redirects](../../../s3/latest/dev/how-to-page-redirect.md#advanced-conditional-redirects) in the _Amazon S3 User Guide_.
+Specifies the redirect behavior and when a redirect is applied. For more information about routing rules, see [Configuring advanced conditional redirects](https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html#advanced-conditional-redirects) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-routingrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-routingrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "RedirectRule" : RedirectRule,
-  "RoutingRuleCondition" : RoutingRuleCondition
+  "[RedirectRule](#cfn-s3-bucket-routingrule-redirectrule)" : {{RedirectRule}},
+  "[RoutingRuleCondition](#cfn-s3-bucket-routingrule-routingrulecondition)" : {{RoutingRuleCondition}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-routingrule-syntax.yaml"></a>
 
-```yaml
-
-  RedirectRule:
-    RedirectRule
-  RoutingRuleCondition:
-    RoutingRuleCondition
-
+```
+  [RedirectRule](#cfn-s3-bucket-routingrule-redirectrule): {{
+    RedirectRule}}
+  [RoutingRuleCondition](#cfn-s3-bucket-routingrule-routingrulecondition): {{
+    RoutingRuleCondition}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-routingrule-properties"></a>
 
-`RedirectRule`
+`RedirectRule`  <a name="cfn-s3-bucket-routingrule-redirectrule"></a>
+Container for redirect information. You can redirect requests to another host, to another page, or with another protocol. In the event of an error, you can specify a different error code to return.
+*Required*: Yes
+*Type*: [RedirectRule](aws-properties-s3-bucket-redirectrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Container for redirect information. You can redirect requests to another host, to another page, or
-with another protocol. In the event of an error, you can specify a different error code to
-return.
-
-_Required_: Yes
-
-_Type_: [RedirectRule](aws-properties-s3-bucket-redirectrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoutingRuleCondition`
-
-A container for describing a condition that must be met for the specified redirect to apply. For
-example, 1. If request is for pages in the `/docs` folder, redirect to the
-`/documents` folder. 2. If request results in HTTP error 4xx, redirect request to another
-host where you might process the error.
-
-_Required_: No
-
-_Type_: [RoutingRuleCondition](aws-properties-s3-bucket-routingrulecondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RoutingRuleCondition`  <a name="cfn-s3-bucket-routingrule-routingrulecondition"></a>
+A container for describing a condition that must be met for the specified redirect to apply. For example, 1. If request is for pages in the `/docs` folder, redirect to the `/documents` folder. 2. If request results in HTTP error 4xx, redirect request to another host where you might process the error.
+*Required*: No
+*Type*: [RoutingRuleCondition](aws-properties-s3-bucket-routingrulecondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-routingrule--examples"></a>
 
 ### Configure a static website with a routing rule
+<a name="aws-properties-s3-bucket-routingrule--examples--Configure_a_static_website_with_a_routing_rule"></a>
 
-In this example, `AWS::S3::Bucket's Fn::GetAtt` values are used to provide
-outputs. If an HTTP 404 error occurs, the routing rule redirects requests to an EC2
-instance and inserts the object key prefix `report-404/` in the redirect. For
-example, if you request a page called `out1/ExamplePage.html` and it results in an
-HTTP 404 error, the request is routed to a page called
-`report-404/ExamplePage.html` on the specified instance. For all other HTTP
-error codes, `error.html` is returned.
+In this example, `AWS::S3::Bucket's Fn::GetAtt` values are used to provide outputs. If an HTTP 404 error occurs, the routing rule redirects requests to an EC2 instance and inserts the object key prefix `report-404/` in the redirect. For example, if you request a page called `out1/ExamplePage.html` and it results in an HTTP 404 error, the request is routed to a page called `report-404/ExamplePage.html` on the specified instance. For all other HTTP error codes, `error.html` is returned.
 
-This example also specifies a metrics configuration called `EntireBucket`
-that enables CloudWatch request metrics at the bucket level.
+This example also specifies a metrics configuration called `EntireBucket` that enables CloudWatch request metrics at the bucket level.
 
 #### JSON
+<a name="aws-properties-s3-bucket-routingrule--examples--Configure_a_static_website_with_a_routing_rule--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "S3Bucket": {
@@ -148,9 +127,9 @@ that enables CloudWatch request metrics at the bucket level.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-routingrule--examples--Configure_a_static_website_with_a_routing_rule--yaml"></a>
 
-```yaml
-
+```
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
@@ -185,11 +164,5 @@ Outputs:
           - DomainName
     Description: Name of S3 bucket to hold website content
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationTimeValue
-
-RoutingRuleCondition
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,234 +2,179 @@
 title: "AWS::ApiGateway::Method"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::Method
+<a name="aws-resource-apigateway-method"></a>
 
 The `AWS::ApiGateway::Method` resource creates API Gateway methods that define the parameters and body that clients must send in their requests.
 
 ## Syntax
+<a name="aws-resource-apigateway-method-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-method-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::Method",
   "Properties" : {
-      "ApiKeyRequired" : Boolean,
-      "AuthorizationScopes" : [ String, ... ],
-      "AuthorizationType" : String,
-      "AuthorizerId" : String,
-      "HttpMethod" : String,
-      "Integration" : Integration,
-      "MethodResponses" : [ MethodResponse, ... ],
-      "OperationName" : String,
-      "RequestModels" : {Key: Value, ...},
-      "RequestParameters" : {Key: Value, ...},
-      "RequestValidatorId" : String,
-      "ResourceId" : String,
-      "RestApiId" : String
+      "[ApiKeyRequired](#cfn-apigateway-method-apikeyrequired)" : {{Boolean}},
+      "[AuthorizationScopes](#cfn-apigateway-method-authorizationscopes)" : {{[ String, ... ]}},
+      "[AuthorizationType](#cfn-apigateway-method-authorizationtype)" : {{String}},
+      "[AuthorizerId](#cfn-apigateway-method-authorizerid)" : {{String}},
+      "[HttpMethod](#cfn-apigateway-method-httpmethod)" : {{String}},
+      "[Integration](#cfn-apigateway-method-integration)" : {{Integration}},
+      "[MethodResponses](#cfn-apigateway-method-methodresponses)" : {{[ MethodResponse, ... ]}},
+      "[OperationName](#cfn-apigateway-method-operationname)" : {{String}},
+      "[RequestModels](#cfn-apigateway-method-requestmodels)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[RequestParameters](#cfn-apigateway-method-requestparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[RequestValidatorId](#cfn-apigateway-method-requestvalidatorid)" : {{String}},
+      "[ResourceId](#cfn-apigateway-method-resourceid)" : {{String}},
+      "[RestApiId](#cfn-apigateway-method-restapiid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-method-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::Method
 Properties:
-  ApiKeyRequired: Boolean
-  AuthorizationScopes:
-    - String
-  AuthorizationType: String
-  AuthorizerId: String
-  HttpMethod: String
-  Integration:
-    Integration
-  MethodResponses:
-    - MethodResponse
-  OperationName: String
-  RequestModels:
-    Key: Value
-  RequestParameters:
-    Key: Value
-  RequestValidatorId: String
-  ResourceId: String
-  RestApiId: String
-
+  [ApiKeyRequired](#cfn-apigateway-method-apikeyrequired): {{Boolean}}
+  [AuthorizationScopes](#cfn-apigateway-method-authorizationscopes): {{
+    - String}}
+  [AuthorizationType](#cfn-apigateway-method-authorizationtype): {{String}}
+  [AuthorizerId](#cfn-apigateway-method-authorizerid): {{String}}
+  [HttpMethod](#cfn-apigateway-method-httpmethod): {{String}}
+  [Integration](#cfn-apigateway-method-integration): {{
+    Integration}}
+  [MethodResponses](#cfn-apigateway-method-methodresponses): {{
+    - MethodResponse}}
+  [OperationName](#cfn-apigateway-method-operationname): {{String}}
+  [RequestModels](#cfn-apigateway-method-requestmodels): {{
+    {{Key}}: {{Value}}}}
+  [RequestParameters](#cfn-apigateway-method-requestparameters): {{
+    {{Key}}: {{Value}}}}
+  [RequestValidatorId](#cfn-apigateway-method-requestvalidatorid): {{String}}
+  [ResourceId](#cfn-apigateway-method-resourceid): {{String}}
+  [RestApiId](#cfn-apigateway-method-restapiid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-method-properties"></a>
 
-`ApiKeyRequired`
-
+`ApiKeyRequired`  <a name="cfn-apigateway-method-apikeyrequired"></a>
 A boolean flag specifying whether a valid ApiKey is required to invoke this method.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizationScopes`
-
+`AuthorizationScopes`  <a name="cfn-apigateway-method-authorizationscopes"></a>
 A list of authorization scopes configured on the method. The scopes are used with a `COGNITO_USER_POOLS` authorizer to authorize the method invocation. The authorization works by matching the method scopes against the scopes parsed from the access token in the incoming request. The method invocation is authorized if any method scopes matches a claimed scope in the access token. Otherwise, the invocation is not authorized. When the method scope is configured, the client must provide an access token instead of an identity token for authorization purposes.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizationType`
-
-The method's authorization type. This parameter is required. For valid values, see [Method](../../../apigateway/latest/api/api-method.md) in the _API Gateway API Reference_.
-
-###### Note
-
+`AuthorizationType`  <a name="cfn-apigateway-method-authorizationtype"></a>
+The method's authorization type. This parameter is required. For valid values, see [Method](https://docs.aws.amazon.com/apigateway/latest/api/API_Method.html) in the *API Gateway API Reference*.
 If you specify the `AuthorizerId` property, specify `CUSTOM` or `COGNITO_USER_POOLS` for this property.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizerId`
-
+`AuthorizerId`  <a name="cfn-apigateway-method-authorizerid"></a>
 The identifier of an authorizer to use on this method. The method's authorization type must be `CUSTOM` or `COGNITO_USER_POOLS`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpMethod`
-
+`HttpMethod`  <a name="cfn-apigateway-method-httpmethod"></a>
 The method's HTTP verb.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Integration`
-
+`Integration`  <a name="cfn-apigateway-method-integration"></a>
 Represents an `HTTP`, `HTTP_PROXY`, `AWS`, `AWS_PROXY`, or Mock integration.
+*Required*: No
+*Type*: [Integration](aws-properties-apigateway-method-integration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Integration](aws-properties-apigateway-method-integration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MethodResponses`
-
+`MethodResponses`  <a name="cfn-apigateway-method-methodresponses"></a>
 Gets a method response associated with a given HTTP status code.
+*Required*: No
+*Type*: Array of [MethodResponse](aws-properties-apigateway-method-methodresponse.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MethodResponse](aws-properties-apigateway-method-methodresponse.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperationName`
-
+`OperationName`  <a name="cfn-apigateway-method-operationname"></a>
 A human-friendly operation identifier for the method. For example, you can assign the `operationName` of `ListPets` for the `GET /pets` method in the `PetStore` example.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestModels`
-
+`RequestModels`  <a name="cfn-apigateway-method-requestmodels"></a>
 A key-value map specifying data schemas, represented by Model resources, (as the mapped value) of the request payloads of given content types (as the mapping key).
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RequestParameters`  <a name="cfn-apigateway-method-requestparameters"></a>
+A key-value map defining required or optional method request parameters that can be accepted by API Gateway. A key is a method request parameter name matching the pattern of `method.request.{location}.{name}`, where `location` is `querystring`, `path`, or `header` and `name` is a valid and unique parameter name. The value associated with the key is a Boolean flag indicating whether the parameter is required (`true`) or optional (`false`). The method request parameter names defined here are available in Integration to be mapped to integration request parameters or templates.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestParameters`
-
-A key-value map defining required or optional method request parameters that can be accepted by API Gateway. A key is a method request parameter name matching the pattern of `method.request.{location}.{name}`, where `location` is `querystring`, `path`, or `header` and `name` is a valid and unique parameter name. The value associated with the key is a Boolean flag indicating whether the parameter is required ( `true`) or optional ( `false`). The method request parameter names defined here are available in Integration to be mapped to integration request parameters or templates.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestValidatorId`
-
+`RequestValidatorId`  <a name="cfn-apigateway-method-requestvalidatorid"></a>
 The identifier of a RequestValidator for request validation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceId`
-
+`ResourceId`  <a name="cfn-apigateway-method-resourceid"></a>
 The Resource identifier for the MethodResponse resource.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-apigateway-method-restapiid"></a>
 The string identifier of the associated RestApi.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-apigateway-method-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigateway-method-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the method ID, such as `mysta-metho-01234b567890example`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-apigateway-method--examples"></a>
 
-- [Mock Method](#aws-resource-apigateway-method--examples--Mock_Method)
-
-- [Lambda Proxy](#aws-resource-apigateway-method--examples--Lambda_Proxy)
-
-- [Associated Request Validator](#aws-resource-apigateway-method--examples--Associated_Request_Validator)
+**Topics**
++ [Mock Method](#aws-resource-apigateway-method--examples--Mock_Method)
++ [Lambda Proxy](#aws-resource-apigateway-method--examples--Lambda_Proxy)
++ [Associated Request Validator](#aws-resource-apigateway-method--examples--Associated_Request_Validator)
 
 ### Mock Method
+<a name="aws-resource-apigateway-method--examples--Mock_Method"></a>
 
 The following example creates a mock GET method for the `MyApi` API.
 
 #### JSON
+<a name="aws-resource-apigateway-method--examples--Mock_Method--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -290,9 +235,9 @@ The following example creates a mock GET method for the `MyApi` API.
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-method--examples--Mock_Method--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   Api:
@@ -327,17 +272,17 @@ Resources:
 ```
 
 ### Lambda Proxy
+<a name="aws-resource-apigateway-method--examples--Lambda_Proxy"></a>
 
-The following example creates a proxy resource to enable clients to call a Lambda function with a single integration setup on a catch-all ANY method. The `Uri` property specifies the Lambda function. For more information about Lambda proxy integration and a sample Lambda function, see [Create an API with Lambda Proxy Integration through a Proxy Resource](../../../apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.md) in the _API Gateway Developer Guide_.
+The following example creates a proxy resource to enable clients to call a Lambda function with a single integration setup on a catch-all ANY method. The `Uri` property specifies the Lambda function. For more information about Lambda proxy integration and a sample Lambda function, see [Create an API with Lambda Proxy Integration through a Proxy Resource](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html) in the *API Gateway Developer Guide*.
 
-###### Note
-
-Use the [AWS::Lambda::Permission](../userguide/aws-resource-lambda-permission.md) resource to grant API Gateway permission to invoke your Lambda function.
+**Note**
+Use the [AWS::Lambda::Permission](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html) resource to grant API Gateway permission to invoke your Lambda function.
 
 #### JSON
+<a name="aws-resource-apigateway-method--examples--Lambda_Proxy--json"></a>
 
-```json
-
+```
 {
     "ProxyResource": {
         "Type": "AWS::ApiGateway::Resource",
@@ -378,9 +323,9 @@ Use the [AWS::Lambda::Permission](../userguide/aws-resource-lambda-permission.md
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-method--examples--Lambda_Proxy--yaml"></a>
 
-```yaml
-
+```
 ProxyResource:
   Type: 'AWS::ApiGateway::Resource'
   Properties:
@@ -401,17 +346,17 @@ ProxyResourceANY:
       IntegrationHttpMethod: POST
       Uri: !Sub >-
         arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaForSimpleProxy.Arn}/invocations
-
 ```
 
 ### Associated Request Validator
+<a name="aws-resource-apigateway-method--examples--Associated_Request_Validator"></a>
 
 The following example creates a REST API, method, and request validator, and associates the request validator with the method. It also lets you specify how to convert the request payload.
 
 #### JSON
+<a name="aws-resource-apigateway-method--examples--Associated_Request_Validator--json"></a>
 
-```json
-
+```
 {
   "Parameters": {
     "contentHandling": {
@@ -515,9 +460,9 @@ The following example creates a REST API, method, and request validator, and ass
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-method--examples--Associated_Request_Validator--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   contentHandling:
     Type: String
@@ -569,13 +514,7 @@ Outputs:
 ```
 
 ## See also
-
-- [method:put](../../../apigateway/latest/api/api-putmethod.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGateway::GatewayResponse
-
-Integration
+<a name="aws-resource-apigateway-method--seealso"></a>
++ [method:put](https://docs.aws.amazon.com/apigateway/latest/api/API_PutMethod.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

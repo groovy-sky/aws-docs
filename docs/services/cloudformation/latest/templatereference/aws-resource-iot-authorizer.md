@@ -2,201 +2,144 @@
 title: "AWS::IoT::Authorizer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Authorizer
+<a name="aws-resource-iot-authorizer"></a>
 
 Specifies an authorizer.
 
 ## Syntax
+<a name="aws-resource-iot-authorizer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iot-authorizer-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoT::Authorizer",
   "Properties" : {
-      "AuthorizerFunctionArn" : String,
-      "AuthorizerName" : String,
-      "EnableCachingForHttp" : Boolean,
-      "SigningDisabled" : Boolean,
-      "Status" : String,
-      "Tags" : [ Tag, ... ],
-      "TokenKeyName" : String,
-      "TokenSigningPublicKeys" : {Key: Value, ...}
+      "[AuthorizerFunctionArn](#cfn-iot-authorizer-authorizerfunctionarn)" : {{String}},
+      "[AuthorizerName](#cfn-iot-authorizer-authorizername)" : {{String}},
+      "[EnableCachingForHttp](#cfn-iot-authorizer-enablecachingforhttp)" : {{Boolean}},
+      "[SigningDisabled](#cfn-iot-authorizer-signingdisabled)" : {{Boolean}},
+      "[Status](#cfn-iot-authorizer-status)" : {{String}},
+      "[Tags](#cfn-iot-authorizer-tags)" : {{[ Tag, ... ]}},
+      "[TokenKeyName](#cfn-iot-authorizer-tokenkeyname)" : {{String}},
+      "[TokenSigningPublicKeys](#cfn-iot-authorizer-tokensigningpublickeys)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iot-authorizer-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoT::Authorizer
 Properties:
-  AuthorizerFunctionArn: String
-  AuthorizerName: String
-  EnableCachingForHttp: Boolean
-  SigningDisabled: Boolean
-  Status: String
-  Tags:
-    - Tag
-  TokenKeyName: String
-  TokenSigningPublicKeys:
-    Key: Value
-
+  [AuthorizerFunctionArn](#cfn-iot-authorizer-authorizerfunctionarn): {{String}}
+  [AuthorizerName](#cfn-iot-authorizer-authorizername): {{String}}
+  [EnableCachingForHttp](#cfn-iot-authorizer-enablecachingforhttp): {{Boolean}}
+  [SigningDisabled](#cfn-iot-authorizer-signingdisabled): {{Boolean}}
+  [Status](#cfn-iot-authorizer-status): {{String}}
+  [Tags](#cfn-iot-authorizer-tags): {{
+    - Tag}}
+  [TokenKeyName](#cfn-iot-authorizer-tokenkeyname): {{String}}
+  [TokenSigningPublicKeys](#cfn-iot-authorizer-tokensigningpublickeys): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-iot-authorizer-properties"></a>
 
-`AuthorizerFunctionArn`
-
+`AuthorizerFunctionArn`  <a name="cfn-iot-authorizer-authorizerfunctionarn"></a>
 The authorizer's Lambda function ARN.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizerName`
-
+`AuthorizerName`  <a name="cfn-iot-authorizer-authorizername"></a>
 The authorizer name.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w=,@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`EnableCachingForHttp`  <a name="cfn-iot-authorizer-enablecachingforhttp"></a>
+When `true`, the result from the authorizer's Lambda function is cached for clients that use persistent HTTP connections. The results are cached for the time specified by the Lambda function in `refreshAfterInSeconds`. This value doesn't affect authorization of clients that use MQTT connections.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[\w=,@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnableCachingForHttp`
-
-When `true`, the result from the authorizer's Lambda function is cached for
-clients that use persistent HTTP connections. The results are cached for the time specified
-by the Lambda function in `refreshAfterInSeconds`. This value doesn't affect
-authorization of clients that use MQTT connections.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SigningDisabled`
-
+`SigningDisabled`  <a name="cfn-iot-authorizer-signingdisabled"></a>
 Specifies whether AWS IoT validates the token signature in an authorization request.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Status`
-
+`Status`  <a name="cfn-iot-authorizer-status"></a>
 The status of the authorizer.
-
 Valid values: `ACTIVE` \| `INACTIVE`
+*Required*: No
+*Type*: String
+*Allowed values*: `ACTIVE | INACTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ACTIVE | INACTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-iot-authorizer-tags"></a>
 Metadata which can be used to manage the custom authorizer.
-
-###### Note
-
 For URI Request parameters use format: ...key1=value1&key2=value2...
+For the CLI command-line parameter use format: &&tags "key1=value1&key2=value2..."
+For the cli-input-json file use format: "tags": "key1=value1&key2=value2..."
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iot-authorizer-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For the CLI command-line parameter use format: &&tags
-"key1=value1&key2=value2..."
-
-For the cli-input-json file use format: "tags":
-"key1=value1&key2=value2..."
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iot-authorizer-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TokenKeyName`
-
+`TokenKeyName`  <a name="cfn-iot-authorizer-tokenkeyname"></a>
 The key used to extract the token from the HTTP headers.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TokenSigningPublicKeys`
-
-The public keys used to validate the token signature returned by your custom
-authentication service.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9:_-]+`
-
-_Maximum_: `5120`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TokenSigningPublicKeys`  <a name="cfn-iot-authorizer-tokensigningpublickeys"></a>
+The public keys used to validate the token signature returned by your custom authentication service.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9:_-]+`
+*Maximum*: `5120`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iot-authorizer-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iot-authorizer-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the authorizer name. For example:
 
-`{ "Ref": "MyAuthorizer" }`
+ `{ "Ref": "MyAuthorizer" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iot-authorizer-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iot-authorizer-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the authorizer.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeviceCertExpirationAuditCheckConfiguration
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

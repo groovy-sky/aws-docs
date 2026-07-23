@@ -2,88 +2,65 @@
 title: "AWS::S3Tables::Table SchemaField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table SchemaField
+<a name="aws-properties-s3tables-table-schemafield"></a>
 
 Contains details about a schema field.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-schemafield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-schemafield-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : Integer,
-  "Name" : String,
-  "Required" : Boolean,
-  "Type" : String
+  "[Id](#cfn-s3tables-table-schemafield-id)" : {{Integer}},
+  "[Name](#cfn-s3tables-table-schemafield-name)" : {{String}},
+  "[Required](#cfn-s3tables-table-schemafield-required)" : {{Boolean}},
+  "[Type](#cfn-s3tables-table-schemafield-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-schemafield-syntax.yaml"></a>
 
-```yaml
-
-  Id: Integer
-  Name: String
-  Required: Boolean
-  Type: String
-
+```
+  [Id](#cfn-s3tables-table-schemafield-id): {{Integer}}
+  [Name](#cfn-s3tables-table-schemafield-name): {{String}}
+  [Required](#cfn-s3tables-table-schemafield-required): {{Boolean}}
+  [Type](#cfn-s3tables-table-schemafield-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-schemafield-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-s3tables-table-schemafield-id"></a>
 An optional unique identifier for the schema field. Field IDs are used by Apache Iceberg to track schema evolution and maintain compatibility across schema changes. If not specified, S3 Tables automatically assigns field IDs.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-s3tables-table-schemafield-name"></a>
 The name of the field.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Required`
-
+`Required`  <a name="cfn-s3tables-table-schemafield-required"></a>
 A Boolean value that specifies whether values are required for each row in this field. By default, this is `false` and null values are allowed in the field. If this is `true` the field does not allow null values.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
-The field type. S3 Tables supports all Apache Iceberg primitive types. For more information, see the [Apache Iceberg documentation](https://iceberg.apache.org/spec).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IcebergSortOrder
-
-SchemaV2Field
+`Type`  <a name="cfn-s3tables-table-schemafield-type"></a>
+The field type. S3 Tables supports all Apache Iceberg primitive types. For more information, see the [Apache Iceberg documentation](https://iceberg.apache.org/spec/#primitive-types).
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

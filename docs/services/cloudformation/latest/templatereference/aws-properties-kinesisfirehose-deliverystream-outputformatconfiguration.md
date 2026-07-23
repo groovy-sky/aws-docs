@@ -2,56 +2,42 @@
 title: "AWS::KinesisFirehose::DeliveryStream OutputFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream OutputFormatConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration"></a>
 
-Specifies the serializer that you want Firehose to use to convert the
-format of your data before it writes it to Amazon S3. This parameter is required if
-`Enabled` is set to true.
+Specifies the serializer that you want Firehose to use to convert the format of your data before it writes it to Amazon S3. This parameter is required if `Enabled` is set to true.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Serializer" : Serializer
+  "[Serializer](#cfn-kinesisfirehose-deliverystream-outputformatconfiguration-serializer)" : {{Serializer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Serializer:
-    Serializer
-
+```
+  [Serializer](#cfn-kinesisfirehose-deliverystream-outputformatconfiguration-serializer): {{
+    Serializer}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration-properties"></a>
 
-`Serializer`
-
-Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet
-SerDe. If both are non-null, the server rejects the request.
-
-_Required_: No
-
-_Type_: [Serializer](aws-properties-kinesisfirehose-deliverystream-serializer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OrcSerDe
-
-ParquetSerDe
+`Serializer`  <a name="cfn-kinesisfirehose-deliverystream-outputformatconfiguration-serializer"></a>
+Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. If both are non-null, the server rejects the request.
+*Required*: No
+*Type*: [Serializer](aws-properties-kinesisfirehose-deliverystream-serializer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

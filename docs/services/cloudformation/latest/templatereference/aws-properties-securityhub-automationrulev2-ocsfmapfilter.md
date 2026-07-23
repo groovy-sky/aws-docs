@@ -2,67 +2,51 @@
 title: "AWS::SecurityHub::AutomationRuleV2 OcsfMapFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::AutomationRuleV2 OcsfMapFilter
+<a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter"></a>
 
 Enables filtering of security findings based on map field values in OCSF.
 
 ## Syntax
+<a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldName" : String,
-  "Filter" : MapFilter
+  "[FieldName](#cfn-securityhub-automationrulev2-ocsfmapfilter-fieldname)" : {{String}},
+  "[Filter](#cfn-securityhub-automationrulev2-ocsfmapfilter-filter)" : {{MapFilter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter-syntax.yaml"></a>
 
-```yaml
-
-  FieldName: String
-  Filter:
-    MapFilter
-
+```
+  [FieldName](#cfn-securityhub-automationrulev2-ocsfmapfilter-fieldname): {{String}}
+  [Filter](#cfn-securityhub-automationrulev2-ocsfmapfilter-filter): {{
+    MapFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter-properties"></a>
 
-`FieldName`
-
+`FieldName`  <a name="cfn-securityhub-automationrulev2-ocsfmapfilter-fieldname"></a>
 The name of the field.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `resources.tags`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `resources.tags`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Filter`
-
+`Filter`  <a name="cfn-securityhub-automationrulev2-ocsfmapfilter-filter"></a>
 Enables filtering of security findings based on map field values in OCSF.
-
-_Required_: Yes
-
-_Type_: [MapFilter](aws-properties-securityhub-automationrulev2-mapfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OcsfFindingFilters
-
-OcsfNumberFilter
+*Required*: Yes
+*Type*: [MapFilter](aws-properties-securityhub-automationrulev2-mapfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,67 +2,49 @@
 title: "AWS::CodeDeploy::DeploymentGroup EC2TagSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup EC2TagSet
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagset"></a>
 
-The `EC2TagSet` property type specifies information about groups of tags
-applied to Amazon EC2 instances. The deployment group includes only Amazon EC2 instances identified by all the tag groups. `EC2TagSet` cannot be
-used in the same template as `EC2TagFilter`.
+ The `EC2TagSet` property type specifies information about groups of tags applied to Amazon EC2 instances. The deployment group includes only Amazon EC2 instances identified by all the tag groups. `EC2TagSet` cannot be used in the same template as `EC2TagFilter`.
 
-For information about using tags and tag groups to help manage your Amazon EC2
-instances and on-premises instances, see [Tagging Instances for Deployment\
-Groups in AWS CodeDeploy](../../../codedeploy/latest/userguide/instances-tagging.md).
+ For information about using tags and tag groups to help manage your Amazon EC2 instances and on-premises instances, see [Tagging Instances for Deployment Groups in AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-tagging.html).
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagset-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ec2TagSetList" : [ EC2TagSetListObject, ... ]
+  "[Ec2TagSetList](#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist)" : {{[ EC2TagSetListObject, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagset-syntax.yaml"></a>
 
-```yaml
-
-  Ec2TagSetList:
-    - EC2TagSetListObject
-
+```
+  [Ec2TagSetList](#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist): {{
+    - EC2TagSetListObject}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagset-properties"></a>
 
-`Ec2TagSetList`
-
-The Amazon EC2 tags that are already applied to Amazon EC2 instances
-that you want to include in the deployment group. CodeDeploy includes all Amazon EC2 instances identified by any of the tags you specify in this deployment group.
-
-Duplicates are not allowed.
-
-_Required_: No
-
-_Type_: Array of [EC2TagSetListObject](aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Ec2TagSetList`  <a name="cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist"></a>
+ The Amazon EC2 tags that are already applied to Amazon EC2 instances that you want to include in the deployment group. CodeDeploy includes all Amazon EC2 instances identified by any of the tags you specify in this deployment group.
+ Duplicates are not allowed.
+*Required*: No
+*Type*: Array of [EC2TagSetListObject](aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [EC2TagSet](../../../../reference/codedeploy/latest/apireference/api-ec2tagset.md) in the _AWS CodeDeploy API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EC2TagFilter
-
-EC2TagSetListObject
+<a name="aws-properties-codedeploy-deploymentgroup-ec2tagset--seealso"></a>
++ [EC2TagSet](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_EC2TagSet.html) in the *AWS CodeDeploy API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

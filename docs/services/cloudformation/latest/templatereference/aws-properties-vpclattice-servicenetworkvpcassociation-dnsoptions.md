@@ -2,71 +2,53 @@
 title: "AWS::VpcLattice::ServiceNetworkVpcAssociation DnsOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::ServiceNetworkVpcAssociation DnsOptions
+<a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions"></a>
 
 The DNS configuration options.
 
 ## Syntax
+<a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "PrivateDnsPreference" : String,
-  "PrivateDnsSpecifiedDomains" : [ String, ... ]
+  "[PrivateDnsPreference](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednspreference)" : {{String}},
+  "[PrivateDnsSpecifiedDomains](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednsspecifieddomains)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions-syntax.yaml"></a>
 
-```yaml
-
-  PrivateDnsPreference: String
-  PrivateDnsSpecifiedDomains:
-    - String
-
+```
+  [PrivateDnsPreference](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednspreference): {{String}}
+  [PrivateDnsSpecifiedDomains](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednsspecifieddomains): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions-properties"></a>
 
-`PrivateDnsPreference`
-
+`PrivateDnsPreference`  <a name="cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednspreference"></a>
 The preference for which private domains have a private hosted zone created for and associated with the specified VPC. Only supported when private DNS is enabled and when the VPC endpoint type is ServiceNetwork or Resource.
+*Required*: No
+*Type*: String
+*Allowed values*: `VERIFIED_DOMAINS_ONLY | ALL_DOMAINS | VERIFIED_DOMAINS_AND_SPECIFIED_DOMAINS | SPECIFIED_DOMAINS_ONLY`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `VERIFIED_DOMAINS_ONLY | ALL_DOMAINS | VERIFIED_DOMAINS_AND_SPECIFIED_DOMAINS | SPECIFIED_DOMAINS_ONLY`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrivateDnsSpecifiedDomains`
-
+`PrivateDnsSpecifiedDomains`  <a name="cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednsspecifieddomains"></a>
 Indicates which of the private domains to create private hosted zones for and associate with the specified VPC. Only supported when private DNS is enabled and the private DNS preference is `VERIFIED_DOMAINS_AND_SPECIFIED_DOMAINS` or `SPECIFIED_DOMAINS_ONLY`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `255 | 10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::ServiceNetworkVpcAssociation
-
-Tag
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `255 | 10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

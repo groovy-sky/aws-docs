@@ -2,63 +2,49 @@
 title: "AWS::EC2::LaunchTemplate CreditSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate CreditSpecification
+<a name="aws-properties-ec2-launchtemplate-creditspecification"></a>
 
 Specifies the credit option for CPU usage of a T2, T3, or T3a instance.
 
-`CreditSpecification` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md).
+`CreditSpecification` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-creditspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-creditspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "CpuCredits" : String
+  "[CpuCredits](#cfn-ec2-launchtemplate-creditspecification-cpucredits)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-creditspecification-syntax.yaml"></a>
 
-```yaml
-
-  CpuCredits: String
-
+```
+  [CpuCredits](#cfn-ec2-launchtemplate-creditspecification-cpucredits): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-creditspecification-properties"></a>
 
-`CpuCredits`
-
+`CpuCredits`  <a name="cfn-ec2-launchtemplate-creditspecification-cpucredits"></a>
 The credit option for CPU usage of a T instance.
-
 Valid values: `standard` \| `unlimited`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [CreditSpecificationRequest](../../../../reference/awsec2/latest/apireference/api-creditspecificationrequest.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Create a launch template using advanced settings](../../../autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.md) in the _Amazon EC2 Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CpuOptions
-
-Ebs
+<a name="aws-properties-ec2-launchtemplate-creditspecification--seealso"></a>
++ [ CreditSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreditSpecificationRequest.html) in the *Amazon EC2 API Reference*
++ [ Create a launch template using advanced settings](https://docs.aws.amazon.com/autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.html) in the *Amazon EC2 Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

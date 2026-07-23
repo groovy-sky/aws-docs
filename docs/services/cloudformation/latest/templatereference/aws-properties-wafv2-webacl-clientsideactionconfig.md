@@ -2,61 +2,44 @@
 title: "AWS::WAFv2::WebACL ClientSideActionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL ClientSideActionConfig
+<a name="aws-properties-wafv2-webacl-clientsideactionconfig"></a>
 
-This is part of the configuration for the managed rules `AWSManagedRulesAntiDDoSRuleSet`
-in `ManagedRuleGroupConfig`.
+This is part of the configuration for the managed rules `AWSManagedRulesAntiDDoSRuleSet` in `ManagedRuleGroupConfig`.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-clientsideactionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-clientsideactionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Challenge" : ClientSideAction
+  "[Challenge](#cfn-wafv2-webacl-clientsideactionconfig-challenge)" : {{ClientSideAction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-clientsideactionconfig-syntax.yaml"></a>
 
-```yaml
-
-  Challenge:
-    ClientSideAction
-
+```
+  [Challenge](#cfn-wafv2-webacl-clientsideactionconfig-challenge): {{
+    ClientSideAction}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-clientsideactionconfig-properties"></a>
 
-`Challenge`
-
+`Challenge`  <a name="cfn-wafv2-webacl-clientsideactionconfig-challenge"></a>
 Configuration for the use of the `AWSManagedRulesAntiDDoSRuleSet` rules `ChallengeAllDuringEvent` and `ChallengeDDoSRequests`.
-
-###### Note
-
-This setting isn't related to the configuration of the `Challenge` action itself. It only
-configures the use of the two anti-DDoS rules named here.
-
+This setting isn't related to the configuration of the `Challenge` action itself. It only configures the use of the two anti-DDoS rules named here.
 You can enable or disable the use of these rules, and you can configure how to use them when they are enabled.
-
-_Required_: Yes
-
-_Type_: [ClientSideAction](aws-properties-wafv2-webacl-clientsideaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClientSideAction
-
-CookieMatchPattern
+*Required*: Yes
+*Type*: [ClientSideAction](aws-properties-wafv2-webacl-clientsideaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

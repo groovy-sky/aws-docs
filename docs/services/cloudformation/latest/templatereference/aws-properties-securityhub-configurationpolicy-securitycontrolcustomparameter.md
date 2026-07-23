@@ -2,67 +2,51 @@
 title: "AWS::SecurityHub::ConfigurationPolicy SecurityControlCustomParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ConfigurationPolicy SecurityControlCustomParameter
+<a name="aws-properties-securityhub-configurationpolicy-securitycontrolcustomparameter"></a>
 
-A list of security controls and control parameter values that are included in a configuration policy.
+ A list of security controls and control parameter values that are included in a configuration policy.
 
 ## Syntax
+<a name="aws-properties-securityhub-configurationpolicy-securitycontrolcustomparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-configurationpolicy-securitycontrolcustomparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Parameters" : {Key: Value, ...},
-  "SecurityControlId" : String
+  "[Parameters](#cfn-securityhub-configurationpolicy-securitycontrolcustomparameter-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[SecurityControlId](#cfn-securityhub-configurationpolicy-securitycontrolcustomparameter-securitycontrolid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-configurationpolicy-securitycontrolcustomparameter-syntax.yaml"></a>
 
-```yaml
-
-  Parameters:
-    Key: Value
-  SecurityControlId: String
-
+```
+  [Parameters](#cfn-securityhub-configurationpolicy-securitycontrolcustomparameter-parameters): {{
+    {{Key}}: {{Value}}}}
+  [SecurityControlId](#cfn-securityhub-configurationpolicy-securitycontrolcustomparameter-securitycontrolid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-configurationpolicy-securitycontrolcustomparameter-properties"></a>
 
-`Parameters`
+`Parameters`  <a name="cfn-securityhub-configurationpolicy-securitycontrolcustomparameter-parameters"></a>
+ An object that specifies parameter values for a control in a configuration policy.
+*Required*: No
+*Type*: Object of [ParameterConfiguration](aws-properties-securityhub-configurationpolicy-parameterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An object that specifies parameter values for a control in a configuration policy.
-
-_Required_: No
-
-_Type_: Object of [ParameterConfiguration](aws-properties-securityhub-configurationpolicy-parameterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityControlId`
-
-The ID of the security control.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Policy
-
-SecurityControlsConfiguration
+`SecurityControlId`  <a name="cfn-securityhub-configurationpolicy-securitycontrolcustomparameter-securitycontrolid"></a>
+ The ID of the security control.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

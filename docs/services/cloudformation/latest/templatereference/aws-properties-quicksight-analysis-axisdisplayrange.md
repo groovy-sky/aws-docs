@@ -2,67 +2,52 @@
 title: "AWS::QuickSight::Analysis AxisDisplayRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis AxisDisplayRange
+<a name="aws-properties-quicksight-analysis-axisdisplayrange"></a>
 
 The range setup of a numeric axis display range.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-axisdisplayrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-axisdisplayrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataDriven" : Json,
-  "MinMax" : AxisDisplayMinMaxRange
+  "[DataDriven](#cfn-quicksight-analysis-axisdisplayrange-datadriven)" : {{Json}},
+  "[MinMax](#cfn-quicksight-analysis-axisdisplayrange-minmax)" : {{AxisDisplayMinMaxRange}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-axisdisplayrange-syntax.yaml"></a>
 
-```yaml
-
-  DataDriven: Json
-  MinMax:
-    AxisDisplayMinMaxRange
-
+```
+  [DataDriven](#cfn-quicksight-analysis-axisdisplayrange-datadriven): {{Json}}
+  [MinMax](#cfn-quicksight-analysis-axisdisplayrange-minmax): {{
+    AxisDisplayMinMaxRange}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-axisdisplayrange-properties"></a>
 
-`DataDriven`
-
+`DataDriven`  <a name="cfn-quicksight-analysis-axisdisplayrange-datadriven"></a>
 The data-driven setup of an axis display range.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinMax`
-
+`MinMax`  <a name="cfn-quicksight-analysis-axisdisplayrange-minmax"></a>
 The minimum and maximum setup of an axis display range.
-
-_Required_: No
-
-_Type_: [AxisDisplayMinMaxRange](aws-properties-quicksight-analysis-axisdisplayminmaxrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AxisDisplayOptions
-
-AxisLabelOptions
+*Required*: No
+*Type*: [AxisDisplayMinMaxRange](aws-properties-quicksight-analysis-axisdisplayminmaxrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

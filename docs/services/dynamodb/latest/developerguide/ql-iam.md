@@ -3,33 +3,25 @@ title: "IAM security policies with PartiQL for DynamoDB"
 ---
 
 # IAM security policies with PartiQL for DynamoDB
+<a name="ql-iam"></a>
 
 The following permissions are required:
-
-- To read items using PartiQL for DynamoDB, you must have
-`dynamodb:PartiQLSelect` permission on the table or
-index.
-
-- To insert items using PartiQL for DynamoDB, you must have
-`dynamodb:PartiQLInsert` permission on the table or
-index.
-
-- To update items using PartiQL for DynamoDB, you must have
-`dynamodb:PartiQLUpdate` permission on the table or
-index.
-
-- To delete items using PartiQL for DynamoDB, you must have
-`dynamodb:PartiQLDelete` permission on the table or
-index.
++ To read items using PartiQL for DynamoDB, you must have `dynamodb:PartiQLSelect` permission on the table or index.
++ To insert items using PartiQL for DynamoDB, you must have `dynamodb:PartiQLInsert` permission on the table or index.
++ To update items using PartiQL for DynamoDB, you must have `dynamodb:PartiQLUpdate` permission on the table or index.
++ To delete items using PartiQL for DynamoDB, you must have `dynamodb:PartiQLDelete` permission on the table or index.
 
 ## Example: Allow all PartiQL for DynamoDB statements (Select/Insert/Update/Delete) on a table
+<a name="access-policy-ql-iam-example1"></a>
 
 The following IAM policy grants permissions to run all PartiQL for DynamoDB statements on a table.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -47,18 +39,21 @@ JSON
       }
    ]
 }
-
 ```
 
+------
+
 ## Example: Allow PartiQL for DynamoDB select statements on a table
+<a name="access-policy-ql-iam-example2"></a>
 
-The following IAM policy grants permissions to run the `select`
-statement on a specific table.
+The following IAM policy grants permissions to run the `select` statement on a specific table.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -73,25 +68,28 @@ JSON
       }
    ]
 }
-
 ```
 
-## Example: Allow PartiQL for DynamoDB insert statements on an index
+------
 
-The following IAM policy grants permissions to run the `insert`
-statement on a specific index.
+## Example: Allow PartiQL for DynamoDB select statements on an index
+<a name="access-policy-ql-iam-example3"></a>
 
-JSON
+The following IAM policy grants permissions to run the `select` statement on a specific index.
 
-```json
+------
+#### [ JSON ]
 
+****
+
+```
 {
    "Version":"2012-10-17",
    "Statement":[
       {
          "Effect":"Allow",
          "Action":[
-            "dynamodb:PartiQLInsert"
+            "dynamodb:PartiQLSelect"
          ],
          "Resource":[
             "arn:aws:dynamodb:us-west-2:123456789012:table/Music/index/index1"
@@ -99,17 +97,21 @@ JSON
       }
    ]
 }
-
 ```
 
+------
+
 ## Example: Allow PartiQL for DynamoDB transactional statements only on a table
+<a name="access-policy-ql-iam-example4"></a>
 
 The following IAM policy grants permissions to run only transactional statements on a specific table.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -134,19 +136,21 @@ JSON
       }
    ]
 }
-
 ```
 
+------
+
 ## Example: Allow PartiQL for DynamoDB non-transactional reads and writes and block PartiQL transactional reads and writes transactional statements on a table.
+<a name="access-policy-ql-iam-example5"></a>
 
-The following IAM policy grants permissions to run PartiQL for DynamoDB
-non-transactional reads and writes while blocking PartiQL for DynamoDB transactional reads and
-writes.
+ The following IAM policy grants permissions to run PartiQL for DynamoDB non-transactional reads and writes while blocking PartiQL for DynamoDB transactional reads and writes.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -183,18 +187,21 @@ JSON
       }
    ]
 }
-
 ```
 
+------
+
 ## Example: Allow select statements and deny full table scan statements in PartiQL for DynamoDB
+<a name="access-policy-ql-iam-example6"></a>
 
-The following IAM policy grants permissions to run the `select`
-statement on a specific table while blocking `select` statements that result in a full table scan.
+The following IAM policy grants permissions to run the `select` statement on a specific table while blocking `select` statements that result in a full table scan.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -225,13 +232,8 @@ JSON
       }
    ]
 }
-
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Batch operations
-
-Working with items: Java
+------
 
 All content copied from https://docs.aws.amazon.com/.

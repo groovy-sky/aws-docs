@@ -2,87 +2,62 @@
 title: "AWS::Lightsail::Distribution InputOrigin"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Distribution InputOrigin
+<a name="aws-properties-lightsail-distribution-inputorigin"></a>
 
-`InputOrigin` is a property of the [AWS::Lightsail::Distribution](../userguide/aws-resource-lightsail-distribution.md) resource. It describes the origin resource of an
-Amazon Lightsail content delivery network (CDN) distribution.
+`InputOrigin` is a property of the [AWS::Lightsail::Distribution](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-distribution.html) resource. It describes the origin resource of an Amazon Lightsail content delivery network (CDN) distribution.
 
-An origin can be a instance, bucket, or load balancer. A distribution pulls content from
-an origin, caches it, and serves it to viewers through a worldwide network of edge servers.
+An origin can be a instance, bucket, or load balancer. A distribution pulls content from an origin, caches it, and serves it to viewers through a worldwide network of edge servers.
 
 ## Syntax
+<a name="aws-properties-lightsail-distribution-inputorigin-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-distribution-inputorigin-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "ProtocolPolicy" : String,
-  "RegionName" : String
+  "[Name](#cfn-lightsail-distribution-inputorigin-name)" : {{String}},
+  "[ProtocolPolicy](#cfn-lightsail-distribution-inputorigin-protocolpolicy)" : {{String}},
+  "[RegionName](#cfn-lightsail-distribution-inputorigin-regionname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-distribution-inputorigin-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  ProtocolPolicy: String
-  RegionName: String
-
+```
+  [Name](#cfn-lightsail-distribution-inputorigin-name): {{String}}
+  [ProtocolPolicy](#cfn-lightsail-distribution-inputorigin-protocolpolicy): {{String}}
+  [RegionName](#cfn-lightsail-distribution-inputorigin-regionname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-distribution-inputorigin-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-lightsail-distribution-inputorigin-name"></a>
 The name of the origin resource.
+*Required*: No
+*Type*: String
+*Pattern*: `\w[\w\-]*\w`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ProtocolPolicy`  <a name="cfn-lightsail-distribution-inputorigin-protocolpolicy"></a>
+The protocol that your Amazon Lightsail distribution uses when establishing a connection with your origin to pull content.
+*Required*: No
+*Type*: String
+*Allowed values*: `http-only | https-only`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `\w[\w\-]*\w`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProtocolPolicy`
-
-The protocol that your Amazon Lightsail distribution uses when establishing
-a connection with your origin to pull content.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `http-only | https-only`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegionName`
-
+`RegionName`  <a name="cfn-lightsail-distribution-inputorigin-regionname"></a>
 The AWS Region name of the origin resource.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `us-east-1 | us-east-2 | us-west-1 | us-west-2 | eu-west-1 | eu-west-2 | eu-west-3 | eu-central-1 | eu-north-1 | ca-central-1 | ap-south-1 | ap-southeast-1 | ap-southeast-2 | ap-northeast-1 | ap-northeast-2 | ap-southeast-3 | ap-southeast-5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HeaderObject
-
-QueryStringObject
+*Required*: No
+*Type*: String
+*Allowed values*: `us-east-1 | us-east-2 | us-west-1 | us-west-2 | eu-west-1 | eu-west-2 | eu-west-3 | eu-central-1 | eu-north-1 | ca-central-1 | ap-south-1 | ap-southeast-1 | ap-southeast-2 | ap-northeast-1 | ap-northeast-2 | ap-southeast-3 | ap-southeast-5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

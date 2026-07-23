@@ -2,78 +2,58 @@
 title: "AWS::Bedrock::Prompt ToolChoice"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Prompt ToolChoice
+<a name="aws-properties-bedrock-prompt-toolchoice"></a>
 
-Determines which tools the model should request in a call to `Converse` or
-`ConverseStream`. For more information, see [Call a tool with the Converse API](../../../bedrock/latest/userguide/tool-use.md) in the Amazon Bedrock User Guide.
+Determines which tools the model should request in a call to `Converse` or `ConverseStream`. For more information, see [Call a tool with the Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html) in the Amazon Bedrock User Guide.
 
 ## Syntax
+<a name="aws-properties-bedrock-prompt-toolchoice-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-prompt-toolchoice-syntax.json"></a>
 
-```json
-
+```
 {
-  "Any" : Json,
-  "Auto" : Json,
-  "Tool" : SpecificToolChoice
+  "[Any](#cfn-bedrock-prompt-toolchoice-any)" : {{Json}},
+  "[Auto](#cfn-bedrock-prompt-toolchoice-auto)" : {{Json}},
+  "[Tool](#cfn-bedrock-prompt-toolchoice-tool)" : {{SpecificToolChoice}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-prompt-toolchoice-syntax.yaml"></a>
 
-```yaml
-
-  Any: Json
-  Auto: Json
-  Tool:
-    SpecificToolChoice
-
+```
+  [Any](#cfn-bedrock-prompt-toolchoice-any): {{Json}}
+  [Auto](#cfn-bedrock-prompt-toolchoice-auto): {{Json}}
+  [Tool](#cfn-bedrock-prompt-toolchoice-tool): {{
+    SpecificToolChoice}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-prompt-toolchoice-properties"></a>
 
-`Any`
-
+`Any`  <a name="cfn-bedrock-prompt-toolchoice-any"></a>
 The model must request at least one tool (no text is generated).
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Auto`
-
+`Auto`  <a name="cfn-bedrock-prompt-toolchoice-auto"></a>
 (Default). The Model automatically decides if a tool should be called or whether to generate text instead.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tool`
-
+`Tool`  <a name="cfn-bedrock-prompt-toolchoice-tool"></a>
 The Model must request the specified tool. Only supported by Anthropic Claude 3 and Amazon Nova models.
-
-_Required_: No
-
-_Type_: [SpecificToolChoice](aws-properties-bedrock-prompt-specifictoolchoice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tool
-
-ToolConfiguration
+*Required*: No
+*Type*: [SpecificToolChoice](aws-properties-bedrock-prompt-specifictoolchoice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

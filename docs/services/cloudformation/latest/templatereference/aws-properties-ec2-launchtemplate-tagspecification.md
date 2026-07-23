@@ -2,78 +2,67 @@
 title: "AWS::EC2::LaunchTemplate TagSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate TagSpecification
+<a name="aws-properties-ec2-launchtemplate-tagspecification"></a>
 
 Specifies the tags to apply to resources that are created during instance launch.
 
-`TagSpecification` is a property type of [`TagSpecifications`](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications).
-[`TagSpecifications`](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications) is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md).
+`TagSpecification` is a property type of [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications). [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications) is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-tagspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-tagspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceType" : String,
-  "Tags" : [ Tag, ... ]
+  "[ResourceType](#cfn-ec2-launchtemplate-tagspecification-resourcetype)" : {{String}},
+  "[Tags](#cfn-ec2-launchtemplate-tagspecification-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-tagspecification-syntax.yaml"></a>
 
-```yaml
-
-  ResourceType: String
-  Tags:
-    - Tag
-
+```
+  [ResourceType](#cfn-ec2-launchtemplate-tagspecification-resourcetype): {{String}}
+  [Tags](#cfn-ec2-launchtemplate-tagspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-tagspecification-properties"></a>
 
-`ResourceType`
+`ResourceType`  <a name="cfn-ec2-launchtemplate-tagspecification-resourcetype"></a>
+The type of resource to tag. You can specify tags for the following resource types only: `instance` \| `volume` \| `network-interface` \| `spot-instances-request`. If the instance does not include the resource type that you specify, the instance launch fails. For example, not all instance types include a volume.
+To tag a resource after it has been created, see [CreateTags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTags.html).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of resource to tag. You can specify tags for the following resource types
-only: `instance` \| `volume` \| `network-interface` \| `spot-instances-request`.
-If the instance does not include the resource type that you specify, the instance
-launch fails. For example, not all instance types include a volume.
-
-To tag a resource after it has been created, see [CreateTags](../../../../reference/awsec2/latest/apireference/api-createtags.md).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-launchtemplate-tagspecification-tags"></a>
 The tags to apply to the resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-launchtemplate-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-launchtemplate-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-ec2-launchtemplate-tagspecification--examples"></a>
 
-The following example adds the tag `Stack=Production` to the instances
-created by the launch template.
+###
+<a name="aws-properties-ec2-launchtemplate-tagspecification--examples--"></a>
+
+The following example adds the tag `Stack=Production` to the instances created by the launch template.
 
 #### YAML
+<a name="aws-properties-ec2-launchtemplate-tagspecification--examples----yaml"></a>
 
-```yaml
-
+```
 TagSpecifications:
   - ResourceType: "instance"
     Tags:
@@ -82,9 +71,9 @@ TagSpecifications:
 ```
 
 #### JSON
+<a name="aws-properties-ec2-launchtemplate-tagspecification--examples----json"></a>
 
-```json
-
+```
 "TagSpecifications": [
     {
         "ResourceType": "instance",
@@ -99,14 +88,7 @@ TagSpecifications:
 ```
 
 ## See also
-
-- [LaunchTemplateTagSpecificationRequest](../../../../reference/awsec2/latest/apireference/api-launchtemplatetagspecificationrequest.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-TotalLocalStorageGB
+<a name="aws-properties-ec2-launchtemplate-tagspecification--seealso"></a>
++ [ LaunchTemplateTagSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateTagSpecificationRequest.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

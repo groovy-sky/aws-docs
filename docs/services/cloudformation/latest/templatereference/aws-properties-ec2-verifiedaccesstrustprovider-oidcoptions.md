@@ -2,125 +2,89 @@
 title: "AWS::EC2::VerifiedAccessTrustProvider OidcOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessTrustProvider OidcOptions
+<a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions"></a>
 
-Describes the options for an OpenID Connect-compatible user-identity trust
-provider.
+Describes the options for an OpenID Connect-compatible user-identity trust provider.
 
 ## Syntax
+<a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationEndpoint" : String,
-  "ClientId" : String,
-  "ClientSecret" : String,
-  "Issuer" : String,
-  "Scope" : String,
-  "TokenEndpoint" : String,
-  "UserInfoEndpoint" : String
+  "[AuthorizationEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-authorizationendpoint)" : {{String}},
+  "[ClientId](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientid)" : {{String}},
+  "[ClientSecret](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientsecret)" : {{String}},
+  "[Issuer](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-issuer)" : {{String}},
+  "[Scope](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-scope)" : {{String}},
+  "[TokenEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-tokenendpoint)" : {{String}},
+  "[UserInfoEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-userinfoendpoint)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationEndpoint: String
-  ClientId: String
-  ClientSecret: String
-  Issuer: String
-  Scope: String
-  TokenEndpoint: String
-  UserInfoEndpoint: String
-
+```
+  [AuthorizationEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-authorizationendpoint): {{String}}
+  [ClientId](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientid): {{String}}
+  [ClientSecret](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientsecret): {{String}}
+  [Issuer](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-issuer): {{String}}
+  [Scope](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-scope): {{String}}
+  [TokenEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-tokenendpoint): {{String}}
+  [UserInfoEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-userinfoendpoint): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions-properties"></a>
 
-`AuthorizationEndpoint`
-
+`AuthorizationEndpoint`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-authorizationendpoint"></a>
 The OIDC authorization endpoint.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientId`
-
+`ClientId`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientid"></a>
 The client identifier.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientSecret`
-
+`ClientSecret`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientsecret"></a>
 The client secret.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Issuer`
-
+`Issuer`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-issuer"></a>
 The OIDC issuer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scope`
-
+`Scope`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-scope"></a>
 The OpenID Connect (OIDC) scope specified.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TokenEndpoint`
-
+`TokenEndpoint`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-tokenendpoint"></a>
 The OIDC token endpoint.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserInfoEndpoint`
-
+`UserInfoEndpoint`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions-userinfoendpoint"></a>
 The OIDC user info endpoint.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NativeApplicationOidcOptions
-
-SseSpecification
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

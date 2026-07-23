@@ -2,76 +2,57 @@
 title: "AWS::ODB::CloudVmCluster DataCollectionOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudVmCluster DataCollectionOptions
+<a name="aws-properties-odb-cloudvmcluster-datacollectionoptions"></a>
 
 Information about the data collection options enabled for a VM cluster.
 
 ## Syntax
+<a name="aws-properties-odb-cloudvmcluster-datacollectionoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-odb-cloudvmcluster-datacollectionoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsDiagnosticsEventsEnabled" : Boolean,
-  "IsHealthMonitoringEnabled" : Boolean,
-  "IsIncidentLogsEnabled" : Boolean
+  "[IsDiagnosticsEventsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isdiagnosticseventsenabled)" : {{Boolean}},
+  "[IsHealthMonitoringEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-ishealthmonitoringenabled)" : {{Boolean}},
+  "[IsIncidentLogsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isincidentlogsenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-odb-cloudvmcluster-datacollectionoptions-syntax.yaml"></a>
 
-```yaml
-
-  IsDiagnosticsEventsEnabled: Boolean
-  IsHealthMonitoringEnabled: Boolean
-  IsIncidentLogsEnabled: Boolean
-
+```
+  [IsDiagnosticsEventsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isdiagnosticseventsenabled): {{Boolean}}
+  [IsHealthMonitoringEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-ishealthmonitoringenabled): {{Boolean}}
+  [IsIncidentLogsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isincidentlogsenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-odb-cloudvmcluster-datacollectionoptions-properties"></a>
 
-`IsDiagnosticsEventsEnabled`
-
+`IsDiagnosticsEventsEnabled`  <a name="cfn-odb-cloudvmcluster-datacollectionoptions-isdiagnosticseventsenabled"></a>
 Specifies whether diagnostic collection is enabled for the VM cluster.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IsHealthMonitoringEnabled`
-
+`IsHealthMonitoringEnabled`  <a name="cfn-odb-cloudvmcluster-datacollectionoptions-ishealthmonitoringenabled"></a>
 Specifies whether health monitoring is enabled for the VM cluster.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IsIncidentLogsEnabled`
-
+`IsIncidentLogsEnabled`  <a name="cfn-odb-cloudvmcluster-datacollectionoptions-isincidentlogsenabled"></a>
 Specifies whether incident logs are enabled for the VM cluster.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ODB::CloudVmCluster
-
-DbNode
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

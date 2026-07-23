@@ -2,142 +2,95 @@
 title: "AWS::Glue::Trigger Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Trigger Action
+<a name="aws-properties-glue-trigger-action"></a>
 
 Defines an action to be initiated by a trigger.
 
 ## Syntax
+<a name="aws-properties-glue-trigger-action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-trigger-action-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arguments" : Json,
-  "CrawlerName" : String,
-  "JobName" : String,
-  "NotificationProperty" : NotificationProperty,
-  "SecurityConfiguration" : String,
-  "Timeout" : Integer
+  "[Arguments](#cfn-glue-trigger-action-arguments)" : {{Json}},
+  "[CrawlerName](#cfn-glue-trigger-action-crawlername)" : {{String}},
+  "[JobName](#cfn-glue-trigger-action-jobname)" : {{String}},
+  "[NotificationProperty](#cfn-glue-trigger-action-notificationproperty)" : {{NotificationProperty}},
+  "[SecurityConfiguration](#cfn-glue-trigger-action-securityconfiguration)" : {{String}},
+  "[Timeout](#cfn-glue-trigger-action-timeout)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-trigger-action-syntax.yaml"></a>
 
-```yaml
-
-  Arguments: Json
-  CrawlerName: String
-  JobName: String
-  NotificationProperty:
-    NotificationProperty
-  SecurityConfiguration: String
-  Timeout: Integer
-
+```
+  [Arguments](#cfn-glue-trigger-action-arguments): {{Json}}
+  [CrawlerName](#cfn-glue-trigger-action-crawlername): {{String}}
+  [JobName](#cfn-glue-trigger-action-jobname): {{String}}
+  [NotificationProperty](#cfn-glue-trigger-action-notificationproperty): {{
+    NotificationProperty}}
+  [SecurityConfiguration](#cfn-glue-trigger-action-securityconfiguration): {{String}}
+  [Timeout](#cfn-glue-trigger-action-timeout): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-trigger-action-properties"></a>
 
-`Arguments`
+`Arguments`  <a name="cfn-glue-trigger-action-arguments"></a>
+The job arguments used when this trigger fires. For this job run, they replace the default arguments set in the job definition itself.
+You can specify arguments here that your own job-execution script consumes, in addition to arguments that AWS Glue itself consumes.
+For information about how to specify and consume your own job arguments, see [Calling AWS Glue APIs in Python](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html) in the *AWS Glue Developer Guide*.
+For information about the key-value pairs that AWS Glue consumes to set up your job, see the [Special Parameters Used by AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html) topic in the developer guide.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The job arguments used when this trigger fires. For this job run, they replace the
-default arguments set in the job definition itself.
-
-You can specify arguments here that your own job-execution script consumes, in
-addition to arguments that AWS Glue itself consumes.
-
-For information about how to specify and consume your own job arguments, see [Calling AWS Glue APIs in Python](../../../glue/latest/dg/aws-glue-programming-python-calling.md) in the _AWS Glue Developer_
-_Guide_.
-
-For information about the key-value pairs that AWS Glue consumes to set up your job,
-see the [Special Parameters\
-Used by AWS Glue](../../../glue/latest/dg/aws-glue-programming-etl-glue-arguments.md) topic in the developer guide.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CrawlerName`
-
+`CrawlerName`  <a name="cfn-glue-trigger-action-crawlername"></a>
 The name of the crawler to be used with this action.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobName`
-
+`JobName`  <a name="cfn-glue-trigger-action-jobname"></a>
 The name of a job to be executed.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotificationProperty`
-
+`NotificationProperty`  <a name="cfn-glue-trigger-action-notificationproperty"></a>
 Specifies configuration properties of a job run notification.
+*Required*: No
+*Type*: [NotificationProperty](aws-properties-glue-trigger-notificationproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SecurityConfiguration`  <a name="cfn-glue-trigger-action-securityconfiguration"></a>
+The name of the `SecurityConfiguration` structure to be used with this action.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [NotificationProperty](aws-properties-glue-trigger-notificationproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityConfiguration`
-
-The name of the `SecurityConfiguration` structure to be used with this
-action.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timeout`
-
+`Timeout`  <a name="cfn-glue-trigger-action-timeout"></a>
 The `JobRun` timeout in minutes. This is the maximum time that a job run can consume resources before it is terminated and enters TIMEOUT status. The default is 2,880 minutes (48 hours). This overrides the timeout value set in the parent job.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Action Structure](../../../glue/latest/dg/aws-glue-api-jobs-trigger.md#aws-glue-api-jobs-trigger-Action) in the _AWS Glue Developer_
-_Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Glue::Trigger
-
-Condition
+<a name="aws-properties-glue-trigger-action--seealso"></a>
++ [Action Structure](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-trigger.html#aws-glue-api-jobs-trigger-Action) in the *AWS Glue Developer Guide*
 
 All content copied from https://docs.aws.amazon.com/.

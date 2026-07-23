@@ -2,81 +2,62 @@
 title: "AWS::QuickSight::Dashboard CategoryFilterConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard CategoryFilterConfiguration
+<a name="aws-properties-quicksight-dashboard-categoryfilterconfiguration"></a>
 
 The configuration for a `CategoryFilter`.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-categoryfilterconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-categoryfilterconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomFilterConfiguration" : CustomFilterConfiguration,
-  "CustomFilterListConfiguration" : CustomFilterListConfiguration,
-  "FilterListConfiguration" : FilterListConfiguration
+  "[CustomFilterConfiguration](#cfn-quicksight-dashboard-categoryfilterconfiguration-customfilterconfiguration)" : {{CustomFilterConfiguration}},
+  "[CustomFilterListConfiguration](#cfn-quicksight-dashboard-categoryfilterconfiguration-customfilterlistconfiguration)" : {{CustomFilterListConfiguration}},
+  "[FilterListConfiguration](#cfn-quicksight-dashboard-categoryfilterconfiguration-filterlistconfiguration)" : {{FilterListConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-categoryfilterconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomFilterConfiguration:
-    CustomFilterConfiguration
-  CustomFilterListConfiguration:
-    CustomFilterListConfiguration
-  FilterListConfiguration:
-    FilterListConfiguration
-
+```
+  [CustomFilterConfiguration](#cfn-quicksight-dashboard-categoryfilterconfiguration-customfilterconfiguration): {{
+    CustomFilterConfiguration}}
+  [CustomFilterListConfiguration](#cfn-quicksight-dashboard-categoryfilterconfiguration-customfilterlistconfiguration): {{
+    CustomFilterListConfiguration}}
+  [FilterListConfiguration](#cfn-quicksight-dashboard-categoryfilterconfiguration-filterlistconfiguration): {{
+    FilterListConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-categoryfilterconfiguration-properties"></a>
 
-`CustomFilterConfiguration`
-
+`CustomFilterConfiguration`  <a name="cfn-quicksight-dashboard-categoryfilterconfiguration-customfilterconfiguration"></a>
 A custom filter that filters based on a single value. This filter can be partially matched.
+*Required*: No
+*Type*: [CustomFilterConfiguration](aws-properties-quicksight-dashboard-customfilterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomFilterConfiguration](aws-properties-quicksight-dashboard-customfilterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomFilterListConfiguration`
-
+`CustomFilterListConfiguration`  <a name="cfn-quicksight-dashboard-categoryfilterconfiguration-customfilterlistconfiguration"></a>
 A list of custom filter values. In the Quick Sight console, this filter type is called a custom filter list.
+*Required*: No
+*Type*: [CustomFilterListConfiguration](aws-properties-quicksight-dashboard-customfilterlistconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomFilterListConfiguration](aws-properties-quicksight-dashboard-customfilterlistconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterListConfiguration`
-
+`FilterListConfiguration`  <a name="cfn-quicksight-dashboard-categoryfilterconfiguration-filterlistconfiguration"></a>
 A list of filter configurations. In the Quick Sight console, this filter type is called a filter list.
-
-_Required_: No
-
-_Type_: [FilterListConfiguration](aws-properties-quicksight-dashboard-filterlistconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CategoryFilter
-
-CategoryInnerFilter
+*Required*: No
+*Type*: [FilterListConfiguration](aws-properties-quicksight-dashboard-filterlistconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

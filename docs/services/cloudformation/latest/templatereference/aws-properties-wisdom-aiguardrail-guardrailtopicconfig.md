@@ -2,105 +2,74 @@
 title: "AWS::Wisdom::AIGuardrail GuardrailTopicConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail GuardrailTopicConfig
+<a name="aws-properties-wisdom-aiguardrail-guardrailtopicconfig"></a>
 
 Topic configuration in topic policy.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-guardrailtopicconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-guardrailtopicconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Definition" : String,
-  "Examples" : [ String, ... ],
-  "Name" : String,
-  "Type" : String
+  "[Definition](#cfn-wisdom-aiguardrail-guardrailtopicconfig-definition)" : {{String}},
+  "[Examples](#cfn-wisdom-aiguardrail-guardrailtopicconfig-examples)" : {{[ String, ... ]}},
+  "[Name](#cfn-wisdom-aiguardrail-guardrailtopicconfig-name)" : {{String}},
+  "[Type](#cfn-wisdom-aiguardrail-guardrailtopicconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-guardrailtopicconfig-syntax.yaml"></a>
 
-```yaml
-
-  Definition: String
-  Examples:
-    - String
-  Name: String
-  Type: String
-
+```
+  [Definition](#cfn-wisdom-aiguardrail-guardrailtopicconfig-definition): {{String}}
+  [Examples](#cfn-wisdom-aiguardrail-guardrailtopicconfig-examples): {{
+    - String}}
+  [Name](#cfn-wisdom-aiguardrail-guardrailtopicconfig-name): {{String}}
+  [Type](#cfn-wisdom-aiguardrail-guardrailtopicconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-guardrailtopicconfig-properties"></a>
 
-`Definition`
-
+`Definition`  <a name="cfn-wisdom-aiguardrail-guardrailtopicconfig-definition"></a>
 Definition of topic in topic policy.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Examples`
-
+`Examples`  <a name="cfn-wisdom-aiguardrail-guardrailtopicconfig-examples"></a>
 Text example in topic policy.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `100`
+*Minimum*: `1 | 0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `100`
-
-_Minimum_: `1 | 0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-wisdom-aiguardrail-guardrailtopicconfig-name"></a>
 Name of topic in topic policy.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z-_ !?.]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z-_ !?.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-wisdom-aiguardrail-guardrailtopicconfig-type"></a>
 Type of topic in a policy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GuardrailRegexConfig
-
-GuardrailWordConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,48 @@
 title: "AWS::KinesisAnalyticsV2::Application KinesisFirehoseInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application KinesisFirehoseInput
+<a name="aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput"></a>
 
-For a SQL-based Kinesis Data Analytics application, identifies a Kinesis Data
-Firehose delivery stream as the streaming source. You provide the delivery stream's Amazon
-Resource Name (ARN).
+For a SQL-based Kinesis Data Analytics application, identifies a Kinesis Data Firehose delivery stream as the streaming source. You provide the delivery stream's Amazon Resource Name (ARN).
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceARN" : String
+  "[ResourceARN](#cfn-kinesisanalyticsv2-application-kinesisfirehoseinput-resourcearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput-syntax.yaml"></a>
 
-```yaml
-
-  ResourceARN: String
-
+```
+  [ResourceARN](#cfn-kinesisanalyticsv2-application-kinesisfirehoseinput-resourcearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput-properties"></a>
 
-`ResourceARN`
-
+`ResourceARN`  <a name="cfn-kinesisanalyticsv2-application-kinesisfirehoseinput-resourcearn"></a>
 The Amazon Resource Name (ARN) of the delivery stream.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.*$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [KinesisFirehoseInput](../../../managed-flink/latest/apiv2/api-kinesisfirehoseinput.md) in the _Amazon Kinesis Data_
-_Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JSONMappingParameters
-
-KinesisStreamsInput
+<a name="aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput--seealso"></a>
++ [KinesisFirehoseInput](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisFirehoseInput.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

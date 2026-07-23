@@ -3,41 +3,37 @@ title: "Configuring AWS credentials using Amazon Cognito for DynamoDB"
 ---
 
 # Configuring AWS credentials using Amazon Cognito for DynamoDB
+<a name="Cognito.Credentials"></a>
 
-The recommended way to obtain AWS credentials for your web and mobile applications
-is to use Amazon Cognito. Amazon Cognito helps you avoid hardcoding your AWS credentials on your files. It
-uses AWS Identity and Access Management (IAM) roles to generate temporary credentials for your application's
-authenticated and unauthenticated users.
+The recommended way to obtain AWS credentials for your web and mobile applications is to use Amazon Cognito. Amazon Cognito helps you avoid hardcoding your AWS credentials on your files. It uses AWS Identity and Access Management (IAM) roles to generate temporary credentials for your application's authenticated and unauthenticated users.
 
-For example, to configure your JavaScript files to use an Amazon Cognito unauthenticated
-role to access the Amazon DynamoDB web service, do the following.
+ For example, to configure your JavaScript files to use an Amazon Cognito unauthenticated role to access the Amazon DynamoDB web service, do the following.
 
-###### To configure credentials to integrate with Amazon Cognito
+**To configure credentials to integrate with Amazon Cognito**
 
-1. Create an Amazon Cognito identity pool that allows unauthenticated identities.
+1.  Create an Amazon Cognito identity pool that allows unauthenticated identities.
 
-```nohighlight
-
-aws cognito-identity create-identity-pool \
+   ```
+   aws cognito-identity create-identity-pool \
        --identity-pool-name DynamoPool \
        --allow-unauthenticated-identities \
        --output json
-{
+   {
        "IdentityPoolId": "us-west-2:12345678-1ab2-123a-1234-a12345ab12",
        "AllowUnauthenticatedIdentities": true,
        "IdentityPoolName": "DynamoPool"
-}
-```
+   }
+   ```
 
-2. Copy the following policy into a file named `myCognitoPolicy.json`.
-    Replace the identity pool ID
-    ( `us-west-2:12345678-1ab2-123a-1234-a12345ab12`) with your own
-    `IdentityPoolId` obtained in the previous step.
-JSON
+1.  Copy the following policy into a file named `myCognitoPolicy.json`. Replace the identity pool ID ({{us-west-2:12345678-1ab2-123a-1234-a12345ab12}}) with your own `IdentityPoolId` obtained in the previous step.
 
-```json
+------
+#### [ JSON ]
 
-{
+****
+
+   ```
+   {
      "Version":"2012-10-17",
      "Statement": [
        {
@@ -56,73 +52,50 @@ JSON
          }
        }
      ]
-}
+   }
+   ```
 
-```
+------
 
-3. Create an IAM role that assumes the previous policy. In this way, Amazon Cognito becomes
-    a trusted entity that can assume the `Cognito_DynamoPoolUnauth` role.
+1.  Create an IAM role that assumes the previous policy. In this way, Amazon Cognito becomes a trusted entity that can assume the `Cognito_DynamoPoolUnauth` role.
 
-```nohighlight
-
-aws iam create-role --role-name Cognito_DynamoPoolUnauth \
+   ```
+   aws iam create-role --role-name Cognito_DynamoPoolUnauth \
    --assume-role-policy-document file://PathToFile/myCognitoPolicy.json --output json
-```
+   ```
 
-4. Grant the `Cognito_DynamoPoolUnauth` role full access to DynamoDB by
-    attaching a managed policy ( `AmazonDynamoDBFullAccess`).
+1.  Grant the `Cognito_DynamoPoolUnauth` role read-only access to DynamoDB by attaching a managed policy (`AmazonDynamoDBReadOnlyAccess`). Because this role is assumed by unauthenticated users, follow the principle of least privilege and grant only the permissions the role actually needs.
 
-```nohighlight
-
-aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess \
+   ```
+   aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess \
    --role-name Cognito_DynamoPoolUnauth
-```
+   ```
+**Note**
+ Alternatively, you can grant fine-grained access to DynamoDB. For more information, see [Using IAM policy conditions for fine-grained access control](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html).
 
-###### Note
+1.  Obtain and copy the IAM role Amazon Resource Name (ARN).
 
-Alternatively, you can grant fine-grained access to DynamoDB. For more information,
-see [Using IAM policy conditions for\
-fine-grained access control](specifying-conditions.md).
+   ```
+   aws iam get-role --role-name Cognito_DynamoPoolUnauth --output json
+   ```
 
-5. Obtain and copy the IAM role Amazon Resource Name (ARN).
+1.  Add the `Cognito_DynamoPoolUnauth` role to the `DynamoPool` identity pool. The format to specify is `KeyName=string`, where `KeyName` is `unauthenticated` and the string is the role ARN obtained in the previous step.
 
-```nohighlight
-
-aws iam get-role --role-name Cognito_DynamoPoolUnauth --output json
-```
-
-6. Add the `Cognito_DynamoPoolUnauth` role to the `DynamoPool`
-    identity pool. The format to specify is `KeyName=string`, where
-    `KeyName` is `unauthenticated` and the string is the role ARN
-    obtained in the previous step.
-
-```nohighlight
-
-aws cognito-identity set-identity-pool-roles \
+   ```
+   aws cognito-identity set-identity-pool-roles \
    --identity-pool-id "us-west-2:12345678-1ab2-123a-1234-a12345ab12" \
    --roles unauthenticated=arn:aws:iam::123456789012:role/Cognito_DynamoPoolUnauth --output json
-```
+   ```
 
-7. Specify the Amazon Cognito credentials in your
-    files. Modify the `IdentityPoolId` and
-    `RoleArn` accordingly.
+1.  Specify the Amazon Cognito credentials in your files. Modify the `IdentityPoolId` and `RoleArn` accordingly.
 
-```nohighlight
+   ```
+   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+   IdentityPoolId: "us-west-2:12345678-1ab2-123a-1234-a12345ab12",
+   RoleArn: "arn:aws:iam::123456789012:role/Cognito_DynamoPoolUnauth"
+   });
+   ```
 
-AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-IdentityPoolId: "us-west-2:12345678-1ab2-123a-1234-a12345ab12",
-RoleArn: "arn:aws:iam::123456789012:role/Cognito_DynamoPoolUnauth"
-});
-```
-
-You can now run your JavaScript programs against the DynamoDB web service using
-Amazon Cognito credentials. For more information, see [Setting credentials in a web browser](../../../../reference/sdk-for-javascript/latest/developer-guide/setting-credentials-browser.md)
-in the _AWS SDK for JavaScript Getting Started Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Using DynamoDB with other AWS services
-
-Integrating with Amazon Redshift
+ You can now run your JavaScript programs against the DynamoDB web service using Amazon Cognito credentials. For more information, see [Setting credentials in a web browser](https://docs.aws.amazon.com/sdk-for-javascript/latest/developer-guide/setting-credentials-browser.html) in the *AWS SDK for JavaScript Getting Started Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

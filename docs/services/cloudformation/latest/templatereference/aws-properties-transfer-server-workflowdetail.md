@@ -2,83 +2,57 @@
 title: "AWS::Transfer::Server WorkflowDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Server WorkflowDetail
+<a name="aws-properties-transfer-server-workflowdetail"></a>
 
-Specifies the workflow ID for the workflow to assign and the execution role that's
-used for executing the workflow.
+Specifies the workflow ID for the workflow to assign and the execution role that's used for executing the workflow.
 
-In addition to a workflow to execute when a file is uploaded completely,
-`WorkflowDetails` can also contain a workflow ID (and execution role) for
-a workflow to execute on partial upload. A partial upload occurs when a file is open
-when the session disconnects.
+ In addition to a workflow to execute when a file is uploaded completely, `WorkflowDetails` can also contain a workflow ID (and execution role) for a workflow to execute on partial upload. A partial upload occurs when a file is open when the session disconnects.
 
 ## Syntax
+<a name="aws-properties-transfer-server-workflowdetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-server-workflowdetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExecutionRole" : String,
-  "WorkflowId" : String
+  "[ExecutionRole](#cfn-transfer-server-workflowdetail-executionrole)" : {{String}},
+  "[WorkflowId](#cfn-transfer-server-workflowdetail-workflowid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-server-workflowdetail-syntax.yaml"></a>
 
-```yaml
-
-  ExecutionRole: String
-  WorkflowId: String
-
+```
+  [ExecutionRole](#cfn-transfer-server-workflowdetail-executionrole): {{String}}
+  [WorkflowId](#cfn-transfer-server-workflowdetail-workflowid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-server-workflowdetail-properties"></a>
 
-`ExecutionRole`
+`ExecutionRole`  <a name="cfn-transfer-server-workflowdetail-executionrole"></a>
+Includes the necessary permissions for S3, EFS, and Lambda operations that Transfer can assume, so that all workflow steps can operate on the required resources
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.*role/\S+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Includes the necessary permissions for S3, EFS, and Lambda operations that Transfer
-can assume, so that all workflow steps can operate on the required resources
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.*role/\S+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkflowId`
-
+`WorkflowId`  <a name="cfn-transfer-server-workflowdetail-workflowid"></a>
 A unique identifier for the workflow.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^w-([a-z0-9]{17})$`
-
-_Minimum_: `19`
-
-_Maximum_: `19`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-WorkflowDetails
+*Required*: Yes
+*Type*: String
+*Pattern*: `^w-([a-z0-9]{17})$`
+*Minimum*: `19`
+*Maximum*: `19`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

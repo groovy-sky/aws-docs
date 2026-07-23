@@ -2,76 +2,55 @@
 title: "AWS::Transfer::Workflow EfsInputFileLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Workflow EfsInputFileLocation
+<a name="aws-properties-transfer-workflow-efsinputfilelocation"></a>
 
 Specifies the Amazon EFS identifier and the path for the file being used.
 
 ## Syntax
+<a name="aws-properties-transfer-workflow-efsinputfilelocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-workflow-efsinputfilelocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "FileSystemId" : String,
-  "Path" : String
+  "[FileSystemId](#cfn-transfer-workflow-efsinputfilelocation-filesystemid)" : {{String}},
+  "[Path](#cfn-transfer-workflow-efsinputfilelocation-path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-workflow-efsinputfilelocation-syntax.yaml"></a>
 
-```yaml
-
-  FileSystemId: String
-  Path: String
-
+```
+  [FileSystemId](#cfn-transfer-workflow-efsinputfilelocation-filesystemid): {{String}}
+  [Path](#cfn-transfer-workflow-efsinputfilelocation-path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-workflow-efsinputfilelocation-properties"></a>
 
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-transfer-workflow-efsinputfilelocation-filesystemid"></a>
 The identifier of the file system, assigned by Amazon EFS.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:aws[-a-z]*:elasticfilesystem:[0-9a-z-:]+:(access-point/fsap|file-system/fs)-[0-9a-f]{8,40}|fs(ap)?-[0-9a-f]{8,40})$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(arn:aws[-a-z]*:elasticfilesystem:[0-9a-z-:]+:(access-point/fsap|file-system/fs)-[0-9a-f]{8,40}|fs(ap)?-[0-9a-f]{8,40})$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Path`
-
+`Path`  <a name="cfn-transfer-workflow-efsinputfilelocation-path"></a>
 The pathname for the folder being used by a workflow.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[^\x00]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `65536`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeleteStepDetails
-
-InputFileLocation
+*Required*: No
+*Type*: String
+*Pattern*: `^[^\x00]+$`
+*Minimum*: `1`
+*Maximum*: `65536`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

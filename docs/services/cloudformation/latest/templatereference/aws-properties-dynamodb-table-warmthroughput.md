@@ -2,73 +2,51 @@
 title: "AWS::DynamoDB::Table WarmThroughput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table WarmThroughput
+<a name="aws-properties-dynamodb-table-warmthroughput"></a>
 
-Provides visibility into the number of read and write operations your table or
-secondary index can instantaneously support. The settings can be modified using the
-`UpdateTable` operation to meet the throughput requirements of an
-upcoming peak event.
+Provides visibility into the number of read and write operations your table or secondary index can instantaneously support. The settings can be modified using the `UpdateTable` operation to meet the throughput requirements of an upcoming peak event.
 
 ## Syntax
+<a name="aws-properties-dynamodb-table-warmthroughput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-table-warmthroughput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReadUnitsPerSecond" : Integer,
-  "WriteUnitsPerSecond" : Integer
+  "[ReadUnitsPerSecond](#cfn-dynamodb-table-warmthroughput-readunitspersecond)" : {{Integer}},
+  "[WriteUnitsPerSecond](#cfn-dynamodb-table-warmthroughput-writeunitspersecond)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-table-warmthroughput-syntax.yaml"></a>
 
-```yaml
-
-  ReadUnitsPerSecond: Integer
-  WriteUnitsPerSecond: Integer
-
+```
+  [ReadUnitsPerSecond](#cfn-dynamodb-table-warmthroughput-readunitspersecond): {{Integer}}
+  [WriteUnitsPerSecond](#cfn-dynamodb-table-warmthroughput-writeunitspersecond): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-table-warmthroughput-properties"></a>
 
-`ReadUnitsPerSecond`
+`ReadUnitsPerSecond`  <a name="cfn-dynamodb-table-warmthroughput-readunitspersecond"></a>
+Represents the number of read operations your base table can instantaneously support.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Represents the number of read operations your base table can instantaneously
-support.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WriteUnitsPerSecond`
-
-Represents the number of write operations your base table can instantaneously
-support.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeToLiveSpecification
-
-Next
+`WriteUnitsPerSecond`  <a name="cfn-dynamodb-table-warmthroughput-writeunitspersecond"></a>
+Represents the number of write operations your base table can instantaneously support.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

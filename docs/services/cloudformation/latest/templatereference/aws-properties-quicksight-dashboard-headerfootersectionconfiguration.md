@@ -2,84 +2,62 @@
 title: "AWS::QuickSight::Dashboard HeaderFooterSectionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard HeaderFooterSectionConfiguration
+<a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration"></a>
 
 The configuration of a header or footer section.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Layout" : SectionLayoutConfiguration,
-  "SectionId" : String,
-  "Style" : SectionStyle
+  "[Layout](#cfn-quicksight-dashboard-headerfootersectionconfiguration-layout)" : {{SectionLayoutConfiguration}},
+  "[SectionId](#cfn-quicksight-dashboard-headerfootersectionconfiguration-sectionid)" : {{String}},
+  "[Style](#cfn-quicksight-dashboard-headerfootersectionconfiguration-style)" : {{SectionStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Layout:
-    SectionLayoutConfiguration
-  SectionId: String
-  Style:
-    SectionStyle
-
+```
+  [Layout](#cfn-quicksight-dashboard-headerfootersectionconfiguration-layout): {{
+    SectionLayoutConfiguration}}
+  [SectionId](#cfn-quicksight-dashboard-headerfootersectionconfiguration-sectionid): {{String}}
+  [Style](#cfn-quicksight-dashboard-headerfootersectionconfiguration-style): {{
+    SectionStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration-properties"></a>
 
-`Layout`
-
+`Layout`  <a name="cfn-quicksight-dashboard-headerfootersectionconfiguration-layout"></a>
 The layout configuration of the header or footer section.
+*Required*: Yes
+*Type*: [SectionLayoutConfiguration](aws-properties-quicksight-dashboard-sectionlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SectionLayoutConfiguration](aws-properties-quicksight-dashboard-sectionlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SectionId`
-
+`SectionId`  <a name="cfn-quicksight-dashboard-headerfootersectionconfiguration-sectionid"></a>
 The unique identifier of the header or footer section.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Style`
-
+`Style`  <a name="cfn-quicksight-dashboard-headerfootersectionconfiguration-style"></a>
 The style options of a header or footer section.
-
-_Required_: No
-
-_Type_: [SectionStyle](aws-properties-quicksight-dashboard-sectionstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GrowthRateComputation
-
-HeatMapAggregatedFieldWells
+*Required*: No
+*Type*: [SectionStyle](aws-properties-quicksight-dashboard-sectionstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

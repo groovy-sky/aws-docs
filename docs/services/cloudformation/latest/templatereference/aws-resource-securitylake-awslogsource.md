@@ -2,125 +2,101 @@
 title: "AWS::SecurityLake::AwsLogSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::AwsLogSource
+<a name="aws-resource-securitylake-awslogsource"></a>
 
 Adds a natively supported AWS service as an AWS source. Enables source types for member accounts in required AWS Regions, based on the parameters you specify. You can choose any source type in any Region for either accounts that are part of a trusted organization or standalone accounts. Once you add an AWS service as a source, Security Lake starts collecting logs and events from it.
 
-###### Important
-
-If you want to create multiple sources using
-`AWS::SecurityLake::AwsLogSource`, you must use the
-`DependsOn` attribute to create the sources sequentially. With the
-`DependsOn` attribute you can specify that the creation
-of a specific `AWSLogSource` follows another. When you add a
-`DependsOn` attribute to a resource, that resource is
-created only after the creation of the resource specified in the
-`DependsOn` attribute. For an example, see [Add AWS log sources](../userguide/aws-resource-securitylake-awslogsource.md#aws-resource-securitylake-awslogsource--examples).
+**Important**
+If you want to create multiple sources using `AWS::SecurityLake::AwsLogSource`, you must use the `DependsOn` attribute to create the sources sequentially. With the `DependsOn` attribute you can specify that the creation of a specific `AWSLogSource`follows another. When you add a `DependsOn` attribute to a resource, that resource is created only after the creation of the resource specified in the `DependsOn` attribute. For an example, see [Add AWS log sources](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-resource-securitylake-awslogsource.html#aws-resource-securitylake-awslogsource--examples).
 
 ## Syntax
+<a name="aws-resource-securitylake-awslogsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securitylake-awslogsource-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityLake::AwsLogSource",
   "Properties" : {
-      "Accounts" : [ String, ... ],
-      "DataLakeArn" : String,
-      "SourceName" : String,
-      "SourceVersion" : String
+      "[Accounts](#cfn-securitylake-awslogsource-accounts)" : {{[ String, ... ]}},
+      "[DataLakeArn](#cfn-securitylake-awslogsource-datalakearn)" : {{String}},
+      "[SourceName](#cfn-securitylake-awslogsource-sourcename)" : {{String}},
+      "[SourceVersion](#cfn-securitylake-awslogsource-sourceversion)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securitylake-awslogsource-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityLake::AwsLogSource
 Properties:
-  Accounts:
-    - String
-  DataLakeArn: String
-  SourceName: String
-  SourceVersion: String
-
+  [Accounts](#cfn-securitylake-awslogsource-accounts): {{
+    - String}}
+  [DataLakeArn](#cfn-securitylake-awslogsource-datalakearn): {{String}}
+  [SourceName](#cfn-securitylake-awslogsource-sourcename): {{String}}
+  [SourceVersion](#cfn-securitylake-awslogsource-sourceversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-securitylake-awslogsource-properties"></a>
 
-`Accounts`
-
+`Accounts`  <a name="cfn-securitylake-awslogsource-accounts"></a>
 Specify the AWS account information where you want to enable Security Lake.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLakeArn`
-
+`DataLakeArn`  <a name="cfn-securitylake-awslogsource-datalakearn"></a>
 The Amazon Resource Name (ARN) used to create the data lake.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`SourceName`  <a name="cfn-securitylake-awslogsource-sourcename"></a>
+The name for a AWS source. This must be a Regionally unique value. For the list of sources supported by Amazon Security Lake see [Collecting data from AWS services](https://docs.aws.amazon.com//security-lake/latest/userguide/internal-sources.html) in the Amazon Security Lake User Guide.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceName`
-
-The name for a AWS source. This must be a Regionally unique value. For the list of sources supported by Amazon Security Lake see [Collecting data from AWS services](../../../security-lake/latest/userguide/internal-sources.md) in the Amazon Security Lake User Guide.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceVersion`
-
-The version for a AWS source. For more details about source versions supported by Amazon Security Lake see [OCSF source identification](../../../security-lake/latest/userguide/open-cybersecurity-schema-framework.md#ocsf-source-identification) in the Amazon Security Lake User Guide. This must be a Regionally unique value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(latest|[0-9]\.[0-9])$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`SourceVersion`  <a name="cfn-securitylake-awslogsource-sourceversion"></a>
+The version for a AWS source. For more details about source versions supported by Amazon Security Lake see [OCSF source identification](https://docs.aws.amazon.com//security-lake/latest/userguide/open-cybersecurity-schema-framework.html#ocsf-source-identification) in the Amazon Security Lake User Guide. This must be a Regionally unique value.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(latest|[0-9]\.[0-9])$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-securitylake-awslogsource-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securitylake-awslogsource-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `ref` function, `ref` returns the `AwsLogSource` name. For example, `VPC_FLOW`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-securitylake-awslogsource--examples"></a>
 
 ### Add AWS log sources
+<a name="aws-resource-securitylake-awslogsource--examples--Add_log_sources"></a>
 
 After deploying Security Lake, use this example to add AWS log sources.
 
 #### JSON
+<a name="aws-resource-securitylake-awslogsource--examples--Add_log_sources--json"></a>
 
-```json
-
+```
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Description": "Security Lake Already Deployed",
@@ -206,9 +182,9 @@ After deploying Security Lake, use this example to add AWS log sources.
 ```
 
 #### YAML
+<a name="aws-resource-securitylake-awslogsource--examples--Add_log_sources--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Security Lake Already Deployed
 Resources:
@@ -260,13 +236,6 @@ Resources:
       SourceName: EKS_AUDIT
       SourceVersion: "2.0"
     DependsOn: SecurityLakeSourcesS3
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Security Lake
-
-AWS::SecurityLake::DataLake
 
 All content copied from https://docs.aws.amazon.com/.

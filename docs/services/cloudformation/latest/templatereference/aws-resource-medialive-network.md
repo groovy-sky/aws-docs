@@ -2,118 +2,101 @@
 title: "AWS::MediaLive::Network"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Network
+<a name="aws-resource-medialive-network"></a>
 
-The `AWS::MediaLive::Network` resource Property description not available. for MediaLive.
+Creates a network. A network is used to connect MediaLive clusters to your on-premises equipment.
 
 ## Syntax
+<a name="aws-resource-medialive-network-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-medialive-network-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaLive::Network",
   "Properties" : {
-      "IpPools" : [ IpPool, ... ],
-      "Name" : String,
-      "Routes" : [ Route, ... ],
-      "Tags" : [ Tags, ... ]
+      "[IpPools](#cfn-medialive-network-ippools)" : {{[ IpPool, ... ]}},
+      "[Name](#cfn-medialive-network-name)" : {{String}},
+      "[Routes](#cfn-medialive-network-routes)" : {{[ Route, ... ]}},
+      "[Tags](#cfn-medialive-network-tags)" : {{[ Tags, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-medialive-network-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaLive::Network
 Properties:
-  IpPools:
-    - IpPool
-  Name: String
-  Routes:
-    - Route
-  Tags:
-    - Tags
-
+  [IpPools](#cfn-medialive-network-ippools): {{
+    - IpPool}}
+  [Name](#cfn-medialive-network-name): {{String}}
+  [Routes](#cfn-medialive-network-routes): {{
+    - Route}}
+  [Tags](#cfn-medialive-network-tags): {{
+    - Tags}}
 ```
 
 ## Properties
+<a name="aws-resource-medialive-network-properties"></a>
 
-`IpPools`
+`IpPools`  <a name="cfn-medialive-network-ippools"></a>
+The list of IP address CIDR pools for the network.
+*Required*: Yes
+*Type*: Array of [IpPool](aws-properties-medialive-network-ippool.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Name`  <a name="cfn-medialive-network-name"></a>
+The user-specified name of the network.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Routes`  <a name="cfn-medialive-network-routes"></a>
+The routes for the network.
+*Required*: No
+*Type*: Array of [Route](aws-properties-medialive-network-route.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-medialive-network-tags"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [IpPool](aws-properties-medialive-network-ippool.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Routes`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Route](aws-properties-medialive-network-route.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: [Array](aws-properties-medialive-network-tags.md) of [Tags](aws-properties-medialive-network-tags.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [Array](aws-properties-medialive-network-tags.md) of [Tags](aws-properties-medialive-network-tags.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-medialive-network-return-values"></a>
 
 ### Ref
+<a name="aws-resource-medialive-network-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-medialive-network-return-values-fn--getatt"></a>
 
-`Arn`
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+
+####
+<a name="aws-resource-medialive-network-return-values-fn--getatt-fn--getatt"></a>
+
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the network.
 
-`AssociatedClusterIds`
-
+`AssociatedClusterIds`  <a name="AssociatedClusterIds-fn::getatt"></a>
 The IDs of the clusters associated with this network.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The unique ID of the network.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The current state of the network.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiplexVideoSettings
-
-IpPool
 
 All content copied from https://docs.aws.amazon.com/.

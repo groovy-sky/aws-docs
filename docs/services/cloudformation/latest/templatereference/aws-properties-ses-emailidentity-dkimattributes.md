@@ -2,56 +2,42 @@
 title: "AWS::SES::EmailIdentity DkimAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::EmailIdentity DkimAttributes
+<a name="aws-properties-ses-emailidentity-dkimattributes"></a>
 
 Used to enable or disable DKIM authentication for an email identity.
 
 ## Syntax
+<a name="aws-properties-ses-emailidentity-dkimattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-emailidentity-dkimattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "SigningEnabled" : Boolean
+  "[SigningEnabled](#cfn-ses-emailidentity-dkimattributes-signingenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-emailidentity-dkimattributes-syntax.yaml"></a>
 
-```yaml
-
-  SigningEnabled: Boolean
-
+```
+  [SigningEnabled](#cfn-ses-emailidentity-dkimattributes-signingenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-emailidentity-dkimattributes-properties"></a>
 
-`SigningEnabled`
-
+`SigningEnabled`  <a name="cfn-ses-emailidentity-dkimattributes-signingenabled"></a>
 Sets the DKIM signing configuration for the identity.
-
-When you set this value `true`, then the messages that are sent from the
-identity are signed using DKIM. If you set this value to `false`, your
-messages are sent without DKIM signing.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationSetAttributes
-
-DkimSigningAttributes
+ When you set this value `true`, then the messages that are sent from the identity are signed using DKIM. If you set this value to `false`, your messages are sent without DKIM signing.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

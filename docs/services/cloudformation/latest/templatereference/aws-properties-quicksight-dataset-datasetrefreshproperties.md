@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::DataSet DataSetRefreshProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataSetRefreshProperties
+<a name="aws-properties-quicksight-dataset-datasetrefreshproperties"></a>
 
 The refresh properties of a dataset.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datasetrefreshproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datasetrefreshproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "FailureConfiguration" : RefreshFailureConfiguration,
-  "RefreshConfiguration" : RefreshConfiguration
+  "[FailureConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-failureconfiguration)" : {{RefreshFailureConfiguration}},
+  "[RefreshConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-refreshconfiguration)" : {{RefreshConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datasetrefreshproperties-syntax.yaml"></a>
 
-```yaml
-
-  FailureConfiguration:
-    RefreshFailureConfiguration
-  RefreshConfiguration:
-    RefreshConfiguration
-
+```
+  [FailureConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-failureconfiguration): {{
+    RefreshFailureConfiguration}}
+  [RefreshConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-refreshconfiguration): {{
+    RefreshConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datasetrefreshproperties-properties"></a>
 
-`FailureConfiguration`
-
+`FailureConfiguration`  <a name="cfn-quicksight-dataset-datasetrefreshproperties-failureconfiguration"></a>
 The failure configuration for a dataset.
+*Required*: No
+*Type*: [RefreshFailureConfiguration](aws-properties-quicksight-dataset-refreshfailureconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RefreshFailureConfiguration](aws-properties-quicksight-dataset-refreshfailureconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefreshConfiguration`
-
+`RefreshConfiguration`  <a name="cfn-quicksight-dataset-datasetrefreshproperties-refreshconfiguration"></a>
 The refresh configuration for a dataset.
-
-_Required_: No
-
-_Type_: [RefreshConfiguration](aws-properties-quicksight-dataset-refreshconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatasetParameter
-
-DataSetStringComparisonFilterCondition
+*Required*: No
+*Type*: [RefreshConfiguration](aws-properties-quicksight-dataset-refreshconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

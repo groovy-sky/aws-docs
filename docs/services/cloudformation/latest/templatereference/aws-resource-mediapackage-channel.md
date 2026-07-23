@@ -2,150 +2,120 @@
 title: "AWS::MediaPackage::Channel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::Channel
+<a name="aws-resource-mediapackage-channel"></a>
 
 Creates a channel to receive content.
 
-After it's created, a channel provides static input URLs. These URLs remain the same throughout the lifetime of the channel, regardless of any failures or upgrades that might
-occur. Use these URLs to configure the outputs of your upstream encoder.
+After it's created, a channel provides static input URLs. These URLs remain the same throughout the lifetime of the channel, regardless of any failures or upgrades that might occur. Use these URLs to configure the outputs of your upstream encoder.
 
 ## Syntax
+<a name="aws-resource-mediapackage-channel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-mediapackage-channel-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaPackage::Channel",
   "Properties" : {
-      "Description" : String,
-      "EgressAccessLogs" : LogConfiguration,
-      "HlsIngest" : HlsIngest,
-      "Id" : String,
-      "IngressAccessLogs" : LogConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-mediapackage-channel-description)" : {{String}},
+      "[EgressAccessLogs](#cfn-mediapackage-channel-egressaccesslogs)" : {{LogConfiguration}},
+      "[HlsIngest](#cfn-mediapackage-channel-hlsingest)" : {{HlsIngest}},
+      "[Id](#cfn-mediapackage-channel-id)" : {{String}},
+      "[IngressAccessLogs](#cfn-mediapackage-channel-ingressaccesslogs)" : {{LogConfiguration}},
+      "[Tags](#cfn-mediapackage-channel-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-mediapackage-channel-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaPackage::Channel
 Properties:
-  Description: String
-  EgressAccessLogs:
-    LogConfiguration
-  HlsIngest:
-    HlsIngest
-  Id: String
-  IngressAccessLogs:
-    LogConfiguration
-  Tags:
-    - Tag
-
+  [Description](#cfn-mediapackage-channel-description): {{String}}
+  [EgressAccessLogs](#cfn-mediapackage-channel-egressaccesslogs): {{
+    LogConfiguration}}
+  [HlsIngest](#cfn-mediapackage-channel-hlsingest): {{
+    HlsIngest}}
+  [Id](#cfn-mediapackage-channel-id): {{String}}
+  [IngressAccessLogs](#cfn-mediapackage-channel-ingressaccesslogs): {{
+    LogConfiguration}}
+  [Tags](#cfn-mediapackage-channel-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-mediapackage-channel-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-mediapackage-channel-description"></a>
 Any descriptive information that you want to add to the channel for future identification purposes.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EgressAccessLogs`
-
+`EgressAccessLogs`  <a name="cfn-mediapackage-channel-egressaccesslogs"></a>
 Configures egress access logs.
+*Required*: No
+*Type*: [LogConfiguration](aws-properties-mediapackage-channel-logconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LogConfiguration](aws-properties-mediapackage-channel-logconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HlsIngest`
-
+`HlsIngest`  <a name="cfn-mediapackage-channel-hlsingest"></a>
 The input URL where the source stream should be sent.
+*Required*: No
+*Type*: [HlsIngest](aws-properties-mediapackage-channel-hlsingest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HlsIngest](aws-properties-mediapackage-channel-hlsingest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-mediapackage-channel-id"></a>
 Unique identifier that you assign to the channel.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\A[0-9a-zA-Z-_]+\Z`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\A[0-9a-zA-Z-_]+\Z`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IngressAccessLogs`
-
+`IngressAccessLogs`  <a name="cfn-mediapackage-channel-ingressaccesslogs"></a>
 Configures ingress access logs.
+*Required*: No
+*Type*: [LogConfiguration](aws-properties-mediapackage-channel-logconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LogConfiguration](aws-properties-mediapackage-channel-logconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-mediapackage-channel-tags"></a>
 The tags to assign to the channel.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-mediapackage-channel-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-mediapackage-channel-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-mediapackage-channel-return-values"></a>
 
 ### Ref
+<a name="aws-resource-mediapackage-channel-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the channel.
 
 For example: `{ "Ref": "myChannel" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-mediapackage-channel-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-mediapackage-channel-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The channel's unique system-generated resource name, based on the AWS record.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-HlsIngest
 
 All content copied from https://docs.aws.amazon.com/.

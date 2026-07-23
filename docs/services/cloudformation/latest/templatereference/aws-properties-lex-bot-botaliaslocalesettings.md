@@ -2,68 +2,50 @@
 title: "AWS::Lex::Bot BotAliasLocaleSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BotAliasLocaleSettings
+<a name="aws-properties-lex-bot-botaliaslocalesettings"></a>
 
-Specifies settings that are unique to a locale. For example, you can
-use different Lambda function depending on the bot's locale.
+Specifies settings that are unique to a locale. For example, you can use different Lambda function depending on the bot's locale.
 
 ## Syntax
+<a name="aws-properties-lex-bot-botaliaslocalesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-botaliaslocalesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "CodeHookSpecification" : CodeHookSpecification,
-  "Enabled" : Boolean
+  "[CodeHookSpecification](#cfn-lex-bot-botaliaslocalesettings-codehookspecification)" : {{CodeHookSpecification}},
+  "[Enabled](#cfn-lex-bot-botaliaslocalesettings-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-botaliaslocalesettings-syntax.yaml"></a>
 
-```yaml
-
-  CodeHookSpecification:
-    CodeHookSpecification
-  Enabled: Boolean
-
+```
+  [CodeHookSpecification](#cfn-lex-bot-botaliaslocalesettings-codehookspecification): {{
+    CodeHookSpecification}}
+  [Enabled](#cfn-lex-bot-botaliaslocalesettings-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-botaliaslocalesettings-properties"></a>
 
-`CodeHookSpecification`
+`CodeHookSpecification`  <a name="cfn-lex-bot-botaliaslocalesettings-codehookspecification"></a>
+Specifies the Lambda function that should be used in the locale.
+*Required*: No
+*Type*: [CodeHookSpecification](aws-properties-lex-bot-codehookspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the Lambda function that should be used in the
-locale.
-
-_Required_: No
-
-_Type_: [CodeHookSpecification](aws-properties-lex-bot-codehookspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-Determines whether the locale is enabled for the bot. If the value
-is `false`, the locale isn't available for use.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BKBExactResponseFields
-
-BotAliasLocaleSettingsItem
+`Enabled`  <a name="cfn-lex-bot-botaliaslocalesettings-enabled"></a>
+Determines whether the locale is enabled for the bot. If the value is `false`, the locale isn't available for use.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

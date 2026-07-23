@@ -2,92 +2,66 @@
 title: "AWS::SageMaker::ProcessingJob AppSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ProcessingJob AppSpecification
+<a name="aws-properties-sagemaker-processingjob-appspecification"></a>
 
 Configuration to run a processing job in a specified container image.
 
 ## Syntax
+<a name="aws-properties-sagemaker-processingjob-appspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-processingjob-appspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerArguments" : [ String, ... ],
-  "ContainerEntrypoint" : [ String, ... ],
-  "ImageUri" : String
+  "[ContainerArguments](#cfn-sagemaker-processingjob-appspecification-containerarguments)" : {{[ String, ... ]}},
+  "[ContainerEntrypoint](#cfn-sagemaker-processingjob-appspecification-containerentrypoint)" : {{[ String, ... ]}},
+  "[ImageUri](#cfn-sagemaker-processingjob-appspecification-imageuri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-processingjob-appspecification-syntax.yaml"></a>
 
-```yaml
-
-  ContainerArguments:
-    - String
-  ContainerEntrypoint:
-    - String
-  ImageUri: String
-
+```
+  [ContainerArguments](#cfn-sagemaker-processingjob-appspecification-containerarguments): {{
+    - String}}
+  [ContainerEntrypoint](#cfn-sagemaker-processingjob-appspecification-containerentrypoint): {{
+    - String}}
+  [ImageUri](#cfn-sagemaker-processingjob-appspecification-imageuri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-processingjob-appspecification-properties"></a>
 
-`ContainerArguments`
-
+`ContainerArguments`  <a name="cfn-sagemaker-processingjob-appspecification-containerarguments"></a>
 The arguments for a container used to run a processing job.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0 | 0`
+*Maximum*: `256 | 100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0 | 0`
-
-_Maximum_: `256 | 100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ContainerEntrypoint`
-
+`ContainerEntrypoint`  <a name="cfn-sagemaker-processingjob-appspecification-containerentrypoint"></a>
 The entrypoint for a container used to run a processing job.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0 | 0`
+*Maximum*: `256 | 100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0 | 0`
-
-_Maximum_: `256 | 100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ImageUri`
-
+`ImageUri`  <a name="cfn-sagemaker-processingjob-appspecification-imageuri"></a>
 The container image to be run by the processing job.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::ProcessingJob
-
-AthenaDatasetDefinition
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

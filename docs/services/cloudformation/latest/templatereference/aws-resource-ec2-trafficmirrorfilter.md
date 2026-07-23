@@ -2,105 +2,93 @@
 title: "AWS::EC2::TrafficMirrorFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TrafficMirrorFilter
+<a name="aws-resource-ec2-trafficmirrorfilter"></a>
 
 Specifies a Traffic Mirror filter.
 
 A Traffic Mirror filter is a set of rules that defines the traffic to mirror.
 
-By default, no traffic is mirrored. To mirror traffic, use [AWS::EC2::TrafficMirrorFilterRule](../userguide/aws-resource-ec2-trafficmirrorfilterrule.md) to add Traffic Mirror rules to the filter.
-The rules you add define what traffic gets mirrored.
+By default, no traffic is mirrored. To mirror traffic, use [AWS::EC2::TrafficMirrorFilterRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html) to add Traffic Mirror rules to the filter. The rules you add define what traffic gets mirrored.
 
 ## Syntax
+<a name="aws-resource-ec2-trafficmirrorfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-trafficmirrorfilter-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::TrafficMirrorFilter",
   "Properties" : {
-      "Description" : String,
-      "NetworkServices" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-ec2-trafficmirrorfilter-description)" : {{String}},
+      "[NetworkServices](#cfn-ec2-trafficmirrorfilter-networkservices)" : {{[ String, ... ]}},
+      "[Tags](#cfn-ec2-trafficmirrorfilter-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-trafficmirrorfilter-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::TrafficMirrorFilter
 Properties:
-  Description: String
-  NetworkServices:
-    - String
-  Tags:
-    - Tag
-
+  [Description](#cfn-ec2-trafficmirrorfilter-description): {{String}}
+  [NetworkServices](#cfn-ec2-trafficmirrorfilter-networkservices): {{
+    - String}}
+  [Tags](#cfn-ec2-trafficmirrorfilter-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-trafficmirrorfilter-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-ec2-trafficmirrorfilter-description"></a>
 The description of the Traffic Mirror filter.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkServices`
-
+`NetworkServices`  <a name="cfn-ec2-trafficmirrorfilter-networkservices"></a>
 The network service traffic that is associated with the Traffic Mirror filter.
-
 Valid values are `amazon-dns`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-trafficmirrorfilter-tags"></a>
 The tags to assign to a Traffic Mirror filter.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-trafficmirrorfilter-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-trafficmirrorfilter-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-trafficmirrorfilter-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-trafficmirrorfilter-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the Traffic Mirror filter.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ec2-trafficmirrorfilter--examples"></a>
 
 ### Create a traffic mirror filter
+<a name="aws-resource-ec2-trafficmirrorfilter--examples--Create_a_traffic_mirror_filter"></a>
 
-This is a filter that you can use when you create a traffic mirror session. This
-filter also configures mirroring of Amazon DNS network services.
+This is a filter that you can use when you create a traffic mirror session. This filter also configures mirroring of Amazon DNS network services.
 
 #### JSON
+<a name="aws-resource-ec2-trafficmirrorfilter--examples--Create_a_traffic_mirror_filter--json"></a>
 
-```json
-
+```
 {
   "SampleTrafficMirrorFilter": {
     "Type": "AWS::EC2::TrafficMirrorFilter",
@@ -118,13 +106,12 @@ filter also configures mirroring of Amazon DNS network services.
     }
   }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-ec2-trafficmirrorfilter--examples--Create_a_traffic_mirror_filter--yaml"></a>
 
-```yaml
-
+```
 SampleTrafficMirrorFilter:
   Type: "AWS::EC2::TrafficMirrorFilter"
   Properties:
@@ -134,22 +121,11 @@ SampleTrafficMirrorFilter:
     Tags:
     - Key: "Name"
       Value: "SampleFilter"
-
 ```
 
 ## See also
-
-- [Traffic mirror\
-filters and filter rules](../../../vpc/latest/mirroring/traffic-mirroring-filters.md) in _Traffic_
-_Mirroring_
-
-- [CreateTrafficMirrorFilter](../../../../reference/awsec2/latest/apireference/api-createtrafficmirrorfilter.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::SubnetRouteTableAssociation
-
-Tag
+<a name="aws-resource-ec2-trafficmirrorfilter--seealso"></a>
++ [Traffic mirror filters and filter rules](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-filters.html) in *Traffic Mirroring*
++ [CreateTrafficMirrorFilter](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTrafficMirrorFilter.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,55 +2,42 @@
 title: "AWS::Logs::Integration ResourceConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Integration ResourceConfig
+<a name="aws-properties-logs-integration-resourceconfig"></a>
 
-This structure contains configuration details about an integration between CloudWatch
-Logs and another entity.
+This structure contains configuration details about an integration between CloudWatch Logs and another entity.
 
 ## Syntax
+<a name="aws-properties-logs-integration-resourceconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-integration-resourceconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "OpenSearchResourceConfig" : OpenSearchResourceConfig
+  "[OpenSearchResourceConfig](#cfn-logs-integration-resourceconfig-opensearchresourceconfig)" : {{OpenSearchResourceConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-integration-resourceconfig-syntax.yaml"></a>
 
-```yaml
-
-  OpenSearchResourceConfig:
-    OpenSearchResourceConfig
-
+```
+  [OpenSearchResourceConfig](#cfn-logs-integration-resourceconfig-opensearchresourceconfig): {{
+    OpenSearchResourceConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-integration-resourceconfig-properties"></a>
 
-`OpenSearchResourceConfig`
-
-This structure contains configuration details about an integration between CloudWatch
-Logs and OpenSearch Service.
-
-_Required_: No
-
-_Type_: [OpenSearchResourceConfig](aws-properties-logs-integration-opensearchresourceconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OpenSearchResourceConfig
-
-AWS::Logs::LogAnomalyDetector
+`OpenSearchResourceConfig`  <a name="cfn-logs-integration-resourceconfig-opensearchresourceconfig"></a>
+This structure contains configuration details about an integration between CloudWatch Logs and OpenSearch Service.
+*Required*: No
+*Type*: [OpenSearchResourceConfig](aws-properties-logs-integration-opensearchresourceconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

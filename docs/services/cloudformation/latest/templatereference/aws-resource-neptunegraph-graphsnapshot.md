@@ -2,118 +2,95 @@
 title: "AWS::NeptuneGraph::GraphSnapshot"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NeptuneGraph::GraphSnapshot
+<a name="aws-resource-neptunegraph-graphsnapshot"></a>
 
-The `AWS::NeptuneGraph::GraphSnapshot` resource Property description not available. for NeptuneGraph.
+<a name="aws-resource-neptunegraph-graphsnapshot-description"></a>The `AWS::NeptuneGraph::GraphSnapshot` resource Property description not available. for NeptuneGraph.
 
 ## Syntax
+<a name="aws-resource-neptunegraph-graphsnapshot-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-neptunegraph-graphsnapshot-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NeptuneGraph::GraphSnapshot",
   "Properties" : {
-      "GraphIdentifier" : String,
-      "SnapshotName" : String,
-      "Tags" : [ Tag, ... ]
+      "[GraphIdentifier](#cfn-neptunegraph-graphsnapshot-graphidentifier)" : {{String}},
+      "[SnapshotName](#cfn-neptunegraph-graphsnapshot-snapshotname)" : {{String}},
+      "[Tags](#cfn-neptunegraph-graphsnapshot-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-neptunegraph-graphsnapshot-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NeptuneGraph::GraphSnapshot
 Properties:
-  GraphIdentifier: String
-  SnapshotName: String
-  Tags:
-    - Tag
-
+  [GraphIdentifier](#cfn-neptunegraph-graphsnapshot-graphidentifier): {{String}}
+  [SnapshotName](#cfn-neptunegraph-graphsnapshot-snapshotname): {{String}}
+  [Tags](#cfn-neptunegraph-graphsnapshot-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-neptunegraph-graphsnapshot-properties"></a>
 
-`GraphIdentifier`
-
+`GraphIdentifier`  <a name="cfn-neptunegraph-graphsnapshot-graphidentifier"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^g-[a-z0-9]{10}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^g-[a-z0-9]{10}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SnapshotName`
-
+`SnapshotName`  <a name="cfn-neptunegraph-graphsnapshot-snapshotname"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!gs-)[a-z][a-z0-9]*(-[a-z0-9]+)*$`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!gs-)[a-z][a-z0-9]*(-[a-z0-9]+)*$`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-neptunegraph-graphsnapshot-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-neptunegraph-graphsnapshot-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-neptunegraph-graphsnapshot-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-neptunegraph-graphsnapshot-return-values"></a>
 
 ### Ref
+<a name="aws-resource-neptunegraph-graphsnapshot-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-neptunegraph-graphsnapshot-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-neptunegraph-graphsnapshot-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the graph snapshot.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The unique identifier of the graph snapshot.
 
-`KmsKeyIdentifier`
-
+`KmsKeyIdentifier`  <a name="KmsKeyIdentifier-fn::getatt"></a>
 The ID of the KMS key used to encrypt and decrypt the snapshot.
 
-`SnapshotCreateTime`
-
+`SnapshotCreateTime`  <a name="SnapshotCreateTime-fn::getatt"></a>
 The time when the snapshot was created.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the graph snapshot.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VectorSearchConfiguration
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

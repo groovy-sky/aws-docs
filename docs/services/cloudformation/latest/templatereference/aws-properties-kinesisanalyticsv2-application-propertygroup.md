@@ -2,82 +2,60 @@
 title: "AWS::KinesisAnalyticsV2::Application PropertyGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application PropertyGroup
+<a name="aws-properties-kinesisanalyticsv2-application-propertygroup"></a>
 
 Property key-value pairs passed into an application.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-propertygroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-propertygroup-syntax.json"></a>
 
-```json
-
+```
 {
-  "PropertyGroupId" : String,
-  "PropertyMap" : {Key: Value, ...}
+  "[PropertyGroupId](#cfn-kinesisanalyticsv2-application-propertygroup-propertygroupid)" : {{String}},
+  "[PropertyMap](#cfn-kinesisanalyticsv2-application-propertygroup-propertymap)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-propertygroup-syntax.yaml"></a>
 
-```yaml
-
-  PropertyGroupId: String
-  PropertyMap:
-    Key: Value
-
+```
+  [PropertyGroupId](#cfn-kinesisanalyticsv2-application-propertygroup-propertygroupid): {{String}}
+  [PropertyMap](#cfn-kinesisanalyticsv2-application-propertygroup-propertymap): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-propertygroup-properties"></a>
 
-`PropertyGroupId`
-
+`PropertyGroupId`  <a name="cfn-kinesisanalyticsv2-application-propertygroup-propertygroupid"></a>
 Describes the key of an application execution property key-value pair.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PropertyMap`
-
+`PropertyMap`  <a name="cfn-kinesisanalyticsv2-application-propertygroup-propertymap"></a>
 Describes the value of an application execution property key-value pair.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^.{1,2048}$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.{1,2048}$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [PropertyGroup](../../../managed-flink/latest/apiv2/api-propertygroup.md) in the _Amazon Kinesis Data Analytics_
-_API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParallelismConfiguration
-
-RecordColumn
+<a name="aws-properties-kinesisanalyticsv2-application-propertygroup--seealso"></a>
++ [PropertyGroup](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_PropertyGroup.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

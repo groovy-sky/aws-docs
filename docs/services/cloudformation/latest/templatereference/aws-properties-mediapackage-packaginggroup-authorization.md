@@ -2,64 +2,49 @@
 title: "AWS::MediaPackage::PackagingGroup Authorization"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingGroup Authorization
+<a name="aws-properties-mediapackage-packaginggroup-authorization"></a>
 
 Parameters for enabling CDN authorization.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packaginggroup-authorization-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packaginggroup-authorization-syntax.json"></a>
 
-```json
-
+```
 {
-  "CdnIdentifierSecret" : String,
-  "SecretsRoleArn" : String
+  "[CdnIdentifierSecret](#cfn-mediapackage-packaginggroup-authorization-cdnidentifiersecret)" : {{String}},
+  "[SecretsRoleArn](#cfn-mediapackage-packaginggroup-authorization-secretsrolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packaginggroup-authorization-syntax.yaml"></a>
 
-```yaml
-
-  CdnIdentifierSecret: String
-  SecretsRoleArn: String
-
+```
+  [CdnIdentifierSecret](#cfn-mediapackage-packaginggroup-authorization-cdnidentifiersecret): {{String}}
+  [SecretsRoleArn](#cfn-mediapackage-packaginggroup-authorization-secretsrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packaginggroup-authorization-properties"></a>
 
-`CdnIdentifierSecret`
-
+`CdnIdentifierSecret`  <a name="cfn-mediapackage-packaginggroup-authorization-cdnidentifiersecret"></a>
 The Amazon Resource Name (ARN) for the secret in AWS Secrets Manager that is used for CDN authorization.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretsRoleArn`
-
+`SecretsRoleArn`  <a name="cfn-mediapackage-packaginggroup-authorization-secretsrolearn"></a>
 The Amazon Resource Name (ARN) for the IAM role that allows AWS Elemental MediaPackage to communicate with AWS Secrets Manager.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaPackage::PackagingGroup
-
-LogConfiguration
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

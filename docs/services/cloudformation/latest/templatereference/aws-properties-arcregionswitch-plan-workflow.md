@@ -2,93 +2,68 @@
 title: "AWS::ARCRegionSwitch::Plan Workflow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan Workflow
+<a name="aws-properties-arcregionswitch-plan-workflow"></a>
 
 Represents a workflow in a Region switch plan. A workflow defines a sequence of steps to execute during a Region switch.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-workflow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-workflow-syntax.json"></a>
 
-```json
-
+```
 {
-  "Steps" : [ Step, ... ],
-  "WorkflowDescription" : String,
-  "WorkflowTargetAction" : String,
-  "WorkflowTargetRegion" : String
+  "[Steps](#cfn-arcregionswitch-plan-workflow-steps)" : {{[ Step, ... ]}},
+  "[WorkflowDescription](#cfn-arcregionswitch-plan-workflow-workflowdescription)" : {{String}},
+  "[WorkflowTargetAction](#cfn-arcregionswitch-plan-workflow-workflowtargetaction)" : {{String}},
+  "[WorkflowTargetRegion](#cfn-arcregionswitch-plan-workflow-workflowtargetregion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-workflow-syntax.yaml"></a>
 
-```yaml
-
-  Steps:
-    - Step
-  WorkflowDescription: String
-  WorkflowTargetAction: String
-  WorkflowTargetRegion: String
-
+```
+  [Steps](#cfn-arcregionswitch-plan-workflow-steps): {{
+    - Step}}
+  [WorkflowDescription](#cfn-arcregionswitch-plan-workflow-workflowdescription): {{String}}
+  [WorkflowTargetAction](#cfn-arcregionswitch-plan-workflow-workflowtargetaction): {{String}}
+  [WorkflowTargetRegion](#cfn-arcregionswitch-plan-workflow-workflowtargetregion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-workflow-properties"></a>
 
-`Steps`
-
+`Steps`  <a name="cfn-arcregionswitch-plan-workflow-steps"></a>
 The steps that make up the workflow.
+*Required*: No
+*Type*: Array of [Step](aws-properties-arcregionswitch-plan-step.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Step](aws-properties-arcregionswitch-plan-step.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkflowDescription`
-
+`WorkflowDescription`  <a name="cfn-arcregionswitch-plan-workflow-workflowdescription"></a>
 The description of the workflow.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkflowTargetAction`
-
+`WorkflowTargetAction`  <a name="cfn-arcregionswitch-plan-workflow-workflowtargetaction"></a>
 The action that the workflow performs. Valid values include `activate` and `deactivate`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `activate | deactivate | postRecovery`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `activate | deactivate | postRecovery`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkflowTargetRegion`
-
+`WorkflowTargetRegion`  <a name="cfn-arcregionswitch-plan-workflow-workflowtargetregion"></a>
 The AWS Region that the workflow targets.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z]{2}-[a-z-]+-\d+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TriggerCondition
-
-Next
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z]{2}-[a-z-]+-\d+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

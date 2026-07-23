@@ -2,90 +2,67 @@
 title: "AWS::MediaTailor::Channel RequestOutputItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Channel RequestOutputItem
+<a name="aws-properties-mediatailor-channel-requestoutputitem"></a>
 
 The output configuration for this channel.
 
 ## Syntax
+<a name="aws-properties-mediatailor-channel-requestoutputitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-channel-requestoutputitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "DashPlaylistSettings" : DashPlaylistSettings,
-  "HlsPlaylistSettings" : HlsPlaylistSettings,
-  "ManifestName" : String,
-  "SourceGroup" : String
+  "[DashPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-dashplaylistsettings)" : {{DashPlaylistSettings}},
+  "[HlsPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-hlsplaylistsettings)" : {{HlsPlaylistSettings}},
+  "[ManifestName](#cfn-mediatailor-channel-requestoutputitem-manifestname)" : {{String}},
+  "[SourceGroup](#cfn-mediatailor-channel-requestoutputitem-sourcegroup)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-channel-requestoutputitem-syntax.yaml"></a>
 
-```yaml
-
-  DashPlaylistSettings:
-    DashPlaylistSettings
-  HlsPlaylistSettings:
-    HlsPlaylistSettings
-  ManifestName: String
-  SourceGroup: String
-
+```
+  [DashPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-dashplaylistsettings): {{
+    DashPlaylistSettings}}
+  [HlsPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-hlsplaylistsettings): {{
+    HlsPlaylistSettings}}
+  [ManifestName](#cfn-mediatailor-channel-requestoutputitem-manifestname): {{String}}
+  [SourceGroup](#cfn-mediatailor-channel-requestoutputitem-sourcegroup): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-channel-requestoutputitem-properties"></a>
 
-`DashPlaylistSettings`
-
+`DashPlaylistSettings`  <a name="cfn-mediatailor-channel-requestoutputitem-dashplaylistsettings"></a>
 DASH manifest configuration parameters.
+*Required*: No
+*Type*: [DashPlaylistSettings](aws-properties-mediatailor-channel-dashplaylistsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DashPlaylistSettings](aws-properties-mediatailor-channel-dashplaylistsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HlsPlaylistSettings`
-
+`HlsPlaylistSettings`  <a name="cfn-mediatailor-channel-requestoutputitem-hlsplaylistsettings"></a>
 HLS playlist configuration parameters.
+*Required*: No
+*Type*: [HlsPlaylistSettings](aws-properties-mediatailor-channel-hlsplaylistsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HlsPlaylistSettings](aws-properties-mediatailor-channel-hlsplaylistsettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManifestName`
-
+`ManifestName`  <a name="cfn-mediatailor-channel-requestoutputitem-manifestname"></a>
 The name of the manifest for the channel. The name appears in the `PlaybackUrl`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceGroup`
-
+`SourceGroup`  <a name="cfn-mediatailor-channel-requestoutputitem-sourcegroup"></a>
 A string used to match which `HttpPackageConfiguration` is used for each `VodSource`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogConfigurationForChannel
-
-SlateSource
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

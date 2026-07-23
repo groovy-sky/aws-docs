@@ -2,227 +2,151 @@
 title: "AWS::MediaPackage::OriginEndpoint HlsPackage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::OriginEndpoint HlsPackage
+<a name="aws-properties-mediapackage-originendpoint-hlspackage"></a>
 
 Parameters for Apple HLS packaging.
 
 ## Syntax
+<a name="aws-properties-mediapackage-originendpoint-hlspackage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-originendpoint-hlspackage-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdMarkers" : String,
-  "AdsOnDeliveryRestrictions" : String,
-  "AdTriggers" : [ String, ... ],
-  "Encryption" : HlsEncryption,
-  "IncludeDvbSubtitles" : Boolean,
-  "IncludeIframeOnlyStream" : Boolean,
-  "PlaylistType" : String,
-  "PlaylistWindowSeconds" : Integer,
-  "ProgramDateTimeIntervalSeconds" : Integer,
-  "SegmentDurationSeconds" : Integer,
-  "StreamSelection" : StreamSelection,
-  "UseAudioRenditionGroup" : Boolean
+  "[AdMarkers](#cfn-mediapackage-originendpoint-hlspackage-admarkers)" : {{String}},
+  "[AdsOnDeliveryRestrictions](#cfn-mediapackage-originendpoint-hlspackage-adsondeliveryrestrictions)" : {{String}},
+  "[AdTriggers](#cfn-mediapackage-originendpoint-hlspackage-adtriggers)" : {{[ String, ... ]}},
+  "[Encryption](#cfn-mediapackage-originendpoint-hlspackage-encryption)" : {{HlsEncryption}},
+  "[IncludeDvbSubtitles](#cfn-mediapackage-originendpoint-hlspackage-includedvbsubtitles)" : {{Boolean}},
+  "[IncludeIframeOnlyStream](#cfn-mediapackage-originendpoint-hlspackage-includeiframeonlystream)" : {{Boolean}},
+  "[PlaylistType](#cfn-mediapackage-originendpoint-hlspackage-playlisttype)" : {{String}},
+  "[PlaylistWindowSeconds](#cfn-mediapackage-originendpoint-hlspackage-playlistwindowseconds)" : {{Integer}},
+  "[ProgramDateTimeIntervalSeconds](#cfn-mediapackage-originendpoint-hlspackage-programdatetimeintervalseconds)" : {{Integer}},
+  "[SegmentDurationSeconds](#cfn-mediapackage-originendpoint-hlspackage-segmentdurationseconds)" : {{Integer}},
+  "[StreamSelection](#cfn-mediapackage-originendpoint-hlspackage-streamselection)" : {{StreamSelection}},
+  "[UseAudioRenditionGroup](#cfn-mediapackage-originendpoint-hlspackage-useaudiorenditiongroup)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-originendpoint-hlspackage-syntax.yaml"></a>
 
-```yaml
-
-  AdMarkers: String
-  AdsOnDeliveryRestrictions: String
-  AdTriggers:
-    - String
-  Encryption:
-    HlsEncryption
-  IncludeDvbSubtitles: Boolean
-  IncludeIframeOnlyStream: Boolean
-  PlaylistType: String
-  PlaylistWindowSeconds: Integer
-  ProgramDateTimeIntervalSeconds: Integer
-  SegmentDurationSeconds: Integer
-  StreamSelection:
-    StreamSelection
-  UseAudioRenditionGroup: Boolean
-
+```
+  [AdMarkers](#cfn-mediapackage-originendpoint-hlspackage-admarkers): {{String}}
+  [AdsOnDeliveryRestrictions](#cfn-mediapackage-originendpoint-hlspackage-adsondeliveryrestrictions): {{String}}
+  [AdTriggers](#cfn-mediapackage-originendpoint-hlspackage-adtriggers): {{
+    - String}}
+  [Encryption](#cfn-mediapackage-originendpoint-hlspackage-encryption): {{
+    HlsEncryption}}
+  [IncludeDvbSubtitles](#cfn-mediapackage-originendpoint-hlspackage-includedvbsubtitles): {{Boolean}}
+  [IncludeIframeOnlyStream](#cfn-mediapackage-originendpoint-hlspackage-includeiframeonlystream): {{Boolean}}
+  [PlaylistType](#cfn-mediapackage-originendpoint-hlspackage-playlisttype): {{String}}
+  [PlaylistWindowSeconds](#cfn-mediapackage-originendpoint-hlspackage-playlistwindowseconds): {{Integer}}
+  [ProgramDateTimeIntervalSeconds](#cfn-mediapackage-originendpoint-hlspackage-programdatetimeintervalseconds): {{Integer}}
+  [SegmentDurationSeconds](#cfn-mediapackage-originendpoint-hlspackage-segmentdurationseconds): {{Integer}}
+  [StreamSelection](#cfn-mediapackage-originendpoint-hlspackage-streamselection): {{
+    StreamSelection}}
+  [UseAudioRenditionGroup](#cfn-mediapackage-originendpoint-hlspackage-useaudiorenditiongroup): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-originendpoint-hlspackage-properties"></a>
 
-`AdMarkers`
-
+`AdMarkers`  <a name="cfn-mediapackage-originendpoint-hlspackage-admarkers"></a>
 Controls how ad markers are included in the packaged endpoint.
-
 Valid values:
++ `NONE` - Omits all SCTE-35 ad markers from the output.
++ `PASSTHROUGH` - Creates a copy in the output of the SCTE-35 ad markers (comments) taken directly from the input manifest.
++ `SCTE35_ENHANCED` - Generates ad markers and blackout tags in the output based on the SCTE-35 messages from the input manifest.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | SCTE35_ENHANCED | PASSTHROUGH | DATERANGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `NONE` \- Omits all SCTE-35 ad markers from the output.
+`AdsOnDeliveryRestrictions`  <a name="cfn-mediapackage-originendpoint-hlspackage-adsondeliveryrestrictions"></a>
+The flags on SCTE-35 segmentation descriptors that have to be present for AWS Elemental MediaPackage to insert ad markers in the output manifest. For information about SCTE-35 in AWS Elemental MediaPackage, see [SCTE-35 Message Options in AWS Elemental MediaPackage](https://docs.aws.amazon.com/mediapackage/latest/ug/scte.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | RESTRICTED | UNRESTRICTED | BOTH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `PASSTHROUGH` \- Creates a copy in the output of the SCTE-35 ad markers (comments) taken directly from the input manifest.
-
-- `SCTE35_ENHANCED` \- Generates ad markers and blackout tags in the output based on the SCTE-35 messages from the input manifest.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | SCTE35_ENHANCED | PASSTHROUGH | DATERANGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdsOnDeliveryRestrictions`
-
-The flags on SCTE-35 segmentation descriptors that have to be present for AWS Elemental MediaPackage to insert ad markers in the output manifest. For information about SCTE-35 in AWS Elemental MediaPackage, see [SCTE-35 Message Options in AWS Elemental MediaPackage](../../../mediapackage/latest/ug/scte.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | RESTRICTED | UNRESTRICTED | BOTH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdTriggers`
-
+`AdTriggers`  <a name="cfn-mediapackage-originendpoint-hlspackage-adtriggers"></a>
 Specifies the SCTE-35 message types that AWS Elemental MediaPackage treats as ad markers in the output manifest.
-
 Valid values:
++  `BREAK`
++  `DISTRIBUTOR_ADVERTISEMENT`
++  `DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY`
++  `DISTRIBUTOR_PLACEMENT_OPPORTUNITY`
++  `PROVIDER_ADVERTISEMENT`
++  `PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY`
++  `PROVIDER_PLACEMENT_OPPORTUNITY`
++  `SPLICE_INSERT`
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `SPLICE_INSERT | BREAK | PROVIDER_ADVERTISEMENT | DISTRIBUTOR_ADVERTISEMENT | PROVIDER_PLACEMENT_OPPORTUNITY | DISTRIBUTOR_PLACEMENT_OPPORTUNITY | PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY | DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `BREAK`
-
-- `DISTRIBUTOR_ADVERTISEMENT`
-
-- `DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY`
-
-- `DISTRIBUTOR_PLACEMENT_OPPORTUNITY`
-
-- `PROVIDER_ADVERTISEMENT`
-
-- `PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY`
-
-- `PROVIDER_PLACEMENT_OPPORTUNITY`
-
-- `SPLICE_INSERT`
-
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `SPLICE_INSERT | BREAK | PROVIDER_ADVERTISEMENT | DISTRIBUTOR_ADVERTISEMENT | PROVIDER_PLACEMENT_OPPORTUNITY | DISTRIBUTOR_PLACEMENT_OPPORTUNITY | PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY | DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Encryption`
-
+`Encryption`  <a name="cfn-mediapackage-originendpoint-hlspackage-encryption"></a>
 Parameters for encrypting content.
+*Required*: No
+*Type*: [HlsEncryption](aws-properties-mediapackage-originendpoint-hlsencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HlsEncryption](aws-properties-mediapackage-originendpoint-hlsencryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeDvbSubtitles`
-
+`IncludeDvbSubtitles`  <a name="cfn-mediapackage-originendpoint-hlspackage-includedvbsubtitles"></a>
 When enabled, MediaPackage passes through digital video broadcasting (DVB) subtitles into the output.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeIframeOnlyStream`
-
+`IncludeIframeOnlyStream`  <a name="cfn-mediapackage-originendpoint-hlspackage-includeiframeonlystream"></a>
 Only applies to stream sets with a single video track. When true, the stream set includes an additional I-frame only stream, along with the other tracks. If false, this extra stream is not included.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PlaylistType`  <a name="cfn-mediapackage-originendpoint-hlspackage-playlisttype"></a>
+When specified as either `event` or `vod`, a corresponding `EXT-X-PLAYLIST-TYPE` entry is included in the media playlist. Indicates if the playlist is live-to-VOD content.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | EVENT | VOD`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PlaylistType`
-
-When specified as either `event` or `vod`, a corresponding `EXT-X-PLAYLIST-TYPE` entry is included in the media playlist.
-Indicates if the playlist is live-to-VOD content.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | EVENT | VOD`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PlaylistWindowSeconds`
-
+`PlaylistWindowSeconds`  <a name="cfn-mediapackage-originendpoint-hlspackage-playlistwindowseconds"></a>
 Time window (in seconds) contained in each parent manifest.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProgramDateTimeIntervalSeconds`
-
+`ProgramDateTimeIntervalSeconds`  <a name="cfn-mediapackage-originendpoint-hlspackage-programdatetimeintervalseconds"></a>
 Inserts `EXT-X-PROGRAM-DATE-TIME` tags in the output manifest at the interval that you specify.
-
 Irrespective of this parameter, if any ID3Timed metadata is in the HLS input, it is passed through to the HLS output.
+Omit this attribute or enter `0` to indicate that the `EXT-X-PROGRAM-DATE-TIME` tags are not included in the manifest.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Omit this attribute or enter `0` to indicate that the
-`EXT-X-PROGRAM-DATE-TIME` tags are not included in the manifest.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentDurationSeconds`
-
+`SegmentDurationSeconds`  <a name="cfn-mediapackage-originendpoint-hlspackage-segmentdurationseconds"></a>
 Duration (in seconds) of each fragment. Actual fragments are rounded to the nearest multiple of the source fragment duration.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamSelection`
-
+`StreamSelection`  <a name="cfn-mediapackage-originendpoint-hlspackage-streamselection"></a>
 Limitations for outputs from the endpoint, based on the video bitrate.
+*Required*: No
+*Type*: [StreamSelection](aws-properties-mediapackage-originendpoint-streamselection.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StreamSelection](aws-properties-mediapackage-originendpoint-streamselection.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseAudioRenditionGroup`
-
+`UseAudioRenditionGroup`  <a name="cfn-mediapackage-originendpoint-hlspackage-useaudiorenditiongroup"></a>
 When true, AWS Elemental MediaPackage bundles all audio tracks in a rendition group. All other tracks in the stream can be used with any audio rendition from the group.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HlsManifest
-
-MssEncryption
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

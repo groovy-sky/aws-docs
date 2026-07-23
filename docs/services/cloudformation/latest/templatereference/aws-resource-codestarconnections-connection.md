@@ -2,161 +2,130 @@
 title: "AWS::CodeStarConnections::Connection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeStarConnections::Connection
+<a name="aws-resource-codestarconnections-connection"></a>
 
-The AWS::CodeStarConnections::Connection resource can be used to connect external source
-providers with services like AWS CodePipeline.
+The AWS::CodeStarConnections::Connection resource can be used to connect external source providers with services like AWS CodePipeline.
 
-**Note:** A connection created through CloudFormation is
-in `PENDING` status by default. You can make its status `AVAILABLE`
-by updating the connection in the console.
+**Note:** A connection created through CloudFormation is in `PENDING` status by default. You can make its status `AVAILABLE` by updating the connection in the console.
 
 ## Syntax
+<a name="aws-resource-codestarconnections-connection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codestarconnections-connection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeStarConnections::Connection",
   "Properties" : {
-      "ConnectionName" : String,
-      "HostArn" : String,
-      "ProviderType" : String,
-      "Tags" : [ Tag, ... ]
+      "[ConnectionName](#cfn-codestarconnections-connection-connectionname)" : {{String}},
+      "[HostArn](#cfn-codestarconnections-connection-hostarn)" : {{String}},
+      "[ProviderType](#cfn-codestarconnections-connection-providertype)" : {{String}},
+      "[Tags](#cfn-codestarconnections-connection-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codestarconnections-connection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeStarConnections::Connection
 Properties:
-  ConnectionName: String
-  HostArn: String
-  ProviderType: String
-  Tags:
-    - Tag
-
+  [ConnectionName](#cfn-codestarconnections-connection-connectionname): {{String}}
+  [HostArn](#cfn-codestarconnections-connection-hostarn): {{String}}
+  [ProviderType](#cfn-codestarconnections-connection-providertype): {{String}}
+  [Tags](#cfn-codestarconnections-connection-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-codestarconnections-connection-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-codestarconnections-connection-connectionname"></a>
 The name of the connection. Connection names must be unique in an AWS account.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HostArn`
-
+`HostArn`  <a name="cfn-codestarconnections-connection-hostarn"></a>
 The Amazon Resource Name (ARN) of the host associated with the connection.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ProviderType`  <a name="cfn-codestarconnections-connection-providertype"></a>
+The name of the external provider where your third-party code repository is configured.
+*Required*: No
+*Type*: String
+*Allowed values*: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `arn:aws(-[\w]+)*:.+:.+:[0-9]{12}:.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProviderType`
-
-The name of the external provider where your third-party code repository is
-configured.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Bitbucket | GitHub | GitHubEnterpriseServer | GitLab | GitLabSelfManaged`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-codestarconnections-connection-tags"></a>
 Specifies the tags applied to the resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codestarconnections-connection-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codestarconnections-connection-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codestarconnections-connection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codestarconnections-connection-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the connection. The ARN is
-used as the connection reference when the connection is shared between AWS
-services. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the connection. The ARN is used as the connection reference when the connection is shared between AWS services. For example:
 
-`arn:aws:codestar-connections:us-west-2:123456789012:connection/39e4c34d-e13a-4e94-a886-ea67651bf042`
+ `arn:aws:codestar-connections:us-west-2:123456789012:connection/39e4c34d-e13a-4e94-a886-ea67651bf042`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-codestarconnections-connection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ConnectionArn`
+####
+<a name="aws-resource-codestarconnections-connection-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the connection. The ARN is used as the connection
-reference when the connection is shared between AWS services. For example:
-`arn:aws:codestar-connections:us-west-2:123456789012:connection/39e4c34d-e13a-4e94-a886-ea67651bf042`.
+`ConnectionArn`  <a name="ConnectionArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the connection. The ARN is used as the connection reference when the connection is shared between AWS services. For example: `arn:aws:codestar-connections:us-west-2:123456789012:connection/39e4c34d-e13a-4e94-a886-ea67651bf042`.
 
-`ConnectionStatus`
+`ConnectionStatus`  <a name="ConnectionStatus-fn::getatt"></a>
+The current status of the connection. For example: `PENDING`, `AVAILABLE`, or `ERROR`.
 
-The current status of the connection. For example: `PENDING`,
-`AVAILABLE`, or `ERROR`.
-
-`OwnerAccountId`
-
-The AWS account ID of the owner of the connection. For Bitbucket, this
-is the account ID of the owner of the Bitbucket repository. For example:
-`123456789012`.
+`OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
+The AWS account ID of the owner of the connection. For Bitbucket, this is the account ID of the owner of the Bitbucket repository. For example: `123456789012`.
 
 ## Examples
+<a name="aws-resource-codestarconnections-connection--examples"></a>
 
-- [Bitbucket Connection Configuration](#aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration)
-
-- [GitHub Enterprise Server Connection Configuration](#aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration)
+**Topics**
++ [Bitbucket Connection Configuration](#aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration)
++ [GitHub Enterprise Server Connection Configuration](#aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration)
 
 ### Bitbucket Connection Configuration
+<a name="aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration"></a>
 
 The following example creates a connection with Bitbucket.
 
 #### JSON
+<a name="aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -178,9 +147,9 @@ The following example creates a connection with Bitbucket.
 ```
 
 #### YAML
+<a name="aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   SampleConnection:
@@ -194,13 +163,14 @@ Resources:
 ```
 
 ### GitHub Enterprise Server Connection Configuration
+<a name="aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration"></a>
 
 The following example creates a connection with GitHub Enterprise Server.
 
 #### JSON
+<a name="aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -223,9 +193,9 @@ The following example creates a connection with GitHub Enterprise Server.
 ```
 
 #### YAML
+<a name="aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   SampleConnection:
@@ -238,11 +208,5 @@ Resources:
       - Key: Project
         Value: ProjectB
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS CodeStar Connections
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

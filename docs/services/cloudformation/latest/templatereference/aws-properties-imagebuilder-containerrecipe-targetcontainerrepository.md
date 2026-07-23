@@ -2,72 +2,52 @@
 title: "AWS::ImageBuilder::ContainerRecipe TargetContainerRepository"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ContainerRecipe TargetContainerRepository
+<a name="aws-properties-imagebuilder-containerrecipe-targetcontainerrepository"></a>
 
 The container repository where the output container image is stored.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-containerrecipe-targetcontainerrepository-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-containerrecipe-targetcontainerrepository-syntax.json"></a>
 
-```json
-
+```
 {
-  "RepositoryName" : String,
-  "Service" : String
+  "[RepositoryName](#cfn-imagebuilder-containerrecipe-targetcontainerrepository-repositoryname)" : {{String}},
+  "[Service](#cfn-imagebuilder-containerrecipe-targetcontainerrepository-service)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-containerrecipe-targetcontainerrepository-syntax.yaml"></a>
 
-```yaml
-
-  RepositoryName: String
-  Service: String
-
+```
+  [RepositoryName](#cfn-imagebuilder-containerrecipe-targetcontainerrepository-repositoryname): {{String}}
+  [Service](#cfn-imagebuilder-containerrecipe-targetcontainerrepository-service): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-containerrecipe-targetcontainerrepository-properties"></a>
 
-`RepositoryName`
+`RepositoryName`  <a name="cfn-imagebuilder-containerrecipe-targetcontainerrepository-repositoryname"></a>
+The name of the container repository where the output container image is stored. This name is prefixed by the repository location. For example, `<repository location url>/repository_name`.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The name of the container repository where the output container image is stored.
-This name is prefixed by the repository location. For example,
-`<repository location url>/repository_name`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Service`
-
+`Service`  <a name="cfn-imagebuilder-containerrecipe-targetcontainerrepository-service"></a>
 Specifies the service in which this image was registered.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ECR`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LatestVersion
-
-AWS::ImageBuilder::DistributionConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `ECR`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

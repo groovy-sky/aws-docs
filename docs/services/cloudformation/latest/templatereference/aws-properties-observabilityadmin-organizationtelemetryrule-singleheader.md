@@ -2,57 +2,43 @@
 title: "AWS::ObservabilityAdmin::OrganizationTelemetryRule SingleHeader"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule SingleHeader
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-singleheader"></a>
 
-Structure containing a name field limited to 64 characters for header or query parameter
-identification.
+ Structure containing a name field limited to 64 characters for header or query parameter identification.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-singleheader-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-singleheader-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-observabilityadmin-organizationtelemetryrule-singleheader-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-singleheader-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-observabilityadmin-organizationtelemetryrule-singleheader-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-singleheader-properties"></a>
 
-`Name`
-
-The name value, limited to 64 characters.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingFilter
-
-Tag
+`Name`  <a name="cfn-observabilityadmin-organizationtelemetryrule-singleheader-name"></a>
+ The name value, limited to 64 characters.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

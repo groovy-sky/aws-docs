@@ -2,79 +2,59 @@
 title: "AWS::MediaConnect::RouterInput MergeRouterInputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput MergeRouterInputConfiguration
+<a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration"></a>
 
 Configuration settings for a merge router input that combines two input sources.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MergeRecoveryWindowMilliseconds" : Integer,
-  "NetworkInterfaceArn" : String,
-  "ProtocolConfigurations" : [ MergeRouterInputProtocolConfiguration, ... ]
+  "[MergeRecoveryWindowMilliseconds](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-mergerecoverywindowmilliseconds)" : {{Integer}},
+  "[NetworkInterfaceArn](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-networkinterfacearn)" : {{String}},
+  "[ProtocolConfigurations](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-protocolconfigurations)" : {{[ MergeRouterInputProtocolConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MergeRecoveryWindowMilliseconds: Integer
-  NetworkInterfaceArn: String
-  ProtocolConfigurations:
-    - MergeRouterInputProtocolConfiguration
-
+```
+  [MergeRecoveryWindowMilliseconds](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-mergerecoverywindowmilliseconds): {{Integer}}
+  [NetworkInterfaceArn](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-networkinterfacearn): {{String}}
+  [ProtocolConfigurations](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-protocolconfigurations): {{
+    - MergeRouterInputProtocolConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration-properties"></a>
 
-`MergeRecoveryWindowMilliseconds`
-
+`MergeRecoveryWindowMilliseconds`  <a name="cfn-mediaconnect-routerinput-mergerouterinputconfiguration-mergerecoverywindowmilliseconds"></a>
 The time window in milliseconds for merging the two input sources.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkInterfaceArn`
-
+`NetworkInterfaceArn`  <a name="cfn-mediaconnect-routerinput-mergerouterinputconfiguration-networkinterfacearn"></a>
 The ARN of the network interface to use for this merge router input.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:routerNetworkInterface:[a-z0-9]{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:routerNetworkInterface:[a-z0-9]{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProtocolConfigurations`
-
+`ProtocolConfigurations`  <a name="cfn-mediaconnect-routerinput-mergerouterinputconfiguration-protocolconfigurations"></a>
 A list of exactly two protocol configurations for the merge input sources. Both must use the same protocol type.
-
-_Required_: Yes
-
-_Type_: Array of [MergeRouterInputProtocolConfiguration](aws-properties-mediaconnect-routerinput-mergerouterinputprotocolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MediaConnectFlowRouterInputConfiguration
-
-MergeRouterInputProtocolConfiguration
+*Required*: Yes
+*Type*: Array of [MergeRouterInputProtocolConfiguration](aws-properties-mediaconnect-routerinput-mergerouterinputprotocolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

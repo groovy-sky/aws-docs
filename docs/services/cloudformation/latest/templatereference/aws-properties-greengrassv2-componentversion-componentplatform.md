@@ -2,75 +2,52 @@
 title: "AWS::GreengrassV2::ComponentVersion ComponentPlatform"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::ComponentVersion ComponentPlatform
+<a name="aws-properties-greengrassv2-componentversion-componentplatform"></a>
 
 Contains information about a platform that a component supports.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-componentversion-componentplatform-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-componentversion-componentplatform-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : {Key: Value, ...},
-  "Name" : String
+  "[Attributes](#cfn-greengrassv2-componentversion-componentplatform-attributes)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Name](#cfn-greengrassv2-componentversion-componentplatform-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-componentversion-componentplatform-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
-    Key: Value
-  Name: String
-
+```
+  [Attributes](#cfn-greengrassv2-componentversion-componentplatform-attributes): {{
+    {{Key}}: {{Value}}}}
+  [Name](#cfn-greengrassv2-componentversion-componentplatform-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-componentversion-componentplatform-properties"></a>
 
-`Attributes`
+`Attributes`  <a name="cfn-greengrassv2-componentversion-componentplatform-attributes"></a>
+A dictionary of attributes for the platform. The AWS IoT Greengrass Core software defines the `os` and `platform` by default. You can specify additional platform attributes for a core device when you deploy the AWS IoT Greengrass nucleus component. For more information, see the [AWS IoT Greengrass nucleus component](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-nucleus-component.html) in the *AWS IoT Greengrass V2 Developer Guide*.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A dictionary of attributes for the platform. The AWS IoT Greengrass Core software defines
-the `os` and `platform` by default. You can specify additional platform
-attributes for a core device when you deploy the AWS IoT Greengrass nucleus component. For
-more information, see the [AWS IoT Greengrass\
-nucleus component](../../../greengrass/v2/developerguide/greengrass-nucleus-component.md) in the _AWS IoT Greengrass V2 Developer_
-_Guide_.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-greengrassv2-componentversion-componentplatform-name"></a>
 The friendly name of the platform. This name helps you identify the platform.
-
-If you omit this parameter, AWS IoT Greengrass creates a friendly name from the
-`os` and `architecture` of the platform.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentDependencyRequirement
-
-LambdaContainerParams
+If you omit this parameter, AWS IoT Greengrass creates a friendly name from the `os` and `architecture` of the platform.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

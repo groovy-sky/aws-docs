@@ -2,70 +2,52 @@
 title: "AWS::Athena::WorkGroup ManagedLoggingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Athena::WorkGroup ManagedLoggingConfiguration
+<a name="aws-properties-athena-workgroup-managedloggingconfiguration"></a>
 
 Configuration settings for delivering logs to Amazon S3 buckets.
 
 ## Syntax
+<a name="aws-properties-athena-workgroup-managedloggingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-athena-workgroup-managedloggingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "KmsKey" : String
+  "[Enabled](#cfn-athena-workgroup-managedloggingconfiguration-enabled)" : {{Boolean}},
+  "[KmsKey](#cfn-athena-workgroup-managedloggingconfiguration-kmskey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-athena-workgroup-managedloggingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  KmsKey: String
-
+```
+  [Enabled](#cfn-athena-workgroup-managedloggingconfiguration-enabled): {{Boolean}}
+  [KmsKey](#cfn-athena-workgroup-managedloggingconfiguration-kmskey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-athena-workgroup-managedloggingconfiguration-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-athena-workgroup-managedloggingconfiguration-enabled"></a>
 Enables mamanged log persistence.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKey`
-
+`KmsKey`  <a name="cfn-athena-workgroup-managedloggingconfiguration-kmskey"></a>
 The KMS key ARN to encrypt the logs stored in managed log persistence.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:key/?[a-zA-Z_0-9+=,.@\-_/]+$|^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:alias/?[a-zA-Z_0-9+=,.@\-_/]+$|^alias/[a-zA-Z0-9/_-]+$|[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EngineVersion
-
-ManagedQueryResultsConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:key/?[a-zA-Z_0-9+=,.@\-_/]+$|^arn:aws[a-z\-]*:kms:([a-z0-9\-]+):\d{12}:alias/?[a-zA-Z_0-9+=,.@\-_/]+$|^alias/[a-zA-Z0-9/_-]+$|[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

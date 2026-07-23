@@ -2,65 +2,49 @@
 title: "AWS::MediaTailor::LiveSource Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::LiveSource Tag
+<a name="aws-properties-mediatailor-livesource-tag"></a>
 
-One tag that you want to add to the specified resource. A tag consists of a `Key`
-(a name for the tag) and a Value.
+One tag that you want to add to the specified resource. A tag consists of a `Key` (a name for the tag) and a Value.
 
 ## Syntax
+<a name="aws-properties-mediatailor-livesource-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-livesource-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-mediatailor-livesource-tag-key)" : {{String}},
+  "[Value](#cfn-mediatailor-livesource-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-livesource-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-mediatailor-livesource-tag-key): {{String}}
+  [Value](#cfn-mediatailor-livesource-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-livesource-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-mediatailor-livesource-tag-key"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-mediatailor-livesource-tag-value"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HttpPackageConfiguration
-
-AWS::MediaTailor::PlaybackConfiguration
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,283 +2,190 @@
 title: "AWS::AppFlow::Flow ConnectorOperator"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow ConnectorOperator
+<a name="aws-properties-appflow-flow-connectoroperator"></a>
 
-The operation to be performed on the provided source fields.
+ The operation to be performed on the provided source fields.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-connectoroperator-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-connectoroperator-syntax.json"></a>
 
-```json
-
+```
 {
-  "Amplitude" : String,
-  "CustomConnector" : String,
-  "Datadog" : String,
-  "Dynatrace" : String,
-  "GoogleAnalytics" : String,
-  "InforNexus" : String,
-  "Marketo" : String,
-  "Pardot" : String,
-  "S3" : String,
-  "Salesforce" : String,
-  "SAPOData" : String,
-  "ServiceNow" : String,
-  "Singular" : String,
-  "Slack" : String,
-  "Trendmicro" : String,
-  "Veeva" : String,
-  "Zendesk" : String
+  "[Amplitude](#cfn-appflow-flow-connectoroperator-amplitude)" : {{String}},
+  "[CustomConnector](#cfn-appflow-flow-connectoroperator-customconnector)" : {{String}},
+  "[Datadog](#cfn-appflow-flow-connectoroperator-datadog)" : {{String}},
+  "[Dynatrace](#cfn-appflow-flow-connectoroperator-dynatrace)" : {{String}},
+  "[GoogleAnalytics](#cfn-appflow-flow-connectoroperator-googleanalytics)" : {{String}},
+  "[InforNexus](#cfn-appflow-flow-connectoroperator-infornexus)" : {{String}},
+  "[Marketo](#cfn-appflow-flow-connectoroperator-marketo)" : {{String}},
+  "[Pardot](#cfn-appflow-flow-connectoroperator-pardot)" : {{String}},
+  "[S3](#cfn-appflow-flow-connectoroperator-s3)" : {{String}},
+  "[Salesforce](#cfn-appflow-flow-connectoroperator-salesforce)" : {{String}},
+  "[SAPOData](#cfn-appflow-flow-connectoroperator-sapodata)" : {{String}},
+  "[ServiceNow](#cfn-appflow-flow-connectoroperator-servicenow)" : {{String}},
+  "[Singular](#cfn-appflow-flow-connectoroperator-singular)" : {{String}},
+  "[Slack](#cfn-appflow-flow-connectoroperator-slack)" : {{String}},
+  "[Trendmicro](#cfn-appflow-flow-connectoroperator-trendmicro)" : {{String}},
+  "[Veeva](#cfn-appflow-flow-connectoroperator-veeva)" : {{String}},
+  "[Zendesk](#cfn-appflow-flow-connectoroperator-zendesk)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-connectoroperator-syntax.yaml"></a>
 
-```yaml
-
-  Amplitude: String
-  CustomConnector: String
-  Datadog: String
-  Dynatrace: String
-  GoogleAnalytics: String
-  InforNexus: String
-  Marketo: String
-  Pardot: String
-  S3: String
-  Salesforce: String
-  SAPOData: String
-  ServiceNow: String
-  Singular: String
-  Slack: String
-  Trendmicro: String
-  Veeva: String
-  Zendesk: String
-
+```
+  [Amplitude](#cfn-appflow-flow-connectoroperator-amplitude): {{String}}
+  [CustomConnector](#cfn-appflow-flow-connectoroperator-customconnector): {{String}}
+  [Datadog](#cfn-appflow-flow-connectoroperator-datadog): {{String}}
+  [Dynatrace](#cfn-appflow-flow-connectoroperator-dynatrace): {{String}}
+  [GoogleAnalytics](#cfn-appflow-flow-connectoroperator-googleanalytics): {{String}}
+  [InforNexus](#cfn-appflow-flow-connectoroperator-infornexus): {{String}}
+  [Marketo](#cfn-appflow-flow-connectoroperator-marketo): {{String}}
+  [Pardot](#cfn-appflow-flow-connectoroperator-pardot): {{String}}
+  [S3](#cfn-appflow-flow-connectoroperator-s3): {{String}}
+  [Salesforce](#cfn-appflow-flow-connectoroperator-salesforce): {{String}}
+  [SAPOData](#cfn-appflow-flow-connectoroperator-sapodata): {{String}}
+  [ServiceNow](#cfn-appflow-flow-connectoroperator-servicenow): {{String}}
+  [Singular](#cfn-appflow-flow-connectoroperator-singular): {{String}}
+  [Slack](#cfn-appflow-flow-connectoroperator-slack): {{String}}
+  [Trendmicro](#cfn-appflow-flow-connectoroperator-trendmicro): {{String}}
+  [Veeva](#cfn-appflow-flow-connectoroperator-veeva): {{String}}
+  [Zendesk](#cfn-appflow-flow-connectoroperator-zendesk): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-connectoroperator-properties"></a>
 
-`Amplitude`
+`Amplitude`  <a name="cfn-appflow-flow-connectoroperator-amplitude"></a>
+ The operation to be performed on the provided Amplitude source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `BETWEEN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The operation to be performed on the provided Amplitude source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BETWEEN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomConnector`
-
+`CustomConnector`  <a name="cfn-appflow-flow-connectoroperator-customconnector"></a>
 Operators supported by the custom connector.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | GREATER_THAN | CONTAINS | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Datadog`  <a name="cfn-appflow-flow-connectoroperator-datadog"></a>
+ The operation to be performed on the provided Datadog source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Dynatrace`  <a name="cfn-appflow-flow-connectoroperator-dynatrace"></a>
+ The operation to be performed on the provided Dynatrace source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `PROJECTION | LESS_THAN | GREATER_THAN | CONTAINS | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+`GoogleAnalytics`  <a name="cfn-appflow-flow-connectoroperator-googleanalytics"></a>
+ The operation to be performed on the provided Google Analytics source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | BETWEEN`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`InforNexus`  <a name="cfn-appflow-flow-connectoroperator-infornexus"></a>
+ The operation to be performed on the provided Infor Nexus source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Datadog`
+`Marketo`  <a name="cfn-appflow-flow-connectoroperator-marketo"></a>
+ The operation to be performed on the provided Marketo source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | GREATER_THAN | BETWEEN | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The operation to be performed on the provided Datadog source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dynatrace`
-
-The operation to be performed on the provided Dynatrace source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GoogleAnalytics`
-
-The operation to be performed on the provided Google Analytics source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | BETWEEN`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InforNexus`
-
-The operation to be performed on the provided Infor Nexus source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Marketo`
-
-The operation to be performed on the provided Marketo source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | LESS_THAN | GREATER_THAN | BETWEEN | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pardot`
-
+`Pardot`  <a name="cfn-appflow-flow-connectoroperator-pardot"></a>
 The operation to be performed on the provided Salesforce Pardot source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | EQUAL_TO | NO_OP | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`S3`  <a name="cfn-appflow-flow-connectoroperator-s3"></a>
+ The operation to be performed on the provided Amazon S3 source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Salesforce`  <a name="cfn-appflow-flow-connectoroperator-salesforce"></a>
+ The operation to be performed on the provided Salesforce source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | CONTAINS | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `PROJECTION | EQUAL_TO | NO_OP | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC`
+`SAPOData`  <a name="cfn-appflow-flow-connectoroperator-sapodata"></a>
+ The operation to be performed on the provided SAPOData source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | CONTAINS | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ServiceNow`  <a name="cfn-appflow-flow-connectoroperator-servicenow"></a>
+ The operation to be performed on the provided ServiceNow source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | CONTAINS | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`S3`
+`Singular`  <a name="cfn-appflow-flow-connectoroperator-singular"></a>
+ The operation to be performed on the provided Singular source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The operation to be performed on the provided Amazon S3 source fields.
+`Slack`  <a name="cfn-appflow-flow-connectoroperator-slack"></a>
+ The operation to be performed on the provided Slack source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Trendmicro`  <a name="cfn-appflow-flow-connectoroperator-trendmicro"></a>
+ The operation to be performed on the provided Trend Micro source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Veeva`  <a name="cfn-appflow-flow-connectoroperator-veeva"></a>
+ The operation to be performed on the provided Veeva source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | LESS_THAN | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed values_: `PROJECTION | LESS_THAN | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Salesforce`
-
-The operation to be performed on the provided Salesforce source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | LESS_THAN | CONTAINS | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SAPOData`
-
-The operation to be performed on the provided SAPOData source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | LESS_THAN | CONTAINS | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceNow`
-
-The operation to be performed on the provided ServiceNow source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | LESS_THAN | CONTAINS | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Singular`
-
-The operation to be performed on the provided Singular source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Slack`
-
-The operation to be performed on the provided Slack source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | BETWEEN | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Trendmicro`
-
-The operation to be performed on the provided Trend Micro source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Veeva`
-
-The operation to be performed on the provided Veeva source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | LESS_THAN | GREATER_THAN | BETWEEN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO | EQUAL_TO | NOT_EQUAL_TO | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Zendesk`
-
-The operation to be performed on the provided Zendesk source fields.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PROJECTION | GREATER_THAN | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Zendesk`  <a name="cfn-appflow-flow-connectoroperator-zendesk"></a>
+ The operation to be performed on the provided Zendesk source fields.
+*Required*: No
+*Type*: String
+*Allowed values*: `PROJECTION | GREATER_THAN | ADDITION | MULTIPLICATION | DIVISION | SUBTRACTION | MASK_ALL | MASK_FIRST_N | MASK_LAST_N | VALIDATE_NON_NULL | VALIDATE_NON_ZERO | VALIDATE_NON_NEGATIVE | VALIDATE_NUMERIC | NO_OP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ConnectorOperator](../../../../reference/appflow/1-0/apireference/api-connectoroperator.md) in
-the _Amazon AppFlow API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmplitudeSourceProperties
-
-CustomConnectorDestinationProperties
+<a name="aws-properties-appflow-flow-connectoroperator--seealso"></a>
++ [ConnectorOperator](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorOperator.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

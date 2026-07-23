@@ -2,68 +2,50 @@
 title: "AWS::Lex::Bot AudioLogSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot AudioLogSetting
+<a name="aws-properties-lex-bot-audiologsetting"></a>
 
-Settings for logging audio of conversations between Amazon Lex and a
-user. You specify whether to log audio and the Amazon S3 bucket where
-the audio file is stored.
+Settings for logging audio of conversations between Amazon Lex and a user. You specify whether to log audio and the Amazon S3 bucket where the audio file is stored.
 
 ## Syntax
+<a name="aws-properties-lex-bot-audiologsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-audiologsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destination" : AudioLogDestination,
-  "Enabled" : Boolean
+  "[Destination](#cfn-lex-bot-audiologsetting-destination)" : {{AudioLogDestination}},
+  "[Enabled](#cfn-lex-bot-audiologsetting-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-audiologsetting-syntax.yaml"></a>
 
-```yaml
-
-  Destination:
-    AudioLogDestination
-  Enabled: Boolean
-
+```
+  [Destination](#cfn-lex-bot-audiologsetting-destination): {{
+    AudioLogDestination}}
+  [Enabled](#cfn-lex-bot-audiologsetting-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-audiologsetting-properties"></a>
 
-`Destination`
+`Destination`  <a name="cfn-lex-bot-audiologsetting-destination"></a>
+Specifies the location of the audio log files collected when conversation logging is enabled for a bot.
+*Required*: Yes
+*Type*: [AudioLogDestination](aws-properties-lex-bot-audiologdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the location of the audio log files collected when
-conversation logging is enabled for a bot.
-
-_Required_: Yes
-
-_Type_: [AudioLogDestination](aws-properties-lex-bot-audiologdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-lex-bot-audiologsetting-enabled"></a>
 Determines whether audio logging in enabled for the bot.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AudioLogDestination
-
-AudioSpecification
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,195 +2,149 @@
 title: "AWS::Omics::AnnotationStore"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::AnnotationStore
+<a name="aws-resource-omics-annotationstore"></a>
 
-###### Important
-
-AWS HealthOmics variant stores and annotation stores are no longer open to new customers.
-Existing customers can continue to use the service as normal. For more information, see
-[AWS HealthOmics variant store and annotation store availability change](../../../omics/latest/dev/variant-store-availability-change.md).
+**Important**
+AWS HealthOmics variant stores and annotation stores are no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS HealthOmics variant store and annotation store availability change](https://docs.aws.amazon.com/omics/latest/dev/variant-store-availability-change.html).
 
 Creates an annotation store.
 
 ## Syntax
+<a name="aws-resource-omics-annotationstore-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-omics-annotationstore-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Omics::AnnotationStore",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "Reference" : ReferenceItem,
-      "SseConfig" : SseConfig,
-      "StoreFormat" : String,
-      "StoreOptions" : StoreOptions,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-omics-annotationstore-description)" : {{String}},
+      "[Name](#cfn-omics-annotationstore-name)" : {{String}},
+      "[Reference](#cfn-omics-annotationstore-reference)" : {{ReferenceItem}},
+      "[SseConfig](#cfn-omics-annotationstore-sseconfig)" : {{SseConfig}},
+      "[StoreFormat](#cfn-omics-annotationstore-storeformat)" : {{String}},
+      "[StoreOptions](#cfn-omics-annotationstore-storeoptions)" : {{StoreOptions}},
+      "[Tags](#cfn-omics-annotationstore-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-omics-annotationstore-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Omics::AnnotationStore
 Properties:
-  Description: String
-  Name: String
-  Reference:
-    ReferenceItem
-  SseConfig:
-    SseConfig
-  StoreFormat: String
-  StoreOptions:
-    StoreOptions
-  Tags:
-    Key: Value
-
+  [Description](#cfn-omics-annotationstore-description): {{String}}
+  [Name](#cfn-omics-annotationstore-name): {{String}}
+  [Reference](#cfn-omics-annotationstore-reference): {{
+    ReferenceItem}}
+  [SseConfig](#cfn-omics-annotationstore-sseconfig): {{
+    SseConfig}}
+  [StoreFormat](#cfn-omics-annotationstore-storeformat): {{String}}
+  [StoreOptions](#cfn-omics-annotationstore-storeoptions): {{
+    StoreOptions}}
+  [Tags](#cfn-omics-annotationstore-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-omics-annotationstore-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-omics-annotationstore-description"></a>
 A description for the store.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-omics-annotationstore-name"></a>
 The name of the Annotation Store.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([a-z]){1}([a-z0-9_]){2,254}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([a-z]){1}([a-z0-9_]){2,254}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Reference`
-
+`Reference`  <a name="cfn-omics-annotationstore-reference"></a>
 The genome reference for the store's annotations.
+*Required*: No
+*Type*: [ReferenceItem](aws-properties-omics-annotationstore-referenceitem.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ReferenceItem](aws-properties-omics-annotationstore-referenceitem.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SseConfig`
-
+`SseConfig`  <a name="cfn-omics-annotationstore-sseconfig"></a>
 The store's server-side encryption (SSE) settings.
+*Required*: No
+*Type*: [SseConfig](aws-properties-omics-annotationstore-sseconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [SseConfig](aws-properties-omics-annotationstore-sseconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StoreFormat`
-
+`StoreFormat`  <a name="cfn-omics-annotationstore-storeformat"></a>
 The annotation file format of the store.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GFF | TSV | VCF`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GFF | TSV | VCF`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StoreOptions`
-
+`StoreOptions`  <a name="cfn-omics-annotationstore-storeoptions"></a>
 File parsing options for the annotation store.
+*Required*: No
+*Type*: [StoreOptions](aws-properties-omics-annotationstore-storeoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [StoreOptions](aws-properties-omics-annotationstore-storeoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-omics-annotationstore-tags"></a>
 Tags for the store.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-omics-annotationstore-return-values"></a>
 
 ### Ref
+<a name="aws-resource-omics-annotationstore-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the details of this resource. For example:
 
-`{ "Ref": "AnnotationStore.Id" }` `Ref` returns the id for the annotation store.
+`{ "Ref": "AnnotationStore.Id" }``Ref` returns the id for the annotation store.
 
 ### Fn::GetAtt
+<a name="aws-resource-omics-annotationstore-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-omics-annotationstore-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 When the store was created.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The store's ID.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The store's status.
 
-`StatusMessage`
-
+`StatusMessage`  <a name="StatusMessage-fn::getatt"></a>
 The store's status message.
 
-`StoreArn`
-
+`StoreArn`  <a name="StoreArn-fn::getatt"></a>
 The store's ARN.
 
-`StoreSizeBytes`
-
+`StoreSizeBytes`  <a name="StoreSizeBytes-fn::getatt"></a>
 The store's size in bytes.
 
-`UpdateTime`
-
+`UpdateTime`  <a name="UpdateTime-fn::getatt"></a>
 When the store was updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS HealthOmics
-
-ReferenceItem
 
 All content copied from https://docs.aws.amazon.com/.

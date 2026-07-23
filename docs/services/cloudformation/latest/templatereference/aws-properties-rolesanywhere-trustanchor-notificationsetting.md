@@ -2,102 +2,70 @@
 title: "AWS::RolesAnywhere::TrustAnchor NotificationSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RolesAnywhere::TrustAnchor NotificationSetting
+<a name="aws-properties-rolesanywhere-trustanchor-notificationsetting"></a>
 
-Customizable notification settings that will be applied to notification events.
-IAM Roles Anywhere consumes these settings while notifying across multiple channels - CloudWatch metrics, EventBridge, and Health Dashboard.
+ Customizable notification settings that will be applied to notification events. IAM Roles Anywhere consumes these settings while notifying across multiple channels - CloudWatch metrics, EventBridge, and Health Dashboard.
 
 ## Syntax
+<a name="aws-properties-rolesanywhere-trustanchor-notificationsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rolesanywhere-trustanchor-notificationsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "Channel" : String,
-  "Enabled" : Boolean,
-  "Event" : String,
-  "Threshold" : Number
+  "[Channel](#cfn-rolesanywhere-trustanchor-notificationsetting-channel)" : {{String}},
+  "[Enabled](#cfn-rolesanywhere-trustanchor-notificationsetting-enabled)" : {{Boolean}},
+  "[Event](#cfn-rolesanywhere-trustanchor-notificationsetting-event)" : {{String}},
+  "[Threshold](#cfn-rolesanywhere-trustanchor-notificationsetting-threshold)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rolesanywhere-trustanchor-notificationsetting-syntax.yaml"></a>
 
-```yaml
-
-  Channel: String
-  Enabled: Boolean
-  Event: String
-  Threshold: Number
-
+```
+  [Channel](#cfn-rolesanywhere-trustanchor-notificationsetting-channel): {{String}}
+  [Enabled](#cfn-rolesanywhere-trustanchor-notificationsetting-enabled): {{Boolean}}
+  [Event](#cfn-rolesanywhere-trustanchor-notificationsetting-event): {{String}}
+  [Threshold](#cfn-rolesanywhere-trustanchor-notificationsetting-threshold): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-rolesanywhere-trustanchor-notificationsetting-properties"></a>
 
-`Channel`
-
-The specified channel of notification.
-IAM Roles Anywhere uses CloudWatch metrics, EventBridge, and Health Dashboard to notify for an event.
-
-###### Note
-
+`Channel`  <a name="cfn-rolesanywhere-trustanchor-notificationsetting-channel"></a>
+The specified channel of notification. IAM Roles Anywhere uses CloudWatch metrics, EventBridge, and Health Dashboard to notify for an event.
 In the absence of a specific channel, IAM Roles Anywhere applies this setting to 'ALL' channels.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-rolesanywhere-trustanchor-notificationsetting-enabled"></a>
 Indicates whether the notification setting is enabled.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Event`
-
+`Event`  <a name="cfn-rolesanywhere-trustanchor-notificationsetting-event"></a>
 The event to which this notification setting is applied.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CA_CERTIFICATE_EXPIRY | END_ENTITY_CERTIFICATE_EXPIRY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CA_CERTIFICATE_EXPIRY | END_ENTITY_CERTIFICATE_EXPIRY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Threshold`
-
+`Threshold`  <a name="cfn-rolesanywhere-trustanchor-notificationsetting-threshold"></a>
 The number of days before a notification event. This value is required for a notification setting that is enabled.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `360`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RolesAnywhere::TrustAnchor
-
-Source
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `360`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,150 +2,112 @@
 title: "AWS::IoTWireless::WirelessDeviceImportTask"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::WirelessDeviceImportTask
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask"></a>
 
-Information about an import task for wireless devices. When creating the resource,
-either create a single wireless device import task using the Sidewalk manufacturing serial
-number (SMSN) of the wireless device, or create an import task for multiple devices by
-specifying both the `DeviceCreationFile` and the `Role`.
+Information about an import task for wireless devices. When creating the resource, either create a single wireless device import task using the Sidewalk manufacturing serial number (SMSN) of the wireless device, or create an import task for multiple devices by specifying both the `DeviceCreationFile` and the `Role`.
 
 ## Syntax
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTWireless::WirelessDeviceImportTask",
   "Properties" : {
-      "DestinationName" : String,
-      "Sidewalk" : Sidewalk,
-      "Tags" : [ Tag, ... ]
+      "[DestinationName](#cfn-iotwireless-wirelessdeviceimporttask-destinationname)" : {{String}},
+      "[Sidewalk](#cfn-iotwireless-wirelessdeviceimporttask-sidewalk)" : {{Sidewalk}},
+      "[Tags](#cfn-iotwireless-wirelessdeviceimporttask-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTWireless::WirelessDeviceImportTask
 Properties:
-  DestinationName: String
-  Sidewalk:
-    Sidewalk
-  Tags:
-    - Tag
-
+  [DestinationName](#cfn-iotwireless-wirelessdeviceimporttask-destinationname): {{String}}
+  [Sidewalk](#cfn-iotwireless-wirelessdeviceimporttask-sidewalk): {{
+    Sidewalk}}
+  [Tags](#cfn-iotwireless-wirelessdeviceimporttask-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-properties"></a>
 
-`DestinationName`
+`DestinationName`  <a name="cfn-iotwireless-wirelessdeviceimporttask-destinationname"></a>
+The name of the destination that describes the IoT rule to route messages from the Sidewalk devices in the import task to other applications.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9-_]+`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the destination that describes the IoT rule to route messages from the
-Sidewalk devices in the import task to other applications.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9-_]+`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sidewalk`
-
+`Sidewalk`  <a name="cfn-iotwireless-wirelessdeviceimporttask-sidewalk"></a>
 The Sidewalk-related information of the wireless device import task.
+*Required*: Yes
+*Type*: [Sidewalk](aws-properties-iotwireless-wirelessdeviceimporttask-sidewalk.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Sidewalk](aws-properties-iotwireless-wirelessdeviceimporttask-sidewalk.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Adds to or modifies the tags of the given resource. Tags are metadata that you can use
-to manage a resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotwireless-wirelessdeviceimporttask-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iotwireless-wirelessdeviceimporttask-tags"></a>
+Adds to or modifies the tags of the given resource. Tags are metadata that you can use to manage a resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotwireless-wirelessdeviceimporttask-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the wireless device import task.
 
 ### Fn::GetAtt
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-iotwireless-wirelessdeviceimporttask-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN (Amazon Resource Name) of the import task.
 
-`CreationDate`
-
+`CreationDate`  <a name="CreationDate-fn::getatt"></a>
 The date and time at which the wireless device import task was created.
 
-`FailedImportedDevicesCount`
+`FailedImportedDevicesCount`  <a name="FailedImportedDevicesCount-fn::getatt"></a>
+The summary information of count of wireless devices that failed to onboard to the import task.
 
-The summary information of count of wireless devices that failed to onboard to the
-import task.
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The import task ID.
 
-`InitializedImportedDevicesCount`
+`InitializedImportedDevicesCount`  <a name="InitializedImportedDevicesCount-fn::getatt"></a>
+The summary information of count of wireless devices that are waiting for the control log to be added to an import task.
 
-The summary information of count of wireless devices that are waiting for the control
-log to be added to an import task.
+`OnboardedImportedDevicesCount`  <a name="OnboardedImportedDevicesCount-fn::getatt"></a>
+The summary information of count of wireless devices that have been onboarded to the import task.
 
-`OnboardedImportedDevicesCount`
+`PendingImportedDevicesCount`  <a name="PendingImportedDevicesCount-fn::getatt"></a>
+The summary information of count of wireless devices that are waiting in the queue to be onboarded to the import task.
 
-The summary information of count of wireless devices that have been onboarded to the
-import task.
-
-`PendingImportedDevicesCount`
-
-The summary information of count of wireless devices that are waiting in the queue to be
-onboarded to the import task.
-
-`Sidewalk.DeviceCreationFileList`
-
+`Sidewalk.DeviceCreationFileList`  <a name="Sidewalk.DeviceCreationFileList-fn::getatt"></a>
 List of Sidewalk devices that are added to the import task.
 
-`Status`
+`Status`  <a name="Status-fn::getatt"></a>
+The status of a wireless device import task. The status can be `INITIALIZING`, `INITIALIZED`, `PENDING`, `COMPLETE`, `FAILED`, or `DELETING`.
 
-The status of a wireless device import task. The status can be
-`INITIALIZING`, `INITIALIZED`, `PENDING`,
-`COMPLETE`, `FAILED`, or `DELETING`.
-
-`StatusReason`
-
+`StatusReason`  <a name="StatusReason-fn::getatt"></a>
 The reason that provides additional information about the import task status.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Sidewalk
 
 All content copied from https://docs.aws.amazon.com/.

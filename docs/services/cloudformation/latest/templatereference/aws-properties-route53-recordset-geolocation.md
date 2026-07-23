@@ -2,121 +2,78 @@
 title: "AWS::Route53::RecordSet GeoLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::RecordSet GeoLocation
+<a name="aws-properties-route53-recordset-geolocation"></a>
 
 A complex type that contains information about a geographic location.
 
 ## Syntax
+<a name="aws-properties-route53-recordset-geolocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53-recordset-geolocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContinentCode" : String,
-  "CountryCode" : String,
-  "SubdivisionCode" : String
+  "[ContinentCode](#cfn-route53-recordset-geolocation-continentcode)" : {{String}},
+  "[CountryCode](#cfn-route53-recordset-geolocation-countrycode)" : {{String}},
+  "[SubdivisionCode](#cfn-route53-recordset-geolocation-subdivisioncode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53-recordset-geolocation-syntax.yaml"></a>
 
-```yaml
-
-  ContinentCode: String
-  CountryCode: String
-  SubdivisionCode: String
-
+```
+  [ContinentCode](#cfn-route53-recordset-geolocation-continentcode): {{String}}
+  [CountryCode](#cfn-route53-recordset-geolocation-countrycode): {{String}}
+  [SubdivisionCode](#cfn-route53-recordset-geolocation-subdivisioncode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53-recordset-geolocation-properties"></a>
 
-`ContinentCode`
-
+`ContinentCode`  <a name="cfn-route53-recordset-geolocation-continentcode"></a>
 For geolocation resource record sets, a two-letter abbreviation that identifies a continent. Route 53 supports the following continent codes:
++ **AF**: Africa
++ **AN**: Antarctica
++ **AS**: Asia
++ **EU**: Europe
++ **OC**: Oceania
++ **NA**: North America
++ **SA**: South America
+Constraint: Specifying `ContinentCode` with either `CountryCode` or `SubdivisionCode` returns an `InvalidInput` error.
+*Required*: No
+*Type*: String
+*Minimum*: `2`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- **AF**: Africa
-
-- **AN**: Antarctica
-
-- **AS**: Asia
-
-- **EU**: Europe
-
-- **OC**: Oceania
-
-- **NA**: North America
-
-- **SA**: South America
-
-Constraint: Specifying `ContinentCode` with either `CountryCode` or `SubdivisionCode` returns an
-`InvalidInput` error.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `2`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CountryCode`
-
+`CountryCode`  <a name="cfn-route53-recordset-geolocation-countrycode"></a>
 For geolocation resource record sets, the two-letter code for a country.
+Route 53 uses the two-letter country codes that are specified in [ISO standard 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Route 53 uses the two-letter country codes that are specified in
-[ISO standard 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubdivisionCode`
-
-For geolocation resource record sets, the two-letter code for a state of the United States.
-Route 53 doesn't support any other values for `SubdivisionCode`. For a list of state abbreviations, see
-[Appendix B: Two–Letter State and Possession Abbreviations](https://pe.usps.com/text/pub28/28apb.htm)
-on the United States Postal Service website.
-
+`SubdivisionCode`  <a name="cfn-route53-recordset-geolocation-subdivisioncode"></a>
+For geolocation resource record sets, the two-letter code for a state of the United States. Route 53 doesn't support any other values for `SubdivisionCode`. For a list of state abbreviations, see [Appendix B: Two–Letter State and Possession Abbreviations](https://pe.usps.com/text/pub28/28apb.htm) on the United States Postal Service website.
 If you specify `subdivisioncode`, you must also specify `US` for `CountryCode`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Return values](../userguide/aws-properties-route53-recordset.md#aws-properties-route53-recordset-return-values)
-in the topic
-[AWS::Route53::RecordSet](../userguide/aws-properties-route53-recordset.md)
-
-- [GeoLocation](../../../../reference/route53/latest/apireference/api-geolocation.md) in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Coordinates
-
-GeoProximityLocation
+<a name="aws-properties-route53-recordset-geolocation--seealso"></a>
++ [Return values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#aws-properties-route53-recordset-return-values) in the topic [AWS::Route53::RecordSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html)
++ [GeoLocation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoLocation.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

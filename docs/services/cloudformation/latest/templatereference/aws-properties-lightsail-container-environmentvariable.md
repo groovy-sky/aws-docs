@@ -2,65 +2,49 @@
 title: "AWS::Lightsail::Container EnvironmentVariable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Container EnvironmentVariable
+<a name="aws-properties-lightsail-container-environmentvariable"></a>
 
-`EnvironmentVariable` is a property of the [Container](../userguide/aws-properties-lightsail-container-container.md) property. It describes the environment variables of a container on a container service which are key-value parameters that
-provide dynamic configuration of the application or script run by the container.
+`EnvironmentVariable` is a property of the [Container](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lightsail-container-container.html) property. It describes the environment variables of a container on a container service which are key-value parameters that provide dynamic configuration of the application or script run by the container.
 
 ## Syntax
+<a name="aws-properties-lightsail-container-environmentvariable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-container-environmentvariable-syntax.json"></a>
 
-```json
-
+```
 {
-  "Value" : String,
-  "Variable" : String
+  "[Value](#cfn-lightsail-container-environmentvariable-value)" : {{String}},
+  "[Variable](#cfn-lightsail-container-environmentvariable-variable)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-container-environmentvariable-syntax.yaml"></a>
 
-```yaml
-
-  Value: String
-  Variable: String
-
+```
+  [Value](#cfn-lightsail-container-environmentvariable-value): {{String}}
+  [Variable](#cfn-lightsail-container-environmentvariable-variable): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-container-environmentvariable-properties"></a>
 
-`Value`
-
+`Value`  <a name="cfn-lightsail-container-environmentvariable-value"></a>
 The environment variable value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Variable`
-
+`Variable`  <a name="cfn-lightsail-container-environmentvariable-variable"></a>
 The environment variable key.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EcrImagePullerRole
-
-HealthCheckConfig
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

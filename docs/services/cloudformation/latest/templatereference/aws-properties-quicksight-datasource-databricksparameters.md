@@ -2,88 +2,63 @@
 title: "AWS::QuickSight::DataSource DatabricksParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource DatabricksParameters
+<a name="aws-properties-quicksight-datasource-databricksparameters"></a>
 
 The required parameters that are needed to connect to a Databricks data source.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-databricksparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-databricksparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Host" : String,
-  "Port" : Number,
-  "SqlEndpointPath" : String
+  "[Host](#cfn-quicksight-datasource-databricksparameters-host)" : {{String}},
+  "[Port](#cfn-quicksight-datasource-databricksparameters-port)" : {{Number}},
+  "[SqlEndpointPath](#cfn-quicksight-datasource-databricksparameters-sqlendpointpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-databricksparameters-syntax.yaml"></a>
 
-```yaml
-
-  Host: String
-  Port: Number
-  SqlEndpointPath: String
-
+```
+  [Host](#cfn-quicksight-datasource-databricksparameters-host): {{String}}
+  [Port](#cfn-quicksight-datasource-databricksparameters-port): {{Number}}
+  [SqlEndpointPath](#cfn-quicksight-datasource-databricksparameters-sqlendpointpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-databricksparameters-properties"></a>
 
-`Host`
-
+`Host`  <a name="cfn-quicksight-datasource-databricksparameters-host"></a>
 The host name of the Databricks data source.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-quicksight-datasource-databricksparameters-port"></a>
 The port for the Databricks data source.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SqlEndpointPath`
-
+`SqlEndpointPath`  <a name="cfn-quicksight-datasource-databricksparameters-sqlendpointpath"></a>
 The HTTP path of the Databricks data source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CredentialPair
-
-DataSourceCredentials
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

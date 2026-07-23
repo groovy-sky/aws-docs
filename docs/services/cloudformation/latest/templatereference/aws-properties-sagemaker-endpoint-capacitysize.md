@@ -2,81 +2,55 @@
 title: "AWS::SageMaker::Endpoint CapacitySize"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Endpoint CapacitySize
+<a name="aws-properties-sagemaker-endpoint-capacitysize"></a>
 
-Specifies the type and size of the endpoint capacity to activate for a blue/green
-deployment, a rolling deployment, or a rollback strategy. You can specify your batches
-as either instance count or the overall percentage or your fleet.
+Specifies the type and size of the endpoint capacity to activate for a blue/green deployment, a rolling deployment, or a rollback strategy. You can specify your batches as either instance count or the overall percentage or your fleet.
 
-For a rollback strategy, if you don't specify the fields in this object, or if you set
-the `Value` to 100%, then SageMaker uses a blue/green rollback strategy and rolls
-all traffic back to the blue fleet.
+For a rollback strategy, if you don't specify the fields in this object, or if you set the `Value` to 100%, then SageMaker uses a blue/green rollback strategy and rolls all traffic back to the blue fleet.
 
 ## Syntax
+<a name="aws-properties-sagemaker-endpoint-capacitysize-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-endpoint-capacitysize-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "Value" : Integer
+  "[Type](#cfn-sagemaker-endpoint-capacitysize-type)" : {{String}},
+  "[Value](#cfn-sagemaker-endpoint-capacitysize-value)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-endpoint-capacitysize-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  Value: Integer
-
+```
+  [Type](#cfn-sagemaker-endpoint-capacitysize-type): {{String}}
+  [Value](#cfn-sagemaker-endpoint-capacitysize-value): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-endpoint-capacitysize-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-sagemaker-endpoint-capacitysize-type"></a>
 Specifies the endpoint capacity type.
++ `INSTANCE_COUNT`: The endpoint activates based on the number of instances.
++ `CAPACITY_PERCENT`: The endpoint activates based on the specified percentage of capacity.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INSTANCE_COUNT | CAPACITY_PERCENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `INSTANCE_COUNT`: The endpoint activates based on the number of
-instances.
-
-- `CAPACITY_PERCENT`: The endpoint activates based on the specified
-percentage of capacity.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INSTANCE_COUNT | CAPACITY_PERCENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-Defines the capacity size, either as a number of instances or a capacity
-percentage.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BlueGreenUpdatePolicy
-
-DeploymentConfig
+`Value`  <a name="cfn-sagemaker-endpoint-capacitysize-value"></a>
+Defines the capacity size, either as a number of instances or a capacity percentage.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

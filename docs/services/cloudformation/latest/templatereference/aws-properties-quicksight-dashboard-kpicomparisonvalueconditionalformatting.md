@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard KPIComparisonValueConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard KPIComparisonValueConditionalFormatting
+<a name="aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting"></a>
 
 The conditional formatting for the comparison value of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "Icon" : ConditionalFormattingIcon,
-  "TextColor" : ConditionalFormattingColor
+  "[Icon](#cfn-quicksight-dashboard-kpicomparisonvalueconditionalformatting-icon)" : {{ConditionalFormattingIcon}},
+  "[TextColor](#cfn-quicksight-dashboard-kpicomparisonvalueconditionalformatting-textcolor)" : {{ConditionalFormattingColor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  Icon:
-    ConditionalFormattingIcon
-  TextColor:
-    ConditionalFormattingColor
-
+```
+  [Icon](#cfn-quicksight-dashboard-kpicomparisonvalueconditionalformatting-icon): {{
+    ConditionalFormattingIcon}}
+  [TextColor](#cfn-quicksight-dashboard-kpicomparisonvalueconditionalformatting-textcolor): {{
+    ConditionalFormattingColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting-properties"></a>
 
-`Icon`
-
+`Icon`  <a name="cfn-quicksight-dashboard-kpicomparisonvalueconditionalformatting-icon"></a>
 The conditional formatting of the comparison value's icon.
+*Required*: No
+*Type*: [ConditionalFormattingIcon](aws-properties-quicksight-dashboard-conditionalformattingicon.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConditionalFormattingIcon](aws-properties-quicksight-dashboard-conditionalformattingicon.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextColor`
-
+`TextColor`  <a name="cfn-quicksight-dashboard-kpicomparisonvalueconditionalformatting-textcolor"></a>
 The conditional formatting of the comparison value's text color.
-
-_Required_: No
-
-_Type_: [ConditionalFormattingColor](aws-properties-quicksight-dashboard-conditionalformattingcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPIActualValueConditionalFormatting
-
-KPIConditionalFormatting
+*Required*: No
+*Type*: [ConditionalFormattingColor](aws-properties-quicksight-dashboard-conditionalformattingcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,61 +2,47 @@
 title: "AWS::KinesisAnalyticsV2::Application SqlApplicationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application SqlApplicationConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration"></a>
 
 Describes the inputs, outputs, and reference data sources for a SQL-based Kinesis Data Analytics application.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Inputs" : [ Input, ... ]
+  "[Inputs](#cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs)" : {{[ Input, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Inputs:
-    - Input
-
+```
+  [Inputs](#cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs): {{
+    - Input}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration-properties"></a>
 
-`Inputs`
-
-The array of [Input](../../../managed-flink/latest/apiv2/api-input.md) objects describing the
-input streams used by the application.
-
-_Required_: No
-
-_Type_: Array of [Input](aws-properties-kinesisanalyticsv2-application-input.md)
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Inputs`  <a name="cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs"></a>
+The array of [Input](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Input.html) objects describing the input streams used by the application.
+*Required*: No
+*Type*: Array of [Input](aws-properties-kinesisanalyticsv2-application-input.md)
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [SqlApplicationConfiguration](../../../managed-flink/latest/apiv2/api-sqlapplicationconfiguration.md) in the _Amazon Kinesis_
-_Data Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3ContentLocation
-
-Tag
+<a name="aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration--seealso"></a>
++ [SqlApplicationConfiguration](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SqlApplicationConfiguration.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

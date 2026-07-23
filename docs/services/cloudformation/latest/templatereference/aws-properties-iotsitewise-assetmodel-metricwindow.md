@@ -2,54 +2,42 @@
 title: "AWS::IoTSiteWise::AssetModel MetricWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel MetricWindow
+<a name="aws-properties-iotsitewise-assetmodel-metricwindow"></a>
 
-Contains a time interval window used for data aggregate computations (for example,
-average, sum, count, and so on).
+Contains a time interval window used for data aggregate computations (for example, average, sum, count, and so on).
 
 ## Syntax
+<a name="aws-properties-iotsitewise-assetmodel-metricwindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-assetmodel-metricwindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "Tumbling" : TumblingWindow
+  "[Tumbling](#cfn-iotsitewise-assetmodel-metricwindow-tumbling)" : {{TumblingWindow}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-assetmodel-metricwindow-syntax.yaml"></a>
 
-```yaml
-
-  Tumbling:
-    TumblingWindow
-
+```
+  [Tumbling](#cfn-iotsitewise-assetmodel-metricwindow-tumbling): {{
+    TumblingWindow}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-assetmodel-metricwindow-properties"></a>
 
-`Tumbling`
-
+`Tumbling`  <a name="cfn-iotsitewise-assetmodel-metricwindow-tumbling"></a>
 The tumbling time interval window.
-
-_Required_: No
-
-_Type_: [TumblingWindow](aws-properties-iotsitewise-assetmodel-tumblingwindow.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Metric
-
-PropertyPathDefinition
+*Required*: No
+*Type*: [TumblingWindow](aws-properties-iotsitewise-assetmodel-tumblingwindow.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

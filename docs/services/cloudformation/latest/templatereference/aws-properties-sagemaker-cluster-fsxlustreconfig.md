@@ -2,73 +2,53 @@
 title: "AWS::SageMaker::Cluster FSxLustreConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Cluster FSxLustreConfig
+<a name="aws-properties-sagemaker-cluster-fsxlustreconfig"></a>
 
 Configuration settings for an Amazon FSx for Lustre file system to be used with the cluster.
 
 ## Syntax
+<a name="aws-properties-sagemaker-cluster-fsxlustreconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-cluster-fsxlustreconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "PerUnitStorageThroughput" : Integer,
-  "SizeInGiB" : Integer
+  "[PerUnitStorageThroughput](#cfn-sagemaker-cluster-fsxlustreconfig-perunitstoragethroughput)" : {{Integer}},
+  "[SizeInGiB](#cfn-sagemaker-cluster-fsxlustreconfig-sizeingib)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-cluster-fsxlustreconfig-syntax.yaml"></a>
 
-```yaml
-
-  PerUnitStorageThroughput: Integer
-  SizeInGiB: Integer
-
+```
+  [PerUnitStorageThroughput](#cfn-sagemaker-cluster-fsxlustreconfig-perunitstoragethroughput): {{Integer}}
+  [SizeInGiB](#cfn-sagemaker-cluster-fsxlustreconfig-sizeingib): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-cluster-fsxlustreconfig-properties"></a>
 
-`PerUnitStorageThroughput`
+`PerUnitStorageThroughput`  <a name="cfn-sagemaker-cluster-fsxlustreconfig-perunitstoragethroughput"></a>
+The throughput capacity of the Amazon FSx for Lustre file system, measured in MB/s per TiB of storage.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `125`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The throughput capacity of the Amazon FSx for Lustre file system, measured in MB/s per TiB of
-storage.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `125`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SizeInGiB`
-
+`SizeInGiB`  <a name="cfn-sagemaker-cluster-fsxlustreconfig-sizeingib"></a>
 The storage capacity of the Amazon FSx for Lustre file system, specified in gibibytes (GiB).
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1200`
-
-_Maximum_: `100800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnvironmentConfig
-
-Orchestrator
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1200`
+*Maximum*: `100800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

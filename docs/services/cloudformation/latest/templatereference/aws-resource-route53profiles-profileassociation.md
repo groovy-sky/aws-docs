@@ -2,142 +2,110 @@
 title: "AWS::Route53Profiles::ProfileAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Profiles::ProfileAssociation
+<a name="aws-resource-route53profiles-profileassociation"></a>
 
-An association between a Route 53 Profile and a VPC.
+ An association between a Route 53 Profile and a VPC.
 
 ## Syntax
+<a name="aws-resource-route53profiles-profileassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53profiles-profileassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53Profiles::ProfileAssociation",
   "Properties" : {
-      "Arn" : String,
-      "Name" : String,
-      "ProfileId" : String,
-      "ResourceId" : String,
-      "Tags" : [ Tag, ... ]
+      "[Arn](#cfn-route53profiles-profileassociation-arn)" : {{String}},
+      "[Name](#cfn-route53profiles-profileassociation-name)" : {{String}},
+      "[ProfileId](#cfn-route53profiles-profileassociation-profileid)" : {{String}},
+      "[ResourceId](#cfn-route53profiles-profileassociation-resourceid)" : {{String}},
+      "[Tags](#cfn-route53profiles-profileassociation-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53profiles-profileassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Profiles::ProfileAssociation
 Properties:
-  Arn: String
-  Name: String
-  ProfileId: String
-  ResourceId: String
-  Tags:
-    - Tag
-
+  [Arn](#cfn-route53profiles-profileassociation-arn): {{String}}
+  [Name](#cfn-route53profiles-profileassociation-name): {{String}}
+  [ProfileId](#cfn-route53profiles-profileassociation-profileid): {{String}}
+  [ResourceId](#cfn-route53profiles-profileassociation-resourceid): {{String}}
+  [Tags](#cfn-route53profiles-profileassociation-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-route53profiles-profileassociation-properties"></a>
 
-`Arn`
-
+`Arn`  <a name="cfn-route53profiles-profileassociation-arn"></a>
 The Amazon Resource Name (ARN) of the profile association to a VPC.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-route53profiles-profileassociation-name"></a>
+ Name of the Profile association.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`ProfileId`  <a name="cfn-route53profiles-profileassociation-profileid"></a>
+ ID of the Profile.
+Update to this property requires update to the `ResourceId` property as well, because you can only associate one Profile per VPC. For more information, see [Route 53 Profiles](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html).
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ResourceId`  <a name="cfn-route53profiles-profileassociation-resourceid"></a>
+ The ID of the VPC.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`Name`
-
-Name of the Profile association.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfileId`
-
-ID of the Profile.
-
-Update to this property requires update to the `ResourceId` property as well,
-because you can only associate one Profile per VPC. For more information, see [Route 53\
-Profiles](../../../route53/latest/developerguide/profiles.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceId`
-
-The ID of the VPC.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-route53profiles-profileassociation-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-route53profiles-profileassociation-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-route53profiles-profileassociation-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-route53profiles-profileassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53profiles-profileassociation-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `ProfileAssociation` ID for the profile association to a VPC, such as `rpassoc-a6d96d8cexample4`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`ProfileAssociation` ID for the profile association to a VPC, such as `rpassoc-a6d96d8cexample4`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53profiles-profileassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-route53profiles-profileassociation-return-values-fn--getatt-fn--getatt"></a>
 
-ID of the Profile association.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`Id`  <a name="Id-fn::getatt"></a>
+ ID of the Profile association.
 
 All content copied from https://docs.aws.amazon.com/.

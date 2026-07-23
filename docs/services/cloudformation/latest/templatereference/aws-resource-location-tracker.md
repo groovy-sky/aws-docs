@@ -2,222 +2,148 @@
 title: "AWS::Location::Tracker"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Location::Tracker
+<a name="aws-resource-location-tracker"></a>
 
-Specifies a tracker resource in your AWS account, which lets you
-receive current and historical location of devices.
+Specifies a tracker resource in your AWS account, which lets you receive current and historical location of devices.
 
 ## Syntax
+<a name="aws-resource-location-tracker-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-location-tracker-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Location::Tracker",
   "Properties" : {
-      "Description" : String,
-      "EventBridgeEnabled" : Boolean,
-      "KmsKeyEnableGeospatialQueries" : Boolean,
-      "KmsKeyId" : String,
-      "PositionFiltering" : String,
-      "Tags" : [ Tag, ... ],
-      "TrackerName" : String
+      "[Description](#cfn-location-tracker-description)" : {{String}},
+      "[EventBridgeEnabled](#cfn-location-tracker-eventbridgeenabled)" : {{Boolean}},
+      "[KmsKeyEnableGeospatialQueries](#cfn-location-tracker-kmskeyenablegeospatialqueries)" : {{Boolean}},
+      "[KmsKeyId](#cfn-location-tracker-kmskeyid)" : {{String}},
+      "[PositionFiltering](#cfn-location-tracker-positionfiltering)" : {{String}},
+      "[Tags](#cfn-location-tracker-tags)" : {{[ Tag, ... ]}},
+      "[TrackerName](#cfn-location-tracker-trackername)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-location-tracker-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Location::Tracker
 Properties:
-  Description: String
-  EventBridgeEnabled: Boolean
-  KmsKeyEnableGeospatialQueries: Boolean
-  KmsKeyId: String
-  PositionFiltering: String
-  Tags:
-    - Tag
-  TrackerName: String
-
+  [Description](#cfn-location-tracker-description): {{String}}
+  [EventBridgeEnabled](#cfn-location-tracker-eventbridgeenabled): {{Boolean}}
+  [KmsKeyEnableGeospatialQueries](#cfn-location-tracker-kmskeyenablegeospatialqueries): {{Boolean}}
+  [KmsKeyId](#cfn-location-tracker-kmskeyid): {{String}}
+  [PositionFiltering](#cfn-location-tracker-positionfiltering): {{String}}
+  [Tags](#cfn-location-tracker-tags): {{
+    - Tag}}
+  [TrackerName](#cfn-location-tracker-trackername): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-location-tracker-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-location-tracker-description"></a>
 An optional description for the tracker resource.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBridgeEnabled`
-
+`EventBridgeEnabled`  <a name="cfn-location-tracker-eventbridgeenabled"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyEnableGeospatialQueries`
-
+`KmsKeyEnableGeospatialQueries`  <a name="cfn-location-tracker-kmskeyenablegeospatialqueries"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`KmsKeyId`  <a name="cfn-location-tracker-kmskeyid"></a>
+A key identifier for an [AWS KMS customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html). Enter a key ID, key ARN, alias name, or alias ARN.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyId`
-
-A key identifier for an
-[AWS \
-KMS customer managed key](../../../kms/latest/developerguide/create-keys.md). Enter a key ID, key ARN, alias name, or alias ARN.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PositionFiltering`
-
+`PositionFiltering`  <a name="cfn-location-tracker-positionfiltering"></a>
 Specifies the position filtering for the tracker resource.
-
 Valid values:
-
-- `TimeBased` \- Location updates are evaluated against linked geofence collections,
-but not every location update is stored. If your update frequency is more often than 30 seconds,
-only one update per 30 seconds is stored for each unique device ID.
-
-- `DistanceBased` \- If the device has moved less than 30 m (98.4 ft), location updates are
-ignored. Location updates within this area are neither evaluated against linked geofence collections, nor stored.
-This helps control costs by reducing the number of geofence evaluations and historical device positions to paginate through.
-Distance-based filtering can also reduce the effects of GPS noise when displaying device trajectories on a map.
-
-- `AccuracyBased` \- If the device has moved less than the measured accuracy,
-location updates are ignored. For example, if two consecutive updates from a device
-have a horizontal accuracy of 5 m and 10 m, the second update is ignored if the device
-has moved less than 15 m. Ignored location updates are neither evaluated against
-linked geofence collections, nor stored. This can reduce the effects of GPS noise
-when displaying device trajectories on a map, and can help control your costs by reducing the
-number of geofence evaluations.
-
++ `TimeBased` - Location updates are evaluated against linked geofence collections, but not every location update is stored. If your update frequency is more often than 30 seconds, only one update per 30 seconds is stored for each unique device ID.
++ `DistanceBased` - If the device has moved less than 30 m (98.4 ft), location updates are ignored. Location updates within this area are neither evaluated against linked geofence collections, nor stored. This helps control costs by reducing the number of geofence evaluations and historical device positions to paginate through. Distance-based filtering can also reduce the effects of GPS noise when displaying device trajectories on a map.
++ `AccuracyBased` - If the device has moved less than the measured accuracy, location updates are ignored. For example, if two consecutive updates from a device have a horizontal accuracy of 5 m and 10 m, the second update is ignored if the device has moved less than 15 m. Ignored location updates are neither evaluated against linked geofence collections, nor stored. This can reduce the effects of GPS noise when displaying device trajectories on a map, and can help control your costs by reducing the number of geofence evaluations.
 This field is optional. If not specified, the default value is `TimeBased`.
+*Required*: No
+*Type*: String
+*Allowed values*: `TimeBased | DistanceBased | AccuracyBased`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TimeBased | DistanceBased | AccuracyBased`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-location-tracker-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-location-tracker-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-location-tracker-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrackerName`
-
+`TrackerName`  <a name="cfn-location-tracker-trackername"></a>
 The name for the tracker resource.
-
 Requirements:
-
-- Contain only alphanumeric characters (A-Z, a-z, 0-9) , hyphens (-), periods (.), and underscores (\_).
-
-- Must be a unique tracker resource name.
-
-- No spaces allowed. For example, `ExampleTracker`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[-._\w]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
++ Contain only alphanumeric characters (A-Z, a-z, 0-9) , hyphens (-), periods (.), and underscores (\_).
++ Must be a unique tracker resource name.
++ No spaces allowed. For example, `ExampleTracker`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[-._\w]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-location-tracker-return-values"></a>
 
 ### Ref
+<a name="aws-resource-location-tracker-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `Tracker` name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-location-tracker-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-location-tracker-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify
-a resource across all AWS.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify a resource across all AWS.
++ Format example: `arn:aws:geo:region:account-id:tracker/ExampleTracker`
 
-- Format example:
-`arn:aws:geo:region:account-id:tracker/ExampleTracker`
+`CreateTime`  <a name="CreateTime-fn::getatt"></a>
+The timestamp for when the tracker resource was created in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: `YYYY-MM-DDThh:mm:ss.sssZ`.
 
-`CreateTime`
+`TrackerArn`  <a name="TrackerArn-fn::getatt"></a>
+Synonym for `Arn`. The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify a resource across all AWS.
++ Format example: `arn:aws:geo:region:account-id:tracker/ExampleTracker`
 
-The timestamp for when the tracker resource was created in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format:
-`YYYY-MM-DDThh:mm:ss.sssZ`.
-
-`TrackerArn`
-
-Synonym for `Arn`. The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify
-a resource across all AWS.
-
-- Format example:
-`arn:aws:geo:region:account-id:tracker/ExampleTracker`
-
-`UpdateTime`
-
-The timestamp for when the tracker resource was last updated in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format:
-`YYYY-MM-DDThh:mm:ss.sssZ`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`UpdateTime`  <a name="UpdateTime-fn::getatt"></a>
+The timestamp for when the tracker resource was last updated in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: `YYYY-MM-DDThh:mm:ss.sssZ`.
 
 All content copied from https://docs.aws.amazon.com/.

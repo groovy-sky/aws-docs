@@ -2,72 +2,53 @@
 title: "AWS::Invoicing::InvoiceUnit ResourceTag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Invoicing::InvoiceUnit ResourceTag
+<a name="aws-properties-invoicing-invoiceunit-resourcetag"></a>
 
-The tag structure that contains a tag key and value.
+ The tag structure that contains a tag key and value.
 
 ## Syntax
+<a name="aws-properties-invoicing-invoiceunit-resourcetag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-invoicing-invoiceunit-resourcetag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-invoicing-invoiceunit-resourcetag-key)" : {{String}},
+  "[Value](#cfn-invoicing-invoiceunit-resourcetag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-invoicing-invoiceunit-resourcetag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-invoicing-invoiceunit-resourcetag-key): {{String}}
+  [Value](#cfn-invoicing-invoiceunit-resourcetag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-invoicing-invoiceunit-resourcetag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-invoicing-invoiceunit-resourcetag-key"></a>
 The object key of your of your resource tag.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The specific value of the resource tag.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Invoicing::InvoiceUnit
-
-Rule
+`Value`  <a name="cfn-invoicing-invoiceunit-resourcetag-value"></a>
+ The specific value of the resource tag.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

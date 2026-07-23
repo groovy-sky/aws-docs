@@ -2,74 +2,54 @@
 title: "AWS::Kendra::Faq S3Path"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::Faq S3Path
+<a name="aws-properties-kendra-faq-s3path"></a>
 
 Information required to find a specific file in an Amazon S3 bucket.
 
 ## Syntax
+<a name="aws-properties-kendra-faq-s3path-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-faq-s3path-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String
+  "[Bucket](#cfn-kendra-faq-s3path-bucket)" : {{String}},
+  "[Key](#cfn-kendra-faq-s3path-key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-faq-s3path-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-
+```
+  [Bucket](#cfn-kendra-faq-s3path-bucket): {{String}}
+  [Key](#cfn-kendra-faq-s3path-key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-faq-s3path-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-kendra-faq-s3path-bucket"></a>
 The name of the S3 bucket that contains the file.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Key`
-
+`Key`  <a name="cfn-kendra-faq-s3path-key"></a>
 The name of the file.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Kendra::Faq
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,52 @@
 title: "AWS::CustomerProfiles::Integration TaskPropertiesMap"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Integration TaskPropertiesMap
+<a name="aws-properties-customerprofiles-integration-taskpropertiesmap"></a>
 
-A map used to store task-related information. The execution service looks for
-particular information based on the `TaskType`.
+A map used to store task-related information. The execution service looks for particular information based on the `TaskType`.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-integration-taskpropertiesmap-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-integration-taskpropertiesmap-syntax.json"></a>
 
-```json
-
+```
 {
-  "OperatorPropertyKey" : String,
-  "Property" : String
+  "[OperatorPropertyKey](#cfn-customerprofiles-integration-taskpropertiesmap-operatorpropertykey)" : {{String}},
+  "[Property](#cfn-customerprofiles-integration-taskpropertiesmap-property)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-integration-taskpropertiesmap-syntax.yaml"></a>
 
-```yaml
-
-  OperatorPropertyKey: String
-  Property: String
-
+```
+  [OperatorPropertyKey](#cfn-customerprofiles-integration-taskpropertiesmap-operatorpropertykey): {{String}}
+  [Property](#cfn-customerprofiles-integration-taskpropertiesmap-property): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-integration-taskpropertiesmap-properties"></a>
 
-`OperatorPropertyKey`
-
+`OperatorPropertyKey`  <a name="cfn-customerprofiles-integration-taskpropertiesmap-operatorpropertykey"></a>
 The task property key.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VALUE | VALUES | DATA_TYPE | UPPER_BOUND | LOWER_BOUND | SOURCE_DATA_TYPE | DESTINATION_DATA_TYPE | VALIDATION_ACTION | MASK_VALUE | MASK_LENGTH | TRUNCATE_LENGTH | MATH_OPERATION_FIELDS_ORDER | CONCAT_FORMAT | SUBFIELD_CATEGORY_MAP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VALUE | VALUES | DATA_TYPE | UPPER_BOUND | LOWER_BOUND | SOURCE_DATA_TYPE | DESTINATION_DATA_TYPE | VALIDATION_ACTION | MASK_VALUE | MASK_LENGTH | TRUNCATE_LENGTH | MATH_OPERATION_FIELDS_ORDER | CONCAT_FORMAT | SUBFIELD_CATEGORY_MAP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Property`
-
+`Property`  <a name="cfn-customerprofiles-integration-taskpropertiesmap-property"></a>
 The task property value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.+`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Task
-
-TriggerConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `.+`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,100 +2,71 @@
 title: "AWS::Synthetics::Canary VPCConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Synthetics::Canary VPCConfig
+<a name="aws-properties-synthetics-canary-vpcconfig"></a>
 
-If this canary is to test an endpoint in a VPC, this structure contains
-information about the subnet and security groups of the VPC endpoint.
-For more information, see [Running a Canary in a VPC](../../../amazoncloudwatch/latest/monitoring/cloudwatch-synthetics-canaries-vpc.md).
+If this canary is to test an endpoint in a VPC, this structure contains information about the subnet and security groups of the VPC endpoint. For more information, see [ Running a Canary in a VPC](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_VPC.html).
 
 ## Syntax
+<a name="aws-properties-synthetics-canary-vpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-synthetics-canary-vpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ipv6AllowedForDualStack" : Boolean,
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ],
-  "VpcId" : String
+  "[Ipv6AllowedForDualStack](#cfn-synthetics-canary-vpcconfig-ipv6allowedfordualstack)" : {{Boolean}},
+  "[SecurityGroupIds](#cfn-synthetics-canary-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-synthetics-canary-vpcconfig-subnetids)" : {{[ String, ... ]}},
+  "[VpcId](#cfn-synthetics-canary-vpcconfig-vpcid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-synthetics-canary-vpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  Ipv6AllowedForDualStack: Boolean
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-  VpcId: String
-
+```
+  [Ipv6AllowedForDualStack](#cfn-synthetics-canary-vpcconfig-ipv6allowedfordualstack): {{Boolean}}
+  [SecurityGroupIds](#cfn-synthetics-canary-vpcconfig-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-synthetics-canary-vpcconfig-subnetids): {{
+    - String}}
+  [VpcId](#cfn-synthetics-canary-vpcconfig-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-synthetics-canary-vpcconfig-properties"></a>
 
-`Ipv6AllowedForDualStack`
-
+`Ipv6AllowedForDualStack`  <a name="cfn-synthetics-canary-vpcconfig-ipv6allowedfordualstack"></a>
 Set this to `true` to allow outbound IPv6 traffic on VPC canaries that are connected to dual-stack subnets. The default is `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-synthetics-canary-vpcconfig-securitygroupids"></a>
 The IDs of the security groups for this canary.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-synthetics-canary-vpcconfig-subnetids"></a>
 The IDs of the subnets where this canary is to run.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-synthetics-canary-vpcconfig-vpcid"></a>
 The ID of the VPC where this canary is to run.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VisualReference
-
-AWS::Synthetics::Group
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

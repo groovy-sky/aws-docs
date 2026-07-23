@@ -2,82 +2,51 @@
 title: "AWS::ECS::Service ForceNewDeployment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Service ForceNewDeployment
+<a name="aws-properties-ecs-service-forcenewdeployment"></a>
 
-Determines whether to force a new deployment of the service. By default, deployments
-aren't forced. You can use this option to start a new deployment with no service
-definition changes. For example, you can update a service's tasks to use a newer Docker
-image with the same image/tag combination ( `my_image:latest`) or to roll
-Fargate tasks onto a newer platform version.
+Determines whether to force a new deployment of the service. By default, deployments aren't forced. You can use this option to start a new deployment with no service definition changes. For example, you can update a service's tasks to use a newer Docker image with the same image/tag combination (`my_image:latest`) or to roll Fargate tasks onto a newer platform version.
 
 ## Syntax
+<a name="aws-properties-ecs-service-forcenewdeployment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-service-forcenewdeployment-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableForceNewDeployment" : Boolean,
-  "ForceNewDeploymentNonce" : String
+  "[EnableForceNewDeployment](#cfn-ecs-service-forcenewdeployment-enableforcenewdeployment)" : {{Boolean}},
+  "[ForceNewDeploymentNonce](#cfn-ecs-service-forcenewdeployment-forcenewdeploymentnonce)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-service-forcenewdeployment-syntax.yaml"></a>
 
-```yaml
-
-  EnableForceNewDeployment: Boolean
-  ForceNewDeploymentNonce: String
-
+```
+  [EnableForceNewDeployment](#cfn-ecs-service-forcenewdeployment-enableforcenewdeployment): {{Boolean}}
+  [ForceNewDeploymentNonce](#cfn-ecs-service-forcenewdeployment-forcenewdeploymentnonce): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-service-forcenewdeployment-properties"></a>
 
-`EnableForceNewDeployment`
+`EnableForceNewDeployment`  <a name="cfn-ecs-service-forcenewdeployment-enableforcenewdeployment"></a>
+Determines whether to force a new deployment of the service. By default, deployments aren't forced. You can use this option to start a new deployment with no service definition changes. For example, you can update a service's tasks to use a newer Docker image with the same image/tag combination (`my_image:latest`) or to roll Fargate tasks onto a newer platform version.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines whether to force a new deployment of the service. By default, deployments
-aren't forced. You can use this option to start a new deployment with no service
-definition changes. For example, you can update a service's tasks to use a newer Docker
-image with the same image/tag combination ( `my_image:latest`) or to roll
-Fargate tasks onto a newer platform version.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForceNewDeploymentNonce`
-
-When you change the ` ForceNewDeploymentNonce` value in your
-template, it signals Amazon ECS to start a new deployment even though no
-other service parameters have changed. The value must be a unique, time-
-varying value like a timestamp, random string, or sequence number.
-Use this property when you want to ensure your tasks pick up the
-latest version of a Docker image that uses the same tag but has been updated in
-the registry.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EBSTagSpecification
-
-LinearConfiguration
+`ForceNewDeploymentNonce`  <a name="cfn-ecs-service-forcenewdeployment-forcenewdeploymentnonce"></a>
+When you change the` ForceNewDeploymentNonce` value in your template, it signals Amazon ECS to start a new deployment even though no other service parameters have changed. The value must be a unique, time- varying value like a timestamp, random string, or sequence number. Use this property when you want to ensure your tasks pick up the latest version of a Docker image that uses the same tag but has been updated in the registry.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

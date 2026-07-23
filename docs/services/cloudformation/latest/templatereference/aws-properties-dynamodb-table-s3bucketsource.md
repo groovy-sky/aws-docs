@@ -2,85 +2,61 @@
 title: "AWS::DynamoDB::Table S3BucketSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::Table S3BucketSource
+<a name="aws-properties-dynamodb-table-s3bucketsource"></a>
 
-The S3 bucket that is being imported from.
+ The S3 bucket that is being imported from.
 
 ## Syntax
+<a name="aws-properties-dynamodb-table-s3bucketsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-table-s3bucketsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Bucket" : String,
-  "S3BucketOwner" : String,
-  "S3KeyPrefix" : String
+  "[S3Bucket](#cfn-dynamodb-table-s3bucketsource-s3bucket)" : {{String}},
+  "[S3BucketOwner](#cfn-dynamodb-table-s3bucketsource-s3bucketowner)" : {{String}},
+  "[S3KeyPrefix](#cfn-dynamodb-table-s3bucketsource-s3keyprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-table-s3bucketsource-syntax.yaml"></a>
 
-```yaml
-
-  S3Bucket: String
-  S3BucketOwner: String
-  S3KeyPrefix: String
-
+```
+  [S3Bucket](#cfn-dynamodb-table-s3bucketsource-s3bucket): {{String}}
+  [S3BucketOwner](#cfn-dynamodb-table-s3bucketsource-s3bucketowner): {{String}}
+  [S3KeyPrefix](#cfn-dynamodb-table-s3bucketsource-s3keyprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-table-s3bucketsource-properties"></a>
 
-`S3Bucket`
+`S3Bucket`  <a name="cfn-dynamodb-table-s3bucketsource-s3bucket"></a>
+ The S3 bucket that is being imported from.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9A-Z]+[\.\-\w]*[a-z0-9A-Z]+$`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The S3 bucket that is being imported from.
+`S3BucketOwner`  <a name="cfn-dynamodb-table-s3bucketsource-s3bucketowner"></a>
+ The account number of the S3 bucket that is being imported from. If the bucket is owned by the requester this is optional.
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9]{12}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9A-Z]+[\.\-\w]*[a-z0-9A-Z]+$`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3BucketOwner`
-
-The account number of the S3 bucket that is being imported from. If the bucket is
-owned by the requester this is optional.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9]{12}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3KeyPrefix`
-
-The key prefix shared by all S3 Objects that are being imported.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResourcePolicy
-
-SSESpecification
+`S3KeyPrefix`  <a name="cfn-dynamodb-table-s3bucketsource-s3keyprefix"></a>
+ The key prefix shared by all S3 Objects that are being imported.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

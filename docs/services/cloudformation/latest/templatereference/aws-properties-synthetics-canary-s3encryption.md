@@ -2,75 +2,50 @@
 title: "AWS::Synthetics::Canary S3Encryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Synthetics::Canary S3Encryption
+<a name="aws-properties-synthetics-canary-s3encryption"></a>
 
-A structure that contains the configuration
-of the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
-Artifact encryption functionality is available only for canaries that use Synthetics runtime version syn-nodejs-puppeteer-3.3
-or later. For more information, see
-[Encrypting canary artifacts](../../../amazoncloudwatch/latest/monitoring/cloudwatch-synthetics-artifact-encryption.md).
+A structure that contains the configuration of the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3. Artifact encryption functionality is available only for canaries that use Synthetics runtime version syn-nodejs-puppeteer-3.3 or later. For more information, see [Encrypting canary artifacts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_artifact_encryption.html).
 
 ## Syntax
+<a name="aws-properties-synthetics-canary-s3encryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-synthetics-canary-s3encryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionMode" : String,
-  "KmsKeyArn" : String
+  "[EncryptionMode](#cfn-synthetics-canary-s3encryption-encryptionmode)" : {{String}},
+  "[KmsKeyArn](#cfn-synthetics-canary-s3encryption-kmskeyarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-synthetics-canary-s3encryption-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionMode: String
-  KmsKeyArn: String
-
+```
+  [EncryptionMode](#cfn-synthetics-canary-s3encryption-encryptionmode): {{String}}
+  [KmsKeyArn](#cfn-synthetics-canary-s3encryption-kmskeyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-synthetics-canary-s3encryption-properties"></a>
 
-`EncryptionMode`
+`EncryptionMode`  <a name="cfn-synthetics-canary-s3encryption-encryptionmode"></a>
+The encryption method to use for artifacts created by this canary. Specify `SSE_S3` to use server-side encryption (SSE) with an Amazon S3-managed key. Specify `SSE-KMS` to use server-side encryption with a customer-managed AWS KMS key.
+If you omit this parameter, an AWS-managed AWS KMS key is used.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The encryption method to use
-for artifacts created by this canary. Specify `SSE_S3` to use
-server-side encryption (SSE) with an Amazon S3-managed
-key. Specify `SSE-KMS` to use server-side encryption with a customer-managed AWS KMS key.
-
-If you omit this parameter, an
-AWS-managed AWS KMS key is used.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyArn`
-
-The ARN of the customer-managed AWS KMS key to use, if you specify `SSE-KMS`
-for `EncryptionMode`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RunConfig
-
-Schedule
+`KmsKeyArn`  <a name="cfn-synthetics-canary-s3encryption-kmskeyarn"></a>
+The ARN of the customer-managed AWS KMS key to use, if you specify `SSE-KMS` for `EncryptionMode`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

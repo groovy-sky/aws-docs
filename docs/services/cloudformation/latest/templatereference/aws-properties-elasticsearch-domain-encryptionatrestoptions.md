@@ -2,79 +2,56 @@
 title: "AWS::Elasticsearch::Domain EncryptionAtRestOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain EncryptionAtRestOptions
+<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions"></a>
 
 Whether the domain should encrypt data at rest, and if so, the AWS Key Management Service key to use.
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-Elasticsearch. For more information about the service rename, see [New resource\
-types](../../../opensearch-service/latest/developerguide/rename.md#rename-resource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and Elasticsearch. For more information about the service rename, see [New resource types](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-resource) in the *Amazon OpenSearch Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "KmsKeyId" : String
+  "[Enabled](#cfn-elasticsearch-domain-encryptionatrestoptions-enabled)" : {{Boolean}},
+  "[KmsKeyId](#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  KmsKeyId: String
-
+```
+  [Enabled](#cfn-elasticsearch-domain-encryptionatrestoptions-enabled): {{Boolean}}
+  [KmsKeyId](#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-elasticsearch-domain-encryptionatrestoptions-enabled"></a>
 Specify `true` to enable encryption at rest.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyId`
-
-The KMS key ID. Takes the form `1a2a3a4-1a2a-3a4a-5a6a-1a2a3a4a5a6a`. Required
-if you enable encryption at rest.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`KmsKeyId`  <a name="cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid"></a>
+The KMS key ID. Takes the form `1a2a3a4-1a2a-3a4a-5a6a-1a2a3a4a5a6a`. Required if you enable encryption at rest.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [CreateDomain](../../../opensearch-service/latest/developerguide/configuration-api.md#configuration-api-actions-createdomain) in the _Amazon OpenSearch Service Developer_
-_Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ElasticsearchClusterConfig
-
-LogPublishingOption
+<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions--seealso"></a>
++ [CreateDomain](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configuration-api.html#configuration-api-actions-createdomain) in the *Amazon OpenSearch Service Developer Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

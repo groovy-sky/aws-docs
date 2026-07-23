@@ -2,75 +2,66 @@
 title: "AWS::CertificateManager::Account"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CertificateManager::Account
+<a name="aws-resource-certificatemanager-account"></a>
 
-The `AWS::CertificateManager::Account` resource defines the expiry event
-configuration that determines the number of days prior to expiry when ACM starts
-generating EventBridge events.
+The `AWS::CertificateManager::Account` resource defines the expiry event configuration that determines the number of days prior to expiry when ACM starts generating EventBridge events.
 
 ## Syntax
+<a name="aws-resource-certificatemanager-account-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-certificatemanager-account-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CertificateManager::Account",
   "Properties" : {
-      "ExpiryEventsConfiguration" : ExpiryEventsConfiguration
+      "[ExpiryEventsConfiguration](#cfn-certificatemanager-account-expiryeventsconfiguration)" : {{ExpiryEventsConfiguration}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-certificatemanager-account-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CertificateManager::Account
 Properties:
-  ExpiryEventsConfiguration:
-    ExpiryEventsConfiguration
-
+  [ExpiryEventsConfiguration](#cfn-certificatemanager-account-expiryeventsconfiguration): {{
+    ExpiryEventsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-resource-certificatemanager-account-properties"></a>
 
-`ExpiryEventsConfiguration`
-
-Object containing expiration events options associated with an AWS account. For more information, see [ExpiryEventsConfiguration](../../../../reference/acm/latest/apireference/api-expiryeventsconfiguration.md) in the API reference.
-
-_Required_: Yes
-
-_Type_: [ExpiryEventsConfiguration](aws-properties-certificatemanager-account-expiryeventsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ExpiryEventsConfiguration`  <a name="cfn-certificatemanager-account-expiryeventsconfiguration"></a>
+Object containing expiration events options associated with an AWS account. For more information, see [ExpiryEventsConfiguration](https://docs.aws.amazon.com/acm/latest/APIReference/API_ExpiryEventsConfiguration.html) in the API reference.
+*Required*: Yes
+*Type*: [ExpiryEventsConfiguration](aws-properties-certificatemanager-account-expiryeventsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-certificatemanager-account-return-values"></a>
 
 ### Ref
+<a name="aws-resource-certificatemanager-account-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the AWS account that owns the
-certificate.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the AWS account that owns the certificate.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-certificatemanager-account-return-values-fn--getatt"></a>
 
-`AccountId`
+####
+<a name="aws-resource-certificatemanager-account-return-values-fn--getatt-fn--getatt"></a>
 
+`AccountId`  <a name="AccountId-fn::getatt"></a>
 ID of the AWS account that owns the certificate.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Certificate Manager
-
-ExpiryEventsConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

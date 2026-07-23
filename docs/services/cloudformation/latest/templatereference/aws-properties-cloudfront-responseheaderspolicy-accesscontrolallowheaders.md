@@ -2,58 +2,44 @@
 title: "AWS::CloudFront::ResponseHeadersPolicy AccessControlAllowHeaders"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy AccessControlAllowHeaders
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders"></a>
 
-A list of HTTP header names that CloudFront includes as values for the
-`Access-Control-Allow-Headers` HTTP response header.
+A list of HTTP header names that CloudFront includes as values for the `Access-Control-Allow-Headers` HTTP response header.
 
-For more information about the `Access-Control-Allow-Headers` HTTP response
-header, see [Access-Control-Allow-Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers) in the MDN Web Docs.
+For more information about the `Access-Control-Allow-Headers` HTTP response header, see [Access-Control-Allow-Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers) in the MDN Web Docs.
 
 ## Syntax
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders-syntax.json"></a>
 
-```json
-
+```
 {
-  "Items" : [ String, ... ]
+  "[Items](#cfn-cloudfront-responseheaderspolicy-accesscontrolallowheaders-items)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders-syntax.yaml"></a>
 
-```yaml
-
-  Items:
-    - String
-
+```
+  [Items](#cfn-cloudfront-responseheaderspolicy-accesscontrolallowheaders-items): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders-properties"></a>
 
-`Items`
-
-The list of HTTP header names. You can specify `*` to allow all
-headers.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::ResponseHeadersPolicy
-
-AccessControlAllowMethods
+`Items`  <a name="cfn-cloudfront-responseheaderspolicy-accesscontrolallowheaders-items"></a>
+The list of HTTP header names. You can specify `*` to allow all headers.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

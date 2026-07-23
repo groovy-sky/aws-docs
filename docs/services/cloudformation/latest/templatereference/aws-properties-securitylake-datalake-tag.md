@@ -2,75 +2,53 @@
 title: "AWS::SecurityLake::DataLake Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::DataLake Tag
+<a name="aws-properties-securitylake-datalake-tag"></a>
 
-A _tag_ is a label that you can define and associate with AWS resources, including certain types of Amazon Security Lake resources.
-Tags can help you identify, categorize, and manage resources in different ways, such as by owner, environment, or other criteria. You can associate tags with
-the following types of Security Lake resources: subscribers, and the data lake configuration for your AWS account in individual AWS Regions.
+A *tag* is a label that you can define and associate with AWS resources, including certain types of Amazon Security Lake resources. Tags can help you identify, categorize, and manage resources in different ways, such as by owner, environment, or other criteria. You can associate tags with the following types of Security Lake resources: subscribers, and the data lake configuration for your AWS account in individual AWS Regions.
 
-A resource can have up to 50 tags. Each tag consists of a required _tag key_ and an associated _tag value_. A
-_tag key_ is a general label that acts as a category for a more specific tag value. Each tag key must be unique and it can have only one tag
-value. A _tag value_ acts as a descriptor for a tag key. Tag keys and values are case sensitive. They can contain letters, numbers, spaces,
-or the following symbols: \_ . : / = + @ -
+A resource can have up to 50 tags. Each tag consists of a required *tag key* and an associated *tag value*. A *tag key* is a general label that acts as a category for a more specific tag value. Each tag key must be unique and it can have only one tag value. A *tag value* acts as a descriptor for a tag key. Tag keys and values are case sensitive. They can contain letters, numbers, spaces, or the following symbols: \_ . : / = \+ @ -
 
-For more information, see [Tagging Amazon Security Lake resources](../../../security-lake/latest/userguide/tagging-resources.md) in
-the _Amazon Security Lake User Guide_.
+For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com//security-lake/latest/userguide/tagging-resources.html) in the *Amazon Security Lake User Guide*.
 
 ## Syntax
+<a name="aws-properties-securitylake-datalake-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securitylake-datalake-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-securitylake-datalake-tag-key)" : {{String}},
+  "[Value](#cfn-securitylake-datalake-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securitylake-datalake-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-securitylake-datalake-tag-key): {{String}}
+  [Value](#cfn-securitylake-datalake-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securitylake-datalake-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-securitylake-datalake-tag-key"></a>
+The name of the tag. This is a general label that acts as a category for a more specific tag value (`value`).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the tag. This is a general label that acts as a category for a more specific tag value ( `value`).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The value that’s associated with the specified tag key ( `key`). This value acts as a descriptor for the tag key. A tag value cannot be
-null, but it can be an empty string.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplicationConfiguration
-
-Transitions
+`Value`  <a name="cfn-securitylake-datalake-tag-value"></a>
+The value that’s associated with the specified tag key (`key`). This value acts as a descriptor for the tag key. A tag value cannot be null, but it can be an empty string.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

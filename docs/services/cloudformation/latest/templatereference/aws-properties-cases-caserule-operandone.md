@@ -2,59 +2,43 @@
 title: "AWS::Cases::CaseRule OperandOne"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::CaseRule OperandOne
+<a name="aws-properties-cases-caserule-operandone"></a>
 
-Represents the left hand operand in the condition. In the Amazon Connect admin website, case rules are known as _case field conditions_.
-For more
-information about case field conditions, see [Add case field conditions to a\
-case template](../../../connect/latest/adminguide/case-field-conditions.md).
+Represents the left hand operand in the condition. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
 
 ## Syntax
+<a name="aws-properties-cases-caserule-operandone-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-caserule-operandone-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String
+  "[FieldId](#cfn-cases-caserule-operandone-fieldid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-caserule-operandone-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-
+```
+  [FieldId](#cfn-cases-caserule-operandone-fieldid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-caserule-operandone-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-cases-caserule-operandone-fieldid"></a>
 The field ID that this operand should take the value of.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HiddenCaseRule
-
-OperandTwo
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

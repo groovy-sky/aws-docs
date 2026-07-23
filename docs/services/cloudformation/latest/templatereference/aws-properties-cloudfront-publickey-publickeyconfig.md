@@ -2,92 +2,67 @@
 title: "AWS::CloudFront::PublicKey PublicKeyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::PublicKey PublicKeyConfig
+<a name="aws-properties-cloudfront-publickey-publickeyconfig"></a>
 
-Configuration information about a public key that you can use with [signed URLs and signed cookies](../../../amazoncloudfront/latest/developerguide/privatecontent.md), or with [field-level encryption](../../../amazoncloudfront/latest/developerguide/field-level-encryption.md).
+Configuration information about a public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).
 
 CloudFront supports signed URLs and signed cookies with RSA 2048 or ECDSA 256 key signatures. Field-level encryption is only compatible with RSA 2048 key signatures.
 
 ## Syntax
+<a name="aws-properties-cloudfront-publickey-publickeyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-publickey-publickeyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CallerReference" : String,
-  "Comment" : String,
-  "EncodedKey" : String,
-  "Name" : String
+  "[CallerReference](#cfn-cloudfront-publickey-publickeyconfig-callerreference)" : {{String}},
+  "[Comment](#cfn-cloudfront-publickey-publickeyconfig-comment)" : {{String}},
+  "[EncodedKey](#cfn-cloudfront-publickey-publickeyconfig-encodedkey)" : {{String}},
+  "[Name](#cfn-cloudfront-publickey-publickeyconfig-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-publickey-publickeyconfig-syntax.yaml"></a>
 
-```yaml
-
-  CallerReference: String
-  Comment: String
-  EncodedKey: String
-  Name: String
-
+```
+  [CallerReference](#cfn-cloudfront-publickey-publickeyconfig-callerreference): {{String}}
+  [Comment](#cfn-cloudfront-publickey-publickeyconfig-comment): {{String}}
+  [EncodedKey](#cfn-cloudfront-publickey-publickeyconfig-encodedkey): {{String}}
+  [Name](#cfn-cloudfront-publickey-publickeyconfig-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-publickey-publickeyconfig-properties"></a>
 
-`CallerReference`
+`CallerReference`  <a name="cfn-cloudfront-publickey-publickeyconfig-callerreference"></a>
+A string included in the request to help make sure that the request can't be replayed.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A string included in the request to help make sure that the request can't be
-replayed.
+`Comment`  <a name="cfn-cloudfront-publickey-publickeyconfig-comment"></a>
+A comment to describe the public key. The comment cannot be longer than 128 characters.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`EncodedKey`  <a name="cfn-cloudfront-publickey-publickeyconfig-encodedkey"></a>
+The public key that you can use with [signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html), or with [field-level encryption](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Comment`
-
-A comment to describe the public key. The comment cannot be longer than 128
-characters.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncodedKey`
-
-The public key that you can use with [signed URLs and signed cookies](../../../amazoncloudfront/latest/developerguide/privatecontent.md), or with [field-level encryption](../../../amazoncloudfront/latest/developerguide/field-level-encryption.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cloudfront-publickey-publickeyconfig-name"></a>
 A name to help identify the public key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::PublicKey
-
-AWS::CloudFront::RealtimeLogConfig
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

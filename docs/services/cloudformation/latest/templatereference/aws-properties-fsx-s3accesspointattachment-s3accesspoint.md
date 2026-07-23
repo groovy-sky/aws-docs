@@ -2,105 +2,74 @@
 title: "AWS::FSx::S3AccessPointAttachment S3AccessPoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::S3AccessPointAttachment S3AccessPoint
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint"></a>
 
 Describes the S3 access point configuration of the S3 access point attachment.
 
 ## Syntax
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alias" : String,
-  "Policy" : Json,
-  "ResourceARN" : String,
-  "VpcConfiguration" : S3AccessPointVpcConfiguration
+  "[Alias](#cfn-fsx-s3accesspointattachment-s3accesspoint-alias)" : {{String}},
+  "[Policy](#cfn-fsx-s3accesspointattachment-s3accesspoint-policy)" : {{Json}},
+  "[ResourceARN](#cfn-fsx-s3accesspointattachment-s3accesspoint-resourcearn)" : {{String}},
+  "[VpcConfiguration](#cfn-fsx-s3accesspointattachment-s3accesspoint-vpcconfiguration)" : {{S3AccessPointVpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint-syntax.yaml"></a>
 
-```yaml
-
-  Alias: String
-  Policy: Json
-  ResourceARN: String
-  VpcConfiguration:
-    S3AccessPointVpcConfiguration
-
+```
+  [Alias](#cfn-fsx-s3accesspointattachment-s3accesspoint-alias): {{String}}
+  [Policy](#cfn-fsx-s3accesspointattachment-s3accesspoint-policy): {{Json}}
+  [ResourceARN](#cfn-fsx-s3accesspointattachment-s3accesspoint-resourcearn): {{String}}
+  [VpcConfiguration](#cfn-fsx-s3accesspointattachment-s3accesspoint-vpcconfiguration): {{
+    S3AccessPointVpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-fsx-s3accesspointattachment-s3accesspoint-alias"></a>
 The S3 access point's alias.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-z\\-]{1,63}`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z\\-]{1,63}`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Policy`
-
+`Policy`  <a name="cfn-fsx-s3accesspointattachment-s3accesspoint-policy"></a>
 The S3 access point's policy.
+*Required*: No
+*Type*: Json
+*Minimum*: `1`
+*Maximum*: `200000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Json
-
-_Minimum_: `1`
-
-_Maximum_: `200000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceARN`
-
+`ResourceARN`  <a name="cfn-fsx-s3accesspointattachment-s3accesspoint-resourcearn"></a>
 The S3 access point's ARN.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[^:]{1,63}:[^:]{0,63}:[^:]{0,63}:(?:|\d{12}):[^/].{0,1023}$`
+*Minimum*: `8`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[^:]{1,63}:[^:]{0,63}:[^:]{0,63}:(?:|\d{12}):[^/].{0,1023}$`
-
-_Minimum_: `8`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcConfiguration`
-
+`VpcConfiguration`  <a name="cfn-fsx-s3accesspointattachment-s3accesspoint-vpcconfiguration"></a>
 The S3 access point's virtual private cloud (VPC) configuration.
-
-_Required_: No
-
-_Type_: [S3AccessPointVpcConfiguration](aws-properties-fsx-s3accesspointattachment-s3accesspointvpcconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OpenZFSPosixFileSystemUser
-
-S3AccessPointOntapConfiguration
+*Required*: No
+*Type*: [S3AccessPointVpcConfiguration](aws-properties-fsx-s3accesspointattachment-s3accesspointvpcconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

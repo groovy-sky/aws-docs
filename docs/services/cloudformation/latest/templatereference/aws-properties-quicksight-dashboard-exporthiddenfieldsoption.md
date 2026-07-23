@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Dashboard ExportHiddenFieldsOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ExportHiddenFieldsOption
+<a name="aws-properties-quicksight-dashboard-exporthiddenfieldsoption"></a>
 
 Determines if hidden fields are included in an exported dashboard.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-exporthiddenfieldsoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-exporthiddenfieldsoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "AvailabilityStatus" : String
+  "[AvailabilityStatus](#cfn-quicksight-dashboard-exporthiddenfieldsoption-availabilitystatus)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-exporthiddenfieldsoption-syntax.yaml"></a>
 
-```yaml
-
-  AvailabilityStatus: String
-
+```
+  [AvailabilityStatus](#cfn-quicksight-dashboard-exporthiddenfieldsoption-availabilitystatus): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-exporthiddenfieldsoption-properties"></a>
 
-`AvailabilityStatus`
-
+`AvailabilityStatus`  <a name="cfn-quicksight-dashboard-exporthiddenfieldsoption-availabilitystatus"></a>
 The status of the export hidden fields options of a dashbaord.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExplicitHierarchy
-
-ExportToCSVOption
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

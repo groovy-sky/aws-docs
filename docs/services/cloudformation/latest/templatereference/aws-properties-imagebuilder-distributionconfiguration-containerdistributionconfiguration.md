@@ -2,83 +2,61 @@
 title: "AWS::ImageBuilder::DistributionConfiguration ContainerDistributionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration ContainerDistributionConfiguration
+<a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration"></a>
 
-Container distribution settings for encryption, licensing, and sharing in a specific
-Region.
+Container distribution settings for encryption, licensing, and sharing in a specific Region.
 
 ## Syntax
+<a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerTags" : [ String, ... ],
-  "Description" : String,
-  "TargetRepository" : TargetContainerRepository
+  "[ContainerTags](#cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-containertags)" : {{[ String, ... ]}},
+  "[Description](#cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-description)" : {{String}},
+  "[TargetRepository](#cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-targetrepository)" : {{TargetContainerRepository}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ContainerTags:
-    - String
-  Description: String
-  TargetRepository:
-    TargetContainerRepository
-
+```
+  [ContainerTags](#cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-containertags): {{
+    - String}}
+  [Description](#cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-description): {{String}}
+  [TargetRepository](#cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-targetrepository): {{
+    TargetContainerRepository}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration-properties"></a>
 
-`ContainerTags`
-
+`ContainerTags`  <a name="cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-containertags"></a>
 Tags that are attached to the container distribution configuration.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-description"></a>
 The description of the container distribution configuration.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetRepository`
-
+`TargetRepository`  <a name="cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-targetrepository"></a>
 The destination repository for the container distribution configuration.
-
-_Required_: No
-
-_Type_: [TargetContainerRepository](aws-properties-imagebuilder-distributionconfiguration-targetcontainerrepository.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmiDistributionConfiguration
-
-Distribution
+*Required*: No
+*Type*: [TargetContainerRepository](aws-properties-imagebuilder-distributionconfiguration-targetcontainerrepository.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

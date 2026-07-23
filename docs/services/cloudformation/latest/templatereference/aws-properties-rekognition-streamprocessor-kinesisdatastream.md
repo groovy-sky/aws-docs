@@ -2,59 +2,43 @@
 title: "AWS::Rekognition::StreamProcessor KinesisDataStream"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rekognition::StreamProcessor KinesisDataStream
+<a name="aws-properties-rekognition-streamprocessor-kinesisdatastream"></a>
 
-Amazon Rekognition Video Stream Processor take as input a Kinesis video stream (Input) and a Kinesis data stream (Output).
-This is the Amazon Kinesis Data Streams instance to which the Amazon Rekognition stream processor streams the analysis results.
-This must be created within the constraints specified at
-[KinesisDataStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisDataStream).
+ Amazon Rekognition Video Stream Processor take as input a Kinesis video stream (Input) and a Kinesis data stream (Output). This is the Amazon Kinesis Data Streams instance to which the Amazon Rekognition stream processor streams the analysis results. This must be created within the constraints specified at [KinesisDataStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisDataStream).
 
 ## Syntax
+<a name="aws-properties-rekognition-streamprocessor-kinesisdatastream-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rekognition-streamprocessor-kinesisdatastream-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arn" : String
+  "[Arn](#cfn-rekognition-streamprocessor-kinesisdatastream-arn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rekognition-streamprocessor-kinesisdatastream-syntax.yaml"></a>
 
-```yaml
-
-  Arn: String
-
+```
+  [Arn](#cfn-rekognition-streamprocessor-kinesisdatastream-arn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rekognition-streamprocessor-kinesisdatastream-properties"></a>
 
-`Arn`
-
+`Arn`  <a name="cfn-rekognition-streamprocessor-kinesisdatastream-arn"></a>
 ARN of the output Amazon Kinesis Data Streams stream.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(^arn:([a-z\d-]+):kinesis:([a-z\d-]+):\d{12}:.+$)`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FaceSearchSettings
-
-KinesisVideoStream
+*Required*: Yes
+*Type*: String
+*Pattern*: `(^arn:([a-z\d-]+):kinesis:([a-z\d-]+):\d{12}:.+$)`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

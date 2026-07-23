@@ -2,77 +2,54 @@
 title: "AWS::ACMPCA::CertificateAuthority OtherName"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority OtherName
+<a name="aws-properties-acmpca-certificateauthority-othername"></a>
 
-Defines a custom ASN.1 X.400 `GeneralName` using an object identifier (OID)
-and value. The OID must satisfy the regular expression shown below. For more
-information, see NIST's definition of [Object Identifier\
-(OID)](https://csrc.nist.gov/glossary/term/Object_Identifier).
+Defines a custom ASN.1 X.400 `GeneralName` using an object identifier (OID) and value. The OID must satisfy the regular expression shown below. For more information, see NIST's definition of [Object Identifier (OID)](https://csrc.nist.gov/glossary/term/Object_Identifier).
 
 ## Syntax
+<a name="aws-properties-acmpca-certificateauthority-othername-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificateauthority-othername-syntax.json"></a>
 
-```json
-
+```
 {
-  "TypeId" : String,
-  "Value" : String
+  "[TypeId](#cfn-acmpca-certificateauthority-othername-typeid)" : {{String}},
+  "[Value](#cfn-acmpca-certificateauthority-othername-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificateauthority-othername-syntax.yaml"></a>
 
-```yaml
-
-  TypeId: String
-  Value: String
-
+```
+  [TypeId](#cfn-acmpca-certificateauthority-othername-typeid): {{String}}
+  [Value](#cfn-acmpca-certificateauthority-othername-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificateauthority-othername-properties"></a>
 
-`TypeId`
-
+`TypeId`  <a name="cfn-acmpca-certificateauthority-othername-typeid"></a>
 Specifies an OID.
+*Required*: Yes
+*Type*: String
+*Pattern*: `([0-2])\.([0-9]|([0-3][0-9]))((\.([0-9]+)){0,126})`
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `([0-2])\.([0-9]|([0-3][0-9]))((\.([0-9]+)){0,126})`
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-acmpca-certificateauthority-othername-value"></a>
 Specifies an OID value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OcspConfiguration
-
-RevocationConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

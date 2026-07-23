@@ -2,80 +2,55 @@
 title: "AWS::KinesisFirehose::DeliveryStream Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream Tag
+<a name="aws-properties-kinesisfirehose-deliverystream-tag"></a>
 
-Metadata that you can assign to a Firehose stream, consisting of a key-value
-pair.
+Metadata that you can assign to a Firehose stream, consisting of a key-value pair.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-kinesisfirehose-deliverystream-tag-key)" : {{String}},
+  "[Value](#cfn-kinesisfirehose-deliverystream-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-kinesisfirehose-deliverystream-tag-key): {{String}}
+  [Value](#cfn-kinesisfirehose-deliverystream-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-kinesisfirehose-deliverystream-tag-key"></a>
+A unique identifier for the tag. Maximum length: 128 characters. Valid characters: Unicode letters, digits, white space, \_ . / = \+ - % @
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!aws:)[\p{L}\p{Z}\p{N}_.:\/=+\-@%]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A unique identifier for the tag. Maximum length: 128 characters. Valid characters:
-Unicode letters, digits, white space, \_ . / = + - % @
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!aws:)[\p{L}\p{Z}\p{N}_.:\/=+\-@%]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-An optional string, which you can use to describe or define the tag. Maximum length:
-256 characters. Valid characters: Unicode letters, digits, white space, \_ . / = + - %
-@
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}\p{Z}\p{N}_.:\/=+\-@%]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableCreationConfiguration
-
-VpcConfiguration
+`Value`  <a name="cfn-kinesisfirehose-deliverystream-tag-value"></a>
+An optional string, which you can use to describe or define the tag. Maximum length: 256 characters. Valid characters: Unicode letters, digits, white space, \_ . / = \+ - % @
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}\p{Z}\p{N}_.:\/=+\-@%]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,71 +2,51 @@
 title: "AWS::ECR::RegistryScanningConfiguration RepositoryFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::RegistryScanningConfiguration RepositoryFilter
+<a name="aws-properties-ecr-registryscanningconfiguration-repositoryfilter"></a>
 
-The filter settings used with image replication. Specifying a repository filter to a
-replication rule provides a method for controlling which repositories in a private
-registry are replicated. If no filters are added, the contents of all repositories are
-replicated.
+The filter settings used with image replication. Specifying a repository filter to a replication rule provides a method for controlling which repositories in a private registry are replicated. If no filters are added, the contents of all repositories are replicated.
 
 ## Syntax
+<a name="aws-properties-ecr-registryscanningconfiguration-repositoryfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecr-registryscanningconfiguration-repositoryfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Filter" : String,
-  "FilterType" : String
+  "[Filter](#cfn-ecr-registryscanningconfiguration-repositoryfilter-filter)" : {{String}},
+  "[FilterType](#cfn-ecr-registryscanningconfiguration-repositoryfilter-filtertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecr-registryscanningconfiguration-repositoryfilter-syntax.yaml"></a>
 
-```yaml
-
-  Filter: String
-  FilterType: String
-
+```
+  [Filter](#cfn-ecr-registryscanningconfiguration-repositoryfilter-filter): {{String}}
+  [FilterType](#cfn-ecr-registryscanningconfiguration-repositoryfilter-filtertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecr-registryscanningconfiguration-repositoryfilter-properties"></a>
 
-`Filter`
-
+`Filter`  <a name="cfn-ecr-registryscanningconfiguration-repositoryfilter-filter"></a>
 The filter to use when scanning.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9*](?:[._\-/a-z0-9*]?[a-z0-9*]+)*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9*](?:[._\-/a-z0-9*]?[a-z0-9*]+)*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterType`
-
+`FilterType`  <a name="cfn-ecr-registryscanningconfiguration-repositoryfilter-filtertype"></a>
 The type associated with the filter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `WILDCARD`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECR::RegistryScanningConfiguration
-
-ScanningRule
+*Required*: Yes
+*Type*: String
+*Allowed values*: `WILDCARD`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

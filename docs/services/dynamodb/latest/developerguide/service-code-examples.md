@@ -3,202 +3,109 @@ title: "Code examples for DynamoDB using AWS SDKs"
 ---
 
 # Code examples for DynamoDB using AWS SDKs
+<a name="service_code_examples"></a>
 
 The following code examples show how to use DynamoDB with an AWS software development kit (SDK).
 
-_Basics_ are code examples that show you how to perform the essential operations within a service.
-
-_Actions_ are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
-
-_Scenarios_ are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
-
-_AWS community contributions_ are examples that were created and are maintained by multiple teams across AWS. To provide feedback, use the mechanism provided in the linked repositories.
-
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-###### Code examples
-
-- [Basics](service-code-examples-basics.md)
-
-  - [Hello DynamoDB](example-dynamodb-hello-section.md)
-
-  - [Learn the basics](example-dynamodb-scenario-gettingstartedmovies-section.md)
-
-  - [Actions](service-code-examples-actions.md)
-
-    - [BatchExecuteStatement](example-dynamodb-batchexecutestatement-section.md)
-
-    - [BatchGetItem](example-dynamodb-batchgetitem-section.md)
-
-    - [BatchWriteItem](example-dynamodb-batchwriteitem-section.md)
-
-    - [CreateTable](example-dynamodb-createtable-section.md)
-
-    - [DeleteItem](example-dynamodb-deleteitem-section.md)
-
-    - [DeleteTable](example-dynamodb-deletetable-section.md)
-
-    - [DescribeTable](example-dynamodb-describetable-section.md)
-
-    - [DescribeTimeToLive](example-dynamodb-describetimetolive-section.md)
-
-    - [ExecuteStatement](example-dynamodb-executestatement-section.md)
-
-    - [GetItem](example-dynamodb-getitem-section.md)
-
-    - [ListTables](example-dynamodb-listtables-section.md)
-
-    - [PutItem](example-dynamodb-putitem-section.md)
-
-    - [Query](example-dynamodb-query-section.md)
-
-    - [Scan](example-dynamodb-scan-section.md)
-
-    - [UpdateItem](example-dynamodb-updateitem-section.md)
-
-    - [UpdateTable](example-dynamodb-updatetable-section.md)
-
-    - [UpdateTimeToLive](example-dynamodb-updatetimetolive-section.md)
-- [Scenarios](service-code-examples-scenarios.md)
-
-  - [Accelerate reads with DAX](example-dynamodb-usage-daxdemo-section.md)
-
-  - [Advanced Global Secondary Index scenarios](example-dynamodb-scenario-gsiadvanced-section.md)
-
-  - [Build an app to submit data to a DynamoDB table](example-cross-submitdataapp-section.md)
-
-  - [Compare multiple values with a single attribute](example-dynamodb-scenario-comparemultiplevalues-section.md)
-
-  - [Conditionally update an item's TTL](example-dynamodb-updateitemconditionalttl-section.md)
-
-  - [Connect to a local instance](example-dynamodb-local-section.md)
-
-  - [Count expression operators](example-dynamodb-scenario-expressionoperatorcounting-section.md)
-
-  - [Create a REST API to track COVID-19 data](example-cross-apigatewaydatatracker-section.md)
-
-  - [Create a messenger application](example-cross-stepfunctionsmessenger-section.md)
-
-  - [Create a serverless application to manage photos](example-cross-pam-section.md)
-
-  - [Create a table with global secondary index](example-dynamodb-createtablewithglobalsecondaryindex-section.md)
-
-  - [Create a table with warm throughput enabled](example-dynamodb-createtablewarmthroughput-section.md)
-
-  - [Create a web application to track DynamoDB data](example-cross-dynamodbdatatracker-section.md)
-
-  - [Create a websocket chat application](example-cross-apigatewaywebsocketchat-section.md)
-
-  - [Create an item with a TTL](example-dynamodb-putitemttl-section.md)
-
-  - [Create and manage MRSC global tables](example-dynamodb-scenario-mrscglobaltables-section.md)
-
-  - [Create and manage global tables demonstrating MREC](example-dynamodb-scenario-globaltableoperations-section.md)
-
-  - [Delete data using PartiQL DELETE](example-dynamodb-partiqldelete-section.md)
-
-  - [Detect PPE in images](example-cross-rekognitionphotoanalyzerppe-section.md)
-
-  - [Getting started with DynamoDB](example-dynamodb-gettingstarted-070-section.md)
-
-  - [Insert data using PartiQL INSERT](example-dynamodb-partiqlinsert-section.md)
-
-  - [Invoke a Lambda function from a browser](example-cross-lambdaforbrowser-section.md)
-
-  - [Manage Global Secondary Indexes](example-dynamodb-scenario-gsilifecycle-section.md)
-
-  - [Manage resource-based policies](example-dynamodb-scenario-resourcepolicylifecycle-section.md)
-
-  - [Monitor DynamoDB performance](example-cross-monitordynamodb-section.md)
-
-  - [Perform advanced query operations](example-dynamodb-scenario-advancedquerytechniques-section.md)
-
-  - [Perform list operations](example-dynamodb-scenario-listoperations-section.md)
-
-  - [Perform map operations](example-dynamodb-scenario-mapoperations-section.md)
-
-  - [Perform set operations](example-dynamodb-scenario-setoperations-section.md)
-
-  - [Query a table by using batches of PartiQL statements](example-dynamodb-scenario-partiqlbatch-section.md)
-
-  - [Query a table using PartiQL](example-dynamodb-scenario-partiqlsingle-section.md)
-
-  - [Query a table using a Global Secondary Index](example-dynamodb-scenarios-querywithglobalsecondaryindex-section.md)
-
-  - [Query a table using a begins\_with condition](example-dynamodb-scenarios-querywithbeginswithcondition-section.md)
-
-  - [Query a table using a date range](example-dynamodb-scenarios-querywithdaterange-section.md)
-
-  - [Query a table with a complex filter expression](example-dynamodb-scenarios-querywithcomplexfilter-section.md)
-
-  - [Query a table with a dynamic filter expression](example-dynamodb-scenarios-querywithdynamicfilter-section.md)
-
-  - [Query a table with a filter expression and limit](example-dynamodb-scenarios-querywithfilterandlimit-section.md)
-
-  - [Query a table with nested attributes](example-dynamodb-scenarios-querywithnestedattributes-section.md)
-
-  - [Query a table with pagination](example-dynamodb-scenarios-querywithpagination-section.md)
-
-  - [Query a table with strongly consistent reads](example-dynamodb-scenarios-querywithstronglyconsistentreads-section.md)
-
-  - [Query data using PartiQL SELECT](example-dynamodb-partiqlselect-section.md)
-
-  - [Query for TTL items](example-dynamodb-queryfilteredttl-section.md)
-
-  - [Query tables using date and time patterns](example-dynamodb-scenario-datetimequeries-section.md)
-
-  - [Save EXIF and other image information](example-cross-detectlabels-section.md)
-
-  - [Set up Attribute-Based Access Control](example-dynamodb-scenario-abacsetup-section.md)
-
-  - [Understand update expression order](example-dynamodb-scenario-updateexpressionorder-section.md)
-
-  - [Update a table's warm throughput setting](example-dynamodb-updatetablewarmthroughput-section.md)
-
-  - [Update an item's TTL](example-dynamodb-updateitemttl-section.md)
-
-  - [Update data using PartiQL UPDATE](example-dynamodb-partiqlupdate-section.md)
-
-  - [Use API Gateway to invoke a Lambda function](example-cross-lambdaapigateway-section.md)
-
-  - [Use Step Functions to invoke Lambda functions](example-cross-serverlessworkflows-section.md)
-
-  - [Use a document model](example-dynamodb-midlevelinterface-section.md)
-
-  - [Use a high-level object persistence model](example-dynamodb-highlevelinterface-section.md)
-
-  - [Use atomic counter operations](example-dynamodb-scenario-atomiccounteroperations-section.md)
-
-  - [Use conditional operations](example-dynamodb-scenario-conditionaloperations-section.md)
-
-  - [Use expression attribute names](example-dynamodb-scenario-expressionattributenames-section.md)
-
-  - [Use scheduled events to invoke a Lambda function](example-cross-lambdascheduledevents-section.md)
-
-  - [Work with Local Secondary Indexes](example-dynamodb-scenario-lsiexamples-section.md)
-
-  - [Work with Streams and Time-to-Live](example-dynamodb-scenario-streamsandttl-section.md)
-
-  - [Work with global tables and multi-Region replication eventual consistency (MREC)](example-dynamodb-scenario-multiregionreplication-section.md)
-
-  - [Work with resource tagging](example-dynamodb-scenario-taggingexamples-section.md)
-
-  - [Work with table encryption](example-dynamodb-scenario-encryptionexamples-section.md)
-- [Serverless examples](service-code-examples-serverless-examples.md)
-
-  - [Invoke a Lambda function from a DynamoDB trigger](example-serverless-dynamodb-lambda-section.md)
-
-  - [Reporting batch item failures for Lambda functions with a DynamoDB trigger](example-serverless-dynamodb-lambda-batch-item-failures-section.md)
-- [AWS community contributions](service-code-examples-aws-community-contributions.md)
-
-  - [Build and test a serverless application](example-tributary-lite-serverless-application-section.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-On-demand backups managed by AWS Backup versus DynamoDB
-
-Basics
+*Basics* are code examples that show you how to perform the essential operations within a service.
+
+*Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
+
+*Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
+
+*AWS community contributions* are examples that were created and are maintained by multiple teams across AWS. To provide feedback, use the mechanism provided in the linked repositories.
+
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
+
+**Contents**
++ [Basics](service_code_examples_basics.md)
+  + [Hello DynamoDB](example_dynamodb_Hello_section.md)
+  + [Learn the basics](example_dynamodb_Scenario_GettingStartedMovies_section.md)
+  + [Actions](service_code_examples_actions.md)
+    + [`BatchExecuteStatement`](example_dynamodb_BatchExecuteStatement_section.md)
+    + [`BatchGetItem`](example_dynamodb_BatchGetItem_section.md)
+    + [`BatchWriteItem`](example_dynamodb_BatchWriteItem_section.md)
+    + [`CreateTable`](example_dynamodb_CreateTable_section.md)
+    + [`DeleteItem`](example_dynamodb_DeleteItem_section.md)
+    + [`DeleteTable`](example_dynamodb_DeleteTable_section.md)
+    + [`DescribeTable`](example_dynamodb_DescribeTable_section.md)
+    + [`DescribeTimeToLive`](example_dynamodb_DescribeTimeToLive_section.md)
+    + [`ExecuteStatement`](example_dynamodb_ExecuteStatement_section.md)
+    + [`GetItem`](example_dynamodb_GetItem_section.md)
+    + [`ListTables`](example_dynamodb_ListTables_section.md)
+    + [`PutItem`](example_dynamodb_PutItem_section.md)
+    + [`Query`](example_dynamodb_Query_section.md)
+    + [`Scan`](example_dynamodb_Scan_section.md)
+    + [`UpdateItem`](example_dynamodb_UpdateItem_section.md)
+    + [`UpdateTable`](example_dynamodb_UpdateTable_section.md)
+    + [`UpdateTimeToLive`](example_dynamodb_UpdateTimeToLive_section.md)
++ [Scenarios](service_code_examples_scenarios.md)
+  + [Accelerate reads with DAX](example_dynamodb_Usage_DaxDemo_section.md)
+  + [Advanced Global Secondary Index scenarios](example_dynamodb_Scenario_GSIAdvanced_section.md)
+  + [Build an app to submit data to a DynamoDB table](example_cross_SubmitDataApp_section.md)
+  + [Compare multiple values with a single attribute](example_dynamodb_Scenario_CompareMultipleValues_section.md)
+  + [Conditionally update an item's TTL](example_dynamodb_UpdateItemConditionalTTL_section.md)
+  + [Connect to a local instance](example_dynamodb_local_section.md)
+  + [Count expression operators](example_dynamodb_Scenario_ExpressionOperatorCounting_section.md)
+  + [Create a REST API to track COVID-19 data](example_cross_ApiGatewayDataTracker_section.md)
+  + [Create a messenger application](example_cross_StepFunctionsMessenger_section.md)
+  + [Create a serverless application to manage photos](example_cross_PAM_section.md)
+  + [Create a table with global secondary index](example_dynamodb_CreateTableWithGlobalSecondaryIndex_section.md)
+  + [Create a table with warm throughput enabled](example_dynamodb_CreateTableWarmThroughput_section.md)
+  + [Create a web application to track DynamoDB data](example_cross_DynamoDBDataTracker_section.md)
+  + [Create a websocket chat application](example_cross_ApiGatewayWebsocketChat_section.md)
+  + [Create an item with a TTL](example_dynamodb_PutItemTTL_section.md)
+  + [Create and manage MRSC global tables](example_dynamodb_Scenario_MRSCGlobalTables_section.md)
+  + [Create and manage global tables demonstrating MREC](example_dynamodb_Scenario_GlobalTableOperations_section.md)
+  + [Delete data using PartiQL DELETE](example_dynamodb_PartiQLDelete_section.md)
+  + [Detect PPE in images](example_cross_RekognitionPhotoAnalyzerPPE_section.md)
+  + [Getting started with NoSQL databases](example_dynamodb_GettingStarted_070_section.md)
+  + [Insert data using PartiQL INSERT](example_dynamodb_PartiQLInsert_section.md)
+  + [Invoke a Lambda function from a browser](example_cross_LambdaForBrowser_section.md)
+  + [Manage Global Secondary Indexes](example_dynamodb_Scenario_GSILifecycle_section.md)
+  + [Manage resource-based policies](example_dynamodb_Scenario_ResourcePolicyLifecycle_section.md)
+  + [Monitor DynamoDB performance](example_cross_MonitorDynamoDB_section.md)
+  + [Perform advanced query operations](example_dynamodb_Scenario_AdvancedQueryTechniques_section.md)
+  + [Perform list operations](example_dynamodb_Scenario_ListOperations_section.md)
+  + [Perform map operations](example_dynamodb_Scenario_MapOperations_section.md)
+  + [Perform set operations](example_dynamodb_Scenario_SetOperations_section.md)
+  + [Query a table by using batches of PartiQL statements](example_dynamodb_Scenario_PartiQLBatch_section.md)
+  + [Query a table using PartiQL](example_dynamodb_Scenario_PartiQLSingle_section.md)
+  + [Query a table using a Global Secondary Index](example_dynamodb_Scenarios_QueryWithGlobalSecondaryIndex_section.md)
+  + [Query a table using a begins\_with condition](example_dynamodb_Scenarios_QueryWithBeginsWithCondition_section.md)
+  + [Query a table using a date range](example_dynamodb_Scenarios_QueryWithDateRange_section.md)
+  + [Query a table with a complex filter expression](example_dynamodb_Scenarios_QueryWithComplexFilter_section.md)
+  + [Query a table with a dynamic filter expression](example_dynamodb_Scenarios_QueryWithDynamicFilter_section.md)
+  + [Query a table with a filter expression and limit](example_dynamodb_Scenarios_QueryWithFilterAndLimit_section.md)
+  + [Query a table with nested attributes](example_dynamodb_Scenarios_QueryWithNestedAttributes_section.md)
+  + [Query a table with pagination](example_dynamodb_Scenarios_QueryWithPagination_section.md)
+  + [Query a table with strongly consistent reads](example_dynamodb_Scenarios_QueryWithStronglyConsistentReads_section.md)
+  + [Query data using PartiQL SELECT](example_dynamodb_PartiQLSelect_section.md)
+  + [Query for TTL items](example_dynamodb_QueryFilteredTTL_section.md)
+  + [Query tables using date and time patterns](example_dynamodb_Scenario_DateTimeQueries_section.md)
+  + [Save EXIF and other image information](example_cross_DetectLabels_section.md)
+  + [Set up Attribute-Based Access Control](example_dynamodb_Scenario_ABACSetup_section.md)
+  + [Understand update expression order](example_dynamodb_Scenario_UpdateExpressionOrder_section.md)
+  + [Update a table's warm throughput setting](example_dynamodb_UpdateTableWarmThroughput_section.md)
+  + [Update an item's TTL](example_dynamodb_UpdateItemTTL_section.md)
+  + [Update data using PartiQL UPDATE](example_dynamodb_PartiQLUpdate_section.md)
+  + [Use API Gateway to invoke a Lambda function](example_cross_LambdaAPIGateway_section.md)
+  + [Use Step Functions to invoke Lambda functions](example_cross_ServerlessWorkflows_section.md)
+  + [Use a document model](example_dynamodb_MidLevelInterface_section.md)
+  + [Use a high-level object persistence model](example_dynamodb_HighLevelInterface_section.md)
+  + [Use atomic counter operations](example_dynamodb_Scenario_AtomicCounterOperations_section.md)
+  + [Use conditional operations](example_dynamodb_Scenario_ConditionalOperations_section.md)
+  + [Use expression attribute names](example_dynamodb_Scenario_ExpressionAttributeNames_section.md)
+  + [Use scheduled events to invoke a Lambda function](example_cross_LambdaScheduledEvents_section.md)
+  + [Work with Local Secondary Indexes](example_dynamodb_Scenario_LSIExamples_section.md)
+  + [Work with Streams and Time-to-Live](example_dynamodb_Scenario_StreamsAndTTL_section.md)
+  + [Work with global tables and multi-Region replication eventual consistency (MREC)](example_dynamodb_Scenario_MultiRegionReplication_section.md)
+  + [Work with resource tagging](example_dynamodb_Scenario_TaggingExamples_section.md)
+  + [Work with table encryption](example_dynamodb_Scenario_EncryptionExamples_section.md)
++ [Serverless examples](service_code_examples_serverless_examples.md)
+  + [Invoke a Lambda function from a DynamoDB trigger](example_serverless_DynamoDB_Lambda_section.md)
+  + [Reporting batch item failures for Lambda functions with a DynamoDB trigger](example_serverless_DynamoDB_Lambda_batch_item_failures_section.md)
++ [AWS community contributions](service_code_examples_aws_community_contributions.md)
+  + [Build and test a serverless application](example_tributary-lite_serverless-application_section.md)
 
 All content copied from https://docs.aws.amazon.com/.

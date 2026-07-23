@@ -2,74 +2,53 @@
 title: "AWS::Lex::Bot LambdaCodeHook"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot LambdaCodeHook
+<a name="aws-properties-lex-bot-lambdacodehook"></a>
 
-Specifies a Lambda function that verifies requests to a bot or
-fulfills the user's request to a bot.
+Specifies a Lambda function that verifies requests to a bot or fulfills the user's request to a bot.
 
 ## Syntax
+<a name="aws-properties-lex-bot-lambdacodehook-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-lambdacodehook-syntax.json"></a>
 
-```json
-
+```
 {
-  "CodeHookInterfaceVersion" : String,
-  "LambdaArn" : String
+  "[CodeHookInterfaceVersion](#cfn-lex-bot-lambdacodehook-codehookinterfaceversion)" : {{String}},
+  "[LambdaArn](#cfn-lex-bot-lambdacodehook-lambdaarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-lambdacodehook-syntax.yaml"></a>
 
-```yaml
-
-  CodeHookInterfaceVersion: String
-  LambdaArn: String
-
+```
+  [CodeHookInterfaceVersion](#cfn-lex-bot-lambdacodehook-codehookinterfaceversion): {{String}}
+  [LambdaArn](#cfn-lex-bot-lambdacodehook-lambdaarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-lambdacodehook-properties"></a>
 
-`CodeHookInterfaceVersion`
+`CodeHookInterfaceVersion`  <a name="cfn-lex-bot-lambdacodehook-codehookinterfaceversion"></a>
+The version of the request-response that you want Amazon Lex to use to invoke your Lambda function.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The version of the request-response that you want Amazon Lex to use to
-invoke your Lambda function.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaArn`
-
+`LambdaArn`  <a name="cfn-lex-bot-lambdacodehook-lambdaarn"></a>
 The Amazon Resource Name (ARN) of the Lambda function.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KendraConfiguration
-
-Message
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

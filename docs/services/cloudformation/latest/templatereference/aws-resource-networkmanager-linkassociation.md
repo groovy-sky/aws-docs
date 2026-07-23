@@ -2,114 +2,95 @@
 title: "AWS::NetworkManager::LinkAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::LinkAssociation
+<a name="aws-resource-networkmanager-linkassociation"></a>
 
 Describes the association between a device and a link.
 
 ## Syntax
+<a name="aws-resource-networkmanager-linkassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-linkassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::LinkAssociation",
   "Properties" : {
-      "DeviceId" : String,
-      "GlobalNetworkId" : String,
-      "LinkId" : String
+      "[DeviceId](#cfn-networkmanager-linkassociation-deviceid)" : {{String}},
+      "[GlobalNetworkId](#cfn-networkmanager-linkassociation-globalnetworkid)" : {{String}},
+      "[LinkId](#cfn-networkmanager-linkassociation-linkid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-linkassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::LinkAssociation
 Properties:
-  DeviceId: String
-  GlobalNetworkId: String
-  LinkId: String
-
+  [DeviceId](#cfn-networkmanager-linkassociation-deviceid): {{String}}
+  [GlobalNetworkId](#cfn-networkmanager-linkassociation-globalnetworkid): {{String}}
+  [LinkId](#cfn-networkmanager-linkassociation-linkid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-linkassociation-properties"></a>
 
-`DeviceId`
-
+`DeviceId`  <a name="cfn-networkmanager-linkassociation-deviceid"></a>
 The device ID for the link association.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GlobalNetworkId`
-
+`GlobalNetworkId`  <a name="cfn-networkmanager-linkassociation-globalnetworkid"></a>
 The ID of the global network.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LinkId`
-
+`LinkId`  <a name="cfn-networkmanager-linkassociation-linkid"></a>
 The ID of the link.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-networkmanager-linkassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-linkassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the IDs of the global network, device, and link. For example: `global-network-01231231231231231|device-07f6fd08867abc123|link-11112222aaaabbbb1`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-networkmanager-linkassociation--examples"></a>
 
 ### Link Association
+<a name="aws-resource-networkmanager-linkassociation--examples--Link_Association"></a>
 
-The following example template creates a global network, site, link, and device. It
-creates an association between the link and the device.
+The following example template creates a global network, site, link, and device. It creates an association between the link and the device.
 
 #### JSON
+<a name="aws-resource-networkmanager-linkassociation--examples--Link_Association--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create global network and link association",
@@ -203,9 +184,9 @@ creates an association between the link and the device.
 ```
 
 #### YAML
+<a name="aws-resource-networkmanager-linkassociation--examples--Link_Association--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: 'Create global network and link association'
 Resources:
@@ -249,11 +230,5 @@ Resources:
       LinkId: !GetAtt Link.LinkId
       DeviceId: !GetAtt Device.DeviceId
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::NetworkManager::Site
 
 All content copied from https://docs.aws.amazon.com/.

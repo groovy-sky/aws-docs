@@ -2,67 +2,51 @@
 title: "AWS::Lex::Bot SpeechRecognitionSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SpeechRecognitionSettings
+<a name="aws-properties-lex-bot-speechrecognitionsettings"></a>
 
 Settings that control how Amazon Lex processes and recognizes speech input from users.
 
 ## Syntax
+<a name="aws-properties-lex-bot-speechrecognitionsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-speechrecognitionsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "SpeechModelConfig" : SpeechModelConfig,
-  "SpeechModelPreference" : String
+  "[SpeechModelConfig](#cfn-lex-bot-speechrecognitionsettings-speechmodelconfig)" : {{SpeechModelConfig}},
+  "[SpeechModelPreference](#cfn-lex-bot-speechrecognitionsettings-speechmodelpreference)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-speechrecognitionsettings-syntax.yaml"></a>
 
-```yaml
-
-  SpeechModelConfig:
-    SpeechModelConfig
-  SpeechModelPreference: String
-
+```
+  [SpeechModelConfig](#cfn-lex-bot-speechrecognitionsettings-speechmodelconfig): {{
+    SpeechModelConfig}}
+  [SpeechModelPreference](#cfn-lex-bot-speechrecognitionsettings-speechmodelpreference): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-speechrecognitionsettings-properties"></a>
 
-`SpeechModelConfig`
-
+`SpeechModelConfig`  <a name="cfn-lex-bot-speechrecognitionsettings-speechmodelconfig"></a>
 Configuration settings for the selected speech-to-text model.
+*Required*: No
+*Type*: [SpeechModelConfig](aws-properties-lex-bot-speechmodelconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SpeechModelConfig](aws-properties-lex-bot-speechmodelconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpeechModelPreference`
-
+`SpeechModelPreference`  <a name="cfn-lex-bot-speechrecognitionsettings-speechmodelpreference"></a>
 The speech-to-text model to use.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Standard | Neural | Deepgram`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SpeechModelConfig
-
-SSMLMessage
+*Required*: No
+*Type*: String
+*Allowed values*: `Standard | Neural | Deepgram | Advanced`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,54 @@
 title: "AWS::WAFv2::WebACL RateLimitHeader"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RateLimitHeader
+<a name="aws-properties-wafv2-webacl-ratelimitheader"></a>
 
-Specifies a header as an aggregate key for a rate-based rule. Each distinct value in the header contributes to the aggregation instance. If you use a single
-header as your custom key, then each value fully defines an aggregation instance.
+Specifies a header as an aggregate key for a rate-based rule. Each distinct value in the header contributes to the aggregation instance. If you use a single header as your custom key, then each value fully defines an aggregation instance.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-ratelimitheader-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-ratelimitheader-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "TextTransformations" : [ TextTransformation, ... ]
+  "[Name](#cfn-wafv2-webacl-ratelimitheader-name)" : {{String}},
+  "[TextTransformations](#cfn-wafv2-webacl-ratelimitheader-texttransformations)" : {{[ TextTransformation, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-ratelimitheader-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  TextTransformations:
-    - TextTransformation
-
+```
+  [Name](#cfn-wafv2-webacl-ratelimitheader-name): {{String}}
+  [TextTransformations](#cfn-wafv2-webacl-ratelimitheader-texttransformations): {{
+    - TextTransformation}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-ratelimitheader-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-wafv2-webacl-ratelimitheader-name"></a>
 The name of the header to use.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextTransformations`
-
+`TextTransformations`  <a name="cfn-wafv2-webacl-ratelimitheader-texttransformations"></a>
 Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. Text transformations are used in rule match statements, to transform the `FieldToMatch` request component before inspecting it, and they're used in rate-based rule statements, to transform request components before using them as custom aggregation keys. If you specify one or more transformations to apply, AWS WAF performs all transformations on the specified content, starting from the lowest priority setting, and then uses the transformed component contents.
-
-_Required_: Yes
-
-_Type_: Array of [TextTransformation](aws-properties-wafv2-webacl-texttransformation.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RateLimitCookie
-
-RateLimitJA3Fingerprint
+*Required*: Yes
+*Type*: Array of [TextTransformation](aws-properties-wafv2-webacl-texttransformation.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

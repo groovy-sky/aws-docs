@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::Flow RetrievalFlowNodeServiceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow RetrievalFlowNodeServiceConfiguration
+<a name="aws-properties-bedrock-flow-retrievalflownodeserviceconfiguration"></a>
 
 Contains configurations for the service to use for retrieving data to return as the output from the node.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-retrievalflownodeserviceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-retrievalflownodeserviceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3" : RetrievalFlowNodeS3Configuration
+  "[S3](#cfn-bedrock-flow-retrievalflownodeserviceconfiguration-s3)" : {{RetrievalFlowNodeS3Configuration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-retrievalflownodeserviceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  S3:
-    RetrievalFlowNodeS3Configuration
-
+```
+  [S3](#cfn-bedrock-flow-retrievalflownodeserviceconfiguration-s3): {{
+    RetrievalFlowNodeS3Configuration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-retrievalflownodeserviceconfiguration-properties"></a>
 
-`S3`
-
+`S3`  <a name="cfn-bedrock-flow-retrievalflownodeserviceconfiguration-s3"></a>
 Contains configurations for the Amazon S3 location from which to retrieve data to return as the output from the node.
-
-_Required_: No
-
-_Type_: [RetrievalFlowNodeS3Configuration](aws-properties-bedrock-flow-retrievalflownodes3configuration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RetrievalFlowNodeS3Configuration
-
-S3Location
+*Required*: No
+*Type*: [RetrievalFlowNodeS3Configuration](aws-properties-bedrock-flow-retrievalflownodes3configuration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

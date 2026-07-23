@@ -3,22 +3,19 @@ title: "IAM policy for read and write access to a DynamoDB Accelerator (DAX) clu
 ---
 
 # IAM policy for read and write access to a DynamoDB Accelerator (DAX) cluster
+<a name="iam-policy-example-read-write-dax-access"></a>
 
-The following policy allows read, write, update, and delete access to a DynamoDB Accelerator
-(DAX) cluster, but not to the associated DynamoDB table. To use this policy,
-substitute the AWS Region name, your account ID, and the name of your DAX
-cluster.
+The following policy allows read, write, update, and delete access to a DynamoDB Accelerator (DAX) cluster, but not to the associated DynamoDB table. To use this policy, substitute the AWS Region name, your account ID, and the name of your DAX cluster.
 
-###### Note
+**Note**
+This policy gives access to DAX cluster, but not to the associated DynamoDB table. Make sure that your DAX cluster has the correct policy to perform these same operations on the DynamoDB table on your behalf.
 
-This policy gives access to DAX cluster, but not to the associated DynamoDB
-table. Make sure that your DAX cluster has the correct policy to perform these
-same operations on the DynamoDB table on your behalf.
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -40,21 +37,14 @@ JSON
         }
     ]
 }
-
 ```
 
-To expand this policy to cover DAX access for all AWS Regions for an account,
-use a wildcard character (\*) for the Region name.
+------
 
-```json
+To expand this policy to cover DAX access for all AWS Regions for an account, use a wildcard character (\*) for the Region name.
 
+```
 "Resource": "arn:aws:dax:*:123456789012:cache/MyDAXCluster"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Lambda function to process stream records
-
-Troubleshooting
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,52 +2,41 @@
 title: "AWS::QuickSight::Theme MarginStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme MarginStyle
+<a name="aws-properties-quicksight-theme-marginstyle"></a>
 
 The display options for margins around the outside edge of sheets.
 
 ## Syntax
+<a name="aws-properties-quicksight-theme-marginstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-theme-marginstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "Show" : Boolean
+  "[Show](#cfn-quicksight-theme-marginstyle-show)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-theme-marginstyle-syntax.yaml"></a>
 
-```yaml
-
-  Show: Boolean
-
+```
+  [Show](#cfn-quicksight-theme-marginstyle-show): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-theme-marginstyle-properties"></a>
 
-`Show`
-
+`Show`  <a name="cfn-quicksight-theme-marginstyle-show"></a>
 This Boolean value controls whether to display sheet margins.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GutterStyle
-
-ResourcePermission
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

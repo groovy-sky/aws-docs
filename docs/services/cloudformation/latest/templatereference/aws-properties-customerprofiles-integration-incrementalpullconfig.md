@@ -2,56 +2,42 @@
 title: "AWS::CustomerProfiles::Integration IncrementalPullConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Integration IncrementalPullConfig
+<a name="aws-properties-customerprofiles-integration-incrementalpullconfig"></a>
 
-Specifies the configuration used when importing incremental records from the
-source.
+Specifies the configuration used when importing incremental records from the source.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-integration-incrementalpullconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-integration-incrementalpullconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatetimeTypeFieldName" : String
+  "[DatetimeTypeFieldName](#cfn-customerprofiles-integration-incrementalpullconfig-datetimetypefieldname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-integration-incrementalpullconfig-syntax.yaml"></a>
 
-```yaml
-
-  DatetimeTypeFieldName: String
-
+```
+  [DatetimeTypeFieldName](#cfn-customerprofiles-integration-incrementalpullconfig-datetimetypefieldname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-integration-incrementalpullconfig-properties"></a>
 
-`DatetimeTypeFieldName`
-
-A field that specifies the date time or timestamp field as the criteria to use when
-importing incremental records from the source.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowDefinition
-
-MarketoSourceProperties
+`DatetimeTypeFieldName`  <a name="cfn-customerprofiles-integration-incrementalpullconfig-datetimetypefieldname"></a>
+A field that specifies the date time or timestamp field as the criteria to use when importing incremental records from the source.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

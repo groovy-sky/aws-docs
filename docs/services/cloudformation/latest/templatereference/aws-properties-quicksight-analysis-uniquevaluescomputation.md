@@ -2,83 +2,61 @@
 title: "AWS::QuickSight::Analysis UniqueValuesComputation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis UniqueValuesComputation
+<a name="aws-properties-quicksight-analysis-uniquevaluescomputation"></a>
 
 The unique values computation configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-uniquevaluescomputation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-uniquevaluescomputation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : DimensionField,
-  "ComputationId" : String,
-  "Name" : String
+  "[Category](#cfn-quicksight-analysis-uniquevaluescomputation-category)" : {{DimensionField}},
+  "[ComputationId](#cfn-quicksight-analysis-uniquevaluescomputation-computationid)" : {{String}},
+  "[Name](#cfn-quicksight-analysis-uniquevaluescomputation-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-uniquevaluescomputation-syntax.yaml"></a>
 
-```yaml
-
-  Category:
-    DimensionField
-  ComputationId: String
-  Name: String
-
+```
+  [Category](#cfn-quicksight-analysis-uniquevaluescomputation-category): {{
+    DimensionField}}
+  [ComputationId](#cfn-quicksight-analysis-uniquevaluescomputation-computationid): {{String}}
+  [Name](#cfn-quicksight-analysis-uniquevaluescomputation-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-uniquevaluescomputation-properties"></a>
 
-`Category`
-
+`Category`  <a name="cfn-quicksight-analysis-uniquevaluescomputation-category"></a>
 The category field that is used in a computation.
+*Required*: No
+*Type*: [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComputationId`
-
+`ComputationId`  <a name="cfn-quicksight-analysis-uniquevaluescomputation-computationid"></a>
 The ID for a computation.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-analysis-uniquevaluescomputation-name"></a>
 The name of a computation.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UnaggregatedField
-
-ValidationStrategy
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

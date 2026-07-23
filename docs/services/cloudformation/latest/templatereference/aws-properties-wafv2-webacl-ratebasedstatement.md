@@ -2,16 +2,14 @@
 title: "AWS::WAFv2::WebACL RateBasedStatement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RateBasedStatement
+<a name="aws-properties-wafv2-webacl-ratebasedstatement"></a>
 
 A rate-based rule counts incoming requests and rate limits requests when they are coming at too fast a rate. The rule categorizes requests according to your aggregation criteria, collects them into aggregation instances, and counts and rate limits the requests for each instance.
 
-###### Note
-
+**Note**
 If you change any of these settings in a rule that's currently in use, the change resets the rule's rate limiting counts. This can pause the rule's rate limiting activities for up to a minute.
 
 You can specify individual aggregation keys, like IP address or HTTP method. You can also specify aggregation key combinations, like IP address and HTTP method, or HTTP method, query argument, and cookie.
@@ -19,36 +17,22 @@ You can specify individual aggregation keys, like IP address or HTTP method. You
 Each unique set of values for the aggregation keys that you specify is a separate aggregation instance, with the value from each key contributing to the aggregation instance definition.
 
 For example, assume the rule evaluates web requests with the following IP address and HTTP method values:
-
-- IP address 10.1.1.1, HTTP method POST
-
-- IP address 10.1.1.1, HTTP method GET
-
-- IP address 127.0.0.0, HTTP method POST
-
-- IP address 10.1.1.1, HTTP method GET
++ IP address 10.1.1.1, HTTP method POST
++ IP address 10.1.1.1, HTTP method GET
++ IP address 127.0.0.0, HTTP method POST
++ IP address 10.1.1.1, HTTP method GET
 
 The rule would create different aggregation instances according to your aggregation criteria, for example:
-
-- If the aggregation criteria is just the IP address, then each individual address is an aggregation instance, and AWS WAF counts requests separately for each. The aggregation instances and request counts for our example would be the following:
-
-- IP address 10.1.1.1: count 3
-
-- IP address 127.0.0.0: count 1
-
-- If the aggregation criteria is HTTP method, then each individual HTTP method is an aggregation instance. The aggregation instances and request counts for our example would be the following:
-
-- HTTP method POST: count 2
-
-- HTTP method GET: count 2
-
-- If the aggregation criteria is IP address and HTTP method, then each IP address and each HTTP method would contribute to the combined aggregation instance. The aggregation instances and request counts for our example would be the following:
-
-- IP address 10.1.1.1, HTTP method POST: count 1
-
-- IP address 10.1.1.1, HTTP method GET: count 2
-
-- IP address 127.0.0.0, HTTP method POST: count 1
++ If the aggregation criteria is just the IP address, then each individual address is an aggregation instance, and AWS WAF counts requests separately for each. The aggregation instances and request counts for our example would be the following:
+  + IP address 10.1.1.1: count 3
+  + IP address 127.0.0.0: count 1
++ If the aggregation criteria is HTTP method, then each individual HTTP method is an aggregation instance. The aggregation instances and request counts for our example would be the following:
+  + HTTP method POST: count 2
+  + HTTP method GET: count 2
++ If the aggregation criteria is IP address and HTTP method, then each IP address and each HTTP method would contribute to the combined aggregation instance. The aggregation instances and request counts for our example would be the following:
+  + IP address 10.1.1.1, HTTP method POST: count 1
+  + IP address 10.1.1.1, HTTP method GET: count 2
+  + IP address 127.0.0.0, HTTP method POST: count 1
 
 For any n-tuple of aggregation keys, each unique combination of values for the keys defines a separate aggregation instance, which AWS WAF counts and rate-limits individually.
 
@@ -56,206 +40,135 @@ You can optionally nest another statement inside the rate-based statement, to na
 
 You cannot nest a `RateBasedStatement` inside another statement, for example inside a `NotStatement` or `OrStatement`. You can define a `RateBasedStatement` inside a web ACL and inside a rule group.
 
-For additional information about the options, see [Rate limiting web requests using rate-based rules](../../../waf/latest/developerguide/waf-rate-based-rules.md)
-in the _AWS WAF Developer Guide_.
+For additional information about the options, see [Rate limiting web requests using rate-based rules](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rate-based-rules.html) in the *AWS WAF Developer Guide*.
 
-If you only aggregate on the individual IP address or forwarded IP address, you can retrieve the list of IP addresses that AWS WAF
-is currently rate limiting for a rule through the API call `GetRateBasedStatementManagedKeys`. This option is not available
-for other aggregation configurations.
+If you only aggregate on the individual IP address or forwarded IP address, you can retrieve the list of IP addresses that AWS WAF is currently rate limiting for a rule through the API call `GetRateBasedStatementManagedKeys`. This option is not available for other aggregation configurations.
 
 AWS WAF tracks and manages web requests separately for each instance of a rate-based rule that you use. For example, if you provide the same rate-based rule settings in two web ACLs, each of the two rule statements represents a separate instance of the rate-based rule and gets its own tracking and management by AWS WAF. If you define a rate-based rule inside a rule group, and then use that rule group in multiple places, each use creates a separate instance of the rate-based rule that gets its own tracking and management by AWS WAF.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-ratebasedstatement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-ratebasedstatement-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregateKeyType" : String,
-  "CustomKeys" : [ RateBasedStatementCustomKey, ... ],
-  "EvaluationWindowSec" : Integer,
-  "ForwardedIPConfig" : ForwardedIPConfiguration,
-  "Limit" : Integer,
-  "ScopeDownStatement" : Statement
+  "[AggregateKeyType](#cfn-wafv2-webacl-ratebasedstatement-aggregatekeytype)" : {{String}},
+  "[CustomKeys](#cfn-wafv2-webacl-ratebasedstatement-customkeys)" : {{[ RateBasedStatementCustomKey, ... ]}},
+  "[EvaluationWindowSec](#cfn-wafv2-webacl-ratebasedstatement-evaluationwindowsec)" : {{Integer}},
+  "[ForwardedIPConfig](#cfn-wafv2-webacl-ratebasedstatement-forwardedipconfig)" : {{ForwardedIPConfiguration}},
+  "[Limit](#cfn-wafv2-webacl-ratebasedstatement-limit)" : {{Integer}},
+  "[ScopeDownStatement](#cfn-wafv2-webacl-ratebasedstatement-scopedownstatement)" : {{Statement}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-ratebasedstatement-syntax.yaml"></a>
 
-```yaml
-
-  AggregateKeyType: String
-  CustomKeys:
-    - RateBasedStatementCustomKey
-  EvaluationWindowSec: Integer
-  ForwardedIPConfig:
-    ForwardedIPConfiguration
-  Limit: Integer
-  ScopeDownStatement:
-    Statement
-
+```
+  [AggregateKeyType](#cfn-wafv2-webacl-ratebasedstatement-aggregatekeytype): {{String}}
+  [CustomKeys](#cfn-wafv2-webacl-ratebasedstatement-customkeys): {{
+    - RateBasedStatementCustomKey}}
+  [EvaluationWindowSec](#cfn-wafv2-webacl-ratebasedstatement-evaluationwindowsec): {{Integer}}
+  [ForwardedIPConfig](#cfn-wafv2-webacl-ratebasedstatement-forwardedipconfig): {{
+    ForwardedIPConfiguration}}
+  [Limit](#cfn-wafv2-webacl-ratebasedstatement-limit): {{Integer}}
+  [ScopeDownStatement](#cfn-wafv2-webacl-ratebasedstatement-scopedownstatement): {{
+    Statement}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-ratebasedstatement-properties"></a>
 
-`AggregateKeyType`
-
+`AggregateKeyType`  <a name="cfn-wafv2-webacl-ratebasedstatement-aggregatekeytype"></a>
 Setting that indicates how to aggregate the request counts.
+Web requests that are missing any of the components specified in the aggregation keys are omitted from the rate-based rule evaluation and handling.
++ `CONSTANT` - Count and limit the requests that match the rate-based rule's scope-down statement. With this option, the counted requests aren't further aggregated. The scope-down statement is the only specification used. When the count of all requests that satisfy the scope-down statement goes over the limit, AWS WAF applies the rule action to all requests that satisfy the scope-down statement.
 
-###### Note
+  With this option, you must configure the `ScopeDownStatement` property.
++ `CUSTOM_KEYS` - Aggregate the request counts using one or more web request components as the aggregate keys.
 
-Web requests that are missing any of the components specified in the aggregation keys
-are omitted from the rate-based rule evaluation and handling.
+  With this option, you must specify the aggregate keys in the `CustomKeys` property.
 
-- `CONSTANT` \- Count and limit the requests that match the rate-based rule's scope-down
-statement. With this option, the counted requests aren't further aggregated. The scope-down statement
-is the only specification used. When the count of all requests that satisfy the scope-down statement
-goes over the limit, AWS WAF applies the rule action to all requests that satisfy the scope-down statement.
+  To aggregate on only the IP address or only the forwarded IP address, don't use custom keys. Instead, set the aggregate key type to `IP` or `FORWARDED_IP`.
++ `FORWARDED_IP` - Aggregate the request counts on the first IP address in an HTTP header.
 
-With this option, you must configure the `ScopeDownStatement` property.
+  With this option, you must specify the header to use in the `ForwardedIPConfig` property.
 
-- `CUSTOM_KEYS` \- Aggregate the request counts using one or more web request components as the aggregate keys.
+  To aggregate on a combination of the forwarded IP address with other aggregate keys, use `CUSTOM_KEYS`.
++ `IP` - Aggregate the request counts on the IP address from the web request origin.
 
-With this option, you must specify the aggregate keys in the `CustomKeys` property.
+  To aggregate on a combination of the IP address with other aggregate keys, use `CUSTOM_KEYS`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CONSTANT | IP | FORWARDED_IP | CUSTOM_KEYS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-To aggregate on only the IP address or only the forwarded IP address, don't use custom keys. Instead, set the aggregate
-key type to `IP` or `FORWARDED_IP`.
-
-- `FORWARDED_IP` \- Aggregate the request counts on the first IP address in an HTTP header.
-
-With this option, you must specify the header to use in the `ForwardedIPConfig` property.
-
-To aggregate on a combination of the forwarded IP address with other aggregate keys, use `CUSTOM_KEYS`.
-
-- `IP` \- Aggregate the request counts on the IP address from the web request
-origin.
-
-To aggregate on a combination of the IP address with other aggregate keys, use `CUSTOM_KEYS`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CONSTANT | IP | FORWARDED_IP | CUSTOM_KEYS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomKeys`
-
+`CustomKeys`  <a name="cfn-wafv2-webacl-ratebasedstatement-customkeys"></a>
 Specifies the aggregate keys to use in a rate-base rule.
+*Required*: No
+*Type*: Array of [RateBasedStatementCustomKey](aws-properties-wafv2-webacl-ratebasedstatementcustomkey.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [RateBasedStatementCustomKey](aws-properties-wafv2-webacl-ratebasedstatementcustomkey.md)
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EvaluationWindowSec`
-
-The amount of time, in seconds, that AWS WAF
-should include in its request counts, looking back from the current time. For example,
-for a setting of 120, when AWS WAF checks the rate, it counts the requests for the 2 minutes immediately preceding
-the current time. Valid settings are 60, 120, 300, and 600.
-
-This setting doesn't determine how often AWS WAF checks the rate, but how far back it looks each
-time it checks. AWS WAF checks the rate about every 10 seconds.
-
+`EvaluationWindowSec`  <a name="cfn-wafv2-webacl-ratebasedstatement-evaluationwindowsec"></a>
+The amount of time, in seconds, that AWS WAF should include in its request counts, looking back from the current time. For example, for a setting of 120, when AWS WAF checks the rate, it counts the requests for the 2 minutes immediately preceding the current time. Valid settings are 60, 120, 300, and 600.
+This setting doesn't determine how often AWS WAF checks the rate, but how far back it looks each time it checks. AWS WAF checks the rate about every 10 seconds.
 Default: `300` (5 minutes)
+*Required*: No
+*Type*: Integer
+*Allowed values*: `60 | 120 | 300 | 600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Allowed values_: `60 | 120 | 300 | 600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ForwardedIPConfig`
-
+`ForwardedIPConfig`  <a name="cfn-wafv2-webacl-ratebasedstatement-forwardedipconfig"></a>
 The configuration for inspecting IP addresses in an HTTP header that you specify, instead of using the IP address that's reported by the web request origin. Commonly, this is the X-Forwarded-For (XFF) header, but you can specify any header name.
-
-###### Note
-
 If the specified header isn't present in the request, AWS WAF doesn't apply the rule to the web request at all.
-
 This is required if you specify a forwarded IP in the rule's aggregate key settings.
+*Required*: No
+*Type*: [ForwardedIPConfiguration](aws-properties-wafv2-webacl-forwardedipconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ForwardedIPConfiguration](aws-properties-wafv2-webacl-forwardedipconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Limit`
-
-The limit on requests during the specified evaluation window for a single aggregation instance for the rate-based rule.
-If the rate-based statement includes a `ScopeDownStatement`, this limit is applied only to the
-requests that match the statement.
-
+`Limit`  <a name="cfn-wafv2-webacl-ratebasedstatement-limit"></a>
+The limit on requests during the specified evaluation window for a single aggregation instance for the rate-based rule. If the rate-based statement includes a `ScopeDownStatement`, this limit is applied only to the requests that match the statement.
 Examples:
++ If you aggregate on just the IP address, this is the limit on requests from any single IP address.
++ If you aggregate on the HTTP method and the query argument name "city", then this is the limit on requests for any single method, city pair.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `10`
+*Maximum*: `2000000000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- If you aggregate on just the IP address, this is the limit on requests from any single IP address.
-
-- If you aggregate on the HTTP method and the query argument name "city", then this is the limit on
-requests for any single method, city pair.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `10`
-
-_Maximum_: `2000000000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScopeDownStatement`
-
-An optional nested statement that narrows the scope of the web requests that are
-evaluated and managed by the rate-based statement. When you use a scope-down statement,
-the rate-based rule only tracks and rate limits
-requests that match the scope-down statement. You can use any nestable [Statement](../userguide/aws-properties-wafv2-webacl-notstatement.md#cfn-wafv2-webacl-notstatement-statement) in the scope-down statement, and you can nest statements at any
-level, the same as you can for a rule statement.
-
-_Required_: No
-
-_Type_: [Statement](aws-properties-wafv2-webacl-statement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ScopeDownStatement`  <a name="cfn-wafv2-webacl-ratebasedstatement-scopedownstatement"></a>
+An optional nested statement that narrows the scope of the web requests that are evaluated and managed by the rate-based statement. When you use a scope-down statement, the rate-based rule only tracks and rate limits requests that match the scope-down statement. You can use any nestable [Statement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-notstatement.html#cfn-wafv2-webacl-notstatement-statement) in the scope-down statement, and you can nest statements at any level, the same as you can for a rule statement.
+*Required*: No
+*Type*: [Statement](aws-properties-wafv2-webacl-statement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples"></a>
 
-The following rate-based rule examples are also listed in a web ACL example, under
-`AWS::WAFv2::WebACL`.
+The following rate-based rule examples are also listed in a web ACL example, under `AWS::WAFv2::WebACL`.
 
-- [Rate limit all requests that match a scope-down statement](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement)
-
-- [Rate limit requests based on an IP address](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address)
-
-- [Rate limit requests based on an IP address and a header](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header)
-
-- [Rate limit requests based on three custom aggregate keys](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys)
-
-- [Rate limit requests from individual states in a country](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country)
+**Topics**
++ [Rate limit all requests that match a scope-down statement](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement)
++ [Rate limit requests based on an IP address](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address)
++ [Rate limit requests based on an IP address and a header](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header)
++ [Rate limit requests based on three custom aggregate keys](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys)
++ [Rate limit requests from individual states in a country](#aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country)
 
 ### Rate limit all requests that match a scope-down statement
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement"></a>
 
-The following example listing shows a rate-based rule statement that counts and
-rate limits all requests that match a scope-down statement. Rate-based rules that
-count all requests together are required to include a scope-down statement. In this
-example, the rule counts all requests coming from a specific country, and limits
-those requests to 100,000 for any five minute period.
+The following example listing shows a rate-based rule statement that counts and rate limits all requests that match a scope-down statement. Rate-based rules that count all requests together are required to include a scope-down statement. In this example, the rule counts all requests coming from a specific country, and limits those requests to 100,000 for any five minute period.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement--yaml"></a>
 
-```yaml
-
+```
 Rules:
 - Name: rbrCountAll
   Priority: 0
@@ -279,9 +192,9 @@ Rules:
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement--json"></a>
 
-```json
-
+```
  "Rules": [
     {
       "Name": "rbrCountAll",
@@ -313,24 +226,19 @@ Rules:
       }
     }
  ]
-
 ```
 
 ### Rate limit requests based on an IP address
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address"></a>
 
-The following example listing shows a rate-based rule statement that uses the
-value in a forwarded IP address to aggregate and rate limit requests. The forwarded
-IP address used in this example is the one in the header
-`X-Forwarded-For`.
+The following example listing shows a rate-based rule statement that uses the value in a forwarded IP address to aggregate and rate limit requests. The forwarded IP address used in this example is the one in the header `X-Forwarded-For`.
 
-When you rate limit on only the IP address or only a forwarded IP address, you
-specify the aggregation in the aggregate key type and you don't use custom
-aggregation keys.
+When you rate limit on only the IP address or only a forwarded IP address, you specify the aggregation in the aggregate key type and you don't use custom aggregation keys.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address--yaml"></a>
 
-```yaml
-
+```
 Rules:
 - Name: rbrNoCustomKeys
   Priority: 1
@@ -347,13 +255,12 @@ Rules:
     SampledRequestsEnabled: true
     CloudWatchMetricsEnabled: true
     MetricName: rbrNoCustomKeys
-
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address--json"></a>
 
-```json
-
+```
  "Rules": [
     {
       "Name": "rbrNoCustomKeys",
@@ -378,25 +285,19 @@ Rules:
       }
     }
  ]
-
 ```
 
 ### Rate limit requests based on an IP address and a header
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header"></a>
 
-The following example listing shows a rate-based rule statement that aggregates
-and rate limits requests based on the paired values of a forwarded IP address and a
-header. The IP address used is the one in the header `X-Forwarded-For` and
-the header value used is in the header `Content-Type`.
+The following example listing shows a rate-based rule statement that aggregates and rate limits requests based on the paired values of a forwarded IP address and a header. The IP address used is the one in the header `X-Forwarded-For` and the header value used is in the header `Content-Type`.
 
-To rate limit using a combination of an IP address with one or more other keys,
-you provide all key specifications in the custom aggregation key settings. Anytime
-you use a forwarded IP address, you specify the header name of the address in the
-rate-based statement's `ForwardedIPConfig` setting.
+To rate limit using a combination of an IP address with one or more other keys, you provide all key specifications in the custom aggregation key settings. Anytime you use a forwarded IP address, you specify the header name of the address in the rate-based statement's `ForwardedIPConfig` setting.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header--yaml"></a>
 
-```yaml
-
+```
 Rules:
 - Name: rbrCustomKeysA
   Priority: 2
@@ -420,13 +321,12 @@ Rules:
     SampledRequestsEnabled: true
     CloudWatchMetricsEnabled: true
     MetricName: rbrCustomKeysA
-
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header--json"></a>
 
-```json
-
+```
  "Rules": [
     {
       "Name": "rbrCustomKeysA",
@@ -467,19 +367,17 @@ Rules:
       }
     }
  ]
-
 ```
 
 ### Rate limit requests based on three custom aggregate keys
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys"></a>
 
-The following example listing shows a rate-based rule statement that aggregates
-and rate limits requests based on the trio of values from the query string, the HTTP
-method, and the URI path.
+The following example listing shows a rate-based rule statement that aggregates and rate limits requests based on the trio of values from the query string, the HTTP method, and the URI path.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys--yaml"></a>
 
-```yaml
-
+```
 Rules:
 - Name: rbrCustomKeysB
   Priority: 3
@@ -503,13 +401,12 @@ Rules:
     SampledRequestsEnabled: true
     CloudWatchMetricsEnabled: true
     MetricName: rbrCustomKeysB
-
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys--json"></a>
 
-```json
-
+```
  "Rules": [
     {
       "Name": "rbrCustomKeysB",
@@ -555,30 +452,21 @@ Rules:
       }
     }
  ]
-
 ```
 
 ### Rate limit requests from individual states in a country
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country"></a>
 
-The following example listing combines a geo match statement with a rate based
-rule, to limit the number of requests coming from any individual U.S. state.
+The following example listing combines a geo match statement with a rate based rule, to limit the number of requests coming from any individual U.S. state.
 
-The geo match statement matches on all requests coming from the U.S. and it has
-its rule action set to Count. For all matching requets, the geo match statement adds
-a country label and a region label, so after being evaluated by this rule, requests
-from the U.S. are labeled by state. For more information, see the
-`AWS::WAFv2::WebACL` `GeoMatchStatement` property.
+The geo match statement matches on all requests coming from the U.S. and it has its rule action set to Count. For all matching requets, the geo match statement adds a country label and a region label, so after being evaluated by this rule, requests from the U.S. are labeled by state. For more information, see the `AWS::WAFv2::WebACL``GeoMatchStatement` property.
 
-Following the geo match statement, the rate-based rule uses a scope-down statement
-to also only match on requests from the U.S.. The rate-based rule aggregates on
-values for the geo match region label namespace, so the requests from each state are
-counted in their own aggregation instance. The rate-based rule limits each state to
-500 requests in any five minute period.
+Following the geo match statement, the rate-based rule uses a scope-down statement to also only match on requests from the U.S.. The rate-based rule aggregates on values for the geo match region label namespace, so the requests from each state are counted in their own aggregation instance. The rate-based rule limits each state to 500 requests in any five minute period.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country--yaml"></a>
 
-```yaml
-
+```
 Rules:
 - Name: labelUSStates
   Priority: 4
@@ -611,13 +499,12 @@ Rules:
     SampledRequestsEnabled: true
     CloudWatchMetricsEnabled: true
     MetricName: rbrRequestsFromUSStates
-
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country--json"></a>
 
-```json
-
+```
  "Rules": [
     {
       "Name": "labelUSStates",
@@ -671,13 +558,6 @@ Rules:
       }
     }
  ]
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OverrideAction
-
-RateBasedStatementCustomKey
 
 All content copied from https://docs.aws.amazon.com/.

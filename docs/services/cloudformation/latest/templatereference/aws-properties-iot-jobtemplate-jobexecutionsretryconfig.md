@@ -2,59 +2,44 @@
 title: "AWS::IoT::JobTemplate JobExecutionsRetryConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::JobTemplate JobExecutionsRetryConfig
+<a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig"></a>
 
-The configuration that determines how many retries are allowed for each failure type
-for a job.
+The configuration that determines how many retries are allowed for each failure type for a job.
 
 ## Syntax
+<a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "RetryCriteriaList" : [ RetryCriteria, ... ]
+  "[RetryCriteriaList](#cfn-iot-jobtemplate-jobexecutionsretryconfig-retrycriterialist)" : {{[ RetryCriteria, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig-syntax.yaml"></a>
 
-```yaml
-
-  RetryCriteriaList:
-    - RetryCriteria
-
+```
+  [RetryCriteriaList](#cfn-iot-jobtemplate-jobexecutionsretryconfig-retrycriterialist): {{
+    - RetryCriteria}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig-properties"></a>
 
-`RetryCriteriaList`
-
-The list of criteria that determines how many retries are allowed for each failure
-type for a job.
-
-_Required_: No
-
-_Type_: Array of [RetryCriteria](aws-properties-iot-jobtemplate-retrycriteria.md)
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExponentialRolloutRate
-
-JobExecutionsRolloutConfig
+`RetryCriteriaList`  <a name="cfn-iot-jobtemplate-jobexecutionsretryconfig-retrycriterialist"></a>
+The list of criteria that determines how many retries are allowed for each failure type for a job.
+*Required*: No
+*Type*: Array of [RetryCriteria](aws-properties-iot-jobtemplate-retrycriteria.md)
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

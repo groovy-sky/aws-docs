@@ -2,66 +2,51 @@
 title: "AWS::ApiGatewayV2::RoutingRule Condition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::RoutingRule Condition
+<a name="aws-properties-apigatewayv2-routingrule-condition"></a>
 
 Represents a condition. Conditions can contain up to two `matchHeaders` conditions and one `matchBasePaths` conditions. API Gateway evaluates header conditions and base path conditions together. You can only use AND between header and base path conditions.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-routingrule-condition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-routingrule-condition-syntax.json"></a>
 
-```json
-
+```
 {
-  "MatchBasePaths" : MatchBasePaths,
-  "MatchHeaders" : MatchHeaders
+  "[MatchBasePaths](#cfn-apigatewayv2-routingrule-condition-matchbasepaths)" : {{MatchBasePaths}},
+  "[MatchHeaders](#cfn-apigatewayv2-routingrule-condition-matchheaders)" : {{MatchHeaders}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-routingrule-condition-syntax.yaml"></a>
 
-```yaml
-
-  MatchBasePaths:
-    MatchBasePaths
-  MatchHeaders:
-    MatchHeaders
-
+```
+  [MatchBasePaths](#cfn-apigatewayv2-routingrule-condition-matchbasepaths): {{
+    MatchBasePaths}}
+  [MatchHeaders](#cfn-apigatewayv2-routingrule-condition-matchheaders): {{
+    MatchHeaders}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-routingrule-condition-properties"></a>
 
-`MatchBasePaths`
-
+`MatchBasePaths`  <a name="cfn-apigatewayv2-routingrule-condition-matchbasepaths"></a>
 The base path to be matched.
+*Required*: No
+*Type*: [MatchBasePaths](aws-properties-apigatewayv2-routingrule-matchbasepaths.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MatchBasePaths](aws-properties-apigatewayv2-routingrule-matchbasepaths.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchHeaders`
-
+`MatchHeaders`  <a name="cfn-apigatewayv2-routingrule-condition-matchheaders"></a>
 The headers to be matched.
-
-_Required_: No
-
-_Type_: [MatchHeaders](aws-properties-apigatewayv2-routingrule-matchheaders.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ActionInvokeApi
-
-MatchBasePaths
+*Required*: No
+*Type*: [MatchHeaders](aws-properties-apigatewayv2-routingrule-matchheaders.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

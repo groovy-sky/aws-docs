@@ -2,133 +2,116 @@
 title: "AWS::BillingConductor::PricingPlan"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::PricingPlan
+<a name="aws-resource-billingconductor-pricingplan"></a>
 
 Creates a pricing plan that is used for computing AWS charges for billing groups.
 
 ## Syntax
+<a name="aws-resource-billingconductor-pricingplan-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-billingconductor-pricingplan-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BillingConductor::PricingPlan",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "PricingRuleArns" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-billingconductor-pricingplan-description)" : {{String}},
+      "[Name](#cfn-billingconductor-pricingplan-name)" : {{String}},
+      "[PricingRuleArns](#cfn-billingconductor-pricingplan-pricingrulearns)" : {{[ String, ... ]}},
+      "[Tags](#cfn-billingconductor-pricingplan-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-billingconductor-pricingplan-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BillingConductor::PricingPlan
 Properties:
-  Description: String
-  Name: String
-  PricingRuleArns:
-    - String
-  Tags:
-    - Tag
-
+  [Description](#cfn-billingconductor-pricingplan-description): {{String}}
+  [Name](#cfn-billingconductor-pricingplan-name): {{String}}
+  [PricingRuleArns](#cfn-billingconductor-pricingplan-pricingrulearns): {{
+    - String}}
+  [Tags](#cfn-billingconductor-pricingplan-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-billingconductor-pricingplan-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-billingconductor-pricingplan-description"></a>
 The pricing plan description.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-billingconductor-pricingplan-name"></a>
 The name of a pricing plan.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_\+=\.\-@]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_\+=\.\-@]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PricingRuleArns`
-
+`PricingRuleArns`  <a name="cfn-billingconductor-pricingplan-pricingrulearns"></a>
 The `PricingRuleArns` that are associated with the Pricing Plan.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-billingconductor-pricingplan-tags"></a>
 A map that contains tag keys and tag values that are attached to a pricing plan.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-billingconductor-pricingplan-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-billingconductor-pricingplan-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-billingconductor-pricingplan-return-values"></a>
 
 ### Ref
+<a name="aws-resource-billingconductor-pricingplan-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-billingconductor-pricingplan-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-billingconductor-pricingplan-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the created pricing plan.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the pricing plan was created.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The most recent time the pricing plan was modified.
 
-`Size`
-
+`Size`  <a name="Size-fn::getatt"></a>
 The pricing rules count currently associated with this pricing plan list element.
 
 ## Examples
+<a name="aws-resource-billingconductor-pricingplan--examples"></a>
 
 ### Pricing plan with a pricing rule attached
+<a name="aws-resource-billingconductor-pricingplan--examples--Pricing_plan_with_a_pricing_rule_attached"></a>
 
 The following example creates a pricing plan with a 10% global mark up pricing rule attached.
 
 #### JSON
+<a name="aws-resource-billingconductor-pricingplan--examples--Pricing_plan_with_a_pricing_rule_attached--json"></a>
 
-```json
-
+```
 {
   "Resources": {
       "TestPricingRule": {
@@ -156,9 +139,9 @@ The following example creates a pricing plan with a 10% global mark up pricing r
 ```
 
 #### YAML
+<a name="aws-resource-billingconductor-pricingplan--examples--Pricing_plan_with_a_pricing_rule_attached--yaml"></a>
 
-```yaml
-
+```
 Resources:
   TestPricingRule:
       Type: 'AWS::BillingConductor::PricingRule'
@@ -175,13 +158,6 @@ Resources:
       Description: 'Test pricing plan created through CloudFormation.'
       PricingRuleArns:
         - !GetAtt TestPricingRule.Arn
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

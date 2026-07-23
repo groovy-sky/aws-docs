@@ -2,149 +2,105 @@
 title: "AWS::ACMPCA::CertificateAuthority KeyUsage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority KeyUsage
+<a name="aws-properties-acmpca-certificateauthority-keyusage"></a>
 
-Defines one or more purposes for which the key contained in the certificate can be
-used. Default value for each option is false.
+Defines one or more purposes for which the key contained in the certificate can be used. Default value for each option is false.
 
 ## Syntax
+<a name="aws-properties-acmpca-certificateauthority-keyusage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificateauthority-keyusage-syntax.json"></a>
 
-```json
-
+```
 {
-  "CRLSign" : Boolean,
-  "DataEncipherment" : Boolean,
-  "DecipherOnly" : Boolean,
-  "DigitalSignature" : Boolean,
-  "EncipherOnly" : Boolean,
-  "KeyAgreement" : Boolean,
-  "KeyCertSign" : Boolean,
-  "KeyEncipherment" : Boolean,
-  "NonRepudiation" : Boolean
+  "[CRLSign](#cfn-acmpca-certificateauthority-keyusage-crlsign)" : {{Boolean}},
+  "[DataEncipherment](#cfn-acmpca-certificateauthority-keyusage-dataencipherment)" : {{Boolean}},
+  "[DecipherOnly](#cfn-acmpca-certificateauthority-keyusage-decipheronly)" : {{Boolean}},
+  "[DigitalSignature](#cfn-acmpca-certificateauthority-keyusage-digitalsignature)" : {{Boolean}},
+  "[EncipherOnly](#cfn-acmpca-certificateauthority-keyusage-encipheronly)" : {{Boolean}},
+  "[KeyAgreement](#cfn-acmpca-certificateauthority-keyusage-keyagreement)" : {{Boolean}},
+  "[KeyCertSign](#cfn-acmpca-certificateauthority-keyusage-keycertsign)" : {{Boolean}},
+  "[KeyEncipherment](#cfn-acmpca-certificateauthority-keyusage-keyencipherment)" : {{Boolean}},
+  "[NonRepudiation](#cfn-acmpca-certificateauthority-keyusage-nonrepudiation)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificateauthority-keyusage-syntax.yaml"></a>
 
-```yaml
-
-  CRLSign: Boolean
-  DataEncipherment: Boolean
-  DecipherOnly: Boolean
-  DigitalSignature: Boolean
-  EncipherOnly: Boolean
-  KeyAgreement: Boolean
-  KeyCertSign: Boolean
-  KeyEncipherment: Boolean
-  NonRepudiation: Boolean
-
+```
+  [CRLSign](#cfn-acmpca-certificateauthority-keyusage-crlsign): {{Boolean}}
+  [DataEncipherment](#cfn-acmpca-certificateauthority-keyusage-dataencipherment): {{Boolean}}
+  [DecipherOnly](#cfn-acmpca-certificateauthority-keyusage-decipheronly): {{Boolean}}
+  [DigitalSignature](#cfn-acmpca-certificateauthority-keyusage-digitalsignature): {{Boolean}}
+  [EncipherOnly](#cfn-acmpca-certificateauthority-keyusage-encipheronly): {{Boolean}}
+  [KeyAgreement](#cfn-acmpca-certificateauthority-keyusage-keyagreement): {{Boolean}}
+  [KeyCertSign](#cfn-acmpca-certificateauthority-keyusage-keycertsign): {{Boolean}}
+  [KeyEncipherment](#cfn-acmpca-certificateauthority-keyusage-keyencipherment): {{Boolean}}
+  [NonRepudiation](#cfn-acmpca-certificateauthority-keyusage-nonrepudiation): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificateauthority-keyusage-properties"></a>
 
-`CRLSign`
-
+`CRLSign`  <a name="cfn-acmpca-certificateauthority-keyusage-crlsign"></a>
 Key can be used to sign CRLs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DataEncipherment`
-
+`DataEncipherment`  <a name="cfn-acmpca-certificateauthority-keyusage-dataencipherment"></a>
 Key can be used to decipher data.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DecipherOnly`
-
+`DecipherOnly`  <a name="cfn-acmpca-certificateauthority-keyusage-decipheronly"></a>
 Key can be used only to decipher data.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`DigitalSignature`  <a name="cfn-acmpca-certificateauthority-keyusage-digitalsignature"></a>
+ Key can be used for digital signing.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DigitalSignature`
-
-Key can be used for digital signing.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EncipherOnly`
-
+`EncipherOnly`  <a name="cfn-acmpca-certificateauthority-keyusage-encipheronly"></a>
 Key can be used only to encipher data.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KeyAgreement`
-
+`KeyAgreement`  <a name="cfn-acmpca-certificateauthority-keyusage-keyagreement"></a>
 Key can be used in a key-agreement protocol.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KeyCertSign`
-
+`KeyCertSign`  <a name="cfn-acmpca-certificateauthority-keyusage-keycertsign"></a>
 Key can be used to sign certificates.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KeyEncipherment`
-
+`KeyEncipherment`  <a name="cfn-acmpca-certificateauthority-keyusage-keyencipherment"></a>
 Key can be used to encipher data.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NonRepudiation`
-
+`NonRepudiation`  <a name="cfn-acmpca-certificateauthority-keyusage-nonrepudiation"></a>
 Key can be used for non-repudiation.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeneralName
-
-OcspConfiguration
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

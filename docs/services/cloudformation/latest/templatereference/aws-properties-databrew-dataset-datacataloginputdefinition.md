@@ -2,105 +2,72 @@
 title: "AWS::DataBrew::Dataset DataCatalogInputDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset DataCatalogInputDefinition
+<a name="aws-properties-databrew-dataset-datacataloginputdefinition"></a>
 
-Represents how metadata stored in the AWS Glue Data Catalog is defined in a DataBrew
-dataset.
+Represents how metadata stored in the AWS Glue Data Catalog is defined in a DataBrew dataset.
 
 ## Syntax
+<a name="aws-properties-databrew-dataset-datacataloginputdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-dataset-datacataloginputdefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "CatalogId" : String,
-  "DatabaseName" : String,
-  "TableName" : String,
-  "TempDirectory" : S3Location
+  "[CatalogId](#cfn-databrew-dataset-datacataloginputdefinition-catalogid)" : {{String}},
+  "[DatabaseName](#cfn-databrew-dataset-datacataloginputdefinition-databasename)" : {{String}},
+  "[TableName](#cfn-databrew-dataset-datacataloginputdefinition-tablename)" : {{String}},
+  "[TempDirectory](#cfn-databrew-dataset-datacataloginputdefinition-tempdirectory)" : {{S3Location}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-dataset-datacataloginputdefinition-syntax.yaml"></a>
 
-```yaml
-
-  CatalogId: String
-  DatabaseName: String
-  TableName: String
-  TempDirectory:
-    S3Location
-
+```
+  [CatalogId](#cfn-databrew-dataset-datacataloginputdefinition-catalogid): {{String}}
+  [DatabaseName](#cfn-databrew-dataset-datacataloginputdefinition-databasename): {{String}}
+  [TableName](#cfn-databrew-dataset-datacataloginputdefinition-tablename): {{String}}
+  [TempDirectory](#cfn-databrew-dataset-datacataloginputdefinition-tempdirectory): {{
+    S3Location}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-dataset-datacataloginputdefinition-properties"></a>
 
-`CatalogId`
+`CatalogId`  <a name="cfn-databrew-dataset-datacataloginputdefinition-catalogid"></a>
+The unique identifier of the AWS account that holds the Data Catalog that stores the data.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The unique identifier of the AWS account that holds the Data Catalog that stores the
-data.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-databrew-dataset-datacataloginputdefinition-databasename"></a>
 The name of a database in the Data Catalog.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TableName`  <a name="cfn-databrew-dataset-datacataloginputdefinition-tablename"></a>
+The name of a database table in the Data Catalog. This table corresponds to a DataBrew dataset.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
-The name of a database table in the Data Catalog. This table corresponds to a DataBrew
-dataset.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TempDirectory`
-
-An Amazon location that AWS Glue Data Catalog can use as a temporary
-directory.
-
-_Required_: No
-
-_Type_: [S3Location](aws-properties-databrew-dataset-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatabaseInputDefinition
-
-DatasetParameter
+`TempDirectory`  <a name="cfn-databrew-dataset-datacataloginputdefinition-tempdirectory"></a>
+An Amazon location that AWS Glue Data Catalog can use as a temporary directory.
+*Required*: No
+*Type*: [S3Location](aws-properties-databrew-dataset-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

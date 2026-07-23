@@ -2,54 +2,43 @@
 title: "AWS::EC2::LaunchTemplate Ipv6PrefixSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate Ipv6PrefixSpecification
+<a name="aws-properties-ec2-launchtemplate-ipv6prefixspecification"></a>
 
 Specifies an IPv6 prefix for a network interface.
 
-`Ipv6PrefixSpecification` is a property of [AWS::EC2::LaunchTemplate NetworkInterface](../userguide/aws-properties-ec2-launchtemplate-networkinterface.md).
+`Ipv6PrefixSpecification` is a property of [AWS::EC2::LaunchTemplate NetworkInterface](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-ipv6prefixspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-ipv6prefixspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ipv6Prefix" : String
+  "[Ipv6Prefix](#cfn-ec2-launchtemplate-ipv6prefixspecification-ipv6prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-ipv6prefixspecification-syntax.yaml"></a>
 
-```yaml
-
-  Ipv6Prefix: String
-
+```
+  [Ipv6Prefix](#cfn-ec2-launchtemplate-ipv6prefixspecification-ipv6prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-ipv6prefixspecification-properties"></a>
 
-`Ipv6Prefix`
-
+`Ipv6Prefix`  <a name="cfn-ec2-launchtemplate-ipv6prefixspecification-ipv6prefix"></a>
 The IPv6 prefix.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Ipv6Add
-
-LaunchTemplateData
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,48 @@
 title: "AWS::ElasticLoadBalancing::LoadBalancer ConnectionSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancing::LoadBalancer ConnectionSettings
+<a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings"></a>
 
 Specifies the idle timeout value for your Classic Load Balancer.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "IdleTimeout" : Integer
+  "[IdleTimeout](#cfn-elasticloadbalancing-loadbalancer-connectionsettings-idletimeout)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings-syntax.yaml"></a>
 
-```yaml
-
-  IdleTimeout: Integer
-
+```
+  [IdleTimeout](#cfn-elasticloadbalancing-loadbalancer-connectionsettings-idletimeout): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings-properties"></a>
 
-`IdleTimeout`
-
+`IdleTimeout`  <a name="cfn-elasticloadbalancing-loadbalancer-connectionsettings-idletimeout"></a>
 The time, in seconds, that the connection is allowed to be idle (no data has been sent over the connection) before it is closed by the load balancer.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `3600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `3600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ModifyLoadBalancerAttributes](../../../../reference/elasticloadbalancing/2012-06-01/apireference/api-modifyloadbalancerattributes.md)
-in the _Elastic Load Balancing API Reference (version 2012-06-01)_
-
-- [Idle Connection Timeout](../../../elasticloadbalancing/latest/classic/config-idle-timeout.md)
-in the _User Guide for Classic Load Balancers_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectionDrainingPolicy
-
-HealthCheck
+<a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings--seealso"></a>
++ [ModifyLoadBalancerAttributes](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_ModifyLoadBalancerAttributes.html) in the *Elastic Load Balancing API Reference (version 2012-06-01)*
++ [Idle Connection Timeout](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/config-idle-timeout.html) in the *User Guide for Classic Load Balancers*
 
 All content copied from https://docs.aws.amazon.com/.

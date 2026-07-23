@@ -2,52 +2,41 @@
 title: "AWS::SageMaker::MonitoringSchedule Json"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::MonitoringSchedule Json
+<a name="aws-properties-sagemaker-monitoringschedule-json"></a>
 
 The JSON dataset format configuration.
 
 ## Syntax
+<a name="aws-properties-sagemaker-monitoringschedule-json-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-monitoringschedule-json-syntax.json"></a>
 
-```json
-
+```
 {
-  "Line" : Boolean
+  "[Line](#cfn-sagemaker-monitoringschedule-json-line)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-monitoringschedule-json-syntax.yaml"></a>
 
-```yaml
-
-  Line: Boolean
-
+```
+  [Line](#cfn-sagemaker-monitoringschedule-json-line): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-monitoringschedule-json-properties"></a>
 
-`Line`
-
+`Line`  <a name="cfn-sagemaker-monitoringschedule-json-line"></a>
 Indicates whether the JSON data is in line-delimited format.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EndpointInput
-
-MonitoringAppSpecification
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

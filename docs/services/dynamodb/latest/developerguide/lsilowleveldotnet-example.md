@@ -3,37 +3,23 @@ title: "Example: Local Secondary Indexes using the AWS SDK for .NET low-level AP
 ---
 
 # Example: Local Secondary Indexes using the AWS SDK for .NET low-level API
+<a name="LSILowLevelDotNet.Example"></a>
 
-The following C# code example shows how to work with local secondary indexes in
-Amazon DynamoDB. The example creates a table named `CustomerOrders` with a
-partition key of `CustomerId` and a sort key of `OrderId`. There
-are two local secondary indexes on this table:
+The following C\# code example shows how to work with local secondary indexes in Amazon DynamoDB. The example creates a table named `CustomerOrders` with a partition key of `CustomerId` and a sort key of `OrderId`. There are two local secondary indexes on this table:
++ `OrderCreationDateIndex` — The sort key is `OrderCreationDate`, and the following attributes are projected into the index:
+  + `ProductCategory`
+  + `ProductName`
+  + `OrderStatus`
+  + `ShipmentTrackingId`
++ `IsOpenIndex` — The sort key is `IsOpen`, and all of the table attributes are projected into the index.
 
-- `OrderCreationDateIndex` — The sort key is
-`OrderCreationDate`, and the following attributes are projected
-into the index:
+After the `CustomerOrders` table is created, the program loads the table with data representing customer orders. It then queries the data using the local secondary indexes. Finally, the program deletes the `CustomerOrders` table.
 
-- `ProductCategory`
+For step-by-step instructions for testing the following example, see [.NET code examples](CodeSamples.DotNet.md).
 
-- `ProductName`
+**Example**
 
-- `OrderStatus`
-
-- `ShipmentTrackingId`
-
-- `IsOpenIndex` — The sort key is `IsOpen`, and all
-of the table attributes are projected into the index.
-
-After the `CustomerOrders` table is created, the program loads the table
-with data representing customer orders. It then queries the data using the local secondary indexes.
-Finally, the program deletes the `CustomerOrders` table.
-
-For step-by-step instructions for testing the following example, see [.NET code examples](codesamples-dotnet.md).
-
-###### Example
-
-```csharp
-
+```
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -724,13 +710,6 @@ namespace com.amazonaws.codesamples
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Local Secondary Indexes: .NET
-
-Local Secondary Indexes: AWS CLI
 
 All content copied from https://docs.aws.amazon.com/.

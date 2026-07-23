@@ -2,68 +2,51 @@
 title: "AWS::Cassandra::Table WarmThroughput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Table WarmThroughput
+<a name="aws-properties-cassandra-table-warmthroughput"></a>
 
-The `WarmThroughput` property type specifies Property description not available. for an [AWS::Cassandra::Table](aws-resource-cassandra-table.md).
+<a name="aws-properties-cassandra-table-warmthroughput-description"></a>The `WarmThroughput` property type specifies Property description not available. for an [AWS::Cassandra::Table](aws-resource-cassandra-table.md).
 
 ## Syntax
+<a name="aws-properties-cassandra-table-warmthroughput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cassandra-table-warmthroughput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ReadUnitsPerSecond" : Integer,
-  "WriteUnitsPerSecond" : Integer
+  "[ReadUnitsPerSecond](#cfn-cassandra-table-warmthroughput-readunitspersecond)" : {{Integer}},
+  "[WriteUnitsPerSecond](#cfn-cassandra-table-warmthroughput-writeunitspersecond)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cassandra-table-warmthroughput-syntax.yaml"></a>
 
-```yaml
-
-  ReadUnitsPerSecond: Integer
-  WriteUnitsPerSecond: Integer
-
+```
+  [ReadUnitsPerSecond](#cfn-cassandra-table-warmthroughput-readunitspersecond): {{Integer}}
+  [WriteUnitsPerSecond](#cfn-cassandra-table-warmthroughput-writeunitspersecond): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-cassandra-table-warmthroughput-properties"></a>
 
-`ReadUnitsPerSecond`
-
+`ReadUnitsPerSecond`  <a name="cfn-cassandra-table-warmthroughput-readunitspersecond"></a>
 Property description not available.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WriteUnitsPerSecond`
-
+`WriteUnitsPerSecond`  <a name="cfn-cassandra-table-warmthroughput-writeunitspersecond"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetTrackingScalingPolicyConfiguration
-
-AWS::Cassandra::Type
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

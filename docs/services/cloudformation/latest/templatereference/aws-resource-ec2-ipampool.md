@@ -2,323 +2,228 @@
 title: "AWS::EC2::IPAMPool"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::IPAMPool
+<a name="aws-resource-ec2-ipampool"></a>
 
 In IPAM, a pool is a collection of contiguous IP addresses CIDRs. Pools enable you to organize your IP addresses according to your routing and security needs. For example, if you have separate routing and security needs for development and production applications, you can create a pool for each.
 
 ## Syntax
+<a name="aws-resource-ec2-ipampool-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-ipampool-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::IPAMPool",
   "Properties" : {
-      "AddressFamily" : String,
-      "AllocationDefaultNetmaskLength" : Integer,
-      "AllocationMaxNetmaskLength" : Integer,
-      "AllocationMinNetmaskLength" : Integer,
-      "AllocationResourceTags" : [ Tag, ... ],
-      "AutoImport" : Boolean,
-      "AwsService" : String,
-      "Description" : String,
-      "IpamScopeId" : String,
-      "Locale" : String,
-      "ProvisionedCidrs" : [ ProvisionedCidr, ... ],
-      "PublicIpSource" : String,
-      "PubliclyAdvertisable" : Boolean,
-      "SourceIpamPoolId" : String,
-      "SourceResource" : SourceResource,
-      "Tags" : [ Tag, ... ]
+      "[AddressFamily](#cfn-ec2-ipampool-addressfamily)" : {{String}},
+      "[AllocationDefaultNetmaskLength](#cfn-ec2-ipampool-allocationdefaultnetmasklength)" : {{Integer}},
+      "[AllocationMaxNetmaskLength](#cfn-ec2-ipampool-allocationmaxnetmasklength)" : {{Integer}},
+      "[AllocationMinNetmaskLength](#cfn-ec2-ipampool-allocationminnetmasklength)" : {{Integer}},
+      "[AllocationResourceTags](#cfn-ec2-ipampool-allocationresourcetags)" : {{[ Tag, ... ]}},
+      "[AutoImport](#cfn-ec2-ipampool-autoimport)" : {{Boolean}},
+      "[AwsService](#cfn-ec2-ipampool-awsservice)" : {{String}},
+      "[Description](#cfn-ec2-ipampool-description)" : {{String}},
+      "[IpamScopeId](#cfn-ec2-ipampool-ipamscopeid)" : {{String}},
+      "[Locale](#cfn-ec2-ipampool-locale)" : {{String}},
+      "[ProvisionedCidrs](#cfn-ec2-ipampool-provisionedcidrs)" : {{[ ProvisionedCidr, ... ]}},
+      "[PublicIpSource](#cfn-ec2-ipampool-publicipsource)" : {{String}},
+      "[PubliclyAdvertisable](#cfn-ec2-ipampool-publiclyadvertisable)" : {{Boolean}},
+      "[SourceIpamPoolId](#cfn-ec2-ipampool-sourceipampoolid)" : {{String}},
+      "[SourceResource](#cfn-ec2-ipampool-sourceresource)" : {{SourceResource}},
+      "[Tags](#cfn-ec2-ipampool-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-ipampool-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::IPAMPool
 Properties:
-  AddressFamily: String
-  AllocationDefaultNetmaskLength: Integer
-  AllocationMaxNetmaskLength: Integer
-  AllocationMinNetmaskLength: Integer
-  AllocationResourceTags:
-    - Tag
-  AutoImport: Boolean
-  AwsService: String
-  Description: String
-  IpamScopeId: String
-  Locale: String
-  ProvisionedCidrs:
-    - ProvisionedCidr
-  PublicIpSource: String
-  PubliclyAdvertisable: Boolean
-  SourceIpamPoolId: String
-  SourceResource:
-    SourceResource
-  Tags:
-    - Tag
-
+  [AddressFamily](#cfn-ec2-ipampool-addressfamily): {{String}}
+  [AllocationDefaultNetmaskLength](#cfn-ec2-ipampool-allocationdefaultnetmasklength): {{Integer}}
+  [AllocationMaxNetmaskLength](#cfn-ec2-ipampool-allocationmaxnetmasklength): {{Integer}}
+  [AllocationMinNetmaskLength](#cfn-ec2-ipampool-allocationminnetmasklength): {{Integer}}
+  [AllocationResourceTags](#cfn-ec2-ipampool-allocationresourcetags): {{
+    - Tag}}
+  [AutoImport](#cfn-ec2-ipampool-autoimport): {{Boolean}}
+  [AwsService](#cfn-ec2-ipampool-awsservice): {{String}}
+  [Description](#cfn-ec2-ipampool-description): {{String}}
+  [IpamScopeId](#cfn-ec2-ipampool-ipamscopeid): {{String}}
+  [Locale](#cfn-ec2-ipampool-locale): {{String}}
+  [ProvisionedCidrs](#cfn-ec2-ipampool-provisionedcidrs): {{
+    - ProvisionedCidr}}
+  [PublicIpSource](#cfn-ec2-ipampool-publicipsource): {{String}}
+  [PubliclyAdvertisable](#cfn-ec2-ipampool-publiclyadvertisable): {{Boolean}}
+  [SourceIpamPoolId](#cfn-ec2-ipampool-sourceipampoolid): {{String}}
+  [SourceResource](#cfn-ec2-ipampool-sourceresource): {{
+    SourceResource}}
+  [Tags](#cfn-ec2-ipampool-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-ipampool-properties"></a>
 
-`AddressFamily`
-
+`AddressFamily`  <a name="cfn-ec2-ipampool-addressfamily"></a>
 The address family of the pool.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ipv4 | ipv6`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`AllocationDefaultNetmaskLength`  <a name="cfn-ec2-ipampool-allocationdefaultnetmasklength"></a>
+The default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `ipv4 | ipv6`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AllocationDefaultNetmaskLength`
-
-The default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and
-you enter 16 here, new allocations will default to 10.0.0.0/16.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllocationMaxNetmaskLength`
-
+`AllocationMaxNetmaskLength`  <a name="cfn-ec2-ipampool-allocationmaxnetmasklength"></a>
 The maximum netmask length possible for CIDR allocations in this IPAM pool to be compliant. The maximum netmask length must be greater than the minimum netmask length. Possible netmask lengths for IPv4 addresses are 0 - 32. Possible netmask lengths for IPv6 addresses are 0 - 128.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllocationMinNetmaskLength`
-
+`AllocationMinNetmaskLength`  <a name="cfn-ec2-ipampool-allocationminnetmasklength"></a>
 The minimum netmask length required for CIDR allocations in this IPAM pool to be compliant. The minimum netmask length must be less than the maximum netmask length. Possible netmask lengths for IPv4 addresses are 0 - 32. Possible netmask lengths for IPv6 addresses are 0 - 128.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AllocationResourceTags`
-
+`AllocationResourceTags`  <a name="cfn-ec2-ipampool-allocationresourcetags"></a>
 Tags that are required for resources that use CIDRs from this IPAM pool. Resources that do not have these tags will not be allowed to allocate space from the pool. If the resources have their tags changed after they have allocated space or if the allocation tagging requirements are changed on the pool, the resource may be marked as noncompliant.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-ipampool-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-ipampool-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoImport`
-
-If selected, IPAM will continuously look for resources within the CIDR range of this pool
-and automatically import them as allocations into your IPAM. The CIDRs that will be allocated for
-these resources must not already be allocated to other resources in order for the import to succeed. IPAM will import
-a CIDR regardless of its compliance with the pool's allocation rules, so a resource might be imported and subsequently
-marked as noncompliant. If IPAM discovers multiple CIDRs that overlap, IPAM will import the largest CIDR only. If IPAM
-discovers multiple CIDRs with matching CIDRs, IPAM will randomly import one of them only.
-
+`AutoImport`  <a name="cfn-ec2-ipampool-autoimport"></a>
+If selected, IPAM will continuously look for resources within the CIDR range of this pool and automatically import them as allocations into your IPAM. The CIDRs that will be allocated for these resources must not already be allocated to other resources in order for the import to succeed. IPAM will import a CIDR regardless of its compliance with the pool's allocation rules, so a resource might be imported and subsequently marked as noncompliant. If IPAM discovers multiple CIDRs that overlap, IPAM will import the largest CIDR only. If IPAM discovers multiple CIDRs with matching CIDRs, IPAM will randomly import one of them only.
 A locale must be set on the pool for this feature to work.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AwsService`
-
+`AwsService`  <a name="cfn-ec2-ipampool-awsservice"></a>
 Limits which service in AWS that the pool can be used in. "ec2", for example, allows users to use space for Elastic IP addresses and VPCs.
+*Required*: No
+*Type*: String
+*Allowed values*: `ec2 | global-services`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ec2 | global-services`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-ec2-ipampool-description"></a>
 The description of the IPAM pool.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpamScopeId`
-
+`IpamScopeId`  <a name="cfn-ec2-ipampool-ipamscopeid"></a>
 The ID of the scope in which you would like to create the IPAM pool.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Locale`
-
+`Locale`  <a name="cfn-ec2-ipampool-locale"></a>
 The locale of the IPAM pool.
-
 The locale for the pool should be one of the following:
-
-- An AWS Region where you want this IPAM pool to be available for allocations.
-
-- The network border group for an AWS Local Zone where you want this IPAM pool to be available for allocations ( [supported Local Zones](../../../ec2/latest/userguide/ec2-byoip.md#byoip-zone-avail)). This option is only available for IPAM IPv4 pools in the public scope.
-
++ An AWS Region where you want this IPAM pool to be available for allocations.
++ The network border group for an AWS Local Zone where you want this IPAM pool to be available for allocations ([supported Local Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html#byoip-zone-avail)). This option is only available for IPAM IPv4 pools in the public scope.
 If you choose an AWS Region for locale that has not been configured as an operating Region for the IPAM, you'll get an error.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProvisionedCidrs`
-
+`ProvisionedCidrs`  <a name="cfn-ec2-ipampool-provisionedcidrs"></a>
 Information about the CIDRs provisioned to an IPAM pool.
+*Required*: No
+*Type*: Array of [ProvisionedCidr](aws-properties-ec2-ipampool-provisionedcidr.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PublicIpSource`  <a name="cfn-ec2-ipampool-publicipsource"></a>
+The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `BYOIP`. For more information, see [Create IPv6 pools](https://docs.aws.amazon.com//vpc/latest/ipam/intro-create-ipv6-pools.html) in the *Amazon VPC IPAM User Guide*. By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool. For information on increasing the default limit, see [Quotas for your IPAM](https://docs.aws.amazon.com//vpc/latest/ipam/quotas-ipam.html) in the *Amazon VPC IPAM User Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `byoip | amazon`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Array of [ProvisionedCidr](aws-properties-ec2-ipampool-provisionedcidr.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PublicIpSource`
-
-The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `BYOIP`. For more information, see [Create IPv6 pools](../../../vpc/latest/ipam/intro-create-ipv6-pools.md) in the _Amazon VPC IPAM User Guide_.
-By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool. For information on increasing the default limit, see [Quotas for your IPAM](../../../vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `byoip | amazon`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PubliclyAdvertisable`
-
+`PubliclyAdvertisable`  <a name="cfn-ec2-ipampool-publiclyadvertisable"></a>
 Determines if a pool is publicly advertisable. This option is not available for pools with AddressFamily set to `ipv4`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceIpamPoolId`
-
+`SourceIpamPoolId`  <a name="cfn-ec2-ipampool-sourceipampoolid"></a>
 The ID of the source IPAM pool. You can use this option to create an IPAM pool within an existing source pool.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceResource`
-
+`SourceResource`  <a name="cfn-ec2-ipampool-sourceresource"></a>
 The resource used to provision CIDRs to a resource planning pool.
+*Required*: No
+*Type*: [SourceResource](aws-properties-ec2-ipampool-sourceresource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [SourceResource](aws-properties-ec2-ipampool-sourceresource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value.
-For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-ipampool-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-ec2-ipampool-tags"></a>
+The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-ipampool-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-ipampool-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-ipampool-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the IPAM pool ID.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-ipampool-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ec2-ipampool-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the IPAM pool.
 
-`IpamArn`
-
+`IpamArn`  <a name="IpamArn-fn::getatt"></a>
 The ARN of the IPAM.
 
-`IpamPoolId`
-
+`IpamPoolId`  <a name="IpamPoolId-fn::getatt"></a>
 The ID of the IPAM pool.
 
-`IpamScopeArn`
-
+`IpamScopeArn`  <a name="IpamScopeArn-fn::getatt"></a>
 The ARN of the scope of the IPAM pool.
 
-`IpamScopeType`
-
+`IpamScopeType`  <a name="IpamScopeType-fn::getatt"></a>
 The scope of the IPAM.
 
-`PoolDepth`
-
+`PoolDepth`  <a name="PoolDepth-fn::getatt"></a>
 The depth of pools in your IPAM pool. The pool depth quota is 10.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the IPAM pool.
 
-`StateMessage`
-
+`StateMessage`  <a name="StateMessage-fn::getatt"></a>
 A message related to the failed creation of an IPAM pool.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::IPAMAllocation
-
-ProvisionedCidr
 
 All content copied from https://docs.aws.amazon.com/.

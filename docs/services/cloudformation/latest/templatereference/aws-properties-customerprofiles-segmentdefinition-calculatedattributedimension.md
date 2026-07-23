@@ -2,84 +2,62 @@
 title: "AWS::CustomerProfiles::SegmentDefinition CalculatedAttributeDimension"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition CalculatedAttributeDimension
+<a name="aws-properties-customerprofiles-segmentdefinition-calculatedattributedimension"></a>
 
 Object that segments on Customer Profile's Calculated Attributes.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-calculatedattributedimension-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-calculatedattributedimension-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionOverrides" : ConditionOverrides,
-  "DimensionType" : String,
-  "Values" : [ String, ... ]
+  "[ConditionOverrides](#cfn-customerprofiles-segmentdefinition-calculatedattributedimension-conditionoverrides)" : {{ConditionOverrides}},
+  "[DimensionType](#cfn-customerprofiles-segmentdefinition-calculatedattributedimension-dimensiontype)" : {{String}},
+  "[Values](#cfn-customerprofiles-segmentdefinition-calculatedattributedimension-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-calculatedattributedimension-syntax.yaml"></a>
 
-```yaml
-
-  ConditionOverrides:
-    ConditionOverrides
-  DimensionType: String
-  Values:
-    - String
-
+```
+  [ConditionOverrides](#cfn-customerprofiles-segmentdefinition-calculatedattributedimension-conditionoverrides): {{
+    ConditionOverrides}}
+  [DimensionType](#cfn-customerprofiles-segmentdefinition-calculatedattributedimension-dimensiontype): {{String}}
+  [Values](#cfn-customerprofiles-segmentdefinition-calculatedattributedimension-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-calculatedattributedimension-properties"></a>
 
-`ConditionOverrides`
-
+`ConditionOverrides`  <a name="cfn-customerprofiles-segmentdefinition-calculatedattributedimension-conditionoverrides"></a>
 Applies the given condition over the initial Calculated Attribute's definition.
+*Required*: No
+*Type*: [ConditionOverrides](aws-properties-customerprofiles-segmentdefinition-conditionoverrides.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ConditionOverrides](aws-properties-customerprofiles-segmentdefinition-conditionoverrides.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DimensionType`
-
+`DimensionType`  <a name="cfn-customerprofiles-segmentdefinition-calculatedattributedimension-dimensiontype"></a>
 The action to segment with.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH | BEFORE | AFTER | BETWEEN | NOT_BETWEEN | ON | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH | BEFORE | AFTER | BETWEEN | NOT_BETWEEN | ON | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Values`
-
+`Values`  <a name="cfn-customerprofiles-segmentdefinition-calculatedattributedimension-values"></a>
 The values to apply the DimensionType with.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `255 | 50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttributeDimension
-
-ConditionOverrides
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `255 | 50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

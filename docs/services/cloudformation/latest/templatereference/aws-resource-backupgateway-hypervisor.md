@@ -2,192 +2,138 @@
 title: "AWS::BackupGateway::Hypervisor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BackupGateway::Hypervisor
+<a name="aws-resource-backupgateway-hypervisor"></a>
 
 Represents the hypervisor's permissions to which the gateway will connect.
 
-A hypervisor is hardware, software, or firmware that creates and manages virtual machines,
-and allocates resources to them.
+A hypervisor is hardware, software, or firmware that creates and manages virtual machines, and allocates resources to them.
 
 ## Syntax
+<a name="aws-resource-backupgateway-hypervisor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-backupgateway-hypervisor-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BackupGateway::Hypervisor",
   "Properties" : {
-      "Host" : String,
-      "KmsKeyArn" : String,
-      "LogGroupArn" : String,
-      "Name" : String,
-      "Password" : String,
-      "Tags" : [ Tag, ... ],
-      "Username" : String
+      "[Host](#cfn-backupgateway-hypervisor-host)" : {{String}},
+      "[KmsKeyArn](#cfn-backupgateway-hypervisor-kmskeyarn)" : {{String}},
+      "[LogGroupArn](#cfn-backupgateway-hypervisor-loggrouparn)" : {{String}},
+      "[Name](#cfn-backupgateway-hypervisor-name)" : {{String}},
+      "[Password](#cfn-backupgateway-hypervisor-password)" : {{String}},
+      "[Tags](#cfn-backupgateway-hypervisor-tags)" : {{[ Tag, ... ]}},
+      "[Username](#cfn-backupgateway-hypervisor-username)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-backupgateway-hypervisor-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BackupGateway::Hypervisor
 Properties:
-  Host: String
-  KmsKeyArn: String
-  LogGroupArn: String
-  Name: String
-  Password: String
-  Tags:
-    - Tag
-  Username: String
-
+  [Host](#cfn-backupgateway-hypervisor-host): {{String}}
+  [KmsKeyArn](#cfn-backupgateway-hypervisor-kmskeyarn): {{String}}
+  [LogGroupArn](#cfn-backupgateway-hypervisor-loggrouparn): {{String}}
+  [Name](#cfn-backupgateway-hypervisor-name): {{String}}
+  [Password](#cfn-backupgateway-hypervisor-password): {{String}}
+  [Tags](#cfn-backupgateway-hypervisor-tags): {{
+    - Tag}}
+  [Username](#cfn-backupgateway-hypervisor-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-backupgateway-hypervisor-properties"></a>
 
-`Host`
+`Host`  <a name="cfn-backupgateway-hypervisor-host"></a>
+The server host of the hypervisor. This can be either an IP address or a fully-qualified domain name (FQDN).
+*Required*: No
+*Type*: String
+*Pattern*: `^.+$`
+*Minimum*: `3`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The server host of the hypervisor. This can be either an IP address or a fully-qualified
-domain name (FQDN).
+`KmsKeyArn`  <a name="cfn-backupgateway-hypervisor-kmskeyarn"></a>
+The Amazon Resource Name (ARN) of the AWS Key Management Service used to encrypt the hypervisor.
+*Required*: No
+*Type*: String
+*Pattern*: `^(^arn:(aws|aws-cn|aws-us-gov):kms:([a-zA-Z0-9-]+):([0-9]+):(key|alias)/(\S+)$)|(^alias/(\S+)$)$`
+*Minimum*: `50`
+*Maximum*: `500`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`LogGroupArn`  <a name="cfn-backupgateway-hypervisor-loggrouparn"></a>
+The Amazon Resource Name (ARN) of the group of gateways within the requested log.
+*Required*: No
+*Type*: String
+*Pattern*: `^$|^arn:(aws|aws-cn|aws-us-gov):logs:([a-zA-Z0-9-]+):([0-9]+):log-group:[a-zA-Z0-9_\-\/\.]+:\*$`
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^.+$`
-
-_Minimum_: `3`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyArn`
-
-The Amazon Resource Name (ARN) of the AWS Key Management Service used to encrypt the
-hypervisor.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(^arn:(aws|aws-cn|aws-us-gov):kms:([a-zA-Z0-9-]+):([0-9]+):(key|alias)/(\S+)$)|(^alias/(\S+)$)$`
-
-_Minimum_: `50`
-
-_Maximum_: `500`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogGroupArn`
-
-The Amazon Resource Name (ARN) of the group of gateways within
-the requested log.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^$|^arn:(aws|aws-cn|aws-us-gov):logs:([a-zA-Z0-9-]+):([0-9]+):log-group:[a-zA-Z0-9_\-\/\.]+:\*$`
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-backupgateway-hypervisor-name"></a>
 The name of the hypervisor.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Password`
-
+`Password`  <a name="cfn-backupgateway-hypervisor-password"></a>
 The password for the hypervisor.
+*Required*: No
+*Type*: String
+*Pattern*: `^[ -~]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[ -~]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-backupgateway-hypervisor-tags"></a>
 The tags of the hypervisor configuration to import.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-backupgateway-hypervisor-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-backupgateway-hypervisor-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Username`
-
+`Username`  <a name="cfn-backupgateway-hypervisor-username"></a>
 The username for the hypervisor.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[ -\.0-\[\]-~]*[!-\.0-\[\]-~][ -\.0-\[\]-~]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `^[ -\.0-\[\]-~]*[!-\.0-\[\]-~][ -\.0-\[\]-~]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-backupgateway-hypervisor-return-values"></a>
 
 ### Ref
+<a name="aws-resource-backupgateway-hypervisor-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `HypervisorArn`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`HypervisorArn`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-backupgateway-hypervisor-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`HypervisorArn`
+####
+<a name="aws-resource-backupgateway-hypervisor-return-values-fn--getatt-fn--getatt"></a>
 
-Returns `HypervisorArn`, an Amazon Resource Name (ARN) that uniquely identifies a
-Hypervisor. For example:
-`arn:aws:backup-gateway:us-east-1:123456789012:hypervisor/hype-1234D67D`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Backup gateway
-
-Tag
+`HypervisorArn`  <a name="HypervisorArn-fn::getatt"></a>
+Returns `HypervisorArn`, an Amazon Resource Name (ARN) that uniquely identifies a Hypervisor. For example: `arn:aws:backup-gateway:us-east-1:123456789012:hypervisor/hype-1234D67D`
 
 All content copied from https://docs.aws.amazon.com/.

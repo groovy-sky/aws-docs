@@ -2,79 +2,53 @@
 title: "AWS::Athena::WorkGroup EngineVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Athena::WorkGroup EngineVersion
+<a name="aws-properties-athena-workgroup-engineversion"></a>
 
-The Athena engine version for running queries, or the PySpark engine
-version for running sessions.
+The Athena engine version for running queries, or the PySpark engine version for running sessions.
 
 ## Syntax
+<a name="aws-properties-athena-workgroup-engineversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-athena-workgroup-engineversion-syntax.json"></a>
 
-```json
-
+```
 {
-  "EffectiveEngineVersion" : String,
-  "SelectedEngineVersion" : String
+  "[EffectiveEngineVersion](#cfn-athena-workgroup-engineversion-effectiveengineversion)" : {{String}},
+  "[SelectedEngineVersion](#cfn-athena-workgroup-engineversion-selectedengineversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-athena-workgroup-engineversion-syntax.yaml"></a>
 
-```yaml
-
-  EffectiveEngineVersion: String
-  SelectedEngineVersion: String
-
+```
+  [EffectiveEngineVersion](#cfn-athena-workgroup-engineversion-effectiveengineversion): {{String}}
+  [SelectedEngineVersion](#cfn-athena-workgroup-engineversion-selectedengineversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-athena-workgroup-engineversion-properties"></a>
 
-`EffectiveEngineVersion`
+`EffectiveEngineVersion`  <a name="cfn-athena-workgroup-engineversion-effectiveengineversion"></a>
+Read only. The engine version on which the query runs. If the user requests a valid engine version other than Auto, the effective engine version is the same as the engine version that the user requested. If the user requests Auto, the effective engine version is chosen by Athena. When a request to update the engine version is made by a `CreateWorkGroup` or `UpdateWorkGroup` operation, the `EffectiveEngineVersion` field is ignored.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Read only. The engine version on which the query runs. If the user requests a valid
-engine version other than Auto, the effective engine version is the same as the engine
-version that the user requested. If the user requests Auto, the effective engine version
-is chosen by Athena. When a request to update the engine version is made by
-a `CreateWorkGroup` or `UpdateWorkGroup` operation, the
-`EffectiveEngineVersion` field is ignored.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedEngineVersion`
-
-The engine version requested by the user. Possible values are determined by the output
-of `ListEngineVersions`, including AUTO. The default is AUTO.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EngineConfiguration
-
-ManagedLoggingConfiguration
+`SelectedEngineVersion`  <a name="cfn-athena-workgroup-engineversion-selectedengineversion"></a>
+The engine version requested by the user. Possible values are determined by the output of `ListEngineVersions`, including AUTO. The default is AUTO.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

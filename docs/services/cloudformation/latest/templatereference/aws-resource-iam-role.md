@@ -2,300 +2,189 @@
 title: "AWS::IAM::Role"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::Role
+<a name="aws-resource-iam-role"></a>
 
 Creates a new role for your AWS account.
 
-For more information about roles, see [IAM roles](../../../iam/latest/userguide/id-roles.md) in the
-_IAM User Guide_. For information about quotas for role names
-and the number of roles you can create, see [IAM and AWS STS quotas](../../../iam/latest/userguide/reference-iam-quotas.md) in the
-_IAM User Guide_.
+ For more information about roles, see [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) in the *IAM User Guide*. For information about quotas for role names and the number of roles you can create, see [IAM and AWS STS quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html) in the *IAM User Guide*.
 
 ## Syntax
+<a name="aws-resource-iam-role-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iam-role-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IAM::Role",
   "Properties" : {
-      "AssumeRolePolicyDocument" : Json,
-      "Description" : String,
-      "ManagedPolicyArns" : [ String, ... ],
-      "MaxSessionDuration" : Integer,
-      "Path" : String,
-      "PermissionsBoundary" : String,
-      "Policies" : [ Policy, ... ],
-      "RoleName" : String,
-      "Tags" : [ Tag, ... ]
+      "[AssumeRolePolicyDocument](#cfn-iam-role-assumerolepolicydocument)" : {{Json}},
+      "[Description](#cfn-iam-role-description)" : {{String}},
+      "[ManagedPolicyArns](#cfn-iam-role-managedpolicyarns)" : {{[ String, ... ]}},
+      "[MaxSessionDuration](#cfn-iam-role-maxsessionduration)" : {{Integer}},
+      "[Path](#cfn-iam-role-path)" : {{String}},
+      "[PermissionsBoundary](#cfn-iam-role-permissionsboundary)" : {{String}},
+      "[Policies](#cfn-iam-role-policies)" : {{[ Policy, ... ]}},
+      "[RoleName](#cfn-iam-role-rolename)" : {{String}},
+      "[Tags](#cfn-iam-role-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iam-role-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IAM::Role
 Properties:
-  AssumeRolePolicyDocument: Json
-  Description: String
-  ManagedPolicyArns:
-    - String
-  MaxSessionDuration: Integer
-  Path: String
-  PermissionsBoundary: String
-  Policies:
-    - Policy
-  RoleName: String
-  Tags:
-    - Tag
-
+  [AssumeRolePolicyDocument](#cfn-iam-role-assumerolepolicydocument): {{Json}}
+  [Description](#cfn-iam-role-description): {{String}}
+  [ManagedPolicyArns](#cfn-iam-role-managedpolicyarns): {{
+    - String}}
+  [MaxSessionDuration](#cfn-iam-role-maxsessionduration): {{Integer}}
+  [Path](#cfn-iam-role-path): {{String}}
+  [PermissionsBoundary](#cfn-iam-role-permissionsboundary): {{String}}
+  [Policies](#cfn-iam-role-policies): {{
+    - Policy}}
+  [RoleName](#cfn-iam-role-rolename): {{String}}
+  [Tags](#cfn-iam-role-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iam-role-properties"></a>
 
-`AssumeRolePolicyDocument`
+`AssumeRolePolicyDocument`  <a name="cfn-iam-role-assumerolepolicydocument"></a>
+The trust policy that is associated with this role. Trust policies define which entities can assume the role. You can associate only one trust policy with a role. For an example of a policy that can be used to assume a role, see [Template Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#aws-resource-iam-role--examples). For more information about the elements that you can use in an IAM policy, see [IAM Policy Elements Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) in the *IAM User Guide*.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The trust policy that is associated with this role. Trust policies define which entities
-can assume the role. You can associate only one trust policy with a role. For an example of
-a policy that can be used to assume a role, see [Template Examples](../userguide/aws-resource-iam-role.md#aws-resource-iam-role--examples). For more information about the elements that you can use in
-an IAM policy, see [IAM Policy Elements Reference](../../../iam/latest/userguide/reference-policies-elements.md) in the _IAM User Guide_.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-iam-role-description"></a>
 A description of the role that you provide.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0009\u000A\u000D\u0020-\u007E\u00A1-\u00FF]*`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ManagedPolicyArns`  <a name="cfn-iam-role-managedpolicyarns"></a>
+A list of Amazon Resource Names (ARNs) of the IAM managed policies that you want to attach to the role.
+For more information about ARNs, see [Amazon Resource Names (ARNs) and AWS Service Namespaces](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`MaxSessionDuration`  <a name="cfn-iam-role-maxsessionduration"></a>
+The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default value of one hour is applied. This setting can have a value from 1 hour to 12 hours.
+Anyone who assumes the role from the AWS CLI or API can use the `DurationSeconds` API parameter or the `duration-seconds`AWS CLI parameter to request a longer session. The `MaxSessionDuration` setting determines the maximum duration that can be requested using the `DurationSeconds` parameter. If users don't specify a value for the `DurationSeconds` parameter, their security credentials are valid for one hour by default. This applies when you use the `AssumeRole*` API operations or the `assume-role*`AWS CLI operations but does not apply when you use those operations to create a console URL. For more information, see [Using IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html) in the *IAM User Guide*.
+*Required*: No
+*Type*: Integer
+*Minimum*: `3600`
+*Maximum*: `43200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `[\u0009\u000A\u000D\u0020-\u007E\u00A1-\u00FF]*`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManagedPolicyArns`
-
-A list of Amazon Resource Names (ARNs) of the IAM managed policies that
-you want to attach to the role.
-
-For more information about ARNs, see [Amazon Resource Names (ARNs) and\
-AWS Service Namespaces](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the _AWS General Reference_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxSessionDuration`
-
-The maximum session duration (in seconds) that you want to set for the specified role.
-If you do not specify a value for this setting, the default value of one hour is
-applied. This setting can have a value from 1 hour to 12 hours.
-
-Anyone who assumes the role from the AWS CLI or API can use the
-`DurationSeconds` API parameter or the `duration-seconds` AWS CLI parameter to request a longer session. The `MaxSessionDuration` setting
-determines the maximum duration that can be requested using the
-`DurationSeconds` parameter. If users don't specify a value for the
-`DurationSeconds` parameter, their security credentials are valid for one
-hour by default. This applies when you use the `AssumeRole*` API operations
-or the `assume-role*` AWS CLI operations but does not apply when you use those
-operations to create a console URL. For more information, see [Using IAM\
-roles](../../../iam/latest/userguide/id-roles-use.md) in the _IAM User Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `3600`
-
-_Maximum_: `43200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Path`
-
-The path to the role. For more information about paths, see [IAM\
-Identifiers](../../../iam/latest/userguide/using-identifiers.md) in the _IAM User Guide_.
-
+`Path`  <a name="cfn-iam-role-path"></a>
+ The path to the role. For more information about paths, see [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) in the *IAM User Guide*.
 This parameter is optional. If it is not included, it defaults to a slash (/).
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of either a forward slash (/) by itself or a string that must begin and end with forward slashes. In addition, it can contain any ASCII character from the \! (`\u0021`) through the DEL character (`\u007F`), including most punctuation characters, digits, and upper and lowercased letters.
+*Required*: No
+*Type*: String
+*Pattern*: `(\u002F)|(\u002F[\u0021-\u007E]+\u002F)`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting
-of either a forward slash (/) by itself or a string that must begin and end with forward slashes.
-In addition, it can contain any ASCII character from the ! ( `\u0021`) through the DEL character ( `\u007F`), including
-most punctuation characters, digits, and upper and lowercased letters.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(\u002F)|(\u002F[\u0021-\u007E]+\u002F)`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PermissionsBoundary`
-
+`PermissionsBoundary`  <a name="cfn-iam-role-permissionsboundary"></a>
 The ARN of the policy used to set the permissions boundary for the role.
+For more information about permissions boundaries, see [Permissions boundaries for IAM identities ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) in the *IAM User Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information about permissions boundaries, see [Permissions boundaries for IAM\
-identities](../../../iam/latest/userguide/access-policies-boundaries.md) in the _IAM User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Policies`
-
+`Policies`  <a name="cfn-iam-role-policies"></a>
 Adds or updates an inline policy document that is embedded in the specified IAM role.
+When you embed an inline policy in a role, the inline policy is used as part of the role's access (permissions) policy. The role's trust policy is created at the same time as the role. You can update a role's trust policy later. For more information about IAM roles, go to [Using Roles to Delegate Permissions and Federate Identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-toplevel.html).
+A role can also have an attached managed policy. For information about policies, see [Managed Policies and Inline Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html) in the *IAM User Guide*.
+For information about limits on the number of inline policies that you can embed with a role, see [Limitations on IAM Entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html) in the *IAM User Guide*.
+If an external policy (such as `AWS::IAM::Policy` or `AWS::IAM::ManagedPolicy`) has a `Ref` to a role and if a resource (such as `AWS::ECS::Service`) also has a `Ref` to the same role, add a `DependsOn` attribute to the resource to make the resource depend on the external policy. This dependency ensures that the role's policy is available throughout the resource's lifecycle. For example, when you delete a stack with an `AWS::ECS::Service` resource, the `DependsOn` attribute ensures that CloudFormation deletes the `AWS::ECS::Service` resource before deleting its role's policy.
+*Required*: No
+*Type*: Array of [Policy](aws-properties-iam-role-policy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-When you embed an inline policy in a role, the inline policy is used as part of the
-role's access (permissions) policy. The role's trust policy is created at the same time as
-the role. You can update a role's trust policy later. For more information about IAM roles, go to [Using Roles to Delegate Permissions and\
-Federate Identities](../../../iam/latest/userguide/roles-toplevel.md).
+`RoleName`  <a name="cfn-iam-role-rolename"></a>
+A name for the IAM role, up to 64 characters in length. For valid values, see the `RoleName` parameter for the [https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) action in the *IAM User Guide*.
+This parameter allows (per its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-. The role name must be unique within the account. Role names are not distinguished by case. For example, you cannot create roles named both "Role1" and "role1".
+If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the role name.
+If you specify a name, you must specify the `CAPABILITY_NAMED_IAM` value to acknowledge your template's capabilities. For more information, see [Acknowledging IAM Resources in CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities).
+Naming an IAM resource can cause an unrecoverable error if you reuse the same template in multiple Regions. To prevent this, we recommend using `Fn::Join` and `AWS::Region` to create a Region-specific name, as in the following example: `{"Fn::Join": ["", [{"Ref": "AWS::Region"}, {"Ref": "MyResourceName"}]]}`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A role can also have an attached managed policy. For information about policies, see
-[Managed Policies and Inline Policies](../../../iam/latest/userguide/policies-managed-vs-inline.md) in the _IAM User Guide_.
-
-For information about limits on the number of inline policies that you can embed with a
-role, see [Limitations on IAM Entities](../../../iam/latest/userguide/limitationsonentities.md) in the _IAM User Guide_.
-
-###### Note
-
-If an external policy (such as `AWS::IAM::Policy` or
-`AWS::IAM::ManagedPolicy`) has a `Ref` to a role and if a
-resource (such as `AWS::ECS::Service`) also has a `Ref` to the
-same role, add a `DependsOn` attribute to the resource to make the resource
-depend on the external policy. This dependency ensures that the role's policy is
-available throughout the resource's lifecycle. For example, when you delete a stack with
-an `AWS::ECS::Service` resource, the `DependsOn` attribute ensures
-that CloudFormation deletes the `AWS::ECS::Service` resource before
-deleting its role's policy.
-
-_Required_: No
-
-_Type_: Array of [Policy](aws-properties-iam-role-policy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleName`
-
-A name for the IAM role, up to 64 characters in length. For valid values,
-see the `RoleName` parameter for the [`CreateRole`](../../../../reference/iam/latest/apireference/api-createrole.md) action in the _IAM User Guide_.
-
-This parameter allows (per its [regex\
-pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-.
-The role name must be unique within the account. Role names are not distinguished by case.
-For example, you cannot create roles named both "Role1" and "role1".
-
-If you don't specify a name, CloudFormation generates a unique physical ID and
-uses that ID for the role name.
-
-If you specify a name, you must specify the `CAPABILITY_NAMED_IAM` value to
-acknowledge your template's capabilities. For more information, see [Acknowledging IAM Resources in CloudFormation\
-Templates](../userguide/using-iam-template.md#using-iam-capabilities).
-
-###### Important
-
-Naming an IAM resource can cause an unrecoverable error if you reuse
-the same template in multiple Regions. To prevent this, we recommend using
-`Fn::Join` and `AWS::Region` to create a Region-specific name,
-as in the following example: `{"Fn::Join": ["", [{"Ref": "AWS::Region"}, {"Ref":
-               "MyResourceName"}]]}`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-A list of tags that are attached to the role. For more information about tagging, see [Tagging IAM resources](../../../iam/latest/userguide/id-tags.md) in the
-_IAM User Guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iam-role-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-iam-role-tags"></a>
+A list of tags that are attached to the role. For more information about tagging, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *IAM User Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iam-role-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iam-role-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iam-role-return-values-ref"></a>
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
 For example:
 
-`{ "Ref": "RootRole" }`
+ `{ "Ref": "RootRole" }`
 
-For the `AWS::IAM::Role` resource with the logical ID `RootRole`,
-`Ref` will return the role name.
+For the `AWS::IAM::Role` resource with the logical ID `RootRole`, `Ref` will return the role name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iam-role-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iam-role-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Returns the Amazon Resource Name (ARN) for the role. For example:
+ `{"Fn::GetAtt" : ["MyRole", "Arn"] }`
+This will return a value such as `arn:aws:iam::1234567890:role/MyRole-AJJHDSKSDF`.
 
-`{"Fn::GetAtt" : ["MyRole", "Arn"] }`
-
-This will return a value such as
-`arn:aws:iam::1234567890:role/MyRole-AJJHDSKSDF`.
-
-`RoleId`
-
-Returns the stable and unique string identifying the role. For example,
-`AWS_ACCESS_KEY_ID_REDACTED`.
-
-For more information about IDs, see [IAM Identifiers](../../../iam/latest/userguide/reference-identifiers.md) in the _IAM User Guide_.
+`RoleId`  <a name="RoleId-fn::getatt"></a>
+Returns the stable and unique string identifying the role. For example, `AWS_ACCESS_KEY_ID_REDACTED`.
+For more information about IDs, see [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html) in the *IAM User Guide*.
 
 ## Examples
+<a name="aws-resource-iam-role--examples"></a>
 
-- [Role with Embedded Policy and Instance Profiles](#aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles)
-
-- [Role with External Policy and Instance Profiles](#aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles)
+**Topics**
++ [Role with Embedded Policy and Instance Profiles](#aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles)
++ [Role with External Policy and Instance Profiles](#aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles)
 
 ### Role with Embedded Policy and Instance Profiles
+<a name="aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles"></a>
 
-This example shows an embedded policy in the `AWS::IAM::Role`. The
-policy is specified inline in the `Policies` property of the
-`AWS::IAM::Role`.
+This example shows an embedded policy in the `AWS::IAM::Role`. The policy is specified inline in the `Policies` property of the `AWS::IAM::Role`.
 
-```language_sc3_fgs_qjb
+####
+<a name="aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles--language_sc3_fgs_qjb"></a>
 
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -352,9 +241,9 @@ policy is specified inline in the `Policies` property of the
 ```
 
 #### YAML
+<a name="aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   RootRole:
@@ -387,15 +276,14 @@ Resources:
 ```
 
 ### Role with External Policy and Instance Profiles
+<a name="aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles"></a>
 
-In this example, the Policy and InstanceProfile resources are specified externally
-to the IAM Role. They refer to the role by specifying its name,
-"RootRole", in their respective `Roles` properties.
+In this example, the Policy and InstanceProfile resources are specified externally to the IAM Role. They refer to the role by specifying its name, "RootRole", in their respective `Roles` properties.
 
 #### JSON
+<a name="aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -446,9 +334,9 @@ to the IAM Role. They refer to the role by specifying its name,
 ```
 
 #### YAML
+<a name="aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   RootRole:
@@ -482,23 +370,13 @@ Resources:
       Path: "/"
       Roles:
         - Ref: "RootRole"
-
 ```
 
 ## See also
-
-- To view `AWS::IAM::User` template example snippets, see [IAM role template examples](../userguide/quickref-iam.md#scenarios-iamroles).
-
-- [AWS Identity and Access Management Template Snippets](../userguide/quickref-iam.md)
-
-- [CreateRole](../../../../reference/iam/latest/apireference/api-createrole.md) in the _AWS Identity and Access Management API Reference_
-
-- [AWS::IAM::InstanceProfile](../userguide/aws-resource-iam-instanceprofile.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IAM::Policy
-
-Policy
+<a name="aws-resource-iam-role--seealso"></a>
++ To view `AWS::IAM::User` template example snippets, see [IAM role template examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenarios-iamroles).
++  [AWS Identity and Access Management Template Snippets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html)
++ [CreateRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) in the *AWS Identity and Access Management API Reference*
++  [AWS::IAM::InstanceProfile](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html)
 
 All content copied from https://docs.aws.amazon.com/.

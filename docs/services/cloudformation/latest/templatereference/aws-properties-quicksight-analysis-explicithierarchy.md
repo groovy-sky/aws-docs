@@ -2,90 +2,65 @@
 title: "AWS::QuickSight::Analysis ExplicitHierarchy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ExplicitHierarchy
+<a name="aws-properties-quicksight-analysis-explicithierarchy"></a>
 
 The option that determines the hierarchy of the fields that are built within a visual's field wells. These fields can't be duplicated to other visuals.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-explicithierarchy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-explicithierarchy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Columns" : [ ColumnIdentifier, ... ],
-  "DrillDownFilters" : [ DrillDownFilter, ... ],
-  "HierarchyId" : String
+  "[Columns](#cfn-quicksight-analysis-explicithierarchy-columns)" : {{[ ColumnIdentifier, ... ]}},
+  "[DrillDownFilters](#cfn-quicksight-analysis-explicithierarchy-drilldownfilters)" : {{[ DrillDownFilter, ... ]}},
+  "[HierarchyId](#cfn-quicksight-analysis-explicithierarchy-hierarchyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-explicithierarchy-syntax.yaml"></a>
 
-```yaml
-
-  Columns:
-    - ColumnIdentifier
-  DrillDownFilters:
-    - DrillDownFilter
-  HierarchyId: String
-
+```
+  [Columns](#cfn-quicksight-analysis-explicithierarchy-columns): {{
+    - ColumnIdentifier}}
+  [DrillDownFilters](#cfn-quicksight-analysis-explicithierarchy-drilldownfilters): {{
+    - DrillDownFilter}}
+  [HierarchyId](#cfn-quicksight-analysis-explicithierarchy-hierarchyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-explicithierarchy-properties"></a>
 
-`Columns`
-
+`Columns`  <a name="cfn-quicksight-analysis-explicithierarchy-columns"></a>
 The list of columns that define the explicit hierarchy.
+*Required*: Yes
+*Type*: Array of [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Minimum*: `2`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Minimum_: `2`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DrillDownFilters`
-
+`DrillDownFilters`  <a name="cfn-quicksight-analysis-explicithierarchy-drilldownfilters"></a>
 The option that determines the drill down filters for the explicit hierarchy.
+*Required*: No
+*Type*: Array of [DrillDownFilter](aws-properties-quicksight-analysis-drilldownfilter.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DrillDownFilter](aws-properties-quicksight-analysis-drilldownfilter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HierarchyId`
-
+`HierarchyId`  <a name="cfn-quicksight-analysis-explicithierarchy-hierarchyid"></a>
 The hierarchy ID of the explicit hierarchy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExcludePeriodConfiguration
-
-FieldBasedTooltip
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,51 @@
 title: "AWS::APS::Scraper ScraperComponent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Scraper ScraperComponent
+<a name="aws-properties-aps-scraper-scrapercomponent"></a>
 
-A component of a Amazon Managed Service for Prometheus scraper that can be configured for
-logging.
+A component of a Amazon Managed Service for Prometheus scraper that can be configured for logging.
 
 ## Syntax
+<a name="aws-properties-aps-scraper-scrapercomponent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-aps-scraper-scrapercomponent-syntax.json"></a>
 
-```json
-
+```
 {
-  "Config" : ComponentConfig,
-  "Type" : String
+  "[Config](#cfn-aps-scraper-scrapercomponent-config)" : {{ComponentConfig}},
+  "[Type](#cfn-aps-scraper-scrapercomponent-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-aps-scraper-scrapercomponent-syntax.yaml"></a>
 
-```yaml
-
-  Config:
-    ComponentConfig
-  Type: String
-
+```
+  [Config](#cfn-aps-scraper-scrapercomponent-config): {{
+    ComponentConfig}}
+  [Type](#cfn-aps-scraper-scrapercomponent-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-aps-scraper-scrapercomponent-properties"></a>
 
-`Config`
-
+`Config`  <a name="cfn-aps-scraper-scrapercomponent-config"></a>
 The configuration settings for the scraper component.
+*Required*: No
+*Type*: [ComponentConfig](aws-properties-aps-scraper-componentconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ComponentConfig](aws-properties-aps-scraper-componentconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-aps-scraper-scrapercomponent-type"></a>
 The type of the scraper component.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SERVICE_DISCOVERY | COLLECTOR | EXPORTER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScrapeConfiguration
-
-ScraperLoggingConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SERVICE_DISCOVERY | COLLECTOR | EXPORTER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

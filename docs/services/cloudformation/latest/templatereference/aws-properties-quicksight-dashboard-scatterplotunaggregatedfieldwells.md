@@ -2,129 +2,90 @@
 title: "AWS::QuickSight::Dashboard ScatterPlotUnaggregatedFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ScatterPlotUnaggregatedFieldWells
+<a name="aws-properties-quicksight-dashboard-scatterplotunaggregatedfieldwells"></a>
 
 The unaggregated field wells of a scatter plot.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-scatterplotunaggregatedfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-scatterplotunaggregatedfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : [ DimensionField, ... ],
-  "Label" : [ DimensionField, ... ],
-  "Size" : [ MeasureField, ... ],
-  "XAxis" : [ DimensionField, ... ],
-  "YAxis" : [ DimensionField, ... ]
+  "[Category](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
+  "[Label](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-label)" : {{[ DimensionField, ... ]}},
+  "[Size](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-size)" : {{[ MeasureField, ... ]}},
+  "[XAxis](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-xaxis)" : {{[ DimensionField, ... ]}},
+  "[YAxis](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-yaxis)" : {{[ DimensionField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-scatterplotunaggregatedfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  Category:
-    - DimensionField
-  Label:
-    - DimensionField
-  Size:
-    - MeasureField
-  XAxis:
-    - DimensionField
-  YAxis:
-    - DimensionField
-
+```
+  [Category](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-category): {{
+    - DimensionField}}
+  [Label](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-label): {{
+    - DimensionField}}
+  [Size](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-size): {{
+    - MeasureField}}
+  [XAxis](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-xaxis): {{
+    - DimensionField}}
+  [YAxis](#cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-yaxis): {{
+    - DimensionField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-scatterplotunaggregatedfieldwells-properties"></a>
 
-`Category`
-
+`Category`  <a name="cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-category"></a>
 The category field well of a scatter plot.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Label`
-
+`Label`  <a name="cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-label"></a>
 The label field well of a scatter plot.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Size`
-
+`Size`  <a name="cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-size"></a>
 The size field well of a scatter plot.
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-dashboard-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`XAxis`
-
+`XAxis`  <a name="cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-xaxis"></a>
 The x-axis field well of a scatter plot.
-
 The x-axis is a dimension field and cannot be aggregated.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`YAxis`
-
+`YAxis`  <a name="cfn-quicksight-dashboard-scatterplotunaggregatedfieldwells-yaxis"></a>
 The y-axis field well of a scatter plot.
-
 The y-axis is a dimension field and cannot be aggregated.
-
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScatterPlotSortConfiguration
-
-ScatterPlotVisual
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-dashboard-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

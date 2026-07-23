@@ -2,143 +2,88 @@
 title: "AWS::Backup::RestoreTestingPlan RestoreTestingRecoveryPointSelection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::RestoreTestingPlan RestoreTestingRecoveryPointSelection
+<a name="aws-properties-backup-restoretestingplan-restoretestingrecoverypointselection"></a>
 
-`RecoveryPointSelection` has five parameters (three required and two
-optional). The values you specify determine which recovery point is included in the restore
-test. You must indicate with `Algorithm` if you want the latest recovery point
-within your `SelectionWindowDays` or if you want a random recovery point, and
-you must indicate through `IncludeVaults` from which vaults the recovery points
-can be chosen.
+`RecoveryPointSelection` has five parameters (three required and two optional). The values you specify determine which recovery point is included in the restore test. You must indicate with `Algorithm` if you want the latest recovery point within your `SelectionWindowDays` or if you want a random recovery point, and you must indicate through `IncludeVaults` from which vaults the recovery points can be chosen.
 
-`Algorithm` ( _required_) Valid values:
-" `LATEST_WITHIN_WINDOW`" or " `RANDOM_WITHIN_WINDOW`".
+`Algorithm` (*required*) Valid values: "`LATEST_WITHIN_WINDOW`" or "`RANDOM_WITHIN_WINDOW`".
 
-`Recovery point types` ( _required_) Valid values:
-" `SNAPSHOT`" and/or " `CONTINUOUS`". Include `SNAPSHOT`
-to restore only snapshot recovery points; include `CONTINUOUS` to restore
-continuous recovery points (point in time restore / PITR); use both to restore either a
-snapshot or a continuous recovery point. The recovery point will be determined by the value
-for `Algorithm`.
+`Recovery point types` (*required*) Valid values: "`SNAPSHOT`" and/or "`CONTINUOUS`". Include `SNAPSHOT` to restore only snapshot recovery points; include `CONTINUOUS` to restore continuous recovery points (point in time restore / PITR); use both to restore either a snapshot or a continuous recovery point. The recovery point will be determined by the value for `Algorithm`.
 
-`IncludeVaults` ( _required_). You must include one or more
-backup vaults. Use the wildcard \["\*"\] or specific ARNs.
+`IncludeVaults` (*required*). You must include one or more backup vaults. Use the wildcard ["\*"] or specific ARNs.
 
-`SelectionWindowDays` ( _optional_) Value must be an
-integer (in days) from 1 to 365. If not included, the value defaults to
-`30`.
+`SelectionWindowDays` (*optional*) Value must be an integer (in days) from 1 to 365. If not included, the value defaults to `30`.
 
-`ExcludeVaults` ( _optional_). You can choose to input one
-or more specific backup vault ARNs to exclude those vaults' contents from restore
-eligibility. Or, you can include a list of selectors. If this parameter and its value are
-not included, it defaults to empty list.
+`ExcludeVaults` (*optional*). You can choose to input one or more specific backup vault ARNs to exclude those vaults' contents from restore eligibility. Or, you can include a list of selectors. If this parameter and its value are not included, it defaults to empty list.
 
 ## Syntax
+<a name="aws-properties-backup-restoretestingplan-restoretestingrecoverypointselection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-restoretestingplan-restoretestingrecoverypointselection-syntax.json"></a>
 
-```json
-
+```
 {
-  "Algorithm" : String,
-  "ExcludeVaults" : [ String, ... ],
-  "IncludeVaults" : [ String, ... ],
-  "RecoveryPointTypes" : [ String, ... ],
-  "SelectionWindowDays" : Integer
+  "[Algorithm](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-algorithm)" : {{String}},
+  "[ExcludeVaults](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-excludevaults)" : {{[ String, ... ]}},
+  "[IncludeVaults](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-includevaults)" : {{[ String, ... ]}},
+  "[RecoveryPointTypes](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-recoverypointtypes)" : {{[ String, ... ]}},
+  "[SelectionWindowDays](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-selectionwindowdays)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-restoretestingplan-restoretestingrecoverypointselection-syntax.yaml"></a>
 
-```yaml
-
-  Algorithm: String
-  ExcludeVaults:
-    - String
-  IncludeVaults:
-    - String
-  RecoveryPointTypes:
-    - String
-  SelectionWindowDays: Integer
-
+```
+  [Algorithm](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-algorithm): {{String}}
+  [ExcludeVaults](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-excludevaults): {{
+    - String}}
+  [IncludeVaults](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-includevaults): {{
+    - String}}
+  [RecoveryPointTypes](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-recoverypointtypes): {{
+    - String}}
+  [SelectionWindowDays](#cfn-backup-restoretestingplan-restoretestingrecoverypointselection-selectionwindowdays): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-restoretestingplan-restoretestingrecoverypointselection-properties"></a>
 
-`Algorithm`
+`Algorithm`  <a name="cfn-backup-restoretestingplan-restoretestingrecoverypointselection-algorithm"></a>
+Acceptable values include "LATEST\_WITHIN\_WINDOW" or "RANDOM\_WITHIN\_WINDOW"
+*Required*: Yes
+*Type*: String
+*Allowed values*: `LATEST_WITHIN_WINDOW | RANDOM_WITHIN_WINDOW`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Acceptable values include "LATEST\_WITHIN\_WINDOW" or
-"RANDOM\_WITHIN\_WINDOW"
+`ExcludeVaults`  <a name="cfn-backup-restoretestingplan-restoretestingrecoverypointselection-excludevaults"></a>
+Accepted values include specific ARNs or list of selectors. Defaults to empty list if not listed.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IncludeVaults`  <a name="cfn-backup-restoretestingplan-restoretestingrecoverypointselection-includevaults"></a>
+Accepted values include wildcard ["\*"] or by specific ARNs or ARN wilcard replacement ["arn:aws:backup:us-west-2:123456789012:backup-vault:asdf", ...] ["arn:aws:backup:\*:\*:backup-vault:asdf-\*", ...]
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `LATEST_WITHIN_WINDOW | RANDOM_WITHIN_WINDOW`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludeVaults`
-
-Accepted values include specific ARNs or list of selectors.
-Defaults to empty list if not listed.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeVaults`
-
-Accepted values include wildcard \["\*"\] or by specific ARNs or
-ARN wilcard replacement
-\["arn:aws:backup:us-west-2:123456789012:backup-vault:asdf", ...\]
-\["arn:aws:backup:\*:\*:backup-vault:asdf-\*", ...\]
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecoveryPointTypes`
-
+`RecoveryPointTypes`  <a name="cfn-backup-restoretestingplan-restoretestingrecoverypointselection-recoverypointtypes"></a>
 These are the types of recovery points.
+Include `SNAPSHOT` to restore only snapshot recovery points; include `CONTINUOUS` to restore continuous recovery points (point in time restore / PITR); use both to restore either a snapshot or a continuous recovery point. The recovery point will be determined by the value for `Algorithm`.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Include `SNAPSHOT`
-to restore only snapshot recovery points; include `CONTINUOUS` to restore
-continuous recovery points (point in time restore / PITR); use both to restore either a
-snapshot or a continuous recovery point. The recovery point will be determined by the value
-for `Algorithm`.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectionWindowDays`
-
+`SelectionWindowDays`  <a name="cfn-backup-restoretestingplan-restoretestingrecoverypointselection-selectionwindowdays"></a>
 Accepted values are integers from 1 to 365.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Backup::RestoreTestingPlan
-
-Tag
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

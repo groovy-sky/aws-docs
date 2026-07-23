@@ -2,93 +2,63 @@
 title: "AWS::CleanRooms::ConfiguredTable AggregationConstraint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable AggregationConstraint
+<a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint"></a>
 
-Constraint on query output removing output rows that do not meet a minimum number of
-distinct values of a specified column.
+Constraint on query output removing output rows that do not meet a minimum number of distinct values of a specified column.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnName" : String,
-  "Minimum" : Number,
-  "Type" : String
+  "[ColumnName](#cfn-cleanrooms-configuredtable-aggregationconstraint-columnname)" : {{String}},
+  "[Minimum](#cfn-cleanrooms-configuredtable-aggregationconstraint-minimum)" : {{Number}},
+  "[Type](#cfn-cleanrooms-configuredtable-aggregationconstraint-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint-syntax.yaml"></a>
 
-```yaml
-
-  ColumnName: String
-  Minimum: Number
-  Type: String
-
+```
+  [ColumnName](#cfn-cleanrooms-configuredtable-aggregationconstraint-columnname): {{String}}
+  [Minimum](#cfn-cleanrooms-configuredtable-aggregationconstraint-minimum): {{Number}}
+  [Type](#cfn-cleanrooms-configuredtable-aggregationconstraint-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint-properties"></a>
 
-`ColumnName`
+`ColumnName`  <a name="cfn-cleanrooms-configuredtable-aggregationconstraint-columnname"></a>
+Column in aggregation constraint for which there must be a minimum number of distinct values in an output row for it to be in the query output.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9_](([a-z0-9_ ]+-)*([a-z0-9_ ]+))?$`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Column in aggregation constraint for which there must be a minimum number of distinct
-values in an output row for it to be in the query output.
+`Minimum`  <a name="cfn-cleanrooms-configuredtable-aggregationconstraint-minimum"></a>
+The minimum number of distinct values that an output row must be an aggregation of. Minimum threshold of distinct values for a specified column that must exist in an output row for it to be in the query output.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `2`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9_](([a-z0-9_ ]+-)*([a-z0-9_ ]+))?$`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Minimum`
-
-The minimum number of distinct values that an output row must be an aggregation of.
-Minimum threshold of distinct values for a specified column that must exist in an output
-row for it to be in the query output.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `2`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of aggregation the constraint allows. The only valid value is currently
-\`COUNT\_DISTINCT\`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `COUNT_DISTINCT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AggregateColumn
-
-AnalysisRule
+`Type`  <a name="cfn-cleanrooms-configuredtable-aggregationconstraint-type"></a>
+The type of aggregation the constraint allows. The only valid value is currently `COUNT\_DISTINCT`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `COUNT_DISTINCT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

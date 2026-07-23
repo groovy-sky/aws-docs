@@ -2,84 +2,61 @@
 title: "AWS::Bedrock::Agent AgentKnowledgeBase"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent AgentKnowledgeBase
+<a name="aws-properties-bedrock-agent-agentknowledgebase"></a>
 
 Contains details about a knowledge base that is associated with an agent.
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-agentknowledgebase-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-agentknowledgebase-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "KnowledgeBaseId" : String,
-  "KnowledgeBaseState" : String
+  "[Description](#cfn-bedrock-agent-agentknowledgebase-description)" : {{String}},
+  "[KnowledgeBaseId](#cfn-bedrock-agent-agentknowledgebase-knowledgebaseid)" : {{String}},
+  "[KnowledgeBaseState](#cfn-bedrock-agent-agentknowledgebase-knowledgebasestate)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-agentknowledgebase-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  KnowledgeBaseId: String
-  KnowledgeBaseState: String
-
+```
+  [Description](#cfn-bedrock-agent-agentknowledgebase-description): {{String}}
+  [KnowledgeBaseId](#cfn-bedrock-agent-agentknowledgebase-knowledgebaseid): {{String}}
+  [KnowledgeBaseState](#cfn-bedrock-agent-agentknowledgebase-knowledgebasestate): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-agentknowledgebase-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrock-agent-agentknowledgebase-description"></a>
 The description of the association between the agent and the knowledge base.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KnowledgeBaseId`
-
+`KnowledgeBaseId`  <a name="cfn-bedrock-agent-agentknowledgebase-knowledgebaseid"></a>
 The unique identifier of the association between the agent and the knowledge base.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z]{10}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z]{10}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KnowledgeBaseState`
-
-Specifies whether to use the knowledge base or not when sending an [InvokeAgent](../../../../reference/bedrock/latest/apireference/api-agent-runtime-invokeagent.md) request.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AgentDescriptor
-
-APISchema
+`KnowledgeBaseState`  <a name="cfn-bedrock-agent-agentknowledgebase-knowledgebasestate"></a>
+Specifies whether to use the knowledge base or not when sending an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) request.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

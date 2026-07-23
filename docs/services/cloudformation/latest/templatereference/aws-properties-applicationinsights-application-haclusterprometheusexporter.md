@@ -2,55 +2,41 @@
 title: "AWS::ApplicationInsights::Application HAClusterPrometheusExporter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application HAClusterPrometheusExporter
+<a name="aws-properties-applicationinsights-application-haclusterprometheusexporter"></a>
 
-The `AWS::ApplicationInsights::Application HAClusterPrometheusExporter`
-property type defines the HA cluster Prometheus Exporter settings. For more information,
-see the [component configuration](../../../amazoncloudwatch/latest/monitoring/component-config-sections.md#component-configuration-prometheus) in the CloudWatch Application Insights
-documentation.
+The `AWS::ApplicationInsights::Application HAClusterPrometheusExporter` property type defines the HA cluster Prometheus Exporter settings. For more information, see the [component configuration](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/component-config-sections.html#component-configuration-prometheus) in the CloudWatch Application Insights documentation.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-haclusterprometheusexporter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-haclusterprometheusexporter-syntax.json"></a>
 
-```json
-
+```
 {
-  "PrometheusPort" : String
+  "[PrometheusPort](#cfn-applicationinsights-application-haclusterprometheusexporter-prometheusport)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-haclusterprometheusexporter-syntax.yaml"></a>
 
-```yaml
-
-  PrometheusPort: String
-
+```
+  [PrometheusPort](#cfn-applicationinsights-application-haclusterprometheusexporter-prometheusport): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-haclusterprometheusexporter-properties"></a>
 
-`PrometheusPort`
-
+`PrometheusPort`  <a name="cfn-applicationinsights-application-haclusterprometheusexporter-prometheusport"></a>
 The target port to which Prometheus sends metrics. If not specified, the default port 9668 is used.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomComponent
-
-HANAPrometheusExporter
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

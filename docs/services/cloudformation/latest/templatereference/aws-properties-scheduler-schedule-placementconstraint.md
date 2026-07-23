@@ -2,69 +2,51 @@
 title: "AWS::Scheduler::Schedule PlacementConstraint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Scheduler::Schedule PlacementConstraint
+<a name="aws-properties-scheduler-schedule-placementconstraint"></a>
 
 An object representing a constraint on task placement.
 
 ## Syntax
+<a name="aws-properties-scheduler-schedule-placementconstraint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-scheduler-schedule-placementconstraint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Expression" : String,
-  "Type" : String
+  "[Expression](#cfn-scheduler-schedule-placementconstraint-expression)" : {{String}},
+  "[Type](#cfn-scheduler-schedule-placementconstraint-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-scheduler-schedule-placementconstraint-syntax.yaml"></a>
 
-```yaml
-
-  Expression: String
-  Type: String
-
+```
+  [Expression](#cfn-scheduler-schedule-placementconstraint-expression): {{String}}
+  [Type](#cfn-scheduler-schedule-placementconstraint-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-scheduler-schedule-placementconstraint-properties"></a>
 
-`Expression`
+`Expression`  <a name="cfn-scheduler-schedule-placementconstraint-expression"></a>
+A cluster query language expression to apply to the constraint. You cannot specify an expression if the constraint type is `distinctInstance`. For more information, see [Cluster query language](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html) in the *Amazon ECS Developer Guide*.
+*Required*: No
+*Type*: String
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A cluster query language expression to apply to the constraint. You cannot specify an expression if the constraint type is `distinctInstance`.
-For more information, see [Cluster query language](../../../amazonecs/latest/developerguide/cluster-query-language.md) in the _Amazon ECS Developer Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-scheduler-schedule-placementconstraint-type"></a>
 The type of constraint. Use `distinctInstance` to ensure that each task in a particular group is running on a different container instance. Use `memberOf` to restrict the selection to a group of valid candidates.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `distinctInstance | memberOf`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NetworkConfiguration
-
-PlacementStrategy
+*Required*: No
+*Type*: String
+*Allowed values*: `distinctInstance | memberOf`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

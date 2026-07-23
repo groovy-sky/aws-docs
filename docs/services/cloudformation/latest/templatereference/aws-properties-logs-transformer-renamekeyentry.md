@@ -2,81 +2,59 @@
 title: "AWS::Logs::Transformer RenameKeyEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer RenameKeyEntry
+<a name="aws-properties-logs-transformer-renamekeyentry"></a>
 
-This object defines one key that will be renamed with the [renameKey](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-processors.md#CloudWatch-Logs-Transformation-renameKey) processor.
+This object defines one key that will be renamed with the [ renameKey](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-renameKey) processor.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-renamekeyentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-renamekeyentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "OverwriteIfExists" : Boolean,
-  "RenameTo" : String
+  "[Key](#cfn-logs-transformer-renamekeyentry-key)" : {{String}},
+  "[OverwriteIfExists](#cfn-logs-transformer-renamekeyentry-overwriteifexists)" : {{Boolean}},
+  "[RenameTo](#cfn-logs-transformer-renamekeyentry-renameto)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-renamekeyentry-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  OverwriteIfExists: Boolean
-  RenameTo: String
-
+```
+  [Key](#cfn-logs-transformer-renamekeyentry-key): {{String}}
+  [OverwriteIfExists](#cfn-logs-transformer-renamekeyentry-overwriteifexists): {{Boolean}}
+  [RenameTo](#cfn-logs-transformer-renamekeyentry-renameto): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-renamekeyentry-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-logs-transformer-renamekeyentry-key"></a>
 The key to rename
+*Required*: Yes
+*Type*: String
+*Pattern*: `^.*[a-zA-Z0-9]+.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`OverwriteIfExists`  <a name="cfn-logs-transformer-renamekeyentry-overwriteifexists"></a>
+Specifies whether to overwrite the existing value if the destination key already exists. The default is `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^.*[a-zA-Z0-9]+.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OverwriteIfExists`
-
-Specifies whether to overwrite the existing value if the destination key already
-exists. The default is `false`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RenameTo`
-
+`RenameTo`  <a name="cfn-logs-transformer-renamekeyentry-renameto"></a>
 The string to use for the new key name
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^.*[a-zA-Z0-9]+.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Processor
-
-RenameKeys
+*Required*: Yes
+*Type*: String
+*Pattern*: `^.*[a-zA-Z0-9]+.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

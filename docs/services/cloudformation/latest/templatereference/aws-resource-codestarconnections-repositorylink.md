@@ -2,148 +2,116 @@
 title: "AWS::CodeStarConnections::RepositoryLink"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeStarConnections::RepositoryLink
+<a name="aws-resource-codestarconnections-repositorylink"></a>
 
 Information about the repository link resource, such as the repository link ARN, the associated connection ARN, encryption key ARN, and owner ID.
 
 ## Syntax
+<a name="aws-resource-codestarconnections-repositorylink-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codestarconnections-repositorylink-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodeStarConnections::RepositoryLink",
   "Properties" : {
-      "ConnectionArn" : String,
-      "EncryptionKeyArn" : String,
-      "OwnerId" : String,
-      "RepositoryName" : String,
-      "Tags" : [ Tag, ... ]
+      "[ConnectionArn](#cfn-codestarconnections-repositorylink-connectionarn)" : {{String}},
+      "[EncryptionKeyArn](#cfn-codestarconnections-repositorylink-encryptionkeyarn)" : {{String}},
+      "[OwnerId](#cfn-codestarconnections-repositorylink-ownerid)" : {{String}},
+      "[RepositoryName](#cfn-codestarconnections-repositorylink-repositoryname)" : {{String}},
+      "[Tags](#cfn-codestarconnections-repositorylink-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codestarconnections-repositorylink-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodeStarConnections::RepositoryLink
 Properties:
-  ConnectionArn: String
-  EncryptionKeyArn: String
-  OwnerId: String
-  RepositoryName: String
-  Tags:
-    - Tag
-
+  [ConnectionArn](#cfn-codestarconnections-repositorylink-connectionarn): {{String}}
+  [EncryptionKeyArn](#cfn-codestarconnections-repositorylink-encryptionkeyarn): {{String}}
+  [OwnerId](#cfn-codestarconnections-repositorylink-ownerid): {{String}}
+  [RepositoryName](#cfn-codestarconnections-repositorylink-repositoryname): {{String}}
+  [Tags](#cfn-codestarconnections-repositorylink-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-codestarconnections-repositorylink-properties"></a>
 
-`ConnectionArn`
-
+`ConnectionArn`  <a name="cfn-codestarconnections-repositorylink-connectionarn"></a>
 The Amazon Resource Name (ARN) of the connection associated with the repository link.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn):.+:.+:[0-9]{12}:.+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn):.+:.+:[0-9]{12}:.+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionKeyArn`
-
+`EncryptionKeyArn`  <a name="cfn-codestarconnections-repositorylink-encryptionkeyarn"></a>
 The Amazon Resource Name (ARN) of the encryption key for the repository associated with the repository link.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn):.+:.+:[0-9]{12}:.+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OwnerId`  <a name="cfn-codestarconnections-repositorylink-ownerid"></a>
+The owner ID for the repository associated with the repository link, such as the owner ID in GitHub.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-za-z0-9_\.-]+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn):.+:.+:[0-9]{12}:.+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OwnerId`
-
-The owner ID for the repository associated with the repository link, such as the owner
-ID in GitHub.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-za-z0-9_\.-]+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RepositoryName`
-
+`RepositoryName`  <a name="cfn-codestarconnections-repositorylink-repositoryname"></a>
 The name of the repository associated with the repository link.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-za-z0-9_\.-]+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-za-z0-9_\.-]+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-codestarconnections-repositorylink-tags"></a>
 The tags for the repository to be associated with the repository link.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-codestarconnections-repositorylink-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codestarconnections-repositorylink-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codestarconnections-repositorylink-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codestarconnections-repositorylink-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the repository link. For
-example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the repository link. For example:
 
-`arn:aws:codestar-connections:region:account-id:repository-link/repository-link-id`
+ `arn:aws:codestar-connections:region:account-id:repository-link/repository-link-id`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-codestarconnections-repositorylink-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ProviderType`
+####
+<a name="aws-resource-codestarconnections-repositorylink-return-values-fn--getatt-fn--getatt"></a>
 
-Property description not available.
+`ProviderType`  <a name="ProviderType-fn::getatt"></a>
+The provider type for the connection associated with the repository link, such as GitHub.
 
-`RepositoryLinkArn`
+`RepositoryLinkArn`  <a name="RepositoryLinkArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the repository link.
 
-Property description not available.
-
-`RepositoryLinkId`
-
-Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`RepositoryLinkId`  <a name="RepositoryLinkId-fn::getatt"></a>
+The ID of the repository link.
 
 All content copied from https://docs.aws.amazon.com/.

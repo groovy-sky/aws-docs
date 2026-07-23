@@ -2,86 +2,62 @@
 title: "AWS::CleanRooms::AnalysisTemplate MLSyntheticDataParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate MLSyntheticDataParameters
+<a name="aws-properties-cleanrooms-analysistemplate-mlsyntheticdataparameters"></a>
 
-Parameters that control the generation of synthetic data for machine learning, including
-privacy settings and column classification details.
+Parameters that control the generation of synthetic data for machine learning, including privacy settings and column classification details.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-mlsyntheticdataparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-mlsyntheticdataparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnClassification" : ColumnClassificationDetails,
-  "Epsilon" : Number,
-  "MaxMembershipInferenceAttackScore" : Number
+  "[ColumnClassification](#cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-columnclassification)" : {{ColumnClassificationDetails}},
+  "[Epsilon](#cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-epsilon)" : {{Number}},
+  "[MaxMembershipInferenceAttackScore](#cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-maxmembershipinferenceattackscore)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-mlsyntheticdataparameters-syntax.yaml"></a>
 
-```yaml
-
-  ColumnClassification:
-    ColumnClassificationDetails
-  Epsilon: Number
-  MaxMembershipInferenceAttackScore: Number
-
+```
+  [ColumnClassification](#cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-columnclassification): {{
+    ColumnClassificationDetails}}
+  [Epsilon](#cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-epsilon): {{Number}}
+  [MaxMembershipInferenceAttackScore](#cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-maxmembershipinferenceattackscore): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-mlsyntheticdataparameters-properties"></a>
 
-`ColumnClassification`
-
+`ColumnClassification`  <a name="cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-columnclassification"></a>
 Classification details for data columns that specify how each column should be treated during synthetic data generation.
+*Required*: Yes
+*Type*: [ColumnClassificationDetails](aws-properties-cleanrooms-analysistemplate-columnclassificationdetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [ColumnClassificationDetails](aws-properties-cleanrooms-analysistemplate-columnclassificationdetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Epsilon`
-
+`Epsilon`  <a name="cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-epsilon"></a>
 The epsilon value for differential privacy when generating synthetic data. Lower values provide stronger privacy guarantees but may reduce data utility.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxMembershipInferenceAttackScore`
-
+`MaxMembershipInferenceAttackScore`  <a name="cfn-cleanrooms-analysistemplate-mlsyntheticdataparameters-maxmembershipinferenceattackscore"></a>
 The maximum acceptable score for membership inference attack vulnerability. Synthetic data generation fails if the score for the resulting data exceeds this threshold.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Hash
-
-S3Location
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,57 +2,42 @@
 title: "AWS::QBusiness::Application PersonalizationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Application PersonalizationConfiguration
+<a name="aws-properties-qbusiness-application-personalizationconfiguration"></a>
 
-Configuration information about chat response personalization. For more information,
-see [Personalizing chat responses](../../../amazonq/latest/qbusiness-ug/personalizing-chat-responses.md).
+Configuration information about chat response personalization. For more information, see [Personalizing chat responses](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/personalizing-chat-responses.html).
 
 ## Syntax
+<a name="aws-properties-qbusiness-application-personalizationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-application-personalizationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "PersonalizationControlMode" : String
+  "[PersonalizationControlMode](#cfn-qbusiness-application-personalizationconfiguration-personalizationcontrolmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-application-personalizationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  PersonalizationControlMode: String
-
+```
+  [PersonalizationControlMode](#cfn-qbusiness-application-personalizationconfiguration-personalizationcontrolmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-application-personalizationconfiguration-properties"></a>
 
-`PersonalizationControlMode`
-
-An option to allow Amazon Q Business to customize chat responses using user
-specific metadata—specifically, location and job information—in your
-IAM Identity Center instance.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionConfiguration
-
-QAppsConfiguration
+`PersonalizationControlMode`  <a name="cfn-qbusiness-application-personalizationconfiguration-personalizationcontrolmode"></a>
+An option to allow Amazon Q Business to customize chat responses using user specific metadata—specifically, location and job information—in your IAM Identity Center instance.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

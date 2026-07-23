@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::KnowledgeBase VideoConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase VideoConfiguration
+<a name="aws-properties-bedrock-knowledgebase-videoconfiguration"></a>
 
 Configuration settings for processing video content in multimodal knowledge bases.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-videoconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-videoconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SegmentationConfiguration" : VideoSegmentationConfiguration
+  "[SegmentationConfiguration](#cfn-bedrock-knowledgebase-videoconfiguration-segmentationconfiguration)" : {{VideoSegmentationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-videoconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SegmentationConfiguration:
-    VideoSegmentationConfiguration
-
+```
+  [SegmentationConfiguration](#cfn-bedrock-knowledgebase-videoconfiguration-segmentationconfiguration): {{
+    VideoSegmentationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-videoconfiguration-properties"></a>
 
-`SegmentationConfiguration`
-
+`SegmentationConfiguration`  <a name="cfn-bedrock-knowledgebase-videoconfiguration-segmentationconfiguration"></a>
 Configuration for segmenting video content during processing.
-
-_Required_: Yes
-
-_Type_: [VideoSegmentationConfiguration](aws-properties-bedrock-knowledgebase-videosegmentationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VectorKnowledgeBaseConfiguration
-
-VideoSegmentationConfiguration
+*Required*: Yes
+*Type*: [VideoSegmentationConfiguration](aws-properties-bedrock-knowledgebase-videosegmentationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

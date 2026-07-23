@@ -2,129 +2,87 @@
 title: "AWS::CloudFront::ContinuousDeploymentPolicy ContinuousDeploymentPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ContinuousDeploymentPolicy ContinuousDeploymentPolicyConfig
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig"></a>
 
 Contains the configuration for a continuous deployment policy.
 
 ## Syntax
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "SingleHeaderPolicyConfig" : SingleHeaderPolicyConfig,
-  "SingleWeightPolicyConfig" : SingleWeightPolicyConfig,
-  "StagingDistributionDnsNames" : [ String, ... ],
-  "TrafficConfig" : TrafficConfig,
-  "Type" : String
+  "[Enabled](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-enabled)" : {{Boolean}},
+  "[SingleHeaderPolicyConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleheaderpolicyconfig)" : {{SingleHeaderPolicyConfig}},
+  "[SingleWeightPolicyConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleweightpolicyconfig)" : {{SingleWeightPolicyConfig}},
+  "[StagingDistributionDnsNames](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-stagingdistributiondnsnames)" : {{[ String, ... ]}},
+  "[TrafficConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-trafficconfig)" : {{TrafficConfig}},
+  "[Type](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  SingleHeaderPolicyConfig:
-    SingleHeaderPolicyConfig
-  SingleWeightPolicyConfig:
-    SingleWeightPolicyConfig
-  StagingDistributionDnsNames:
-    - String
-  TrafficConfig:
-    TrafficConfig
-  Type: String
-
+```
+  [Enabled](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-enabled): {{Boolean}}
+  [SingleHeaderPolicyConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleheaderpolicyconfig): {{
+    SingleHeaderPolicyConfig}}
+  [SingleWeightPolicyConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleweightpolicyconfig): {{
+    SingleWeightPolicyConfig}}
+  [StagingDistributionDnsNames](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-stagingdistributiondnsnames): {{
+    - String}}
+  [TrafficConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-trafficconfig): {{
+    TrafficConfig}}
+  [Type](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-properties"></a>
 
-`Enabled`
+`Enabled`  <a name="cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-enabled"></a>
+A Boolean that indicates whether this continuous deployment policy is enabled (in effect). When this value is `true`, this policy is enabled and in effect. When this value is `false`, this policy is not enabled and has no effect.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A Boolean that indicates whether this continuous deployment policy is enabled (in
-effect). When this value is `true`, this policy is enabled and in effect.
-When this value is `false`, this policy is not enabled and has no
-effect.
+`SingleHeaderPolicyConfig`  <a name="cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleheaderpolicyconfig"></a>
+This configuration determines which HTTP requests are sent to the staging distribution. If the HTTP request contains a header and value that matches what you specify here, the request is sent to the staging distribution. Otherwise the request is sent to the primary distribution.
+*Required*: No
+*Type*: [SingleHeaderPolicyConfig](aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderpolicyconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`SingleWeightPolicyConfig`  <a name="cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleweightpolicyconfig"></a>
+This configuration determines the percentage of HTTP requests that are sent to the staging distribution.
+*Required*: No
+*Type*: [SingleWeightPolicyConfig](aws-properties-cloudfront-continuousdeploymentpolicy-singleweightpolicyconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`StagingDistributionDnsNames`  <a name="cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-stagingdistributiondnsnames"></a>
+The CloudFront domain name of the staging distribution. For example: `d111111abcdef8.cloudfront.net`.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TrafficConfig`  <a name="cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-trafficconfig"></a>
+Contains the parameters for routing production traffic from your primary to staging distributions.
+*Required*: No
+*Type*: [TrafficConfig](aws-properties-cloudfront-continuousdeploymentpolicy-trafficconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`SingleHeaderPolicyConfig`
-
-This configuration determines which HTTP requests are sent to the staging
-distribution. If the HTTP request contains a header and value that matches what you
-specify here, the request is sent to the staging distribution. Otherwise the request is
-sent to the primary distribution.
-
-_Required_: No
-
-_Type_: [SingleHeaderPolicyConfig](aws-properties-cloudfront-continuousdeploymentpolicy-singleheaderpolicyconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingleWeightPolicyConfig`
-
-This configuration determines the percentage of HTTP requests that are sent to the
-staging distribution.
-
-_Required_: No
-
-_Type_: [SingleWeightPolicyConfig](aws-properties-cloudfront-continuousdeploymentpolicy-singleweightpolicyconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StagingDistributionDnsNames`
-
-The CloudFront domain name of the staging distribution. For example:
-`d111111abcdef8.cloudfront.net`.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficConfig`
-
-Contains the parameters for routing production traffic from your primary to staging
-distributions.
-
-_Required_: No
-
-_Type_: [TrafficConfig](aws-properties-cloudfront-continuousdeploymentpolicy-trafficconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-type"></a>
 The type of traffic configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SingleWeight | SingleHeader`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::ContinuousDeploymentPolicy
-
-SessionStickinessConfig
+*Required*: No
+*Type*: String
+*Allowed values*: `SingleWeight | SingleHeader`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

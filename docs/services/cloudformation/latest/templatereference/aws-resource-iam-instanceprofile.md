@@ -2,145 +2,117 @@
 title: "AWS::IAM::InstanceProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::InstanceProfile
+<a name="aws-resource-iam-instanceprofile"></a>
 
-Creates a new instance profile. For information about instance profiles, see [Using\
-instance profiles](../../../iam/latest/userguide/id-roles-use-switch-role-ec2-instance-profiles.md).
+ Creates a new instance profile. For information about instance profiles, see [Using instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html).
 
-For information about the number of instance profiles you can create, see [IAM object quotas](../../../iam/latest/userguide/reference-iam-quotas.md) in the _IAM User Guide_.
+ For information about the number of instance profiles you can create, see [IAM object quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html) in the *IAM User Guide*.
 
 ## Syntax
+<a name="aws-resource-iam-instanceprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iam-instanceprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IAM::InstanceProfile",
   "Properties" : {
-      "InstanceProfileName" : String,
-      "Path" : String,
-      "Roles" : [ String, ... ]
+      "[InstanceProfileName](#cfn-iam-instanceprofile-instanceprofilename)" : {{String}},
+      "[Path](#cfn-iam-instanceprofile-path)" : {{String}},
+      "[Roles](#cfn-iam-instanceprofile-roles)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iam-instanceprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IAM::InstanceProfile
 Properties:
-  InstanceProfileName: String
-  Path: String
-  Roles:
-    - String
-
+  [InstanceProfileName](#cfn-iam-instanceprofile-instanceprofilename): {{String}}
+  [Path](#cfn-iam-instanceprofile-path): {{String}}
+  [Roles](#cfn-iam-instanceprofile-roles): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-iam-instanceprofile-properties"></a>
 
-`InstanceProfileName`
-
+`InstanceProfileName`  <a name="cfn-iam-instanceprofile-instanceprofilename"></a>
 The name of the instance profile to create.
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-
+*Required*: No
+*Type*: String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Path`
-
-The path to the instance profile. For more information about paths, see [IAM\
-Identifiers](../../../iam/latest/userguide/using-identifiers.md) in the _IAM User Guide_.
-
+`Path`  <a name="cfn-iam-instanceprofile-path"></a>
+ The path to the instance profile. For more information about paths, see [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) in the *IAM User Guide*.
 This parameter is optional. If it is not included, it defaults to a slash (/).
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of either a forward slash (/) by itself or a string that must begin and end with forward slashes. In addition, it can contain any ASCII character from the \! (`\u0021`) through the DEL character (`\u007F`), including most punctuation characters, digits, and upper and lowercased letters.
+*Required*: No
+*Type*: String
+*Pattern*: `(\u002F)|(\u002F[\u0021-\u007E]+\u002F)`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting
-of either a forward slash (/) by itself or a string that must begin and end with forward slashes.
-In addition, it can contain any ASCII character from the ! ( `\u0021`) through the DEL character ( `\u007F`), including
-most punctuation characters, digits, and upper and lowercased letters.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(\u002F)|(\u002F[\u0021-\u007E]+\u002F)`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Roles`
-
-The name of the role to associate with the instance profile. Only one role can be
-assigned to an EC2 instance at a time, and all applications on the instance share the same
-role and permissions.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Roles`  <a name="cfn-iam-instanceprofile-roles"></a>
+The name of the role to associate with the instance profile. Only one role can be assigned to an EC2 instance at a time, and all applications on the instance share the same role and permissions.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iam-instanceprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iam-instanceprofile-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name. For example:
 
-`{ "Ref": "MyProfile" }`
+ `{ "Ref": "MyProfile" }`
 
-For the `AWS::IAM::InstanceProfile` resource with the logical ID
-`MyProfile`, Ref returns the name of the instance profile.
+For the `AWS::IAM::InstanceProfile` resource with the logical ID `MyProfile`, Ref returns the name of the instance profile.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iam-instanceprofile-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iam-instanceprofile-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Returns the Amazon Resource Name (ARN) for the instance profile. For example:
-
-`{"Fn::GetAtt" : ["MyProfile", "Arn"] }`
-
-This returns a value such as
-`arn:aws:iam::1234567890:instance-profile/MyProfile-ASDNSDLKJ`.
+ `{"Fn::GetAtt" : ["MyProfile", "Arn"] }`
+This returns a value such as `arn:aws:iam::1234567890:instance-profile/MyProfile-ASDNSDLKJ`.
 
 ## Examples
+<a name="aws-resource-iam-instanceprofile--examples"></a>
 
 ### Instance Profile
+<a name="aws-resource-iam-instanceprofile--examples--Instance_Profile"></a>
 
-In this example, the InstanceProfile resource refers to the role by specifying its
-name, "MyRole".
+In this example, the InstanceProfile resource refers to the role by specifying its name, "MyRole".
 
 #### JSON
+<a name="aws-resource-iam-instanceprofile--examples--Instance_Profile--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -158,9 +130,9 @@ name, "MyRole".
 ```
 
 #### YAML
+<a name="aws-resource-iam-instanceprofile--examples--Instance_Profile--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   MyInstanceProfile:
@@ -170,17 +142,10 @@ Resources:
       Roles:
         -
           Ref: "MyRole"
-
 ```
 
 ## See also
-
-- [CreateInstanceProfile](../../../../reference/iam/latest/apireference/api-createinstanceprofile.md) in the _AWS Identity and Access Management API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IAM::GroupPolicy
-
-AWS::IAM::ManagedPolicy
+<a name="aws-resource-iam-instanceprofile--seealso"></a>
++ [CreateInstanceProfile](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html) in the *AWS Identity and Access Management API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

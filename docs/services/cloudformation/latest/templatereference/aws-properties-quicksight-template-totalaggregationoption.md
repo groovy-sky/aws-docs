@@ -2,69 +2,52 @@
 title: "AWS::QuickSight::Template TotalAggregationOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TotalAggregationOption
+<a name="aws-properties-quicksight-template-totalaggregationoption"></a>
 
 The total aggregation settings map of a field id.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-totalaggregationoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-totalaggregationoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String,
-  "TotalAggregationFunction" : TotalAggregationFunction
+  "[FieldId](#cfn-quicksight-template-totalaggregationoption-fieldid)" : {{String}},
+  "[TotalAggregationFunction](#cfn-quicksight-template-totalaggregationoption-totalaggregationfunction)" : {{TotalAggregationFunction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-totalaggregationoption-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-  TotalAggregationFunction:
-    TotalAggregationFunction
-
+```
+  [FieldId](#cfn-quicksight-template-totalaggregationoption-fieldid): {{String}}
+  [TotalAggregationFunction](#cfn-quicksight-template-totalaggregationoption-totalaggregationfunction): {{
+    TotalAggregationFunction}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-totalaggregationoption-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-totalaggregationoption-fieldid"></a>
 The field id that's associated with the total aggregation option.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalAggregationFunction`
-
+`TotalAggregationFunction`  <a name="cfn-quicksight-template-totalaggregationoption-totalaggregationfunction"></a>
 The total aggregation function that you want to set for a specified field id.
-
-_Required_: Yes
-
-_Type_: [TotalAggregationFunction](aws-properties-quicksight-template-totalaggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TotalAggregationFunction
-
-TotalOptions
+*Required*: Yes
+*Type*: [TotalAggregationFunction](aws-properties-quicksight-template-totalaggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

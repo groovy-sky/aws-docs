@@ -2,82 +2,54 @@
 title: "AWS::Cognito::UserPoolUser AttributeType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolUser AttributeType
+<a name="aws-properties-cognito-userpooluser-attributetype"></a>
 
 The name and value of a user attribute.
 
 ## Syntax
+<a name="aws-properties-cognito-userpooluser-attributetype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpooluser-attributetype-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-cognito-userpooluser-attributetype-name)" : {{String}},
+  "[Value](#cfn-cognito-userpooluser-attributetype-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpooluser-attributetype-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-cognito-userpooluser-attributetype-name): {{String}}
+  [Value](#cfn-cognito-userpooluser-attributetype-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpooluser-attributetype-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-cognito-userpooluser-attributetype-name"></a>
+The name of the attribute, for example `email` or `custom:department`.
+In some older user pools, the regex pattern for acceptable values of this parameter is `[\p{L}\p{M}\p{S}\p{N}\p{P}]+`. Older pools will eventually be updated to use the new pattern. Affected user pools are those created before May 2024 in US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), Middle East (Bahrain), and South America (São Paulo).
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}\t\n\r ]+`
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The name of the attribute, for example `email` or
-`custom:department`.
-
-In some older user pools, the regex pattern for acceptable values of this parameter is
-`[\p{L}\p{M}\p{S}\p{N}\p{P}]+`. Older pools will eventually be updated to
-use the new pattern. Affected user pools are those created before May 2024 in
-US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon),
-Asia Pacific (Mumbai), Asia Pacific (Tokyo), Asia Pacific (Seoul),
-Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central),
-Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris),
-Europe (Stockholm), Middle East (Bahrain), and South America (São Paulo).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}\t\n\r ]+`
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-cognito-userpooluser-attributetype-value"></a>
 The value of the attribute.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Cognito::UserPoolUser
-
-AWS::Cognito::UserPoolUserToGroupAttachment
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

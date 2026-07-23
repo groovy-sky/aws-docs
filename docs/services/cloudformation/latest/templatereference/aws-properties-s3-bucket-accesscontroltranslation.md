@@ -2,58 +2,42 @@
 title: "AWS::S3::Bucket AccessControlTranslation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket AccessControlTranslation
+<a name="aws-properties-s3-bucket-accesscontroltranslation"></a>
 
-Specify this only in a cross-account scenario (where source and destination bucket owners are not
-the same), and you want to change replica ownership to the AWS account that owns the destination
-bucket. If this is not specified in the replication configuration, the replicas are owned by same
-AWS account that owns the source object.
+Specify this only in a cross-account scenario (where source and destination bucket owners are not the same), and you want to change replica ownership to the AWS account that owns the destination bucket. If this is not specified in the replication configuration, the replicas are owned by same AWS account that owns the source object.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-accesscontroltranslation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-accesscontroltranslation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Owner" : String
+  "[Owner](#cfn-s3-bucket-accesscontroltranslation-owner)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-accesscontroltranslation-syntax.yaml"></a>
 
-```yaml
-
-  Owner: String
-
+```
+  [Owner](#cfn-s3-bucket-accesscontroltranslation-owner): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-accesscontroltranslation-properties"></a>
 
-`Owner`
-
-Specifies the replica ownership. For default and valid values, see [PUT bucket replication](../../../s3/latest/api/restbucketputreplication.md) in the
-_Amazon S3 API Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Destination`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccelerateConfiguration
-
-AnalyticsConfiguration
+`Owner`  <a name="cfn-s3-bucket-accesscontroltranslation-owner"></a>
+Specifies the replica ownership. For default and valid values, see [PUT bucket replication](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTreplication.html) in the *Amazon S3 API Reference*.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Destination`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

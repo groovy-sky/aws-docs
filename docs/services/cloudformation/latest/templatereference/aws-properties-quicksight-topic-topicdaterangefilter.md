@@ -2,67 +2,50 @@
 title: "AWS::QuickSight::Topic TopicDateRangeFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicDateRangeFilter
+<a name="aws-properties-quicksight-topic-topicdaterangefilter"></a>
 
 A filter used to restrict data based on a range of dates or times.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-topicdaterangefilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-topicdaterangefilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Constant" : TopicRangeFilterConstant,
-  "Inclusive" : Boolean
+  "[Constant](#cfn-quicksight-topic-topicdaterangefilter-constant)" : {{TopicRangeFilterConstant}},
+  "[Inclusive](#cfn-quicksight-topic-topicdaterangefilter-inclusive)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-topicdaterangefilter-syntax.yaml"></a>
 
-```yaml
-
-  Constant:
-    TopicRangeFilterConstant
-  Inclusive: Boolean
-
+```
+  [Constant](#cfn-quicksight-topic-topicdaterangefilter-constant): {{
+    TopicRangeFilterConstant}}
+  [Inclusive](#cfn-quicksight-topic-topicdaterangefilter-inclusive): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-topicdaterangefilter-properties"></a>
 
-`Constant`
-
+`Constant`  <a name="cfn-quicksight-topic-topicdaterangefilter-constant"></a>
 The constant used in a date range filter.
+*Required*: No
+*Type*: [TopicRangeFilterConstant](aws-properties-quicksight-topic-topicrangefilterconstant.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopicRangeFilterConstant](aws-properties-quicksight-topic-topicrangefilterconstant.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Inclusive`
-
-A Boolean value that indicates whether the date range filter should include the boundary values. If
-set to true, the filter includes the start and end dates. If set to false, the filter
-excludes them.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TopicConfigOptions
-
-TopicFilter
+`Inclusive`  <a name="cfn-quicksight-topic-topicdaterangefilter-inclusive"></a>
+A Boolean value that indicates whether the date range filter should include the boundary values. If set to true, the filter includes the start and end dates. If set to false, the filter excludes them.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

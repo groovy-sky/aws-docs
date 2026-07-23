@@ -2,94 +2,85 @@
 title: "AWS::WAFv2::WebACL BlockAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL BlockAction
+<a name="aws-properties-wafv2-webacl-blockaction"></a>
 
-Specifies that AWS WAF should block the request and optionally defines
-additional custom handling for the response to the web request.
+Specifies that AWS WAF should block the request and optionally defines additional custom handling for the response to the web request.
 
-This is used in the context of other settings, for example to specify values for a rule
-action or a web ACL default action.
+This is used in the context of other settings, for example to specify values for a rule action or a web ACL default action.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-blockaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-blockaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomResponse" : CustomResponse
+  "[CustomResponse](#cfn-wafv2-webacl-blockaction-customresponse)" : {{CustomResponse}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-blockaction-syntax.yaml"></a>
 
-```yaml
-
-  CustomResponse:
-    CustomResponse
-
+```
+  [CustomResponse](#cfn-wafv2-webacl-blockaction-customresponse): {{
+    CustomResponse}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-blockaction-properties"></a>
 
-`CustomResponse`
-
+`CustomResponse`  <a name="cfn-wafv2-webacl-blockaction-customresponse"></a>
 Defines a custom response for the web request.
-
-For information about customizing web requests and responses,
-see [Customizing web requests and responses in AWS WAF](../../../waf/latest/developerguide/waf-custom-request-response.md)
-in the _AWS WAF Developer Guide_.
-
-_Required_: No
-
-_Type_: [CustomResponse](aws-properties-wafv2-webacl-customresponse.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For information about customizing web requests and responses, see [Customizing web requests and responses in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html) in the *AWS WAF Developer Guide*.
+*Required*: No
+*Type*: [CustomResponse](aws-properties-wafv2-webacl-customresponse.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-wafv2-webacl-blockaction--examples"></a>
 
-- [Set an block action](#aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action)
-
-- [Set a block action with a custom response setting](#aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting)
+**Topics**
++ [Set an block action](#aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action)
++ [Set a block action with a custom response setting](#aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting)
 
 ### Set an block action
+<a name="aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action"></a>
 
 The following shows an example block action specification.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action--yaml"></a>
 
-```yaml
-
+```
 Action:
   Block: {}
-
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action--json"></a>
 
-```json
-
+```
 "Action": {
   "Block": {}
 }
 ```
 
 ### Set a block action with a custom response setting
+<a name="aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting"></a>
 
-The following shows an example block action specification with a custom response
-setting.
+The following shows an example block action specification with a custom response setting.
 
 #### YAML
+<a name="aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting--yaml"></a>
 
-```yaml
-
+```
 Block:
   CustomResponse:
     ResponseCode: 503
@@ -102,9 +93,9 @@ Block:
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting--json"></a>
 
-```json
-
+```
 "Block": {
   "CustomResponse": {
     "ResponseCode": 503,
@@ -122,11 +113,5 @@ Block:
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWSManagedRulesBotControlRuleSet
-
-Body
 
 All content copied from https://docs.aws.amazon.com/.

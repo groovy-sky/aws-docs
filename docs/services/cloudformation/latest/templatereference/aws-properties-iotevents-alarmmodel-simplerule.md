@@ -2,88 +2,62 @@
 title: "AWS::IoTEvents::AlarmModel SimpleRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel SimpleRule
+<a name="aws-properties-iotevents-alarmmodel-simplerule"></a>
 
 A rule that compares an input property value to a threshold value with a comparison operator.
 
 ## Syntax
+<a name="aws-properties-iotevents-alarmmodel-simplerule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-alarmmodel-simplerule-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComparisonOperator" : String,
-  "InputProperty" : String,
-  "Threshold" : String
+  "[ComparisonOperator](#cfn-iotevents-alarmmodel-simplerule-comparisonoperator)" : {{String}},
+  "[InputProperty](#cfn-iotevents-alarmmodel-simplerule-inputproperty)" : {{String}},
+  "[Threshold](#cfn-iotevents-alarmmodel-simplerule-threshold)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-alarmmodel-simplerule-syntax.yaml"></a>
 
-```yaml
-
-  ComparisonOperator: String
-  InputProperty: String
-  Threshold: String
-
+```
+  [ComparisonOperator](#cfn-iotevents-alarmmodel-simplerule-comparisonoperator): {{String}}
+  [InputProperty](#cfn-iotevents-alarmmodel-simplerule-inputproperty): {{String}}
+  [Threshold](#cfn-iotevents-alarmmodel-simplerule-threshold): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-alarmmodel-simplerule-properties"></a>
 
-`ComparisonOperator`
-
+`ComparisonOperator`  <a name="cfn-iotevents-alarmmodel-simplerule-comparisonoperator"></a>
 The comparison operator.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GREATER | GREATER_OR_EQUAL | LESS | LESS_OR_EQUAL | EQUAL | NOT_EQUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`InputProperty`  <a name="cfn-iotevents-alarmmodel-simplerule-inputproperty"></a>
+The value on the left side of the comparison operator. You can specify an AWS IoT Events input attribute as an input property.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `GREATER | GREATER_OR_EQUAL | LESS | LESS_OR_EQUAL | EQUAL | NOT_EQUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputProperty`
-
-The value on the left side of the comparison operator. You can specify an AWS IoT Events input
-attribute as an input property.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Threshold`
-
-The value on the right side of the comparison operator. You can enter a number or specify
-an AWS IoT Events input attribute.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Payload
-
-Sns
+`Threshold`  <a name="cfn-iotevents-alarmmodel-simplerule-threshold"></a>
+The value on the right side of the comparison operator. You can enter a number or specify an AWS IoT Events input attribute.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

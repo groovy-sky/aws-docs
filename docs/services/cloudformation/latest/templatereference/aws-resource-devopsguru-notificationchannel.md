@@ -2,97 +2,86 @@
 title: "AWS::DevOpsGuru::NotificationChannel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsGuru::NotificationChannel
+<a name="aws-resource-devopsguru-notificationchannel"></a>
 
-Adds a notification channel to DevOps Guru. A notification channel is used to notify you
-about important DevOps Guru events, such as when an insight is generated.
+ Adds a notification channel to DevOps Guru. A notification channel is used to notify you about important DevOps Guru events, such as when an insight is generated.
 
-If you use an Amazon SNS topic in another account, you must attach a policy to it that grants DevOps Guru permission
-to send it notifications. DevOps Guru adds the required policy on your behalf to send notifications using Amazon SNS in your account. DevOps Guru only supports standard SNS topics.
-For more information, see [Permissions \
-for Amazon SNS topics](../../../devops-guru/latest/userguide/sns-required-permissions.md).
+If you use an Amazon SNS topic in another account, you must attach a policy to it that grants DevOps Guru permission to send it notifications. DevOps Guru adds the required policy on your behalf to send notifications using Amazon SNS in your account. DevOps Guru only supports standard SNS topics. For more information, see [Permissions for Amazon SNS topics](https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-required-permissions.html).
 
-If you use an Amazon SNS topic that is encrypted by an AWS Key Management Service customer-managed key (CMK), then you must add permissions
-to the CMK. For more information, see [Permissions for \
-AWS KMS–encrypted Amazon SNS topics](../../../devops-guru/latest/userguide/sns-kms-permissions.md).
+If you use an Amazon SNS topic that is encrypted by an AWS Key Management Service customer-managed key (CMK), then you must add permissions to the CMK. For more information, see [Permissions for AWS KMS–encrypted Amazon SNS topics](https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-kms-permissions.html).
 
 ## Syntax
+<a name="aws-resource-devopsguru-notificationchannel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-devopsguru-notificationchannel-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DevOpsGuru::NotificationChannel",
   "Properties" : {
-      "Config" : NotificationChannelConfig
+      "[Config](#cfn-devopsguru-notificationchannel-config)" : {{NotificationChannelConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-devopsguru-notificationchannel-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DevOpsGuru::NotificationChannel
 Properties:
-  Config:
-    NotificationChannelConfig
-
+  [Config](#cfn-devopsguru-notificationchannel-config): {{
+    NotificationChannelConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-devopsguru-notificationchannel-properties"></a>
 
-`Config`
-
-A `NotificationChannelConfig` object that contains information about
-configured notification channels.
-
-_Required_: Yes
-
-_Type_: [NotificationChannelConfig](aws-properties-devopsguru-notificationchannel-notificationchannelconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Config`  <a name="cfn-devopsguru-notificationchannel-config"></a>
+ A `NotificationChannelConfig` object that contains information about configured notification channels.
+*Required*: Yes
+*Type*: [NotificationChannelConfig](aws-properties-devopsguru-notificationchannel-notificationchannelconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-devopsguru-notificationchannel-return-values"></a>
 
 ### Ref
+<a name="aws-resource-devopsguru-notificationchannel-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the `Ref` intrinsic function,
-`Ref` returns Amazon Resource Name (ARN) of the `NotificationChannel`.
-
-For more information about using the `Ref` function, see
-[Ref](../userguide/intrinsic-function-reference-ref.md).
+When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns Amazon Resource Name (ARN) of the `NotificationChannel`. For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-devopsguru-notificationchannel-return-values-fn--getatt"></a>
 
-`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available
-attributes and sample return values. For more information about using `Fn::GetAtt`, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values. For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-devopsguru-notificationchannel-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the notification channel.
 
 ## Examples
+<a name="aws-resource-devopsguru-notificationchannel--examples"></a>
 
-- [Create one notification channel with filters](#aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters)
-
-- [Create two notification channels](#aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels)
+**Topics**
++ [Create one notification channel with filters](#aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters)
++ [Create two notification channels](#aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels)
 
 ### Create one notification channel with filters
+<a name="aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters"></a>
 
 #### JSON
+<a name="aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyNotificationChannel": {
@@ -114,9 +103,9 @@ The ID of the notification channel.
 ```
 
 #### YAML
+<a name="aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyNotificationChannel:
     Type: AWS::DevOpsGuru::NotificationChannel
@@ -135,11 +124,12 @@ Resources:
 ```
 
 ### Create two notification channels
+<a name="aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels"></a>
 
 #### JSON
+<a name="aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyNotificationChannel1": {
@@ -167,9 +157,9 @@ Resources:
 ```
 
 #### YAML
+<a name="aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyNotificationChannel1:
     Type: AWS::DevOpsGuru::NotificationChannel
@@ -184,11 +174,5 @@ Resources:
         Sns:
           TopicArn: arn:aws:sns:us-east-1:123456789012:DefaultNotificationChannel2
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DevOpsGuru::LogAnomalyDetectionIntegration
-
-NotificationChannelConfig
 
 All content copied from https://docs.aws.amazon.com/.

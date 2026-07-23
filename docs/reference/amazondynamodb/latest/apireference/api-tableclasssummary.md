@@ -3,48 +3,33 @@ title: "TableClassSummary"
 ---
 
 # TableClassSummary
+<a name="API_TableClassSummary"></a>
 
 Contains details of the table class.
 
 ## Contents
+<a name="API_TableClassSummary_Contents"></a>
 
-###### Note
-
+**Note**
 In the following list, the required parameters are described first.
 
-**LastUpdateDateTime**
-
+ ** LastUpdateDateTime **   <a name="DDB-Type-TableClassSummary-LastUpdateDateTime"></a>
 The date and time at which the table class was last updated.
-
 Type: Timestamp
-
 Required: No
 
-**TableClass**
-
-The table class of the specified table. Valid values are `STANDARD` and
-`STANDARD_INFREQUENT_ACCESS`.
-
+ ** TableClass **   <a name="DDB-Type-TableClassSummary-TableClass"></a>
+The table class of the specified table. Valid values are `STANDARD` and `STANDARD_INFREQUENT_ACCESS`.
 Type: String
-
 Valid Values: `STANDARD | STANDARD_INFREQUENT_ACCESS`
-
 Required: No
 
 ## See Also
+<a name="API_TableClassSummary_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/TableClassSummary)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/TableClassSummary)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/TableClassSummary)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableAutoScalingDescription
-
-TableCreationParameters
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/TableClassSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/TableClassSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/TableClassSummary)
 
 All content copied from https://docs.aws.amazon.com/.

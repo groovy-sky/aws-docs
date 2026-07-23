@@ -2,70 +2,52 @@
 title: "AWS::DataZone::SubscriptionTarget SubscriptionTargetForm"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::SubscriptionTarget SubscriptionTargetForm
+<a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform"></a>
 
 The details of the subscription target configuration.
 
 ## Syntax
+<a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "FormName" : String
+  "[Content](#cfn-datazone-subscriptiontarget-subscriptiontargetform-content)" : {{String}},
+  "[FormName](#cfn-datazone-subscriptiontarget-subscriptiontargetform-formname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  FormName: String
-
+```
+  [Content](#cfn-datazone-subscriptiontarget-subscriptiontargetform-content): {{String}}
+  [FormName](#cfn-datazone-subscriptiontarget-subscriptiontargetform-formname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform-properties"></a>
 
-`Content`
-
+`Content`  <a name="cfn-datazone-subscriptiontarget-subscriptiontargetform-content"></a>
 The content of the subscription target configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FormName`
-
+`FormName`  <a name="cfn-datazone-subscriptiontarget-subscriptiontargetform-formname"></a>
 The form name included in the subscription target configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?![0-9_])\w+$|^_\w*[a-zA-Z0-9]\w*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::SubscriptionTarget
-
-AWS::DataZone::UserProfile
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?![0-9_])\w+$|^_\w*[a-zA-Z0-9]\w*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

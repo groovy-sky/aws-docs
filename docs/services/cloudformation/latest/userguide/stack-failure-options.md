@@ -3,256 +3,168 @@ title: "Choose how to handle failures when provisioning resources"
 ---
 
 # Choose how to handle failures when provisioning resources
+<a name="stack-failure-options"></a>
 
-If your stack operation fails, you don't have to roll back resources that were already
-successfully provisioned and start over from the beginning every time. Instead, you can
-troubleshoot resources in a `CREATE_FAILED` or `UPDATE_FAILED` status, and
-then resume provisioning from the point where the problem occurred.
+If your stack operation fails, you don't have to roll back resources that were already successfully provisioned and start over from the beginning every time. Instead, you can troubleshoot resources in a `CREATE_FAILED` or `UPDATE_FAILED` status, and then resume provisioning from the point where the problem occurred.
 
-To do this, you must enable the preserve successfully provisioned resources option. This
-option is available for all stack deployments and change set operations.
+To do this, you must enable the preserve successfully provisioned resources option. This option is available for all stack deployments and change set operations.
++ For stack creation, if you choose the **Preserve successfully provisioned resources** option, CloudFormation preserves the state of resources that were successfully created and leaves the failed ones in a failed state until the next update operation is performed.
++ During update and change set operations, choosing **Preserve successfully provisioned resources** preserves the state of successful resources while rolling back failed resources to their last known stable state. Failed resources will be in an `UPDATE_FAILED` state. Resources without a last known stable state will be deleted upon the next stack operation.
 
-- For stack creation, if you choose the **Preserve successfully provisioned**
-**resources** option, CloudFormation preserves the state of resources that were successfully
-created and leaves the failed ones in a failed state until the next update operation is
-performed.
-
-- During update and change set operations, choosing **Preserve successfully**
-**provisioned resources** preserves the state of successful resources while rolling back
-failed resources to their last known stable state. Failed resources will be in an
-`UPDATE_FAILED` state. Resources without a last known stable state will be deleted
-upon the next stack operation.
-
-###### Topics
-
-- [Overview of stack failure options](#stack-failure-options-overview)
-
-- [Required conditions for pausing stack rollback](#stack-failure-options-conditions)
-
-- [Preserve successfully provisioned resources (console)](#stack-failure-options-console)
-
-- [Preserve successfully provisioned resources (AWS CLI)](#stack-failure-options-cli)
+**Topics**
++ [Overview of stack failure options](#stack-failure-options-overview)
++ [Required conditions for pausing stack rollback](#stack-failure-options-conditions)
++ [Preserve successfully provisioned resources (console)](#stack-failure-options-console)
++ [Preserve successfully provisioned resources (AWS CLI)](#stack-failure-options-cli)
 
 ## Overview of stack failure options
+<a name="stack-failure-options-overview"></a>
 
-Before issuing an operation from the CloudFormation console, API, or AWS CLI, specify the behavior
-for provisioned resource failure. Then, proceed with the deployment process of your resources
-without any other modifications. In the event of an operational failure, CloudFormation stops at the
-first failure in each independent provisioning path. CloudFormation identifies dependencies between
-resources to parallelize independent provisioning actions. Then it proceeds to provision
-resources on each independent provisioning path until it encounters a failure. A failure in one
-path doesn’t affect other provisioning paths. CloudFormation will continue to provision the resources
-until completion or stop on a different failure.
+Before issuing an operation from the CloudFormation console, API, or AWS CLI, specify the behavior for provisioned resource failure. Then, proceed with the deployment process of your resources without any other modifications. In the event of an operational failure, CloudFormation stops at the first failure in each independent provisioning path. CloudFormation identifies dependencies between resources to parallelize independent provisioning actions. Then it proceeds to provision resources on each independent provisioning path until it encounters a failure. A failure in one path doesn’t affect other provisioning paths. CloudFormation will continue to provision the resources until completion or stop on a different failure.
 
-Remediate any issues to continue the deployment process. CloudFormation performs the necessary
-updates before retrying provisioning actions on resources that couldn’t be successfully
-provisioned earlier. You remediate issues by submitting a **Retry**,
-**Update**, or **Roll back** operations. For example, if
-you're provisioning an Amazon EC2 instance and the EC2 instance fails during a create operation, you
-might want to investigate the error, rather than rolling back the failed resource right away. You
-can review system status checks and instances status checks, and then select the
-**Retry** operation once the issues is resolved.
+Remediate any issues to continue the deployment process. CloudFormation performs the necessary updates before retrying provisioning actions on resources that couldn’t be successfully provisioned earlier. You remediate issues by submitting a **Retry**, **Update**, or **Roll back** operations. For example, if you're provisioning an Amazon EC2 instance and the EC2 instance fails during a create operation, you might want to investigate the error, rather than rolling back the failed resource right away. You can review system status checks and instances status checks, and then select the **Retry** operation once the issues is resolved.
 
-When a stack operation fails, and you've specified **Preserve successfully**
-**provisioned resources** from the **Stack failure options** menu, you
-can select the following options.
-
-- **Retry** – Retries provisioning operation on failed resources and
-continues provisioning the template until the successful completion of the stack operation or
-the next failure. Select this option if the resource failed to provision due to an issue that
-doesn't require template modifications, such as an AWS Identity and Access Management (IAM) permission.
-
-- **Update** – Resources that have been provisioned are updated on
-template updates. Resources that failed to create or update will be retried. Select this option
-if the resource failed to provision due to template errors, and you've modified the template.
-When you update a stack that's in a `FAILED` state, you must select
-**Preserve successfully provisioned resources** for the **Stack**
-**failure options** to continue updating your stack.
-
-- **Roll back** – CloudFormation rolls back the stack to the last known
-stable state.
+When a stack operation fails, and you've specified **Preserve successfully provisioned resources** from the **Stack failure options** menu, you can select the following options.
++ **Retry** – Retries provisioning operation on failed resources and continues provisioning the template until the successful completion of the stack operation or the next failure. Select this option if the resource failed to provision due to an issue that doesn't require template modifications, such as an AWS Identity and Access Management (IAM) permission.
++ **Update** – Resources that have been provisioned are updated on template updates. Resources that failed to create or update will be retried. Select this option if the resource failed to provision due to template errors, and you've modified the template. When you update a stack that's in a `FAILED` state, you must select **Preserve successfully provisioned resources** for the **Stack failure options** to continue updating your stack.
++ **Roll back** – CloudFormation rolls back the stack to the last known stable state.
 
 ## Required conditions for pausing stack rollback
+<a name="stack-failure-options-conditions"></a>
 
-To prevent CloudFormation from automatically rolling back and deleting the resources that were
-successfully created, the following conditions must be met.
+To prevent CloudFormation from automatically rolling back and deleting the resources that were successfully created, the following conditions must be met.
 
-1. When you create or update the stack, you must choose the option to **Preserve**
-**successfully provisioned resources**. This tells CloudFormation not to delete the
-    resources that were created successfully, even if the overall stack operation fails.
+1. When you create or update the stack, you must choose the option to **Preserve successfully provisioned resources**. This tells CloudFormation not to delete the resources that were created successfully, even if the overall stack operation fails.
 
-2. The stack operation must have failed, meaning the stack status is either
-    `CREATE_FAILED` or `UPDATE_FAILED`.
+1. The stack operation must have failed, meaning the stack status is either `CREATE_FAILED` or `UPDATE_FAILED`.
 
-###### Note
-
+**Note**
 Immutable update types aren't supported.
 
 ## Preserve successfully provisioned resources (console)
+<a name="stack-failure-options-console"></a>
 
-Create stack
+------
+#### [ Create stack ]
 
-###### To preserve successfully provisioned resources during a create stack operation
+**To preserve successfully provisioned resources during a create stack operation**
 
-01. Sign in to the AWS Management Console and open the CloudFormation console at
-     [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
+1. Sign in to the AWS Management Console and open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 
-02. From the **Stacks** page, choose **Create stack** at
-     top right, and then choose **With new resources (standard)**.
+1. From the **Stacks** page, choose **Create stack** at top right, and then choose **With new resources (standard)**.
 
-03. For **Prerequisite - Prepare template**, choose **Choose an**
-    **existing template**.
+1. For **Prerequisite - Prepare template**, choose **Choose an existing template**.
 
-04. Under **Specify template**, choose to either specify the URL for the
-     S3 bucket that contains your stack template or upload a stack template file. Then, choose
-     **Next**.
+1. Under **Specify template**, choose to either specify the URL for the S3 bucket that contains your stack template or upload a stack template file. Then, choose **Next**.
 
-05. On the **Specify stack details** page, enter a stack name in the
-     **Stack name** box.
+1. On the **Specify stack details** page, enter a stack name in the **Stack name** box.
 
-06. In the **Parameters** section, specify parameters that are defined in
-     your stack template.
+1. In the **Parameters** section, specify parameters that are defined in your stack template.
 
-    You can use or change any parameters with default values.
+   You can use or change any parameters with default values.
 
-07. When you're satisfied with the parameter values, choose
-     **Next**.
+1. When you're satisfied with the parameter values, choose **Next**.
 
-08. On the **Configure stack options** page, you can set additional
-     options for your stack.
+1. On the **Configure stack options** page, you can set additional options for your stack.
 
-09. For **Stack failure options**, select **Preserve successfully**
-    **provisioned resources**.
+1. For **Stack failure options**, select **Preserve successfully provisioned resources**.
 
-10. When you're satisfied with the stack options, choose **Next**.
+1. When you're satisfied with the stack options, choose **Next**.
 
-11. Review your stack on the **Review** page and select **Create**
-    **stack**.
+1. Review your stack on the **Review** page and select **Create stack**.
 
-_Results_: Resources that failed to create transition the stack status
-to `CREATE_FAILED` to prevent the stack from rolling back when the stack operation
-encounters a failure. Resources that are successfully provisioned are in a
-`CREATE_COMPLETE` state. You can monitor the stack in the **Stack**
-**events** tab.
+*Results*: Resources that failed to create transition the stack status to `CREATE_FAILED` to prevent the stack from rolling back when the stack operation encounters a failure. Resources that are successfully provisioned are in a `CREATE_COMPLETE` state. You can monitor the stack in the **Stack events** tab.
 
-Update stack
+------
+#### [ Update stack ]
 
-###### To preserve successfully provisioned resources during an update stack operation
+**To preserve successfully provisioned resources during an update stack operation**
 
-1. Sign in to the AWS Management Console and open the CloudFormation console at
-    [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
+1. Sign in to the AWS Management Console and open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 
-2. Select the stack you want to update and then choose **Update**.
+1. Select the stack you want to update and then choose **Update**.
 
-3. On the **Update stack** page, choose a stack template by using one of
-    the following options:
+1. On the **Update stack** page, choose a stack template by using one of the following options:
+   + **Use existing template**
+   + **Replace current template**
+   + **Edit template in Infrastructure Composer**
 
-- **Use existing template**
+   Accept your settings and select **Next**.
 
-- **Replace current template**
+1. On the **Specify stack details** page, specify parameters that are defined in your stack template.
 
-- **Edit template in Infrastructure Composer**
+   You can use or change any parameters with default values.
 
-Accept your settings and select **Next**.
+1. When you're satisfied with the parameter values, choose **Next**.
 
-4. On the **Specify stack details** page, specify parameters that are
-    defined in your stack template.
+1. On the **Configure stack options** page, you can set additional options for your stack.
 
-You can use or change any parameters with default values.
+1. For the **Behavior on provisioning failure**, select **Preserve successfully provisioned resources**.
 
-5. When you're satisfied with the parameter values, choose
-    **Next**.
+1. When you're satisfied with the stack options, choose **Next**.
 
-6. On the **Configure stack options** page, you can set additional
-    options for your stack.
+1. Review your stack on the **Review** page and select **Update stack**.
 
-7. For the **Behavior on provisioning failure**, select
-    **Preserve successfully provisioned resources**.
+*Results*: Resources that failed to update transition the stack status to `UPDATE_FAILED` and roll back to the last known stable state. Resources without a last known stable state will be deleted by CloudFormation upon the next stack operation. Resources that are successfully provisioned are in a `CREATE_COMPLETE` or `UPDATE_COMPLETE` state. You can monitor the stack in the **Stack events** tab.
 
-8. When you're satisfied with the stack options, choose **Next**.
+------
+#### [ Change set ]
 
-9. Review your stack on the **Review** page and select **Update**
-**stack**.
+**Note**
+You can initiate a change set for a stack with a status of `CREATE_FAILED` or `UPDATE_FAILED`, but not for a status of `UPDATE_ROLLBACK_FAILED`.
 
-_Results_: Resources that failed to update transition the stack status
-to `UPDATE_FAILED` and roll back to the last known stable state. Resources without
-a last known stable state will be deleted by CloudFormation upon the next stack operation.
-Resources that are successfully provisioned are in a `CREATE_COMPLETE` or
-`UPDATE_COMPLETE` state. You can monitor the stack in the **Stack**
-**events** tab.
+**To Preserve successfully provisioned resources during a change set operation**
 
-Change set
+1. Sign in to the AWS Management Console and open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 
-###### Note
+1. Select the stack that contains the change set you want to initiate, and then choose the **Change sets** tab.
 
-You can initiate a change set for a stack with a status of `CREATE_FAILED` or
-`UPDATE_FAILED`, but not for a status of
-`UPDATE_ROLLBACK_FAILED`.
+1. Select the change set and then choose **Execute**.
 
-###### To Preserve successfully provisioned resources during a change set operation
+1. For **Execute change set**, select the **Preserve successfully provisioned resources** option.
 
-1. Sign in to the AWS Management Console and open the CloudFormation console at
-    [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
+1. Select **Execute change set**.
 
-2. Select the stack that contains the change set you want to initiate, and then choose the
-    **Change sets** tab.
+*Results*: Resources that failed to update transition the stack status to `UPDATE_FAILED` and roll back to the last known stable state. Resources without a last known stable state will be deleted by CloudFormation upon the next stack operation. Resources that are successfully provisioned are in a `CREATE_COMPLETE` or `UPDATE_COMPLETE` state. You can monitor the stack in the **Stack events** tab.
 
-3. Select the change set and then choose **Execute**.
-
-4. For **Execute change set**, select the **Preserve successfully**
-**provisioned resources** option.
-
-5. Select **Execute change set**.
-
-_Results_: Resources that failed to update transition the stack status
-to `UPDATE_FAILED` and roll back to the last known stable state. Resources without
-a last known stable state will be deleted by CloudFormation upon the next stack operation.
-Resources that are successfully provisioned are in a `CREATE_COMPLETE` or
-`UPDATE_COMPLETE` state. You can monitor the stack in the **Stack**
-**events** tab.
+------
 
 ## Preserve successfully provisioned resources (AWS CLI)
+<a name="stack-failure-options-cli"></a>
 
-Create stack
+------
+#### [ Create stack ]
 
-###### To preserve successfully provisioned resources during a stack create operation
+**To preserve successfully provisioned resources during a stack create operation**
 
-Specify the `--disable-rollback` option or `on-failure DO_NOTHING`
-enumeration during a [create-stack](../../../cli/latest/reference/cloudformation/create-stack.md)
-operation.
+Specify the `--disable-rollback` option or `on-failure DO_NOTHING` enumeration during a [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) operation.
 
-1. Provide a stack name and template to the **create-stack** command with
-    the `--disable-rollback` option.
+1. Provide a stack name and template to the **create-stack** command with the `--disable-rollback` option.
 
-```nohighlight
-
-aws cloudformation create-stack --stack-name myteststack \
-       --template-body file://template.yaml \
+   ```
+   aws cloudformation create-stack --stack-name {{myteststack}} \
+       --template-body {{file://template.yaml}} \
        --disable-rollback
-```
+   ```
 
-The command returns the following output.
+   The command returns the following output.
 
-```json
-
-{
+   ```
+   {
        "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896"
-}
-```
+   }
+   ```
 
-2. Describe the state of the stack using the **describe-stacks**
-    command.
+1. Describe the state of the stack using the **describe-stacks** command.
 
-```nohighlight
+   ```
+   aws cloudformation describe-stacks --stack-name {{myteststack}}
+   ```
 
-aws cloudformation describe-stacks --stack-name myteststack
-```
+   The command returns the following output.
 
-The command returns the following output.
-
-```json
-
-{
+   ```
+   {
        "Stacks":  [
            {
                "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896",
@@ -267,44 +179,39 @@ The command returns the following output.
                "DisableRollback": true
            }
        ]
-}
-```
+   }
+   ```
 
-Update stack
+------
+#### [ Update stack ]
 
-###### To preserve successfully provisioned resources during a stack update operation
+**To preserve successfully provisioned resources during a stack update operation**
 
-1. Provide an existing stack name and template to the **update-stack**
-    command with the `--disable-rollback` option.
+1. Provide an existing stack name and template to the **update-stack** command with the `--disable-rollback` option.
 
-```nohighlight
+   ```
+   aws cloudformation update-stack --stack-name {{myteststack}} \
+       --template-url {{https://s3.amazonaws.com/{{amzn-s3-demo-bucket}}/updated.template}} --disable-rollback
+   ```
 
-aws cloudformation update-stack --stack-name myteststack \
-       --template-url https://s3.amazonaws.com/amzn-s3-demo-bucket/updated.template --disable-rollback
-```
+   The command returns the following output.
 
-The command returns the following output.
-
-```json
-
-{
+   ```
+   {
        "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896"
-}
-```
+   }
+   ```
 
-2. Describe the state of the stack using either the **describe-stacks** or
-    **describe-stack-events** command.
+1. Describe the state of the stack using either the **describe-stacks** or **describe-stack-events** command.
 
-```nohighlight
+   ```
+   aws cloudformation describe-stacks --stack-name {{myteststack}}
+   ```
 
-aws cloudformation describe-stacks --stack-name myteststack
-```
+   The command returns the following output.
 
-The command returns the following output.
-
-```json
-
-{
+   ```
+   {
        "Stacks":  [
            {
                "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896",
@@ -318,63 +225,52 @@ The command returns the following output.
                "DisableRollback": true
            }
        ]
-}
-```
+   }
+   ```
 
-Change set
+------
+#### [ Change set ]
 
-###### Note
+**Note**
+You can initiate a change set for a stack with a status of `CREATE_FAILED` or `UPDATE_FAILED` but not for a status of `UPDATE_ROLLBACK_FAILED`.
 
-You can initiate a change set for a stack with a status of `CREATE_FAILED` or
-`UPDATE_FAILED`
-but not for a status of `UPDATE_ROLLBACK_FAILED`.
+**To preserve successfully provisioned resources during a change set operation**
 
-###### To preserve successfully provisioned resources during a change set operation
+Specify the `--disable-rollback` option during an [execute-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) operation.
 
-Specify the `--disable-rollback` option
-during an [execute-change-set](../../../cli/latest/reference/cloudformation/execute-change-set.md)
-operation.
+1. Provide a stack name and template to the **execute-change-set** command with the `--disable-rollback` option.
 
-1. Provide a stack name and template to the **execute-change-set** command
-    with the `--disable-rollback` option.
+   ```
+   aws cloudformation execute-change-set --stack-name {{myteststack}} \
+       --change-set-name {{my-change-set}} --template-body {{file://template.yaml}}
+   ```
 
-```nohighlight
+   The command returns the following output.
 
-aws cloudformation execute-change-set --stack-name myteststack \
-       --change-set-name my-change-set --template-body file://template.yaml
-```
-
-The command returns the following output.
-
-```json
-
-{
+   ```
+   {
     "Id": "arn:aws:cloudformation:us-east-1:123456789012:changeSet/my-change-set/bc9555ba-a949-xmpl-bfb8-f41d04ec5784",
     "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896"
-}
-```
+   }
+   ```
 
-2. Initiate the change set with `--disable-rollback` option.
+1. Initiate the change set with `--disable-rollback` option.
 
-```nohighlight
+   ```
+   aws cloudformation execute-change-set --stack-name {{myteststack}} \
+       --change-set-name {{my-change-set}} -–disable-rollback
+   ```
 
-aws cloudformation execute-change-set --stack-name myteststack \
-       --change-set-name my-change-set -–disable-rollback
-```
+1. Determine the status of the stack using either the **describe-stacks** or **describe-stack-events** command.
 
-3. Determine the status of the stack using either the **describe-stacks**
-    or **describe-stack-events** command.
+   ```
+   aws cloudformation describe-stack-events --stack-name {{myteststack}}
+   ```
 
-```nohighlight
+   The command returns the following output.
 
-aws cloudformation describe-stack-events --stack-name myteststack
-```
-
-The command returns the following output.
-
-```json
-
-{
+   ```
+   {
       "StackEvents": [
         {
            "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896",
@@ -387,39 +283,34 @@ The command returns the following output.
            "ResourceStatus": "UPDATE_FAILED"
            "ResourceStatusReason": "User XYZ is not allowed to perform S3::UpdateBucket on MyBucket"
         }
-}
-```
+   }
+   ```
 
-4. Fix permissions errors and retry the operation.
+1. Fix permissions errors and retry the operation.
 
-```nohighlight
-
-aws cloudformation update-stack --stack-name myteststack \
+   ```
+   aws cloudformation update-stack --stack-name {{myteststack}} \
        --use-previous-template --disable-rollback
-```
+   ```
 
-The command returns the following output.
+   The command returns the following output.
 
-```json
-
-{
+   ```
+   {
        "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896"
-}
-```
+   }
+   ```
 
-5. Describe the state of the stack using either the **describe-stacks** or
-    **describe-stack-events** command.
+1. Describe the state of the stack using either the **describe-stacks** or **describe-stack-events** command.
 
-```nohighlight
+   ```
+   aws cloudformation describe-stacks --stack-name {{myteststack}}
+   ```
 
-aws cloudformation describe-stacks --stack-name myteststack
-```
+   The command returns the following output.
 
-The command returns the following output.
-
-```json
-
-{
+   ```
+   {
        "Stacks":  [
            {
                "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896",
@@ -433,42 +324,49 @@ The command returns the following output.
                "DisableRollback": true
            }
        ]
-}
-```
+   }
+   ```
+
+------
 
 ### Rolling back a stack
+<a name="roll-back-stack-cli"></a>
 
-You can use the [rollback-stack](../../../cli/latest/reference/cloudformation/rollback-stack.md) command to
-roll back a stack with a `CREATE_FAILED` or `UPDATE_FAILED` stack status
-to its last stable state.
+You can use the [rollback-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/rollback-stack.html) command to roll back a stack with a `CREATE_FAILED` or `UPDATE_FAILED` stack status to its last stable state.
 
-The following **rollback-stack** command rolls back the specified
-stack.
+The following **rollback-stack** command rolls back the specified stack.
 
-```nohighlight
-
-aws cloudformation rollback-stack --stack-name myteststack
+```
+aws cloudformation rollback-stack --stack-name {{myteststack}}
 ```
 
 The command returns the following output.
 
-```json
-
+```
 {
     "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896"
 }
 ```
 
-###### Note
+**Note**
+The **rollback-stack** operation will delete a stack if it doesn't contain a last known stable state.
 
-The **rollback-stack** operation will delete a stack if it doesn't contain
-a last known stable state.
+### Express mode and rollback
+<a name="express-mode-and-rollback"></a>
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+When you use express mode, CloudFormation disables rollback by default. If a resource operation fails, CloudFormation does not automatically roll back previously completed changes. Instead, the stack enters a failed state and you can troubleshoot the issue before retrying.
 
-Determine the cause of a stack failure
+To re-enable rollback with express mode, set `disableRollback` to `false` in the `--deployment-config` parameter when issuing the stack operation:
 
-Roll back your stack on alarm
-breach
+```
+aws cloudformation create-stack --stack-name {{myteststack}} \
+    --template-body {{file://sampletemplate.json}} \
+    --deployment-config '{"mode": "EXPRESS", "disableRollback": false}'
+```
+
+**Note**
+Disabling rollback isn't supported for immutable update operations. If an update requires replacing a resource and the operation fails, the failed state can't be preserved for retry.
+
+For more information about express mode, see [Express mode](cloudformation-express-mode.md).
 
 All content copied from https://docs.aws.amazon.com/.

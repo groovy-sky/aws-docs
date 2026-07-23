@@ -2,56 +2,43 @@
 title: "AWS::QuickSight::Template PivotTableFieldSubtotalOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PivotTableFieldSubtotalOptions
+<a name="aws-properties-quicksight-template-pivottablefieldsubtotaloptions"></a>
 
 The optional configuration of subtotals cells.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pivottablefieldsubtotaloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pivottablefieldsubtotaloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String
+  "[FieldId](#cfn-quicksight-template-pivottablefieldsubtotaloptions-fieldid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pivottablefieldsubtotaloptions-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-
+```
+  [FieldId](#cfn-quicksight-template-pivottablefieldsubtotaloptions-fieldid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pivottablefieldsubtotaloptions-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-pivottablefieldsubtotaloptions-fieldid"></a>
 The field ID of the subtotal options.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableFieldOptions
-
-PivotTableFieldWells
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

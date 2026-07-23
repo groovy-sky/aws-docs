@@ -2,55 +2,42 @@
 title: "AWS::InspectorV2::CodeSecurityIntegration CreateDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CodeSecurityIntegration CreateDetails
+<a name="aws-properties-inspectorv2-codesecurityintegration-createdetails"></a>
 
-Contains details required to create a code security integration with a specific
-repository provider.
+Contains details required to create a code security integration with a specific repository provider.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-codesecurityintegration-createdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-codesecurityintegration-createdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "gitlabSelfManaged" : CreateGitLabSelfManagedIntegrationDetail
+  "[gitlabSelfManaged](#cfn-inspectorv2-codesecurityintegration-createdetails-gitlabselfmanaged)" : {{CreateGitLabSelfManagedIntegrationDetail}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-codesecurityintegration-createdetails-syntax.yaml"></a>
 
-```yaml
-
-  gitlabSelfManaged:
-    CreateGitLabSelfManagedIntegrationDetail
-
+```
+  [gitlabSelfManaged](#cfn-inspectorv2-codesecurityintegration-createdetails-gitlabselfmanaged): {{
+    CreateGitLabSelfManagedIntegrationDetail}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-codesecurityintegration-createdetails-properties"></a>
 
-`gitlabSelfManaged`
-
-Details specific to creating an integration with a self-managed GitLab
-instance.
-
-_Required_: Yes
-
-_Type_: [CreateGitLabSelfManagedIntegrationDetail](aws-properties-inspectorv2-codesecurityintegration-creategitlabselfmanagedintegrationdetail.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::InspectorV2::CodeSecurityIntegration
-
-CreateGitLabSelfManagedIntegrationDetail
+`gitlabSelfManaged`  <a name="cfn-inspectorv2-codesecurityintegration-createdetails-gitlabselfmanaged"></a>
+Details specific to creating an integration with a self-managed GitLab instance.
+*Required*: Yes
+*Type*: [CreateGitLabSelfManagedIntegrationDetail](aws-properties-inspectorv2-codesecurityintegration-creategitlabselfmanagedintegrationdetail.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

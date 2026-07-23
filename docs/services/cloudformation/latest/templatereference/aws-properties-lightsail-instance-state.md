@@ -2,66 +2,49 @@
 title: "AWS::Lightsail::Instance State"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Instance State
+<a name="aws-properties-lightsail-instance-state"></a>
 
-`State` is a property of the [AWS::Lightsail::Instance](../userguide/aws-resource-lightsail-instance.md) resource. It describes the status code and the state
-(for example, `running`) of an instance.
+`State` is a property of the [AWS::Lightsail::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-instance.html) resource. It describes the status code and the state (for example, `running`) of an instance.
 
 ## Syntax
+<a name="aws-properties-lightsail-instance-state-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-instance-state-syntax.json"></a>
 
-```json
-
+```
 {
-  "Code" : Integer,
-  "Name" : String
+  "[Code](#cfn-lightsail-instance-state-code)" : {{Integer}},
+  "[Name](#cfn-lightsail-instance-state-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-instance-state-syntax.yaml"></a>
 
-```yaml
-
-  Code: Integer
-  Name: String
-
+```
+  [Code](#cfn-lightsail-instance-state-code): {{Integer}}
+  [Name](#cfn-lightsail-instance-state-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-instance-state-properties"></a>
 
-`Code`
-
+`Code`  <a name="cfn-lightsail-instance-state-code"></a>
 The status code of the instance.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The state of the instance (for example, `running` or
-`pending`).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Port
-
-Tag
+`Name`  <a name="cfn-lightsail-instance-state-name"></a>
+The state of the instance (for example, `running` or `pending`).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

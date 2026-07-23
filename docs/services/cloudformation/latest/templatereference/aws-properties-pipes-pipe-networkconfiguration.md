@@ -2,56 +2,42 @@
 title: "AWS::Pipes::Pipe NetworkConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe NetworkConfiguration
+<a name="aws-properties-pipes-pipe-networkconfiguration"></a>
 
-This structure specifies the network configuration for an Amazon ECS
-task.
+This structure specifies the network configuration for an Amazon ECS task.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-networkconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-networkconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsvpcConfiguration" : AwsVpcConfiguration
+  "[AwsvpcConfiguration](#cfn-pipes-pipe-networkconfiguration-awsvpcconfiguration)" : {{AwsVpcConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-networkconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AwsvpcConfiguration:
-    AwsVpcConfiguration
-
+```
+  [AwsvpcConfiguration](#cfn-pipes-pipe-networkconfiguration-awsvpcconfiguration): {{
+    AwsVpcConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-networkconfiguration-properties"></a>
 
-`AwsvpcConfiguration`
-
-Use this structure to specify the VPC subnets and security groups for the task, and
-whether a public IP address is to be used. This structure is relevant only for ECS tasks
-that use the `awsvpc` network mode.
-
-_Required_: No
-
-_Type_: [AwsVpcConfiguration](aws-properties-pipes-pipe-awsvpcconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiMeasureMapping
-
-PipeEnrichmentHttpParameters
+`AwsvpcConfiguration`  <a name="cfn-pipes-pipe-networkconfiguration-awsvpcconfiguration"></a>
+Use this structure to specify the VPC subnets and security groups for the task, and whether a public IP address is to be used. This structure is relevant only for ECS tasks that use the `awsvpc` network mode.
+*Required*: No
+*Type*: [AwsVpcConfiguration](aws-properties-pipes-pipe-awsvpcconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

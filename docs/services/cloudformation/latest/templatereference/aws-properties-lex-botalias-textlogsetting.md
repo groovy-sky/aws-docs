@@ -2,67 +2,50 @@
 title: "AWS::Lex::BotAlias TextLogSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::BotAlias TextLogSetting
+<a name="aws-properties-lex-botalias-textlogsetting"></a>
 
 Defines settings to enable text conversation logs.
 
 ## Syntax
+<a name="aws-properties-lex-botalias-textlogsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-botalias-textlogsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destination" : TextLogDestination,
-  "Enabled" : Boolean
+  "[Destination](#cfn-lex-botalias-textlogsetting-destination)" : {{TextLogDestination}},
+  "[Enabled](#cfn-lex-botalias-textlogsetting-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-botalias-textlogsetting-syntax.yaml"></a>
 
-```yaml
-
-  Destination:
-    TextLogDestination
-  Enabled: Boolean
-
+```
+  [Destination](#cfn-lex-botalias-textlogsetting-destination): {{
+    TextLogDestination}}
+  [Enabled](#cfn-lex-botalias-textlogsetting-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-botalias-textlogsetting-properties"></a>
 
-`Destination`
+`Destination`  <a name="cfn-lex-botalias-textlogsetting-destination"></a>
+Defines the Amazon CloudWatch Logs destination log group for conversation text logs.
+*Required*: Yes
+*Type*: [TextLogDestination](aws-properties-lex-botalias-textlogdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Defines the Amazon CloudWatch Logs destination log group for
-conversation text logs.
-
-_Required_: Yes
-
-_Type_: [TextLogDestination](aws-properties-lex-botalias-textlogdestination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-Determines whether conversation logs should be stored for an
-alias.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TextLogDestination
-
-AWS::Lex::BotVersion
+`Enabled`  <a name="cfn-lex-botalias-textlogsetting-enabled"></a>
+Determines whether conversation logs should be stored for an alias.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

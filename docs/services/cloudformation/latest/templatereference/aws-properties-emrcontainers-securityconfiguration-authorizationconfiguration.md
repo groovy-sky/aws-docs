@@ -2,54 +2,42 @@
 title: "AWS::EMRContainers::SecurityConfiguration AuthorizationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration AuthorizationConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration"></a>
 
 Authorization-related configuration inputs for the security configuration.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LakeFormationConfiguration" : LakeFormationConfiguration
+  "[LakeFormationConfiguration](#cfn-emrcontainers-securityconfiguration-authorizationconfiguration-lakeformationconfiguration)" : {{LakeFormationConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LakeFormationConfiguration:
-    LakeFormationConfiguration
-
+```
+  [LakeFormationConfiguration](#cfn-emrcontainers-securityconfiguration-authorizationconfiguration-lakeformationconfiguration): {{
+    LakeFormationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration-properties"></a>
 
-`LakeFormationConfiguration`
-
-AWS Lake Formation related configuration inputs for the security
-configuration.
-
-_Required_: No
-
-_Type_: [LakeFormationConfiguration](aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthenticationConfiguration
-
-ContainerInfo
+`LakeFormationConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-authorizationconfiguration-lakeformationconfiguration"></a>
+AWS Lake Formation related configuration inputs for the security configuration.
+*Required*: No
+*Type*: [LakeFormationConfiguration](aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

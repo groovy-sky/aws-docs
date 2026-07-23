@@ -2,109 +2,91 @@
 title: "AWS::ElasticLoadBalancing::LoadBalancer Policies"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancing::LoadBalancer Policies
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies"></a>
 
 Specifies policies for your Classic Load Balancer.
 
-To associate policies with a listener, use the [PolicyNames](../userguide/aws-properties-ec2-elb-listener.md#cfn-ec2-elb-listener-policynames)
-property for the listener.
+To associate policies with a listener, use the [PolicyNames](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames) property for the listener.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : [ {Key: Value, ...}, ... ],
-  "InstancePorts" : [ String, ... ],
-  "LoadBalancerPorts" : [ String, ... ],
-  "PolicyName" : String,
-  "PolicyType" : String
+  "[Attributes](#cfn-elasticloadbalancing-loadbalancer-policies-attributes)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
+  "[InstancePorts](#cfn-elasticloadbalancing-loadbalancer-policies-instanceports)" : {{[ String, ... ]}},
+  "[LoadBalancerPorts](#cfn-elasticloadbalancing-loadbalancer-policies-loadbalancerports)" : {{[ String, ... ]}},
+  "[PolicyName](#cfn-elasticloadbalancing-loadbalancer-policies-policyname)" : {{String}},
+  "[PolicyType](#cfn-elasticloadbalancing-loadbalancer-policies-policytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
+```
+  [Attributes](#cfn-elasticloadbalancing-loadbalancer-policies-attributes): {{
     -
-    Key: Value
-  InstancePorts:
-    - String
-  LoadBalancerPorts:
-    - String
-  PolicyName: String
-  PolicyType: String
-
+    {{Key}}: {{Value}}}}
+  [InstancePorts](#cfn-elasticloadbalancing-loadbalancer-policies-instanceports): {{
+    - String}}
+  [LoadBalancerPorts](#cfn-elasticloadbalancing-loadbalancer-policies-loadbalancerports): {{
+    - String}}
+  [PolicyName](#cfn-elasticloadbalancing-loadbalancer-policies-policyname): {{String}}
+  [PolicyType](#cfn-elasticloadbalancing-loadbalancer-policies-policytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies-properties"></a>
 
-`Attributes`
-
+`Attributes`  <a name="cfn-elasticloadbalancing-loadbalancer-policies-attributes"></a>
 The policy attributes.
+*Required*: Yes
+*Type*: Array of Object
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of Object
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstancePorts`
-
+`InstancePorts`  <a name="cfn-elasticloadbalancing-loadbalancer-policies-instanceports"></a>
 The instance ports for the policy. Required only for some policy types.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoadBalancerPorts`
-
+`LoadBalancerPorts`  <a name="cfn-elasticloadbalancing-loadbalancer-policies-loadbalancerports"></a>
 The load balancer ports for the policy. Required only for some policy types.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyName`
-
+`PolicyName`  <a name="cfn-elasticloadbalancing-loadbalancer-policies-policyname"></a>
 The name of the policy.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyType`
-
+`PolicyType`  <a name="cfn-elasticloadbalancing-loadbalancer-policies-policytype"></a>
 The name of the policy type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies--examples"></a>
+
+###
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies--examples--"></a>
 
 #### JSON
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies--examples----json"></a>
 
-```json
-
+```
 "Policies": [{
     "PolicyName": "My-SSLNegotiation-Policy",
     "PolicyType": "SSLNegotiationPolicyType",
@@ -116,9 +98,9 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 ```
 
 #### YAML
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies--examples----yaml"></a>
 
-```yaml
-
+```
 Policies:
     - PolicyName: My-SSLNegotiation-Policy
       PolicyType: SSLNegotiationPolicyType
@@ -128,14 +110,7 @@ Policies:
 ```
 
 ## See also
-
-- [CreateLoadBalancerPolicy](../../../../reference/elasticloadbalancing/2012-06-01/apireference/api-createloadbalancerpolicy.md)
-in the _Elastic Load Balancing API Reference (version 2012-06-01)_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Listeners
-
-Tag
+<a name="aws-properties-elasticloadbalancing-loadbalancer-policies--seealso"></a>
++ [CreateLoadBalancerPolicy](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_CreateLoadBalancerPolicy.html) in the *Elastic Load Balancing API Reference (version 2012-06-01)*
 
 All content copied from https://docs.aws.amazon.com/.

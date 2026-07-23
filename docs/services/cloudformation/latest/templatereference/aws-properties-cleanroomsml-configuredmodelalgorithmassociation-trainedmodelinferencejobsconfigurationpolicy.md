@@ -2,70 +2,53 @@
 title: "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation TrainedModelInferenceJobsConfigurationPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation TrainedModelInferenceJobsConfigurationPolicy
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy"></a>
 
 Provides configuration information for the trained model inference job.
 
 ## Syntax
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerLogs" : [ LogsConfigurationPolicy, ... ],
-  "MaxOutputSize" : TrainedModelInferenceMaxOutputSize
+  "[ContainerLogs](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-containerlogs)" : {{[ LogsConfigurationPolicy, ... ]}},
+  "[MaxOutputSize](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-maxoutputsize)" : {{TrainedModelInferenceMaxOutputSize}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-syntax.yaml"></a>
 
-```yaml
-
-  ContainerLogs:
-    - LogsConfigurationPolicy
-  MaxOutputSize:
-    TrainedModelInferenceMaxOutputSize
-
+```
+  [ContainerLogs](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-containerlogs): {{
+    - LogsConfigurationPolicy}}
+  [MaxOutputSize](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-maxoutputsize): {{
+    TrainedModelInferenceMaxOutputSize}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-properties"></a>
 
-`ContainerLogs`
-
+`ContainerLogs`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-containerlogs"></a>
 The logs container for the trained model inference job.
+*Required*: No
+*Type*: Array of [LogsConfigurationPolicy](aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [LogsConfigurationPolicy](aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaxOutputSize`
-
+`MaxOutputSize`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencejobsconfigurationpolicy-maxoutputsize"></a>
 The maximum allowed size of the output of the trained model inference job.
-
-_Required_: No
-
-_Type_: [TrainedModelInferenceMaxOutputSize](aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrainedModelExportsMaxSize
-
-TrainedModelInferenceMaxOutputSize
+*Required*: No
+*Type*: [TrainedModelInferenceMaxOutputSize](aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelinferencemaxoutputsize.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::AppIntegrations::Application ContactHandling"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application ContactHandling
+<a name="aws-properties-appintegrations-application-contacthandling"></a>
 
-The `ContactHandling` property type specifies Property description not available. for an [AWS::AppIntegrations::Application](aws-resource-appintegrations-application.md).
+<a name="aws-properties-appintegrations-application-contacthandling-description"></a>The `ContactHandling` property type specifies Property description not available. for an [AWS::AppIntegrations::Application](aws-resource-appintegrations-application.md).
 
 ## Syntax
+<a name="aws-properties-appintegrations-application-contacthandling-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appintegrations-application-contacthandling-syntax.json"></a>
 
-```json
-
+```
 {
-  "Scope" : String
+  "[Scope](#cfn-appintegrations-application-contacthandling-scope)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appintegrations-application-contacthandling-syntax.yaml"></a>
 
-```yaml
-
-  Scope: String
-
+```
+  [Scope](#cfn-appintegrations-application-contacthandling-scope): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appintegrations-application-contacthandling-properties"></a>
 
-`Scope`
-
+`Scope`  <a name="cfn-appintegrations-application-contacthandling-scope"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CROSS_CONTACTS | PER_CONTACT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationSourceConfig
-
-ExternalUrlConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CROSS_CONTACTS | PER_CONTACT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

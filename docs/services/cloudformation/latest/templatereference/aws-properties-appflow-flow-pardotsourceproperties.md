@@ -2,56 +2,43 @@
 title: "AWS::AppFlow::Flow PardotSourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow PardotSourceProperties
+<a name="aws-properties-appflow-flow-pardotsourceproperties"></a>
 
 The properties that are applied when Salesforce Pardot is being used as a source.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-pardotsourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-pardotsourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Object" : String
+  "[Object](#cfn-appflow-flow-pardotsourceproperties-object)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-pardotsourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  Object: String
-
+```
+  [Object](#cfn-appflow-flow-pardotsourceproperties-object): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-pardotsourceproperties-properties"></a>
 
-`Object`
-
+`Object`  <a name="cfn-appflow-flow-pardotsourceproperties-object"></a>
 The object specified in the Salesforce Pardot flow source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetadataCatalogConfig
-
-PrefixConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,98 +2,69 @@
 title: "AWS::Bedrock::DataAutomationProject ModalityRoutingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject ModalityRoutingConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration"></a>
 
-This element allows you to set up where JPEG, PNG, MOV, and MP4 files
-get routed to for processing. JPEG routing applies to both "JPEG" and "JPG"
-file extensions.
+This element allows you to set up where JPEG, PNG, MOV, and MP4 files get routed to for processing. JPEG routing applies to both "JPEG" and "JPG" file extensions.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "jpeg" : String,
-  "mov" : String,
-  "mp4" : String,
-  "png" : String
+  "[jpeg](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-jpeg)" : {{String}},
+  "[mov](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mov)" : {{String}},
+  "[mp4](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mp4)" : {{String}},
+  "[png](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-png)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  jpeg: String
-  mov: String
-  mp4: String
-  png: String
-
+```
+  [jpeg](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-jpeg): {{String}}
+  [mov](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mov): {{String}}
+  [mp4](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mp4): {{String}}
+  [png](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-png): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration-properties"></a>
 
-`jpeg`
-
+`jpeg`  <a name="cfn-bedrock-dataautomationproject-modalityroutingconfiguration-jpeg"></a>
 Sets whether JPEG files are routed to document or image processing.
+*Required*: No
+*Type*: String
+*Allowed values*: `DOCUMENT | IMAGE | VIDEO | AUDIO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DOCUMENT | IMAGE | VIDEO | AUDIO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`mov`
-
+`mov`  <a name="cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mov"></a>
 Sets whether MOV files are routed to audio or video processing.
+*Required*: No
+*Type*: String
+*Allowed values*: `DOCUMENT | IMAGE | VIDEO | AUDIO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DOCUMENT | IMAGE | VIDEO | AUDIO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`mp4`
-
+`mp4`  <a name="cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mp4"></a>
 Sets whether MP4 files are routed to audio or video processing.
+*Required*: No
+*Type*: String
+*Allowed values*: `DOCUMENT | IMAGE | VIDEO | AUDIO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DOCUMENT | IMAGE | VIDEO | AUDIO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`png`
-
+`png`  <a name="cfn-bedrock-dataautomationproject-modalityroutingconfiguration-png"></a>
 Sets whether PNG files are routed to document or image processing.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DOCUMENT | IMAGE | VIDEO | AUDIO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModalityProcessingConfiguration
-
-OverrideConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `DOCUMENT | IMAGE | VIDEO | AUDIO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,232 +2,175 @@
 title: "AWS::Bedrock::KnowledgeBase"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase
+<a name="aws-resource-bedrock-knowledgebase"></a>
 
-Specifies a knowledge base as a resource in a top-level template. Minimally, you must
-specify the following properties:
-
-- Name – Specify a name for the knowledge base.
-
-- RoleArn – Specify the Amazon Resource Name (ARN) of the IAM
-role with permissions to invoke API operations on the knowledge base. For more
-information, see [Create a service role for\
-Knowledge base for Amazon Bedrock](../../../bedrock/latest/userguide/kb-permissions.md).
-
-- KnowledgeBaseConfiguration – Specify the embeddings configuration of the
-knowledge base. The following sub-properties are required:
-
-- Type – Specify the value `VECTOR`.
-
-- StorageConfiguration – Specify information about the vector store in which the
-data source is stored. The following sub-properties are required:
-
-- Type – Specify the vector store service that you are using.
-
-###### Note
-
+Specifies a knowledge base as a resource in a top-level template. Minimally, you must specify the following properties:
++ Name – Specify a name for the knowledge base.
++ RoleArn – Specify the Amazon Resource Name (ARN) of the IAM role with permissions to invoke API operations on the knowledge base. For more information, see [Create a service role for Knowledge base for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-permissions.html).
++ KnowledgeBaseConfiguration – Specify the embeddings configuration of the knowledge base. The following sub-properties are required:
+  + Type – Specify the value `VECTOR`.
++ StorageConfiguration – Specify information about the vector store in which the data source is stored. The following sub-properties are required:
+  + Type – Specify the vector store service that you are using.
+**Note**
 Redis Enterprise Cloud vector stores are currently unsupported in CloudFormation.
 
-For more information about using knowledge bases in Amazon Bedrock, see [Knowledge\
-base for Amazon Bedrock](../../../bedrock/latest/userguide/knowledge-base.md).
+For more information about using knowledge bases in Amazon Bedrock, see [Knowledge base for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html).
 
-See the **Properties** section below for descriptions of
-both the required and optional properties.
+See the **Properties** section below for descriptions of both the required and optional properties.
 
 ## Syntax
+<a name="aws-resource-bedrock-knowledgebase-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-knowledgebase-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::KnowledgeBase",
   "Properties" : {
-      "Description" : String,
-      "KnowledgeBaseConfiguration" : KnowledgeBaseConfiguration,
-      "Name" : String,
-      "RoleArn" : String,
-      "StorageConfiguration" : StorageConfiguration,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-bedrock-knowledgebase-description)" : {{String}},
+      "[KnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration)" : {{KnowledgeBaseConfiguration}},
+      "[Name](#cfn-bedrock-knowledgebase-name)" : {{String}},
+      "[RoleArn](#cfn-bedrock-knowledgebase-rolearn)" : {{String}},
+      "[StorageConfiguration](#cfn-bedrock-knowledgebase-storageconfiguration)" : {{StorageConfiguration}},
+      "[Tags](#cfn-bedrock-knowledgebase-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-knowledgebase-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::KnowledgeBase
 Properties:
-  Description: String
-  KnowledgeBaseConfiguration:
-    KnowledgeBaseConfiguration
-  Name: String
-  RoleArn: String
-  StorageConfiguration:
-    StorageConfiguration
-  Tags:
-    Key: Value
-
+  [Description](#cfn-bedrock-knowledgebase-description): {{String}}
+  [KnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration): {{
+    KnowledgeBaseConfiguration}}
+  [Name](#cfn-bedrock-knowledgebase-name): {{String}}
+  [RoleArn](#cfn-bedrock-knowledgebase-rolearn): {{String}}
+  [StorageConfiguration](#cfn-bedrock-knowledgebase-storageconfiguration): {{
+    StorageConfiguration}}
+  [Tags](#cfn-bedrock-knowledgebase-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-knowledgebase-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-bedrock-knowledgebase-description"></a>
+ The description of the knowledge base associated with the inline agent.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The description of the knowledge base associated with the inline agent.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KnowledgeBaseConfiguration`
-
+`KnowledgeBaseConfiguration`  <a name="cfn-bedrock-knowledgebase-knowledgebaseconfiguration"></a>
 Contains details about the embeddings configuration of the knowledge base.
+*Required*: Yes
+*Type*: [KnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [KnowledgeBaseConfiguration](aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrock-knowledgebase-name"></a>
 The name of the knowledge base.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?){1,100}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?){1,100}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-bedrock-knowledgebase-rolearn"></a>
 The Amazon Resource Name (ARN) of the IAM role with permissions to invoke API operations on the knowledge base.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StorageConfiguration`
-
+`StorageConfiguration`  <a name="cfn-bedrock-knowledgebase-storageconfiguration"></a>
 Contains details about the storage configuration of the knowledge base.
+*Required*: No
+*Type*: [StorageConfiguration](aws-properties-bedrock-knowledgebase-storageconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [StorageConfiguration](aws-properties-bedrock-knowledgebase-storageconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-Metadata that you can assign to a resource as key-value pairs. For more information,
-see the following resources:
-
-- [Tag naming\
-limits and requirements](../../../tag-editor/latest/userguide/tagging.md#tag-conventions)
-
-- [Tagging\
-best practices](../../../tag-editor/latest/userguide/tagging.md#tag-best-practices)
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-bedrock-knowledgebase-tags"></a>
+Metadata that you can assign to a resource as key-value pairs. For more information, see the following resources:
++  [Tag naming limits and requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-conventions)
++  [Tagging best practices](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-best-practices)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrock-knowledgebase-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-knowledgebase-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the knowledge base ID.
 
-For example, `{ "Ref": "myKnowledgeBase" }` could return the value
-`"KB12345678"`.
+For example, `{ "Ref": "myKnowledgeBase" }` could return the value `"KB12345678"`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-knowledgebase-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-bedrock-knowledgebase-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time the knowledge base was created.
 
-`FailureReasons`
-
+`FailureReasons`  <a name="FailureReasons-fn::getatt"></a>
 A list of reasons that the API operation on the knowledge base failed.
 
-`KnowledgeBaseArn`
-
+`KnowledgeBaseArn`  <a name="KnowledgeBaseArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the knowledge base.
 
-`KnowledgeBaseId`
+`KnowledgeBaseId`  <a name="KnowledgeBaseId-fn::getatt"></a>
+ The unique identifier for a knowledge base associated with the inline agent.
 
-The unique identifier for a knowledge base associated with the inline agent.
-
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the knowledge base.
 
-`UpdatedAt`
-
+`UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The time the knowledge base was last updated.
 
 ## Examples
+<a name="aws-resource-bedrock-knowledgebase--examples"></a>
 
-The following examples provide example templates for creating knowledge bases in
-different vector stores.
+The following examples provide example templates for creating knowledge bases in different vector stores.
 
-###### Note
-
+**Note**
 Redis Enterprise Cloud vector stores are currently unsupported in CloudFormation.
 
-- [Create a knowledge base in an Amazon OpenSearch Serverless vector collection.](#aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection.)
-
-- [Create a knowledge base in an Amazon Aurora database cluster.](#aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster.)
-
-- [Create a knowledge base in a Pinecone index.](#aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index.)
+**Topics**
++ [Create a knowledge base in an Amazon OpenSearch Serverless vector collection.](#aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection.)
++ [Create a knowledge base in an Amazon Aurora database cluster.](#aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster.)
++ [Create a knowledge base in a Pinecone index.](#aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index.)
 
 ### Create a knowledge base in an Amazon OpenSearch Serverless vector collection.
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection."></a>
 
-The following example creates a knowledge base in a vector index within an
-Amazon OpenSearch Serverless vector collection.
+The following example creates a knowledge base in a vector index within an Amazon OpenSearch Serverless vector collection.
 
 #### YAML
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection.--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for Knowledge base with Amazon Opensearch Serverless vector database.
 Parameters:
@@ -274,13 +217,12 @@ Resources:
         S3Configuration:
           BucketArn: "arn:aws:s3:::kb-test-aws"
           InclusionPrefixes: ["aws-overview.pdf"]
-
 ```
 
 #### JSON
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection.--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -360,14 +302,14 @@ Resources:
 ```
 
 ### Create a knowledge base in an Amazon Aurora database cluster.
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster."></a>
 
-The following example creates a knowledge base in a vector index within an
-Amazon Aurora database cluster.
+The following example creates a knowledge base in a vector index within an Amazon Aurora database cluster.
 
 #### YAML
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster.--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for Knowledge base with RDS vector database.
 Parameters:
@@ -417,13 +359,12 @@ Resources:
         S3Configuration:
           BucketArn: "arn:aws:s3:::kb-test-aws"
           InclusionPrefixes: ["aws-overview.pdf"]
-
 ```
 
 #### JSON
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster.--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -510,13 +451,14 @@ Resources:
 ```
 
 ### Create a knowledge base in a Pinecone index.
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index."></a>
 
 The following example creates a knowledge base in a Pinecone index.
 
 #### YAML
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index.--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for Knowledge base with Pinecone vector database.
 Parameters:
@@ -566,9 +508,9 @@ Resources:
 ```
 
 #### JSON
+<a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index.--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -646,11 +588,5 @@ Resources:
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AudioConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

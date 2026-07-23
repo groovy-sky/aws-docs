@@ -2,58 +2,44 @@
 title: "AWS::IoTTwinMaker::ComponentType CompositeComponentType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::ComponentType CompositeComponentType
+<a name="aws-properties-iottwinmaker-componenttype-compositecomponenttype"></a>
 
 Specifies the ID of the composite component type.
 
 ## Syntax
+<a name="aws-properties-iottwinmaker-componenttype-compositecomponenttype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iottwinmaker-componenttype-compositecomponenttype-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComponentTypeId" : String
+  "[ComponentTypeId](#cfn-iottwinmaker-componenttype-compositecomponenttype-componenttypeid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iottwinmaker-componenttype-compositecomponenttype-syntax.yaml"></a>
 
-```yaml
-
-  ComponentTypeId: String
-
+```
+  [ComponentTypeId](#cfn-iottwinmaker-componenttype-compositecomponenttype-componenttypeid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iottwinmaker-componenttype-compositecomponenttype-properties"></a>
 
-`ComponentTypeId`
-
+`ComponentTypeId`  <a name="cfn-iottwinmaker-componenttype-compositecomponenttype-componenttypeid"></a>
 The ID of the component type.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z_\.\-0-9:]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTTwinMaker::ComponentType
-
-DataConnector
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z_\.\-0-9:]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

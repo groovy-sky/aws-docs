@@ -2,109 +2,77 @@
 title: "AWS::IoT::TopicRule TimestreamAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule TimestreamAction
+<a name="aws-properties-iot-topicrule-timestreamaction"></a>
 
 Describes an action that writes records into an Amazon Timestream table.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-timestreamaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-timestreamaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatabaseName" : String,
-  "Dimensions" : [ TimestreamDimension, ... ],
-  "RoleArn" : String,
-  "TableName" : String,
-  "Timestamp" : TimestreamTimestamp
+  "[DatabaseName](#cfn-iot-topicrule-timestreamaction-databasename)" : {{String}},
+  "[Dimensions](#cfn-iot-topicrule-timestreamaction-dimensions)" : {{[ TimestreamDimension, ... ]}},
+  "[RoleArn](#cfn-iot-topicrule-timestreamaction-rolearn)" : {{String}},
+  "[TableName](#cfn-iot-topicrule-timestreamaction-tablename)" : {{String}},
+  "[Timestamp](#cfn-iot-topicrule-timestreamaction-timestamp)" : {{TimestreamTimestamp}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-timestreamaction-syntax.yaml"></a>
 
-```yaml
-
-  DatabaseName: String
-  Dimensions:
-    - TimestreamDimension
-  RoleArn: String
-  TableName: String
-  Timestamp:
-    TimestreamTimestamp
-
+```
+  [DatabaseName](#cfn-iot-topicrule-timestreamaction-databasename): {{String}}
+  [Dimensions](#cfn-iot-topicrule-timestreamaction-dimensions): {{
+    - TimestreamDimension}}
+  [RoleArn](#cfn-iot-topicrule-timestreamaction-rolearn): {{String}}
+  [TableName](#cfn-iot-topicrule-timestreamaction-tablename): {{String}}
+  [Timestamp](#cfn-iot-topicrule-timestreamaction-timestamp): {{
+    TimestreamTimestamp}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-timestreamaction-properties"></a>
 
-`DatabaseName`
+`DatabaseName`  <a name="cfn-iot-topicrule-timestreamaction-databasename"></a>
+The name of an Amazon Timestream database that has the table to write records into.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of an Amazon Timestream database that has the table to write records
-into.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dimensions`
-
+`Dimensions`  <a name="cfn-iot-topicrule-timestreamaction-dimensions"></a>
 Metadata attributes of the time series that are written in each measure record.
+*Required*: Yes
+*Type*: Array of [TimestreamDimension](aws-properties-iot-topicrule-timestreamdimension.md)
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`RoleArn`  <a name="cfn-iot-topicrule-timestreamaction-rolearn"></a>
+The Amazon Resource Name (ARN) of the role that grants AWS IoT permission to write to the Timestream database table.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [TimestreamDimension](aws-properties-iot-topicrule-timestreamdimension.md)
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the role that grants AWS IoT permission
-to write to the Timestream database table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
+`TableName`  <a name="cfn-iot-topicrule-timestreamaction-tablename"></a>
 The table where the message data will be written.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timestamp`
-
-The value to use for the entry's timestamp. If blank, the time that the entry was
-processed is used.
-
-_Required_: No
-
-_Type_: [TimestreamTimestamp](aws-properties-iot-topicrule-timestreamtimestamp.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Timestamp
-
-TimestreamDimension
+`Timestamp`  <a name="cfn-iot-topicrule-timestreamaction-timestamp"></a>
+The value to use for the entry's timestamp. If blank, the time that the entry was processed is used.
+*Required*: No
+*Type*: [TimestreamTimestamp](aws-properties-iot-topicrule-timestreamtimestamp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

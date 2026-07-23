@@ -2,67 +2,50 @@
 title: "AWS::S3::Bucket RedirectAllRequestsTo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket RedirectAllRequestsTo
+<a name="aws-properties-s3-bucket-redirectallrequeststo"></a>
 
 Specifies the redirect behavior of all requests to a website endpoint of an Amazon S3 bucket.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-redirectallrequeststo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-redirectallrequeststo-syntax.json"></a>
 
-```json
-
+```
 {
-  "HostName" : String,
-  "Protocol" : String
+  "[HostName](#cfn-s3-bucket-redirectallrequeststo-hostname)" : {{String}},
+  "[Protocol](#cfn-s3-bucket-redirectallrequeststo-protocol)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-redirectallrequeststo-syntax.yaml"></a>
 
-```yaml
-
-  HostName: String
-  Protocol: String
-
+```
+  [HostName](#cfn-s3-bucket-redirectallrequeststo-hostname): {{String}}
+  [Protocol](#cfn-s3-bucket-redirectallrequeststo-protocol): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-redirectallrequeststo-properties"></a>
 
-`HostName`
-
+`HostName`  <a name="cfn-s3-bucket-redirectallrequeststo-hostname"></a>
 Name of the host where requests are redirected.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-Protocol to use when redirecting requests. The default is the protocol that is used in the original
-request.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `http | https`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RecordExpiration
-
-RedirectRule
+`Protocol`  <a name="cfn-s3-bucket-redirectallrequeststo-protocol"></a>
+Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
+*Required*: No
+*Type*: String
+*Allowed values*: `http | https`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

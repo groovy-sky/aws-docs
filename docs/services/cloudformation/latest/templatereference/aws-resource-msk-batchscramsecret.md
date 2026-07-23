@@ -2,76 +2,63 @@
 title: "AWS::MSK::BatchScramSecret"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::BatchScramSecret
+<a name="aws-resource-msk-batchscramsecret"></a>
 
 Represents a secret stored in the AWS Secrets Manager that can be used to authenticate with a cluster using a user name and a password.
 
 ## Syntax
+<a name="aws-resource-msk-batchscramsecret-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-msk-batchscramsecret-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MSK::BatchScramSecret",
   "Properties" : {
-      "ClusterArn" : String,
-      "SecretArnList" : [ String, ... ]
+      "[ClusterArn](#cfn-msk-batchscramsecret-clusterarn)" : {{String}},
+      "[SecretArnList](#cfn-msk-batchscramsecret-secretarnlist)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-msk-batchscramsecret-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MSK::BatchScramSecret
 Properties:
-  ClusterArn: String
-  SecretArnList:
-    - String
-
+  [ClusterArn](#cfn-msk-batchscramsecret-clusterarn): {{String}}
+  [SecretArnList](#cfn-msk-batchscramsecret-secretarnlist): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-msk-batchscramsecret-properties"></a>
 
-`ClusterArn`
-
+`ClusterArn`  <a name="cfn-msk-batchscramsecret-clusterarn"></a>
 The Amazon Resource Name (ARN) that uniquely identifies the cluster.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecretArnList`
-
+`SecretArnList`  <a name="cfn-msk-batchscramsecret-secretarnlist"></a>
 List of Amazon Resource Name (ARN)s of Secrets Manager secrets.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-msk-batchscramsecret-return-values"></a>
 
 ### Ref
+<a name="aws-resource-msk-batchscramsecret-return-values-ref"></a>
 
 When you provide the logical ID of this resource to the `Ref` intrinsic function, `Ref` returns the secret stored in the Secrets Manager.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Managed Streaming for Apache Kafka
-
-AWS::MSK::Cluster
 
 All content copied from https://docs.aws.amazon.com/.

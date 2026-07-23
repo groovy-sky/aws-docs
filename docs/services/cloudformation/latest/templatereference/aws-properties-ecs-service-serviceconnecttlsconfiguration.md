@@ -2,78 +2,58 @@
 title: "AWS::ECS::Service ServiceConnectTlsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Service ServiceConnectTlsConfiguration
+<a name="aws-properties-ecs-service-serviceconnecttlsconfiguration"></a>
 
 The key that encrypts and decrypts your resources for Service Connect TLS.
 
 ## Syntax
+<a name="aws-properties-ecs-service-serviceconnecttlsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-service-serviceconnecttlsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IssuerCertificateAuthority" : ServiceConnectTlsCertificateAuthority,
-  "KmsKey" : String,
-  "RoleArn" : String
+  "[IssuerCertificateAuthority](#cfn-ecs-service-serviceconnecttlsconfiguration-issuercertificateauthority)" : {{ServiceConnectTlsCertificateAuthority}},
+  "[KmsKey](#cfn-ecs-service-serviceconnecttlsconfiguration-kmskey)" : {{String}},
+  "[RoleArn](#cfn-ecs-service-serviceconnecttlsconfiguration-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-service-serviceconnecttlsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IssuerCertificateAuthority:
-    ServiceConnectTlsCertificateAuthority
-  KmsKey: String
-  RoleArn: String
-
+```
+  [IssuerCertificateAuthority](#cfn-ecs-service-serviceconnecttlsconfiguration-issuercertificateauthority): {{
+    ServiceConnectTlsCertificateAuthority}}
+  [KmsKey](#cfn-ecs-service-serviceconnecttlsconfiguration-kmskey): {{String}}
+  [RoleArn](#cfn-ecs-service-serviceconnecttlsconfiguration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-service-serviceconnecttlsconfiguration-properties"></a>
 
-`IssuerCertificateAuthority`
-
+`IssuerCertificateAuthority`  <a name="cfn-ecs-service-serviceconnecttlsconfiguration-issuercertificateauthority"></a>
 The signer certificate authority.
+*Required*: Yes
+*Type*: [ServiceConnectTlsCertificateAuthority](aws-properties-ecs-service-serviceconnecttlscertificateauthority.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ServiceConnectTlsCertificateAuthority](aws-properties-ecs-service-serviceconnecttlscertificateauthority.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKey`
-
+`KmsKey`  <a name="cfn-ecs-service-serviceconnecttlsconfiguration-kmskey"></a>
 The AWS Key Management Service key.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role that's associated with the Service
-Connect TLS.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceConnectTlsCertificateAuthority
-
-ServiceManagedEBSVolumeConfiguration
+`RoleArn`  <a name="cfn-ecs-service-serviceconnecttlsconfiguration-rolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role that's associated with the Service Connect TLS.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

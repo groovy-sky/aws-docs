@@ -2,75 +2,53 @@
 title: "AWS::Cases::Template TemplateRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cases::Template TemplateRule
+<a name="aws-properties-cases-template-templaterule"></a>
 
-An association representing a case rule acting upon a field. In the Amazon Connect admin website, case rules are known as _case field conditions_.
-For more
-information about case field conditions, see [Add case field conditions to a\
-case template](../../../connect/latest/adminguide/case-field-conditions.md).
+An association representing a case rule acting upon a field. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
 
 ## Syntax
+<a name="aws-properties-cases-template-templaterule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cases-template-templaterule-syntax.json"></a>
 
-```json
-
+```
 {
-  "CaseRuleId" : String,
-  "FieldId" : String
+  "[CaseRuleId](#cfn-cases-template-templaterule-caseruleid)" : {{String}},
+  "[FieldId](#cfn-cases-template-templaterule-fieldid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cases-template-templaterule-syntax.yaml"></a>
 
-```yaml
-
-  CaseRuleId: String
-  FieldId: String
-
+```
+  [CaseRuleId](#cfn-cases-template-templaterule-caseruleid): {{String}}
+  [FieldId](#cfn-cases-template-templaterule-fieldid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cases-template-templaterule-properties"></a>
 
-`CaseRuleId`
-
+`CaseRuleId`  <a name="cfn-cases-template-templaterule-caseruleid"></a>
 Unique identifier of a case rule.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-cases-template-templaterule-fieldid"></a>
 Unique identifier of a field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

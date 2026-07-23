@@ -2,53 +2,42 @@
 title: "AWS::Config::RemediationConfiguration ExecutionControls"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::RemediationConfiguration ExecutionControls
+<a name="aws-properties-config-remediationconfiguration-executioncontrols"></a>
 
 An ExecutionControls object.
 
 ## Syntax
+<a name="aws-properties-config-remediationconfiguration-executioncontrols-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-config-remediationconfiguration-executioncontrols-syntax.json"></a>
 
-```json
-
+```
 {
-  "SsmControls" : SsmControls
+  "[SsmControls](#cfn-config-remediationconfiguration-executioncontrols-ssmcontrols)" : {{SsmControls}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-config-remediationconfiguration-executioncontrols-syntax.yaml"></a>
 
-```yaml
-
-  SsmControls:
-    SsmControls
-
+```
+  [SsmControls](#cfn-config-remediationconfiguration-executioncontrols-ssmcontrols): {{
+    SsmControls}}
 ```
 
 ## Properties
+<a name="aws-properties-config-remediationconfiguration-executioncontrols-properties"></a>
 
-`SsmControls`
-
+`SsmControls`  <a name="cfn-config-remediationconfiguration-executioncontrols-ssmcontrols"></a>
 A SsmControls object.
-
-_Required_: No
-
-_Type_: [SsmControls](aws-properties-config-remediationconfiguration-ssmcontrols.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Config::RemediationConfiguration
-
-RemediationParameterValue
+*Required*: No
+*Type*: [SsmControls](aws-properties-config-remediationconfiguration-ssmcontrols.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

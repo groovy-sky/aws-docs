@@ -2,70 +2,52 @@
 title: "AWS::Timestream::InfluxDBCluster S3Configuration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::InfluxDBCluster S3Configuration
+<a name="aws-properties-timestream-influxdbcluster-s3configuration"></a>
 
 Configuration for S3 bucket log delivery.
 
 ## Syntax
+<a name="aws-properties-timestream-influxdbcluster-s3configuration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-influxdbcluster-s3configuration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "Enabled" : Boolean
+  "[BucketName](#cfn-timestream-influxdbcluster-s3configuration-bucketname)" : {{String}},
+  "[Enabled](#cfn-timestream-influxdbcluster-s3configuration-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-influxdbcluster-s3configuration-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  Enabled: Boolean
-
+```
+  [BucketName](#cfn-timestream-influxdbcluster-s3configuration-bucketname): {{String}}
+  [Enabled](#cfn-timestream-influxdbcluster-s3configuration-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-influxdbcluster-s3configuration-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-timestream-influxdbcluster-s3configuration-bucketname"></a>
 The bucket name of the customer S3 bucket.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-z]+[0-9a-z\.\-]*[0-9a-z]+$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z]+[0-9a-z\.\-]*[0-9a-z]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-timestream-influxdbcluster-s3configuration-enabled"></a>
 Indicates whether log delivery to the S3 bucket is enabled.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogDeliveryConfiguration
-
-Tag
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

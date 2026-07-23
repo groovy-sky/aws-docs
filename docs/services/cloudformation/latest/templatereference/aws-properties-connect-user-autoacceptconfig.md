@@ -2,78 +2,58 @@
 title: "AWS::Connect::User AutoAcceptConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User AutoAcceptConfig
+<a name="aws-properties-connect-user-autoacceptconfig"></a>
 
 Configuration settings for auto-accept for a specific channel.
 
 ## Syntax
+<a name="aws-properties-connect-user-autoacceptconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-user-autoacceptconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentFirstCallbackAutoAccept" : Boolean,
-  "AutoAccept" : Boolean,
-  "Channel" : String
+  "[AgentFirstCallbackAutoAccept](#cfn-connect-user-autoacceptconfig-agentfirstcallbackautoaccept)" : {{Boolean}},
+  "[AutoAccept](#cfn-connect-user-autoacceptconfig-autoaccept)" : {{Boolean}},
+  "[Channel](#cfn-connect-user-autoacceptconfig-channel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-user-autoacceptconfig-syntax.yaml"></a>
 
-```yaml
-
-  AgentFirstCallbackAutoAccept: Boolean
-  AutoAccept: Boolean
-  Channel: String
-
+```
+  [AgentFirstCallbackAutoAccept](#cfn-connect-user-autoacceptconfig-agentfirstcallbackautoaccept): {{Boolean}}
+  [AutoAccept](#cfn-connect-user-autoacceptconfig-autoaccept): {{Boolean}}
+  [Channel](#cfn-connect-user-autoacceptconfig-channel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-user-autoacceptconfig-properties"></a>
 
-`AgentFirstCallbackAutoAccept`
-
+`AgentFirstCallbackAutoAccept`  <a name="cfn-connect-user-autoacceptconfig-agentfirstcallbackautoaccept"></a>
 Indicates whether auto-accept is enabled for agent-first callbacks. This setting only applies to the VOICE channel.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoAccept`
-
+`AutoAccept`  <a name="cfn-connect-user-autoacceptconfig-autoaccept"></a>
 Indicates whether auto-accept is enabled for this channel. When enabled, available agents are automatically connected to contacts from this channel.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Channel`
-
+`Channel`  <a name="cfn-connect-user-autoacceptconfig-channel"></a>
 The channel for this auto-accept configuration. Valid values: VOICE, CHAT, TASK, EMAIL.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VOICE | CHAT | TASK | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AfterContactWorkConfigPerChannel
-
-PersistentConnectionConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VOICE | CHAT | TASK | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

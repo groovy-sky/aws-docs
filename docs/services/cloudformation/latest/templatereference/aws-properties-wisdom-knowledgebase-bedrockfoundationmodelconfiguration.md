@@ -2,71 +2,53 @@
 title: "AWS::Wisdom::KnowledgeBase BedrockFoundationModelConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::KnowledgeBase BedrockFoundationModelConfiguration
+<a name="aws-properties-wisdom-knowledgebase-bedrockfoundationmodelconfiguration"></a>
 
 The configuration of the Bedrock foundation model.
 
 ## Syntax
+<a name="aws-properties-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ModelArn" : String,
-  "ParsingPrompt" : ParsingPrompt
+  "[ModelArn](#cfn-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-modelarn)" : {{String}},
+  "[ParsingPrompt](#cfn-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-parsingprompt)" : {{ParsingPrompt}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ModelArn: String
-  ParsingPrompt:
-    ParsingPrompt
-
+```
+  [ModelArn](#cfn-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-modelarn): {{String}}
+  [ParsingPrompt](#cfn-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-parsingprompt): {{
+    ParsingPrompt}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-properties"></a>
 
-`ModelArn`
-
+`ModelArn`  <a name="cfn-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-modelarn"></a>
 The model ARN of the Bedrock foundation model.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}::foundation-model\/anthropic.claude-3-haiku-20240307-v1:0$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}::foundation-model\/anthropic.claude-3-haiku-20240307-v1:0$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParsingPrompt`
-
+`ParsingPrompt`  <a name="cfn-wisdom-knowledgebase-bedrockfoundationmodelconfiguration-parsingprompt"></a>
 The parsing prompt of the Bedrock foundation model configuration.
-
-_Required_: No
-
-_Type_: [ParsingPrompt](aws-properties-wisdom-knowledgebase-parsingprompt.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AppIntegrationsConfiguration
-
-ChunkingConfiguration
+*Required*: No
+*Type*: [ParsingPrompt](aws-properties-wisdom-knowledgebase-parsingprompt.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

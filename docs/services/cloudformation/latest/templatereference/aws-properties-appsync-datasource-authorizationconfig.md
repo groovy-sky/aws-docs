@@ -2,73 +2,54 @@
 title: "AWS::AppSync::DataSource AuthorizationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::DataSource AuthorizationConfig
+<a name="aws-properties-appsync-datasource-authorizationconfig"></a>
 
-The `AuthorizationConfig` property type specifies the authorization type
-and configuration for an AWS AppSync http data source.
+The `AuthorizationConfig` property type specifies the authorization type and configuration for an AWS AppSync http data source.
 
-`AuthorizationConfig` is a property of the [AWS AppSync DataSource HttpConfig](../userguide/aws-properties-appsync-datasource-httpconfig.md) property type.
+`AuthorizationConfig` is a property of the [AWS AppSync DataSource HttpConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html) property type.
 
 ## Syntax
+<a name="aws-properties-appsync-datasource-authorizationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-datasource-authorizationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationType" : String,
-  "AwsIamConfig" : AwsIamConfig
+  "[AuthorizationType](#cfn-appsync-datasource-authorizationconfig-authorizationtype)" : {{String}},
+  "[AwsIamConfig](#cfn-appsync-datasource-authorizationconfig-awsiamconfig)" : {{AwsIamConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-datasource-authorizationconfig-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationType: String
-  AwsIamConfig:
-    AwsIamConfig
-
+```
+  [AuthorizationType](#cfn-appsync-datasource-authorizationconfig-authorizationtype): {{String}}
+  [AwsIamConfig](#cfn-appsync-datasource-authorizationconfig-awsiamconfig): {{
+    AwsIamConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-datasource-authorizationconfig-properties"></a>
 
-`AuthorizationType`
-
+`AuthorizationType`  <a name="cfn-appsync-datasource-authorizationconfig-authorizationtype"></a>
 The authorization type that the HTTP endpoint requires.
++ **AWS\_IAM**: The authorization type is Signature Version 4 (SigV4).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `AWS_IAM`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- **AWS\_IAM**: The authorization type is Signature Version 4
-(SigV4).
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `AWS_IAM`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AwsIamConfig`
-
+`AwsIamConfig`  <a name="cfn-appsync-datasource-authorizationconfig-awsiamconfig"></a>
 The AWS Identity and Access Management settings.
-
-_Required_: No
-
-_Type_: [AwsIamConfig](aws-properties-appsync-datasource-awsiamconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppSync::DataSource
-
-AwsIamConfig
+*Required*: No
+*Type*: [AwsIamConfig](aws-properties-appsync-datasource-awsiamconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

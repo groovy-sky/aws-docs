@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Template SimpleClusterMarker"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SimpleClusterMarker
+<a name="aws-properties-quicksight-template-simpleclustermarker"></a>
 
 The simple cluster marker of the cluster marker.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-simpleclustermarker-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-simpleclustermarker-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String
+  "[Color](#cfn-quicksight-template-simpleclustermarker-color)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-simpleclustermarker-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-
+```
+  [Color](#cfn-quicksight-template-simpleclustermarker-color): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-simpleclustermarker-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-template-simpleclustermarker-color"></a>
 The color of the simple cluster marker.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ShortFormatText
-
-SingleAxisOptions
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

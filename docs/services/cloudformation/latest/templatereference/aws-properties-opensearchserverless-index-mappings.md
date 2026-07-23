@@ -2,53 +2,42 @@
 title: "AWS::OpenSearchServerless::Index Mappings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Index Mappings
+<a name="aws-properties-opensearchserverless-index-mappings"></a>
 
 Index mappings for the OpenSearch Serverless index.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-index-mappings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-index-mappings-syntax.json"></a>
 
-```json
-
+```
 {
-  "Properties" : {Key: Value, ...}
+  "[Properties](#cfn-opensearchserverless-index-mappings-properties)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-index-mappings-syntax.yaml"></a>
 
-```yaml
-
-  Properties:
-    Key: Value
-
+```
+  [Properties](#cfn-opensearchserverless-index-mappings-properties): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-index-mappings-properties"></a>
 
-`Properties`
-
+`Properties`  <a name="cfn-opensearchserverless-index-mappings-properties"></a>
 Nested fields within an object or nested field type.
-
-_Required_: No
-
-_Type_: Object of [PropertyMapping](aws-properties-opensearchserverless-index-propertymapping.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IndexSettings
-
-Method
+*Required*: No
+*Type*: Object of [PropertyMapping](aws-properties-opensearchserverless-index-propertymapping.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

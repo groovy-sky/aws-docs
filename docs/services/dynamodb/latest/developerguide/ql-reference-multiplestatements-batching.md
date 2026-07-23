@@ -3,32 +3,24 @@ title: "Running batch operations with PartiQL for DynamoDB"
 ---
 
 # Running batch operations with PartiQL for DynamoDB
+<a name="ql-reference.multiplestatements.batching"></a>
 
 This section describes how to use batch statements with PartiQL for DynamoDB.
 
-###### Note
+**Note**
+The entire batch must consist of either read statements or write statements; you cannot mix both in one batch.
+`BatchExecuteStatement` and `BatchWriteItem` can perform no more than 25 statements per batch.
+`BatchExecuteStatement` makes use of `BatchGetItem` which takes a list of primary keys in separate statements.
 
-- The entire batch must consist of either read statements or write
-statements; you cannot mix both in one batch.
-
-- `BatchExecuteStatement` and `BatchWriteItem` can
-perform no more than 25 statements per batch.
-
-- `BatchExecuteStatement` makes use of `BatchGetItem` which takes a list
-of primary keys in separate statements.
-
-###### Topics
-
-- [Syntax](#ql-reference.multiplestatements.batching.syntax)
-
-- [Parameters](#ql-reference.multiplestatements.batching.parameters)
-
-- [Examples](#ql-reference.multiplestatements.batching.examples)
+**Topics**
++ [Syntax](#ql-reference.multiplestatements.batching.syntax)
++ [Parameters](#ql-reference.multiplestatements.batching.parameters)
++ [Examples](#ql-reference.multiplestatements.batching.examples)
 
 ## Syntax
+<a name="ql-reference.multiplestatements.batching.syntax"></a>
 
-```json
-
+```
 [
   {
     "Statement": "SELECT pk FROM ProblemSet WHERE pk = 'p#9StkWHYTxm7x2AqSXcrfu7' AND sk = 'info'"
@@ -37,56 +29,44 @@ of primary keys in separate statements.
     "Statement": "SELECT pk FROM ProblemSet WHERE pk = 'p#isC2ChceGbxHgESc4szoTE' AND sk = 'info'"
   }
 ]
-
 ```
 
-```json
-
+```
 [
    {
-      "Statement":" statement ",
+      "Statement":"{{ statement }}",
       "Parameters":[
          {
-            " parametertype " : " parametervalue "
+            "{{ parametertype }}" : "{{ parametervalue }}"
          }, ...]
    } , ...
 ]
 ```
 
 ## Parameters
+<a name="ql-reference.multiplestatements.batching.parameters"></a>
 
-**`statement`**
-
+**{{statement}}**
 (Required) A PartiQL for DynamoDB supported statement.
++ The entire batch must consist of either read statements or write statements; you cannot mix both in one batch.
++ `BatchExecuteStatement` and `BatchWriteItem` can perform no more than 25 statements per batch.
 
-###### Note
+**{{parametertype}}**
+(Optional) A DynamoDB type, if parameters were used when specifying the PartiQL statement.
 
-- The entire batch must consist of either read statements or
-write statements; you cannot mix both in one batch.
-
-- `BatchExecuteStatement` and
-`BatchWriteItem` can perform no more than 25
-statements per batch.
-
-**`parametertype`**
-
-(Optional) A DynamoDB type, if parameters were used when specifying the
-PartiQL statement.
-
-**`parametervalue`**
-
-(Optional) A parameter value if parameters were used when specifying
-the PartiQL statement.
+**{{parametervalue}}**
+(Optional) A parameter value if parameters were used when specifying the PartiQL statement.
 
 ## Examples
+<a name="ql-reference.multiplestatements.batching.examples"></a>
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
 1. Save the following json to a file called partiql.json
 
-```json
-
-[
+   ```
+   [
       {
    	 "Statement": "INSERT INTO Music VALUE {'Artist':?,'SongTitle':?}",
    	  "Parameters": [{"S": "Acme Band"}, {"S": "Best Song"}]
@@ -94,20 +74,19 @@ AWS CLI
    	{
    	 "Statement": "UPDATE Music SET AwardsWon=1, AwardDetail={'Grammys':[2020, 2018]} WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'"
        }
-]
+   ]
+   ```
+
+1. Run the following command in a command prompt.
+
+   ```
+   aws dynamodb batch-execute-statement  --statements  file://partiql.json
+   ```
+
+------
+#### [ Java ]
+
 ```
-
-2. Run the following command in a command prompt.
-
-```nohighlight
-
-aws dynamodb batch-execute-statement  --statements  file://partiql.json
-```
-
-Java
-
-```java
-
 public class DynamoDBPartiqlBatch {
 
     public static void main(String[] args) {
@@ -194,10 +173,6 @@ public class DynamoDBPartiqlBatch {
 }
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Transactions
-
-IAM policies
+------
 
 All content copied from https://docs.aws.amazon.com/.

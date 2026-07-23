@@ -2,53 +2,42 @@
 title: "AWS::Batch::JobDefinition ConsumableResourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition ConsumableResourceProperties
+<a name="aws-properties-batch-jobdefinition-consumableresourceproperties"></a>
 
 Contains a list of consumable resources required by a job.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-consumableresourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-consumableresourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConsumableResourceList" : [ ConsumableResourceRequirement, ... ]
+  "[ConsumableResourceList](#cfn-batch-jobdefinition-consumableresourceproperties-consumableresourcelist)" : {{[ ConsumableResourceRequirement, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-consumableresourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  ConsumableResourceList:
-    - ConsumableResourceRequirement
-
+```
+  [ConsumableResourceList](#cfn-batch-jobdefinition-consumableresourceproperties-consumableresourcelist): {{
+    - ConsumableResourceRequirement}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-consumableresourceproperties-properties"></a>
 
-`ConsumableResourceList`
-
+`ConsumableResourceList`  <a name="cfn-batch-jobdefinition-consumableresourceproperties-consumableresourcelist"></a>
 The list of consumable resources required by a job.
-
-_Required_: Yes
-
-_Type_: Array of [ConsumableResourceRequirement](aws-properties-batch-jobdefinition-consumableresourcerequirement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Batch::JobDefinition
-
-ConsumableResourceRequirement
+*Required*: Yes
+*Type*: Array of [ConsumableResourceRequirement](aws-properties-batch-jobdefinition-consumableresourcerequirement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

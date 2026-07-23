@@ -2,66 +2,51 @@
 title: "AWS::AppFlow::ConnectorProfile SAPODataConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile SAPODataConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials"></a>
 
-The connector-specific profile credentials required when using SAPOData.
+ The connector-specific profile credentials required when using SAPOData.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "BasicAuthCredentials" : BasicAuthCredentials,
-  "OAuthCredentials" : OAuthCredentials
+  "[BasicAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-basicauthcredentials)" : {{BasicAuthCredentials}},
+  "[OAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-oauthcredentials)" : {{OAuthCredentials}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  BasicAuthCredentials:
-    BasicAuthCredentials
-  OAuthCredentials:
-    OAuthCredentials
-
+```
+  [BasicAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-basicauthcredentials): {{
+    BasicAuthCredentials}}
+  [OAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-oauthcredentials): {{
+    OAuthCredentials}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials-properties"></a>
 
-`BasicAuthCredentials`
+`BasicAuthCredentials`  <a name="cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-basicauthcredentials"></a>
+ The SAPOData basic authentication credentials.
+*Required*: No
+*Type*: [BasicAuthCredentials](aws-properties-appflow-connectorprofile-basicauthcredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The SAPOData basic authentication credentials.
-
-_Required_: No
-
-_Type_: [BasicAuthCredentials](aws-properties-appflow-connectorprofile-basicauthcredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OAuthCredentials`
-
-The SAPOData OAuth type authentication credentials.
-
-_Required_: No
-
-_Type_: [OAuthCredentials](aws-properties-appflow-connectorprofile-oauthcredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SalesforceConnectorProfileProperties
-
-SAPODataConnectorProfileProperties
+`OAuthCredentials`  <a name="cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-oauthcredentials"></a>
+ The SAPOData OAuth type authentication credentials.
+*Required*: No
+*Type*: [OAuthCredentials](aws-properties-appflow-connectorprofile-oauthcredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

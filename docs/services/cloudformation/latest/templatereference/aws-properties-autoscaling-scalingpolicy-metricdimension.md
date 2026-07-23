@@ -2,66 +2,49 @@
 title: "AWS::AutoScaling::ScalingPolicy MetricDimension"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::ScalingPolicy MetricDimension
+<a name="aws-properties-autoscaling-scalingpolicy-metricdimension"></a>
 
-`MetricDimension` specifies a name/value pair that is part of the identity of a
-CloudWatch metric for the `Dimensions` property of the [AWS::AutoScaling::ScalingPolicy CustomizedMetricSpecification](../userguide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.md) property type.
-Duplicate dimensions are not allowed.
+`MetricDimension` specifies a name/value pair that is part of the identity of a CloudWatch metric for the `Dimensions` property of the [AWS::AutoScaling::ScalingPolicy CustomizedMetricSpecification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html) property type. Duplicate dimensions are not allowed.
 
 ## Syntax
+<a name="aws-properties-autoscaling-scalingpolicy-metricdimension-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-scalingpolicy-metricdimension-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-autoscaling-scalingpolicy-metricdimension-name)" : {{String}},
+  "[Value](#cfn-autoscaling-scalingpolicy-metricdimension-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-scalingpolicy-metricdimension-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-autoscaling-scalingpolicy-metricdimension-name): {{String}}
+  [Value](#cfn-autoscaling-scalingpolicy-metricdimension-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-scalingpolicy-metricdimension-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-autoscaling-scalingpolicy-metricdimension-name"></a>
 The name of the dimension.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-autoscaling-scalingpolicy-metricdimension-value"></a>
 The value of the dimension.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetricDataQuery
-
-MetricStat
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

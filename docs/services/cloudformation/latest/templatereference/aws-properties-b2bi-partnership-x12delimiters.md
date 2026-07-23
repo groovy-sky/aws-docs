@@ -2,97 +2,66 @@
 title: "AWS::B2BI::Partnership X12Delimiters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Partnership X12Delimiters
+<a name="aws-properties-b2bi-partnership-x12delimiters"></a>
 
-In X12 EDI messages, delimiters are used to mark the end of segments or elements, and
-are defined in the interchange control header. The delimiters are part of the message's
-syntax and divide up its different elements.
+In X12 EDI messages, delimiters are used to mark the end of segments or elements, and are defined in the interchange control header. The delimiters are part of the message's syntax and divide up its different elements.
 
 ## Syntax
+<a name="aws-properties-b2bi-partnership-x12delimiters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-partnership-x12delimiters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComponentSeparator" : String,
-  "DataElementSeparator" : String,
-  "SegmentTerminator" : String
+  "[ComponentSeparator](#cfn-b2bi-partnership-x12delimiters-componentseparator)" : {{String}},
+  "[DataElementSeparator](#cfn-b2bi-partnership-x12delimiters-dataelementseparator)" : {{String}},
+  "[SegmentTerminator](#cfn-b2bi-partnership-x12delimiters-segmentterminator)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-partnership-x12delimiters-syntax.yaml"></a>
 
-```yaml
-
-  ComponentSeparator: String
-  DataElementSeparator: String
-  SegmentTerminator: String
-
+```
+  [ComponentSeparator](#cfn-b2bi-partnership-x12delimiters-componentseparator): {{String}}
+  [DataElementSeparator](#cfn-b2bi-partnership-x12delimiters-dataelementseparator): {{String}}
+  [SegmentTerminator](#cfn-b2bi-partnership-x12delimiters-segmentterminator): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-partnership-x12delimiters-properties"></a>
 
-`ComponentSeparator`
+`ComponentSeparator`  <a name="cfn-b2bi-partnership-x12delimiters-componentseparator"></a>
+The component, or sub-element, separator. The default value is `:` (colon).
+*Required*: No
+*Type*: String
+*Pattern*: `^[!&'()*+,\-./:;?=%@\[\]_{}|<>~^`"]$`
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The component, or sub-element, separator. The default value is `:`
-(colon).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[!&'()*+,\-./:;?=%@\[\]_{}|<>~^`"]$``
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataElementSeparator`
-
+`DataElementSeparator`  <a name="cfn-b2bi-partnership-x12delimiters-dataelementseparator"></a>
 The data element separator. The default value is `*` (asterisk).
+*Required*: No
+*Type*: String
+*Pattern*: `^[!&'()*+,\-./:;?=%@\[\]_{}|<>~^`"]$`
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[!&'()*+,\-./:;?=%@\[\]_{}|<>~^`"]$``
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentTerminator`
-
+`SegmentTerminator`  <a name="cfn-b2bi-partnership-x12delimiters-segmentterminator"></a>
 The segment terminator. The default value is `~` (tilde).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^[!&'()*+,\-./:;?=%@\[\]_{}|<>~^`"]$``
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-X12ControlNumbers
-
-X12Envelope
+*Required*: No
+*Type*: String
+*Pattern*: `^[!&'()*+,\-./:;?=%@\[\]_{}|<>~^`"]$`
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

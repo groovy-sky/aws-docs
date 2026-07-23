@@ -2,67 +2,52 @@
 title: "AWS::QuickSight::Dashboard FilterScopeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FilterScopeConfiguration
+<a name="aws-properties-quicksight-dashboard-filterscopeconfiguration"></a>
 
 The scope configuration for a `FilterGroup`.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-filterscopeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-filterscopeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllSheets" : Json,
-  "SelectedSheets" : SelectedSheetsFilterScopeConfiguration
+  "[AllSheets](#cfn-quicksight-dashboard-filterscopeconfiguration-allsheets)" : {{Json}},
+  "[SelectedSheets](#cfn-quicksight-dashboard-filterscopeconfiguration-selectedsheets)" : {{SelectedSheetsFilterScopeConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-filterscopeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AllSheets: Json
-  SelectedSheets:
-    SelectedSheetsFilterScopeConfiguration
-
+```
+  [AllSheets](#cfn-quicksight-dashboard-filterscopeconfiguration-allsheets): {{Json}}
+  [SelectedSheets](#cfn-quicksight-dashboard-filterscopeconfiguration-selectedsheets): {{
+    SelectedSheetsFilterScopeConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-filterscopeconfiguration-properties"></a>
 
-`AllSheets`
-
+`AllSheets`  <a name="cfn-quicksight-dashboard-filterscopeconfiguration-allsheets"></a>
 The configuration that applies a filter to all sheets. When you choose `AllSheets` as the value for a `FilterScopeConfiguration`, this filter is applied to all visuals of all sheets in an Analysis, Dashboard, or Template. The `AllSheetsFilterScopeConfiguration` is chosen.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedSheets`
-
+`SelectedSheets`  <a name="cfn-quicksight-dashboard-filterscopeconfiguration-selectedsheets"></a>
 The configuration for applying a filter to specific sheets.
-
-_Required_: No
-
-_Type_: [SelectedSheetsFilterScopeConfiguration](aws-properties-quicksight-dashboard-selectedsheetsfilterscopeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterRelativeDateTimeControl
-
-FilterSelectableValues
+*Required*: No
+*Type*: [SelectedSheetsFilterScopeConfiguration](aws-properties-quicksight-dashboard-selectedsheetsfilterscopeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,86 +2,60 @@
 title: "AWS::Elasticsearch::Domain MasterUserOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain MasterUserOptions
+<a name="aws-properties-elasticsearch-domain-masteruseroptions"></a>
 
-Specifies information about the master user. Required if you enabled the internal user
-database.
+Specifies information about the master user. Required if you enabled the internal user database.
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-Elasticsearch. For more information about the service rename, see [New resource\
-types](../../../opensearch-service/latest/developerguide/rename.md#rename-resource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and Elasticsearch. For more information about the service rename, see [New resource types](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-resource) in the *Amazon OpenSearch Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticsearch-domain-masteruseroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticsearch-domain-masteruseroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "MasterUserARN" : String,
-  "MasterUserName" : String,
-  "MasterUserPassword" : String
+  "[MasterUserARN](#cfn-elasticsearch-domain-masteruseroptions-masteruserarn)" : {{String}},
+  "[MasterUserName](#cfn-elasticsearch-domain-masteruseroptions-masterusername)" : {{String}},
+  "[MasterUserPassword](#cfn-elasticsearch-domain-masteruseroptions-masteruserpassword)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticsearch-domain-masteruseroptions-syntax.yaml"></a>
 
-```yaml
-
-  MasterUserARN: String
-  MasterUserName: String
-  MasterUserPassword: String
-
+```
+  [MasterUserARN](#cfn-elasticsearch-domain-masteruseroptions-masteruserarn): {{String}}
+  [MasterUserName](#cfn-elasticsearch-domain-masteruseroptions-masterusername): {{String}}
+  [MasterUserPassword](#cfn-elasticsearch-domain-masteruseroptions-masteruserpassword): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticsearch-domain-masteruseroptions-properties"></a>
 
-`MasterUserARN`
-
+`MasterUserARN`  <a name="cfn-elasticsearch-domain-masteruseroptions-masteruserarn"></a>
 ARN for the master user. Only specify if `InternalUserDatabaseEnabled` is false in `AdvancedSecurityOptions`.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MasterUserName`
-
+`MasterUserName`  <a name="cfn-elasticsearch-domain-masteruseroptions-masterusername"></a>
 Username for the master user. Only specify if `InternalUserDatabaseEnabled` is true in `AdvancedSecurityOptions`.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MasterUserPassword`
-
+`MasterUserPassword`  <a name="cfn-elasticsearch-domain-masteruseroptions-masteruserpassword"></a>
 Password for the master user. Only specify if `InternalUserDatabaseEnabled` is true in `AdvancedSecurityOptions`.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogPublishingOption
-
-NodeToNodeEncryptionOptions
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

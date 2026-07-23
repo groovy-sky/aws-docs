@@ -2,58 +2,43 @@
 title: "AWS::S3::StorageLens CloudWatchMetrics"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens CloudWatchMetrics
+<a name="aws-properties-s3-storagelens-cloudwatchmetrics"></a>
 
-This resource enables the Amazon CloudWatch publishing option for Amazon S3
-Storage Lens metrics.
+This resource enables the Amazon CloudWatch publishing option for Amazon S3 Storage Lens metrics.
 
-For more information, see [Monitor S3\
-Storage Lens metrics in CloudWatch](../../../s3/latest/userguide/storage-lens-view-metrics-cloudwatch.md) in the _Amazon S3 User_
-_Guide_.
+For more information, see [ Monitor S3 Storage Lens metrics in CloudWatch](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_view_metrics_cloudwatch.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-cloudwatchmetrics-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-cloudwatchmetrics-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsEnabled" : Boolean
+  "[IsEnabled](#cfn-s3-storagelens-cloudwatchmetrics-isenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-cloudwatchmetrics-syntax.yaml"></a>
 
-```yaml
-
-  IsEnabled: Boolean
-
+```
+  [IsEnabled](#cfn-s3-storagelens-cloudwatchmetrics-isenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-cloudwatchmetrics-properties"></a>
 
-`IsEnabled`
-
-This property identifies whether the CloudWatch publishing option for S3 Storage
-Lens is enabled.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BucketsAndRegions
-
-DataExport
+`IsEnabled`  <a name="cfn-s3-storagelens-cloudwatchmetrics-isenabled"></a>
+This property identifies whether the CloudWatch publishing option for S3 Storage Lens is enabled.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

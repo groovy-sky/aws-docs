@@ -2,56 +2,44 @@
 title: "AWS::AppSync::Resolver PipelineConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::Resolver PipelineConfig
+<a name="aws-properties-appsync-resolver-pipelineconfig"></a>
 
-Use the `PipelineConfig` property type to specify
-`PipelineConfig` for an AWS AppSync resolver.
+Use the `PipelineConfig` property type to specify `PipelineConfig` for an AWS AppSync resolver.
 
-`PipelineConfig` is a property of the [AWS::AppSync::Resolver](../userguide/aws-resource-appsync-resolver.md) resource.
+`PipelineConfig` is a property of the [AWS::AppSync::Resolver](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html) resource.
 
 ## Syntax
+<a name="aws-properties-appsync-resolver-pipelineconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-resolver-pipelineconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Functions" : [ String, ... ]
+  "[Functions](#cfn-appsync-resolver-pipelineconfig-functions)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-resolver-pipelineconfig-syntax.yaml"></a>
 
-```yaml
-
-  Functions:
-    - String
-
+```
+  [Functions](#cfn-appsync-resolver-pipelineconfig-functions): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-resolver-pipelineconfig-properties"></a>
 
-`Functions`
-
+`Functions`  <a name="cfn-appsync-resolver-pipelineconfig-functions"></a>
 A list of `Function` objects.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaConflictHandlerConfig
-
-SyncConfig
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

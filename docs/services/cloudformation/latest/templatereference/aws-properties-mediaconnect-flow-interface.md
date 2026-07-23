@@ -2,52 +2,41 @@
 title: "AWS::MediaConnect::Flow Interface"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow Interface
+<a name="aws-properties-mediaconnect-flow-interface"></a>
 
-The VPC interface that is used for the media stream associated with the source or output.
+ The VPC interface that is used for the media stream associated with the source or output.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-interface-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-interface-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-mediaconnect-flow-interface-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-interface-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-mediaconnect-flow-interface-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-interface-properties"></a>
 
-`Name`
-
-The name of the VPC interface.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InputConfiguration
-
-Maintenance
+`Name`  <a name="cfn-mediaconnect-flow-interface-name"></a>
+ The name of the VPC interface.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,56 @@
 title: "AWS::CodePipeline::Pipeline ArtifactStoreMap"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline ArtifactStoreMap
+<a name="aws-properties-codepipeline-pipeline-artifactstoremap"></a>
 
-A mapping of `artifactStore` objects and their corresponding AWS Regions. There must be an artifact store for the pipeline Region and for
-each cross-region action in the pipeline.
+A mapping of `artifactStore` objects and their corresponding AWS Regions. There must be an artifact store for the pipeline Region and for each cross-region action in the pipeline.
 
-###### Note
-
-You must include either `artifactStore` or
-`artifactStores` in your pipeline, but you cannot use both. If you
-create a cross-region action in your pipeline, you must use
-`artifactStores`.
+**Note**
+You must include either `artifactStore` or `artifactStores` in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use `artifactStores`.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-artifactstoremap-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-artifactstoremap-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArtifactStore" : ArtifactStore,
-  "Region" : String
+  "[ArtifactStore](#cfn-codepipeline-pipeline-artifactstoremap-artifactstore)" : {{ArtifactStore}},
+  "[Region](#cfn-codepipeline-pipeline-artifactstoremap-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-artifactstoremap-syntax.yaml"></a>
 
-```yaml
-
-  ArtifactStore:
-    ArtifactStore
-  Region: String
-
+```
+  [ArtifactStore](#cfn-codepipeline-pipeline-artifactstoremap-artifactstore): {{
+    ArtifactStore}}
+  [Region](#cfn-codepipeline-pipeline-artifactstoremap-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-artifactstoremap-properties"></a>
 
-`ArtifactStore`
+`ArtifactStore`  <a name="cfn-codepipeline-pipeline-artifactstoremap-artifactstore"></a>
+Represents information about the S3 bucket where artifacts are stored for the pipeline.
+You must include either `artifactStore` or `artifactStores` in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use `artifactStores`.
+*Required*: Conditional
+*Type*: [ArtifactStore](aws-properties-codepipeline-pipeline-artifactstore.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Represents information about the S3 bucket where artifacts are stored for the
-pipeline.
-
-###### Note
-
-You must include either `artifactStore` or
-`artifactStores` in your pipeline, but you cannot use both. If you
-create a cross-region action in your pipeline, you must use
-`artifactStores`.
-
-_Required_: Conditional
-
-_Type_: [ArtifactStore](aws-properties-codepipeline-pipeline-artifactstore.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-codepipeline-pipeline-artifactstoremap-region"></a>
 The action declaration's AWS Region, such as us-east-1.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `4`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArtifactStore
-
-BeforeEntryConditions
+*Required*: Yes
+*Type*: String
+*Minimum*: `4`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

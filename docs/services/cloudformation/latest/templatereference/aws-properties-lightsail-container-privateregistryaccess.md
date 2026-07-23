@@ -2,61 +2,44 @@
 title: "AWS::Lightsail::Container PrivateRegistryAccess"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Container PrivateRegistryAccess
+<a name="aws-properties-lightsail-container-privateregistryaccess"></a>
 
-Describes the configuration for an Amazon Lightsail container service to access private
-container image repositories, such as Amazon Elastic Container Registry (Amazon ECR)
-private repositories.
+Describes the configuration for an Amazon Lightsail container service to access private container image repositories, such as Amazon Elastic Container Registry (Amazon ECR) private repositories.
 
-For more information, see [Configuring access to an Amazon ECR private repository for an Amazon Lightsail\
-container service](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-container-service-ecr-private-repo-access) in the _Amazon Lightsail Developer_
-_Guide_.
+For more information, see [Configuring access to an Amazon ECR private repository for an Amazon Lightsail container service](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-container-service-ecr-private-repo-access) in the *Amazon Lightsail Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-lightsail-container-privateregistryaccess-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-container-privateregistryaccess-syntax.json"></a>
 
-```json
-
+```
 {
-  "EcrImagePullerRole" : EcrImagePullerRole
+  "[EcrImagePullerRole](#cfn-lightsail-container-privateregistryaccess-ecrimagepullerrole)" : {{EcrImagePullerRole}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-container-privateregistryaccess-syntax.yaml"></a>
 
-```yaml
-
-  EcrImagePullerRole:
-    EcrImagePullerRole
-
+```
+  [EcrImagePullerRole](#cfn-lightsail-container-privateregistryaccess-ecrimagepullerrole): {{
+    EcrImagePullerRole}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-container-privateregistryaccess-properties"></a>
 
-`EcrImagePullerRole`
-
-An object that describes the activation status of the role that you can use to grant a
-Lightsail container service access to Amazon ECR private repositories. If the role is
-activated, the Amazon Resource Name (ARN) of the role is also listed.
-
-_Required_: No
-
-_Type_: [EcrImagePullerRole](aws-properties-lightsail-container-ecrimagepullerrole.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PortInfo
-
-PublicDomainName
+`EcrImagePullerRole`  <a name="cfn-lightsail-container-privateregistryaccess-ecrimagepullerrole"></a>
+An object that describes the activation status of the role that you can use to grant a Lightsail container service access to Amazon ECR private repositories. If the role is activated, the Amazon Resource Name (ARN) of the role is also listed.
+*Required*: No
+*Type*: [EcrImagePullerRole](aws-properties-lightsail-container-ecrimagepullerrole.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

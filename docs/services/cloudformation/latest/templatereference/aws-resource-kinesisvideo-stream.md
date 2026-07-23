@@ -2,185 +2,136 @@
 title: "AWS::KinesisVideo::Stream"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisVideo::Stream
+<a name="aws-resource-kinesisvideo-stream"></a>
 
 Specifies a new Kinesis video stream.
 
-When you create a new stream, Kinesis Video Streams assigns it a version number. When you
-change the stream's metadata, Kinesis Video Streams updates the version.
+When you create a new stream, Kinesis Video Streams assigns it a version number. When you change the stream's metadata, Kinesis Video Streams updates the version.
 
 `CreateStream` is an asynchronous operation.
 
-For information about how the service works, see [How it Works](../../../kinesisvideostreams/latest/dg/how-it-works.md).
+For information about how the service works, see [How it Works](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-it-works.html).
 
 You must have permissions for the `KinesisVideo:CreateStream` action.
 
 ## Syntax
+<a name="aws-resource-kinesisvideo-stream-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kinesisvideo-stream-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::KinesisVideo::Stream",
   "Properties" : {
-      "DataRetentionInHours" : Integer,
-      "DeviceName" : String,
-      "KmsKeyId" : String,
-      "MediaType" : String,
-      "Name" : String,
-      "StreamStorageConfiguration" : StreamStorageConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[DataRetentionInHours](#cfn-kinesisvideo-stream-dataretentioninhours)" : {{Integer}},
+      "[DeviceName](#cfn-kinesisvideo-stream-devicename)" : {{String}},
+      "[KmsKeyId](#cfn-kinesisvideo-stream-kmskeyid)" : {{String}},
+      "[MediaType](#cfn-kinesisvideo-stream-mediatype)" : {{String}},
+      "[Name](#cfn-kinesisvideo-stream-name)" : {{String}},
+      "[StreamStorageConfiguration](#cfn-kinesisvideo-stream-streamstorageconfiguration)" : {{StreamStorageConfiguration}},
+      "[Tags](#cfn-kinesisvideo-stream-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kinesisvideo-stream-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::KinesisVideo::Stream
 Properties:
-  DataRetentionInHours: Integer
-  DeviceName: String
-  KmsKeyId: String
-  MediaType: String
-  Name: String
-  StreamStorageConfiguration:
-    StreamStorageConfiguration
-  Tags:
-    - Tag
-
+  [DataRetentionInHours](#cfn-kinesisvideo-stream-dataretentioninhours): {{Integer}}
+  [DeviceName](#cfn-kinesisvideo-stream-devicename): {{String}}
+  [KmsKeyId](#cfn-kinesisvideo-stream-kmskeyid): {{String}}
+  [MediaType](#cfn-kinesisvideo-stream-mediatype): {{String}}
+  [Name](#cfn-kinesisvideo-stream-name): {{String}}
+  [StreamStorageConfiguration](#cfn-kinesisvideo-stream-streamstorageconfiguration): {{
+    StreamStorageConfiguration}}
+  [Tags](#cfn-kinesisvideo-stream-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-kinesisvideo-stream-properties"></a>
 
-`DataRetentionInHours`
-
+`DataRetentionInHours`  <a name="cfn-kinesisvideo-stream-dataretentioninhours"></a>
 How long the stream retains data, in hours.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `87600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `87600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeviceName`
-
+`DeviceName`  <a name="cfn-kinesisvideo-stream-devicename"></a>
 The name of the device that is associated with the stream.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`KmsKeyId`  <a name="cfn-kinesisvideo-stream-kmskeyid"></a>
+The ID of the AWS Key Management Service (AWS KMS) key that Kinesis Video Streams uses to encrypt data on the stream.
+*Required*: No
+*Type*: String
+*Pattern*: `.+`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyId`
-
-The ID of the AWS Key Management Service (AWS KMS) key that Kinesis Video Streams
-uses to encrypt data on the stream.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.+`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MediaType`
-
+`MediaType`  <a name="cfn-kinesisvideo-stream-mediatype"></a>
 The `MediaType` of the stream.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w\-\.\+]+/[\w\-\.\+]+(,[\w\-\.\+]+/[\w\-\.\+]+)*`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w\-\.\+]+/[\w\-\.\+]+(,[\w\-\.\+]+/[\w\-\.\+]+)*`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-kinesisvideo-stream-name"></a>
 The name of the stream.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.-]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StreamStorageConfiguration`
-
+`StreamStorageConfiguration`  <a name="cfn-kinesisvideo-stream-streamstorageconfiguration"></a>
 The configuration for stream storage, including the default storage tier for stream data. This configuration determines how stream data is stored and accessed, with different tiers offering varying levels of performance and cost optimization.
+*Required*: No
+*Type*: [StreamStorageConfiguration](aws-properties-kinesisvideo-stream-streamstorageconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StreamStorageConfiguration](aws-properties-kinesisvideo-stream-streamstorageconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-kinesisvideo-stream-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kinesisvideo-stream-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kinesisvideo-stream-tag.md)
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-kinesisvideo-stream-return-values"></a>
 
 ### Ref
+<a name="aws-resource-kinesisvideo-stream-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-kinesisvideo-stream-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-kinesisvideo-stream-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the stream.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-StreamStorageConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

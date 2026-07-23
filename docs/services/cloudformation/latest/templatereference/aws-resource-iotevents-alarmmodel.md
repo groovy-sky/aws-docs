@@ -2,200 +2,140 @@
 title: "AWS::IoTEvents::AlarmModel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel
+<a name="aws-resource-iotevents-alarmmodel"></a>
 
-Represents an alarm model to monitor an AWS IoT Events input attribute. You can use the alarm to get
-notified when the value is outside a specified range. For more information, see [Create an\
-alarm model](../../../iotevents/latest/developerguide/create-alarms.md) in the _AWS IoT Events Developer Guide_.
+Represents an alarm model to monitor an AWS IoT Events input attribute. You can use the alarm to get notified when the value is outside a specified range. For more information, see [Create an alarm model](https://docs.aws.amazon.com/iotevents/latest/developerguide/create-alarms.html) in the *AWS IoT Events Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-iotevents-alarmmodel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iotevents-alarmmodel-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTEvents::AlarmModel",
   "Properties" : {
-      "AlarmCapabilities" : AlarmCapabilities,
-      "AlarmEventActions" : AlarmEventActions,
-      "AlarmModelDescription" : String,
-      "AlarmModelName" : String,
-      "AlarmRule" : AlarmRule,
-      "Key" : String,
-      "RoleArn" : String,
-      "Severity" : Integer,
-      "Tags" : [ Tag, ... ]
+      "[AlarmCapabilities](#cfn-iotevents-alarmmodel-alarmcapabilities)" : {{AlarmCapabilities}},
+      "[AlarmEventActions](#cfn-iotevents-alarmmodel-alarmeventactions)" : {{AlarmEventActions}},
+      "[AlarmModelDescription](#cfn-iotevents-alarmmodel-alarmmodeldescription)" : {{String}},
+      "[AlarmModelName](#cfn-iotevents-alarmmodel-alarmmodelname)" : {{String}},
+      "[AlarmRule](#cfn-iotevents-alarmmodel-alarmrule)" : {{AlarmRule}},
+      "[Key](#cfn-iotevents-alarmmodel-key)" : {{String}},
+      "[RoleArn](#cfn-iotevents-alarmmodel-rolearn)" : {{String}},
+      "[Severity](#cfn-iotevents-alarmmodel-severity)" : {{Integer}},
+      "[Tags](#cfn-iotevents-alarmmodel-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iotevents-alarmmodel-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTEvents::AlarmModel
 Properties:
-  AlarmCapabilities:
-    AlarmCapabilities
-  AlarmEventActions:
-    AlarmEventActions
-  AlarmModelDescription: String
-  AlarmModelName: String
-  AlarmRule:
-    AlarmRule
-  Key: String
-  RoleArn: String
-  Severity: Integer
-  Tags:
-    - Tag
-
+  [AlarmCapabilities](#cfn-iotevents-alarmmodel-alarmcapabilities): {{
+    AlarmCapabilities}}
+  [AlarmEventActions](#cfn-iotevents-alarmmodel-alarmeventactions): {{
+    AlarmEventActions}}
+  [AlarmModelDescription](#cfn-iotevents-alarmmodel-alarmmodeldescription): {{String}}
+  [AlarmModelName](#cfn-iotevents-alarmmodel-alarmmodelname): {{String}}
+  [AlarmRule](#cfn-iotevents-alarmmodel-alarmrule): {{
+    AlarmRule}}
+  [Key](#cfn-iotevents-alarmmodel-key): {{String}}
+  [RoleArn](#cfn-iotevents-alarmmodel-rolearn): {{String}}
+  [Severity](#cfn-iotevents-alarmmodel-severity): {{Integer}}
+  [Tags](#cfn-iotevents-alarmmodel-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-iotevents-alarmmodel-properties"></a>
 
-`AlarmCapabilities`
-
+`AlarmCapabilities`  <a name="cfn-iotevents-alarmmodel-alarmcapabilities"></a>
 Contains the configuration information of alarm state changes.
+*Required*: No
+*Type*: [AlarmCapabilities](aws-properties-iotevents-alarmmodel-alarmcapabilities.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AlarmCapabilities](aws-properties-iotevents-alarmmodel-alarmcapabilities.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlarmEventActions`
-
+`AlarmEventActions`  <a name="cfn-iotevents-alarmmodel-alarmeventactions"></a>
 Contains information about one or more alarm actions.
+*Required*: No
+*Type*: [AlarmEventActions](aws-properties-iotevents-alarmmodel-alarmeventactions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AlarmEventActions](aws-properties-iotevents-alarmmodel-alarmeventactions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlarmModelDescription`
-
+`AlarmModelDescription`  <a name="cfn-iotevents-alarmmodel-alarmmodeldescription"></a>
 The description of the alarm model.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlarmModelName`
-
+`AlarmModelName`  <a name="cfn-iotevents-alarmmodel-alarmmodelname"></a>
 The name of the alarm model.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AlarmRule`
-
+`AlarmRule`  <a name="cfn-iotevents-alarmmodel-alarmrule"></a>
 Defines when your alarm is invoked.
+*Required*: Yes
+*Type*: [AlarmRule](aws-properties-iotevents-alarmmodel-alarmrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Key`  <a name="cfn-iotevents-alarmmodel-key"></a>
+An input attribute used as a key to create an alarm. AWS IoT Events routes [inputs](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Input.html) associated with this key to the alarm.
+*Required*: No
+*Type*: String
+*Pattern*: `^((`[\w\- ]+`)|([\w\-]+))(\.((`[\w\- ]+`)|([\w\-]+)))*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [AlarmRule](aws-properties-iotevents-alarmmodel-alarmrule.md)
+`RoleArn`  <a name="cfn-iotevents-alarmmodel-rolearn"></a>
+The ARN of the IAM role that allows the alarm to perform actions and access AWS resources. For more information, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
-An input attribute used as a key to create an alarm.
-AWS IoT Events routes [inputs](../../../../reference/iotevents/latest/apireference/api-input.md)
-associated with this key to the alarm.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: ``^((`[\w\- ]+`)|([\w\-]+))(\.((`[\w\- ]+`)|([\w\-]+)))*$``
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
-The ARN of the IAM role that allows the alarm to perform actions and access AWS resources. For more information, see [Amazon Resource Names (ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the _AWS General Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Severity`
-
+`Severity`  <a name="cfn-iotevents-alarmmodel-severity"></a>
 A non-negative integer that reflects the severity level of the alarm.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A list of key-value pairs that contain metadata for the alarm model. The tags help you
-manage the alarm model. For more information, see [Tagging your AWS IoT Events\
-resources](../../../iotevents/latest/developerguide/tagging-iotevents.md) in the _AWS IoT Events Developer Guide_.
-
+`Tags`  <a name="cfn-iotevents-alarmmodel-tags"></a>
+A list of key-value pairs that contain metadata for the alarm model. The tags help you manage the alarm model. For more information, see [Tagging your AWS IoT Events resources](https://docs.aws.amazon.com/iotevents/latest/developerguide/tagging-iotevents.html) in the *AWS IoT Events Developer Guide*.
 You can create up to 50 tags for one alarm model.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iotevents-alarmmodel-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iotevents-alarmmodel-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iotevents-alarmmodel-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iotevents-alarmmodel-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the alarm model. For example:
 
-`{"Ref": "myAlarmModel"}`
+ `{"Ref": "myAlarmModel"}`
 
-For the AWS IoT Events alarm model `myAlarmModel`, `Ref` returns the name of the
-alarm model.
+For the AWS IoT Events alarm model `myAlarmModel`, `Ref` returns the name of the alarm model.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS IoT Events
-
-AcknowledgeFlow
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

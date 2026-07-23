@@ -2,56 +2,43 @@
 title: "AWS::DataZone::Connection SparkGlueArgs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection SparkGlueArgs
+<a name="aws-properties-datazone-connection-sparkglueargs"></a>
 
 The Spark AWS Glue args.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-sparkglueargs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-sparkglueargs-syntax.json"></a>
 
-```json
-
+```
 {
-  "Connection" : String
+  "[Connection](#cfn-datazone-connection-sparkglueargs-connection)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-sparkglueargs-syntax.yaml"></a>
 
-```yaml
-
-  Connection: String
-
+```
+  [Connection](#cfn-datazone-connection-sparkglueargs-connection): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-sparkglueargs-properties"></a>
 
-`Connection`
-
+`Connection`  <a name="cfn-datazone-connection-sparkglueargs-connection"></a>
 The connection in the Spark AWS Glue args.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SparkEmrPropertiesInput
-
-SparkGluePropertiesInput
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

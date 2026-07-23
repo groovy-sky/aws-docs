@@ -2,79 +2,60 @@
 title: "AWS::AppTest::TestCase ResourceAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase ResourceAction
+<a name="aws-properties-apptest-testcase-resourceaction"></a>
 
 Specifies a resource action.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-resourceaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-resourceaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudFormationAction" : CloudFormationAction,
-  "M2ManagedApplicationAction" : M2ManagedApplicationAction,
-  "M2NonManagedApplicationAction" : M2NonManagedApplicationAction
+  "[CloudFormationAction](#cfn-apptest-testcase-resourceaction-cloudformationaction)" : {{CloudFormationAction}},
+  "[M2ManagedApplicationAction](#cfn-apptest-testcase-resourceaction-m2managedapplicationaction)" : {{M2ManagedApplicationAction}},
+  "[M2NonManagedApplicationAction](#cfn-apptest-testcase-resourceaction-m2nonmanagedapplicationaction)" : {{M2NonManagedApplicationAction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-resourceaction-syntax.yaml"></a>
 
-```yaml
-
-  CloudFormationAction:
-    CloudFormationAction
-  M2ManagedApplicationAction:
-    M2ManagedApplicationAction
-  M2NonManagedApplicationAction:
-    M2NonManagedApplicationAction
-
+```
+  [CloudFormationAction](#cfn-apptest-testcase-resourceaction-cloudformationaction): {{
+    CloudFormationAction}}
+  [M2ManagedApplicationAction](#cfn-apptest-testcase-resourceaction-m2managedapplicationaction): {{
+    M2ManagedApplicationAction}}
+  [M2NonManagedApplicationAction](#cfn-apptest-testcase-resourceaction-m2nonmanagedapplicationaction): {{
+    M2NonManagedApplicationAction}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-resourceaction-properties"></a>
 
-`CloudFormationAction`
-
+`CloudFormationAction`  <a name="cfn-apptest-testcase-resourceaction-cloudformationaction"></a>
 The CloudFormation action of the resource action.
+*Required*: No
+*Type*: [CloudFormationAction](aws-properties-apptest-testcase-cloudformationaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CloudFormationAction](aws-properties-apptest-testcase-cloudformationaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`M2ManagedApplicationAction`
-
+`M2ManagedApplicationAction`  <a name="cfn-apptest-testcase-resourceaction-m2managedapplicationaction"></a>
 The AWS Mainframe Modernization managed application action of the resource action.
+*Required*: No
+*Type*: [M2ManagedApplicationAction](aws-properties-apptest-testcase-m2managedapplicationaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [M2ManagedApplicationAction](aws-properties-apptest-testcase-m2managedapplicationaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`M2NonManagedApplicationAction`
-
+`M2NonManagedApplicationAction`  <a name="cfn-apptest-testcase-resourceaction-m2nonmanagedapplicationaction"></a>
 The AWS Mainframe Modernization non-managed application action of the resource action.
-
-_Required_: No
-
-_Type_: [M2NonManagedApplicationAction](aws-properties-apptest-testcase-m2nonmanagedapplicationaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputFile
-
-Script
+*Required*: No
+*Type*: [M2NonManagedApplicationAction](aws-properties-apptest-testcase-m2nonmanagedapplicationaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

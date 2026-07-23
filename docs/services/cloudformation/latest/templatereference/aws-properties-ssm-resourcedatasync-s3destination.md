@@ -2,121 +2,83 @@
 title: "AWS::SSM::ResourceDataSync S3Destination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::ResourceDataSync S3Destination
+<a name="aws-properties-ssm-resourcedatasync-s3destination"></a>
 
 Information about the target S3 bucket for the resource data sync.
 
 ## Syntax
+<a name="aws-properties-ssm-resourcedatasync-s3destination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-resourcedatasync-s3destination-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "BucketPrefix" : String,
-  "BucketRegion" : String,
-  "KMSKeyArn" : String,
-  "SyncFormat" : String
+  "[BucketName](#cfn-ssm-resourcedatasync-s3destination-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-ssm-resourcedatasync-s3destination-bucketprefix)" : {{String}},
+  "[BucketRegion](#cfn-ssm-resourcedatasync-s3destination-bucketregion)" : {{String}},
+  "[KMSKeyArn](#cfn-ssm-resourcedatasync-s3destination-kmskeyarn)" : {{String}},
+  "[SyncFormat](#cfn-ssm-resourcedatasync-s3destination-syncformat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-resourcedatasync-s3destination-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  BucketPrefix: String
-  BucketRegion: String
-  KMSKeyArn: String
-  SyncFormat: String
-
+```
+  [BucketName](#cfn-ssm-resourcedatasync-s3destination-bucketname): {{String}}
+  [BucketPrefix](#cfn-ssm-resourcedatasync-s3destination-bucketprefix): {{String}}
+  [BucketRegion](#cfn-ssm-resourcedatasync-s3destination-bucketregion): {{String}}
+  [KMSKeyArn](#cfn-ssm-resourcedatasync-s3destination-kmskeyarn): {{String}}
+  [SyncFormat](#cfn-ssm-resourcedatasync-s3destination-syncformat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-resourcedatasync-s3destination-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-ssm-resourcedatasync-s3destination-bucketname"></a>
 The name of the S3 bucket where the aggregated data is stored.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BucketPrefix`
-
+`BucketPrefix`  <a name="cfn-ssm-resourcedatasync-s3destination-bucketprefix"></a>
 An Amazon S3 prefix for the bucket.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BucketRegion`
-
+`BucketRegion`  <a name="cfn-ssm-resourcedatasync-s3destination-bucketregion"></a>
 The AWS Region with the S3 bucket targeted by the resource data sync.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`KMSKeyArn`  <a name="cfn-ssm-resourcedatasync-s3destination-kmskeyarn"></a>
+The ARN of an encryption key for a destination in Amazon S3. Must belong to the same Region as the destination S3 bucket.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KMSKeyArn`
-
-The ARN of an encryption key for a destination in Amazon S3. Must belong to the same
-Region as the destination S3 bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SyncFormat`
-
+`SyncFormat`  <a name="cfn-ssm-resourcedatasync-s3destination-syncformat"></a>
 A supported sync format. The following format is currently supported: JsonSerDe
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AwsOrganizationsSource
-
-SyncSource
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

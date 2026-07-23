@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Dashboard DateTimeParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DateTimeParameter
+<a name="aws-properties-quicksight-dashboard-datetimeparameter"></a>
 
 A date-time parameter.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-datetimeparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-datetimeparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Values" : [ String, ... ]
+  "[Name](#cfn-quicksight-dashboard-datetimeparameter-name)" : {{String}},
+  "[Values](#cfn-quicksight-dashboard-datetimeparameter-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-datetimeparameter-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Values:
-    - String
-
+```
+  [Name](#cfn-quicksight-dashboard-datetimeparameter-name): {{String}}
+  [Values](#cfn-quicksight-dashboard-datetimeparameter-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-datetimeparameter-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-quicksight-dashboard-datetimeparameter-name"></a>
 A display name for the date-time parameter.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-quicksight-dashboard-datetimeparameter-values"></a>
 The values for the date-time parameter.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateTimeHierarchy
-
-DateTimeParameterDeclaration
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

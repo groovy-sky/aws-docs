@@ -2,57 +2,44 @@
 title: "AWS::Connect::Rule UpdateCaseAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule UpdateCaseAction
+<a name="aws-properties-connect-rule-updatecaseaction"></a>
 
-The `UpdateCaseAction` property type specifies Property description not available. for an [AWS::Connect::Rule](aws-resource-connect-rule.md).
+<a name="aws-properties-connect-rule-updatecaseaction-description"></a>The `UpdateCaseAction` property type specifies Property description not available. for an [AWS::Connect::Rule](aws-resource-connect-rule.md).
 
 ## Syntax
+<a name="aws-properties-connect-rule-updatecaseaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-updatecaseaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Fields" : [ Field, ... ]
+  "[Fields](#cfn-connect-rule-updatecaseaction-fields)" : {{[ Field, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-updatecaseaction-syntax.yaml"></a>
 
-```yaml
-
-  Fields:
-    - Field
-
+```
+  [Fields](#cfn-connect-rule-updatecaseaction-fields): {{
+    - Field}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-updatecaseaction-properties"></a>
 
-`Fields`
-
+`Fields`  <a name="cfn-connect-rule-updatecaseaction-fields"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Array of [Field](aws-properties-connect-rule-field.md)
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TaskAction
-
-AWS::Connect::SecurityKey
+*Required*: Yes
+*Type*: Array of [Field](aws-properties-connect-rule-field.md)
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

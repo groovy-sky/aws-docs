@@ -2,129 +2,91 @@
 title: "AWS::AmplifyUIBuilder::Component ComponentConditionProperty"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component ComponentConditionProperty
+<a name="aws-properties-amplifyuibuilder-component-componentconditionproperty"></a>
 
-The `ComponentConditionProperty` property specifies a conditional expression
-for setting a component property. Use `ComponentConditionProperty` to set a
-property to different values conditionally, based on the value of another property.
+The `ComponentConditionProperty` property specifies a conditional expression for setting a component property. Use `ComponentConditionProperty` to set a property to different values conditionally, based on the value of another property.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-component-componentconditionproperty-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-component-componentconditionproperty-syntax.json"></a>
 
-```json
-
+```
 {
-  "Else" : ComponentProperty,
-  "Field" : String,
-  "Operand" : String,
-  "OperandType" : String,
-  "Operator" : String,
-  "Property" : String,
-  "Then" : ComponentProperty
+  "[Else](#cfn-amplifyuibuilder-component-componentconditionproperty-else)" : {{ComponentProperty}},
+  "[Field](#cfn-amplifyuibuilder-component-componentconditionproperty-field)" : {{String}},
+  "[Operand](#cfn-amplifyuibuilder-component-componentconditionproperty-operand)" : {{String}},
+  "[OperandType](#cfn-amplifyuibuilder-component-componentconditionproperty-operandtype)" : {{String}},
+  "[Operator](#cfn-amplifyuibuilder-component-componentconditionproperty-operator)" : {{String}},
+  "[Property](#cfn-amplifyuibuilder-component-componentconditionproperty-property)" : {{String}},
+  "[Then](#cfn-amplifyuibuilder-component-componentconditionproperty-then)" : {{ComponentProperty}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-component-componentconditionproperty-syntax.yaml"></a>
 
-```yaml
-
-  Else:
-    ComponentProperty
-  Field: String
-  Operand: String
-  OperandType: String
-  Operator: String
-  Property: String
-  Then:
-    ComponentProperty
-
+```
+  [Else](#cfn-amplifyuibuilder-component-componentconditionproperty-else): {{
+    ComponentProperty}}
+  [Field](#cfn-amplifyuibuilder-component-componentconditionproperty-field): {{String}}
+  [Operand](#cfn-amplifyuibuilder-component-componentconditionproperty-operand): {{String}}
+  [OperandType](#cfn-amplifyuibuilder-component-componentconditionproperty-operandtype): {{String}}
+  [Operator](#cfn-amplifyuibuilder-component-componentconditionproperty-operator): {{String}}
+  [Property](#cfn-amplifyuibuilder-component-componentconditionproperty-property): {{String}}
+  [Then](#cfn-amplifyuibuilder-component-componentconditionproperty-then): {{
+    ComponentProperty}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-component-componentconditionproperty-properties"></a>
 
-`Else`
-
+`Else`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-else"></a>
 The value to assign to the property if the condition is not met.
+*Required*: No
+*Type*: [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Field`
-
+`Field`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-field"></a>
 The name of a field. Specify this when the property is a data model.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operand`
-
+`Operand`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-operand"></a>
 The value of the property to evaluate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperandType`
-
+`OperandType`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-operandtype"></a>
 The type of the property to evaluate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Operator`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-operator"></a>
+The operator to use to perform the evaluation, such as `eq` to represent equals.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Operator`
-
-The operator to use to perform the evaluation, such as `eq` to represent
-equals.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Property`
-
+`Property`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-property"></a>
 The name of the conditional property.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Then`
-
+`Then`  <a name="cfn-amplifyuibuilder-component-componentconditionproperty-then"></a>
 The value to assign to the property if the condition is met.
-
-_Required_: No
-
-_Type_: [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentChild
-
-ComponentDataConfiguration
+*Required*: No
+*Type*: [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

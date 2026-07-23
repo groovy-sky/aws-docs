@@ -2,227 +2,176 @@
 title: "AWS::ApiGatewayV2::Route"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Route
+<a name="aws-resource-apigatewayv2-route"></a>
 
-The `AWS::ApiGatewayV2::Route` resource creates a route for an
-API.
+The `AWS::ApiGatewayV2::Route` resource creates a route for an API.
 
 ## Syntax
+<a name="aws-resource-apigatewayv2-route-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigatewayv2-route-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGatewayV2::Route",
   "Properties" : {
-      "ApiId" : String,
-      "ApiKeyRequired" : Boolean,
-      "AuthorizationScopes" : [ String, ... ],
-      "AuthorizationType" : String,
-      "AuthorizerId" : String,
-      "ModelSelectionExpression" : String,
-      "OperationName" : String,
-      "RequestModels" : Json,
-      "RequestParameters" : Json,
-      "RouteKey" : String,
-      "RouteResponseSelectionExpression" : String,
-      "Target" : String
+      "[ApiId](#cfn-apigatewayv2-route-apiid)" : {{String}},
+      "[ApiKeyRequired](#cfn-apigatewayv2-route-apikeyrequired)" : {{Boolean}},
+      "[AuthorizationScopes](#cfn-apigatewayv2-route-authorizationscopes)" : {{[ String, ... ]}},
+      "[AuthorizationType](#cfn-apigatewayv2-route-authorizationtype)" : {{String}},
+      "[AuthorizerId](#cfn-apigatewayv2-route-authorizerid)" : {{String}},
+      "[ModelSelectionExpression](#cfn-apigatewayv2-route-modelselectionexpression)" : {{String}},
+      "[OperationName](#cfn-apigatewayv2-route-operationname)" : {{String}},
+      "[RequestModels](#cfn-apigatewayv2-route-requestmodels)" : {{Json}},
+      "[RequestParameters](#cfn-apigatewayv2-route-requestparameters)" : {{Json}},
+      "[RouteKey](#cfn-apigatewayv2-route-routekey)" : {{String}},
+      "[RouteResponseSelectionExpression](#cfn-apigatewayv2-route-routeresponseselectionexpression)" : {{String}},
+      "[Target](#cfn-apigatewayv2-route-target)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigatewayv2-route-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGatewayV2::Route
 Properties:
-  ApiId: String
-  ApiKeyRequired: Boolean
-  AuthorizationScopes:
-    - String
-  AuthorizationType: String
-  AuthorizerId: String
-  ModelSelectionExpression: String
-  OperationName: String
-  RequestModels: Json
-  RequestParameters: Json
-  RouteKey: String
-  RouteResponseSelectionExpression: String
-  Target: String
-
+  [ApiId](#cfn-apigatewayv2-route-apiid): {{String}}
+  [ApiKeyRequired](#cfn-apigatewayv2-route-apikeyrequired): {{Boolean}}
+  [AuthorizationScopes](#cfn-apigatewayv2-route-authorizationscopes): {{
+    - String}}
+  [AuthorizationType](#cfn-apigatewayv2-route-authorizationtype): {{String}}
+  [AuthorizerId](#cfn-apigatewayv2-route-authorizerid): {{String}}
+  [ModelSelectionExpression](#cfn-apigatewayv2-route-modelselectionexpression): {{String}}
+  [OperationName](#cfn-apigatewayv2-route-operationname): {{String}}
+  [RequestModels](#cfn-apigatewayv2-route-requestmodels): {{Json}}
+  [RequestParameters](#cfn-apigatewayv2-route-requestparameters): {{Json}}
+  [RouteKey](#cfn-apigatewayv2-route-routekey): {{String}}
+  [RouteResponseSelectionExpression](#cfn-apigatewayv2-route-routeresponseselectionexpression): {{String}}
+  [Target](#cfn-apigatewayv2-route-target): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigatewayv2-route-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-apigatewayv2-route-apiid"></a>
 The API identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ApiKeyRequired`
-
+`ApiKeyRequired`  <a name="cfn-apigatewayv2-route-apikeyrequired"></a>
 Specifies whether an API key is required for the route. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizationScopes`
-
+`AuthorizationScopes`  <a name="cfn-apigatewayv2-route-authorizationscopes"></a>
 The authorization scopes supported by this route.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`AuthorizationType`  <a name="cfn-apigatewayv2-route-authorizationtype"></a>
+The authorization type for the route. For WebSocket APIs, valid values are `NONE` for open access, `AWS_IAM` for using AWS IAM permissions, and `CUSTOM` for using a Lambda authorizer. For HTTP APIs, valid values are `NONE` for open access, `JWT` for using JSON Web Tokens, `AWS_IAM` for using AWS IAM permissions, and `CUSTOM` for using a Lambda authorizer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizationType`
-
-The authorization type for the route. For WebSocket APIs, valid values are
-`NONE` for open access, `AWS_IAM` for using AWS IAM
-permissions, and `CUSTOM` for using a Lambda
-authorizer. For HTTP APIs, valid values are `NONE` for open access, `JWT` for using JSON Web Tokens, `AWS_IAM` for using AWS IAM
-permissions, and `CUSTOM` for using a Lambda authorizer.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthorizerId`
-
+`AuthorizerId`  <a name="cfn-apigatewayv2-route-authorizerid"></a>
 The identifier of the `Authorizer` resource to be associated with this route. The authorizer identifier is generated by API Gateway when you created the authorizer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelSelectionExpression`
-
+`ModelSelectionExpression`  <a name="cfn-apigatewayv2-route-modelselectionexpression"></a>
 The model selection expression for the route. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperationName`
-
+`OperationName`  <a name="cfn-apigatewayv2-route-operationname"></a>
 The operation name for the route.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestModels`
-
+`RequestModels`  <a name="cfn-apigatewayv2-route-requestmodels"></a>
 The request models for the route. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestParameters`
-
+`RequestParameters`  <a name="cfn-apigatewayv2-route-requestparameters"></a>
 The request parameters for the route. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RouteKey`
-
+`RouteKey`  <a name="cfn-apigatewayv2-route-routekey"></a>
 The route key for the route. For HTTP APIs, the route key can be either `$default`, or a combination of an HTTP method and resource path, for example, `GET /pets`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RouteResponseSelectionExpression`
-
+`RouteResponseSelectionExpression`  <a name="cfn-apigatewayv2-route-routeresponseselectionexpression"></a>
 The route response selection expression for the route. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
+`Target`  <a name="cfn-apigatewayv2-route-target"></a>
 The target for the route.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigatewayv2-route-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigatewayv2-route-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Route resource ID, such as
-`abcd123`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Route resource ID, such as `abcd123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigatewayv2-route-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RouteId`
+####
+<a name="aws-resource-apigatewayv2-route-return-values-fn--getatt-fn--getatt"></a>
 
+`RouteId`  <a name="RouteId-fn::getatt"></a>
 The route ID.
 
 ## Examples
+<a name="aws-resource-apigatewayv2-route--examples"></a>
 
-- [HTTP API route creation example](#aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example)
-
-- [WebSocket API route creation example](#aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example)
+**Topics**
++ [HTTP API route creation example](#aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example)
++ [WebSocket API route creation example](#aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example)
 
 ### HTTP API route creation example
+<a name="aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example"></a>
 
-The following example creates a `route` resource called
-`MyRoute` for an HTTP API called
-`MyAPI` that already has an `integration`
-resource called `MyIntegration`. The route accepts `POST` requests to `/signup`.
+The following example creates a `route` resource called `MyRoute` for an HTTP API called `MyAPI` that already has an `integration` resource called `MyIntegration`. The route accepts `POST` requests to `/signup`.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example--json"></a>
 
-```json
-
+```
 "MyRoute": {
     "Type": "AWS::ApiGatewayV2::Route",
         "Properties": {
@@ -246,9 +195,9 @@ resource called `MyIntegration`. The route accepts `POST` requests to `/signup`.
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example--yaml"></a>
 
-```yaml
-
+```
 MyRoute:
   Type: AWS::ApiGatewayV2::Route
   Properties:
@@ -258,21 +207,17 @@ MyRoute:
       - /
       - - integrations
         - !Ref MyIntegration
-
 ```
 
 ### WebSocket API route creation example
+<a name="aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example"></a>
 
-The following example creates a `route` resource called
-`MyRoute` for a WebSocket API called
-`MyAPI` that already has an `integration`
-resource called `MyIntegration`. The route has a route key
-value of `routekey1`.
+The following example creates a `route` resource called `MyRoute` for a WebSocket API called `MyAPI` that already has an `integration` resource called `MyIntegration`. The route has a route key value of `routekey1`.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example--json"></a>
 
-```json
-
+```
 {
     "MyRoute": {
         "Type": "AWS::ApiGatewayV2::Route",
@@ -302,9 +247,9 @@ value of `routekey1`.
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example--yaml"></a>
 
-```yaml
-
+```
 MyRoute:
   Type: 'AWS::ApiGatewayV2::Route'
   DependsOn:
@@ -317,18 +262,10 @@ MyRoute:
       - /
       - - integrations
         - !Ref MyIntegration
-
 ```
 
 ## See also
-
-- [CreateRoute](../../../apigatewayv2/latest/api-reference/apis-apiid-routes.md#CreateRoute) in the _Amazon API Gateway_
-_Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGatewayV2::Model
-
-AWS::ApiGatewayV2::RouteResponse
+<a name="aws-resource-apigatewayv2-route--seealso"></a>
++ [CreateRoute](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes.html#CreateRoute) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

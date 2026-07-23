@@ -2,52 +2,41 @@
 title: "AWS::EMRServerless::Application AutoStartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application AutoStartConfiguration
+<a name="aws-properties-emrserverless-application-autostartconfiguration"></a>
 
 The configuration for an application to automatically start on job submission.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-autostartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-autostartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean
+  "[Enabled](#cfn-emrserverless-application-autostartconfiguration-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-autostartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-
+```
+  [Enabled](#cfn-emrserverless-application-autostartconfiguration-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-autostartconfiguration-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-emrserverless-application-autostartconfiguration-enabled"></a>
 Enables the application to automatically start on job submission.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EMRServerless::Application
-
-AutoStopConfiguration
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

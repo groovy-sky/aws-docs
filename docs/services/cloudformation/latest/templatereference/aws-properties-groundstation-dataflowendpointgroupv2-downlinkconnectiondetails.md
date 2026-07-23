@@ -2,66 +2,51 @@
 title: "AWS::GroundStation::DataflowEndpointGroupV2 DownlinkConnectionDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroupV2 DownlinkConnectionDetails
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails"></a>
 
 Connection details for Ground Station to Agent and Agent to customer
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentIpAndPortAddress" : RangedConnectionDetails,
-  "EgressAddressAndPort" : ConnectionDetails
+  "[AgentIpAndPortAddress](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-agentipandportaddress)" : {{RangedConnectionDetails}},
+  "[EgressAddressAndPort](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-egressaddressandport)" : {{ConnectionDetails}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-syntax.yaml"></a>
 
-```yaml
-
-  AgentIpAndPortAddress:
-    RangedConnectionDetails
-  EgressAddressAndPort:
-    ConnectionDetails
-
+```
+  [AgentIpAndPortAddress](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-agentipandportaddress): {{
+    RangedConnectionDetails}}
+  [EgressAddressAndPort](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-egressaddressandport): {{
+    ConnectionDetails}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-properties"></a>
 
-`AgentIpAndPortAddress`
-
+`AgentIpAndPortAddress`  <a name="cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-agentipandportaddress"></a>
 Agent IP and port address for the downlink connection.
+*Required*: Yes
+*Type*: [RangedConnectionDetails](aws-properties-groundstation-dataflowendpointgroupv2-rangedconnectiondetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [RangedConnectionDetails](aws-properties-groundstation-dataflowendpointgroupv2-rangedconnectiondetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EgressAddressAndPort`
-
+`EgressAddressAndPort`  <a name="cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-egressaddressandport"></a>
 Egress address and port for the downlink connection.
-
-_Required_: Yes
-
-_Type_: [ConnectionDetails](aws-properties-groundstation-dataflowendpointgroupv2-connectiondetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DownlinkAwsGroundStationAgentEndpointDetails
-
-DownlinkDataflowDetails
+*Required*: Yes
+*Type*: [ConnectionDetails](aws-properties-groundstation-dataflowendpointgroupv2-connectiondetails.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

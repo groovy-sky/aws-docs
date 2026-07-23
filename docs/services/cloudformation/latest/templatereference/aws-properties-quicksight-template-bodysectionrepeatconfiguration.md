@@ -2,87 +2,64 @@
 title: "AWS::QuickSight::Template BodySectionRepeatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template BodySectionRepeatConfiguration
+<a name="aws-properties-quicksight-template-bodysectionrepeatconfiguration"></a>
 
 Describes the configurations that are required to declare a section as repeating.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-bodysectionrepeatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-bodysectionrepeatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DimensionConfigurations" : [ BodySectionRepeatDimensionConfiguration, ... ],
-  "NonRepeatingVisuals" : [ String, ... ],
-  "PageBreakConfiguration" : BodySectionRepeatPageBreakConfiguration
+  "[DimensionConfigurations](#cfn-quicksight-template-bodysectionrepeatconfiguration-dimensionconfigurations)" : {{[ BodySectionRepeatDimensionConfiguration, ... ]}},
+  "[NonRepeatingVisuals](#cfn-quicksight-template-bodysectionrepeatconfiguration-nonrepeatingvisuals)" : {{[ String, ... ]}},
+  "[PageBreakConfiguration](#cfn-quicksight-template-bodysectionrepeatconfiguration-pagebreakconfiguration)" : {{BodySectionRepeatPageBreakConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-bodysectionrepeatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DimensionConfigurations:
-    - BodySectionRepeatDimensionConfiguration
-  NonRepeatingVisuals:
-    - String
-  PageBreakConfiguration:
-    BodySectionRepeatPageBreakConfiguration
-
+```
+  [DimensionConfigurations](#cfn-quicksight-template-bodysectionrepeatconfiguration-dimensionconfigurations): {{
+    - BodySectionRepeatDimensionConfiguration}}
+  [NonRepeatingVisuals](#cfn-quicksight-template-bodysectionrepeatconfiguration-nonrepeatingvisuals): {{
+    - String}}
+  [PageBreakConfiguration](#cfn-quicksight-template-bodysectionrepeatconfiguration-pagebreakconfiguration): {{
+    BodySectionRepeatPageBreakConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-bodysectionrepeatconfiguration-properties"></a>
 
-`DimensionConfigurations`
-
+`DimensionConfigurations`  <a name="cfn-quicksight-template-bodysectionrepeatconfiguration-dimensionconfigurations"></a>
 List of `BodySectionRepeatDimensionConfiguration` values that describe the dataset column and constraints for the column used to repeat the contents of a section.
+*Required*: No
+*Type*: Array of [BodySectionRepeatDimensionConfiguration](aws-properties-quicksight-template-bodysectionrepeatdimensionconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [BodySectionRepeatDimensionConfiguration](aws-properties-quicksight-template-bodysectionrepeatdimensionconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NonRepeatingVisuals`
-
+`NonRepeatingVisuals`  <a name="cfn-quicksight-template-bodysectionrepeatconfiguration-nonrepeatingvisuals"></a>
 List of visuals to exclude from repetition in repeating sections. The visuals will render identically, and ignore the repeating configurations in all repeating instances.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 0`
+*Maximum*: `512 | 20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 0`
-
-_Maximum_: `512 | 20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PageBreakConfiguration`
-
+`PageBreakConfiguration`  <a name="cfn-quicksight-template-bodysectionrepeatconfiguration-pagebreakconfiguration"></a>
 Page break configuration to apply for each repeating instance.
-
-_Required_: No
-
-_Type_: [BodySectionRepeatPageBreakConfiguration](aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BodySectionDynamicNumericDimensionConfiguration
-
-BodySectionRepeatDimensionConfiguration
+*Required*: No
+*Type*: [BodySectionRepeatPageBreakConfiguration](aws-properties-quicksight-template-bodysectionrepeatpagebreakconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

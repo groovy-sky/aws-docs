@@ -3,35 +3,30 @@ title: "Amazon SQS template snippets"
 ---
 
 # Amazon SQS template snippets
+<a name="scenario-sqs-queue"></a>
 
 This example shows an Amazon SQS queue.
 
 ## JSON
+<a name="scenario-sqs-queue-example-1.json"></a>
 
-```json
-
-"MyQueue" : {
-    "Type" : "AWS::SQS::Queue",
-    "Properties" : {
-        "VisibilityTimeout" : "value"
-    }
-}
+```
+1. "MyQueue" : {
+2.     "Type" : "AWS::SQS::Queue",
+3.     "Properties" : {
+4.         "VisibilityTimeout" : "{{value}}"
+5.     }
+6. }
 ```
 
 ## YAML
+<a name="scenario-sqs-queue-example-1.yaml"></a>
 
-```yaml
-
-MyQueue:
-  Type: AWS::SQS::Queue
-  Properties:
-    VisibilityTimeout: value
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon SNS
-
-Amazon Timestream
+1. MyQueue:
+2.   Type: AWS::SQS::Queue
+3.   Properties:
+4.     VisibilityTimeout: {{value}}
+```
 
 All content copied from https://docs.aws.amazon.com/.

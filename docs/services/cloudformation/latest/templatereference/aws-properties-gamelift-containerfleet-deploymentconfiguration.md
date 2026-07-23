@@ -2,92 +2,61 @@
 title: "AWS::GameLift::ContainerFleet DeploymentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerFleet DeploymentConfiguration
+<a name="aws-properties-gamelift-containerfleet-deploymentconfiguration"></a>
 
 Set of rules for processing a deployment for a container fleet update.
 
 ## Syntax
+<a name="aws-properties-gamelift-containerfleet-deploymentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-containerfleet-deploymentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ImpairmentStrategy" : String,
-  "MinimumHealthyPercentage" : Integer,
-  "ProtectionStrategy" : String
+  "[ImpairmentStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-impairmentstrategy)" : {{String}},
+  "[MinimumHealthyPercentage](#cfn-gamelift-containerfleet-deploymentconfiguration-minimumhealthypercentage)" : {{Integer}},
+  "[ProtectionStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-protectionstrategy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-containerfleet-deploymentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ImpairmentStrategy: String
-  MinimumHealthyPercentage: Integer
-  ProtectionStrategy: String
-
+```
+  [ImpairmentStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-impairmentstrategy): {{String}}
+  [MinimumHealthyPercentage](#cfn-gamelift-containerfleet-deploymentconfiguration-minimumhealthypercentage): {{Integer}}
+  [ProtectionStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-protectionstrategy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-containerfleet-deploymentconfiguration-properties"></a>
 
-`ImpairmentStrategy`
+`ImpairmentStrategy`  <a name="cfn-gamelift-containerfleet-deploymentconfiguration-impairmentstrategy"></a>
+Determines what actions to take if a deployment fails. If the fleet is multi-location, this strategy applies across all fleet locations. With a rollback strategy, updated fleet instances are rolled back to the last successful deployment. Alternatively, you can maintain a few impaired containers for the purpose of debugging, while all other tasks return to the last successful deployment.
+*Required*: No
+*Type*: String
+*Allowed values*: `MAINTAIN | ROLLBACK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines what actions to take if a deployment fails. If the fleet is multi-location,
-this strategy applies across all fleet locations. With a rollback strategy, updated
-fleet instances are rolled back to the last successful deployment. Alternatively, you
-can maintain a few impaired containers for the purpose of debugging, while all other
-tasks return to the last successful deployment.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MAINTAIN | ROLLBACK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimumHealthyPercentage`
-
+`MinimumHealthyPercentage`  <a name="cfn-gamelift-containerfleet-deploymentconfiguration-minimumhealthypercentage"></a>
 Sets a minimum level of healthy tasks to maintain during deployment activity.
+*Required*: No
+*Type*: Integer
+*Minimum*: `30`
+*Maximum*: `75`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `30`
-
-_Maximum_: `75`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProtectionStrategy`
-
-Determines how fleet deployment activity affects active game sessions on the fleet.
-With protection, a deployment honors game session protection, and delays actions that
-would interrupt a protected active game session until the game session ends. Without
-protection, deployment activity can shut down all running tasks, including active game
-sessions, regardless of game session protection.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `WITH_PROTECTION | IGNORE_PROTECTION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectionPortRange
-
-DeploymentDetails
+`ProtectionStrategy`  <a name="cfn-gamelift-containerfleet-deploymentconfiguration-protectionstrategy"></a>
+Determines how fleet deployment activity affects active game sessions on the fleet. With protection, a deployment honors game session protection, and delays actions that would interrupt a protected active game session until the game session ends. Without protection, deployment activity can shut down all running tasks, including active game sessions, regardless of game session protection.
+*Required*: No
+*Type*: String
+*Allowed values*: `WITH_PROTECTION | IGNORE_PROTECTION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,128 +2,87 @@
 title: "AWS::QuickSight::Dashboard CustomFilterConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard CustomFilterConfiguration
+<a name="aws-properties-quicksight-dashboard-customfilterconfiguration"></a>
 
 A custom filter that filters based on a single value. This filter can be partially matched.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-customfilterconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-customfilterconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryValue" : String,
-  "MatchOperator" : String,
-  "NullOption" : String,
-  "ParameterName" : String,
-  "SelectAllOptions" : String
+  "[CategoryValue](#cfn-quicksight-dashboard-customfilterconfiguration-categoryvalue)" : {{String}},
+  "[MatchOperator](#cfn-quicksight-dashboard-customfilterconfiguration-matchoperator)" : {{String}},
+  "[NullOption](#cfn-quicksight-dashboard-customfilterconfiguration-nulloption)" : {{String}},
+  "[ParameterName](#cfn-quicksight-dashboard-customfilterconfiguration-parametername)" : {{String}},
+  "[SelectAllOptions](#cfn-quicksight-dashboard-customfilterconfiguration-selectalloptions)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-customfilterconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CategoryValue: String
-  MatchOperator: String
-  NullOption: String
-  ParameterName: String
-  SelectAllOptions: String
-
+```
+  [CategoryValue](#cfn-quicksight-dashboard-customfilterconfiguration-categoryvalue): {{String}}
+  [MatchOperator](#cfn-quicksight-dashboard-customfilterconfiguration-matchoperator): {{String}}
+  [NullOption](#cfn-quicksight-dashboard-customfilterconfiguration-nulloption): {{String}}
+  [ParameterName](#cfn-quicksight-dashboard-customfilterconfiguration-parametername): {{String}}
+  [SelectAllOptions](#cfn-quicksight-dashboard-customfilterconfiguration-selectalloptions): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-customfilterconfiguration-properties"></a>
 
-`CategoryValue`
-
+`CategoryValue`  <a name="cfn-quicksight-dashboard-customfilterconfiguration-categoryvalue"></a>
 The category value for the filter.
-
 This field is mutually exclusive to `ParameterName`.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MatchOperator`
-
+`MatchOperator`  <a name="cfn-quicksight-dashboard-customfilterconfiguration-matchoperator"></a>
 The match operator that is used to determine if a filter should be applied.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS | DOES_NOT_EQUAL | CONTAINS | DOES_NOT_CONTAIN | STARTS_WITH | ENDS_WITH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS | DOES_NOT_EQUAL | CONTAINS | DOES_NOT_CONTAIN | STARTS_WITH | ENDS_WITH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullOption`
-
+`NullOption`  <a name="cfn-quicksight-dashboard-customfilterconfiguration-nulloption"></a>
 This option determines how null values should be treated when filtering data.
++ `ALL_VALUES`: Include null values in filtered results.
++ `NULLS_ONLY`: Only include null values in filtered results.
++ `NON_NULLS_ONLY`: Exclude null values from filtered results.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_VALUES`: Include null values in filtered results.
-
-- `NULLS_ONLY`: Only include null values in filtered results.
-
-- `NON_NULLS_ONLY`: Exclude null values from filtered results.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterName`
-
+`ParameterName`  <a name="cfn-quicksight-dashboard-customfilterconfiguration-parametername"></a>
 The parameter whose value should be used for the filter value.
-
 This field is mutually exclusive to `CategoryValue`.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectAllOptions`
-
+`SelectAllOptions`  <a name="cfn-quicksight-dashboard-customfilterconfiguration-selectalloptions"></a>
 Select all of the values. Null is not the assigned value of select all.
-
-- `FILTER_ALL_VALUES`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FILTER_ALL_VALUES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomContentVisual
-
-CustomFilterListConfiguration
++  `FILTER_ALL_VALUES`
+*Required*: No
+*Type*: String
+*Allowed values*: `FILTER_ALL_VALUES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

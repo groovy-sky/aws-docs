@@ -2,129 +2,99 @@
 title: "AWS::Config::StoredQuery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::StoredQuery
+<a name="aws-resource-config-storedquery"></a>
 
 Provides the details of a stored query.
 
 ## Syntax
+<a name="aws-resource-config-storedquery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-config-storedquery-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Config::StoredQuery",
   "Properties" : {
-      "QueryDescription" : String,
-      "QueryExpression" : String,
-      "QueryName" : String,
-      "Tags" : [ Tag, ... ]
+      "[QueryDescription](#cfn-config-storedquery-querydescription)" : {{String}},
+      "[QueryExpression](#cfn-config-storedquery-queryexpression)" : {{String}},
+      "[QueryName](#cfn-config-storedquery-queryname)" : {{String}},
+      "[Tags](#cfn-config-storedquery-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-config-storedquery-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Config::StoredQuery
 Properties:
-  QueryDescription: String
-  QueryExpression: String
-  QueryName: String
-  Tags:
-    - Tag
-
+  [QueryDescription](#cfn-config-storedquery-querydescription): {{String}}
+  [QueryExpression](#cfn-config-storedquery-queryexpression): {{String}}
+  [QueryName](#cfn-config-storedquery-queryname): {{String}}
+  [Tags](#cfn-config-storedquery-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-config-storedquery-properties"></a>
 
-`QueryDescription`
-
+`QueryDescription`  <a name="cfn-config-storedquery-querydescription"></a>
 A unique description for the query.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`QueryExpression`  <a name="cfn-config-storedquery-queryexpression"></a>
+The expression of the query. For example, `SELECT resourceId, resourceType, supplementaryConfiguration.BucketVersioningConfiguration.status WHERE resourceType = 'AWS::S3::Bucket' AND supplementaryConfiguration.BucketVersioningConfiguration.status = 'Off'.`
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryExpression`
-
-The expression of the query.
-For example, `SELECT resourceId, resourceType, supplementaryConfiguration.BucketVersioningConfiguration.status WHERE resourceType = 'AWS::S3::Bucket' AND supplementaryConfiguration.BucketVersioningConfiguration.status = 'Off'.`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueryName`
-
+`QueryName`  <a name="cfn-config-storedquery-queryname"></a>
 The name of the query.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-config-storedquery-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-config-storedquery-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-config-storedquery-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-config-storedquery-return-values"></a>
 
 ### Ref
+<a name="aws-resource-config-storedquery-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-config-storedquery-return-values-fn--getatt"></a>
 
-`QueryArn`
+####
+<a name="aws-resource-config-storedquery-return-values-fn--getatt-fn--getatt"></a>
 
+`QueryArn`  <a name="QueryArn-fn::getatt"></a>
 Amazon Resource Name (ARN) of the query. For example, arn:partition:service:region:account-id:resource-type/resource-name/resource-id.
 
-`QueryId`
-
+`QueryId`  <a name="QueryId-fn::getatt"></a>
 The ID of the query.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SsmControls
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

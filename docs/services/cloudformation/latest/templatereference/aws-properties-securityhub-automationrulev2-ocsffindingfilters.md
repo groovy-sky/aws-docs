@@ -2,67 +2,51 @@
 title: "AWS::SecurityHub::AutomationRuleV2 OcsfFindingFilters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::AutomationRuleV2 OcsfFindingFilters
+<a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters"></a>
 
 Specifies the filtering criteria for security findings using OCSF.
 
 ## Syntax
+<a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters-syntax.json"></a>
 
-```json
-
+```
 {
-  "CompositeFilters" : [ CompositeFilter, ... ],
-  "CompositeOperator" : String
+  "[CompositeFilters](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositefilters)" : {{[ CompositeFilter, ... ]}},
+  "[CompositeOperator](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositeoperator)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters-syntax.yaml"></a>
 
-```yaml
-
-  CompositeFilters:
-    - CompositeFilter
-  CompositeOperator: String
-
+```
+  [CompositeFilters](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositefilters): {{
+    - CompositeFilter}}
+  [CompositeOperator](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositeoperator): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters-properties"></a>
 
-`CompositeFilters`
-
+`CompositeFilters`  <a name="cfn-securityhub-automationrulev2-ocsffindingfilters-compositefilters"></a>
 Enables the creation of complex filtering conditions by combining filter criteria.
+*Required*: No
+*Type*: Array of [CompositeFilter](aws-properties-securityhub-automationrulev2-compositefilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [CompositeFilter](aws-properties-securityhub-automationrulev2-compositefilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CompositeOperator`
-
+`CompositeOperator`  <a name="cfn-securityhub-automationrulev2-ocsffindingfilters-compositeoperator"></a>
 The logical operators used to combine the filtering on multiple `CompositeFilters`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AND | OR`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OcsfDateFilter
-
-OcsfMapFilter
+*Required*: No
+*Type*: String
+*Allowed values*: `AND | OR`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,82 +2,60 @@
 title: "AWS::DevOpsAgent::Association SlackConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association SlackConfiguration
+<a name="aws-properties-devopsagent-association-slackconfiguration"></a>
 
-Configuration for Slack workspace integration. Defines the workspace ID, workspace name, and transmission
-targets that specify which Slack channels receive notifications.
+Configuration for Slack workspace integration. Defines the workspace ID, workspace name, and transmission targets that specify which Slack channels receive notifications.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-slackconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-slackconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TransmissionTarget" : SlackTransmissionTarget,
-  "WorkspaceId" : String,
-  "WorkspaceName" : String
+  "[TransmissionTarget](#cfn-devopsagent-association-slackconfiguration-transmissiontarget)" : {{SlackTransmissionTarget}},
+  "[WorkspaceId](#cfn-devopsagent-association-slackconfiguration-workspaceid)" : {{String}},
+  "[WorkspaceName](#cfn-devopsagent-association-slackconfiguration-workspacename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-slackconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TransmissionTarget:
-    SlackTransmissionTarget
-  WorkspaceId: String
-  WorkspaceName: String
-
+```
+  [TransmissionTarget](#cfn-devopsagent-association-slackconfiguration-transmissiontarget): {{
+    SlackTransmissionTarget}}
+  [WorkspaceId](#cfn-devopsagent-association-slackconfiguration-workspaceid): {{String}}
+  [WorkspaceName](#cfn-devopsagent-association-slackconfiguration-workspacename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-slackconfiguration-properties"></a>
 
-`TransmissionTarget`
-
+`TransmissionTarget`  <a name="cfn-devopsagent-association-slackconfiguration-transmissiontarget"></a>
 Transmission targets for agent notifications.
+*Required*: Yes
+*Type*: [SlackTransmissionTarget](aws-properties-devopsagent-association-slacktransmissiontarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SlackTransmissionTarget](aws-properties-devopsagent-association-slacktransmissiontarget.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkspaceId`
-
+`WorkspaceId`  <a name="cfn-devopsagent-association-slackconfiguration-workspaceid"></a>
 The associated Slack workspace ID.
-
 The ID must match the pattern `^[TE][A-Z0-9]+$`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[TE][A-Z0-9]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[TE][A-Z0-9]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkspaceName`
-
+`WorkspaceName`  <a name="cfn-devopsagent-association-slackconfiguration-workspacename"></a>
 Associated Slack workspace name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlackChannel
-
-SlackTransmissionTarget
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

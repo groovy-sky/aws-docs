@@ -2,74 +2,53 @@
 title: "AWS::WAFv2::WebACL RuleActionOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RuleActionOverride
+<a name="aws-properties-wafv2-webacl-ruleactionoverride"></a>
 
-Action setting to use in the place of a rule action that is configured inside the rule
-group. You specify one override for each rule whose action you want to change.
+Action setting to use in the place of a rule action that is configured inside the rule group. You specify one override for each rule whose action you want to change.
 
-You can use overrides for testing, for example you can override all of rule actions to
-`Count` and then monitor the resulting count metrics to understand how the
-rule group would handle your web traffic. You can also permanently override some or all
-actions, to modify how the rule group manages your web traffic.
+You can use overrides for testing, for example you can override all of rule actions to `Count` and then monitor the resulting count metrics to understand how the rule group would handle your web traffic. You can also permanently override some or all actions, to modify how the rule group manages your web traffic.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-ruleactionoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-ruleactionoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActionToUse" : RuleAction,
-  "Name" : String
+  "[ActionToUse](#cfn-wafv2-webacl-ruleactionoverride-actiontouse)" : {{RuleAction}},
+  "[Name](#cfn-wafv2-webacl-ruleactionoverride-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-ruleactionoverride-syntax.yaml"></a>
 
-```yaml
-
-  ActionToUse:
-    RuleAction
-  Name: String
-
+```
+  [ActionToUse](#cfn-wafv2-webacl-ruleactionoverride-actiontouse): {{
+    RuleAction}}
+  [Name](#cfn-wafv2-webacl-ruleactionoverride-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-ruleactionoverride-properties"></a>
 
-`ActionToUse`
+`ActionToUse`  <a name="cfn-wafv2-webacl-ruleactionoverride-actiontouse"></a>
+The override action to use, in place of the configured action of the rule in the rule group.
+*Required*: Yes
+*Type*: [RuleAction](aws-properties-wafv2-webacl-ruleaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The override action to use, in place of the configured action of the rule in the rule
-group.
-
-_Required_: Yes
-
-_Type_: [RuleAction](aws-properties-wafv2-webacl-ruleaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-wafv2-webacl-ruleactionoverride-name"></a>
 The name of the rule to override.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9A-Za-z_-]{1,128}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleAction
-
-RuleGroupReferenceStatement
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9A-Za-z_-]{1,128}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

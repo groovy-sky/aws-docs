@@ -2,64 +2,47 @@
 title: "AWS::IoTFleetWise::DecoderManifest CustomDecodingSignal"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::DecoderManifest CustomDecodingSignal
+<a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal"></a>
 
 Information about signals using a custom decoding protocol as defined by the customer.
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : String
+  "[Id](#cfn-iotfleetwise-decodermanifest-customdecodingsignal-id)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal-syntax.yaml"></a>
 
-```yaml
-
-  Id: String
-
+```
+  [Id](#cfn-iotfleetwise-decodermanifest-customdecodingsignal-id): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-iotfleetwise-decodermanifest-customdecodingsignal-id"></a>
 The ID of the signal.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(?!.*\.\.)[a-zA-Z0-9_\-#:.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomDecodingNetworkInterface
-
-CustomDecodingSignalDecoder
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(?!.*\.\.)[a-zA-Z0-9_\-#:.]+$`
+*Minimum*: `1`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

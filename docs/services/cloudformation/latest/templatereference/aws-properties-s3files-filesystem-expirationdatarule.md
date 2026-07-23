@@ -2,58 +2,43 @@
 title: "AWS::S3Files::FileSystem ExpirationDataRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::FileSystem ExpirationDataRule
+<a name="aws-properties-s3files-filesystem-expirationdatarule"></a>
 
-Specifies a rule that controls when cached data expires from the file system based on
-last access time.
+Specifies a rule that controls when cached data expires from the file system based on last access time.
 
 ## Syntax
+<a name="aws-properties-s3files-filesystem-expirationdatarule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3files-filesystem-expirationdatarule-syntax.json"></a>
 
-```json
-
+```
 {
-  "DaysAfterLastAccess" : Integer
+  "[DaysAfterLastAccess](#cfn-s3files-filesystem-expirationdatarule-daysafterlastaccess)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3files-filesystem-expirationdatarule-syntax.yaml"></a>
 
-```yaml
-
-  DaysAfterLastAccess: Integer
-
+```
+  [DaysAfterLastAccess](#cfn-s3files-filesystem-expirationdatarule-daysafterlastaccess): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-s3files-filesystem-expirationdatarule-properties"></a>
 
-`DaysAfterLastAccess`
-
-The number of days after last access before cached data expires from the file
-system.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `365`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::S3Files::FileSystem
-
-ImportDataRule
+`DaysAfterLastAccess`  <a name="cfn-s3files-filesystem-expirationdatarule-daysafterlastaccess"></a>
+The number of days after last access before cached data expires from the file system.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `365`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

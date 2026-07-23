@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard TableFieldImageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TableFieldImageConfiguration
+<a name="aws-properties-quicksight-dashboard-tablefieldimageconfiguration"></a>
 
 The image configuration of a table field URL.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-tablefieldimageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-tablefieldimageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SizingOptions" : TableCellImageSizingConfiguration
+  "[SizingOptions](#cfn-quicksight-dashboard-tablefieldimageconfiguration-sizingoptions)" : {{TableCellImageSizingConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-tablefieldimageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SizingOptions:
-    TableCellImageSizingConfiguration
-
+```
+  [SizingOptions](#cfn-quicksight-dashboard-tablefieldimageconfiguration-sizingoptions): {{
+    TableCellImageSizingConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-tablefieldimageconfiguration-properties"></a>
 
-`SizingOptions`
-
+`SizingOptions`  <a name="cfn-quicksight-dashboard-tablefieldimageconfiguration-sizingoptions"></a>
 The sizing options for the table image configuration.
-
-_Required_: No
-
-_Type_: [TableCellImageSizingConfiguration](aws-properties-quicksight-dashboard-tablecellimagesizingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableFieldCustomTextContent
-
-TableFieldLinkConfiguration
+*Required*: No
+*Type*: [TableCellImageSizingConfiguration](aws-properties-quicksight-dashboard-tablecellimagesizingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

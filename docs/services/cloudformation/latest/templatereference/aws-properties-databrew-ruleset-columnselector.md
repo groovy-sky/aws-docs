@@ -2,73 +2,53 @@
 title: "AWS::DataBrew::Ruleset ColumnSelector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Ruleset ColumnSelector
+<a name="aws-properties-databrew-ruleset-columnselector"></a>
 
-Selector of a column from a dataset for profile job configuration.
-One selector includes either a column name or a regular expression.
+Selector of a column from a dataset for profile job configuration. One selector includes either a column name or a regular expression.
 
 ## Syntax
+<a name="aws-properties-databrew-ruleset-columnselector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-ruleset-columnselector-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Regex" : String
+  "[Name](#cfn-databrew-ruleset-columnselector-name)" : {{String}},
+  "[Regex](#cfn-databrew-ruleset-columnselector-regex)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-ruleset-columnselector-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Regex: String
-
+```
+  [Name](#cfn-databrew-ruleset-columnselector-name): {{String}}
+  [Regex](#cfn-databrew-ruleset-columnselector-regex): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-ruleset-columnselector-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-databrew-ruleset-columnselector-name"></a>
 The name of a column from a dataset.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Regex`
-
+`Regex`  <a name="cfn-databrew-ruleset-columnselector-regex"></a>
 A regular expression for selecting a column from a dataset.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataBrew::Ruleset
-
-Rule
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,62 @@
 title: "AWS::SageMaker::InferenceExperiment ModelVariantConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceExperiment ModelVariantConfig
+<a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig"></a>
 
 Contains information about the deployment options of a model.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InfrastructureConfig" : ModelInfrastructureConfig,
-  "ModelName" : String,
-  "VariantName" : String
+  "[InfrastructureConfig](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig)" : {{ModelInfrastructureConfig}},
+  "[ModelName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname)" : {{String}},
+  "[VariantName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-variantname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig-syntax.yaml"></a>
 
-```yaml
-
-  InfrastructureConfig:
-    ModelInfrastructureConfig
-  ModelName: String
-  VariantName: String
-
+```
+  [InfrastructureConfig](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig): {{
+    ModelInfrastructureConfig}}
+  [ModelName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname): {{String}}
+  [VariantName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-variantname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig-properties"></a>
 
-`InfrastructureConfig`
-
+`InfrastructureConfig`  <a name="cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig"></a>
 The configuration for the infrastructure that the model will be deployed to.
+*Required*: Yes
+*Type*: [ModelInfrastructureConfig](aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ModelInfrastructureConfig](aws-properties-sagemaker-inferenceexperiment-modelinfrastructureconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelName`
-
+`ModelName`  <a name="cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname"></a>
 The name of the Amazon SageMaker Model entity.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VariantName`
-
+`VariantName`  <a name="cfn-sagemaker-inferenceexperiment-modelvariantconfig-variantname"></a>
 The name of the variant.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelInfrastructureConfig
-
-RealTimeInferenceConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

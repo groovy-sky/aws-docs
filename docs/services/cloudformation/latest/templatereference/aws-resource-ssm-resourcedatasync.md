@@ -2,248 +2,169 @@
 title: "AWS::SSM::ResourceDataSync"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::ResourceDataSync
+<a name="aws-resource-ssm-resourcedatasync"></a>
 
-The `AWS::SSM::ResourceDataSync` resource creates, updates, or deletes a
-resource data sync for AWS Systems Manager. A resource data sync helps you view
-data from multiple sources in a single location. Systems Manager offers two types
-of resource data sync: `SyncToDestination` and
-`SyncFromSource`.
+The `AWS::SSM::ResourceDataSync` resource creates, updates, or deletes a resource data sync for AWS Systems Manager. A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: `SyncToDestination` and `SyncFromSource`.
 
-You can configure Systems Manager Inventory to use the
-`SyncToDestination` type to synchronize Inventory data from multiple
-AWS Regions to a single Amazon S3 bucket.
+You can configure Systems Manager Inventory to use the `SyncToDestination` type to synchronize Inventory data from multiple AWS Regions to a single Amazon S3 bucket.
 
-You can configure Systems Manager Explorer to use the `SyncFromSource` type to
-synchronize operational work items (OpsItems) and operational data (OpsData) from
-multiple AWS Regions. This type can synchronize OpsItems and OpsData
-from multiple AWS accounts and Regions or from an
-`EntireOrganization` by using AWS Organizations.
+You can configure Systems Manager Explorer to use the `SyncFromSource` type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions. This type can synchronize OpsItems and OpsData from multiple AWS accounts and Regions or from an `EntireOrganization` by using AWS Organizations.
 
-A resource data sync is an asynchronous operation that returns immediately. After a
-successful initial sync is completed, the system continuously syncs data.
+A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data.
 
-By default, data is not encrypted in Amazon S3. We strongly recommend that
-you enable encryption in Amazon S3 to ensure secure data storage. We also
-recommend that you secure access to the Amazon S3 bucket by creating a
-restrictive bucket policy.
+By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.
 
-For more information, see [Configuring Inventory Collection](../../../systems-manager/latest/userguide/sysman-inventory-configuring.md#sysman-inventory-datasync) and [Setting Up\
-Systems Manager Explorer to Display Data from Multiple Accounts and Regions](../../../systems-manager/latest/userguide/explorer-resource-data-sync.md)
-in the _AWS Systems Manager User Guide_.
+For more information, see [Configuring Inventory Collection](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-inventory-configuring.html#sysman-inventory-datasync) and [Setting Up Systems Manager Explorer to Display Data from Multiple Accounts and Regions](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer-resource-data-sync.html) in the *AWS Systems Manager User Guide*.
 
-###### Important
-
-The following _Syntax_ section shows all fields that are
-supported for a resource data sync. The _Examples_ section below
-shows the recommended way to specify configurations for each sync type. Refer to the
-_Examples_ section when you create your resource data
-sync.
+**Important**
+The following *Syntax* section shows all fields that are supported for a resource data sync. The *Examples* section below shows the recommended way to specify configurations for each sync type. Refer to the *Examples* section when you create your resource data sync.
 
 ## Syntax
+<a name="aws-resource-ssm-resourcedatasync-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssm-resourcedatasync-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSM::ResourceDataSync",
   "Properties" : {
-      "BucketName" : String,
-      "BucketPrefix" : String,
-      "BucketRegion" : String,
-      "KMSKeyArn" : String,
-      "S3Destination" : S3Destination,
-      "SyncFormat" : String,
-      "SyncName" : String,
-      "SyncSource" : SyncSource,
-      "SyncType" : String
+      "[BucketName](#cfn-ssm-resourcedatasync-bucketname)" : {{String}},
+      "[BucketPrefix](#cfn-ssm-resourcedatasync-bucketprefix)" : {{String}},
+      "[BucketRegion](#cfn-ssm-resourcedatasync-bucketregion)" : {{String}},
+      "[KMSKeyArn](#cfn-ssm-resourcedatasync-kmskeyarn)" : {{String}},
+      "[S3Destination](#cfn-ssm-resourcedatasync-s3destination)" : {{S3Destination}},
+      "[SyncFormat](#cfn-ssm-resourcedatasync-syncformat)" : {{String}},
+      "[SyncName](#cfn-ssm-resourcedatasync-syncname)" : {{String}},
+      "[SyncSource](#cfn-ssm-resourcedatasync-syncsource)" : {{SyncSource}},
+      "[SyncType](#cfn-ssm-resourcedatasync-synctype)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssm-resourcedatasync-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSM::ResourceDataSync
 Properties:
-  BucketName: String
-  BucketPrefix: String
-  BucketRegion: String
-  KMSKeyArn: String
-  S3Destination:
-    S3Destination
-  SyncFormat: String
-  SyncName: String
-  SyncSource:
-    SyncSource
-  SyncType: String
-
+  [BucketName](#cfn-ssm-resourcedatasync-bucketname): {{String}}
+  [BucketPrefix](#cfn-ssm-resourcedatasync-bucketprefix): {{String}}
+  [BucketRegion](#cfn-ssm-resourcedatasync-bucketregion): {{String}}
+  [KMSKeyArn](#cfn-ssm-resourcedatasync-kmskeyarn): {{String}}
+  [S3Destination](#cfn-ssm-resourcedatasync-s3destination): {{
+    S3Destination}}
+  [SyncFormat](#cfn-ssm-resourcedatasync-syncformat): {{String}}
+  [SyncName](#cfn-ssm-resourcedatasync-syncname): {{String}}
+  [SyncSource](#cfn-ssm-resourcedatasync-syncsource): {{
+    SyncSource}}
+  [SyncType](#cfn-ssm-resourcedatasync-synctype): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ssm-resourcedatasync-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-ssm-resourcedatasync-bucketname"></a>
 The name of the S3 bucket where the aggregated data is stored.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BucketPrefix`
-
+`BucketPrefix`  <a name="cfn-ssm-resourcedatasync-bucketprefix"></a>
 An Amazon S3 prefix for the bucket.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BucketRegion`
-
+`BucketRegion`  <a name="cfn-ssm-resourcedatasync-bucketregion"></a>
 The AWS Region with the S3 bucket targeted by the resource data sync.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`KMSKeyArn`  <a name="cfn-ssm-resourcedatasync-kmskeyarn"></a>
+The Amazon Resource Name (ARN) of an encryption key for a destination in Amazon S3. You can use a KMS key to encrypt inventory data in Amazon S3. You must specify a key that exist in the same AWS Region as the destination Amazon S3 bucket.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KMSKeyArn`
-
-The Amazon Resource Name (ARN) of an encryption key for a destination in Amazon S3. You can use a KMS key to encrypt inventory data in Amazon S3.
-You must specify a key that exist in the same AWS Region as the
-destination Amazon S3 bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3Destination`
-
+`S3Destination`  <a name="cfn-ssm-resourcedatasync-s3destination"></a>
 Configuration information for the target S3 bucket.
+*Required*: No
+*Type*: [S3Destination](aws-properties-ssm-resourcedatasync-s3destination.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [S3Destination](aws-properties-ssm-resourcedatasync-s3destination.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SyncFormat`
-
+`SyncFormat`  <a name="cfn-ssm-resourcedatasync-syncformat"></a>
 A supported sync format. The following format is currently supported: JsonSerDe
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SyncName`
-
+`SyncName`  <a name="cfn-ssm-resourcedatasync-syncname"></a>
 A name for the resource data sync.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SyncSource`
-
+`SyncSource`  <a name="cfn-ssm-resourcedatasync-syncsource"></a>
 Information about the source where the data was synchronized.
+*Required*: No
+*Type*: [SyncSource](aws-properties-ssm-resourcedatasync-syncsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SyncSource](aws-properties-ssm-resourcedatasync-syncsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SyncType`
-
-The type of resource data sync. If `SyncType` is `SyncToDestination`,
-then the resource data sync synchronizes data to an S3 bucket. If the `SyncType` is
-`SyncFromSource` then the resource data sync synchronizes data from AWS Organizations or from
-multiple AWS Regions.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`SyncType`  <a name="cfn-ssm-resourcedatasync-synctype"></a>
+The type of resource data sync. If `SyncType` is `SyncToDestination`, then the resource data sync synchronizes data to an S3 bucket. If the `SyncType` is `SyncFromSource` then the resource data sync synchronizes data from AWS Organizations or from multiple AWS Regions.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ssm-resourcedatasync-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ssm-resourcedatasync-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the resource data sync, such as
-`TestResourceDataSync`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the resource data sync, such as `TestResourceDataSync`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-ssm-resourcedatasync--examples"></a>
 
-- [Create a SyncToDestination resource data sync](#aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync)
-
-- [Create a SyncFromSource resource data sync with type SingleAccountMultipleRegions](#aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions)
-
-- [Create a SyncFromSource resource data sync with type EntireOrganization](#aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization)
-
-- [Creating a SyncFromSource resource data sync with type OrganizationalUnits](#aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits)
+**Topics**
++ [Create a SyncToDestination resource data sync](#aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync)
++ [Create a SyncFromSource resource data sync with type SingleAccountMultipleRegions](#aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions)
++ [Create a SyncFromSource resource data sync with type EntireOrganization](#aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization)
++ [Creating a SyncFromSource resource data sync with type OrganizationalUnits](#aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits)
 
 ### Create a SyncToDestination resource data sync
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync"></a>
 
-The following example synchronizes Systems Manager Inventory metadata in
-the US East (Ohio) Region (us-east-2) to a single Amazon S3 bucket.
-Resource data sync then automatically updates the centralized data when new data
-is collected.
+The following example synchronizes Systems Manager Inventory metadata in the US East (Ohio) Region (us-east-2) to a single Amazon S3 bucket. Resource data sync then automatically updates the centralized data when new data is collected.
 
 #### JSON
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync--json"></a>
 
-```json
-
+```
 {
     "Description": "Create a resource data sync for Systems Manager",
     "Resources": {
@@ -266,9 +187,9 @@ is collected.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: Create a resource data sync for Systems Manager
 Resources:
@@ -286,14 +207,14 @@ Resources:
 ```
 
 ### Create a SyncFromSource resource data sync with type SingleAccountMultipleRegions
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions"></a>
 
-The following example synchronizes Systems Manager Explorer OpsData and OpsItems
-from multiple AWS Regions in a single AWS account.
+The following example synchronizes Systems Manager Explorer OpsData and OpsItems from multiple AWS Regions in a single AWS account.
 
 #### JSON
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions--json"></a>
 
-```json
-
+```
 {
     "Description": "Create a resource data sync for Systems Manager Explorer",
     "Resources": {
@@ -318,9 +239,9 @@ from multiple AWS Regions in a single AWS account.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: Create a resource data sync for Systems Manager Explorer
 Resources:
@@ -339,14 +260,14 @@ Resources:
 ```
 
 ### Create a SyncFromSource resource data sync with type EntireOrganization
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization"></a>
 
-The following example synchronizes Systems Manager Explorer OpsData and OpsItems
-from your entire organization in AWS Organizationsin the us-west-1 Region.
+The following example synchronizes Systems Manager Explorer OpsData and OpsItems from your entire organization in AWS Organizationsin the us-west-1 Region.
 
 #### JSON
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization--json"></a>
 
-```json
-
+```
 {
     "Description": "Create a resource data sync for Systems Manager Explorer",
     "Resources": {
@@ -372,9 +293,9 @@ from your entire organization in AWS Organizationsin the us-west-1 Region.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: Create a resource data sync for Systems Manager Explorer
 Resources:
@@ -393,14 +314,14 @@ Resources:
 ```
 
 ### Creating a SyncFromSource resource data sync with type OrganizationalUnits
+<a name="aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits"></a>
 
-The following example synchronizes Systems Manager Explorer OpsData and OpsItems
-from organization unit 12345 in AWS Organizations in the us-west-1 Region.
+The following example synchronizes Systems Manager Explorer OpsData and OpsItems from organization unit 12345 in AWS Organizations in the us-west-1 Region.
 
 #### JSON
+<a name="aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits--json"></a>
 
-```json
-
+```
 {
     "Description": "Create a resource data sync for Systems Manager Explorer",
     "Resources": {
@@ -429,9 +350,9 @@ from organization unit 12345 in AWS Organizations in the us-west-1 Region.
 ```
 
 #### YAML
+<a name="aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: Create a resource data sync for Systems Manager Explorer
 Resources:
@@ -452,18 +373,9 @@ Resources:
 ```
 
 ## See also
-
-- [What\
-is AWS Systems Manager?](../../../systems-manager/latest/userguide/what-is-systems-manager.md)
-
-- [AWS Systems Manager Inventory](../../../systems-manager/latest/userguide/systems-manager-inventory.md)
-
-- [Configuring inventory collection](../../../systems-manager/latest/userguide/sysman-inventory-configuring.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AwsOrganizationsSource
+<a name="aws-resource-ssm-resourcedatasync--seealso"></a>
++  [What is AWS Systems Manager?](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)
++  [AWS Systems Manager Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html)
++  [Configuring inventory collection](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-inventory-configuring.html)
 
 All content copied from https://docs.aws.amazon.com/.

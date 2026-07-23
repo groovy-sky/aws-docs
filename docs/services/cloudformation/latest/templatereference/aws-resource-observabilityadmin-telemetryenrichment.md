@@ -2,69 +2,64 @@
 title: "AWS::ObservabilityAdmin::TelemetryEnrichment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryEnrichment
+<a name="aws-resource-observabilityadmin-telemetryenrichment"></a>
 
-The `AWS::ObservabilityAdmin::TelemetryEnrichment` resource Property description not available. for ObservabilityAdmin.
+ Enables the Resource tags for telemetry feature for your account. When enabled, CloudWatch creates an AWS Resource Explorer index and managed view so that it can discover resources and tags in your account. CloudWatch uses this information to enrich your telemetry with related AWS resource tags. For more information, see [Resource tags for telemetry documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/resource-tags-for-telemetry.html).
 
 ## Syntax
+<a name="aws-resource-observabilityadmin-telemetryenrichment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-observabilityadmin-telemetryenrichment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ObservabilityAdmin::TelemetryEnrichment",
   "Properties" : {
-      "Scope" : String
+      "[Scope](#cfn-observabilityadmin-telemetryenrichment-scope)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-observabilityadmin-telemetryenrichment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ObservabilityAdmin::TelemetryEnrichment
 Properties:
-  Scope: String
-
+  [Scope](#cfn-observabilityadmin-telemetryenrichment-scope): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-observabilityadmin-telemetryenrichment-properties"></a>
 
-`Scope`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ACCOUNT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Scope`  <a name="cfn-observabilityadmin-telemetryenrichment-scope"></a>
+The scope of the telemetry enrichment. Currently, the only supported value is `ACCOUNT`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ACCOUNT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-observabilityadmin-telemetryenrichment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-observabilityadmin-telemetryenrichment-return-values-ref"></a>
+
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the scope of the telemetry enrichment.
 
 ### Fn::GetAtt
+<a name="aws-resource-observabilityadmin-telemetryenrichment-return-values-fn--getatt"></a>
 
-`Status`
+####
+<a name="aws-resource-observabilityadmin-telemetryenrichment-return-values-fn--getatt-fn--getatt"></a>
 
-Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::ObservabilityAdmin::TelemetryPipelines
+`Status`  <a name="Status-fn::getatt"></a>
+The current status of the Resource tags for telemetry feature. Valid values are `RUNNING`, `STOPPED`, and `IMPAIRED`.
 
 All content copied from https://docs.aws.amazon.com/.

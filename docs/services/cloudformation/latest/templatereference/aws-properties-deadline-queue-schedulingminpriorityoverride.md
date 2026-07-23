@@ -2,52 +2,41 @@
 title: "AWS::Deadline::Queue SchedulingMinPriorityOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Queue SchedulingMinPriorityOverride
+<a name="aws-properties-deadline-queue-schedulingminpriorityoverride"></a>
 
-The `SchedulingMinPriorityOverride` property type specifies Property description not available. for an [AWS::Deadline::Queue](aws-resource-deadline-queue.md).
+Defines the override behavior for jobs at the minimum priority (0) in weighted balanced scheduling.
 
 ## Syntax
+<a name="aws-properties-deadline-queue-schedulingminpriorityoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-queue-schedulingminpriorityoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlwaysScheduleLast" : Json
+  "[AlwaysScheduleLast](#cfn-deadline-queue-schedulingminpriorityoverride-alwaysschedulelast)" : {{Json}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-queue-schedulingminpriorityoverride-syntax.yaml"></a>
 
-```yaml
-
-  AlwaysScheduleLast: Json
-
+```
+  [AlwaysScheduleLast](#cfn-deadline-queue-schedulingminpriorityoverride-alwaysschedulelast): {{Json}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-queue-schedulingminpriorityoverride-properties"></a>
 
-`AlwaysScheduleLast`
-
-Property description not available.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SchedulingMaxPriorityOverride
-
-Tag
+`AlwaysScheduleLast`  <a name="cfn-deadline-queue-schedulingminpriorityoverride-alwaysschedulelast"></a>
+Jobs at the minimum priority (0) are always scheduled after all other jobs, regardless of the weighted scheduling formula. If multiple jobs have priority 0, ties are broken using the standard weighted formula.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

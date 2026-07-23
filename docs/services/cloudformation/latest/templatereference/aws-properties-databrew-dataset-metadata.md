@@ -2,57 +2,43 @@
 title: "AWS::DataBrew::Dataset Metadata"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset Metadata
+<a name="aws-properties-databrew-dataset-metadata"></a>
 
 Contains additional resource information needed for specific datasets.
 
 ## Syntax
+<a name="aws-properties-databrew-dataset-metadata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-dataset-metadata-syntax.json"></a>
 
-```json
-
+```
 {
-  "SourceArn" : String
+  "[SourceArn](#cfn-databrew-dataset-metadata-sourcearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-dataset-metadata-syntax.yaml"></a>
 
-```yaml
-
-  SourceArn: String
-
+```
+  [SourceArn](#cfn-databrew-dataset-metadata-sourcearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-dataset-metadata-properties"></a>
 
-`SourceArn`
-
-The Amazon Resource Name (ARN) associated with the dataset. Currently, DataBrew
-only supports ARNs from Amazon AppFlow.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JsonOptions
-
-PathOptions
+`SourceArn`  <a name="cfn-databrew-dataset-metadata-sourcearn"></a>
+The Amazon Resource Name (ARN) associated with the dataset. Currently, DataBrew only supports ARNs from Amazon AppFlow.
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

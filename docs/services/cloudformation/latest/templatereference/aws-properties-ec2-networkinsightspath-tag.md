@@ -2,68 +2,63 @@
 title: "AWS::EC2::NetworkInsightsPath Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInsightsPath Tag
+<a name="aws-properties-ec2-networkinsightspath-tag"></a>
 
-Specifies a tag. For more information, see [Resource tags](../userguide/aws-properties-resource-tags.md).
+Specifies a tag. For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
 
 ## Syntax
+<a name="aws-properties-ec2-networkinsightspath-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-networkinsightspath-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-ec2-networkinsightspath-tag-key)" : {{String}},
+  "[Value](#cfn-ec2-networkinsightspath-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-networkinsightspath-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-ec2-networkinsightspath-tag-key): {{String}}
+  [Value](#cfn-ec2-networkinsightspath-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-networkinsightspath-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ec2-networkinsightspath-tag-key"></a>
 The tag key.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-ec2-networkinsightspath-tag-value"></a>
 The tag value.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-ec2-networkinsightspath-tag--examples"></a>
+
+###
+<a name="aws-properties-ec2-networkinsightspath-tag--examples--"></a>
 
 This example specifies two tags for the path.
 
 #### JSON
+<a name="aws-properties-ec2-networkinsightspath-tag--examples----json"></a>
 
-```json
-
+```
 "Tags" : [
    {
       "Key" : "key1",
@@ -77,20 +72,14 @@ This example specifies two tags for the path.
 ```
 
 #### YAML
+<a name="aws-properties-ec2-networkinsightspath-tag--examples----yaml"></a>
 
-```yaml
-
+```
 Tags:
   - Key: "key1"
     Value: "value1"
   - Key: "key2"
     Value: "value2"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PathFilter
-
-AWS::EC2::NetworkInterface
 
 All content copied from https://docs.aws.amazon.com/.

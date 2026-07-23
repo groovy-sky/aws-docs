@@ -2,53 +2,41 @@
 title: "AWS::IoT::TopicRule PutItemInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule PutItemInput
+<a name="aws-properties-iot-topicrule-putiteminput"></a>
 
-The input for the DynamoActionVS action that specifies the DynamoDB table to which
-the message data will be written.
+The input for the DynamoActionVS action that specifies the DynamoDB table to which the message data will be written.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-putiteminput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-putiteminput-syntax.json"></a>
 
-```json
-
+```
 {
-  "TableName" : String
+  "[TableName](#cfn-iot-topicrule-putiteminput-tablename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-putiteminput-syntax.yaml"></a>
 
-```yaml
-
-  TableName: String
-
+```
+  [TableName](#cfn-iot-topicrule-putiteminput-tablename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-putiteminput-properties"></a>
 
-`TableName`
-
+`TableName`  <a name="cfn-iot-topicrule-putiteminput-tablename"></a>
 The table where the message data will be written.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PutAssetPropertyValueEntry
-
-RepublishAction
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,146 +2,114 @@
 title: "AWS::RTBFabric::OutboundExternalLink"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::OutboundExternalLink
+<a name="aws-resource-rtbfabric-outboundexternallink"></a>
 
-The `AWS::RTBFabric::OutboundExternalLink` resource Property description not available. for RTBFabric.
+<a name="aws-resource-rtbfabric-outboundexternallink-description"></a>The `AWS::RTBFabric::OutboundExternalLink` resource Property description not available. for RTBFabric.
 
 ## Syntax
+<a name="aws-resource-rtbfabric-outboundexternallink-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rtbfabric-outboundexternallink-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::RTBFabric::OutboundExternalLink",
   "Properties" : {
-      "GatewayId" : String,
-      "LinkAttributes" : LinkAttributes,
-      "LinkLogSettings" : LinkLogSettings,
-      "PublicEndpoint" : String,
-      "Tags" : [ Tag, ... ]
+      "[GatewayId](#cfn-rtbfabric-outboundexternallink-gatewayid)" : {{String}},
+      "[LinkAttributes](#cfn-rtbfabric-outboundexternallink-linkattributes)" : {{LinkAttributes}},
+      "[LinkLogSettings](#cfn-rtbfabric-outboundexternallink-linklogsettings)" : {{LinkLogSettings}},
+      "[PublicEndpoint](#cfn-rtbfabric-outboundexternallink-publicendpoint)" : {{String}},
+      "[Tags](#cfn-rtbfabric-outboundexternallink-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rtbfabric-outboundexternallink-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::RTBFabric::OutboundExternalLink
 Properties:
-  GatewayId: String
-  LinkAttributes:
-    LinkAttributes
-  LinkLogSettings:
-    LinkLogSettings
-  PublicEndpoint: String
-  Tags:
-    - Tag
-
+  [GatewayId](#cfn-rtbfabric-outboundexternallink-gatewayid): {{String}}
+  [LinkAttributes](#cfn-rtbfabric-outboundexternallink-linkattributes): {{
+    LinkAttributes}}
+  [LinkLogSettings](#cfn-rtbfabric-outboundexternallink-linklogsettings): {{
+    LinkLogSettings}}
+  [PublicEndpoint](#cfn-rtbfabric-outboundexternallink-publicendpoint): {{String}}
+  [Tags](#cfn-rtbfabric-outboundexternallink-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-rtbfabric-outboundexternallink-properties"></a>
 
-`GatewayId`
-
+`GatewayId`  <a name="cfn-rtbfabric-outboundexternallink-gatewayid"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^rtb-gw-[a-z0-9-]{1,25}$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^rtb-gw-[a-z0-9-]{1,25}$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LinkAttributes`
-
+`LinkAttributes`  <a name="cfn-rtbfabric-outboundexternallink-linkattributes"></a>
 Property description not available.
+*Required*: No
+*Type*: [LinkAttributes](aws-properties-rtbfabric-outboundexternallink-linkattributes.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: [LinkAttributes](aws-properties-rtbfabric-outboundexternallink-linkattributes.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LinkLogSettings`
-
+`LinkLogSettings`  <a name="cfn-rtbfabric-outboundexternallink-linklogsettings"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [LinkLogSettings](aws-properties-rtbfabric-outboundexternallink-linklogsettings.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: [LinkLogSettings](aws-properties-rtbfabric-outboundexternallink-linklogsettings.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`PublicEndpoint`
-
+`PublicEndpoint`  <a name="cfn-rtbfabric-outboundexternallink-publicendpoint"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(https|http)://.+$`
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(https|http)://.+$`
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-rtbfabric-outboundexternallink-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rtbfabric-outboundexternallink-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rtbfabric-outboundexternallink-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rtbfabric-outboundexternallink-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rtbfabric-outboundexternallink-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-rtbfabric-outboundexternallink-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-rtbfabric-outboundexternallink-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Property description not available.
 
-`CreatedTimestamp`
-
+`CreatedTimestamp`  <a name="CreatedTimestamp-fn::getatt"></a>
 Property description not available.
 
-`LinkId`
-
+`LinkId`  <a name="LinkId-fn::getatt"></a>
 Property description not available.
 
-`LinkStatus`
-
+`LinkStatus`  <a name="LinkStatus-fn::getatt"></a>
 Property description not available.
 
-`UpdatedTimestamp`
-
+`UpdatedTimestamp`  <a name="UpdatedTimestamp-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ApplicationLogs
 
 All content copied from https://docs.aws.amazon.com/.

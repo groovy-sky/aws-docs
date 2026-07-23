@@ -2,67 +2,49 @@
 title: "AWS::AmazonMQ::Broker EncryptionOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmazonMQ::Broker EncryptionOptions
+<a name="aws-properties-amazonmq-broker-encryptionoptions"></a>
 
 Encryption options for the broker.
 
 ## Syntax
+<a name="aws-properties-amazonmq-broker-encryptionoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amazonmq-broker-encryptionoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String,
-  "UseAwsOwnedKey" : Boolean
+  "[KmsKeyId](#cfn-amazonmq-broker-encryptionoptions-kmskeyid)" : {{String}},
+  "[UseAwsOwnedKey](#cfn-amazonmq-broker-encryptionoptions-useawsownedkey)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amazonmq-broker-encryptionoptions-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-  UseAwsOwnedKey: Boolean
-
+```
+  [KmsKeyId](#cfn-amazonmq-broker-encryptionoptions-kmskeyid): {{String}}
+  [UseAwsOwnedKey](#cfn-amazonmq-broker-encryptionoptions-useawsownedkey): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-amazonmq-broker-encryptionoptions-properties"></a>
 
-`KmsKeyId`
+`KmsKeyId`  <a name="cfn-amazonmq-broker-encryptionoptions-kmskeyid"></a>
+The customer master key (CMK) to use for the A AWS KMS (KMS). This key is used to encrypt your data at rest. If not provided, Amazon MQ will use a default CMK to encrypt your data.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The customer master key (CMK) to use for the A AWS KMS (KMS).
-This key is used to encrypt your data at rest. If not provided, Amazon MQ will use a
-default CMK to encrypt your data.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UseAwsOwnedKey`
-
-Enables the use of an AWS owned CMK using AWS KMS (KMS). Set to `true` by default, if no value is provided, for example,
-for RabbitMQ brokers.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationId
-
-LdapServerMetadata
+`UseAwsOwnedKey`  <a name="cfn-amazonmq-broker-encryptionoptions-useawsownedkey"></a>
+Enables the use of an AWS owned CMK using AWS KMS (KMS). Set to `true` by default, if no value is provided, for example, for RabbitMQ brokers.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

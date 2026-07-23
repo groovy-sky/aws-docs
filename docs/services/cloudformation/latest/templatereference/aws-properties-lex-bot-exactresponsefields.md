@@ -2,72 +2,53 @@
 title: "AWS::Lex::Bot ExactResponseFields"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot ExactResponseFields
+<a name="aws-properties-lex-bot-exactresponsefields"></a>
 
 Contains the names of the fields used for an exact response to the user.
 
 ## Syntax
+<a name="aws-properties-lex-bot-exactresponsefields-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-exactresponsefields-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnswerField" : String,
-  "QuestionField" : String
+  "[AnswerField](#cfn-lex-bot-exactresponsefields-answerfield)" : {{String}},
+  "[QuestionField](#cfn-lex-bot-exactresponsefields-questionfield)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-exactresponsefields-syntax.yaml"></a>
 
-```yaml
-
-  AnswerField: String
-  QuestionField: String
-
+```
+  [AnswerField](#cfn-lex-bot-exactresponsefields-answerfield): {{String}}
+  [QuestionField](#cfn-lex-bot-exactresponsefields-questionfield): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-exactresponsefields-properties"></a>
 
-`AnswerField`
-
+`AnswerField`  <a name="cfn-lex-bot-exactresponsefields-answerfield"></a>
 The name of the field that contains the answer to the query made to the OpenSearch Service database.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QuestionField`
-
+`QuestionField`  <a name="cfn-lex-bot-exactresponsefields-questionfield"></a>
 The name of the field that contains the query made to the OpenSearch Service database.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ErrorLogSettings
-
-ExternalSourceSetting
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

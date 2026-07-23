@@ -2,64 +2,49 @@
 title: "AWS::Cognito::UserPool InboundFederation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPool InboundFederation
+<a name="aws-properties-cognito-userpool-inboundfederation"></a>
 
-The `InboundFederation` property type specifies Property description not available. for an [AWS::Cognito::UserPool](aws-resource-cognito-userpool.md).
+<a name="aws-properties-cognito-userpool-inboundfederation-description"></a>The `InboundFederation` property type specifies Property description not available. for an [AWS::Cognito::UserPool](aws-resource-cognito-userpool.md).
 
 ## Syntax
+<a name="aws-properties-cognito-userpool-inboundfederation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpool-inboundfederation-syntax.json"></a>
 
-```json
-
+```
 {
-  "LambdaArn" : String,
-  "LambdaVersion" : String
+  "[LambdaArn](#cfn-cognito-userpool-inboundfederation-lambdaarn)" : {{String}},
+  "[LambdaVersion](#cfn-cognito-userpool-inboundfederation-lambdaversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpool-inboundfederation-syntax.yaml"></a>
 
-```yaml
-
-  LambdaArn: String
-  LambdaVersion: String
-
+```
+  [LambdaArn](#cfn-cognito-userpool-inboundfederation-lambdaarn): {{String}}
+  [LambdaVersion](#cfn-cognito-userpool-inboundfederation-lambdaversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpool-inboundfederation-properties"></a>
 
-`LambdaArn`
-
+`LambdaArn`  <a name="cfn-cognito-userpool-inboundfederation-lambdaarn"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaVersion`
-
+`LambdaVersion`  <a name="cfn-cognito-userpool-inboundfederation-lambdaversion"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EmailConfiguration
-
-InviteMessageTemplate
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

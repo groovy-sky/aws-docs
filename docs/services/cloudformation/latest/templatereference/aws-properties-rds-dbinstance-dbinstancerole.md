@@ -2,73 +2,63 @@
 title: "AWS::RDS::DBInstance DBInstanceRole"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBInstance DBInstanceRole
+<a name="aws-properties-rds-dbinstance-dbinstancerole"></a>
 
 Information about an AWS Identity and Access Management (IAM) role that is associated with a DB instance.
 
 ## Syntax
+<a name="aws-properties-rds-dbinstance-dbinstancerole-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rds-dbinstance-dbinstancerole-syntax.json"></a>
 
-```json
-
+```
 {
-  "FeatureName" : String,
-  "RoleArn" : String
+  "[FeatureName](#cfn-rds-dbinstance-dbinstancerole-featurename)" : {{String}},
+  "[RoleArn](#cfn-rds-dbinstance-dbinstancerole-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rds-dbinstance-dbinstancerole-syntax.yaml"></a>
 
-```yaml
-
-  FeatureName: String
-  RoleArn: String
-
+```
+  [FeatureName](#cfn-rds-dbinstance-dbinstancerole-featurename): {{String}}
+  [RoleArn](#cfn-rds-dbinstance-dbinstancerole-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rds-dbinstance-dbinstancerole-properties"></a>
 
-`FeatureName`
+`FeatureName`  <a name="cfn-rds-dbinstance-dbinstancerole-featurename"></a>
+The name of the feature associated with the AWS Identity and Access Management (IAM) role. IAM roles that are associated with a DB instance grant permission for the DB instance to access other AWS services on your behalf. For the list of supported feature names, see the `SupportedFeatureNames` description in [DBEngineVersion](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBEngineVersion.html) in the *Amazon RDS API Reference*.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the feature associated with the AWS Identity and Access Management (IAM)
-role. IAM roles that are associated with a DB instance grant permission for the DB
-instance to access other AWS services on your behalf. For the list of supported feature
-names, see the `SupportedFeatureNames` description in [DBEngineVersion](../../../../reference/amazonrds/latest/apireference/api-dbengineversion.md)
-in the _Amazon RDS API Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role that is associated with the DB
-instance.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RoleArn`  <a name="cfn-rds-dbinstance-dbinstancerole-rolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role that is associated with the DB instance.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-rds-dbinstance-dbinstancerole--examples"></a>
+
+###
+<a name="aws-properties-rds-dbinstance-dbinstancerole--examples--"></a>
 
 The following specifies a role to associate with a DB instance.
 
 #### JSON
+<a name="aws-properties-rds-dbinstance-dbinstancerole--examples----json"></a>
 
-```json
-
+```
 "AssociatedRoles": [
     {
         "FeatureName": "s3Import",
@@ -78,18 +68,12 @@ The following specifies a role to associate with a DB instance.
 ```
 
 #### YAML
+<a name="aws-properties-rds-dbinstance-dbinstancerole--examples----yaml"></a>
 
-```yaml
-
+```
 AssociatedRoles:
     - FeatureName: s3Import
       RoleArn: 'arn:aws:iam::123456789012:role/RDSLoadFromS3'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CertificateDetails
-
-DBInstanceStatusInfo
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::Lex::Bot SpeechModelConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SpeechModelConfig
+<a name="aws-properties-lex-bot-speechmodelconfig"></a>
 
 Configuration settings that define which speech-to-text model to use for processing speech input.
 
 ## Syntax
+<a name="aws-properties-lex-bot-speechmodelconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-speechmodelconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeepgramConfig" : DeepgramSpeechModelConfig
+  "[DeepgramConfig](#cfn-lex-bot-speechmodelconfig-deepgramconfig)" : {{DeepgramSpeechModelConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-speechmodelconfig-syntax.yaml"></a>
 
-```yaml
-
-  DeepgramConfig:
-    DeepgramSpeechModelConfig
-
+```
+  [DeepgramConfig](#cfn-lex-bot-speechmodelconfig-deepgramconfig): {{
+    DeepgramSpeechModelConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-speechmodelconfig-properties"></a>
 
-`DeepgramConfig`
-
+`DeepgramConfig`  <a name="cfn-lex-bot-speechmodelconfig-deepgramconfig"></a>
 Configuration settings for using Deepgram as the speech-to-text provider.
-
-_Required_: No
-
-_Type_: [DeepgramSpeechModelConfig](aws-properties-lex-bot-deepgramspeechmodelconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SpeechFoundationModel
-
-SpeechRecognitionSettings
+*Required*: No
+*Type*: [DeepgramSpeechModelConfig](aws-properties-lex-bot-deepgramspeechmodelconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

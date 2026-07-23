@@ -2,54 +2,42 @@
 title: "AWS::Timestream::ScheduledQuery NotificationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::ScheduledQuery NotificationConfiguration
+<a name="aws-properties-timestream-scheduledquery-notificationconfiguration"></a>
 
-Notification configuration for a scheduled query. A notification is sent by Timestream
-when a scheduled query is created, its state is updated or when it is deleted.
+Notification configuration for a scheduled query. A notification is sent by Timestream when a scheduled query is created, its state is updated or when it is deleted.
 
 ## Syntax
+<a name="aws-properties-timestream-scheduledquery-notificationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-scheduledquery-notificationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SnsConfiguration" : SnsConfiguration
+  "[SnsConfiguration](#cfn-timestream-scheduledquery-notificationconfiguration-snsconfiguration)" : {{SnsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-scheduledquery-notificationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SnsConfiguration:
-    SnsConfiguration
-
+```
+  [SnsConfiguration](#cfn-timestream-scheduledquery-notificationconfiguration-snsconfiguration): {{
+    SnsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-scheduledquery-notificationconfiguration-properties"></a>
 
-`SnsConfiguration`
-
+`SnsConfiguration`  <a name="cfn-timestream-scheduledquery-notificationconfiguration-snsconfiguration"></a>
 Details on SNS configuration.
-
-_Required_: Yes
-
-_Type_: [SnsConfiguration](aws-properties-timestream-scheduledquery-snsconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiMeasureMappings
-
-S3Configuration
+*Required*: Yes
+*Type*: [SnsConfiguration](aws-properties-timestream-scheduledquery-snsconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

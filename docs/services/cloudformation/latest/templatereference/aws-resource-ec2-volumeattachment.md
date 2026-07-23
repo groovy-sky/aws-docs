@@ -2,118 +2,90 @@
 title: "AWS::EC2::VolumeAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VolumeAttachment
+<a name="aws-resource-ec2-volumeattachment"></a>
 
-Attaches an Amazon EBS volume to a running instance and exposes it to the instance with
-the specified device name.
+Attaches an Amazon EBS volume to a running instance and exposes it to the instance with the specified device name.
 
-Before this resource can be deleted (and therefore the volume detached), you must first
-unmount the volume in the instance. Failure to do so results in the volume being stuck in
-the busy state while it is trying to detach, which could possibly damage the file system or
-the data it contains.
+Before this resource can be deleted (and therefore the volume detached), you must first unmount the volume in the instance. Failure to do so results in the volume being stuck in the busy state while it is trying to detach, which could possibly damage the file system or the data it contains.
 
-If an Amazon EBS volume is the root device of an instance, it cannot be detached while
-the instance is in the "running" state. To detach the root volume, stop the instance
-first.
+If an Amazon EBS volume is the root device of an instance, it cannot be detached while the instance is in the "running" state. To detach the root volume, stop the instance first.
 
-If the root volume is detached from an instance with an AWS Marketplace product
-code, then the product codes from that volume are no longer associated with the
-instance.
+If the root volume is detached from an instance with an AWS Marketplace product code, then the product codes from that volume are no longer associated with the instance.
 
 ## Syntax
+<a name="aws-resource-ec2-volumeattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-volumeattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VolumeAttachment",
   "Properties" : {
-      "Device" : String,
-      "EbsCardIndex" : Integer,
-      "InstanceId" : String,
-      "VolumeId" : String
+      "[Device](#cfn-ec2-volumeattachment-device)" : {{String}},
+      "[EbsCardIndex](#cfn-ec2-volumeattachment-ebscardindex)" : {{Integer}},
+      "[InstanceId](#cfn-ec2-volumeattachment-instanceid)" : {{String}},
+      "[VolumeId](#cfn-ec2-volumeattachment-volumeid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-volumeattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VolumeAttachment
 Properties:
-  Device: String
-  EbsCardIndex: Integer
-  InstanceId: String
-  VolumeId: String
-
+  [Device](#cfn-ec2-volumeattachment-device): {{String}}
+  [EbsCardIndex](#cfn-ec2-volumeattachment-ebscardindex): {{Integer}}
+  [InstanceId](#cfn-ec2-volumeattachment-instanceid): {{String}}
+  [VolumeId](#cfn-ec2-volumeattachment-volumeid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-volumeattachment-properties"></a>
 
-`Device`
-
+`Device`  <a name="cfn-ec2-volumeattachment-device"></a>
 The device name (for example, `/dev/sdh` or `xvdh`).
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EbsCardIndex`
-
+`EbsCardIndex`  <a name="cfn-ec2-volumeattachment-ebscardindex"></a>
 The index of the EBS card. Some instance types support multiple EBS cards. The default EBS card index is 0.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`InstanceId`  <a name="cfn-ec2-volumeattachment-instanceid"></a>
+The ID of the instance to which the volume attaches. This value can be a reference to an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html) resource, or it can be the physical ID of an existing EC2 instance.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InstanceId`
-
-The ID of the instance to which the volume attaches. This value can be a reference to an
-[`AWS::EC2::Instance`](../userguide/aws-properties-ec2-instance.md) resource, or it can be the physical ID of an
-existing EC2 instance.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VolumeId`
-
-The ID of the Amazon EBS volume. The volume and instance must be within the same
-Availability Zone. This value can be a reference to an [`AWS::EC2::Volume`](../userguide/aws-properties-ec2-ebs-volume.md) resource, or it can be the volume ID of an
-existing Amazon EBS volume.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`VolumeId`  <a name="cfn-ec2-volumeattachment-volumeid"></a>
+The ID of the Amazon EBS volume. The volume and instance must be within the same Availability Zone. This value can be a reference to an [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html) resource, or it can be the volume ID of an existing Amazon EBS volume.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-resource-ec2-volumeattachment--examples"></a>
 
 ### Attach an EBS volume to a running instance
+<a name="aws-resource-ec2-volumeattachment--examples--Attach_an_EBS_volume_to_a_running_instance"></a>
 
-This example attaches an EC2 EBS volume to the EC2 instance with the logical name
-"Ec2Instance".
+This example attaches an EC2 EBS volume to the EC2 instance with the logical name "Ec2Instance".
 
 #### JSON
+<a name="aws-resource-ec2-volumeattachment--examples--Attach_an_EBS_volume_to_a_running_instance--json"></a>
 
-```json
-
+```
 "NewVolume" : {
    "Type" : "AWS::EC2::Volume",
    "Properties" : {
@@ -137,9 +109,9 @@ This example attaches an EC2 EBS volume to the EC2 instance with the logical nam
 ```
 
 #### YAML
+<a name="aws-resource-ec2-volumeattachment--examples--Attach_an_EBS_volume_to_a_running_instance--yaml"></a>
 
-```yaml
-
+```
 NewVolume:
   Type: AWS::EC2::Volume
   Properties:
@@ -159,23 +131,10 @@ MountPoint:
 ```
 
 ## See also
-
-- [Attach an EBS volume to\
-an instance](../../../ebs/latest/userguide/ebs-attaching-volume.md)
-
-- [Detach an EBS volume\
-from an instance](../../../ebs/latest/userguide/ebs-detaching-volume.md)
-
-- [AttachVolume](../../../../reference/awsec2/latest/apireference/apireference-query-attachvolume.md) in the _Amazon EC2 API_
-_Reference_
-
-- [DetachVolume](../../../../reference/awsec2/latest/apireference/apireference-query-detachvolume.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::EC2::VPC
+<a name="aws-resource-ec2-volumeattachment--seealso"></a>
++  [Attach an EBS volume to an instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-attaching-volume.html)
++  [Detach an EBS volume from an instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-detaching-volume.html)
++ [AttachVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ApiReference-query-AttachVolume.html) in the *Amazon EC2 API Reference*
++ [DetachVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ApiReference-query-DetachVolume.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,58 +2,44 @@
 title: "AWS::CustomerProfiles::SegmentDefinition SourceSegment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::SegmentDefinition SourceSegment
+<a name="aws-properties-customerprofiles-segmentdefinition-sourcesegment"></a>
 
 The source segments to build off of.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-segmentdefinition-sourcesegment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-segmentdefinition-sourcesegment-syntax.json"></a>
 
-```json
-
+```
 {
-  "SegmentDefinitionName" : String
+  "[SegmentDefinitionName](#cfn-customerprofiles-segmentdefinition-sourcesegment-segmentdefinitionname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-segmentdefinition-sourcesegment-syntax.yaml"></a>
 
-```yaml
-
-  SegmentDefinitionName: String
-
+```
+  [SegmentDefinitionName](#cfn-customerprofiles-segmentdefinition-sourcesegment-segmentdefinitionname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-segmentdefinition-sourcesegment-properties"></a>
 
-`SegmentDefinitionName`
-
+`SegmentDefinitionName`  <a name="cfn-customerprofiles-segmentdefinition-sourcesegment-segmentdefinitionname"></a>
 The name of the source segment.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SortAttribute
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

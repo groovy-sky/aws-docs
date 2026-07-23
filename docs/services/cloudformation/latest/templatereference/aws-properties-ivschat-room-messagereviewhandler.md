@@ -2,86 +2,68 @@
 title: "AWS::IVSChat::Room MessageReviewHandler"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVSChat::Room MessageReviewHandler
+<a name="aws-properties-ivschat-room-messagereviewhandler"></a>
 
 The MessageReviewHandler property type specifies configuration information for optional message review.
 
 ## Syntax
+<a name="aws-properties-ivschat-room-messagereviewhandler-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ivschat-room-messagereviewhandler-syntax.json"></a>
 
-```json
-
+```
 {
-  "FallbackResult" : String,
-  "Uri" : String
+  "[FallbackResult](#cfn-ivschat-room-messagereviewhandler-fallbackresult)" : {{String}},
+  "[Uri](#cfn-ivschat-room-messagereviewhandler-uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ivschat-room-messagereviewhandler-syntax.yaml"></a>
 
-```yaml
-
-  FallbackResult: String
-  Uri: String
-
+```
+  [FallbackResult](#cfn-ivschat-room-messagereviewhandler-fallbackresult): {{String}}
+  [Uri](#cfn-ivschat-room-messagereviewhandler-uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ivschat-room-messagereviewhandler-properties"></a>
 
-`FallbackResult`
+`FallbackResult`  <a name="cfn-ivschat-room-messagereviewhandler-fallbackresult"></a>
+Specifies the fallback behavior (whether the message is allowed or denied) if the handler does not return a valid response, encounters an error, or times out. (For the timeout period, see [ Service Quotas](https://docs.aws.amazon.com/ivs/latest/userguide/service-quotas.html).) If allowed, the message is delivered with returned content to all users connected to the room. If denied, the message is not delivered to any user.
+*Default*: `ALLOW`
+*Required*: No
+*Type*: String
+*Allowed values*: `ALLOW | DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifies the fallback behavior (whether the message is allowed or denied) if the handler
-does not return a valid response, encounters an error, or times out. (For the timeout period,
-see [Service\
-Quotas](../../../ivs/latest/userguide/service-quotas.md).) If allowed, the message is delivered with returned content to all users
-connected to the room. If denied, the message is not delivered to any user.
-
-_Default_: `ALLOW`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALLOW | DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Uri`
-
-Identifier of the message review handler. Currently this must be an ARN of a lambda
-function.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^$|^arn:aws:lambda:[a-z0-9-]+:[0-9]{12}:function:.+`
-
-_Minimum_: `0`
-
-_Maximum_: `170`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Uri`  <a name="cfn-ivschat-room-messagereviewhandler-uri"></a>
+Identifier of the message review handler. Currently this must be an ARN of a lambda function.
+*Required*: No
+*Type*: String
+*Pattern*: `^$|^arn:aws:lambda:[a-z0-9-]+:[0-9]{12}:function:.+`
+*Minimum*: `0`
+*Maximum*: `170`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-ivschat-room-messagereviewhandler--examples"></a>
 
 ### Room Message Review Handler Template Examples
+<a name="aws-properties-ivschat-room-messagereviewhandler--examples--Room_Message_Review_Handler_Template_Examples"></a>
 
-The following examples specify an Amazon IVS Chat Room with
-message review.
+The following examples specify an Amazon IVS Chat Room with message review.
 
 #### JSON
+<a name="aws-properties-ivschat-room-messagereviewhandler--examples--Room_Message_Review_Handler_Template_Examples--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -89,7 +71,7 @@ message review.
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
+          "Version": "2012-10-17"		 	 	 ,
           "Statement": {
             "Effect": "Allow",
             "Principal": {
@@ -154,9 +136,9 @@ message review.
 ```
 
 #### YAML
+<a name="aws-properties-ivschat-room-messagereviewhandler--examples--Room_Message_Review_Handler_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MessageReviewHandlerRole:
@@ -195,11 +177,5 @@ Resources:
         Uri: !GetAtt MessageReviewHandler.Arn
     DependsOn: MessageReviewHandlerPermission
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IVSChat::Room
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

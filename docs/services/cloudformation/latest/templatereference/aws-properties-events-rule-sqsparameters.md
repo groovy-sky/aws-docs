@@ -2,54 +2,42 @@
 title: "AWS::Events::Rule SqsParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule SqsParameters
+<a name="aws-properties-events-rule-sqsparameters"></a>
 
 The custom parameters for EventBridge to use for a target that is an Amazon SQS fair or FIFO queue.
 
 ## Syntax
+<a name="aws-properties-events-rule-sqsparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-rule-sqsparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "MessageGroupId" : String
+  "[MessageGroupId](#cfn-events-rule-sqsparameters-messagegroupid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-rule-sqsparameters-syntax.yaml"></a>
 
-```yaml
-
-  MessageGroupId: String
-
+```
+  [MessageGroupId](#cfn-events-rule-sqsparameters-messagegroupid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-events-rule-sqsparameters-properties"></a>
 
-`MessageGroupId`
-
+`MessageGroupId`  <a name="cfn-events-rule-sqsparameters-messagegroupid"></a>
 The ID of the message group to use as the target.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SageMakerPipelineParameters
-
-Tag
+*Required*: Yes
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

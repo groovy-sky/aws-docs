@@ -2,58 +2,42 @@
 title: "AWS::Synthetics::Canary ArtifactConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Synthetics::Canary ArtifactConfig
+<a name="aws-properties-synthetics-canary-artifactconfig"></a>
 
-A structure that contains the configuration for canary artifacts,
-including the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
+A structure that contains the configuration for canary artifacts, including the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
 
 ## Syntax
+<a name="aws-properties-synthetics-canary-artifactconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-synthetics-canary-artifactconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Encryption" : S3Encryption
+  "[S3Encryption](#cfn-synthetics-canary-artifactconfig-s3encryption)" : {{S3Encryption}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-synthetics-canary-artifactconfig-syntax.yaml"></a>
 
-```yaml
-
-  S3Encryption:
-    S3Encryption
-
+```
+  [S3Encryption](#cfn-synthetics-canary-artifactconfig-s3encryption): {{
+    S3Encryption}}
 ```
 
 ## Properties
+<a name="aws-properties-synthetics-canary-artifactconfig-properties"></a>
 
-`S3Encryption`
-
-A structure that contains the configuration
-of the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
-Artifact encryption functionality is available only for canaries that use Synthetics runtime version syn-nodejs-puppeteer-3.3
-or later. For more information, see
-[Encrypting canary artifacts](../../../amazoncloudwatch/latest/monitoring/cloudwatch-synthetics-artifact-encryption.md).
-
-_Required_: No
-
-_Type_: [S3Encryption](aws-properties-synthetics-canary-s3encryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Synthetics::Canary
-
-BaseScreenshot
+`S3Encryption`  <a name="cfn-synthetics-canary-artifactconfig-s3encryption"></a>
+A structure that contains the configuration of the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3. Artifact encryption functionality is available only for canaries that use Synthetics runtime version syn-nodejs-puppeteer-3.3 or later. For more information, see [Encrypting canary artifacts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_artifact_encryption.html).
+*Required*: No
+*Type*: [S3Encryption](aws-properties-synthetics-canary-s3encryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

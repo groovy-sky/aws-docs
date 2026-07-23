@@ -2,73 +2,51 @@
 title: "AWS::AppStream::DirectoryConfig CertificateBasedAuthProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::DirectoryConfig CertificateBasedAuthProperties
+<a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties"></a>
 
-The certificate-based authentication properties used to authenticate SAML 2.0 Identity
-Provider (IdP) user identities to Active Directory domain-joined streaming instances.
+The certificate-based authentication properties used to authenticate SAML 2.0 Identity Provider (IdP) user identities to Active Directory domain-joined streaming instances.
 
 ## Syntax
+<a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "CertificateAuthorityArn" : String,
-  "Status" : String
+  "[CertificateAuthorityArn](#cfn-appstream-directoryconfig-certificatebasedauthproperties-certificateauthorityarn)" : {{String}},
+  "[Status](#cfn-appstream-directoryconfig-certificatebasedauthproperties-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties-syntax.yaml"></a>
 
-```yaml
-
-  CertificateAuthorityArn: String
-  Status: String
-
+```
+  [CertificateAuthorityArn](#cfn-appstream-directoryconfig-certificatebasedauthproperties-certificateauthorityarn): {{String}}
+  [Status](#cfn-appstream-directoryconfig-certificatebasedauthproperties-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties-properties"></a>
 
-`CertificateAuthorityArn`
-
+`CertificateAuthorityArn`  <a name="cfn-appstream-directoryconfig-certificatebasedauthproperties-certificateauthorityarn"></a>
 The ARN of the AWS Certificate Manager Private CA resource.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
-The status of the certificate-based authentication properties. Fallback is turned on by default when certificate-based authentication is **Enabled**. Fallback allows users to log in using their AD
-domain password if certificate-based authentication is unsuccessful, or to unlock a
-desktop lock screen. **Enabled\_no\_directory\_login\_fallback** enables certificate-based
-authentication, but does not allow users to log in using their AD domain password. Users
-will be disconnected to re-authenticate using certificates.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DISABLED | ENABLED | ENABLED_NO_DIRECTORY_LOGIN_FALLBACK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppStream::DirectoryConfig
-
-ServiceAccountCredentials
+`Status`  <a name="cfn-appstream-directoryconfig-certificatebasedauthproperties-status"></a>
+The status of the certificate-based authentication properties. Fallback is turned on by default when certificate-based authentication is **Enabled**. Fallback allows users to log in using their AD domain password if certificate-based authentication is unsuccessful, or to unlock a desktop lock screen. **Enabled\_no\_directory\_login\_fallback** enables certificate-based authentication, but does not allow users to log in using their AD domain password. Users will be disconnected to re-authenticate using certificates.
+*Required*: No
+*Type*: String
+*Allowed values*: `DISABLED | ENABLED | ENABLED_NO_DIRECTORY_LOGIN_FALLBACK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

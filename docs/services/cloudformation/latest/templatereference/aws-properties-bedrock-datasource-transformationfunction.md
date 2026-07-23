@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::DataSource TransformationFunction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource TransformationFunction
+<a name="aws-properties-bedrock-datasource-transformationfunction"></a>
 
 A Lambda function that processes documents.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-transformationfunction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-transformationfunction-syntax.json"></a>
 
-```json
-
+```
 {
-  "TransformationLambdaConfiguration" : TransformationLambdaConfiguration
+  "[TransformationLambdaConfiguration](#cfn-bedrock-datasource-transformationfunction-transformationlambdaconfiguration)" : {{TransformationLambdaConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-transformationfunction-syntax.yaml"></a>
 
-```yaml
-
-  TransformationLambdaConfiguration:
-    TransformationLambdaConfiguration
-
+```
+  [TransformationLambdaConfiguration](#cfn-bedrock-datasource-transformationfunction-transformationlambdaconfiguration): {{
+    TransformationLambdaConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-transformationfunction-properties"></a>
 
-`TransformationLambdaConfiguration`
-
+`TransformationLambdaConfiguration`  <a name="cfn-bedrock-datasource-transformationfunction-transformationlambdaconfiguration"></a>
 The Lambda function.
-
-_Required_: Yes
-
-_Type_: [TransformationLambdaConfiguration](aws-properties-bedrock-datasource-transformationlambdaconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Transformation
-
-TransformationLambdaConfiguration
+*Required*: Yes
+*Type*: [TransformationLambdaConfiguration](aws-properties-bedrock-datasource-transformationlambdaconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

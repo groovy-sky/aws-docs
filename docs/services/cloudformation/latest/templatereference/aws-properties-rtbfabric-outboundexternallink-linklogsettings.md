@@ -2,53 +2,42 @@
 title: "AWS::RTBFabric::OutboundExternalLink LinkLogSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::OutboundExternalLink LinkLogSettings
+<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings"></a>
 
-The `LinkLogSettings` property type specifies Property description not available. for an [AWS::RTBFabric::OutboundExternalLink](aws-resource-rtbfabric-outboundexternallink.md).
+<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings-description"></a>The `LinkLogSettings` property type specifies Property description not available. for an [AWS::RTBFabric::OutboundExternalLink](aws-resource-rtbfabric-outboundexternallink.md).
 
 ## Syntax
+<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApplicationLogs" : ApplicationLogs
+  "[ApplicationLogs](#cfn-rtbfabric-outboundexternallink-linklogsettings-applicationlogs)" : {{ApplicationLogs}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings-syntax.yaml"></a>
 
-```yaml
-
-  ApplicationLogs:
-    ApplicationLogs
-
+```
+  [ApplicationLogs](#cfn-rtbfabric-outboundexternallink-linklogsettings-applicationlogs): {{
+    ApplicationLogs}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings-properties"></a>
 
-`ApplicationLogs`
-
+`ApplicationLogs`  <a name="cfn-rtbfabric-outboundexternallink-linklogsettings-applicationlogs"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [ApplicationLogs](aws-properties-rtbfabric-outboundexternallink-applicationlogs.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LinkAttributes
-
-ResponderErrorMaskingForHttpCode
+*Required*: Yes
+*Type*: [ApplicationLogs](aws-properties-rtbfabric-outboundexternallink-applicationlogs.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

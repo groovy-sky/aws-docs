@@ -2,60 +2,44 @@
 title: "AWS::EC2::LaunchTemplate BaselinePerformanceFactors"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate BaselinePerformanceFactors
+<a name="aws-properties-ec2-launchtemplate-baselineperformancefactors"></a>
 
-The baseline performance to consider, using an instance family as a baseline reference.
-The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this
-baseline to guide instance type selection, but there is no guarantee that the selected
-instance types will always exceed the baseline for every application.
+The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application.
 
-Currently, this parameter only supports CPU performance as a baseline performance
-factor. For example, specifying `c6i` would use the CPU performance of the
-`c6i` family as the baseline reference.
+Currently, this parameter only supports CPU performance as a baseline performance factor. For example, specifying `c6i` would use the CPU performance of the `c6i` family as the baseline reference.
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-baselineperformancefactors-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-baselineperformancefactors-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cpu" : Cpu
+  "[Cpu](#cfn-ec2-launchtemplate-baselineperformancefactors-cpu)" : {{Cpu}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-baselineperformancefactors-syntax.yaml"></a>
 
-```yaml
-
-  Cpu:
-    Cpu
-
+```
+  [Cpu](#cfn-ec2-launchtemplate-baselineperformancefactors-cpu): {{
+    Cpu}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-baselineperformancefactors-properties"></a>
 
-`Cpu`
-
+`Cpu`  <a name="cfn-ec2-launchtemplate-baselineperformancefactors-cpu"></a>
 The CPU performance to consider, using an instance family as the baseline reference.
-
-_Required_: No
-
-_Type_: [Cpu](aws-properties-ec2-launchtemplate-cpu.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BaselineEbsBandwidthMbps
-
-BlockDeviceMapping
+*Required*: No
+*Type*: [Cpu](aws-properties-ec2-launchtemplate-cpu.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

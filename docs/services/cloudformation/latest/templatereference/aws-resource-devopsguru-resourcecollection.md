@@ -2,90 +2,83 @@
 title: "AWS::DevOpsGuru::ResourceCollection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsGuru::ResourceCollection
+<a name="aws-resource-devopsguru-resourcecollection"></a>
 
-A collection of AWS resources supported by DevOps Guru. The one type of AWS resource
-collection supported is AWS CloudFormation stacks. DevOps Guru can be configured to analyze
-only the AWS resources that are defined in the stacks.
+ A collection of AWS resources supported by DevOps Guru. The one type of AWS resource collection supported is AWS CloudFormation stacks. DevOps Guru can be configured to analyze only the AWS resources that are defined in the stacks.
 
 ## Syntax
+<a name="aws-resource-devopsguru-resourcecollection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-devopsguru-resourcecollection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DevOpsGuru::ResourceCollection",
   "Properties" : {
-      "ResourceCollectionFilter" : ResourceCollectionFilter
+      "[ResourceCollectionFilter](#cfn-devopsguru-resourcecollection-resourcecollectionfilter)" : {{ResourceCollectionFilter}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-devopsguru-resourcecollection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DevOpsGuru::ResourceCollection
 Properties:
-  ResourceCollectionFilter:
-    ResourceCollectionFilter
-
+  [ResourceCollectionFilter](#cfn-devopsguru-resourcecollection-resourcecollectionfilter): {{
+    ResourceCollectionFilter}}
 ```
 
 ## Properties
+<a name="aws-resource-devopsguru-resourcecollection-properties"></a>
 
-`ResourceCollectionFilter`
-
-Information about a filter used to specify which AWS resources are analyzed for anomalous behavior by DevOps Guru.
-
-_Required_: Yes
-
-_Type_: [ResourceCollectionFilter](aws-properties-devopsguru-resourcecollection-resourcecollectionfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ResourceCollectionFilter`  <a name="cfn-devopsguru-resourcecollection-resourcecollectionfilter"></a>
+ Information about a filter used to specify which AWS resources are analyzed for anomalous behavior by DevOps Guru.
+*Required*: Yes
+*Type*: [ResourceCollectionFilter](aws-properties-devopsguru-resourcecollection-resourcecollectionfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-devopsguru-resourcecollection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-devopsguru-resourcecollection-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the `Ref` intrinsic function,
-`Ref` returns Amazon Resource Name (ARN) of the `ResourceCollection`.
-
-For more information about using the `Ref` function, see
-[Ref](../userguide/intrinsic-function-reference-ref.md).
+When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns Amazon Resource Name (ARN) of the `ResourceCollection`. For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-devopsguru-resourcecollection-return-values-fn--getatt"></a>
 
-`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available
-attributes and sample return values. For more information about using `Fn::GetAtt`, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values. For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`ResourceCollectionType`
+####
+<a name="aws-resource-devopsguru-resourcecollection-return-values-fn--getatt-fn--getatt"></a>
 
+`ResourceCollectionType`  <a name="ResourceCollectionType-fn::getatt"></a>
 The type of AWS resource collections to return. The one valid value is `CLOUD_FORMATION` for AWS CloudFormation stacks.
 
 ## Examples
+<a name="aws-resource-devopsguru-resourcecollection--examples"></a>
 
-- [Create a resource collection using two CloudFormation stacks](#aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks)
-
-- [Create a resource collection with all CloudFormation stacks in your account](#aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account)
-
-- [Monitor DevOps Guru resources using tags](#aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags)
+**Topics**
++ [Create a resource collection using two CloudFormation stacks](#aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks)
++ [Create a resource collection with all CloudFormation stacks in your account](#aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account)
++ [Monitor DevOps Guru resources using tags](#aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags)
 
 ### Create a resource collection using two CloudFormation stacks
+<a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks"></a>
 
 #### JSON
+<a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyResourceCollection": {
@@ -106,9 +99,9 @@ The type of AWS resource collections to return. The one valid value is `CLOUD_FO
 ```
 
 #### YAML
+<a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
@@ -121,11 +114,12 @@ Resources:
 ```
 
 ### Create a resource collection with all CloudFormation stacks in your account
+<a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account"></a>
 
 #### JSON
+<a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyResourceCollection": {
@@ -145,9 +139,9 @@ Resources:
 ```
 
 #### YAML
+<a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
@@ -159,11 +153,12 @@ Resources:
 ```
 
 ### Monitor DevOps Guru resources using tags
+<a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags"></a>
 
 #### JSON
+<a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--json"></a>
 
-```json
-
+```
 {
 "DevOpsGuruResourceCollection": {
   "Type": "AWS::DevOpsGuru::ResourceCollection",
@@ -184,9 +179,9 @@ Resources:
 ```
 
 #### YAML
+<a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--yaml"></a>
 
-```yaml
-
+```
 DevOpsGuruResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
     Condition: DevOpsGuruEnable
@@ -197,13 +192,12 @@ DevOpsGuruResourceCollection:
             TagValues:
               - devops-guru-serverless
 	      - devops-guru-aurora
-
 ```
 
 #### JSON
+<a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--json"></a>
 
-```json
-
+```
 {
  "DevOpsGuruResourceCollection": {
     "Type": "AWS::DevOpsGuru::ResourceCollection",
@@ -225,9 +219,9 @@ DevOpsGuruResourceCollection:
 ```
 
 #### YAML
+<a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--yaml"></a>
 
-```yaml
-
+```
 DevOpsGuruResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
     Condition: DevOpsGuruEnable
@@ -237,13 +231,6 @@ DevOpsGuruResourceCollection:
           - AppBoundaryKey: devops-guru-workshop
             TagValues:
               - "*"
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnsChannelConfig
-
-CloudFormationCollectionFilter
 
 All content copied from https://docs.aws.amazon.com/.

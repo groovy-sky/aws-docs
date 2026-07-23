@@ -2,78 +2,53 @@
 title: "AWS::ECS::TaskDefinition ResourceRequirement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition ResourceRequirement
+<a name="aws-properties-ecs-taskdefinition-resourcerequirement"></a>
 
-The type and amount of a resource to assign to a container. The supported resource
-types are GPUs and Elastic Inference accelerators. For more information, see [Working with\
-GPUs on Amazon ECS](../../../amazonecs/latest/developerguide/ecs-gpu.md) or [Working with Amazon Elastic\
-Inference on Amazon ECS](../../../amazonecs/latest/developerguide/ecs-inference.md) in the _Amazon Elastic Container Service_
-_Developer Guide_
+The type and amount of a resource to assign to a container. The supported resource types are GPUs, Neuron devices, and Elastic Inference accelerators. For more information, see [Working with GPUs on Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html) or [Working with Amazon Elastic Inference on Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html) in the *Amazon Elastic Container Service Developer Guide*
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-resourcerequirement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-resourcerequirement-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "Value" : String
+  "[Type](#cfn-ecs-taskdefinition-resourcerequirement-type)" : {{String}},
+  "[Value](#cfn-ecs-taskdefinition-resourcerequirement-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-resourcerequirement-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  Value: String
-
+```
+  [Type](#cfn-ecs-taskdefinition-resourcerequirement-type): {{String}}
+  [Value](#cfn-ecs-taskdefinition-resourcerequirement-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-resourcerequirement-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-ecs-taskdefinition-resourcerequirement-type"></a>
 The type of resource to assign to a container.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GPU | InferenceAccelerator | NeuronDevice`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GPU | InferenceAccelerator`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-ecs-taskdefinition-resourcerequirement-value"></a>
 The value for the specified resource type.
-
-When the type is `GPU`, the value is the number of physical
-`GPUs` the Amazon ECS container agent reserves for the container. The
-number of GPUs that's reserved for all containers in a task can't exceed the number of
-available GPUs on the container instance that the task is launched on.
-
-When the type is `InferenceAccelerator`, the `value` matches the
-`deviceName` for an [InferenceAccelerator](../../../../reference/amazonecs/latest/apireference/api-inferenceaccelerator.md) specified in a task definition.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RepositoryCredentials
-
-RestartPolicy
+When the type is `GPU`, the value is the number of physical `GPUs` the Amazon ECS container agent reserves for the container. The number of GPUs that's reserved for all containers in a task can't exceed the number of available GPUs on the container instance that the task is launched on. You can also specify `ALL` to allocate all available GPUs on the instance to the container.
+When the type is `NeuronDevice`, the value must be `ALL`. This allocates all available Neuron devices on the instance to the container. Only one container in a task can specify `NeuronDevice` resources. This resource type is only supported on Managed Instances.
+When the type is `InferenceAccelerator`, the `value` matches the `deviceName` for an [InferenceAccelerator](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_InferenceAccelerator.html) specified in a task definition.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

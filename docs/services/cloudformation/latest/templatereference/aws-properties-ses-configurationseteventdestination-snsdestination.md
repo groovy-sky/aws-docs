@@ -2,66 +2,47 @@
 title: "AWS::SES::ConfigurationSetEventDestination SnsDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSetEventDestination SnsDestination
+<a name="aws-properties-ses-configurationseteventdestination-snsdestination"></a>
 
 Contains the topic ARN associated with an Amazon Simple Notification Service (Amazon SNS) event destination.
 
-Event destinations, such as Amazon SNS, are associated with configuration sets, which
-enable you to publish email sending events. For information about using configuration
-sets, see the [Amazon SES Developer\
-Guide](../../../ses/latest/dg/monitor-sending-activity.md).
+Event destinations, such as Amazon SNS, are associated with configuration sets, which enable you to publish email sending events. For information about using configuration sets, see the [Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity.html).
 
 ## Syntax
+<a name="aws-properties-ses-configurationseteventdestination-snsdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-configurationseteventdestination-snsdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "TopicARN" : String
+  "[TopicARN](#cfn-ses-configurationseteventdestination-snsdestination-topicarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-configurationseteventdestination-snsdestination-syntax.yaml"></a>
 
-```yaml
-
-  TopicARN: String
-
+```
+  [TopicARN](#cfn-ses-configurationseteventdestination-snsdestination-topicarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-configurationseteventdestination-snsdestination-properties"></a>
 
-`TopicARN`
-
-The ARN of the Amazon SNS topic for email sending events. You can find the ARN of a topic
-by using the [ListTopics](../../../sns/latest/api/api-listtopics.md) Amazon SNS operation.
-
-For more information about Amazon SNS topics, see the [Amazon SNS Developer Guide](../../../sns/latest/dg/createtopic.md).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z0-9-]*:sns:[a-z0-9-]+:\d{12}:[^:]+$`
-
-_Minimum_: `36`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KinesisFirehoseDestination
-
-AWS::SES::ContactList
+`TopicARN`  <a name="cfn-ses-configurationseteventdestination-snsdestination-topicarn"></a>
+The ARN of the Amazon SNS topic for email sending events. You can find the ARN of a topic by using the [ListTopics](https://docs.aws.amazon.com/sns/latest/api/API_ListTopics.html) Amazon SNS operation.
+For more information about Amazon SNS topics, see the [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-z0-9-]*:sns:[a-z0-9-]+:\d{12}:[^:]+$`
+*Minimum*: `36`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

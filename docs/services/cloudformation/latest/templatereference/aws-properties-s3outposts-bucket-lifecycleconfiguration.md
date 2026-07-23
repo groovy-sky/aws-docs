@@ -2,53 +2,42 @@
 title: "AWS::S3Outposts::Bucket LifecycleConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::Bucket LifecycleConfiguration
+<a name="aws-properties-s3outposts-bucket-lifecycleconfiguration"></a>
 
 The container for the lifecycle configuration for the objects stored in an S3 on Outposts bucket.
 
 ## Syntax
+<a name="aws-properties-s3outposts-bucket-lifecycleconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3outposts-bucket-lifecycleconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Rules" : [ Rule, ... ]
+  "[Rules](#cfn-s3outposts-bucket-lifecycleconfiguration-rules)" : {{[ Rule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3outposts-bucket-lifecycleconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Rules:
-    - Rule
-
+```
+  [Rules](#cfn-s3outposts-bucket-lifecycleconfiguration-rules): {{
+    - Rule}}
 ```
 
 ## Properties
+<a name="aws-properties-s3outposts-bucket-lifecycleconfiguration-properties"></a>
 
-`Rules`
-
+`Rules`  <a name="cfn-s3outposts-bucket-lifecycleconfiguration-rules"></a>
 The container for the lifecycle configuration rules for the objects stored in the S3 on Outposts bucket.
-
-_Required_: Yes
-
-_Type_: Array of [Rule](aws-properties-s3outposts-bucket-rule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterTag
-
-Rule
+*Required*: Yes
+*Type*: Array of [Rule](aws-properties-s3outposts-bucket-rule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

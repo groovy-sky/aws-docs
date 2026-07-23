@@ -2,105 +2,99 @@
 title: "AWS::ApiGateway::Resource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::Resource
+<a name="aws-resource-apigateway-resource"></a>
 
 The `AWS::ApiGateway::Resource` resource creates a resource in an API.
 
 ## Syntax
+<a name="aws-resource-apigateway-resource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-resource-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::Resource",
   "Properties" : {
-      "ParentId" : String,
-      "PathPart" : String,
-      "RestApiId" : String
+      "[ParentId](#cfn-apigateway-resource-parentid)" : {{String}},
+      "[PathPart](#cfn-apigateway-resource-pathpart)" : {{String}},
+      "[RestApiId](#cfn-apigateway-resource-restapiid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-resource-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::Resource
 Properties:
-  ParentId: String
-  PathPart: String
-  RestApiId: String
-
+  [ParentId](#cfn-apigateway-resource-parentid): {{String}}
+  [PathPart](#cfn-apigateway-resource-pathpart): {{String}}
+  [RestApiId](#cfn-apigateway-resource-restapiid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-resource-properties"></a>
 
-`ParentId`
-
+`ParentId`  <a name="cfn-apigateway-resource-parentid"></a>
 The parent resource's identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PathPart`
-
+`PathPart`  <a name="cfn-apigateway-resource-pathpart"></a>
 The last path segment for this resource.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-apigateway-resource-restapiid"></a>
 The string identifier of the associated RestApi.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-apigateway-resource-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigateway-resource-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource ID, such as `abc123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigateway-resource-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ResourceId`
+####
+<a name="aws-resource-apigateway-resource-return-values-fn--getatt-fn--getatt"></a>
 
+`ResourceId`  <a name="ResourceId-fn::getatt"></a>
 The ID for the resource. For example: `abc123`.
 
 ## Examples
+<a name="aws-resource-apigateway-resource--examples"></a>
 
 ### Create resource
+<a name="aws-resource-apigateway-resource--examples--Create_resource"></a>
 
 The following example creates a `stack` resource for the `MyApi` API.
 
 #### JSON
+<a name="aws-resource-apigateway-resource--examples--Create_resource--json"></a>
 
-```json
-
+```
 {
     "Stack": {
         "Type": "AWS::ApiGateway::Resource",
@@ -121,9 +115,9 @@ The following example creates a `stack` resource for the `MyApi` API.
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-resource--examples--Create_resource--yaml"></a>
 
-```yaml
-
+```
 Stack:
   Type: 'AWS::ApiGateway::Resource'
   Properties:
@@ -132,17 +126,10 @@ Stack:
       - MyApi
       - RootResourceId
     PathPart: stack
-
 ```
 
 ## See also
-
-- [resource:create](../../../apigateway/latest/api/api-createresource.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGateway::RequestValidator
-
-AWS::ApiGateway::RestApi
+<a name="aws-resource-apigateway-resource--seealso"></a>
++ [resource:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateResource.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

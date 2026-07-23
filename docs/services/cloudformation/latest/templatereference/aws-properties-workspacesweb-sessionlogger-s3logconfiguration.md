@@ -2,118 +2,82 @@
 title: "AWS::WorkSpacesWeb::SessionLogger S3LogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::SessionLogger S3LogConfiguration
+<a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration"></a>
 
 The S3 log configuration.
 
 ## Syntax
+<a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "BucketOwner" : String,
-  "FolderStructure" : String,
-  "KeyPrefix" : String,
-  "LogFileFormat" : String
+  "[Bucket](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucket)" : {{String}},
+  "[BucketOwner](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucketowner)" : {{String}},
+  "[FolderStructure](#cfn-workspacesweb-sessionlogger-s3logconfiguration-folderstructure)" : {{String}},
+  "[KeyPrefix](#cfn-workspacesweb-sessionlogger-s3logconfiguration-keyprefix)" : {{String}},
+  "[LogFileFormat](#cfn-workspacesweb-sessionlogger-s3logconfiguration-logfileformat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  BucketOwner: String
-  FolderStructure: String
-  KeyPrefix: String
-  LogFileFormat: String
-
+```
+  [Bucket](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucket): {{String}}
+  [BucketOwner](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucketowner): {{String}}
+  [FolderStructure](#cfn-workspacesweb-sessionlogger-s3logconfiguration-folderstructure): {{String}}
+  [KeyPrefix](#cfn-workspacesweb-sessionlogger-s3logconfiguration-keyprefix): {{String}}
+  [LogFileFormat](#cfn-workspacesweb-sessionlogger-s3logconfiguration-logfileformat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-workspacesweb-sessionlogger-s3logconfiguration-bucket"></a>
 The S3 bucket name where logs are delivered.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketOwner`
-
+`BucketOwner`  <a name="cfn-workspacesweb-sessionlogger-s3logconfiguration-bucketowner"></a>
 The expected bucket owner of the target S3 bucket. The caller must have permissions to write to the target bucket.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FolderStructure`
-
+`FolderStructure`  <a name="cfn-workspacesweb-sessionlogger-s3logconfiguration-folderstructure"></a>
 The folder structure that defines the organizational structure for log files in S3.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Flat | NestedByDate`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Flat | NestedByDate`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyPrefix`
-
+`KeyPrefix`  <a name="cfn-workspacesweb-sessionlogger-s3logconfiguration-keyprefix"></a>
 The S3 path prefix that determines where log files are stored.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\d\w\-_/!().*']+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\d\w\-_/!().*']+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogFileFormat`
-
+`LogFileFormat`  <a name="cfn-workspacesweb-sessionlogger-s3logconfiguration-logfileformat"></a>
 The format of the LogFile that is written to S3.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `JSONLines | Json`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogConfiguration
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `JSONLines | Json`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

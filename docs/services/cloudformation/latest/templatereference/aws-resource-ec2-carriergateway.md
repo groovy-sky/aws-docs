@@ -2,102 +2,87 @@
 title: "AWS::EC2::CarrierGateway"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::CarrierGateway
+<a name="aws-resource-ec2-carriergateway"></a>
 
-Creates a carrier gateway. For more information about carrier gateways, see [Carrier gateways](../../../wavelength/latest/developerguide/how-wavelengths-work.md#wavelength-carrier-gateway) in the _AWS Wavelength Developer Guide_.
+Creates a carrier gateway. For more information about carrier gateways, see [Carrier gateways](https://docs.aws.amazon.com/wavelength/latest/developerguide/how-wavelengths-work.html#wavelength-carrier-gateway) in the *AWS Wavelength Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-carriergateway-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-carriergateway-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::CarrierGateway",
   "Properties" : {
-      "Tags" : [ Tag, ... ],
-      "VpcId" : String
+      "[Tags](#cfn-ec2-carriergateway-tags)" : {{[ Tag, ... ]}},
+      "[VpcId](#cfn-ec2-carriergateway-vpcid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-carriergateway-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::CarrierGateway
 Properties:
-  Tags:
-    - Tag
-  VpcId: String
-
+  [Tags](#cfn-ec2-carriergateway-tags): {{
+    - Tag}}
+  [VpcId](#cfn-ec2-carriergateway-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-carriergateway-properties"></a>
 
-`Tags`
-
+`Tags`  <a name="cfn-ec2-carriergateway-tags"></a>
 The tags assigned to the carrier gateway.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-carriergateway-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-carriergateway-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`VpcId`  <a name="cfn-ec2-carriergateway-vpcid"></a>
 The ID of the VPC associated with the carrier gateway.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-carriergateway-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-carriergateway-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the carrier gateway ID. For example:
-`cagw-05a8da9a199afb1c7`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the carrier gateway ID. For example: `cagw-05a8da9a199afb1c7`.
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-carriergateway-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CarrierGatewayId`
+####
+<a name="aws-resource-ec2-carriergateway-return-values-fn--getatt-fn--getatt"></a>
 
+`CarrierGatewayId`  <a name="CarrierGatewayId-fn::getatt"></a>
 The ID of the carrier gateway.
 
-`OwnerId`
-
+`OwnerId`  <a name="OwnerId-fn::getatt"></a>
 The AWS account ID of the owner of the carrier gateway.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the carrier gateway.
 
 ## See also
-
-- [Carrier gateways](../../../vpc/latest/userguide/carrier-gateway.md) in _Amazon VPC User Guide_
-
-- [CreateCarrierGateway](../../../../reference/awsec2/latest/apireference/api-createcarriergateway.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TagSpecification
-
-Tag
+<a name="aws-resource-ec2-carriergateway--seealso"></a>
++ [Carrier gateways](https://docs.aws.amazon.com/vpc/latest/userguide/Carrier_Gateway.html) in *Amazon VPC User Guide*
++ [CreateCarrierGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCarrierGateway.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

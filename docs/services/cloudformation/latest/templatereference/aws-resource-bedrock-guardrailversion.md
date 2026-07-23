@@ -2,108 +2,89 @@
 title: "AWS::Bedrock::GuardrailVersion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::GuardrailVersion
+<a name="aws-resource-bedrock-guardrailversion"></a>
 
-Creates a version of the guardrail. Use this API to create a snapshot of the
-guardrail when you are satisfied with a configuration, or to compare the configuration with another version.
+Creates a version of the guardrail. Use this API to create a snapshot of the guardrail when you are satisfied with a configuration, or to compare the configuration with another version.
 
 ## Syntax
+<a name="aws-resource-bedrock-guardrailversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-guardrailversion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::GuardrailVersion",
   "Properties" : {
-      "Description" : String,
-      "GuardrailIdentifier" : String
+      "[Description](#cfn-bedrock-guardrailversion-description)" : {{String}},
+      "[GuardrailIdentifier](#cfn-bedrock-guardrailversion-guardrailidentifier)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-guardrailversion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::GuardrailVersion
 Properties:
-  Description: String
-  GuardrailIdentifier: String
-
+  [Description](#cfn-bedrock-guardrailversion-description): {{String}}
+  [GuardrailIdentifier](#cfn-bedrock-guardrailversion-guardrailidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-guardrailversion-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrock-guardrailversion-description"></a>
 A description of the guardrail version.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GuardrailIdentifier`
-
+`GuardrailIdentifier`  <a name="cfn-bedrock-guardrailversion-guardrailidentifier"></a>
 The unique identifier of the guardrail. This can be an ID or the ARN.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(([a-z0-9]+)|(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:guardrail/[a-z0-9]+))$`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(([a-z0-9]+)|(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:guardrail/[a-z0-9]+))$`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-bedrock-guardrailversion-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-guardrailversion-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the guardrail ID and version, separated by a pipe
-( `|`) in the format ( `guardrail-id|guardrail-version`).
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the guardrail ID and version, separated by a pipe (`|`) in the format (`guardrail-id|guardrail-version`).
 
-For example, `{ "Ref": "myGuardrailVersion" }` would return the value
-`"3mzzryddufkp|2"`.
+For example, `{ "Ref": "myGuardrailVersion" }` would return the value `"3mzzryddufkp|2"`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-guardrailversion-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`GuardrailArn`
+####
+<a name="aws-resource-bedrock-guardrailversion-return-values-fn--getatt-fn--getatt"></a>
 
+`GuardrailArn`  <a name="GuardrailArn-fn::getatt"></a>
 The ARN of the guardrail.
 
-`GuardrailId`
-
+`GuardrailId`  <a name="GuardrailId-fn::getatt"></a>
 The unique identifier of the guardrail.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The version of the guardrail.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordPolicyConfig
-
-AWS::Bedrock::IntelligentPromptRouter
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,46 @@
 title: "AWS::VoiceID::Domain ServerSideEncryptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VoiceID::Domain ServerSideEncryptionConfiguration
+<a name="aws-properties-voiceid-domain-serversideencryptionconfiguration"></a>
 
-###### Important
+**Important**
+End of support notice: On May 20, 2026, AWS will end support for Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [ Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
-End of support notice: On May 20, 2026, AWS will end support for
-Amazon Connect Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect
-console, access Voice ID features on the Amazon Connect admin website or Contact Control Panel, or access
-Voice ID resources. For more information, visit
-[Amazon Connect Voice ID end of support](../../../connect/latest/adminguide/amazonconnect-voiceid-end-of-support.md).
-
-The configuration containing information about the customer managed key used for
-encrypting customer data.
+The configuration containing information about the customer managed key used for encrypting customer data.
 
 ## Syntax
+<a name="aws-properties-voiceid-domain-serversideencryptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-voiceid-domain-serversideencryptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String
+  "[KmsKeyId](#cfn-voiceid-domain-serversideencryptionconfiguration-kmskeyid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-voiceid-domain-serversideencryptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-
+```
+  [KmsKeyId](#cfn-voiceid-domain-serversideencryptionconfiguration-kmskeyid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-voiceid-domain-serversideencryptionconfiguration-properties"></a>
 
-`KmsKeyId`
-
-The identifier of the KMS key to use to encrypt data stored by
-Voice ID. Voice ID doesn't support asymmetric customer managed keys.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VoiceID::Domain
-
-Tag
+`KmsKeyId`  <a name="cfn-voiceid-domain-serversideencryptionconfiguration-kmskeyid"></a>
+The identifier of the KMS key to use to encrypt data stored by Voice ID. Voice ID doesn't support asymmetric customer managed keys.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

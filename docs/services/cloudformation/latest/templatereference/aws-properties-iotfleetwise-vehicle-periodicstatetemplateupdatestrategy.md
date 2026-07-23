@@ -2,53 +2,42 @@
 title: "AWS::IoTFleetWise::Vehicle PeriodicStateTemplateUpdateStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Vehicle PeriodicStateTemplateUpdateStrategy
+<a name="aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy"></a>
 
 Vehicles associated with the state template will stream telemetry data during a specified time period.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "StateTemplateUpdateRate" : TimePeriod
+  "[StateTemplateUpdateRate](#cfn-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-statetemplateupdaterate)" : {{TimePeriod}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-syntax.yaml"></a>
 
-```yaml
-
-  StateTemplateUpdateRate:
-    TimePeriod
-
+```
+  [StateTemplateUpdateRate](#cfn-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-statetemplateupdaterate): {{
+    TimePeriod}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-properties"></a>
 
-`StateTemplateUpdateRate`
-
+`StateTemplateUpdateRate`  <a name="cfn-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy-statetemplateupdaterate"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [TimePeriod](aws-properties-iotfleetwise-vehicle-timeperiod.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTFleetWise::Vehicle
-
-StateTemplateAssociation
+*Required*: Yes
+*Type*: [TimePeriod](aws-properties-iotfleetwise-vehicle-timeperiod.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

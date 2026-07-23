@@ -2,75 +2,53 @@
 title: "AWS::Cognito::UserPool StringAttributeConstraints"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPool StringAttributeConstraints
+<a name="aws-properties-cognito-userpool-stringattributeconstraints"></a>
 
-The minimum and maximum length values of an attribute that is of the string type, for
-example `custom:department`.
+The minimum and maximum length values of an attribute that is of the string type, for example `custom:department`.
 
 ## Syntax
+<a name="aws-properties-cognito-userpool-stringattributeconstraints-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpool-stringattributeconstraints-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxLength" : String,
-  "MinLength" : String
+  "[MaxLength](#cfn-cognito-userpool-stringattributeconstraints-maxlength)" : {{String}},
+  "[MinLength](#cfn-cognito-userpool-stringattributeconstraints-minlength)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpool-stringattributeconstraints-syntax.yaml"></a>
 
-```yaml
-
-  MaxLength: String
-  MinLength: String
-
+```
+  [MaxLength](#cfn-cognito-userpool-stringattributeconstraints-maxlength): {{String}}
+  [MinLength](#cfn-cognito-userpool-stringattributeconstraints-minlength): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpool-stringattributeconstraints-properties"></a>
 
-`MaxLength`
+`MaxLength`  <a name="cfn-cognito-userpool-stringattributeconstraints-maxlength"></a>
+The maximum length of a string attribute value. Must be a number less than or equal to `2^1023`, represented as a string with a length of 131072 characters or fewer.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `131072`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The maximum length of a string attribute value. Must be a number less than or equal to
-`2^1023`, represented as a string with a length of 131072 characters or
-fewer.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `131072`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinLength`
-
+`MinLength`  <a name="cfn-cognito-userpool-stringattributeconstraints-minlength"></a>
 The minimum length of a string attribute value.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `131072`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SmsConfiguration
-
-UserAttributeUpdateSettings
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `131072`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

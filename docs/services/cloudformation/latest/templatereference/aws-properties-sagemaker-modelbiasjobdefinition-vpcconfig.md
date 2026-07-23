@@ -2,80 +2,55 @@
 title: "AWS::SageMaker::ModelBiasJobDefinition VpcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelBiasJobDefinition VpcConfig
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-vpcconfig"></a>
 
-Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources
-have access to. You can control access to and from your resources by configuring a VPC. For more information, see
-[Give SageMaker Access to\
-Resources in your Amazon VPC](../../../sagemaker/latest/dg/infrastructure-give-access.md).
+Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC. For more information, see [Give SageMaker Access to Resources in your Amazon VPC](https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-vpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-vpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "Subnets" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-sagemaker-modelbiasjobdefinition-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
+  "[Subnets](#cfn-sagemaker-modelbiasjobdefinition-vpcconfig-subnets)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-vpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  Subnets:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-sagemaker-modelbiasjobdefinition-vpcconfig-securitygroupids): {{
+    - String}}
+  [Subnets](#cfn-sagemaker-modelbiasjobdefinition-vpcconfig-subnets): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-vpcconfig-properties"></a>
 
-`SecurityGroupIds`
+`SecurityGroupIds`  <a name="cfn-sagemaker-modelbiasjobdefinition-vpcconfig-securitygroupids"></a>
+The VPC security group IDs, in the form `sg-xxxxxxxx`. Specify the security groups for the VPC that is specified in the `Subnets` field.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `32 | 5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The VPC security group IDs, in the form `sg-xxxxxxxx`. Specify the security
-groups for the VPC that is specified in the `Subnets` field.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `32 | 5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Subnets`
-
-The ID of the subnets in the VPC to which you want to connect your training job or
-model. For information about the availability of specific instance types, see [Supported\
-Instance Types and Availability Zones](../../../sagemaker/latest/dg/instance-types-az.md).
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `32 | 16`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SageMaker::ModelCard
+`Subnets`  <a name="cfn-sagemaker-modelbiasjobdefinition-vpcconfig-subnets"></a>
+The ID of the subnets in the VPC to which you want to connect your training job or model. For information about the availability of specific instance types, see [Supported Instance Types and Availability Zones](https://docs.aws.amazon.com/sagemaker/latest/dg/instance-types-az.html).
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `32 | 16`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

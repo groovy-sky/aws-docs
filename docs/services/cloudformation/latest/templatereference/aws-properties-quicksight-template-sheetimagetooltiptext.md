@@ -2,56 +2,43 @@
 title: "AWS::QuickSight::Template SheetImageTooltipText"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SheetImageTooltipText
+<a name="aws-properties-quicksight-template-sheetimagetooltiptext"></a>
 
 The text that appears in the sheet image tooltip.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sheetimagetooltiptext-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sheetimagetooltiptext-syntax.json"></a>
 
-```json
-
+```
 {
-  "PlainText" : String
+  "[PlainText](#cfn-quicksight-template-sheetimagetooltiptext-plaintext)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sheetimagetooltiptext-syntax.yaml"></a>
 
-```yaml
-
-  PlainText: String
-
+```
+  [PlainText](#cfn-quicksight-template-sheetimagetooltiptext-plaintext): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sheetimagetooltiptext-properties"></a>
 
-`PlainText`
-
+`PlainText`  <a name="cfn-quicksight-template-sheetimagetooltiptext-plaintext"></a>
 The plain text format.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetImageTooltipConfiguration
-
-SheetTextBox
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

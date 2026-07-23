@@ -2,68 +2,52 @@
 title: "AWS::Bedrock::Guardrail WordPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Guardrail WordPolicyConfig
+<a name="aws-properties-bedrock-guardrail-wordpolicyconfig"></a>
 
 Contains details about the word policy to configured for the guardrail.
 
 ## Syntax
+<a name="aws-properties-bedrock-guardrail-wordpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-guardrail-wordpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ManagedWordListsConfig" : [ ManagedWordsConfig, ... ],
-  "WordsConfig" : [ WordConfig, ... ]
+  "[ManagedWordListsConfig](#cfn-bedrock-guardrail-wordpolicyconfig-managedwordlistsconfig)" : {{[ ManagedWordsConfig, ... ]}},
+  "[WordsConfig](#cfn-bedrock-guardrail-wordpolicyconfig-wordsconfig)" : {{[ WordConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-guardrail-wordpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  ManagedWordListsConfig:
-    - ManagedWordsConfig
-  WordsConfig:
-    - WordConfig
-
+```
+  [ManagedWordListsConfig](#cfn-bedrock-guardrail-wordpolicyconfig-managedwordlistsconfig): {{
+    - ManagedWordsConfig}}
+  [WordsConfig](#cfn-bedrock-guardrail-wordpolicyconfig-wordsconfig): {{
+    - WordConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-guardrail-wordpolicyconfig-properties"></a>
 
-`ManagedWordListsConfig`
-
+`ManagedWordListsConfig`  <a name="cfn-bedrock-guardrail-wordpolicyconfig-managedwordlistsconfig"></a>
 A list of managed words to configure for the guardrail.
+*Required*: No
+*Type*: Array of [ManagedWordsConfig](aws-properties-bedrock-guardrail-managedwordsconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ManagedWordsConfig](aws-properties-bedrock-guardrail-managedwordsconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordsConfig`
-
+`WordsConfig`  <a name="cfn-bedrock-guardrail-wordpolicyconfig-wordsconfig"></a>
 A list of words to configure for the guardrail.
-
-_Required_: No
-
-_Type_: Array of [WordConfig](aws-properties-bedrock-guardrail-wordconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordConfig
-
-AWS::Bedrock::GuardrailVersion
+*Required*: No
+*Type*: Array of [WordConfig](aws-properties-bedrock-guardrail-wordconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

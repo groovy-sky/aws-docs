@@ -2,64 +2,49 @@
 title: "AWS::ResilienceHub::ResiliencyPolicy FailurePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResilienceHub::ResiliencyPolicy FailurePolicy
+<a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy"></a>
 
 Defines a failure policy.
 
 ## Syntax
+<a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "RpoInSecs" : Integer,
-  "RtoInSecs" : Integer
+  "[RpoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rpoinsecs)" : {{Integer}},
+  "[RtoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rtoinsecs)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy-syntax.yaml"></a>
 
-```yaml
-
-  RpoInSecs: Integer
-  RtoInSecs: Integer
-
+```
+  [RpoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rpoinsecs): {{Integer}}
+  [RtoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rtoinsecs): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy-properties"></a>
 
-`RpoInSecs`
-
+`RpoInSecs`  <a name="cfn-resiliencehub-resiliencypolicy-failurepolicy-rpoinsecs"></a>
 Recovery Point Objective (RPO) in seconds.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RtoInSecs`
-
+`RtoInSecs`  <a name="cfn-resiliencehub-resiliencypolicy-failurepolicy-rtoinsecs"></a>
 Recovery Time Objective (RTO) in seconds.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ResilienceHub::ResiliencyPolicy
-
-PolicyMap
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

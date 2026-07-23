@@ -2,85 +2,61 @@
 title: "AWS::ObservabilityAdmin::OrganizationTelemetryRule Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule Filter
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-filter"></a>
 
-A single filter condition that specifies behavior, requirement, and matching conditions
-for WAF log records.
+ A single filter condition that specifies behavior, requirement, and matching conditions for WAF log records.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Behavior" : String,
-  "Conditions" : [ Condition, ... ],
-  "Requirement" : String
+  "[Behavior](#cfn-observabilityadmin-organizationtelemetryrule-filter-behavior)" : {{String}},
+  "[Conditions](#cfn-observabilityadmin-organizationtelemetryrule-filter-conditions)" : {{[ Condition, ... ]}},
+  "[Requirement](#cfn-observabilityadmin-organizationtelemetryrule-filter-requirement)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-filter-syntax.yaml"></a>
 
-```yaml
-
-  Behavior: String
-  Conditions:
-    - Condition
-  Requirement: String
-
+```
+  [Behavior](#cfn-observabilityadmin-organizationtelemetryrule-filter-behavior): {{String}}
+  [Conditions](#cfn-observabilityadmin-organizationtelemetryrule-filter-conditions): {{
+    - Condition}}
+  [Requirement](#cfn-observabilityadmin-organizationtelemetryrule-filter-requirement): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-filter-properties"></a>
 
-`Behavior`
+`Behavior`  <a name="cfn-observabilityadmin-organizationtelemetryrule-filter-behavior"></a>
+ The action to take for log records matching this filter (KEEP or DROP).
+*Required*: No
+*Type*: String
+*Allowed values*: `KEEP | DROP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The action to take for log records matching this filter (KEEP or DROP).
+`Conditions`  <a name="cfn-observabilityadmin-organizationtelemetryrule-filter-conditions"></a>
+ The list of conditions that determine if a log record matches this filter.
+*Required*: No
+*Type*: Array of [Condition](aws-properties-observabilityadmin-organizationtelemetryrule-condition.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `KEEP | DROP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Conditions`
-
-The list of conditions that determine if a log record matches this filter.
-
-_Required_: No
-
-_Type_: Array of [Condition](aws-properties-observabilityadmin-organizationtelemetryrule-condition.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Requirement`
-
-Whether the log record must meet all conditions (MEETS\_ALL) or any condition (MEETS\_ANY)
-to match this filter.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MEETS_ALL | MEETS_ANY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldToMatch
-
-LabelNameCondition
+`Requirement`  <a name="cfn-observabilityadmin-organizationtelemetryrule-filter-requirement"></a>
+ Whether the log record must meet all conditions (MEETS\_ALL) or any condition (MEETS\_ANY) to match this filter.
+*Required*: No
+*Type*: String
+*Allowed values*: `MEETS_ALL | MEETS_ANY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

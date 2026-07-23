@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::DataAutomationProject AudioExtractionCategoryTypeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject AudioExtractionCategoryTypeConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration"></a>
 
 Allows configuration of extractions for different types of data, such as transcript and content moderation.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Transcript" : TranscriptConfiguration
+  "[Transcript](#cfn-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-transcript)" : {{TranscriptConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Transcript:
-    TranscriptConfiguration
-
+```
+  [Transcript](#cfn-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-transcript): {{
+    TranscriptConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-properties"></a>
 
-`Transcript`
-
+`Transcript`  <a name="cfn-bedrock-dataautomationproject-audioextractioncategorytypeconfiguration-transcript"></a>
 This element allows you to configure different extractions for your transcript data, such as speaker and channel labeling.
-
-_Required_: No
-
-_Type_: [TranscriptConfiguration](aws-properties-bedrock-dataautomationproject-transcriptconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AudioExtractionCategory
-
-AudioLanguageConfiguration
+*Required*: No
+*Type*: [TranscriptConfiguration](aws-properties-bedrock-dataautomationproject-transcriptconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

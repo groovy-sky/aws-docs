@@ -2,87 +2,63 @@
 title: "AWS::QuickSight::DataSet CreateColumnsOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet CreateColumnsOperation
+<a name="aws-properties-quicksight-dataset-createcolumnsoperation"></a>
 
-A transform operation that creates calculated columns. Columns created in one such
-operation form a lexical closure.
+A transform operation that creates calculated columns. Columns created in one such operation form a lexical closure.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-createcolumnsoperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-createcolumnsoperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Alias" : String,
-  "Columns" : [ CalculatedColumn, ... ],
-  "Source" : TransformOperationSource
+  "[Alias](#cfn-quicksight-dataset-createcolumnsoperation-alias)" : {{String}},
+  "[Columns](#cfn-quicksight-dataset-createcolumnsoperation-columns)" : {{[ CalculatedColumn, ... ]}},
+  "[Source](#cfn-quicksight-dataset-createcolumnsoperation-source)" : {{TransformOperationSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-createcolumnsoperation-syntax.yaml"></a>
 
-```yaml
-
-  Alias: String
-  Columns:
-    - CalculatedColumn
-  Source:
-    TransformOperationSource
-
+```
+  [Alias](#cfn-quicksight-dataset-createcolumnsoperation-alias): {{String}}
+  [Columns](#cfn-quicksight-dataset-createcolumnsoperation-columns): {{
+    - CalculatedColumn}}
+  [Source](#cfn-quicksight-dataset-createcolumnsoperation-source): {{
+    TransformOperationSource}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-createcolumnsoperation-properties"></a>
 
-`Alias`
-
+`Alias`  <a name="cfn-quicksight-dataset-createcolumnsoperation-alias"></a>
 Alias for this operation.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Columns`
-
+`Columns`  <a name="cfn-quicksight-dataset-createcolumnsoperation-columns"></a>
 Calculated columns to create.
+*Required*: Yes
+*Type*: Array of [CalculatedColumn](aws-properties-quicksight-dataset-calculatedcolumn.md)
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [CalculatedColumn](aws-properties-quicksight-dataset-calculatedcolumn.md)
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Source`
-
+`Source`  <a name="cfn-quicksight-dataset-createcolumnsoperation-source"></a>
 The source transform operation that provides input data for creating new calculated columns.
-
-_Required_: No
-
-_Type_: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnToUnpivot
-
-CustomSql
+*Required*: No
+*Type*: [TransformOperationSource](aws-properties-quicksight-dataset-transformoperationsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,74 +2,54 @@
 title: "AWS::Scheduler::Schedule SageMakerPipelineParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Scheduler::Schedule SageMakerPipelineParameter
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameter"></a>
 
 The name and value pair of a parameter to use to start execution of a SageMaker Model Building Pipeline.
 
 ## Syntax
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-scheduler-schedule-sagemakerpipelineparameter-name)" : {{String}},
+  "[Value](#cfn-scheduler-schedule-sagemakerpipelineparameter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameter-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-scheduler-schedule-sagemakerpipelineparameter-name): {{String}}
+  [Value](#cfn-scheduler-schedule-sagemakerpipelineparameter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-scheduler-schedule-sagemakerpipelineparameter-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-scheduler-schedule-sagemakerpipelineparameter-name"></a>
 Name of parameter to start execution of a SageMaker Model Building Pipeline.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9\-_]*$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9\-_]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-scheduler-schedule-sagemakerpipelineparameter-value"></a>
 Value of parameter to start execution of a SageMaker Model Building Pipeline.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RetryPolicy
-
-SageMakerPipelineParameters
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

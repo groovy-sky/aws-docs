@@ -2,192 +2,141 @@
 title: "AWS::AppConfig::Extension"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppConfig::Extension
+<a name="aws-resource-appconfig-extension"></a>
 
-Creates an AWS AppConfig extension. An extension augments your ability to inject
-logic or behavior at different points during the AWS AppConfig workflow of creating
-or deploying a configuration.
+Creates an AWS AppConfig extension. An extension augments your ability to inject logic or behavior at different points during the AWS AppConfig workflow of creating or deploying a configuration.
 
-You can create your own extensions or use the AWS authored extensions provided by
-AWS AppConfig. For an AWS AppConfig extension that uses AWS Lambda, you must create a Lambda function to perform any computation and processing
-defined in the extension. If you plan to create custom versions of the AWS
-authored notification extensions, you only need to specify an Amazon Resource Name (ARN) in
-the `Uri` field for the new extension version.
+You can create your own extensions or use the AWS authored extensions provided by AWS AppConfig. For an AWS AppConfig extension that uses AWS Lambda, you must create a Lambda function to perform any computation and processing defined in the extension. If you plan to create custom versions of the AWS authored notification extensions, you only need to specify an Amazon Resource Name (ARN) in the `Uri` field for the new extension version.
++ For a custom EventBridge notification extension, enter the ARN of the EventBridge default events in the `Uri` field.
++ For a custom Amazon SNS notification extension, enter the ARN of an Amazon SNS topic in the `Uri` field.
++ For a custom Amazon SQS notification extension, enter the ARN of an Amazon SQS message queue in the `Uri` field.
 
-- For a custom EventBridge notification extension, enter the ARN of the EventBridge
-default events in the `Uri` field.
-
-- For a custom Amazon SNS notification extension, enter the ARN of an Amazon SNS
-topic in the `Uri` field.
-
-- For a custom Amazon SQS notification extension, enter the ARN of an Amazon SQS
-message queue in the `Uri` field.
-
-For more information about extensions, see [Extending\
-workflows](../../../appconfig/latest/userguide/working-with-appconfig-extensions.md) in the _AWS AppConfig User Guide_.
+For more information about extensions, see [Extending workflows](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions.html) in the *AWS AppConfig User Guide*.
 
 ## Syntax
+<a name="aws-resource-appconfig-extension-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appconfig-extension-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppConfig::Extension",
   "Properties" : {
-      "Actions" : [ Action, ... ],
-      "Description" : String,
-      "LatestVersionNumber" : Integer,
-      "Name" : String,
-      "Parameters" : {Key: Value, ...},
-      "Tags" : [ Tag, ... ]
+      "[Actions](#cfn-appconfig-extension-actions)" : {{[ Action, ... ]}},
+      "[Description](#cfn-appconfig-extension-description)" : {{String}},
+      "[LatestVersionNumber](#cfn-appconfig-extension-latestversionnumber)" : {{Integer}},
+      "[Name](#cfn-appconfig-extension-name)" : {{String}},
+      "[Parameters](#cfn-appconfig-extension-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[Tags](#cfn-appconfig-extension-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appconfig-extension-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppConfig::Extension
 Properties:
-  Actions:
-    - Action
-  Description: String
-  LatestVersionNumber: Integer
-  Name: String
-  Parameters:
-    Key: Value
-  Tags:
-    - Tag
-
+  [Actions](#cfn-appconfig-extension-actions): {{
+    - Action}}
+  [Description](#cfn-appconfig-extension-description): {{String}}
+  [LatestVersionNumber](#cfn-appconfig-extension-latestversionnumber): {{Integer}}
+  [Name](#cfn-appconfig-extension-name): {{String}}
+  [Parameters](#cfn-appconfig-extension-parameters): {{
+    {{Key}}: {{Value}}}}
+  [Tags](#cfn-appconfig-extension-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-appconfig-extension-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-appconfig-extension-actions"></a>
 The actions defined in the extension.
+*Required*: Yes
+*Type*: Array of [Action](aws-properties-appconfig-extension-action.md)
+*Pattern*: `^.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Action](aws-properties-appconfig-extension-action.md)
-
-_Pattern_: `^.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-appconfig-extension-description"></a>
 Information about the extension.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LatestVersionNumber`  <a name="cfn-appconfig-extension-latestversionnumber"></a>
+You can omit this field when you create an extension. When you create a new version, specify the most recent current version number. For example, you create version 3, enter 2 for this field.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Name`  <a name="cfn-appconfig-extension-name"></a>
+A name for the extension. Each extension name in your account must be unique. Extension versions use the same name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^\/#:\n]{1,64}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `0`
+`Parameters`  <a name="cfn-appconfig-extension-parameters"></a>
+The parameters accepted by the extension. You specify parameter values when you associate the extension to an AWS AppConfig resource by using the `CreateExtensionAssociation` API action. For AWS Lambda extension actions, these parameters are included in the Lambda request object.
+*Required*: No
+*Type*: Object of [Parameter](aws-properties-appconfig-extension-parameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LatestVersionNumber`
-
-You can omit this field when you create an extension. When you create a new version,
-specify the most recent current version number. For example, you create version 3, enter 2
-for this field.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-A name for the extension. Each extension name in your account must be unique. Extension
-versions use the same name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^\/#:\n]{1,64}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Parameters`
-
-The parameters accepted by the extension. You specify parameter values when you
-associate the extension to an AWS AppConfig resource by using the
-`CreateExtensionAssociation` API action. For AWS Lambda extension
-actions, these parameters are included in the Lambda request object.
-
-_Required_: No
-
-_Type_: Object of [Parameter](aws-properties-appconfig-extension-parameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Adds one or more tags for the specified extension. Tags are metadata that help you
-categorize resources in different ways, for example, by purpose, owner, or environment.
-Each tag consists of a key and an optional value, both of which you define.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appconfig-extension-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-appconfig-extension-tags"></a>
+Adds one or more tags for the specified extension. Tags are metadata that help you categorize resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appconfig-extension-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appconfig-extension-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appconfig-extension-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns information about the extension.
 
 ### Fn::GetAtt
+<a name="aws-resource-appconfig-extension-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-appconfig-extension-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The system-generated Amazon Resource Name (ARN) for the extension.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The system-generated ID of the extension.
 
-`VersionNumber`
-
+`VersionNumber`  <a name="VersionNumber-fn::getatt"></a>
 The extension version number.
 
 ## Examples
+<a name="aws-resource-appconfig-extension--examples"></a>
 
 ### AWS AppConfig create extension example
+<a name="aws-resource-appconfig-extension--examples--create_extension_example"></a>
 
-An extension augments your ability to inject logic or behavior at different points
-during the AWS AppConfig workflow of creating or deploying a configuration. You
-can create your own extensions or use the AWS authored extensions
-provided by AWS AppConfig. The following extension performs an action using
-AWS Lambda (as defined by the `Uri` field) before a
-configuration version is created by AWS AppConfig (as defined by the
-`PRE_CREATE_HOSTED_CONFIGURATION_VERSION` action point).
+An extension augments your ability to inject logic or behavior at different points during the AWS AppConfig workflow of creating or deploying a configuration. You can create your own extensions or use the AWS authored extensions provided by AWS AppConfig. The following extension performs an action using AWS Lambda (as defined by the `Uri` field) before a configuration version is created by AWS AppConfig (as defined by the `PRE_CREATE_HOSTED_CONFIGURATION_VERSION` action point).
 
 #### JSON
+<a name="aws-resource-appconfig-extension--examples--create_extension_example--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "BasicExtension": {
@@ -225,9 +174,9 @@ configuration version is created by AWS AppConfig (as defined by the
 ```
 
 #### YAML
+<a name="aws-resource-appconfig-extension--examples--create_extension_example--yaml"></a>
 
-```yaml
-
+```
 Resources:
   BasicExtension:
     Type: AWS::AppConfig::Extension
@@ -251,16 +200,8 @@ Resources:
 ```
 
 ## See also
-
-- [AWS AppConfig](../../../appconfig/latest/userguide/what-is-appconfig.md)
-
-- [Working with\
-AWS AppConfig extensions](../../../appconfig/latest/userguide/working-with-appconfig-extensions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Action
+<a name="aws-resource-appconfig-extension--seealso"></a>
++  [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)
++  [Working with AWS AppConfig extensions](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions.html)
 
 All content copied from https://docs.aws.amazon.com/.

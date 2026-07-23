@@ -2,76 +2,53 @@
 title: "AWS::NetworkFirewall::TLSInspectionConfiguration PortRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::TLSInspectionConfiguration PortRange
+<a name="aws-properties-networkfirewall-tlsinspectionconfiguration-portrange"></a>
 
-A single port range specification. This is used for source and destination port ranges
-in the stateless rule [MatchAttributes](../userguide/aws-properties-networkfirewall-rulegroup-matchattributes.md), `SourcePorts`, and
-`DestinationPorts` settings.
+A single port range specification. This is used for source and destination port ranges in the stateless rule [MatchAttributes](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkfirewall-rulegroup-matchattributes.html), `SourcePorts`, and `DestinationPorts` settings.
 
 ## Syntax
+<a name="aws-properties-networkfirewall-tlsinspectionconfiguration-portrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkfirewall-tlsinspectionconfiguration-portrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "FromPort" : Integer,
-  "ToPort" : Integer
+  "[FromPort](#cfn-networkfirewall-tlsinspectionconfiguration-portrange-fromport)" : {{Integer}},
+  "[ToPort](#cfn-networkfirewall-tlsinspectionconfiguration-portrange-toport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkfirewall-tlsinspectionconfiguration-portrange-syntax.yaml"></a>
 
-```yaml
-
-  FromPort: Integer
-  ToPort: Integer
-
+```
+  [FromPort](#cfn-networkfirewall-tlsinspectionconfiguration-portrange-fromport): {{Integer}}
+  [ToPort](#cfn-networkfirewall-tlsinspectionconfiguration-portrange-toport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-networkfirewall-tlsinspectionconfiguration-portrange-properties"></a>
 
-`FromPort`
+`FromPort`  <a name="cfn-networkfirewall-tlsinspectionconfiguration-portrange-fromport"></a>
+The lower limit of the port range. This must be less than or equal to the `ToPort` specification.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The lower limit of the port range. This must be less than or equal to the
-`ToPort` specification.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToPort`
-
-The upper limit of the port range. This must be greater than or equal to the
-`FromPort` specification.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CheckCertificateRevocationStatus
-
-ServerCertificate
+`ToPort`  <a name="cfn-networkfirewall-tlsinspectionconfiguration-portrange-toport"></a>
+The upper limit of the port range. This must be greater than or equal to the `FromPort` specification.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

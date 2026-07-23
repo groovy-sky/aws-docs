@@ -2,54 +2,42 @@
 title: "AWS::IoT::MitigationAction ReplaceDefaultPolicyVersionParams"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::MitigationAction ReplaceDefaultPolicyVersionParams
+<a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams"></a>
 
 Parameters to define a mitigation action that adds a blank policy to restrict permissions.
 
 ## Syntax
+<a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams-syntax.json"></a>
 
-```json
-
+```
 {
-  "TemplateName" : String
+  "[TemplateName](#cfn-iot-mitigationaction-replacedefaultpolicyversionparams-templatename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams-syntax.yaml"></a>
 
-```yaml
-
-  TemplateName: String
-
+```
+  [TemplateName](#cfn-iot-mitigationaction-replacedefaultpolicyversionparams-templatename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams-properties"></a>
 
-`TemplateName`
-
+`TemplateName`  <a name="cfn-iot-mitigationaction-replacedefaultpolicyversionparams-templatename"></a>
 The name of the template to be applied. The only supported value is `BLANK_POLICY`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `BLANK_POLICY | UNSET_VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PublishFindingToSnsParams
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `BLANK_POLICY | UNSET_VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,70 +2,53 @@
 title: "AWS::InspectorV2::CisScanConfiguration WeeklySchedule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CisScanConfiguration WeeklySchedule
+<a name="aws-properties-inspectorv2-cisscanconfiguration-weeklyschedule"></a>
 
 A weekly schedule.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-cisscanconfiguration-weeklyschedule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-cisscanconfiguration-weeklyschedule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Days" : [ String, ... ],
-  "StartTime" : Time
+  "[Days](#cfn-inspectorv2-cisscanconfiguration-weeklyschedule-days)" : {{[ String, ... ]}},
+  "[StartTime](#cfn-inspectorv2-cisscanconfiguration-weeklyschedule-starttime)" : {{Time}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-cisscanconfiguration-weeklyschedule-syntax.yaml"></a>
 
-```yaml
-
-  Days:
-    - String
-  StartTime:
-    Time
-
+```
+  [Days](#cfn-inspectorv2-cisscanconfiguration-weeklyschedule-days): {{
+    - String}}
+  [StartTime](#cfn-inspectorv2-cisscanconfiguration-weeklyschedule-starttime): {{
+    Time}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-cisscanconfiguration-weeklyschedule-properties"></a>
 
-`Days`
-
+`Days`  <a name="cfn-inspectorv2-cisscanconfiguration-weeklyschedule-days"></a>
 The weekly schedule's days.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `7`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `7`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
+`StartTime`  <a name="cfn-inspectorv2-cisscanconfiguration-weeklyschedule-starttime"></a>
 The weekly schedule's start time.
-
-_Required_: Yes
-
-_Type_: [Time](aws-properties-inspectorv2-cisscanconfiguration-time.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Time
-
-AWS::InspectorV2::CodeSecurityIntegration
+*Required*: Yes
+*Type*: [Time](aws-properties-inspectorv2-cisscanconfiguration-time.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

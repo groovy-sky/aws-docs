@@ -2,205 +2,137 @@
 title: "AWS::QuickSight::Topic TopicFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicFilter
+<a name="aws-properties-quicksight-topic-topicfilter"></a>
 
 A structure that represents a filter used to select items for a topic.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-topicfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-topicfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryFilter" : TopicCategoryFilter,
-  "DateRangeFilter" : TopicDateRangeFilter,
-  "FilterClass" : String,
-  "FilterDescription" : String,
-  "FilterName" : String,
-  "FilterSynonyms" : [ String, ... ],
-  "FilterType" : String,
-  "NumericEqualityFilter" : TopicNumericEqualityFilter,
-  "NumericRangeFilter" : TopicNumericRangeFilter,
-  "OperandFieldName" : String,
-  "RelativeDateFilter" : TopicRelativeDateFilter
+  "[CategoryFilter](#cfn-quicksight-topic-topicfilter-categoryfilter)" : {{TopicCategoryFilter}},
+  "[DateRangeFilter](#cfn-quicksight-topic-topicfilter-daterangefilter)" : {{TopicDateRangeFilter}},
+  "[FilterClass](#cfn-quicksight-topic-topicfilter-filterclass)" : {{String}},
+  "[FilterDescription](#cfn-quicksight-topic-topicfilter-filterdescription)" : {{String}},
+  "[FilterName](#cfn-quicksight-topic-topicfilter-filtername)" : {{String}},
+  "[FilterSynonyms](#cfn-quicksight-topic-topicfilter-filtersynonyms)" : {{[ String, ... ]}},
+  "[FilterType](#cfn-quicksight-topic-topicfilter-filtertype)" : {{String}},
+  "[NumericEqualityFilter](#cfn-quicksight-topic-topicfilter-numericequalityfilter)" : {{TopicNumericEqualityFilter}},
+  "[NumericRangeFilter](#cfn-quicksight-topic-topicfilter-numericrangefilter)" : {{TopicNumericRangeFilter}},
+  "[OperandFieldName](#cfn-quicksight-topic-topicfilter-operandfieldname)" : {{String}},
+  "[RelativeDateFilter](#cfn-quicksight-topic-topicfilter-relativedatefilter)" : {{TopicRelativeDateFilter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-topicfilter-syntax.yaml"></a>
 
-```yaml
-
-  CategoryFilter:
-    TopicCategoryFilter
-  DateRangeFilter:
-    TopicDateRangeFilter
-  FilterClass: String
-  FilterDescription: String
-  FilterName: String
-  FilterSynonyms:
-    - String
-  FilterType: String
-  NumericEqualityFilter:
-    TopicNumericEqualityFilter
-  NumericRangeFilter:
-    TopicNumericRangeFilter
-  OperandFieldName: String
-  RelativeDateFilter:
-    TopicRelativeDateFilter
-
+```
+  [CategoryFilter](#cfn-quicksight-topic-topicfilter-categoryfilter): {{
+    TopicCategoryFilter}}
+  [DateRangeFilter](#cfn-quicksight-topic-topicfilter-daterangefilter): {{
+    TopicDateRangeFilter}}
+  [FilterClass](#cfn-quicksight-topic-topicfilter-filterclass): {{String}}
+  [FilterDescription](#cfn-quicksight-topic-topicfilter-filterdescription): {{String}}
+  [FilterName](#cfn-quicksight-topic-topicfilter-filtername): {{String}}
+  [FilterSynonyms](#cfn-quicksight-topic-topicfilter-filtersynonyms): {{
+    - String}}
+  [FilterType](#cfn-quicksight-topic-topicfilter-filtertype): {{String}}
+  [NumericEqualityFilter](#cfn-quicksight-topic-topicfilter-numericequalityfilter): {{
+    TopicNumericEqualityFilter}}
+  [NumericRangeFilter](#cfn-quicksight-topic-topicfilter-numericrangefilter): {{
+    TopicNumericRangeFilter}}
+  [OperandFieldName](#cfn-quicksight-topic-topicfilter-operandfieldname): {{String}}
+  [RelativeDateFilter](#cfn-quicksight-topic-topicfilter-relativedatefilter): {{
+    TopicRelativeDateFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-topicfilter-properties"></a>
 
-`CategoryFilter`
-
+`CategoryFilter`  <a name="cfn-quicksight-topic-topicfilter-categoryfilter"></a>
 The category filter that is associated with this filter.
+*Required*: No
+*Type*: [TopicCategoryFilter](aws-properties-quicksight-topic-topiccategoryfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopicCategoryFilter](aws-properties-quicksight-topic-topiccategoryfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateRangeFilter`
-
+`DateRangeFilter`  <a name="cfn-quicksight-topic-topicfilter-daterangefilter"></a>
 The date range filter.
+*Required*: No
+*Type*: [TopicDateRangeFilter](aws-properties-quicksight-topic-topicdaterangefilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FilterClass`  <a name="cfn-quicksight-topic-topicfilter-filterclass"></a>
+The class of the filter. Valid values for this structure are `ENFORCED_VALUE_FILTER`, `CONDITIONAL_VALUE_FILTER`, and `NAMED_VALUE_FILTER`.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [TopicDateRangeFilter](aws-properties-quicksight-topic-topicdaterangefilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterClass`
-
-The class of the filter. Valid values for this structure are
-`ENFORCED_VALUE_FILTER`,
-`CONDITIONAL_VALUE_FILTER`,
-and `NAMED_VALUE_FILTER`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterDescription`
-
+`FilterDescription`  <a name="cfn-quicksight-topic-topicfilter-filterdescription"></a>
 A description of the filter used to select items for a topic.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterName`
-
+`FilterName`  <a name="cfn-quicksight-topic-topicfilter-filtername"></a>
 The name of the filter.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterSynonyms`
-
+`FilterSynonyms`  <a name="cfn-quicksight-topic-topicfilter-filtersynonyms"></a>
 The other names or aliases for the filter.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FilterType`  <a name="cfn-quicksight-topic-topicfilter-filtertype"></a>
+The type of the filter. Valid values for this structure are `CATEGORY_FILTER`, `NUMERIC_EQUALITY_FILTER`, `NUMERIC_RANGE_FILTER`, `DATE_RANGE_FILTER`, and `RELATIVE_DATE_FILTER`.
+*Required*: No
+*Type*: String
+*Allowed values*: `CATEGORY_FILTER | NUMERIC_EQUALITY_FILTER | NUMERIC_RANGE_FILTER | DATE_RANGE_FILTER | RELATIVE_DATE_FILTER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterType`
-
-The type of the filter. Valid values for this structure are
-`CATEGORY_FILTER`, `NUMERIC_EQUALITY_FILTER`,
-`NUMERIC_RANGE_FILTER`,
-`DATE_RANGE_FILTER`,
-and `RELATIVE_DATE_FILTER`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CATEGORY_FILTER | NUMERIC_EQUALITY_FILTER | NUMERIC_RANGE_FILTER | DATE_RANGE_FILTER | RELATIVE_DATE_FILTER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericEqualityFilter`
-
+`NumericEqualityFilter`  <a name="cfn-quicksight-topic-topicfilter-numericequalityfilter"></a>
 The numeric equality filter.
+*Required*: No
+*Type*: [TopicNumericEqualityFilter](aws-properties-quicksight-topic-topicnumericequalityfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopicNumericEqualityFilter](aws-properties-quicksight-topic-topicnumericequalityfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericRangeFilter`
-
+`NumericRangeFilter`  <a name="cfn-quicksight-topic-topicfilter-numericrangefilter"></a>
 The numeric range filter.
+*Required*: No
+*Type*: [TopicNumericRangeFilter](aws-properties-quicksight-topic-topicnumericrangefilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopicNumericRangeFilter](aws-properties-quicksight-topic-topicnumericrangefilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperandFieldName`
-
+`OperandFieldName`  <a name="cfn-quicksight-topic-topicfilter-operandfieldname"></a>
 The name of the field that the filter operates on.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelativeDateFilter`
-
+`RelativeDateFilter`  <a name="cfn-quicksight-topic-topicfilter-relativedatefilter"></a>
 The relative date filter.
-
-_Required_: No
-
-_Type_: [TopicRelativeDateFilter](aws-properties-quicksight-topic-topicrelativedatefilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TopicDateRangeFilter
-
-TopicNamedEntity
+*Required*: No
+*Type*: [TopicRelativeDateFilter](aws-properties-quicksight-topic-topicrelativedatefilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

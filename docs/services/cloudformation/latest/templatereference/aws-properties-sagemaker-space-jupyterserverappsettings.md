@@ -2,78 +2,54 @@
 title: "AWS::SageMaker::Space JupyterServerAppSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Space JupyterServerAppSettings
+<a name="aws-properties-sagemaker-space-jupyterserverappsettings"></a>
 
 The JupyterServer app settings.
 
 ## Syntax
+<a name="aws-properties-sagemaker-space-jupyterserverappsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-space-jupyterserverappsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultResourceSpec" : ResourceSpec,
-  "LifecycleConfigArns" : [ String, ... ]
+  "[DefaultResourceSpec](#cfn-sagemaker-space-jupyterserverappsettings-defaultresourcespec)" : {{ResourceSpec}},
+  "[LifecycleConfigArns](#cfn-sagemaker-space-jupyterserverappsettings-lifecycleconfigarns)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-space-jupyterserverappsettings-syntax.yaml"></a>
 
-```yaml
-
-  DefaultResourceSpec:
-    ResourceSpec
-  LifecycleConfigArns:
-    - String
-
+```
+  [DefaultResourceSpec](#cfn-sagemaker-space-jupyterserverappsettings-defaultresourcespec): {{
+    ResourceSpec}}
+  [LifecycleConfigArns](#cfn-sagemaker-space-jupyterserverappsettings-lifecycleconfigarns): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-space-jupyterserverappsettings-properties"></a>
 
-`DefaultResourceSpec`
+`DefaultResourceSpec`  <a name="cfn-sagemaker-space-jupyterserverappsettings-defaultresourcespec"></a>
+The default instance type and the Amazon Resource Name (ARN) of the default SageMaker AI image used by the JupyterServer app. If you use the `LifecycleConfigArns` parameter, then this parameter is also required.
+*Required*: No
+*Type*: [ResourceSpec](aws-properties-sagemaker-space-resourcespec.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The default instance type and the Amazon Resource Name (ARN) of the default SageMaker AI image used by the JupyterServer app. If you use the
-`LifecycleConfigArns` parameter, then this parameter is also required.
-
-_Required_: No
-
-_Type_: [ResourceSpec](aws-properties-sagemaker-space-resourcespec.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LifecycleConfigArns`
-
-The Amazon Resource Name (ARN) of the Lifecycle Configurations attached to the
-JupyterServerApp. If you use this parameter, the `DefaultResourceSpec` parameter is
-also required.
-
-###### Note
-
-To remove a Lifecycle Config, you must set `LifecycleConfigArns` to an empty
-list.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FSxLustreFileSystem
-
-KernelGatewayAppSettings
+`LifecycleConfigArns`  <a name="cfn-sagemaker-space-jupyterserverappsettings-lifecycleconfigarns"></a>
+ The Amazon Resource Name (ARN) of the Lifecycle Configurations attached to the JupyterServerApp. If you use this parameter, the `DefaultResourceSpec` parameter is also required.
+To remove a Lifecycle Config, you must set `LifecycleConfigArns` to an empty list.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

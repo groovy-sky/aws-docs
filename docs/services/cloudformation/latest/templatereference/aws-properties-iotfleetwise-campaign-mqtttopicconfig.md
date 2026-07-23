@@ -2,84 +2,58 @@
 title: "AWS::IoTFleetWise::Campaign MqttTopicConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign MqttTopicConfig
+<a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig"></a>
 
-The MQTT topic to which the AWS IoT FleetWise campaign routes data. For more information, see [Device communication \
-protocols](../../../iot/latest/developerguide/protocols.md) in the _AWS IoT Core Developer Guide_.
+The MQTT topic to which the AWS IoT FleetWise campaign routes data. For more information, see [Device communication protocols](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html) in the *AWS IoT Core Developer Guide*.
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExecutionRoleArn" : String,
-  "MqttTopicArn" : String
+  "[ExecutionRoleArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-executionrolearn)" : {{String}},
+  "[MqttTopicArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-mqtttopicarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig-syntax.yaml"></a>
 
-```yaml
-
-  ExecutionRoleArn: String
-  MqttTopicArn: String
-
+```
+  [ExecutionRoleArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-executionrolearn): {{String}}
+  [MqttTopicArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-mqtttopicarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig-properties"></a>
 
-`ExecutionRoleArn`
+`ExecutionRoleArn`  <a name="cfn-iotfleetwise-campaign-mqtttopicconfig-executionrolearn"></a>
+The ARN of the role that grants AWS IoT FleetWise permission to access and act on messages sent to the MQTT topic.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ARN of the role that grants AWS IoT FleetWise permission to access and act on messages sent to
-the MQTT topic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MqttTopicArn`
-
+`MqttTopicArn`  <a name="cfn-iotfleetwise-campaign-mqtttopicconfig-mqtttopicarn"></a>
 The ARN of the MQTT topic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.*`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataPartitionUploadOptions
-
-S3Config
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.*`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,49 @@
 title: "AWS::MemoryDB::Cluster Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::Cluster Endpoint
+<a name="aws-properties-memorydb-cluster-endpoint"></a>
 
-Represents the information required for client programs to connect to the cluster and
-its nodes.
+Represents the information required for client programs to connect to the cluster and its nodes.
 
 ## Syntax
+<a name="aws-properties-memorydb-cluster-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-memorydb-cluster-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Address" : String,
-  "Port" : Integer
+  "[Address](#cfn-memorydb-cluster-endpoint-address)" : {{String}},
+  "[Port](#cfn-memorydb-cluster-endpoint-port)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-memorydb-cluster-endpoint-syntax.yaml"></a>
 
-```yaml
-
-  Address: String
-  Port: Integer
-
+```
+  [Address](#cfn-memorydb-cluster-endpoint-address): {{String}}
+  [Port](#cfn-memorydb-cluster-endpoint-port): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-memorydb-cluster-endpoint-properties"></a>
 
-`Address`
-
+`Address`  <a name="cfn-memorydb-cluster-endpoint-address"></a>
 The DNS hostname of the node.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-memorydb-cluster-endpoint-port"></a>
 The port number that the engine is listening on.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MemoryDB::Cluster
-
-Tag
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

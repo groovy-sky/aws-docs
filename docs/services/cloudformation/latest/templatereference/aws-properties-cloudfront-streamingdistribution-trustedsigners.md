@@ -2,74 +2,54 @@
 title: "AWS::CloudFront::StreamingDistribution TrustedSigners"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::StreamingDistribution TrustedSigners
+<a name="aws-properties-cloudfront-streamingdistribution-trustedsigners"></a>
 
-A list of AWS accounts whose public keys CloudFront can use to verify the signatures of
-signed URLs and signed cookies.
+A list of AWS accounts whose public keys CloudFront can use to verify the signatures of signed URLs and signed cookies.
 
 ## Syntax
+<a name="aws-properties-cloudfront-streamingdistribution-trustedsigners-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-streamingdistribution-trustedsigners-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsAccountNumbers" : [ String, ... ],
-  "Enabled" : Boolean
+  "[AwsAccountNumbers](#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers)" : {{[ String, ... ]}},
+  "[Enabled](#cfn-cloudfront-streamingdistribution-trustedsigners-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-streamingdistribution-trustedsigners-syntax.yaml"></a>
 
-```yaml
-
-  AwsAccountNumbers:
-    - String
-  Enabled: Boolean
-
+```
+  [AwsAccountNumbers](#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers): {{
+    - String}}
+  [Enabled](#cfn-cloudfront-streamingdistribution-trustedsigners-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-streamingdistribution-trustedsigners-properties"></a>
 
-`AwsAccountNumbers`
+`AwsAccountNumbers`  <a name="cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers"></a>
+An AWS account number that contains active CloudFront key pairs that CloudFront can use to verify the signatures of signed URLs and signed cookies. If the AWS account that owns the key pairs is the same account that owns the CloudFront distribution, the value of this field is `self`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An AWS account number that contains active CloudFront key pairs that CloudFront can use to
-verify the signatures of signed URLs and signed cookies. If the AWS account that owns
-the key pairs is the same account that owns the CloudFront distribution, the value of this
-field is `self`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-This field is `true` if any of the AWS accounts in the list are configured as
-trusted signers. If not, this field is `false`.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Enabled`  <a name="cfn-cloudfront-streamingdistribution-trustedsigners-enabled"></a>
+This field is `true` if any of the AWS accounts in the list are configured as trusted signers. If not, this field is `false`.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [TrustedSigners](../../../../reference/cloudfront/latest/apireference/api-trustedsigners.md) in the _Amazon CloudFront API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::CloudFront::TrustStore
+<a name="aws-properties-cloudfront-streamingdistribution-trustedsigners--seealso"></a>
++ [TrustedSigners](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TrustedSigners.html) in the *Amazon CloudFront API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

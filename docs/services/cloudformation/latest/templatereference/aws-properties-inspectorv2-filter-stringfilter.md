@@ -2,70 +2,52 @@
 title: "AWS::InspectorV2::Filter StringFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Filter StringFilter
+<a name="aws-properties-inspectorv2-filter-stringfilter"></a>
 
 An object that describes the details of a string filter.
 
 ## Syntax
+<a name="aws-properties-inspectorv2-filter-stringfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspectorv2-filter-stringfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comparison" : String,
-  "Value" : String
+  "[Comparison](#cfn-inspectorv2-filter-stringfilter-comparison)" : {{String}},
+  "[Value](#cfn-inspectorv2-filter-stringfilter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspectorv2-filter-stringfilter-syntax.yaml"></a>
 
-```yaml
-
-  Comparison: String
-  Value: String
-
+```
+  [Comparison](#cfn-inspectorv2-filter-stringfilter-comparison): {{String}}
+  [Value](#cfn-inspectorv2-filter-stringfilter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-inspectorv2-filter-stringfilter-properties"></a>
 
-`Comparison`
-
+`Comparison`  <a name="cfn-inspectorv2-filter-stringfilter-comparison"></a>
 The operator to use when comparing values in the filter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUALS | PREFIX | NOT_EQUALS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUALS | PREFIX | NOT_EQUALS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-inspectorv2-filter-stringfilter-value"></a>
 The value to filter on.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PortRangeFilter
-
-Next
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::Flow StorageFlowNodeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow StorageFlowNodeConfiguration
+<a name="aws-properties-bedrock-flow-storageflownodeconfiguration"></a>
 
 Contains configurations for a Storage node in a flow. This node stores the input in an Amazon S3 location that you specify.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-storageflownodeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-storageflownodeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ServiceConfiguration" : StorageFlowNodeServiceConfiguration
+  "[ServiceConfiguration](#cfn-bedrock-flow-storageflownodeconfiguration-serviceconfiguration)" : {{StorageFlowNodeServiceConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-storageflownodeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ServiceConfiguration:
-    StorageFlowNodeServiceConfiguration
-
+```
+  [ServiceConfiguration](#cfn-bedrock-flow-storageflownodeconfiguration-serviceconfiguration): {{
+    StorageFlowNodeServiceConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-storageflownodeconfiguration-properties"></a>
 
-`ServiceConfiguration`
-
+`ServiceConfiguration`  <a name="cfn-bedrock-flow-storageflownodeconfiguration-serviceconfiguration"></a>
 Contains configurations for the service to use for storing the input into the node.
-
-_Required_: Yes
-
-_Type_: [StorageFlowNodeServiceConfiguration](aws-properties-bedrock-flow-storageflownodeserviceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-StorageFlowNodeS3Configuration
+*Required*: Yes
+*Type*: [StorageFlowNodeServiceConfiguration](aws-properties-bedrock-flow-storageflownodeserviceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

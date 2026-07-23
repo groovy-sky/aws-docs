@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Analysis LineChartSeriesSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis LineChartSeriesSettings
+<a name="aws-properties-quicksight-analysis-linechartseriessettings"></a>
 
 The options that determine the presentation of a line series in the visual
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-linechartseriessettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-linechartseriessettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "LineStyleSettings" : LineChartLineStyleSettings,
-  "MarkerStyleSettings" : LineChartMarkerStyleSettings
+  "[LineStyleSettings](#cfn-quicksight-analysis-linechartseriessettings-linestylesettings)" : {{LineChartLineStyleSettings}},
+  "[MarkerStyleSettings](#cfn-quicksight-analysis-linechartseriessettings-markerstylesettings)" : {{LineChartMarkerStyleSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-linechartseriessettings-syntax.yaml"></a>
 
-```yaml
-
-  LineStyleSettings:
-    LineChartLineStyleSettings
-  MarkerStyleSettings:
-    LineChartMarkerStyleSettings
-
+```
+  [LineStyleSettings](#cfn-quicksight-analysis-linechartseriessettings-linestylesettings): {{
+    LineChartLineStyleSettings}}
+  [MarkerStyleSettings](#cfn-quicksight-analysis-linechartseriessettings-markerstylesettings): {{
+    LineChartMarkerStyleSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-linechartseriessettings-properties"></a>
 
-`LineStyleSettings`
-
+`LineStyleSettings`  <a name="cfn-quicksight-analysis-linechartseriessettings-linestylesettings"></a>
 Line styles options for a line series in `LineChartVisual`.
+*Required*: No
+*Type*: [LineChartLineStyleSettings](aws-properties-quicksight-analysis-linechartlinestylesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LineChartLineStyleSettings](aws-properties-quicksight-analysis-linechartlinestylesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MarkerStyleSettings`
-
+`MarkerStyleSettings`  <a name="cfn-quicksight-analysis-linechartseriessettings-markerstylesettings"></a>
 Marker styles options for a line series in `LineChartVisual`.
-
-_Required_: No
-
-_Type_: [LineChartMarkerStyleSettings](aws-properties-quicksight-analysis-linechartmarkerstylesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LineChartMarkerStyleSettings
-
-LineChartSortConfiguration
+*Required*: No
+*Type*: [LineChartMarkerStyleSettings](aws-properties-quicksight-analysis-linechartmarkerstylesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

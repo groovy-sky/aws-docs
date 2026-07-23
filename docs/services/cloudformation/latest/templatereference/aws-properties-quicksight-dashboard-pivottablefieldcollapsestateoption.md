@@ -2,71 +2,53 @@
 title: "AWS::QuickSight::Dashboard PivotTableFieldCollapseStateOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard PivotTableFieldCollapseStateOption
+<a name="aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption"></a>
 
 The collapse state options for the pivot table field options.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "State" : String,
-  "Target" : PivotTableFieldCollapseStateTarget
+  "[State](#cfn-quicksight-dashboard-pivottablefieldcollapsestateoption-state)" : {{String}},
+  "[Target](#cfn-quicksight-dashboard-pivottablefieldcollapsestateoption-target)" : {{PivotTableFieldCollapseStateTarget}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption-syntax.yaml"></a>
 
-```yaml
-
-  State: String
-  Target:
-    PivotTableFieldCollapseStateTarget
-
+```
+  [State](#cfn-quicksight-dashboard-pivottablefieldcollapsestateoption-state): {{String}}
+  [Target](#cfn-quicksight-dashboard-pivottablefieldcollapsestateoption-target): {{
+    PivotTableFieldCollapseStateTarget}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption-properties"></a>
 
-`State`
-
+`State`  <a name="cfn-quicksight-dashboard-pivottablefieldcollapsestateoption-state"></a>
 The state of the field target of a pivot table. Choose one of the following options:
++  `COLLAPSED`
++  `EXPANDED`
+*Required*: No
+*Type*: String
+*Allowed values*: `COLLAPSED | EXPANDED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `COLLAPSED`
-
-- `EXPANDED`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `COLLAPSED | EXPANDED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
+`Target`  <a name="cfn-quicksight-dashboard-pivottablefieldcollapsestateoption-target"></a>
 A tagged-union object that sets the collapse state.
-
-_Required_: Yes
-
-_Type_: [PivotTableFieldCollapseStateTarget](aws-properties-quicksight-dashboard-pivottablefieldcollapsestatetarget.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableDataPathOption
-
-PivotTableFieldCollapseStateTarget
+*Required*: Yes
+*Type*: [PivotTableFieldCollapseStateTarget](aws-properties-quicksight-dashboard-pivottablefieldcollapsestatetarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

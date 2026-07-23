@@ -2,72 +2,53 @@
 title: "AWS::SageMaker::Domain HiddenSageMakerImage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain HiddenSageMakerImage
+<a name="aws-properties-sagemaker-domain-hiddensagemakerimage"></a>
 
-The SageMaker images that are hidden from the Studio user interface. You must specify the SageMaker
-image name and version aliases.
+The SageMaker images that are hidden from the Studio user interface. You must specify the SageMaker image name and version aliases.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-hiddensagemakerimage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-hiddensagemakerimage-syntax.json"></a>
 
-```json
-
+```
 {
-  "SageMakerImageName" : String,
-  "VersionAliases" : [ String, ... ]
+  "[SageMakerImageName](#cfn-sagemaker-domain-hiddensagemakerimage-sagemakerimagename)" : {{String}},
+  "[VersionAliases](#cfn-sagemaker-domain-hiddensagemakerimage-versionaliases)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-hiddensagemakerimage-syntax.yaml"></a>
 
-```yaml
-
-  SageMakerImageName: String
-  VersionAliases:
-    - String
-
+```
+  [SageMakerImageName](#cfn-sagemaker-domain-hiddensagemakerimage-sagemakerimagename): {{String}}
+  [VersionAliases](#cfn-sagemaker-domain-hiddensagemakerimage-versionaliases): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-hiddensagemakerimage-properties"></a>
 
-`SageMakerImageName`
+`SageMakerImageName`  <a name="cfn-sagemaker-domain-hiddensagemakerimage-sagemakerimagename"></a>
+ The SageMaker image name that you are hiding from the Studio user interface.
+*Required*: No
+*Type*: String
+*Allowed values*: `sagemaker_distribution`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The SageMaker image name that you are hiding from the Studio user interface.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `sagemaker_distribution`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionAliases`
-
-The version aliases you are hiding from the Studio user interface.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `128 | 20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FSxLustreFileSystemConfig
-
-IdleSettings
+`VersionAliases`  <a name="cfn-sagemaker-domain-hiddensagemakerimage-versionaliases"></a>
+ The version aliases you are hiding from the Studio user interface.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `128 | 20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

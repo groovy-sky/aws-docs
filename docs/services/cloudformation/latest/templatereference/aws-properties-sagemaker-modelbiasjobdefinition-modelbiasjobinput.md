@@ -2,79 +2,60 @@
 title: "AWS::SageMaker::ModelBiasJobDefinition ModelBiasJobInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelBiasJobDefinition ModelBiasJobInput
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput"></a>
 
 Inputs for the model bias job.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchTransformInput" : BatchTransformInput,
-  "EndpointInput" : EndpointInput,
-  "GroundTruthS3Input" : MonitoringGroundTruthS3Input
+  "[BatchTransformInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-batchtransforminput)" : {{BatchTransformInput}},
+  "[EndpointInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-endpointinput)" : {{EndpointInput}},
+  "[GroundTruthS3Input](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-groundtruths3input)" : {{MonitoringGroundTruthS3Input}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput-syntax.yaml"></a>
 
-```yaml
-
-  BatchTransformInput:
-    BatchTransformInput
-  EndpointInput:
-    EndpointInput
-  GroundTruthS3Input:
-    MonitoringGroundTruthS3Input
-
+```
+  [BatchTransformInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-batchtransforminput): {{
+    BatchTransformInput}}
+  [EndpointInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-endpointinput): {{
+    EndpointInput}}
+  [GroundTruthS3Input](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-groundtruths3input): {{
+    MonitoringGroundTruthS3Input}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput-properties"></a>
 
-`BatchTransformInput`
-
+`BatchTransformInput`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-batchtransforminput"></a>
 Input object for the batch transform job.
+*Required*: No
+*Type*: [BatchTransformInput](aws-properties-sagemaker-modelbiasjobdefinition-batchtransforminput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [BatchTransformInput](aws-properties-sagemaker-modelbiasjobdefinition-batchtransforminput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EndpointInput`
-
+`EndpointInput`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-endpointinput"></a>
 Input object for the endpoint
+*Required*: No
+*Type*: [EndpointInput](aws-properties-sagemaker-modelbiasjobdefinition-endpointinput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [EndpointInput](aws-properties-sagemaker-modelbiasjobdefinition-endpointinput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`GroundTruthS3Input`
-
+`GroundTruthS3Input`  <a name="cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-groundtruths3input"></a>
 Location of ground truth labels to use in model bias job.
-
-_Required_: Yes
-
-_Type_: [MonitoringGroundTruthS3Input](aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelBiasBaselineConfig
-
-MonitoringGroundTruthS3Input
+*Required*: Yes
+*Type*: [MonitoringGroundTruthS3Input](aws-properties-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,55 +2,42 @@
 title: "AWS::Wisdom::AIPrompt AIPromptTemplateConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIPrompt AIPromptTemplateConfiguration
+<a name="aws-properties-wisdom-aiprompt-aiprompttemplateconfiguration"></a>
 
-A typed union that specifies the configuration for a prompt template based on its
-type.
+A typed union that specifies the configuration for a prompt template based on its type.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiprompt-aiprompttemplateconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiprompt-aiprompttemplateconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TextFullAIPromptEditTemplateConfiguration" : TextFullAIPromptEditTemplateConfiguration
+  "[TextFullAIPromptEditTemplateConfiguration](#cfn-wisdom-aiprompt-aiprompttemplateconfiguration-textfullaipromptedittemplateconfiguration)" : {{TextFullAIPromptEditTemplateConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiprompt-aiprompttemplateconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TextFullAIPromptEditTemplateConfiguration:
-    TextFullAIPromptEditTemplateConfiguration
-
+```
+  [TextFullAIPromptEditTemplateConfiguration](#cfn-wisdom-aiprompt-aiprompttemplateconfiguration-textfullaipromptedittemplateconfiguration): {{
+    TextFullAIPromptEditTemplateConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiprompt-aiprompttemplateconfiguration-properties"></a>
 
-`TextFullAIPromptEditTemplateConfiguration`
-
-The configuration for a prompt template that supports full textual prompt
-configuration using a YAML prompt.
-
-_Required_: Yes
-
-_Type_: [TextFullAIPromptEditTemplateConfiguration](aws-properties-wisdom-aiprompt-textfullaipromptedittemplateconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Wisdom::AIPrompt
-
-TextFullAIPromptEditTemplateConfiguration
+`TextFullAIPromptEditTemplateConfiguration`  <a name="cfn-wisdom-aiprompt-aiprompttemplateconfiguration-textfullaipromptedittemplateconfiguration"></a>
+The configuration for a prompt template that supports full textual prompt configuration using a YAML prompt.
+*Required*: Yes
+*Type*: [TextFullAIPromptEditTemplateConfiguration](aws-properties-wisdom-aiprompt-textfullaipromptedittemplateconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,391 +2,261 @@
 title: "AWS::MediaConnect::Flow Source"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow Source
+<a name="aws-properties-mediaconnect-flow-source"></a>
 
 The details of the sources of the flow.
 
-If you are creating a flow with a VPC source, you must first create the flow with a
-temporary standard source by doing the following:
+If you are creating a flow with a VPC source, you must first create the flow with a temporary standard source by doing the following:
 
-1. Use CloudFormation to create a flow with a standard source that uses the
-    flow’s public IP address.
+1. Use CloudFormation to create a flow with a standard source that uses the flow’s public IP address.
 
-2. Use CloudFormation to create the VPC interface to add to this flow. This can
-    also be done as part of the previous step.
+1. Use CloudFormation to create the VPC interface to add to this flow. This can also be done as part of the previous step.
 
-3. After CloudFormation has created the flow and the VPC interface, update the
-    source to point to the VPC interface that you created.
+1. After CloudFormation has created the flow and the VPC interface, update the source to point to the VPC interface that you created.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-source-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-source-syntax.json"></a>
 
-```json
-
+```
 {
-  "Decryption" : Encryption,
-  "Description" : String,
-  "EntitlementArn" : String,
-  "GatewayBridgeSource" : GatewayBridgeSource,
-  "IngestIp" : String,
-  "IngestPort" : Integer,
-  "MaxBitrate" : Integer,
-  "MaxLatency" : Integer,
-  "MaxSyncBuffer" : Integer,
-  "MediaStreamSourceConfigurations" : [ MediaStreamSourceConfiguration, ... ],
-  "MinLatency" : Integer,
-  "Name" : String,
-  "NdiSourceSettings" : NdiSourceSettings,
-  "Protocol" : String,
-  "RouterIntegrationState" : String,
-  "RouterIntegrationTransitDecryption" : FlowTransitEncryption,
-  "SenderControlPort" : Integer,
-  "SenderIpAddress" : String,
-  "SourceArn" : String,
-  "SourceIngestPort" : String,
-  "SourceListenerAddress" : String,
-  "SourceListenerPort" : Integer,
-  "StreamId" : String,
-  "Tags" : [ Tag, ... ],
-  "VpcInterfaceName" : String,
-  "WhitelistCidr" : String
+  "[Decryption](#cfn-mediaconnect-flow-source-decryption)" : {{Encryption}},
+  "[Description](#cfn-mediaconnect-flow-source-description)" : {{String}},
+  "[EntitlementArn](#cfn-mediaconnect-flow-source-entitlementarn)" : {{String}},
+  "[GatewayBridgeSource](#cfn-mediaconnect-flow-source-gatewaybridgesource)" : {{GatewayBridgeSource}},
+  "[IngestIp](#cfn-mediaconnect-flow-source-ingestip)" : {{String}},
+  "[IngestPort](#cfn-mediaconnect-flow-source-ingestport)" : {{Integer}},
+  "[MaxBitrate](#cfn-mediaconnect-flow-source-maxbitrate)" : {{Integer}},
+  "[MaxLatency](#cfn-mediaconnect-flow-source-maxlatency)" : {{Integer}},
+  "[MaxSyncBuffer](#cfn-mediaconnect-flow-source-maxsyncbuffer)" : {{Integer}},
+  "[MediaStreamSourceConfigurations](#cfn-mediaconnect-flow-source-mediastreamsourceconfigurations)" : {{[ MediaStreamSourceConfiguration, ... ]}},
+  "[MinLatency](#cfn-mediaconnect-flow-source-minlatency)" : {{Integer}},
+  "[Name](#cfn-mediaconnect-flow-source-name)" : {{String}},
+  "[NdiSourceSettings](#cfn-mediaconnect-flow-source-ndisourcesettings)" : {{NdiSourceSettings}},
+  "[Protocol](#cfn-mediaconnect-flow-source-protocol)" : {{String}},
+  "[RouterIntegrationState](#cfn-mediaconnect-flow-source-routerintegrationstate)" : {{String}},
+  "[RouterIntegrationTransitDecryption](#cfn-mediaconnect-flow-source-routerintegrationtransitdecryption)" : {{FlowTransitEncryption}},
+  "[SenderControlPort](#cfn-mediaconnect-flow-source-sendercontrolport)" : {{Integer}},
+  "[SenderIpAddress](#cfn-mediaconnect-flow-source-senderipaddress)" : {{String}},
+  "[SourceArn](#cfn-mediaconnect-flow-source-sourcearn)" : {{String}},
+  "[SourceIngestPort](#cfn-mediaconnect-flow-source-sourceingestport)" : {{String}},
+  "[SourceListenerAddress](#cfn-mediaconnect-flow-source-sourcelisteneraddress)" : {{String}},
+  "[SourceListenerPort](#cfn-mediaconnect-flow-source-sourcelistenerport)" : {{Integer}},
+  "[StreamId](#cfn-mediaconnect-flow-source-streamid)" : {{String}},
+  "[Tags](#cfn-mediaconnect-flow-source-tags)" : {{[ Tag, ... ]}},
+  "[VpcInterfaceName](#cfn-mediaconnect-flow-source-vpcinterfacename)" : {{String}},
+  "[WhitelistCidr](#cfn-mediaconnect-flow-source-whitelistcidr)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-source-syntax.yaml"></a>
 
-```yaml
-
-  Decryption:
-    Encryption
-  Description: String
-  EntitlementArn: String
-  GatewayBridgeSource:
-    GatewayBridgeSource
-  IngestIp: String
-  IngestPort: Integer
-  MaxBitrate: Integer
-  MaxLatency: Integer
-  MaxSyncBuffer: Integer
-  MediaStreamSourceConfigurations:
-    - MediaStreamSourceConfiguration
-  MinLatency: Integer
-  Name: String
-  NdiSourceSettings:
-    NdiSourceSettings
-  Protocol: String
-  RouterIntegrationState: String
-  RouterIntegrationTransitDecryption:
-    FlowTransitEncryption
-  SenderControlPort: Integer
-  SenderIpAddress: String
-  SourceArn: String
-  SourceIngestPort: String
-  SourceListenerAddress: String
-  SourceListenerPort: Integer
-  StreamId: String
-  Tags:
-    - Tag
-  VpcInterfaceName: String
-  WhitelistCidr: String
-
+```
+  [Decryption](#cfn-mediaconnect-flow-source-decryption): {{
+    Encryption}}
+  [Description](#cfn-mediaconnect-flow-source-description): {{String}}
+  [EntitlementArn](#cfn-mediaconnect-flow-source-entitlementarn): {{String}}
+  [GatewayBridgeSource](#cfn-mediaconnect-flow-source-gatewaybridgesource): {{
+    GatewayBridgeSource}}
+  [IngestIp](#cfn-mediaconnect-flow-source-ingestip): {{String}}
+  [IngestPort](#cfn-mediaconnect-flow-source-ingestport): {{Integer}}
+  [MaxBitrate](#cfn-mediaconnect-flow-source-maxbitrate): {{Integer}}
+  [MaxLatency](#cfn-mediaconnect-flow-source-maxlatency): {{Integer}}
+  [MaxSyncBuffer](#cfn-mediaconnect-flow-source-maxsyncbuffer): {{Integer}}
+  [MediaStreamSourceConfigurations](#cfn-mediaconnect-flow-source-mediastreamsourceconfigurations): {{
+    - MediaStreamSourceConfiguration}}
+  [MinLatency](#cfn-mediaconnect-flow-source-minlatency): {{Integer}}
+  [Name](#cfn-mediaconnect-flow-source-name): {{String}}
+  [NdiSourceSettings](#cfn-mediaconnect-flow-source-ndisourcesettings): {{
+    NdiSourceSettings}}
+  [Protocol](#cfn-mediaconnect-flow-source-protocol): {{String}}
+  [RouterIntegrationState](#cfn-mediaconnect-flow-source-routerintegrationstate): {{String}}
+  [RouterIntegrationTransitDecryption](#cfn-mediaconnect-flow-source-routerintegrationtransitdecryption): {{
+    FlowTransitEncryption}}
+  [SenderControlPort](#cfn-mediaconnect-flow-source-sendercontrolport): {{Integer}}
+  [SenderIpAddress](#cfn-mediaconnect-flow-source-senderipaddress): {{String}}
+  [SourceArn](#cfn-mediaconnect-flow-source-sourcearn): {{String}}
+  [SourceIngestPort](#cfn-mediaconnect-flow-source-sourceingestport): {{String}}
+  [SourceListenerAddress](#cfn-mediaconnect-flow-source-sourcelisteneraddress): {{String}}
+  [SourceListenerPort](#cfn-mediaconnect-flow-source-sourcelistenerport): {{Integer}}
+  [StreamId](#cfn-mediaconnect-flow-source-streamid): {{String}}
+  [Tags](#cfn-mediaconnect-flow-source-tags): {{
+    - Tag}}
+  [VpcInterfaceName](#cfn-mediaconnect-flow-source-vpcinterfacename): {{String}}
+  [WhitelistCidr](#cfn-mediaconnect-flow-source-whitelistcidr): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-source-properties"></a>
 
-`Decryption`
+`Decryption`  <a name="cfn-mediaconnect-flow-source-decryption"></a>
+ The type of encryption that is used on the content ingested from this source.
+*Required*: No
+*Type*: [Encryption](aws-properties-mediaconnect-flow-encryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of encryption that is used on the content ingested from this source.
+`Description`  <a name="cfn-mediaconnect-flow-source-description"></a>
+ A description for the source. This value is not used or seen outside of the current MediaConnect account.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EntitlementArn`  <a name="cfn-mediaconnect-flow-source-entitlementarn"></a>
+ The ARN of the entitlement that allows you to subscribe to content that comes from another AWS account. The entitlement is set by the content originator and the ARN is generated as part of the originator's flow.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:entitlement:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [Encryption](aws-properties-mediaconnect-flow-encryption.md)
+`GatewayBridgeSource`  <a name="cfn-mediaconnect-flow-source-gatewaybridgesource"></a>
+ The source configuration for cloud flows receiving a stream from a bridge.
+*Required*: No
+*Type*: [GatewayBridgeSource](aws-properties-mediaconnect-flow-gatewaybridgesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`IngestIp`  <a name="cfn-mediaconnect-flow-source-ingestip"></a>
+ The IP address that the flow will be listening on for incoming content.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Description`
+`IngestPort`  <a name="cfn-mediaconnect-flow-source-ingestport"></a>
+ The port that the flow will be listening on for incoming content.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A description for the source. This value is not used or seen outside of the current MediaConnect account.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntitlementArn`
-
-The ARN of the entitlement that allows you to subscribe to content that comes from another AWS account. The entitlement is set by the content originator and the ARN is generated as part of the originator's flow.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:entitlement:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GatewayBridgeSource`
-
-The source configuration for cloud flows receiving a stream from a bridge.
-
-_Required_: No
-
-_Type_: [GatewayBridgeSource](aws-properties-mediaconnect-flow-gatewaybridgesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IngestIp`
-
-The IP address that the flow will be listening on for incoming content.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IngestPort`
-
-The port that the flow will be listening on for incoming content.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxBitrate`
-
+`MaxBitrate`  <a name="cfn-mediaconnect-flow-source-maxbitrate"></a>
 The maximum bitrate for RIST, RTP, and RTP-FEC streams.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxLatency`
-
+`MaxLatency`  <a name="cfn-mediaconnect-flow-source-maxlatency"></a>
 The maximum latency in milliseconds for a RIST or Zixi-based source.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxSyncBuffer`
-
+`MaxSyncBuffer`  <a name="cfn-mediaconnect-flow-source-maxsyncbuffer"></a>
 The size of the buffer (in milliseconds) to use to sync incoming source data.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MediaStreamSourceConfigurations`  <a name="cfn-mediaconnect-flow-source-mediastreamsourceconfigurations"></a>
+ The media streams that are associated with the source, and the parameters for those associations.
+*Required*: No
+*Type*: Array of [MediaStreamSourceConfiguration](aws-properties-mediaconnect-flow-mediastreamsourceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
+`MinLatency`  <a name="cfn-mediaconnect-flow-source-minlatency"></a>
+The minimum latency in milliseconds for SRT-based streams. In streams that use the SRT protocol, this value that you set on your MediaConnect source or output represents the minimal potential latency of that connection. The latency of the stream is set to the highest number between the sender’s minimum latency and the receiver’s minimum latency.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Name`  <a name="cfn-mediaconnect-flow-source-name"></a>
+ The name of the source.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`MediaStreamSourceConfigurations`
+`NdiSourceSettings`  <a name="cfn-mediaconnect-flow-source-ndisourcesettings"></a>
+ The settings for the NDI® source. This includes the exact name of the upstream NDI sender that you want to connect to your source.
+*Required*: No
+*Type*: [NdiSourceSettings](aws-properties-mediaconnect-flow-ndisourcesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The media streams that are associated with the source, and the parameters for those associations.
-
-_Required_: No
-
-_Type_: Array of [MediaStreamSourceConfiguration](aws-properties-mediaconnect-flow-mediastreamsourceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinLatency`
-
-The minimum latency in milliseconds for SRT-based streams. In streams that use the SRT
-protocol, this value that you set on your MediaConnect source or output represents the
-minimal potential latency of that connection. The latency of the stream is set to the
-highest number between the sender’s minimum latency and the receiver’s minimum
-latency.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the source.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NdiSourceSettings`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: [NdiSourceSettings](aws-properties-mediaconnect-flow-ndisourcesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-mediaconnect-flow-source-protocol"></a>
 The protocol that is used by the source. AWS CloudFormation does not currently support CDI or ST 2110 JPEG XS source protocols.
+AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
+*Required*: No
+*Type*: String
+*Allowed values*: `zixi-push | rtp-fec | rtp | rist | srt-listener | srt-caller | st2110-jpegxs | cdi | ndi-speed-hq`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-AWS Elemental MediaConnect no longer supports the Fujitsu QoS
-protocol. This reference is maintained for legacy purposes only.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `zixi-push | rtp-fec | rtp | rist | srt-listener | srt-caller | st2110-jpegxs | cdi | ndi-speed-hq`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RouterIntegrationState`
-
+`RouterIntegrationState`  <a name="cfn-mediaconnect-flow-source-routerintegrationstate"></a>
 Indicates if router integration is enabled or disabled on the flow source.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RouterIntegrationTransitDecryption`
-
+`RouterIntegrationTransitDecryption`  <a name="cfn-mediaconnect-flow-source-routerintegrationtransitdecryption"></a>
 The decryption configuration for the flow source when router integration is enabled.
+*Required*: No
+*Type*: [FlowTransitEncryption](aws-properties-mediaconnect-flow-flowtransitencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SenderControlPort`  <a name="cfn-mediaconnect-flow-source-sendercontrolport"></a>
+The port that the flow uses to send outbound requests to initiate connection with the sender.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [FlowTransitEncryption](aws-properties-mediaconnect-flow-flowtransitencryption.md)
+`SenderIpAddress`  <a name="cfn-mediaconnect-flow-source-senderipaddress"></a>
+The IP address that the flow communicates with to initiate connection with the sender.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SourceArn`  <a name="cfn-mediaconnect-flow-source-sourcearn"></a>
+ The ARN of the source.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:source:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`SenderControlPort`
+`SourceIngestPort`  <a name="cfn-mediaconnect-flow-source-sourceingestport"></a>
+The port that the flow listens on for incoming content. If the protocol of the source is Zixi, the port must be set to 2088.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The port that the flow uses to send outbound requests to initiate connection with
-the sender.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SenderIpAddress`
-
-The IP address that the flow communicates with to initiate connection with the
-sender.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceArn`
-
-The ARN of the source.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:source:[a-zA-Z0-9-]+:[a-zA-Z0-9_-]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceIngestPort`
-
-The port that the flow listens on for incoming content. If the protocol of the source is Zixi, the port must
-be set to 2088.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceListenerAddress`
-
+`SourceListenerAddress`  <a name="cfn-mediaconnect-flow-source-sourcelisteneraddress"></a>
 Source IP or domain name for SRT-caller protocol.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceListenerPort`
-
+`SourceListenerPort`  <a name="cfn-mediaconnect-flow-source-sourcelistenerport"></a>
 Source port for SRT-caller protocol.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`StreamId`  <a name="cfn-mediaconnect-flow-source-streamid"></a>
+The stream ID that you want to use for the transport. This parameter applies only to Zixi-based streams.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
+`Tags`  <a name="cfn-mediaconnect-flow-source-tags"></a>
+An array of key-value pairs to apply to this resource.
+For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-mediaconnect-flow-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`VpcInterfaceName`  <a name="cfn-mediaconnect-flow-source-vpcinterfacename"></a>
+ The name of the VPC interface that is used for this source.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`StreamId`
-
-The stream ID that you want to use for the transport. This parameter applies only to
-Zixi-based streams.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-mediaconnect-flow-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcInterfaceName`
-
-The name of the VPC interface that is used for this source.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WhitelistCidr`
-
-The range of IP addresses that should be allowed to contribute content to your source. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SilentAudio
-
-SourceMonitoringConfig
+`WhitelistCidr`  <a name="cfn-mediaconnect-flow-source-whitelistcidr"></a>
+ The range of IP addresses that should be allowed to contribute content to your source. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

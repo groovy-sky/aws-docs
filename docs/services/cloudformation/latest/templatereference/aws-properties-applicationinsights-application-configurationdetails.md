@@ -2,173 +2,123 @@
 title: "AWS::ApplicationInsights::Application ConfigurationDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application ConfigurationDetails
+<a name="aws-properties-applicationinsights-application-configurationdetails"></a>
 
 The `AWS::ApplicationInsights::Application ConfigurationDetails` property type specifies the configuration settings.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-configurationdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-configurationdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlarmMetrics" : [ AlarmMetric, ... ],
-  "Alarms" : [ Alarm, ... ],
-  "HAClusterPrometheusExporter" : HAClusterPrometheusExporter,
-  "HANAPrometheusExporter" : HANAPrometheusExporter,
-  "JMXPrometheusExporter" : JMXPrometheusExporter,
-  "Logs" : [ Log, ... ],
-  "NetWeaverPrometheusExporter" : NetWeaverPrometheusExporter,
-  "Processes" : [ Process, ... ],
-  "SQLServerPrometheusExporter" : SQLServerPrometheusExporter,
-  "WindowsEvents" : [ WindowsEvent, ... ]
+  "[AlarmMetrics](#cfn-applicationinsights-application-configurationdetails-alarmmetrics)" : {{[ AlarmMetric, ... ]}},
+  "[Alarms](#cfn-applicationinsights-application-configurationdetails-alarms)" : {{[ Alarm, ... ]}},
+  "[HAClusterPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-haclusterprometheusexporter)" : {{HAClusterPrometheusExporter}},
+  "[HANAPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-hanaprometheusexporter)" : {{HANAPrometheusExporter}},
+  "[JMXPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-jmxprometheusexporter)" : {{JMXPrometheusExporter}},
+  "[Logs](#cfn-applicationinsights-application-configurationdetails-logs)" : {{[ Log, ... ]}},
+  "[NetWeaverPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-netweaverprometheusexporter)" : {{NetWeaverPrometheusExporter}},
+  "[Processes](#cfn-applicationinsights-application-configurationdetails-processes)" : {{[ Process, ... ]}},
+  "[SQLServerPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-sqlserverprometheusexporter)" : {{SQLServerPrometheusExporter}},
+  "[WindowsEvents](#cfn-applicationinsights-application-configurationdetails-windowsevents)" : {{[ WindowsEvent, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-configurationdetails-syntax.yaml"></a>
 
-```yaml
-
-  AlarmMetrics:
-    - AlarmMetric
-  Alarms:
-    - Alarm
-  HAClusterPrometheusExporter:
-    HAClusterPrometheusExporter
-  HANAPrometheusExporter:
-    HANAPrometheusExporter
-  JMXPrometheusExporter:
-    JMXPrometheusExporter
-  Logs:
-    - Log
-  NetWeaverPrometheusExporter:
-    NetWeaverPrometheusExporter
-  Processes:
-    - Process
-  SQLServerPrometheusExporter:
-    SQLServerPrometheusExporter
-  WindowsEvents:
-    - WindowsEvent
-
+```
+  [AlarmMetrics](#cfn-applicationinsights-application-configurationdetails-alarmmetrics): {{
+    - AlarmMetric}}
+  [Alarms](#cfn-applicationinsights-application-configurationdetails-alarms): {{
+    - Alarm}}
+  [HAClusterPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-haclusterprometheusexporter): {{
+    HAClusterPrometheusExporter}}
+  [HANAPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-hanaprometheusexporter): {{
+    HANAPrometheusExporter}}
+  [JMXPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-jmxprometheusexporter): {{
+    JMXPrometheusExporter}}
+  [Logs](#cfn-applicationinsights-application-configurationdetails-logs): {{
+    - Log}}
+  [NetWeaverPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-netweaverprometheusexporter): {{
+    NetWeaverPrometheusExporter}}
+  [Processes](#cfn-applicationinsights-application-configurationdetails-processes): {{
+    - Process}}
+  [SQLServerPrometheusExporter](#cfn-applicationinsights-application-configurationdetails-sqlserverprometheusexporter): {{
+    SQLServerPrometheusExporter}}
+  [WindowsEvents](#cfn-applicationinsights-application-configurationdetails-windowsevents): {{
+    - WindowsEvent}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-configurationdetails-properties"></a>
 
-`AlarmMetrics`
-
+`AlarmMetrics`  <a name="cfn-applicationinsights-application-configurationdetails-alarmmetrics"></a>
 A list of metrics to monitor for the component. All component types can use `AlarmMetrics`.
+*Required*: No
+*Type*: Array of [AlarmMetric](aws-properties-applicationinsights-application-alarmmetric.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Alarms`  <a name="cfn-applicationinsights-application-configurationdetails-alarms"></a>
+A list of alarms to monitor for the component. All component types can use `Alarm`.
+*Required*: No
+*Type*: Array of [Alarm](aws-properties-applicationinsights-application-alarm.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [AlarmMetric](aws-properties-applicationinsights-application-alarmmetric.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Alarms`
-
-A list of alarms to monitor for the component. All component types can use
-`Alarm`.
-
-_Required_: No
-
-_Type_: Array of [Alarm](aws-properties-applicationinsights-application-alarm.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HAClusterPrometheusExporter`
-
+`HAClusterPrometheusExporter`  <a name="cfn-applicationinsights-application-configurationdetails-haclusterprometheusexporter"></a>
 The HA cluster Prometheus Exporter settings.
+*Required*: No
+*Type*: [HAClusterPrometheusExporter](aws-properties-applicationinsights-application-haclusterprometheusexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HAClusterPrometheusExporter](aws-properties-applicationinsights-application-haclusterprometheusexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HANAPrometheusExporter`
-
+`HANAPrometheusExporter`  <a name="cfn-applicationinsights-application-configurationdetails-hanaprometheusexporter"></a>
 The HANA DB Prometheus Exporter settings.
+*Required*: No
+*Type*: [HANAPrometheusExporter](aws-properties-applicationinsights-application-hanaprometheusexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HANAPrometheusExporter](aws-properties-applicationinsights-application-hanaprometheusexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JMXPrometheusExporter`
-
+`JMXPrometheusExporter`  <a name="cfn-applicationinsights-application-configurationdetails-jmxprometheusexporter"></a>
 A list of Java metrics to monitor for the component.
+*Required*: No
+*Type*: [JMXPrometheusExporter](aws-properties-applicationinsights-application-jmxprometheusexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Logs`  <a name="cfn-applicationinsights-application-configurationdetails-logs"></a>
+A list of logs to monitor for the component. Only Amazon EC2 instances can use `Logs`.
+*Required*: No
+*Type*: Array of [Log](aws-properties-applicationinsights-application-log.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [JMXPrometheusExporter](aws-properties-applicationinsights-application-jmxprometheusexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Logs`
-
-A list of logs to monitor for the component. Only Amazon EC2 instances can use
-`Logs`.
-
-_Required_: No
-
-_Type_: Array of [Log](aws-properties-applicationinsights-application-log.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetWeaverPrometheusExporter`
-
+`NetWeaverPrometheusExporter`  <a name="cfn-applicationinsights-application-configurationdetails-netweaverprometheusexporter"></a>
 Property description not available.
+*Required*: No
+*Type*: [NetWeaverPrometheusExporter](aws-properties-applicationinsights-application-netweaverprometheusexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NetWeaverPrometheusExporter](aws-properties-applicationinsights-application-netweaverprometheusexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Processes`
-
+`Processes`  <a name="cfn-applicationinsights-application-configurationdetails-processes"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Process](aws-properties-applicationinsights-application-process.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Process](aws-properties-applicationinsights-application-process.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SQLServerPrometheusExporter`
-
+`SQLServerPrometheusExporter`  <a name="cfn-applicationinsights-application-configurationdetails-sqlserverprometheusexporter"></a>
 Property description not available.
+*Required*: No
+*Type*: [SQLServerPrometheusExporter](aws-properties-applicationinsights-application-sqlserverprometheusexporter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SQLServerPrometheusExporter](aws-properties-applicationinsights-application-sqlserverprometheusexporter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WindowsEvents`
-
-A list of Windows Events to monitor for the component. Only Amazon EC2 instances
-running on Windows can use `WindowsEvents`.
-
-_Required_: No
-
-_Type_: Array of [WindowsEvent](aws-properties-applicationinsights-application-windowsevent.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentMonitoringSetting
-
-CustomComponent
+`WindowsEvents`  <a name="cfn-applicationinsights-application-configurationdetails-windowsevents"></a>
+A list of Windows Events to monitor for the component. Only Amazon EC2 instances running on Windows can use `WindowsEvents`.
+*Required*: No
+*Type*: Array of [WindowsEvent](aws-properties-applicationinsights-application-windowsevent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

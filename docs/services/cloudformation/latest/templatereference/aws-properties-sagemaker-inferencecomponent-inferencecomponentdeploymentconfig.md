@@ -2,68 +2,51 @@
 title: "AWS::SageMaker::InferenceComponent InferenceComponentDeploymentConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent InferenceComponentDeploymentConfig
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig"></a>
 
-The deployment configuration for an endpoint that hosts inference components. The
-configuration includes the desired deployment strategy and rollback settings.
+The deployment configuration for an endpoint that hosts inference components. The configuration includes the desired deployment strategy and rollback settings.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoRollbackConfiguration" : AutoRollbackConfiguration,
-  "RollingUpdatePolicy" : InferenceComponentRollingUpdatePolicy
+  "[AutoRollbackConfiguration](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-autorollbackconfiguration)" : {{AutoRollbackConfiguration}},
+  "[RollingUpdatePolicy](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-rollingupdatepolicy)" : {{InferenceComponentRollingUpdatePolicy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-syntax.yaml"></a>
 
-```yaml
-
-  AutoRollbackConfiguration:
-    AutoRollbackConfiguration
-  RollingUpdatePolicy:
-    InferenceComponentRollingUpdatePolicy
-
+```
+  [AutoRollbackConfiguration](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-autorollbackconfiguration): {{
+    AutoRollbackConfiguration}}
+  [RollingUpdatePolicy](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-rollingupdatepolicy): {{
+    InferenceComponentRollingUpdatePolicy}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-properties"></a>
 
-`AutoRollbackConfiguration`
-
+`AutoRollbackConfiguration`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-autorollbackconfiguration"></a>
 Configuration for automatic rollback during inference component deployment.
+*Required*: No
+*Type*: [AutoRollbackConfiguration](aws-properties-sagemaker-inferencecomponent-autorollbackconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AutoRollbackConfiguration](aws-properties-sagemaker-inferencecomponent-autorollbackconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RollingUpdatePolicy`
-
-Specifies a rolling deployment strategy for updating a SageMaker AI
-endpoint.
-
-_Required_: No
-
-_Type_: [InferenceComponentRollingUpdatePolicy](aws-properties-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceComponentContainerSpecification
-
-InferenceComponentRollingUpdatePolicy
+`RollingUpdatePolicy`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-rollingupdatepolicy"></a>
+Specifies a rolling deployment strategy for updating a SageMaker AI endpoint.
+*Required*: No
+*Type*: [InferenceComponentRollingUpdatePolicy](aws-properties-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

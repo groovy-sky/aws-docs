@@ -2,90 +2,81 @@
 title: "AWS::BedrockAgentCore::OAuth2CredentialProvider MicrosoftOauth2ProviderConfigInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OAuth2CredentialProvider MicrosoftOauth2ProviderConfigInput
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput"></a>
 
 Input configuration for a Microsoft OAuth2 provider.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientId" : String,
-  "ClientSecret" : String,
-  "TenantId" : String
+  "[ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientid)" : {{String}},
+  "[ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecret)" : {{String}},
+  "[ClientSecretConfig](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecretconfig)" : {{SecretReference}},
+  "[ClientSecretSource](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecretsource)" : {{String}},
+  "[TenantId](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-tenantid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-syntax.yaml"></a>
 
-```yaml
-
-  ClientId: String
-  ClientSecret: String
-  TenantId: String
-
+```
+  [ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientid): {{String}}
+  [ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecret): {{String}}
+  [ClientSecretConfig](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecretconfig): {{
+    SecretReference}}
+  [ClientSecretSource](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecretsource): {{String}}
+  [TenantId](#cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-tenantid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-properties"></a>
 
-`ClientId`
-
+`ClientId`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientid"></a>
 The client ID for the Microsoft OAuth2 provider.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientSecret`
-
+`ClientSecret`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecret"></a>
 The client secret for the Microsoft OAuth2 provider.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ClientSecretConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecretconfig"></a>
+A reference to the AWS Secrets Manager secret that stores the client secret. This includes the secret ID and the JSON key used to extract the client secret value from the secret. Required when `clientSecretSource` is set to `EXTERNAL`.
+*Required*: No
+*Type*: [SecretReference](aws-properties-bedrockagentcore-oauth2credentialprovider-secretreference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ClientSecretSource`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-clientsecretsource"></a>
+The source type of the client secret. Use `MANAGED` if the secret is managed by the service, or `EXTERNAL` if you manage the secret yourself in AWS Secrets Manager.
+*Required*: No
+*Type*: String
+*Allowed values*: `MANAGED | EXTERNAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TenantId`
-
-The Microsoft Entra ID (formerly Azure AD) tenant ID for your organization. This
-identifies the specific tenant within Microsoft's identity platform where your application
-is registered.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LinkedinOauth2ProviderConfigInput
-
-Oauth2AuthorizationServerMetadata
+`TenantId`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-microsoftoauth2providerconfiginput-tenantid"></a>
+The Microsoft Entra ID (formerly Azure AD) tenant ID for your organization. This identifies the specific tenant within Microsoft's identity platform where your application is registered.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

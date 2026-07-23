@@ -2,108 +2,71 @@
 title: "AWS::SecurityHub::AutomationRule SeverityUpdate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::AutomationRule SeverityUpdate
+<a name="aws-properties-securityhub-automationrule-severityupdate"></a>
 
 Updates to the severity information for a finding.
 
 ## Syntax
+<a name="aws-properties-securityhub-automationrule-severityupdate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-automationrule-severityupdate-syntax.json"></a>
 
-```json
-
+```
 {
-  "Label" : String,
-  "Normalized" : Integer,
-  "Product" : Number
+  "[Label](#cfn-securityhub-automationrule-severityupdate-label)" : {{String}},
+  "[Normalized](#cfn-securityhub-automationrule-severityupdate-normalized)" : {{Integer}},
+  "[Product](#cfn-securityhub-automationrule-severityupdate-product)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-automationrule-severityupdate-syntax.yaml"></a>
 
-```yaml
-
-  Label: String
-  Normalized: Integer
-  Product: Number
-
+```
+  [Label](#cfn-securityhub-automationrule-severityupdate-label): {{String}}
+  [Normalized](#cfn-securityhub-automationrule-severityupdate-normalized): {{Integer}}
+  [Product](#cfn-securityhub-automationrule-severityupdate-product): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-automationrule-severityupdate-properties"></a>
 
-`Label`
-
+`Label`  <a name="cfn-securityhub-automationrule-severityupdate-label"></a>
 The severity value of the finding. The allowed values are the following.
++ `INFORMATIONAL` - No issue was found.
++ `LOW` - The issue does not require action on its own.
++ `MEDIUM` - The issue must be addressed but not urgently.
++ `HIGH` - The issue must be addressed as a priority.
++ `CRITICAL` - The issue must be remediated immediately to avoid it escalating.
+*Required*: No
+*Type*: String
+*Allowed values*: `INFORMATIONAL | LOW | MEDIUM | HIGH | CRITICAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `INFORMATIONAL` \- No issue was found.
+`Normalized`  <a name="cfn-securityhub-automationrule-severityupdate-normalized"></a>
+The normalized severity for the finding. This attribute is to be deprecated in favor of `Label`.
+If you provide `Normalized` and don't provide `Label`, `Label` is set automatically as follows.
++ 0 - `INFORMATIONAL`
++ 1–39 - `LOW`
++ 40–69 - `MEDIUM`
++ 70–89 - `HIGH`
++ 90–100 - `CRITICAL`
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `LOW` \- The issue does not require action on its own.
-
-- `MEDIUM` \- The issue must be addressed but not urgently.
-
-- `HIGH` \- The issue must be addressed as a priority.
-
-- `CRITICAL` \- The issue must be remediated immediately to avoid it
-escalating.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INFORMATIONAL | LOW | MEDIUM | HIGH | CRITICAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Normalized`
-
-The normalized severity for the finding. This attribute is to be deprecated in favor of
-`Label`.
-
-If you provide `Normalized` and don't provide `Label`,
-`Label` is set automatically as follows.
-
-- 0 - `INFORMATIONAL`
-
-- 1–39 - `LOW`
-
-- 40–69 - `MEDIUM`
-
-- 70–89 - `HIGH`
-
-- 90–100 - `CRITICAL`
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Product`
-
-The native severity as defined by the AWS service or integrated partner product that
-generated the finding.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RelatedFinding
-
-StringFilter
+`Product`  <a name="cfn-securityhub-automationrule-severityupdate-product"></a>
+The native severity as defined by the AWS service or integrated partner product that generated the finding.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

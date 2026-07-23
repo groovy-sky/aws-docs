@@ -2,80 +2,69 @@
 title: "AWS::RDS::DBProxyEndpoint TagFormat"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBProxyEndpoint TagFormat
+<a name="aws-properties-rds-dbproxyendpoint-tagformat"></a>
 
 Metadata assigned to an Amazon RDS resource consisting of a key-value pair.
 
-For more information, see
-[Tagging Amazon RDS resources](../../../amazonrds/latest/userguide/user-tagging.md) in the _Amazon RDS User Guide_ or
-[Tagging Amazon Aurora and Amazon RDS resources](../../../amazonrds/latest/aurorauserguide/user-tagging.md) in the _Amazon Aurora User Guide_.
+For more information, see [Tagging Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html) in the *Amazon RDS User Guide* or [Tagging Amazon Aurora and Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Tagging.html) in the *Amazon Aurora User Guide*.
 
 ## Syntax
+<a name="aws-properties-rds-dbproxyendpoint-tagformat-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rds-dbproxyendpoint-tagformat-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-rds-dbproxyendpoint-tagformat-key)" : {{String}},
+  "[Value](#cfn-rds-dbproxyendpoint-tagformat-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rds-dbproxyendpoint-tagformat-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-rds-dbproxyendpoint-tagformat-key): {{String}}
+  [Value](#cfn-rds-dbproxyendpoint-tagformat-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rds-dbproxyendpoint-tagformat-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-rds-dbproxyendpoint-tagformat-key"></a>
+A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and can't be prefixed with `aws:` or `rds:`. The string can only contain only the set of Unicode letters, digits, white-space, '\_', '.', ':', '/', '=', '\+', '-', '@' (Java regex: "^([\\\\p{L}\\\\p{Z}\\\\p{N}\_.:/=\+\\\\-@]\*)$").
+*Required*: No
+*Type*: String
+*Pattern*: `(\w|\d|\s|\\|-|\.:=+-)*`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and can't be prefixed with `aws:` or `rds:`. The string can only contain only the set of Unicode letters, digits, white-space, '\_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^(\[\\\p{L}\\\p{Z}\\\p{N}\_.:/=+\\\-@\]\*)$").
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(\w|\d|\s|\\|-|\.:=+-)*`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and can't be prefixed with `aws:` or `rds:`. The string can only contain only the set of Unicode letters, digits, white-space, '\_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^(\[\\\p{L}\\\p{Z}\\\p{N}\_.:/=+\\\-@\]\*)$").
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(\w|\d|\s|\\|-|\.:=+-)*`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Value`  <a name="cfn-rds-dbproxyendpoint-tagformat-value"></a>
+A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and can't be prefixed with `aws:` or `rds:`. The string can only contain only the set of Unicode letters, digits, white-space, '\_', '.', ':', '/', '=', '\+', '-', '@' (Java regex: "^([\\\\p{L}\\\\p{Z}\\\\p{N}\_.:/=\+\\\\-@]\*)$").
+*Required*: No
+*Type*: String
+*Pattern*: `(\w|\d|\s|\\|-|\.:=+-)*`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-rds-dbproxyendpoint-tagformat--examples"></a>
 
 The following example specifies a tag for a DB proxy endpoint.
 
+###
+<a name="aws-properties-rds-dbproxyendpoint-tagformat--examples--"></a>
+
 #### JSON
+<a name="aws-properties-rds-dbproxyendpoint-tagformat--examples----json"></a>
 
-```json
-
+```
 "Tags" : [
    {
       "Key" : "keyname1",
@@ -89,20 +78,14 @@ The following example specifies a tag for a DB proxy endpoint.
 ```
 
 #### YAML
+<a name="aws-properties-rds-dbproxyendpoint-tagformat--examples----yaml"></a>
 
-```yaml
-
+```
 Tags:
   - Key: keyname1
     Value: value1
   - Key: keyname2
     Value: value2
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RDS::DBProxyEndpoint
-
-AWS::RDS::DBProxyTargetGroup
 
 All content copied from https://docs.aws.amazon.com/.

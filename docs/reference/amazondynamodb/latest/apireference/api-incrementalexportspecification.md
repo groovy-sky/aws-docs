@@ -3,62 +3,38 @@ title: "IncrementalExportSpecification"
 ---
 
 # IncrementalExportSpecification
+<a name="API_IncrementalExportSpecification"></a>
 
 Optional object containing the parameters specific to an incremental export.
 
 ## Contents
+<a name="API_IncrementalExportSpecification_Contents"></a>
 
-###### Note
-
+**Note**
 In the following list, the required parameters are described first.
 
-**ExportFromTime**
-
-Time in the past which provides the inclusive start range for the export table's data,
-counted in seconds from the start of the Unix epoch. The incremental export will reflect
-the table's state including and after this point in time.
-
+ ** ExportFromTime **   <a name="DDB-Type-IncrementalExportSpecification-ExportFromTime"></a>
+Time in the past which provides the inclusive start range for the export table's data, counted in seconds from the start of the Unix epoch. The incremental export will reflect the table's state including and after this point in time.
 Type: Timestamp
-
 Required: No
 
-**ExportToTime**
-
-Time in the past which provides the exclusive end range for the export table's data,
-counted in seconds from the start of the Unix epoch. The incremental export will reflect
-the table's state just prior to this point in time. If this is not provided, the latest
-time with data available will be used.
-
+ ** ExportToTime **   <a name="DDB-Type-IncrementalExportSpecification-ExportToTime"></a>
+Time in the past which provides the exclusive end range for the export table's data, counted in seconds from the start of the Unix epoch. The incremental export will reflect the table's state just prior to this point in time. If this is not provided, the latest time with data available will be used.
 Type: Timestamp
-
 Required: No
 
-**ExportViewType**
-
-The view type that was chosen for the export. Valid values are
-`NEW_AND_OLD_IMAGES` and `NEW_IMAGES`. The default value is
-`NEW_AND_OLD_IMAGES`.
-
+ ** ExportViewType **   <a name="DDB-Type-IncrementalExportSpecification-ExportViewType"></a>
+The view type that was chosen for the export. Valid values are `NEW_AND_OLD_IMAGES` and `NEW_IMAGES`. The default value is `NEW_AND_OLD_IMAGES`.
 Type: String
-
 Valid Values: `NEW_IMAGE | NEW_AND_OLD_IMAGES`
-
 Required: No
 
 ## See Also
+<a name="API_IncrementalExportSpecification_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/IncrementalExportSpecification)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/IncrementalExportSpecification)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/IncrementalExportSpecification)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImportTableDescription
-
-InputFormatOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/IncrementalExportSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/IncrementalExportSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/IncrementalExportSpecification)
 
 All content copied from https://docs.aws.amazon.com/.

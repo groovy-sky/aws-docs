@@ -2,70 +2,51 @@
 title: "AWS::NetworkFirewall::RuleGroup StatelessRulesAndCustomActions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::RuleGroup StatelessRulesAndCustomActions
+<a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions"></a>
 
-Stateless inspection criteria. Each stateless rule group uses exactly one of these data
-types to define its stateless rules.
+Stateless inspection criteria. Each stateless rule group uses exactly one of these data types to define its stateless rules.
 
 ## Syntax
+<a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomActions" : [ CustomAction, ... ],
-  "StatelessRules" : [ StatelessRule, ... ]
+  "[CustomActions](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-customactions)" : {{[ CustomAction, ... ]}},
+  "[StatelessRules](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-statelessrules)" : {{[ StatelessRule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions-syntax.yaml"></a>
 
-```yaml
-
-  CustomActions:
-    - CustomAction
-  StatelessRules:
-    - StatelessRule
-
+```
+  [CustomActions](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-customactions): {{
+    - CustomAction}}
+  [StatelessRules](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-statelessrules): {{
+    - StatelessRule}}
 ```
 
 ## Properties
+<a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions-properties"></a>
 
-`CustomActions`
+`CustomActions`  <a name="cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-customactions"></a>
+Defines an array of individual custom action definitions that are available for use by the stateless rules in this `StatelessRulesAndCustomActions` specification. You name each custom action that you define, and then you can use it by name in your stateless rule definition `Actions` specification.
+*Required*: No
+*Type*: Array of [CustomAction](aws-properties-networkfirewall-rulegroup-customaction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Defines an array of individual custom action definitions that are available for use by
-the stateless rules in this `StatelessRulesAndCustomActions` specification. You
-name each custom action that you define, and then you can use it by name in your stateless rule definition
-`Actions` specification.
-
-_Required_: No
-
-_Type_: Array of [CustomAction](aws-properties-networkfirewall-rulegroup-customaction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatelessRules`
-
+`StatelessRules`  <a name="cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-statelessrules"></a>
 Defines the set of stateless rules for use in a stateless rule group.
-
-_Required_: Yes
-
-_Type_: Array of [StatelessRule](aws-properties-networkfirewall-rulegroup-statelessrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StatelessRule
-
-SummaryConfiguration
+*Required*: Yes
+*Type*: Array of [StatelessRule](aws-properties-networkfirewall-rulegroup-statelessrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

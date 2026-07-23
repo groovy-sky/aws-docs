@@ -2,98 +2,68 @@
 title: "AWS::GreengrassV2::ComponentVersion LambdaVolumeMount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::ComponentVersion LambdaVolumeMount
+<a name="aws-properties-greengrassv2-componentversion-lambdavolumemount"></a>
 
-Contains information about a volume that Linux processes in a container can access. When
-you define a volume, the AWS IoT Greengrass Core software mounts the source files to the
-destination inside the container.
+Contains information about a volume that Linux processes in a container can access. When you define a volume, the AWS IoT Greengrass Core software mounts the source files to the destination inside the container.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-componentversion-lambdavolumemount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-componentversion-lambdavolumemount-syntax.json"></a>
 
-```json
-
+```
 {
-  "AddGroupOwner" : Boolean,
-  "DestinationPath" : String,
-  "Permission" : String,
-  "SourcePath" : String
+  "[AddGroupOwner](#cfn-greengrassv2-componentversion-lambdavolumemount-addgroupowner)" : {{Boolean}},
+  "[DestinationPath](#cfn-greengrassv2-componentversion-lambdavolumemount-destinationpath)" : {{String}},
+  "[Permission](#cfn-greengrassv2-componentversion-lambdavolumemount-permission)" : {{String}},
+  "[SourcePath](#cfn-greengrassv2-componentversion-lambdavolumemount-sourcepath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-componentversion-lambdavolumemount-syntax.yaml"></a>
 
-```yaml
-
-  AddGroupOwner: Boolean
-  DestinationPath: String
-  Permission: String
-  SourcePath: String
-
+```
+  [AddGroupOwner](#cfn-greengrassv2-componentversion-lambdavolumemount-addgroupowner): {{Boolean}}
+  [DestinationPath](#cfn-greengrassv2-componentversion-lambdavolumemount-destinationpath): {{String}}
+  [Permission](#cfn-greengrassv2-componentversion-lambdavolumemount-permission): {{String}}
+  [SourcePath](#cfn-greengrassv2-componentversion-lambdavolumemount-sourcepath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-componentversion-lambdavolumemount-properties"></a>
 
-`AddGroupOwner`
-
-Whether or not to add the AWS IoT Greengrass user group as an owner of the
-volume.
-
+`AddGroupOwner`  <a name="cfn-greengrassv2-componentversion-lambdavolumemount-addgroupowner"></a>
+Whether or not to add the AWS IoT Greengrass user group as an owner of the volume.
 Default: `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DestinationPath`
-
+`DestinationPath`  <a name="cfn-greengrassv2-componentversion-lambdavolumemount-destinationpath"></a>
 The path to the logical volume in the file system.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Permission`
-
-The permission to access the volume: read/only ( `ro`) or read/write
-( `rw`).
-
+`Permission`  <a name="cfn-greengrassv2-componentversion-lambdavolumemount-permission"></a>
+The permission to access the volume: read/only (`ro`) or read/write (`rw`).
 Default: `ro`
+*Required*: No
+*Type*: String
+*Allowed values*: `ro | rw`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ro | rw`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourcePath`
-
+`SourcePath`  <a name="cfn-greengrassv2-componentversion-lambdavolumemount-sourcepath"></a>
 The path to the physical volume in the file system.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaLinuxProcessParams
-
-AWS::GreengrassV2::Deployment
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

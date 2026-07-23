@@ -2,56 +2,43 @@
 title: "AWS::WAFv2::WebACL RateLimitUriPath"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RateLimitUriPath
+<a name="aws-properties-wafv2-webacl-ratelimituripath"></a>
 
-Specifies the request's URI path as an aggregate key for a rate-based rule. Each distinct URI path contributes to the aggregation instance. If you use just the
-URI path as your custom key, then each URI path fully defines an aggregation instance.
+Specifies the request's URI path as an aggregate key for a rate-based rule. Each distinct URI path contributes to the aggregation instance. If you use just the URI path as your custom key, then each URI path fully defines an aggregation instance.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-ratelimituripath-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-ratelimituripath-syntax.json"></a>
 
-```json
-
+```
 {
-  "TextTransformations" : [ TextTransformation, ... ]
+  "[TextTransformations](#cfn-wafv2-webacl-ratelimituripath-texttransformations)" : {{[ TextTransformation, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-ratelimituripath-syntax.yaml"></a>
 
-```yaml
-
-  TextTransformations:
-    - TextTransformation
-
+```
+  [TextTransformations](#cfn-wafv2-webacl-ratelimituripath-texttransformations): {{
+    - TextTransformation}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-ratelimituripath-properties"></a>
 
-`TextTransformations`
-
+`TextTransformations`  <a name="cfn-wafv2-webacl-ratelimituripath-texttransformations"></a>
 Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. Text transformations are used in rule match statements, to transform the `FieldToMatch` request component before inspecting it, and they're used in rate-based rule statements, to transform request components before using them as custom aggregation keys. If you specify one or more transformations to apply, AWS WAF performs all transformations on the specified content, starting from the lowest priority setting, and then uses the transformed component contents.
-
-_Required_: Yes
-
-_Type_: Array of [TextTransformation](aws-properties-wafv2-webacl-texttransformation.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RateLimitQueryString
-
-Regex
+*Required*: Yes
+*Type*: Array of [TextTransformation](aws-properties-wafv2-webacl-texttransformation.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

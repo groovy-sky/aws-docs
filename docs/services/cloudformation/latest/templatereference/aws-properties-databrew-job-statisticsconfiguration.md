@@ -2,72 +2,53 @@
 title: "AWS::DataBrew::Job StatisticsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Job StatisticsConfiguration
+<a name="aws-properties-databrew-job-statisticsconfiguration"></a>
 
-Configuration of evaluations for a profile job. This configuration can be used to select
-evaluations and override the parameters of selected evaluations.
+Configuration of evaluations for a profile job. This configuration can be used to select evaluations and override the parameters of selected evaluations.
 
 ## Syntax
+<a name="aws-properties-databrew-job-statisticsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-job-statisticsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IncludedStatistics" : [ String, ... ],
-  "Overrides" : [ StatisticOverride, ... ]
+  "[IncludedStatistics](#cfn-databrew-job-statisticsconfiguration-includedstatistics)" : {{[ String, ... ]}},
+  "[Overrides](#cfn-databrew-job-statisticsconfiguration-overrides)" : {{[ StatisticOverride, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-job-statisticsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IncludedStatistics:
-    - String
-  Overrides:
-    - StatisticOverride
-
+```
+  [IncludedStatistics](#cfn-databrew-job-statisticsconfiguration-includedstatistics): {{
+    - String}}
+  [Overrides](#cfn-databrew-job-statisticsconfiguration-overrides): {{
+    - StatisticOverride}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-job-statisticsconfiguration-properties"></a>
 
-`IncludedStatistics`
+`IncludedStatistics`  <a name="cfn-databrew-job-statisticsconfiguration-includedstatistics"></a>
+List of included evaluations. When the list is undefined, all supported evaluations will be included.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-List of included evaluations. When the list is undefined, all supported
-evaluations will be included.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Overrides`
-
+`Overrides`  <a name="cfn-databrew-job-statisticsconfiguration-overrides"></a>
 List of overrides for evaluations.
-
-_Required_: No
-
-_Type_: Array of [StatisticOverride](aws-properties-databrew-job-statisticoverride.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StatisticOverride
-
-Tag
+*Required*: No
+*Type*: Array of [StatisticOverride](aws-properties-databrew-job-statisticoverride.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

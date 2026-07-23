@@ -2,67 +2,51 @@
 title: "AWS::MediaConnect::RouterInput RouterInputTransitEncryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput RouterInputTransitEncryption
+<a name="aws-properties-mediaconnect-routerinput-routerinputtransitencryption"></a>
 
 The transit encryption settings for a router input.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routerinput-routerinputtransitencryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routerinput-routerinputtransitencryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionKeyConfiguration" : RouterInputTransitEncryptionKeyConfiguration,
-  "EncryptionKeyType" : String
+  "[EncryptionKeyConfiguration](#cfn-mediaconnect-routerinput-routerinputtransitencryption-encryptionkeyconfiguration)" : {{RouterInputTransitEncryptionKeyConfiguration}},
+  "[EncryptionKeyType](#cfn-mediaconnect-routerinput-routerinputtransitencryption-encryptionkeytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routerinput-routerinputtransitencryption-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionKeyConfiguration:
-    RouterInputTransitEncryptionKeyConfiguration
-  EncryptionKeyType: String
-
+```
+  [EncryptionKeyConfiguration](#cfn-mediaconnect-routerinput-routerinputtransitencryption-encryptionkeyconfiguration): {{
+    RouterInputTransitEncryptionKeyConfiguration}}
+  [EncryptionKeyType](#cfn-mediaconnect-routerinput-routerinputtransitencryption-encryptionkeytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routerinput-routerinputtransitencryption-properties"></a>
 
-`EncryptionKeyConfiguration`
-
+`EncryptionKeyConfiguration`  <a name="cfn-mediaconnect-routerinput-routerinputtransitencryption-encryptionkeyconfiguration"></a>
 Contains the configuration details for the encryption key used in transit encryption, including the key source and associated parameters.
+*Required*: Yes
+*Type*: [RouterInputTransitEncryptionKeyConfiguration](aws-properties-mediaconnect-routerinput-routerinputtransitencryptionkeyconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [RouterInputTransitEncryptionKeyConfiguration](aws-properties-mediaconnect-routerinput-routerinputtransitencryptionkeyconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionKeyType`
-
+`EncryptionKeyType`  <a name="cfn-mediaconnect-routerinput-routerinputtransitencryption-encryptionkeytype"></a>
 Specifies the type of encryption key to use for transit encryption.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SECRETS_MANAGER | AUTOMATIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RouterInputProtocolConfiguration
-
-RouterInputTransitEncryptionKeyConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `SECRETS_MANAGER | AUTOMATIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

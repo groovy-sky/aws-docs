@@ -3,52 +3,41 @@ title: "Using the EXISTS function with PartiQL for DynamoDB"
 ---
 
 # Using the EXISTS function with PartiQL for DynamoDB
+<a name="ql-functions.exists"></a>
 
-You can use EXISTS to perform the same function as `ConditionCheck` does in
-the [TransactWriteItems](transaction-apis.md#transaction-apis-txwriteitems) API. The EXISTS function can only be used in
-transactions.
+You can use EXISTS to perform the same function as `ConditionCheck` does in the [TransactWriteItems](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html#transaction-apis-txwriteitems) API. The EXISTS function can only be used in transactions.
 
-Given a value, returns `TRUE` if the value is a non-empty collection.
-Otherwise, returns `FALSE`.
+Given a value, returns `TRUE` if the value is a non-empty collection. Otherwise, returns `FALSE`.
 
-###### Note
-
+**Note**
 This function can only be used in transactional operations.
 
 ## Syntax
+<a name="ql-functions.exists.syntax"></a>
 
-```nohighlight
-
-EXISTS ( statement )
+```
+EXISTS ( {{statement}} )
 ```
 
 ## Arguments
+<a name="ql-functions.exists.arguments"></a>
 
-`statement`
-
+{{statement}}
 (Required) The SELECT statement that the function evaluates.
-
-###### Note
-
 The SELECT statement must specify a full primary key and one other condition.
 
 ## Return type
+<a name="ql-functions.exists.return-type"></a>
 
 `bool`
 
 ## Examples
+<a name="ql-functions.exists.examples"></a>
 
-```nohighlight
-
+```
 EXISTS(
     SELECT * FROM "Music"
     WHERE "Artist" = 'Acme Band' AND "SongTitle" = 'PartiQL Rocks')
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Functions
-
-Begins\_with
 
 All content copied from https://docs.aws.amazon.com/.

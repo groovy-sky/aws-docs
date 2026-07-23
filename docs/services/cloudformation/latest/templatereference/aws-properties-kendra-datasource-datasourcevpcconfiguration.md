@@ -2,77 +2,55 @@
 title: "AWS::Kendra::DataSource DataSourceVpcConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource DataSourceVpcConfiguration
+<a name="aws-properties-kendra-datasource-datasourcevpcconfiguration"></a>
 
 Provides the configuration information to connect to an Amazon VPC.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-datasourcevpcconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-datasourcevpcconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-kendra-datasource-datasourcevpcconfiguration-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-kendra-datasource-datasourcevpcconfiguration-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-datasourcevpcconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-kendra-datasource-datasourcevpcconfiguration-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-kendra-datasource-datasourcevpcconfiguration-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-datasourcevpcconfiguration-properties"></a>
 
-`SecurityGroupIds`
+`SecurityGroupIds`  <a name="cfn-kendra-datasource-datasourcevpcconfiguration-securitygroupids"></a>
+A list of identifiers of security groups within your Amazon VPC. The security groups should enable Amazon Kendra to connect to the data source.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `200 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of identifiers of security groups within your Amazon VPC. The security groups
-should enable Amazon Kendra to connect to the data source.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `200 | 10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
-A list of identifiers for subnets within your Amazon VPC. The subnets should be able to
-connect to each other in the VPC, and they should have outgoing access to the Internet through
-a NAT device.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `200 | 6`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSourceToIndexFieldMapping
-
-DocumentAttributeCondition
+`SubnetIds`  <a name="cfn-kendra-datasource-datasourcevpcconfiguration-subnetids"></a>
+A list of identifiers for subnets within your Amazon VPC. The subnets should be able to connect to each other in the VPC, and they should have outgoing access to the Internet through a NAT device.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `200 | 6`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

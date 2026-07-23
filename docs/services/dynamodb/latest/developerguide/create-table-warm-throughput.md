@@ -3,44 +3,38 @@ title: "Create a new DynamoDB table with higher warm throughput"
 ---
 
 # Create a new DynamoDB table with higher warm throughput
+<a name="create-table-warm-throughput"></a>
 
-You can adjust the warm throughput values when you create your DynamoDB table by
-following the steps below. These steps also apply when creating a [global table](globaltables.md) or [secondary index](secondaryindexes.md).
+You can adjust the warm throughput values when you create your DynamoDB table by following the steps below. These steps also apply when creating a [global table](GlobalTables.md) or [secondary index](SecondaryIndexes.md).
 
-To create a DynamoDB table and adjust the warm throughput values through the
-console:
+## AWS Management Console
+<a name="warm-throughput-create-console"></a>
 
-1. Sign in to the AWS Management Console and open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+To create a DynamoDB table and adjust the warm throughput values through the console:
 
-2. Select **Create table**.
+1. Sign in to the AWS Management Console and open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-3. Choose a **Table name**, **Partition key**, and **Sort key (optional)**.
+1. Select **Create table**.
 
-4. For **Table settings**, choose
-    **Customize settings**.
+1. Choose a **Table name**, **Partition key**, and **Sort key (optional)**.
 
-5. In the **Warm throughput** field,
-    choose **Increase warm**
-**throughput.**
+1. For **Table settings**, choose **Customize settings**.
 
-6. Adjust the **read units per second**
-    and **write units pers second**. These
-    two settings define the maximum throughput your table can instantly
-    handle.
+1. In the **Warm throughput **field, choose **Increase warm throughput.**
 
-7. Continue adding any remaining table details and then select
-    **Create table**.
+1. Adjust the **read units per second** and **write units pers second**. These two settings define the maximum throughput your table can instantly handle.
 
-The following AWS CLI example shows you how to create a DynamoDB table with
-customized warm throughput values.
+1. Continue adding any remaining table details and then select **Create table**.
 
-1. Run the `create-table` operation to create the
-    following DynamoDB table.
+## AWS CLI
+<a name="warm-throughput-create-CLI"></a>
 
-```
+The following AWS CLI example shows you how to create a DynamoDB table with customized warm throughput values.
 
-aws dynamodb create-table \
+1. Run the `create-table` operation to create the following DynamoDB table.
+
+   ```
+   aws dynamodb create-table \
        --table-name GameScores \
        --attribute-definitions AttributeName=UserId,AttributeType=S \
                                AttributeName=GameTitle,AttributeType=S \
@@ -69,19 +63,12 @@ aws dynamodb create-table \
            ]" \
        --warm-throughput ReadUnitsPerSecond=12345,WriteUnitsPerSecond=4567 \
        --region us-east-1
-```
+   ```
 
-2. You’ll receive a response similar to the one below. Your
-    `WarmThroughput` settings will be displayed as
-    `ReadUnitsPerSecond` and
-    `WriteUnitsPerSecond`. The `Status` will
-    be `UPDATING` when the warm throughput value is being
-    updated, and `ACTIVE` when the new warm throughput value
-    is set.
+1. You’ll receive a response similar to the one below. Your `WarmThroughput` settings will be displayed as `ReadUnitsPerSecond` and `WriteUnitsPerSecond`. The `Status` will be `UPDATING` when the warm throughput value is being updated, and `ACTIVE` when the new warm throughput value is set.
 
-```
-
-{
+   ```
+   {
        "TableDescription": {
            "AttributeDefinitions": [
                {
@@ -161,100 +148,159 @@ aws dynamodb create-table \
                "Status": "UPDATING"
            }
        }
-}
+   }
+   ```
+
+## AWS SDK
+<a name="warm-throughput-create-SDK"></a>
+
+The following SDK examples shows you how to create a DynamoDB table with customized warm throughput values.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+Create DynamoDB table with warm throughput setting using AWS SDK for Java 2.x.
+
 ```
-
-The following SDK examples shows you how to create a DynamoDB table with
-customized warm throughput values.
-
-Java
-
-```java
-
-import software.amazon.awscdk.services.dynamodb.ProjectionType;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
-import software.amazon.awssdk.services.dynamodb.model.CreateTableResponse;
+import software.amazon.awssdk.services.dynamodb.model.AttributeDefinition;
 import software.amazon.awssdk.services.dynamodb.model.CreateTableRequest;
+import software.amazon.awssdk.services.dynamodb.model.CreateTableResponse;
+import software.amazon.awssdk.services.dynamodb.model.GlobalSecondaryIndex;
 import software.amazon.awssdk.services.dynamodb.model.KeySchemaElement;
 import software.amazon.awssdk.services.dynamodb.model.KeyType;
-import software.amazon.awssdk.services.dynamodb.model.ProvisionedThroughput;
 import software.amazon.awssdk.services.dynamodb.model.Projection;
-import software.amazon.awssdk.services.dynamodb.model.GlobalSecondaryIndex;
-import software.amazon.awssdk.services.dynamodb.model.AttributeDefinition;
+import software.amazon.awssdk.services.dynamodb.model.ProvisionedThroughput;
 import software.amazon.awssdk.services.dynamodb.model.ScalarAttributeType;
 import software.amazon.awssdk.services.dynamodb.model.WarmThroughput;
-...
 
-public static WarmThroughput buildWarmThroughput(final Long readUnitsPerSecond,
-                                                 final Long writeUnitsPerSecond) {
-    return WarmThroughput.builder()
+    public static WarmThroughput buildWarmThroughput(final Long readUnitsPerSecond, final Long writeUnitsPerSecond) {
+        return WarmThroughput.builder()
             .readUnitsPerSecond(readUnitsPerSecond)
             .writeUnitsPerSecond(writeUnitsPerSecond)
             .build();
-}
-private static AttributeDefinition buildAttributeDefinition(final String attributeName,
-                                                            final ScalarAttributeType scalarAttributeType) {
-    return AttributeDefinition.builder()
+    }
+
+    /**
+     * Builds a ProvisionedThroughput object with the specified read and write capacity units.
+     *
+     * @param readCapacityUnits The read capacity units
+     * @param writeCapacityUnits The write capacity units
+     * @return A configured ProvisionedThroughput object
+     */
+    public static ProvisionedThroughput buildProvisionedThroughput(
+        final Long readCapacityUnits, final Long writeCapacityUnits) {
+        return ProvisionedThroughput.builder()
+            .readCapacityUnits(readCapacityUnits)
+            .writeCapacityUnits(writeCapacityUnits)
+            .build();
+    }
+
+    /**
+     * Builds an AttributeDefinition with the specified name and type.
+     *
+     * @param attributeName The attribute name
+     * @param scalarAttributeType The attribute type
+     * @return A configured AttributeDefinition
+     */
+    private static AttributeDefinition buildAttributeDefinition(
+        final String attributeName, final ScalarAttributeType scalarAttributeType) {
+        return AttributeDefinition.builder()
             .attributeName(attributeName)
             .attributeType(scalarAttributeType)
             .build();
-}
-private static KeySchemaElement buildKeySchemaElement(final String attributeName,
-                                                      final KeyType keyType) {
-    return KeySchemaElement.builder()
+    }
+
+    /**
+     * Builds a KeySchemaElement with the specified name and key type.
+     *
+     * @param attributeName The attribute name
+     * @param keyType The key type (HASH or RANGE)
+     * @return A configured KeySchemaElement
+     */
+    private static KeySchemaElement buildKeySchemaElement(final String attributeName, final KeyType keyType) {
+        return KeySchemaElement.builder()
             .attributeName(attributeName)
             .keyType(keyType)
             .build();
-}
-public static void createDynamoDBTable(DynamoDbClient ddb,
-                                       String tableName,
-                                       String partitionKey,
-                                       String sortKey,
-                                       String miscellaneousKeyAttribute,
-                                       String nonKeyAttribute,
-                                       Long tableReadCapacityUnits,
-                                       Long tableWriteCapacityUnits,
-                                       Long tableWarmReadUnitsPerSecond,
-                                       Long tableWarmWriteUnitsPerSecond,
-                                       String globalSecondaryIndexName,
-                                       Long globalSecondaryIndexReadCapacityUnits,
-                                       Long globalSecondaryIndexWriteCapacityUnits,
-                                       Long globalSecondaryIndexWarmReadUnitsPerSecond,
-                                       Long globalSecondaryIndexWarmWriteUnitsPerSecond) {
+    }
 
-    // Define the table attributes
-    final AttributeDefinition partitionKeyAttribute = buildAttributeDefinition(partitionKey, ScalarAttributeType.S);
-    final AttributeDefinition sortKeyAttribute = buildAttributeDefinition(sortKey, ScalarAttributeType.S);
-    final AttributeDefinition miscellaneousKeyAttributeDefinition = buildAttributeDefinition(miscellaneousKeyAttribute, ScalarAttributeType.N);
-    final AttributeDefinition[] attributeDefinitions = {partitionKeyAttribute, sortKeyAttribute, miscellaneousKeyAttributeDefinition};
+    /**
+     * Creates a DynamoDB table with the specified configuration including warm throughput settings.
+     *
+     * @param ddb The DynamoDB client
+     * @param tableName The name of the table to create
+     * @param partitionKey The partition key attribute name
+     * @param sortKey The sort key attribute name
+     * @param miscellaneousKeyAttribute Additional key attribute name for GSI
+     * @param nonKeyAttribute Non-key attribute to include in GSI projection
+     * @param tableReadCapacityUnits Read capacity units for the table
+     * @param tableWriteCapacityUnits Write capacity units for the table
+     * @param tableWarmReadUnitsPerSecond Warm read units per second for the table
+     * @param tableWarmWriteUnitsPerSecond Warm write units per second for the table
+     * @param globalSecondaryIndexName The name of the GSI to create
+     * @param globalSecondaryIndexReadCapacityUnits Read capacity units for the GSI
+     * @param globalSecondaryIndexWriteCapacityUnits Write capacity units for the GSI
+     * @param globalSecondaryIndexWarmReadUnitsPerSecond Warm read units per second for the GSI
+     * @param globalSecondaryIndexWarmWriteUnitsPerSecond Warm write units per second for the GSI
+     */
+    public static void createDynamoDBTable(
+        final DynamoDbClient ddb,
+        final String tableName,
+        final String partitionKey,
+        final String sortKey,
+        final String miscellaneousKeyAttribute,
+        final String nonKeyAttribute,
+        final Long tableReadCapacityUnits,
+        final Long tableWriteCapacityUnits,
+        final Long tableWarmReadUnitsPerSecond,
+        final Long tableWarmWriteUnitsPerSecond,
+        final String globalSecondaryIndexName,
+        final Long globalSecondaryIndexReadCapacityUnits,
+        final Long globalSecondaryIndexWriteCapacityUnits,
+        final Long globalSecondaryIndexWarmReadUnitsPerSecond,
+        final Long globalSecondaryIndexWarmWriteUnitsPerSecond) {
 
-    // Define the table key schema
-    final KeySchemaElement partitionKeyElement = buildKeySchemaElement(partitionKey, KeyType.HASH);
-    final KeySchemaElement sortKeyElement = buildKeySchemaElement(sortKey, KeyType.RANGE);
-    final KeySchemaElement[] keySchema = {partitionKeyElement, sortKeyElement};
+        // Define the table attributes
+        final AttributeDefinition partitionKeyAttribute = buildAttributeDefinition(partitionKey, ScalarAttributeType.S);
+        final AttributeDefinition sortKeyAttribute = buildAttributeDefinition(sortKey, ScalarAttributeType.S);
+        final AttributeDefinition miscellaneousKeyAttributeDefinition =
+            buildAttributeDefinition(miscellaneousKeyAttribute, ScalarAttributeType.N);
+        final AttributeDefinition[] attributeDefinitions = {
+            partitionKeyAttribute, sortKeyAttribute, miscellaneousKeyAttributeDefinition
+        };
 
-    // Define the provisioned throughput for the table
-    final ProvisionedThroughput provisionedThroughput = ProvisionedThroughput.builder()
-            .readCapacityUnits(tableReadCapacityUnits)
-            .writeCapacityUnits(tableWriteCapacityUnits)
-            .build();
+        // Define the table key schema
+        final KeySchemaElement partitionKeyElement = buildKeySchemaElement(partitionKey, KeyType.HASH);
+        final KeySchemaElement sortKeyElement = buildKeySchemaElement(sortKey, KeyType.RANGE);
+        final KeySchemaElement[] keySchema = {partitionKeyElement, sortKeyElement};
 
-    // Define the Global Secondary Index (GSI)
-    final KeySchemaElement globalSecondaryIndexPartitionKeyElement = buildKeySchemaElement(sortKey, KeyType.HASH);
-    final KeySchemaElement globalSecondaryIndexSortKeyElement = buildKeySchemaElement(miscellaneousKeyAttribute, KeyType.RANGE);
-    final KeySchemaElement[] gsiKeySchema = {globalSecondaryIndexPartitionKeyElement, globalSecondaryIndexSortKeyElement};
+        // Define the provisioned throughput for the table
+        final ProvisionedThroughput provisionedThroughput =
+            buildProvisionedThroughput(tableReadCapacityUnits, tableWriteCapacityUnits);
 
-    final Projection gsiProjection = Projection.builder()
-            .projectionType(String.valueOf(ProjectionType.INCLUDE))
+        // Define the Global Secondary Index (GSI)
+        final KeySchemaElement globalSecondaryIndexPartitionKeyElement = buildKeySchemaElement(sortKey, KeyType.HASH);
+        final KeySchemaElement globalSecondaryIndexSortKeyElement =
+            buildKeySchemaElement(miscellaneousKeyAttribute, KeyType.RANGE);
+        final KeySchemaElement[] gsiKeySchema = {
+            globalSecondaryIndexPartitionKeyElement, globalSecondaryIndexSortKeyElement
+        };
+
+        final Projection gsiProjection = Projection.builder()
+            .projectionType(PROJECTION_TYPE_INCLUDE)
             .nonKeyAttributes(nonKeyAttribute)
             .build();
-    final ProvisionedThroughput gsiProvisionedThroughput = ProvisionedThroughput.builder()
-            .readCapacityUnits(globalSecondaryIndexReadCapacityUnits)
-            .writeCapacityUnits(globalSecondaryIndexWriteCapacityUnits)
-            .build();
-    // Define the warm throughput for the Global Secondary Index (GSI)
-    final WarmThroughput gsiWarmThroughput = buildWarmThroughput(globalSecondaryIndexWarmReadUnitsPerSecond, globalSecondaryIndexWarmWriteUnitsPerSecond);
-    final GlobalSecondaryIndex globalSecondaryIndex = GlobalSecondaryIndex.builder()
+
+        final ProvisionedThroughput gsiProvisionedThroughput =
+            buildProvisionedThroughput(globalSecondaryIndexReadCapacityUnits, globalSecondaryIndexWriteCapacityUnits);
+
+        // Define the warm throughput for the Global Secondary Index (GSI)
+        final WarmThroughput gsiWarmThroughput = buildWarmThroughput(
+            globalSecondaryIndexWarmReadUnitsPerSecond, globalSecondaryIndexWarmWriteUnitsPerSecond);
+
+        final GlobalSecondaryIndex globalSecondaryIndex = GlobalSecondaryIndex.builder()
             .indexName(globalSecondaryIndexName)
             .keySchema(gsiKeySchema)
             .projection(gsiProjection)
@@ -262,10 +308,11 @@ public static void createDynamoDBTable(DynamoDbClient ddb,
             .warmThroughput(gsiWarmThroughput)
             .build();
 
-    // Define the warm throughput for the table
-    final WarmThroughput tableWarmThroughput = buildWarmThroughput(tableWarmReadUnitsPerSecond, tableWarmWriteUnitsPerSecond);
+        // Define the warm throughput for the table
+        final WarmThroughput tableWarmThroughput =
+            buildWarmThroughput(tableWarmReadUnitsPerSecond, tableWarmWriteUnitsPerSecond);
 
-    final CreateTableRequest request = CreateTableRequest.builder()
+        final CreateTableRequest request = CreateTableRequest.builder()
             .tableName(tableName)
             .attributeDefinitions(attributeDefinitions)
             .keySchema(keySchema)
@@ -274,116 +321,22 @@ public static void createDynamoDBTable(DynamoDbClient ddb,
             .warmThroughput(tableWarmThroughput)
             .build();
 
-    CreateTableResponse response = ddb.createTable(request);
-    System.out.println(response);
-}
+        final CreateTableResponse response = ddb.createTable(request);
+        System.out.println(response);
+    }
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable) in *AWS SDK for Java 2.x API Reference*.
 
-Python
+------
+#### [ JavaScript ]
 
-```python
+**SDK for JavaScript (v3)**
+Create DynamoDB table with warm throughput setting using AWS SDK for JavaScript.
 
-from boto3 import resource
-from botocore.exceptions import ClientError
-
-def create_dynamodb_table_warm_throughput(table_name, partition_key, sort_key, misc_key_attr, non_key_attr, table_provisioned_read_units, table_provisioned_write_units, table_warm_reads, table_warm_writes, gsi_name, gsi_provisioned_read_units, gsi_provisioned_write_units, gsi_warm_reads, gsi_warm_writes, region_name="us-east-1"):
-    """
-    Creates a DynamoDB table with a warm throughput setting configured.
-
-    :param table_name: The name of the table to be created.
-    :param partition_key: The partition key for the table being created.
-    :param sort_key: The sort key for the table being created.
-    :param misc_key_attr: A miscellaneous key attribute for the table being created.
-    :param non_key_attr: A non-key attribute for the table being created.
-    :param table_provisioned_read_units: The newly created table's provisioned read capacity units.
-    :param table_provisioned_write_units: The newly created table's provisioned write capacity units.
-    :param table_warm_reads: The read units per second setting for the table's warm throughput.
-    :param table_warm_writes: The write units per second setting for the table's warm throughput.
-    :param gsi_name: The name of the Global Secondary Index (GSI) to be created on the table.
-    :param gsi_provisioned_read_units: The configured Global Secondary Index (GSI) provisioned read capacity units.
-    :param gsi_provisioned_write_units: The configured Global Secondary Index (GSI) provisioned write capacity units.
-    :param gsi_warm_reads: The read units per second setting for the Global Secondary Index (GSI)'s warm throughput.
-    :param gsi_warm_writes: The write units per second setting for the Global Secondary Index (GSI)'s warm throughput.
-    :param region_name: The AWS Region name to target. defaults to us-east-1
-    """
-    try:
-        ddb = resource('dynamodb', region_name)
-
-        # Define the table attributes
-        attribute_definitions = [
-            { "AttributeName": partition_key, "AttributeType": "S" },
-            { "AttributeName": sort_key, "AttributeType": "S" },
-            { "AttributeName": misc_key_attr, "AttributeType": "N" }
-        ]
-
-        # Define the table key schema
-        key_schema = [
-            { "AttributeName": partition_key, "KeyType": "HASH" },
-            { "AttributeName": sort_key, "KeyType": "RANGE" }
-        ]
-
-        # Define the provisioned throughput for the table
-        provisioned_throughput = {
-            "ReadCapacityUnits": table_provisioned_read_units,
-            "WriteCapacityUnits": table_provisioned_write_units
-        }
-
-        # Define the global secondary index
-        gsi_key_schema = [
-            { "AttributeName": sort_key, "KeyType": "HASH" },
-            { "AttributeName": misc_key_attr, "KeyType": "RANGE" }
-        ]
-        gsi_projection = {
-            "ProjectionType": "INCLUDE",
-            "NonKeyAttributes": [non_key_attr]
-        }
-        gsi_provisioned_throughput = {
-            "ReadCapacityUnits": gsi_provisioned_read_units,
-            "WriteCapacityUnits": gsi_provisioned_write_units
-        }
-        gsi_warm_throughput = {
-            "ReadUnitsPerSecond": gsi_warm_reads,
-            "WriteUnitsPerSecond": gsi_warm_writes
-        }
-        global_secondary_indexes = [
-            {
-                "IndexName": gsi_name,
-                "KeySchema": gsi_key_schema,
-                "Projection": gsi_projection,
-                "ProvisionedThroughput": gsi_provisioned_throughput,
-                "WarmThroughput": gsi_warm_throughput
-            }
-        ]
-
-        # Define the warm throughput for the table
-        warm_throughput = {
-            "ReadUnitsPerSecond": table_warm_reads,
-            "WriteUnitsPerSecond": table_warm_writes
-        }
-
-        # Create the DynamoDB client and create the table
-        response = ddb.create_table(
-            TableName=table_name,
-            AttributeDefinitions=attribute_definitions,
-            KeySchema=key_schema,
-            ProvisionedThroughput=provisioned_throughput,
-            GlobalSecondaryIndexes=global_secondary_indexes,
-            WarmThroughput=warm_throughput
-        )
-
-        print(response)
-    except ClientError as e:
-        print(f"Error creating table: {e}")
-        raise e
 ```
-
-Javascript
-
-```javascript
-
 import { DynamoDBClient, CreateTableCommand } from "@aws-sdk/client-dynamodb";
 
-async function createDynamoDBTableWithWarmThroughput(
+export async function createDynamoDBTableWithWarmThroughput(
   tableName,
   partitionKey,
   sortKey,
@@ -445,17 +398,145 @@ async function createDynamoDBTableWithWarmThroughput(
     });
     const response = await ddbClient.send(command);
     console.log(response);
+    return response;
   } catch (error) {
     console.error(`Error creating table: ${error}`);
     throw error;
   }
 }
+
+// Example usage (commented out for testing)
+/*
+createDynamoDBTableWithWarmThroughput(
+  'example-table',
+  'pk',
+  'sk',
+  'gsiKey',
+  'data',
+  10, 10, 5, 5,
+  'example-index',
+  5, 5, 2, 2
+);
+*/
 ```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/CreateTableCommand) in *AWS SDK for JavaScript API Reference*.
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
+------
+#### [ Python ]
 
-Increase your table's warm throughput
+**SDK for Python (Boto3)**
+Create DynamoDB table with warm throughput setting using AWS SDK for Python (Boto3).
 
-Warm throughput scenarios
+```
+from boto3 import client
+from botocore.exceptions import ClientError
+
+def create_dynamodb_table_warm_throughput(
+    table_name,
+    partition_key,
+    sort_key,
+    misc_key_attr,
+    non_key_attr,
+    table_provisioned_read_units,
+    table_provisioned_write_units,
+    table_warm_reads,
+    table_warm_writes,
+    gsi_name,
+    gsi_provisioned_read_units,
+    gsi_provisioned_write_units,
+    gsi_warm_reads,
+    gsi_warm_writes,
+    region_name="us-east-1",
+):
+    """
+    Creates a DynamoDB table with a warm throughput setting configured.
+
+    :param table_name: The name of the table to be created.
+    :param partition_key: The partition key for the table being created.
+    :param sort_key: The sort key for the table being created.
+    :param misc_key_attr: A miscellaneous key attribute for the table being created.
+    :param non_key_attr: A non-key attribute for the table being created.
+    :param table_provisioned_read_units: The newly created table's provisioned read capacity units.
+    :param table_provisioned_write_units: The newly created table's provisioned write capacity units.
+    :param table_warm_reads: The read units per second setting for the table's warm throughput.
+    :param table_warm_writes: The write units per second setting for the table's warm throughput.
+    :param gsi_name: The name of the Global Secondary Index (GSI) to be created on the table.
+    :param gsi_provisioned_read_units: The configured Global Secondary Index (GSI) provisioned read capacity units.
+    :param gsi_provisioned_write_units: The configured Global Secondary Index (GSI) provisioned write capacity units.
+    :param gsi_warm_reads: The read units per second setting for the Global Secondary Index (GSI)'s warm throughput.
+    :param gsi_warm_writes: The write units per second setting for the Global Secondary Index (GSI)'s warm throughput.
+    :param region_name: The AWS Region name to target. defaults to us-east-1
+    """
+    try:
+        ddb = client("dynamodb", region_name=region_name)
+
+        # Define the table attributes
+        attribute_definitions = [
+            {"AttributeName": partition_key, "AttributeType": "S"},
+            {"AttributeName": sort_key, "AttributeType": "S"},
+            {"AttributeName": misc_key_attr, "AttributeType": "N"},
+        ]
+
+        # Define the table key schema
+        key_schema = [
+            {"AttributeName": partition_key, "KeyType": "HASH"},
+            {"AttributeName": sort_key, "KeyType": "RANGE"},
+        ]
+
+        # Define the provisioned throughput for the table
+        provisioned_throughput = {
+            "ReadCapacityUnits": table_provisioned_read_units,
+            "WriteCapacityUnits": table_provisioned_write_units,
+        }
+
+        # Define the global secondary index
+        gsi_key_schema = [
+            {"AttributeName": sort_key, "KeyType": "HASH"},
+            {"AttributeName": misc_key_attr, "KeyType": "RANGE"},
+        ]
+        gsi_projection = {"ProjectionType": "INCLUDE", "NonKeyAttributes": [non_key_attr]}
+        gsi_provisioned_throughput = {
+            "ReadCapacityUnits": gsi_provisioned_read_units,
+            "WriteCapacityUnits": gsi_provisioned_write_units,
+        }
+        gsi_warm_throughput = {
+            "ReadUnitsPerSecond": gsi_warm_reads,
+            "WriteUnitsPerSecond": gsi_warm_writes,
+        }
+        global_secondary_indexes = [
+            {
+                "IndexName": gsi_name,
+                "KeySchema": gsi_key_schema,
+                "Projection": gsi_projection,
+                "ProvisionedThroughput": gsi_provisioned_throughput,
+                "WarmThroughput": gsi_warm_throughput,
+            }
+        ]
+
+        # Define the warm throughput for the table
+        warm_throughput = {
+            "ReadUnitsPerSecond": table_warm_reads,
+            "WriteUnitsPerSecond": table_warm_writes,
+        }
+
+        # Create the DynamoDB client and create the table
+        response = ddb.create_table(
+            TableName=table_name,
+            AttributeDefinitions=attribute_definitions,
+            KeySchema=key_schema,
+            ProvisionedThroughput=provisioned_throughput,
+            GlobalSecondaryIndexes=global_secondary_indexes,
+            WarmThroughput=warm_throughput,
+        )
+
+        print(response)
+        return response
+    except ClientError as e:
+        print(f"Error creating table: {e}")
+        raise e
+```
++  For API details, see [CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
 
 All content copied from https://docs.aws.amazon.com/.

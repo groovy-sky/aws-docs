@@ -2,57 +2,42 @@
 title: "AWS::KinesisAnalyticsV2::Application CatalogConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application CatalogConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration"></a>
 
-The configuration parameters for the default Amazon Glue database. You use this
-database for SQL queries that you write in a Kinesis Data Analytics Studio
-notebook.
+The configuration parameters for the default Amazon Glue database. You use this database for SQL queries that you write in a Kinesis Data Analytics Studio notebook.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "GlueDataCatalogConfiguration" : GlueDataCatalogConfiguration
+  "[GlueDataCatalogConfiguration](#cfn-kinesisanalyticsv2-application-catalogconfiguration-gluedatacatalogconfiguration)" : {{GlueDataCatalogConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  GlueDataCatalogConfiguration:
-    GlueDataCatalogConfiguration
-
+```
+  [GlueDataCatalogConfiguration](#cfn-kinesisanalyticsv2-application-catalogconfiguration-gluedatacatalogconfiguration): {{
+    GlueDataCatalogConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration-properties"></a>
 
-`GlueDataCatalogConfiguration`
-
-The configuration parameters for the default Amazon Glue database. You use this
-database for Apache Flink SQL queries and table API transforms that you write in a
-Kinesis Data Analytics Studio notebook.
-
-_Required_: No
-
-_Type_: [GlueDataCatalogConfiguration](aws-properties-kinesisanalyticsv2-application-gluedatacatalogconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationSystemRollbackConfiguration
-
-CheckpointConfiguration
+`GlueDataCatalogConfiguration`  <a name="cfn-kinesisanalyticsv2-application-catalogconfiguration-gluedatacatalogconfiguration"></a>
+The configuration parameters for the default Amazon Glue database. You use this database for Apache Flink SQL queries and table API transforms that you write in a Kinesis Data Analytics Studio notebook.
+*Required*: No
+*Type*: [GlueDataCatalogConfiguration](aws-properties-kinesisanalyticsv2-application-gluedatacatalogconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

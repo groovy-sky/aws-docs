@@ -2,79 +2,59 @@
 title: "AWS::MediaConnect::Flow MediaStreamSourceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow MediaStreamSourceConfiguration
+<a name="aws-properties-mediaconnect-flow-mediastreamsourceconfiguration"></a>
 
 The media stream that is associated with the source, and the parameters for that association.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-mediastreamsourceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-mediastreamsourceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncodingName" : String,
-  "InputConfigurations" : [ InputConfiguration, ... ],
-  "MediaStreamName" : String
+  "[EncodingName](#cfn-mediaconnect-flow-mediastreamsourceconfiguration-encodingname)" : {{String}},
+  "[InputConfigurations](#cfn-mediaconnect-flow-mediastreamsourceconfiguration-inputconfigurations)" : {{[ InputConfiguration, ... ]}},
+  "[MediaStreamName](#cfn-mediaconnect-flow-mediastreamsourceconfiguration-mediastreamname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-mediastreamsourceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EncodingName: String
-  InputConfigurations:
-    - InputConfiguration
-  MediaStreamName: String
-
+```
+  [EncodingName](#cfn-mediaconnect-flow-mediastreamsourceconfiguration-encodingname): {{String}}
+  [InputConfigurations](#cfn-mediaconnect-flow-mediastreamsourceconfiguration-inputconfigurations): {{
+    - InputConfiguration}}
+  [MediaStreamName](#cfn-mediaconnect-flow-mediastreamsourceconfiguration-mediastreamname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-mediastreamsourceconfiguration-properties"></a>
 
-`EncodingName`
+`EncodingName`  <a name="cfn-mediaconnect-flow-mediastreamsourceconfiguration-encodingname"></a>
+ The format that was used to encode the data. For ancillary data streams, set the encoding name to smpte291. For audio streams, set the encoding name to pcm. For video, 2110 streams, set the encoding name to raw. For video, JPEG XS streams, set the encoding name to jxsv.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `jxsv | raw | smpte291 | pcm`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The format that was used to encode the data. For ancillary data streams, set the encoding name to smpte291. For audio streams, set the encoding name to pcm. For video, 2110 streams, set the encoding name to raw. For video, JPEG XS streams, set the encoding name to jxsv.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `jxsv | raw | smpte291 | pcm`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputConfigurations`
-
+`InputConfigurations`  <a name="cfn-mediaconnect-flow-mediastreamsourceconfiguration-inputconfigurations"></a>
 The media streams that you want to associate with the source.
+*Required*: No
+*Type*: Array of [InputConfiguration](aws-properties-mediaconnect-flow-inputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [InputConfiguration](aws-properties-mediaconnect-flow-inputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MediaStreamName`
-
+`MediaStreamName`  <a name="cfn-mediaconnect-flow-mediastreamsourceconfiguration-mediastreamname"></a>
 A name that helps you distinguish one media stream from another.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MediaStreamAttributes
-
-NdiConfig
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,87 +2,62 @@
 title: "AWS::SSM::Association S3OutputLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::Association S3OutputLocation
+<a name="aws-properties-ssm-association-s3outputlocation"></a>
 
-`S3OutputLocation` is a property of the [AWS::SSM::Association](../userguide/aws-resource-ssm-association.md) resource that specifies an Amazon S3 bucket
-where you want to store the results of this association request.
+`S3OutputLocation` is a property of the [AWS::SSM::Association](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html) resource that specifies an Amazon S3 bucket where you want to store the results of this association request.
 
 ## Syntax
+<a name="aws-properties-ssm-association-s3outputlocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-association-s3outputlocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "OutputS3BucketName" : String,
-  "OutputS3KeyPrefix" : String,
-  "OutputS3Region" : String
+  "[OutputS3BucketName](#cfn-ssm-association-s3outputlocation-outputs3bucketname)" : {{String}},
+  "[OutputS3KeyPrefix](#cfn-ssm-association-s3outputlocation-outputs3keyprefix)" : {{String}},
+  "[OutputS3Region](#cfn-ssm-association-s3outputlocation-outputs3region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-association-s3outputlocation-syntax.yaml"></a>
 
-```yaml
-
-  OutputS3BucketName: String
-  OutputS3KeyPrefix: String
-  OutputS3Region: String
-
+```
+  [OutputS3BucketName](#cfn-ssm-association-s3outputlocation-outputs3bucketname): {{String}}
+  [OutputS3KeyPrefix](#cfn-ssm-association-s3outputlocation-outputs3keyprefix): {{String}}
+  [OutputS3Region](#cfn-ssm-association-s3outputlocation-outputs3region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-association-s3outputlocation-properties"></a>
 
-`OutputS3BucketName`
-
+`OutputS3BucketName`  <a name="cfn-ssm-association-s3outputlocation-outputs3bucketname"></a>
 The name of the S3 bucket.
+*Required*: No
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputS3KeyPrefix`
-
+`OutputS3KeyPrefix`  <a name="cfn-ssm-association-s3outputlocation-outputs3keyprefix"></a>
 The S3 bucket subfolder.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputS3Region`
-
+`OutputS3Region`  <a name="cfn-ssm-association-s3outputlocation-outputs3region"></a>
 The AWS Region of the S3 bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceAssociationOutputLocation
-
-Target
+*Required*: No
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

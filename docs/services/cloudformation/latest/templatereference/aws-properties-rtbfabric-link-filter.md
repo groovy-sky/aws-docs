@@ -2,53 +2,42 @@
 title: "AWS::RTBFabric::Link Filter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link Filter
+<a name="aws-properties-rtbfabric-link-filter"></a>
 
 Describes the configuration of a filter.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-link-filter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-link-filter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Criteria" : [ FilterCriterion, ... ]
+  "[Criteria](#cfn-rtbfabric-link-filter-criteria)" : {{[ FilterCriterion, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-link-filter-syntax.yaml"></a>
 
-```yaml
-
-  Criteria:
-    - FilterCriterion
-
+```
+  [Criteria](#cfn-rtbfabric-link-filter-criteria): {{
+    - FilterCriterion}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-link-filter-properties"></a>
 
-`Criteria`
-
+`Criteria`  <a name="cfn-rtbfabric-link-filter-criteria"></a>
 Describes the criteria for a filter.
-
-_Required_: Yes
-
-_Type_: Array of [FilterCriterion](aws-properties-rtbfabric-link-filtercriterion.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationLogs
-
-FilterCriterion
+*Required*: Yes
+*Type*: Array of [FilterCriterion](aws-properties-rtbfabric-link-filtercriterion.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,154 +2,119 @@
 title: "AWS::IoTTwinMaker::Workspace"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::Workspace
+<a name="aws-resource-iottwinmaker-workspace"></a>
 
 Use the `AWS::IoTTwinMaker::Workspace` resource to declare a workspace.
 
 ## Syntax
+<a name="aws-resource-iottwinmaker-workspace-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iottwinmaker-workspace-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoTTwinMaker::Workspace",
   "Properties" : {
-      "Description" : String,
-      "Role" : String,
-      "S3Location" : String,
-      "Tags" : {Key: Value, ...},
-      "WorkspaceId" : String
+      "[Description](#cfn-iottwinmaker-workspace-description)" : {{String}},
+      "[Role](#cfn-iottwinmaker-workspace-role)" : {{String}},
+      "[S3Location](#cfn-iottwinmaker-workspace-s3location)" : {{String}},
+      "[Tags](#cfn-iottwinmaker-workspace-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[WorkspaceId](#cfn-iottwinmaker-workspace-workspaceid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iottwinmaker-workspace-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoTTwinMaker::Workspace
 Properties:
-  Description: String
-  Role: String
-  S3Location: String
-  Tags:
-    Key: Value
-  WorkspaceId: String
-
+  [Description](#cfn-iottwinmaker-workspace-description): {{String}}
+  [Role](#cfn-iottwinmaker-workspace-role): {{String}}
+  [S3Location](#cfn-iottwinmaker-workspace-s3location): {{String}}
+  [Tags](#cfn-iottwinmaker-workspace-tags): {{
+    {{Key}}: {{Value}}}}
+  [WorkspaceId](#cfn-iottwinmaker-workspace-workspaceid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-iottwinmaker-workspace-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-iottwinmaker-workspace-description"></a>
 The description of the workspace.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Role`
-
+`Role`  <a name="cfn-iottwinmaker-workspace-role"></a>
 The ARN of the execution role associated with the workspace.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:((aws)|(aws-cn)|(aws-us-gov)):iam::[0-9]{12}:role/.*`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:((aws)|(aws-cn)|(aws-us-gov)):iam::[0-9]{12}:role/.*`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Location`
-
+`S3Location`  <a name="cfn-iottwinmaker-workspace-s3location"></a>
 The ARN of the S3 bucket where resources associated with the workspace are stored.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-iottwinmaker-workspace-tags"></a>
 Metadata that you can use to manage the workspace.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkspaceId`
-
+`WorkspaceId`  <a name="cfn-iottwinmaker-workspace-workspaceid"></a>
 The ID of the workspace.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z_0-9][a-zA-Z_\-0-9]*[a-zA-Z0-9]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z_0-9][a-zA-Z_\-0-9]*[a-zA-Z0-9]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-iottwinmaker-workspace-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iottwinmaker-workspace-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the workspace Id and the entity Id.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iottwinmaker-workspace-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-iottwinmaker-workspace-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The workspace ARN.
 
-`CreationDateTime`
-
+`CreationDateTime`  <a name="CreationDateTime-fn::getatt"></a>
 The date and time the workspace was created.
 
-`UpdateDateTime`
-
+`UpdateDateTime`  <a name="UpdateDateTime-fn::getatt"></a>
 The date and time the workspace was updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTTwinMaker::SyncJob
-
-Next
 
 All content copied from https://docs.aws.amazon.com/.

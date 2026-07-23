@@ -2,55 +2,42 @@
 title: "AWS::NetworkFirewall::FirewallPolicy StatefulRuleGroupOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::FirewallPolicy StatefulRuleGroupOverride
+<a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride"></a>
 
 The setting that allows the policy owner to change the behavior of the rule group within a policy.
 
 ## Syntax
+<a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String
+  "[Action](#cfn-networkfirewall-firewallpolicy-statefulrulegroupoverride-action)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-
+```
+  [Action](#cfn-networkfirewall-firewallpolicy-statefulrulegroupoverride-action): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride-properties"></a>
 
-`Action`
-
-The action that changes the rule group from `DROP` to `ALERT`. This only applies to
-managed rule groups.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DROP_TO_ALERT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StatefulEngineOptions
-
-StatefulRuleGroupReference
+`Action`  <a name="cfn-networkfirewall-firewallpolicy-statefulrulegroupoverride-action"></a>
+The action that changes the rule group from `DROP` to `ALERT`. This only applies to managed rule groups.
+*Required*: No
+*Type*: String
+*Allowed values*: `DROP_TO_ALERT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,92 +2,69 @@
 title: "AWS::QuickSight::Analysis PivotTableTotalOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PivotTableTotalOptions
+<a name="aws-properties-quicksight-analysis-pivottabletotaloptions"></a>
 
 The total options for a pivot table visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pivottabletotaloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pivottabletotaloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnSubtotalOptions" : SubtotalOptions,
-  "ColumnTotalOptions" : PivotTotalOptions,
-  "RowSubtotalOptions" : SubtotalOptions,
-  "RowTotalOptions" : PivotTotalOptions
+  "[ColumnSubtotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-columnsubtotaloptions)" : {{SubtotalOptions}},
+  "[ColumnTotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-columntotaloptions)" : {{PivotTotalOptions}},
+  "[RowSubtotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-rowsubtotaloptions)" : {{SubtotalOptions}},
+  "[RowTotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-rowtotaloptions)" : {{PivotTotalOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pivottabletotaloptions-syntax.yaml"></a>
 
-```yaml
-
-  ColumnSubtotalOptions:
-    SubtotalOptions
-  ColumnTotalOptions:
-    PivotTotalOptions
-  RowSubtotalOptions:
-    SubtotalOptions
-  RowTotalOptions:
-    PivotTotalOptions
-
+```
+  [ColumnSubtotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-columnsubtotaloptions): {{
+    SubtotalOptions}}
+  [ColumnTotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-columntotaloptions): {{
+    PivotTotalOptions}}
+  [RowSubtotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-rowsubtotaloptions): {{
+    SubtotalOptions}}
+  [RowTotalOptions](#cfn-quicksight-analysis-pivottabletotaloptions-rowtotaloptions): {{
+    PivotTotalOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pivottabletotaloptions-properties"></a>
 
-`ColumnSubtotalOptions`
-
+`ColumnSubtotalOptions`  <a name="cfn-quicksight-analysis-pivottabletotaloptions-columnsubtotaloptions"></a>
 The column subtotal options.
+*Required*: No
+*Type*: [SubtotalOptions](aws-properties-quicksight-analysis-subtotaloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SubtotalOptions](aws-properties-quicksight-analysis-subtotaloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnTotalOptions`
-
+`ColumnTotalOptions`  <a name="cfn-quicksight-analysis-pivottabletotaloptions-columntotaloptions"></a>
 The column total options.
+*Required*: No
+*Type*: [PivotTotalOptions](aws-properties-quicksight-analysis-pivottotaloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTotalOptions](aws-properties-quicksight-analysis-pivottotaloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowSubtotalOptions`
-
+`RowSubtotalOptions`  <a name="cfn-quicksight-analysis-pivottabletotaloptions-rowsubtotaloptions"></a>
 The row subtotal options.
+*Required*: No
+*Type*: [SubtotalOptions](aws-properties-quicksight-analysis-subtotaloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SubtotalOptions](aws-properties-quicksight-analysis-subtotaloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowTotalOptions`
-
+`RowTotalOptions`  <a name="cfn-quicksight-analysis-pivottabletotaloptions-rowtotaloptions"></a>
 The row total options.
-
-_Required_: No
-
-_Type_: [PivotTotalOptions](aws-properties-quicksight-analysis-pivottotaloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableSortConfiguration
-
-PivotTableVisual
+*Required*: No
+*Type*: [PivotTotalOptions](aws-properties-quicksight-analysis-pivottotaloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

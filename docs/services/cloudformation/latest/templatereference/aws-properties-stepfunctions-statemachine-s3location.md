@@ -2,77 +2,57 @@
 title: "AWS::StepFunctions::StateMachine S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::StepFunctions::StateMachine S3Location
+<a name="aws-properties-stepfunctions-statemachine-s3location"></a>
 
 Defines the S3 bucket location where a state machine definition is stored. The state machine definition must be a JSON or YAML file.
 
 ## Syntax
+<a name="aws-properties-stepfunctions-statemachine-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-stepfunctions-statemachine-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String,
-  "Version" : String
+  "[Bucket](#cfn-stepfunctions-statemachine-s3location-bucket)" : {{String}},
+  "[Key](#cfn-stepfunctions-statemachine-s3location-key)" : {{String}},
+  "[Version](#cfn-stepfunctions-statemachine-s3location-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-stepfunctions-statemachine-s3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-  Version: String
-
+```
+  [Bucket](#cfn-stepfunctions-statemachine-s3location-bucket): {{String}}
+  [Key](#cfn-stepfunctions-statemachine-s3location-key): {{String}}
+  [Version](#cfn-stepfunctions-statemachine-s3location-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-stepfunctions-statemachine-s3location-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-stepfunctions-statemachine-s3location-bucket"></a>
 The name of the S3 bucket where the state machine definition JSON or YAML file is stored.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-stepfunctions-statemachine-s3location-key"></a>
 The name of the state machine definition file (Amazon S3 object name).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
-For versioning-enabled buckets, a specific version of the state machine
-definition.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingConfiguration
-
-TagsEntry
+`Version`  <a name="cfn-stepfunctions-statemachine-s3location-version"></a>
+For versioning-enabled buckets, a specific version of the state machine definition.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

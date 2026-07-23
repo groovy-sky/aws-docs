@@ -2,76 +2,53 @@
 title: "AWS::GreengrassV2::Deployment IoTJobRateIncreaseCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment IoTJobRateIncreaseCriteria
+<a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria"></a>
 
-Contains information about criteria to meet before a job increases its rollout rate.
-Specify either `numberOfNotifiedThings` or
-`numberOfSucceededThings`.
+Contains information about criteria to meet before a job increases its rollout rate. Specify either `numberOfNotifiedThings` or `numberOfSucceededThings`.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "NumberOfNotifiedThings" : Integer,
-  "NumberOfSucceededThings" : Integer
+  "[NumberOfNotifiedThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofnotifiedthings)" : {{Integer}},
+  "[NumberOfSucceededThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofsucceededthings)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria-syntax.yaml"></a>
 
-```yaml
-
-  NumberOfNotifiedThings: Integer
-  NumberOfSucceededThings: Integer
-
+```
+  [NumberOfNotifiedThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofnotifiedthings): {{Integer}}
+  [NumberOfSucceededThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofsucceededthings): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria-properties"></a>
 
-`NumberOfNotifiedThings`
+`NumberOfNotifiedThings`  <a name="cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofnotifiedthings"></a>
+The number of devices to receive the job notification before the rollout rate increases.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The number of devices to receive the job notification before the rollout rate
-increases.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NumberOfSucceededThings`
-
-The number of devices to successfully run the configuration job before the rollout rate
-increases.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IoTJobExponentialRolloutRate
-
-IoTJobTimeoutConfig
+`NumberOfSucceededThings`  <a name="cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofsucceededthings"></a>
+The number of devices to successfully run the configuration job before the rollout rate increases.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

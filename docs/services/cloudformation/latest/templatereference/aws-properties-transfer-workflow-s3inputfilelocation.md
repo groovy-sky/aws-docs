@@ -2,77 +2,55 @@
 title: "AWS::Transfer::Workflow S3InputFileLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Workflow S3InputFileLocation
+<a name="aws-properties-transfer-workflow-s3inputfilelocation"></a>
 
-Specifies the details for the Amazon S3 location for an input file to a
-workflow.
+ Specifies the details for the Amazon S3 location for an input file to a workflow.
 
 ## Syntax
+<a name="aws-properties-transfer-workflow-s3inputfilelocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-workflow-s3inputfilelocation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String
+  "[Bucket](#cfn-transfer-workflow-s3inputfilelocation-bucket)" : {{String}},
+  "[Key](#cfn-transfer-workflow-s3inputfilelocation-key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-workflow-s3inputfilelocation-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-
+```
+  [Bucket](#cfn-transfer-workflow-s3inputfilelocation-bucket): {{String}}
+  [Key](#cfn-transfer-workflow-s3inputfilelocation-key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-workflow-s3inputfilelocation-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-transfer-workflow-s3inputfilelocation-bucket"></a>
 Specifies the S3 bucket for the customer input file.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9]$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Key`
-
+`Key`  <a name="cfn-transfer-workflow-s3inputfilelocation-key"></a>
 The name assigned to the file when it was created in Amazon S3. You use the object key to retrieve the object.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3FileLocation
-
-S3Tag
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

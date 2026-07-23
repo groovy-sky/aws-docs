@@ -2,65 +2,50 @@
 title: "AWS::Lex::Bot SlotResolutionImprovementSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotResolutionImprovementSpecification
+<a name="aws-properties-lex-bot-slotresolutionimprovementspecification"></a>
 
 Contains specifications for the assisted slot resolution feature.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slotresolutionimprovementspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slotresolutionimprovementspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockModelSpecification" : BedrockModelSpecification,
-  "Enabled" : Boolean
+  "[BedrockModelSpecification](#cfn-lex-bot-slotresolutionimprovementspecification-bedrockmodelspecification)" : {{BedrockModelSpecification}},
+  "[Enabled](#cfn-lex-bot-slotresolutionimprovementspecification-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slotresolutionimprovementspecification-syntax.yaml"></a>
 
-```yaml
-
-  BedrockModelSpecification:
-    BedrockModelSpecification
-  Enabled: Boolean
-
+```
+  [BedrockModelSpecification](#cfn-lex-bot-slotresolutionimprovementspecification-bedrockmodelspecification): {{
+    BedrockModelSpecification}}
+  [Enabled](#cfn-lex-bot-slotresolutionimprovementspecification-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slotresolutionimprovementspecification-properties"></a>
 
-`BedrockModelSpecification`
-
+`BedrockModelSpecification`  <a name="cfn-lex-bot-slotresolutionimprovementspecification-bedrockmodelspecification"></a>
 An object containing information about the Amazon Bedrock model used to assist slot resolution.
+*Required*: No
+*Type*: [BedrockModelSpecification](aws-properties-lex-bot-bedrockmodelspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [BedrockModelSpecification](aws-properties-lex-bot-bedrockmodelspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-lex-bot-slotresolutionimprovementspecification-enabled"></a>
 Specifies whether assisted slot resolution is turned on or off.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlotPriority
-
-SlotType
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,80 +2,58 @@
 title: "AWS::IoTEvents::AlarmModel Sqs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::AlarmModel Sqs
+<a name="aws-properties-iotevents-alarmmodel-sqs"></a>
 
-Sends information about the detector model instance and the event that triggered the
-action to an Amazon SQS queue.
+Sends information about the detector model instance and the event that triggered the action to an Amazon SQS queue.
 
 ## Syntax
+<a name="aws-properties-iotevents-alarmmodel-sqs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-alarmmodel-sqs-syntax.json"></a>
 
-```json
-
+```
 {
-  "Payload" : Payload,
-  "QueueUrl" : String,
-  "UseBase64" : Boolean
+  "[Payload](#cfn-iotevents-alarmmodel-sqs-payload)" : {{Payload}},
+  "[QueueUrl](#cfn-iotevents-alarmmodel-sqs-queueurl)" : {{String}},
+  "[UseBase64](#cfn-iotevents-alarmmodel-sqs-usebase64)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-alarmmodel-sqs-syntax.yaml"></a>
 
-```yaml
-
-  Payload:
-    Payload
-  QueueUrl: String
-  UseBase64: Boolean
-
+```
+  [Payload](#cfn-iotevents-alarmmodel-sqs-payload): {{
+    Payload}}
+  [QueueUrl](#cfn-iotevents-alarmmodel-sqs-queueurl): {{String}}
+  [UseBase64](#cfn-iotevents-alarmmodel-sqs-usebase64): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-alarmmodel-sqs-properties"></a>
 
-`Payload`
+`Payload`  <a name="cfn-iotevents-alarmmodel-sqs-payload"></a>
+You can configure the action payload when you send a message to an Amazon SQS queue.
+*Required*: No
+*Type*: [Payload](aws-properties-iotevents-alarmmodel-payload.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You can configure the action payload when you send a message to an Amazon SQS
-queue.
-
-_Required_: No
-
-_Type_: [Payload](aws-properties-iotevents-alarmmodel-payload.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueueUrl`
-
+`QueueUrl`  <a name="cfn-iotevents-alarmmodel-sqs-queueurl"></a>
 The URL of the SQS queue where the data is written.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseBase64`
-
-Set this to TRUE if you want the data to be base-64 encoded before it is written to the
-queue. Otherwise, set this to FALSE.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Sns
-
-Tag
+`UseBase64`  <a name="cfn-iotevents-alarmmodel-sqs-usebase64"></a>
+Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

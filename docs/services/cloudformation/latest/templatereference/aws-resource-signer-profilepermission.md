@@ -2,117 +2,88 @@
 title: "AWS::Signer::ProfilePermission"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Signer::ProfilePermission
+<a name="aws-resource-signer-profilepermission"></a>
 
 Adds cross-account permissions to a signing profile.
 
 ## Syntax
+<a name="aws-resource-signer-profilepermission-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-signer-profilepermission-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Signer::ProfilePermission",
   "Properties" : {
-      "Action" : String,
-      "Principal" : String,
-      "ProfileName" : String,
-      "ProfileVersion" : String,
-      "StatementId" : String
+      "[Action](#cfn-signer-profilepermission-action)" : {{String}},
+      "[Principal](#cfn-signer-profilepermission-principal)" : {{String}},
+      "[ProfileName](#cfn-signer-profilepermission-profilename)" : {{String}},
+      "[ProfileVersion](#cfn-signer-profilepermission-profileversion)" : {{String}},
+      "[StatementId](#cfn-signer-profilepermission-statementid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-signer-profilepermission-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Signer::ProfilePermission
 Properties:
-  Action: String
-  Principal: String
-  ProfileName: String
-  ProfileVersion: String
-  StatementId: String
-
+  [Action](#cfn-signer-profilepermission-action): {{String}}
+  [Principal](#cfn-signer-profilepermission-principal): {{String}}
+  [ProfileName](#cfn-signer-profilepermission-profilename): {{String}}
+  [ProfileVersion](#cfn-signer-profilepermission-profileversion): {{String}}
+  [StatementId](#cfn-signer-profilepermission-statementid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-signer-profilepermission-properties"></a>
 
-`Action`
+`Action`  <a name="cfn-signer-profilepermission-action"></a>
+The AWS Signer action permitted as part of cross-account permissions.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The AWS Signer action permitted as part of cross-account
-permissions.
+`Principal`  <a name="cfn-signer-profilepermission-principal"></a>
+The AWS principal receiving cross-account permissions. This may be an IAM role or another AWS account ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Principal`
-
-The AWS principal receiving cross-account permissions. This
-may be an IAM role or another AWS account ID.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfileName`
-
+`ProfileName`  <a name="cfn-signer-profilepermission-profilename"></a>
 The human-readable name of the signing profile.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z_]{2,64}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z_]{2,64}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProfileVersion`
-
+`ProfileVersion`  <a name="cfn-signer-profilepermission-profileversion"></a>
 The version of the signing profile.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-zA-Z]{10}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-zA-Z]{10}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StatementId`
-
+`StatementId`  <a name="cfn-signer-profilepermission-statementid"></a>
 A unique identifier for the cross-account permission statement.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-signer-profilepermission-return-values"></a>
 
 ### Ref
+<a name="aws-resource-signer-profilepermission-return-values-ref"></a>
 
 The StatementId and ProfileName in the form StatementId\|ProfileName
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Signer
-
-AWS::Signer::SigningProfile
 
 All content copied from https://docs.aws.amazon.com/.

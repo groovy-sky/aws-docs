@@ -2,73 +2,51 @@
 title: "AWS::Backup::BackupPlan CopyActionResourceType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupPlan CopyActionResourceType
+<a name="aws-properties-backup-backupplan-copyactionresourcetype"></a>
 
 Copies backups created by a backup rule to another vault.
 
 ## Syntax
+<a name="aws-properties-backup-backupplan-copyactionresourcetype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-backupplan-copyactionresourcetype-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationBackupVaultArn" : String,
-  "Lifecycle" : LifecycleResourceType
+  "[DestinationBackupVaultArn](#cfn-backup-backupplan-copyactionresourcetype-destinationbackupvaultarn)" : {{String}},
+  "[Lifecycle](#cfn-backup-backupplan-copyactionresourcetype-lifecycle)" : {{LifecycleResourceType}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-backupplan-copyactionresourcetype-syntax.yaml"></a>
 
-```yaml
-
-  DestinationBackupVaultArn: String
-  Lifecycle:
-    LifecycleResourceType
-
+```
+  [DestinationBackupVaultArn](#cfn-backup-backupplan-copyactionresourcetype-destinationbackupvaultarn): {{String}}
+  [Lifecycle](#cfn-backup-backupplan-copyactionresourcetype-lifecycle): {{
+    LifecycleResourceType}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-backupplan-copyactionresourcetype-properties"></a>
 
-`DestinationBackupVaultArn`
+`DestinationBackupVaultArn`  <a name="cfn-backup-backupplan-copyactionresourcetype-destinationbackupvaultarn"></a>
+An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup. For example, `arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.`
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for
-the copied backup. For example,
-`arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.`
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Lifecycle`
-
-Defines when a protected resource is transitioned to cold storage and when it expires.
-AWS Backup transitions and expires backups automatically according to the
-lifecycle that you define. If you do not specify a lifecycle, AWS Backup applies
-the lifecycle policy of the source backup to the destination backup.
-
-Backups transitioned to cold storage must be stored in cold storage for a minimum of 90
-days.
-
-_Required_: No
-
-_Type_: [LifecycleResourceType](aws-properties-backup-backupplan-lifecycleresourcetype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BackupRuleResourceType
-
-IndexActionsResourceType
+`Lifecycle`  <a name="cfn-backup-backupplan-copyactionresourcetype-lifecycle"></a>
+Defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define. If you do not specify a lifecycle, AWS Backup applies the lifecycle policy of the source backup to the destination backup.
+Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days.
+*Required*: No
+*Type*: [LifecycleResourceType](aws-properties-backup-backupplan-lifecycleresourcetype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,46 @@
 title: "AWS::DynamoDB::GlobalTable GlobalTableWitness"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable GlobalTableWitness
+<a name="aws-properties-dynamodb-globaltable-globaltablewitness"></a>
 
-The witness Region for the MRSC global table. A MRSC global table can be configured with
-either three replicas, or with two replicas and one witness.
+The witness Region for the MRSC global table. A MRSC global table can be configured with either three replicas, or with two replicas and one witness.
 
-The witness must be in a different Region than the replicas and within the same Region
-set:
-
-- US Region set: US East (N. Virginia), US East (Ohio), US West (Oregon)
-
-- EU Region set: Europe (Ireland), Europe (London), Europe (Paris), Europe
-(Frankfurt)
-
-- AP Region set: Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific
-(Osaka)
+The witness must be in a different Region than the replicas and within the same Region set:
++ US Region set: US East (N. Virginia), US East (Ohio), US West (Oregon)
++ EU Region set: Europe (Ireland), Europe (London), Europe (Paris), Europe (Frankfurt)
++ AP Region set: Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Osaka)
 
 ## Syntax
+<a name="aws-properties-dynamodb-globaltable-globaltablewitness-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dynamodb-globaltable-globaltablewitness-syntax.json"></a>
 
-```json
-
+```
 {
-  "Region" : String
+  "[Region](#cfn-dynamodb-globaltable-globaltablewitness-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dynamodb-globaltable-globaltablewitness-syntax.yaml"></a>
 
-```yaml
-
-  Region: String
-
+```
+  [Region](#cfn-dynamodb-globaltable-globaltablewitness-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dynamodb-globaltable-globaltablewitness-properties"></a>
 
-`Region`
-
-The name of the AWSRegion that serves as a witness for the MRSC global
-table.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GlobalSecondaryIndex
-
-KeySchema
+`Region`  <a name="cfn-dynamodb-globaltable-globaltablewitness-region"></a>
+The name of the AWSRegion that serves as a witness for the MRSC global table.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

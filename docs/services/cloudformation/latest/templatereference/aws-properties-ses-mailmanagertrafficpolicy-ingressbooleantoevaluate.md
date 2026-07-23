@@ -2,68 +2,51 @@
 title: "AWS::SES::MailManagerTrafficPolicy IngressBooleanToEvaluate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy IngressBooleanToEvaluate
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate"></a>
 
-The union type representing the allowed types of operands for a boolean
-condition.
+The union type representing the allowed types of operands for a boolean condition.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-syntax.json"></a>
 
-```json
-
+```
 {
-  "Analysis" : IngressAnalysis,
-  "IsInAddressList" : IngressIsInAddressList
+  "[Analysis](#cfn-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-analysis)" : {{IngressAnalysis}},
+  "[IsInAddressList](#cfn-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-isinaddresslist)" : {{IngressIsInAddressList}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-syntax.yaml"></a>
 
-```yaml
-
-  Analysis:
-    IngressAnalysis
-  IsInAddressList:
-    IngressIsInAddressList
-
+```
+  [Analysis](#cfn-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-analysis): {{
+    IngressAnalysis}}
+  [IsInAddressList](#cfn-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-isinaddresslist): {{
+    IngressIsInAddressList}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-properties"></a>
 
-`Analysis`
+`Analysis`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-analysis"></a>
+The structure type for a boolean condition stating the Add On ARN and its returned value.
+*Required*: No
+*Type*: [IngressAnalysis](aws-properties-ses-mailmanagertrafficpolicy-ingressanalysis.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The structure type for a boolean condition stating the Add On ARN and its returned
-value.
-
-_Required_: No
-
-_Type_: [IngressAnalysis](aws-properties-ses-mailmanagertrafficpolicy-ingressanalysis.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsInAddressList`
-
+`IsInAddressList`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressbooleantoevaluate-isinaddresslist"></a>
 The structure type for a boolean condition that provides the address lists to evaluate incoming traffic on.
-
-_Required_: No
-
-_Type_: [IngressIsInAddressList](aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngressBooleanExpression
-
-IngressIpToEvaluate
+*Required*: No
+*Type*: [IngressIsInAddressList](aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

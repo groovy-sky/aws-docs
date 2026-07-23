@@ -2,104 +2,67 @@
 title: "AWS::Comprehend::DocumentClassifier AugmentedManifestsListItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::DocumentClassifier AugmentedManifestsListItem
+<a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem"></a>
 
-An augmented manifest file that provides training data for your custom model. An augmented
-manifest file is a labeled dataset that is produced by Amazon SageMaker Ground Truth.
+An augmented manifest file that provides training data for your custom model. An augmented manifest file is a labeled dataset that is produced by Amazon SageMaker Ground Truth.
 
 ## Syntax
+<a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttributeNames" : [ String, ... ],
-  "S3Uri" : String,
-  "Split" : String
+  "[AttributeNames](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-attributenames)" : {{[ String, ... ]}},
+  "[S3Uri](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-s3uri)" : {{String}},
+  "[Split](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-split)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem-syntax.yaml"></a>
 
-```yaml
-
-  AttributeNames:
-    - String
-  S3Uri: String
-  Split: String
-
+```
+  [AttributeNames](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-attributenames): {{
+    - String}}
+  [S3Uri](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-s3uri): {{String}}
+  [Split](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-split): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem-properties"></a>
 
-`AttributeNames`
+`AttributeNames`  <a name="cfn-comprehend-documentclassifier-augmentedmanifestslistitem-attributenames"></a>
+The JSON attribute that contains the annotations for your training documents. The number of attribute names that you specify depends on whether your augmented manifest file is the output of a single labeling job or a chained labeling job.
+If your file is the output of a single labeling job, specify the LabelAttributeName key that was used when the job was created in Ground Truth.
+If your file is the output of a chained labeling job, specify the LabelAttributeName key for one or more jobs in the chain. Each LabelAttributeName key provides the annotations from an individual job.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The JSON attribute that contains the annotations for your training documents. The number
-of attribute names that you specify depends on whether your augmented manifest file is the
-output of a single labeling job or a chained labeling job.
-
-If your file is the output of a single labeling job, specify the LabelAttributeName key
-that was used when the job was created in Ground Truth.
-
-If your file is the output of a chained labeling job, specify the LabelAttributeName key
-for one or more jobs in the chain. Each LabelAttributeName key provides the annotations from
-an individual job.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3Uri`
-
+`S3Uri`  <a name="cfn-comprehend-documentclassifier-augmentedmanifestslistitem-s3uri"></a>
 The Amazon S3 location of the augmented manifest file.
+*Required*: Yes
+*Type*: String
+*Pattern*: `s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
-
-_Maximum_: `1024`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Split`
-
-The purpose of the data you've provided in the augmented manifest. You can either train or
-test this data. If you don't specify, the default is train.
-
-TRAIN - all of the documents in the manifest will be used for training. If no test
-documents are provided, Amazon Comprehend will automatically reserve a portion of the training
-documents for testing.
-
-TEST - all of the documents in the manifest will be used for testing.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TRAIN | TEST`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Comprehend::DocumentClassifier
-
-DocumentClassifierDocuments
+`Split`  <a name="cfn-comprehend-documentclassifier-augmentedmanifestslistitem-split"></a>
+The purpose of the data you've provided in the augmented manifest. You can either train or test this data. If you don't specify, the default is train.
+TRAIN - all of the documents in the manifest will be used for training. If no test documents are provided, Amazon Comprehend will automatically reserve a portion of the training documents for testing.
+ TEST - all of the documents in the manifest will be used for testing.
+*Required*: No
+*Type*: String
+*Allowed values*: `TRAIN | TEST`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,209 +2,158 @@
 title: "AWS::Glue::Trigger"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Trigger
+<a name="aws-resource-glue-trigger"></a>
 
-The `AWS::Glue::Trigger` resource specifies triggers that run AWS Glue
-jobs. For more information, see [Triggering Jobs in AWS Glue](../../../glue/latest/dg/trigger-job.md) and [Trigger Structure](../../../glue/latest/dg/aws-glue-api-jobs-trigger.md#aws-glue-api-jobs-trigger-Trigger) in the _AWS Glue Developer Guide_.
+The `AWS::Glue::Trigger` resource specifies triggers that run AWS Glue jobs. For more information, see [Triggering Jobs in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/trigger-job.html) and [Trigger Structure](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-trigger.html#aws-glue-api-jobs-trigger-Trigger) in the *AWS Glue Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-glue-trigger-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-glue-trigger-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Glue::Trigger",
   "Properties" : {
-      "Actions" : [ Action, ... ],
-      "Description" : String,
-      "EventBatchingCondition" : EventBatchingCondition,
-      "Name" : String,
-      "Predicate" : Predicate,
-      "Schedule" : String,
-      "StartOnCreation" : Boolean,
-      "Tags" : [ Tag, ... ],
-      "Type" : String,
-      "WorkflowName" : String
+      "[Actions](#cfn-glue-trigger-actions)" : {{[ Action, ... ]}},
+      "[Description](#cfn-glue-trigger-description)" : {{String}},
+      "[EventBatchingCondition](#cfn-glue-trigger-eventbatchingcondition)" : {{EventBatchingCondition}},
+      "[Name](#cfn-glue-trigger-name)" : {{String}},
+      "[Predicate](#cfn-glue-trigger-predicate)" : {{Predicate}},
+      "[Schedule](#cfn-glue-trigger-schedule)" : {{String}},
+      "[StartOnCreation](#cfn-glue-trigger-startoncreation)" : {{Boolean}},
+      "[Tags](#cfn-glue-trigger-tags)" : {{[ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Type](#cfn-glue-trigger-type)" : {{String}},
+      "[WorkflowName](#cfn-glue-trigger-workflowname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-glue-trigger-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Glue::Trigger
 Properties:
-  Actions:
-    - Action
-  Description: String
-  EventBatchingCondition:
-    EventBatchingCondition
-  Name: String
-  Predicate:
-    Predicate
-  Schedule: String
-  StartOnCreation: Boolean
-  Tags:
-    - Tag
-  Type: String
-  WorkflowName: String
-
+  [Actions](#cfn-glue-trigger-actions): {{
+    - Action}}
+  [Description](#cfn-glue-trigger-description): {{String}}
+  [EventBatchingCondition](#cfn-glue-trigger-eventbatchingcondition): {{
+    EventBatchingCondition}}
+  [Name](#cfn-glue-trigger-name): {{String}}
+  [Predicate](#cfn-glue-trigger-predicate): {{
+    Predicate}}
+  [Schedule](#cfn-glue-trigger-schedule): {{String}}
+  [StartOnCreation](#cfn-glue-trigger-startoncreation): {{Boolean}}
+  [Tags](#cfn-glue-trigger-tags): {{
+    - [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+  [Type](#cfn-glue-trigger-type): {{String}}
+  [WorkflowName](#cfn-glue-trigger-workflowname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-glue-trigger-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-glue-trigger-actions"></a>
 The actions initiated by this trigger.
+*Required*: Yes
+*Type*: Array of [Action](aws-properties-glue-trigger-action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Action](aws-properties-glue-trigger-action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-glue-trigger-description"></a>
 A description of this trigger.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBatchingCondition`
-
+`EventBatchingCondition`  <a name="cfn-glue-trigger-eventbatchingcondition"></a>
 Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires.
+*Required*: No
+*Type*: [EventBatchingCondition](aws-properties-glue-trigger-eventbatchingcondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EventBatchingCondition](aws-properties-glue-trigger-eventbatchingcondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-glue-trigger-name"></a>
 The name of the trigger.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Predicate`
-
+`Predicate`  <a name="cfn-glue-trigger-predicate"></a>
 The predicate of this trigger, which defines when it will fire.
+*Required*: No
+*Type*: [Predicate](aws-properties-glue-trigger-predicate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Schedule`  <a name="cfn-glue-trigger-schedule"></a>
+A `cron` expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html) in the *AWS Glue Developer Guide*. For example, to run something every day at 12:15 UTC, specify `cron(15 12 * * ? *)`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [Predicate](aws-properties-glue-trigger-predicate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Schedule`
-
-A `cron` expression used to specify the schedule. For more information, see
-[Time-Based Schedules for\
-Jobs and Crawlers](../../../glue/latest/dg/monitor-data-warehouse-schedule.md) in the _AWS Glue Developer Guide_. For
-example, to run something every day at 12:15 UTC, specify `cron(15 12 * * ?
-                *)`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartOnCreation`
-
+`StartOnCreation`  <a name="cfn-glue-trigger-startoncreation"></a>
 Set to true to start `SCHEDULED` and `CONDITIONAL` triggers when created. True is not supported for `ON_DEMAND` triggers.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-glue-trigger-tags"></a>
 The tags to use with this trigger.
+*Required*: No
+*Type*: Array of [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [`Tag`](aws-properties-resource-tags.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-glue-trigger-type"></a>
 The type of trigger that this is.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SCHEDULED | CONDITIONAL | ON_DEMAND | EVENT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SCHEDULED | CONDITIONAL | ON_DEMAND | EVENT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WorkflowName`
-
+`WorkflowName`  <a name="cfn-glue-trigger-workflowname"></a>
 The name of the workflow associated with the trigger.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-glue-trigger-return-values"></a>
 
 ### Ref
+<a name="aws-resource-glue-trigger-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the trigger name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## Examples
+<a name="aws-resource-glue-trigger--examples"></a>
 
-- [On-Demand Trigger](#aws-resource-glue-trigger--examples--On-Demand_Trigger)
-
-- [Scheduled Trigger](#aws-resource-glue-trigger--examples--Scheduled_Trigger)
-
-- [Conditional Trigger](#aws-resource-glue-trigger--examples--Conditional_Trigger)
+**Topics**
++ [On-Demand Trigger](#aws-resource-glue-trigger--examples--On-Demand_Trigger)
++ [Scheduled Trigger](#aws-resource-glue-trigger--examples--Scheduled_Trigger)
++ [Conditional Trigger](#aws-resource-glue-trigger--examples--Conditional_Trigger)
 
 ### On-Demand Trigger
+<a name="aws-resource-glue-trigger--examples--On-Demand_Trigger"></a>
 
-The following example creates an on-demand trigger that triggers one
-job.
+The following example creates an on-demand trigger that triggers one job.
 
 #### JSON
+<a name="aws-resource-glue-trigger--examples--On-Demand_Trigger--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "OnDemandJobTrigger": {
@@ -225,9 +174,9 @@ job.
 ```
 
 #### YAML
+<a name="aws-resource-glue-trigger--examples--On-Demand_Trigger--yaml"></a>
 
-```yaml
-
+```
 Resources:
   OnDemandJobTrigger:
     Type: AWS::Glue::Trigger
@@ -240,15 +189,14 @@ Resources:
 ```
 
 ### Scheduled Trigger
+<a name="aws-resource-glue-trigger--examples--Scheduled_Trigger"></a>
 
-The following example creates a scheduled trigger that runs every two hours
-and triggers two jobs. Note that it declares an argument for
-`prod-job3`.
+The following example creates a scheduled trigger that runs every two hours and triggers two jobs. Note that it declares an argument for `prod-job3`.
 
 #### JSON
+<a name="aws-resource-glue-trigger--examples--Scheduled_Trigger--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "ScheduledJobTrigger": {
@@ -276,9 +224,9 @@ and triggers two jobs. Note that it declares an argument for
 ```
 
 #### YAML
+<a name="aws-resource-glue-trigger--examples--Scheduled_Trigger--yaml"></a>
 
-```yaml
-
+```
 Resources:
   ScheduledJobTrigger:
     Type: AWS::Glue::Trigger
@@ -295,14 +243,14 @@ Resources:
 ```
 
 ### Conditional Trigger
+<a name="aws-resource-glue-trigger--examples--Conditional_Trigger"></a>
 
-The following example creates a conditional trigger that starts a job based on
-the successful completion of the job run.
+The following example creates a conditional trigger that starts a job based on the successful completion of the job run.
 
 #### JSON
+<a name="aws-resource-glue-trigger--examples--Conditional_Trigger--json"></a>
 
-```json
-
+```
 {
   "Description": "AWS Glue trigger test",
   "Resources": {
@@ -395,9 +343,9 @@ the successful completion of the job run.
 ```
 
 #### YAML
+<a name="aws-resource-glue-trigger--examples--Conditional_Trigger--yaml"></a>
 
-```yaml
-
+```
 ---
 Description: "AWS Glue trigger test"
 Resources:
@@ -453,11 +401,5 @@ Resources:
             JobName: !Ref MyJob
             State: SUCCEEDED
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfiguration
-
-Action
 
 All content copied from https://docs.aws.amazon.com/.

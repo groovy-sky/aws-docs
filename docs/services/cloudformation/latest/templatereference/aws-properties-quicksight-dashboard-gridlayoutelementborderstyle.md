@@ -2,84 +2,61 @@
 title: "AWS::QuickSight::Dashboard GridLayoutElementBorderStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GridLayoutElementBorderStyle
+<a name="aws-properties-quicksight-dashboard-gridlayoutelementborderstyle"></a>
 
 The border style configuration of a grid layout element.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-gridlayoutelementborderstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-gridlayoutelementborderstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "Visibility" : String,
-  "Width" : String
+  "[Color](#cfn-quicksight-dashboard-gridlayoutelementborderstyle-color)" : {{String}},
+  "[Visibility](#cfn-quicksight-dashboard-gridlayoutelementborderstyle-visibility)" : {{String}},
+  "[Width](#cfn-quicksight-dashboard-gridlayoutelementborderstyle-width)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-gridlayoutelementborderstyle-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  Visibility: String
-  Width: String
-
+```
+  [Color](#cfn-quicksight-dashboard-gridlayoutelementborderstyle-color): {{String}}
+  [Visibility](#cfn-quicksight-dashboard-gridlayoutelementborderstyle-visibility): {{String}}
+  [Width](#cfn-quicksight-dashboard-gridlayoutelementborderstyle-width): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-gridlayoutelementborderstyle-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-dashboard-gridlayoutelementborderstyle-color"></a>
 The border color of a grid layout element.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-dashboard-gridlayoutelementborderstyle-visibility"></a>
 The border visibility of a grid layout element.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Width`
-
+`Width`  <a name="cfn-quicksight-dashboard-gridlayoutelementborderstyle-width"></a>
 The border width of a grid layout element.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GridLayoutElementBackgroundStyle
-
-GridLayoutScreenCanvasSizeOptions
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

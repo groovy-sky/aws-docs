@@ -2,141 +2,98 @@
 title: "AWS::AmplifyUIBuilder::Component ComponentBindingPropertiesValueProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component ComponentBindingPropertiesValueProperties
+<a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties"></a>
 
-The `ComponentBindingPropertiesValueProperties` property specifies the data
-binding configuration for a specific property using data stored in AWS. For
-AWS connected properties, you can bind a property to data stored in an
-Amazon S3 bucket, an Amplify DataStore model or an authenticated user
-attribute.
+The `ComponentBindingPropertiesValueProperties` property specifies the data binding configuration for a specific property using data stored in AWS. For AWS connected properties, you can bind a property to data stored in an Amazon S3 bucket, an Amplify DataStore model or an authenticated user attribute.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "DefaultValue" : String,
-  "Field" : String,
-  "Key" : String,
-  "Model" : String,
-  "Predicates" : [ Predicate, ... ],
-  "SlotName" : String,
-  "UserAttribute" : String
+  "[Bucket](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-bucket)" : {{String}},
+  "[DefaultValue](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-defaultvalue)" : {{String}},
+  "[Field](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-field)" : {{String}},
+  "[Key](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-key)" : {{String}},
+  "[Model](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-model)" : {{String}},
+  "[Predicates](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-predicates)" : {{[ Predicate, ... ]}},
+  "[SlotName](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-slotname)" : {{String}},
+  "[UserAttribute](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-userattribute)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  DefaultValue: String
-  Field: String
-  Key: String
-  Model: String
-  Predicates:
-    - Predicate
-  SlotName: String
-  UserAttribute: String
-
+```
+  [Bucket](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-bucket): {{String}}
+  [DefaultValue](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-defaultvalue): {{String}}
+  [Field](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-field): {{String}}
+  [Key](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-key): {{String}}
+  [Model](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-model): {{String}}
+  [Predicates](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-predicates): {{
+    - Predicate}}
+  [SlotName](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-slotname): {{String}}
+  [UserAttribute](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-userattribute): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-bucket"></a>
 An Amazon S3 bucket.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-defaultvalue"></a>
 The default value to assign to the property.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Field`
-
+`Field`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-field"></a>
 The field to bind the data to.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-key"></a>
 The storage key for an Amazon S3 bucket.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Model`
-
+`Model`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-model"></a>
 An Amplify DataStore model.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Predicates`
-
+`Predicates`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-predicates"></a>
 A list of predicates for binding a component's properties to data.
+*Required*: No
+*Type*: Array of [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Predicate](aws-properties-amplifyuibuilder-component-predicate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SlotName`
-
+`SlotName`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-slotname"></a>
 The name of a component slot.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserAttribute`
-
+`UserAttribute`  <a name="cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-userattribute"></a>
 An authenticated user attribute.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComponentBindingPropertiesValue
-
-ComponentChild
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

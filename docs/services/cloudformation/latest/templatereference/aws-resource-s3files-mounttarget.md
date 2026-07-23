@@ -2,189 +2,141 @@
 title: "AWS::S3Files::MountTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::MountTarget
+<a name="aws-resource-s3files-mounttarget"></a>
 
-The `AWS::S3Files::MountTarget` resource specifies a mount target for
-an Amazon S3 Files file system. Mount targets provide network access to the file system
-from compute resources in a specific Availability Zone and VPC.
+The `AWS::S3Files::MountTarget` resource specifies a mount target for an Amazon S3 Files file system. Mount targets provide network access to the file system from compute resources in a specific Availability Zone and VPC.
 
 ## Syntax
+<a name="aws-resource-s3files-mounttarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3files-mounttarget-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3Files::MountTarget",
   "Properties" : {
-      "FileSystemId" : String,
-      "IpAddressType" : String,
-      "Ipv4Address" : String,
-      "Ipv6Address" : String,
-      "SecurityGroups" : [ String, ... ],
-      "SubnetId" : String
+      "[FileSystemId](#cfn-s3files-mounttarget-filesystemid)" : {{String}},
+      "[IpAddressType](#cfn-s3files-mounttarget-ipaddresstype)" : {{String}},
+      "[Ipv4Address](#cfn-s3files-mounttarget-ipv4address)" : {{String}},
+      "[Ipv6Address](#cfn-s3files-mounttarget-ipv6address)" : {{String}},
+      "[SecurityGroups](#cfn-s3files-mounttarget-securitygroups)" : {{[ String, ... ]}},
+      "[SubnetId](#cfn-s3files-mounttarget-subnetid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3files-mounttarget-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3Files::MountTarget
 Properties:
-  FileSystemId: String
-  IpAddressType: String
-  Ipv4Address: String
-  Ipv6Address: String
-  SecurityGroups:
-    - String
-  SubnetId: String
-
+  [FileSystemId](#cfn-s3files-mounttarget-filesystemid): {{String}}
+  [IpAddressType](#cfn-s3files-mounttarget-ipaddresstype): {{String}}
+  [Ipv4Address](#cfn-s3files-mounttarget-ipv4address): {{String}}
+  [Ipv6Address](#cfn-s3files-mounttarget-ipv6address): {{String}}
+  [SecurityGroups](#cfn-s3files-mounttarget-securitygroups): {{
+    - String}}
+  [SubnetId](#cfn-s3files-mounttarget-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-s3files-mounttarget-properties"></a>
 
-`FileSystemId`
-
+`FileSystemId`  <a name="cfn-s3files-mounttarget-filesystemid"></a>
 The ID of the S3 Files file system for which to create the mount target.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:aws[-a-z]*:s3files:[0-9a-z-:]+:file-system/fs-[0-9a-f]{17,40}|fs-[0-9a-f]{17,40})$`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`IpAddressType`  <a name="cfn-s3files-mounttarget-ipaddresstype"></a>
+The type of IP address used by the mount target. Valid values are `IPV4_ONLY`, `IPV6_ONLY`, and `DUAL_STACK`.
+*Required*: No
+*Type*: String
+*Allowed values*: `IPV4_ONLY | IPV6_ONLY | DUAL_STACK`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^(arn:aws[-a-z]*:s3files:[0-9a-z-:]+:file-system/fs-[0-9a-f]{17,40}|fs-[0-9a-f]{17,40})$`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IpAddressType`
-
-The type of IP address used by the mount target. Valid values are
-`IPV4_ONLY`, `IPV6_ONLY`, and `DUAL_STACK`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `IPV4_ONLY | IPV6_ONLY | DUAL_STACK`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv4Address`
-
+`Ipv4Address`  <a name="cfn-s3files-mounttarget-ipv4address"></a>
 The IPv4 address of the mount target.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$`
+*Minimum*: `7`
+*Maximum*: `15`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$`
-
-_Minimum_: `7`
-
-_Maximum_: `15`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Ipv6Address`
-
+`Ipv6Address`  <a name="cfn-s3files-mounttarget-ipv6address"></a>
 The IPv6 address of the mount target.
+*Required*: No
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `39`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `39`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecurityGroups`
-
+`SecurityGroups`  <a name="cfn-s3files-mounttarget-securitygroups"></a>
 Up to 100 VPC security group IDs that control network access to the mount target.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `11`
+*Maximum*: `43 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `11`
-
-_Maximum_: `43 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-s3files-mounttarget-subnetid"></a>
 The ID of the subnet where the mount target is located.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^subnet-[0-9a-f]{8,40}$`
-
-_Minimum_: `15`
-
-_Maximum_: `47`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^subnet-[0-9a-f]{8,40}$`
+*Minimum*: `15`
+*Maximum*: `47`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-s3files-mounttarget-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3files-mounttarget-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the mount target ID.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-s3files-mounttarget-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AvailabilityZoneId`
+####
+<a name="aws-resource-s3files-mounttarget-return-values-fn--getatt-fn--getatt"></a>
 
+`AvailabilityZoneId`  <a name="AvailabilityZoneId-fn::getatt"></a>
 The ID of the Availability Zone in which the mount target is located.
 
-`MountTargetId`
-
+`MountTargetId`  <a name="MountTargetId-fn::getatt"></a>
 The ID of the mount target.
 
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="NetworkInterfaceId-fn::getatt"></a>
 The ID of the network interface that Amazon S3 Files created when it created the mount target.
 
-`OwnerId`
-
+`OwnerId`  <a name="OwnerId-fn::getatt"></a>
 The AWS account ID of the mount target owner.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The current status of the mount target.
 
-`StatusMessage`
-
+`StatusMessage`  <a name="StatusMessage-fn::getatt"></a>
 Additional information about the mount target status.
 
-`VpcId`
-
+`VpcId`  <a name="VpcId-fn::getatt"></a>
 The ID of the VPC in which the mount target is located.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::S3Files::FileSystemPolicy
-
-Next
 
 All content copied from https://docs.aws.amazon.com/.

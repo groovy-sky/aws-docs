@@ -2,56 +2,42 @@
 title: "AWS::SES::ConfigurationSet SendingOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSet SendingOptions
+<a name="aws-properties-ses-configurationset-sendingoptions"></a>
 
-Used to enable or disable email sending for messages that use this configuration set
-in the current AWS Region.
+Used to enable or disable email sending for messages that use this configuration set in the current AWS Region.
 
 ## Syntax
+<a name="aws-properties-ses-configurationset-sendingoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-configurationset-sendingoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "SendingEnabled" : Boolean
+  "[SendingEnabled](#cfn-ses-configurationset-sendingoptions-sendingenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-configurationset-sendingoptions-syntax.yaml"></a>
 
-```yaml
-
-  SendingEnabled: Boolean
-
+```
+  [SendingEnabled](#cfn-ses-configurationset-sendingoptions-sendingenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-configurationset-sendingoptions-properties"></a>
 
-`SendingEnabled`
-
-If `true`, email sending is enabled for the configuration set. If
-`false`, email sending is disabled for the configuration set.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Pattern_: `true|false`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReputationOptions
-
-SuppressionOptions
+`SendingEnabled`  <a name="cfn-ses-configurationset-sendingoptions-sendingenabled"></a>
+If `true`, email sending is enabled for the configuration set. If `false`, email sending is disabled for the configuration set.
+*Required*: No
+*Type*: Boolean
+*Pattern*: `true|false`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

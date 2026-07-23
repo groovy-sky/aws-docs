@@ -2,71 +2,52 @@
 title: "AWS::MediaLive::Multiplexprogram MultiplexVideoSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Multiplexprogram MultiplexVideoSettings
+<a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings"></a>
 
 The video configuration for each program in a multiplex.
 
 ## Syntax
+<a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConstantBitrate" : Integer,
-  "StatmuxSettings" : MultiplexStatmuxVideoSettings
+  "[ConstantBitrate](#cfn-medialive-multiplexprogram-multiplexvideosettings-constantbitrate)" : {{Integer}},
+  "[StatmuxSettings](#cfn-medialive-multiplexprogram-multiplexvideosettings-statmuxsettings)" : {{MultiplexStatmuxVideoSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings-syntax.yaml"></a>
 
-```yaml
-
-  ConstantBitrate: Integer
-  StatmuxSettings:
-    MultiplexStatmuxVideoSettings
-
+```
+  [ConstantBitrate](#cfn-medialive-multiplexprogram-multiplexvideosettings-constantbitrate): {{Integer}}
+  [StatmuxSettings](#cfn-medialive-multiplexprogram-multiplexvideosettings-statmuxsettings): {{
+    MultiplexStatmuxVideoSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings-properties"></a>
 
-`ConstantBitrate`
+`ConstantBitrate`  <a name="cfn-medialive-multiplexprogram-multiplexvideosettings-constantbitrate"></a>
+The constant bitrate configuration for the video encode. When this field is defined, StatmuxSettings must be undefined.
+*Required*: No
+*Type*: Integer
+*Minimum*: `100000`
+*Maximum*: `100000000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The constant bitrate configuration for the video encode.
-When this field is defined, StatmuxSettings must be undefined.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `100000`
-
-_Maximum_: `100000000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatmuxSettings`
-
-Statmux rate control settings.
-When this field is defined, ConstantBitrate must be undefined.
-
-_Required_: No
-
-_Type_: [MultiplexStatmuxVideoSettings](aws-properties-medialive-multiplexprogram-multiplexstatmuxvideosettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiplexStatmuxVideoSettings
-
-AWS::MediaLive::Network
+`StatmuxSettings`  <a name="cfn-medialive-multiplexprogram-multiplexvideosettings-statmuxsettings"></a>
+Statmux rate control settings. When this field is defined, ConstantBitrate must be undefined.
+*Required*: No
+*Type*: [MultiplexStatmuxVideoSettings](aws-properties-medialive-multiplexprogram-multiplexstatmuxvideosettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

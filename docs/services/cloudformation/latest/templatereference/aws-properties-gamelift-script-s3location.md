@@ -2,106 +2,70 @@
 title: "AWS::GameLift::Script S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::Script S3Location
+<a name="aws-properties-gamelift-script-s3location"></a>
 
-The location in Amazon S3 where build or script files can be stored for access by
-Amazon GameLift.
+The location in Amazon S3 where build or script files can be stored for access by Amazon GameLift.
 
 ## Syntax
+<a name="aws-properties-gamelift-script-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-gamelift-script-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String,
-  "ObjectVersion" : String,
-  "RoleArn" : String
+  "[Bucket](#cfn-gamelift-script-s3location-bucket)" : {{String}},
+  "[Key](#cfn-gamelift-script-s3location-key)" : {{String}},
+  "[ObjectVersion](#cfn-gamelift-script-s3location-objectversion)" : {{String}},
+  "[RoleArn](#cfn-gamelift-script-s3location-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-gamelift-script-s3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-  ObjectVersion: String
-  RoleArn: String
-
+```
+  [Bucket](#cfn-gamelift-script-s3location-bucket): {{String}}
+  [Key](#cfn-gamelift-script-s3location-key): {{String}}
+  [ObjectVersion](#cfn-gamelift-script-s3location-objectversion): {{String}}
+  [RoleArn](#cfn-gamelift-script-s3location-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-gamelift-script-s3location-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-gamelift-script-s3location-bucket"></a>
 An Amazon S3 bucket identifier. Thename of the S3 bucket.
+Amazon GameLift Servers doesn't support uploading from Amazon S3 buckets with names that contain a dot (.).
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-Amazon GameLift Servers doesn't support uploading from Amazon S3 buckets with names that contain a dot
-(.).
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-gamelift-script-s3location-key"></a>
 The name of the zip file that contains the build files or script files.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ObjectVersion`  <a name="cfn-gamelift-script-s3location-objectversion"></a>
+The version of the file, if object versioning is turned on for the bucket. Amazon GameLift Servers uses this information when retrieving files from an S3 bucket that you own. Use this parameter to specify a specific version of the file. If not set, the latest version of the file is retrieved.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObjectVersion`
-
-The version of the file, if object versioning is turned on for the bucket. Amazon GameLift Servers uses
-this information when retrieving files from an S3 bucket that you own. Use this
-parameter to specify a specific version of the file. If not set, the latest version of
-the file is retrieved.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name ( [ARN](../../../s3/latest/dev/s3-arn-format.md)) for an IAM role that
-allows Amazon GameLift Servers to access the S3 bucket.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GameLift::Script
-
-Tag
+`RoleArn`  <a name="cfn-gamelift-script-s3location-rolearn"></a>
+The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) for an IAM role that allows Amazon GameLift Servers to access the S3 bucket.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

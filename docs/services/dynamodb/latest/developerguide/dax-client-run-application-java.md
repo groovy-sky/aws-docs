@@ -3,52 +3,44 @@ title: "Java and DAX"
 ---
 
 # Java and DAX
+<a name="DAX.client.run-application-java"></a>
 
-DAX SDK for Java 2.x is compatible with [AWS\
-SDK for Java 2.x](../../../../reference/sdk-for-java/latest/developer-guide.md). It's built on top of Java 8+ and includes support for
-non-blocking I/O. For information about using DAX with AWS SDK for Java 1.x, see [Using DAX with AWS SDK for Java 1.x](../../../../reference/amazondynamodb/latest/developerguide/dax-client-java-sdk-v1.md).
+DAX SDK for Java 2.x is compatible with [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/). It's built on top of Java 8\+ and includes support for non-blocking I/O. For information about using DAX with AWS SDK for Java 1.x, see [Using DAX with AWS SDK for Java 1.x](DAX.client.java-sdk-v1.md).
 
 ## Using the client as a Maven dependency
+<a name="DAX.client.run-application-java.maven"></a>
 
-Follow these steps to use the client for the DAX SDK for Java in your application
-as a dependency.
+Follow these steps to use the client for the DAX SDK for Java in your application as a dependency.
 
-1. Download and install Apache Maven. For more information, see [Downloading Apache\
-    Maven](https://maven.apache.org/download.cgi) and [Installing Apache Maven](https://maven.apache.org/install.html).
+1. Download and install Apache Maven. For more information, see [Downloading Apache Maven](https://maven.apache.org/download.cgi) and [Installing Apache Maven](https://maven.apache.org/install.html).
 
-2. Add the client Maven dependency to your application's Project Object
-    Model (POM) file. In this example, replace
-    `x.x.x` with the actual version number of
-    the client.
+1. Add the client Maven dependency to your application's Project Object Model (POM) file. In this example, replace {{x.x.x}} with the actual version number of the client.
 
-```xml
-
-<!--Dependency:-->
-<dependencies>
+   ```
+   <!--Dependency:-->
+   <dependencies>
        <dependency>
            <groupId>software.amazon.dax</groupId>
            <artifactId>amazon-dax-client</artifactId>
-           <version>x.x.x</version>
+           <version>{{x.x.x}}</version>
        </dependency>
-</dependencies>
-```
+   </dependencies>
+   ```
 
 ## TryDax sample code
+<a name="DAX.client.run-application-java.sample"></a>
 
-After you've set up your workspace and added the DAX SDK as a dependency,
-copy [TryDax.java](dax-client-trydax-java.md) into your project.
+After you've set up your workspace and added the DAX SDK as a dependency, copy [TryDax.java](DAX.client.TryDax.java.md) into your project.
 
 Run the code using this command.
 
-```nohighlight
-
-java -cp classpath TryDax
+```
+java -cp {{classpath}} TryDax
 ```
 
 You should see output similar to the following.
 
-```nohighlight
-
+```
 Creating a DynamoDB client
 
 Attempting to create table; please wait...
@@ -80,67 +72,44 @@ Attempting to delete table; please wait...
 Successfully deleted table.
 ```
 
-Take note of the timing information—the number of milliseconds required
-for the `GetItem` and `Query` tests. In this case, you ran
-the program against the DynamoDB endpoint. Now you'll run the program again, this
-time against your DAX cluster.
+Take note of the timing information—the number of milliseconds required for the `GetItem` and `Query` tests. In this case, you ran the program against the DynamoDB endpoint. Now you'll run the program again, this time against your DAX cluster.
 
-To determine the endpoint of your DAX cluster, choose one of the
-following:
+To determine the endpoint of your DAX cluster, choose one of the following:
++ In the DynamoDB console, select your DAX cluster. The cluster endpoint is shown in the console, as in the following example.
 
-- In the DynamoDB console, select your DAX cluster. The cluster endpoint
-is shown in the console, as in the following example.
+  ```
+  dax://my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com
+  ```
++ Using the AWS CLI, enter the following command:
 
-```nohighlight
+  ```
+  aws dax describe-clusters --query "Clusters[*].ClusterDiscoveryEndpoint"
+  ```
 
-dax://my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com
-```
+  The cluster endpoint address, port, and URL are shown in the output, as in the following example.
 
-- Using the AWS CLI, enter the following command:
-
-```nohighlight
-
-aws dax describe-clusters --query "Clusters[*].ClusterDiscoveryEndpoint"
-```
-
-The cluster endpoint address, port, and URL are shown in the output,
-as in the following example.
-
-```json
-
-{
+  ```
+  {
       "Address": "my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com",
       "Port": 8111,
       "URL": "dax://my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com"
-}
+  }
+  ```
+
+Now run the program again, but this time, specify the cluster endpoint URL as a command line parameter.
+
+```
+java -cp {{classpath}} TryDax dax://my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com
 ```
 
-Now run the program again, but this time, specify the cluster endpoint URL as
-a command line parameter.
-
-```nohighlight
-
-java -cp classpath TryDax dax://my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com
-```
-
-Look at the output and take note of the timing information. The elapsed times
-for `GetItem` and `Query` should be significantly lower
-with DAX than with DynamoDB.
+Look at the output and take note of the timing information. The elapsed times for `GetItem`and `Query` should be significantly lower with DAX than with DynamoDB.
 
 ## SDK metrics
+<a name="DAX.client.run-application-java.metrics"></a>
 
-With DAX SDK for Java 2.x, you can collect metrics about the service clients in
-your application and analyze the output in Amazon CloudWatch. See [Enabling SDK metrics](../../../../reference/sdk-for-java/latest/developer-guide/metrics.md) for more information.
+With DAX SDK for Java 2.x, you can collect metrics about the service clients in your application and analyze the output in Amazon CloudWatch. See [Enabling SDK metrics](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/metrics.html) for more information.
 
-###### Note
-
-The DAX SDK for Java only collects `ApiCallSuccessful` and
-`ApiCallDuration` metrics.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Migrating to DAX Go SDK V2
-
-TryDax.java
+**Note**
+The DAX SDK for Java only collects `ApiCallSuccessful` and `ApiCallDuration` metrics.
 
 All content copied from https://docs.aws.amazon.com/.

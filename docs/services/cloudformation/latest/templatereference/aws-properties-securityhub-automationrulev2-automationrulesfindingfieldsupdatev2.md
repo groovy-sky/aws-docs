@@ -2,78 +2,58 @@
 title: "AWS::SecurityHub::AutomationRuleV2 AutomationRulesFindingFieldsUpdateV2"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::AutomationRuleV2 AutomationRulesFindingFieldsUpdateV2
+<a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2"></a>
 
 Allows you to define the structure for modifying specific fields in security findings.
 
 ## Syntax
+<a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comment" : String,
-  "SeverityId" : Integer,
-  "StatusId" : Integer
+  "[Comment](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-comment)" : {{String}},
+  "[SeverityId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-severityid)" : {{Integer}},
+  "[StatusId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-statusid)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-syntax.yaml"></a>
 
-```yaml
-
-  Comment: String
-  SeverityId: Integer
-  StatusId: Integer
-
+```
+  [Comment](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-comment): {{String}}
+  [SeverityId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-severityid): {{Integer}}
+  [StatusId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-statusid): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-properties"></a>
 
-`Comment`
-
+`Comment`  <a name="cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-comment"></a>
 Notes or contextual information for findings that are modified by the automation rule.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SeverityId`
-
+`SeverityId`  <a name="cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-severityid"></a>
 The severity level to be assigned to findings that match the automation rule criteria.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StatusId`
-
+`StatusId`  <a name="cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-statusid"></a>
 The status to be applied to findings that match automation rule criteria.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutomationRulesActionV2
-
-BooleanFilter
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

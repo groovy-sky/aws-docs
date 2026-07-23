@@ -2,76 +2,57 @@
 title: "AWS::CloudFront::Distribution StringSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution StringSchema
+<a name="aws-properties-cloudfront-distribution-stringschema"></a>
 
-The `StringSchema` property type specifies Property description not available. for an [AWS::CloudFront::Distribution](aws-resource-cloudfront-distribution.md).
+<a name="aws-properties-cloudfront-distribution-stringschema-description"></a>The `StringSchema` property type specifies Property description not available. for an [AWS::CloudFront::Distribution](aws-resource-cloudfront-distribution.md).
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-stringschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-stringschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comment" : String,
-  "DefaultValue" : String,
-  "Required" : Boolean
+  "[Comment](#cfn-cloudfront-distribution-stringschema-comment)" : {{String}},
+  "[DefaultValue](#cfn-cloudfront-distribution-stringschema-defaultvalue)" : {{String}},
+  "[Required](#cfn-cloudfront-distribution-stringschema-required)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-stringschema-syntax.yaml"></a>
 
-```yaml
-
-  Comment: String
-  DefaultValue: String
-  Required: Boolean
-
+```
+  [Comment](#cfn-cloudfront-distribution-stringschema-comment): {{String}}
+  [DefaultValue](#cfn-cloudfront-distribution-stringschema-defaultvalue): {{String}}
+  [Required](#cfn-cloudfront-distribution-stringschema-required): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-stringschema-properties"></a>
 
-`Comment`
-
+`Comment`  <a name="cfn-cloudfront-distribution-stringschema-comment"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-cloudfront-distribution-stringschema-defaultvalue"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Required`
-
+`Required`  <a name="cfn-cloudfront-distribution-stringschema-required"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StatusCodes
-
-Tag
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

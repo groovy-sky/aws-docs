@@ -2,68 +2,49 @@
 title: "AWS::ECS::CapacityProvider AcceleratorCountRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::CapacityProvider AcceleratorCountRequest
+<a name="aws-properties-ecs-capacityprovider-acceleratorcountrequest"></a>
 
-The minimum and maximum number of accelerators (such as GPUs) for instance type
-selection. This is used for workloads that require specific numbers of
-accelerators.
+The minimum and maximum number of accelerators (such as GPUs) for instance type selection. This is used for workloads that require specific numbers of accelerators.
 
 ## Syntax
+<a name="aws-properties-ecs-capacityprovider-acceleratorcountrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-capacityprovider-acceleratorcountrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Integer,
-  "Min" : Integer
+  "[Max](#cfn-ecs-capacityprovider-acceleratorcountrequest-max)" : {{Integer}},
+  "[Min](#cfn-ecs-capacityprovider-acceleratorcountrequest-min)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-capacityprovider-acceleratorcountrequest-syntax.yaml"></a>
 
-```yaml
-
-  Max: Integer
-  Min: Integer
-
+```
+  [Max](#cfn-ecs-capacityprovider-acceleratorcountrequest-max): {{Integer}}
+  [Min](#cfn-ecs-capacityprovider-acceleratorcountrequest-min): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-capacityprovider-acceleratorcountrequest-properties"></a>
 
-`Max`
+`Max`  <a name="cfn-ecs-capacityprovider-acceleratorcountrequest-max"></a>
+The maximum number of accelerators. Instance types with more accelerators are excluded from selection.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The maximum number of accelerators. Instance types with more accelerators are excluded
-from selection.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Min`
-
-The minimum number of accelerators. Instance types with fewer accelerators are
-excluded from selection.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECS::CapacityProvider
-
-AcceleratorTotalMemoryMiBRequest
+`Min`  <a name="cfn-ecs-capacityprovider-acceleratorcountrequest-min"></a>
+The minimum number of accelerators. Instance types with fewer accelerators are excluded from selection.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

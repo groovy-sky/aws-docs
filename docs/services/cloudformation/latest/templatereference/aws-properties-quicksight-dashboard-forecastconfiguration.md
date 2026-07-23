@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Dashboard ForecastConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ForecastConfiguration
+<a name="aws-properties-quicksight-dashboard-forecastconfiguration"></a>
 
 The forecast configuration that is used in a line chart's display properties.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-forecastconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-forecastconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ForecastProperties" : TimeBasedForecastProperties,
-  "Scenario" : ForecastScenario
+  "[ForecastProperties](#cfn-quicksight-dashboard-forecastconfiguration-forecastproperties)" : {{TimeBasedForecastProperties}},
+  "[Scenario](#cfn-quicksight-dashboard-forecastconfiguration-scenario)" : {{ForecastScenario}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-forecastconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ForecastProperties:
-    TimeBasedForecastProperties
-  Scenario:
-    ForecastScenario
-
+```
+  [ForecastProperties](#cfn-quicksight-dashboard-forecastconfiguration-forecastproperties): {{
+    TimeBasedForecastProperties}}
+  [Scenario](#cfn-quicksight-dashboard-forecastconfiguration-scenario): {{
+    ForecastScenario}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-forecastconfiguration-properties"></a>
 
-`ForecastProperties`
+`ForecastProperties`  <a name="cfn-quicksight-dashboard-forecastconfiguration-forecastproperties"></a>
+The forecast properties setup of a forecast in the line chart.
+*Required*: No
+*Type*: [TimeBasedForecastProperties](aws-properties-quicksight-dashboard-timebasedforecastproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The forecast properties setup of a forecast in the line
-chart.
-
-_Required_: No
-
-_Type_: [TimeBasedForecastProperties](aws-properties-quicksight-dashboard-timebasedforecastproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scenario`
-
+`Scenario`  <a name="cfn-quicksight-dashboard-forecastconfiguration-scenario"></a>
 The forecast scenario of a forecast in the line chart.
-
-_Required_: No
-
-_Type_: [ForecastScenario](aws-properties-quicksight-dashboard-forecastscenario.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ForecastComputation
-
-ForecastScenario
+*Required*: No
+*Type*: [ForecastScenario](aws-properties-quicksight-dashboard-forecastscenario.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

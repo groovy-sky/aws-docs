@@ -2,68 +2,51 @@
 title: "AWS::ConnectCampaignsV2::Campaign TimeRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign TimeRange
+<a name="aws-properties-connectcampaignsv2-campaign-timerange"></a>
 
 Contains information about a time range.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-timerange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-timerange-syntax.json"></a>
 
-```json
-
+```
 {
-  "EndTime" : String,
-  "StartTime" : String
+  "[EndTime](#cfn-connectcampaignsv2-campaign-timerange-endtime)" : {{String}},
+  "[StartTime](#cfn-connectcampaignsv2-campaign-timerange-starttime)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-timerange-syntax.yaml"></a>
 
-```yaml
-
-  EndTime: String
-  StartTime: String
-
+```
+  [EndTime](#cfn-connectcampaignsv2-campaign-timerange-endtime): {{String}}
+  [StartTime](#cfn-connectcampaignsv2-campaign-timerange-starttime): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-timerange-properties"></a>
 
-`EndTime`
-
+`EndTime`  <a name="cfn-connectcampaignsv2-campaign-timerange-endtime"></a>
 The end time of the time range.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^T\d{2}:\d{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^T\d{2}:\d{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
+`StartTime`  <a name="cfn-connectcampaignsv2-campaign-timerange-starttime"></a>
 The start time of the time range.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^T\d{2}:\d{2}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeoutConfig
-
-TimeWindow
+*Required*: Yes
+*Type*: String
+*Pattern*: `^T\d{2}:\d{2}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

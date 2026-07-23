@@ -2,74 +2,54 @@
 title: "AWS::QuickSight::Template ContributionAnalysisDefault"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ContributionAnalysisDefault
+<a name="aws-properties-quicksight-template-contributionanalysisdefault"></a>
 
 The contribution analysis visual display for a line, pie, or bar chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-contributionanalysisdefault-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-contributionanalysisdefault-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContributorDimensions" : [ ColumnIdentifier, ... ],
-  "MeasureFieldId" : String
+  "[ContributorDimensions](#cfn-quicksight-template-contributionanalysisdefault-contributordimensions)" : {{[ ColumnIdentifier, ... ]}},
+  "[MeasureFieldId](#cfn-quicksight-template-contributionanalysisdefault-measurefieldid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-contributionanalysisdefault-syntax.yaml"></a>
 
-```yaml
-
-  ContributorDimensions:
-    - ColumnIdentifier
-  MeasureFieldId: String
-
+```
+  [ContributorDimensions](#cfn-quicksight-template-contributionanalysisdefault-contributordimensions): {{
+    - ColumnIdentifier}}
+  [MeasureFieldId](#cfn-quicksight-template-contributionanalysisdefault-measurefieldid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-contributionanalysisdefault-properties"></a>
 
-`ContributorDimensions`
+`ContributorDimensions`  <a name="cfn-quicksight-template-contributionanalysisdefault-contributordimensions"></a>
+The dimensions columns that are used in the contribution analysis, usually a list of `ColumnIdentifiers`.
+*Required*: Yes
+*Type*: Array of [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The dimensions columns that are used in the contribution analysis,
-usually a list of `ColumnIdentifiers`.
-
-_Required_: Yes
-
-_Type_: Array of [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureFieldId`
-
+`MeasureFieldId`  <a name="cfn-quicksight-template-contributionanalysisdefault-measurefieldid"></a>
 The measure field that is used in the contribution analysis.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContextMenuOption
-
-CurrencyDisplayFormatConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,113 +2,93 @@
 title: "AWS::IAM::UserToGroupAddition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::UserToGroupAddition
+<a name="aws-resource-iam-usertogroupaddition"></a>
 
 Adds the specified user to the specified group.
 
 ## Syntax
+<a name="aws-resource-iam-usertogroupaddition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iam-usertogroupaddition-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IAM::UserToGroupAddition",
   "Properties" : {
-      "GroupName" : String,
-      "Users" : [ String, ... ]
+      "[GroupName](#cfn-iam-usertogroupaddition-groupname)" : {{String}},
+      "[Users](#cfn-iam-usertogroupaddition-users)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iam-usertogroupaddition-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IAM::UserToGroupAddition
 Properties:
-  GroupName: String
-  Users:
-    - String
-
+  [GroupName](#cfn-iam-usertogroupaddition-groupname): {{String}}
+  [Users](#cfn-iam-usertogroupaddition-users): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-iam-usertogroupaddition-properties"></a>
 
-`GroupName`
-
+`GroupName`  <a name="cfn-iam-usertogroupaddition-groupname"></a>
 The name of the group to update.
+This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: \_\+=,.@-
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w+=,.@-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This parameter allows (through its [regex pattern](http://wikipedia.org/wiki/regex)) a string of characters consisting of upper and lowercase alphanumeric
-characters with no spaces. You can also include any of the following characters: \_+=,.@-
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\w+=,.@-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Users`
-
+`Users`  <a name="cfn-iam-usertogroupaddition-users"></a>
 A list of the names of the users that you want to add to the group.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iam-usertogroupaddition-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iam-usertogroupaddition-return-values-ref"></a>
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
 For example:
 
-`{ "Ref": "MyUserToGroupAddition" }`
+ `{ "Ref": "MyUserToGroupAddition" }`
 
-For the `AWS::IAM::UserToGroupAddition` resource with the logical ID
-`MyUserToGroupAddition`, `Ref` will return the AWS resource name.
+For the `AWS::IAM::UserToGroupAddition` resource with the logical ID `MyUserToGroupAddition`, `Ref` will return the AWS resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-iam-usertogroupaddition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-iam-usertogroupaddition-return-values-fn--getatt-fn--getatt"></a>
 
-The stable and unique string identifying the group. For more information about IDs, see
-[IAM\
-identifiers](../../../iam/latest/userguide/using-identifiers.md) in the _IAM User Guide_.
+`Id`  <a name="Id-fn::getatt"></a>
+ The stable and unique string identifying the group. For more information about IDs, see [IAM identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) in the *IAM User Guide*.
 
 ## See also
-
-- To view `AWS::IAM::UserToGroupAddition` template example snippets,
-see [Add Users to a Group](../userguide/quickref-iam.md#scenario-iam-addusertogroup).
-
-- [AddUserToGroup](../../../../reference/iam/latest/apireference/api-addusertogroup.md) in the _AWS Identity and Access Management API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IAM::UserPolicy
-
-AWS::IAM::VirtualMFADevice
+<a name="aws-resource-iam-usertogroupaddition--seealso"></a>
++ To view `AWS::IAM::UserToGroupAddition` template example snippets, see [Add Users to a Group](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenario-iam-addusertogroup).
++ [AddUserToGroup](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) in the *AWS Identity and Access Management API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

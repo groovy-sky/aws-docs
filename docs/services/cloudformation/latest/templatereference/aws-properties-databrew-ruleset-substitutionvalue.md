@@ -2,75 +2,54 @@
 title: "AWS::DataBrew::Ruleset SubstitutionValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Ruleset SubstitutionValue
+<a name="aws-properties-databrew-ruleset-substitutionvalue"></a>
 
-A key-value pair to associate an expression's substitution variable names with their
-values.
+A key-value pair to associate an expression's substitution variable names with their values.
 
 ## Syntax
+<a name="aws-properties-databrew-ruleset-substitutionvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-ruleset-substitutionvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "Value" : String,
-  "ValueReference" : String
+  "[Value](#cfn-databrew-ruleset-substitutionvalue-value)" : {{String}},
+  "[ValueReference](#cfn-databrew-ruleset-substitutionvalue-valuereference)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-ruleset-substitutionvalue-syntax.yaml"></a>
 
-```yaml
-
-  Value: String
-  ValueReference: String
-
+```
+  [Value](#cfn-databrew-ruleset-substitutionvalue-value): {{String}}
+  [ValueReference](#cfn-databrew-ruleset-substitutionvalue-valuereference): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-ruleset-substitutionvalue-properties"></a>
 
-`Value`
-
+`Value`  <a name="cfn-databrew-ruleset-substitutionvalue-value"></a>
 Value or column name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueReference`
-
+`ValueReference`  <a name="cfn-databrew-ruleset-substitutionvalue-valuereference"></a>
 Variable name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^:[A-Za-z0-9_]+$`
-
-_Minimum_: `2`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Rule
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^:[A-Za-z0-9_]+$`
+*Minimum*: `2`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,113 +2,78 @@
 title: "AWS::GreengrassV2::Deployment IoTJobAbortCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment IoTJobAbortCriteria
+<a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria"></a>
 
 Contains criteria that define when and how to cancel a job.
 
 The deployment stops if the following conditions are true:
 
-1. The number of things that receive the deployment exceeds the
-    `minNumberOfExecutedThings`.
+1. The number of things that receive the deployment exceeds the `minNumberOfExecutedThings`.
 
-2. The percentage of failures with type `failureType` exceeds the
-    `thresholdPercentage`.
+1. The percentage of failures with type `failureType` exceeds the `thresholdPercentage`.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "FailureType" : String,
-  "MinNumberOfExecutedThings" : Integer,
-  "ThresholdPercentage" : Number
+  "[Action](#cfn-greengrassv2-deployment-iotjobabortcriteria-action)" : {{String}},
+  "[FailureType](#cfn-greengrassv2-deployment-iotjobabortcriteria-failuretype)" : {{String}},
+  "[MinNumberOfExecutedThings](#cfn-greengrassv2-deployment-iotjobabortcriteria-minnumberofexecutedthings)" : {{Integer}},
+  "[ThresholdPercentage](#cfn-greengrassv2-deployment-iotjobabortcriteria-thresholdpercentage)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  FailureType: String
-  MinNumberOfExecutedThings: Integer
-  ThresholdPercentage: Number
-
+```
+  [Action](#cfn-greengrassv2-deployment-iotjobabortcriteria-action): {{String}}
+  [FailureType](#cfn-greengrassv2-deployment-iotjobabortcriteria-failuretype): {{String}}
+  [MinNumberOfExecutedThings](#cfn-greengrassv2-deployment-iotjobabortcriteria-minnumberofexecutedthings): {{Integer}}
+  [ThresholdPercentage](#cfn-greengrassv2-deployment-iotjobabortcriteria-thresholdpercentage): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-greengrassv2-deployment-iotjobabortcriteria-action"></a>
 The action to perform when the criteria are met.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CANCEL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CANCEL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FailureType`
-
+`FailureType`  <a name="cfn-greengrassv2-deployment-iotjobabortcriteria-failuretype"></a>
 The type of job deployment failure that can cancel a job.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `FAILED | REJECTED | TIMED_OUT | ALL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`MinNumberOfExecutedThings`  <a name="cfn-greengrassv2-deployment-iotjobabortcriteria-minnumberofexecutedthings"></a>
+The minimum number of things that receive the configuration before the job can cancel.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `FAILED | REJECTED | TIMED_OUT | ALL`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MinNumberOfExecutedThings`
-
-The minimum number of things that receive the configuration before the job can
-cancel.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ThresholdPercentage`
-
-The minimum percentage of `failureType` failures that occur before the job can
-cancel.
-
-This parameter supports up to two digits after the decimal (for example, you can specify
-`10.9` or `10.99`, but not `10.999`).
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IoTJobAbortConfig
-
-IoTJobExecutionsRolloutConfig
+`ThresholdPercentage`  <a name="cfn-greengrassv2-deployment-iotjobabortcriteria-thresholdpercentage"></a>
+The minimum percentage of `failureType` failures that occur before the job can cancel.
+This parameter supports up to two digits after the decimal (for example, you can specify `10.9` or `10.99`, but not `10.999`).
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

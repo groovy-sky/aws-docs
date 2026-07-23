@@ -2,86 +2,53 @@
 title: "AWS::Athena::DataCatalog Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Athena::DataCatalog Tag
+<a name="aws-properties-athena-datacatalog-tag"></a>
 
-A label that you assign to a resource. Athena resources include
-workgroups, data catalogs, and capacity reservations. Each tag consists of a key and an
-optional value, both of which you define. For example, you can use tags to categorize
-Athena resources by purpose, owner, or environment. Use a consistent set
-of tag keys to make it easier to search and filter the resources in your account. For
-best practices, see [Tagging\
-Best Practices](../../../whitepapers/latest/tagging-best-practices/tagging-best-practices.md). Tag keys can be from 1 to 128 UTF-8 Unicode characters, and
-tag values can be from 0 to 256 UTF-8 Unicode characters. Tags can use letters and
-numbers representable in UTF-8, and the following characters: + - = . \_ : / @. Tag keys
-and values are case-sensitive. Tag keys must be unique per resource. If you specify more
-than one tag, separate them by commas.
+A label that you assign to a resource. Athena resources include workgroups, data catalogs, and capacity reservations. Each tag consists of a key and an optional value, both of which you define. For example, you can use tags to categorize Athena resources by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter the resources in your account. For best practices, see [Tagging Best Practices](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html). Tag keys can be from 1 to 128 UTF-8 Unicode characters, and tag values can be from 0 to 256 UTF-8 Unicode characters. Tags can use letters and numbers representable in UTF-8, and the following characters: \+ - = . \_ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one tag, separate them by commas.
 
 ## Syntax
+<a name="aws-properties-athena-datacatalog-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-athena-datacatalog-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-athena-datacatalog-tag-key)" : {{String}},
+  "[Value](#cfn-athena-datacatalog-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-athena-datacatalog-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-athena-datacatalog-tag-key): {{String}}
+  [Value](#cfn-athena-datacatalog-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-athena-datacatalog-tag-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-athena-datacatalog-tag-key"></a>
+A tag key. The tag key length is from 1 to 128 Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: \+ - = . \_ : / @. Tag keys are case-sensitive and must be unique per resource.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A tag key. The tag key length is from 1 to 128 Unicode characters in UTF-8. You can
-use letters and numbers representable in UTF-8, and the following characters: + - = . \_
-: / @. Tag keys are case-sensitive and must be unique per resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-A tag value. The tag value length is from 0 to 256 Unicode characters in UTF-8. You
-can use letters and numbers representable in UTF-8, and the following characters: + - =
-. \_ : / @. Tag values are case-sensitive.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Athena::DataCatalog
-
-AWS::Athena::NamedQuery
+`Value`  <a name="cfn-athena-datacatalog-tag-value"></a>
+A tag value. The tag value length is from 0 to 256 Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: \+ - = . \_ : / @. Tag values are case-sensitive.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

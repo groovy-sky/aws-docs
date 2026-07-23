@@ -2,265 +2,196 @@
 title: "AWS::MediaPackage::OriginEndpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::OriginEndpoint
+<a name="aws-resource-mediapackage-originendpoint"></a>
 
 Create an endpoint on an AWS Elemental MediaPackage channel.
 
 An endpoint represents a single delivery point of a channel, and defines content output handling through various components, such as packaging protocols, DRM and encryption integration, and more.
 
-After it's created, an endpoint provides a fixed public URL. This URL remains the same
-throughout the lifetime of the endpoint, regardless of any failures or upgrades that might occur. Integrate the URL with a downstream CDN (such as Amazon CloudFront) or playback
-device.
+After it's created, an endpoint provides a fixed public URL. This URL remains the same throughout the lifetime of the endpoint, regardless of any failures or upgrades that might occur. Integrate the URL with a downstream CDN (such as Amazon CloudFront) or playback device.
 
 ## Syntax
+<a name="aws-resource-mediapackage-originendpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-mediapackage-originendpoint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaPackage::OriginEndpoint",
   "Properties" : {
-      "Authorization" : Authorization,
-      "ChannelId" : String,
-      "CmafPackage" : CmafPackage,
-      "DashPackage" : DashPackage,
-      "Description" : String,
-      "HlsPackage" : HlsPackage,
-      "Id" : String,
-      "ManifestName" : String,
-      "MssPackage" : MssPackage,
-      "Origination" : String,
-      "StartoverWindowSeconds" : Integer,
-      "Tags" : [ Tag, ... ],
-      "TimeDelaySeconds" : Integer,
-      "Whitelist" : [ String, ... ]
+      "[Authorization](#cfn-mediapackage-originendpoint-authorization)" : {{Authorization}},
+      "[ChannelId](#cfn-mediapackage-originendpoint-channelid)" : {{String}},
+      "[CmafPackage](#cfn-mediapackage-originendpoint-cmafpackage)" : {{CmafPackage}},
+      "[DashPackage](#cfn-mediapackage-originendpoint-dashpackage)" : {{DashPackage}},
+      "[Description](#cfn-mediapackage-originendpoint-description)" : {{String}},
+      "[HlsPackage](#cfn-mediapackage-originendpoint-hlspackage)" : {{HlsPackage}},
+      "[Id](#cfn-mediapackage-originendpoint-id)" : {{String}},
+      "[ManifestName](#cfn-mediapackage-originendpoint-manifestname)" : {{String}},
+      "[MssPackage](#cfn-mediapackage-originendpoint-msspackage)" : {{MssPackage}},
+      "[Origination](#cfn-mediapackage-originendpoint-origination)" : {{String}},
+      "[StartoverWindowSeconds](#cfn-mediapackage-originendpoint-startoverwindowseconds)" : {{Integer}},
+      "[Tags](#cfn-mediapackage-originendpoint-tags)" : {{[ Tag, ... ]}},
+      "[TimeDelaySeconds](#cfn-mediapackage-originendpoint-timedelayseconds)" : {{Integer}},
+      "[Whitelist](#cfn-mediapackage-originendpoint-whitelist)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-mediapackage-originendpoint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaPackage::OriginEndpoint
 Properties:
-  Authorization:
-    Authorization
-  ChannelId: String
-  CmafPackage:
-    CmafPackage
-  DashPackage:
-    DashPackage
-  Description: String
-  HlsPackage:
-    HlsPackage
-  Id: String
-  ManifestName: String
-  MssPackage:
-    MssPackage
-  Origination: String
-  StartoverWindowSeconds: Integer
-  Tags:
-    - Tag
-  TimeDelaySeconds: Integer
-  Whitelist:
-    - String
-
+  [Authorization](#cfn-mediapackage-originendpoint-authorization): {{
+    Authorization}}
+  [ChannelId](#cfn-mediapackage-originendpoint-channelid): {{String}}
+  [CmafPackage](#cfn-mediapackage-originendpoint-cmafpackage): {{
+    CmafPackage}}
+  [DashPackage](#cfn-mediapackage-originendpoint-dashpackage): {{
+    DashPackage}}
+  [Description](#cfn-mediapackage-originendpoint-description): {{String}}
+  [HlsPackage](#cfn-mediapackage-originendpoint-hlspackage): {{
+    HlsPackage}}
+  [Id](#cfn-mediapackage-originendpoint-id): {{String}}
+  [ManifestName](#cfn-mediapackage-originendpoint-manifestname): {{String}}
+  [MssPackage](#cfn-mediapackage-originendpoint-msspackage): {{
+    MssPackage}}
+  [Origination](#cfn-mediapackage-originendpoint-origination): {{String}}
+  [StartoverWindowSeconds](#cfn-mediapackage-originendpoint-startoverwindowseconds): {{Integer}}
+  [Tags](#cfn-mediapackage-originendpoint-tags): {{
+    - Tag}}
+  [TimeDelaySeconds](#cfn-mediapackage-originendpoint-timedelayseconds): {{Integer}}
+  [Whitelist](#cfn-mediapackage-originendpoint-whitelist): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-mediapackage-originendpoint-properties"></a>
 
-`Authorization`
-
+`Authorization`  <a name="cfn-mediapackage-originendpoint-authorization"></a>
 Parameters for CDN authorization.
+*Required*: No
+*Type*: [Authorization](aws-properties-mediapackage-originendpoint-authorization.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Authorization](aws-properties-mediapackage-originendpoint-authorization.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChannelId`
-
+`ChannelId`  <a name="cfn-mediapackage-originendpoint-channelid"></a>
 The ID of the channel associated with this endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CmafPackage`
-
+`CmafPackage`  <a name="cfn-mediapackage-originendpoint-cmafpackage"></a>
 Parameters for Common Media Application Format (CMAF) packaging.
+*Required*: No
+*Type*: [CmafPackage](aws-properties-mediapackage-originendpoint-cmafpackage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CmafPackage](aws-properties-mediapackage-originendpoint-cmafpackage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DashPackage`
-
+`DashPackage`  <a name="cfn-mediapackage-originendpoint-dashpackage"></a>
 Parameters for DASH packaging.
+*Required*: No
+*Type*: [DashPackage](aws-properties-mediapackage-originendpoint-dashpackage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DashPackage](aws-properties-mediapackage-originendpoint-dashpackage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-mediapackage-originendpoint-description"></a>
 Any descriptive information that you want to add to the endpoint for future identification purposes.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HlsPackage`
-
+`HlsPackage`  <a name="cfn-mediapackage-originendpoint-hlspackage"></a>
 Parameters for Apple HLS packaging.
+*Required*: No
+*Type*: [HlsPackage](aws-properties-mediapackage-originendpoint-hlspackage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [HlsPackage](aws-properties-mediapackage-originendpoint-hlspackage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-mediapackage-originendpoint-id"></a>
 The manifest ID is required and must be unique within the OriginEndpoint. The ID can't be changed after the endpoint is created.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\A[0-9a-zA-Z-_]+\Z`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\A[0-9a-zA-Z-_]+\Z`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ManifestName`
-
+`ManifestName`  <a name="cfn-mediapackage-originendpoint-manifestname"></a>
 A short string that's appended to the end of the endpoint URL to create a unique path to this endpoint.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MssPackage`
-
+`MssPackage`  <a name="cfn-mediapackage-originendpoint-msspackage"></a>
 Parameters for Microsoft Smooth Streaming packaging.
+*Required*: No
+*Type*: [MssPackage](aws-properties-mediapackage-originendpoint-msspackage.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MssPackage](aws-properties-mediapackage-originendpoint-msspackage.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Origination`
-
+`Origination`  <a name="cfn-mediapackage-originendpoint-origination"></a>
 Controls video origination from this endpoint.
-
 Valid values:
++ `ALLOW` - enables this endpoint to serve content to requesting devices.
++ `DENY` - prevents this endpoint from serving content. Denying origination is helpful for harvesting live-to-VOD assets. For more information about harvesting and origination, see [Live-to-VOD Requirements](https://docs.aws.amazon.com/mediapackage/latest/ug/ltov-reqmts.html).
+*Required*: No
+*Type*: String
+*Allowed values*: `ALLOW | DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALLOW` \- enables this endpoint to serve content to requesting devices.
-
-- `DENY` \- prevents this endpoint from serving content. Denying origination is helpful for harvesting live-to-VOD assets. For more information about harvesting and origination, see
-[Live-to-VOD Requirements](../../../mediapackage/latest/ug/ltov-reqmts.md).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALLOW | DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartoverWindowSeconds`
-
+`StartoverWindowSeconds`  <a name="cfn-mediapackage-originendpoint-startoverwindowseconds"></a>
 Maximum duration (seconds) of content to retain for startover playback. Omit this attribute or enter `0` to indicate that startover playback is disabled for this endpoint.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-mediapackage-originendpoint-tags"></a>
 The tags to assign to the endpoint.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-mediapackage-originendpoint-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-mediapackage-originendpoint-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeDelaySeconds`
-
+`TimeDelaySeconds`  <a name="cfn-mediapackage-originendpoint-timedelayseconds"></a>
 Minimum duration (seconds) of delay to enforce on the playback of live content. Omit this attribute or enter `0` to indicate that there is no time delay in effect for this endpoint.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Whitelist`
-
+`Whitelist`  <a name="cfn-mediapackage-originendpoint-whitelist"></a>
 The IP addresses that can access this endpoint.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-mediapackage-originendpoint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-mediapackage-originendpoint-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the origin endpoint.
 
 For example: `{ "Ref": "myOriginEndpoint" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-mediapackage-originendpoint-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-mediapackage-originendpoint-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The endpoint's unique system-generated resource name, based on the AWS record.
 
-`Url`
-
+`Url`  <a name="Url-fn::getatt"></a>
 URL for the key provider’s key retrieval API endpoint. Must start with https://.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Authorization
 
 All content copied from https://docs.aws.amazon.com/.

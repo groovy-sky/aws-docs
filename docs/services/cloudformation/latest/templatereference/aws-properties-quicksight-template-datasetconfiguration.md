@@ -2,82 +2,61 @@
 title: "AWS::QuickSight::Template DataSetConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DataSetConfiguration
+<a name="aws-properties-quicksight-template-datasetconfiguration"></a>
 
 Dataset configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-datasetconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-datasetconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnGroupSchemaList" : [ ColumnGroupSchema, ... ],
-  "DataSetSchema" : DataSetSchema,
-  "Placeholder" : String
+  "[ColumnGroupSchemaList](#cfn-quicksight-template-datasetconfiguration-columngroupschemalist)" : {{[ ColumnGroupSchema, ... ]}},
+  "[DataSetSchema](#cfn-quicksight-template-datasetconfiguration-datasetschema)" : {{DataSetSchema}},
+  "[Placeholder](#cfn-quicksight-template-datasetconfiguration-placeholder)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-datasetconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ColumnGroupSchemaList:
-    - ColumnGroupSchema
-  DataSetSchema:
-    DataSetSchema
-  Placeholder: String
-
+```
+  [ColumnGroupSchemaList](#cfn-quicksight-template-datasetconfiguration-columngroupschemalist): {{
+    - ColumnGroupSchema}}
+  [DataSetSchema](#cfn-quicksight-template-datasetconfiguration-datasetschema): {{
+    DataSetSchema}}
+  [Placeholder](#cfn-quicksight-template-datasetconfiguration-placeholder): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-datasetconfiguration-properties"></a>
 
-`ColumnGroupSchemaList`
-
+`ColumnGroupSchemaList`  <a name="cfn-quicksight-template-datasetconfiguration-columngroupschemalist"></a>
 A structure containing the list of column group schemas.
+*Required*: No
+*Type*: Array of [ColumnGroupSchema](aws-properties-quicksight-template-columngroupschema.md)
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ColumnGroupSchema](aws-properties-quicksight-template-columngroupschema.md)
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetSchema`
-
+`DataSetSchema`  <a name="cfn-quicksight-template-datasetconfiguration-datasetschema"></a>
 Dataset schema.
+*Required*: No
+*Type*: [DataSetSchema](aws-properties-quicksight-template-datasetschema.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataSetSchema](aws-properties-quicksight-template-datasetschema.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Placeholder`
-
+`Placeholder`  <a name="cfn-quicksight-template-datasetconfiguration-placeholder"></a>
 Placeholder.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataPathValue
-
-DataSetReference
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

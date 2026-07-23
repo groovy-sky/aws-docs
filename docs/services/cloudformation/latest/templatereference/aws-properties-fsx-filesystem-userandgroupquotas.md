@@ -2,89 +2,62 @@
 title: "AWS::FSx::FileSystem UserAndGroupQuotas"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::FileSystem UserAndGroupQuotas
+<a name="aws-properties-fsx-filesystem-userandgroupquotas"></a>
 
-Used to configure quotas that define how much storage a user or group can use on an
-FSx for OpenZFS volume. For more information, see
-[Volume properties](../../../fsx/latest/openzfsguide/managing-volumes.md#volume-properties)
-in the FSx for OpenZFS User Guide.
+Used to configure quotas that define how much storage a user or group can use on an FSx for OpenZFS volume. For more information, see [Volume properties](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/managing-volumes.html#volume-properties) in the FSx for OpenZFS User Guide.
 
 ## Syntax
+<a name="aws-properties-fsx-filesystem-userandgroupquotas-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fsx-filesystem-userandgroupquotas-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : Integer,
-  "StorageCapacityQuotaGiB" : Integer,
-  "Type" : String
+  "[Id](#cfn-fsx-filesystem-userandgroupquotas-id)" : {{Integer}},
+  "[StorageCapacityQuotaGiB](#cfn-fsx-filesystem-userandgroupquotas-storagecapacityquotagib)" : {{Integer}},
+  "[Type](#cfn-fsx-filesystem-userandgroupquotas-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fsx-filesystem-userandgroupquotas-syntax.yaml"></a>
 
-```yaml
-
-  Id: Integer
-  StorageCapacityQuotaGiB: Integer
-  Type: String
-
+```
+  [Id](#cfn-fsx-filesystem-userandgroupquotas-id): {{Integer}}
+  [StorageCapacityQuotaGiB](#cfn-fsx-filesystem-userandgroupquotas-storagecapacityquotagib): {{Integer}}
+  [Type](#cfn-fsx-filesystem-userandgroupquotas-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fsx-filesystem-userandgroupquotas-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-fsx-filesystem-userandgroupquotas-id"></a>
 The ID of the user or group that the quota applies to.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StorageCapacityQuotaGiB`
-
+`StorageCapacityQuotaGiB`  <a name="cfn-fsx-filesystem-userandgroupquotas-storagecapacityquotagib"></a>
 The user or group's storage quota, in gibibytes (GiB).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-fsx-filesystem-userandgroupquotas-type"></a>
 Specifies whether the quota applies to a user or group.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `USER | GROUP`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-WindowsConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `USER | GROUP`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

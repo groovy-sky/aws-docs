@@ -2,85 +2,62 @@
 title: "AWS::QuickSight::Analysis TooltipOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis TooltipOptions
+<a name="aws-properties-quicksight-analysis-tooltipoptions"></a>
 
 The display options for the visual tooltip.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-tooltipoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-tooltipoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldBasedTooltip" : FieldBasedTooltip,
-  "SelectedTooltipType" : String,
-  "TooltipVisibility" : String
+  "[FieldBasedTooltip](#cfn-quicksight-analysis-tooltipoptions-fieldbasedtooltip)" : {{FieldBasedTooltip}},
+  "[SelectedTooltipType](#cfn-quicksight-analysis-tooltipoptions-selectedtooltiptype)" : {{String}},
+  "[TooltipVisibility](#cfn-quicksight-analysis-tooltipoptions-tooltipvisibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-tooltipoptions-syntax.yaml"></a>
 
-```yaml
-
-  FieldBasedTooltip:
-    FieldBasedTooltip
-  SelectedTooltipType: String
-  TooltipVisibility: String
-
+```
+  [FieldBasedTooltip](#cfn-quicksight-analysis-tooltipoptions-fieldbasedtooltip): {{
+    FieldBasedTooltip}}
+  [SelectedTooltipType](#cfn-quicksight-analysis-tooltipoptions-selectedtooltiptype): {{String}}
+  [TooltipVisibility](#cfn-quicksight-analysis-tooltipoptions-tooltipvisibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-tooltipoptions-properties"></a>
 
-`FieldBasedTooltip`
-
+`FieldBasedTooltip`  <a name="cfn-quicksight-analysis-tooltipoptions-fieldbasedtooltip"></a>
 The setup for the detailed tooltip. The tooltip setup is always saved. The display type is decided based on the tooltip type.
+*Required*: No
+*Type*: [FieldBasedTooltip](aws-properties-quicksight-analysis-fieldbasedtooltip.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FieldBasedTooltip](aws-properties-quicksight-analysis-fieldbasedtooltip.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedTooltipType`
-
+`SelectedTooltipType`  <a name="cfn-quicksight-analysis-tooltipoptions-selectedtooltiptype"></a>
 The selected type for the tooltip. Choose one of the following options:
++ `BASIC`: A basic tooltip.
++ `DETAILED`: A detailed tooltip.
+*Required*: No
+*Type*: String
+*Allowed values*: `BASIC | DETAILED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `BASIC`: A basic tooltip.
-
-- `DETAILED`: A detailed tooltip.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `BASIC | DETAILED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TooltipVisibility`
-
+`TooltipVisibility`  <a name="cfn-quicksight-analysis-tooltipoptions-tooltipvisibility"></a>
 Determines whether or not the tooltip is visible.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TooltipItem
-
-TopBottomFilter
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,56 +2,43 @@
 title: "AWS::Lambda::EventSourceMapping ScalingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping ScalingConfig
+<a name="aws-properties-lambda-eventsourcemapping-scalingconfig"></a>
 
 (Amazon SQS only) The scaling configuration for the event source. To remove the configuration, pass an empty value.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-scalingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-scalingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaximumConcurrency" : Integer
+  "[MaximumConcurrency](#cfn-lambda-eventsourcemapping-scalingconfig-maximumconcurrency)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-scalingconfig-syntax.yaml"></a>
 
-```yaml
-
-  MaximumConcurrency: Integer
-
+```
+  [MaximumConcurrency](#cfn-lambda-eventsourcemapping-scalingconfig-maximumconcurrency): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-scalingconfig-properties"></a>
 
-`MaximumConcurrency`
-
+`MaximumConcurrency`  <a name="cfn-lambda-eventsourcemapping-scalingconfig-maximumconcurrency"></a>
 Limits the number of concurrent instances that the Amazon SQS event source can invoke.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `2`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProvisionedPollerConfig
-
-SchemaRegistryAccessConfig
+*Required*: No
+*Type*: Integer
+*Minimum*: `2`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

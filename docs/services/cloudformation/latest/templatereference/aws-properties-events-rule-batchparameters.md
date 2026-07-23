@@ -2,102 +2,81 @@
 title: "AWS::Events::Rule BatchParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule BatchParameters
+<a name="aws-properties-events-rule-batchparameters"></a>
 
 The custom parameters to be used when the target is an AWS Batch job.
 
 ## Syntax
+<a name="aws-properties-events-rule-batchparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-rule-batchparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArrayProperties" : BatchArrayProperties,
-  "JobDefinition" : String,
-  "JobName" : String,
-  "RetryStrategy" : BatchRetryStrategy
+  "[ArrayProperties](#cfn-events-rule-batchparameters-arrayproperties)" : {{BatchArrayProperties}},
+  "[JobDefinition](#cfn-events-rule-batchparameters-jobdefinition)" : {{String}},
+  "[JobName](#cfn-events-rule-batchparameters-jobname)" : {{String}},
+  "[RetryStrategy](#cfn-events-rule-batchparameters-retrystrategy)" : {{BatchRetryStrategy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-rule-batchparameters-syntax.yaml"></a>
 
-```yaml
-
-  ArrayProperties:
-    BatchArrayProperties
-  JobDefinition: String
-  JobName: String
-  RetryStrategy:
-    BatchRetryStrategy
-
+```
+  [ArrayProperties](#cfn-events-rule-batchparameters-arrayproperties): {{
+    BatchArrayProperties}}
+  [JobDefinition](#cfn-events-rule-batchparameters-jobdefinition): {{String}}
+  [JobName](#cfn-events-rule-batchparameters-jobname): {{String}}
+  [RetryStrategy](#cfn-events-rule-batchparameters-retrystrategy): {{
+    BatchRetryStrategy}}
 ```
 
 ## Properties
+<a name="aws-properties-events-rule-batchparameters-properties"></a>
 
-`ArrayProperties`
+`ArrayProperties`  <a name="cfn-events-rule-batchparameters-arrayproperties"></a>
+The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000. If you specify array properties for a job, it becomes an array job. This parameter is used only if the target is an AWS Batch job.
+*Required*: No
+*Type*: [BatchArrayProperties](aws-properties-events-rule-batcharrayproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The array properties for the submitted job, such as the size of the array. The array size
-can be between 2 and 10,000. If you specify array properties for a job, it becomes an array
-job. This parameter is used only if the target is an AWS Batch job.
-
-_Required_: No
-
-_Type_: [BatchArrayProperties](aws-properties-events-rule-batcharrayproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobDefinition`
-
+`JobDefinition`  <a name="cfn-events-rule-batchparameters-jobdefinition"></a>
 The ARN or name of the job definition to use if the event target is an AWS Batch job. This job definition must already exist.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`JobName`  <a name="cfn-events-rule-batchparameters-jobname"></a>
+The name to use for this execution of the job, if the target is an AWS Batch job.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobName`
-
-The name to use for this execution of the job, if the target is an AWS Batch
-job.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryStrategy`
-
-The retry strategy to use for failed jobs, if the target is an AWS Batch job.
-The retry strategy is the number of times to retry the failed job execution. Valid values are
-1–10. When you specify a retry strategy here, it overrides the retry strategy defined in the
-job definition.
-
-_Required_: No
-
-_Type_: [BatchRetryStrategy](aws-properties-events-rule-batchretrystrategy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RetryStrategy`  <a name="cfn-events-rule-batchparameters-retrystrategy"></a>
+The retry strategy to use for failed jobs, if the target is an AWS Batch job. The retry strategy is the number of times to retry the failed job execution. Valid values are 1–10. When you specify a retry strategy here, it overrides the retry strategy defined in the job definition.
+*Required*: No
+*Type*: [BatchRetryStrategy](aws-properties-events-rule-batchretrystrategy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-events-rule-batchparameters--examples"></a>
 
 ### Set the BatchParameters parameters
+<a name="aws-properties-events-rule-batchparameters--examples--Set_the_BatchParameters_parameters"></a>
 
 The following example sets the `BatchParameters` parameter for a job that has 950 objects and will be tried 8 times.
 
 #### JSON
+<a name="aws-properties-events-rule-batchparameters--examples--Set_the_BatchParameters_parameters--json"></a>
 
-```json
-
+```
 "BatchParameters": {
   "ArrayProperties": {
       "Size": 950
@@ -111,9 +90,9 @@ The following example sets the `BatchParameters` parameter for a job that has 95
 ```
 
 #### YAML
+<a name="aws-properties-events-rule-batchparameters--examples--Set_the_BatchParameters_parameters--yaml"></a>
 
-```yaml
-
+```
 BatchParameters:
   ArrayProperties:
     Size: 950
@@ -122,11 +101,5 @@ BatchParameters:
   RetryStrategy:
     Attempts: 8
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BatchArrayProperties
-
-BatchRetryStrategy
 
 All content copied from https://docs.aws.amazon.com/.

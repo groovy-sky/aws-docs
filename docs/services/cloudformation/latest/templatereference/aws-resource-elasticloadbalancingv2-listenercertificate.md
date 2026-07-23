@@ -2,75 +2,69 @@
 title: "AWS::ElasticLoadBalancingV2::ListenerCertificate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::ListenerCertificate
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate"></a>
 
-Specifies an SSL server certificate to add to the certificate list for an HTTPS or TLS
-listener.
+Specifies an SSL server certificate to add to the certificate list for an HTTPS or TLS listener.
 
 ## Syntax
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ElasticLoadBalancingV2::ListenerCertificate",
   "Properties" : {
-      "Certificates" : [ Certificate, ... ],
-      "ListenerArn" : String
+      "[Certificates](#cfn-elasticloadbalancingv2-listenercertificate-certificates)" : {{[ Certificate, ... ]}},
+      "[ListenerArn](#cfn-elasticloadbalancingv2-listenercertificate-listenerarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ElasticLoadBalancingV2::ListenerCertificate
 Properties:
-  Certificates:
-    - Certificate
-  ListenerArn: String
-
+  [Certificates](#cfn-elasticloadbalancingv2-listenercertificate-certificates): {{
+    - Certificate}}
+  [ListenerArn](#cfn-elasticloadbalancingv2-listenercertificate-listenerarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate-properties"></a>
 
-`Certificates`
-
+`Certificates`  <a name="cfn-elasticloadbalancingv2-listenercertificate-certificates"></a>
 The certificate. You can specify one certificate per resource.
+*Required*: Yes
+*Type*: Array of [Certificate](aws-properties-elasticloadbalancingv2-listenercertificate-certificate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Certificate](aws-properties-elasticloadbalancingv2-listenercertificate-certificate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ListenerArn`
-
+`ListenerArn`  <a name="cfn-elasticloadbalancingv2-listenercertificate-listenerarn"></a>
 The Amazon Resource Name (ARN) of the listener.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate--examples"></a>
+
+###
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate--examples--"></a>
 
 The following example creates a certificate list.
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate--examples----yaml"></a>
 
-```yaml
-
+```
 myCertificateList:
   Type: 'AWS::ElasticLoadBalancingV2::ListenerCertificate'
   Properties:
@@ -82,9 +76,9 @@ myCertificateList:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate--examples----json"></a>
 
-```json
-
+```
 {
     "myCertificateList": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerCertificate",
@@ -109,20 +103,9 @@ myCertificateList:
 ```
 
 ## See also
-
-- [AddListenerCertificates](../../../../reference/elasticloadbalancing/latest/apireference/api-addlistenercertificates.md) in the _Elastic Load Balancing API_
-_Reference (version 2015-12-01)_
-
-- [SSL Certificates](../../../elasticloadbalancing/latest/application/https-listener-certificates.md) in the _User Guide for Application Load_
-_Balancers_
-
-- [Server certificates](../../../elasticloadbalancing/latest/network/tls-listener-certificates.md) in the _User Guide for Network Load_
-_Balancers_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetGroupTuple
-
-Certificate
+<a name="aws-resource-elasticloadbalancingv2-listenercertificate--seealso"></a>
++ [AddListenerCertificates](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_AddListenerCertificates.html) in the *Elastic Load Balancing API Reference (version 2015-12-01)*
++ [SSL Certificates](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/https-listener-certificates.html) in the *User Guide for Application Load Balancers*
++ [Server certificates](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/tls-listener-certificates.html) in the *User Guide for Network Load Balancers*
 
 All content copied from https://docs.aws.amazon.com/.

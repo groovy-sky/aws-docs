@@ -2,118 +2,91 @@
 title: "AWS::ACMPCA::CertificateAuthorityActivation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthorityActivation
+<a name="aws-resource-acmpca-certificateauthorityactivation"></a>
 
-The `AWS::ACMPCA::CertificateAuthorityActivation` resource creates and
-installs a CA certificate on a CA. If no status is specified, the
-`AWS::ACMPCA::CertificateAuthorityActivation` resource status defaults to
-ACTIVE. Once the CA has a CA certificate installed, you can use the resource to toggle
-the CA status field between `ACTIVE` and `DISABLED`.
+The `AWS::ACMPCA::CertificateAuthorityActivation` resource creates and installs a CA certificate on a CA. If no status is specified, the `AWS::ACMPCA::CertificateAuthorityActivation` resource status defaults to ACTIVE. Once the CA has a CA certificate installed, you can use the resource to toggle the CA status field between `ACTIVE` and `DISABLED`.
 
 ## Syntax
+<a name="aws-resource-acmpca-certificateauthorityactivation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-acmpca-certificateauthorityactivation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ACMPCA::CertificateAuthorityActivation",
   "Properties" : {
-      "Certificate" : String,
-      "CertificateAuthorityArn" : String,
-      "CertificateChain" : String,
-      "Status" : String
+      "[Certificate](#cfn-acmpca-certificateauthorityactivation-certificate)" : {{String}},
+      "[CertificateAuthorityArn](#cfn-acmpca-certificateauthorityactivation-certificateauthorityarn)" : {{String}},
+      "[CertificateChain](#cfn-acmpca-certificateauthorityactivation-certificatechain)" : {{String}},
+      "[Status](#cfn-acmpca-certificateauthorityactivation-status)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-acmpca-certificateauthorityactivation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ACMPCA::CertificateAuthorityActivation
 Properties:
-  Certificate: String
-  CertificateAuthorityArn: String
-  CertificateChain: String
-  Status: String
-
+  [Certificate](#cfn-acmpca-certificateauthorityactivation-certificate): {{String}}
+  [CertificateAuthorityArn](#cfn-acmpca-certificateauthorityactivation-certificateauthorityarn): {{String}}
+  [CertificateChain](#cfn-acmpca-certificateauthorityactivation-certificatechain): {{String}}
+  [Status](#cfn-acmpca-certificateauthorityactivation-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-acmpca-certificateauthorityactivation-properties"></a>
 
-`Certificate`
-
+`Certificate`  <a name="cfn-acmpca-certificateauthorityactivation-certificate"></a>
 The Base64 PEM-encoded certificate authority certificate.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CertificateAuthorityArn`
-
+`CertificateAuthorityArn`  <a name="cfn-acmpca-certificateauthorityactivation-certificateauthorityarn"></a>
 The Amazon Resource Name (ARN) of your private CA.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`CertificateChain`  <a name="cfn-acmpca-certificateauthorityactivation-certificatechain"></a>
+The Base64 PEM-encoded certificate chain that chains up to the root CA certificate that you used to sign your private CA certificate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CertificateChain`
-
-The Base64 PEM-encoded certificate chain that chains up to the root CA certificate
-that you used to sign your private CA certificate.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-acmpca-certificateauthorityactivation-status"></a>
 Status of your private CA.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-acmpca-certificateauthorityactivation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-acmpca-certificateauthorityactivation-return-values-ref"></a>
 
 The Amazon Resource Name (ARN) of the certificate authority.
 
 ### Fn::GetAtt
+<a name="aws-resource-acmpca-certificateauthorityactivation-return-values-fn--getatt"></a>
 
-The `Fn::GetAtt` intrinsic function returns a value for a specified
-attribute of this type. The following are the available attributes and sample return
-values.
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`CompleteCertificateChain`
+####
+<a name="aws-resource-acmpca-certificateauthorityactivation-return-values-fn--getatt-fn--getatt"></a>
 
-The complete Base64 PEM-encoded certificate chain, including the certificate authority
-certificate.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::ACMPCA::Permission
+`CompleteCertificateChain`  <a name="CompleteCertificateChain-fn::getatt"></a>
+The complete Base64 PEM-encoded certificate chain, including the certificate authority certificate.
 
 All content copied from https://docs.aws.amazon.com/.

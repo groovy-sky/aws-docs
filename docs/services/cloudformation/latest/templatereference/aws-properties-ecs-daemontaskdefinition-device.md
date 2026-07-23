@@ -2,79 +2,58 @@
 title: "AWS::ECS::DaemonTaskDefinition Device"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::DaemonTaskDefinition Device
+<a name="aws-properties-ecs-daemontaskdefinition-device"></a>
 
 An object representing a container instance host device.
 
 ## Syntax
+<a name="aws-properties-ecs-daemontaskdefinition-device-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-daemontaskdefinition-device-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContainerPath" : String,
-  "HostPath" : String,
-  "Permissions" : [ String, ... ]
+  "[ContainerPath](#cfn-ecs-daemontaskdefinition-device-containerpath)" : {{String}},
+  "[HostPath](#cfn-ecs-daemontaskdefinition-device-hostpath)" : {{String}},
+  "[Permissions](#cfn-ecs-daemontaskdefinition-device-permissions)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-daemontaskdefinition-device-syntax.yaml"></a>
 
-```yaml
-
-  ContainerPath: String
-  HostPath: String
-  Permissions:
-    - String
-
+```
+  [ContainerPath](#cfn-ecs-daemontaskdefinition-device-containerpath): {{String}}
+  [HostPath](#cfn-ecs-daemontaskdefinition-device-hostpath): {{String}}
+  [Permissions](#cfn-ecs-daemontaskdefinition-device-permissions): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-daemontaskdefinition-device-properties"></a>
 
-`ContainerPath`
-
+`ContainerPath`  <a name="cfn-ecs-daemontaskdefinition-device-containerpath"></a>
 The path inside the container at which to expose the host device.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HostPath`
-
+`HostPath`  <a name="cfn-ecs-daemontaskdefinition-device-hostpath"></a>
 The path for the device on the host container instance.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Permissions`
-
-The explicit permissions to provide to the container for the device. By default, the
-container has permissions for `read`, `write`, and
-`mknod` for the device.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DaemonContainerDefinition
-
-EnvironmentFile
+`Permissions`  <a name="cfn-ecs-daemontaskdefinition-device-permissions"></a>
+The explicit permissions to provide to the container for the device. By default, the container has permissions for `read`, `write`, and `mknod` for the device.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

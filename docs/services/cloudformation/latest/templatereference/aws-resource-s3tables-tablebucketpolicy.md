@@ -2,92 +2,73 @@
 title: "AWS::S3Tables::TableBucketPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::TableBucketPolicy
+<a name="aws-resource-s3tables-tablebucketpolicy"></a>
 
-Creates a new maintenance configuration or replaces an existing table bucket policy for a
-table bucket. For more information, see [Adding a table bucket policy](../../../s3/latest/userguide/s3-tables-bucket-policy.md#table-bucket-policy-add) in the _Amazon Simple Storage Service User Guide_.
+Creates a new maintenance configuration or replaces an existing table bucket policy for a table bucket. For more information, see [Adding a table bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-bucket-policy.html#table-bucket-policy-add) in the *Amazon Simple Storage Service User Guide*.
 
 Permissions
-
 You must have the `s3tables:PutTableBucketPolicy` permission to use this operation.
 
-AWS Cloud Development Kit (AWS CDK)
-
+ AWS Cloud Development Kit (AWS CDK)
 To use S3 Tables AWS CDK constructs, add the `@aws-cdk/aws-s3tables-alpha` dependency with one of the following options:
-
-- NPM: `npm i @aws-cdk/aws-s3tables-alpha`
-
-- Yarn: `yarn add @aws-cdk/aws-s3tables-alpha`
++ NPM: `npm i @aws-cdk/aws-s3tables-alpha`
++ Yarn:`yarn add @aws-cdk/aws-s3tables-alpha`
 
 ## Syntax
+<a name="aws-resource-s3tables-tablebucketpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-s3tables-tablebucketpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::S3Tables::TableBucketPolicy",
   "Properties" : {
-      "ResourcePolicy" : Json,
-      "TableBucketARN" : String
+      "[ResourcePolicy](#cfn-s3tables-tablebucketpolicy-resourcepolicy)" : {{Json}},
+      "[TableBucketARN](#cfn-s3tables-tablebucketpolicy-tablebucketarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-s3tables-tablebucketpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::S3Tables::TableBucketPolicy
 Properties:
-  ResourcePolicy: Json
-  TableBucketARN: String
-
+  [ResourcePolicy](#cfn-s3tables-tablebucketpolicy-resourcepolicy): {{Json}}
+  [TableBucketARN](#cfn-s3tables-tablebucketpolicy-tablebucketarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-s3tables-tablebucketpolicy-properties"></a>
 
-`ResourcePolicy`
-
+`ResourcePolicy`  <a name="cfn-s3tables-tablebucketpolicy-resourcepolicy"></a>
 The bucket policy JSON for the table bucket.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableBucketARN`
-
+`TableBucketARN`  <a name="cfn-s3tables-tablebucketpolicy-tablebucketarn"></a>
 The Amazon Resource Name (ARN) of the table bucket.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `(arn:aws[-a-z0-9]*:[a-z0-9]+:[-a-z0-9]*:[0-9]{12}:bucket/[a-z0-9_-]{3,63})`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `(arn:aws[-a-z0-9]*:[a-z0-9]+:[-a-z0-9]*:[0-9]{12}:bucket/[a-z0-9_-]{3,63})`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-s3tables-tablebucketpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-s3tables-tablebucketpolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns some information about your table bucket policy.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UnreferencedFileRemoval
-
-AWS::S3Tables::TablePolicy
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

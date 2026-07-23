@@ -2,83 +2,58 @@
 title: "AWS::SageMaker::ModelQualityJobDefinition NetworkConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelQualityJobDefinition NetworkConfig
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-networkconfig"></a>
 
-Networking options for a job, such as network traffic encryption between containers,
-whether to allow inbound and outbound network calls to and from containers, and the VPC
-subnets and security groups to use for VPC-enabled jobs.
+Networking options for a job, such as network traffic encryption between containers, whether to allow inbound and outbound network calls to and from containers, and the VPC subnets and security groups to use for VPC-enabled jobs.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-networkconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-networkconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableInterContainerTrafficEncryption" : Boolean,
-  "EnableNetworkIsolation" : Boolean,
-  "VpcConfig" : VpcConfig
+  "[EnableInterContainerTrafficEncryption](#cfn-sagemaker-modelqualityjobdefinition-networkconfig-enableintercontainertrafficencryption)" : {{Boolean}},
+  "[EnableNetworkIsolation](#cfn-sagemaker-modelqualityjobdefinition-networkconfig-enablenetworkisolation)" : {{Boolean}},
+  "[VpcConfig](#cfn-sagemaker-modelqualityjobdefinition-networkconfig-vpcconfig)" : {{VpcConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-networkconfig-syntax.yaml"></a>
 
-```yaml
-
-  EnableInterContainerTrafficEncryption: Boolean
-  EnableNetworkIsolation: Boolean
-  VpcConfig:
-    VpcConfig
-
+```
+  [EnableInterContainerTrafficEncryption](#cfn-sagemaker-modelqualityjobdefinition-networkconfig-enableintercontainertrafficencryption): {{Boolean}}
+  [EnableNetworkIsolation](#cfn-sagemaker-modelqualityjobdefinition-networkconfig-enablenetworkisolation): {{Boolean}}
+  [VpcConfig](#cfn-sagemaker-modelqualityjobdefinition-networkconfig-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelqualityjobdefinition-networkconfig-properties"></a>
 
-`EnableInterContainerTrafficEncryption`
+`EnableInterContainerTrafficEncryption`  <a name="cfn-sagemaker-modelqualityjobdefinition-networkconfig-enableintercontainertrafficencryption"></a>
+Whether to encrypt all communications between distributed processing jobs. Choose `True` to encrypt communications. Encryption provides greater security for distributed processing jobs, but the processing might take longer.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Whether to encrypt all communications between distributed processing jobs. Choose
-`True` to encrypt communications. Encryption provides greater security
-for distributed processing jobs, but the processing might take longer.
+`EnableNetworkIsolation`  <a name="cfn-sagemaker-modelqualityjobdefinition-networkconfig-enablenetworkisolation"></a>
+Whether to allow inbound and outbound network calls to and from the containers used for the processing job.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnableNetworkIsolation`
-
-Whether to allow inbound and outbound network calls to and from the containers used for
-the processing job.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcConfig`
-
-Specifies a VPC that your training jobs and hosted models have access to. Control access to and from your
-training and model containers by configuring the VPC.
-
-_Required_: No
-
-_Type_: [VpcConfig](aws-properties-sagemaker-modelqualityjobdefinition-vpcconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MonitoringResources
-
-S3Output
+`VpcConfig`  <a name="cfn-sagemaker-modelqualityjobdefinition-networkconfig-vpcconfig"></a>
+Specifies a VPC that your training jobs and hosted models have access to. Control access to and from your training and model containers by configuring the VPC.
+*Required*: No
+*Type*: [VpcConfig](aws-properties-sagemaker-modelqualityjobdefinition-vpcconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

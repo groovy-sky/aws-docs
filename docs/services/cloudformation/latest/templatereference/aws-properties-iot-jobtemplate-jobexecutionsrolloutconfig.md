@@ -2,69 +2,51 @@
 title: "AWS::IoT::JobTemplate JobExecutionsRolloutConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::JobTemplate JobExecutionsRolloutConfig
+<a name="aws-properties-iot-jobtemplate-jobexecutionsrolloutconfig"></a>
 
 Allows you to create a staged rollout of a job.
 
 ## Syntax
+<a name="aws-properties-iot-jobtemplate-jobexecutionsrolloutconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-jobtemplate-jobexecutionsrolloutconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExponentialRolloutRate" : ExponentialRolloutRate,
-  "MaximumPerMinute" : Integer
+  "[ExponentialRolloutRate](#cfn-iot-jobtemplate-jobexecutionsrolloutconfig-exponentialrolloutrate)" : {{ExponentialRolloutRate}},
+  "[MaximumPerMinute](#cfn-iot-jobtemplate-jobexecutionsrolloutconfig-maximumperminute)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-jobtemplate-jobexecutionsrolloutconfig-syntax.yaml"></a>
 
-```yaml
-
-  ExponentialRolloutRate:
-    ExponentialRolloutRate
-  MaximumPerMinute: Integer
-
+```
+  [ExponentialRolloutRate](#cfn-iot-jobtemplate-jobexecutionsrolloutconfig-exponentialrolloutrate): {{
+    ExponentialRolloutRate}}
+  [MaximumPerMinute](#cfn-iot-jobtemplate-jobexecutionsrolloutconfig-maximumperminute): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-jobtemplate-jobexecutionsrolloutconfig-properties"></a>
 
-`ExponentialRolloutRate`
+`ExponentialRolloutRate`  <a name="cfn-iot-jobtemplate-jobexecutionsrolloutconfig-exponentialrolloutrate"></a>
+The rate of increase for a job rollout. This parameter allows you to define an exponential rate for a job rollout.
+*Required*: No
+*Type*: [ExponentialRolloutRate](aws-properties-iot-jobtemplate-exponentialrolloutrate.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The rate of increase for a job rollout. This parameter allows you to define an
-exponential rate for a job rollout.
-
-_Required_: No
-
-_Type_: [ExponentialRolloutRate](aws-properties-iot-jobtemplate-exponentialrolloutrate.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaximumPerMinute`
-
-The maximum number of things that will be notified of a pending job, per minute.
-This parameter allows you to create a staged rollout.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JobExecutionsRetryConfig
-
-MaintenanceWindow
+`MaximumPerMinute`  <a name="cfn-iot-jobtemplate-jobexecutionsrolloutconfig-maximumperminute"></a>
+The maximum number of things that will be notified of a pending job, per minute. This parameter allows you to create a staged rollout.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

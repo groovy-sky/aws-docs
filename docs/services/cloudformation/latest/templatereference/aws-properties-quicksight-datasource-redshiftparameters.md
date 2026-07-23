@@ -2,134 +2,92 @@
 title: "AWS::QuickSight::DataSource RedshiftParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource RedshiftParameters
+<a name="aws-properties-quicksight-datasource-redshiftparameters"></a>
 
-The parameters for Amazon Redshift. The `ClusterId` field can be blank if
-`Host` and `Port` are both set. The `Host` and `Port` fields can be blank if the `ClusterId` field is set.
+The parameters for Amazon Redshift. The `ClusterId` field can be blank if `Host` and `Port` are both set. The `Host` and `Port` fields can be blank if the `ClusterId` field is set.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-redshiftparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-redshiftparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterId" : String,
-  "Database" : String,
-  "Host" : String,
-  "IAMParameters" : RedshiftIAMParameters,
-  "IdentityCenterConfiguration" : IdentityCenterConfiguration,
-  "Port" : Number
+  "[ClusterId](#cfn-quicksight-datasource-redshiftparameters-clusterid)" : {{String}},
+  "[Database](#cfn-quicksight-datasource-redshiftparameters-database)" : {{String}},
+  "[Host](#cfn-quicksight-datasource-redshiftparameters-host)" : {{String}},
+  "[IAMParameters](#cfn-quicksight-datasource-redshiftparameters-iamparameters)" : {{RedshiftIAMParameters}},
+  "[IdentityCenterConfiguration](#cfn-quicksight-datasource-redshiftparameters-identitycenterconfiguration)" : {{IdentityCenterConfiguration}},
+  "[Port](#cfn-quicksight-datasource-redshiftparameters-port)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-redshiftparameters-syntax.yaml"></a>
 
-```yaml
-
-  ClusterId: String
-  Database: String
-  Host: String
-  IAMParameters:
-    RedshiftIAMParameters
-  IdentityCenterConfiguration:
-    IdentityCenterConfiguration
-  Port: Number
-
+```
+  [ClusterId](#cfn-quicksight-datasource-redshiftparameters-clusterid): {{String}}
+  [Database](#cfn-quicksight-datasource-redshiftparameters-database): {{String}}
+  [Host](#cfn-quicksight-datasource-redshiftparameters-host): {{String}}
+  [IAMParameters](#cfn-quicksight-datasource-redshiftparameters-iamparameters): {{
+    RedshiftIAMParameters}}
+  [IdentityCenterConfiguration](#cfn-quicksight-datasource-redshiftparameters-identitycenterconfiguration): {{
+    IdentityCenterConfiguration}}
+  [Port](#cfn-quicksight-datasource-redshiftparameters-port): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-redshiftparameters-properties"></a>
 
-`ClusterId`
+`ClusterId`  <a name="cfn-quicksight-datasource-redshiftparameters-clusterid"></a>
+Cluster ID. This field can be blank if the `Host` and `Port` are provided.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Cluster ID. This field can be blank if the `Host` and `Port` are
-provided.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Database`
-
+`Database`  <a name="cfn-quicksight-datasource-redshiftparameters-database"></a>
 Database.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Host`
-
+`Host`  <a name="cfn-quicksight-datasource-redshiftparameters-host"></a>
 Host. This field can be blank if `ClusterId` is provided.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IAMParameters`  <a name="cfn-quicksight-datasource-redshiftparameters-iamparameters"></a>
+An optional parameter that uses IAM authentication to grant Quick Sight access to your cluster. This parameter can be used instead of [DataSourceCredentials](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataSourceCredentials.html).
+*Required*: No
+*Type*: [RedshiftIAMParameters](aws-properties-quicksight-datasource-redshiftiamparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IAMParameters`
-
-An optional parameter that uses IAM authentication to grant Quick Sight access to your cluster. This parameter can be used instead of [DataSourceCredentials](../../../../reference/quicksight/latest/apireference/api-datasourcecredentials.md).
-
-_Required_: No
-
-_Type_: [RedshiftIAMParameters](aws-properties-quicksight-datasource-redshiftiamparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdentityCenterConfiguration`
-
+`IdentityCenterConfiguration`  <a name="cfn-quicksight-datasource-redshiftparameters-identitycenterconfiguration"></a>
 An optional parameter that configures IAM Identity Center authentication to grant Quick Sight access to your cluster.
-
 This parameter can only be specified if your Quick Sight account is configured with IAM Identity Center.
+*Required*: No
+*Type*: [IdentityCenterConfiguration](aws-properties-quicksight-datasource-identitycenterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IdentityCenterConfiguration](aws-properties-quicksight-datasource-identitycenterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-quicksight-datasource-redshiftparameters-port"></a>
 Port. This field can be blank if the `ClusterId` is provided.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedshiftIAMParameters
-
-ResourcePermission
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

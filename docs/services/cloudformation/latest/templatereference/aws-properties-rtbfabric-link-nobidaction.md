@@ -2,54 +2,42 @@
 title: "AWS::RTBFabric::Link NoBidAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::Link NoBidAction
+<a name="aws-properties-rtbfabric-link-nobidaction"></a>
 
 Describes a no bid action.
 
 ## Syntax
+<a name="aws-properties-rtbfabric-link-nobidaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-link-nobidaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "NoBidReasonCode" : Integer
+  "[NoBidReasonCode](#cfn-rtbfabric-link-nobidaction-nobidreasoncode)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-link-nobidaction-syntax.yaml"></a>
 
-```yaml
-
-  NoBidReasonCode: Integer
-
+```
+  [NoBidReasonCode](#cfn-rtbfabric-link-nobidaction-nobidreasoncode): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-link-nobidaction-properties"></a>
 
-`NoBidReasonCode`
-
+`NoBidReasonCode`  <a name="cfn-rtbfabric-link-nobidaction-nobidreasoncode"></a>
 The reason code for the no bid action.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModuleParameters
-
-NoBidModuleParameters
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

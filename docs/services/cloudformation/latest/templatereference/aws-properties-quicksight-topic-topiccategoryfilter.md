@@ -2,93 +2,68 @@
 title: "AWS::QuickSight::Topic TopicCategoryFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicCategoryFilter
+<a name="aws-properties-quicksight-topic-topiccategoryfilter"></a>
 
 A structure that represents a category filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-topiccategoryfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-topiccategoryfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryFilterFunction" : String,
-  "CategoryFilterType" : String,
-  "Constant" : TopicCategoryFilterConstant,
-  "Inverse" : Boolean
+  "[CategoryFilterFunction](#cfn-quicksight-topic-topiccategoryfilter-categoryfilterfunction)" : {{String}},
+  "[CategoryFilterType](#cfn-quicksight-topic-topiccategoryfilter-categoryfiltertype)" : {{String}},
+  "[Constant](#cfn-quicksight-topic-topiccategoryfilter-constant)" : {{TopicCategoryFilterConstant}},
+  "[Inverse](#cfn-quicksight-topic-topiccategoryfilter-inverse)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-topiccategoryfilter-syntax.yaml"></a>
 
-```yaml
-
-  CategoryFilterFunction: String
-  CategoryFilterType: String
-  Constant:
-    TopicCategoryFilterConstant
-  Inverse: Boolean
-
+```
+  [CategoryFilterFunction](#cfn-quicksight-topic-topiccategoryfilter-categoryfilterfunction): {{String}}
+  [CategoryFilterType](#cfn-quicksight-topic-topiccategoryfilter-categoryfiltertype): {{String}}
+  [Constant](#cfn-quicksight-topic-topiccategoryfilter-constant): {{
+    TopicCategoryFilterConstant}}
+  [Inverse](#cfn-quicksight-topic-topiccategoryfilter-inverse): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-topiccategoryfilter-properties"></a>
 
-`CategoryFilterFunction`
-
+`CategoryFilterFunction`  <a name="cfn-quicksight-topic-topiccategoryfilter-categoryfilterfunction"></a>
 The category filter function. Valid values for this structure are `EXACT` and `CONTAINS`.
+*Required*: No
+*Type*: String
+*Allowed values*: `EXACT | CONTAINS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `EXACT | CONTAINS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryFilterType`
-
+`CategoryFilterType`  <a name="cfn-quicksight-topic-topiccategoryfilter-categoryfiltertype"></a>
 The category filter type. This element is used to specify whether a filter is a simple category filter or an inverse category filter.
+*Required*: No
+*Type*: String
+*Allowed values*: `CUSTOM_FILTER | CUSTOM_FILTER_LIST | FILTER_LIST`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CUSTOM_FILTER | CUSTOM_FILTER_LIST | FILTER_LIST`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Constant`
-
+`Constant`  <a name="cfn-quicksight-topic-topiccategoryfilter-constant"></a>
 The constant used in a category filter.
+*Required*: No
+*Type*: [TopicCategoryFilterConstant](aws-properties-quicksight-topic-topiccategoryfilterconstant.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TopicCategoryFilterConstant](aws-properties-quicksight-topic-topiccategoryfilterconstant.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Inverse`
-
+`Inverse`  <a name="cfn-quicksight-topic-topiccategoryfilter-inverse"></a>
 A Boolean value that indicates if the filter is inverse.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TopicCalculatedField
-
-TopicCategoryFilterConstant
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

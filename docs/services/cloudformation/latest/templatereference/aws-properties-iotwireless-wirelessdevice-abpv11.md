@@ -2,67 +2,51 @@
 title: "AWS::IoTWireless::WirelessDevice AbpV11"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::WirelessDevice AbpV11
+<a name="aws-properties-iotwireless-wirelessdevice-abpv11"></a>
 
 ABP device object for create APIs for v1.1.
 
 ## Syntax
+<a name="aws-properties-iotwireless-wirelessdevice-abpv11-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotwireless-wirelessdevice-abpv11-syntax.json"></a>
 
-```json
-
+```
 {
-  "DevAddr" : String,
-  "SessionKeys" : SessionKeysAbpV11
+  "[DevAddr](#cfn-iotwireless-wirelessdevice-abpv11-devaddr)" : {{String}},
+  "[SessionKeys](#cfn-iotwireless-wirelessdevice-abpv11-sessionkeys)" : {{SessionKeysAbpV11}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotwireless-wirelessdevice-abpv11-syntax.yaml"></a>
 
-```yaml
-
-  DevAddr: String
-  SessionKeys:
-    SessionKeysAbpV11
-
+```
+  [DevAddr](#cfn-iotwireless-wirelessdevice-abpv11-devaddr): {{String}}
+  [SessionKeys](#cfn-iotwireless-wirelessdevice-abpv11-sessionkeys): {{
+    SessionKeysAbpV11}}
 ```
 
 ## Properties
+<a name="aws-properties-iotwireless-wirelessdevice-abpv11-properties"></a>
 
-`DevAddr`
-
+`DevAddr`  <a name="cfn-iotwireless-wirelessdevice-abpv11-devaddr"></a>
 The DevAddr value.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-fA-F0-9]{8}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-fA-F0-9]{8}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionKeys`
-
+`SessionKeys`  <a name="cfn-iotwireless-wirelessdevice-abpv11-sessionkeys"></a>
 Session keys for ABP v1.1.
-
-_Required_: Yes
-
-_Type_: [SessionKeysAbpV11](aws-properties-iotwireless-wirelessdevice-sessionkeysabpv11.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AbpV10x
-
-Application
+*Required*: Yes
+*Type*: [SessionKeysAbpV11](aws-properties-iotwireless-wirelessdevice-sessionkeysabpv11.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

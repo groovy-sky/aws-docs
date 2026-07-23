@@ -2,971 +2,615 @@
 title: "AWS::Wisdom::MessageTemplate CustomerProfileAttributes"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::MessageTemplate CustomerProfileAttributes
+<a name="aws-properties-wisdom-messagetemplate-customerprofileattributes"></a>
 
 The customer profile attributes that are used with the message template.
 
 ## Syntax
+<a name="aws-properties-wisdom-messagetemplate-customerprofileattributes-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-messagetemplate-customerprofileattributes-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccountNumber" : String,
-  "AdditionalInformation" : String,
-  "Address1" : String,
-  "Address2" : String,
-  "Address3" : String,
-  "Address4" : String,
-  "BillingAddress1" : String,
-  "BillingAddress2" : String,
-  "BillingAddress3" : String,
-  "BillingAddress4" : String,
-  "BillingCity" : String,
-  "BillingCountry" : String,
-  "BillingCounty" : String,
-  "BillingPostalCode" : String,
-  "BillingProvince" : String,
-  "BillingState" : String,
-  "BirthDate" : String,
-  "BusinessEmailAddress" : String,
-  "BusinessName" : String,
-  "BusinessPhoneNumber" : String,
-  "City" : String,
-  "Country" : String,
-  "County" : String,
-  "Custom" : {Key: Value, ...},
-  "EmailAddress" : String,
-  "FirstName" : String,
-  "Gender" : String,
-  "HomePhoneNumber" : String,
-  "LastName" : String,
-  "MailingAddress1" : String,
-  "MailingAddress2" : String,
-  "MailingAddress3" : String,
-  "MailingAddress4" : String,
-  "MailingCity" : String,
-  "MailingCountry" : String,
-  "MailingCounty" : String,
-  "MailingPostalCode" : String,
-  "MailingProvince" : String,
-  "MailingState" : String,
-  "MiddleName" : String,
-  "MobilePhoneNumber" : String,
-  "PartyType" : String,
-  "PhoneNumber" : String,
-  "PostalCode" : String,
-  "ProfileARN" : String,
-  "ProfileId" : String,
-  "Province" : String,
-  "ShippingAddress1" : String,
-  "ShippingAddress2" : String,
-  "ShippingAddress3" : String,
-  "ShippingAddress4" : String,
-  "ShippingCity" : String,
-  "ShippingCountry" : String,
-  "ShippingCounty" : String,
-  "ShippingPostalCode" : String,
-  "ShippingProvince" : String,
-  "ShippingState" : String,
-  "State" : String
+  "[AccountNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-accountnumber)" : {{String}},
+  "[AdditionalInformation](#cfn-wisdom-messagetemplate-customerprofileattributes-additionalinformation)" : {{String}},
+  "[Address1](#cfn-wisdom-messagetemplate-customerprofileattributes-address1)" : {{String}},
+  "[Address2](#cfn-wisdom-messagetemplate-customerprofileattributes-address2)" : {{String}},
+  "[Address3](#cfn-wisdom-messagetemplate-customerprofileattributes-address3)" : {{String}},
+  "[Address4](#cfn-wisdom-messagetemplate-customerprofileattributes-address4)" : {{String}},
+  "[BillingAddress1](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress1)" : {{String}},
+  "[BillingAddress2](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress2)" : {{String}},
+  "[BillingAddress3](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress3)" : {{String}},
+  "[BillingAddress4](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress4)" : {{String}},
+  "[BillingCity](#cfn-wisdom-messagetemplate-customerprofileattributes-billingcity)" : {{String}},
+  "[BillingCountry](#cfn-wisdom-messagetemplate-customerprofileattributes-billingcountry)" : {{String}},
+  "[BillingCounty](#cfn-wisdom-messagetemplate-customerprofileattributes-billingcounty)" : {{String}},
+  "[BillingPostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-billingpostalcode)" : {{String}},
+  "[BillingProvince](#cfn-wisdom-messagetemplate-customerprofileattributes-billingprovince)" : {{String}},
+  "[BillingState](#cfn-wisdom-messagetemplate-customerprofileattributes-billingstate)" : {{String}},
+  "[BirthDate](#cfn-wisdom-messagetemplate-customerprofileattributes-birthdate)" : {{String}},
+  "[BusinessEmailAddress](#cfn-wisdom-messagetemplate-customerprofileattributes-businessemailaddress)" : {{String}},
+  "[BusinessName](#cfn-wisdom-messagetemplate-customerprofileattributes-businessname)" : {{String}},
+  "[BusinessPhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-businessphonenumber)" : {{String}},
+  "[City](#cfn-wisdom-messagetemplate-customerprofileattributes-city)" : {{String}},
+  "[Country](#cfn-wisdom-messagetemplate-customerprofileattributes-country)" : {{String}},
+  "[County](#cfn-wisdom-messagetemplate-customerprofileattributes-county)" : {{String}},
+  "[Custom](#cfn-wisdom-messagetemplate-customerprofileattributes-custom)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[EmailAddress](#cfn-wisdom-messagetemplate-customerprofileattributes-emailaddress)" : {{String}},
+  "[FirstName](#cfn-wisdom-messagetemplate-customerprofileattributes-firstname)" : {{String}},
+  "[Gender](#cfn-wisdom-messagetemplate-customerprofileattributes-gender)" : {{String}},
+  "[HomePhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-homephonenumber)" : {{String}},
+  "[LastName](#cfn-wisdom-messagetemplate-customerprofileattributes-lastname)" : {{String}},
+  "[MailingAddress1](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress1)" : {{String}},
+  "[MailingAddress2](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress2)" : {{String}},
+  "[MailingAddress3](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress3)" : {{String}},
+  "[MailingAddress4](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress4)" : {{String}},
+  "[MailingCity](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingcity)" : {{String}},
+  "[MailingCountry](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingcountry)" : {{String}},
+  "[MailingCounty](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingcounty)" : {{String}},
+  "[MailingPostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingpostalcode)" : {{String}},
+  "[MailingProvince](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingprovince)" : {{String}},
+  "[MailingState](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingstate)" : {{String}},
+  "[MiddleName](#cfn-wisdom-messagetemplate-customerprofileattributes-middlename)" : {{String}},
+  "[MobilePhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-mobilephonenumber)" : {{String}},
+  "[PartyType](#cfn-wisdom-messagetemplate-customerprofileattributes-partytype)" : {{String}},
+  "[PhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-phonenumber)" : {{String}},
+  "[PostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-postalcode)" : {{String}},
+  "[ProfileARN](#cfn-wisdom-messagetemplate-customerprofileattributes-profilearn)" : {{String}},
+  "[ProfileId](#cfn-wisdom-messagetemplate-customerprofileattributes-profileid)" : {{String}},
+  "[Province](#cfn-wisdom-messagetemplate-customerprofileattributes-province)" : {{String}},
+  "[ShippingAddress1](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress1)" : {{String}},
+  "[ShippingAddress2](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress2)" : {{String}},
+  "[ShippingAddress3](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress3)" : {{String}},
+  "[ShippingAddress4](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress4)" : {{String}},
+  "[ShippingCity](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingcity)" : {{String}},
+  "[ShippingCountry](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingcountry)" : {{String}},
+  "[ShippingCounty](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingcounty)" : {{String}},
+  "[ShippingPostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingpostalcode)" : {{String}},
+  "[ShippingProvince](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingprovince)" : {{String}},
+  "[ShippingState](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingstate)" : {{String}},
+  "[State](#cfn-wisdom-messagetemplate-customerprofileattributes-state)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-messagetemplate-customerprofileattributes-syntax.yaml"></a>
 
-```yaml
-
-  AccountNumber: String
-  AdditionalInformation: String
-  Address1: String
-  Address2: String
-  Address3: String
-  Address4: String
-  BillingAddress1: String
-  BillingAddress2: String
-  BillingAddress3: String
-  BillingAddress4: String
-  BillingCity: String
-  BillingCountry: String
-  BillingCounty: String
-  BillingPostalCode: String
-  BillingProvince: String
-  BillingState: String
-  BirthDate: String
-  BusinessEmailAddress: String
-  BusinessName: String
-  BusinessPhoneNumber: String
-  City: String
-  Country: String
-  County: String
-  Custom:
-    Key: Value
-  EmailAddress: String
-  FirstName: String
-  Gender: String
-  HomePhoneNumber: String
-  LastName: String
-  MailingAddress1: String
-  MailingAddress2: String
-  MailingAddress3: String
-  MailingAddress4: String
-  MailingCity: String
-  MailingCountry: String
-  MailingCounty: String
-  MailingPostalCode: String
-  MailingProvince: String
-  MailingState: String
-  MiddleName: String
-  MobilePhoneNumber: String
-  PartyType: String
-  PhoneNumber: String
-  PostalCode: String
-  ProfileARN: String
-  ProfileId: String
-  Province: String
-  ShippingAddress1: String
-  ShippingAddress2: String
-  ShippingAddress3: String
-  ShippingAddress4: String
-  ShippingCity: String
-  ShippingCountry: String
-  ShippingCounty: String
-  ShippingPostalCode: String
-  ShippingProvince: String
-  ShippingState: String
-  State: String
-
+```
+  [AccountNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-accountnumber): {{String}}
+  [AdditionalInformation](#cfn-wisdom-messagetemplate-customerprofileattributes-additionalinformation): {{String}}
+  [Address1](#cfn-wisdom-messagetemplate-customerprofileattributes-address1): {{String}}
+  [Address2](#cfn-wisdom-messagetemplate-customerprofileattributes-address2): {{String}}
+  [Address3](#cfn-wisdom-messagetemplate-customerprofileattributes-address3): {{String}}
+  [Address4](#cfn-wisdom-messagetemplate-customerprofileattributes-address4): {{String}}
+  [BillingAddress1](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress1): {{String}}
+  [BillingAddress2](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress2): {{String}}
+  [BillingAddress3](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress3): {{String}}
+  [BillingAddress4](#cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress4): {{String}}
+  [BillingCity](#cfn-wisdom-messagetemplate-customerprofileattributes-billingcity): {{String}}
+  [BillingCountry](#cfn-wisdom-messagetemplate-customerprofileattributes-billingcountry): {{String}}
+  [BillingCounty](#cfn-wisdom-messagetemplate-customerprofileattributes-billingcounty): {{String}}
+  [BillingPostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-billingpostalcode): {{String}}
+  [BillingProvince](#cfn-wisdom-messagetemplate-customerprofileattributes-billingprovince): {{String}}
+  [BillingState](#cfn-wisdom-messagetemplate-customerprofileattributes-billingstate): {{String}}
+  [BirthDate](#cfn-wisdom-messagetemplate-customerprofileattributes-birthdate): {{String}}
+  [BusinessEmailAddress](#cfn-wisdom-messagetemplate-customerprofileattributes-businessemailaddress): {{String}}
+  [BusinessName](#cfn-wisdom-messagetemplate-customerprofileattributes-businessname): {{String}}
+  [BusinessPhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-businessphonenumber): {{String}}
+  [City](#cfn-wisdom-messagetemplate-customerprofileattributes-city): {{String}}
+  [Country](#cfn-wisdom-messagetemplate-customerprofileattributes-country): {{String}}
+  [County](#cfn-wisdom-messagetemplate-customerprofileattributes-county): {{String}}
+  [Custom](#cfn-wisdom-messagetemplate-customerprofileattributes-custom): {{
+    {{Key}}: {{Value}}}}
+  [EmailAddress](#cfn-wisdom-messagetemplate-customerprofileattributes-emailaddress): {{String}}
+  [FirstName](#cfn-wisdom-messagetemplate-customerprofileattributes-firstname): {{String}}
+  [Gender](#cfn-wisdom-messagetemplate-customerprofileattributes-gender): {{String}}
+  [HomePhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-homephonenumber): {{String}}
+  [LastName](#cfn-wisdom-messagetemplate-customerprofileattributes-lastname): {{String}}
+  [MailingAddress1](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress1): {{String}}
+  [MailingAddress2](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress2): {{String}}
+  [MailingAddress3](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress3): {{String}}
+  [MailingAddress4](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress4): {{String}}
+  [MailingCity](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingcity): {{String}}
+  [MailingCountry](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingcountry): {{String}}
+  [MailingCounty](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingcounty): {{String}}
+  [MailingPostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingpostalcode): {{String}}
+  [MailingProvince](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingprovince): {{String}}
+  [MailingState](#cfn-wisdom-messagetemplate-customerprofileattributes-mailingstate): {{String}}
+  [MiddleName](#cfn-wisdom-messagetemplate-customerprofileattributes-middlename): {{String}}
+  [MobilePhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-mobilephonenumber): {{String}}
+  [PartyType](#cfn-wisdom-messagetemplate-customerprofileattributes-partytype): {{String}}
+  [PhoneNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-phonenumber): {{String}}
+  [PostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-postalcode): {{String}}
+  [ProfileARN](#cfn-wisdom-messagetemplate-customerprofileattributes-profilearn): {{String}}
+  [ProfileId](#cfn-wisdom-messagetemplate-customerprofileattributes-profileid): {{String}}
+  [Province](#cfn-wisdom-messagetemplate-customerprofileattributes-province): {{String}}
+  [ShippingAddress1](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress1): {{String}}
+  [ShippingAddress2](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress2): {{String}}
+  [ShippingAddress3](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress3): {{String}}
+  [ShippingAddress4](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress4): {{String}}
+  [ShippingCity](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingcity): {{String}}
+  [ShippingCountry](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingcountry): {{String}}
+  [ShippingCounty](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingcounty): {{String}}
+  [ShippingPostalCode](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingpostalcode): {{String}}
+  [ShippingProvince](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingprovince): {{String}}
+  [ShippingState](#cfn-wisdom-messagetemplate-customerprofileattributes-shippingstate): {{String}}
+  [State](#cfn-wisdom-messagetemplate-customerprofileattributes-state): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-messagetemplate-customerprofileattributes-properties"></a>
 
-`AccountNumber`
-
+`AccountNumber`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-accountnumber"></a>
 A unique account number that you have given to the customer.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AdditionalInformation`
-
+`AdditionalInformation`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-additionalinformation"></a>
 Any additional information relevant to the customer's profile.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Address1`
-
+`Address1`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-address1"></a>
 The first line of a customer address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Address2`
-
+`Address2`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-address2"></a>
 The second line of a customer address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Address3`
-
+`Address3`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-address3"></a>
 The third line of a customer address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Address4`
-
+`Address4`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-address4"></a>
 The fourth line of a customer address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingAddress1`
-
+`BillingAddress1`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress1"></a>
 The first line of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingAddress2`
-
+`BillingAddress2`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress2"></a>
 The second line of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingAddress3`
-
+`BillingAddress3`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress3"></a>
 The third line of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingAddress4`
-
+`BillingAddress4`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingaddress4"></a>
 The fourth line of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingCity`
-
+`BillingCity`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingcity"></a>
 The city of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingCountry`
-
+`BillingCountry`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingcountry"></a>
 The country of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingCounty`
-
+`BillingCounty`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingcounty"></a>
 The county of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingPostalCode`
-
+`BillingPostalCode`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingpostalcode"></a>
 The postal code of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingProvince`
-
+`BillingProvince`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingprovince"></a>
 The province of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BillingState`
-
+`BillingState`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-billingstate"></a>
 The state of a customer’s billing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BirthDate`
-
+`BirthDate`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-birthdate"></a>
 The customer's birth date.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BusinessEmailAddress`
-
+`BusinessEmailAddress`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-businessemailaddress"></a>
 The customer's business email address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BusinessName`
-
+`BusinessName`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-businessname"></a>
 The name of the customer's business.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BusinessPhoneNumber`
-
+`BusinessPhoneNumber`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-businessphonenumber"></a>
 The customer's business phone number.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`City`
-
+`City`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-city"></a>
 The city in which a customer lives.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Country`
-
+`Country`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-country"></a>
 The country in which a customer lives.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`County`
-
+`County`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-county"></a>
 The county in which a customer lives.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Custom`
-
+`Custom`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-custom"></a>
 The custom attributes in customer profile attributes.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^[a-zA-Z0-9\s._:/=+@-]*$`
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^[a-zA-Z0-9\s._:/=+@-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EmailAddress`
-
+`EmailAddress`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-emailaddress"></a>
 The customer's email address, which has not been specified as a personal or business address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FirstName`
-
+`FirstName`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-firstname"></a>
 The customer's first name.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Gender`
-
+`Gender`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-gender"></a>
 The customer's gender.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HomePhoneNumber`
-
+`HomePhoneNumber`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-homephonenumber"></a>
 The customer's mobile phone number.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LastName`
-
+`LastName`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-lastname"></a>
 The customer's last name.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingAddress1`
-
+`MailingAddress1`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress1"></a>
 The first line of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingAddress2`
-
+`MailingAddress2`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress2"></a>
 The second line of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingAddress3`
-
+`MailingAddress3`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress3"></a>
 The third line of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingAddress4`
-
+`MailingAddress4`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingaddress4"></a>
 The fourth line of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingCity`
-
+`MailingCity`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingcity"></a>
 The city of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingCountry`
-
+`MailingCountry`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingcountry"></a>
 The country of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingCounty`
-
+`MailingCounty`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingcounty"></a>
 The county of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingPostalCode`
-
+`MailingPostalCode`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingpostalcode"></a>
 The postal code of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingProvince`
-
+`MailingProvince`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingprovince"></a>
 The province of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MailingState`
-
+`MailingState`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mailingstate"></a>
 The state of a customer’s mailing address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MiddleName`
-
+`MiddleName`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-middlename"></a>
 The customer's middle name.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MobilePhoneNumber`
-
+`MobilePhoneNumber`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-mobilephonenumber"></a>
 The customer's mobile phone number.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PartyType`
-
+`PartyType`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-partytype"></a>
 The customer's party type.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PhoneNumber`
-
+`PhoneNumber`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-phonenumber"></a>
 The customer's phone number, which has not been specified as a mobile, home, or business number.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PostalCode`
-
+`PostalCode`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-postalcode"></a>
 The postal code of a customer address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProfileARN`
-
+`ProfileARN`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-profilearn"></a>
 The ARN of a customer profile.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProfileId`
-
+`ProfileId`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-profileid"></a>
 The unique identifier of a customer profile.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Province`
-
+`Province`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-province"></a>
 The province in which a customer lives.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingAddress1`
-
+`ShippingAddress1`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress1"></a>
 The first line of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingAddress2`
-
+`ShippingAddress2`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress2"></a>
 The second line of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingAddress3`
-
+`ShippingAddress3`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress3"></a>
 The third line of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingAddress4`
-
+`ShippingAddress4`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingaddress4"></a>
 The fourth line of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingCity`
-
+`ShippingCity`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingcity"></a>
 The city of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingCountry`
-
+`ShippingCountry`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingcountry"></a>
 The country of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingCounty`
-
+`ShippingCounty`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingcounty"></a>
 The county of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingPostalCode`
-
+`ShippingPostalCode`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingpostalcode"></a>
 The postal code of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingProvince`
-
+`ShippingProvince`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingprovince"></a>
 The province of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShippingState`
-
+`ShippingState`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-shippingstate"></a>
 The state of a customer’s shipping address.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`State`
-
+`State`  <a name="cfn-wisdom-messagetemplate-customerprofileattributes-state"></a>
 The state in which a customer lives.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32767`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Content
-
-EmailMessageTemplateContent
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32767`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

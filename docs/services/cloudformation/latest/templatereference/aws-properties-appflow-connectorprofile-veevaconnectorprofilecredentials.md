@@ -2,77 +2,57 @@
 title: "AWS::AppFlow::ConnectorProfile VeevaConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile VeevaConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-veevaconnectorprofilecredentials"></a>
 
-The connector-specific profile credentials required when using Veeva.
+ The connector-specific profile credentials required when using Veeva.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-veevaconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-veevaconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "Password" : String,
-  "Username" : String
+  "[Password](#cfn-appflow-connectorprofile-veevaconnectorprofilecredentials-password)" : {{String}},
+  "[Username](#cfn-appflow-connectorprofile-veevaconnectorprofilecredentials-username)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-veevaconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  Password: String
-  Username: String
-
+```
+  [Password](#cfn-appflow-connectorprofile-veevaconnectorprofilecredentials-password): {{String}}
+  [Username](#cfn-appflow-connectorprofile-veevaconnectorprofilecredentials-username): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-veevaconnectorprofilecredentials-properties"></a>
 
-`Password`
+`Password`  <a name="cfn-appflow-connectorprofile-veevaconnectorprofilecredentials-password"></a>
+ The password that corresponds to the user name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The password that corresponds to the user name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Username`
-
-The name of the user.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Username`  <a name="cfn-appflow-connectorprofile-veevaconnectorprofilecredentials-username"></a>
+ The name of the user.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [VeevaConnectorProfileCredentials](../../../../reference/appflow/1-0/apireference/api-veevaconnectorprofilecredentials.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrendmicroConnectorProfileCredentials
-
-VeevaConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-veevaconnectorprofilecredentials--seealso"></a>
++ [VeevaConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_VeevaConnectorProfileCredentials.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

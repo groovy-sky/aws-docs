@@ -2,167 +2,114 @@
 title: "AWS::IoTFleetWise::DecoderManifest CanSignal"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::DecoderManifest CanSignal
+<a name="aws-properties-iotfleetwise-decodermanifest-cansignal"></a>
 
-Information about a single controller area network (CAN) signal and the messages it
-receives and transmits.
+ Information about a single controller area network (CAN) signal and the messages it receives and transmits.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-decodermanifest-cansignal-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-decodermanifest-cansignal-syntax.json"></a>
 
-```json
-
+```
 {
-  "Factor" : String,
-  "IsBigEndian" : String,
-  "IsSigned" : String,
-  "Length" : String,
-  "MessageId" : String,
-  "Name" : String,
-  "Offset" : String,
-  "SignalValueType" : String,
-  "StartBit" : String
+  "[Factor](#cfn-iotfleetwise-decodermanifest-cansignal-factor)" : {{String}},
+  "[IsBigEndian](#cfn-iotfleetwise-decodermanifest-cansignal-isbigendian)" : {{String}},
+  "[IsSigned](#cfn-iotfleetwise-decodermanifest-cansignal-issigned)" : {{String}},
+  "[Length](#cfn-iotfleetwise-decodermanifest-cansignal-length)" : {{String}},
+  "[MessageId](#cfn-iotfleetwise-decodermanifest-cansignal-messageid)" : {{String}},
+  "[Name](#cfn-iotfleetwise-decodermanifest-cansignal-name)" : {{String}},
+  "[Offset](#cfn-iotfleetwise-decodermanifest-cansignal-offset)" : {{String}},
+  "[SignalValueType](#cfn-iotfleetwise-decodermanifest-cansignal-signalvaluetype)" : {{String}},
+  "[StartBit](#cfn-iotfleetwise-decodermanifest-cansignal-startbit)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-decodermanifest-cansignal-syntax.yaml"></a>
 
-```yaml
-
-  Factor: String
-  IsBigEndian: String
-  IsSigned: String
-  Length: String
-  MessageId: String
-  Name: String
-  Offset: String
-  SignalValueType: String
-  StartBit: String
-
+```
+  [Factor](#cfn-iotfleetwise-decodermanifest-cansignal-factor): {{String}}
+  [IsBigEndian](#cfn-iotfleetwise-decodermanifest-cansignal-isbigendian): {{String}}
+  [IsSigned](#cfn-iotfleetwise-decodermanifest-cansignal-issigned): {{String}}
+  [Length](#cfn-iotfleetwise-decodermanifest-cansignal-length): {{String}}
+  [MessageId](#cfn-iotfleetwise-decodermanifest-cansignal-messageid): {{String}}
+  [Name](#cfn-iotfleetwise-decodermanifest-cansignal-name): {{String}}
+  [Offset](#cfn-iotfleetwise-decodermanifest-cansignal-offset): {{String}}
+  [SignalValueType](#cfn-iotfleetwise-decodermanifest-cansignal-signalvaluetype): {{String}}
+  [StartBit](#cfn-iotfleetwise-decodermanifest-cansignal-startbit): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-decodermanifest-cansignal-properties"></a>
 
-`Factor`
-
+`Factor`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-factor"></a>
 A multiplier used to decode the CAN message.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsBigEndian`
-
+`IsBigEndian`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-isbigendian"></a>
 Whether the byte ordering of a CAN message is big-endian.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsSigned`
-
+`IsSigned`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-issigned"></a>
 Whether the message data is specified as a signed value.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Length`
-
+`Length`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-length"></a>
 How many bytes of data are in the message.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MessageId`
-
+`MessageId`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-messageid"></a>
 The ID of the message.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Name`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-name"></a>
+ The name of the signal.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the signal.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Offset`
-
+`Offset`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-offset"></a>
 The offset used to calculate the signal value. Combined with factor, the calculation is `value = raw_value * factor + offset`.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SignalValueType`
-
+`SignalValueType`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-signalvaluetype"></a>
 The value type of the signal. The default value is `INTEGER`.
+*Required*: No
+*Type*: String
+*Allowed values*: `INTEGER | FLOATING_POINT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INTEGER | FLOATING_POINT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartBit`
-
+`StartBit`  <a name="cfn-iotfleetwise-decodermanifest-cansignal-startbit"></a>
 Indicates the beginning of the CAN message.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CanNetworkInterface
-
-CanSignalDecoder
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

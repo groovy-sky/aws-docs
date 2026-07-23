@@ -2,55 +2,44 @@
 title: "AWS::QuickSight::Dashboard BoxPlotFieldWells"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard BoxPlotFieldWells
+<a name="aws-properties-quicksight-dashboard-boxplotfieldwells"></a>
 
 The field wells of a `BoxPlotVisual`.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-boxplotfieldwells-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-boxplotfieldwells-syntax.json"></a>
 
-```json
-
+```
 {
-  "BoxPlotAggregatedFieldWells" : BoxPlotAggregatedFieldWells
+  "[BoxPlotAggregatedFieldWells](#cfn-quicksight-dashboard-boxplotfieldwells-boxplotaggregatedfieldwells)" : {{BoxPlotAggregatedFieldWells}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-boxplotfieldwells-syntax.yaml"></a>
 
-```yaml
-
-  BoxPlotAggregatedFieldWells:
-    BoxPlotAggregatedFieldWells
-
+```
+  [BoxPlotAggregatedFieldWells](#cfn-quicksight-dashboard-boxplotfieldwells-boxplotaggregatedfieldwells): {{
+    BoxPlotAggregatedFieldWells}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-boxplotfieldwells-properties"></a>
 
-`BoxPlotAggregatedFieldWells`
-
+`BoxPlotAggregatedFieldWells`  <a name="cfn-quicksight-dashboard-boxplotfieldwells-boxplotaggregatedfieldwells"></a>
 The aggregated field wells of a box plot.
-
-_Required_: No
-
-_Type_: [BoxPlotAggregatedFieldWells](aws-properties-quicksight-dashboard-boxplotaggregatedfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BoxPlotChartConfiguration
-
-BoxPlotOptions
+*Required*: No
+*Type*: [BoxPlotAggregatedFieldWells](aws-properties-quicksight-dashboard-boxplotaggregatedfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

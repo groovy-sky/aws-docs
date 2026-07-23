@@ -2,88 +2,63 @@
 title: "AWS::Deadline::Fleet CustomerManagedAutoScalingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet CustomerManagedAutoScalingConfiguration
+<a name="aws-properties-deadline-fleet-customermanagedautoscalingconfiguration"></a>
 
-The `CustomerManagedAutoScalingConfiguration` property type specifies Property description not available. for an [AWS::Deadline::Fleet](aws-resource-deadline-fleet.md).
+The auto scaling configuration settings for a customer managed fleet.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-customermanagedautoscalingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-customermanagedautoscalingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ScaleOutWorkersPerMinute" : Integer,
-  "StandbyWorkerCount" : Integer,
-  "WorkerIdleDurationSeconds" : Integer
+  "[ScaleOutWorkersPerMinute](#cfn-deadline-fleet-customermanagedautoscalingconfiguration-scaleoutworkersperminute)" : {{Integer}},
+  "[StandbyWorkerCount](#cfn-deadline-fleet-customermanagedautoscalingconfiguration-standbyworkercount)" : {{Integer}},
+  "[WorkerIdleDurationSeconds](#cfn-deadline-fleet-customermanagedautoscalingconfiguration-workeridledurationseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-customermanagedautoscalingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ScaleOutWorkersPerMinute: Integer
-  StandbyWorkerCount: Integer
-  WorkerIdleDurationSeconds: Integer
-
+```
+  [ScaleOutWorkersPerMinute](#cfn-deadline-fleet-customermanagedautoscalingconfiguration-scaleoutworkersperminute): {{Integer}}
+  [StandbyWorkerCount](#cfn-deadline-fleet-customermanagedautoscalingconfiguration-standbyworkercount): {{Integer}}
+  [WorkerIdleDurationSeconds](#cfn-deadline-fleet-customermanagedautoscalingconfiguration-workeridledurationseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-customermanagedautoscalingconfiguration-properties"></a>
 
-`ScaleOutWorkersPerMinute`
+`ScaleOutWorkersPerMinute`  <a name="cfn-deadline-fleet-customermanagedautoscalingconfiguration-scaleoutworkersperminute"></a>
+The number of workers that can be added per minute to the fleet. The default is 10 workers per minute.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
+`StandbyWorkerCount`  <a name="cfn-deadline-fleet-customermanagedautoscalingconfiguration-standbyworkercount"></a>
+The number of idle workers maintained and ready to process incoming tasks. The default is 0.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StandbyWorkerCount`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkerIdleDurationSeconds`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AcceleratorTotalMemoryMiBRange
-
-CustomerManagedFleetConfiguration
+`WorkerIdleDurationSeconds`  <a name="cfn-deadline-fleet-customermanagedautoscalingconfiguration-workeridledurationseconds"></a>
+The number of seconds that a worker can remain idle before it is shut down. The default is 300 seconds (5 minutes).
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

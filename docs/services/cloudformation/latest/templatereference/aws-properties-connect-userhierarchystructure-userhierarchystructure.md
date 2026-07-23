@@ -2,105 +2,78 @@
 title: "AWS::Connect::UserHierarchyStructure UserHierarchyStructure"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::UserHierarchyStructure UserHierarchyStructure
+<a name="aws-properties-connect-userhierarchystructure-userhierarchystructure"></a>
 
 Contains information about a hierarchy structure.
 
 ## Syntax
+<a name="aws-properties-connect-userhierarchystructure-userhierarchystructure-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-userhierarchystructure-userhierarchystructure-syntax.json"></a>
 
-```json
-
+```
 {
-  "LevelFive" : LevelFive,
-  "LevelFour" : LevelFour,
-  "LevelOne" : LevelOne,
-  "LevelThree" : LevelThree,
-  "LevelTwo" : LevelTwo
+  "[LevelFive](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfive)" : {{LevelFive}},
+  "[LevelFour](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfour)" : {{LevelFour}},
+  "[LevelOne](#cfn-connect-userhierarchystructure-userhierarchystructure-levelone)" : {{LevelOne}},
+  "[LevelThree](#cfn-connect-userhierarchystructure-userhierarchystructure-levelthree)" : {{LevelThree}},
+  "[LevelTwo](#cfn-connect-userhierarchystructure-userhierarchystructure-leveltwo)" : {{LevelTwo}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-userhierarchystructure-userhierarchystructure-syntax.yaml"></a>
 
-```yaml
-
-  LevelFive:
-    LevelFive
-  LevelFour:
-    LevelFour
-  LevelOne:
-    LevelOne
-  LevelThree:
-    LevelThree
-  LevelTwo:
-    LevelTwo
-
+```
+  [LevelFive](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfive): {{
+    LevelFive}}
+  [LevelFour](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfour): {{
+    LevelFour}}
+  [LevelOne](#cfn-connect-userhierarchystructure-userhierarchystructure-levelone): {{
+    LevelOne}}
+  [LevelThree](#cfn-connect-userhierarchystructure-userhierarchystructure-levelthree): {{
+    LevelThree}}
+  [LevelTwo](#cfn-connect-userhierarchystructure-userhierarchystructure-leveltwo): {{
+    LevelTwo}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-userhierarchystructure-userhierarchystructure-properties"></a>
 
-`LevelFive`
-
+`LevelFive`  <a name="cfn-connect-userhierarchystructure-userhierarchystructure-levelfive"></a>
 Property description not available.
+*Required*: No
+*Type*: [LevelFive](aws-properties-connect-userhierarchystructure-levelfive.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LevelFive](aws-properties-connect-userhierarchystructure-levelfive.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LevelFour`
-
+`LevelFour`  <a name="cfn-connect-userhierarchystructure-userhierarchystructure-levelfour"></a>
 The update for level four.
+*Required*: No
+*Type*: [LevelFour](aws-properties-connect-userhierarchystructure-levelfour.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LevelFour](aws-properties-connect-userhierarchystructure-levelfour.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LevelOne`
-
+`LevelOne`  <a name="cfn-connect-userhierarchystructure-userhierarchystructure-levelone"></a>
 The update for level one.
+*Required*: No
+*Type*: [LevelOne](aws-properties-connect-userhierarchystructure-levelone.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LevelOne](aws-properties-connect-userhierarchystructure-levelone.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LevelThree`
-
+`LevelThree`  <a name="cfn-connect-userhierarchystructure-userhierarchystructure-levelthree"></a>
 The update for level three.
+*Required*: No
+*Type*: [LevelThree](aws-properties-connect-userhierarchystructure-levelthree.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LevelThree](aws-properties-connect-userhierarchystructure-levelthree.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LevelTwo`
-
+`LevelTwo`  <a name="cfn-connect-userhierarchystructure-userhierarchystructure-leveltwo"></a>
 The update for level two.
-
-_Required_: No
-
-_Type_: [LevelTwo](aws-properties-connect-userhierarchystructure-leveltwo.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LevelTwo
-
-AWS::Connect::View
+*Required*: No
+*Type*: [LevelTwo](aws-properties-connect-userhierarchystructure-leveltwo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,41 @@
 title: "AWS::GuardDuty::Detector CFNScanEc2InstanceWithFindingsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::Detector CFNScanEc2InstanceWithFindingsConfiguration
+<a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration"></a>
 
-Describes whether Malware Protection for EC2 instances with findings will be enabled as
-a data source.
+Describes whether Malware Protection for EC2 instances with findings will be enabled as a data source.
 
 ## Syntax
+<a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "EbsVolumes" : Boolean
+  "[EbsVolumes](#cfn-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-ebsvolumes)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  EbsVolumes: Boolean
-
+```
+  [EbsVolumes](#cfn-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-ebsvolumes): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-properties"></a>
 
-`EbsVolumes`
-
+`EbsVolumes`  <a name="cfn-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-ebsvolumes"></a>
 Describes the configuration for scanning EBS volumes as data source.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CFNS3LogsConfiguration
-
-TagItem
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

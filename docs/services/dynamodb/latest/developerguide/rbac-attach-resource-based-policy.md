@@ -3,22 +3,20 @@ title: "Attach a policy to an DynamoDB existing table"
 ---
 
 # Attach a policy to an DynamoDB existing table
+<a name="rbac-attach-resource-based-policy"></a>
 
-You can attach a resource-based policy to an existing table or modify an existing policy
-by using the DynamoDB console, [PutResourcePolicy](../../../../reference/amazondynamodb/latest/apireference/api-putresourcepolicy.md) API, the AWS CLI, AWS SDK, or an [CloudFormation template](rbac-create-table.md#rbac-create-table-cfn).
+You can attach a resource-based policy to an existing table or modify an existing policy by using the DynamoDB console, [PutResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutResourcePolicy.html) API, the AWS CLI, AWS SDK, or an [CloudFormation template](rbac-create-table.md#rbac-create-table-cfn).
 
-The following IAM policy example uses the `put-resource-policy` AWS CLI
-command to attach a resource-based policy to an existing table. This example allows the
-user `John` to perform the [GetItem](../../../../reference/amazondynamodb/latest/apireference/api-getitem.md), [PutItem](../../../../reference/amazondynamodb/latest/apireference/api-putitem.md), [UpdateItem](../../../../reference/amazondynamodb/latest/apireference/api-updateitem.md), and
-[UpdateTable](../../../../reference/amazondynamodb/latest/apireference/api-updatetable.md) API
-actions on an existing table named `MusicCollection`.
+## AWS CLI example to attach a new policy
+<a name="rbac-attach-policy-CLI"></a>
 
-Remember to replace the `italicized` text with your resource-specific information.
+The following IAM policy example uses the `put-resource-policy` AWS CLI command to attach a resource-based policy to an existing table. This example allows the user {{John}} to perform the [GetItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html), [PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html), [UpdateItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html), and [UpdateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API actions on an existing table named {{MusicCollection}}.
 
-```nohighlight
+Remember to replace the {{italicized}} text with your resource-specific information.
 
+```
 aws dynamodb put-resource-policy \
-    --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection \
+    --resource-arn arn:aws:dynamodb:us-west-2:{{123456789012}}:table/{{MusicCollection}} \
     --policy \
         "{
             \"Version\": \"2012-10-17\",
@@ -26,7 +24,7 @@ aws dynamodb put-resource-policy \
               {
                     \"Effect\": \"Allow\",
                     \"Principal\": {
-                        \"AWS\": \"arn:aws:iam::111122223333:user/John\"
+                        \"AWS\": \"arn:aws:iam::{{111122223333}}:user/{{John}}\"
                     },
                     \"Action\": [
                         \"dynamodb:GetItem\",
@@ -34,21 +32,20 @@ aws dynamodb put-resource-policy \
                         \"dynamodb:UpdateItem\",
                         \"dynamodb:UpdateTable\"
                     ],
-                    \"Resource\": \"arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection\"
+                    \"Resource\": \"arn:aws:dynamodb:us-west-2:{{123456789012}}:table/{{MusicCollection}}\"
                 }
             ]
         }"
 ```
 
-To conditionally update an existing resource-based policy of a table, you can use the
-optional `expected-revision-id` parameter. The following example will only
-update the policy if it exists in DynamoDB and its current revision ID matches the provided
-`expected-revision-id` parameter.
+## AWS CLI example to conditionally update an existing policy
+<a name="rbac-update-policy-CLI"></a>
 
-```nohighlight
+To conditionally update an existing resource-based policy of a table, you can use the optional `expected-revision-id` parameter. The following example will only update the policy if it exists in DynamoDB and its current revision ID matches the provided `expected-revision-id` parameter.
 
+```
 aws dynamodb put-resource-policy \
-    --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection \
+    --resource-arn arn:aws:dynamodb:us-west-2:123456789012:table/{{MusicCollection}} \
     --expected-revision-id 1709841168699 \
     --policy \
         "{
@@ -57,48 +54,47 @@ aws dynamodb put-resource-policy \
               {
                     \"Effect\": \"Allow\",
                     \"Principal\": {
-                        \"AWS\": \"arn:aws:iam::111122223333:user/John\"
+                        \"AWS\": \"arn:aws:iam::111122223333:user/{{John}}\"
                     },
                     \"Action\": [
                         \"dynamodb:GetItem\",
                         \"dynamodb:UpdateItem\",
                         \"dynamodb:UpdateTable\"
                     ],
-                    \"Resource\": \"arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection\"
+                    \"Resource\": \"arn:aws:dynamodb:us-west-2:123456789012:table/{{MusicCollection}}\"
                 }
             ]
         }"
 ```
 
-1. Sign in to the AWS Management Console and open the DynamoDB console at
-    [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb).
+## AWS Management Console
+<a name="rbac-attach-policy-console"></a>
 
-2. From the dashboard, choose an existing table.
+1. Sign in to the AWS Management Console and open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/).
 
-3. Navigate to the **Permissions** tab, and choose **Create**
-**table policy**.
+1. From the dashboard, choose an existing table.
 
-4. In the resource-based policy editor, add the policy you would like to attach and
-    choose **Create policy**.
+1. Navigate to the **Permissions** tab, and choose **Create table policy**.
 
-The following IAM policy example allows the user
-    `John` to perform the [GetItem](../../../../reference/amazondynamodb/latest/apireference/api-getitem.md), [PutItem](../../../../reference/amazondynamodb/latest/apireference/api-putitem.md), [UpdateItem](../../../../reference/amazondynamodb/latest/apireference/api-updateitem.md), and
-    [UpdateTable](../../../../reference/amazondynamodb/latest/apireference/api-updatetable.md)
-    API actions on an existing table named
-    `MusicCollection`.
+1. In the resource-based policy editor, add the policy you would like to attach and choose **Create policy**.
 
-Remember to replace the `italicized` text with your resource-specific information.
-JSON
+   The following IAM policy example allows the user {{John}} to perform the [GetItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html), [PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html), [UpdateItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html), and [UpdateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html) API actions on an existing table named {{MusicCollection}}.
 
-```json
+   Remember to replace the {{italicized}} text with your resource-specific information.
 
-{
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
      "Version":"2012-10-17",
      "Statement": [
        {
          "Effect": "Allow",
          "Principal": {
-           "AWS": "arn:aws:iam::111122223333:user/username"
+           "AWS": "arn:aws:iam::{{111122223333}}:user/{{username}}"
          },
          "Action": [
            "dynamodb:GetItem",
@@ -106,19 +102,20 @@ JSON
            "dynamodb:UpdateItem",
            "dynamodb:UpdateTable"
          ],
-         "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MusicCollection"
+         "Resource": "arn:aws:dynamodb:{{us-east-1}}:{{123456789012}}:table/{{MusicCollection}}"
        }
      ]
-}
+   }
+   ```
+
+------
+
+## AWS SDK for Java 2.x
+<a name="rbac-attach-policy-java-sdk"></a>
+
+The following IAM policy example uses the `putResourcePolicy` method to attach a resource-based policy to an existing table. This policy allows a user to perform the [GetItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetItem.html) API action on an existing table.
 
 ```
-
-The following IAM policy example uses the `putResourcePolicy` method to
-attach a resource-based policy to an existing table. This policy allows a user to perform
-the [GetItem](../../../../reference/amazondynamodb/latest/apireference/api-getitem.md) API action on an existing table.
-
-```java
-
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -130,7 +127,7 @@ import software.amazon.awssdk.services.dynamodb.model.PutResourcePolicyRequest;
  *
  * For more information, see the following documentation topic:
  *
- * Get started with the AWS SDK for Java 2.x
+ * [Get started with the AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html)
  */
 public class PutResourcePolicy {
 
@@ -141,8 +138,8 @@ public class PutResourcePolicy {
                     <tableArn> <allowedAWSPrincipal>
 
                 Where:
-                    tableArn - The Amazon DynamoDB table ARN to attach the policy to. For example, arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection.
-                    allowedAWSPrincipal - Allowed AWS principal ARN that the example policy will give access to. For example, arn:aws:iam::123456789012:user/John.
+                    tableArn - The Amazon DynamoDB table ARN to attach the policy to. For example, arn:aws:dynamodb:us-west-2:{{123456789012}}:table/{{MusicCollection}}.
+                    allowedAWSPrincipal - Allowed AWS principal ARN that the example policy will give access to. For example, arn:aws:iam::{{123456789012}}:user/{{John}}.
                 """;
 
         if (args.length != 2) {
@@ -198,12 +195,5 @@ public class PutResourcePolicy {
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create table
-
-Attach policy to a
-stream
 
 All content copied from https://docs.aws.amazon.com/.

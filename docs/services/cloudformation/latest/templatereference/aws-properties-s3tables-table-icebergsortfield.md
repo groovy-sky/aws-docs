@@ -2,92 +2,67 @@
 title: "AWS::S3Tables::Table IcebergSortField"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergSortField
+<a name="aws-properties-s3tables-table-icebergsortfield"></a>
 
 Defines a single sort field in an Iceberg sort order specification.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-icebergsortfield-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-icebergsortfield-syntax.json"></a>
 
-```json
-
+```
 {
-  "Direction" : String,
-  "NullOrder" : String,
-  "SourceId" : Integer,
-  "Transform" : String
+  "[Direction](#cfn-s3tables-table-icebergsortfield-direction)" : {{String}},
+  "[NullOrder](#cfn-s3tables-table-icebergsortfield-nullorder)" : {{String}},
+  "[SourceId](#cfn-s3tables-table-icebergsortfield-sourceid)" : {{Integer}},
+  "[Transform](#cfn-s3tables-table-icebergsortfield-transform)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-icebergsortfield-syntax.yaml"></a>
 
-```yaml
-
-  Direction: String
-  NullOrder: String
-  SourceId: Integer
-  Transform: String
-
+```
+  [Direction](#cfn-s3tables-table-icebergsortfield-direction): {{String}}
+  [NullOrder](#cfn-s3tables-table-icebergsortfield-nullorder): {{String}}
+  [SourceId](#cfn-s3tables-table-icebergsortfield-sourceid): {{Integer}}
+  [Transform](#cfn-s3tables-table-icebergsortfield-transform): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-icebergsortfield-properties"></a>
 
-`Direction`
-
+`Direction`  <a name="cfn-s3tables-table-icebergsortfield-direction"></a>
 The sort direction. Valid values are `asc` for ascending order or `desc` for descending order.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `asc | desc`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `asc | desc`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NullOrder`
-
+`NullOrder`  <a name="cfn-s3tables-table-icebergsortfield-nullorder"></a>
 Specifies how null values are ordered. Valid values are `nulls-first` to place nulls before non-null values, or `nulls-last` to place nulls after non-null values.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `nulls-first | nulls-last`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `nulls-first | nulls-last`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourceId`
-
+`SourceId`  <a name="cfn-s3tables-table-icebergsortfield-sourceid"></a>
 The ID of the source schema field to sort by. This must reference a valid field ID from the table schema.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Transform`
-
+`Transform`  <a name="cfn-s3tables-table-icebergsortfield-transform"></a>
 The transform to apply to the source field before sorting. Use `identity` to sort by the field value directly, or specify other transforms as needed.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IcebergSchemaV2
-
-IcebergSortOrder
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

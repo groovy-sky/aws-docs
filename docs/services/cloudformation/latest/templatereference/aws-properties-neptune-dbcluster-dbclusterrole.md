@@ -2,67 +2,49 @@
 title: "AWS::Neptune::DBCluster DBClusterRole"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Neptune::DBCluster DBClusterRole
+<a name="aws-properties-neptune-dbcluster-dbclusterrole"></a>
 
-Describes an Amazon Identity and Access Management (IAM) role that is associated with a DB
-cluster.
+Describes an Amazon Identity and Access Management (IAM) role that is associated with a DB cluster.
 
 ## Syntax
+<a name="aws-properties-neptune-dbcluster-dbclusterrole-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-neptune-dbcluster-dbclusterrole-syntax.json"></a>
 
-```json
-
+```
 {
-  "FeatureName" : String,
-  "RoleArn" : String
+  "[FeatureName](#cfn-neptune-dbcluster-dbclusterrole-featurename)" : {{String}},
+  "[RoleArn](#cfn-neptune-dbcluster-dbclusterrole-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-neptune-dbcluster-dbclusterrole-syntax.yaml"></a>
 
-```yaml
-
-  FeatureName: String
-  RoleArn: String
-
+```
+  [FeatureName](#cfn-neptune-dbcluster-dbclusterrole-featurename): {{String}}
+  [RoleArn](#cfn-neptune-dbcluster-dbclusterrole-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-neptune-dbcluster-dbclusterrole-properties"></a>
 
-`FeatureName`
+`FeatureName`  <a name="cfn-neptune-dbcluster-dbclusterrole-featurename"></a>
+The name of the feature associated with the Amazon Identity and Access Management (IAM) role. For the list of supported feature names, see [DescribeDBEngineVersions](https://docs.aws.amazon.com/neptune/latest/userguide/api-other-apis.html#DescribeDBEngineVersions).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the feature associated with the Amazon Identity and Access Management (IAM) role.
-For the list of supported feature names, see [DescribeDBEngineVersions](../../../neptune/latest/userguide/api-other-apis.md#DescribeDBEngineVersions).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role that is associated with the DB
-cluster.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Neptune::DBCluster
-
-ServerlessScalingConfiguration
+`RoleArn`  <a name="cfn-neptune-dbcluster-dbclusterrole-rolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

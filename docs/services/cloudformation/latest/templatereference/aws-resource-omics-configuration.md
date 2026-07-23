@@ -2,135 +2,105 @@
 title: "AWS::Omics::Configuration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::Configuration
+<a name="aws-resource-omics-configuration"></a>
 
 Create a new configuration.
 
 ## Syntax
+<a name="aws-resource-omics-configuration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-omics-configuration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Omics::Configuration",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "RunConfigurations" : RunConfigurations,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-omics-configuration-description)" : {{String}},
+      "[Name](#cfn-omics-configuration-name)" : {{String}},
+      "[RunConfigurations](#cfn-omics-configuration-runconfigurations)" : {{RunConfigurations}},
+      "[Tags](#cfn-omics-configuration-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-omics-configuration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Omics::Configuration
 Properties:
-  Description: String
-  Name: String
-  RunConfigurations:
-    RunConfigurations
-  Tags:
-    Key: Value
-
+  [Description](#cfn-omics-configuration-description): {{String}}
+  [Name](#cfn-omics-configuration-name): {{String}}
+  [RunConfigurations](#cfn-omics-configuration-runconfigurations): {{
+    RunConfigurations}}
+  [Tags](#cfn-omics-configuration-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-omics-configuration-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-omics-configuration-description"></a>
 Description for the configuration.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-omics-configuration-name"></a>
 User-friendly name for the configuration.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Za-z0-9][A-Za-z0-9\-\._]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9][A-Za-z0-9\-\._]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RunConfigurations`
-
+`RunConfigurations`  <a name="cfn-omics-configuration-runconfigurations"></a>
 Run-specific configuration settings.
+*Required*: Yes
+*Type*: [RunConfigurations](aws-properties-omics-configuration-runconfigurations.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [RunConfigurations](aws-properties-omics-configuration-runconfigurations.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-omics-configuration-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-omics-configuration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-omics-configuration-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-omics-configuration-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-omics-configuration-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Unique resource identifier for the configuration.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 Configuration creation timestamp.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 Current configuration status.
 
-`Uuid`
-
+`Uuid`  <a name="Uuid-fn::getatt"></a>
 Unique identifier for the configuration.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TsvStoreOptions
-
-RunConfigurations
 
 All content copied from https://docs.aws.amazon.com/.

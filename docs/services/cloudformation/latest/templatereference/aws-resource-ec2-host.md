@@ -2,204 +2,153 @@
 title: "AWS::EC2::Host"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::Host
+<a name="aws-resource-ec2-host"></a>
 
-Allocates a fully dedicated physical server for launching EC2 instances. Because the
-host is fully dedicated for your use, it can help you address compliance requirements and
-reduce costs by allowing you to use your existing server-bound software licenses. For more
-information, see [Dedicated Hosts](../../../ec2/latest/userguide/dedicated-hosts-overview.md) in
-the _Amazon EC2 User Guide_.
+Allocates a fully dedicated physical server for launching EC2 instances. Because the host is fully dedicated for your use, it can help you address compliance requirements and reduce costs by allowing you to use your existing server-bound software licenses. For more information, see [ Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html) in the *Amazon EC2 User Guide*.
 
 ## Syntax
+<a name="aws-resource-ec2-host-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-host-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::Host",
   "Properties" : {
-      "AssetId" : String,
-      "AutoPlacement" : String,
-      "AvailabilityZone" : String,
-      "HostMaintenance" : String,
-      "HostRecovery" : String,
-      "InstanceFamily" : String,
-      "InstanceType" : String,
-      "OutpostArn" : String,
-      "Tags" : [ Tag, ... ]
+      "[AssetId](#cfn-ec2-host-assetid)" : {{String}},
+      "[AutoPlacement](#cfn-ec2-host-autoplacement)" : {{String}},
+      "[AvailabilityZone](#cfn-ec2-host-availabilityzone)" : {{String}},
+      "[HostMaintenance](#cfn-ec2-host-hostmaintenance)" : {{String}},
+      "[HostRecovery](#cfn-ec2-host-hostrecovery)" : {{String}},
+      "[InstanceFamily](#cfn-ec2-host-instancefamily)" : {{String}},
+      "[InstanceType](#cfn-ec2-host-instancetype)" : {{String}},
+      "[OutpostArn](#cfn-ec2-host-outpostarn)" : {{String}},
+      "[Tags](#cfn-ec2-host-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-host-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::Host
 Properties:
-  AssetId: String
-  AutoPlacement: String
-  AvailabilityZone: String
-  HostMaintenance: String
-  HostRecovery: String
-  InstanceFamily: String
-  InstanceType: String
-  OutpostArn: String
-  Tags:
-    - Tag
-
+  [AssetId](#cfn-ec2-host-assetid): {{String}}
+  [AutoPlacement](#cfn-ec2-host-autoplacement): {{String}}
+  [AvailabilityZone](#cfn-ec2-host-availabilityzone): {{String}}
+  [HostMaintenance](#cfn-ec2-host-hostmaintenance): {{String}}
+  [HostRecovery](#cfn-ec2-host-hostrecovery): {{String}}
+  [InstanceFamily](#cfn-ec2-host-instancefamily): {{String}}
+  [InstanceType](#cfn-ec2-host-instancetype): {{String}}
+  [OutpostArn](#cfn-ec2-host-outpostarn): {{String}}
+  [Tags](#cfn-ec2-host-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-host-properties"></a>
 
-`AssetId`
-
+`AssetId`  <a name="cfn-ec2-host-assetid"></a>
 The ID of the Outpost hardware asset on which the Dedicated Host is allocated.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AutoPlacement`
-
-Indicates whether the host accepts any untargeted instance launches that match its
-instance type configuration, or if it only accepts Host tenancy instance launches that
-specify its unique host ID. For more information, see [Understanding auto-placement and affinity](../../../ec2/latest/userguide/how-dedicated-hosts-work.md#dedicated-hosts-understanding) in the
-_Amazon EC2 User Guide_.
-
+`AutoPlacement`  <a name="cfn-ec2-host-autoplacement"></a>
+Indicates whether the host accepts any untargeted instance launches that match its instance type configuration, or if it only accepts Host tenancy instance launches that specify its unique host ID. For more information, see [ Understanding auto-placement and affinity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-understanding) in the *Amazon EC2 User Guide*.
 Default: `off`
+*Required*: No
+*Type*: String
+*Allowed values*: `on | off`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `on | off`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AvailabilityZone`
-
+`AvailabilityZone`  <a name="cfn-ec2-host-availabilityzone"></a>
 The Availability Zone in which to allocate the Dedicated Host.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`HostMaintenance`  <a name="cfn-ec2-host-hostmaintenance"></a>
+Indicates whether host maintenance is enabled or disabled for the Dedicated Host.
+*Required*: No
+*Type*: String
+*Allowed values*: `on | off`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HostMaintenance`
-
-Indicates whether host maintenance is enabled or disabled for the Dedicated
-Host.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `on | off`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HostRecovery`
-
-Indicates whether to enable or disable host recovery for the Dedicated Host. Host
-recovery is disabled by default. For more information, see [Host recovery](../../../ec2/latest/userguide/dedicated-hosts-recovery.md)
-in the _Amazon EC2 User Guide_.
-
+`HostRecovery`  <a name="cfn-ec2-host-hostrecovery"></a>
+Indicates whether to enable or disable host recovery for the Dedicated Host. Host recovery is disabled by default. For more information, see [ Host recovery](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-recovery.html) in the *Amazon EC2 User Guide*.
 Default: `off`
+*Required*: No
+*Type*: String
+*Allowed values*: `on | off`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InstanceFamily`  <a name="cfn-ec2-host-instancefamily"></a>
+The instance family supported by the Dedicated Host. For example, `m5`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`InstanceType`  <a name="cfn-ec2-host-instancetype"></a>
+Specifies the instance type to be supported by the Dedicated Hosts. If you specify an instance type, the Dedicated Hosts support instances of the specified instance type only.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Allowed values_: `on | off`
+`OutpostArn`  <a name="cfn-ec2-host-outpostarn"></a>
+The Amazon Resource Name (ARN) of the AWS Outpost on which the Dedicated Host is allocated.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceFamily`
-
-The instance family supported by the Dedicated Host. For example,
-`m5`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InstanceType`
-
-Specifies the instance type to be supported by the Dedicated Hosts. If you specify an
-instance type, the Dedicated Hosts support instances of the specified instance type
-only.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`OutpostArn`
-
-The Amazon Resource Name (ARN) of the AWS Outpost on which the
-Dedicated Host is allocated.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-host-tags"></a>
 Any tags assigned to the Dedicated Host.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-host-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-host-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-host-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-host-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the host ID, such as
-`h-0ab123c45d67ef89`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the host ID, such as `h-0ab123c45d67ef89`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-host-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`HostId`
+####
+<a name="aws-resource-ec2-host-return-values-fn--getatt-fn--getatt"></a>
 
+`HostId`  <a name="HostId-fn::getatt"></a>
 The ID of the host.
 
 ## Examples
+<a name="aws-resource-ec2-host--examples"></a>
 
 ### Allocate a Dedicated Host
+<a name="aws-resource-ec2-host--examples--Allocate_a_Dedicated_Host"></a>
 
-The following example allocates a dedicated host for `c3.large`
-instances in the `us-east-1a` Availability Zone.
+The following example allocates a dedicated host for `c3.large` instances in the `us-east-1a` Availability Zone.
 
 #### JSON
+<a name="aws-resource-ec2-host--examples--Allocate_a_Dedicated_Host--json"></a>
 
-```json
-
+```
 "Host" : {
   "Type" : "AWS::EC2::Host",
   "Properties" : {
@@ -211,9 +160,9 @@ instances in the `us-east-1a` Availability Zone.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-host--examples--Allocate_a_Dedicated_Host--yaml"></a>
 
-```yaml
-
+```
 Host:
   Type: AWS::EC2::Host
   Properties:
@@ -221,11 +170,5 @@ Host:
     AvailabilityZone: us-east-1a
     InstanceType: c3.large
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::GatewayRouteTableAssociation
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

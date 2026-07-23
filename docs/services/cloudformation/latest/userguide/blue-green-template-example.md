@@ -3,20 +3,16 @@ title: "Blue/green deployment template example"
 ---
 
 # Blue/green deployment template example
+<a name="blue-green-template-example"></a>
 
-The following example template sets up a CodeDeploy blue/green deployment on ECS, with a
-traffic routing progress of 15 percent per step and a stabilization period of 5 minutes
-between each step.
+The following example template sets up a CodeDeploy blue/green deployment on ECS, with a traffic routing progress of 15 percent per step and a stabilization period of 5 minutes between each step.
 
-Creating a stack with the template will provision the initial configuration of the
-deployment. If you then made any changes to properties in the `BlueTaskSet`
-resource that require that resource be replaced, CloudFormation will then initiate a green
-deployment as part of the stack update.
+Creating a stack with the template will provision the initial configuration of the deployment. If you then made any changes to properties in the `BlueTaskSet` resource that require that resource be replaced, CloudFormation will then initiate a green deployment as part of the stack update.
 
 ## JSON
+<a name="blue-green-template-example.json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Parameters":{
@@ -283,9 +279,9 @@ deployment as part of the stack update.
 ```
 
 ## YAML
+<a name="blue-green-template-example.yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   Vpc:
@@ -498,11 +494,5 @@ Resources:
         - BlueTaskSet
         - Id
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Hook syntax
-
-Template snippets
 
 All content copied from https://docs.aws.amazon.com/.

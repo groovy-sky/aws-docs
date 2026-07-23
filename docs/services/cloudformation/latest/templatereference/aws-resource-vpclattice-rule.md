@@ -2,190 +2,137 @@
 title: "AWS::VpcLattice::Rule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Rule
+<a name="aws-resource-vpclattice-rule"></a>
 
-Creates a listener rule. Each listener has a default rule for checking connection requests,
-but you can define additional rules. Each rule consists of a priority, one or more actions, and
-one or more conditions. For more information, see [Listener rules](../../../vpc-lattice/latest/ug/listeners.md#listener-rules) in the
-_Amazon VPC Lattice User Guide_.
+Creates a listener rule. Each listener has a default rule for checking connection requests, but you can define additional rules. Each rule consists of a priority, one or more actions, and one or more conditions. For more information, see [Listener rules](https://docs.aws.amazon.com/vpc-lattice/latest/ug/listeners.html#listener-rules) in the *Amazon VPC Lattice User Guide*.
 
 ## Syntax
+<a name="aws-resource-vpclattice-rule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-vpclattice-rule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::VpcLattice::Rule",
   "Properties" : {
-      "Action" : Action,
-      "ListenerIdentifier" : String,
-      "Match" : Match,
-      "Name" : String,
-      "Priority" : Integer,
-      "ServiceIdentifier" : String,
-      "Tags" : [ Tag, ... ]
+      "[Action](#cfn-vpclattice-rule-action)" : {{Action}},
+      "[ListenerIdentifier](#cfn-vpclattice-rule-listeneridentifier)" : {{String}},
+      "[Match](#cfn-vpclattice-rule-match)" : {{Match}},
+      "[Name](#cfn-vpclattice-rule-name)" : {{String}},
+      "[Priority](#cfn-vpclattice-rule-priority)" : {{Integer}},
+      "[ServiceIdentifier](#cfn-vpclattice-rule-serviceidentifier)" : {{String}},
+      "[Tags](#cfn-vpclattice-rule-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-vpclattice-rule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::VpcLattice::Rule
 Properties:
-  Action:
-    Action
-  ListenerIdentifier: String
-  Match:
-    Match
-  Name: String
-  Priority: Integer
-  ServiceIdentifier: String
-  Tags:
-    - Tag
-
+  [Action](#cfn-vpclattice-rule-action): {{
+    Action}}
+  [ListenerIdentifier](#cfn-vpclattice-rule-listeneridentifier): {{String}}
+  [Match](#cfn-vpclattice-rule-match): {{
+    Match}}
+  [Name](#cfn-vpclattice-rule-name): {{String}}
+  [Priority](#cfn-vpclattice-rule-priority): {{Integer}}
+  [ServiceIdentifier](#cfn-vpclattice-rule-serviceidentifier): {{String}}
+  [Tags](#cfn-vpclattice-rule-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-vpclattice-rule-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-vpclattice-rule-action"></a>
 Describes the action for a rule.
+*Required*: Yes
+*Type*: [Action](aws-properties-vpclattice-rule-action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Action](aws-properties-vpclattice-rule-action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ListenerIdentifier`
-
+`ListenerIdentifier`  <a name="cfn-vpclattice-rule-listeneridentifier"></a>
 The ID or ARN of the listener.
+*Required*: No
+*Type*: String
+*Pattern*: `^((listener-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:service/svc-[0-9a-z]{17}/listener/listener-[0-9a-z]{17}))$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^((listener-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:service/svc-[0-9a-z]{17}/listener/listener-[0-9a-z]{17}))$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Match`
-
+`Match`  <a name="cfn-vpclattice-rule-match"></a>
 The rule match.
+*Required*: Yes
+*Type*: [Match](aws-properties-vpclattice-rule-match.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Name`  <a name="cfn-vpclattice-rule-name"></a>
+The name of the rule. The name must be unique within the listener. The valid characters are a-z, 0-9, and hyphens (-). You can't use a hyphen as the first or last character, or immediately after another hyphen.
+If you don't specify a name, CloudFormation generates one. However, if you specify a name, and later want to replace the resource, you must specify a new name.
+*Required*: No
+*Type*: String
+*Pattern*: `^(?!rule-)(?![-])(?!.*[-]$)(?!.*[-]{2})[a-z0-9-]+$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [Match](aws-properties-vpclattice-rule-match.md)
+`Priority`  <a name="cfn-vpclattice-rule-priority"></a>
+The priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the rule. The name must be unique within the listener. The valid characters
-are a-z, 0-9, and hyphens (-). You can't use a hyphen as the first or last character, or
-immediately after another hyphen.
-
-If you don't specify a name, CloudFormation generates one. However, if
-you specify a name, and later want to replace the resource, you must specify a new
-name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(?!rule-)(?![-])(?!.*[-]$)(?!.*[-]{2})[a-z0-9-]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Priority`
-
-The priority assigned to the rule. Each rule for a specific listener must have a unique
-priority. The lower the priority number the higher the priority.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceIdentifier`
-
+`ServiceIdentifier`  <a name="cfn-vpclattice-rule-serviceidentifier"></a>
 The ID or ARN of the service.
+*Required*: No
+*Type*: String
+*Pattern*: `^((svc-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:service/svc-[0-9a-z]{17}))$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^((svc-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:service/svc-[0-9a-z]{17}))$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-vpclattice-rule-tags"></a>
 The tags for the rule.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-vpclattice-rule-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-vpclattice-rule-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-vpclattice-rule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-vpclattice-rule-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the rule.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-vpclattice-rule-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-vpclattice-rule-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the rule.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the listener.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::ResourcePolicy
-
-Action
 
 All content copied from https://docs.aws.amazon.com/.

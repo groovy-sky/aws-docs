@@ -2,65 +2,49 @@
 title: "AWS::ElastiCache::ServerlessCache Endpoint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElastiCache::ServerlessCache Endpoint
+<a name="aws-properties-elasticache-serverlesscache-endpoint"></a>
 
-Represents the information required for client programs to connect to a cache
-node. This value is read-only.
+Represents the information required for client programs to connect to a cache node. This value is read-only.
 
 ## Syntax
+<a name="aws-properties-elasticache-serverlesscache-endpoint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticache-serverlesscache-endpoint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Address" : String,
-  "Port" : String
+  "[Address](#cfn-elasticache-serverlesscache-endpoint-address)" : {{String}},
+  "[Port](#cfn-elasticache-serverlesscache-endpoint-port)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticache-serverlesscache-endpoint-syntax.yaml"></a>
 
-```yaml
-
-  Address: String
-  Port: String
-
+```
+  [Address](#cfn-elasticache-serverlesscache-endpoint-address): {{String}}
+  [Port](#cfn-elasticache-serverlesscache-endpoint-port): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticache-serverlesscache-endpoint-properties"></a>
 
-`Address`
-
+`Address`  <a name="cfn-elasticache-serverlesscache-endpoint-address"></a>
 The DNS hostname of the cache node.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-elasticache-serverlesscache-endpoint-port"></a>
 The port number that the cache engine is listening on.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ECPUPerSecond
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

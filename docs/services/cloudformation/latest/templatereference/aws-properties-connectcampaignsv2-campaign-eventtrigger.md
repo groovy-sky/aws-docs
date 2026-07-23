@@ -2,58 +2,44 @@
 title: "AWS::ConnectCampaignsV2::Campaign EventTrigger"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign EventTrigger
+<a name="aws-properties-connectcampaignsv2-campaign-eventtrigger"></a>
 
 The event trigger of the campaign.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-eventtrigger-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-eventtrigger-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomerProfilesDomainArn" : String
+  "[CustomerProfilesDomainArn](#cfn-connectcampaignsv2-campaign-eventtrigger-customerprofilesdomainarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-eventtrigger-syntax.yaml"></a>
 
-```yaml
-
-  CustomerProfilesDomainArn: String
-
+```
+  [CustomerProfilesDomainArn](#cfn-connectcampaignsv2-campaign-eventtrigger-customerprofilesdomainarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-eventtrigger-properties"></a>
 
-`CustomerProfilesDomainArn`
-
+`CustomerProfilesDomainArn`  <a name="cfn-connectcampaignsv2-campaign-eventtrigger-customerprofilesdomainarn"></a>
 The Amazon Resource Name (ARN) of the Customer Profiles domain.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:.*$`
-
-_Minimum_: `20`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EntryLimitsConfig
-
-LocalTimeZoneConfig
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Minimum*: `20`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

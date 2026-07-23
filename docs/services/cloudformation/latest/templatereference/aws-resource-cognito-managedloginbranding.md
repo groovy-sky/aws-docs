@@ -2,193 +2,141 @@
 title: "AWS::Cognito::ManagedLoginBranding"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::ManagedLoginBranding
+<a name="aws-resource-cognito-managedloginbranding"></a>
 
-Creates a new set of branding settings for a user pool style and associates it with an
-app client. This operation is the programmatic option for the creation of a new style in
-the branding designer.
+Creates a new set of branding settings for a user pool style and associates it with an app client. This operation is the programmatic option for the creation of a new style in the branding designer.
 
-Provides values for UI customization in a `Settings` JSON object and image
-files in an `Assets` array. To send the JSON object `Document`
-type parameter in `Settings`, you might need to update to the most recent
-version of your AWS SDK.
+Provides values for UI customization in a `Settings` JSON object and image files in an `Assets` array. To send the JSON object `Document` type parameter in `Settings`, you might need to update to the most recent version of your AWS SDK.
 
-This operation has a 2-megabyte request-size limit and include the CSS settings and
-image assets for your app client. Your branding settings might exceed 2MB in size.
-Amazon Cognito doesn't require that you pass all parameters in one request and preserves
-existing style settings that you don't specify. If your request is larger than 2MB,
-separate it into multiple requests, each with a size smaller than the limit.
+ This operation has a 2-megabyte request-size limit and include the CSS settings and image assets for your app client. Your branding settings might exceed 2MB in size. Amazon Cognito doesn't require that you pass all parameters in one request and preserves existing style settings that you don't specify. If your request is larger than 2MB, separate it into multiple requests, each with a size smaller than the limit.
 
-As a best practice, modify the output of [DescribeManagedLoginBrandingByClient](../../../../reference/cognito-user-identity-pools/latest/apireference/api-describemanagedloginbrandingbyclient.md) into the request parameters for this
-operation. To get all settings, set `ReturnMergedResources` to
-`true`. For more information, see [API and SDK operations for managed login branding](../../../cognito/latest/developerguide/managed-login-brandingdesigner.md#branding-designer-api)
+As a best practice, modify the output of [DescribeManagedLoginBrandingByClient](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeManagedLoginBrandingByClient.html) into the request parameters for this operation. To get all settings, set `ReturnMergedResources` to `true`. For more information, see [API and SDK operations for managed login branding](https://docs.aws.amazon.com/cognito/latest/developerguide/managed-login-brandingdesigner.html#branding-designer-api)
 
 ## Syntax
+<a name="aws-resource-cognito-managedloginbranding-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cognito-managedloginbranding-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Cognito::ManagedLoginBranding",
   "Properties" : {
-      "Assets" : [ AssetType, ... ],
-      "ClientId" : String,
-      "ReturnMergedResources" : Boolean,
-      "Settings" : Json,
-      "UseCognitoProvidedValues" : Boolean,
-      "UserPoolId" : String
+      "[Assets](#cfn-cognito-managedloginbranding-assets)" : {{[ AssetType, ... ]}},
+      "[ClientId](#cfn-cognito-managedloginbranding-clientid)" : {{String}},
+      "[ReturnMergedResources](#cfn-cognito-managedloginbranding-returnmergedresources)" : {{Boolean}},
+      "[Settings](#cfn-cognito-managedloginbranding-settings)" : {{Json}},
+      "[UseCognitoProvidedValues](#cfn-cognito-managedloginbranding-usecognitoprovidedvalues)" : {{Boolean}},
+      "[UserPoolId](#cfn-cognito-managedloginbranding-userpoolid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cognito-managedloginbranding-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Cognito::ManagedLoginBranding
 Properties:
-  Assets:
-    - AssetType
-  ClientId: String
-  ReturnMergedResources: Boolean
-  Settings: Json
-  UseCognitoProvidedValues: Boolean
-  UserPoolId: String
-
+  [Assets](#cfn-cognito-managedloginbranding-assets): {{
+    - AssetType}}
+  [ClientId](#cfn-cognito-managedloginbranding-clientid): {{String}}
+  [ReturnMergedResources](#cfn-cognito-managedloginbranding-returnmergedresources): {{Boolean}}
+  [Settings](#cfn-cognito-managedloginbranding-settings): {{Json}}
+  [UseCognitoProvidedValues](#cfn-cognito-managedloginbranding-usecognitoprovidedvalues): {{Boolean}}
+  [UserPoolId](#cfn-cognito-managedloginbranding-userpoolid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-cognito-managedloginbranding-properties"></a>
 
-`Assets`
+`Assets`  <a name="cfn-cognito-managedloginbranding-assets"></a>
+An array of image files that you want to apply to roles like backgrounds, logos, and icons. Each object must also indicate whether it is for dark mode, light mode, or browser-adaptive mode.
+*Required*: No
+*Type*: Array of [AssetType](aws-properties-cognito-managedloginbranding-assettype.md)
+*Minimum*: `0`
+*Maximum*: `40`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-An array of image files that you want to apply to roles like backgrounds, logos, and
-icons. Each object must also indicate whether it is for dark mode, light mode, or
-browser-adaptive mode.
+`ClientId`  <a name="cfn-cognito-managedloginbranding-clientid"></a>
+The app client that you want to assign the branding style to. Each style is linked to an app client until you delete it.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ReturnMergedResources`  <a name="cfn-cognito-managedloginbranding-returnmergedresources"></a>
+When `true`, returns values for branding options that are unchanged from Amazon Cognito defaults. When `false` or when you omit this parameter, returns only values that you customized in your branding style.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [AssetType](aws-properties-cognito-managedloginbranding-assettype.md)
+`Settings`  <a name="cfn-cognito-managedloginbranding-settings"></a>
+A JSON file, encoded as a `Document` type, with the the settings that you want to apply to your style.
+The following components are not currently implemented and reserved for future use:
++  `signUp`
++  `instructions`
++  `sessionTimerDisplay`
++ `languageSelector` (for localization, see [Managed login localization)](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-managed-login.html#managed-login-localization)
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `0`
+`UseCognitoProvidedValues`  <a name="cfn-cognito-managedloginbranding-usecognitoprovidedvalues"></a>
+When true, applies the default branding style options. This option reverts to default style options that are managed by Amazon Cognito. You can modify them later in the branding editor.
+When you specify `true` for this option, you must also omit values for `Settings` and `Assets` in the request.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `40`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClientId`
-
-The app client that you want to assign the branding style to. Each style is linked to
-an app client until you delete it.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ReturnMergedResources`
-
-When `true`, returns values for branding options that are unchanged from
-Amazon Cognito defaults. When `false` or when you omit this parameter, returns only
-values that you customized in your branding style.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Settings`
-
-A JSON file, encoded as a `Document` type, with the the settings that you
-want to apply to your style.
-
-The following components are not currently implemented and reserved for future
-use:
-
-- `signUp`
-
-- `instructions`
-
-- `sessionTimerDisplay`
-
-- `languageSelector` (for localization, see [Managed login localization)](../../../cognito/latest/developerguide/cognito-user-pools-managed-login.md#managed-login-localization)
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseCognitoProvidedValues`
-
-When true, applies the default branding style options. This option reverts to default
-style options that are managed by Amazon Cognito. You can modify them later in the branding
-editor.
-
-When you specify `true` for this option, you must also omit values for
-`Settings` and `Assets` in the request.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolId`
-
+`UserPoolId`  <a name="cfn-cognito-managedloginbranding-userpoolid"></a>
 The user pool where the branding style is assigned.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\w-]+_[0-9a-zA-Z]+`
-
-_Minimum_: `1`
-
-_Maximum_: `55`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\w-]+_[0-9a-zA-Z]+`
+*Minimum*: `1`
+*Maximum*: `55`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-cognito-managedloginbranding-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cognito-managedloginbranding-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the style ID, for example
-`a1b2c3d4-5678-90ab-cdef-EXAMPLE22222`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the style ID, for example `a1b2c3d4-5678-90ab-cdef-EXAMPLE22222`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cognito-managedloginbranding-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ManagedLoginBrandingId`
+####
+<a name="aws-resource-cognito-managedloginbranding-return-values-fn--getatt-fn--getatt"></a>
 
+`ManagedLoginBrandingId`  <a name="ManagedLoginBrandingId-fn::getatt"></a>
 The ID of the managed login branding style.
 
 ## Examples
+<a name="aws-resource-cognito-managedloginbranding--examples"></a>
 
 ### Creating a new branding style for an app client
+<a name="aws-resource-cognito-managedloginbranding--examples--Creating_a_new_branding_style_for_an_app_client"></a>
 
-The following example creates a branding style for the requested app
-client.
+The following example creates a branding style for the requested app client.
 
 #### JSON
+<a name="aws-resource-cognito-managedloginbranding--examples--Creating_a_new_branding_style_for_an_app_client--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Provision a managed login branding style to a user pool app client\n",
@@ -667,9 +615,9 @@ client.
 ```
 
 #### YAML
+<a name="aws-resource-cognito-managedloginbranding--examples--Creating_a_new_branding_style_for_an_app_client--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: |
@@ -997,11 +945,5 @@ Resources:
       UseCognitoProvidedValues: false
       UserPoolId: ca-central-1_EXAMPLE
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Configuration
-
-AssetType
 
 All content copied from https://docs.aws.amazon.com/.

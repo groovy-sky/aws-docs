@@ -2,52 +2,41 @@
 title: "AWS::QuickSight::Template PluginVisualItemsLimitConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PluginVisualItemsLimitConfiguration
+<a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration"></a>
 
 A query limits configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ItemsLimit" : Number
+  "[ItemsLimit](#cfn-quicksight-template-pluginvisualitemslimitconfiguration-itemslimit)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ItemsLimit: Number
-
+```
+  [ItemsLimit](#cfn-quicksight-template-pluginvisualitemslimitconfiguration-itemslimit): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration-properties"></a>
 
-`ItemsLimit`
-
+`ItemsLimit`  <a name="cfn-quicksight-template-pluginvisualitemslimitconfiguration-itemslimit"></a>
 Determines how many values are be fetched at once.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginVisualFieldWell
-
-PluginVisualOptions
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

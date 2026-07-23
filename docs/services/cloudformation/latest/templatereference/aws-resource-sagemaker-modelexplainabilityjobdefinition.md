@@ -2,233 +2,183 @@
 title: "AWS::SageMaker::ModelExplainabilityJobDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelExplainabilityJobDefinition
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition"></a>
 
 Creates the definition for a model explainability job.
 
 ## Syntax
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::ModelExplainabilityJobDefinition",
   "Properties" : {
-      "EndpointName" : String,
-      "JobDefinitionName" : String,
-      "JobResources" : MonitoringResources,
-      "ModelExplainabilityAppSpecification" : ModelExplainabilityAppSpecification,
-      "ModelExplainabilityBaselineConfig" : ModelExplainabilityBaselineConfig,
-      "ModelExplainabilityJobInput" : ModelExplainabilityJobInput,
-      "ModelExplainabilityJobOutputConfig" : MonitoringOutputConfig,
-      "NetworkConfig" : NetworkConfig,
-      "RoleArn" : String,
-      "StoppingCondition" : StoppingCondition,
-      "Tags" : [ Tag, ... ]
+      "[EndpointName](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointname)" : {{String}},
+      "[JobDefinitionName](#cfn-sagemaker-modelexplainabilityjobdefinition-jobdefinitionname)" : {{String}},
+      "[JobResources](#cfn-sagemaker-modelexplainabilityjobdefinition-jobresources)" : {{MonitoringResources}},
+      "[ModelExplainabilityAppSpecification](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification)" : {{ModelExplainabilityAppSpecification}},
+      "[ModelExplainabilityBaselineConfig](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilitybaselineconfig)" : {{ModelExplainabilityBaselineConfig}},
+      "[ModelExplainabilityJobInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput)" : {{ModelExplainabilityJobInput}},
+      "[ModelExplainabilityJobOutputConfig](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjoboutputconfig)" : {{MonitoringOutputConfig}},
+      "[NetworkConfig](#cfn-sagemaker-modelexplainabilityjobdefinition-networkconfig)" : {{NetworkConfig}},
+      "[RoleArn](#cfn-sagemaker-modelexplainabilityjobdefinition-rolearn)" : {{String}},
+      "[StoppingCondition](#cfn-sagemaker-modelexplainabilityjobdefinition-stoppingcondition)" : {{StoppingCondition}},
+      "[Tags](#cfn-sagemaker-modelexplainabilityjobdefinition-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::ModelExplainabilityJobDefinition
 Properties:
-  EndpointName: String
-  JobDefinitionName: String
-  JobResources:
-    MonitoringResources
-  ModelExplainabilityAppSpecification:
-    ModelExplainabilityAppSpecification
-  ModelExplainabilityBaselineConfig:
-    ModelExplainabilityBaselineConfig
-  ModelExplainabilityJobInput:
-    ModelExplainabilityJobInput
-  ModelExplainabilityJobOutputConfig:
-    MonitoringOutputConfig
-  NetworkConfig:
-    NetworkConfig
-  RoleArn: String
-  StoppingCondition:
-    StoppingCondition
-  Tags:
-    - Tag
-
+  [EndpointName](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointname): {{String}}
+  [JobDefinitionName](#cfn-sagemaker-modelexplainabilityjobdefinition-jobdefinitionname): {{String}}
+  [JobResources](#cfn-sagemaker-modelexplainabilityjobdefinition-jobresources): {{
+    MonitoringResources}}
+  [ModelExplainabilityAppSpecification](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification): {{
+    ModelExplainabilityAppSpecification}}
+  [ModelExplainabilityBaselineConfig](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilitybaselineconfig): {{
+    ModelExplainabilityBaselineConfig}}
+  [ModelExplainabilityJobInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput): {{
+    ModelExplainabilityJobInput}}
+  [ModelExplainabilityJobOutputConfig](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjoboutputconfig): {{
+    MonitoringOutputConfig}}
+  [NetworkConfig](#cfn-sagemaker-modelexplainabilityjobdefinition-networkconfig): {{
+    NetworkConfig}}
+  [RoleArn](#cfn-sagemaker-modelexplainabilityjobdefinition-rolearn): {{String}}
+  [StoppingCondition](#cfn-sagemaker-modelexplainabilityjobdefinition-stoppingcondition): {{
+    StoppingCondition}}
+  [Tags](#cfn-sagemaker-modelexplainabilityjobdefinition-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-properties"></a>
 
-`EndpointName`
-
+`EndpointName`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-endpointname"></a>
 The name of the endpoint used to run the model explainability monitoring job.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`JobDefinitionName`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-jobdefinitionname"></a>
+The name of the model explainability job definition. The name must be unique within an AWS Region in the AWS account.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`JobDefinitionName`
-
-The name of the model explainability job definition. The name must be unique within an AWS
-Region in the AWS account.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`JobResources`
-
+`JobResources`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-jobresources"></a>
 Identifies the resources to deploy for a monitoring job.
+*Required*: Yes
+*Type*: [MonitoringResources](aws-properties-sagemaker-modelexplainabilityjobdefinition-monitoringresources.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [MonitoringResources](aws-properties-sagemaker-modelexplainabilityjobdefinition-monitoringresources.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelExplainabilityAppSpecification`
-
+`ModelExplainabilityAppSpecification`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification"></a>
 Configures the model explainability job to run a specified Docker container image.
+*Required*: Yes
+*Type*: [ModelExplainabilityAppSpecification](aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [ModelExplainabilityAppSpecification](aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelExplainabilityBaselineConfig`
-
+`ModelExplainabilityBaselineConfig`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilitybaselineconfig"></a>
 The baseline configuration for a model explainability job.
+*Required*: No
+*Type*: [ModelExplainabilityBaselineConfig](aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilitybaselineconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [ModelExplainabilityBaselineConfig](aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilitybaselineconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelExplainabilityJobInput`
-
+`ModelExplainabilityJobInput`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput"></a>
 Inputs for the model explainability job.
+*Required*: Yes
+*Type*: [ModelExplainabilityJobInput](aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [ModelExplainabilityJobInput](aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelExplainabilityJobOutputConfig`
-
+`ModelExplainabilityJobOutputConfig`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjoboutputconfig"></a>
 The output configuration for monitoring jobs.
+*Required*: Yes
+*Type*: [MonitoringOutputConfig](aws-properties-sagemaker-modelexplainabilityjobdefinition-monitoringoutputconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [MonitoringOutputConfig](aws-properties-sagemaker-modelexplainabilityjobdefinition-monitoringoutputconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkConfig`
-
+`NetworkConfig`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-networkconfig"></a>
 Networking options for a model explainability job.
+*Required*: No
+*Type*: [NetworkConfig](aws-properties-sagemaker-modelexplainabilityjobdefinition-networkconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RoleArn`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-rolearn"></a>
+The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [NetworkConfig](aws-properties-sagemaker-modelexplainabilityjobdefinition-networkconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your
-behalf.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`StoppingCondition`
-
+`StoppingCondition`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-stoppingcondition"></a>
 A time limit for how long the monitoring job is allowed to run before stopping.
+*Required*: No
+*Type*: [StoppingCondition](aws-properties-sagemaker-modelexplainabilityjobdefinition-stoppingcondition.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [StoppingCondition](aws-properties-sagemaker-modelexplainabilityjobdefinition-stoppingcondition.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-modelexplainabilityjobdefinition-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-modelexplainabilityjobdefinition-tag.md)
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the job definition.
+ When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the job definition.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time when the job definition was created.
 
-`JobDefinitionArn`
-
+`JobDefinitionArn`  <a name="JobDefinitionArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the job definition.
 
 ## Examples
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition--examples"></a>
 
 ### SageMaker ModelExplainabilityJobDefinition Example
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition--examples--SageMaker_ModelExplainabilityJobDefinition_Example"></a>
 
 The following example creates a Model Explainabiltiy monitoring job defintion.
 
 #### JSON
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition--examples--SageMaker_ModelExplainabilityJobDefinition_Example--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a model explainability job definition",
@@ -313,7 +263,7 @@ The following example creates a Model Explainabiltiy monitoring job defintion.
          "Type": "AWS::IAM::Role",
          "Properties": {
             "AssumeRolePolicyDocument": {
-               "Version": "2012-10-17",
+               "Version": "2012-10-17"		 	 	 ,
                "Statement": [
                   {
                      "Effect": "Allow",
@@ -333,7 +283,7 @@ The following example creates a Model Explainabiltiy monitoring job defintion.
                {
                   "PolicyName": "root",
                   "PolicyDocument": {
-                     "Version": "2012-10-17",
+                     "Version": "2012-10-17"		 	 	 ,
                      "Statement": [
                         {
                            "Effect": "Allow",
@@ -350,7 +300,7 @@ The following example creates a Model Explainabiltiy monitoring job defintion.
          "Type": "AWS::IAM::Role",
          "Properties": {
             "AssumeRolePolicyDocument": {
-               "Version": "2012-10-17",
+               "Version": "2012-10-17"		 	 	 ,
                "Statement": [
                   {
                      "Effect": "Allow",
@@ -426,9 +376,9 @@ The following example creates a Model Explainabiltiy monitoring job defintion.
 ```
 
 #### YAML
+<a name="aws-resource-sagemaker-modelexplainabilityjobdefinition--examples--SageMaker_ModelExplainabilityJobDefinition_Example--yaml"></a>
 
-```yaml
-
+```
 ---
 
 AWSTemplateFormatVersion: '2010-09-09'
@@ -560,11 +510,5 @@ Resources:
       StoppingCondition:
         MaxRuntimeInSeconds: 2000
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UserContext
-
-BatchTransformInput
 
 All content copied from https://docs.aws.amazon.com/.

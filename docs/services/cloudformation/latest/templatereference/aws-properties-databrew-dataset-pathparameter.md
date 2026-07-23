@@ -2,70 +2,52 @@
 title: "AWS::DataBrew::Dataset PathParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset PathParameter
+<a name="aws-properties-databrew-dataset-pathparameter"></a>
 
-Represents a single entry in the path parameters of a dataset. Each
-`PathParameter` consists of a name and a parameter definition.
+Represents a single entry in the path parameters of a dataset. Each `PathParameter` consists of a name and a parameter definition.
 
 ## Syntax
+<a name="aws-properties-databrew-dataset-pathparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-dataset-pathparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatasetParameter" : DatasetParameter,
-  "PathParameterName" : String
+  "[DatasetParameter](#cfn-databrew-dataset-pathparameter-datasetparameter)" : {{DatasetParameter}},
+  "[PathParameterName](#cfn-databrew-dataset-pathparameter-pathparametername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-dataset-pathparameter-syntax.yaml"></a>
 
-```yaml
-
-  DatasetParameter:
-    DatasetParameter
-  PathParameterName: String
-
+```
+  [DatasetParameter](#cfn-databrew-dataset-pathparameter-datasetparameter): {{
+    DatasetParameter}}
+  [PathParameterName](#cfn-databrew-dataset-pathparameter-pathparametername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-dataset-pathparameter-properties"></a>
 
-`DatasetParameter`
-
+`DatasetParameter`  <a name="cfn-databrew-dataset-pathparameter-datasetparameter"></a>
 The path parameter definition.
+*Required*: Yes
+*Type*: [DatasetParameter](aws-properties-databrew-dataset-datasetparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DatasetParameter](aws-properties-databrew-dataset-datasetparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PathParameterName`
-
+`PathParameterName`  <a name="cfn-databrew-dataset-pathparameter-pathparametername"></a>
 The name of the path parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PathOptions
-
-S3Location
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

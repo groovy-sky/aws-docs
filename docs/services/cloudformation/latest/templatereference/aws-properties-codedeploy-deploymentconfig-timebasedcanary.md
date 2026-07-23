@@ -2,69 +2,49 @@
 title: "AWS::CodeDeploy::DeploymentConfig TimeBasedCanary"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentConfig TimeBasedCanary
+<a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary"></a>
 
-A configuration that shifts traffic from one version of a Lambda function
-or Amazon ECS task set to another in two increments. The original and target
-Lambda function versions or ECS task sets are specified in the
-deployment's AppSpec file.
+A configuration that shifts traffic from one version of a Lambda function or Amazon ECS task set to another in two increments. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary-syntax.json"></a>
 
-```json
-
+```
 {
-  "CanaryInterval" : Integer,
-  "CanaryPercentage" : Integer
+  "[CanaryInterval](#cfn-codedeploy-deploymentconfig-timebasedcanary-canaryinterval)" : {{Integer}},
+  "[CanaryPercentage](#cfn-codedeploy-deploymentconfig-timebasedcanary-canarypercentage)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary-syntax.yaml"></a>
 
-```yaml
-
-  CanaryInterval: Integer
-  CanaryPercentage: Integer
-
+```
+  [CanaryInterval](#cfn-codedeploy-deploymentconfig-timebasedcanary-canaryinterval): {{Integer}}
+  [CanaryPercentage](#cfn-codedeploy-deploymentconfig-timebasedcanary-canarypercentage): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary-properties"></a>
 
-`CanaryInterval`
+`CanaryInterval`  <a name="cfn-codedeploy-deploymentconfig-timebasedcanary-canaryinterval"></a>
+The number of minutes between the first and second traffic shifts of a `TimeBasedCanary` deployment.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The number of minutes between the first and second traffic shifts of a
-`TimeBasedCanary` deployment.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`CanaryPercentage`
-
-The percentage of traffic to shift in the first increment of a
-`TimeBasedCanary` deployment.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MinimumHealthyHostsPerZone
-
-TimeBasedLinear
+`CanaryPercentage`  <a name="cfn-codedeploy-deploymentconfig-timebasedcanary-canarypercentage"></a>
+The percentage of traffic to shift in the first increment of a `TimeBasedCanary` deployment.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

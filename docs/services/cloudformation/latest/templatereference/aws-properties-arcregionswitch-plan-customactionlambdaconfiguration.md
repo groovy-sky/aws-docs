@@ -2,110 +2,79 @@
 title: "AWS::ARCRegionSwitch::Plan CustomActionLambdaConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan CustomActionLambdaConfiguration
+<a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration"></a>
 
 Configuration for AWS Lambda functions that perform custom actions during a Region switch.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Lambdas" : [ Lambdas, ... ],
-  "RegionToRun" : String,
-  "RetryIntervalMinutes" : Number,
-  "TimeoutMinutes" : Number,
-  "Ungraceful" : LambdaUngraceful
+  "[Lambdas](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-lambdas)" : {{[ Lambdas, ... ]}},
+  "[RegionToRun](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-regiontorun)" : {{String}},
+  "[RetryIntervalMinutes](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-retryintervalminutes)" : {{Number}},
+  "[TimeoutMinutes](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-timeoutminutes)" : {{Number}},
+  "[Ungraceful](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-ungraceful)" : {{LambdaUngraceful}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Lambdas:
-    - Lambdas
-  RegionToRun: String
-  RetryIntervalMinutes: Number
-  TimeoutMinutes: Number
-  Ungraceful:
-    LambdaUngraceful
-
+```
+  [Lambdas](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-lambdas): {{
+    - Lambdas}}
+  [RegionToRun](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-regiontorun): {{String}}
+  [RetryIntervalMinutes](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-retryintervalminutes): {{Number}}
+  [TimeoutMinutes](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-timeoutminutes): {{Number}}
+  [Ungraceful](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-ungraceful): {{
+    LambdaUngraceful}}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration-properties"></a>
 
-`Lambdas`
-
+`Lambdas`  <a name="cfn-arcregionswitch-plan-customactionlambdaconfiguration-lambdas"></a>
 The AWS Lambda functions for the execution block.
+*Required*: Yes
+*Type*: [Array](aws-properties-arcregionswitch-plan-lambdas.md) of [Lambdas](aws-properties-arcregionswitch-plan-lambdas.md)
+*Minimum*: `1`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Array](aws-properties-arcregionswitch-plan-lambdas.md) of [Lambdas](aws-properties-arcregionswitch-plan-lambdas.md)
-
-_Minimum_: `1`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegionToRun`
-
+`RegionToRun`  <a name="cfn-arcregionswitch-plan-customactionlambdaconfiguration-regiontorun"></a>
 The AWS Region for the function to run in. For recovery workflows use `activatingRegion` or `deactivatingRegion`. For post-recovery workflows, use `activeRegion` (the Region with customer traffic) or `inactiveRegion` (the Region with no customer traffic).
+*Required*: Yes
+*Type*: String
+*Allowed values*: `activatingRegion | deactivatingRegion | activeRegion | inactiveRegion`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `activatingRegion | deactivatingRegion | activeRegion | inactiveRegion`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetryIntervalMinutes`
-
+`RetryIntervalMinutes`  <a name="cfn-arcregionswitch-plan-customactionlambdaconfiguration-retryintervalminutes"></a>
 The retry interval specified.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeoutMinutes`
-
+`TimeoutMinutes`  <a name="cfn-arcregionswitch-plan-customactionlambdaconfiguration-timeoutminutes"></a>
 The timeout value specified for the configuration.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ungraceful`
-
+`Ungraceful`  <a name="cfn-arcregionswitch-plan-customactionlambdaconfiguration-ungraceful"></a>
 The settings for ungraceful execution.
-
-_Required_: No
-
-_Type_: [LambdaUngraceful](aws-properties-arcregionswitch-plan-lambdaungraceful.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssociatedAlarm
-
-DocumentDbConfiguration
+*Required*: No
+*Type*: [LambdaUngraceful](aws-properties-arcregionswitch-plan-lambdaungraceful.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

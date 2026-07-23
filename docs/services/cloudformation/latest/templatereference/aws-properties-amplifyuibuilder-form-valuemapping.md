@@ -2,67 +2,51 @@
 title: "AWS::AmplifyUIBuilder::Form ValueMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form ValueMapping
+<a name="aws-properties-amplifyuibuilder-form-valuemapping"></a>
 
-The `ValueMapping` property specifies the association between a complex object and a display value. Use `ValueMapping` to store
-how to represent complex objects when they are displayed.
+The `ValueMapping` property specifies the association between a complex object and a display value. Use `ValueMapping` to store how to represent complex objects when they are displayed.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-valuemapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-valuemapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayValue" : FormInputValueProperty,
-  "Value" : FormInputValueProperty
+  "[DisplayValue](#cfn-amplifyuibuilder-form-valuemapping-displayvalue)" : {{FormInputValueProperty}},
+  "[Value](#cfn-amplifyuibuilder-form-valuemapping-value)" : {{FormInputValueProperty}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-valuemapping-syntax.yaml"></a>
 
-```yaml
-
-  DisplayValue:
-    FormInputValueProperty
-  Value:
-    FormInputValueProperty
-
+```
+  [DisplayValue](#cfn-amplifyuibuilder-form-valuemapping-displayvalue): {{
+    FormInputValueProperty}}
+  [Value](#cfn-amplifyuibuilder-form-valuemapping-value): {{
+    FormInputValueProperty}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-valuemapping-properties"></a>
 
-`DisplayValue`
-
+`DisplayValue`  <a name="cfn-amplifyuibuilder-form-valuemapping-displayvalue"></a>
 The value to display for the complex object.
+*Required*: No
+*Type*: [FormInputValueProperty](aws-properties-amplifyuibuilder-form-forminputvalueproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FormInputValueProperty](aws-properties-amplifyuibuilder-form-forminputvalueproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-amplifyuibuilder-form-valuemapping-value"></a>
 The complex object.
-
-_Required_: Yes
-
-_Type_: [FormInputValueProperty](aws-properties-amplifyuibuilder-form-forminputvalueproperty.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SectionalElement
-
-ValueMappings
+*Required*: Yes
+*Type*: [FormInputValueProperty](aws-properties-amplifyuibuilder-form-forminputvalueproperty.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

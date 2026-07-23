@@ -2,78 +2,56 @@
 title: "AWS::QuickSight::Template CustomActionURLOperation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template CustomActionURLOperation
+<a name="aws-properties-quicksight-template-customactionurloperation"></a>
 
 The URL operation that opens a link to another webpage.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-customactionurloperation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-customactionurloperation-syntax.json"></a>
 
-```json
-
+```
 {
-  "URLTarget" : String,
-  "URLTemplate" : String
+  "[URLTarget](#cfn-quicksight-template-customactionurloperation-urltarget)" : {{String}},
+  "[URLTemplate](#cfn-quicksight-template-customactionurloperation-urltemplate)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-customactionurloperation-syntax.yaml"></a>
 
-```yaml
-
-  URLTarget: String
-  URLTemplate: String
-
+```
+  [URLTarget](#cfn-quicksight-template-customactionurloperation-urltarget): {{String}}
+  [URLTemplate](#cfn-quicksight-template-customactionurloperation-urltemplate): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-customactionurloperation-properties"></a>
 
-`URLTarget`
-
+`URLTarget`  <a name="cfn-quicksight-template-customactionurloperation-urltarget"></a>
 The target of the `CustomActionURLOperation`.
-
 Valid values are defined as follows:
++ `NEW_TAB`: Opens the target URL in a new browser tab.
++ `NEW_WINDOW`: Opens the target URL in a new browser window.
++ `SAME_TAB`: Opens the target URL in the same browser tab.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NEW_TAB | NEW_WINDOW | SAME_TAB`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `NEW_TAB`: Opens the target URL in a new browser tab.
-
-- `NEW_WINDOW`: Opens the target URL in a new browser window.
-
-- `SAME_TAB`: Opens the target URL in the same browser tab.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `NEW_TAB | NEW_WINDOW | SAME_TAB`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`URLTemplate`
-
+`URLTemplate`  <a name="cfn-quicksight-template-customactionurloperation-urltemplate"></a>
 THe URL link of the `CustomActionURLOperation`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomActionSetParametersOperation
-
-CustomColor
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

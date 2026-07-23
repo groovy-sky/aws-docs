@@ -2,130 +2,87 @@
 title: "AWS::Route53Resolver::ResolverRule TargetAddress"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::ResolverRule TargetAddress
+<a name="aws-properties-route53resolver-resolverrule-targetaddress"></a>
 
-In a
-[CreateResolverRule](../../../../reference/route53/latest/apireference/api-route53resolver-createresolverrule.md)
-request, an array of the IPs that you want to forward DNS queries to.
+In a [CreateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html) request, an array of the IPs that you want to forward DNS queries to.
 
 ## Syntax
+<a name="aws-properties-route53resolver-resolverrule-targetaddress-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53resolver-resolverrule-targetaddress-syntax.json"></a>
 
-```json
-
+```
 {
-  "Ip" : String,
-  "Ipv6" : String,
-  "Port" : String,
-  "Protocol" : String,
-  "ServerNameIndication" : String
+  "[Ip](#cfn-route53resolver-resolverrule-targetaddress-ip)" : {{String}},
+  "[Ipv6](#cfn-route53resolver-resolverrule-targetaddress-ipv6)" : {{String}},
+  "[Port](#cfn-route53resolver-resolverrule-targetaddress-port)" : {{String}},
+  "[Protocol](#cfn-route53resolver-resolverrule-targetaddress-protocol)" : {{String}},
+  "[ServerNameIndication](#cfn-route53resolver-resolverrule-targetaddress-servernameindication)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53resolver-resolverrule-targetaddress-syntax.yaml"></a>
 
-```yaml
-
-  Ip: String
-  Ipv6: String
-  Port: String
-  Protocol: String
-  ServerNameIndication: String
-
+```
+  [Ip](#cfn-route53resolver-resolverrule-targetaddress-ip): {{String}}
+  [Ipv6](#cfn-route53resolver-resolverrule-targetaddress-ipv6): {{String}}
+  [Port](#cfn-route53resolver-resolverrule-targetaddress-port): {{String}}
+  [Protocol](#cfn-route53resolver-resolverrule-targetaddress-protocol): {{String}}
+  [ServerNameIndication](#cfn-route53resolver-resolverrule-targetaddress-servernameindication): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53resolver-resolverrule-targetaddress-properties"></a>
 
-`Ip`
-
+`Ip`  <a name="cfn-route53resolver-resolverrule-targetaddress-ip"></a>
 One IPv4 address that you want to forward DNS queries to.
+*Required*: No
+*Type*: String
+*Minimum*: `7`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Ipv6`  <a name="cfn-route53resolver-resolverrule-targetaddress-ipv6"></a>
+ One IPv6 address that you want to forward DNS queries to.
+*Required*: No
+*Type*: String
+*Minimum*: `7`
+*Maximum*: `39`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `7`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ipv6`
-
-One IPv6 address that you want to forward DNS queries to.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `7`
-
-_Maximum_: `39`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-route53resolver-resolverrule-targetaddress-port"></a>
 The port at `Ip` that you want to forward DNS queries to.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Protocol`  <a name="cfn-route53resolver-resolverrule-targetaddress-protocol"></a>
+ The protocols for the target address. The protocol you choose needs to be supported by the outbound endpoint of the Resolver rule.
+*Required*: No
+*Type*: String
+*Allowed values*: `Do53 | DoH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The protocols for the target address. The protocol you choose needs to be supported by the outbound endpoint of the Resolver rule.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Do53 | DoH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServerNameIndication`
-
-The Server Name Indication of the DoH server that you want to forward queries to.
-This is only used if the Protocol of the `TargetAddress` is `DoH`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ServerNameIndication`  <a name="cfn-route53resolver-resolverrule-targetaddress-servernameindication"></a>
+ The Server Name Indication of the DoH server that you want to forward queries to. This is only used if the Protocol of the `TargetAddress` is `DoH`.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Return values](../userguide/aws-resource-route53resolver-resolverrule.md#aws-resource-route53resolver-resolverrule-return-values)
-in the topic
-[AWS::Route53Resolver::ResolverRule](../userguide/aws-resource-route53resolver-resolverrule.md)
-
-- [TargetAddress](../../../../reference/route53/latest/apireference/api-route53resolver-targetaddress.md)
-in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Route53Resolver::ResolverRuleAssociation
+<a name="aws-properties-route53resolver-resolverrule-targetaddress--seealso"></a>
++ [Return values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#aws-resource-route53resolver-resolverrule-return-values) in the topic [AWS::Route53Resolver::ResolverRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html)
++ [TargetAddress](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_TargetAddress.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

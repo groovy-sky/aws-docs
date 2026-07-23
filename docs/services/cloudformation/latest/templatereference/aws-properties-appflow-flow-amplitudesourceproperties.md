@@ -2,61 +2,47 @@
 title: "AWS::AppFlow::Flow AmplitudeSourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow AmplitudeSourceProperties
+<a name="aws-properties-appflow-flow-amplitudesourceproperties"></a>
 
-The properties that are applied when Amplitude is being used as a source.
+ The properties that are applied when Amplitude is being used as a source.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-amplitudesourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-amplitudesourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "Object" : String
+  "[Object](#cfn-appflow-flow-amplitudesourceproperties-object)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-amplitudesourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  Object: String
-
+```
+  [Object](#cfn-appflow-flow-amplitudesourceproperties-object): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-amplitudesourceproperties-properties"></a>
 
-`Object`
-
-The object specified in the Amplitude flow source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Object`  <a name="cfn-appflow-flow-amplitudesourceproperties-object"></a>
+ The object specified in the Amplitude flow source.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [AmplitudeSourceProperties](../../../../reference/appflow/1-0/apireference/api-amplitudesourceproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AggregationConfig
-
-ConnectorOperator
+<a name="aws-properties-appflow-flow-amplitudesourceproperties--seealso"></a>
++ [AmplitudeSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AmplitudeSourceProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,93 +2,66 @@
 title: "AWS::QuickSight::Template SheetVisualScopingConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template SheetVisualScopingConfiguration
+<a name="aws-properties-quicksight-template-sheetvisualscopingconfiguration"></a>
 
 The filter that is applied to the options.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-sheetvisualscopingconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-sheetvisualscopingconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Scope" : String,
-  "SheetId" : String,
-  "VisualIds" : [ String, ... ]
+  "[Scope](#cfn-quicksight-template-sheetvisualscopingconfiguration-scope)" : {{String}},
+  "[SheetId](#cfn-quicksight-template-sheetvisualscopingconfiguration-sheetid)" : {{String}},
+  "[VisualIds](#cfn-quicksight-template-sheetvisualscopingconfiguration-visualids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-sheetvisualscopingconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Scope: String
-  SheetId: String
-  VisualIds:
-    - String
-
+```
+  [Scope](#cfn-quicksight-template-sheetvisualscopingconfiguration-scope): {{String}}
+  [SheetId](#cfn-quicksight-template-sheetvisualscopingconfiguration-sheetid): {{String}}
+  [VisualIds](#cfn-quicksight-template-sheetvisualscopingconfiguration-visualids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-sheetvisualscopingconfiguration-properties"></a>
 
-`Scope`
-
+`Scope`  <a name="cfn-quicksight-template-sheetvisualscopingconfiguration-scope"></a>
 The scope of the applied entities. Choose one of the following options:
++  `ALL_VISUALS`
++  `SELECTED_VISUALS`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL_VISUALS | SELECTED_VISUALS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_VISUALS`
-
-- `SELECTED_VISUALS`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL_VISUALS | SELECTED_VISUALS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetId`
-
+`SheetId`  <a name="cfn-quicksight-template-sheetvisualscopingconfiguration-sheetid"></a>
 The selected sheet that the filter is applied to.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualIds`
-
+`VisualIds`  <a name="cfn-quicksight-template-sheetvisualscopingconfiguration-visualids"></a>
 The selected visuals that the filter is applied to.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 0`
-
-_Maximum_: `512 | 50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SheetTextBox
-
-ShortFormatText
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 0`
+*Maximum*: `512 | 50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

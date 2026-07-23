@@ -2,158 +2,114 @@
 title: "AWS::QuickSight::Template KPIOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template KPIOptions
+<a name="aws-properties-quicksight-template-kpioptions"></a>
 
 The options that determine the presentation of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-kpioptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-kpioptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Comparison" : ComparisonConfiguration,
-  "PrimaryValueDisplayType" : String,
-  "PrimaryValueFontConfiguration" : FontConfiguration,
-  "ProgressBar" : ProgressBarOptions,
-  "SecondaryValue" : SecondaryValueOptions,
-  "SecondaryValueFontConfiguration" : FontConfiguration,
-  "Sparkline" : KPISparklineOptions,
-  "TrendArrows" : TrendArrowOptions,
-  "VisualLayoutOptions" : KPIVisualLayoutOptions
+  "[Comparison](#cfn-quicksight-template-kpioptions-comparison)" : {{ComparisonConfiguration}},
+  "[PrimaryValueDisplayType](#cfn-quicksight-template-kpioptions-primaryvaluedisplaytype)" : {{String}},
+  "[PrimaryValueFontConfiguration](#cfn-quicksight-template-kpioptions-primaryvaluefontconfiguration)" : {{FontConfiguration}},
+  "[ProgressBar](#cfn-quicksight-template-kpioptions-progressbar)" : {{ProgressBarOptions}},
+  "[SecondaryValue](#cfn-quicksight-template-kpioptions-secondaryvalue)" : {{SecondaryValueOptions}},
+  "[SecondaryValueFontConfiguration](#cfn-quicksight-template-kpioptions-secondaryvaluefontconfiguration)" : {{FontConfiguration}},
+  "[Sparkline](#cfn-quicksight-template-kpioptions-sparkline)" : {{KPISparklineOptions}},
+  "[TrendArrows](#cfn-quicksight-template-kpioptions-trendarrows)" : {{TrendArrowOptions}},
+  "[VisualLayoutOptions](#cfn-quicksight-template-kpioptions-visuallayoutoptions)" : {{KPIVisualLayoutOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-kpioptions-syntax.yaml"></a>
 
-```yaml
-
-  Comparison:
-    ComparisonConfiguration
-  PrimaryValueDisplayType: String
-  PrimaryValueFontConfiguration:
-    FontConfiguration
-  ProgressBar:
-    ProgressBarOptions
-  SecondaryValue:
-    SecondaryValueOptions
-  SecondaryValueFontConfiguration:
-    FontConfiguration
-  Sparkline:
-    KPISparklineOptions
-  TrendArrows:
-    TrendArrowOptions
-  VisualLayoutOptions:
-    KPIVisualLayoutOptions
-
+```
+  [Comparison](#cfn-quicksight-template-kpioptions-comparison): {{
+    ComparisonConfiguration}}
+  [PrimaryValueDisplayType](#cfn-quicksight-template-kpioptions-primaryvaluedisplaytype): {{String}}
+  [PrimaryValueFontConfiguration](#cfn-quicksight-template-kpioptions-primaryvaluefontconfiguration): {{
+    FontConfiguration}}
+  [ProgressBar](#cfn-quicksight-template-kpioptions-progressbar): {{
+    ProgressBarOptions}}
+  [SecondaryValue](#cfn-quicksight-template-kpioptions-secondaryvalue): {{
+    SecondaryValueOptions}}
+  [SecondaryValueFontConfiguration](#cfn-quicksight-template-kpioptions-secondaryvaluefontconfiguration): {{
+    FontConfiguration}}
+  [Sparkline](#cfn-quicksight-template-kpioptions-sparkline): {{
+    KPISparklineOptions}}
+  [TrendArrows](#cfn-quicksight-template-kpioptions-trendarrows): {{
+    TrendArrowOptions}}
+  [VisualLayoutOptions](#cfn-quicksight-template-kpioptions-visuallayoutoptions): {{
+    KPIVisualLayoutOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-kpioptions-properties"></a>
 
-`Comparison`
-
+`Comparison`  <a name="cfn-quicksight-template-kpioptions-comparison"></a>
 The comparison configuration of a KPI visual.
+*Required*: No
+*Type*: [ComparisonConfiguration](aws-properties-quicksight-template-comparisonconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ComparisonConfiguration](aws-properties-quicksight-template-comparisonconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryValueDisplayType`
-
+`PrimaryValueDisplayType`  <a name="cfn-quicksight-template-kpioptions-primaryvaluedisplaytype"></a>
 The options that determine the primary value display type.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | COMPARISON | ACTUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | COMPARISON | ACTUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryValueFontConfiguration`
-
+`PrimaryValueFontConfiguration`  <a name="cfn-quicksight-template-kpioptions-primaryvaluefontconfiguration"></a>
 The options that determine the primary value font configuration.
+*Required*: No
+*Type*: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProgressBar`
-
+`ProgressBar`  <a name="cfn-quicksight-template-kpioptions-progressbar"></a>
 The options that determine the presentation of the progress bar of a KPI visual.
+*Required*: No
+*Type*: [ProgressBarOptions](aws-properties-quicksight-template-progressbaroptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ProgressBarOptions](aws-properties-quicksight-template-progressbaroptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryValue`
-
+`SecondaryValue`  <a name="cfn-quicksight-template-kpioptions-secondaryvalue"></a>
 The options that determine the presentation of the secondary value of a KPI visual.
+*Required*: No
+*Type*: [SecondaryValueOptions](aws-properties-quicksight-template-secondaryvalueoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SecondaryValueOptions](aws-properties-quicksight-template-secondaryvalueoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryValueFontConfiguration`
-
+`SecondaryValueFontConfiguration`  <a name="cfn-quicksight-template-kpioptions-secondaryvaluefontconfiguration"></a>
 The options that determine the secondary value font configuration.
+*Required*: No
+*Type*: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sparkline`
-
+`Sparkline`  <a name="cfn-quicksight-template-kpioptions-sparkline"></a>
 The options that determine the visibility, color, type, and tooltip visibility of the sparkline of a KPI visual.
+*Required*: No
+*Type*: [KPISparklineOptions](aws-properties-quicksight-template-kpisparklineoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KPISparklineOptions](aws-properties-quicksight-template-kpisparklineoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrendArrows`
-
+`TrendArrows`  <a name="cfn-quicksight-template-kpioptions-trendarrows"></a>
 The options that determine the presentation of trend arrows in a KPI visual.
+*Required*: No
+*Type*: [TrendArrowOptions](aws-properties-quicksight-template-trendarrowoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TrendArrowOptions](aws-properties-quicksight-template-trendarrowoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualLayoutOptions`
-
+`VisualLayoutOptions`  <a name="cfn-quicksight-template-kpioptions-visuallayoutoptions"></a>
 The options that determine the layout a KPI visual.
-
-_Required_: No
-
-_Type_: [KPIVisualLayoutOptions](aws-properties-quicksight-template-kpivisuallayoutoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPIFieldWells
-
-KPIPrimaryValueConditionalFormatting
+*Required*: No
+*Type*: [KPIVisualLayoutOptions](aws-properties-quicksight-template-kpivisuallayoutoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,67 +2,51 @@
 title: "AWS::ACMPCA::CertificateAuthority AccessDescription"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ACMPCA::CertificateAuthority AccessDescription
+<a name="aws-properties-acmpca-certificateauthority-accessdescription"></a>
 
-Provides access information used by the `authorityInfoAccess` and
-`subjectInfoAccess` extensions described in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).
+Provides access information used by the `authorityInfoAccess` and `subjectInfoAccess` extensions described in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).
 
 ## Syntax
+<a name="aws-properties-acmpca-certificateauthority-accessdescription-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-acmpca-certificateauthority-accessdescription-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessLocation" : GeneralName,
-  "AccessMethod" : AccessMethod
+  "[AccessLocation](#cfn-acmpca-certificateauthority-accessdescription-accesslocation)" : {{GeneralName}},
+  "[AccessMethod](#cfn-acmpca-certificateauthority-accessdescription-accessmethod)" : {{AccessMethod}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-acmpca-certificateauthority-accessdescription-syntax.yaml"></a>
 
-```yaml
-
-  AccessLocation:
-    GeneralName
-  AccessMethod:
-    AccessMethod
-
+```
+  [AccessLocation](#cfn-acmpca-certificateauthority-accessdescription-accesslocation): {{
+    GeneralName}}
+  [AccessMethod](#cfn-acmpca-certificateauthority-accessdescription-accessmethod): {{
+    AccessMethod}}
 ```
 
 ## Properties
+<a name="aws-properties-acmpca-certificateauthority-accessdescription-properties"></a>
 
-`AccessLocation`
-
+`AccessLocation`  <a name="cfn-acmpca-certificateauthority-accessdescription-accesslocation"></a>
 The location of `AccessDescription` information.
+*Required*: Yes
+*Type*: [GeneralName](aws-properties-acmpca-certificateauthority-generalname.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [GeneralName](aws-properties-acmpca-certificateauthority-generalname.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AccessMethod`
-
+`AccessMethod`  <a name="cfn-acmpca-certificateauthority-accessdescription-accessmethod"></a>
 The type and format of `AccessDescription` information.
-
-_Required_: Yes
-
-_Type_: [AccessMethod](aws-properties-acmpca-certificateauthority-accessmethod.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ACMPCA::CertificateAuthority
-
-AccessMethod
+*Required*: Yes
+*Type*: [AccessMethod](aws-properties-acmpca-certificateauthority-accessmethod.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

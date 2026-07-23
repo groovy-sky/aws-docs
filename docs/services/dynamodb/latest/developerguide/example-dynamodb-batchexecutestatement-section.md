@@ -1,38 +1,27 @@
 ---
-title: "Use BatchExecuteStatement with an AWS SDK"
+title: "Use `BatchExecuteStatement` with an AWS SDK"
 ---
 
 # Use `BatchExecuteStatement` with an AWS SDK
+<a name="example_dynamodb_BatchExecuteStatement_section"></a>
 
 The following code examples show how to use `BatchExecuteStatement`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in
-context in the following code examples:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
++  [Delete data using PartiQL DELETE](example_dynamodb_PartiQLDelete_section.md)
++  [Insert data using PartiQL INSERT](example_dynamodb_PartiQLInsert_section.md)
++  [Query a table by using batches of PartiQL statements](example_dynamodb_Scenario_PartiQLBatch_section.md)
++  [Query data using PartiQL SELECT](example_dynamodb_PartiQLSelect_section.md)
++  [Update data using PartiQL UPDATE](example_dynamodb_PartiQLUpdate_section.md)
 
-- [Delete data using PartiQL DELETE](example-dynamodb-partiqldelete-section.md)
-
-- [Insert data using PartiQL INSERT](example-dynamodb-partiqlinsert-section.md)
-
-- [Query a table by using batches of PartiQL statements](example-dynamodb-scenario-partiqlbatch-section.md)
-
-- [Query data using PartiQL SELECT](example-dynamodb-partiqlselect-section.md)
-
-- [Update data using PartiQL UPDATE](example-dynamodb-partiqlupdate-section.md)
-
-.NET
+------
+#### [ .NET ]
 
 **SDK for .NET**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb#code-examples).
 Use batches of INSERT statements to add items.
 
-```csharp
-
+```
         /// <summary>
         /// Inserts movies imported from a JSON file into the movie table by
         /// using an Amazon DynamoDB PartiQL INSERT statement.
@@ -125,13 +114,10 @@ Use batches of INSERT statements to add items.
                 return null!;
             }
         }
-
 ```
-
 Use batches of SELECT statements to get items.
 
-```csharp
-
+```
         /// <summary>
         /// Gets movies from the movie table by
         /// using an Amazon DynamoDB PartiQL SELECT statement.
@@ -196,13 +182,10 @@ Use batches of SELECT statements to get items.
             }
 
         }
-
 ```
-
 Use batches of UPDATE statements to update items.
 
-```csharp
-
+```
         /// <summary>
         /// Updates information for multiple movies.
         /// </summary>
@@ -260,13 +243,10 @@ Use batches of UPDATE statements to update items.
 
             return response.HttpStatusCode == System.Net.HttpStatusCode.OK;
         }
-
 ```
-
 Use batches of DELETE statements to delete items.
 
-```csharp
-
+```
         /// <summary>
         /// Deletes multiple movies using a PartiQL BatchExecuteAsync
         /// statement.
@@ -317,27 +297,17 @@ Use batches of DELETE statements to delete items.
 
             return response.HttpStatusCode == System.Net.HttpStatusCode.OK;
         }
-
 ```
++  For API details, see [BatchExecuteStatement](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchExecuteStatement) in *AWS SDK for .NET API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchExecuteStatement)
-in _AWS SDK for .NET API Reference_.
+------
+#### [ C\+\+ ]
 
-C++
-
-**SDK for C++**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb).
-
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 Use batches of INSERT statements to add items.
 
-```cpp
-
+```
     // 2. Add multiple movies using "Insert" statements. (BatchExecuteStatement)
     Aws::DynamoDB::DynamoDBClient dynamoClient(clientConfiguration);
 
@@ -413,13 +383,10 @@ Use batches of INSERT statements to add items.
             return false;
         }
     }
-
 ```
-
 Use batches of SELECT statements to get items.
 
-```cpp
-
+```
     // 3. Get the data for multiple movies using "Select" statements. (BatchExecuteStatement)
     {
         Aws::Vector<Aws::DynamoDB::Model::BatchStatementRequest> statements(
@@ -462,13 +429,10 @@ Use batches of SELECT statements to get items.
             return false;
         }
     }
-
 ```
-
 Use batches of UPDATE statements to update items.
 
-```cpp
-
+```
     // 4. Update the data for multiple movies using "Update" statements. (BatchExecuteStatement)
 
     for (size_t i = 0; i < titles.size(); ++i) {
@@ -514,13 +478,10 @@ Use batches of UPDATE statements to update items.
             return false;
         }
     }
-
 ```
-
 Use batches of DELETE statements to delete items.
 
-```cpp
-
+```
     // 6. Delete multiple movies using "Delete" statements. (BatchExecuteStatement)
     {
         Aws::Vector<Aws::DynamoDB::Model::BatchStatementRequest> statements(
@@ -553,27 +514,17 @@ Use batches of DELETE statements to delete items.
             return false;
         }
     }
-
 ```
++  For API details, see [BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchExecuteStatement) in *AWS SDK for C\+\+ API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchExecuteStatement)
-in _AWS SDK for C++ API Reference_.
-
-Go
+------
+#### [ Go ]
 
 **SDK for Go V2**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Define a function receiver struct for the example.
 
-```go
-
+```
 import (
 	"context"
 	"fmt"
@@ -592,13 +543,10 @@ type PartiQLRunner struct {
 	DynamoDbClient *dynamodb.Client
 	TableName      string
 }
-
 ```
-
 Use batches of INSERT statements to add items.
 
-```go
-
+```
 // AddMovieBatch runs a batch of PartiQL INSERT statements to add multiple movies to the
 // DynamoDB table.
 func (runner PartiQLRunner) AddMovieBatch(ctx context.Context, movies []Movie) error {
@@ -623,13 +571,10 @@ func (runner PartiQLRunner) AddMovieBatch(ctx context.Context, movies []Movie) e
 	}
 	return err
 }
-
 ```
-
 Use batches of SELECT statements to get items.
 
-```go
-
+```
 // GetMovieBatch runs a batch of PartiQL SELECT statements to get multiple movies from
 // the DynamoDB table by title and year.
 func (runner PartiQLRunner) GetMovieBatch(ctx context.Context, movies []Movie) ([]Movie, error) {
@@ -665,13 +610,10 @@ func (runner PartiQLRunner) GetMovieBatch(ctx context.Context, movies []Movie) (
 	}
 	return outMovies, err
 }
-
 ```
-
 Use batches of UPDATE statements to update items.
 
-```go
-
+```
 // UpdateMovieBatch runs a batch of PartiQL UPDATE statements to update the rating of
 // multiple movies that already exist in the DynamoDB table.
 func (runner PartiQLRunner) UpdateMovieBatch(ctx context.Context, movies []Movie, ratings []float64) error {
@@ -696,13 +638,10 @@ func (runner PartiQLRunner) UpdateMovieBatch(ctx context.Context, movies []Movie
 	}
 	return err
 }
-
 ```
-
 Use batches of DELETE statements to delete items.
 
-```go
-
+```
 // DeleteMovieBatch runs a batch of PartiQL DELETE statements to remove multiple movies
 // from the DynamoDB table.
 func (runner PartiQLRunner) DeleteMovieBatch(ctx context.Context, movies []Movie) error {
@@ -727,13 +666,10 @@ func (runner PartiQLRunner) DeleteMovieBatch(ctx context.Context, movies []Movie
 	}
 	return err
 }
-
 ```
-
 Define a Movie struct that is used in this example.
 
-```go
-
+```
 import (
 	"archive/zip"
 	"bytes"
@@ -775,27 +711,17 @@ func (movie Movie) String() string {
 	return fmt.Sprintf("%v\n\tReleased: %v\n\tRating: %v\n\tPlot: %v\n",
 		movie.Title, movie.Year, movie.Info["rating"], movie.Info["plot"])
 }
-
 ```
++  For API details, see [BatchExecuteStatement](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb#Client.BatchExecuteStatement) in *AWS SDK for Go API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/dynamodb)
-in _AWS SDK for Go API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 Create a batch of items using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -819,13 +745,10 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
 Get a batch of items using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -856,13 +779,10 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
 Update a batch of items using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -889,13 +809,10 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
-
 Delete a batch of items using PartiQL.
 
-```javascript
-
+```
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 import {
@@ -924,25 +841,16 @@ export const main = async () => {
   console.log(response);
   return response;
 };
-
 ```
++  For API details, see [BatchExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchExecuteStatementCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchExecuteStatementCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-PHP
+------
+#### [ PHP ]
 
 **SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb).
-
-```php
-
+```
     public function getItemByPartiQLBatch(string $tableName, array $keys): Result
     {
         $statements = [];
@@ -994,25 +902,16 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
             ],
         ]);
     }
-
 ```
++  For API details, see [BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchExecuteStatement) in *AWS SDK for PHP API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchExecuteStatement)
-in _AWS SDK for PHP API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb).
-
-```python
-
+```
 class PartiQLBatchWrapper:
     """
     Encapsulates a DynamoDB resource to run PartiQL statements.
@@ -1060,27 +959,17 @@ class PartiQLBatchWrapper:
             raise
         else:
             return output
-
 ```
++  For API details, see [BatchExecuteStatement](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchExecuteStatement) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchExecuteStatement)
-in _AWS SDK for Python (Boto3) API Reference_.
-
-Ruby
+------
+#### [ Ruby ]
 
 **SDK for Ruby**
-
-###### Note
-
-There's more on GitHub. Find the complete example and learn how to set up and run in the
-[AWS Code\
-Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb).
-
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Read a batch of items using PartiQL.
 
-```ruby
-
+```
 class DynamoDBPartiQLBatch
   attr_reader :dynamo_resource, :table
 
@@ -1103,13 +992,10 @@ class DynamoDBPartiQLBatch
     end
     @dynamodb.client.batch_execute_statement({ statements: request_items })
   end
-
 ```
-
 Delete a batch of items using PartiQL.
 
-```ruby
-
+```
 class DynamoDBPartiQLBatch
   attr_reader :dynamo_resource, :table
 
@@ -1132,21 +1018,11 @@ class DynamoDBPartiQLBatch
     end
     @dynamodb.client.batch_execute_statement({ statements: request_items })
   end
-
 ```
++  For API details, see [BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchExecuteStatement) in *AWS SDK for Ruby API Reference*.
 
-- For API details, see
-[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchExecuteStatement)
-in _AWS SDK for Ruby API Reference_.
+------
 
-For a complete list of AWS SDK developer guides and code examples, see
-[Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
-This topic also includes information about getting started and details about previous SDK versions.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Actions
-
-BatchGetItem
+For a complete list of AWS SDK developer guides and code examples, see [Using DynamoDB with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
 
 All content copied from https://docs.aws.amazon.com/.

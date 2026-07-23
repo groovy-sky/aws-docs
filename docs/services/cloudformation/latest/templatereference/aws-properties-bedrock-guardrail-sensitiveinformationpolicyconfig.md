@@ -2,70 +2,53 @@
 title: "AWS::Bedrock::Guardrail SensitiveInformationPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Guardrail SensitiveInformationPolicyConfig
+<a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig"></a>
 
 Contains details about PII entities and regular expressions to configure for the guardrail.
 
 ## Syntax
+<a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "PiiEntitiesConfig" : [ PiiEntityConfig, ... ],
-  "RegexesConfig" : [ RegexConfig, ... ]
+  "[PiiEntitiesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-piientitiesconfig)" : {{[ PiiEntityConfig, ... ]}},
+  "[RegexesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-regexesconfig)" : {{[ RegexConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  PiiEntitiesConfig:
-    - PiiEntityConfig
-  RegexesConfig:
-    - RegexConfig
-
+```
+  [PiiEntitiesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-piientitiesconfig): {{
+    - PiiEntityConfig}}
+  [RegexesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-regexesconfig): {{
+    - RegexConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig-properties"></a>
 
-`PiiEntitiesConfig`
-
+`PiiEntitiesConfig`  <a name="cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-piientitiesconfig"></a>
 A list of PII entities to configure to the guardrail.
+*Required*: No
+*Type*: Array of [PiiEntityConfig](aws-properties-bedrock-guardrail-piientityconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PiiEntityConfig](aws-properties-bedrock-guardrail-piientityconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegexesConfig`
-
+`RegexesConfig`  <a name="cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-regexesconfig"></a>
 A list of regular expressions to configure to the guardrail.
-
-_Required_: No
-
-_Type_: Array of [RegexConfig](aws-properties-bedrock-guardrail-regexconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RegexConfig
-
-Tag
+*Required*: No
+*Type*: Array of [RegexConfig](aws-properties-bedrock-guardrail-regexconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,145 +2,118 @@
 title: "AWS::Personalize::DatasetGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::DatasetGroup
+<a name="aws-resource-personalize-datasetgroup"></a>
 
-A dataset group is a collection of related datasets (Item interactions,
-Users, Items, Actions, Action interactions). You create a dataset group by calling [CreateDatasetGroup](../../../personalize/latest/dg/api-createdatasetgroup.md). You then create a dataset and add it to a
-dataset group by calling [CreateDataset](../../../personalize/latest/dg/api-createdataset.md). The dataset group is used to create and train a
-solution by calling [CreateSolution](../../../personalize/latest/dg/api-createsolution.md). A dataset group can contain only one of each
-type of dataset.
+A dataset group is a collection of related datasets (Item interactions, Users, Items, Actions, Action interactions). You create a dataset group by calling [CreateDatasetGroup](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetGroup.html). You then create a dataset and add it to a dataset group by calling [CreateDataset](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDataset.html). The dataset group is used to create and train a solution by calling [CreateSolution](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateSolution.html). A dataset group can contain only one of each type of dataset.
 
-You can specify an AWS Key Management Service (KMS) key to encrypt the datasets in
-the group.
+You can specify an AWS Key Management Service (KMS) key to encrypt the datasets in the group.
 
 ## Syntax
+<a name="aws-resource-personalize-datasetgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-personalize-datasetgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Personalize::DatasetGroup",
   "Properties" : {
-      "Domain" : String,
-      "KmsKeyArn" : String,
-      "Name" : String,
-      "RoleArn" : String
+      "[Domain](#cfn-personalize-datasetgroup-domain)" : {{String}},
+      "[KmsKeyArn](#cfn-personalize-datasetgroup-kmskeyarn)" : {{String}},
+      "[Name](#cfn-personalize-datasetgroup-name)" : {{String}},
+      "[RoleArn](#cfn-personalize-datasetgroup-rolearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-personalize-datasetgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Personalize::DatasetGroup
 Properties:
-  Domain: String
-  KmsKeyArn: String
-  Name: String
-  RoleArn: String
-
+  [Domain](#cfn-personalize-datasetgroup-domain): {{String}}
+  [KmsKeyArn](#cfn-personalize-datasetgroup-kmskeyarn): {{String}}
+  [Name](#cfn-personalize-datasetgroup-name): {{String}}
+  [RoleArn](#cfn-personalize-datasetgroup-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-personalize-datasetgroup-properties"></a>
 
-`Domain`
-
+`Domain`  <a name="cfn-personalize-datasetgroup-domain"></a>
 The domain of a Domain dataset group.
+*Required*: No
+*Type*: String
+*Allowed values*: `ECOMMERCE | VIDEO_ON_DEMAND`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`KmsKeyArn`  <a name="cfn-personalize-datasetgroup-kmskeyarn"></a>
+The Amazon Resource Name (ARN) of the AWS Key Management Service (KMS) key used to encrypt the datasets.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws.*:kms:.*:[0-9]{12}:key/.*`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Allowed values_: `ECOMMERCE | VIDEO_ON_DEMAND`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KmsKeyArn`
-
-The Amazon Resource Name (ARN) of the AWS Key Management Service (KMS) key used to
-encrypt the datasets.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws.*:kms:.*:[0-9]{12}:key/.*`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-personalize-datasetgroup-name"></a>
 The name of the dataset group.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][a-zA-Z0-9\-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArn`
-
-The ARN of the AWS Identity and Access Management (IAM) role that has permissions to access
-the AWS Key Management Service (KMS) key. Supplying an IAM role is only valid when also
-specifying a KMS key.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:([a-z\d-]+):iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`RoleArn`  <a name="cfn-personalize-datasetgroup-rolearn"></a>
+The ARN of the AWS Identity and Access Management (IAM) role that has permissions to access the AWS Key Management Service (KMS) key. Supplying an IAM role is only valid when also specifying a KMS key.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:([a-z\d-]+):iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-personalize-datasetgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-personalize-datasetgroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the resource.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-personalize-datasetgroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DatasetGroupArn`
+####
+<a name="aws-resource-personalize-datasetgroup-return-values-fn--getatt-fn--getatt"></a>
 
+`DatasetGroupArn`  <a name="DatasetGroupArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the dataset group.
 
 ## Examples
+<a name="aws-resource-personalize-datasetgroup--examples"></a>
 
 ### Creating a dataset group
+<a name="aws-resource-personalize-datasetgroup--examples--Creating_a_dataset_group"></a>
 
 The following example creates an Amazon Personalize dataset group.
 
 #### JSON
+<a name="aws-resource-personalize-datasetgroup--examples--Creating_a_dataset_group--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -155,9 +128,9 @@ The following example creates an Amazon Personalize dataset group.
 ```
 
 #### YAML
+<a name="aws-resource-personalize-datasetgroup--examples--Creating_a_dataset_group--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyDatasetGroup:
@@ -165,11 +138,5 @@ Resources:
     Properties:
       Name: my-dataset-group-name
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSource
-
-AWS::Personalize::Schema
 
 All content copied from https://docs.aws.amazon.com/.

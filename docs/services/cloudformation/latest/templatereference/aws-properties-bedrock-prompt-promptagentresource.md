@@ -2,56 +2,43 @@
 title: "AWS::Bedrock::Prompt PromptAgentResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Prompt PromptAgentResource
+<a name="aws-properties-bedrock-prompt-promptagentresource"></a>
 
-Contains specifications for an Amazon Bedrock agent with which to use the prompt. For more information, see [Create a prompt using Prompt management](../../../bedrock/latest/userguide/prompt-management-create.md) and [Automate tasks in your application using conversational agents](../../../bedrock/latest/userguide/agents.md).
+Contains specifications for an Amazon Bedrock agent with which to use the prompt. For more information, see [Create a prompt using Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-create.html) and [Automate tasks in your application using conversational agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html).
 
 ## Syntax
+<a name="aws-properties-bedrock-prompt-promptagentresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-prompt-promptagentresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "AgentIdentifier" : String
+  "[AgentIdentifier](#cfn-bedrock-prompt-promptagentresource-agentidentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-prompt-promptagentresource-syntax.yaml"></a>
 
-```yaml
-
-  AgentIdentifier: String
-
+```
+  [AgentIdentifier](#cfn-bedrock-prompt-promptagentresource-agentidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-prompt-promptagentresource-properties"></a>
 
-`AgentIdentifier`
-
+`AgentIdentifier`  <a name="cfn-bedrock-prompt-promptagentresource-agentidentifier"></a>
 The ARN of the agent with which to use the prompt.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:agent-alias/[0-9a-zA-Z]{10}/[0-9a-zA-Z]{10}$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Message
-
-PromptGenAiResource
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:agent-alias/[0-9a-zA-Z]{10}/[0-9a-zA-Z]{10}$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

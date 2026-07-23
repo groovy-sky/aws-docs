@@ -2,92 +2,63 @@
 title: "AWS::Pipes::Pipe CapacityProviderStrategyItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe CapacityProviderStrategyItem
+<a name="aws-properties-pipes-pipe-capacityproviderstrategyitem"></a>
 
-The details of a capacity provider strategy. To learn more, see [CapacityProviderStrategyItem](../../../../reference/amazonecs/latest/apireference/api-capacityproviderstrategyitem.md) in the Amazon ECS API Reference.
+The details of a capacity provider strategy. To learn more, see [CapacityProviderStrategyItem](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CapacityProviderStrategyItem.html) in the Amazon ECS API Reference.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-capacityproviderstrategyitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-capacityproviderstrategyitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Base" : Integer,
-  "CapacityProvider" : String,
-  "Weight" : Integer
+  "[Base](#cfn-pipes-pipe-capacityproviderstrategyitem-base)" : {{Integer}},
+  "[CapacityProvider](#cfn-pipes-pipe-capacityproviderstrategyitem-capacityprovider)" : {{String}},
+  "[Weight](#cfn-pipes-pipe-capacityproviderstrategyitem-weight)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-capacityproviderstrategyitem-syntax.yaml"></a>
 
-```yaml
-
-  Base: Integer
-  CapacityProvider: String
-  Weight: Integer
-
+```
+  [Base](#cfn-pipes-pipe-capacityproviderstrategyitem-base): {{Integer}}
+  [CapacityProvider](#cfn-pipes-pipe-capacityproviderstrategyitem-capacityprovider): {{String}}
+  [Weight](#cfn-pipes-pipe-capacityproviderstrategyitem-weight): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-capacityproviderstrategyitem-properties"></a>
 
-`Base`
+`Base`  <a name="cfn-pipes-pipe-capacityproviderstrategyitem-base"></a>
+The base value designates how many tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. If no value is specified, the default value of 0 is used.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The base value designates how many tasks, at a minimum, to run on the specified capacity
-provider. Only one capacity provider in a capacity provider strategy can have a base
-defined. If no value is specified, the default value of 0 is used.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CapacityProvider`
-
+`CapacityProvider`  <a name="cfn-pipes-pipe-capacityproviderstrategyitem-capacityprovider"></a>
 The short name of the capacity provider.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
-The weight value designates the relative percentage of the total number of tasks
-launched that should use the specified capacity provider. The weight value is taken into
-consideration after the base value, if defined, is satisfied.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BatchRetryStrategy
-
-CloudwatchLogsLogDestination
+`Weight`  <a name="cfn-pipes-pipe-capacityproviderstrategyitem-weight"></a>
+The weight value designates the relative percentage of the total number of tasks launched that should use the specified capacity provider. The weight value is taken into consideration after the base value, if defined, is satisfied.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

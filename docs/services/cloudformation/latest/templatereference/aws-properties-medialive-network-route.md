@@ -2,64 +2,49 @@
 title: "AWS::MediaLive::Network Route"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Network Route
+<a name="aws-properties-medialive-network-route"></a>
 
-The `Route` property type specifies Property description not available. for an [AWS::MediaLive::Network](aws-resource-medialive-network.md).
+A route for the network.
 
 ## Syntax
+<a name="aws-properties-medialive-network-route-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-medialive-network-route-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cidr" : String,
-  "Gateway" : String
+  "[Cidr](#cfn-medialive-network-route-cidr)" : {{String}},
+  "[Gateway](#cfn-medialive-network-route-gateway)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-medialive-network-route-syntax.yaml"></a>
 
-```yaml
-
-  Cidr: String
-  Gateway: String
-
+```
+  [Cidr](#cfn-medialive-network-route-cidr): {{String}}
+  [Gateway](#cfn-medialive-network-route-gateway): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-medialive-network-route-properties"></a>
 
-`Cidr`
+`Cidr`  <a name="cfn-medialive-network-route-cidr"></a>
+The IP address CIDR for the route.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Gateway`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IpPool
-
-Tags
+`Gateway`  <a name="cfn-medialive-network-route-gateway"></a>
+IP address for the route packet paths.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

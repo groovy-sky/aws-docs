@@ -2,65 +2,54 @@
 title: "AWS::ECR::PullTimeUpdateExclusion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::PullTimeUpdateExclusion
+<a name="aws-resource-ecr-pulltimeupdateexclusion"></a>
 
-The `AWS::ECR::PullTimeUpdateExclusion` resource Property description not available. for ECR.
+<a name="aws-resource-ecr-pulltimeupdateexclusion-description"></a>The `AWS::ECR::PullTimeUpdateExclusion` resource Property description not available. for ECR.
 
 ## Syntax
+<a name="aws-resource-ecr-pulltimeupdateexclusion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ecr-pulltimeupdateexclusion-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ECR::PullTimeUpdateExclusion",
   "Properties" : {
-      "PrincipalArn" : String
+      "[PrincipalArn](#cfn-ecr-pulltimeupdateexclusion-principalarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ecr-pulltimeupdateexclusion-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ECR::PullTimeUpdateExclusion
 Properties:
-  PrincipalArn: String
-
+  [PrincipalArn](#cfn-ecr-pulltimeupdateexclusion-principalarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ecr-pulltimeupdateexclusion-properties"></a>
 
-`PrincipalArn`
-
+`PrincipalArn`  <a name="cfn-ecr-pulltimeupdateexclusion-principalarn"></a>
 The ARN of the IAM principal to remove from the pull time update exclusion list.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[a-z]+)*:iam::[0-9]{12}:(role|user)/[\w+=,.@-]+(/[\w+=,.@-]+)*$`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[a-z]+)*:iam::[0-9]{12}:(role|user)/[\w+=,.@-]+(/[\w+=,.@-]+)*$`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ecr-pulltimeupdateexclusion-return-values"></a>
 
 ### Ref
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ECR::PullThroughCacheRule
-
-AWS::ECR::RegistryPolicy
+<a name="aws-resource-ecr-pulltimeupdateexclusion-return-values-ref"></a>
 
 All content copied from https://docs.aws.amazon.com/.

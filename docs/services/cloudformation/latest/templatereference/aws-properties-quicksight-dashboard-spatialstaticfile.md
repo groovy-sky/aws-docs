@@ -2,71 +2,53 @@
 title: "AWS::QuickSight::Dashboard SpatialStaticFile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SpatialStaticFile
+<a name="aws-properties-quicksight-dashboard-spatialstaticfile"></a>
 
 A static file that contains the geospatial data.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-spatialstaticfile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-spatialstaticfile-syntax.json"></a>
 
-```json
-
+```
 {
-  "Source" : StaticFileSource,
-  "StaticFileId" : String
+  "[Source](#cfn-quicksight-dashboard-spatialstaticfile-source)" : {{StaticFileSource}},
+  "[StaticFileId](#cfn-quicksight-dashboard-spatialstaticfile-staticfileid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-spatialstaticfile-syntax.yaml"></a>
 
-```yaml
-
-  Source:
-    StaticFileSource
-  StaticFileId: String
-
+```
+  [Source](#cfn-quicksight-dashboard-spatialstaticfile-source): {{
+    StaticFileSource}}
+  [StaticFileId](#cfn-quicksight-dashboard-spatialstaticfile-staticfileid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-spatialstaticfile-properties"></a>
 
-`Source`
-
+`Source`  <a name="cfn-quicksight-dashboard-spatialstaticfile-source"></a>
 The source of the spatial static file.
+*Required*: No
+*Type*: [StaticFileSource](aws-properties-quicksight-dashboard-staticfilesource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StaticFileSource](aws-properties-quicksight-dashboard-staticfilesource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticFileId`
-
+`StaticFileId`  <a name="cfn-quicksight-dashboard-spatialstaticfile-staticfileid"></a>
 The ID of the spatial static file.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Spacing
-
-StaticFile
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

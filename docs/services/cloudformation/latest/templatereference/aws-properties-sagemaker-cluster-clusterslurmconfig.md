@@ -2,72 +2,53 @@
 title: "AWS::SageMaker::Cluster ClusterSlurmConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Cluster ClusterSlurmConfig
+<a name="aws-properties-sagemaker-cluster-clusterslurmconfig"></a>
 
 The Slurm configuration for an instance group in a SageMaker HyperPod cluster.
 
 ## Syntax
+<a name="aws-properties-sagemaker-cluster-clusterslurmconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-cluster-clusterslurmconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "NodeType" : String,
-  "PartitionNames" : [ String, ... ]
+  "[NodeType](#cfn-sagemaker-cluster-clusterslurmconfig-nodetype)" : {{String}},
+  "[PartitionNames](#cfn-sagemaker-cluster-clusterslurmconfig-partitionnames)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-cluster-clusterslurmconfig-syntax.yaml"></a>
 
-```yaml
-
-  NodeType: String
-  PartitionNames:
-    - String
-
+```
+  [NodeType](#cfn-sagemaker-cluster-clusterslurmconfig-nodetype): {{String}}
+  [PartitionNames](#cfn-sagemaker-cluster-clusterslurmconfig-partitionnames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-cluster-clusterslurmconfig-properties"></a>
 
-`NodeType`
+`NodeType`  <a name="cfn-sagemaker-cluster-clusterslurmconfig-nodetype"></a>
+The type of Slurm node for the instance group. Valid values are `Controller`, `Worker`, and `Login`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Controller | Login | Compute`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The type of Slurm node for the instance group. Valid values are
-`Controller`, `Worker`, and `Login`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Controller | Login | Compute`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PartitionNames`
-
+`PartitionNames`  <a name="cfn-sagemaker-cluster-clusterslurmconfig-partitionnames"></a>
 The list of Slurm partition names that the instance group belongs to.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0 | 0`
-
-_Maximum_: `1024 | 1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClusterRestrictedInstanceGroup
-
-DeploymentConfig
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0 | 0`
+*Maximum*: `1024 | 1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

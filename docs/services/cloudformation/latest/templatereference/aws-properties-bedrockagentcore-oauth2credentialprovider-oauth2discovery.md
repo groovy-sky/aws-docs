@@ -2,67 +2,51 @@
 title: "AWS::BedrockAgentCore::OAuth2CredentialProvider Oauth2Discovery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OAuth2CredentialProvider Oauth2Discovery
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery"></a>
 
 Contains the discovery information for an OAuth2 provider.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationServerMetadata" : Oauth2AuthorizationServerMetadata,
-  "DiscoveryUrl" : String
+  "[AuthorizationServerMetadata](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-authorizationservermetadata)" : {{Oauth2AuthorizationServerMetadata}},
+  "[DiscoveryUrl](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-discoveryurl)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationServerMetadata:
-    Oauth2AuthorizationServerMetadata
-  DiscoveryUrl: String
-
+```
+  [AuthorizationServerMetadata](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-authorizationservermetadata): {{
+    Oauth2AuthorizationServerMetadata}}
+  [DiscoveryUrl](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-discoveryurl): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery-properties"></a>
 
-`AuthorizationServerMetadata`
-
+`AuthorizationServerMetadata`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-authorizationservermetadata"></a>
 The authorization server metadata for the OAuth2 provider.
+*Required*: No
+*Type*: [Oauth2AuthorizationServerMetadata](aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2authorizationservermetadata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Oauth2AuthorizationServerMetadata](aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2authorizationservermetadata.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DiscoveryUrl`
-
+`DiscoveryUrl`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-discoveryurl"></a>
 The discovery URL for the OAuth2 provider.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.+/\.well-known/openid-configuration$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Oauth2AuthorizationServerMetadata
-
-Oauth2ProviderConfigInput
+*Required*: No
+*Type*: String
+*Pattern*: `^.+/\.well-known/openid-configuration$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

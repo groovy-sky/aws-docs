@@ -2,1291 +2,851 @@
 title: "AWS::DataBrew::Recipe RecipeParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Recipe RecipeParameters
+<a name="aws-properties-databrew-recipe-recipeparameters"></a>
 
-Parameters that are used as inputs for various recipe actions. The parameters are
-specific to the context in which they're used.
+Parameters that are used as inputs for various recipe actions. The parameters are specific to the context in which they're used.
 
 ## Syntax
+<a name="aws-properties-databrew-recipe-recipeparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-recipe-recipeparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregateFunction" : String,
-  "Base" : String,
-  "CaseStatement" : String,
-  "CategoryMap" : String,
-  "CharsToRemove" : String,
-  "CollapseConsecutiveWhitespace" : String,
-  "ColumnDataType" : String,
-  "ColumnRange" : String,
-  "Count" : String,
-  "CustomCharacters" : String,
-  "CustomStopWords" : String,
-  "CustomValue" : String,
-  "DatasetsColumns" : String,
-  "DateAddValue" : String,
-  "DateTimeFormat" : String,
-  "DateTimeParameters" : String,
-  "DeleteOtherRows" : String,
-  "Delimiter" : String,
-  "EndPattern" : String,
-  "EndPosition" : String,
-  "EndValue" : String,
-  "ExpandContractions" : String,
-  "Exponent" : String,
-  "FalseString" : String,
-  "GroupByAggFunctionOptions" : String,
-  "GroupByColumns" : String,
-  "HiddenColumns" : String,
-  "IgnoreCase" : String,
-  "IncludeInSplit" : String,
-  "Input" : Input,
-  "Interval" : String,
-  "IsText" : String,
-  "JoinKeys" : String,
-  "JoinType" : String,
-  "LeftColumns" : String,
-  "Limit" : String,
-  "LowerBound" : String,
-  "MapType" : String,
-  "ModeType" : String,
-  "MultiLine" : Boolean,
-  "NumRows" : String,
-  "NumRowsAfter" : String,
-  "NumRowsBefore" : String,
-  "OrderByColumn" : String,
-  "OrderByColumns" : String,
-  "Other" : String,
-  "Pattern" : String,
-  "PatternOption1" : String,
-  "PatternOption2" : String,
-  "PatternOptions" : String,
-  "Period" : String,
-  "Position" : String,
-  "RemoveAllPunctuation" : String,
-  "RemoveAllQuotes" : String,
-  "RemoveAllWhitespace" : String,
-  "RemoveCustomCharacters" : String,
-  "RemoveCustomValue" : String,
-  "RemoveLeadingAndTrailingPunctuation" : String,
-  "RemoveLeadingAndTrailingQuotes" : String,
-  "RemoveLeadingAndTrailingWhitespace" : String,
-  "RemoveLetters" : String,
-  "RemoveNumbers" : String,
-  "RemoveSourceColumn" : String,
-  "RemoveSpecialCharacters" : String,
-  "RightColumns" : String,
-  "SampleSize" : String,
-  "SampleType" : String,
-  "SecondaryInputs" : [ SecondaryInput, ... ],
-  "SecondInput" : String,
-  "SheetIndexes" : [ Integer, ... ],
-  "SheetNames" : [ String, ... ],
-  "SourceColumn" : String,
-  "SourceColumn1" : String,
-  "SourceColumn2" : String,
-  "SourceColumns" : String,
-  "StartColumnIndex" : String,
-  "StartPattern" : String,
-  "StartPosition" : String,
-  "StartValue" : String,
-  "StemmingMode" : String,
-  "StepCount" : String,
-  "StepIndex" : String,
-  "StopWordsMode" : String,
-  "Strategy" : String,
-  "TargetColumn" : String,
-  "TargetColumnNames" : String,
-  "TargetDateFormat" : String,
-  "TargetIndex" : String,
-  "TimeZone" : String,
-  "TokenizerPattern" : String,
-  "TrueString" : String,
-  "UdfLang" : String,
-  "Units" : String,
-  "UnpivotColumn" : String,
-  "UpperBound" : String,
-  "UseNewDataFrame" : String,
-  "Value" : String,
-  "Value1" : String,
-  "Value2" : String,
-  "ValueColumn" : String,
-  "ViewFrame" : String
+  "[AggregateFunction](#cfn-databrew-recipe-recipeparameters-aggregatefunction)" : {{String}},
+  "[Base](#cfn-databrew-recipe-recipeparameters-base)" : {{String}},
+  "[CaseStatement](#cfn-databrew-recipe-recipeparameters-casestatement)" : {{String}},
+  "[CategoryMap](#cfn-databrew-recipe-recipeparameters-categorymap)" : {{String}},
+  "[CharsToRemove](#cfn-databrew-recipe-recipeparameters-charstoremove)" : {{String}},
+  "[CollapseConsecutiveWhitespace](#cfn-databrew-recipe-recipeparameters-collapseconsecutivewhitespace)" : {{String}},
+  "[ColumnDataType](#cfn-databrew-recipe-recipeparameters-columndatatype)" : {{String}},
+  "[ColumnRange](#cfn-databrew-recipe-recipeparameters-columnrange)" : {{String}},
+  "[Count](#cfn-databrew-recipe-recipeparameters-count)" : {{String}},
+  "[CustomCharacters](#cfn-databrew-recipe-recipeparameters-customcharacters)" : {{String}},
+  "[CustomStopWords](#cfn-databrew-recipe-recipeparameters-customstopwords)" : {{String}},
+  "[CustomValue](#cfn-databrew-recipe-recipeparameters-customvalue)" : {{String}},
+  "[DatasetsColumns](#cfn-databrew-recipe-recipeparameters-datasetscolumns)" : {{String}},
+  "[DateAddValue](#cfn-databrew-recipe-recipeparameters-dateaddvalue)" : {{String}},
+  "[DateTimeFormat](#cfn-databrew-recipe-recipeparameters-datetimeformat)" : {{String}},
+  "[DateTimeParameters](#cfn-databrew-recipe-recipeparameters-datetimeparameters)" : {{String}},
+  "[DeleteOtherRows](#cfn-databrew-recipe-recipeparameters-deleteotherrows)" : {{String}},
+  "[Delimiter](#cfn-databrew-recipe-recipeparameters-delimiter)" : {{String}},
+  "[EndPattern](#cfn-databrew-recipe-recipeparameters-endpattern)" : {{String}},
+  "[EndPosition](#cfn-databrew-recipe-recipeparameters-endposition)" : {{String}},
+  "[EndValue](#cfn-databrew-recipe-recipeparameters-endvalue)" : {{String}},
+  "[ExpandContractions](#cfn-databrew-recipe-recipeparameters-expandcontractions)" : {{String}},
+  "[Exponent](#cfn-databrew-recipe-recipeparameters-exponent)" : {{String}},
+  "[FalseString](#cfn-databrew-recipe-recipeparameters-falsestring)" : {{String}},
+  "[GroupByAggFunctionOptions](#cfn-databrew-recipe-recipeparameters-groupbyaggfunctionoptions)" : {{String}},
+  "[GroupByColumns](#cfn-databrew-recipe-recipeparameters-groupbycolumns)" : {{String}},
+  "[HiddenColumns](#cfn-databrew-recipe-recipeparameters-hiddencolumns)" : {{String}},
+  "[IgnoreCase](#cfn-databrew-recipe-recipeparameters-ignorecase)" : {{String}},
+  "[IncludeInSplit](#cfn-databrew-recipe-recipeparameters-includeinsplit)" : {{String}},
+  "[Input](#cfn-databrew-recipe-recipeparameters-input)" : {{Input}},
+  "[Interval](#cfn-databrew-recipe-recipeparameters-interval)" : {{String}},
+  "[IsText](#cfn-databrew-recipe-recipeparameters-istext)" : {{String}},
+  "[JoinKeys](#cfn-databrew-recipe-recipeparameters-joinkeys)" : {{String}},
+  "[JoinType](#cfn-databrew-recipe-recipeparameters-jointype)" : {{String}},
+  "[LeftColumns](#cfn-databrew-recipe-recipeparameters-leftcolumns)" : {{String}},
+  "[Limit](#cfn-databrew-recipe-recipeparameters-limit)" : {{String}},
+  "[LowerBound](#cfn-databrew-recipe-recipeparameters-lowerbound)" : {{String}},
+  "[MapType](#cfn-databrew-recipe-recipeparameters-maptype)" : {{String}},
+  "[ModeType](#cfn-databrew-recipe-recipeparameters-modetype)" : {{String}},
+  "[MultiLine](#cfn-databrew-recipe-recipeparameters-multiline)" : {{Boolean}},
+  "[NumRows](#cfn-databrew-recipe-recipeparameters-numrows)" : {{String}},
+  "[NumRowsAfter](#cfn-databrew-recipe-recipeparameters-numrowsafter)" : {{String}},
+  "[NumRowsBefore](#cfn-databrew-recipe-recipeparameters-numrowsbefore)" : {{String}},
+  "[OrderByColumn](#cfn-databrew-recipe-recipeparameters-orderbycolumn)" : {{String}},
+  "[OrderByColumns](#cfn-databrew-recipe-recipeparameters-orderbycolumns)" : {{String}},
+  "[Other](#cfn-databrew-recipe-recipeparameters-other)" : {{String}},
+  "[Pattern](#cfn-databrew-recipe-recipeparameters-pattern)" : {{String}},
+  "[PatternOption1](#cfn-databrew-recipe-recipeparameters-patternoption1)" : {{String}},
+  "[PatternOption2](#cfn-databrew-recipe-recipeparameters-patternoption2)" : {{String}},
+  "[PatternOptions](#cfn-databrew-recipe-recipeparameters-patternoptions)" : {{String}},
+  "[Period](#cfn-databrew-recipe-recipeparameters-period)" : {{String}},
+  "[Position](#cfn-databrew-recipe-recipeparameters-position)" : {{String}},
+  "[RemoveAllPunctuation](#cfn-databrew-recipe-recipeparameters-removeallpunctuation)" : {{String}},
+  "[RemoveAllQuotes](#cfn-databrew-recipe-recipeparameters-removeallquotes)" : {{String}},
+  "[RemoveAllWhitespace](#cfn-databrew-recipe-recipeparameters-removeallwhitespace)" : {{String}},
+  "[RemoveCustomCharacters](#cfn-databrew-recipe-recipeparameters-removecustomcharacters)" : {{String}},
+  "[RemoveCustomValue](#cfn-databrew-recipe-recipeparameters-removecustomvalue)" : {{String}},
+  "[RemoveLeadingAndTrailingPunctuation](#cfn-databrew-recipe-recipeparameters-removeleadingandtrailingpunctuation)" : {{String}},
+  "[RemoveLeadingAndTrailingQuotes](#cfn-databrew-recipe-recipeparameters-removeleadingandtrailingquotes)" : {{String}},
+  "[RemoveLeadingAndTrailingWhitespace](#cfn-databrew-recipe-recipeparameters-removeleadingandtrailingwhitespace)" : {{String}},
+  "[RemoveLetters](#cfn-databrew-recipe-recipeparameters-removeletters)" : {{String}},
+  "[RemoveNumbers](#cfn-databrew-recipe-recipeparameters-removenumbers)" : {{String}},
+  "[RemoveSourceColumn](#cfn-databrew-recipe-recipeparameters-removesourcecolumn)" : {{String}},
+  "[RemoveSpecialCharacters](#cfn-databrew-recipe-recipeparameters-removespecialcharacters)" : {{String}},
+  "[RightColumns](#cfn-databrew-recipe-recipeparameters-rightcolumns)" : {{String}},
+  "[SampleSize](#cfn-databrew-recipe-recipeparameters-samplesize)" : {{String}},
+  "[SampleType](#cfn-databrew-recipe-recipeparameters-sampletype)" : {{String}},
+  "[SecondaryInputs](#cfn-databrew-recipe-recipeparameters-secondaryinputs)" : {{[ SecondaryInput, ... ]}},
+  "[SecondInput](#cfn-databrew-recipe-recipeparameters-secondinput)" : {{String}},
+  "[SheetIndexes](#cfn-databrew-recipe-recipeparameters-sheetindexes)" : {{[ Integer, ... ]}},
+  "[SheetNames](#cfn-databrew-recipe-recipeparameters-sheetnames)" : {{[ String, ... ]}},
+  "[SourceColumn](#cfn-databrew-recipe-recipeparameters-sourcecolumn)" : {{String}},
+  "[SourceColumn1](#cfn-databrew-recipe-recipeparameters-sourcecolumn1)" : {{String}},
+  "[SourceColumn2](#cfn-databrew-recipe-recipeparameters-sourcecolumn2)" : {{String}},
+  "[SourceColumns](#cfn-databrew-recipe-recipeparameters-sourcecolumns)" : {{String}},
+  "[StartColumnIndex](#cfn-databrew-recipe-recipeparameters-startcolumnindex)" : {{String}},
+  "[StartPattern](#cfn-databrew-recipe-recipeparameters-startpattern)" : {{String}},
+  "[StartPosition](#cfn-databrew-recipe-recipeparameters-startposition)" : {{String}},
+  "[StartValue](#cfn-databrew-recipe-recipeparameters-startvalue)" : {{String}},
+  "[StemmingMode](#cfn-databrew-recipe-recipeparameters-stemmingmode)" : {{String}},
+  "[StepCount](#cfn-databrew-recipe-recipeparameters-stepcount)" : {{String}},
+  "[StepIndex](#cfn-databrew-recipe-recipeparameters-stepindex)" : {{String}},
+  "[StopWordsMode](#cfn-databrew-recipe-recipeparameters-stopwordsmode)" : {{String}},
+  "[Strategy](#cfn-databrew-recipe-recipeparameters-strategy)" : {{String}},
+  "[TargetColumn](#cfn-databrew-recipe-recipeparameters-targetcolumn)" : {{String}},
+  "[TargetColumnNames](#cfn-databrew-recipe-recipeparameters-targetcolumnnames)" : {{String}},
+  "[TargetDateFormat](#cfn-databrew-recipe-recipeparameters-targetdateformat)" : {{String}},
+  "[TargetIndex](#cfn-databrew-recipe-recipeparameters-targetindex)" : {{String}},
+  "[TimeZone](#cfn-databrew-recipe-recipeparameters-timezone)" : {{String}},
+  "[TokenizerPattern](#cfn-databrew-recipe-recipeparameters-tokenizerpattern)" : {{String}},
+  "[TrueString](#cfn-databrew-recipe-recipeparameters-truestring)" : {{String}},
+  "[UdfLang](#cfn-databrew-recipe-recipeparameters-udflang)" : {{String}},
+  "[Units](#cfn-databrew-recipe-recipeparameters-units)" : {{String}},
+  "[UnpivotColumn](#cfn-databrew-recipe-recipeparameters-unpivotcolumn)" : {{String}},
+  "[UpperBound](#cfn-databrew-recipe-recipeparameters-upperbound)" : {{String}},
+  "[UseNewDataFrame](#cfn-databrew-recipe-recipeparameters-usenewdataframe)" : {{String}},
+  "[Value](#cfn-databrew-recipe-recipeparameters-value)" : {{String}},
+  "[Value1](#cfn-databrew-recipe-recipeparameters-value1)" : {{String}},
+  "[Value2](#cfn-databrew-recipe-recipeparameters-value2)" : {{String}},
+  "[ValueColumn](#cfn-databrew-recipe-recipeparameters-valuecolumn)" : {{String}},
+  "[ViewFrame](#cfn-databrew-recipe-recipeparameters-viewframe)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-recipe-recipeparameters-syntax.yaml"></a>
 
-```yaml
-
-  AggregateFunction: String
-  Base: String
-  CaseStatement: String
-  CategoryMap: String
-  CharsToRemove: String
-  CollapseConsecutiveWhitespace: String
-  ColumnDataType: String
-  ColumnRange: String
-  Count: String
-  CustomCharacters: String
-  CustomStopWords: String
-  CustomValue: String
-  DatasetsColumns: String
-  DateAddValue: String
-  DateTimeFormat: String
-  DateTimeParameters: String
-  DeleteOtherRows: String
-  Delimiter: String
-  EndPattern: String
-  EndPosition: String
-  EndValue: String
-  ExpandContractions: String
-  Exponent: String
-  FalseString:
-    String
-  GroupByAggFunctionOptions: String
-  GroupByColumns: String
-  HiddenColumns: String
-  IgnoreCase: String
-  IncludeInSplit: String
-  Input:
-    Input
-  Interval: String
-  IsText: String
-  JoinKeys: String
-  JoinType: String
-  LeftColumns: String
-  Limit: String
-  LowerBound: String
-  MapType: String
-  ModeType: String
-  MultiLine: Boolean
-  NumRows: String
-  NumRowsAfter: String
-  NumRowsBefore: String
-  OrderByColumn: String
-  OrderByColumns: String
-  Other: String
-  Pattern: String
-  PatternOption1: String
-  PatternOption2: String
-  PatternOptions: String
-  Period: String
-  Position: String
-  RemoveAllPunctuation: String
-  RemoveAllQuotes: String
-  RemoveAllWhitespace: String
-  RemoveCustomCharacters: String
-  RemoveCustomValue: String
-  RemoveLeadingAndTrailingPunctuation: String
-  RemoveLeadingAndTrailingQuotes: String
-  RemoveLeadingAndTrailingWhitespace: String
-  RemoveLetters: String
-  RemoveNumbers: String
-  RemoveSourceColumn: String
-  RemoveSpecialCharacters: String
-  RightColumns: String
-  SampleSize: String
-  SampleType: String
-  SecondaryInputs:
-    - SecondaryInput
-  SecondInput: String
-  SheetIndexes:
-    - Integer
-  SheetNames:
-    - String
-  SourceColumn: String
-  SourceColumn1: String
-  SourceColumn2: String
-  SourceColumns: String
-  StartColumnIndex: String
-  StartPattern: String
-  StartPosition: String
-  StartValue: String
-  StemmingMode: String
-  StepCount: String
-  StepIndex: String
-  StopWordsMode: String
-  Strategy: String
-  TargetColumn: String
-  TargetColumnNames: String
-  TargetDateFormat: String
-  TargetIndex: String
-  TimeZone: String
-  TokenizerPattern: String
-  TrueString:
-    String
-  UdfLang: String
-  Units: String
-  UnpivotColumn: String
-  UpperBound: String
-  UseNewDataFrame: String
-  Value: String
-  Value1: String
-  Value2: String
-  ValueColumn: String
-  ViewFrame: String
-
+```
+  [AggregateFunction](#cfn-databrew-recipe-recipeparameters-aggregatefunction): {{String}}
+  [Base](#cfn-databrew-recipe-recipeparameters-base): {{String}}
+  [CaseStatement](#cfn-databrew-recipe-recipeparameters-casestatement): {{String}}
+  [CategoryMap](#cfn-databrew-recipe-recipeparameters-categorymap): {{String}}
+  [CharsToRemove](#cfn-databrew-recipe-recipeparameters-charstoremove): {{String}}
+  [CollapseConsecutiveWhitespace](#cfn-databrew-recipe-recipeparameters-collapseconsecutivewhitespace): {{String}}
+  [ColumnDataType](#cfn-databrew-recipe-recipeparameters-columndatatype): {{String}}
+  [ColumnRange](#cfn-databrew-recipe-recipeparameters-columnrange): {{String}}
+  [Count](#cfn-databrew-recipe-recipeparameters-count): {{String}}
+  [CustomCharacters](#cfn-databrew-recipe-recipeparameters-customcharacters): {{String}}
+  [CustomStopWords](#cfn-databrew-recipe-recipeparameters-customstopwords): {{String}}
+  [CustomValue](#cfn-databrew-recipe-recipeparameters-customvalue): {{String}}
+  [DatasetsColumns](#cfn-databrew-recipe-recipeparameters-datasetscolumns): {{String}}
+  [DateAddValue](#cfn-databrew-recipe-recipeparameters-dateaddvalue): {{String}}
+  [DateTimeFormat](#cfn-databrew-recipe-recipeparameters-datetimeformat): {{String}}
+  [DateTimeParameters](#cfn-databrew-recipe-recipeparameters-datetimeparameters): {{String}}
+  [DeleteOtherRows](#cfn-databrew-recipe-recipeparameters-deleteotherrows): {{String}}
+  [Delimiter](#cfn-databrew-recipe-recipeparameters-delimiter): {{String}}
+  [EndPattern](#cfn-databrew-recipe-recipeparameters-endpattern): {{String}}
+  [EndPosition](#cfn-databrew-recipe-recipeparameters-endposition): {{String}}
+  [EndValue](#cfn-databrew-recipe-recipeparameters-endvalue): {{String}}
+  [ExpandContractions](#cfn-databrew-recipe-recipeparameters-expandcontractions): {{String}}
+  [Exponent](#cfn-databrew-recipe-recipeparameters-exponent): {{String}}
+  [FalseString](#cfn-databrew-recipe-recipeparameters-falsestring): {{
+    String}}
+  [GroupByAggFunctionOptions](#cfn-databrew-recipe-recipeparameters-groupbyaggfunctionoptions): {{String}}
+  [GroupByColumns](#cfn-databrew-recipe-recipeparameters-groupbycolumns): {{String}}
+  [HiddenColumns](#cfn-databrew-recipe-recipeparameters-hiddencolumns): {{String}}
+  [IgnoreCase](#cfn-databrew-recipe-recipeparameters-ignorecase): {{String}}
+  [IncludeInSplit](#cfn-databrew-recipe-recipeparameters-includeinsplit): {{String}}
+  [Input](#cfn-databrew-recipe-recipeparameters-input): {{
+    Input}}
+  [Interval](#cfn-databrew-recipe-recipeparameters-interval): {{String}}
+  [IsText](#cfn-databrew-recipe-recipeparameters-istext): {{String}}
+  [JoinKeys](#cfn-databrew-recipe-recipeparameters-joinkeys): {{String}}
+  [JoinType](#cfn-databrew-recipe-recipeparameters-jointype): {{String}}
+  [LeftColumns](#cfn-databrew-recipe-recipeparameters-leftcolumns): {{String}}
+  [Limit](#cfn-databrew-recipe-recipeparameters-limit): {{String}}
+  [LowerBound](#cfn-databrew-recipe-recipeparameters-lowerbound): {{String}}
+  [MapType](#cfn-databrew-recipe-recipeparameters-maptype): {{String}}
+  [ModeType](#cfn-databrew-recipe-recipeparameters-modetype): {{String}}
+  [MultiLine](#cfn-databrew-recipe-recipeparameters-multiline): {{Boolean}}
+  [NumRows](#cfn-databrew-recipe-recipeparameters-numrows): {{String}}
+  [NumRowsAfter](#cfn-databrew-recipe-recipeparameters-numrowsafter): {{String}}
+  [NumRowsBefore](#cfn-databrew-recipe-recipeparameters-numrowsbefore): {{String}}
+  [OrderByColumn](#cfn-databrew-recipe-recipeparameters-orderbycolumn): {{String}}
+  [OrderByColumns](#cfn-databrew-recipe-recipeparameters-orderbycolumns): {{String}}
+  [Other](#cfn-databrew-recipe-recipeparameters-other): {{String}}
+  [Pattern](#cfn-databrew-recipe-recipeparameters-pattern): {{String}}
+  [PatternOption1](#cfn-databrew-recipe-recipeparameters-patternoption1): {{String}}
+  [PatternOption2](#cfn-databrew-recipe-recipeparameters-patternoption2): {{String}}
+  [PatternOptions](#cfn-databrew-recipe-recipeparameters-patternoptions): {{String}}
+  [Period](#cfn-databrew-recipe-recipeparameters-period): {{String}}
+  [Position](#cfn-databrew-recipe-recipeparameters-position): {{String}}
+  [RemoveAllPunctuation](#cfn-databrew-recipe-recipeparameters-removeallpunctuation): {{String}}
+  [RemoveAllQuotes](#cfn-databrew-recipe-recipeparameters-removeallquotes): {{String}}
+  [RemoveAllWhitespace](#cfn-databrew-recipe-recipeparameters-removeallwhitespace): {{String}}
+  [RemoveCustomCharacters](#cfn-databrew-recipe-recipeparameters-removecustomcharacters): {{String}}
+  [RemoveCustomValue](#cfn-databrew-recipe-recipeparameters-removecustomvalue): {{String}}
+  [RemoveLeadingAndTrailingPunctuation](#cfn-databrew-recipe-recipeparameters-removeleadingandtrailingpunctuation): {{String}}
+  [RemoveLeadingAndTrailingQuotes](#cfn-databrew-recipe-recipeparameters-removeleadingandtrailingquotes): {{String}}
+  [RemoveLeadingAndTrailingWhitespace](#cfn-databrew-recipe-recipeparameters-removeleadingandtrailingwhitespace): {{String}}
+  [RemoveLetters](#cfn-databrew-recipe-recipeparameters-removeletters): {{String}}
+  [RemoveNumbers](#cfn-databrew-recipe-recipeparameters-removenumbers): {{String}}
+  [RemoveSourceColumn](#cfn-databrew-recipe-recipeparameters-removesourcecolumn): {{String}}
+  [RemoveSpecialCharacters](#cfn-databrew-recipe-recipeparameters-removespecialcharacters): {{String}}
+  [RightColumns](#cfn-databrew-recipe-recipeparameters-rightcolumns): {{String}}
+  [SampleSize](#cfn-databrew-recipe-recipeparameters-samplesize): {{String}}
+  [SampleType](#cfn-databrew-recipe-recipeparameters-sampletype): {{String}}
+  [SecondaryInputs](#cfn-databrew-recipe-recipeparameters-secondaryinputs): {{
+    - SecondaryInput}}
+  [SecondInput](#cfn-databrew-recipe-recipeparameters-secondinput): {{String}}
+  [SheetIndexes](#cfn-databrew-recipe-recipeparameters-sheetindexes): {{
+    - Integer}}
+  [SheetNames](#cfn-databrew-recipe-recipeparameters-sheetnames): {{
+    - String}}
+  [SourceColumn](#cfn-databrew-recipe-recipeparameters-sourcecolumn): {{String}}
+  [SourceColumn1](#cfn-databrew-recipe-recipeparameters-sourcecolumn1): {{String}}
+  [SourceColumn2](#cfn-databrew-recipe-recipeparameters-sourcecolumn2): {{String}}
+  [SourceColumns](#cfn-databrew-recipe-recipeparameters-sourcecolumns): {{String}}
+  [StartColumnIndex](#cfn-databrew-recipe-recipeparameters-startcolumnindex): {{String}}
+  [StartPattern](#cfn-databrew-recipe-recipeparameters-startpattern): {{String}}
+  [StartPosition](#cfn-databrew-recipe-recipeparameters-startposition): {{String}}
+  [StartValue](#cfn-databrew-recipe-recipeparameters-startvalue): {{String}}
+  [StemmingMode](#cfn-databrew-recipe-recipeparameters-stemmingmode): {{String}}
+  [StepCount](#cfn-databrew-recipe-recipeparameters-stepcount): {{String}}
+  [StepIndex](#cfn-databrew-recipe-recipeparameters-stepindex): {{String}}
+  [StopWordsMode](#cfn-databrew-recipe-recipeparameters-stopwordsmode): {{String}}
+  [Strategy](#cfn-databrew-recipe-recipeparameters-strategy): {{String}}
+  [TargetColumn](#cfn-databrew-recipe-recipeparameters-targetcolumn): {{String}}
+  [TargetColumnNames](#cfn-databrew-recipe-recipeparameters-targetcolumnnames): {{String}}
+  [TargetDateFormat](#cfn-databrew-recipe-recipeparameters-targetdateformat): {{String}}
+  [TargetIndex](#cfn-databrew-recipe-recipeparameters-targetindex): {{String}}
+  [TimeZone](#cfn-databrew-recipe-recipeparameters-timezone): {{String}}
+  [TokenizerPattern](#cfn-databrew-recipe-recipeparameters-tokenizerpattern): {{String}}
+  [TrueString](#cfn-databrew-recipe-recipeparameters-truestring): {{
+    String}}
+  [UdfLang](#cfn-databrew-recipe-recipeparameters-udflang): {{String}}
+  [Units](#cfn-databrew-recipe-recipeparameters-units): {{String}}
+  [UnpivotColumn](#cfn-databrew-recipe-recipeparameters-unpivotcolumn): {{String}}
+  [UpperBound](#cfn-databrew-recipe-recipeparameters-upperbound): {{String}}
+  [UseNewDataFrame](#cfn-databrew-recipe-recipeparameters-usenewdataframe): {{String}}
+  [Value](#cfn-databrew-recipe-recipeparameters-value): {{String}}
+  [Value1](#cfn-databrew-recipe-recipeparameters-value1): {{String}}
+  [Value2](#cfn-databrew-recipe-recipeparameters-value2): {{String}}
+  [ValueColumn](#cfn-databrew-recipe-recipeparameters-valuecolumn): {{String}}
+  [ViewFrame](#cfn-databrew-recipe-recipeparameters-viewframe): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-recipe-recipeparameters-properties"></a>
 
-`AggregateFunction`
-
+`AggregateFunction`  <a name="cfn-databrew-recipe-recipeparameters-aggregatefunction"></a>
 The name of an aggregation function to apply.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Base`
-
+`Base`  <a name="cfn-databrew-recipe-recipeparameters-base"></a>
 The number of digits used in a counting system.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CaseStatement`
-
+`CaseStatement`  <a name="cfn-databrew-recipe-recipeparameters-casestatement"></a>
 A case statement associated with a recipe.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategoryMap`
-
+`CategoryMap`  <a name="cfn-databrew-recipe-recipeparameters-categorymap"></a>
 A category map used for one-hot encoding.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CharsToRemove`
-
+`CharsToRemove`  <a name="cfn-databrew-recipe-recipeparameters-charstoremove"></a>
 Characters to remove from a step that applies one-hot encoding or tokenization.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CollapseConsecutiveWhitespace`
-
+`CollapseConsecutiveWhitespace`  <a name="cfn-databrew-recipe-recipeparameters-collapseconsecutivewhitespace"></a>
 Remove any non-word non-punctuation character.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnDataType`
-
+`ColumnDataType`  <a name="cfn-databrew-recipe-recipeparameters-columndatatype"></a>
 The data type of the column.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ColumnRange`  <a name="cfn-databrew-recipe-recipeparameters-columnrange"></a>
+ A range of columns to which a step is applied.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnRange`
-
-A range of columns to which a step is applied.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Count`
-
+`Count`  <a name="cfn-databrew-recipe-recipeparameters-count"></a>
 The number of times a string needs to be repeated.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`CustomCharacters`  <a name="cfn-databrew-recipe-recipeparameters-customcharacters"></a>
+One or more characters that can be substituted or removed, depending on the context.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomCharacters`
-
-One or more characters that can be substituted or removed, depending on the
-context.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomStopWords`
-
+`CustomStopWords`  <a name="cfn-databrew-recipe-recipeparameters-customstopwords"></a>
 A list of words to ignore in a step that applies word tokenization.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`CustomValue`  <a name="cfn-databrew-recipe-recipeparameters-customvalue"></a>
+A list of custom values to use in a step that requires that you provide a value to finish the operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomValue`
-
-A list of custom values to use in a step that requires that you provide a value to
-finish the operation.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatasetsColumns`
-
+`DatasetsColumns`  <a name="cfn-databrew-recipe-recipeparameters-datasetscolumns"></a>
 A list of the dataset columns included in a project.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DateAddValue`  <a name="cfn-databrew-recipe-recipeparameters-dateaddvalue"></a>
+A value that specifies how many units of time to add or subtract for a date math operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateAddValue`
-
-A value that specifies how many units of time to add or subtract for a date math
-operation.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateTimeFormat`
-
+`DateTimeFormat`  <a name="cfn-databrew-recipe-recipeparameters-datetimeformat"></a>
 A date format to apply to a date.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateTimeParameters`
-
+`DateTimeParameters`  <a name="cfn-databrew-recipe-recipeparameters-datetimeparameters"></a>
 A set of parameters associated with a datetime.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeleteOtherRows`
-
+`DeleteOtherRows`  <a name="cfn-databrew-recipe-recipeparameters-deleteotherrows"></a>
 Determines whether unmapped rows in a categorical mapping should be deleted
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Delimiter`
-
+`Delimiter`  <a name="cfn-databrew-recipe-recipeparameters-delimiter"></a>
 The delimiter to use when parsing separated values in a text file.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndPattern`
-
+`EndPattern`  <a name="cfn-databrew-recipe-recipeparameters-endpattern"></a>
 The end pattern to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndPosition`
-
+`EndPosition`  <a name="cfn-databrew-recipe-recipeparameters-endposition"></a>
 The end position to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndValue`
-
+`EndValue`  <a name="cfn-databrew-recipe-recipeparameters-endvalue"></a>
 The end value to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ExpandContractions`  <a name="cfn-databrew-recipe-recipeparameters-expandcontractions"></a>
+A list of word contractions and what they expand to. For eample: *can't*; *cannot*; *can not*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExpandContractions`
-
-A list of word contractions and what they expand to. For eample:
-_can't_; _cannot_; _can_
-_not_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Exponent`
-
+`Exponent`  <a name="cfn-databrew-recipe-recipeparameters-exponent"></a>
 The exponent to apply in an exponential operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FalseString`
-
+`FalseString`  <a name="cfn-databrew-recipe-recipeparameters-falsestring"></a>
 A value that represents `FALSE`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupByAggFunctionOptions`
-
+`GroupByAggFunctionOptions`  <a name="cfn-databrew-recipe-recipeparameters-groupbyaggfunctionoptions"></a>
 Specifies options to apply to the `GROUP BY` used in an aggregation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupByColumns`
-
+`GroupByColumns`  <a name="cfn-databrew-recipe-recipeparameters-groupbycolumns"></a>
 The columns to use in the `GROUP BY` clause.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HiddenColumns`
-
+`HiddenColumns`  <a name="cfn-databrew-recipe-recipeparameters-hiddencolumns"></a>
 A list of columns to hide.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IgnoreCase`
-
+`IgnoreCase`  <a name="cfn-databrew-recipe-recipeparameters-ignorecase"></a>
 Indicates that lower and upper case letters are treated equally.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeInSplit`
-
+`IncludeInSplit`  <a name="cfn-databrew-recipe-recipeparameters-includeinsplit"></a>
 Indicates if this column is participating in a split transform.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Input`
-
+`Input`  <a name="cfn-databrew-recipe-recipeparameters-input"></a>
 The input location to load the dataset from - Amazon S3 or AWS Glue Data Catalog.
+*Required*: No
+*Type*: [Input](aws-properties-databrew-recipe-input.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Input](aws-properties-databrew-recipe-input.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interval`
-
+`Interval`  <a name="cfn-databrew-recipe-recipeparameters-interval"></a>
 The number of characters to split by.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsText`
-
+`IsText`  <a name="cfn-databrew-recipe-recipeparameters-istext"></a>
 Indicates if the content is text.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JoinKeys`
-
+`JoinKeys`  <a name="cfn-databrew-recipe-recipeparameters-joinkeys"></a>
 The keys or columns involved in a join.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`JoinType`  <a name="cfn-databrew-recipe-recipeparameters-jointype"></a>
+The type of join to use, for example, `INNER JOIN`, `OUTER JOIN`, and so on.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JoinType`
-
-The type of join to use, for example, `INNER JOIN`, `OUTER
-            JOIN`, and so on.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LeftColumns`
-
+`LeftColumns`  <a name="cfn-databrew-recipe-recipeparameters-leftcolumns"></a>
 The columns on the left side of the join.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Limit`  <a name="cfn-databrew-recipe-recipeparameters-limit"></a>
+The number of times to perform `split` or `replaceBy` in a string
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Limit`
-
-The number of times to perform `split` or `replaceBy` in a
-string
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LowerBound`
-
+`LowerBound`  <a name="cfn-databrew-recipe-recipeparameters-lowerbound"></a>
 The lower boundary for a value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapType`
-
+`MapType`  <a name="cfn-databrew-recipe-recipeparameters-maptype"></a>
 The type of mappings to apply to construct a new dynamic frame.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ModeType`  <a name="cfn-databrew-recipe-recipeparameters-modetype"></a>
+Determines the manner in which mode value is calculated, in case there is more than one mode value. Valid values: `NONE` \| `AVERAGE` \| `MINIMUM` \| `MAXIMUM`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModeType`
-
-Determines the manner in which mode value is calculated, in case there is more than
-one mode value. Valid values: `NONE` \| `AVERAGE` \|
-`MINIMUM` \| `MAXIMUM`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MultiLine`
-
+`MultiLine`  <a name="cfn-databrew-recipe-recipeparameters-multiline"></a>
 Specifies whether JSON input contains embedded new line characters.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumRows`
-
+`NumRows`  <a name="cfn-databrew-recipe-recipeparameters-numrows"></a>
 The number of rows to consider in a window.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumRowsAfter`
-
+`NumRowsAfter`  <a name="cfn-databrew-recipe-recipeparameters-numrowsafter"></a>
 The number of rows to consider after the current row in a window
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumRowsBefore`
-
+`NumRowsBefore`  <a name="cfn-databrew-recipe-recipeparameters-numrowsbefore"></a>
 The number of rows to consider before the current row in a window
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrderByColumn`
-
+`OrderByColumn`  <a name="cfn-databrew-recipe-recipeparameters-orderbycolumn"></a>
 A column to sort the results by.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrderByColumns`
-
+`OrderByColumns`  <a name="cfn-databrew-recipe-recipeparameters-orderbycolumns"></a>
 The columns to sort the results by.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Other`
-
+`Other`  <a name="cfn-databrew-recipe-recipeparameters-other"></a>
 The value to assign to unmapped cells, in categorical mapping
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Pattern`
-
+`Pattern`  <a name="cfn-databrew-recipe-recipeparameters-pattern"></a>
 The pattern to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PatternOption1`
-
+`PatternOption1`  <a name="cfn-databrew-recipe-recipeparameters-patternoption1"></a>
 The starting pattern to split between.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PatternOption2`
-
+`PatternOption2`  <a name="cfn-databrew-recipe-recipeparameters-patternoption2"></a>
 The ending pattern to split between.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PatternOptions`  <a name="cfn-databrew-recipe-recipeparameters-patternoptions"></a>
+For splitting by multiple delimiters: A JSON-encoded string that lists the patterns in the format. For example: `[{\"pattern\":\"1\",\"includeInSplit\":true}]`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PatternOptions`
-
-For splitting by multiple delimiters: A JSON-encoded string that lists the patterns in
-the format. For example:
-`[{\"pattern\":\"1\",\"includeInSplit\":true}]`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Period`
-
+`Period`  <a name="cfn-databrew-recipe-recipeparameters-period"></a>
 The size of the rolling window.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
+`Position`  <a name="cfn-databrew-recipe-recipeparameters-position"></a>
 The character index within a string
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RemoveAllPunctuation`  <a name="cfn-databrew-recipe-recipeparameters-removeallpunctuation"></a>
+If `true`, removes all of the following characters: `.``.!``.,``.?`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveAllPunctuation`
-
-If `true`, removes all of the following characters: `.` `.!` `.,` `.?`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveAllQuotes`
-
+`RemoveAllQuotes`  <a name="cfn-databrew-recipe-recipeparameters-removeallquotes"></a>
 If `true`, removes all single quotes and double quotes.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveAllWhitespace`
-
+`RemoveAllWhitespace`  <a name="cfn-databrew-recipe-recipeparameters-removeallwhitespace"></a>
 If `true`, removes all whitespaces from the value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RemoveCustomCharacters`  <a name="cfn-databrew-recipe-recipeparameters-removecustomcharacters"></a>
+If `true`, removes all chraracters specified by `CustomCharacters`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveCustomCharacters`
-
-If `true`, removes all chraracters specified by
-`CustomCharacters`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveCustomValue`
-
+`RemoveCustomValue`  <a name="cfn-databrew-recipe-recipeparameters-removecustomvalue"></a>
 If `true`, removes all chraracters specified by `CustomValue`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RemoveLeadingAndTrailingPunctuation`  <a name="cfn-databrew-recipe-recipeparameters-removeleadingandtrailingpunctuation"></a>
+If `true`, removes the following characters if they occur at the start or end of the value: `.``!``,``?`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RemoveLeadingAndTrailingQuotes`  <a name="cfn-databrew-recipe-recipeparameters-removeleadingandtrailingquotes"></a>
+If `true`, removes single quotes and double quotes from the beginning and end of the value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RemoveLeadingAndTrailingWhitespace`  <a name="cfn-databrew-recipe-recipeparameters-removeleadingandtrailingwhitespace"></a>
+If `true`, removes all whitespaces from the beginning and end of the value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`RemoveLeadingAndTrailingPunctuation`
+`RemoveLetters`  <a name="cfn-databrew-recipe-recipeparameters-removeletters"></a>
+If `true`, removes all uppercase and lowercase alphabetic characters (A through Z; a through z).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If `true`, removes the following characters if they occur at the start or
-end of the value: `.` `!` `,` `?`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveLeadingAndTrailingQuotes`
-
-If `true`, removes single quotes and double quotes from the beginning and
-end of the value.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveLeadingAndTrailingWhitespace`
-
-If `true`, removes all whitespaces from the beginning and end of the
-value.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveLetters`
-
-If `true`, removes all uppercase and lowercase alphabetic characters (A
-through Z; a through z).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveNumbers`
-
+`RemoveNumbers`  <a name="cfn-databrew-recipe-recipeparameters-removenumbers"></a>
 If `true`, removes all numeric characters (0 through 9).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`RemoveSourceColumn`  <a name="cfn-databrew-recipe-recipeparameters-removesourcecolumn"></a>
+If `true`, the source column will be removed after un-nesting that column. (Used with nested column types, such as Map, Struct, or Array.)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RemoveSpecialCharacters`  <a name="cfn-databrew-recipe-recipeparameters-removespecialcharacters"></a>
+If `true`, removes all of the following characters: `! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveSourceColumn`
-
-If `true`, the source column will be removed after un-nesting that column.
-(Used with nested column types, such as Map, Struct, or Array.)
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RemoveSpecialCharacters`
-
-If `true`, removes all of the following characters: ``! " # $ % & '
-                ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~``
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RightColumns`
-
+`RightColumns`  <a name="cfn-databrew-recipe-recipeparameters-rightcolumns"></a>
 The columns on the right side of a join.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SampleSize`
-
+`SampleSize`  <a name="cfn-databrew-recipe-recipeparameters-samplesize"></a>
 The number of rows in the sample.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SampleType`  <a name="cfn-databrew-recipe-recipeparameters-sampletype"></a>
+The sampling type to apply to the dataset. Valid values: `FIRST_N` \| `LAST_N` \| `RANDOM`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SampleType`
-
-The sampling type to apply to the dataset. Valid values: `FIRST_N` \|
-`LAST_N` \| `RANDOM`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondaryInputs`
-
+`SecondaryInputs`  <a name="cfn-databrew-recipe-recipeparameters-secondaryinputs"></a>
 A list of secondary inputs in a UNION transform
+*Required*: No
+*Type*: Array of [SecondaryInput](aws-properties-databrew-recipe-secondaryinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SecondaryInput](aws-properties-databrew-recipe-secondaryinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecondInput`
-
+`SecondInput`  <a name="cfn-databrew-recipe-recipeparameters-secondinput"></a>
 A object value to indicate the second dataset used in a join.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SheetIndexes`  <a name="cfn-databrew-recipe-recipeparameters-sheetindexes"></a>
+One or more sheet numbers in the Excel file, which will be included in a dataset.
+*Required*: No
+*Type*: Array of Integer
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetIndexes`
-
-One or more sheet numbers in the Excel file, which will be included in a
-dataset.
-
-_Required_: No
-
-_Type_: Array of Integer
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SheetNames`
-
+`SheetNames`  <a name="cfn-databrew-recipe-recipeparameters-sheetnames"></a>
 Oone or more named sheets in the Excel file, which will be included in a dataset.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceColumn`
-
+`SourceColumn`  <a name="cfn-databrew-recipe-recipeparameters-sourcecolumn"></a>
 A source column needed for an operation, step, or transform.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceColumn1`
-
+`SourceColumn1`  <a name="cfn-databrew-recipe-recipeparameters-sourcecolumn1"></a>
 A source column needed for an operation, step, or transform.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceColumn2`
-
+`SourceColumn2`  <a name="cfn-databrew-recipe-recipeparameters-sourcecolumn2"></a>
 A source column needed for an operation, step, or transform.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceColumns`
-
+`SourceColumns`  <a name="cfn-databrew-recipe-recipeparameters-sourcecolumns"></a>
 A list of source columns needed for an operation, step, or transform.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartColumnIndex`
-
+`StartColumnIndex`  <a name="cfn-databrew-recipe-recipeparameters-startcolumnindex"></a>
 The index number of the first column used by an operation, step, or transform.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartPattern`
-
+`StartPattern`  <a name="cfn-databrew-recipe-recipeparameters-startpattern"></a>
 The starting pattern to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartPosition`
-
+`StartPosition`  <a name="cfn-databrew-recipe-recipeparameters-startposition"></a>
 The starting position to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartValue`
-
+`StartValue`  <a name="cfn-databrew-recipe-recipeparameters-startvalue"></a>
 The starting value to locate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StemmingMode`
-
+`StemmingMode`  <a name="cfn-databrew-recipe-recipeparameters-stemmingmode"></a>
 Indicates this operation uses stems and lemmas (base words) for word tokenization.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepCount`
-
+`StepCount`  <a name="cfn-databrew-recipe-recipeparameters-stepcount"></a>
 The total number of transforms in this recipe.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepIndex`
-
+`StepIndex`  <a name="cfn-databrew-recipe-recipeparameters-stepindex"></a>
 The index ID of a step.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StopWordsMode`
-
+`StopWordsMode`  <a name="cfn-databrew-recipe-recipeparameters-stopwordsmode"></a>
 Indicates this operation uses stop words as part of word tokenization.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Strategy`
-
+`Strategy`  <a name="cfn-databrew-recipe-recipeparameters-strategy"></a>
 The resolution strategy to apply in resolving ambiguities.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetColumn`
-
+`TargetColumn`  <a name="cfn-databrew-recipe-recipeparameters-targetcolumn"></a>
 The column targeted by this operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetColumnNames`
-
+`TargetColumnNames`  <a name="cfn-databrew-recipe-recipeparameters-targetcolumnnames"></a>
 The names to give columns altered by this operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetDateFormat`
-
+`TargetDateFormat`  <a name="cfn-databrew-recipe-recipeparameters-targetdateformat"></a>
 The date format to convert to.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetIndex`
-
+`TargetIndex`  <a name="cfn-databrew-recipe-recipeparameters-targetindex"></a>
 The index number of an object that is targeted by this operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeZone`
-
+`TimeZone`  <a name="cfn-databrew-recipe-recipeparameters-timezone"></a>
 The current timezone that you want to use for dates.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TokenizerPattern`  <a name="cfn-databrew-recipe-recipeparameters-tokenizerpattern"></a>
+A regex expression to use when splitting text into terms, also called words or tokens.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TokenizerPattern`
-
-A regex expression to use when splitting text into terms, also called words or
-tokens.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrueString`
-
+`TrueString`  <a name="cfn-databrew-recipe-recipeparameters-truestring"></a>
 A value to use to represent `TRUE`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UdfLang`
-
+`UdfLang`  <a name="cfn-databrew-recipe-recipeparameters-udflang"></a>
 The language that's used in the user-defined function.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Units`  <a name="cfn-databrew-recipe-recipeparameters-units"></a>
+Specifies a unit of time. For example: `MINUTES`; `SECONDS`; `HOURS`; etc.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Units`
-
-Specifies a unit of time. For example: `MINUTES`; `SECONDS`;
-`HOURS`; etc.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnpivotColumn`
-
+`UnpivotColumn`  <a name="cfn-databrew-recipe-recipeparameters-unpivotcolumn"></a>
 Cast columns as rows, so that each value is a different row in a single column.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpperBound`
-
+`UpperBound`  <a name="cfn-databrew-recipe-recipeparameters-upperbound"></a>
 The upper boundary for a value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseNewDataFrame`
-
+`UseNewDataFrame`  <a name="cfn-databrew-recipe-recipeparameters-usenewdataframe"></a>
 Create a new container to hold a dataset.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Value`  <a name="cfn-databrew-recipe-recipeparameters-value"></a>
+A static value that can be used in a comparison, a substitution, or in another context-specific way. A `Value` can be a number, string, or other datatype, depending on the recipe action in which it's used.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-A static value that can be used in a comparison, a substitution, or in another
-context-specific way. A `Value` can be a number, string, or other datatype,
-depending on the recipe action in which it's used.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value1`
-
+`Value1`  <a name="cfn-databrew-recipe-recipeparameters-value1"></a>
 A value that's used by this operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value2`
-
+`Value2`  <a name="cfn-databrew-recipe-recipeparameters-value2"></a>
 A value that's used by this operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueColumn`
-
+`ValueColumn`  <a name="cfn-databrew-recipe-recipeparameters-valuecolumn"></a>
 The column that is provided as a value that's used by this operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ViewFrame`
-
+`ViewFrame`  <a name="cfn-databrew-recipe-recipeparameters-viewframe"></a>
 The subset of rows currently available for viewing.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Parameters
-
-RecipeStep
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

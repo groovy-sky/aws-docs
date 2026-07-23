@@ -2,76 +2,55 @@
 title: "AWS::AppRunner::ObservabilityConfiguration Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::ObservabilityConfiguration Tag
+<a name="aws-properties-apprunner-observabilityconfiguration-tag"></a>
 
 Describes a tag that is applied to an AWS App Runner resource. A tag is a metadata item consisting of a key-value pair.
 
 ## Syntax
+<a name="aws-properties-apprunner-observabilityconfiguration-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apprunner-observabilityconfiguration-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-apprunner-observabilityconfiguration-tag-key)" : {{String}},
+  "[Value](#cfn-apprunner-observabilityconfiguration-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apprunner-observabilityconfiguration-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-apprunner-observabilityconfiguration-tag-key): {{String}}
+  [Value](#cfn-apprunner-observabilityconfiguration-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apprunner-observabilityconfiguration-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-apprunner-observabilityconfiguration-tag-key"></a>
 The key of the tag.
+*Required*: No
+*Type*: String
+*Pattern*: `^(?!aws:).+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(?!aws:).+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-apprunner-observabilityconfiguration-tag-value"></a>
 The value of the tag.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AppRunner::ObservabilityConfiguration
-
-TraceConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

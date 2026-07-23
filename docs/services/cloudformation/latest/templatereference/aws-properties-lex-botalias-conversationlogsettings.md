@@ -2,71 +2,53 @@
 title: "AWS::Lex::BotAlias ConversationLogSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::BotAlias ConversationLogSettings
+<a name="aws-properties-lex-botalias-conversationlogsettings"></a>
 
-Configures conversation logging that saves audio, text, and metadata
-for the conversations with your users.
+Configures conversation logging that saves audio, text, and metadata for the conversations with your users.
 
 ## Syntax
+<a name="aws-properties-lex-botalias-conversationlogsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-botalias-conversationlogsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "AudioLogSettings" : [ AudioLogSetting, ... ],
-  "TextLogSettings" : [ TextLogSetting, ... ]
+  "[AudioLogSettings](#cfn-lex-botalias-conversationlogsettings-audiologsettings)" : {{[ AudioLogSetting, ... ]}},
+  "[TextLogSettings](#cfn-lex-botalias-conversationlogsettings-textlogsettings)" : {{[ TextLogSetting, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-botalias-conversationlogsettings-syntax.yaml"></a>
 
-```yaml
-
-  AudioLogSettings:
-    - AudioLogSetting
-  TextLogSettings:
-    - TextLogSetting
-
+```
+  [AudioLogSettings](#cfn-lex-botalias-conversationlogsettings-audiologsettings): {{
+    - AudioLogSetting}}
+  [TextLogSettings](#cfn-lex-botalias-conversationlogsettings-textlogsettings): {{
+    - TextLogSetting}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-botalias-conversationlogsettings-properties"></a>
 
-`AudioLogSettings`
-
+`AudioLogSettings`  <a name="cfn-lex-botalias-conversationlogsettings-audiologsettings"></a>
 The Amazon S3 settings for logging audio to an S3 bucket.
+*Required*: No
+*Type*: Array of [AudioLogSetting](aws-properties-lex-botalias-audiologsetting.md)
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AudioLogSetting](aws-properties-lex-botalias-audiologsetting.md)
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextLogSettings`
-
+`TextLogSettings`  <a name="cfn-lex-botalias-conversationlogsettings-textlogsettings"></a>
 The Amazon CloudWatch Logs settings for logging text and metadata.
-
-_Required_: No
-
-_Type_: Array of [TextLogSetting](aws-properties-lex-botalias-textlogsetting.md)
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CodeHookSpecification
-
-LambdaCodeHook
+*Required*: No
+*Type*: Array of [TextLogSetting](aws-properties-lex-botalias-textlogsetting.md)
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

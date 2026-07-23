@@ -2,75 +2,56 @@
 title: "AWS::ServiceCatalog::CloudFormationProvisionedProduct ProvisioningParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::CloudFormationProvisionedProduct ProvisioningParameter
+<a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter"></a>
 
 Information about a parameter used to provision a product.
 
 ## Syntax
+<a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-key)" : {{String}},
+  "[Value](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-key): {{String}}
+  [Value](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-key"></a>
 The parameter key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-value"></a>
 The parameter value.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ProvisioningParameter](../../../servicecatalog/latest/dg/api-provisioningparameter.md) in the _AWS Service Catalog API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::CloudFormationProvisionedProduct
-
-ProvisioningPreferences
+<a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter--seealso"></a>
++ [ProvisioningParameter](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ProvisioningParameter.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

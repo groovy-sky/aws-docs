@@ -2,66 +2,50 @@
 title: "AWS::QuickSight::Analysis DataSetReference"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DataSetReference
+<a name="aws-properties-quicksight-analysis-datasetreference"></a>
 
 Dataset reference.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-datasetreference-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-datasetreference-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataSetArn" : String,
-  "DataSetPlaceholder" : String
+  "[DataSetArn](#cfn-quicksight-analysis-datasetreference-datasetarn)" : {{String}},
+  "[DataSetPlaceholder](#cfn-quicksight-analysis-datasetreference-datasetplaceholder)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-datasetreference-syntax.yaml"></a>
 
-```yaml
-
-  DataSetArn: String
-  DataSetPlaceholder: String
-
+```
+  [DataSetArn](#cfn-quicksight-analysis-datasetreference-datasetarn): {{String}}
+  [DataSetPlaceholder](#cfn-quicksight-analysis-datasetreference-datasetplaceholder): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-datasetreference-properties"></a>
 
-`DataSetArn`
-
+`DataSetArn`  <a name="cfn-quicksight-analysis-datasetreference-datasetarn"></a>
 Dataset Amazon Resource Name (ARN).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetPlaceholder`
-
+`DataSetPlaceholder`  <a name="cfn-quicksight-analysis-datasetreference-datasetplaceholder"></a>
 Dataset placeholder.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetIdentifierDeclaration
-
-DateAxisOptions
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,47 @@
 title: "AWS::EMRContainers::VirtualCluster EksInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::VirtualCluster EksInfo
+<a name="aws-properties-emrcontainers-virtualcluster-eksinfo"></a>
 
 The information about the Amazon EKS cluster.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-virtualcluster-eksinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-virtualcluster-eksinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "Namespace" : String
+  "[Namespace](#cfn-emrcontainers-virtualcluster-eksinfo-namespace)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-virtualcluster-eksinfo-syntax.yaml"></a>
 
-```yaml
-
-  Namespace: String
-
+```
+  [Namespace](#cfn-emrcontainers-virtualcluster-eksinfo-namespace): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-virtualcluster-eksinfo-properties"></a>
 
-`Namespace`
-
+`Namespace`  <a name="cfn-emrcontainers-virtualcluster-eksinfo-namespace"></a>
 The namespaces of the EKS cluster.
-
-_Minimum_: 1
-
-_Maximum_: 63
-
-_Pattern_: `[a-z0-9]([-a-z0-9]*[a-z0-9])?`
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z0-9]([-a-z0-9]*[a-z0-9])?`
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerProvider
-
-Tag
+*Minimum*: 1
+*Maximum*: 63
+*Pattern*: `[a-z0-9]([-a-z0-9]*[a-z0-9])?`
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z0-9]([-a-z0-9]*[a-z0-9])?`
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

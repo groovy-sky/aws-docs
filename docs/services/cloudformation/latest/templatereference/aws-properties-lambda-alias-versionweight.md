@@ -2,70 +2,63 @@
 title: "AWS::Lambda::Alias VersionWeight"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Alias VersionWeight
+<a name="aws-properties-lambda-alias-versionweight"></a>
 
-The [traffic-shifting](../../../lambda/latest/dg/lambda-traffic-shifting-using-aliases.md) configuration of a Lambda function alias.
+The [traffic-shifting](https://docs.aws.amazon.com/lambda/latest/dg/lambda-traffic-shifting-using-aliases.html) configuration of a Lambda function alias.
 
 ## Syntax
+<a name="aws-properties-lambda-alias-versionweight-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-alias-versionweight-syntax.json"></a>
 
-```json
-
+```
 {
-  "FunctionVersion" : String,
-  "FunctionWeight" : Number
+  "[FunctionVersion](#cfn-lambda-alias-versionweight-functionversion)" : {{String}},
+  "[FunctionWeight](#cfn-lambda-alias-versionweight-functionweight)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-alias-versionweight-syntax.yaml"></a>
 
-```yaml
-
-  FunctionVersion: String
-  FunctionWeight: Number
-
+```
+  [FunctionVersion](#cfn-lambda-alias-versionweight-functionversion): {{String}}
+  [FunctionWeight](#cfn-lambda-alias-versionweight-functionweight): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-alias-versionweight-properties"></a>
 
-`FunctionVersion`
-
+`FunctionVersion`  <a name="cfn-lambda-alias-versionweight-functionversion"></a>
 The qualifier of the second version.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FunctionWeight`
-
+`FunctionWeight`  <a name="cfn-lambda-alias-versionweight-functionweight"></a>
 The percentage of traffic that the alias routes to the second version.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-lambda-alias-versionweight--examples"></a>
 
 ### Routing Configuration
+<a name="aws-properties-lambda-alias-versionweight--examples--Routing_Configuration"></a>
 
 An alias that routes half of incoming requests to a second version.
 
 #### YAML
+<a name="aws-properties-lambda-alias-versionweight--examples--Routing_Configuration--yaml"></a>
 
-```yaml
-
+```
   alias:
     Type: AWS::Lambda::Alias
     Properties:
@@ -77,11 +70,5 @@ An alias that routes half of incoming requests to a second version.
           - FunctionVersion: !GetAtt version.Version
             FunctionWeight: 0.5
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProvisionedConcurrencyConfiguration
-
-AWS::Lambda::CapacityProvider
 
 All content copied from https://docs.aws.amazon.com/.

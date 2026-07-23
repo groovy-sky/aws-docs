@@ -2,65 +2,49 @@
 title: "AWS::PCS::Cluster AuthKey"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::Cluster AuthKey
+<a name="aws-properties-pcs-cluster-authkey"></a>
 
-The shared Slurm key for authentication, also known as the **cluster**
-**secret**.
+The shared Slurm key for authentication, also known as the **cluster secret**.
 
 ## Syntax
+<a name="aws-properties-pcs-cluster-authkey-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcs-cluster-authkey-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecretArn" : String,
-  "SecretVersion" : String
+  "[SecretArn](#cfn-pcs-cluster-authkey-secretarn)" : {{String}},
+  "[SecretVersion](#cfn-pcs-cluster-authkey-secretversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcs-cluster-authkey-syntax.yaml"></a>
 
-```yaml
-
-  SecretArn: String
-  SecretVersion: String
-
+```
+  [SecretArn](#cfn-pcs-cluster-authkey-secretarn): {{String}}
+  [SecretVersion](#cfn-pcs-cluster-authkey-secretversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pcs-cluster-authkey-properties"></a>
 
-`SecretArn`
-
+`SecretArn`  <a name="cfn-pcs-cluster-authkey-secretarn"></a>
 The Amazon Resource Name (ARN) of the shared Slurm key.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretVersion`
-
+`SecretVersion`  <a name="cfn-pcs-cluster-authkey-secretversion"></a>
 The version of the shared Slurm key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Accounting
-
-CgroupCustomSetting
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

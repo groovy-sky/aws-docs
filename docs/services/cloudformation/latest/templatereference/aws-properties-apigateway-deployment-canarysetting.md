@@ -2,85 +2,65 @@
 title: "AWS::ApiGateway::Deployment CanarySetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::Deployment CanarySetting
+<a name="aws-properties-apigateway-deployment-canarysetting"></a>
 
 The `CanarySetting` property type specifies settings for the canary deployment in this stage.
 
-`CanarySetting` is a property of the [StageDescription](../userguide/aws-properties-apigateway-deployment-stagedescription.md) property type.
+`CanarySetting` is a property of the [StageDescription](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html) property type.
 
 ## Syntax
+<a name="aws-properties-apigateway-deployment-canarysetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigateway-deployment-canarysetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "PercentTraffic" : Number,
-  "StageVariableOverrides" : {Key: Value, ...},
-  "UseStageCache" : Boolean
+  "[PercentTraffic](#cfn-apigateway-deployment-canarysetting-percenttraffic)" : {{Number}},
+  "[StageVariableOverrides](#cfn-apigateway-deployment-canarysetting-stagevariableoverrides)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[UseStageCache](#cfn-apigateway-deployment-canarysetting-usestagecache)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigateway-deployment-canarysetting-syntax.yaml"></a>
 
-```yaml
-
-  PercentTraffic: Number
-  StageVariableOverrides:
-    Key: Value
-  UseStageCache: Boolean
-
+```
+  [PercentTraffic](#cfn-apigateway-deployment-canarysetting-percenttraffic): {{Number}}
+  [StageVariableOverrides](#cfn-apigateway-deployment-canarysetting-stagevariableoverrides): {{
+    {{Key}}: {{Value}}}}
+  [UseStageCache](#cfn-apigateway-deployment-canarysetting-usestagecache): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-apigateway-deployment-canarysetting-properties"></a>
 
-`PercentTraffic`
-
+`PercentTraffic`  <a name="cfn-apigateway-deployment-canarysetting-percenttraffic"></a>
 The percent (0-100) of traffic diverted to a canary deployment.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StageVariableOverrides`
-
+`StageVariableOverrides`  <a name="cfn-apigateway-deployment-canarysetting-stagevariableoverrides"></a>
 Stage variables overridden for a canary release deployment, including new stage variables introduced in the canary. These stage variables are represented as a string-to-string map between stage variable names and their values.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseStageCache`
-
+`UseStageCache`  <a name="cfn-apigateway-deployment-canarysetting-usestagecache"></a>
 A Boolean flag to indicate whether the canary deployment uses the stage cache or not.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Stage](../../../apigateway/latest/api/api-stage.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessLogSetting
-
-DeploymentCanarySettings
+<a name="aws-properties-apigateway-deployment-canarysetting--seealso"></a>
++ [Stage](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

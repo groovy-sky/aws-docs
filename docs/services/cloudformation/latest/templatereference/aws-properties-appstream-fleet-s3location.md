@@ -2,74 +2,54 @@
 title: "AWS::AppStream::Fleet S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Fleet S3Location
+<a name="aws-properties-appstream-fleet-s3location"></a>
 
 Describes the S3 location.
 
 ## Syntax
+<a name="aws-properties-appstream-fleet-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-fleet-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Bucket" : String,
-  "S3Key" : String
+  "[S3Bucket](#cfn-appstream-fleet-s3location-s3bucket)" : {{String}},
+  "[S3Key](#cfn-appstream-fleet-s3location-s3key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-fleet-s3location-syntax.yaml"></a>
 
-```yaml
-
-  S3Bucket: String
-  S3Key: String
-
+```
+  [S3Bucket](#cfn-appstream-fleet-s3location-s3bucket): {{String}}
+  [S3Key](#cfn-appstream-fleet-s3location-s3key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-fleet-s3location-properties"></a>
 
-`S3Bucket`
-
+`S3Bucket`  <a name="cfn-appstream-fleet-s3location-s3bucket"></a>
 The S3 bucket of the S3 object.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-z\.\-]*(?<!\.)$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z\.\-]*(?<!\.)$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Key`
-
+`S3Key`  <a name="cfn-appstream-fleet-s3location-s3key"></a>
 The S3 key of the S3 object.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DomainJoinInfo
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

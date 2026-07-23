@@ -2,115 +2,82 @@
 title: "AWS::QuickSight::Template IntegerParameterDeclaration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template IntegerParameterDeclaration
+<a name="aws-properties-quicksight-template-integerparameterdeclaration"></a>
 
 A parameter declaration for the `Integer` data type.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-integerparameterdeclaration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-integerparameterdeclaration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValues" : IntegerDefaultValues,
-  "MappedDataSetParameters" : [ MappedDataSetParameter, ... ],
-  "Name" : String,
-  "ParameterValueType" : String,
-  "ValueWhenUnset" : IntegerValueWhenUnsetConfiguration
+  "[DefaultValues](#cfn-quicksight-template-integerparameterdeclaration-defaultvalues)" : {{IntegerDefaultValues}},
+  "[MappedDataSetParameters](#cfn-quicksight-template-integerparameterdeclaration-mappeddatasetparameters)" : {{[ MappedDataSetParameter, ... ]}},
+  "[Name](#cfn-quicksight-template-integerparameterdeclaration-name)" : {{String}},
+  "[ParameterValueType](#cfn-quicksight-template-integerparameterdeclaration-parametervaluetype)" : {{String}},
+  "[ValueWhenUnset](#cfn-quicksight-template-integerparameterdeclaration-valuewhenunset)" : {{IntegerValueWhenUnsetConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-integerparameterdeclaration-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValues:
-    IntegerDefaultValues
-  MappedDataSetParameters:
-    - MappedDataSetParameter
-  Name: String
-  ParameterValueType: String
-  ValueWhenUnset:
-    IntegerValueWhenUnsetConfiguration
-
+```
+  [DefaultValues](#cfn-quicksight-template-integerparameterdeclaration-defaultvalues): {{
+    IntegerDefaultValues}}
+  [MappedDataSetParameters](#cfn-quicksight-template-integerparameterdeclaration-mappeddatasetparameters): {{
+    - MappedDataSetParameter}}
+  [Name](#cfn-quicksight-template-integerparameterdeclaration-name): {{String}}
+  [ParameterValueType](#cfn-quicksight-template-integerparameterdeclaration-parametervaluetype): {{String}}
+  [ValueWhenUnset](#cfn-quicksight-template-integerparameterdeclaration-valuewhenunset): {{
+    IntegerValueWhenUnsetConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-integerparameterdeclaration-properties"></a>
 
-`DefaultValues`
-
+`DefaultValues`  <a name="cfn-quicksight-template-integerparameterdeclaration-defaultvalues"></a>
 The default values of a parameter. If the parameter is a single-value parameter, a maximum of one default value can be provided.
+*Required*: No
+*Type*: [IntegerDefaultValues](aws-properties-quicksight-template-integerdefaultvalues.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IntegerDefaultValues](aws-properties-quicksight-template-integerdefaultvalues.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MappedDataSetParameters`
-
+`MappedDataSetParameters`  <a name="cfn-quicksight-template-integerparameterdeclaration-mappeddatasetparameters"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [MappedDataSetParameter](aws-properties-quicksight-template-mappeddatasetparameter.md)
+*Minimum*: `0`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MappedDataSetParameter](aws-properties-quicksight-template-mappeddatasetparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-template-integerparameterdeclaration-name"></a>
 The name of the parameter that is being declared.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValueType`
-
+`ParameterValueType`  <a name="cfn-quicksight-template-integerparameterdeclaration-parametervaluetype"></a>
 The value type determines whether the parameter is a single-value or multi-value parameter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MULTI_VALUED | SINGLE_VALUED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MULTI_VALUED | SINGLE_VALUED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueWhenUnset`
-
+`ValueWhenUnset`  <a name="cfn-quicksight-template-integerparameterdeclaration-valuewhenunset"></a>
 A parameter declaration for the `Integer` data type.
-
-_Required_: No
-
-_Type_: [IntegerValueWhenUnsetConfiguration](aws-properties-quicksight-template-integervaluewhenunsetconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IntegerDefaultValues
-
-IntegerValueWhenUnsetConfiguration
+*Required*: No
+*Type*: [IntegerValueWhenUnsetConfiguration](aws-properties-quicksight-template-integervaluewhenunsetconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,56 +2,43 @@
 title: "AWS::DataZone::Connection AthenaPropertiesInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection AthenaPropertiesInput
+<a name="aws-properties-datazone-connection-athenapropertiesinput"></a>
 
 The Amazon Athena properties of a connection.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-athenapropertiesinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-athenapropertiesinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "WorkgroupName" : String
+  "[WorkgroupName](#cfn-datazone-connection-athenapropertiesinput-workgroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-athenapropertiesinput-syntax.yaml"></a>
 
-```yaml
-
-  WorkgroupName: String
-
+```
+  [WorkgroupName](#cfn-datazone-connection-athenapropertiesinput-workgroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-athenapropertiesinput-properties"></a>
 
-`WorkgroupName`
-
+`WorkgroupName`  <a name="cfn-datazone-connection-athenapropertiesinput-workgroupname"></a>
 The Amazon Athena workgroup name of a connection.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9._-]+$`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AmazonQPropertiesInput
-
-AuthenticationConfigurationInput
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9._-]+$`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

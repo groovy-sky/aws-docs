@@ -2,350 +2,241 @@
 title: "AWS::ApiGatewayV2::Integration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Integration
+<a name="aws-resource-apigatewayv2-integration"></a>
 
-The `AWS::ApiGatewayV2::Integration` resource creates an integration
-for an API.
+The `AWS::ApiGatewayV2::Integration` resource creates an integration for an API.
 
 ## Syntax
+<a name="aws-resource-apigatewayv2-integration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigatewayv2-integration-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGatewayV2::Integration",
   "Properties" : {
-      "ApiId" : String,
-      "ConnectionId" : String,
-      "ConnectionType" : String,
-      "ContentHandlingStrategy" : String,
-      "CredentialsArn" : String,
-      "Description" : String,
-      "IntegrationMethod" : String,
-      "IntegrationSubtype" : String,
-      "IntegrationType" : String,
-      "IntegrationUri" : String,
-      "PassthroughBehavior" : String,
-      "PayloadFormatVersion" : String,
-      "RequestParameters" : {Key: Value, ...},
-      "RequestTemplates" : {Key: Value, ...},
-      "ResponseParameters" : {Key: Value, ...},
-      "TemplateSelectionExpression" : String,
-      "TimeoutInMillis" : Integer,
-      "TlsConfig" : TlsConfig
+      "[ApiId](#cfn-apigatewayv2-integration-apiid)" : {{String}},
+      "[ConnectionId](#cfn-apigatewayv2-integration-connectionid)" : {{String}},
+      "[ConnectionType](#cfn-apigatewayv2-integration-connectiontype)" : {{String}},
+      "[ContentHandlingStrategy](#cfn-apigatewayv2-integration-contenthandlingstrategy)" : {{String}},
+      "[CredentialsArn](#cfn-apigatewayv2-integration-credentialsarn)" : {{String}},
+      "[Description](#cfn-apigatewayv2-integration-description)" : {{String}},
+      "[IntegrationMethod](#cfn-apigatewayv2-integration-integrationmethod)" : {{String}},
+      "[IntegrationSubtype](#cfn-apigatewayv2-integration-integrationsubtype)" : {{String}},
+      "[IntegrationType](#cfn-apigatewayv2-integration-integrationtype)" : {{String}},
+      "[IntegrationUri](#cfn-apigatewayv2-integration-integrationuri)" : {{String}},
+      "[PassthroughBehavior](#cfn-apigatewayv2-integration-passthroughbehavior)" : {{String}},
+      "[PayloadFormatVersion](#cfn-apigatewayv2-integration-payloadformatversion)" : {{String}},
+      "[RequestParameters](#cfn-apigatewayv2-integration-requestparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[RequestTemplates](#cfn-apigatewayv2-integration-requesttemplates)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[ResponseParameters](#cfn-apigatewayv2-integration-responseparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[TemplateSelectionExpression](#cfn-apigatewayv2-integration-templateselectionexpression)" : {{String}},
+      "[TimeoutInMillis](#cfn-apigatewayv2-integration-timeoutinmillis)" : {{Integer}},
+      "[TlsConfig](#cfn-apigatewayv2-integration-tlsconfig)" : {{TlsConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigatewayv2-integration-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGatewayV2::Integration
 Properties:
-  ApiId: String
-  ConnectionId: String
-  ConnectionType: String
-  ContentHandlingStrategy: String
-  CredentialsArn: String
-  Description: String
-  IntegrationMethod: String
-  IntegrationSubtype: String
-  IntegrationType: String
-  IntegrationUri: String
-  PassthroughBehavior: String
-  PayloadFormatVersion: String
-  RequestParameters:
-    Key: Value
-  RequestTemplates:
-    Key: Value
-  ResponseParameters:
-    Key: Value
-  TemplateSelectionExpression: String
-  TimeoutInMillis: Integer
-  TlsConfig:
-    TlsConfig
-
+  [ApiId](#cfn-apigatewayv2-integration-apiid): {{String}}
+  [ConnectionId](#cfn-apigatewayv2-integration-connectionid): {{String}}
+  [ConnectionType](#cfn-apigatewayv2-integration-connectiontype): {{String}}
+  [ContentHandlingStrategy](#cfn-apigatewayv2-integration-contenthandlingstrategy): {{String}}
+  [CredentialsArn](#cfn-apigatewayv2-integration-credentialsarn): {{String}}
+  [Description](#cfn-apigatewayv2-integration-description): {{String}}
+  [IntegrationMethod](#cfn-apigatewayv2-integration-integrationmethod): {{String}}
+  [IntegrationSubtype](#cfn-apigatewayv2-integration-integrationsubtype): {{String}}
+  [IntegrationType](#cfn-apigatewayv2-integration-integrationtype): {{String}}
+  [IntegrationUri](#cfn-apigatewayv2-integration-integrationuri): {{String}}
+  [PassthroughBehavior](#cfn-apigatewayv2-integration-passthroughbehavior): {{String}}
+  [PayloadFormatVersion](#cfn-apigatewayv2-integration-payloadformatversion): {{String}}
+  [RequestParameters](#cfn-apigatewayv2-integration-requestparameters): {{
+    {{Key}}: {{Value}}}}
+  [RequestTemplates](#cfn-apigatewayv2-integration-requesttemplates): {{
+    {{Key}}: {{Value}}}}
+  [ResponseParameters](#cfn-apigatewayv2-integration-responseparameters): {{
+    {{Key}}: {{Value}}}}
+  [TemplateSelectionExpression](#cfn-apigatewayv2-integration-templateselectionexpression): {{String}}
+  [TimeoutInMillis](#cfn-apigatewayv2-integration-timeoutinmillis): {{Integer}}
+  [TlsConfig](#cfn-apigatewayv2-integration-tlsconfig): {{
+    TlsConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-apigatewayv2-integration-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-apigatewayv2-integration-apiid"></a>
 The API identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConnectionId`
-
+`ConnectionId`  <a name="cfn-apigatewayv2-integration-connectionid"></a>
 The ID of the VPC link for a private integration. Supported only for HTTP APIs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ConnectionType`  <a name="cfn-apigatewayv2-integration-connectiontype"></a>
+The type of the network connection to the integration endpoint. Specify `INTERNET` for connections through the public routable internet or `VPC_LINK` for private connections between API Gateway and resources in a VPC. The default value is `INTERNET`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectionType`
-
-The type of the network connection to the integration endpoint. Specify `INTERNET` for connections through the public routable internet or
-`VPC_LINK` for private connections between API Gateway and resources in a VPC. The default value is `INTERNET`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContentHandlingStrategy`
-
+`ContentHandlingStrategy`  <a name="cfn-apigatewayv2-integration-contenthandlingstrategy"></a>
 Supported only for WebSocket APIs. Specifies how to handle response payload content type conversions. Supported values are `CONVERT_TO_BINARY` and `CONVERT_TO_TEXT`, with the following behaviors:
-
 `CONVERT_TO_BINARY`: Converts a response payload from a Base64-encoded string to the corresponding binary blob.
-
 `CONVERT_TO_TEXT`: Converts a response payload from a binary blob to a Base64-encoded string.
-
 If this property is not defined, the response payload will be passed through from the integration response to the route response or method response without modification.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CredentialsArn`
-
+`CredentialsArn`  <a name="cfn-apigatewayv2-integration-credentialsarn"></a>
 Specifies the credentials required for the integration, if any. For AWS integrations, three options are available. To specify an IAM Role for API Gateway to assume, use the role's Amazon Resource Name (ARN). To require that the caller's identity be passed through from the request, specify the string `arn:aws:iam::*:user/*`. To use resource-based permissions on supported AWS services, don't specify this parameter.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role|user|group)\/.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role|user|group)\/.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-apigatewayv2-integration-description"></a>
 The description of the integration.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegrationMethod`
-
+`IntegrationMethod`  <a name="cfn-apigatewayv2-integration-integrationmethod"></a>
 Specifies the integration's HTTP method type. For WebSocket APIs, if you use a Lambda integration, you must set the integration method to `POST`.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
+`IntegrationSubtype`  <a name="cfn-apigatewayv2-integration-integrationsubtype"></a>
+Supported only for HTTP API `AWS_PROXY` integrations. Specifies the AWS service action to invoke. To learn more, see [Integration subtype reference](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-aws-services-reference.html).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegrationSubtype`
-
-Supported only for HTTP API `AWS_PROXY` integrations. Specifies the AWS service action to invoke. To learn more, see [Integration subtype reference](../../../apigateway/latest/developerguide/http-api-develop-integrations-aws-services-reference.md).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegrationType`
-
+`IntegrationType`  <a name="cfn-apigatewayv2-integration-integrationtype"></a>
 The integration type of an integration. One of the following:
-
 `AWS`: for integrating the route or method request with an AWS service action, including the Lambda function-invoking action. With the Lambda function-invoking action, this is referred to as the Lambda custom integration. With any other AWS service action, this is known as AWS integration. Supported only for WebSocket APIs.
-
 `AWS_PROXY`: for integrating the route or method request with a Lambda function or other AWS service action. This integration is also referred to as a Lambda proxy integration.
-
 `HTTP`: for integrating the route or method request with an HTTP endpoint. This integration is also referred to as the HTTP custom integration. Supported only for WebSocket APIs.
-
-`HTTP_PROXY`: for integrating the route or method request with an
-HTTP endpoint, with the
-client request passed through as-is. This is also referred to as HTTP proxy
-integration. For HTTP API private integrations, use an `HTTP_PROXY`
-integration.
-
+`HTTP_PROXY`: for integrating the route or method request with an HTTP endpoint, with the client request passed through as-is. This is also referred to as HTTP proxy integration. For HTTP API private integrations, use an `HTTP_PROXY` integration.
 `MOCK`: for integrating the route or method request with API Gateway as a "loopback" endpoint without invoking any backend. Supported only for WebSocket APIs.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegrationUri`
-
+`IntegrationUri`  <a name="cfn-apigatewayv2-integration-integrationuri"></a>
 For a Lambda integration, specify the URI of a Lambda function.
-
 For an HTTP integration, specify a fully-qualified URL.
+For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service. If you specify the ARN of an AWS Cloud Map service, API Gateway uses `DiscoverInstances` to identify resources. You can use query parameters to target specific resources. To learn more, see [DiscoverInstances](https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstances.html). For private integrations, all resources must be owned by the same AWS account.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For an HTTP API private integration, specify the ARN of an Application Load
-Balancer listener, Network Load Balancer listener, or AWS Cloud Map service. If
-you specify the ARN of an AWS Cloud Map service, API Gateway uses
-`DiscoverInstances` to identify resources. You can use query
-parameters to target specific resources. To learn more, see [DiscoverInstances](../../../cloud-map/latest/api/api-discoverinstances.md). For private integrations, all resources must be
-owned by the same AWS account.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PassthroughBehavior`
-
+`PassthroughBehavior`  <a name="cfn-apigatewayv2-integration-passthroughbehavior"></a>
 Specifies the pass-through behavior for incoming requests based on the `Content-Type` header in the request, and the available mapping templates specified as the `requestTemplates` property on the `Integration` resource. There are three valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, and `NEVER`. Supported only for WebSocket APIs.
-
 `WHEN_NO_MATCH` passes the request body for unmapped content types through to the integration backend without transformation.
-
 `NEVER` rejects unmapped content types with an `HTTP 415 Unsupported Media Type` response.
-
 `WHEN_NO_TEMPLATES` allows pass-through when the integration has no content types mapped to templates. However, if there is at least one content type defined, unmapped content types will be rejected with the same `HTTP 415 Unsupported Media Type` response.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PayloadFormatVersion`  <a name="cfn-apigatewayv2-integration-payloadformatversion"></a>
+Specifies the format of the payload sent to an integration. Required for HTTP APIs. For HTTP APIs, supported values for Lambda proxy integrations are `1.0` and `2.0`. For all other integrations, `1.0` is the only supported value. To learn more, see [Working with AWS Lambda proxy integrations for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html).
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RequestParameters`  <a name="cfn-apigatewayv2-integration-requestparameters"></a>
+For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend. The key is an integration request parameter name and the associated value is a method request parameter value or static value that must be enclosed within single quotes and pre-encoded as required by the backend. The method request parameter value must match the pattern of `method.request.{{{location}}}.{{{name}}}`, where ` {{{location}}} ` is `querystring`, `path`, or `header`; and ` {{{name}}} ` must be a valid and unique method request parameter name.
+For HTTP API integrations with a specified `integrationSubtype`, request parameters are a key-value map specifying parameters that are passed to `AWS_PROXY` integrations. You can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see [Working with AWS service integrations for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-aws-services.html).
+For HTTP API integrations without a specified `integrationSubtype` request parameters are a key-value map specifying how to transform HTTP requests before sending them to the backend. The key should follow the pattern <action>:<header\|querystring\|path>.<location> where action can be `append`, `overwrite` or` remove`. For values, you can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see [Transforming API requests and responses](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-parameter-mapping.html).
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PayloadFormatVersion`
-
-Specifies the format of the payload sent to an integration. Required for HTTP
-APIs. For HTTP APIs, supported values for Lambda proxy integrations are
-`1.0` and `2.0`. For all other integrations,
-`1.0` is the only supported value. To learn more, see
-[Working with AWS Lambda proxy integrations for HTTP APIs](../../../apigateway/latest/developerguide/http-api-develop-integrations-lambda.md).
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestParameters`
-
-For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend. The key is an integration request parameter name and the associated value is a method request parameter value or static value that must be enclosed within single quotes and pre-encoded as required by the backend. The method request parameter value must match the pattern of `method.request.{location}.{name}`, where `
-                            {location}
-                        ` is `querystring`, `path`, or `header`; and `
-                            {name}
-                        ` must be a valid and unique method request parameter name.
-
-For HTTP API integrations with a specified `integrationSubtype`, request parameters are a key-value map specifying parameters that are passed to `AWS_PROXY` integrations. You can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see [Working with AWS service integrations for HTTP APIs](../../../apigateway/latest/developerguide/http-api-develop-integrations-aws-services.md).
-
-For HTTP API integrations without a specified `integrationSubtype` request parameters are a key-value map specifying how to transform HTTP requests before sending them to the backend. The key should follow the pattern <action>:<header\|querystring\|path>.<location> where action can be `append`, `overwrite` or ` remove`. For values, you can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see [Transforming API requests and responses](../../../apigateway/latest/developerguide/http-api-parameter-mapping.md).
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequestTemplates`
-
+`RequestTemplates`  <a name="cfn-apigatewayv2-integration-requesttemplates"></a>
 Represents a map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. The content type value is the key in this map, and the template (as a String) is the value. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `[a-zA-Z0-9]+`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ResponseParameters`  <a name="cfn-apigatewayv2-integration-responseparameters"></a>
+Supported only for HTTP APIs. You use response parameters to transform the HTTP response from a backend integration before returning the response to clients. Specify a key-value map from a selection key to response parameters. The selection key must be a valid HTTP status code within the range of 200-599. The value is of type [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-integration-responseparameterlist.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-integration-responseparameterlist.html). To learn more, see [Transforming API requests and responses](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-parameter-mapping.html).
+*Required*: No
+*Type*: Object of [ResponseParameterMap](aws-properties-apigatewayv2-integration-responseparametermap.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Object of String
-
-_Pattern_: `[a-zA-Z0-9]+`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResponseParameters`
-
-Supported only for HTTP APIs. You use response parameters to transform the HTTP response from a backend
-integration before returning the response to clients. Specify a key-value map from a selection key to response
-parameters. The selection key must be a valid HTTP status code within the range of 200-599. The value is of type [`ResponseParameterList`](../userguide/aws-properties-apigatewayv2-integration-responseparameterlist.md). To learn more, see [Transforming API requests and responses](../../../apigateway/latest/developerguide/http-api-parameter-mapping.md).
-
-_Required_: No
-
-_Type_: Object of [ResponseParameterMap](aws-properties-apigatewayv2-integration-responseparametermap.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateSelectionExpression`
-
+`TemplateSelectionExpression`  <a name="cfn-apigatewayv2-integration-templateselectionexpression"></a>
 The template selection expression for the integration. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TimeoutInMillis`  <a name="cfn-apigatewayv2-integration-timeoutinmillis"></a>
+Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeoutInMillis`
-
-Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and
-between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29
-seconds for WebSocket APIs and 30 seconds for HTTP APIs.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TlsConfig`
-
-The TLS configuration for a private integration. If you specify a TLS configuration, private integration traffic uses the HTTPS
-protocol. Supported only for HTTP APIs.
-
-_Required_: No
-
-_Type_: [TlsConfig](aws-properties-apigatewayv2-integration-tlsconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TlsConfig`  <a name="cfn-apigatewayv2-integration-tlsconfig"></a>
+The TLS configuration for a private integration. If you specify a TLS configuration, private integration traffic uses the HTTPS protocol. Supported only for HTTP APIs.
+*Required*: No
+*Type*: [TlsConfig](aws-properties-apigatewayv2-integration-tlsconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigatewayv2-integration-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigatewayv2-integration-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Integration resource ID, such as
-`abcd123`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Integration resource ID, such as `abcd123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigatewayv2-integration-return-values-fn--getatt"></a>
 
-`IntegrationId`
+####
+<a name="aws-resource-apigatewayv2-integration-return-values-fn--getatt-fn--getatt"></a>
 
+`IntegrationId`  <a name="IntegrationId-fn::getatt"></a>
 The integration ID.
 
 ## Examples
+<a name="aws-resource-apigatewayv2-integration--examples"></a>
 
-- [Integration creation example](#aws-resource-apigatewayv2-integration--examples--Integration_creation_example)
-
-- [Integration with parameter mapping for an HTTP API](#aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API)
+**Topics**
++ [Integration creation example](#aws-resource-apigatewayv2-integration--examples--Integration_creation_example)
++ [Integration with parameter mapping for an HTTP API](#aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API)
 
 ### Integration creation example
+<a name="aws-resource-apigatewayv2-integration--examples--Integration_creation_example"></a>
 
 The following example creates a Lambda integration for an HTTP API. For full examples, see [example CloudFormation templates](https://github.com/awsdocs/amazon-api-gateway-developer-guide/tree/main/cloudformation-templates) on GitHub.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-integration--examples--Integration_creation_example--json"></a>
 
-```json
-
+```
 {
     "Integration": {
         "Type": "AWS::ApiGatewayV2::Integration",
@@ -386,9 +277,9 @@ The following example creates a Lambda integration for an HTTP API. For full exa
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-integration--examples--Integration_creation_example--yaml"></a>
 
-```yaml
-
+```
 Integration:
   Type: 'AWS::ApiGatewayV2::Integration'
   Properties:
@@ -406,20 +297,17 @@ Integration:
         - /invocations
     IntegrationMethod: POST
     PayloadFormatVersion: '2.0'
-
 ```
 
 ### Integration with parameter mapping for an HTTP API
+<a name="aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API"></a>
 
-The following example creates an integration with parameter mapping. The request parameters
-add a header named `header1` to the request before it reaches the backend integration. The response
-parameters add a header to the integration's response named `header2`, with the static value
-`headervalue`, when the integration returns a 200 status code.
+The following example creates an integration with parameter mapping. The request parameters add a header named `header1` to the request before it reaches the backend integration. The response parameters add a header to the integration's response named `header2`, with the static value `headervalue`, when the integration returns a 200 status code.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API--json"></a>
 
-```json
-
+```
 {
   "MyIntegration": {
     "Type": "AWS::ApiGatewayV2::Integration",
@@ -451,9 +339,9 @@ parameters add a header to the integration's response named `header2`, with the 
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API--yaml"></a>
 
-```yaml
-
+```
 MyIntegration:
 Type: AWS::ApiGatewayV2::Integration
 Properties:
@@ -473,14 +361,7 @@ Properties:
 ```
 
 ## See also
-
-- [CreateIntegration](../../../apigatewayv2/latest/api-reference/apis-apiid-integrations.md#CreateIntegration) in the _Amazon API_
-_Gateway Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MutualTlsAuthentication
-
-ResponseParameter
+<a name="aws-resource-apigatewayv2-integration--seealso"></a>
++ [CreateIntegration](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-integrations.html#CreateIntegration) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

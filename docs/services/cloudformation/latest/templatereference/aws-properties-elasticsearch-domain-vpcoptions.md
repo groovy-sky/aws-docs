@@ -2,90 +2,59 @@
 title: "AWS::Elasticsearch::Domain VPCOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain VPCOptions
+<a name="aws-properties-elasticsearch-domain-vpcoptions"></a>
 
-The virtual private cloud (VPC) configuration for the OpenSearch Service domain. For more
-information, see [Launching your Amazon OpenSearch\
-Service domains using a VPC](../../../opensearch-service/latest/developerguide/vpc.md) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+The virtual private cloud (VPC) configuration for the OpenSearch Service domain. For more information, see [Launching your Amazon OpenSearch Service domains using a VPC](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) in the *Amazon OpenSearch Service Developer Guide*.
 
-###### Important
-
-The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](../userguide/aws-resource-opensearchservice-domain.md) resource. While the legacy Elasticsearch resource
-and options are still supported, we recommend modifying your existing Cloudformation
-templates to use the new OpenSearch Service resource, which supports both OpenSearch and
-Elasticsearch. For more information about the service rename, see [New resource\
-types](../../../opensearch-service/latest/developerguide/rename.md#rename-resource) in the _Amazon OpenSearch Service Developer_
-_Guide_.
+**Important**
+The `AWS::Elasticsearch::Domain` resource is being replaced by the [AWS::OpenSearchService::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html) resource. While the legacy Elasticsearch resource and options are still supported, we recommend modifying your existing Cloudformation templates to use the new OpenSearch Service resource, which supports both OpenSearch and Elasticsearch. For more information about the service rename, see [New resource types](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rename.html#rename-resource) in the *Amazon OpenSearch Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-elasticsearch-domain-vpcoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticsearch-domain-vpcoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-elasticsearch-domain-vpcoptions-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-elasticsearch-domain-vpcoptions-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticsearch-domain-vpcoptions-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-elasticsearch-domain-vpcoptions-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-elasticsearch-domain-vpcoptions-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticsearch-domain-vpcoptions-properties"></a>
 
-`SecurityGroupIds`
+`SecurityGroupIds`  <a name="cfn-elasticsearch-domain-vpcoptions-securitygroupids"></a>
+The list of security group IDs that are associated with the VPC endpoints for the domain. If you don't provide a security group ID, OpenSearch Service uses the default security group for the VPC. To learn more, see [Security groups for your VPC ](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) in the *Amazon VPC User Guide*.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The list of security group IDs that are associated with the VPC endpoints for the domain.
-If you don't provide a security group ID, OpenSearch Service uses the default security group
-for the VPC. To learn more, see [Security groups for your VPC](../../../vpc/latest/userguide/vpc-securitygroups.md) in
-the _Amazon VPC User Guide_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
-Provide one subnet ID for each Availability Zone that your domain uses. For example, you
-must specify three subnet IDs for a three Availability Zone domain. To learn more, see [VPCs and subnets](../../../vpc/latest/userguide/vpc-subnets.md) in
-the _Amazon VPC User Guide_.
-
+`SubnetIds`  <a name="cfn-elasticsearch-domain-vpcoptions-subnetids"></a>
+Provide one subnet ID for each Availability Zone that your domain uses. For example, you must specify three subnet IDs for a three Availability Zone domain. To learn more, see [VPCs and subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html) in the *Amazon VPC User Guide*.
 Required if you're creating your domain inside a VPC.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Launching your Amazon OpenSearch Service domains within a VPC](../../../opensearch-service/latest/developerguide/vpc.md) in the
-_Amazon OpenSearch Service Developer Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ZoneAwarenessConfig
+<a name="aws-properties-elasticsearch-domain-vpcoptions--seealso"></a>
++ [Launching your Amazon OpenSearch Service domains within a VPC](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) in the *Amazon OpenSearch Service Developer Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

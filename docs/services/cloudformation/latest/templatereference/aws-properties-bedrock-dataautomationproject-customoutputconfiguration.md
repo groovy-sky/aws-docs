@@ -2,53 +2,42 @@
 title: "AWS::Bedrock::DataAutomationProject CustomOutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject CustomOutputConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-customoutputconfiguration"></a>
 
 Blueprints to apply to objects processed by the project.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-customoutputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-customoutputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Blueprints" : [ BlueprintItem, ... ]
+  "[Blueprints](#cfn-bedrock-dataautomationproject-customoutputconfiguration-blueprints)" : {{[ BlueprintItem, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-customoutputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Blueprints:
-    - BlueprintItem
-
+```
+  [Blueprints](#cfn-bedrock-dataautomationproject-customoutputconfiguration-blueprints): {{
+    - BlueprintItem}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-customoutputconfiguration-properties"></a>
 
-`Blueprints`
-
+`Blueprints`  <a name="cfn-bedrock-dataautomationproject-customoutputconfiguration-blueprints"></a>
 A list of blueprints.
-
-_Required_: No
-
-_Type_: Array of [BlueprintItem](aws-properties-bedrock-dataautomationproject-blueprintitem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ChannelLabelingConfiguration
-
-DocumentBoundingBox
+*Required*: No
+*Type*: Array of [BlueprintItem](aws-properties-bedrock-dataautomationproject-blueprintitem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

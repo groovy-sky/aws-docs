@@ -2,87 +2,63 @@
 title: "AWS::Personalize::Solution HpoObjective"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Solution HpoObjective
+<a name="aws-properties-personalize-solution-hpoobjective"></a>
 
 The metric to optimize during hyperparameter optimization (HPO).
 
-###### Note
-
-Amazon Personalize doesn't support configuring the `hpoObjective`
-at this time.
+**Note**
+Amazon Personalize doesn't support configuring the `hpoObjective` at this time.
 
 ## Syntax
+<a name="aws-properties-personalize-solution-hpoobjective-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-personalize-solution-hpoobjective-syntax.json"></a>
 
-```json
-
+```
 {
-  "MetricName" : String,
-  "MetricRegex" : String,
-  "Type" : String
+  "[MetricName](#cfn-personalize-solution-hpoobjective-metricname)" : {{String}},
+  "[MetricRegex](#cfn-personalize-solution-hpoobjective-metricregex)" : {{String}},
+  "[Type](#cfn-personalize-solution-hpoobjective-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-personalize-solution-hpoobjective-syntax.yaml"></a>
 
-```yaml
-
-  MetricName: String
-  MetricRegex: String
-  Type: String
-
+```
+  [MetricName](#cfn-personalize-solution-hpoobjective-metricname): {{String}}
+  [MetricRegex](#cfn-personalize-solution-hpoobjective-metricregex): {{String}}
+  [Type](#cfn-personalize-solution-hpoobjective-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-personalize-solution-hpoobjective-properties"></a>
 
-`MetricName`
-
+`MetricName`  <a name="cfn-personalize-solution-hpoobjective-metricname"></a>
 The name of the metric.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MetricRegex`
-
+`MetricRegex`  <a name="cfn-personalize-solution-hpoobjective-metricregex"></a>
 A regular expression for finding the metric in the training job logs.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-personalize-solution-hpoobjective-type"></a>
 The type of the metric. Valid values are `Maximize` and `Minimize`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Maximize | Minimize`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HpoConfig
-
-HpoResourceConfig
+*Required*: No
+*Type*: String
+*Allowed values*: `Maximize | Minimize`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

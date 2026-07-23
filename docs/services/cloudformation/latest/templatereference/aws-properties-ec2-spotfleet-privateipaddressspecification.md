@@ -2,65 +2,49 @@
 title: "AWS::EC2::SpotFleet PrivateIpAddressSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet PrivateIpAddressSpecification
+<a name="aws-properties-ec2-spotfleet-privateipaddressspecification"></a>
 
 Describes a secondary private IPv4 address for a network interface.
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-privateipaddressspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-privateipaddressspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Primary" : Boolean,
-  "PrivateIpAddress" : String
+  "[Primary](#cfn-ec2-spotfleet-privateipaddressspecification-primary)" : {{Boolean}},
+  "[PrivateIpAddress](#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-privateipaddressspecification-syntax.yaml"></a>
 
-```yaml
-
-  Primary: Boolean
-  PrivateIpAddress: String
-
+```
+  [Primary](#cfn-ec2-spotfleet-privateipaddressspecification-primary): {{Boolean}}
+  [PrivateIpAddress](#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-privateipaddressspecification-properties"></a>
 
-`Primary`
+`Primary`  <a name="cfn-ec2-spotfleet-privateipaddressspecification-primary"></a>
+Indicates whether the private IPv4 address is the primary private IPv4 address. Only one IPv4 address can be designated as primary.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Indicates whether the private IPv4 address is the primary private IPv4 address. Only
-one IPv4 address can be designated as primary.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrivateIpAddress`
-
+`PrivateIpAddress`  <a name="cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress"></a>
 The private IPv4 address.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PerformanceFactorReferenceRequest
-
-SpotCapacityRebalance
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

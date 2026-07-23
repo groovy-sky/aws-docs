@@ -2,97 +2,65 @@
 title: "AWS::Bedrock::DataSource PatternObjectFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource PatternObjectFilter
+<a name="aws-properties-bedrock-datasource-patternobjectfilter"></a>
 
-The specific filters applied to your data source content. You can filter out or
-include certain content.
+The specific filters applied to your data source content. You can filter out or include certain content.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-patternobjectfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-patternobjectfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExclusionFilters" : [ String, ... ],
-  "InclusionFilters" : [ String, ... ],
-  "ObjectType" : String
+  "[ExclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-exclusionfilters)" : {{[ String, ... ]}},
+  "[InclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-inclusionfilters)" : {{[ String, ... ]}},
+  "[ObjectType](#cfn-bedrock-datasource-patternobjectfilter-objecttype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-patternobjectfilter-syntax.yaml"></a>
 
-```yaml
-
-  ExclusionFilters:
-    - String
-  InclusionFilters:
-    - String
-  ObjectType: String
-
+```
+  [ExclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-exclusionfilters): {{
+    - String}}
+  [InclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-inclusionfilters): {{
+    - String}}
+  [ObjectType](#cfn-bedrock-datasource-patternobjectfilter-objecttype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-patternobjectfilter-properties"></a>
 
-`ExclusionFilters`
+`ExclusionFilters`  <a name="cfn-bedrock-datasource-patternobjectfilter-exclusionfilters"></a>
+A list of one or more exclusion regular expression patterns to exclude certain object types that adhere to the pattern. If you specify an inclusion and exclusion filter/pattern and both match a document, the exclusion filter takes precedence and the document isn’t crawled.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1000 | 25`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of one or more exclusion regular expression patterns to exclude certain
-object types that adhere to the pattern. If you specify an inclusion and exclusion
-filter/pattern and both match a document, the exclusion filter takes precedence
-and the document isn’t crawled.
+`InclusionFilters`  <a name="cfn-bedrock-datasource-patternobjectfilter-inclusionfilters"></a>
+A list of one or more inclusion regular expression patterns to include certain object types that adhere to the pattern. If you specify an inclusion and exclusion filter/pattern and both match a document, the exclusion filter takes precedence and the document isn’t crawled.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1000 | 25`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1000 | 25`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InclusionFilters`
-
-A list of one or more inclusion regular expression patterns to include certain
-object types that adhere to the pattern. If you specify an inclusion and exclusion
-filter/pattern and both match a document, the exclusion filter takes precedence
-and the document isn’t crawled.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1000 | 25`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObjectType`
-
+`ObjectType`  <a name="cfn-bedrock-datasource-patternobjectfilter-objecttype"></a>
 The supported object type or content type of the data source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParsingPrompt
-
-PatternObjectFilterConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

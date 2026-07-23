@@ -2,72 +2,53 @@
 title: "AWS::DevOpsAgent::Association SlackChannel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association SlackChannel
+<a name="aws-properties-devopsagent-association-slackchannel"></a>
 
 Represents a Slack channel with its unique identifier and optional display name.
 
 ## Syntax
+<a name="aws-properties-devopsagent-association-slackchannel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-association-slackchannel-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChannelId" : String,
-  "ChannelName" : String
+  "[ChannelId](#cfn-devopsagent-association-slackchannel-channelid)" : {{String}},
+  "[ChannelName](#cfn-devopsagent-association-slackchannel-channelname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-association-slackchannel-syntax.yaml"></a>
 
-```yaml
-
-  ChannelId: String
-  ChannelName: String
-
+```
+  [ChannelId](#cfn-devopsagent-association-slackchannel-channelid): {{String}}
+  [ChannelName](#cfn-devopsagent-association-slackchannel-channelname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-association-slackchannel-properties"></a>
 
-`ChannelId`
-
+`ChannelId`  <a name="cfn-devopsagent-association-slackchannel-channelid"></a>
 The Slack channel ID.
-
 The ID must match the pattern `^[CGD][A-Z0-9]+$` and be between 8 and 16 characters.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[CGD][A-Z0-9]+$`
+*Minimum*: `8`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[CGD][A-Z0-9]+$`
-
-_Minimum_: `8`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChannelName`
-
+`ChannelName`  <a name="cfn-devopsagent-association-slackchannel-channelname"></a>
 Slack channel name.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceNowConfiguration
-
-SlackConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

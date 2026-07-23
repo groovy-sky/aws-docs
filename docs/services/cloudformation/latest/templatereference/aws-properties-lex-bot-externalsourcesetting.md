@@ -2,53 +2,42 @@
 title: "AWS::Lex::Bot ExternalSourceSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot ExternalSourceSetting
+<a name="aws-properties-lex-bot-externalsourcesetting"></a>
 
 Provides information about the external source of the slot type's definition.
 
 ## Syntax
+<a name="aws-properties-lex-bot-externalsourcesetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-externalsourcesetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "GrammarSlotTypeSetting" : GrammarSlotTypeSetting
+  "[GrammarSlotTypeSetting](#cfn-lex-bot-externalsourcesetting-grammarslottypesetting)" : {{GrammarSlotTypeSetting}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-externalsourcesetting-syntax.yaml"></a>
 
-```yaml
-
-  GrammarSlotTypeSetting:
-    GrammarSlotTypeSetting
-
+```
+  [GrammarSlotTypeSetting](#cfn-lex-bot-externalsourcesetting-grammarslottypesetting): {{
+    GrammarSlotTypeSetting}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-externalsourcesetting-properties"></a>
 
-`GrammarSlotTypeSetting`
-
+`GrammarSlotTypeSetting`  <a name="cfn-lex-bot-externalsourcesetting-grammarslottypesetting"></a>
 Settings required for a slot type based on a grammar that you provide.
-
-_Required_: No
-
-_Type_: [GrammarSlotTypeSetting](aws-properties-lex-bot-grammarslottypesetting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExactResponseFields
-
-FulfillmentCodeHookSetting
+*Required*: No
+*Type*: [GrammarSlotTypeSetting](aws-properties-lex-bot-grammarslottypesetting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

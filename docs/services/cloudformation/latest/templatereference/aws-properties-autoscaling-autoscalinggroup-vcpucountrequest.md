@@ -2,70 +2,51 @@
 title: "AWS::AutoScaling::AutoScalingGroup VCpuCountRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::AutoScalingGroup VCpuCountRequest
+<a name="aws-properties-autoscaling-autoscalinggroup-vcpucountrequest"></a>
 
-`VCpuCountRequest` is a property of the `InstanceRequirements` property
-of the [AWS::AutoScaling::AutoScalingGroup LaunchTemplateOverrides](../userguide/aws-properties-autoscaling-autoscalinggroup-launchtemplateoverrides.md) property type that
-describes the minimum and maximum number of vCPUs for an instance type.
+`VCpuCountRequest` is a property of the `InstanceRequirements` property of the [AWS::AutoScaling::AutoScalingGroup LaunchTemplateOverrides](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplateoverrides.html) property type that describes the minimum and maximum number of vCPUs for an instance type.
 
 ## Syntax
+<a name="aws-properties-autoscaling-autoscalinggroup-vcpucountrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-autoscaling-autoscalinggroup-vcpucountrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "Max" : Integer,
-  "Min" : Integer
+  "[Max](#cfn-autoscaling-autoscalinggroup-vcpucountrequest-max)" : {{Integer}},
+  "[Min](#cfn-autoscaling-autoscalinggroup-vcpucountrequest-min)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-autoscaling-autoscalinggroup-vcpucountrequest-syntax.yaml"></a>
 
-```yaml
-
-  Max: Integer
-  Min: Integer
-
+```
+  [Max](#cfn-autoscaling-autoscalinggroup-vcpucountrequest-max): {{Integer}}
+  [Min](#cfn-autoscaling-autoscalinggroup-vcpucountrequest-min): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-autoscaling-autoscalinggroup-vcpucountrequest-properties"></a>
 
-`Max`
-
+`Max`  <a name="cfn-autoscaling-autoscalinggroup-vcpucountrequest-max"></a>
 The maximum number of vCPUs.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Min`
-
+`Min`  <a name="cfn-autoscaling-autoscalinggroup-vcpucountrequest-min"></a>
 The minimum number of vCPUs.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrafficSourceIdentifier
-
-AWS::AutoScaling::LaunchConfiguration
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

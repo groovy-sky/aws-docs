@@ -2,180 +2,132 @@
 title: "AWS::Connect::Rule Actions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule Actions
+<a name="aws-properties-connect-rule-actions"></a>
 
-A list of actions to be run when the rule is triggered.
+ A list of actions to be run when the rule is triggered.
 
 ## Syntax
+<a name="aws-properties-connect-rule-actions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-actions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AssignContactCategoryActions" : [ Json, ... ],
-  "CreateCaseActions" : [ CreateCaseAction, ... ],
-  "EndAssociatedTasksActions" : [ Json, ... ],
-  "EventBridgeActions" : [ EventBridgeAction, ... ],
-  "SendNotificationActions" : [ SendNotificationAction, ... ],
-  "SubmitAutoEvaluationActions" : [ SubmitAutoEvaluationAction, ... ],
-  "TaskActions" : [ TaskAction, ... ],
-  "UpdateCaseActions" : [ UpdateCaseAction, ... ]
+  "[AssignContactCategoryActions](#cfn-connect-rule-actions-assigncontactcategoryactions)" : {{[ Json, ... ]}},
+  "[AssignSlaActions](#cfn-connect-rule-actions-assignslaactions)" : {{[ AssignSlaAction, ... ]}},
+  "[CreateCaseActions](#cfn-connect-rule-actions-createcaseactions)" : {{[ CreateCaseAction, ... ]}},
+  "[EndAssociatedTasksActions](#cfn-connect-rule-actions-endassociatedtasksactions)" : {{[ Json, ... ]}},
+  "[EventBridgeActions](#cfn-connect-rule-actions-eventbridgeactions)" : {{[ EventBridgeAction, ... ]}},
+  "[SendNotificationActions](#cfn-connect-rule-actions-sendnotificationactions)" : {{[ SendNotificationAction, ... ]}},
+  "[SubmitAutoEvaluationActions](#cfn-connect-rule-actions-submitautoevaluationactions)" : {{[ SubmitAutoEvaluationAction, ... ]}},
+  "[TaskActions](#cfn-connect-rule-actions-taskactions)" : {{[ TaskAction, ... ]}},
+  "[UpdateCaseActions](#cfn-connect-rule-actions-updatecaseactions)" : {{[ UpdateCaseAction, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-actions-syntax.yaml"></a>
 
-```yaml
-
-  AssignContactCategoryActions:
-    - Json
-  CreateCaseActions:
-    - CreateCaseAction
-  EndAssociatedTasksActions:
-    - Json
-  EventBridgeActions:
-    - EventBridgeAction
-  SendNotificationActions:
-    - SendNotificationAction
-  SubmitAutoEvaluationActions:
-    - SubmitAutoEvaluationAction
-  TaskActions:
-    - TaskAction
-  UpdateCaseActions:
-    - UpdateCaseAction
-
+```
+  [AssignContactCategoryActions](#cfn-connect-rule-actions-assigncontactcategoryactions): {{
+    - Json}}
+  [AssignSlaActions](#cfn-connect-rule-actions-assignslaactions): {{
+    - AssignSlaAction}}
+  [CreateCaseActions](#cfn-connect-rule-actions-createcaseactions): {{
+    - CreateCaseAction}}
+  [EndAssociatedTasksActions](#cfn-connect-rule-actions-endassociatedtasksactions): {{
+    - Json}}
+  [EventBridgeActions](#cfn-connect-rule-actions-eventbridgeactions): {{
+    - EventBridgeAction}}
+  [SendNotificationActions](#cfn-connect-rule-actions-sendnotificationactions): {{
+    - SendNotificationAction}}
+  [SubmitAutoEvaluationActions](#cfn-connect-rule-actions-submitautoevaluationactions): {{
+    - SubmitAutoEvaluationAction}}
+  [TaskActions](#cfn-connect-rule-actions-taskactions): {{
+    - TaskAction}}
+  [UpdateCaseActions](#cfn-connect-rule-actions-updatecaseactions): {{
+    - UpdateCaseAction}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-actions-properties"></a>
 
-`AssignContactCategoryActions`
+`AssignContactCategoryActions`  <a name="cfn-connect-rule-actions-assigncontactcategoryactions"></a>
+Information about the contact category action. The syntax can be empty, for example, `{}`.
+*Required*: No
+*Type*: Array of Json
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about the contact category action. The syntax can be empty, for example,
-`{}`.
-
-_Required_: No
-
-_Type_: Array of Json
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CreateCaseActions`
-
+`AssignSlaActions`  <a name="cfn-connect-rule-actions-assignslaactions"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [AssignSlaAction](aws-properties-connect-rule-assignslaaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [CreateCaseAction](aws-properties-connect-rule-createcaseaction.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndAssociatedTasksActions`
-
+`CreateCaseActions`  <a name="cfn-connect-rule-actions-createcaseactions"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [CreateCaseAction](aws-properties-connect-rule-createcaseaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EndAssociatedTasksActions`  <a name="cfn-connect-rule-actions-endassociatedtasksactions"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of Json
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of Json
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventBridgeActions`
-
+`EventBridgeActions`  <a name="cfn-connect-rule-actions-eventbridgeactions"></a>
 Information about the EventBridge action.
+*Required*: No
+*Type*: Array of [EventBridgeAction](aws-properties-connect-rule-eventbridgeaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EventBridgeAction](aws-properties-connect-rule-eventbridgeaction.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SendNotificationActions`
-
+`SendNotificationActions`  <a name="cfn-connect-rule-actions-sendnotificationactions"></a>
 Information about the send notification action.
+*Required*: No
+*Type*: Array of [SendNotificationAction](aws-properties-connect-rule-sendnotificationaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SendNotificationAction](aws-properties-connect-rule-sendnotificationaction.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubmitAutoEvaluationActions`
-
+`SubmitAutoEvaluationActions`  <a name="cfn-connect-rule-actions-submitautoevaluationactions"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [SubmitAutoEvaluationAction](aws-properties-connect-rule-submitautoevaluationaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TaskActions`  <a name="cfn-connect-rule-actions-taskactions"></a>
+Information about the task action. This field is required if `TriggerEventSource` is one of the following values: `OnZendeskTicketCreate` \| `OnZendeskTicketStatusUpdate` \| `OnSalesforceCaseCreate`
+*Required*: No
+*Type*: Array of [TaskAction](aws-properties-connect-rule-taskaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [SubmitAutoEvaluationAction](aws-properties-connect-rule-submitautoevaluationaction.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TaskActions`
-
-Information about the task action. This field is required if
-`TriggerEventSource` is one of the following values:
-`OnZendeskTicketCreate` \| `OnZendeskTicketStatusUpdate` \|
-`OnSalesforceCaseCreate`
-
-_Required_: No
-
-_Type_: Array of [TaskAction](aws-properties-connect-rule-taskaction.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdateCaseActions`
-
+`UpdateCaseActions`  <a name="cfn-connect-rule-actions-updatecaseactions"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [UpdateCaseAction](aws-properties-connect-rule-updatecaseaction.md)
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::Rule
-
-CreateCaseAction
+*Required*: No
+*Type*: Array of [UpdateCaseAction](aws-properties-connect-rule-updatecaseaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

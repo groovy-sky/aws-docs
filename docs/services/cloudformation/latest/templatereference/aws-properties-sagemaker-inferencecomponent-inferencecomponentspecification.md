@@ -2,134 +2,84 @@
 title: "AWS::SageMaker::InferenceComponent InferenceComponentSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent InferenceComponentSpecification
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification"></a>
 
-Details about the resources to deploy with this inference component, including the
-model, container, and compute resources.
+Details about the resources to deploy with this inference component, including the model, container, and compute resources.
 
 ## Syntax
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "BaseInferenceComponentName" : String,
-  "ComputeResourceRequirements" : InferenceComponentComputeResourceRequirements,
-  "Container" : InferenceComponentContainerSpecification,
-  "ModelName" : String,
-  "StartupParameters" : InferenceComponentStartupParameters
+  "[BaseInferenceComponentName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-baseinferencecomponentname)" : {{String}},
+  "[ComputeResourceRequirements](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-computeresourcerequirements)" : {{InferenceComponentComputeResourceRequirements}},
+  "[Container](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-container)" : {{InferenceComponentContainerSpecification}},
+  "[ModelName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-modelname)" : {{String}},
+  "[StartupParameters](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-startupparameters)" : {{InferenceComponentStartupParameters}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification-syntax.yaml"></a>
 
-```yaml
-
-  BaseInferenceComponentName: String
-  ComputeResourceRequirements:
-    InferenceComponentComputeResourceRequirements
-  Container:
-    InferenceComponentContainerSpecification
-  ModelName: String
-  StartupParameters:
-    InferenceComponentStartupParameters
-
+```
+  [BaseInferenceComponentName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-baseinferencecomponentname): {{String}}
+  [ComputeResourceRequirements](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-computeresourcerequirements): {{
+    InferenceComponentComputeResourceRequirements}}
+  [Container](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-container): {{
+    InferenceComponentContainerSpecification}}
+  [ModelName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-modelname): {{String}}
+  [StartupParameters](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-startupparameters): {{
+    InferenceComponentStartupParameters}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification-properties"></a>
 
-`BaseInferenceComponentName`
+`BaseInferenceComponentName`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-baseinferencecomponentname"></a>
+The name of an existing inference component that is to contain the inference component that you're creating with your request.
+Specify this parameter only if your request is meant to create an adapter inference component. An adapter inference component contains the path to an adapter model. The purpose of the adapter model is to tailor the inference output of a base foundation model, which is hosted by the base inference component. The adapter inference component uses the compute resources that you assigned to the base inference component.
+When you create an adapter inference component, use the `Container` parameter to specify the location of the adapter artifacts. In the parameter value, use the `ArtifactUrl` parameter of the `InferenceComponentContainerSpecification` data type.
+Before you can create an adapter inference component, you must have an existing inference component that contains the foundation model that you want to adapt.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of an existing inference component that is to contain the inference component
-that you're creating with your request.
+`ComputeResourceRequirements`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-computeresourcerequirements"></a>
+The compute resources allocated to run the model, plus any adapter models, that you assign to the inference component.
+Omit this parameter if your request is meant to create an adapter inference component. An adapter inference component is loaded by a base inference component, and it uses the compute resources of the base inference component.
+*Required*: No
+*Type*: [InferenceComponentComputeResourceRequirements](aws-properties-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specify this parameter only if your request is meant to create an adapter inference
-component. An adapter inference component contains the path to an adapter model. The
-purpose of the adapter model is to tailor the inference output of a base foundation model,
-which is hosted by the base inference component. The adapter inference component uses the
-compute resources that you assigned to the base inference component.
+`Container`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-container"></a>
+Defines a container that provides the runtime environment for a model that you deploy with an inference component.
+*Required*: No
+*Type*: [InferenceComponentContainerSpecification](aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-When you create an adapter inference component, use the `Container` parameter
-to specify the location of the adapter artifacts. In the parameter value, use the
-`ArtifactUrl` parameter of the
-`InferenceComponentContainerSpecification` data type.
+`ModelName`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-modelname"></a>
+The name of an existing SageMaker AI model object in your account that you want to deploy with the inference component.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Before you can create an adapter inference component, you must have an existing
-inference component that contains the foundation model that you want to adapt.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComputeResourceRequirements`
-
-The compute resources allocated to run the model, plus any
-adapter models, that you assign to the inference component.
-
-Omit this parameter if your request is meant to create an adapter inference component.
-An adapter inference component is loaded by a base inference component, and it uses the
-compute resources of the base inference component.
-
-_Required_: No
-
-_Type_: [InferenceComponentComputeResourceRequirements](aws-properties-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Container`
-
-Defines a container that provides the runtime environment for a model that you deploy
-with an inference component.
-
-_Required_: No
-
-_Type_: [InferenceComponentContainerSpecification](aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ModelName`
-
-The name of an existing SageMaker AI model object in your account that you want to
-deploy with the inference component.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartupParameters`
-
+`StartupParameters`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-startupparameters"></a>
 Settings that take effect while the model container starts up.
-
-_Required_: No
-
-_Type_: [InferenceComponentStartupParameters](aws-properties-sagemaker-inferencecomponent-inferencecomponentstartupparameters.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InferenceComponentRuntimeConfig
-
-InferenceComponentStartupParameters
+*Required*: No
+*Type*: [InferenceComponentStartupParameters](aws-properties-sagemaker-inferencecomponent-inferencecomponentstartupparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

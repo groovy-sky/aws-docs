@@ -2,119 +2,83 @@
 title: "AWS::MediaConnect::Bridge BridgeNetworkOutput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Bridge BridgeNetworkOutput
+<a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput"></a>
 
-The output of the bridge. A network output is delivered to your premises.
+ The output of the bridge. A network output is delivered to your premises.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput-syntax.json"></a>
 
-```json
-
+```
 {
-  "IpAddress" : String,
-  "Name" : String,
-  "NetworkName" : String,
-  "Port" : Integer,
-  "Protocol" : String,
-  "Ttl" : Integer
+  "[IpAddress](#cfn-mediaconnect-bridge-bridgenetworkoutput-ipaddress)" : {{String}},
+  "[Name](#cfn-mediaconnect-bridge-bridgenetworkoutput-name)" : {{String}},
+  "[NetworkName](#cfn-mediaconnect-bridge-bridgenetworkoutput-networkname)" : {{String}},
+  "[Port](#cfn-mediaconnect-bridge-bridgenetworkoutput-port)" : {{Integer}},
+  "[Protocol](#cfn-mediaconnect-bridge-bridgenetworkoutput-protocol)" : {{String}},
+  "[Ttl](#cfn-mediaconnect-bridge-bridgenetworkoutput-ttl)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput-syntax.yaml"></a>
 
-```yaml
-
-  IpAddress: String
-  Name: String
-  NetworkName: String
-  Port: Integer
-  Protocol: String
-  Ttl: Integer
-
+```
+  [IpAddress](#cfn-mediaconnect-bridge-bridgenetworkoutput-ipaddress): {{String}}
+  [Name](#cfn-mediaconnect-bridge-bridgenetworkoutput-name): {{String}}
+  [NetworkName](#cfn-mediaconnect-bridge-bridgenetworkoutput-networkname): {{String}}
+  [Port](#cfn-mediaconnect-bridge-bridgenetworkoutput-port): {{Integer}}
+  [Protocol](#cfn-mediaconnect-bridge-bridgenetworkoutput-protocol): {{String}}
+  [Ttl](#cfn-mediaconnect-bridge-bridgenetworkoutput-ttl): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput-properties"></a>
 
-`IpAddress`
+`IpAddress`  <a name="cfn-mediaconnect-bridge-bridgenetworkoutput-ipaddress"></a>
+ The network output IP address.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The network output IP address.
+`Name`  <a name="cfn-mediaconnect-bridge-bridgenetworkoutput-name"></a>
+ The network output name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`NetworkName`  <a name="cfn-mediaconnect-bridge-bridgenetworkoutput-networkname"></a>
+ The network output's gateway network name.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Port`  <a name="cfn-mediaconnect-bridge-bridgenetworkoutput-port"></a>
+ The network output's port.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Protocol`  <a name="cfn-mediaconnect-bridge-bridgenetworkoutput-protocol"></a>
+ The network output protocol.
+AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `rtp-fec | rtp | udp`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Name`
-
-The network output name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkName`
-
-The network output's gateway network name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
-The network output's port.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The network output protocol.
-
-###### Note
-
-AWS Elemental MediaConnect no longer supports the Fujitsu QoS
-protocol. This reference is maintained for legacy purposes only.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `rtp-fec | rtp | udp`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ttl`
-
-The network output TTL.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BridgeFlowSource
-
-BridgeNetworkSource
+`Ttl`  <a name="cfn-mediaconnect-bridge-bridgenetworkoutput-ttl"></a>
+ The network output TTL.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

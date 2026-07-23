@@ -2,74 +2,55 @@
 title: "AWS::Lambda::CapacityProvider CapacityProviderVpcConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::CapacityProvider CapacityProviderVpcConfig
+<a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig"></a>
 
 VPC configuration that specifies the network settings for compute instances managed by the capacity provider.
 
 ## Syntax
+<a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ]
+  "[SecurityGroupIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-
+```
+  [SecurityGroupIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig-properties"></a>
 
-`SecurityGroupIds`
-
+`SecurityGroupIds`  <a name="cfn-lambda-capacityprovider-capacityprovidervpcconfig-securitygroupids"></a>
 A list of security group IDs that control network access for compute instances managed by the capacity provider.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0 | 0`
+*Maximum*: `1024 | 5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0 | 0`
-
-_Maximum_: `1024 | 5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-lambda-capacityprovider-capacityprovidervpcconfig-subnetids"></a>
 A list of subnet IDs where the capacity provider launches compute instances.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0 | 1`
-
-_Maximum_: `1024 | 16`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityProviderScalingConfig
-
-InstanceRequirements
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0 | 1`
+*Maximum*: `1024 | 16`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

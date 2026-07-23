@@ -2,75 +2,51 @@
 title: "AWS::KinesisFirehose::DeliveryStream Deserializer"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream Deserializer
+<a name="aws-properties-kinesisfirehose-deliverystream-deserializer"></a>
 
-The deserializer you want Kinesis Data Firehose to use for converting the input data
-from JSON. Kinesis Data Firehose then serializes the data to its final format using the
-`Serializer`. Kinesis Data Firehose supports two types of deserializers: the
-[Apache Hive JSON SerDe](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL) and the [OpenX JSON SerDe](https://github.com/rcongiu/Hive-JSON-Serde).
+The deserializer you want Kinesis Data Firehose to use for converting the input data from JSON. Kinesis Data Firehose then serializes the data to its final format using the `Serializer`. Kinesis Data Firehose supports two types of deserializers: the [Apache Hive JSON SerDe](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-JSON) and the [OpenX JSON SerDe](https://github.com/rcongiu/Hive-JSON-Serde).
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-deserializer-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-deserializer-syntax.json"></a>
 
-```json
-
+```
 {
-  "HiveJsonSerDe" : HiveJsonSerDe,
-  "OpenXJsonSerDe" : OpenXJsonSerDe
+  "[HiveJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-hivejsonserde)" : {{HiveJsonSerDe}},
+  "[OpenXJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-openxjsonserde)" : {{OpenXJsonSerDe}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-deserializer-syntax.yaml"></a>
 
-```yaml
-
-  HiveJsonSerDe:
-    HiveJsonSerDe
-  OpenXJsonSerDe:
-    OpenXJsonSerDe
-
+```
+  [HiveJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-hivejsonserde): {{
+    HiveJsonSerDe}}
+  [OpenXJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-openxjsonserde): {{
+    OpenXJsonSerDe}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-deserializer-properties"></a>
 
-`HiveJsonSerDe`
+`HiveJsonSerDe`  <a name="cfn-kinesisfirehose-deliverystream-deserializer-hivejsonserde"></a>
+The native Hive / HCatalog JsonSerDe. Used by Firehose for deserializing data, which means converting it from the JSON format in preparation for serializing it to the Parquet or ORC format. This is one of two deserializers you can choose, depending on which one offers the functionality you need. The other option is the OpenX SerDe.
+*Required*: No
+*Type*: [HiveJsonSerDe](aws-properties-kinesisfirehose-deliverystream-hivejsonserde.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The native Hive / HCatalog JsonSerDe. Used by Firehose for deserializing
-data, which means converting it from the JSON format in preparation for serializing it to
-the Parquet or ORC format. This is one of two deserializers you can choose, depending on
-which one offers the functionality you need. The other option is the OpenX SerDe.
-
-_Required_: No
-
-_Type_: [HiveJsonSerDe](aws-properties-kinesisfirehose-deliverystream-hivejsonserde.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OpenXJsonSerDe`
-
-The OpenX SerDe. Used by Firehose for deserializing data, which means
-converting it from the JSON format in preparation for serializing it to the Parquet or ORC
-format. This is one of two deserializers you can choose, depending on which one offers the
-functionality you need. The other option is the native Hive / HCatalog JsonSerDe.
-
-_Required_: No
-
-_Type_: [OpenXJsonSerDe](aws-properties-kinesisfirehose-deliverystream-openxjsonserde.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeliveryStreamEncryptionConfigurationInput
-
-DestinationTableConfiguration
+`OpenXJsonSerDe`  <a name="cfn-kinesisfirehose-deliverystream-deserializer-openxjsonserde"></a>
+The OpenX SerDe. Used by Firehose for deserializing data, which means converting it from the JSON format in preparation for serializing it to the Parquet or ORC format. This is one of two deserializers you can choose, depending on which one offers the functionality you need. The other option is the native Hive / HCatalog JsonSerDe.
+*Required*: No
+*Type*: [OpenXJsonSerDe](aws-properties-kinesisfirehose-deliverystream-openxjsonserde.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

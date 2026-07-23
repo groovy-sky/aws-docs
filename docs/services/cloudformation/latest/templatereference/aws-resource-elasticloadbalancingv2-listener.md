@@ -2,226 +2,178 @@
 title: "AWS::ElasticLoadBalancingV2::Listener"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::Listener
+<a name="aws-resource-elasticloadbalancingv2-listener"></a>
 
-Specifies a listener for an Application Load Balancer, Network Load Balancer, or
-Gateway Load Balancer.
+Specifies a listener for an Application Load Balancer, Network Load Balancer, or Gateway Load Balancer.
 
 ## Syntax
+<a name="aws-resource-elasticloadbalancingv2-listener-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ElasticLoadBalancingV2::Listener",
   "Properties" : {
-      "AlpnPolicy" : [ String, ... ],
-      "Certificates" : [ Certificate, ... ],
-      "DefaultActions" : [ Action, ... ],
-      "ListenerAttributes" : [ ListenerAttribute, ... ],
-      "LoadBalancerArn" : String,
-      "MutualAuthentication" : MutualAuthentication,
-      "Port" : Integer,
-      "Protocol" : String,
-      "SslPolicy" : String
+      "[AlpnPolicy](#cfn-elasticloadbalancingv2-listener-alpnpolicy)" : {{[ String, ... ]}},
+      "[Certificates](#cfn-elasticloadbalancingv2-listener-certificates)" : {{[ Certificate, ... ]}},
+      "[DefaultActions](#cfn-elasticloadbalancingv2-listener-defaultactions)" : {{[ Action, ... ]}},
+      "[ListenerAttributes](#cfn-elasticloadbalancingv2-listener-listenerattributes)" : {{[ ListenerAttribute, ... ]}},
+      "[LoadBalancerArn](#cfn-elasticloadbalancingv2-listener-loadbalancerarn)" : {{String}},
+      "[MutualAuthentication](#cfn-elasticloadbalancingv2-listener-mutualauthentication)" : {{MutualAuthentication}},
+      "[Port](#cfn-elasticloadbalancingv2-listener-port)" : {{Integer}},
+      "[Protocol](#cfn-elasticloadbalancingv2-listener-protocol)" : {{String}},
+      "[SslPolicy](#cfn-elasticloadbalancingv2-listener-sslpolicy)" : {{String}},
+      "[Tags](#cfn-elasticloadbalancingv2-listener-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ElasticLoadBalancingV2::Listener
 Properties:
-  AlpnPolicy:
-    - String
-  Certificates:
-    - Certificate
-  DefaultActions:
-    - Action
-  ListenerAttributes:
-    - ListenerAttribute
-  LoadBalancerArn: String
-  MutualAuthentication:
-    MutualAuthentication
-  Port: Integer
-  Protocol: String
-  SslPolicy: String
-
+  [AlpnPolicy](#cfn-elasticloadbalancingv2-listener-alpnpolicy): {{
+    - String}}
+  [Certificates](#cfn-elasticloadbalancingv2-listener-certificates): {{
+    - Certificate}}
+  [DefaultActions](#cfn-elasticloadbalancingv2-listener-defaultactions): {{
+    - Action}}
+  [ListenerAttributes](#cfn-elasticloadbalancingv2-listener-listenerattributes): {{
+    - ListenerAttribute}}
+  [LoadBalancerArn](#cfn-elasticloadbalancingv2-listener-loadbalancerarn): {{String}}
+  [MutualAuthentication](#cfn-elasticloadbalancingv2-listener-mutualauthentication): {{
+    MutualAuthentication}}
+  [Port](#cfn-elasticloadbalancingv2-listener-port): {{Integer}}
+  [Protocol](#cfn-elasticloadbalancingv2-listener-protocol): {{String}}
+  [SslPolicy](#cfn-elasticloadbalancingv2-listener-sslpolicy): {{String}}
+  [Tags](#cfn-elasticloadbalancingv2-listener-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-elasticloadbalancingv2-listener-properties"></a>
 
-`AlpnPolicy`
+`AlpnPolicy`  <a name="cfn-elasticloadbalancingv2-listener-alpnpolicy"></a>
+[TLS listener] The name of the Application-Layer Protocol Negotiation (ALPN) policy.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-\[TLS listener\] The name of the Application-Layer Protocol Negotiation (ALPN)
-policy.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Certificates`
-
-The default SSL server certificate for a secure listener. You must provide exactly one
-certificate if the listener protocol is HTTPS or TLS.
-
+`Certificates`  <a name="cfn-elasticloadbalancingv2-listener-certificates"></a>
+The default SSL server certificate for a secure listener. You must provide exactly one certificate if the listener protocol is HTTPS or TLS.
 For an HTTPS listener, update requires some interruptions. For a TLS listener, update requires no interruption.
+To create a certificate list for a secure listener, use [AWS::ElasticLoadBalancingV2::ListenerCertificate](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html).
+*Required*: Conditional
+*Type*: Array of [Certificate](aws-properties-elasticloadbalancingv2-listener-certificate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-To create a certificate list for a secure listener, use [AWS::ElasticLoadBalancingV2::ListenerCertificate](../userguide/aws-resource-elasticloadbalancingv2-listenercertificate.md).
+`DefaultActions`  <a name="cfn-elasticloadbalancingv2-listener-defaultactions"></a>
+The actions for the default rule. You cannot define a condition for a default rule.
+To create additional rules for an Application Load Balancer, use [AWS::ElasticLoadBalancingV2::ListenerRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html).
+*Required*: Yes
+*Type*: Array of [Action](aws-properties-elasticloadbalancingv2-listener-action.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: Array of [Certificate](aws-properties-elasticloadbalancingv2-listener-certificate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultActions`
-
-The actions for the default rule. You cannot define a condition for a default
-rule.
-
-To create additional rules for an Application Load Balancer, use [AWS::ElasticLoadBalancingV2::ListenerRule](../userguide/aws-resource-elasticloadbalancingv2-listenerrule.md).
-
-_Required_: Yes
-
-_Type_: Array of [Action](aws-properties-elasticloadbalancingv2-listener-action.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ListenerAttributes`
-
+`ListenerAttributes`  <a name="cfn-elasticloadbalancingv2-listener-listenerattributes"></a>
 The listener attributes. Attributes that you do not modify retain their current values.
+*Required*: No
+*Type*: Array of [ListenerAttribute](aws-properties-elasticloadbalancingv2-listener-listenerattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ListenerAttribute](aws-properties-elasticloadbalancingv2-listener-listenerattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoadBalancerArn`
-
+`LoadBalancerArn`  <a name="cfn-elasticloadbalancingv2-listener-loadbalancerarn"></a>
 The Amazon Resource Name (ARN) of the load balancer.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MutualAuthentication`
-
+`MutualAuthentication`  <a name="cfn-elasticloadbalancingv2-listener-mutualauthentication"></a>
 The mutual authentication configuration information.
+*Required*: No
+*Type*: [MutualAuthentication](aws-properties-elasticloadbalancingv2-listener-mutualauthentication.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Port`  <a name="cfn-elasticloadbalancingv2-listener-port"></a>
+The port on which the load balancer is listening. You can't specify a port for a Gateway Load Balancer.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [MutualAuthentication](aws-properties-elasticloadbalancingv2-listener-mutualauthentication.md)
+`Protocol`  <a name="cfn-elasticloadbalancingv2-listener-protocol"></a>
+The protocol for connections from clients to the load balancer. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocols are TCP, TLS, UDP, TCP\_UDP, QUIC, and TCP\_QUIC. You can’t specify the UDP, TCP\_UDP, QUIC, or TCP\_QUIC protocol if dual-stack mode is enabled. You can't specify a protocol for a Gateway Load Balancer.
+*Required*: No
+*Type*: String
+*Allowed values*: `HTTP | HTTPS | TCP | TLS | UDP | TCP_UDP | GENEVE | QUIC | TCP_QUIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SslPolicy`  <a name="cfn-elasticloadbalancingv2-listener-sslpolicy"></a>
+[HTTPS and TLS listeners] The security policy that defines which protocols and ciphers are supported. For more information, see [Security policies](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html) in the *Application Load Balancers Guide* and [Security policies](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/describe-ssl-policies.html) in the *Network Load Balancers Guide*.
+[HTTPS listeners] Updating the security policy can result in interruptions if the load balancer is handling a high volume of traffic. To decrease the possibility of an interruption if your load balancer is handling a high volume of traffic, create an additional load balancer or request an LCU reservation.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-`Port`
-
-The port on which the load balancer is listening. You can't specify a port for a Gateway
-Load Balancer.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The protocol for connections from clients to the load balancer. For Application Load
-Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the
-supported protocols are TCP, TLS, UDP, TCP\_UDP, QUIC, and TCP\_QUIC. You can’t specify the UDP, TCP\_UDP, QUIC, or TCP\_QUIC
-protocol if dual-stack mode is enabled. You can't specify a protocol for a Gateway Load
-Balancer.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HTTP | HTTPS | TCP | TLS | UDP | TCP_UDP | GENEVE | QUIC | TCP_QUIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SslPolicy`
-
-\[HTTPS and TLS listeners\] The security policy that defines which protocols and ciphers are supported.
-For more information, see [Security policies](../../../elasticloadbalancing/latest/application/describe-ssl-policies.md)
-in the _Application Load Balancers Guide_ and [Security policies](../../../elasticloadbalancing/latest/network/describe-ssl-policies.md)
-in the _Network Load Balancers Guide_.
-
-\[HTTPS listeners\] Updating the security policy can result in interruptions if the load balancer is handling a high volume of traffic.
-To decrease the possibility of an interruption if your load balancer is handling a high volume of traffic,
-create an additional load balancer or request an LCU reservation.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
+`Tags`  <a name="cfn-elasticloadbalancingv2-listener-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-elasticloadbalancingv2-listener-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-elasticloadbalancingv2-listener-return-values"></a>
 
 ### Ref
+<a name="aws-resource-elasticloadbalancingv2-listener-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the listener.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-elasticloadbalancingv2-listener-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ListenerArn`
+####
+<a name="aws-resource-elasticloadbalancingv2-listener-return-values-fn--getatt-fn--getatt"></a>
 
+`ListenerArn`  <a name="ListenerArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the listener.
 
 ## Examples
+<a name="aws-resource-elasticloadbalancingv2-listener--examples"></a>
 
-After you create your load balancer using [AWS::ElasticLoadBalancingV2::LoadBalancer](../userguide/aws-resource-elasticloadbalancingv2-loadbalancer.md), you can add a listener.
+After you create your load balancer using [AWS::ElasticLoadBalancingV2::LoadBalancer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html), you can add a listener.
 
-- [Create an HTTP listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener)
-
-- [Create an HTTPS listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener)
-
-- [Create a TCP listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener)
-
-- [Create a TLS listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener)
-
-- [Create a UDP listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener)
-
-- [Create a QUIC listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener)
+**Topics**
++ [Create an HTTP listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener)
++ [Create an HTTPS listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener)
++ [Create a TCP listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener)
++ [Create a TLS listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener)
++ [Create a UDP listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener)
++ [Create a QUIC listener](#aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener)
 
 ### Create an HTTP listener
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener"></a>
 
-The following example creates an HTTP listener with a default action that redirects HTTP
-requests on port 80 to HTTPS requests on port 443, retaining the original host name,
-path, and query string.
+The following example creates an HTTP listener with a default action that redirects HTTP requests on port 80 to HTTPS requests on port 443, retaining the original host name, path, and query string.
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener--yaml"></a>
 
-```yaml
-
+```
 myHTTPlistener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -240,9 +192,9 @@ myHTTPlistener:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener--json"></a>
 
-```json
-
+```
 {
     "myHTTPlistener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -271,16 +223,14 @@ myHTTPlistener:
 ```
 
 ### Create an HTTPS listener
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener"></a>
 
-The following example creates an HTTPS listener with a default action that forwards
-traffic to the specified target group. When you create a secure listener, you must
-specify a security policy and a certificate. You can create the target group using
-[AWS::ElasticLoadBalancingV2::TargetGroup](../userguide/aws-resource-elasticloadbalancingv2-targetgroup.md).
+The following example creates an HTTPS listener with a default action that forwards traffic to the specified target group. When you create a secure listener, you must specify a security policy and a certificate. You can create the target group using [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html).
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener--yaml"></a>
 
-```yaml
-
+```
 myHTTPSListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -296,9 +246,9 @@ myHTTPSListener:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener--json"></a>
 
-```json
-
+```
 {
     "myHTTPSListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -328,15 +278,14 @@ myHTTPSListener:
 ```
 
 ### Create a TCP listener
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener"></a>
 
-The following example creates a TCP listener with a default action that forwards
-traffic to the specified target group. You can create the target group using
-[AWS::ElasticLoadBalancingV2::TargetGroup](../userguide/aws-resource-elasticloadbalancingv2-targetgroup.md).
+The following example creates a TCP listener with a default action that forwards traffic to the specified target group. You can create the target group using [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html).
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener--yaml"></a>
 
-```yaml
-
+```
 myTCPListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -349,9 +298,9 @@ myTCPListener:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener--json"></a>
 
-```json
-
+```
 {
     "myTCPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -375,16 +324,14 @@ myTCPListener:
 ```
 
 ### Create a TLS listener
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener"></a>
 
-The following example creates a TLS listener with a default action that forwards
-traffic to the specified target group. When you create a secure listener, you must
-specify a security policy and a certificate. You can create the target group using
-[AWS::ElasticLoadBalancingV2::TargetGroup](../userguide/aws-resource-elasticloadbalancingv2-targetgroup.md).
+The following example creates a TLS listener with a default action that forwards traffic to the specified target group. When you create a secure listener, you must specify a security policy and a certificate. You can create the target group using [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html).
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener--yaml"></a>
 
-```yaml
-
+```
 myTLSListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -400,9 +347,9 @@ myTLSListener:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener--json"></a>
 
-```json
-
+```
 {
     "myTLSListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -432,15 +379,14 @@ myTLSListener:
 ```
 
 ### Create a UDP listener
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener"></a>
 
-The following example creates a UDP listener with a default action that forwards
-traffic to the specified target group. You can create the target group using
-[AWS::ElasticLoadBalancingV2::TargetGroup](../userguide/aws-resource-elasticloadbalancingv2-targetgroup.md).
+The following example creates a UDP listener with a default action that forwards traffic to the specified target group. You can create the target group using [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html).
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener--yaml"></a>
 
-```yaml
-
+```
 myUDPListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -453,9 +399,9 @@ myUDPListener:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener--json"></a>
 
-```json
-
+```
 {
     "myUDPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -479,15 +425,14 @@ myUDPListener:
 ```
 
 ### Create a QUIC listener
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener"></a>
 
-The following example creates a QUIC listener with a default action that forwards
-traffic to the specified target group. You can create the target group using
-[AWS::ElasticLoadBalancingV2::TargetGroup](../userguide/aws-resource-elasticloadbalancingv2-targetgroup.md).
+The following example creates a QUIC listener with a default action that forwards traffic to the specified target group. You can create the target group using [AWS::ElasticLoadBalancingV2::TargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html).
 
 #### YAML
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener--yaml"></a>
 
-```yaml
-
+```
 myQUICListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -500,9 +445,9 @@ myQUICListener:
 ```
 
 #### JSON
+<a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener--json"></a>
 
-```json
-
+```
 {
     "myUDPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -526,23 +471,10 @@ myQUICListener:
 ```
 
 ## See also
-
-- [CreateListener](../../../../reference/elasticloadbalancing/latest/apireference/api-createlistener.md) in the _Elastic Load Balancing API Reference_
-_(version 2015-12-01)_
-
-- [Listeners](../../../elasticloadbalancing/latest/application/load-balancer-listeners.md) in the _User Guide for Application Load_
-_Balancers_
-
-- [Listeners](../../../elasticloadbalancing/latest/network/load-balancer-listeners.md) in the _User Guide for Network Load_
-_Balancers_
-
-- [Listeners](../../../elasticloadbalancing/latest/gateway/gateway-listeners.md) in the _User Guide for Gateway Load_
-_Balancers_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Elastic Load Balancing V2
-
-Action
+<a name="aws-resource-elasticloadbalancingv2-listener--seealso"></a>
++ [CreateListener](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateListener.html) in the *Elastic Load Balancing API Reference (version 2015-12-01)*
++ [Listeners](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html) in the *User Guide for Application Load Balancers*
++ [Listeners](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-listeners.html) in the *User Guide for Network Load Balancers*
++ [Listeners](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gateway-listeners.html) in the *User Guide for Gateway Load Balancers*
 
 All content copied from https://docs.aws.amazon.com/.

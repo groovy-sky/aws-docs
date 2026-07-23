@@ -2,256 +2,166 @@
 title: "AWS::XRay::SamplingRule SamplingRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::SamplingRule SamplingRule
+<a name="aws-properties-xray-samplingrule-samplingrule"></a>
 
-A sampling rule that services use to decide whether to instrument a request. Rule
-fields can match properties of the service, or properties of a request. The service can ignore
-rules that don't match its properties.
+A sampling rule that services use to decide whether to instrument a request. Rule fields can match properties of the service, or properties of a request. The service can ignore rules that don't match its properties.
 
 ## Syntax
+<a name="aws-properties-xray-samplingrule-samplingrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-xray-samplingrule-samplingrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Attributes" : {Key: Value, ...},
-  "FixedRate" : Number,
-  "Host" : String,
-  "HTTPMethod" : String,
-  "Priority" : Integer,
-  "ReservoirSize" : Integer,
-  "ResourceARN" : String,
-  "RuleARN" : String,
-  "RuleName" : String,
-  "SamplingRateBoost" : SamplingRateBoost,
-  "ServiceName" : String,
-  "ServiceType" : String,
-  "URLPath" : String,
-  "Version" : Integer
+  "[Attributes](#cfn-xray-samplingrule-samplingrule-attributes)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[FixedRate](#cfn-xray-samplingrule-samplingrule-fixedrate)" : {{Number}},
+  "[Host](#cfn-xray-samplingrule-samplingrule-host)" : {{String}},
+  "[HTTPMethod](#cfn-xray-samplingrule-samplingrule-httpmethod)" : {{String}},
+  "[Priority](#cfn-xray-samplingrule-samplingrule-priority)" : {{Integer}},
+  "[ReservoirSize](#cfn-xray-samplingrule-samplingrule-reservoirsize)" : {{Integer}},
+  "[ResourceARN](#cfn-xray-samplingrule-samplingrule-resourcearn)" : {{String}},
+  "[RuleARN](#cfn-xray-samplingrule-samplingrule-rulearn)" : {{String}},
+  "[RuleName](#cfn-xray-samplingrule-samplingrule-rulename)" : {{String}},
+  "[SamplingRateBoost](#cfn-xray-samplingrule-samplingrule-samplingrateboost)" : {{SamplingRateBoost}},
+  "[ServiceName](#cfn-xray-samplingrule-samplingrule-servicename)" : {{String}},
+  "[ServiceType](#cfn-xray-samplingrule-samplingrule-servicetype)" : {{String}},
+  "[URLPath](#cfn-xray-samplingrule-samplingrule-urlpath)" : {{String}},
+  "[Version](#cfn-xray-samplingrule-samplingrule-version)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-xray-samplingrule-samplingrule-syntax.yaml"></a>
 
-```yaml
-
-  Attributes:
-    Key: Value
-  FixedRate: Number
-  Host: String
-  HTTPMethod: String
-  Priority: Integer
-  ReservoirSize: Integer
-  ResourceARN: String
-  RuleARN: String
-  RuleName: String
-  SamplingRateBoost:
-    SamplingRateBoost
-  ServiceName: String
-  ServiceType: String
-  URLPath: String
-  Version: Integer
-
+```
+  [Attributes](#cfn-xray-samplingrule-samplingrule-attributes): {{
+    {{Key}}: {{Value}}}}
+  [FixedRate](#cfn-xray-samplingrule-samplingrule-fixedrate): {{Number}}
+  [Host](#cfn-xray-samplingrule-samplingrule-host): {{String}}
+  [HTTPMethod](#cfn-xray-samplingrule-samplingrule-httpmethod): {{String}}
+  [Priority](#cfn-xray-samplingrule-samplingrule-priority): {{Integer}}
+  [ReservoirSize](#cfn-xray-samplingrule-samplingrule-reservoirsize): {{Integer}}
+  [ResourceARN](#cfn-xray-samplingrule-samplingrule-resourcearn): {{String}}
+  [RuleARN](#cfn-xray-samplingrule-samplingrule-rulearn): {{String}}
+  [RuleName](#cfn-xray-samplingrule-samplingrule-rulename): {{String}}
+  [SamplingRateBoost](#cfn-xray-samplingrule-samplingrule-samplingrateboost): {{
+    SamplingRateBoost}}
+  [ServiceName](#cfn-xray-samplingrule-samplingrule-servicename): {{String}}
+  [ServiceType](#cfn-xray-samplingrule-samplingrule-servicetype): {{String}}
+  [URLPath](#cfn-xray-samplingrule-samplingrule-urlpath): {{String}}
+  [Version](#cfn-xray-samplingrule-samplingrule-version): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-xray-samplingrule-samplingrule-properties"></a>
 
-`Attributes`
-
+`Attributes`  <a name="cfn-xray-samplingrule-samplingrule-attributes"></a>
 Matches attributes derived from the request.
+*Map Entries:* Maximum number of 5 items.
+*Key Length Constraints:* Minimum length of 1. Maximum length of 32.
+*Value Length Constraints:* Minimum length of 1. Maximum length of 32.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Map Entries:_ Maximum number of 5 items.
+`FixedRate`  <a name="cfn-xray-samplingrule-samplingrule-fixedrate"></a>
+The percentage of matching requests to instrument, after the reservoir is exhausted.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Key Length Constraints:_ Minimum length of 1. Maximum length of 32.
-
-_Value Length Constraints:_ Minimum length of 1. Maximum length of 32.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FixedRate`
-
-The percentage of matching requests to instrument, after the reservoir is
-exhausted.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Host`
-
+`Host`  <a name="cfn-xray-samplingrule-samplingrule-host"></a>
 Matches the hostname from a request URL.
+*Required*: Yes
+*Type*: String
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HTTPMethod`
-
+`HTTPMethod`  <a name="cfn-xray-samplingrule-samplingrule-httpmethod"></a>
 Matches the HTTP method of a request.
+*Required*: Yes
+*Type*: String
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Priority`
-
+`Priority`  <a name="cfn-xray-samplingrule-samplingrule-priority"></a>
 The priority of the sampling rule.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `9999`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`ReservoirSize`  <a name="cfn-xray-samplingrule-samplingrule-reservoirsize"></a>
+A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `9999`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReservoirSize`
-
-A fixed number of matching requests to instrument per second, prior to applying the
-fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceARN`
-
+`ResourceARN`  <a name="cfn-xray-samplingrule-samplingrule-resourcearn"></a>
 Matches the ARN of the AWS resource on which the service runs.
+*Required*: Yes
+*Type*: String
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleARN`
-
+`RuleARN`  <a name="cfn-xray-samplingrule-samplingrule-rulearn"></a>
 The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
+Specifying a sampling rule by name is recommended, as specifying by ARN will be deprecated in future.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-Specifying a sampling rule by name is recommended, as specifying by
-ARN will be deprecated in future.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleName`
-
+`RuleName`  <a name="cfn-xray-samplingrule-samplingrule-rulename"></a>
 The name of the sampling rule. Specify a rule by either name or ARN, but not both.
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
+`SamplingRateBoost`  <a name="cfn-xray-samplingrule-samplingrule-samplingrateboost"></a>
+Specifies the multiplier applied to the base sampling rate. This boost allows you to temporarily increase sampling without changing the rule's configuration.
+*Required*: No
+*Type*: [SamplingRateBoost](aws-properties-xray-samplingrule-samplingrateboost.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SamplingRateBoost`
-
-Specifies the multiplier applied to the base sampling rate.
-This boost allows you to temporarily increase sampling without changing the rule's configuration.
-
-_Required_: No
-
-_Type_: [SamplingRateBoost](aws-properties-xray-samplingrule-samplingrateboost.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceName`
-
+`ServiceName`  <a name="cfn-xray-samplingrule-samplingrule-servicename"></a>
 Matches the `name` that the service uses to identify itself in segments.
+*Required*: Yes
+*Type*: String
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceType`
-
+`ServiceType`  <a name="cfn-xray-samplingrule-samplingrule-servicetype"></a>
 Matches the `origin` that the service uses to identify its type in segments.
+*Required*: Yes
+*Type*: String
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`URLPath`
-
+`URLPath`  <a name="cfn-xray-samplingrule-samplingrule-urlpath"></a>
 Matches the path from a request URL.
+*Required*: Yes
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-xray-samplingrule-samplingrule-version"></a>
 The version of the sampling rule. `Version` can only be set when creating a new sampling rule.
-
-_Required_: Conditional
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SamplingRateBoost
-
-Tag
+*Required*: Conditional
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

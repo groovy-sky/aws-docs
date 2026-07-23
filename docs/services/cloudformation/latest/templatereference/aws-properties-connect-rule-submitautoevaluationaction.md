@@ -2,54 +2,42 @@
 title: "AWS::Connect::Rule SubmitAutoEvaluationAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule SubmitAutoEvaluationAction
+<a name="aws-properties-connect-rule-submitautoevaluationaction"></a>
 
-The `SubmitAutoEvaluationAction` property type specifies Property description not available. for an [AWS::Connect::Rule](aws-resource-connect-rule.md).
+<a name="aws-properties-connect-rule-submitautoevaluationaction-description"></a>The `SubmitAutoEvaluationAction` property type specifies Property description not available. for an [AWS::Connect::Rule](aws-resource-connect-rule.md).
 
 ## Syntax
+<a name="aws-properties-connect-rule-submitautoevaluationaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-submitautoevaluationaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "EvaluationFormArn" : String
+  "[EvaluationFormArn](#cfn-connect-rule-submitautoevaluationaction-evaluationformarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-submitautoevaluationaction-syntax.yaml"></a>
 
-```yaml
-
-  EvaluationFormArn: String
-
+```
+  [EvaluationFormArn](#cfn-connect-rule-submitautoevaluationaction-evaluationformarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-submitautoevaluationaction-properties"></a>
 
-`EvaluationFormArn`
-
+`EvaluationFormArn`  <a name="cfn-connect-rule-submitautoevaluationaction-evaluationformarn"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^$|arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/evaluation-form/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SendNotificationAction
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^$|arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/evaluation-form/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

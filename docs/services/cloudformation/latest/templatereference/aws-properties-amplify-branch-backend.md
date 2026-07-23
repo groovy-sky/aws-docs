@@ -2,61 +2,45 @@
 title: "AWS::Amplify::Branch Backend"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Amplify::Branch Backend
+<a name="aws-properties-amplify-branch-backend"></a>
 
-Describes the backend associated with an Amplify
-`Branch`.
+Describes the backend associated with an Amplify `Branch`.
 
-This property is available to Amplify Gen 2 apps only. When you deploy
-an application with Amplify Gen 2, you provision the app's backend infrastructure using
-Typescript code.
+This property is available to Amplify Gen 2 apps only. When you deploy an application with Amplify Gen 2, you provision the app's backend infrastructure using Typescript code.
 
 ## Syntax
+<a name="aws-properties-amplify-branch-backend-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplify-branch-backend-syntax.json"></a>
 
-```json
-
+```
 {
-  "StackArn" : String
+  "[StackArn](#cfn-amplify-branch-backend-stackarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplify-branch-backend-syntax.yaml"></a>
 
-```yaml
-
-  StackArn: String
-
+```
+  [StackArn](#cfn-amplify-branch-backend-stackarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-amplify-branch-backend-properties"></a>
 
-`StackArn`
-
+`StackArn`  <a name="cfn-amplify-branch-backend-stackarn"></a>
 The Amazon Resource Name (ARN) for the CloudFormation stack.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Amplify::Branch
-
-BasicAuthConfig
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

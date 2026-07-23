@@ -2,103 +2,73 @@
 title: "AWS::Pipes::Pipe PipeSourceActiveMQBrokerParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeSourceActiveMQBrokerParameters
+<a name="aws-properties-pipes-pipe-pipesourceactivemqbrokerparameters"></a>
 
 The parameters for using an Active MQ broker as a source.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipesourceactivemqbrokerparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipesourceactivemqbrokerparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchSize" : Integer,
-  "Credentials" : MQBrokerAccessCredentials,
-  "MaximumBatchingWindowInSeconds" : Integer,
-  "QueueName" : String
+  "[BatchSize](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-batchsize)" : {{Integer}},
+  "[Credentials](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-credentials)" : {{MQBrokerAccessCredentials}},
+  "[MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-maximumbatchingwindowinseconds)" : {{Integer}},
+  "[QueueName](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-queuename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipesourceactivemqbrokerparameters-syntax.yaml"></a>
 
-```yaml
-
-  BatchSize: Integer
-  Credentials:
-    MQBrokerAccessCredentials
-  MaximumBatchingWindowInSeconds: Integer
-  QueueName: String
-
+```
+  [BatchSize](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-batchsize): {{Integer}}
+  [Credentials](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-credentials): {{
+    MQBrokerAccessCredentials}}
+  [MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-maximumbatchingwindowinseconds): {{Integer}}
+  [QueueName](#cfn-pipes-pipe-pipesourceactivemqbrokerparameters-queuename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipesourceactivemqbrokerparameters-properties"></a>
 
-`BatchSize`
-
+`BatchSize`  <a name="cfn-pipes-pipe-pipesourceactivemqbrokerparameters-batchsize"></a>
 The maximum number of records to include in each batch.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Credentials`
-
+`Credentials`  <a name="cfn-pipes-pipe-pipesourceactivemqbrokerparameters-credentials"></a>
 The credentials needed to access the resource.
+*Required*: Yes
+*Type*: [MQBrokerAccessCredentials](aws-properties-pipes-pipe-mqbrokeraccesscredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [MQBrokerAccessCredentials](aws-properties-pipes-pipe-mqbrokeraccesscredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumBatchingWindowInSeconds`
-
+`MaximumBatchingWindowInSeconds`  <a name="cfn-pipes-pipe-pipesourceactivemqbrokerparameters-maximumbatchingwindowinseconds"></a>
 The maximum length of a time to wait for events.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`QueueName`
-
+`QueueName`  <a name="cfn-pipes-pipe-pipesourceactivemqbrokerparameters-queuename"></a>
 The name of the destination queue to consume.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\s\S]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeLogConfiguration
-
-PipeSourceDynamoDBStreamParameters
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\s\S]*$`
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

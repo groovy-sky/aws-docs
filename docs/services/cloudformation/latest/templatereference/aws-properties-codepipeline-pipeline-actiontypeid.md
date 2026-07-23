@@ -2,112 +2,73 @@
 title: "AWS::CodePipeline::Pipeline ActionTypeId"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline ActionTypeId
+<a name="aws-properties-codepipeline-pipeline-actiontypeid"></a>
 
 Represents information about an action type.
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-actiontypeid-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-actiontypeid-syntax.json"></a>
 
-```json
-
+```
 {
-  "Category" : String,
-  "Owner" : String,
-  "Provider" : String,
-  "Version" : String
+  "[Category](#cfn-codepipeline-pipeline-actiontypeid-category)" : {{String}},
+  "[Owner](#cfn-codepipeline-pipeline-actiontypeid-owner)" : {{String}},
+  "[Provider](#cfn-codepipeline-pipeline-actiontypeid-provider)" : {{String}},
+  "[Version](#cfn-codepipeline-pipeline-actiontypeid-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-actiontypeid-syntax.yaml"></a>
 
-```yaml
-
-  Category: String
-  Owner: String
-  Provider: String
-  Version: String
-
+```
+  [Category](#cfn-codepipeline-pipeline-actiontypeid-category): {{String}}
+  [Owner](#cfn-codepipeline-pipeline-actiontypeid-owner): {{String}}
+  [Provider](#cfn-codepipeline-pipeline-actiontypeid-provider): {{String}}
+  [Version](#cfn-codepipeline-pipeline-actiontypeid-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-actiontypeid-properties"></a>
 
-`Category`
+`Category`  <a name="cfn-codepipeline-pipeline-actiontypeid-category"></a>
+A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Valid categories are limited to one of the values below.
++  `Source`
++  `Build`
++  `Test`
++  `Deploy`
++  `Invoke`
++  `Approval`
++  `Compute`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Source | Build | Test | Deploy | Invoke | Approval | Compute`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A category defines what kind of action can be taken in the stage, and constrains the
-provider type for the action. Valid categories are limited to one of the values
-below.
+`Owner`  <a name="cfn-codepipeline-pipeline-actiontypeid-owner"></a>
+The creator of the action being called. There are three valid values for the `Owner` field in the action category section within your pipeline structure: `AWS`, `ThirdParty`, and `Custom`. For more information, see [Valid Action Types and Providers in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html#actions-valid-providers).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `Source`
+`Provider`  <a name="cfn-codepipeline-pipeline-actiontypeid-provider"></a>
+The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of CodeDeploy, which would be specified as `CodeDeploy`. For more information, see [Valid Action Types and Providers in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html#actions-valid-providers).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `Build`
-
-- `Test`
-
-- `Deploy`
-
-- `Invoke`
-
-- `Approval`
-
-- `Compute`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Source | Build | Test | Deploy | Invoke | Approval | Compute`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Owner`
-
-The creator of the action being called. There are three valid values for the
-`Owner` field in the action category section within your pipeline
-structure: `AWS`, `ThirdParty`, and `Custom`. For more
-information, see [Valid Action Types and Providers in CodePipeline](../../../codepipeline/latest/userguide/reference-pipeline-structure.md#actions-valid-providers).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Provider`
-
-The provider of the service being called by the action. Valid providers are
-determined by the action category. For example, an action in the Deploy category type
-might have a provider of CodeDeploy, which would be specified as
-`CodeDeploy`. For more information, see [Valid Action Types and Providers in CodePipeline](../../../codepipeline/latest/userguide/reference-pipeline-structure.md#actions-valid-providers).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-codepipeline-pipeline-actiontypeid-version"></a>
 A string that describes the action version.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ActionDeclaration
-
-ArtifactStore
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

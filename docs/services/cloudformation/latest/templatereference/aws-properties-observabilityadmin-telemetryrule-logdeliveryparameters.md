@@ -2,58 +2,44 @@
 title: "AWS::ObservabilityAdmin::TelemetryRule LogDeliveryParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryRule LogDeliveryParameters
+<a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters"></a>
 
-Configuration parameters for Amazon Bedrock AgentCore logging, including `logType`
-settings.
+Configuration parameters for Amazon Bedrock AgentCore logging, including `logType` settings.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogTypes" : [ String, ... ]
+  "[LogTypes](#cfn-observabilityadmin-telemetryrule-logdeliveryparameters-logtypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-syntax.yaml"></a>
 
-```yaml
-
-  LogTypes:
-    - String
-
+```
+  [LogTypes](#cfn-observabilityadmin-telemetryrule-logdeliveryparameters-logtypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-properties"></a>
 
-`LogTypes`
-
+`LogTypes`  <a name="cfn-observabilityadmin-telemetryrule-logdeliveryparameters-logtypes"></a>
 The type of log that the source is sending.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `APPLICATION_LOGS | USAGE_LOGS`
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LabelNameCondition
-
-LoggingFilter
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `APPLICATION_LOGS | USAGE_LOGS | SECURITY_FINDING_LOGS`
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

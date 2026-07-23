@@ -2,53 +2,42 @@
 title: "AWS::IoT::SoftwarePackageVersion Sbom"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::SoftwarePackageVersion Sbom
+<a name="aws-properties-iot-softwarepackageversion-sbom"></a>
 
-The `Sbom` property type specifies Property description not available. for an [AWS::IoT::SoftwarePackageVersion](aws-resource-iot-softwarepackageversion.md).
+<a name="aws-properties-iot-softwarepackageversion-sbom-description"></a>The `Sbom` property type specifies Property description not available. for an [AWS::IoT::SoftwarePackageVersion](aws-resource-iot-softwarepackageversion.md).
 
 ## Syntax
+<a name="aws-properties-iot-softwarepackageversion-sbom-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-softwarepackageversion-sbom-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Location" : S3Location
+  "[S3Location](#cfn-iot-softwarepackageversion-sbom-s3location)" : {{S3Location}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-softwarepackageversion-sbom-syntax.yaml"></a>
 
-```yaml
-
-  S3Location:
-    S3Location
-
+```
+  [S3Location](#cfn-iot-softwarepackageversion-sbom-s3location): {{
+    S3Location}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-softwarepackageversion-sbom-properties"></a>
 
-`S3Location`
-
+`S3Location`  <a name="cfn-iot-softwarepackageversion-sbom-s3location"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [S3Location](aws-properties-iot-softwarepackageversion-s3location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-Tag
+*Required*: Yes
+*Type*: [S3Location](aws-properties-iot-softwarepackageversion-s3location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

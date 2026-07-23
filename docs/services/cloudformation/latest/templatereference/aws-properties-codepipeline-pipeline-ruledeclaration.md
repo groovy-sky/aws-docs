@@ -2,157 +2,101 @@
 title: "AWS::CodePipeline::Pipeline RuleDeclaration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline RuleDeclaration
+<a name="aws-properties-codepipeline-pipeline-ruledeclaration"></a>
 
-Represents information about the rule to be created for an associated condition. An
-example would be creating a new rule for an entry condition, such as a rule that checks
-for a test result before allowing the run to enter the deployment stage. For more
-information about conditions, see [Stage conditions](../../../codepipeline/latest/userguide/stage-conditions.md)
-and [How do\
-stage conditions work?](../../../codepipeline/latest/userguide/concepts-how-it-works-conditions.md). For more information about rules, see the [AWS CodePipeline rule reference](../../../codepipeline/latest/userguide/rule-reference.md).
+Represents information about the rule to be created for an associated condition. An example would be creating a new rule for an entry condition, such as a rule that checks for a test result before allowing the run to enter the deployment stage. For more information about conditions, see [Stage conditions](https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-conditions.html) and [How do stage conditions work?](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-how-it-works-conditions.html). For more information about rules, see the [AWS CodePipeline rule reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/rule-reference.html).
 
 ## Syntax
+<a name="aws-properties-codepipeline-pipeline-ruledeclaration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codepipeline-pipeline-ruledeclaration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Commands" : [ String, ... ],
-  "Configuration" : Json,
-  "InputArtifacts" : [ InputArtifact, ... ],
-  "Name" : String,
-  "Region" : String,
-  "RoleArn" : String,
-  "RuleTypeId" : RuleTypeId
+  "[Commands](#cfn-codepipeline-pipeline-ruledeclaration-commands)" : {{[ String, ... ]}},
+  "[Configuration](#cfn-codepipeline-pipeline-ruledeclaration-configuration)" : {{Json}},
+  "[InputArtifacts](#cfn-codepipeline-pipeline-ruledeclaration-inputartifacts)" : {{[ InputArtifact, ... ]}},
+  "[Name](#cfn-codepipeline-pipeline-ruledeclaration-name)" : {{String}},
+  "[Region](#cfn-codepipeline-pipeline-ruledeclaration-region)" : {{String}},
+  "[RoleArn](#cfn-codepipeline-pipeline-ruledeclaration-rolearn)" : {{String}},
+  "[RuleTypeId](#cfn-codepipeline-pipeline-ruledeclaration-ruletypeid)" : {{RuleTypeId}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codepipeline-pipeline-ruledeclaration-syntax.yaml"></a>
 
-```yaml
-
-  Commands:
-    - String
-  Configuration: Json
-  InputArtifacts:
-    - InputArtifact
-  Name: String
-  Region: String
-  RoleArn: String
-  RuleTypeId:
-    RuleTypeId
-
+```
+  [Commands](#cfn-codepipeline-pipeline-ruledeclaration-commands): {{
+    - String}}
+  [Configuration](#cfn-codepipeline-pipeline-ruledeclaration-configuration): {{Json}}
+  [InputArtifacts](#cfn-codepipeline-pipeline-ruledeclaration-inputartifacts): {{
+    - InputArtifact}}
+  [Name](#cfn-codepipeline-pipeline-ruledeclaration-name): {{String}}
+  [Region](#cfn-codepipeline-pipeline-ruledeclaration-region): {{String}}
+  [RoleArn](#cfn-codepipeline-pipeline-ruledeclaration-rolearn): {{String}}
+  [RuleTypeId](#cfn-codepipeline-pipeline-ruledeclaration-ruletypeid): {{
+    RuleTypeId}}
 ```
 
 ## Properties
+<a name="aws-properties-codepipeline-pipeline-ruledeclaration-properties"></a>
 
-`Commands`
-
-The shell commands to run with your commands rule in CodePipeline. All commands
-are supported except multi-line formats. While CodeBuild logs and permissions
-are used, you do not need to create any resources in CodeBuild.
-
-###### Note
-
+`Commands`  <a name="cfn-codepipeline-pipeline-ruledeclaration-commands"></a>
+The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats. While CodeBuild logs and permissions are used, you do not need to create any resources in CodeBuild.
 Using compute time for this action will incur separate charges in AWS CodeBuild.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Configuration`
-
+`Configuration`  <a name="cfn-codepipeline-pipeline-ruledeclaration-configuration"></a>
 The action configuration fields for the rule.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InputArtifacts`  <a name="cfn-codepipeline-pipeline-ruledeclaration-inputartifacts"></a>
+The input artifacts fields for the rule, such as specifying an input file for the rule.
+*Required*: No
+*Type*: Array of [InputArtifact](aws-properties-codepipeline-pipeline-inputartifact.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Json
+`Name`  <a name="cfn-codepipeline-pipeline-ruledeclaration-name"></a>
+The name of the rule that is created for the condition, such as `VariableCheck`.
+*Required*: No
+*Type*: String
+*Pattern*: `[A-Za-z0-9.@\-_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputArtifacts`
-
-The input artifacts fields for the rule, such as specifying an input file for the
-rule.
-
-_Required_: No
-
-_Type_: Array of [InputArtifact](aws-properties-codepipeline-pipeline-inputartifact.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the rule that is created for the condition, such as
-`VariableCheck`.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9.@\-_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-codepipeline-pipeline-ruledeclaration-region"></a>
 The Region for the condition associated with the rule.
+*Required*: No
+*Type*: String
+*Minimum*: `4`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `4`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-codepipeline-pipeline-ruledeclaration-rolearn"></a>
 The pipeline role ARN associated with the rule.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleTypeId`
-
-The ID for the rule type, which is made up of the combined values for category, owner,
-provider, and version.
-
-_Required_: No
-
-_Type_: [RuleTypeId](aws-properties-codepipeline-pipeline-ruletypeid.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RetryConfiguration
-
-RuleTypeId
+`RuleTypeId`  <a name="cfn-codepipeline-pipeline-ruledeclaration-ruletypeid"></a>
+The ID for the rule type, which is made up of the combined values for category, owner, provider, and version.
+*Required*: No
+*Type*: [RuleTypeId](aws-properties-codepipeline-pipeline-ruletypeid.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,49 @@
 title: "AWS::MSK::Cluster Firehose"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster Firehose
+<a name="aws-properties-msk-cluster-firehose"></a>
 
 Firehose details for BrokerLogs.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-firehose-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-firehose-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeliveryStream" : String,
-  "Enabled" : Boolean
+  "[DeliveryStream](#cfn-msk-cluster-firehose-deliverystream)" : {{String}},
+  "[Enabled](#cfn-msk-cluster-firehose-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-firehose-syntax.yaml"></a>
 
-```yaml
-
-  DeliveryStream: String
-  Enabled: Boolean
-
+```
+  [DeliveryStream](#cfn-msk-cluster-firehose-deliverystream): {{String}}
+  [Enabled](#cfn-msk-cluster-firehose-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-firehose-properties"></a>
 
-`DeliveryStream`
-
+`DeliveryStream`  <a name="cfn-msk-cluster-firehose-deliverystream"></a>
 The Kinesis Data Firehose delivery stream that is the destination for broker logs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-msk-cluster-firehose-enabled"></a>
 Specifies whether broker logs get send to the specified Kinesis Data Firehose delivery stream.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EncryptionInTransit
-
-Iam
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

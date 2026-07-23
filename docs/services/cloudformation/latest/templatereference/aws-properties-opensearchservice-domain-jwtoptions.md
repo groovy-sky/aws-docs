@@ -2,88 +2,65 @@
 title: "AWS::OpenSearchService::Domain JWTOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchService::Domain JWTOptions
+<a name="aws-properties-opensearchservice-domain-jwtoptions"></a>
 
-The `JWTOptions` property type specifies Property description not available. for an [AWS::OpenSearchService::Domain](aws-resource-opensearchservice-domain.md).
+<a name="aws-properties-opensearchservice-domain-jwtoptions-description"></a>The `JWTOptions` property type specifies Property description not available. for an [AWS::OpenSearchService::Domain](aws-resource-opensearchservice-domain.md).
 
 ## Syntax
+<a name="aws-properties-opensearchservice-domain-jwtoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchservice-domain-jwtoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "PublicKey" : String,
-  "RolesKey" : String,
-  "SubjectKey" : String
+  "[Enabled](#cfn-opensearchservice-domain-jwtoptions-enabled)" : {{Boolean}},
+  "[PublicKey](#cfn-opensearchservice-domain-jwtoptions-publickey)" : {{String}},
+  "[RolesKey](#cfn-opensearchservice-domain-jwtoptions-roleskey)" : {{String}},
+  "[SubjectKey](#cfn-opensearchservice-domain-jwtoptions-subjectkey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchservice-domain-jwtoptions-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  PublicKey: String
-  RolesKey: String
-  SubjectKey: String
-
+```
+  [Enabled](#cfn-opensearchservice-domain-jwtoptions-enabled): {{Boolean}}
+  [PublicKey](#cfn-opensearchservice-domain-jwtoptions-publickey): {{String}}
+  [RolesKey](#cfn-opensearchservice-domain-jwtoptions-roleskey): {{String}}
+  [SubjectKey](#cfn-opensearchservice-domain-jwtoptions-subjectkey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchservice-domain-jwtoptions-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-opensearchservice-domain-jwtoptions-enabled"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PublicKey`
-
+`PublicKey`  <a name="cfn-opensearchservice-domain-jwtoptions-publickey"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RolesKey`
-
+`RolesKey`  <a name="cfn-opensearchservice-domain-jwtoptions-roleskey"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubjectKey`
-
+`SubjectKey`  <a name="cfn-opensearchservice-domain-jwtoptions-subjectkey"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Idp
-
-LogPublishingOption
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

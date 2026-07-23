@@ -2,54 +2,42 @@
 title: "AWS::Bedrock::Flow PromptFlowNodeResourceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow PromptFlowNodeResourceConfiguration
+<a name="aws-properties-bedrock-flow-promptflownoderesourceconfiguration"></a>
 
 Contains configurations for a prompt from Prompt management to use in a node.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-promptflownoderesourceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-promptflownoderesourceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "PromptArn" : String
+  "[PromptArn](#cfn-bedrock-flow-promptflownoderesourceconfiguration-promptarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-promptflownoderesourceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  PromptArn: String
-
+```
+  [PromptArn](#cfn-bedrock-flow-promptflownoderesourceconfiguration-promptarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-promptflownoderesourceconfiguration-properties"></a>
 
-`PromptArn`
-
+`PromptArn`  <a name="cfn-bedrock-flow-promptflownoderesourceconfiguration-promptarn"></a>
 The Amazon Resource Name (ARN) of the prompt from Prompt management.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:prompt/[0-9a-zA-Z]{10}(?::[0-9]{1,5})?)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PromptFlowNodeInlineConfiguration
-
-PromptFlowNodeSourceConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:prompt/[0-9a-zA-Z]{10}(?::[0-9]{1,5})?)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

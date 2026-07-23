@@ -2,162 +2,127 @@
 title: "AWS::Inspector::AssessmentTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Inspector::AssessmentTemplate
+<a name="aws-resource-inspector-assessmenttemplate"></a>
 
-The `AWS::Inspector::AssessmentTemplate` resource creates an Amazon
-Inspector assessment template, which specifies the Inspector assessment targets that will
-be evaluated by an assessment run and its related configurations.
+The `AWS::Inspector::AssessmentTemplate` resource creates an Amazon Inspector assessment template, which specifies the Inspector assessment targets that will be evaluated by an assessment run and its related configurations.
 
 ## Syntax
+<a name="aws-resource-inspector-assessmenttemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-inspector-assessmenttemplate-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Inspector::AssessmentTemplate",
   "Properties" : {
-      "AssessmentTargetArn" : String,
-      "AssessmentTemplateName" : String,
-      "DurationInSeconds" : Integer,
-      "RulesPackageArns" : [ String, ... ],
-      "UserAttributesForFindings" : [ Tag, ... ]
+      "[AssessmentTargetArn](#cfn-inspector-assessmenttemplate-assessmenttargetarn)" : {{String}},
+      "[AssessmentTemplateName](#cfn-inspector-assessmenttemplate-assessmenttemplatename)" : {{String}},
+      "[DurationInSeconds](#cfn-inspector-assessmenttemplate-durationinseconds)" : {{Integer}},
+      "[RulesPackageArns](#cfn-inspector-assessmenttemplate-rulespackagearns)" : {{[ String, ... ]}},
+      "[UserAttributesForFindings](#cfn-inspector-assessmenttemplate-userattributesforfindings)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-inspector-assessmenttemplate-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Inspector::AssessmentTemplate
 Properties:
-  AssessmentTargetArn: String
-  AssessmentTemplateName: String
-  DurationInSeconds: Integer
-  RulesPackageArns:
-    - String
-  UserAttributesForFindings:
-    - Tag
-
+  [AssessmentTargetArn](#cfn-inspector-assessmenttemplate-assessmenttargetarn): {{String}}
+  [AssessmentTemplateName](#cfn-inspector-assessmenttemplate-assessmenttemplatename): {{String}}
+  [DurationInSeconds](#cfn-inspector-assessmenttemplate-durationinseconds): {{Integer}}
+  [RulesPackageArns](#cfn-inspector-assessmenttemplate-rulespackagearns): {{
+    - String}}
+  [UserAttributesForFindings](#cfn-inspector-assessmenttemplate-userattributesforfindings): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-inspector-assessmenttemplate-properties"></a>
 
-`AssessmentTargetArn`
-
+`AssessmentTargetArn`  <a name="cfn-inspector-assessmenttemplate-assessmenttargetarn"></a>
 The ARN of the assessment target to be included in the assessment template.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `300`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`AssessmentTemplateName`  <a name="cfn-inspector-assessmenttemplate-assessmenttemplatename"></a>
+The user-defined name that identifies the assessment template that you want to create. You can create several assessment templates for the same assessment target. The names of the assessment templates that correspond to a particular assessment target must be unique.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `140`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `300`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AssessmentTemplateName`
-
-The user-defined name that identifies the assessment template that you want to
-create. You can create several assessment templates for the same assessment target. The
-names of the assessment templates that correspond to a particular assessment target must be
-unique.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `140`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DurationInSeconds`
-
+`DurationInSeconds`  <a name="cfn-inspector-assessmenttemplate-durationinseconds"></a>
 The duration of the assessment run in seconds.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `180`
+*Maximum*: `86400`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`RulesPackageArns`  <a name="cfn-inspector-assessmenttemplate-rulespackagearns"></a>
+The ARNs of the rules packages that you want to use in the assessment template.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Integer
-
-_Minimum_: `180`
-
-_Maximum_: `86400`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RulesPackageArns`
-
-The ARNs of the rules packages that you want to use in the assessment
-template.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UserAttributesForFindings`
-
-The user-defined attributes that are assigned to every finding that is generated by
-the assessment run that uses this assessment template. Within an assessment template, each
-key must be unique.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-inspector-assessmenttemplate-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`UserAttributesForFindings`  <a name="cfn-inspector-assessmenttemplate-userattributesforfindings"></a>
+The user-defined attributes that are assigned to every finding that is generated by the assessment run that uses this assessment template. Within an assessment template, each key must be unique.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-inspector-assessmenttemplate-tag.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-inspector-assessmenttemplate-return-values"></a>
 
 ### Ref
+<a name="aws-resource-inspector-assessmenttemplate-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `AssessmentTargetArn` of the new assessment template.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-inspector-assessmenttemplate-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-inspector-assessmenttemplate-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) that specifies the assessment template that is
-created.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) that specifies the assessment template that is created.
 
 ## Examples
+<a name="aws-resource-inspector-assessmenttemplate--examples"></a>
 
 ### Declaring an Amazon Inspector Assessment Template Resource
+<a name="aws-resource-inspector-assessmenttemplate--examples--Declaring_an_Amazon_Inspector_Assessment_Template_Resource"></a>
 
-The following example shows how to declare an
-`AWS::Inspector::AssessmentTemplate` resource to create an Amazon
-Inspector assessment template.
+The following example shows how to declare an `AWS::Inspector::AssessmentTemplate` resource to create an Amazon Inspector assessment template.
 
 #### JSON
+<a name="aws-resource-inspector-assessmenttemplate--examples--Declaring_an_Amazon_Inspector_Assessment_Template_Resource--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::Inspector::AssessmentTemplate",
     "Properties": {
@@ -176,9 +141,9 @@ Inspector assessment template.
 ```
 
 #### YAML
+<a name="aws-resource-inspector-assessmenttemplate--examples--Declaring_an_Amazon_Inspector_Assessment_Template_Resource--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Inspector::AssessmentTemplate
 Properties:
   AssessmentTargetArn: arn:aws:inspector:us-west-2:123456789012:target/0-nvgVhaxX
@@ -190,11 +155,5 @@ Properties:
     - Key: Example
       Value: example
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Inspector::AssessmentTarget
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

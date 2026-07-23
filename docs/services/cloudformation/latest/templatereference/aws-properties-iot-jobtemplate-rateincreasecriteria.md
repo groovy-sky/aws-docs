@@ -2,71 +2,51 @@
 title: "AWS::IoT::JobTemplate RateIncreaseCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::JobTemplate RateIncreaseCriteria
+<a name="aws-properties-iot-jobtemplate-rateincreasecriteria"></a>
 
-Allows you to define a criteria to initiate the increase in rate of rollout for a
-job.
+Allows you to define a criteria to initiate the increase in rate of rollout for a job.
 
 ## Syntax
+<a name="aws-properties-iot-jobtemplate-rateincreasecriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-jobtemplate-rateincreasecriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "NumberOfNotifiedThings" : Integer,
-  "NumberOfSucceededThings" : Integer
+  "[NumberOfNotifiedThings](#cfn-iot-jobtemplate-rateincreasecriteria-numberofnotifiedthings)" : {{Integer}},
+  "[NumberOfSucceededThings](#cfn-iot-jobtemplate-rateincreasecriteria-numberofsucceededthings)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-jobtemplate-rateincreasecriteria-syntax.yaml"></a>
 
-```yaml
-
-  NumberOfNotifiedThings: Integer
-  NumberOfSucceededThings: Integer
-
+```
+  [NumberOfNotifiedThings](#cfn-iot-jobtemplate-rateincreasecriteria-numberofnotifiedthings): {{Integer}}
+  [NumberOfSucceededThings](#cfn-iot-jobtemplate-rateincreasecriteria-numberofsucceededthings): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-jobtemplate-rateincreasecriteria-properties"></a>
 
-`NumberOfNotifiedThings`
+`NumberOfNotifiedThings`  <a name="cfn-iot-jobtemplate-rateincreasecriteria-numberofnotifiedthings"></a>
+The threshold for number of notified things that will initiate the increase in rate of rollout.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The threshold for number of notified things that will initiate the increase in rate
-of rollout.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NumberOfSucceededThings`
-
-The threshold for number of succeeded things that will initiate the increase in
-rate of rollout.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PresignedUrlConfig
-
-RetryCriteria
+`NumberOfSucceededThings`  <a name="cfn-iot-jobtemplate-rateincreasecriteria-numberofsucceededthings"></a>
+The threshold for number of succeeded things that will initiate the increase in rate of rollout.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

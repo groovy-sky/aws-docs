@@ -2,156 +2,102 @@
 title: "AWS::ApplicationAutoScaling::ScalingPolicy CustomizedMetricSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalingPolicy CustomizedMetricSpecification
+<a name="aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification"></a>
 
-Contains customized metric specification information for a target tracking scaling policy
-for Application Auto Scaling.
+Contains customized metric specification information for a target tracking scaling policy for Application Auto Scaling.
 
-For information about the available metrics for a service, see [AWS services that publish CloudWatch metrics](../../../amazoncloudwatch/latest/monitoring/aws-services-cloudwatch-metrics.md) in the _Amazon_
-_CloudWatch User Guide_.
+For information about the available metrics for a service, see [AWS services that publish CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the *Amazon CloudWatch User Guide*.
 
 To create your customized metric specification:
++ Add values for each required parameter from CloudWatch. You can use an existing metric, or a new metric that you create. To use your own metric, you must first publish the metric to CloudWatch. For more information, see [Publish custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html) in the *Amazon CloudWatch User Guide*.
++ Choose a metric that changes proportionally with capacity. The value of the metric should increase or decrease in inverse proportion to the number of capacity units. That is, the value of the metric should decrease when capacity increases, and increase when capacity decreases.
 
-- Add values for each required parameter from CloudWatch. You can use an existing
-metric, or a new metric that you create. To use your own metric, you must first publish
-the metric to CloudWatch. For more information, see [Publish custom\
-metrics](../../../amazoncloudwatch/latest/monitoring/publishingmetrics.md) in the _Amazon CloudWatch User Guide_.
+For an example of how creating new metrics can be useful, see [Scaling based on Amazon SQS](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) in the *Amazon EC2 Auto Scaling User Guide*. This topic mentions Auto Scaling groups, but the same scenario for Amazon SQS can apply to the target tracking scaling policies that you create for a Spot Fleet by using Application Auto Scaling.
 
-- Choose a metric that changes proportionally with capacity. The value of the metric
-should increase or decrease in inverse proportion to the number of capacity units. That
-is, the value of the metric should decrease when capacity increases, and increase when
-capacity decreases.
+For more information about the CloudWatch terminology below, see [Amazon CloudWatch concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html).
 
-For an example of how creating new metrics can be useful, see [Scaling based on Amazon SQS](../../../autoscaling/ec2/userguide/as-using-sqs-queue.md)
-in the _Amazon EC2 Auto Scaling User Guide_. This topic mentions Auto
-Scaling groups, but the same scenario for Amazon SQS can apply to the target tracking scaling
-policies that you create for a Spot Fleet by using Application Auto Scaling.
-
-For more information about the CloudWatch terminology below, see [Amazon CloudWatch concepts](../../../amazoncloudwatch/latest/monitoring/cloudwatch-concepts.md).
-
-`CustomizedMetricSpecification` is a property of the [AWS::ApplicationAutoScaling::ScalingPolicy TargetTrackingScalingPolicyConfiguration](../userguide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.md)
-property type.
+`CustomizedMetricSpecification` is a property of the [AWS::ApplicationAutoScaling::ScalingPolicy TargetTrackingScalingPolicyConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html) property type.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Dimensions" : [ MetricDimension, ... ],
-  "MetricName" : String,
-  "Metrics" : [ TargetTrackingMetricDataQuery, ... ],
-  "Namespace" : String,
-  "Statistic" : String,
-  "Unit" : String
+  "[Dimensions](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-dimensions)" : {{[ MetricDimension, ... ]}},
+  "[MetricName](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metricname)" : {{String}},
+  "[Metrics](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metrics)" : {{[ TargetTrackingMetricDataQuery, ... ]}},
+  "[Namespace](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace)" : {{String}},
+  "[Statistic](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic)" : {{String}},
+  "[Unit](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification-syntax.yaml"></a>
 
-```yaml
-
-  Dimensions:
-    - MetricDimension
-  MetricName: String
-  Metrics:
-    - TargetTrackingMetricDataQuery
-  Namespace: String
-  Statistic: String
-  Unit: String
-
+```
+  [Dimensions](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-dimensions): {{
+    - MetricDimension}}
+  [MetricName](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metricname): {{String}}
+  [Metrics](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metrics): {{
+    - TargetTrackingMetricDataQuery}}
+  [Namespace](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace): {{String}}
+  [Statistic](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic): {{String}}
+  [Unit](#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification-properties"></a>
 
-`Dimensions`
-
+`Dimensions`  <a name="cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-dimensions"></a>
 The dimensions of the metric.
+Conditional: If you published your metric with dimensions, you must specify the same dimensions in your scaling policy.
+*Required*: No
+*Type*: Array of [MetricDimension](aws-properties-applicationautoscaling-scalingpolicy-metricdimension.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Conditional: If you published your metric with dimensions, you must specify the same
-dimensions in your scaling policy.
+`MetricName`  <a name="cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metricname"></a>
+The name of the metric. To get the exact metric name, namespace, and dimensions, inspect the [Metric](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_Metric.html) object that's returned by a call to [ListMetrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListMetrics.html).
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Metrics`  <a name="cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metrics"></a>
+The metrics to include in the target tracking scaling policy, as a metric data query. This can include both raw metric and metric math expressions.
+*Required*: No
+*Type*: Array of [TargetTrackingMetricDataQuery](aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdataquery.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [MetricDimension](aws-properties-applicationautoscaling-scalingpolicy-metricdimension.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricName`
-
-The name of the metric. To get the exact metric name, namespace, and dimensions, inspect
-the [Metric](../../../../reference/amazoncloudwatch/latest/apireference/api-metric.md) object that's returned by a call to [ListMetrics](../../../../reference/amazoncloudwatch/latest/apireference/api-listmetrics.md).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Metrics`
-
-The metrics to include in the target tracking scaling policy, as a metric data query.
-This can include both raw metric and metric math expressions.
-
-_Required_: No
-
-_Type_: Array of [TargetTrackingMetricDataQuery](aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdataquery.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace"></a>
 The namespace of the metric.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Statistic`
-
+`Statistic`  <a name="cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic"></a>
 The statistic of the metric.
+*Required*: No
+*Type*: String
+*Allowed values*: `Average | Minimum | Maximum | SampleCount | Sum`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Average | Minimum | Maximum | SampleCount | Sum`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Unit`
-
-The unit of the metric. For a complete list of the units that CloudWatch supports, see the
-[MetricDatum](../../../../reference/amazoncloudwatch/latest/apireference/api-metricdatum.md) data
-type in the _Amazon CloudWatch API Reference_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Unit`  <a name="cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit"></a>
+The unit of the metric. For a complete list of the units that CloudWatch supports, see the [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html) data type in the *Amazon CloudWatch API Reference*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Configure Application Auto Scaling resources](../userguide/quickref-application-auto-scaling.md)
-
-- [Getting started](../../../autoscaling/application/userguide/getting-started.md)
-in the _Application Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApplicationAutoScaling::ScalingPolicy
-
-MetricDimension
+<a name="aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification--seealso"></a>
++  [Configure Application Auto Scaling resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-application-auto-scaling.html)
++ [Getting started](https://docs.aws.amazon.com/autoscaling/application/userguide/getting-started.html) in the *Application Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

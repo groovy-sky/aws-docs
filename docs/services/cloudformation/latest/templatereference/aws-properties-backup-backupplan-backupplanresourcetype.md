@@ -2,92 +2,68 @@
 title: "AWS::Backup::BackupPlan BackupPlanResourceType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupPlan BackupPlanResourceType
+<a name="aws-properties-backup-backupplan-backupplanresourcetype"></a>
 
 Specifies an object containing properties used to create a backup plan.
 
 ## Syntax
+<a name="aws-properties-backup-backupplan-backupplanresourcetype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-backupplan-backupplanresourcetype-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdvancedBackupSettings" : [ AdvancedBackupSettingResourceType, ... ],
-  "BackupPlanName" : String,
-  "BackupPlanRule" : [ BackupRuleResourceType, ... ],
-  "ScanSettings" : [ ScanSettingResourceType, ... ]
+  "[AdvancedBackupSettings](#cfn-backup-backupplan-backupplanresourcetype-advancedbackupsettings)" : {{[ AdvancedBackupSettingResourceType, ... ]}},
+  "[BackupPlanName](#cfn-backup-backupplan-backupplanresourcetype-backupplanname)" : {{String}},
+  "[BackupPlanRule](#cfn-backup-backupplan-backupplanresourcetype-backupplanrule)" : {{[ BackupRuleResourceType, ... ]}},
+  "[ScanSettings](#cfn-backup-backupplan-backupplanresourcetype-scansettings)" : {{[ ScanSettingResourceType, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-backupplan-backupplanresourcetype-syntax.yaml"></a>
 
-```yaml
-
-  AdvancedBackupSettings:
-    - AdvancedBackupSettingResourceType
-  BackupPlanName: String
-  BackupPlanRule:
-    - BackupRuleResourceType
-  ScanSettings:
-    - ScanSettingResourceType
-
+```
+  [AdvancedBackupSettings](#cfn-backup-backupplan-backupplanresourcetype-advancedbackupsettings): {{
+    - AdvancedBackupSettingResourceType}}
+  [BackupPlanName](#cfn-backup-backupplan-backupplanresourcetype-backupplanname): {{String}}
+  [BackupPlanRule](#cfn-backup-backupplan-backupplanresourcetype-backupplanrule): {{
+    - BackupRuleResourceType}}
+  [ScanSettings](#cfn-backup-backupplan-backupplanresourcetype-scansettings): {{
+    - ScanSettingResourceType}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-backupplan-backupplanresourcetype-properties"></a>
 
-`AdvancedBackupSettings`
-
+`AdvancedBackupSettings`  <a name="cfn-backup-backupplan-backupplanresourcetype-advancedbackupsettings"></a>
 A list of backup options for each resource type.
+*Required*: No
+*Type*: Array of [AdvancedBackupSettingResourceType](aws-properties-backup-backupplan-advancedbackupsettingresourcetype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [AdvancedBackupSettingResourceType](aws-properties-backup-backupplan-advancedbackupsettingresourcetype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BackupPlanName`
-
+`BackupPlanName`  <a name="cfn-backup-backupplan-backupplanresourcetype-backupplanname"></a>
 The display name of a backup plan.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`BackupPlanRule`  <a name="cfn-backup-backupplan-backupplanresourcetype-backupplanrule"></a>
+An array of `BackupRule` objects, each of which specifies a scheduled task that is used to back up a selection of resources.
+*Required*: Yes
+*Type*: Array of [BackupRuleResourceType](aws-properties-backup-backupplan-backupruleresourcetype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BackupPlanRule`
-
-An array of `BackupRule` objects, each of which specifies a scheduled task
-that is used to back up a selection of resources.
-
-_Required_: Yes
-
-_Type_: Array of [BackupRuleResourceType](aws-properties-backup-backupplan-backupruleresourcetype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScanSettings`
-
+`ScanSettings`  <a name="cfn-backup-backupplan-backupplanresourcetype-scansettings"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [ScanSettingResourceType](aws-properties-backup-backupplan-scansettingresourcetype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdvancedBackupSettingResourceType
-
-BackupRuleResourceType
+*Required*: No
+*Type*: Array of [ScanSettingResourceType](aws-properties-backup-backupplan-scansettingresourcetype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

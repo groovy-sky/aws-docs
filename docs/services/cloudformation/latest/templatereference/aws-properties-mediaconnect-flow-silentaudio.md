@@ -2,66 +2,50 @@
 title: "AWS::MediaConnect::Flow SilentAudio"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow SilentAudio
+<a name="aws-properties-mediaconnect-flow-silentaudio"></a>
 
 Configures settings for the `SilentAudio` metric.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-silentaudio-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-silentaudio-syntax.json"></a>
 
-```json
-
+```
 {
-  "State" : String,
-  "ThresholdSeconds" : Integer
+  "[State](#cfn-mediaconnect-flow-silentaudio-state)" : {{String}},
+  "[ThresholdSeconds](#cfn-mediaconnect-flow-silentaudio-thresholdseconds)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-silentaudio-syntax.yaml"></a>
 
-```yaml
-
-  State: String
-  ThresholdSeconds: Integer
-
+```
+  [State](#cfn-mediaconnect-flow-silentaudio-state): {{String}}
+  [ThresholdSeconds](#cfn-mediaconnect-flow-silentaudio-thresholdseconds): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-silentaudio-properties"></a>
 
-`State`
-
+`State`  <a name="cfn-mediaconnect-flow-silentaudio-state"></a>
 Indicates whether the `SilentAudio` metric is enabled or disabled.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThresholdSeconds`
-
+`ThresholdSeconds`  <a name="cfn-mediaconnect-flow-silentaudio-thresholdseconds"></a>
 Specifies the number of consecutive seconds of silence that triggers an event or alert.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecretsManagerEncryptionKeyConfiguration
-
-Source
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,77 +2,53 @@
 title: "AWS::SageMaker::Model ImageConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Model ImageConfig
+<a name="aws-properties-sagemaker-model-imageconfig"></a>
 
-Specifies whether the model container is in Amazon ECR or a private Docker registry
-accessible from your Amazon Virtual Private Cloud (VPC).
+Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC).
 
 ## Syntax
+<a name="aws-properties-sagemaker-model-imageconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-model-imageconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "RepositoryAccessMode" : String,
-  "RepositoryAuthConfig" : RepositoryAuthConfig
+  "[RepositoryAccessMode](#cfn-sagemaker-model-imageconfig-repositoryaccessmode)" : {{String}},
+  "[RepositoryAuthConfig](#cfn-sagemaker-model-imageconfig-repositoryauthconfig)" : {{RepositoryAuthConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-model-imageconfig-syntax.yaml"></a>
 
-```yaml
-
-  RepositoryAccessMode: String
-  RepositoryAuthConfig:
-    RepositoryAuthConfig
-
+```
+  [RepositoryAccessMode](#cfn-sagemaker-model-imageconfig-repositoryaccessmode): {{String}}
+  [RepositoryAuthConfig](#cfn-sagemaker-model-imageconfig-repositoryauthconfig): {{
+    RepositoryAuthConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-model-imageconfig-properties"></a>
 
-`RepositoryAccessMode`
-
+`RepositoryAccessMode`  <a name="cfn-sagemaker-model-imageconfig-repositoryaccessmode"></a>
 Set this to one of the following values:
++ `Platform` - The model image is hosted in Amazon ECR.
++ `Vpc` - The model image is hosted in a private Docker registry in your VPC.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Platform | Vpc`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `Platform` \- The model image is hosted in Amazon ECR.
-
-- `Vpc` \- The model image is hosted in a private Docker registry in
-your VPC.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Platform | Vpc`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RepositoryAuthConfig`
-
-(Optional) Specifies an authentication configuration for the private docker registry
-where your model image is hosted. Specify a value for this property only if you
-specified `Vpc` as the value for the `RepositoryAccessMode` field,
-and the private Docker registry where the model image is hosted requires
-authentication.
-
-_Required_: No
-
-_Type_: [RepositoryAuthConfig](aws-properties-sagemaker-model-repositoryauthconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HubAccessConfig
-
-InferenceExecutionConfig
+`RepositoryAuthConfig`  <a name="cfn-sagemaker-model-imageconfig-repositoryauthconfig"></a>
+(Optional) Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified `Vpc` as the value for the `RepositoryAccessMode` field, and the private Docker registry where the model image is hosted requires authentication.
+*Required*: No
+*Type*: [RepositoryAuthConfig](aws-properties-sagemaker-model-repositoryauthconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,190 +2,125 @@
 title: "AWS::AppFlow::ConnectorProfile RedshiftConnectorProfileProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile RedshiftConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties"></a>
 
-The connector-specific profile properties when using Amazon Redshift.
+ The connector-specific profile properties when using Amazon Redshift.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "BucketPrefix" : String,
-  "ClusterIdentifier" : String,
-  "DataApiRoleArn" : String,
-  "DatabaseName" : String,
-  "DatabaseUrl" : String,
-  "IsRedshiftServerless" : Boolean,
-  "RoleArn" : String,
-  "WorkgroupName" : String
+  "[BucketName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketprefix)" : {{String}},
+  "[ClusterIdentifier](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-clusteridentifier)" : {{String}},
+  "[DataApiRoleArn](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-dataapirolearn)" : {{String}},
+  "[DatabaseName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-databasename)" : {{String}},
+  "[DatabaseUrl](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-databaseurl)" : {{String}},
+  "[IsRedshiftServerless](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-isredshiftserverless)" : {{Boolean}},
+  "[RoleArn](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-rolearn)" : {{String}},
+  "[WorkgroupName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-workgroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  BucketPrefix: String
-  ClusterIdentifier: String
-  DataApiRoleArn: String
-  DatabaseName: String
-  DatabaseUrl: String
-  IsRedshiftServerless: Boolean
-  RoleArn: String
-  WorkgroupName: String
-
+```
+  [BucketName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketname): {{String}}
+  [BucketPrefix](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketprefix): {{String}}
+  [ClusterIdentifier](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-clusteridentifier): {{String}}
+  [DataApiRoleArn](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-dataapirolearn): {{String}}
+  [DatabaseName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-databasename): {{String}}
+  [DatabaseUrl](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-databaseurl): {{String}}
+  [IsRedshiftServerless](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-isredshiftserverless): {{Boolean}}
+  [RoleArn](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-rolearn): {{String}}
+  [WorkgroupName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-workgroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties-properties"></a>
 
-`BucketName`
+`BucketName`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketname"></a>
+ A name for the associated Amazon S3 bucket.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A name for the associated Amazon S3 bucket.
+`BucketPrefix`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketprefix"></a>
+ The object key for the destination bucket in which Amazon AppFlow places the files.
+*Required*: No
+*Type*: String
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketPrefix`
-
-The object key for the destination bucket in which Amazon AppFlow places the files.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ClusterIdentifier`
-
+`ClusterIdentifier`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-clusteridentifier"></a>
 The unique ID that's assigned to an Amazon Redshift cluster.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DataApiRoleArn`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-dataapirolearn"></a>
+The Amazon Resource Name (ARN) of an IAM role that permits Amazon AppFlow to access your Amazon Redshift database through the Data API. For more information, and for the polices that you attach to this role, see [Allow Amazon AppFlow to access Amazon Redshift databases with the Data API](https://docs.aws.amazon.com/appflow/latest/userguide/security_iam_service-role-policies.html#access-redshift).
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws:iam:.*:[0-9]+:.*`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataApiRoleArn`
-
-The Amazon Resource Name (ARN) of an IAM role that permits Amazon AppFlow to access your Amazon Redshift database through the Data API. For more
-information, and for the polices that you attach to this role, see [Allow Amazon AppFlow to access Amazon Redshift databases with the Data\
-API](../../../appflow/latest/userguide/security-iam-service-role-policies.md#access-redshift).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws:iam:.*:[0-9]+:.*`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-databasename"></a>
 The name of an Amazon Redshift database.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DatabaseUrl`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-databaseurl"></a>
+ The JDBC URL of the Amazon Redshift cluster.
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`IsRedshiftServerless`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-isredshiftserverless"></a>
+Indicates whether the connector profile defines a connection to an Amazon Redshift Serverless data warehouse.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `\S+`
+`RoleArn`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-rolearn"></a>
+ The Amazon Resource Name (ARN) of IAM role that grants Amazon Redshift read-only access to Amazon S3. For more information, and for the polices that you attach to this role, see [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](https://docs.aws.amazon.com/appflow/latest/userguide/security_iam_service-role-policies.html#redshift-access-s3).
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws:iam:.*:[0-9]+:.*`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseUrl`
-
-The JDBC URL of the Amazon Redshift cluster.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsRedshiftServerless`
-
-Indicates whether the connector profile defines a connection to an Amazon Redshift
-Serverless data warehouse.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The Amazon Resource Name (ARN) of IAM role that grants Amazon Redshift
-read-only access to Amazon S3. For more information, and for the polices that you
-attach to this role, see [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](../../../appflow/latest/userguide/security-iam-service-role-policies.md#redshift-access-s3).
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws:iam:.*:[0-9]+:.*`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkgroupName`
-
+`WorkgroupName`  <a name="cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-workgroupname"></a>
 The name of an Amazon Redshift workgroup.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [RedshiftConnectorProfileProperties](../../../../reference/appflow/1-0/apireference/api-redshiftconnectorprofileproperties.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedshiftConnectorProfileCredentials
-
-SalesforceConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties--seealso"></a>
++ [RedshiftConnectorProfileProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftConnectorProfileProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

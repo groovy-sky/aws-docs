@@ -2,79 +2,60 @@
 title: "AWS::Bedrock::DataAutomationProject DocumentOverrideConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject DocumentOverrideConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration"></a>
 
 Additional settings for a project.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ModalityProcessing" : ModalityProcessingConfiguration,
-  "SensitiveDataConfiguration" : SensitiveDataConfiguration,
-  "Splitter" : SplitterConfiguration
+  "[ModalityProcessing](#cfn-bedrock-dataautomationproject-documentoverrideconfiguration-modalityprocessing)" : {{ModalityProcessingConfiguration}},
+  "[SensitiveDataConfiguration](#cfn-bedrock-dataautomationproject-documentoverrideconfiguration-sensitivedataconfiguration)" : {{SensitiveDataConfiguration}},
+  "[Splitter](#cfn-bedrock-dataautomationproject-documentoverrideconfiguration-splitter)" : {{SplitterConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ModalityProcessing:
-    ModalityProcessingConfiguration
-  SensitiveDataConfiguration:
-    SensitiveDataConfiguration
-  Splitter:
-    SplitterConfiguration
-
+```
+  [ModalityProcessing](#cfn-bedrock-dataautomationproject-documentoverrideconfiguration-modalityprocessing): {{
+    ModalityProcessingConfiguration}}
+  [SensitiveDataConfiguration](#cfn-bedrock-dataautomationproject-documentoverrideconfiguration-sensitivedataconfiguration): {{
+    SensitiveDataConfiguration}}
+  [Splitter](#cfn-bedrock-dataautomationproject-documentoverrideconfiguration-splitter): {{
+    SplitterConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-documentoverrideconfiguration-properties"></a>
 
-`ModalityProcessing`
-
+`ModalityProcessing`  <a name="cfn-bedrock-dataautomationproject-documentoverrideconfiguration-modalityprocessing"></a>
 Sets modality processing for document files. All modalities are enabled by default.
+*Required*: No
+*Type*: [ModalityProcessingConfiguration](aws-properties-bedrock-dataautomationproject-modalityprocessingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ModalityProcessingConfiguration](aws-properties-bedrock-dataautomationproject-modalityprocessingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SensitiveDataConfiguration`
-
+`SensitiveDataConfiguration`  <a name="cfn-bedrock-dataautomationproject-documentoverrideconfiguration-sensitivedataconfiguration"></a>
 Configuration for sensitive data detection and redaction for document files.
+*Required*: No
+*Type*: [SensitiveDataConfiguration](aws-properties-bedrock-dataautomationproject-sensitivedataconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SensitiveDataConfiguration](aws-properties-bedrock-dataautomationproject-sensitivedataconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Splitter`
-
+`Splitter`  <a name="cfn-bedrock-dataautomationproject-documentoverrideconfiguration-splitter"></a>
 Whether document splitter is enabled for a project.
-
-_Required_: No
-
-_Type_: [SplitterConfiguration](aws-properties-bedrock-dataautomationproject-splitterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentOutputTextFormat
-
-DocumentStandardExtraction
+*Required*: No
+*Type*: [SplitterConfiguration](aws-properties-bedrock-dataautomationproject-splitterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

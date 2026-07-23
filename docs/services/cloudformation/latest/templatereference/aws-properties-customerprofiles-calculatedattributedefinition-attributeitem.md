@@ -2,59 +2,44 @@
 title: "AWS::CustomerProfiles::CalculatedAttributeDefinition AttributeItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::CalculatedAttributeDefinition AttributeItem
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributeitem"></a>
 
-The details of a single attribute item specified in the mathematical
-expression.
+The details of a single attribute item specified in the mathematical expression.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributeitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributeitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String
+  "[Name](#cfn-customerprofiles-calculatedattributedefinition-attributeitem-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributeitem-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-
+```
+  [Name](#cfn-customerprofiles-calculatedattributedefinition-attributeitem-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-attributeitem-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-customerprofiles-calculatedattributedefinition-attributeitem-name"></a>
 The unique name of the calculated attribute.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttributeDetails
-
-Conditions
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

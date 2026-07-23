@@ -2,131 +2,96 @@
 title: "AWS::QuickSight::Template GeospatialMapConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template GeospatialMapConfiguration
+<a name="aws-properties-quicksight-template-geospatialmapconfiguration"></a>
 
 The configuration of a `GeospatialMapVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-geospatialmapconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-geospatialmapconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldWells" : GeospatialMapFieldWells,
-  "Legend" : LegendOptions,
-  "MapStyleOptions" : GeospatialMapStyleOptions,
-  "PointStyleOptions" : GeospatialPointStyleOptions,
-  "Tooltip" : TooltipOptions,
-  "VisualPalette" : VisualPalette,
-  "WindowOptions" : GeospatialWindowOptions
+  "[FieldWells](#cfn-quicksight-template-geospatialmapconfiguration-fieldwells)" : {{GeospatialMapFieldWells}},
+  "[Legend](#cfn-quicksight-template-geospatialmapconfiguration-legend)" : {{LegendOptions}},
+  "[MapStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-mapstyleoptions)" : {{GeospatialMapStyleOptions}},
+  "[PointStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-pointstyleoptions)" : {{GeospatialPointStyleOptions}},
+  "[Tooltip](#cfn-quicksight-template-geospatialmapconfiguration-tooltip)" : {{TooltipOptions}},
+  "[VisualPalette](#cfn-quicksight-template-geospatialmapconfiguration-visualpalette)" : {{VisualPalette}},
+  "[WindowOptions](#cfn-quicksight-template-geospatialmapconfiguration-windowoptions)" : {{GeospatialWindowOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-geospatialmapconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FieldWells:
-    GeospatialMapFieldWells
-  Legend:
-    LegendOptions
-  MapStyleOptions:
-    GeospatialMapStyleOptions
-  PointStyleOptions:
-    GeospatialPointStyleOptions
-  Tooltip:
-    TooltipOptions
-  VisualPalette:
-    VisualPalette
-  WindowOptions:
-    GeospatialWindowOptions
-
+```
+  [FieldWells](#cfn-quicksight-template-geospatialmapconfiguration-fieldwells): {{
+    GeospatialMapFieldWells}}
+  [Legend](#cfn-quicksight-template-geospatialmapconfiguration-legend): {{
+    LegendOptions}}
+  [MapStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-mapstyleoptions): {{
+    GeospatialMapStyleOptions}}
+  [PointStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-pointstyleoptions): {{
+    GeospatialPointStyleOptions}}
+  [Tooltip](#cfn-quicksight-template-geospatialmapconfiguration-tooltip): {{
+    TooltipOptions}}
+  [VisualPalette](#cfn-quicksight-template-geospatialmapconfiguration-visualpalette): {{
+    VisualPalette}}
+  [WindowOptions](#cfn-quicksight-template-geospatialmapconfiguration-windowoptions): {{
+    GeospatialWindowOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-geospatialmapconfiguration-properties"></a>
 
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-geospatialmapconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [GeospatialMapFieldWells](aws-properties-quicksight-template-geospatialmapfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialMapFieldWells](aws-properties-quicksight-template-geospatialmapfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Legend`
-
+`Legend`  <a name="cfn-quicksight-template-geospatialmapconfiguration-legend"></a>
 The legend display setup of the visual.
+*Required*: No
+*Type*: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LegendOptions](aws-properties-quicksight-template-legendoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapStyleOptions`
-
+`MapStyleOptions`  <a name="cfn-quicksight-template-geospatialmapconfiguration-mapstyleoptions"></a>
 The map style options of the geospatial map.
+*Required*: No
+*Type*: [GeospatialMapStyleOptions](aws-properties-quicksight-template-geospatialmapstyleoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialMapStyleOptions](aws-properties-quicksight-template-geospatialmapstyleoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PointStyleOptions`
-
+`PointStyleOptions`  <a name="cfn-quicksight-template-geospatialmapconfiguration-pointstyleoptions"></a>
 The point style options of the geospatial map.
+*Required*: No
+*Type*: [GeospatialPointStyleOptions](aws-properties-quicksight-template-geospatialpointstyleoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialPointStyleOptions](aws-properties-quicksight-template-geospatialpointstyleoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tooltip`
-
+`Tooltip`  <a name="cfn-quicksight-template-geospatialmapconfiguration-tooltip"></a>
 The tooltip display setup of the visual.
+*Required*: No
+*Type*: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [TooltipOptions](aws-properties-quicksight-template-tooltipoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualPalette`
-
+`VisualPalette`  <a name="cfn-quicksight-template-geospatialmapconfiguration-visualpalette"></a>
 Property description not available.
+*Required*: No
+*Type*: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualPalette](aws-properties-quicksight-template-visualpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WindowOptions`
-
+`WindowOptions`  <a name="cfn-quicksight-template-geospatialmapconfiguration-windowoptions"></a>
 The window options of the geospatial map.
-
-_Required_: No
-
-_Type_: [GeospatialWindowOptions](aws-properties-quicksight-template-geospatialwindowoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialMapAggregatedFieldWells
-
-GeospatialMapFieldWells
+*Required*: No
+*Type*: [GeospatialWindowOptions](aws-properties-quicksight-template-geospatialwindowoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

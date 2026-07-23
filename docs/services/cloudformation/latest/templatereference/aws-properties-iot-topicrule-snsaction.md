@@ -2,82 +2,58 @@
 title: "AWS::IoT::TopicRule SnsAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule SnsAction
+<a name="aws-properties-iot-topicrule-snsaction"></a>
 
 Describes an action to publish to an Amazon SNS topic.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-snsaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-snsaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "MessageFormat" : String,
-  "RoleArn" : String,
-  "TargetArn" : String
+  "[MessageFormat](#cfn-iot-topicrule-snsaction-messageformat)" : {{String}},
+  "[RoleArn](#cfn-iot-topicrule-snsaction-rolearn)" : {{String}},
+  "[TargetArn](#cfn-iot-topicrule-snsaction-targetarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-snsaction-syntax.yaml"></a>
 
-```yaml
-
-  MessageFormat: String
-  RoleArn: String
-  TargetArn: String
-
+```
+  [MessageFormat](#cfn-iot-topicrule-snsaction-messageformat): {{String}}
+  [RoleArn](#cfn-iot-topicrule-snsaction-rolearn): {{String}}
+  [TargetArn](#cfn-iot-topicrule-snsaction-targetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-snsaction-properties"></a>
 
-`MessageFormat`
+`MessageFormat`  <a name="cfn-iot-topicrule-snsaction-messageformat"></a>
+(Optional) The message format of the message to publish. Accepted values are "JSON" and "RAW". The default value of the attribute is "RAW". SNS uses this setting to determine if the payload should be parsed and relevant platform-specific bits of the payload should be extracted. For more information, see [Amazon SNS Message and JSON Formats](https://docs.aws.amazon.com/sns/latest/dg/json-formats.html) in the *Amazon Simple Notification Service Developer Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `RAW | JSON`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-(Optional) The message format of the message to publish. Accepted values are "JSON"
-and "RAW". The default value of the attribute is "RAW". SNS uses this setting to determine
-if the payload should be parsed and relevant platform-specific bits of the payload should
-be extracted. For more information, see [Amazon SNS Message and JSON Formats](../../../sns/latest/dg/json-formats.md) in the
-_Amazon Simple Notification Service Developer Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `RAW | JSON`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-snsaction-rolearn"></a>
 The ARN of the IAM role that grants access.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
+`TargetArn`  <a name="cfn-iot-topicrule-snsaction-targetarn"></a>
 The ARN of the SNS topic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SigV4Authorization
-
-SqsAction
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

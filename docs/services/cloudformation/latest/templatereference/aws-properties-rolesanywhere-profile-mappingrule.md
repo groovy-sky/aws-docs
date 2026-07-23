@@ -2,56 +2,43 @@
 title: "AWS::RolesAnywhere::Profile MappingRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RolesAnywhere::Profile MappingRule
+<a name="aws-properties-rolesanywhere-profile-mappingrule"></a>
 
 A single mapping entry for each supported specifier or sub-field.
 
 ## Syntax
+<a name="aws-properties-rolesanywhere-profile-mappingrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rolesanywhere-profile-mappingrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Specifier" : String
+  "[Specifier](#cfn-rolesanywhere-profile-mappingrule-specifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rolesanywhere-profile-mappingrule-syntax.yaml"></a>
 
-```yaml
-
-  Specifier: String
-
+```
+  [Specifier](#cfn-rolesanywhere-profile-mappingrule-specifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rolesanywhere-profile-mappingrule-properties"></a>
 
-`Specifier`
-
+`Specifier`  <a name="cfn-rolesanywhere-profile-mappingrule-specifier"></a>
 Specifier within a certificate field, such as CN, OU, or UID from the Subject field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `60`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttributeMapping
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `60`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,135 +2,93 @@
 title: "AWS::Pipes::Pipe PipeSourceManagedStreamingKafkaParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeSourceManagedStreamingKafkaParameters
+<a name="aws-properties-pipes-pipe-pipesourcemanagedstreamingkafkaparameters"></a>
 
 The parameters for using an MSK stream as a source.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "BatchSize" : Integer,
-  "ConsumerGroupID" : String,
-  "Credentials" : MSKAccessCredentials,
-  "MaximumBatchingWindowInSeconds" : Integer,
-  "StartingPosition" : String,
-  "TopicName" : String
+  "[BatchSize](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-batchsize)" : {{Integer}},
+  "[ConsumerGroupID](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-consumergroupid)" : {{String}},
+  "[Credentials](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-credentials)" : {{MSKAccessCredentials}},
+  "[MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-maximumbatchingwindowinseconds)" : {{Integer}},
+  "[StartingPosition](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-startingposition)" : {{String}},
+  "[TopicName](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-topicname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-syntax.yaml"></a>
 
-```yaml
-
-  BatchSize: Integer
-  ConsumerGroupID: String
-  Credentials:
-    MSKAccessCredentials
-  MaximumBatchingWindowInSeconds: Integer
-  StartingPosition: String
-  TopicName: String
-
+```
+  [BatchSize](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-batchsize): {{Integer}}
+  [ConsumerGroupID](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-consumergroupid): {{String}}
+  [Credentials](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-credentials): {{
+    MSKAccessCredentials}}
+  [MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-maximumbatchingwindowinseconds): {{Integer}}
+  [StartingPosition](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-startingposition): {{String}}
+  [TopicName](#cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-topicname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-properties"></a>
 
-`BatchSize`
-
+`BatchSize`  <a name="cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-batchsize"></a>
 The maximum number of records to include in each batch.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConsumerGroupID`
-
+`ConsumerGroupID`  <a name="cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-consumergroupid"></a>
 The name of the destination queue to consume.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-\/*:_+=.@-]*$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-\/*:_+=.@-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Credentials`
-
+`Credentials`  <a name="cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-credentials"></a>
 The credentials needed to access the resource.
+*Required*: No
+*Type*: [MSKAccessCredentials](aws-properties-pipes-pipe-mskaccesscredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MSKAccessCredentials](aws-properties-pipes-pipe-mskaccesscredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumBatchingWindowInSeconds`
-
+`MaximumBatchingWindowInSeconds`  <a name="cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-maximumbatchingwindowinseconds"></a>
 The maximum length of a time to wait for events.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartingPosition`
-
+`StartingPosition`  <a name="cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-startingposition"></a>
 The position in a stream from which to start reading.
+*Required*: No
+*Type*: String
+*Allowed values*: `TRIM_HORIZON | LATEST`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TRIM_HORIZON | LATEST`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TopicName`
-
+`TopicName`  <a name="cfn-pipes-pipe-pipesourcemanagedstreamingkafkaparameters-topicname"></a>
 The name of the topic that the pipe will read from.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^.]([a-zA-Z0-9\-_.]+)$`
-
-_Minimum_: `1`
-
-_Maximum_: `249`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeSourceKinesisStreamParameters
-
-PipeSourceParameters
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^.]([a-zA-Z0-9\-_.]+)$`
+*Minimum*: `1`
+*Maximum*: `249`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

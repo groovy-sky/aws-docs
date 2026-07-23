@@ -2,54 +2,42 @@
 title: "AWS::DataZone::ProjectProfile AwsAccount"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::ProjectProfile AwsAccount
+<a name="aws-properties-datazone-projectprofile-awsaccount"></a>
 
 The AWS account of the environment.
 
 ## Syntax
+<a name="aws-properties-datazone-projectprofile-awsaccount-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-projectprofile-awsaccount-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsAccountId" : String
+  "[AwsAccountId](#cfn-datazone-projectprofile-awsaccount-awsaccountid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-projectprofile-awsaccount-syntax.yaml"></a>
 
-```yaml
-
-  AwsAccountId: String
-
+```
+  [AwsAccountId](#cfn-datazone-projectprofile-awsaccount-awsaccountid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-projectprofile-awsaccount-properties"></a>
 
-`AwsAccountId`
-
+`AwsAccountId`  <a name="cfn-datazone-projectprofile-awsaccount-awsaccountid"></a>
 The account ID of a project.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DataZone::ProjectProfile
-
-EnvironmentConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\d{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

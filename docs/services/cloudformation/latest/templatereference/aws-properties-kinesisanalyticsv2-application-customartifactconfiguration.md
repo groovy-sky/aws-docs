@@ -2,82 +2,60 @@
 title: "AWS::KinesisAnalyticsV2::Application CustomArtifactConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application CustomArtifactConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-customartifactconfiguration"></a>
 
 The configuration of connectors and user-defined functions.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-customartifactconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-customartifactconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArtifactType" : String,
-  "MavenReference" : MavenReference,
-  "S3ContentLocation" : S3ContentLocation
+  "[ArtifactType](#cfn-kinesisanalyticsv2-application-customartifactconfiguration-artifacttype)" : {{String}},
+  "[MavenReference](#cfn-kinesisanalyticsv2-application-customartifactconfiguration-mavenreference)" : {{MavenReference}},
+  "[S3ContentLocation](#cfn-kinesisanalyticsv2-application-customartifactconfiguration-s3contentlocation)" : {{S3ContentLocation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-customartifactconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ArtifactType: String
-  MavenReference:
-    MavenReference
-  S3ContentLocation:
-    S3ContentLocation
-
+```
+  [ArtifactType](#cfn-kinesisanalyticsv2-application-customartifactconfiguration-artifacttype): {{String}}
+  [MavenReference](#cfn-kinesisanalyticsv2-application-customartifactconfiguration-mavenreference): {{
+    MavenReference}}
+  [S3ContentLocation](#cfn-kinesisanalyticsv2-application-customartifactconfiguration-s3contentlocation): {{
+    S3ContentLocation}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-customartifactconfiguration-properties"></a>
 
-`ArtifactType`
+`ArtifactType`  <a name="cfn-kinesisanalyticsv2-application-customartifactconfiguration-artifacttype"></a>
+ Set this to either `UDF` or `DEPENDENCY_JAR`. `UDF` stands for user-defined functions. This type of artifact must be in an S3 bucket. A `DEPENDENCY_JAR` can be in either Maven or an S3 bucket.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DEPENDENCY_JAR | UDF`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Set this to either `UDF` or `DEPENDENCY_JAR`. `UDF`
-stands for user-defined functions. This type of artifact must be in an S3 bucket. A
-`DEPENDENCY_JAR` can be in either Maven or an S3 bucket.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DEPENDENCY_JAR | UDF`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MavenReference`
-
+`MavenReference`  <a name="cfn-kinesisanalyticsv2-application-customartifactconfiguration-mavenreference"></a>
 The parameters required to fully specify a Maven reference.
+*Required*: No
+*Type*: [MavenReference](aws-properties-kinesisanalyticsv2-application-mavenreference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MavenReference](aws-properties-kinesisanalyticsv2-application-mavenreference.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3ContentLocation`
-
+`S3ContentLocation`  <a name="cfn-kinesisanalyticsv2-application-customartifactconfiguration-s3contentlocation"></a>
 The location of the custom artifacts.
-
-_Required_: No
-
-_Type_: [S3ContentLocation](aws-properties-kinesisanalyticsv2-application-s3contentlocation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CSVMappingParameters
-
-DeployAsApplicationConfiguration
+*Required*: No
+*Type*: [S3ContentLocation](aws-properties-kinesisanalyticsv2-application-s3contentlocation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

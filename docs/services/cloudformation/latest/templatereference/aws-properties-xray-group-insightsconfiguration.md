@@ -2,66 +2,49 @@
 title: "AWS::XRay::Group InsightsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::Group InsightsConfiguration
+<a name="aws-properties-xray-group-insightsconfiguration"></a>
 
 The structure containing configurations related to insights.
 
 ## Syntax
+<a name="aws-properties-xray-group-insightsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-xray-group-insightsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InsightsEnabled" : Boolean,
-  "NotificationsEnabled" : Boolean
+  "[InsightsEnabled](#cfn-xray-group-insightsconfiguration-insightsenabled)" : {{Boolean}},
+  "[NotificationsEnabled](#cfn-xray-group-insightsconfiguration-notificationsenabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-xray-group-insightsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InsightsEnabled: Boolean
-  NotificationsEnabled: Boolean
-
+```
+  [InsightsEnabled](#cfn-xray-group-insightsconfiguration-insightsenabled): {{Boolean}}
+  [NotificationsEnabled](#cfn-xray-group-insightsconfiguration-notificationsenabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-xray-group-insightsconfiguration-properties"></a>
 
-`InsightsEnabled`
+`InsightsEnabled`  <a name="cfn-xray-group-insightsconfiguration-insightsenabled"></a>
+Set the InsightsEnabled value to true to enable insights or false to disable insights.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Set the InsightsEnabled value to true to enable insights or false to disable
-insights.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotificationsEnabled`
-
-Set the NotificationsEnabled value to true to enable insights notifications. Notifications can only be
-enabled on a group with InsightsEnabled set to true.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::XRay::Group
-
-Tag
+`NotificationsEnabled`  <a name="cfn-xray-group-insightsconfiguration-notificationsenabled"></a>
+Set the NotificationsEnabled value to true to enable insights notifications. Notifications can only be enabled on a group with InsightsEnabled set to true.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

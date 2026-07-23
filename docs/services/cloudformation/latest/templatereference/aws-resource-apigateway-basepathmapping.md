@@ -2,98 +2,74 @@
 title: "AWS::ApiGateway::BasePathMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::BasePathMapping
+<a name="aws-resource-apigateway-basepathmapping"></a>
 
-The `AWS::ApiGateway::BasePathMapping` resource creates a base path that clients who call your API
-must use in the invocation URL. Supported only for public custom domain names.
+The `AWS::ApiGateway::BasePathMapping` resource creates a base path that clients who call your API must use in the invocation URL. Supported only for public custom domain names.
 
 ## Syntax
+<a name="aws-resource-apigateway-basepathmapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-basepathmapping-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::BasePathMapping",
   "Properties" : {
-      "BasePath" : String,
-      "DomainName" : String,
-      "RestApiId" : String,
-      "Stage" : String
+      "[BasePath](#cfn-apigateway-basepathmapping-basepath)" : {{String}},
+      "[DomainName](#cfn-apigateway-basepathmapping-domainname)" : {{String}},
+      "[RestApiId](#cfn-apigateway-basepathmapping-restapiid)" : {{String}},
+      "[Stage](#cfn-apigateway-basepathmapping-stage)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-basepathmapping-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::BasePathMapping
 Properties:
-  BasePath: String
-  DomainName: String
-  RestApiId: String
-  Stage: String
-
+  [BasePath](#cfn-apigateway-basepathmapping-basepath): {{String}}
+  [DomainName](#cfn-apigateway-basepathmapping-domainname): {{String}}
+  [RestApiId](#cfn-apigateway-basepathmapping-restapiid): {{String}}
+  [Stage](#cfn-apigateway-basepathmapping-stage): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-basepathmapping-properties"></a>
 
-`BasePath`
-
+`BasePath`  <a name="cfn-apigateway-basepathmapping-basepath"></a>
 The base path name that callers of the API must provide as part of the URL after the domain name.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-apigateway-basepathmapping-domainname"></a>
 The domain name of the BasePathMapping resource to be described.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RestApiId`
-
+`RestApiId`  <a name="cfn-apigateway-basepathmapping-restapiid"></a>
 The string identifier of the associated RestApi.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Stage`
-
+`Stage`  <a name="cfn-apigateway-basepathmapping-stage"></a>
 The name of the associated stage.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [basepathmapping:create](../../../apigateway/latest/api/api-createbasepathmapping.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGateway::Authorizer
-
-AWS::ApiGateway::BasePathMappingV2
+<a name="aws-resource-apigateway-basepathmapping--seealso"></a>
++ [basepathmapping:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateBasePathMapping.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::GroundStation::DataflowEndpointGroupV2 CreateEndpointDetails"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroupV2 CreateEndpointDetails
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails"></a>
 
 Endpoint definition used for creating a dataflow endpoint
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails-syntax.json"></a>
 
-```json
-
+```
 {
-  "DownlinkAwsGroundStationAgentEndpoint" : DownlinkAwsGroundStationAgentEndpoint,
-  "UplinkAwsGroundStationAgentEndpoint" : UplinkAwsGroundStationAgentEndpoint
+  "[DownlinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-downlinkawsgroundstationagentendpoint)" : {{DownlinkAwsGroundStationAgentEndpoint}},
+  "[UplinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-uplinkawsgroundstationagentendpoint)" : {{UplinkAwsGroundStationAgentEndpoint}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails-syntax.yaml"></a>
 
-```yaml
-
-  DownlinkAwsGroundStationAgentEndpoint:
-    DownlinkAwsGroundStationAgentEndpoint
-  UplinkAwsGroundStationAgentEndpoint:
-    UplinkAwsGroundStationAgentEndpoint
-
+```
+  [DownlinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-downlinkawsgroundstationagentendpoint): {{
+    DownlinkAwsGroundStationAgentEndpoint}}
+  [UplinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-uplinkawsgroundstationagentendpoint): {{
+    UplinkAwsGroundStationAgentEndpoint}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails-properties"></a>
 
-`DownlinkAwsGroundStationAgentEndpoint`
-
+`DownlinkAwsGroundStationAgentEndpoint`  <a name="cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-downlinkawsgroundstationagentendpoint"></a>
 Definition for a downlink agent endpoint
+*Required*: No
+*Type*: [DownlinkAwsGroundStationAgentEndpoint](aws-properties-groundstation-dataflowendpointgroupv2-downlinkawsgroundstationagentendpoint.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DownlinkAwsGroundStationAgentEndpoint](aws-properties-groundstation-dataflowendpointgroupv2-downlinkawsgroundstationagentendpoint.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UplinkAwsGroundStationAgentEndpoint`
-
+`UplinkAwsGroundStationAgentEndpoint`  <a name="cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-uplinkawsgroundstationagentendpoint"></a>
 Definition for an uplink agent endpoint
-
-_Required_: No
-
-_Type_: [UplinkAwsGroundStationAgentEndpoint](aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectionDetails
-
-DownlinkAwsGroundStationAgentEndpoint
+*Required*: No
+*Type*: [UplinkAwsGroundStationAgentEndpoint](aws-properties-groundstation-dataflowendpointgroupv2-uplinkawsgroundstationagentendpoint.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

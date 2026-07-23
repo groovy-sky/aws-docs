@@ -2,59 +2,47 @@
 title: "AWS::EVS::Environment ConnectivityInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EVS::Environment ConnectivityInfo
+<a name="aws-properties-evs-environment-connectivityinfo"></a>
 
-The connectivity configuration for the environment.
-Amazon EVS requires that you specify two route server peer IDs.
-During environment creation, the route server endpoints peer with the NSX uplink VLAN for connectivity to the NSX overlay network.
+The connectivity configuration for the environment. Amazon EVS requires that you specify two route server peer IDs. During environment creation, the route server endpoints peer with the NSX uplink VLAN for connectivity to the NSX overlay network.
+
+**Note**
+Not supported when `vcfVersion` is `SELF_DEPLOYED`.
 
 ## Syntax
+<a name="aws-properties-evs-environment-connectivityinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-evs-environment-connectivityinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "PrivateRouteServerPeerings" : [ String, ... ]
+  "[PrivateRouteServerPeerings](#cfn-evs-environment-connectivityinfo-privaterouteserverpeerings)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-evs-environment-connectivityinfo-syntax.yaml"></a>
 
-```yaml
-
-  PrivateRouteServerPeerings:
-    - String
-
+```
+  [PrivateRouteServerPeerings](#cfn-evs-environment-connectivityinfo-privaterouteserverpeerings): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-evs-environment-connectivityinfo-properties"></a>
 
-`PrivateRouteServerPeerings`
-
+`PrivateRouteServerPeerings`  <a name="cfn-evs-environment-connectivityinfo-privaterouteserverpeerings"></a>
 The unique IDs for private route server peers.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `2`
-
-_Maximum_: `2`
-
-_Update requires_: Updates are not supported.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Check
-
-HostInfoForCreate
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `2`
+*Maximum*: `2`
+*Update requires*: Updates are not supported.
 
 All content copied from https://docs.aws.amazon.com/.

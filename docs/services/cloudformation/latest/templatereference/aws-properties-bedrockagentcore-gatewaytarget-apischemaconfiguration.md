@@ -2,65 +2,50 @@
 title: "AWS::BedrockAgentCore::GatewayTarget ApiSchemaConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget ApiSchemaConfiguration
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration"></a>
 
 Configuration for API schema.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InlinePayload" : String,
-  "S3" : S3Configuration
+  "[InlinePayload](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-inlinepayload)" : {{String}},
+  "[S3](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-s3)" : {{S3Configuration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InlinePayload: String
-  S3:
-    S3Configuration
-
+```
+  [InlinePayload](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-inlinepayload): {{String}}
+  [S3](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-s3): {{
+    S3Configuration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration-properties"></a>
 
-`InlinePayload`
-
+`InlinePayload`  <a name="cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-inlinepayload"></a>
 The inline payload containing the API schema definition.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3`
-
+`S3`  <a name="cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-s3"></a>
 The S3 configuration for a gateway. This structure defines how the gateway accesses files in S3.
-
-_Required_: No
-
-_Type_: [S3Configuration](aws-properties-bedrockagentcore-gatewaytarget-s3configuration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiKeyCredentialProvider
-
-CredentialProvider
+*Required*: No
+*Type*: [S3Configuration](aws-properties-bedrockagentcore-gatewaytarget-s3configuration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

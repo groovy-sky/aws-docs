@@ -2,173 +2,142 @@
 title: "AWS::SecurityHub::ConnectorV2"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ConnectorV2
+<a name="aws-resource-securityhub-connectorv2"></a>
 
 Grants permission to create a connectorV2 based on input parameters.
 
 ## Syntax
+<a name="aws-resource-securityhub-connectorv2-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-securityhub-connectorv2-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SecurityHub::ConnectorV2",
   "Properties" : {
-      "Description" : String,
-      "KmsKeyArn" : String,
-      "Name" : String,
-      "Provider" : Provider,
-      "Tags" : {Key: Value, ...}
+      "[Description](#cfn-securityhub-connectorv2-description)" : {{String}},
+      "[KmsKeyArn](#cfn-securityhub-connectorv2-kmskeyarn)" : {{String}},
+      "[Name](#cfn-securityhub-connectorv2-name)" : {{String}},
+      "[Provider](#cfn-securityhub-connectorv2-provider)" : {{Provider}},
+      "[Tags](#cfn-securityhub-connectorv2-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-securityhub-connectorv2-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SecurityHub::ConnectorV2
 Properties:
-  Description: String
-  KmsKeyArn: String
-  Name: String
-  Provider:
-    Provider
-  Tags:
-    Key: Value
-
+  [Description](#cfn-securityhub-connectorv2-description): {{String}}
+  [KmsKeyArn](#cfn-securityhub-connectorv2-kmskeyarn): {{String}}
+  [Name](#cfn-securityhub-connectorv2-name): {{String}}
+  [Provider](#cfn-securityhub-connectorv2-provider): {{
+    Provider}}
+  [Tags](#cfn-securityhub-connectorv2-tags): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-resource-securityhub-connectorv2-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-securityhub-connectorv2-description"></a>
 The description of the connectorV2.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyArn`
-
+`KmsKeyArn`  <a name="cfn-securityhub-connectorv2-kmskeyarn"></a>
 The Amazon Resource Name (ARN) of KMS key used to encrypt secrets for the connectorV2.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-securityhub-connectorv2-name"></a>
 The unique name of the connectorV2.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Provider`
-
+`Provider`  <a name="cfn-securityhub-connectorv2-provider"></a>
 The third-party provider detail for a service configuration.
+*Required*: Yes
+*Type*: [Provider](aws-properties-securityhub-connectorv2-provider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Provider](aws-properties-securityhub-connectorv2-provider.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-securityhub-connectorv2-tags"></a>
 The tags to add to the connectorV2 when you create.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^(?!aws:)[a-zA-Z+-=._:/]{1,128}$`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^(?!aws:)[a-zA-Z+-=._:/]{1,128}$`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-securityhub-connectorv2-return-values"></a>
 
 ### Ref
+<a name="aws-resource-securityhub-connectorv2-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the `ConnectorV2Arn` for the `ConnectorV2Arn` resource created: `arn:aws:securityhub:region:123456789012:connectorv2/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-securityhub-connectorv2-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ConnectorArn`
+####
+<a name="aws-resource-securityhub-connectorv2-return-values-fn--getatt-fn--getatt"></a>
 
+`ConnectorArn`  <a name="ConnectorArn-fn::getatt"></a>
 The ARN of the V2 connector.
 
-`ConnectorId`
-
+`ConnectorId`  <a name="ConnectorId-fn::getatt"></a>
 The unique identifier of the V2 connector.
 
-`ConnectorStatus`
-
+`ConnectorStatus`  <a name="ConnectorStatus-fn::getatt"></a>
 The status of the V2 connector.
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the V2 connector was created.
 
-`LastCheckedAt`
+`EnablementStatus`  <a name="EnablementStatus-fn::getatt"></a>
+Property description not available.
 
+`EnablementStatusReason`  <a name="EnablementStatusReason-fn::getatt"></a>
+Provides additional context for the value of `Compliance.Status`.
+
+`Issues`  <a name="Issues-fn::getatt"></a>
+Property description not available.
+
+`LastCheckedAt`  <a name="LastCheckedAt-fn::getatt"></a>
 The most recent timestamp when the V2 connector was checked on health status.
 
-`LastUpdatedAt`
-
+`LastUpdatedAt`  <a name="LastUpdatedAt-fn::getatt"></a>
 The most recent timestamp when the V2 connector was updated.
 
-`Message`
-
+`Message`  <a name="Message-fn::getatt"></a>
 The message of the V2 connector when connector status is FAILED\_TO\_CONNECT.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecurityHubPolicy
-
-JiraCloudProviderConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

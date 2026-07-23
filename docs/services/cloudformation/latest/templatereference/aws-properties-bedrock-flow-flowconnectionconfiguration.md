@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::Flow FlowConnectionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow FlowConnectionConfiguration
+<a name="aws-properties-bedrock-flow-flowconnectionconfiguration"></a>
 
 The configuration of the connection.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-flowconnectionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-flowconnectionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Conditional" : FlowConditionalConnectionConfiguration,
-  "Data" : FlowDataConnectionConfiguration
+  "[Conditional](#cfn-bedrock-flow-flowconnectionconfiguration-conditional)" : {{FlowConditionalConnectionConfiguration}},
+  "[Data](#cfn-bedrock-flow-flowconnectionconfiguration-data)" : {{FlowDataConnectionConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-flowconnectionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Conditional:
-    FlowConditionalConnectionConfiguration
-  Data:
-    FlowDataConnectionConfiguration
-
+```
+  [Conditional](#cfn-bedrock-flow-flowconnectionconfiguration-conditional): {{
+    FlowConditionalConnectionConfiguration}}
+  [Data](#cfn-bedrock-flow-flowconnectionconfiguration-data): {{
+    FlowDataConnectionConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-flowconnectionconfiguration-properties"></a>
 
-`Conditional`
-
+`Conditional`  <a name="cfn-bedrock-flow-flowconnectionconfiguration-conditional"></a>
 The configuration of a connection originating from a Condition node.
+*Required*: No
+*Type*: [FlowConditionalConnectionConfiguration](aws-properties-bedrock-flow-flowconditionalconnectionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FlowConditionalConnectionConfiguration](aws-properties-bedrock-flow-flowconditionalconnectionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Data`
-
+`Data`  <a name="cfn-bedrock-flow-flowconnectionconfiguration-data"></a>
 The configuration of a connection originating from a node that isn't a Condition node.
-
-_Required_: No
-
-_Type_: [FlowDataConnectionConfiguration](aws-properties-bedrock-flow-flowdataconnectionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowConnection
-
-FlowDataConnectionConfiguration
+*Required*: No
+*Type*: [FlowDataConnectionConfiguration](aws-properties-bedrock-flow-flowdataconnectionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

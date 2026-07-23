@@ -2,80 +2,55 @@
 title: "AWS::Events::Rule RunCommandTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule RunCommandTarget
+<a name="aws-properties-events-rule-runcommandtarget"></a>
 
-Information about the EC2 instances that are to be sent the command, specified as
-key-value pairs. Each `RunCommandTarget` block can include only one key, but this
-key may specify multiple values.
+Information about the EC2 instances that are to be sent the command, specified as key-value pairs. Each `RunCommandTarget` block can include only one key, but this key may specify multiple values.
 
 ## Syntax
+<a name="aws-properties-events-rule-runcommandtarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-events-rule-runcommandtarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Values" : [ String, ... ]
+  "[Key](#cfn-events-rule-runcommandtarget-key)" : {{String}},
+  "[Values](#cfn-events-rule-runcommandtarget-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-events-rule-runcommandtarget-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Values:
-    - String
-
+```
+  [Key](#cfn-events-rule-runcommandtarget-key): {{String}}
+  [Values](#cfn-events-rule-runcommandtarget-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-events-rule-runcommandtarget-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-events-rule-runcommandtarget-key"></a>
+Can be either `tag:`*tag-key* or `InstanceIds`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Can be either `tag:` _tag-key_ or
-`InstanceIds`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
-If `Key` is `tag:` _tag-key_, `Values`
-is a list of tag values. If `Key` is `InstanceIds`, `Values`
-is a list of Amazon EC2 instance IDs.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RunCommandParameters
-
-SageMakerPipelineParameter
+`Values`  <a name="cfn-events-rule-runcommandtarget-values"></a>
+If `Key` is `tag:`*tag-key*, `Values` is a list of tag values. If `Key` is `InstanceIds`, `Values` is a list of Amazon EC2 instance IDs.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

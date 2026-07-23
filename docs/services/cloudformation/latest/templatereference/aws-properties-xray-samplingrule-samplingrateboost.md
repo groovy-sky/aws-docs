@@ -2,72 +2,52 @@
 title: "AWS::XRay::SamplingRule SamplingRateBoost"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::SamplingRule SamplingRateBoost
+<a name="aws-properties-xray-samplingrule-samplingrateboost"></a>
 
 Enable temporary sampling rate increases when you detect anomalies to improve visibility.
 
 ## Syntax
+<a name="aws-properties-xray-samplingrule-samplingrateboost-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-xray-samplingrule-samplingrateboost-syntax.json"></a>
 
-```json
-
+```
 {
-  "CooldownWindowMinutes" : Integer,
-  "MaxRate" : Number
+  "[CooldownWindowMinutes](#cfn-xray-samplingrule-samplingrateboost-cooldownwindowminutes)" : {{Integer}},
+  "[MaxRate](#cfn-xray-samplingrule-samplingrateboost-maxrate)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-xray-samplingrule-samplingrateboost-syntax.yaml"></a>
 
-```yaml
-
-  CooldownWindowMinutes: Integer
-  MaxRate: Number
-
+```
+  [CooldownWindowMinutes](#cfn-xray-samplingrule-samplingrateboost-cooldownwindowminutes): {{Integer}}
+  [MaxRate](#cfn-xray-samplingrule-samplingrateboost-maxrate): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-xray-samplingrule-samplingrateboost-properties"></a>
 
-`CooldownWindowMinutes`
+`CooldownWindowMinutes`  <a name="cfn-xray-samplingrule-samplingrateboost-cooldownwindowminutes"></a>
+Sets the time window (in minutes) in which only one sampling rate boost can be triggered. After a boost occurs, no further boosts are allowed until the next window.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Sets the time window (in minutes) in which only one sampling rate boost can be triggered.
-After a boost occurs, no further boosts are allowed until the next window.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxRate`
-
-Defines max temporary sampling rate to apply when a boost is triggered.
-Calculated boost rate by X-Ray will be less than or equal to this max rate.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::XRay::SamplingRule
-
-SamplingRule
+`MaxRate`  <a name="cfn-xray-samplingrule-samplingrateboost-maxrate"></a>
+Defines max temporary sampling rate to apply when a boost is triggered. Calculated boost rate by X-Ray will be less than or equal to this max rate.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

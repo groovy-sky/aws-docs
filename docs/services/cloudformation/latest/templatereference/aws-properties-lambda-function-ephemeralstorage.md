@@ -2,57 +2,43 @@
 title: "AWS::Lambda::Function EphemeralStorage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Function EphemeralStorage
+<a name="aws-properties-lambda-function-ephemeralstorage"></a>
 
-The size of the function's `/tmp` directory in MB. The default value is 512,
-but it can be any whole number between 512 and 10,240 MB.
+The size of the function's `/tmp` directory in MB. The default value is 512, but it can be any whole number between 512 and 10,240 MB.
 
 ## Syntax
+<a name="aws-properties-lambda-function-ephemeralstorage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-function-ephemeralstorage-syntax.json"></a>
 
-```json
-
+```
 {
-  "Size" : Integer
+  "[Size](#cfn-lambda-function-ephemeralstorage-size)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-function-ephemeralstorage-syntax.yaml"></a>
 
-```yaml
-
-  Size: Integer
-
+```
+  [Size](#cfn-lambda-function-ephemeralstorage-size): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-function-ephemeralstorage-properties"></a>
 
-`Size`
-
+`Size`  <a name="cfn-lambda-function-ephemeralstorage-size"></a>
 The size of the function's `/tmp` directory.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `512`
-
-_Maximum_: `10240`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Environment
-
-FileSystemConfig
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `512`
+*Maximum*: `10240`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

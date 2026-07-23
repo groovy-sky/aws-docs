@@ -2,72 +2,53 @@
 title: "AWS::ConnectCampaignsV2::Campaign EntryLimitsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign EntryLimitsConfig
+<a name="aws-properties-connectcampaignsv2-campaign-entrylimitsconfig"></a>
 
-The `EntryLimitsConfig` property type specifies Property description not available. for an [AWS::ConnectCampaignsV2::Campaign](aws-resource-connectcampaignsv2-campaign.md).
+Contains entry limits configuration for an outbound campaign. Entry limits control how many times a participant can enter a campaign and the minimum time interval between re-entries.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-entrylimitsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-entrylimitsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxEntryCount" : Integer,
-  "MinEntryInterval" : String
+  "[MaxEntryCount](#cfn-connectcampaignsv2-campaign-entrylimitsconfig-maxentrycount)" : {{Integer}},
+  "[MinEntryInterval](#cfn-connectcampaignsv2-campaign-entrylimitsconfig-minentryinterval)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-entrylimitsconfig-syntax.yaml"></a>
 
-```yaml
-
-  MaxEntryCount: Integer
-  MinEntryInterval: String
-
+```
+  [MaxEntryCount](#cfn-connectcampaignsv2-campaign-entrylimitsconfig-maxentrycount): {{Integer}}
+  [MinEntryInterval](#cfn-connectcampaignsv2-campaign-entrylimitsconfig-minentryinterval): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-entrylimitsconfig-properties"></a>
 
-`MaxEntryCount`
+`MaxEntryCount`  <a name="cfn-connectcampaignsv2-campaign-entrylimitsconfig-maxentrycount"></a>
+The maximum number of times a participant can enter the campaign. A value of `0` indicates unlimited entries. Values of `1` or greater specify the exact number of entries allowed.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Property description not available.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinEntryInterval`
-
-Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9.]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EmailOutboundMode
-
-EventTrigger
+`MinEntryInterval`  <a name="cfn-connectcampaignsv2-campaign-entrylimitsconfig-minentryinterval"></a>
+The minimum time interval that must pass before a participant can enter the campaign again, specified as an ISO 8601 duration string (for example, `PT4H` for 4 hours). A value of zero (for example, `PT0H`) indicates no minimum interval restriction, allowing participants to re-enter regardless of when they last entered.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^P(?:([-+]?[0-9]+)D)?(T(?:([-+]?[0-9]+)H)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)(?:[.,]([0-9]{0,9}))?S)?)?$`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

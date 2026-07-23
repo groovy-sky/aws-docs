@@ -2,223 +2,150 @@
 title: "AWS::IoTEvents::DetectorModel Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel Action
+<a name="aws-properties-iotevents-detectormodel-action"></a>
 
 An action to be performed when the `condition` is TRUE.
 
 ## Syntax
+<a name="aws-properties-iotevents-detectormodel-action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-detectormodel-action-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClearTimer" : ClearTimer,
-  "DynamoDB" : DynamoDB,
-  "DynamoDBv2" : DynamoDBv2,
-  "Firehose" : Firehose,
-  "IotEvents" : IotEvents,
-  "IotSiteWise" : IotSiteWise,
-  "IotTopicPublish" : IotTopicPublish,
-  "Lambda" : Lambda,
-  "ResetTimer" : ResetTimer,
-  "SetTimer" : SetTimer,
-  "SetVariable" : SetVariable,
-  "Sns" : Sns,
-  "Sqs" : Sqs
+  "[ClearTimer](#cfn-iotevents-detectormodel-action-cleartimer)" : {{ClearTimer}},
+  "[DynamoDB](#cfn-iotevents-detectormodel-action-dynamodb)" : {{DynamoDB}},
+  "[DynamoDBv2](#cfn-iotevents-detectormodel-action-dynamodbv2)" : {{DynamoDBv2}},
+  "[Firehose](#cfn-iotevents-detectormodel-action-firehose)" : {{Firehose}},
+  "[IotEvents](#cfn-iotevents-detectormodel-action-iotevents)" : {{IotEvents}},
+  "[IotSiteWise](#cfn-iotevents-detectormodel-action-iotsitewise)" : {{IotSiteWise}},
+  "[IotTopicPublish](#cfn-iotevents-detectormodel-action-iottopicpublish)" : {{IotTopicPublish}},
+  "[Lambda](#cfn-iotevents-detectormodel-action-lambda)" : {{Lambda}},
+  "[ResetTimer](#cfn-iotevents-detectormodel-action-resettimer)" : {{ResetTimer}},
+  "[SetTimer](#cfn-iotevents-detectormodel-action-settimer)" : {{SetTimer}},
+  "[SetVariable](#cfn-iotevents-detectormodel-action-setvariable)" : {{SetVariable}},
+  "[Sns](#cfn-iotevents-detectormodel-action-sns)" : {{Sns}},
+  "[Sqs](#cfn-iotevents-detectormodel-action-sqs)" : {{Sqs}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-detectormodel-action-syntax.yaml"></a>
 
-```yaml
-
-  ClearTimer:
-    ClearTimer
-  DynamoDB:
-    DynamoDB
-  DynamoDBv2:
-    DynamoDBv2
-  Firehose:
-    Firehose
-  IotEvents:
-    IotEvents
-  IotSiteWise:
-    IotSiteWise
-  IotTopicPublish:
-    IotTopicPublish
-  Lambda:
-    Lambda
-  ResetTimer:
-    ResetTimer
-  SetTimer:
-    SetTimer
-  SetVariable:
-    SetVariable
-  Sns:
-    Sns
-  Sqs:
-    Sqs
-
+```
+  [ClearTimer](#cfn-iotevents-detectormodel-action-cleartimer): {{
+    ClearTimer}}
+  [DynamoDB](#cfn-iotevents-detectormodel-action-dynamodb): {{
+    DynamoDB}}
+  [DynamoDBv2](#cfn-iotevents-detectormodel-action-dynamodbv2): {{
+    DynamoDBv2}}
+  [Firehose](#cfn-iotevents-detectormodel-action-firehose): {{
+    Firehose}}
+  [IotEvents](#cfn-iotevents-detectormodel-action-iotevents): {{
+    IotEvents}}
+  [IotSiteWise](#cfn-iotevents-detectormodel-action-iotsitewise): {{
+    IotSiteWise}}
+  [IotTopicPublish](#cfn-iotevents-detectormodel-action-iottopicpublish): {{
+    IotTopicPublish}}
+  [Lambda](#cfn-iotevents-detectormodel-action-lambda): {{
+    Lambda}}
+  [ResetTimer](#cfn-iotevents-detectormodel-action-resettimer): {{
+    ResetTimer}}
+  [SetTimer](#cfn-iotevents-detectormodel-action-settimer): {{
+    SetTimer}}
+  [SetVariable](#cfn-iotevents-detectormodel-action-setvariable): {{
+    SetVariable}}
+  [Sns](#cfn-iotevents-detectormodel-action-sns): {{
+    Sns}}
+  [Sqs](#cfn-iotevents-detectormodel-action-sqs): {{
+    Sqs}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-detectormodel-action-properties"></a>
 
-`ClearTimer`
-
+`ClearTimer`  <a name="cfn-iotevents-detectormodel-action-cleartimer"></a>
 Information needed to clear the timer.
+*Required*: No
+*Type*: [ClearTimer](aws-properties-iotevents-detectormodel-cleartimer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DynamoDB`  <a name="cfn-iotevents-detectormodel-action-dynamodb"></a>
+Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *AWS IoT Events Developer Guide*.
+*Required*: No
+*Type*: [DynamoDB](aws-properties-iotevents-detectormodel-dynamodb.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ClearTimer](aws-properties-iotevents-detectormodel-cleartimer.md)
+`DynamoDBv2`  <a name="cfn-iotevents-detectormodel-action-dynamodbv2"></a>
+Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can customize the [payload](https://docs.aws.amazon.com/iotevents/latest/apireference/API_Payload.html). A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see [Actions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-event-actions.html) in *AWS IoT Events Developer Guide*.
+*Required*: No
+*Type*: [DynamoDBv2](aws-properties-iotevents-detectormodel-dynamodbv2.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Firehose`  <a name="cfn-iotevents-detectormodel-action-firehose"></a>
+Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
+*Required*: No
+*Type*: [Firehose](aws-properties-iotevents-detectormodel-firehose.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DynamoDB`
+`IotEvents`  <a name="cfn-iotevents-detectormodel-action-iotevents"></a>
+Sends AWS IoT Events input, which passes information about the detector model instance and the event that triggered the action.
+*Required*: No
+*Type*: [IotEvents](aws-properties-iotevents-detectormodel-iotevents.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Writes to the DynamoDB table that you created. The default action payload contains all
-attribute-value pairs that have the information about the detector model instance and the
-event that triggered the action. You can customize the [payload](../../../../reference/iotevents/latest/apireference/api-payload.md). One column of the
-DynamoDB table receives all attribute-value pairs in the payload that you specify. For more
-information, see [Actions](../../../iotevents/latest/developerguide/iotevents-event-actions.md) in
-_AWS IoT Events Developer Guide_.
+`IotSiteWise`  <a name="cfn-iotevents-detectormodel-action-iotsitewise"></a>
+Sends information about the detector model instance and the event that triggered the action to an asset property in AWS IoT SiteWise .
+*Required*: No
+*Type*: [IotSiteWise](aws-properties-iotevents-detectormodel-iotsitewise.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DynamoDB](aws-properties-iotevents-detectormodel-dynamodb.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DynamoDBv2`
-
-Writes to the DynamoDB table that you created. The default action payload contains all
-attribute-value pairs that have the information about the detector model instance and the
-event that triggered the action. You can customize the [payload](../../../../reference/iotevents/latest/apireference/api-payload.md). A separate column of
-the DynamoDB table receives one attribute-value pair in the payload that you specify. For more
-information, see [Actions](../../../iotevents/latest/developerguide/iotevents-event-actions.md) in
-_AWS IoT Events Developer Guide_.
-
-_Required_: No
-
-_Type_: [DynamoDBv2](aws-properties-iotevents-detectormodel-dynamodbv2.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Firehose`
-
-Sends information about the detector model instance and the event that triggered the
-action to an Amazon Kinesis Data Firehose delivery stream.
-
-_Required_: No
-
-_Type_: [Firehose](aws-properties-iotevents-detectormodel-firehose.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IotEvents`
-
-Sends AWS IoT Events input, which passes information about the detector model instance and the
-event that triggered the action.
-
-_Required_: No
-
-_Type_: [IotEvents](aws-properties-iotevents-detectormodel-iotevents.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IotSiteWise`
-
-Sends information about the detector model instance and the event that triggered the
-action to an asset property in AWS IoT SiteWise .
-
-_Required_: No
-
-_Type_: [IotSiteWise](aws-properties-iotevents-detectormodel-iotsitewise.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IotTopicPublish`
-
+`IotTopicPublish`  <a name="cfn-iotevents-detectormodel-action-iottopicpublish"></a>
 Publishes an MQTT message with the given topic to the AWS IoT message broker.
+*Required*: No
+*Type*: [IotTopicPublish](aws-properties-iotevents-detectormodel-iottopicpublish.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Lambda`  <a name="cfn-iotevents-detectormodel-action-lambda"></a>
+Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
+*Required*: No
+*Type*: [Lambda](aws-properties-iotevents-detectormodel-lambda.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [IotTopicPublish](aws-properties-iotevents-detectormodel-iottopicpublish.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Lambda`
-
-Calls a Lambda function, passing in information about the detector model instance and the
-event that triggered the action.
-
-_Required_: No
-
-_Type_: [Lambda](aws-properties-iotevents-detectormodel-lambda.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResetTimer`
-
+`ResetTimer`  <a name="cfn-iotevents-detectormodel-action-resettimer"></a>
 Information needed to reset the timer.
+*Required*: No
+*Type*: [ResetTimer](aws-properties-iotevents-detectormodel-resettimer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ResetTimer](aws-properties-iotevents-detectormodel-resettimer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SetTimer`
-
+`SetTimer`  <a name="cfn-iotevents-detectormodel-action-settimer"></a>
 Information needed to set the timer.
+*Required*: No
+*Type*: [SetTimer](aws-properties-iotevents-detectormodel-settimer.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SetTimer](aws-properties-iotevents-detectormodel-settimer.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SetVariable`
-
+`SetVariable`  <a name="cfn-iotevents-detectormodel-action-setvariable"></a>
 Sets a variable to a specified value.
+*Required*: No
+*Type*: [SetVariable](aws-properties-iotevents-detectormodel-setvariable.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SetVariable](aws-properties-iotevents-detectormodel-setvariable.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sns`
-
+`Sns`  <a name="cfn-iotevents-detectormodel-action-sns"></a>
 Sends an Amazon SNS message.
+*Required*: No
+*Type*: [Sns](aws-properties-iotevents-detectormodel-sns.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Sns](aws-properties-iotevents-detectormodel-sns.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sqs`
-
+`Sqs`  <a name="cfn-iotevents-detectormodel-action-sqs"></a>
 Sends an Amazon SNS message.
-
-_Required_: No
-
-_Type_: [Sqs](aws-properties-iotevents-detectormodel-sqs.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoTEvents::DetectorModel
-
-AssetPropertyTimestamp
+*Required*: No
+*Type*: [Sqs](aws-properties-iotevents-detectormodel-sqs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

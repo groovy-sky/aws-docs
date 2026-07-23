@@ -2,67 +2,51 @@
 title: "AWS::Wisdom::AIAgent ToolOutputFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent ToolOutputFilter
+<a name="aws-properties-wisdom-aiagent-tooloutputfilter"></a>
 
 Filter configuration for tool output.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-tooloutputfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-tooloutputfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "JsonPath" : String,
-  "OutputConfiguration" : ToolOutputConfiguration
+  "[JsonPath](#cfn-wisdom-aiagent-tooloutputfilter-jsonpath)" : {{String}},
+  "[OutputConfiguration](#cfn-wisdom-aiagent-tooloutputfilter-outputconfiguration)" : {{ToolOutputConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-tooloutputfilter-syntax.yaml"></a>
 
-```yaml
-
-  JsonPath: String
-  OutputConfiguration:
-    ToolOutputConfiguration
-
+```
+  [JsonPath](#cfn-wisdom-aiagent-tooloutputfilter-jsonpath): {{String}}
+  [OutputConfiguration](#cfn-wisdom-aiagent-tooloutputfilter-outputconfiguration): {{
+    ToolOutputConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-tooloutputfilter-properties"></a>
 
-`JsonPath`
-
+`JsonPath`  <a name="cfn-wisdom-aiagent-tooloutputfilter-jsonpath"></a>
 The JSON path for filtering tool output.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutputConfiguration`
-
+`OutputConfiguration`  <a name="cfn-wisdom-aiagent-tooloutputfilter-outputconfiguration"></a>
 The output configuration for the filter.
-
-_Required_: No
-
-_Type_: [ToolOutputConfiguration](aws-properties-wisdom-aiagent-tooloutputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ToolOutputConfiguration
-
-ToolOverrideConstantInputValue
+*Required*: No
+*Type*: [ToolOutputConfiguration](aws-properties-wisdom-aiagent-tooloutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Dashboard GeospatialLineWidth"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialLineWidth
+<a name="aws-properties-quicksight-dashboard-geospatiallinewidth"></a>
 
 The width properties for a line.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatiallinewidth-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatiallinewidth-syntax.json"></a>
 
-```json
-
+```
 {
-  "LineWidth" : Number
+  "[LineWidth](#cfn-quicksight-dashboard-geospatiallinewidth-linewidth)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatiallinewidth-syntax.yaml"></a>
 
-```yaml
-
-  LineWidth: Number
-
+```
+  [LineWidth](#cfn-quicksight-dashboard-geospatiallinewidth-linewidth): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatiallinewidth-properties"></a>
 
-`LineWidth`
-
+`LineWidth`  <a name="cfn-quicksight-dashboard-geospatiallinewidth-linewidth"></a>
 The positive value for the width of a line.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLineSymbolStyle
-
-GeospatialMapAggregatedFieldWells
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

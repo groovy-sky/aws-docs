@@ -2,168 +2,104 @@
 title: "AWS::Kendra::DataSource ServiceNowKnowledgeArticleConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource ServiceNowKnowledgeArticleConfiguration
+<a name="aws-properties-kendra-datasource-servicenowknowledgearticleconfiguration"></a>
 
-Provides the configuration information for crawling knowledge articles in the
-ServiceNow site.
+Provides the configuration information for crawling knowledge articles in the ServiceNow site.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-servicenowknowledgearticleconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-servicenowknowledgearticleconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CrawlAttachments" : Boolean,
-  "DocumentDataFieldName" : String,
-  "DocumentTitleFieldName" : String,
-  "ExcludeAttachmentFilePatterns" : [ String, ... ],
-  "FieldMappings" : [ DataSourceToIndexFieldMapping, ... ],
-  "FilterQuery" : String,
-  "IncludeAttachmentFilePatterns" : [ String, ... ]
+  "[CrawlAttachments](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-crawlattachments)" : {{Boolean}},
+  "[DocumentDataFieldName](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-documentdatafieldname)" : {{String}},
+  "[DocumentTitleFieldName](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-documenttitlefieldname)" : {{String}},
+  "[ExcludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-excludeattachmentfilepatterns)" : {{[ String, ... ]}},
+  "[FieldMappings](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-fieldmappings)" : {{[ DataSourceToIndexFieldMapping, ... ]}},
+  "[FilterQuery](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-filterquery)" : {{String}},
+  "[IncludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-includeattachmentfilepatterns)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-servicenowknowledgearticleconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CrawlAttachments: Boolean
-  DocumentDataFieldName: String
-  DocumentTitleFieldName: String
-  ExcludeAttachmentFilePatterns:
-    - String
-  FieldMappings:
-    - DataSourceToIndexFieldMapping
-  FilterQuery: String
-  IncludeAttachmentFilePatterns:
-    - String
-
+```
+  [CrawlAttachments](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-crawlattachments): {{Boolean}}
+  [DocumentDataFieldName](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-documentdatafieldname): {{String}}
+  [DocumentTitleFieldName](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-documenttitlefieldname): {{String}}
+  [ExcludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-excludeattachmentfilepatterns): {{
+    - String}}
+  [FieldMappings](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-fieldmappings): {{
+    - DataSourceToIndexFieldMapping}}
+  [FilterQuery](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-filterquery): {{String}}
+  [IncludeAttachmentFilePatterns](#cfn-kendra-datasource-servicenowknowledgearticleconfiguration-includeattachmentfilepatterns): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-servicenowknowledgearticleconfiguration-properties"></a>
 
-`CrawlAttachments`
-
+`CrawlAttachments`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-crawlattachments"></a>
 `TRUE` to index attachments to knowledge articles.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DocumentDataFieldName`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-documentdatafieldname"></a>
+The name of the ServiceNow field that is mapped to the index document contents field in the Amazon Kendra index.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`DocumentTitleFieldName`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-documenttitlefieldname"></a>
+The name of the ServiceNow field that is mapped to the index document title field.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ExcludeAttachmentFilePatterns`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-excludeattachmentfilepatterns"></a>
+A list of regular expression patterns applied to exclude certain knowledge article attachments. Attachments that match the patterns are excluded from the index. Items that don't match the patterns are included in the index. If an item matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the item isn't included in the index.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DocumentDataFieldName`
+`FieldMappings`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-fieldmappings"></a>
+Maps attributes or field names of knoweldge articles to Amazon Kendra index field names. To create custom fields, use the `UpdateIndex` API before you map to ServiceNow fields. For more information, see [Mapping data source fields](https://docs.aws.amazon.com/kendra/latest/dg/field-mapping.html). The ServiceNow data source field names must exist in your ServiceNow custom metadata.
+*Required*: No
+*Type*: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the ServiceNow field that is mapped to the index document contents field
-in the Amazon Kendra index.
+`FilterQuery`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-filterquery"></a>
+A query that selects the knowledge articles to index. The query can return articles from multiple knowledge bases, and the knowledge bases can be public or private.
+The query string must be one generated by the ServiceNow console. For more information, see [Specifying documents to index with a query](https://docs.aws.amazon.com/kendra/latest/dg/servicenow-query.html).
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentTitleFieldName`
-
-The name of the ServiceNow field that is mapped to the index document title
-field.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludeAttachmentFilePatterns`
-
-A list of regular expression patterns applied to exclude certain knowledge article
-attachments. Attachments that match the patterns are excluded from the index. Items that
-don't match the patterns are included in the index. If an item matches both an inclusion
-and exclusion pattern, the exclusion pattern takes precedence and the item isn't
-included in the index.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldMappings`
-
-Maps attributes or field names of knoweldge articles to Amazon Kendra index field
-names. To create custom fields, use the `UpdateIndex` API before you map to
-ServiceNow fields. For more information, see [Mapping data source fields](../../../kendra/latest/dg/field-mapping.md). The
-ServiceNow data source field names must exist in your ServiceNow custom metadata.
-
-_Required_: No
-
-_Type_: Array of [DataSourceToIndexFieldMapping](aws-properties-kendra-datasource-datasourcetoindexfieldmapping.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterQuery`
-
-A query that selects the knowledge articles to index. The query can return articles
-from multiple knowledge bases, and the knowledge bases can be public or private.
-
-The query string must be one generated by the ServiceNow console. For more
-information, see [Specifying documents to index with a\
-query](../../../kendra/latest/dg/servicenow-query.md).
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeAttachmentFilePatterns`
-
-A list of regular expression patterns applied to include knowledge article
-attachments. Attachments that match the patterns are included in the index. Items that
-don't match the patterns are excluded from the index. If an item matches both an
-inclusion and exclusion pattern, the exclusion pattern takes precedence and the item
-isn't included in the index.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ServiceNowConfiguration
-
-ServiceNowServiceCatalogConfiguration
+`IncludeAttachmentFilePatterns`  <a name="cfn-kendra-datasource-servicenowknowledgearticleconfiguration-includeattachmentfilepatterns"></a>
+A list of regular expression patterns applied to include knowledge article attachments. Attachments that match the patterns are included in the index. Items that don't match the patterns are excluded from the index. If an item matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence and the item isn't included in the index.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,109 +2,77 @@
 title: "AWS::Bedrock::Agent Function"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent Function
+<a name="aws-properties-bedrock-agent-function"></a>
 
 Defines parameters that the agent needs to invoke from the user to complete the function. Corresponds to an action in an action group.
 
 This data type is used in the following API operations:
-
-- [CreateAgentActionGroup request](../../../../reference/bedrock/latest/apireference/api-agent-createagentactiongroup.md#API_agent_CreateAgentActionGroup_RequestSyntax)
-
-- [CreateAgentActionGroup response](../../../../reference/bedrock/latest/apireference/api-agent-createagentactiongroup.md#API_agent_CreateAgentActionGroup_ResponseSyntax)
-
-- [UpdateAgentActionGroup request](../../../../reference/bedrock/latest/apireference/api-agent-updateagentactiongroup.md#API_agent_UpdateAgentActionGroup_RequestSyntax)
-
-- [UpdateAgentActionGroup response](../../../../reference/bedrock/latest/apireference/api-agent-updateagentactiongroup.md#API_agent_UpdateAgentActionGroup_ResponseSyntax)
-
-- [GetAgentActionGroup response](../../../../reference/bedrock/latest/apireference/api-agent-getagentactiongroup.md#API_agent_GetAgentActionGroup_ResponseSyntax)
++  [CreateAgentActionGroup request](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html#API_agent_CreateAgentActionGroup_RequestSyntax)
++  [CreateAgentActionGroup response](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html#API_agent_CreateAgentActionGroup_ResponseSyntax)
++  [UpdateAgentActionGroup request](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html#API_agent_UpdateAgentActionGroup_RequestSyntax)
++  [UpdateAgentActionGroup response](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html#API_agent_UpdateAgentActionGroup_ResponseSyntax)
++  [GetAgentActionGroup response](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentActionGroup.html#API_agent_GetAgentActionGroup_ResponseSyntax)
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-function-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-function-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "Name" : String,
-  "Parameters" : {Key: Value, ...},
-  "RequireConfirmation" : String
+  "[Description](#cfn-bedrock-agent-function-description)" : {{String}},
+  "[Name](#cfn-bedrock-agent-function-name)" : {{String}},
+  "[Parameters](#cfn-bedrock-agent-function-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[RequireConfirmation](#cfn-bedrock-agent-function-requireconfirmation)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-function-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  Name: String
-  Parameters:
-    Key: Value
-  RequireConfirmation: String
-
+```
+  [Description](#cfn-bedrock-agent-function-description): {{String}}
+  [Name](#cfn-bedrock-agent-function-name): {{String}}
+  [Parameters](#cfn-bedrock-agent-function-parameters): {{
+    {{Key}}: {{Value}}}}
+  [RequireConfirmation](#cfn-bedrock-agent-function-requireconfirmation): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-function-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-bedrock-agent-function-description"></a>
 A description of the function and its purpose.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrock-agent-function-name"></a>
 A name for the function.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9a-zA-Z][_-]?){1,100}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9a-zA-Z][_-]?){1,100}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Parameters`
-
+`Parameters`  <a name="cfn-bedrock-agent-function-parameters"></a>
 The parameters that the agent elicits from the user to fulfill the function.
+*Required*: No
+*Type*: Object of [ParameterDetail](aws-properties-bedrock-agent-parameterdetail.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of [ParameterDetail](aws-properties-bedrock-agent-parameterdetail.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequireConfirmation`
-
+`RequireConfirmation`  <a name="cfn-bedrock-agent-function-requireconfirmation"></a>
 Contains information if user confirmation is required to invoke the function.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomOrchestration
-
-FunctionSchema
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

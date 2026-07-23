@@ -2,109 +2,77 @@
 title: "AWS::IoT::TopicRule ElasticsearchAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule ElasticsearchAction
+<a name="aws-properties-iot-topicrule-elasticsearchaction"></a>
 
-Describes an action that writes data to an Amazon OpenSearch Service
-domain.
+Describes an action that writes data to an Amazon OpenSearch Service domain.
 
-###### Note
-
-The `Elasticsearch` action can only be used by existing rule actions. To create a
-new rule action or to update an existing rule action, use the
-`OpenSearch` rule action instead. For more information, see [OpenSearchAction](../../../../reference/iot/latest/apireference/api-opensearchaction.md).
+**Note**
+The `Elasticsearch` action can only be used by existing rule actions. To create a new rule action or to update an existing rule action, use the `OpenSearch` rule action instead. For more information, see [OpenSearchAction](https://docs.aws.amazon.com//iot/latest/apireference/API_OpenSearchAction.html).
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-elasticsearchaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-elasticsearchaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Endpoint" : String,
-  "Id" : String,
-  "Index" : String,
-  "RoleArn" : String,
-  "Type" : String
+  "[Endpoint](#cfn-iot-topicrule-elasticsearchaction-endpoint)" : {{String}},
+  "[Id](#cfn-iot-topicrule-elasticsearchaction-id)" : {{String}},
+  "[Index](#cfn-iot-topicrule-elasticsearchaction-index)" : {{String}},
+  "[RoleArn](#cfn-iot-topicrule-elasticsearchaction-rolearn)" : {{String}},
+  "[Type](#cfn-iot-topicrule-elasticsearchaction-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-elasticsearchaction-syntax.yaml"></a>
 
-```yaml
-
-  Endpoint: String
-  Id: String
-  Index: String
-  RoleArn: String
-  Type: String
-
+```
+  [Endpoint](#cfn-iot-topicrule-elasticsearchaction-endpoint): {{String}}
+  [Id](#cfn-iot-topicrule-elasticsearchaction-id): {{String}}
+  [Index](#cfn-iot-topicrule-elasticsearchaction-index): {{String}}
+  [RoleArn](#cfn-iot-topicrule-elasticsearchaction-rolearn): {{String}}
+  [Type](#cfn-iot-topicrule-elasticsearchaction-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-elasticsearchaction-properties"></a>
 
-`Endpoint`
-
+`Endpoint`  <a name="cfn-iot-topicrule-elasticsearchaction-endpoint"></a>
 The endpoint of your OpenSearch domain.
+*Required*: Yes
+*Type*: String
+*Pattern*: `https?://.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `https?://.*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-iot-topicrule-elasticsearchaction-id"></a>
 The unique identifier for the document you are storing.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Index`
-
+`Index`  <a name="cfn-iot-topicrule-elasticsearchaction-index"></a>
 The index where you want to store your data.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-elasticsearchaction-rolearn"></a>
 The IAM role ARN that has access to OpenSearch.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-iot-topicrule-elasticsearchaction-type"></a>
 The type of document you are storing.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamoDBv2Action
-
-FirehoseAction
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

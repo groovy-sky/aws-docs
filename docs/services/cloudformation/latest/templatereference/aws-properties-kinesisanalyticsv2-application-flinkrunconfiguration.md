@@ -2,62 +2,42 @@
 title: "AWS::KinesisAnalyticsV2::Application FlinkRunConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application FlinkRunConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration"></a>
 
 Describes the starting parameters for a Managed Service for Apache Flink application.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowNonRestoredState" : Boolean
+  "[AllowNonRestoredState](#cfn-kinesisanalyticsv2-application-flinkrunconfiguration-allownonrestoredstate)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AllowNonRestoredState: Boolean
-
+```
+  [AllowNonRestoredState](#cfn-kinesisanalyticsv2-application-flinkrunconfiguration-allownonrestoredstate): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration-properties"></a>
 
-`AllowNonRestoredState`
-
-When restoring from a snapshot, specifies whether the runtime is allowed to skip a
-state that cannot be mapped to the new program. This will happen if the program is
-updated between snapshots to remove stateful parameters, and state data in the snapshot
-no longer corresponds to valid application data. For more information, see [Allowing Non-Restored State](https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/savepoints) in the [Apache Flink\
-documentation](https://nightlies.apache.org/flink/flink-docs-master).
-
-###### Note
-
-This value defaults to `false`. If you update your application without
-specifying this parameter, `AllowNonRestoredState` will be set to
-`false`, even if it was previously set to `true`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlinkApplicationConfiguration
-
-GlueDataCatalogConfiguration
+`AllowNonRestoredState`  <a name="cfn-kinesisanalyticsv2-application-flinkrunconfiguration-allownonrestoredstate"></a>
+When restoring from a snapshot, specifies whether the runtime is allowed to skip a state that cannot be mapped to the new program. This will happen if the program is updated between snapshots to remove stateful parameters, and state data in the snapshot no longer corresponds to valid application data. For more information, see [ Allowing Non-Restored State](https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/savepoints/#allowing-non-restored-state) in the [Apache Flink documentation](https://nightlies.apache.org/flink/flink-docs-master).
+This value defaults to `false`. If you update your application without specifying this parameter, `AllowNonRestoredState` will be set to `false`, even if it was previously set to `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

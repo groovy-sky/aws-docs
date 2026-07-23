@@ -2,107 +2,77 @@
 title: "AWS::QuickSight::Dashboard DefaultSliderControlOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DefaultSliderControlOptions
+<a name="aws-properties-quicksight-dashboard-defaultslidercontroloptions"></a>
 
 The default options that correspond to the `Slider` filter control type.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-defaultslidercontroloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-defaultslidercontroloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayOptions" : SliderControlDisplayOptions,
-  "MaximumValue" : Number,
-  "MinimumValue" : Number,
-  "StepSize" : Number,
-  "Type" : String
+  "[DisplayOptions](#cfn-quicksight-dashboard-defaultslidercontroloptions-displayoptions)" : {{SliderControlDisplayOptions}},
+  "[MaximumValue](#cfn-quicksight-dashboard-defaultslidercontroloptions-maximumvalue)" : {{Number}},
+  "[MinimumValue](#cfn-quicksight-dashboard-defaultslidercontroloptions-minimumvalue)" : {{Number}},
+  "[StepSize](#cfn-quicksight-dashboard-defaultslidercontroloptions-stepsize)" : {{Number}},
+  "[Type](#cfn-quicksight-dashboard-defaultslidercontroloptions-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-defaultslidercontroloptions-syntax.yaml"></a>
 
-```yaml
-
-  DisplayOptions:
-    SliderControlDisplayOptions
-  MaximumValue: Number
-  MinimumValue: Number
-  StepSize: Number
-  Type: String
-
+```
+  [DisplayOptions](#cfn-quicksight-dashboard-defaultslidercontroloptions-displayoptions): {{
+    SliderControlDisplayOptions}}
+  [MaximumValue](#cfn-quicksight-dashboard-defaultslidercontroloptions-maximumvalue): {{Number}}
+  [MinimumValue](#cfn-quicksight-dashboard-defaultslidercontroloptions-minimumvalue): {{Number}}
+  [StepSize](#cfn-quicksight-dashboard-defaultslidercontroloptions-stepsize): {{Number}}
+  [Type](#cfn-quicksight-dashboard-defaultslidercontroloptions-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-defaultslidercontroloptions-properties"></a>
 
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-dashboard-defaultslidercontroloptions-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [SliderControlDisplayOptions](aws-properties-quicksight-dashboard-slidercontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SliderControlDisplayOptions](aws-properties-quicksight-dashboard-slidercontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumValue`
-
+`MaximumValue`  <a name="cfn-quicksight-dashboard-defaultslidercontroloptions-maximumvalue"></a>
 The larger value that is displayed at the right of the slider.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimumValue`
-
+`MinimumValue`  <a name="cfn-quicksight-dashboard-defaultslidercontroloptions-minimumvalue"></a>
 The smaller value that is displayed at the left of the slider.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepSize`
-
+`StepSize`  <a name="cfn-quicksight-dashboard-defaultslidercontroloptions-stepsize"></a>
 The number of increments that the slider bar is divided into.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dashboard-defaultslidercontroloptions-type"></a>
 The type of the `DefaultSliderControlOptions`. Choose one of the following options:
-
-- `SINGLE_POINT`: Filter against(equals) a single data point.
-
-- `RANGE`: Filter data that is in a specified range.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SINGLE_POINT | RANGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultSectionBasedLayoutConfiguration
-
-DefaultTextAreaControlOptions
++ `SINGLE_POINT`: Filter against(equals) a single data point.
++ `RANGE`: Filter data that is in a specified range.
+*Required*: No
+*Type*: String
+*Allowed values*: `SINGLE_POINT | RANGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

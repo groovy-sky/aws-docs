@@ -2,394 +2,247 @@
 title: "AWS::Amplify::App"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Amplify::App
+<a name="aws-resource-amplify-app"></a>
 
-The AWS::Amplify::App resource specifies Apps in Amplify Hosting. An App is a
-collection of branches.
+ The AWS::Amplify::App resource specifies Apps in Amplify Hosting. An App is a collection of branches.
 
 ## Syntax
+<a name="aws-resource-amplify-app-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-amplify-app-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Amplify::App",
   "Properties" : {
-      "AccessToken" : String,
-      "AutoBranchCreationConfig" : AutoBranchCreationConfig,
-      "BasicAuthConfig" : BasicAuthConfig,
-      "BuildSpec" : String,
-      "CacheConfig" : CacheConfig,
-      "ComputeRoleArn" : String,
-      "CustomHeaders" : String,
-      "CustomRules" : [ CustomRule, ... ],
-      "Description" : String,
-      "EnableBranchAutoDeletion" : Boolean,
-      "EnvironmentVariables" : [ EnvironmentVariable, ... ],
-      "IAMServiceRole" : String,
-      "JobConfig" : JobConfig,
-      "Name" : String,
-      "OauthToken" : String,
-      "Platform" : String,
-      "Repository" : String,
-      "Tags" : [ Tag, ... ]
+      "[AccessToken](#cfn-amplify-app-accesstoken)" : {{String}},
+      "[AutoBranchCreationConfig](#cfn-amplify-app-autobranchcreationconfig)" : {{AutoBranchCreationConfig}},
+      "[BasicAuthConfig](#cfn-amplify-app-basicauthconfig)" : {{BasicAuthConfig}},
+      "[BuildSpec](#cfn-amplify-app-buildspec)" : {{String}},
+      "[CacheConfig](#cfn-amplify-app-cacheconfig)" : {{CacheConfig}},
+      "[ComputeRoleArn](#cfn-amplify-app-computerolearn)" : {{String}},
+      "[CustomHeaders](#cfn-amplify-app-customheaders)" : {{String}},
+      "[CustomRules](#cfn-amplify-app-customrules)" : {{[ CustomRule, ... ]}},
+      "[Description](#cfn-amplify-app-description)" : {{String}},
+      "[EnableBranchAutoDeletion](#cfn-amplify-app-enablebranchautodeletion)" : {{Boolean}},
+      "[EnvironmentVariables](#cfn-amplify-app-environmentvariables)" : {{[ EnvironmentVariable, ... ]}},
+      "[IAMServiceRole](#cfn-amplify-app-iamservicerole)" : {{String}},
+      "[JobConfig](#cfn-amplify-app-jobconfig)" : {{JobConfig}},
+      "[Name](#cfn-amplify-app-name)" : {{String}},
+      "[OauthToken](#cfn-amplify-app-oauthtoken)" : {{String}},
+      "[Platform](#cfn-amplify-app-platform)" : {{String}},
+      "[Repository](#cfn-amplify-app-repository)" : {{String}},
+      "[Tags](#cfn-amplify-app-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-amplify-app-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Amplify::App
 Properties:
-  AccessToken: String
-  AutoBranchCreationConfig:
-    AutoBranchCreationConfig
-  BasicAuthConfig:
-    BasicAuthConfig
-  BuildSpec: String
-  CacheConfig:
-    CacheConfig
-  ComputeRoleArn: String
-  CustomHeaders: String
-  CustomRules:
-    - CustomRule
-  Description: String
-  EnableBranchAutoDeletion: Boolean
-  EnvironmentVariables:
-    - EnvironmentVariable
-  IAMServiceRole: String
-  JobConfig:
-    JobConfig
-  Name: String
-  OauthToken: String
-  Platform: String
-  Repository: String
-  Tags:
-    - Tag
-
+  [AccessToken](#cfn-amplify-app-accesstoken): {{String}}
+  [AutoBranchCreationConfig](#cfn-amplify-app-autobranchcreationconfig): {{
+    AutoBranchCreationConfig}}
+  [BasicAuthConfig](#cfn-amplify-app-basicauthconfig): {{
+    BasicAuthConfig}}
+  [BuildSpec](#cfn-amplify-app-buildspec): {{String}}
+  [CacheConfig](#cfn-amplify-app-cacheconfig): {{
+    CacheConfig}}
+  [ComputeRoleArn](#cfn-amplify-app-computerolearn): {{String}}
+  [CustomHeaders](#cfn-amplify-app-customheaders): {{String}}
+  [CustomRules](#cfn-amplify-app-customrules): {{
+    - CustomRule}}
+  [Description](#cfn-amplify-app-description): {{String}}
+  [EnableBranchAutoDeletion](#cfn-amplify-app-enablebranchautodeletion): {{Boolean}}
+  [EnvironmentVariables](#cfn-amplify-app-environmentvariables): {{
+    - EnvironmentVariable}}
+  [IAMServiceRole](#cfn-amplify-app-iamservicerole): {{String}}
+  [JobConfig](#cfn-amplify-app-jobconfig): {{
+    JobConfig}}
+  [Name](#cfn-amplify-app-name): {{String}}
+  [OauthToken](#cfn-amplify-app-oauthtoken): {{String}}
+  [Platform](#cfn-amplify-app-platform): {{String}}
+  [Repository](#cfn-amplify-app-repository): {{String}}
+  [Tags](#cfn-amplify-app-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-amplify-app-properties"></a>
 
-`AccessToken`
+`AccessToken`  <a name="cfn-amplify-app-accesstoken"></a>
+The personal access token for a GitHub repository for an Amplify app. The personal access token is used to authorize access to a GitHub repository using the Amplify GitHub App. The token is not stored.
+Use `AccessToken` for GitHub repositories only. To authorize access to a repository provider such as Bitbucket or CodeCommit, use `OauthToken`.
+You must specify either `AccessToken` or `OauthToken` when you create a new app.
+Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see [Migrating an existing OAuth app to the Amplify GitHub App](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#migrating-to-github-app-auth) in the *Amplify User Guide* .
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The personal access token for a GitHub repository for an Amplify app. The personal access
-token is used to authorize access to a GitHub repository using the Amplify GitHub App. The
-token is not stored.
+`AutoBranchCreationConfig`  <a name="cfn-amplify-app-autobranchcreationconfig"></a>
+ Sets the configuration for your automatic branch creation.
+*Required*: No
+*Type*: [AutoBranchCreationConfig](aws-properties-amplify-app-autobranchcreationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Use `AccessToken` for GitHub repositories only. To authorize access to a
-repository provider such as Bitbucket or CodeCommit, use `OauthToken`.
+`BasicAuthConfig`  <a name="cfn-amplify-app-basicauthconfig"></a>
+The credentials for basic authorization for an Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
+*Required*: No
+*Type*: [BasicAuthConfig](aws-properties-amplify-app-basicauthconfig.md)
+*Pattern*: `(?s).*`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-You must specify either `AccessToken` or `OauthToken` when you
-create a new app.
-
-Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with
-CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For
-more information, see [Migrating an existing OAuth app to the Amplify GitHub App](../../../amplify/latest/userguide/setting-up-github-access.md#migrating-to-github-app-auth) in the _Amplify_
-_User Guide_ .
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AutoBranchCreationConfig`
-
-Sets the configuration for your automatic branch creation.
-
-_Required_: No
-
-_Type_: [AutoBranchCreationConfig](aws-properties-amplify-app-autobranchcreationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BasicAuthConfig`
-
-The credentials for basic authorization for an Amplify app. You must base64-encode the
-authorization credentials and provide them in the format
-`user:password`.
-
-_Required_: No
-
-_Type_: [BasicAuthConfig](aws-properties-amplify-app-basicauthconfig.md)
-
-_Pattern_: `(?s).*`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BuildSpec`
-
+`BuildSpec`  <a name="cfn-amplify-app-buildspec"></a>
 The build specification (build spec) for an Amplify app.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).+`
+*Minimum*: `1`
+*Maximum*: `25000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`CacheConfig`  <a name="cfn-amplify-app-cacheconfig"></a>
+The cache configuration for the Amplify app. If you don't specify the cache configuration `type`, Amplify uses the default `AMPLIFY_MANAGED` setting.
+*Required*: No
+*Type*: [CacheConfig](aws-properties-amplify-app-cacheconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ComputeRoleArn`  <a name="cfn-amplify-app-computerolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role for an SSR app. The Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `(?s).+`
-
-_Minimum_: `1`
-
-_Maximum_: `25000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CacheConfig`
-
-The cache configuration for the Amplify app. If you don't specify the
-cache configuration `type`, Amplify uses the default
-`AMPLIFY_MANAGED` setting.
-
-_Required_: No
-
-_Type_: [CacheConfig](aws-properties-amplify-app-cacheconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComputeRoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role for an SSR app. The
-Compute role allows the Amplify Hosting compute service to securely
-access specific AWS resources based on the role's permissions. For more
-information about the SSR Compute role, see [Adding an SSR Compute\
-role](../../../amplify/latest/userguide/amplify-ssr-compute-role.md) in the _Amplify User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomHeaders`
-
+`CustomHeaders`  <a name="cfn-amplify-app-customheaders"></a>
 The custom HTTP headers for an Amplify app.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Minimum*: `0`
+*Maximum*: `25000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Minimum_: `0`
-
-_Maximum_: `25000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomRules`
-
+`CustomRules`  <a name="cfn-amplify-app-customrules"></a>
 The custom rewrite and redirect rules for an Amplify app.
+*Required*: No
+*Type*: Array of [CustomRule](aws-properties-amplify-app-customrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [CustomRule](aws-properties-amplify-app-customrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-amplify-app-description"></a>
 The description of the Amplify app.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EnableBranchAutoDeletion`  <a name="cfn-amplify-app-enablebranchautodeletion"></a>
+Automatically disconnect a branch in Amplify Hosting when you delete a branch from your Git repository.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnableBranchAutoDeletion`
-
-Automatically disconnect a branch in Amplify Hosting when you delete a branch from your
-Git repository.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnvironmentVariables`
-
+`EnvironmentVariables`  <a name="cfn-amplify-app-environmentvariables"></a>
 The environment variables for the Amplify app.
+For a list of the environment variables that are accessible to Amplify by default, see [Amplify Environment variables](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-console-environment-variables.html) in the *Amplify Hosting User Guide*.
+*Required*: No
+*Type*: Array of [EnvironmentVariable](aws-properties-amplify-app-environmentvariable.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For a list of the environment variables that are accessible to Amplify by default, see
-[Amplify\
-Environment variables](../../../amplify/latest/userguide/amplify-console-environment-variables.md) in the _Amplify Hosting User_
-_Guide_.
+`IAMServiceRole`  <a name="cfn-amplify-app-iamservicerole"></a>
+AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) of the Amplify app.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [EnvironmentVariable](aws-properties-amplify-app-environmentvariable.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IAMServiceRole`
-
-AWS Identity and Access Management (IAM) service role for the Amazon Resource Name
-(ARN) of the Amplify app.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JobConfig`
-
+`JobConfig`  <a name="cfn-amplify-app-jobconfig"></a>
 The configuration details that apply to the jobs for an Amplify app.
+*Required*: No
+*Type*: [JobConfig](aws-properties-amplify-app-jobconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [JobConfig](aws-properties-amplify-app-jobconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-amplify-app-name"></a>
 The name of the Amplify app.
+*Required*: Yes
+*Type*: String
+*Pattern*: `(?s).+`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`OauthToken`  <a name="cfn-amplify-app-oauthtoken"></a>
+The OAuth token for a third-party source control system for an Amplify app. The OAuth token is used to create a webhook and a read-only deploy key using SSH cloning. The OAuth token is not stored.
+Use `OauthToken` for repository providers other than GitHub, such as Bitbucket or CodeCommit. To authorize access to GitHub as your repository provider, use `AccessToken`.
+You must specify either `OauthToken` or `AccessToken` when you create a new app.
+Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see [Migrating an existing OAuth app to the Amplify GitHub App](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#migrating-to-github-app-auth) in the *Amplify User Guide* .
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Platform`  <a name="cfn-amplify-app-platform"></a>
+The platform for the Amplify app. For a static app, set the platform type to `WEB`. For a dynamic server-side rendered (SSR) app, set the platform type to `WEB_COMPUTE`. For an app requiring Amplify Hosting's original SSR support only, set the platform type to `WEB_DYNAMIC`.
+If you are deploying an SSG only app with Next.js version 14 or later, you must set the platform type to `WEB_COMPUTE` and set the artifacts `baseDirectory` to `.next` in the application's build settings. For an example of the build specification settings, see [Amplify build settings for a Next.js 14 SSG application](https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-app.html#build-setting-detection-ssg-14) in the *Amplify Hosting User Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `WEB | WEB_DYNAMIC | WEB_COMPUTE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `(?s).+`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OauthToken`
-
-The OAuth token for a third-party source control system for an Amplify app. The OAuth
-token is used to create a webhook and a read-only deploy key using SSH cloning. The OAuth
-token is not stored.
-
-Use `OauthToken` for repository providers other than GitHub, such as Bitbucket
-or CodeCommit. To authorize access to GitHub as your repository provider, use
-`AccessToken`.
-
-You must specify either `OauthToken` or `AccessToken` when you
-create a new app.
-
-Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with
-CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For
-more information, see [Migrating an existing OAuth app to the Amplify GitHub App](../../../amplify/latest/userguide/setting-up-github-access.md#migrating-to-github-app-auth) in the _Amplify_
-_User Guide_ .
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Platform`
-
-The platform for the Amplify app. For a static app, set the platform type to
-`WEB`. For a dynamic server-side rendered (SSR) app, set the platform
-type to `WEB_COMPUTE`. For an app requiring Amplify Hosting's original SSR
-support only, set the platform type to `WEB_DYNAMIC`.
-
-If you are deploying an SSG only app with Next.js version 14 or later, you must set
-the platform type to `WEB_COMPUTE` and set the artifacts
-`baseDirectory` to `.next` in the application's build
-settings. For an example of the build specification settings, see [Amplify build settings for a Next.js 14 SSG application](../../../amplify/latest/userguide/deploy-nextjs-app.md#build-setting-detection-ssg-14) in the
-_Amplify Hosting User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `WEB | WEB_DYNAMIC | WEB_COMPUTE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Repository`
-
+`Repository`  <a name="cfn-amplify-app-repository"></a>
 The Git repository for the Amplify app.
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-amplify-app-tags"></a>
 The tag for an Amplify app.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-amplify-app-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-amplify-app-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-amplify-app-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-amplify-app-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AppId`
+####
+<a name="aws-resource-amplify-app-return-values-fn--getatt-fn--getatt"></a>
 
+`AppId`  <a name="AppId-fn::getatt"></a>
 Unique Id for the Amplify App.
 
-`AppName`
-
+`AppName`  <a name="AppName-fn::getatt"></a>
 Name for the Amplify App.
 
-`Arn`
-
+`Arn`  <a name="Arn-fn::getatt"></a>
 ARN for the Amplify App.
 
-`DefaultDomain`
-
+`DefaultDomain`  <a name="DefaultDomain-fn::getatt"></a>
 Default domain for the Amplify App.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Amplify Console
-
-AutoBranchCreationConfig
 
 All content copied from https://docs.aws.amazon.com/.

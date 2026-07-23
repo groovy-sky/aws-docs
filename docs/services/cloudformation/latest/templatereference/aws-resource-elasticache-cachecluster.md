@@ -2,654 +2,391 @@
 title: "AWS::ElastiCache::CacheCluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElastiCache::CacheCluster
+<a name="aws-resource-elasticache-cachecluster"></a>
 
 The `AWS::ElastiCache::CacheCluster` type creates an Amazon ElastiCache cache cluster.
 
 ## Syntax
+<a name="aws-resource-elasticache-cachecluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-elasticache-cachecluster-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ElastiCache::CacheCluster",
   "Properties" : {
-      "AutoMinorVersionUpgrade" : Boolean,
-      "AZMode" : String,
-      "CacheNodeType" : String,
-      "CacheParameterGroupName" : String,
-      "CacheSecurityGroupNames" : [ String, ... ],
-      "CacheSubnetGroupName" : String,
-      "ClusterName" : String,
-      "Engine" : String,
-      "EngineVersion" : String,
-      "IpDiscovery" : String,
-      "LogDeliveryConfigurations" : [ LogDeliveryConfigurationRequest, ... ],
-      "NetworkType" : String,
-      "NotificationTopicArn" : String,
-      "NumCacheNodes" : Integer,
-      "Port" : Integer,
-      "PreferredAvailabilityZone" : String,
-      "PreferredAvailabilityZones" : [ String, ... ],
-      "PreferredMaintenanceWindow" : String,
-      "SnapshotArns" : [ String, ... ],
-      "SnapshotName" : String,
-      "SnapshotRetentionLimit" : Integer,
-      "SnapshotWindow" : String,
-      "Tags" : [ Tag, ... ],
-      "TransitEncryptionEnabled" : Boolean,
-      "VpcSecurityGroupIds" : [ String, ... ]
+      "[AutoMinorVersionUpgrade](#cfn-elasticache-cachecluster-autominorversionupgrade)" : {{Boolean}},
+      "[AZMode](#cfn-elasticache-cachecluster-azmode)" : {{String}},
+      "[CacheNodeType](#cfn-elasticache-cachecluster-cachenodetype)" : {{String}},
+      "[CacheParameterGroupName](#cfn-elasticache-cachecluster-cacheparametergroupname)" : {{String}},
+      "[CacheSecurityGroupNames](#cfn-elasticache-cachecluster-cachesecuritygroupnames)" : {{[ String, ... ]}},
+      "[CacheSubnetGroupName](#cfn-elasticache-cachecluster-cachesubnetgroupname)" : {{String}},
+      "[ClusterName](#cfn-elasticache-cachecluster-clustername)" : {{String}},
+      "[Engine](#cfn-elasticache-cachecluster-engine)" : {{String}},
+      "[EngineVersion](#cfn-elasticache-cachecluster-engineversion)" : {{String}},
+      "[IpDiscovery](#cfn-elasticache-cachecluster-ipdiscovery)" : {{String}},
+      "[LogDeliveryConfigurations](#cfn-elasticache-cachecluster-logdeliveryconfigurations)" : {{[ LogDeliveryConfigurationRequest, ... ]}},
+      "[NetworkType](#cfn-elasticache-cachecluster-networktype)" : {{String}},
+      "[NotificationTopicArn](#cfn-elasticache-cachecluster-notificationtopicarn)" : {{String}},
+      "[NumCacheNodes](#cfn-elasticache-cachecluster-numcachenodes)" : {{Integer}},
+      "[Port](#cfn-elasticache-cachecluster-port)" : {{Integer}},
+      "[PreferredAvailabilityZone](#cfn-elasticache-cachecluster-preferredavailabilityzone)" : {{String}},
+      "[PreferredAvailabilityZones](#cfn-elasticache-cachecluster-preferredavailabilityzones)" : {{[ String, ... ]}},
+      "[PreferredMaintenanceWindow](#cfn-elasticache-cachecluster-preferredmaintenancewindow)" : {{String}},
+      "[SnapshotArns](#cfn-elasticache-cachecluster-snapshotarns)" : {{[ String, ... ]}},
+      "[SnapshotName](#cfn-elasticache-cachecluster-snapshotname)" : {{String}},
+      "[SnapshotRetentionLimit](#cfn-elasticache-cachecluster-snapshotretentionlimit)" : {{Integer}},
+      "[SnapshotWindow](#cfn-elasticache-cachecluster-snapshotwindow)" : {{String}},
+      "[Tags](#cfn-elasticache-cachecluster-tags)" : {{[ Tag, ... ]}},
+      "[TransitEncryptionEnabled](#cfn-elasticache-cachecluster-transitencryptionenabled)" : {{Boolean}},
+      "[VpcSecurityGroupIds](#cfn-elasticache-cachecluster-vpcsecuritygroupids)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-elasticache-cachecluster-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ElastiCache::CacheCluster
 Properties:
-  AutoMinorVersionUpgrade: Boolean
-  AZMode: String
-  CacheNodeType: String
-  CacheParameterGroupName: String
-  CacheSecurityGroupNames:
-    - String
-  CacheSubnetGroupName: String
-  ClusterName: String
-  Engine: String
-  EngineVersion: String
-  IpDiscovery: String
-  LogDeliveryConfigurations:
-    - LogDeliveryConfigurationRequest
-  NetworkType: String
-  NotificationTopicArn: String
-  NumCacheNodes: Integer
-  Port: Integer
-  PreferredAvailabilityZone: String
-  PreferredAvailabilityZones:
-    - String
-  PreferredMaintenanceWindow: String
-  SnapshotArns:
-    - String
-  SnapshotName: String
-  SnapshotRetentionLimit: Integer
-  SnapshotWindow: String
-  Tags:
-    - Tag
-  TransitEncryptionEnabled: Boolean
-  VpcSecurityGroupIds:
-    - String
-
+  [AutoMinorVersionUpgrade](#cfn-elasticache-cachecluster-autominorversionupgrade): {{Boolean}}
+  [AZMode](#cfn-elasticache-cachecluster-azmode): {{String}}
+  [CacheNodeType](#cfn-elasticache-cachecluster-cachenodetype): {{String}}
+  [CacheParameterGroupName](#cfn-elasticache-cachecluster-cacheparametergroupname): {{String}}
+  [CacheSecurityGroupNames](#cfn-elasticache-cachecluster-cachesecuritygroupnames): {{
+    - String}}
+  [CacheSubnetGroupName](#cfn-elasticache-cachecluster-cachesubnetgroupname): {{String}}
+  [ClusterName](#cfn-elasticache-cachecluster-clustername): {{String}}
+  [Engine](#cfn-elasticache-cachecluster-engine): {{String}}
+  [EngineVersion](#cfn-elasticache-cachecluster-engineversion): {{String}}
+  [IpDiscovery](#cfn-elasticache-cachecluster-ipdiscovery): {{String}}
+  [LogDeliveryConfigurations](#cfn-elasticache-cachecluster-logdeliveryconfigurations): {{
+    - LogDeliveryConfigurationRequest}}
+  [NetworkType](#cfn-elasticache-cachecluster-networktype): {{String}}
+  [NotificationTopicArn](#cfn-elasticache-cachecluster-notificationtopicarn): {{String}}
+  [NumCacheNodes](#cfn-elasticache-cachecluster-numcachenodes): {{Integer}}
+  [Port](#cfn-elasticache-cachecluster-port): {{Integer}}
+  [PreferredAvailabilityZone](#cfn-elasticache-cachecluster-preferredavailabilityzone): {{String}}
+  [PreferredAvailabilityZones](#cfn-elasticache-cachecluster-preferredavailabilityzones): {{
+    - String}}
+  [PreferredMaintenanceWindow](#cfn-elasticache-cachecluster-preferredmaintenancewindow): {{String}}
+  [SnapshotArns](#cfn-elasticache-cachecluster-snapshotarns): {{
+    - String}}
+  [SnapshotName](#cfn-elasticache-cachecluster-snapshotname): {{String}}
+  [SnapshotRetentionLimit](#cfn-elasticache-cachecluster-snapshotretentionlimit): {{Integer}}
+  [SnapshotWindow](#cfn-elasticache-cachecluster-snapshotwindow): {{String}}
+  [Tags](#cfn-elasticache-cachecluster-tags): {{
+    - Tag}}
+  [TransitEncryptionEnabled](#cfn-elasticache-cachecluster-transitencryptionenabled): {{Boolean}}
+  [VpcSecurityGroupIds](#cfn-elasticache-cachecluster-vpcsecuritygroupids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-elasticache-cachecluster-properties"></a>
 
-`AutoMinorVersionUpgrade`
+`AutoMinorVersionUpgrade`  <a name="cfn-elasticache-cachecluster-autominorversionupgrade"></a>
+If you are running Valkey 7.2 or later, or Redis OSS engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next minor version upgrade campaign. This parameter is disabled for previous versions.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you are running Valkey 7.2 or later, or Redis OSS engine version 6.0 or later, set this parameter to yes if you want to opt-in to the
-next minor version upgrade campaign. This parameter is disabled for previous versions.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AZMode`
-
-Specifies whether the nodes in this Memcached cluster are created in a single
-Availability Zone or created across multiple Availability Zones in the cluster's
-region.
-
+`AZMode`  <a name="cfn-elasticache-cachecluster-azmode"></a>
+Specifies whether the nodes in this Memcached cluster are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region.
 This parameter is only supported for Memcached clusters.
+If the `AZMode` and `PreferredAvailabilityZones` are not specified, ElastiCache assumes `single-az` mode.
+*Required*: No
+*Type*: String
+*Allowed values*: `single-az | cross-az`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If the `AZMode` and `PreferredAvailabilityZones` are not
-specified, ElastiCache assumes `single-az` mode.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `single-az | cross-az`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CacheNodeType`
-
+`CacheNodeType`  <a name="cfn-elasticache-cachecluster-cachenodetype"></a>
 The compute and memory capacity of the nodes in the node group (shard).
+The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts. Changing the CacheNodeType of a Memcached instance is currently not supported. If you need to scale using Memcached, we recommend forcing a replacement update by changing the `LogicalResourceId` of the resource.
++ General purpose:
+  + Current generation:
 
-The following node types are supported by ElastiCache. Generally speaking, the current generation types provide
-more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
-Changing the CacheNodeType of a Memcached instance is currently not supported. If you need to scale using Memcached,
-we recommend forcing a replacement update by changing the `LogicalResourceId` of the resource.
+    **M6g node types:**`cache.m6g.large`, `cache.m6g.xlarge`, `cache.m6g.2xlarge`, `cache.m6g.4xlarge`, `cache.m6g.8xlarge`, `cache.m6g.12xlarge`, `cache.m6g.16xlarge`, `cache.m6g.24xlarge`
 
-- General purpose:
+    **M5 node types:**`cache.m5.large`, `cache.m5.xlarge`, `cache.m5.2xlarge`, `cache.m5.4xlarge`, `cache.m5.12xlarge`, `cache.m5.24xlarge`
 
-- Current generation:
+    **M4 node types:**`cache.m4.large`, `cache.m4.xlarge`, `cache.m4.2xlarge`, `cache.m4.4xlarge`, `cache.m4.10xlarge`
 
-**M6g node types:** `cache.m6g.large`,
-`cache.m6g.xlarge`, `cache.m6g.2xlarge`, `cache.m6g.4xlarge`,
-`cache.m6g.8xlarge`, `cache.m6g.12xlarge`, `cache.m6g.16xlarge`,
-`cache.m6g.24xlarge`
+    **T4g node types:**`cache.t4g.micro`, `cache.t4g.small`, `cache.t4g.medium`
 
-**M5 node types:** `cache.m5.large`, `cache.m5.xlarge`,
-`cache.m5.2xlarge`, `cache.m5.4xlarge`, `cache.m5.12xlarge`,
-`cache.m5.24xlarge`
+    **T3 node types:**`cache.t3.micro`, `cache.t3.small`, `cache.t3.medium`
 
-**M4 node types:** `cache.m4.large`, `cache.m4.xlarge`,
-`cache.m4.2xlarge`, `cache.m4.4xlarge`, `cache.m4.10xlarge`
+    **T2 node types:**`cache.t2.micro`, `cache.t2.small`, `cache.t2.medium`
+  + Previous generation: (not recommended)
 
-**T4g node types:** `cache.t4g.micro`, `cache.t4g.small`,
-`cache.t4g.medium`
+     **T1 node types:** `cache.t1.micro`
 
-**T3 node types:** `cache.t3.micro`, `cache.t3.small`,
-`cache.t3.medium`
+    **M1 node types:**`cache.m1.small`, `cache.m1.medium`, `cache.m1.large`, `cache.m1.xlarge`
 
-**T2 node types:** `cache.t2.micro`, `cache.t2.small`,
-`cache.t2.medium`
+    **M3 node types:**`cache.m3.medium`, `cache.m3.large`, `cache.m3.xlarge`, `cache.m3.2xlarge`
++ Compute optimized:
+  + Previous generation: (not recommended)
 
-- Previous generation: (not recommended)
+     **C1 node types:** `cache.c1.xlarge`
++ Memory optimized:
+  + Current generation:
 
-**T1 node types:** `cache.t1.micro`
+    **R6gd node types:**`cache.r6gd.xlarge`, `cache.r6gd.2xlarge`, `cache.r6gd.4xlarge`, `cache.r6gd.8xlarge`, `cache.r6gd.12xlarge`, `cache.r6gd.16xlarge`
+**Note**
+The `r6gd` family is available in the following regions: `us-east-2`, `us-east-1`, `us-west-2`, `us-west-1`, `eu-west-1`, `eu-central-1`, `ap-northeast-1`, `ap-southeast-1`, `ap-southeast-2`.
 
-**M1 node types:** `cache.m1.small`, `cache.m1.medium`,
-`cache.m1.large`, `cache.m1.xlarge`
+    **R6g node types:**`cache.r6g.large`, `cache.r6g.xlarge`, `cache.r6g.2xlarge`, `cache.r6g.4xlarge`, `cache.r6g.8xlarge`, `cache.r6g.12xlarge`, `cache.r6g.16xlarge`, `cache.r6g.24xlarge`
 
-**M3 node types:** `cache.m3.medium`, `cache.m3.large`,
-`cache.m3.xlarge`, `cache.m3.2xlarge`
+    **R5 node types:**`cache.r5.large`, `cache.r5.xlarge`, `cache.r5.2xlarge`, `cache.r5.4xlarge`, `cache.r5.12xlarge`, `cache.r5.24xlarge`
 
-- Compute optimized:
+    **R4 node types:**`cache.r4.large`, `cache.r4.xlarge`, `cache.r4.2xlarge`, `cache.r4.4xlarge`, `cache.r4.8xlarge`, `cache.r4.16xlarge`
+  + Previous generation: (not recommended)
 
-- Previous generation: (not recommended)
+    **M2 node types:**`cache.m2.xlarge`, `cache.m2.2xlarge`, `cache.m2.4xlarge`
 
-**C1 node types:** `cache.c1.xlarge`
+    **R3 node types:**`cache.r3.large`, `cache.r3.xlarge`, `cache.r3.2xlarge`, `cache.r3.4xlarge`, `cache.r3.8xlarge`
+For region availability, see [Supported Node Types by Region](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
+ **Additional node type info**
++ All current generation instance types are created in Amazon VPC by default.
++ Valkey and Redis OSS append-only files (AOF) are not supported for T1 or T2 instances.
++ Valkey and Redis OSS Multi-AZ with automatic failover is not supported on T1 instances.
++ Redis OSS configuration variables `appendonly` and `appendfsync` are not supported on Redis OSS version 2.8.22 and later.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- Memory optimized:
+`CacheParameterGroupName`  <a name="cfn-elasticache-cachecluster-cacheparametergroupname"></a>
+The name of the parameter group to associate with this cluster. If this argument is omitted, the default parameter group for the specified engine is used. You cannot use any parameter group which has `cluster-enabled='yes'` when creating a cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- Current generation:
-
-**R6gd node types:** `cache.r6gd.xlarge`,
-`cache.r6gd.2xlarge`, `cache.r6gd.4xlarge`, `cache.r6gd.8xlarge`,
-`cache.r6gd.12xlarge`, `cache.r6gd.16xlarge`
-
-###### Note
-
-The `r6gd` family is available in the following regions: `us-east-2`,
-`us-east-1`, `us-west-2`, `us-west-1`, `eu-west-1`,
-`eu-central-1`, `ap-northeast-1`, `ap-southeast-1`,
-`ap-southeast-2`.
-
-**R6g node types:** `cache.r6g.large`,
-`cache.r6g.xlarge`, `cache.r6g.2xlarge`, `cache.r6g.4xlarge`,
-`cache.r6g.8xlarge`, `cache.r6g.12xlarge`, `cache.r6g.16xlarge`,
-`cache.r6g.24xlarge`
-
-**R5 node types:** `cache.r5.large`, `cache.r5.xlarge`,
-`cache.r5.2xlarge`, `cache.r5.4xlarge`, `cache.r5.12xlarge`,
-`cache.r5.24xlarge`
-
-**R4 node types:** `cache.r4.large`, `cache.r4.xlarge`,
-`cache.r4.2xlarge`, `cache.r4.4xlarge`, `cache.r4.8xlarge`,
-`cache.r4.16xlarge`
-
-- Previous generation: (not recommended)
-
-**M2 node types:** `cache.m2.xlarge`, `cache.m2.2xlarge`,
-`cache.m2.4xlarge`
-
-**R3 node types:** `cache.r3.large`, `cache.r3.xlarge`,
-`cache.r3.2xlarge`, `cache.r3.4xlarge`, `cache.r3.8xlarge`
-
-For region availability, see [Supported Node\
-Types by Region](../../../amazonelasticache/latest/dg/cachenodes-supportedtypes.md#CacheNodes.SupportedTypesByRegion)
-
-**Additional node type info**
-
-- All current generation instance types are created in Amazon VPC by default.
-
-- Valkey and Redis OSS append-only files (AOF) are not supported for T1 or T2 instances.
-
-- Valkey and Redis OSS Multi-AZ with automatic failover is not supported on T1 instances.
-
-- Redis OSS configuration variables `appendonly` and `appendfsync` are not supported on Redis OSS
-version 2.8.22 and later.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CacheParameterGroupName`
-
-The name of the parameter group to associate with this cluster. If this argument is omitted, the default
-parameter group for the specified engine is used. You cannot use any parameter group which has
-`cluster-enabled='yes'` when creating a cluster.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CacheSecurityGroupNames`
-
+`CacheSecurityGroupNames`  <a name="cfn-elasticache-cachecluster-cachesecuritygroupnames"></a>
 A list of security group names to associate with this cluster.
+Use this parameter only when you are creating a cluster outside of an Amazon Virtual Private Cloud (Amazon VPC).
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Use this parameter only when you are creating a cluster outside of an Amazon Virtual Private Cloud (Amazon
-VPC).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CacheSubnetGroupName`
-
+`CacheSubnetGroupName`  <a name="cfn-elasticache-cachecluster-cachesubnetgroupname"></a>
 The name of the subnet group to be used for the cluster.
-
 Use this parameter only when you are creating a cluster in an Amazon Virtual Private Cloud (Amazon VPC).
+If you're going to launch your cluster in an Amazon VPC, you need to create a subnet group before you start creating a cluster. For more information, see `[AWS::ElastiCache::SubnetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html).`
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Important
+`ClusterName`  <a name="cfn-elasticache-cachecluster-clustername"></a>
+A name for the cache cluster. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the cache cluster. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
+The name must contain 1 to 50 alphanumeric characters or hyphens. The name must start with a letter and cannot end with a hyphen or contain two consecutive hyphens.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-If you're going to launch your cluster in an Amazon VPC, you need to create a subnet group before you start
-creating a cluster. For more information, see `AWS::ElastiCache::SubnetGroup.`
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ClusterName`
-
-A name for the cache cluster. If you don't specify a name, CloudFormation generates a unique physical ID and
-uses that ID for the cache cluster. For more information, see [Name Type](../userguide/aws-properties-name.md).
-
-The name must contain 1 to 50 alphanumeric characters or hyphens. The name must start with a letter and cannot
-end with a hyphen or contain two consecutive hyphens.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Engine`
-
+`Engine`  <a name="cfn-elasticache-cachecluster-engine"></a>
 The name of the cache engine to be used for this cluster.
+Valid values for this parameter are: `memcached` \| `redis`
+To create a Valkey cluster, use [AWS::ElastiCache::ReplicationGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticache-replicationgroup.html).
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Valid values for this parameter are: `memcached` \| valkey \|
-`redis`
+`EngineVersion`  <a name="cfn-elasticache-cachecluster-engineversion"></a>
+The version number of the cache engine to be used for this cluster. To view the supported cache engine versions, use the DescribeCacheEngineVersions operation.
+**Important:** You can upgrade to a newer engine version (see [Selecting a Cache Engine and Version](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SelectEngine.html#VersionManagement)), but you cannot downgrade to an earlier engine version. If you want to use an earlier engine version, you must delete the existing cluster or replication group and create it anew with the earlier engine version.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IpDiscovery`  <a name="cfn-elasticache-cachecluster-ipdiscovery"></a>
+The network type you choose when modifying a cluster, either `ipv4` \| `ipv6`. IPv6 is supported for workloads using Valkey 7.2 and above, Redis OSS engine version 6.2 to 7.1 and Memcached engine version 1.6.6 and above on all instances built on the [Nitro system](https://aws.amazon.com/ec2/nitro/).
+*Required*: No
+*Type*: String
+*Allowed values*: `ipv4 | ipv6`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EngineVersion`
-
-The version number of the cache engine to be used for this cluster. To view the supported cache engine versions,
-use the DescribeCacheEngineVersions operation.
-
-**Important:** You can upgrade to a newer engine version (see [Selecting a Cache\
-Engine and Version](../../../amazonelasticache/latest/dg/selectengine.md#VersionManagement)), but you cannot downgrade to an earlier engine version. If you want to use an earlier
-engine version, you must delete the existing cluster or replication group and create it anew with the earlier engine
-version.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpDiscovery`
-
-The network type you choose when modifying a cluster, either `ipv4` \|
-`ipv6`. IPv6 is supported for workloads using Valkey 7.2 and above, Redis OSS engine version 6.2
-to 7.1 and Memcached engine version 1.6.6 and above on all instances built on the [Nitro system](https://aws.amazon.com/ec2/nitro).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ipv4 | ipv6`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogDeliveryConfigurations`
-
+`LogDeliveryConfigurations`  <a name="cfn-elasticache-cachecluster-logdeliveryconfigurations"></a>
 Specifies the destination, format and type of the logs.
+*Required*: No
+*Type*: Array of [LogDeliveryConfigurationRequest](aws-properties-elasticache-cachecluster-logdeliveryconfigurationrequest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`NetworkType`  <a name="cfn-elasticache-cachecluster-networktype"></a>
+Must be either `ipv4` \| `ipv6` \| `dual_stack`. IPv6 is supported for workloads using Valkey 7.2 and above, Redis OSS engine version 6.2 to 7.1 and Memcached engine version 1.6.6 and above on all instances built on the [Nitro system](https://aws.amazon.com/ec2/nitro/).
+*Required*: No
+*Type*: String
+*Allowed values*: `ipv4 | ipv6 | dual_stack`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Array of [LogDeliveryConfigurationRequest](aws-properties-elasticache-cachecluster-logdeliveryconfigurationrequest.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkType`
-
-Must be either `ipv4` \| `ipv6` \| `dual_stack`. IPv6
-is supported for workloads using Valkey 7.2 and above, Redis OSS engine version 6.2 to 7.1
-and Memcached engine version 1.6.6 and above on all instances built on the [Nitro system](https://aws.amazon.com/ec2/nitro).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ipv4 | ipv6 | dual_stack`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NotificationTopicArn`
-
-The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic
-to which notifications are sent.
-
-###### Note
-
+`NotificationTopicArn`  <a name="cfn-elasticache-cachecluster-notificationtopicarn"></a>
+The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.
 The Amazon SNS topic owner must be the same as the cluster owner.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumCacheNodes`
-
+`NumCacheNodes`  <a name="cfn-elasticache-cachecluster-numcachenodes"></a>
 The number of cache nodes that the cache cluster should have.
+However, if the `PreferredAvailabilityZone` and `PreferredAvailabilityZones `properties were not previously specified and you don't specify any new values, an update requires [ replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement).
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-However, if the `PreferredAvailabilityZone` and `PreferredAvailabilityZones ` properties
-were not previously specified and you don't specify any new values, an update requires [replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement).
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-elasticache-cachecluster-port"></a>
 The port number on which each of the cache nodes accepts connections.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PreferredAvailabilityZone`
-
+`PreferredAvailabilityZone`  <a name="cfn-elasticache-cachecluster-preferredavailabilityzone"></a>
 The EC2 Availability Zone in which the cluster is created.
-
-All nodes belonging to this cluster are placed in the preferred Availability Zone. If
-you want to create your nodes across multiple Availability Zones, use
-`PreferredAvailabilityZones`.
-
+All nodes belonging to this cluster are placed in the preferred Availability Zone. If you want to create your nodes across multiple Availability Zones, use `PreferredAvailabilityZones`.
 Default: System chosen Availability Zone.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PreferredAvailabilityZones`
-
-A list of the Availability Zones in which cache nodes are created. The order of the
-zones in the list is not important.
-
+`PreferredAvailabilityZones`  <a name="cfn-elasticache-cachecluster-preferredavailabilityzones"></a>
+A list of the Availability Zones in which cache nodes are created. The order of the zones in the list is not important.
 This option is only supported on Memcached.
-
-###### Note
-
-If you are creating your cluster in an Amazon VPC (recommended) you can only
-locate nodes in Availability Zones that are associated with the subnets in the
-selected subnet group.
-
-The number of Availability Zones listed must equal the value of
-`NumCacheNodes`.
-
-If you want all the nodes in the same Availability Zone, use
-`PreferredAvailabilityZone` instead, or repeat the Availability Zone
-multiple times in the list.
-
+If you are creating your cluster in an Amazon VPC (recommended) you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group.
+The number of Availability Zones listed must equal the value of `NumCacheNodes`.
+If you want all the nodes in the same Availability Zone, use `PreferredAvailabilityZone` instead, or repeat the Availability Zone multiple times in the list.
 Default: System chosen Availability Zones.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PreferredMaintenanceWindow`
-
-Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range
-in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period.
-
+`PreferredMaintenanceWindow`  <a name="cfn-elasticache-cachecluster-preferredmaintenancewindow"></a>
+Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period.
 Valid values for `ddd` are:
-
-- `sun`
-
-- `mon`
-
-- `tue`
-
-- `wed`
-
-- `thu`
-
-- `fri`
-
-- `sat`
-
++  `sun`
++  `mon`
++  `tue`
++  `wed`
++  `thu`
++  `fri`
++  `sat`
 Example: `sun:23:00-mon:01:30`
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnapshotArns`
-
-A single-element string list containing an Amazon Resource Name (ARN) that uniquely identifies a Valkey or Redis OSS RDB
-snapshot file stored in Amazon S3. The snapshot file is used to populate the node group (shard). The Amazon S3 object
-name in the ARN cannot contain any commas.
-
-###### Note
-
+`SnapshotArns`  <a name="cfn-elasticache-cachecluster-snapshotarns"></a>
+A single-element string list containing an Amazon Resource Name (ARN) that uniquely identifies a Valkey or Redis OSS RDB snapshot file stored in Amazon S3. The snapshot file is used to populate the node group (shard). The Amazon S3 object name in the ARN cannot contain any commas.
 This parameter is only valid if the `Engine` parameter is `redis`.
-
 Example of an Amazon S3 ARN: `arn:aws:s3:::my_bucket/snapshot1.rdb`
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`SnapshotName`  <a name="cfn-elasticache-cachecluster-snapshotname"></a>
+The name of a Valkey or Redis OSS snapshot from which to restore data into the new node group (shard). The snapshot status changes to `restoring` while the new node group (shard) is being created.
+This parameter is only valid if the `Engine` parameter is `redis`.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SnapshotName`
-
-The name of a Valkey or Redis OSS snapshot from which to restore data into the new node group
-(shard). The snapshot status changes to `restoring` while the new node group
-(shard) is being created.
-
-###### Note
-
-This parameter is only valid if the `Engine` parameter is
-`redis`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SnapshotRetentionLimit`
-
-The number of days for which ElastiCache retains automatic snapshots before deleting
-them. For example, if you set `SnapshotRetentionLimit` to 5, a snapshot taken
-today is retained for 5 days before being deleted.
-
-###### Note
-
-This parameter is only valid if the `Engine` parameter is
-`redis`.
-
+`SnapshotRetentionLimit`  <a name="cfn-elasticache-cachecluster-snapshotretentionlimit"></a>
+The number of days for which ElastiCache retains automatic snapshots before deleting them. For example, if you set `SnapshotRetentionLimit` to 5, a snapshot taken today is retained for 5 days before being deleted.
+This parameter is only valid if the `Engine` parameter is `redis`.
 Default: 0 (i.e., automatic backups are disabled for this cache cluster).
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SnapshotWindow`
-
-The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot
-of your node group (shard).
-
+`SnapshotWindow`  <a name="cfn-elasticache-cachecluster-snapshotwindow"></a>
+The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard).
 Example: `05:00-09:00`
+If you do not specify this parameter, ElastiCache automatically chooses an appropriate time range.
+This parameter is only valid if the `Engine` parameter is `redis`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If you do not specify this parameter, ElastiCache automatically chooses an appropriate
-time range.
-
-###### Note
-
-This parameter is only valid if the `Engine` parameter is
-`redis`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-elasticache-cachecluster-tags"></a>
 A list of tags to be added to this resource.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-elasticache-cachecluster-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-elasticache-cachecluster-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransitEncryptionEnabled`
-
+`TransitEncryptionEnabled`  <a name="cfn-elasticache-cachecluster-transitencryptionenabled"></a>
 A flag that enables in-transit encryption when set to true.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcSecurityGroupIds`
-
+`VpcSecurityGroupIds`  <a name="cfn-elasticache-cachecluster-vpcsecuritygroupids"></a>
 One or more VPC security groups associated with the cluster.
-
 Use this parameter only when you are creating a cluster in an Amazon Virtual Private Cloud (Amazon VPC).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-elasticache-cachecluster-return-values"></a>
 
 ### Ref
+<a name="aws-resource-elasticache-cachecluster-return-values-ref"></a>
 
-When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref`
-returns the resource name.
+When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-elasticache-cachecluster-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ConfigurationEndpoint.Address`
+####
+<a name="aws-resource-elasticache-cachecluster-return-values-fn--getatt-fn--getatt"></a>
 
-The DNS hostname of the cache node.
+`ConfigurationEndpoint.Address`  <a name="ConfigurationEndpoint.Address-fn::getatt"></a>
+ The DNS hostname of the cache node.
+Valkey and Redis OSS (cluster mode disabled) replication groups don't have this attribute. Therefore, `Fn::GetAtt` returns a value for this attribute only if the replication group is clustered. Otherwise, `Fn::GetAtt` fails.
 
-###### Note
-
-Valkey and Redis OSS (cluster mode disabled) replication groups don't have this attribute. Therefore, `Fn::GetAtt`
-returns a value for this attribute only if the replication group is clustered. Otherwise, `Fn::GetAtt`
-fails.
-
-`ConfigurationEndpoint.Port`
-
+`ConfigurationEndpoint.Port`  <a name="ConfigurationEndpoint.Port-fn::getatt"></a>
 The port number of the configuration endpoint for the Memcached cache cluster.
+Valkey and Redis OSS (cluster mode disabled) replication groups don't have this attribute. Therefore, `Fn::GetAtt` returns a value for this attribute only if the replication group is clustered. Otherwise, `Fn::GetAtt` fails.
 
-###### Note
-
-Valkey and Redis OSS (cluster mode disabled) replication groups don't have this attribute. Therefore, `Fn::GetAtt`
-returns a value for this attribute only if the replication group is clustered. Otherwise, `Fn::GetAtt`
-fails.
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The resource name.
 
-`RedisEndpoint.Address`
-
+`RedisEndpoint.Address`  <a name="RedisEndpoint.Address-fn::getatt"></a>
 The DNS address of the configuration endpoint for the Valkey or Redis OSS cache cluster.
 
-`RedisEndpoint.Port`
-
+`RedisEndpoint.Port`  <a name="RedisEndpoint.Port-fn::getatt"></a>
 The port number of the configuration endpoint for the Valkey or Redis OSS cache cluster.
 
 ## Examples
+<a name="aws-resource-elasticache-cachecluster--examples"></a>
 
-- [Cluster in a Default VPC](#aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC)
-
-- [Memcached Nodes in Multiple Availability Zones](#aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones)
+**Topics**
++ [Cluster in a Default VPC](#aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC)
++ [Memcached Nodes in Multiple Availability Zones](#aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones)
 
 ### Cluster in a Default VPC
+<a name="aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC"></a>
 
-The following snippet describes an Elasticache cluster in a security group that is in a
-[default VPC](../../../vpc/latest/userguide/default-vpc.md). Usually, a security
-group in a VPC requires the VPC ID to be specified. In this case, no VPC ID is needed
-because the security group uses the default VPC. If you want to specify a VPC for the
-security group, specify its `VpcId` property.
+The following snippet describes an Elasticache cluster in a security group that is in a [default VPC](https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc.html). Usually, a security group in a VPC requires the VPC ID to be specified. In this case, no VPC ID is needed because the security group uses the default VPC. If you want to specify a VPC for the security group, specify its `VpcId` property.
 
-For the cache cluster, the `VpcSecurityGroupIds` property is used to
-associate the cluster with the security group. Because the
-`VpcSecurityGroupIds` property requires security group IDs (not security
-group names), the template snippet uses the `Fn::GetAtt` function instead of
-a `Ref` function on the `ElasticacheSecurityGroup` resource. The
-`Ref` function will return the security group name. If you specify a VPC
-ID for the security group, `Ref` returns the security group ID.
+For the cache cluster, the `VpcSecurityGroupIds` property is used to associate the cluster with the security group. Because the `VpcSecurityGroupIds` property requires security group IDs (not security group names), the template snippet uses the `Fn::GetAtt` function instead of a `Ref` function on the `ElasticacheSecurityGroup` resource. The `Ref` function will return the security group name. If you specify a VPC ID for the security group, `Ref` returns the security group ID.
 
-Note that `InstanceSecurityGroup` refers to the logical name of a security
-group that is not actually defined in this example. To learn more about the
-`SourceSecurityGroupName`
-property, see [AWS::EC2::SecurityGroupIngress](../userguide/aws-properties-ec2-security-group-ingress.md).
+ Note that `InstanceSecurityGroup` refers to the logical name of a security group that is not actually defined in this example. To learn more about the `SourceSecurityGroupName` property, see [AWS::EC2::SecurityGroupIngress](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html).
 
 #### JSON
+<a name="aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC--json"></a>
 
-```json
-
+```
 {
     "ElasticacheSecurityGroup": {
         "Type": "AWS::EC2::SecurityGroup",
@@ -687,9 +424,9 @@ property, see [AWS::EC2::SecurityGroupIngress](../userguide/aws-properties-ec2-s
 ```
 
 #### YAML
+<a name="aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC--yaml"></a>
 
-```yaml
-
+```
 ElasticacheSecurityGroup:
   Type: 'AWS::EC2::SecurityGroup'
   Properties:
@@ -712,13 +449,14 @@ ElasticacheCluster:
 ```
 
 ### Memcached Nodes in Multiple Availability Zones
+<a name="aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones"></a>
 
 The following example launches a cache cluster with three nodes, where two nodes are created in us-west-2a and one is created in us-west-2b.
 
 #### JSON
+<a name="aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones--json"></a>
 
-```json
-
+```
 {
     "myCacheCluster": {
         "Type": "AWS::ElastiCache::CacheCluster",
@@ -738,9 +476,9 @@ The following example launches a cache cluster with three nodes, where two nodes
 ```
 
 #### YAML
+<a name="aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones--yaml"></a>
 
-```yaml
-
+```
 myCacheCluster:
   Type: 'AWS::ElastiCache::CacheCluster'
   Properties:
@@ -755,15 +493,8 @@ myCacheCluster:
 ```
 
 ## See also
-
-- [CreateCacheParameterGroup](../../../../reference/amazonelasticache/latest/apireference/api-createcacheparametergroup.md) in the _Amazon ElastiCache API Reference Guide_
-
-- [ModifyCacheParameterGroup](../../../../reference/amazonelasticache/latest/apireference/api-modifycacheparametergroup.md) in the _Amazon ElastiCache API Reference Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon ElastiCache
-
-CloudWatchLogsDestinationDetails
+<a name="aws-resource-elasticache-cachecluster--seealso"></a>
++ [CreateCacheParameterGroup](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheParameterGroup.html) in the *Amazon ElastiCache API Reference Guide*
++ [ModifyCacheParameterGroup](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheParameterGroup.html) in the *Amazon ElastiCache API Reference Guide*
 
 All content copied from https://docs.aws.amazon.com/.

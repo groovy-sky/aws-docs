@@ -3,54 +3,36 @@ title: "BatchDescribeTypeConfigurationsError"
 ---
 
 # BatchDescribeTypeConfigurationsError
+<a name="API_BatchDescribeTypeConfigurationsError"></a>
 
-Detailed information concerning an error generated during the setting of configuration data
-for a CloudFormation extension.
+Detailed information concerning an error generated during the setting of configuration data for a CloudFormation extension.
 
 ## Contents
+<a name="API_BatchDescribeTypeConfigurationsError_Contents"></a>
 
-**ErrorCode**
-
+ ** ErrorCode **
 The error code.
-
 Type: String
-
 Length Constraints: Fixed length of 3.
-
 Required: No
 
-**ErrorMessage**
-
+ ** ErrorMessage **
 The error message.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 255.
-
 Required: No
 
-**TypeConfigurationIdentifier**
-
+ ** TypeConfigurationIdentifier **
 Identifying information for the configuration of a CloudFormation extension.
-
-Type: [TypeConfigurationIdentifier](api-typeconfigurationidentifier.md) object
-
+Type: [TypeConfigurationIdentifier](API_TypeConfigurationIdentifier.md) object
 Required: No
 
 ## See Also
+<a name="API_BatchDescribeTypeConfigurationsError_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/BatchDescribeTypeConfigurationsError)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/BatchDescribeTypeConfigurationsError)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/BatchDescribeTypeConfigurationsError)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoDeployment
-
-Change
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/BatchDescribeTypeConfigurationsError)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/BatchDescribeTypeConfigurationsError)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/BatchDescribeTypeConfigurationsError)
 
 All content copied from https://docs.aws.amazon.com/.

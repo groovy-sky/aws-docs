@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Template TableConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TableConditionalFormatting
+<a name="aws-properties-quicksight-template-tableconditionalformatting"></a>
 
 The conditional formatting for a `PivotTableVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-tableconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-tableconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConditionalFormattingOptions" : [ TableConditionalFormattingOption, ... ]
+  "[ConditionalFormattingOptions](#cfn-quicksight-template-tableconditionalformatting-conditionalformattingoptions)" : {{[ TableConditionalFormattingOption, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-tableconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  ConditionalFormattingOptions:
-    - TableConditionalFormattingOption
-
+```
+  [ConditionalFormattingOptions](#cfn-quicksight-template-tableconditionalformatting-conditionalformattingoptions): {{
+    - TableConditionalFormattingOption}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-tableconditionalformatting-properties"></a>
 
-`ConditionalFormattingOptions`
-
+`ConditionalFormattingOptions`  <a name="cfn-quicksight-template-tableconditionalformatting-conditionalformattingoptions"></a>
 Conditional formatting options for a `PivotTableVisual`.
-
-_Required_: No
-
-_Type_: Array of [TableConditionalFormattingOption](aws-properties-quicksight-template-tableconditionalformattingoption.md)
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableCellStyle
-
-TableConditionalFormattingOption
+*Required*: No
+*Type*: Array of [TableConditionalFormattingOption](aws-properties-quicksight-template-tableconditionalformattingoption.md)
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

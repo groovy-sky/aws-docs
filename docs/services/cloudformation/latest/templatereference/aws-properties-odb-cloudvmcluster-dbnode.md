@@ -2,251 +2,171 @@
 title: "AWS::ODB::CloudVmCluster DbNode"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudVmCluster DbNode
+<a name="aws-properties-odb-cloudvmcluster-dbnode"></a>
 
 Information about a DB node.
 
 ## Syntax
+<a name="aws-properties-odb-cloudvmcluster-dbnode-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-odb-cloudvmcluster-dbnode-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackupIpId" : String,
-  "BackupVnic2Id" : String,
-  "CpuCoreCount" : Integer,
-  "DbNodeArn" : String,
-  "DbNodeId" : String,
-  "DbNodeStorageSizeInGBs" : Integer,
-  "DbServerId" : String,
-  "DbSystemId" : String,
-  "HostIpId" : String,
-  "Hostname" : String,
-  "MemorySizeInGBs" : Integer,
-  "Ocid" : String,
-  "Status" : String,
-  "Tags" : [ Tag, ... ],
-  "Vnic2Id" : String,
-  "VnicId" : String
+  "[BackupIpId](#cfn-odb-cloudvmcluster-dbnode-backupipid)" : {{String}},
+  "[BackupVnic2Id](#cfn-odb-cloudvmcluster-dbnode-backupvnic2id)" : {{String}},
+  "[CpuCoreCount](#cfn-odb-cloudvmcluster-dbnode-cpucorecount)" : {{Integer}},
+  "[DbNodeArn](#cfn-odb-cloudvmcluster-dbnode-dbnodearn)" : {{String}},
+  "[DbNodeId](#cfn-odb-cloudvmcluster-dbnode-dbnodeid)" : {{String}},
+  "[DbNodeStorageSizeInGBs](#cfn-odb-cloudvmcluster-dbnode-dbnodestoragesizeingbs)" : {{Integer}},
+  "[DbServerId](#cfn-odb-cloudvmcluster-dbnode-dbserverid)" : {{String}},
+  "[DbSystemId](#cfn-odb-cloudvmcluster-dbnode-dbsystemid)" : {{String}},
+  "[HostIpId](#cfn-odb-cloudvmcluster-dbnode-hostipid)" : {{String}},
+  "[Hostname](#cfn-odb-cloudvmcluster-dbnode-hostname)" : {{String}},
+  "[MemorySizeInGBs](#cfn-odb-cloudvmcluster-dbnode-memorysizeingbs)" : {{Integer}},
+  "[Ocid](#cfn-odb-cloudvmcluster-dbnode-ocid)" : {{String}},
+  "[Status](#cfn-odb-cloudvmcluster-dbnode-status)" : {{String}},
+  "[Tags](#cfn-odb-cloudvmcluster-dbnode-tags)" : {{[ Tag, ... ]}},
+  "[Vnic2Id](#cfn-odb-cloudvmcluster-dbnode-vnic2id)" : {{String}},
+  "[VnicId](#cfn-odb-cloudvmcluster-dbnode-vnicid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-odb-cloudvmcluster-dbnode-syntax.yaml"></a>
 
-```yaml
-
-  BackupIpId: String
-  BackupVnic2Id: String
-  CpuCoreCount: Integer
-  DbNodeArn: String
-  DbNodeId: String
-  DbNodeStorageSizeInGBs: Integer
-  DbServerId: String
-  DbSystemId: String
-  HostIpId: String
-  Hostname: String
-  MemorySizeInGBs: Integer
-  Ocid: String
-  Status: String
-  Tags:
-    - Tag
-  Vnic2Id: String
-  VnicId: String
-
+```
+  [BackupIpId](#cfn-odb-cloudvmcluster-dbnode-backupipid): {{String}}
+  [BackupVnic2Id](#cfn-odb-cloudvmcluster-dbnode-backupvnic2id): {{String}}
+  [CpuCoreCount](#cfn-odb-cloudvmcluster-dbnode-cpucorecount): {{Integer}}
+  [DbNodeArn](#cfn-odb-cloudvmcluster-dbnode-dbnodearn): {{String}}
+  [DbNodeId](#cfn-odb-cloudvmcluster-dbnode-dbnodeid): {{String}}
+  [DbNodeStorageSizeInGBs](#cfn-odb-cloudvmcluster-dbnode-dbnodestoragesizeingbs): {{Integer}}
+  [DbServerId](#cfn-odb-cloudvmcluster-dbnode-dbserverid): {{String}}
+  [DbSystemId](#cfn-odb-cloudvmcluster-dbnode-dbsystemid): {{String}}
+  [HostIpId](#cfn-odb-cloudvmcluster-dbnode-hostipid): {{String}}
+  [Hostname](#cfn-odb-cloudvmcluster-dbnode-hostname): {{String}}
+  [MemorySizeInGBs](#cfn-odb-cloudvmcluster-dbnode-memorysizeingbs): {{Integer}}
+  [Ocid](#cfn-odb-cloudvmcluster-dbnode-ocid): {{String}}
+  [Status](#cfn-odb-cloudvmcluster-dbnode-status): {{String}}
+  [Tags](#cfn-odb-cloudvmcluster-dbnode-tags): {{
+    - Tag}}
+  [Vnic2Id](#cfn-odb-cloudvmcluster-dbnode-vnic2id): {{String}}
+  [VnicId](#cfn-odb-cloudvmcluster-dbnode-vnicid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-odb-cloudvmcluster-dbnode-properties"></a>
 
-`BackupIpId`
-
+`BackupIpId`  <a name="cfn-odb-cloudvmcluster-dbnode-backupipid"></a>
 The Oracle Cloud ID (OCID) of the backup IP address that's associated with the DB node.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`BackupVnic2Id`
-
+`BackupVnic2Id`  <a name="cfn-odb-cloudvmcluster-dbnode-backupvnic2id"></a>
 The OCID of the second backup VNIC.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`CpuCoreCount`
-
+`CpuCoreCount`  <a name="cfn-odb-cloudvmcluster-dbnode-cpucorecount"></a>
 Number of CPU cores enabled on the DB node.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DbNodeArn`
-
+`DbNodeArn`  <a name="cfn-odb-cloudvmcluster-dbnode-dbnodearn"></a>
 The Amazon Resource Name (ARN) of the DB node.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-z0-9-_]{6,64}`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-z0-9-_]{6,64}`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DbNodeId`
-
+`DbNodeId`  <a name="cfn-odb-cloudvmcluster-dbnode-dbnodeid"></a>
 The unique identifier of the DB node.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_~.-]+`
+*Minimum*: `6`
+*Maximum*: `64`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_~.-]+`
-
-_Minimum_: `6`
-
-_Maximum_: `64`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DbNodeStorageSizeInGBs`
-
+`DbNodeStorageSizeInGBs`  <a name="cfn-odb-cloudvmcluster-dbnode-dbnodestoragesizeingbs"></a>
 The amount of local node storage, in gigabytes (GBs), that's allocated on the DB node.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`DbServerId`
-
+`DbServerId`  <a name="cfn-odb-cloudvmcluster-dbnode-dbserverid"></a>
 The unique identifier of the Db server that is associated with the DB node.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_~.-]+`
+*Minimum*: `6`
+*Maximum*: `64`
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_~.-]+`
-
-_Minimum_: `6`
-
-_Maximum_: `64`
-
-`DbSystemId`
-
+`DbSystemId`  <a name="cfn-odb-cloudvmcluster-dbnode-dbsystemid"></a>
 The OCID of the DB system.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`HostIpId`
-
+`HostIpId`  <a name="cfn-odb-cloudvmcluster-dbnode-hostipid"></a>
 The OCID of the host IP address that's associated with the DB node.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Hostname`
-
+`Hostname`  <a name="cfn-odb-cloudvmcluster-dbnode-hostname"></a>
 The host name for the DB node.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`MemorySizeInGBs`
-
+`MemorySizeInGBs`  <a name="cfn-odb-cloudvmcluster-dbnode-memorysizeingbs"></a>
 The allocated memory in GBs on the DB node.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Ocid`
-
+`Ocid`  <a name="cfn-odb-cloudvmcluster-dbnode-ocid"></a>
 The OCID of the DB node.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-odb-cloudvmcluster-dbnode-status"></a>
 The current status of the DB node.
+*Required*: No
+*Type*: String
+*Allowed values*: `AVAILABLE | FAILED | PROVISIONING | TERMINATED | TERMINATING | UPDATING | STOPPING | STOPPED | STARTING`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `AVAILABLE | FAILED | PROVISIONING | TERMINATED | TERMINATING | UPDATING | STOPPING | STOPPED | STARTING`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-odb-cloudvmcluster-dbnode-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-odb-cloudvmcluster-tag.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-odb-cloudvmcluster-tag.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Vnic2Id`
-
+`Vnic2Id`  <a name="cfn-odb-cloudvmcluster-dbnode-vnic2id"></a>
 The OCID of the second VNIC.
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`VnicId`
-
+`VnicId`  <a name="cfn-odb-cloudvmcluster-dbnode-vnicid"></a>
 The OCID of the VNIC.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataCollectionOptions
-
-IamRole
+*Required*: No
+*Type*: String
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

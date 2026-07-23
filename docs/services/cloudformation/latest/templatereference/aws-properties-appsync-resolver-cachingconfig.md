@@ -2,70 +2,52 @@
 title: "AWS::AppSync::Resolver CachingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::Resolver CachingConfig
+<a name="aws-properties-appsync-resolver-cachingconfig"></a>
 
 The caching configuration for a resolver that has caching activated.
 
 ## Syntax
+<a name="aws-properties-appsync-resolver-cachingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-resolver-cachingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CachingKeys" : [ String, ... ],
-  "Ttl" : Number
+  "[CachingKeys](#cfn-appsync-resolver-cachingconfig-cachingkeys)" : {{[ String, ... ]}},
+  "[Ttl](#cfn-appsync-resolver-cachingconfig-ttl)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-resolver-cachingconfig-syntax.yaml"></a>
 
-```yaml
-
-  CachingKeys:
-    - String
-  Ttl: Number
-
+```
+  [CachingKeys](#cfn-appsync-resolver-cachingconfig-cachingkeys): {{
+    - String}}
+  [Ttl](#cfn-appsync-resolver-cachingconfig-ttl): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-resolver-cachingconfig-properties"></a>
 
-`CachingKeys`
-
+`CachingKeys`  <a name="cfn-appsync-resolver-cachingconfig-cachingkeys"></a>
 The caching keys for a resolver that has caching activated.
+Valid values are entries from the `$context.arguments`, `$context.source`, and `$context.identity` maps.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Valid values are entries from the `$context.arguments`, `$context.source`, and
-`$context.identity` maps.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ttl`
-
+`Ttl`  <a name="cfn-appsync-resolver-cachingconfig-ttl"></a>
 The TTL in seconds for a resolver that has caching activated.
-
 Valid values are 1–3,600 seconds.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AppSyncRuntime
-
-LambdaConflictHandlerConfig
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

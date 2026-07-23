@@ -2,79 +2,59 @@
 title: "AWS::Backup::BackupPlan ScanSettingResourceType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupPlan ScanSettingResourceType
+<a name="aws-properties-backup-backupplan-scansettingresourcetype"></a>
 
-The `ScanSettingResourceType` property type specifies Property description not available. for an [AWS::Backup::BackupPlan](aws-resource-backup-backupplan.md).
+<a name="aws-properties-backup-backupplan-scansettingresourcetype-description"></a>The `ScanSettingResourceType` property type specifies Property description not available. for an [AWS::Backup::BackupPlan](aws-resource-backup-backupplan.md).
 
 ## Syntax
+<a name="aws-properties-backup-backupplan-scansettingresourcetype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-backup-backupplan-scansettingresourcetype-syntax.json"></a>
 
-```json
-
+```
 {
-  "MalwareScanner" : String,
-  "ResourceTypes" : [ String, ... ],
-  "ScannerRoleArn" : String
+  "[MalwareScanner](#cfn-backup-backupplan-scansettingresourcetype-malwarescanner)" : {{String}},
+  "[ResourceTypes](#cfn-backup-backupplan-scansettingresourcetype-resourcetypes)" : {{[ String, ... ]}},
+  "[ScannerRoleArn](#cfn-backup-backupplan-scansettingresourcetype-scannerrolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-backup-backupplan-scansettingresourcetype-syntax.yaml"></a>
 
-```yaml
-
-  MalwareScanner: String
-  ResourceTypes:
-    - String
-  ScannerRoleArn: String
-
+```
+  [MalwareScanner](#cfn-backup-backupplan-scansettingresourcetype-malwarescanner): {{String}}
+  [ResourceTypes](#cfn-backup-backupplan-scansettingresourcetype-resourcetypes): {{
+    - String}}
+  [ScannerRoleArn](#cfn-backup-backupplan-scansettingresourcetype-scannerrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-backup-backupplan-scansettingresourcetype-properties"></a>
 
-`MalwareScanner`
-
+`MalwareScanner`  <a name="cfn-backup-backupplan-scansettingresourcetype-malwarescanner"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `GUARDDUTY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GUARDDUTY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceTypes`
-
+`ResourceTypes`  <a name="cfn-backup-backupplan-scansettingresourcetype-resourcetypes"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScannerRoleArn`
-
+`ScannerRoleArn`  <a name="cfn-backup-backupplan-scansettingresourcetype-scannerrolearn"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScanActionResourceType
-
-AWS::Backup::BackupSelection
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

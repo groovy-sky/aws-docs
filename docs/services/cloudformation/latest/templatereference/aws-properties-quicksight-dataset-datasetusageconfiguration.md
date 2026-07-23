@@ -2,64 +2,49 @@
 title: "AWS::QuickSight::DataSet DataSetUsageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataSetUsageConfiguration
+<a name="aws-properties-quicksight-dataset-datasetusageconfiguration"></a>
 
 The usage configuration to apply to child datasets that reference this dataset as a source.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-datasetusageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-datasetusageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisableUseAsDirectQuerySource" : Boolean,
-  "DisableUseAsImportedSource" : Boolean
+  "[DisableUseAsDirectQuerySource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasdirectquerysource)" : {{Boolean}},
+  "[DisableUseAsImportedSource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasimportedsource)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-datasetusageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DisableUseAsDirectQuerySource: Boolean
-  DisableUseAsImportedSource: Boolean
-
+```
+  [DisableUseAsDirectQuerySource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasdirectquerysource): {{Boolean}}
+  [DisableUseAsImportedSource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasimportedsource): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-datasetusageconfiguration-properties"></a>
 
-`DisableUseAsDirectQuerySource`
-
+`DisableUseAsDirectQuerySource`  <a name="cfn-quicksight-dataset-datasetusageconfiguration-disableuseasdirectquerysource"></a>
 An option that controls whether a child dataset of a direct query can use this dataset as a source.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisableUseAsImportedSource`
-
+`DisableUseAsImportedSource`  <a name="cfn-quicksight-dataset-datasetusageconfiguration-disableuseasimportedsource"></a>
 An option that controls whether a child dataset that's stored in Quick Sight can use this dataset as a source.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSetStringListFilterValue
-
-DateTimeDatasetParameter
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

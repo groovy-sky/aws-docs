@@ -2,251 +2,116 @@
 title: "AWS::CloudFront::Distribution ViewerCertificate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution ViewerCertificate
+<a name="aws-properties-cloudfront-distribution-viewercertificate"></a>
 
-A complex type that determines the distribution's SSL/TLS configuration for
-communicating with viewers.
+A complex type that determines the distribution's SSL/TLS configuration for communicating with viewers.
 
-If the distribution doesn't use `Aliases` (also known as alternate domain
-names or CNAMEs)—that is, if the distribution uses the CloudFront domain name such as
-`d111111abcdef8.cloudfront.net`—set
-`CloudFrontDefaultCertificate` to `true` and leave all other
-fields empty.
+If the distribution doesn't use `Aliases` (also known as alternate domain names or CNAMEs)—that is, if the distribution uses the CloudFront domain name such as `d111111abcdef8.cloudfront.net`—set `CloudFrontDefaultCertificate` to `true` and leave all other fields empty.
 
-If the distribution uses `Aliases` (alternate domain names or CNAMEs), use
-the fields in this type to specify the following settings:
+If the distribution uses `Aliases` (alternate domain names or CNAMEs), use the fields in this type to specify the following settings:
++ Which viewers the distribution accepts HTTPS connections from: only viewers that support [server name indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication) (recommended), or all viewers including those that don't support SNI.
+  + To accept HTTPS connections from only viewers that support SNI, set `SSLSupportMethod` to `sni-only`. This is recommended. Most browsers and clients support SNI. (In CloudFormation, the field name is `SslSupportMethod`. Note the different capitalization.)
+  + To accept HTTPS connections from all viewers, including those that don't support SNI, set `SSLSupportMethod` to `vip`. This is not recommended, and results in additional monthly charges from CloudFront. (In CloudFormation, the field name is `SslSupportMethod`. Note the different capitalization.)
++ The minimum SSL/TLS protocol version that the distribution can use to communicate with viewers. To specify a minimum version, choose a value for `MinimumProtocolVersion`. For more information, see [Security Policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValues-security-policy) in the *Amazon CloudFront Developer Guide*.
++ The location of the SSL/TLS certificate, [AWS Certificate Manager (ACM)](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html) (recommended) or [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html). You specify the location by setting a value in one of the following fields (not both):
+  + `ACMCertificateArn` (In CloudFormation, this field name is `AcmCertificateArn`. Note the different capitalization.)
+  + `IAMCertificateId` (In CloudFormation, this field name is `IamCertificateId`. Note the different capitalization.)
 
-- Which viewers the distribution accepts HTTPS connections from: only viewers
-that support [server name indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication) (recommended), or all viewers
-including those that don't support SNI.
+All distributions support HTTPS connections from viewers. To require viewers to use HTTPS only, or to redirect them from HTTP to HTTPS, use `ViewerProtocolPolicy` in the `CacheBehavior` or `DefaultCacheBehavior`. To specify how CloudFront should use SSL/TLS to communicate with your custom origin, use `CustomOriginConfig`.
 
-- To accept HTTPS connections from only viewers that support SNI, set
-`SSLSupportMethod` to `sni-only`. This is
-recommended. Most browsers and clients support SNI.
-(In CloudFormation, the field name is `SslSupportMethod`.
-Note the different capitalization.)
-
-- To accept HTTPS connections from all viewers, including those that
-don't support SNI, set `SSLSupportMethod` to
-`vip`. This is not recommended, and results in additional
-monthly charges from CloudFront. (In CloudFormation,
-the field name is `SslSupportMethod`. Note the different
-capitalization.)
-
-- The minimum SSL/TLS protocol version that the distribution can use to
-communicate with viewers. To specify a minimum version, choose a value for
-`MinimumProtocolVersion`. For more information, see [Security Policy](../../../amazoncloudfront/latest/developerguide/distribution-web-values-specify.md#DownloadDistValues-security-policy) in the
-_Amazon CloudFront Developer Guide_.
-
-- The location of the SSL/TLS certificate, [AWS Certificate Manager\
-(ACM)](../../../acm/latest/userguide/acm-overview.md) (recommended) or [AWS Identity and Access Management (IAM)](../../../iam/latest/userguide/id-credentials-server-certs.md). You specify the location by
-setting a value in one of the following fields (not both):
-
-- `ACMCertificateArn` (In CloudFormation,
-this field name is `AcmCertificateArn`. Note the
-different capitalization.)
-
-- `IAMCertificateId` (In CloudFormation,
-this field name is `IamCertificateId`. Note the different
-capitalization.)
-
-All distributions support HTTPS connections from viewers. To require viewers to use
-HTTPS only, or to redirect them from HTTP to HTTPS, use
-`ViewerProtocolPolicy` in the `CacheBehavior` or
-`DefaultCacheBehavior`. To specify how CloudFront should use SSL/TLS to
-communicate with your custom origin, use `CustomOriginConfig`.
-
-For more information, see [Using HTTPS with CloudFront](../../../amazoncloudfront/latest/developerguide/using-https.md) and [Using Alternate Domain Names and HTTPS](../../../amazoncloudfront/latest/developerguide/using-https-alternate-domain-names.md) in the
-_Amazon CloudFront Developer Guide_.
+For more information, see [Using HTTPS with CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https.html) and [ Using Alternate Domain Names and HTTPS](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-alternate-domain-names.html) in the *Amazon CloudFront Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-viewercertificate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-viewercertificate-syntax.json"></a>
 
-```json
-
+```
 {
-  "AcmCertificateArn" : String,
-  "CloudFrontDefaultCertificate" : Boolean,
-  "IamCertificateId" : String,
-  "MinimumProtocolVersion" : String,
-  "SslSupportMethod" : String
+  "[AcmCertificateArn](#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn)" : {{String}},
+  "[CloudFrontDefaultCertificate](#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate)" : {{Boolean}},
+  "[IamCertificateId](#cfn-cloudfront-distribution-viewercertificate-iamcertificateid)" : {{String}},
+  "[MinimumProtocolVersion](#cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion)" : {{String}},
+  "[SslSupportMethod](#cfn-cloudfront-distribution-viewercertificate-sslsupportmethod)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-viewercertificate-syntax.yaml"></a>
 
-```yaml
-
-  AcmCertificateArn: String
-  CloudFrontDefaultCertificate: Boolean
-  IamCertificateId: String
-  MinimumProtocolVersion: String
-  SslSupportMethod: String
-
+```
+  [AcmCertificateArn](#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn): {{String}}
+  [CloudFrontDefaultCertificate](#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate): {{Boolean}}
+  [IamCertificateId](#cfn-cloudfront-distribution-viewercertificate-iamcertificateid): {{String}}
+  [MinimumProtocolVersion](#cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion): {{String}}
+  [SslSupportMethod](#cfn-cloudfront-distribution-viewercertificate-sslsupportmethod): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-viewercertificate-properties"></a>
 
-`AcmCertificateArn`
+`AcmCertificateArn`  <a name="cfn-cloudfront-distribution-viewercertificate-acmcertificatearn"></a>
+In CloudFormation, this field name is `AcmCertificateArn`. Note the different capitalization.
+If the distribution uses `Aliases` (alternate domain names or CNAMEs) and the SSL/TLS certificate is stored in [AWS Certificate Manager (ACM)](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html), provide the Amazon Resource Name (ARN) of the ACM certificate. CloudFront only supports ACM certificates in the US East (N. Virginia) Region (`us-east-1`).
+If you specify an ACM certificate ARN, you must also specify values for `MinimumProtocolVersion` and `SSLSupportMethod`. (In CloudFormation, the field name is `SslSupportMethod`. Note the different capitalization.)
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-###### Note
-
-In CloudFormation, this field name is `AcmCertificateArn`. Note the
-different capitalization.
-
-If the distribution uses `Aliases` (alternate domain names or CNAMEs) and
-the SSL/TLS certificate is stored in [AWS Certificate Manager (ACM)](../../../acm/latest/userguide/acm-overview.md), provide the Amazon Resource Name
-(ARN) of the ACM certificate. CloudFront only supports ACM certificates in the US East
-(N. Virginia) Region ( `us-east-1`).
-
-If you specify an ACM certificate ARN, you must also specify values for
-`MinimumProtocolVersion` and `SSLSupportMethod`. (In CloudFormation, the field name is `SslSupportMethod`. Note
-the different capitalization.)
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CloudFrontDefaultCertificate`
-
-If the distribution uses the CloudFront domain name such as
-`d111111abcdef8.cloudfront.net`, set this field to
-`true`.
-
+`CloudFrontDefaultCertificate`  <a name="cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate"></a>
+If the distribution uses the CloudFront domain name such as `d111111abcdef8.cloudfront.net`, set this field to `true`.
 If the distribution uses `Aliases` (alternate domain names or CNAMEs), omit this field and specify values for the following fields:
++ `AcmCertificateArn` or `IamCertificateId` (specify a value for one, not both)
++  `MinimumProtocolVersion`
++  `SslSupportMethod`
+*Required*: Conditional
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `AcmCertificateArn` or `IamCertificateId` (specify a
-value for one, not both)
+`IamCertificateId`  <a name="cfn-cloudfront-distribution-viewercertificate-iamcertificateid"></a>
+This field only supports standard distributions. You can't specify this field for multi-tenant distributions. For more information, see [Unsupported features for SaaS Manager for Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-config-options.html#unsupported-saas) in the *Amazon CloudFront Developer Guide*.
+In CloudFormation, this field name is `IamCertificateId`. Note the different capitalization.
+If the distribution uses `Aliases` (alternate domain names or CNAMEs) and the SSL/TLS certificate is stored in [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html), provide the ID of the IAM certificate.
+If you specify an IAM certificate ID, you must also specify values for `MinimumProtocolVersion` and `SSLSupportMethod`. (In CloudFormation, the field name is `SslSupportMethod`. Note the different capitalization.)
+*Required*: Conditional
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `MinimumProtocolVersion`
+`MinimumProtocolVersion`  <a name="cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion"></a>
+If the distribution uses `Aliases` (alternate domain names or CNAMEs), specify the security policy that you want CloudFront to use for HTTPS connections with viewers. The security policy determines two settings:
++ The minimum SSL/TLS protocol that CloudFront can use to communicate with viewers.
++ The ciphers that CloudFront can use to encrypt the content that it returns to viewers.
+For more information, see [Security Policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValues-security-policy) and [Supported Protocols and Ciphers Between Viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html#secure-connections-supported-ciphers) in the *Amazon CloudFront Developer Guide*.
+On the CloudFront console, this setting is called **Security Policy**.
+When you're using SNI only (you set `SSLSupportMethod` to `sni-only`), you must specify `TLSv1` or higher. (In CloudFormation, the field name is `SslSupportMethod`. Note the different capitalization.)
+If the distribution uses the CloudFront domain name such as `d111111abcdef8.cloudfront.net` (you set `CloudFrontDefaultCertificate` to `true`), CloudFront automatically sets the security policy to `TLSv1` regardless of the value that you set here.
+*Required*: Conditional
+*Type*: String
+*Allowed values*: `SSLv3 | TLSv1 | TLSv1_2016 | TLSv1.1_2016 | TLSv1.2_2018 | TLSv1.2_2019 | TLSv1.2_2021 | TLSv1.3_2025 | TLSv1.2_2025`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `SslSupportMethod`
-
-_Required_: Conditional
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IamCertificateId`
-
-###### Note
-
-This field only supports standard distributions. You can't specify this field for multi-tenant distributions. For more information, see [Unsupported features for SaaS Manager for Amazon CloudFront](../../../amazoncloudfront/latest/developerguide/distribution-config-options.md#unsupported-saas) in the _Amazon CloudFront Developer Guide_.
-
-###### Note
-
-In CloudFormation, this field name is `IamCertificateId`. Note the
-different capitalization.
-
-If the distribution uses `Aliases` (alternate domain names or CNAMEs) and
-the SSL/TLS certificate is stored in [AWS Identity and Access Management (IAM)](../../../iam/latest/userguide/id-credentials-server-certs.md), provide the ID of the IAM certificate.
-
-If you specify an IAM certificate ID, you must also specify values for
-`MinimumProtocolVersion` and `SSLSupportMethod`. (In CloudFormation, the field name is `SslSupportMethod`. Note
-the different capitalization.)
-
-_Required_: Conditional
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimumProtocolVersion`
-
-If the distribution uses `Aliases` (alternate domain names or CNAMEs),
-specify the security policy that you want CloudFront to use for HTTPS connections with
-viewers. The security policy determines two settings:
-
-- The minimum SSL/TLS protocol that CloudFront can use to communicate with
-viewers.
-
-- The ciphers that CloudFront can use to encrypt the content that it returns to
-viewers.
-
-For more information, see [Security Policy](../../../amazoncloudfront/latest/developerguide/distribution-web-values-specify.md#DownloadDistValues-security-policy) and [Supported Protocols and Ciphers Between Viewers and\
-CloudFront](../../../amazoncloudfront/latest/developerguide/secure-connections-supported-viewer-protocols-ciphers.md#secure-connections-supported-ciphers) in the _Amazon CloudFront Developer Guide_.
-
-###### Note
-
-On the CloudFront console, this setting is called **Security**
-**Policy**.
-
-When you're using SNI only (you set `SSLSupportMethod` to
-`sni-only`), you must specify `TLSv1` or higher. (In CloudFormation, the field name is `SslSupportMethod`. Note
-the different capitalization.)
-
-If the distribution uses the CloudFront domain name such as
-`d111111abcdef8.cloudfront.net` (you set
-`CloudFrontDefaultCertificate` to `true`), CloudFront automatically
-sets the security policy to `TLSv1` regardless of the value that you set
-here.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Allowed values_: `SSLv3 | TLSv1 | TLSv1_2016 | TLSv1.1_2016 | TLSv1.2_2018 | TLSv1.2_2019 | TLSv1.2_2021 | TLSv1.3_2025 | TLSv1.2_2025`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SslSupportMethod`
-
-###### Note
-
-In CloudFormation, this field name is `SslSupportMethod`. Note the
-different capitalization.
-
-If the distribution uses `Aliases` (alternate domain names or CNAMEs),
-specify which viewers the distribution accepts HTTPS connections from.
-
-- `sni-only` – The distribution accepts HTTPS connections from only
-viewers that support [server name\
-indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication). This is recommended. Most browsers and clients
-support SNI.
-
-- `vip` – The distribution accepts HTTPS connections from all viewers
-including those that don't support SNI. This is not recommended, and results in
-additional monthly charges from CloudFront.
-
-- `static-ip` \- Do not specify this value unless your distribution
-has been enabled for this feature by the CloudFront team. If you have a use case
-that requires static IP addresses for a distribution, contact CloudFront through
-the [Support Center](https://console.aws.amazon.com/support/home).
-
-If the distribution uses the CloudFront domain name such as
-`d111111abcdef8.cloudfront.net`, don't set a value for this field.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Allowed values_: `sni-only | vip | static-ip`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`SslSupportMethod`  <a name="cfn-cloudfront-distribution-viewercertificate-sslsupportmethod"></a>
+In CloudFormation, this field name is `SslSupportMethod`. Note the different capitalization.
+If the distribution uses `Aliases` (alternate domain names or CNAMEs), specify which viewers the distribution accepts HTTPS connections from.
++ `sni-only` – The distribution accepts HTTPS connections from only viewers that support [server name indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication). This is recommended. Most browsers and clients support SNI.
++ `vip` – The distribution accepts HTTPS connections from all viewers including those that don't support SNI. This is not recommended, and results in additional monthly charges from CloudFront.
++ `static-ip` - Do not specify this value unless your distribution has been enabled for this feature by the CloudFront team. If you have a use case that requires static IP addresses for a distribution, contact CloudFront through the [Support Center](https://console.aws.amazon.com/support/home).
+If the distribution uses the CloudFront domain name such as `d111111abcdef8.cloudfront.net`, don't set a value for this field.
+*Required*: Conditional
+*Type*: String
+*Allowed values*: `sni-only | vip | static-ip`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ViewerCertificate](../../../../reference/cloudfront/latest/apireference/api-viewercertificate.md) in the _Amazon CloudFront API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrustStoreConfig
-
-ViewerMtlsConfig
+<a name="aws-properties-cloudfront-distribution-viewercertificate--seealso"></a>
++ [ViewerCertificate](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ViewerCertificate.html) in the *Amazon CloudFront API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

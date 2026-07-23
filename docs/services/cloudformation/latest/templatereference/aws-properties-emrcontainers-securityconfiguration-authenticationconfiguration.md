@@ -2,66 +2,51 @@
 title: "AWS::EMRContainers::SecurityConfiguration AuthenticationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration AuthenticationConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration"></a>
 
-The `AuthenticationConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
+<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-description"></a>The `AuthenticationConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IAMConfiguration" : IAMConfiguration,
-  "IdentityCenterConfiguration" : IdentityCenterConfiguration
+  "[IAMConfiguration](#cfn-emrcontainers-securityconfiguration-authenticationconfiguration-iamconfiguration)" : {{IAMConfiguration}},
+  "[IdentityCenterConfiguration](#cfn-emrcontainers-securityconfiguration-authenticationconfiguration-identitycenterconfiguration)" : {{IdentityCenterConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IAMConfiguration:
-    IAMConfiguration
-  IdentityCenterConfiguration:
-    IdentityCenterConfiguration
-
+```
+  [IAMConfiguration](#cfn-emrcontainers-securityconfiguration-authenticationconfiguration-iamconfiguration): {{
+    IAMConfiguration}}
+  [IdentityCenterConfiguration](#cfn-emrcontainers-securityconfiguration-authenticationconfiguration-identitycenterconfiguration): {{
+    IdentityCenterConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-properties"></a>
 
-`IAMConfiguration`
-
+`IAMConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-authenticationconfiguration-iamconfiguration"></a>
 Property description not available.
+*Required*: No
+*Type*: [IAMConfiguration](aws-properties-emrcontainers-securityconfiguration-iamconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [IAMConfiguration](aws-properties-emrcontainers-securityconfiguration-iamconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IdentityCenterConfiguration`
-
+`IdentityCenterConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-authenticationconfiguration-identitycenterconfiguration"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [IdentityCenterConfiguration](aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AtRestEncryptionConfiguration
-
-AuthorizationConfiguration
+*Required*: No
+*Type*: [IdentityCenterConfiguration](aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

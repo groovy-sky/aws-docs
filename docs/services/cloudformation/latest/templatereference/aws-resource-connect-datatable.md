@@ -2,188 +2,135 @@
 title: "AWS::Connect::DataTable"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::DataTable
+<a name="aws-resource-connect-datatable"></a>
 
-Represents a data table in Amazon Connect. A data table is a JSON-like data structure where attributes and
-values are dynamically set by customers. Customers can reference table values within call flows, applications, views,
-and workspaces to pinpoint dynamic configuration that changes their contact center's behavior in a predetermined and
-safe way.
+Represents a data table in Amazon Connect. A data table is a JSON-like data structure where attributes and values are dynamically set by customers. Customers can reference table values within call flows, applications, views, and workspaces to pinpoint dynamic configuration that changes their contact center's behavior in a predetermined and safe way.
 
 ## Syntax
+<a name="aws-resource-connect-datatable-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-datatable-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::DataTable",
   "Properties" : {
-      "Description" : String,
-      "InstanceArn" : String,
-      "Name" : String,
-      "Status" : String,
-      "Tags" : [ Tag, ... ],
-      "TimeZone" : String,
-      "ValueLockLevel" : String
+      "[Description](#cfn-connect-datatable-description)" : {{String}},
+      "[InstanceArn](#cfn-connect-datatable-instancearn)" : {{String}},
+      "[Name](#cfn-connect-datatable-name)" : {{String}},
+      "[Status](#cfn-connect-datatable-status)" : {{String}},
+      "[Tags](#cfn-connect-datatable-tags)" : {{[ Tag, ... ]}},
+      "[TimeZone](#cfn-connect-datatable-timezone)" : {{String}},
+      "[ValueLockLevel](#cfn-connect-datatable-valuelocklevel)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-datatable-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::DataTable
 Properties:
-  Description: String
-  InstanceArn: String
-  Name: String
-  Status: String
-  Tags:
-    - Tag
-  TimeZone: String
-  ValueLockLevel: String
-
+  [Description](#cfn-connect-datatable-description): {{String}}
+  [InstanceArn](#cfn-connect-datatable-instancearn): {{String}}
+  [Name](#cfn-connect-datatable-name): {{String}}
+  [Status](#cfn-connect-datatable-status): {{String}}
+  [Tags](#cfn-connect-datatable-tags): {{
+    - Tag}}
+  [TimeZone](#cfn-connect-datatable-timezone): {{String}}
+  [ValueLockLevel](#cfn-connect-datatable-valuelocklevel): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-datatable-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-connect-datatable-description"></a>
 An optional description of the data table's purpose and contents.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\P{C} ]+$`
+*Minimum*: `0`
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\P{C}
-	]+$`
-
-_Minimum_: `0`
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-datatable-instancearn"></a>
 The Amazon Resource Name (ARN) of the instance.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`Name`  <a name="cfn-connect-datatable-name"></a>
+The human-readable name of the data table. Must be unique within the instance and conform to Connect naming standards.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\p{L}\p{Z}\p{N}\-_.:=@'|]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
-The human-readable name of the data table. Must be unique within the instance and conform to Connect naming
-standards.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\p{L}\p{Z}\p{N}\-_.:=@'|]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-connect-datatable-status"></a>
 The current status of the data table. One of PUBLISHED or SAVED.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PUBLISHED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PUBLISHED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-connect-datatable-tags"></a>
 Key-value pairs for attribute based access control (TBAC or ABAC) and organization.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-connect-datatable-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`TimeZone`  <a name="cfn-connect-datatable-timezone"></a>
+The IANA timezone identifier used when resolving time based dynamic values. Required even if no time slices are specified.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Tag](aws-properties-connect-datatable-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeZone`
-
-The IANA timezone identifier used when resolving time based dynamic values. Required even if no time slices are
-specified.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueLockLevel`
-
-The data level that concurrent value edits are locked on. One of DATA\_TABLE, PRIMARY\_VALUE, ATTRIBUTE, VALUE,
-and NONE. Determines how concurrent edits are handled when multiple users attempt to modify values
-simultaneously.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | DATA_TABLE | PRIMARY_VALUE | ATTRIBUTE | VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ValueLockLevel`  <a name="cfn-connect-datatable-valuelocklevel"></a>
+The data level that concurrent value edits are locked on. One of DATA\_TABLE, PRIMARY\_VALUE, ATTRIBUTE, VALUE, and NONE. Determines how concurrent edits are handled when multiple users attempt to modify values simultaneously.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NONE | DATA_TABLE | PRIMARY_VALUE | ATTRIBUTE | VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-connect-datatable-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-datatable-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-datatable-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-connect-datatable-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) for the data table. Does not include version aliases.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The timestamp when the data table was created.
 
-`LastModifiedRegion`
-
+`LastModifiedRegion`  <a name="LastModifiedRegion-fn::getatt"></a>
 The AWS Region where the data table was last modified, used for region replication.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The timestamp when the data table or any of its properties were last modified.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::ContactFlowVersion
-
-LockVersion
 
 All content copied from https://docs.aws.amazon.com/.

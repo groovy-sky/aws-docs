@@ -2,53 +2,42 @@
 title: "AWS::CloudFront::Distribution Definition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution Definition
+<a name="aws-properties-cloudfront-distribution-definition"></a>
 
-The `Definition` property type specifies Property description not available. for an [AWS::CloudFront::Distribution](aws-resource-cloudfront-distribution.md).
+<a name="aws-properties-cloudfront-distribution-definition-description"></a>The `Definition` property type specifies Property description not available. for an [AWS::CloudFront::Distribution](aws-resource-cloudfront-distribution.md).
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-definition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-definition-syntax.json"></a>
 
-```json
-
+```
 {
-  "StringSchema" : StringSchema
+  "[StringSchema](#cfn-cloudfront-distribution-definition-stringschema)" : {{StringSchema}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-definition-syntax.yaml"></a>
 
-```yaml
-
-  StringSchema:
-    StringSchema
-
+```
+  [StringSchema](#cfn-cloudfront-distribution-definition-stringschema): {{
+    StringSchema}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-definition-properties"></a>
 
-`StringSchema`
-
+`StringSchema`  <a name="cfn-cloudfront-distribution-definition-stringschema"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: [StringSchema](aws-properties-cloudfront-distribution-stringschema.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultCacheBehavior
-
-DistributionConfig
+*Required*: No
+*Type*: [StringSchema](aws-properties-cloudfront-distribution-stringschema.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

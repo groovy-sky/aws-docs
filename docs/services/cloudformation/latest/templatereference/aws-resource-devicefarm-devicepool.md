@@ -2,159 +2,118 @@
 title: "AWS::DeviceFarm::DevicePool"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DeviceFarm::DevicePool
+<a name="aws-resource-devicefarm-devicepool"></a>
 
 Represents a request to the create device pool operation.
 
 ## Syntax
+<a name="aws-resource-devicefarm-devicepool-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-devicefarm-devicepool-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DeviceFarm::DevicePool",
   "Properties" : {
-      "Description" : String,
-      "MaxDevices" : Integer,
-      "Name" : String,
-      "ProjectArn" : String,
-      "Rules" : [ Rule, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-devicefarm-devicepool-description)" : {{String}},
+      "[MaxDevices](#cfn-devicefarm-devicepool-maxdevices)" : {{Integer}},
+      "[Name](#cfn-devicefarm-devicepool-name)" : {{String}},
+      "[ProjectArn](#cfn-devicefarm-devicepool-projectarn)" : {{String}},
+      "[Rules](#cfn-devicefarm-devicepool-rules)" : {{[ Rule, ... ]}},
+      "[Tags](#cfn-devicefarm-devicepool-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-devicefarm-devicepool-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DeviceFarm::DevicePool
 Properties:
-  Description: String
-  MaxDevices: Integer
-  Name: String
-  ProjectArn: String
-  Rules:
-    - Rule
-  Tags:
-    - Tag
-
+  [Description](#cfn-devicefarm-devicepool-description): {{String}}
+  [MaxDevices](#cfn-devicefarm-devicepool-maxdevices): {{Integer}}
+  [Name](#cfn-devicefarm-devicepool-name): {{String}}
+  [ProjectArn](#cfn-devicefarm-devicepool-projectarn): {{String}}
+  [Rules](#cfn-devicefarm-devicepool-rules): {{
+    - Rule}}
+  [Tags](#cfn-devicefarm-devicepool-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-devicefarm-devicepool-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-devicefarm-devicepool-description"></a>
 The device pool's description.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `16384`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MaxDevices`  <a name="cfn-devicefarm-devicepool-maxdevices"></a>
+The number of devices that Device Farm can add to your device pool. Device Farm adds devices that are available and meet the criteria that you assign for the `rules` parameter. Depending on how many devices meet these constraints, your device pool might contain fewer devices than the value for this parameter.
+By specifying the maximum number of devices, you can control the costs that you incur by running tests.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `16384`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxDevices`
-
-The number of devices that Device Farm can add to your device pool. Device Farm adds devices that are
-available and meet the criteria that you assign for the `rules` parameter. Depending on how many
-devices meet these constraints, your device pool might contain fewer devices than the value for this
-parameter.
-
-By specifying the maximum number of devices, you can control the costs that you incur
-by running tests.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-devicefarm-devicepool-name"></a>
 The device pool's name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProjectArn`
-
+`ProjectArn`  <a name="cfn-devicefarm-devicepool-projectarn"></a>
 The ARN of the project for the device pool.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.+`
+*Minimum*: `32`
+*Maximum*: `1011`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.+`
-
-_Minimum_: `32`
-
-_Maximum_: `1011`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Rules`
-
+`Rules`  <a name="cfn-devicefarm-devicepool-rules"></a>
 The device pool's rules.
+*Required*: Yes
+*Type*: Array of [Rule](aws-properties-devicefarm-devicepool-rule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Rule](aws-properties-devicefarm-devicepool-rule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-devicefarm-devicepool-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md) in the
-_AWS CloudFormation guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-devicefarm-devicepool-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) in the *AWS CloudFormation guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-devicefarm-devicepool-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-devicefarm-devicepool-return-values"></a>
 
 ### Ref
+<a name="aws-resource-devicefarm-devicepool-return-values-ref"></a>
 
 Not supported for this resource.
 
 ### Fn::GetAtt
+<a name="aws-resource-devicefarm-devicepool-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-devicefarm-devicepool-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the device pool. See [Amazon resource names](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the
-_General Reference guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Device Farm
-
-Rule
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the device pool. See [Amazon resource names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *General Reference guide*.
 
 All content copied from https://docs.aws.amazon.com/.

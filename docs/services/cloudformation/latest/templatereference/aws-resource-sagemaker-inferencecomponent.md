@@ -2,214 +2,156 @@
 title: "AWS::SageMaker::InferenceComponent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceComponent
+<a name="aws-resource-sagemaker-inferencecomponent"></a>
 
-Creates an inference component, which is a SageMaker AI hosting object that you can
-use to deploy a model to an endpoint. In the inference component settings, you specify the
-model, the endpoint, and how the model utilizes the resources that the endpoint hosts. You
-can optimize resource utilization by tailoring how the required CPU cores, accelerators,
-and memory are allocated. You can deploy multiple inference components to an endpoint,
-where each inference component contains one model and the resource utilization needs for
-that individual model. After you deploy an inference component, you can directly invoke the
-associated model when you use the InvokeEndpoint API action.
+Creates an inference component, which is a SageMaker AI hosting object that you can use to deploy a model to an endpoint. In the inference component settings, you specify the model, the endpoint, and how the model utilizes the resources that the endpoint hosts. You can optimize resource utilization by tailoring how the required CPU cores, accelerators, and memory are allocated. You can deploy multiple inference components to an endpoint, where each inference component contains one model and the resource utilization needs for that individual model. After you deploy an inference component, you can directly invoke the associated model when you use the InvokeEndpoint API action.
 
 ## Syntax
+<a name="aws-resource-sagemaker-inferencecomponent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-inferencecomponent-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::InferenceComponent",
   "Properties" : {
-      "DeploymentConfig" : InferenceComponentDeploymentConfig,
-      "EndpointArn" : String,
-      "EndpointName" : String,
-      "InferenceComponentName" : String,
-      "RuntimeConfig" : InferenceComponentRuntimeConfig,
-      "Specification" : InferenceComponentSpecification,
-      "Tags" : [ Tag, ... ],
-      "VariantName" : String
+      "[DeploymentConfig](#cfn-sagemaker-inferencecomponent-deploymentconfig)" : {{InferenceComponentDeploymentConfig}},
+      "[EndpointArn](#cfn-sagemaker-inferencecomponent-endpointarn)" : {{String}},
+      "[EndpointName](#cfn-sagemaker-inferencecomponent-endpointname)" : {{String}},
+      "[InferenceComponentName](#cfn-sagemaker-inferencecomponent-inferencecomponentname)" : {{String}},
+      "[RuntimeConfig](#cfn-sagemaker-inferencecomponent-runtimeconfig)" : {{InferenceComponentRuntimeConfig}},
+      "[Specification](#cfn-sagemaker-inferencecomponent-specification)" : {{InferenceComponentSpecification}},
+      "[Tags](#cfn-sagemaker-inferencecomponent-tags)" : {{[ Tag, ... ]}},
+      "[VariantName](#cfn-sagemaker-inferencecomponent-variantname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-inferencecomponent-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::InferenceComponent
 Properties:
-  DeploymentConfig:
-    InferenceComponentDeploymentConfig
-  EndpointArn: String
-  EndpointName: String
-  InferenceComponentName: String
-  RuntimeConfig:
-    InferenceComponentRuntimeConfig
-  Specification:
-    InferenceComponentSpecification
-  Tags:
-    - Tag
-  VariantName: String
-
+  [DeploymentConfig](#cfn-sagemaker-inferencecomponent-deploymentconfig): {{
+    InferenceComponentDeploymentConfig}}
+  [EndpointArn](#cfn-sagemaker-inferencecomponent-endpointarn): {{String}}
+  [EndpointName](#cfn-sagemaker-inferencecomponent-endpointname): {{String}}
+  [InferenceComponentName](#cfn-sagemaker-inferencecomponent-inferencecomponentname): {{String}}
+  [RuntimeConfig](#cfn-sagemaker-inferencecomponent-runtimeconfig): {{
+    InferenceComponentRuntimeConfig}}
+  [Specification](#cfn-sagemaker-inferencecomponent-specification): {{
+    InferenceComponentSpecification}}
+  [Tags](#cfn-sagemaker-inferencecomponent-tags): {{
+    - Tag}}
+  [VariantName](#cfn-sagemaker-inferencecomponent-variantname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-inferencecomponent-properties"></a>
 
-`DeploymentConfig`
+`DeploymentConfig`  <a name="cfn-sagemaker-inferencecomponent-deploymentconfig"></a>
+The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations.
+*Required*: No
+*Type*: [InferenceComponentDeploymentConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The deployment configuration for an endpoint, which contains the desired deployment
-strategy and rollback configurations.
-
-_Required_: No
-
-_Type_: [InferenceComponentDeploymentConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndpointArn`
-
+`EndpointArn`  <a name="cfn-sagemaker-inferencecomponent-endpointarn"></a>
 The Amazon Resource Name (ARN) of the endpoint that hosts the inference component.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndpointName`
-
+`EndpointName`  <a name="cfn-sagemaker-inferencecomponent-endpointname"></a>
 The name of the endpoint that hosts the inference component.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InferenceComponentName`
-
+`InferenceComponentName`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentname"></a>
 The name of the inference component.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuntimeConfig`
-
+`RuntimeConfig`  <a name="cfn-sagemaker-inferencecomponent-runtimeconfig"></a>
 Runtime settings for the inference component, including the number of copies to deploy.
+*Required*: No
+*Type*: [InferenceComponentRuntimeConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [InferenceComponentRuntimeConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentruntimeconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Specification`
-
+`Specification`  <a name="cfn-sagemaker-inferencecomponent-specification"></a>
 The specification for the inference component, including the model and container configuration.
+*Required*: Yes
+*Type*: [InferenceComponentSpecification](aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [InferenceComponentSpecification](aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-inferencecomponent-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-inferencecomponent-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-inferencecomponent-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VariantName`
-
+`VariantName`  <a name="cfn-sagemaker-inferencecomponent-variantname"></a>
 The name of the production variant that hosts the inference component.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sagemaker-inferencecomponent-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-inferencecomponent-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the inference component.
+ When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the inference component.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-inferencecomponent-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-sagemaker-inferencecomponent-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time when the inference component was created.
 
-`FailureReason`
-
+`FailureReason`  <a name="FailureReason-fn::getatt"></a>
 The reason why the inference component failed, if applicable.
 
-`InferenceComponentArn`
-
+`InferenceComponentArn`  <a name="InferenceComponentArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the inference component.
 
-`InferenceComponentStatus`
-
+`InferenceComponentStatus`  <a name="InferenceComponentStatus-fn::getatt"></a>
 The status of the inference component.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The time when the inference component was last updated.
 
-`RuntimeConfig.CurrentCopyCount`
-
+`RuntimeConfig.CurrentCopyCount`  <a name="RuntimeConfig.CurrentCopyCount-fn::getatt"></a>
 The number of runtime copies of the model container that are currently deployed.
 
-`RuntimeConfig.DesiredCopyCount`
-
-The number of runtime copies of the model container that you requested to deploy with
-the inference component.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SageMaker::ImageVersion
-
-Alarm
+`RuntimeConfig.DesiredCopyCount`  <a name="RuntimeConfig.DesiredCopyCount-fn::getatt"></a>
+The number of runtime copies of the model container that you requested to deploy with the inference component.
 
 All content copied from https://docs.aws.amazon.com/.

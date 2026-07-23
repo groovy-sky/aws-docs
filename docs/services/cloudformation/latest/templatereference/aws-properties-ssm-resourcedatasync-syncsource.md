@@ -2,98 +2,69 @@
 title: "AWS::SSM::ResourceDataSync SyncSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::ResourceDataSync SyncSource
+<a name="aws-properties-ssm-resourcedatasync-syncsource"></a>
 
 Information about the source of the data included in the resource data sync.
 
 ## Syntax
+<a name="aws-properties-ssm-resourcedatasync-syncsource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-resourcedatasync-syncsource-syntax.json"></a>
 
-```json
-
+```
 {
-  "AwsOrganizationsSource" : AwsOrganizationsSource,
-  "IncludeFutureRegions" : Boolean,
-  "SourceRegions" : [ String, ... ],
-  "SourceType" : String
+  "[AwsOrganizationsSource](#cfn-ssm-resourcedatasync-syncsource-awsorganizationssource)" : {{AwsOrganizationsSource}},
+  "[IncludeFutureRegions](#cfn-ssm-resourcedatasync-syncsource-includefutureregions)" : {{Boolean}},
+  "[SourceRegions](#cfn-ssm-resourcedatasync-syncsource-sourceregions)" : {{[ String, ... ]}},
+  "[SourceType](#cfn-ssm-resourcedatasync-syncsource-sourcetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-resourcedatasync-syncsource-syntax.yaml"></a>
 
-```yaml
-
-  AwsOrganizationsSource:
-    AwsOrganizationsSource
-  IncludeFutureRegions: Boolean
-  SourceRegions:
-    - String
-  SourceType: String
-
+```
+  [AwsOrganizationsSource](#cfn-ssm-resourcedatasync-syncsource-awsorganizationssource): {{
+    AwsOrganizationsSource}}
+  [IncludeFutureRegions](#cfn-ssm-resourcedatasync-syncsource-includefutureregions): {{Boolean}}
+  [SourceRegions](#cfn-ssm-resourcedatasync-syncsource-sourceregions): {{
+    - String}}
+  [SourceType](#cfn-ssm-resourcedatasync-syncsource-sourcetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-resourcedatasync-syncsource-properties"></a>
 
-`AwsOrganizationsSource`
+`AwsOrganizationsSource`  <a name="cfn-ssm-resourcedatasync-syncsource-awsorganizationssource"></a>
+Information about the AwsOrganizationsSource resource data sync source. A sync source of this type can synchronize data from AWS Organizations.
+*Required*: No
+*Type*: [AwsOrganizationsSource](aws-properties-ssm-resourcedatasync-awsorganizationssource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about the AwsOrganizationsSource resource data sync source. A sync source
-of this type can synchronize data from AWS Organizations.
+`IncludeFutureRegions`  <a name="cfn-ssm-resourcedatasync-syncsource-includefutureregions"></a>
+Whether to automatically synchronize and aggregate data from new AWS Regions when those Regions come online.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`SourceRegions`  <a name="cfn-ssm-resourcedatasync-syncsource-sourceregions"></a>
+The `SyncSource`AWS Regions included in the resource data sync.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AwsOrganizationsSource](aws-properties-ssm-resourcedatasync-awsorganizationssource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeFutureRegions`
-
-Whether to automatically synchronize and aggregate data from new AWS Regions when those
-Regions come online.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceRegions`
-
-The `SyncSource` AWS Regions included in the resource data sync.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceType`
-
-The type of data source for the resource data sync. `SourceType` is either
-`AwsOrganizations` (if an organization is present in AWS Organizations) or
-`SingleAccountMultiRegions`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Destination
-
-AWS::SSM::ResourcePolicy
+`SourceType`  <a name="cfn-ssm-resourcedatasync-syncsource-sourcetype"></a>
+The type of data source for the resource data sync. `SourceType` is either `AwsOrganizations` (if an organization is present in AWS Organizations) or `SingleAccountMultiRegions`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

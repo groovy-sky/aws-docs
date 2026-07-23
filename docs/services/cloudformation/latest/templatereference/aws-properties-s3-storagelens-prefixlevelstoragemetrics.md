@@ -2,68 +2,50 @@
 title: "AWS::S3::StorageLens PrefixLevelStorageMetrics"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens PrefixLevelStorageMetrics
+<a name="aws-properties-s3-storagelens-prefixlevelstoragemetrics"></a>
 
-This resource contains the details of the prefix-level storage metrics for Amazon S3
-Storage Lens.
+This resource contains the details of the prefix-level storage metrics for Amazon S3 Storage Lens.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-prefixlevelstoragemetrics-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-prefixlevelstoragemetrics-syntax.json"></a>
 
-```json
-
+```
 {
-  "IsEnabled" : Boolean,
-  "SelectionCriteria" : SelectionCriteria
+  "[IsEnabled](#cfn-s3-storagelens-prefixlevelstoragemetrics-isenabled)" : {{Boolean}},
+  "[SelectionCriteria](#cfn-s3-storagelens-prefixlevelstoragemetrics-selectioncriteria)" : {{SelectionCriteria}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-prefixlevelstoragemetrics-syntax.yaml"></a>
 
-```yaml
-
-  IsEnabled: Boolean
-  SelectionCriteria:
-    SelectionCriteria
-
+```
+  [IsEnabled](#cfn-s3-storagelens-prefixlevelstoragemetrics-isenabled): {{Boolean}}
+  [SelectionCriteria](#cfn-s3-storagelens-prefixlevelstoragemetrics-selectioncriteria): {{
+    SelectionCriteria}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-prefixlevelstoragemetrics-properties"></a>
 
-`IsEnabled`
+`IsEnabled`  <a name="cfn-s3-storagelens-prefixlevelstoragemetrics-isenabled"></a>
+This property identifies whether the details of the prefix-level storage metrics for S3 Storage Lens are enabled.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-This property identifies whether the details of the prefix-level storage metrics for S3
-Storage Lens are enabled.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectionCriteria`
-
-This property identifies whether the details of the prefix-level storage metrics for S3
-Storage Lens are enabled.
-
-_Required_: No
-
-_Type_: [SelectionCriteria](aws-properties-s3-storagelens-selectioncriteria.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrefixLevel
-
-S3BucketDestination
+`SelectionCriteria`  <a name="cfn-s3-storagelens-prefixlevelstoragemetrics-selectioncriteria"></a>
+This property identifies whether the details of the prefix-level storage metrics for S3 Storage Lens are enabled.
+*Required*: No
+*Type*: [SelectionCriteria](aws-properties-s3-storagelens-selectioncriteria.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

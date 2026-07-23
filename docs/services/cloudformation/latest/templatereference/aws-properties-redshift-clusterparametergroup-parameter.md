@@ -2,69 +2,51 @@
 title: "AWS::Redshift::ClusterParameterGroup Parameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::ClusterParameterGroup Parameter
+<a name="aws-properties-redshift-clusterparametergroup-parameter"></a>
 
 Describes a parameter in a cluster parameter group.
 
 ## Syntax
+<a name="aws-properties-redshift-clusterparametergroup-parameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshift-clusterparametergroup-parameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParameterName" : String,
-  "ParameterValue" : String
+  "[ParameterName](#cfn-redshift-clusterparametergroup-parameter-parametername)" : {{String}},
+  "[ParameterValue](#cfn-redshift-clusterparametergroup-parameter-parametervalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshift-clusterparametergroup-parameter-syntax.yaml"></a>
 
-```yaml
-
-  ParameterName: String
-  ParameterValue: String
-
+```
+  [ParameterName](#cfn-redshift-clusterparametergroup-parameter-parametername): {{String}}
+  [ParameterValue](#cfn-redshift-clusterparametergroup-parameter-parametervalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-redshift-clusterparametergroup-parameter-properties"></a>
 
-`ParameterName`
-
+`ParameterName`  <a name="cfn-redshift-clusterparametergroup-parameter-parametername"></a>
 The name of the parameter.
+*Required*: Yes
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValue`
-
-The value of the parameter. If `ParameterName` is `wlm_json_configuration`,
-then the maximum size of `ParameterValue` is 8000 characters.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `2147483647`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Redshift::ClusterParameterGroup
-
-Tag
+`ParameterValue`  <a name="cfn-redshift-clusterparametergroup-parameter-parametervalue"></a>
+The value of the parameter. If `ParameterName` is `wlm_json_configuration`, then the maximum size of `ParameterValue` is 8000 characters.
+*Required*: Yes
+*Type*: String
+*Maximum*: `2147483647`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

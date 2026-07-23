@@ -2,77 +2,58 @@
 title: "AWS::MediaConnect::FlowOutput DestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::FlowOutput DestinationConfiguration
+<a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration"></a>
 
-The transport parameters that you want to associate with an outbound media stream.
+ The transport parameters that you want to associate with an outbound media stream.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationIp" : String,
-  "DestinationPort" : Integer,
-  "Interface" : Interface
+  "[DestinationIp](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationip)" : {{String}},
+  "[DestinationPort](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationport)" : {{Integer}},
+  "[Interface](#cfn-mediaconnect-flowoutput-destinationconfiguration-interface)" : {{Interface}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DestinationIp: String
-  DestinationPort: Integer
-  Interface:
-    Interface
-
+```
+  [DestinationIp](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationip): {{String}}
+  [DestinationPort](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationport): {{Integer}}
+  [Interface](#cfn-mediaconnect-flowoutput-destinationconfiguration-interface): {{
+    Interface}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration-properties"></a>
 
-`DestinationIp`
-
+`DestinationIp`  <a name="cfn-mediaconnect-flowoutput-destinationconfiguration-destinationip"></a>
 The IP address where you want MediaConnect to send contents of the media stream.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`DestinationPort`  <a name="cfn-mediaconnect-flowoutput-destinationconfiguration-destinationport"></a>
+ The port that you want MediaConnect to use when it distributes the media stream to the output.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationPort`
-
-The port that you want MediaConnect to use when it distributes the media stream to the output.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interface`
-
-The VPC interface that you want to use for the media stream associated with the output.
-
-_Required_: Yes
-
-_Type_: [Interface](aws-properties-mediaconnect-flowoutput-interface.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaConnect::FlowOutput
-
-EncodingParameters
+`Interface`  <a name="cfn-mediaconnect-flowoutput-destinationconfiguration-interface"></a>
+ The VPC interface that you want to use for the media stream associated with the output.
+*Required*: Yes
+*Type*: [Interface](aws-properties-mediaconnect-flowoutput-interface.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

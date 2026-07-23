@@ -2,191 +2,148 @@
 title: "AWS::SSO::Application"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSO::Application
+<a name="aws-resource-sso-application"></a>
 
-Creates an OAuth 2.0 customer managed application in IAM Identity Center for the given
-application provider.
+Creates an OAuth 2.0 customer managed application in IAM Identity Center for the given application provider.
 
-###### Note
-
-This API does not support creating SAML 2.0 customer managed applications or AWS
-managed applications. To learn how to create an AWS managed application, see the
-application user guide. You can create a SAML 2.0 customer managed application in
-the AWS Management Console only. See [Setting\
-up customer managed SAML 2.0 applications](../../../singlesignon/latest/userguide/customermanagedapps-saml2-setup.md). For more information on these
-application types, see [AWS managed\
-applications](../../../singlesignon/latest/userguide/awsapps.md).
+**Note**
+This API does not support creating SAML 2.0 customer managed applications or AWS managed applications. To learn how to create an AWS managed application, see the application user guide. You can create a SAML 2.0 customer managed application in the AWS Management Console only. See [Setting up customer managed SAML 2.0 applications](https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-setup.html). For more information on these application types, see [AWS managed applications](https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps.html).
 
 ## Syntax
+<a name="aws-resource-sso-application-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sso-application-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSO::Application",
   "Properties" : {
-      "ApplicationProviderArn" : String,
-      "Description" : String,
-      "InstanceArn" : String,
-      "Name" : String,
-      "PortalOptions" : PortalOptionsConfiguration,
-      "Status" : String,
-      "Tags" : [ Tag, ... ]
+      "[ApplicationProviderArn](#cfn-sso-application-applicationproviderarn)" : {{String}},
+      "[Description](#cfn-sso-application-description)" : {{String}},
+      "[InstanceArn](#cfn-sso-application-instancearn)" : {{String}},
+      "[Name](#cfn-sso-application-name)" : {{String}},
+      "[PortalOptions](#cfn-sso-application-portaloptions)" : {{PortalOptionsConfiguration}},
+      "[Status](#cfn-sso-application-status)" : {{String}},
+      "[Tags](#cfn-sso-application-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sso-application-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSO::Application
 Properties:
-  ApplicationProviderArn: String
-  Description: String
-  InstanceArn: String
-  Name: String
-  PortalOptions:
-    PortalOptionsConfiguration
-  Status: String
-  Tags:
-    - Tag
-
+  [ApplicationProviderArn](#cfn-sso-application-applicationproviderarn): {{String}}
+  [Description](#cfn-sso-application-description): {{String}}
+  [InstanceArn](#cfn-sso-application-instancearn): {{String}}
+  [Name](#cfn-sso-application-name): {{String}}
+  [PortalOptions](#cfn-sso-application-portaloptions): {{
+    PortalOptionsConfiguration}}
+  [Status](#cfn-sso-application-status): {{String}}
+  [Tags](#cfn-sso-application-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-sso-application-properties"></a>
 
-`ApplicationProviderArn`
-
+`ApplicationProviderArn`  <a name="cfn-sso-application-applicationproviderarn"></a>
 The ARN of the application provider for this application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[a-z]{1,5}){0,3}:sso::aws:applicationProvider/[a-zA-Z0-9-/]+$`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[a-z]{1,5}){0,3}:sso::aws:applicationProvider/[a-zA-Z0-9-/]+$`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Description`
-
+`Description`  <a name="cfn-sso-application-description"></a>
 The description of the application.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-sso-application-instancearn"></a>
 The ARN of the instance of IAM Identity Center that is configured with this application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws(-[a-z]{1,5}){0,3}:sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
+*Minimum*: `10`
+*Maximum*: `1224`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[a-z]{1,5}){0,3}:sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
-
-_Minimum_: `10`
-
-_Maximum_: `1224`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-sso-application-name"></a>
 The name of the application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w+=,.@-]+$`
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`PortalOptions`  <a name="cfn-sso-application-portaloptions"></a>
+A structure that describes the options for the access portal associated with this application.
+*Required*: No
+*Type*: [PortalOptionsConfiguration](aws-properties-sso-application-portaloptionsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `^[\w+=,.@-]+$`
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PortalOptions`
-
-A structure that describes the options for the access portal associated with this
-application.
-
-_Required_: No
-
-_Type_: [PortalOptionsConfiguration](aws-properties-sso-application-portaloptionsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-sso-application-status"></a>
 The current status of the application in this instance of IAM Identity Center.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-sso-application-tags"></a>
 Specifies tags to be attached to the application.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sso-application-tag.md)
-
-_Maximum_: `75`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sso-application-tag.md)
+*Maximum*: `75`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-sso-application-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sso-application-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, combined by all fields with the delimiter
-`|`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a generated ID, combined by all fields with the delimiter `|`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sso-application-return-values-fn--getatt"></a>
 
-`ApplicationArn`
+####
+<a name="aws-resource-sso-application-return-values-fn--getatt-fn--getatt"></a>
 
+`ApplicationArn`  <a name="ApplicationArn-fn::getatt"></a>
 The ARN of the application.
 
+`IdentityStoreArn`  <a name="IdentityStoreArn-fn::getatt"></a>
+The ARN of the identity store that is connected to the instance of IAM Identity Center.
+
 ## Examples
+<a name="aws-resource-sso-application--examples"></a>
 
 ### Creating an application in IAM Identity Center
+<a name="aws-resource-sso-application--examples--Creating_an_application_in"></a>
 
-The following example creates a new custom application with an Application URL
-sign-in option.
+The following example creates a new custom application with an Application URL sign-in option.
 
 #### JSON
+<a name="aws-resource-sso-application--examples--Creating_an_application_in--json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSO::Application",
   "Properties" : {
@@ -213,9 +170,9 @@ sign-in option.
 ```
 
 #### YAML
+<a name="aws-resource-sso-application--examples--Creating_an_application_in--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSO::Application
 Properties:
   ApplicationProviderArn: arn:sso::aws:applicationProvider/example
@@ -232,11 +189,5 @@ Properties:
   - Key: tagKey
     Value: tagValue
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS IAM Identity Center
-
-PortalOptionsConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

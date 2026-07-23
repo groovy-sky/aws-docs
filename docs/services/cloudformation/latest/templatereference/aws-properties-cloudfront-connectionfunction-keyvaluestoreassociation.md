@@ -2,58 +2,44 @@
 title: "AWS::CloudFront::ConnectionFunction KeyValueStoreAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ConnectionFunction KeyValueStoreAssociation
+<a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation"></a>
 
 The key value store association.
 
 ## Syntax
+<a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation-syntax.json"></a>
 
-```json
-
+```
 {
-  "KeyValueStoreARN" : String
+  "[KeyValueStoreARN](#cfn-cloudfront-connectionfunction-keyvaluestoreassociation-keyvaluestorearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation-syntax.yaml"></a>
 
-```yaml
-
-  KeyValueStoreARN: String
-
+```
+  [KeyValueStoreARN](#cfn-cloudfront-connectionfunction-keyvaluestoreassociation-keyvaluestorearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation-properties"></a>
 
-`KeyValueStoreARN`
-
+`KeyValueStoreARN`  <a name="cfn-cloudfront-connectionfunction-keyvaluestoreassociation-keyvaluestorearn"></a>
 The Amazon Resource Name (ARN) of the key value store association.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws:cloudfront::[0-9]{12}:key-value-store\/[0-9a-fA-F-]{36}`
-
-_Minimum_: `0`
-
-_Maximum_: `85`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectionFunctionConfig
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws:cloudfront::[0-9]{12}:key-value-store\/[0-9a-fA-F-]{36}`
+*Minimum*: `0`
+*Maximum*: `85`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

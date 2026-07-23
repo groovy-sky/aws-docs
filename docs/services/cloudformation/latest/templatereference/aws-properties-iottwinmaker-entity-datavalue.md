@@ -2,170 +2,119 @@
 title: "AWS::IoTTwinMaker::Entity DataValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::Entity DataValue
+<a name="aws-properties-iottwinmaker-entity-datavalue"></a>
 
 An object that specifies a value for a property.
 
 ## Syntax
+<a name="aws-properties-iottwinmaker-entity-datavalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iottwinmaker-entity-datavalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "BooleanValue" : Boolean,
-  "DoubleValue" : Number,
-  "Expression" : String,
-  "IntegerValue" : Integer,
-  "ListValue" : [ DataValue, ... ],
-  "LongValue" : Number,
-  "MapValue" : {Key: Value, ...},
-  "RelationshipValue" : RelationshipValue,
-  "StringValue" : String
+  "[BooleanValue](#cfn-iottwinmaker-entity-datavalue-booleanvalue)" : {{Boolean}},
+  "[DoubleValue](#cfn-iottwinmaker-entity-datavalue-doublevalue)" : {{Number}},
+  "[Expression](#cfn-iottwinmaker-entity-datavalue-expression)" : {{String}},
+  "[IntegerValue](#cfn-iottwinmaker-entity-datavalue-integervalue)" : {{Integer}},
+  "[ListValue](#cfn-iottwinmaker-entity-datavalue-listvalue)" : {{[ DataValue, ... ]}},
+  "[LongValue](#cfn-iottwinmaker-entity-datavalue-longvalue)" : {{Number}},
+  "[MapValue](#cfn-iottwinmaker-entity-datavalue-mapvalue)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[RelationshipValue](#cfn-iottwinmaker-entity-datavalue-relationshipvalue)" : {{RelationshipValue}},
+  "[StringValue](#cfn-iottwinmaker-entity-datavalue-stringvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iottwinmaker-entity-datavalue-syntax.yaml"></a>
 
-```yaml
-
-  BooleanValue:
-    Boolean
-  DoubleValue: Number
-  Expression: String
-  IntegerValue:
-    Integer
-  ListValue:
-    - DataValue
-  LongValue: Number
-  MapValue:
-    Key: Value
-  RelationshipValue:
-    RelationshipValue
-  StringValue:
-    String
-
+```
+  [BooleanValue](#cfn-iottwinmaker-entity-datavalue-booleanvalue): {{
+    Boolean}}
+  [DoubleValue](#cfn-iottwinmaker-entity-datavalue-doublevalue): {{Number}}
+  [Expression](#cfn-iottwinmaker-entity-datavalue-expression): {{String}}
+  [IntegerValue](#cfn-iottwinmaker-entity-datavalue-integervalue): {{
+    Integer}}
+  [ListValue](#cfn-iottwinmaker-entity-datavalue-listvalue): {{
+    - DataValue}}
+  [LongValue](#cfn-iottwinmaker-entity-datavalue-longvalue): {{Number}}
+  [MapValue](#cfn-iottwinmaker-entity-datavalue-mapvalue): {{
+    {{Key}}: {{Value}}}}
+  [RelationshipValue](#cfn-iottwinmaker-entity-datavalue-relationshipvalue): {{
+    RelationshipValue}}
+  [StringValue](#cfn-iottwinmaker-entity-datavalue-stringvalue): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-iottwinmaker-entity-datavalue-properties"></a>
 
-`BooleanValue`
-
+`BooleanValue`  <a name="cfn-iottwinmaker-entity-datavalue-booleanvalue"></a>
 A boolean value.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DoubleValue`
-
+`DoubleValue`  <a name="cfn-iottwinmaker-entity-datavalue-doublevalue"></a>
 A double value.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Expression`
-
+`Expression`  <a name="cfn-iottwinmaker-entity-datavalue-expression"></a>
 An expression that produces the value.
+*Required*: No
+*Type*: String
+*Pattern*: `(^\$\{Parameters\.[a-zA-z]+([a-zA-z_0-9]*)}$)`
+*Minimum*: `1`
+*Maximum*: `316`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(^\$\{Parameters\.[a-zA-z]+([a-zA-z_0-9]*)}$)`
-
-_Minimum_: `1`
-
-_Maximum_: `316`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegerValue`
-
+`IntegerValue`  <a name="cfn-iottwinmaker-entity-datavalue-integervalue"></a>
 An integer value.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ListValue`
-
+`ListValue`  <a name="cfn-iottwinmaker-entity-datavalue-listvalue"></a>
 A list of multiple values.
+*Required*: No
+*Type*: Array of [DataValue](#aws-properties-iottwinmaker-entity-datavalue)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DataValue](aws-properties-iottwinmaker-entity-datavalue.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LongValue`
-
+`LongValue`  <a name="cfn-iottwinmaker-entity-datavalue-longvalue"></a>
 A long value.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MapValue`
-
+`MapValue`  <a name="cfn-iottwinmaker-entity-datavalue-mapvalue"></a>
 An object that maps strings to multiple DataValue objects.
+*Required*: No
+*Type*: Object of [DataValue](#aws-properties-iottwinmaker-entity-datavalue)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of [DataValue](aws-properties-iottwinmaker-entity-datavalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelationshipValue`
-
+`RelationshipValue`  <a name="cfn-iottwinmaker-entity-datavalue-relationshipvalue"></a>
 A value that relates a component to another component.
+*Required*: No
+*Type*: [RelationshipValue](aws-properties-iottwinmaker-entity-relationshipvalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RelationshipValue](aws-properties-iottwinmaker-entity-relationshipvalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringValue`
-
+`StringValue`  <a name="cfn-iottwinmaker-entity-datavalue-stringvalue"></a>
 A string value.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataType
-
-Definition
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard DefaultInteractiveLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DefaultInteractiveLayoutConfiguration
+<a name="aws-properties-quicksight-dashboard-defaultinteractivelayoutconfiguration"></a>
 
 The options that determine the default settings for interactive layout configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-defaultinteractivelayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-defaultinteractivelayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FreeForm" : DefaultFreeFormLayoutConfiguration,
-  "Grid" : DefaultGridLayoutConfiguration
+  "[FreeForm](#cfn-quicksight-dashboard-defaultinteractivelayoutconfiguration-freeform)" : {{DefaultFreeFormLayoutConfiguration}},
+  "[Grid](#cfn-quicksight-dashboard-defaultinteractivelayoutconfiguration-grid)" : {{DefaultGridLayoutConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-defaultinteractivelayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FreeForm:
-    DefaultFreeFormLayoutConfiguration
-  Grid:
-    DefaultGridLayoutConfiguration
-
+```
+  [FreeForm](#cfn-quicksight-dashboard-defaultinteractivelayoutconfiguration-freeform): {{
+    DefaultFreeFormLayoutConfiguration}}
+  [Grid](#cfn-quicksight-dashboard-defaultinteractivelayoutconfiguration-grid): {{
+    DefaultGridLayoutConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-defaultinteractivelayoutconfiguration-properties"></a>
 
-`FreeForm`
-
+`FreeForm`  <a name="cfn-quicksight-dashboard-defaultinteractivelayoutconfiguration-freeform"></a>
 The options that determine the default settings of a free-form layout configuration.
+*Required*: No
+*Type*: [DefaultFreeFormLayoutConfiguration](aws-properties-quicksight-dashboard-defaultfreeformlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFreeFormLayoutConfiguration](aws-properties-quicksight-dashboard-defaultfreeformlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Grid`
-
+`Grid`  <a name="cfn-quicksight-dashboard-defaultinteractivelayoutconfiguration-grid"></a>
 The options that determine the default settings for a grid layout configuration.
-
-_Required_: No
-
-_Type_: [DefaultGridLayoutConfiguration](aws-properties-quicksight-dashboard-defaultgridlayoutconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultGridLayoutConfiguration
-
-DefaultNewSheetConfiguration
+*Required*: No
+*Type*: [DefaultGridLayoutConfiguration](aws-properties-quicksight-dashboard-defaultgridlayoutconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

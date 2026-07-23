@@ -2,68 +2,51 @@
 title: "AWS::CodeGuruProfiler::ProfilingGroup Channel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeGuruProfiler::ProfilingGroup Channel
+<a name="aws-properties-codeguruprofiler-profilinggroup-channel"></a>
 
 Notification medium for users to get alerted for events that occur in application profile. We support SNS topic as a notification channel.
 
 ## Syntax
+<a name="aws-properties-codeguruprofiler-profilinggroup-channel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codeguruprofiler-profilinggroup-channel-syntax.json"></a>
 
-```json
-
+```
 {
-  "channelId" : String,
-  "channelUri" : String
+  "[channelId](#cfn-codeguruprofiler-profilinggroup-channel-channelid)" : {{String}},
+  "[channelUri](#cfn-codeguruprofiler-profilinggroup-channel-channeluri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codeguruprofiler-profilinggroup-channel-syntax.yaml"></a>
 
-```yaml
-
-  channelId: String
-  channelUri: String
-
+```
+  [channelId](#cfn-codeguruprofiler-profilinggroup-channel-channelid): {{String}}
+  [channelUri](#cfn-codeguruprofiler-profilinggroup-channel-channeluri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-codeguruprofiler-profilinggroup-channel-properties"></a>
 
-`channelId`
-
+`channelId`  <a name="cfn-codeguruprofiler-profilinggroup-channel-channelid"></a>
 The channel ID.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`channelUri`
-
+`channelUri`  <a name="cfn-codeguruprofiler-profilinggroup-channel-channeluri"></a>
 The channel URI.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws([-\w]*):[a-z-]+:(([a-z]+-)+[0-9]+)?:([0-9]{12}):[^.]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AgentPermissions
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws([-\w]*):[a-z-]+:(([a-z]+-)+[0-9]+)?:([0-9]{12}):[^.]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

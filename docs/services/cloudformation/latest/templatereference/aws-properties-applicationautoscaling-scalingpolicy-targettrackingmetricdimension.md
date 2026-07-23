@@ -2,78 +2,55 @@
 title: "AWS::ApplicationAutoScaling::ScalingPolicy TargetTrackingMetricDimension"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationAutoScaling::ScalingPolicy TargetTrackingMetricDimension
+<a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension"></a>
 
-`TargetTrackingMetricDimension` specifies a name/value pair that is part of the
-identity of a CloudWatch metric for the `Dimensions` property of the [AWS::ApplicationAutoScaling::ScalingPolicy TargetTrackingMetric](../userguide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetric.md) property type.
-Duplicate dimensions are not allowed.
+`TargetTrackingMetricDimension` specifies a name/value pair that is part of the identity of a CloudWatch metric for the `Dimensions` property of the [AWS::ApplicationAutoScaling::ScalingPolicy TargetTrackingMetric](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetric.html) property type. Duplicate dimensions are not allowed.
 
 ## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-name)" : {{String}},
+  "[Value](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-name): {{String}}
+  [Value](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-name"></a>
 The name of the dimension.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-value"></a>
 The value of the dimension.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetTrackingMetricDataQuery
-
-TargetTrackingMetricStat
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,77 +2,54 @@
 title: "AWS::Pipes::Pipe SageMakerPipelineParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe SageMakerPipelineParameter
+<a name="aws-properties-pipes-pipe-sagemakerpipelineparameter"></a>
 
-Name/Value pair of a parameter to start execution of a SageMaker AI Model Building
-Pipeline.
+Name/Value pair of a parameter to start execution of a SageMaker AI Model Building Pipeline.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-sagemakerpipelineparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-sagemakerpipelineparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Value" : String
+  "[Name](#cfn-pipes-pipe-sagemakerpipelineparameter-name)" : {{String}},
+  "[Value](#cfn-pipes-pipe-sagemakerpipelineparameter-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-sagemakerpipelineparameter-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Value: String
-
+```
+  [Name](#cfn-pipes-pipe-sagemakerpipelineparameter-name): {{String}}
+  [Value](#cfn-pipes-pipe-sagemakerpipelineparameter-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-sagemakerpipelineparameter-properties"></a>
 
-`Name`
+`Name`  <a name="cfn-pipes-pipe-sagemakerpipelineparameter-name"></a>
+Name of parameter to start execution of a SageMaker AI Model Building Pipeline.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*|(\$(\.[\w/_-]+(\[(\d+|\*)\])*)*)$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Name of parameter to start execution of a SageMaker AI Model Building
-Pipeline.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*|(\$(\.[\w/_-]+(\[(\d+|\*)\])*)*)$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-Value of parameter to start execution of a SageMaker AI Model Building
-Pipeline.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3LogDestination
-
-SelfManagedKafkaAccessConfigurationCredentials
+`Value`  <a name="cfn-pipes-pipe-sagemakerpipelineparameter-value"></a>
+Value of parameter to start execution of a SageMaker AI Model Building Pipeline.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

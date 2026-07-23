@@ -2,67 +2,49 @@
 title: "AWS::PCAConnectorAD::Template GeneralFlagsV4"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template GeneralFlagsV4
+<a name="aws-properties-pcaconnectorad-template-generalflagsv4"></a>
 
-General flags for v4 template schema that defines if the template is for a machine or a
-user and if the template can be issued using autoenrollment.
+General flags for v4 template schema that defines if the template is for a machine or a user and if the template can be issued using autoenrollment.
 
 ## Syntax
+<a name="aws-properties-pcaconnectorad-template-generalflagsv4-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pcaconnectorad-template-generalflagsv4-syntax.json"></a>
 
-```json
-
+```
 {
-  "AutoEnrollment" : Boolean,
-  "MachineType" : Boolean
+  "[AutoEnrollment](#cfn-pcaconnectorad-template-generalflagsv4-autoenrollment)" : {{Boolean}},
+  "[MachineType](#cfn-pcaconnectorad-template-generalflagsv4-machinetype)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pcaconnectorad-template-generalflagsv4-syntax.yaml"></a>
 
-```yaml
-
-  AutoEnrollment: Boolean
-  MachineType: Boolean
-
+```
+  [AutoEnrollment](#cfn-pcaconnectorad-template-generalflagsv4-autoenrollment): {{Boolean}}
+  [MachineType](#cfn-pcaconnectorad-template-generalflagsv4-machinetype): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-pcaconnectorad-template-generalflagsv4-properties"></a>
 
-`AutoEnrollment`
+`AutoEnrollment`  <a name="cfn-pcaconnectorad-template-generalflagsv4-autoenrollment"></a>
+Allows certificate issuance using autoenrollment. Set to TRUE to allow autoenrollment.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Allows certificate issuance using autoenrollment. Set to TRUE to allow
-autoenrollment.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MachineType`
-
-Defines if the template is for machines or users. Set to TRUE if the template is for
-machines. Set to FALSE if the template is for users
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeneralFlagsV3
-
-KeyUsage
+`MachineType`  <a name="cfn-pcaconnectorad-template-generalflagsv4-machinetype"></a>
+Defines if the template is for machines or users. Set to TRUE if the template is for machines. Set to FALSE if the template is for users
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,41 @@
 title: "AWS::EntityResolution::MatchingWorkflow IntermediateSourceConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow IntermediateSourceConfiguration
+<a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration"></a>
 
-The Amazon S3 location that temporarily stores your data while it processes.
-Your information won't be saved permanently.
+The Amazon S3 location that temporarily stores your data while it processes. Your information won't be saved permanently.
 
 ## Syntax
+<a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "IntermediateS3Path" : String
+  "[IntermediateS3Path](#cfn-entityresolution-matchingworkflow-intermediatesourceconfiguration-intermediates3path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  IntermediateS3Path: String
-
+```
+  [IntermediateS3Path](#cfn-entityresolution-matchingworkflow-intermediatesourceconfiguration-intermediates3path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration-properties"></a>
 
-`IntermediateS3Path`
-
-The Amazon S3 location (bucket and prefix). For example:
-`s3://provider_bucket/DOC-EXAMPLE-BUCKET`
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InputSource
-
-OutputAttribute
+`IntermediateS3Path`  <a name="cfn-entityresolution-matchingworkflow-intermediatesourceconfiguration-intermediates3path"></a>
+The Amazon S3 location (bucket and prefix). For example: `s3://provider_bucket/DOC-EXAMPLE-BUCKET`
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

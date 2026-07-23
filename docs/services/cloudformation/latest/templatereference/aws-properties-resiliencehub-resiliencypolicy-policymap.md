@@ -2,93 +2,69 @@
 title: "AWS::ResilienceHub::ResiliencyPolicy PolicyMap"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResilienceHub::ResiliencyPolicy PolicyMap
+<a name="aws-properties-resiliencehub-resiliencypolicy-policymap"></a>
 
-The type of resiliency policy to be created, including the recovery time objective (RTO)
-and recovery point objective (RPO) in seconds.
+The type of resiliency policy to be created, including the recovery time objective (RTO) and recovery point objective (RPO) in seconds.
 
 ## Syntax
+<a name="aws-properties-resiliencehub-resiliencypolicy-policymap-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-resiliencehub-resiliencypolicy-policymap-syntax.json"></a>
 
-```json
-
+```
 {
-  "AZ" : FailurePolicy,
-  "Hardware" : FailurePolicy,
-  "Region" : FailurePolicy,
-  "Software" : FailurePolicy
+  "[AZ](#cfn-resiliencehub-resiliencypolicy-policymap-az)" : {{FailurePolicy}},
+  "[Hardware](#cfn-resiliencehub-resiliencypolicy-policymap-hardware)" : {{FailurePolicy}},
+  "[Region](#cfn-resiliencehub-resiliencypolicy-policymap-region)" : {{FailurePolicy}},
+  "[Software](#cfn-resiliencehub-resiliencypolicy-policymap-software)" : {{FailurePolicy}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-resiliencehub-resiliencypolicy-policymap-syntax.yaml"></a>
 
-```yaml
-
-  AZ:
-    FailurePolicy
-  Hardware:
-    FailurePolicy
-  Region:
-    FailurePolicy
-  Software:
-    FailurePolicy
-
+```
+  [AZ](#cfn-resiliencehub-resiliencypolicy-policymap-az): {{
+    FailurePolicy}}
+  [Hardware](#cfn-resiliencehub-resiliencypolicy-policymap-hardware): {{
+    FailurePolicy}}
+  [Region](#cfn-resiliencehub-resiliencypolicy-policymap-region): {{
+    FailurePolicy}}
+  [Software](#cfn-resiliencehub-resiliencypolicy-policymap-software): {{
+    FailurePolicy}}
 ```
 
 ## Properties
+<a name="aws-properties-resiliencehub-resiliencypolicy-policymap-properties"></a>
 
-`AZ`
-
+`AZ`  <a name="cfn-resiliencehub-resiliencypolicy-policymap-az"></a>
 Defines the RTO and RPO targets for Availability Zone disruption.
+*Required*: Yes
+*Type*: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Hardware`
-
+`Hardware`  <a name="cfn-resiliencehub-resiliencypolicy-policymap-hardware"></a>
 Defines the RTO and RPO targets for hardware disruption.
+*Required*: Yes
+*Type*: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-resiliencehub-resiliencypolicy-policymap-region"></a>
 Defines the RTO and RPO targets for Regional disruption.
+*Required*: No
+*Type*: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Software`
-
+`Software`  <a name="cfn-resiliencehub-resiliencypolicy-policymap-software"></a>
 Defines the RTO and RPO targets for software disruption.
-
-_Required_: Yes
-
-_Type_: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FailurePolicy
-
-Next
+*Required*: Yes
+*Type*: [FailurePolicy](aws-properties-resiliencehub-resiliencypolicy-failurepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

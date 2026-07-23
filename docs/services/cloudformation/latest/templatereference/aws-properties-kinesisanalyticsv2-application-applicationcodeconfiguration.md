@@ -2,72 +2,55 @@
 title: "AWS::KinesisAnalyticsV2::Application ApplicationCodeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application ApplicationCodeConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration"></a>
 
 Describes code configuration for an application.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CodeContent" : CodeContent,
-  "CodeContentType" : String
+  "[CodeContent](#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontent)" : {{CodeContent}},
+  "[CodeContentType](#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CodeContent:
-    CodeContent
-  CodeContentType: String
-
+```
+  [CodeContent](#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontent): {{
+    CodeContent}}
+  [CodeContentType](#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration-properties"></a>
 
-`CodeContent`
-
+`CodeContent`  <a name="cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontent"></a>
 The location and type of the application code.
+*Required*: Yes
+*Type*: [CodeContent](aws-properties-kinesisanalyticsv2-application-codecontent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [CodeContent](aws-properties-kinesisanalyticsv2-application-codecontent.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CodeContentType`
-
+`CodeContentType`  <a name="cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype"></a>
 Specifies whether the code content is in text or zip format.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PLAINTEXT | ZIPFILE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PLAINTEXT | ZIPFILE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ApplicationCodeConfiguration](../../../managed-flink/latest/apiv2/api-applicationcodeconfiguration.md) in the _Amazon Kinesis_
-_Data Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::KinesisAnalyticsV2::Application
-
-ApplicationConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration--seealso"></a>
++ [ApplicationCodeConfiguration](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ApplicationCodeConfiguration.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

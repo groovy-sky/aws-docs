@@ -2,66 +2,51 @@
 title: "AWS::BedrockAgentCore::Runtime AgentRuntimeArtifact"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime AgentRuntimeArtifact
+<a name="aws-properties-bedrockagentcore-runtime-agentruntimeartifact"></a>
 
 The artifact of the agent.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-runtime-agentruntimeartifact-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-runtime-agentruntimeartifact-syntax.json"></a>
 
-```json
-
+```
 {
-  "CodeConfiguration" : CodeConfiguration,
-  "ContainerConfiguration" : ContainerConfiguration
+  "[CodeConfiguration](#cfn-bedrockagentcore-runtime-agentruntimeartifact-codeconfiguration)" : {{CodeConfiguration}},
+  "[ContainerConfiguration](#cfn-bedrockagentcore-runtime-agentruntimeartifact-containerconfiguration)" : {{ContainerConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-runtime-agentruntimeartifact-syntax.yaml"></a>
 
-```yaml
-
-  CodeConfiguration:
-    CodeConfiguration
-  ContainerConfiguration:
-    ContainerConfiguration
-
+```
+  [CodeConfiguration](#cfn-bedrockagentcore-runtime-agentruntimeartifact-codeconfiguration): {{
+    CodeConfiguration}}
+  [ContainerConfiguration](#cfn-bedrockagentcore-runtime-agentruntimeartifact-containerconfiguration): {{
+    ContainerConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-runtime-agentruntimeartifact-properties"></a>
 
-`CodeConfiguration`
-
+`CodeConfiguration`  <a name="cfn-bedrockagentcore-runtime-agentruntimeartifact-codeconfiguration"></a>
 The code configuration for the agent runtime artifact, including the source code location and execution settings.
+*Required*: No
+*Type*: [CodeConfiguration](aws-properties-bedrockagentcore-runtime-codeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CodeConfiguration](aws-properties-bedrockagentcore-runtime-codeconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContainerConfiguration`
-
+`ContainerConfiguration`  <a name="cfn-bedrockagentcore-runtime-agentruntimeartifact-containerconfiguration"></a>
 The container configuration for the agent artifact.
-
-_Required_: No
-
-_Type_: [ContainerConfiguration](aws-properties-bedrockagentcore-runtime-containerconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BedrockAgentCore::Runtime
-
-AuthorizerConfiguration
+*Required*: No
+*Type*: [ContainerConfiguration](aws-properties-bedrockagentcore-runtime-containerconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

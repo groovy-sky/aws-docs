@@ -2,64 +2,49 @@
 title: "AWS::Batch::JobQueue ServiceEnvironmentOrder"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobQueue ServiceEnvironmentOrder
+<a name="aws-properties-batch-jobqueue-serviceenvironmentorder"></a>
 
 Specifies the order of a service environment for a job queue. This determines the priority order when multiple service environments are associated with the same job queue.
 
 ## Syntax
+<a name="aws-properties-batch-jobqueue-serviceenvironmentorder-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobqueue-serviceenvironmentorder-syntax.json"></a>
 
-```json
-
+```
 {
-  "Order" : Integer,
-  "ServiceEnvironment" : String
+  "[Order](#cfn-batch-jobqueue-serviceenvironmentorder-order)" : {{Integer}},
+  "[ServiceEnvironment](#cfn-batch-jobqueue-serviceenvironmentorder-serviceenvironment)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobqueue-serviceenvironmentorder-syntax.yaml"></a>
 
-```yaml
-
-  Order: Integer
-  ServiceEnvironment: String
-
+```
+  [Order](#cfn-batch-jobqueue-serviceenvironmentorder-order): {{Integer}}
+  [ServiceEnvironment](#cfn-batch-jobqueue-serviceenvironmentorder-serviceenvironment): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobqueue-serviceenvironmentorder-properties"></a>
 
-`Order`
-
+`Order`  <a name="cfn-batch-jobqueue-serviceenvironmentorder-order"></a>
 The order of the service environment. Job queues with a higher priority are evaluated first when associated with the same service environment.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceEnvironment`
-
+`ServiceEnvironment`  <a name="cfn-batch-jobqueue-serviceenvironmentorder-serviceenvironment"></a>
 The name or ARN of the service environment.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-JobStateTimeLimitAction
-
-AWS::Batch::QuotaShare
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,92 +2,64 @@
 title: "AWS::QBusiness::DataSource DocumentEnrichmentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::DataSource DocumentEnrichmentConfiguration
+<a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration"></a>
 
-Provides the configuration information for altering document metadata and content
-during the document ingestion process.
+Provides the configuration information for altering document metadata and content during the document ingestion process.
 
-For more information, see [Custom document\
-enrichment](../../../amazonq/latest/business-use-dg/custom-document-enrichment.md).
+For more information, see [Custom document enrichment](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/custom-document-enrichment.html).
 
 ## Syntax
+<a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InlineConfigurations" : [ InlineDocumentEnrichmentConfiguration, ... ],
-  "PostExtractionHookConfiguration" : HookConfiguration,
-  "PreExtractionHookConfiguration" : HookConfiguration
+  "[InlineConfigurations](#cfn-qbusiness-datasource-documentenrichmentconfiguration-inlineconfigurations)" : {{[ InlineDocumentEnrichmentConfiguration, ... ]}},
+  "[PostExtractionHookConfiguration](#cfn-qbusiness-datasource-documentenrichmentconfiguration-postextractionhookconfiguration)" : {{HookConfiguration}},
+  "[PreExtractionHookConfiguration](#cfn-qbusiness-datasource-documentenrichmentconfiguration-preextractionhookconfiguration)" : {{HookConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InlineConfigurations:
-    - InlineDocumentEnrichmentConfiguration
-  PostExtractionHookConfiguration:
-    HookConfiguration
-  PreExtractionHookConfiguration:
-    HookConfiguration
-
+```
+  [InlineConfigurations](#cfn-qbusiness-datasource-documentenrichmentconfiguration-inlineconfigurations): {{
+    - InlineDocumentEnrichmentConfiguration}}
+  [PostExtractionHookConfiguration](#cfn-qbusiness-datasource-documentenrichmentconfiguration-postextractionhookconfiguration): {{
+    HookConfiguration}}
+  [PreExtractionHookConfiguration](#cfn-qbusiness-datasource-documentenrichmentconfiguration-preextractionhookconfiguration): {{
+    HookConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration-properties"></a>
 
-`InlineConfigurations`
+`InlineConfigurations`  <a name="cfn-qbusiness-datasource-documentenrichmentconfiguration-inlineconfigurations"></a>
+Configuration information to alter document attributes or metadata fields and content when ingesting documents into Amazon Q Business.
+*Required*: No
+*Type*: Array of [InlineDocumentEnrichmentConfiguration](aws-properties-qbusiness-datasource-inlinedocumentenrichmentconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration information to alter document attributes or metadata fields and content
-when ingesting documents into Amazon Q Business.
+`PostExtractionHookConfiguration`  <a name="cfn-qbusiness-datasource-documentenrichmentconfiguration-postextractionhookconfiguration"></a>
+Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see [Using Lambda functions](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/cde-lambda-operations.html).
+*Required*: No
+*Type*: [HookConfiguration](aws-properties-qbusiness-datasource-hookconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [InlineDocumentEnrichmentConfiguration](aws-properties-qbusiness-datasource-inlinedocumentenrichmentconfiguration.md)
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PostExtractionHookConfiguration`
-
-Configuration information for invoking a Lambda function in AWS Lambda on the structured documents with their metadata and text extracted.
-You can use a Lambda function to apply advanced logic for creating,
-modifying, or deleting document metadata and content. For more information, see [Using Lambda functions](../../../amazonq/latest/business-use-dg/cde-lambda-operations.md).
-
-_Required_: No
-
-_Type_: [HookConfiguration](aws-properties-qbusiness-datasource-hookconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PreExtractionHookConfiguration`
-
-Configuration information for invoking a Lambda function in AWS Lambda on the original or raw documents before extracting their metadata and
-text. You can use a Lambda function to apply advanced logic for creating,
-modifying, or deleting document metadata and content. For more information, see [Using Lambda functions](../../../amazonq/latest/business-use-dg/cde-lambda-operations.md).
-
-_Required_: No
-
-_Type_: [HookConfiguration](aws-properties-qbusiness-datasource-hookconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentAttributeValue
-
-HookConfiguration
+`PreExtractionHookConfiguration`  <a name="cfn-qbusiness-datasource-documentenrichmentconfiguration-preextractionhookconfiguration"></a>
+Configuration information for invoking a Lambda function in AWS Lambda on the original or raw documents before extracting their metadata and text. You can use a Lambda function to apply advanced logic for creating, modifying, or deleting document metadata and content. For more information, see [Using Lambda functions](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/cde-lambda-operations.html).
+*Required*: No
+*Type*: [HookConfiguration](aws-properties-qbusiness-datasource-hookconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,79 +2,55 @@
 title: "AWS::QBusiness::Plugin BasicAuthConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Plugin BasicAuthConfiguration
+<a name="aws-properties-qbusiness-plugin-basicauthconfiguration"></a>
 
-Information about the basic authentication credentials used to configure a
-plugin.
+Information about the basic authentication credentials used to configure a plugin.
 
 ## Syntax
+<a name="aws-properties-qbusiness-plugin-basicauthconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-plugin-basicauthconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "RoleArn" : String,
-  "SecretArn" : String
+  "[RoleArn](#cfn-qbusiness-plugin-basicauthconfiguration-rolearn)" : {{String}},
+  "[SecretArn](#cfn-qbusiness-plugin-basicauthconfiguration-secretarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-plugin-basicauthconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  RoleArn: String
-  SecretArn: String
-
+```
+  [RoleArn](#cfn-qbusiness-plugin-basicauthconfiguration-rolearn): {{String}}
+  [SecretArn](#cfn-qbusiness-plugin-basicauthconfiguration-secretarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-plugin-basicauthconfiguration-properties"></a>
 
-`RoleArn`
+`RoleArn`  <a name="cfn-qbusiness-plugin-basicauthconfiguration-rolearn"></a>
+The ARN of an IAM role used by Amazon Q Business to access the basic authentication credentials stored in a Secrets Manager secret.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
+*Minimum*: `0`
+*Maximum*: `1284`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ARN of an IAM role used by Amazon Q Business to access the basic
-authentication credentials stored in a Secrets Manager secret.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
-
-_Minimum_: `0`
-
-_Maximum_: `1284`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretArn`
-
-The ARN of the Secrets Manager secret that stores the basic authentication
-credentials used for plugin configuration..
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
-
-_Minimum_: `0`
-
-_Maximum_: `1284`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-APISchema
-
-CustomPluginConfiguration
+`SecretArn`  <a name="cfn-qbusiness-plugin-basicauthconfiguration-secretarn"></a>
+The ARN of the Secrets Manager secret that stores the basic authentication credentials used for plugin configuration..
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}$`
+*Minimum*: `0`
+*Maximum*: `1284`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,67 +2,51 @@
 title: "AWS::QuickSight::Analysis ScrollBarOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ScrollBarOptions
+<a name="aws-properties-quicksight-analysis-scrollbaroptions"></a>
 
 The visual display options for a data zoom scroll bar.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-scrollbaroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-scrollbaroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Visibility" : String,
-  "VisibleRange" : VisibleRangeOptions
+  "[Visibility](#cfn-quicksight-analysis-scrollbaroptions-visibility)" : {{String}},
+  "[VisibleRange](#cfn-quicksight-analysis-scrollbaroptions-visiblerange)" : {{VisibleRangeOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-scrollbaroptions-syntax.yaml"></a>
 
-```yaml
-
-  Visibility: String
-  VisibleRange:
-    VisibleRangeOptions
-
+```
+  [Visibility](#cfn-quicksight-analysis-scrollbaroptions-visibility): {{String}}
+  [VisibleRange](#cfn-quicksight-analysis-scrollbaroptions-visiblerange): {{
+    VisibleRangeOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-scrollbaroptions-properties"></a>
 
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-analysis-scrollbaroptions-visibility"></a>
 The visibility of the data zoom scroll bar.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisibleRange`
-
+`VisibleRange`  <a name="cfn-quicksight-analysis-scrollbaroptions-visiblerange"></a>
 The visibility range for the data zoom scroll bar.
-
-_Required_: No
-
-_Type_: [VisibleRangeOptions](aws-properties-quicksight-analysis-visiblerangeoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScatterPlotVisual
-
-SecondaryValueOptions
+*Required*: No
+*Type*: [VisibleRangeOptions](aws-properties-quicksight-analysis-visiblerangeoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,51 @@
 title: "AWS::IoTFleetWise::Vehicle TimePeriod"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Vehicle TimePeriod
+<a name="aws-properties-iotfleetwise-vehicle-timeperiod"></a>
 
 The length of time between state template updates.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-vehicle-timeperiod-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-vehicle-timeperiod-syntax.json"></a>
 
-```json
-
+```
 {
-  "Unit" : String,
-  "Value" : Number
+  "[Unit](#cfn-iotfleetwise-vehicle-timeperiod-unit)" : {{String}},
+  "[Value](#cfn-iotfleetwise-vehicle-timeperiod-value)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-vehicle-timeperiod-syntax.yaml"></a>
 
-```yaml
-
-  Unit: String
-  Value: Number
-
+```
+  [Unit](#cfn-iotfleetwise-vehicle-timeperiod-unit): {{String}}
+  [Value](#cfn-iotfleetwise-vehicle-timeperiod-value): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-vehicle-timeperiod-properties"></a>
 
-`Unit`
-
+`Unit`  <a name="cfn-iotfleetwise-vehicle-timeperiod-unit"></a>
 A unit of time.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MILLISECOND | SECOND | MINUTE | HOUR`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MILLISECOND | SECOND | MINUTE | HOUR`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-iotfleetwise-vehicle-timeperiod-value"></a>
 A number of time units.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

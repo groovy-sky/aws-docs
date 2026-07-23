@@ -2,79 +2,57 @@
 title: "AWS::S3::StorageLens SelectionCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens SelectionCriteria
+<a name="aws-properties-s3-storagelens-selectioncriteria"></a>
 
-This resource contains the details of the Amazon S3 Storage Lens selection
-criteria.
+This resource contains the details of the Amazon S3 Storage Lens selection criteria.
 
 ## Syntax
+<a name="aws-properties-s3-storagelens-selectioncriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-storagelens-selectioncriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "Delimiter" : String,
-  "MaxDepth" : Integer,
-  "MinStorageBytesPercentage" : Number
+  "[Delimiter](#cfn-s3-storagelens-selectioncriteria-delimiter)" : {{String}},
+  "[MaxDepth](#cfn-s3-storagelens-selectioncriteria-maxdepth)" : {{Integer}},
+  "[MinStorageBytesPercentage](#cfn-s3-storagelens-selectioncriteria-minstoragebytespercentage)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-storagelens-selectioncriteria-syntax.yaml"></a>
 
-```yaml
-
-  Delimiter: String
-  MaxDepth: Integer
-  MinStorageBytesPercentage: Number
-
+```
+  [Delimiter](#cfn-s3-storagelens-selectioncriteria-delimiter): {{String}}
+  [MaxDepth](#cfn-s3-storagelens-selectioncriteria-maxdepth): {{Integer}}
+  [MinStorageBytesPercentage](#cfn-s3-storagelens-selectioncriteria-minstoragebytespercentage): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-storagelens-selectioncriteria-properties"></a>
 
-`Delimiter`
-
+`Delimiter`  <a name="cfn-s3-storagelens-selectioncriteria-delimiter"></a>
 This property contains the details of the S3 Storage Lens delimiter being used.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MaxDepth`  <a name="cfn-s3-storagelens-selectioncriteria-maxdepth"></a>
+This property contains the details of the max depth that S3 Storage Lens will collect metrics up to.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxDepth`
-
-This property contains the details of the max depth that S3 Storage Lens will collect
-metrics up to.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinStorageBytesPercentage`
-
-This property contains the details of the minimum storage bytes percentage threshold that
-S3 Storage Lens will collect metrics up to.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3BucketDestination
-
-SSEKMS
+`MinStorageBytesPercentage`  <a name="cfn-s3-storagelens-selectioncriteria-minstoragebytespercentage"></a>
+This property contains the details of the minimum storage bytes percentage threshold that S3 Storage Lens will collect metrics up to.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

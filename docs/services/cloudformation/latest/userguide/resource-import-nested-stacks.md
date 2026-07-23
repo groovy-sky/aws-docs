@@ -3,41 +3,30 @@ title: "Nesting an existing stack"
 ---
 
 # Nesting an existing stack
+<a name="resource-import-nested-stacks"></a>
 
-Use the `resource import` feature to nest an existing stack within another
-existing stack. Nested stacks are common components that you declare and reference from within
-other templates. That way, you can avoid copying and pasting the same configurations into your
-templates and simplify stack updates. If you have a template for a common component, you can
-use the `AWS::CloudFormation::Stack` resource to reference this template from
-within another template. For more information on nested stacks, see [Split a template into reusable pieces using nested stacks](using-cfn-nested-stacks.md).
+Use the `resource import` feature to nest an existing stack within another existing stack. Nested stacks are common components that you declare and reference from within other templates. That way, you can avoid copying and pasting the same configurations into your templates and simplify stack updates. If you have a template for a common component, you can use the `AWS::CloudFormation::Stack` resource to reference this template from within another template. For more information on nested stacks, see [Split a template into reusable pieces using nested stacks](using-cfn-nested-stacks.md).
 
-CloudFormation only supports one level of nesting using `resource import`. This means
-that you can't import a stack into a child stack or import a stack that has children.
+CloudFormation only supports one level of nesting using `resource import`. This means that you can't import a stack into a child stack or import a stack that has children.
 
-If you're new to importing, we recommend that you first review the introductory information
-in the [Import AWS resources into a CloudFormation stack manually](import-resources-manually.md) topic.
+If you're new to importing, we recommend that you first review the introductory information in the [Import AWS resources into a CloudFormation stack manually](import-resources-manually.md) topic.
 
 ## Nested stack import validation
+<a name="resource-import-nested-stacks-validation"></a>
 
 During a nested stack import operation, CloudFormation performs the following validations.
-
-- The nested `AWS::CloudFormation::Stack` definition in the parent stack
-template matches the actual nested stack's template.
-
-- The tags for the nested `AWS::CloudFormation::Stack` definition in the
-parent stack template match the tags for the actual nested stack resource.
++ The nested `AWS::CloudFormation::Stack` definition in the parent stack template matches the actual nested stack's template.
++ The tags for the nested `AWS::CloudFormation::Stack` definition in the parent stack template match the tags for the actual nested stack resource.
 
 ## Nest an existing stack using the AWS Management Console
+<a name="resource-import-nested-stacks-console"></a>
 
-1. Add the `AWS::CloudFormation::Stack` resource to the parent stack
-    template with a `Retain` [DeletionPolicy](../templatereference/aws-attribute-deletionpolicy.md). In the following example parent stack template,
-    `MyNestedStack` is the target of the import.
+1. Add the `AWS::CloudFormation::Stack` resource to the parent stack template with a `Retain` [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html). In the following example parent stack template, `MyNestedStack` is the target of the import.
 
-**JSON**
+   **JSON**
 
-```json
-
-{
+   ```
+   {
      "AWSTemplateFormatVersion" : "2010-09-09",
      "Resources" : {
        "ServiceTable":{
@@ -66,119 +55,86 @@ parent stack template match the tags for the actual nested stack resource.
          "Type" : "AWS::CloudFormation::Stack",
          "DeletionPolicy": "Retain",
          "Properties" : {
-         "TemplateURL" : "https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template",
-           "Parameters" : {
+         "TemplateURL" : "{{https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template}}",
+           {{"Parameters" : {
              "InstanceType" : "t1.micro",
-             "KeyName" : "mykey"
+             "KeyName" : "mykey"}}
            }
          }
        }
      }
-}
-```
+   }
+   ```
 
-**YAML**
+   **YAML**
 
-```yaml
-
-AWSTemplateFormatVersion: 2010-09-09
-Resources:
+   ```
+   AWSTemplateFormatVersion: 2010-09-09
+   Resources:
      ServiceTable:
        Type: AWS::DynamoDB::Table
        Properties:
          TableName: Service
          AttributeDefinitions:
-        - AttributeName: key
-          AttributeType: S
-      KeySchema:
-        - AttributeName: key
-          KeyType: HASH
-      ProvisionedThroughput:
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 1
-MyNestedStack:
-    Type: AWS::CloudFormation::Stack
-    DeletionPolicy: Retain
-    Properties:
-      TemplateURL: >-
-        https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template
-      Parameters:
-        InstanceType: t1.micro
-        KeyName: mykey
-```
+           - AttributeName: key
+             AttributeType: S
+         KeySchema:
+           - AttributeName: key
+             KeyType: HASH
+         ProvisionedThroughput:
+           ReadCapacityUnits: 5
+           WriteCapacityUnits: 1
+     MyNestedStack:
+       Type: AWS::CloudFormation::Stack
+       DeletionPolicy: Retain
+       Properties:
+         TemplateURL: >-
+           {{https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template}}
+         {{Parameters:
+           InstanceType: t1.micro
+           KeyName: mykey}}
+   ```
 
-2. Open the CloudFormation console.
+1. Open the CloudFormation console.
 
-3. On the **Stacks** page, with the parent stack selected, choose
-    **Stack actions**, and then choose **Import resources**
-**into stack**.
+1. On the **Stacks** page, with the parent stack selected, choose **Stack actions**, and then choose **Import resources into stack**.
+![The Import resources into stack option in the console.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stack-actions-import.png)
 
-![The Import resources into stack option in the console.](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/stack-actions-import.png)
+1. Read the **Import overview** page for a list of things you're required to provide during this operation. Then, choose **Next**.
 
-4. Read the **Import overview** page for a list of things you're
-    required to provide during this operation. Then, choose
-    **Next**.
+1. On the **Specify template** page, provide the updated parent template using one of the following methods, and then choose **Next**.
+   + Choose **Amazon S3 URL**, and then specify the URL for your template in the text box.
+   + Choose **Upload a template file**, and then browse for your template.
 
-5. On the **Specify template** page, provide the updated parent
-    template using one of the following methods, and then choose
-    **Next**.
+1. On the **Identify resources** page, identify the `AWS::CloudFormation::Stack` resource.
 
-- Choose **Amazon S3 URL**, and then specify the URL for your
-template in the text box.
+   1. Under **Identifier property**, choose the type of resource identifier. For example, an `AWS::CloudFormation::Stack` resource can be identified using the `StackId` property.
 
-- Choose **Upload a template file**, and then browse for your
-template.
+   1. Under **Identifier value**, type the ARN of the stack you're importing. For example, `{{arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10}}`.
+![The Identify resources page in the console.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/resource-import-stackid.png)
 
-6. On the **Identify resources** page, identify the
-    `AWS::CloudFormation::Stack` resource.
-1. Under **Identifier property**, choose the type of resource
-       identifier. For example, an `AWS::CloudFormation::Stack` resource
-       can be identified using the `StackId` property.
+   1. Choose **Next**.
 
-2. Under **Identifier value**, type the ARN of the stack
-       you're importing. For example,
-       `arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10`.
+1. On the **Specify stack details** page, modify any parameters, and then choose **Next**. This automatically creates a change set.
+**Important**
+The import operation fails if you modify existing parameters that initiate a create, update, or delete operation.
 
-      ![The Identify resources page in the console.](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/resource-import-stackid.png)
+1. On the **Review {{MyParentStack}}** page, confirm that the correct resource is being imported, and then choose **Import resources**. This automatically executes the change set created in the last step. Any stack-level tags are applied to imported resources at this time.
 
-3. Choose **Next**.
-7. On the **Specify stack details** page, modify any parameters, and
-    then choose **Next**. This automatically creates a change
-    set.
-
-###### Important
-
-The import operation fails if you modify existing parameters that initiate a
-create, update, or delete operation.
-
-8. On the **Review `MyParentStack`** page,
-    confirm that the correct resource is being imported, and then choose **Import**
-**resources**. This automatically executes the change set created in the
-    last step. Any stack-level tags are applied to imported resources at this
-    time.
-
-9. The **Events** pane of the **Stack details**
-    page for your parent stack displays.
-
-![The Events tab in the console.](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/import-events.png)
-
-###### Note
-
-It's not necessary to run drift detection on the parent stack after this import
-operation because the `AWS::CloudFormation::Stack` resource was already
-managed by CloudFormation.
+1. The **Events** pane of the **Stack details** page for your parent stack displays.
+![The Events tab in the console.](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/import-events.png)
+**Note**
+It's not necessary to run drift detection on the parent stack after this import operation because the `AWS::CloudFormation::Stack` resource was already managed by CloudFormation.
 
 ## Nest an existing stack using the AWS CLI
+<a name="resource-import-nested-stacks-cli"></a>
 
-1. Add the `AWS::CloudFormation::Stack` resource to the parent stack
-    template with a `Retain` [DeletionPolicy](../templatereference/aws-attribute-deletionpolicy.md). In the following example parent template,
-    `MyNestedStack` is the target of the import.
+1. Add the `AWS::CloudFormation::Stack` resource to the parent stack template with a `Retain` [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html). In the following example parent template, `MyNestedStack` is the target of the import.
 
-**JSON**
+   **JSON**
 
-```json
-
-{
+   ```
+   {
      "AWSTemplateFormatVersion" : "2010-09-09",
      "Resources" : {
        "ServiceTable":{
@@ -203,168 +159,125 @@ managed by CloudFormation.
                  }
               }
            },
-       "MyNestedStack" : {
+       "{{MyNestedStack}}" : {
          "Type" : "AWS::CloudFormation::Stack",
          "DeletionPolicy": "Retain",
          "Properties" : {
-         "TemplateURL" : "https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template",
-           "Parameters" : {
+         "TemplateURL" : "{{https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template}}",
+           {{"Parameters" : {
              "InstanceType" : "t1.micro",
-             "KeyName" : "mykey"
+             "KeyName" : "mykey"}}
            }
          }
        }
      }
-}
-```
+   }
+   ```
 
-**YAML**
+   **YAML**
 
-```yaml
-
-AWSTemplateFormatVersion: 2010-09-09
-Resources:
+   ```
+   AWSTemplateFormatVersion: 2010-09-09
+   Resources:
      ServiceTable:
        Type: AWS::DynamoDB::Table
        Properties:
          TableName: Service
          AttributeDefinitions:
-        - AttributeName: key
-          AttributeType: S
-      KeySchema:
-        - AttributeName: key
-          KeyType: HASH
-      ProvisionedThroughput:
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 1
-MyNestedStack:
-    Type: AWS::CloudFormation::Stack
-    DeletionPolicy: Retain
-    Properties:
-      TemplateURL: >-
-        https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template
-      Parameters:
-        InstanceType: t1.micro
-        KeyName: mykey
-```
+           - AttributeName: key
+             AttributeType: S
+         KeySchema:
+           - AttributeName: key
+             KeyType: HASH
+         ProvisionedThroughput:
+           ReadCapacityUnits: 5
+           WriteCapacityUnits: 1
+     {{MyNestedStack}}:
+       Type: AWS::CloudFormation::Stack
+       DeletionPolicy: Retain
+       Properties:
+         TemplateURL: >-
+           {{https://s3.amazonaws.com/cloudformation-templates-us-east-2/EC2ChooseAMI.template}}
+         {{Parameters:
+           InstanceType: t1.micro
+           KeyName: mykey}}
+   ```
 
-2. Compose a JSON string as shown in the following example, with these modifications:
+1. Compose a JSON string as shown in the following example, with these modifications:
+   + Replace {{MyNestedStack}} with the logical ID of the target resource as specified in the template.
+   + Replace {{arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10}} with the ARN of the stack you want to import.
 
-- Replace `MyNestedStack` with the logical ID of the
-target resource as specified in the template.
+   ```
+   [{"ResourceType":"AWS::CloudFormation::Stack","LogicalResourceId":"{{MyNestedStack}}","ResourceIdentifier":{"StackId":"{{arn:aws:cloudformation:us-east-2:123456789012:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10}}"}}]
+   ```
 
-- Replace
-`arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10`
-with the ARN of the stack you want to import.
+   Alternatively, you can specify the parameters in a configuration file.
 
-```text
+   For example, to import `MyNestedStack`, you might create a {{ResourcesToImport.txt}} file that contains the following configuration.
 
-[{"ResourceType":"AWS::CloudFormation::Stack","LogicalResourceId":"MyNestedStack","ResourceIdentifier":{"StackId":"arn:aws:cloudformation:us-east-2:123456789012:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10"}}]
-```
+   **JSON**
 
-Alternatively, you can specify the parameters in a configuration file.
+   ```
+   [
+     {
+         "ResourceType":"AWS::CloudFormation::Stack",
+         "LogicalResourceId":"{{MyNestedStack}}",
+         "ResourceIdentifier": {
+           "StackId":"{{arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10}}"
+         }
+     }
+   ]
+   ```
 
-For example, to import `MyNestedStack`, you might create a
-`ResourcesToImport.txt` file that contains the following
-configuration.
+   **YAML**
 
-**JSON**
+   ```
+   ResourceType: AWS::CloudFormation::Stack
+     LogicalResourceId: {{MyNestedStack}}
+     ResourceIdentifier:
+       StackId: >-
+         {{arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10}}
+   ```
 
-```json
+1. To create a change set, use the following **create-change-set** command and replace the placeholder text. For the `--change-set-type` option, specify a value of **IMPORT**. For the `--resources-to-import` option, replace the sample JSON string with the actual JSON string you just created.
 
-[
-{
-      "ResourceType":"AWS::CloudFormation::Stack",
-      "LogicalResourceId":"MyNestedStack",
-      "ResourceIdentifier": {
-        "StackId":"arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10"
-      }
-}
-]
-```
-
-**YAML**
-
-```yaml
-
-ResourceType: AWS::CloudFormation::Stack
-LogicalResourceId: MyNestedStack
-ResourceIdentifier:
-    StackId: >-
-      arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10
-```
-
-3. To create a change set, use the following **create-change-set**
-    command and replace the placeholder text. For the `--change-set-type`
-    option, specify a value of `IMPORT`. For the
-    `--resources-to-import` option, replace the sample JSON string with the
-    actual JSON string you just created.
-
-```nohighlight
-
-aws cloudformation create-change-set \
-       --stack-name MyParentStack --change-set-name ImportChangeSet \
+   ```
+   aws cloudformation create-change-set \
+       --stack-name {{MyParentStack}} --change-set-name {{ImportChangeSet}} \
        --change-set-type IMPORT \
-       --template-body file://TemplateToImport.json \
-       --resources-to-import '[{"ResourceType":"AWS::CloudFormation::Stack","LogicalResourceId":"MyNestedStack","ResourceIdentifier":{"StackId":"arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10"}}]'
-```
+       --template-body {{file://TemplateToImport.json}} \
+       --resources-to-import {{'[{"ResourceType":"AWS::CloudFormation::Stack","LogicalResourceId":"MyNestedStack","ResourceIdentifier":{"StackId":"arn:aws:cloudformation:us-west-2:12345678910:stack/mystack/5b918d10-cd98-11ea-90d5-0a9cd3354c10"}}]'}}
+   ```
+**Note**
+`--resources-to-import` doesn't support inline YAML. The requirements for escaping quotes in the JSON string vary depending on your terminal. For more information, see [Using quotation marks inside strings](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-quoting-strings.html#cli-usage-parameters-quoting-strings-containing) in the *AWS Command Line Interface User Guide*.
 
-###### Note
+   Alternatively, you can use a file URL as input for the `--resources-to-import` option, as shown in the following example.
 
-`--resources-to-import` doesn't support inline YAML. The
-requirements for escaping quotes in the JSON string vary depending on your
-terminal. For more information, see [Using quotation marks inside strings](../../../cli/latest/userguide/cli-usage-parameters-quoting-strings.md#cli-usage-parameters-quoting-strings-containing) in the
-_AWS Command Line Interface User Guide_.
+   ```
+   --resources-to-import {{file://ResourcesToImport.txt}}
+   ```
 
-Alternatively, you can use a file URL as input for the
-    `--resources-to-import` option, as shown in the following
-    example.
+   If successful, this command returns the following sample output.
 
-```nohighlight
-
-   --resources-to-import file://ResourcesToImport.txt
-```
-
-If successful, this command returns the following sample output.
-
-```json
-
-{
+   ```
+   {
        "Id": "arn:aws:cloudformation:us-west-2:12345678910:changeSet/ImportChangeSet/8ad75b3f-665f-46f6-a200-0b4727a9442e",
        "StackId": "arn:aws:cloudformation:us-west-2:12345678910:stack/MyParentStack/4e345b70-1281-11ef-b027-027366d8e82b"
-}
-```
+   }
+   ```
 
-4. Review the change set to make sure the correct stack is being imported.
+1. Review the change set to make sure the correct stack is being imported.
 
-```nohighlight
+   ```
+   aws cloudformation describe-change-set --change-set-name {{ImportChangeSet}}
+   ```
 
-aws cloudformation describe-change-set --change-set-name ImportChangeSet
-```
+1. To initiate the change set and import the stack into the source parent stack, use the following **execute-change-set** command and replace the placeholder text. Any [stack-level tags](cfn-console-create-stack.md#configure-stack-options) are applied to imported resources at this time. On successful completion of the import operation `(IMPORT_COMPLETE)`, the stack is successfully nested.
 
-5. To initiate the change set and import the stack into the source parent stack, use
-    the following **execute-change-set** command and replace the
-    placeholder text. Any [stack-level tags](cfn-console-create-stack.md#configure-stack-options)
-    are applied to imported resources at this time. On successful completion of the
-    import operation `(IMPORT_COMPLETE)`, the stack is successfully
-    nested.
-
-```nohighlight
-
-aws cloudformation execute-change-set --change-set-name ImportChangeSet
-```
-
-###### Note
-
-It's not necessary to run drift detection on the parent stack after this import
-operation because the `AWS::CloudFormation::Stack` resource is already
-managed by CloudFormation.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Moving resources between stacks
-
-Automatically import AWS
-resources
+   ```
+   aws cloudformation execute-change-set --change-set-name {{ImportChangeSet}}
+   ```
+**Note**
+It's not necessary to run drift detection on the parent stack after this import operation because the `AWS::CloudFormation::Stack` resource is already managed by CloudFormation.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,55 @@
 title: "AWS::IoTTwinMaker::Entity Relationship"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::Entity Relationship
+<a name="aws-properties-iottwinmaker-entity-relationship"></a>
 
 The entity relationship.
 
 ## Syntax
+<a name="aws-properties-iottwinmaker-entity-relationship-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iottwinmaker-entity-relationship-syntax.json"></a>
 
-```json
-
+```
 {
-  "RelationshipType" : String,
-  "TargetComponentTypeId" : String
+  "[RelationshipType](#cfn-iottwinmaker-entity-relationship-relationshiptype)" : {{String}},
+  "[TargetComponentTypeId](#cfn-iottwinmaker-entity-relationship-targetcomponenttypeid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iottwinmaker-entity-relationship-syntax.yaml"></a>
 
-```yaml
-
-  RelationshipType: String
-  TargetComponentTypeId: String
-
+```
+  [RelationshipType](#cfn-iottwinmaker-entity-relationship-relationshiptype): {{String}}
+  [TargetComponentTypeId](#cfn-iottwinmaker-entity-relationship-targetcomponenttypeid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iottwinmaker-entity-relationship-properties"></a>
 
-`RelationshipType`
-
+`RelationshipType`  <a name="cfn-iottwinmaker-entity-relationship-relationshiptype"></a>
 The relationship type.
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetComponentTypeId`
-
+`TargetComponentTypeId`  <a name="cfn-iottwinmaker-entity-relationship-targetcomponenttypeid"></a>
 the component type Id target.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z_\.\-0-9:]+`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PropertyGroup
-
-RelationshipValue
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z_\.\-0-9:]+`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

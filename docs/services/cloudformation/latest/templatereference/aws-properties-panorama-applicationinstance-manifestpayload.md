@@ -2,60 +2,44 @@
 title: "AWS::Panorama::ApplicationInstance ManifestPayload"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Panorama::ApplicationInstance ManifestPayload
+<a name="aws-properties-panorama-applicationinstance-manifestpayload"></a>
 
-A application verion's manifest file. This is a JSON document that has a single key ( `PayloadData`)
-where the value is an escaped string representation of the application manifest ( `graph.json`). This
-file is located in the `graphs` folder in your application source.
+A application verion's manifest file. This is a JSON document that has a single key (`PayloadData`) where the value is an escaped string representation of the application manifest (`graph.json`). This file is located in the `graphs` folder in your application source.
 
 ## Syntax
+<a name="aws-properties-panorama-applicationinstance-manifestpayload-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-panorama-applicationinstance-manifestpayload-syntax.json"></a>
 
-```json
-
+```
 {
-  "PayloadData" : String
+  "[PayloadData](#cfn-panorama-applicationinstance-manifestpayload-payloaddata)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-panorama-applicationinstance-manifestpayload-syntax.yaml"></a>
 
-```yaml
-
-  PayloadData: String
-
+```
+  [PayloadData](#cfn-panorama-applicationinstance-manifestpayload-payloaddata): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-panorama-applicationinstance-manifestpayload-properties"></a>
 
-`PayloadData`
-
+`PayloadData`  <a name="cfn-panorama-applicationinstance-manifestpayload-payloaddata"></a>
 The application manifest.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `51200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManifestOverridesPayload
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `^.+$`
+*Minimum*: `1`
+*Maximum*: `51200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

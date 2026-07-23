@@ -2,68 +2,51 @@
 title: "AWS::AppTest::TestCase SourceDatabaseMetadata"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppTest::TestCase SourceDatabaseMetadata
+<a name="aws-properties-apptest-testcase-sourcedatabasemetadata"></a>
 
 Specifies the source database metadata.
 
 ## Syntax
+<a name="aws-properties-apptest-testcase-sourcedatabasemetadata-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apptest-testcase-sourcedatabasemetadata-syntax.json"></a>
 
-```json
-
+```
 {
-  "CaptureTool" : String,
-  "Type" : String
+  "[CaptureTool](#cfn-apptest-testcase-sourcedatabasemetadata-capturetool)" : {{String}},
+  "[Type](#cfn-apptest-testcase-sourcedatabasemetadata-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apptest-testcase-sourcedatabasemetadata-syntax.yaml"></a>
 
-```yaml
-
-  CaptureTool: String
-  Type: String
-
+```
+  [CaptureTool](#cfn-apptest-testcase-sourcedatabasemetadata-capturetool): {{String}}
+  [Type](#cfn-apptest-testcase-sourcedatabasemetadata-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apptest-testcase-sourcedatabasemetadata-properties"></a>
 
-`CaptureTool`
-
+`CaptureTool`  <a name="cfn-apptest-testcase-sourcedatabasemetadata-capturetool"></a>
 The capture tool of the source database metadata.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Precisely | AWS DMS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Precisely | AWS DMS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-apptest-testcase-sourcedatabasemetadata-type"></a>
 The type of the source database metadata.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `z/OS-DB2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Script
-
-Step
+*Required*: Yes
+*Type*: String
+*Allowed values*: `z/OS-DB2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

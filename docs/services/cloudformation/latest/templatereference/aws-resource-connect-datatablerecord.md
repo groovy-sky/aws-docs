@@ -2,106 +2,87 @@
 title: "AWS::Connect::DataTableRecord"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::DataTableRecord
+<a name="aws-resource-connect-datatablerecord"></a>
 
-The `AWS::Connect::DataTableRecord` resource Property description not available. for Connect.
+<a name="aws-resource-connect-datatablerecord-description"></a>The `AWS::Connect::DataTableRecord` resource Property description not available. for Connect.
 
 ## Syntax
+<a name="aws-resource-connect-datatablerecord-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-connect-datatablerecord-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Connect::DataTableRecord",
   "Properties" : {
-      "DataTableArn" : String,
-      "DataTableRecord" : DataTableRecord,
-      "InstanceArn" : String
+      "[DataTableArn](#cfn-connect-datatablerecord-datatablearn)" : {{String}},
+      "[DataTableRecord](#cfn-connect-datatablerecord-datatablerecord)" : {{DataTableRecord}},
+      "[InstanceArn](#cfn-connect-datatablerecord-instancearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-connect-datatablerecord-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Connect::DataTableRecord
 Properties:
-  DataTableArn: String
-  DataTableRecord:
-    DataTableRecord
-  InstanceArn: String
-
+  [DataTableArn](#cfn-connect-datatablerecord-datatablearn): {{String}}
+  [DataTableRecord](#cfn-connect-datatablerecord-datatablerecord): {{
+    DataTableRecord}}
+  [InstanceArn](#cfn-connect-datatablerecord-instancearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-connect-datatablerecord-properties"></a>
 
-`DataTableArn`
-
+`DataTableArn`  <a name="cfn-connect-datatablerecord-datatablearn"></a>
 The Amazon Resource Name (ARN) for the data table. Does not include version aliases.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DataTableRecord`
-
+`DataTableRecord`  <a name="cfn-connect-datatablerecord-datatablerecord"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [DataTableRecord](aws-properties-connect-datatablerecord-datatablerecord.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataTableRecord](aws-properties-connect-datatablerecord-datatablerecord.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceArn`
-
+`InstanceArn`  <a name="cfn-connect-datatablerecord-instancearn"></a>
 The Amazon Resource Name (ARN) of the instance.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-connect-datatablerecord-return-values"></a>
 
 ### Ref
+<a name="aws-resource-connect-datatablerecord-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-connect-datatablerecord-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RecordId`
+####
+<a name="aws-resource-connect-datatablerecord-return-values-fn--getatt-fn--getatt"></a>
 
+`RecordId`  <a name="RecordId-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Validation
-
-DataTableRecord
 
 All content copied from https://docs.aws.amazon.com/.

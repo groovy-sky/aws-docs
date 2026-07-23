@@ -2,148 +2,124 @@
 title: "AWS::EC2::NetworkInterfaceAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInterfaceAttachment
+<a name="aws-resource-ec2-networkinterfaceattachment"></a>
 
-Attaches an elastic network interface (ENI) to an Amazon EC2 instance. You can use this
-resource type to attach additional network interfaces to an instance without
-interruption.
+Attaches an elastic network interface (ENI) to an Amazon EC2 instance. You can use this resource type to attach additional network interfaces to an instance without interruption.
 
 ## Syntax
+<a name="aws-resource-ec2-networkinterfaceattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-networkinterfaceattachment-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::NetworkInterfaceAttachment",
   "Properties" : {
-      "DeleteOnTermination" : Boolean,
-      "DeviceIndex" : String,
-      "EnaQueueCount" : Integer,
-      "EnaSrdSpecification" : EnaSrdSpecification,
-      "InstanceId" : String,
-      "NetworkInterfaceId" : String
+      "[DeleteOnTermination](#cfn-ec2-networkinterfaceattachment-deleteontermination)" : {{Boolean}},
+      "[DeviceIndex](#cfn-ec2-networkinterfaceattachment-deviceindex)" : {{String}},
+      "[EnaQueueCount](#cfn-ec2-networkinterfaceattachment-enaqueuecount)" : {{Integer}},
+      "[EnaSrdSpecification](#cfn-ec2-networkinterfaceattachment-enasrdspecification)" : {{EnaSrdSpecification}},
+      "[InstanceId](#cfn-ec2-networkinterfaceattachment-instanceid)" : {{String}},
+      "[NetworkInterfaceId](#cfn-ec2-networkinterfaceattachment-networkinterfaceid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-networkinterfaceattachment-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::NetworkInterfaceAttachment
 Properties:
-  DeleteOnTermination: Boolean
-  DeviceIndex: String
-  EnaQueueCount: Integer
-  EnaSrdSpecification:
-    EnaSrdSpecification
-  InstanceId: String
-  NetworkInterfaceId: String
-
+  [DeleteOnTermination](#cfn-ec2-networkinterfaceattachment-deleteontermination): {{Boolean}}
+  [DeviceIndex](#cfn-ec2-networkinterfaceattachment-deviceindex): {{String}}
+  [EnaQueueCount](#cfn-ec2-networkinterfaceattachment-enaqueuecount): {{Integer}}
+  [EnaSrdSpecification](#cfn-ec2-networkinterfaceattachment-enasrdspecification): {{
+    EnaSrdSpecification}}
+  [InstanceId](#cfn-ec2-networkinterfaceattachment-instanceid): {{String}}
+  [NetworkInterfaceId](#cfn-ec2-networkinterfaceattachment-networkinterfaceid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-networkinterfaceattachment-properties"></a>
 
-`DeleteOnTermination`
+`DeleteOnTermination`  <a name="cfn-ec2-networkinterfaceattachment-deleteontermination"></a>
+Whether to delete the network interface when the instance terminates. By default, this value is set to `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Whether to delete the network interface when the instance terminates. By default, this
-value is set to `true`.
+`DeviceIndex`  <a name="cfn-ec2-networkinterfaceattachment-deviceindex"></a>
+The network interface's position in the attachment order. For example, the first attached network interface has a `DeviceIndex` of 0.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeviceIndex`
-
-The network interface's position in the attachment order. For example, the first
-attached network interface has a `DeviceIndex` of 0.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnaQueueCount`
-
+`EnaQueueCount`  <a name="cfn-ec2-networkinterfaceattachment-enaqueuecount"></a>
 The number of ENA queues created with the instance.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EnaSrdSpecification`  <a name="cfn-ec2-networkinterfaceattachment-enasrdspecification"></a>
+Configures ENA Express for the network interface that this action attaches to the instance.
+*Required*: No
+*Type*: [EnaSrdSpecification](aws-properties-ec2-networkinterfaceattachment-enasrdspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnaSrdSpecification`
-
-Configures ENA Express for the network interface that this action attaches to the
-instance.
-
-_Required_: No
-
-_Type_: [EnaSrdSpecification](aws-properties-ec2-networkinterfaceattachment-enasrdspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceId`
-
+`InstanceId`  <a name="cfn-ec2-networkinterfaceattachment-instanceid"></a>
 The ID of the instance to which you will attach the ENI.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="cfn-ec2-networkinterfaceattachment-networkinterfaceid"></a>
 The ID of the ENI that you want to attach.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-networkinterfaceattachment-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-networkinterfaceattachment-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-networkinterfaceattachment-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AttachmentId`
+####
+<a name="aws-resource-ec2-networkinterfaceattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`AttachmentId`  <a name="AttachmentId-fn::getatt"></a>
 The ID of the network interface attachment.
 
 ## Examples
+<a name="aws-resource-ec2-networkinterfaceattachment--examples"></a>
 
 ### Network interface attachment
+<a name="aws-resource-ec2-networkinterfaceattachment--examples--Network_interface_attachment"></a>
 
-The following example attaches `MyNetworkInterface` to
-`MyInstance`.
+The following example attaches `MyNetworkInterface` to `MyInstance`.
 
 #### JSON
+<a name="aws-resource-ec2-networkinterfaceattachment--examples--Network_interface_attachment--json"></a>
 
-```json
-
+```
 "NetworkInterfaceAttachment" : {
    "Type" : "AWS::EC2::NetworkInterfaceAttachment",
       "Properties" : {
@@ -155,9 +131,9 @@ The following example attaches `MyNetworkInterface` to
 ```
 
 #### YAML
+<a name="aws-resource-ec2-networkinterfaceattachment--examples--Network_interface_attachment--yaml"></a>
 
-```yaml
-
+```
 NetworkInterfaceAttachment:
    Type: AWS::EC2::NetworkInterfaceAttachment
    Properties:
@@ -167,11 +143,5 @@ NetworkInterfaceAttachment:
          Ref: MyNetworkInterface
       DeviceIndex: 1
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-EnaSrdSpecification
 
 All content copied from https://docs.aws.amazon.com/.

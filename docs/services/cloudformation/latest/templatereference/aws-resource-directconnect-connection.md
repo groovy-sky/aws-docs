@@ -2,212 +2,166 @@
 title: "AWS::DirectConnect::Connection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DirectConnect::Connection
+<a name="aws-resource-directconnect-connection"></a>
 
 Creates a connection between a customer network and a specific Direct Connect location.
 
-A connection links your internal network to an Direct Connect location over a standard Ethernet fiber-optic
-cable. One end of the cable is connected to your router, the other to an Direct Connect router.
+A connection links your internal network to an Direct Connect location over a standard Ethernet fiber-optic cable. One end of the cable is connected to your router, the other to an Direct Connect router.
 
-To find the locations for your Region, use [DescribeLocations](../../../../reference/directconnect/latest/apireference/api-describelocations.md).
+To find the locations for your Region, use [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html).
 
-You can automatically add the new connection to a link aggregation group (LAG) by
-specifying a LAG ID in the request. This ensures that the new connection is allocated on the
-same Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint,
-the request fails and no connection is created.
+You can automatically add the new connection to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new connection is allocated on the same Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no connection is created.
 
-###### Important
-
+**Important**
 Upon creation, a connection will enter the `requested` state. The connection cannot be used with other resources until it is approved and advances to `available` or `down`.
-
 In order to create a virtual interface using a connection defined in the same CloudFormation template, it is recommended to create a LAG and create the virtual interface using the LAG. Member connections can be added to the LAG in the CloudFormation template.
 
-For more information, see [Dedicated Direct Connect connections](../../../directconnect/latest/userguide/dedicated-connection.md) in the _Direct Connect User Guide_.
+For more information, see [Dedicated Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/dedicated_connection.html) in the * Direct Connect User Guide *.
 
 ## Syntax
+<a name="aws-resource-directconnect-connection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-directconnect-connection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DirectConnect::Connection",
   "Properties" : {
-      "Bandwidth" : String,
-      "ConnectionName" : String,
-      "LagId" : String,
-      "Location" : String,
-      "ProviderName" : String,
-      "RequestMACSec" : Boolean,
-      "Tags" : [ Tag, ... ]
+      "[Bandwidth](#cfn-directconnect-connection-bandwidth)" : {{String}},
+      "[ConnectionName](#cfn-directconnect-connection-connectionname)" : {{String}},
+      "[LagId](#cfn-directconnect-connection-lagid)" : {{String}},
+      "[Location](#cfn-directconnect-connection-location)" : {{String}},
+      "[ProviderName](#cfn-directconnect-connection-providername)" : {{String}},
+      "[RequestMACSec](#cfn-directconnect-connection-requestmacsec)" : {{Boolean}},
+      "[Tags](#cfn-directconnect-connection-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-directconnect-connection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DirectConnect::Connection
 Properties:
-  Bandwidth: String
-  ConnectionName: String
-  LagId: String
-  Location: String
-  ProviderName: String
-  RequestMACSec: Boolean
-  Tags:
-    - Tag
-
+  [Bandwidth](#cfn-directconnect-connection-bandwidth): {{String}}
+  [ConnectionName](#cfn-directconnect-connection-connectionname): {{String}}
+  [LagId](#cfn-directconnect-connection-lagid): {{String}}
+  [Location](#cfn-directconnect-connection-location): {{String}}
+  [ProviderName](#cfn-directconnect-connection-providername): {{String}}
+  [RequestMACSec](#cfn-directconnect-connection-requestmacsec): {{Boolean}}
+  [Tags](#cfn-directconnect-connection-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-directconnect-connection-properties"></a>
 
-`Bandwidth`
-
+`Bandwidth`  <a name="cfn-directconnect-connection-bandwidth"></a>
 The bandwidth of the connection.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[1-9][0-9]*(M|G)bps$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[1-9][0-9]*(M|G)bps$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-directconnect-connection-connectionname"></a>
 The name of the connection.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w \-_,\/]{1,200}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w \-_,\/]{1,200}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LagId`
-
+`LagId`  <a name="cfn-directconnect-connection-lagid"></a>
 The ID or ARN of the LAG to associate the connection with.
-
 Connectivity will be interrupted when associating or disassociating a connection with a LAG.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:aws[a-z-]*:directconnect:[a-z0-9-]+:[0-9]{12}:dxlag/)?dxlag-[a-zA-Z0-9]{8,21}$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(arn:aws[a-z-]*:directconnect:[a-z0-9-]+:[0-9]{12}:dxlag/)?dxlag-[a-zA-Z0-9]{8,21}$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Location`
-
+`Location`  <a name="cfn-directconnect-connection-location"></a>
 The location of the connection.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-]+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-]+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProviderName`
-
+`ProviderName`  <a name="cfn-directconnect-connection-providername"></a>
 The name of the service provider associated with the connection.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RequestMACSec`
-
+`RequestMACSec`  <a name="cfn-directconnect-connection-requestmacsec"></a>
 Indicates whether you want the connection to support MAC Security (MACsec).
+MAC Security (MACsec) is unavailable on hosted connections. For information about MAC Security (MACsec) prerequisites, see [MAC Security in Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACSec.html) in the *Direct Connect User Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-MAC Security (MACsec) is unavailable on hosted connections. For information about MAC Security (MACsec) prerequisites, see [MAC Security in Direct Connect](../../../directconnect/latest/userguide/macsec.md) in the _Direct Connect User Guide_.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-directconnect-connection-tags"></a>
 The tags associated with the connection.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-directconnect-connection-tag.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-directconnect-connection-tag.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-directconnect-connection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-directconnect-connection-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the connection.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-directconnect-connection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ConnectionArn`
+####
+<a name="aws-resource-directconnect-connection-return-values-fn--getatt-fn--getatt"></a>
 
+`ConnectionArn`  <a name="ConnectionArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the connection.
 
-`ConnectionId`
-
+`ConnectionId`  <a name="ConnectionId-fn::getatt"></a>
 The ID of the connection.
 
-`ConnectionState`
-
+`ConnectionState`  <a name="ConnectionState-fn::getatt"></a>
 The state of the connection. The following are the possible values:
-
-- `ordering`: The initial state of a hosted connection provisioned on an interconnect. The connection stays in the ordering state until the owner of the hosted connection confirms or declines the connection order.
-
-- `requested`: The initial state of a standard connection. The connection stays in the requested state until the Letter of Authorization (LOA) is sent to the customer.
-
-- `pending`: The connection has been approved and is being initialized.
-
-- `available`: The network link is up and the connection is ready for use.
-
-- `down`: The network link is down.
-
-- `deleting`: The connection is being deleted.
-
-- `deleted`: The connection has been deleted.
-
-- `rejected`: A hosted connection in the `ordering` state enters the `rejected` state if it is deleted by the customer.
-
-- `unknown`: The state of the connection is not available.
++ `ordering`: The initial state of a hosted connection provisioned on an interconnect. The connection stays in the ordering state until the owner of the hosted connection confirms or declines the connection order.
++ `requested`: The initial state of a standard connection. The connection stays in the requested state until the Letter of Authorization (LOA) is sent to the customer.
++ `pending`: The connection has been approved and is being initialized.
++ `available`: The network link is up and the connection is ready for use.
++ `down`: The network link is down.
++ `deleting`: The connection is being deleted.
++ `deleted`: The connection has been deleted.
++ `rejected`: A hosted connection in the `ordering` state enters the `rejected` state if it is deleted by the customer.
++ `unknown`: The state of the connection is not available.
 
 ## Examples
+<a name="aws-resource-directconnect-connection--examples"></a>
 
 ### Basic connection
+<a name="aws-resource-directconnect-connection--examples--Basic_connection"></a>
 
 This example shows a basic connection. The bandwidth of the connection is 10Gbps.
 
 #### JSON
+<a name="aws-resource-directconnect-connection--examples--Basic_connection--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "myConnection": {
@@ -229,9 +183,9 @@ This example shows a basic connection. The bandwidth of the connection is 10Gbps
 ```
 
 #### YAML
+<a name="aws-resource-directconnect-connection--examples--Basic_connection--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myConnection:
     Type: AWS::DirectConnect::Connection
@@ -243,11 +197,5 @@ Resources:
       - Key: example-key
         Value: example-value
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Direct Connect
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

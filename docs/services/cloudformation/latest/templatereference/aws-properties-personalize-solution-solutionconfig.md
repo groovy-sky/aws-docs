@@ -2,112 +2,80 @@
 title: "AWS::Personalize::Solution SolutionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Solution SolutionConfig
+<a name="aws-properties-personalize-solution-solutionconfig"></a>
 
 Describes the configuration properties for the solution.
 
 ## Syntax
+<a name="aws-properties-personalize-solution-solutionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-personalize-solution-solutionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlgorithmHyperParameters" : {Key: Value, ...},
-  "AutoMLConfig" : AutoMLConfig,
-  "EventValueThreshold" : String,
-  "FeatureTransformationParameters" : {Key: Value, ...},
-  "HpoConfig" : HpoConfig
+  "[AlgorithmHyperParameters](#cfn-personalize-solution-solutionconfig-algorithmhyperparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[AutoMLConfig](#cfn-personalize-solution-solutionconfig-automlconfig)" : {{AutoMLConfig}},
+  "[EventValueThreshold](#cfn-personalize-solution-solutionconfig-eventvaluethreshold)" : {{String}},
+  "[FeatureTransformationParameters](#cfn-personalize-solution-solutionconfig-featuretransformationparameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[HpoConfig](#cfn-personalize-solution-solutionconfig-hpoconfig)" : {{HpoConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-personalize-solution-solutionconfig-syntax.yaml"></a>
 
-```yaml
-
-  AlgorithmHyperParameters:
-    Key: Value
-  AutoMLConfig:
-    AutoMLConfig
-  EventValueThreshold: String
-  FeatureTransformationParameters:
-    Key: Value
-  HpoConfig:
-    HpoConfig
-
+```
+  [AlgorithmHyperParameters](#cfn-personalize-solution-solutionconfig-algorithmhyperparameters): {{
+    {{Key}}: {{Value}}}}
+  [AutoMLConfig](#cfn-personalize-solution-solutionconfig-automlconfig): {{
+    AutoMLConfig}}
+  [EventValueThreshold](#cfn-personalize-solution-solutionconfig-eventvaluethreshold): {{String}}
+  [FeatureTransformationParameters](#cfn-personalize-solution-solutionconfig-featuretransformationparameters): {{
+    {{Key}}: {{Value}}}}
+  [HpoConfig](#cfn-personalize-solution-solutionconfig-hpoconfig): {{
+    HpoConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-personalize-solution-solutionconfig-properties"></a>
 
-`AlgorithmHyperParameters`
-
+`AlgorithmHyperParameters`  <a name="cfn-personalize-solution-solutionconfig-algorithmhyperparameters"></a>
 Lists the algorithm hyperparameters and their values.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`AutoMLConfig`  <a name="cfn-personalize-solution-solutionconfig-automlconfig"></a>
+The [AutoMLConfig](https://docs.aws.amazon.com/personalize/latest/dg/API_AutoMLConfig.html) object containing a list of recipes to search when AutoML is performed.
+*Required*: No
+*Type*: [AutoMLConfig](aws-properties-personalize-solution-automlconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Object of String
+`EventValueThreshold`  <a name="cfn-personalize-solution-solutionconfig-eventvaluethreshold"></a>
+Only events with a value greater than or equal to this threshold are used for training a model.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Pattern_: `.{1,}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AutoMLConfig`
-
-The [AutoMLConfig](../../../personalize/latest/dg/api-automlconfig.md) object containing a list of recipes to search
-when AutoML is performed.
-
-_Required_: No
-
-_Type_: [AutoMLConfig](aws-properties-personalize-solution-automlconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EventValueThreshold`
-
-Only events with a value greater than or equal to this threshold are
-used for training a model.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FeatureTransformationParameters`
-
+`FeatureTransformationParameters`  <a name="cfn-personalize-solution-solutionconfig-featuretransformationparameters"></a>
 Lists the feature transformation parameters.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.{1,}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.{1,}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HpoConfig`
-
+`HpoConfig`  <a name="cfn-personalize-solution-solutionconfig-hpoconfig"></a>
 Describes the properties for hyperparameter optimization (HPO).
-
-_Required_: No
-
-_Type_: [HpoConfig](aws-properties-personalize-solution-hpoconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IntegerHyperParameterRange
-
-Next
+*Required*: No
+*Type*: [HpoConfig](aws-properties-personalize-solution-hpoconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,113 +2,80 @@
 title: "AWS::Wisdom::AIAgent OrchestrationAIAgentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIAgent OrchestrationAIAgentConfiguration
+<a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration"></a>
 
 The configuration for AI Agents of type `ORCHESTRATION`.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectInstanceArn" : String,
-  "Locale" : String,
-  "OrchestrationAIGuardrailId" : String,
-  "OrchestrationAIPromptId" : String,
-  "ToolConfigurations" : [ ToolConfiguration, ... ]
+  "[ConnectInstanceArn](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn)" : {{String}},
+  "[Locale](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-locale)" : {{String}},
+  "[OrchestrationAIGuardrailId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaiguardrailid)" : {{String}},
+  "[OrchestrationAIPromptId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaipromptid)" : {{String}},
+  "[ToolConfigurations](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-toolconfigurations)" : {{[ ToolConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ConnectInstanceArn: String
-  Locale: String
-  OrchestrationAIGuardrailId: String
-  OrchestrationAIPromptId: String
-  ToolConfigurations:
-    - ToolConfiguration
-
+```
+  [ConnectInstanceArn](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn): {{String}}
+  [Locale](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-locale): {{String}}
+  [OrchestrationAIGuardrailId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaiguardrailid): {{String}}
+  [OrchestrationAIPromptId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaipromptid): {{String}}
+  [ToolConfigurations](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-toolconfigurations): {{
+    - ToolConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration-properties"></a>
 
-`ConnectInstanceArn`
-
+`ConnectInstanceArn`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn"></a>
 The Amazon Resource Name (ARN) of the Amazon Connect instance used by the Orchestration AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[a-z-]+?:[a-z-]+?:[a-z0-9-]*?:([0-9]{12})?:[a-zA-Z0-9-:/]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[a-z-]+?:[a-z-]+?:[a-z0-9-]*?:([0-9]{12})?:[a-zA-Z0-9-:/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Locale`
-
+`Locale`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-locale"></a>
 The locale setting for the Orchestration AI Agent.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrchestrationAIGuardrailId`
-
+`OrchestrationAIGuardrailId`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaiguardrailid"></a>
 The AI Guardrail identifier used by the Orchestration AI Agent.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrchestrationAIPromptId`
-
+`OrchestrationAIPromptId`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaipromptid"></a>
 The AI Prompt identifier used by the Orchestration AI Agent.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToolConfigurations`
-
+`ToolConfigurations`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-toolconfigurations"></a>
 The tool configurations used by the Orchestration AI Agent.
-
-_Required_: No
-
-_Type_: Array of [ToolConfiguration](aws-properties-wisdom-aiagent-toolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NoteTakingAIAgentConfiguration
-
-OrCondition
+*Required*: No
+*Type*: Array of [ToolConfiguration](aws-properties-wisdom-aiagent-toolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

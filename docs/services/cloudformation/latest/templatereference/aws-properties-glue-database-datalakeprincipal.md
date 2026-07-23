@@ -2,56 +2,43 @@
 title: "AWS::Glue::Database DataLakePrincipal"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Database DataLakePrincipal
+<a name="aws-properties-glue-database-datalakeprincipal"></a>
 
 The AWS Lake Formation principal.
 
 ## Syntax
+<a name="aws-properties-glue-database-datalakeprincipal-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-database-datalakeprincipal-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataLakePrincipalIdentifier" : String
+  "[DataLakePrincipalIdentifier](#cfn-glue-database-datalakeprincipal-datalakeprincipalidentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-database-datalakeprincipal-syntax.yaml"></a>
 
-```yaml
-
-  DataLakePrincipalIdentifier: String
-
+```
+  [DataLakePrincipalIdentifier](#cfn-glue-database-datalakeprincipal-datalakeprincipalidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-database-datalakeprincipal-properties"></a>
 
-`DataLakePrincipalIdentifier`
-
+`DataLakePrincipalIdentifier`  <a name="cfn-glue-database-datalakeprincipal-datalakeprincipalidentifier"></a>
 An identifier for the AWS Lake Formation principal.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatabaseInput
-
-FederatedDatabase
+*Required*: Conditional
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::Route53RecoveryReadiness::ResourceSet TargetResource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryReadiness::ResourceSet TargetResource
+<a name="aws-properties-route53recoveryreadiness-resourceset-targetresource"></a>
 
 The target resource that the Route 53 record points to.
 
 ## Syntax
+<a name="aws-properties-route53recoveryreadiness-resourceset-targetresource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53recoveryreadiness-resourceset-targetresource-syntax.json"></a>
 
-```json
-
+```
 {
-  "NLBResource" : NLBResource,
-  "R53Resource" : R53ResourceRecord
+  "[NLBResource](#cfn-route53recoveryreadiness-resourceset-targetresource-nlbresource)" : {{NLBResource}},
+  "[R53Resource](#cfn-route53recoveryreadiness-resourceset-targetresource-r53resource)" : {{R53ResourceRecord}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53recoveryreadiness-resourceset-targetresource-syntax.yaml"></a>
 
-```yaml
-
-  NLBResource:
-    NLBResource
-  R53Resource:
-    R53ResourceRecord
-
+```
+  [NLBResource](#cfn-route53recoveryreadiness-resourceset-targetresource-nlbresource): {{
+    NLBResource}}
+  [R53Resource](#cfn-route53recoveryreadiness-resourceset-targetresource-r53resource): {{
+    R53ResourceRecord}}
 ```
 
 ## Properties
+<a name="aws-properties-route53recoveryreadiness-resourceset-targetresource-properties"></a>
 
-`NLBResource`
-
+`NLBResource`  <a name="cfn-route53recoveryreadiness-resourceset-targetresource-nlbresource"></a>
 The Network Load Balancer resource that a DNS target resource points to.
+*Required*: No
+*Type*: [NLBResource](aws-properties-route53recoveryreadiness-resourceset-nlbresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NLBResource](aws-properties-route53recoveryreadiness-resourceset-nlbresource.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`R53Resource`
-
+`R53Resource`  <a name="cfn-route53recoveryreadiness-resourceset-targetresource-r53resource"></a>
 The Route 53 resource that a DNS target resource record points to.
-
-_Required_: No
-
-_Type_: [R53ResourceRecord](aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+*Required*: No
+*Type*: [R53ResourceRecord](aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

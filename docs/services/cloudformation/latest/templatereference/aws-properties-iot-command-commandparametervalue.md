@@ -2,138 +2,96 @@
 title: "AWS::IoT::Command CommandParameterValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::Command CommandParameterValue
+<a name="aws-properties-iot-command-commandparametervalue"></a>
 
-The `CommandParameterValue` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
+<a name="aws-properties-iot-command-commandparametervalue-description"></a>The `CommandParameterValue` property type specifies Property description not available. for an [AWS::IoT::Command](aws-resource-iot-command.md).
 
 ## Syntax
+<a name="aws-properties-iot-command-commandparametervalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-command-commandparametervalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "B" : Boolean,
-  "BIN" : String,
-  "D" : Number,
-  "I" : Integer,
-  "L" : String,
-  "S" : String,
-  "UL" : String
+  "[B](#cfn-iot-command-commandparametervalue-b)" : {{Boolean}},
+  "[BIN](#cfn-iot-command-commandparametervalue-bin)" : {{String}},
+  "[D](#cfn-iot-command-commandparametervalue-d)" : {{Number}},
+  "[I](#cfn-iot-command-commandparametervalue-i)" : {{Integer}},
+  "[L](#cfn-iot-command-commandparametervalue-l)" : {{String}},
+  "[S](#cfn-iot-command-commandparametervalue-s)" : {{String}},
+  "[UL](#cfn-iot-command-commandparametervalue-ul)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-command-commandparametervalue-syntax.yaml"></a>
 
-```yaml
-
-  B: Boolean
-  BIN: String
-  D: Number
-  I: Integer
-  L: String
-  S: String
-  UL: String
-
+```
+  [B](#cfn-iot-command-commandparametervalue-b): {{Boolean}}
+  [BIN](#cfn-iot-command-commandparametervalue-bin): {{String}}
+  [D](#cfn-iot-command-commandparametervalue-d): {{Number}}
+  [I](#cfn-iot-command-commandparametervalue-i): {{Integer}}
+  [L](#cfn-iot-command-commandparametervalue-l): {{String}}
+  [S](#cfn-iot-command-commandparametervalue-s): {{String}}
+  [UL](#cfn-iot-command-commandparametervalue-ul): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-command-commandparametervalue-properties"></a>
 
-`B`
-
+`B`  <a name="cfn-iot-command-commandparametervalue-b"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BIN`
-
+`BIN`  <a name="cfn-iot-command-commandparametervalue-bin"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`D`
-
+`D`  <a name="cfn-iot-command-commandparametervalue-d"></a>
 Property description not available.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`I`
-
+`I`  <a name="cfn-iot-command-commandparametervalue-i"></a>
 Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`L`
-
+`L`  <a name="cfn-iot-command-commandparametervalue-l"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^-?\d+$`
+*Maximum*: `19`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^-?\d+$`
-
-_Maximum_: `19`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S`
-
+`S`  <a name="cfn-iot-command-commandparametervalue-s"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UL`
-
+`UL`  <a name="cfn-iot-command-commandparametervalue-ul"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CommandParameter
-
-CommandParameterValueComparisonOperand
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]*$`
+*Minimum*: `1`
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

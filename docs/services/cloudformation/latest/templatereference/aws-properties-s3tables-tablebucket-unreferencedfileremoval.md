@@ -2,82 +2,60 @@
 title: "AWS::S3Tables::TableBucket UnreferencedFileRemoval"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::TableBucket UnreferencedFileRemoval
+<a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval"></a>
 
-The unreferenced file removal settings for your table bucket. Unreferenced file removal identifies and deletes all objects that are not referenced by any table snapshots. For more information, see the [_Amazon S3 User Guide_](../../../s3/latest/userguide/s3-table-buckets-maintenance.md).
+The unreferenced file removal settings for your table bucket. Unreferenced file removal identifies and deletes all objects that are not referenced by any table snapshots. For more information, see the [https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-table-buckets-maintenance.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-table-buckets-maintenance.html).
 
 ## Syntax
+<a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval-syntax.json"></a>
 
-```json
-
+```
 {
-  "NoncurrentDays" : Integer,
-  "Status" : String,
-  "UnreferencedDays" : Integer
+  "[NoncurrentDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-noncurrentdays)" : {{Integer}},
+  "[Status](#cfn-s3tables-tablebucket-unreferencedfileremoval-status)" : {{String}},
+  "[UnreferencedDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-unreferenceddays)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval-syntax.yaml"></a>
 
-```yaml
-
-  NoncurrentDays: Integer
-  Status: String
-  UnreferencedDays: Integer
-
+```
+  [NoncurrentDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-noncurrentdays): {{Integer}}
+  [Status](#cfn-s3tables-tablebucket-unreferencedfileremoval-status): {{String}}
+  [UnreferencedDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-unreferenceddays): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval-properties"></a>
 
-`NoncurrentDays`
-
+`NoncurrentDays`  <a name="cfn-s3tables-tablebucket-unreferencedfileremoval-noncurrentdays"></a>
 The number of days an object can be noncurrent before Amazon S3 deletes it.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-s3tables-tablebucket-unreferencedfileremoval-status"></a>
 The status of the unreferenced file removal configuration for your table bucket.
+*Required*: No
+*Type*: String
+*Allowed values*: `Enabled | Disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Enabled | Disabled`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnreferencedDays`
-
+`UnreferencedDays`  <a name="cfn-s3tables-tablebucket-unreferencedfileremoval-unreferenceddays"></a>
 The number of days an object must be unreferenced by your table before Amazon S3 marks the object as noncurrent.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::S3Tables::TableBucketPolicy
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

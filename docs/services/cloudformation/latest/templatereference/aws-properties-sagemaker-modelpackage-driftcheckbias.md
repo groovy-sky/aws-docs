@@ -2,80 +2,60 @@
 title: "AWS::SageMaker::ModelPackage DriftCheckBias"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage DriftCheckBias
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbias"></a>
 
-Represents the drift check bias baselines that can be used when the model monitor is
-set using the model package.
+Represents the drift check bias baselines that can be used when the model monitor is set using the model package.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbias-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbias-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConfigFile" : FileSource,
-  "PostTrainingConstraints" : MetricsSource,
-  "PreTrainingConstraints" : MetricsSource
+  "[ConfigFile](#cfn-sagemaker-modelpackage-driftcheckbias-configfile)" : {{FileSource}},
+  "[PostTrainingConstraints](#cfn-sagemaker-modelpackage-driftcheckbias-posttrainingconstraints)" : {{MetricsSource}},
+  "[PreTrainingConstraints](#cfn-sagemaker-modelpackage-driftcheckbias-pretrainingconstraints)" : {{MetricsSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbias-syntax.yaml"></a>
 
-```yaml
-
-  ConfigFile:
-    FileSource
-  PostTrainingConstraints:
-    MetricsSource
-  PreTrainingConstraints:
-    MetricsSource
-
+```
+  [ConfigFile](#cfn-sagemaker-modelpackage-driftcheckbias-configfile): {{
+    FileSource}}
+  [PostTrainingConstraints](#cfn-sagemaker-modelpackage-driftcheckbias-posttrainingconstraints): {{
+    MetricsSource}}
+  [PreTrainingConstraints](#cfn-sagemaker-modelpackage-driftcheckbias-pretrainingconstraints): {{
+    MetricsSource}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbias-properties"></a>
 
-`ConfigFile`
-
+`ConfigFile`  <a name="cfn-sagemaker-modelpackage-driftcheckbias-configfile"></a>
 The bias config file for a model.
+*Required*: No
+*Type*: [FileSource](aws-properties-sagemaker-modelpackage-filesource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [FileSource](aws-properties-sagemaker-modelpackage-filesource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PostTrainingConstraints`
-
+`PostTrainingConstraints`  <a name="cfn-sagemaker-modelpackage-driftcheckbias-posttrainingconstraints"></a>
 The post-training constraints.
+*Required*: No
+*Type*: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PreTrainingConstraints`
-
+`PreTrainingConstraints`  <a name="cfn-sagemaker-modelpackage-driftcheckbias-pretrainingconstraints"></a>
 The pre-training constraints.
-
-_Required_: No
-
-_Type_: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DriftCheckBaselines
-
-DriftCheckExplainability
+*Required*: No
+*Type*: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

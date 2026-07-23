@@ -2,93 +2,63 @@
 title: "AWS::CloudWatch::Alarm AlarmPromQLCriteria"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Alarm AlarmPromQLCriteria
+<a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria"></a>
 
-Contains the configuration that determines how a PromQL alarm evaluates its
-contributors, including the query to run and the durations that define when contributors
-transition between states.
+Contains the configuration that determines how a PromQL alarm evaluates its contributors, including the query to run and the durations that define when contributors transition between states.
 
 ## Syntax
+<a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria-syntax.json"></a>
 
-```json
-
+```
 {
-  "PendingPeriod" : Integer,
-  "Query" : String,
-  "RecoveryPeriod" : Integer
+  "[PendingPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-pendingperiod)" : {{Integer}},
+  "[Query](#cfn-cloudwatch-alarm-alarmpromqlcriteria-query)" : {{String}},
+  "[RecoveryPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-recoveryperiod)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria-syntax.yaml"></a>
 
-```yaml
-
-  PendingPeriod: Integer
-  Query: String
-  RecoveryPeriod: Integer
-
+```
+  [PendingPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-pendingperiod): {{Integer}}
+  [Query](#cfn-cloudwatch-alarm-alarmpromqlcriteria-query): {{String}}
+  [RecoveryPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-recoveryperiod): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria-properties"></a>
 
-`PendingPeriod`
+`PendingPeriod`  <a name="cfn-cloudwatch-alarm-alarmpromqlcriteria-pendingperiod"></a>
+The duration, in seconds, that a contributor must be continuously breaching before it transitions to the `ALARM` state.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `86400`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The duration, in seconds, that a contributor must be continuously breaching before
-it transitions to the `ALARM` state.
+`Query`  <a name="cfn-cloudwatch-alarm-alarmpromqlcriteria-query"></a>
+The PromQL query that the alarm evaluates. The query must return a result of vector type. Each entry in the vector result represents an alarm contributor.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `86400`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Query`
-
-The PromQL query that the alarm evaluates. The query must return a result of vector
-type. Each entry in the vector result represents an alarm contributor.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecoveryPeriod`
-
-The duration, in seconds, that a contributor must continuously not be breaching
-before it transitions back to the `OK` state.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `86400`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudWatch::Alarm
-
-Dimension
+`RecoveryPeriod`  <a name="cfn-cloudwatch-alarm-alarmpromqlcriteria-recoveryperiod"></a>
+The duration, in seconds, that a contributor must continuously not be breaching before it transitions back to the `OK` state.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `86400`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

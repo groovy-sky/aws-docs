@@ -2,72 +2,54 @@
 title: "AWS::RTBFabric::ResponderGateway Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::ResponderGateway Tag
+<a name="aws-properties-rtbfabric-respondergateway-tag"></a>
 
-The `Tag` property type specifies Property description not available. for an [AWS::RTBFabric::ResponderGateway](aws-resource-rtbfabric-respondergateway.md).
+<a name="aws-properties-rtbfabric-respondergateway-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::RTBFabric::ResponderGateway](aws-resource-rtbfabric-respondergateway.md).
 
 ## Syntax
+<a name="aws-properties-rtbfabric-respondergateway-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rtbfabric-respondergateway-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-rtbfabric-respondergateway-tag-key)" : {{String}},
+  "[Value](#cfn-rtbfabric-respondergateway-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rtbfabric-respondergateway-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-rtbfabric-respondergateway-tag-key): {{String}}
+  [Value](#cfn-rtbfabric-respondergateway-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rtbfabric-respondergateway-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-rtbfabric-respondergateway-tag-key"></a>
 The key name of the tag.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(resourceArn|internalId|[a-zA-Z0-9+\-=._:/@]+)$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-rtbfabric-respondergateway-tag-value"></a>
 The value for the tag.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManagedEndpointConfiguration
-
-TrustStoreConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

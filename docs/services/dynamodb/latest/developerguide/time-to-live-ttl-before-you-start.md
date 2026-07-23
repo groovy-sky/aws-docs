@@ -3,41 +3,29 @@ title: "Computing time to live (TTL) in DynamoDB"
 ---
 
 # Computing time to live (TTL) in DynamoDB
+<a name="time-to-live-ttl-before-you-start"></a>
 
-A common way to implement TTL is to set an expiration time for items based on when they
-were created or last updated. This can be done by adding time to the `createdAt`
-and `updatedAt` timestamps. For example, the TTL for newly created items can be
-set to `createdAt` \+ 90 days. When the item is updated the TTL can be
-recalculated to `updatedAt` \+ 90 days.
+A common way to implement TTL is to set an expiration time for items based on when they were created or last updated. This can be done by adding time to the `createdAt` and `updatedAt` timestamps. For example, the TTL for newly created items can be set to `createdAt` \+ 90 days. When the item is updated the TTL can be recalculated to `updatedAt` \+ 90 days.
 
-The computed expiration time must be in epoch format, in seconds. To be considered for
-expiry and deletion, the TTL can't be more than five years in the past. If you use any other
-format, the TTL processes ignore the item. If you set the expiration time to sometime in the
-future when you want the item to expire, the item expires after that time. For
-example, say that you set the expiration time to 1724241326 (which is Monday, August 21,
-2024 11:55:26 (UTC)). The item expires after the specified time. There is no minimum
-TTL duration. You can set the expiration time to any future time, such as 5
-minutes from the current time. However, DynamoDB typically deletes expired items within
-48 hours after their expiration time, not immediately when the item expires.
+The computed expiration time must be in epoch format, in seconds. To be considered for expiry and deletion, the TTL can't be more than five years in the past. If you use any other format, the TTL processes ignore the item. If you set the expiration time to sometime in the future when you want the item to expire, the item expires after that time. For example, say that you set the expiration time to 1724241326 (which is Monday, August 21, 2024 11:55:26 (UTC)). The item expires after the specified time. There is no minimum TTL duration. You can set the expiration time to any future time, such as 5 minutes from the current time.
 
-###### Topics
-
-- [Create an item and set the Time to Live](#time-to-live-ttl-before-you-start-create)
-
-- [Update an item and refresh the Time to Live](#time-to-live-ttl-before-you-start-update)
+**Topics**
++ [Create an item and set the Time to Live](#time-to-live-ttl-before-you-start-create)
++ [Update an item and refresh the Time to Live](#time-to-live-ttl-before-you-start-update)
 
 ## Create an item and set the Time to Live
+<a name="time-to-live-ttl-before-you-start-create"></a>
 
 The following example demonstrates how to calculate the expiration time when creating a new item, using `expireAt` as the TTL attribute name. An assignment statement obtains the current time as a variable. In the example, the expiration time is calculated as 90 days from the current time. The time is then converted to epoch format and saved as an integer data type in the TTL attribute.
 
 The following code examples show how to create an item with TTL.
 
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
 
-```java
-
+```
 package com.amazon.samplelib.ttl;
 
 import com.amazon.samplelib.CodeSampleUtils;
@@ -187,19 +175,15 @@ public class CreateTTL {
         }
     }
 }
-
 ```
++  For API details, see [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
 
-```javascript
-
+```
 import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
 
 export function createDynamoDBItem(table_name, region, partition_key, sort_key) {
@@ -244,19 +228,15 @@ export function createDynamoDBItem(table_name, region, partition_key, sort_key) 
 
 // Example usage (commented out for testing)
 // createDynamoDBItem('your-table-name', 'us-east-1', 'your-partition-key-value', 'your-sort-key-value');
-
 ```
++  For API details, see [PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
 
-```python
-
+```
 from datetime import datetime, timedelta
 
 import boto3
@@ -299,30 +279,25 @@ def create_dynamodb_item(table_name, region, primary_key, sort_key):
 create_dynamodb_item(
     "your-table-name", "us-west-2", "your-partition-key-value", "your-sort-key-value"
 )
-
 ```
++  For API details, see [PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
-in _AWS SDK for Python (Boto3) API Reference_.
+------
 
 ## Update an item and refresh the Time to Live
+<a name="time-to-live-ttl-before-you-start-update"></a>
 
-This example is a continuation of the one from the [previous section](#time-to-live-ttl-before-you-start-create). The
-expiration time can be recomputed if the item is updated. The following example
-recomputes the `expireAt` timestamp to be 90 days from the current
-time.
+This example is a continuation of the one from the [previous section](#time-to-live-ttl-before-you-start-create). The expiration time can be recomputed if the item is updated. The following example recomputes the `expireAt` timestamp to be 90 days from the current time.
 
 The following code examples show how to update an item's TTL.
 
-Java
+------
+#### [ Java ]
 
 **SDK for Java 2.x**
-
 Update TTL on an existing DynamoDB item in a table.
 
-```java
-
+```
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -374,19 +349,15 @@ import java.util.Optional;
             throw e;
         }
     }
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Java 2.x API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Java 2.x API Reference_.
-
-JavaScript
+------
+#### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
 
-```javascript
-
+```
 import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
 
@@ -425,19 +396,15 @@ export const updateItem = async (tableName, partitionKey, sortKey, region = 'us-
 
 // Example usage (commented out for testing)
 // updateItem('your-table-name', 'your-partition-key-value', 'your-sort-key-value');
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand) in *AWS SDK for JavaScript API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
-in _AWS SDK for JavaScript API Reference_.
-
-Python
+------
+#### [ Python ]
 
 **SDK for Python (Boto3)**
 
-```python
-
+```
 from datetime import datetime, timedelta
 
 import boto3
@@ -476,22 +443,11 @@ def update_dynamodb_item(table_name, region, primary_key, sort_key):
 update_dynamodb_item(
     "your-table-name", "us-west-2", "your-partition-key-value", "your-sort-key-value"
 )
-
 ```
++  For API details, see [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem) in *AWS SDK for Python (Boto3) API Reference*.
 
-- For API details, see
-[UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
-in _AWS SDK for Python (Boto3) API Reference_.
+------
 
-The TTL examples discussed in this introduction demonstrate a method to ensure only
-recently updated items are kept in a table. Updated items have their lifespan extended,
-whereas items not updated post-creation expire and are deleted at no cost, reducing
-storage and maintaining clean tables.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Enable TTL
-
-Working with expired items
+The TTL examples discussed in this introduction demonstrate a method to ensure only recently updated items are kept in a table. Updated items have their lifespan extended, whereas items not updated post-creation expire and are deleted at no cost, reducing storage and maintaining clean tables.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,152 +2,108 @@
 title: "AWS::SecurityHub::ConfigurationPolicy ParameterValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ConfigurationPolicy ParameterValue
+<a name="aws-properties-securityhub-configurationpolicy-parametervalue"></a>
 
-An object that includes the data type of a security control parameter and its current value.
+ An object that includes the data type of a security control parameter and its current value.
 
 ## Syntax
+<a name="aws-properties-securityhub-configurationpolicy-parametervalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityhub-configurationpolicy-parametervalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "Boolean" : Boolean,
-  "Double" : Number,
-  "Enum" : String,
-  "EnumList" : [ String, ... ],
-  "Integer" : Integer,
-  "IntegerList" : [ Integer, ... ],
-  "String" : String,
-  "StringList" : [ String, ... ]
+  "[Boolean](#cfn-securityhub-configurationpolicy-parametervalue-boolean)" : {{Boolean}},
+  "[Double](#cfn-securityhub-configurationpolicy-parametervalue-double)" : {{Number}},
+  "[Enum](#cfn-securityhub-configurationpolicy-parametervalue-enum)" : {{String}},
+  "[EnumList](#cfn-securityhub-configurationpolicy-parametervalue-enumlist)" : {{[ String, ... ]}},
+  "[Integer](#cfn-securityhub-configurationpolicy-parametervalue-integer)" : {{Integer}},
+  "[IntegerList](#cfn-securityhub-configurationpolicy-parametervalue-integerlist)" : {{[ Integer, ... ]}},
+  "[String](#cfn-securityhub-configurationpolicy-parametervalue-string)" : {{String}},
+  "[StringList](#cfn-securityhub-configurationpolicy-parametervalue-stringlist)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityhub-configurationpolicy-parametervalue-syntax.yaml"></a>
 
-```yaml
-
-  Boolean:
-    Boolean
-  Double: Number
-  Enum: String
-  EnumList:
-    - String
-  Integer:
-    Integer
-  IntegerList:
-    - Integer
-  String:
-    String
-  StringList:
-    - String
-
+```
+  [Boolean](#cfn-securityhub-configurationpolicy-parametervalue-boolean): {{
+    Boolean}}
+  [Double](#cfn-securityhub-configurationpolicy-parametervalue-double): {{Number}}
+  [Enum](#cfn-securityhub-configurationpolicy-parametervalue-enum): {{String}}
+  [EnumList](#cfn-securityhub-configurationpolicy-parametervalue-enumlist): {{
+    - String}}
+  [Integer](#cfn-securityhub-configurationpolicy-parametervalue-integer): {{
+    Integer}}
+  [IntegerList](#cfn-securityhub-configurationpolicy-parametervalue-integerlist): {{
+    - Integer}}
+  [String](#cfn-securityhub-configurationpolicy-parametervalue-string): {{
+    String}}
+  [StringList](#cfn-securityhub-configurationpolicy-parametervalue-stringlist): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-securityhub-configurationpolicy-parametervalue-properties"></a>
 
-`Boolean`
+`Boolean`  <a name="cfn-securityhub-configurationpolicy-parametervalue-boolean"></a>
+ A control parameter that is a boolean.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A control parameter that is a boolean.
+`Double`  <a name="cfn-securityhub-configurationpolicy-parametervalue-double"></a>
+ A control parameter that is a double.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Enum`  <a name="cfn-securityhub-configurationpolicy-parametervalue-enum"></a>
+ A control parameter that is an enum.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`EnumList`  <a name="cfn-securityhub-configurationpolicy-parametervalue-enumlist"></a>
+ A control parameter that is a list of enums.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `2048 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Integer`  <a name="cfn-securityhub-configurationpolicy-parametervalue-integer"></a>
+ A control parameter that is an integer.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Double`
+`IntegerList`  <a name="cfn-securityhub-configurationpolicy-parametervalue-integerlist"></a>
+ A control parameter that is a list of integers.
+*Required*: No
+*Type*: Array of Integer
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A control parameter that is a double.
+`String`  <a name="cfn-securityhub-configurationpolicy-parametervalue-string"></a>
+ A control parameter that is a string.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enum`
-
-A control parameter that is an enum.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EnumList`
-
-A control parameter that is a list of enums.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `2048 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Integer`
-
-A control parameter that is an integer.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegerList`
-
-A control parameter that is a list of integers.
-
-_Required_: No
-
-_Type_: Array of Integer
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`String`
-
-A control parameter that is a string.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringList`
-
-A control parameter that is a list of strings.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `2048 | 100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterConfiguration
-
-Policy
+`StringList`  <a name="cfn-securityhub-configurationpolicy-parametervalue-stringlist"></a>
+ A control parameter that is a list of strings.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `2048 | 100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

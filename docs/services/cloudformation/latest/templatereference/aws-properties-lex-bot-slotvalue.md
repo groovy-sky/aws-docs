@@ -2,60 +2,43 @@
 title: "AWS::Lex::Bot SlotValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotValue
+<a name="aws-properties-lex-bot-slotvalue"></a>
 
 The value to set in a slot.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slotvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slotvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "InterpretedValue" : String
+  "[InterpretedValue](#cfn-lex-bot-slotvalue-interpretedvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slotvalue-syntax.yaml"></a>
 
-```yaml
-
-  InterpretedValue: String
-
+```
+  [InterpretedValue](#cfn-lex-bot-slotvalue-interpretedvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slotvalue-properties"></a>
 
-`InterpretedValue`
-
-The value that Amazon Lex determines for the slot. The
-actual value depends on the setting of the value selection strategy for
-the bot. You can choose to use the value entered by the user, or you
-can have Amazon Lex choose the first value in the
-`resolvedValues` list.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `202`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlotTypeValue
-
-SlotValueElicitationSetting
+`InterpretedValue`  <a name="cfn-lex-bot-slotvalue-interpretedvalue"></a>
+The value that Amazon Lex determines for the slot. The actual value depends on the setting of the value selection strategy for the bot. You can choose to use the value entered by the user, or you can have Amazon Lex choose the first value in the `resolvedValues` list.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `202`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

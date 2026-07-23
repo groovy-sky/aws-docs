@@ -2,105 +2,83 @@
 title: "AWS::Rekognition::Project"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rekognition::Project
+<a name="aws-resource-rekognition-project"></a>
 
-The `AWS::Rekognition::Project` type creates an Amazon Rekognition Custom Labels
-project. A project is a group of resources needed to create and manage versions of an
-Amazon Rekognition Custom Labels model.
+The `AWS::Rekognition::Project` type creates an Amazon Rekognition Custom Labels project. A project is a group of resources needed to create and manage versions of an Amazon Rekognition Custom Labels model.
 
 ## Syntax
+<a name="aws-resource-rekognition-project-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rekognition-project-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Rekognition::Project",
   "Properties" : {
-      "ProjectName" : String,
-      "Tags" : [ Tag, ... ]
+      "[ProjectName](#cfn-rekognition-project-projectname)" : {{String}},
+      "[Tags](#cfn-rekognition-project-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rekognition-project-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Rekognition::Project
 Properties:
-  ProjectName: String
-  Tags:
-    - Tag
-
+  [ProjectName](#cfn-rekognition-project-projectname): {{String}}
+  [Tags](#cfn-rekognition-project-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-rekognition-project-properties"></a>
 
-`ProjectName`
-
+`ProjectName`  <a name="cfn-rekognition-project-projectname"></a>
 The name of the project to create.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9][a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9][a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-rekognition-project-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rekognition-project-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rekognition-project-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rekognition-project-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rekognition-project-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns
-the project name. For example:
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the project name. For example:
 
-`{ "Ref": "CircuitBoardProject" }`
+ `{ "Ref": "CircuitBoardProject" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-rekognition-project-return-values-fn--getatt"></a>
 
-`Fn::GetAtt`
-returns a value for a specified attribute of this type. The
-following are the available attributes and sample return values. For more information about
-using `Fn::GetAtt`, see
-[Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+`Fn::GetAtt` returns a value for a specified attribute of this type. The following are the available attributes and sample return values. For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-rekognition-project-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Returns the Amazon Resource Name of the project.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

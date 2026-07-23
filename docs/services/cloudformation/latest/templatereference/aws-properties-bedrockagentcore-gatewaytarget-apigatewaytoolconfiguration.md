@@ -2,66 +2,51 @@
 title: "AWS::BedrockAgentCore::GatewayTarget ApiGatewayToolConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget ApiGatewayToolConfiguration
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration"></a>
 
 The configuration for defining REST API tool filters and overrides for the gateway target.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ToolFilters" : [ ApiGatewayToolFilter, ... ],
-  "ToolOverrides" : [ ApiGatewayToolOverride, ... ]
+  "[ToolFilters](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-toolfilters)" : {{[ ApiGatewayToolFilter, ... ]}},
+  "[ToolOverrides](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-tooloverrides)" : {{[ ApiGatewayToolOverride, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ToolFilters:
-    - ApiGatewayToolFilter
-  ToolOverrides:
-    - ApiGatewayToolOverride
-
+```
+  [ToolFilters](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-toolfilters): {{
+    - ApiGatewayToolFilter}}
+  [ToolOverrides](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-tooloverrides): {{
+    - ApiGatewayToolOverride}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-properties"></a>
 
-`ToolFilters`
-
+`ToolFilters`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-toolfilters"></a>
 A list of path and method patterns to expose as tools using metadata from the REST API's OpenAPI specification.
+*Required*: Yes
+*Type*: Array of [ApiGatewayToolFilter](aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [ApiGatewayToolFilter](aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToolOverrides`
-
+`ToolOverrides`  <a name="cfn-bedrockagentcore-gatewaytarget-apigatewaytoolconfiguration-tooloverrides"></a>
 A list of explicit tool definitions with optional custom names and descriptions.
-
-_Required_: No
-
-_Type_: Array of [ApiGatewayToolOverride](aws-properties-bedrockagentcore-gatewaytarget-apigatewaytooloverride.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiGatewayTargetConfiguration
-
-ApiGatewayToolFilter
+*Required*: No
+*Type*: Array of [ApiGatewayToolOverride](aws-properties-bedrockagentcore-gatewaytarget-apigatewaytooloverride.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

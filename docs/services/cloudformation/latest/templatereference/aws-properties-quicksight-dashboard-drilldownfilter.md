@@ -2,81 +2,62 @@
 title: "AWS::QuickSight::Dashboard DrillDownFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DrillDownFilter
+<a name="aws-properties-quicksight-dashboard-drilldownfilter"></a>
 
 The drill down filter for the column hierarchies.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-drilldownfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-drilldownfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryFilter" : CategoryDrillDownFilter,
-  "NumericEqualityFilter" : NumericEqualityDrillDownFilter,
-  "TimeRangeFilter" : TimeRangeDrillDownFilter
+  "[CategoryFilter](#cfn-quicksight-dashboard-drilldownfilter-categoryfilter)" : {{CategoryDrillDownFilter}},
+  "[NumericEqualityFilter](#cfn-quicksight-dashboard-drilldownfilter-numericequalityfilter)" : {{NumericEqualityDrillDownFilter}},
+  "[TimeRangeFilter](#cfn-quicksight-dashboard-drilldownfilter-timerangefilter)" : {{TimeRangeDrillDownFilter}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-drilldownfilter-syntax.yaml"></a>
 
-```yaml
-
-  CategoryFilter:
-    CategoryDrillDownFilter
-  NumericEqualityFilter:
-    NumericEqualityDrillDownFilter
-  TimeRangeFilter:
-    TimeRangeDrillDownFilter
-
+```
+  [CategoryFilter](#cfn-quicksight-dashboard-drilldownfilter-categoryfilter): {{
+    CategoryDrillDownFilter}}
+  [NumericEqualityFilter](#cfn-quicksight-dashboard-drilldownfilter-numericequalityfilter): {{
+    NumericEqualityDrillDownFilter}}
+  [TimeRangeFilter](#cfn-quicksight-dashboard-drilldownfilter-timerangefilter): {{
+    TimeRangeDrillDownFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-drilldownfilter-properties"></a>
 
-`CategoryFilter`
-
+`CategoryFilter`  <a name="cfn-quicksight-dashboard-drilldownfilter-categoryfilter"></a>
 The category type drill down filter. This filter is used for string type columns.
+*Required*: No
+*Type*: [CategoryDrillDownFilter](aws-properties-quicksight-dashboard-categorydrilldownfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CategoryDrillDownFilter](aws-properties-quicksight-dashboard-categorydrilldownfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumericEqualityFilter`
-
+`NumericEqualityFilter`  <a name="cfn-quicksight-dashboard-drilldownfilter-numericequalityfilter"></a>
 The numeric equality type drill down filter. This filter is used for number type columns.
+*Required*: No
+*Type*: [NumericEqualityDrillDownFilter](aws-properties-quicksight-dashboard-numericequalitydrilldownfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumericEqualityDrillDownFilter](aws-properties-quicksight-dashboard-numericequalitydrilldownfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeRangeFilter`
-
+`TimeRangeFilter`  <a name="cfn-quicksight-dashboard-drilldownfilter-timerangefilter"></a>
 The time range drill down filter. This filter is used for date time columns.
-
-_Required_: No
-
-_Type_: [TimeRangeDrillDownFilter](aws-properties-quicksight-dashboard-timerangedrilldownfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DonutOptions
-
-DropDownControlDisplayOptions
+*Required*: No
+*Type*: [TimeRangeDrillDownFilter](aws-properties-quicksight-dashboard-timerangedrilldownfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

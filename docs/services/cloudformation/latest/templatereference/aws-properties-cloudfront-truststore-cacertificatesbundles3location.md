@@ -2,94 +2,68 @@
 title: "AWS::CloudFront::TrustStore CaCertificatesBundleS3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::TrustStore CaCertificatesBundleS3Location
+<a name="aws-properties-cloudfront-truststore-cacertificatesbundles3location"></a>
 
 The CA certificates bundle location in Amazon S3.
 
 ## Syntax
+<a name="aws-properties-cloudfront-truststore-cacertificatesbundles3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-truststore-cacertificatesbundles3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String,
-  "Region" : String,
-  "Version" : String
+  "[Bucket](#cfn-cloudfront-truststore-cacertificatesbundles3location-bucket)" : {{String}},
+  "[Key](#cfn-cloudfront-truststore-cacertificatesbundles3location-key)" : {{String}},
+  "[Region](#cfn-cloudfront-truststore-cacertificatesbundles3location-region)" : {{String}},
+  "[Version](#cfn-cloudfront-truststore-cacertificatesbundles3location-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-truststore-cacertificatesbundles3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-  Region: String
-  Version: String
-
+```
+  [Bucket](#cfn-cloudfront-truststore-cacertificatesbundles3location-bucket): {{String}}
+  [Key](#cfn-cloudfront-truststore-cacertificatesbundles3location-key): {{String}}
+  [Region](#cfn-cloudfront-truststore-cacertificatesbundles3location-region): {{String}}
+  [Version](#cfn-cloudfront-truststore-cacertificatesbundles3location-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-truststore-cacertificatesbundles3location-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-cloudfront-truststore-cacertificatesbundles3location-bucket"></a>
 The S3 bucket.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-cloudfront-truststore-cacertificatesbundles3location-key"></a>
 The location's key.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-cloudfront-truststore-cacertificatesbundles3location-region"></a>
 The location's Region.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z]{2}-[a-z]+-\d`
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z]{2}-[a-z]+-\d`
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-cloudfront-truststore-cacertificatesbundles3location-version"></a>
 The location's version.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFront::TrustStore
-
-CaCertificatesBundleSource
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,24 +2,15 @@
 title: "Shared property types reference"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Shared property types reference
+<a name="cfn-reference-shared"></a>
 
 This section contains detailed reference information for property types that CloudFormation supports for use in multiple resource types.
 
-###### Topics
-
-- [CloudFormation resource custom naming](aws-properties-name.md)
-
-- [CloudFormation resource tagging](aws-properties-resource-tags.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS X-Ray
-
-Name
+**Topics**
++ [CloudFormation resource custom naming](aws-properties-name.md)
++ [CloudFormation resource tagging](aws-properties-resource-tags.md)
 
 All content copied from https://docs.aws.amazon.com/.

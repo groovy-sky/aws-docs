@@ -2,56 +2,43 @@
 title: "AWS::Bedrock::KnowledgeBase RedshiftQueryEngineRedshiftStorageConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase RedshiftQueryEngineRedshiftStorageConfiguration
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration"></a>
 
 Contains configurations for storage in Amazon Redshift.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatabaseName" : String
+  "[DatabaseName](#cfn-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-databasename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DatabaseName: String
-
+```
+  [DatabaseName](#cfn-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-databasename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-properties"></a>
 
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-bedrock-knowledgebase-redshiftqueryengineredshiftstorageconfiguration-databasename"></a>
 The name of the Amazon Redshift database.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RedshiftQueryEngineConfiguration
-
-RedshiftQueryEngineStorageConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

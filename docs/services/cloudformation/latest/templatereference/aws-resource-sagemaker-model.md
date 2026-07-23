@@ -2,218 +2,159 @@
 title: "AWS::SageMaker::Model"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Model
+<a name="aws-resource-sagemaker-model"></a>
 
-The `AWS::SageMaker::Model` resource to create a model to host at an Amazon SageMaker endpoint. For
-more information, see [Deploying a\
-Model on Amazon SageMaker Hosting Services](../../../sagemaker/latest/dg/how-it-works-hosting.md) in the _Amazon SageMaker Developer Guide_.
+The `AWS::SageMaker::Model` resource to create a model to host at an Amazon SageMaker endpoint. For more information, see [Deploying a Model on Amazon SageMaker Hosting Services](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.html) in the *Amazon SageMaker Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-sagemaker-model-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-sagemaker-model-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SageMaker::Model",
   "Properties" : {
-      "Containers" : [ ContainerDefinition, ... ],
-      "EnableNetworkIsolation" : Boolean,
-      "ExecutionRoleArn" : String,
-      "InferenceExecutionConfig" : InferenceExecutionConfig,
-      "ModelName" : String,
-      "PrimaryContainer" : ContainerDefinition,
-      "Tags" : [ Tag, ... ],
-      "VpcConfig" : VpcConfig
+      "[Containers](#cfn-sagemaker-model-containers)" : {{[ ContainerDefinition, ... ]}},
+      "[EnableNetworkIsolation](#cfn-sagemaker-model-enablenetworkisolation)" : {{Boolean}},
+      "[ExecutionRoleArn](#cfn-sagemaker-model-executionrolearn)" : {{String}},
+      "[InferenceExecutionConfig](#cfn-sagemaker-model-inferenceexecutionconfig)" : {{InferenceExecutionConfig}},
+      "[ModelName](#cfn-sagemaker-model-modelname)" : {{String}},
+      "[PrimaryContainer](#cfn-sagemaker-model-primarycontainer)" : {{ContainerDefinition}},
+      "[Tags](#cfn-sagemaker-model-tags)" : {{[ Tag, ... ]}},
+      "[VpcConfig](#cfn-sagemaker-model-vpcconfig)" : {{VpcConfig}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-sagemaker-model-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SageMaker::Model
 Properties:
-  Containers:
-    - ContainerDefinition
-  EnableNetworkIsolation: Boolean
-  ExecutionRoleArn: String
-  InferenceExecutionConfig:
-    InferenceExecutionConfig
-  ModelName: String
-  PrimaryContainer:
-    ContainerDefinition
-  Tags:
-    - Tag
-  VpcConfig:
-    VpcConfig
-
+  [Containers](#cfn-sagemaker-model-containers): {{
+    - ContainerDefinition}}
+  [EnableNetworkIsolation](#cfn-sagemaker-model-enablenetworkisolation): {{Boolean}}
+  [ExecutionRoleArn](#cfn-sagemaker-model-executionrolearn): {{String}}
+  [InferenceExecutionConfig](#cfn-sagemaker-model-inferenceexecutionconfig): {{
+    InferenceExecutionConfig}}
+  [ModelName](#cfn-sagemaker-model-modelname): {{String}}
+  [PrimaryContainer](#cfn-sagemaker-model-primarycontainer): {{
+    ContainerDefinition}}
+  [Tags](#cfn-sagemaker-model-tags): {{
+    - Tag}}
+  [VpcConfig](#cfn-sagemaker-model-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-resource-sagemaker-model-properties"></a>
 
-`Containers`
-
+`Containers`  <a name="cfn-sagemaker-model-containers"></a>
 Specifies the containers in the inference pipeline.
+*Required*: No
+*Type*: Array of [ContainerDefinition](aws-properties-sagemaker-model-containerdefinition.md)
+*Minimum*: `0`
+*Maximum*: `15`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`EnableNetworkIsolation`  <a name="cfn-sagemaker-model-enablenetworkisolation"></a>
+Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Array of [ContainerDefinition](aws-properties-sagemaker-model-containerdefinition.md)
+`ExecutionRoleArn`  <a name="cfn-sagemaker-model-executionrolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role that SageMaker can assume to access model artifacts and docker image for deployment on ML compute instances or for batch transform jobs. Deploying on ML compute instances is part of model hosting. For more information, see [SageMaker Roles](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html).
+To be able to pass this role to SageMaker, the caller of this API must have the `iam:PassRole` permission.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `0`
-
-_Maximum_: `15`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EnableNetworkIsolation`
-
-Isolates the model container. No inbound or outbound network calls can be made to or
-from the model container.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ExecutionRoleArn`
-
-The Amazon Resource Name (ARN) of the IAM role that SageMaker can assume to access model
-artifacts and docker image for deployment on ML compute instances or for batch transform
-jobs. Deploying on ML compute instances is part of model hosting. For more information,
-see [SageMaker\
-Roles](../../../sagemaker/latest/dg/sagemaker-roles.md).
-
-###### Note
-
-To be able to pass this role to SageMaker, the caller of this API must have the
-`iam:PassRole` permission.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`InferenceExecutionConfig`
-
+`InferenceExecutionConfig`  <a name="cfn-sagemaker-model-inferenceexecutionconfig"></a>
 Specifies details of how containers in a multi-container endpoint are called.
+*Required*: No
+*Type*: [InferenceExecutionConfig](aws-properties-sagemaker-model-inferenceexecutionconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [InferenceExecutionConfig](aws-properties-sagemaker-model-inferenceexecutionconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelName`
-
+`ModelName`  <a name="cfn-sagemaker-model-modelname"></a>
 The name of the new model.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
+*Minimum*: `0`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`PrimaryContainer`  <a name="cfn-sagemaker-model-primarycontainer"></a>
+The location of the primary docker image containing inference code, associated artifacts, and custom environment map that the inference code uses when the model is deployed for predictions.
+*Required*: No
+*Type*: [ContainerDefinition](aws-properties-sagemaker-model-containerdefinition.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
-
-_Minimum_: `0`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrimaryContainer`
-
-The location of the primary docker image containing inference code, associated
-artifacts, and custom environment map that the inference code uses when the model is
-deployed for predictions.
-
-_Required_: No
-
-_Type_: [ContainerDefinition](aws-properties-sagemaker-model-containerdefinition.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-sagemaker-model-tags"></a>
 A list of key-value pairs to apply to this resource.
+For more information, see [Resource Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) and [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html#allocation-what) in the *AWS Billing and Cost Management User Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-model-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Resource Tag](../userguide/aws-properties-resource-tags.md) and [Using Cost\
-Allocation Tags](../../../awsaccountbilling/latest/aboutv2/cost-alloc-tags.md#allocation-what) in the _AWS Billing and Cost Management User Guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-sagemaker-model-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConfig`
-
-A [VpcConfig](../../../sagemaker/latest/dg/api-vpcconfig.md) object that
-specifies the VPC that you want your model to connect to. Control access to and from your model container by
-configuring the VPC. `VpcConfig` is used in hosting services and in batch transform. For more information,
-see [Protect Endpoints by Using an Amazon Virtual\
-Private Cloud](../../../sagemaker/latest/dg/host-vpc.md) and [Protect Data in Batch\
-Transform Jobs by Using an Amazon Virtual Private Cloud](../../../sagemaker/latest/dg/batch-vpc.md).
-
-_Required_: No
-
-_Type_: [VpcConfig](aws-properties-sagemaker-model-vpcconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`VpcConfig`  <a name="cfn-sagemaker-model-vpcconfig"></a>
+A [VpcConfig](https://docs.aws.amazon.com/sagemaker/latest/dg/API_VpcConfig.html) object that specifies the VPC that you want your model to connect to. Control access to and from your model container by configuring the VPC. `VpcConfig` is used in hosting services and in batch transform. For more information, see [Protect Endpoints by Using an Amazon Virtual Private Cloud](https://docs.aws.amazon.com/sagemaker/latest/dg/host-vpc.html) and [Protect Data in Batch Transform Jobs by Using an Amazon Virtual Private Cloud](https://docs.aws.amazon.com/sagemaker/latest/dg/batch-vpc.html).
+*Required*: No
+*Type*: [VpcConfig](aws-properties-sagemaker-model-vpcconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-sagemaker-model-return-values"></a>
 
 ### Ref
+<a name="aws-resource-sagemaker-model-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the model, such as
-`arn:aws:sagemaker:us-west-2:012345678901:model/mymodel`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the model, such as `arn:aws:sagemaker:us-west-2:012345678901:model/mymodel`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-sagemaker-model-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ModelArn`
+####
+<a name="aws-resource-sagemaker-model-return-values-fn--getatt-fn--getatt"></a>
 
+`ModelArn`  <a name="ModelArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the model.
 
-`ModelName`
-
+`ModelName`  <a name="ModelName-fn::getatt"></a>
 The name of the model, such as `MyModel`.
 
 ## Examples
+<a name="aws-resource-sagemaker-model--examples"></a>
 
 ### SageMaker Model Endpoint Example
+<a name="aws-resource-sagemaker-model--examples--SageMaker_Model_Endpoint_Example"></a>
 
-The following example creates an endpoint configuration from a trained model, and then creates an
-endpoint.
+The following example creates an endpoint configuration from a trained model, and then creates an endpoint.
 
 #### JSON
+<a name="aws-resource-sagemaker-model--examples--SageMaker_Model_Endpoint_Example--json"></a>
 
-```json
-
+```
 {
   "Description": "Basic Hosting entities test.  We need models to create endpoint configs.",
   "Mappings": {
@@ -278,7 +219,7 @@ endpoint.
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
-          "Version": "2012-10-17",
+          "Version": "2012-10-17"		 	 	 ,
           "Statement": [
             {
               "Effect": "Allow",
@@ -298,7 +239,7 @@ endpoint.
           {
             "PolicyName": "root",
             "PolicyDocument": {
-              "Version": "2012-10-17",
+              "Version": "2012-10-17"		 	 	 ,
               "Statement": [
                 {
                   "Effect": "Allow",
@@ -326,9 +267,9 @@ endpoint.
 ```
 
 #### YAML
+<a name="aws-resource-sagemaker-model--examples--SageMaker_Model_Endpoint_Example--yaml"></a>
 
-```yaml
-
+```
 Description: "Basic Hosting entities test.  We need models to create endpoint configs."
 Mappings:
   RegionMap:
@@ -400,11 +341,5 @@ Outputs:
   EndpointName:
     Value: !GetAtt Endpoint.EndpointName
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ContainerDefinition
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,53 @@
 title: "AWS::QuickSight::Dashboard SeriesItem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard SeriesItem
+<a name="aws-properties-quicksight-dashboard-seriesitem"></a>
 
 The series item configuration of a line chart.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-seriesitem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-seriesitem-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataFieldSeriesItem" : DataFieldSeriesItem,
-  "FieldSeriesItem" : FieldSeriesItem
+  "[DataFieldSeriesItem](#cfn-quicksight-dashboard-seriesitem-datafieldseriesitem)" : {{DataFieldSeriesItem}},
+  "[FieldSeriesItem](#cfn-quicksight-dashboard-seriesitem-fieldseriesitem)" : {{FieldSeriesItem}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-seriesitem-syntax.yaml"></a>
 
-```yaml
-
-  DataFieldSeriesItem:
-    DataFieldSeriesItem
-  FieldSeriesItem:
-    FieldSeriesItem
-
+```
+  [DataFieldSeriesItem](#cfn-quicksight-dashboard-seriesitem-datafieldseriesitem): {{
+    DataFieldSeriesItem}}
+  [FieldSeriesItem](#cfn-quicksight-dashboard-seriesitem-fieldseriesitem): {{
+    FieldSeriesItem}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-seriesitem-properties"></a>
 
-`DataFieldSeriesItem`
-
+`DataFieldSeriesItem`  <a name="cfn-quicksight-dashboard-seriesitem-datafieldseriesitem"></a>
 The data field series item configuration of a line chart.
+*Required*: No
+*Type*: [DataFieldSeriesItem](aws-properties-quicksight-dashboard-datafieldseriesitem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataFieldSeriesItem](aws-properties-quicksight-dashboard-datafieldseriesitem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldSeriesItem`
-
+`FieldSeriesItem`  <a name="cfn-quicksight-dashboard-seriesitem-fieldseriesitem"></a>
 The field series item configuration of a line chart.
-
-_Required_: No
-
-_Type_: [FieldSeriesItem](aws-properties-quicksight-dashboard-fieldseriesitem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SelectedSheetsFilterScopeConfiguration
-
-SetParameterValueConfiguration
+*Required*: No
+*Type*: [FieldSeriesItem](aws-properties-quicksight-dashboard-fieldseriesitem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

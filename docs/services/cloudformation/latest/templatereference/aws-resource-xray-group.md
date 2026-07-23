@@ -2,130 +2,113 @@
 title: "AWS::XRay::Group"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::Group
+<a name="aws-resource-xray-group"></a>
 
-Use the `AWS::XRay::Group` resource to specify a group with a name and a filter expression.
-Groups enable the collection of traces that match the filter expression, can be used to filter service graphs and traces, and to supply Amazon CloudWatch metrics.
+Use the `AWS::XRay::Group` resource to specify a group with a name and a filter expression. Groups enable the collection of traces that match the filter expression, can be used to filter service graphs and traces, and to supply Amazon CloudWatch metrics.
 
 ## Syntax
+<a name="aws-resource-xray-group-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-xray-group-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::XRay::Group",
   "Properties" : {
-      "FilterExpression" : String,
-      "GroupName" : String,
-      "InsightsConfiguration" : InsightsConfiguration,
-      "Tags" : [ Tag, ... ]
+      "[FilterExpression](#cfn-xray-group-filterexpression)" : {{String}},
+      "[GroupName](#cfn-xray-group-groupname)" : {{String}},
+      "[InsightsConfiguration](#cfn-xray-group-insightsconfiguration)" : {{InsightsConfiguration}},
+      "[Tags](#cfn-xray-group-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-xray-group-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::XRay::Group
 Properties:
-  FilterExpression: String
-  GroupName: String
-  InsightsConfiguration:
-    InsightsConfiguration
-  Tags:
-    - Tag
-
+  [FilterExpression](#cfn-xray-group-filterexpression): {{String}}
+  [GroupName](#cfn-xray-group-groupname): {{String}}
+  [InsightsConfiguration](#cfn-xray-group-insightsconfiguration): {{
+    InsightsConfiguration}}
+  [Tags](#cfn-xray-group-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-xray-group-properties"></a>
 
-`FilterExpression`
-
+`FilterExpression`  <a name="cfn-xray-group-filterexpression"></a>
 The filter expression defining the parameters to include traces.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupName`
-
+`GroupName`  <a name="cfn-xray-group-groupname"></a>
 The unique case-sensitive name of the group.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `32`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InsightsConfiguration`
-
+`InsightsConfiguration`  <a name="cfn-xray-group-insightsconfiguration"></a>
 The structure containing configurations related to insights.
++ The InsightsEnabled boolean can be set to true to enable insights for the group or false to disable insights for the group.
++ The NotificationsEnabled boolean can be set to true to enable insights notifications through Amazon EventBridge for the group.
+*Required*: No
+*Type*: [InsightsConfiguration](aws-properties-xray-group-insightsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- The InsightsEnabled boolean can be set to true to enable insights for the
-group or false to disable insights for the group.
-
-- The NotificationsEnabled boolean can be set to true to enable insights
-notifications through Amazon EventBridge for the group.
-
-_Required_: No
-
-_Type_: [InsightsConfiguration](aws-properties-xray-group-insightsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-xray-group-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-xray-group-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-xray-group-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-xray-group-return-values"></a>
 
 ### Ref
+<a name="aws-resource-xray-group-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-xray-group-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`GroupARN`
+####
+<a name="aws-resource-xray-group-return-values-fn--getatt-fn--getatt"></a>
 
+`GroupARN`  <a name="GroupARN-fn::getatt"></a>
 The group ARN that was created or updated.
 
 ## Examples
+<a name="aws-resource-xray-group--examples"></a>
 
 ### Create group
+<a name="aws-resource-xray-group--examples--Create_group"></a>
 
 This example creates a new group called MyGroup.
 
 #### JSON
+<a name="aws-resource-xray-group--examples--Create_group--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -142,13 +125,12 @@ This example creates a new group called MyGroup.
       }
    }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-xray-group--examples--Create_group--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
    MyGroupResource:
@@ -159,21 +141,12 @@ Resources:
          InsightsConfiguration:
             InsightsEnabled: false
             NotificationsEnabled: false
-
 ```
 
 ## See also
-
-- [Configuring groups in the X-Ray console](../../../xray/latest/devguide/xray-console-groups.md)
-
-- [Configuring groups with the X-Ray API](../../../xray/latest/devguide/xray-api-configuration.md#xray-api-configuration-groups)
-
-- [CreateGroup](../../../xray/latest/api/api-creategroup.md) action in the X-Ray API Reference
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS X-Ray
-
-InsightsConfiguration
+<a name="aws-resource-xray-group--seealso"></a>
++  [Configuring groups in the X-Ray console](https://docs.aws.amazon.com//xray/latest/devguide/xray-console-groups.html)
++  [Configuring groups with the X-Ray API](https://docs.aws.amazon.com//xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-groups)
++ [CreateGroup](https://docs.aws.amazon.com//xray/latest/api/API_CreateGroup.html) action in the X-Ray API Reference
 
 All content copied from https://docs.aws.amazon.com/.

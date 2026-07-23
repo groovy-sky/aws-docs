@@ -2,65 +2,50 @@
 title: "AWS::MediaPackage::PackagingConfiguration MssManifest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration MssManifest
+<a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest"></a>
 
 Parameters for a Microsoft Smooth manifest.
 
 ## Syntax
+<a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest-syntax.json"></a>
 
-```json
-
+```
 {
-  "ManifestName" : String,
-  "StreamSelection" : StreamSelection
+  "[ManifestName](#cfn-mediapackage-packagingconfiguration-mssmanifest-manifestname)" : {{String}},
+  "[StreamSelection](#cfn-mediapackage-packagingconfiguration-mssmanifest-streamselection)" : {{StreamSelection}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest-syntax.yaml"></a>
 
-```yaml
-
-  ManifestName: String
-  StreamSelection:
-    StreamSelection
-
+```
+  [ManifestName](#cfn-mediapackage-packagingconfiguration-mssmanifest-manifestname): {{String}}
+  [StreamSelection](#cfn-mediapackage-packagingconfiguration-mssmanifest-streamselection): {{
+    StreamSelection}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest-properties"></a>
 
-`ManifestName`
-
+`ManifestName`  <a name="cfn-mediapackage-packagingconfiguration-mssmanifest-manifestname"></a>
 A short string that's appended to the end of the endpoint URL to create a unique path to this packaging configuration.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamSelection`
-
+`StreamSelection`  <a name="cfn-mediapackage-packagingconfiguration-mssmanifest-streamselection"></a>
 Video bitrate limitations for outputs from this packaging configuration.
-
-_Required_: No
-
-_Type_: [StreamSelection](aws-properties-mediapackage-packagingconfiguration-streamselection.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MssEncryption
-
-MssPackage
+*Required*: No
+*Type*: [StreamSelection](aws-properties-mediapackage-packagingconfiguration-streamselection.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

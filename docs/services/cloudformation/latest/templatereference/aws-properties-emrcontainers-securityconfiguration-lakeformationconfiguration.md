@@ -2,98 +2,69 @@
 title: "AWS::EMRContainers::SecurityConfiguration LakeFormationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration LakeFormationConfiguration
+<a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration"></a>
 
-AWS Lake Formation related configuration inputs for the security
-configuration.
+AWS Lake Formation related configuration inputs for the security configuration.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizedSessionTagValue" : String,
-  "QueryAccessControlEnabled" : Boolean,
-  "QueryEngineRoleArn" : String,
-  "SecureNamespaceInfo" : SecureNamespaceInfo
+  "[AuthorizedSessionTagValue](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-authorizedsessiontagvalue)" : {{String}},
+  "[QueryAccessControlEnabled](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryaccesscontrolenabled)" : {{Boolean}},
+  "[QueryEngineRoleArn](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryenginerolearn)" : {{String}},
+  "[SecureNamespaceInfo](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-securenamespaceinfo)" : {{SecureNamespaceInfo}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizedSessionTagValue: String
-  QueryAccessControlEnabled: Boolean
-  QueryEngineRoleArn: String
-  SecureNamespaceInfo:
-    SecureNamespaceInfo
-
+```
+  [AuthorizedSessionTagValue](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-authorizedsessiontagvalue): {{String}}
+  [QueryAccessControlEnabled](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryaccesscontrolenabled): {{Boolean}}
+  [QueryEngineRoleArn](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryenginerolearn): {{String}}
+  [SecureNamespaceInfo](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-securenamespaceinfo): {{
+    SecureNamespaceInfo}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration-properties"></a>
 
-`AuthorizedSessionTagValue`
-
+`AuthorizedSessionTagValue`  <a name="cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-authorizedsessiontagvalue"></a>
 The session tag to authorize Amazon EMR on EKS for API calls to AWS Lake Formation.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`QueryAccessControlEnabled`
-
+`QueryAccessControlEnabled`  <a name="cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryaccesscontrolenabled"></a>
 Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`QueryEngineRoleArn`  <a name="cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryenginerolearn"></a>
+The query engine IAM role ARN that is tied to the secure Spark job. The `QueryEngine` role assumes the `JobExecutionRole` to execute all the Lake Formation calls.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`QueryEngineRoleArn`
-
-The query engine IAM role ARN that is tied to the secure Spark job. The
-`QueryEngine` role assumes the `JobExecutionRole` to execute all
-the Lake Formation calls.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SecureNamespaceInfo`
-
+`SecureNamespaceInfo`  <a name="cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-securenamespaceinfo"></a>
 The namespace input of the system job.
-
-_Required_: No
-
-_Type_: [SecureNamespaceInfo](aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InTransitEncryptionConfiguration
-
-LocalDiskEncryptionConfiguration
+*Required*: No
+*Type*: [SecureNamespaceInfo](aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

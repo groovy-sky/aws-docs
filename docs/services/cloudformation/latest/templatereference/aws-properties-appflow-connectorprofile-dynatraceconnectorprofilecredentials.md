@@ -2,61 +2,47 @@
 title: "AWS::AppFlow::ConnectorProfile DynatraceConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile DynatraceConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials"></a>
 
-The connector-specific profile credentials required by Dynatrace.
+ The connector-specific profile credentials required by Dynatrace.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiToken" : String
+  "[ApiToken](#cfn-appflow-connectorprofile-dynatraceconnectorprofilecredentials-apitoken)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  ApiToken: String
-
+```
+  [ApiToken](#cfn-appflow-connectorprofile-dynatraceconnectorprofilecredentials-apitoken): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials-properties"></a>
 
-`ApiToken`
-
-The API tokens used by Dynatrace API to authenticate various API calls.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ApiToken`  <a name="cfn-appflow-connectorprofile-dynatraceconnectorprofilecredentials-apitoken"></a>
+ The API tokens used by Dynatrace API to authenticate various API calls.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [DynatraceConnectorProfileCredentials](../../../../reference/appflow/1-0/apireference/api-dynatraceconnectorprofilecredentials.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DatadogConnectorProfileProperties
-
-DynatraceConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials--seealso"></a>
++ [DynatraceConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceConnectorProfileCredentials.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

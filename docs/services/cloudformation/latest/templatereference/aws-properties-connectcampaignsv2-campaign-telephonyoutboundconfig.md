@@ -2,97 +2,70 @@
 title: "AWS::ConnectCampaignsV2::Campaign TelephonyOutboundConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign TelephonyOutboundConfig
+<a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig"></a>
 
 The outbound configuration for telephony.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnswerMachineDetectionConfig" : AnswerMachineDetectionConfig,
-  "ConnectContactFlowId" : String,
-  "ConnectSourcePhoneNumber" : String,
-  "RingTimeout" : Integer
+  "[AnswerMachineDetectionConfig](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-answermachinedetectionconfig)" : {{AnswerMachineDetectionConfig}},
+  "[ConnectContactFlowId](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectcontactflowid)" : {{String}},
+  "[ConnectSourcePhoneNumber](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectsourcephonenumber)" : {{String}},
+  "[RingTimeout](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-ringtimeout)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig-syntax.yaml"></a>
 
-```yaml
-
-  AnswerMachineDetectionConfig:
-    AnswerMachineDetectionConfig
-  ConnectContactFlowId: String
-  ConnectSourcePhoneNumber: String
-  RingTimeout: Integer
-
+```
+  [AnswerMachineDetectionConfig](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-answermachinedetectionconfig): {{
+    AnswerMachineDetectionConfig}}
+  [ConnectContactFlowId](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectcontactflowid): {{String}}
+  [ConnectSourcePhoneNumber](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectsourcephonenumber): {{String}}
+  [RingTimeout](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-ringtimeout): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig-properties"></a>
 
-`AnswerMachineDetectionConfig`
-
+`AnswerMachineDetectionConfig`  <a name="cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-answermachinedetectionconfig"></a>
 The answering machine detection configuration.
+*Required*: No
+*Type*: [AnswerMachineDetectionConfig](aws-properties-connectcampaignsv2-campaign-answermachinedetectionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AnswerMachineDetectionConfig](aws-properties-connectcampaignsv2-campaign-answermachinedetectionconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectContactFlowId`
-
+`ConnectContactFlowId`  <a name="cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectcontactflowid"></a>
 The identifier of the published Amazon Connect contact flow.
+*Required*: Yes
+*Type*: String
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectSourcePhoneNumber`
-
+`ConnectSourcePhoneNumber`  <a name="cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectsourcephonenumber"></a>
 The Amazon Connect source phone number.
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RingTimeout`
-
+`RingTimeout`  <a name="cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-ringtimeout"></a>
 The ring timeout configuration for outbound calls. Specifies how long to wait for the call to be answered before timing out.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `15`
-
-_Maximum_: `60`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TelephonyChannelSubtypeConfig
-
-TelephonyOutboundMode
+*Required*: No
+*Type*: Integer
+*Minimum*: `15`
+*Maximum*: `60`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

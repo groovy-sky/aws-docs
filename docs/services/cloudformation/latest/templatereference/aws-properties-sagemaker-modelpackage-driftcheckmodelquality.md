@@ -2,67 +2,51 @@
 title: "AWS::SageMaker::ModelPackage DriftCheckModelQuality"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage DriftCheckModelQuality
+<a name="aws-properties-sagemaker-modelpackage-driftcheckmodelquality"></a>
 
-Represents the drift check model quality baselines that can be used when the model
-monitor is set using the model package.
+Represents the drift check model quality baselines that can be used when the model monitor is set using the model package.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-driftcheckmodelquality-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-driftcheckmodelquality-syntax.json"></a>
 
-```json
-
+```
 {
-  "Constraints" : MetricsSource,
-  "Statistics" : MetricsSource
+  "[Constraints](#cfn-sagemaker-modelpackage-driftcheckmodelquality-constraints)" : {{MetricsSource}},
+  "[Statistics](#cfn-sagemaker-modelpackage-driftcheckmodelquality-statistics)" : {{MetricsSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-driftcheckmodelquality-syntax.yaml"></a>
 
-```yaml
-
-  Constraints:
-    MetricsSource
-  Statistics:
-    MetricsSource
-
+```
+  [Constraints](#cfn-sagemaker-modelpackage-driftcheckmodelquality-constraints): {{
+    MetricsSource}}
+  [Statistics](#cfn-sagemaker-modelpackage-driftcheckmodelquality-statistics): {{
+    MetricsSource}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-driftcheckmodelquality-properties"></a>
 
-`Constraints`
-
+`Constraints`  <a name="cfn-sagemaker-modelpackage-driftcheckmodelquality-constraints"></a>
 The drift check model quality constraints.
+*Required*: No
+*Type*: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Statistics`
-
+`Statistics`  <a name="cfn-sagemaker-modelpackage-driftcheckmodelquality-statistics"></a>
 The drift check model quality statistics.
-
-_Required_: No
-
-_Type_: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DriftCheckModelDataQuality
-
-Explainability
+*Required*: No
+*Type*: [MetricsSource](aws-properties-sagemaker-modelpackage-metricssource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,52 +2,41 @@
 title: "AWS::MediaConnect::RouterNetworkInterface PublicRouterNetworkInterfaceRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterNetworkInterface PublicRouterNetworkInterfaceRule
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule"></a>
 
 A rule that allows a specific CIDR block to access the public router network interface.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cidr" : String
+  "[Cidr](#cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-cidr)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-syntax.yaml"></a>
 
-```yaml
-
-  Cidr: String
-
+```
+  [Cidr](#cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-cidr): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-properties"></a>
 
-`Cidr`
-
+`Cidr`  <a name="cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule-cidr"></a>
 The CIDR block that is allowed to access the public router network interface.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PublicRouterNetworkInterfaceConfiguration
-
-RouterNetworkInterfaceConfiguration
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

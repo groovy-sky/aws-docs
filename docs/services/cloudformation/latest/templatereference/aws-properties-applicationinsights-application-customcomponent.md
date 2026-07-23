@@ -2,75 +2,55 @@
 title: "AWS::ApplicationInsights::Application CustomComponent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application CustomComponent
+<a name="aws-properties-applicationinsights-application-customcomponent"></a>
 
 The `AWS::ApplicationInsights::Application CustomComponent` property type describes a custom component by grouping similar standalone instances to monitor.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-customcomponent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-customcomponent-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComponentName" : String,
-  "ResourceList" : [ String, ... ]
+  "[ComponentName](#cfn-applicationinsights-application-customcomponent-componentname)" : {{String}},
+  "[ResourceList](#cfn-applicationinsights-application-customcomponent-resourcelist)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-customcomponent-syntax.yaml"></a>
 
-```yaml
-
-  ComponentName: String
-  ResourceList:
-    - String
-
+```
+  [ComponentName](#cfn-applicationinsights-application-customcomponent-componentname): {{String}}
+  [ResourceList](#cfn-applicationinsights-application-customcomponent-resourcelist): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-customcomponent-properties"></a>
 
-`ComponentName`
-
+`ComponentName`  <a name="cfn-applicationinsights-application-customcomponent-componentname"></a>
 The name of the component.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\d\w\-_.+]*$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\d\w\-_.+]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceList`
-
+`ResourceList`  <a name="cfn-applicationinsights-application-customcomponent-resourcelist"></a>
 The list of resource ARNs that belong to the component.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Maximum_: `300`
-
-_Minimum_: `20 | 1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationDetails
-
-HAClusterPrometheusExporter
+*Required*: Yes
+*Type*: Array of String
+*Maximum*: `300`
+*Minimum*: `20 | 1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

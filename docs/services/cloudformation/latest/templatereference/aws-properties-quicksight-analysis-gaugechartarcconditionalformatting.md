@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis GaugeChartArcConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GaugeChartArcConditionalFormatting
+<a name="aws-properties-quicksight-analysis-gaugechartarcconditionalformatting"></a>
 
 The options that determine the presentation of the arc of a `GaugeChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-gaugechartarcconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-gaugechartarcconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ForegroundColor" : ConditionalFormattingColor
+  "[ForegroundColor](#cfn-quicksight-analysis-gaugechartarcconditionalformatting-foregroundcolor)" : {{ConditionalFormattingColor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-gaugechartarcconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  ForegroundColor:
-    ConditionalFormattingColor
-
+```
+  [ForegroundColor](#cfn-quicksight-analysis-gaugechartarcconditionalformatting-foregroundcolor): {{
+    ConditionalFormattingColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-gaugechartarcconditionalformatting-properties"></a>
 
-`ForegroundColor`
-
+`ForegroundColor`  <a name="cfn-quicksight-analysis-gaugechartarcconditionalformatting-foregroundcolor"></a>
 The conditional formatting of the arc foreground color.
-
-_Required_: No
-
-_Type_: [ConditionalFormattingColor](aws-properties-quicksight-analysis-conditionalformattingcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FunnelChartVisual
-
-GaugeChartColorConfiguration
+*Required*: No
+*Type*: [ConditionalFormattingColor](aws-properties-quicksight-analysis-conditionalformattingcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,85 +2,62 @@
 title: "AWS::QuickSight::Analysis RowAlternateColorOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis RowAlternateColorOptions
+<a name="aws-properties-quicksight-analysis-rowalternatecoloroptions"></a>
 
 Determines the row alternate color options.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-rowalternatecoloroptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-rowalternatecoloroptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "RowAlternateColors" : [ String, ... ],
-  "Status" : String,
-  "UsePrimaryBackgroundColor" : String
+  "[RowAlternateColors](#cfn-quicksight-analysis-rowalternatecoloroptions-rowalternatecolors)" : {{[ String, ... ]}},
+  "[Status](#cfn-quicksight-analysis-rowalternatecoloroptions-status)" : {{String}},
+  "[UsePrimaryBackgroundColor](#cfn-quicksight-analysis-rowalternatecoloroptions-useprimarybackgroundcolor)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-rowalternatecoloroptions-syntax.yaml"></a>
 
-```yaml
-
-  RowAlternateColors:
-    - String
-  Status: String
-  UsePrimaryBackgroundColor: String
-
+```
+  [RowAlternateColors](#cfn-quicksight-analysis-rowalternatecoloroptions-rowalternatecolors): {{
+    - String}}
+  [Status](#cfn-quicksight-analysis-rowalternatecoloroptions-status): {{String}}
+  [UsePrimaryBackgroundColor](#cfn-quicksight-analysis-rowalternatecoloroptions-useprimarybackgroundcolor): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-rowalternatecoloroptions-properties"></a>
 
-`RowAlternateColors`
-
+`RowAlternateColors`  <a name="cfn-quicksight-analysis-rowalternatecoloroptions-rowalternatecolors"></a>
 Determines the list of row alternate colors.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-quicksight-analysis-rowalternatecoloroptions-status"></a>
 Determines the widget status.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UsePrimaryBackgroundColor`
-
+`UsePrimaryBackgroundColor`  <a name="cfn-quicksight-analysis-rowalternatecoloroptions-useprimarybackgroundcolor"></a>
 The primary background color options for alternate rows.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RollingDateConfiguration
-
-SameSheetTargetVisualConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

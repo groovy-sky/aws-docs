@@ -2,64 +2,49 @@
 title: "AWS::VpcLattice::Service DnsEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Service DnsEntry
+<a name="aws-properties-vpclattice-service-dnsentry"></a>
 
 Describes the DNS information of a service.
 
 ## Syntax
+<a name="aws-properties-vpclattice-service-dnsentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-service-dnsentry-syntax.json"></a>
 
-```json
-
+```
 {
-  "DomainName" : String,
-  "HostedZoneId" : String
+  "[DomainName](#cfn-vpclattice-service-dnsentry-domainname)" : {{String}},
+  "[HostedZoneId](#cfn-vpclattice-service-dnsentry-hostedzoneid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-service-dnsentry-syntax.yaml"></a>
 
-```yaml
-
-  DomainName: String
-  HostedZoneId: String
-
+```
+  [DomainName](#cfn-vpclattice-service-dnsentry-domainname): {{String}}
+  [HostedZoneId](#cfn-vpclattice-service-dnsentry-hostedzoneid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-service-dnsentry-properties"></a>
 
-`DomainName`
-
+`DomainName`  <a name="cfn-vpclattice-service-dnsentry-domainname"></a>
 The domain name of the service.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HostedZoneId`
-
+`HostedZoneId`  <a name="cfn-vpclattice-service-dnsentry-hostedzoneid"></a>
 The ID of the hosted zone.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::VpcLattice::Service
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

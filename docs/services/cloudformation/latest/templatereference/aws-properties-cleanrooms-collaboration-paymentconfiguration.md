@@ -2,82 +2,60 @@
 title: "AWS::CleanRooms::Collaboration PaymentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Collaboration PaymentConfiguration
+<a name="aws-properties-cleanrooms-collaboration-paymentconfiguration"></a>
 
-An object representing the collaboration member's payment responsibilities set by the
-collaboration creator.
+An object representing the collaboration member's payment responsibilities set by the collaboration creator.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-collaboration-paymentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-collaboration-paymentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "JobCompute" : JobComputePaymentConfig,
-  "MachineLearning" : MLPaymentConfig,
-  "QueryCompute" : QueryComputePaymentConfig
+  "[JobCompute](#cfn-cleanrooms-collaboration-paymentconfiguration-jobcompute)" : {{JobComputePaymentConfig}},
+  "[MachineLearning](#cfn-cleanrooms-collaboration-paymentconfiguration-machinelearning)" : {{MLPaymentConfig}},
+  "[QueryCompute](#cfn-cleanrooms-collaboration-paymentconfiguration-querycompute)" : {{QueryComputePaymentConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-collaboration-paymentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  JobCompute:
-    JobComputePaymentConfig
-  MachineLearning:
-    MLPaymentConfig
-  QueryCompute:
-    QueryComputePaymentConfig
-
+```
+  [JobCompute](#cfn-cleanrooms-collaboration-paymentconfiguration-jobcompute): {{
+    JobComputePaymentConfig}}
+  [MachineLearning](#cfn-cleanrooms-collaboration-paymentconfiguration-machinelearning): {{
+    MLPaymentConfig}}
+  [QueryCompute](#cfn-cleanrooms-collaboration-paymentconfiguration-querycompute): {{
+    QueryComputePaymentConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-collaboration-paymentconfiguration-properties"></a>
 
-`JobCompute`
+`JobCompute`  <a name="cfn-cleanrooms-collaboration-paymentconfiguration-jobcompute"></a>
+ The compute configuration for the job.
+*Required*: No
+*Type*: [JobComputePaymentConfig](aws-properties-cleanrooms-collaboration-jobcomputepaymentconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The compute configuration for the job.
+`MachineLearning`  <a name="cfn-cleanrooms-collaboration-paymentconfiguration-machinelearning"></a>
+An object representing the collaboration member's machine learning payment responsibilities set by the collaboration creator.
+*Required*: No
+*Type*: [MLPaymentConfig](aws-properties-cleanrooms-collaboration-mlpaymentconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [JobComputePaymentConfig](aws-properties-cleanrooms-collaboration-jobcomputepaymentconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MachineLearning`
-
-An object representing the collaboration member's machine learning payment responsibilities set by the
-collaboration creator.
-
-_Required_: No
-
-_Type_: [MLPaymentConfig](aws-properties-cleanrooms-collaboration-mlpaymentconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`QueryCompute`
-
-The collaboration member's payment responsibilities set by the collaboration creator for
-query compute costs.
-
-_Required_: Yes
-
-_Type_: [QueryComputePaymentConfig](aws-properties-cleanrooms-collaboration-querycomputepaymentconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModelTrainingPaymentConfig
-
-QueryComputePaymentConfig
+`QueryCompute`  <a name="cfn-cleanrooms-collaboration-paymentconfiguration-querycompute"></a>
+The collaboration member's payment responsibilities set by the collaboration creator for query compute costs.
+*Required*: Yes
+*Type*: [QueryComputePaymentConfig](aws-properties-cleanrooms-collaboration-querycomputepaymentconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

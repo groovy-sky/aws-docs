@@ -2,182 +2,140 @@
 title: "AWS::Events::ApiDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::ApiDestination
+<a name="aws-resource-events-apidestination"></a>
 
-Creates an API destination, which is an HTTP invocation endpoint configured as a target
-for events.
+Creates an API destination, which is an HTTP invocation endpoint configured as a target for events.
 
 When using ApiDesinations with OAuth authentication we recommend these best practices:
++ Create a secret in Secrets Manager with your OAuth credentials.
++ Reference that secret in your CloudFormation template for `AWS::Events::Connection` using CloudFormation dynamic reference syntax. For more information, see [Secrets Manager secrets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html#dynamic-references-secretsmanager).
 
-- Create a secret in Secrets Manager with your OAuth credentials.
+When the Connection resource is created the secret will be passed to EventBridge and stored in the customer account using “Service Linked Secrets,” effectively creating two secrets. This will minimize the cost because the original secret is only accessed when a CloudFormation template is created or updated, not every time an event is sent to the ApiDestination. The secret stored in the customer account by EventBridge is the one used for each event sent to the ApiDestination and AWS is responsible for the fees.
 
-- Reference that secret in your CloudFormation template for `AWS::Events::Connection` using
-CloudFormation dynamic reference syntax. For more information, see [Secrets Manager secrets](../userguide/dynamic-references.md#dynamic-references-secretsmanager).
-
-When the Connection resource is created the secret will be passed to EventBridge and stored in the customer account using “Service Linked Secrets,”
-effectively creating two secrets. This will minimize the cost because the original secret is only accessed when a CloudFormation template is created or updated,
-not every time an event is sent to the ApiDestination. The secret stored in the customer account by EventBridge is the one used for each event sent to the
-ApiDestination and AWS is responsible for the fees.
-
-###### Note
-
+**Note**
 The secret stored in the customer account by EventBridge can’t be updated directly, only when a CloudFormation template is updated.
 
-For examples of CloudFormation templates that use secrets, see [Examples](../userguide/aws-resource-events-connection.md#aws-resource-events-connection--examples).
+For examples of CloudFormation templates that use secrets, see [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-connection.html#aws-resource-events-connection--examples).
 
 ## Syntax
+<a name="aws-resource-events-apidestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-events-apidestination-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Events::ApiDestination",
   "Properties" : {
-      "ConnectionArn" : String,
-      "Description" : String,
-      "HttpMethod" : String,
-      "InvocationEndpoint" : String,
-      "InvocationRateLimitPerSecond" : Integer,
-      "Name" : String
+      "[ConnectionArn](#cfn-events-apidestination-connectionarn)" : {{String}},
+      "[Description](#cfn-events-apidestination-description)" : {{String}},
+      "[HttpMethod](#cfn-events-apidestination-httpmethod)" : {{String}},
+      "[InvocationEndpoint](#cfn-events-apidestination-invocationendpoint)" : {{String}},
+      "[InvocationRateLimitPerSecond](#cfn-events-apidestination-invocationratelimitpersecond)" : {{Integer}},
+      "[Name](#cfn-events-apidestination-name)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-events-apidestination-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Events::ApiDestination
 Properties:
-  ConnectionArn: String
-  Description: String
-  HttpMethod: String
-  InvocationEndpoint: String
-  InvocationRateLimitPerSecond: Integer
-  Name: String
-
+  [ConnectionArn](#cfn-events-apidestination-connectionarn): {{String}}
+  [Description](#cfn-events-apidestination-description): {{String}}
+  [HttpMethod](#cfn-events-apidestination-httpmethod): {{String}}
+  [InvocationEndpoint](#cfn-events-apidestination-invocationendpoint): {{String}}
+  [InvocationRateLimitPerSecond](#cfn-events-apidestination-invocationratelimitpersecond): {{Integer}}
+  [Name](#cfn-events-apidestination-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-events-apidestination-properties"></a>
 
-`ConnectionArn`
+`ConnectionArn`  <a name="cfn-events-apidestination-connectionarn"></a>
+The ARN of the connection to use for the API destination. The destination endpoint must support the authorization type specified for the connection.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws([a-z]|\-)*:events:([a-z]|\d|\-)*:([0-9]{12})?:connection/[\.\-_A-Za-z0-9]+/[\-A-Za-z0-9]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ARN of the connection to use for the API destination. The destination endpoint must
-support the authorization type specified for the connection.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws([a-z]|\-)*:events:([a-z]|\d|\-)*:([0-9]{12})?:connection/[\.\-_A-Za-z0-9]+/[\-A-Za-z0-9]+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-events-apidestination-description"></a>
 A description for the API destination to create.
+*Required*: No
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpMethod`
-
+`HttpMethod`  <a name="cfn-events-apidestination-httpmethod"></a>
 The method to use for the request to the HTTP invocation endpoint.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GET | HEAD | POST | OPTIONS | PUT | DELETE | PATCH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GET | HEAD | POST | OPTIONS | PUT | DELETE | PATCH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InvocationEndpoint`
-
+`InvocationEndpoint`  <a name="cfn-events-apidestination-invocationendpoint"></a>
 The URL to the HTTP invocation endpoint for the API destination.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^((%[0-9A-Fa-f]{2}|[-()_.!~*';/?:@\x26=+$,A-Za-z0-9])+)([).!';/?:,])?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^((%[0-9A-Fa-f]{2}|[-()_.!~*';/?:@\x26=+$,A-Za-z0-9])+)([).!';/?:,])?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InvocationRateLimitPerSecond`
-
+`InvocationRateLimitPerSecond`  <a name="cfn-events-apidestination-invocationratelimitpersecond"></a>
 The maximum number of requests per second to send to the HTTP invocation endpoint.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-events-apidestination-name"></a>
 The name for the API destination to create.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\.\-_A-Za-z0-9]+`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `[\.\-_A-Za-z0-9]+`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-events-apidestination-return-values"></a>
 
 ### Ref
+<a name="aws-resource-events-apidestination-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the API destination that was created by the
-request.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of the API destination that was created by the request.
 
 ### Fn::GetAtt
+<a name="aws-resource-events-apidestination-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-events-apidestination-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the API destination that was created by the request.
 
-`ArnForPolicy`
-
-Returns the Amazon Resource Name (ARN) of an API destination in resource format, so it can be used in the `Resource` element of IAM permission policy statements.
-For more information, see [Resource types defined by Amazon EventBridge](../../../service-authorization/latest/reference/list-amazoneventbridge.md#amazoneventbridge-resources-for-iam-policies) in the _Service Authorization Reference_.
-
+`ArnForPolicy`  <a name="ArnForPolicy-fn::getatt"></a>
+Returns the Amazon Resource Name (ARN) of an API destination in resource format, so it can be used in the `Resource` element of IAM permission policy statements. For more information, see [Resource types defined by Amazon EventBridge](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoneventbridge.html#amazoneventbridge-resources-for-iam-policies) in the *Service Authorization Reference*.
 For example, the following resource defines an IAM policy that grants permission to update a specific API destination.
 
 ```
-
 Resources:
   ExamplePolicy:
     Type: AWS::IAM::Policy
     Properties:
       PolicyName: ExamplePolicy
       PolicyDocument:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
           - Effect: Allow
             Action:
@@ -187,19 +145,21 @@ Resources:
 ```
 
 ## Examples
+<a name="aws-resource-events-apidestination--examples"></a>
 
-- [Create an ApiDestination for PagerDuty](#aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty)
-
-- [Create an ApiDestination for Slack](#aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack)
+**Topics**
++ [Create an ApiDestination for PagerDuty](#aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty)
++ [Create an ApiDestination for Slack](#aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack)
 
 ### Create an ApiDestination for PagerDuty
+<a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty"></a>
 
 The following example creates an ApiDestination connection to PagerDuty.
 
 #### JSON
+<a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty--json"></a>
 
-```json
-
+```
 "Parameters": {
    "PagerDutyAPIKeyParam": {
        "Type": "String",
@@ -240,9 +200,9 @@ The following example creates an ApiDestination connection to PagerDuty.
 ```
 
 #### YAML
+<a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   PagerDutyAPIKeyParam:
     Type: String
@@ -270,13 +230,14 @@ Resources:
 ```
 
 ### Create an ApiDestination for Slack
+<a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack"></a>
 
 The following example creates an ApiDestination connection to Slack.
 
 #### JSON
+<a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack--json"></a>
 
-```json
-
+```
 "Parameters": {
    "pName": {
        "Type": "String"
@@ -471,9 +432,9 @@ The following example creates an ApiDestination connection to Slack.
 ```
 
 #### YAML
+<a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   pName:
     Type: String
@@ -487,7 +448,7 @@ Resources:
     Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
           - Effect: Allow
             Principal:
@@ -499,7 +460,7 @@ Resources:
       Policies:
         - PolicyName: eventbridge-api-destinations
           PolicyDocument:
-            Version: '2012-10-17'
+            Version: '2012-10-17		 	 	 '
             Statement:
               - Effect: Allow
                 Action:
@@ -562,11 +523,5 @@ Outputs:
   outRule:
     Value: !GetAtt SlackRule.Arn
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon EventBridge
-
-AWS::Events::Archive
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,50 @@
 title: "AWS::S3Tables::Table IcebergPartitionSpec"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergPartitionSpec
+<a name="aws-properties-s3tables-table-icebergpartitionspec"></a>
 
 Defines how data in an Iceberg table is partitioned. Partitioning helps optimize query performance by organizing data into separate files based on field values. Each partition field specifies a transform to apply to a source field.
 
 ## Syntax
+<a name="aws-properties-s3tables-table-icebergpartitionspec-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3tables-table-icebergpartitionspec-syntax.json"></a>
 
-```json
-
+```
 {
-  "Fields" : [ IcebergPartitionField, ... ],
-  "SpecId" : Integer
+  "[Fields](#cfn-s3tables-table-icebergpartitionspec-fields)" : {{[ IcebergPartitionField, ... ]}},
+  "[SpecId](#cfn-s3tables-table-icebergpartitionspec-specid)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3tables-table-icebergpartitionspec-syntax.yaml"></a>
 
-```yaml
-
-  Fields:
-    - IcebergPartitionField
-  SpecId: Integer
-
+```
+  [Fields](#cfn-s3tables-table-icebergpartitionspec-fields): {{
+    - IcebergPartitionField}}
+  [SpecId](#cfn-s3tables-table-icebergpartitionspec-specid): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-s3tables-table-icebergpartitionspec-properties"></a>
 
-`Fields`
-
+`Fields`  <a name="cfn-s3tables-table-icebergpartitionspec-fields"></a>
 The list of partition fields that define how the table data is partitioned. Each field specifies a source field and a transform to apply. This field is required if `partitionSpec` is provided.
+*Required*: Yes
+*Type*: Array of [IcebergPartitionField](aws-properties-s3tables-table-icebergpartitionfield.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of [IcebergPartitionField](aws-properties-s3tables-table-icebergpartitionfield.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SpecId`
-
+`SpecId`  <a name="cfn-s3tables-table-icebergpartitionspec-specid"></a>
 The unique identifier for this partition specification. If not specified, defaults to `0`.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IcebergPartitionField
-
-IcebergSchema
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

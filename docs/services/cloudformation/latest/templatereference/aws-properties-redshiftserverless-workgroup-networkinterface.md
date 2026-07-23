@@ -2,89 +2,65 @@
 title: "AWS::RedshiftServerless::Workgroup NetworkInterface"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RedshiftServerless::Workgroup NetworkInterface
+<a name="aws-properties-redshiftserverless-workgroup-networkinterface"></a>
 
-Contains information about a network interface
-in an Amazon Redshift Serverless managed VPC endpoint.
+Contains information about a network interface in an Amazon Redshift Serverless managed VPC endpoint.
 
 ## Syntax
+<a name="aws-properties-redshiftserverless-workgroup-networkinterface-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-redshiftserverless-workgroup-networkinterface-syntax.json"></a>
 
-```json
-
+```
 {
-  "AvailabilityZone" : String,
-  "NetworkInterfaceId" : String,
-  "PrivateIpAddress" : String,
-  "SubnetId" : String
+  "[AvailabilityZone](#cfn-redshiftserverless-workgroup-networkinterface-availabilityzone)" : {{String}},
+  "[NetworkInterfaceId](#cfn-redshiftserverless-workgroup-networkinterface-networkinterfaceid)" : {{String}},
+  "[PrivateIpAddress](#cfn-redshiftserverless-workgroup-networkinterface-privateipaddress)" : {{String}},
+  "[SubnetId](#cfn-redshiftserverless-workgroup-networkinterface-subnetid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-redshiftserverless-workgroup-networkinterface-syntax.yaml"></a>
 
-```yaml
-
-  AvailabilityZone: String
-  NetworkInterfaceId: String
-  PrivateIpAddress: String
-  SubnetId: String
-
+```
+  [AvailabilityZone](#cfn-redshiftserverless-workgroup-networkinterface-availabilityzone): {{String}}
+  [NetworkInterfaceId](#cfn-redshiftserverless-workgroup-networkinterface-networkinterfaceid): {{String}}
+  [PrivateIpAddress](#cfn-redshiftserverless-workgroup-networkinterface-privateipaddress): {{String}}
+  [SubnetId](#cfn-redshiftserverless-workgroup-networkinterface-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-redshiftserverless-workgroup-networkinterface-properties"></a>
 
-`AvailabilityZone`
-
+`AvailabilityZone`  <a name="cfn-redshiftserverless-workgroup-networkinterface-availabilityzone"></a>
 The availability Zone.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkInterfaceId`
-
+`NetworkInterfaceId`  <a name="cfn-redshiftserverless-workgroup-networkinterface-networkinterfaceid"></a>
 The unique identifier of the network interface.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrivateIpAddress`
-
+`PrivateIpAddress`  <a name="cfn-redshiftserverless-workgroup-networkinterface-privateipaddress"></a>
 The IPv4 address of the network interface within the subnet.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-redshiftserverless-workgroup-networkinterface-subnetid"></a>
 The unique identifier of the subnet.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Endpoint
-
-PerformanceTarget
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

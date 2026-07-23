@@ -2,72 +2,53 @@
 title: "AWS::SecurityLake::Subscriber SubscriberIdentity"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::Subscriber SubscriberIdentity
+<a name="aws-properties-securitylake-subscriber-subscriberidentity"></a>
 
 Specify the AWS account ID and external ID that the subscriber will use to access source data.
 
 ## Syntax
+<a name="aws-properties-securitylake-subscriber-subscriberidentity-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securitylake-subscriber-subscriberidentity-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExternalId" : String,
-  "Principal" : String
+  "[ExternalId](#cfn-securitylake-subscriber-subscriberidentity-externalid)" : {{String}},
+  "[Principal](#cfn-securitylake-subscriber-subscriberidentity-principal)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securitylake-subscriber-subscriberidentity-syntax.yaml"></a>
 
-```yaml
-
-  ExternalId: String
-  Principal: String
-
+```
+  [ExternalId](#cfn-securitylake-subscriber-subscriberidentity-externalid): {{String}}
+  [Principal](#cfn-securitylake-subscriber-subscriberidentity-principal): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-securitylake-subscriber-subscriberidentity-properties"></a>
 
-`ExternalId`
-
+`ExternalId`  <a name="cfn-securitylake-subscriber-subscriberidentity-externalid"></a>
 The external ID is a unique identifier that the subscriber provides to you.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w+=,.@:/-]*$`
+*Minimum*: `2`
+*Maximum*: `1224`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w+=,.@:/-]*$`
-
-_Minimum_: `2`
-
-_Maximum_: `1224`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Principal`
-
+`Principal`  <a name="cfn-securitylake-subscriber-subscriberidentity-principal"></a>
 Principals can include accounts, users, roles, federated users, or AWS services.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^([0-9]{12}|[a-z0-9\.\-]*\.(amazonaws|amazon)\.com)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Source
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^([0-9]{12}|[a-z0-9\.\-]*\.(amazonaws|amazon)\.com)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

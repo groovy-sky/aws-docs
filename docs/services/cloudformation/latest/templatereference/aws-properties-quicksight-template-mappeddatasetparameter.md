@@ -2,74 +2,54 @@
 title: "AWS::QuickSight::Template MappedDataSetParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template MappedDataSetParameter
+<a name="aws-properties-quicksight-template-mappeddatasetparameter"></a>
 
 A dataset parameter that is mapped to an analysis parameter.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-mappeddatasetparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-mappeddatasetparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataSetIdentifier" : String,
-  "DataSetParameterName" : String
+  "[DataSetIdentifier](#cfn-quicksight-template-mappeddatasetparameter-datasetidentifier)" : {{String}},
+  "[DataSetParameterName](#cfn-quicksight-template-mappeddatasetparameter-datasetparametername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-mappeddatasetparameter-syntax.yaml"></a>
 
-```yaml
-
-  DataSetIdentifier: String
-  DataSetParameterName: String
-
+```
+  [DataSetIdentifier](#cfn-quicksight-template-mappeddatasetparameter-datasetidentifier): {{String}}
+  [DataSetParameterName](#cfn-quicksight-template-mappeddatasetparameter-datasetparametername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-mappeddatasetparameter-properties"></a>
 
-`DataSetIdentifier`
-
+`DataSetIdentifier`  <a name="cfn-quicksight-template-mappeddatasetparameter-datasetidentifier"></a>
 A unique name that identifies a dataset within the analysis or dashboard.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetParameterName`
-
+`DataSetParameterName`  <a name="cfn-quicksight-template-mappeddatasetparameter-datasetparametername"></a>
 The name of the dataset parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LongFormatText
-
-MaximumLabelType
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

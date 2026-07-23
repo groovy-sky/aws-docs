@@ -2,99 +2,69 @@
 title: "AWS::CloudFormation::GuardHook TargetFiltersItems"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::GuardHook TargetFiltersItems
+<a name="aws-properties-cloudformation-guardhook-targetfiltersitems"></a>
 
-Specifies the resource types, actions, and invocation points to target for the
-`TargetFilters` property type.
+Specifies the resource types, actions, and invocation points to target for the `TargetFilters` property type.
 
-For more information, see [CloudFormation Hook target filters](../../../cloudformation-cli/latest/hooks-userguide/hooks-target-filtering.md).
+For more information, see [CloudFormation Hook target filters](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/hooks-target-filtering.html).
 
 ## Syntax
+<a name="aws-properties-cloudformation-guardhook-targetfiltersitems-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudformation-guardhook-targetfiltersitems-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ String, ... ],
-  "InvocationPoints" : [ String, ... ],
-  "TargetNames" : [ String, ... ]
+  "[Actions](#cfn-cloudformation-guardhook-targetfiltersitems-actions)" : {{[ String, ... ]}},
+  "[InvocationPoints](#cfn-cloudformation-guardhook-targetfiltersitems-invocationpoints)" : {{[ String, ... ]}},
+  "[TargetNames](#cfn-cloudformation-guardhook-targetfiltersitems-targetnames)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudformation-guardhook-targetfiltersitems-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - String
-  InvocationPoints:
-    - String
-  TargetNames:
-    - String
-
+```
+  [Actions](#cfn-cloudformation-guardhook-targetfiltersitems-actions): {{
+    - String}}
+  [InvocationPoints](#cfn-cloudformation-guardhook-targetfiltersitems-invocationpoints): {{
+    - String}}
+  [TargetNames](#cfn-cloudformation-guardhook-targetfiltersitems-targetnames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudformation-guardhook-targetfiltersitems-properties"></a>
 
-`Actions`
-
-The actions to target. For `CHANGE_SET` Hook targets, you can only target
-`CREATE` actions.
-
+`Actions`  <a name="cfn-cloudformation-guardhook-targetfiltersitems-actions"></a>
+The actions to target. For `CHANGE_SET` Hook targets, you can only target `CREATE` actions.
 Valid values: `CREATE` \| `UPDATE` \| `DELETE`
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`InvocationPoints`  <a name="cfn-cloudformation-guardhook-targetfiltersitems-invocationpoints"></a>
+The invocation points to target. The only valid value is `PRE_PROVISION`.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InvocationPoints`
-
-The invocation points to target. The only valid value is
-`PRE_PROVISION`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetNames`
-
-The resource types to target, such as `AWS::S3::Bucket` or
-`AWS::DynamoDB::Table`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetFilters
-
-AWS::CloudFormation::HookDefaultVersion
+`TargetNames`  <a name="cfn-cloudformation-guardhook-targetfiltersitems-targetnames"></a>
+The resource types to target, such as `AWS::S3::Bucket` or `AWS::DynamoDB::Table`.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,54 +2,42 @@
 title: "AWS::Connect::Queue EmailAddress"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Queue EmailAddress
+<a name="aws-properties-connect-queue-emailaddress"></a>
 
-The `EmailAddress` property type specifies Property description not available. for an [AWS::Connect::Queue](aws-resource-connect-queue.md).
+<a name="aws-properties-connect-queue-emailaddress-description"></a>The `EmailAddress` property type specifies Property description not available. for an [AWS::Connect::Queue](aws-resource-connect-queue.md).
 
 ## Syntax
+<a name="aws-properties-connect-queue-emailaddress-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-queue-emailaddress-syntax.json"></a>
 
-```json
-
+```
 {
-  "EmailAddressArn" : String
+  "[EmailAddressArn](#cfn-connect-queue-emailaddress-emailaddressarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-queue-emailaddress-syntax.yaml"></a>
 
-```yaml
-
-  EmailAddressArn: String
-
+```
+  [EmailAddressArn](#cfn-connect-queue-emailaddress-emailaddressarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-queue-emailaddress-properties"></a>
 
-`EmailAddressArn`
-
+`EmailAddressArn`  <a name="cfn-connect-queue-emailaddress-emailaddressarn"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-f0-9]{8}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{12}/email-address/[-a-f0-9]{8}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{12}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::Queue
-
-OutboundCallerConfig
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-f0-9]{8}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{12}/email-address/[-a-f0-9]{8}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{4}-[-a-f0-9]{12}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

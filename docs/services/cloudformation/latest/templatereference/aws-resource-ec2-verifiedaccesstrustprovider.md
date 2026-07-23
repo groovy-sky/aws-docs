@@ -2,205 +2,155 @@
 title: "AWS::EC2::VerifiedAccessTrustProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessTrustProvider
+<a name="aws-resource-ec2-verifiedaccesstrustprovider"></a>
 
-A trust provider is a third-party entity that creates, maintains, and manages identity
-information for users and devices. When an application request is made, the identity
-information sent by the trust provider is evaluated by Verified Access before allowing or
-denying the application request.
+A trust provider is a third-party entity that creates, maintains, and manages identity information for users and devices. When an application request is made, the identity information sent by the trust provider is evaluated by Verified Access before allowing or denying the application request.
 
 ## Syntax
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::VerifiedAccessTrustProvider",
   "Properties" : {
-      "Description" : String,
-      "DeviceOptions" : DeviceOptions,
-      "DeviceTrustProviderType" : String,
-      "NativeApplicationOidcOptions" : NativeApplicationOidcOptions,
-      "OidcOptions" : OidcOptions,
-      "PolicyReferenceName" : String,
-      "SseSpecification" : SseSpecification,
-      "Tags" : [ Tag, ... ],
-      "TrustProviderType" : String,
-      "UserTrustProviderType" : String
+      "[Description](#cfn-ec2-verifiedaccesstrustprovider-description)" : {{String}},
+      "[DeviceOptions](#cfn-ec2-verifiedaccesstrustprovider-deviceoptions)" : {{DeviceOptions}},
+      "[DeviceTrustProviderType](#cfn-ec2-verifiedaccesstrustprovider-devicetrustprovidertype)" : {{String}},
+      "[NativeApplicationOidcOptions](#cfn-ec2-verifiedaccesstrustprovider-nativeapplicationoidcoptions)" : {{NativeApplicationOidcOptions}},
+      "[OidcOptions](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions)" : {{OidcOptions}},
+      "[PolicyReferenceName](#cfn-ec2-verifiedaccesstrustprovider-policyreferencename)" : {{String}},
+      "[SseSpecification](#cfn-ec2-verifiedaccesstrustprovider-ssespecification)" : {{SseSpecification}},
+      "[Tags](#cfn-ec2-verifiedaccesstrustprovider-tags)" : {{[ Tag, ... ]}},
+      "[TrustProviderType](#cfn-ec2-verifiedaccesstrustprovider-trustprovidertype)" : {{String}},
+      "[UserTrustProviderType](#cfn-ec2-verifiedaccesstrustprovider-usertrustprovidertype)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::VerifiedAccessTrustProvider
 Properties:
-  Description: String
-  DeviceOptions:
-    DeviceOptions
-  DeviceTrustProviderType: String
-  NativeApplicationOidcOptions:
-    NativeApplicationOidcOptions
-  OidcOptions:
-    OidcOptions
-  PolicyReferenceName: String
-  SseSpecification:
-    SseSpecification
-  Tags:
-    - Tag
-  TrustProviderType: String
-  UserTrustProviderType: String
-
+  [Description](#cfn-ec2-verifiedaccesstrustprovider-description): {{String}}
+  [DeviceOptions](#cfn-ec2-verifiedaccesstrustprovider-deviceoptions): {{
+    DeviceOptions}}
+  [DeviceTrustProviderType](#cfn-ec2-verifiedaccesstrustprovider-devicetrustprovidertype): {{String}}
+  [NativeApplicationOidcOptions](#cfn-ec2-verifiedaccesstrustprovider-nativeapplicationoidcoptions): {{
+    NativeApplicationOidcOptions}}
+  [OidcOptions](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions): {{
+    OidcOptions}}
+  [PolicyReferenceName](#cfn-ec2-verifiedaccesstrustprovider-policyreferencename): {{String}}
+  [SseSpecification](#cfn-ec2-verifiedaccesstrustprovider-ssespecification): {{
+    SseSpecification}}
+  [Tags](#cfn-ec2-verifiedaccesstrustprovider-tags): {{
+    - Tag}}
+  [TrustProviderType](#cfn-ec2-verifiedaccesstrustprovider-trustprovidertype): {{String}}
+  [UserTrustProviderType](#cfn-ec2-verifiedaccesstrustprovider-usertrustprovidertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-ec2-verifiedaccesstrustprovider-description"></a>
 A description for the AWS Verified Access trust provider.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeviceOptions`
-
+`DeviceOptions`  <a name="cfn-ec2-verifiedaccesstrustprovider-deviceoptions"></a>
 The options for device-identity trust provider.
+*Required*: No
+*Type*: [DeviceOptions](aws-properties-ec2-verifiedaccesstrustprovider-deviceoptions.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DeviceOptions](aws-properties-ec2-verifiedaccesstrustprovider-deviceoptions.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DeviceTrustProviderType`
-
+`DeviceTrustProviderType`  <a name="cfn-ec2-verifiedaccesstrustprovider-devicetrustprovidertype"></a>
 The type of device-based trust provider.
+*Required*: No
+*Type*: String
+*Allowed values*: `jamf | crowdstrike | jumpcloud`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `jamf | crowdstrike | jumpcloud`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NativeApplicationOidcOptions`
-
+`NativeApplicationOidcOptions`  <a name="cfn-ec2-verifiedaccesstrustprovider-nativeapplicationoidcoptions"></a>
 The OpenID Connect (OIDC) options.
+*Required*: No
+*Type*: [NativeApplicationOidcOptions](aws-properties-ec2-verifiedaccesstrustprovider-nativeapplicationoidcoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NativeApplicationOidcOptions](aws-properties-ec2-verifiedaccesstrustprovider-nativeapplicationoidcoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OidcOptions`
-
+`OidcOptions`  <a name="cfn-ec2-verifiedaccesstrustprovider-oidcoptions"></a>
 The options for an OpenID Connect-compatible user-identity trust provider.
+*Required*: No
+*Type*: [OidcOptions](aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [OidcOptions](aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyReferenceName`
-
+`PolicyReferenceName`  <a name="cfn-ec2-verifiedaccesstrustprovider-policyreferencename"></a>
 The identifier to be used when working with policy rules.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`SseSpecification`  <a name="cfn-ec2-verifiedaccesstrustprovider-ssespecification"></a>
+ The options for additional server side encryption.
+*Required*: No
+*Type*: [SseSpecification](aws-properties-ec2-verifiedaccesstrustprovider-ssespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SseSpecification`
-
-The options for additional server side encryption.
-
-_Required_: No
-
-_Type_: [SseSpecification](aws-properties-ec2-verifiedaccesstrustprovider-ssespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-verifiedaccesstrustprovider-tags"></a>
 The tags.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-verifiedaccesstrustprovider-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-verifiedaccesstrustprovider-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrustProviderType`
-
+`TrustProviderType`  <a name="cfn-ec2-verifiedaccesstrustprovider-trustprovidertype"></a>
 The type of Verified Access trust provider.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `user | device`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `user | device`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UserTrustProviderType`
-
+`UserTrustProviderType`  <a name="cfn-ec2-verifiedaccesstrustprovider-usertrustprovidertype"></a>
 The type of user-based trust provider.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `iam-identity-center | oidc`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Allowed values*: `iam-identity-center | oidc`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the Verified Access trust provider.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-ec2-verifiedaccesstrustprovider-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The creation time.
 
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 The last updated time.
 
-`VerifiedAccessTrustProviderId`
-
+`VerifiedAccessTrustProviderId`  <a name="VerifiedAccessTrustProviderId-fn::getatt"></a>
 The ID of the Verified Access trust provider.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessTrustProvider
-
-DeviceOptions
 
 All content copied from https://docs.aws.amazon.com/.

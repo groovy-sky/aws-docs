@@ -2,107 +2,75 @@
 title: "AWS::Glue::UsageProfile ConfigurationObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::UsageProfile ConfigurationObject
+<a name="aws-properties-glue-usageprofile-configurationobject"></a>
 
 Specifies the values that an admin sets for each job or session parameter configured in a AWS Glue usage profile.
 
 ## Syntax
+<a name="aws-properties-glue-usageprofile-configurationobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-usageprofile-configurationobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllowedValues" : [ String, ... ],
-  "DefaultValue" : String,
-  "MaxValue" : String,
-  "MinValue" : String
+  "[AllowedValues](#cfn-glue-usageprofile-configurationobject-allowedvalues)" : {{[ String, ... ]}},
+  "[DefaultValue](#cfn-glue-usageprofile-configurationobject-defaultvalue)" : {{String}},
+  "[MaxValue](#cfn-glue-usageprofile-configurationobject-maxvalue)" : {{String}},
+  "[MinValue](#cfn-glue-usageprofile-configurationobject-minvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-usageprofile-configurationobject-syntax.yaml"></a>
 
-```yaml
-
-  AllowedValues:
-    - String
-  DefaultValue: String
-  MaxValue: String
-  MinValue: String
-
+```
+  [AllowedValues](#cfn-glue-usageprofile-configurationobject-allowedvalues): {{
+    - String}}
+  [DefaultValue](#cfn-glue-usageprofile-configurationobject-defaultvalue): {{String}}
+  [MaxValue](#cfn-glue-usageprofile-configurationobject-maxvalue): {{String}}
+  [MinValue](#cfn-glue-usageprofile-configurationobject-minvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-usageprofile-configurationobject-properties"></a>
 
-`AllowedValues`
-
+`AllowedValues`  <a name="cfn-glue-usageprofile-configurationobject-allowedvalues"></a>
 A list of allowed values for the parameter.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultValue`
-
+`DefaultValue`  <a name="cfn-glue-usageprofile-configurationobject-defaultvalue"></a>
 A default value for the parameter.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxValue`
-
+`MaxValue`  <a name="cfn-glue-usageprofile-configurationobject-maxvalue"></a>
 A maximum allowed value for the parameter.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinValue`
-
+`MinValue`  <a name="cfn-glue-usageprofile-configurationobject-minvalue"></a>
 A minimum allowed value for the parameter.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_.-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Glue::UsageProfile
-
-ProfileConfiguration
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_.-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

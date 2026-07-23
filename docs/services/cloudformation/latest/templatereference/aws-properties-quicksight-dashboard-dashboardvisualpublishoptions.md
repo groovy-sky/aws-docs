@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard DashboardVisualPublishOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DashboardVisualPublishOptions
+<a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions"></a>
 
 The visual publish options of a visual in a dashboard
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExportHiddenFieldsOption" : ExportHiddenFieldsOption
+  "[ExportHiddenFieldsOption](#cfn-quicksight-dashboard-dashboardvisualpublishoptions-exporthiddenfieldsoption)" : {{ExportHiddenFieldsOption}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions-syntax.yaml"></a>
 
-```yaml
-
-  ExportHiddenFieldsOption:
-    ExportHiddenFieldsOption
-
+```
+  [ExportHiddenFieldsOption](#cfn-quicksight-dashboard-dashboardvisualpublishoptions-exporthiddenfieldsoption): {{
+    ExportHiddenFieldsOption}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions-properties"></a>
 
-`ExportHiddenFieldsOption`
-
+`ExportHiddenFieldsOption`  <a name="cfn-quicksight-dashboard-dashboardvisualpublishoptions-exporthiddenfieldsoption"></a>
 Determines if hidden fields are included in an exported dashboard.
-
-_Required_: No
-
-_Type_: [ExportHiddenFieldsOption](aws-properties-quicksight-dashboard-exporthiddenfieldsoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DashboardVersionDefinition
-
-DataBarsOptions
+*Required*: No
+*Type*: [ExportHiddenFieldsOption](aws-properties-quicksight-dashboard-exporthiddenfieldsoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

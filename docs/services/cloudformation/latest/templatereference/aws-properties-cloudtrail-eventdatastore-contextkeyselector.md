@@ -2,71 +2,53 @@
 title: "AWS::CloudTrail::EventDataStore ContextKeySelector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudTrail::EventDataStore ContextKeySelector
+<a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector"></a>
 
 An object that contains information types to be included in CloudTrail enriched events.
 
 ## Syntax
+<a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector-syntax.json"></a>
 
-```json
-
+```
 {
-  "Equals" : [ String, ... ],
-  "Type" : String
+  "[Equals](#cfn-cloudtrail-eventdatastore-contextkeyselector-equals)" : {{[ String, ... ]}},
+  "[Type](#cfn-cloudtrail-eventdatastore-contextkeyselector-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector-syntax.yaml"></a>
 
-```yaml
-
-  Equals:
-    - String
-  Type: String
-
+```
+  [Equals](#cfn-cloudtrail-eventdatastore-contextkeyselector-equals): {{
+    - String}}
+  [Type](#cfn-cloudtrail-eventdatastore-contextkeyselector-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector-properties"></a>
 
-`Equals`
-
+`Equals`  <a name="cfn-cloudtrail-eventdatastore-contextkeyselector-equals"></a>
 A list of keys defined by Type to be included in CloudTrail enriched events.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `128 | 50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `128 | 50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-cloudtrail-eventdatastore-contextkeyselector-type"></a>
 Specifies the type of the event record field in ContextKeySelector. Valid values include RequestContext, TagContext.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `RequestContext | TagContext`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AdvancedFieldSelector
-
-InsightSelector
+*Required*: Yes
+*Type*: String
+*Allowed values*: `RequestContext | TagContext`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

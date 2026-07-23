@@ -2,69 +2,52 @@
 title: "AWS::QuickSight::Template ColumnGroupSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ColumnGroupSchema
+<a name="aws-properties-quicksight-template-columngroupschema"></a>
 
 The column group schema.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-columngroupschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-columngroupschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnGroupColumnSchemaList" : [ ColumnGroupColumnSchema, ... ],
-  "Name" : String
+  "[ColumnGroupColumnSchemaList](#cfn-quicksight-template-columngroupschema-columngroupcolumnschemalist)" : {{[ ColumnGroupColumnSchema, ... ]}},
+  "[Name](#cfn-quicksight-template-columngroupschema-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-columngroupschema-syntax.yaml"></a>
 
-```yaml
-
-  ColumnGroupColumnSchemaList:
-    - ColumnGroupColumnSchema
-  Name: String
-
+```
+  [ColumnGroupColumnSchemaList](#cfn-quicksight-template-columngroupschema-columngroupcolumnschemalist): {{
+    - ColumnGroupColumnSchema}}
+  [Name](#cfn-quicksight-template-columngroupschema-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-columngroupschema-properties"></a>
 
-`ColumnGroupColumnSchemaList`
-
+`ColumnGroupColumnSchemaList`  <a name="cfn-quicksight-template-columngroupschema-columngroupcolumnschemalist"></a>
 A structure containing the list of schemas for column group columns.
+*Required*: No
+*Type*: Array of [ColumnGroupColumnSchema](aws-properties-quicksight-template-columngroupcolumnschema.md)
+*Minimum*: `0`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ColumnGroupColumnSchema](aws-properties-quicksight-template-columngroupcolumnschema.md)
-
-_Minimum_: `0`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-template-columngroupschema-name"></a>
 The name of the column group schema.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ColumnGroupColumnSchema
-
-ColumnHierarchy
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

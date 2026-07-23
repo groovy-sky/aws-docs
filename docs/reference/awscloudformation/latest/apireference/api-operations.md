@@ -3,193 +3,98 @@ title: "Actions"
 ---
 
 # Actions
+<a name="API_Operations"></a>
 
 The following actions are supported:
-
-- [ActivateOrganizationsAccess](api-activateorganizationsaccess.md)
-
-- [ActivateType](api-activatetype.md)
-
-- [BatchDescribeTypeConfigurations](api-batchdescribetypeconfigurations.md)
-
-- [CancelUpdateStack](api-cancelupdatestack.md)
-
-- [ContinueUpdateRollback](api-continueupdaterollback.md)
-
-- [CreateChangeSet](api-createchangeset.md)
-
-- [CreateGeneratedTemplate](api-creategeneratedtemplate.md)
-
-- [CreateStack](api-createstack.md)
-
-- [CreateStackInstances](api-createstackinstances.md)
-
-- [CreateStackRefactor](api-createstackrefactor.md)
-
-- [CreateStackSet](api-createstackset.md)
-
-- [DeactivateOrganizationsAccess](api-deactivateorganizationsaccess.md)
-
-- [DeactivateType](api-deactivatetype.md)
-
-- [DeleteChangeSet](api-deletechangeset.md)
-
-- [DeleteGeneratedTemplate](api-deletegeneratedtemplate.md)
-
-- [DeleteStack](api-deletestack.md)
-
-- [DeleteStackInstances](api-deletestackinstances.md)
-
-- [DeleteStackSet](api-deletestackset.md)
-
-- [DeregisterType](api-deregistertype.md)
-
-- [DescribeAccountLimits](api-describeaccountlimits.md)
-
-- [DescribeChangeSet](api-describechangeset.md)
-
-- [DescribeChangeSetHooks](api-describechangesethooks.md)
-
-- [DescribeEvents](api-describeevents.md)
-
-- [DescribeGeneratedTemplate](api-describegeneratedtemplate.md)
-
-- [DescribeOrganizationsAccess](api-describeorganizationsaccess.md)
-
-- [DescribePublisher](api-describepublisher.md)
-
-- [DescribeResourceScan](api-describeresourcescan.md)
-
-- [DescribeStackDriftDetectionStatus](api-describestackdriftdetectionstatus.md)
-
-- [DescribeStackEvents](api-describestackevents.md)
-
-- [DescribeStackInstance](api-describestackinstance.md)
-
-- [DescribeStackRefactor](api-describestackrefactor.md)
-
-- [DescribeStackResource](api-describestackresource.md)
-
-- [DescribeStackResourceDrifts](api-describestackresourcedrifts.md)
-
-- [DescribeStackResources](api-describestackresources.md)
-
-- [DescribeStacks](api-describestacks.md)
-
-- [DescribeStackSet](api-describestackset.md)
-
-- [DescribeStackSetOperation](api-describestacksetoperation.md)
-
-- [DescribeType](api-describetype.md)
-
-- [DescribeTypeRegistration](api-describetyperegistration.md)
-
-- [DetectStackDrift](api-detectstackdrift.md)
-
-- [DetectStackResourceDrift](api-detectstackresourcedrift.md)
-
-- [DetectStackSetDrift](api-detectstacksetdrift.md)
-
-- [EstimateTemplateCost](api-estimatetemplatecost.md)
-
-- [ExecuteChangeSet](api-executechangeset.md)
-
-- [ExecuteStackRefactor](api-executestackrefactor.md)
-
-- [GetGeneratedTemplate](api-getgeneratedtemplate.md)
-
-- [GetHookResult](api-gethookresult.md)
-
-- [GetStackPolicy](api-getstackpolicy.md)
-
-- [GetTemplate](api-gettemplate.md)
-
-- [GetTemplateSummary](api-gettemplatesummary.md)
-
-- [ImportStacksToStackSet](api-importstackstostackset.md)
-
-- [ListChangeSets](api-listchangesets.md)
-
-- [ListExports](api-listexports.md)
-
-- [ListGeneratedTemplates](api-listgeneratedtemplates.md)
-
-- [ListHookResults](api-listhookresults.md)
-
-- [ListImports](api-listimports.md)
-
-- [ListResourceScanRelatedResources](api-listresourcescanrelatedresources.md)
-
-- [ListResourceScanResources](api-listresourcescanresources.md)
-
-- [ListResourceScans](api-listresourcescans.md)
-
-- [ListStackInstanceResourceDrifts](api-liststackinstanceresourcedrifts.md)
-
-- [ListStackInstances](api-liststackinstances.md)
-
-- [ListStackRefactorActions](api-liststackrefactoractions.md)
-
-- [ListStackRefactors](api-liststackrefactors.md)
-
-- [ListStackResources](api-liststackresources.md)
-
-- [ListStacks](api-liststacks.md)
-
-- [ListStackSetAutoDeploymentTargets](api-liststacksetautodeploymenttargets.md)
-
-- [ListStackSetOperationResults](api-liststacksetoperationresults.md)
-
-- [ListStackSetOperations](api-liststacksetoperations.md)
-
-- [ListStackSets](api-liststacksets.md)
-
-- [ListTypeRegistrations](api-listtyperegistrations.md)
-
-- [ListTypes](api-listtypes.md)
-
-- [ListTypeVersions](api-listtypeversions.md)
-
-- [PublishType](api-publishtype.md)
-
-- [RecordHandlerProgress](api-recordhandlerprogress.md)
-
-- [RegisterPublisher](api-registerpublisher.md)
-
-- [RegisterType](api-registertype.md)
-
-- [RollbackStack](api-rollbackstack.md)
-
-- [SetStackPolicy](api-setstackpolicy.md)
-
-- [SetTypeConfiguration](api-settypeconfiguration.md)
-
-- [SetTypeDefaultVersion](api-settypedefaultversion.md)
-
-- [SignalResource](api-signalresource.md)
-
-- [StartResourceScan](api-startresourcescan.md)
-
-- [StopStackSetOperation](api-stopstacksetoperation.md)
-
-- [TestType](api-testtype.md)
-
-- [UpdateGeneratedTemplate](api-updategeneratedtemplate.md)
-
-- [UpdateStack](api-updatestack.md)
-
-- [UpdateStackInstances](api-updatestackinstances.md)
-
-- [UpdateStackSet](api-updatestackset.md)
-
-- [UpdateTerminationProtection](api-updateterminationprotection.md)
-
-- [ValidateTemplate](api-validatetemplate.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Welcome
-
-ActivateOrganizationsAccess
++  [ActivateOrganizationsAccess](API_ActivateOrganizationsAccess.md)
++  [ActivateType](API_ActivateType.md)
++  [BatchDescribeTypeConfigurations](API_BatchDescribeTypeConfigurations.md)
++  [CancelUpdateStack](API_CancelUpdateStack.md)
++  [ContinueUpdateRollback](API_ContinueUpdateRollback.md)
++  [CreateChangeSet](API_CreateChangeSet.md)
++  [CreateGeneratedTemplate](API_CreateGeneratedTemplate.md)
++  [CreateStack](API_CreateStack.md)
++  [CreateStackInstances](API_CreateStackInstances.md)
++  [CreateStackRefactor](API_CreateStackRefactor.md)
++  [CreateStackSet](API_CreateStackSet.md)
++  [DeactivateOrganizationsAccess](API_DeactivateOrganizationsAccess.md)
++  [DeactivateType](API_DeactivateType.md)
++  [DeleteChangeSet](API_DeleteChangeSet.md)
++  [DeleteGeneratedTemplate](API_DeleteGeneratedTemplate.md)
++  [DeleteStack](API_DeleteStack.md)
++  [DeleteStackInstances](API_DeleteStackInstances.md)
++  [DeleteStackSet](API_DeleteStackSet.md)
++  [DeregisterType](API_DeregisterType.md)
++  [DescribeAccountLimits](API_DescribeAccountLimits.md)
++  [DescribeChangeSet](API_DescribeChangeSet.md)
++  [DescribeChangeSetHooks](API_DescribeChangeSetHooks.md)
++  [DescribeEvents](API_DescribeEvents.md)
++  [DescribeGeneratedTemplate](API_DescribeGeneratedTemplate.md)
++  [DescribeOrganizationsAccess](API_DescribeOrganizationsAccess.md)
++  [DescribePublisher](API_DescribePublisher.md)
++  [DescribeResourceScan](API_DescribeResourceScan.md)
++  [DescribeStackDriftDetectionStatus](API_DescribeStackDriftDetectionStatus.md)
++  [DescribeStackEvents](API_DescribeStackEvents.md)
++  [DescribeStackInstance](API_DescribeStackInstance.md)
++  [DescribeStackRefactor](API_DescribeStackRefactor.md)
++  [DescribeStackResource](API_DescribeStackResource.md)
++  [DescribeStackResourceDrifts](API_DescribeStackResourceDrifts.md)
++  [DescribeStackResources](API_DescribeStackResources.md)
++  [DescribeStacks](API_DescribeStacks.md)
++  [DescribeStackSet](API_DescribeStackSet.md)
++  [DescribeStackSetOperation](API_DescribeStackSetOperation.md)
++  [DescribeType](API_DescribeType.md)
++  [DescribeTypeRegistration](API_DescribeTypeRegistration.md)
++  [DetectStackDrift](API_DetectStackDrift.md)
++  [DetectStackResourceDrift](API_DetectStackResourceDrift.md)
++  [DetectStackSetDrift](API_DetectStackSetDrift.md)
++  [EstimateTemplateCost](API_EstimateTemplateCost.md)
++  [ExecuteChangeSet](API_ExecuteChangeSet.md)
++  [ExecuteStackRefactor](API_ExecuteStackRefactor.md)
++  [GetGeneratedTemplate](API_GetGeneratedTemplate.md)
++  [GetHookResult](API_GetHookResult.md)
++  [GetStackPolicy](API_GetStackPolicy.md)
++  [GetTemplate](API_GetTemplate.md)
++  [GetTemplateSummary](API_GetTemplateSummary.md)
++  [ImportStacksToStackSet](API_ImportStacksToStackSet.md)
++  [ListChangeSets](API_ListChangeSets.md)
++  [ListExports](API_ListExports.md)
++  [ListGeneratedTemplates](API_ListGeneratedTemplates.md)
++  [ListHookResults](API_ListHookResults.md)
++  [ListImports](API_ListImports.md)
++  [ListResourceScanRelatedResources](API_ListResourceScanRelatedResources.md)
++  [ListResourceScanResources](API_ListResourceScanResources.md)
++  [ListResourceScans](API_ListResourceScans.md)
++  [ListStackInstanceResourceDrifts](API_ListStackInstanceResourceDrifts.md)
++  [ListStackInstances](API_ListStackInstances.md)
++  [ListStackRefactorActions](API_ListStackRefactorActions.md)
++  [ListStackRefactors](API_ListStackRefactors.md)
++  [ListStackResources](API_ListStackResources.md)
++  [ListStacks](API_ListStacks.md)
++  [ListStackSetAutoDeploymentTargets](API_ListStackSetAutoDeploymentTargets.md)
++  [ListStackSetOperationResults](API_ListStackSetOperationResults.md)
++  [ListStackSetOperations](API_ListStackSetOperations.md)
++  [ListStackSets](API_ListStackSets.md)
++  [ListTypeRegistrations](API_ListTypeRegistrations.md)
++  [ListTypes](API_ListTypes.md)
++  [ListTypeVersions](API_ListTypeVersions.md)
++  [PublishType](API_PublishType.md)
++  [RecordHandlerProgress](API_RecordHandlerProgress.md)
++  [RegisterPublisher](API_RegisterPublisher.md)
++  [RegisterType](API_RegisterType.md)
++  [RollbackStack](API_RollbackStack.md)
++  [SetStackPolicy](API_SetStackPolicy.md)
++  [SetTypeConfiguration](API_SetTypeConfiguration.md)
++  [SetTypeDefaultVersion](API_SetTypeDefaultVersion.md)
++  [SignalResource](API_SignalResource.md)
++  [StartResourceScan](API_StartResourceScan.md)
++  [StopStackSetOperation](API_StopStackSetOperation.md)
++  [TestType](API_TestType.md)
++  [UpdateGeneratedTemplate](API_UpdateGeneratedTemplate.md)
++  [UpdateStack](API_UpdateStack.md)
++  [UpdateStackInstances](API_UpdateStackInstances.md)
++  [UpdateStackSet](API_UpdateStackSet.md)
++  [UpdateTerminationProtection](API_UpdateTerminationProtection.md)
++  [ValidateTemplate](API_ValidateTemplate.md)
 
 All content copied from https://docs.aws.amazon.com/.

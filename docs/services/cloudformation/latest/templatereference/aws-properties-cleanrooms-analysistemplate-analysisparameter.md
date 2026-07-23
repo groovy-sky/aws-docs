@@ -2,90 +2,63 @@
 title: "AWS::CleanRooms::AnalysisTemplate AnalysisParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate AnalysisParameter
+<a name="aws-properties-cleanrooms-analysistemplate-analysisparameter"></a>
 
-Optional. The member who can query can provide this placeholder for a literal data value
-in an analysis template.
+Optional. The member who can query can provide this placeholder for a literal data value in an analysis template.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-analysisparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-analysisparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValue" : String,
-  "Name" : String,
-  "Type" : String
+  "[DefaultValue](#cfn-cleanrooms-analysistemplate-analysisparameter-defaultvalue)" : {{String}},
+  "[Name](#cfn-cleanrooms-analysistemplate-analysisparameter-name)" : {{String}},
+  "[Type](#cfn-cleanrooms-analysistemplate-analysisparameter-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-analysisparameter-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValue: String
-  Name: String
-  Type: String
-
+```
+  [DefaultValue](#cfn-cleanrooms-analysistemplate-analysisparameter-defaultvalue): {{String}}
+  [Name](#cfn-cleanrooms-analysistemplate-analysisparameter-name): {{String}}
+  [Type](#cfn-cleanrooms-analysistemplate-analysisparameter-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-analysisparameter-properties"></a>
 
-`DefaultValue`
+`DefaultValue`  <a name="cfn-cleanrooms-analysistemplate-analysisparameter-defaultvalue"></a>
+Optional. The default value that is applied in the analysis template. The member who can query can override this value in the query editor.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Optional. The default value that is applied in the analysis template. The member who can
-query can override this value in the query editor.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-cleanrooms-analysistemplate-analysisparameter-name"></a>
 The name of the parameter. The name must use only alphanumeric or underscore (\_) characters.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[0-9a-zA-Z_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[0-9a-zA-Z_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Type`
-
+`Type`  <a name="cfn-cleanrooms-analysistemplate-analysisparameter-type"></a>
 The type of parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SMALLINT | INTEGER | BIGINT | DECIMAL | REAL | DOUBLE_PRECISION | BOOLEAN | CHAR | VARCHAR | DATE | TIMESTAMP | TIMESTAMPTZ | TIME | TIMETZ | VARBYTE | BINARY | BYTE | CHARACTER | DOUBLE | FLOAT | INT | LONG | NUMERIC | SHORT | STRING | TIMESTAMP_LTZ | TIMESTAMP_NTZ | TINYINT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CleanRooms::AnalysisTemplate
-
-AnalysisSchema
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SMALLINT | INTEGER | BIGINT | DECIMAL | REAL | DOUBLE_PRECISION | BOOLEAN | CHAR | VARCHAR | DATE | TIMESTAMP | TIMESTAMPTZ | TIME | TIMETZ | VARBYTE | BINARY | BYTE | CHARACTER | DOUBLE | FLOAT | INT | LONG | NUMERIC | SHORT | STRING | TIMESTAMP_LTZ | TIMESTAMP_NTZ | TINYINT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

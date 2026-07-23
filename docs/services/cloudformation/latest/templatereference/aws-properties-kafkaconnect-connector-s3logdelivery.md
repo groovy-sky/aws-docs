@@ -2,76 +2,57 @@
 title: "AWS::KafkaConnect::Connector S3LogDelivery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector S3LogDelivery
+<a name="aws-properties-kafkaconnect-connector-s3logdelivery"></a>
 
 Details about delivering logs to Amazon S3.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-s3logdelivery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-s3logdelivery-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Enabled" : Boolean,
-  "Prefix" : String
+  "[Bucket](#cfn-kafkaconnect-connector-s3logdelivery-bucket)" : {{String}},
+  "[Enabled](#cfn-kafkaconnect-connector-s3logdelivery-enabled)" : {{Boolean}},
+  "[Prefix](#cfn-kafkaconnect-connector-s3logdelivery-prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-s3logdelivery-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Enabled: Boolean
-  Prefix: String
-
+```
+  [Bucket](#cfn-kafkaconnect-connector-s3logdelivery-bucket): {{String}}
+  [Enabled](#cfn-kafkaconnect-connector-s3logdelivery-enabled): {{Boolean}}
+  [Prefix](#cfn-kafkaconnect-connector-s3logdelivery-prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-s3logdelivery-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-kafkaconnect-connector-s3logdelivery-bucket"></a>
 The name of the S3 bucket that is the destination for log delivery.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Enabled`
-
+`Enabled`  <a name="cfn-kafkaconnect-connector-s3logdelivery-enabled"></a>
 Specifies whether connector logs get sent to the specified Amazon S3 destination.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-kafkaconnect-connector-s3logdelivery-prefix"></a>
 The S3 prefix that is the destination for log delivery.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProvisionedCapacity
-
-ScaleInPolicy
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,168 +2,140 @@
 title: "AWS::BillingConductor::BillingGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::BillingGroup
+<a name="aws-resource-billingconductor-billinggroup"></a>
 
 Creates a billing group that resembles a consolidated billing family that AWS charges, based off of the predefined pricing plan computation.
 
 ## Syntax
+<a name="aws-resource-billingconductor-billinggroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-billingconductor-billinggroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::BillingConductor::BillingGroup",
   "Properties" : {
-      "AccountGrouping" : AccountGrouping,
-      "ComputationPreference" : ComputationPreference,
-      "Description" : String,
-      "Name" : String,
-      "PrimaryAccountId" : String,
-      "Tags" : [ Tag, ... ]
+      "[AccountGrouping](#cfn-billingconductor-billinggroup-accountgrouping)" : {{AccountGrouping}},
+      "[ComputationPreference](#cfn-billingconductor-billinggroup-computationpreference)" : {{ComputationPreference}},
+      "[Description](#cfn-billingconductor-billinggroup-description)" : {{String}},
+      "[Name](#cfn-billingconductor-billinggroup-name)" : {{String}},
+      "[PrimaryAccountId](#cfn-billingconductor-billinggroup-primaryaccountid)" : {{String}},
+      "[Tags](#cfn-billingconductor-billinggroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-billingconductor-billinggroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::BillingConductor::BillingGroup
 Properties:
-  AccountGrouping:
-    AccountGrouping
-  ComputationPreference:
-    ComputationPreference
-  Description: String
-  Name: String
-  PrimaryAccountId: String
-  Tags:
-    - Tag
-
+  [AccountGrouping](#cfn-billingconductor-billinggroup-accountgrouping): {{
+    AccountGrouping}}
+  [ComputationPreference](#cfn-billingconductor-billinggroup-computationpreference): {{
+    ComputationPreference}}
+  [Description](#cfn-billingconductor-billinggroup-description): {{String}}
+  [Name](#cfn-billingconductor-billinggroup-name): {{String}}
+  [PrimaryAccountId](#cfn-billingconductor-billinggroup-primaryaccountid): {{String}}
+  [Tags](#cfn-billingconductor-billinggroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-billingconductor-billinggroup-properties"></a>
 
-`AccountGrouping`
-
+`AccountGrouping`  <a name="cfn-billingconductor-billinggroup-accountgrouping"></a>
 The set of accounts that will be under the billing group. The set of accounts resemble the linked accounts in a consolidated billing family.
+*Required*: Yes
+*Type*: [AccountGrouping](aws-properties-billingconductor-billinggroup-accountgrouping.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [AccountGrouping](aws-properties-billingconductor-billinggroup-accountgrouping.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComputationPreference`
-
+`ComputationPreference`  <a name="cfn-billingconductor-billinggroup-computationpreference"></a>
 The preferences and settings that will be used to compute the AWScharges for a billing group.
+*Required*: Yes
+*Type*: [ComputationPreference](aws-properties-billingconductor-billinggroup-computationpreference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ComputationPreference](aws-properties-billingconductor-billinggroup-computationpreference.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-billingconductor-billinggroup-description"></a>
 The description of the billing group.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-billingconductor-billinggroup-name"></a>
 The billing group's name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9_\+=\.\-@]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9_\+=\.\-@]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryAccountId`
-
+`PrimaryAccountId`  <a name="cfn-billingconductor-billinggroup-primaryaccountid"></a>
 The account ID that serves as the main account in a billing group.
+*Required*: No
+*Type*: String
+*Pattern*: `[0-9]{12}`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[0-9]{12}`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-billingconductor-billinggroup-tags"></a>
 A map that contains tag keys and tag values that are attached to a billing group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-billingconductor-billinggroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-billingconductor-billinggroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-billingconductor-billinggroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-billingconductor-billinggroup-return-values-ref"></a>
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-billingconductor-billinggroup-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-billingconductor-billinggroup-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the created billing group.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the billing group was created.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The most recent time the billing group was modified.
 
-`Size`
-
+`Size`  <a name="Size-fn::getatt"></a>
 The number of accounts in the particular billing group.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The billing group status. Only one of the valid values can be used.
 
-`StatusReason`
-
+`StatusReason`  <a name="StatusReason-fn::getatt"></a>
 The reason why the billing group is in its current status.
 
 ## Examples
+<a name="aws-resource-billingconductor-billinggroup--examples"></a>
 
 ### Create a billing group with a pricing plan
+<a name="aws-resource-billingconductor-billinggroup--examples--Create_a_billing_group_with_a_pricing_plan"></a>
 
 The following example is a billing group that takes a list of linked account IDs and the primary account as input. This example creates a billing group with a pricing plan that has no pricing rules.
 
 #### JSON
+<a name="aws-resource-billingconductor-billinggroup--examples--Create_a_billing_group_with_a_pricing_plan--json"></a>
 
-```json
-
+```
 {
   "Parameters": {
       "LinkedAccountIds": {
@@ -199,9 +171,9 @@ The following example is a billing group that takes a list of linked account IDs
 ```
 
 #### YAML
+<a name="aws-resource-billingconductor-billinggroup--examples--Create_a_billing_group_with_a_pricing_plan--yaml"></a>
 
-```yaml
-
+```
 Parameters:
   LinkedAccountIds:
   Type: ListNumber
@@ -218,13 +190,6 @@ Resources:
             LinkedAccountIds: !Ref LinkedAccountIds
         ComputationPreference:
             PricingPlanArn: !GetAtt TestPricingPlan.Arn
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS Billing Conductor
-
-AccountGrouping
 
 All content copied from https://docs.aws.amazon.com/.

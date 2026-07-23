@@ -2,53 +2,41 @@
 title: "AWS::MediaTailor::Channel TimeShiftConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Channel TimeShiftConfiguration
+<a name="aws-properties-mediatailor-channel-timeshiftconfiguration"></a>
 
-The configuration for time-shifted viewing.
+ The configuration for time-shifted viewing.
 
 ## Syntax
+<a name="aws-properties-mediatailor-channel-timeshiftconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-channel-timeshiftconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxTimeDelaySeconds" : Number
+  "[MaxTimeDelaySeconds](#cfn-mediatailor-channel-timeshiftconfiguration-maxtimedelayseconds)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-channel-timeshiftconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  MaxTimeDelaySeconds: Number
-
+```
+  [MaxTimeDelaySeconds](#cfn-mediatailor-channel-timeshiftconfiguration-maxtimedelayseconds): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-channel-timeshiftconfiguration-properties"></a>
 
-`MaxTimeDelaySeconds`
-
-The maximum time delay for time-shifted viewing. The minimum allowed maximum time delay is 0 seconds,
-and the maximum allowed maximum time delay is 21600 seconds (6 hours).
-
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::MediaTailor::ChannelPolicy
+`MaxTimeDelaySeconds`  <a name="cfn-mediatailor-channel-timeshiftconfiguration-maxtimedelayseconds"></a>
+ The maximum time delay for time-shifted viewing. The minimum allowed maximum time delay is 0 seconds, and the maximum allowed maximum time delay is 21600 seconds (6 hours).
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

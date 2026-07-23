@@ -2,69 +2,50 @@
 title: "AWS::CodeDeploy::DeploymentConfig MinimumHealthyHostsPerZone"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentConfig MinimumHealthyHostsPerZone
+<a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone"></a>
 
-Information about the minimum number of healthy instances per Availability
-Zone.
+Information about the minimum number of healthy instances per Availability Zone.
 
 ## Syntax
+<a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "Value" : Integer
+  "[Type](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-type)" : {{String}},
+  "[Value](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-value)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  Value: Integer
-
+```
+  [Type](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-type): {{String}}
+  [Value](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-value): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone-properties"></a>
 
-`Type`
+`Type`  <a name="cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-type"></a>
+The `type` associated with the `MinimumHealthyHostsPerZone` option.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HOST_COUNT | FLEET_PERCENT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The `type` associated with the `MinimumHealthyHostsPerZone`
-option.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HOST_COUNT | FLEET_PERCENT`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
-The `value` associated with the `MinimumHealthyHostsPerZone`
-option.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MinimumHealthyHosts
-
-TimeBasedCanary
+`Value`  <a name="cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-value"></a>
+The `value` associated with the `MinimumHealthyHostsPerZone` option.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

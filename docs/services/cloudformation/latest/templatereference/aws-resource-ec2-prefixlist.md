@@ -2,165 +2,134 @@
 title: "AWS::EC2::PrefixList"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::PrefixList
+<a name="aws-resource-ec2-prefixlist"></a>
 
-Specifies a managed prefix list. You can add one or more entries to the prefix list.
-Each entry consists of a CIDR block and an optional description.
+Specifies a managed prefix list. You can add one or more entries to the prefix list. Each entry consists of a CIDR block and an optional description.
 
 ## Syntax
+<a name="aws-resource-ec2-prefixlist-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-prefixlist-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::PrefixList",
   "Properties" : {
-      "AddressFamily" : String,
-      "Entries" : [ Entry, ... ],
-      "MaxEntries" : Integer,
-      "PrefixListName" : String,
-      "Tags" : [ Tag, ... ]
+      "[AddressFamily](#cfn-ec2-prefixlist-addressfamily)" : {{String}},
+      "[Entries](#cfn-ec2-prefixlist-entries)" : {{[ Entry, ... ]}},
+      "[MaxEntries](#cfn-ec2-prefixlist-maxentries)" : {{Integer}},
+      "[PrefixListName](#cfn-ec2-prefixlist-prefixlistname)" : {{String}},
+      "[Tags](#cfn-ec2-prefixlist-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-prefixlist-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::PrefixList
 Properties:
-  AddressFamily: String
-  Entries:
-    - Entry
-  MaxEntries: Integer
-  PrefixListName: String
-  Tags:
-    - Tag
-
+  [AddressFamily](#cfn-ec2-prefixlist-addressfamily): {{String}}
+  [Entries](#cfn-ec2-prefixlist-entries): {{
+    - Entry}}
+  [MaxEntries](#cfn-ec2-prefixlist-maxentries): {{Integer}}
+  [PrefixListName](#cfn-ec2-prefixlist-prefixlistname): {{String}}
+  [Tags](#cfn-ec2-prefixlist-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-prefixlist-properties"></a>
 
-`AddressFamily`
-
+`AddressFamily`  <a name="cfn-ec2-prefixlist-addressfamily"></a>
 The IP address type.
-
 Valid Values: `IPv4` \| `IPv6`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `IPv4 | IPv6`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `IPv4 | IPv6`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Entries`
-
+`Entries`  <a name="cfn-ec2-prefixlist-entries"></a>
 The entries for the prefix list.
+*Required*: No
+*Type*: Array of [Entry](aws-properties-ec2-prefixlist-entry.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Entry](aws-properties-ec2-prefixlist-entry.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxEntries`
-
-The maximum number of entries for the prefix list. You can't modify the entries and the size
-of a prefix list at the same time.
-
+`MaxEntries`  <a name="cfn-ec2-prefixlist-maxentries"></a>
+The maximum number of entries for the prefix list. You can't modify the entries and the size of a prefix list at the same time. The maximum number of entries per prefix list defaults to 1,000 and can be increased by opening a support case with AWS Support.
 This property is required when you create a prefix list.
+*Default Maximum*: `1000`
+*Required*: Conditional
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrefixListName`
-
+`PrefixListName`  <a name="cfn-ec2-prefixlist-prefixlistname"></a>
 A name for the prefix list.
-
 Constraints: Up to 255 characters in length. The name cannot start with `com.amazonaws`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-prefixlist-tags"></a>
 The tags for the prefix list.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-prefixlist-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-prefixlist-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-prefixlist-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-prefixlist-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the prefix list.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-prefixlist-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ec2-prefixlist-return-values-fn--getatt-fn--getatt"></a>
 
-The ARN of the prefix list. For example,
-`arn:aws:ec2:us-east-1:123456789012:prefix-list/pl-0123123123123abcd`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The ARN of the prefix list. For example, `arn:aws:ec2:us-east-1:123456789012:prefix-list/pl-0123123123123abcd`.
 
-`OwnerId`
-
+`OwnerId`  <a name="OwnerId-fn::getatt"></a>
 The ID of the owner of the prefix list. For example, `123456789012`.
 
-`PrefixListId`
-
+`PrefixListId`  <a name="PrefixListId-fn::getatt"></a>
 The ID of the prefix list. For example, `pl-0123123123123abcd`.
 
-`Version`
-
+`Version`  <a name="Version-fn::getatt"></a>
 The version of the prefix list. For example, `1`.
 
 ## Examples
+<a name="aws-resource-ec2-prefixlist--examples"></a>
 
 ### Create a prefix list
+<a name="aws-resource-ec2-prefixlist--examples--Create_a_prefix_list"></a>
 
-The following example creates an IPv4 prefix list with a maximum of 10 entries,
-and creates 2 entries in the prefix list.
+The following example creates an IPv4 prefix list with a maximum of 10 entries, and creates 2 entries in the prefix list.
 
 #### JSON
+<a name="aws-resource-ec2-prefixlist--examples--Create_a_prefix_list--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "NewPrefixList": {
@@ -192,9 +161,9 @@ and creates 2 entries in the prefix list.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-prefixlist--examples--Create_a_prefix_list--yaml"></a>
 
-```yaml
-
+```
 Resources:
   NewPrefixList:
     Type: AWS::EC2::PrefixList
@@ -211,11 +180,5 @@ Resources:
         - Key: "Name"
           Value: "VPC-1-Servers"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Entry
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,104 +2,73 @@
 title: "AWS::QuickSight::Template LineChartMarkerStyleSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template LineChartMarkerStyleSettings
+<a name="aws-properties-quicksight-template-linechartmarkerstylesettings"></a>
 
 Marker styles options for a line series in `LineChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-linechartmarkerstylesettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-linechartmarkerstylesettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "MarkerColor" : String,
-  "MarkerShape" : String,
-  "MarkerSize" : String,
-  "MarkerVisibility" : String
+  "[MarkerColor](#cfn-quicksight-template-linechartmarkerstylesettings-markercolor)" : {{String}},
+  "[MarkerShape](#cfn-quicksight-template-linechartmarkerstylesettings-markershape)" : {{String}},
+  "[MarkerSize](#cfn-quicksight-template-linechartmarkerstylesettings-markersize)" : {{String}},
+  "[MarkerVisibility](#cfn-quicksight-template-linechartmarkerstylesettings-markervisibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-linechartmarkerstylesettings-syntax.yaml"></a>
 
-```yaml
-
-  MarkerColor: String
-  MarkerShape: String
-  MarkerSize: String
-  MarkerVisibility: String
-
+```
+  [MarkerColor](#cfn-quicksight-template-linechartmarkerstylesettings-markercolor): {{String}}
+  [MarkerShape](#cfn-quicksight-template-linechartmarkerstylesettings-markershape): {{String}}
+  [MarkerSize](#cfn-quicksight-template-linechartmarkerstylesettings-markersize): {{String}}
+  [MarkerVisibility](#cfn-quicksight-template-linechartmarkerstylesettings-markervisibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-linechartmarkerstylesettings-properties"></a>
 
-`MarkerColor`
-
+`MarkerColor`  <a name="cfn-quicksight-template-linechartmarkerstylesettings-markercolor"></a>
 Color of marker in the series.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MarkerShape`
-
+`MarkerShape`  <a name="cfn-quicksight-template-linechartmarkerstylesettings-markershape"></a>
 Shape option for markers in the series.
++ `CIRCLE`: Show marker as a circle.
++ `TRIANGLE`: Show marker as a triangle.
++ `SQUARE`: Show marker as a square.
++ `DIAMOND`: Show marker as a diamond.
++ `ROUNDED_SQUARE`: Show marker as a rounded square.
+*Required*: No
+*Type*: String
+*Allowed values*: `CIRCLE | TRIANGLE | SQUARE | DIAMOND | ROUNDED_SQUARE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `CIRCLE`: Show marker as a circle.
-
-- `TRIANGLE`: Show marker as a triangle.
-
-- `SQUARE`: Show marker as a square.
-
-- `DIAMOND`: Show marker as a diamond.
-
-- `ROUNDED_SQUARE`: Show marker as a rounded square.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CIRCLE | TRIANGLE | SQUARE | DIAMOND | ROUNDED_SQUARE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MarkerSize`
-
+`MarkerSize`  <a name="cfn-quicksight-template-linechartmarkerstylesettings-markersize"></a>
 Size of marker in the series.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MarkerVisibility`
-
+`MarkerVisibility`  <a name="cfn-quicksight-template-linechartmarkerstylesettings-markervisibility"></a>
 Configuration option that determines whether to show the markers in the series.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LineChartLineStyleSettings
-
-LineChartSeriesSettings
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

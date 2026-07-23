@@ -2,126 +2,89 @@
 title: "AWS::IoT::SecurityProfile MetricValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::SecurityProfile MetricValue
+<a name="aws-properties-iot-securityprofile-metricvalue"></a>
 
 The value to be compared with the `metric`.
 
 ## Syntax
+<a name="aws-properties-iot-securityprofile-metricvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-securityprofile-metricvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "Cidrs" : [ String, ... ],
-  "Count" : String,
-  "Number" : Number,
-  "Numbers" : [ Number, ... ],
-  "Ports" : [ Integer, ... ],
-  "Strings" : [ String, ... ]
+  "[Cidrs](#cfn-iot-securityprofile-metricvalue-cidrs)" : {{[ String, ... ]}},
+  "[Count](#cfn-iot-securityprofile-metricvalue-count)" : {{String}},
+  "[Number](#cfn-iot-securityprofile-metricvalue-number)" : {{Number}},
+  "[Numbers](#cfn-iot-securityprofile-metricvalue-numbers)" : {{[ Number, ... ]}},
+  "[Ports](#cfn-iot-securityprofile-metricvalue-ports)" : {{[ Integer, ... ]}},
+  "[Strings](#cfn-iot-securityprofile-metricvalue-strings)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-securityprofile-metricvalue-syntax.yaml"></a>
 
-```yaml
-
-  Cidrs:
-    - String
-  Count: String
-  Number:
-    Number
-  Numbers:
-    - Number
-  Ports:
-    - Integer
-  Strings:
-    - String
-
+```
+  [Cidrs](#cfn-iot-securityprofile-metricvalue-cidrs): {{
+    - String}}
+  [Count](#cfn-iot-securityprofile-metricvalue-count): {{String}}
+  [Number](#cfn-iot-securityprofile-metricvalue-number): {{
+    Number}}
+  [Numbers](#cfn-iot-securityprofile-metricvalue-numbers): {{
+    - Number}}
+  [Ports](#cfn-iot-securityprofile-metricvalue-ports): {{
+    - Integer}}
+  [Strings](#cfn-iot-securityprofile-metricvalue-strings): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-securityprofile-metricvalue-properties"></a>
 
-`Cidrs`
+`Cidrs`  <a name="cfn-iot-securityprofile-metricvalue-cidrs"></a>
+If the `comparisonOperator` calls for a set of CIDRs, use this to specify that set to be compared with the `metric`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If the `comparisonOperator` calls for a set of CIDRs, use this
-to specify that set to be compared with the `metric`.
+`Count`  <a name="cfn-iot-securityprofile-metricvalue-count"></a>
+If the `comparisonOperator` calls for a numeric value, use this to specify that numeric value to be compared with the `metric`.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Count`
-
-If the `comparisonOperator` calls for a numeric value, use this
-to specify that numeric value to be compared with the `metric`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Number`
-
+`Number`  <a name="cfn-iot-securityprofile-metricvalue-number"></a>
 The numeric values of a metric.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Numbers`
-
+`Numbers`  <a name="cfn-iot-securityprofile-metricvalue-numbers"></a>
 The numeric value of a metric.
+*Required*: No
+*Type*: Array of Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Ports`  <a name="cfn-iot-securityprofile-metricvalue-ports"></a>
+If the `comparisonOperator` calls for a set of ports, use this to specify that set to be compared with the `metric`.
+*Required*: No
+*Type*: Array of Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ports`
-
-If the `comparisonOperator` calls for a set of ports, use this
-to specify that set to be compared with the `metric`.
-
-_Required_: No
-
-_Type_: Array of Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Strings`
-
+`Strings`  <a name="cfn-iot-securityprofile-metricvalue-strings"></a>
 The string values of a metric.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MetricToRetain
-
-StatisticalThreshold
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

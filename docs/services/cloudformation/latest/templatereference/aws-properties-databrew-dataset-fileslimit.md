@@ -2,85 +2,59 @@
 title: "AWS::DataBrew::Dataset FilesLimit"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset FilesLimit
+<a name="aws-properties-databrew-dataset-fileslimit"></a>
 
-Represents a limit imposed on number of Amazon S3 files that should be
-selected for a dataset from a connected Amazon S3 path.
+Represents a limit imposed on number of Amazon S3 files that should be selected for a dataset from a connected Amazon S3 path.
 
 ## Syntax
+<a name="aws-properties-databrew-dataset-fileslimit-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-dataset-fileslimit-syntax.json"></a>
 
-```json
-
+```
 {
-  "MaxFiles" : Integer,
-  "Order" : String,
-  "OrderedBy" : String
+  "[MaxFiles](#cfn-databrew-dataset-fileslimit-maxfiles)" : {{Integer}},
+  "[Order](#cfn-databrew-dataset-fileslimit-order)" : {{String}},
+  "[OrderedBy](#cfn-databrew-dataset-fileslimit-orderedby)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-dataset-fileslimit-syntax.yaml"></a>
 
-```yaml
-
-  MaxFiles: Integer
-  Order: String
-  OrderedBy: String
-
+```
+  [MaxFiles](#cfn-databrew-dataset-fileslimit-maxfiles): {{Integer}}
+  [Order](#cfn-databrew-dataset-fileslimit-order): {{String}}
+  [OrderedBy](#cfn-databrew-dataset-fileslimit-orderedby): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-dataset-fileslimit-properties"></a>
 
-`MaxFiles`
-
+`MaxFiles`  <a name="cfn-databrew-dataset-fileslimit-maxfiles"></a>
 The number of Amazon S3 files to select.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Order`  <a name="cfn-databrew-dataset-fileslimit-order"></a>
+A criteria to use for Amazon S3 files sorting before their selection. By default uses DESCENDING order, i.e. most recent files are selected first. Anotherpossible value is ASCENDING.
+*Required*: No
+*Type*: String
+*Allowed values*: `ASCENDING | DESCENDING`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Order`
-
-A criteria to use for Amazon S3 files sorting before their selection. By
-default uses DESCENDING order, i.e. most recent files are selected first.
-Anotherpossible value is ASCENDING.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ASCENDING | DESCENDING`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrderedBy`
-
-A criteria to use for Amazon S3 files sorting before their selection. By
-default uses LAST\_MODIFIED\_DATE as a sorting criteria. Currently it's the only allowed
-value.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LAST_MODIFIED_DATE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExcelOptions
-
-FilterExpression
+`OrderedBy`  <a name="cfn-databrew-dataset-fileslimit-orderedby"></a>
+A criteria to use for Amazon S3 files sorting before their selection. By default uses LAST\_MODIFIED\_DATE as a sorting criteria. Currently it's the only allowed value.
+*Required*: No
+*Type*: String
+*Allowed values*: `LAST_MODIFIED_DATE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

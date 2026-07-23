@@ -2,183 +2,148 @@
 title: "AWS::IoT::SecurityProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::SecurityProfile
+<a name="aws-resource-iot-securityprofile"></a>
 
-Use the `AWS::IoT::SecurityProfile` resource to create a Device Defender
-security profile. For API reference, see [CreateSecurityProfile](../../../../reference/iot/latest/apireference/api-createsecurityprofile.md) and for general information, see [Detect](../../../iot/latest/developerguide/device-defender-detect.md).
+Use the `AWS::IoT::SecurityProfile` resource to create a Device Defender security profile. For API reference, see [CreateSecurityProfile](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateSecurityProfile.html) and for general information, see [Detect](https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-detect.html).
 
 ## Syntax
+<a name="aws-resource-iot-securityprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-iot-securityprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IoT::SecurityProfile",
   "Properties" : {
-      "AdditionalMetricsToRetainV2" : [ MetricToRetain, ... ],
-      "AlertTargets" : {Key: Value, ...},
-      "Behaviors" : [ Behavior, ... ],
-      "MetricsExportConfig" : MetricsExportConfig,
-      "SecurityProfileDescription" : String,
-      "SecurityProfileName" : String,
-      "Tags" : [ Tag, ... ],
-      "TargetArns" : [ String, ... ]
+      "[AdditionalMetricsToRetainV2](#cfn-iot-securityprofile-additionalmetricstoretainv2)" : {{[ MetricToRetain, ... ]}},
+      "[AlertTargets](#cfn-iot-securityprofile-alerttargets)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[Behaviors](#cfn-iot-securityprofile-behaviors)" : {{[ Behavior, ... ]}},
+      "[MetricsExportConfig](#cfn-iot-securityprofile-metricsexportconfig)" : {{MetricsExportConfig}},
+      "[SecurityProfileDescription](#cfn-iot-securityprofile-securityprofiledescription)" : {{String}},
+      "[SecurityProfileName](#cfn-iot-securityprofile-securityprofilename)" : {{String}},
+      "[Tags](#cfn-iot-securityprofile-tags)" : {{[ Tag, ... ]}},
+      "[TargetArns](#cfn-iot-securityprofile-targetarns)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-iot-securityprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IoT::SecurityProfile
 Properties:
-  AdditionalMetricsToRetainV2:
-    - MetricToRetain
-  AlertTargets:
-    Key: Value
-  Behaviors:
-    - Behavior
-  MetricsExportConfig:
-    MetricsExportConfig
-  SecurityProfileDescription: String
-  SecurityProfileName: String
-  Tags:
-    - Tag
-  TargetArns:
-    - String
-
+  [AdditionalMetricsToRetainV2](#cfn-iot-securityprofile-additionalmetricstoretainv2): {{
+    - MetricToRetain}}
+  [AlertTargets](#cfn-iot-securityprofile-alerttargets): {{
+    {{Key}}: {{Value}}}}
+  [Behaviors](#cfn-iot-securityprofile-behaviors): {{
+    - Behavior}}
+  [MetricsExportConfig](#cfn-iot-securityprofile-metricsexportconfig): {{
+    MetricsExportConfig}}
+  [SecurityProfileDescription](#cfn-iot-securityprofile-securityprofiledescription): {{String}}
+  [SecurityProfileName](#cfn-iot-securityprofile-securityprofilename): {{String}}
+  [Tags](#cfn-iot-securityprofile-tags): {{
+    - Tag}}
+  [TargetArns](#cfn-iot-securityprofile-targetarns): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-iot-securityprofile-properties"></a>
 
-`AdditionalMetricsToRetainV2`
+`AdditionalMetricsToRetainV2`  <a name="cfn-iot-securityprofile-additionalmetricstoretainv2"></a>
+A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's `behaviors`, but it's also retained for any metric specified here. Can be used with custom metrics; can't be used with dimensions.
+*Required*: No
+*Type*: Array of [MetricToRetain](aws-properties-iot-securityprofile-metrictoretain.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A list of metrics whose data is retained (stored). By default, data is retained for any
-metric used in the profile's `behaviors`, but it's also retained for any metric
-specified here. Can be used with custom metrics; can't be used with dimensions.
+`AlertTargets`  <a name="cfn-iot-securityprofile-alerttargets"></a>
+Specifies the destinations to which alerts are sent. (Alerts are always sent to the console.) Alerts are generated when a device (thing) violates a behavior.
+*Required*: No
+*Type*: Object of [AlertTarget](aws-properties-iot-securityprofile-alerttarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MetricToRetain](aws-properties-iot-securityprofile-metrictoretain.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlertTargets`
-
-Specifies the destinations to which alerts are sent. (Alerts are always sent to the
-console.) Alerts are generated when a device (thing) violates a behavior.
-
-_Required_: No
-
-_Type_: Object of [AlertTarget](aws-properties-iot-securityprofile-alerttarget.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Behaviors`
-
+`Behaviors`  <a name="cfn-iot-securityprofile-behaviors"></a>
 Specifies the behaviors that, when violated by a device (thing), cause an alert.
+*Required*: No
+*Type*: Array of [Behavior](aws-properties-iot-securityprofile-behavior.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Behavior](aws-properties-iot-securityprofile-behavior.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MetricsExportConfig`
-
+`MetricsExportConfig`  <a name="cfn-iot-securityprofile-metricsexportconfig"></a>
 Specifies the MQTT topic and role ARN required for metric export.
+*Required*: No
+*Type*: [MetricsExportConfig](aws-properties-iot-securityprofile-metricsexportconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MetricsExportConfig](aws-properties-iot-securityprofile-metricsexportconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityProfileDescription`
-
+`SecurityProfileDescription`  <a name="cfn-iot-securityprofile-securityprofiledescription"></a>
 A description of the security profile.
+*Required*: No
+*Type*: String
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecurityProfileName`
-
+`SecurityProfileName`  <a name="cfn-iot-securityprofile-securityprofilename"></a>
 The name you gave to the security profile.
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9:_-]+`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9:_-]+`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-iot-securityprofile-tags"></a>
 Metadata that can be used to manage the security profile.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-iot-securityprofile-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-iot-securityprofile-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArns`
-
+`TargetArns`  <a name="cfn-iot-securityprofile-targetarns"></a>
 The ARN of the target (thing group) to which the security profile is attached.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-iot-securityprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-iot-securityprofile-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the security profile name.
 
 ### Fn::GetAtt
+<a name="aws-resource-iot-securityprofile-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`SecurityProfileArn`
+####
+<a name="aws-resource-iot-securityprofile-return-values-fn--getatt-fn--getatt"></a>
 
+`SecurityProfileArn`  <a name="SecurityProfileArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the security profile.
 
 ## Examples
+<a name="aws-resource-iot-securityprofile--examples"></a>
+
+###
+<a name="aws-resource-iot-securityprofile--examples--"></a>
 
 #### JSON
+<a name="aws-resource-iot-securityprofile--examples----json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT SecurityProfile Sample Template",
@@ -254,9 +219,9 @@ The Amazon Resource Name (ARN) of the security profile.
 ```
 
 #### YAML
+<a name="aws-resource-iot-securityprofile--examples----yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT SecurityProfile Sample Template
 Resources:
@@ -301,11 +266,5 @@ Resources:
       TargetArns:
         - 'arn:aws:iot:us-east-1:123456789012:all/things'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AlertTarget
 
 All content copied from https://docs.aws.amazon.com/.

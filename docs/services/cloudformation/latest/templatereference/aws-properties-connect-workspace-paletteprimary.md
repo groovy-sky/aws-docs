@@ -2,94 +2,66 @@
 title: "AWS::Connect::Workspace PalettePrimary"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Workspace PalettePrimary
+<a name="aws-properties-connect-workspace-paletteprimary"></a>
 
 Contains primary color configuration for a workspace theme.
 
 ## Syntax
+<a name="aws-properties-connect-workspace-paletteprimary-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-workspace-paletteprimary-syntax.json"></a>
 
-```json
-
+```
 {
-  "Active" : String,
-  "ContrastText" : String,
-  "Default" : String
+  "[Active](#cfn-connect-workspace-paletteprimary-active)" : {{String}},
+  "[ContrastText](#cfn-connect-workspace-paletteprimary-contrasttext)" : {{String}},
+  "[Default](#cfn-connect-workspace-paletteprimary-default)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-workspace-paletteprimary-syntax.yaml"></a>
 
-```yaml
-
-  Active: String
-  ContrastText: String
-  Default: String
-
+```
+  [Active](#cfn-connect-workspace-paletteprimary-active): {{String}}
+  [ContrastText](#cfn-connect-workspace-paletteprimary-contrasttext): {{String}}
+  [Default](#cfn-connect-workspace-paletteprimary-default): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-workspace-paletteprimary-properties"></a>
 
-`Active`
-
+`Active`  <a name="cfn-connect-workspace-paletteprimary-active"></a>
 The primary color used for active states.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContrastText`
-
+`ContrastText`  <a name="cfn-connect-workspace-paletteprimary-contrasttext"></a>
 The text color that contrasts with the primary color for readability.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Default`
-
+`Default`  <a name="cfn-connect-workspace-paletteprimary-default"></a>
 The default primary color used throughout the workspace.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.*\S.*`
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PaletteNavigation
-
-Tag
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,70 +2,52 @@
 title: "AWS::Lex::Bot SlotTypeValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotTypeValue
+<a name="aws-properties-lex-bot-slottypevalue"></a>
 
-Each slot type can have a set of values. Each
-`SlotTypeValue` represents a value that the slot type can
-take.
+Each slot type can have a set of values. Each `SlotTypeValue` represents a value that the slot type can take.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slottypevalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slottypevalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "SampleValue" : SampleValue,
-  "Synonyms" : [ SampleValue, ... ]
+  "[SampleValue](#cfn-lex-bot-slottypevalue-samplevalue)" : {{SampleValue}},
+  "[Synonyms](#cfn-lex-bot-slottypevalue-synonyms)" : {{[ SampleValue, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slottypevalue-syntax.yaml"></a>
 
-```yaml
-
-  SampleValue:
-    SampleValue
-  Synonyms:
-    - SampleValue
-
+```
+  [SampleValue](#cfn-lex-bot-slottypevalue-samplevalue): {{
+    SampleValue}}
+  [Synonyms](#cfn-lex-bot-slottypevalue-synonyms): {{
+    - SampleValue}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slottypevalue-properties"></a>
 
-`SampleValue`
-
+`SampleValue`  <a name="cfn-lex-bot-slottypevalue-samplevalue"></a>
 The value of the slot type entry.
+*Required*: Yes
+*Type*: [SampleValue](aws-properties-lex-bot-samplevalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [SampleValue](aws-properties-lex-bot-samplevalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Synonyms`
-
+`Synonyms`  <a name="cfn-lex-bot-slottypevalue-synonyms"></a>
 Additional values related to the slot type entry.
-
-_Required_: No
-
-_Type_: Array of [SampleValue](aws-properties-lex-bot-samplevalue.md)
-
-_Maximum_: `10000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlotType
-
-SlotValue
+*Required*: No
+*Type*: Array of [SampleValue](aws-properties-lex-bot-samplevalue.md)
+*Maximum*: `10000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

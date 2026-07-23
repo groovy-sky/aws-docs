@@ -2,130 +2,102 @@
 title: "AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation"></a>
 
 The AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation resource is a configuration for DNS query logging. After you create a query logging configuration, Amazon Route 53 begins to publish log data to an Amazon CloudWatch Logs log group.
 
 ## Syntax
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation",
   "Properties" : {
-      "ResolverQueryLogConfigId" : String,
-      "ResourceId" : String
+      "[ResolverQueryLogConfigId](#cfn-route53resolver-resolverqueryloggingconfigassociation-resolverquerylogconfigid)" : {{String}},
+      "[ResourceId](#cfn-route53resolver-resolverqueryloggingconfigassociation-resourceid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation
 Properties:
-  ResolverQueryLogConfigId: String
-  ResourceId: String
-
+  [ResolverQueryLogConfigId](#cfn-route53resolver-resolverqueryloggingconfigassociation-resolverquerylogconfigid): {{String}}
+  [ResourceId](#cfn-route53resolver-resolverqueryloggingconfigassociation-resourceid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-properties"></a>
 
-`ResolverQueryLogConfigId`
-
+`ResolverQueryLogConfigId`  <a name="cfn-route53resolver-resolverqueryloggingconfigassociation-resolverquerylogconfigid"></a>
 The ID of the query logging configuration that a VPC is associated with.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ResourceId`
-
+`ResourceId`  <a name="cfn-route53resolver-resolverqueryloggingconfigassociation-resourceid"></a>
 The ID of the Amazon VPC that is associated with the query logging configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the configuration for DNS query logging.
 
 For example: `{ "Ref": "rqlca-1111222233334444" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreationTime`
+####
+<a name="aws-resource-route53resolver-resolverqueryloggingconfigassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The date and time that the VPC was associated with the query logging configuration, in Unix time format and Coordinated Universal Time (UTC).
 
-`Error`
-
-If the value of `Status` is `FAILED`, the value of
-`Error` indicates the cause:
-
-- `DESTINATION_NOT_FOUND`: The specified destination (for example, an Amazon S3 bucket) was deleted.
-
-- `ACCESS_DENIED`: Permissions don't allow sending logs to the destination.
-
+`Error`  <a name="Error-fn::getatt"></a>
+If the value of `Status` is `FAILED`, the value of `Error` indicates the cause:
++ `DESTINATION_NOT_FOUND`: The specified destination (for example, an Amazon S3 bucket) was deleted.
++ `ACCESS_DENIED`: Permissions don't allow sending logs to the destination.
 If the value of `Status` is a value other than `FAILED`, `Error` is null.
 
-`ErrorMessage`
+`ErrorMessage`  <a name="ErrorMessage-fn::getatt"></a>
+Contains additional information about the error. If the value or `Error` is null, the value of `ErrorMessage` is also null.
 
-Contains additional information about the error. If the value or `Error` is null, the value of `ErrorMessage` is also
-null.
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the query logging association.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the specified query logging association. Valid values include the following:
-
-- `CREATING`: Resolver is creating an association between an Amazon Virtual Private Cloud (Amazon VPC) and a query logging configuration.
-
-- `CREATED`: The association between an Amazon VPC and a query logging configuration
-was successfully created. Resolver is logging queries that originate in the specified VPC.
-
-- `DELETING`: Resolver is deleting this query logging association.
-
-- `FAILED`: Resolver either couldn't create or couldn't delete the query logging association.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Route53Resolver::ResolverRule
++ `CREATING`: Resolver is creating an association between an Amazon Virtual Private Cloud (Amazon VPC) and a query logging configuration.
++ `CREATED`: The association between an Amazon VPC and a query logging configuration was successfully created. Resolver is logging queries that originate in the specified VPC.
++ `DELETING`: Resolver is deleting this query logging association.
++ `FAILED`: Resolver either couldn't create or couldn't delete the query logging association.
 
 All content copied from https://docs.aws.amazon.com/.

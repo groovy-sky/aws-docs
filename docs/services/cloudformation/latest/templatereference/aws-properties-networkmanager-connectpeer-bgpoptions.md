@@ -2,52 +2,41 @@
 title: "AWS::NetworkManager::ConnectPeer BgpOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::ConnectPeer BgpOptions
+<a name="aws-properties-networkmanager-connectpeer-bgpoptions"></a>
 
 Describes the BGP options.
 
 ## Syntax
+<a name="aws-properties-networkmanager-connectpeer-bgpoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkmanager-connectpeer-bgpoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "PeerAsn" : Number
+  "[PeerAsn](#cfn-networkmanager-connectpeer-bgpoptions-peerasn)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkmanager-connectpeer-bgpoptions-syntax.yaml"></a>
 
-```yaml
-
-  PeerAsn: Number
-
+```
+  [PeerAsn](#cfn-networkmanager-connectpeer-bgpoptions-peerasn): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-networkmanager-connectpeer-bgpoptions-properties"></a>
 
-`PeerAsn`
-
+`PeerAsn`  <a name="cfn-networkmanager-connectpeer-bgpoptions-peerasn"></a>
 The Peer ASN of the BGP.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::NetworkManager::ConnectPeer
-
-ConnectPeerBgpConfiguration
+*Required*: No
+*Type*: Number
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

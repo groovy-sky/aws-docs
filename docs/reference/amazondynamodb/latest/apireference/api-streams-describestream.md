@@ -3,86 +3,65 @@ title: "DescribeStream"
 ---
 
 # DescribeStream
+<a name="API_streams_DescribeStream"></a>
 
 Returns information about a stream, including the current status of the stream, its Amazon Resource Name (ARN), the composition of its shards, and its corresponding DynamoDB table.
 
-###### Note
-
+**Note**
 You can call `DescribeStream` at a maximum rate of 10 times per second.
 
-Each shard in the stream has a `SequenceNumberRange` associated with it. If the
-`SequenceNumberRange` has a `StartingSequenceNumber` but no
-`EndingSequenceNumber`, then the shard is still open (able to receive more stream
-records). If both `StartingSequenceNumber` and `EndingSequenceNumber`
-are present, then that shard is closed and can no longer receive more data.
+Each shard in the stream has a `SequenceNumberRange` associated with it. If the `SequenceNumberRange` has a `StartingSequenceNumber` but no `EndingSequenceNumber`, then the shard is still open (able to receive more stream records). If both `StartingSequenceNumber` and `EndingSequenceNumber` are present, then that shard is closed and can no longer receive more data.
 
 ## Request Syntax
+<a name="API_streams_DescribeStream_RequestSyntax"></a>
 
-```nohighlight
-
+```
 {
-   "ExclusiveStartShardId": "string",
-   "Limit": number,
+   "ExclusiveStartShardId": "{{string}}",
+   "Limit": {{number}},
    "ShardFilter": {
-      "ShardId": "string",
-      "Type": "string"
+      "ShardId": "{{string}}",
+      "Type": "{{string}}"
    },
-   "StreamArn": "string"
+   "StreamArn": "{{string}}"
 }
 ```
 
 ## Request Parameters
+<a name="API_streams_DescribeStream_RequestParameters"></a>
 
 The request accepts the following data in JSON format.
 
-###### Note
-
+**Note**
 In the following list, the required parameters are described first.
 
-**[StreamArn](#API_streams_DescribeStream_RequestSyntax)**
-
+ ** [StreamArn](#API_streams_DescribeStream_RequestSyntax) **   <a name="DDB-streams_DescribeStream-request-StreamArn"></a>
 The Amazon Resource Name (ARN) for the stream.
-
 Type: String
-
 Length Constraints: Minimum length of 37. Maximum length of 1024.
-
 Required: Yes
 
-**[ExclusiveStartShardId](#API_streams_DescribeStream_RequestSyntax)**
-
-The shard ID of the first item that this operation will evaluate. Use the value that was
-returned for `LastEvaluatedShardId` in the previous operation.
-
+ ** [ExclusiveStartShardId](#API_streams_DescribeStream_RequestSyntax) **   <a name="DDB-streams_DescribeStream-request-ExclusiveStartShardId"></a>
+The shard ID of the first item that this operation will evaluate. Use the value that was returned for `LastEvaluatedShardId` in the previous operation.
 Type: String
-
 Length Constraints: Minimum length of 28. Maximum length of 65.
-
 Required: No
 
-**[Limit](#API_streams_DescribeStream_RequestSyntax)**
-
+ ** [Limit](#API_streams_DescribeStream_RequestSyntax) **   <a name="DDB-streams_DescribeStream-request-Limit"></a>
 The maximum number of shard objects to return. The upper limit is 100.
-
 Type: Integer
-
 Valid Range: Minimum value of 1.
-
 Required: No
 
-**[ShardFilter](#API_streams_DescribeStream_RequestSyntax)**
-
-This optional field contains the filter definition for the
-`DescribeStream` API.
-
-Type: [ShardFilter](api-streams-shardfilter.md) object
-
+ ** [ShardFilter](#API_streams_DescribeStream_RequestSyntax) **   <a name="DDB-streams_DescribeStream-request-ShardFilter"></a>
+This optional field contains the filter definition for the `DescribeStream` API.
+Type: [ShardFilter](API_streams_ShardFilter.md) object
 Required: No
 
 ## Response Syntax
+<a name="API_streams_DescribeStream_ResponseSyntax"></a>
 
-```nohighlight
-
+```
 {
    "StreamDescription": {
       "CreationRequestDateTime": number,
@@ -113,56 +92,45 @@ Required: No
 ```
 
 ## Response Elements
+<a name="API_streams_DescribeStream_ResponseElements"></a>
 
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[StreamDescription](#API_streams_DescribeStream_ResponseSyntax)**
-
+ ** [StreamDescription](#API_streams_DescribeStream_ResponseSyntax) **   <a name="DDB-streams_DescribeStream-response-StreamDescription"></a>
 A complete description of the stream, including its creation date and time, the DynamoDB table associated with the stream, the shard IDs within the stream, and the beginning and ending sequence numbers of stream records within the shards.
-
-Type: [StreamDescription](api-streams-streamdescription.md) object
+Type: [StreamDescription](API_streams_StreamDescription.md) object
 
 ## Errors
+<a name="API_streams_DescribeStream_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**InternalServerError**
-
+ ** InternalServerError **
 An error occurred on the server side.
-
-**message**
-
+ ** message **
 The server encountered an internal error trying to fulfill the request.
-
 HTTP Status Code: 500
 
-**ResourceNotFoundException**
-
-The operation tried to access a nonexistent table or index. The resource
-might not be specified correctly, or its status might not be
-`ACTIVE`.
-
-**message**
-
+ ** ResourceNotFoundException **
+The operation tried to access a nonexistent table or index. The resource might not be specified correctly, or its status might not be `ACTIVE`.
+ ** message **
 The resource which is being requested does not exist.
-
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_streams_DescribeStream_Examples"></a>
 
 ### Describe A Stream
+<a name="API_streams_DescribeStream_Example_1"></a>
 
-The following sample returns a description of a stream with a given stream ARN.
-All of the shards in the stream are listed in the response, along with the beginning and
-ending sequence numbers of stream records within the shards. Note that one of the shards
-is still open, because it does not have an `EndingSequenceNumber`.
+The following sample returns a description of a stream with a given stream ARN. All of the shards in the stream are listed in the response, along with the beginning and ending sequence numbers of stream records within the shards. Note that one of the shards is still open, because it does not have an `EndingSequenceNumber`.
 
 #### Sample Request
+<a name="API_streams_DescribeStream_Example_1_Request"></a>
 
 ```
-
 POST / HTTP/1.1
 x-amzn-RequestId: <RequestID>
 x-amzn-crc32: <CRC32>
@@ -178,13 +146,12 @@ X-Amz-Target: DynamoDBStreams_20120810.DescribeStream
     "ShardId": "shardId-00000001741631711871-1f6a72cf"
     }"
 }
-
 ```
 
 #### Sample Response
+<a name="API_streams_DescribeStream_Example_1_Response"></a>
 
 ```
-
 HTTP/1.1 200 OK
 x-amzn-RequestId: <RequestId>
 x-amz-crc32: <Checksum>
@@ -236,37 +203,21 @@ Date: <Date>
         ],
     }
 }
-
 ```
 
 ## See Also
+<a name="API_streams_DescribeStream_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/streams-dynamodb-2012-08-10/DescribeStream)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/streams-dynamodb-2012-08-10/DescribeStream)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon DynamoDB Streams
-
-GetRecords
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/streams-dynamodb-2012-08-10/DescribeStream)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/streams-dynamodb-2012-08-10/DescribeStream)
 
 All content copied from https://docs.aws.amazon.com/.

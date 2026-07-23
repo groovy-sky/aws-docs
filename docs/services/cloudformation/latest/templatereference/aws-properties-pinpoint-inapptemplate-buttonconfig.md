@@ -2,97 +2,69 @@
 title: "AWS::Pinpoint::InAppTemplate ButtonConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::InAppTemplate ButtonConfig
+<a name="aws-properties-pinpoint-inapptemplate-buttonconfig"></a>
 
 Specifies the behavior of buttons that appear in an in-app message template.
 
 ## Syntax
+<a name="aws-properties-pinpoint-inapptemplate-buttonconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pinpoint-inapptemplate-buttonconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Android" : OverrideButtonConfiguration,
-  "DefaultConfig" : DefaultButtonConfiguration,
-  "IOS" : OverrideButtonConfiguration,
-  "Web" : OverrideButtonConfiguration
+  "[Android](#cfn-pinpoint-inapptemplate-buttonconfig-android)" : {{OverrideButtonConfiguration}},
+  "[DefaultConfig](#cfn-pinpoint-inapptemplate-buttonconfig-defaultconfig)" : {{DefaultButtonConfiguration}},
+  "[IOS](#cfn-pinpoint-inapptemplate-buttonconfig-ios)" : {{OverrideButtonConfiguration}},
+  "[Web](#cfn-pinpoint-inapptemplate-buttonconfig-web)" : {{OverrideButtonConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pinpoint-inapptemplate-buttonconfig-syntax.yaml"></a>
 
-```yaml
-
-  Android:
-    OverrideButtonConfiguration
-  DefaultConfig:
-    DefaultButtonConfiguration
-  IOS:
-    OverrideButtonConfiguration
-  Web:
-    OverrideButtonConfiguration
-
+```
+  [Android](#cfn-pinpoint-inapptemplate-buttonconfig-android): {{
+    OverrideButtonConfiguration}}
+  [DefaultConfig](#cfn-pinpoint-inapptemplate-buttonconfig-defaultconfig): {{
+    DefaultButtonConfiguration}}
+  [IOS](#cfn-pinpoint-inapptemplate-buttonconfig-ios): {{
+    OverrideButtonConfiguration}}
+  [Web](#cfn-pinpoint-inapptemplate-buttonconfig-web): {{
+    OverrideButtonConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-pinpoint-inapptemplate-buttonconfig-properties"></a>
 
-`Android`
+`Android`  <a name="cfn-pinpoint-inapptemplate-buttonconfig-android"></a>
+Optional button configuration to use for in-app messages sent to Android devices. This button configuration overrides the default button configuration.
+*Required*: No
+*Type*: [OverrideButtonConfiguration](aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Optional button configuration to use for in-app messages sent to Android devices. This
-button configuration overrides the default button configuration.
+`DefaultConfig`  <a name="cfn-pinpoint-inapptemplate-buttonconfig-defaultconfig"></a>
+Specifies the default behavior of a button that appears in an in-app message. You can optionally add button configurations that specifically apply to iOS, Android, or web browser users.
+*Required*: No
+*Type*: [DefaultButtonConfiguration](aws-properties-pinpoint-inapptemplate-defaultbuttonconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IOS`  <a name="cfn-pinpoint-inapptemplate-buttonconfig-ios"></a>
+Optional button configuration to use for in-app messages sent to iOS devices. This button configuration overrides the default button configuration.
+*Required*: No
+*Type*: [OverrideButtonConfiguration](aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [OverrideButtonConfiguration](aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultConfig`
-
-Specifies the default behavior of a button that appears in an in-app message. You can
-optionally add button configurations that specifically apply to iOS, Android, or web
-browser users.
-
-_Required_: No
-
-_Type_: [DefaultButtonConfiguration](aws-properties-pinpoint-inapptemplate-defaultbuttonconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IOS`
-
-Optional button configuration to use for in-app messages sent to iOS devices. This
-button configuration overrides the default button configuration.
-
-_Required_: No
-
-_Type_: [OverrideButtonConfiguration](aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Web`
-
-Optional button configuration to use for in-app messages sent to web applications.
-This button configuration overrides the default button configuration.
-
-_Required_: No
-
-_Type_: [OverrideButtonConfiguration](aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BodyConfig
-
-DefaultButtonConfiguration
+`Web`  <a name="cfn-pinpoint-inapptemplate-buttonconfig-web"></a>
+Optional button configuration to use for in-app messages sent to web applications. This button configuration overrides the default button configuration.
+*Required*: No
+*Type*: [OverrideButtonConfiguration](aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

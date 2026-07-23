@@ -2,132 +2,102 @@
 title: "AWS::ServiceCatalog::ServiceAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::ServiceAction
+<a name="aws-resource-servicecatalog-serviceaction"></a>
 
 Creates a self-service action.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-serviceaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-serviceaction-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::ServiceAction",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "Definition" : [ DefinitionParameter, ... ],
-      "DefinitionType" : String,
-      "Description" : String,
-      "Name" : String
+      "[AcceptLanguage](#cfn-servicecatalog-serviceaction-acceptlanguage)" : {{String}},
+      "[Definition](#cfn-servicecatalog-serviceaction-definition)" : {{[ DefinitionParameter, ... ]}},
+      "[DefinitionType](#cfn-servicecatalog-serviceaction-definitiontype)" : {{String}},
+      "[Description](#cfn-servicecatalog-serviceaction-description)" : {{String}},
+      "[Name](#cfn-servicecatalog-serviceaction-name)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-serviceaction-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::ServiceAction
 Properties:
-  AcceptLanguage: String
-  Definition:
-    - DefinitionParameter
-  DefinitionType: String
-  Description: String
-  Name: String
-
+  [AcceptLanguage](#cfn-servicecatalog-serviceaction-acceptlanguage): {{String}}
+  [Definition](#cfn-servicecatalog-serviceaction-definition): {{
+    - DefinitionParameter}}
+  [DefinitionType](#cfn-servicecatalog-serviceaction-definitiontype): {{String}}
+  [Description](#cfn-servicecatalog-serviceaction-description): {{String}}
+  [Name](#cfn-servicecatalog-serviceaction-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-serviceaction-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-serviceaction-acceptlanguage"></a>
 The language code.
++ `en` - English (default)
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Allowed values*: `en | jp | zh`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `en` \- English (default)
-
-- `jp` \- Japanese
-
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `en | jp | zh`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Definition`
-
+`Definition`  <a name="cfn-servicecatalog-serviceaction-definition"></a>
 A map that defines the self-service action.
+*Required*: Yes
+*Type*: Array of [DefinitionParameter](aws-properties-servicecatalog-serviceaction-definitionparameter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [DefinitionParameter](aws-properties-servicecatalog-serviceaction-definitionparameter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefinitionType`
-
+`DefinitionType`  <a name="cfn-servicecatalog-serviceaction-definitiontype"></a>
 The self-service action definition type. For example, `SSM_AUTOMATION`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SSM_AUTOMATION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SSM_AUTOMATION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-servicecatalog-serviceaction-description"></a>
 The self-service action description.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-servicecatalog-serviceaction-name"></a>
 The self-service action name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-servicecatalog-serviceaction-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-serviceaction-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-servicecatalog-serviceaction-return-values-fn--getatt"></a>
 
-`Id`
+####
+<a name="aws-resource-servicecatalog-serviceaction-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The self-service action identifier. For example, `act-fs7abcd89wxyz`.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::ResourceUpdateConstraint
-
-DefinitionParameter
 
 All content copied from https://docs.aws.amazon.com/.

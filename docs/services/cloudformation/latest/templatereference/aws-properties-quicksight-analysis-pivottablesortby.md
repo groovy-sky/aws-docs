@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Analysis PivotTableSortBy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PivotTableSortBy
+<a name="aws-properties-quicksight-analysis-pivottablesortby"></a>
 
 The sort by field for the field sort options.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pivottablesortby-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pivottablesortby-syntax.json"></a>
 
-```json
-
+```
 {
-  "Column" : ColumnSort,
-  "DataPath" : DataPathSort,
-  "Field" : FieldSort
+  "[Column](#cfn-quicksight-analysis-pivottablesortby-column)" : {{ColumnSort}},
+  "[DataPath](#cfn-quicksight-analysis-pivottablesortby-datapath)" : {{DataPathSort}},
+  "[Field](#cfn-quicksight-analysis-pivottablesortby-field)" : {{FieldSort}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pivottablesortby-syntax.yaml"></a>
 
-```yaml
-
-  Column:
-    ColumnSort
-  DataPath:
-    DataPathSort
-  Field:
-    FieldSort
-
+```
+  [Column](#cfn-quicksight-analysis-pivottablesortby-column): {{
+    ColumnSort}}
+  [DataPath](#cfn-quicksight-analysis-pivottablesortby-datapath): {{
+    DataPathSort}}
+  [Field](#cfn-quicksight-analysis-pivottablesortby-field): {{
+    FieldSort}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pivottablesortby-properties"></a>
 
-`Column`
-
+`Column`  <a name="cfn-quicksight-analysis-pivottablesortby-column"></a>
 The column sort (field id, direction) for the pivot table sort by options.
+*Required*: No
+*Type*: [ColumnSort](aws-properties-quicksight-analysis-columnsort.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColumnSort](aws-properties-quicksight-analysis-columnsort.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataPath`
-
+`DataPath`  <a name="cfn-quicksight-analysis-pivottablesortby-datapath"></a>
 The data path sort (data path value, direction) for the pivot table sort by options.
+*Required*: No
+*Type*: [DataPathSort](aws-properties-quicksight-analysis-datapathsort.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataPathSort](aws-properties-quicksight-analysis-datapathsort.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Field`
-
+`Field`  <a name="cfn-quicksight-analysis-pivottablesortby-field"></a>
 The field sort (field id, direction) for the pivot table sort by options.
-
-_Required_: No
-
-_Type_: [FieldSort](aws-properties-quicksight-analysis-fieldsort.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableRowsLabelOptions
-
-PivotTableSortConfiguration
+*Required*: No
+*Type*: [FieldSort](aws-properties-quicksight-analysis-fieldsort.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,102 +2,71 @@
 title: "AWS::CleanRooms::Membership ProtectedQueryS3OutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Membership ProtectedQueryS3OutputConfiguration
+<a name="aws-properties-cleanrooms-membership-protectedquerys3outputconfiguration"></a>
 
 Contains the configuration to write the query results to S3.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-membership-protectedquerys3outputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-membership-protectedquerys3outputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "KeyPrefix" : String,
-  "ResultFormat" : String,
-  "SingleFileOutput" : Boolean
+  "[Bucket](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-bucket)" : {{String}},
+  "[KeyPrefix](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-keyprefix)" : {{String}},
+  "[ResultFormat](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-resultformat)" : {{String}},
+  "[SingleFileOutput](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-singlefileoutput)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-membership-protectedquerys3outputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  KeyPrefix: String
-  ResultFormat: String
-  SingleFileOutput: Boolean
-
+```
+  [Bucket](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-bucket): {{String}}
+  [KeyPrefix](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-keyprefix): {{String}}
+  [ResultFormat](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-resultformat): {{String}}
+  [SingleFileOutput](#cfn-cleanrooms-membership-protectedquerys3outputconfiguration-singlefileoutput): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-membership-protectedquerys3outputconfiguration-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-cleanrooms-membership-protectedquerys3outputconfiguration-bucket"></a>
 The S3 bucket to unload the protected query results.
+*Required*: Yes
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KeyPrefix`
-
+`KeyPrefix`  <a name="cfn-cleanrooms-membership-protectedquerys3outputconfiguration-keyprefix"></a>
 The S3 prefix to unload the protected query results.
+*Required*: No
+*Type*: String
+*Pattern*: `[\w!.=*/-]*`
+*Minimum*: `0`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\w!.=*/-]*`
-
-_Minimum_: `0`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResultFormat`
-
+`ResultFormat`  <a name="cfn-cleanrooms-membership-protectedquerys3outputconfiguration-resultformat"></a>
 Intended file format of the result.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CSV | PARQUET`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `CSV | PARQUET`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingleFileOutput`
-
-Indicates whether files should be output as a single file ( `TRUE`) or output
-as multiple files ( `FALSE`). This parameter is only supported for analyses with
-the Spark analytics engine.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ProtectedJobS3OutputConfigurationInput
-
-Tag
+`SingleFileOutput`  <a name="cfn-cleanrooms-membership-protectedquerys3outputconfiguration-singlefileoutput"></a>
+Indicates whether files should be output as a single file (`TRUE`) or output as multiple files (`FALSE`). This parameter is only supported for analyses with the Spark analytics engine.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

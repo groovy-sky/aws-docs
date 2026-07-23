@@ -2,79 +2,68 @@
 title: "AWS::LakeFormation::PrincipalPermissions LFTag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::PrincipalPermissions LFTag
+<a name="aws-properties-lakeformation-principalpermissions-lftag"></a>
 
 The LF-tag key and values attached to a resource.
 
 ## Syntax
+<a name="aws-properties-lakeformation-principalpermissions-lftag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lakeformation-principalpermissions-lftag-syntax.json"></a>
 
-```json
-
+```
 {
-  "TagKey" : String,
-  "TagValues" : [ String, ... ]
+  "[TagKey](#cfn-lakeformation-principalpermissions-lftag-tagkey)" : {{String}},
+  "[TagValues](#cfn-lakeformation-principalpermissions-lftag-tagvalues)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lakeformation-principalpermissions-lftag-syntax.yaml"></a>
 
-```yaml
-
-  TagKey: String
-  TagValues:
-    - String
-
+```
+  [TagKey](#cfn-lakeformation-principalpermissions-lftag-tagkey): {{String}}
+  [TagValues](#cfn-lakeformation-principalpermissions-lftag-tagvalues): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lakeformation-principalpermissions-lftag-properties"></a>
 
-`TagKey`
-
+`TagKey`  <a name="cfn-lakeformation-principalpermissions-lftag-tagkey"></a>
 The key-name for the LF-tag.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagValues`
-
-A list of possible values of the corresponding `TagKey` of an LF-tag key-value pair.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`TagValues`  <a name="cfn-lakeformation-principalpermissions-lftag-tagvalues"></a>
+ A list of possible values of the corresponding `TagKey` of an LF-tag key-value pair.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
+<a name="aws-properties-lakeformation-principalpermissions-lftag--examples"></a>
 
 ### Permissons on an LF-tag
+<a name="aws-properties-lakeformation-principalpermissions-lftag--examples--Permissons_on_an_LF-tag"></a>
 
 The following example demonstrates how to grant permissions on a `LFTag` resource:
 
 #### JSON
+<a name="aws-properties-lakeformation-principalpermissions-lftag--examples--Permissons_on_an_LF-tag--json"></a>
 
-```json
-
+```
 {
     "SamplePermission": {
         "LFTag": {
@@ -89,9 +78,9 @@ The following example demonstrates how to grant permissions on a `LFTag` resourc
 ```
 
 #### YAML
+<a name="aws-properties-lakeformation-principalpermissions-lftag--examples--Permissons_on_an_LF-tag--yaml"></a>
 
-```yaml
-
+```
 SamplePermission:
   Type: AWS::LakeFormation::PrincipalPermissions
   Properties:
@@ -108,11 +97,5 @@ SamplePermission:
     PermissionsWithGrantOption:
          - "DESCRIBE"
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataLocationResource
-
-LFTagKeyResource
 
 All content copied from https://docs.aws.amazon.com/.

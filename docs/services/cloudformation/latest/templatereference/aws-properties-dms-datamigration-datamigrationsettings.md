@@ -2,84 +2,59 @@
 title: "AWS::DMS::DataMigration DataMigrationSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::DataMigration DataMigrationSettings
+<a name="aws-properties-dms-datamigration-datamigrationsettings"></a>
 
-Options for configuring a data migration, including whether to enable CloudWatch logs,
-and the selection rules to use to include or exclude database objects from the
-migration.
+Options for configuring a data migration, including whether to enable CloudWatch logs, and the selection rules to use to include or exclude database objects from the migration.
 
 ## Syntax
+<a name="aws-properties-dms-datamigration-datamigrationsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-datamigration-datamigrationsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudwatchLogsEnabled" : Boolean,
-  "NumberOfJobs" : Integer,
-  "SelectionRules" : String
+  "[CloudwatchLogsEnabled](#cfn-dms-datamigration-datamigrationsettings-cloudwatchlogsenabled)" : {{Boolean}},
+  "[NumberOfJobs](#cfn-dms-datamigration-datamigrationsettings-numberofjobs)" : {{Integer}},
+  "[SelectionRules](#cfn-dms-datamigration-datamigrationsettings-selectionrules)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-datamigration-datamigrationsettings-syntax.yaml"></a>
 
-```yaml
-
-  CloudwatchLogsEnabled: Boolean
-  NumberOfJobs: Integer
-  SelectionRules: String
-
+```
+  [CloudwatchLogsEnabled](#cfn-dms-datamigration-datamigrationsettings-cloudwatchlogsenabled): {{Boolean}}
+  [NumberOfJobs](#cfn-dms-datamigration-datamigrationsettings-numberofjobs): {{Integer}}
+  [SelectionRules](#cfn-dms-datamigration-datamigrationsettings-selectionrules): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-datamigration-datamigrationsettings-properties"></a>
 
-`CloudwatchLogsEnabled`
-
+`CloudwatchLogsEnabled`  <a name="cfn-dms-datamigration-datamigrationsettings-cloudwatchlogsenabled"></a>
 Whether to enable CloudWatch logging for the data migration.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`NumberOfJobs`  <a name="cfn-dms-datamigration-datamigrationsettings-numberofjobs"></a>
+The number of parallel jobs that trigger parallel threads to unload the tables from the source, and then load them to the target.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberOfJobs`
-
-The number of parallel jobs that trigger parallel threads to unload the tables from the
-source, and then load them to the target.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectionRules`
-
-A JSON-formatted string that defines what objects to include and exclude from the
-migration.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DMS::DataMigration
-
-SourceDataSettings
+`SelectionRules`  <a name="cfn-dms-datamigration-datamigrationsettings-selectionrules"></a>
+A JSON-formatted string that defines what objects to include and exclude from the migration.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

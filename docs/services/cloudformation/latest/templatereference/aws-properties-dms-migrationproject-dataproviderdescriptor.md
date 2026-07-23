@@ -2,100 +2,73 @@
 title: "AWS::DMS::MigrationProject DataProviderDescriptor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DMS::MigrationProject DataProviderDescriptor
+<a name="aws-properties-dms-migrationproject-dataproviderdescriptor"></a>
 
 Information about a data provider.
 
 ## Syntax
+<a name="aws-properties-dms-migrationproject-dataproviderdescriptor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-dms-migrationproject-dataproviderdescriptor-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataProviderArn" : String,
-  "DataProviderIdentifier" : String,
-  "DataProviderName" : String,
-  "SecretsManagerAccessRoleArn" : String,
-  "SecretsManagerSecretId" : String
+  "[DataProviderArn](#cfn-dms-migrationproject-dataproviderdescriptor-dataproviderarn)" : {{String}},
+  "[DataProviderIdentifier](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovideridentifier)" : {{String}},
+  "[DataProviderName](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovidername)" : {{String}},
+  "[SecretsManagerAccessRoleArn](#cfn-dms-migrationproject-dataproviderdescriptor-secretsmanageraccessrolearn)" : {{String}},
+  "[SecretsManagerSecretId](#cfn-dms-migrationproject-dataproviderdescriptor-secretsmanagersecretid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-dms-migrationproject-dataproviderdescriptor-syntax.yaml"></a>
 
-```yaml
-
-  DataProviderArn: String
-  DataProviderIdentifier: String
-  DataProviderName: String
-  SecretsManagerAccessRoleArn: String
-  SecretsManagerSecretId: String
-
+```
+  [DataProviderArn](#cfn-dms-migrationproject-dataproviderdescriptor-dataproviderarn): {{String}}
+  [DataProviderIdentifier](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovideridentifier): {{String}}
+  [DataProviderName](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovidername): {{String}}
+  [SecretsManagerAccessRoleArn](#cfn-dms-migrationproject-dataproviderdescriptor-secretsmanageraccessrolearn): {{String}}
+  [SecretsManagerSecretId](#cfn-dms-migrationproject-dataproviderdescriptor-secretsmanagersecretid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-dms-migrationproject-dataproviderdescriptor-properties"></a>
 
-`DataProviderArn`
-
+`DataProviderArn`  <a name="cfn-dms-migrationproject-dataproviderdescriptor-dataproviderarn"></a>
 The Amazon Resource Name (ARN) of the data provider.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataProviderIdentifier`
-
+`DataProviderIdentifier`  <a name="cfn-dms-migrationproject-dataproviderdescriptor-dataprovideridentifier"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataProviderName`
-
+`DataProviderName`  <a name="cfn-dms-migrationproject-dataproviderdescriptor-dataprovidername"></a>
 The user-friendly name of the data provider.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretsManagerAccessRoleArn`
-
+`SecretsManagerAccessRoleArn`  <a name="cfn-dms-migrationproject-dataproviderdescriptor-secretsmanageraccessrolearn"></a>
 The ARN of the role used to access AWS Secrets Manager.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretsManagerSecretId`
-
+`SecretsManagerSecretId`  <a name="cfn-dms-migrationproject-dataproviderdescriptor-secretsmanagersecretid"></a>
 The identifier of the AWS Secrets Manager Secret used to store access credentials for the data provider.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::DMS::MigrationProject
-
-SchemaConversionApplicationAttributes
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

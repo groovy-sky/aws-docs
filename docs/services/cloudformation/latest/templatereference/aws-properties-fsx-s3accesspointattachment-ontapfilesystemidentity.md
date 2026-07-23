@@ -2,80 +2,60 @@
 title: "AWS::FSx::S3AccessPointAttachment OntapFileSystemIdentity"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::S3AccessPointAttachment OntapFileSystemIdentity
+<a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity"></a>
 
 Specifies the file system user identity that will be used for authorizing all file access requests that are made using the S3 access point. The identity can be either a UNIX user or a Windows user.
 
 ## Syntax
+<a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity-syntax.json"></a>
 
-```json
-
+```
 {
-  "Type" : String,
-  "UnixUser" : OntapUnixFileSystemUser,
-  "WindowsUser" : OntapWindowsFileSystemUser
+  "[Type](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-type)" : {{String}},
+  "[UnixUser](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-unixuser)" : {{OntapUnixFileSystemUser}},
+  "[WindowsUser](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-windowsuser)" : {{OntapWindowsFileSystemUser}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity-syntax.yaml"></a>
 
-```yaml
-
-  Type: String
-  UnixUser:
-    OntapUnixFileSystemUser
-  WindowsUser:
-    OntapWindowsFileSystemUser
-
+```
+  [Type](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-type): {{String}}
+  [UnixUser](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-unixuser): {{
+    OntapUnixFileSystemUser}}
+  [WindowsUser](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-windowsuser): {{
+    OntapWindowsFileSystemUser}}
 ```
 
 ## Properties
+<a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity-properties"></a>
 
-`Type`
-
+`Type`  <a name="cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-type"></a>
 Specifies the FSx for ONTAP user identity type. Valid values are `UNIX` and `WINDOWS`.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `UNIX | WINDOWS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `UNIX | WINDOWS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`UnixUser`
-
+`UnixUser`  <a name="cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-unixuser"></a>
 Specifies the UNIX user identity for file system operations.
+*Required*: No
+*Type*: [OntapUnixFileSystemUser](aws-properties-fsx-s3accesspointattachment-ontapunixfilesystemuser.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [OntapUnixFileSystemUser](aws-properties-fsx-s3accesspointattachment-ontapunixfilesystemuser.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WindowsUser`
-
+`WindowsUser`  <a name="cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-windowsuser"></a>
 Specifies the Windows user identity for file system operations.
-
-_Required_: No
-
-_Type_: [OntapWindowsFileSystemUser](aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FileSystemGID
-
-OntapUnixFileSystemUser
+*Required*: No
+*Type*: [OntapWindowsFileSystemUser](aws-properties-fsx-s3accesspointattachment-ontapwindowsfilesystemuser.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

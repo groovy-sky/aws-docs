@@ -2,158 +2,117 @@
 title: "AWS::DeviceFarm::InstanceProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DeviceFarm::InstanceProfile
+<a name="aws-resource-devicefarm-instanceprofile"></a>
 
-Creates a profile that can be applied to one or more private fleet device
-instances.
+Creates a profile that can be applied to one or more private fleet device instances.
 
 ## Syntax
+<a name="aws-resource-devicefarm-instanceprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-devicefarm-instanceprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DeviceFarm::InstanceProfile",
   "Properties" : {
-      "Description" : String,
-      "ExcludeAppPackagesFromCleanup" : [ String, ... ],
-      "Name" : String,
-      "PackageCleanup" : Boolean,
-      "RebootAfterUse" : Boolean,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-devicefarm-instanceprofile-description)" : {{String}},
+      "[ExcludeAppPackagesFromCleanup](#cfn-devicefarm-instanceprofile-excludeapppackagesfromcleanup)" : {{[ String, ... ]}},
+      "[Name](#cfn-devicefarm-instanceprofile-name)" : {{String}},
+      "[PackageCleanup](#cfn-devicefarm-instanceprofile-packagecleanup)" : {{Boolean}},
+      "[RebootAfterUse](#cfn-devicefarm-instanceprofile-rebootafteruse)" : {{Boolean}},
+      "[Tags](#cfn-devicefarm-instanceprofile-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-devicefarm-instanceprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DeviceFarm::InstanceProfile
 Properties:
-  Description: String
-  ExcludeAppPackagesFromCleanup:
-    - String
-  Name: String
-  PackageCleanup: Boolean
-  RebootAfterUse: Boolean
-  Tags:
-    - Tag
-
+  [Description](#cfn-devicefarm-instanceprofile-description): {{String}}
+  [ExcludeAppPackagesFromCleanup](#cfn-devicefarm-instanceprofile-excludeapppackagesfromcleanup): {{
+    - String}}
+  [Name](#cfn-devicefarm-instanceprofile-name): {{String}}
+  [PackageCleanup](#cfn-devicefarm-instanceprofile-packagecleanup): {{Boolean}}
+  [RebootAfterUse](#cfn-devicefarm-instanceprofile-rebootafteruse): {{Boolean}}
+  [Tags](#cfn-devicefarm-instanceprofile-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-devicefarm-instanceprofile-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-devicefarm-instanceprofile-description"></a>
 The description of the instance profile.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `16384`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ExcludeAppPackagesFromCleanup`  <a name="cfn-devicefarm-instanceprofile-excludeapppackagesfromcleanup"></a>
+An array of strings containing the list of app packages that should not be cleaned up from the device after a test run completes.
+The list of packages is considered only if you set `packageCleanup` to `true`.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `16384`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludeAppPackagesFromCleanup`
-
-An array of strings containing the list of app packages that should not be cleaned up from the device
-after a test run completes.
-
-The list of packages is considered only if you set `packageCleanup` to
-`true`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-devicefarm-instanceprofile-name"></a>
 The name of the instance profile.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`PackageCleanup`  <a name="cfn-devicefarm-instanceprofile-packagecleanup"></a>
+When set to `true`, Device Farm removes app packages after a test run. The default value is `false` for private devices.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RebootAfterUse`  <a name="cfn-devicefarm-instanceprofile-rebootafteruse"></a>
+When set to `true`, Device Farm reboots the instance after a test run. The default value is `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PackageCleanup`
-
-When set to `true`, Device Farm removes app packages after a test run. The default value is
-`false` for private devices.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RebootAfterUse`
-
-When set to `true`, Device Farm reboots the instance after a test run. The default value is
-`true`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-devicefarm-instanceprofile-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md) in the
-_AWS CloudFormation guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-devicefarm-instanceprofile-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) in the *AWS CloudFormation guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-devicefarm-instanceprofile-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-devicefarm-instanceprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-devicefarm-instanceprofile-return-values-ref"></a>
 
 Not supported for this resource.
 
 ### Fn::GetAtt
+<a name="aws-resource-devicefarm-instanceprofile-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-devicefarm-instanceprofile-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the instance profile. See [Amazon resource names](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the
-_General Reference guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the instance profile. See [Amazon resource names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *General Reference guide*.
 
 All content copied from https://docs.aws.amazon.com/.

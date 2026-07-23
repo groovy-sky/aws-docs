@@ -2,105 +2,68 @@
 title: "AWS::CloudFront::Distribution LambdaFunctionAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution LambdaFunctionAssociation
+<a name="aws-properties-cloudfront-distribution-lambdafunctionassociation"></a>
 
 A complex type that contains a Lambda@Edge function association.
 
 ## Syntax
+<a name="aws-properties-cloudfront-distribution-lambdafunctionassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudfront-distribution-lambdafunctionassociation-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventType" : String,
-  "IncludeBody" : Boolean,
-  "LambdaFunctionARN" : String
+  "[EventType](#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype)" : {{String}},
+  "[IncludeBody](#cfn-cloudfront-distribution-lambdafunctionassociation-includebody)" : {{Boolean}},
+  "[LambdaFunctionARN](#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudfront-distribution-lambdafunctionassociation-syntax.yaml"></a>
 
-```yaml
-
-  EventType: String
-  IncludeBody: Boolean
-  LambdaFunctionARN: String
-
+```
+  [EventType](#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype): {{String}}
+  [IncludeBody](#cfn-cloudfront-distribution-lambdafunctionassociation-includebody): {{Boolean}}
+  [LambdaFunctionARN](#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudfront-distribution-lambdafunctionassociation-properties"></a>
 
-`EventType`
+`EventType`  <a name="cfn-cloudfront-distribution-lambdafunctionassociation-eventtype"></a>
+Specifies the event type that triggers a Lambda@Edge function invocation. You can specify the following values:
++ `viewer-request`: The function executes when CloudFront receives a request from a viewer and before it checks to see whether the requested object is in the edge cache.
++ `origin-request`: The function executes only when CloudFront sends a request to your origin. When the requested object is in the edge cache, the function doesn't execute.
++ `origin-response`: The function executes after CloudFront receives a response from the origin and before it caches the object in the response. When the requested object is in the edge cache, the function doesn't execute.
++ `viewer-response`: The function executes before CloudFront returns the requested object to the viewer. The function executes regardless of whether the object was already in the edge cache.
 
-Specifies the event type that triggers a Lambda@Edge function invocation. You can
-specify the following values:
+  If the origin returns an HTTP status code other than HTTP 200 (OK), the function doesn't execute.
+*Required*: No
+*Type*: String
+*Allowed values*: `viewer-request | viewer-response | origin-request | origin-response`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `viewer-request`: The function executes when CloudFront receives a
-request from a viewer and before it checks to see whether the requested object
-is in the edge cache.
+`IncludeBody`  <a name="cfn-cloudfront-distribution-lambdafunctionassociation-includebody"></a>
+A flag that allows a Lambda@Edge function to have read access to the body content. For more information, see [Accessing the Request Body by Choosing the Include Body Option](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-include-body-access.html) in the Amazon CloudFront Developer Guide.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `origin-request`: The function executes only when CloudFront sends a
-request to your origin. When the requested object is in the edge cache, the
-function doesn't execute.
-
-- `origin-response`: The function executes after CloudFront receives a
-response from the origin and before it caches the object in the response. When
-the requested object is in the edge cache, the function doesn't execute.
-
-- `viewer-response`: The function executes before CloudFront returns the
-requested object to the viewer. The function executes regardless of whether the
-object was already in the edge cache.
-
-If the origin returns an HTTP status code other than HTTP 200 (OK), the
-function doesn't execute.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `viewer-request | viewer-response | origin-request | origin-response`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludeBody`
-
-A flag that allows a Lambda@Edge function to have read access to the body content. For
-more information, see [Accessing the Request Body by Choosing the Include Body Option](../../../amazoncloudfront/latest/developerguide/lambda-include-body-access.md) in the
-Amazon CloudFront Developer Guide.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionARN`
-
-The ARN of the Lambda@Edge function. You must specify the ARN of a function version;
-you can't specify an alias or $LATEST.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`LambdaFunctionARN`  <a name="cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn"></a>
+The ARN of the Lambda@Edge function. You must specify the ARN of a function version; you can't specify an alias or $LATEST.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [LambdaFunctionAssociation](../../../../reference/cloudfront/latest/apireference/api-lambdafunctionassociation.md) in the _Amazon CloudFront API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GrpcConfig
-
-LegacyCustomOrigin
+<a name="aws-properties-cloudfront-distribution-lambdafunctionassociation--seealso"></a>
++ [LambdaFunctionAssociation](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_LambdaFunctionAssociation.html) in the *Amazon CloudFront API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

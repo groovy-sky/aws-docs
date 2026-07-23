@@ -2,70 +2,52 @@
 title: "AWS::OpenSearchServerless::Collection EncryptionConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Collection EncryptionConfig
+<a name="aws-properties-opensearchserverless-collection-encryptionconfig"></a>
 
 Encryption settings for the collection.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-collection-encryptionconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-collection-encryptionconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AWSOwnedKey" : Boolean,
-  "KmsKeyArn" : String
+  "[AWSOwnedKey](#cfn-opensearchserverless-collection-encryptionconfig-awsownedkey)" : {{Boolean}},
+  "[KmsKeyArn](#cfn-opensearchserverless-collection-encryptionconfig-kmskeyarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-collection-encryptionconfig-syntax.yaml"></a>
 
-```yaml
-
-  AWSOwnedKey: Boolean
-  KmsKeyArn: String
-
+```
+  [AWSOwnedKey](#cfn-opensearchserverless-collection-encryptionconfig-awsownedkey): {{Boolean}}
+  [KmsKeyArn](#cfn-opensearchserverless-collection-encryptionconfig-kmskeyarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-collection-encryptionconfig-properties"></a>
 
-`AWSOwnedKey`
-
+`AWSOwnedKey`  <a name="cfn-opensearchserverless-collection-encryptionconfig-awsownedkey"></a>
 Indicates whether to use an AWS-owned key for encryption.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KmsKeyArn`
-
+`KmsKeyArn`  <a name="cfn-opensearchserverless-collection-encryptionconfig-kmskeyarn"></a>
 The ARN of the AWS KMS key used to encrypt the collection.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):kms:[a-z0-9-]+:[0-9]{12}:key/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
-
-_Minimum_: `10`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::OpenSearchServerless::Collection
-
-FipsEndpoints
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):kms:[a-z0-9-]+:[0-9]{12}:key/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
+*Minimum*: `10`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

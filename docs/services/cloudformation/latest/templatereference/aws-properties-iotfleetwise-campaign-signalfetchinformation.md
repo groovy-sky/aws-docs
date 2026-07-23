@@ -2,110 +2,77 @@
 title: "AWS::IoTFleetWise::Campaign SignalFetchInformation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign SignalFetchInformation
+<a name="aws-properties-iotfleetwise-campaign-signalfetchinformation"></a>
 
 Information about the signal to be fetched.
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-campaign-signalfetchinformation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-campaign-signalfetchinformation-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ String, ... ],
-  "ConditionLanguageVersion" : Number,
-  "FullyQualifiedName" : String,
-  "SignalFetchConfig" : SignalFetchConfig
+  "[Actions](#cfn-iotfleetwise-campaign-signalfetchinformation-actions)" : {{[ String, ... ]}},
+  "[ConditionLanguageVersion](#cfn-iotfleetwise-campaign-signalfetchinformation-conditionlanguageversion)" : {{Number}},
+  "[FullyQualifiedName](#cfn-iotfleetwise-campaign-signalfetchinformation-fullyqualifiedname)" : {{String}},
+  "[SignalFetchConfig](#cfn-iotfleetwise-campaign-signalfetchinformation-signalfetchconfig)" : {{SignalFetchConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-campaign-signalfetchinformation-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - String
-  ConditionLanguageVersion: Number
-  FullyQualifiedName: String
-  SignalFetchConfig:
-    SignalFetchConfig
-
+```
+  [Actions](#cfn-iotfleetwise-campaign-signalfetchinformation-actions): {{
+    - String}}
+  [ConditionLanguageVersion](#cfn-iotfleetwise-campaign-signalfetchinformation-conditionlanguageversion): {{Number}}
+  [FullyQualifiedName](#cfn-iotfleetwise-campaign-signalfetchinformation-fullyqualifiedname): {{String}}
+  [SignalFetchConfig](#cfn-iotfleetwise-campaign-signalfetchinformation-signalfetchconfig): {{
+    SignalFetchConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-campaign-signalfetchinformation-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-iotfleetwise-campaign-signalfetchinformation-actions"></a>
 The actions to be performed by the signal fetch.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `2048 | 5`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `2048 | 5`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConditionLanguageVersion`
-
+`ConditionLanguageVersion`  <a name="cfn-iotfleetwise-campaign-signalfetchinformation-conditionlanguageversion"></a>
 The version of the condition language used.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FullyQualifiedName`
-
+`FullyQualifiedName`  <a name="cfn-iotfleetwise-campaign-signalfetchinformation-fullyqualifiedname"></a>
 The fully qualified name of the signal to be fetched.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.]+$`
+*Minimum*: `1`
+*Maximum*: `150`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `150`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SignalFetchConfig`
-
+`SignalFetchConfig`  <a name="cfn-iotfleetwise-campaign-signalfetchinformation-signalfetchconfig"></a>
 The configuration of the signal fetch operation.
-
-_Required_: Yes
-
-_Type_: [SignalFetchConfig](aws-properties-iotfleetwise-campaign-signalfetchconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SignalFetchConfig
-
-SignalInformation
+*Required*: Yes
+*Type*: [SignalFetchConfig](aws-properties-iotfleetwise-campaign-signalfetchconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

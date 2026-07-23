@@ -2,108 +2,84 @@
 title: "AWS::MemoryDB::ACL"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MemoryDB::ACL
+<a name="aws-resource-memorydb-acl"></a>
 
-Specifies an Access Control List. For more information, see [Authenticating users with Access\
-Contol Lists (ACLs)](../../../memorydb/latest/devguide/clusters-acls.md).
+Specifies an Access Control List. For more information, see [Authenticating users with Access Contol Lists (ACLs)](https://docs.aws.amazon.com/memorydb/latest/devguide/clusters.acls.html).
 
 ## Syntax
+<a name="aws-resource-memorydb-acl-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-memorydb-acl-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MemoryDB::ACL",
   "Properties" : {
-      "ACLName" : String,
-      "Tags" : [ Tag, ... ],
-      "UserNames" : [ String, ... ]
+      "[ACLName](#cfn-memorydb-acl-aclname)" : {{String}},
+      "[Tags](#cfn-memorydb-acl-tags)" : {{[ Tag, ... ]}},
+      "[UserNames](#cfn-memorydb-acl-usernames)" : {{[ String, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-memorydb-acl-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MemoryDB::ACL
 Properties:
-  ACLName: String
-  Tags:
-    - Tag
-  UserNames:
-    - String
-
+  [ACLName](#cfn-memorydb-acl-aclname): {{String}}
+  [Tags](#cfn-memorydb-acl-tags): {{
+    - Tag}}
+  [UserNames](#cfn-memorydb-acl-usernames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-resource-memorydb-acl-properties"></a>
 
-`ACLName`
-
+`ACLName`  <a name="cfn-memorydb-acl-aclname"></a>
 The name of the Access Control List. This value is stored as a lowercase string.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z][a-z0-9\\-]*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-z][a-z0-9\\-]*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-memorydb-acl-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-memorydb-acl-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-memorydb-acl-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserNames`
-
+`UserNames`  <a name="cfn-memorydb-acl-usernames"></a>
 The list of users that belong to the Access Control List.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-memorydb-acl-return-values"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-memorydb-acl-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-memorydb-acl-return-values-fn--getatt-fn--getatt"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the ARN of the Access Control List,
-such as `arn:aws:memorydb:us-east-1:123456789012:acl/my-acl`
+`Arn`  <a name="Arn-fn::getatt"></a>
+When you pass the logical ID of this resource to the intrinsic `Ref` function, Ref returns the ARN of the Access Control List, such as `arn:aws:memorydb:us-east-1:123456789012:acl/my-acl`
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 Indicates ACL status.
-
-_Valid values_: `creating` \| `active` \|
-`modifying` \| `deleting`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon MemoryDB
-
-Tag
+*Valid values*: `creating` \| `active` \| `modifying` \| `deleting`
 
 All content copied from https://docs.aws.amazon.com/.

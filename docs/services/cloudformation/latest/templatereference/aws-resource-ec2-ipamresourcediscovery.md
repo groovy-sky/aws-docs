@@ -2,159 +2,123 @@
 title: "AWS::EC2::IPAMResourceDiscovery"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::IPAMResourceDiscovery
+<a name="aws-resource-ec2-ipamresourcediscovery"></a>
 
 A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
 
 ## Syntax
+<a name="aws-resource-ec2-ipamresourcediscovery-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-ipamresourcediscovery-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::IPAMResourceDiscovery",
   "Properties" : {
-      "Description" : String,
-      "OperatingRegions" : [ IpamOperatingRegion, ... ],
-      "OrganizationalUnitExclusions" : [ IpamResourceDiscoveryOrganizationalUnitExclusion, ... ],
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-ec2-ipamresourcediscovery-description)" : {{String}},
+      "[OperatingRegions](#cfn-ec2-ipamresourcediscovery-operatingregions)" : {{[ IpamOperatingRegion, ... ]}},
+      "[OrganizationalUnitExclusions](#cfn-ec2-ipamresourcediscovery-organizationalunitexclusions)" : {{[ IpamResourceDiscoveryOrganizationalUnitExclusion, ... ]}},
+      "[Tags](#cfn-ec2-ipamresourcediscovery-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-ipamresourcediscovery-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::IPAMResourceDiscovery
 Properties:
-  Description: String
-  OperatingRegions:
-    - IpamOperatingRegion
-  OrganizationalUnitExclusions:
-    - IpamResourceDiscoveryOrganizationalUnitExclusion
-  Tags:
-    - Tag
-
+  [Description](#cfn-ec2-ipamresourcediscovery-description): {{String}}
+  [OperatingRegions](#cfn-ec2-ipamresourcediscovery-operatingregions): {{
+    - IpamOperatingRegion}}
+  [OrganizationalUnitExclusions](#cfn-ec2-ipamresourcediscovery-organizationalunitexclusions): {{
+    - IpamResourceDiscoveryOrganizationalUnitExclusion}}
+  [Tags](#cfn-ec2-ipamresourcediscovery-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-ipamresourcediscovery-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-ec2-ipamresourcediscovery-description"></a>
 The resource discovery description.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OperatingRegions`
-
+`OperatingRegions`  <a name="cfn-ec2-ipamresourcediscovery-operatingregions"></a>
 The operating Regions for the resource discovery. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
+*Required*: No
+*Type*: Array of [IpamOperatingRegion](aws-properties-ec2-ipamresourcediscovery-ipamoperatingregion.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`OrganizationalUnitExclusions`  <a name="cfn-ec2-ipamresourcediscovery-organizationalunitexclusions"></a>
+If your IPAM is integrated with AWS Organizations, you can exclude an [organizational unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#organizationalunit) from being managed by IPAM. When you exclude an OU, IPAM will not manage the IP addresses in accounts in that OU. For more information, see [Exclude organizational units from IPAM ](https://docs.aws.amazon.com/vpc/latest/ipam/exclude-ous.html) in the *Amazon Virtual Private Cloud IP Address Manager User Guide*.
+*Required*: No
+*Type*: Array of [IpamResourceDiscoveryOrganizationalUnitExclusion](aws-properties-ec2-ipamresourcediscovery-ipamresourcediscoveryorganizationalunitexclusion.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [IpamOperatingRegion](aws-properties-ec2-ipamresourcediscovery-ipamoperatingregion.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrganizationalUnitExclusions`
-
-If your IPAM is integrated with AWS Organizations,
-you can exclude an [organizational unit (OU)](../../../organizations/latest/userguide/orgs-getting-started-concepts.md#organizationalunit) from being managed by IPAM. When you exclude an OU, IPAM will not manage the IP addresses in accounts in that OU. For more information, see [Exclude organizational units from IPAM](../../../vpc/latest/ipam/exclude-ous.md) in the _Amazon Virtual Private Cloud IP Address Manager User Guide_.
-
-_Required_: No
-
-_Type_: Array of [IpamResourceDiscoveryOrganizationalUnitExclusion](aws-properties-ec2-ipamresourcediscovery-ipamresourcediscoveryorganizationalunitexclusion.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-ipamresourcediscovery-tags"></a>
 A tag is a label that you assign to an AWS resource. Each tag consists of a key and an optional value. You can use tags to search and filter your resources or track your AWS costs.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-ipamresourcediscovery-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-ipamresourcediscovery-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ec2-ipamresourcediscovery-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-ipamresourcediscovery-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource discovery ID. For example: `ipam-res-disco-111122223333`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-ipamresourcediscovery-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`IpamResourceDiscoveryArn`
+####
+<a name="aws-resource-ec2-ipamresourcediscovery-return-values-fn--getatt-fn--getatt"></a>
 
+`IpamResourceDiscoveryArn`  <a name="IpamResourceDiscoveryArn-fn::getatt"></a>
 The resource discovery ARN.
 
-`IpamResourceDiscoveryId`
-
+`IpamResourceDiscoveryId`  <a name="IpamResourceDiscoveryId-fn::getatt"></a>
 The resource discovery ID.
 
-`IpamResourceDiscoveryRegion`
-
+`IpamResourceDiscoveryRegion`  <a name="IpamResourceDiscoveryRegion-fn::getatt"></a>
 The resource discovery Region.
 
-`IsDefault`
-
+`IsDefault`  <a name="IsDefault-fn::getatt"></a>
 Defines if the resource discovery is the default. The default resource discovery is the resource discovery automatically created when you create an IPAM.
 
-`OwnerId`
-
+`OwnerId`  <a name="OwnerId-fn::getatt"></a>
 The owner ID.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The resource discovery's state.
-
-- `create-in-progress` \- Resource discovery is being created.
-
-- `create-complete` \- Resource discovery creation is complete.
-
-- `create-failed` \- Resource discovery creation has failed.
-
-- `modify-in-progress` \- Resource discovery is being modified.
-
-- `modify-complete` \- Resource discovery modification is complete.
-
-- `modify-failed` \- Resource discovery modification has failed.
-
-- `delete-in-progress` \- Resource discovery is being deleted.
-
-- `delete-complete` \- Resource discovery deletion is complete.
-
-- `delete-failed` \- Resource discovery deletion has failed.
-
-- `isolate-in-progress` \- AWS account that created the resource discovery has been removed and the resource discovery is being isolated.
-
-- `isolate-complete` \- Resource discovery isolation is complete.
-
-- `restore-in-progress` \- AWS account that created the resource discovery and was isolated has been restored.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-IpamOperatingRegion
++ `create-in-progress` - Resource discovery is being created.
++ `create-complete` - Resource discovery creation is complete.
++ `create-failed` - Resource discovery creation has failed.
++ `modify-in-progress` - Resource discovery is being modified.
++ `modify-complete` - Resource discovery modification is complete.
++ `modify-failed` - Resource discovery modification has failed.
++ `delete-in-progress` - Resource discovery is being deleted.
++ `delete-complete` - Resource discovery deletion is complete.
++ `delete-failed` - Resource discovery deletion has failed.
++ `isolate-in-progress` - AWS account that created the resource discovery has been removed and the resource discovery is being isolated.
++ `isolate-complete` - Resource discovery isolation is complete.
++ `restore-in-progress` - AWS account that created the resource discovery and was isolated has been restored.
 
 All content copied from https://docs.aws.amazon.com/.

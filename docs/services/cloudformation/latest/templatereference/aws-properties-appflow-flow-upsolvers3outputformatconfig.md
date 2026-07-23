@@ -2,89 +2,64 @@
 title: "AWS::AppFlow::Flow UpsolverS3OutputFormatConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow UpsolverS3OutputFormatConfig
+<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig"></a>
 
-The configuration that determines how Amazon AppFlow formats the flow output data
-when Upsolver is used as the destination.
+ The configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationConfig" : AggregationConfig,
-  "FileType" : String,
-  "PrefixConfig" : PrefixConfig
+  "[AggregationConfig](#cfn-appflow-flow-upsolvers3outputformatconfig-aggregationconfig)" : {{AggregationConfig}},
+  "[FileType](#cfn-appflow-flow-upsolvers3outputformatconfig-filetype)" : {{String}},
+  "[PrefixConfig](#cfn-appflow-flow-upsolvers3outputformatconfig-prefixconfig)" : {{PrefixConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig-syntax.yaml"></a>
 
-```yaml
-
-  AggregationConfig:
-    AggregationConfig
-  FileType: String
-  PrefixConfig:
-    PrefixConfig
-
+```
+  [AggregationConfig](#cfn-appflow-flow-upsolvers3outputformatconfig-aggregationconfig): {{
+    AggregationConfig}}
+  [FileType](#cfn-appflow-flow-upsolvers3outputformatconfig-filetype): {{String}}
+  [PrefixConfig](#cfn-appflow-flow-upsolvers3outputformatconfig-prefixconfig): {{
+    PrefixConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig-properties"></a>
 
-`AggregationConfig`
+`AggregationConfig`  <a name="cfn-appflow-flow-upsolvers3outputformatconfig-aggregationconfig"></a>
+ The aggregation settings that you can use to customize the output format of your flow data.
+*Required*: No
+*Type*: [AggregationConfig](aws-properties-appflow-flow-aggregationconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The aggregation settings that you can use to customize the output format of your flow
-data.
+`FileType`  <a name="cfn-appflow-flow-upsolvers3outputformatconfig-filetype"></a>
+ Indicates the file type that Amazon AppFlow places in the Upsolver Amazon S3 bucket.
+*Required*: No
+*Type*: String
+*Allowed values*: `CSV | JSON | PARQUET`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AggregationConfig](aws-properties-appflow-flow-aggregationconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FileType`
-
-Indicates the file type that Amazon AppFlow places in the Upsolver Amazon S3
-bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CSV | JSON | PARQUET`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrefixConfig`
-
-Specifies elements that Amazon AppFlow includes in the file and folder names in the flow
-destination.
-
-_Required_: Yes
-
-_Type_: [PrefixConfig](aws-properties-appflow-flow-prefixconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`PrefixConfig`  <a name="cfn-appflow-flow-upsolvers3outputformatconfig-prefixconfig"></a>
+Specifies elements that Amazon AppFlow includes in the file and folder names in the flow destination.
+*Required*: Yes
+*Type*: [PrefixConfig](aws-properties-appflow-flow-prefixconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [UpsolverS3OutputFormatConfig](../../../../reference/appflow/1-0/apireference/api-upsolvers3outputformatconfig.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UpsolverDestinationProperties
-
-VeevaSourceProperties
+<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig--seealso"></a>
++ [UpsolverS3OutputFormatConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpsolverS3OutputFormatConfig.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

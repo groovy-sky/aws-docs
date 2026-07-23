@@ -2,88 +2,63 @@
 title: "AWS::Connect::InstanceStorageConfig KinesisVideoStreamConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::InstanceStorageConfig KinesisVideoStreamConfig
+<a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig"></a>
 
 Configuration information of a Kinesis video stream.
 
 ## Syntax
+<a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionConfig" : EncryptionConfig,
-  "Prefix" : String,
-  "RetentionPeriodHours" : Number
+  "[EncryptionConfig](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-encryptionconfig)" : {{EncryptionConfig}},
+  "[Prefix](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-prefix)" : {{String}},
+  "[RetentionPeriodHours](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-retentionperiodhours)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionConfig:
-    EncryptionConfig
-  Prefix: String
-  RetentionPeriodHours: Number
-
+```
+  [EncryptionConfig](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-encryptionconfig): {{
+    EncryptionConfig}}
+  [Prefix](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-prefix): {{String}}
+  [RetentionPeriodHours](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-retentionperiodhours): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig-properties"></a>
 
-`EncryptionConfig`
-
+`EncryptionConfig`  <a name="cfn-connect-instancestorageconfig-kinesisvideostreamconfig-encryptionconfig"></a>
 The encryption configuration.
+*Required*: Yes
+*Type*: [EncryptionConfig](aws-properties-connect-instancestorageconfig-encryptionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [EncryptionConfig](aws-properties-connect-instancestorageconfig-encryptionconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-connect-instancestorageconfig-kinesisvideostreamconfig-prefix"></a>
 The prefix of the video stream.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetentionPeriodHours`
-
-The number of hours data is retained in the stream. Kinesis Video Streams retains the data in a data store that
-is associated with the stream.
-
+`RetentionPeriodHours`  <a name="cfn-connect-instancestorageconfig-kinesisvideostreamconfig-retentionperiodhours"></a>
+The number of hours data is retained in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream.
 The default value is 0, indicating that the stream does not persist data.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `87600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KinesisStreamConfig
-
-S3Config
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `87600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

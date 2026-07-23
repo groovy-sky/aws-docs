@@ -2,53 +2,41 @@
 title: "AWS::DataZone::PolicyGrant DomainUnitGrantFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::PolicyGrant DomainUnitGrantFilter
+<a name="aws-properties-datazone-policygrant-domainunitgrantfilter"></a>
 
-The grant filter for the domain unit. In the current release of Amazon DataZone, the
-only supported filter is the `allDomainUnitsGrantFilter`.
+The grant filter for the domain unit. In the current release of Amazon DataZone, the only supported filter is the `allDomainUnitsGrantFilter`.
 
 ## Syntax
+<a name="aws-properties-datazone-policygrant-domainunitgrantfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-policygrant-domainunitgrantfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllDomainUnitsGrantFilter" : Json
+  "[AllDomainUnitsGrantFilter](#cfn-datazone-policygrant-domainunitgrantfilter-alldomainunitsgrantfilter)" : {{Json}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-policygrant-domainunitgrantfilter-syntax.yaml"></a>
 
-```yaml
-
-  AllDomainUnitsGrantFilter: Json
-
+```
+  [AllDomainUnitsGrantFilter](#cfn-datazone-policygrant-domainunitgrantfilter-alldomainunitsgrantfilter): {{Json}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-policygrant-domainunitgrantfilter-properties"></a>
 
-`AllDomainUnitsGrantFilter`
-
+`AllDomainUnitsGrantFilter`  <a name="cfn-datazone-policygrant-domainunitgrantfilter-alldomainunitsgrantfilter"></a>
 Specifies a grant filter containing all domain units.
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DomainUnitFilterForProject
-
-DomainUnitPolicyGrantPrincipal
+*Required*: Yes
+*Type*: Json
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

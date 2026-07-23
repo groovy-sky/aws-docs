@@ -2,166 +2,112 @@
 title: "AWS::DataZone::Connection SparkEmrPropertiesInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection SparkEmrPropertiesInput
+<a name="aws-properties-datazone-connection-sparkemrpropertiesinput"></a>
 
 The Spark EMR properties.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-sparkemrpropertiesinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-sparkemrpropertiesinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComputeArn" : String,
-  "InstanceProfileArn" : String,
-  "JavaVirtualEnv" : String,
-  "LogUri" : String,
-  "ManagedEndpointArn" : String,
-  "PythonVirtualEnv" : String,
-  "RuntimeRole" : String,
-  "TrustedCertificatesS3Uri" : String
+  "[ComputeArn](#cfn-datazone-connection-sparkemrpropertiesinput-computearn)" : {{String}},
+  "[InstanceProfileArn](#cfn-datazone-connection-sparkemrpropertiesinput-instanceprofilearn)" : {{String}},
+  "[JavaVirtualEnv](#cfn-datazone-connection-sparkemrpropertiesinput-javavirtualenv)" : {{String}},
+  "[LogUri](#cfn-datazone-connection-sparkemrpropertiesinput-loguri)" : {{String}},
+  "[ManagedEndpointArn](#cfn-datazone-connection-sparkemrpropertiesinput-managedendpointarn)" : {{String}},
+  "[PythonVirtualEnv](#cfn-datazone-connection-sparkemrpropertiesinput-pythonvirtualenv)" : {{String}},
+  "[RuntimeRole](#cfn-datazone-connection-sparkemrpropertiesinput-runtimerole)" : {{String}},
+  "[TrustedCertificatesS3Uri](#cfn-datazone-connection-sparkemrpropertiesinput-trustedcertificatess3uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-sparkemrpropertiesinput-syntax.yaml"></a>
 
-```yaml
-
-  ComputeArn: String
-  InstanceProfileArn: String
-  JavaVirtualEnv: String
-  LogUri: String
-  ManagedEndpointArn: String
-  PythonVirtualEnv: String
-  RuntimeRole: String
-  TrustedCertificatesS3Uri: String
-
+```
+  [ComputeArn](#cfn-datazone-connection-sparkemrpropertiesinput-computearn): {{String}}
+  [InstanceProfileArn](#cfn-datazone-connection-sparkemrpropertiesinput-instanceprofilearn): {{String}}
+  [JavaVirtualEnv](#cfn-datazone-connection-sparkemrpropertiesinput-javavirtualenv): {{String}}
+  [LogUri](#cfn-datazone-connection-sparkemrpropertiesinput-loguri): {{String}}
+  [ManagedEndpointArn](#cfn-datazone-connection-sparkemrpropertiesinput-managedendpointarn): {{String}}
+  [PythonVirtualEnv](#cfn-datazone-connection-sparkemrpropertiesinput-pythonvirtualenv): {{String}}
+  [RuntimeRole](#cfn-datazone-connection-sparkemrpropertiesinput-runtimerole): {{String}}
+  [TrustedCertificatesS3Uri](#cfn-datazone-connection-sparkemrpropertiesinput-trustedcertificatess3uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-sparkemrpropertiesinput-properties"></a>
 
-`ComputeArn`
-
+`ComputeArn`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-computearn"></a>
 The compute ARN of Spark EMR.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:(elasticmapreduce|emr-serverless|emr-containers):.*`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:(elasticmapreduce|emr-serverless|emr-containers):.*`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InstanceProfileArn`
-
+`InstanceProfileArn`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-instanceprofilearn"></a>
 The instance profile ARN of Spark EMR.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[^:]*:iam::\d{12}:role(/[a-zA-Z0-9+=,.@_-]+)*/[a-zA-Z0-9+=,.@_-]+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[^:]*:iam::\d{12}:role(/[a-zA-Z0-9+=,.@_-]+)*/[a-zA-Z0-9+=,.@_-]+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JavaVirtualEnv`
-
+`JavaVirtualEnv`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-javavirtualenv"></a>
 The java virtual env of the Spark EMR.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogUri`
-
+`LogUri`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-loguri"></a>
 The log URI of the Spark EMR.
+*Required*: No
+*Type*: String
+*Pattern*: `^s3://.+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^s3://.+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManagedEndpointArn`
-
+`ManagedEndpointArn`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-managedendpointarn"></a>
 The managed endpoint ARN of the EMR on EKS cluster.
+*Required*: No
+*Type*: String
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PythonVirtualEnv`
-
+`PythonVirtualEnv`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-pythonvirtualenv"></a>
 The Python virtual env of the Spark EMR.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuntimeRole`
-
+`RuntimeRole`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-runtimerole"></a>
 The runtime role of the Spark EMR.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[^:]*:iam::\d{12}:role(/[a-zA-Z0-9+=,.@_-]+)*/[a-zA-Z0-9+=,.@_-]+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws[^:]*:iam::\d{12}:role(/[a-zA-Z0-9+=,.@_-]+)*/[a-zA-Z0-9+=,.@_-]+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrustedCertificatesS3Uri`
-
+`TrustedCertificatesS3Uri`  <a name="cfn-datazone-connection-sparkemrpropertiesinput-trustedcertificatess3uri"></a>
 The certificates S3 URI of the Spark EMR.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^s3://.+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3PropertiesInput
-
-SparkGlueArgs
+*Required*: No
+*Type*: String
+*Pattern*: `^s3://.+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

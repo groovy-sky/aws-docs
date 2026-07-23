@@ -2,100 +2,71 @@
 title: "AWS::BedrockAgentCore::GatewayTarget ApiKeyCredentialProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget ApiKeyCredentialProvider
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider"></a>
 
 An API key credential provider for gateway authentication. This structure contains the configuration for authenticating with the target endpoint using an API key.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider-syntax.json"></a>
 
-```json
-
+```
 {
-  "CredentialLocation" : String,
-  "CredentialParameterName" : String,
-  "CredentialPrefix" : String,
-  "ProviderArn" : String
+  "[CredentialLocation](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentiallocation)" : {{String}},
+  "[CredentialParameterName](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialparametername)" : {{String}},
+  "[CredentialPrefix](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialprefix)" : {{String}},
+  "[ProviderArn](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-providerarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider-syntax.yaml"></a>
 
-```yaml
-
-  CredentialLocation: String
-  CredentialParameterName: String
-  CredentialPrefix: String
-  ProviderArn: String
-
+```
+  [CredentialLocation](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentiallocation): {{String}}
+  [CredentialParameterName](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialparametername): {{String}}
+  [CredentialPrefix](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialprefix): {{String}}
+  [ProviderArn](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-providerarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider-properties"></a>
 
-`CredentialLocation`
-
+`CredentialLocation`  <a name="cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentiallocation"></a>
 The location of the API key credential. This field specifies where in the request the API key should be placed.
+*Required*: No
+*Type*: String
+*Allowed values*: `HEADER | QUERY_PARAMETER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HEADER | QUERY_PARAMETER`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CredentialParameterName`
-
+`CredentialParameterName`  <a name="cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialparametername"></a>
 The name of the credential parameter for the API key. This parameter name is used when sending the API key to the target endpoint.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CredentialPrefix`
-
+`CredentialPrefix`  <a name="cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialprefix"></a>
 The prefix for the API key credential. This prefix is added to the API key when sending it to the target endpoint.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProviderArn`
-
+`ProviderArn`  <a name="cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-providerarn"></a>
 The Amazon Resource Name (ARN) of the API key credential provider. This ARN identifies the provider in AWS.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:([^:]*):([^:]*):([^:]*):([0-9]{12})?:(.+)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApiGatewayToolOverride
-
-ApiSchemaConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:([^:]*):([^:]*):([^:]*):([0-9]{12})?:(.+)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

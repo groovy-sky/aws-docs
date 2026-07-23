@@ -2,132 +2,106 @@
 title: "AWS::MediaTailor::SourceLocation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::SourceLocation
+<a name="aws-resource-mediatailor-sourcelocation"></a>
 
-A source location is a container for sources. For more information about source locations, see [Working with source locations](../../../mediatailor/latest/ug/channel-assembly-source-locations.md) in the _MediaTailor User Guide_.
+A source location is a container for sources. For more information about source locations, see [Working with source locations](https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-source-locations.html) in the *MediaTailor User Guide*.
 
 ## Syntax
+<a name="aws-resource-mediatailor-sourcelocation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-mediatailor-sourcelocation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::MediaTailor::SourceLocation",
   "Properties" : {
-      "AccessConfiguration" : AccessConfiguration,
-      "DefaultSegmentDeliveryConfiguration" : DefaultSegmentDeliveryConfiguration,
-      "HttpConfiguration" : HttpConfiguration,
-      "SegmentDeliveryConfigurations" : [ SegmentDeliveryConfiguration, ... ],
-      "SourceLocationName" : String,
-      "Tags" : [ Tag, ... ]
+      "[AccessConfiguration](#cfn-mediatailor-sourcelocation-accessconfiguration)" : {{AccessConfiguration}},
+      "[DefaultSegmentDeliveryConfiguration](#cfn-mediatailor-sourcelocation-defaultsegmentdeliveryconfiguration)" : {{DefaultSegmentDeliveryConfiguration}},
+      "[HttpConfiguration](#cfn-mediatailor-sourcelocation-httpconfiguration)" : {{HttpConfiguration}},
+      "[SegmentDeliveryConfigurations](#cfn-mediatailor-sourcelocation-segmentdeliveryconfigurations)" : {{[ SegmentDeliveryConfiguration, ... ]}},
+      "[SourceLocationName](#cfn-mediatailor-sourcelocation-sourcelocationname)" : {{String}},
+      "[Tags](#cfn-mediatailor-sourcelocation-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-mediatailor-sourcelocation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::MediaTailor::SourceLocation
 Properties:
-  AccessConfiguration:
-    AccessConfiguration
-  DefaultSegmentDeliveryConfiguration:
-    DefaultSegmentDeliveryConfiguration
-  HttpConfiguration:
-    HttpConfiguration
-  SegmentDeliveryConfigurations:
-    - SegmentDeliveryConfiguration
-  SourceLocationName: String
-  Tags:
-    - Tag
-
+  [AccessConfiguration](#cfn-mediatailor-sourcelocation-accessconfiguration): {{
+    AccessConfiguration}}
+  [DefaultSegmentDeliveryConfiguration](#cfn-mediatailor-sourcelocation-defaultsegmentdeliveryconfiguration): {{
+    DefaultSegmentDeliveryConfiguration}}
+  [HttpConfiguration](#cfn-mediatailor-sourcelocation-httpconfiguration): {{
+    HttpConfiguration}}
+  [SegmentDeliveryConfigurations](#cfn-mediatailor-sourcelocation-segmentdeliveryconfigurations): {{
+    - SegmentDeliveryConfiguration}}
+  [SourceLocationName](#cfn-mediatailor-sourcelocation-sourcelocationname): {{String}}
+  [Tags](#cfn-mediatailor-sourcelocation-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-mediatailor-sourcelocation-properties"></a>
 
-`AccessConfiguration`
-
+`AccessConfiguration`  <a name="cfn-mediatailor-sourcelocation-accessconfiguration"></a>
 The access configuration for the source location.
+*Required*: No
+*Type*: [AccessConfiguration](aws-properties-mediatailor-sourcelocation-accessconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AccessConfiguration](aws-properties-mediatailor-sourcelocation-accessconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultSegmentDeliveryConfiguration`
-
+`DefaultSegmentDeliveryConfiguration`  <a name="cfn-mediatailor-sourcelocation-defaultsegmentdeliveryconfiguration"></a>
 The default segment delivery configuration.
+*Required*: No
+*Type*: [DefaultSegmentDeliveryConfiguration](aws-properties-mediatailor-sourcelocation-defaultsegmentdeliveryconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultSegmentDeliveryConfiguration](aws-properties-mediatailor-sourcelocation-defaultsegmentdeliveryconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HttpConfiguration`
-
+`HttpConfiguration`  <a name="cfn-mediatailor-sourcelocation-httpconfiguration"></a>
 The HTTP configuration for the source location.
+*Required*: Yes
+*Type*: [HttpConfiguration](aws-properties-mediatailor-sourcelocation-httpconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [HttpConfiguration](aws-properties-mediatailor-sourcelocation-httpconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SegmentDeliveryConfigurations`
-
+`SegmentDeliveryConfigurations`  <a name="cfn-mediatailor-sourcelocation-segmentdeliveryconfigurations"></a>
 The segment delivery configurations for the source location.
+*Required*: No
+*Type*: Array of [SegmentDeliveryConfiguration](aws-properties-mediatailor-sourcelocation-segmentdeliveryconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [SegmentDeliveryConfiguration](aws-properties-mediatailor-sourcelocation-segmentdeliveryconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceLocationName`
-
+`SourceLocationName`  <a name="cfn-mediatailor-sourcelocation-sourcelocationname"></a>
 The name of the source location.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tags assigned to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see [Tagging AWS Elemental MediaTailor Resources](../../../mediatailor/latest/ug/tagging.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-mediatailor-sourcelocation-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-mediatailor-sourcelocation-tags"></a>
+The tags assigned to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see [Tagging AWS Elemental MediaTailor Resources](https://docs.aws.amazon.com/mediatailor/latest/ug/tagging.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-mediatailor-sourcelocation-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-mediatailor-sourcelocation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-mediatailor-sourcelocation-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-mediatailor-sourcelocation-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-mediatailor-sourcelocation-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AccessConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

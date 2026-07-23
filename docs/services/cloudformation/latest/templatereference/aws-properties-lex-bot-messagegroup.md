@@ -2,71 +2,52 @@
 title: "AWS::Lex::Bot MessageGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot MessageGroup
+<a name="aws-properties-lex-bot-messagegroup"></a>
 
-Provides one or more messages that Amazon Lex should send to the
-user.
+Provides one or more messages that Amazon Lex should send to the user.
 
 ## Syntax
+<a name="aws-properties-lex-bot-messagegroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-messagegroup-syntax.json"></a>
 
-```json
-
+```
 {
-  "Message" : Message,
-  "Variations" : [ Message, ... ]
+  "[Message](#cfn-lex-bot-messagegroup-message)" : {{Message}},
+  "[Variations](#cfn-lex-bot-messagegroup-variations)" : {{[ Message, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-messagegroup-syntax.yaml"></a>
 
-```yaml
-
-  Message:
-    Message
-  Variations:
-    - Message
-
+```
+  [Message](#cfn-lex-bot-messagegroup-message): {{
+    Message}}
+  [Variations](#cfn-lex-bot-messagegroup-variations): {{
+    - Message}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-messagegroup-properties"></a>
 
-`Message`
-
+`Message`  <a name="cfn-lex-bot-messagegroup-message"></a>
 The primary message that Amazon Lex should send to the user.
+*Required*: Yes
+*Type*: [Message](aws-properties-lex-bot-message.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Message](aws-properties-lex-bot-message.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Variations`
-
-Message variations to send to the user. When variations are defined,
-Amazon Lex chooses the primary message or one of the variations to send to
-the user.
-
-_Required_: No
-
-_Type_: Array of [Message](aws-properties-lex-bot-message.md)
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Message
-
-MultipleValuesSetting
+`Variations`  <a name="cfn-lex-bot-messagegroup-variations"></a>
+Message variations to send to the user. When variations are defined, Amazon Lex chooses the primary message or one of the variations to send to the user.
+*Required*: No
+*Type*: Array of [Message](aws-properties-lex-bot-message.md)
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

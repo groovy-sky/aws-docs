@@ -2,109 +2,88 @@
 title: "AWS::Lightsail::Domain"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Domain
+<a name="aws-resource-lightsail-domain"></a>
 
 Describes a domain where you are storing recordsets.
 
 ## Syntax
+<a name="aws-resource-lightsail-domain-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-lightsail-domain-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Lightsail::Domain",
   "Properties" : {
-      "DomainEntries" : [ DomainEntry, ... ],
-      "DomainName" : String,
-      "Tags" : [ Tag, ... ]
+      "[DomainEntries](#cfn-lightsail-domain-domainentries)" : {{[ DomainEntry, ... ]}},
+      "[DomainName](#cfn-lightsail-domain-domainname)" : {{String}},
+      "[Tags](#cfn-lightsail-domain-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-lightsail-domain-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Lightsail::Domain
 Properties:
-  DomainEntries:
-    - DomainEntry
-  DomainName: String
-  Tags:
-    - Tag
-
+  [DomainEntries](#cfn-lightsail-domain-domainentries): {{
+    - DomainEntry}}
+  [DomainName](#cfn-lightsail-domain-domainname): {{String}}
+  [Tags](#cfn-lightsail-domain-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-lightsail-domain-properties"></a>
 
-`DomainEntries`
-
+`DomainEntries`  <a name="cfn-lightsail-domain-domainentries"></a>
 An array of key-value pairs containing information about the domain entries.
+*Required*: No
+*Type*: Array of [DomainEntry](aws-properties-lightsail-domain-domainentry.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DomainEntry](aws-properties-lightsail-domain-domainentry.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DomainName`
-
+`DomainName`  <a name="cfn-lightsail-domain-domainname"></a>
 The fully qualified domain name in the certificate request.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
-The tag keys and optional values for the resource. For more information about tags in
-Lightsail, see the [Amazon Lightsail Developer Guide](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-tags).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-lightsail-domain-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-lightsail-domain-tags"></a>
+The tag keys and optional values for the resource. For more information about tags in Lightsail, see the [Amazon Lightsail Developer Guide](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-tags).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-lightsail-domain-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-lightsail-domain-return-values"></a>
 
 ### Ref
+<a name="aws-resource-lightsail-domain-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-lightsail-domain-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-lightsail-domain-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the domain recordset
-( `arn:aws:lightsail:global:123456789101:Domain/824cede0-abc7-4f84-8dbc-12345EXAMPLE`).
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the domain recordset (`arn:aws:lightsail:global:123456789101:Domain/824cede0-abc7-4f84-8dbc-12345EXAMPLE`).
 
-`CreatedAt`
-
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date when the domain recordset was created.
 
-`ResourceType`
-
+`ResourceType`  <a name="ResourceType-fn::getatt"></a>
 The resource type.
 
-`SupportCode`
-
-The support code. Include this code in your email to support when you have questions about
-an instance or another resource in Lightsail. This code enables our support team to look up
-your Lightsail information more easily.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-DomainEntry
+`SupportCode`  <a name="SupportCode-fn::getatt"></a>
+The support code. Include this code in your email to support when you have questions about an instance or another resource in Lightsail. This code enables our support team to look up your Lightsail information more easily.
 
 All content copied from https://docs.aws.amazon.com/.

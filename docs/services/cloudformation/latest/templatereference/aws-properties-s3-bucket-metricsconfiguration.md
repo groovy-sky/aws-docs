@@ -2,100 +2,70 @@
 title: "AWS::S3::Bucket MetricsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket MetricsConfiguration
+<a name="aws-properties-s3-bucket-metricsconfiguration"></a>
 
-Specifies a metrics configuration for the CloudWatch request metrics (specified by the
-metrics configuration ID) from an Amazon S3 bucket. If you're updating an existing metrics
-configuration, note that this is a full replacement of the existing metrics configuration. If
-you don't include the elements you want to keep, they are erased. For examples, see [AWS::S3::Bucket](../userguide/aws-properties-s3-bucket.md#aws-properties-s3-bucket--examples). For more information, see [PUT Bucket metrics](../../../s3/latest/api/restbucketputmetricconfiguration.md)
-in the _Amazon S3 API Reference_.
+Specifies a metrics configuration for the CloudWatch request metrics (specified by the metrics configuration ID) from an Amazon S3 bucket. If you're updating an existing metrics configuration, note that this is a full replacement of the existing metrics configuration. If you don't include the elements you want to keep, they are erased. For examples, see [AWS::S3::Bucket](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket--examples). For more information, see [ PUT Bucket metrics](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTMetricConfiguration.html) in the *Amazon S3 API Reference*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-metricsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-metricsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessPointArn" : String,
-  "Id" : String,
-  "Prefix" : String,
-  "TagFilters" : [ TagFilter, ... ]
+  "[AccessPointArn](#cfn-s3-bucket-metricsconfiguration-accesspointarn)" : {{String}},
+  "[Id](#cfn-s3-bucket-metricsconfiguration-id)" : {{String}},
+  "[Prefix](#cfn-s3-bucket-metricsconfiguration-prefix)" : {{String}},
+  "[TagFilters](#cfn-s3-bucket-metricsconfiguration-tagfilters)" : {{[ TagFilter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-metricsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AccessPointArn: String
-  Id: String
-  Prefix: String
-  TagFilters:
-    - TagFilter
-
+```
+  [AccessPointArn](#cfn-s3-bucket-metricsconfiguration-accesspointarn): {{String}}
+  [Id](#cfn-s3-bucket-metricsconfiguration-id): {{String}}
+  [Prefix](#cfn-s3-bucket-metricsconfiguration-prefix): {{String}}
+  [TagFilters](#cfn-s3-bucket-metricsconfiguration-tagfilters): {{
+    - TagFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-metricsconfiguration-properties"></a>
 
-`AccessPointArn`
+`AccessPointArn`  <a name="cfn-s3-bucket-metricsconfiguration-accesspointarn"></a>
+The access point that was used while performing operations on the object. The metrics configuration only includes objects that meet the filter's criteria.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The access point that was used while performing operations on the object. The metrics
-configuration only includes objects that meet the filter's criteria.
+`Id`  <a name="cfn-s3-bucket-metricsconfiguration-id"></a>
+The ID used to identify the metrics configuration. This can be any value you choose that helps you identify your metrics configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
-The ID used to identify the metrics configuration. This can be any value you choose that
-helps you identify your metrics configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-s3-bucket-metricsconfiguration-prefix"></a>
 The prefix that an object must have to be included in the metrics results.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TagFilters`
-
-Specifies a list of tag filters to use as a metrics configuration filter. The metrics
-configuration includes only objects that meet the filter's criteria.
-
-_Required_: No
-
-_Type_: Array of [TagFilter](aws-properties-s3-bucket-tagfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`TagFilters`  <a name="cfn-s3-bucket-metricsconfiguration-tagfilters"></a>
+Specifies a list of tag filters to use as a metrics configuration filter. The metrics configuration includes only objects that meet the filter's criteria.
+*Required*: No
+*Type*: Array of [TagFilter](aws-properties-s3-bucket-tagfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- AWS::S3::Bucket [Examples](../userguide/aws-properties-s3-bucket.md#aws-properties-s3-bucket--examples)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Metrics
-
-NoncurrentVersionExpiration
+<a name="aws-properties-s3-bucket-metricsconfiguration--seealso"></a>
++ AWS::S3::Bucket [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket--examples)
 
 All content copied from https://docs.aws.amazon.com/.

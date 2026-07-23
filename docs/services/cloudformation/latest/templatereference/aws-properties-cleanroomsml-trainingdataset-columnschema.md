@@ -2,75 +2,55 @@
 title: "AWS::CleanRoomsML::TrainingDataset ColumnSchema"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::TrainingDataset ColumnSchema
+<a name="aws-properties-cleanroomsml-trainingdataset-columnschema"></a>
 
 Metadata for a column.
 
 ## Syntax
+<a name="aws-properties-cleanroomsml-trainingdataset-columnschema-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanroomsml-trainingdataset-columnschema-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnName" : String,
-  "ColumnTypes" : [ String, ... ]
+  "[ColumnName](#cfn-cleanroomsml-trainingdataset-columnschema-columnname)" : {{String}},
+  "[ColumnTypes](#cfn-cleanroomsml-trainingdataset-columnschema-columntypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanroomsml-trainingdataset-columnschema-syntax.yaml"></a>
 
-```yaml
-
-  ColumnName: String
-  ColumnTypes:
-    - String
-
+```
+  [ColumnName](#cfn-cleanroomsml-trainingdataset-columnschema-columnname): {{String}}
+  [ColumnTypes](#cfn-cleanroomsml-trainingdataset-columnschema-columntypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanroomsml-trainingdataset-columnschema-properties"></a>
 
-`ColumnName`
-
+`ColumnName`  <a name="cfn-cleanroomsml-trainingdataset-columnschema-columnname"></a>
 The name of a column.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_](([a-zA-Z0-9_ ]+-)*([a-zA-Z0-9_ ]+))?$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_](([a-zA-Z0-9_ ]+-)*([a-zA-Z0-9_ ]+))?$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ColumnTypes`
-
+`ColumnTypes`  <a name="cfn-cleanroomsml-trainingdataset-columnschema-columntypes"></a>
 The data type of column.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CleanRoomsML::TrainingDataset
-
-Dataset
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

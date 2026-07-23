@@ -2,118 +2,82 @@
 title: "AWS::IoT::TopicRule LocationAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule LocationAction
+<a name="aws-properties-iot-topicrule-locationaction"></a>
 
-Describes an action to send device location updates from an MQTT message to an Amazon
-Location tracker resource.
+Describes an action to send device location updates from an MQTT message to an Amazon Location tracker resource.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-locationaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-locationaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeviceId" : String,
-  "Latitude" : String,
-  "Longitude" : String,
-  "RoleArn" : String,
-  "Timestamp" : Timestamp,
-  "TrackerName" : String
+  "[DeviceId](#cfn-iot-topicrule-locationaction-deviceid)" : {{String}},
+  "[Latitude](#cfn-iot-topicrule-locationaction-latitude)" : {{String}},
+  "[Longitude](#cfn-iot-topicrule-locationaction-longitude)" : {{String}},
+  "[RoleArn](#cfn-iot-topicrule-locationaction-rolearn)" : {{String}},
+  "[Timestamp](#cfn-iot-topicrule-locationaction-timestamp)" : {{Timestamp}},
+  "[TrackerName](#cfn-iot-topicrule-locationaction-trackername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-locationaction-syntax.yaml"></a>
 
-```yaml
-
-  DeviceId: String
-  Latitude: String
-  Longitude: String
-  RoleArn: String
-  Timestamp:
-    Timestamp
-  TrackerName: String
-
+```
+  [DeviceId](#cfn-iot-topicrule-locationaction-deviceid): {{String}}
+  [Latitude](#cfn-iot-topicrule-locationaction-latitude): {{String}}
+  [Longitude](#cfn-iot-topicrule-locationaction-longitude): {{String}}
+  [RoleArn](#cfn-iot-topicrule-locationaction-rolearn): {{String}}
+  [Timestamp](#cfn-iot-topicrule-locationaction-timestamp): {{
+    Timestamp}}
+  [TrackerName](#cfn-iot-topicrule-locationaction-trackername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-locationaction-properties"></a>
 
-`DeviceId`
-
+`DeviceId`  <a name="cfn-iot-topicrule-locationaction-deviceid"></a>
 The unique ID of the device providing the location data.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Latitude`  <a name="cfn-iot-topicrule-locationaction-latitude"></a>
+A string that evaluates to a double value that represents the latitude of the device's location.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Longitude`  <a name="cfn-iot-topicrule-locationaction-longitude"></a>
+A string that evaluates to a double value that represents the longitude of the device's location.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Latitude`
-
-A string that evaluates to a double value that represents the latitude of the device's
-location.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Longitude`
-
-A string that evaluates to a double value that represents the longitude of the device's
-location.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-locationaction-rolearn"></a>
 The IAM role that grants permission to write to the Amazon Location resource.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Timestamp`  <a name="cfn-iot-topicrule-locationaction-timestamp"></a>
+The time that the location data was sampled. The default value is the time the MQTT message was processed.
+*Required*: No
+*Type*: [Timestamp](aws-properties-iot-topicrule-timestamp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Timestamp`
-
-The time that the location data was sampled. The default value is the time the MQTT
-message was processed.
-
-_Required_: No
-
-_Type_: [Timestamp](aws-properties-iot-topicrule-timestamp.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrackerName`
-
-The name of the tracker resource in Amazon Location in which the location is
-updated.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LambdaAction
-
-OpenSearchAction
+`TrackerName`  <a name="cfn-iot-topicrule-locationaction-trackername"></a>
+The name of the tracker resource in Amazon Location in which the location is updated.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

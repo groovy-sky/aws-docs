@@ -2,73 +2,53 @@
 title: "AWS::Config::OrganizationConformancePack ConformancePackInputParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::OrganizationConformancePack ConformancePackInputParameter
+<a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter"></a>
 
-Input parameters in the form of key-value pairs for the conformance pack, both of which you define.
-Keys can have a maximum character length of 255 characters, and values can have a maximum length of 4096 characters.
+Input parameters in the form of key-value pairs for the conformance pack, both of which you define. Keys can have a maximum character length of 255 characters, and values can have a maximum length of 4096 characters.
 
 ## Syntax
+<a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "ParameterName" : String,
-  "ParameterValue" : String
+  "[ParameterName](#cfn-config-organizationconformancepack-conformancepackinputparameter-parametername)" : {{String}},
+  "[ParameterValue](#cfn-config-organizationconformancepack-conformancepackinputparameter-parametervalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter-syntax.yaml"></a>
 
-```yaml
-
-  ParameterName: String
-  ParameterValue: String
-
+```
+  [ParameterName](#cfn-config-organizationconformancepack-conformancepackinputparameter-parametername): {{String}}
+  [ParameterValue](#cfn-config-organizationconformancepack-conformancepackinputparameter-parametervalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter-properties"></a>
 
-`ParameterName`
-
+`ParameterName`  <a name="cfn-config-organizationconformancepack-conformancepackinputparameter-parametername"></a>
 One part of a key-value pair.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValue`
-
+`ParameterValue`  <a name="cfn-config-organizationconformancepack-conformancepackinputparameter-parametervalue"></a>
 One part of a key-value pair.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Config::OrganizationConformancePack
-
-AWS::Config::RemediationConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

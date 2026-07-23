@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Dashboard WaterfallChartSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard WaterfallChartSortConfiguration
+<a name="aws-properties-quicksight-dashboard-waterfallchartsortconfiguration"></a>
 
 The sort configuration of a waterfall visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-waterfallchartsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-waterfallchartsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BreakdownItemsLimit" : ItemsLimitConfiguration,
-  "CategorySort" : [ FieldSortOptions, ... ]
+  "[BreakdownItemsLimit](#cfn-quicksight-dashboard-waterfallchartsortconfiguration-breakdownitemslimit)" : {{ItemsLimitConfiguration}},
+  "[CategorySort](#cfn-quicksight-dashboard-waterfallchartsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-waterfallchartsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BreakdownItemsLimit:
-    ItemsLimitConfiguration
-  CategorySort:
-    - FieldSortOptions
-
+```
+  [BreakdownItemsLimit](#cfn-quicksight-dashboard-waterfallchartsortconfiguration-breakdownitemslimit): {{
+    ItemsLimitConfiguration}}
+  [CategorySort](#cfn-quicksight-dashboard-waterfallchartsortconfiguration-categorysort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-waterfallchartsortconfiguration-properties"></a>
 
-`BreakdownItemsLimit`
-
+`BreakdownItemsLimit`  <a name="cfn-quicksight-dashboard-waterfallchartsortconfiguration-breakdownitemslimit"></a>
 The limit on the number of bar groups that are displayed.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-dashboard-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CategorySort`
-
+`CategorySort`  <a name="cfn-quicksight-dashboard-waterfallchartsortconfiguration-categorysort"></a>
 The sort configuration of the category fields.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WaterfallChartOptions
-
-WaterfallVisual
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-dashboard-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

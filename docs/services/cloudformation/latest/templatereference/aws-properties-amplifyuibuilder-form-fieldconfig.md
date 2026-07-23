@@ -2,103 +2,76 @@
 title: "AWS::AmplifyUIBuilder::Form FieldConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FieldConfig
+<a name="aws-properties-amplifyuibuilder-form-fieldconfig"></a>
 
 The `FieldConfig` property specifies the configuration information for a field in a table.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-fieldconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-fieldconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Excluded" : Boolean,
-  "InputType" : FieldInputConfig,
-  "Label" : String,
-  "Position" : FieldPosition,
-  "Validations" : [ FieldValidationConfiguration, ... ]
+  "[Excluded](#cfn-amplifyuibuilder-form-fieldconfig-excluded)" : {{Boolean}},
+  "[InputType](#cfn-amplifyuibuilder-form-fieldconfig-inputtype)" : {{FieldInputConfig}},
+  "[Label](#cfn-amplifyuibuilder-form-fieldconfig-label)" : {{String}},
+  "[Position](#cfn-amplifyuibuilder-form-fieldconfig-position)" : {{FieldPosition}},
+  "[Validations](#cfn-amplifyuibuilder-form-fieldconfig-validations)" : {{[ FieldValidationConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-fieldconfig-syntax.yaml"></a>
 
-```yaml
-
-  Excluded: Boolean
-  InputType:
-    FieldInputConfig
-  Label: String
-  Position:
-    FieldPosition
-  Validations:
-    - FieldValidationConfiguration
-
+```
+  [Excluded](#cfn-amplifyuibuilder-form-fieldconfig-excluded): {{Boolean}}
+  [InputType](#cfn-amplifyuibuilder-form-fieldconfig-inputtype): {{
+    FieldInputConfig}}
+  [Label](#cfn-amplifyuibuilder-form-fieldconfig-label): {{String}}
+  [Position](#cfn-amplifyuibuilder-form-fieldconfig-position): {{
+    FieldPosition}}
+  [Validations](#cfn-amplifyuibuilder-form-fieldconfig-validations): {{
+    - FieldValidationConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-fieldconfig-properties"></a>
 
-`Excluded`
-
+`Excluded`  <a name="cfn-amplifyuibuilder-form-fieldconfig-excluded"></a>
 Specifies whether to hide a field.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InputType`
-
+`InputType`  <a name="cfn-amplifyuibuilder-form-fieldconfig-inputtype"></a>
 Describes the configuration for the default input value to display for a field.
+*Required*: No
+*Type*: [FieldInputConfig](aws-properties-amplifyuibuilder-form-fieldinputconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FieldInputConfig](aws-properties-amplifyuibuilder-form-fieldinputconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Label`
-
+`Label`  <a name="cfn-amplifyuibuilder-form-fieldconfig-label"></a>
 The label for the field.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
+`Position`  <a name="cfn-amplifyuibuilder-form-fieldconfig-position"></a>
 Specifies the field position.
+*Required*: No
+*Type*: [FieldPosition](aws-properties-amplifyuibuilder-form-fieldposition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FieldPosition](aws-properties-amplifyuibuilder-form-fieldposition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Validations`
-
+`Validations`  <a name="cfn-amplifyuibuilder-form-fieldconfig-validations"></a>
 The validations to perform on the value in the field.
-
-_Required_: No
-
-_Type_: Array of [FieldValidationConfiguration](aws-properties-amplifyuibuilder-form-fieldvalidationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AmplifyUIBuilder::Form
-
-FieldInputConfig
+*Required*: No
+*Type*: Array of [FieldValidationConfiguration](aws-properties-amplifyuibuilder-form-fieldvalidationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

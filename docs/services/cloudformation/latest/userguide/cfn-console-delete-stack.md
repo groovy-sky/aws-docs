@@ -3,99 +3,78 @@ title: "Delete a stack from the CloudFormation console"
 ---
 
 # Delete a stack from the CloudFormation console
+<a name="cfn-console-delete-stack"></a>
 
 If you no longer need the resources in a stack, you can delete the entire stack.
 
-When deleting a stack, CloudFormation deletes all resources in that stack unless you used a
-deletion policy to retain specific resources. For more information, see [DeletionPolicy attribute](../templatereference/aws-attribute-deletionpolicy.md).
+When deleting a stack, CloudFormation deletes all resources in that stack unless you used a deletion policy to retain specific resources. For more information, see [DeletionPolicy attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html).
 
-###### To delete a stack (console)
+**To delete a stack (console)**
 
-1. Sign in to the AWS Management Console and open the CloudFormation console at
-    [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation).
+1. Sign in to the AWS Management Console and open the CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).
 
-2. On the navigation bar at the top of the screen, choose the AWS Region where the
-    stack is located.
+1. On the navigation bar at the top of the screen, choose the AWS Region where the stack is located.
 
-3. On the **Stacks** page, choose the stack that you want to delete.
-    The stack must be currently running.
+1. On the **Stacks** page, choose the stack that you want to delete. The stack must be currently running.
 
-4. Choose **Delete**.
+1. Choose **Delete**.
 
-5. When prompted for confirmation, choose **Delete**.
+1. When prompted for confirmation, choose **Delete**.
+**Note**
+The stack deletion operation can't be stopped once the stack deletion has begun. The stack proceeds to the `DELETE_IN_PROGRESS` state.
+After the stack deletion is complete, the stack will be in the `DELETE_COMPLETE` state. Stacks in the `DELETE_COMPLETE` state aren't displayed in the CloudFormation console by default. To display deleted stacks, you must change the stack view filter as described in [View deleted stacks from the CloudFormation console](cfn-console-view-deleted-stacks.md).
 
-###### Note
+**To force delete a stack (console)**
 
-The stack deletion operation can't be stopped once the stack deletion has begun.
-The stack proceeds to the `DELETE_IN_PROGRESS` state.
+A stack deletion might fail because a resource in the stack fails to delete. For example, CloudFormation will fail the deletion of a resource that another stack also depends on. Any resources that haven't been deleted will remain until you can successfully delete the stack. If the deletion fails and returns a `DELETE_FAILED` state, you can choose to retry using one of two methods.
 
-After the stack deletion is complete, the stack will be in the
-`DELETE_COMPLETE` state. Stacks in the `DELETE_COMPLETE`
-state aren't displayed in the CloudFormation console by default. To display deleted
-stacks, you must change the stack view filter as described in [View deleted stacks from the CloudFormation console](cfn-console-view-deleted-stacks.md).
+1. On the **Stacks** page in the CloudFormation console, choose the stack that you want to force delete.
 
-###### To force delete a stack (console)
+1. In the stack details pane, choose **Retry delete**.
 
-A stack deletion might fail because a resource in the stack fails to delete. For
-example, CloudFormation will fail the deletion of a resource that another stack also depends
-on. Any resources that haven't been deleted will remain until you can successfully delete
-the stack. If the deletion fails and returns a `DELETE_FAILED` state, you can
-choose to retry using one of two methods.
+1. Choose between the following options:
+   + **Delete this stack but retain resources**: This option allows you to select the specific resources that originally failed to delete, but you want to retain during the force stack deletion.
+   + **Force delete this entire stack**: This option retains all resources that failed to delete, and retains dependencies of those resources.
 
-1. On the **Stacks** page in the CloudFormation console, choose the stack
-    that you want to force delete.
+1. Choose **Delete** to begin the force delete process with your selections.
 
-2. In the stack details pane, choose **Retry delete**.
+**To review retained resources (console)**
 
-3. Choose between the following options:
+After deleting the stack, you can view the resources that were retained in the console.
 
-- **Delete this stack but retain resources**: This option allows
-you to select the specific resources that originally failed to delete, but you
-want to retain during the force stack deletion.
+1. In the stacks list, choose the **Filter status** and select **Deleted**.
 
-- **Force delete this entire stack**: This option retains all resources that failed
-to delete, and retains dependencies of those resources.
+1. Choose the deleted stack.
 
-4. Choose **Delete** to begin the force delete process with your
-    selections.
+1. Choose the **Resources** tab.
 
-###### To review retained resources (console)
+1. All retained resources show the `DELETE_SKIPPED` **Status**.
 
-After deleting the stack, you can view the resources that were retained in the
-console.
+1. Choose the retained resource you want to review.
 
-1. In the stacks list, choose the **Filter status** and select
-    **Deleted**.
-
-2. Choose the deleted stack.
-
-3. Choose the **Resources** tab.
-
-4. All retained resources show the `DELETE_SKIPPED` **Status**.
-
-5. Choose the retained resource you want to review.
-
-###### To delete a stack using the command line
-
+**To delete a stack using the command line**
 You can use one of the following commands:
++ [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/delete-stack.html) (AWS CLI)
++ [https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-CFNStack.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-CFNStack.html) (AWS Tools for Windows PowerShell)
 
-- [delete-stack](../../../cli/latest/reference/cloudformation/delete-stack.md) (AWS CLI)
+For examples of using the command line to delete a stack, see [Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell](service_code_examples.md).
 
-- [Remove-CFNStack](../../../powershell/latest/reference/items/remove-cfnstack.md) (AWS Tools for Windows PowerShell)
+**Express mode**
+To delete a stack using express mode, add the `--deployment-config` parameter to the `delete-stack` command. Express mode completes the delete operation as soon as CloudFormation issues the delete API call for each resource, without waiting for resources to be fully removed. For more information, see [Express mode](cloudformation-express-mode.md).
 
-For examples of using the command line to delete a stack, see [Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell](service-code-examples.md).
+```
+aws cloudformation delete-stack --stack-name {{myteststack}} \
+    --deployment-config '{"mode": "EXPRESS"}'
+```
+
+**Note**
+In the CloudFormation console, you can select **Express** for the deployment mode when deleting a stack to use express mode.
 
 ## Related resources
+<a name="delete-stack-related-resources"></a>
 
-For help troubleshooting stack deletion errors, see the [Delete stack fails](troubleshooting.md#troubleshooting-errors-delete-stack-fails) troubleshooting
-topic.
+For help troubleshooting stack deletion errors, see the [Delete stack fails](troubleshooting.md#troubleshooting-errors-delete-stack-fails) troubleshooting topic.
 
 For information on protecting stacks from being accidentally deleted, see [Protect CloudFormation stacks from being deleted](using-cfn-protect-stacks.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Cancel a stack update
-
-View deleted stacks
 
 All content copied from https://docs.aws.amazon.com/.

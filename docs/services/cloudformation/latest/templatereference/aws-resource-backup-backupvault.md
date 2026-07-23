@@ -2,168 +2,120 @@
 title: "AWS::Backup::BackupVault"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupVault
+<a name="aws-resource-backup-backupvault"></a>
 
-Creates a logical container where backups are stored. A `CreateBackupVault`
-request includes a name, optionally one or more resource tags, an encryption key, and a
-request ID.
+Creates a logical container where backups are stored. A `CreateBackupVault` request includes a name, optionally one or more resource tags, an encryption key, and a request ID.
 
-Do not include sensitive data, such as passport numbers, in the name of a backup
-vault.
+Do not include sensitive data, such as passport numbers, in the name of a backup vault.
 
-For a sample CloudFormation template, see the [AWS Backup Developer Guide](../../../aws-backup/latest/devguide/assigning-resources.md#assigning-resources-cfn).
+For a sample CloudFormation template, see the [AWS Backup Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-resources.html#assigning-resources-cfn).
 
 ## Syntax
+<a name="aws-resource-backup-backupvault-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-backup-backupvault-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Backup::BackupVault",
   "Properties" : {
-      "AccessPolicy" : Json,
-      "BackupVaultName" : String,
-      "BackupVaultTags" : {Key: Value, ...},
-      "EncryptionKeyArn" : String,
-      "LockConfiguration" : LockConfigurationType,
-      "Notifications" : NotificationObjectType
+      "[AccessPolicy](#cfn-backup-backupvault-accesspolicy)" : {{Json}},
+      "[BackupVaultName](#cfn-backup-backupvault-backupvaultname)" : {{String}},
+      "[BackupVaultTags](#cfn-backup-backupvault-backupvaulttags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[EncryptionKeyArn](#cfn-backup-backupvault-encryptionkeyarn)" : {{String}},
+      "[LockConfiguration](#cfn-backup-backupvault-lockconfiguration)" : {{LockConfigurationType}},
+      "[Notifications](#cfn-backup-backupvault-notifications)" : {{NotificationObjectType}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-backup-backupvault-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Backup::BackupVault
 Properties:
-  AccessPolicy: Json
-  BackupVaultName: String
-  BackupVaultTags:
-    Key: Value
-  EncryptionKeyArn: String
-  LockConfiguration:
-    LockConfigurationType
-  Notifications:
-    NotificationObjectType
-
+  [AccessPolicy](#cfn-backup-backupvault-accesspolicy): {{Json}}
+  [BackupVaultName](#cfn-backup-backupvault-backupvaultname): {{String}}
+  [BackupVaultTags](#cfn-backup-backupvault-backupvaulttags): {{
+    {{Key}}: {{Value}}}}
+  [EncryptionKeyArn](#cfn-backup-backupvault-encryptionkeyarn): {{String}}
+  [LockConfiguration](#cfn-backup-backupvault-lockconfiguration): {{
+    LockConfigurationType}}
+  [Notifications](#cfn-backup-backupvault-notifications): {{
+    NotificationObjectType}}
 ```
 
 ## Properties
+<a name="aws-resource-backup-backupvault-properties"></a>
 
-`AccessPolicy`
+`AccessPolicy`  <a name="cfn-backup-backupvault-accesspolicy"></a>
+A resource-based policy that is used to manage access permissions on the target backup vault.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A resource-based policy that is used to manage access permissions on the target backup
-vault.
+`BackupVaultName`  <a name="cfn-backup-backupvault-backupvaultname"></a>
+The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9\-\_]{2,50}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BackupVaultName`
-
-The name of a logical container where backups are stored. Backup vaults are identified
-by names that are unique to the account used to create them and the AWS
-Region where they are created.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9\-\_]{2,50}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`BackupVaultTags`
-
+`BackupVaultTags`  <a name="cfn-backup-backupvault-backupvaulttags"></a>
 The tags to assign to the backup vault.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.{1,128}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`EncryptionKeyArn`  <a name="cfn-backup-backupvault-encryptionkeyarn"></a>
+A server-side encryption key you can specify to encrypt your backups from services that support full AWS Backup management; for example, `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`. If you specify a key, you must specify its ARN, not its alias. If you do not specify a key, AWS Backup creates a KMS key for you by default.
+To learn which AWS Backup services support full AWS Backup management and how AWS Backup handles encryption for backups from services that do not yet support full AWS Backup, see [ Encryption for backups in AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/encryption.html)
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Object of String
+`LockConfiguration`  <a name="cfn-backup-backupvault-lockconfiguration"></a>
+Configuration for [AWS Backup Vault Lock](https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html).
+*Required*: No
+*Type*: [LockConfigurationType](aws-properties-backup-backupvault-lockconfigurationtype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^.{1,128}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionKeyArn`
-
-A server-side encryption key you can specify to encrypt your backups from services
-that support full AWS Backup management; for example,
-`arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`.
-If you specify a key, you must specify its ARN, not its alias. If you do not specify a key,
-AWS Backup creates a KMS key for you by default.
-
-To learn which AWS Backup services support full AWS Backup management
-and how AWS Backup handles encryption for backups from services that do not yet support
-full AWS Backup, see [Encryption for backups in AWS Backup](../../../aws-backup/latest/devguide/encryption.md)
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LockConfiguration`
-
-Configuration for [AWS Backup Vault\
-Lock](../../../aws-backup/latest/devguide/vault-lock.md).
-
-_Required_: No
-
-_Type_: [LockConfigurationType](aws-properties-backup-backupvault-lockconfigurationtype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Notifications`
-
+`Notifications`  <a name="cfn-backup-backupvault-notifications"></a>
 The SNS event notifications for the specified backup vault.
-
-_Required_: No
-
-_Type_: [NotificationObjectType](aws-properties-backup-backupvault-notificationobjecttype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [NotificationObjectType](aws-properties-backup-backupvault-notificationobjecttype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-backup-backupvault-return-values"></a>
 
 ### Ref
+<a name="aws-resource-backup-backupvault-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns `BackupVaultName`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns`BackupVaultName`.
 
 ### Fn::GetAtt
+<a name="aws-resource-backup-backupvault-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`BackupVaultArn`
+####
+<a name="aws-resource-backup-backupvault-return-values-fn--getatt-fn--getatt"></a>
 
-An Amazon Resource Name (ARN) that uniquely identifies a
-backup vault; for example,
-`arn:aws:backup:us-east-1:123456789012:backup-vault:aBackupVault`.
+`BackupVaultArn`  <a name="BackupVaultArn-fn::getatt"></a>
+An Amazon Resource Name (ARN) that uniquely identifies a backup vault; for example, `arn:aws:backup:us-east-1:123456789012:backup-vault:aBackupVault`.
 
-`BackupVaultName`
-
-The name of a logical container where backups are
-stored. Backup vaults are identified by names that are unique to the account used to create
-them and the Region where they are created. They consist of lowercase and uppercase
-letters, numbers, and hyphens.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Conditions
-
-LockConfigurationType
+`BackupVaultName`  <a name="BackupVaultName-fn::getatt"></a>
+The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Region where they are created. They consist of lowercase and uppercase letters, numbers, and hyphens.
 
 All content copied from https://docs.aws.amazon.com/.

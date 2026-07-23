@@ -2,54 +2,42 @@
 title: "AWS::Bedrock::DataAutomationProject DocumentBoundingBox"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject DocumentBoundingBox
+<a name="aws-properties-bedrock-dataautomationproject-documentboundingbox"></a>
 
 Bounding box settings for documents.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-documentboundingbox-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-documentboundingbox-syntax.json"></a>
 
-```json
-
+```
 {
-  "State" : String
+  "[State](#cfn-bedrock-dataautomationproject-documentboundingbox-state)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-documentboundingbox-syntax.yaml"></a>
 
-```yaml
-
-  State: String
-
+```
+  [State](#cfn-bedrock-dataautomationproject-documentboundingbox-state): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-documentboundingbox-properties"></a>
 
-`State`
-
+`State`  <a name="cfn-bedrock-dataautomationproject-documentboundingbox-state"></a>
 Whether bounding boxes are enabled for documents.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomOutputConfiguration
-
-DocumentExtractionGranularity
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

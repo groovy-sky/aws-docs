@@ -2,148 +2,104 @@
 title: "AWS::QuickSight::Dashboard CustomContentVisual"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard CustomContentVisual
+<a name="aws-properties-quicksight-dashboard-customcontentvisual"></a>
 
 A visual that contains custom content.
 
-For more information, see [Using custom visual content](../../../quicksight/latest/user/custom-visual-content.md) in the _Amazon Quick Suite User Guide_.
+For more information, see [Using custom visual content](https://docs.aws.amazon.com/quicksight/latest/user/custom-visual-content.html) in the *Amazon Quick Suite User Guide*.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-customcontentvisual-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-customcontentvisual-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ VisualCustomAction, ... ],
-  "ChartConfiguration" : CustomContentConfiguration,
-  "DataSetIdentifier" : String,
-  "Subtitle" : VisualSubtitleLabelOptions,
-  "Title" : VisualTitleLabelOptions,
-  "VisualContentAltText" : String,
-  "VisualId" : String
+  "[Actions](#cfn-quicksight-dashboard-customcontentvisual-actions)" : {{[ VisualCustomAction, ... ]}},
+  "[ChartConfiguration](#cfn-quicksight-dashboard-customcontentvisual-chartconfiguration)" : {{CustomContentConfiguration}},
+  "[DataSetIdentifier](#cfn-quicksight-dashboard-customcontentvisual-datasetidentifier)" : {{String}},
+  "[Subtitle](#cfn-quicksight-dashboard-customcontentvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
+  "[Title](#cfn-quicksight-dashboard-customcontentvisual-title)" : {{VisualTitleLabelOptions}},
+  "[VisualContentAltText](#cfn-quicksight-dashboard-customcontentvisual-visualcontentalttext)" : {{String}},
+  "[VisualId](#cfn-quicksight-dashboard-customcontentvisual-visualid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-customcontentvisual-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - VisualCustomAction
-  ChartConfiguration:
-    CustomContentConfiguration
-  DataSetIdentifier: String
-  Subtitle:
-    VisualSubtitleLabelOptions
-  Title:
-    VisualTitleLabelOptions
-  VisualContentAltText: String
-  VisualId: String
-
+```
+  [Actions](#cfn-quicksight-dashboard-customcontentvisual-actions): {{
+    - VisualCustomAction}}
+  [ChartConfiguration](#cfn-quicksight-dashboard-customcontentvisual-chartconfiguration): {{
+    CustomContentConfiguration}}
+  [DataSetIdentifier](#cfn-quicksight-dashboard-customcontentvisual-datasetidentifier): {{String}}
+  [Subtitle](#cfn-quicksight-dashboard-customcontentvisual-subtitle): {{
+    VisualSubtitleLabelOptions}}
+  [Title](#cfn-quicksight-dashboard-customcontentvisual-title): {{
+    VisualTitleLabelOptions}}
+  [VisualContentAltText](#cfn-quicksight-dashboard-customcontentvisual-visualcontentalttext): {{String}}
+  [VisualId](#cfn-quicksight-dashboard-customcontentvisual-visualid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-customcontentvisual-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-quicksight-dashboard-customcontentvisual-actions"></a>
 The list of custom actions that are configured for a visual.
+*Required*: No
+*Type*: Array of [VisualCustomAction](aws-properties-quicksight-dashboard-visualcustomaction.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [VisualCustomAction](aws-properties-quicksight-dashboard-visualcustomaction.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChartConfiguration`
-
+`ChartConfiguration`  <a name="cfn-quicksight-dashboard-customcontentvisual-chartconfiguration"></a>
 The configuration of a `CustomContentVisual`.
+*Required*: No
+*Type*: [CustomContentConfiguration](aws-properties-quicksight-dashboard-customcontentconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomContentConfiguration](aws-properties-quicksight-dashboard-customcontentconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataSetIdentifier`
-
+`DataSetIdentifier`  <a name="cfn-quicksight-dashboard-customcontentvisual-datasetidentifier"></a>
 The dataset that is used to create the custom content visual. You can't create a visual without a dataset.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subtitle`
-
+`Subtitle`  <a name="cfn-quicksight-dashboard-customcontentvisual-subtitle"></a>
 The subtitle that is displayed on the visual.
+*Required*: No
+*Type*: [VisualSubtitleLabelOptions](aws-properties-quicksight-dashboard-visualsubtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualSubtitleLabelOptions](aws-properties-quicksight-dashboard-visualsubtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-dashboard-customcontentvisual-title"></a>
 The title that is displayed on the visual.
+*Required*: No
+*Type*: [VisualTitleLabelOptions](aws-properties-quicksight-dashboard-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualTitleLabelOptions](aws-properties-quicksight-dashboard-visualtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualContentAltText`
-
+`VisualContentAltText`  <a name="cfn-quicksight-dashboard-customcontentvisual-visualcontentalttext"></a>
 The alt text for the visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualId`
-
+`VisualId`  <a name="cfn-quicksight-dashboard-customcontentvisual-visualid"></a>
 The unique identifier of a visual. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have visuals with the same identifiers.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomContentConfiguration
-
-CustomFilterConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

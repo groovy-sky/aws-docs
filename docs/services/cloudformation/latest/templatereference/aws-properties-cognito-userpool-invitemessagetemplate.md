@@ -2,98 +2,68 @@
 title: "AWS::Cognito::UserPool InviteMessageTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPool InviteMessageTemplate
+<a name="aws-properties-cognito-userpool-invitemessagetemplate"></a>
 
-The template for the welcome message to new users. This template must include the
-`{####}` temporary password placeholder if you are creating users with
-passwords. If your users don't have passwords, you can omit the placeholder.
+The template for the welcome message to new users. This template must include the `{####}` temporary password placeholder if you are creating users with passwords. If your users don't have passwords, you can omit the placeholder.
 
-See also [Customizing User Invitation Messages](../../../cognito/latest/developerguide/cognito-user-pool-settings-message-customizations.md#cognito-user-pool-settings-user-invitation-message-customization).
+See also [Customizing User Invitation Messages](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-message-customizations.html#cognito-user-pool-settings-user-invitation-message-customization).
 
 ## Syntax
+<a name="aws-properties-cognito-userpool-invitemessagetemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpool-invitemessagetemplate-syntax.json"></a>
 
-```json
-
+```
 {
-  "EmailMessage" : String,
-  "EmailSubject" : String,
-  "SMSMessage" : String
+  "[EmailMessage](#cfn-cognito-userpool-invitemessagetemplate-emailmessage)" : {{String}},
+  "[EmailSubject](#cfn-cognito-userpool-invitemessagetemplate-emailsubject)" : {{String}},
+  "[SMSMessage](#cfn-cognito-userpool-invitemessagetemplate-smsmessage)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpool-invitemessagetemplate-syntax.yaml"></a>
 
-```yaml
-
-  EmailMessage: String
-  EmailSubject: String
-  SMSMessage: String
-
+```
+  [EmailMessage](#cfn-cognito-userpool-invitemessagetemplate-emailmessage): {{String}}
+  [EmailSubject](#cfn-cognito-userpool-invitemessagetemplate-emailsubject): {{String}}
+  [SMSMessage](#cfn-cognito-userpool-invitemessagetemplate-smsmessage): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpool-invitemessagetemplate-properties"></a>
 
-`EmailMessage`
+`EmailMessage`  <a name="cfn-cognito-userpool-invitemessagetemplate-emailmessage"></a>
+The message template for email messages. EmailMessage is allowed only if [EmailSendingAccount](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount) is DEVELOPER.
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*`
+*Minimum*: `6`
+*Maximum*: `20000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The message template for email messages. EmailMessage is allowed only if [EmailSendingAccount](../../../../reference/cognito-user-identity-pools/latest/apireference/api-emailconfigurationtype.md#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount) is DEVELOPER.
+`EmailSubject`  <a name="cfn-cognito-userpool-invitemessagetemplate-emailsubject"></a>
+The subject line for email messages. EmailSubject is allowed only if [EmailSendingAccount](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount) is DEVELOPER.
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+`
+*Minimum*: `1`
+*Maximum*: `140`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*`
-
-_Minimum_: `6`
-
-_Maximum_: `20000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EmailSubject`
-
-The subject line for email messages. EmailSubject is allowed only if [EmailSendingAccount](../../../../reference/cognito-user-identity-pools/latest/apireference/api-emailconfigurationtype.md#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount) is DEVELOPER.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+`
-
-_Minimum_: `1`
-
-_Maximum_: `140`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SMSMessage`
-
+`SMSMessage`  <a name="cfn-cognito-userpool-invitemessagetemplate-smsmessage"></a>
 The message template for SMS messages.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?s).*`
-
-_Minimum_: `6`
-
-_Maximum_: `140`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InboundFederation
-
-LambdaConfig
+*Required*: No
+*Type*: String
+*Pattern*: `(?s).*`
+*Minimum*: `6`
+*Maximum*: `140`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

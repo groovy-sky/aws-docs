@@ -2,77 +2,58 @@
 title: "AWS::MediaTailor::SourceLocation SecretsManagerAccessTokenConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::SourceLocation SecretsManagerAccessTokenConfiguration
+<a name="aws-properties-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration"></a>
 
-AWS Secrets Manager access token configuration parameters. For information about Secrets Manager access token authentication, see [Working with AWS Secrets Manager access token authentication](../../../mediatailor/latest/ug/channel-assembly-access-configuration-access-token.md).
+AWS Secrets Manager access token configuration parameters. For information about Secrets Manager access token authentication, see [Working with AWS Secrets Manager access token authentication](https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-access-configuration-access-token.html).
 
 ## Syntax
+<a name="aws-properties-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "HeaderName" : String,
-  "SecretArn" : String,
-  "SecretStringKey" : String
+  "[HeaderName](#cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-headername)" : {{String}},
+  "[SecretArn](#cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-secretarn)" : {{String}},
+  "[SecretStringKey](#cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-secretstringkey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  HeaderName: String
-  SecretArn: String
-  SecretStringKey:
-    String
-
+```
+  [HeaderName](#cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-headername): {{String}}
+  [SecretArn](#cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-secretarn): {{String}}
+  [SecretStringKey](#cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-secretstringkey): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-properties"></a>
 
-`HeaderName`
-
+`HeaderName`  <a name="cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-headername"></a>
 The name of the HTTP header used to supply the access token in requests to the source location.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretArn`
-
+`SecretArn`  <a name="cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-secretarn"></a>
 The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the access token.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretStringKey`
-
-The AWS Secrets Manager [SecretString](../../../../reference/secretsmanager/latest/apireference/api-createsecret.md#SecretsManager-CreateSecret-request-SecretString.html) key associated with the access token. MediaTailor uses the key to look up SecretString key and value pair containing the access token.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HttpConfiguration
-
-SegmentDeliveryConfiguration
+`SecretStringKey`  <a name="cfn-mediatailor-sourcelocation-secretsmanageraccesstokenconfiguration-secretstringkey"></a>
+The AWS Secrets Manager[SecretString](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html#SecretsManager-CreateSecret-request-SecretString.html) key associated with the access token. MediaTailor uses the key to look up SecretString key and value pair containing the access token.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,53 @@
 title: "AWS::QuickSight::Topic RangeConstant"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic RangeConstant
+<a name="aws-properties-quicksight-topic-rangeconstant"></a>
 
 The value of the constant that is used to specify the endpoints of a range filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-rangeconstant-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-rangeconstant-syntax.json"></a>
 
-```json
-
+```
 {
-  "Maximum" : String,
-  "Minimum" : String
+  "[Maximum](#cfn-quicksight-topic-rangeconstant-maximum)" : {{String}},
+  "[Minimum](#cfn-quicksight-topic-rangeconstant-minimum)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-rangeconstant-syntax.yaml"></a>
 
-```yaml
-
-  Maximum: String
-  Minimum: String
-
+```
+  [Maximum](#cfn-quicksight-topic-rangeconstant-maximum): {{String}}
+  [Minimum](#cfn-quicksight-topic-rangeconstant-minimum): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-rangeconstant-properties"></a>
 
-`Maximum`
-
+`Maximum`  <a name="cfn-quicksight-topic-rangeconstant-maximum"></a>
 The maximum value for a range constant.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Minimum`
-
+`Minimum`  <a name="cfn-quicksight-topic-rangeconstant-minimum"></a>
 The minimum value for a range constant.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NegativeFormat
-
-SemanticEntityType
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

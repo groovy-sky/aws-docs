@@ -2,70 +2,52 @@
 title: "AWS::CustomerProfiles::CalculatedAttributeDefinition Threshold"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::CalculatedAttributeDefinition Threshold
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold"></a>
 
 The threshold for the calculated attribute.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold-syntax.json"></a>
 
-```json
-
+```
 {
-  "Operator" : String,
-  "Value" : String
+  "[Operator](#cfn-customerprofiles-calculatedattributedefinition-threshold-operator)" : {{String}},
+  "[Value](#cfn-customerprofiles-calculatedattributedefinition-threshold-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold-syntax.yaml"></a>
 
-```yaml
-
-  Operator: String
-  Value: String
-
+```
+  [Operator](#cfn-customerprofiles-calculatedattributedefinition-threshold-operator): {{String}}
+  [Value](#cfn-customerprofiles-calculatedattributedefinition-threshold-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold-properties"></a>
 
-`Operator`
-
+`Operator`  <a name="cfn-customerprofiles-calculatedattributedefinition-threshold-operator"></a>
 The operator of the threshold.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EQUAL_TO | GREATER_THAN | LESS_THAN | NOT_EQUAL_TO`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EQUAL_TO | GREATER_THAN | LESS_THAN | NOT_EQUAL_TO`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-customerprofiles-calculatedattributedefinition-threshold-value"></a>
 The value of the threshold.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ValueRange
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

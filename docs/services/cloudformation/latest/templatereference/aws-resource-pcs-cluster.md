@@ -2,173 +2,123 @@
 title: "AWS::PCS::Cluster"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::Cluster
+<a name="aws-resource-pcs-cluster"></a>
 
-Creates an AWS PCS cluster resource. For more information, see
-[Creating a cluster \
-in AWS Parallel Computing Service](../../../pcs/latest/userguide/working-with-clusters-create.md) in the _AWS PCS User Guide_.
+Creates an AWS PCS cluster resource. For more information, see [Creating a cluster in AWS Parallel Computing Service](https://docs.aws.amazon.com/pcs/latest/userguide/working-with_clusters_create.html) in the *AWS PCS User Guide*.
 
 ## Syntax
+<a name="aws-resource-pcs-cluster-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-pcs-cluster-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::PCS::Cluster",
   "Properties" : {
-      "Name" : String,
-      "Networking" : Networking,
-      "Scheduler" : Scheduler,
-      "Size" : String,
-      "SlurmConfiguration" : SlurmConfiguration,
-      "Tags" : String
+      "[Name](#cfn-pcs-cluster-name)" : {{String}},
+      "[Networking](#cfn-pcs-cluster-networking)" : {{Networking}},
+      "[Scheduler](#cfn-pcs-cluster-scheduler)" : {{Scheduler}},
+      "[Size](#cfn-pcs-cluster-size)" : {{String}},
+      "[SlurmConfiguration](#cfn-pcs-cluster-slurmconfiguration)" : {{SlurmConfiguration}},
+      "[Tags](#cfn-pcs-cluster-tags)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-pcs-cluster-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::PCS::Cluster
 Properties:
-  Name: String
-  Networking:
-    Networking
-  Scheduler:
-    Scheduler
-  Size: String
-  SlurmConfiguration:
-    SlurmConfiguration
-  Tags: String
-
+  [Name](#cfn-pcs-cluster-name): {{String}}
+  [Networking](#cfn-pcs-cluster-networking): {{
+    Networking}}
+  [Scheduler](#cfn-pcs-cluster-scheduler): {{
+    Scheduler}}
+  [Size](#cfn-pcs-cluster-size): {{String}}
+  [SlurmConfiguration](#cfn-pcs-cluster-slurmconfiguration): {{
+    SlurmConfiguration}}
+  [Tags](#cfn-pcs-cluster-tags): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-pcs-cluster-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-pcs-cluster-name"></a>
 The name that identifies the cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Networking`
-
+`Networking`  <a name="cfn-pcs-cluster-networking"></a>
 The networking configuration for the cluster's control plane.
+*Required*: Yes
+*Type*: [Networking](aws-properties-pcs-cluster-networking.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: [Networking](aws-properties-pcs-cluster-networking.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Scheduler`
-
+`Scheduler`  <a name="cfn-pcs-cluster-scheduler"></a>
 The cluster management and job scheduling software associated with the cluster.
+*Required*: Yes
+*Type*: [Scheduler](aws-properties-pcs-cluster-scheduler.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [Scheduler](aws-properties-pcs-cluster-scheduler.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Size`
-
+`Size`  <a name="cfn-pcs-cluster-size"></a>
 The size of the cluster.
++ `SMALL`: 32 compute nodes and 256 jobs
++ `MEDIUM`: 512 compute nodes and 8192 jobs
++ `LARGE`: 2048 compute nodes and 16,384 jobs
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SMALL | MEDIUM | LARGE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `SMALL`: 32 compute nodes and 256 jobs
-
-- `MEDIUM`: 512 compute nodes and 8192 jobs
-
-- `LARGE`: 2048 compute nodes and 16,384 jobs
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SMALL | MEDIUM | LARGE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SlurmConfiguration`
-
+`SlurmConfiguration`  <a name="cfn-pcs-cluster-slurmconfiguration"></a>
 Additional options related to the Slurm scheduler.
+*Required*: No
+*Type*: [SlurmConfiguration](aws-properties-pcs-cluster-slurmconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SlurmConfiguration](aws-properties-pcs-cluster-slurmconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-1 or more tags added to the resource. Each tag consists of a tag key and tag value. The
-tag value is optional and can be an empty string.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-pcs-cluster-tags"></a>
+1 or more tags added to the resource. Each tag consists of a tag key and tag value. The tag value is optional and can be an empty string.
+*Required*: No
+*Type*: String
+*Pattern*: `^.+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-pcs-cluster-return-values"></a>
 
 ### Ref
+<a name="aws-resource-pcs-cluster-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-pcs-cluster-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-pcs-cluster-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The unique Amazon Resource Name (ARN) of the cluster.
 
-`Endpoints`
-
+`Endpoints`  <a name="Endpoints-fn::getatt"></a>
 The list of endpoints available for interaction with the scheduler.
 
-`ErrorInfo`
-
+`ErrorInfo`  <a name="ErrorInfo-fn::getatt"></a>
 The list of errors that occurred during cluster provisioning.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The generated unique ID of the cluster.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The provisioning status of the cluster.
-
-###### Note
-
 The provisioning status doesn't indicate the overall health of the cluster.
-
-###### Important
-
-The resource enters the `SUSPENDING` and `SUSPENDED` states
-when the scheduler is beyond end of life and we have suspended the cluster. When in
-these states, you can't use the cluster. The cluster controller is down and all compute
-instances are terminated. The resources still count toward your service quotas. You can
-delete a resource if its status is `SUSPENDED`. For more information, see
-[Frequently asked questions about Slurm versions in AWS PCS](../../../pcs/latest/userguide/slurm-versions-faq.md) in the
-_AWS PCS User Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS PCS
-
-Accounting
+The resource enters the `SUSPENDING` and `SUSPENDED` states when the scheduler is beyond end of life and we have suspended the cluster. When in these states, you can't use the cluster. The cluster controller is down and all compute instances are terminated. The resources still count toward your service quotas. You can delete a resource if its status is `SUSPENDED`. For more information, see [Frequently asked questions about Slurm versions in AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/slurm-versions_faq.html) in the *AWS PCS User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,82 +2,61 @@
 title: "AWS::BedrockAgentCore::OnlineEvaluationConfig FilterValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OnlineEvaluationConfig FilterValue
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue"></a>
 
-The value to compare against using the specified operator. Can be a string, double, or boolean value.
+ The value to compare against using the specified operator. Can be a string, double, or boolean value.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "BooleanValue" : Boolean,
-  "DoubleValue" : Number,
-  "StringValue" : String
+  "[BooleanValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-booleanvalue)" : {{Boolean}},
+  "[DoubleValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-doublevalue)" : {{Number}},
+  "[StringValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-stringvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue-syntax.yaml"></a>
 
-```yaml
-
-  BooleanValue:
-    Boolean
-  DoubleValue: Number
-  StringValue:
-    String
-
+```
+  [BooleanValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-booleanvalue): {{
+    Boolean}}
+  [DoubleValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-doublevalue): {{Number}}
+  [StringValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-stringvalue): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue-properties"></a>
 
-`BooleanValue`
+`BooleanValue`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-booleanvalue"></a>
+ The boolean value for true/false filtering conditions.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The boolean value for true/false filtering conditions.
+`DoubleValue`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-doublevalue"></a>
+ The numeric value for numerical filtering and comparisons.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DoubleValue`
-
-The numeric value for numerical filtering and comparisons.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringValue`
-
-The string value for text-based filtering.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Filter
-
-OutputConfig
+`StringValue`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-stringvalue"></a>
+ The string value for text-based filtering.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

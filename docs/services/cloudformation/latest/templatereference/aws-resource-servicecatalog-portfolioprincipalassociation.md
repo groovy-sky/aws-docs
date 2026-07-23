@@ -2,122 +2,92 @@
 title: "AWS::ServiceCatalog::PortfolioPrincipalAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::PortfolioPrincipalAssociation
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation"></a>
 
 Associates the specified principal ARN with the specified portfolio.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::PortfolioPrincipalAssociation",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "PortfolioId" : String,
-      "PrincipalARN" : String,
-      "PrincipalType" : String
+      "[AcceptLanguage](#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage)" : {{String}},
+      "[PortfolioId](#cfn-servicecatalog-portfolioprincipalassociation-portfolioid)" : {{String}},
+      "[PrincipalARN](#cfn-servicecatalog-portfolioprincipalassociation-principalarn)" : {{String}},
+      "[PrincipalType](#cfn-servicecatalog-portfolioprincipalassociation-principaltype)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::PortfolioPrincipalAssociation
 Properties:
-  AcceptLanguage: String
-  PortfolioId: String
-  PrincipalARN: String
-  PrincipalType: String
-
+  [AcceptLanguage](#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage): {{String}}
+  [PortfolioId](#cfn-servicecatalog-portfolioprincipalassociation-portfolioid): {{String}}
+  [PrincipalARN](#cfn-servicecatalog-portfolioprincipalassociation-principalarn): {{String}}
+  [PrincipalType](#cfn-servicecatalog-portfolioprincipalassociation-principaltype): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage"></a>
 The language code.
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `jp` \- Japanese
-
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PortfolioId`
-
+`PortfolioId`  <a name="cfn-servicecatalog-portfolioprincipalassociation-portfolioid"></a>
 The portfolio identifier.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrincipalARN`
-
+`PrincipalARN`  <a name="cfn-servicecatalog-portfolioprincipalassociation-principalarn"></a>
 The ARN of the principal (IAM user, role, or group).
+*Required*: No
+*Type*: String
+*Pattern*: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role|user|group)\/.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role|user|group)\/.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PrincipalType`
-
+`PrincipalType`  <a name="cfn-servicecatalog-portfolioprincipalassociation-principaltype"></a>
 The principal type. The supported values are `IAM` and `IAM_PATTERN`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `IAM | IAM_PATTERN`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `IAM | IAM_PATTERN`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a unique identifier for the association.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## See also
-
-- [AssociatePrincipalWithPortfolio](../../../servicecatalog/latest/dg/api-associateprincipalwithportfolio.md) in the _AWS Service Catalog_
-_API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::ServiceCatalog::PortfolioProductAssociation
+<a name="aws-resource-servicecatalog-portfolioprincipalassociation--seealso"></a>
++ [AssociatePrincipalWithPortfolio](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_AssociatePrincipalWithPortfolio.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

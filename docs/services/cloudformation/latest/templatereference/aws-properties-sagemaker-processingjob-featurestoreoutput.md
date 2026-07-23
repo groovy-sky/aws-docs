@@ -2,58 +2,43 @@
 title: "AWS::SageMaker::ProcessingJob FeatureStoreOutput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ProcessingJob FeatureStoreOutput
+<a name="aws-properties-sagemaker-processingjob-featurestoreoutput"></a>
 
 Configuration for processing job outputs in Amazon SageMaker Feature Store.
 
 ## Syntax
+<a name="aws-properties-sagemaker-processingjob-featurestoreoutput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-processingjob-featurestoreoutput-syntax.json"></a>
 
-```json
-
+```
 {
-  "FeatureGroupName" : String
+  "[FeatureGroupName](#cfn-sagemaker-processingjob-featurestoreoutput-featuregroupname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-processingjob-featurestoreoutput-syntax.yaml"></a>
 
-```yaml
-
-  FeatureGroupName: String
-
+```
+  [FeatureGroupName](#cfn-sagemaker-processingjob-featurestoreoutput-featuregroupname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-processingjob-featurestoreoutput-properties"></a>
 
-`FeatureGroupName`
-
-The name of the Amazon SageMaker FeatureGroup to use as the destination for processing job output.
-Note that your processing script is responsible for putting records into your Feature
-Store.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9]([_-]*[a-zA-Z0-9]){0,63}`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExperimentConfig
-
-NetworkConfig
+`FeatureGroupName`  <a name="cfn-sagemaker-processingjob-featurestoreoutput-featuregroupname"></a>
+The name of the Amazon SageMaker FeatureGroup to use as the destination for processing job output. Note that your processing script is responsible for putting records into your Feature Store.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9]([_-]*[a-zA-Z0-9]){0,63}`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,64 +2,49 @@
 title: "AWS::S3Outposts::Endpoint FailedReason"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Outposts::Endpoint FailedReason
+<a name="aws-properties-s3outposts-endpoint-failedreason"></a>
 
 The failure reason, if any, for a create or delete endpoint operation.
 
 ## Syntax
+<a name="aws-properties-s3outposts-endpoint-failedreason-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3outposts-endpoint-failedreason-syntax.json"></a>
 
-```json
-
+```
 {
-  "ErrorCode" : String,
-  "Message" : String
+  "[ErrorCode](#cfn-s3outposts-endpoint-failedreason-errorcode)" : {{String}},
+  "[Message](#cfn-s3outposts-endpoint-failedreason-message)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3outposts-endpoint-failedreason-syntax.yaml"></a>
 
-```yaml
-
-  ErrorCode: String
-  Message: String
-
+```
+  [ErrorCode](#cfn-s3outposts-endpoint-failedreason-errorcode): {{String}}
+  [Message](#cfn-s3outposts-endpoint-failedreason-message): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3outposts-endpoint-failedreason-properties"></a>
 
-`ErrorCode`
-
+`ErrorCode`  <a name="cfn-s3outposts-endpoint-failedreason-errorcode"></a>
 The failure code, if any, for a create or delete endpoint operation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Message`
-
+`Message`  <a name="cfn-s3outposts-endpoint-failedreason-message"></a>
 Additional error details describing the endpoint failure and recommended action.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::S3Outposts::Endpoint
-
-NetworkInterface
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

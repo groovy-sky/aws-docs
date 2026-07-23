@@ -2,54 +2,42 @@
 title: "AWS::Batch::QuotaShare QuotaSharePreemptionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::QuotaShare QuotaSharePreemptionConfiguration
+<a name="aws-properties-batch-quotashare-quotasharepreemptionconfiguration"></a>
 
 Specifies the preemption behavior for jobs in a quota share.
 
 ## Syntax
+<a name="aws-properties-batch-quotashare-quotasharepreemptionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-quotashare-quotasharepreemptionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InSharePreemption" : String
+  "[InSharePreemption](#cfn-batch-quotashare-quotasharepreemptionconfiguration-insharepreemption)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-quotashare-quotasharepreemptionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InSharePreemption: String
-
+```
+  [InSharePreemption](#cfn-batch-quotashare-quotasharepreemptionconfiguration-insharepreemption): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-quotashare-quotasharepreemptionconfiguration-properties"></a>
 
-`InSharePreemption`
-
+`InSharePreemption`  <a name="cfn-batch-quotashare-quotasharepreemptionconfiguration-insharepreemption"></a>
 Specifies whether jobs within a quota share can be preempted by another, higher priority job in the same quota share.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-QuotaShareCapacityLimit
-
-QuotaShareResourceSharingConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

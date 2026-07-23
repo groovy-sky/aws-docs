@@ -2,72 +2,53 @@
 title: "AWS::FinSpace::Environment Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FinSpace::Environment Tag
+<a name="aws-properties-finspace-environment-tag"></a>
 
-The `Tag` property type specifies Property description not available. for an [AWS::FinSpace::Environment](aws-resource-finspace-environment.md).
+<a name="aws-properties-finspace-environment-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::FinSpace::Environment](aws-resource-finspace-environment.md).
 
 ## Syntax
+<a name="aws-properties-finspace-environment-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-finspace-environment-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-finspace-environment-tag-key)" : {{String}},
+  "[Value](#cfn-finspace-environment-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-finspace-environment-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-finspace-environment-tag-key): {{String}}
+  [Value](#cfn-finspace-environment-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-finspace-environment-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-finspace-environment-tag-key"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-finspace-environment-tag-value"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SuperuserParameters
-
-Next
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,182 +2,125 @@
 title: "AWS::QuickSight::Template DataLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DataLabelOptions
+<a name="aws-properties-quicksight-template-datalabeloptions"></a>
 
 The options that determine the presentation of the data labels.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-datalabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-datalabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryLabelVisibility" : String,
-  "DataLabelTypes" : [ DataLabelType, ... ],
-  "LabelColor" : String,
-  "LabelContent" : String,
-  "LabelFontConfiguration" : FontConfiguration,
-  "MeasureLabelVisibility" : String,
-  "Overlap" : String,
-  "Position" : String,
-  "TotalsVisibility" : String,
-  "Visibility" : String
+  "[CategoryLabelVisibility](#cfn-quicksight-template-datalabeloptions-categorylabelvisibility)" : {{String}},
+  "[DataLabelTypes](#cfn-quicksight-template-datalabeloptions-datalabeltypes)" : {{[ DataLabelType, ... ]}},
+  "[LabelColor](#cfn-quicksight-template-datalabeloptions-labelcolor)" : {{String}},
+  "[LabelContent](#cfn-quicksight-template-datalabeloptions-labelcontent)" : {{String}},
+  "[LabelFontConfiguration](#cfn-quicksight-template-datalabeloptions-labelfontconfiguration)" : {{FontConfiguration}},
+  "[MeasureLabelVisibility](#cfn-quicksight-template-datalabeloptions-measurelabelvisibility)" : {{String}},
+  "[Overlap](#cfn-quicksight-template-datalabeloptions-overlap)" : {{String}},
+  "[Position](#cfn-quicksight-template-datalabeloptions-position)" : {{String}},
+  "[TotalsVisibility](#cfn-quicksight-template-datalabeloptions-totalsvisibility)" : {{String}},
+  "[Visibility](#cfn-quicksight-template-datalabeloptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-datalabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  CategoryLabelVisibility: String
-  DataLabelTypes:
-    - DataLabelType
-  LabelColor: String
-  LabelContent: String
-  LabelFontConfiguration:
-    FontConfiguration
-  MeasureLabelVisibility: String
-  Overlap: String
-  Position: String
-  TotalsVisibility: String
-  Visibility: String
-
+```
+  [CategoryLabelVisibility](#cfn-quicksight-template-datalabeloptions-categorylabelvisibility): {{String}}
+  [DataLabelTypes](#cfn-quicksight-template-datalabeloptions-datalabeltypes): {{
+    - DataLabelType}}
+  [LabelColor](#cfn-quicksight-template-datalabeloptions-labelcolor): {{String}}
+  [LabelContent](#cfn-quicksight-template-datalabeloptions-labelcontent): {{String}}
+  [LabelFontConfiguration](#cfn-quicksight-template-datalabeloptions-labelfontconfiguration): {{
+    FontConfiguration}}
+  [MeasureLabelVisibility](#cfn-quicksight-template-datalabeloptions-measurelabelvisibility): {{String}}
+  [Overlap](#cfn-quicksight-template-datalabeloptions-overlap): {{String}}
+  [Position](#cfn-quicksight-template-datalabeloptions-position): {{String}}
+  [TotalsVisibility](#cfn-quicksight-template-datalabeloptions-totalsvisibility): {{String}}
+  [Visibility](#cfn-quicksight-template-datalabeloptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-datalabeloptions-properties"></a>
 
-`CategoryLabelVisibility`
-
+`CategoryLabelVisibility`  <a name="cfn-quicksight-template-datalabeloptions-categorylabelvisibility"></a>
 Determines the visibility of the category field labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataLabelTypes`
-
+`DataLabelTypes`  <a name="cfn-quicksight-template-datalabeloptions-datalabeltypes"></a>
 The option that determines the data label type.
+*Required*: No
+*Type*: Array of [DataLabelType](aws-properties-quicksight-template-datalabeltype.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DataLabelType](aws-properties-quicksight-template-datalabeltype.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LabelColor`
-
+`LabelColor`  <a name="cfn-quicksight-template-datalabeloptions-labelcolor"></a>
 Determines the color of the data labels.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LabelContent`
-
+`LabelContent`  <a name="cfn-quicksight-template-datalabeloptions-labelcontent"></a>
 Determines the content of the data labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `VALUE | PERCENT | VALUE_AND_PERCENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `VALUE | PERCENT | VALUE_AND_PERCENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LabelFontConfiguration`
-
+`LabelFontConfiguration`  <a name="cfn-quicksight-template-datalabeloptions-labelfontconfiguration"></a>
 Determines the font configuration of the data labels.
+*Required*: No
+*Type*: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureLabelVisibility`
-
+`MeasureLabelVisibility`  <a name="cfn-quicksight-template-datalabeloptions-measurelabelvisibility"></a>
 Determines the visibility of the measure field labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Overlap`
-
+`Overlap`  <a name="cfn-quicksight-template-datalabeloptions-overlap"></a>
 Determines whether overlap is enabled or disabled for the data labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `DISABLE_OVERLAP | ENABLE_OVERLAP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DISABLE_OVERLAP | ENABLE_OVERLAP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
+`Position`  <a name="cfn-quicksight-template-datalabeloptions-position"></a>
 Determines the position of the data labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `INSIDE | OUTSIDE | LEFT | TOP | BOTTOM | RIGHT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INSIDE | OUTSIDE | LEFT | TOP | BOTTOM | RIGHT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TotalsVisibility`
-
+`TotalsVisibility`  <a name="cfn-quicksight-template-datalabeloptions-totalsvisibility"></a>
 Determines the visibility of the total.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-template-datalabeloptions-visibility"></a>
 Determines the visibility of the data labels.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataFieldSeriesItem
-
-DataLabelType
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

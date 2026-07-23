@@ -2,11 +2,10 @@
 title: "AWS::WAFv2::RuleGroup HeaderMatchPattern"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup HeaderMatchPattern
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern"></a>
 
 The filter to use to identify the subset of headers to inspect in a web request.
 
@@ -15,109 +14,95 @@ You must specify exactly one setting: either `All`, `IncludedHeaders`, or `Exclu
 Example JSON: `"MatchPattern": { "ExcludedHeaders": [ "KeyToExclude1", "KeyToExclude2" ] }`
 
 ## Syntax
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern-syntax.json"></a>
 
-```json
-
+```
 {
-  "All" : Json,
-  "ExcludedHeaders" : [ String, ... ],
-  "IncludedHeaders" : [ String, ... ]
+  "[All](#cfn-wafv2-rulegroup-headermatchpattern-all)" : {{Json}},
+  "[ExcludedHeaders](#cfn-wafv2-rulegroup-headermatchpattern-excludedheaders)" : {{[ String, ... ]}},
+  "[IncludedHeaders](#cfn-wafv2-rulegroup-headermatchpattern-includedheaders)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern-syntax.yaml"></a>
 
-```yaml
-
-  All: Json
-  ExcludedHeaders:
-    - String
-  IncludedHeaders:
-    - String
-
+```
+  [All](#cfn-wafv2-rulegroup-headermatchpattern-all): {{Json}}
+  [ExcludedHeaders](#cfn-wafv2-rulegroup-headermatchpattern-excludedheaders): {{
+    - String}}
+  [IncludedHeaders](#cfn-wafv2-rulegroup-headermatchpattern-includedheaders): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern-properties"></a>
 
-`All`
-
+`All`  <a name="cfn-wafv2-rulegroup-headermatchpattern-all"></a>
 Inspect all headers.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludedHeaders`
-
+`ExcludedHeaders`  <a name="cfn-wafv2-rulegroup-headermatchpattern-excludedheaders"></a>
 Inspect only the headers whose keys don't match any of the strings specified here.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `64 | 199`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `64 | 199`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludedHeaders`
-
+`IncludedHeaders`  <a name="cfn-wafv2-rulegroup-headermatchpattern-includedheaders"></a>
 Inspect only the headers that have a key that matches one of the strings specified here.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 1`
-
-_Maximum_: `64 | 199`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `64 | 199`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples"></a>
 
-- [Set a header match pattern for all paths](#aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths)
-
-- [Set a header match pattern with included paths](#aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths)
+**Topics**
++ [Set a header match pattern for all paths](#aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths)
++ [Set a header match pattern with included paths](#aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths)
 
 ### Set a header match pattern for all paths
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths"></a>
 
 The following shows an example header match pattern specification for all headers.
 
 #### YAML
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths--yaml"></a>
 
-```yaml
-
+```
 MatchPattern:
   All: {}
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths--json"></a>
 
-```json
-
+```
 "MatchPattern": {
   "All": {}
 }
 ```
 
 ### Set a header match pattern with included paths
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths"></a>
 
-The following shows an example header match pattern specification with included
-keys.
+The following shows an example header match pattern specification with included keys.
 
 #### YAML
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths--yaml"></a>
 
-```yaml
-
+```
 MatchPattern:
   IncludedHeaders:
       - "User-Agent"
@@ -125,9 +110,9 @@ MatchPattern:
 ```
 
 #### JSON
+<a name="aws-properties-wafv2-rulegroup-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths--json"></a>
 
-```json
-
+```
 "MatchPattern": {
   "IncludedHeaders": [
     "User-Agent",
@@ -135,11 +120,5 @@ MatchPattern:
   ]
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeoMatchStatement
-
-HeaderOrder
 
 All content copied from https://docs.aws.amazon.com/.

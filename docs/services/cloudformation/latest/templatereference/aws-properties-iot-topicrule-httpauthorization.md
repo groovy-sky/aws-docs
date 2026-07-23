@@ -2,54 +2,42 @@
 title: "AWS::IoT::TopicRule HttpAuthorization"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule HttpAuthorization
+<a name="aws-properties-iot-topicrule-httpauthorization"></a>
 
 The authorization method used to send messages.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-httpauthorization-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-httpauthorization-syntax.json"></a>
 
-```json
-
+```
 {
-  "Sigv4" : SigV4Authorization
+  "[Sigv4](#cfn-iot-topicrule-httpauthorization-sigv4)" : {{SigV4Authorization}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-httpauthorization-syntax.yaml"></a>
 
-```yaml
-
-  Sigv4:
-    SigV4Authorization
-
+```
+  [Sigv4](#cfn-iot-topicrule-httpauthorization-sigv4): {{
+    SigV4Authorization}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-httpauthorization-properties"></a>
 
-`Sigv4`
-
-Use Sig V4 authorization. For more information, see [Signature Version 4 Signing\
-Process](../../../../general/latest/gr/signature-version-4.md).
-
-_Required_: No
-
-_Type_: [SigV4Authorization](aws-properties-iot-topicrule-sigv4authorization.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HttpActionHeader
-
-IotAnalyticsAction
+`Sigv4`  <a name="cfn-iot-topicrule-httpauthorization-sigv4"></a>
+Use Sig V4 authorization. For more information, see [Signature Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
+*Required*: No
+*Type*: [SigV4Authorization](aws-properties-iot-topicrule-sigv4authorization.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

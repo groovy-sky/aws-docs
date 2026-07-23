@@ -2,64 +2,49 @@
 title: "AWS::SecretsManager::Secret ReplicaRegion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecretsManager::Secret ReplicaRegion
+<a name="aws-properties-secretsmanager-secret-replicaregion"></a>
 
 Specifies a `Region` and the `KmsKeyId` for a replica secret.
 
 ## Syntax
+<a name="aws-properties-secretsmanager-secret-replicaregion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-secretsmanager-secret-replicaregion-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String,
-  "Region" : String
+  "[KmsKeyId](#cfn-secretsmanager-secret-replicaregion-kmskeyid)" : {{String}},
+  "[Region](#cfn-secretsmanager-secret-replicaregion-region)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-secretsmanager-secret-replicaregion-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-  Region: String
-
+```
+  [KmsKeyId](#cfn-secretsmanager-secret-replicaregion-kmskeyid): {{String}}
+  [Region](#cfn-secretsmanager-secret-replicaregion-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-secretsmanager-secret-replicaregion-properties"></a>
 
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-secretsmanager-secret-replicaregion-kmskeyid"></a>
 The ARN, key ID, or alias of the KMS key to encrypt the secret. If you don't include this field, Secrets Manager uses `aws/secretsmanager`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
+`Region`  <a name="cfn-secretsmanager-secret-replicaregion-region"></a>
 A string that represents a `Region`, for example "us-east-1".
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GenerateSecretString
-
-Tag
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

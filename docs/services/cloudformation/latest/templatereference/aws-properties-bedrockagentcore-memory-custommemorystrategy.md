@@ -2,177 +2,132 @@
 title: "AWS::BedrockAgentCore::Memory CustomMemoryStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory CustomMemoryStrategy
+<a name="aws-properties-bedrockagentcore-memory-custommemorystrategy"></a>
 
 The memory strategy.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-custommemorystrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-custommemorystrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "Configuration" : CustomConfigurationInput,
-  "CreatedAt" : String,
-  "Description" : String,
-  "Name" : String,
-  "Namespaces" : [ String, ... ],
-  "NamespaceTemplates" : [ String, ... ],
-  "Status" : String,
-  "StrategyId" : String,
-  "Type" : String,
-  "UpdatedAt" : String
+  "[Configuration](#cfn-bedrockagentcore-memory-custommemorystrategy-configuration)" : {{CustomConfigurationInput}},
+  "[CreatedAt](#cfn-bedrockagentcore-memory-custommemorystrategy-createdat)" : {{String}},
+  "[Description](#cfn-bedrockagentcore-memory-custommemorystrategy-description)" : {{String}},
+  "[MemoryRecordSchema](#cfn-bedrockagentcore-memory-custommemorystrategy-memoryrecordschema)" : {{MemoryRecordSchema}},
+  "[Name](#cfn-bedrockagentcore-memory-custommemorystrategy-name)" : {{String}},
+  "[Namespaces](#cfn-bedrockagentcore-memory-custommemorystrategy-namespaces)" : {{[ String, ... ]}},
+  "[NamespaceTemplates](#cfn-bedrockagentcore-memory-custommemorystrategy-namespacetemplates)" : {{[ String, ... ]}},
+  "[Status](#cfn-bedrockagentcore-memory-custommemorystrategy-status)" : {{String}},
+  "[StrategyId](#cfn-bedrockagentcore-memory-custommemorystrategy-strategyid)" : {{String}},
+  "[Type](#cfn-bedrockagentcore-memory-custommemorystrategy-type)" : {{String}},
+  "[UpdatedAt](#cfn-bedrockagentcore-memory-custommemorystrategy-updatedat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-custommemorystrategy-syntax.yaml"></a>
 
-```yaml
-
-  Configuration:
-    CustomConfigurationInput
-  CreatedAt: String
-  Description: String
-  Name: String
-  Namespaces:
-    - String
-  NamespaceTemplates:
-    - String
-  Status: String
-  StrategyId: String
-  Type: String
-  UpdatedAt: String
-
+```
+  [Configuration](#cfn-bedrockagentcore-memory-custommemorystrategy-configuration): {{
+    CustomConfigurationInput}}
+  [CreatedAt](#cfn-bedrockagentcore-memory-custommemorystrategy-createdat): {{String}}
+  [Description](#cfn-bedrockagentcore-memory-custommemorystrategy-description): {{String}}
+  [MemoryRecordSchema](#cfn-bedrockagentcore-memory-custommemorystrategy-memoryrecordschema): {{
+    MemoryRecordSchema}}
+  [Name](#cfn-bedrockagentcore-memory-custommemorystrategy-name): {{String}}
+  [Namespaces](#cfn-bedrockagentcore-memory-custommemorystrategy-namespaces): {{
+    - String}}
+  [NamespaceTemplates](#cfn-bedrockagentcore-memory-custommemorystrategy-namespacetemplates): {{
+    - String}}
+  [Status](#cfn-bedrockagentcore-memory-custommemorystrategy-status): {{String}}
+  [StrategyId](#cfn-bedrockagentcore-memory-custommemorystrategy-strategyid): {{String}}
+  [Type](#cfn-bedrockagentcore-memory-custommemorystrategy-type): {{String}}
+  [UpdatedAt](#cfn-bedrockagentcore-memory-custommemorystrategy-updatedat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-custommemorystrategy-properties"></a>
 
-`Configuration`
-
+`Configuration`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-configuration"></a>
 The memory strategy configuration.
+*Required*: No
+*Type*: [CustomConfigurationInput](aws-properties-bedrockagentcore-memory-customconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomConfigurationInput](aws-properties-bedrockagentcore-memory-customconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CreatedAt`
-
+`CreatedAt`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-createdat"></a>
 The memory strategy creation date and time.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-description"></a>
 The memory strategy description.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MemoryRecordSchema`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-memoryrecordschema"></a>
+Schema for metadata fields on records generated by this strategy.
+*Required*: No
+*Type*: [MemoryRecordSchema](aws-properties-bedrockagentcore-memory-memoryrecordschema.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-name"></a>
 The memory strategy name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespaces`
-
+`Namespaces`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-namespaces"></a>
 The memory strategy namespaces.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`NamespaceTemplates`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-namespacetemplates"></a>
+The namespaceTemplates associated with the custom memory strategy.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NamespaceTemplates`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-status"></a>
 The memory strategy status.
+*Required*: No
+*Type*: String
+*Allowed values*: `CREATING | ACTIVE | DELETING | FAILED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CREATING | ACTIVE | DELETING | FAILED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StrategyId`
-
+`StrategyId`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-strategyid"></a>
 The memory strategy ID.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$`
+*Minimum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$`
-
-_Minimum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-type"></a>
 The memory strategy type.
+*Required*: No
+*Type*: String
+*Allowed values*: `SEMANTIC | SUMMARIZATION | USER_PREFERENCE | CUSTOM | EPISODIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SEMANTIC | SUMMARIZATION | USER_PREFERENCE | CUSTOM | EPISODIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdatedAt`
-
+`UpdatedAt`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-updatedat"></a>
 The memory strategy update date and time.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomConfigurationInput
-
-EpisodicMemoryStrategy
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

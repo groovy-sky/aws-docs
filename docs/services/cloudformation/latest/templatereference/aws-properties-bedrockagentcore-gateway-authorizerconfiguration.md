@@ -2,53 +2,42 @@
 title: "AWS::BedrockAgentCore::Gateway AuthorizerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway AuthorizerConfiguration
+<a name="aws-properties-bedrockagentcore-gateway-authorizerconfiguration"></a>
 
 Represents inbound authorization configuration options used to authenticate incoming requests.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gateway-authorizerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gateway-authorizerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomJWTAuthorizer" : CustomJWTAuthorizerConfiguration
+  "[CustomJWTAuthorizer](#cfn-bedrockagentcore-gateway-authorizerconfiguration-customjwtauthorizer)" : {{CustomJWTAuthorizerConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gateway-authorizerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomJWTAuthorizer:
-    CustomJWTAuthorizerConfiguration
-
+```
+  [CustomJWTAuthorizer](#cfn-bedrockagentcore-gateway-authorizerconfiguration-customjwtauthorizer): {{
+    CustomJWTAuthorizerConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gateway-authorizerconfiguration-properties"></a>
 
-`CustomJWTAuthorizer`
-
+`CustomJWTAuthorizer`  <a name="cfn-bedrockagentcore-gateway-authorizerconfiguration-customjwtauthorizer"></a>
 The inbound JWT-based authorization, specifying how incoming requests should be authenticated.
-
-_Required_: Yes
-
-_Type_: [CustomJWTAuthorizerConfiguration](aws-properties-bedrockagentcore-gateway-customjwtauthorizerconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::BedrockAgentCore::Gateway
-
-AuthorizingClaimMatchValueType
+*Required*: Yes
+*Type*: [CustomJWTAuthorizerConfiguration](aws-properties-bedrockagentcore-gateway-customjwtauthorizerconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

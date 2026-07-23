@@ -2,122 +2,91 @@
 title: "AWS::Connect::Rule SendNotificationAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule SendNotificationAction
+<a name="aws-properties-connect-rule-sendnotificationaction"></a>
 
 Information about the send notification action.
 
 ## Syntax
+<a name="aws-properties-connect-rule-sendnotificationaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-rule-sendnotificationaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Content" : String,
-  "ContentType" : String,
-  "DeliveryMethod" : String,
-  "Recipient" : NotificationRecipientType,
-  "Subject" : String
+  "[Content](#cfn-connect-rule-sendnotificationaction-content)" : {{String}},
+  "[ContentType](#cfn-connect-rule-sendnotificationaction-contenttype)" : {{String}},
+  "[DeliveryMethod](#cfn-connect-rule-sendnotificationaction-deliverymethod)" : {{String}},
+  "[Exclusion](#cfn-connect-rule-sendnotificationaction-exclusion)" : {{NotificationRecipientType}},
+  "[Recipient](#cfn-connect-rule-sendnotificationaction-recipient)" : {{NotificationRecipientType}},
+  "[Subject](#cfn-connect-rule-sendnotificationaction-subject)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-rule-sendnotificationaction-syntax.yaml"></a>
 
-```yaml
-
-  Content: String
-  ContentType: String
-  DeliveryMethod: String
-  Recipient:
-    NotificationRecipientType
-  Subject: String
-
+```
+  [Content](#cfn-connect-rule-sendnotificationaction-content): {{String}}
+  [ContentType](#cfn-connect-rule-sendnotificationaction-contenttype): {{String}}
+  [DeliveryMethod](#cfn-connect-rule-sendnotificationaction-deliverymethod): {{String}}
+  [Exclusion](#cfn-connect-rule-sendnotificationaction-exclusion): {{
+    NotificationRecipientType}}
+  [Recipient](#cfn-connect-rule-sendnotificationaction-recipient): {{
+    NotificationRecipientType}}
+  [Subject](#cfn-connect-rule-sendnotificationaction-subject): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-rule-sendnotificationaction-properties"></a>
 
-`Content`
+`Content`  <a name="cfn-connect-rule-sendnotificationaction-content"></a>
+Notification content. Supports variable injection. For more information, see [JSONPath reference](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-variable-injection.html) in the *Connect Customer Administrators Guide*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Notification content. Supports variable injection. For more information, see [JSONPath\
-reference](../../../connect/latest/adminguide/contact-lens-variable-injection.md) in the _Amazon Connect Administrators_
-_Guide_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContentType`
-
+`ContentType`  <a name="cfn-connect-rule-sendnotificationaction-contenttype"></a>
 Content type format.
+*Allowed value*: `PLAIN_TEXT`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PLAIN_TEXT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed value_: `PLAIN_TEXT`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PLAIN_TEXT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeliveryMethod`
-
+`DeliveryMethod`  <a name="cfn-connect-rule-sendnotificationaction-deliverymethod"></a>
 Notification delivery method.
+*Allowed value*: `EMAIL`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Allowed value_: `EMAIL`
+`Exclusion`  <a name="cfn-connect-rule-sendnotificationaction-exclusion"></a>
+Property description not available.
+*Required*: No
+*Type*: [NotificationRecipientType](aws-properties-connect-rule-notificationrecipienttype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Recipient`
-
+`Recipient`  <a name="cfn-connect-rule-sendnotificationaction-recipient"></a>
 Notification recipient.
+*Required*: Yes
+*Type*: [NotificationRecipientType](aws-properties-connect-rule-notificationrecipienttype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [NotificationRecipientType](aws-properties-connect-rule-notificationrecipienttype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subject`
-
-The subject of the email if the delivery method is `EMAIL`. Supports
-variable injection. For more information, see [JSONPath\
-reference](../../../connect/latest/adminguide/contact-lens-variable-injection.md) in the _Amazon Connect Administrators_
-_Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RuleTriggerEventSource
-
-SubmitAutoEvaluationAction
+`Subject`  <a name="cfn-connect-rule-sendnotificationaction-subject"></a>
+The subject of the email if the delivery method is `EMAIL`. Supports variable injection. For more information, see [JSONPath reference](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-variable-injection.html) in the *Connect Customer Administrators Guide*.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

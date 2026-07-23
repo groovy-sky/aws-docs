@@ -2,55 +2,43 @@
 title: "AWS::Wisdom::AIGuardrail AIGuardrailTopicPolicyConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIGuardrail AIGuardrailTopicPolicyConfig
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailtopicpolicyconfig"></a>
 
 Topic policy configuration for a guardrail.
 
 ## Syntax
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "TopicsConfig" : [ GuardrailTopicConfig, ... ]
+  "[TopicsConfig](#cfn-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-topicsconfig)" : {{[ GuardrailTopicConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-syntax.yaml"></a>
 
-```yaml
-
-  TopicsConfig:
-    - GuardrailTopicConfig
-
+```
+  [TopicsConfig](#cfn-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-topicsconfig): {{
+    - GuardrailTopicConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-properties"></a>
 
-`TopicsConfig`
-
+`TopicsConfig`  <a name="cfn-wisdom-aiguardrail-aiguardrailtopicpolicyconfig-topicsconfig"></a>
 List of topic configs in topic policy.
-
-_Required_: Yes
-
-_Type_: Array of [GuardrailTopicConfig](aws-properties-wisdom-aiguardrail-guardrailtopicconfig.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AIGuardrailSensitiveInformationPolicyConfig
-
-AIGuardrailWordPolicyConfig
+*Required*: Yes
+*Type*: Array of [GuardrailTopicConfig](aws-properties-wisdom-aiguardrail-guardrailtopicconfig.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

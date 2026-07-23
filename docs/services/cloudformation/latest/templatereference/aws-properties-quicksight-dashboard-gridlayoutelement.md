@@ -2,220 +2,149 @@
 title: "AWS::QuickSight::Dashboard GridLayoutElement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GridLayoutElement
+<a name="aws-properties-quicksight-dashboard-gridlayoutelement"></a>
 
 An element within a grid layout.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-gridlayoutelement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-gridlayoutelement-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackgroundStyle" : GridLayoutElementBackgroundStyle,
-  "BorderRadius" : String,
-  "BorderStyle" : GridLayoutElementBorderStyle,
-  "ColumnIndex" : Number,
-  "ColumnSpan" : Number,
-  "ElementId" : String,
-  "ElementType" : String,
-  "LoadingAnimation" : LoadingAnimation,
-  "Padding" : String,
-  "RowIndex" : Number,
-  "RowSpan" : Number,
-  "SelectedBorderStyle" : GridLayoutElementBorderStyle
+  "[BackgroundStyle](#cfn-quicksight-dashboard-gridlayoutelement-backgroundstyle)" : {{GridLayoutElementBackgroundStyle}},
+  "[BorderRadius](#cfn-quicksight-dashboard-gridlayoutelement-borderradius)" : {{String}},
+  "[BorderStyle](#cfn-quicksight-dashboard-gridlayoutelement-borderstyle)" : {{GridLayoutElementBorderStyle}},
+  "[ColumnIndex](#cfn-quicksight-dashboard-gridlayoutelement-columnindex)" : {{Number}},
+  "[ColumnSpan](#cfn-quicksight-dashboard-gridlayoutelement-columnspan)" : {{Number}},
+  "[ElementId](#cfn-quicksight-dashboard-gridlayoutelement-elementid)" : {{String}},
+  "[ElementType](#cfn-quicksight-dashboard-gridlayoutelement-elementtype)" : {{String}},
+  "[LoadingAnimation](#cfn-quicksight-dashboard-gridlayoutelement-loadinganimation)" : {{LoadingAnimation}},
+  "[Padding](#cfn-quicksight-dashboard-gridlayoutelement-padding)" : {{String}},
+  "[RowIndex](#cfn-quicksight-dashboard-gridlayoutelement-rowindex)" : {{Number}},
+  "[RowSpan](#cfn-quicksight-dashboard-gridlayoutelement-rowspan)" : {{Number}},
+  "[SelectedBorderStyle](#cfn-quicksight-dashboard-gridlayoutelement-selectedborderstyle)" : {{GridLayoutElementBorderStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-gridlayoutelement-syntax.yaml"></a>
 
-```yaml
-
-  BackgroundStyle:
-    GridLayoutElementBackgroundStyle
-  BorderRadius: String
-  BorderStyle:
-    GridLayoutElementBorderStyle
-  ColumnIndex: Number
-  ColumnSpan: Number
-  ElementId: String
-  ElementType: String
-  LoadingAnimation:
-    LoadingAnimation
-  Padding: String
-  RowIndex: Number
-  RowSpan: Number
-  SelectedBorderStyle:
-    GridLayoutElementBorderStyle
-
+```
+  [BackgroundStyle](#cfn-quicksight-dashboard-gridlayoutelement-backgroundstyle): {{
+    GridLayoutElementBackgroundStyle}}
+  [BorderRadius](#cfn-quicksight-dashboard-gridlayoutelement-borderradius): {{String}}
+  [BorderStyle](#cfn-quicksight-dashboard-gridlayoutelement-borderstyle): {{
+    GridLayoutElementBorderStyle}}
+  [ColumnIndex](#cfn-quicksight-dashboard-gridlayoutelement-columnindex): {{Number}}
+  [ColumnSpan](#cfn-quicksight-dashboard-gridlayoutelement-columnspan): {{Number}}
+  [ElementId](#cfn-quicksight-dashboard-gridlayoutelement-elementid): {{String}}
+  [ElementType](#cfn-quicksight-dashboard-gridlayoutelement-elementtype): {{String}}
+  [LoadingAnimation](#cfn-quicksight-dashboard-gridlayoutelement-loadinganimation): {{
+    LoadingAnimation}}
+  [Padding](#cfn-quicksight-dashboard-gridlayoutelement-padding): {{String}}
+  [RowIndex](#cfn-quicksight-dashboard-gridlayoutelement-rowindex): {{Number}}
+  [RowSpan](#cfn-quicksight-dashboard-gridlayoutelement-rowspan): {{Number}}
+  [SelectedBorderStyle](#cfn-quicksight-dashboard-gridlayoutelement-selectedborderstyle): {{
+    GridLayoutElementBorderStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-gridlayoutelement-properties"></a>
 
-`BackgroundStyle`
-
+`BackgroundStyle`  <a name="cfn-quicksight-dashboard-gridlayoutelement-backgroundstyle"></a>
 The background style configuration of a grid layout element.
+*Required*: No
+*Type*: [GridLayoutElementBackgroundStyle](aws-properties-quicksight-dashboard-gridlayoutelementbackgroundstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GridLayoutElementBackgroundStyle](aws-properties-quicksight-dashboard-gridlayoutelementbackgroundstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BorderRadius`
-
+`BorderRadius`  <a name="cfn-quicksight-dashboard-gridlayoutelement-borderradius"></a>
 The border radius of a grid layout element.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BorderStyle`
-
+`BorderStyle`  <a name="cfn-quicksight-dashboard-gridlayoutelement-borderstyle"></a>
 The border style configuration of a grid layout element.
+*Required*: No
+*Type*: [GridLayoutElementBorderStyle](aws-properties-quicksight-dashboard-gridlayoutelementborderstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GridLayoutElementBorderStyle](aws-properties-quicksight-dashboard-gridlayoutelementborderstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnIndex`
-
+`ColumnIndex`  <a name="cfn-quicksight-dashboard-gridlayoutelement-columnindex"></a>
 The column index for the upper left corner of an element.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `35`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `35`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnSpan`
-
+`ColumnSpan`  <a name="cfn-quicksight-dashboard-gridlayoutelement-columnspan"></a>
 The width of a grid element expressed as a number of grid columns.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `36`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `36`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElementId`
-
+`ElementId`  <a name="cfn-quicksight-dashboard-gridlayoutelement-elementid"></a>
 A unique identifier for an element within a grid layout.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ElementType`
-
+`ElementType`  <a name="cfn-quicksight-dashboard-gridlayoutelement-elementtype"></a>
 The type of element.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VISUAL | FILTER_CONTROL | PARAMETER_CONTROL | TEXT_BOX | IMAGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VISUAL | FILTER_CONTROL | PARAMETER_CONTROL | TEXT_BOX | IMAGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LoadingAnimation`
-
+`LoadingAnimation`  <a name="cfn-quicksight-dashboard-gridlayoutelement-loadinganimation"></a>
 The configuration of loading animation in free-form layout.
+*Required*: No
+*Type*: [LoadingAnimation](aws-properties-quicksight-dashboard-loadinganimation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LoadingAnimation](aws-properties-quicksight-dashboard-loadinganimation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Padding`
-
+`Padding`  <a name="cfn-quicksight-dashboard-gridlayoutelement-padding"></a>
 The padding of a grid layout element.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowIndex`
-
+`RowIndex`  <a name="cfn-quicksight-dashboard-gridlayoutelement-rowindex"></a>
 The row index for the upper left corner of an element.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `9009`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `9009`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RowSpan`
-
+`RowSpan`  <a name="cfn-quicksight-dashboard-gridlayoutelement-rowspan"></a>
 The height of a grid element expressed as a number of grid rows.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `21`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `21`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedBorderStyle`
-
+`SelectedBorderStyle`  <a name="cfn-quicksight-dashboard-gridlayoutelement-selectedborderstyle"></a>
 The border style configuration of a grid layout element. This border style is used when the element is selected.
-
-_Required_: No
-
-_Type_: [GridLayoutElementBorderStyle](aws-properties-quicksight-dashboard-gridlayoutelementborderstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GridLayoutConfiguration
-
-GridLayoutElementBackgroundStyle
+*Required*: No
+*Type*: [GridLayoutElementBorderStyle](aws-properties-quicksight-dashboard-gridlayoutelementborderstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

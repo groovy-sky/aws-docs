@@ -2,115 +2,82 @@
 title: "AWS::QuickSight::Template StringParameterDeclaration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template StringParameterDeclaration
+<a name="aws-properties-quicksight-template-stringparameterdeclaration"></a>
 
 A parameter declaration for the `String` data type.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-stringparameterdeclaration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-stringparameterdeclaration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValues" : StringDefaultValues,
-  "MappedDataSetParameters" : [ MappedDataSetParameter, ... ],
-  "Name" : String,
-  "ParameterValueType" : String,
-  "ValueWhenUnset" : StringValueWhenUnsetConfiguration
+  "[DefaultValues](#cfn-quicksight-template-stringparameterdeclaration-defaultvalues)" : {{StringDefaultValues}},
+  "[MappedDataSetParameters](#cfn-quicksight-template-stringparameterdeclaration-mappeddatasetparameters)" : {{[ MappedDataSetParameter, ... ]}},
+  "[Name](#cfn-quicksight-template-stringparameterdeclaration-name)" : {{String}},
+  "[ParameterValueType](#cfn-quicksight-template-stringparameterdeclaration-parametervaluetype)" : {{String}},
+  "[ValueWhenUnset](#cfn-quicksight-template-stringparameterdeclaration-valuewhenunset)" : {{StringValueWhenUnsetConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-stringparameterdeclaration-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValues:
-    StringDefaultValues
-  MappedDataSetParameters:
-    - MappedDataSetParameter
-  Name: String
-  ParameterValueType: String
-  ValueWhenUnset:
-    StringValueWhenUnsetConfiguration
-
+```
+  [DefaultValues](#cfn-quicksight-template-stringparameterdeclaration-defaultvalues): {{
+    StringDefaultValues}}
+  [MappedDataSetParameters](#cfn-quicksight-template-stringparameterdeclaration-mappeddatasetparameters): {{
+    - MappedDataSetParameter}}
+  [Name](#cfn-quicksight-template-stringparameterdeclaration-name): {{String}}
+  [ParameterValueType](#cfn-quicksight-template-stringparameterdeclaration-parametervaluetype): {{String}}
+  [ValueWhenUnset](#cfn-quicksight-template-stringparameterdeclaration-valuewhenunset): {{
+    StringValueWhenUnsetConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-stringparameterdeclaration-properties"></a>
 
-`DefaultValues`
-
+`DefaultValues`  <a name="cfn-quicksight-template-stringparameterdeclaration-defaultvalues"></a>
 The default values of a parameter. If the parameter is a single-value parameter, a maximum of one default value can be provided.
+*Required*: No
+*Type*: [StringDefaultValues](aws-properties-quicksight-template-stringdefaultvalues.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [StringDefaultValues](aws-properties-quicksight-template-stringdefaultvalues.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MappedDataSetParameters`
-
+`MappedDataSetParameters`  <a name="cfn-quicksight-template-stringparameterdeclaration-mappeddatasetparameters"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [MappedDataSetParameter](aws-properties-quicksight-template-mappeddatasetparameter.md)
+*Minimum*: `0`
+*Maximum*: `150`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MappedDataSetParameter](aws-properties-quicksight-template-mappeddatasetparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `150`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-template-stringparameterdeclaration-name"></a>
 The name of the parameter that is being declared.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterValueType`
-
+`ParameterValueType`  <a name="cfn-quicksight-template-stringparameterdeclaration-parametervaluetype"></a>
 The value type determines whether the parameter is a single-value or multi-value parameter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MULTI_VALUED | SINGLE_VALUED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MULTI_VALUED | SINGLE_VALUED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ValueWhenUnset`
-
+`ValueWhenUnset`  <a name="cfn-quicksight-template-stringparameterdeclaration-valuewhenunset"></a>
 The configuration that defines the default value of a `String` parameter when a value has not been set.
-
-_Required_: No
-
-_Type_: [StringValueWhenUnsetConfiguration](aws-properties-quicksight-template-stringvaluewhenunsetconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StringFormatConfiguration
-
-StringValueWhenUnsetConfiguration
+*Required*: No
+*Type*: [StringValueWhenUnsetConfiguration](aws-properties-quicksight-template-stringvaluewhenunsetconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

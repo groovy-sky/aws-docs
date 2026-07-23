@@ -2,255 +2,192 @@
 title: "AWS::NetworkManager::Device"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::Device
+<a name="aws-resource-networkmanager-device"></a>
 
 Specifies a device.
 
 ## Syntax
+<a name="aws-resource-networkmanager-device-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-device-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::Device",
   "Properties" : {
-      "AWSLocation" : AWSLocation,
-      "Description" : String,
-      "GlobalNetworkId" : String,
-      "Location" : Location,
-      "Model" : String,
-      "SerialNumber" : String,
-      "SiteId" : String,
-      "Tags" : [ Tag, ... ],
-      "Type" : String,
-      "Vendor" : String
+      "[AWSLocation](#cfn-networkmanager-device-awslocation)" : {{AWSLocation}},
+      "[Description](#cfn-networkmanager-device-description)" : {{String}},
+      "[GlobalNetworkId](#cfn-networkmanager-device-globalnetworkid)" : {{String}},
+      "[Location](#cfn-networkmanager-device-location)" : {{Location}},
+      "[Model](#cfn-networkmanager-device-model)" : {{String}},
+      "[SerialNumber](#cfn-networkmanager-device-serialnumber)" : {{String}},
+      "[SiteId](#cfn-networkmanager-device-siteid)" : {{String}},
+      "[Tags](#cfn-networkmanager-device-tags)" : {{[ Tag, ... ]}},
+      "[Type](#cfn-networkmanager-device-type)" : {{String}},
+      "[Vendor](#cfn-networkmanager-device-vendor)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-device-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::Device
 Properties:
-  AWSLocation:
-    AWSLocation
-  Description: String
-  GlobalNetworkId: String
-  Location:
-    Location
-  Model: String
-  SerialNumber: String
-  SiteId: String
-  Tags:
-    - Tag
-  Type: String
-  Vendor: String
-
+  [AWSLocation](#cfn-networkmanager-device-awslocation): {{
+    AWSLocation}}
+  [Description](#cfn-networkmanager-device-description): {{String}}
+  [GlobalNetworkId](#cfn-networkmanager-device-globalnetworkid): {{String}}
+  [Location](#cfn-networkmanager-device-location): {{
+    Location}}
+  [Model](#cfn-networkmanager-device-model): {{String}}
+  [SerialNumber](#cfn-networkmanager-device-serialnumber): {{String}}
+  [SiteId](#cfn-networkmanager-device-siteid): {{String}}
+  [Tags](#cfn-networkmanager-device-tags): {{
+    - Tag}}
+  [Type](#cfn-networkmanager-device-type): {{String}}
+  [Vendor](#cfn-networkmanager-device-vendor): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-device-properties"></a>
 
-`AWSLocation`
-
+`AWSLocation`  <a name="cfn-networkmanager-device-awslocation"></a>
 The AWS location of the device.
+*Required*: No
+*Type*: [AWSLocation](aws-properties-networkmanager-device-awslocation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AWSLocation](aws-properties-networkmanager-device-awslocation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-networkmanager-device-description"></a>
 A description of the device.
-
 Constraints: Maximum length of 256 characters.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GlobalNetworkId`
-
+`GlobalNetworkId`  <a name="cfn-networkmanager-device-globalnetworkid"></a>
 The ID of the global network.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Location`
-
+`Location`  <a name="cfn-networkmanager-device-location"></a>
 The site location.
+*Required*: No
+*Type*: [Location](aws-properties-networkmanager-device-location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Location](aws-properties-networkmanager-device-location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Model`
-
+`Model`  <a name="cfn-networkmanager-device-model"></a>
 The model of the device.
-
 Constraints: Maximum length of 128 characters.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SerialNumber`
-
+`SerialNumber`  <a name="cfn-networkmanager-device-serialnumber"></a>
 The serial number of the device.
-
 Constraints: Maximum length of 128 characters.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SiteId`
-
+`SiteId`  <a name="cfn-networkmanager-device-siteid"></a>
 The site ID.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkmanager-device-tags"></a>
 The tags for the device.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkmanager-device-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkmanager-device-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-networkmanager-device-type"></a>
 The device type.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Vendor`
-
+`Vendor`  <a name="cfn-networkmanager-device-vendor"></a>
 The vendor of the device.
-
 Constraints: Maximum length of 128 characters.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-networkmanager-device-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-device-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the IDs of the global network and device. For example: `global-network-01231231231231231|device-07f6fd08867abc123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-networkmanager-device-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-networkmanager-device-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time that the device was created.
 
-`DeviceArn`
+`DeviceArn`  <a name="DeviceArn-fn::getatt"></a>
+The ARN of the device. For example, `arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123`.
 
-The ARN of the device. For example,
-`arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123`.
-
-`DeviceId`
-
+`DeviceId`  <a name="DeviceId-fn::getatt"></a>
 The ID of the device. For example, `device-07f6fd08867abc123`.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The state of the device.
 
 ## Examples
+<a name="aws-resource-networkmanager-device--examples"></a>
 
 ### Device
+<a name="aws-resource-networkmanager-device--examples--Device"></a>
 
 The following example creates a device in a global network.
 
 #### JSON
+<a name="aws-resource-networkmanager-device--examples--Device--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::NetworkManager::Device",
     "Properties": {
@@ -280,9 +217,9 @@ The following example creates a device in a global network.
 ```
 
 #### YAML
+<a name="aws-resource-networkmanager-device--examples--Device--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::Device
 Properties:
   Description: "Chicago office device"
@@ -296,11 +233,5 @@ Properties:
     - Key: Network
       Value: north-america
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::NetworkManager::CustomerGatewayAssociation
-
-AWSLocation
 
 All content copied from https://docs.aws.amazon.com/.

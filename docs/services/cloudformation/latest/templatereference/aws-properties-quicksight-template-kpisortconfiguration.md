@@ -2,57 +2,44 @@
 title: "AWS::QuickSight::Template KPISortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template KPISortConfiguration
+<a name="aws-properties-quicksight-template-kpisortconfiguration"></a>
 
 The sort configuration of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-kpisortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-kpisortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "TrendGroupSort" : [ FieldSortOptions, ... ]
+  "[TrendGroupSort](#cfn-quicksight-template-kpisortconfiguration-trendgroupsort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-kpisortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  TrendGroupSort:
-    - FieldSortOptions
-
+```
+  [TrendGroupSort](#cfn-quicksight-template-kpisortconfiguration-trendgroupsort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-kpisortconfiguration-properties"></a>
 
-`TrendGroupSort`
-
+`TrendGroupSort`  <a name="cfn-quicksight-template-kpisortconfiguration-trendgroupsort"></a>
 The sort configuration of the trend group fields.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPIProgressBarConditionalFormatting
-
-KPISparklineOptions
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-template-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

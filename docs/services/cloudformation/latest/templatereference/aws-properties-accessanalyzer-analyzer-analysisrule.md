@@ -2,56 +2,42 @@
 title: "AWS::AccessAnalyzer::Analyzer AnalysisRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccessAnalyzer::Analyzer AnalysisRule
+<a name="aws-properties-accessanalyzer-analyzer-analysisrule"></a>
 
-Contains information about analysis rules for the analyzer. Analysis rules determine
-which entities will generate findings based on the criteria you define when you create the
-rule.
+Contains information about analysis rules for the analyzer. Analysis rules determine which entities will generate findings based on the criteria you define when you create the rule.
 
 ## Syntax
+<a name="aws-properties-accessanalyzer-analyzer-analysisrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-accessanalyzer-analyzer-analysisrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Exclusions" : [ AnalysisRuleCriteria, ... ]
+  "[Exclusions](#cfn-accessanalyzer-analyzer-analysisrule-exclusions)" : {{[ AnalysisRuleCriteria, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-accessanalyzer-analyzer-analysisrule-syntax.yaml"></a>
 
-```yaml
-
-  Exclusions:
-    - AnalysisRuleCriteria
-
+```
+  [Exclusions](#cfn-accessanalyzer-analyzer-analysisrule-exclusions): {{
+    - AnalysisRuleCriteria}}
 ```
 
 ## Properties
+<a name="aws-properties-accessanalyzer-analyzer-analysisrule-properties"></a>
 
-`Exclusions`
-
-A list of rules for the analyzer containing criteria to exclude from analysis. Entities
-that meet the rule criteria will not generate findings.
-
-_Required_: No
-
-_Type_: Array of [AnalysisRuleCriteria](aws-properties-accessanalyzer-analyzer-analysisrulecriteria.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AccessAnalyzer::Analyzer
-
-AnalysisRuleCriteria
+`Exclusions`  <a name="cfn-accessanalyzer-analyzer-analysisrule-exclusions"></a>
+A list of rules for the analyzer containing criteria to exclude from analysis. Entities that meet the rule criteria will not generate findings.
+*Required*: No
+*Type*: Array of [AnalysisRuleCriteria](aws-properties-accessanalyzer-analyzer-analysisrulecriteria.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

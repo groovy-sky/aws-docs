@@ -2,70 +2,51 @@
 title: "AWS::SageMaker::FeatureGroup TtlDuration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::FeatureGroup TtlDuration
+<a name="aws-properties-sagemaker-featuregroup-ttlduration"></a>
 
-Time to live duration, where the record is hard deleted after the expiration time is
-reached; `ExpiresAt` = `EventTime` \+ `TtlDuration`. For
-information on HardDelete, see the [DeleteRecord](../../../../reference/sagemaker/latest/apireference/api-feature-store-deleterecord.md) API in the Amazon SageMaker API Reference guide.
+Time to live duration, where the record is hard deleted after the expiration time is reached; `ExpiresAt` = `EventTime` \+ `TtlDuration`. For information on HardDelete, see the [DeleteRecord](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_DeleteRecord.html) API in the Amazon SageMaker API Reference guide.
 
 ## Syntax
+<a name="aws-properties-sagemaker-featuregroup-ttlduration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-featuregroup-ttlduration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Unit" : String,
-  "Value" : Integer
+  "[Unit](#cfn-sagemaker-featuregroup-ttlduration-unit)" : {{String}},
+  "[Value](#cfn-sagemaker-featuregroup-ttlduration-value)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-featuregroup-ttlduration-syntax.yaml"></a>
 
-```yaml
-
-  Unit: String
-  Value: Integer
-
+```
+  [Unit](#cfn-sagemaker-featuregroup-ttlduration-unit): {{String}}
+  [Value](#cfn-sagemaker-featuregroup-ttlduration-value): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-featuregroup-ttlduration-properties"></a>
 
-`Unit`
-
+`Unit`  <a name="cfn-sagemaker-featuregroup-ttlduration-unit"></a>
 `TtlDuration` time unit.
+*Required*: No
+*Type*: String
+*Allowed values*: `Seconds | Minutes | Hours | Days | Weeks`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `Seconds | Minutes | Hours | Days | Weeks`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-sagemaker-featuregroup-ttlduration-value"></a>
 `TtlDuration` time value.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ThroughputConfig
-
-AWS::SageMaker::Image
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

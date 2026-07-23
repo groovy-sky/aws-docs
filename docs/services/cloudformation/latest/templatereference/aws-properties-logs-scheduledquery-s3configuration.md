@@ -2,69 +2,51 @@
 title: "AWS::Logs::ScheduledQuery S3Configuration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::ScheduledQuery S3Configuration
+<a name="aws-properties-logs-scheduledquery-s3configuration"></a>
 
 Configuration for Amazon S3 destination where scheduled query results are delivered.
 
 ## Syntax
+<a name="aws-properties-logs-scheduledquery-s3configuration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-scheduledquery-s3configuration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationIdentifier" : String,
-  "RoleArn" : String
+  "[DestinationIdentifier](#cfn-logs-scheduledquery-s3configuration-destinationidentifier)" : {{String}},
+  "[RoleArn](#cfn-logs-scheduledquery-s3configuration-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-scheduledquery-s3configuration-syntax.yaml"></a>
 
-```yaml
-
-  DestinationIdentifier: String
-  RoleArn: String
-
+```
+  [DestinationIdentifier](#cfn-logs-scheduledquery-s3configuration-destinationidentifier): {{String}}
+  [RoleArn](#cfn-logs-scheduledquery-s3configuration-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-scheduledquery-s3configuration-properties"></a>
 
-`DestinationIdentifier`
-
+`DestinationIdentifier`  <a name="cfn-logs-scheduledquery-s3configuration-destinationidentifier"></a>
 The Amazon S3 URI where query results are delivered. Must be a valid S3 URI format.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
-The ARN of the IAM role that grants permissions to write query results to the specified
-Amazon S3 destination.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DestinationConfiguration
-
-TagsItems
+`RoleArn`  <a name="cfn-logs-scheduledquery-s3configuration-rolearn"></a>
+The ARN of the IAM role that grants permissions to write query results to the specified Amazon S3 destination.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject VideoStandardExtraction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject VideoStandardExtraction
+<a name="aws-properties-bedrock-dataautomationproject-videostandardextraction"></a>
 
 Settings for generating data from video.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-videostandardextraction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-videostandardextraction-syntax.json"></a>
 
-```json
-
+```
 {
-  "BoundingBox" : VideoBoundingBox,
-  "Category" : VideoExtractionCategory
+  "[BoundingBox](#cfn-bedrock-dataautomationproject-videostandardextraction-boundingbox)" : {{VideoBoundingBox}},
+  "[Category](#cfn-bedrock-dataautomationproject-videostandardextraction-category)" : {{VideoExtractionCategory}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-videostandardextraction-syntax.yaml"></a>
 
-```yaml
-
-  BoundingBox:
-    VideoBoundingBox
-  Category:
-    VideoExtractionCategory
-
+```
+  [BoundingBox](#cfn-bedrock-dataautomationproject-videostandardextraction-boundingbox): {{
+    VideoBoundingBox}}
+  [Category](#cfn-bedrock-dataautomationproject-videostandardextraction-category): {{
+    VideoExtractionCategory}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-videostandardextraction-properties"></a>
 
-`BoundingBox`
-
+`BoundingBox`  <a name="cfn-bedrock-dataautomationproject-videostandardextraction-boundingbox"></a>
 Settings for generating bounding boxes.
+*Required*: Yes
+*Type*: [VideoBoundingBox](aws-properties-bedrock-dataautomationproject-videoboundingbox.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [VideoBoundingBox](aws-properties-bedrock-dataautomationproject-videoboundingbox.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Category`
-
+`Category`  <a name="cfn-bedrock-dataautomationproject-videostandardextraction-category"></a>
 Settings for generating categorical data.
-
-_Required_: Yes
-
-_Type_: [VideoExtractionCategory](aws-properties-bedrock-dataautomationproject-videoextractioncategory.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VideoOverrideConfiguration
-
-VideoStandardGenerativeField
+*Required*: Yes
+*Type*: [VideoExtractionCategory](aws-properties-bedrock-dataautomationproject-videoextractioncategory.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

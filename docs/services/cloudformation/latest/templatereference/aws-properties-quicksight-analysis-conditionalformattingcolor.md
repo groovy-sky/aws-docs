@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Analysis ConditionalFormattingColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ConditionalFormattingColor
+<a name="aws-properties-quicksight-analysis-conditionalformattingcolor"></a>
 
 The formatting configuration for the color.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-conditionalformattingcolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-conditionalformattingcolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "Gradient" : ConditionalFormattingGradientColor,
-  "Solid" : ConditionalFormattingSolidColor
+  "[Gradient](#cfn-quicksight-analysis-conditionalformattingcolor-gradient)" : {{ConditionalFormattingGradientColor}},
+  "[Solid](#cfn-quicksight-analysis-conditionalformattingcolor-solid)" : {{ConditionalFormattingSolidColor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-conditionalformattingcolor-syntax.yaml"></a>
 
-```yaml
-
-  Gradient:
-    ConditionalFormattingGradientColor
-  Solid:
-    ConditionalFormattingSolidColor
-
+```
+  [Gradient](#cfn-quicksight-analysis-conditionalformattingcolor-gradient): {{
+    ConditionalFormattingGradientColor}}
+  [Solid](#cfn-quicksight-analysis-conditionalformattingcolor-solid): {{
+    ConditionalFormattingSolidColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-conditionalformattingcolor-properties"></a>
 
-`Gradient`
-
+`Gradient`  <a name="cfn-quicksight-analysis-conditionalformattingcolor-gradient"></a>
 Formatting configuration for gradient color.
+*Required*: No
+*Type*: [ConditionalFormattingGradientColor](aws-properties-quicksight-analysis-conditionalformattinggradientcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConditionalFormattingGradientColor](aws-properties-quicksight-analysis-conditionalformattinggradientcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Solid`
-
+`Solid`  <a name="cfn-quicksight-analysis-conditionalformattingcolor-solid"></a>
 Formatting configuration for solid color.
-
-_Required_: No
-
-_Type_: [ConditionalFormattingSolidColor](aws-properties-quicksight-analysis-conditionalformattingsolidcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Computation
-
-ConditionalFormattingCustomIconCondition
+*Required*: No
+*Type*: [ConditionalFormattingSolidColor](aws-properties-quicksight-analysis-conditionalformattingsolidcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

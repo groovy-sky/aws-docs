@@ -2,69 +2,51 @@
 title: "AWS::Connect::QuickConnect UserQuickConnectConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::QuickConnect UserQuickConnectConfig
+<a name="aws-properties-connect-quickconnect-userquickconnectconfig"></a>
 
-Contains information about the quick connect configuration settings for a user. The contact flow must be of type
-Transfer to Agent.
+Contains information about the quick connect configuration settings for a user. The contact flow must be of type Transfer to Agent.
 
 ## Syntax
+<a name="aws-properties-connect-quickconnect-userquickconnectconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-quickconnect-userquickconnectconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContactFlowArn" : String,
-  "UserArn" : String
+  "[ContactFlowArn](#cfn-connect-quickconnect-userquickconnectconfig-contactflowarn)" : {{String}},
+  "[UserArn](#cfn-connect-quickconnect-userquickconnectconfig-userarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-quickconnect-userquickconnectconfig-syntax.yaml"></a>
 
-```yaml
-
-  ContactFlowArn: String
-  UserArn: String
-
+```
+  [ContactFlowArn](#cfn-connect-quickconnect-userquickconnectconfig-contactflowarn): {{String}}
+  [UserArn](#cfn-connect-quickconnect-userquickconnectconfig-userarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-quickconnect-userquickconnectconfig-properties"></a>
 
-`ContactFlowArn`
-
+`ContactFlowArn`  <a name="cfn-connect-quickconnect-userquickconnectconfig-contactflowarn"></a>
 The Amazon Resource Name (ARN) of the flow.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserArn`
-
+`UserArn`  <a name="cfn-connect-quickconnect-userquickconnectconfig-userarn"></a>
 The Amazon Resource Name (ARN) of the user.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/agent/[-a-zA-Z0-9]*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::Connect::RoutingProfile
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/agent/[-a-zA-Z0-9]*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

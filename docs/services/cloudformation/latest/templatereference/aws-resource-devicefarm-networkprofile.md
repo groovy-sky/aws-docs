@@ -2,263 +2,180 @@
 title: "AWS::DeviceFarm::NetworkProfile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DeviceFarm::NetworkProfile
+<a name="aws-resource-devicefarm-networkprofile"></a>
 
 Creates a network profile.
 
 ## Syntax
+<a name="aws-resource-devicefarm-networkprofile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-devicefarm-networkprofile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DeviceFarm::NetworkProfile",
   "Properties" : {
-      "Description" : String,
-      "DownlinkBandwidthBits" : Integer,
-      "DownlinkDelayMs" : Integer,
-      "DownlinkJitterMs" : Integer,
-      "DownlinkLossPercent" : Integer,
-      "Name" : String,
-      "ProjectArn" : String,
-      "Tags" : [ Tag, ... ],
-      "UplinkBandwidthBits" : Integer,
-      "UplinkDelayMs" : Integer,
-      "UplinkJitterMs" : Integer,
-      "UplinkLossPercent" : Integer
+      "[Description](#cfn-devicefarm-networkprofile-description)" : {{String}},
+      "[DownlinkBandwidthBits](#cfn-devicefarm-networkprofile-downlinkbandwidthbits)" : {{Integer}},
+      "[DownlinkDelayMs](#cfn-devicefarm-networkprofile-downlinkdelayms)" : {{Integer}},
+      "[DownlinkJitterMs](#cfn-devicefarm-networkprofile-downlinkjitterms)" : {{Integer}},
+      "[DownlinkLossPercent](#cfn-devicefarm-networkprofile-downlinklosspercent)" : {{Integer}},
+      "[Name](#cfn-devicefarm-networkprofile-name)" : {{String}},
+      "[ProjectArn](#cfn-devicefarm-networkprofile-projectarn)" : {{String}},
+      "[Tags](#cfn-devicefarm-networkprofile-tags)" : {{[ Tag, ... ]}},
+      "[UplinkBandwidthBits](#cfn-devicefarm-networkprofile-uplinkbandwidthbits)" : {{Integer}},
+      "[UplinkDelayMs](#cfn-devicefarm-networkprofile-uplinkdelayms)" : {{Integer}},
+      "[UplinkJitterMs](#cfn-devicefarm-networkprofile-uplinkjitterms)" : {{Integer}},
+      "[UplinkLossPercent](#cfn-devicefarm-networkprofile-uplinklosspercent)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-devicefarm-networkprofile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DeviceFarm::NetworkProfile
 Properties:
-  Description: String
-  DownlinkBandwidthBits: Integer
-  DownlinkDelayMs: Integer
-  DownlinkJitterMs: Integer
-  DownlinkLossPercent: Integer
-  Name: String
-  ProjectArn: String
-  Tags:
-    - Tag
-  UplinkBandwidthBits: Integer
-  UplinkDelayMs: Integer
-  UplinkJitterMs: Integer
-  UplinkLossPercent: Integer
-
+  [Description](#cfn-devicefarm-networkprofile-description): {{String}}
+  [DownlinkBandwidthBits](#cfn-devicefarm-networkprofile-downlinkbandwidthbits): {{Integer}}
+  [DownlinkDelayMs](#cfn-devicefarm-networkprofile-downlinkdelayms): {{Integer}}
+  [DownlinkJitterMs](#cfn-devicefarm-networkprofile-downlinkjitterms): {{Integer}}
+  [DownlinkLossPercent](#cfn-devicefarm-networkprofile-downlinklosspercent): {{Integer}}
+  [Name](#cfn-devicefarm-networkprofile-name): {{String}}
+  [ProjectArn](#cfn-devicefarm-networkprofile-projectarn): {{String}}
+  [Tags](#cfn-devicefarm-networkprofile-tags): {{
+    - Tag}}
+  [UplinkBandwidthBits](#cfn-devicefarm-networkprofile-uplinkbandwidthbits): {{Integer}}
+  [UplinkDelayMs](#cfn-devicefarm-networkprofile-uplinkdelayms): {{Integer}}
+  [UplinkJitterMs](#cfn-devicefarm-networkprofile-uplinkjitterms): {{Integer}}
+  [UplinkLossPercent](#cfn-devicefarm-networkprofile-uplinklosspercent): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-devicefarm-networkprofile-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-devicefarm-networkprofile-description"></a>
 The description of the network profile.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `16384`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DownlinkBandwidthBits`  <a name="cfn-devicefarm-networkprofile-downlinkbandwidthbits"></a>
+The data throughput rate in bits per second, as an integer from 0 to 104857600.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `104857600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`DownlinkDelayMs`  <a name="cfn-devicefarm-networkprofile-downlinkdelayms"></a>
+Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`DownlinkJitterMs`  <a name="cfn-devicefarm-networkprofile-downlinkjitterms"></a>
+Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `16384`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DownlinkBandwidthBits`
-
-The data throughput rate in bits per second, as an integer from 0 to
-104857600.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `104857600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DownlinkDelayMs`
-
-Delay time for all packets to destination in milliseconds as an integer from 0 to
-2000.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DownlinkJitterMs`
-
-Time variation in the delay of received packets in milliseconds as an integer from
-0 to 2000.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DownlinkLossPercent`
-
+`DownlinkLossPercent`  <a name="cfn-devicefarm-networkprofile-downlinklosspercent"></a>
 Proportion of received packets that fail to arrive from 0 to 100 percent.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-devicefarm-networkprofile-name"></a>
 The name of the network profile.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProjectArn`
-
+`ProjectArn`  <a name="cfn-devicefarm-networkprofile-projectarn"></a>
 The Amazon Resource Name (ARN) of the specified project.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.+`
+*Minimum*: `32`
+*Maximum*: `1011`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.+`
-
-_Minimum_: `32`
-
-_Maximum_: `1011`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-devicefarm-networkprofile-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) in the *AWS CloudFormation guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-devicefarm-networkprofile-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md) in the
-_AWS CloudFormation guide_.
+`UplinkBandwidthBits`  <a name="cfn-devicefarm-networkprofile-uplinkbandwidthbits"></a>
+The data throughput rate in bits per second, as an integer from 0 to 104857600.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `104857600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`UplinkDelayMs`  <a name="cfn-devicefarm-networkprofile-uplinkdelayms"></a>
+Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Tag](aws-properties-devicefarm-networkprofile-tag.md)
+`UplinkJitterMs`  <a name="cfn-devicefarm-networkprofile-uplinkjitterms"></a>
+Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UplinkBandwidthBits`
-
-The data throughput rate in bits per second, as an integer from 0 to
-104857600.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `104857600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UplinkDelayMs`
-
-Delay time for all packets to destination in milliseconds as an integer from 0 to
-2000.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UplinkJitterMs`
-
-Time variation in the delay of received packets in milliseconds as an integer from
-0 to 2000.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UplinkLossPercent`
-
-Proportion of transmitted packets that fail to arrive from 0 to 100
-percent.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`UplinkLossPercent`  <a name="cfn-devicefarm-networkprofile-uplinklosspercent"></a>
+Proportion of transmitted packets that fail to arrive from 0 to 100 percent.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-devicefarm-networkprofile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-devicefarm-networkprofile-return-values-ref"></a>
 
 Not supported for this resource.
 
 ### Fn::GetAtt
+<a name="aws-resource-devicefarm-networkprofile-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-devicefarm-networkprofile-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon Resource Name (ARN) of the network profile. See [Amazon resource names](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the
-_General Reference guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the network profile. See [Amazon resource names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *General Reference guide*.
 
 All content copied from https://docs.aws.amazon.com/.

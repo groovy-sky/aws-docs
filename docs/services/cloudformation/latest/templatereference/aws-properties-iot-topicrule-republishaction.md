@@ -2,91 +2,66 @@
 title: "AWS::IoT::TopicRule RepublishAction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::TopicRule RepublishAction
+<a name="aws-properties-iot-topicrule-republishaction"></a>
 
 Describes an action to republish to another topic.
 
 ## Syntax
+<a name="aws-properties-iot-topicrule-republishaction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-topicrule-republishaction-syntax.json"></a>
 
-```json
-
+```
 {
-  "Headers" : RepublishActionHeaders,
-  "Qos" : Integer,
-  "RoleArn" : String,
-  "Topic" : String
+  "[Headers](#cfn-iot-topicrule-republishaction-headers)" : {{RepublishActionHeaders}},
+  "[Qos](#cfn-iot-topicrule-republishaction-qos)" : {{Integer}},
+  "[RoleArn](#cfn-iot-topicrule-republishaction-rolearn)" : {{String}},
+  "[Topic](#cfn-iot-topicrule-republishaction-topic)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-topicrule-republishaction-syntax.yaml"></a>
 
-```yaml
-
-  Headers:
-    RepublishActionHeaders
-  Qos: Integer
-  RoleArn: String
-  Topic: String
-
+```
+  [Headers](#cfn-iot-topicrule-republishaction-headers): {{
+    RepublishActionHeaders}}
+  [Qos](#cfn-iot-topicrule-republishaction-qos): {{Integer}}
+  [RoleArn](#cfn-iot-topicrule-republishaction-rolearn): {{String}}
+  [Topic](#cfn-iot-topicrule-republishaction-topic): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-topicrule-republishaction-properties"></a>
 
-`Headers`
+`Headers`  <a name="cfn-iot-topicrule-republishaction-headers"></a>
+MQTT Version 5.0 headers information. For more information, see [MQTT](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html) in the IoT Core Developer Guide.
+*Required*: No
+*Type*: [RepublishActionHeaders](aws-properties-iot-topicrule-republishactionheaders.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-MQTT Version 5.0 headers information. For more information, see [MQTT](../../../iot/latest/developerguide/mqtt.md) in the IoT
-Core Developer Guide.
+`Qos`  <a name="cfn-iot-topicrule-republishaction-qos"></a>
+The Quality of Service (QoS) level to use when republishing messages. The default value is 0.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RepublishActionHeaders](aws-properties-iot-topicrule-republishactionheaders.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Qos`
-
-The Quality of Service (QoS) level to use when republishing messages. The default value
-is 0.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-iot-topicrule-republishaction-rolearn"></a>
 The ARN of the IAM role that grants access.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Topic`
-
+`Topic`  <a name="cfn-iot-topicrule-republishaction-topic"></a>
 The name of the MQTT topic.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PutItemInput
-
-RepublishActionHeaders
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

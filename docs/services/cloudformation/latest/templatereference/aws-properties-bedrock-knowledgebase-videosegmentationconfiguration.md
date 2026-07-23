@@ -2,56 +2,43 @@
 title: "AWS::Bedrock::KnowledgeBase VideoSegmentationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase VideoSegmentationConfiguration
+<a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration"></a>
 
 Configuration for segmenting video content during multimodal knowledge base ingestion. Determines how video files are divided into chunks for processing.
 
 ## Syntax
+<a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FixedLengthDuration" : Integer
+  "[FixedLengthDuration](#cfn-bedrock-knowledgebase-videosegmentationconfiguration-fixedlengthduration)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FixedLengthDuration: Integer
-
+```
+  [FixedLengthDuration](#cfn-bedrock-knowledgebase-videosegmentationconfiguration-fixedlengthduration): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration-properties"></a>
 
-`FixedLengthDuration`
-
+`FixedLengthDuration`  <a name="cfn-bedrock-knowledgebase-videosegmentationconfiguration-fixedlengthduration"></a>
 The duration in seconds for each video segment. Video files will be divided into chunks of this length for processing.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `30`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VideoConfiguration
-
-AWS::Bedrock::Prompt
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `30`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

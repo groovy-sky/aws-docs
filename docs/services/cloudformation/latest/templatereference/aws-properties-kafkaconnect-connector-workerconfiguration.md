@@ -2,69 +2,51 @@
 title: "AWS::KafkaConnect::Connector WorkerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KafkaConnect::Connector WorkerConfiguration
+<a name="aws-properties-kafkaconnect-connector-workerconfiguration"></a>
 
-The configuration of the workers, which are the processes that run the connector
-logic.
+The configuration of the workers, which are the processes that run the connector logic.
 
 ## Syntax
+<a name="aws-properties-kafkaconnect-connector-workerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kafkaconnect-connector-workerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Revision" : Integer,
-  "WorkerConfigurationArn" : String
+  "[Revision](#cfn-kafkaconnect-connector-workerconfiguration-revision)" : {{Integer}},
+  "[WorkerConfigurationArn](#cfn-kafkaconnect-connector-workerconfiguration-workerconfigurationarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kafkaconnect-connector-workerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Revision: Integer
-  WorkerConfigurationArn: String
-
+```
+  [Revision](#cfn-kafkaconnect-connector-workerconfiguration-revision): {{Integer}}
+  [WorkerConfigurationArn](#cfn-kafkaconnect-connector-workerconfiguration-workerconfigurationarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kafkaconnect-connector-workerconfiguration-properties"></a>
 
-`Revision`
-
+`Revision`  <a name="cfn-kafkaconnect-connector-workerconfiguration-revision"></a>
 The revision of the worker configuration.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WorkerConfigurationArn`
-
+`WorkerConfigurationArn`  <a name="cfn-kafkaconnect-connector-workerconfiguration-workerconfigurationarn"></a>
 The Amazon Resource Name (ARN) of the worker configuration.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:(aws|aws-us-gov|aws-cn):kafkaconnect:.*`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Vpc
-
-WorkerLogDelivery
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafkaconnect:.*`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

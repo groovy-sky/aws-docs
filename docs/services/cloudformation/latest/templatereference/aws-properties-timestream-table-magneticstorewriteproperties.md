@@ -2,65 +2,50 @@
 title: "AWS::Timestream::Table MagneticStoreWriteProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::Table MagneticStoreWriteProperties
+<a name="aws-properties-timestream-table-magneticstorewriteproperties"></a>
 
 The set of properties on a table for configuring magnetic store writes.
 
 ## Syntax
+<a name="aws-properties-timestream-table-magneticstorewriteproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-timestream-table-magneticstorewriteproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "EnableMagneticStoreWrites" : Boolean,
-  "MagneticStoreRejectedDataLocation" : MagneticStoreRejectedDataLocation
+  "[EnableMagneticStoreWrites](#cfn-timestream-table-magneticstorewriteproperties-enablemagneticstorewrites)" : {{Boolean}},
+  "[MagneticStoreRejectedDataLocation](#cfn-timestream-table-magneticstorewriteproperties-magneticstorerejecteddatalocation)" : {{MagneticStoreRejectedDataLocation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-timestream-table-magneticstorewriteproperties-syntax.yaml"></a>
 
-```yaml
-
-  EnableMagneticStoreWrites: Boolean
-  MagneticStoreRejectedDataLocation:
-    MagneticStoreRejectedDataLocation
-
+```
+  [EnableMagneticStoreWrites](#cfn-timestream-table-magneticstorewriteproperties-enablemagneticstorewrites): {{Boolean}}
+  [MagneticStoreRejectedDataLocation](#cfn-timestream-table-magneticstorewriteproperties-magneticstorerejecteddatalocation): {{
+    MagneticStoreRejectedDataLocation}}
 ```
 
 ## Properties
+<a name="aws-properties-timestream-table-magneticstorewriteproperties-properties"></a>
 
-`EnableMagneticStoreWrites`
-
+`EnableMagneticStoreWrites`  <a name="cfn-timestream-table-magneticstorewriteproperties-enablemagneticstorewrites"></a>
 A flag to enable magnetic store writes.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MagneticStoreRejectedDataLocation`
-
+`MagneticStoreRejectedDataLocation`  <a name="cfn-timestream-table-magneticstorewriteproperties-magneticstorerejecteddatalocation"></a>
 The location to write error reports for records rejected asynchronously during magnetic store writes.
-
-_Required_: No
-
-_Type_: [MagneticStoreRejectedDataLocation](aws-properties-timestream-table-magneticstorerejecteddatalocation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MagneticStoreRejectedDataLocation
-
-PartitionKey
+*Required*: No
+*Type*: [MagneticStoreRejectedDataLocation](aws-properties-timestream-table-magneticstorerejecteddatalocation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

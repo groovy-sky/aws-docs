@@ -2,53 +2,42 @@
 title: "AWS::FIS::ExperimentTemplate Outputs"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FIS::ExperimentTemplate Outputs
+<a name="aws-properties-fis-experimenttemplate-outputs"></a>
 
 Describes the output destinations of the experiment report.
 
 ## Syntax
+<a name="aws-properties-fis-experimenttemplate-outputs-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fis-experimenttemplate-outputs-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExperimentReportS3Configuration" : ExperimentReportS3Configuration
+  "[ExperimentReportS3Configuration](#cfn-fis-experimenttemplate-outputs-experimentreports3configuration)" : {{ExperimentReportS3Configuration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fis-experimenttemplate-outputs-syntax.yaml"></a>
 
-```yaml
-
-  ExperimentReportS3Configuration:
-    ExperimentReportS3Configuration
-
+```
+  [ExperimentReportS3Configuration](#cfn-fis-experimenttemplate-outputs-experimentreports3configuration): {{
+    ExperimentReportS3Configuration}}
 ```
 
 ## Properties
+<a name="aws-properties-fis-experimenttemplate-outputs-properties"></a>
 
-`ExperimentReportS3Configuration`
-
+`ExperimentReportS3Configuration`  <a name="cfn-fis-experimenttemplate-outputs-experimentreports3configuration"></a>
 The S3 destination for the experiment report.
-
-_Required_: Yes
-
-_Type_: [ExperimentReportS3Configuration](aws-properties-fis-experimenttemplate-experimentreports3configuration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExperimentTemplateTargetFilter
-
-S3Configuration
+*Required*: Yes
+*Type*: [ExperimentReportS3Configuration](aws-properties-fis-experimenttemplate-experimentreports3configuration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

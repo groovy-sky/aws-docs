@@ -2,73 +2,53 @@
 title: "AWS::KinesisFirehose::DeliveryStream SnowflakeBufferingHints"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream SnowflakeBufferingHints
+<a name="aws-properties-kinesisfirehose-deliverystream-snowflakebufferinghints"></a>
 
-Describes the buffering to perform before delivering data to the Snowflake destination. If you do not specify any value, Firehose uses the default values.
+ Describes the buffering to perform before delivering data to the Snowflake destination. If you do not specify any value, Firehose uses the default values.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-snowflakebufferinghints-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-snowflakebufferinghints-syntax.json"></a>
 
-```json
-
+```
 {
-  "IntervalInSeconds" : Integer,
-  "SizeInMBs" : Integer
+  "[IntervalInSeconds](#cfn-kinesisfirehose-deliverystream-snowflakebufferinghints-intervalinseconds)" : {{Integer}},
+  "[SizeInMBs](#cfn-kinesisfirehose-deliverystream-snowflakebufferinghints-sizeinmbs)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-snowflakebufferinghints-syntax.yaml"></a>
 
-```yaml
-
-  IntervalInSeconds: Integer
-  SizeInMBs: Integer
-
+```
+  [IntervalInSeconds](#cfn-kinesisfirehose-deliverystream-snowflakebufferinghints-intervalinseconds): {{Integer}}
+  [SizeInMBs](#cfn-kinesisfirehose-deliverystream-snowflakebufferinghints-sizeinmbs): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-snowflakebufferinghints-properties"></a>
 
-`IntervalInSeconds`
+`IntervalInSeconds`  <a name="cfn-kinesisfirehose-deliverystream-snowflakebufferinghints-intervalinseconds"></a>
+ Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 0.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `900`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 0.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `900`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SizeInMBs`
-
-Buffer incoming data to the specified size, in MBs, before delivering it to the
-destination. The default value is 128.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Serializer
-
-SnowflakeDestinationConfiguration
+`SizeInMBs`  <a name="cfn-kinesisfirehose-deliverystream-snowflakebufferinghints-sizeinmbs"></a>
+Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 128.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

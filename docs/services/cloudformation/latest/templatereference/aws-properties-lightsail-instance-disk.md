@@ -2,137 +2,93 @@
 title: "AWS::Lightsail::Instance Disk"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Instance Disk
+<a name="aws-properties-lightsail-instance-disk"></a>
 
-`Disk` is a property of the [Hardware](../userguide/aws-properties-lightsail-instance-hardware.md) property. It describes a disk attached to an instance.
+`Disk` is a property of the [Hardware](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lightsail-instance-hardware.html) property. It describes a disk attached to an instance.
 
 ## Syntax
+<a name="aws-properties-lightsail-instance-disk-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-instance-disk-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttachedTo" : String,
-  "AttachmentState" : String,
-  "DiskName" : String,
-  "IOPS" : Integer,
-  "IsSystemDisk" : Boolean,
-  "Path" : String,
-  "SizeInGb" : String
+  "[AttachedTo](#cfn-lightsail-instance-disk-attachedto)" : {{String}},
+  "[AttachmentState](#cfn-lightsail-instance-disk-attachmentstate)" : {{String}},
+  "[DiskName](#cfn-lightsail-instance-disk-diskname)" : {{String}},
+  "[IOPS](#cfn-lightsail-instance-disk-iops)" : {{Integer}},
+  "[IsSystemDisk](#cfn-lightsail-instance-disk-issystemdisk)" : {{Boolean}},
+  "[Path](#cfn-lightsail-instance-disk-path)" : {{String}},
+  "[SizeInGb](#cfn-lightsail-instance-disk-sizeingb)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-instance-disk-syntax.yaml"></a>
 
-```yaml
-
-  AttachedTo: String
-  AttachmentState: String
-  DiskName: String
-  IOPS: Integer
-  IsSystemDisk: Boolean
-  Path: String
-  SizeInGb: String
-
+```
+  [AttachedTo](#cfn-lightsail-instance-disk-attachedto): {{String}}
+  [AttachmentState](#cfn-lightsail-instance-disk-attachmentstate): {{String}}
+  [DiskName](#cfn-lightsail-instance-disk-diskname): {{String}}
+  [IOPS](#cfn-lightsail-instance-disk-iops): {{Integer}}
+  [IsSystemDisk](#cfn-lightsail-instance-disk-issystemdisk): {{Boolean}}
+  [Path](#cfn-lightsail-instance-disk-path): {{String}}
+  [SizeInGb](#cfn-lightsail-instance-disk-sizeingb): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-instance-disk-properties"></a>
 
-`AttachedTo`
-
+`AttachedTo`  <a name="cfn-lightsail-instance-disk-attachedto"></a>
 The resources to which the disk is attached.
+*Required*: No
+*Type*: String
+*Update requires*: Updates are not supported.
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: Updates are not supported.
-
-`AttachmentState`
-
+`AttachmentState`  <a name="cfn-lightsail-instance-disk-attachmentstate"></a>
 (Deprecated) The attachment state of the disk.
+In releases prior to November 14, 2017, this parameter returned `attached` for system disks in the API response. It is now deprecated, but still included in the response. Use `isAttached` instead.
+*Required*: No
+*Type*: String
+*Update requires*: Updates are not supported.
 
-###### Note
-
-In releases prior to November 14, 2017, this parameter returned `attached`
-for system disks in the API response. It is now deprecated, but still included in the
-response. Use `isAttached` instead.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: Updates are not supported.
-
-`DiskName`
-
+`DiskName`  <a name="cfn-lightsail-instance-disk-diskname"></a>
 The unique name of the disk.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][\w\-.]*[a-zA-Z0-9]$`
+*Minimum*: `1`
+*Maximum*: `254`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9][\w\-.]*[a-zA-Z0-9]$`
-
-_Minimum_: `1`
-
-_Maximum_: `254`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IOPS`
-
+`IOPS`  <a name="cfn-lightsail-instance-disk-iops"></a>
 The input/output operations per second (IOPS) of the disk.
+*Required*: No
+*Type*: Integer
+*Update requires*: Updates are not supported.
 
-_Required_: No
+`IsSystemDisk`  <a name="cfn-lightsail-instance-disk-issystemdisk"></a>
+A Boolean value indicating whether this disk is a system disk (has an operating system loaded on it).
+*Required*: No
+*Type*: Boolean
+*Update requires*: Updates are not supported.
 
-_Type_: Integer
-
-_Update requires_: Updates are not supported.
-
-`IsSystemDisk`
-
-A Boolean value indicating whether this disk is a system disk (has an operating system
-loaded on it).
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: Updates are not supported.
-
-`Path`
-
+`Path`  <a name="cfn-lightsail-instance-disk-path"></a>
 The disk path.
+*Required*: Yes
+*Type*: String
+*Update requires*: Updates are not supported.
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: Updates are not supported.
-
-`SizeInGb`
-
+`SizeInGb`  <a name="cfn-lightsail-instance-disk-sizeingb"></a>
 The size of the disk in GB.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: Updates are not supported.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AutoSnapshotAddOn
-
-Hardware
+*Required*: No
+*Type*: String
+*Update requires*: Updates are not supported.
 
 All content copied from https://docs.aws.amazon.com/.

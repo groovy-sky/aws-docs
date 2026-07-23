@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Template KPIProgressBarConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template KPIProgressBarConditionalFormatting
+<a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting"></a>
 
 The conditional formatting for the progress bar of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ForegroundColor" : ConditionalFormattingColor
+  "[ForegroundColor](#cfn-quicksight-template-kpiprogressbarconditionalformatting-foregroundcolor)" : {{ConditionalFormattingColor}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  ForegroundColor:
-    ConditionalFormattingColor
-
+```
+  [ForegroundColor](#cfn-quicksight-template-kpiprogressbarconditionalformatting-foregroundcolor): {{
+    ConditionalFormattingColor}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting-properties"></a>
 
-`ForegroundColor`
-
+`ForegroundColor`  <a name="cfn-quicksight-template-kpiprogressbarconditionalformatting-foregroundcolor"></a>
 The conditional formatting of the progress bar's foreground color.
-
-_Required_: No
-
-_Type_: [ConditionalFormattingColor](aws-properties-quicksight-template-conditionalformattingcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPIPrimaryValueConditionalFormatting
-
-KPISortConfiguration
+*Required*: No
+*Type*: [ConditionalFormattingColor](aws-properties-quicksight-template-conditionalformattingcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

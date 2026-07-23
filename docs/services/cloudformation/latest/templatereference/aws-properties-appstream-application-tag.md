@@ -2,53 +2,42 @@
 title: "AWS::AppStream::Application Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Application Tag
+<a name="aws-properties-appstream-application-tag"></a>
 
 The tag of the application.
 
 ## Syntax
+<a name="aws-properties-appstream-application-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-application-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "TagItems" : TagItems
+  "[TagItems](#cfn-appstream-application-tag-tagitems)" : {{TagItems}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-application-tag-syntax.yaml"></a>
 
-```yaml
-
-  TagItems:
-    TagItems
-
+```
+  [TagItems](#cfn-appstream-application-tag-tagitems): {{
+    TagItems}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-application-tag-properties"></a>
 
-`TagItems`
-
+`TagItems`  <a name="cfn-appstream-application-tag-tagitems"></a>
 The items of the tag.
-
-_Required_: No
-
-_Type_: [TagItems](aws-properties-appstream-application-tagitems.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-TagItems
+*Required*: No
+*Type*: [TagItems](aws-properties-appstream-application-tagitems.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

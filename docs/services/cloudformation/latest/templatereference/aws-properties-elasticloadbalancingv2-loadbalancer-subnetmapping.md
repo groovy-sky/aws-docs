@@ -2,103 +2,73 @@
 title: "AWS::ElasticLoadBalancingV2::LoadBalancer SubnetMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::LoadBalancer SubnetMapping
+<a name="aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping"></a>
 
 Specifies a subnet for a load balancer.
 
 ## Syntax
+<a name="aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllocationId" : String,
-  "IPv6Address" : String,
-  "PrivateIPv4Address" : String,
-  "SourceNatIpv6Prefix" : String,
-  "SubnetId" : String
+  "[AllocationId](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid)" : {{String}},
+  "[IPv6Address](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-ipv6address)" : {{String}},
+  "[PrivateIPv4Address](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address)" : {{String}},
+  "[SourceNatIpv6Prefix](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-sourcenatipv6prefix)" : {{String}},
+  "[SubnetId](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping-syntax.yaml"></a>
 
-```yaml
-
-  AllocationId: String
-  IPv6Address: String
-  PrivateIPv4Address: String
-  SourceNatIpv6Prefix: String
-  SubnetId: String
-
+```
+  [AllocationId](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid): {{String}}
+  [IPv6Address](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-ipv6address): {{String}}
+  [PrivateIPv4Address](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address): {{String}}
+  [SourceNatIpv6Prefix](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-sourcenatipv6prefix): {{String}}
+  [SubnetId](#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping-properties"></a>
 
-`AllocationId`
+`AllocationId`  <a name="cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid"></a>
+[Network Load Balancers] The allocation ID of the Elastic IP address for an internet-facing load balancer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-\[Network Load Balancers\] The allocation ID of the Elastic IP address for an
-internet-facing load balancer.
+`IPv6Address`  <a name="cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-ipv6address"></a>
+[Network Load Balancers] The IPv6 address.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`PrivateIPv4Address`  <a name="cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address"></a>
+[Network Load Balancers] The private IPv4 address for an internal load balancer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`SourceNatIpv6Prefix`  <a name="cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-sourcenatipv6prefix"></a>
+[Network Load Balancers with UDP listeners] The IPv6 prefix to use for source NAT. Specify an IPv6 prefix (/80 netmask) from the subnet CIDR block or `auto_assigned` to use an IPv6 prefix selected at random from the subnet CIDR block.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IPv6Address`
-
-\[Network Load Balancers\] The IPv6 address.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrivateIPv4Address`
-
-\[Network Load Balancers\] The private IPv4 address for an internal load balancer.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceNatIpv6Prefix`
-
-\[Network Load Balancers with UDP listeners\] The IPv6 prefix to use for source NAT.
-Specify an IPv6 prefix (/80 netmask) from the subnet CIDR block or `auto_assigned`
-to use an IPv6 prefix selected at random from the subnet CIDR block.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetId`
-
+`SubnetId`  <a name="cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid"></a>
 The ID of the subnet.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MinimumLoadBalancerCapacity
-
-Tag
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

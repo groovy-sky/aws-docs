@@ -2,66 +2,49 @@
 title: "AWS::SES::ConfigurationSetEventDestination KinesisFirehoseDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ConfigurationSetEventDestination KinesisFirehoseDestination
+<a name="aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination"></a>
 
-An object that defines an Amazon Kinesis Data Firehose destination for email events. You can use Amazon Kinesis Data Firehose to
-stream data to other services, such as Amazon S3 and Amazon Redshift.
+An object that defines an Amazon Kinesis Data Firehose destination for email events. You can use Amazon Kinesis Data Firehose to stream data to other services, such as Amazon S3 and Amazon Redshift.
 
 ## Syntax
+<a name="aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "DeliveryStreamARN" : String,
-  "IAMRoleARN" : String
+  "[DeliveryStreamARN](#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-deliverystreamarn)" : {{String}},
+  "[IAMRoleARN](#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-iamrolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination-syntax.yaml"></a>
 
-```yaml
-
-  DeliveryStreamARN: String
-  IAMRoleARN: String
-
+```
+  [DeliveryStreamARN](#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-deliverystreamarn): {{String}}
+  [IAMRoleARN](#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-iamrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination-properties"></a>
 
-`DeliveryStreamARN`
-
+`DeliveryStreamARN`  <a name="cfn-ses-configurationseteventdestination-kinesisfirehosedestination-deliverystreamarn"></a>
 The ARN of the Amazon Kinesis Firehose stream that email sending events should be published to.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IAMRoleARN`
-
-The Amazon Resource Name (ARN) of the IAM role that the Amazon SES API v2 uses to send email
-events to the Amazon Kinesis Data Firehose stream.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EventDestination
-
-SnsDestination
+`IAMRoleARN`  <a name="cfn-ses-configurationseteventdestination-kinesisfirehosedestination-iamrolearn"></a>
+The Amazon Resource Name (ARN) of the IAM role that the Amazon SES API v2 uses to send email events to the Amazon Kinesis Data Firehose stream.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

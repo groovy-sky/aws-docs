@@ -2,59 +2,44 @@
 title: "AWS::EMRContainers::Endpoint S3MonitoringConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::Endpoint S3MonitoringConfiguration
+<a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration"></a>
 
-Amazon S3 configuration for monitoring log publishing. You can configure your jobs to
-send log information to Amazon S3.
+ Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogUri" : String
+  "[LogUri](#cfn-emrcontainers-endpoint-s3monitoringconfiguration-loguri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LogUri: String
-
+```
+  [LogUri](#cfn-emrcontainers-endpoint-s3monitoringconfiguration-loguri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration-properties"></a>
 
-`LogUri`
-
+`LogUri`  <a name="cfn-emrcontainers-endpoint-s3monitoringconfiguration-loguri"></a>
 Amazon S3 destination URI for log publishing.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDBFF-\uDC00\uDFFF\r\n\t]*`
-
-_Minimum_: `1`
-
-_Maximum_: `10280`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MonitoringConfiguration
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDBFF-\uDC00\uDFFF\r\n\t]*`
+*Minimum*: `1`
+*Maximum*: `10280`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

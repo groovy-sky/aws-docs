@@ -2,82 +2,61 @@
 title: "AWS::ConnectCampaignsV2::Campaign WhatsAppChannelSubtypeConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign WhatsAppChannelSubtypeConfig
+<a name="aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig"></a>
 
 The configuration for the WhatsApp channel subtype.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Capacity" : Number,
-  "DefaultOutboundConfig" : WhatsAppOutboundConfig,
-  "OutboundMode" : WhatsAppOutboundMode
+  "[Capacity](#cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-capacity)" : {{Number}},
+  "[DefaultOutboundConfig](#cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-defaultoutboundconfig)" : {{WhatsAppOutboundConfig}},
+  "[OutboundMode](#cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-outboundmode)" : {{WhatsAppOutboundMode}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-syntax.yaml"></a>
 
-```yaml
-
-  Capacity: Number
-  DefaultOutboundConfig:
-    WhatsAppOutboundConfig
-  OutboundMode:
-    WhatsAppOutboundMode
-
+```
+  [Capacity](#cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-capacity): {{Number}}
+  [DefaultOutboundConfig](#cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-defaultoutboundconfig): {{
+    WhatsAppOutboundConfig}}
+  [OutboundMode](#cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-outboundmode): {{
+    WhatsAppOutboundMode}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-properties"></a>
 
-`Capacity`
-
+`Capacity`  <a name="cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-capacity"></a>
 The allocation of WhatsApp capacity between multiple running outbound campaigns.
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultOutboundConfig`
-
+`DefaultOutboundConfig`  <a name="cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-defaultoutboundconfig"></a>
 The default WhatsApp outbound configuration of an outbound campaign.
+*Required*: Yes
+*Type*: [WhatsAppOutboundConfig](aws-properties-connectcampaignsv2-campaign-whatsappoutboundconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [WhatsAppOutboundConfig](aws-properties-connectcampaignsv2-campaign-whatsappoutboundconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutboundMode`
-
+`OutboundMode`  <a name="cfn-connectcampaignsv2-campaign-whatsappchannelsubtypeconfig-outboundmode"></a>
 The outbound mode for WhatsApp of an outbound campaign.
-
-_Required_: Yes
-
-_Type_: [WhatsAppOutboundMode](aws-properties-connectcampaignsv2-campaign-whatsappoutboundmode.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TimeWindow
-
-WhatsAppOutboundConfig
+*Required*: Yes
+*Type*: [WhatsAppOutboundMode](aws-properties-connectcampaignsv2-campaign-whatsappoutboundmode.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

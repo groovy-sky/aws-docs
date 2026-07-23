@@ -2,53 +2,42 @@
 title: "AWS::SageMaker::ModelPackage DataSource"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage DataSource
+<a name="aws-properties-sagemaker-modelpackage-datasource"></a>
 
 Describes the location of the channel data.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-datasource-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-datasource-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3DataSource" : S3DataSource
+  "[S3DataSource](#cfn-sagemaker-modelpackage-datasource-s3datasource)" : {{S3DataSource}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-datasource-syntax.yaml"></a>
 
-```yaml
-
-  S3DataSource:
-    S3DataSource
-
+```
+  [S3DataSource](#cfn-sagemaker-modelpackage-datasource-s3datasource): {{
+    S3DataSource}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-datasource-properties"></a>
 
-`S3DataSource`
-
+`S3DataSource`  <a name="cfn-sagemaker-modelpackage-datasource-s3datasource"></a>
 The S3 location of the data source that is associated with a channel.
-
-_Required_: Yes
-
-_Type_: [S3DataSource](aws-properties-sagemaker-modelpackage-s3datasource.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Bias
-
-DriftCheckBaselines
+*Required*: Yes
+*Type*: [S3DataSource](aws-properties-sagemaker-modelpackage-s3datasource.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

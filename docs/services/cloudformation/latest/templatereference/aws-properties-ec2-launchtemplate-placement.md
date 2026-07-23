@@ -2,166 +2,114 @@
 title: "AWS::EC2::LaunchTemplate Placement"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::LaunchTemplate Placement
+<a name="aws-properties-ec2-launchtemplate-placement"></a>
 
 Specifies the placement of an instance.
 
-`Placement` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](../userguide/aws-properties-ec2-launchtemplate-launchtemplatedata.md).
+`Placement` is a property of [AWS::EC2::LaunchTemplate LaunchTemplateData](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html).
 
 ## Syntax
+<a name="aws-properties-ec2-launchtemplate-placement-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-launchtemplate-placement-syntax.json"></a>
 
-```json
-
+```
 {
-  "Affinity" : String,
-  "AvailabilityZone" : String,
-  "GroupId" : String,
-  "GroupName" : String,
-  "HostId" : String,
-  "HostResourceGroupArn" : String,
-  "PartitionNumber" : Integer,
-  "SpreadDomain" : String,
-  "Tenancy" : String
+  "[Affinity](#cfn-ec2-launchtemplate-placement-affinity)" : {{String}},
+  "[AvailabilityZone](#cfn-ec2-launchtemplate-placement-availabilityzone)" : {{String}},
+  "[GroupId](#cfn-ec2-launchtemplate-placement-groupid)" : {{String}},
+  "[GroupName](#cfn-ec2-launchtemplate-placement-groupname)" : {{String}},
+  "[HostId](#cfn-ec2-launchtemplate-placement-hostid)" : {{String}},
+  "[HostResourceGroupArn](#cfn-ec2-launchtemplate-placement-hostresourcegrouparn)" : {{String}},
+  "[PartitionNumber](#cfn-ec2-launchtemplate-placement-partitionnumber)" : {{Integer}},
+  "[SpreadDomain](#cfn-ec2-launchtemplate-placement-spreaddomain)" : {{String}},
+  "[Tenancy](#cfn-ec2-launchtemplate-placement-tenancy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-launchtemplate-placement-syntax.yaml"></a>
 
-```yaml
-
-  Affinity: String
-  AvailabilityZone: String
-  GroupId: String
-  GroupName: String
-  HostId: String
-  HostResourceGroupArn: String
-  PartitionNumber: Integer
-  SpreadDomain: String
-  Tenancy: String
-
+```
+  [Affinity](#cfn-ec2-launchtemplate-placement-affinity): {{String}}
+  [AvailabilityZone](#cfn-ec2-launchtemplate-placement-availabilityzone): {{String}}
+  [GroupId](#cfn-ec2-launchtemplate-placement-groupid): {{String}}
+  [GroupName](#cfn-ec2-launchtemplate-placement-groupname): {{String}}
+  [HostId](#cfn-ec2-launchtemplate-placement-hostid): {{String}}
+  [HostResourceGroupArn](#cfn-ec2-launchtemplate-placement-hostresourcegrouparn): {{String}}
+  [PartitionNumber](#cfn-ec2-launchtemplate-placement-partitionnumber): {{Integer}}
+  [SpreadDomain](#cfn-ec2-launchtemplate-placement-spreaddomain): {{String}}
+  [Tenancy](#cfn-ec2-launchtemplate-placement-tenancy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-launchtemplate-placement-properties"></a>
 
-`Affinity`
-
+`Affinity`  <a name="cfn-ec2-launchtemplate-placement-affinity"></a>
 The affinity setting for an instance on a Dedicated Host.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AvailabilityZone`
-
+`AvailabilityZone`  <a name="cfn-ec2-launchtemplate-placement-availabilityzone"></a>
 The Availability Zone for the instance.
-
 Either `AvailabilityZone` or `AvailabilityZoneId` can be specified, but not both
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`GroupId`  <a name="cfn-ec2-launchtemplate-placement-groupid"></a>
+The Group Id of a placement group. You must specify the Placement Group **Group Id** to launch an instance in a shared placement group.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupId`
-
-The Group Id of a placement group. You must specify the Placement Group **Group Id** to launch an instance in a shared placement
-group.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupName`
-
+`GroupName`  <a name="cfn-ec2-launchtemplate-placement-groupname"></a>
 The name of the placement group for the instance.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HostId`
-
+`HostId`  <a name="cfn-ec2-launchtemplate-placement-hostid"></a>
 The ID of the Dedicated Host for the instance.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`HostResourceGroupArn`  <a name="cfn-ec2-launchtemplate-placement-hostresourcegrouparn"></a>
+The ARN of the host resource group in which to launch the instances. If you specify a host resource group ARN, omit the **Tenancy** parameter or set it to `host`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`PartitionNumber`  <a name="cfn-ec2-launchtemplate-placement-partitionnumber"></a>
+The number of the partition the instance should launch in. Valid only if the placement group strategy is set to `partition`.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`HostResourceGroupArn`
-
-The ARN of the host resource group in which to launch the instances. If you specify a
-host resource group ARN, omit the **Tenancy** parameter or
-set it to `host`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PartitionNumber`
-
-The number of the partition the instance should launch in. Valid only if the placement
-group strategy is set to `partition`.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpreadDomain`
-
+`SpreadDomain`  <a name="cfn-ec2-launchtemplate-placement-spreaddomain"></a>
 Reserved for future use.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tenancy`
-
-The tenancy of the instance. An instance with a tenancy of dedicated runs on
-single-tenant hardware.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `default | dedicated | host`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tenancy`  <a name="cfn-ec2-launchtemplate-placement-tenancy"></a>
+The tenancy of the instance. An instance with a tenancy of dedicated runs on single-tenant hardware.
+*Required*: No
+*Type*: String
+*Allowed values*: `default | dedicated | host`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [LaunchTemplatePlacementRequest](../../../../reference/awsec2/latest/apireference/api-launchtemplateplacementrequest.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Create a launch template using advanced settings](../../../autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.md) in the _Amazon EC2 Auto Scaling User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NetworkPerformanceOptions
-
-PrivateDnsNameOptions
+<a name="aws-properties-ec2-launchtemplate-placement--seealso"></a>
++ [ LaunchTemplatePlacementRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatePlacementRequest.html) in the *Amazon EC2 API Reference*
++ [ Create a launch template using advanced settings](https://docs.aws.amazon.com/autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.html) in the *Amazon EC2 Auto Scaling User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,63 +2,46 @@
 title: "AWS::SSM::PatchBaseline PatchFilterGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::PatchBaseline PatchFilterGroup
+<a name="aws-properties-ssm-patchbaseline-patchfiltergroup"></a>
 
-The `PatchFilterGroup` property type specifies a set of patch filters for
-an AWS Systems Manager patch baseline, typically used for approval rules for a
-Systems Manager patch baseline.
+The `PatchFilterGroup` property type specifies a set of patch filters for an AWS Systems Manager patch baseline, typically used for approval rules for a Systems Manager patch baseline.
 
-`PatchFilterGroup` is the property type for the `GlobalFilters`
-property of the [AWS::SSM::PatchBaseline](../userguide/aws-resource-ssm-patchbaseline.md) resource and the `PatchFilterGroup`
-property of the [Rule](../userguide/aws-properties-ssm-patchbaseline-rule.md) property type.
+`PatchFilterGroup` is the property type for the `GlobalFilters` property of the [AWS::SSM::PatchBaseline](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html) resource and the `PatchFilterGroup` property of the [Rule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html) property type.
 
 ## Syntax
+<a name="aws-properties-ssm-patchbaseline-patchfiltergroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-patchbaseline-patchfiltergroup-syntax.json"></a>
 
-```json
-
+```
 {
-  "PatchFilters" : [ PatchFilter, ... ]
+  "[PatchFilters](#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters)" : {{[ PatchFilter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-patchbaseline-patchfiltergroup-syntax.yaml"></a>
 
-```yaml
-
-  PatchFilters:
-    - PatchFilter
-
+```
+  [PatchFilters](#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters): {{
+    - PatchFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-patchbaseline-patchfiltergroup-properties"></a>
 
-`PatchFilters`
-
+`PatchFilters`  <a name="cfn-ssm-patchbaseline-patchfiltergroup-patchfilters"></a>
 The set of patch filters that make up the group.
-
-_Required_: No
-
-_Type_: Array of [PatchFilter](aws-properties-ssm-patchbaseline-patchfilter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PatchFilter
-
-PatchSource
+*Required*: No
+*Type*: Array of [PatchFilter](aws-properties-ssm-patchbaseline-patchfilter.md)
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

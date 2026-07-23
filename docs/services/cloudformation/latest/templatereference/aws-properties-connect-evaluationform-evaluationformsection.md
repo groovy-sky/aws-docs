@@ -2,132 +2,104 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormSection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormSection
+<a name="aws-properties-connect-evaluationform-evaluationformsection"></a>
 
-Information about a section from an evaluation form. A section can contain sections
-and/or questions. Evaluation forms can only contain sections and subsections (two level
-nesting).
+Information about a section from an evaluation form. A section can contain sections and/or questions. Evaluation forms can only contain sections and subsections (two level nesting).
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformsection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformsection-syntax.json"></a>
 
-```json
-
+```
 {
-  "Instructions" : String,
-  "Items" : [ EvaluationFormItem, ... ],
-  "RefId" : String,
-  "Title" : String,
-  "Weight" : Number
+  "[Instructions](#cfn-connect-evaluationform-evaluationformsection-instructions)" : {{String}},
+  "[IsExcludedFromScoring](#cfn-connect-evaluationform-evaluationformsection-isexcludedfromscoring)" : {{Boolean}},
+  "[Items](#cfn-connect-evaluationform-evaluationformsection-items)" : {{[ EvaluationFormItem, ... ]}},
+  "[RefId](#cfn-connect-evaluationform-evaluationformsection-refid)" : {{String}},
+  "[ScoreThresholds](#cfn-connect-evaluationform-evaluationformsection-scorethresholds)" : {{[ EvaluationFormScoreThreshold, ... ]}},
+  "[Title](#cfn-connect-evaluationform-evaluationformsection-title)" : {{String}},
+  "[Weight](#cfn-connect-evaluationform-evaluationformsection-weight)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformsection-syntax.yaml"></a>
 
-```yaml
-
-  Instructions: String
-  Items:
-    - EvaluationFormItem
-  RefId: String
-  Title: String
-  Weight: Number
-
+```
+  [Instructions](#cfn-connect-evaluationform-evaluationformsection-instructions): {{String}}
+  [IsExcludedFromScoring](#cfn-connect-evaluationform-evaluationformsection-isexcludedfromscoring): {{Boolean}}
+  [Items](#cfn-connect-evaluationform-evaluationformsection-items): {{
+    - EvaluationFormItem}}
+  [RefId](#cfn-connect-evaluationform-evaluationformsection-refid): {{String}}
+  [ScoreThresholds](#cfn-connect-evaluationform-evaluationformsection-scorethresholds): {{
+    - EvaluationFormScoreThreshold}}
+  [Title](#cfn-connect-evaluationform-evaluationformsection-title): {{String}}
+  [Weight](#cfn-connect-evaluationform-evaluationformsection-weight): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformsection-properties"></a>
 
-`Instructions`
-
+`Instructions`  <a name="cfn-connect-evaluationform-evaluationformsection-instructions"></a>
 The instructions of the section.
+*Required*: No
+*Type*: String
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IsExcludedFromScoring`  <a name="cfn-connect-evaluationform-evaluationformsection-isexcludedfromscoring"></a>
+The flag to exclude the section from scoring.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Items`
-
+`Items`  <a name="cfn-connect-evaluationform-evaluationformsection-items"></a>
 The items of the section.
+*Minimum*: 1
+*Required*: No
+*Type*: Array of [EvaluationFormItem](aws-properties-connect-evaluationform-evaluationformitem.md)
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: 1
+`RefId`  <a name="cfn-connect-evaluationform-evaluationformsection-refid"></a>
+The identifier of the section. An identifier must be unique within the evaluation form.
+*Length Constraints*: Minimum length of 1. Maximum length of 40.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9._-]{1,40}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ScoreThresholds`  <a name="cfn-connect-evaluationform-evaluationformsection-scorethresholds"></a>
+The score thresholds for performance categories.
+*Required*: No
+*Type*: Array of [EvaluationFormScoreThreshold](aws-properties-connect-evaluationform-evaluationformscorethreshold.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [EvaluationFormItem](aws-properties-connect-evaluationform-evaluationformitem.md)
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefId`
-
-The identifier of the section. An identifier must be unique within the evaluation
-form.
-
-_Length Constraints_: Minimum length of 1. Maximum length of
-40.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9._-]{1,40}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-connect-evaluationform-evaluationformsection-title"></a>
 The title of the section.
+*Length Constraints*: Minimum length of 1. Maximum length of 128.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Length Constraints_: Minimum length of 1. Maximum length of
-128.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Weight`
-
+`Weight`  <a name="cfn-connect-evaluationform-evaluationformsection-weight"></a>
 The scoring weight of the section.
-
-_Minimum_: 0
-
-_Maximum_: 100
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormQuestionTypeProperties
-
-EvaluationFormSingleSelectQuestionAutomation
+*Minimum*: 0
+*Maximum*: 100
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

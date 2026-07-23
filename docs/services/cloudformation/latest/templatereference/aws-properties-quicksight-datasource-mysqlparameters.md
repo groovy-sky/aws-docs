@@ -2,88 +2,63 @@
 title: "AWS::QuickSight::DataSource MySqlParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSource MySqlParameters
+<a name="aws-properties-quicksight-datasource-mysqlparameters"></a>
 
 The parameters for MySQL.
 
 ## Syntax
+<a name="aws-properties-quicksight-datasource-mysqlparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-datasource-mysqlparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "Database" : String,
-  "Host" : String,
-  "Port" : Number
+  "[Database](#cfn-quicksight-datasource-mysqlparameters-database)" : {{String}},
+  "[Host](#cfn-quicksight-datasource-mysqlparameters-host)" : {{String}},
+  "[Port](#cfn-quicksight-datasource-mysqlparameters-port)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-datasource-mysqlparameters-syntax.yaml"></a>
 
-```yaml
-
-  Database: String
-  Host: String
-  Port: Number
-
+```
+  [Database](#cfn-quicksight-datasource-mysqlparameters-database): {{String}}
+  [Host](#cfn-quicksight-datasource-mysqlparameters-host): {{String}}
+  [Port](#cfn-quicksight-datasource-mysqlparameters-port): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-datasource-mysqlparameters-properties"></a>
 
-`Database`
-
+`Database`  <a name="cfn-quicksight-datasource-mysqlparameters-database"></a>
 Database.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Host`
-
+`Host`  <a name="cfn-quicksight-datasource-mysqlparameters-host"></a>
 Host.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Port`
-
+`Port`  <a name="cfn-quicksight-datasource-mysqlparameters-port"></a>
 Port.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MariaDbParameters
-
-OAuthParameters
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,55 +2,43 @@
 title: "AWS::CloudWatch::AlarmMuteRule MuteTargets"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::AlarmMuteRule MuteTargets
+<a name="aws-properties-cloudwatch-alarmmuterule-mutetargets"></a>
 
 Specifies which alarms this rule applies to.
 
 ## Syntax
+<a name="aws-properties-cloudwatch-alarmmuterule-mutetargets-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudwatch-alarmmuterule-mutetargets-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlarmNames" : [ String, ... ]
+  "[AlarmNames](#cfn-cloudwatch-alarmmuterule-mutetargets-alarmnames)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudwatch-alarmmuterule-mutetargets-syntax.yaml"></a>
 
-```yaml
-
-  AlarmNames:
-    - String
-
+```
+  [AlarmNames](#cfn-cloudwatch-alarmmuterule-mutetargets-alarmnames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudwatch-alarmmuterule-mutetargets-properties"></a>
 
-`AlarmNames`
-
+`AlarmNames`  <a name="cfn-cloudwatch-alarmmuterule-mutetargets-alarmnames"></a>
 Specifies which alarms this rule applies to.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudWatch::AlarmMuteRule
-
-Rule
+*Required*: Yes
+*Type*: Array of String
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

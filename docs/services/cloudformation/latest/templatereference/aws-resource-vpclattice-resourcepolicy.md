@@ -2,84 +2,67 @@
 title: "AWS::VpcLattice::ResourcePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::ResourcePolicy
+<a name="aws-resource-vpclattice-resourcepolicy"></a>
 
-Retrieves information about the specified resource policy. The resource policy is an IAM
-policy created on behalf of the resource owner when they share a resource.
+Retrieves information about the specified resource policy. The resource policy is an IAM policy created on behalf of the resource owner when they share a resource.
 
 ## Syntax
+<a name="aws-resource-vpclattice-resourcepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-vpclattice-resourcepolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::VpcLattice::ResourcePolicy",
   "Properties" : {
-      "Policy" : Json,
-      "ResourceArn" : String
+      "[Policy](#cfn-vpclattice-resourcepolicy-policy)" : {{Json}},
+      "[ResourceArn](#cfn-vpclattice-resourcepolicy-resourcearn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-vpclattice-resourcepolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::VpcLattice::ResourcePolicy
 Properties:
-  Policy: Json
-  ResourceArn: String
-
+  [Policy](#cfn-vpclattice-resourcepolicy-policy): {{Json}}
+  [ResourceArn](#cfn-vpclattice-resourcepolicy-resourcearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-vpclattice-resourcepolicy-properties"></a>
 
-`Policy`
-
+`Policy`  <a name="cfn-vpclattice-resourcepolicy-policy"></a>
 The Amazon Resource Name (ARN) of the service network or service.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceArn`
-
+`ResourceArn`  <a name="cfn-vpclattice-resourcepolicy-resourcearn"></a>
 An IAM policy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(service/svc)|(resourceconfiguration/rcfg))-[0-9a-z]{17}$`
-
-_Minimum_: `20`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(service/svc)|(resourceconfiguration/rcfg))-[0-9a-z]{17}$`
+*Minimum*: `20`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-vpclattice-resourcepolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-vpclattice-resourcepolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the resource policy.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::VpcLattice::Rule
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

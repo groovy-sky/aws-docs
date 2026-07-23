@@ -2,54 +2,42 @@
 title: "AWS::QuickSight::Analysis PivotTableConditionalFormattingScope"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PivotTableConditionalFormattingScope
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope"></a>
 
 The scope of the cell for conditional formatting.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope-syntax.json"></a>
 
-```json
-
+```
 {
-  "Role" : String
+  "[Role](#cfn-quicksight-analysis-pivottableconditionalformattingscope-role)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope-syntax.yaml"></a>
 
-```yaml
-
-  Role: String
-
+```
+  [Role](#cfn-quicksight-analysis-pivottableconditionalformattingscope-role): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope-properties"></a>
 
-`Role`
-
+`Role`  <a name="cfn-quicksight-analysis-pivottableconditionalformattingscope-role"></a>
 The role (field, field total, grand total) of the cell for conditional formatting.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FIELD | FIELD_TOTAL | GRAND_TOTAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableConditionalFormattingOption
-
-PivotTableConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `FIELD | FIELD_TOTAL | GRAND_TOTAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

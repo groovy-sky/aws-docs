@@ -2,69 +2,51 @@
 title: "AWS::Bedrock::DataSource Transformation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource Transformation
+<a name="aws-properties-bedrock-datasource-transformation"></a>
 
-A custom processing step for documents moving through a data source ingestion pipeline. To
-process documents after they have been converted into chunks, set the step to apply to
-`POST_CHUNKING`.
+A custom processing step for documents moving through a data source ingestion pipeline. To process documents after they have been converted into chunks, set the step to apply to `POST_CHUNKING`.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-transformation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-transformation-syntax.json"></a>
 
-```json
-
+```
 {
-  "StepToApply" : String,
-  "TransformationFunction" : TransformationFunction
+  "[StepToApply](#cfn-bedrock-datasource-transformation-steptoapply)" : {{String}},
+  "[TransformationFunction](#cfn-bedrock-datasource-transformation-transformationfunction)" : {{TransformationFunction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-transformation-syntax.yaml"></a>
 
-```yaml
-
-  StepToApply: String
-  TransformationFunction:
-    TransformationFunction
-
+```
+  [StepToApply](#cfn-bedrock-datasource-transformation-steptoapply): {{String}}
+  [TransformationFunction](#cfn-bedrock-datasource-transformation-transformationfunction): {{
+    TransformationFunction}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-transformation-properties"></a>
 
-`StepToApply`
-
+`StepToApply`  <a name="cfn-bedrock-datasource-transformation-steptoapply"></a>
 When the service applies the transformation.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `POST_CHUNKING`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `POST_CHUNKING`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TransformationFunction`
-
+`TransformationFunction`  <a name="cfn-bedrock-datasource-transformation-transformationfunction"></a>
 A Lambda function that processes documents.
-
-_Required_: Yes
-
-_Type_: [TransformationFunction](aws-properties-bedrock-datasource-transformationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SharePointSourceConfiguration
-
-TransformationFunction
+*Required*: Yes
+*Type*: [TransformationFunction](aws-properties-bedrock-datasource-transformationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

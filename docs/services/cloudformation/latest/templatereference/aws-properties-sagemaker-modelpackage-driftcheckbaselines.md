@@ -2,97 +2,69 @@
 title: "AWS::SageMaker::ModelPackage DriftCheckBaselines"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage DriftCheckBaselines
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbaselines"></a>
 
-Represents the drift check baselines that can be used when the model monitor is set
-using the model package.
+Represents the drift check baselines that can be used when the model monitor is set using the model package.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbaselines-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbaselines-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bias" : DriftCheckBias,
-  "Explainability" : DriftCheckExplainability,
-  "ModelDataQuality" : DriftCheckModelDataQuality,
-  "ModelQuality" : DriftCheckModelQuality
+  "[Bias](#cfn-sagemaker-modelpackage-driftcheckbaselines-bias)" : {{DriftCheckBias}},
+  "[Explainability](#cfn-sagemaker-modelpackage-driftcheckbaselines-explainability)" : {{DriftCheckExplainability}},
+  "[ModelDataQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modeldataquality)" : {{DriftCheckModelDataQuality}},
+  "[ModelQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modelquality)" : {{DriftCheckModelQuality}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbaselines-syntax.yaml"></a>
 
-```yaml
-
-  Bias:
-    DriftCheckBias
-  Explainability:
-    DriftCheckExplainability
-  ModelDataQuality:
-    DriftCheckModelDataQuality
-  ModelQuality:
-    DriftCheckModelQuality
-
+```
+  [Bias](#cfn-sagemaker-modelpackage-driftcheckbaselines-bias): {{
+    DriftCheckBias}}
+  [Explainability](#cfn-sagemaker-modelpackage-driftcheckbaselines-explainability): {{
+    DriftCheckExplainability}}
+  [ModelDataQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modeldataquality): {{
+    DriftCheckModelDataQuality}}
+  [ModelQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modelquality): {{
+    DriftCheckModelQuality}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelpackage-driftcheckbaselines-properties"></a>
 
-`Bias`
+`Bias`  <a name="cfn-sagemaker-modelpackage-driftcheckbaselines-bias"></a>
+Represents the drift check bias baselines that can be used when the model monitor is set using the model package.
+*Required*: No
+*Type*: [DriftCheckBias](aws-properties-sagemaker-modelpackage-driftcheckbias.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Represents the drift check bias baselines that can be used when the model monitor is
-set using the model package.
+`Explainability`  <a name="cfn-sagemaker-modelpackage-driftcheckbaselines-explainability"></a>
+Represents the drift check explainability baselines that can be used when the model monitor is set using the model package.
+*Required*: No
+*Type*: [DriftCheckExplainability](aws-properties-sagemaker-modelpackage-driftcheckexplainability.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`ModelDataQuality`  <a name="cfn-sagemaker-modelpackage-driftcheckbaselines-modeldataquality"></a>
+Represents the drift check model data quality baselines that can be used when the model monitor is set using the model package.
+*Required*: No
+*Type*: [DriftCheckModelDataQuality](aws-properties-sagemaker-modelpackage-driftcheckmodeldataquality.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: [DriftCheckBias](aws-properties-sagemaker-modelpackage-driftcheckbias.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Explainability`
-
-Represents the drift check explainability baselines that can be used when the model
-monitor is set using the model package.
-
-_Required_: No
-
-_Type_: [DriftCheckExplainability](aws-properties-sagemaker-modelpackage-driftcheckexplainability.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelDataQuality`
-
-Represents the drift check model data quality baselines that can be used when the
-model monitor is set using the model package.
-
-_Required_: No
-
-_Type_: [DriftCheckModelDataQuality](aws-properties-sagemaker-modelpackage-driftcheckmodeldataquality.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelQuality`
-
-Represents the drift check model quality baselines that can be used when the model
-monitor is set using the model package.
-
-_Required_: No
-
-_Type_: [DriftCheckModelQuality](aws-properties-sagemaker-modelpackage-driftcheckmodelquality.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataSource
-
-DriftCheckBias
+`ModelQuality`  <a name="cfn-sagemaker-modelpackage-driftcheckbaselines-modelquality"></a>
+Represents the drift check model quality baselines that can be used when the model monitor is set using the model package.
+*Required*: No
+*Type*: [DriftCheckModelQuality](aws-properties-sagemaker-modelpackage-driftcheckmodelquality.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,86 +2,61 @@
 title: "AWS::Kendra::DataSource InlineCustomDocumentEnrichmentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource InlineCustomDocumentEnrichmentConfiguration
+<a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration"></a>
 
-Provides the configuration information for applying basic logic to alter document
-metadata and content when ingesting documents into Amazon Kendra. To apply advanced
-logic, to go beyond what you can do with basic logic, see [HookConfiguration](../../../kendra/latest/dg/api-hookconfiguration.md).
+Provides the configuration information for applying basic logic to alter document metadata and content when ingesting documents into Amazon Kendra. To apply advanced logic, to go beyond what you can do with basic logic, see [HookConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_HookConfiguration.html).
 
-For more information, see [Customizing document metadata\
-during the ingestion process](../../../kendra/latest/dg/custom-document-enrichment.md).
+For more information, see [Customizing document metadata during the ingestion process](https://docs.aws.amazon.com/kendra/latest/dg/custom-document-enrichment.html).
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Condition" : DocumentAttributeCondition,
-  "DocumentContentDeletion" : Boolean,
-  "Target" : DocumentAttributeTarget
+  "[Condition](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-condition)" : {{DocumentAttributeCondition}},
+  "[DocumentContentDeletion](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-documentcontentdeletion)" : {{Boolean}},
+  "[Target](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-target)" : {{DocumentAttributeTarget}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Condition:
-    DocumentAttributeCondition
-  DocumentContentDeletion: Boolean
-  Target:
-    DocumentAttributeTarget
-
+```
+  [Condition](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-condition): {{
+    DocumentAttributeCondition}}
+  [DocumentContentDeletion](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-documentcontentdeletion): {{Boolean}}
+  [Target](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-target): {{
+    DocumentAttributeTarget}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-properties"></a>
 
-`Condition`
+`Condition`  <a name="cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-condition"></a>
+Configuration of the condition used for the target document attribute or metadata field when ingesting documents into Amazon Kendra.
+*Required*: No
+*Type*: [DocumentAttributeCondition](aws-properties-kendra-datasource-documentattributecondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Configuration of the condition used for the target document attribute or metadata
-field when ingesting documents into Amazon Kendra.
+`DocumentContentDeletion`  <a name="cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-documentcontentdeletion"></a>
+`TRUE` to delete content if the condition used for the target attribute is met.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DocumentAttributeCondition](aws-properties-kendra-datasource-documentattributecondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DocumentContentDeletion`
-
-`TRUE` to delete content if the condition used for the target attribute is
-met.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Target`
-
-Configuration of the target document attribute or metadata field when ingesting
-documents into Amazon Kendra. You can also include a value.
-
-_Required_: No
-
-_Type_: [DocumentAttributeTarget](aws-properties-kendra-datasource-documentattributetarget.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HookConfiguration
-
-OneDriveConfiguration
+`Target`  <a name="cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-target"></a>
+Configuration of the target document attribute or metadata field when ingesting documents into Amazon Kendra. You can also include a value.
+*Required*: No
+*Type*: [DocumentAttributeTarget](aws-properties-kendra-datasource-documentattributetarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

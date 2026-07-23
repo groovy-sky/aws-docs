@@ -2,85 +2,59 @@
 title: "AWS::ECR::Repository LifecyclePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::Repository LifecyclePolicy
+<a name="aws-properties-ecr-repository-lifecyclepolicy"></a>
 
-The `LifecyclePolicy` property type specifies a lifecycle policy. For
-information about lifecycle policy syntax, see [Lifecycle policy\
-template](../../../amazonecr/latest/userguide/lifecyclepolicies.md) in the _Amazon ECR User Guide_.
+The `LifecyclePolicy` property type specifies a lifecycle policy. For information about lifecycle policy syntax, see [Lifecycle policy template](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html) in the *Amazon ECR User Guide*.
 
 ## Syntax
+<a name="aws-properties-ecr-repository-lifecyclepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecr-repository-lifecyclepolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "LifecyclePolicyText" : String,
-  "RegistryId" : String
+  "[LifecyclePolicyText](#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext)" : {{String}},
+  "[RegistryId](#cfn-ecr-repository-lifecyclepolicy-registryid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecr-repository-lifecyclepolicy-syntax.yaml"></a>
 
-```yaml
-
-  LifecyclePolicyText: String
-  RegistryId: String
-
+```
+  [LifecyclePolicyText](#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext): {{String}}
+  [RegistryId](#cfn-ecr-repository-lifecyclepolicy-registryid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecr-repository-lifecyclepolicy-properties"></a>
 
-`LifecyclePolicyText`
-
+`LifecyclePolicyText`  <a name="cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext"></a>
 The JSON repository policy text to apply to the repository.
+*Required*: No
+*Type*: String
+*Minimum*: `100`
+*Maximum*: `30720`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `100`
-
-_Maximum_: `30720`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RegistryId`
-
-The AWS account ID associated with the registry that contains the repository. If you
-do  not specify a registry, the default registry is assumed.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`RegistryId`  <a name="cfn-ecr-repository-lifecyclepolicy-registryid"></a>
+The AWS account ID associated with the registry that contains the repository. If you do  not specify a registry, the default registry is assumed.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Creating a lifecycle\
-policy](../../../amazonecr/latest/userguide/lp-creation.md) in the _Amazon ECR User Guide_
-
-- [PutLifecyclePolicy](../../../../reference/amazonecr/latest/apireference/api-putlifecyclepolicy.md) in the _Amazon ECR API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageTagMutabilityExclusionFilter
-
-Tag
+<a name="aws-properties-ecr-repository-lifecyclepolicy--seealso"></a>
++ [Creating a lifecycle policy](https://docs.aws.amazon.com/AmazonECR/latest/userguide/lp_creation.html) in the *Amazon ECR User Guide*
++ [PutLifecyclePolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutLifecyclePolicy.html) in the *Amazon ECR API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

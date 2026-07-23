@@ -2,99 +2,67 @@
 title: "AWS::SageMaker::ModelCard Function"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard Function
+<a name="aws-properties-sagemaker-modelcard-function"></a>
 
 Function details.
 
 ## Syntax
+<a name="aws-properties-sagemaker-modelcard-function-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-modelcard-function-syntax.json"></a>
 
-```json
-
+```
 {
-  "Condition" : String,
-  "Facet" : String,
-  "Function" : String
+  "[Condition](#cfn-sagemaker-modelcard-function-condition)" : {{String}},
+  "[Facet](#cfn-sagemaker-modelcard-function-facet)" : {{String}},
+  "[Function](#cfn-sagemaker-modelcard-function-function)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-modelcard-function-syntax.yaml"></a>
 
-```yaml
-
-  Condition: String
-  Facet: String
-  Function: String
-
+```
+  [Condition](#cfn-sagemaker-modelcard-function-condition): {{String}}
+  [Facet](#cfn-sagemaker-modelcard-function-facet): {{String}}
+  [Function](#cfn-sagemaker-modelcard-function-function): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-modelcard-function-properties"></a>
 
-`Condition`
-
+`Condition`  <a name="cfn-sagemaker-modelcard-function-condition"></a>
 An optional description of any conditions of your objective function metric.
+*Required*: No
+*Type*: String
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Facet`  <a name="cfn-sagemaker-modelcard-function-facet"></a>
+The metric of the model's objective function. For example, *loss* or *rmse*. The following list shows examples of the values that you can specify for the metric:
++  `ACCURACY`
++  `AUC`
++  `LOSS`
++  `MAE`
++  `RMSE`
+*Required*: No
+*Type*: String
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Facet`
-
-The metric of the model's objective function. For example, _loss_ or
-_rmse_. The following list shows examples of the values that you can specify for the
-metric:
-
-- `ACCURACY`
-
-- `AUC`
-
-- `LOSS`
-
-- `MAE`
-
-- `RMSE`
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Function`
-
-The optimization direction of the model's objective function. You must specify one of the following
-values:
-
-- `Maximize`
-
-- `Minimize`
-
-_Required_: No
-
-_Type_: [String](aws-properties-sagemaker-modelcard-function.md)
-
-_Allowed values_: `Maximize | Minimize`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationDetail
-
-InferenceEnvironment
+`Function`  <a name="cfn-sagemaker-modelcard-function-function"></a>
+The optimization direction of the model's objective function. You must specify one of the following values:
++  `Maximize`
++  `Minimize`
+*Required*: No
+*Type*: [String](#aws-properties-sagemaker-modelcard-function)
+*Allowed values*: `Maximize | Minimize`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

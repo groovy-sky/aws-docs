@@ -2,68 +2,51 @@
 title: "AWS::SES::MailManagerTrafficPolicy IngressStringToEvaluate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy IngressStringToEvaluate
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressstringtoevaluate"></a>
 
-The union type representing the allowed types for the left hand side of a string
-condition.
+The union type representing the allowed types for the left hand side of a string condition.
 
 ## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-syntax.json"></a>
 
-```json
-
+```
 {
-  "Analysis" : IngressAnalysis,
-  "Attribute" : String
+  "[Analysis](#cfn-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-analysis)" : {{IngressAnalysis}},
+  "[Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-attribute)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-syntax.yaml"></a>
 
-```yaml
-
-  Analysis:
-    IngressAnalysis
-  Attribute: String
-
+```
+  [Analysis](#cfn-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-analysis): {{
+    IngressAnalysis}}
+  [Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-attribute): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-properties"></a>
 
-`Analysis`
-
+`Analysis`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-analysis"></a>
 The structure type for a string condition stating the Add On ARN and its returned value.
+*Required*: No
+*Type*: [IngressAnalysis](aws-properties-ses-mailmanagertrafficpolicy-ingressanalysis.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IngressAnalysis](aws-properties-ses-mailmanagertrafficpolicy-ingressanalysis.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Attribute`
-
+`Attribute`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressstringtoevaluate-attribute"></a>
 The enum type representing the allowed attribute types for a string condition.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `RECIPIENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngressStringExpression
-
-IngressTlsProtocolExpression
+*Required*: No
+*Type*: String
+*Allowed values*: `RECIPIENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

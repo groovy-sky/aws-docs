@@ -2,94 +2,69 @@
 title: "AWS::QuickSight::Theme ThemeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme ThemeConfiguration
+<a name="aws-properties-quicksight-theme-themeconfiguration"></a>
 
-The theme configuration. This configuration contains all of the display properties for
-a theme.
+The theme configuration. This configuration contains all of the display properties for a theme.
 
 ## Syntax
+<a name="aws-properties-quicksight-theme-themeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-theme-themeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataColorPalette" : DataColorPalette,
-  "Sheet" : SheetStyle,
-  "Typography" : Typography,
-  "UIColorPalette" : UIColorPalette
+  "[DataColorPalette](#cfn-quicksight-theme-themeconfiguration-datacolorpalette)" : {{DataColorPalette}},
+  "[Sheet](#cfn-quicksight-theme-themeconfiguration-sheet)" : {{SheetStyle}},
+  "[Typography](#cfn-quicksight-theme-themeconfiguration-typography)" : {{Typography}},
+  "[UIColorPalette](#cfn-quicksight-theme-themeconfiguration-uicolorpalette)" : {{UIColorPalette}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-theme-themeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DataColorPalette:
-    DataColorPalette
-  Sheet:
-    SheetStyle
-  Typography:
-    Typography
-  UIColorPalette:
-    UIColorPalette
-
+```
+  [DataColorPalette](#cfn-quicksight-theme-themeconfiguration-datacolorpalette): {{
+    DataColorPalette}}
+  [Sheet](#cfn-quicksight-theme-themeconfiguration-sheet): {{
+    SheetStyle}}
+  [Typography](#cfn-quicksight-theme-themeconfiguration-typography): {{
+    Typography}}
+  [UIColorPalette](#cfn-quicksight-theme-themeconfiguration-uicolorpalette): {{
+    UIColorPalette}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-theme-themeconfiguration-properties"></a>
 
-`DataColorPalette`
-
+`DataColorPalette`  <a name="cfn-quicksight-theme-themeconfiguration-datacolorpalette"></a>
 Color properties that apply to chart data colors.
+*Required*: No
+*Type*: [DataColorPalette](aws-properties-quicksight-theme-datacolorpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataColorPalette](aws-properties-quicksight-theme-datacolorpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Sheet`
-
+`Sheet`  <a name="cfn-quicksight-theme-themeconfiguration-sheet"></a>
 Display options related to sheets.
+*Required*: No
+*Type*: [SheetStyle](aws-properties-quicksight-theme-sheetstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SheetStyle](aws-properties-quicksight-theme-sheetstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Typography`
-
+`Typography`  <a name="cfn-quicksight-theme-themeconfiguration-typography"></a>
 Determines the typography options.
+*Required*: No
+*Type*: [Typography](aws-properties-quicksight-theme-typography.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [Typography](aws-properties-quicksight-theme-typography.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UIColorPalette`
-
-Color properties that apply to the UI and to charts, excluding the colors that apply
-to data.
-
-_Required_: No
-
-_Type_: [UIColorPalette](aws-properties-quicksight-theme-uicolorpalette.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-ThemeError
+`UIColorPalette`  <a name="cfn-quicksight-theme-themeconfiguration-uicolorpalette"></a>
+Color properties that apply to the UI and to charts, excluding the colors that apply to data.
+*Required*: No
+*Type*: [UIColorPalette](aws-properties-quicksight-theme-uicolorpalette.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

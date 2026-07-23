@@ -2,77 +2,65 @@
 title: "AWS::AccessAnalyzer::Analyzer AnalyzerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccessAnalyzer::Analyzer AnalyzerConfiguration
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration"></a>
 
-Contains information about the configuration of an analyzer for an AWS organization or
-account.
+Contains information about the configuration of an analyzer for an AWS organization or account.
 
 ## Syntax
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "InternalAccessConfiguration" : InternalAccessConfiguration,
-  "UnusedAccessConfiguration" : UnusedAccessConfiguration
+  "[InternalAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-internalaccessconfiguration)" : {{InternalAccessConfiguration}},
+  "[UnusedAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-unusedaccessconfiguration)" : {{UnusedAccessConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  InternalAccessConfiguration:
-    InternalAccessConfiguration
-  UnusedAccessConfiguration:
-    UnusedAccessConfiguration
-
+```
+  [InternalAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-internalaccessconfiguration): {{
+    InternalAccessConfiguration}}
+  [UnusedAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-unusedaccessconfiguration): {{
+    UnusedAccessConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration-properties"></a>
 
-`InternalAccessConfiguration`
+`InternalAccessConfiguration`  <a name="cfn-accessanalyzer-analyzer-analyzerconfiguration-internalaccessconfiguration"></a>
+Specifies the configuration of an internal access analyzer for an AWS organization or account. This configuration determines how the analyzer evaluates access within your AWS environment.
+*Required*: No
+*Type*: [InternalAccessConfiguration](aws-properties-accessanalyzer-analyzer-internalaccessconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-Specifies the configuration of an internal access analyzer for an AWS
-organization or account. This configuration determines how the analyzer evaluates access
-within your AWS environment.
-
-_Required_: No
-
-_Type_: [InternalAccessConfiguration](aws-properties-accessanalyzer-analyzer-internalaccessconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`UnusedAccessConfiguration`
-
-Specifies the configuration of an unused access analyzer for an AWS organization or
-account.
-
-_Required_: No
-
-_Type_: [UnusedAccessConfiguration](aws-properties-accessanalyzer-analyzer-unusedaccessconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
+`UnusedAccessConfiguration`  <a name="cfn-accessanalyzer-analyzer-analyzerconfiguration-unusedaccessconfiguration"></a>
+Specifies the configuration of an unused access analyzer for an AWS organization or account.
+*Required*: No
+*Type*: [UnusedAccessConfiguration](aws-properties-accessanalyzer-analyzer-unusedaccessconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 ## Examples
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration--examples"></a>
 
 ### Declare an AnalyzerConfiguration Resource
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration--examples--Declare_an_AnalyzerConfiguration_Resource"></a>
 
-The following example shows how to declare a IAM Access Analyzer
-`AnalyzerConfiguration` resource:
+The following example shows how to declare a IAM Access Analyzer `AnalyzerConfiguration` resource:
 
 #### JSON
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration--examples--Declare_an_AnalyzerConfiguration_Resource--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -143,9 +131,9 @@ The following example shows how to declare a IAM Access Analyzer
 ```
 
 #### YAML
+<a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration--examples--Declare_an_AnalyzerConfiguration_Resource--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   Analyzer:
@@ -178,11 +166,5 @@ Resources:
       Type: ACCOUNT_UNUSED_ACCESS
     Type: AWS::AccessAnalyzer::Analyzer
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisRuleCriteria
-
-ArchiveRule
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,66 +2,50 @@
 title: "AWS::AppStream::Stack ApplicationSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Stack ApplicationSettings
+<a name="aws-properties-appstream-stack-applicationsettings"></a>
 
 The persistent application settings for users of a stack.
 
 ## Syntax
+<a name="aws-properties-appstream-stack-applicationsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-stack-applicationsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "Enabled" : Boolean,
-  "SettingsGroup" : String
+  "[Enabled](#cfn-appstream-stack-applicationsettings-enabled)" : {{Boolean}},
+  "[SettingsGroup](#cfn-appstream-stack-applicationsettings-settingsgroup)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-stack-applicationsettings-syntax.yaml"></a>
 
-```yaml
-
-  Enabled: Boolean
-  SettingsGroup: String
-
+```
+  [Enabled](#cfn-appstream-stack-applicationsettings-enabled): {{Boolean}}
+  [SettingsGroup](#cfn-appstream-stack-applicationsettings-settingsgroup): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-stack-applicationsettings-properties"></a>
 
-`Enabled`
-
+`Enabled`  <a name="cfn-appstream-stack-applicationsettings-enabled"></a>
 Enables or disables persistent application settings for users during their streaming sessions.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SettingsGroup`
-
+`SettingsGroup`  <a name="cfn-appstream-stack-applicationsettings-settingsgroup"></a>
 The path prefix for the S3 bucket where users’ persistent application settings are stored. You can allow the same persistent application settings to be used across multiple stacks by specifying the same settings group for each stack.
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessEndpoint
-
-StorageConnector
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

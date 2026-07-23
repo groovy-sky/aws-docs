@@ -2,83 +2,56 @@
 title: "AWS::SageMaker::FeatureGroup FeatureDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::FeatureGroup FeatureDefinition
+<a name="aws-properties-sagemaker-featuregroup-featuredefinition"></a>
 
-A list of features. You must include `FeatureName` and
-`FeatureType`. Valid feature `FeatureType` s are
-`Integral`, `Fractional` and `String`.
+A list of features. You must include `FeatureName` and `FeatureType`. Valid feature `FeatureType`s are `Integral`, `Fractional` and `String`.
 
 ## Syntax
+<a name="aws-properties-sagemaker-featuregroup-featuredefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-featuregroup-featuredefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "FeatureName" : String,
-  "FeatureType" : String
+  "[FeatureName](#cfn-sagemaker-featuregroup-featuredefinition-featurename)" : {{String}},
+  "[FeatureType](#cfn-sagemaker-featuregroup-featuredefinition-featuretype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-featuregroup-featuredefinition-syntax.yaml"></a>
 
-```yaml
-
-  FeatureName: String
-  FeatureType: String
-
+```
+  [FeatureName](#cfn-sagemaker-featuregroup-featuredefinition-featurename): {{String}}
+  [FeatureType](#cfn-sagemaker-featuregroup-featuredefinition-featuretype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-featuregroup-featuredefinition-properties"></a>
 
-`FeatureName`
-
-The name of a feature. The type must be a string. `FeatureName` cannot be any
-of the following: `is_deleted`, `write_time`,
-`api_invocation_time`.
-
+`FeatureName`  <a name="cfn-sagemaker-featuregroup-featuredefinition-featurename"></a>
+The name of a feature. The type must be a string. `FeatureName` cannot be any of the following: `is_deleted`, `write_time`, `api_invocation_time`.
 The name:
++ Must start with an alphanumeric character.
++ Can only include alphanumeric characters, underscores, and hyphens. Spaces are not allowed.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- Must start with an alphanumeric character.
-
-- Can only include alphanumeric characters, underscores, and hyphens. Spaces are not
-allowed.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FeatureType`
-
+`FeatureType`  <a name="cfn-sagemaker-featuregroup-featuredefinition-featuretype"></a>
 The value type of a feature. Valid values are Integral, Fractional, or String.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Integral | Fractional | String`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataCatalogConfig
-
-OfflineStoreConfig
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Integral | Fractional | String`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

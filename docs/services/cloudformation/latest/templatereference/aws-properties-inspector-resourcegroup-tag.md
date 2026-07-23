@@ -2,72 +2,53 @@
 title: "AWS::Inspector::ResourceGroup Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Inspector::ResourceGroup Tag
+<a name="aws-properties-inspector-resourcegroup-tag"></a>
 
-A key and value pair. This data type is used as a request parameter in the [SetTagsForResource](../../../../reference/inspector/v1/apireference/api-settagsforresource.md) action and a response element in the [ListTagsForResource](../../../../reference/inspector/v1/apireference/api-listtagsforresource.md) action.
+A key and value pair. This data type is used as a request parameter in the [SetTagsForResource](https://docs.aws.amazon.com/inspector/v1/APIReference/API_SetTagsForResource.html) action and a response element in the [ListTagsForResource](https://docs.aws.amazon.com/inspector/v1/APIReference/API_ListTagsForResource.html) action.
 
 ## Syntax
+<a name="aws-properties-inspector-resourcegroup-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-inspector-resourcegroup-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-inspector-resourcegroup-tag-key)" : {{String}},
+  "[Value](#cfn-inspector-resourcegroup-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-inspector-resourcegroup-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-inspector-resourcegroup-tag-key): {{String}}
+  [Value](#cfn-inspector-resourcegroup-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-inspector-resourcegroup-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-inspector-resourcegroup-tag-key"></a>
 A tag key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-inspector-resourcegroup-tag-value"></a>
 A value assigned to a tag key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Inspector::ResourceGroup
-
-Next
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

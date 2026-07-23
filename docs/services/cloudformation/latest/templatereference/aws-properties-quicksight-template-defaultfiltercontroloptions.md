@@ -2,131 +2,96 @@
 title: "AWS::QuickSight::Template DefaultFilterControlOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DefaultFilterControlOptions
+<a name="aws-properties-quicksight-template-defaultfiltercontroloptions"></a>
 
 The option that corresponds to the control type of the filter.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-defaultfiltercontroloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-defaultfiltercontroloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultDateTimePickerOptions" : DefaultDateTimePickerControlOptions,
-  "DefaultDropdownOptions" : DefaultFilterDropDownControlOptions,
-  "DefaultListOptions" : DefaultFilterListControlOptions,
-  "DefaultRelativeDateTimeOptions" : DefaultRelativeDateTimeControlOptions,
-  "DefaultSliderOptions" : DefaultSliderControlOptions,
-  "DefaultTextAreaOptions" : DefaultTextAreaControlOptions,
-  "DefaultTextFieldOptions" : DefaultTextFieldControlOptions
+  "[DefaultDateTimePickerOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultdatetimepickeroptions)" : {{DefaultDateTimePickerControlOptions}},
+  "[DefaultDropdownOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultdropdownoptions)" : {{DefaultFilterDropDownControlOptions}},
+  "[DefaultListOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultlistoptions)" : {{DefaultFilterListControlOptions}},
+  "[DefaultRelativeDateTimeOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultrelativedatetimeoptions)" : {{DefaultRelativeDateTimeControlOptions}},
+  "[DefaultSliderOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultslideroptions)" : {{DefaultSliderControlOptions}},
+  "[DefaultTextAreaOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaulttextareaoptions)" : {{DefaultTextAreaControlOptions}},
+  "[DefaultTextFieldOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaulttextfieldoptions)" : {{DefaultTextFieldControlOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-defaultfiltercontroloptions-syntax.yaml"></a>
 
-```yaml
-
-  DefaultDateTimePickerOptions:
-    DefaultDateTimePickerControlOptions
-  DefaultDropdownOptions:
-    DefaultFilterDropDownControlOptions
-  DefaultListOptions:
-    DefaultFilterListControlOptions
-  DefaultRelativeDateTimeOptions:
-    DefaultRelativeDateTimeControlOptions
-  DefaultSliderOptions:
-    DefaultSliderControlOptions
-  DefaultTextAreaOptions:
-    DefaultTextAreaControlOptions
-  DefaultTextFieldOptions:
-    DefaultTextFieldControlOptions
-
+```
+  [DefaultDateTimePickerOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultdatetimepickeroptions): {{
+    DefaultDateTimePickerControlOptions}}
+  [DefaultDropdownOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultdropdownoptions): {{
+    DefaultFilterDropDownControlOptions}}
+  [DefaultListOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultlistoptions): {{
+    DefaultFilterListControlOptions}}
+  [DefaultRelativeDateTimeOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultrelativedatetimeoptions): {{
+    DefaultRelativeDateTimeControlOptions}}
+  [DefaultSliderOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaultslideroptions): {{
+    DefaultSliderControlOptions}}
+  [DefaultTextAreaOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaulttextareaoptions): {{
+    DefaultTextAreaControlOptions}}
+  [DefaultTextFieldOptions](#cfn-quicksight-template-defaultfiltercontroloptions-defaulttextfieldoptions): {{
+    DefaultTextFieldControlOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-defaultfiltercontroloptions-properties"></a>
 
-`DefaultDateTimePickerOptions`
-
+`DefaultDateTimePickerOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaultdatetimepickeroptions"></a>
 The default options that correspond to the filter control type of a `DateTimePicker`.
+*Required*: No
+*Type*: [DefaultDateTimePickerControlOptions](aws-properties-quicksight-template-defaultdatetimepickercontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultDateTimePickerControlOptions](aws-properties-quicksight-template-defaultdatetimepickercontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultDropdownOptions`
-
+`DefaultDropdownOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaultdropdownoptions"></a>
 The default options that correspond to the `Dropdown` filter control type.
+*Required*: No
+*Type*: [DefaultFilterDropDownControlOptions](aws-properties-quicksight-template-defaultfilterdropdowncontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterDropDownControlOptions](aws-properties-quicksight-template-defaultfilterdropdowncontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultListOptions`
-
+`DefaultListOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaultlistoptions"></a>
 The default options that correspond to the `List` filter control type.
+*Required*: No
+*Type*: [DefaultFilterListControlOptions](aws-properties-quicksight-template-defaultfilterlistcontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterListControlOptions](aws-properties-quicksight-template-defaultfilterlistcontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultRelativeDateTimeOptions`
-
+`DefaultRelativeDateTimeOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaultrelativedatetimeoptions"></a>
 The default options that correspond to the `RelativeDateTime` filter control type.
+*Required*: No
+*Type*: [DefaultRelativeDateTimeControlOptions](aws-properties-quicksight-template-defaultrelativedatetimecontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultRelativeDateTimeControlOptions](aws-properties-quicksight-template-defaultrelativedatetimecontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultSliderOptions`
-
+`DefaultSliderOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaultslideroptions"></a>
 The default options that correspond to the `Slider` filter control type.
+*Required*: No
+*Type*: [DefaultSliderControlOptions](aws-properties-quicksight-template-defaultslidercontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultSliderControlOptions](aws-properties-quicksight-template-defaultslidercontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultTextAreaOptions`
-
+`DefaultTextAreaOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaulttextareaoptions"></a>
 The default options that correspond to the `TextArea` filter control type.
+*Required*: No
+*Type*: [DefaultTextAreaControlOptions](aws-properties-quicksight-template-defaulttextareacontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultTextAreaControlOptions](aws-properties-quicksight-template-defaulttextareacontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultTextFieldOptions`
-
+`DefaultTextFieldOptions`  <a name="cfn-quicksight-template-defaultfiltercontroloptions-defaulttextfieldoptions"></a>
 The default options that correspond to the `TextField` filter control type.
-
-_Required_: No
-
-_Type_: [DefaultTextFieldControlOptions](aws-properties-quicksight-template-defaulttextfieldcontroloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultFilterControlConfiguration
-
-DefaultFilterDropDownControlOptions
+*Required*: No
+*Type*: [DefaultTextFieldControlOptions](aws-properties-quicksight-template-defaulttextfieldcontroloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,80 +2,60 @@
 title: "AWS::GuardDuty::Detector CFNDataSourceConfigurations"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::Detector CFNDataSourceConfigurations
+<a name="aws-properties-guardduty-detector-cfndatasourceconfigurations"></a>
 
-Describes whether S3 data event logs, Kubernetes audit logs, or Malware Protection will
-be enabled as a data source when the detector is created.
+Describes whether S3 data event logs, Kubernetes audit logs, or Malware Protection will be enabled as a data source when the detector is created.
 
 ## Syntax
+<a name="aws-properties-guardduty-detector-cfndatasourceconfigurations-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-guardduty-detector-cfndatasourceconfigurations-syntax.json"></a>
 
-```json
-
+```
 {
-  "Kubernetes" : CFNKubernetesConfiguration,
-  "MalwareProtection" : CFNMalwareProtectionConfiguration,
-  "S3Logs" : CFNS3LogsConfiguration
+  "[Kubernetes](#cfn-guardduty-detector-cfndatasourceconfigurations-kubernetes)" : {{CFNKubernetesConfiguration}},
+  "[MalwareProtection](#cfn-guardduty-detector-cfndatasourceconfigurations-malwareprotection)" : {{CFNMalwareProtectionConfiguration}},
+  "[S3Logs](#cfn-guardduty-detector-cfndatasourceconfigurations-s3logs)" : {{CFNS3LogsConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-guardduty-detector-cfndatasourceconfigurations-syntax.yaml"></a>
 
-```yaml
-
-  Kubernetes:
-    CFNKubernetesConfiguration
-  MalwareProtection:
-    CFNMalwareProtectionConfiguration
-  S3Logs:
-    CFNS3LogsConfiguration
-
+```
+  [Kubernetes](#cfn-guardduty-detector-cfndatasourceconfigurations-kubernetes): {{
+    CFNKubernetesConfiguration}}
+  [MalwareProtection](#cfn-guardduty-detector-cfndatasourceconfigurations-malwareprotection): {{
+    CFNMalwareProtectionConfiguration}}
+  [S3Logs](#cfn-guardduty-detector-cfndatasourceconfigurations-s3logs): {{
+    CFNS3LogsConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-guardduty-detector-cfndatasourceconfigurations-properties"></a>
 
-`Kubernetes`
-
+`Kubernetes`  <a name="cfn-guardduty-detector-cfndatasourceconfigurations-kubernetes"></a>
 Describes which Kubernetes data sources are enabled for a detector.
+*Required*: No
+*Type*: [CFNKubernetesConfiguration](aws-properties-guardduty-detector-cfnkubernetesconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CFNKubernetesConfiguration](aws-properties-guardduty-detector-cfnkubernetesconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MalwareProtection`
-
+`MalwareProtection`  <a name="cfn-guardduty-detector-cfndatasourceconfigurations-malwareprotection"></a>
 Describes whether Malware Protection will be enabled as a data source.
+*Required*: No
+*Type*: [CFNMalwareProtectionConfiguration](aws-properties-guardduty-detector-cfnmalwareprotectionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CFNMalwareProtectionConfiguration](aws-properties-guardduty-detector-cfnmalwareprotectionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Logs`
-
+`S3Logs`  <a name="cfn-guardduty-detector-cfndatasourceconfigurations-s3logs"></a>
 Describes whether S3 data event logs are enabled as a data source.
-
-_Required_: No
-
-_Type_: [CFNS3LogsConfiguration](aws-properties-guardduty-detector-cfns3logsconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::GuardDuty::Detector
-
-CFNFeatureAdditionalConfiguration
+*Required*: No
+*Type*: [CFNS3LogsConfiguration](aws-properties-guardduty-detector-cfns3logsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

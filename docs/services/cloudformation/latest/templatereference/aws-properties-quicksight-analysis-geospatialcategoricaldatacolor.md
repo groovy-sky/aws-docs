@@ -2,66 +2,50 @@
 title: "AWS::QuickSight::Analysis GeospatialCategoricalDataColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialCategoricalDataColor
+<a name="aws-properties-quicksight-analysis-geospatialcategoricaldatacolor"></a>
 
 The categorical data color for a single category.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialcategoricaldatacolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialcategoricaldatacolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "DataValue" : String
+  "[Color](#cfn-quicksight-analysis-geospatialcategoricaldatacolor-color)" : {{String}},
+  "[DataValue](#cfn-quicksight-analysis-geospatialcategoricaldatacolor-datavalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialcategoricaldatacolor-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  DataValue: String
-
+```
+  [Color](#cfn-quicksight-analysis-geospatialcategoricaldatacolor-color): {{String}}
+  [DataValue](#cfn-quicksight-analysis-geospatialcategoricaldatacolor-datavalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialcategoricaldatacolor-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-analysis-geospatialcategoricaldatacolor-color"></a>
 The color and opacity values for the category data color.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataValue`
-
+`DataValue`  <a name="cfn-quicksight-analysis-geospatialcategoricaldatacolor-datavalue"></a>
 The data value for the category data color.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialCategoricalColor
-
-GeospatialCircleRadius
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

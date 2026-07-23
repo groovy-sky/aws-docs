@@ -2,82 +2,60 @@
 title: "AWS::QuickSight::Dashboard GeospatialMapStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialMapStyle
+<a name="aws-properties-quicksight-dashboard-geospatialmapstyle"></a>
 
 The map style properties for a map.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatialmapstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatialmapstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "BackgroundColor" : String,
-  "BaseMapStyle" : String,
-  "BaseMapVisibility" : String
+  "[BackgroundColor](#cfn-quicksight-dashboard-geospatialmapstyle-backgroundcolor)" : {{String}},
+  "[BaseMapStyle](#cfn-quicksight-dashboard-geospatialmapstyle-basemapstyle)" : {{String}},
+  "[BaseMapVisibility](#cfn-quicksight-dashboard-geospatialmapstyle-basemapvisibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatialmapstyle-syntax.yaml"></a>
 
-```yaml
-
-  BackgroundColor: String
-  BaseMapStyle: String
-  BaseMapVisibility: String
-
+```
+  [BackgroundColor](#cfn-quicksight-dashboard-geospatialmapstyle-backgroundcolor): {{String}}
+  [BaseMapStyle](#cfn-quicksight-dashboard-geospatialmapstyle-basemapstyle): {{String}}
+  [BaseMapVisibility](#cfn-quicksight-dashboard-geospatialmapstyle-basemapvisibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatialmapstyle-properties"></a>
 
-`BackgroundColor`
-
+`BackgroundColor`  <a name="cfn-quicksight-dashboard-geospatialmapstyle-backgroundcolor"></a>
 The background color and opacity values for a map.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}(?:[A-F0-9]{2})?$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BaseMapStyle`
-
+`BaseMapStyle`  <a name="cfn-quicksight-dashboard-geospatialmapstyle-basemapstyle"></a>
 The selected base map style.
+*Required*: No
+*Type*: String
+*Allowed values*: `LIGHT_GRAY | DARK_GRAY | STREET | IMAGERY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LIGHT_GRAY | DARK_GRAY | STREET | IMAGERY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BaseMapVisibility`
-
+`BaseMapVisibility`  <a name="cfn-quicksight-dashboard-geospatialmapstyle-basemapvisibility"></a>
 The state of visibility for the base map.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialMapState
-
-GeospatialMapStyleOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

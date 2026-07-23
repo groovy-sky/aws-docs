@@ -2,83 +2,62 @@
 title: "AWS::BedrockAgentCore::OnlineEvaluationConfig Rule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OnlineEvaluationConfig Rule
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule"></a>
 
-The evaluation rule containing sampling configuration, filters, and session settings.
+ The evaluation rule containing sampling configuration, filters, and session settings.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Filters" : [ Filter, ... ],
-  "SamplingConfig" : SamplingConfig,
-  "SessionConfig" : SessionConfig
+  "[Filters](#cfn-bedrockagentcore-onlineevaluationconfig-rule-filters)" : {{[ Filter, ... ]}},
+  "[SamplingConfig](#cfn-bedrockagentcore-onlineevaluationconfig-rule-samplingconfig)" : {{SamplingConfig}},
+  "[SessionConfig](#cfn-bedrockagentcore-onlineevaluationconfig-rule-sessionconfig)" : {{SessionConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule-syntax.yaml"></a>
 
-```yaml
-
-  Filters:
-    - Filter
-  SamplingConfig:
-    SamplingConfig
-  SessionConfig:
-    SessionConfig
-
+```
+  [Filters](#cfn-bedrockagentcore-onlineevaluationconfig-rule-filters): {{
+    - Filter}}
+  [SamplingConfig](#cfn-bedrockagentcore-onlineevaluationconfig-rule-samplingconfig): {{
+    SamplingConfig}}
+  [SessionConfig](#cfn-bedrockagentcore-onlineevaluationconfig-rule-sessionconfig): {{
+    SessionConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule-properties"></a>
 
-`Filters`
+`Filters`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-rule-filters"></a>
+ The list of filters that determine which agent traces should be included in the evaluation based on trace properties.
+*Required*: No
+*Type*: Array of [Filter](aws-properties-bedrockagentcore-onlineevaluationconfig-filter.md)
+*Minimum*: `0`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The list of filters that determine which agent traces should be included in the evaluation based on trace properties.
+`SamplingConfig`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-rule-samplingconfig"></a>
+ The sampling configuration that determines what percentage of agent traces to evaluate.
+*Required*: Yes
+*Type*: [SamplingConfig](aws-properties-bedrockagentcore-onlineevaluationconfig-samplingconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Filter](aws-properties-bedrockagentcore-onlineevaluationconfig-filter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SamplingConfig`
-
-The sampling configuration that determines what percentage of agent traces to evaluate.
-
-_Required_: Yes
-
-_Type_: [SamplingConfig](aws-properties-bedrockagentcore-onlineevaluationconfig-samplingconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionConfig`
-
-The session configuration that defines timeout settings for detecting when agent sessions are complete and ready for evaluation.
-
-_Required_: No
-
-_Type_: [SessionConfig](aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutputConfig
-
-SamplingConfig
+`SessionConfig`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-rule-sessionconfig"></a>
+ The session configuration that defines timeout settings for detecting when agent sessions are complete and ready for evaluation.
+*Required*: No
+*Type*: [SessionConfig](aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

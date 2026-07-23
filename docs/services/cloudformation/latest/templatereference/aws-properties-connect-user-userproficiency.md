@@ -2,97 +2,66 @@
 title: "AWS::Connect::User UserProficiency"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User UserProficiency
+<a name="aws-properties-connect-user-userproficiency"></a>
 
-###### Note
-
-A predefined attribute must be created before using `UserProficiencies`
-in the Cloudformation _User_ template. For more information, see
-[Predefined\
-attributes](../../../connect/latest/adminguide/predefined-attributes.md).
+**Note**
+A predefined attribute must be created before using `UserProficiencies` in the Cloudformation *User* template. For more information, see [Predefined attributes](https://docs.aws.amazon.com/connect/latest/adminguide/predefined-attributes.html).
 
 Proficiency of a user.
 
 ## Syntax
+<a name="aws-properties-connect-user-userproficiency-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-user-userproficiency-syntax.json"></a>
 
-```json
-
+```
 {
-  "AttributeName" : String,
-  "AttributeValue" : String,
-  "Level" : Number
+  "[AttributeName](#cfn-connect-user-userproficiency-attributename)" : {{String}},
+  "[AttributeValue](#cfn-connect-user-userproficiency-attributevalue)" : {{String}},
+  "[Level](#cfn-connect-user-userproficiency-level)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-user-userproficiency-syntax.yaml"></a>
 
-```yaml
-
-  AttributeName: String
-  AttributeValue: String
-  Level: Number
-
+```
+  [AttributeName](#cfn-connect-user-userproficiency-attributename): {{String}}
+  [AttributeValue](#cfn-connect-user-userproficiency-attributevalue): {{String}}
+  [Level](#cfn-connect-user-userproficiency-level): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-user-userproficiency-properties"></a>
 
-`AttributeName`
+`AttributeName`  <a name="cfn-connect-user-userproficiency-attributename"></a>
+The name of user’s proficiency. You must use a predefined attribute name that is present in the Amazon Connect instance.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of user’s proficiency. You must use a predefined attribute name that is
-present in the Amazon Connect instance.
+`AttributeValue`  <a name="cfn-connect-user-userproficiency-attributevalue"></a>
+The value of user’s proficiency. You must use a predefined attribute value that is present in the Amazon Connect instance.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AttributeValue`
-
-The value of user’s proficiency. You must use a predefined attribute value that is
-present in the Amazon Connect instance.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Level`
-
+`Level`  <a name="cfn-connect-user-userproficiency-level"></a>
 The level of the proficiency. The valid values are 1, 2, 3, 4 and 5.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UserPhoneConfig
-
-VoiceEnhancementConfig
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

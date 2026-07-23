@@ -2,80 +2,60 @@
 title: "AWS::MSK::Cluster ConnectivityInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster ConnectivityInfo
+<a name="aws-properties-msk-cluster-connectivityinfo"></a>
 
 Broker access controls.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-connectivityinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-connectivityinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "NetworkType" : String,
-  "PublicAccess" : PublicAccess,
-  "VpcConnectivity" : VpcConnectivity
+  "[NetworkType](#cfn-msk-cluster-connectivityinfo-networktype)" : {{String}},
+  "[PublicAccess](#cfn-msk-cluster-connectivityinfo-publicaccess)" : {{PublicAccess}},
+  "[VpcConnectivity](#cfn-msk-cluster-connectivityinfo-vpcconnectivity)" : {{VpcConnectivity}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-connectivityinfo-syntax.yaml"></a>
 
-```yaml
-
-  NetworkType: String
-  PublicAccess:
-    PublicAccess
-  VpcConnectivity:
-    VpcConnectivity
-
+```
+  [NetworkType](#cfn-msk-cluster-connectivityinfo-networktype): {{String}}
+  [PublicAccess](#cfn-msk-cluster-connectivityinfo-publicaccess): {{
+    PublicAccess}}
+  [VpcConnectivity](#cfn-msk-cluster-connectivityinfo-vpcconnectivity): {{
+    VpcConnectivity}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-connectivityinfo-properties"></a>
 
-`NetworkType`
-
+`NetworkType`  <a name="cfn-msk-cluster-connectivityinfo-networktype"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `IPV4 | DUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `IPV4 | DUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PublicAccess`
-
+`PublicAccess`  <a name="cfn-msk-cluster-connectivityinfo-publicaccess"></a>
 Access control settings for the cluster's brokers.
+*Required*: No
+*Type*: [PublicAccess](aws-properties-msk-cluster-publicaccess.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PublicAccess](aws-properties-msk-cluster-publicaccess.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcConnectivity`
-
+`VpcConnectivity`  <a name="cfn-msk-cluster-connectivityinfo-vpcconnectivity"></a>
 VPC connection control settings for brokers.
-
-_Required_: No
-
-_Type_: [VpcConnectivity](aws-properties-msk-cluster-vpcconnectivity.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationInfo
-
-EBSStorageInfo
+*Required*: No
+*Type*: [VpcConnectivity](aws-properties-msk-cluster-vpcconnectivity.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

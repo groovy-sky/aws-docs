@@ -2,128 +2,84 @@
 title: "AWS::AmplifyUIBuilder::Form FileUploaderFieldConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FileUploaderFieldConfig
+<a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig"></a>
 
 Describes the configuration for the file uploader field.
 
 ## Syntax
+<a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AcceptedFileTypes" : [ String, ... ],
-  "AccessLevel" : String,
-  "IsResumable" : Boolean,
-  "MaxFileCount" : Number,
-  "MaxSize" : Number,
-  "ShowThumbnails" : Boolean
+  "[AcceptedFileTypes](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-acceptedfiletypes)" : {{[ String, ... ]}},
+  "[AccessLevel](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-accesslevel)" : {{String}},
+  "[IsResumable](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-isresumable)" : {{Boolean}},
+  "[MaxFileCount](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-maxfilecount)" : {{Number}},
+  "[MaxSize](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-maxsize)" : {{Number}},
+  "[ShowThumbnails](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-showthumbnails)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig-syntax.yaml"></a>
 
-```yaml
-
-  AcceptedFileTypes:
-    - String
-  AccessLevel: String
-  IsResumable: Boolean
-  MaxFileCount: Number
-  MaxSize: Number
-  ShowThumbnails: Boolean
-
+```
+  [AcceptedFileTypes](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-acceptedfiletypes): {{
+    - String}}
+  [AccessLevel](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-accesslevel): {{String}}
+  [IsResumable](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-isresumable): {{Boolean}}
+  [MaxFileCount](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-maxfilecount): {{Number}}
+  [MaxSize](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-maxsize): {{Number}}
+  [ShowThumbnails](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-showthumbnails): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig-properties"></a>
 
-`AcceptedFileTypes`
+`AcceptedFileTypes`  <a name="cfn-amplifyuibuilder-form-fileuploaderfieldconfig-acceptedfiletypes"></a>
+The file types that are allowed to be uploaded by the file uploader. Provide this information in an array of strings specifying the valid file extensions.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The file types that are allowed to be uploaded by the file uploader. Provide this
-information in an array of strings specifying the valid file extensions.
+`AccessLevel`  <a name="cfn-amplifyuibuilder-form-fileuploaderfieldconfig-accesslevel"></a>
+The access level to assign to the uploaded files in the Amazon S3 bucket where they are stored. The valid values for this property are `private`, `protected`, or `public`. For detailed information about the permissions associated with each access level, see [File access levels](https://docs.amplify.aws/lib/storage/configureaccess/q/platform/js/) in the *Amplify documentation*.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `public | protected | private`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IsResumable`  <a name="cfn-amplifyuibuilder-form-fileuploaderfieldconfig-isresumable"></a>
+Allows the file upload operation to be paused and resumed. The default value is `false`.
+When `isResumable` is set to `true`, the file uploader uses a multipart upload to break the files into chunks before upload. The progress of the upload isn't continuous, because the file uploader uploads a chunk at a time.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
+`MaxFileCount`  <a name="cfn-amplifyuibuilder-form-fileuploaderfieldconfig-maxfilecount"></a>
+Specifies the maximum number of files that can be selected to upload. The default value is an unlimited number of files.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`MaxSize`  <a name="cfn-amplifyuibuilder-form-fileuploaderfieldconfig-maxsize"></a>
+The maximum file size in bytes that the file uploader will accept. The default value is an unlimited file size.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`AccessLevel`
-
-The access level to assign to the uploaded files in the Amazon S3 bucket where
-they are stored. The valid values for this property are `private`,
-`protected`, or `public`. For detailed information about the
-permissions associated with each access level, see [File access\
-levels](https://docs.amplify.aws/lib/storage/configureaccess/q/platform/js) in the _Amplify documentation_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `public | protected | private`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsResumable`
-
-Allows the file upload operation to be paused and resumed. The default value is
-`false`.
-
-When `isResumable` is set to `true`, the file uploader uses a
-multipart upload to break the files into chunks before upload. The progress of the upload
-isn't continuous, because the file uploader uploads a chunk at a time.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxFileCount`
-
-Specifies the maximum number of files that can be selected to upload. The default value is
-an unlimited number of files.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxSize`
-
-The maximum file size in bytes that the file uploader will accept. The default value is an
-unlimited file size.
-
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShowThumbnails`
-
-Specifies whether to display or hide the image preview after selecting a file for upload.
-The default value is `true` to display the image preview.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FieldValidationConfiguration
-
-FormButton
+`ShowThumbnails`  <a name="cfn-amplifyuibuilder-form-fileuploaderfieldconfig-showthumbnails"></a>
+Specifies whether to display or hide the image preview after selecting a file for upload. The default value is `true` to display the image preview.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

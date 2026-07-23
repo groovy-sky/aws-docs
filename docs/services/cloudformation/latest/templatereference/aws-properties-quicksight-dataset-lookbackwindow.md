@@ -2,80 +2,59 @@
 title: "AWS::QuickSight::DataSet LookbackWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet LookbackWindow
+<a name="aws-properties-quicksight-dataset-lookbackwindow"></a>
 
 The lookback window setup of an incremental refresh configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-lookbackwindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-lookbackwindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnName" : String,
-  "Size" : Number,
-  "SizeUnit" : String
+  "[ColumnName](#cfn-quicksight-dataset-lookbackwindow-columnname)" : {{String}},
+  "[Size](#cfn-quicksight-dataset-lookbackwindow-size)" : {{Number}},
+  "[SizeUnit](#cfn-quicksight-dataset-lookbackwindow-sizeunit)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-lookbackwindow-syntax.yaml"></a>
 
-```yaml
-
-  ColumnName: String
-  Size: Number
-  SizeUnit: String
-
+```
+  [ColumnName](#cfn-quicksight-dataset-lookbackwindow-columnname): {{String}}
+  [Size](#cfn-quicksight-dataset-lookbackwindow-size): {{Number}}
+  [SizeUnit](#cfn-quicksight-dataset-lookbackwindow-sizeunit): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-lookbackwindow-properties"></a>
 
-`ColumnName`
-
+`ColumnName`  <a name="cfn-quicksight-dataset-lookbackwindow-columnname"></a>
 The name of the lookback window column.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Size`
-
+`Size`  <a name="cfn-quicksight-dataset-lookbackwindow-size"></a>
 The lookback window column size.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SizeUnit`
-
+`SizeUnit`  <a name="cfn-quicksight-dataset-lookbackwindow-sizeunit"></a>
 The size unit that is used for the lookback window column. Valid values for this structure are `HOUR`, `DAY`, and `WEEK`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HOUR | DAY | WEEK`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogicalTableSource
-
-NewDefaultValues
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HOUR | DAY | WEEK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

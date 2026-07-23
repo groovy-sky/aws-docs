@@ -2,105 +2,78 @@
 title: "AWS::QuickSight::Template WordCloudChartConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template WordCloudChartConfiguration
+<a name="aws-properties-quicksight-template-wordcloudchartconfiguration"></a>
 
 The configuration of a word cloud visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-wordcloudchartconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-wordcloudchartconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryLabelOptions" : ChartAxisLabelOptions,
-  "FieldWells" : WordCloudFieldWells,
-  "Interactions" : VisualInteractionOptions,
-  "SortConfiguration" : WordCloudSortConfiguration,
-  "WordCloudOptions" : WordCloudOptions
+  "[CategoryLabelOptions](#cfn-quicksight-template-wordcloudchartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
+  "[FieldWells](#cfn-quicksight-template-wordcloudchartconfiguration-fieldwells)" : {{WordCloudFieldWells}},
+  "[Interactions](#cfn-quicksight-template-wordcloudchartconfiguration-interactions)" : {{VisualInteractionOptions}},
+  "[SortConfiguration](#cfn-quicksight-template-wordcloudchartconfiguration-sortconfiguration)" : {{WordCloudSortConfiguration}},
+  "[WordCloudOptions](#cfn-quicksight-template-wordcloudchartconfiguration-wordcloudoptions)" : {{WordCloudOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-wordcloudchartconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CategoryLabelOptions:
-    ChartAxisLabelOptions
-  FieldWells:
-    WordCloudFieldWells
-  Interactions:
-    VisualInteractionOptions
-  SortConfiguration:
-    WordCloudSortConfiguration
-  WordCloudOptions:
-    WordCloudOptions
-
+```
+  [CategoryLabelOptions](#cfn-quicksight-template-wordcloudchartconfiguration-categorylabeloptions): {{
+    ChartAxisLabelOptions}}
+  [FieldWells](#cfn-quicksight-template-wordcloudchartconfiguration-fieldwells): {{
+    WordCloudFieldWells}}
+  [Interactions](#cfn-quicksight-template-wordcloudchartconfiguration-interactions): {{
+    VisualInteractionOptions}}
+  [SortConfiguration](#cfn-quicksight-template-wordcloudchartconfiguration-sortconfiguration): {{
+    WordCloudSortConfiguration}}
+  [WordCloudOptions](#cfn-quicksight-template-wordcloudchartconfiguration-wordcloudoptions): {{
+    WordCloudOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-wordcloudchartconfiguration-properties"></a>
 
-`CategoryLabelOptions`
-
+`CategoryLabelOptions`  <a name="cfn-quicksight-template-wordcloudchartconfiguration-categorylabeloptions"></a>
 The label options (label text, label visibility, and sort icon visibility) for the word cloud category.
+*Required*: No
+*Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldWells`
-
+`FieldWells`  <a name="cfn-quicksight-template-wordcloudchartconfiguration-fieldwells"></a>
 The field wells of the visual.
+*Required*: No
+*Type*: [WordCloudFieldWells](aws-properties-quicksight-template-wordcloudfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [WordCloudFieldWells](aws-properties-quicksight-template-wordcloudfieldwells.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-template-wordcloudchartconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SortConfiguration`
-
+`SortConfiguration`  <a name="cfn-quicksight-template-wordcloudchartconfiguration-sortconfiguration"></a>
 The sort configuration of a word cloud visual.
+*Required*: No
+*Type*: [WordCloudSortConfiguration](aws-properties-quicksight-template-wordcloudsortconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [WordCloudSortConfiguration](aws-properties-quicksight-template-wordcloudsortconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WordCloudOptions`
-
+`WordCloudOptions`  <a name="cfn-quicksight-template-wordcloudchartconfiguration-wordcloudoptions"></a>
 The options for a word cloud visual.
-
-_Required_: No
-
-_Type_: [WordCloudOptions](aws-properties-quicksight-template-wordcloudoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordCloudAggregatedFieldWells
-
-WordCloudFieldWells
+*Required*: No
+*Type*: [WordCloudOptions](aws-properties-quicksight-template-wordcloudoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

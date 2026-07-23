@@ -2,185 +2,123 @@
 title: "AWS::QBusiness::DataAccessor AttributeFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::DataAccessor AttributeFilter
+<a name="aws-properties-qbusiness-dataaccessor-attributefilter"></a>
 
 Enables filtering of responses based on document attributes or metadata fields.
 
 ## Syntax
+<a name="aws-properties-qbusiness-dataaccessor-attributefilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-qbusiness-dataaccessor-attributefilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AndAllFilters" : [ AttributeFilter, ... ],
-  "ContainsAll" : DocumentAttribute,
-  "ContainsAny" : DocumentAttribute,
-  "EqualsTo" : DocumentAttribute,
-  "GreaterThan" : DocumentAttribute,
-  "GreaterThanOrEquals" : DocumentAttribute,
-  "LessThan" : DocumentAttribute,
-  "LessThanOrEquals" : DocumentAttribute,
-  "NotFilter" : AttributeFilter,
-  "OrAllFilters" : [ AttributeFilter, ... ]
+  "[AndAllFilters](#cfn-qbusiness-dataaccessor-attributefilter-andallfilters)" : {{[ AttributeFilter, ... ]}},
+  "[ContainsAll](#cfn-qbusiness-dataaccessor-attributefilter-containsall)" : {{DocumentAttribute}},
+  "[ContainsAny](#cfn-qbusiness-dataaccessor-attributefilter-containsany)" : {{DocumentAttribute}},
+  "[EqualsTo](#cfn-qbusiness-dataaccessor-attributefilter-equalsto)" : {{DocumentAttribute}},
+  "[GreaterThan](#cfn-qbusiness-dataaccessor-attributefilter-greaterthan)" : {{DocumentAttribute}},
+  "[GreaterThanOrEquals](#cfn-qbusiness-dataaccessor-attributefilter-greaterthanorequals)" : {{DocumentAttribute}},
+  "[LessThan](#cfn-qbusiness-dataaccessor-attributefilter-lessthan)" : {{DocumentAttribute}},
+  "[LessThanOrEquals](#cfn-qbusiness-dataaccessor-attributefilter-lessthanorequals)" : {{DocumentAttribute}},
+  "[NotFilter](#cfn-qbusiness-dataaccessor-attributefilter-notfilter)" : {{AttributeFilter}},
+  "[OrAllFilters](#cfn-qbusiness-dataaccessor-attributefilter-orallfilters)" : {{[ AttributeFilter, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-qbusiness-dataaccessor-attributefilter-syntax.yaml"></a>
 
-```yaml
-
-  AndAllFilters:
-    - AttributeFilter
-  ContainsAll:
-    DocumentAttribute
-  ContainsAny:
-    DocumentAttribute
-  EqualsTo:
-    DocumentAttribute
-  GreaterThan:
-    DocumentAttribute
-  GreaterThanOrEquals:
-    DocumentAttribute
-  LessThan:
-    DocumentAttribute
-  LessThanOrEquals:
-    DocumentAttribute
-  NotFilter:
-    AttributeFilter
-  OrAllFilters:
-    - AttributeFilter
-
+```
+  [AndAllFilters](#cfn-qbusiness-dataaccessor-attributefilter-andallfilters): {{
+    - AttributeFilter}}
+  [ContainsAll](#cfn-qbusiness-dataaccessor-attributefilter-containsall): {{
+    DocumentAttribute}}
+  [ContainsAny](#cfn-qbusiness-dataaccessor-attributefilter-containsany): {{
+    DocumentAttribute}}
+  [EqualsTo](#cfn-qbusiness-dataaccessor-attributefilter-equalsto): {{
+    DocumentAttribute}}
+  [GreaterThan](#cfn-qbusiness-dataaccessor-attributefilter-greaterthan): {{
+    DocumentAttribute}}
+  [GreaterThanOrEquals](#cfn-qbusiness-dataaccessor-attributefilter-greaterthanorequals): {{
+    DocumentAttribute}}
+  [LessThan](#cfn-qbusiness-dataaccessor-attributefilter-lessthan): {{
+    DocumentAttribute}}
+  [LessThanOrEquals](#cfn-qbusiness-dataaccessor-attributefilter-lessthanorequals): {{
+    DocumentAttribute}}
+  [NotFilter](#cfn-qbusiness-dataaccessor-attributefilter-notfilter): {{
+    AttributeFilter}}
+  [OrAllFilters](#cfn-qbusiness-dataaccessor-attributefilter-orallfilters): {{
+    - AttributeFilter}}
 ```
 
 ## Properties
+<a name="aws-properties-qbusiness-dataaccessor-attributefilter-properties"></a>
 
-`AndAllFilters`
-
+`AndAllFilters`  <a name="cfn-qbusiness-dataaccessor-attributefilter-andallfilters"></a>
 Performs a logical `AND` operation on all supplied filters.
+*Required*: No
+*Type*: Array of [AttributeFilter](#aws-properties-qbusiness-dataaccessor-attributefilter)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ContainsAll`  <a name="cfn-qbusiness-dataaccessor-attributefilter-containsall"></a>
+Returns `true` when a document contains all the specified document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `stringListValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [AttributeFilter](aws-properties-qbusiness-dataaccessor-attributefilter.md)
+`ContainsAny`  <a name="cfn-qbusiness-dataaccessor-attributefilter-containsany"></a>
+Returns `true` when a document contains any of the specified document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `stringListValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`EqualsTo`  <a name="cfn-qbusiness-dataaccessor-attributefilter-equalsto"></a>
+Performs an equals operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue`, `longValue`, `stringListValue` and `stringValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ContainsAll`
+`GreaterThan`  <a name="cfn-qbusiness-dataaccessor-attributefilter-greaterthan"></a>
+Performs a greater than operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Returns `true` when a document contains all the specified document
-attributes or metadata fields. Supported for the following [document attribute value types](../../../amazonq/latest/api-reference/api-documentattributevalue.md):
-`stringListValue`.
+`GreaterThanOrEquals`  <a name="cfn-qbusiness-dataaccessor-attributefilter-greaterthanorequals"></a>
+Performs a greater or equals than operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`LessThan`  <a name="cfn-qbusiness-dataaccessor-attributefilter-lessthan"></a>
+Performs a less than operation on two document attributes or metadata fields. Supported for the following [document attribute value types](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+`LessThanOrEquals`  <a name="cfn-qbusiness-dataaccessor-attributefilter-lessthanorequals"></a>
+Performs a less than or equals operation on two document attributes or metadata fields.Supported for the following [document attribute value type](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DocumentAttributeValue.html): `dateValue` and `longValue`.
+*Required*: No
+*Type*: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContainsAny`
-
-Returns `true` when a document contains any of the specified document
-attributes or metadata fields. Supported for the following [document attribute value types](../../../amazonq/latest/api-reference/api-documentattributevalue.md):
-`stringListValue`.
-
-_Required_: No
-
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EqualsTo`
-
-Performs an equals operation on two document attributes or metadata fields. Supported
-for the following [document attribute value types](../../../amazonq/latest/api-reference/api-documentattributevalue.md): `dateValue`,
-`longValue`, `stringListValue` and
-`stringValue`.
-
-_Required_: No
-
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GreaterThan`
-
-Performs a greater than operation on two document attributes or metadata fields.
-Supported for the following [document attribute value types](../../../amazonq/latest/api-reference/api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-_Required_: No
-
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GreaterThanOrEquals`
-
-Performs a greater or equals than operation on two document attributes or metadata
-fields. Supported for the following [document attribute value types](../../../amazonq/latest/api-reference/api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-_Required_: No
-
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LessThan`
-
-Performs a less than operation on two document attributes or metadata fields.
-Supported for the following [document attribute value types](../../../amazonq/latest/api-reference/api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-_Required_: No
-
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LessThanOrEquals`
-
-Performs a less than or equals operation on two document attributes or metadata
-fields.Supported for the following [document attribute value type](../../../amazonq/latest/api-reference/api-documentattributevalue.md): `dateValue`
-and `longValue`.
-
-_Required_: No
-
-_Type_: [DocumentAttribute](aws-properties-qbusiness-dataaccessor-documentattribute.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotFilter`
-
+`NotFilter`  <a name="cfn-qbusiness-dataaccessor-attributefilter-notfilter"></a>
 Performs a logical `NOT` operation on all supplied filters.
+*Required*: No
+*Type*: [AttributeFilter](#aws-properties-qbusiness-dataaccessor-attributefilter)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AttributeFilter](aws-properties-qbusiness-dataaccessor-attributefilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrAllFilters`
-
-Performs a logical `OR` operation on all supplied filters.
-
-_Required_: No
-
-_Type_: Array of [AttributeFilter](aws-properties-qbusiness-dataaccessor-attributefilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ActionFilterConfiguration
-
-DataAccessorAuthenticationConfiguration
+`OrAllFilters`  <a name="cfn-qbusiness-dataaccessor-attributefilter-orallfilters"></a>
+ Performs a logical `OR` operation on all supplied filters.
+*Required*: No
+*Type*: Array of [AttributeFilter](#aws-properties-qbusiness-dataaccessor-attributefilter)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

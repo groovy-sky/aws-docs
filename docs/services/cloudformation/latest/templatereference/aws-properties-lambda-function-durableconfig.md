@@ -2,72 +2,62 @@
 title: "AWS::Lambda::Function DurableConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Function DurableConfig
+<a name="aws-properties-lambda-function-durableconfig"></a>
 
-Configuration settings for [durable functions](../../../lambda/latest/dg/durable-functions.md), including execution timeout and retention period for execution history.
+Configuration settings for [durable functions](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html), including execution timeout, retention period for execution history, and an optional ARN of the AWS Key Management Service (AWS KMS) customer managed key that is used to encrypt your durable execution's payload data, including input, output, and error payloads.
 
 ## Syntax
+<a name="aws-properties-lambda-function-durableconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-function-durableconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExecutionTimeout" : Integer,
-  "RetentionPeriodInDays" : Integer
+  "[ExecutionTimeout](#cfn-lambda-function-durableconfig-executiontimeout)" : {{Integer}},
+  "[KMSKeyArn](#cfn-lambda-function-durableconfig-kmskeyarn)" : {{String}},
+  "[RetentionPeriodInDays](#cfn-lambda-function-durableconfig-retentionperiodindays)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-function-durableconfig-syntax.yaml"></a>
 
-```yaml
-
-  ExecutionTimeout: Integer
-  RetentionPeriodInDays: Integer
-
+```
+  [ExecutionTimeout](#cfn-lambda-function-durableconfig-executiontimeout): {{Integer}}
+  [KMSKeyArn](#cfn-lambda-function-durableconfig-kmskeyarn): {{String}}
+  [RetentionPeriodInDays](#cfn-lambda-function-durableconfig-retentionperiodindays): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-function-durableconfig-properties"></a>
 
-`ExecutionTimeout`
-
+`ExecutionTimeout`  <a name="cfn-lambda-function-durableconfig-executiontimeout"></a>
 The maximum time (in seconds) that a durable execution can run before timing out. This timeout applies to the entire durable execution, not individual function invocations.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `31622400`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`KMSKeyArn`  <a name="cfn-lambda-function-durableconfig-kmskeyarn"></a>
+The ARN of the AWS Key Management Service (AWS KMS) customer managed key that is used to encrypt your durable execution's payload data, including input, output, and error payloads.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:[a-z0-9-.]+:.*)|()$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `31622400`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RetentionPeriodInDays`
-
+`RetentionPeriodInDays`  <a name="cfn-lambda-function-durableconfig-retentionperiodindays"></a>
 The number of days to retain execution history after a durable execution completes. After this period, execution history is no longer available through the GetDurableExecutionHistory API.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `90`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeadLetterConfig
-
-Environment
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `90`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

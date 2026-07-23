@@ -2,157 +2,120 @@
 title: "AWS::Route53Resolver::ResolverQueryLoggingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::ResolverQueryLoggingConfig
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig"></a>
 
 The AWS::Route53Resolver::ResolverQueryLoggingConfig resource is a complex type that contains settings for one query logging configuration.
 
 ## Syntax
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Route53Resolver::ResolverQueryLoggingConfig",
   "Properties" : {
-      "DestinationArn" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[DestinationArn](#cfn-route53resolver-resolverqueryloggingconfig-destinationarn)" : {{String}},
+      "[Name](#cfn-route53resolver-resolverqueryloggingconfig-name)" : {{String}},
+      "[Tags](#cfn-route53resolver-resolverqueryloggingconfig-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Route53Resolver::ResolverQueryLoggingConfig
 Properties:
-  DestinationArn: String
-  Name: String
-  Tags:
-    - Tag
-
+  [DestinationArn](#cfn-route53resolver-resolverqueryloggingconfig-destinationarn): {{String}}
+  [Name](#cfn-route53resolver-resolverqueryloggingconfig-name): {{String}}
+  [Tags](#cfn-route53resolver-resolverqueryloggingconfig-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-properties"></a>
 
-`DestinationArn`
+`DestinationArn`  <a name="cfn-route53resolver-resolverqueryloggingconfig-destinationarn"></a>
+The ARN of the resource that you want Resolver to send query logs: an Amazon S3 bucket, a CloudWatch Logs log group, or a Kinesis Data Firehose delivery stream.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `600`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The ARN of the resource that you want Resolver to send query logs: an Amazon S3 bucket, a CloudWatch Logs log group, or
-a Kinesis Data Firehose delivery stream.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `600`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Name`
-
+`Name`  <a name="cfn-route53resolver-resolverqueryloggingconfig-name"></a>
 The name of the query logging configuration.
+*Required*: No
+*Type*: String
+*Pattern*: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-route53resolver-resolverqueryloggingconfig-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-route53resolver-resolverqueryloggingconfig-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-route53resolver-resolverqueryloggingconfig-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-return-values"></a>
 
 ### Ref
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the resource that contains settings for one query logging configuration.
 
 For example: `{ "Ref": "rqlc-1111222233334444" }`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-route53resolver-resolverqueryloggingconfig-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) for the query logging configuration.
 
-`AssociationCount`
-
+`AssociationCount`  <a name="AssociationCount-fn::getatt"></a>
 The number of VPCs that are associated with the query logging configuration.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The date and time that the query logging configuration was created, in Unix time format and Coordinated Universal Time (UTC).
 
-`CreatorRequestId`
+`CreatorRequestId`  <a name="CreatorRequestId-fn::getatt"></a>
+A unique string that identifies the request that created the query logging configuration. The `CreatorRequestId` allows failed requests to be retried without the risk of running the operation twice.
 
-A unique string that identifies the request that created the query logging configuration. The `CreatorRequestId` allows failed requests
-to be retried without the risk of running the operation twice.
-
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID for the query logging configuration.
 
-`OwnerId`
-
+`OwnerId`  <a name="OwnerId-fn::getatt"></a>
 The AWS account ID for the account that created the query logging configuration.
 
-`ShareStatus`
+`ShareStatus`  <a name="ShareStatus-fn::getatt"></a>
+An indication of whether the query logging configuration is shared with other AWS accounts, or was shared with the current account by another AWS account. Sharing is configured through AWS Resource Access Manager (AWS RAM).
 
-An indication of whether the query logging configuration is shared with other AWS accounts, or was shared with the current account by another
-AWS account. Sharing is configured through AWS Resource Access Manager (AWS RAM).
-
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The status of the specified query logging configuration. Valid values include the following:
-
-- `CREATING`: Resolver is creating the query logging configuration.
-
-- `CREATED`: The query logging configuration was successfully created.
-Resolver is logging queries that originate in the specified VPC.
-
-- `DELETING`: Resolver is deleting this query logging configuration.
-
-- `FAILED`: Resolver can't deliver logs to the location that is specified in the query logging configuration.
-Here are two common causes:
-
-- The specified destination (for example, an Amazon S3 bucket) was deleted.
-
-- Permissions don't allow sending logs to the destination.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
++ `CREATING`: Resolver is creating the query logging configuration.
++ `CREATED`: The query logging configuration was successfully created. Resolver is logging queries that originate in the specified VPC.
++ `DELETING`: Resolver is deleting this query logging configuration.
++ `FAILED`: Resolver can't deliver logs to the location that is specified in the query logging configuration. Here are two common causes:
+  + The specified destination (for example, an Amazon S3 bucket) was deleted.
+  + Permissions don't allow sending logs to the destination.
 
 All content copied from https://docs.aws.amazon.com/.

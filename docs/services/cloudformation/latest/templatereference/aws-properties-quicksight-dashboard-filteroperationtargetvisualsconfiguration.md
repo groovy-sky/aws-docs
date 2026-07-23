@@ -2,55 +2,44 @@
 title: "AWS::QuickSight::Dashboard FilterOperationTargetVisualsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard FilterOperationTargetVisualsConfiguration
+<a name="aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration"></a>
 
 The configuration of target visuals that you want to be filtered.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "SameSheetTargetVisualConfiguration" : SameSheetTargetVisualConfiguration
+  "[SameSheetTargetVisualConfiguration](#cfn-quicksight-dashboard-filteroperationtargetvisualsconfiguration-samesheettargetvisualconfiguration)" : {{SameSheetTargetVisualConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  SameSheetTargetVisualConfiguration:
-    SameSheetTargetVisualConfiguration
-
+```
+  [SameSheetTargetVisualConfiguration](#cfn-quicksight-dashboard-filteroperationtargetvisualsconfiguration-samesheettargetvisualconfiguration): {{
+    SameSheetTargetVisualConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-filteroperationtargetvisualsconfiguration-properties"></a>
 
-`SameSheetTargetVisualConfiguration`
-
+`SameSheetTargetVisualConfiguration`  <a name="cfn-quicksight-dashboard-filteroperationtargetvisualsconfiguration-samesheettargetvisualconfiguration"></a>
 The configuration of the same-sheet target visuals that you want to be filtered.
-
-_Required_: No
-
-_Type_: [SameSheetTargetVisualConfiguration](aws-properties-quicksight-dashboard-samesheettargetvisualconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterOperationSelectedFieldsConfiguration
-
-FilterRelativeDateTimeControl
+*Required*: No
+*Type*: [SameSheetTargetVisualConfiguration](aws-properties-quicksight-dashboard-samesheettargetvisualconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

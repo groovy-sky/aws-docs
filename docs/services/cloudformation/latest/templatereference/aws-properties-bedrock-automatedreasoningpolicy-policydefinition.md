@@ -2,97 +2,71 @@
 title: "AWS::Bedrock::AutomatedReasoningPolicy PolicyDefinition"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::AutomatedReasoningPolicy PolicyDefinition
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinition"></a>
 
 The complete policy definition containing rules, variables, and types.
 
 ## Syntax
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinition-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinition-syntax.json"></a>
 
-```json
-
+```
 {
-  "Rules" : [ PolicyDefinitionRule, ... ],
-  "Types" : [ PolicyDefinitionType, ... ],
-  "Variables" : [ PolicyDefinitionVariable, ... ],
-  "Version" : String
+  "[Rules](#cfn-bedrock-automatedreasoningpolicy-policydefinition-rules)" : {{[ PolicyDefinitionRule, ... ]}},
+  "[Types](#cfn-bedrock-automatedreasoningpolicy-policydefinition-types)" : {{[ PolicyDefinitionType, ... ]}},
+  "[Variables](#cfn-bedrock-automatedreasoningpolicy-policydefinition-variables)" : {{[ PolicyDefinitionVariable, ... ]}},
+  "[Version](#cfn-bedrock-automatedreasoningpolicy-policydefinition-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinition-syntax.yaml"></a>
 
-```yaml
-
-  Rules:
-    - PolicyDefinitionRule
-  Types:
-    - PolicyDefinitionType
-  Variables:
-    - PolicyDefinitionVariable
-  Version: String
-
+```
+  [Rules](#cfn-bedrock-automatedreasoningpolicy-policydefinition-rules): {{
+    - PolicyDefinitionRule}}
+  [Types](#cfn-bedrock-automatedreasoningpolicy-policydefinition-types): {{
+    - PolicyDefinitionType}}
+  [Variables](#cfn-bedrock-automatedreasoningpolicy-policydefinition-variables): {{
+    - PolicyDefinitionVariable}}
+  [Version](#cfn-bedrock-automatedreasoningpolicy-policydefinition-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinition-properties"></a>
 
-`Rules`
-
+`Rules`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinition-rules"></a>
 The collection of rules that define the policy logic.
+*Required*: No
+*Type*: Array of [PolicyDefinitionRule](aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule.md)
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PolicyDefinitionRule](aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule.md)
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Types`
-
+`Types`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinition-types"></a>
 The custom types defined within the policy definition.
+*Required*: No
+*Type*: Array of [PolicyDefinitionType](aws-properties-bedrock-automatedreasoningpolicy-policydefinitiontype.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PolicyDefinitionType](aws-properties-bedrock-automatedreasoningpolicy-policydefinitiontype.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Variables`
-
+`Variables`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinition-variables"></a>
 The variables used within the policy definition.
+*Required*: No
+*Type*: Array of [PolicyDefinitionVariable](aws-properties-bedrock-automatedreasoningpolicy-policydefinitionvariable.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PolicyDefinitionVariable](aws-properties-bedrock-automatedreasoningpolicy-policydefinitionvariable.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Version`
-
+`Version`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinition-version"></a>
 The version of the policy definition.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Bedrock::AutomatedReasoningPolicy
-
-PolicyDefinitionRule
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

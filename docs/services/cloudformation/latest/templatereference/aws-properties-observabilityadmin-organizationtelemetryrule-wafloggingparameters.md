@@ -2,82 +2,61 @@
 title: "AWS::ObservabilityAdmin::OrganizationTelemetryRule WAFLoggingParameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule WAFLoggingParameters
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-wafloggingparameters"></a>
 
-Configuration parameters for WAF logging, including redacted fields and logging filters.
+ Configuration parameters for WAF logging, including redacted fields and logging filters.
 
 ## Syntax
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-wafloggingparameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-wafloggingparameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "LoggingFilter" : LoggingFilter,
-  "LogType" : String,
-  "RedactedFields" : [ FieldToMatch, ... ]
+  "[LoggingFilter](#cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-loggingfilter)" : {{LoggingFilter}},
+  "[LogType](#cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-logtype)" : {{String}},
+  "[RedactedFields](#cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-redactedfields)" : {{[ FieldToMatch, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-wafloggingparameters-syntax.yaml"></a>
 
-```yaml
-
-  LoggingFilter:
-    LoggingFilter
-  LogType: String
-  RedactedFields:
-    - FieldToMatch
-
+```
+  [LoggingFilter](#cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-loggingfilter): {{
+    LoggingFilter}}
+  [LogType](#cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-logtype): {{String}}
+  [RedactedFields](#cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-redactedfields): {{
+    - FieldToMatch}}
 ```
 
 ## Properties
+<a name="aws-properties-observabilityadmin-organizationtelemetryrule-wafloggingparameters-properties"></a>
 
-`LoggingFilter`
+`LoggingFilter`  <a name="cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-loggingfilter"></a>
+ A filter configuration that determines which WAF log records to include or exclude.
+*Required*: No
+*Type*: [LoggingFilter](aws-properties-observabilityadmin-organizationtelemetryrule-loggingfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A filter configuration that determines which WAF log records to include or exclude.
+`LogType`  <a name="cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-logtype"></a>
+ The type of WAF logs to collect (currently supports WAF\_LOGS).
+*Required*: No
+*Type*: String
+*Allowed values*: `WAF_LOGS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [LoggingFilter](aws-properties-observabilityadmin-organizationtelemetryrule-loggingfilter.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogType`
-
-The type of WAF logs to collect (currently supports WAF\_LOGS).
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `WAF_LOGS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RedactedFields`
-
-The fields to redact from WAF logs to protect sensitive information.
-
-_Required_: No
-
-_Type_: Array of [FieldToMatch](aws-properties-observabilityadmin-organizationtelemetryrule-fieldtomatch.md)
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VPCFlowLogParameters
-
-AWS::ObservabilityAdmin::S3TableIntegration
+`RedactedFields`  <a name="cfn-observabilityadmin-organizationtelemetryrule-wafloggingparameters-redactedfields"></a>
+ The fields to redact from WAF logs to protect sensitive information.
+*Required*: No
+*Type*: Array of [FieldToMatch](aws-properties-observabilityadmin-organizationtelemetryrule-fieldtomatch.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

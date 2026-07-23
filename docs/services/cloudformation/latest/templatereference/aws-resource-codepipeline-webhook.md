@@ -2,265 +2,182 @@
 title: "AWS::CodePipeline::Webhook"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Webhook
+<a name="aws-resource-codepipeline-webhook"></a>
 
-The `AWS::CodePipeline::Webhook` resource creates and registers your
-webhook. After the webhook is created and registered, it triggers your pipeline to start every
-time an external event occurs. For more information, see [Migrate polling pipelines\
-to use event-based change detection](../../../codepipeline/latest/userguide/update-change-detection.md) in the _AWS CodePipeline User_
-_Guide_.
+The `AWS::CodePipeline::Webhook` resource creates and registers your webhook. After the webhook is created and registered, it triggers your pipeline to start every time an external event occurs. For more information, see [Migrate polling pipelines to use event-based change detection](https://docs.aws.amazon.com/codepipeline/latest/userguide/update-change-detection.html) in the *AWS CodePipeline User Guide*.
 
-We strongly recommend that you use AWS Secrets Manager to store your
-credentials. If you use Secrets Manager, you must have already configured and stored your
-secret parameters in Secrets Manager. For more information, see [Using Dynamic References to Specify Template Values](../userguide/dynamic-references.md#dynamic-references-secretsmanager).
+We strongly recommend that you use AWS Secrets Manager to store your credentials. If you use Secrets Manager, you must have already configured and stored your secret parameters in Secrets Manager. For more information, see [Using Dynamic References to Specify Template Values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html#dynamic-references-secretsmanager).
 
-###### Important
-
-When passing secret parameters, do not enter the value directly into the template. The
-value is rendered as plaintext and is therefore readable. For security reasons, do not use
-plaintext in your AWS CloudFormation template to store your credentials.
+**Important**
+When passing secret parameters, do not enter the value directly into the template. The value is rendered as plaintext and is therefore readable. For security reasons, do not use plaintext in your AWS CloudFormation template to store your credentials.
 
 ## Syntax
+<a name="aws-resource-codepipeline-webhook-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-codepipeline-webhook-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CodePipeline::Webhook",
   "Properties" : {
-      "Authentication" : String,
-      "AuthenticationConfiguration" : WebhookAuthConfiguration,
-      "Filters" : [ WebhookFilterRule, ... ],
-      "Name" : String,
-      "RegisterWithThirdParty" : Boolean,
-      "TargetAction" : String,
-      "TargetPipeline" : String,
-      "TargetPipelineVersion" : Integer
+      "[Authentication](#cfn-codepipeline-webhook-authentication)" : {{String}},
+      "[AuthenticationConfiguration](#cfn-codepipeline-webhook-authenticationconfiguration)" : {{WebhookAuthConfiguration}},
+      "[Filters](#cfn-codepipeline-webhook-filters)" : {{[ WebhookFilterRule, ... ]}},
+      "[Name](#cfn-codepipeline-webhook-name)" : {{String}},
+      "[RegisterWithThirdParty](#cfn-codepipeline-webhook-registerwiththirdparty)" : {{Boolean}},
+      "[Tags](#cfn-codepipeline-webhook-tags)" : {{[ Tag, ... ]}},
+      "[TargetAction](#cfn-codepipeline-webhook-targetaction)" : {{String}},
+      "[TargetPipeline](#cfn-codepipeline-webhook-targetpipeline)" : {{String}},
+      "[TargetPipelineVersion](#cfn-codepipeline-webhook-targetpipelineversion)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-codepipeline-webhook-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CodePipeline::Webhook
 Properties:
-  Authentication: String
-  AuthenticationConfiguration:
-    WebhookAuthConfiguration
-  Filters:
-    - WebhookFilterRule
-  Name: String
-  RegisterWithThirdParty: Boolean
-  TargetAction: String
-  TargetPipeline: String
-  TargetPipelineVersion: Integer
-
+  [Authentication](#cfn-codepipeline-webhook-authentication): {{String}}
+  [AuthenticationConfiguration](#cfn-codepipeline-webhook-authenticationconfiguration): {{
+    WebhookAuthConfiguration}}
+  [Filters](#cfn-codepipeline-webhook-filters): {{
+    - WebhookFilterRule}}
+  [Name](#cfn-codepipeline-webhook-name): {{String}}
+  [RegisterWithThirdParty](#cfn-codepipeline-webhook-registerwiththirdparty): {{Boolean}}
+  [Tags](#cfn-codepipeline-webhook-tags): {{
+    - Tag}}
+  [TargetAction](#cfn-codepipeline-webhook-targetaction): {{String}}
+  [TargetPipeline](#cfn-codepipeline-webhook-targetpipeline): {{String}}
+  [TargetPipelineVersion](#cfn-codepipeline-webhook-targetpipelineversion): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-codepipeline-webhook-properties"></a>
 
-`Authentication`
-
+`Authentication`  <a name="cfn-codepipeline-webhook-authentication"></a>
 Supported options are GITHUB\_HMAC, IP, and UNAUTHENTICATED.
-
-###### Important
-
-When creating CodePipeline webhooks, do not use your own credentials or
-reuse the same secret token across multiple webhooks. For optimal security, generate
-a unique secret token for each webhook you create. The secret token is an arbitrary
-string that you provide, which GitHub uses to compute and sign the webhook payloads
-sent to CodePipeline, for protecting the integrity and authenticity of the
-webhook payloads. Using your own credentials or reusing the same token across
-multiple webhooks can lead to security vulnerabilities.
-
-###### Note
-
+When creating CodePipeline webhooks, do not use your own credentials or reuse the same secret token across multiple webhooks. For optimal security, generate a unique secret token for each webhook you create. The secret token is an arbitrary string that you provide, which GitHub uses to compute and sign the webhook payloads sent to CodePipeline, for protecting the integrity and authenticity of the webhook payloads. Using your own credentials or reusing the same token across multiple webhooks can lead to security vulnerabilities.
 If a secret token was provided, it will be redacted in the response.
++ For information about the authentication scheme implemented by GITHUB\_HMAC, see [Securing your webhooks](https://developer.github.com/webhooks/securing/) on the GitHub Developer website.
++  IP rejects webhooks trigger requests unless they originate from an IP address in the IP range whitelisted in the authentication configuration.
++  UNAUTHENTICATED accepts all webhook trigger requests regardless of origin.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `GITHUB_HMAC | IP | UNAUTHENTICATED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- For information about the authentication scheme implemented by GITHUB\_HMAC,
-see [Securing your\
-webhooks](https://developer.github.com/webhooks/securing) on the GitHub Developer website.
+`AuthenticationConfiguration`  <a name="cfn-codepipeline-webhook-authenticationconfiguration"></a>
+Properties that configure the authentication applied to incoming webhook trigger requests. The required properties depend on the authentication type. For GITHUB\_HMAC, only the `SecretToken `property must be set. For IP, only the `AllowedIPRange `property must be set to a valid CIDR range. For UNAUTHENTICATED, no properties can be set.
+*Required*: Yes
+*Type*: [WebhookAuthConfiguration](aws-properties-codepipeline-webhook-webhookauthconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- IP rejects webhooks trigger requests unless they originate from an IP
-address in the IP range whitelisted in the authentication
-configuration.
+`Filters`  <a name="cfn-codepipeline-webhook-filters"></a>
+A list of rules applied to the body/payload sent in the POST request to a webhook URL. All defined rules must pass for the request to be accepted and the pipeline started.
+*Required*: Yes
+*Type*: Array of [WebhookFilterRule](aws-properties-codepipeline-webhook-webhookfilterrule.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- UNAUTHENTICATED accepts all webhook trigger requests regardless of
-origin.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `GITHUB_HMAC | IP | UNAUTHENTICATED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AuthenticationConfiguration`
-
-Properties that configure the authentication applied to incoming webhook trigger
-requests. The required properties depend on the authentication type. For GITHUB\_HMAC,
-only the `SecretToken ` property must be set. For IP, only the
-`AllowedIPRange ` property must be set to a valid CIDR range. For
-UNAUTHENTICATED, no properties can be set.
-
-_Required_: Yes
-
-_Type_: [WebhookAuthConfiguration](aws-properties-codepipeline-webhook-webhookauthconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Filters`
-
-A list of rules applied to the body/payload sent in the POST request to a webhook
-URL. All defined rules must pass for the request to be accepted and the pipeline
-started.
-
-_Required_: Yes
-
-_Type_: Array of [WebhookFilterRule](aws-properties-codepipeline-webhook-webhookfilterrule.md)
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-codepipeline-webhook-name"></a>
 The name of the webhook.
+*Required*: No
+*Type*: String
+*Pattern*: `[A-Za-z0-9.@\-_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RegisterWithThirdParty`  <a name="cfn-codepipeline-webhook-registerwiththirdparty"></a>
+Configures a connection between the webhook that was created and the external tool with events to be detected.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Tags`  <a name="cfn-codepipeline-webhook-tags"></a>
+Specifies the tags applied to the webhook.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-codepipeline-webhook-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `[A-Za-z0-9.@\-_]+`
+`TargetAction`  <a name="cfn-codepipeline-webhook-targetaction"></a>
+The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Za-z0-9.@\-_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RegisterWithThirdParty`
-
-Configures a connection between the webhook that was created and the external tool
-with events to be detected.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetAction`
-
-The name of the action in a pipeline you want to connect to the webhook. The action
-must be from the source (first) stage of the pipeline.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9.@\-_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetPipeline`
-
+`TargetPipeline`  <a name="cfn-codepipeline-webhook-targetpipeline"></a>
 The name of the pipeline you want to connect to the webhook.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Za-z0-9.@\-_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9.@\-_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetPipelineVersion`
-
+`TargetPipelineVersion`  <a name="cfn-codepipeline-webhook-targetpipelineversion"></a>
 The version number of the pipeline to be connected to the trigger request.
-
 Required: Yes
-
 Type: Integer
-
-Update requires: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-_Required_: No
-
-_Type_: Integer
-
-_Pattern_: `[A-Za-z0-9.@\-_]+`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+ Update requires: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Required*: No
+*Type*: Integer
+*Pattern*: `[A-Za-z0-9.@\-_]+`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-codepipeline-webhook-return-values"></a>
 
 ### Ref
+<a name="aws-resource-codepipeline-webhook-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the webhook name, such as
-MyFirstPipeline-SourceAction1-Webhook-utb9LrOl24Kk.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the webhook name, such as MyFirstPipeline-SourceAction1-Webhook-utb9LrOl24Kk.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-codepipeline-webhook-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Url`
+####
+<a name="aws-resource-codepipeline-webhook-return-values-fn--getatt-fn--getatt"></a>
 
-The webhook URL generated by AWS CodePipeline, such as
-`https://eu-central-1.webhooks.aws/trigger123456`.
+`Url`  <a name="Url-fn::getatt"></a>
+The webhook URL generated by AWS CodePipeline, such as `https://eu-central-1.webhooks.aws/trigger123456`.
 
 ## Examples
+<a name="aws-resource-codepipeline-webhook--examples"></a>
 
 ### Webhook Resource Configuration
+<a name="aws-resource-codepipeline-webhook--examples--Webhook_Resource_Configuration"></a>
 
-The following example creates a webhook named MyWebhook and registers the webhook for
-the pipeline's GitHub source repository. In this example, WebhookPipeline is the logical
-ID of the pipeline to which you want to add the webhook.
+The following example creates a webhook named MyWebhook and registers the webhook for the pipeline's GitHub source repository. In this example, WebhookPipeline is the logical ID of the pipeline to which you want to add the webhook.
 
-We strongly recommend that you use AWS Secrets Manager to store your
-credentials. If you use Secrets Manager, you must have already configured and stored your
-secret parameters in Secrets Manager. This example uses dynamic references to AWS Secrets Manager for the GitHub credentials for your webhook, in the form of
-the `{{resolve:secretsmanager:MyGitHubSecret:SecretString:token}}` reference.
-For more information, see [Using Dynamic References to Specify Template Values](../userguide/dynamic-references.md#dynamic-references-secretsmanager).
+We strongly recommend that you use AWS Secrets Manager to store your credentials. If you use Secrets Manager, you must have already configured and stored your secret parameters in Secrets Manager. This example uses dynamic references to AWS Secrets Manager for the GitHub credentials for your webhook, in the form of the `{{resolve:secretsmanager:MyGitHubSecret:SecretString:token}}` reference. For more information, see [ Using Dynamic References to Specify Template Values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html#dynamic-references-secretsmanager).
 
-###### Important
-
-When passing secret parameters, do not enter the value directly into the template.
-The value is rendered as plaintext and is therefore readable. For security reasons, do
-not use plaintext in your CloudFormation template to store your
-credentials.
+**Important**
+When passing secret parameters, do not enter the value directly into the template. The value is rendered as plaintext and is therefore readable. For security reasons, do not use plaintext in your CloudFormation template to store your credentials.
 
 #### JSON
+<a name="aws-resource-codepipeline-webhook--examples--Webhook_Resource_Configuration--json"></a>
 
-```json
-
+```
 {
     "Webhook": {
         "Type": "AWS::CodePipeline::Webhook",
@@ -293,9 +210,9 @@ credentials.
 ```
 
 #### YAML
+<a name="aws-resource-codepipeline-webhook--examples--Webhook_Resource_Configuration--yaml"></a>
 
-```yaml
-
+```
 Webhook:
   Type: AWS::CodePipeline::Webhook
   Properties:
@@ -315,11 +232,5 @@ Webhook:
       - Version
     RegisterWithThirdParty: 'true'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VariableDeclaration
-
-WebhookAuthConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,102 +2,72 @@
 title: "AWS::QuickSight::DataSet InputColumn"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet InputColumn
+<a name="aws-properties-quicksight-dataset-inputcolumn"></a>
 
 Metadata for a column that is used as the input of a transform operation.
 
 ## Syntax
+<a name="aws-properties-quicksight-dataset-inputcolumn-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dataset-inputcolumn-syntax.json"></a>
 
-```json
-
+```
 {
-  "Id" : String,
-  "Name" : String,
-  "SubType" : String,
-  "Type" : String
+  "[Id](#cfn-quicksight-dataset-inputcolumn-id)" : {{String}},
+  "[Name](#cfn-quicksight-dataset-inputcolumn-name)" : {{String}},
+  "[SubType](#cfn-quicksight-dataset-inputcolumn-subtype)" : {{String}},
+  "[Type](#cfn-quicksight-dataset-inputcolumn-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dataset-inputcolumn-syntax.yaml"></a>
 
-```yaml
-
-  Id: String
-  Name: String
-  SubType: String
-  Type: String
-
+```
+  [Id](#cfn-quicksight-dataset-inputcolumn-id): {{String}}
+  [Name](#cfn-quicksight-dataset-inputcolumn-name): {{String}}
+  [SubType](#cfn-quicksight-dataset-inputcolumn-subtype): {{String}}
+  [Type](#cfn-quicksight-dataset-inputcolumn-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dataset-inputcolumn-properties"></a>
 
-`Id`
-
+`Id`  <a name="cfn-quicksight-dataset-inputcolumn-id"></a>
 A unique identifier for the input column.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-dataset-inputcolumn-name"></a>
 The name of this column in the underlying data source.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `127`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubType`
-
+`SubType`  <a name="cfn-quicksight-dataset-inputcolumn-subtype"></a>
 The sub data type of the column. Sub types are only available for decimal columns that are part of a SPICE dataset.
+*Required*: No
+*Type*: String
+*Allowed values*: `FLOAT | FIXED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FLOAT | FIXED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dataset-inputcolumn-type"></a>
 The data type of the column.
-
-**Note:** `SEMISTRUCT` represents Athena's map, row, and struct data types. It is supported when using the new data preparation experience.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `STRING | INTEGER | DECIMAL | DATETIME | BIT | BOOLEAN | JSON | SEMISTRUCT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IngestionWaitPolicy
-
-IntegerDatasetParameter
+**Note:**`SEMISTRUCT` represents Athena's map, row, and struct data types. It is supported when using the new data preparation experience.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `STRING | INTEGER | DECIMAL | DATETIME | BIT | BOOLEAN | JSON | SEMISTRUCT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

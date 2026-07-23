@@ -2,87 +2,64 @@
 title: "AWS::QuickSight::Dashboard PivotTableFieldOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard PivotTableFieldOptions
+<a name="aws-properties-quicksight-dashboard-pivottablefieldoptions"></a>
 
 The field options for a pivot table visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-pivottablefieldoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-pivottablefieldoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CollapseStateOptions" : [ PivotTableFieldCollapseStateOption, ... ],
-  "DataPathOptions" : [ PivotTableDataPathOption, ... ],
-  "SelectedFieldOptions" : [ PivotTableFieldOption, ... ]
+  "[CollapseStateOptions](#cfn-quicksight-dashboard-pivottablefieldoptions-collapsestateoptions)" : {{[ PivotTableFieldCollapseStateOption, ... ]}},
+  "[DataPathOptions](#cfn-quicksight-dashboard-pivottablefieldoptions-datapathoptions)" : {{[ PivotTableDataPathOption, ... ]}},
+  "[SelectedFieldOptions](#cfn-quicksight-dashboard-pivottablefieldoptions-selectedfieldoptions)" : {{[ PivotTableFieldOption, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-pivottablefieldoptions-syntax.yaml"></a>
 
-```yaml
-
-  CollapseStateOptions:
-    - PivotTableFieldCollapseStateOption
-  DataPathOptions:
-    - PivotTableDataPathOption
-  SelectedFieldOptions:
-    - PivotTableFieldOption
-
+```
+  [CollapseStateOptions](#cfn-quicksight-dashboard-pivottablefieldoptions-collapsestateoptions): {{
+    - PivotTableFieldCollapseStateOption}}
+  [DataPathOptions](#cfn-quicksight-dashboard-pivottablefieldoptions-datapathoptions): {{
+    - PivotTableDataPathOption}}
+  [SelectedFieldOptions](#cfn-quicksight-dashboard-pivottablefieldoptions-selectedfieldoptions): {{
+    - PivotTableFieldOption}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-pivottablefieldoptions-properties"></a>
 
-`CollapseStateOptions`
-
+`CollapseStateOptions`  <a name="cfn-quicksight-dashboard-pivottablefieldoptions-collapsestateoptions"></a>
 The collapse state options for the pivot table field options.
+*Required*: No
+*Type*: Array of [PivotTableFieldCollapseStateOption](aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PivotTableFieldCollapseStateOption](aws-properties-quicksight-dashboard-pivottablefieldcollapsestateoption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataPathOptions`
-
+`DataPathOptions`  <a name="cfn-quicksight-dashboard-pivottablefieldoptions-datapathoptions"></a>
 The data path options for the pivot table field options.
+*Required*: No
+*Type*: Array of [PivotTableDataPathOption](aws-properties-quicksight-dashboard-pivottabledatapathoption.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PivotTableDataPathOption](aws-properties-quicksight-dashboard-pivottabledatapathoption.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectedFieldOptions`
-
+`SelectedFieldOptions`  <a name="cfn-quicksight-dashboard-pivottablefieldoptions-selectedfieldoptions"></a>
 The selected field options for the pivot table field options.
-
-_Required_: No
-
-_Type_: Array of [PivotTableFieldOption](aws-properties-quicksight-dashboard-pivottablefieldoption.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableFieldOption
-
-PivotTableFieldSubtotalOptions
+*Required*: No
+*Type*: Array of [PivotTableFieldOption](aws-properties-quicksight-dashboard-pivottablefieldoption.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

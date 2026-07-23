@@ -2,53 +2,42 @@
 title: "AWS::LakeFormation::DataCellsFilter ColumnWildcard"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::DataCellsFilter ColumnWildcard
+<a name="aws-properties-lakeformation-datacellsfilter-columnwildcard"></a>
 
 A wildcard object, consisting of an optional list of excluded column names or indexes.
 
 ## Syntax
+<a name="aws-properties-lakeformation-datacellsfilter-columnwildcard-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lakeformation-datacellsfilter-columnwildcard-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExcludedColumnNames" : [ String, ... ]
+  "[ExcludedColumnNames](#cfn-lakeformation-datacellsfilter-columnwildcard-excludedcolumnnames)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lakeformation-datacellsfilter-columnwildcard-syntax.yaml"></a>
 
-```yaml
-
-  ExcludedColumnNames:
-    - String
-
+```
+  [ExcludedColumnNames](#cfn-lakeformation-datacellsfilter-columnwildcard-excludedcolumnnames): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lakeformation-datacellsfilter-columnwildcard-properties"></a>
 
-`ExcludedColumnNames`
-
+`ExcludedColumnNames`  <a name="cfn-lakeformation-datacellsfilter-columnwildcard-excludedcolumnnames"></a>
 Excludes column names. Any column with this name will be excluded.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::LakeFormation::DataCellsFilter
-
-RowFilter
+*Required*: No
+*Type*: Array of String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

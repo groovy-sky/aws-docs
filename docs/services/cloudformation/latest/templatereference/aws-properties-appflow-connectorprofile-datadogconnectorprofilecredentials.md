@@ -2,80 +2,57 @@
 title: "AWS::AppFlow::ConnectorProfile DatadogConnectorProfileCredentials"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile DatadogConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofilecredentials"></a>
 
-The connector-specific credentials required by Datadog.
+ The connector-specific credentials required by Datadog.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofilecredentials-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofilecredentials-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiKey" : String,
-  "ApplicationKey" : String
+  "[ApiKey](#cfn-appflow-connectorprofile-datadogconnectorprofilecredentials-apikey)" : {{String}},
+  "[ApplicationKey](#cfn-appflow-connectorprofile-datadogconnectorprofilecredentials-applicationkey)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofilecredentials-syntax.yaml"></a>
 
-```yaml
-
-  ApiKey: String
-  ApplicationKey: String
-
+```
+  [ApiKey](#cfn-appflow-connectorprofile-datadogconnectorprofilecredentials-apikey): {{String}}
+  [ApplicationKey](#cfn-appflow-connectorprofile-datadogconnectorprofilecredentials-applicationkey): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofilecredentials-properties"></a>
 
-`ApiKey`
+`ApiKey`  <a name="cfn-appflow-connectorprofile-datadogconnectorprofilecredentials-apikey"></a>
+ A unique alphanumeric identifier used to authenticate a user, developer, or calling program to your API.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A unique alphanumeric identifier used to authenticate a user, developer, or calling
-program to your API.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationKey`
-
-Application keys, in conjunction with your API key, give you full access to Datadog’s
-programmatic API. Application keys are associated with the user account that created them. The
-application key is used to log all requests made to the API.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ApplicationKey`  <a name="cfn-appflow-connectorprofile-datadogconnectorprofilecredentials-applicationkey"></a>
+ Application keys, in conjunction with your API key, give you full access to Datadog’s programmatic API. Application keys are associated with the user account that created them. The application key is used to log all requests made to the API.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [DatadogConnectorProfileCredentials](../../../../reference/appflow/1-0/apireference/api-datadogconnectorprofilecredentials.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomConnectorProfileProperties
-
-DatadogConnectorProfileProperties
+<a name="aws-properties-appflow-connectorprofile-datadogconnectorprofilecredentials--seealso"></a>
++ [DatadogConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogConnectorProfileCredentials.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

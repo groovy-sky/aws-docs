@@ -2,53 +2,42 @@
 title: "AWS::DataZone::Connection GluePropertiesInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection GluePropertiesInput
+<a name="aws-properties-datazone-connection-gluepropertiesinput"></a>
 
 The AWS Glue properties of a connection.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-gluepropertiesinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-gluepropertiesinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "GlueConnectionInput" : GlueConnectionInput
+  "[GlueConnectionInput](#cfn-datazone-connection-gluepropertiesinput-glueconnectioninput)" : {{GlueConnectionInput}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-gluepropertiesinput-syntax.yaml"></a>
 
-```yaml
-
-  GlueConnectionInput:
-    GlueConnectionInput
-
+```
+  [GlueConnectionInput](#cfn-datazone-connection-gluepropertiesinput-glueconnectioninput): {{
+    GlueConnectionInput}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-gluepropertiesinput-properties"></a>
 
-`GlueConnectionInput`
-
+`GlueConnectionInput`  <a name="cfn-datazone-connection-gluepropertiesinput-glueconnectioninput"></a>
 The AWS Glue connection.
-
-_Required_: No
-
-_Type_: [GlueConnectionInput](aws-properties-datazone-connection-glueconnectioninput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GlueOAuth2Credentials
-
-HyperPodPropertiesInput
+*Required*: No
+*Type*: [GlueConnectionInput](aws-properties-datazone-connection-glueconnectioninput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

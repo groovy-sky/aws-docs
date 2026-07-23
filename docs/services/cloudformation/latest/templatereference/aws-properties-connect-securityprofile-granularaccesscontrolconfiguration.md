@@ -2,54 +2,42 @@
 title: "AWS::Connect::SecurityProfile GranularAccessControlConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::SecurityProfile GranularAccessControlConfiguration
+<a name="aws-properties-connect-securityprofile-granularaccesscontrolconfiguration"></a>
 
-Contains granular access control configuration for security profiles, including data table access
-permissions.
+Contains granular access control configuration for security profiles, including data table access permissions.
 
 ## Syntax
+<a name="aws-properties-connect-securityprofile-granularaccesscontrolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-securityprofile-granularaccesscontrolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataTableAccessControlConfiguration" : DataTableAccessControlConfiguration
+  "[DataTableAccessControlConfiguration](#cfn-connect-securityprofile-granularaccesscontrolconfiguration-datatableaccesscontrolconfiguration)" : {{DataTableAccessControlConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-securityprofile-granularaccesscontrolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DataTableAccessControlConfiguration:
-    DataTableAccessControlConfiguration
-
+```
+  [DataTableAccessControlConfiguration](#cfn-connect-securityprofile-granularaccesscontrolconfiguration-datatableaccesscontrolconfiguration): {{
+    DataTableAccessControlConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-securityprofile-granularaccesscontrolconfiguration-properties"></a>
 
-`DataTableAccessControlConfiguration`
-
+`DataTableAccessControlConfiguration`  <a name="cfn-connect-securityprofile-granularaccesscontrolconfiguration-datatableaccesscontrolconfiguration"></a>
 The access control configuration for data tables.
-
-_Required_: No
-
-_Type_: [DataTableAccessControlConfiguration](aws-properties-connect-securityprofile-datatableaccesscontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowModule
-
-PrimaryAttributeAccessControlConfigurationItem
+*Required*: No
+*Type*: [DataTableAccessControlConfiguration](aws-properties-connect-securityprofile-datatableaccesscontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

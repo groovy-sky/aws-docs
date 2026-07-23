@@ -2,322 +2,204 @@
 title: "AWS::CloudWatch::CompositeAlarm"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::CompositeAlarm
+<a name="aws-resource-cloudwatch-compositealarm"></a>
 
-The `AWS::CloudWatch::CompositeAlarm` type creates or updates a composite alarm. When you create
-a composite alarm, you specify a rule expression for the alarm that takes into
-account the alarm states of other alarms that you have created. The composite alarm goes into ALARM state
-only if all conditions of the rule are met.
+The `AWS::CloudWatch::CompositeAlarm` type creates or updates a composite alarm. When you create a composite alarm, you specify a rule expression for the alarm that takes into account the alarm states of other alarms that you have created. The composite alarm goes into ALARM state only if all conditions of the rule are met.
 
 The alarms specified in a composite alarm's rule expression can include metric alarms and other composite alarms.
 
-Using composite alarms can reduce alarm noise. You can create multiple metric alarms, and also create a composite alarm and set
-up alerts only for the composite alarm. For example, you could create a composite alarm that goes into ALARM state
-only when more than one of the underlying metric alarms are in ALARM state.
+Using composite alarms can reduce alarm noise. You can create multiple metric alarms, and also create a composite alarm and set up alerts only for the composite alarm. For example, you could create a composite alarm that goes into ALARM state only when more than one of the underlying metric alarms are in ALARM state.
 
-When this operation creates an alarm, the alarm state is immediately set to INSUFFICIENT\_DATA. The alarm is then evaluated and
-its state is set appropriately. Any actions associated with the new state are then executed. For a composite alarm, this initial
-time after creation is the only time that the alarm can be in INSUFFICIENT\_DATA state.
+When this operation creates an alarm, the alarm state is immediately set to INSUFFICIENT\_DATA. The alarm is then evaluated and its state is set appropriately. Any actions associated with the new state are then executed. For a composite alarm, this initial time after creation is the only time that the alarm can be in INSUFFICIENT\_DATA state.
 
 When you update an existing alarm, its state is left unchanged, but the update completely overwrites the previous configuration of the alarm.
 
 ## Syntax
+<a name="aws-resource-cloudwatch-compositealarm-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudwatch-compositealarm-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudWatch::CompositeAlarm",
   "Properties" : {
-      "ActionsEnabled" : Boolean,
-      "ActionsSuppressor" : String,
-      "ActionsSuppressorExtensionPeriod" : Integer,
-      "ActionsSuppressorWaitPeriod" : Integer,
-      "AlarmActions" : [ String, ... ],
-      "AlarmDescription" : String,
-      "AlarmName" : String,
-      "AlarmRule" : String,
-      "InsufficientDataActions" : [ String, ... ],
-      "OKActions" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[ActionsEnabled](#cfn-cloudwatch-compositealarm-actionsenabled)" : {{Boolean}},
+      "[ActionsSuppressor](#cfn-cloudwatch-compositealarm-actionssuppressor)" : {{String}},
+      "[ActionsSuppressorExtensionPeriod](#cfn-cloudwatch-compositealarm-actionssuppressorextensionperiod)" : {{Integer}},
+      "[ActionsSuppressorWaitPeriod](#cfn-cloudwatch-compositealarm-actionssuppressorwaitperiod)" : {{Integer}},
+      "[AlarmActions](#cfn-cloudwatch-compositealarm-alarmactions)" : {{[ String, ... ]}},
+      "[AlarmDescription](#cfn-cloudwatch-compositealarm-alarmdescription)" : {{String}},
+      "[AlarmName](#cfn-cloudwatch-compositealarm-alarmname)" : {{String}},
+      "[AlarmRule](#cfn-cloudwatch-compositealarm-alarmrule)" : {{String}},
+      "[InsufficientDataActions](#cfn-cloudwatch-compositealarm-insufficientdataactions)" : {{[ String, ... ]}},
+      "[OKActions](#cfn-cloudwatch-compositealarm-okactions)" : {{[ String, ... ]}},
+      "[Tags](#cfn-cloudwatch-compositealarm-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudwatch-compositealarm-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudWatch::CompositeAlarm
 Properties:
-  ActionsEnabled: Boolean
-  ActionsSuppressor: String
-  ActionsSuppressorExtensionPeriod: Integer
-  ActionsSuppressorWaitPeriod: Integer
-  AlarmActions:
-    - String
-  AlarmDescription: String
-  AlarmName: String
-  AlarmRule: String
-  InsufficientDataActions:
-    - String
-  OKActions:
-    - String
-  Tags:
-    - Tag
-
+  [ActionsEnabled](#cfn-cloudwatch-compositealarm-actionsenabled): {{Boolean}}
+  [ActionsSuppressor](#cfn-cloudwatch-compositealarm-actionssuppressor): {{String}}
+  [ActionsSuppressorExtensionPeriod](#cfn-cloudwatch-compositealarm-actionssuppressorextensionperiod): {{Integer}}
+  [ActionsSuppressorWaitPeriod](#cfn-cloudwatch-compositealarm-actionssuppressorwaitperiod): {{Integer}}
+  [AlarmActions](#cfn-cloudwatch-compositealarm-alarmactions): {{
+    - String}}
+  [AlarmDescription](#cfn-cloudwatch-compositealarm-alarmdescription): {{String}}
+  [AlarmName](#cfn-cloudwatch-compositealarm-alarmname): {{String}}
+  [AlarmRule](#cfn-cloudwatch-compositealarm-alarmrule): {{String}}
+  [InsufficientDataActions](#cfn-cloudwatch-compositealarm-insufficientdataactions): {{
+    - String}}
+  [OKActions](#cfn-cloudwatch-compositealarm-okactions): {{
+    - String}}
+  [Tags](#cfn-cloudwatch-compositealarm-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudwatch-compositealarm-properties"></a>
 
-`ActionsEnabled`
-
+`ActionsEnabled`  <a name="cfn-cloudwatch-compositealarm-actionsenabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state of the composite alarm. The default is TRUE.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ActionsSuppressor`  <a name="cfn-cloudwatch-compositealarm-actionssuppressor"></a>
+ Actions will be suppressed if the suppressor alarm is in the `ALARM` state. `ActionsSuppressor` can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Boolean
+`ActionsSuppressorExtensionPeriod`  <a name="cfn-cloudwatch-compositealarm-actionssuppressorextensionperiod"></a>
+ The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the `ALARM` state. After this time, the composite alarm performs its actions.
+`ExtensionPeriod` is required only when `ActionsSuppressor` is specified.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ActionsSuppressorWaitPeriod`  <a name="cfn-cloudwatch-compositealarm-actionssuppressorwaitperiod"></a>
+The maximum time in seconds that the composite alarm waits for the suppressor alarm to go into the `ALARM` state. After this time, the composite alarm performs its actions.
+`WaitPeriod` is required only when `ActionsSuppressor` is specified.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ActionsSuppressor`
+`AlarmActions`  <a name="cfn-cloudwatch-compositealarm-alarmactions"></a>
+The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN). For more information about creating alarms and the actions that you can specify, see [PutCompositeAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutCompositeAlarm.html) in the *Amazon CloudWatch API Reference*.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1024 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Actions will be suppressed
-if the suppressor alarm is
-in the `ALARM` state.
-`ActionsSuppressor` can be an AlarmName or an Amazon Resource Name (ARN)
-from an existing alarm.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1600`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ActionsSuppressorExtensionPeriod`
-
-The maximum time
-in seconds
-that the composite alarm waits
-after suppressor alarm goes out
-of the `ALARM` state.
-After this time,
-the composite alarm performs its actions.
-
-###### Important
-
-`ExtensionPeriod`
-is required only
-when `ActionsSuppressor` is specified.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ActionsSuppressorWaitPeriod`
-
-The maximum time
-in seconds
-that the composite alarm waits
-for the suppressor alarm
-to go
-into the `ALARM` state.
-After this time,
-the composite alarm performs its actions.
-
-###### Important
-
-`WaitPeriod`
-is required only
-when `ActionsSuppressor` is specified.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlarmActions`
-
-The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-For more information about creating alarms and the actions
-that you can specify, see [PutCompositeAlarm](../../../../reference/amazoncloudwatch/latest/apireference/api-putcompositealarm.md) in the
-_Amazon CloudWatch API Reference_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1024 | 5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlarmDescription`
-
+`AlarmDescription`  <a name="cfn-cloudwatch-compositealarm-alarmdescription"></a>
 The description for the composite alarm.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AlarmName`
-
+`AlarmName`  <a name="cfn-cloudwatch-compositealarm-alarmname"></a>
 The name for the composite alarm. This name must be unique within your AWS account.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AlarmRule`
-
-An expression that specifies which other alarms are to be evaluated to determine this composite alarm's state. For each
-alarm that you reference, you designate a function that specifies whether that alarm needs to be in ALARM state, OK state,
-or INSUFFICIENT\_DATA state. You can use operators (AND, OR and NOT) to combine multiple functions in a
-single expression. You can use parenthesis to logically group the functions in your expression.
-
+`AlarmRule`  <a name="cfn-cloudwatch-compositealarm-alarmrule"></a>
+An expression that specifies which other alarms are to be evaluated to determine this composite alarm's state. For each alarm that you reference, you designate a function that specifies whether that alarm needs to be in ALARM state, OK state, or INSUFFICIENT\_DATA state. You can use operators (AND, OR and NOT) to combine multiple functions in a single expression. You can use parenthesis to logically group the functions in your expression.
 You can use either alarm names or ARNs to reference the other alarms that are to be evaluated.
-
 Functions can include the following:
++  ALARM("alarm-name or alarm-ARN") is TRUE if the named alarm is in ALARM state.
++  OK("alarm-name or alarm-ARN") is TRUE if the named alarm is in OK state.
++  INSUFFICIENT\_DATA("alarm-name or alarm-ARN") is TRUE if the named alarm is in INSUFFICIENT\_DATA state.
++ TRUE always evaluates to TRUE.
++ FALSE always evaluates to FALSE.
+ TRUE and FALSE are useful for testing a complex AlarmRule structure, and for testing your alarm actions.
+For more information about `AlarmRule` syntax, see [PutCompositeAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutCompositeAlarm.html) in the *Amazon CloudWatch API Reference*.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `10240`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- ALARM("alarm-name or alarm-ARN") is TRUE if the named alarm is in ALARM state.
+`InsufficientDataActions`  <a name="cfn-cloudwatch-compositealarm-insufficientdataactions"></a>
+The actions to execute when this alarm transitions to the INSUFFICIENT\_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN). For more information about creating alarms and the actions that you can specify, see [PutCompositeAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutCompositeAlarm.html) in the *Amazon CloudWatch API Reference*.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1024 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- OK("alarm-name or alarm-ARN") is TRUE if the named alarm is in OK state.
+`OKActions`  <a name="cfn-cloudwatch-compositealarm-okactions"></a>
+The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN). For more information about creating alarms and the actions that you can specify, see [PutCompositeAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutCompositeAlarm.html) in the *Amazon CloudWatch API Reference*.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1024 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- INSUFFICIENT\_DATA("alarm-name or alarm-ARN") is TRUE if the named alarm is in INSUFFICIENT\_DATA state.
-
-- TRUE always evaluates to TRUE.
-
-- FALSE always evaluates to FALSE.
-
-TRUE and FALSE are useful for testing a complex AlarmRule structure, and for testing your alarm actions.
-
-For more information about `AlarmRule` syntax, see [PutCompositeAlarm](../../../../reference/amazoncloudwatch/latest/apireference/api-putcompositealarm.md) in the
-_Amazon CloudWatch API Reference_.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `10240`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InsufficientDataActions`
-
-The actions to execute when this alarm transitions to the INSUFFICIENT\_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-For more information about creating alarms and the actions
-that you can specify, see [PutCompositeAlarm](../../../../reference/amazoncloudwatch/latest/apireference/api-putcompositealarm.md) in the
-_Amazon CloudWatch API Reference_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1024 | 5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OKActions`
-
-The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-For more information about creating alarms and the actions
-that you can specify, see [PutCompositeAlarm](../../../../reference/amazoncloudwatch/latest/apireference/api-putcompositealarm.md) in the
-_Amazon CloudWatch API Reference_.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1024 | 5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A list of key-value pairs to associate with the alarm. You can associate as many as 50 tags with an alarm. To be able to associate
-tags with the alarm when you create the alarm, you must have the `cloudwatch:TagResource` permission.
-
-Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a
-user permission to access or change only resources with certain tag values.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cloudwatch-compositealarm-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-cloudwatch-compositealarm-tags"></a>
+A list of key-value pairs to associate with the alarm. You can associate as many as 50 tags with an alarm. To be able to associate tags with the alarm when you create the alarm, you must have the `cloudwatch:TagResource` permission.
+Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudwatch-compositealarm-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudwatch-compositealarm-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudwatch-compositealarm-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the alarm name, such as `MyCompositeAlarm`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudwatch-compositealarm-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-cloudwatch-compositealarm-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the composite alarm, such as `arn:aws:cloudwatch:us-west-2:123456789012:alarm/CompositeAlarmName`.
 
 ## Examples
+<a name="aws-resource-cloudwatch-compositealarm--examples"></a>
 
 ### Composite alarm based on two metric alarms and another composite alarm
+<a name="aws-resource-cloudwatch-compositealarm--examples--Composite_alarm_based_on_two_metric_alarms_and_another_composite_alarm"></a>
 
-This example creates composite alarms named "HighResourceUsage" and "DeploymentInProgress", and also creates metrics alarms named
-"HighCPUUsage" and "HighMemoryUsage". "DeploymentInProgress" is an alarm that must be manually set to TRUE or FALSE. The "HighResourceUsage"
-alarm goes into ALARM state only if both "HighCPUUsage" and "HighMemoryUsage" are in ALARM state, and if "DeploymentInProgress" is FALSE. Only
-"HighResourceUsage" has the alarm action of notifying SNS. This reduces alarm noise, so that you are alerted only if both CPU usage and memory usage
-are high, and a deployment is not currently in progress.
+This example creates composite alarms named "HighResourceUsage" and "DeploymentInProgress", and also creates metrics alarms named "HighCPUUsage" and "HighMemoryUsage". "DeploymentInProgress" is an alarm that must be manually set to TRUE or FALSE. The "HighResourceUsage" alarm goes into ALARM state only if both "HighCPUUsage" and "HighMemoryUsage" are in ALARM state, and if "DeploymentInProgress" is FALSE. Only "HighResourceUsage" has the alarm action of notifying SNS. This reduces alarm noise, so that you are alerted only if both CPU usage and memory usage are high, and a deployment is not currently in progress.
 
 #### JSON
+<a name="aws-resource-cloudwatch-compositealarm--examples--Composite_alarm_based_on_two_metric_alarms_and_another_composite_alarm--json"></a>
 
-```json
-
+```
 "Resources": {
     "HighResourceUsage": {
         "Type": "AWS::CloudWatch::CompositeAlarm",
@@ -376,9 +258,9 @@ are high, and a deployment is not currently in progress.
 ```
 
 #### YAML
+<a name="aws-resource-cloudwatch-compositealarm--examples--Composite_alarm_based_on_two_metric_alarms_and_another_composite_alarm--yaml"></a>
 
-```yaml
-
+```
 Resources:
   HighResourceUsage:
     Type: AWS::CloudWatch::CompositeAlarm
@@ -426,11 +308,5 @@ Resources:
       Threshold: 65
       TreatMissingData: breaching
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SingleMetricAnomalyDetector
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

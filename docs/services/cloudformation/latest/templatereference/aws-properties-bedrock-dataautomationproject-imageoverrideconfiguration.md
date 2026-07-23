@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject ImageOverrideConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject ImageOverrideConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration"></a>
 
 Sets whether your project will process images or not.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ModalityProcessing" : ModalityProcessingConfiguration,
-  "SensitiveDataConfiguration" : SensitiveDataConfiguration
+  "[ModalityProcessing](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-modalityprocessing)" : {{ModalityProcessingConfiguration}},
+  "[SensitiveDataConfiguration](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-sensitivedataconfiguration)" : {{SensitiveDataConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ModalityProcessing:
-    ModalityProcessingConfiguration
-  SensitiveDataConfiguration:
-    SensitiveDataConfiguration
-
+```
+  [ModalityProcessing](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-modalityprocessing): {{
+    ModalityProcessingConfiguration}}
+  [SensitiveDataConfiguration](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-sensitivedataconfiguration): {{
+    SensitiveDataConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration-properties"></a>
 
-`ModalityProcessing`
-
+`ModalityProcessing`  <a name="cfn-bedrock-dataautomationproject-imageoverrideconfiguration-modalityprocessing"></a>
 Sets modality processing for image files. All modalities are enabled by default.
+*Required*: No
+*Type*: [ModalityProcessingConfiguration](aws-properties-bedrock-dataautomationproject-modalityprocessingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ModalityProcessingConfiguration](aws-properties-bedrock-dataautomationproject-modalityprocessingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SensitiveDataConfiguration`
-
+`SensitiveDataConfiguration`  <a name="cfn-bedrock-dataautomationproject-imageoverrideconfiguration-sensitivedataconfiguration"></a>
 Configuration for sensitive data detection and redaction for image files.
-
-_Required_: No
-
-_Type_: [SensitiveDataConfiguration](aws-properties-bedrock-dataautomationproject-sensitivedataconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageExtractionCategory
-
-ImageStandardExtraction
+*Required*: No
+*Type*: [SensitiveDataConfiguration](aws-properties-bedrock-dataautomationproject-sensitivedataconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

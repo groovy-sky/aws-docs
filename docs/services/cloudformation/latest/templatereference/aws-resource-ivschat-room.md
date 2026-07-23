@@ -2,176 +2,143 @@
 title: "AWS::IVSChat::Room"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVSChat::Room
+<a name="aws-resource-ivschat-room"></a>
 
-The `AWS::IVSChat::Room` resource specifies an Amazon IVS room that allows clients to connect and pass messages. For more
-information, see [CreateRoom](../../../../reference/ivs/latest/chatapireference/api-createroom.md) in the
-_Amazon Interactive Video Service Chat API Reference_.
+The `AWS::IVSChat::Room` resource specifies an Amazon IVS room that allows clients to connect and pass messages. For more information, see [CreateRoom](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateRoom.html) in the *Amazon Interactive Video Service Chat API Reference*.
 
 ## Syntax
+<a name="aws-resource-ivschat-room-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivschat-room-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVSChat::Room",
   "Properties" : {
-      "LoggingConfigurationIdentifiers" : [ String, ... ],
-      "MaximumMessageLength" : Integer,
-      "MaximumMessageRatePerSecond" : Integer,
-      "MessageReviewHandler" : MessageReviewHandler,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[LoggingConfigurationIdentifiers](#cfn-ivschat-room-loggingconfigurationidentifiers)" : {{[ String, ... ]}},
+      "[MaximumMessageLength](#cfn-ivschat-room-maximummessagelength)" : {{Integer}},
+      "[MaximumMessageRatePerSecond](#cfn-ivschat-room-maximummessageratepersecond)" : {{Integer}},
+      "[MessageReviewHandler](#cfn-ivschat-room-messagereviewhandler)" : {{MessageReviewHandler}},
+      "[Name](#cfn-ivschat-room-name)" : {{String}},
+      "[Tags](#cfn-ivschat-room-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivschat-room-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVSChat::Room
 Properties:
-  LoggingConfigurationIdentifiers:
-    - String
-  MaximumMessageLength: Integer
-  MaximumMessageRatePerSecond: Integer
-  MessageReviewHandler:
-    MessageReviewHandler
-  Name: String
-  Tags:
-    - Tag
-
+  [LoggingConfigurationIdentifiers](#cfn-ivschat-room-loggingconfigurationidentifiers): {{
+    - String}}
+  [MaximumMessageLength](#cfn-ivschat-room-maximummessagelength): {{Integer}}
+  [MaximumMessageRatePerSecond](#cfn-ivschat-room-maximummessageratepersecond): {{Integer}}
+  [MessageReviewHandler](#cfn-ivschat-room-messagereviewhandler): {{
+    MessageReviewHandler}}
+  [Name](#cfn-ivschat-room-name): {{String}}
+  [Tags](#cfn-ivschat-room-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ivschat-room-properties"></a>
 
-`LoggingConfigurationIdentifiers`
-
+`LoggingConfigurationIdentifiers`  <a name="cfn-ivschat-room-loggingconfigurationidentifiers"></a>
 List of logging-configuration identifiers attached to the room.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 0`
+*Maximum*: `128 | 50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1 | 0`
-
-_Maximum_: `128 | 50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumMessageLength`
-
+`MaximumMessageLength`  <a name="cfn-ivschat-room-maximummessagelength"></a>
 Maximum number of characters in a single message. Messages are expected to be UTF-8 encoded and this limit applies specifically to rune/code-point count, not number of bytes.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumMessageRatePerSecond`
-
+`MaximumMessageRatePerSecond`  <a name="cfn-ivschat-room-maximummessageratepersecond"></a>
 Maximum number of messages per second that can be sent to the room (by all clients).
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MessageReviewHandler`
-
+`MessageReviewHandler`  <a name="cfn-ivschat-room-messagereviewhandler"></a>
 Configuration information for optional review of messages.
+*Required*: No
+*Type*: [MessageReviewHandler](aws-properties-ivschat-room-messagereviewhandler.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MessageReviewHandler](aws-properties-ivschat-room-messagereviewhandler.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-ivschat-room-name"></a>
 Room name. The value does not need to be unique.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]*$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivschat-room-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-ivschat-room-tag.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivschat-room-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivschat-room-tag.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivschat-room-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ivschat-room-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivschat-room-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the room ARN. For example:
 
-`{ "Ref": "myRoom" }`
+ `{ "Ref": "myRoom" }`
 
-For the Amazon IVS room `myRoom `, `Ref`
-returns the room ARN.
+For the Amazon IVS room `myRoom `, `Ref` returns the room ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivschat-room-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivschat-room-return-values-fn--getatt-fn--getatt"></a>
 
-The room ARN. For example:
-`arn:aws:ivschat:us-west-2:123456789012:room/abcdABCDefgh`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The room ARN. For example: `arn:aws:ivschat:us-west-2:123456789012:room/abcdABCDefgh`
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The room ID. For example: `abcdABCDefgh`
 
 ## Examples
+<a name="aws-resource-ivschat-room--examples"></a>
 
 ### Room Template Examples
+<a name="aws-resource-ivschat-room--examples--Room_Template_Examples"></a>
 
 The following examples specify an Amazon IVS Chat Room.
 
 #### JSON
+<a name="aws-resource-ivschat-room--examples--Room_Template_Examples--json"></a>
 
-```json
-
+```
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -202,9 +169,9 @@ The following examples specify an Amazon IVS Chat Room.
 ```
 
 #### YAML
+<a name="aws-resource-ivschat-room--examples--Room_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Room:
@@ -222,18 +189,9 @@ Outputs:
 ```
 
 ## See also
-
-- [Getting\
-Started with Amazon Interactive Video Service](../../../ivs/latest/userguide/getting-started.md)
-
-- [RoomSummary](../../../../reference/ivs/latest/chatapireference/api-roomsummary.md) API data type
-
-- [CreateRoom](../../../../reference/ivs/latest/chatapireference/api-createroom.md) API endpoint
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-MessageReviewHandler
+<a name="aws-resource-ivschat-room--seealso"></a>
++  [Getting Started with Amazon Interactive Video Service](https://docs.aws.amazon.com/ivs/latest/userguide/getting-started.html)
++ [RoomSummary](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_RoomSummary.html) API data type
++ [CreateRoom](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateRoom.html) API endpoint
 
 All content copied from https://docs.aws.amazon.com/.

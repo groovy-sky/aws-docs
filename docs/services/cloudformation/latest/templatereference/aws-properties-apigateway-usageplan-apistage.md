@@ -2,81 +2,62 @@
 title: "AWS::ApiGateway::UsagePlan ApiStage"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::UsagePlan ApiStage
+<a name="aws-properties-apigateway-usageplan-apistage"></a>
 
 API stage name of the associated API stage in a usage plan.
 
 ## Syntax
+<a name="aws-properties-apigateway-usageplan-apistage-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigateway-usageplan-apistage-syntax.json"></a>
 
-```json
-
+```
 {
-  "ApiId" : String,
-  "Stage" : String,
-  "Throttle" : {Key: Value, ...}
+  "[ApiId](#cfn-apigateway-usageplan-apistage-apiid)" : {{String}},
+  "[Stage](#cfn-apigateway-usageplan-apistage-stage)" : {{String}},
+  "[Throttle](#cfn-apigateway-usageplan-apistage-throttle)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigateway-usageplan-apistage-syntax.yaml"></a>
 
-```yaml
-
-  ApiId: String
-  Stage: String
-  Throttle:
-    Key: Value
-
+```
+  [ApiId](#cfn-apigateway-usageplan-apistage-apiid): {{String}}
+  [Stage](#cfn-apigateway-usageplan-apistage-stage): {{String}}
+  [Throttle](#cfn-apigateway-usageplan-apistage-throttle): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-apigateway-usageplan-apistage-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-apigateway-usageplan-apistage-apiid"></a>
 API Id of the associated API stage in a usage plan.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Stage`
-
+`Stage`  <a name="cfn-apigateway-usageplan-apistage-stage"></a>
 API stage name of the associated API stage in a usage plan.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Throttle`
-
+`Throttle`  <a name="cfn-apigateway-usageplan-apistage-throttle"></a>
 Map containing method level throttling information for API stage in a usage plan.
-
-_Required_: No
-
-_Type_: Object of [ThrottleSettings](aws-properties-apigateway-usageplan-throttlesettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Object of [ThrottleSettings](aws-properties-apigateway-usageplan-throttlesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [UsagePlan](../../../apigateway/latest/api/api-usageplan.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGateway::UsagePlan
-
-QuotaSettings
+<a name="aws-properties-apigateway-usageplan-apistage--seealso"></a>
++ [UsagePlan](https://docs.aws.amazon.com/apigateway/latest/api/API_UsagePlan.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

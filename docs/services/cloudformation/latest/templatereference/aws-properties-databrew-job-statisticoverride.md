@@ -2,73 +2,54 @@
 title: "AWS::DataBrew::Job StatisticOverride"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Job StatisticOverride
+<a name="aws-properties-databrew-job-statisticoverride"></a>
 
 Override of a particular evaluation for a profile job.
 
 ## Syntax
+<a name="aws-properties-databrew-job-statisticoverride-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-job-statisticoverride-syntax.json"></a>
 
-```json
-
+```
 {
-  "Parameters" : {Key: Value, ...},
-  "Statistic" : String
+  "[Parameters](#cfn-databrew-job-statisticoverride-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Statistic](#cfn-databrew-job-statisticoverride-statistic)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-job-statisticoverride-syntax.yaml"></a>
 
-```yaml
-
-  Parameters:
-    Key: Value
-  Statistic: String
-
+```
+  [Parameters](#cfn-databrew-job-statisticoverride-parameters): {{
+    {{Key}}: {{Value}}}}
+  [Statistic](#cfn-databrew-job-statisticoverride-statistic): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-job-statisticoverride-properties"></a>
 
-`Parameters`
-
+`Parameters`  <a name="cfn-databrew-job-statisticoverride-parameters"></a>
 A map that includes overrides of an evaluation’s parameters.
+*Required*: Yes
+*Type*: Object of String
+*Pattern*: `^[A-Za-z0-9]{1,128}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Object of String
-
-_Pattern_: `^[A-Za-z0-9]{1,128}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Statistic`
-
+`Statistic`  <a name="cfn-databrew-job-statisticoverride-statistic"></a>
 The name of an evaluation
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Z\_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3TableOutputOptions
-
-StatisticsConfiguration
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Z\_]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

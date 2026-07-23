@@ -2,86 +2,61 @@
 title: "AWS::GreengrassV2::Deployment DeploymentPolicies"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment DeploymentPolicies
+<a name="aws-properties-greengrassv2-deployment-deploymentpolicies"></a>
 
-Contains information about policies that define how a deployment updates components and
-handles failure.
+Contains information about policies that define how a deployment updates components and handles failure.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-deploymentpolicies-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-deploymentpolicies-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComponentUpdatePolicy" : DeploymentComponentUpdatePolicy,
-  "ConfigurationValidationPolicy" : DeploymentConfigurationValidationPolicy,
-  "FailureHandlingPolicy" : String
+  "[ComponentUpdatePolicy](#cfn-greengrassv2-deployment-deploymentpolicies-componentupdatepolicy)" : {{DeploymentComponentUpdatePolicy}},
+  "[ConfigurationValidationPolicy](#cfn-greengrassv2-deployment-deploymentpolicies-configurationvalidationpolicy)" : {{DeploymentConfigurationValidationPolicy}},
+  "[FailureHandlingPolicy](#cfn-greengrassv2-deployment-deploymentpolicies-failurehandlingpolicy)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-deploymentpolicies-syntax.yaml"></a>
 
-```yaml
-
-  ComponentUpdatePolicy:
-    DeploymentComponentUpdatePolicy
-  ConfigurationValidationPolicy:
-    DeploymentConfigurationValidationPolicy
-  FailureHandlingPolicy: String
-
+```
+  [ComponentUpdatePolicy](#cfn-greengrassv2-deployment-deploymentpolicies-componentupdatepolicy): {{
+    DeploymentComponentUpdatePolicy}}
+  [ConfigurationValidationPolicy](#cfn-greengrassv2-deployment-deploymentpolicies-configurationvalidationpolicy): {{
+    DeploymentConfigurationValidationPolicy}}
+  [FailureHandlingPolicy](#cfn-greengrassv2-deployment-deploymentpolicies-failurehandlingpolicy): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-deploymentpolicies-properties"></a>
 
-`ComponentUpdatePolicy`
+`ComponentUpdatePolicy`  <a name="cfn-greengrassv2-deployment-deploymentpolicies-componentupdatepolicy"></a>
+The component update policy for the configuration deployment. This policy defines when it's safe to deploy the configuration to devices.
+*Required*: No
+*Type*: [DeploymentComponentUpdatePolicy](aws-properties-greengrassv2-deployment-deploymentcomponentupdatepolicy.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The component update policy for the configuration deployment. This policy defines when
-it's safe to deploy the configuration to devices.
+`ConfigurationValidationPolicy`  <a name="cfn-greengrassv2-deployment-deploymentpolicies-configurationvalidationpolicy"></a>
+The configuration validation policy for the configuration deployment. This policy defines how long each component has to validate its configure updates.
+*Required*: No
+*Type*: [DeploymentConfigurationValidationPolicy](aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [DeploymentComponentUpdatePolicy](aws-properties-greengrassv2-deployment-deploymentcomponentupdatepolicy.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ConfigurationValidationPolicy`
-
-The configuration validation policy for the configuration deployment. This policy defines
-how long each component has to validate its configure updates.
-
-_Required_: No
-
-_Type_: [DeploymentConfigurationValidationPolicy](aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FailureHandlingPolicy`
-
-The failure handling policy for the configuration deployment. This policy defines what to
-do if the deployment fails.
-
+`FailureHandlingPolicy`  <a name="cfn-greengrassv2-deployment-deploymentpolicies-failurehandlingpolicy"></a>
+The failure handling policy for the configuration deployment. This policy defines what to do if the deployment fails.
 Default: `ROLLBACK`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ROLLBACK | DO_NOTHING`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeploymentIoTJobConfiguration
-
-IoTJobAbortConfig
+*Required*: No
+*Type*: String
+*Allowed values*: `ROLLBACK | DO_NOTHING`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

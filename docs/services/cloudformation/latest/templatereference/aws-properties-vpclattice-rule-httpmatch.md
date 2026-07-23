@@ -2,83 +2,61 @@
 title: "AWS::VpcLattice::Rule HttpMatch"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Rule HttpMatch
+<a name="aws-properties-vpclattice-rule-httpmatch"></a>
 
 Describes criteria that can be applied to incoming requests.
 
 ## Syntax
+<a name="aws-properties-vpclattice-rule-httpmatch-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-vpclattice-rule-httpmatch-syntax.json"></a>
 
-```json
-
+```
 {
-  "HeaderMatches" : [ HeaderMatch, ... ],
-  "Method" : String,
-  "PathMatch" : PathMatch
+  "[HeaderMatches](#cfn-vpclattice-rule-httpmatch-headermatches)" : {{[ HeaderMatch, ... ]}},
+  "[Method](#cfn-vpclattice-rule-httpmatch-method)" : {{String}},
+  "[PathMatch](#cfn-vpclattice-rule-httpmatch-pathmatch)" : {{PathMatch}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-vpclattice-rule-httpmatch-syntax.yaml"></a>
 
-```yaml
-
-  HeaderMatches:
-    - HeaderMatch
-  Method: String
-  PathMatch:
-    PathMatch
-
+```
+  [HeaderMatches](#cfn-vpclattice-rule-httpmatch-headermatches): {{
+    - HeaderMatch}}
+  [Method](#cfn-vpclattice-rule-httpmatch-method): {{String}}
+  [PathMatch](#cfn-vpclattice-rule-httpmatch-pathmatch): {{
+    PathMatch}}
 ```
 
 ## Properties
+<a name="aws-properties-vpclattice-rule-httpmatch-properties"></a>
 
-`HeaderMatches`
+`HeaderMatches`  <a name="cfn-vpclattice-rule-httpmatch-headermatches"></a>
+The header matches. Matches incoming requests with rule based on request header value before applying rule action.
+*Required*: No
+*Type*: Array of [HeaderMatch](aws-properties-vpclattice-rule-headermatch.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The header matches. Matches incoming requests with rule based on request header value before
-applying rule action.
-
-_Required_: No
-
-_Type_: Array of [HeaderMatch](aws-properties-vpclattice-rule-headermatch.md)
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Method`
-
+`Method`  <a name="cfn-vpclattice-rule-httpmatch-method"></a>
 The HTTP method type.
+*Required*: No
+*Type*: String
+*Allowed values*: `CONNECT | DELETE | GET | HEAD | OPTIONS | POST | PUT | TRACE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CONNECT | DELETE | GET | HEAD | OPTIONS | POST | PUT | TRACE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PathMatch`
-
+`PathMatch`  <a name="cfn-vpclattice-rule-httpmatch-pathmatch"></a>
 The path match.
-
-_Required_: No
-
-_Type_: [PathMatch](aws-properties-vpclattice-rule-pathmatch.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HeaderMatchType
-
-Match
+*Required*: No
+*Type*: [PathMatch](aws-properties-vpclattice-rule-pathmatch.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

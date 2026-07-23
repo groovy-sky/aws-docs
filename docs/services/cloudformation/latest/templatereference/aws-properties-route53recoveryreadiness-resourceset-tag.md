@@ -2,64 +2,49 @@
 title: "AWS::Route53RecoveryReadiness::ResourceSet Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryReadiness::ResourceSet Tag
+<a name="aws-properties-route53recoveryreadiness-resourceset-tag"></a>
 
-The `Tag` property type specifies Property description not available. for an [AWS::Route53RecoveryReadiness::ResourceSet](aws-resource-route53recoveryreadiness-resourceset.md).
+<a name="aws-properties-route53recoveryreadiness-resourceset-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::Route53RecoveryReadiness::ResourceSet](aws-resource-route53recoveryreadiness-resourceset.md).
 
 ## Syntax
+<a name="aws-properties-route53recoveryreadiness-resourceset-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53recoveryreadiness-resourceset-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-route53recoveryreadiness-resourceset-tag-key)" : {{String}},
+  "[Value](#cfn-route53recoveryreadiness-resourceset-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53recoveryreadiness-resourceset-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-route53recoveryreadiness-resourceset-tag-key): {{String}}
+  [Value](#cfn-route53recoveryreadiness-resourceset-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53recoveryreadiness-resourceset-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-route53recoveryreadiness-resourceset-tag-key"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-route53recoveryreadiness-resourceset-tag-value"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Resource
-
-TargetResource
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

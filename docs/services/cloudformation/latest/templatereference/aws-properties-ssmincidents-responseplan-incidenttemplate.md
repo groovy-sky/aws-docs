@@ -2,156 +2,100 @@
 title: "AWS::SSMIncidents::ResponsePlan IncidentTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan IncidentTemplate
+<a name="aws-properties-ssmincidents-responseplan-incidenttemplate"></a>
 
-The `IncidentTemplate` property type specifies details used to create an
-incident when using this response plan.
+The `IncidentTemplate` property type specifies details used to create an incident when using this response plan.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-responseplan-incidenttemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-responseplan-incidenttemplate-syntax.json"></a>
 
-```json
-
+```
 {
-  "DedupeString" : String,
-  "Impact" : Integer,
-  "IncidentTags" : [ Tag, ... ],
-  "NotificationTargets" : [ NotificationTargetItem, ... ],
-  "Summary" : String,
-  "Title" : String
+  "[DedupeString](#cfn-ssmincidents-responseplan-incidenttemplate-dedupestring)" : {{String}},
+  "[Impact](#cfn-ssmincidents-responseplan-incidenttemplate-impact)" : {{Integer}},
+  "[IncidentTags](#cfn-ssmincidents-responseplan-incidenttemplate-incidenttags)" : {{[ Tag, ... ]}},
+  "[NotificationTargets](#cfn-ssmincidents-responseplan-incidenttemplate-notificationtargets)" : {{[ NotificationTargetItem, ... ]}},
+  "[Summary](#cfn-ssmincidents-responseplan-incidenttemplate-summary)" : {{String}},
+  "[Title](#cfn-ssmincidents-responseplan-incidenttemplate-title)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-responseplan-incidenttemplate-syntax.yaml"></a>
 
-```yaml
-
-  DedupeString:
-    String
-  Impact: Integer
-  IncidentTags:
-    - Tag
-  NotificationTargets:
-    - NotificationTargetItem
-  Summary: String
-  Title: String
-
+```
+  [DedupeString](#cfn-ssmincidents-responseplan-incidenttemplate-dedupestring): {{
+    String}}
+  [Impact](#cfn-ssmincidents-responseplan-incidenttemplate-impact): {{Integer}}
+  [IncidentTags](#cfn-ssmincidents-responseplan-incidenttemplate-incidenttags): {{
+    - Tag}}
+  [NotificationTargets](#cfn-ssmincidents-responseplan-incidenttemplate-notificationtargets): {{
+    - NotificationTargetItem}}
+  [Summary](#cfn-ssmincidents-responseplan-incidenttemplate-summary): {{String}}
+  [Title](#cfn-ssmincidents-responseplan-incidenttemplate-title): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-responseplan-incidenttemplate-properties"></a>
 
-`DedupeString`
-
+`DedupeString`  <a name="cfn-ssmincidents-responseplan-incidenttemplate-dedupestring"></a>
 Used to create only one incident record for an incident.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Impact`  <a name="cfn-ssmincidents-responseplan-incidenttemplate-impact"></a>
+Defines the impact to the customers. Providing an impact overwrites the impact provided by a response plan.
 
-_Type_: String
+**Possible impacts:**
++ `1` - Critical impact, this typically relates to full application failure that impacts many to all customers.
++ `2` - High impact, partial application failure with impact to many customers.
++ `3` - Medium impact, the application is providing reduced service to customers.
++ `4` - Low impact, customer might aren't impacted by the problem yet.
++ `5` - No impact, customers aren't currently impacted but urgent action is needed to avoid impact.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
+`IncidentTags`  <a name="cfn-ssmincidents-responseplan-incidenttemplate-incidenttags"></a>
+Tags to assign to the template. When the `StartIncident` API action is called, Incident Manager assigns the tags specified in the template to the incident.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ssmincidents-responseplan-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `1000`
+`NotificationTargets`  <a name="cfn-ssmincidents-responseplan-incidenttemplate-notificationtargets"></a>
+The Amazon Simple Notification Service (Amazon SNS) targets that Amazon Q Developer in chat applications uses to notify the chat channel of updates to an incident. You can also make updates to the incident through the chat channel using the Amazon SNS topics.
+*Required*: No
+*Type*: Array of [NotificationTargetItem](aws-properties-ssmincidents-responseplan-notificationtargetitem.md)
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Impact`
-
-Defines the impact to the customers. Providing an impact overwrites the impact
-provided by a response plan.
-
-###### Possible impacts:
-
-- `1` \- Critical impact, this typically relates to full application
-failure that impacts many to all customers.
-
-- `2` \- High impact, partial application failure with impact to many
-customers.
-
-- `3` \- Medium impact, the application is providing reduced service
-to customers.
-
-- `4` \- Low impact, customer might aren't impacted by the problem
-yet.
-
-- `5` \- No impact, customers aren't currently impacted but urgent
-action is needed to avoid impact.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncidentTags`
-
-Tags to assign to the template. When the `StartIncident` API action is
-called, Incident Manager assigns the tags specified in the template to the
-incident.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ssmincidents-responseplan-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NotificationTargets`
-
-The Amazon Simple Notification Service (Amazon SNS) targets that Amazon Q Developer in chat applications uses to notify the chat channel of updates
-to an incident. You can also make updates to the incident through the chat channel using
-the Amazon SNS topics.
-
-_Required_: No
-
-_Type_: Array of [NotificationTargetItem](aws-properties-ssmincidents-responseplan-notificationtargetitem.md)
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Summary`
-
+`Summary`  <a name="cfn-ssmincidents-responseplan-incidenttemplate-summary"></a>
 The summary describes what has happened during the incident.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-ssmincidents-responseplan-incidenttemplate-title"></a>
 The title of the incident is a brief and easily recognizable.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DynamicSsmParameterValue
-
-Integration
+*Required*: Yes
+*Type*: String
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

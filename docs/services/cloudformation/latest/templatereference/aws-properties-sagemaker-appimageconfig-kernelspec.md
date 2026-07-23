@@ -2,72 +2,53 @@
 title: "AWS::SageMaker::AppImageConfig KernelSpec"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::AppImageConfig KernelSpec
+<a name="aws-properties-sagemaker-appimageconfig-kernelspec"></a>
 
 The specification of a Jupyter kernel.
 
 ## Syntax
+<a name="aws-properties-sagemaker-appimageconfig-kernelspec-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-appimageconfig-kernelspec-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayName" : String,
-  "Name" : String
+  "[DisplayName](#cfn-sagemaker-appimageconfig-kernelspec-displayname)" : {{String}},
+  "[Name](#cfn-sagemaker-appimageconfig-kernelspec-name)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-appimageconfig-kernelspec-syntax.yaml"></a>
 
-```yaml
-
-  DisplayName: String
-  Name: String
-
+```
+  [DisplayName](#cfn-sagemaker-appimageconfig-kernelspec-displayname): {{String}}
+  [Name](#cfn-sagemaker-appimageconfig-kernelspec-name): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-appimageconfig-kernelspec-properties"></a>
 
-`DisplayName`
-
+`DisplayName`  <a name="cfn-sagemaker-appimageconfig-kernelspec-displayname"></a>
 The display name of the kernel.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-sagemaker-appimageconfig-kernelspec-name"></a>
 The name of the Jupyter kernel in the image. This value is case sensitive.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KernelGatewayImageConfig
-
-Tag
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

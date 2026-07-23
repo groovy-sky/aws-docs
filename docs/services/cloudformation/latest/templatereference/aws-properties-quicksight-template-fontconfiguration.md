@@ -2,120 +2,87 @@
 title: "AWS::QuickSight::Template FontConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FontConfiguration
+<a name="aws-properties-quicksight-template-fontconfiguration"></a>
 
 Configures the display properties of the given text.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-fontconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-fontconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FontColor" : String,
-  "FontDecoration" : String,
-  "FontFamily" : String,
-  "FontSize" : FontSize,
-  "FontStyle" : String,
-  "FontWeight" : FontWeight
+  "[FontColor](#cfn-quicksight-template-fontconfiguration-fontcolor)" : {{String}},
+  "[FontDecoration](#cfn-quicksight-template-fontconfiguration-fontdecoration)" : {{String}},
+  "[FontFamily](#cfn-quicksight-template-fontconfiguration-fontfamily)" : {{String}},
+  "[FontSize](#cfn-quicksight-template-fontconfiguration-fontsize)" : {{FontSize}},
+  "[FontStyle](#cfn-quicksight-template-fontconfiguration-fontstyle)" : {{String}},
+  "[FontWeight](#cfn-quicksight-template-fontconfiguration-fontweight)" : {{FontWeight}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-fontconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FontColor: String
-  FontDecoration: String
-  FontFamily: String
-  FontSize:
-    FontSize
-  FontStyle: String
-  FontWeight:
-    FontWeight
-
+```
+  [FontColor](#cfn-quicksight-template-fontconfiguration-fontcolor): {{String}}
+  [FontDecoration](#cfn-quicksight-template-fontconfiguration-fontdecoration): {{String}}
+  [FontFamily](#cfn-quicksight-template-fontconfiguration-fontfamily): {{String}}
+  [FontSize](#cfn-quicksight-template-fontconfiguration-fontsize): {{
+    FontSize}}
+  [FontStyle](#cfn-quicksight-template-fontconfiguration-fontstyle): {{String}}
+  [FontWeight](#cfn-quicksight-template-fontconfiguration-fontweight): {{
+    FontWeight}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-fontconfiguration-properties"></a>
 
-`FontColor`
-
+`FontColor`  <a name="cfn-quicksight-template-fontconfiguration-fontcolor"></a>
 Determines the color of the text.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FontDecoration`
-
+`FontDecoration`  <a name="cfn-quicksight-template-fontconfiguration-fontdecoration"></a>
 Determines the appearance of decorative lines on the text.
+*Required*: No
+*Type*: String
+*Allowed values*: `UNDERLINE | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `UNDERLINE | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FontFamily`
-
+`FontFamily`  <a name="cfn-quicksight-template-fontconfiguration-fontfamily"></a>
 The font family that you want to use.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FontSize`
-
+`FontSize`  <a name="cfn-quicksight-template-fontconfiguration-fontsize"></a>
 The option that determines the text display size.
+*Required*: No
+*Type*: [FontSize](aws-properties-quicksight-template-fontsize.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FontSize](aws-properties-quicksight-template-fontsize.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FontStyle`
-
+`FontStyle`  <a name="cfn-quicksight-template-fontconfiguration-fontstyle"></a>
 Determines the text display face that is inherited by the given font family.
+*Required*: No
+*Type*: String
+*Allowed values*: `NORMAL | ITALIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NORMAL | ITALIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FontWeight`
-
+`FontWeight`  <a name="cfn-quicksight-template-fontconfiguration-fontweight"></a>
 The option that determines the text display weight, or boldness.
-
-_Required_: No
-
-_Type_: [FontWeight](aws-properties-quicksight-template-fontweight.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FilterTextFieldControl
-
-FontSize
+*Required*: No
+*Type*: [FontWeight](aws-properties-quicksight-template-fontweight.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

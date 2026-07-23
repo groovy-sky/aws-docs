@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject VideoStandardOutputConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject VideoStandardOutputConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration"></a>
 
 Output settings for processing video.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Extraction" : VideoStandardExtraction,
-  "GenerativeField" : VideoStandardGenerativeField
+  "[Extraction](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-extraction)" : {{VideoStandardExtraction}},
+  "[GenerativeField](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-generativefield)" : {{VideoStandardGenerativeField}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Extraction:
-    VideoStandardExtraction
-  GenerativeField:
-    VideoStandardGenerativeField
-
+```
+  [Extraction](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-extraction): {{
+    VideoStandardExtraction}}
+  [GenerativeField](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-generativefield): {{
+    VideoStandardGenerativeField}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration-properties"></a>
 
-`Extraction`
-
+`Extraction`  <a name="cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-extraction"></a>
 Settings for populating data fields that describe the video.
+*Required*: No
+*Type*: [VideoStandardExtraction](aws-properties-bedrock-dataautomationproject-videostandardextraction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VideoStandardExtraction](aws-properties-bedrock-dataautomationproject-videostandardextraction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GenerativeField`
-
+`GenerativeField`  <a name="cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-generativefield"></a>
 Whether to generate descriptions of the video.
-
-_Required_: No
-
-_Type_: [VideoStandardGenerativeField](aws-properties-bedrock-dataautomationproject-videostandardgenerativefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VideoStandardGenerativeField
-
-AWS::Bedrock::DataSource
+*Required*: No
+*Type*: [VideoStandardGenerativeField](aws-properties-bedrock-dataautomationproject-videostandardgenerativefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

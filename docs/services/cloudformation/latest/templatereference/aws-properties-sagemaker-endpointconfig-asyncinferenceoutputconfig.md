@@ -2,96 +2,69 @@
 title: "AWS::SageMaker::EndpointConfig AsyncInferenceOutputConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::EndpointConfig AsyncInferenceOutputConfig
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig"></a>
 
 Specifies the configuration for asynchronous inference invocation outputs.
 
 ## Syntax
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "KmsKeyId" : String,
-  "NotificationConfig" : AsyncInferenceNotificationConfig,
-  "S3FailurePath" : String,
-  "S3OutputPath" : String
+  "[KmsKeyId](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid)" : {{String}},
+  "[NotificationConfig](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig)" : {{AsyncInferenceNotificationConfig}},
+  "[S3FailurePath](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3failurepath)" : {{String}},
+  "[S3OutputPath](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3outputpath)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig-syntax.yaml"></a>
 
-```yaml
-
-  KmsKeyId: String
-  NotificationConfig:
-    AsyncInferenceNotificationConfig
-  S3FailurePath: String
-  S3OutputPath: String
-
+```
+  [KmsKeyId](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid): {{String}}
+  [NotificationConfig](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig): {{
+    AsyncInferenceNotificationConfig}}
+  [S3FailurePath](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3failurepath): {{String}}
+  [S3OutputPath](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3outputpath): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig-properties"></a>
 
-`KmsKeyId`
+`KmsKeyId`  <a name="cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid"></a>
+The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the asynchronous inference output in Amazon S3.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt
-the asynchronous inference output in Amazon S3.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`NotificationConfig`
-
+`NotificationConfig`  <a name="cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig"></a>
 Specifies the configuration for notifications of inference results for asynchronous inference.
+*Required*: No
+*Type*: [AsyncInferenceNotificationConfig](aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [AsyncInferenceNotificationConfig](aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3FailurePath`
-
+`S3FailurePath`  <a name="cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3failurepath"></a>
 The Amazon S3 location to upload failure inference responses to.
+*Required*: No
+*Type*: String
+*Pattern*: `(https|s3)://([^/])/?(.*)`
+*Minimum*: `0`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(https|s3)://([^/])/?(.*)`
-
-_Minimum_: `0`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`S3OutputPath`
-
+`S3OutputPath`  <a name="cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3outputpath"></a>
 The Amazon S3 location to upload inference responses to.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AsyncInferenceNotificationConfig
-
-CaptureContentTypeHeader
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

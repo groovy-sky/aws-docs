@@ -2,53 +2,42 @@
 title: "AWS::IoTSiteWise::Dataset SourceDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::Dataset SourceDetail
+<a name="aws-properties-iotsitewise-dataset-sourcedetail"></a>
 
 The details of the dataset source associated with the dataset.
 
 ## Syntax
+<a name="aws-properties-iotsitewise-dataset-sourcedetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotsitewise-dataset-sourcedetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "Kendra" : KendraSourceDetail
+  "[Kendra](#cfn-iotsitewise-dataset-sourcedetail-kendra)" : {{KendraSourceDetail}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotsitewise-dataset-sourcedetail-syntax.yaml"></a>
 
-```yaml
-
-  Kendra:
-    KendraSourceDetail
-
+```
+  [Kendra](#cfn-iotsitewise-dataset-sourcedetail-kendra): {{
+    KendraSourceDetail}}
 ```
 
 ## Properties
+<a name="aws-properties-iotsitewise-dataset-sourcedetail-properties"></a>
 
-`Kendra`
-
+`Kendra`  <a name="cfn-iotsitewise-dataset-sourcedetail-kendra"></a>
 Contains details about the Kendra dataset source.
-
-_Required_: No
-
-_Type_: [KendraSourceDetail](aws-properties-iotsitewise-dataset-kendrasourcedetail.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KendraSourceDetail
-
-Tag
+*Required*: No
+*Type*: [KendraSourceDetail](aws-properties-iotsitewise-dataset-kendrasourcedetail.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

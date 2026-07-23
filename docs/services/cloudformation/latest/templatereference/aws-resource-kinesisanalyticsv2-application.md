@@ -2,200 +2,144 @@
 title: "AWS::KinesisAnalyticsV2::Application"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application
+<a name="aws-resource-kinesisanalyticsv2-application"></a>
 
-Creates an Amazon Kinesis Data Analytics application. For information about creating a
-Kinesis Data Analytics application, see [Creating an\
-Application](../../../managed-flink/latest/java/getting-started.md).
+Creates an Amazon Kinesis Data Analytics application. For information about creating a Kinesis Data Analytics application, see [Creating an Application](https://docs.aws.amazon.com/managed-flink/latest/java/getting-started.html).
 
 ## Syntax
+<a name="aws-resource-kinesisanalyticsv2-application-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kinesisanalyticsv2-application-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::KinesisAnalyticsV2::Application",
   "Properties" : {
-      "ApplicationConfiguration" : ApplicationConfiguration,
-      "ApplicationDescription" : String,
-      "ApplicationMaintenanceConfiguration" : ApplicationMaintenanceConfiguration,
-      "ApplicationMode" : String,
-      "ApplicationName" : String,
-      "RunConfiguration" : RunConfiguration,
-      "RuntimeEnvironment" : String,
-      "ServiceExecutionRole" : String,
-      "Tags" : [ Tag, ... ]
+      "[ApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration)" : {{ApplicationConfiguration}},
+      "[ApplicationDescription](#cfn-kinesisanalyticsv2-application-applicationdescription)" : {{String}},
+      "[ApplicationMaintenanceConfiguration](#cfn-kinesisanalyticsv2-application-applicationmaintenanceconfiguration)" : {{ApplicationMaintenanceConfiguration}},
+      "[ApplicationMode](#cfn-kinesisanalyticsv2-application-applicationmode)" : {{String}},
+      "[ApplicationName](#cfn-kinesisanalyticsv2-application-applicationname)" : {{String}},
+      "[RunConfiguration](#cfn-kinesisanalyticsv2-application-runconfiguration)" : {{RunConfiguration}},
+      "[RuntimeEnvironment](#cfn-kinesisanalyticsv2-application-runtimeenvironment)" : {{String}},
+      "[ServiceExecutionRole](#cfn-kinesisanalyticsv2-application-serviceexecutionrole)" : {{String}},
+      "[Tags](#cfn-kinesisanalyticsv2-application-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kinesisanalyticsv2-application-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::KinesisAnalyticsV2::Application
 Properties:
-  ApplicationConfiguration:
-    ApplicationConfiguration
-  ApplicationDescription: String
-  ApplicationMaintenanceConfiguration:
-    ApplicationMaintenanceConfiguration
-  ApplicationMode: String
-  ApplicationName: String
-  RunConfiguration:
-    RunConfiguration
-  RuntimeEnvironment: String
-  ServiceExecutionRole: String
-  Tags:
-    - Tag
-
+  [ApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration): {{
+    ApplicationConfiguration}}
+  [ApplicationDescription](#cfn-kinesisanalyticsv2-application-applicationdescription): {{String}}
+  [ApplicationMaintenanceConfiguration](#cfn-kinesisanalyticsv2-application-applicationmaintenanceconfiguration): {{
+    ApplicationMaintenanceConfiguration}}
+  [ApplicationMode](#cfn-kinesisanalyticsv2-application-applicationmode): {{String}}
+  [ApplicationName](#cfn-kinesisanalyticsv2-application-applicationname): {{String}}
+  [RunConfiguration](#cfn-kinesisanalyticsv2-application-runconfiguration): {{
+    RunConfiguration}}
+  [RuntimeEnvironment](#cfn-kinesisanalyticsv2-application-runtimeenvironment): {{String}}
+  [ServiceExecutionRole](#cfn-kinesisanalyticsv2-application-serviceexecutionrole): {{String}}
+  [Tags](#cfn-kinesisanalyticsv2-application-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-kinesisanalyticsv2-application-properties"></a>
 
-`ApplicationConfiguration`
-
+`ApplicationConfiguration`  <a name="cfn-kinesisanalyticsv2-application-applicationconfiguration"></a>
 Use this parameter to configure the application.
+*Required*: No
+*Type*: [ApplicationConfiguration](aws-properties-kinesisanalyticsv2-application-applicationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ApplicationConfiguration](aws-properties-kinesisanalyticsv2-application-applicationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationDescription`
-
+`ApplicationDescription`  <a name="cfn-kinesisanalyticsv2-application-applicationdescription"></a>
 The description of the application.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ApplicationMaintenanceConfiguration`  <a name="cfn-kinesisanalyticsv2-application-applicationmaintenanceconfiguration"></a>
+Specifies the maintenance window parameters for a Kinesis Data Analytics application.
+*Required*: No
+*Type*: [ApplicationMaintenanceConfiguration](aws-properties-kinesisanalyticsv2-application-applicationmaintenanceconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`ApplicationMode`  <a name="cfn-kinesisanalyticsv2-application-applicationmode"></a>
+To create a Kinesis Data Analytics Studio notebook, you must set the mode to `INTERACTIVE`. However, for a Kinesis Data Analytics for Apache Flink application, the mode is optional.
+*Required*: No
+*Type*: String
+*Allowed values*: `INTERACTIVE | STREAMING`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationMaintenanceConfiguration`
-
-Specifies the maintenance window parameters for a Kinesis Data Analytics
-application.
-
-_Required_: No
-
-_Type_: [ApplicationMaintenanceConfiguration](aws-properties-kinesisanalyticsv2-application-applicationmaintenanceconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApplicationMode`
-
-To create a Kinesis Data Analytics Studio notebook, you must set the mode to
-`INTERACTIVE`. However, for a Kinesis Data Analytics for Apache Flink
-application, the mode is optional.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INTERACTIVE | STREAMING`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ApplicationName`
-
+`ApplicationName`  <a name="cfn-kinesisanalyticsv2-application-applicationname"></a>
 The name of the application.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RunConfiguration`
-
+`RunConfiguration`  <a name="cfn-kinesisanalyticsv2-application-runconfiguration"></a>
 Describes the starting parameters for an Managed Service for Apache Flink application.
+*Required*: No
+*Type*: [RunConfiguration](aws-properties-kinesisanalyticsv2-application-runconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RunConfiguration](aws-properties-kinesisanalyticsv2-application-runconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuntimeEnvironment`
-
+`RuntimeEnvironment`  <a name="cfn-kinesisanalyticsv2-application-runtimeenvironment"></a>
 The runtime environment for the application.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SQL-1_0 | FLINK-1_6 | FLINK-1_8 | ZEPPELIN-FLINK-1_0 | FLINK-1_11 | FLINK-1_13 | ZEPPELIN-FLINK-2_0 | FLINK-1_15 | ZEPPELIN-FLINK-3_0 | FLINK-1_18 | FLINK-1_19 | FLINK-1_20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SQL-1_0 | FLINK-1_6 | FLINK-1_8 | ZEPPELIN-FLINK-1_0 | FLINK-1_11 | FLINK-1_13 | ZEPPELIN-FLINK-2_0 | FLINK-1_15 | ZEPPELIN-FLINK-3_0 | FLINK-1_18 | FLINK-1_19 | FLINK-1_20`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceExecutionRole`
-
+`ServiceExecutionRole`  <a name="cfn-kinesisanalyticsv2-application-serviceexecutionrole"></a>
 Specifies the IAM role that the application uses to access external resources.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:.*$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A list of one or more tags to assign to the application. A tag is a key-value pair
-that identifies an application. Note that the maximum number of application tags
-includes system tags. The maximum number of user-defined application tags is 50.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kinesisanalyticsv2-application-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-kinesisanalyticsv2-application-tags"></a>
+A list of one or more tags to assign to the application. A tag is a key-value pair that identifies an application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kinesisanalyticsv2-application-tag.md)
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-resource-kinesisanalyticsv2-application--examples"></a>
 
-- [Creating an Amazon Kinesis Data Analytics Application using Apache Flink](#aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink)
-
-- [Creating an Amazon Kinesis Data Analytics Studio Application](#aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application)
+**Topics**
++ [Creating an Amazon Kinesis Data Analytics Application using Apache Flink](#aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink)
++ [Creating an Amazon Kinesis Data Analytics Studio Application](#aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application)
 
 ### Creating an Amazon Kinesis Data Analytics Application using Apache Flink
+<a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink"></a>
 
-The following example shows how to create a simple application by using a
-deployment package from Amazon S3. You must add permissions to the IAM role to
-access any streams that your code requires.
+The following example shows how to create a simple application by using a deployment package from Amazon S3. You must add permissions to the IAM role to access any streams that your code requires.
 
 #### JSON
+<a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink--json"></a>
 
-```json
-
+```
 {
     "Description": "Simple KDA Flink application",
     "Parameters": {
@@ -278,9 +222,9 @@ access any streams that your code requires.
 ```
 
 #### YAML
+<a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink--yaml"></a>
 
-```yaml
-
+```
 Description: Simple KDA Flink application
 Parameters:
   CodeBucketArn:
@@ -326,16 +270,14 @@ Resources:
 ```
 
 ### Creating an Amazon Kinesis Data Analytics Studio Application
+<a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application"></a>
 
-The following example shows how to create a simple Studio application with an
-Amazon Glue database. You must add permissions to the IAM role to create or
-access any streams you require, and any that already exist must be added to the
-Glue database.
+The following example shows how to create a simple Studio application with an Amazon Glue database. You must add permissions to the IAM role to create or access any streams you require, and any that already exist must be added to the Glue database.
 
 #### JSON
+<a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application--json"></a>
 
-```json
-
+```
 {
     "Description": "KDA Studio application",
     "Parameters": {
@@ -485,9 +427,9 @@ Glue database.
 ```
 
 #### YAML
+<a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application--yaml"></a>
 
-```yaml
-
+```
 Description: KDA Studio application
 Parameters:
   GlueDatabaseName:
@@ -573,14 +515,7 @@ Resources:
 ```
 
 ## See also
-
-- [CreateApplication](../../../managed-flink/latest/apiv2/api-createapplication.md) in the _Amazon Kinesis Data_
-_Analytics API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon Managed Service for Apache Flink V2
-
-ApplicationCodeConfiguration
+<a name="aws-resource-kinesisanalyticsv2-application--seealso"></a>
++ [CreateApplication](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplication.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

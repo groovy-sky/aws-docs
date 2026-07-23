@@ -2,56 +2,43 @@
 title: "AWS::Lex::Bot BKBExactResponseFields"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BKBExactResponseFields
+<a name="aws-properties-lex-bot-bkbexactresponsefields"></a>
 
-The `BKBExactResponseFields` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
+<a name="aws-properties-lex-bot-bkbexactresponsefields-description"></a>The `BKBExactResponseFields` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
 
 ## Syntax
+<a name="aws-properties-lex-bot-bkbexactresponsefields-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-bkbexactresponsefields-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnswerField" : String
+  "[AnswerField](#cfn-lex-bot-bkbexactresponsefields-answerfield)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-bkbexactresponsefields-syntax.yaml"></a>
 
-```yaml
-
-  AnswerField: String
-
+```
+  [AnswerField](#cfn-lex-bot-bkbexactresponsefields-answerfield): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-bkbexactresponsefields-properties"></a>
 
-`AnswerField`
-
+`AnswerField`  <a name="cfn-lex-bot-bkbexactresponsefields-answerfield"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BedrockModelSpecification
-
-BotAliasLocaleSettings
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,84 +2,58 @@
 title: "AWS::SSM::MaintenanceWindowTarget Targets"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::MaintenanceWindowTarget Targets
+<a name="aws-properties-ssm-maintenancewindowtarget-targets"></a>
 
-The `Targets` property type specifies adding a target to a maintenance
-window target in AWS Systems Manager.
+The `Targets` property type specifies adding a target to a maintenance window target in AWS Systems Manager.
 
-`Targets` is a property of the [AWS::SSM::MaintenanceWindowTarget](../userguide/aws-resource-ssm-maintenancewindowtarget.md) resource.
+`Targets` is a property of the [AWS::SSM::MaintenanceWindowTarget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html) resource.
 
 ## Syntax
+<a name="aws-properties-ssm-maintenancewindowtarget-targets-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssm-maintenancewindowtarget-targets-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Values" : [ String, ... ]
+  "[Key](#cfn-ssm-maintenancewindowtarget-targets-key)" : {{String}},
+  "[Values](#cfn-ssm-maintenancewindowtarget-targets-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssm-maintenancewindowtarget-targets-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Values:
-    - String
-
+```
+  [Key](#cfn-ssm-maintenancewindowtarget-targets-key): {{String}}
+  [Values](#cfn-ssm-maintenancewindowtarget-targets-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssm-maintenancewindowtarget-targets-properties"></a>
 
-`Key`
+`Key`  <a name="cfn-ssm-maintenancewindowtarget-targets-key"></a>
+User-defined criteria for sending commands that target managed nodes that meet the criteria.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\p{L}\p{Z}\p{N}_.:/=\-@]*$|resource-groups:ResourceTypeFilters|resource-groups:Name`
+*Minimum*: `1`
+*Maximum*: `163`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-User-defined criteria for sending commands that target managed nodes that meet the
-criteria.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\p{L}\p{Z}\p{N}_.:/=\-@]*$|resource-groups:ResourceTypeFilters|resource-groups:Name`
-
-_Minimum_: `1`
-
-_Maximum_: `163`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
-User-defined criteria that maps to `Key`. For example, if you specified
-`tag:ServerRole`, you could specify `value:WebServer` to run a command on
-instances that include EC2 tags of `ServerRole,WebServer`.
-
-Depending on the type of target, the maximum number of values for a key might be lower than
-the global maximum of 50.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SSM::MaintenanceWindowTarget
-
-AWS::SSM::MaintenanceWindowTask
+`Values`  <a name="cfn-ssm-maintenancewindowtarget-targets-values"></a>
+User-defined criteria that maps to `Key`. For example, if you specified `tag:ServerRole`, you could specify `value:WebServer` to run a command on instances that include EC2 tags of `ServerRole,WebServer`.
+Depending on the type of target, the maximum number of values for a key might be lower than the global maximum of 50.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

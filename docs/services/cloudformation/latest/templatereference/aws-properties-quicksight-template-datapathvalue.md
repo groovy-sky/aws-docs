@@ -2,85 +2,62 @@
 title: "AWS::QuickSight::Template DataPathValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DataPathValue
+<a name="aws-properties-quicksight-template-datapathvalue"></a>
 
 The data path that needs to be sorted.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-datapathvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-datapathvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "DataPathType" : DataPathType,
-  "FieldId" : String,
-  "FieldValue" : String
+  "[DataPathType](#cfn-quicksight-template-datapathvalue-datapathtype)" : {{DataPathType}},
+  "[FieldId](#cfn-quicksight-template-datapathvalue-fieldid)" : {{String}},
+  "[FieldValue](#cfn-quicksight-template-datapathvalue-fieldvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-datapathvalue-syntax.yaml"></a>
 
-```yaml
-
-  DataPathType:
-    DataPathType
-  FieldId: String
-  FieldValue: String
-
+```
+  [DataPathType](#cfn-quicksight-template-datapathvalue-datapathtype): {{
+    DataPathType}}
+  [FieldId](#cfn-quicksight-template-datapathvalue-fieldid): {{String}}
+  [FieldValue](#cfn-quicksight-template-datapathvalue-fieldvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-datapathvalue-properties"></a>
 
-`DataPathType`
-
+`DataPathType`  <a name="cfn-quicksight-template-datapathvalue-datapathtype"></a>
 The type configuration of the field.
+*Required*: No
+*Type*: [DataPathType](aws-properties-quicksight-template-datapathtype.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DataPathType](aws-properties-quicksight-template-datapathtype.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-template-datapathvalue-fieldid"></a>
 The field ID of the field that needs to be sorted.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FieldValue`
-
+`FieldValue`  <a name="cfn-quicksight-template-datapathvalue-fieldvalue"></a>
 The actual value of the field that needs to be sorted.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataPathType
-
-DataSetConfiguration
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

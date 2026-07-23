@@ -2,78 +2,58 @@
 title: "AWS::EC2::EC2Fleet FleetLaunchTemplateConfigRequest"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet FleetLaunchTemplateConfigRequest
+<a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest"></a>
 
 Specifies a launch template and overrides for an EC2 Fleet.
 
-`FleetLaunchTemplateConfigRequest` is a property of the [AWS::EC2::EC2Fleet](../userguide/aws-resource-ec2-ec2fleet.md) resource.
+`FleetLaunchTemplateConfigRequest` is a property of the [AWS::EC2::EC2Fleet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html) resource.
 
 ## Syntax
+<a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-syntax.json"></a>
 
-```json
-
+```
 {
-  "LaunchTemplateSpecification" : FleetLaunchTemplateSpecificationRequest,
-  "Overrides" : [ FleetLaunchTemplateOverridesRequest, ... ]
+  "[LaunchTemplateSpecification](#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification)" : {{FleetLaunchTemplateSpecificationRequest}},
+  "[Overrides](#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides)" : {{[ FleetLaunchTemplateOverridesRequest, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-syntax.yaml"></a>
 
-```yaml
-
-  LaunchTemplateSpecification:
-    FleetLaunchTemplateSpecificationRequest
-  Overrides:
-    - FleetLaunchTemplateOverridesRequest
-
+```
+  [LaunchTemplateSpecification](#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification): {{
+    FleetLaunchTemplateSpecificationRequest}}
+  [Overrides](#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides): {{
+    - FleetLaunchTemplateOverridesRequest}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-properties"></a>
 
-`LaunchTemplateSpecification`
+`LaunchTemplateSpecification`  <a name="cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification"></a>
+The launch template to use. You must specify either the launch template ID or launch template name in the request.
+*Required*: No
+*Type*: [FleetLaunchTemplateSpecificationRequest](aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The launch template to use. You must specify either the launch template ID or launch
-template name in the request.
-
-_Required_: No
-
-_Type_: [FleetLaunchTemplateSpecificationRequest](aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Overrides`
-
-Any parameters that you specify override the same parameters in the launch
-template.
-
-For fleets of type `request` and `maintain`, a maximum of 300
-items is allowed across all launch templates.
-
-_Required_: No
-
-_Type_: Array of [FleetLaunchTemplateOverridesRequest](aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`Overrides`  <a name="cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides"></a>
+Any parameters that you specify override the same parameters in the launch template.
+For fleets of type `request` and `maintain`, a maximum of 300 items is allowed across all launch templates.
+*Required*: No
+*Type*: Array of [FleetLaunchTemplateOverridesRequest](aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also
-
-- [FleetLaunchTemplateConfigRequest](../../../../reference/awsec2/latest/apireference/api-fleetlaunchtemplateconfigrequest.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EbsBlockDevice
-
-FleetLaunchTemplateOverridesRequest
+<a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest--seealso"></a>
++ [ FleetLaunchTemplateConfigRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetLaunchTemplateConfigRequest.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

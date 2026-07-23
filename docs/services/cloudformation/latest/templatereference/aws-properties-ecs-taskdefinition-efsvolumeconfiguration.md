@@ -2,122 +2,76 @@
 title: "AWS::ECS::TaskDefinition EFSVolumeConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition EFSVolumeConfiguration
+<a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration"></a>
 
-This parameter is specified when you're using an Amazon Elastic File System file
-system for task storage. For more information, see [Amazon EFS volumes](../../../amazonecs/latest/developerguide/efs-volumes.md) in
-the _Amazon Elastic Container Service Developer Guide_.
+This parameter is specified when you're using an Amazon Elastic File System file system for task storage. For more information, see [Amazon EFS volumes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-volumes.html) in the *Amazon Elastic Container Service Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AuthorizationConfig" : AuthorizationConfig,
-  "FilesystemId" : String,
-  "RootDirectory" : String,
-  "TransitEncryption" : String,
-  "TransitEncryptionPort" : Integer
+  "[AuthorizationConfig](#cfn-ecs-taskdefinition-efsvolumeconfiguration-authorizationconfig)" : {{AuthorizationConfig}},
+  "[FilesystemId](#cfn-ecs-taskdefinition-efsvolumeconfiguration-filesystemid)" : {{String}},
+  "[RootDirectory](#cfn-ecs-taskdefinition-efsvolumeconfiguration-rootdirectory)" : {{String}},
+  "[TransitEncryption](#cfn-ecs-taskdefinition-efsvolumeconfiguration-transitencryption)" : {{String}},
+  "[TransitEncryptionPort](#cfn-ecs-taskdefinition-efsvolumeconfiguration-transitencryptionport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AuthorizationConfig:
-    AuthorizationConfig
-  FilesystemId: String
-  RootDirectory: String
-  TransitEncryption: String
-  TransitEncryptionPort: Integer
-
+```
+  [AuthorizationConfig](#cfn-ecs-taskdefinition-efsvolumeconfiguration-authorizationconfig): {{
+    AuthorizationConfig}}
+  [FilesystemId](#cfn-ecs-taskdefinition-efsvolumeconfiguration-filesystemid): {{String}}
+  [RootDirectory](#cfn-ecs-taskdefinition-efsvolumeconfiguration-rootdirectory): {{String}}
+  [TransitEncryption](#cfn-ecs-taskdefinition-efsvolumeconfiguration-transitencryption): {{String}}
+  [TransitEncryptionPort](#cfn-ecs-taskdefinition-efsvolumeconfiguration-transitencryptionport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration-properties"></a>
 
-`AuthorizationConfig`
-
+`AuthorizationConfig`  <a name="cfn-ecs-taskdefinition-efsvolumeconfiguration-authorizationconfig"></a>
 The authorization configuration details for the Amazon EFS file system.
+*Required*: No
+*Type*: [AuthorizationConfig](aws-properties-ecs-taskdefinition-authorizationconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [AuthorizationConfig](aws-properties-ecs-taskdefinition-authorizationconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`FilesystemId`
-
+`FilesystemId`  <a name="cfn-ecs-taskdefinition-efsvolumeconfiguration-filesystemid"></a>
 The Amazon EFS file system ID to use.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`RootDirectory`  <a name="cfn-ecs-taskdefinition-efsvolumeconfiguration-rootdirectory"></a>
+The directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying `/` will have the same effect as omitting this parameter.
+If an EFS access point is specified in the `authorizationConfig`, the root directory parameter must either be omitted or set to `/` which will enforce the path set on the EFS access point.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: String
+`TransitEncryption`  <a name="cfn-ecs-taskdefinition-efsvolumeconfiguration-transitencryption"></a>
+Determines whether to use encryption for Amazon EFS data in transit between the Amazon ECS host and the Amazon EFS server. Transit encryption must be turned on if Amazon EFS IAM authorization is used. If this parameter is omitted, the default value of `DISABLED` is used. For more information, see [Encrypting data in transit](https://docs.aws.amazon.com/efs/latest/ug/encryption-in-transit.html) in the *Amazon Elastic File System User Guide*.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RootDirectory`
-
-The directory within the Amazon EFS file system to mount as the root directory inside
-the host. If this parameter is omitted, the root of the Amazon EFS volume will be used.
-Specifying `/` will have the same effect as omitting this parameter.
-
-###### Important
-
-If an EFS access point is specified in the `authorizationConfig`, the
-root directory parameter must either be omitted or set to `/` which will
-enforce the path set on the EFS access point.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitEncryption`
-
-Determines whether to use encryption for Amazon EFS data in transit between the Amazon
-ECS host and the Amazon EFS server. Transit encryption must be turned on if Amazon EFS
-IAM authorization is used. If this parameter is omitted, the default value of
-`DISABLED` is used. For more information, see [Encrypting data in transit](../../../efs/latest/ug/encryption-in-transit.md) in
-the _Amazon Elastic File System User Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TransitEncryptionPort`
-
-The port to use when sending encrypted data between the Amazon ECS host and the Amazon
-EFS server. If you do not specify a transit encryption port, it will use the port
-selection strategy that the Amazon EFS mount helper uses. For more information, see
-[EFS mount\
-helper](../../../efs/latest/ug/efs-mount-helper.md) in the _Amazon Elastic File System User_
-_Guide_.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DockerVolumeConfiguration
-
-EnvironmentFile
+`TransitEncryptionPort`  <a name="cfn-ecs-taskdefinition-efsvolumeconfiguration-transitencryptionport"></a>
+The port to use when sending encrypted data between the Amazon ECS host and the Amazon EFS server. If you do not specify a transit encryption port, it will use the port selection strategy that the Amazon EFS mount helper uses. For more information, see [EFS mount helper](https://docs.aws.amazon.com/efs/latest/ug/efs-mount-helper.html) in the *Amazon Elastic File System User Guide*.
+*Required*: No
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,53 +2,42 @@
 title: "AWS::NetworkFirewall::RuleGroup PortSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::RuleGroup PortSet
+<a name="aws-properties-networkfirewall-rulegroup-portset"></a>
 
 A set of port ranges for use in the rules in a rule group.
 
 ## Syntax
+<a name="aws-properties-networkfirewall-rulegroup-portset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkfirewall-rulegroup-portset-syntax.json"></a>
 
-```json
-
+```
 {
-  "Definition" : [ String, ... ]
+  "[Definition](#cfn-networkfirewall-rulegroup-portset-definition)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkfirewall-rulegroup-portset-syntax.yaml"></a>
 
-```yaml
-
-  Definition:
-    - String
-
+```
+  [Definition](#cfn-networkfirewall-rulegroup-portset-definition): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-networkfirewall-rulegroup-portset-properties"></a>
 
-`Definition`
-
+`Definition`  <a name="cfn-networkfirewall-rulegroup-portset-definition"></a>
 The set of port ranges.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PortRange
-
-PublishMetricAction
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

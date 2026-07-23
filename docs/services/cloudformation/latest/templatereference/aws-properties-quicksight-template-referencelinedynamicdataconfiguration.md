@@ -2,79 +2,60 @@
 title: "AWS::QuickSight::Template ReferenceLineDynamicDataConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ReferenceLineDynamicDataConfiguration
+<a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration"></a>
 
 The dynamic configuration of the reference line data configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Calculation" : NumericalAggregationFunction,
-  "Column" : ColumnIdentifier,
-  "MeasureAggregationFunction" : AggregationFunction
+  "[Calculation](#cfn-quicksight-template-referencelinedynamicdataconfiguration-calculation)" : {{NumericalAggregationFunction}},
+  "[Column](#cfn-quicksight-template-referencelinedynamicdataconfiguration-column)" : {{ColumnIdentifier}},
+  "[MeasureAggregationFunction](#cfn-quicksight-template-referencelinedynamicdataconfiguration-measureaggregationfunction)" : {{AggregationFunction}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Calculation:
-    NumericalAggregationFunction
-  Column:
-    ColumnIdentifier
-  MeasureAggregationFunction:
-    AggregationFunction
-
+```
+  [Calculation](#cfn-quicksight-template-referencelinedynamicdataconfiguration-calculation): {{
+    NumericalAggregationFunction}}
+  [Column](#cfn-quicksight-template-referencelinedynamicdataconfiguration-column): {{
+    ColumnIdentifier}}
+  [MeasureAggregationFunction](#cfn-quicksight-template-referencelinedynamicdataconfiguration-measureaggregationfunction): {{
+    AggregationFunction}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration-properties"></a>
 
-`Calculation`
-
+`Calculation`  <a name="cfn-quicksight-template-referencelinedynamicdataconfiguration-calculation"></a>
 The calculation that is used in the dynamic data.
+*Required*: Yes
+*Type*: [NumericalAggregationFunction](aws-properties-quicksight-template-numericalaggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [NumericalAggregationFunction](aws-properties-quicksight-template-numericalaggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-referencelinedynamicdataconfiguration-column"></a>
 The column that the dynamic data targets.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureAggregationFunction`
-
+`MeasureAggregationFunction`  <a name="cfn-quicksight-template-referencelinedynamicdataconfiguration-measureaggregationfunction"></a>
 The aggregation function that is used in the dynamic data.
-
-_Required_: No
-
-_Type_: [AggregationFunction](aws-properties-quicksight-template-aggregationfunction.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReferenceLineDataConfiguration
-
-ReferenceLineLabelConfiguration
+*Required*: No
+*Type*: [AggregationFunction](aws-properties-quicksight-template-aggregationfunction.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

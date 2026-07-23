@@ -2,72 +2,63 @@
 title: "AWS::Notifications::NotificationHub"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Notifications::NotificationHub
+<a name="aws-resource-notifications-notificationhub"></a>
 
-Configures a `NotificationHub` for AWS User Notifications. For more
-information about notification hub, see the [AWS User Notifications User Guide](../../../notifications/latest/userguide/notification-hubs.md).
+Configures a `NotificationHub` for AWS User Notifications. For more information about notification hub, see the [AWS User Notifications User Guide](https://docs.aws.amazon.com/notifications/latest/userguide/notification-hubs.html).
 
 ## Syntax
+<a name="aws-resource-notifications-notificationhub-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-notifications-notificationhub-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Notifications::NotificationHub",
   "Properties" : {
-      "Region" : String
+      "[Region](#cfn-notifications-notificationhub-region)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-notifications-notificationhub-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Notifications::NotificationHub
 Properties:
-  Region: String
-
+  [Region](#cfn-notifications-notificationhub-region): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-notifications-notificationhub-properties"></a>
 
-`Region`
-
+`Region`  <a name="cfn-notifications-notificationhub-region"></a>
 The `NotificationHub` Region.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `2`
-
-_Maximum_: `25`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Minimum*: `2`
+*Maximum*: `25`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-notifications-notificationhub-return-values"></a>
 
 ### Ref
+<a name="aws-resource-notifications-notificationhub-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-notifications-notificationhub-return-values-fn--getatt"></a>
 
-`CreationTime`
+####
+<a name="aws-resource-notifications-notificationhub-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The date and time the `NotificationHubOverview` was created.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-NotificationHubStatusSummary
 
 All content copied from https://docs.aws.amazon.com/.

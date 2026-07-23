@@ -2,129 +2,84 @@
 title: "AWS::Kendra::DataSource ConnectionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource ConnectionConfiguration
+<a name="aws-properties-kendra-datasource-connectionconfiguration"></a>
 
-Provides the configuration information that's required to connect to a
-database.
+Provides the configuration information that's required to connect to a database.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-connectionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-connectionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DatabaseHost" : String,
-  "DatabaseName" : String,
-  "DatabasePort" : Integer,
-  "SecretArn" : String,
-  "TableName" : String
+  "[DatabaseHost](#cfn-kendra-datasource-connectionconfiguration-databasehost)" : {{String}},
+  "[DatabaseName](#cfn-kendra-datasource-connectionconfiguration-databasename)" : {{String}},
+  "[DatabasePort](#cfn-kendra-datasource-connectionconfiguration-databaseport)" : {{Integer}},
+  "[SecretArn](#cfn-kendra-datasource-connectionconfiguration-secretarn)" : {{String}},
+  "[TableName](#cfn-kendra-datasource-connectionconfiguration-tablename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-connectionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DatabaseHost: String
-  DatabaseName: String
-  DatabasePort: Integer
-  SecretArn: String
-  TableName: String
-
+```
+  [DatabaseHost](#cfn-kendra-datasource-connectionconfiguration-databasehost): {{String}}
+  [DatabaseName](#cfn-kendra-datasource-connectionconfiguration-databasename): {{String}}
+  [DatabasePort](#cfn-kendra-datasource-connectionconfiguration-databaseport): {{Integer}}
+  [SecretArn](#cfn-kendra-datasource-connectionconfiguration-secretarn): {{String}}
+  [TableName](#cfn-kendra-datasource-connectionconfiguration-tablename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-connectionconfiguration-properties"></a>
 
-`DatabaseHost`
+`DatabaseHost`  <a name="cfn-kendra-datasource-connectionconfiguration-databasehost"></a>
+The name of the host for the database. Can be either a string (host.subdomain.domain.tld) or an IPv4 or IPv6 address.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `253`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the host for the database. Can be either a string
-(host.subdomain.domain.tld) or an IPv4 or IPv6 address.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `253`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseName`
-
+`DatabaseName`  <a name="cfn-kendra-datasource-connectionconfiguration-databasename"></a>
 The name of the database containing the document data.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabasePort`
-
+`DatabasePort`  <a name="cfn-kendra-datasource-connectionconfiguration-databaseport"></a>
 The port that the database uses for connections.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`SecretArn`  <a name="cfn-kendra-datasource-connectionconfiguration-secretarn"></a>
+The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that stores the credentials. The credentials should be a user-password pair. For more information, see [Using a Database Data Source](https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.html). For more information about AWS Secrets Manager, see [ What Is AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) in the * AWS Secrets Manager * user guide.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
+*Minimum*: `1`
+*Maximum*: `1284`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretArn`
-
-The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that stores
-the credentials. The credentials should be a user-password pair. For more information, see [Using a\
-Database Data Source](../../../kendra/latest/dg/data-source-database.md). For more information about AWS Secrets Manager, see
-[What\
-Is AWS Secrets Manager](../../../secretsmanager/latest/userguide/intro.md) in the _AWS Secrets Manager_
-user guide.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[^/].{0,1023}`
-
-_Minimum_: `1`
-
-_Maximum_: `1284`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
+`TableName`  <a name="cfn-kendra-datasource-connectionconfiguration-tablename"></a>
 The name of the table that contains the document data.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfluenceSpaceToIndexFieldMapping
-
-CustomDocumentEnrichmentConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

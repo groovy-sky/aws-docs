@@ -2,67 +2,51 @@
 title: "AWS::MediaConnect::Flow FlowTransitEncryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow FlowTransitEncryption
+<a name="aws-properties-mediaconnect-flow-flowtransitencryption"></a>
 
 The configuration that defines how content is encrypted during transit between the MediaConnect router and a MediaConnect flow.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-flowtransitencryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-flowtransitencryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "EncryptionKeyConfiguration" : FlowTransitEncryptionKeyConfiguration,
-  "EncryptionKeyType" : String
+  "[EncryptionKeyConfiguration](#cfn-mediaconnect-flow-flowtransitencryption-encryptionkeyconfiguration)" : {{FlowTransitEncryptionKeyConfiguration}},
+  "[EncryptionKeyType](#cfn-mediaconnect-flow-flowtransitencryption-encryptionkeytype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-flowtransitencryption-syntax.yaml"></a>
 
-```yaml
-
-  EncryptionKeyConfiguration:
-    FlowTransitEncryptionKeyConfiguration
-  EncryptionKeyType: String
-
+```
+  [EncryptionKeyConfiguration](#cfn-mediaconnect-flow-flowtransitencryption-encryptionkeyconfiguration): {{
+    FlowTransitEncryptionKeyConfiguration}}
+  [EncryptionKeyType](#cfn-mediaconnect-flow-flowtransitencryption-encryptionkeytype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-flowtransitencryption-properties"></a>
 
-`EncryptionKeyConfiguration`
-
+`EncryptionKeyConfiguration`  <a name="cfn-mediaconnect-flow-flowtransitencryption-encryptionkeyconfiguration"></a>
 The configuration details for the encryption key.
+*Required*: Yes
+*Type*: [FlowTransitEncryptionKeyConfiguration](aws-properties-mediaconnect-flow-flowtransitencryptionkeyconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [FlowTransitEncryptionKeyConfiguration](aws-properties-mediaconnect-flow-flowtransitencryptionkeyconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionKeyType`
-
+`EncryptionKeyType`  <a name="cfn-mediaconnect-flow-flowtransitencryption-encryptionkeytype"></a>
 The type of encryption key to use for flow transit encryption.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SECRETS_MANAGER | AUTOMATIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FailoverConfig
-
-FlowTransitEncryptionKeyConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `SECRETS_MANAGER | AUTOMATIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

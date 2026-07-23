@@ -2,82 +2,60 @@
 title: "AWS::Bedrock::Agent ParameterDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Agent ParameterDetail
+<a name="aws-properties-bedrock-agent-parameterdetail"></a>
 
-Contains details about a parameter in a function for an action group.
+ Contains details about a parameter in a function for an action group.
 
 ## Syntax
+<a name="aws-properties-bedrock-agent-parameterdetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-agent-parameterdetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "Required" : Boolean,
-  "Type" : String
+  "[Description](#cfn-bedrock-agent-parameterdetail-description)" : {{String}},
+  "[Required](#cfn-bedrock-agent-parameterdetail-required)" : {{Boolean}},
+  "[Type](#cfn-bedrock-agent-parameterdetail-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-agent-parameterdetail-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  Required: Boolean
-  Type: String
-
+```
+  [Description](#cfn-bedrock-agent-parameterdetail-description): {{String}}
+  [Required](#cfn-bedrock-agent-parameterdetail-required): {{Boolean}}
+  [Type](#cfn-bedrock-agent-parameterdetail-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-agent-parameterdetail-properties"></a>
 
-`Description`
+`Description`  <a name="cfn-bedrock-agent-parameterdetail-description"></a>
+ A description of the parameter. Helps the foundation model determine how to elicit the parameters from the user.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A description of the parameter. Helps the foundation model determine how to elicit the parameters from the user.
+`Required`  <a name="cfn-bedrock-agent-parameterdetail-required"></a>
+ Whether the parameter is required for the agent to complete the function for action group invocation.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `500`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Required`
-
-Whether the parameter is required for the agent to complete the function for action group invocation.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The data type of the parameter.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `string | number | integer | boolean | array`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OrchestrationExecutor
-
-PromptConfiguration
+`Type`  <a name="cfn-bedrock-agent-parameterdetail-type"></a>
+ The data type of the parameter.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `string | number | integer | boolean | array`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

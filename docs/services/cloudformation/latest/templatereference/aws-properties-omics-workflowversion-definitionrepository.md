@@ -2,102 +2,73 @@
 title: "AWS::Omics::WorkflowVersion DefinitionRepository"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Omics::WorkflowVersion DefinitionRepository
+<a name="aws-properties-omics-workflowversion-definitionrepository"></a>
 
 Contains information about a source code repository that hosts the workflow definition files.
 
 ## Syntax
+<a name="aws-properties-omics-workflowversion-definitionrepository-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-omics-workflowversion-definitionrepository-syntax.json"></a>
 
-```json
-
+```
 {
-  "connectionArn" : String,
-  "excludeFilePatterns" : [ String, ... ],
-  "fullRepositoryId" : String,
-  "sourceReference" : SourceReference
+  "[connectionArn](#cfn-omics-workflowversion-definitionrepository-connectionarn)" : {{String}},
+  "[excludeFilePatterns](#cfn-omics-workflowversion-definitionrepository-excludefilepatterns)" : {{[ String, ... ]}},
+  "[fullRepositoryId](#cfn-omics-workflowversion-definitionrepository-fullrepositoryid)" : {{String}},
+  "[sourceReference](#cfn-omics-workflowversion-definitionrepository-sourcereference)" : {{SourceReference}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-omics-workflowversion-definitionrepository-syntax.yaml"></a>
 
-```yaml
-
-  connectionArn: String
-  excludeFilePatterns:
-    - String
-  fullRepositoryId: String
-  sourceReference:
-    SourceReference
-
+```
+  [connectionArn](#cfn-omics-workflowversion-definitionrepository-connectionarn): {{String}}
+  [excludeFilePatterns](#cfn-omics-workflowversion-definitionrepository-excludefilepatterns): {{
+    - String}}
+  [fullRepositoryId](#cfn-omics-workflowversion-definitionrepository-fullrepositoryid): {{String}}
+  [sourceReference](#cfn-omics-workflowversion-definitionrepository-sourcereference): {{
+    SourceReference}}
 ```
 
 ## Properties
+<a name="aws-properties-omics-workflowversion-definitionrepository-properties"></a>
 
-`connectionArn`
-
+`connectionArn`  <a name="cfn-omics-workflowversion-definitionrepository-connectionarn"></a>
 The Amazon Resource Name (ARN) of the connection to the source code repository.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(-[\\w]+)*:.+:.+:[0-9]{12}:.+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:aws(-[\\w]+)*:.+:.+:[0-9]{12}:.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`excludeFilePatterns`
-
+`excludeFilePatterns`  <a name="cfn-omics-workflowversion-definitionrepository-excludefilepatterns"></a>
 A list of file patterns to exclude when retrieving the workflow definition from the repository.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`fullRepositoryId`
-
+`fullRepositoryId`  <a name="cfn-omics-workflowversion-definitionrepository-fullrepositoryid"></a>
 The full repository identifier, including the repository owner and name. For example, 'repository-owner/repository-name'.
+*Required*: No
+*Type*: String
+*Pattern*: `.+/.+`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `.+/.+`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`sourceReference`
-
+`sourceReference`  <a name="cfn-omics-workflowversion-definitionrepository-sourcereference"></a>
 The source reference for the repository, such as a branch name, tag, or commit ID.
-
-_Required_: No
-
-_Type_: [SourceReference](aws-properties-omics-workflowversion-sourcereference.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContainerRegistryMap
-
-ImageMapping
+*Required*: No
+*Type*: [SourceReference](aws-properties-omics-workflowversion-sourcereference.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

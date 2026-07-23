@@ -2,69 +2,52 @@
 title: "AWS::Lex::Bot BedrockAgentIntentKnowledgeBaseConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot BedrockAgentIntentKnowledgeBaseConfiguration
+<a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration"></a>
 
-The `BedrockAgentIntentKnowledgeBaseConfiguration` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
+<a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-description"></a>The `BedrockAgentIntentKnowledgeBaseConfiguration` property type specifies Property description not available. for an [AWS::Lex::Bot](aws-resource-lex-bot.md).
 
 ## Syntax
+<a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BedrockKnowledgeBaseArn" : String,
-  "BedrockModelConfiguration" : BedrockModelSpecification
+  "[BedrockKnowledgeBaseArn](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockknowledgebasearn)" : {{String}},
+  "[BedrockModelConfiguration](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockmodelconfiguration)" : {{BedrockModelSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BedrockKnowledgeBaseArn: String
-  BedrockModelConfiguration:
-    BedrockModelSpecification
-
+```
+  [BedrockKnowledgeBaseArn](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockknowledgebasearn): {{String}}
+  [BedrockModelConfiguration](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockmodelconfiguration): {{
+    BedrockModelSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-properties"></a>
 
-`BedrockKnowledgeBaseArn`
-
+`BedrockKnowledgeBaseArn`  <a name="cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockknowledgebasearn"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `5000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `5000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BedrockModelConfiguration`
-
+`BedrockModelConfiguration`  <a name="cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockmodelconfiguration"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [BedrockModelSpecification](aws-properties-lex-bot-bedrockmodelspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BedrockAgentIntentConfiguration
-
-BedrockGuardrailConfiguration
+*Required*: Yes
+*Type*: [BedrockModelSpecification](aws-properties-lex-bot-bedrockmodelspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,69 +2,53 @@
 title: "AWS::QuickSight::Template AxisScale"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template AxisScale
+<a name="aws-properties-quicksight-template-axisscale"></a>
 
-The scale setup
-options for a numeric axis display.
+The scale setup options for a numeric axis display.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-axisscale-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-axisscale-syntax.json"></a>
 
-```json
-
+```
 {
-  "Linear" : AxisLinearScale,
-  "Logarithmic" : AxisLogarithmicScale
+  "[Linear](#cfn-quicksight-template-axisscale-linear)" : {{AxisLinearScale}},
+  "[Logarithmic](#cfn-quicksight-template-axisscale-logarithmic)" : {{AxisLogarithmicScale}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-axisscale-syntax.yaml"></a>
 
-```yaml
-
-  Linear:
-    AxisLinearScale
-  Logarithmic:
-    AxisLogarithmicScale
-
+```
+  [Linear](#cfn-quicksight-template-axisscale-linear): {{
+    AxisLinearScale}}
+  [Logarithmic](#cfn-quicksight-template-axisscale-logarithmic): {{
+    AxisLogarithmicScale}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-axisscale-properties"></a>
 
-`Linear`
-
+`Linear`  <a name="cfn-quicksight-template-axisscale-linear"></a>
 The linear axis scale setup.
+*Required*: No
+*Type*: [AxisLinearScale](aws-properties-quicksight-template-axislinearscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisLinearScale](aws-properties-quicksight-template-axislinearscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Logarithmic`
-
+`Logarithmic`  <a name="cfn-quicksight-template-axisscale-logarithmic"></a>
 The logarithmic axis scale setup.
-
-_Required_: No
-
-_Type_: [AxisLogarithmicScale](aws-properties-quicksight-template-axislogarithmicscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AxisLogarithmicScale
-
-AxisTickLabelOptions
+*Required*: No
+*Type*: [AxisLogarithmicScale](aws-properties-quicksight-template-axislogarithmicscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

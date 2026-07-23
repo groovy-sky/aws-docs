@@ -2,178 +2,132 @@
 title: "AWS::BedrockAgentCore::Memory EpisodicMemoryStrategy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory EpisodicMemoryStrategy
+<a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy"></a>
 
 The configuration for an episodic memory strategy. Episodic memory stores and retrieves specific interaction episodes between agents and users.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy-syntax.json"></a>
 
-```json
-
+```
 {
-  "CreatedAt" : String,
-  "Description" : String,
-  "Name" : String,
-  "Namespaces" : [ String, ... ],
-  "NamespaceTemplates" : [ String, ... ],
-  "ReflectionConfiguration" : EpisodicReflectionConfigurationInput,
-  "Status" : String,
-  "StrategyId" : String,
-  "Type" : String,
-  "UpdatedAt" : String
+  "[CreatedAt](#cfn-bedrockagentcore-memory-episodicmemorystrategy-createdat)" : {{String}},
+  "[Description](#cfn-bedrockagentcore-memory-episodicmemorystrategy-description)" : {{String}},
+  "[MemoryRecordSchema](#cfn-bedrockagentcore-memory-episodicmemorystrategy-memoryrecordschema)" : {{MemoryRecordSchema}},
+  "[Name](#cfn-bedrockagentcore-memory-episodicmemorystrategy-name)" : {{String}},
+  "[Namespaces](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespaces)" : {{[ String, ... ]}},
+  "[NamespaceTemplates](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespacetemplates)" : {{[ String, ... ]}},
+  "[ReflectionConfiguration](#cfn-bedrockagentcore-memory-episodicmemorystrategy-reflectionconfiguration)" : {{EpisodicReflectionConfigurationInput}},
+  "[Status](#cfn-bedrockagentcore-memory-episodicmemorystrategy-status)" : {{String}},
+  "[StrategyId](#cfn-bedrockagentcore-memory-episodicmemorystrategy-strategyid)" : {{String}},
+  "[Type](#cfn-bedrockagentcore-memory-episodicmemorystrategy-type)" : {{String}},
+  "[UpdatedAt](#cfn-bedrockagentcore-memory-episodicmemorystrategy-updatedat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy-syntax.yaml"></a>
 
-```yaml
-
-  CreatedAt: String
-  Description: String
-  Name: String
-  Namespaces:
-    - String
-  NamespaceTemplates:
-    - String
-  ReflectionConfiguration:
-    EpisodicReflectionConfigurationInput
-  Status: String
-  StrategyId: String
-  Type: String
-  UpdatedAt: String
-
+```
+  [CreatedAt](#cfn-bedrockagentcore-memory-episodicmemorystrategy-createdat): {{String}}
+  [Description](#cfn-bedrockagentcore-memory-episodicmemorystrategy-description): {{String}}
+  [MemoryRecordSchema](#cfn-bedrockagentcore-memory-episodicmemorystrategy-memoryrecordschema): {{
+    MemoryRecordSchema}}
+  [Name](#cfn-bedrockagentcore-memory-episodicmemorystrategy-name): {{String}}
+  [Namespaces](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespaces): {{
+    - String}}
+  [NamespaceTemplates](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespacetemplates): {{
+    - String}}
+  [ReflectionConfiguration](#cfn-bedrockagentcore-memory-episodicmemorystrategy-reflectionconfiguration): {{
+    EpisodicReflectionConfigurationInput}}
+  [Status](#cfn-bedrockagentcore-memory-episodicmemorystrategy-status): {{String}}
+  [StrategyId](#cfn-bedrockagentcore-memory-episodicmemorystrategy-strategyid): {{String}}
+  [Type](#cfn-bedrockagentcore-memory-episodicmemorystrategy-type): {{String}}
+  [UpdatedAt](#cfn-bedrockagentcore-memory-episodicmemorystrategy-updatedat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy-properties"></a>
 
-`CreatedAt`
-
+`CreatedAt`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-createdat"></a>
 The timestamp when the episodic memory strategy was created.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Description`
-
+`Description`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-description"></a>
 The description of the episodic memory strategy.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`MemoryRecordSchema`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-memoryrecordschema"></a>
+Schema for metadata fields on records generated by this strategy.
+*Required*: No
+*Type*: [MemoryRecordSchema](aws-properties-bedrockagentcore-memory-memoryrecordschema.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-name"></a>
 The name of the episodic memory strategy.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Namespaces`
-
+`Namespaces`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-namespaces"></a>
 The namespaces for which to create episodes.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`NamespaceTemplates`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-namespacetemplates"></a>
+The namespaceTemplates for which to create episodes.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
+`ReflectionConfiguration`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-reflectionconfiguration"></a>
+The configuration for the reflections created with the episodic memory strategy.
+*Required*: No
+*Type*: [EpisodicReflectionConfigurationInput](aws-properties-bedrockagentcore-memory-episodicreflectionconfigurationinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NamespaceTemplates`
-
-Property description not available.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ReflectionConfiguration`
-
-The configuration for the reflections created with the episodic memory
-strategy.
-
-_Required_: No
-
-_Type_: [EpisodicReflectionConfigurationInput](aws-properties-bedrockagentcore-memory-episodicreflectionconfigurationinput.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Status`
-
+`Status`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-status"></a>
 The current status of the episodic memory strategy.
+*Required*: No
+*Type*: String
+*Allowed values*: `CREATING | ACTIVE | DELETING | FAILED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CREATING | ACTIVE | DELETING | FAILED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StrategyId`
-
+`StrategyId`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-strategyid"></a>
 The unique identifier of the memory strategy.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$`
+*Minimum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$`
-
-_Minimum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-type"></a>
 The type of the memory strategy.
+*Required*: No
+*Type*: String
+*Allowed values*: `SEMANTIC | SUMMARIZATION | USER_PREFERENCE | CUSTOM | EPISODIC`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SEMANTIC | SUMMARIZATION | USER_PREFERENCE | CUSTOM | EPISODIC`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdatedAt`
-
+`UpdatedAt`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-updatedat"></a>
 The timestamp when the episodic memory strategy was last updated.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomMemoryStrategy
-
-EpisodicOverride
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

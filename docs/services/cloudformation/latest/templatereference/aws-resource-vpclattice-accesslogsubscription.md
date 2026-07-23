@@ -2,149 +2,112 @@
 title: "AWS::VpcLattice::AccessLogSubscription"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::AccessLogSubscription
+<a name="aws-resource-vpclattice-accesslogsubscription"></a>
 
-Enables access logs to be sent to Amazon CloudWatch, Amazon S3, and Amazon Kinesis Data Firehose. The service network owner
-can use the access logs to audit the services in the network. The service network owner can only
-see access logs from clients and services that are associated with their service network. Access
-log entries represent traffic originated from VPCs associated with that network. For more
-information, see [Access logs](../../../vpc-lattice/latest/ug/monitoring-access-logs.md) in the
-_Amazon VPC Lattice User Guide_.
+Enables access logs to be sent to Amazon CloudWatch, Amazon S3, and Amazon Kinesis Data Firehose. The service network owner can use the access logs to audit the services in the network. The service network owner can only see access logs from clients and services that are associated with their service network. Access log entries represent traffic originated from VPCs associated with that network. For more information, see [Access logs](https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-access-logs.html) in the *Amazon VPC Lattice User Guide*.
 
 ## Syntax
+<a name="aws-resource-vpclattice-accesslogsubscription-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-vpclattice-accesslogsubscription-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::VpcLattice::AccessLogSubscription",
   "Properties" : {
-      "DestinationArn" : String,
-      "ResourceIdentifier" : String,
-      "ServiceNetworkLogType" : String,
-      "Tags" : [ Tag, ... ]
+      "[DestinationArn](#cfn-vpclattice-accesslogsubscription-destinationarn)" : {{String}},
+      "[ResourceIdentifier](#cfn-vpclattice-accesslogsubscription-resourceidentifier)" : {{String}},
+      "[ServiceNetworkLogType](#cfn-vpclattice-accesslogsubscription-servicenetworklogtype)" : {{String}},
+      "[Tags](#cfn-vpclattice-accesslogsubscription-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-vpclattice-accesslogsubscription-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::VpcLattice::AccessLogSubscription
 Properties:
-  DestinationArn: String
-  ResourceIdentifier: String
-  ServiceNetworkLogType: String
-  Tags:
-    - Tag
-
+  [DestinationArn](#cfn-vpclattice-accesslogsubscription-destinationarn): {{String}}
+  [ResourceIdentifier](#cfn-vpclattice-accesslogsubscription-resourceidentifier): {{String}}
+  [ServiceNetworkLogType](#cfn-vpclattice-accesslogsubscription-servicenetworklogtype): {{String}}
+  [Tags](#cfn-vpclattice-accesslogsubscription-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-vpclattice-accesslogsubscription-properties"></a>
 
-`DestinationArn`
+`DestinationArn`  <a name="cfn-vpclattice-accesslogsubscription-destinationarn"></a>
+The Amazon Resource Name (ARN) of the destination. The supported destination types are CloudWatch Log groups, Kinesis Data Firehose delivery streams, and Amazon S3 buckets.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:([^/].*)?$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Resource Name (ARN) of the destination. The supported destination types are
-CloudWatch Log groups, Kinesis Data Firehose delivery streams, and Amazon S3 buckets.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:([^/].*)?$`
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceIdentifier`
-
+`ResourceIdentifier`  <a name="cfn-vpclattice-accesslogsubscription-resourceidentifier"></a>
 The ID or ARN of the service network or service.
+*Required*: No
+*Type*: String
+*Pattern*: `^((((sn)|(svc)|(rcfg))-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(resourceconfiguration/rcfg)|(service/svc))-[0-9a-z]{17}))$`
+*Minimum*: `17`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^((((sn)|(svc)|(rcfg))-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(resourceconfiguration/rcfg)|(service/svc))-[0-9a-z]{17}))$`
-
-_Minimum_: `17`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ServiceNetworkLogType`
-
+`ServiceNetworkLogType`  <a name="cfn-vpclattice-accesslogsubscription-servicenetworklogtype"></a>
 Log type of the service network.
+*Required*: No
+*Type*: String
+*Allowed values*: `SERVICE | RESOURCE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SERVICE | RESOURCE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-vpclattice-accesslogsubscription-tags"></a>
 The tags for the access log subscription.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-vpclattice-accesslogsubscription-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-vpclattice-accesslogsubscription-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-vpclattice-accesslogsubscription-return-values"></a>
 
 ### Ref
+<a name="aws-resource-vpclattice-accesslogsubscription-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the access log
-subscription.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the access log subscription.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-vpclattice-accesslogsubscription-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-vpclattice-accesslogsubscription-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the access log subscription.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the access log subscription.
 
-`ResourceArn`
-
+`ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the access log subscription.
 
-`ResourceId`
-
+`ResourceId`  <a name="ResourceId-fn::getatt"></a>
 The ID of the service network or service.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon VPC Lattice
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

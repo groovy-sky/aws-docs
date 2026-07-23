@@ -2,70 +2,52 @@
 title: "AWS::QuickSight::Dashboard ConditionalFormattingIconSet"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ConditionalFormattingIconSet
+<a name="aws-properties-quicksight-dashboard-conditionalformattingiconset"></a>
 
 Formatting configuration for icon set.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-conditionalformattingiconset-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-conditionalformattingiconset-syntax.json"></a>
 
-```json
-
+```
 {
-  "Expression" : String,
-  "IconSetType" : String
+  "[Expression](#cfn-quicksight-dashboard-conditionalformattingiconset-expression)" : {{String}},
+  "[IconSetType](#cfn-quicksight-dashboard-conditionalformattingiconset-iconsettype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-conditionalformattingiconset-syntax.yaml"></a>
 
-```yaml
-
-  Expression: String
-  IconSetType: String
-
+```
+  [Expression](#cfn-quicksight-dashboard-conditionalformattingiconset-expression): {{String}}
+  [IconSetType](#cfn-quicksight-dashboard-conditionalformattingiconset-iconsettype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-conditionalformattingiconset-properties"></a>
 
-`Expression`
-
+`Expression`  <a name="cfn-quicksight-dashboard-conditionalformattingiconset-expression"></a>
 The expression that determines the formatting configuration for the icon set.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IconSetType`
-
+`IconSetType`  <a name="cfn-quicksight-dashboard-conditionalformattingiconset-iconsettype"></a>
 Determines the icon set type.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `PLUS_MINUS | CHECK_X | THREE_COLOR_ARROW | THREE_GRAY_ARROW | CARET_UP_MINUS_DOWN | THREE_SHAPE | THREE_CIRCLE | FLAGS | BARS | FOUR_COLOR_ARROW | FOUR_GRAY_ARROW`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionalFormattingIconDisplayConfiguration
-
-ConditionalFormattingSolidColor
+*Required*: No
+*Type*: String
+*Allowed values*: `PLUS_MINUS | CHECK_X | THREE_COLOR_ARROW | THREE_GRAY_ARROW | CARET_UP_MINUS_DOWN | THREE_SHAPE | THREE_CIRCLE | FLAGS | BARS | FOUR_COLOR_ARROW | FOUR_GRAY_ARROW`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,182 +2,135 @@
 title: "AWS::SSMIncidents::ResponsePlan"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan
+<a name="aws-resource-ssmincidents-responseplan"></a>
 
-The `AWS::SSMIncidents::ResponsePlan` resource specifies the details of the
-response plan that are used when creating an incident.
+The `AWS::SSMIncidents::ResponsePlan` resource specifies the details of the response plan that are used when creating an incident.
 
 ## Syntax
+<a name="aws-resource-ssmincidents-responseplan-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ssmincidents-responseplan-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SSMIncidents::ResponsePlan",
   "Properties" : {
-      "Actions" : [ Action, ... ],
-      "ChatChannel" : ChatChannel,
-      "DisplayName" : String,
-      "Engagements" : [ String, ... ],
-      "IncidentTemplate" : IncidentTemplate,
-      "Integrations" : [ Integration, ... ],
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Actions](#cfn-ssmincidents-responseplan-actions)" : {{[ Action, ... ]}},
+      "[ChatChannel](#cfn-ssmincidents-responseplan-chatchannel)" : {{ChatChannel}},
+      "[DisplayName](#cfn-ssmincidents-responseplan-displayname)" : {{String}},
+      "[Engagements](#cfn-ssmincidents-responseplan-engagements)" : {{[ String, ... ]}},
+      "[IncidentTemplate](#cfn-ssmincidents-responseplan-incidenttemplate)" : {{IncidentTemplate}},
+      "[Integrations](#cfn-ssmincidents-responseplan-integrations)" : {{[ Integration, ... ]}},
+      "[Name](#cfn-ssmincidents-responseplan-name)" : {{String}},
+      "[Tags](#cfn-ssmincidents-responseplan-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ssmincidents-responseplan-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SSMIncidents::ResponsePlan
 Properties:
-  Actions:
-    - Action
-  ChatChannel:
-    ChatChannel
-  DisplayName: String
-  Engagements:
-    - String
-  IncidentTemplate:
-    IncidentTemplate
-  Integrations:
-    - Integration
-  Name: String
-  Tags:
-    - Tag
-
+  [Actions](#cfn-ssmincidents-responseplan-actions): {{
+    - Action}}
+  [ChatChannel](#cfn-ssmincidents-responseplan-chatchannel): {{
+    ChatChannel}}
+  [DisplayName](#cfn-ssmincidents-responseplan-displayname): {{String}}
+  [Engagements](#cfn-ssmincidents-responseplan-engagements): {{
+    - String}}
+  [IncidentTemplate](#cfn-ssmincidents-responseplan-incidenttemplate): {{
+    IncidentTemplate}}
+  [Integrations](#cfn-ssmincidents-responseplan-integrations): {{
+    - Integration}}
+  [Name](#cfn-ssmincidents-responseplan-name): {{String}}
+  [Tags](#cfn-ssmincidents-responseplan-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-ssmincidents-responseplan-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-ssmincidents-responseplan-actions"></a>
 The actions that the response plan starts at the beginning of an incident.
+*Required*: No
+*Type*: Array of [Action](aws-properties-ssmincidents-responseplan-action.md)
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`ChatChannel`  <a name="cfn-ssmincidents-responseplan-chatchannel"></a>
+The Amazon Q Developer in chat applications chat channel used for collaboration during an incident.
+*Required*: No
+*Type*: [ChatChannel](aws-properties-ssmincidents-responseplan-chatchannel.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [Action](aws-properties-ssmincidents-responseplan-action.md)
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChatChannel`
-
-The Amazon Q Developer in chat applications chat channel used for collaboration during an
-incident.
-
-_Required_: No
-
-_Type_: [ChatChannel](aws-properties-ssmincidents-responseplan-chatchannel.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayName`
-
+`DisplayName`  <a name="cfn-ssmincidents-responseplan-displayname"></a>
 The human readable name of the response plan.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Engagements`  <a name="cfn-ssmincidents-responseplan-engagements"></a>
+The Amazon Resource Name (ARN) for the contacts and escalation plans that the response plan engages during an incident.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Engagements`
-
-The Amazon Resource Name (ARN) for the contacts and escalation plans that the response
-plan engages during an incident.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncidentTemplate`
-
+`IncidentTemplate`  <a name="cfn-ssmincidents-responseplan-incidenttemplate"></a>
 Details used to create an incident when using this response plan.
+*Required*: Yes
+*Type*: [IncidentTemplate](aws-properties-ssmincidents-responseplan-incidenttemplate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [IncidentTemplate](aws-properties-ssmincidents-responseplan-incidenttemplate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Integrations`
-
+`Integrations`  <a name="cfn-ssmincidents-responseplan-integrations"></a>
 Information about third-party services integrated into the response plan.
+*Required*: No
+*Type*: Array of [Integration](aws-properties-ssmincidents-responseplan-integration.md)
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Integration](aws-properties-ssmincidents-responseplan-integration.md)
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-ssmincidents-responseplan-name"></a>
 The name of the response plan.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]*$`
+*Minimum*: `1`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_-]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ssmincidents-responseplan-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ssmincidents-responseplan-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ssmincidents-responseplan-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-resource-ssmincidents-responseplan--examples"></a>
 
 ### Create a response plan
+<a name="aws-resource-ssmincidents-responseplan--examples--Create_a_response_plan"></a>
 
 The following example creates a response plan.
 
-###### Note
-
-This example also demonstrates creating a replication set. We recommend
-creating a replication set and response plan using a single template. This
-template also incorporates resources from [AWS Systems Manager Incident Manager Contacts](../userguide/aws-ssmcontacts.md).
+**Note**
+This example also demonstrates creating a replication set. We recommend creating a replication set and response plan using a single template. This template also incorporates resources from [AWS Systems Manager Incident Manager Contacts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_SSMContacts.html).
 
 #### JSON
+<a name="aws-resource-ssmincidents-responseplan--examples--Create_a_response_plan--json"></a>
 
-```json
-
+```
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Sample AWS CloudFormation template to create a response plan and replication set (JSON).",
@@ -381,9 +334,9 @@ template also incorporates resources from [AWS Systems Manager Incident Manager 
 ```
 
 #### YAML
+<a name="aws-resource-ssmincidents-responseplan--examples--Create_a_response_plan--yaml"></a>
 
-```yaml
-
+```
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Sample AWS CloudFormation template to create a response plan and replication set (YAML)."
@@ -513,11 +466,5 @@ Outputs:
   ResponsePlanArn:
     Value: MyIncidentsResponsePlan
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Action
 
 All content copied from https://docs.aws.amazon.com/.

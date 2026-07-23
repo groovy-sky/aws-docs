@@ -2,66 +2,51 @@
 title: "AWS::Glue::UsageProfile ProfileConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::UsageProfile ProfileConfiguration
+<a name="aws-properties-glue-usageprofile-profileconfiguration"></a>
 
 Specifies the job and session values that an admin configures in an AWS Glue usage profile.
 
 ## Syntax
+<a name="aws-properties-glue-usageprofile-profileconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-usageprofile-profileconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "JobConfiguration" : ConfigurationObject,
-  "SessionConfiguration" : ConfigurationObject
+  "[JobConfiguration](#cfn-glue-usageprofile-profileconfiguration-jobconfiguration)" : {{ConfigurationObject}},
+  "[SessionConfiguration](#cfn-glue-usageprofile-profileconfiguration-sessionconfiguration)" : {{ConfigurationObject}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-usageprofile-profileconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  JobConfiguration:
-    ConfigurationObject
-  SessionConfiguration:
-    ConfigurationObject
-
+```
+  [JobConfiguration](#cfn-glue-usageprofile-profileconfiguration-jobconfiguration): {{
+    ConfigurationObject}}
+  [SessionConfiguration](#cfn-glue-usageprofile-profileconfiguration-sessionconfiguration): {{
+    ConfigurationObject}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-usageprofile-profileconfiguration-properties"></a>
 
-`JobConfiguration`
-
+`JobConfiguration`  <a name="cfn-glue-usageprofile-profileconfiguration-jobconfiguration"></a>
 A key-value map of configuration parameters for AWS Glue jobs.
+*Required*: No
+*Type*: [ConfigurationObject](aws-properties-glue-usageprofile-configurationobject.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ConfigurationObject](aws-properties-glue-usageprofile-configurationobject.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionConfiguration`
-
+`SessionConfiguration`  <a name="cfn-glue-usageprofile-profileconfiguration-sessionconfiguration"></a>
 A key-value map of configuration parameters for AWS Glue sessions.
-
-_Required_: No
-
-_Type_: [ConfigurationObject](aws-properties-glue-usageprofile-configurationobject.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConfigurationObject
-
-Tag
+*Required*: No
+*Type*: [ConfigurationObject](aws-properties-glue-usageprofile-configurationobject.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,207 +2,153 @@
 title: "AWS::RolesAnywhere::Profile"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RolesAnywhere::Profile
+<a name="aws-resource-rolesanywhere-profile"></a>
 
-Creates a Profile.
+ Creates a Profile.
 
 ## Syntax
+<a name="aws-resource-rolesanywhere-profile-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rolesanywhere-profile-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::RolesAnywhere::Profile",
   "Properties" : {
-      "AcceptRoleSessionName" : Boolean,
-      "AttributeMappings" : [ AttributeMapping, ... ],
-      "DurationSeconds" : Number,
-      "Enabled" : Boolean,
-      "ManagedPolicyArns" : [ String, ... ],
-      "Name" : String,
-      "RequireInstanceProperties" : Boolean,
-      "RoleArns" : [ String, ... ],
-      "SessionPolicy" : String,
-      "Tags" : [ Tag, ... ]
+      "[AcceptRoleSessionName](#cfn-rolesanywhere-profile-acceptrolesessionname)" : {{Boolean}},
+      "[AttributeMappings](#cfn-rolesanywhere-profile-attributemappings)" : {{[ AttributeMapping, ... ]}},
+      "[DurationSeconds](#cfn-rolesanywhere-profile-durationseconds)" : {{Number}},
+      "[Enabled](#cfn-rolesanywhere-profile-enabled)" : {{Boolean}},
+      "[ManagedPolicyArns](#cfn-rolesanywhere-profile-managedpolicyarns)" : {{[ String, ... ]}},
+      "[Name](#cfn-rolesanywhere-profile-name)" : {{String}},
+      "[RequireInstanceProperties](#cfn-rolesanywhere-profile-requireinstanceproperties)" : {{Boolean}},
+      "[RoleArns](#cfn-rolesanywhere-profile-rolearns)" : {{[ String, ... ]}},
+      "[SessionPolicy](#cfn-rolesanywhere-profile-sessionpolicy)" : {{String}},
+      "[Tags](#cfn-rolesanywhere-profile-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rolesanywhere-profile-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::RolesAnywhere::Profile
 Properties:
-  AcceptRoleSessionName: Boolean
-  AttributeMappings:
-    - AttributeMapping
-  DurationSeconds: Number
-  Enabled: Boolean
-  ManagedPolicyArns:
-    - String
-  Name: String
-  RequireInstanceProperties: Boolean
-  RoleArns:
-    - String
-  SessionPolicy: String
-  Tags:
-    - Tag
-
+  [AcceptRoleSessionName](#cfn-rolesanywhere-profile-acceptrolesessionname): {{Boolean}}
+  [AttributeMappings](#cfn-rolesanywhere-profile-attributemappings): {{
+    - AttributeMapping}}
+  [DurationSeconds](#cfn-rolesanywhere-profile-durationseconds): {{Number}}
+  [Enabled](#cfn-rolesanywhere-profile-enabled): {{Boolean}}
+  [ManagedPolicyArns](#cfn-rolesanywhere-profile-managedpolicyarns): {{
+    - String}}
+  [Name](#cfn-rolesanywhere-profile-name): {{String}}
+  [RequireInstanceProperties](#cfn-rolesanywhere-profile-requireinstanceproperties): {{Boolean}}
+  [RoleArns](#cfn-rolesanywhere-profile-rolearns): {{
+    - String}}
+  [SessionPolicy](#cfn-rolesanywhere-profile-sessionpolicy): {{String}}
+  [Tags](#cfn-rolesanywhere-profile-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-rolesanywhere-profile-properties"></a>
 
-`AcceptRoleSessionName`
-
+`AcceptRoleSessionName`  <a name="cfn-rolesanywhere-profile-acceptrolesessionname"></a>
 Used to determine if a custom role session name will be accepted in a temporary credential request.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AttributeMappings`
-
+`AttributeMappings`  <a name="cfn-rolesanywhere-profile-attributemappings"></a>
 A mapping applied to the authenticating end-entity certificate.
+*Required*: No
+*Type*: Array of [AttributeMapping](aws-properties-rolesanywhere-profile-attributemapping.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DurationSeconds`  <a name="cfn-rolesanywhere-profile-durationseconds"></a>
+ The number of seconds vended session credentials will be valid for
+*Required*: No
+*Type*: Number
+*Minimum*: `900`
+*Maximum*: `43200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [AttributeMapping](aws-properties-rolesanywhere-profile-attributemapping.md)
+`Enabled`  <a name="cfn-rolesanywhere-profile-enabled"></a>
+ The enabled status of the resource.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ManagedPolicyArns`  <a name="cfn-rolesanywhere-profile-managedpolicyarns"></a>
+ A list of managed policy ARNs. Managed policies identified by this list will be applied to the vended session credentials.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`DurationSeconds`
+`Name`  <a name="cfn-rolesanywhere-profile-name"></a>
+ The customer specified name of the resource.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[ a-zA-Z0-9-_]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The number of seconds vended session credentials will be valid for
+`RequireInstanceProperties`  <a name="cfn-rolesanywhere-profile-requireinstanceproperties"></a>
+ Specifies whether instance properties are required in CreateSession requests with this profile.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
+`RoleArns`  <a name="cfn-rolesanywhere-profile-rolearns"></a>
+ A list of IAM role ARNs that can be assumed when this profile is specified in a CreateSession request.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1011`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Number
+`SessionPolicy`  <a name="cfn-rolesanywhere-profile-sessionpolicy"></a>
+ A session policy that will applied to the trust boundary of the vended session credentials.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `900`
-
-_Maximum_: `43200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-The enabled status of the resource.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ManagedPolicyArns`
-
-A list of managed policy ARNs. Managed policies identified by this list will be applied to the vended session credentials.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The customer specified name of the resource.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[ a-zA-Z0-9-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RequireInstanceProperties`
-
-Specifies whether instance properties are required in CreateSession requests with this profile.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RoleArns`
-
-A list of IAM role ARNs that can be assumed when this profile is specified in a CreateSession request.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1011`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SessionPolicy`
-
-A session policy that will applied to the trust boundary of the vended session credentials.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-A list of Tags.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rolesanywhere-profile-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Tags`  <a name="cfn-rolesanywhere-profile-tags"></a>
+ A list of Tags.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rolesanywhere-profile-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rolesanywhere-profile-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rolesanywhere-profile-return-values-ref"></a>
 
-The name of the Profile
+ The name of the Profile
 
 ### Fn::GetAtt
+<a name="aws-resource-rolesanywhere-profile-return-values-fn--getatt"></a>
 
-`ProfileArn`
+####
+<a name="aws-resource-rolesanywhere-profile-return-values-fn--getatt-fn--getatt"></a>
 
+`ProfileArn`  <a name="ProfileArn-fn::getatt"></a>
 The ARN of the profile.
 
-`ProfileId`
-
-The unique primary identifier of the Profile
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AttributeMapping
+`ProfileId`  <a name="ProfileId-fn::getatt"></a>
+ The unique primary identifier of the Profile
 
 All content copied from https://docs.aws.amazon.com/.

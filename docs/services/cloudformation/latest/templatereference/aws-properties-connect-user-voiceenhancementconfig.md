@@ -2,68 +2,51 @@
 title: "AWS::Connect::User VoiceEnhancementConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User VoiceEnhancementConfig
+<a name="aws-properties-connect-user-voiceenhancementconfig"></a>
 
 Configuration settings for voice enhancement.
 
 ## Syntax
+<a name="aws-properties-connect-user-voiceenhancementconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-user-voiceenhancementconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Channel" : String,
-  "VoiceEnhancementMode" : String
+  "[Channel](#cfn-connect-user-voiceenhancementconfig-channel)" : {{String}},
+  "[VoiceEnhancementMode](#cfn-connect-user-voiceenhancementconfig-voiceenhancementmode)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-user-voiceenhancementconfig-syntax.yaml"></a>
 
-```yaml
-
-  Channel: String
-  VoiceEnhancementMode: String
-
+```
+  [Channel](#cfn-connect-user-voiceenhancementconfig-channel): {{String}}
+  [VoiceEnhancementMode](#cfn-connect-user-voiceenhancementconfig-voiceenhancementmode): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-user-voiceenhancementconfig-properties"></a>
 
-`Channel`
-
+`Channel`  <a name="cfn-connect-user-voiceenhancementconfig-channel"></a>
 The channel for this voice enhancement configuration. **Only `VOICE` is supported for this data type.**
+*Required*: Yes
+*Type*: String
+*Allowed values*: `VOICE | CHAT | TASK | EMAIL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `VOICE | CHAT | TASK | EMAIL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VoiceEnhancementMode`
-
+`VoiceEnhancementMode`  <a name="cfn-connect-user-voiceenhancementconfig-voiceenhancementmode"></a>
 The voice enhancement mode.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `NONE | VOICE_ISOLATION | NOISE_SUPPRESSION`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UserProficiency
-
-AWS::Connect::UserHierarchyGroup
+*Required*: Yes
+*Type*: String
+*Allowed values*: `NONE | VOICE_ISOLATION | NOISE_SUPPRESSION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,109 +2,76 @@
 title: "AWS::EC2::VerifiedAccessInstance VerifiedAccessTrustProvider"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessInstance VerifiedAccessTrustProvider
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider"></a>
 
-A trust provider is a third-party entity that creates, maintains, and manages identity
-information for users and devices. When an application request is made, the identity
-information sent by the trust provider is evaluated by Verified Access before allowing or
-denying the application request.
+A trust provider is a third-party entity that creates, maintains, and manages identity information for users and devices. When an application request is made, the identity information sent by the trust provider is evaluated by Verified Access before allowing or denying the application request.
 
 ## Syntax
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "DeviceTrustProviderType" : String,
-  "TrustProviderType" : String,
-  "UserTrustProviderType" : String,
-  "VerifiedAccessTrustProviderId" : String
+  "[Description](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-description)" : {{String}},
+  "[DeviceTrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-devicetrustprovidertype)" : {{String}},
+  "[TrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-trustprovidertype)" : {{String}},
+  "[UserTrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-usertrustprovidertype)" : {{String}},
+  "[VerifiedAccessTrustProviderId](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-verifiedaccesstrustproviderid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  DeviceTrustProviderType: String
-  TrustProviderType: String
-  UserTrustProviderType: String
-  VerifiedAccessTrustProviderId: String
-
+```
+  [Description](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-description): {{String}}
+  [DeviceTrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-devicetrustprovidertype): {{String}}
+  [TrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-trustprovidertype): {{String}}
+  [UserTrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-usertrustprovidertype): {{String}}
+  [VerifiedAccessTrustProviderId](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-verifiedaccesstrustproviderid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-description"></a>
 A description for the AWS Verified Access trust provider.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeviceTrustProviderType`
-
+`DeviceTrustProviderType`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-devicetrustprovidertype"></a>
 The type of device-based trust provider.
+*Required*: No
+*Type*: String
+*Allowed values*: `jamf | crowdstrike | jumpcloud`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `jamf | crowdstrike | jumpcloud`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrustProviderType`
-
+`TrustProviderType`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-trustprovidertype"></a>
 The type of Verified Access trust provider.
+*Required*: No
+*Type*: String
+*Allowed values*: `user | device`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `user | device`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserTrustProviderType`
-
+`UserTrustProviderType`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-usertrustprovidertype"></a>
 The type of user-based trust provider.
+*Required*: No
+*Type*: String
+*Allowed values*: `iam-identity-center | oidc`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `iam-identity-center | oidc`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VerifiedAccessTrustProviderId`
-
+`VerifiedAccessTrustProviderId`  <a name="cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-verifiedaccesstrustproviderid"></a>
 The ID of the AWS Verified Access trust provider.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessLogs
-
-AWS::EC2::VerifiedAccessTrustProvider
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,53 @@
 title: "AWS::EMRContainers::SecurityConfiguration SecureNamespaceInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::SecurityConfiguration SecureNamespaceInfo
+<a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo"></a>
 
 Namespace inputs for the system job.
 
 ## Syntax
+<a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClusterId" : String,
-  "Namespace" : String
+  "[ClusterId](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-clusterid)" : {{String}},
+  "[Namespace](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-namespace)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo-syntax.yaml"></a>
 
-```yaml
-
-  ClusterId: String
-  Namespace: String
-
+```
+  [ClusterId](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-clusterid): {{String}}
+  [Namespace](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-namespace): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo-properties"></a>
 
-`ClusterId`
-
+`ClusterId`  <a name="cfn-emrcontainers-securityconfiguration-securenamespaceinfo-clusterid"></a>
 The ID of the Amazon EKS cluster where Amazon EMR on EKS jobs run.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Namespace`
-
+`Namespace`  <a name="cfn-emrcontainers-securityconfiguration-securenamespaceinfo-namespace"></a>
 The namespace of the Amazon EKS cluster where the system jobs run.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3EncryptionConfiguration
-
-SecurityConfigurationData
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

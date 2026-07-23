@@ -2,54 +2,42 @@
 title: "AWS::SSMIncidents::ResponsePlan Action"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan Action
+<a name="aws-properties-ssmincidents-responseplan-action"></a>
 
 The `Action` property type specifies the configuration to launch.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-responseplan-action-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-responseplan-action-syntax.json"></a>
 
-```json
-
+```
 {
-  "SsmAutomation" : SsmAutomation
+  "[SsmAutomation](#cfn-ssmincidents-responseplan-action-ssmautomation)" : {{SsmAutomation}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-responseplan-action-syntax.yaml"></a>
 
-```yaml
-
-  SsmAutomation:
-    SsmAutomation
-
+```
+  [SsmAutomation](#cfn-ssmincidents-responseplan-action-ssmautomation): {{
+    SsmAutomation}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-responseplan-action-properties"></a>
 
-`SsmAutomation`
-
-Details about the Systems Manager automation document that will be used as a
-runbook during an incident.
-
-_Required_: No
-
-_Type_: [SsmAutomation](aws-properties-ssmincidents-responseplan-ssmautomation.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SSMIncidents::ResponsePlan
-
-ChatChannel
+`SsmAutomation`  <a name="cfn-ssmincidents-responseplan-action-ssmautomation"></a>
+Details about the Systems Manager automation document that will be used as a runbook during an incident.
+*Required*: No
+*Type*: [SsmAutomation](aws-properties-ssmincidents-responseplan-ssmautomation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

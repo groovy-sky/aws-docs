@@ -2,60 +2,46 @@
 title: "AWS::Logs::Transformer LowerCaseString"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer LowerCaseString
+<a name="aws-properties-logs-transformer-lowercasestring"></a>
 
 This processor converts a string to lowercase.
 
-For more information about this processor including examples, see [lowerCaseString](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-processors.md#CloudWatch-Logs-Transformation-lowerCaseString) in the _CloudWatch Logs User_
-_Guide_.
+For more information about this processor including examples, see [ lowerCaseString](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-lowerCaseString) in the *CloudWatch Logs User Guide*.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-lowercasestring-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-lowercasestring-syntax.json"></a>
 
-```json
-
+```
 {
-  "WithKeys" : [ String, ... ]
+  "[WithKeys](#cfn-logs-transformer-lowercasestring-withkeys)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-lowercasestring-syntax.yaml"></a>
 
-```yaml
-
-  WithKeys:
-    - String
-
+```
+  [WithKeys](#cfn-logs-transformer-lowercasestring-withkeys): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-lowercasestring-properties"></a>
 
-`WithKeys`
-
+`WithKeys`  <a name="cfn-logs-transformer-lowercasestring-withkeys"></a>
 The array caontaining the keys of the fields to convert to lowercase.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListToMap
-
-MoveKeyEntry
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

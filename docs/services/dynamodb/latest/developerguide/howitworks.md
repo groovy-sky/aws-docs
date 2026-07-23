@@ -3,32 +3,18 @@ title: "Amazon DynamoDB: How it works"
 ---
 
 # Amazon DynamoDB: How it works
+<a name="HowItWorks"></a>
 
-The following sections provide an overview of Amazon DynamoDB service components and how they
-interact.
+The following sections provide an overview of Amazon DynamoDB service components and how they interact.
 
-###### Topics
-
-- [Cheat sheet for DynamoDB](cheatsheet.md)
-
-- [Core components of Amazon DynamoDB](howitworks-corecomponents.md)
-
-- [DynamoDB API](howitworks-api.md)
-
-- [Supported data types and naming rules in Amazon DynamoDB](howitworks-namingrulesdatatypes.md)
-
-- [DynamoDB table classes](howitworks-tableclasses.md)
-
-- [Partitions and data distribution in DynamoDB](howitworks-partitions.md)
-
-- [Learn how to go from SQL to NoSQL](sqltonosql.md)
-
-- [Amazon DynamoDB learning resources and tools](additionalresources.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Console-to-Code
-
-Cheat sheet
+**Topics**
++ [Cheat sheet for DynamoDB](CheatSheet.md)
++ [Core components of Amazon DynamoDB](HowItWorks.CoreComponents.md)
++ [DynamoDB API](HowItWorks.API.md)
++ [Supported data types and naming rules in Amazon DynamoDB](HowItWorks.NamingRulesDataTypes.md)
++ [DynamoDB table classes](HowItWorks.TableClasses.md)
++ [Partitions and data distribution in DynamoDB](HowItWorks.Partitions.md)
++ [Learn how to go from SQL to NoSQL](SQLtoNoSQL.md)
++ [Amazon DynamoDB learning resources and tools](AdditionalResources.md)
 
 All content copied from https://docs.aws.amazon.com/.

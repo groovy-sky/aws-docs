@@ -2,64 +2,49 @@
 title: "AWS::Glue::Database FederatedDatabase"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Database FederatedDatabase
+<a name="aws-properties-glue-database-federateddatabase"></a>
 
 A `FederatedDatabase` structure that references an entity outside the AWS Glue Data Catalog.
 
 ## Syntax
+<a name="aws-properties-glue-database-federateddatabase-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-database-federateddatabase-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectionName" : String,
-  "Identifier" : String
+  "[ConnectionName](#cfn-glue-database-federateddatabase-connectionname)" : {{String}},
+  "[Identifier](#cfn-glue-database-federateddatabase-identifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-database-federateddatabase-syntax.yaml"></a>
 
-```yaml
-
-  ConnectionName: String
-  Identifier: String
-
+```
+  [ConnectionName](#cfn-glue-database-federateddatabase-connectionname): {{String}}
+  [Identifier](#cfn-glue-database-federateddatabase-identifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-database-federateddatabase-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-glue-database-federateddatabase-connectionname"></a>
 The name of the connection to the external metastore.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Identifier`
-
+`Identifier`  <a name="cfn-glue-database-federateddatabase-identifier"></a>
 A unique identifier for the federated database.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DataLakePrincipal
-
-PrincipalPrivileges
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

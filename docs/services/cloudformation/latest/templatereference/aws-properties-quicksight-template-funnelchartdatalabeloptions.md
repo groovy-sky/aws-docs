@@ -2,139 +2,97 @@
 title: "AWS::QuickSight::Template FunnelChartDataLabelOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template FunnelChartDataLabelOptions
+<a name="aws-properties-quicksight-template-funnelchartdatalabeloptions"></a>
 
 The options that determine the presentation of the data labels.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-funnelchartdatalabeloptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-funnelchartdatalabeloptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "CategoryLabelVisibility" : String,
-  "LabelColor" : String,
-  "LabelFontConfiguration" : FontConfiguration,
-  "MeasureDataLabelStyle" : String,
-  "MeasureLabelVisibility" : String,
-  "Position" : String,
-  "Visibility" : String
+  "[CategoryLabelVisibility](#cfn-quicksight-template-funnelchartdatalabeloptions-categorylabelvisibility)" : {{String}},
+  "[LabelColor](#cfn-quicksight-template-funnelchartdatalabeloptions-labelcolor)" : {{String}},
+  "[LabelFontConfiguration](#cfn-quicksight-template-funnelchartdatalabeloptions-labelfontconfiguration)" : {{FontConfiguration}},
+  "[MeasureDataLabelStyle](#cfn-quicksight-template-funnelchartdatalabeloptions-measuredatalabelstyle)" : {{String}},
+  "[MeasureLabelVisibility](#cfn-quicksight-template-funnelchartdatalabeloptions-measurelabelvisibility)" : {{String}},
+  "[Position](#cfn-quicksight-template-funnelchartdatalabeloptions-position)" : {{String}},
+  "[Visibility](#cfn-quicksight-template-funnelchartdatalabeloptions-visibility)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-funnelchartdatalabeloptions-syntax.yaml"></a>
 
-```yaml
-
-  CategoryLabelVisibility: String
-  LabelColor: String
-  LabelFontConfiguration:
-    FontConfiguration
-  MeasureDataLabelStyle: String
-  MeasureLabelVisibility: String
-  Position: String
-  Visibility: String
-
+```
+  [CategoryLabelVisibility](#cfn-quicksight-template-funnelchartdatalabeloptions-categorylabelvisibility): {{String}}
+  [LabelColor](#cfn-quicksight-template-funnelchartdatalabeloptions-labelcolor): {{String}}
+  [LabelFontConfiguration](#cfn-quicksight-template-funnelchartdatalabeloptions-labelfontconfiguration): {{
+    FontConfiguration}}
+  [MeasureDataLabelStyle](#cfn-quicksight-template-funnelchartdatalabeloptions-measuredatalabelstyle): {{String}}
+  [MeasureLabelVisibility](#cfn-quicksight-template-funnelchartdatalabeloptions-measurelabelvisibility): {{String}}
+  [Position](#cfn-quicksight-template-funnelchartdatalabeloptions-position): {{String}}
+  [Visibility](#cfn-quicksight-template-funnelchartdatalabeloptions-visibility): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-funnelchartdatalabeloptions-properties"></a>
 
-`CategoryLabelVisibility`
-
+`CategoryLabelVisibility`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-categorylabelvisibility"></a>
 The visibility of the category labels within the data labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LabelColor`
-
+`LabelColor`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-labelcolor"></a>
 The color of the data label text.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LabelFontConfiguration`
-
+`LabelFontConfiguration`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-labelfontconfiguration"></a>
 The font configuration for the data labels.
-
 Only the `FontSize` attribute of the font configuration is used for data labels.
+*Required*: No
+*Type*: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FontConfiguration](aws-properties-quicksight-template-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureDataLabelStyle`
-
+`MeasureDataLabelStyle`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-measuredatalabelstyle"></a>
 Determines the style of the metric labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `VALUE_ONLY | PERCENTAGE_BY_FIRST_STAGE | PERCENTAGE_BY_PREVIOUS_STAGE | VALUE_AND_PERCENTAGE_BY_FIRST_STAGE | VALUE_AND_PERCENTAGE_BY_PREVIOUS_STAGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `VALUE_ONLY | PERCENTAGE_BY_FIRST_STAGE | PERCENTAGE_BY_PREVIOUS_STAGE | VALUE_AND_PERCENTAGE_BY_FIRST_STAGE | VALUE_AND_PERCENTAGE_BY_PREVIOUS_STAGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureLabelVisibility`
-
+`MeasureLabelVisibility`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-measurelabelvisibility"></a>
 The visibility of the measure labels within the data labels.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Position`
-
+`Position`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-position"></a>
 Determines the positioning of the data label relative to a section of the funnel.
+*Required*: No
+*Type*: String
+*Allowed values*: `INSIDE | OUTSIDE | LEFT | TOP | BOTTOM | RIGHT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `INSIDE | OUTSIDE | LEFT | TOP | BOTTOM | RIGHT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Visibility`
-
+`Visibility`  <a name="cfn-quicksight-template-funnelchartdatalabeloptions-visibility"></a>
 The visibility option that determines if data labels are displayed.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FunnelChartConfiguration
-
-FunnelChartFieldWells
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

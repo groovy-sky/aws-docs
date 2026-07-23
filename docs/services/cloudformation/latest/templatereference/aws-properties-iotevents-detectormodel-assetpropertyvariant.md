@@ -2,125 +2,81 @@
 title: "AWS::IoTEvents::DetectorModel AssetPropertyVariant"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTEvents::DetectorModel AssetPropertyVariant
+<a name="aws-properties-iotevents-detectormodel-assetpropertyvariant"></a>
 
-A structure that contains an asset property value. For more information, see [Variant](../../../../reference/iot-sitewise/latest/apireference/api-variant.md)
-in the _AWS IoT SiteWise API Reference_.
+A structure that contains an asset property value. For more information, see [Variant](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Variant.html) in the *AWS IoT SiteWise API Reference*.
 
-You must use expressions for all parameters in `AssetPropertyVariant`. The
-expressions accept literals, operators, functions, references, and substitution
-templates.
+You must use expressions for all parameters in `AssetPropertyVariant`. The expressions accept literals, operators, functions, references, and substitution templates.
 
-###### Examples
+**Examples**
++ For literal values, the expressions must contain single quotes. For example, the value for the `integerValue` parameter can be `'100'`.
++ For references, you must specify either variables or parameters. For example, the value for the `booleanValue` parameter can be `$variable.offline`.
++ For a substitution template, you must use `${}`, and the template must be in single quotes. A substitution template can also contain a combination of literals, operators, functions, references, and substitution templates.
 
-- For literal values, the expressions must contain single quotes. For example, the value
-for the `integerValue` parameter can be `'100'`.
+  In the following example, the value for the `doubleValue` parameter uses a substitution template.
 
-- For references, you must specify either variables or parameters. For example, the
-value for the `booleanValue` parameter can be
-`$variable.offline`.
+   `'${$input.TemperatureInput.sensorData.temperature * 6 / 5 + 32}'`
 
-- For a substitution template, you must use `${}`, and the template must be
-in single quotes. A substitution template can also contain a combination of literals,
-operators, functions, references, and substitution templates.
+For more information, see [Expressions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-expressions.html) in the *AWS IoT Events Developer Guide*.
 
-In the following example, the value for the `doubleValue` parameter uses a
-substitution template.
-
-`'${$input.TemperatureInput.sensorData.temperature * 6 / 5 + 32}'`
-
-For more information,
-see [Expressions](../../../iotevents/latest/developerguide/iotevents-expressions.md)
-in the _AWS IoT Events Developer Guide_.
-
-You must specify one of the following value types, depending on the `dataType`
-of the specified asset property. For more information, see [AssetProperty](../../../../reference/iot-sitewise/latest/apireference/api-assetproperty.md) in the
-_AWS IoT SiteWise API Reference_.
+You must specify one of the following value types, depending on the `dataType` of the specified asset property. For more information, see [AssetProperty](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetProperty.html) in the *AWS IoT SiteWise API Reference*.
 
 ## Syntax
+<a name="aws-properties-iotevents-detectormodel-assetpropertyvariant-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotevents-detectormodel-assetpropertyvariant-syntax.json"></a>
 
-```json
-
+```
 {
-  "BooleanValue" : String,
-  "DoubleValue" : String,
-  "IntegerValue" : String,
-  "StringValue" : String
+  "[BooleanValue](#cfn-iotevents-detectormodel-assetpropertyvariant-booleanvalue)" : {{String}},
+  "[DoubleValue](#cfn-iotevents-detectormodel-assetpropertyvariant-doublevalue)" : {{String}},
+  "[IntegerValue](#cfn-iotevents-detectormodel-assetpropertyvariant-integervalue)" : {{String}},
+  "[StringValue](#cfn-iotevents-detectormodel-assetpropertyvariant-stringvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotevents-detectormodel-assetpropertyvariant-syntax.yaml"></a>
 
-```yaml
-
-  BooleanValue: String
-  DoubleValue: String
-  IntegerValue: String
-  StringValue:
-    String
-
+```
+  [BooleanValue](#cfn-iotevents-detectormodel-assetpropertyvariant-booleanvalue): {{String}}
+  [DoubleValue](#cfn-iotevents-detectormodel-assetpropertyvariant-doublevalue): {{String}}
+  [IntegerValue](#cfn-iotevents-detectormodel-assetpropertyvariant-integervalue): {{String}}
+  [StringValue](#cfn-iotevents-detectormodel-assetpropertyvariant-stringvalue): {{
+    String}}
 ```
 
 ## Properties
+<a name="aws-properties-iotevents-detectormodel-assetpropertyvariant-properties"></a>
 
-`BooleanValue`
+`BooleanValue`  <a name="cfn-iotevents-detectormodel-assetpropertyvariant-booleanvalue"></a>
+The asset property value is a Boolean value that must be `'TRUE'` or `'FALSE'`. You must use an expression, and the evaluated result should be a Boolean value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The asset property value is a Boolean value that must be `'TRUE'` or
-`'FALSE'`. You must use an expression, and the evaluated result should be a
-Boolean value.
+`DoubleValue`  <a name="cfn-iotevents-detectormodel-assetpropertyvariant-doublevalue"></a>
+The asset property value is a double. You must use an expression, and the evaluated result should be a double.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IntegerValue`  <a name="cfn-iotevents-detectormodel-assetpropertyvariant-integervalue"></a>
+The asset property value is an integer. You must use an expression, and the evaluated result should be an integer.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DoubleValue`
-
-The asset property value is a double. You must use an expression, and the evaluated result
-should be a double.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegerValue`
-
-The asset property value is an integer. You must use an expression, and the evaluated
-result should be an integer.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringValue`
-
-The asset property value is a string. You must use an expression, and the evaluated result
-should be a string.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssetPropertyValue
-
-ClearTimer
+`StringValue`  <a name="cfn-iotevents-detectormodel-assetpropertyvariant-stringvalue"></a>
+The asset property value is a string. You must use an expression, and the evaluated result should be a string.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

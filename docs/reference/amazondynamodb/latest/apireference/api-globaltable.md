@@ -3,49 +3,34 @@ title: "GlobalTable"
 ---
 
 # GlobalTable
+<a name="API_GlobalTable"></a>
 
 Represents the properties of a global table.
 
 ## Contents
+<a name="API_GlobalTable_Contents"></a>
 
-###### Note
-
+**Note**
 In the following list, the required parameters are described first.
 
-**GlobalTableName**
-
+ ** GlobalTableName **   <a name="DDB-Type-GlobalTable-GlobalTableName"></a>
 The global table name.
-
 Type: String
-
 Length Constraints: Minimum length of 3. Maximum length of 255.
-
 Pattern: `[a-zA-Z0-9_.-]+`
-
 Required: No
 
-**ReplicationGroup**
-
+ ** ReplicationGroup **   <a name="DDB-Type-GlobalTable-ReplicationGroup"></a>
 The Regions where the global table has replicas.
-
-Type: Array of [Replica](api-replica.md) objects
-
+Type: Array of [Replica](API_Replica.md) objects
 Required: No
 
 ## See Also
+<a name="API_GlobalTable_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GlobalTable)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GlobalTable)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GlobalTable)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GlobalSecondaryIndexWarmThroughputDescription
-
-GlobalTableDescription
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GlobalTable)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GlobalTable)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GlobalTable)
 
 All content copied from https://docs.aws.amazon.com/.

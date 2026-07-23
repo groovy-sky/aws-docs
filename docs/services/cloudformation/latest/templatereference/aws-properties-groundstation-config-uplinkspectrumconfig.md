@@ -2,73 +2,65 @@
 title: "AWS::GroundStation::Config UplinkSpectrumConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::Config UplinkSpectrumConfig
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig"></a>
 
-Defines a uplink spectrum.
+ Defines a uplink spectrum.
 
 ## Syntax
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "CenterFrequency" : Frequency,
-  "Polarization" : String
+  "[CenterFrequency](#cfn-groundstation-config-uplinkspectrumconfig-centerfrequency)" : {{Frequency}},
+  "[Polarization](#cfn-groundstation-config-uplinkspectrumconfig-polarization)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig-syntax.yaml"></a>
 
-```yaml
-
-  CenterFrequency:
-    Frequency
-  Polarization: String
-
+```
+  [CenterFrequency](#cfn-groundstation-config-uplinkspectrumconfig-centerfrequency): {{
+    Frequency}}
+  [Polarization](#cfn-groundstation-config-uplinkspectrumconfig-polarization): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig-properties"></a>
 
-`CenterFrequency`
+`CenterFrequency`  <a name="cfn-groundstation-config-uplinkspectrumconfig-centerfrequency"></a>
+ The center frequency of the spectrum. Valid values are between 2200 to 2300 MHz and 7750 to 8400 MHz for downlink and 2025 to 2120 MHz for uplink.
+*Required*: No
+*Type*: [Frequency](aws-properties-groundstation-config-frequency.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The center frequency of the spectrum. Valid values are between 2200 to 2300 MHz and 7750 to 8400 MHz for downlink and 2025 to 2120 MHz for uplink.
-
-_Required_: No
-
-_Type_: [Frequency](aws-properties-groundstation-config-frequency.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Polarization`
-
-The polarization of the spectrum. Valid values are `"RIGHT_HAND"` and `"LEFT_HAND"`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `LEFT_HAND | RIGHT_HAND | NONE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Polarization`  <a name="cfn-groundstation-config-uplinkspectrumconfig-polarization"></a>
+ The polarization of the spectrum. Valid values are `"RIGHT_HAND"` and `"LEFT_HAND"`.
+*Required*: No
+*Type*: String
+*Allowed values*: `LEFT_HAND | RIGHT_HAND | NONE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig--examples"></a>
 
 ### Create an uplink SpectrumConfig
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig--examples--Create_an_uplink_SpectrumConfig"></a>
 
 The following example creates a Ground Station `SpectrumConfig` for an uplink config
 
 #### JSON
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig--examples--Create_an_uplink_SpectrumConfig--json"></a>
 
-```json
-
+```
 {
   "SpectrumConfig": {
 
@@ -82,20 +74,14 @@ The following example creates a Ground Station `SpectrumConfig` for an uplink co
 ```
 
 #### YAML
+<a name="aws-properties-groundstation-config-uplinkspectrumconfig--examples--Create_an_uplink_SpectrumConfig--yaml"></a>
 
-```yaml
-
+```
 SpectrumConfig:
   CenterFrequency:
     Value: 2100
     Units: MHz
   Polarization: RIGHT_HAND
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UplinkEchoConfig
-
-AWS::GroundStation::DataflowEndpointGroup
 
 All content copied from https://docs.aws.amazon.com/.

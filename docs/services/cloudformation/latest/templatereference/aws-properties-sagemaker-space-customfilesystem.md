@@ -2,80 +2,60 @@
 title: "AWS::SageMaker::Space CustomFileSystem"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Space CustomFileSystem
+<a name="aws-properties-sagemaker-space-customfilesystem"></a>
 
-A file system, created by you, that you assign to a user profile or space for an Amazon SageMaker AI Domain. Permitted users can access this file system in Amazon SageMaker AI
-Studio.
+A file system, created by you, that you assign to a user profile or space for an Amazon SageMaker AI Domain. Permitted users can access this file system in Amazon SageMaker AI Studio.
 
 ## Syntax
+<a name="aws-properties-sagemaker-space-customfilesystem-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-space-customfilesystem-syntax.json"></a>
 
-```json
-
+```
 {
-  "EFSFileSystem" : EFSFileSystem,
-  "FSxLustreFileSystem" : FSxLustreFileSystem,
-  "S3FileSystem" : S3FileSystem
+  "[EFSFileSystem](#cfn-sagemaker-space-customfilesystem-efsfilesystem)" : {{EFSFileSystem}},
+  "[FSxLustreFileSystem](#cfn-sagemaker-space-customfilesystem-fsxlustrefilesystem)" : {{FSxLustreFileSystem}},
+  "[S3FileSystem](#cfn-sagemaker-space-customfilesystem-s3filesystem)" : {{S3FileSystem}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-space-customfilesystem-syntax.yaml"></a>
 
-```yaml
-
-  EFSFileSystem:
-    EFSFileSystem
-  FSxLustreFileSystem:
-    FSxLustreFileSystem
-  S3FileSystem:
-    S3FileSystem
-
+```
+  [EFSFileSystem](#cfn-sagemaker-space-customfilesystem-efsfilesystem): {{
+    EFSFileSystem}}
+  [FSxLustreFileSystem](#cfn-sagemaker-space-customfilesystem-fsxlustrefilesystem): {{
+    FSxLustreFileSystem}}
+  [S3FileSystem](#cfn-sagemaker-space-customfilesystem-s3filesystem): {{
+    S3FileSystem}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-space-customfilesystem-properties"></a>
 
-`EFSFileSystem`
-
+`EFSFileSystem`  <a name="cfn-sagemaker-space-customfilesystem-efsfilesystem"></a>
 A custom file system in Amazon EFS.
+*Required*: No
+*Type*: [EFSFileSystem](aws-properties-sagemaker-space-efsfilesystem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [EFSFileSystem](aws-properties-sagemaker-space-efsfilesystem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FSxLustreFileSystem`
-
+`FSxLustreFileSystem`  <a name="cfn-sagemaker-space-customfilesystem-fsxlustrefilesystem"></a>
 A custom file system in Amazon FSx for Lustre.
+*Required*: No
+*Type*: [FSxLustreFileSystem](aws-properties-sagemaker-space-fsxlustrefilesystem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [FSxLustreFileSystem](aws-properties-sagemaker-space-fsxlustrefilesystem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3FileSystem`
-
+`S3FileSystem`  <a name="cfn-sagemaker-space-customfilesystem-s3filesystem"></a>
 A custom file system in Amazon S3. This is only supported in Amazon SageMaker Unified Studio.
-
-_Required_: No
-
-_Type_: [S3FileSystem](aws-properties-sagemaker-space-s3filesystem.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CodeRepository
-
-CustomImage
+*Required*: No
+*Type*: [S3FileSystem](aws-properties-sagemaker-space-s3filesystem.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

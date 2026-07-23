@@ -2,130 +2,106 @@
 title: "AWS::FraudDetector::Outcome"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FraudDetector::Outcome
+<a name="aws-resource-frauddetector-outcome"></a>
 
 Creates or updates an outcome.
 
 ## Syntax
+<a name="aws-resource-frauddetector-outcome-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-frauddetector-outcome-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::FraudDetector::Outcome",
   "Properties" : {
-      "Description" : String,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-frauddetector-outcome-description)" : {{String}},
+      "[Name](#cfn-frauddetector-outcome-name)" : {{String}},
+      "[Tags](#cfn-frauddetector-outcome-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-frauddetector-outcome-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::FraudDetector::Outcome
 Properties:
-  Description: String
-  Name: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-frauddetector-outcome-description): {{String}}
+  [Name](#cfn-frauddetector-outcome-name): {{String}}
+  [Tags](#cfn-frauddetector-outcome-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-frauddetector-outcome-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-frauddetector-outcome-description"></a>
 The outcome description.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-frauddetector-outcome-name"></a>
 The outcome name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-z_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-frauddetector-outcome-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-frauddetector-outcome-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-frauddetector-outcome-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-frauddetector-outcome-return-values"></a>
 
 ### Ref
+<a name="aws-resource-frauddetector-outcome-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the primary identifier for the resource, which is the ARN.
 
 Example: `{"Ref": "arn:aws:frauddetector:us-west-2:123123123123:outcome/outcome_name"}`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-frauddetector-outcome-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-frauddetector-outcome-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the outcome.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 Timestamp of when outcome was created.
 
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 Timestamp of when outcome was last updated.
 
 ## See also
-
-- [PutOutcome](../../../frauddetector/latest/api/api-putoutcome.md) in the _Amazon Fraud Detector API Reference_
-
-- [Create an outcome](../../../frauddetector/latest/ug/create-an-outcome.md) in the _Amazon Fraud Detector User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+<a name="aws-resource-frauddetector-outcome--seealso"></a>
++ [PutOutcome](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutOutcome.html) in the *Amazon Fraud Detector API Reference*
++ [Create an outcome](https://docs.aws.amazon.com/frauddetector/latest/ug/create-an-outcome.html) in the *Amazon Fraud Detector User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

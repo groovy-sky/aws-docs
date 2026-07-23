@@ -2,72 +2,63 @@
 title: "AWS::RDS::DBCluster DBClusterRole"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBCluster DBClusterRole
+<a name="aws-properties-rds-dbcluster-dbclusterrole"></a>
 
 Describes an AWS Identity and Access Management (IAM) role that is associated with a DB cluster.
 
 ## Syntax
+<a name="aws-properties-rds-dbcluster-dbclusterrole-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rds-dbcluster-dbclusterrole-syntax.json"></a>
 
-```json
-
+```
 {
-  "FeatureName" : String,
-  "RoleArn" : String
+  "[FeatureName](#cfn-rds-dbcluster-dbclusterrole-featurename)" : {{String}},
+  "[RoleArn](#cfn-rds-dbcluster-dbclusterrole-rolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rds-dbcluster-dbclusterrole-syntax.yaml"></a>
 
-```yaml
-
-  FeatureName: String
-  RoleArn: String
-
+```
+  [FeatureName](#cfn-rds-dbcluster-dbclusterrole-featurename): {{String}}
+  [RoleArn](#cfn-rds-dbcluster-dbclusterrole-rolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rds-dbcluster-dbclusterrole-properties"></a>
 
-`FeatureName`
+`FeatureName`  <a name="cfn-rds-dbcluster-dbclusterrole-featurename"></a>
+The name of the feature associated with the AWS Identity and Access Management (IAM) role. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other AWS services on your behalf. For the list of supported feature names, see the `SupportedFeatureNames` description in [DBEngineVersion](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBEngineVersion.html) in the *Amazon RDS API Reference*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the feature associated with the AWS Identity and Access Management (IAM)
-role. IAM roles that are associated with a DB cluster grant permission for the DB
-cluster to access other AWS services on your behalf. For the list of supported feature
-names, see the `SupportedFeatureNames` description in [DBEngineVersion](../../../../reference/amazonrds/latest/apireference/api-dbengineversion.md)
-in the _Amazon RDS API Reference_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleArn`
-
+`RoleArn`  <a name="cfn-rds-dbcluster-dbclusterrole-rolearn"></a>
 The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-rds-dbcluster-dbclusterrole--examples"></a>
+
+###
+<a name="aws-properties-rds-dbcluster-dbclusterrole--examples--"></a>
 
 The following specifies a role to associate with a DB cluster.
 
 #### JSON
+<a name="aws-properties-rds-dbcluster-dbclusterrole--examples----json"></a>
 
-```json
-
+```
 "AssociatedRoles": [
     {
         "FeatureName": "s3Import",
@@ -77,18 +68,12 @@ The following specifies a role to associate with a DB cluster.
 ```
 
 #### YAML
+<a name="aws-properties-rds-dbcluster-dbclusterrole--examples----yaml"></a>
 
-```yaml
-
+```
 AssociatedRoles:
     - FeatureName: s3Import
       RoleArn: 'arn:aws:iam::123456789012:role/RDSLoadFromS3'
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::RDS::DBCluster
-
-Endpoint
 
 All content copied from https://docs.aws.amazon.com/.

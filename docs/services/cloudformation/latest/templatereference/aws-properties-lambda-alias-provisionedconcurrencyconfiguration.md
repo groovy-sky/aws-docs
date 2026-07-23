@@ -2,58 +2,55 @@
 title: "AWS::Lambda::Alias ProvisionedConcurrencyConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Alias ProvisionedConcurrencyConfiguration
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration"></a>
 
 A provisioned concurrency configuration for a function's alias.
 
 ## Syntax
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ProvisionedConcurrentExecutions" : Integer
+  "[ProvisionedConcurrentExecutions](#cfn-lambda-alias-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ProvisionedConcurrentExecutions: Integer
-
+```
+  [ProvisionedConcurrentExecutions](#cfn-lambda-alias-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration-properties"></a>
 
-`ProvisionedConcurrentExecutions`
-
+`ProvisionedConcurrentExecutions`  <a name="cfn-lambda-alias-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions"></a>
 The amount of provisioned concurrency to allocate for the alias.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration--examples"></a>
 
 ### Provisioned Concurrency
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration--examples--Provisioned_Concurrency"></a>
 
 An alias with 20 provisioned concurrency.
 
 #### YAML
+<a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration--examples--Provisioned_Concurrency--yaml"></a>
 
-```yaml
-
+```
   alias:
     Type: AWS::Lambda::Alias
     Properties:
@@ -63,11 +60,5 @@ An alias with 20 provisioned concurrency.
       ProvisionedConcurrencyConfig:
         ProvisionedConcurrentExecutions: 20
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AliasRoutingConfiguration
-
-VersionWeight
 
 All content copied from https://docs.aws.amazon.com/.

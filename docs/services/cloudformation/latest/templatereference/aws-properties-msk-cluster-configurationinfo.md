@@ -2,64 +2,49 @@
 title: "AWS::MSK::Cluster ConfigurationInfo"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster ConfigurationInfo
+<a name="aws-properties-msk-cluster-configurationinfo"></a>
 
 Specifies the configuration to use for the brokers.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-configurationinfo-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-configurationinfo-syntax.json"></a>
 
-```json
-
+```
 {
-  "Arn" : String,
-  "Revision" : Integer
+  "[Arn](#cfn-msk-cluster-configurationinfo-arn)" : {{String}},
+  "[Revision](#cfn-msk-cluster-configurationinfo-revision)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-configurationinfo-syntax.yaml"></a>
 
-```yaml
-
-  Arn: String
-  Revision: Integer
-
+```
+  [Arn](#cfn-msk-cluster-configurationinfo-arn): {{String}}
+  [Revision](#cfn-msk-cluster-configurationinfo-revision): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-configurationinfo-properties"></a>
 
-`Arn`
-
+`Arn`  <a name="cfn-msk-cluster-configurationinfo-arn"></a>
 ARN of the configuration to use.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Revision`
-
+`Revision`  <a name="cfn-msk-cluster-configurationinfo-revision"></a>
 The revision of the configuration to use.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogs
-
-ConnectivityInfo
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

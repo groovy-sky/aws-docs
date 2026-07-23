@@ -2,67 +2,51 @@
 title: "AWS::AppSync::DataSource AwsIamConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::DataSource AwsIamConfig
+<a name="aws-properties-appsync-datasource-awsiamconfig"></a>
 
-Use the `AwsIamConfig` property type to specify `AwsIamConfig`
-for a AWS AppSync authorizaton.
+Use the `AwsIamConfig` property type to specify `AwsIamConfig` for a AWS AppSync authorizaton.
 
-`AwsIamConfig` is a property of the [AWS AppSync DataSource AuthorizationConfig](../userguide/aws-properties-appsync-datasource-httpconfig-authorizationconfig.md) resource.
+`AwsIamConfig` is a property of the [AWS AppSync DataSource AuthorizationConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig-authorizationconfig.html) resource.
 
 ## Syntax
+<a name="aws-properties-appsync-datasource-awsiamconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-datasource-awsiamconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "SigningRegion" : String,
-  "SigningServiceName" : String
+  "[SigningRegion](#cfn-appsync-datasource-awsiamconfig-signingregion)" : {{String}},
+  "[SigningServiceName](#cfn-appsync-datasource-awsiamconfig-signingservicename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-datasource-awsiamconfig-syntax.yaml"></a>
 
-```yaml
-
-  SigningRegion: String
-  SigningServiceName: String
-
+```
+  [SigningRegion](#cfn-appsync-datasource-awsiamconfig-signingregion): {{String}}
+  [SigningServiceName](#cfn-appsync-datasource-awsiamconfig-signingservicename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-datasource-awsiamconfig-properties"></a>
 
-`SigningRegion`
-
+`SigningRegion`  <a name="cfn-appsync-datasource-awsiamconfig-signingregion"></a>
 The signing Region for AWS Identity and Access Management authorization.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SigningServiceName`
-
+`SigningServiceName`  <a name="cfn-appsync-datasource-awsiamconfig-signingservicename"></a>
 The signing service name for AWS Identity and Access Management authorization.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthorizationConfig
-
-DeltaSyncConfig
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

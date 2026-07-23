@@ -2,100 +2,82 @@
 title: "AWS::VpcLattice::AuthPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::AuthPolicy
+<a name="aws-resource-vpclattice-authpolicy"></a>
 
-Creates or updates the auth policy. The policy string in JSON must not contain newlines or
-blank lines.
+Creates or updates the auth policy. The policy string in JSON must not contain newlines or blank lines.
 
-For more information, see [Auth policies](../../../vpc-lattice/latest/ug/auth-policies.md) in the _Amazon VPC_
-_Lattice User Guide_.
+For more information, see [Auth policies](https://docs.aws.amazon.com/vpc-lattice/latest/ug/auth-policies.html) in the *Amazon VPC Lattice User Guide*.
 
 ## Syntax
+<a name="aws-resource-vpclattice-authpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-vpclattice-authpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::VpcLattice::AuthPolicy",
   "Properties" : {
-      "Policy" : Json,
-      "ResourceIdentifier" : String
+      "[Policy](#cfn-vpclattice-authpolicy-policy)" : {{Json}},
+      "[ResourceIdentifier](#cfn-vpclattice-authpolicy-resourceidentifier)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-vpclattice-authpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::VpcLattice::AuthPolicy
 Properties:
-  Policy: Json
-  ResourceIdentifier: String
-
+  [Policy](#cfn-vpclattice-authpolicy-policy): {{Json}}
+  [ResourceIdentifier](#cfn-vpclattice-authpolicy-resourceidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-vpclattice-authpolicy-properties"></a>
 
-`Policy`
-
+`Policy`  <a name="cfn-vpclattice-authpolicy-policy"></a>
 The auth policy.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceIdentifier`
-
+`ResourceIdentifier`  <a name="cfn-vpclattice-authpolicy-resourceidentifier"></a>
 The ID or ARN of the service network or service for which the policy is created.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^((((sn)|(svc))-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(service/svc))-[0-9a-z]{17}))$`
-
-_Minimum_: `17`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^((((sn)|(svc))-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(service/svc))-[0-9a-z]{17}))$`
+*Minimum*: `17`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-vpclattice-authpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-vpclattice-authpolicy-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the auth policy.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-vpclattice-authpolicy-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`State`
+####
+<a name="aws-resource-vpclattice-authpolicy-return-values-fn--getatt-fn--getatt"></a>
 
-The state of the auth policy. The auth policy is only active when the auth type is set to
-`AWS_IAM`. If you provide a policy, then authentication and
-authorization decisions are made based on this policy and the client's IAM policy. If the auth
-type is `NONE`, then any auth policy you provide will remain inactive.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::VpcLattice::DomainVerification
+`State`  <a name="State-fn::getatt"></a>
+The state of the auth policy. The auth policy is only active when the auth type is set to `AWS_IAM`. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client's IAM policy. If the auth type is `NONE`, then any auth policy you provide will remain inactive.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,81 +2,62 @@
 title: "AWS::QuickSight::Analysis NumericFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis NumericFormatConfiguration
+<a name="aws-properties-quicksight-analysis-numericformatconfiguration"></a>
 
 The options that determine the numeric format configuration.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-numericformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-numericformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CurrencyDisplayFormatConfiguration" : CurrencyDisplayFormatConfiguration,
-  "NumberDisplayFormatConfiguration" : NumberDisplayFormatConfiguration,
-  "PercentageDisplayFormatConfiguration" : PercentageDisplayFormatConfiguration
+  "[CurrencyDisplayFormatConfiguration](#cfn-quicksight-analysis-numericformatconfiguration-currencydisplayformatconfiguration)" : {{CurrencyDisplayFormatConfiguration}},
+  "[NumberDisplayFormatConfiguration](#cfn-quicksight-analysis-numericformatconfiguration-numberdisplayformatconfiguration)" : {{NumberDisplayFormatConfiguration}},
+  "[PercentageDisplayFormatConfiguration](#cfn-quicksight-analysis-numericformatconfiguration-percentagedisplayformatconfiguration)" : {{PercentageDisplayFormatConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-numericformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CurrencyDisplayFormatConfiguration:
-    CurrencyDisplayFormatConfiguration
-  NumberDisplayFormatConfiguration:
-    NumberDisplayFormatConfiguration
-  PercentageDisplayFormatConfiguration:
-    PercentageDisplayFormatConfiguration
-
+```
+  [CurrencyDisplayFormatConfiguration](#cfn-quicksight-analysis-numericformatconfiguration-currencydisplayformatconfiguration): {{
+    CurrencyDisplayFormatConfiguration}}
+  [NumberDisplayFormatConfiguration](#cfn-quicksight-analysis-numericformatconfiguration-numberdisplayformatconfiguration): {{
+    NumberDisplayFormatConfiguration}}
+  [PercentageDisplayFormatConfiguration](#cfn-quicksight-analysis-numericformatconfiguration-percentagedisplayformatconfiguration): {{
+    PercentageDisplayFormatConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-numericformatconfiguration-properties"></a>
 
-`CurrencyDisplayFormatConfiguration`
-
+`CurrencyDisplayFormatConfiguration`  <a name="cfn-quicksight-analysis-numericformatconfiguration-currencydisplayformatconfiguration"></a>
 The options that determine the currency display format configuration.
+*Required*: No
+*Type*: [CurrencyDisplayFormatConfiguration](aws-properties-quicksight-analysis-currencydisplayformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CurrencyDisplayFormatConfiguration](aws-properties-quicksight-analysis-currencydisplayformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberDisplayFormatConfiguration`
-
+`NumberDisplayFormatConfiguration`  <a name="cfn-quicksight-analysis-numericformatconfiguration-numberdisplayformatconfiguration"></a>
 The options that determine the number display format configuration.
+*Required*: No
+*Type*: [NumberDisplayFormatConfiguration](aws-properties-quicksight-analysis-numberdisplayformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumberDisplayFormatConfiguration](aws-properties-quicksight-analysis-numberdisplayformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PercentageDisplayFormatConfiguration`
-
+`PercentageDisplayFormatConfiguration`  <a name="cfn-quicksight-analysis-numericformatconfiguration-percentagedisplayformatconfiguration"></a>
 The options that determine the percentage display format configuration.
-
-_Required_: No
-
-_Type_: [PercentageDisplayFormatConfiguration](aws-properties-quicksight-analysis-percentagedisplayformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NumericEqualityFilter
-
-NumericRangeFilter
+*Required*: No
+*Type*: [PercentageDisplayFormatConfiguration](aws-properties-quicksight-analysis-percentagedisplayformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

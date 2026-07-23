@@ -2,141 +2,99 @@
 title: "AWS::QuickSight::Topic SemanticType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic SemanticType
+<a name="aws-properties-quicksight-topic-semantictype"></a>
 
 A structure that represents a semantic type.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-semantictype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-semantictype-syntax.json"></a>
 
-```json
-
+```
 {
-  "FalseyCellValue" : String,
-  "FalseyCellValueSynonyms" : [ String, ... ],
-  "SubTypeName" : String,
-  "TruthyCellValue" : String,
-  "TruthyCellValueSynonyms" : [ String, ... ],
-  "TypeName" : String,
-  "TypeParameters" : {Key: Value, ...}
+  "[FalseyCellValue](#cfn-quicksight-topic-semantictype-falseycellvalue)" : {{String}},
+  "[FalseyCellValueSynonyms](#cfn-quicksight-topic-semantictype-falseycellvaluesynonyms)" : {{[ String, ... ]}},
+  "[SubTypeName](#cfn-quicksight-topic-semantictype-subtypename)" : {{String}},
+  "[TruthyCellValue](#cfn-quicksight-topic-semantictype-truthycellvalue)" : {{String}},
+  "[TruthyCellValueSynonyms](#cfn-quicksight-topic-semantictype-truthycellvaluesynonyms)" : {{[ String, ... ]}},
+  "[TypeName](#cfn-quicksight-topic-semantictype-typename)" : {{String}},
+  "[TypeParameters](#cfn-quicksight-topic-semantictype-typeparameters)" : {{{{{Key}}: {{Value}}, ...}}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-semantictype-syntax.yaml"></a>
 
-```yaml
-
-  FalseyCellValue: String
-  FalseyCellValueSynonyms:
-    - String
-  SubTypeName: String
-  TruthyCellValue: String
-  TruthyCellValueSynonyms:
-    - String
-  TypeName: String
-  TypeParameters:
-    Key: Value
-
+```
+  [FalseyCellValue](#cfn-quicksight-topic-semantictype-falseycellvalue): {{String}}
+  [FalseyCellValueSynonyms](#cfn-quicksight-topic-semantictype-falseycellvaluesynonyms): {{
+    - String}}
+  [SubTypeName](#cfn-quicksight-topic-semantictype-subtypename): {{String}}
+  [TruthyCellValue](#cfn-quicksight-topic-semantictype-truthycellvalue): {{String}}
+  [TruthyCellValueSynonyms](#cfn-quicksight-topic-semantictype-truthycellvaluesynonyms): {{
+    - String}}
+  [TypeName](#cfn-quicksight-topic-semantictype-typename): {{String}}
+  [TypeParameters](#cfn-quicksight-topic-semantictype-typeparameters): {{
+    {{Key}}: {{Value}}}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-semantictype-properties"></a>
 
-`FalseyCellValue`
-
+`FalseyCellValue`  <a name="cfn-quicksight-topic-semantictype-falseycellvalue"></a>
 The semantic type falsey cell value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FalseyCellValueSynonyms`
-
+`FalseyCellValueSynonyms`  <a name="cfn-quicksight-topic-semantictype-falseycellvaluesynonyms"></a>
 The other names or aliases for the false cell value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubTypeName`
-
+`SubTypeName`  <a name="cfn-quicksight-topic-semantictype-subtypename"></a>
 The semantic type sub type name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TruthyCellValue`
-
+`TruthyCellValue`  <a name="cfn-quicksight-topic-semantictype-truthycellvalue"></a>
 The semantic type truthy cell value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TruthyCellValueSynonyms`
-
+`TruthyCellValueSynonyms`  <a name="cfn-quicksight-topic-semantictype-truthycellvaluesynonyms"></a>
 The other names or aliases for the true cell value.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeName`
-
+`TypeName`  <a name="cfn-quicksight-topic-semantictype-typename"></a>
 The semantic type name.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TypeParameters`
-
+`TypeParameters`  <a name="cfn-quicksight-topic-semantictype-typeparameters"></a>
 The semantic type parameters.
-
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `.+`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SemanticEntityType
-
-Tag
+*Required*: No
+*Type*: Object of String
+*Pattern*: `.+`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

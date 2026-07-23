@@ -2,179 +2,137 @@
 title: "AWS::FraudDetector::EventType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FraudDetector::EventType
+<a name="aws-resource-frauddetector-eventtype"></a>
 
-Manages an event type. An event is a business activity that is evaluated for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events.
-An event type defines the structure for an event sent to Amazon Fraud Detector. This includes the variables sent as part of the event, the entity performing the event
-(such as a customer), and the labels that classify the event. Example event types include online payment transactions, account registrations, and authentications.
+Manages an event type. An event is a business activity that is evaluated for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events. An event type defines the structure for an event sent to Amazon Fraud Detector. This includes the variables sent as part of the event, the entity performing the event (such as a customer), and the labels that classify the event. Example event types include online payment transactions, account registrations, and authentications.
 
 ## Syntax
+<a name="aws-resource-frauddetector-eventtype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-frauddetector-eventtype-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::FraudDetector::EventType",
   "Properties" : {
-      "Description" : String,
-      "EntityTypes" : [ EntityType, ... ],
-      "EventVariables" : [ EventVariable, ... ],
-      "Labels" : [ Label, ... ],
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-frauddetector-eventtype-description)" : {{String}},
+      "[EntityTypes](#cfn-frauddetector-eventtype-entitytypes)" : {{[ EntityType, ... ]}},
+      "[EventVariables](#cfn-frauddetector-eventtype-eventvariables)" : {{[ EventVariable, ... ]}},
+      "[Labels](#cfn-frauddetector-eventtype-labels)" : {{[ Label, ... ]}},
+      "[Name](#cfn-frauddetector-eventtype-name)" : {{String}},
+      "[Tags](#cfn-frauddetector-eventtype-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-frauddetector-eventtype-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::FraudDetector::EventType
 Properties:
-  Description: String
-  EntityTypes:
-    - EntityType
-  EventVariables:
-    - EventVariable
-  Labels:
-    - Label
-  Name: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-frauddetector-eventtype-description): {{String}}
+  [EntityTypes](#cfn-frauddetector-eventtype-entitytypes): {{
+    - EntityType}}
+  [EventVariables](#cfn-frauddetector-eventtype-eventvariables): {{
+    - EventVariable}}
+  [Labels](#cfn-frauddetector-eventtype-labels): {{
+    - Label}}
+  [Name](#cfn-frauddetector-eventtype-name): {{String}}
+  [Tags](#cfn-frauddetector-eventtype-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-frauddetector-eventtype-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-frauddetector-eventtype-description"></a>
 The event type description.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EntityTypes`
-
+`EntityTypes`  <a name="cfn-frauddetector-eventtype-entitytypes"></a>
 The event type entity types.
+*Required*: Yes
+*Type*: Array of [EntityType](aws-properties-frauddetector-eventtype-entitytype.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [EntityType](aws-properties-frauddetector-eventtype-entitytype.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventVariables`
-
+`EventVariables`  <a name="cfn-frauddetector-eventtype-eventvariables"></a>
 The event type event variables.
+*Required*: Yes
+*Type*: Array of [EventVariable](aws-properties-frauddetector-eventtype-eventvariable.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [EventVariable](aws-properties-frauddetector-eventtype-eventvariable.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Labels`
-
+`Labels`  <a name="cfn-frauddetector-eventtype-labels"></a>
 The event type labels.
+*Required*: Yes
+*Type*: Array of [Label](aws-properties-frauddetector-eventtype-label.md)
+*Minimum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [Label](aws-properties-frauddetector-eventtype-label.md)
-
-_Minimum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-frauddetector-eventtype-name"></a>
 The event type name.
-
 Pattern : `^[0-9a-z_-]+$`
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[0-9a-z_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z_-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-frauddetector-eventtype-tags"></a>
 An array of key-value pairs to apply to this resource.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-frauddetector-eventtype-tag.md)
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-frauddetector-eventtype-tag.md)
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-frauddetector-eventtype-return-values"></a>
 
 ### Ref
+<a name="aws-resource-frauddetector-eventtype-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the primary identifier for the resource, which is the Arn.
 
 Example: `{"Ref": "arn:aws:frauddetector:us-west-2:123123123123:outcome/outcome_name"}`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-frauddetector-eventtype-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-frauddetector-eventtype-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The event type ARN.
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 Timestamp of when event type was created.
 
-`LastUpdatedTime`
-
+`LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 Timestamp of when event type was last updated.
 
 ## See also
-
-- [PutEventType](../../../frauddetector/latest/api/api-puteventtype.md) in the _Amazon Fraud Detector API Reference_
-
-- [Create event types](../../../frauddetector/latest/ug/create-event-type.md) in the _Amazon Fraud Detector User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-EntityType
+<a name="aws-resource-frauddetector-eventtype--seealso"></a>
++ [PutEventType](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutEventType.html) in the *Amazon Fraud Detector API Reference*
++ [Create event types](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-type.html) in the *Amazon Fraud Detector User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

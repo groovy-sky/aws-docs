@@ -2,110 +2,80 @@
 title: "AWS::QuickSight::Dashboard DestinationParameterValueConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard DestinationParameterValueConfiguration
+<a name="aws-properties-quicksight-dashboard-destinationparametervalueconfiguration"></a>
 
 The configuration of destination parameter values.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-destinationparametervalueconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-destinationparametervalueconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomValuesConfiguration" : CustomValuesConfiguration,
-  "SelectAllValueOptions" : String,
-  "SourceColumn" : ColumnIdentifier,
-  "SourceField" : String,
-  "SourceParameterName" : String
+  "[CustomValuesConfiguration](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-customvaluesconfiguration)" : {{CustomValuesConfiguration}},
+  "[SelectAllValueOptions](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-selectallvalueoptions)" : {{String}},
+  "[SourceColumn](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourcecolumn)" : {{ColumnIdentifier}},
+  "[SourceField](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourcefield)" : {{String}},
+  "[SourceParameterName](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourceparametername)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-destinationparametervalueconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomValuesConfiguration:
-    CustomValuesConfiguration
-  SelectAllValueOptions: String
-  SourceColumn:
-    ColumnIdentifier
-  SourceField: String
-  SourceParameterName: String
-
+```
+  [CustomValuesConfiguration](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-customvaluesconfiguration): {{
+    CustomValuesConfiguration}}
+  [SelectAllValueOptions](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-selectallvalueoptions): {{String}}
+  [SourceColumn](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourcecolumn): {{
+    ColumnIdentifier}}
+  [SourceField](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourcefield): {{String}}
+  [SourceParameterName](#cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourceparametername): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-destinationparametervalueconfiguration-properties"></a>
 
-`CustomValuesConfiguration`
-
+`CustomValuesConfiguration`  <a name="cfn-quicksight-dashboard-destinationparametervalueconfiguration-customvaluesconfiguration"></a>
 The configuration of custom values for destination parameter in `DestinationParameterValueConfiguration`.
+*Required*: No
+*Type*: [CustomValuesConfiguration](aws-properties-quicksight-dashboard-customvaluesconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CustomValuesConfiguration](aws-properties-quicksight-dashboard-customvaluesconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectAllValueOptions`
-
+`SelectAllValueOptions`  <a name="cfn-quicksight-dashboard-destinationparametervalueconfiguration-selectallvalueoptions"></a>
 The configuration that selects all options.
+*Required*: No
+*Type*: String
+*Allowed values*: `ALL_VALUES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ALL_VALUES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceColumn`
-
+`SourceColumn`  <a name="cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourcecolumn"></a>
 A column of a data set.
+*Required*: No
+*Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceField`
-
+`SourceField`  <a name="cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourcefield"></a>
 The source field ID of the destination parameter.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceParameterName`
-
+`SourceParameterName`  <a name="cfn-quicksight-dashboard-destinationparametervalueconfiguration-sourceparametername"></a>
 The source parameter name of the destination parameter.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultTextFieldControlOptions
-
-DimensionField
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

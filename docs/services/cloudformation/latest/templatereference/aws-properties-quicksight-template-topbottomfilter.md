@@ -2,145 +2,101 @@
 title: "AWS::QuickSight::Template TopBottomFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template TopBottomFilter
+<a name="aws-properties-quicksight-template-topbottomfilter"></a>
 
 A `TopBottomFilter` filters values that are at the top or the bottom.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-topbottomfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-topbottomfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AggregationSortConfigurations" : [ AggregationSortConfiguration, ... ],
-  "Column" : ColumnIdentifier,
-  "DefaultFilterControlConfiguration" : DefaultFilterControlConfiguration,
-  "FilterId" : String,
-  "Limit" : Number,
-  "ParameterName" : String,
-  "TimeGranularity" : String
+  "[AggregationSortConfigurations](#cfn-quicksight-template-topbottomfilter-aggregationsortconfigurations)" : {{[ AggregationSortConfiguration, ... ]}},
+  "[Column](#cfn-quicksight-template-topbottomfilter-column)" : {{ColumnIdentifier}},
+  "[DefaultFilterControlConfiguration](#cfn-quicksight-template-topbottomfilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
+  "[FilterId](#cfn-quicksight-template-topbottomfilter-filterid)" : {{String}},
+  "[Limit](#cfn-quicksight-template-topbottomfilter-limit)" : {{Number}},
+  "[ParameterName](#cfn-quicksight-template-topbottomfilter-parametername)" : {{String}},
+  "[TimeGranularity](#cfn-quicksight-template-topbottomfilter-timegranularity)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-topbottomfilter-syntax.yaml"></a>
 
-```yaml
-
-  AggregationSortConfigurations:
-    - AggregationSortConfiguration
-  Column:
-    ColumnIdentifier
-  DefaultFilterControlConfiguration:
-    DefaultFilterControlConfiguration
-  FilterId: String
-  Limit: Number
-  ParameterName: String
-  TimeGranularity: String
-
+```
+  [AggregationSortConfigurations](#cfn-quicksight-template-topbottomfilter-aggregationsortconfigurations): {{
+    - AggregationSortConfiguration}}
+  [Column](#cfn-quicksight-template-topbottomfilter-column): {{
+    ColumnIdentifier}}
+  [DefaultFilterControlConfiguration](#cfn-quicksight-template-topbottomfilter-defaultfiltercontrolconfiguration): {{
+    DefaultFilterControlConfiguration}}
+  [FilterId](#cfn-quicksight-template-topbottomfilter-filterid): {{String}}
+  [Limit](#cfn-quicksight-template-topbottomfilter-limit): {{Number}}
+  [ParameterName](#cfn-quicksight-template-topbottomfilter-parametername): {{String}}
+  [TimeGranularity](#cfn-quicksight-template-topbottomfilter-timegranularity): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-topbottomfilter-properties"></a>
 
-`AggregationSortConfigurations`
-
+`AggregationSortConfigurations`  <a name="cfn-quicksight-template-topbottomfilter-aggregationsortconfigurations"></a>
 The aggregation and sort configuration of the top bottom filter.
+*Required*: Yes
+*Type*: Array of [AggregationSortConfiguration](aws-properties-quicksight-template-aggregationsortconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [AggregationSortConfiguration](aws-properties-quicksight-template-aggregationsortconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-template-topbottomfilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-template-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultFilterControlConfiguration`
-
+`DefaultFilterControlConfiguration`  <a name="cfn-quicksight-template-topbottomfilter-defaultfiltercontrolconfiguration"></a>
 The default configurations for the associated controls. This applies only for filters that are scoped to multiple sheets.
+*Required*: No
+*Type*: [DefaultFilterControlConfiguration](aws-properties-quicksight-template-defaultfiltercontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterControlConfiguration](aws-properties-quicksight-template-defaultfiltercontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterId`
-
+`FilterId`  <a name="cfn-quicksight-template-topbottomfilter-filterid"></a>
 An identifier that uniquely identifies a filter within a dashboard, analysis, or template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Limit`
-
+`Limit`  <a name="cfn-quicksight-template-topbottomfilter-limit"></a>
 The number of items to include in the top bottom filter results.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterName`
-
+`ParameterName`  <a name="cfn-quicksight-template-topbottomfilter-parametername"></a>
 The parameter whose value should be used for the filter value.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeGranularity`
-
+`TimeGranularity`  <a name="cfn-quicksight-template-topbottomfilter-timegranularity"></a>
 The level of time precision that is used to aggregate `DateTime` values.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TooltipOptions
-
-TopBottomMoversComputation
+*Required*: No
+*Type*: String
+*Allowed values*: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

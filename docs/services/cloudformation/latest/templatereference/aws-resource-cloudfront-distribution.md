@@ -2,107 +2,101 @@
 title: "AWS::CloudFront::Distribution"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::Distribution
+<a name="aws-resource-cloudfront-distribution"></a>
 
-A distribution tells CloudFront where you want content to be delivered from, and the details
-about how to track and manage content delivery.
+A distribution tells CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery.
 
 ## Syntax
+<a name="aws-resource-cloudfront-distribution-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudfront-distribution-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFront::Distribution",
   "Properties" : {
-      "DistributionConfig" : DistributionConfig,
-      "Tags" : [ Tag, ... ]
+      "[DistributionConfig](#cfn-cloudfront-distribution-distributionconfig)" : {{DistributionConfig}},
+      "[Tags](#cfn-cloudfront-distribution-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudfront-distribution-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFront::Distribution
 Properties:
-  DistributionConfig:
-    DistributionConfig
-  Tags:
-    - Tag
-
+  [DistributionConfig](#cfn-cloudfront-distribution-distributionconfig): {{
+    DistributionConfig}}
+  [Tags](#cfn-cloudfront-distribution-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudfront-distribution-properties"></a>
 
-`DistributionConfig`
-
+`DistributionConfig`  <a name="cfn-cloudfront-distribution-distributionconfig"></a>
 The distribution's configuration.
+*Required*: Yes
+*Type*: [DistributionConfig](aws-properties-cloudfront-distribution-distributionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [DistributionConfig](aws-properties-cloudfront-distribution-distributionconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-cloudfront-distribution-tags"></a>
 A complex type that contains zero or more `Tag` elements.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cloudfront-distribution-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudfront-distribution-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudfront-distribution-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudfront-distribution-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the CloudFront
-distribution ID. For example: `E27LVI50CSW06W`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the CloudFront distribution ID. For example: `E27LVI50CSW06W`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudfront-distribution-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DomainName`
+####
+<a name="aws-resource-cloudfront-distribution-return-values-fn--getatt-fn--getatt"></a>
 
+`DomainName`  <a name="DomainName-fn::getatt"></a>
 The domain name of the resource, such as `d111111abcdef8.cloudfront.net`.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The distribution's identifier. For example: `E1U5RQF7T870K0`.
 
 ## Examples
+<a name="aws-resource-cloudfront-distribution--examples"></a>
 
-- [Create a standard distribution](#aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution)
-
-- [Create a multi-tenant distribution without a certificate](#aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate)
-
-- [Create a multi-tenant distribution with a wildcard certificate](#aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate)
+**Topics**
++ [Create a standard distribution](#aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution)
++ [Create a multi-tenant distribution without a certificate](#aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate)
++ [Create a multi-tenant distribution with a wildcard certificate](#aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate)
 
 ### Create a standard distribution
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution"></a>
 
 The following example specifies a standard distribution and assigns it a single tag.
 
 #### JSON
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -151,9 +145,9 @@ The following example specifies a standard distribution and assigns it a single 
 ```
 
 #### YAML
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   cloudfrontdistribution:
@@ -179,13 +173,14 @@ Resources:
 ```
 
 ### Create a multi-tenant distribution without a certificate
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate"></a>
 
 The following example specifies a basic multi-tenant distribution without a certificate.
 
 #### JSON
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -281,9 +276,9 @@ The following example specifies a basic multi-tenant distribution without a cert
 ```
 
 #### YAML
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution
@@ -331,7 +326,7 @@ Resources:
       Bucket: !Ref MyBucket
       PolicyDocument:
         Id: RequireEncryptionInTransit
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
           - Principal: '*'
             Action: '*'
@@ -345,13 +340,14 @@ Resources:
 ```
 
 ### Create a multi-tenant distribution with a wildcard certificate
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate"></a>
 
 The following example specifies a basic multi-tenant distribution with a wildcard certificate.
 
 #### JSON
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -451,9 +447,9 @@ The following example specifies a basic multi-tenant distribution with a wildcar
 ```
 
 #### YAML
+<a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution
@@ -504,7 +500,7 @@ Resources:
       Bucket: !Ref MyBucket
       PolicyDocument:
         Id: RequireEncryptionInTransit
-        Version: '2012-10-17'
+        Version: '2012-10-17		 	 	 '
         Statement:
           - Principal: '*'
             Action: '*'
@@ -518,15 +514,8 @@ Resources:
 ```
 
 ## See also
-
-- [CreateDistribution](../../../../reference/cloudfront/latest/apireference/api-createdistribution.md) in the _Amazon CloudFront API Reference_
-
-- [Understand how multi-tenant distributions work](../../../amazoncloudfront/latest/developerguide/distribution-config-options.md) in the _Amazon CloudFront Developer Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrafficConfig
-
-CacheBehavior
+<a name="aws-resource-cloudfront-distribution--seealso"></a>
++ [CreateDistribution](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateDistribution.html) in the *Amazon CloudFront API Reference*
++ [Understand how multi-tenant distributions work](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-config-options.html) in the *Amazon CloudFront Developer Guide*
 
 All content copied from https://docs.aws.amazon.com/.

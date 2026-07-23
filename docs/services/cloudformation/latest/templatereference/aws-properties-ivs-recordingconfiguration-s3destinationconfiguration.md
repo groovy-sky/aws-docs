@@ -2,59 +2,44 @@
 title: "AWS::IVS::RecordingConfiguration S3DestinationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::RecordingConfiguration S3DestinationConfiguration
+<a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration"></a>
 
-The S3DestinationConfiguration property type describes an S3 location where recorded
-videos will be stored.
+The S3DestinationConfiguration property type describes an S3 location where recorded videos will be stored.
 
 ## Syntax
+<a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String
+  "[BucketName](#cfn-ivs-recordingconfiguration-s3destinationconfiguration-bucketname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-
+```
+  [BucketName](#cfn-ivs-recordingconfiguration-s3destinationconfiguration-bucketname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration-properties"></a>
 
-`BucketName`
-
+`BucketName`  <a name="cfn-ivs-recordingconfiguration-s3destinationconfiguration-bucketname"></a>
 Location (S3 bucket name) where recorded videos will be stored.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9-.]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RenditionConfiguration
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-z0-9-.]+$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

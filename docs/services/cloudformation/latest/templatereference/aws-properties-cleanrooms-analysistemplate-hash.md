@@ -2,52 +2,41 @@
 title: "AWS::CleanRooms::AnalysisTemplate Hash"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::AnalysisTemplate Hash
+<a name="aws-properties-cleanrooms-analysistemplate-hash"></a>
 
-Hash
+ Hash
 
 ## Syntax
+<a name="aws-properties-cleanrooms-analysistemplate-hash-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-analysistemplate-hash-syntax.json"></a>
 
-```json
-
+```
 {
-  "Sha256" : String
+  "[Sha256](#cfn-cleanrooms-analysistemplate-hash-sha256)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-analysistemplate-hash-syntax.yaml"></a>
 
-```yaml
-
-  Sha256: String
-
+```
+  [Sha256](#cfn-cleanrooms-analysistemplate-hash-sha256): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-analysistemplate-hash-properties"></a>
 
-`Sha256`
-
-The SHA-256 hash value.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ErrorMessageConfiguration
-
-MLSyntheticDataParameters
+`Sha256`  <a name="cfn-cleanrooms-analysistemplate-hash-sha256"></a>
+ The SHA-256 hash value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

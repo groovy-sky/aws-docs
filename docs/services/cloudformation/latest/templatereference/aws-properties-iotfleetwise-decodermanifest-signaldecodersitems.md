@@ -2,82 +2,60 @@
 title: "AWS::IoTFleetWise::DecoderManifest SignalDecodersItems"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::DecoderManifest SignalDecodersItems
+<a name="aws-properties-iotfleetwise-decodermanifest-signaldecodersitems"></a>
 
 Information about a signal decoder.
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-decodermanifest-signaldecodersitems-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-decodermanifest-signaldecodersitems-syntax.json"></a>
 
-```json
-
+```
 {
-  "CanSignalDecoder" : CanSignalDecoder,
-  "CustomDecodingSignalDecoder" : CustomDecodingSignalDecoder,
-  "ObdSignalDecoder" : ObdSignalDecoder
+  "[CanSignalDecoder](#cfn-iotfleetwise-decodermanifest-signaldecodersitems-cansignaldecoder)" : {{CanSignalDecoder}},
+  "[CustomDecodingSignalDecoder](#cfn-iotfleetwise-decodermanifest-signaldecodersitems-customdecodingsignaldecoder)" : {{CustomDecodingSignalDecoder}},
+  "[ObdSignalDecoder](#cfn-iotfleetwise-decodermanifest-signaldecodersitems-obdsignaldecoder)" : {{ObdSignalDecoder}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-decodermanifest-signaldecodersitems-syntax.yaml"></a>
 
-```yaml
-
-  CanSignalDecoder:
-    CanSignalDecoder
-  CustomDecodingSignalDecoder:
-    CustomDecodingSignalDecoder
-  ObdSignalDecoder:
-    ObdSignalDecoder
-
+```
+  [CanSignalDecoder](#cfn-iotfleetwise-decodermanifest-signaldecodersitems-cansignaldecoder): {{
+    CanSignalDecoder}}
+  [CustomDecodingSignalDecoder](#cfn-iotfleetwise-decodermanifest-signaldecodersitems-customdecodingsignaldecoder): {{
+    CustomDecodingSignalDecoder}}
+  [ObdSignalDecoder](#cfn-iotfleetwise-decodermanifest-signaldecodersitems-obdsignaldecoder): {{
+    ObdSignalDecoder}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-decodermanifest-signaldecodersitems-properties"></a>
 
-`CanSignalDecoder`
+`CanSignalDecoder`  <a name="cfn-iotfleetwise-decodermanifest-signaldecodersitems-cansignaldecoder"></a>
+Information about signal decoder using the Controller Area Network (CAN) protocol.
+*Required*: No
+*Type*: [CanSignalDecoder](aws-properties-iotfleetwise-decodermanifest-cansignaldecoder.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Information about signal decoder using the Controller Area Network (CAN)
-protocol.
+`CustomDecodingSignalDecoder`  <a name="cfn-iotfleetwise-decodermanifest-signaldecodersitems-customdecodingsignaldecoder"></a>
+Information about a [custom signal decoder](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CustomDecodingSignal.html).
+*Required*: No
+*Type*: [CustomDecodingSignalDecoder](aws-properties-iotfleetwise-decodermanifest-customdecodingsignaldecoder.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CanSignalDecoder](aws-properties-iotfleetwise-decodermanifest-cansignaldecoder.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomDecodingSignalDecoder`
-
-Information about a [custom signal \
-decoder](../../../../reference/iot-fleetwise/latest/apireference/api-customdecodingsignal.md).
-
-_Required_: No
-
-_Type_: [CustomDecodingSignalDecoder](aws-properties-iotfleetwise-decodermanifest-customdecodingsignaldecoder.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ObdSignalDecoder`
-
-Information about signal decoder using the on-board diagnostic (OBD) II
-protocol.
-
-_Required_: No
-
-_Type_: [ObdSignalDecoder](aws-properties-iotfleetwise-decodermanifest-obdsignaldecoder.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ObdSignalDecoder
-
-Tag
+`ObdSignalDecoder`  <a name="cfn-iotfleetwise-decodermanifest-signaldecodersitems-obdsignaldecoder"></a>
+Information about signal decoder using the on-board diagnostic (OBD) II protocol.
+*Required*: No
+*Type*: [ObdSignalDecoder](aws-properties-iotfleetwise-decodermanifest-obdsignaldecoder.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

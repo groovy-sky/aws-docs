@@ -2,56 +2,42 @@
 title: "AWS::Bedrock::DataSource SalesforceCrawlerConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource SalesforceCrawlerConfiguration
+<a name="aws-properties-bedrock-datasource-salesforcecrawlerconfiguration"></a>
 
-The configuration of the Salesforce content. For example, configuring
-specific types of Salesforce content.
+The configuration of the Salesforce content. For example, configuring specific types of Salesforce content.
 
 ## Syntax
+<a name="aws-properties-bedrock-datasource-salesforcecrawlerconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-datasource-salesforcecrawlerconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "FilterConfiguration" : CrawlFilterConfiguration
+  "[FilterConfiguration](#cfn-bedrock-datasource-salesforcecrawlerconfiguration-filterconfiguration)" : {{CrawlFilterConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-datasource-salesforcecrawlerconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  FilterConfiguration:
-    CrawlFilterConfiguration
-
+```
+  [FilterConfiguration](#cfn-bedrock-datasource-salesforcecrawlerconfiguration-filterconfiguration): {{
+    CrawlFilterConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-datasource-salesforcecrawlerconfiguration-properties"></a>
 
-`FilterConfiguration`
-
-The configuration of filtering the Salesforce content. For example,
-configuring regular expression patterns to include or exclude certain
-content.
-
-_Required_: No
-
-_Type_: [CrawlFilterConfiguration](aws-properties-bedrock-datasource-crawlfilterconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Location
-
-SalesforceDataSourceConfiguration
+`FilterConfiguration`  <a name="cfn-bedrock-datasource-salesforcecrawlerconfiguration-filterconfiguration"></a>
+The configuration of filtering the Salesforce content. For example, configuring regular expression patterns to include or exclude certain content.
+*Required*: No
+*Type*: [CrawlFilterConfiguration](aws-properties-bedrock-datasource-crawlfilterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

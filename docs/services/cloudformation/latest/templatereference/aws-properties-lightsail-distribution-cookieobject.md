@@ -2,82 +2,57 @@
 title: "AWS::Lightsail::Distribution CookieObject"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lightsail::Distribution CookieObject
+<a name="aws-properties-lightsail-distribution-cookieobject"></a>
 
-`CookieObject` is a property of the [CacheSettings](../userguide/aws-properties-lightsail-distribution-cachesettings.md) property. It describes whether an Amazon Lightsail
-content delivery network (CDN) distribution forwards cookies to the origin and, if so,
-which ones.
+`CookieObject` is a property of the [CacheSettings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lightsail-distribution-cachesettings.html) property. It describes whether an Amazon Lightsail content delivery network (CDN) distribution forwards cookies to the origin and, if so, which ones.
 
-For the cookies that you specify, your distribution caches separate versions of the
-specified content based on the cookie values in viewer requests.
+For the cookies that you specify, your distribution caches separate versions of the specified content based on the cookie values in viewer requests.
 
 ## Syntax
+<a name="aws-properties-lightsail-distribution-cookieobject-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lightsail-distribution-cookieobject-syntax.json"></a>
 
-```json
-
+```
 {
-  "CookiesAllowList" : [ String, ... ],
-  "Option" : String
+  "[CookiesAllowList](#cfn-lightsail-distribution-cookieobject-cookiesallowlist)" : {{[ String, ... ]}},
+  "[Option](#cfn-lightsail-distribution-cookieobject-option)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lightsail-distribution-cookieobject-syntax.yaml"></a>
 
-```yaml
-
-  CookiesAllowList:
-    - String
-  Option: String
-
+```
+  [CookiesAllowList](#cfn-lightsail-distribution-cookieobject-cookiesallowlist): {{
+    - String}}
+  [Option](#cfn-lightsail-distribution-cookieobject-option): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lightsail-distribution-cookieobject-properties"></a>
 
-`CookiesAllowList`
-
+`CookiesAllowList`  <a name="cfn-lightsail-distribution-cookieobject-cookiesallowlist"></a>
 The specific cookies to forward to your distribution's origin.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Option`
-
-Specifies which cookies to forward to the distribution's origin for a cache
-behavior.
-
+`Option`  <a name="cfn-lightsail-distribution-cookieobject-option"></a>
+Specifies which cookies to forward to the distribution's origin for a cache behavior.
 Use one of the following configurations for your distribution:
-
-- **`all`** \- Forwards all cookies to your origin.
-
-- **`none`** \- Doesn’t forward cookies to your origin.
-
-- **`allow-list`** \- Forwards only the cookies that you specify using the
-`CookiesAllowList` parameter.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `none | allow-list | all`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CacheSettings
-
-HeaderObject
++ ** `all` ** - Forwards all cookies to your origin.
++ ** `none` ** - Doesn’t forward cookies to your origin.
++ ** `allow-list` ** - Forwards only the cookies that you specify using the `CookiesAllowList` parameter.
+*Required*: No
+*Type*: String
+*Allowed values*: `none | allow-list | all`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

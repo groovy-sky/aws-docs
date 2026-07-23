@@ -2,70 +2,52 @@
 title: "AWS::OpenSearchServerless::Index Parameters"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Index Parameters
+<a name="aws-properties-opensearchserverless-index-parameters"></a>
 
 Additional parameters for the k-NN algorithm.
 
 ## Syntax
+<a name="aws-properties-opensearchserverless-index-parameters-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-opensearchserverless-index-parameters-syntax.json"></a>
 
-```json
-
+```
 {
-  "EfConstruction" : Integer,
-  "M" : Integer
+  "[EfConstruction](#cfn-opensearchserverless-index-parameters-efconstruction)" : {{Integer}},
+  "[M](#cfn-opensearchserverless-index-parameters-m)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-opensearchserverless-index-parameters-syntax.yaml"></a>
 
-```yaml
-
-  EfConstruction: Integer
-  M: Integer
-
+```
+  [EfConstruction](#cfn-opensearchserverless-index-parameters-efconstruction): {{Integer}}
+  [M](#cfn-opensearchserverless-index-parameters-m): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-opensearchserverless-index-parameters-properties"></a>
 
-`EfConstruction`
-
+`EfConstruction`  <a name="cfn-opensearchserverless-index-parameters-efconstruction"></a>
 The size of the dynamic list used during k-NN graph creation.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`M`
-
+`M`  <a name="cfn-opensearchserverless-index-parameters-m"></a>
 Number of neighbors to consider during k-NN search.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `2`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Method
-
-PropertyMapping
+*Required*: No
+*Type*: Integer
+*Minimum*: `2`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

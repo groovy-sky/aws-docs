@@ -2,66 +2,51 @@
 title: "AWS::Bedrock::DataAutomationProject TranscriptConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationProject TranscriptConfiguration
+<a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration"></a>
 
 Configuration for transcript options. This option allows you to enable speaker labeling and channel labeling.
 
 ## Syntax
+<a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChannelLabeling" : ChannelLabelingConfiguration,
-  "SpeakerLabeling" : SpeakerLabelingConfiguration
+  "[ChannelLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-channellabeling)" : {{ChannelLabelingConfiguration}},
+  "[SpeakerLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-speakerlabeling)" : {{SpeakerLabelingConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ChannelLabeling:
-    ChannelLabelingConfiguration
-  SpeakerLabeling:
-    SpeakerLabelingConfiguration
-
+```
+  [ChannelLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-channellabeling): {{
+    ChannelLabelingConfiguration}}
+  [SpeakerLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-speakerlabeling): {{
+    SpeakerLabelingConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration-properties"></a>
 
-`ChannelLabeling`
-
+`ChannelLabeling`  <a name="cfn-bedrock-dataautomationproject-transcriptconfiguration-channellabeling"></a>
 Enables channel labeling. Each audio channel will be labeled with a number, and the transcript will indicate which channel is being used.
+*Required*: No
+*Type*: [ChannelLabelingConfiguration](aws-properties-bedrock-dataautomationproject-channellabelingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ChannelLabelingConfiguration](aws-properties-bedrock-dataautomationproject-channellabelingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpeakerLabeling`
-
+`SpeakerLabeling`  <a name="cfn-bedrock-dataautomationproject-transcriptconfiguration-speakerlabeling"></a>
 Enables speaker labeling. Each speaker within a transcript will recieve a number, and the transcript will note which speaker is talking.
-
-_Required_: No
-
-_Type_: [SpeakerLabelingConfiguration](aws-properties-bedrock-dataautomationproject-speakerlabelingconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-VideoBoundingBox
+*Required*: No
+*Type*: [SpeakerLabelingConfiguration](aws-properties-bedrock-dataautomationproject-speakerlabelingconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

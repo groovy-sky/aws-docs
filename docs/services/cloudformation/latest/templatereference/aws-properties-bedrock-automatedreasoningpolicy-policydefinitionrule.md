@@ -2,90 +2,64 @@
 title: "AWS::Bedrock::AutomatedReasoningPolicy PolicyDefinitionRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::AutomatedReasoningPolicy PolicyDefinitionRule
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule"></a>
 
 A rule within the policy definition that defines logical constraints.
 
 ## Syntax
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule-syntax.json"></a>
 
-```json
-
+```
 {
-  "AlternateExpression" : String,
-  "Expression" : String,
-  "Id" : String
+  "[AlternateExpression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-alternateexpression)" : {{String}},
+  "[Expression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-expression)" : {{String}},
+  "[Id](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-id)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule-syntax.yaml"></a>
 
-```yaml
-
-  AlternateExpression: String
-  Expression: String
-  Id: String
-
+```
+  [AlternateExpression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-alternateexpression): {{String}}
+  [Expression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-expression): {{String}}
+  [Id](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-id): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule-properties"></a>
 
-`AlternateExpression`
-
+`AlternateExpression`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-alternateexpression"></a>
 An alternative expression for the policy rule.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\s\S]+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\s\S]+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Expression`
-
+`Expression`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-expression"></a>
 The logical expression that defines the rule.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\s\S]+$`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\s\S]+$`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-id"></a>
 The unique identifier for the policy definition rule.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[A-Z][0-9A-Z]{11}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PolicyDefinition
-
-PolicyDefinitionType
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[A-Z][0-9A-Z]{11}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

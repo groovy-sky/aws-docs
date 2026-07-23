@@ -2,72 +2,51 @@
 title: "AWS::Macie::AllowList Tag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Macie::AllowList Tag
+<a name="aws-properties-macie-allowlist-tag"></a>
 
-Specifies a tag (key-value pair) to apply to an allow list. A _tag_ is a label that you can define and associate with AWS
-resources, including certain types of Amazon Macie resources. Each tag consists of a _tag key_ and an associated
-_tag value_. A _tag key_ is a general label that acts as a category for a more specific
-tag value. Each tag key must be unique and it can have only one tag value. A _tag value_ acts as a descriptor for a tag key. Tag keys and
-values are case sensitive. They can contain letters, numbers, spaces, or the following symbols: \_ . : / = + - @
+Specifies a tag (key-value pair) to apply to an allow list. A *tag* is a label that you can define and associate with AWS resources, including certain types of Amazon Macie resources. Each tag consists of a *tag key* and an associated *tag value*. A *tag key* is a general label that acts as a category for a more specific tag value. Each tag key must be unique and it can have only one tag value. A *tag value* acts as a descriptor for a tag key. Tag keys and values are case sensitive. They can contain letters, numbers, spaces, or the following symbols: \_ . : / = \+ - @
 
-For more information, see [Tagging \
-Macie resources](../../../macie/latest/user/tagging-resources.md) in the _Amazon Macie User Guide_.
+For more information, see [Tagging Macie resources](https://docs.aws.amazon.com/macie/latest/user/tagging-resources.html) in the *Amazon Macie User Guide*.
 
 ## Syntax
+<a name="aws-properties-macie-allowlist-tag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-macie-allowlist-tag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-macie-allowlist-tag-key)" : {{String}},
+  "[Value](#cfn-macie-allowlist-tag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-macie-allowlist-tag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-macie-allowlist-tag-key): {{String}}
+  [Value](#cfn-macie-allowlist-tag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-macie-allowlist-tag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-macie-allowlist-tag-key"></a>
 The name of the tag key. A tag key can contain up to 128 UTF-8 characters.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
-The tag value to associate with the specified tag key ( `Key`). A tag value can contain up to 256 UTF-8 characters. A tag value
-cannot be null, but it can be an empty string.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3WordsList
-
-AWS::Macie::CustomDataIdentifier
+`Value`  <a name="cfn-macie-allowlist-tag-value"></a>
+The tag value to associate with the specified tag key (`Key`). A tag value can contain up to 256 UTF-8 characters. A tag value cannot be null, but it can be an empty string.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

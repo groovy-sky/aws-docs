@@ -2,58 +2,44 @@
 title: "AWS::DataZone::PolicyGrant CreateEnvironmentProfilePolicyGrantDetail"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::PolicyGrant CreateEnvironmentProfilePolicyGrantDetail
+<a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail"></a>
 
 The details of the policy grant.
 
 ## Syntax
+<a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail-syntax.json"></a>
 
-```json
-
+```
 {
-  "DomainUnitId" : String
+  "[DomainUnitId](#cfn-datazone-policygrant-createenvironmentprofilepolicygrantdetail-domainunitid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail-syntax.yaml"></a>
 
-```yaml
-
-  DomainUnitId: String
-
+```
+  [DomainUnitId](#cfn-datazone-policygrant-createenvironmentprofilepolicygrantdetail-domainunitid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail-properties"></a>
 
-`DomainUnitId`
-
+`DomainUnitId`  <a name="cfn-datazone-policygrant-createenvironmentprofilepolicygrantdetail-domainunitid"></a>
 The ID of the domain unit.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-z0-9_\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateDomainUnitPolicyGrantDetail
-
-CreateFormTypePolicyGrantDetail
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9_\-]+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

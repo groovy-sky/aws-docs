@@ -2,145 +2,108 @@
 title: "AWS::S3::Bucket InventoryConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket InventoryConfiguration
+<a name="aws-properties-s3-bucket-inventoryconfiguration"></a>
 
-Specifies the S3 Inventory configuration for an Amazon S3 bucket. For more information, see [GET Bucket\
-inventory](../../../s3/latest/api/restbucketgetinventoryconfig.md) in the _Amazon S3 API Reference_.
+Specifies the S3 Inventory configuration for an Amazon S3 bucket. For more information, see [GET Bucket inventory](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETInventoryConfig.html) in the *Amazon S3 API Reference*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-inventoryconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-inventoryconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destination" : Destination,
-  "Enabled" : Boolean,
-  "Id" : String,
-  "IncludedObjectVersions" : String,
-  "OptionalFields" : [ String, ... ],
-  "Prefix" : String,
-  "ScheduleFrequency" : String
+  "[Destination](#cfn-s3-bucket-inventoryconfiguration-destination)" : {{Destination}},
+  "[Enabled](#cfn-s3-bucket-inventoryconfiguration-enabled)" : {{Boolean}},
+  "[Id](#cfn-s3-bucket-inventoryconfiguration-id)" : {{String}},
+  "[IncludedObjectVersions](#cfn-s3-bucket-inventoryconfiguration-includedobjectversions)" : {{String}},
+  "[OptionalFields](#cfn-s3-bucket-inventoryconfiguration-optionalfields)" : {{[ String, ... ]}},
+  "[Prefix](#cfn-s3-bucket-inventoryconfiguration-prefix)" : {{String}},
+  "[ScheduleFrequency](#cfn-s3-bucket-inventoryconfiguration-schedulefrequency)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-inventoryconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Destination:
-    Destination
-  Enabled: Boolean
-  Id: String
-  IncludedObjectVersions: String
-  OptionalFields:
-    - String
-  Prefix: String
-  ScheduleFrequency: String
-
+```
+  [Destination](#cfn-s3-bucket-inventoryconfiguration-destination): {{
+    Destination}}
+  [Enabled](#cfn-s3-bucket-inventoryconfiguration-enabled): {{Boolean}}
+  [Id](#cfn-s3-bucket-inventoryconfiguration-id): {{String}}
+  [IncludedObjectVersions](#cfn-s3-bucket-inventoryconfiguration-includedobjectversions): {{String}}
+  [OptionalFields](#cfn-s3-bucket-inventoryconfiguration-optionalfields): {{
+    - String}}
+  [Prefix](#cfn-s3-bucket-inventoryconfiguration-prefix): {{String}}
+  [ScheduleFrequency](#cfn-s3-bucket-inventoryconfiguration-schedulefrequency): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-inventoryconfiguration-properties"></a>
 
-`Destination`
-
+`Destination`  <a name="cfn-s3-bucket-inventoryconfiguration-destination"></a>
 Contains information about where to publish the inventory results.
+*Required*: Yes
+*Type*: [Destination](aws-properties-s3-bucket-destination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`Enabled`  <a name="cfn-s3-bucket-inventoryconfiguration-enabled"></a>
+Specifies whether the inventory is enabled or disabled. If set to `True`, an inventory list is generated. If set to `False`, no inventory list is generated.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [Destination](aws-properties-s3-bucket-destination.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-Specifies whether the inventory is enabled or disabled. If set to `True`, an inventory
-list is generated. If set to `False`, no inventory list is generated.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Id`
-
+`Id`  <a name="cfn-s3-bucket-inventoryconfiguration-id"></a>
 The ID used to identify the inventory configuration.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`IncludedObjectVersions`  <a name="cfn-s3-bucket-inventoryconfiguration-includedobjectversions"></a>
+Object versions to include in the inventory list. If set to `All`, the list includes all the object versions, which adds the version-related fields `VersionId`, `IsLatest`, and `DeleteMarker` to the list. If set to `Current`, the list does not contain these version-related fields.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `All | Current`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IncludedObjectVersions`
-
-Object versions to include in the inventory list. If set to `All`, the list includes all
-the object versions, which adds the version-related fields `VersionId`,
-`IsLatest`, and `DeleteMarker` to the list. If set to `Current`, the
-list does not contain these version-related fields.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `All | Current`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OptionalFields`
-
+`OptionalFields`  <a name="cfn-s3-bucket-inventoryconfiguration-optionalfields"></a>
 Contains the optional fields that are included in the inventory results.
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | ObjectLockRetainUntilDate | ObjectLockMode | ObjectLockLegalHoldStatus | IntelligentTieringAccessTier | BucketKeyStatus | ChecksumAlgorithm | ObjectAccessControlList | ObjectOwner | LifecycleExpirationDate`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | ObjectLockRetainUntilDate | ObjectLockMode | ObjectLockLegalHoldStatus | IntelligentTieringAccessTier | BucketKeyStatus | ChecksumAlgorithm | ObjectAccessControlList | ObjectOwner | LifecycleExpirationDate`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-s3-bucket-inventoryconfiguration-prefix"></a>
 Specifies the inventory filter prefix.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ScheduleFrequency`
-
+`ScheduleFrequency`  <a name="cfn-s3-bucket-inventoryconfiguration-schedulefrequency"></a>
 Specifies the schedule for generating inventory results.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `Daily | Weekly`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Daily | Weekly`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-inventoryconfiguration--examples"></a>
 
 ### Specify analytics and inventory configurations for an S3 bucket
+<a name="aws-properties-s3-bucket-inventoryconfiguration--examples--Specify_analytics_and_inventory_configurations_for_an_S3_bucket"></a>
 
-The following example specifies analytics and inventory results to be generated for an
-S3 bucket, including the format of the results and the destination bucket. The inventory
-list generates reports weekly and includes the current version of each object.
+The following example specifies analytics and inventory results to be generated for an S3 bucket, including the format of the results and the destination bucket. The inventory list generates reports weekly and includes the current version of each object.
 
 #### JSON
+<a name="aws-properties-s3-bucket-inventoryconfiguration--examples--Specify_analytics_and_inventory_configurations_for_an_S3_bucket--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "S3 Bucket with Inventory and Analytics Configurations",
@@ -204,9 +167,9 @@ list generates reports weekly and includes the current version of each object.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-inventoryconfiguration--examples--Specify_analytics_and_inventory_configurations_for_an_S3_bucket--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Description: S3 Bucket with Inventory and Analytics Configurations
 Resources:
@@ -243,11 +206,5 @@ Resources:
           Prefix: InventoryConfigurationPrefix
           ScheduleFrequency: Weekly
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IntelligentTieringConfiguration
-
-InventoryTableConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

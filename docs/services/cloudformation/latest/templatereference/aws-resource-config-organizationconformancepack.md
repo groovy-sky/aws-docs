@@ -2,188 +2,157 @@
 title: "AWS::Config::OrganizationConformancePack"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::OrganizationConformancePack
+<a name="aws-resource-config-organizationconformancepack"></a>
 
-OrganizationConformancePack deploys conformance packs across member accounts in an AWS Organizations.
-OrganizationConformancePack enables organization service access for `config-multiaccountsetup.amazonaws.com` through the `EnableAWSServiceAccess` action and
-creates a service linked role in the master account of your organization.
-The service linked role is created only when the role does not exist in the master account.
+OrganizationConformancePack deploys conformance packs across member accounts in an AWS Organizations. OrganizationConformancePack enables organization service access for `config-multiaccountsetup.amazonaws.com` through the `EnableAWSServiceAccess` action and creates a service linked role in the master account of your organization. The service linked role is created only when the role does not exist in the master account.
 
 ## Syntax
+<a name="aws-resource-config-organizationconformancepack-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-config-organizationconformancepack-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Config::OrganizationConformancePack",
   "Properties" : {
-      "ConformancePackInputParameters" : [ ConformancePackInputParameter, ... ],
-      "DeliveryS3Bucket" : String,
-      "DeliveryS3KeyPrefix" : String,
-      "ExcludedAccounts" : [ String, ... ],
-      "OrganizationConformancePackName" : String,
-      "TemplateBody" : String,
-      "TemplateS3Uri" : String
+      "[ConformancePackInputParameters](#cfn-config-organizationconformancepack-conformancepackinputparameters)" : {{[ ConformancePackInputParameter, ... ]}},
+      "[DeliveryS3Bucket](#cfn-config-organizationconformancepack-deliverys3bucket)" : {{String}},
+      "[DeliveryS3KeyPrefix](#cfn-config-organizationconformancepack-deliverys3keyprefix)" : {{String}},
+      "[ExcludedAccounts](#cfn-config-organizationconformancepack-excludedaccounts)" : {{[ String, ... ]}},
+      "[OrganizationConformancePackName](#cfn-config-organizationconformancepack-organizationconformancepackname)" : {{String}},
+      "[Tags](#cfn-config-organizationconformancepack-tags)" : {{[ Tag, ... ]}},
+      "[TemplateBody](#cfn-config-organizationconformancepack-templatebody)" : {{String}},
+      "[TemplateS3Uri](#cfn-config-organizationconformancepack-templates3uri)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-config-organizationconformancepack-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Config::OrganizationConformancePack
 Properties:
-  ConformancePackInputParameters:
-    - ConformancePackInputParameter
-  DeliveryS3Bucket: String
-  DeliveryS3KeyPrefix: String
-  ExcludedAccounts:
-    - String
-  OrganizationConformancePackName: String
-  TemplateBody: String
-  TemplateS3Uri: String
-
+  [ConformancePackInputParameters](#cfn-config-organizationconformancepack-conformancepackinputparameters): {{
+    - ConformancePackInputParameter}}
+  [DeliveryS3Bucket](#cfn-config-organizationconformancepack-deliverys3bucket): {{String}}
+  [DeliveryS3KeyPrefix](#cfn-config-organizationconformancepack-deliverys3keyprefix): {{String}}
+  [ExcludedAccounts](#cfn-config-organizationconformancepack-excludedaccounts): {{
+    - String}}
+  [OrganizationConformancePackName](#cfn-config-organizationconformancepack-organizationconformancepackname): {{String}}
+  [Tags](#cfn-config-organizationconformancepack-tags): {{
+    - Tag}}
+  [TemplateBody](#cfn-config-organizationconformancepack-templatebody): {{String}}
+  [TemplateS3Uri](#cfn-config-organizationconformancepack-templates3uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-config-organizationconformancepack-properties"></a>
 
-`ConformancePackInputParameters`
-
+`ConformancePackInputParameters`  <a name="cfn-config-organizationconformancepack-conformancepackinputparameters"></a>
 A list of `ConformancePackInputParameter` objects.
+*Required*: No
+*Type*: Array of [ConformancePackInputParameter](aws-properties-config-organizationconformancepack-conformancepackinputparameter.md)
+*Minimum*: `0`
+*Maximum*: `60`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ConformancePackInputParameter](aws-properties-config-organizationconformancepack-conformancepackinputparameter.md)
-
-_Minimum_: `0`
-
-_Maximum_: `60`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeliveryS3Bucket`
-
+`DeliveryS3Bucket`  <a name="cfn-config-organizationconformancepack-deliverys3bucket"></a>
 The name of the Amazon S3 bucket where AWS Config stores conformance pack templates.
-
-###### Note
-
 This field is optional.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeliveryS3KeyPrefix`
-
+`DeliveryS3KeyPrefix`  <a name="cfn-config-organizationconformancepack-deliverys3keyprefix"></a>
 Any folder structure you want to add to an Amazon S3 bucket.
-
-###### Note
-
 This field is optional.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludedAccounts`
-
+`ExcludedAccounts`  <a name="cfn-config-organizationconformancepack-excludedaccounts"></a>
 A comma-separated list of accounts excluded from organization conformance pack.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrganizationConformancePackName`
-
+`OrganizationConformancePackName`  <a name="cfn-config-organizationconformancepack-organizationconformancepackname"></a>
 The name you assign to an organization conformance pack.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z][-a-zA-Z0-9]*`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`Tags`  <a name="cfn-config-organizationconformancepack-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-config-organizationconformancepack-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Pattern_: `[a-zA-Z][-a-zA-Z0-9]*`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TemplateBody`
-
+`TemplateBody`  <a name="cfn-config-organizationconformancepack-templatebody"></a>
 A string containing full conformance pack template body. Structure containing the template body with a minimum length of 1 byte and a maximum length of 51,200 bytes.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `51200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `51200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TemplateS3Uri`
-
+`TemplateS3Uri`  <a name="cfn-config-organizationconformancepack-templates3uri"></a>
 Location of file containing the template body. The uri must point to the conformance pack template (max size: 300 KB).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `s3://.*`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: String
+*Pattern*: `s3://.*`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-config-organizationconformancepack-return-values"></a>
 
 ### Ref
+<a name="aws-resource-config-organizationconformancepack-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the name of organization conformance pack.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
+### Fn::GetAtt
+<a name="aws-resource-config-organizationconformancepack-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-config-organizationconformancepack-return-values-fn--getatt-fn--getatt"></a>
+
+`OrganizationConformancePackArn`  <a name="OrganizationConformancePackArn-fn::getatt"></a>
+Amazon Resource Name (ARN) of organization conformance pack.
 
 ## Examples
+<a name="aws-resource-config-organizationconformancepack--examples"></a>
 
 ### Organization Conformance Pack
+<a name="aws-resource-config-organizationconformancepack--examples--Organization_Conformance_Pack"></a>
 
 The following example creates an organization conformance pack.
 
 #### JSON
+<a name="aws-resource-config-organizationconformancepack--examples--Organization_Conformance_Pack--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "OrganizationConformancePack": {
@@ -196,13 +165,12 @@ The following example creates an organization conformance pack.
          }
      }
 }
-
 ```
 
 #### YAML
+<a name="aws-resource-config-organizationconformancepack--examples--Organization_Conformance_Pack--yaml"></a>
 
-```yaml
-
+```
 ---
 Resources:
     OrganizationConformancePack:
@@ -211,13 +179,6 @@ Resources:
             OrganizationConformancePackName: OrganizationConformancePackName
             DeliveryS3Bucket: DeliveryS3Bucket
             TemplateS3Uri: s3://bucketname/prefix
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OrganizationManagedRuleMetadata
-
-ConformancePackInputParameter
 
 All content copied from https://docs.aws.amazon.com/.

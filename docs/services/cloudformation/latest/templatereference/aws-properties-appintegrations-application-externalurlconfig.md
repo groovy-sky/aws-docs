@@ -2,75 +2,55 @@
 title: "AWS::AppIntegrations::Application ExternalUrlConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application ExternalUrlConfig
+<a name="aws-properties-appintegrations-application-externalurlconfig"></a>
 
 The external URL source for the application.
 
 ## Syntax
+<a name="aws-properties-appintegrations-application-externalurlconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appintegrations-application-externalurlconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessUrl" : String,
-  "ApprovedOrigins" : [ String, ... ]
+  "[AccessUrl](#cfn-appintegrations-application-externalurlconfig-accessurl)" : {{String}},
+  "[ApprovedOrigins](#cfn-appintegrations-application-externalurlconfig-approvedorigins)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appintegrations-application-externalurlconfig-syntax.yaml"></a>
 
-```yaml
-
-  AccessUrl: String
-  ApprovedOrigins:
-    - String
-
+```
+  [AccessUrl](#cfn-appintegrations-application-externalurlconfig-accessurl): {{String}}
+  [ApprovedOrigins](#cfn-appintegrations-application-externalurlconfig-approvedorigins): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-appintegrations-application-externalurlconfig-properties"></a>
 
-`AccessUrl`
-
+`AccessUrl`  <a name="cfn-appintegrations-application-externalurlconfig-accessurl"></a>
 The URL to access the application.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^\w+\:\/\/.*$`
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\w+\:\/\/.*$`
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ApprovedOrigins`
-
+`ApprovedOrigins`  <a name="cfn-appintegrations-application-externalurlconfig-approvedorigins"></a>
 Additional URLs to allow list if different than the access URL.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ContactHandling
-
-IframeConfig
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

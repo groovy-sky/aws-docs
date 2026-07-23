@@ -2,56 +2,43 @@
 title: "AWS::RUM::AppMonitor CustomEvents"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RUM::AppMonitor CustomEvents
+<a name="aws-properties-rum-appmonitor-customevents"></a>
 
 This structure specifies whether this app monitor allows the web client to define and send custom events.
 
 ## Syntax
+<a name="aws-properties-rum-appmonitor-customevents-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-rum-appmonitor-customevents-syntax.json"></a>
 
-```json
-
+```
 {
-  "Status" : String
+  "[Status](#cfn-rum-appmonitor-customevents-status)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-rum-appmonitor-customevents-syntax.yaml"></a>
 
-```yaml
-
-  Status: String
-
+```
+  [Status](#cfn-rum-appmonitor-customevents-status): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-rum-appmonitor-customevents-properties"></a>
 
-`Status`
-
+`Status`  <a name="cfn-rum-appmonitor-customevents-status"></a>
 Set this to `ENABLED` to allow the web client to send custom events for this app monitor.
-
 Valid values are `ENABLED` and `DISABLED`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AppMonitorConfiguration
-
-DeobfuscationConfiguration
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,126 +2,90 @@
 title: "AWS::ODB::CloudAutonomousVmCluster MaintenanceWindow"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudAutonomousVmCluster MaintenanceWindow
+<a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow"></a>
 
 The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
 
 ## Syntax
+<a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow-syntax.json"></a>
 
-```json
-
+```
 {
-  "DaysOfWeek" : [ String, ... ],
-  "HoursOfDay" : [ Integer, ... ],
-  "LeadTimeInWeeks" : Integer,
-  "Months" : [ String, ... ],
-  "Preference" : String,
-  "WeeksOfMonth" : [ Integer, ... ]
+  "[DaysOfWeek](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-daysofweek)" : {{[ String, ... ]}},
+  "[HoursOfDay](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-hoursofday)" : {{[ Integer, ... ]}},
+  "[LeadTimeInWeeks](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-leadtimeinweeks)" : {{Integer}},
+  "[Months](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-months)" : {{[ String, ... ]}},
+  "[Preference](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-preference)" : {{String}},
+  "[WeeksOfMonth](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-weeksofmonth)" : {{[ Integer, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow-syntax.yaml"></a>
 
-```yaml
-
-  DaysOfWeek:
-    - String
-  HoursOfDay:
-    - Integer
-  LeadTimeInWeeks: Integer
-  Months:
-    - String
-  Preference: String
-  WeeksOfMonth:
-    - Integer
-
+```
+  [DaysOfWeek](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-daysofweek): {{
+    - String}}
+  [HoursOfDay](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-hoursofday): {{
+    - Integer}}
+  [LeadTimeInWeeks](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-leadtimeinweeks): {{Integer}}
+  [Months](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-months): {{
+    - String}}
+  [Preference](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-preference): {{String}}
+  [WeeksOfMonth](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-weeksofmonth): {{
+    - Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow-properties"></a>
 
-`DaysOfWeek`
-
+`DaysOfWeek`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow-daysofweek"></a>
 The days of the week when maintenance can be performed.
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY | SUNDAY`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY | SUNDAY`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`HoursOfDay`
-
+`HoursOfDay`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow-hoursofday"></a>
 The hours of the day when maintenance can be performed.
+*Required*: No
+*Type*: Array of Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LeadTimeInWeeks`
-
+`LeadTimeInWeeks`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow-leadtimeinweeks"></a>
 The lead time in weeks before the maintenance window.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `4`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `4`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Months`
-
+`Months`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow-months"></a>
 The months when maintenance can be performed.
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `JANUARY | FEBRUARY | MARCH | APRIL | MAY | JUNE | JULY | AUGUST | SEPTEMBER | OCTOBER | NOVEMBER | DECEMBER`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `JANUARY | FEBRUARY | MARCH | APRIL | MAY | JUNE | JULY | AUGUST | SEPTEMBER | OCTOBER | NOVEMBER | DECEMBER`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Preference`
-
+`Preference`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow-preference"></a>
 The preference for the maintenance window scheduling.
+*Required*: No
+*Type*: String
+*Allowed values*: `NO_PREFERENCE | CUSTOM_PREFERENCE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NO_PREFERENCE | CUSTOM_PREFERENCE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`WeeksOfMonth`
-
+`WeeksOfMonth`  <a name="cfn-odb-cloudautonomousvmcluster-maintenancewindow-weeksofmonth"></a>
 The weeks of the month when maintenance can be performed.
-
-_Required_: No
-
-_Type_: Array of Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IamRole
-
-Tag
+*Required*: No
+*Type*: Array of Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

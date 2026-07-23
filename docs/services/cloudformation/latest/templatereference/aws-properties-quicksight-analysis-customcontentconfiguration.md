@@ -2,97 +2,70 @@
 title: "AWS::QuickSight::Analysis CustomContentConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis CustomContentConfiguration
+<a name="aws-properties-quicksight-analysis-customcontentconfiguration"></a>
 
 The configuration of a `CustomContentVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-customcontentconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-customcontentconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ContentType" : String,
-  "ContentUrl" : String,
-  "ImageScaling" : String,
-  "Interactions" : VisualInteractionOptions
+  "[ContentType](#cfn-quicksight-analysis-customcontentconfiguration-contenttype)" : {{String}},
+  "[ContentUrl](#cfn-quicksight-analysis-customcontentconfiguration-contenturl)" : {{String}},
+  "[ImageScaling](#cfn-quicksight-analysis-customcontentconfiguration-imagescaling)" : {{String}},
+  "[Interactions](#cfn-quicksight-analysis-customcontentconfiguration-interactions)" : {{VisualInteractionOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-customcontentconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ContentType: String
-  ContentUrl: String
-  ImageScaling: String
-  Interactions:
-    VisualInteractionOptions
-
+```
+  [ContentType](#cfn-quicksight-analysis-customcontentconfiguration-contenttype): {{String}}
+  [ContentUrl](#cfn-quicksight-analysis-customcontentconfiguration-contenturl): {{String}}
+  [ImageScaling](#cfn-quicksight-analysis-customcontentconfiguration-imagescaling): {{String}}
+  [Interactions](#cfn-quicksight-analysis-customcontentconfiguration-interactions): {{
+    VisualInteractionOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-customcontentconfiguration-properties"></a>
 
-`ContentType`
-
+`ContentType`  <a name="cfn-quicksight-analysis-customcontentconfiguration-contenttype"></a>
 The content type of the custom content visual. You can use this to have the visual render as an image.
+*Required*: No
+*Type*: String
+*Allowed values*: `IMAGE | OTHER_EMBEDDED_CONTENT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `IMAGE | OTHER_EMBEDDED_CONTENT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContentUrl`
-
+`ContentUrl`  <a name="cfn-quicksight-analysis-customcontentconfiguration-contenturl"></a>
 The input URL that links to the custom content that you want in the custom visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ImageScaling`
-
+`ImageScaling`  <a name="cfn-quicksight-analysis-customcontentconfiguration-imagescaling"></a>
 The sizing options for the size of the custom content visual. This structure is required when the `ContentType` of the visual is `'IMAGE'`.
+*Required*: No
+*Type*: String
+*Allowed values*: `FIT_TO_HEIGHT | FIT_TO_WIDTH | DO_NOT_SCALE | SCALE_TO_VISUAL`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `FIT_TO_HEIGHT | FIT_TO_WIDTH | DO_NOT_SCALE | SCALE_TO_VISUAL`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Interactions`
-
+`Interactions`  <a name="cfn-quicksight-analysis-customcontentconfiguration-interactions"></a>
 The general visual interactions setup for a visual.
-
-_Required_: No
-
-_Type_: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomColor
-
-CustomContentVisual
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-analysis-visualinteractionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,92 +2,69 @@
 title: "AWS::QuickSight::Dashboard KPIConditionalFormattingOption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard KPIConditionalFormattingOption
+<a name="aws-properties-quicksight-dashboard-kpiconditionalformattingoption"></a>
 
 The conditional formatting options of a KPI visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-kpiconditionalformattingoption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-kpiconditionalformattingoption-syntax.json"></a>
 
-```json
-
+```
 {
-  "ActualValue" : KPIActualValueConditionalFormatting,
-  "ComparisonValue" : KPIComparisonValueConditionalFormatting,
-  "PrimaryValue" : KPIPrimaryValueConditionalFormatting,
-  "ProgressBar" : KPIProgressBarConditionalFormatting
+  "[ActualValue](#cfn-quicksight-dashboard-kpiconditionalformattingoption-actualvalue)" : {{KPIActualValueConditionalFormatting}},
+  "[ComparisonValue](#cfn-quicksight-dashboard-kpiconditionalformattingoption-comparisonvalue)" : {{KPIComparisonValueConditionalFormatting}},
+  "[PrimaryValue](#cfn-quicksight-dashboard-kpiconditionalformattingoption-primaryvalue)" : {{KPIPrimaryValueConditionalFormatting}},
+  "[ProgressBar](#cfn-quicksight-dashboard-kpiconditionalformattingoption-progressbar)" : {{KPIProgressBarConditionalFormatting}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-kpiconditionalformattingoption-syntax.yaml"></a>
 
-```yaml
-
-  ActualValue:
-    KPIActualValueConditionalFormatting
-  ComparisonValue:
-    KPIComparisonValueConditionalFormatting
-  PrimaryValue:
-    KPIPrimaryValueConditionalFormatting
-  ProgressBar:
-    KPIProgressBarConditionalFormatting
-
+```
+  [ActualValue](#cfn-quicksight-dashboard-kpiconditionalformattingoption-actualvalue): {{
+    KPIActualValueConditionalFormatting}}
+  [ComparisonValue](#cfn-quicksight-dashboard-kpiconditionalformattingoption-comparisonvalue): {{
+    KPIComparisonValueConditionalFormatting}}
+  [PrimaryValue](#cfn-quicksight-dashboard-kpiconditionalformattingoption-primaryvalue): {{
+    KPIPrimaryValueConditionalFormatting}}
+  [ProgressBar](#cfn-quicksight-dashboard-kpiconditionalformattingoption-progressbar): {{
+    KPIProgressBarConditionalFormatting}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-kpiconditionalformattingoption-properties"></a>
 
-`ActualValue`
-
+`ActualValue`  <a name="cfn-quicksight-dashboard-kpiconditionalformattingoption-actualvalue"></a>
 The conditional formatting for the actual value of a KPI visual.
+*Required*: No
+*Type*: [KPIActualValueConditionalFormatting](aws-properties-quicksight-dashboard-kpiactualvalueconditionalformatting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KPIActualValueConditionalFormatting](aws-properties-quicksight-dashboard-kpiactualvalueconditionalformatting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ComparisonValue`
-
+`ComparisonValue`  <a name="cfn-quicksight-dashboard-kpiconditionalformattingoption-comparisonvalue"></a>
 The conditional formatting for the comparison value of a KPI visual.
+*Required*: No
+*Type*: [KPIComparisonValueConditionalFormatting](aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KPIComparisonValueConditionalFormatting](aws-properties-quicksight-dashboard-kpicomparisonvalueconditionalformatting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PrimaryValue`
-
+`PrimaryValue`  <a name="cfn-quicksight-dashboard-kpiconditionalformattingoption-primaryvalue"></a>
 The conditional formatting for the primary value of a KPI visual.
+*Required*: No
+*Type*: [KPIPrimaryValueConditionalFormatting](aws-properties-quicksight-dashboard-kpiprimaryvalueconditionalformatting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [KPIPrimaryValueConditionalFormatting](aws-properties-quicksight-dashboard-kpiprimaryvalueconditionalformatting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProgressBar`
-
+`ProgressBar`  <a name="cfn-quicksight-dashboard-kpiconditionalformattingoption-progressbar"></a>
 The conditional formatting for the progress bar of a KPI visual.
-
-_Required_: No
-
-_Type_: [KPIProgressBarConditionalFormatting](aws-properties-quicksight-dashboard-kpiprogressbarconditionalformatting.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KPIConditionalFormatting
-
-KPIConfiguration
+*Required*: No
+*Type*: [KPIProgressBarConditionalFormatting](aws-properties-quicksight-dashboard-kpiprogressbarconditionalformatting.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

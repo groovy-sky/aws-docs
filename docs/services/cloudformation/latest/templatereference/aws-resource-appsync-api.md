@@ -2,145 +2,113 @@
 title: "AWS::AppSync::Api"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::Api
+<a name="aws-resource-appsync-api"></a>
 
-The `AWS::AppSync::Api` resource creates an AWS AppSync API that
-you can use for an AWS AppSync API with your preferred configuration, such as an
-Event API that provides real-time message publishing and message subscriptions over
-WebSockets.
+The `AWS::AppSync::Api` resource creates an AWS AppSync API that you can use for an AWS AppSync API with your preferred configuration, such as an Event API that provides real-time message publishing and message subscriptions over WebSockets.
 
 ## Syntax
+<a name="aws-resource-appsync-api-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-appsync-api-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppSync::Api",
   "Properties" : {
-      "EventConfig" : EventConfig,
-      "Name" : String,
-      "OwnerContact" : String,
-      "Tags" : [ Tag, ... ]
+      "[EventConfig](#cfn-appsync-api-eventconfig)" : {{EventConfig}},
+      "[Name](#cfn-appsync-api-name)" : {{String}},
+      "[OwnerContact](#cfn-appsync-api-ownercontact)" : {{String}},
+      "[Tags](#cfn-appsync-api-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-appsync-api-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppSync::Api
 Properties:
-  EventConfig:
-    EventConfig
-  Name: String
-  OwnerContact: String
-  Tags:
-    - Tag
-
+  [EventConfig](#cfn-appsync-api-eventconfig): {{
+    EventConfig}}
+  [Name](#cfn-appsync-api-name): {{String}}
+  [OwnerContact](#cfn-appsync-api-ownercontact): {{String}}
+  [Tags](#cfn-appsync-api-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-appsync-api-properties"></a>
 
-`EventConfig`
+`EventConfig`  <a name="cfn-appsync-api-eventconfig"></a>
+Describes the authorization configuration for connections, message publishing, message subscriptions, and logging for an Event API.
+*Required*: No
+*Type*: [EventConfig](aws-properties-appsync-api-eventconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Describes the authorization configuration for connections, message publishing, message
-subscriptions, and logging for an Event API.
-
-_Required_: No
-
-_Type_: [EventConfig](aws-properties-appsync-api-eventconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-appsync-api-name"></a>
 The name of the `Api`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[A-Za-z0-9_\-\ ]+`
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9_\-\ ]+`
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OwnerContact`
-
+`OwnerContact`  <a name="cfn-appsync-api-ownercontact"></a>
 The owner contact information for an API resource.
-
 This field accepts any string input with a length of 0 - 256 characters.
+*Required*: No
+*Type*: String
+*Pattern*: `[A-Za-z0-9_\-\ \.]+`
+*Minimum*: `1`
+*Maximum*: `250`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9_\-\ \.]+`
-
-_Minimum_: `1`
-
-_Maximum_: `250`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-appsync-api-tags"></a>
 A set of tags (key-value pairs) for this API.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-appsync-api-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-appsync-api-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-appsync-api-return-values"></a>
 
 ### Ref
+<a name="aws-resource-appsync-api-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns The Amazon Resource Name (ARN) of the AWS AppSync Api. For example:
 
-`arn:aws:appsync:us-east-1:123456789012:apis/eventapiId`
+ `arn:aws:appsync:us-east-1:123456789012:apis/eventapiId`
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-appsync-api-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ApiArn`
+####
+<a name="aws-resource-appsync-api-return-values-fn--getatt-fn--getatt"></a>
 
+`ApiArn`  <a name="ApiArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the AWS AppSync Api.
 
-`ApiId`
-
+`ApiId`  <a name="ApiId-fn::getatt"></a>
 The unique identifier for the AWS AppSync Api generated by the service.
 
-`Dns.Http`
-
+`Dns.Http`  <a name="Dns.Http-fn::getatt"></a>
 The domain name of the Api's HTTP endpoint.
 
-`Dns.Realtime`
-
+`Dns.Realtime`  <a name="Dns.Realtime-fn::getatt"></a>
 The domain name of the Api's real-time endpoint.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS AppSync
-
-AuthMode
 
 All content copied from https://docs.aws.amazon.com/.

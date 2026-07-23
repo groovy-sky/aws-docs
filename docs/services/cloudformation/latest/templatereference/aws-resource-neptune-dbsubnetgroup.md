@@ -2,105 +2,82 @@
 title: "AWS::Neptune::DBSubnetGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Neptune::DBSubnetGroup
+<a name="aws-resource-neptune-dbsubnetgroup"></a>
 
-The `AWS::Neptune::DBSubnetGroup` type creates an Amazon Neptune
-DB subnet group. Subnet groups must contain at least two subnets in two different
-Availability Zones in the same AWS Region.
+The `AWS::Neptune::DBSubnetGroup` type creates an Amazon Neptune DB subnet group. Subnet groups must contain at least two subnets in two different Availability Zones in the same AWS Region.
 
 ## Syntax
+<a name="aws-resource-neptune-dbsubnetgroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-neptune-dbsubnetgroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Neptune::DBSubnetGroup",
   "Properties" : {
-      "DBSubnetGroupDescription" : String,
-      "DBSubnetGroupName" : String,
-      "SubnetIds" : [ String, ... ],
-      "Tags" : [ Tag, ... ]
+      "[DBSubnetGroupDescription](#cfn-neptune-dbsubnetgroup-dbsubnetgroupdescription)" : {{String}},
+      "[DBSubnetGroupName](#cfn-neptune-dbsubnetgroup-dbsubnetgroupname)" : {{String}},
+      "[SubnetIds](#cfn-neptune-dbsubnetgroup-subnetids)" : {{[ String, ... ]}},
+      "[Tags](#cfn-neptune-dbsubnetgroup-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-neptune-dbsubnetgroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Neptune::DBSubnetGroup
 Properties:
-  DBSubnetGroupDescription: String
-  DBSubnetGroupName: String
-  SubnetIds:
-    - String
-  Tags:
-    - Tag
-
+  [DBSubnetGroupDescription](#cfn-neptune-dbsubnetgroup-dbsubnetgroupdescription): {{String}}
+  [DBSubnetGroupName](#cfn-neptune-dbsubnetgroup-dbsubnetgroupname): {{String}}
+  [SubnetIds](#cfn-neptune-dbsubnetgroup-subnetids): {{
+    - String}}
+  [Tags](#cfn-neptune-dbsubnetgroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-neptune-dbsubnetgroup-properties"></a>
 
-`DBSubnetGroupDescription`
-
+`DBSubnetGroupDescription`  <a name="cfn-neptune-dbsubnetgroup-dbsubnetgroupdescription"></a>
 Provides the description of the DB subnet group.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DBSubnetGroupName`
-
+`DBSubnetGroupName`  <a name="cfn-neptune-dbsubnetgroup-dbsubnetgroupname"></a>
 The name of the DB subnet group.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-neptune-dbsubnetgroup-subnetids"></a>
 The Amazon EC2 subnet IDs for the DB subnet group.
+*Required*: Yes
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-neptune-dbsubnetgroup-tags"></a>
 The tags that you want to attach to the DB subnet group.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-neptune-dbsubnetgroup-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-neptune-dbsubnetgroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-neptune-dbsubnetgroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-neptune-dbsubnetgroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 All content copied from https://docs.aws.amazon.com/.

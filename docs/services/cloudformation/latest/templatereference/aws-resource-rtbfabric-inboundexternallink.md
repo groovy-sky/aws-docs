@@ -2,132 +2,106 @@
 title: "AWS::RTBFabric::InboundExternalLink"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::InboundExternalLink
+<a name="aws-resource-rtbfabric-inboundexternallink"></a>
 
-The `AWS::RTBFabric::InboundExternalLink` resource Property description not available. for RTBFabric.
+<a name="aws-resource-rtbfabric-inboundexternallink-description"></a>The `AWS::RTBFabric::InboundExternalLink` resource Property description not available. for RTBFabric.
 
 ## Syntax
+<a name="aws-resource-rtbfabric-inboundexternallink-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-rtbfabric-inboundexternallink-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::RTBFabric::InboundExternalLink",
   "Properties" : {
-      "GatewayId" : String,
-      "LinkAttributes" : LinkAttributes,
-      "LinkLogSettings" : LinkLogSettings,
-      "Tags" : [ Tag, ... ]
+      "[GatewayId](#cfn-rtbfabric-inboundexternallink-gatewayid)" : {{String}},
+      "[LinkAttributes](#cfn-rtbfabric-inboundexternallink-linkattributes)" : {{LinkAttributes}},
+      "[LinkLogSettings](#cfn-rtbfabric-inboundexternallink-linklogsettings)" : {{LinkLogSettings}},
+      "[Tags](#cfn-rtbfabric-inboundexternallink-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-rtbfabric-inboundexternallink-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::RTBFabric::InboundExternalLink
 Properties:
-  GatewayId: String
-  LinkAttributes:
-    LinkAttributes
-  LinkLogSettings:
-    LinkLogSettings
-  Tags:
-    - Tag
-
+  [GatewayId](#cfn-rtbfabric-inboundexternallink-gatewayid): {{String}}
+  [LinkAttributes](#cfn-rtbfabric-inboundexternallink-linkattributes): {{
+    LinkAttributes}}
+  [LinkLogSettings](#cfn-rtbfabric-inboundexternallink-linklogsettings): {{
+    LinkLogSettings}}
+  [Tags](#cfn-rtbfabric-inboundexternallink-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-rtbfabric-inboundexternallink-properties"></a>
 
-`GatewayId`
-
+`GatewayId`  <a name="cfn-rtbfabric-inboundexternallink-gatewayid"></a>
 Property description not available.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^rtb-gw-[a-z0-9-]{1,25}$`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^rtb-gw-[a-z0-9-]{1,25}$`
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LinkAttributes`
-
+`LinkAttributes`  <a name="cfn-rtbfabric-inboundexternallink-linkattributes"></a>
 Property description not available.
+*Required*: No
+*Type*: [LinkAttributes](aws-properties-rtbfabric-inboundexternallink-linkattributes.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: [LinkAttributes](aws-properties-rtbfabric-inboundexternallink-linkattributes.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`LinkLogSettings`
-
+`LinkLogSettings`  <a name="cfn-rtbfabric-inboundexternallink-linklogsettings"></a>
 Property description not available.
+*Required*: Yes
+*Type*: [LinkLogSettings](aws-properties-rtbfabric-inboundexternallink-linklogsettings.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: Yes
-
-_Type_: [LinkLogSettings](aws-properties-rtbfabric-inboundexternallink-linklogsettings.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-rtbfabric-inboundexternallink-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-rtbfabric-inboundexternallink-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rtbfabric-inboundexternallink-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-rtbfabric-inboundexternallink-return-values"></a>
 
 ### Ref
+<a name="aws-resource-rtbfabric-inboundexternallink-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-rtbfabric-inboundexternallink-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-rtbfabric-inboundexternallink-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 Property description not available.
 
-`CreatedTimestamp`
-
+`CreatedTimestamp`  <a name="CreatedTimestamp-fn::getatt"></a>
 Property description not available.
 
-`DomainName`
-
+`DomainName`  <a name="DomainName-fn::getatt"></a>
 Property description not available.
 
-`LinkId`
-
+`LinkId`  <a name="LinkId-fn::getatt"></a>
 Property description not available.
 
-`LinkStatus`
-
+`LinkStatus`  <a name="LinkStatus-fn::getatt"></a>
 Property description not available.
 
-`UpdatedTimestamp`
-
+`UpdatedTimestamp`  <a name="UpdatedTimestamp-fn::getatt"></a>
 Property description not available.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS RTB Fabric
-
-ApplicationLogs
 
 All content copied from https://docs.aws.amazon.com/.

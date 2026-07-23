@@ -2,63 +2,56 @@
 title: "AWS::S3::Bucket CorsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket CorsConfiguration
+<a name="aws-properties-s3-bucket-corsconfiguration"></a>
 
-Describes the cross-origin access configuration for objects in an Amazon S3 bucket. For more information,
-see [Enabling Cross-Origin Resource\
-Sharing](../../../s3/latest/dev/cors.md) in the _Amazon S3 User Guide_.
+Describes the cross-origin access configuration for objects in an Amazon S3 bucket. For more information, see [Enabling Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) in the *Amazon S3 User Guide*.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-corsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-corsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CorsRules" : [ CorsRule, ... ]
+  "[CorsRules](#cfn-s3-bucket-corsconfiguration-corsrules)" : {{[ CorsRule, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-corsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CorsRules:
-    - CorsRule
-
+```
+  [CorsRules](#cfn-s3-bucket-corsconfiguration-corsrules): {{
+    - CorsRule}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-corsconfiguration-properties"></a>
 
-`CorsRules`
-
-A set of origins and methods (cross-origin access that you want to allow). You can add up to 100
-rules to the configuration.
-
-_Required_: Yes
-
-_Type_: Array of [CorsRule](aws-properties-s3-bucket-corsrule.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`CorsRules`  <a name="cfn-s3-bucket-corsconfiguration-corsrules"></a>
+A set of origins and methods (cross-origin access that you want to allow). You can add up to 100 rules to the configuration.
+*Required*: Yes
+*Type*: Array of [CorsRule](aws-properties-s3-bucket-corsrule.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
+<a name="aws-properties-s3-bucket-corsconfiguration--examples"></a>
 
 ### Enable cross-origin resource sharing
+<a name="aws-properties-s3-bucket-corsconfiguration--examples--Enable_cross-origin_resource_sharing"></a>
 
-The following example template shows a public S3 bucket with two cross-origin resource
-sharing rules.
+The following example template shows a public S3 bucket with two cross-origin resource sharing rules.
 
 #### JSON
+<a name="aws-properties-s3-bucket-corsconfiguration--examples--Enable_cross-origin_resource_sharing--json"></a>
 
-```json
-
+```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -120,9 +113,9 @@ sharing rules.
 ```
 
 #### YAML
+<a name="aws-properties-s3-bucket-corsconfiguration--examples--Enable_cross-origin_resource_sharing--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -159,11 +152,5 @@ Outputs:
     Value: !Ref S3Bucket
     Description: Name of the sample Amazon S3 bucket with CORS enabled.
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BucketEncryption
-
-CorsRule
 
 All content copied from https://docs.aws.amazon.com/.

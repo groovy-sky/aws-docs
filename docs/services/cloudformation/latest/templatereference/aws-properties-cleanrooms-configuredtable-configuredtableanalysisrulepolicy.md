@@ -2,53 +2,42 @@
 title: "AWS::CleanRooms::ConfiguredTable ConfiguredTableAnalysisRulePolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable ConfiguredTableAnalysisRulePolicy
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicy"></a>
 
 Controls on the query specifications that can be run on a configured table.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "V1" : ConfiguredTableAnalysisRulePolicyV1
+  "[V1](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-v1)" : {{ConfiguredTableAnalysisRulePolicyV1}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-syntax.yaml"></a>
 
-```yaml
-
-  V1:
-    ConfiguredTableAnalysisRulePolicyV1
-
+```
+  [V1](#cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-v1): {{
+    ConfiguredTableAnalysisRulePolicyV1}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-properties"></a>
 
-`V1`
-
+`V1`  <a name="cfn-cleanrooms-configuredtable-configuredtableanalysisrulepolicy-v1"></a>
 Controls on the query specifications that can be run on a configured table.
-
-_Required_: Yes
-
-_Type_: [ConfiguredTableAnalysisRulePolicyV1](aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AthenaTableReference
-
-ConfiguredTableAnalysisRulePolicyV1
+*Required*: Yes
+*Type*: [ConfiguredTableAnalysisRulePolicyV1](aws-properties-cleanrooms-configuredtable-configuredtableanalysisrulepolicyv1.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

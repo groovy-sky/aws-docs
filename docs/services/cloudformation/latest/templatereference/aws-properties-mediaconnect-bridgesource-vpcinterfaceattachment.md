@@ -2,52 +2,41 @@
 title: "AWS::MediaConnect::BridgeSource VpcInterfaceAttachment"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::BridgeSource VpcInterfaceAttachment
+<a name="aws-properties-mediaconnect-bridgesource-vpcinterfaceattachment"></a>
 
-The settings for attaching a VPC interface to an resource.
+ The settings for attaching a VPC interface to an resource.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-bridgesource-vpcinterfaceattachment-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-bridgesource-vpcinterfaceattachment-syntax.json"></a>
 
-```json
-
+```
 {
-  "VpcInterfaceName" : String
+  "[VpcInterfaceName](#cfn-mediaconnect-bridgesource-vpcinterfaceattachment-vpcinterfacename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-bridgesource-vpcinterfaceattachment-syntax.yaml"></a>
 
-```yaml
-
-  VpcInterfaceName: String
-
+```
+  [VpcInterfaceName](#cfn-mediaconnect-bridgesource-vpcinterfaceattachment-vpcinterfacename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-bridgesource-vpcinterfaceattachment-properties"></a>
 
-`VpcInterfaceName`
-
-The name of the VPC interface to use for this resource.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MulticastSourceSettings
-
-AWS::MediaConnect::Flow
+`VpcInterfaceName`  <a name="cfn-mediaconnect-bridgesource-vpcinterfaceattachment-vpcinterfacename"></a>
+ The name of the VPC interface to use for this resource.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

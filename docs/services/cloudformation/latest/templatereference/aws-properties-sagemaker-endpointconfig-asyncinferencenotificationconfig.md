@@ -2,88 +2,61 @@
 title: "AWS::SageMaker::EndpointConfig AsyncInferenceNotificationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::EndpointConfig AsyncInferenceNotificationConfig
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig"></a>
 
 Specifies the configuration for notifications of inference results for asynchronous inference.
 
 ## Syntax
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ErrorTopic" : String,
-  "IncludeInferenceResponseIn" : [ String, ... ],
-  "SuccessTopic" : String
+  "[ErrorTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic)" : {{String}},
+  "[IncludeInferenceResponseIn](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-includeinferenceresponsein)" : {{[ String, ... ]}},
+  "[SuccessTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-successtopic)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig-syntax.yaml"></a>
 
-```yaml
-
-  ErrorTopic: String
-  IncludeInferenceResponseIn:
-    - String
-  SuccessTopic: String
-
+```
+  [ErrorTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic): {{String}}
+  [IncludeInferenceResponseIn](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-includeinferenceresponsein): {{
+    - String}}
+  [SuccessTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-successtopic): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig-properties"></a>
 
-`ErrorTopic`
+`ErrorTopic`  <a name="cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic"></a>
+Amazon SNS topic to post a notification to when an inference fails. If no topic is provided, no notification is sent on failure.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-Amazon SNS topic to post a notification to when an inference fails. If no topic is provided, no notification is
-sent on failure.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`IncludeInferenceResponseIn`
-
+`IncludeInferenceResponseIn`  <a name="cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-includeinferenceresponsein"></a>
 The Amazon SNS topics where you want the inference response to be included.
+The inference response is included only if the response size is less than or equal to 128 KB.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `2`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-###### Note
-
-The inference response is included only if the response size is less than or equal
-to 128 KB.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `2`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SuccessTopic`
-
-Amazon SNS topic to post a notification to when an inference completes successfully. If no topic is provided, no
-notification is sent on success.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AsyncInferenceConfig
-
-AsyncInferenceOutputConfig
+`SuccessTopic`  <a name="cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-successtopic"></a>
+Amazon SNS topic to post a notification to when an inference completes successfully. If no topic is provided, no notification is sent on success.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

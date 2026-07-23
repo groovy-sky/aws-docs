@@ -3,21 +3,15 @@ title: "Example: Handling binary type attributes using the AWS SDK for .NET low-
 ---
 
 # Example: Handling binary type attributes using the AWS SDK for .NET low-level API
+<a name="LowLevelDotNetBinaryTypeExample"></a>
 
-The following C# code example illustrates the handling of binary type attributes. The
-example adds an item to the `Reply` table. The item includes a binary type
-attribute ( `ExtendedMessage`) that stores compressed data. The example then
-retrieves the item and prints all the attribute values. For illustration, the example uses the
-`GZipStream` class to compress a sample stream and assigns it to the
-`ExtendedMessage` attribute, and decompresses it when printing the attribute
-value.
+The following C\# code example illustrates the handling of binary type attributes. The example adds an item to the `Reply` table. The item includes a binary type attribute (`ExtendedMessage`) that stores compressed data. The example then retrieves the item and prints all the attribute values. For illustration, the example uses the `GZipStream` class to compress a sample stream and assigns it to the `ExtendedMessage` attribute, and decompresses it when printing the attribute value.
 
-For step-by-step instructions for testing the following example, see [.NET code examples](codesamples-dotnet.md).
+For step-by-step instructions for testing the following example, see [.NET code examples](CodeSamples.DotNet.md).
 
-###### Example
+**Example**
 
-```csharp
-
+```
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -164,13 +158,6 @@ namespace com.amazonaws.codesamples
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Example: Batch operations - .NET low-level API
-
-Working with indexes
 
 All content copied from https://docs.aws.amazon.com/.

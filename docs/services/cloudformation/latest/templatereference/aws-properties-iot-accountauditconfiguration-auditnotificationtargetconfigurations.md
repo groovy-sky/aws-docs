@@ -2,53 +2,42 @@
 title: "AWS::IoT::AccountAuditConfiguration AuditNotificationTargetConfigurations"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::AccountAuditConfiguration AuditNotificationTargetConfigurations
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations"></a>
 
 The configuration of the audit notification target.
 
 ## Syntax
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations-syntax.json"></a>
 
-```json
-
+```
 {
-  "Sns" : AuditNotificationTarget
+  "[Sns](#cfn-iot-accountauditconfiguration-auditnotificationtargetconfigurations-sns)" : {{AuditNotificationTarget}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations-syntax.yaml"></a>
 
-```yaml
-
-  Sns:
-    AuditNotificationTarget
-
+```
+  [Sns](#cfn-iot-accountauditconfiguration-auditnotificationtargetconfigurations-sns): {{
+    AuditNotificationTarget}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-accountauditconfiguration-auditnotificationtargetconfigurations-properties"></a>
 
-`Sns`
-
+`Sns`  <a name="cfn-iot-accountauditconfiguration-auditnotificationtargetconfigurations-sns"></a>
 The `Sns` notification target.
-
-_Required_: No
-
-_Type_: [AuditNotificationTarget](aws-properties-iot-accountauditconfiguration-auditnotificationtarget.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuditNotificationTarget
-
-CertAgeCheckCustomConfiguration
+*Required*: No
+*Type*: [AuditNotificationTarget](aws-properties-iot-accountauditconfiguration-auditnotificationtarget.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

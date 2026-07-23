@@ -2,53 +2,42 @@
 title: "AWS::DevOpsAgent::Service MCPServerSplunkAuthorizationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Service MCPServerSplunkAuthorizationConfig
+<a name="aws-properties-devopsagent-service-mcpserversplunkauthorizationconfig"></a>
 
 The authorization configuration for a Splunk MCP server.
 
 ## Syntax
+<a name="aws-properties-devopsagent-service-mcpserversplunkauthorizationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-devopsagent-service-mcpserversplunkauthorizationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "BearerToken" : BearerTokenDetails
+  "[BearerToken](#cfn-devopsagent-service-mcpserversplunkauthorizationconfig-bearertoken)" : {{BearerTokenDetails}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-devopsagent-service-mcpserversplunkauthorizationconfig-syntax.yaml"></a>
 
-```yaml
-
-  BearerToken:
-    BearerTokenDetails
-
+```
+  [BearerToken](#cfn-devopsagent-service-mcpserversplunkauthorizationconfig-bearertoken): {{
+    BearerTokenDetails}}
 ```
 
 ## Properties
+<a name="aws-properties-devopsagent-service-mcpserversplunkauthorizationconfig-properties"></a>
 
-`BearerToken`
-
+`BearerToken`  <a name="cfn-devopsagent-service-mcpserversplunkauthorizationconfig-bearertoken"></a>
 The bearer token details for authenticating with the Splunk MCP server.
-
-_Required_: Yes
-
-_Type_: [BearerTokenDetails](aws-properties-devopsagent-service-bearertokendetails.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MCPServerOAuthClientCredentialsConfig
-
-MCPServerSplunkDetails
+*Required*: Yes
+*Type*: [BearerTokenDetails](aws-properties-devopsagent-service-bearertokendetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

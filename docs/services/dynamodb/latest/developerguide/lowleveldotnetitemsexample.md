@@ -3,18 +3,15 @@ title: "Example: CRUD operations using the AWS SDK for .NET low-level API"
 ---
 
 # Example: CRUD operations using the AWS SDK for .NET low-level API
+<a name="LowLevelDotNetItemsExample"></a>
 
-The following C# code example illustrates CRUD operations on an Amazon DynamoDB item. The
-example adds an item to the `ProductCatalog` table, retrieves it, performs various
-updates, and finally deletes the item. If you haven't created this table, you can also create it programmatically. For more information, see
-[Creating example tables and uploading data using the AWS SDK for .NET](appendixsampledatacodedotnet.md).
+The following C\# code example illustrates CRUD operations on an Amazon DynamoDB item. The example adds an item to the `ProductCatalog` table, retrieves it, performs various updates, and finally deletes the item. If you haven't created this table, you can also create it programmatically. For more information, see [Creating example tables and uploading data using the AWS SDK for .NET](AppendixSampleDataCodeDotNET.md).
 
-For step-by-step instructions for testing the following sample, see [.NET code examples](codesamples-dotnet.md).
+For step-by-step instructions for testing the following sample, see [.NET code examples](CodeSamples.DotNet.md).
 
-###### Example
+**Example**
 
-```csharp
-
+```
 using System;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2;
@@ -245,13 +242,6 @@ namespace com.amazonaws.codesamples
         }
     }
 }
-
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Working with items: .NET
-
-Example: Batch operations - .NET low-level API
 
 All content copied from https://docs.aws.amazon.com/.

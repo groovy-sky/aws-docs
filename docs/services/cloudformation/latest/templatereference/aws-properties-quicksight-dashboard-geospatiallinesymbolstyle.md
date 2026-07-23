@@ -2,66 +2,51 @@
 title: "AWS::QuickSight::Dashboard GeospatialLineSymbolStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialLineSymbolStyle
+<a name="aws-properties-quicksight-dashboard-geospatiallinesymbolstyle"></a>
 
 The symbol style for a line layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatiallinesymbolstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatiallinesymbolstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "FillColor" : GeospatialColor,
-  "LineWidth" : GeospatialLineWidth
+  "[FillColor](#cfn-quicksight-dashboard-geospatiallinesymbolstyle-fillcolor)" : {{GeospatialColor}},
+  "[LineWidth](#cfn-quicksight-dashboard-geospatiallinesymbolstyle-linewidth)" : {{GeospatialLineWidth}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatiallinesymbolstyle-syntax.yaml"></a>
 
-```yaml
-
-  FillColor:
-    GeospatialColor
-  LineWidth:
-    GeospatialLineWidth
-
+```
+  [FillColor](#cfn-quicksight-dashboard-geospatiallinesymbolstyle-fillcolor): {{
+    GeospatialColor}}
+  [LineWidth](#cfn-quicksight-dashboard-geospatiallinesymbolstyle-linewidth): {{
+    GeospatialLineWidth}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatiallinesymbolstyle-properties"></a>
 
-`FillColor`
-
+`FillColor`  <a name="cfn-quicksight-dashboard-geospatiallinesymbolstyle-fillcolor"></a>
 The color and opacity values for the fill color.
+*Required*: No
+*Type*: [GeospatialColor](aws-properties-quicksight-dashboard-geospatialcolor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [GeospatialColor](aws-properties-quicksight-dashboard-geospatialcolor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LineWidth`
-
+`LineWidth`  <a name="cfn-quicksight-dashboard-geospatiallinesymbolstyle-linewidth"></a>
 The width value for a line.
-
-_Required_: No
-
-_Type_: [GeospatialLineWidth](aws-properties-quicksight-dashboard-geospatiallinewidth.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLineStyle
-
-GeospatialLineWidth
+*Required*: No
+*Type*: [GeospatialLineWidth](aws-properties-quicksight-dashboard-geospatiallinewidth.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

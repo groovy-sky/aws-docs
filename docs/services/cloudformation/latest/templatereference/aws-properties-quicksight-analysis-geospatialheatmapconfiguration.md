@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis GeospatialHeatmapConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialHeatmapConfiguration
+<a name="aws-properties-quicksight-analysis-geospatialheatmapconfiguration"></a>
 
 The heatmap configuration of the geospatial point style.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialheatmapconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialheatmapconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "HeatmapColor" : GeospatialHeatmapColorScale
+  "[HeatmapColor](#cfn-quicksight-analysis-geospatialheatmapconfiguration-heatmapcolor)" : {{GeospatialHeatmapColorScale}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialheatmapconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  HeatmapColor:
-    GeospatialHeatmapColorScale
-
+```
+  [HeatmapColor](#cfn-quicksight-analysis-geospatialheatmapconfiguration-heatmapcolor): {{
+    GeospatialHeatmapColorScale}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialheatmapconfiguration-properties"></a>
 
-`HeatmapColor`
-
+`HeatmapColor`  <a name="cfn-quicksight-analysis-geospatialheatmapconfiguration-heatmapcolor"></a>
 The color scale specification for the heatmap point style.
-
-_Required_: No
-
-_Type_: [GeospatialHeatmapColorScale](aws-properties-quicksight-analysis-geospatialheatmapcolorscale.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialHeatmapColorScale
-
-GeospatialHeatmapDataColor
+*Required*: No
+*Type*: [GeospatialHeatmapColorScale](aws-properties-quicksight-analysis-geospatialheatmapcolorscale.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

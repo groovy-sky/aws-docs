@@ -2,54 +2,42 @@
 title: "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation MetricsConfigurationPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation MetricsConfigurationPolicy
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy"></a>
 
 Provides the configuration policy for metrics generation.
 
 ## Syntax
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "NoiseLevel" : String
+  "[NoiseLevel](#cfn-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-noiselevel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-syntax.yaml"></a>
 
-```yaml
-
-  NoiseLevel: String
-
+```
+  [NoiseLevel](#cfn-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-noiselevel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-properties"></a>
 
-`NoiseLevel`
-
+`NoiseLevel`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-metricsconfigurationpolicy-noiselevel"></a>
 The noise level for the generated metrics.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HIGH | MEDIUM | LOW | NONE`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LogsConfigurationPolicy
-
-PrivacyConfiguration
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HIGH | MEDIUM | LOW | NONE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

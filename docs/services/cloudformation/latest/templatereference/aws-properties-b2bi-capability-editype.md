@@ -2,53 +2,42 @@
 title: "AWS::B2BI::Capability EdiType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Capability EdiType
+<a name="aws-properties-b2bi-capability-editype"></a>
 
-The `EdiType` property type specifies Property description not available. for an [AWS::B2BI::Capability](aws-resource-b2bi-capability.md).
+<a name="aws-properties-b2bi-capability-editype-description"></a>The `EdiType` property type specifies Property description not available. for an [AWS::B2BI::Capability](aws-resource-b2bi-capability.md).
 
 ## Syntax
+<a name="aws-properties-b2bi-capability-editype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-capability-editype-syntax.json"></a>
 
-```json
-
+```
 {
-  "X12Details" : X12Details
+  "[X12Details](#cfn-b2bi-capability-editype-x12details)" : {{X12Details}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-capability-editype-syntax.yaml"></a>
 
-```yaml
-
-  X12Details:
-    X12Details
-
+```
+  [X12Details](#cfn-b2bi-capability-editype-x12details): {{
+    X12Details}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-capability-editype-properties"></a>
 
-`X12Details`
-
+`X12Details`  <a name="cfn-b2bi-capability-editype-x12details"></a>
 Property description not available.
-
-_Required_: Yes
-
-_Type_: [X12Details](aws-properties-b2bi-capability-x12details.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EdiConfiguration
-
-S3Location
+*Required*: Yes
+*Type*: [X12Details](aws-properties-b2bi-capability-x12details.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

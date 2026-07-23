@@ -2,78 +2,57 @@
 title: "AWS::AuditManager::Assessment AssessmentReportsDestination"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AuditManager::Assessment AssessmentReportsDestination
+<a name="aws-properties-auditmanager-assessment-assessmentreportsdestination"></a>
 
-The `AssessmentReportsDestination` property type specifies the location in
-which AWS Audit Manager saves assessment reports for the given assessment.
+The `AssessmentReportsDestination` property type specifies the location in which AWS Audit Manager saves assessment reports for the given assessment.
 
 ## Syntax
+<a name="aws-properties-auditmanager-assessment-assessmentreportsdestination-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-auditmanager-assessment-assessmentreportsdestination-syntax.json"></a>
 
-```json
-
+```
 {
-  "Destination" : String,
-  "DestinationType" : String
+  "[Destination](#cfn-auditmanager-assessment-assessmentreportsdestination-destination)" : {{String}},
+  "[DestinationType](#cfn-auditmanager-assessment-assessmentreportsdestination-destinationtype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-auditmanager-assessment-assessmentreportsdestination-syntax.yaml"></a>
 
-```yaml
-
-  Destination: String
-  DestinationType: String
-
+```
+  [Destination](#cfn-auditmanager-assessment-assessmentreportsdestination-destination): {{String}}
+  [DestinationType](#cfn-auditmanager-assessment-assessmentreportsdestination-destinationtype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-auditmanager-assessment-assessmentreportsdestination-properties"></a>
 
-`Destination`
+`Destination`  <a name="cfn-auditmanager-assessment-assessmentreportsdestination-destination"></a>
+ The destination bucket where Audit Manager stores assessment reports.
+*Required*: No
+*Type*: String
+*Pattern*: `^(S|s)3:\/\/[a-zA-Z0-9\-\.\(\)\'\*\_\!\=\+\@\:\s\,\?\/]+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The destination bucket where Audit Manager stores assessment reports.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^(S|s)3:\/\/[a-zA-Z0-9\-\.\(\)\'\*\_\!\=\+\@\:\s\,\?\/]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DestinationType`
-
-The destination type, such as Amazon S3.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `S3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`DestinationType`  <a name="cfn-auditmanager-assessment-assessmentreportsdestination-destinationtype"></a>
+ The destination type, such as Amazon S3.
+*Required*: No
+*Type*: String
+*Allowed values*: `S3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [AssessmentReportsDestination](../../../../reference/audit-manager/latest/apireference/api-assessmentreportsdestination.md) in the _AWS Audit Manager_
-_API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::AuditManager::Assessment
-
-AWSAccount
+<a name="aws-properties-auditmanager-assessment-assessmentreportsdestination--seealso"></a>
++ [AssessmentReportsDestination](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentReportsDestination.html) in the *AWS Audit Manager API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

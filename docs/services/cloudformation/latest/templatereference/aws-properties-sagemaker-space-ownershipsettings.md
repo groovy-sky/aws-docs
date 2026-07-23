@@ -2,56 +2,43 @@
 title: "AWS::SageMaker::Space OwnershipSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Space OwnershipSettings
+<a name="aws-properties-sagemaker-space-ownershipsettings"></a>
 
 The collection of ownership settings for a space.
 
 ## Syntax
+<a name="aws-properties-sagemaker-space-ownershipsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-space-ownershipsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "OwnerUserProfileName" : String
+  "[OwnerUserProfileName](#cfn-sagemaker-space-ownershipsettings-owneruserprofilename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-space-ownershipsettings-syntax.yaml"></a>
 
-```yaml
-
-  OwnerUserProfileName: String
-
+```
+  [OwnerUserProfileName](#cfn-sagemaker-space-ownershipsettings-owneruserprofilename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-space-ownershipsettings-properties"></a>
 
-`OwnerUserProfileName`
-
+`OwnerUserProfileName`  <a name="cfn-sagemaker-space-ownershipsettings-owneruserprofilename"></a>
 The user profile who is the owner of the space.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-
-_Maximum_: `63`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KernelGatewayAppSettings
-
-ResourceSpec
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
+*Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,73 +2,52 @@
 title: "AWS::WorkSpacesWeb::SessionLogger EventFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::SessionLogger EventFilter
+<a name="aws-properties-workspacesweb-sessionlogger-eventfilter"></a>
 
 The filter that specifies the events to monitor.
 
 ## Syntax
+<a name="aws-properties-workspacesweb-sessionlogger-eventfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspacesweb-sessionlogger-eventfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "All" : Json,
-  "Include" : [ String, ... ]
+  "[All](#cfn-workspacesweb-sessionlogger-eventfilter-all)" : {{Json}},
+  "[Include](#cfn-workspacesweb-sessionlogger-eventfilter-include)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspacesweb-sessionlogger-eventfilter-syntax.yaml"></a>
 
-```yaml
-
-  All: Json
-  Include:
-    - String
-
+```
+  [All](#cfn-workspacesweb-sessionlogger-eventfilter-all): {{Json}}
+  [Include](#cfn-workspacesweb-sessionlogger-eventfilter-include): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspacesweb-sessionlogger-eventfilter-properties"></a>
 
-`All`
+`All`  <a name="cfn-workspacesweb-sessionlogger-eventfilter-all"></a>
+The filter that monitors all of the available events, including any new events emitted in the future. The `All` and `Include` properties are not required, but one of them should be present. `{}` is a valid input.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The filter that monitors all of the available events, including any new events emitted
-in the future. The `All` and `Include` properties are not
-required, but one of them should be present. `{}` is a valid input.
-
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Include`
-
-The filter that monitors only the listed set of events. New events are not
-auto-monitored. The `All` and `Include` properties are not
-required, but one of them should be present.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::WorkSpacesWeb::SessionLogger
-
-LogConfiguration
+`Include`  <a name="cfn-workspacesweb-sessionlogger-eventfilter-include"></a>
+The filter that monitors only the listed set of events. New events are not auto-monitored. The `All` and `Include` properties are not required, but one of them should be present.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

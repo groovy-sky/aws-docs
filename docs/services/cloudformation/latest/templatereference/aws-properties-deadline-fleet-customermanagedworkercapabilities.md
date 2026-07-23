@@ -2,167 +2,118 @@
 title: "AWS::Deadline::Fleet CustomerManagedWorkerCapabilities"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet CustomerManagedWorkerCapabilities
+<a name="aws-properties-deadline-fleet-customermanagedworkercapabilities"></a>
 
 The worker capabilities for a customer managed workflow.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-customermanagedworkercapabilities-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-customermanagedworkercapabilities-syntax.json"></a>
 
-```json
-
+```
 {
-  "AcceleratorCount" : AcceleratorCountRange,
-  "AcceleratorTotalMemoryMiB" : AcceleratorTotalMemoryMiBRange,
-  "AcceleratorTypes" : [ String, ... ],
-  "CpuArchitectureType" : String,
-  "CustomAmounts" : [ FleetAmountCapability, ... ],
-  "CustomAttributes" : [ FleetAttributeCapability, ... ],
-  "MemoryMiB" : MemoryMiBRange,
-  "OsFamily" : String,
-  "VCpuCount" : VCpuCountRange
+  "[AcceleratorCount](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratorcount)" : {{AcceleratorCountRange}},
+  "[AcceleratorTotalMemoryMiB](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortotalmemorymib)" : {{AcceleratorTotalMemoryMiBRange}},
+  "[AcceleratorTypes](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortypes)" : {{[ String, ... ]}},
+  "[CpuArchitectureType](#cfn-deadline-fleet-customermanagedworkercapabilities-cpuarchitecturetype)" : {{String}},
+  "[CustomAmounts](#cfn-deadline-fleet-customermanagedworkercapabilities-customamounts)" : {{[ FleetAmountCapability, ... ]}},
+  "[CustomAttributes](#cfn-deadline-fleet-customermanagedworkercapabilities-customattributes)" : {{[ FleetAttributeCapability, ... ]}},
+  "[MemoryMiB](#cfn-deadline-fleet-customermanagedworkercapabilities-memorymib)" : {{MemoryMiBRange}},
+  "[OsFamily](#cfn-deadline-fleet-customermanagedworkercapabilities-osfamily)" : {{String}},
+  "[VCpuCount](#cfn-deadline-fleet-customermanagedworkercapabilities-vcpucount)" : {{VCpuCountRange}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-customermanagedworkercapabilities-syntax.yaml"></a>
 
-```yaml
-
-  AcceleratorCount:
-    AcceleratorCountRange
-  AcceleratorTotalMemoryMiB:
-    AcceleratorTotalMemoryMiBRange
-  AcceleratorTypes:
-    - String
-  CpuArchitectureType: String
-  CustomAmounts:
-    - FleetAmountCapability
-  CustomAttributes:
-    - FleetAttributeCapability
-  MemoryMiB:
-    MemoryMiBRange
-  OsFamily: String
-  VCpuCount:
-    VCpuCountRange
-
+```
+  [AcceleratorCount](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratorcount): {{
+    AcceleratorCountRange}}
+  [AcceleratorTotalMemoryMiB](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortotalmemorymib): {{
+    AcceleratorTotalMemoryMiBRange}}
+  [AcceleratorTypes](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortypes): {{
+    - String}}
+  [CpuArchitectureType](#cfn-deadline-fleet-customermanagedworkercapabilities-cpuarchitecturetype): {{String}}
+  [CustomAmounts](#cfn-deadline-fleet-customermanagedworkercapabilities-customamounts): {{
+    - FleetAmountCapability}}
+  [CustomAttributes](#cfn-deadline-fleet-customermanagedworkercapabilities-customattributes): {{
+    - FleetAttributeCapability}}
+  [MemoryMiB](#cfn-deadline-fleet-customermanagedworkercapabilities-memorymib): {{
+    MemoryMiBRange}}
+  [OsFamily](#cfn-deadline-fleet-customermanagedworkercapabilities-osfamily): {{String}}
+  [VCpuCount](#cfn-deadline-fleet-customermanagedworkercapabilities-vcpucount): {{
+    VCpuCountRange}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-customermanagedworkercapabilities-properties"></a>
 
-`AcceleratorCount`
-
+`AcceleratorCount`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-acceleratorcount"></a>
 The range of the accelerator.
+*Required*: No
+*Type*: [AcceleratorCountRange](aws-properties-deadline-fleet-acceleratorcountrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AcceleratorCountRange](aws-properties-deadline-fleet-acceleratorcountrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AcceleratorTotalMemoryMiB`
-
+`AcceleratorTotalMemoryMiB`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortotalmemorymib"></a>
 The total memory (MiB) for the customer managed worker capabilities.
+*Required*: No
+*Type*: [AcceleratorTotalMemoryMiBRange](aws-properties-deadline-fleet-acceleratortotalmemorymibrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AcceleratorTotalMemoryMiBRange](aws-properties-deadline-fleet-acceleratortotalmemorymibrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AcceleratorTypes`
-
+`AcceleratorTypes`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortypes"></a>
 The accelerator types for the customer managed worker capabilities.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CpuArchitectureType`
-
+`CpuArchitectureType`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-cpuarchitecturetype"></a>
 The CPU architecture type for the customer managed worker capabilities.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `x86_64 | arm64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `x86_64 | arm64`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomAmounts`
-
+`CustomAmounts`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-customamounts"></a>
 Custom requirement ranges for customer managed worker capabilities.
+*Required*: No
+*Type*: Array of [FleetAmountCapability](aws-properties-deadline-fleet-fleetamountcapability.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FleetAmountCapability](aws-properties-deadline-fleet-fleetamountcapability.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomAttributes`
-
+`CustomAttributes`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-customattributes"></a>
 Custom attributes for the customer manged worker capabilities.
+*Required*: No
+*Type*: Array of [FleetAttributeCapability](aws-properties-deadline-fleet-fleetattributecapability.md)
+*Minimum*: `1`
+*Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [FleetAttributeCapability](aws-properties-deadline-fleet-fleetattributecapability.md)
-
-_Minimum_: `1`
-
-_Maximum_: `15`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MemoryMiB`
-
+`MemoryMiB`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-memorymib"></a>
 The memory (MiB).
+*Required*: Yes
+*Type*: [MemoryMiBRange](aws-properties-deadline-fleet-memorymibrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [MemoryMiBRange](aws-properties-deadline-fleet-memorymibrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OsFamily`
-
+`OsFamily`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-osfamily"></a>
 The operating system (OS) family.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `WINDOWS | LINUX | MACOS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `WINDOWS | LINUX | MACOS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VCpuCount`
-
+`VCpuCount`  <a name="cfn-deadline-fleet-customermanagedworkercapabilities-vcpucount"></a>
 The vCPU count for the customer manged worker capabilities.
-
-_Required_: Yes
-
-_Type_: [VCpuCountRange](aws-properties-deadline-fleet-vcpucountrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomerManagedFleetConfiguration
-
-Ec2EbsVolume
+*Required*: Yes
+*Type*: [VCpuCountRange](aws-properties-deadline-fleet-vcpucountrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

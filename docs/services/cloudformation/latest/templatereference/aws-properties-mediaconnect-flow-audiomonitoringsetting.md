@@ -2,53 +2,42 @@
 title: "AWS::MediaConnect::Flow AudioMonitoringSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow AudioMonitoringSetting
+<a name="aws-properties-mediaconnect-flow-audiomonitoringsetting"></a>
 
-Specifies the configuration for audio stream metrics monitoring.
+ Specifies the configuration for audio stream metrics monitoring.
 
 ## Syntax
+<a name="aws-properties-mediaconnect-flow-audiomonitoringsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediaconnect-flow-audiomonitoringsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "SilentAudio" : SilentAudio
+  "[SilentAudio](#cfn-mediaconnect-flow-audiomonitoringsetting-silentaudio)" : {{SilentAudio}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediaconnect-flow-audiomonitoringsetting-syntax.yaml"></a>
 
-```yaml
-
-  SilentAudio:
-    SilentAudio
-
+```
+  [SilentAudio](#cfn-mediaconnect-flow-audiomonitoringsetting-silentaudio): {{
+    SilentAudio}}
 ```
 
 ## Properties
+<a name="aws-properties-mediaconnect-flow-audiomonitoringsetting-properties"></a>
 
-`SilentAudio`
-
-Detects periods of silence.
-
-_Required_: No
-
-_Type_: [SilentAudio](aws-properties-mediaconnect-flow-silentaudio.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::MediaConnect::Flow
-
-BlackFrames
+`SilentAudio`  <a name="cfn-mediaconnect-flow-audiomonitoringsetting-silentaudio"></a>
+ Detects periods of silence.
+*Required*: No
+*Type*: [SilentAudio](aws-properties-mediaconnect-flow-silentaudio.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,68 +2,52 @@
 title: "AWS::Glue::Catalog PrincipalPermissions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Catalog PrincipalPermissions
+<a name="aws-properties-glue-catalog-principalpermissions"></a>
 
 Permissions granted to a principal.
 
 ## Syntax
+<a name="aws-properties-glue-catalog-principalpermissions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-catalog-principalpermissions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Permissions" : [ String, ... ],
-  "Principal" : DataLakePrincipal
+  "[Permissions](#cfn-glue-catalog-principalpermissions-permissions)" : {{[ String, ... ]}},
+  "[Principal](#cfn-glue-catalog-principalpermissions-principal)" : {{DataLakePrincipal}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-catalog-principalpermissions-syntax.yaml"></a>
 
-```yaml
-
-  Permissions:
-    - String
-  Principal:
-    DataLakePrincipal
-
+```
+  [Permissions](#cfn-glue-catalog-principalpermissions-permissions): {{
+    - String}}
+  [Principal](#cfn-glue-catalog-principalpermissions-principal): {{
+    DataLakePrincipal}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-catalog-principalpermissions-properties"></a>
 
-`Permissions`
-
+`Permissions`  <a name="cfn-glue-catalog-principalpermissions-permissions"></a>
 The permissions that are granted to the principal.
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `ALL | SELECT | ALTER | DROP | DELETE | INSERT | CREATE_DATABASE | CREATE_TABLE | DATA_LOCATION_ACCESS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `ALL | SELECT | ALTER | DROP | DELETE | INSERT | CREATE_DATABASE | CREATE_TABLE | DATA_LOCATION_ACCESS`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Principal`
-
+`Principal`  <a name="cfn-glue-catalog-principalpermissions-principal"></a>
 The principal who is granted permissions.
-
-_Required_: No
-
-_Type_: [DataLakePrincipal](aws-properties-glue-catalog-datalakeprincipal.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FederatedCatalog
-
-Tag
+*Required*: No
+*Type*: [DataLakePrincipal](aws-properties-glue-catalog-datalakeprincipal.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,57 +2,43 @@
 title: "AWS::Batch::JobDefinition MultiNodeEcsProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition MultiNodeEcsProperties
+<a name="aws-properties-batch-jobdefinition-multinodeecsproperties"></a>
 
 An object that contains the properties for the Amazon ECS resources of a job.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-multinodeecsproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-multinodeecsproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "TaskProperties" : [ MultiNodeEcsTaskProperties, ... ]
+  "[TaskProperties](#cfn-batch-jobdefinition-multinodeecsproperties-taskproperties)" : {{[ MultiNodeEcsTaskProperties, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-multinodeecsproperties-syntax.yaml"></a>
 
-```yaml
-
-  TaskProperties:
-    - MultiNodeEcsTaskProperties
-
+```
+  [TaskProperties](#cfn-batch-jobdefinition-multinodeecsproperties-taskproperties): {{
+    - MultiNodeEcsTaskProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-multinodeecsproperties-properties"></a>
 
-`TaskProperties`
-
+`TaskProperties`  <a name="cfn-batch-jobdefinition-multinodeecsproperties-taskproperties"></a>
 An object that contains the properties for the Amazon ECS task definition of a job.
-
-###### Note
-
 This object is currently limited to one task element. However, the task element can run up to 10 containers.
-
-_Required_: Yes
-
-_Type_: Array of [MultiNodeEcsTaskProperties](aws-properties-batch-jobdefinition-multinodeecstaskproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiNodeContainerProperties
-
-MultiNodeEcsTaskProperties
+*Required*: Yes
+*Type*: Array of [MultiNodeEcsTaskProperties](aws-properties-batch-jobdefinition-multinodeecstaskproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

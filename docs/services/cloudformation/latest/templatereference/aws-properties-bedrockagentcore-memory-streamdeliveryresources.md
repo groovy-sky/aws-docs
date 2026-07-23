@@ -2,55 +2,43 @@
 title: "AWS::BedrockAgentCore::Memory StreamDeliveryResources"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Memory StreamDeliveryResources
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources"></a>
 
 Configuration for streaming memory record data to external resources.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources-syntax.json"></a>
 
-```json
-
+```
 {
-  "Resources" : [ StreamDeliveryResource, ... ]
+  "[Resources](#cfn-bedrockagentcore-memory-streamdeliveryresources-resources)" : {{[ StreamDeliveryResource, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources-syntax.yaml"></a>
 
-```yaml
-
-  Resources:
-    - StreamDeliveryResource
-
+```
+  [Resources](#cfn-bedrockagentcore-memory-streamdeliveryresources-resources): {{
+    - StreamDeliveryResource}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources-properties"></a>
 
-`Resources`
-
+`Resources`  <a name="cfn-bedrockagentcore-memory-streamdeliveryresources-resources"></a>
 List of stream delivery resource configurations.
-
-_Required_: Yes
-
-_Type_: Array of [StreamDeliveryResource](aws-properties-bedrockagentcore-memory-streamdeliveryresource.md)
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StreamDeliveryResource
-
-SummaryMemoryStrategy
+*Required*: Yes
+*Type*: Array of [StreamDeliveryResource](aws-properties-bedrockagentcore-memory-streamdeliveryresource.md)
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

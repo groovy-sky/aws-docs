@@ -2,81 +2,59 @@
 title: "AWS::SMSVOICE::PhoneNumber TwoWay"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::PhoneNumber TwoWay
+<a name="aws-properties-smsvoice-phonenumber-twoway"></a>
 
 The phone number's two-way SMS configuration object.
 
 ## Syntax
+<a name="aws-properties-smsvoice-phonenumber-twoway-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-smsvoice-phonenumber-twoway-syntax.json"></a>
 
-```json
-
+```
 {
-  "ChannelArn" : String,
-  "ChannelRole" : String,
-  "Enabled" : Boolean
+  "[ChannelArn](#cfn-smsvoice-phonenumber-twoway-channelarn)" : {{String}},
+  "[ChannelRole](#cfn-smsvoice-phonenumber-twoway-channelrole)" : {{String}},
+  "[Enabled](#cfn-smsvoice-phonenumber-twoway-enabled)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-smsvoice-phonenumber-twoway-syntax.yaml"></a>
 
-```yaml
-
-  ChannelArn: String
-  ChannelRole: String
-  Enabled: Boolean
-
+```
+  [ChannelArn](#cfn-smsvoice-phonenumber-twoway-channelarn): {{String}}
+  [ChannelRole](#cfn-smsvoice-phonenumber-twoway-channelrole): {{String}}
+  [Enabled](#cfn-smsvoice-phonenumber-twoway-enabled): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-smsvoice-phonenumber-twoway-properties"></a>
 
-`ChannelArn`
-
+`ChannelArn`  <a name="cfn-smsvoice-phonenumber-twoway-channelarn"></a>
 The Amazon Resource Name (ARN) of the two way channel.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:\S+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:\S+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChannelRole`
-
+`ChannelRole`  <a name="cfn-smsvoice-phonenumber-twoway-channelrole"></a>
 An optional IAM Role Arn for a service to assume, to be able to post inbound SMS messages.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:\S+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:\S+$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Enabled`
-
-By default this is set to false. When set to true you can receive incoming text
-messages from your end recipients using the TwoWayChannelArn.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::SMSVOICE::Pool
+`Enabled`  <a name="cfn-smsvoice-phonenumber-twoway-enabled"></a>
+By default this is set to false. When set to true you can receive incoming text messages from your end recipients using the TwoWayChannelArn.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

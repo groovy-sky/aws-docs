@@ -2,60 +2,46 @@
 title: "AWS::Logs::Transformer RenameKeys"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer RenameKeys
+<a name="aws-properties-logs-transformer-renamekeys"></a>
 
 Use this processor to rename keys in a log event.
 
-For more information about this processor including examples, see [renameKeys](../../../amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-processors.md#CloudWatch-Logs-Transformation-renameKeys) in the _CloudWatch Logs User Guide_.
+For more information about this processor including examples, see [ renameKeys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation-Processors.html#CloudWatch-Logs-Transformation-renameKeys) in the *CloudWatch Logs User Guide*.
 
 ## Syntax
+<a name="aws-properties-logs-transformer-renamekeys-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-logs-transformer-renamekeys-syntax.json"></a>
 
-```json
-
+```
 {
-  "Entries" : [ RenameKeyEntry, ... ]
+  "[Entries](#cfn-logs-transformer-renamekeys-entries)" : {{[ RenameKeyEntry, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-logs-transformer-renamekeys-syntax.yaml"></a>
 
-```yaml
-
-  Entries:
-    - RenameKeyEntry
-
+```
+  [Entries](#cfn-logs-transformer-renamekeys-entries): {{
+    - RenameKeyEntry}}
 ```
 
 ## Properties
+<a name="aws-properties-logs-transformer-renamekeys-properties"></a>
 
-`Entries`
-
-An array of `RenameKeyEntry` objects, where each object contains the
-information about a single key to rename.
-
-_Required_: Yes
-
-_Type_: Array of [RenameKeyEntry](aws-properties-logs-transformer-renamekeyentry.md)
-
-_Minimum_: `1`
-
-_Maximum_: `5`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RenameKeyEntry
-
-SplitString
+`Entries`  <a name="cfn-logs-transformer-renamekeys-entries"></a>
+An array of `RenameKeyEntry` objects, where each object contains the information about a single key to rename.
+*Required*: Yes
+*Type*: Array of [RenameKeyEntry](aws-properties-logs-transformer-renamekeyentry.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

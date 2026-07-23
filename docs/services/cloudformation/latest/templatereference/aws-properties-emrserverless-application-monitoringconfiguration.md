@@ -2,93 +2,69 @@
 title: "AWS::EMRServerless::Application MonitoringConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application MonitoringConfiguration
+<a name="aws-properties-emrserverless-application-monitoringconfiguration"></a>
 
 The configuration setting for monitoring logs.
 
 ## Syntax
+<a name="aws-properties-emrserverless-application-monitoringconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-emrserverless-application-monitoringconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CloudWatchLoggingConfiguration" : CloudWatchLoggingConfiguration,
-  "ManagedPersistenceMonitoringConfiguration" : ManagedPersistenceMonitoringConfiguration,
-  "PrometheusMonitoringConfiguration" : PrometheusMonitoringConfiguration,
-  "S3MonitoringConfiguration" : S3MonitoringConfiguration
+  "[CloudWatchLoggingConfiguration](#cfn-emrserverless-application-monitoringconfiguration-cloudwatchloggingconfiguration)" : {{CloudWatchLoggingConfiguration}},
+  "[ManagedPersistenceMonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-managedpersistencemonitoringconfiguration)" : {{ManagedPersistenceMonitoringConfiguration}},
+  "[PrometheusMonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-prometheusmonitoringconfiguration)" : {{PrometheusMonitoringConfiguration}},
+  "[S3MonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-s3monitoringconfiguration)" : {{S3MonitoringConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-emrserverless-application-monitoringconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CloudWatchLoggingConfiguration:
-    CloudWatchLoggingConfiguration
-  ManagedPersistenceMonitoringConfiguration:
-    ManagedPersistenceMonitoringConfiguration
-  PrometheusMonitoringConfiguration:
-    PrometheusMonitoringConfiguration
-  S3MonitoringConfiguration:
-    S3MonitoringConfiguration
-
+```
+  [CloudWatchLoggingConfiguration](#cfn-emrserverless-application-monitoringconfiguration-cloudwatchloggingconfiguration): {{
+    CloudWatchLoggingConfiguration}}
+  [ManagedPersistenceMonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-managedpersistencemonitoringconfiguration): {{
+    ManagedPersistenceMonitoringConfiguration}}
+  [PrometheusMonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-prometheusmonitoringconfiguration): {{
+    PrometheusMonitoringConfiguration}}
+  [S3MonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-s3monitoringconfiguration): {{
+    S3MonitoringConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-emrserverless-application-monitoringconfiguration-properties"></a>
 
-`CloudWatchLoggingConfiguration`
+`CloudWatchLoggingConfiguration`  <a name="cfn-emrserverless-application-monitoringconfiguration-cloudwatchloggingconfiguration"></a>
+The Amazon CloudWatch configuration for monitoring logs. You can configure your jobs to send log information to CloudWatch.
+*Required*: No
+*Type*: [CloudWatchLoggingConfiguration](aws-properties-emrserverless-application-cloudwatchloggingconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-The Amazon CloudWatch configuration for monitoring logs. You can configure your jobs
-to send log information to CloudWatch.
-
-_Required_: No
-
-_Type_: [CloudWatchLoggingConfiguration](aws-properties-emrserverless-application-cloudwatchloggingconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`ManagedPersistenceMonitoringConfiguration`
-
+`ManagedPersistenceMonitoringConfiguration`  <a name="cfn-emrserverless-application-monitoringconfiguration-managedpersistencemonitoringconfiguration"></a>
 The managed log persistence configuration for a job run.
+*Required*: No
+*Type*: [ManagedPersistenceMonitoringConfiguration](aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: [ManagedPersistenceMonitoringConfiguration](aws-properties-emrserverless-application-managedpersistencemonitoringconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`PrometheusMonitoringConfiguration`
-
+`PrometheusMonitoringConfiguration`  <a name="cfn-emrserverless-application-monitoringconfiguration-prometheusmonitoringconfiguration"></a>
 The monitoring configuration object you can configure to send metrics to Amazon Managed Service for Prometheus for a job run.
+*Required*: No
+*Type*: [PrometheusMonitoringConfiguration](aws-properties-emrserverless-application-prometheusmonitoringconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
-_Required_: No
-
-_Type_: [PrometheusMonitoringConfiguration](aws-properties-emrserverless-application-prometheusmonitoringconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-`S3MonitoringConfiguration`
-
+`S3MonitoringConfiguration`  <a name="cfn-emrserverless-application-monitoringconfiguration-s3monitoringconfiguration"></a>
 The Amazon S3 configuration for monitoring log publishing.
-
-_Required_: No
-
-_Type_: [S3MonitoringConfiguration](aws-properties-emrserverless-application-s3monitoringconfiguration.md)
-
-_Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MaximumAllowedResources
-
-NetworkConfiguration
+*Required*: No
+*Type*: [S3MonitoringConfiguration](aws-properties-emrserverless-application-s3monitoringconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

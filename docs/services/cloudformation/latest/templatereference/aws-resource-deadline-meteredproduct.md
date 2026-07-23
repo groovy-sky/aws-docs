@@ -2,103 +2,88 @@
 title: "AWS::Deadline::MeteredProduct"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::MeteredProduct
+<a name="aws-resource-deadline-meteredproduct"></a>
 
 Adds a metered product.
 
 ## Syntax
+<a name="aws-resource-deadline-meteredproduct-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-deadline-meteredproduct-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Deadline::MeteredProduct",
   "Properties" : {
-      "LicenseEndpointId" : String,
-      "ProductId" : String
+      "[LicenseEndpointId](#cfn-deadline-meteredproduct-licenseendpointid)" : {{String}},
+      "[ProductId](#cfn-deadline-meteredproduct-productid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-deadline-meteredproduct-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Deadline::MeteredProduct
 Properties:
-  LicenseEndpointId: String
-  ProductId: String
-
+  [LicenseEndpointId](#cfn-deadline-meteredproduct-licenseendpointid): {{String}}
+  [ProductId](#cfn-deadline-meteredproduct-productid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-deadline-meteredproduct-properties"></a>
 
-`LicenseEndpointId`
-
+`LicenseEndpointId`  <a name="cfn-deadline-meteredproduct-licenseendpointid"></a>
 The Amazon EC2 identifier of the license endpoint.
+*Required*: No
+*Type*: String
+*Pattern*: `^le-[0-9a-f]{32}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^le-[0-9a-f]{32}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-deadline-meteredproduct-productid"></a>
 The product ID.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9a-z]{1,32}-[.0-9a-z]{1,32}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9a-z]{1,32}-[.0-9a-z]{1,32}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-deadline-meteredproduct-return-values"></a>
 
 ### Ref
+<a name="aws-resource-deadline-meteredproduct-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the metered product.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-deadline-meteredproduct-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-deadline-meteredproduct-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the metered product.
 
-`Family`
-
+`Family`  <a name="Family-fn::getatt"></a>
 The family to which the metered product belongs.
 
-`Port`
-
+`Port`  <a name="Port-fn::getatt"></a>
 The port on which the metered product should run.
 
-`Vendor`
-
+`Vendor`  <a name="Vendor-fn::getatt"></a>
 The vendor.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Deadline::Limit
-
-AWS::Deadline::Monitor
 
 All content copied from https://docs.aws.amazon.com/.

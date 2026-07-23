@@ -2,212 +2,143 @@
 title: "AWS::QuickSight::Analysis RelativeDatesFilter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis RelativeDatesFilter
+<a name="aws-properties-quicksight-analysis-relativedatesfilter"></a>
 
 A `RelativeDatesFilter` filters relative dates values.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-relativedatesfilter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-relativedatesfilter-syntax.json"></a>
 
-```json
-
+```
 {
-  "AnchorDateConfiguration" : AnchorDateConfiguration,
-  "Column" : ColumnIdentifier,
-  "DefaultFilterControlConfiguration" : DefaultFilterControlConfiguration,
-  "ExcludePeriodConfiguration" : ExcludePeriodConfiguration,
-  "FilterId" : String,
-  "MinimumGranularity" : String,
-  "NullOption" : String,
-  "ParameterName" : String,
-  "RelativeDateType" : String,
-  "RelativeDateValue" : Number,
-  "TimeGranularity" : String
+  "[AnchorDateConfiguration](#cfn-quicksight-analysis-relativedatesfilter-anchordateconfiguration)" : {{AnchorDateConfiguration}},
+  "[Column](#cfn-quicksight-analysis-relativedatesfilter-column)" : {{ColumnIdentifier}},
+  "[DefaultFilterControlConfiguration](#cfn-quicksight-analysis-relativedatesfilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
+  "[ExcludePeriodConfiguration](#cfn-quicksight-analysis-relativedatesfilter-excludeperiodconfiguration)" : {{ExcludePeriodConfiguration}},
+  "[FilterId](#cfn-quicksight-analysis-relativedatesfilter-filterid)" : {{String}},
+  "[MinimumGranularity](#cfn-quicksight-analysis-relativedatesfilter-minimumgranularity)" : {{String}},
+  "[NullOption](#cfn-quicksight-analysis-relativedatesfilter-nulloption)" : {{String}},
+  "[ParameterName](#cfn-quicksight-analysis-relativedatesfilter-parametername)" : {{String}},
+  "[RelativeDateType](#cfn-quicksight-analysis-relativedatesfilter-relativedatetype)" : {{String}},
+  "[RelativeDateValue](#cfn-quicksight-analysis-relativedatesfilter-relativedatevalue)" : {{Number}},
+  "[TimeGranularity](#cfn-quicksight-analysis-relativedatesfilter-timegranularity)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-relativedatesfilter-syntax.yaml"></a>
 
-```yaml
-
-  AnchorDateConfiguration:
-    AnchorDateConfiguration
-  Column:
-    ColumnIdentifier
-  DefaultFilterControlConfiguration:
-    DefaultFilterControlConfiguration
-  ExcludePeriodConfiguration:
-    ExcludePeriodConfiguration
-  FilterId: String
-  MinimumGranularity: String
-  NullOption: String
-  ParameterName: String
-  RelativeDateType: String
-  RelativeDateValue: Number
-  TimeGranularity: String
-
+```
+  [AnchorDateConfiguration](#cfn-quicksight-analysis-relativedatesfilter-anchordateconfiguration): {{
+    AnchorDateConfiguration}}
+  [Column](#cfn-quicksight-analysis-relativedatesfilter-column): {{
+    ColumnIdentifier}}
+  [DefaultFilterControlConfiguration](#cfn-quicksight-analysis-relativedatesfilter-defaultfiltercontrolconfiguration): {{
+    DefaultFilterControlConfiguration}}
+  [ExcludePeriodConfiguration](#cfn-quicksight-analysis-relativedatesfilter-excludeperiodconfiguration): {{
+    ExcludePeriodConfiguration}}
+  [FilterId](#cfn-quicksight-analysis-relativedatesfilter-filterid): {{String}}
+  [MinimumGranularity](#cfn-quicksight-analysis-relativedatesfilter-minimumgranularity): {{String}}
+  [NullOption](#cfn-quicksight-analysis-relativedatesfilter-nulloption): {{String}}
+  [ParameterName](#cfn-quicksight-analysis-relativedatesfilter-parametername): {{String}}
+  [RelativeDateType](#cfn-quicksight-analysis-relativedatesfilter-relativedatetype): {{String}}
+  [RelativeDateValue](#cfn-quicksight-analysis-relativedatesfilter-relativedatevalue): {{Number}}
+  [TimeGranularity](#cfn-quicksight-analysis-relativedatesfilter-timegranularity): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-relativedatesfilter-properties"></a>
 
-`AnchorDateConfiguration`
-
+`AnchorDateConfiguration`  <a name="cfn-quicksight-analysis-relativedatesfilter-anchordateconfiguration"></a>
 The date configuration of the filter.
+*Required*: Yes
+*Type*: [AnchorDateConfiguration](aws-properties-quicksight-analysis-anchordateconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [AnchorDateConfiguration](aws-properties-quicksight-analysis-anchordateconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Column`
-
+`Column`  <a name="cfn-quicksight-analysis-relativedatesfilter-column"></a>
 The column that the filter is applied to.
+*Required*: Yes
+*Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultFilterControlConfiguration`
-
+`DefaultFilterControlConfiguration`  <a name="cfn-quicksight-analysis-relativedatesfilter-defaultfiltercontrolconfiguration"></a>
 The default configurations for the associated controls. This applies only for filters that are scoped to multiple sheets.
+*Required*: No
+*Type*: [DefaultFilterControlConfiguration](aws-properties-quicksight-analysis-defaultfiltercontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DefaultFilterControlConfiguration](aws-properties-quicksight-analysis-defaultfiltercontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ExcludePeriodConfiguration`
-
+`ExcludePeriodConfiguration`  <a name="cfn-quicksight-analysis-relativedatesfilter-excludeperiodconfiguration"></a>
 The configuration for the exclude period of the filter.
+*Required*: No
+*Type*: [ExcludePeriodConfiguration](aws-properties-quicksight-analysis-excludeperiodconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ExcludePeriodConfiguration](aws-properties-quicksight-analysis-excludeperiodconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FilterId`
-
+`FilterId`  <a name="cfn-quicksight-analysis-relativedatesfilter-filterid"></a>
 An identifier that uniquely identifies a filter within a dashboard, analysis, or template.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimumGranularity`
-
+`MinimumGranularity`  <a name="cfn-quicksight-analysis-relativedatesfilter-minimumgranularity"></a>
 The minimum granularity (period granularity) of the relative dates filter.
+*Required*: No
+*Type*: String
+*Allowed values*: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NullOption`
-
+`NullOption`  <a name="cfn-quicksight-analysis-relativedatesfilter-nulloption"></a>
 This option determines how null values should be treated when filtering data.
++ `ALL_VALUES`: Include null values in filtered results.
++ `NULLS_ONLY`: Only include null values in filtered results.
++ `NON_NULLS_ONLY`: Exclude null values from filtered results.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `ALL_VALUES`: Include null values in filtered results.
-
-- `NULLS_ONLY`: Only include null values in filtered results.
-
-- `NON_NULLS_ONLY`: Exclude null values from filtered results.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `ALL_VALUES | NULLS_ONLY | NON_NULLS_ONLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterName`
-
+`ParameterName`  <a name="cfn-quicksight-analysis-relativedatesfilter-parametername"></a>
 The parameter whose value should be used for the filter value.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelativeDateType`
-
+`RelativeDateType`  <a name="cfn-quicksight-analysis-relativedatesfilter-relativedatetype"></a>
 The range date type of the filter. Choose one of the options below:
++  `PREVIOUS`
++  `THIS`
++  `LAST`
++  `NOW`
++  `NEXT`
+*Required*: Yes
+*Type*: String
+*Allowed values*: `PREVIOUS | THIS | LAST | NOW | NEXT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `PREVIOUS`
-
-- `THIS`
-
-- `LAST`
-
-- `NOW`
-
-- `NEXT`
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `PREVIOUS | THIS | LAST | NOW | NEXT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelativeDateValue`
-
+`RelativeDateValue`  <a name="cfn-quicksight-analysis-relativedatesfilter-relativedatevalue"></a>
 The date value of the filter.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeGranularity`
-
+`TimeGranularity`  <a name="cfn-quicksight-analysis-relativedatesfilter-timegranularity"></a>
 The level of time precision that is used to aggregate `DateTime` values.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReferenceLineValueLabelConfiguration
-
-RelativeDateTimeControlDisplayOptions
+*Required*: Yes
+*Type*: String
+*Allowed values*: `YEAR | QUARTER | MONTH | WEEK | DAY | HOUR | MINUTE | SECOND | MILLISECOND`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

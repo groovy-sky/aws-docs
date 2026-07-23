@@ -2,92 +2,75 @@
 title: "AWS::Transfer::WebApp Vpc"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::WebApp Vpc
+<a name="aws-properties-transfer-webapp-vpc"></a>
 
-The `Vpc` property type specifies Property description not available. for an [AWS::Transfer::WebApp](aws-resource-transfer-webapp.md).
+<a name="aws-properties-transfer-webapp-vpc-description"></a>The `Vpc` property type specifies Property description not available. for an [AWS::Transfer::WebApp](aws-resource-transfer-webapp.md).
 
 ## Syntax
+<a name="aws-properties-transfer-webapp-vpc-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-transfer-webapp-vpc-syntax.json"></a>
 
-```json
-
+```
 {
-  "SecurityGroupIds" : [ String, ... ],
-  "SubnetIds" : [ String, ... ],
-  "VpcId" : String
+  "[IpAddressType](#cfn-transfer-webapp-vpc-ipaddresstype)" : {{String}},
+  "[SecurityGroupIds](#cfn-transfer-webapp-vpc-securitygroupids)" : {{[ String, ... ]}},
+  "[SubnetIds](#cfn-transfer-webapp-vpc-subnetids)" : {{[ String, ... ]}},
+  "[VpcId](#cfn-transfer-webapp-vpc-vpcid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-transfer-webapp-vpc-syntax.yaml"></a>
 
-```yaml
-
-  SecurityGroupIds:
-    - String
-  SubnetIds:
-    - String
-  VpcId: String
-
+```
+  [IpAddressType](#cfn-transfer-webapp-vpc-ipaddresstype): {{String}}
+  [SecurityGroupIds](#cfn-transfer-webapp-vpc-securitygroupids): {{
+    - String}}
+  [SubnetIds](#cfn-transfer-webapp-vpc-subnetids): {{
+    - String}}
+  [VpcId](#cfn-transfer-webapp-vpc-vpcid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-transfer-webapp-vpc-properties"></a>
 
-`SecurityGroupIds`
-
+`IpAddressType`  <a name="cfn-transfer-webapp-vpc-ipaddresstype"></a>
 Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `IPV4 | DUALSTACK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `11`
-
-_Maximum_: `20 | 10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SubnetIds`
-
+`SecurityGroupIds`  <a name="cfn-transfer-webapp-vpc-securitygroupids"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `11`
+*Maximum*: `20 | 10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `15`
-
-_Maximum_: `24 | 10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VpcId`
-
+`SubnetIds`  <a name="cfn-transfer-webapp-vpc-subnetids"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `15`
+*Maximum*: `24 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^vpc-[0-9a-f]{8,17}$`
-
-_Minimum_: `12`
-
-_Maximum_: `21`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-WebAppCustomization
+`VpcId`  <a name="cfn-transfer-webapp-vpc-vpcid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^vpc-[0-9a-f]{8,17}$`
+*Minimum*: `12`
+*Maximum*: `21`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

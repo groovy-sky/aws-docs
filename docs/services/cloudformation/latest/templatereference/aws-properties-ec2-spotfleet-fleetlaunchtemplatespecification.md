@@ -2,106 +2,73 @@
 title: "AWS::EC2::SpotFleet FleetLaunchTemplateSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet FleetLaunchTemplateSpecification
+<a name="aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification"></a>
 
 Specifies the launch template to be used by the Spot Fleet request for configuring Amazon EC2 instances.
 
 You must specify the following:
++ The ID or the name of the launch template, but not both.
++ The version of the launch template.
 
-- The ID or the name of the launch template, but not both.
+`FleetLaunchTemplateSpecification` is a property of the [AWS::EC2::SpotFleet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html) resource.
 
-- The version of the launch template.
+For information about creating a launch template, see [AWS::EC2::LaunchTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html) and [Create a launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html#create-launch-template) in the *Amazon EC2 User Guide*.
 
-`FleetLaunchTemplateSpecification` is a property of the [AWS::EC2::SpotFleet](../userguide/aws-resource-ec2-spotfleet.md) resource.
-
-For information about creating a launch template, see
-[AWS::EC2::LaunchTemplate](../userguide/aws-resource-ec2-launchtemplate.md) and
-[Create a launch template](../../../ec2/latest/userguide/ec2-launch-templates.md#create-launch-template)
-in the _Amazon EC2 User Guide_.
-
-For examples of launch templates, see [Examples](../userguide/aws-resource-ec2-launchtemplate.md#aws-resource-ec2-launchtemplate--examples).
+For examples of launch templates, see [Examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#aws-resource-ec2-launchtemplate--examples).
 
 ## Syntax
+<a name="aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "LaunchTemplateId" : String,
-  "LaunchTemplateName" : String,
-  "Version" : String
+  "[LaunchTemplateId](#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplateid)" : {{String}},
+  "[LaunchTemplateName](#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplatename)" : {{String}},
+  "[Version](#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-version)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification-syntax.yaml"></a>
 
-```yaml
-
-  LaunchTemplateId: String
-  LaunchTemplateName: String
-  Version: String
-
+```
+  [LaunchTemplateId](#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplateid): {{String}}
+  [LaunchTemplateName](#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplatename): {{String}}
+  [Version](#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-version): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification-properties"></a>
 
-`LaunchTemplateId`
-
+`LaunchTemplateId`  <a name="cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplateid"></a>
 The ID of the launch template.
-
 You must specify the `LaunchTemplateId` or the `LaunchTemplateName`, but not both.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LaunchTemplateName`
-
+`LaunchTemplateName`  <a name="cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplatename"></a>
 The name of the launch template.
-
 You must specify the `LaunchTemplateName` or the `LaunchTemplateId`, but not both.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `[a-zA-Z0-9\(\)\.\-/_]+`
+*Minimum*: `3`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9\(\)\.\-/_]+`
-
-_Minimum_: `3`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Version`
-
+`Version`  <a name="cfn-ec2-spotfleet-fleetlaunchtemplatespecification-version"></a>
 The version number of the launch template.
-
-Specifying `$Latest` or `$Default` for the template version number
-is not supported. However, you can specify
-`LatestVersionNumber` or `DefaultVersionNumber` using the
-`Fn::GetAtt` intrinsic function. For more information, see [Fn::GetAtt](../userguide/aws-resource-ec2-launchtemplate.md#aws-resource-ec2-launchtemplate-return-values-fn--getatt).
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EbsBlockDevice
-
-GroupIdentifier
+Specifying `$Latest` or `$Default` for the template version number is not supported. However, you can specify `LatestVersionNumber` or `DefaultVersionNumber` using the `Fn::GetAtt` intrinsic function. For more information, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#aws-resource-ec2-launchtemplate-return-values-fn--getatt).
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

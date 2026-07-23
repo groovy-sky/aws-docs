@@ -2,99 +2,68 @@
 title: "AWS::Lex::Bot IntentClosingSetting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot IntentClosingSetting
+<a name="aws-properties-lex-bot-intentclosingsetting"></a>
 
-Provides a statement the Amazon Lex conveys to the user when the intent
-is successfully fulfilled.
+Provides a statement the Amazon Lex conveys to the user when the intent is successfully fulfilled.
 
 ## Syntax
+<a name="aws-properties-lex-bot-intentclosingsetting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-intentclosingsetting-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClosingResponse" : ResponseSpecification,
-  "Conditional" : ConditionalSpecification,
-  "IsActive" : Boolean,
-  "NextStep" : DialogState
+  "[ClosingResponse](#cfn-lex-bot-intentclosingsetting-closingresponse)" : {{ResponseSpecification}},
+  "[Conditional](#cfn-lex-bot-intentclosingsetting-conditional)" : {{ConditionalSpecification}},
+  "[IsActive](#cfn-lex-bot-intentclosingsetting-isactive)" : {{Boolean}},
+  "[NextStep](#cfn-lex-bot-intentclosingsetting-nextstep)" : {{DialogState}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-intentclosingsetting-syntax.yaml"></a>
 
-```yaml
-
-  ClosingResponse:
-    ResponseSpecification
-  Conditional:
-    ConditionalSpecification
-  IsActive: Boolean
-  NextStep:
-    DialogState
-
+```
+  [ClosingResponse](#cfn-lex-bot-intentclosingsetting-closingresponse): {{
+    ResponseSpecification}}
+  [Conditional](#cfn-lex-bot-intentclosingsetting-conditional): {{
+    ConditionalSpecification}}
+  [IsActive](#cfn-lex-bot-intentclosingsetting-isactive): {{Boolean}}
+  [NextStep](#cfn-lex-bot-intentclosingsetting-nextstep): {{
+    DialogState}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-intentclosingsetting-properties"></a>
 
-`ClosingResponse`
+`ClosingResponse`  <a name="cfn-lex-bot-intentclosingsetting-closingresponse"></a>
+The response that Amazon Lex sends to the user when the intent is complete.
+*Required*: No
+*Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The response that Amazon Lex sends to the user when the intent is
-complete.
+`Conditional`  <a name="cfn-lex-bot-intentclosingsetting-conditional"></a>
+A list of conditional branches associated with the intent's closing response. These branches are executed when the `nextStep` attribute is set to `EvalutateConditional`.
+*Required*: No
+*Type*: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`IsActive`  <a name="cfn-lex-bot-intentclosingsetting-isactive"></a>
+Specifies whether an intent's closing response is used. When this field is false, the closing response isn't sent to the user. If the `IsActive` field isn't specified, the default is true.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Conditional`
-
-A list of conditional branches associated with the intent's closing
-response. These branches are executed when the `nextStep`
-attribute is set to `EvalutateConditional`.
-
-_Required_: No
-
-_Type_: [ConditionalSpecification](aws-properties-lex-bot-conditionalspecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IsActive`
-
-Specifies whether an intent's closing response is used. When this
-field is false, the closing response isn't sent to the user. If the
-`IsActive` field isn't specified, the default is
-true.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NextStep`
-
-Specifies the next step that the bot executes after playing the
-intent's closing response.
-
-_Required_: No
-
-_Type_: [DialogState](aws-properties-lex-bot-dialogstate.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Intent
-
-IntentConfirmationSetting
+`NextStep`  <a name="cfn-lex-bot-intentclosingsetting-nextstep"></a>
+Specifies the next step that the bot executes after playing the intent's closing response.
+*Required*: No
+*Type*: [DialogState](aws-properties-lex-bot-dialogstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

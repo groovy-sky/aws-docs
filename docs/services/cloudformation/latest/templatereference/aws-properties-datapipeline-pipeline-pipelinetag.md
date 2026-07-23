@@ -2,67 +2,49 @@
 title: "AWS::DataPipeline::Pipeline PipelineTag"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataPipeline::Pipeline PipelineTag
+<a name="aws-properties-datapipeline-pipeline-pipelinetag"></a>
 
-A list of arbitrary tags (key-value pairs) to associate with the pipeline, which you
-can use to control permissions. For more information, see [Controlling Access to\
-Pipelines and Resources](../../../datapipeline/latest/developerguide/dp-control-access.md) in the
-_AWS Data Pipeline Developer Guide_.
+A list of arbitrary tags (key-value pairs) to associate with the pipeline, which you can use to control permissions. For more information, see [Controlling Access to Pipelines and Resources](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-control-access.html) in the *AWS Data Pipeline Developer Guide*.
 
 ## Syntax
+<a name="aws-properties-datapipeline-pipeline-pipelinetag-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datapipeline-pipeline-pipelinetag-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Value" : String
+  "[Key](#cfn-datapipeline-pipeline-pipelinetag-key)" : {{String}},
+  "[Value](#cfn-datapipeline-pipeline-pipelinetag-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datapipeline-pipeline-pipelinetag-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Value: String
-
+```
+  [Key](#cfn-datapipeline-pipeline-pipelinetag-key): {{String}}
+  [Value](#cfn-datapipeline-pipeline-pipelinetag-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datapipeline-pipeline-pipelinetag-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-datapipeline-pipeline-pipelinetag-key"></a>
 The key name of a tag.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-datapipeline-pipeline-pipelinetag-value"></a>
 The value to associate with the key name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipelineObject
-
-Next
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

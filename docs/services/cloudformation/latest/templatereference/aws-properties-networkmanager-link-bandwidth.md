@@ -2,64 +2,49 @@
 title: "AWS::NetworkManager::Link Bandwidth"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::Link Bandwidth
+<a name="aws-properties-networkmanager-link-bandwidth"></a>
 
 Describes bandwidth information.
 
 ## Syntax
+<a name="aws-properties-networkmanager-link-bandwidth-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-networkmanager-link-bandwidth-syntax.json"></a>
 
-```json
-
+```
 {
-  "DownloadSpeed" : Integer,
-  "UploadSpeed" : Integer
+  "[DownloadSpeed](#cfn-networkmanager-link-bandwidth-downloadspeed)" : {{Integer}},
+  "[UploadSpeed](#cfn-networkmanager-link-bandwidth-uploadspeed)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-networkmanager-link-bandwidth-syntax.yaml"></a>
 
-```yaml
-
-  DownloadSpeed: Integer
-  UploadSpeed: Integer
-
+```
+  [DownloadSpeed](#cfn-networkmanager-link-bandwidth-downloadspeed): {{Integer}}
+  [UploadSpeed](#cfn-networkmanager-link-bandwidth-uploadspeed): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-networkmanager-link-bandwidth-properties"></a>
 
-`DownloadSpeed`
-
+`DownloadSpeed`  <a name="cfn-networkmanager-link-bandwidth-downloadspeed"></a>
 Download speed in Mbps.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UploadSpeed`
-
+`UploadSpeed`  <a name="cfn-networkmanager-link-bandwidth-uploadspeed"></a>
 Upload speed in Mbps.
-
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::NetworkManager::Link
-
-Tag
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

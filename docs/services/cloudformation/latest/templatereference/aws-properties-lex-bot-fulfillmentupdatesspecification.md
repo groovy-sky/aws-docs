@@ -2,103 +2,70 @@
 title: "AWS::Lex::Bot FulfillmentUpdatesSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot FulfillmentUpdatesSpecification
+<a name="aws-properties-lex-bot-fulfillmentupdatesspecification"></a>
 
-Provides information for updating the user on the progress of
-fulfilling an intent.
+Provides information for updating the user on the progress of fulfilling an intent.
 
 ## Syntax
+<a name="aws-properties-lex-bot-fulfillmentupdatesspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-fulfillmentupdatesspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "Active" : Boolean,
-  "StartResponse" : FulfillmentStartResponseSpecification,
-  "TimeoutInSeconds" : Integer,
-  "UpdateResponse" : FulfillmentUpdateResponseSpecification
+  "[Active](#cfn-lex-bot-fulfillmentupdatesspecification-active)" : {{Boolean}},
+  "[StartResponse](#cfn-lex-bot-fulfillmentupdatesspecification-startresponse)" : {{FulfillmentStartResponseSpecification}},
+  "[TimeoutInSeconds](#cfn-lex-bot-fulfillmentupdatesspecification-timeoutinseconds)" : {{Integer}},
+  "[UpdateResponse](#cfn-lex-bot-fulfillmentupdatesspecification-updateresponse)" : {{FulfillmentUpdateResponseSpecification}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-fulfillmentupdatesspecification-syntax.yaml"></a>
 
-```yaml
-
-  Active: Boolean
-  StartResponse:
-    FulfillmentStartResponseSpecification
-  TimeoutInSeconds: Integer
-  UpdateResponse:
-    FulfillmentUpdateResponseSpecification
-
+```
+  [Active](#cfn-lex-bot-fulfillmentupdatesspecification-active): {{Boolean}}
+  [StartResponse](#cfn-lex-bot-fulfillmentupdatesspecification-startresponse): {{
+    FulfillmentStartResponseSpecification}}
+  [TimeoutInSeconds](#cfn-lex-bot-fulfillmentupdatesspecification-timeoutinseconds): {{Integer}}
+  [UpdateResponse](#cfn-lex-bot-fulfillmentupdatesspecification-updateresponse): {{
+    FulfillmentUpdateResponseSpecification}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-fulfillmentupdatesspecification-properties"></a>
 
-`Active`
+`Active`  <a name="cfn-lex-bot-fulfillmentupdatesspecification-active"></a>
+Determines whether fulfillment updates are sent to the user. When this field is true, updates are sent.
+If the `active` field is set to true, the `startResponse`, `updateResponse`, and `timeoutInSeconds` fields are required.
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Determines whether fulfillment updates are sent to the user. When
-this field is true, updates are sent.
+`StartResponse`  <a name="cfn-lex-bot-fulfillmentupdatesspecification-startresponse"></a>
+Provides configuration information for the message sent to users when the fulfillment Lambda functions starts running.
+*Required*: No
+*Type*: [FulfillmentStartResponseSpecification](aws-properties-lex-bot-fulfillmentstartresponsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-If the `active` field is set to true, the
-`startResponse`, `updateResponse`, and
-`timeoutInSeconds` fields are required.
+`TimeoutInSeconds`  <a name="cfn-lex-bot-fulfillmentupdatesspecification-timeoutinseconds"></a>
+The length of time that the fulfillment Lambda function should run before it times out.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `900`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartResponse`
-
-Provides configuration information for the message sent to users
-when the fulfillment Lambda functions starts running.
-
-_Required_: No
-
-_Type_: [FulfillmentStartResponseSpecification](aws-properties-lex-bot-fulfillmentstartresponsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeoutInSeconds`
-
-The length of time that the fulfillment Lambda function should run
-before it times out.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `900`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UpdateResponse`
-
-Provides configuration information for messages sent periodically to
-the user while the fulfillment Lambda function is running.
-
-_Required_: No
-
-_Type_: [FulfillmentUpdateResponseSpecification](aws-properties-lex-bot-fulfillmentupdateresponsespecification.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FulfillmentUpdateResponseSpecification
-
-GenerativeAISettings
+`UpdateResponse`  <a name="cfn-lex-bot-fulfillmentupdatesspecification-updateresponse"></a>
+Provides configuration information for messages sent periodically to the user while the fulfillment Lambda function is running.
+*Required*: No
+*Type*: [FulfillmentUpdateResponseSpecification](aws-properties-lex-bot-fulfillmentupdateresponsespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,55 @@
 title: "AWS::IoTFleetWise::Campaign StorageMinimumTimeToLive"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Campaign StorageMinimumTimeToLive
+<a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive"></a>
 
 Information about the minimum amount of time that data will be kept.
 
-###### Important
-
-AWS IoT FleetWise will no longer be open to new customers starting April 30, 2026.
-If you would like to use AWS IoT FleetWise, sign up prior to that date. Existing customers can
-continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](../../../iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.md).
+**Important**
+AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
 
 ## Syntax
+<a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive-syntax.json"></a>
 
-```json
-
+```
 {
-  "Unit" : String,
-  "Value" : Integer
+  "[Unit](#cfn-iotfleetwise-campaign-storageminimumtimetolive-unit)" : {{String}},
+  "[Value](#cfn-iotfleetwise-campaign-storageminimumtimetolive-value)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive-syntax.yaml"></a>
 
-```yaml
-
-  Unit: String
-  Value: Integer
-
+```
+  [Unit](#cfn-iotfleetwise-campaign-storageminimumtimetolive-unit): {{String}}
+  [Value](#cfn-iotfleetwise-campaign-storageminimumtimetolive-value): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive-properties"></a>
 
-`Unit`
-
+`Unit`  <a name="cfn-iotfleetwise-campaign-storageminimumtimetolive-unit"></a>
 The time increment type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HOURS | DAYS | WEEKS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HOURS | DAYS | WEEKS`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Value`
-
+`Value`  <a name="cfn-iotfleetwise-campaign-storageminimumtimetolive-value"></a>
 The minimum amount of time to store the data.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `10000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StorageMaximumSize
-
-Tag
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `10000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

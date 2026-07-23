@@ -2,81 +2,60 @@
 title: "AWS::Connect::EvaluationForm EvaluationFormItemEnablementConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::EvaluationForm EvaluationFormItemEnablementConfiguration
+<a name="aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration"></a>
 
 An item enablement configuration.
 
 ## Syntax
+<a name="aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Action" : String,
-  "Condition" : EvaluationFormItemEnablementCondition,
-  "DefaultAction" : String
+  "[Action](#cfn-connect-evaluationform-evaluationformitemenablementconfiguration-action)" : {{String}},
+  "[Condition](#cfn-connect-evaluationform-evaluationformitemenablementconfiguration-condition)" : {{EvaluationFormItemEnablementCondition}},
+  "[DefaultAction](#cfn-connect-evaluationform-evaluationformitemenablementconfiguration-defaultaction)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Action: String
-  Condition:
-    EvaluationFormItemEnablementCondition
-  DefaultAction: String
-
+```
+  [Action](#cfn-connect-evaluationform-evaluationformitemenablementconfiguration-action): {{String}}
+  [Condition](#cfn-connect-evaluationform-evaluationformitemenablementconfiguration-condition): {{
+    EvaluationFormItemEnablementCondition}}
+  [DefaultAction](#cfn-connect-evaluationform-evaluationformitemenablementconfiguration-defaultaction): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-evaluationform-evaluationformitemenablementconfiguration-properties"></a>
 
-`Action`
-
+`Action`  <a name="cfn-connect-evaluationform-evaluationformitemenablementconfiguration-action"></a>
 An enablement action that if condition is satisfied.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DISABLE | ENABLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DISABLE | ENABLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Condition`
-
+`Condition`  <a name="cfn-connect-evaluationform-evaluationformitemenablementconfiguration-condition"></a>
 A condition for item enablement configuration.
+*Required*: Yes
+*Type*: [EvaluationFormItemEnablementCondition](aws-properties-connect-evaluationform-evaluationformitemenablementcondition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [EvaluationFormItemEnablementCondition](aws-properties-connect-evaluationform-evaluationformitemenablementcondition.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DefaultAction`
-
+`DefaultAction`  <a name="cfn-connect-evaluationform-evaluationformitemenablementconfiguration-defaultaction"></a>
 An enablement action that if condition is not satisfied.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `DISABLE | ENABLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluationFormItemEnablementConditionOperand
-
-EvaluationFormItemEnablementExpression
+*Required*: No
+*Type*: String
+*Allowed values*: `DISABLE | ENABLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

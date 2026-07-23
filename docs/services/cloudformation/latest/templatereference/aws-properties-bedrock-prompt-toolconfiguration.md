@@ -2,70 +2,52 @@
 title: "AWS::Bedrock::Prompt ToolConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Prompt ToolConfiguration
+<a name="aws-properties-bedrock-prompt-toolconfiguration"></a>
 
-Configuration information for the tools that you pass to a model. For more information,
-see [Tool use\
-(function calling)](../../../bedrock/latest/userguide/tool-use.md) in the Amazon Bedrock User Guide.
+Configuration information for the tools that you pass to a model. For more information, see [Tool use (function calling)](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html) in the Amazon Bedrock User Guide.
 
 ## Syntax
+<a name="aws-properties-bedrock-prompt-toolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-prompt-toolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ToolChoice" : ToolChoice,
-  "Tools" : [ Tool, ... ]
+  "[ToolChoice](#cfn-bedrock-prompt-toolconfiguration-toolchoice)" : {{ToolChoice}},
+  "[Tools](#cfn-bedrock-prompt-toolconfiguration-tools)" : {{[ Tool, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-prompt-toolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ToolChoice:
-    ToolChoice
-  Tools:
-    - Tool
-
+```
+  [ToolChoice](#cfn-bedrock-prompt-toolconfiguration-toolchoice): {{
+    ToolChoice}}
+  [Tools](#cfn-bedrock-prompt-toolconfiguration-tools): {{
+    - Tool}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-prompt-toolconfiguration-properties"></a>
 
-`ToolChoice`
-
+`ToolChoice`  <a name="cfn-bedrock-prompt-toolconfiguration-toolchoice"></a>
 If supported by model, forces the model to request a tool.
+*Required*: No
+*Type*: [ToolChoice](aws-properties-bedrock-prompt-toolchoice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ToolChoice](aws-properties-bedrock-prompt-toolchoice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tools`
-
+`Tools`  <a name="cfn-bedrock-prompt-toolconfiguration-tools"></a>
 An array of tools that you want to pass to a model.
-
-_Required_: Yes
-
-_Type_: Array of [Tool](aws-properties-bedrock-prompt-tool.md)
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ToolChoice
-
-ToolInputSchema
+*Required*: Yes
+*Type*: Array of [Tool](aws-properties-bedrock-prompt-tool.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

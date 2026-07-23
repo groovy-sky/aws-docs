@@ -2,70 +2,52 @@
 title: "AWS::CleanRooms::IdMappingTable IdMappingTableInputReferenceConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::IdMappingTable IdMappingTableInputReferenceConfig
+<a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig"></a>
 
 Provides the input reference configuration for the ID mapping table.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "InputReferenceArn" : String,
-  "ManageResourcePolicies" : Boolean
+  "[InputReferenceArn](#cfn-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-inputreferencearn)" : {{String}},
+  "[ManageResourcePolicies](#cfn-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-manageresourcepolicies)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-syntax.yaml"></a>
 
-```yaml
-
-  InputReferenceArn: String
-  ManageResourcePolicies: Boolean
-
+```
+  [InputReferenceArn](#cfn-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-inputreferencearn): {{String}}
+  [ManageResourcePolicies](#cfn-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-manageresourcepolicies): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-properties"></a>
 
-`InputReferenceArn`
-
+`InputReferenceArn`  <a name="cfn-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-inputreferencearn"></a>
 The Amazon Resource Name (ARN) of the referenced resource in AWS Entity Resolution. Valid values are ID mapping workflow ARNs.
+*Required*: Yes
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `20`
-
-_Maximum_: `2048`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ManageResourcePolicies`
-
+`ManageResourcePolicies`  <a name="cfn-cleanrooms-idmappingtable-idmappingtableinputreferenceconfig-manageresourcepolicies"></a>
 When `TRUE`, AWS Clean Rooms manages permissions for the ID mapping table resource.
-
 When `FALSE`, the resource owner manages permissions for the ID mapping table resource.
-
-_Required_: Yes
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CleanRooms::IdMappingTable
-
-IdMappingTableInputReferenceProperties
+*Required*: Yes
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

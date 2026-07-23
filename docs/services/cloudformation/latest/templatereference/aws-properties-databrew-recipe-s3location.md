@@ -2,73 +2,53 @@
 title: "AWS::DataBrew::Recipe S3Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Recipe S3Location
+<a name="aws-properties-databrew-recipe-s3location"></a>
 
-Represents an Amazon S3 location (bucket name, bucket owner, and object key) where DataBrew can read
-input data, or write output from a job.
+Represents an Amazon S3 location (bucket name, bucket owner, and object key) where DataBrew can read input data, or write output from a job.
 
 ## Syntax
+<a name="aws-properties-databrew-recipe-s3location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-databrew-recipe-s3location-syntax.json"></a>
 
-```json
-
+```
 {
-  "Bucket" : String,
-  "Key" : String
+  "[Bucket](#cfn-databrew-recipe-s3location-bucket)" : {{String}},
+  "[Key](#cfn-databrew-recipe-s3location-key)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-databrew-recipe-s3location-syntax.yaml"></a>
 
-```yaml
-
-  Bucket: String
-  Key: String
-
+```
+  [Bucket](#cfn-databrew-recipe-s3location-bucket): {{String}}
+  [Key](#cfn-databrew-recipe-s3location-key): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-databrew-recipe-s3location-properties"></a>
 
-`Bucket`
-
+`Bucket`  <a name="cfn-databrew-recipe-s3location-bucket"></a>
 The Amazon S3 bucket name.
+*Required*: Yes
+*Type*: String
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Key`
-
+`Key`  <a name="cfn-databrew-recipe-s3location-key"></a>
 The unique name of the object in the bucket.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1280`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RecipeStep
-
-SecondaryInput
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1280`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

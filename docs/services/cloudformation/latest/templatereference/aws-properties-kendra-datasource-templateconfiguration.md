@@ -2,57 +2,42 @@
 title: "AWS::Kendra::DataSource TemplateConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource TemplateConfiguration
+<a name="aws-properties-kendra-datasource-templateconfiguration"></a>
 
-Provides a template for the configuration information to connect to your data
-source.
+Provides a template for the configuration information to connect to your data source.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-templateconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-templateconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Template" : Json
+  "[Template](#cfn-kendra-datasource-templateconfiguration-template)" : {{Json}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-templateconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Template: Json
-
+```
+  [Template](#cfn-kendra-datasource-templateconfiguration-template): {{Json}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-templateconfiguration-properties"></a>
 
-`Template`
-
-The template schema used for the data source, where templates schemas are
-supported.
-
-See [Data source\
-template schemas](../../../kendra/latest/dg/ds-schemas.md).
-
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-WebCrawlerAuthenticationConfiguration
+`Template`  <a name="cfn-kendra-datasource-templateconfiguration-template"></a>
+The template schema used for the data source, where templates schemas are supported.
+See [Data source template schemas](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html).
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

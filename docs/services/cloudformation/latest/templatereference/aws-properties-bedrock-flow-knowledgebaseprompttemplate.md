@@ -2,56 +2,43 @@
 title: "AWS::Bedrock::Flow KnowledgeBasePromptTemplate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow KnowledgeBasePromptTemplate
+<a name="aws-properties-bedrock-flow-knowledgebaseprompttemplate"></a>
 
 Defines a custom prompt template for orchestrating the retrieval and generation process.
 
 ## Syntax
+<a name="aws-properties-bedrock-flow-knowledgebaseprompttemplate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrock-flow-knowledgebaseprompttemplate-syntax.json"></a>
 
-```json
-
+```
 {
-  "TextPromptTemplate" : String
+  "[TextPromptTemplate](#cfn-bedrock-flow-knowledgebaseprompttemplate-textprompttemplate)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrock-flow-knowledgebaseprompttemplate-syntax.yaml"></a>
 
-```yaml
-
-  TextPromptTemplate: String
-
+```
+  [TextPromptTemplate](#cfn-bedrock-flow-knowledgebaseprompttemplate-textprompttemplate): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrock-flow-knowledgebaseprompttemplate-properties"></a>
 
-`TextPromptTemplate`
-
+`TextPromptTemplate`  <a name="cfn-bedrock-flow-knowledgebaseprompttemplate-textprompttemplate"></a>
 The text of the prompt template.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-KnowledgeBaseOrchestrationConfiguration
-
-LambdaFunctionFlowNodeConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

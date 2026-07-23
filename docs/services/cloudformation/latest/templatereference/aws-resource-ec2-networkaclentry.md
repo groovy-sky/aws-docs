@@ -2,205 +2,155 @@
 title: "AWS::EC2::NetworkAclEntry"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkAclEntry
+<a name="aws-resource-ec2-networkaclentry"></a>
 
-Specifies an entry, known as a rule, in a network ACL with a rule number you specify.
-Each network ACL has a set of numbered ingress rules and a separate set of numbered egress
-rules.
+Specifies an entry, known as a rule, in a network ACL with a rule number you specify. Each network ACL has a set of numbered ingress rules and a separate set of numbered egress rules.
 
-To create the network ACL, see [AWS::EC2::NetworkAcl](../userguide/aws-resource-ec2-networkacl.md).
+To create the network ACL, see [AWS::EC2::NetworkAcl](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkacl.html).
 
-For information about the protocol value, see [Protocol\
-Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
+ For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
 
 ## Syntax
+<a name="aws-resource-ec2-networkaclentry-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ec2-networkaclentry-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::EC2::NetworkAclEntry",
   "Properties" : {
-      "CidrBlock" : String,
-      "Egress" : Boolean,
-      "Icmp" : Icmp,
-      "Ipv6CidrBlock" : String,
-      "NetworkAclId" : String,
-      "PortRange" : PortRange,
-      "Protocol" : Integer,
-      "RuleAction" : String,
-      "RuleNumber" : Integer
+      "[CidrBlock](#cfn-ec2-networkaclentry-cidrblock)" : {{String}},
+      "[Egress](#cfn-ec2-networkaclentry-egress)" : {{Boolean}},
+      "[Icmp](#cfn-ec2-networkaclentry-icmp)" : {{Icmp}},
+      "[Ipv6CidrBlock](#cfn-ec2-networkaclentry-ipv6cidrblock)" : {{String}},
+      "[NetworkAclId](#cfn-ec2-networkaclentry-networkaclid)" : {{String}},
+      "[PortRange](#cfn-ec2-networkaclentry-portrange)" : {{PortRange}},
+      "[Protocol](#cfn-ec2-networkaclentry-protocol)" : {{Integer}},
+      "[RuleAction](#cfn-ec2-networkaclentry-ruleaction)" : {{String}},
+      "[RuleNumber](#cfn-ec2-networkaclentry-rulenumber)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ec2-networkaclentry-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::EC2::NetworkAclEntry
 Properties:
-  CidrBlock: String
-  Egress: Boolean
-  Icmp:
-    Icmp
-  Ipv6CidrBlock: String
-  NetworkAclId: String
-  PortRange:
-    PortRange
-  Protocol: Integer
-  RuleAction: String
-  RuleNumber: Integer
-
+  [CidrBlock](#cfn-ec2-networkaclentry-cidrblock): {{String}}
+  [Egress](#cfn-ec2-networkaclentry-egress): {{Boolean}}
+  [Icmp](#cfn-ec2-networkaclentry-icmp): {{
+    Icmp}}
+  [Ipv6CidrBlock](#cfn-ec2-networkaclentry-ipv6cidrblock): {{String}}
+  [NetworkAclId](#cfn-ec2-networkaclentry-networkaclid): {{String}}
+  [PortRange](#cfn-ec2-networkaclentry-portrange): {{
+    PortRange}}
+  [Protocol](#cfn-ec2-networkaclentry-protocol): {{Integer}}
+  [RuleAction](#cfn-ec2-networkaclentry-ruleaction): {{String}}
+  [RuleNumber](#cfn-ec2-networkaclentry-rulenumber): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-ec2-networkaclentry-properties"></a>
 
-`CidrBlock`
+`CidrBlock`  <a name="cfn-ec2-networkaclentry-cidrblock"></a>
+The IPv4 CIDR range to allow or deny, in CIDR notation (for example, 172.16.0.0/24). You must specify an IPv4 CIDR block or an IPv6 CIDR block.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The IPv4 CIDR range to allow or deny, in CIDR notation (for example, 172.16.0.0/24).
-You must specify an IPv4 CIDR block or an IPv6 CIDR block.
+`Egress`  <a name="cfn-ec2-networkaclentry-egress"></a>
+Whether this rule applies to egress traffic from the subnet (`true`) or ingress traffic to the subnet (`false`). By default, AWS CloudFormation specifies `false`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
+`Icmp`  <a name="cfn-ec2-networkaclentry-icmp"></a>
+The Internet Control Message Protocol (ICMP) code and type. Required if specifying 1 (ICMP) for the protocol parameter.
+*Required*: Conditional
+*Type*: [Icmp](aws-properties-ec2-networkaclentry-icmp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Ipv6CidrBlock`  <a name="cfn-ec2-networkaclentry-ipv6cidrblock"></a>
+The IPv6 network range to allow or deny, in CIDR notation. You must specify an IPv4 CIDR block or an IPv6 CIDR block.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Egress`
-
-Whether this rule applies to egress traffic from the subnet ( `true`) or
-ingress traffic to the subnet ( `false`). By default, AWS CloudFormation
-specifies `false`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Icmp`
-
-The Internet Control Message Protocol (ICMP) code and type.
-Required if specifying 1 (ICMP) for the protocol parameter.
-
-_Required_: Conditional
-
-_Type_: [Icmp](aws-properties-ec2-networkaclentry-icmp.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Ipv6CidrBlock`
-
-The IPv6 network range to allow or deny, in CIDR notation.
-You must specify an IPv4 CIDR block or an IPv6 CIDR block.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NetworkAclId`
-
+`NetworkAclId`  <a name="cfn-ec2-networkaclentry-networkaclid"></a>
 The ID of the ACL for the entry.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
+`PortRange`  <a name="cfn-ec2-networkaclentry-portrange"></a>
+The range of port numbers for the UDP/TCP protocol. Required if specifying 6 (TCP) or 17 (UDP) for the protocol parameter.
+*Required*: Conditional
+*Type*: [PortRange](aws-properties-ec2-networkaclentry-portrange.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`Protocol`  <a name="cfn-ec2-networkaclentry-protocol"></a>
+The IP protocol that the rule applies to. You must specify -1 or a protocol number. You can specify -1 for all protocols.
+If you specify -1, all ports are opened and the `PortRange` property is ignored.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`RuleAction`  <a name="cfn-ec2-networkaclentry-ruleaction"></a>
+Whether to allow or deny traffic that matches the rule; valid values are "allow" or "deny".
+*Required*: Yes
+*Type*: String
+*Allowed values*: `allow | deny`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`PortRange`
-
-The range of port numbers for the UDP/TCP protocol. Required if specifying 6
-(TCP) or 17 (UDP) for the protocol parameter.
-
-_Required_: Conditional
-
-_Type_: [PortRange](aws-properties-ec2-networkaclentry-portrange.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
-The IP protocol that the rule applies to. You must specify -1 or a protocol number. You
-can specify -1 for all protocols.
-
-###### Note
-
-If you specify -1, all ports are opened and the `PortRange` property is
-ignored.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleAction`
-
-Whether to allow or deny traffic that matches the rule; valid values are "allow" or
-"deny".
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `allow | deny`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RuleNumber`
-
-Rule number to assign to the entry, such as 100. ACL entries are processed in ascending
-order by rule number. Entries can't use the same rule number unless one is an egress rule
-and the other is an ingress rule.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`RuleNumber`  <a name="cfn-ec2-networkaclentry-rulenumber"></a>
+Rule number to assign to the entry, such as 100. ACL entries are processed in ascending order by rule number. Entries can't use the same rule number unless one is an egress rule and the other is an ingress rule.
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-ec2-networkaclentry-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ec2-networkaclentry-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the network ACL entry.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ec2-networkaclentry-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Id`
+####
+<a name="aws-resource-ec2-networkaclentry-return-values-fn--getatt-fn--getatt"></a>
 
+`Id`  <a name="Id-fn::getatt"></a>
 The ID of the network ACL entry.
 
 ## Examples
+<a name="aws-resource-ec2-networkaclentry--examples"></a>
 
 ### Network ACL entries for inbound and outbound traffic
+<a name="aws-resource-ec2-networkaclentry--examples--Network_ACL_entries_for_inbound_and_outbound_traffic"></a>
 
-The following example creates a network ACL, and creates two entries in the NACL.
-The first entry allows inbound SSH traffic from the specified network. The second
-entry allows all outbound IPv4 traffic.
+The following example creates a network ACL, and creates two entries in the NACL. The first entry allows inbound SSH traffic from the specified network. The second entry allows all outbound IPv4 traffic.
 
 #### JSON
+<a name="aws-resource-ec2-networkaclentry--examples--Network_ACL_entries_for_inbound_and_outbound_traffic--json"></a>
 
-```json
-
+```
 {
     "Resources": {
         "MyNACL": {
@@ -249,9 +199,9 @@ entry allows all outbound IPv4 traffic.
 ```
 
 #### YAML
+<a name="aws-resource-ec2-networkaclentry--examples--Network_ACL_entries_for_inbound_and_outbound_traffic--yaml"></a>
 
-```yaml
-
+```
 Resources:
   MyNACL:
     Type: AWS::EC2::NetworkAcl
@@ -285,16 +235,8 @@ Resources:
 ```
 
 ## See also
-
-- [NetworkAclEntry](../../../../reference/awsec2/latest/apireference/apireference-query-createnetworkaclentry.md) in the _Amazon EC2 API_
-_Reference_
-
-- [Network ACLs](../../../vpc/latest/userguide/vpc-network-acls.md) in the _Amazon VPC User Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Icmp
+<a name="aws-resource-ec2-networkaclentry--seealso"></a>
++ [NetworkAclEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ApiReference-query-CreateNetworkAclEntry.html) in the *Amazon EC2 API Reference*
++ [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) in the *Amazon VPC User Guide*
 
 All content copied from https://docs.aws.amazon.com/.

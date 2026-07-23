@@ -2,70 +2,52 @@
 title: "AWS::GreengrassV2::Deployment IoTJobExecutionsRolloutConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GreengrassV2::Deployment IoTJobExecutionsRolloutConfig
+<a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig"></a>
 
-Contains information about the rollout configuration for a job. This configuration defines
-the rate at which the job deploys a configuration to a fleet of target devices.
+Contains information about the rollout configuration for a job. This configuration defines the rate at which the job deploys a configuration to a fleet of target devices.
 
 ## Syntax
+<a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ExponentialRate" : IoTJobExponentialRolloutRate,
-  "MaximumPerMinute" : Integer
+  "[ExponentialRate](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-exponentialrate)" : {{IoTJobExponentialRolloutRate}},
+  "[MaximumPerMinute](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-maximumperminute)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig-syntax.yaml"></a>
 
-```yaml
-
-  ExponentialRate:
-    IoTJobExponentialRolloutRate
-  MaximumPerMinute: Integer
-
+```
+  [ExponentialRate](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-exponentialrate): {{
+    IoTJobExponentialRolloutRate}}
+  [MaximumPerMinute](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-maximumperminute): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig-properties"></a>
 
-`ExponentialRate`
-
+`ExponentialRate`  <a name="cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-exponentialrate"></a>
 The exponential rate to increase the job rollout rate.
+*Required*: No
+*Type*: [IoTJobExponentialRolloutRate](aws-properties-greengrassv2-deployment-iotjobexponentialrolloutrate.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [IoTJobExponentialRolloutRate](aws-properties-greengrassv2-deployment-iotjobexponentialrolloutrate.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`MaximumPerMinute`
-
+`MaximumPerMinute`  <a name="cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-maximumperminute"></a>
 The maximum number of devices that receive a pending job notification, per minute.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IoTJobAbortCriteria
-
-IoTJobExponentialRolloutRate
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

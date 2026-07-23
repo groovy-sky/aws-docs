@@ -2,144 +2,123 @@
 title: "AWS::AppRunner::VpcIngressConnection"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::VpcIngressConnection
+<a name="aws-resource-apprunner-vpcingressconnection"></a>
 
-The `AWS::AppRunner::VpcIngressConnection` resource is an AWS App Runner resource type that specifies an App Runner VPC
-Ingress Connection.
+The `AWS::AppRunner::VpcIngressConnection` resource is an AWS App Runner resource type that specifies an App Runner VPC Ingress Connection.
 
 App Runner requires this resource when you want to associate your App Runner service to an Amazon VPC endpoint.
 
 ## Syntax
+<a name="aws-resource-apprunner-vpcingressconnection-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apprunner-vpcingressconnection-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::AppRunner::VpcIngressConnection",
   "Properties" : {
-      "IngressVpcConfiguration" : IngressVpcConfiguration,
-      "ServiceArn" : String,
-      "Tags" : [ Tag, ... ],
-      "VpcIngressConnectionName" : String
+      "[IngressVpcConfiguration](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration)" : {{IngressVpcConfiguration}},
+      "[ServiceArn](#cfn-apprunner-vpcingressconnection-servicearn)" : {{String}},
+      "[Tags](#cfn-apprunner-vpcingressconnection-tags)" : {{[ Tag, ... ]}},
+      "[VpcIngressConnectionName](#cfn-apprunner-vpcingressconnection-vpcingressconnectionname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apprunner-vpcingressconnection-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppRunner::VpcIngressConnection
 Properties:
-  IngressVpcConfiguration:
-    IngressVpcConfiguration
-  ServiceArn: String
-  Tags:
-    - Tag
-  VpcIngressConnectionName: String
-
+  [IngressVpcConfiguration](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration): {{
+    IngressVpcConfiguration}}
+  [ServiceArn](#cfn-apprunner-vpcingressconnection-servicearn): {{String}}
+  [Tags](#cfn-apprunner-vpcingressconnection-tags): {{
+    - Tag}}
+  [VpcIngressConnectionName](#cfn-apprunner-vpcingressconnection-vpcingressconnectionname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apprunner-vpcingressconnection-properties"></a>
 
-`IngressVpcConfiguration`
+`IngressVpcConfiguration`  <a name="cfn-apprunner-vpcingressconnection-ingressvpcconfiguration"></a>
+Specifications for the customer’s Amazon VPC and the related AWS PrivateLink VPC endpoint that are used to create the VPC Ingress Connection resource.
+*Required*: Yes
+*Type*: [IngressVpcConfiguration](aws-properties-apprunner-vpcingressconnection-ingressvpcconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Specifications for the customer’s Amazon VPC and the related AWS PrivateLink VPC endpoint that are used to create the VPC Ingress Connection
-resource.
-
-_Required_: Yes
-
-_Type_: [IngressVpcConfiguration](aws-properties-apprunner-vpcingressconnection-ingressvpcconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceArn`
-
+`ServiceArn`  <a name="cfn-apprunner-vpcingressconnection-servicearn"></a>
 The Amazon Resource Name (ARN) for this App Runner service that is used to create the VPC Ingress Connection resource.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws(-[\w]+)*:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[0-9]{12}:(\w|/|-){1,1011}`
+*Minimum*: `1`
+*Maximum*: `1011`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `arn:aws(-[\w]+)*:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[0-9]{12}:(\w|/|-){1,1011}`
-
-_Minimum_: `1`
-
-_Maximum_: `1011`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-apprunner-vpcingressconnection-tags"></a>
 An optional list of metadata items that you can associate with the VPC Ingress Connection resource. A tag is a key-value pair.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-apprunner-vpcingressconnection-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-apprunner-vpcingressconnection-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`VpcIngressConnectionName`
-
+`VpcIngressConnectionName`  <a name="cfn-apprunner-vpcingressconnection-vpcingressconnectionname"></a>
 The customer-provided VPC Ingress Connection name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[A-Za-z0-9][A-Za-z0-9\-_]{3,39}`
-
-_Minimum_: `4`
-
-_Maximum_: `40`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `[A-Za-z0-9][A-Za-z0-9\-_]{3,39}`
+*Minimum*: `4`
+*Maximum*: `40`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-apprunner-vpcingressconnection-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apprunner-vpcingressconnection-return-values-ref"></a>
 
 When the logical ID of this resource is provided to the `Ref` intrinsic function, `Ref` returns the resource name.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apprunner-vpcingressconnection-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`DomainName`
+####
+<a name="aws-resource-apprunner-vpcingressconnection-return-values-fn--getatt-fn--getatt"></a>
 
+`DomainName`  <a name="DomainName-fn::getatt"></a>
 The domain name associated with the VPC Ingress Connection resource.
 
-`Status`
+`Status`  <a name="Status-fn::getatt"></a>
+The current status of the VPC Ingress Connection. The VPC Ingress Connection displays one of the following statuses: `AVAILABLE`, `PENDING_CREATION`, `PENDING_UPDATE`, `PENDING_DELETION`,`FAILED_CREATION`, `FAILED_UPDATE`, `FAILED_DELETION`, and `DELETED`..
 
-The current status of the VPC Ingress Connection.
-The VPC Ingress Connection displays one of the following statuses: `AVAILABLE`, `PENDING_CREATION`, `PENDING_UPDATE`, `PENDING_DELETION`, `FAILED_CREATION`, `FAILED_UPDATE`, `FAILED_DELETION`, and `DELETED`..
-
-`VpcIngressConnectionArn`
-
+`VpcIngressConnectionArn`  <a name="VpcIngressConnectionArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the VPC Ingress Connection.
 
 ## Examples
+<a name="aws-resource-apprunner-vpcingressconnection--examples"></a>
 
 ### VPC Ingress Connection
+<a name="aws-resource-apprunner-vpcingressconnection--examples--VPC_Ingress_Connection"></a>
 
 This example illustrates creating a VPC Ingress Connection.
 
 #### JSON
+<a name="aws-resource-apprunner-vpcingressconnection--examples--VPC_Ingress_Connection--json"></a>
 
-```json
-
+```
 {
   "Type": "AWS::AppRunner::VpcIngressConnection",
   "Properties": {
@@ -154,9 +133,9 @@ This example illustrates creating a VPC Ingress Connection.
 ```
 
 #### YAML
+<a name="aws-resource-apprunner-vpcingressconnection--examples--VPC_Ingress_Connection--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::AppRunner::VpcIngressConnection
 Properties:
   IngressVpcConfiguration:
@@ -167,14 +146,7 @@ Properties:
 ```
 
 ## See also
-
-- [Configure network settings for incoming traffic](../../../apprunner/latest/dg/network-pl.md) in the
-_AWS App Runner Developer Guide_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-IngressVpcConfiguration
+<a name="aws-resource-apprunner-vpcingressconnection--seealso"></a>
++ [Configure network settings for incoming traffic](https://docs.aws.amazon.com/apprunner/latest/dg/network-pl.html) in the *AWS App Runner Developer Guide*
 
 All content copied from https://docs.aws.amazon.com/.

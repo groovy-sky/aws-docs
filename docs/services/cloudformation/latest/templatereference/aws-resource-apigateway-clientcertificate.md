@@ -2,94 +2,92 @@
 title: "AWS::ApiGateway::ClientCertificate"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::ClientCertificate
+<a name="aws-resource-apigateway-clientcertificate"></a>
 
 The `AWS::ApiGateway::ClientCertificate` resource creates a client certificate that API Gateway uses to configure client-side SSL authentication for sending requests to the integration endpoint.
 
 ## Syntax
+<a name="aws-resource-apigateway-clientcertificate-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigateway-clientcertificate-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGateway::ClientCertificate",
   "Properties" : {
-      "Description" : String,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-apigateway-clientcertificate-description)" : {{String}},
+      "[Tags](#cfn-apigateway-clientcertificate-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigateway-clientcertificate-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGateway::ClientCertificate
 Properties:
-  Description: String
-  Tags:
-    - Tag
-
+  [Description](#cfn-apigateway-clientcertificate-description): {{String}}
+  [Tags](#cfn-apigateway-clientcertificate-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-apigateway-clientcertificate-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-apigateway-clientcertificate-description"></a>
 The description of the client certificate.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-apigateway-clientcertificate-tags"></a>
 The collection of tags. Each tag element is associated with a given resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-apigateway-clientcertificate-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-apigateway-clientcertificate-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigateway-clientcertificate-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigateway-clientcertificate-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the client certificate name, such as `abc123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigateway-clientcertificate-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`ClientCertificateId`
+####
+<a name="aws-resource-apigateway-clientcertificate-return-values-fn--getatt-fn--getatt"></a>
 
+`ClientCertificateId`  <a name="ClientCertificateId-fn::getatt"></a>
 The ID for the client certificate. For example: `abc123`.
 
 ## Examples
+<a name="aws-resource-apigateway-clientcertificate--examples"></a>
 
 ### Create client certificate
+<a name="aws-resource-apigateway-clientcertificate--examples--Create_client_certificate"></a>
 
 The following example creates a client certificate that you can use with an API Gateway deployment and stage.
 
 #### JSON
+<a name="aws-resource-apigateway-clientcertificate--examples--Create_client_certificate--json"></a>
 
-```json
-
+```
 {
     "TestClientCertificate": {
         "Type": "AWS::ApiGateway::ClientCertificate",
@@ -101,24 +99,17 @@ The following example creates a client certificate that you can use with an API 
 ```
 
 #### YAML
+<a name="aws-resource-apigateway-clientcertificate--examples--Create_client_certificate--yaml"></a>
 
-```yaml
-
+```
 TestClientCertificate:
   Type: 'AWS::ApiGateway::ClientCertificate'
   Properties:
     Description: A test client certificate
-
 ```
 
 ## See also
-
-- [clientcertificate:generate](../../../apigateway/latest/api/api-generateclientcertificate.md) in the _Amazon API Gateway REST API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGateway::BasePathMappingV2
-
-Tag
+<a name="aws-resource-apigateway-clientcertificate--seealso"></a>
++ [clientcertificate:generate](https://docs.aws.amazon.com/apigateway/latest/api/API_GenerateClientCertificate.html) in the *Amazon API Gateway REST API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

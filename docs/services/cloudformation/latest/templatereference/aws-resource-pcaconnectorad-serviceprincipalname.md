@@ -2,83 +2,60 @@
 title: "AWS::PCAConnectorAD::ServicePrincipalName"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::ServicePrincipalName
+<a name="aws-resource-pcaconnectorad-serviceprincipalname"></a>
 
-Creates a service principal name (SPN) for the service account in Active Directory. Kerberos
-authentication uses SPNs to associate a service instance with a service sign-in
-account.
+Creates a service principal name (SPN) for the service account in Active Directory. Kerberos authentication uses SPNs to associate a service instance with a service sign-in account.
 
 ## Syntax
+<a name="aws-resource-pcaconnectorad-serviceprincipalname-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-pcaconnectorad-serviceprincipalname-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::PCAConnectorAD::ServicePrincipalName",
   "Properties" : {
-      "ConnectorArn" : String,
-      "DirectoryRegistrationArn" : String
+      "[ConnectorArn](#cfn-pcaconnectorad-serviceprincipalname-connectorarn)" : {{String}},
+      "[DirectoryRegistrationArn](#cfn-pcaconnectorad-serviceprincipalname-directoryregistrationarn)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-pcaconnectorad-serviceprincipalname-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::PCAConnectorAD::ServicePrincipalName
 Properties:
-  ConnectorArn: String
-  DirectoryRegistrationArn: String
-
+  [ConnectorArn](#cfn-pcaconnectorad-serviceprincipalname-connectorarn): {{String}}
+  [DirectoryRegistrationArn](#cfn-pcaconnectorad-serviceprincipalname-directoryregistrationarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-pcaconnectorad-serviceprincipalname-properties"></a>
 
-`ConnectorArn`
+`ConnectorArn`  <a name="cfn-pcaconnectorad-serviceprincipalname-connectorarn"></a>
+The Amazon Resource Name (ARN) that was returned when you called [CreateConnector.html](https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API_CreateConnector.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[\w-]+:pca-connector-ad:[\w-]+:[0-9]+:connector(\/[\w-]+)$`
+*Minimum*: `5`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Amazon Resource Name (ARN) that was returned when you called [CreateConnector.html](../../../../reference/pca-connector-ad/latest/apireference/api-createconnector.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[\w-]+:pca-connector-ad:[\w-]+:[0-9]+:connector(\/[\w-]+)$`
-
-_Minimum_: `5`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DirectoryRegistrationArn`
-
-The Amazon Resource Name (ARN) that was returned when you called [CreateDirectoryRegistration](../../../../reference/pca-connector-ad/latest/apireference/api-createdirectoryregistration.md).
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^arn:[\w-]+:pca-connector-ad:[\w-]+:[0-9]+:directory-registration(\/[\w-]+)$`
-
-_Minimum_: `5`
-
-_Maximum_: `200`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::PCAConnectorAD::DirectoryRegistration
-
-AWS::PCAConnectorAD::Template
+`DirectoryRegistrationArn`  <a name="cfn-pcaconnectorad-serviceprincipalname-directoryregistrationarn"></a>
+The Amazon Resource Name (ARN) that was returned when you called [CreateDirectoryRegistration](https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API_CreateDirectoryRegistration.html).
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[\w-]+:pca-connector-ad:[\w-]+:[0-9]+:directory-registration(\/[\w-]+)$`
+*Minimum*: `5`
+*Maximum*: `200`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

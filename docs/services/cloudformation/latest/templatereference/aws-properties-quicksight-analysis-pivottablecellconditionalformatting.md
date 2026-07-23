@@ -2,99 +2,72 @@
 title: "AWS::QuickSight::Analysis PivotTableCellConditionalFormatting"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PivotTableCellConditionalFormatting
+<a name="aws-properties-quicksight-analysis-pivottablecellconditionalformatting"></a>
 
 The cell conditional formatting option for a pivot table.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-pivottablecellconditionalformatting-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-pivottablecellconditionalformatting-syntax.json"></a>
 
-```json
-
+```
 {
-  "FieldId" : String,
-  "Scope" : PivotTableConditionalFormattingScope,
-  "Scopes" : [ PivotTableConditionalFormattingScope, ... ],
-  "TextFormat" : TextConditionalFormat
+  "[FieldId](#cfn-quicksight-analysis-pivottablecellconditionalformatting-fieldid)" : {{String}},
+  "[Scope](#cfn-quicksight-analysis-pivottablecellconditionalformatting-scope)" : {{PivotTableConditionalFormattingScope}},
+  "[Scopes](#cfn-quicksight-analysis-pivottablecellconditionalformatting-scopes)" : {{[ PivotTableConditionalFormattingScope, ... ]}},
+  "[TextFormat](#cfn-quicksight-analysis-pivottablecellconditionalformatting-textformat)" : {{TextConditionalFormat}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-pivottablecellconditionalformatting-syntax.yaml"></a>
 
-```yaml
-
-  FieldId: String
-  Scope:
-    PivotTableConditionalFormattingScope
-  Scopes:
-    - PivotTableConditionalFormattingScope
-  TextFormat:
-    TextConditionalFormat
-
+```
+  [FieldId](#cfn-quicksight-analysis-pivottablecellconditionalformatting-fieldid): {{String}}
+  [Scope](#cfn-quicksight-analysis-pivottablecellconditionalformatting-scope): {{
+    PivotTableConditionalFormattingScope}}
+  [Scopes](#cfn-quicksight-analysis-pivottablecellconditionalformatting-scopes): {{
+    - PivotTableConditionalFormattingScope}}
+  [TextFormat](#cfn-quicksight-analysis-pivottablecellconditionalformatting-textformat): {{
+    TextConditionalFormat}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-pivottablecellconditionalformatting-properties"></a>
 
-`FieldId`
-
+`FieldId`  <a name="cfn-quicksight-analysis-pivottablecellconditionalformatting-fieldid"></a>
 The field ID of the cell for conditional formatting.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scope`
-
+`Scope`  <a name="cfn-quicksight-analysis-pivottablecellconditionalformatting-scope"></a>
 The scope of the cell for conditional formatting.
+*Required*: No
+*Type*: [PivotTableConditionalFormattingScope](aws-properties-quicksight-analysis-pivottableconditionalformattingscope.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [PivotTableConditionalFormattingScope](aws-properties-quicksight-analysis-pivottableconditionalformattingscope.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Scopes`
-
+`Scopes`  <a name="cfn-quicksight-analysis-pivottablecellconditionalformatting-scopes"></a>
 A list of cell scopes for conditional formatting.
+*Required*: No
+*Type*: Array of [PivotTableConditionalFormattingScope](aws-properties-quicksight-analysis-pivottableconditionalformattingscope.md)
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [PivotTableConditionalFormattingScope](aws-properties-quicksight-analysis-pivottableconditionalformattingscope.md)
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextFormat`
-
+`TextFormat`  <a name="cfn-quicksight-analysis-pivottablecellconditionalformatting-textformat"></a>
 The text format of the cell for conditional formatting.
-
-_Required_: No
-
-_Type_: [TextConditionalFormat](aws-properties-quicksight-analysis-textconditionalformat.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PivotTableAggregatedFieldWells
-
-PivotTableConditionalFormatting
+*Required*: No
+*Type*: [TextConditionalFormat](aws-properties-quicksight-analysis-textconditionalformat.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

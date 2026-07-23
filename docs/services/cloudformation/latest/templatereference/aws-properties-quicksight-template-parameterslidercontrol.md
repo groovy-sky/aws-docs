@@ -2,141 +2,98 @@
 title: "AWS::QuickSight::Template ParameterSliderControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ParameterSliderControl
+<a name="aws-properties-quicksight-template-parameterslidercontrol"></a>
 
 A control to display a horizontal toggle bar. This is used to change a value by sliding the toggle.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-parameterslidercontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-parameterslidercontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayOptions" : SliderControlDisplayOptions,
-  "MaximumValue" : Number,
-  "MinimumValue" : Number,
-  "ParameterControlId" : String,
-  "SourceParameterName" : String,
-  "StepSize" : Number,
-  "Title" : String
+  "[DisplayOptions](#cfn-quicksight-template-parameterslidercontrol-displayoptions)" : {{SliderControlDisplayOptions}},
+  "[MaximumValue](#cfn-quicksight-template-parameterslidercontrol-maximumvalue)" : {{Number}},
+  "[MinimumValue](#cfn-quicksight-template-parameterslidercontrol-minimumvalue)" : {{Number}},
+  "[ParameterControlId](#cfn-quicksight-template-parameterslidercontrol-parametercontrolid)" : {{String}},
+  "[SourceParameterName](#cfn-quicksight-template-parameterslidercontrol-sourceparametername)" : {{String}},
+  "[StepSize](#cfn-quicksight-template-parameterslidercontrol-stepsize)" : {{Number}},
+  "[Title](#cfn-quicksight-template-parameterslidercontrol-title)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-parameterslidercontrol-syntax.yaml"></a>
 
-```yaml
-
-  DisplayOptions:
-    SliderControlDisplayOptions
-  MaximumValue: Number
-  MinimumValue: Number
-  ParameterControlId: String
-  SourceParameterName: String
-  StepSize: Number
-  Title: String
-
+```
+  [DisplayOptions](#cfn-quicksight-template-parameterslidercontrol-displayoptions): {{
+    SliderControlDisplayOptions}}
+  [MaximumValue](#cfn-quicksight-template-parameterslidercontrol-maximumvalue): {{Number}}
+  [MinimumValue](#cfn-quicksight-template-parameterslidercontrol-minimumvalue): {{Number}}
+  [ParameterControlId](#cfn-quicksight-template-parameterslidercontrol-parametercontrolid): {{String}}
+  [SourceParameterName](#cfn-quicksight-template-parameterslidercontrol-sourceparametername): {{String}}
+  [StepSize](#cfn-quicksight-template-parameterslidercontrol-stepsize): {{Number}}
+  [Title](#cfn-quicksight-template-parameterslidercontrol-title): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-parameterslidercontrol-properties"></a>
 
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-template-parameterslidercontrol-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [SliderControlDisplayOptions](aws-properties-quicksight-template-slidercontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [SliderControlDisplayOptions](aws-properties-quicksight-template-slidercontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaximumValue`
-
+`MaximumValue`  <a name="cfn-quicksight-template-parameterslidercontrol-maximumvalue"></a>
 The larger value that is displayed at the right of the slider.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MinimumValue`
-
+`MinimumValue`  <a name="cfn-quicksight-template-parameterslidercontrol-minimumvalue"></a>
 The smaller value that is displayed at the left of the slider.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterControlId`
-
+`ParameterControlId`  <a name="cfn-quicksight-template-parameterslidercontrol-parametercontrolid"></a>
 The ID of the `ParameterSliderControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceParameterName`
-
+`SourceParameterName`  <a name="cfn-quicksight-template-parameterslidercontrol-sourceparametername"></a>
 The source parameter name of the `ParameterSliderControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StepSize`
-
+`StepSize`  <a name="cfn-quicksight-template-parameterslidercontrol-stepsize"></a>
 The number of increments that the slider bar is divided into.
+*Required*: Yes
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-template-parameterslidercontrol-title"></a>
 The title of the `ParameterSliderControl`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterSelectableValues
-
-ParameterTextAreaControl
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,77 +2,58 @@
 title: "AWS::Route53::CidrCollection Location"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::CidrCollection Location
+<a name="aws-properties-route53-cidrcollection-location"></a>
 
 Specifies the list of CIDR blocks for a CIDR location.
 
 ## Syntax
+<a name="aws-properties-route53-cidrcollection-location-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-route53-cidrcollection-location-syntax.json"></a>
 
-```json
-
+```
 {
-  "CidrList" : [ String, ... ],
-  "LocationName" : String
+  "[CidrList](#cfn-route53-cidrcollection-location-cidrlist)" : {{[ String, ... ]}},
+  "[LocationName](#cfn-route53-cidrcollection-location-locationname)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-route53-cidrcollection-location-syntax.yaml"></a>
 
-```yaml
-
-  CidrList:
-    - String
-  LocationName: String
-
+```
+  [CidrList](#cfn-route53-cidrcollection-location-cidrlist): {{
+    - String}}
+  [LocationName](#cfn-route53-cidrcollection-location-locationname): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-route53-cidrcollection-location-properties"></a>
 
-`CidrList`
-
+`CidrList`  <a name="cfn-route53-cidrcollection-location-cidrlist"></a>
 List of CIDR blocks.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LocationName`
-
+`LocationName`  <a name="cfn-route53-cidrcollection-location-locationname"></a>
 The CIDR collection location name.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `16`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `16`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [LocationSummary](../../../../reference/route53/latest/apireference/api-locationsummary.md) in the _Amazon Route 53 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Route53::CidrCollection
-
-AWS::Route53::DNSSEC
+<a name="aws-properties-route53-cidrcollection-location--seealso"></a>
++ [LocationSummary](https://docs.aws.amazon.com/Route53/latest/APIReference/API_LocationSummary.html) in the *Amazon Route 53 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

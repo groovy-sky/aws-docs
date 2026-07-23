@@ -2,85 +2,62 @@
 title: "AWS::AppStream::Stack StorageConnector"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Stack StorageConnector
+<a name="aws-properties-appstream-stack-storageconnector"></a>
 
 A connector that enables persistent storage for users.
 
 ## Syntax
+<a name="aws-properties-appstream-stack-storageconnector-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appstream-stack-storageconnector-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectorType" : String,
-  "Domains" : [ String, ... ],
-  "ResourceIdentifier" : String
+  "[ConnectorType](#cfn-appstream-stack-storageconnector-connectortype)" : {{String}},
+  "[Domains](#cfn-appstream-stack-storageconnector-domains)" : {{[ String, ... ]}},
+  "[ResourceIdentifier](#cfn-appstream-stack-storageconnector-resourceidentifier)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appstream-stack-storageconnector-syntax.yaml"></a>
 
-```yaml
-
-  ConnectorType: String
-  Domains:
-    - String
-  ResourceIdentifier: String
-
+```
+  [ConnectorType](#cfn-appstream-stack-storageconnector-connectortype): {{String}}
+  [Domains](#cfn-appstream-stack-storageconnector-domains): {{
+    - String}}
+  [ResourceIdentifier](#cfn-appstream-stack-storageconnector-resourceidentifier): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appstream-stack-storageconnector-properties"></a>
 
-`ConnectorType`
-
+`ConnectorType`  <a name="cfn-appstream-stack-storageconnector-connectortype"></a>
 The type of storage connector.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `HOMEFOLDERS | GOOGLE_DRIVE | ONE_DRIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `HOMEFOLDERS | GOOGLE_DRIVE | ONE_DRIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Domains`
-
+`Domains`  <a name="cfn-appstream-stack-storageconnector-domains"></a>
 The names of the domains for the account.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResourceIdentifier`
-
+`ResourceIdentifier`  <a name="cfn-appstream-stack-storageconnector-resourceidentifier"></a>
 The ARN of the storage connector.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ApplicationSettings
-
-StreamingExperienceSettings
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

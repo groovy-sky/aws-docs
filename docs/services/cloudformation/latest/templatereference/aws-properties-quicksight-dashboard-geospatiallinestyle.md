@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Dashboard GeospatialLineStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard GeospatialLineStyle
+<a name="aws-properties-quicksight-dashboard-geospatiallinestyle"></a>
 
 The visualization style for a line layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-geospatiallinestyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-geospatiallinestyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "LineSymbolStyle" : GeospatialLineSymbolStyle
+  "[LineSymbolStyle](#cfn-quicksight-dashboard-geospatiallinestyle-linesymbolstyle)" : {{GeospatialLineSymbolStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-geospatiallinestyle-syntax.yaml"></a>
 
-```yaml
-
-  LineSymbolStyle:
-    GeospatialLineSymbolStyle
-
+```
+  [LineSymbolStyle](#cfn-quicksight-dashboard-geospatiallinestyle-linesymbolstyle): {{
+    GeospatialLineSymbolStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-geospatiallinestyle-properties"></a>
 
-`LineSymbolStyle`
-
+`LineSymbolStyle`  <a name="cfn-quicksight-dashboard-geospatiallinestyle-linesymbolstyle"></a>
 The symbol style for a line style.
-
-_Required_: No
-
-_Type_: [GeospatialLineSymbolStyle](aws-properties-quicksight-dashboard-geospatiallinesymbolstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialLineLayer
-
-GeospatialLineSymbolStyle
+*Required*: No
+*Type*: [GeospatialLineSymbolStyle](aws-properties-quicksight-dashboard-geospatiallinesymbolstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

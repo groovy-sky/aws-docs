@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis GeospatialPointStyle"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis GeospatialPointStyle
+<a name="aws-properties-quicksight-analysis-geospatialpointstyle"></a>
 
 The point style for a point layer.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-geospatialpointstyle-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-geospatialpointstyle-syntax.json"></a>
 
-```json
-
+```
 {
-  "CircleSymbolStyle" : GeospatialCircleSymbolStyle
+  "[CircleSymbolStyle](#cfn-quicksight-analysis-geospatialpointstyle-circlesymbolstyle)" : {{GeospatialCircleSymbolStyle}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-geospatialpointstyle-syntax.yaml"></a>
 
-```yaml
-
-  CircleSymbolStyle:
-    GeospatialCircleSymbolStyle
-
+```
+  [CircleSymbolStyle](#cfn-quicksight-analysis-geospatialpointstyle-circlesymbolstyle): {{
+    GeospatialCircleSymbolStyle}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-geospatialpointstyle-properties"></a>
 
-`CircleSymbolStyle`
-
+`CircleSymbolStyle`  <a name="cfn-quicksight-analysis-geospatialpointstyle-circlesymbolstyle"></a>
 The circle symbol style for a point layer.
-
-_Required_: No
-
-_Type_: [GeospatialCircleSymbolStyle](aws-properties-quicksight-analysis-geospatialcirclesymbolstyle.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GeospatialPointLayer
-
-GeospatialPointStyleOptions
+*Required*: No
+*Type*: [GeospatialCircleSymbolStyle](aws-properties-quicksight-analysis-geospatialcirclesymbolstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

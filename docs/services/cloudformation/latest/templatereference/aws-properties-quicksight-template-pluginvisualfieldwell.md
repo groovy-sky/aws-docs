@@ -2,105 +2,75 @@
 title: "AWS::QuickSight::Template PluginVisualFieldWell"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template PluginVisualFieldWell
+<a name="aws-properties-quicksight-template-pluginvisualfieldwell"></a>
 
 A collection of field wells for a plugin visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-pluginvisualfieldwell-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-pluginvisualfieldwell-syntax.json"></a>
 
-```json
-
+```
 {
-  "AxisName" : String,
-  "Dimensions" : [ DimensionField, ... ],
-  "Measures" : [ MeasureField, ... ],
-  "Unaggregated" : [ UnaggregatedField, ... ]
+  "[AxisName](#cfn-quicksight-template-pluginvisualfieldwell-axisname)" : {{String}},
+  "[Dimensions](#cfn-quicksight-template-pluginvisualfieldwell-dimensions)" : {{[ DimensionField, ... ]}},
+  "[Measures](#cfn-quicksight-template-pluginvisualfieldwell-measures)" : {{[ MeasureField, ... ]}},
+  "[Unaggregated](#cfn-quicksight-template-pluginvisualfieldwell-unaggregated)" : {{[ UnaggregatedField, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-pluginvisualfieldwell-syntax.yaml"></a>
 
-```yaml
-
-  AxisName: String
-  Dimensions:
-    - DimensionField
-  Measures:
-    - MeasureField
-  Unaggregated:
-    - UnaggregatedField
-
+```
+  [AxisName](#cfn-quicksight-template-pluginvisualfieldwell-axisname): {{String}}
+  [Dimensions](#cfn-quicksight-template-pluginvisualfieldwell-dimensions): {{
+    - DimensionField}}
+  [Measures](#cfn-quicksight-template-pluginvisualfieldwell-measures): {{
+    - MeasureField}}
+  [Unaggregated](#cfn-quicksight-template-pluginvisualfieldwell-unaggregated): {{
+    - UnaggregatedField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-pluginvisualfieldwell-properties"></a>
 
-`AxisName`
-
+`AxisName`  <a name="cfn-quicksight-template-pluginvisualfieldwell-axisname"></a>
 The semantic axis name for the field well.
+*Required*: No
+*Type*: String
+*Allowed values*: `GROUP_BY | VALUE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `GROUP_BY | VALUE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Dimensions`
-
+`Dimensions`  <a name="cfn-quicksight-template-pluginvisualfieldwell-dimensions"></a>
 A list of dimensions for the field well.
+*Required*: No
+*Type*: Array of [DimensionField](aws-properties-quicksight-template-dimensionfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [DimensionField](aws-properties-quicksight-template-dimensionfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Measures`
-
+`Measures`  <a name="cfn-quicksight-template-pluginvisualfieldwell-measures"></a>
 A list of measures that exist in the field well.
+*Required*: No
+*Type*: Array of [MeasureField](aws-properties-quicksight-template-measurefield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [MeasureField](aws-properties-quicksight-template-measurefield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Unaggregated`
-
+`Unaggregated`  <a name="cfn-quicksight-template-pluginvisualfieldwell-unaggregated"></a>
 A list of unaggregated fields that exist in the field well.
-
-_Required_: No
-
-_Type_: Array of [UnaggregatedField](aws-properties-quicksight-template-unaggregatedfield.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PluginVisualConfiguration
-
-PluginVisualItemsLimitConfiguration
+*Required*: No
+*Type*: Array of [UnaggregatedField](aws-properties-quicksight-template-unaggregatedfield.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

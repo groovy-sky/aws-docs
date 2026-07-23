@@ -2,105 +2,74 @@
 title: "AWS::QuickSight::Template ParameterDateTimePickerControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ParameterDateTimePickerControl
+<a name="aws-properties-quicksight-template-parameterdatetimepickercontrol"></a>
 
 A control from a date parameter that specifies date and time.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-parameterdatetimepickercontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-parameterdatetimepickercontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "DisplayOptions" : DateTimePickerControlDisplayOptions,
-  "ParameterControlId" : String,
-  "SourceParameterName" : String,
-  "Title" : String
+  "[DisplayOptions](#cfn-quicksight-template-parameterdatetimepickercontrol-displayoptions)" : {{DateTimePickerControlDisplayOptions}},
+  "[ParameterControlId](#cfn-quicksight-template-parameterdatetimepickercontrol-parametercontrolid)" : {{String}},
+  "[SourceParameterName](#cfn-quicksight-template-parameterdatetimepickercontrol-sourceparametername)" : {{String}},
+  "[Title](#cfn-quicksight-template-parameterdatetimepickercontrol-title)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-parameterdatetimepickercontrol-syntax.yaml"></a>
 
-```yaml
-
-  DisplayOptions:
-    DateTimePickerControlDisplayOptions
-  ParameterControlId: String
-  SourceParameterName: String
-  Title: String
-
+```
+  [DisplayOptions](#cfn-quicksight-template-parameterdatetimepickercontrol-displayoptions): {{
+    DateTimePickerControlDisplayOptions}}
+  [ParameterControlId](#cfn-quicksight-template-parameterdatetimepickercontrol-parametercontrolid): {{String}}
+  [SourceParameterName](#cfn-quicksight-template-parameterdatetimepickercontrol-sourceparametername): {{String}}
+  [Title](#cfn-quicksight-template-parameterdatetimepickercontrol-title): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-parameterdatetimepickercontrol-properties"></a>
 
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-template-parameterdatetimepickercontrol-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [DateTimePickerControlDisplayOptions](aws-properties-quicksight-template-datetimepickercontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimePickerControlDisplayOptions](aws-properties-quicksight-template-datetimepickercontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterControlId`
-
+`ParameterControlId`  <a name="cfn-quicksight-template-parameterdatetimepickercontrol-parametercontrolid"></a>
 The ID of the `ParameterDateTimePickerControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceParameterName`
-
+`SourceParameterName`  <a name="cfn-quicksight-template-parameterdatetimepickercontrol-sourceparametername"></a>
 The name of the `ParameterDateTimePickerControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-template-parameterdatetimepickercontrol-title"></a>
 The title of the `ParameterDateTimePickerControl`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterControl
-
-ParameterDeclaration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

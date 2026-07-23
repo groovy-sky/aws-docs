@@ -1,43 +1,33 @@
 ---
-title: "Fn::ImportValue"
+title: "`Fn::ImportValue`"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `Fn::ImportValue`
+<a name="intrinsic-function-reference-importvalue"></a>
 
-The intrinsic function `Fn::ImportValue` returns the value of an output exported
-by another stack. You typically use this function to create cross-stack references. For more
-information, see [Walkthrough: Refer to resource outputs in another CloudFormation stack](../userguide/walkthrough-crossstackref.md) in the
-_AWS CloudFormation User Guide_.
+The intrinsic function `Fn::ImportValue` returns the value of an output exported by another stack. You typically use this function to create cross-stack references. For more information, see [Walkthrough: Refer to resource outputs in another CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkthrough-crossstackref.html) in the *AWS CloudFormation User Guide*.
 
-In the following example template snippets, Stack A exports VPC security group values and
-Stack B imports them.
+**Tip**
+To reference stack outputs across AWS accounts or Regions without requiring explicit exports, use [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html). `Fn::GetStackOutput` creates a weak reference that is resolved at stack create or update time and does not require the referenced stack to declare an `Export`.
 
-###### Note
+In the following example template snippets, Stack A exports VPC security group values and Stack B imports them.
 
+**Note**
 The following restrictions apply to cross-stack references:
-
-- For each AWS account, `Export` names must be unique within a Region.
-
-- You can't create cross-stack references across Regions. You can use the intrinsic function
-`Fn::ImportValue` to import only values that have been exported within the same Region.
-
-- For outputs, the value of the `Name` property of an `Export` can't use `Ref` or `GetAtt` functions that depend on a resource.
-
+For each AWS account, `Export` names must be unique within a Region.
+When using `Export` and `Fn::ImportValue`, cross-stack references are limited to the same account and Region. To reference stack outputs across accounts or Regions, use `Fn::GetStackOutput`.
+For outputs, the value of the `Name` property of an `Export` can't use `Ref` or `GetAtt` functions that depend on a resource.
 Similarly, the `ImportValue` function can't include `Ref` or `GetAtt` functions that depend on a resource.
-
-- After another stack imports an output value, you can't delete the stack that is exporting the output value or modify the exported output value. All the imports
-must be removed before you can delete the exporting stack or modify the output value.
+After another stack imports an output value, you can't delete the stack that is exporting the output value or modify the exported output value. All the imports must be removed before you can delete the exporting stack or modify the output value.
 
 ## JSON
+<a name="intrinsic-function-reference-importvalue-export.json"></a>
 
 Stack A Export
 
-```json
-
+```
 "Outputs" : {
   "PublicSubnet" : {
     "Description" : "The subnet ID to use for public web servers",
@@ -53,11 +43,11 @@ Stack A Export
 ```
 
 ## YAML
+<a name="intrinsic-function-reference-importvalue-export.yaml"></a>
 
 Stack A Export
 
-```yaml
-
+```
 Outputs:
   PublicSubnet:
     Description: The subnet ID to use for public web servers
@@ -78,11 +68,11 @@ Outputs:
 ```
 
 ## JSON
+<a name="intrinsic-function-reference-importvalue-import.json"></a>
 
 Stack B Import
 
-```json
-
+```
 "Resources" : {
   "WebServerInstance" : {
     "Type" : "AWS::EC2::Instance",
@@ -102,11 +92,11 @@ Stack B Import
 ```
 
 ## YAML
+<a name="intrinsic-function-reference-importvalue-import.yaml"></a>
 
 Stack B Import
 
-```yaml
-
+```
 Resources:
   WebServerInstance:
     Type: AWS::EC2::Instance
@@ -125,100 +115,84 @@ Resources:
 ```
 
 ## Declaration
+<a name="w2aac24c48c13"></a>
 
 ### JSON
+<a name="intrinsic-function-reference-importvalue-syntax.json"></a>
 
-```json
-
-{ "Fn::ImportValue" : sharedValueToImport }
+```
+{ "Fn::ImportValue" : {{sharedValueToImport}} }
 ```
 
 ### YAML
+<a name="intrinsic-function-reference-importvalue-syntax.yaml"></a>
 
 You can use the full function name:
 
-```yaml
-
-Fn::ImportValue: sharedValueToImport
+```
+Fn::ImportValue: {{sharedValueToImport}}
 ```
 
 Alternatively, you can use the short form:
 
-```yaml
-
-!ImportValue sharedValueToImport
+```
+!ImportValue {{sharedValueToImport}}
 ```
 
-###### Important
+**Important**
+You can't use the short form of `!ImportValue` when it contains the short form of `!Sub`.
 
-You can't use the short form of `!ImportValue` when it contains the
-short form of `!Sub`.
-
-```yaml
-
+```
 # do not use
 !ImportValue
   !Sub '${NetworkStack}-SubnetID'
 ```
-
 Instead, you must use the full function name, for example:
 
-```yaml
-
+```
 Fn::ImportValue:
   !Sub "${NetworkStack}-SubnetID"
 ```
 
 ## Parameters
+<a name="w2aac24c48c15"></a>
 
 sharedValueToImport
-
 The stack output value that you want to import.
 
 ## Return value
+<a name="w2aac24c48c17"></a>
 
 The stack output value.
 
 ## Example
+<a name="w2aac24c48c19"></a>
 
 ### JSON
+<a name="intrinsic-function-reference-importvalue-example.json"></a>
 
-```json
-
+```
 { "Fn::ImportValue" : {"Fn::Sub": "${NetworkStackNameParameter}-SubnetID" } }
 ```
 
 ### YAML
+<a name="intrinsic-function-reference-importvalue-example.yaml"></a>
 
-```yaml
-
+```
 Fn::ImportValue:
   !Sub "${NetworkStackName}-SecurityGroupID"
 ```
 
 ## Supported functions
+<a name="w2aac24c48c21"></a>
 
-You can use the following functions in the `Fn::ImportValue` function. The
-value of these functions can't depend on a resource.
-
-- `Fn::Base64`
-
-- `Fn::FindInMap`
-
-- `Fn::If`
-
-- `Fn::Join`
-
-- `Fn::Select`
-
-- `Fn::Sub`
-
-- `Ref`
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Fn::GetAZs
-
-Fn::Join
+You can use the following functions in the `Fn::ImportValue` function. The value of these functions can't depend on a resource.
++ `Fn::Base64`
++ `Fn::FindInMap`
++ `Fn::If`
++ `Fn::Join`
++ `Fn::Select`
++ `Fn::Sub`
++ `Ref`
 
 All content copied from https://docs.aws.amazon.com/.

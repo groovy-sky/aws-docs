@@ -2,159 +2,121 @@
 title: "AWS::Bedrock::Blueprint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Blueprint
+<a name="aws-resource-bedrock-blueprint"></a>
 
 Details about a data automation blueprint.
 
 ## Syntax
+<a name="aws-resource-bedrock-blueprint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-blueprint-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::Blueprint",
   "Properties" : {
-      "BlueprintName" : String,
-      "KmsEncryptionContext" : {Key: Value, ...},
-      "KmsKeyId" : String,
-      "Schema" : Json,
-      "Tags" : [ Tag, ... ],
-      "Type" : String
+      "[BlueprintName](#cfn-bedrock-blueprint-blueprintname)" : {{String}},
+      "[KmsEncryptionContext](#cfn-bedrock-blueprint-kmsencryptioncontext)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[KmsKeyId](#cfn-bedrock-blueprint-kmskeyid)" : {{String}},
+      "[Schema](#cfn-bedrock-blueprint-schema)" : {{Json}},
+      "[Tags](#cfn-bedrock-blueprint-tags)" : {{[ Tag, ... ]}},
+      "[Type](#cfn-bedrock-blueprint-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-blueprint-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::Blueprint
 Properties:
-  BlueprintName: String
-  KmsEncryptionContext:
-    Key: Value
-  KmsKeyId: String
-  Schema: Json
-  Tags:
-    - Tag
-  Type: String
-
+  [BlueprintName](#cfn-bedrock-blueprint-blueprintname): {{String}}
+  [KmsEncryptionContext](#cfn-bedrock-blueprint-kmsencryptioncontext): {{
+    {{Key}}: {{Value}}}}
+  [KmsKeyId](#cfn-bedrock-blueprint-kmskeyid): {{String}}
+  [Schema](#cfn-bedrock-blueprint-schema): {{Json}}
+  [Tags](#cfn-bedrock-blueprint-tags): {{
+    - Tag}}
+  [Type](#cfn-bedrock-blueprint-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-blueprint-properties"></a>
 
-`BlueprintName`
-
+`BlueprintName`  <a name="cfn-bedrock-blueprint-blueprintname"></a>
 The blueprint's name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`KmsEncryptionContext`
-
+`KmsEncryptionContext`  <a name="cfn-bedrock-blueprint-kmsencryptioncontext"></a>
 Name-value pairs to include as an encryption context.
+*Required*: No
+*Type*: Object of String
+*Pattern*: `^.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Object of String
-
-_Pattern_: `^.*$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`KmsKeyId`
-
+`KmsKeyId`  <a name="cfn-bedrock-blueprint-kmskeyid"></a>
 The AWS KMS key to use for encryption.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Schema`
-
+`Schema`  <a name="cfn-bedrock-blueprint-schema"></a>
 The blueprint's schema.
+*Required*: Yes
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrock-blueprint-tags"></a>
 Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrock-blueprint-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrock-blueprint-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-bedrock-blueprint-type"></a>
 The blueprint's type.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DOCUMENT | IMAGE | AUDIO | VIDEO`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DOCUMENT | IMAGE | AUDIO | VIDEO`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-bedrock-blueprint-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-blueprint-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-blueprint-return-values-fn--getatt"></a>
 
-`BlueprintArn`
+####
+<a name="aws-resource-bedrock-blueprint-return-values-fn--getatt-fn--getatt"></a>
 
+`BlueprintArn`  <a name="BlueprintArn-fn::getatt"></a>
 The blueprint's ARN.
 
-`BlueprintStage`
-
+`BlueprintStage`  <a name="BlueprintStage-fn::getatt"></a>
 The blueprint's stage.
 
-`CreationTime`
-
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 When the blueprint was created.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 When the blueprint was last updated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

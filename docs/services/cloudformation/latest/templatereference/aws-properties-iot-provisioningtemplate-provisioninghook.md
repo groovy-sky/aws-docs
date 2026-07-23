@@ -2,67 +2,49 @@
 title: "AWS::IoT::ProvisioningTemplate ProvisioningHook"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::ProvisioningTemplate ProvisioningHook
+<a name="aws-properties-iot-provisioningtemplate-provisioninghook"></a>
 
-Structure that contains payloadVersion and targetArn. Provisioning hooks can be used
-when fleet provisioning to validate device parameters before allowing the device to be
-provisioned.
+Structure that contains payloadVersion and targetArn. Provisioning hooks can be used when fleet provisioning to validate device parameters before allowing the device to be provisioned.
 
 ## Syntax
+<a name="aws-properties-iot-provisioningtemplate-provisioninghook-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-iot-provisioningtemplate-provisioninghook-syntax.json"></a>
 
-```json
-
+```
 {
-  "PayloadVersion" : String,
-  "TargetArn" : String
+  "[PayloadVersion](#cfn-iot-provisioningtemplate-provisioninghook-payloadversion)" : {{String}},
+  "[TargetArn](#cfn-iot-provisioningtemplate-provisioninghook-targetarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-iot-provisioningtemplate-provisioninghook-syntax.yaml"></a>
 
-```yaml
-
-  PayloadVersion: String
-  TargetArn: String
-
+```
+  [PayloadVersion](#cfn-iot-provisioningtemplate-provisioninghook-payloadversion): {{String}}
+  [TargetArn](#cfn-iot-provisioningtemplate-provisioninghook-targetarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-iot-provisioningtemplate-provisioninghook-properties"></a>
 
-`PayloadVersion`
+`PayloadVersion`  <a name="cfn-iot-provisioningtemplate-provisioninghook-payloadversion"></a>
+The payload that was sent to the target function. The valid payload is `"2020-04-01"`.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The payload that was sent to the target function. The valid payload is
-`"2020-04-01"`.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TargetArn`
-
+`TargetArn`  <a name="cfn-iot-provisioningtemplate-provisioninghook-targetarn"></a>
 The ARN of the target function.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::IoT::ProvisioningTemplate
-
-Tag
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

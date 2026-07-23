@@ -2,55 +2,42 @@
 title: "AWS::Lex::Bot CodeHookSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot CodeHookSpecification
+<a name="aws-properties-lex-bot-codehookspecification"></a>
 
-Contains information about code hooks that Amazon Lex calls during a
-conversation.
+Contains information about code hooks that Amazon Lex calls during a conversation.
 
 ## Syntax
+<a name="aws-properties-lex-bot-codehookspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-codehookspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "LambdaCodeHook" : LambdaCodeHook
+  "[LambdaCodeHook](#cfn-lex-bot-codehookspecification-lambdacodehook)" : {{LambdaCodeHook}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-codehookspecification-syntax.yaml"></a>
 
-```yaml
-
-  LambdaCodeHook:
-    LambdaCodeHook
-
+```
+  [LambdaCodeHook](#cfn-lex-bot-codehookspecification-lambdacodehook): {{
+    LambdaCodeHook}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-codehookspecification-properties"></a>
 
-`LambdaCodeHook`
-
-Specifies a Lambda function that verifies requests to a bot or
-fulfills the user's request to a bot.
-
-_Required_: Yes
-
-_Type_: [LambdaCodeHook](aws-properties-lex-bot-lambdacodehook.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogGroupLogDestination
-
-CompositeSlotTypeSetting
+`LambdaCodeHook`  <a name="cfn-lex-bot-codehookspecification-lambdacodehook"></a>
+Specifies a Lambda function that verifies requests to a bot or fulfills the user's request to a bot.
+*Required*: Yes
+*Type*: [LambdaCodeHook](aws-properties-lex-bot-lambdacodehook.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

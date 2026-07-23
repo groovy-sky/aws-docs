@@ -2,148 +2,124 @@
 title: "AWS::ApiGatewayV2::RouteResponse"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::RouteResponse
+<a name="aws-resource-apigatewayv2-routeresponse"></a>
 
-The `AWS::ApiGatewayV2::RouteResponse` resource creates a route
-response for a WebSocket API. For more information, see [Set up Route Responses for a WebSocket API in API Gateway](../../../apigateway/latest/developerguide/apigateway-websocket-api-route-response.md) in the
-_API Gateway Developer Guide_.
+The `AWS::ApiGatewayV2::RouteResponse` resource creates a route response for a WebSocket API. For more information, see [Set up Route Responses for a WebSocket API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-route-response.html) in the *API Gateway Developer Guide*.
 
 ## Syntax
+<a name="aws-resource-apigatewayv2-routeresponse-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-apigatewayv2-routeresponse-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ApiGatewayV2::RouteResponse",
   "Properties" : {
-      "ApiId" : String,
-      "ModelSelectionExpression" : String,
-      "ResponseModels" : Json,
-      "ResponseParameters" : ParameterConstraints,
-      "RouteId" : String,
-      "RouteResponseKey" : String
+      "[ApiId](#cfn-apigatewayv2-routeresponse-apiid)" : {{String}},
+      "[ModelSelectionExpression](#cfn-apigatewayv2-routeresponse-modelselectionexpression)" : {{String}},
+      "[ResponseModels](#cfn-apigatewayv2-routeresponse-responsemodels)" : {{Json}},
+      "[ResponseParameters](#cfn-apigatewayv2-routeresponse-responseparameters)" : {{ParameterConstraints}},
+      "[RouteId](#cfn-apigatewayv2-routeresponse-routeid)" : {{String}},
+      "[RouteResponseKey](#cfn-apigatewayv2-routeresponse-routeresponsekey)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-apigatewayv2-routeresponse-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ApiGatewayV2::RouteResponse
 Properties:
-  ApiId: String
-  ModelSelectionExpression: String
-  ResponseModels: Json
-  ResponseParameters:
-    ParameterConstraints
-  RouteId: String
-  RouteResponseKey: String
-
+  [ApiId](#cfn-apigatewayv2-routeresponse-apiid): {{String}}
+  [ModelSelectionExpression](#cfn-apigatewayv2-routeresponse-modelselectionexpression): {{String}}
+  [ResponseModels](#cfn-apigatewayv2-routeresponse-responsemodels): {{Json}}
+  [ResponseParameters](#cfn-apigatewayv2-routeresponse-responseparameters): {{
+    ParameterConstraints}}
+  [RouteId](#cfn-apigatewayv2-routeresponse-routeid): {{String}}
+  [RouteResponseKey](#cfn-apigatewayv2-routeresponse-routeresponsekey): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-apigatewayv2-routeresponse-properties"></a>
 
-`ApiId`
-
+`ApiId`  <a name="cfn-apigatewayv2-routeresponse-apiid"></a>
 The API identifier.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ModelSelectionExpression`
-
+`ModelSelectionExpression`  <a name="cfn-apigatewayv2-routeresponse-modelselectionexpression"></a>
 The model selection expression for the route response. Supported only for WebSocket APIs.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResponseModels`
-
+`ResponseModels`  <a name="cfn-apigatewayv2-routeresponse-responsemodels"></a>
 The response models for the route response.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Json
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ResponseParameters`
-
+`ResponseParameters`  <a name="cfn-apigatewayv2-routeresponse-responseparameters"></a>
 The route response parameters.
+*Required*: No
+*Type*: [ParameterConstraints](aws-properties-apigatewayv2-routeresponse-parameterconstraints.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ParameterConstraints](aws-properties-apigatewayv2-routeresponse-parameterconstraints.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RouteId`
-
+`RouteId`  <a name="cfn-apigatewayv2-routeresponse-routeid"></a>
 The route ID.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RouteResponseKey`
-
+`RouteResponseKey`  <a name="cfn-apigatewayv2-routeresponse-routeresponsekey"></a>
 The route response key.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-apigatewayv2-routeresponse-return-values"></a>
 
 ### Ref
+<a name="aws-resource-apigatewayv2-routeresponse-return-values-ref"></a>
 
-When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Route Response resource ID, such as
-`abc123`.
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Route Response resource ID, such as `abc123`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-apigatewayv2-routeresponse-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`RouteResponseId`
+####
+<a name="aws-resource-apigatewayv2-routeresponse-return-values-fn--getatt-fn--getatt"></a>
 
+`RouteResponseId`  <a name="RouteResponseId-fn::getatt"></a>
 The route response ID.
 
 ## Examples
+<a name="aws-resource-apigatewayv2-routeresponse--examples"></a>
 
 ### Route response creation example
+<a name="aws-resource-apigatewayv2-routeresponse--examples--Route_response_creation_example"></a>
 
-The following example creates a `RouteResponse` resource
-for a WebSocket API called `MyApi` that already has an
-`integration` called `MyIntegration` and a
-`route` called `MyRoute`.
+The following example creates a `RouteResponse` resource for a WebSocket API called `MyApi` that already has an `integration` called `MyIntegration` and a `route` called `MyRoute`.
 
 #### JSON
+<a name="aws-resource-apigatewayv2-routeresponse--examples--Route_response_creation_example--json"></a>
 
-```json
-
+```
 {
     "MyRouteResponse": {
         "Type": "AWS::ApiGatewayV2::RouteResponse",
@@ -161,27 +137,19 @@ for a WebSocket API called `MyApi` that already has an
 ```
 
 #### YAML
+<a name="aws-resource-apigatewayv2-routeresponse--examples--Route_response_creation_example--yaml"></a>
 
-```yaml
-
+```
 MyRouteResponse:
   Type: 'AWS::ApiGatewayV2::RouteResponse'
   Properties:
     RouteId: !Ref MyRoute
     ApiId: !Ref MyApi
     RouteResponseKey: $default
-
 ```
 
 ## See also
-
-- [CreateRouteResponse](../../../apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.md#CreateRouteResponse) in the _Amazon API_
-_Gateway Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGatewayV2::Route
-
-ParameterConstraints
+<a name="aws-resource-apigatewayv2-routeresponse--seealso"></a>
++ [CreateRouteResponse](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-routes-routeid-routeresponses.html#CreateRouteResponse) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,69 +2,52 @@
 title: "AWS::CleanRooms::ConfiguredTable AggregateColumn"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable AggregateColumn
+<a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn"></a>
 
 Column in configured table that can be used in aggregate function in query.
 
 ## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn-syntax.json"></a>
 
-```json
-
+```
 {
-  "ColumnNames" : [ String, ... ],
-  "Function" : String
+  "[ColumnNames](#cfn-cleanrooms-configuredtable-aggregatecolumn-columnnames)" : {{[ String, ... ]}},
+  "[Function](#cfn-cleanrooms-configuredtable-aggregatecolumn-function)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn-syntax.yaml"></a>
 
-```yaml
-
-  ColumnNames:
-    - String
-  Function: String
-
+```
+  [ColumnNames](#cfn-cleanrooms-configuredtable-aggregatecolumn-columnnames): {{
+    - String}}
+  [Function](#cfn-cleanrooms-configuredtable-aggregatecolumn-function): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn-properties"></a>
 
-`ColumnNames`
-
+`ColumnNames`  <a name="cfn-cleanrooms-configuredtable-aggregatecolumn-columnnames"></a>
 Column names in configured table of aggregate columns.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Function`
-
+`Function`  <a name="cfn-cleanrooms-configuredtable-aggregatecolumn-function"></a>
 Aggregation function that can be applied to aggregate column in query.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SUM | SUM_DISTINCT | COUNT | COUNT_DISTINCT | AVG`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CleanRooms::ConfiguredTable
-
-AggregationConstraint
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SUM | SUM_DISTINCT | COUNT | COUNT_DISTINCT | AVG`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

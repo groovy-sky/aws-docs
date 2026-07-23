@@ -2,65 +2,50 @@
 title: "AWS::MediaPackage::OriginEndpoint DashEncryption"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::OriginEndpoint DashEncryption
+<a name="aws-properties-mediapackage-originendpoint-dashencryption"></a>
 
 Holds encryption information so that access to the content can be controlled by a DRM solution.
 
 ## Syntax
+<a name="aws-properties-mediapackage-originendpoint-dashencryption-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-mediapackage-originendpoint-dashencryption-syntax.json"></a>
 
-```json
-
+```
 {
-  "KeyRotationIntervalSeconds" : Integer,
-  "SpekeKeyProvider" : SpekeKeyProvider
+  "[KeyRotationIntervalSeconds](#cfn-mediapackage-originendpoint-dashencryption-keyrotationintervalseconds)" : {{Integer}},
+  "[SpekeKeyProvider](#cfn-mediapackage-originendpoint-dashencryption-spekekeyprovider)" : {{SpekeKeyProvider}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-mediapackage-originendpoint-dashencryption-syntax.yaml"></a>
 
-```yaml
-
-  KeyRotationIntervalSeconds: Integer
-  SpekeKeyProvider:
-    SpekeKeyProvider
-
+```
+  [KeyRotationIntervalSeconds](#cfn-mediapackage-originendpoint-dashencryption-keyrotationintervalseconds): {{Integer}}
+  [SpekeKeyProvider](#cfn-mediapackage-originendpoint-dashencryption-spekekeyprovider): {{
+    SpekeKeyProvider}}
 ```
 
 ## Properties
+<a name="aws-properties-mediapackage-originendpoint-dashencryption-properties"></a>
 
-`KeyRotationIntervalSeconds`
-
+`KeyRotationIntervalSeconds`  <a name="cfn-mediapackage-originendpoint-dashencryption-keyrotationintervalseconds"></a>
 Number of seconds before AWS Elemental MediaPackage rotates to a new key. By default, rotation is set to 60 seconds. Set to `0` to disable key rotation.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SpekeKeyProvider`
-
+`SpekeKeyProvider`  <a name="cfn-mediapackage-originendpoint-dashencryption-spekekeyprovider"></a>
 Parameters for the SPEKE key provider.
-
-_Required_: Yes
-
-_Type_: [SpekeKeyProvider](aws-properties-mediapackage-originendpoint-spekekeyprovider.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CmafPackage
-
-DashPackage
+*Required*: Yes
+*Type*: [SpekeKeyProvider](aws-properties-mediapackage-originendpoint-spekekeyprovider.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

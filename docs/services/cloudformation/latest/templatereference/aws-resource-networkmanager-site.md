@@ -2,152 +2,128 @@
 title: "AWS::NetworkManager::Site"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkManager::Site
+<a name="aws-resource-networkmanager-site"></a>
 
 Creates a new site in a global network.
 
 ## Syntax
+<a name="aws-resource-networkmanager-site-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-networkmanager-site-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::NetworkManager::Site",
   "Properties" : {
-      "Description" : String,
-      "GlobalNetworkId" : String,
-      "Location" : Location,
-      "Tags" : [ Tag, ... ]
+      "[Description](#cfn-networkmanager-site-description)" : {{String}},
+      "[GlobalNetworkId](#cfn-networkmanager-site-globalnetworkid)" : {{String}},
+      "[Location](#cfn-networkmanager-site-location)" : {{Location}},
+      "[Tags](#cfn-networkmanager-site-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-networkmanager-site-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::Site
 Properties:
-  Description: String
-  GlobalNetworkId: String
-  Location:
-    Location
-  Tags:
-    - Tag
-
+  [Description](#cfn-networkmanager-site-description): {{String}}
+  [GlobalNetworkId](#cfn-networkmanager-site-globalnetworkid): {{String}}
+  [Location](#cfn-networkmanager-site-location): {{
+    Location}}
+  [Tags](#cfn-networkmanager-site-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-networkmanager-site-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-networkmanager-site-description"></a>
 A description of your site.
-
 Constraints: Maximum length of 256 characters.
+*Required*: No
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GlobalNetworkId`
-
+`GlobalNetworkId`  <a name="cfn-networkmanager-site-globalnetworkid"></a>
 The ID of the global network.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\s\S]*`
+*Minimum*: `0`
+*Maximum*: `50`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\s\S]*`
-
-_Minimum_: `0`
-
-_Maximum_: `50`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Location`
-
+`Location`  <a name="cfn-networkmanager-site-location"></a>
 The site location. This information is used for visualization in the Network Manager console. If you specify the address, the latitude and longitude are automatically calculated.
++ `Address`: The physical address of the site.
++ `Latitude`: The latitude of the site.
++ `Longitude`: The longitude of the site.
+*Required*: No
+*Type*: [Location](aws-properties-networkmanager-site-location.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `Address`: The physical address of the site.
-
-- `Latitude`: The latitude of the site.
-
-- `Longitude`: The longitude of the site.
-
-_Required_: No
-
-_Type_: [Location](aws-properties-networkmanager-site-location.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-networkmanager-site-tags"></a>
 The tags for the site.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-networkmanager-site-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-networkmanager-site-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-networkmanager-site-return-values"></a>
 
 ### Ref
+<a name="aws-resource-networkmanager-site-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the IDs of the global network and the site. For example: `global-network-01231231231231231|site-444555aaabbb11223`.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-networkmanager-site-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`CreatedAt`
+####
+<a name="aws-resource-networkmanager-site-return-values-fn--getatt-fn--getatt"></a>
 
+`CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time that the site was created.
 
-`SiteArn`
+`SiteArn`  <a name="SiteArn-fn::getatt"></a>
+The ARN of the site. For example, `arn:aws:networkmanager::123456789012:site/global-network-01231231231231231/site-444555aaabbb11223`.
 
-The ARN of the site. For example,
-`arn:aws:networkmanager::123456789012:site/global-network-01231231231231231/site-444555aaabbb11223`.
-
-`SiteId`
-
+`SiteId`  <a name="SiteId-fn::getatt"></a>
 The ID of the site. For example, `site-444555aaabbb11223`.
 
-`State`
-
+`State`  <a name="State-fn::getatt"></a>
 The current state of the site.
 
 ## Examples
+<a name="aws-resource-networkmanager-site--examples"></a>
 
 ### Site
+<a name="aws-resource-networkmanager-site--examples--Site"></a>
 
 The following example creates a site in a global network.
 
 #### JSON
+<a name="aws-resource-networkmanager-site--examples--Site--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::NetworkManager::Site",
     "Properties": {
@@ -171,9 +147,9 @@ The following example creates a site in a global network.
 ```
 
 #### YAML
+<a name="aws-resource-networkmanager-site--examples--Site--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::NetworkManager::Site
 Properties:
   Description: "Chicago office"
@@ -186,11 +162,5 @@ Properties:
     - Key: Network
       Value: north-america
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::NetworkManager::LinkAssociation
-
-Location
 
 All content copied from https://docs.aws.amazon.com/.

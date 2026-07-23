@@ -2,61 +2,45 @@
 title: "AWS::WAFv2::WebACL RateLimitJA3Fingerprint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RateLimitJA3Fingerprint
+<a name="aws-properties-wafv2-webacl-ratelimitja3fingerprint"></a>
 
-Use the request's JA3 fingerprint derived from the TLS Client Hello of an incoming request as an aggregate key. If you use a single
-JA3 fingerprint as your custom key, then each value fully defines an aggregation instance.
+ Use the request's JA3 fingerprint derived from the TLS Client Hello of an incoming request as an aggregate key. If you use a single JA3 fingerprint as your custom key, then each value fully defines an aggregation instance.
 
 ## Syntax
+<a name="aws-properties-wafv2-webacl-ratelimitja3fingerprint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-wafv2-webacl-ratelimitja3fingerprint-syntax.json"></a>
 
-```json
-
+```
 {
-  "FallbackBehavior" : String
+  "[FallbackBehavior](#cfn-wafv2-webacl-ratelimitja3fingerprint-fallbackbehavior)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-wafv2-webacl-ratelimitja3fingerprint-syntax.yaml"></a>
 
-```yaml
-
-  FallbackBehavior: String
-
+```
+  [FallbackBehavior](#cfn-wafv2-webacl-ratelimitja3fingerprint-fallbackbehavior): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-wafv2-webacl-ratelimitja3fingerprint-properties"></a>
 
-`FallbackBehavior`
-
+`FallbackBehavior`  <a name="cfn-wafv2-webacl-ratelimitja3fingerprint-fallbackbehavior"></a>
 The match status to assign to the web request if there is insufficient TSL Client Hello information to compute the JA3 fingerprint.
-
 You can specify the following fallback behaviors:
-
-- `MATCH` \- Treat the web request as matching the rule statement. AWS WAF applies the rule action to the request.
-
-- `NO_MATCH` \- Treat the web request as not matching the rule statement.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `MATCH | NO_MATCH`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RateLimitHeader
-
-RateLimitJA4Fingerprint
++ `MATCH` - Treat the web request as matching the rule statement. AWS WAF applies the rule action to the request.
++ `NO_MATCH` - Treat the web request as not matching the rule statement.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `MATCH | NO_MATCH`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

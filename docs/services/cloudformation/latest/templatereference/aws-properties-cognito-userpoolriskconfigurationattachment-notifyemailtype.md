@@ -2,100 +2,66 @@
 title: "AWS::Cognito::UserPoolRiskConfigurationAttachment NotifyEmailType"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRiskConfigurationAttachment NotifyEmailType
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype"></a>
 
-The template for email messages that advanced security features sends to a user when
-your threat protection automated response has a _Notify_
-action.
+The template for email messages that advanced security features sends to a user when your threat protection automated response has a *Notify* action.
 
 ## Syntax
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype-syntax.json"></a>
 
-```json
-
+```
 {
-  "HtmlBody" : String,
-  "Subject" : String,
-  "TextBody" : String
+  "[HtmlBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-htmlbody)" : {{String}},
+  "[Subject](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-subject)" : {{String}},
+  "[TextBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-textbody)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype-syntax.yaml"></a>
 
-```yaml
-
-  HtmlBody: String
-  Subject: String
-  TextBody: String
-
+```
+  [HtmlBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-htmlbody): {{String}}
+  [Subject](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-subject): {{String}}
+  [TextBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-textbody): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype-properties"></a>
 
-`HtmlBody`
+`HtmlBody`  <a name="cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-htmlbody"></a>
+The body of an email notification formatted in HTML. Choose an `HtmlBody` or a `TextBody` to send an HTML-formatted or plaintext message, respectively.
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]+`
+*Minimum*: `6`
+*Maximum*: `20000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The body of an email notification formatted in HTML. Choose an `HtmlBody`
-or a `TextBody` to send an HTML-formatted or plaintext message,
-respectively.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]+`
-
-_Minimum_: `6`
-
-_Maximum_: `20000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subject`
-
+`Subject`  <a name="cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-subject"></a>
 The subject of the threat protection email notification.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+`
+*Minimum*: `1`
+*Maximum*: `140`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+`
-
-_Minimum_: `1`
-
-_Maximum_: `140`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TextBody`
-
-The body of an email notification formatted in plaintext. Choose an
-`HtmlBody` or a `TextBody` to send an HTML-formatted or
-plaintext message, respectively.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]+`
-
-_Minimum_: `6`
-
-_Maximum_: `20000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NotifyConfigurationType
-
-RiskExceptionConfigurationType
+`TextBody`  <a name="cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-textbody"></a>
+The body of an email notification formatted in plaintext. Choose an `HtmlBody` or a `TextBody` to send an HTML-formatted or plaintext message, respectively.
+*Required*: No
+*Type*: String
+*Pattern*: `[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]+`
+*Minimum*: `6`
+*Maximum*: `20000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

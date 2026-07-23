@@ -2,72 +2,53 @@
 title: "AWS::EC2::NetworkInsightsPath FilterPortRange"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::NetworkInsightsPath FilterPortRange
+<a name="aws-properties-ec2-networkinsightspath-filterportrange"></a>
 
 Describes a port range.
 
 ## Syntax
+<a name="aws-properties-ec2-networkinsightspath-filterportrange-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-networkinsightspath-filterportrange-syntax.json"></a>
 
-```json
-
+```
 {
-  "FromPort" : Integer,
-  "ToPort" : Integer
+  "[FromPort](#cfn-ec2-networkinsightspath-filterportrange-fromport)" : {{Integer}},
+  "[ToPort](#cfn-ec2-networkinsightspath-filterportrange-toport)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-networkinsightspath-filterportrange-syntax.yaml"></a>
 
-```yaml
-
-  FromPort: Integer
-  ToPort: Integer
-
+```
+  [FromPort](#cfn-ec2-networkinsightspath-filterportrange-fromport): {{Integer}}
+  [ToPort](#cfn-ec2-networkinsightspath-filterportrange-toport): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-networkinsightspath-filterportrange-properties"></a>
 
-`FromPort`
-
+`FromPort`  <a name="cfn-ec2-networkinsightspath-filterportrange-fromport"></a>
 The first port in the range.
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ToPort`
-
+`ToPort`  <a name="cfn-ec2-networkinsightspath-filterportrange-toport"></a>
 The last port in the range.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::EC2::NetworkInsightsPath
-
-PathFilter
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

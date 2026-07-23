@@ -2,177 +2,102 @@
 title: "AWS::KinesisFirehose::DeliveryStream SchemaConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream SchemaConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaconfiguration"></a>
 
-Specifies the schema to which you want Firehose to configure your data
-before it writes it to Amazon S3. This parameter is required if `Enabled` is set
-to true.
+Specifies the schema to which you want Firehose to configure your data before it writes it to Amazon S3. This parameter is required if `Enabled` is set to true.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CatalogId" : String,
-  "DatabaseName" : String,
-  "Region" : String,
-  "RoleARN" : String,
-  "TableName" : String,
-  "VersionId" : String
+  "[CatalogId](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-catalogid)" : {{String}},
+  "[DatabaseName](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-databasename)" : {{String}},
+  "[Region](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-region)" : {{String}},
+  "[RoleARN](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-rolearn)" : {{String}},
+  "[TableName](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-tablename)" : {{String}},
+  "[VersionId](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-versionid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CatalogId: String
-  DatabaseName: String
-  Region: String
-  RoleARN: String
-  TableName: String
-  VersionId: String
-
+```
+  [CatalogId](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-catalogid): {{String}}
+  [DatabaseName](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-databasename): {{String}}
+  [Region](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-region): {{String}}
+  [RoleARN](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-rolearn): {{String}}
+  [TableName](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-tablename): {{String}}
+  [VersionId](#cfn-kinesisfirehose-deliverystream-schemaconfiguration-versionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-schemaconfiguration-properties"></a>
 
-`CatalogId`
+`CatalogId`  <a name="cfn-kinesisfirehose-deliverystream-schemaconfiguration-catalogid"></a>
+The ID of the AWS Glue Data Catalog. If you don't supply this, the AWS account ID is used by default.
+*Required*: No
+*Type*: String
+*Pattern*: `^\S+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ID of the AWS Glue Data Catalog. If you don't supply this, the
-AWS account ID is used by default.
+`DatabaseName`  <a name="cfn-kinesisfirehose-deliverystream-schemaconfiguration-databasename"></a>
+Specifies the name of the AWS Glue database that contains the schema for the output data.
+If the `SchemaConfiguration` request parameter is used as part of invoking the `CreateDeliveryStream` API, then the `DatabaseName` property is required and its value must be specified.
+*Required*: No
+*Type*: String
+*Pattern*: `^\S+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Region`  <a name="cfn-kinesisfirehose-deliverystream-schemaconfiguration-region"></a>
+If you don't specify an AWS Region, the default is the current Region.
+*Required*: No
+*Type*: String
+*Pattern*: `^\S+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RoleARN`  <a name="cfn-kinesisfirehose-deliverystream-schemaconfiguration-rolearn"></a>
+The role that Firehose can use to access AWS Glue. This role must be in the same account you use for Firehose. Cross-account roles aren't allowed.
+If the `SchemaConfiguration` request parameter is used as part of invoking the `CreateDeliveryStream` API, then the `RoleARN` property is required and its value must be specified.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:.*`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^\S+$`
+`TableName`  <a name="cfn-kinesisfirehose-deliverystream-schemaconfiguration-tablename"></a>
+Specifies the AWS Glue table that contains the column information that constitutes your data schema.
+If the `SchemaConfiguration` request parameter is used as part of invoking the `CreateDeliveryStream` API, then the `TableName` property is required and its value must be specified.
+*Required*: No
+*Type*: String
+*Pattern*: `^\S+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DatabaseName`
-
-Specifies the name of the AWS Glue database that contains the schema for
-the output data.
-
-###### Important
-
-If the `SchemaConfiguration` request parameter is used as part of invoking
-the `CreateDeliveryStream` API, then the `DatabaseName` property
-is required and its value must be specified.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\S+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Region`
-
-If you don't specify an AWS Region, the default is the current
-Region.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\S+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RoleARN`
-
-The role that Firehose can use to access AWS Glue. This
-role must be in the same account you use for Firehose. Cross-account roles
-aren't allowed.
-
-###### Important
-
-If the `SchemaConfiguration` request parameter is used as part of invoking
-the `CreateDeliveryStream` API, then the `RoleARN` property is
-required and its value must be specified.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `arn:.*`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
-Specifies the AWS Glue table that contains the column information that
-constitutes your data schema.
-
-###### Important
-
-If the `SchemaConfiguration` request parameter is used as part of invoking
-the `CreateDeliveryStream` API, then the `TableName` property is
-required and its value must be specified.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\S+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VersionId`
-
-Specifies the table version for the output data schema. If you don't specify this
-version ID, or if you set it to `LATEST`, Firehose uses the most
-recent version. This means that any updates to the table are automatically picked
-up.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\S+$`
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3DestinationConfiguration
-
-SchemaEvolutionConfiguration
+`VersionId`  <a name="cfn-kinesisfirehose-deliverystream-schemaconfiguration-versionid"></a>
+Specifies the table version for the output data schema. If you don't specify this version ID, or if you set it to `LATEST`, Firehose uses the most recent version. This means that any updates to the table are automatically picked up.
+*Required*: No
+*Type*: String
+*Pattern*: `^\S+$`
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

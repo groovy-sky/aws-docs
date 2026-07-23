@@ -2,64 +2,49 @@
 title: "AWS::Glue::Crawler MongoDBTarget"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Crawler MongoDBTarget
+<a name="aws-properties-glue-crawler-mongodbtarget"></a>
 
 Specifies an Amazon DocumentDB or MongoDB data store to crawl.
 
 ## Syntax
+<a name="aws-properties-glue-crawler-mongodbtarget-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-glue-crawler-mongodbtarget-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectionName" : String,
-  "Path" : String
+  "[ConnectionName](#cfn-glue-crawler-mongodbtarget-connectionname)" : {{String}},
+  "[Path](#cfn-glue-crawler-mongodbtarget-path)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-glue-crawler-mongodbtarget-syntax.yaml"></a>
 
-```yaml
-
-  ConnectionName: String
-  Path: String
-
+```
+  [ConnectionName](#cfn-glue-crawler-mongodbtarget-connectionname): {{String}}
+  [Path](#cfn-glue-crawler-mongodbtarget-path): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-glue-crawler-mongodbtarget-properties"></a>
 
-`ConnectionName`
-
+`ConnectionName`  <a name="cfn-glue-crawler-mongodbtarget-connectionname"></a>
 The name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Path`
-
+`Path`  <a name="cfn-glue-crawler-mongodbtarget-path"></a>
 The path of the Amazon DocumentDB or MongoDB target (database/collection).
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LakeFormationConfiguration
-
-RecrawlPolicy
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

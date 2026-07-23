@@ -2,75 +2,54 @@
 title: "AWS::SageMaker::Domain S3FileSystemConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain S3FileSystemConfig
+<a name="aws-properties-sagemaker-domain-s3filesystemconfig"></a>
 
 Configuration for the custom Amazon S3 file system.
 
 ## Syntax
+<a name="aws-properties-sagemaker-domain-s3filesystemconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-domain-s3filesystemconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "MountPath" : String,
-  "S3Uri" : String
+  "[MountPath](#cfn-sagemaker-domain-s3filesystemconfig-mountpath)" : {{String}},
+  "[S3Uri](#cfn-sagemaker-domain-s3filesystemconfig-s3uri)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-domain-s3filesystemconfig-syntax.yaml"></a>
 
-```yaml
-
-  MountPath: String
-  S3Uri: String
-
+```
+  [MountPath](#cfn-sagemaker-domain-s3filesystemconfig-mountpath): {{String}}
+  [S3Uri](#cfn-sagemaker-domain-s3filesystemconfig-s3uri): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-domain-s3filesystemconfig-properties"></a>
 
-`MountPath`
+`MountPath`  <a name="cfn-sagemaker-domain-s3filesystemconfig-mountpath"></a>
+The file system path where the Amazon S3 storage location will be mounted within the Amazon SageMaker Studio environment.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The file system path where the Amazon S3 storage location will be mounted within the Amazon SageMaker
-Studio environment.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Uri`
-
+`S3Uri`  <a name="cfn-sagemaker-domain-s3filesystemconfig-s3uri"></a>
 The Amazon S3 URI of the S3 file system configuration.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `(s3)://([^/]+)/?(.*)`
-
-_Minimum_: `0`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RStudioServerProDomainSettings
-
-SharingSettings
+*Required*: No
+*Type*: String
+*Pattern*: `(s3)://([^/]+)/?(.*)`
+*Minimum*: `0`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

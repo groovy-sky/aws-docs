@@ -3,164 +3,105 @@ title: "ListTypeVersions"
 ---
 
 # ListTypeVersions
+<a name="API_ListTypeVersions"></a>
 
 Returns summary information about the versions of an extension.
 
 ## Request Parameters
+<a name="API_ListTypeVersions_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
-**Arn**
-
-The Amazon Resource Name (ARN) of the extension for which you want version summary
-information.
-
-Conditional: You must specify either `TypeName` and `Type`, or
-`Arn`.
-
+ ** Arn **
+The Amazon Resource Name (ARN) of the extension for which you want version summary information.
+Conditional: You must specify either `TypeName` and `Type`, or `Arn`.
 Type: String
-
 Length Constraints: Maximum length of 1024.
-
 Pattern: `arn:aws[A-Za-z0-9-]{0,64}:cloudformation:[A-Za-z0-9-]{1,64}:([0-9]{12})?:type/.+`
-
 Required: No
 
-**DeprecatedStatus**
-
-The deprecation status of the extension versions that you want to get summary information
-about.
-
+ ** DeprecatedStatus **
+The deprecation status of the extension versions that you want to get summary information about.
 Valid values include:
-
-- `LIVE`: The extension version is registered and can be used in CloudFormation
-operations, dependent on its provisioning behavior and visibility scope.
-
-- `DEPRECATED`: The extension version has been deregistered and can no longer
-be used in CloudFormation operations.
-
++  `LIVE`: The extension version is registered and can be used in CloudFormation operations, dependent on its provisioning behavior and visibility scope.
++  `DEPRECATED`: The extension version has been deregistered and can no longer be used in CloudFormation operations.
 The default is `LIVE`.
-
 Type: String
-
 Valid Values: `LIVE | DEPRECATED`
-
 Required: No
 
-**MaxResults**
-
-The maximum number of results to be returned with a single call. If the number of
-available results exceeds this maximum, the response includes a `NextToken` value
-that you can assign to the `NextToken` request parameter to get the next set of
-results.
-
+ ** MaxResults **
+The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a `NextToken` value that you can assign to the `NextToken` request parameter to get the next set of results.
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 100.
-
 Required: No
 
-**NextToken**
-
-The token for the next set of items to return. (You received this token from a previous
-call.)
-
+ ** NextToken **
+The token for the next set of items to return. (You received this token from a previous call.)
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-
 Required: No
 
-**PublisherId**
-
+ ** PublisherId **
 The publisher ID of the extension publisher.
-
 Extensions published by Amazon aren't assigned a publisher ID.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 40.
-
 Pattern: `[0-9a-zA-Z]{12,40}`
-
 Required: No
 
-**Type**
-
+ ** Type **
 The kind of the extension.
-
-Conditional: You must specify either `TypeName` and `Type`, or
-`Arn`.
-
+Conditional: You must specify either `TypeName` and `Type`, or `Arn`.
 Type: String
-
 Valid Values: `RESOURCE | MODULE | HOOK`
-
 Required: No
 
-**TypeName**
-
+ ** TypeName **
 The name of the extension for which you want version summary information.
-
-Conditional: You must specify either `TypeName` and `Type`, or
-`Arn`.
-
+Conditional: You must specify either `TypeName` and `Type`, or `Arn`.
 Type: String
-
 Length Constraints: Minimum length of 10. Maximum length of 204.
-
 Pattern: `[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}(::MODULE){0,1}`
-
 Required: No
 
 ## Response Elements
+<a name="API_ListTypeVersions_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**NextToken**
-
-If the request doesn't return all of the remaining results, `NextToken` is set
-to a token. To retrieve the next set of results, call this action again and assign that token
-to the request object's `NextToken` parameter. If the request returns all results,
-`NextToken` is set to `null`.
-
+ ** NextToken **
+If the request doesn't return all of the remaining results, `NextToken` is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's `NextToken` parameter. If the request returns all results, `NextToken` is set to `null`.
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
-**TypeVersionSummaries.member.N**
-
-A list of `TypeVersionSummary` structures that contain information about the
-specified extension's versions.
-
-Type: Array of [TypeVersionSummary](api-typeversionsummary.md) objects
+ **TypeVersionSummaries.member.N**
+A list of `TypeVersionSummary` structures that contain information about the specified extension's versions.
+Type: Array of [TypeVersionSummary](API_TypeVersionSummary.md) objects
 
 ## Errors
+<a name="API_ListTypeVersions_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
-**CFNRegistry**
-
+ ** CFNRegistry **
 An error occurred during a CloudFormation registry operation.
-
-**Message**
-
+ ** Message **
 A message with details about the error that occurred.
-
 HTTP Status Code: 400
 
 ## Examples
+<a name="API_ListTypeVersions_Examples"></a>
 
 ### ListTypeRegistrations
+<a name="API_ListTypeVersions_Example_1"></a>
 
-The following example returns summary information about the two extension versions
-with a status of `LIVE` for the private resource type
-`My::Resource::Example`.
+The following example returns summary information about the two extension versions with a status of `LIVE` for the private resource type `My::Resource::Example`.
 
 #### Sample Request
+<a name="API_ListTypeVersions_Example_1_Request"></a>
 
 ```
-
 https://cloudformation.us-east-1.amazonaws.com/
  ?Action=ListTypeRegistrations
  &Version=2010-05-15
@@ -175,9 +116,9 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
+<a name="API_ListTypeVersions_Example_1_Response"></a>
 
 ```
-
 <ListTypeVersionsResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
   <ListTypeVersionsResult>
     <TypeVersionSummaries>
@@ -206,33 +147,18 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 ## See Also
+<a name="API_ListTypeVersions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/ListTypeVersions)
-
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ListTypeVersions)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ListTypes
-
-PublishType
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/ListTypeVersions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ListTypeVersions)
 
 All content copied from https://docs.aws.amazon.com/.

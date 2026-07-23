@@ -2,70 +2,52 @@
 title: "AWS::QuickSight::Topic TopicSingularFilterConstant"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicSingularFilterConstant
+<a name="aws-properties-quicksight-topic-topicsingularfilterconstant"></a>
 
 A structure that represents a singular filter constant, used in filters to specify a single value to match against.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-topicsingularfilterconstant-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-topicsingularfilterconstant-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConstantType" : String,
-  "SingularConstant" : String
+  "[ConstantType](#cfn-quicksight-topic-topicsingularfilterconstant-constanttype)" : {{String}},
+  "[SingularConstant](#cfn-quicksight-topic-topicsingularfilterconstant-singularconstant)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-topicsingularfilterconstant-syntax.yaml"></a>
 
-```yaml
-
-  ConstantType: String
-  SingularConstant: String
-
+```
+  [ConstantType](#cfn-quicksight-topic-topicsingularfilterconstant-constanttype): {{String}}
+  [SingularConstant](#cfn-quicksight-topic-topicsingularfilterconstant-singularconstant): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-topicsingularfilterconstant-properties"></a>
 
-`ConstantType`
-
+`ConstantType`  <a name="cfn-quicksight-topic-topicsingularfilterconstant-constanttype"></a>
 The type of the singular filter constant. Valid values for this structure are `SINGULAR`.
+*Required*: No
+*Type*: String
+*Allowed values*: `SINGULAR | RANGE | COLLECTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SINGULAR | RANGE | COLLECTIVE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SingularConstant`
-
+`SingularConstant`  <a name="cfn-quicksight-topic-topicsingularfilterconstant-singularconstant"></a>
 The value of the singular filter constant.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TopicRelativeDateFilter
-
-AWS::QuickSight::VPCConnection
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,65 +2,50 @@
 title: "AWS::QuickSight::Dashboard TableFieldCustomTextContent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard TableFieldCustomTextContent
+<a name="aws-properties-quicksight-dashboard-tablefieldcustomtextcontent"></a>
 
 The custom text content (value, font configuration) for the table link content configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-tablefieldcustomtextcontent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-tablefieldcustomtextcontent-syntax.json"></a>
 
-```json
-
+```
 {
-  "FontConfiguration" : FontConfiguration,
-  "Value" : String
+  "[FontConfiguration](#cfn-quicksight-dashboard-tablefieldcustomtextcontent-fontconfiguration)" : {{FontConfiguration}},
+  "[Value](#cfn-quicksight-dashboard-tablefieldcustomtextcontent-value)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-tablefieldcustomtextcontent-syntax.yaml"></a>
 
-```yaml
-
-  FontConfiguration:
-    FontConfiguration
-  Value: String
-
+```
+  [FontConfiguration](#cfn-quicksight-dashboard-tablefieldcustomtextcontent-fontconfiguration): {{
+    FontConfiguration}}
+  [Value](#cfn-quicksight-dashboard-tablefieldcustomtextcontent-value): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-tablefieldcustomtextcontent-properties"></a>
 
-`FontConfiguration`
-
+`FontConfiguration`  <a name="cfn-quicksight-dashboard-tablefieldcustomtextcontent-fontconfiguration"></a>
 The font configuration of the custom text content for the table URL link content.
+*Required*: Yes
+*Type*: [FontConfiguration](aws-properties-quicksight-dashboard-fontconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [FontConfiguration](aws-properties-quicksight-dashboard-fontconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-quicksight-dashboard-tablefieldcustomtextcontent-value"></a>
 The string value of the custom text content for the table URL link content.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TableFieldCustomIconContent
-
-TableFieldImageConfiguration
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,81 +2,60 @@
 title: "AWS::QuickSight::Dashboard BoxPlotOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard BoxPlotOptions
+<a name="aws-properties-quicksight-dashboard-boxplotoptions"></a>
 
 The options of a box plot visual.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-boxplotoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-boxplotoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AllDataPointsVisibility" : String,
-  "OutlierVisibility" : String,
-  "StyleOptions" : BoxPlotStyleOptions
+  "[AllDataPointsVisibility](#cfn-quicksight-dashboard-boxplotoptions-alldatapointsvisibility)" : {{String}},
+  "[OutlierVisibility](#cfn-quicksight-dashboard-boxplotoptions-outliervisibility)" : {{String}},
+  "[StyleOptions](#cfn-quicksight-dashboard-boxplotoptions-styleoptions)" : {{BoxPlotStyleOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-boxplotoptions-syntax.yaml"></a>
 
-```yaml
-
-  AllDataPointsVisibility: String
-  OutlierVisibility: String
-  StyleOptions:
-    BoxPlotStyleOptions
-
+```
+  [AllDataPointsVisibility](#cfn-quicksight-dashboard-boxplotoptions-alldatapointsvisibility): {{String}}
+  [OutlierVisibility](#cfn-quicksight-dashboard-boxplotoptions-outliervisibility): {{String}}
+  [StyleOptions](#cfn-quicksight-dashboard-boxplotoptions-styleoptions): {{
+    BoxPlotStyleOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-boxplotoptions-properties"></a>
 
-`AllDataPointsVisibility`
-
+`AllDataPointsVisibility`  <a name="cfn-quicksight-dashboard-boxplotoptions-alldatapointsvisibility"></a>
 Determines the visibility of all data points of the box plot.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OutlierVisibility`
-
+`OutlierVisibility`  <a name="cfn-quicksight-dashboard-boxplotoptions-outliervisibility"></a>
 Determines the visibility of the outlier in a box plot.
+*Required*: No
+*Type*: String
+*Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `HIDDEN | VISIBLE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StyleOptions`
-
+`StyleOptions`  <a name="cfn-quicksight-dashboard-boxplotoptions-styleoptions"></a>
 The style options of the box plot.
-
-_Required_: No
-
-_Type_: [BoxPlotStyleOptions](aws-properties-quicksight-dashboard-boxplotstyleoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BoxPlotFieldWells
-
-BoxPlotSortConfiguration
+*Required*: No
+*Type*: [BoxPlotStyleOptions](aws-properties-quicksight-dashboard-boxplotstyleoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

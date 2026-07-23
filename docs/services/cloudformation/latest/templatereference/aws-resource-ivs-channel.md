@@ -2,270 +2,191 @@
 title: "AWS::IVS::Channel"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::Channel
+<a name="aws-resource-ivs-channel"></a>
 
-The `AWS::IVS::Channel` resource specifies an Amazon IVS channel. A channel stores configuration information
-related to your live stream. For more information, see [CreateChannel](../../../../reference/ivs/latest/lowlatencyapireference/api-createchannel.md) in the
-_Amazon IVS Low-Latency Streaming API Reference_.
+The `AWS::IVS::Channel` resource specifies an Amazon IVS channel. A channel stores configuration information related to your live stream. For more information, see [CreateChannel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_CreateChannel.html) in the *Amazon IVS Low-Latency Streaming API Reference*.
 
-###### Note
-
-By default, the IVS API CreateChannel endpoint creates a stream key in addition
-to a channel. The Amazon IVS Channel resource
-_does not_ create a stream key; to create a stream key, use
-the StreamKey resource instead.
+**Note**
+ By default, the IVS API CreateChannel endpoint creates a stream key in addition to a channel. The Amazon IVS Channel resource *does not* create a stream key; to create a stream key, use the StreamKey resource instead.
 
 ## Syntax
+<a name="aws-resource-ivs-channel-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ivs-channel-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::IVS::Channel",
   "Properties" : {
-      "Authorized" : Boolean,
-      "ContainerFormat" : String,
-      "InsecureIngest" : Boolean,
-      "LatencyMode" : String,
-      "MultitrackInputConfiguration" : MultitrackInputConfiguration,
-      "Name" : String,
-      "Preset" : String,
-      "RecordingConfigurationArn" : String,
-      "Tags" : [ Tag, ... ],
-      "Type" : String
+      "[Authorized](#cfn-ivs-channel-authorized)" : {{Boolean}},
+      "[ContainerFormat](#cfn-ivs-channel-containerformat)" : {{String}},
+      "[InsecureIngest](#cfn-ivs-channel-insecureingest)" : {{Boolean}},
+      "[LatencyMode](#cfn-ivs-channel-latencymode)" : {{String}},
+      "[MultitrackInputConfiguration](#cfn-ivs-channel-multitrackinputconfiguration)" : {{MultitrackInputConfiguration}},
+      "[Name](#cfn-ivs-channel-name)" : {{String}},
+      "[Preset](#cfn-ivs-channel-preset)" : {{String}},
+      "[RecordingConfigurationArn](#cfn-ivs-channel-recordingconfigurationarn)" : {{String}},
+      "[Tags](#cfn-ivs-channel-tags)" : {{[ Tag, ... ]}},
+      "[Type](#cfn-ivs-channel-type)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ivs-channel-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::IVS::Channel
 Properties:
-  Authorized: Boolean
-  ContainerFormat: String
-  InsecureIngest: Boolean
-  LatencyMode: String
-  MultitrackInputConfiguration:
-    MultitrackInputConfiguration
-  Name: String
-  Preset: String
-  RecordingConfigurationArn: String
-  Tags:
-    - Tag
-  Type: String
-
+  [Authorized](#cfn-ivs-channel-authorized): {{Boolean}}
+  [ContainerFormat](#cfn-ivs-channel-containerformat): {{String}}
+  [InsecureIngest](#cfn-ivs-channel-insecureingest): {{Boolean}}
+  [LatencyMode](#cfn-ivs-channel-latencymode): {{String}}
+  [MultitrackInputConfiguration](#cfn-ivs-channel-multitrackinputconfiguration): {{
+    MultitrackInputConfiguration}}
+  [Name](#cfn-ivs-channel-name): {{String}}
+  [Preset](#cfn-ivs-channel-preset): {{String}}
+  [RecordingConfigurationArn](#cfn-ivs-channel-recordingconfigurationarn): {{String}}
+  [Tags](#cfn-ivs-channel-tags): {{
+    - Tag}}
+  [Type](#cfn-ivs-channel-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ivs-channel-properties"></a>
 
-`Authorized`
-
+`Authorized`  <a name="cfn-ivs-channel-authorized"></a>
 Whether the channel is authorized.
+*Default*: `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Default_: `false`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ContainerFormat`
-
+`ContainerFormat`  <a name="cfn-ivs-channel-containerformat"></a>
 Indicates which content-packaging format is used (MPEG-TS or fMP4). If `multitrackInputConfiguration` is specified and `enabled` is `true`, then `containerFormat` is required and must be set to `FRAGMENTED_MP4`. Otherwise, `containerFormat` may be set to `TS` or `FRAGMENTED_MP4`. Default: `TS`.
+*Required*: No
+*Type*: String
+*Allowed values*: `TS | FRAGMENTED_MP4`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `TS | FRAGMENTED_MP4`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`InsecureIngest`
-
+`InsecureIngest`  <a name="cfn-ivs-channel-insecureingest"></a>
 Whether the channel allows insecure RTMP ingest.
+*Default*: `false`
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Default_: `false`
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LatencyMode`
-
+`LatencyMode`  <a name="cfn-ivs-channel-latencymode"></a>
 Channel latency mode. Valid values:
++ `NORMAL`: Use NORMAL to broadcast and deliver live video up to Full HD.
++ `LOW`: Use LOW for near real-time interactions with viewers.
+In the Amazon IVS console, `LOW` and `NORMAL` correspond to `Ultra-low` and `Standard`, respectively.
+*Default*: `LOW`
+*Required*: No
+*Type*: String
+*Allowed values*: `NORMAL | LOW`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `NORMAL`: Use NORMAL to broadcast and deliver live video up to Full
-HD.
-
-- `LOW`: Use LOW for near real-time interactions with viewers.
-
-###### Note
-
-In the Amazon IVS console, `LOW` and
-`NORMAL` correspond to `Ultra-low` and
-`Standard`, respectively.
-
-_Default_: `LOW`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NORMAL | LOW`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MultitrackInputConfiguration`
-
+`MultitrackInputConfiguration`  <a name="cfn-ivs-channel-multitrackinputconfiguration"></a>
 Object specifying multitrack input configuration. Default: no multitrack input configuration is specified.
+*Required*: No
+*Type*: [MultitrackInputConfiguration](aws-properties-ivs-channel-multitrackinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MultitrackInputConfiguration](aws-properties-ivs-channel-multitrackinputconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-ivs-channel-name"></a>
 Channel name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]*$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Preset`  <a name="cfn-ivs-channel-preset"></a>
+An optional transcode preset for the channel. This is selectable only for `ADVANCED_HD` and `ADVANCED_SD` channel types. For those channel types, the default preset is `HIGHER_BANDWIDTH_DELIVERY`. For other channel types (`BASIC` and `STANDARD`), `preset` is the empty string ("").
+*Required*: No
+*Type*: String
+*Allowed values*: ` | HIGHER_BANDWIDTH_DELIVERY | CONSTRAINED_BANDWIDTH_DELIVERY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
+`RecordingConfigurationArn`  <a name="cfn-ivs-channel-recordingconfigurationarn"></a>
+The ARN of a RecordingConfiguration resource. An empty string indicates that recording is disabled for the channel. A RecordingConfiguration ARN indicates that recording is enabled using the specified recording configuration. See the [ RecordingConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ivs-recordingconfiguration.html) resource for more information and an example.
+*Default*: "" (empty string, recording is disabled)
+*Required*: No
+*Type*: String
+*Pattern*: `^$|arn:aws:ivs:[a-z0-9-]+:[0-9]+:recording-configuration/[a-zA-Z0-9-]+$`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Pattern_: `^[a-zA-Z0-9-_]*$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Preset`
-
-An optional transcode preset for the channel. This is selectable only for `ADVANCED_HD` and `ADVANCED_SD` channel types. For those channel types,
-the default preset is `HIGHER_BANDWIDTH_DELIVERY`. For other channel types ( `BASIC` and `STANDARD`), `preset` is the empty string ("").
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: ` | HIGHER_BANDWIDTH_DELIVERY | CONSTRAINED_BANDWIDTH_DELIVERY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RecordingConfigurationArn`
-
-The ARN of a RecordingConfiguration resource. An empty string indicates that recording
-is disabled for the channel. A RecordingConfiguration ARN indicates that recording is
-enabled using the specified recording configuration. See the [RecordingConfiguration](../userguide/aws-resource-ivs-recordingconfiguration.md) resource for more information and an
-example.
-
-_Default_: "" (empty string, recording is disabled)
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^$|arn:aws:ivs:[a-z0-9-]+:[0-9]+:recording-configuration/[a-zA-Z0-9-]+$`
-
-_Minimum_: `0`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ivs-channel-tags"></a>
 An array of key-value pairs to apply to this resource.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ivs-channel-tag.html).
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ivs-channel-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-For more information, see [Tag](../userguide/aws-properties-ivs-channel-tag.md).
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ivs-channel-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The channel type, which determines the allowable resolution and bitrate. _If_
-_you exceed the allowable resolution or bitrate, the stream probably will disconnect_
-_immediately._ For details, see [Channel Types](../../../../reference/ivs/latest/lowlatencyapireference/channel-types.md).
-
-_Default_: `STANDARD`
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `STANDARD | BASIC | ADVANCED_SD | ADVANCED_HD`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`Type`  <a name="cfn-ivs-channel-type"></a>
+The channel type, which determines the allowable resolution and bitrate. *If you exceed the allowable resolution or bitrate, the stream probably will disconnect immediately.* For details, see [Channel Types](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/channel-types.html).
+*Default*: `STANDARD`
+*Required*: No
+*Type*: String
+*Allowed values*: `STANDARD | BASIC | ADVANCED_SD | ADVANCED_HD`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ivs-channel-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ivs-channel-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the channel ARN. For example:
 
-`{ "Ref": "myChannel" }`
+ `{ "Ref": "myChannel" }`
 
-For the Amazon IVS channel `myChannel`,
-`Ref` returns the channel ARN.
+For the Amazon IVS channel `myChannel`, `Ref` returns the channel ARN.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-ivs-channel-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-ivs-channel-return-values-fn--getatt-fn--getatt"></a>
 
-The channel ARN. For example:
-`arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh`
+`Arn`  <a name="Arn-fn::getatt"></a>
+The channel ARN. For example: `arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh`
 
-`IngestEndpoint`
-
-Channel ingest endpoint, part of the definition of an ingest server, used when you set
-up streaming software.
-
+`IngestEndpoint`  <a name="IngestEndpoint-fn::getatt"></a>
+Channel ingest endpoint, part of the definition of an ingest server, used when you set up streaming software.
 For example: `a1b2c3d4e5f6.global-contribute.live-video.net`
 
-`PlaybackUrl`
-
-Channel playback URL. For example:
-`https://a1b2c3d4e5f6.us-west-2.playback.live-video.net/api/video/v1/us-west-2.123456789012.channel.abcdEFGH.m3u8`
+`PlaybackUrl`  <a name="PlaybackUrl-fn::getatt"></a>
+Channel playback URL. For example: `https://a1b2c3d4e5f6.us-west-2.playback.live-video.net/api/video/v1/us-west-2.123456789012.channel.abcdEFGH.m3u8`
 
 ## Examples
+<a name="aws-resource-ivs-channel--examples"></a>
 
 ### Channel and Stream Key Template Examples
+<a name="aws-resource-ivs-channel--examples--Channel_and_Stream_Key_Template_Examples"></a>
 
-The following examples specify an Amazon IVS channel
-and stream key.
+The following examples specify an Amazon IVS channel and stream key.
 
 #### JSON
+<a name="aws-resource-ivs-channel--examples--Channel_and_Stream_Key_Template_Examples--json"></a>
 
-```json
-
+```
 {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -320,13 +241,12 @@ and stream key.
          }
      }
  }
-
 ```
 
 #### YAML
+<a name="aws-resource-ivs-channel--examples--Channel_and_Stream_Key_Template_Examples--yaml"></a>
 
-```yaml
-
+```
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Channel:
@@ -353,22 +273,12 @@ Outputs:
     Value: !GetAtt Channel.PlaybackUrl
   StreamKeyArn:
     Value: !Ref StreamKey
-
 ```
 
 ## See also
-
-- [Getting\
-Started with IVS Low-Latency Streaming](../../../ivs/latest/lowlatencyuserguide/getting-started.md)
-
-- [Channel](../../../../reference/ivs/latest/lowlatencyapireference/api-channel.md) data type
-
-- [CreateChannel](../../../../reference/ivs/latest/lowlatencyapireference/api-createchannel.md) API endpoint
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Amazon IVS
-
-MultitrackInputConfiguration
+<a name="aws-resource-ivs-channel--seealso"></a>
++  [Getting Started with IVS Low-Latency Streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started.html)
++ [Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Channel.html) data type
++ [CreateChannel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_CreateChannel.html) API endpoint
 
 All content copied from https://docs.aws.amazon.com/.

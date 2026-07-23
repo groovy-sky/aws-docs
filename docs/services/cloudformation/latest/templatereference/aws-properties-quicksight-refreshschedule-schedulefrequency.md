@@ -2,117 +2,77 @@
 title: "AWS::QuickSight::RefreshSchedule ScheduleFrequency"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::RefreshSchedule ScheduleFrequency
+<a name="aws-properties-quicksight-refreshschedule-schedulefrequency"></a>
 
 The frequency for the refresh schedule.
 
 ## Syntax
+<a name="aws-properties-quicksight-refreshschedule-schedulefrequency-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-refreshschedule-schedulefrequency-syntax.json"></a>
 
-```json
-
+```
 {
-  "Interval" : String,
-  "RefreshOnDay" : RefreshOnDay,
-  "TimeOfTheDay" : String,
-  "TimeZone" : String
+  "[Interval](#cfn-quicksight-refreshschedule-schedulefrequency-interval)" : {{String}},
+  "[RefreshOnDay](#cfn-quicksight-refreshschedule-schedulefrequency-refreshonday)" : {{RefreshOnDay}},
+  "[TimeOfTheDay](#cfn-quicksight-refreshschedule-schedulefrequency-timeoftheday)" : {{String}},
+  "[TimeZone](#cfn-quicksight-refreshschedule-schedulefrequency-timezone)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-refreshschedule-schedulefrequency-syntax.yaml"></a>
 
-```yaml
-
-  Interval: String
-  RefreshOnDay:
-    RefreshOnDay
-  TimeOfTheDay: String
-  TimeZone: String
-
+```
+  [Interval](#cfn-quicksight-refreshschedule-schedulefrequency-interval): {{String}}
+  [RefreshOnDay](#cfn-quicksight-refreshschedule-schedulefrequency-refreshonday): {{
+    RefreshOnDay}}
+  [TimeOfTheDay](#cfn-quicksight-refreshschedule-schedulefrequency-timeoftheday): {{String}}
+  [TimeZone](#cfn-quicksight-refreshschedule-schedulefrequency-timezone): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-refreshschedule-schedulefrequency-properties"></a>
 
-`Interval`
-
+`Interval`  <a name="cfn-quicksight-refreshschedule-schedulefrequency-interval"></a>
 The interval between scheduled refreshes. Valid values are as follows:
++ `MINUTE15`: The dataset refreshes every 15 minutes. This value is only supported for incremental refreshes. This interval can only be used for one schedule per dataset.
++ `MINUTE30`: The dataset refreshes every 30 minutes. This value is only supported for incremental refreshes. This interval can only be used for one schedule per dataset.
++ `HOURLY`: The dataset refreshes every hour. This interval can only be used for one schedule per dataset.
++ `DAILY`: The dataset refreshes every day.
++ `WEEKLY`: The dataset refreshes every week.
++ `MONTHLY`: The dataset refreshes every month.
+*Required*: No
+*Type*: String
+*Allowed values*: `MINUTE15 | MINUTE30 | HOURLY | DAILY | WEEKLY | MONTHLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `MINUTE15`: The dataset refreshes every 15 minutes. This value is only supported for incremental
-refreshes. This interval can only be used for one schedule per dataset.
+`RefreshOnDay`  <a name="cfn-quicksight-refreshschedule-schedulefrequency-refreshonday"></a>
+The day of the week that you want to schedule the refresh on. This value is required for weekly and monthly refresh intervals.
+*Required*: No
+*Type*: [RefreshOnDay](aws-properties-quicksight-refreshschedule-refreshonday.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `MINUTE30`: The dataset refreshes every 30 minutes. This value is only supported for incremental
-refreshes. This interval can only be used for one schedule per dataset.
+`TimeOfTheDay`  <a name="cfn-quicksight-refreshschedule-schedulefrequency-timeoftheday"></a>
+The time of day that you want the dataset to refresh. This value is expressed in HH:MM format. This field is not required for schedules that refresh hourly.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-- `HOURLY`: The dataset refreshes every hour. This interval can only be used for one schedule per
-dataset.
-
-- `DAILY`: The dataset refreshes every day.
-
-- `WEEKLY`: The dataset refreshes every week.
-
-- `MONTHLY`: The dataset refreshes every month.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MINUTE15 | MINUTE30 | HOURLY | DAILY | WEEKLY | MONTHLY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RefreshOnDay`
-
-The day of the week that you want to schedule the refresh on. This value is required for weekly and monthly
-refresh intervals.
-
-_Required_: No
-
-_Type_: [RefreshOnDay](aws-properties-quicksight-refreshschedule-refreshonday.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeOfTheDay`
-
-The time of day that you want the dataset to refresh. This value is expressed in HH:MM format. This field is not
-required for schedules that refresh hourly.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TimeZone`
-
-The timezone that you want the refresh schedule to use. The timezone ID must match a corresponding ID found on
-`java.util.time.getAvailableIDs()`.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RefreshScheduleMap
-
-AWS::QuickSight::Template
+`TimeZone`  <a name="cfn-quicksight-refreshschedule-schedulefrequency-timezone"></a>
+The timezone that you want the refresh schedule to use. The timezone ID must match a corresponding ID found on `java.util.time.getAvailableIDs()`.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

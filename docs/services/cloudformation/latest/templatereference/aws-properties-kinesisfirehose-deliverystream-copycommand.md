@@ -2,92 +2,63 @@
 title: "AWS::KinesisFirehose::DeliveryStream CopyCommand"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream CopyCommand
+<a name="aws-properties-kinesisfirehose-deliverystream-copycommand"></a>
 
-The `CopyCommand` property type configures the Amazon Redshift
-`COPY` command that Amazon Kinesis Data Firehose (Kinesis Data Firehose) uses
-to load data into an Amazon Redshift cluster from an Amazon S3 bucket.
+The `CopyCommand` property type configures the Amazon Redshift `COPY` command that Amazon Kinesis Data Firehose (Kinesis Data Firehose) uses to load data into an Amazon Redshift cluster from an Amazon S3 bucket.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-copycommand-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-copycommand-syntax.json"></a>
 
-```json
-
+```
 {
-  "CopyOptions" : String,
-  "DataTableColumns" : String,
-  "DataTableName" : String
+  "[CopyOptions](#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions)" : {{String}},
+  "[DataTableColumns](#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns)" : {{String}},
+  "[DataTableName](#cfn-kinesisfirehose-deliverystream-copycommand-datatablename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-copycommand-syntax.yaml"></a>
 
-```yaml
-
-  CopyOptions: String
-  DataTableColumns: String
-  DataTableName: String
-
+```
+  [CopyOptions](#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions): {{String}}
+  [DataTableColumns](#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns): {{String}}
+  [DataTableName](#cfn-kinesisfirehose-deliverystream-copycommand-datatablename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-copycommand-properties"></a>
 
-`CopyOptions`
+`CopyOptions`  <a name="cfn-kinesisfirehose-deliverystream-copycommand-copyoptions"></a>
+Parameters to use with the Amazon Redshift `COPY` command. For examples, see the `CopyOptions` content for the [CopyCommand](https://docs.aws.amazon.com/firehose/latest/APIReference/API_CopyCommand.html) data type in the *Amazon Kinesis Data Firehose API Reference*.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `204800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-Parameters to use with the Amazon Redshift `COPY` command. For examples, see
-the `CopyOptions` content for the [CopyCommand](../../../../reference/firehose/latest/apireference/api-copycommand.md) data type in
-the _Amazon Kinesis Data Firehose API Reference_.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `204800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataTableColumns`
-
+`DataTableColumns`  <a name="cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns"></a>
 A comma-separated list of column names.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `204800`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `204800`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DataTableName`
-
+`DataTableName`  <a name="cfn-kinesisfirehose-deliverystream-copycommand-datatablename"></a>
 The name of the target table. The table must already exist in the database.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLoggingOptions
-
-DatabaseColumns
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

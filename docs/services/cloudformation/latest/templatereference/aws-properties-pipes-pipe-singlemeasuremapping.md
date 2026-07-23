@@ -2,89 +2,64 @@
 title: "AWS::Pipes::Pipe SingleMeasureMapping"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe SingleMeasureMapping
+<a name="aws-properties-pipes-pipe-singlemeasuremapping"></a>
 
-Maps a single source data field to a single record in the specified Timestream
-for LiveAnalytics table.
+Maps a single source data field to a single record in the specified Timestream for LiveAnalytics table.
 
-For more information, see [Amazon Timestream for LiveAnalytics concepts](../../../timestream/latest/developerguide/concepts.md)
+For more information, see [Amazon Timestream for LiveAnalytics concepts](https://docs.aws.amazon.com/timestream/latest/developerguide/concepts.html)
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-singlemeasuremapping-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-singlemeasuremapping-syntax.json"></a>
 
-```json
-
+```
 {
-  "MeasureName" : String,
-  "MeasureValue" : String,
-  "MeasureValueType" : String
+  "[MeasureName](#cfn-pipes-pipe-singlemeasuremapping-measurename)" : {{String}},
+  "[MeasureValue](#cfn-pipes-pipe-singlemeasuremapping-measurevalue)" : {{String}},
+  "[MeasureValueType](#cfn-pipes-pipe-singlemeasuremapping-measurevaluetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-singlemeasuremapping-syntax.yaml"></a>
 
-```yaml
-
-  MeasureName: String
-  MeasureValue: String
-  MeasureValueType: String
-
+```
+  [MeasureName](#cfn-pipes-pipe-singlemeasuremapping-measurename): {{String}}
+  [MeasureValue](#cfn-pipes-pipe-singlemeasuremapping-measurevalue): {{String}}
+  [MeasureValueType](#cfn-pipes-pipe-singlemeasuremapping-measurevaluetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-singlemeasuremapping-properties"></a>
 
-`MeasureName`
-
+`MeasureName`  <a name="cfn-pipes-pipe-singlemeasuremapping-measurename"></a>
 Target measure name for the measurement attribute in the Timestream table.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureValue`
-
+`MeasureValue`  <a name="cfn-pipes-pipe-singlemeasuremapping-measurevalue"></a>
 Dynamic path of the source field to map to the measure in the record.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MeasureValueType`
-
+`MeasureValueType`  <a name="cfn-pipes-pipe-singlemeasuremapping-measurevaluetype"></a>
 Data type of the source field.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DOUBLE | BIGINT | VARCHAR | BOOLEAN | TIMESTAMP`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SelfManagedKafkaAccessConfigurationVpc
-
-Tag
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DOUBLE | BIGINT | VARCHAR | BOOLEAN | TIMESTAMP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

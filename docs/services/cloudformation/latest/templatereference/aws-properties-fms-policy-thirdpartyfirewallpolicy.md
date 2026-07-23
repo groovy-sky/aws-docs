@@ -2,54 +2,42 @@
 title: "AWS::FMS::Policy ThirdPartyFirewallPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::Policy ThirdPartyFirewallPolicy
+<a name="aws-properties-fms-policy-thirdpartyfirewallpolicy"></a>
 
 Configures the deployment model for the third-party firewall.
 
 ## Syntax
+<a name="aws-properties-fms-policy-thirdpartyfirewallpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-fms-policy-thirdpartyfirewallpolicy-syntax.json"></a>
 
-```json
-
+```
 {
-  "FirewallDeploymentModel" : String
+  "[FirewallDeploymentModel](#cfn-fms-policy-thirdpartyfirewallpolicy-firewalldeploymentmodel)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-fms-policy-thirdpartyfirewallpolicy-syntax.yaml"></a>
 
-```yaml
-
-  FirewallDeploymentModel: String
-
+```
+  [FirewallDeploymentModel](#cfn-fms-policy-thirdpartyfirewallpolicy-firewalldeploymentmodel): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-fms-policy-thirdpartyfirewallpolicy-properties"></a>
 
-`FirewallDeploymentModel`
-
+`FirewallDeploymentModel`  <a name="cfn-fms-policy-thirdpartyfirewallpolicy-firewalldeploymentmodel"></a>
 Defines the deployment model to use for the third-party firewall policy.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `DISTRIBUTED | CENTRALIZED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecurityServicePolicyData
-
-AWS::FMS::ResourceSet
+*Required*: Yes
+*Type*: String
+*Allowed values*: `DISTRIBUTED | CENTRALIZED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

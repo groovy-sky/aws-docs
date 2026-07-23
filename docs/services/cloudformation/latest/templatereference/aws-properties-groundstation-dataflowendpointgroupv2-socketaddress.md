@@ -2,64 +2,49 @@
 title: "AWS::GroundStation::DataflowEndpointGroupV2 SocketAddress"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroupV2 SocketAddress
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress"></a>
 
 Information about the socket address.
 
 ## Syntax
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress-syntax.json"></a>
 
-```json
-
+```
 {
-  "Name" : String,
-  "Port" : Integer
+  "[Name](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-name)" : {{String}},
+  "[Port](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-port)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress-syntax.yaml"></a>
 
-```yaml
-
-  Name: String
-  Port: Integer
-
+```
+  [Name](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-name): {{String}}
+  [Port](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-port): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress-properties"></a>
 
-`Name`
-
+`Name`  <a name="cfn-groundstation-dataflowendpointgroupv2-socketaddress-name"></a>
 Name of a socket address.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Port`
-
+`Port`  <a name="cfn-groundstation-dataflowendpointgroupv2-socketaddress-port"></a>
 Port of a socket address.
-
-_Required_: Yes
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RangedSocketAddress
-
-Tag
+*Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

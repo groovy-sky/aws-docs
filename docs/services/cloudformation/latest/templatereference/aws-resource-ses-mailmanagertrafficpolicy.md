@@ -2,141 +2,106 @@
 title: "AWS::SES::MailManagerTrafficPolicy"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy
+<a name="aws-resource-ses-mailmanagertrafficpolicy"></a>
 
-Resource to create a traffic policy for a Mail Manager ingress endpoint which contains
-policy statements used to evaluate whether incoming emails should be allowed or
-denied.
+Resource to create a traffic policy for a Mail Manager ingress endpoint which contains policy statements used to evaluate whether incoming emails should be allowed or denied.
 
 ## Syntax
+<a name="aws-resource-ses-mailmanagertrafficpolicy-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-ses-mailmanagertrafficpolicy-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::SES::MailManagerTrafficPolicy",
   "Properties" : {
-      "DefaultAction" : String,
-      "MaxMessageSizeBytes" : Number,
-      "PolicyStatements" : [ PolicyStatement, ... ],
-      "Tags" : [ Tag, ... ],
-      "TrafficPolicyName" : String
+      "[DefaultAction](#cfn-ses-mailmanagertrafficpolicy-defaultaction)" : {{String}},
+      "[MaxMessageSizeBytes](#cfn-ses-mailmanagertrafficpolicy-maxmessagesizebytes)" : {{Number}},
+      "[PolicyStatements](#cfn-ses-mailmanagertrafficpolicy-policystatements)" : {{[ PolicyStatement, ... ]}},
+      "[Tags](#cfn-ses-mailmanagertrafficpolicy-tags)" : {{[ Tag, ... ]}},
+      "[TrafficPolicyName](#cfn-ses-mailmanagertrafficpolicy-trafficpolicyname)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-ses-mailmanagertrafficpolicy-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::SES::MailManagerTrafficPolicy
 Properties:
-  DefaultAction: String
-  MaxMessageSizeBytes: Number
-  PolicyStatements:
-    - PolicyStatement
-  Tags:
-    - Tag
-  TrafficPolicyName: String
-
+  [DefaultAction](#cfn-ses-mailmanagertrafficpolicy-defaultaction): {{String}}
+  [MaxMessageSizeBytes](#cfn-ses-mailmanagertrafficpolicy-maxmessagesizebytes): {{Number}}
+  [PolicyStatements](#cfn-ses-mailmanagertrafficpolicy-policystatements): {{
+    - PolicyStatement}}
+  [Tags](#cfn-ses-mailmanagertrafficpolicy-tags): {{
+    - Tag}}
+  [TrafficPolicyName](#cfn-ses-mailmanagertrafficpolicy-trafficpolicyname): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-ses-mailmanagertrafficpolicy-properties"></a>
 
-`DefaultAction`
-
+`DefaultAction`  <a name="cfn-ses-mailmanagertrafficpolicy-defaultaction"></a>
 Default action instructs the traﬃc policy to either Allow or Deny (block) messages that fall outside of (or not addressed by) the conditions of your policy statements
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ALLOW | DENY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`MaxMessageSizeBytes`  <a name="cfn-ses-mailmanagertrafficpolicy-maxmessagesizebytes"></a>
+The maximum message size in bytes of email which is allowed in by this traffic policy—anything larger will be blocked.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `ALLOW | DENY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxMessageSizeBytes`
-
-The maximum message size in bytes of email which is allowed in by this traffic
-policy—anything larger will be blocked.
-
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PolicyStatements`
-
+`PolicyStatements`  <a name="cfn-ses-mailmanagertrafficpolicy-policystatements"></a>
 Conditional statements for filtering email traffic.
+*Required*: Yes
+*Type*: Array of [PolicyStatement](aws-properties-ses-mailmanagertrafficpolicy-policystatement.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Array of [PolicyStatement](aws-properties-ses-mailmanagertrafficpolicy-policystatement.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
+`Tags`  <a name="cfn-ses-mailmanagertrafficpolicy-tags"></a>
 The tags used to organize, track, or control access for the resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ses-mailmanagertrafficpolicy-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ses-mailmanagertrafficpolicy-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TrafficPolicyName`
-
+`TrafficPolicyName`  <a name="cfn-ses-mailmanagertrafficpolicy-trafficpolicyname"></a>
 The name of the policy.
-
-The policy name cannot exceed 64 characters and can only include alphanumeric
-characters, dashes, and underscores.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[A-Za-z0-9_\-]+$`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+The policy name cannot exceed 64 characters and can only include alphanumeric characters, dashes, and underscores.
+*Required*: No
+*Type*: String
+*Pattern*: `^[A-Za-z0-9_\-]+$`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-ses-mailmanagertrafficpolicy-return-values"></a>
 
 ### Ref
+<a name="aws-resource-ses-mailmanagertrafficpolicy-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-ses-mailmanagertrafficpolicy-return-values-fn--getatt"></a>
 
-`TrafficPolicyArn`
+####
+<a name="aws-resource-ses-mailmanagertrafficpolicy-return-values-fn--getatt-fn--getatt"></a>
 
+`TrafficPolicyArn`  <a name="TrafficPolicyArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the traffic policy resource.
 
-`TrafficPolicyId`
-
+`TrafficPolicyId`  <a name="TrafficPolicyId-fn::getatt"></a>
 The identifier of the traffic policy resource.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-IngressAnalysis
 
 All content copied from https://docs.aws.amazon.com/.

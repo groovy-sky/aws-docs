@@ -2,76 +2,54 @@
 title: "AWS::CloudFormation::ResourceVersion LoggingConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::ResourceVersion LoggingConfig
+<a name="aws-properties-cloudformation-resourceversion-loggingconfig"></a>
 
 Logging configuration information for a resource.
 
 ## Syntax
+<a name="aws-properties-cloudformation-resourceversion-loggingconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cloudformation-resourceversion-loggingconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogGroupName" : String,
-  "LogRoleArn" : String
+  "[LogGroupName](#cfn-cloudformation-resourceversion-loggingconfig-loggroupname)" : {{String}},
+  "[LogRoleArn](#cfn-cloudformation-resourceversion-loggingconfig-logrolearn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cloudformation-resourceversion-loggingconfig-syntax.yaml"></a>
 
-```yaml
-
-  LogGroupName: String
-  LogRoleArn: String
-
+```
+  [LogGroupName](#cfn-cloudformation-resourceversion-loggingconfig-loggroupname): {{String}}
+  [LogRoleArn](#cfn-cloudformation-resourceversion-loggingconfig-logrolearn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-cloudformation-resourceversion-loggingconfig-properties"></a>
 
-`LogGroupName`
+`LogGroupName`  <a name="cfn-cloudformation-resourceversion-loggingconfig-loggroupname"></a>
+The Amazon CloudWatch logs group to which CloudFormation sends error logging information when invoking the type's handlers.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\.\-_/#A-Za-z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-The Amazon CloudWatch logs group to which CloudFormation sends error logging
-information when invoking the type's handlers.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\.\-_/#A-Za-z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LogRoleArn`
-
-The ARN of the role that CloudFormation should assume when sending log
-entries to CloudWatch logs.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::CloudFormation::ResourceVersion
-
-AWS::CloudFormation::Stack
+`LogRoleArn`  <a name="cfn-cloudformation-resourceversion-loggingconfig-logrolearn"></a>
+The ARN of the role that CloudFormation should assume when sending log entries to CloudWatch logs.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,75 +2,57 @@
 title: "AWS::EC2::EC2Fleet TagSpecification"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet TagSpecification
+<a name="aws-properties-ec2-ec2fleet-tagspecification"></a>
 
-Specifies the tags to apply to a resource when the resource is being created for an EC2
-Fleet.
+Specifies the tags to apply to a resource when the resource is being created for an EC2 Fleet.
 
-`TagSpecification` is a property of the [AWS::EC2::EC2Fleet](../userguide/aws-resource-ec2-ec2fleet.md) resource.
+`TagSpecification` is a property of the [ AWS::EC2::EC2Fleet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html) resource.
 
 ## Syntax
+<a name="aws-properties-ec2-ec2fleet-tagspecification-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-ec2fleet-tagspecification-syntax.json"></a>
 
-```json
-
+```
 {
-  "ResourceType" : String,
-  "Tags" : [ Tag, ... ]
+  "[ResourceType](#cfn-ec2-ec2fleet-tagspecification-resourcetype)" : {{String}},
+  "[Tags](#cfn-ec2-ec2fleet-tagspecification-tags)" : {{[ Tag, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-ec2fleet-tagspecification-syntax.yaml"></a>
 
-```yaml
-
-  ResourceType: String
-  Tags:
-    - Tag
-
+```
+  [ResourceType](#cfn-ec2-ec2fleet-tagspecification-resourcetype): {{String}}
+  [Tags](#cfn-ec2-ec2fleet-tagspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-ec2fleet-tagspecification-properties"></a>
 
-`ResourceType`
-
+`ResourceType`  <a name="cfn-ec2-ec2fleet-tagspecification-resourcetype"></a>
 The type of resource to tag.
+*Required*: No
+*Type*: String
+*Allowed values*: `client-vpn-endpoint | customer-gateway | dedicated-host | dhcp-options | egress-only-internet-gateway | elastic-gpu | elastic-ip | export-image-task | export-instance-task | fleet | fpga-image | host-reservation | image | import-image-task | import-snapshot-task | instance | internet-gateway | key-pair | launch-template | local-gateway-route-table-vpc-association | natgateway | network-acl | network-insights-analysis | network-insights-path | network-interface | placement-group | reserved-instances | route-table | security-group | snapshot | spot-fleet-request | spot-instances-request | subnet | traffic-mirror-filter | traffic-mirror-session | traffic-mirror-target | transit-gateway | transit-gateway-attachment | transit-gateway-connect-peer | transit-gateway-multicast-domain | transit-gateway-route-table | volume | vpc | vpc-flow-log | vpc-peering-connection | vpn-connection | vpn-gateway`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `client-vpn-endpoint | customer-gateway | dedicated-host | dhcp-options | egress-only-internet-gateway | elastic-gpu | elastic-ip | export-image-task | export-instance-task | fleet | fpga-image | host-reservation | image | import-image-task | import-snapshot-task | instance | internet-gateway | key-pair | launch-template | local-gateway-route-table-vpc-association | natgateway | network-acl | network-insights-analysis | network-insights-path | network-interface | placement-group | reserved-instances | route-table | security-group | snapshot | spot-fleet-request | spot-instances-request | subnet | traffic-mirror-filter | traffic-mirror-session | traffic-mirror-target | transit-gateway | transit-gateway-attachment | transit-gateway-connect-peer | transit-gateway-multicast-domain | transit-gateway-route-table | volume | vpc | vpc-flow-log | vpc-peering-connection | vpn-connection | vpn-gateway`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-ec2-ec2fleet-tagspecification-tags"></a>
 The tags to apply to the resource.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-ec2-ec2fleet-tag.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-ec2-ec2fleet-tag.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also
-
-- [TagSpecification](../../../../reference/awsec2/latest/apireference/api-tagspecification.md) in the _Amazon EC2 API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-TargetCapacitySpecificationRequest
+<a name="aws-properties-ec2-ec2fleet-tagspecification--seealso"></a>
++ [ TagSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TagSpecification.html) in the *Amazon EC2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

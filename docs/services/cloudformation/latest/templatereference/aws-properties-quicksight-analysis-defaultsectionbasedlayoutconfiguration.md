@@ -2,53 +2,42 @@
 title: "AWS::QuickSight::Analysis DefaultSectionBasedLayoutConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DefaultSectionBasedLayoutConfiguration
+<a name="aws-properties-quicksight-analysis-defaultsectionbasedlayoutconfiguration"></a>
 
 The options that determine the default settings for a section-based layout configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-defaultsectionbasedlayoutconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-defaultsectionbasedlayoutconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CanvasSizeOptions" : SectionBasedLayoutCanvasSizeOptions
+  "[CanvasSizeOptions](#cfn-quicksight-analysis-defaultsectionbasedlayoutconfiguration-canvassizeoptions)" : {{SectionBasedLayoutCanvasSizeOptions}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-defaultsectionbasedlayoutconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CanvasSizeOptions:
-    SectionBasedLayoutCanvasSizeOptions
-
+```
+  [CanvasSizeOptions](#cfn-quicksight-analysis-defaultsectionbasedlayoutconfiguration-canvassizeoptions): {{
+    SectionBasedLayoutCanvasSizeOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-defaultsectionbasedlayoutconfiguration-properties"></a>
 
-`CanvasSizeOptions`
-
+`CanvasSizeOptions`  <a name="cfn-quicksight-analysis-defaultsectionbasedlayoutconfiguration-canvassizeoptions"></a>
 Determines the screen canvas size options for a section-based layout.
-
-_Required_: Yes
-
-_Type_: [SectionBasedLayoutCanvasSizeOptions](aws-properties-quicksight-analysis-sectionbasedlayoutcanvassizeoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultRelativeDateTimeControlOptions
-
-DefaultSliderControlOptions
+*Required*: Yes
+*Type*: [SectionBasedLayoutCanvasSizeOptions](aws-properties-quicksight-analysis-sectionbasedlayoutcanvassizeoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

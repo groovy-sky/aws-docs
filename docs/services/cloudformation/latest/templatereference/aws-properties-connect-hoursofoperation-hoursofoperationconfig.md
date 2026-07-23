@@ -2,80 +2,60 @@
 title: "AWS::Connect::HoursOfOperation HoursOfOperationConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::HoursOfOperation HoursOfOperationConfig
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationconfig"></a>
 
 Contains information about the hours of operation.
 
 ## Syntax
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Day" : String,
-  "EndTime" : HoursOfOperationTimeSlice,
-  "StartTime" : HoursOfOperationTimeSlice
+  "[Day](#cfn-connect-hoursofoperation-hoursofoperationconfig-day)" : {{String}},
+  "[EndTime](#cfn-connect-hoursofoperation-hoursofoperationconfig-endtime)" : {{HoursOfOperationTimeSlice}},
+  "[StartTime](#cfn-connect-hoursofoperation-hoursofoperationconfig-starttime)" : {{HoursOfOperationTimeSlice}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationconfig-syntax.yaml"></a>
 
-```yaml
-
-  Day: String
-  EndTime:
-    HoursOfOperationTimeSlice
-  StartTime:
-    HoursOfOperationTimeSlice
-
+```
+  [Day](#cfn-connect-hoursofoperation-hoursofoperationconfig-day): {{String}}
+  [EndTime](#cfn-connect-hoursofoperation-hoursofoperationconfig-endtime): {{
+    HoursOfOperationTimeSlice}}
+  [StartTime](#cfn-connect-hoursofoperation-hoursofoperationconfig-starttime): {{
+    HoursOfOperationTimeSlice}}
 ```
 
 ## Properties
+<a name="aws-properties-connect-hoursofoperation-hoursofoperationconfig-properties"></a>
 
-`Day`
-
+`Day`  <a name="cfn-connect-hoursofoperation-hoursofoperationconfig-day"></a>
 The day that the hours of operation applies to.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SUNDAY | MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `SUNDAY | MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EndTime`
-
+`EndTime`  <a name="cfn-connect-hoursofoperation-hoursofoperationconfig-endtime"></a>
 The end time that your contact center closes.
+*Required*: Yes
+*Type*: [HoursOfOperationTimeSlice](aws-properties-connect-hoursofoperation-hoursofoperationtimeslice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [HoursOfOperationTimeSlice](aws-properties-connect-hoursofoperation-hoursofoperationtimeslice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StartTime`
-
+`StartTime`  <a name="cfn-connect-hoursofoperation-hoursofoperationconfig-starttime"></a>
 The start time that your contact center opens.
-
-_Required_: Yes
-
-_Type_: [HoursOfOperationTimeSlice](aws-properties-connect-hoursofoperation-hoursofoperationtimeslice.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Connect::HoursOfOperation
-
-HoursOfOperationOverride
+*Required*: Yes
+*Type*: [HoursOfOperationTimeSlice](aws-properties-connect-hoursofoperation-hoursofoperationtimeslice.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,92 +2,70 @@
 title: "AWS::S3::Bucket InventoryTableConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket InventoryTableConfiguration
+<a name="aws-properties-s3-bucket-inventorytableconfiguration"></a>
 
-The inventory table configuration for an S3 Metadata configuration.
+ The inventory table configuration for an S3 Metadata configuration.
+
+**Note**
+If you've disabled your inventory table configuration and now want to re-enable it, you must first manually delete the old inventory table from your AWS managed table bucket. Otherwise, the newly re-enabled inventory table configuration will enter a failed state because the inventory table already exists in the table bucket.
 
 ## Syntax
+<a name="aws-properties-s3-bucket-inventorytableconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-s3-bucket-inventorytableconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConfigurationState" : String,
-  "EncryptionConfiguration" : MetadataTableEncryptionConfiguration,
-  "TableArn" : String,
-  "TableName" : String
+  "[ConfigurationState](#cfn-s3-bucket-inventorytableconfiguration-configurationstate)" : {{String}},
+  "[EncryptionConfiguration](#cfn-s3-bucket-inventorytableconfiguration-encryptionconfiguration)" : {{MetadataTableEncryptionConfiguration}},
+  "[TableArn](#cfn-s3-bucket-inventorytableconfiguration-tablearn)" : {{String}},
+  "[TableName](#cfn-s3-bucket-inventorytableconfiguration-tablename)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-s3-bucket-inventorytableconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ConfigurationState: String
-  EncryptionConfiguration:
-    MetadataTableEncryptionConfiguration
-  TableArn: String
-  TableName: String
-
+```
+  [ConfigurationState](#cfn-s3-bucket-inventorytableconfiguration-configurationstate): {{String}}
+  [EncryptionConfiguration](#cfn-s3-bucket-inventorytableconfiguration-encryptionconfiguration): {{
+    MetadataTableEncryptionConfiguration}}
+  [TableArn](#cfn-s3-bucket-inventorytableconfiguration-tablearn): {{String}}
+  [TableName](#cfn-s3-bucket-inventorytableconfiguration-tablename): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-s3-bucket-inventorytableconfiguration-properties"></a>
 
-`ConfigurationState`
+`ConfigurationState`  <a name="cfn-s3-bucket-inventorytableconfiguration-configurationstate"></a>
+ The configuration state of the inventory table, indicating whether the inventory table is enabled or disabled.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `ENABLED | DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The configuration state of the inventory table, indicating whether the inventory table is enabled
-or disabled.
+`EncryptionConfiguration`  <a name="cfn-s3-bucket-inventorytableconfiguration-encryptionconfiguration"></a>
+ The encryption configuration for the inventory table.
+*Required*: No
+*Type*: [MetadataTableEncryptionConfiguration](aws-properties-s3-bucket-metadatatableencryptionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`TableArn`  <a name="cfn-s3-bucket-inventorytableconfiguration-tablearn"></a>
+ The Amazon Resource Name (ARN) for the inventory table.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Allowed values_: `ENABLED | DISABLED`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EncryptionConfiguration`
-
-The encryption configuration for the inventory table.
-
-_Required_: No
-
-_Type_: [MetadataTableEncryptionConfiguration](aws-properties-s3-bucket-metadatatableencryptionconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableArn`
-
-The Amazon Resource Name (ARN) for the inventory table.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`TableName`
-
-The name of the inventory table.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InventoryConfiguration
-
-JournalTableConfiguration
+`TableName`  <a name="cfn-s3-bucket-inventorytableconfiguration-tablename"></a>
+ The name of the inventory table.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

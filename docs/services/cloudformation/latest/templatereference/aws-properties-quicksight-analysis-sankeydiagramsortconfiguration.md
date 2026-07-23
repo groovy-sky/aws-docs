@@ -2,83 +2,62 @@
 title: "AWS::QuickSight::Analysis SankeyDiagramSortConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis SankeyDiagramSortConfiguration
+<a name="aws-properties-quicksight-analysis-sankeydiagramsortconfiguration"></a>
 
 The sort configuration of a sankey diagram.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-sankeydiagramsortconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-sankeydiagramsortconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationItemsLimit" : ItemsLimitConfiguration,
-  "SourceItemsLimit" : ItemsLimitConfiguration,
-  "WeightSort" : [ FieldSortOptions, ... ]
+  "[DestinationItemsLimit](#cfn-quicksight-analysis-sankeydiagramsortconfiguration-destinationitemslimit)" : {{ItemsLimitConfiguration}},
+  "[SourceItemsLimit](#cfn-quicksight-analysis-sankeydiagramsortconfiguration-sourceitemslimit)" : {{ItemsLimitConfiguration}},
+  "[WeightSort](#cfn-quicksight-analysis-sankeydiagramsortconfiguration-weightsort)" : {{[ FieldSortOptions, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-sankeydiagramsortconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  DestinationItemsLimit:
-    ItemsLimitConfiguration
-  SourceItemsLimit:
-    ItemsLimitConfiguration
-  WeightSort:
-    - FieldSortOptions
-
+```
+  [DestinationItemsLimit](#cfn-quicksight-analysis-sankeydiagramsortconfiguration-destinationitemslimit): {{
+    ItemsLimitConfiguration}}
+  [SourceItemsLimit](#cfn-quicksight-analysis-sankeydiagramsortconfiguration-sourceitemslimit): {{
+    ItemsLimitConfiguration}}
+  [WeightSort](#cfn-quicksight-analysis-sankeydiagramsortconfiguration-weightsort): {{
+    - FieldSortOptions}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-sankeydiagramsortconfiguration-properties"></a>
 
-`DestinationItemsLimit`
-
+`DestinationItemsLimit`  <a name="cfn-quicksight-analysis-sankeydiagramsortconfiguration-destinationitemslimit"></a>
 The limit on the number of destination nodes that are displayed in a sankey diagram.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-analysis-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-analysis-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceItemsLimit`
-
+`SourceItemsLimit`  <a name="cfn-quicksight-analysis-sankeydiagramsortconfiguration-sourceitemslimit"></a>
 The limit on the number of source nodes that are displayed in a sankey diagram.
+*Required*: No
+*Type*: [ItemsLimitConfiguration](aws-properties-quicksight-analysis-itemslimitconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ItemsLimitConfiguration](aws-properties-quicksight-analysis-itemslimitconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WeightSort`
-
+`WeightSort`  <a name="cfn-quicksight-analysis-sankeydiagramsortconfiguration-weightsort"></a>
 The sort configuration of the weight fields.
-
-_Required_: No
-
-_Type_: Array of [FieldSortOptions](aws-properties-quicksight-analysis-fieldsortoptions.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SankeyDiagramFieldWells
-
-SankeyDiagramVisual
+*Required*: No
+*Type*: Array of [FieldSortOptions](aws-properties-quicksight-analysis-fieldsortoptions.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

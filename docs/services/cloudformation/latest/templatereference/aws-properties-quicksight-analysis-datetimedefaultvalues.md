@@ -2,83 +2,62 @@
 title: "AWS::QuickSight::Analysis DateTimeDefaultValues"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DateTimeDefaultValues
+<a name="aws-properties-quicksight-analysis-datetimedefaultvalues"></a>
 
 The default values of the `DateTimeParameterDeclaration`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-datetimedefaultvalues-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-datetimedefaultvalues-syntax.json"></a>
 
-```json
-
+```
 {
-  "DynamicValue" : DynamicDefaultValue,
-  "RollingDate" : RollingDateConfiguration,
-  "StaticValues" : [ String, ... ]
+  "[DynamicValue](#cfn-quicksight-analysis-datetimedefaultvalues-dynamicvalue)" : {{DynamicDefaultValue}},
+  "[RollingDate](#cfn-quicksight-analysis-datetimedefaultvalues-rollingdate)" : {{RollingDateConfiguration}},
+  "[StaticValues](#cfn-quicksight-analysis-datetimedefaultvalues-staticvalues)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-datetimedefaultvalues-syntax.yaml"></a>
 
-```yaml
-
-  DynamicValue:
-    DynamicDefaultValue
-  RollingDate:
-    RollingDateConfiguration
-  StaticValues:
-    - String
-
+```
+  [DynamicValue](#cfn-quicksight-analysis-datetimedefaultvalues-dynamicvalue): {{
+    DynamicDefaultValue}}
+  [RollingDate](#cfn-quicksight-analysis-datetimedefaultvalues-rollingdate): {{
+    RollingDateConfiguration}}
+  [StaticValues](#cfn-quicksight-analysis-datetimedefaultvalues-staticvalues): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-datetimedefaultvalues-properties"></a>
 
-`DynamicValue`
-
+`DynamicValue`  <a name="cfn-quicksight-analysis-datetimedefaultvalues-dynamicvalue"></a>
 The dynamic value of the `DataTimeDefaultValues`. Different defaults are displayed according to users, groups, and values mapping.
+*Required*: No
+*Type*: [DynamicDefaultValue](aws-properties-quicksight-analysis-dynamicdefaultvalue.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DynamicDefaultValue](aws-properties-quicksight-analysis-dynamicdefaultvalue.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RollingDate`
-
+`RollingDate`  <a name="cfn-quicksight-analysis-datetimedefaultvalues-rollingdate"></a>
 The rolling date of the `DataTimeDefaultValues`. The date is determined from the dataset based on input expression.
+*Required*: No
+*Type*: [RollingDateConfiguration](aws-properties-quicksight-analysis-rollingdateconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RollingDateConfiguration](aws-properties-quicksight-analysis-rollingdateconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StaticValues`
-
+`StaticValues`  <a name="cfn-quicksight-analysis-datetimedefaultvalues-staticvalues"></a>
 The static values of the `DataTimeDefaultValues`.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `0`
-
-_Maximum_: `50000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DateMeasureField
-
-DateTimeFormatConfiguration
+*Required*: No
+*Type*: Array of String
+*Minimum*: `0`
+*Maximum*: `50000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,76 +2,55 @@
 title: "AWS::SageMaker::EndpointConfig CaptureContentTypeHeader"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::EndpointConfig CaptureContentTypeHeader
+<a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader"></a>
 
 Specifies the JSON and CSV content types of the data that the endpoint captures.
 
 ## Syntax
+<a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader-syntax.json"></a>
 
-```json
-
+```
 {
-  "CsvContentTypes" : [ String, ... ],
-  "JsonContentTypes" : [ String, ... ]
+  "[CsvContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-csvcontenttypes)" : {{[ String, ... ]}},
+  "[JsonContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-jsoncontenttypes)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader-syntax.yaml"></a>
 
-```yaml
-
-  CsvContentTypes:
-    - String
-  JsonContentTypes:
-    - String
-
+```
+  [CsvContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-csvcontenttypes): {{
+    - String}}
+  [JsonContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-jsoncontenttypes): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader-properties"></a>
 
-`CsvContentTypes`
+`CsvContentTypes`  <a name="cfn-sagemaker-endpointconfig-capturecontenttypeheader-csvcontenttypes"></a>
+A list of the CSV content types of the data that the endpoint captures. For the endpoint to capture the data, you must also specify the content type when you invoke the endpoint.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-A list of the CSV content types of the data that the endpoint captures. For the endpoint to capture the data,
-you must also specify the content type when you invoke the endpoint.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`JsonContentTypes`
-
-A list of the JSON content types of the data that the endpoint captures. For the endpoint to capture the data,
-you must also specify the content type when you invoke the endpoint.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AsyncInferenceOutputConfig
-
-CaptureOption
+`JsonContentTypes`  <a name="cfn-sagemaker-endpointconfig-capturecontenttypeheader-jsoncontenttypes"></a>
+A list of the JSON content types of the data that the endpoint captures. For the endpoint to capture the data, you must also specify the content type when you invoke the endpoint.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

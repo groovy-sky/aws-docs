@@ -2,70 +2,52 @@
 title: "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation LogRedactionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation LogRedactionConfiguration
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration"></a>
 
 The configuration for log redaction.
 
 ## Syntax
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CustomEntityConfig" : CustomEntityConfig,
-  "EntitiesToRedact" : [ String, ... ]
+  "[CustomEntityConfig](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-customentityconfig)" : {{CustomEntityConfig}},
+  "[EntitiesToRedact](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-entitiestoredact)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CustomEntityConfig:
-    CustomEntityConfig
-  EntitiesToRedact:
-    - String
-
+```
+  [CustomEntityConfig](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-customentityconfig): {{
+    CustomEntityConfig}}
+  [EntitiesToRedact](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-entitiestoredact): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-properties"></a>
 
-`CustomEntityConfig`
-
+`CustomEntityConfig`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-customentityconfig"></a>
 Specifies the configuration for custom entities in the context of log redaction.
+*Required*: No
+*Type*: [CustomEntityConfig](aws-properties-cleanroomsml-configuredmodelalgorithmassociation-customentityconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [CustomEntityConfig](aws-properties-cleanroomsml-configuredmodelalgorithmassociation-customentityconfig.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`EntitiesToRedact`
-
-Specifies the entities to be redacted from logs. Entities to redact are "ALL\_PERSONALLY\_IDENTIFIABLE\_INFORMATION",
-"NUMBERS","CUSTOM". If CUSTOM is supplied or configured, custom patterns (customDataIdentifiers) should be provided,
-and the patterns will be redacted in logs or error messages.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomEntityConfig
-
-LogsConfigurationPolicy
+`EntitiesToRedact`  <a name="cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-entitiestoredact"></a>
+Specifies the entities to be redacted from logs. Entities to redact are "ALL\_PERSONALLY\_IDENTIFIABLE\_INFORMATION", "NUMBERS","CUSTOM". If CUSTOM is supplied or configured, custom patterns (customDataIdentifiers) should be provided, and the patterns will be redacted in logs or error messages.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 All content copied from https://docs.aws.amazon.com/.

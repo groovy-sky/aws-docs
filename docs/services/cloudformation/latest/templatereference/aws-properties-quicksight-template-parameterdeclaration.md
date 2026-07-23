@@ -2,96 +2,73 @@
 title: "AWS::QuickSight::Template ParameterDeclaration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template ParameterDeclaration
+<a name="aws-properties-quicksight-template-parameterdeclaration"></a>
 
 The declaration definition of a parameter.
 
-For more information, see [Parameters in Amazon Quick Sight](../../../quicksight/latest/user/parameters-in-quicksight.md) in the _Amazon Quick Suite User Guide_.
+For more information, see [Parameters in Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/parameters-in-quicksight.html) in the *Amazon Quick Suite User Guide*.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-parameterdeclaration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-parameterdeclaration-syntax.json"></a>
 
-```json
-
+```
 {
-  "DateTimeParameterDeclaration" : DateTimeParameterDeclaration,
-  "DecimalParameterDeclaration" : DecimalParameterDeclaration,
-  "IntegerParameterDeclaration" : IntegerParameterDeclaration,
-  "StringParameterDeclaration" : StringParameterDeclaration
+  "[DateTimeParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-datetimeparameterdeclaration)" : {{DateTimeParameterDeclaration}},
+  "[DecimalParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-decimalparameterdeclaration)" : {{DecimalParameterDeclaration}},
+  "[IntegerParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-integerparameterdeclaration)" : {{IntegerParameterDeclaration}},
+  "[StringParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-stringparameterdeclaration)" : {{StringParameterDeclaration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-parameterdeclaration-syntax.yaml"></a>
 
-```yaml
-
-  DateTimeParameterDeclaration:
-    DateTimeParameterDeclaration
-  DecimalParameterDeclaration:
-    DecimalParameterDeclaration
-  IntegerParameterDeclaration:
-    IntegerParameterDeclaration
-  StringParameterDeclaration:
-    StringParameterDeclaration
-
+```
+  [DateTimeParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-datetimeparameterdeclaration): {{
+    DateTimeParameterDeclaration}}
+  [DecimalParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-decimalparameterdeclaration): {{
+    DecimalParameterDeclaration}}
+  [IntegerParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-integerparameterdeclaration): {{
+    IntegerParameterDeclaration}}
+  [StringParameterDeclaration](#cfn-quicksight-template-parameterdeclaration-stringparameterdeclaration): {{
+    StringParameterDeclaration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-parameterdeclaration-properties"></a>
 
-`DateTimeParameterDeclaration`
-
+`DateTimeParameterDeclaration`  <a name="cfn-quicksight-template-parameterdeclaration-datetimeparameterdeclaration"></a>
 A parameter declaration for the `DateTime` data type.
+*Required*: No
+*Type*: [DateTimeParameterDeclaration](aws-properties-quicksight-template-datetimeparameterdeclaration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DateTimeParameterDeclaration](aws-properties-quicksight-template-datetimeparameterdeclaration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DecimalParameterDeclaration`
-
+`DecimalParameterDeclaration`  <a name="cfn-quicksight-template-parameterdeclaration-decimalparameterdeclaration"></a>
 A parameter declaration for the `Decimal` data type.
+*Required*: No
+*Type*: [DecimalParameterDeclaration](aws-properties-quicksight-template-decimalparameterdeclaration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DecimalParameterDeclaration](aws-properties-quicksight-template-decimalparameterdeclaration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IntegerParameterDeclaration`
-
+`IntegerParameterDeclaration`  <a name="cfn-quicksight-template-parameterdeclaration-integerparameterdeclaration"></a>
 A parameter declaration for the `Integer` data type.
+*Required*: No
+*Type*: [IntegerParameterDeclaration](aws-properties-quicksight-template-integerparameterdeclaration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [IntegerParameterDeclaration](aws-properties-quicksight-template-integerparameterdeclaration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StringParameterDeclaration`
-
+`StringParameterDeclaration`  <a name="cfn-quicksight-template-parameterdeclaration-stringparameterdeclaration"></a>
 A parameter declaration for the `String` data type.
-
-_Required_: No
-
-_Type_: [StringParameterDeclaration](aws-properties-quicksight-template-stringparameterdeclaration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterDateTimePickerControl
-
-ParameterDropDownControl
+*Required*: No
+*Type*: [StringParameterDeclaration](aws-properties-quicksight-template-stringparameterdeclaration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

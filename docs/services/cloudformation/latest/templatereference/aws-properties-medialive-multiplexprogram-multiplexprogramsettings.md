@@ -2,96 +2,70 @@
 title: "AWS::MediaLive::Multiplexprogram MultiplexProgramSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Multiplexprogram MultiplexProgramSettings
+<a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings"></a>
 
 Multiplex Program settings configuration.
 
 ## Syntax
+<a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "PreferredChannelPipeline" : String,
-  "ProgramNumber" : Integer,
-  "ServiceDescriptor" : MultiplexProgramServiceDescriptor,
-  "VideoSettings" : MultiplexVideoSettings
+  "[PreferredChannelPipeline](#cfn-medialive-multiplexprogram-multiplexprogramsettings-preferredchannelpipeline)" : {{String}},
+  "[ProgramNumber](#cfn-medialive-multiplexprogram-multiplexprogramsettings-programnumber)" : {{Integer}},
+  "[ServiceDescriptor](#cfn-medialive-multiplexprogram-multiplexprogramsettings-servicedescriptor)" : {{MultiplexProgramServiceDescriptor}},
+  "[VideoSettings](#cfn-medialive-multiplexprogram-multiplexprogramsettings-videosettings)" : {{MultiplexVideoSettings}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings-syntax.yaml"></a>
 
-```yaml
-
-  PreferredChannelPipeline: String
-  ProgramNumber: Integer
-  ServiceDescriptor:
-    MultiplexProgramServiceDescriptor
-  VideoSettings:
-    MultiplexVideoSettings
-
+```
+  [PreferredChannelPipeline](#cfn-medialive-multiplexprogram-multiplexprogramsettings-preferredchannelpipeline): {{String}}
+  [ProgramNumber](#cfn-medialive-multiplexprogram-multiplexprogramsettings-programnumber): {{Integer}}
+  [ServiceDescriptor](#cfn-medialive-multiplexprogram-multiplexprogramsettings-servicedescriptor): {{
+    MultiplexProgramServiceDescriptor}}
+  [VideoSettings](#cfn-medialive-multiplexprogram-multiplexprogramsettings-videosettings): {{
+    MultiplexVideoSettings}}
 ```
 
 ## Properties
+<a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings-properties"></a>
 
-`PreferredChannelPipeline`
-
+`PreferredChannelPipeline`  <a name="cfn-medialive-multiplexprogram-multiplexprogramsettings-preferredchannelpipeline"></a>
 Indicates which pipeline is preferred by the multiplex for program ingest.
+*Required*: No
+*Type*: String
+*Allowed values*: `CURRENTLY_ACTIVE | PIPELINE_0 | PIPELINE_1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `CURRENTLY_ACTIVE | PIPELINE_0 | PIPELINE_1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ProgramNumber`
-
+`ProgramNumber`  <a name="cfn-medialive-multiplexprogram-multiplexprogramsettings-programnumber"></a>
 Unique program number.
+*Required*: Yes
+*Type*: Integer
+*Minimum*: `0`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ServiceDescriptor`
-
+`ServiceDescriptor`  <a name="cfn-medialive-multiplexprogram-multiplexprogramsettings-servicedescriptor"></a>
 Transport stream service descriptor configuration for the Multiplex program.
+*Required*: No
+*Type*: [MultiplexProgramServiceDescriptor](aws-properties-medialive-multiplexprogram-multiplexprogramservicedescriptor.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [MultiplexProgramServiceDescriptor](aws-properties-medialive-multiplexprogram-multiplexprogramservicedescriptor.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VideoSettings`
-
+`VideoSettings`  <a name="cfn-medialive-multiplexprogram-multiplexprogramsettings-videosettings"></a>
 Program video settings configuration.
-
-_Required_: No
-
-_Type_: [MultiplexVideoSettings](aws-properties-medialive-multiplexprogram-multiplexvideosettings.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MultiplexProgramServiceDescriptor
-
-MultiplexStatmuxVideoSettings
+*Required*: No
+*Type*: [MultiplexVideoSettings](aws-properties-medialive-multiplexprogram-multiplexvideosettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

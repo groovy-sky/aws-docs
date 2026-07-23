@@ -2,60 +2,45 @@
 title: "AWS::CustomerProfiles::Domain Consolidation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Domain Consolidation
+<a name="aws-properties-customerprofiles-domain-consolidation"></a>
 
-A list of matching attributes that represent matching criteria. If two profiles meet
-at least one of the requirements in the matching attributes list, they will be
-merged.
+A list of matching attributes that represent matching criteria. If two profiles meet at least one of the requirements in the matching attributes list, they will be merged.
 
 ## Syntax
+<a name="aws-properties-customerprofiles-domain-consolidation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-customerprofiles-domain-consolidation-syntax.json"></a>
 
-```json
-
+```
 {
-  "MatchingAttributesList" : [ [ , ... ], ... ]
+  "[MatchingAttributesList](#cfn-customerprofiles-domain-consolidation-matchingattributeslist)" : {{[ [ , ... ], ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-customerprofiles-domain-consolidation-syntax.yaml"></a>
 
-```yaml
-
-  MatchingAttributesList:
+```
+  [MatchingAttributesList](#cfn-customerprofiles-domain-consolidation-matchingattributeslist): {{
     -
-    -
-
+    - }}
 ```
 
 ## Properties
+<a name="aws-properties-customerprofiles-domain-consolidation-properties"></a>
 
-`MatchingAttributesList`
-
+`MatchingAttributesList`  <a name="cfn-customerprofiles-domain-consolidation-matchingattributeslist"></a>
 A list of matching criteria.
-
-_Required_: Yes
-
-_Type_: Array of Array
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConflictResolution
-
-DataStore
+*Required*: Yes
+*Type*: Array of Array
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

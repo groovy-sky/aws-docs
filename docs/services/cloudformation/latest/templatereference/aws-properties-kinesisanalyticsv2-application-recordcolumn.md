@@ -2,101 +2,70 @@
 title: "AWS::KinesisAnalyticsV2::Application RecordColumn"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application RecordColumn
+<a name="aws-properties-kinesisanalyticsv2-application-recordcolumn"></a>
 
-For a SQL-based Kinesis Data Analytics application, describes the mapping of each
-data element in the streaming source to the corresponding column in the in-application
-stream.
+For a SQL-based Kinesis Data Analytics application, describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.
 
 Also used to describe the format of the reference data source.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-recordcolumn-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-recordcolumn-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mapping" : String,
-  "Name" : String,
-  "SqlType" : String
+  "[Mapping](#cfn-kinesisanalyticsv2-application-recordcolumn-mapping)" : {{String}},
+  "[Name](#cfn-kinesisanalyticsv2-application-recordcolumn-name)" : {{String}},
+  "[SqlType](#cfn-kinesisanalyticsv2-application-recordcolumn-sqltype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-recordcolumn-syntax.yaml"></a>
 
-```yaml
-
-  Mapping: String
-  Name: String
-  SqlType: String
-
+```
+  [Mapping](#cfn-kinesisanalyticsv2-application-recordcolumn-mapping): {{String}}
+  [Name](#cfn-kinesisanalyticsv2-application-recordcolumn-name): {{String}}
+  [SqlType](#cfn-kinesisanalyticsv2-application-recordcolumn-sqltype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-recordcolumn-properties"></a>
 
-`Mapping`
+`Mapping`  <a name="cfn-kinesisanalyticsv2-application-recordcolumn-mapping"></a>
+A reference to the data element in the streaming input or the reference data source.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A reference to the data element in the streaming input or the reference data
-source.
+`Name`  <a name="cfn-kinesisanalyticsv2-application-recordcolumn-name"></a>
+The name of the column that is created in the in-application input stream or reference table.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[^-\s<>&]*$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
-The name of the column that is created in the in-application input stream or reference
-table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[^-\s<>&]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SqlType`
-
+`SqlType`  <a name="cfn-kinesisanalyticsv2-application-recordcolumn-sqltype"></a>
 The type of column created in the in-application input stream or reference table.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [RecordColumn](../../../managed-flink/latest/apiv2/api-recordcolumn.md) in the _Amazon Kinesis Data Analytics API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PropertyGroup
-
-RecordFormat
+<a name="aws-properties-kinesisanalyticsv2-application-recordcolumn--seealso"></a>
++ [RecordColumn](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_RecordColumn.html) in the *Amazon Kinesis Data Analytics API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

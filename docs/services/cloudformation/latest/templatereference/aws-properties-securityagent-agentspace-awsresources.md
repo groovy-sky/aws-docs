@@ -2,118 +2,87 @@
 title: "AWS::SecurityAgent::AgentSpace AWSResources"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::AgentSpace AWSResources
+<a name="aws-properties-securityagent-agentspace-awsresources"></a>
 
 The Amazon Web Services resources associated with an agent space, including VPCs, log groups, S3 buckets, secrets, Lambda functions, and IAM roles.
 
 ## Syntax
+<a name="aws-properties-securityagent-agentspace-awsresources-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-securityagent-agentspace-awsresources-syntax.json"></a>
 
-```json
-
+```
 {
-  "IamRoles" : [ String, ... ],
-  "LambdaFunctionArns" : [ String, ... ],
-  "LogGroups" : [ String, ... ],
-  "S3Buckets" : [ String, ... ],
-  "SecretArns" : [ String, ... ],
-  "Vpcs" : [ VpcConfig, ... ]
+  "[IamRoles](#cfn-securityagent-agentspace-awsresources-iamroles)" : {{[ String, ... ]}},
+  "[LambdaFunctionArns](#cfn-securityagent-agentspace-awsresources-lambdafunctionarns)" : {{[ String, ... ]}},
+  "[LogGroups](#cfn-securityagent-agentspace-awsresources-loggroups)" : {{[ String, ... ]}},
+  "[S3Buckets](#cfn-securityagent-agentspace-awsresources-s3buckets)" : {{[ String, ... ]}},
+  "[SecretArns](#cfn-securityagent-agentspace-awsresources-secretarns)" : {{[ String, ... ]}},
+  "[Vpcs](#cfn-securityagent-agentspace-awsresources-vpcs)" : {{[ VpcConfig, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-securityagent-agentspace-awsresources-syntax.yaml"></a>
 
-```yaml
-
-  IamRoles:
-    - String
-  LambdaFunctionArns:
-    - String
-  LogGroups:
-    - String
-  S3Buckets:
-    - String
-  SecretArns:
-    - String
-  Vpcs:
-    - VpcConfig
-
+```
+  [IamRoles](#cfn-securityagent-agentspace-awsresources-iamroles): {{
+    - String}}
+  [LambdaFunctionArns](#cfn-securityagent-agentspace-awsresources-lambdafunctionarns): {{
+    - String}}
+  [LogGroups](#cfn-securityagent-agentspace-awsresources-loggroups): {{
+    - String}}
+  [S3Buckets](#cfn-securityagent-agentspace-awsresources-s3buckets): {{
+    - String}}
+  [SecretArns](#cfn-securityagent-agentspace-awsresources-secretarns): {{
+    - String}}
+  [Vpcs](#cfn-securityagent-agentspace-awsresources-vpcs): {{
+    - VpcConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-securityagent-agentspace-awsresources-properties"></a>
 
-`IamRoles`
-
+`IamRoles`  <a name="cfn-securityagent-agentspace-awsresources-iamroles"></a>
 The IAM roles associated with the agent space.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LambdaFunctionArns`
-
+`LambdaFunctionArns`  <a name="cfn-securityagent-agentspace-awsresources-lambdafunctionarns"></a>
 The Amazon Resource Names (ARNs) of the Lambda functions associated with the agent space.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogGroups`
-
+`LogGroups`  <a name="cfn-securityagent-agentspace-awsresources-loggroups"></a>
 The Amazon Resource Names (ARNs) of the CloudWatch log groups associated with the agent space.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3Buckets`
-
+`S3Buckets`  <a name="cfn-securityagent-agentspace-awsresources-s3buckets"></a>
 The Amazon Resource Names (ARNs) of the S3 buckets associated with the agent space.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SecretArns`
-
+`SecretArns`  <a name="cfn-securityagent-agentspace-awsresources-secretarns"></a>
 The Amazon Resource Names (ARNs) of the Secrets Manager secrets associated with the agent space.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Vpcs`
-
+`Vpcs`  <a name="cfn-securityagent-agentspace-awsresources-vpcs"></a>
 The VPC configurations associated with the agent space.
-
-_Required_: No
-
-_Type_: Array of [VpcConfig](aws-properties-securityagent-agentspace-vpcconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::SecurityAgent::AgentSpace
-
-CodeReviewSettings
+*Required*: No
+*Type*: Array of [VpcConfig](aws-properties-securityagent-agentspace-vpcconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

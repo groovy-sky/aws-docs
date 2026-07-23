@@ -2,149 +2,105 @@
 title: "AWS::QuickSight::Dashboard WordCloudVisual"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard WordCloudVisual
+<a name="aws-properties-quicksight-dashboard-wordcloudvisual"></a>
 
 A word cloud.
 
-For more information, see [Using word clouds](../../../quicksight/latest/user/word-cloud.md) in the _Amazon Quick Suite User Guide_.
+For more information, see [Using word clouds](https://docs.aws.amazon.com/quicksight/latest/user/word-cloud.html) in the *Amazon Quick Suite User Guide*.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-wordcloudvisual-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-wordcloudvisual-syntax.json"></a>
 
-```json
-
+```
 {
-  "Actions" : [ VisualCustomAction, ... ],
-  "ChartConfiguration" : WordCloudChartConfiguration,
-  "ColumnHierarchies" : [ ColumnHierarchy, ... ],
-  "Subtitle" : VisualSubtitleLabelOptions,
-  "Title" : VisualTitleLabelOptions,
-  "VisualContentAltText" : String,
-  "VisualId" : String
+  "[Actions](#cfn-quicksight-dashboard-wordcloudvisual-actions)" : {{[ VisualCustomAction, ... ]}},
+  "[ChartConfiguration](#cfn-quicksight-dashboard-wordcloudvisual-chartconfiguration)" : {{WordCloudChartConfiguration}},
+  "[ColumnHierarchies](#cfn-quicksight-dashboard-wordcloudvisual-columnhierarchies)" : {{[ ColumnHierarchy, ... ]}},
+  "[Subtitle](#cfn-quicksight-dashboard-wordcloudvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
+  "[Title](#cfn-quicksight-dashboard-wordcloudvisual-title)" : {{VisualTitleLabelOptions}},
+  "[VisualContentAltText](#cfn-quicksight-dashboard-wordcloudvisual-visualcontentalttext)" : {{String}},
+  "[VisualId](#cfn-quicksight-dashboard-wordcloudvisual-visualid)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-wordcloudvisual-syntax.yaml"></a>
 
-```yaml
-
-  Actions:
-    - VisualCustomAction
-  ChartConfiguration:
-    WordCloudChartConfiguration
-  ColumnHierarchies:
-    - ColumnHierarchy
-  Subtitle:
-    VisualSubtitleLabelOptions
-  Title:
-    VisualTitleLabelOptions
-  VisualContentAltText: String
-  VisualId: String
-
+```
+  [Actions](#cfn-quicksight-dashboard-wordcloudvisual-actions): {{
+    - VisualCustomAction}}
+  [ChartConfiguration](#cfn-quicksight-dashboard-wordcloudvisual-chartconfiguration): {{
+    WordCloudChartConfiguration}}
+  [ColumnHierarchies](#cfn-quicksight-dashboard-wordcloudvisual-columnhierarchies): {{
+    - ColumnHierarchy}}
+  [Subtitle](#cfn-quicksight-dashboard-wordcloudvisual-subtitle): {{
+    VisualSubtitleLabelOptions}}
+  [Title](#cfn-quicksight-dashboard-wordcloudvisual-title): {{
+    VisualTitleLabelOptions}}
+  [VisualContentAltText](#cfn-quicksight-dashboard-wordcloudvisual-visualcontentalttext): {{String}}
+  [VisualId](#cfn-quicksight-dashboard-wordcloudvisual-visualid): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-wordcloudvisual-properties"></a>
 
-`Actions`
-
+`Actions`  <a name="cfn-quicksight-dashboard-wordcloudvisual-actions"></a>
 The list of custom actions that are configured for a visual.
+*Required*: No
+*Type*: Array of [VisualCustomAction](aws-properties-quicksight-dashboard-visualcustomaction.md)
+*Minimum*: `0`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [VisualCustomAction](aws-properties-quicksight-dashboard-visualcustomaction.md)
-
-_Minimum_: `0`
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ChartConfiguration`
-
+`ChartConfiguration`  <a name="cfn-quicksight-dashboard-wordcloudvisual-chartconfiguration"></a>
 The configuration settings of the visual.
+*Required*: No
+*Type*: [WordCloudChartConfiguration](aws-properties-quicksight-dashboard-wordcloudchartconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [WordCloudChartConfiguration](aws-properties-quicksight-dashboard-wordcloudchartconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ColumnHierarchies`
-
+`ColumnHierarchies`  <a name="cfn-quicksight-dashboard-wordcloudvisual-columnhierarchies"></a>
 The column hierarchy that is used during drill-downs and drill-ups.
+*Required*: No
+*Type*: Array of [ColumnHierarchy](aws-properties-quicksight-dashboard-columnhierarchy.md)
+*Minimum*: `0`
+*Maximum*: `2`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of [ColumnHierarchy](aws-properties-quicksight-dashboard-columnhierarchy.md)
-
-_Minimum_: `0`
-
-_Maximum_: `2`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Subtitle`
-
+`Subtitle`  <a name="cfn-quicksight-dashboard-wordcloudvisual-subtitle"></a>
 The subtitle that is displayed on the visual.
+*Required*: No
+*Type*: [VisualSubtitleLabelOptions](aws-properties-quicksight-dashboard-visualsubtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualSubtitleLabelOptions](aws-properties-quicksight-dashboard-visualsubtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-dashboard-wordcloudvisual-title"></a>
 The title that is displayed on the visual.
+*Required*: No
+*Type*: [VisualTitleLabelOptions](aws-properties-quicksight-dashboard-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VisualTitleLabelOptions](aws-properties-quicksight-dashboard-visualtitlelabeloptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualContentAltText`
-
+`VisualContentAltText`  <a name="cfn-quicksight-dashboard-wordcloudvisual-visualcontentalttext"></a>
 The alt text for the visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`VisualId`
-
+`VisualId`  <a name="cfn-quicksight-dashboard-wordcloudvisual-visualid"></a>
 The unique identifier of a visual. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have visuals with the same identifiers..
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-WordCloudSortConfiguration
-
-YAxisOptions
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

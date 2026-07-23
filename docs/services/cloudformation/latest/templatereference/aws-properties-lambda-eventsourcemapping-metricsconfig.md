@@ -2,69 +2,49 @@
 title: "AWS::Lambda::EventSourceMapping MetricsConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping MetricsConfig
+<a name="aws-properties-lambda-eventsourcemapping-metricsconfig"></a>
 
-The metrics configuration for your event source. Use this configuration object to define which metrics you want your
-event source mapping to produce.
+The metrics configuration for your event source. Use this configuration object to define which metrics you want your event source mapping to produce.
 
 ## Syntax
+<a name="aws-properties-lambda-eventsourcemapping-metricsconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lambda-eventsourcemapping-metricsconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "Metrics" : [ String, ... ]
+  "[Metrics](#cfn-lambda-eventsourcemapping-metricsconfig-metrics)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lambda-eventsourcemapping-metricsconfig-syntax.yaml"></a>
 
-```yaml
-
-  Metrics:
-    - String
-
+```
+  [Metrics](#cfn-lambda-eventsourcemapping-metricsconfig-metrics): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-lambda-eventsourcemapping-metricsconfig-properties"></a>
 
-`Metrics`
-
-The metrics you want your event source mapping to produce, including `EventCount`, `ErrorCount`, `KafkaMetrics`.
-
-- `EventCount` to receive metrics related to the number of events processed by your event source mapping.
-
-- `ErrorCount` (Amazon MSK and self-managed Apache Kafka) to receive metrics related to the number of errors in your event source mapping processing.
-
-- `KafkaMetrics` (Amazon MSK and self-managed Apache Kafka) to receive metrics related to the Kafka consumers from your event source mapping.
-
-For more information about these metrics,
-see [Event source mapping metrics](../../../lambda/latest/dg/monitoring-metrics-types.md#event-source-mapping-metrics).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Allowed values_: `EventCount | ErrorCount | KafkaMetrics`
-
-_Minimum_: `0`
-
-_Maximum_: `3`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LoggingConfig
-
-OnFailure
+`Metrics`  <a name="cfn-lambda-eventsourcemapping-metricsconfig-metrics"></a>
+ The metrics you want your event source mapping to produce, including `EventCount`, `ErrorCount`, `KafkaMetrics`.
++ `EventCount` to receive metrics related to the number of events processed by your event source mapping.
++ `ErrorCount` (Amazon MSK and self-managed Apache Kafka) to receive metrics related to the number of errors in your event source mapping processing.
++ `KafkaMetrics` (Amazon MSK and self-managed Apache Kafka) to receive metrics related to the Kafka consumers from your event source mapping.
+ For more information about these metrics, see [ Event source mapping metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics-types.html#event-source-mapping-metrics).
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `EventCount | ErrorCount | KafkaMetrics`
+*Minimum*: `0`
+*Maximum*: `3`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

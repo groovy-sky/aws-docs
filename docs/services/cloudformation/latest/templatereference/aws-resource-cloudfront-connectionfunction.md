@@ -2,149 +2,116 @@
 title: "AWS::CloudFront::ConnectionFunction"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ConnectionFunction
+<a name="aws-resource-cloudfront-connectionfunction"></a>
 
 A connection function.
 
 ## Syntax
+<a name="aws-resource-cloudfront-connectionfunction-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-cloudfront-connectionfunction-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::CloudFront::ConnectionFunction",
   "Properties" : {
-      "AutoPublish" : Boolean,
-      "ConnectionFunctionCode" : String,
-      "ConnectionFunctionConfig" : ConnectionFunctionConfig,
-      "Name" : String,
-      "Tags" : [ Tag, ... ]
+      "[AutoPublish](#cfn-cloudfront-connectionfunction-autopublish)" : {{Boolean}},
+      "[ConnectionFunctionCode](#cfn-cloudfront-connectionfunction-connectionfunctioncode)" : {{String}},
+      "[ConnectionFunctionConfig](#cfn-cloudfront-connectionfunction-connectionfunctionconfig)" : {{ConnectionFunctionConfig}},
+      "[Name](#cfn-cloudfront-connectionfunction-name)" : {{String}},
+      "[Tags](#cfn-cloudfront-connectionfunction-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-cloudfront-connectionfunction-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::CloudFront::ConnectionFunction
 Properties:
-  AutoPublish: Boolean
-  ConnectionFunctionCode: String
-  ConnectionFunctionConfig:
-    ConnectionFunctionConfig
-  Name: String
-  Tags:
-    - Tag
-
+  [AutoPublish](#cfn-cloudfront-connectionfunction-autopublish): {{Boolean}}
+  [ConnectionFunctionCode](#cfn-cloudfront-connectionfunction-connectionfunctioncode): {{String}}
+  [ConnectionFunctionConfig](#cfn-cloudfront-connectionfunction-connectionfunctionconfig): {{
+    ConnectionFunctionConfig}}
+  [Name](#cfn-cloudfront-connectionfunction-name): {{String}}
+  [Tags](#cfn-cloudfront-connectionfunction-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-cloudfront-connectionfunction-properties"></a>
 
-`AutoPublish`
+`AutoPublish`  <a name="cfn-cloudfront-connectionfunction-autopublish"></a>
+A flag that determines whether to automatically publish the function to the `LIVE` stage when it’s created. To automatically publish to the `LIVE` stage, set this property to `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A flag that determines whether to automatically publish the function to the
-`LIVE` stage when it’s created. To automatically publish to the
-`LIVE` stage, set this property to `true`.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectionFunctionCode`
-
+`ConnectionFunctionCode`  <a name="cfn-cloudfront-connectionfunction-connectionfunctioncode"></a>
 The code for the connection function.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectionFunctionConfig`
-
+`ConnectionFunctionConfig`  <a name="cfn-cloudfront-connectionfunction-connectionfunctionconfig"></a>
 Contains configuration information about a CloudFront function.
+*Required*: Yes
+*Type*: [ConnectionFunctionConfig](aws-properties-cloudfront-connectionfunction-connectionfunctionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: [ConnectionFunctionConfig](aws-properties-cloudfront-connectionfunction-connectionfunctionconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-cloudfront-connectionfunction-name"></a>
 The connection function name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-zA-Z0-9-_]{1,64}`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9-_]{1,64}`
-
-_Minimum_: `1`
-
-_Maximum_: `64`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-cloudfront-connectionfunction-tags"></a>
 A complex type that contains zero or more `Tag` elements.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-cloudfront-connectionfunction-tag.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-cloudfront-connectionfunction-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-cloudfront-connectionfunction-return-values"></a>
 
 ### Ref
+<a name="aws-resource-cloudfront-connectionfunction-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-cloudfront-connectionfunction-return-values-fn--getatt"></a>
 
-`ConnectionFunctionArn`
+####
+<a name="aws-resource-cloudfront-connectionfunction-return-values-fn--getatt-fn--getatt"></a>
 
+`ConnectionFunctionArn`  <a name="ConnectionFunctionArn-fn::getatt"></a>
 The connection function Amazon Resource Name (ARN).
 
-`CreatedTime`
-
+`CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
 The connection function created time.
 
-`ETag`
-
+`ETag`  <a name="ETag-fn::getatt"></a>
 A complex type that contains `Tag` key and `Tag` value.
 
-`Id`
-
+`Id`  <a name="Id-fn::getatt"></a>
 The connection function ID.
 
-`LastModifiedTime`
-
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The connection function last modified time.
 
-`Stage`
-
+`Stage`  <a name="Stage-fn::getatt"></a>
 The connection function stage.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The connection function status.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudFrontOriginAccessIdentityConfig
-
-ConnectionFunctionConfig
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,216 +2,144 @@
 title: "AWS::QuickSight::Topic DisplayFormatOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic DisplayFormatOptions
+<a name="aws-properties-quicksight-topic-displayformatoptions"></a>
 
 A structure that represents additional options for display formatting.
 
 ## Syntax
+<a name="aws-properties-quicksight-topic-displayformatoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-topic-displayformatoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "BlankCellFormat" : String,
-  "CurrencySymbol" : String,
-  "DateFormat" : String,
-  "DecimalSeparator" : String,
-  "FractionDigits" : Number,
-  "GroupingSeparator" : String,
-  "NegativeFormat" : NegativeFormat,
-  "Prefix" : String,
-  "Suffix" : String,
-  "UnitScaler" : String,
-  "UseBlankCellFormat" : Boolean,
-  "UseGrouping" : Boolean
+  "[BlankCellFormat](#cfn-quicksight-topic-displayformatoptions-blankcellformat)" : {{String}},
+  "[CurrencySymbol](#cfn-quicksight-topic-displayformatoptions-currencysymbol)" : {{String}},
+  "[DateFormat](#cfn-quicksight-topic-displayformatoptions-dateformat)" : {{String}},
+  "[DecimalSeparator](#cfn-quicksight-topic-displayformatoptions-decimalseparator)" : {{String}},
+  "[FractionDigits](#cfn-quicksight-topic-displayformatoptions-fractiondigits)" : {{Number}},
+  "[GroupingSeparator](#cfn-quicksight-topic-displayformatoptions-groupingseparator)" : {{String}},
+  "[NegativeFormat](#cfn-quicksight-topic-displayformatoptions-negativeformat)" : {{NegativeFormat}},
+  "[Prefix](#cfn-quicksight-topic-displayformatoptions-prefix)" : {{String}},
+  "[Suffix](#cfn-quicksight-topic-displayformatoptions-suffix)" : {{String}},
+  "[UnitScaler](#cfn-quicksight-topic-displayformatoptions-unitscaler)" : {{String}},
+  "[UseBlankCellFormat](#cfn-quicksight-topic-displayformatoptions-useblankcellformat)" : {{Boolean}},
+  "[UseGrouping](#cfn-quicksight-topic-displayformatoptions-usegrouping)" : {{Boolean}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-topic-displayformatoptions-syntax.yaml"></a>
 
-```yaml
-
-  BlankCellFormat: String
-  CurrencySymbol: String
-  DateFormat: String
-  DecimalSeparator: String
-  FractionDigits: Number
-  GroupingSeparator: String
-  NegativeFormat:
-    NegativeFormat
-  Prefix: String
-  Suffix: String
-  UnitScaler: String
-  UseBlankCellFormat: Boolean
-  UseGrouping: Boolean
-
+```
+  [BlankCellFormat](#cfn-quicksight-topic-displayformatoptions-blankcellformat): {{String}}
+  [CurrencySymbol](#cfn-quicksight-topic-displayformatoptions-currencysymbol): {{String}}
+  [DateFormat](#cfn-quicksight-topic-displayformatoptions-dateformat): {{String}}
+  [DecimalSeparator](#cfn-quicksight-topic-displayformatoptions-decimalseparator): {{String}}
+  [FractionDigits](#cfn-quicksight-topic-displayformatoptions-fractiondigits): {{Number}}
+  [GroupingSeparator](#cfn-quicksight-topic-displayformatoptions-groupingseparator): {{String}}
+  [NegativeFormat](#cfn-quicksight-topic-displayformatoptions-negativeformat): {{
+    NegativeFormat}}
+  [Prefix](#cfn-quicksight-topic-displayformatoptions-prefix): {{String}}
+  [Suffix](#cfn-quicksight-topic-displayformatoptions-suffix): {{String}}
+  [UnitScaler](#cfn-quicksight-topic-displayformatoptions-unitscaler): {{String}}
+  [UseBlankCellFormat](#cfn-quicksight-topic-displayformatoptions-useblankcellformat): {{Boolean}}
+  [UseGrouping](#cfn-quicksight-topic-displayformatoptions-usegrouping): {{Boolean}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-topic-displayformatoptions-properties"></a>
 
-`BlankCellFormat`
-
+`BlankCellFormat`  <a name="cfn-quicksight-topic-displayformatoptions-blankcellformat"></a>
 Determines the blank cell format.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CurrencySymbol`
-
+`CurrencySymbol`  <a name="cfn-quicksight-topic-displayformatoptions-currencysymbol"></a>
 The currency symbol, such as `USD`.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DateFormat`
-
+`DateFormat`  <a name="cfn-quicksight-topic-displayformatoptions-dateformat"></a>
 Determines the `DateTime` format.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DecimalSeparator`
-
+`DecimalSeparator`  <a name="cfn-quicksight-topic-displayformatoptions-decimalseparator"></a>
 Determines the decimal separator.
+*Required*: No
+*Type*: String
+*Allowed values*: `COMMA | DOT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `COMMA | DOT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FractionDigits`
-
+`FractionDigits`  <a name="cfn-quicksight-topic-displayformatoptions-fractiondigits"></a>
 Determines the number of fraction digits.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupingSeparator`
-
+`GroupingSeparator`  <a name="cfn-quicksight-topic-displayformatoptions-groupingseparator"></a>
 Determines the grouping separator.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NegativeFormat`
-
+`NegativeFormat`  <a name="cfn-quicksight-topic-displayformatoptions-negativeformat"></a>
 The negative format.
+*Required*: No
+*Type*: [NegativeFormat](aws-properties-quicksight-topic-negativeformat.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NegativeFormat](aws-properties-quicksight-topic-negativeformat.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Prefix`
-
+`Prefix`  <a name="cfn-quicksight-topic-displayformatoptions-prefix"></a>
 The prefix value for a display format.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Suffix`
-
+`Suffix`  <a name="cfn-quicksight-topic-displayformatoptions-suffix"></a>
 The suffix value for a display format.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`UnitScaler`  <a name="cfn-quicksight-topic-displayformatoptions-unitscaler"></a>
+The unit scaler. Valid values for this structure are: `NONE`, `AUTO`, `THOUSANDS`, `MILLIONS`, `BILLIONS`, and `TRILLIONS`.
+*Required*: No
+*Type*: String
+*Allowed values*: `NONE | AUTO | THOUSANDS | MILLIONS | BILLIONS | TRILLIONS | LAKHS | CRORES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UnitScaler`
-
-The unit scaler. Valid values for this structure are: `NONE`,
-`AUTO`, `THOUSANDS`, `MILLIONS`,
-`BILLIONS`,
-and `TRILLIONS`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `NONE | AUTO | THOUSANDS | MILLIONS | BILLIONS | TRILLIONS | LAKHS | CRORES`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseBlankCellFormat`
-
+`UseBlankCellFormat`  <a name="cfn-quicksight-topic-displayformatoptions-useblankcellformat"></a>
 A Boolean value that indicates whether to use blank cell format.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UseGrouping`
-
+`UseGrouping`  <a name="cfn-quicksight-topic-displayformatoptions-usegrouping"></a>
 A Boolean value that indicates whether to use grouping.
-
-_Required_: No
-
-_Type_: Boolean
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultFormatting
-
-NamedEntityDefinition
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

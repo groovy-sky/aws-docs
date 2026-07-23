@@ -2,53 +2,42 @@
 title: "AWS::BedrockAgentCore::Gateway GatewayProtocolConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway GatewayProtocolConfiguration
+<a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration"></a>
 
 The configuration for a gateway protocol. This structure defines how the gateway communicates with external services.
 
 ## Syntax
+<a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "Mcp" : MCPGatewayConfiguration
+  "[Mcp](#cfn-bedrockagentcore-gateway-gatewayprotocolconfiguration-mcp)" : {{MCPGatewayConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  Mcp:
-    MCPGatewayConfiguration
-
+```
+  [Mcp](#cfn-bedrockagentcore-gateway-gatewayprotocolconfiguration-mcp): {{
+    MCPGatewayConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration-properties"></a>
 
-`Mcp`
-
+`Mcp`  <a name="cfn-bedrockagentcore-gateway-gatewayprotocolconfiguration-mcp"></a>
 The configuration for the Model Context Protocol (MCP). This protocol enables communication between Amazon Bedrock Agent and external tools.
-
-_Required_: Yes
-
-_Type_: [MCPGatewayConfiguration](aws-properties-bedrockagentcore-gateway-mcpgatewayconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GatewayPolicyEngineConfiguration
-
-InterceptorConfiguration
+*Required*: Yes
+*Type*: [MCPGatewayConfiguration](aws-properties-bedrockagentcore-gateway-mcpgatewayconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

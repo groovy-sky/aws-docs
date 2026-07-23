@@ -2,131 +2,93 @@
 title: "AWS::EC2::VerifiedAccessEndpoint RdsOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessEndpoint RdsOptions
+<a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions"></a>
 
 Describes the RDS options for a Verified Access endpoint.
 
 ## Syntax
+<a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "Port" : Integer,
-  "Protocol" : String,
-  "RdsDbClusterArn" : String,
-  "RdsDbInstanceArn" : String,
-  "RdsDbProxyArn" : String,
-  "RdsEndpoint" : String,
-  "SubnetIds" : [ String, ... ]
+  "[Port](#cfn-ec2-verifiedaccessendpoint-rdsoptions-port)" : {{Integer}},
+  "[Protocol](#cfn-ec2-verifiedaccessendpoint-rdsoptions-protocol)" : {{String}},
+  "[RdsDbClusterArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbclusterarn)" : {{String}},
+  "[RdsDbInstanceArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbinstancearn)" : {{String}},
+  "[RdsDbProxyArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbproxyarn)" : {{String}},
+  "[RdsEndpoint](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsendpoint)" : {{String}},
+  "[SubnetIds](#cfn-ec2-verifiedaccessendpoint-rdsoptions-subnetids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions-syntax.yaml"></a>
 
-```yaml
-
-  Port: Integer
-  Protocol: String
-  RdsDbClusterArn: String
-  RdsDbInstanceArn: String
-  RdsDbProxyArn: String
-  RdsEndpoint: String
-  SubnetIds:
-    - String
-
+```
+  [Port](#cfn-ec2-verifiedaccessendpoint-rdsoptions-port): {{Integer}}
+  [Protocol](#cfn-ec2-verifiedaccessendpoint-rdsoptions-protocol): {{String}}
+  [RdsDbClusterArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbclusterarn): {{String}}
+  [RdsDbInstanceArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbinstancearn): {{String}}
+  [RdsDbProxyArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbproxyarn): {{String}}
+  [RdsEndpoint](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsendpoint): {{String}}
+  [SubnetIds](#cfn-ec2-verifiedaccessendpoint-rdsoptions-subnetids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions-properties"></a>
 
-`Port`
-
+`Port`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-port"></a>
 The port.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Maximum*: `65535`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Maximum_: `65535`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Protocol`
-
+`Protocol`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-protocol"></a>
 The protocol.
+*Required*: No
+*Type*: String
+*Allowed values*: `http | https | tcp`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `http | https | tcp`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RdsDbClusterArn`
-
+`RdsDbClusterArn`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbclusterarn"></a>
 The ARN of the DB cluster.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RdsDbInstanceArn`
-
+`RdsDbInstanceArn`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbinstancearn"></a>
 The ARN of the RDS instance.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RdsDbProxyArn`
-
+`RdsDbProxyArn`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbproxyarn"></a>
 The ARN of the RDS proxy.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RdsEndpoint`
-
+`RdsEndpoint`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsendpoint"></a>
 The RDS endpoint.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SubnetIds`
-
+`SubnetIds`  <a name="cfn-ec2-verifiedaccessendpoint-rdsoptions-subnetids"></a>
 The IDs of the subnets. You can specify only one subnet per Availability Zone.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PortRange
-
-SseSpecification
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

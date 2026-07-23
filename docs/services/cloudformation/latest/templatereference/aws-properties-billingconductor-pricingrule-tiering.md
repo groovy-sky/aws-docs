@@ -2,53 +2,42 @@
 title: "AWS::BillingConductor::PricingRule Tiering"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::PricingRule Tiering
+<a name="aws-properties-billingconductor-pricingrule-tiering"></a>
 
-The set of tiering configurations for the pricing rule.
+ The set of tiering configurations for the pricing rule.
 
 ## Syntax
+<a name="aws-properties-billingconductor-pricingrule-tiering-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-billingconductor-pricingrule-tiering-syntax.json"></a>
 
-```json
-
+```
 {
-  "FreeTier" : FreeTier
+  "[FreeTier](#cfn-billingconductor-pricingrule-tiering-freetier)" : {{FreeTier}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-billingconductor-pricingrule-tiering-syntax.yaml"></a>
 
-```yaml
-
-  FreeTier:
-    FreeTier
-
+```
+  [FreeTier](#cfn-billingconductor-pricingrule-tiering-freetier): {{
+    FreeTier}}
 ```
 
 ## Properties
+<a name="aws-properties-billingconductor-pricingrule-tiering-properties"></a>
 
-`FreeTier`
-
-The possible AWS Free Tier configurations.
-
-_Required_: No
-
-_Type_: [FreeTier](aws-properties-billingconductor-pricingrule-freetier.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+`FreeTier`  <a name="cfn-billingconductor-pricingrule-tiering-freetier"></a>
+ The possible AWS Free Tier configurations.
+*Required*: No
+*Type*: [FreeTier](aws-properties-billingconductor-pricingrule-freetier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,171 +2,114 @@
 title: "AWS::DataZone::Connection SparkGluePropertiesInput"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::Connection SparkGluePropertiesInput
+<a name="aws-properties-datazone-connection-sparkgluepropertiesinput"></a>
 
 The Spark AWS Glue properties.
 
 ## Syntax
+<a name="aws-properties-datazone-connection-sparkgluepropertiesinput-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-datazone-connection-sparkgluepropertiesinput-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdditionalArgs" : SparkGlueArgs,
-  "GlueConnectionName" : String,
-  "GlueVersion" : String,
-  "IdleTimeout" : Number,
-  "JavaVirtualEnv" : String,
-  "NumberOfWorkers" : Number,
-  "PythonVirtualEnv" : String,
-  "WorkerType" : String
+  "[AdditionalArgs](#cfn-datazone-connection-sparkgluepropertiesinput-additionalargs)" : {{SparkGlueArgs}},
+  "[GlueConnectionName](#cfn-datazone-connection-sparkgluepropertiesinput-glueconnectionname)" : {{String}},
+  "[GlueVersion](#cfn-datazone-connection-sparkgluepropertiesinput-glueversion)" : {{String}},
+  "[IdleTimeout](#cfn-datazone-connection-sparkgluepropertiesinput-idletimeout)" : {{Number}},
+  "[JavaVirtualEnv](#cfn-datazone-connection-sparkgluepropertiesinput-javavirtualenv)" : {{String}},
+  "[NumberOfWorkers](#cfn-datazone-connection-sparkgluepropertiesinput-numberofworkers)" : {{Number}},
+  "[PythonVirtualEnv](#cfn-datazone-connection-sparkgluepropertiesinput-pythonvirtualenv)" : {{String}},
+  "[WorkerType](#cfn-datazone-connection-sparkgluepropertiesinput-workertype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-datazone-connection-sparkgluepropertiesinput-syntax.yaml"></a>
 
-```yaml
-
-  AdditionalArgs:
-    SparkGlueArgs
-  GlueConnectionName: String
-  GlueVersion: String
-  IdleTimeout: Number
-  JavaVirtualEnv: String
-  NumberOfWorkers:
-    Number
-  PythonVirtualEnv: String
-  WorkerType: String
-
+```
+  [AdditionalArgs](#cfn-datazone-connection-sparkgluepropertiesinput-additionalargs): {{
+    SparkGlueArgs}}
+  [GlueConnectionName](#cfn-datazone-connection-sparkgluepropertiesinput-glueconnectionname): {{String}}
+  [GlueVersion](#cfn-datazone-connection-sparkgluepropertiesinput-glueversion): {{String}}
+  [IdleTimeout](#cfn-datazone-connection-sparkgluepropertiesinput-idletimeout): {{Number}}
+  [JavaVirtualEnv](#cfn-datazone-connection-sparkgluepropertiesinput-javavirtualenv): {{String}}
+  [NumberOfWorkers](#cfn-datazone-connection-sparkgluepropertiesinput-numberofworkers): {{
+    Number}}
+  [PythonVirtualEnv](#cfn-datazone-connection-sparkgluepropertiesinput-pythonvirtualenv): {{String}}
+  [WorkerType](#cfn-datazone-connection-sparkgluepropertiesinput-workertype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-datazone-connection-sparkgluepropertiesinput-properties"></a>
 
-`AdditionalArgs`
-
+`AdditionalArgs`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-additionalargs"></a>
 The additional args in the Spark AWS Glue properties.
+*Required*: No
+*Type*: [SparkGlueArgs](aws-properties-datazone-connection-sparkglueargs.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`GlueConnectionName`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-glueconnectionname"></a>
+The AWS Glue connection name in the Spark AWS Glue properties. Specify either `glueConnectionName` or `glueConnectionNames`, but not both.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [SparkGlueArgs](aws-properties-datazone-connection-sparkglueargs.md)
+`GlueVersion`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-glueversion"></a>
+The AWS Glue version in the Spark AWS Glue properties.
+*Required*: No
+*Type*: String
+*Pattern*: `^\w+\.\w+$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GlueConnectionName`
-
-The AWS Glue connection name in the Spark AWS Glue
-properties. Specify either `glueConnectionName` or
-`glueConnectionNames`, but not both.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GlueVersion`
-
-The AWS Glue version in the Spark AWS Glue
-properties.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^\w+\.\w+$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IdleTimeout`
-
+`IdleTimeout`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-idletimeout"></a>
 The idle timeout in the Spark AWS Glue properties.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `3000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `3000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`JavaVirtualEnv`
-
+`JavaVirtualEnv`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-javavirtualenv"></a>
 The Java virtual env in the Spark AWS Glue properties.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`NumberOfWorkers`
-
+`NumberOfWorkers`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-numberofworkers"></a>
 The number of workers in the Spark AWS Glue properties.
+*Required*: No
+*Type*: Number
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PythonVirtualEnv`
-
+`PythonVirtualEnv`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-pythonvirtualenv"></a>
 The Python virtual env in the Spark AWS Glue properties.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\S]*$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[\S]*$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WorkerType`
-
+`WorkerType`  <a name="cfn-datazone-connection-sparkgluepropertiesinput-workertype"></a>
 The worker type in the Spark AWS Glue properties.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[G|Z].*$`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SparkGlueArgs
-
-UsernamePassword
+*Required*: No
+*Type*: String
+*Pattern*: `^[G|Z].*$`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

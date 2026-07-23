@@ -2,56 +2,43 @@
 title: "AWS::ConnectCampaignsV2::Campaign ProgressiveConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign ProgressiveConfig
+<a name="aws-properties-connectcampaignsv2-campaign-progressiveconfig"></a>
 
 Contains the progressive outbound mode configuration.
 
 ## Syntax
+<a name="aws-properties-connectcampaignsv2-campaign-progressiveconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-connectcampaignsv2-campaign-progressiveconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "BandwidthAllocation" : Number
+  "[BandwidthAllocation](#cfn-connectcampaignsv2-campaign-progressiveconfig-bandwidthallocation)" : {{Number}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-connectcampaignsv2-campaign-progressiveconfig-syntax.yaml"></a>
 
-```yaml
-
-  BandwidthAllocation: Number
-
+```
+  [BandwidthAllocation](#cfn-connectcampaignsv2-campaign-progressiveconfig-bandwidthallocation): {{Number}}
 ```
 
 ## Properties
+<a name="aws-properties-connectcampaignsv2-campaign-progressiveconfig-properties"></a>
 
-`BandwidthAllocation`
-
+`BandwidthAllocation`  <a name="cfn-connectcampaignsv2-campaign-progressiveconfig-bandwidthallocation"></a>
 Bandwidth allocation for the progressive outbound mode.
-
-_Required_: Yes
-
-_Type_: Number
-
-_Minimum_: `0`
-
-_Maximum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PreviewConfig
-
-RestrictedPeriod
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

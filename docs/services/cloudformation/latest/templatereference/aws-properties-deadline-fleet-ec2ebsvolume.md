@@ -2,84 +2,61 @@
 title: "AWS::Deadline::Fleet Ec2EbsVolume"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Fleet Ec2EbsVolume
+<a name="aws-properties-deadline-fleet-ec2ebsvolume"></a>
 
 Specifies the EBS volume.
 
 ## Syntax
+<a name="aws-properties-deadline-fleet-ec2ebsvolume-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-deadline-fleet-ec2ebsvolume-syntax.json"></a>
 
-```json
-
+```
 {
-  "Iops" : Integer,
-  "SizeGiB" : Integer,
-  "ThroughputMiB" : Integer
+  "[Iops](#cfn-deadline-fleet-ec2ebsvolume-iops)" : {{Integer}},
+  "[SizeGiB](#cfn-deadline-fleet-ec2ebsvolume-sizegib)" : {{Integer}},
+  "[ThroughputMiB](#cfn-deadline-fleet-ec2ebsvolume-throughputmib)" : {{Integer}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-deadline-fleet-ec2ebsvolume-syntax.yaml"></a>
 
-```yaml
-
-  Iops: Integer
-  SizeGiB: Integer
-  ThroughputMiB: Integer
-
+```
+  [Iops](#cfn-deadline-fleet-ec2ebsvolume-iops): {{Integer}}
+  [SizeGiB](#cfn-deadline-fleet-ec2ebsvolume-sizegib): {{Integer}}
+  [ThroughputMiB](#cfn-deadline-fleet-ec2ebsvolume-throughputmib): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-properties-deadline-fleet-ec2ebsvolume-properties"></a>
 
-`Iops`
-
+`Iops`  <a name="cfn-deadline-fleet-ec2ebsvolume-iops"></a>
 The IOPS per volume.
+*Required*: No
+*Type*: Integer
+*Minimum*: `3000`
+*Maximum*: `16000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `3000`
-
-_Maximum_: `16000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SizeGiB`
-
+`SizeGiB`  <a name="cfn-deadline-fleet-ec2ebsvolume-sizegib"></a>
 The EBS volume size in GiB.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Integer
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ThroughputMiB`
-
+`ThroughputMiB`  <a name="cfn-deadline-fleet-ec2ebsvolume-throughputmib"></a>
 The throughput per volume in MiB.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `125`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CustomerManagedWorkerCapabilities
-
-FleetAmountCapability
+*Required*: No
+*Type*: Integer
+*Minimum*: `125`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

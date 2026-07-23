@@ -2,71 +2,53 @@
 title: "AWS::SSMIncidents::ResponsePlan SsmParameter"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSMIncidents::ResponsePlan SsmParameter
+<a name="aws-properties-ssmincidents-responseplan-ssmparameter"></a>
 
 The key-value pair parameters to use when running the Automation runbook.
 
 ## Syntax
+<a name="aws-properties-ssmincidents-responseplan-ssmparameter-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ssmincidents-responseplan-ssmparameter-syntax.json"></a>
 
-```json
-
+```
 {
-  "Key" : String,
-  "Values" : [ String, ... ]
+  "[Key](#cfn-ssmincidents-responseplan-ssmparameter-key)" : {{String}},
+  "[Values](#cfn-ssmincidents-responseplan-ssmparameter-values)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ssmincidents-responseplan-ssmparameter-syntax.yaml"></a>
 
-```yaml
-
-  Key: String
-  Values:
-    - String
-
+```
+  [Key](#cfn-ssmincidents-responseplan-ssmparameter-key): {{String}}
+  [Values](#cfn-ssmincidents-responseplan-ssmparameter-values): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-ssmincidents-responseplan-ssmparameter-properties"></a>
 
-`Key`
-
+`Key`  <a name="cfn-ssmincidents-responseplan-ssmparameter-key"></a>
 The key parameter to use when running the Automation runbook.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Values`
-
+`Values`  <a name="cfn-ssmincidents-responseplan-ssmparameter-values"></a>
 The value parameter to use when running the Automation runbook.
-
-_Required_: Yes
-
-_Type_: Array of String
-
-_Maximum_: `10`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SsmAutomation
-
-Tag
+*Required*: Yes
+*Type*: Array of String
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

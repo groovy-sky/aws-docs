@@ -2,111 +2,76 @@
 title: "AWS::ApplicationInsights::Application WindowsEvent"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationInsights::Application WindowsEvent
+<a name="aws-properties-applicationinsights-application-windowsevent"></a>
 
-The `AWS::ApplicationInsights::Application WindowsEvent` property type specifies a Windows Event to monitor for the component.
+ The `AWS::ApplicationInsights::Application WindowsEvent` property type specifies a Windows Event to monitor for the component.
 
 ## Syntax
+<a name="aws-properties-applicationinsights-application-windowsevent-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-applicationinsights-application-windowsevent-syntax.json"></a>
 
-```json
-
+```
 {
-  "EventLevels" : [ String, ... ],
-  "EventName" : String,
-  "LogGroupName" : String,
-  "PatternSet" : String
+  "[EventLevels](#cfn-applicationinsights-application-windowsevent-eventlevels)" : {{[ String, ... ]}},
+  "[EventName](#cfn-applicationinsights-application-windowsevent-eventname)" : {{String}},
+  "[LogGroupName](#cfn-applicationinsights-application-windowsevent-loggroupname)" : {{String}},
+  "[PatternSet](#cfn-applicationinsights-application-windowsevent-patternset)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-applicationinsights-application-windowsevent-syntax.yaml"></a>
 
-```yaml
-
-  EventLevels:
-    - String
-  EventName: String
-  LogGroupName: String
-  PatternSet: String
-
+```
+  [EventLevels](#cfn-applicationinsights-application-windowsevent-eventlevels): {{
+    - String}}
+  [EventName](#cfn-applicationinsights-application-windowsevent-eventname): {{String}}
+  [LogGroupName](#cfn-applicationinsights-application-windowsevent-loggroupname): {{String}}
+  [PatternSet](#cfn-applicationinsights-application-windowsevent-patternset): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-applicationinsights-application-windowsevent-properties"></a>
 
-`EventLevels`
-
+`EventLevels`  <a name="cfn-applicationinsights-application-windowsevent-eventlevels"></a>
 The levels of event to log. You must specify each level to log. Possible values include `INFORMATION`, `WARNING`, `ERROR`, `CRITICAL`, and `VERBOSE`. This field is required for each type of Windows Event to log.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
+`EventName`  <a name="cfn-applicationinsights-application-windowsevent-eventname"></a>
+The type of Windows Events to log, equivalent to the Windows Event log channel name. For example, System, Security, CustomEventName, and so on. This field is required for each type of Windows event to log.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_ \\/-]+$`
+*Minimum*: `1`
+*Maximum*: `260`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`EventName`
-
-The type of Windows Events to log, equivalent to the Windows Event log channel name. For
-example, System, Security, CustomEventName, and so on. This field is required for each
-type of Windows event to log.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_ \\/-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `260`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogGroupName`
-
+`LogGroupName`  <a name="cfn-applicationinsights-application-windowsevent-loggroupname"></a>
 The CloudWatch log group name to be associated with the monitored log.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[\.\-_/#A-Za-z0-9]+`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `[\.\-_/#A-Za-z0-9]+`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PatternSet`
-
+`PatternSet`  <a name="cfn-applicationinsights-application-windowsevent-patternset"></a>
 The log pattern set.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `[a-zA-Z0-9.-_]*`
-
-_Minimum_: `1`
-
-_Maximum_: `30`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Next
+*Required*: No
+*Type*: String
+*Pattern*: `[a-zA-Z0-9.-_]*`
+*Minimum*: `1`
+*Maximum*: `30`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

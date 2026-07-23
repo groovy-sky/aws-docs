@@ -2,68 +2,52 @@
 title: "AWS::AppSync::DataSource RelationalDatabaseConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::DataSource RelationalDatabaseConfig
+<a name="aws-properties-appsync-datasource-relationaldatabaseconfig"></a>
 
-Use the `RelationalDatabaseConfig` property type to specify
-`RelationalDatabaseConfig` for an AWS AppSync data source.
+Use the `RelationalDatabaseConfig` property type to specify `RelationalDatabaseConfig` for an AWS AppSync data source.
 
-`RelationalDatabaseConfig` is a property of the [AWS::AppSync::DataSource](../userguide/aws-resource-appsync-datasource.md) property type.
+`RelationalDatabaseConfig` is a property of the [AWS::AppSync::DataSource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html) property type.
 
 ## Syntax
+<a name="aws-properties-appsync-datasource-relationaldatabaseconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appsync-datasource-relationaldatabaseconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "RdsHttpEndpointConfig" : RdsHttpEndpointConfig,
-  "RelationalDatabaseSourceType" : String
+  "[RdsHttpEndpointConfig](#cfn-appsync-datasource-relationaldatabaseconfig-rdshttpendpointconfig)" : {{RdsHttpEndpointConfig}},
+  "[RelationalDatabaseSourceType](#cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appsync-datasource-relationaldatabaseconfig-syntax.yaml"></a>
 
-```yaml
-
-  RdsHttpEndpointConfig:
-    RdsHttpEndpointConfig
-  RelationalDatabaseSourceType: String
-
+```
+  [RdsHttpEndpointConfig](#cfn-appsync-datasource-relationaldatabaseconfig-rdshttpendpointconfig): {{
+    RdsHttpEndpointConfig}}
+  [RelationalDatabaseSourceType](#cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-appsync-datasource-relationaldatabaseconfig-properties"></a>
 
-`RdsHttpEndpointConfig`
-
+`RdsHttpEndpointConfig`  <a name="cfn-appsync-datasource-relationaldatabaseconfig-rdshttpendpointconfig"></a>
 Information about the Amazon RDS resource.
+*Required*: No
+*Type*: [RdsHttpEndpointConfig](aws-properties-appsync-datasource-rdshttpendpointconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [RdsHttpEndpointConfig](aws-properties-appsync-datasource-rdshttpendpointconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`RelationalDatabaseSourceType`
-
+`RelationalDatabaseSourceType`  <a name="cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype"></a>
 The type of relational data source.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RdsHttpEndpointConfig
-
-AWS::AppSync::DomainName
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

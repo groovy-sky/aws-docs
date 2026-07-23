@@ -2,221 +2,162 @@
 title: "AWS::Kinesis::Stream"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kinesis::Stream
+<a name="aws-resource-kinesis-stream"></a>
 
-Creates a Kinesis stream that captures and transports data records that are emitted
-from data sources. For information about creating streams, see [CreateStream](../../../../reference/kinesis/latest/apireference/api-createstream.md) in the Amazon Kinesis API Reference.
+Creates a Kinesis stream that captures and transports data records that are emitted from data sources. For information about creating streams, see [CreateStream](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_CreateStream.html) in the Amazon Kinesis API Reference.
 
 ## Syntax
+<a name="aws-resource-kinesis-stream-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-kinesis-stream-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Kinesis::Stream",
   "Properties" : {
-      "DesiredShardLevelMetrics" : [ String, ... ],
-      "MaxRecordSizeInKiB" : Integer,
-      "Name" : String,
-      "RetentionPeriodHours" : Integer,
-      "ShardCount" : Integer,
-      "StreamEncryption" : StreamEncryption,
-      "StreamModeDetails" : StreamModeDetails,
-      "Tags" : [ Tag, ... ],
-      "WarmThroughputMiBps" : Integer
+      "[DesiredShardLevelMetrics](#cfn-kinesis-stream-desiredshardlevelmetrics)" : {{[ String, ... ]}},
+      "[MaxRecordSizeInKiB](#cfn-kinesis-stream-maxrecordsizeinkib)" : {{Integer}},
+      "[Name](#cfn-kinesis-stream-name)" : {{String}},
+      "[RetentionPeriodHours](#cfn-kinesis-stream-retentionperiodhours)" : {{Integer}},
+      "[ShardCount](#cfn-kinesis-stream-shardcount)" : {{Integer}},
+      "[StreamEncryption](#cfn-kinesis-stream-streamencryption)" : {{StreamEncryption}},
+      "[StreamModeDetails](#cfn-kinesis-stream-streammodedetails)" : {{StreamModeDetails}},
+      "[Tags](#cfn-kinesis-stream-tags)" : {{[ Tag, ... ]}},
+      "[WarmThroughputMiBps](#cfn-kinesis-stream-warmthroughputmibps)" : {{Integer}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-kinesis-stream-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Kinesis::Stream
 Properties:
-  DesiredShardLevelMetrics:
-    - String
-  MaxRecordSizeInKiB: Integer
-  Name: String
-  RetentionPeriodHours: Integer
-  ShardCount: Integer
-  StreamEncryption:
-    StreamEncryption
-  StreamModeDetails:
-    StreamModeDetails
-  Tags:
-    - Tag
-  WarmThroughputMiBps: Integer
-
+  [DesiredShardLevelMetrics](#cfn-kinesis-stream-desiredshardlevelmetrics): {{
+    - String}}
+  [MaxRecordSizeInKiB](#cfn-kinesis-stream-maxrecordsizeinkib): {{Integer}}
+  [Name](#cfn-kinesis-stream-name): {{String}}
+  [RetentionPeriodHours](#cfn-kinesis-stream-retentionperiodhours): {{Integer}}
+  [ShardCount](#cfn-kinesis-stream-shardcount): {{Integer}}
+  [StreamEncryption](#cfn-kinesis-stream-streamencryption): {{
+    StreamEncryption}}
+  [StreamModeDetails](#cfn-kinesis-stream-streammodedetails): {{
+    StreamModeDetails}}
+  [Tags](#cfn-kinesis-stream-tags): {{
+    - Tag}}
+  [WarmThroughputMiBps](#cfn-kinesis-stream-warmthroughputmibps): {{Integer}}
 ```
 
 ## Properties
+<a name="aws-resource-kinesis-stream-properties"></a>
 
-`DesiredShardLevelMetrics`
-
+`DesiredShardLevelMetrics`  <a name="cfn-kinesis-stream-desiredshardlevelmetrics"></a>
 A list of shard-level metrics in properties to enable enhanced monitoring mode.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `7`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Maximum_: `7`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MaxRecordSizeInKiB`
-
+`MaxRecordSizeInKiB`  <a name="cfn-kinesis-stream-maxrecordsizeinkib"></a>
 The maximum record size of a single record in kibibyte (KiB) that you can write to, and read from a stream.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1024`
+*Maximum*: `10240`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`Name`  <a name="cfn-kinesis-stream-name"></a>
+The name of the Kinesis stream. If you don't specify a name, AWS CloudFormation generates a unique physical ID and uses that ID for the stream name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
+If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_.-]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Type_: Integer
+`RetentionPeriodHours`  <a name="cfn-kinesis-stream-retentionperiodhours"></a>
+The number of hours for the data records that are stored in shards to remain accessible. The default value is 24. For more information about the stream retention period, see [Changing the Data Retention Period](https://docs.aws.amazon.com/streams/latest/dev/kinesis-extended-retention.html) in the Amazon Kinesis Developer Guide.
+*Required*: No
+*Type*: Integer
+*Minimum*: `24`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Minimum_: `1024`
+`ShardCount`  <a name="cfn-kinesis-stream-shardcount"></a>
+The number of shards that the stream uses. For greater provisioned throughput, increase the number of shards.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Maximum_: `10240`
+`StreamEncryption`  <a name="cfn-kinesis-stream-streamencryption"></a>
+When specified, enables or updates server-side encryption using an AWS KMS key for a specified stream. Removing this property from your stack template and updating your stack disables encryption.
+*Required*: No
+*Type*: [StreamEncryption](aws-properties-kinesis-stream-streamencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`StreamModeDetails`  <a name="cfn-kinesis-stream-streammodedetails"></a>
+ Specifies the capacity mode to which you want to set your data stream. Currently, in Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
+*Required*: No
+*Type*: [StreamModeDetails](aws-properties-kinesis-stream-streammodedetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`Name`
+`Tags`  <a name="cfn-kinesis-stream-tags"></a>
+An arbitrary set of tags (key–value pairs) to associate with the Kinesis stream. For information about constraints for this property, see [Tag Restrictions](https://docs.aws.amazon.com/streams/latest/dev/tagging.html#tagging-restrictions) in the *Amazon Kinesis Developer Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-kinesis-stream-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The name of the Kinesis stream. If you don't specify a name, AWS
-CloudFormation generates a unique physical ID and uses that ID for the stream name. For
-more information, see [Name Type](../userguide/aws-properties-name.md).
-
-If you specify a name, you cannot perform updates that require replacement of this
-resource. You can perform updates that require no or some interruption. If you must
-replace the resource, specify a new name.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_.-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`RetentionPeriodHours`
-
-The number of hours for the data records that are stored in shards to remain
-accessible. The default value is 24. For more information about the stream retention
-period, see [Changing the Data Retention\
-Period](../../../streams/latest/dev/kinesis-extended-retention.md) in the Amazon Kinesis Developer Guide.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `24`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ShardCount`
-
-The number of shards that the stream uses. For greater provisioned throughput,
-increase the number of shards.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamEncryption`
-
-When specified, enables or updates server-side encryption using an AWS KMS key for a specified stream. Removing this property from your stack
-template and updating your stack disables encryption.
-
-_Required_: No
-
-_Type_: [StreamEncryption](aws-properties-kinesis-stream-streamencryption.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`StreamModeDetails`
-
-Specifies the capacity mode to which you want to set your data stream. Currently, in
-Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
-
-_Required_: No
-
-_Type_: [StreamModeDetails](aws-properties-kinesis-stream-streammodedetails.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tags`
-
-An arbitrary set of tags (key–value pairs) to associate with the Kinesis stream.
-For information about constraints for this property, see [Tag Restrictions](../../../streams/latest/dev/tagging.md#tagging-restrictions)
-in the _Amazon Kinesis Developer Guide_.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-kinesis-stream-tag.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`WarmThroughputMiBps`
-
+`WarmThroughputMiBps`  <a name="cfn-kinesis-stream-warmthroughputmibps"></a>
 The target warm throughput in MB/s that the stream should be scaled to handle. This represents the throughput capacity that will be immediately available for write operations.
-
-_Required_: No
-
-_Type_: Integer
-
-_Minimum_: `0`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Integer
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-kinesis-stream-return-values"></a>
 
 ### Ref
+<a name="aws-resource-kinesis-stream-return-values-ref"></a>
 
-When you specify an AWS::Kinesis::Stream resource as an argument to the
-`Ref` function, AWS CloudFormation returns the stream
-name (physical ID).
+ When you specify an AWS::Kinesis::Stream resource as an argument to the `Ref` function, AWS CloudFormation returns the stream name (physical ID).
 
-For more information about using the Ref function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the Ref function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-kinesis-stream-return-values-fn--getatt"></a>
 
 `Fn::GetAtt` returns a value for the `Arn` attribute.
 
-For more information about using Fn::GetAtt, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+For more information about using Fn::GetAtt, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-kinesis-stream-return-values-fn--getatt-fn--getatt"></a>
 
-The Amazon resource name (ARN) of the Kinesis stream, such as
-`arn:aws:kinesis:us-east-2:123456789012:stream/mystream`.
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon resource name (ARN) of the Kinesis stream, such as `arn:aws:kinesis:us-east-2:123456789012:stream/mystream`.
 
 ## Examples
+<a name="aws-resource-kinesis-stream--examples"></a>
 
 ### Create a Stream
+<a name="aws-resource-kinesis-stream--examples--Create_a_Stream"></a>
 
-The following example creates a `Stream` resource that uses three
-shards, sets a seven-day retention period, and specifies the KMS key for
-server-side encryption.
+The following example creates a `Stream` resource that uses three shards, sets a seven-day retention period, and specifies the KMS key for server-side encryption.
 
 #### JSON
+<a name="aws-resource-kinesis-stream--examples--Create_a_Stream--json"></a>
 
-```json
-
+```
 "MyStream": {
     "Type": "AWS::Kinesis::Stream",
     "Properties": {
@@ -235,9 +176,9 @@ server-side encryption.
 ```
 
 #### YAML
+<a name="aws-resource-kinesis-stream--examples--Create_a_Stream--yaml"></a>
 
-```yaml
-
+```
 MyStream:
     Type: AWS::Kinesis::Stream
     Properties:
@@ -252,11 +193,5 @@ MyStream:
                 Key: Environment Value:
                 Production
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::Kinesis::ResourcePolicy
-
-StreamEncryption
 
 All content copied from https://docs.aws.amazon.com/.

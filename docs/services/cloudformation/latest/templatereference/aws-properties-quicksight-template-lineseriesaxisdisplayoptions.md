@@ -2,70 +2,53 @@
 title: "AWS::QuickSight::Template LineSeriesAxisDisplayOptions"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template LineSeriesAxisDisplayOptions
+<a name="aws-properties-quicksight-template-lineseriesaxisdisplayoptions"></a>
 
 The series axis configuration of a line chart.
 
 ## Syntax
+<a name="aws-properties-quicksight-template-lineseriesaxisdisplayoptions-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-template-lineseriesaxisdisplayoptions-syntax.json"></a>
 
-```json
-
+```
 {
-  "AxisOptions" : AxisDisplayOptions,
-  "MissingDataConfigurations" : [ MissingDataConfiguration, ... ]
+  "[AxisOptions](#cfn-quicksight-template-lineseriesaxisdisplayoptions-axisoptions)" : {{AxisDisplayOptions}},
+  "[MissingDataConfigurations](#cfn-quicksight-template-lineseriesaxisdisplayoptions-missingdataconfigurations)" : {{[ MissingDataConfiguration, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-template-lineseriesaxisdisplayoptions-syntax.yaml"></a>
 
-```yaml
-
-  AxisOptions:
-    AxisDisplayOptions
-  MissingDataConfigurations:
-    - MissingDataConfiguration
-
+```
+  [AxisOptions](#cfn-quicksight-template-lineseriesaxisdisplayoptions-axisoptions): {{
+    AxisDisplayOptions}}
+  [MissingDataConfigurations](#cfn-quicksight-template-lineseriesaxisdisplayoptions-missingdataconfigurations): {{
+    - MissingDataConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-template-lineseriesaxisdisplayoptions-properties"></a>
 
-`AxisOptions`
-
+`AxisOptions`  <a name="cfn-quicksight-template-lineseriesaxisdisplayoptions-axisoptions"></a>
 The options that determine the presentation of the line series axis.
+*Required*: No
+*Type*: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [AxisDisplayOptions](aws-properties-quicksight-template-axisdisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MissingDataConfigurations`
-
+`MissingDataConfigurations`  <a name="cfn-quicksight-template-lineseriesaxisdisplayoptions-missingdataconfigurations"></a>
 The configuration options that determine how missing data is treated during the rendering of a line chart.
-
-_Required_: No
-
-_Type_: Array of [MissingDataConfiguration](aws-properties-quicksight-template-missingdataconfiguration.md)
-
-_Minimum_: `0`
-
-_Maximum_: `100`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LineChartVisual
-
-ListControlDisplayOptions
+*Required*: No
+*Type*: Array of [MissingDataConfiguration](aws-properties-quicksight-template-missingdataconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

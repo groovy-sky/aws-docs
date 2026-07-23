@@ -2,98 +2,81 @@
 title: "AWS::QuickSight::RefreshSchedule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::RefreshSchedule
+<a name="aws-resource-quicksight-refreshschedule"></a>
 
 Creates a refresh schedule for a dataset in Quick.
 
 ## Syntax
+<a name="aws-resource-quicksight-refreshschedule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-quicksight-refreshschedule-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::QuickSight::RefreshSchedule",
   "Properties" : {
-      "AwsAccountId" : String,
-      "DataSetId" : String,
-      "Schedule" : RefreshScheduleMap
+      "[AwsAccountId](#cfn-quicksight-refreshschedule-awsaccountid)" : {{String}},
+      "[DataSetId](#cfn-quicksight-refreshschedule-datasetid)" : {{String}},
+      "[Schedule](#cfn-quicksight-refreshschedule-schedule)" : {{RefreshScheduleMap}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-quicksight-refreshschedule-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::QuickSight::RefreshSchedule
 Properties:
-  AwsAccountId: String
-  DataSetId: String
-  Schedule:
-    RefreshScheduleMap
-
+  [AwsAccountId](#cfn-quicksight-refreshschedule-awsaccountid): {{String}}
+  [DataSetId](#cfn-quicksight-refreshschedule-datasetid): {{String}}
+  [Schedule](#cfn-quicksight-refreshschedule-schedule): {{
+    RefreshScheduleMap}}
 ```
 
 ## Properties
+<a name="aws-resource-quicksight-refreshschedule-properties"></a>
 
-`AwsAccountId`
-
+`AwsAccountId`  <a name="cfn-quicksight-refreshschedule-awsaccountid"></a>
 The AWS account ID of the account that you are creating a schedule in.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]{12}$`
+*Minimum*: `12`
+*Maximum*: `12`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[0-9]{12}$`
-
-_Minimum_: `12`
-
-_Maximum_: `12`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DataSetId`
-
+`DataSetId`  <a name="cfn-quicksight-refreshschedule-datasetid"></a>
 The ID of the dataset that you are creating a refresh schedule for.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Schedule`
-
+`Schedule`  <a name="cfn-quicksight-refreshschedule-schedule"></a>
 The refresh schedule of a dataset.
-
-_Required_: No
-
-_Type_: [RefreshScheduleMap](aws-properties-quicksight-refreshschedule-refreshschedulemap.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: [RefreshScheduleMap](aws-properties-quicksight-refreshschedule-refreshschedulemap.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-quicksight-refreshschedule-return-values"></a>
 
 ### Ref
+<a name="aws-resource-quicksight-refreshschedule-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-quicksight-refreshschedule-return-values-fn--getatt"></a>
 
-`Arn`
+####
+<a name="aws-resource-quicksight-refreshschedule-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) for the refresh schedule.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-RefreshOnDay
 
 All content copied from https://docs.aws.amazon.com/.

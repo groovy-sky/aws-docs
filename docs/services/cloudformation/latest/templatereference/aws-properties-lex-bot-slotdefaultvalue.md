@@ -2,58 +2,43 @@
 title: "AWS::Lex::Bot SlotDefaultValue"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotDefaultValue
+<a name="aws-properties-lex-bot-slotdefaultvalue"></a>
 
-Specifies the default value to use when a user doesn't provide a
-value for a slot.
+Specifies the default value to use when a user doesn't provide a value for a slot.
 
 ## Syntax
+<a name="aws-properties-lex-bot-slotdefaultvalue-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-lex-bot-slotdefaultvalue-syntax.json"></a>
 
-```json
-
+```
 {
-  "DefaultValue" : String
+  "[DefaultValue](#cfn-lex-bot-slotdefaultvalue-defaultvalue)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-lex-bot-slotdefaultvalue-syntax.yaml"></a>
 
-```yaml
-
-  DefaultValue: String
-
+```
+  [DefaultValue](#cfn-lex-bot-slotdefaultvalue-defaultvalue): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-lex-bot-slotdefaultvalue-properties"></a>
 
-`DefaultValue`
-
-The default value to use when a user doesn't provide a value for a
-slot.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `202`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SlotCaptureSetting
-
-SlotDefaultValueSpecification
+`DefaultValue`  <a name="cfn-lex-bot-slotdefaultvalue-defaultvalue"></a>
+The default value to use when a user doesn't provide a value for a slot.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `202`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

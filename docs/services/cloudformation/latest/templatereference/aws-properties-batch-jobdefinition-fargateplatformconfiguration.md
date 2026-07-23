@@ -2,57 +2,41 @@
 title: "AWS::Batch::JobDefinition FargatePlatformConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::JobDefinition FargatePlatformConfiguration
+<a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration"></a>
 
-The platform configuration for jobs that are running on Fargate resources. Jobs that run
-on Amazon EC2 resources must not specify this parameter.
+The platform configuration for jobs that are running on Fargate resources. Jobs that run on Amazon EC2 resources must not specify this parameter.
 
 ## Syntax
+<a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "PlatformVersion" : String
+  "[PlatformVersion](#cfn-batch-jobdefinition-fargateplatformconfiguration-platformversion)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  PlatformVersion: String
-
+```
+  [PlatformVersion](#cfn-batch-jobdefinition-fargateplatformconfiguration-platformversion): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration-properties"></a>
 
-`PlatformVersion`
-
-The AWS Fargate platform version where the jobs are running. A platform version is
-specified only for jobs that are running on Fargate resources. If one isn't specified, the
-`LATEST` platform version is used by default. This uses a recent, approved version of
-the AWS Fargate platform for compute resources. For more information, see [AWS Fargate\
-platform versions](../../../amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic Container Service Developer Guide_.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EvaluateOnExit
-
-FirelensConfiguration
+`PlatformVersion`  <a name="cfn-batch-jobdefinition-fargateplatformconfiguration-platformversion"></a>
+The AWS Fargate platform version where the jobs are running. A platform version is specified only for jobs that are running on Fargate resources. If one isn't specified, the `LATEST` platform version is used by default. This uses a recent, approved version of the AWS Fargate platform for compute resources. For more information, see [AWS Fargate platform versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the *Amazon Elastic Container Service Developer Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,72 +2,53 @@
 title: "AWS::WorkSpacesWeb::IpAccessSettings IpRule"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::IpAccessSettings IpRule
+<a name="aws-properties-workspacesweb-ipaccesssettings-iprule"></a>
 
 The IP rules of the IP access settings.
 
 ## Syntax
+<a name="aws-properties-workspacesweb-ipaccesssettings-iprule-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-workspacesweb-ipaccesssettings-iprule-syntax.json"></a>
 
-```json
-
+```
 {
-  "Description" : String,
-  "IpRange" : String
+  "[Description](#cfn-workspacesweb-ipaccesssettings-iprule-description)" : {{String}},
+  "[IpRange](#cfn-workspacesweb-ipaccesssettings-iprule-iprange)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-workspacesweb-ipaccesssettings-iprule-syntax.yaml"></a>
 
-```yaml
-
-  Description: String
-  IpRange: String
-
+```
+  [Description](#cfn-workspacesweb-ipaccesssettings-iprule-description): {{String}}
+  [IpRange](#cfn-workspacesweb-ipaccesssettings-iprule-iprange): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-workspacesweb-ipaccesssettings-iprule-properties"></a>
 
-`Description`
-
+`Description`  <a name="cfn-workspacesweb-ipaccesssettings-iprule-description"></a>
 The description of the IP rule.
+*Required*: No
+*Type*: String
+*Pattern*: `^.+$`
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^.+$`
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`IpRange`
-
+`IpRange`  <a name="cfn-workspacesweb-ipaccesssettings-iprule-iprange"></a>
 The IP range of the IP rule. This can either be a single IP address or a range using CIDR notation.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?:/([0-9]|[12][0-9]|3[0-2])|)$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::WorkSpacesWeb::IpAccessSettings
-
-Tag
+*Required*: Yes
+*Type*: String
+*Pattern*: `\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?:/([0-9]|[12][0-9]|3[0-2])|)`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

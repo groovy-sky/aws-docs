@@ -2,131 +2,103 @@
 title: "AWS::Bedrock::DataAutomationLibrary"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataAutomationLibrary
+<a name="aws-resource-bedrock-dataautomationlibrary"></a>
 
 A data automation library.
 
 ## Syntax
+<a name="aws-resource-bedrock-dataautomationlibrary-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-bedrock-dataautomationlibrary-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Bedrock::DataAutomationLibrary",
   "Properties" : {
-      "EncryptionConfiguration" : EncryptionConfiguration,
-      "LibraryDescription" : String,
-      "LibraryName" : String,
-      "Tags" : [ Tag, ... ]
+      "[EncryptionConfiguration](#cfn-bedrock-dataautomationlibrary-encryptionconfiguration)" : {{EncryptionConfiguration}},
+      "[LibraryDescription](#cfn-bedrock-dataautomationlibrary-librarydescription)" : {{String}},
+      "[LibraryName](#cfn-bedrock-dataautomationlibrary-libraryname)" : {{String}},
+      "[Tags](#cfn-bedrock-dataautomationlibrary-tags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-bedrock-dataautomationlibrary-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Bedrock::DataAutomationLibrary
 Properties:
-  EncryptionConfiguration:
-    EncryptionConfiguration
-  LibraryDescription: String
-  LibraryName: String
-  Tags:
-    - Tag
-
+  [EncryptionConfiguration](#cfn-bedrock-dataautomationlibrary-encryptionconfiguration): {{
+    EncryptionConfiguration}}
+  [LibraryDescription](#cfn-bedrock-dataautomationlibrary-librarydescription): {{String}}
+  [LibraryName](#cfn-bedrock-dataautomationlibrary-libraryname): {{String}}
+  [Tags](#cfn-bedrock-dataautomationlibrary-tags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-bedrock-dataautomationlibrary-properties"></a>
 
-`EncryptionConfiguration`
-
+`EncryptionConfiguration`  <a name="cfn-bedrock-dataautomationlibrary-encryptionconfiguration"></a>
 Encryption settings for an invocation.
+*Required*: No
+*Type*: [EncryptionConfiguration](aws-properties-bedrock-dataautomationlibrary-encryptionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: [EncryptionConfiguration](aws-properties-bedrock-dataautomationlibrary-encryptionconfiguration.md)
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`LibraryDescription`
-
+`LibraryDescription`  <a name="cfn-bedrock-dataautomationlibrary-librarydescription"></a>
 The library's description.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `300`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `300`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LibraryName`
-
+`LibraryName`  <a name="cfn-bedrock-dataautomationlibrary-libraryname"></a>
 The library's name.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9-_]+$`
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9-_]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `128`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`Tags`
-
+`Tags`  <a name="cfn-bedrock-dataautomationlibrary-tags"></a>
 Property description not available.
-
-_Required_: No
-
-_Type_: Array of [Tag](aws-properties-bedrock-dataautomationlibrary-tag.md)
-
-_Minimum_: `0`
-
-_Maximum_: `200`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: No
+*Type*: Array of [Tag](aws-properties-bedrock-dataautomationlibrary-tag.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
+<a name="aws-resource-bedrock-dataautomationlibrary-return-values"></a>
 
 ### Ref
+<a name="aws-resource-bedrock-dataautomationlibrary-return-values-ref"></a>
 
 ### Fn::GetAtt
+<a name="aws-resource-bedrock-dataautomationlibrary-return-values-fn--getatt"></a>
 
-`CreationTime`
+####
+<a name="aws-resource-bedrock-dataautomationlibrary-return-values-fn--getatt-fn--getatt"></a>
 
+`CreationTime`  <a name="CreationTime-fn::getatt"></a>
 When the library was created.
 
-`EntityTypes`
-
+`EntityTypes`  <a name="EntityTypes-fn::getatt"></a>
 The entity types supported by the library.
 
-`LibraryArn`
-
+`LibraryArn`  <a name="LibraryArn-fn::getatt"></a>
 The library's ARN.
 
-`Status`
-
+`Status`  <a name="Status-fn::getatt"></a>
 The library's status.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-EncryptionConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

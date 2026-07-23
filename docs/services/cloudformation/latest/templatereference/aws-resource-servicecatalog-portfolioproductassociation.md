@@ -2,132 +2,98 @@
 title: "AWS::ServiceCatalog::PortfolioProductAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::PortfolioProductAssociation
+<a name="aws-resource-servicecatalog-portfolioproductassociation"></a>
 
 Associates the specified product with the specified portfolio.
 
 A delegated admin is authorized to invoke this command.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-portfolioproductassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-portfolioproductassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::PortfolioProductAssociation",
   "Properties" : {
-      "AcceptLanguage" : String,
-      "PortfolioId" : String,
-      "ProductId" : String,
-      "SourcePortfolioId" : String
+      "[AcceptLanguage](#cfn-servicecatalog-portfolioproductassociation-acceptlanguage)" : {{String}},
+      "[PortfolioId](#cfn-servicecatalog-portfolioproductassociation-portfolioid)" : {{String}},
+      "[ProductId](#cfn-servicecatalog-portfolioproductassociation-productid)" : {{String}},
+      "[SourcePortfolioId](#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-portfolioproductassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::PortfolioProductAssociation
 Properties:
-  AcceptLanguage: String
-  PortfolioId: String
-  ProductId: String
-  SourcePortfolioId: String
-
+  [AcceptLanguage](#cfn-servicecatalog-portfolioproductassociation-acceptlanguage): {{String}}
+  [PortfolioId](#cfn-servicecatalog-portfolioproductassociation-portfolioid): {{String}}
+  [ProductId](#cfn-servicecatalog-portfolioproductassociation-productid): {{String}}
+  [SourcePortfolioId](#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-portfolioproductassociation-properties"></a>
 
-`AcceptLanguage`
-
+`AcceptLanguage`  <a name="cfn-servicecatalog-portfolioproductassociation-acceptlanguage"></a>
 The language code.
++ `jp` - Japanese
++ `zh` - Chinese
+*Required*: No
+*Type*: String
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-- `jp` \- Japanese
-
-- `zh` \- Chinese
-
-_Required_: No
-
-_Type_: String
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`PortfolioId`
-
+`PortfolioId`  <a name="cfn-servicecatalog-portfolioproductassociation-portfolioid"></a>
 The portfolio identifier.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`ProductId`
-
+`ProductId`  <a name="cfn-servicecatalog-portfolioproductassociation-productid"></a>
 The product identifier.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`SourcePortfolioId`
-
+`SourcePortfolioId`  <a name="cfn-servicecatalog-portfolioproductassociation-sourceportfolioid"></a>
 The identifier of the source portfolio.
-
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9_\-]*`
-
-_Minimum_: `1`
-
-_Maximum_: `100`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_\-]*`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-servicecatalog-portfolioproductassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-portfolioproductassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a unique identifier for the association.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## See also
-
-- [AssociateProductWithPortfolio](../../../servicecatalog/latest/dg/api-associateproductwithportfolio.md) in the _AWS Service Catalog API_
-_Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::PortfolioPrincipalAssociation
-
-AWS::ServiceCatalog::PortfolioShare
+<a name="aws-resource-servicecatalog-portfolioproductassociation--seealso"></a>
++ [AssociateProductWithPortfolio](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_AssociateProductWithPortfolio.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

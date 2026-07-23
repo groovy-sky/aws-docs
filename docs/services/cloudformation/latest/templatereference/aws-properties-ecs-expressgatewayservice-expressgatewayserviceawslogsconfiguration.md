@@ -2,65 +2,49 @@
 title: "AWS::ECS::ExpressGatewayService ExpressGatewayServiceAwsLogsConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::ExpressGatewayService ExpressGatewayServiceAwsLogsConfiguration
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration"></a>
 
-Specifies the Amazon CloudWatch Logs configuration for the Express service
-container.
+Specifies the Amazon CloudWatch Logs configuration for the Express service container.
 
 ## Syntax
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "LogGroup" : String,
-  "LogStreamPrefix" : String
+  "[LogGroup](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-loggroup)" : {{String}},
+  "[LogStreamPrefix](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-logstreamprefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  LogGroup: String
-  LogStreamPrefix: String
-
+```
+  [LogGroup](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-loggroup): {{String}}
+  [LogStreamPrefix](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-logstreamprefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-properties"></a>
 
-`LogGroup`
-
+`LogGroup`  <a name="cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-loggroup"></a>
 The name of the CloudWatch Logs log group to send container logs to.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`LogStreamPrefix`
-
+`LogStreamPrefix`  <a name="cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-logstreamprefix"></a>
 The prefix for the CloudWatch Logs log stream names. The default for an Express service is `ecs`.
-
-_Required_: Yes
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExpressGatewayScalingTarget
-
-ExpressGatewayServiceConfiguration
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

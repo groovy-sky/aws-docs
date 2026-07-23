@@ -2,60 +2,43 @@
 title: "AWS::Kendra::DataSource DocumentsMetadataConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource DocumentsMetadataConfiguration
+<a name="aws-properties-kendra-datasource-documentsmetadataconfiguration"></a>
 
-Document metadata files that contain information such as the document access control
-information, source URI, document author, and custom attributes. Each metadata file
-contains metadata about a single document.
+Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document.
 
 ## Syntax
+<a name="aws-properties-kendra-datasource-documentsmetadataconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kendra-datasource-documentsmetadataconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "S3Prefix" : String
+  "[S3Prefix](#cfn-kendra-datasource-documentsmetadataconfiguration-s3prefix)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kendra-datasource-documentsmetadataconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  S3Prefix: String
-
+```
+  [S3Prefix](#cfn-kendra-datasource-documentsmetadataconfiguration-s3prefix): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kendra-datasource-documentsmetadataconfiguration-properties"></a>
 
-`S3Prefix`
-
-A prefix used to filter metadata configuration files in the AWS S3
-bucket. The S3 bucket might contain multiple metadata files. Use `S3Prefix`
-to include only the desired metadata files.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1024`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DocumentAttributeValue
-
-GoogleDriveConfiguration
+`S3Prefix`  <a name="cfn-kendra-datasource-documentsmetadataconfiguration-s3prefix"></a>
+A prefix used to filter metadata configuration files in the AWS S3 bucket. The S3 bucket might contain multiple metadata files. Use `S3Prefix` to include only the desired metadata files.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

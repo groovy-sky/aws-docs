@@ -2,66 +2,50 @@
 title: "AWS::QuickSight::Analysis ArcConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ArcConfiguration
+<a name="aws-properties-quicksight-analysis-arcconfiguration"></a>
 
 The arc configuration of a `GaugeChartVisual`.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-arcconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-arcconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ArcAngle" : Number,
-  "ArcThickness" : String
+  "[ArcAngle](#cfn-quicksight-analysis-arcconfiguration-arcangle)" : {{Number}},
+  "[ArcThickness](#cfn-quicksight-analysis-arcconfiguration-arcthickness)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-arcconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ArcAngle: Number
-  ArcThickness: String
-
+```
+  [ArcAngle](#cfn-quicksight-analysis-arcconfiguration-arcangle): {{Number}}
+  [ArcThickness](#cfn-quicksight-analysis-arcconfiguration-arcthickness): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-arcconfiguration-properties"></a>
 
-`ArcAngle`
-
+`ArcAngle`  <a name="cfn-quicksight-analysis-arcconfiguration-arcangle"></a>
 The option that determines the arc angle of a `GaugeChartVisual`.
+*Required*: No
+*Type*: Number
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Number
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ArcThickness`
-
+`ArcThickness`  <a name="cfn-quicksight-analysis-arcconfiguration-arcthickness"></a>
 The options that determine the arc thickness of a `GaugeChartVisual`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `SMALL | MEDIUM | LARGE`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ArcAxisDisplayRange
-
-ArcOptions
+*Required*: No
+*Type*: String
+*Allowed values*: `SMALL | MEDIUM | LARGE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

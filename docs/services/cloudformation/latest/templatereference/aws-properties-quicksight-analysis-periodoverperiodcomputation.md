@@ -2,96 +2,70 @@
 title: "AWS::QuickSight::Analysis PeriodOverPeriodComputation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis PeriodOverPeriodComputation
+<a name="aws-properties-quicksight-analysis-periodoverperiodcomputation"></a>
 
 The period over period computation configuration.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-periodoverperiodcomputation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-periodoverperiodcomputation-syntax.json"></a>
 
-```json
-
+```
 {
-  "ComputationId" : String,
-  "Name" : String,
-  "Time" : DimensionField,
-  "Value" : MeasureField
+  "[ComputationId](#cfn-quicksight-analysis-periodoverperiodcomputation-computationid)" : {{String}},
+  "[Name](#cfn-quicksight-analysis-periodoverperiodcomputation-name)" : {{String}},
+  "[Time](#cfn-quicksight-analysis-periodoverperiodcomputation-time)" : {{DimensionField}},
+  "[Value](#cfn-quicksight-analysis-periodoverperiodcomputation-value)" : {{MeasureField}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-periodoverperiodcomputation-syntax.yaml"></a>
 
-```yaml
-
-  ComputationId: String
-  Name: String
-  Time:
-    DimensionField
-  Value:
-    MeasureField
-
+```
+  [ComputationId](#cfn-quicksight-analysis-periodoverperiodcomputation-computationid): {{String}}
+  [Name](#cfn-quicksight-analysis-periodoverperiodcomputation-name): {{String}}
+  [Time](#cfn-quicksight-analysis-periodoverperiodcomputation-time): {{
+    DimensionField}}
+  [Value](#cfn-quicksight-analysis-periodoverperiodcomputation-value): {{
+    MeasureField}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-periodoverperiodcomputation-properties"></a>
 
-`ComputationId`
-
+`ComputationId`  <a name="cfn-quicksight-analysis-periodoverperiodcomputation-computationid"></a>
 The ID for a computation.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-quicksight-analysis-periodoverperiodcomputation-name"></a>
 The name of a computation.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Time`
-
+`Time`  <a name="cfn-quicksight-analysis-periodoverperiodcomputation-time"></a>
 The time field that is used in a computation.
+*Required*: No
+*Type*: [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [DimensionField](aws-properties-quicksight-analysis-dimensionfield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Value`
-
+`Value`  <a name="cfn-quicksight-analysis-periodoverperiodcomputation-value"></a>
 The value field that is used in a computation.
-
-_Required_: No
-
-_Type_: [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PercentVisibleRange
-
-PeriodToDateComputation
+*Required*: No
+*Type*: [MeasureField](aws-properties-quicksight-analysis-measurefield.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,91 +2,66 @@
 title: "AWS::AppFlow::Flow S3SourceProperties"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow S3SourceProperties
+<a name="aws-properties-appflow-flow-s3sourceproperties"></a>
 
-The properties that are applied when Amazon S3 is being used as the flow source.
+ The properties that are applied when Amazon S3 is being used as the flow source.
 
 ## Syntax
+<a name="aws-properties-appflow-flow-s3sourceproperties-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-flow-s3sourceproperties-syntax.json"></a>
 
-```json
-
+```
 {
-  "BucketName" : String,
-  "BucketPrefix" : String,
-  "S3InputFormatConfig" : S3InputFormatConfig
+  "[BucketName](#cfn-appflow-flow-s3sourceproperties-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-appflow-flow-s3sourceproperties-bucketprefix)" : {{String}},
+  "[S3InputFormatConfig](#cfn-appflow-flow-s3sourceproperties-s3inputformatconfig)" : {{S3InputFormatConfig}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-flow-s3sourceproperties-syntax.yaml"></a>
 
-```yaml
-
-  BucketName: String
-  BucketPrefix: String
-  S3InputFormatConfig:
-    S3InputFormatConfig
-
+```
+  [BucketName](#cfn-appflow-flow-s3sourceproperties-bucketname): {{String}}
+  [BucketPrefix](#cfn-appflow-flow-s3sourceproperties-bucketprefix): {{String}}
+  [S3InputFormatConfig](#cfn-appflow-flow-s3sourceproperties-s3inputformatconfig): {{
+    S3InputFormatConfig}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-flow-s3sourceproperties-properties"></a>
 
-`BucketName`
+`BucketName`  <a name="cfn-appflow-flow-s3sourceproperties-bucketname"></a>
+ The Amazon S3 bucket name where the source files are stored.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon S3 bucket name where the source files are stored.
+`BucketPrefix`  <a name="cfn-appflow-flow-s3sourceproperties-bucketprefix"></a>
+ The object key for the Amazon S3 bucket in which the source files are stored.
+*Required*: Yes
+*Type*: String
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `\S+`
-
-_Minimum_: `3`
-
-_Maximum_: `63`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`BucketPrefix`
-
-The object key for the Amazon S3 bucket in which the source files are stored.
-
-_Required_: Yes
-
-_Type_: String
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`S3InputFormatConfig`
-
-When you use Amazon S3 as the source, the configuration format that you provide
-the flow input data.
-
-_Required_: No
-
-_Type_: [S3InputFormatConfig](aws-properties-appflow-flow-s3inputformatconfig.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`S3InputFormatConfig`  <a name="cfn-appflow-flow-s3sourceproperties-s3inputformatconfig"></a>
+ When you use Amazon S3 as the source, the configuration format that you provide the flow input data.
+*Required*: No
+*Type*: [S3InputFormatConfig](aws-properties-appflow-flow-s3inputformatconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [S3SourceProperties](../../../../reference/appflow/1-0/apireference/api-s3sourceproperties.md)
-in the _Amazon AppFlow API Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3OutputFormatConfig
-
-SalesforceDestinationProperties
+<a name="aws-properties-appflow-flow-s3sourceproperties--seealso"></a>
++ [S3SourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3SourceProperties.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

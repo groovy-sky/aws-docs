@@ -2,82 +2,68 @@
 title: "AWS::ServiceCatalog::TagOptionAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::TagOptionAssociation
+<a name="aws-resource-servicecatalog-tagoptionassociation"></a>
 
 Associate the specified TagOption with the specified portfolio or product.
 
 ## Syntax
+<a name="aws-resource-servicecatalog-tagoptionassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-servicecatalog-tagoptionassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::ServiceCatalog::TagOptionAssociation",
   "Properties" : {
-      "ResourceId" : String,
-      "TagOptionId" : String
+      "[ResourceId](#cfn-servicecatalog-tagoptionassociation-resourceid)" : {{String}},
+      "[TagOptionId](#cfn-servicecatalog-tagoptionassociation-tagoptionid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-servicecatalog-tagoptionassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::ServiceCatalog::TagOptionAssociation
 Properties:
-  ResourceId: String
-  TagOptionId: String
-
+  [ResourceId](#cfn-servicecatalog-tagoptionassociation-resourceid): {{String}}
+  [TagOptionId](#cfn-servicecatalog-tagoptionassociation-tagoptionid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-servicecatalog-tagoptionassociation-properties"></a>
 
-`ResourceId`
-
+`ResourceId`  <a name="cfn-servicecatalog-tagoptionassociation-resourceid"></a>
 The resource identifier.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`TagOptionId`
-
+`TagOptionId`  <a name="cfn-servicecatalog-tagoptionassociation-tagoptionid"></a>
 The TagOption identifier.
-
-_Required_: No
-
-_Type_: String
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-servicecatalog-tagoptionassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-servicecatalog-tagoptionassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns an identifier for the association.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ## See also
-
-- [AssociateTagOptionWithResource](../../../servicecatalog/latest/dg/api-associatetagoptionwithresource.md) in the _AWS Service Catalog_
-_API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ServiceCatalog::TagOption
-
-Next
+<a name="aws-resource-servicecatalog-tagoptionassociation--seealso"></a>
++ [AssociateTagOptionWithResource](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_AssociateTagOptionWithResource.html) in the *AWS Service Catalog API Reference*
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,95 +2,65 @@
 title: "AWS::VerifiedPermissions::IdentitySource CognitoUserPoolConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VerifiedPermissions::IdentitySource CognitoUserPoolConfiguration
+<a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration"></a>
 
-A structure that contains configuration information used when creating or updating an
-identity source that represents a connection to an Amazon Cognito user pool used as
-an identity provider for Verified Permissions.
+A structure that contains configuration information used when creating or updating an identity source that represents a connection to an Amazon Cognito user pool used as an identity provider for Verified Permissions.
 
 ## Syntax
+<a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "ClientIds" : [ String, ... ],
-  "GroupConfiguration" : CognitoGroupConfiguration,
-  "UserPoolArn" : String
+  "[ClientIds](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-clientids)" : {{[ String, ... ]}},
+  "[GroupConfiguration](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-groupconfiguration)" : {{CognitoGroupConfiguration}},
+  "[UserPoolArn](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-userpoolarn)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  ClientIds:
-    - String
-  GroupConfiguration:
-    CognitoGroupConfiguration
-  UserPoolArn: String
-
+```
+  [ClientIds](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-clientids): {{
+    - String}}
+  [GroupConfiguration](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-groupconfiguration): {{
+    CognitoGroupConfiguration}}
+  [UserPoolArn](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-userpoolarn): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration-properties"></a>
 
-`ClientIds`
-
-The unique application client IDs that are associated with the specified Amazon Cognito user
-pool.
-
+`ClientIds`  <a name="cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-clientids"></a>
+The unique application client IDs that are associated with the specified Amazon Cognito user pool.
 Example: `"ClientIds": ["&ExampleCogClientId;"]`
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 0`
+*Maximum*: `255 | 1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`GroupConfiguration`  <a name="cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-groupconfiguration"></a>
+The type of entity that a policy store maps to groups from an Amazon Cognito user pool identity source.
+*Required*: No
+*Type*: [CognitoGroupConfiguration](aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of String
-
-_Minimum_: `1 | 0`
-
-_Maximum_: `255 | 1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`GroupConfiguration`
-
-The type of entity that a policy store maps to groups from an Amazon Cognito user
-pool identity source.
-
-_Required_: No
-
-_Type_: [CognitoGroupConfiguration](aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserPoolArn`
-
-The [Amazon Resource Name (ARN)](../../../../general/latest/gr/aws-arns-and-namespaces.md) of the Amazon Cognito user pool that
-contains the identities to be authorized.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^arn:[a-zA-Z0-9-]+:cognito-idp:(([a-zA-Z0-9-]+:\d{12}:userpool/[\w-]+_[0-9a-zA-Z]+))$`
-
-_Minimum_: `1`
-
-_Maximum_: `255`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CognitoGroupConfiguration
-
-IdentitySourceConfiguration
+`UserPoolArn`  <a name="cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-userpoolarn"></a>
+The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) of the Amazon Cognito user pool that contains the identities to be authorized.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^arn:[a-zA-Z0-9-]+:cognito-idp:(([a-zA-Z0-9-]+:\d{12}:userpool/[\w-]+_[0-9a-zA-Z]+))$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

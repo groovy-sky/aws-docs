@@ -2,93 +2,87 @@
 title: "AWS::Inspector::ResourceGroup"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Inspector::ResourceGroup
+<a name="aws-resource-inspector-resourcegroup"></a>
 
-The `AWS::Inspector::ResourceGroup` resource is used to create Amazon
-Inspector resource groups. A resource group defines a set of tags that, when queried,
-identify the AWS resources that make up the assessment target.
+The `AWS::Inspector::ResourceGroup` resource is used to create Amazon Inspector resource groups. A resource group defines a set of tags that, when queried, identify the AWS resources that make up the assessment target.
 
 ## Syntax
+<a name="aws-resource-inspector-resourcegroup-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-inspector-resourcegroup-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::Inspector::ResourceGroup",
   "Properties" : {
-      "ResourceGroupTags" : [ Tag, ... ]
+      "[ResourceGroupTags](#cfn-inspector-resourcegroup-resourcegrouptags)" : {{[ Tag, ... ]}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-inspector-resourcegroup-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Inspector::ResourceGroup
 Properties:
-  ResourceGroupTags:
-    - Tag
-
+  [ResourceGroupTags](#cfn-inspector-resourcegroup-resourcegrouptags): {{
+    - Tag}}
 ```
 
 ## Properties
+<a name="aws-resource-inspector-resourcegroup-properties"></a>
 
-`ResourceGroupTags`
-
-The tags (key and value pairs) that will be associated with the resource
-group.
-
-For more information, see [Tag](../userguide/aws-properties-resource-tags.md).
-
-_Required_: Yes
-
-_Type_: Array of [Tag](aws-properties-inspector-resourcegroup-tag.md)
-
-_Minimum_: `1`
-
-_Maximum_: `10`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+`ResourceGroupTags`  <a name="cfn-inspector-resourcegroup-resourcegrouptags"></a>
+The tags (key and value pairs) that will be associated with the resource group.
+For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+*Required*: Yes
+*Type*: Array of [Tag](aws-properties-inspector-resourcegroup-tag.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-inspector-resourcegroup-return-values"></a>
 
 ### Ref
+<a name="aws-resource-inspector-resourcegroup-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the new resource group.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-inspector-resourcegroup-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`Arn`
+####
+<a name="aws-resource-inspector-resourcegroup-return-values-fn--getatt-fn--getatt"></a>
 
+`Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) that specifies the resource group that is created.
 
 ## Examples
+<a name="aws-resource-inspector-resourcegroup--examples"></a>
 
 ### Declaring an Amazon Inspector Resource Group Resource
+<a name="aws-resource-inspector-resourcegroup--examples--Declaring_an_Amazon_Inspector_Resource_Group_Resource"></a>
 
-The following example shows how to declare an
-`AWS::Inspector::ResourceGroup` resource to create an Amazon Inspector
-resource group.
+The following example shows how to declare an `AWS::Inspector::ResourceGroup` resource to create an Amazon Inspector resource group.
 
 #### JSON
+<a name="aws-resource-inspector-resourcegroup--examples--Declaring_an_Amazon_Inspector_Resource_Group_Resource--json"></a>
 
-```json
-
+```
 {
     "Type": "AWS::Inspector::ResourceGroup",
     "Properties": {
@@ -101,20 +95,14 @@ resource group.
 ```
 
 #### YAML
+<a name="aws-resource-inspector-resourcegroup--examples--Declaring_an_Amazon_Inspector_Resource_Group_Resource--yaml"></a>
 
-```yaml
-
+```
 Type: AWS::Inspector::ResourceGroup
 Properties:
   ResourceGroupTags:
     - Key: Name
       Value: example
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-Tag
 
 All content copied from https://docs.aws.amazon.com/.

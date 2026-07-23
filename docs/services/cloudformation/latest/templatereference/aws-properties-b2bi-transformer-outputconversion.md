@@ -2,83 +2,60 @@
 title: "AWS::B2BI::Transformer OutputConversion"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer OutputConversion
+<a name="aws-properties-b2bi-transformer-outputconversion"></a>
 
-Contains the formatting options for an outbound transformer (takes JSON or XML as input
-and converts it to an EDI document (currently only X12 format is supported).
+Contains the formatting options for an outbound transformer (takes JSON or XML as input and converts it to an EDI document (currently only X12 format is supported).
 
 ## Syntax
+<a name="aws-properties-b2bi-transformer-outputconversion-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-b2bi-transformer-outputconversion-syntax.json"></a>
 
-```json
-
+```
 {
-  "AdvancedOptions" : AdvancedOptions,
-  "FormatOptions" : FormatOptions,
-  "ToFormat" : String
+  "[AdvancedOptions](#cfn-b2bi-transformer-outputconversion-advancedoptions)" : {{AdvancedOptions}},
+  "[FormatOptions](#cfn-b2bi-transformer-outputconversion-formatoptions)" : {{FormatOptions}},
+  "[ToFormat](#cfn-b2bi-transformer-outputconversion-toformat)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-b2bi-transformer-outputconversion-syntax.yaml"></a>
 
-```yaml
-
-  AdvancedOptions:
-    AdvancedOptions
-  FormatOptions:
-    FormatOptions
-  ToFormat: String
-
+```
+  [AdvancedOptions](#cfn-b2bi-transformer-outputconversion-advancedoptions): {{
+    AdvancedOptions}}
+  [FormatOptions](#cfn-b2bi-transformer-outputconversion-formatoptions): {{
+    FormatOptions}}
+  [ToFormat](#cfn-b2bi-transformer-outputconversion-toformat): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-b2bi-transformer-outputconversion-properties"></a>
 
-`AdvancedOptions`
-
+`AdvancedOptions`  <a name="cfn-b2bi-transformer-outputconversion-advancedoptions"></a>
 Property description not available.
+*Required*: No
+*Type*: [AdvancedOptions](aws-properties-b2bi-transformer-advancedoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`FormatOptions`  <a name="cfn-b2bi-transformer-outputconversion-formatoptions"></a>
+A structure that contains the X12 transaction set and version for the transformer output.
+*Required*: No
+*Type*: [FormatOptions](aws-properties-b2bi-transformer-formatoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: [AdvancedOptions](aws-properties-b2bi-transformer-advancedoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`FormatOptions`
-
-A structure that contains the X12 transaction set and version for the transformer
-output.
-
-_Required_: No
-
-_Type_: [FormatOptions](aws-properties-b2bi-transformer-formatoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ToFormat`
-
-The format for the output from an outbound transformer: only X12 is currently
-supported.
-
-_Required_: Yes
-
-_Type_: String
-
-_Allowed values_: `X12`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Mapping
-
-SampleDocumentKeys
+`ToFormat`  <a name="cfn-b2bi-transformer-outputconversion-toformat"></a>
+The format for the output from an outbound transformer: only X12 is currently supported.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `X12`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,96 +2,70 @@
 title: "AWS::KinesisAnalyticsV2::Application ZeppelinApplicationConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Application ZeppelinApplicationConfiguration
+<a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration"></a>
 
 The configuration of a Kinesis Data Analytics Studio notebook.
 
 ## Syntax
+<a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "CatalogConfiguration" : CatalogConfiguration,
-  "CustomArtifactsConfiguration" : [ CustomArtifactConfiguration, ... ],
-  "DeployAsApplicationConfiguration" : DeployAsApplicationConfiguration,
-  "MonitoringConfiguration" : ZeppelinMonitoringConfiguration
+  "[CatalogConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-catalogconfiguration)" : {{CatalogConfiguration}},
+  "[CustomArtifactsConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-customartifactsconfiguration)" : {{[ CustomArtifactConfiguration, ... ]}},
+  "[DeployAsApplicationConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-deployasapplicationconfiguration)" : {{DeployAsApplicationConfiguration}},
+  "[MonitoringConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-monitoringconfiguration)" : {{ZeppelinMonitoringConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  CatalogConfiguration:
-    CatalogConfiguration
-  CustomArtifactsConfiguration:
-    - CustomArtifactConfiguration
-  DeployAsApplicationConfiguration:
-    DeployAsApplicationConfiguration
-  MonitoringConfiguration:
-    ZeppelinMonitoringConfiguration
-
+```
+  [CatalogConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-catalogconfiguration): {{
+    CatalogConfiguration}}
+  [CustomArtifactsConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-customartifactsconfiguration): {{
+    - CustomArtifactConfiguration}}
+  [DeployAsApplicationConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-deployasapplicationconfiguration): {{
+    DeployAsApplicationConfiguration}}
+  [MonitoringConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-monitoringconfiguration): {{
+    ZeppelinMonitoringConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-properties"></a>
 
-`CatalogConfiguration`
+`CatalogConfiguration`  <a name="cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-catalogconfiguration"></a>
+The Amazon Glue Data Catalog that you use in queries in a Kinesis Data Analytics Studio notebook.
+*Required*: No
+*Type*: [CatalogConfiguration](aws-properties-kinesisanalyticsv2-application-catalogconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The Amazon Glue Data Catalog that you use in queries in a Kinesis Data Analytics
-Studio notebook.
-
-_Required_: No
-
-_Type_: [CatalogConfiguration](aws-properties-kinesisanalyticsv2-application-catalogconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`CustomArtifactsConfiguration`
-
+`CustomArtifactsConfiguration`  <a name="cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-customartifactsconfiguration"></a>
 A list of `CustomArtifactConfiguration` objects.
+*Required*: No
+*Type*: Array of [CustomArtifactConfiguration](aws-properties-kinesisanalyticsv2-application-customartifactconfiguration.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
+`DeployAsApplicationConfiguration`  <a name="cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-deployasapplicationconfiguration"></a>
+The information required to deploy a Kinesis Data Analytics Studio notebook as an application with durable state.
+*Required*: No
+*Type*: [DeployAsApplicationConfiguration](aws-properties-kinesisanalyticsv2-application-deployasapplicationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Type_: Array of [CustomArtifactConfiguration](aws-properties-kinesisanalyticsv2-application-customartifactconfiguration.md)
-
-_Maximum_: `50`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DeployAsApplicationConfiguration`
-
-The information required to deploy a Kinesis Data Analytics Studio notebook as an
-application with durable state.
-
-_Required_: No
-
-_Type_: [DeployAsApplicationConfiguration](aws-properties-kinesisanalyticsv2-application-deployasapplicationconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`MonitoringConfiguration`
-
+`MonitoringConfiguration`  <a name="cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-monitoringconfiguration"></a>
 The monitoring configuration of a Kinesis Data Analytics Studio notebook.
-
-_Required_: No
-
-_Type_: [ZeppelinMonitoringConfiguration](aws-properties-kinesisanalyticsv2-application-zeppelinmonitoringconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConfiguration
-
-ZeppelinMonitoringConfiguration
+*Required*: No
+*Type*: [ZeppelinMonitoringConfiguration](aws-properties-kinesisanalyticsv2-application-zeppelinmonitoringconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

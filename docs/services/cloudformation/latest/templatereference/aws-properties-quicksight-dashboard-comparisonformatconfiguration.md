@@ -2,68 +2,53 @@
 title: "AWS::QuickSight::Dashboard ComparisonFormatConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ComparisonFormatConfiguration
+<a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration"></a>
 
 The format of the comparison.
 
 This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "NumberDisplayFormatConfiguration" : NumberDisplayFormatConfiguration,
-  "PercentageDisplayFormatConfiguration" : PercentageDisplayFormatConfiguration
+  "[NumberDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-numberdisplayformatconfiguration)" : {{NumberDisplayFormatConfiguration}},
+  "[PercentageDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-percentagedisplayformatconfiguration)" : {{PercentageDisplayFormatConfiguration}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  NumberDisplayFormatConfiguration:
-    NumberDisplayFormatConfiguration
-  PercentageDisplayFormatConfiguration:
-    PercentageDisplayFormatConfiguration
-
+```
+  [NumberDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-numberdisplayformatconfiguration): {{
+    NumberDisplayFormatConfiguration}}
+  [PercentageDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-percentagedisplayformatconfiguration): {{
+    PercentageDisplayFormatConfiguration}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration-properties"></a>
 
-`NumberDisplayFormatConfiguration`
-
+`NumberDisplayFormatConfiguration`  <a name="cfn-quicksight-dashboard-comparisonformatconfiguration-numberdisplayformatconfiguration"></a>
 The number display format.
+*Required*: No
+*Type*: [NumberDisplayFormatConfiguration](aws-properties-quicksight-dashboard-numberdisplayformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [NumberDisplayFormatConfiguration](aws-properties-quicksight-dashboard-numberdisplayformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`PercentageDisplayFormatConfiguration`
-
+`PercentageDisplayFormatConfiguration`  <a name="cfn-quicksight-dashboard-comparisonformatconfiguration-percentagedisplayformatconfiguration"></a>
 The percentage display format.
-
-_Required_: No
-
-_Type_: [PercentageDisplayFormatConfiguration](aws-properties-quicksight-dashboard-percentagedisplayformatconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ComparisonConfiguration
-
-Computation
+*Required*: No
+*Type*: [PercentageDisplayFormatConfiguration](aws-properties-quicksight-dashboard-percentagedisplayformatconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

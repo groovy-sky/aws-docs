@@ -2,66 +2,51 @@
 title: "AWS::MSK::Cluster VpcConnectivityClientAuthentication"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster VpcConnectivityClientAuthentication
+<a name="aws-properties-msk-cluster-vpcconnectivityclientauthentication"></a>
 
 Includes all client authentication information for VpcConnectivity.
 
 ## Syntax
+<a name="aws-properties-msk-cluster-vpcconnectivityclientauthentication-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-msk-cluster-vpcconnectivityclientauthentication-syntax.json"></a>
 
-```json
-
+```
 {
-  "Sasl" : VpcConnectivitySasl,
-  "Tls" : VpcConnectivityTls
+  "[Sasl](#cfn-msk-cluster-vpcconnectivityclientauthentication-sasl)" : {{VpcConnectivitySasl}},
+  "[Tls](#cfn-msk-cluster-vpcconnectivityclientauthentication-tls)" : {{VpcConnectivityTls}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-msk-cluster-vpcconnectivityclientauthentication-syntax.yaml"></a>
 
-```yaml
-
-  Sasl:
-    VpcConnectivitySasl
-  Tls:
-    VpcConnectivityTls
-
+```
+  [Sasl](#cfn-msk-cluster-vpcconnectivityclientauthentication-sasl): {{
+    VpcConnectivitySasl}}
+  [Tls](#cfn-msk-cluster-vpcconnectivityclientauthentication-tls): {{
+    VpcConnectivityTls}}
 ```
 
 ## Properties
+<a name="aws-properties-msk-cluster-vpcconnectivityclientauthentication-properties"></a>
 
-`Sasl`
-
+`Sasl`  <a name="cfn-msk-cluster-vpcconnectivityclientauthentication-sasl"></a>
 Details for VpcConnectivity ClientAuthentication using SASL.
+*Required*: No
+*Type*: [VpcConnectivitySasl](aws-properties-msk-cluster-vpcconnectivitysasl.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [VpcConnectivitySasl](aws-properties-msk-cluster-vpcconnectivitysasl.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Tls`
-
+`Tls`  <a name="cfn-msk-cluster-vpcconnectivityclientauthentication-tls"></a>
 Details for VpcConnectivity ClientAuthentication using TLS.
-
-_Required_: No
-
-_Type_: [VpcConnectivityTls](aws-properties-msk-cluster-vpcconnectivitytls.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcConnectivity
-
-VpcConnectivityIam
+*Required*: No
+*Type*: [VpcConnectivityTls](aws-properties-msk-cluster-vpcconnectivitytls.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,91 +2,63 @@
 title: "AWS::KinesisFirehose::DeliveryStream HttpEndpointConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream HttpEndpointConfiguration
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration"></a>
 
-Describes the configuration of the HTTP endpoint to which Kinesis Firehose delivers
-data. Kinesis Firehose supports any custom HTTP endpoint or HTTP endpoints owned by
-supported third-party service providers, including Datadog, MongoDB, and New Relic.
+Describes the configuration of the HTTP endpoint to which Kinesis Firehose delivers data. Kinesis Firehose supports any custom HTTP endpoint or HTTP endpoints owned by supported third-party service providers, including Datadog, MongoDB, and New Relic.
 
 ## Syntax
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "AccessKey" : String,
-  "Name" : String,
-  "Url" : String
+  "[AccessKey](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-accesskey)" : {{String}},
+  "[Name](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-name)" : {{String}},
+  "[Url](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-url)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  AccessKey: String
-  Name: String
-  Url: String
-
+```
+  [AccessKey](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-accesskey): {{String}}
+  [Name](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-name): {{String}}
+  [Url](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-url): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration-properties"></a>
 
-`AccessKey`
+`AccessKey`  <a name="cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-accesskey"></a>
+The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The access key required for Kinesis Firehose to authenticate with the HTTP endpoint
-selected as the destination.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Name`
-
+`Name`  <a name="cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-name"></a>
 The name of the HTTP endpoint selected as the destination.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `256`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Url`
-
+`Url`  <a name="cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-url"></a>
 The URL of the HTTP endpoint selected as the destination.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `1000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HttpEndpointCommonAttribute
-
-HttpEndpointDestinationConfiguration
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

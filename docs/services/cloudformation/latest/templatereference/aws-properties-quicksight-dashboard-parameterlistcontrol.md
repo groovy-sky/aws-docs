@@ -2,145 +2,101 @@
 title: "AWS::QuickSight::Dashboard ParameterListControl"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ParameterListControl
+<a name="aws-properties-quicksight-dashboard-parameterlistcontrol"></a>
 
 A control to display a list with buttons or boxes that are used to select either a single value or multiple values.
 
 ## Syntax
+<a name="aws-properties-quicksight-dashboard-parameterlistcontrol-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-dashboard-parameterlistcontrol-syntax.json"></a>
 
-```json
-
+```
 {
-  "CascadingControlConfiguration" : CascadingControlConfiguration,
-  "DisplayOptions" : ListControlDisplayOptions,
-  "ParameterControlId" : String,
-  "SelectableValues" : ParameterSelectableValues,
-  "SourceParameterName" : String,
-  "Title" : String,
-  "Type" : String
+  "[CascadingControlConfiguration](#cfn-quicksight-dashboard-parameterlistcontrol-cascadingcontrolconfiguration)" : {{CascadingControlConfiguration}},
+  "[DisplayOptions](#cfn-quicksight-dashboard-parameterlistcontrol-displayoptions)" : {{ListControlDisplayOptions}},
+  "[ParameterControlId](#cfn-quicksight-dashboard-parameterlistcontrol-parametercontrolid)" : {{String}},
+  "[SelectableValues](#cfn-quicksight-dashboard-parameterlistcontrol-selectablevalues)" : {{ParameterSelectableValues}},
+  "[SourceParameterName](#cfn-quicksight-dashboard-parameterlistcontrol-sourceparametername)" : {{String}},
+  "[Title](#cfn-quicksight-dashboard-parameterlistcontrol-title)" : {{String}},
+  "[Type](#cfn-quicksight-dashboard-parameterlistcontrol-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-dashboard-parameterlistcontrol-syntax.yaml"></a>
 
-```yaml
-
-  CascadingControlConfiguration:
-    CascadingControlConfiguration
-  DisplayOptions:
-    ListControlDisplayOptions
-  ParameterControlId: String
-  SelectableValues:
-    ParameterSelectableValues
-  SourceParameterName: String
-  Title: String
-  Type: String
-
+```
+  [CascadingControlConfiguration](#cfn-quicksight-dashboard-parameterlistcontrol-cascadingcontrolconfiguration): {{
+    CascadingControlConfiguration}}
+  [DisplayOptions](#cfn-quicksight-dashboard-parameterlistcontrol-displayoptions): {{
+    ListControlDisplayOptions}}
+  [ParameterControlId](#cfn-quicksight-dashboard-parameterlistcontrol-parametercontrolid): {{String}}
+  [SelectableValues](#cfn-quicksight-dashboard-parameterlistcontrol-selectablevalues): {{
+    ParameterSelectableValues}}
+  [SourceParameterName](#cfn-quicksight-dashboard-parameterlistcontrol-sourceparametername): {{String}}
+  [Title](#cfn-quicksight-dashboard-parameterlistcontrol-title): {{String}}
+  [Type](#cfn-quicksight-dashboard-parameterlistcontrol-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-dashboard-parameterlistcontrol-properties"></a>
 
-`CascadingControlConfiguration`
-
+`CascadingControlConfiguration`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-cascadingcontrolconfiguration"></a>
 The values that are displayed in a control can be configured to only show values that are valid based on what's selected in other controls.
+*Required*: No
+*Type*: [CascadingControlConfiguration](aws-properties-quicksight-dashboard-cascadingcontrolconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [CascadingControlConfiguration](aws-properties-quicksight-dashboard-cascadingcontrolconfiguration.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`DisplayOptions`
-
+`DisplayOptions`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-displayoptions"></a>
 The display options of a control.
+*Required*: No
+*Type*: [ListControlDisplayOptions](aws-properties-quicksight-dashboard-listcontroldisplayoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ListControlDisplayOptions](aws-properties-quicksight-dashboard-listcontroldisplayoptions.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ParameterControlId`
-
+`ParameterControlId`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-parametercontrolid"></a>
 The ID of the `ParameterListControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[\w\-]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[\w\-]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `512`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SelectableValues`
-
+`SelectableValues`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-selectablevalues"></a>
 A list of selectable values that are used in a control.
+*Required*: No
+*Type*: [ParameterSelectableValues](aws-properties-quicksight-dashboard-parameterselectablevalues.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: [ParameterSelectableValues](aws-properties-quicksight-dashboard-parameterselectablevalues.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`SourceParameterName`
-
+`SourceParameterName`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-sourceparametername"></a>
 The source parameter name of the `ParameterListControl`.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^[a-zA-Z0-9]+$`
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Title`
-
+`Title`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-title"></a>
 The title of the `ParameterListControl`.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `2048`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
+`Type`  <a name="cfn-quicksight-dashboard-parameterlistcontrol-type"></a>
 The type of `ParameterListControl`.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `MULTI_SELECT | SINGLE_SELECT`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ParameterDropDownControl
-
-Parameters
+*Required*: No
+*Type*: String
+*Allowed values*: `MULTI_SELECT | SINGLE_SELECT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

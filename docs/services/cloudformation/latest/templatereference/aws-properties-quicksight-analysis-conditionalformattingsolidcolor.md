@@ -2,70 +2,52 @@
 title: "AWS::QuickSight::Analysis ConditionalFormattingSolidColor"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis ConditionalFormattingSolidColor
+<a name="aws-properties-quicksight-analysis-conditionalformattingsolidcolor"></a>
 
 Formatting configuration for solid color.
 
 ## Syntax
+<a name="aws-properties-quicksight-analysis-conditionalformattingsolidcolor-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-quicksight-analysis-conditionalformattingsolidcolor-syntax.json"></a>
 
-```json
-
+```
 {
-  "Color" : String,
-  "Expression" : String
+  "[Color](#cfn-quicksight-analysis-conditionalformattingsolidcolor-color)" : {{String}},
+  "[Expression](#cfn-quicksight-analysis-conditionalformattingsolidcolor-expression)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-quicksight-analysis-conditionalformattingsolidcolor-syntax.yaml"></a>
 
-```yaml
-
-  Color: String
-  Expression: String
-
+```
+  [Color](#cfn-quicksight-analysis-conditionalformattingsolidcolor-color): {{String}}
+  [Expression](#cfn-quicksight-analysis-conditionalformattingsolidcolor-expression): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-quicksight-analysis-conditionalformattingsolidcolor-properties"></a>
 
-`Color`
-
+`Color`  <a name="cfn-quicksight-analysis-conditionalformattingsolidcolor-color"></a>
 Determines the color.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: String
-
-_Pattern_: `^#[A-F0-9]{6}$`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Expression`
-
+`Expression`  <a name="cfn-quicksight-analysis-conditionalformattingsolidcolor-expression"></a>
 The expression that determines the formatting configuration for solid color.
-
-_Required_: Yes
-
-_Type_: String
-
-_Minimum_: `1`
-
-_Maximum_: `4096`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConditionalFormattingIconSet
-
-ContextMenuOption
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `4096`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -2,135 +2,117 @@
 title: "AWS::DirectConnect::DirectConnectGatewayAssociation"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DirectConnect::DirectConnectGatewayAssociation
+<a name="aws-resource-directconnect-directconnectgatewayassociation"></a>
 
-Creates an association between a Direct Connect gateway and a virtual private gateway. The virtual
-private gateway must be attached to a VPC and must not be associated with another Direct Connect gateway.
+Creates an association between a Direct Connect gateway and a virtual private gateway. The virtual private gateway must be attached to a VPC and must not be associated with another Direct Connect gateway.
 
 If creating a Direct Connect gateway association between resources in separate AWS accounts, the CloudFormation stack account must own the virtual private gateway. The other account must own the Direct Connect gateway, and must have a role allowing the stack account to accept Direct Connect gateway association proposals.
 
-For more information, see [Direct Connect gateways](../../../directconnect/latest/userguide/direct-connect-gateways-intro.md) in the _Direct Connect User Guide_.
+For more information, see [Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html) in the * Direct Connect User Guide *.
 
 ## Syntax
+<a name="aws-resource-directconnect-directconnectgatewayassociation-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-resource-directconnect-directconnectgatewayassociation-syntax.json"></a>
 
-```json
-
+```
 {
   "Type" : "AWS::DirectConnect::DirectConnectGatewayAssociation",
   "Properties" : {
-      "AcceptDirectConnectGatewayAssociationProposalRoleArn" : String,
-      "AllowedPrefixesToDirectConnectGateway" : [ String, ... ],
-      "AssociatedGatewayId" : String,
-      "DirectConnectGatewayId" : String
+      "[AcceptDirectConnectGatewayAssociationProposalRoleArn](#cfn-directconnect-directconnectgatewayassociation-acceptdirectconnectgatewayassociationproposalrolearn)" : {{String}},
+      "[AllowedPrefixesToDirectConnectGateway](#cfn-directconnect-directconnectgatewayassociation-allowedprefixestodirectconnectgateway)" : {{[ String, ... ]}},
+      "[AssociatedGatewayId](#cfn-directconnect-directconnectgatewayassociation-associatedgatewayid)" : {{String}},
+      "[DirectConnectGatewayId](#cfn-directconnect-directconnectgatewayassociation-directconnectgatewayid)" : {{String}}
     }
 }
-
 ```
 
 ### YAML
+<a name="aws-resource-directconnect-directconnectgatewayassociation-syntax.yaml"></a>
 
-```yaml
-
+```
 Type: AWS::DirectConnect::DirectConnectGatewayAssociation
 Properties:
-  AcceptDirectConnectGatewayAssociationProposalRoleArn: String
-  AllowedPrefixesToDirectConnectGateway:
-    - String
-  AssociatedGatewayId: String
-  DirectConnectGatewayId: String
-
+  [AcceptDirectConnectGatewayAssociationProposalRoleArn](#cfn-directconnect-directconnectgatewayassociation-acceptdirectconnectgatewayassociationproposalrolearn): {{String}}
+  [AllowedPrefixesToDirectConnectGateway](#cfn-directconnect-directconnectgatewayassociation-allowedprefixestodirectconnectgateway): {{
+    - String}}
+  [AssociatedGatewayId](#cfn-directconnect-directconnectgatewayassociation-associatedgatewayid): {{String}}
+  [DirectConnectGatewayId](#cfn-directconnect-directconnectgatewayassociation-directconnectgatewayid): {{String}}
 ```
 
 ## Properties
+<a name="aws-resource-directconnect-directconnectgatewayassociation-properties"></a>
 
-`AcceptDirectConnectGatewayAssociationProposalRoleArn`
-
+`AcceptDirectConnectGatewayAssociationProposalRoleArn`  <a name="cfn-directconnect-directconnectgatewayassociation-acceptdirectconnectgatewayassociationproposalrolearn"></a>
 The Amazon Resource Name (ARN) of the role in a separate account to accept the Direct Connect Gateway association proposal. The role needs to have `directconnect:AcceptDirectConnectGatewayAssociationProposal` permissions.
-
-###### Note
-
 This should only be used when creating an association with a Direct Connect gateway in a separate AWS account.
+*Required*: Conditional
+*Type*: String
+*Pattern*: `^arn:aws[a-z-]*:iam::[0-9]{12}:role/.+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Pattern_: `^arn:aws[a-z-]*:iam::[0-9]{12}:role/.+$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`AllowedPrefixesToDirectConnectGateway`
-
+`AllowedPrefixesToDirectConnectGateway`  <a name="cfn-directconnect-directconnectgatewayassociation-allowedprefixestodirectconnectgateway"></a>
 The Amazon VPC prefixes to advertise to the Direct Connect gateway.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`AssociatedGatewayId`
-
+`AssociatedGatewayId`  <a name="cfn-directconnect-directconnectgatewayassociation-associatedgatewayid"></a>
 The ID or ARN of the associated gateway.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^((arn:aws[a-z-]*:ec2:[a-z0-9-]+:[0-9]{12}:(vpn-gateway/vgw|transit-gateway/tgw))|(vgw|tgw))-[a-zA-Z0-9]{8,32}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^((arn:aws[a-z-]*:ec2:[a-z0-9-]+:[0-9]{12}:(vpn-gateway/vgw|transit-gateway/tgw))|(vgw|tgw))-[a-zA-Z0-9]{8,32}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
-
-`DirectConnectGatewayId`
-
+`DirectConnectGatewayId`  <a name="cfn-directconnect-directconnectgatewayassociation-directconnectgatewayid"></a>
 The ID or ARN of the Direct Connect gateway.
-
-_Required_: Yes
-
-_Type_: String
-
-_Pattern_: `^(arn:aws[a-z-]*:directconnect::[0-9]{12}:dx-gateway/)?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
-
-_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:aws[a-z-]*:directconnect::[0-9]{12}:dx-gateway/)?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
+<a name="aws-resource-directconnect-directconnectgatewayassociation-return-values"></a>
 
 ### Ref
+<a name="aws-resource-directconnect-directconnectgatewayassociation-return-values-ref"></a>
 
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ID of the Direct Connect gateway association.
 
-For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
 ### Fn::GetAtt
+<a name="aws-resource-directconnect-directconnectgatewayassociation-return-values-fn--getatt"></a>
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](intrinsic-function-reference-getatt.md).
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
-`AssociationId`
+####
+<a name="aws-resource-directconnect-directconnectgatewayassociation-return-values-fn--getatt-fn--getatt"></a>
 
+`AssociationId`  <a name="AssociationId-fn::getatt"></a>
 The ID of the Direct Connect gateway association.
 
 ## Examples
+<a name="aws-resource-directconnect-directconnectgatewayassociation--examples"></a>
 
 ### Direct Connect gateway association with a virtual private gateway in the same account
+<a name="aws-resource-directconnect-directconnectgatewayassociation--examples--Direct_Connect_gateway_association_with_a_virtual_private_gateway_in_the_same_account"></a>
 
 This example shows a basic Direct Connect gateway association with a virtual private gateway.
 
 #### JSON
+<a name="aws-resource-directconnect-directconnectgatewayassociation--examples--Direct_Connect_gateway_association_with_a_virtual_private_gateway_in_the_same_account--json"></a>
 
-```json
-
+```
 {
   "Resources": {
     "myDirectConnectGateway": {
@@ -157,9 +139,9 @@ This example shows a basic Direct Connect gateway association with a virtual pri
 ```
 
 #### YAML
+<a name="aws-resource-directconnect-directconnectgatewayassociation--examples--Direct_Connect_gateway_association_with_a_virtual_private_gateway_in_the_same_account--yaml"></a>
 
-```yaml
-
+```
 Resources:
   myDirectConnectGateway:
     Type: AWS::DirectConnect::DirectConnectGateway
@@ -174,11 +156,5 @@ Resources:
       AllowedPrefixesToDirectConnectGateway:
       - 10.0.0.0/24
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag
-
-AWS::DirectConnect::Lag
 
 All content copied from https://docs.aws.amazon.com/.

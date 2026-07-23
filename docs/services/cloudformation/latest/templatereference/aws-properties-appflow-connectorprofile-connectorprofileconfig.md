@@ -2,71 +2,55 @@
 title: "AWS::AppFlow::ConnectorProfile ConnectorProfileConfig"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile ConnectorProfileConfig
+<a name="aws-properties-appflow-connectorprofile-connectorprofileconfig"></a>
 
-Defines the connector-specific configuration and credentials for the connector profile.
+ Defines the connector-specific configuration and credentials for the connector profile.
 
 ## Syntax
+<a name="aws-properties-appflow-connectorprofile-connectorprofileconfig-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-appflow-connectorprofile-connectorprofileconfig-syntax.json"></a>
 
-```json
-
+```
 {
-  "ConnectorProfileCredentials" : ConnectorProfileCredentials,
-  "ConnectorProfileProperties" : ConnectorProfileProperties
+  "[ConnectorProfileCredentials](#cfn-appflow-connectorprofile-connectorprofileconfig-connectorprofilecredentials)" : {{ConnectorProfileCredentials}},
+  "[ConnectorProfileProperties](#cfn-appflow-connectorprofile-connectorprofileconfig-connectorprofileproperties)" : {{ConnectorProfileProperties}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-appflow-connectorprofile-connectorprofileconfig-syntax.yaml"></a>
 
-```yaml
-
-  ConnectorProfileCredentials:
-    ConnectorProfileCredentials
-  ConnectorProfileProperties:
-    ConnectorProfileProperties
-
+```
+  [ConnectorProfileCredentials](#cfn-appflow-connectorprofile-connectorprofileconfig-connectorprofilecredentials): {{
+    ConnectorProfileCredentials}}
+  [ConnectorProfileProperties](#cfn-appflow-connectorprofile-connectorprofileconfig-connectorprofileproperties): {{
+    ConnectorProfileProperties}}
 ```
 
 ## Properties
+<a name="aws-properties-appflow-connectorprofile-connectorprofileconfig-properties"></a>
 
-`ConnectorProfileCredentials`
+`ConnectorProfileCredentials`  <a name="cfn-appflow-connectorprofile-connectorprofileconfig-connectorprofilecredentials"></a>
+ The connector-specific credentials required by each connector.
+*Required*: No
+*Type*: [ConnectorProfileCredentials](aws-properties-appflow-connectorprofile-connectorprofilecredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The connector-specific credentials required by each connector.
-
-_Required_: No
-
-_Type_: [ConnectorProfileCredentials](aws-properties-appflow-connectorprofile-connectorprofilecredentials.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`ConnectorProfileProperties`
-
-The connector-specific properties of the profile configuration.
-
-_Required_: No
-
-_Type_: [ConnectorProfileProperties](aws-properties-appflow-connectorprofile-connectorprofileproperties.md)
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+`ConnectorProfileProperties`  <a name="cfn-appflow-connectorprofile-connectorprofileconfig-connectorprofileproperties"></a>
+ The connector-specific properties of the profile configuration.
+*Required*: No
+*Type*: [ConnectorProfileProperties](aws-properties-appflow-connectorprofile-connectorprofileproperties.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [ConnectorProfileConfig](../../../../reference/appflow/1-0/apireference/api-connectorprofileconfig.md) in the _Amazon AppFlow API_
-_Reference_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ConnectorOAuthRequest
-
-ConnectorProfileCredentials
+<a name="aws-properties-appflow-connectorprofile-connectorprofileconfig--seealso"></a>
++ [ConnectorProfileConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorProfileConfig.html) in the *Amazon AppFlow API Reference*.
 
 All content copied from https://docs.aws.amazon.com/.

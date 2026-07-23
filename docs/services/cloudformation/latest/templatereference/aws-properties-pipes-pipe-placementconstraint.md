@@ -2,76 +2,52 @@
 title: "AWS::Pipes::Pipe PlacementConstraint"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PlacementConstraint
+<a name="aws-properties-pipes-pipe-placementconstraint"></a>
 
-An object representing a constraint on task placement. To learn more, see [Task Placement\
-Constraints](../../../amazonecs/latest/developerguide/task-placement-constraints.md) in the Amazon Elastic Container Service Developer Guide.
+An object representing a constraint on task placement. To learn more, see [Task Placement Constraints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html) in the Amazon Elastic Container Service Developer Guide.
 
 ## Syntax
+<a name="aws-properties-pipes-pipe-placementconstraint-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-pipes-pipe-placementconstraint-syntax.json"></a>
 
-```json
-
+```
 {
-  "Expression" : String,
-  "Type" : String
+  "[Expression](#cfn-pipes-pipe-placementconstraint-expression)" : {{String}},
+  "[Type](#cfn-pipes-pipe-placementconstraint-type)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-pipes-pipe-placementconstraint-syntax.yaml"></a>
 
-```yaml
-
-  Expression: String
-  Type: String
-
+```
+  [Expression](#cfn-pipes-pipe-placementconstraint-expression): {{String}}
+  [Type](#cfn-pipes-pipe-placementconstraint-type): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-pipes-pipe-placementconstraint-properties"></a>
 
-`Expression`
+`Expression`  <a name="cfn-pipes-pipe-placementconstraint-expression"></a>
+A cluster query language expression to apply to the constraint. You cannot specify an expression if the constraint type is `distinctInstance`. To learn more, see [Cluster Query Language](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html) in the Amazon Elastic Container Service Developer Guide.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-A cluster query language expression to apply to the constraint. You cannot specify an
-expression if the constraint type is `distinctInstance`. To learn more, see
-[Cluster Query\
-Language](../../../amazonecs/latest/developerguide/cluster-query-language.md) in the Amazon Elastic Container Service Developer Guide.
-
-_Required_: No
-
-_Type_: String
-
-_Minimum_: `0`
-
-_Maximum_: `2000`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Type`
-
-The type of constraint. Use distinctInstance to ensure that each task in a particular
-group is running on a different container instance. Use memberOf to restrict the selection
-to a group of valid candidates.
-
-_Required_: No
-
-_Type_: String
-
-_Allowed values_: `distinctInstance | memberOf`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PipeTargetTimestreamParameters
-
-PlacementStrategy
+`Type`  <a name="cfn-pipes-pipe-placementconstraint-type"></a>
+The type of constraint. Use distinctInstance to ensure that each task in a particular group is running on a different container instance. Use memberOf to restrict the selection to a group of valid candidates.
+*Required*: No
+*Type*: String
+*Allowed values*: `distinctInstance | memberOf`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

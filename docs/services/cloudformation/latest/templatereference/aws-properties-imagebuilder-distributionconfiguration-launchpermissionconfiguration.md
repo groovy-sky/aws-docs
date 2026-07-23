@@ -2,114 +2,75 @@
 title: "AWS::ImageBuilder::DistributionConfiguration LaunchPermissionConfiguration"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::DistributionConfiguration LaunchPermissionConfiguration
+<a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration"></a>
 
-Describes the configuration for a launch permission. The launch permission
-modification request is sent to the [Amazon EC2\
-ModifyImageAttribute](../../../../reference/awsec2/latest/apireference/api-modifyimageattribute.md) API on behalf of the user for each Region they have
-selected to distribute the AMI. To make an AMI public, set the launch permission
-authorized accounts to `all`. See the examples for making an AMI public at
-[Amazon EC2\
-ModifyImageAttribute](../../../../reference/awsec2/latest/apireference/api-modifyimageattribute.md).
+Describes the configuration for a launch permission. The launch permission modification request is sent to the [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html) API on behalf of the user for each Region they have selected to distribute the AMI. To make an AMI public, set the launch permission authorized accounts to `all`. See the examples for making an AMI public at [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html).
 
 ## Syntax
+<a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-syntax.json"></a>
 
-```json
-
+```
 {
-  "OrganizationalUnitArns" : [ String, ... ],
-  "OrganizationArns" : [ String, ... ],
-  "UserGroups" : [ String, ... ],
-  "UserIds" : [ String, ... ]
+  "[OrganizationalUnitArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationalunitarns)" : {{[ String, ... ]}},
+  "[OrganizationArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationarns)" : {{[ String, ... ]}},
+  "[UserGroups](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-usergroups)" : {{[ String, ... ]}},
+  "[UserIds](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-userids)" : {{[ String, ... ]}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-syntax.yaml"></a>
 
-```yaml
-
-  OrganizationalUnitArns:
-    - String
-  OrganizationArns:
-    - String
-  UserGroups:
-    - String
-  UserIds:
-    - String
-
+```
+  [OrganizationalUnitArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationalunitarns): {{
+    - String}}
+  [OrganizationArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationarns): {{
+    - String}}
+  [UserGroups](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-usergroups): {{
+    - String}}
+  [UserIds](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-userids): {{
+    - String}}
 ```
 
 ## Properties
+<a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-properties"></a>
 
-`OrganizationalUnitArns`
+`OrganizationalUnitArns`  <a name="cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationalunitarns"></a>
+The ARN for an AWS Organizations organizational unit (OU) that you want to share your AMI with. For more information about key concepts for AWS Organizations, see [AWS Organizations terminology and concepts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html).
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `25`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-The ARN for an AWS Organizations organizational unit (OU) that you want to share your AMI with.
-For more information about key concepts for AWS Organizations, see [AWS Organizations\
-terminology and concepts](../../../organizations/latest/userguide/orgs-getting-started-concepts.md).
+`OrganizationArns`  <a name="cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationarns"></a>
+The ARN for an AWS Organization that you want to share your AMI with. For more information, see [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `25`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `25`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`OrganizationArns`
-
-The ARN for an AWS Organization that you want to share your AMI with. For more
-information, see [What is\
-AWS Organizations?](../../../organizations/latest/userguide/orgs-introduction.md).
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `25`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserGroups`
-
+`UserGroups`  <a name="cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-usergroups"></a>
 The name of the group.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: No
-
-_Type_: Array of String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`UserIds`
-
+`UserIds`  <a name="cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-userids"></a>
 The AWS account ID.
-
-_Required_: No
-
-_Type_: Array of String
-
-_Minimum_: `1`
-
-_Maximum_: `1536`
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FastLaunchSnapshotConfiguration
-
-LaunchTemplateConfiguration
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1536`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

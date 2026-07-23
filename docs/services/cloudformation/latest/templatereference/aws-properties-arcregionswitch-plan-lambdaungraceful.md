@@ -2,52 +2,42 @@
 title: "AWS::ARCRegionSwitch::Plan LambdaUngraceful"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan LambdaUngraceful
+<a name="aws-properties-arcregionswitch-plan-lambdaungraceful"></a>
 
 Configuration for handling failures when invoking Lambda functions.
 
 ## Syntax
+<a name="aws-properties-arcregionswitch-plan-lambdaungraceful-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-arcregionswitch-plan-lambdaungraceful-syntax.json"></a>
 
-```json
-
+```
 {
-  "Behavior" :
+  "[Behavior](#cfn-arcregionswitch-plan-lambdaungraceful-behavior)" : {{}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-arcregionswitch-plan-lambdaungraceful-syntax.yaml"></a>
 
-```yaml
-
-  Behavior:
-
+```
+  [Behavior](#cfn-arcregionswitch-plan-lambdaungraceful-behavior): {{
+    }}
 ```
 
 ## Properties
+<a name="aws-properties-arcregionswitch-plan-lambdaungraceful-properties"></a>
 
-`Behavior`
-
+`Behavior`  <a name="cfn-arcregionswitch-plan-lambdaungraceful-behavior"></a>
 The ungraceful behavior for a Lambda function, which must be set to `skip`.
-
-_Required_: No
-
-_Type_:
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Lambdas
-
-ParallelExecutionBlockConfiguration
+*Required*: No
+*Type*:
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 All content copied from https://docs.aws.amazon.com/.

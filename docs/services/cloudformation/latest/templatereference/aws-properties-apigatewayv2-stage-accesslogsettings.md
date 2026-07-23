@@ -2,69 +2,53 @@
 title: "AWS::ApiGatewayV2::Stage AccessLogSettings"
 ---
 
-This is the new _CloudFormation Template Reference Guide_.
-Please update your bookmarks and links. For help getting started with CloudFormation, see the
-[AWS CloudFormation User Guide](../userguide/welcome.md).
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Stage AccessLogSettings
+<a name="aws-properties-apigatewayv2-stage-accesslogsettings"></a>
 
 Settings for logging access in a stage.
 
 ## Syntax
+<a name="aws-properties-apigatewayv2-stage-accesslogsettings-syntax"></a>
 
 To declare this entity in your CloudFormation template, use the following syntax:
 
 ### JSON
+<a name="aws-properties-apigatewayv2-stage-accesslogsettings-syntax.json"></a>
 
-```json
-
+```
 {
-  "DestinationArn" : String,
-  "Format" : String
+  "[DestinationArn](#cfn-apigatewayv2-stage-accesslogsettings-destinationarn)" : {{String}},
+  "[Format](#cfn-apigatewayv2-stage-accesslogsettings-format)" : {{String}}
 }
-
 ```
 
 ### YAML
+<a name="aws-properties-apigatewayv2-stage-accesslogsettings-syntax.yaml"></a>
 
-```yaml
-
-  DestinationArn: String
-  Format: String
-
+```
+  [DestinationArn](#cfn-apigatewayv2-stage-accesslogsettings-destinationarn): {{String}}
+  [Format](#cfn-apigatewayv2-stage-accesslogsettings-format): {{String}}
 ```
 
 ## Properties
+<a name="aws-properties-apigatewayv2-stage-accesslogsettings-properties"></a>
 
-`DestinationArn`
-
+`DestinationArn`  <a name="cfn-apigatewayv2-stage-accesslogsettings-destinationarn"></a>
 The ARN of the CloudWatch Logs log group to receive access logs. This parameter is required to enable access logging.
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
-
-`Format`
-
+`Format`  <a name="cfn-apigatewayv2-stage-accesslogsettings-format"></a>
 A single line format of the access logs of data, as specified by selected $context variables. The format must include at least $context.requestId. This parameter is required to enable access logging.
-
-_Required_: Conditional
-
-_Type_: String
-
-_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+*Required*: Conditional
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also
-
-- [Stages](../../../apigatewayv2/latest/api-reference/apis-apiid-stages.md) in the _Amazon API Gateway_
-_Version 2 API Reference_
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AWS::ApiGatewayV2::Stage
-
-RouteSettings
+<a name="aws-properties-apigatewayv2-stage-accesslogsettings--seealso"></a>
++ [Stages](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid-stages.html) in the *Amazon API Gateway Version 2 API Reference*
 
 All content copied from https://docs.aws.amazon.com/.
